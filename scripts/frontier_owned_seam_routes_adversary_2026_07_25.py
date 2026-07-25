@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Adversarial boundary checks for the two owned-seam repair routes.
 
-The direct-ROM target is commit 16a550601d.  The sparse routed-transition
-target is commit 1f75a79e4f.  This companion retains their executed positive
-results and checks whether either runner actually supplies the coefficient-
-tagged all-seam physical word used by its terminal claim.
+The direct-ROM target is commit 315788cd7e.  The sparse routed-transition
+target is commit 483b24693e.  This companion retains their executed positive
+results and checks the remaining all-seam physical composition boundary.
 """
 
 from __future__ import annotations
@@ -37,8 +36,8 @@ def check(label: str, condition: bool, detail: object = "") -> None:
         print(f"FAIL {label} :: {detail}")
 
 
-def direct_descriptor_audit() -> tuple[dict[str, object], dict[object, object]]:
-    """Capture the direct runner's ephemeral descriptor dictionary at L=5."""
+def direct_descriptor_audit():
+    """Capture the direct runner's descriptor/control dictionaries at L=5."""
 
     instances = []
     ordinary = direct_rom.defaultdict
@@ -53,14 +52,30 @@ def direct_descriptor_audit() -> tuple[dict[str, object], dict[object, object]]:
         result = direct_rom.physical_two_level_primitive_audit(5)
     finally:
         direct_rom.defaultdict = ordinary
-    descriptors = max(instances, key=len)
+    large = [row for row in instances if len(row) == result["distinct_controlled_two_level_rows"]]
+    descriptors = next(
+        row for row in large if len(next(iter(next(iter(row.values()))))) == 4
+    )
+    coefficients = next(
+        row
+        for row in large
+        if len(next(iter(next(iter(row.values()))))) == 5
+        and isinstance(next(iter(next(iter(row.values()))))[0], str)
+    )
+    observation_rows = next(
+        row
+        for row in large
+        if len(next(iter(next(iter(row.values()))))) == 5
+        and isinstance(next(iter(next(iter(row.values()))))[0], tuple)
+    )
     if len(descriptors) != result["distinct_controlled_two_level_rows"]:
         raise AssertionError((len(descriptors), result))
-    return result, descriptors
+    return result, descriptors, coefficients, observation_rows
 
 
 def direct_route_checks() -> dict[str, object]:
-    primitive, descriptors = direct_descriptor_audit()
+    primitive, descriptors, coefficient_rows, observation_rows = direct_descriptor_audit()
+    held_primitive = direct_rom.physical_two_level_primitive_audit(6)
     physical_directed = defaultdict(set)
     physical_directed_with_hidden_pairs = defaultdict(set)
     physical_unordered = defaultdict(set)
@@ -99,7 +114,9 @@ def direct_route_checks() -> dict[str, object]:
         and physically_rekeyed_conflicts == 0
         and hidden_pair_variants == 0
         and len(physical_unordered) == 23153
-        and overpaired_unordered_rows == 0,
+        and overpaired_unordered_rows == 0
+        and primitive["observation_only_control_conflicts"] == 0
+        and primitive["observation_only_control_rows"] == 46306,
         {
             "directed_rows": len(physical_directed),
             "physically_rekeyed_conflicts": physically_rekeyed_conflicts,
@@ -109,20 +126,36 @@ def direct_route_checks() -> dict[str, object]:
     )
 
     primitive_source = inspect.getsource(direct_rom.physical_two_level_primitive_audit)
-    pair_source = inspect.getsource(direct_rom.pair_control)
+    action_counts = Counter()
+    coefficient_unitarity = 0.0
+    for key, values in coefficient_rows.items():
+        if len(values) != 1:
+            continue
+        action, _stage, cosine, sine_real, sine_imag = next(iter(values))
+        action_counts[action] += 1
+        coefficient_unitarity = max(
+            coefficient_unitarity,
+            abs(cosine * cosine + sine_real * sine_real + sine_imag * sine_imag - 1.0),
+        )
     check(
-        "direct-ROM Givens coefficients are not associated with physical transition rows",
+        "direct-ROM coefficient, action and stage association is complete",
         descriptor_value_widths == {4}
-        and "givens_coefficients" not in primitive_source
-        and "landed_complex_givens_coefficients" in pair_source
-        and primitive["distinct_controlled_two_level_rows"] == 46306,
+        and len(coefficient_rows) == 46306
+        and len(observation_rows) == 46306
+        and all(len(values) == 1 for values in coefficient_rows.values())
+        and primitive["coefficient_association_conflicts"] == 0
+        and primitive["descriptors_without_coefficients"] == 0
+        and set(action_counts)
+        == {"left_carrier_givens", "right_carrier_givens", "occupation_FSWAP"}
+        and coefficient_unitarity < TOL
+        and "givens_factors" in primitive_source
+        and "coefficient_associations" in primitive_source,
         {
-            "descriptor_value": "(target_observation, phase, x_word, z_word)",
-            "coefficient_or_stage_field_present": False,
-            "source_projectors_with_multiple_sequential_targets": sum(
-                len(values) > 1 for values in source_fan.values()
-            ),
-            "maximum_target_fan": max(map(len, source_fan.values())),
+            "associated_rows": len(coefficient_rows),
+            "action_counts": dict(action_counts),
+            "maximum_coefficient_unitarity_residual": coefficient_unitarity,
+            "coefficient_conflicts": primitive["coefficient_association_conflicts"],
+            "missing_coefficients": primitive["descriptors_without_coefficients"],
         },
     )
 
@@ -130,47 +163,84 @@ def direct_route_checks() -> dict[str, object]:
     direct_source = direct_path.read_text(encoding="utf-8")
     composition_source = inspect.getsource(direct_rom.composed_update_controls)
     check(
-        "direct-ROM locality and all-eleven residuals remain support-count and scalar claims",
-        primitive["maximum_transition_Pauli_support"] == 26
-        and "diameter" not in primitive_source
-        and "11 * maximum_local_intertwiner" in composition_source
-        and "11 * maximum_local_leakage" in composition_source
-        and "physical_two_level_primitive_audit" not in composition_source,
+        "direct-ROM physical rows now carry bounded coarse diameter and owner radius",
+        primitive["maximum_coarse_L1_diameter"] == 3
+        and held_primitive["maximum_coarse_L1_diameter"] == 3
+        and primitive["maximum_owner_coarse_L1_radius"] == 1
+        and held_primitive["maximum_owner_coarse_L1_radius"] == 1
+        and "support_coarse_cells" in primitive_source
+        and "periodic_l1" in primitive_source,
         {
-            "maximum_transition_Pauli_support": primitive[
-                "maximum_transition_Pauli_support"
-            ],
-            "maximum_control_plus_transition_tensor_M2": primitive[
-                "maximum_control_plus_transition_tensor_M2"
-            ],
-            "geometric_diameter_measured": False,
-            "common_physical_product_applied": False,
+            "L5_diameter_radius": (
+                primitive["maximum_coarse_L1_diameter"],
+                primitive["maximum_owner_coarse_L1_radius"],
+            ),
+            "L6_diameter_radius": (
+                held_primitive["maximum_coarse_L1_diameter"],
+                held_primitive["maximum_owner_coarse_L1_radius"],
+            ),
+        },
+    )
+
+    translations = tuple(
+        direct_rom.translated_two_star_fixture_control(length) for length in (5, 6)
+    )
+    check(
+        "the finite direct ROM is hash-inventoried and translation-audited",
+        primitive["finite_control_ROM_retained"]
+        and held_primitive["finite_control_ROM_retained"]
+        and len(primitive["finite_rotation_ROM_sha256"]) == 64
+        and len(held_primitive["finite_rotation_ROM_sha256"]) == 64
+        and primitive["diagonal_collision_phase_rows"] == 11
+        and held_primitive["diagonal_collision_phase_rows"] == 11
+        and all(row["all_torus_translations_tested"] for row in translations)
+        and all(row["translation_chart_ambiguities"] == 0 for row in translations)
+        and all(row["translation_carrier_coefficient_mismatches"] == 0 for row in translations)
+        and "rom_rows" in primitive_source
+        and "rom_sha256" in primitive_source,
+        {
+            "rows": (primitive["observation_only_control_rows"], held_primitive["observation_only_control_rows"]),
+            "ROM_sha256": (
+                primitive["finite_rotation_ROM_sha256"],
+                held_primitive["finite_rotation_ROM_sha256"],
+            ),
+            "translated_owner_fixtures": tuple(
+                row["translated_owner_fixtures"] for row in translations
+            ),
         },
     )
 
     check(
-        "the 46,306 direct rows are host-derived ephemeral data, not a supplied fixed ROM word",
-        "for label in direct.LABELS" in primitive_source
-        and "descriptor_rows" not in primitive
-        and "descriptor_sha256" not in primitive
-        and "givens_coefficients" not in primitive_source
-        and '"physical_M2_primitive_supplied": descriptor_conflicts == 0'
-        in primitive_source,
+        "direct-ROM common-E composition and recurrent law remain explicitly unexecuted",
+        "11 * maximum_local_intertwiner" in composition_source
+        and "11 * maximum_local_leakage" in composition_source
+        and "physical_two_level_primitive_audit" not in composition_source
+        and not primitive["translation_invariant_recurrent_law_derived"]
+        and not held_primitive["translation_invariant_recurrent_law_derived"]
+        and not primitive["recurrent_volume_update_claimed"]
+        and not held_primitive["recurrent_volume_update_claimed"],
         {
-            "rows": primitive["distinct_controlled_two_level_rows"],
-            "serialized_rows": False,
-            "coefficient_tagged_rows": False,
-            "autonomous_local_rule_executed": False,
-            "candidate_sha256": sha256(direct_path.read_bytes()).hexdigest(),
+            "common_physical_product_applied": False,
+            "reported_composition": "11*max(local residual)",
+            "finite_ROMs_are_volume_specific": (
+                primitive["finite_rotation_ROM_sha256"]
+                != held_primitive["finite_rotation_ROM_sha256"]
+            ),
+            "recurrent_law_derived": False,
         },
     )
     return {
         "descriptor_rows": len(descriptors),
         "physical_rekey_conflicts": physically_rekeyed_conflicts,
-        "coefficient_association_executed": False,
-        "geometric_diameter_measured": False,
+        "coefficient_association_executed": True,
+        "observation_only_control_rows_supplied": True,
+        "geometric_diameter_measured": True,
+        "finite_ROM_hash_inventoried": True,
+        "all_torus_translations_tested": True,
         "common_all_eleven_operator_executed": False,
+        "translation_invariant_recurrent_law_derived": False,
         "source_contains_old_decoder_tautology": "0 ^ decoded ^ decoded" in direct_source,
+        "candidate_sha256": sha256(direct_path.read_bytes()).hexdigest(),
     }
 
 
@@ -196,17 +266,9 @@ def sparse_route_checks() -> dict[str, object]:
         },
     )
 
-    candidate_stream = routed.logical_permutation_matrix(routed.CANDIDATE)
-    target_stream = routed.logical_permutation_matrix(routed.TARGET)
-    transition = sparse.diags(
-        [
-            routed.adjacent.phase_from_pairs(
-                sum(1 << mode for mode in label), routed.TRANSITION
-            )
-            for label in routed.route_c.FOCK_BASIS
-        ],
-        format="csc",
-        dtype=complex,
+    gate_rows, candidate_stream, transition, seam_gates = routed.decoded_gate_product()
+    target_stream = routed.route_c.patch_stream(
+        routed.route_c.BASE_CELLS, routed.route_c.BASE_EDGES
     )
     before = candidate_stream @ transition - target_stream
     after = transition @ candidate_stream - target_stream
@@ -225,62 +287,146 @@ def sparse_route_checks() -> dict[str, object]:
         },
     )
 
-    encoding_row, encoding = routed.refresh.patch_branch_rows(5)
-    wrong_diagonal = np.ones(encoding.shape[1], dtype=complex)
-    wrong_diagonal[0] = -1
-    wrong_logical = sparse.diags(wrong_diagonal, format="csc")
-    vacuous = routed.refresh.factorized_intertwiner(encoding, wrong_logical)
-    factorized_source = inspect.getsource(routed.refresh.factorized_intertwiner)
+    square_row = routed.square_decoded_certificate(
+        5, gate_rows, candidate_stream, transition, seam_gates
+    )
     check(
-        "same-E factorized residual is only the Gram-isometry identity",
-        max(vacuous.values()) < TOL
-        and "logical @ (identity - gram)" in factorized_source
-        and "physical" not in inspect.signature(
-            routed.refresh.factorized_intertwiner
-        ).parameters
-        and "encoding" in inspect.signature(
-            routed.refresh.factorized_intertwiner
-        ).parameters,
+        "sparse repair is algebraically square/unitary and closes on the same finite E",
+        square_row["U_decoded_ambient_shape"] == (125749, 125749)
+        and square_row["U_decoded_ambient_unitarity_raw_maximum"] < TOL
+        and square_row["intertwiner_raw_maximum"] < TOL
+        and square_row["intertwiner_opnorm"] < TOL
+        and square_row["code_leakage_raw_maximum"] < TOL
+        and square_row["code_leakage_opnorm"] < TOL
+        and gate_rows["ordered_seam_gates"] == 11
+        and gate_rows["transition_CZ_gates"] == 224
+        and gate_rows["corrected_product_vs_target_raw_maximum"] < TOL
+        and gate_rows["routed_transition_corrected_mismatch_columns"] == 0,
         {
-            "wrong_nontrivial_unitary_residual": vacuous,
-            "wrong_logical_vs_identity_raw": 2.0,
-            "physical_word_argument_present": False,
-            "E_Gram_raw": encoding_row["Gram_raw_maximum"],
+            "shape": square_row["U_decoded_ambient_shape"],
+            "nonzeros": square_row["U_decoded_ambient_nonzeros"],
+            "unitarity_raw": square_row[
+                "U_decoded_ambient_unitarity_raw_maximum"
+            ],
+            "intertwiner_raw": square_row["intertwiner_raw_maximum"],
+            "leakage_raw": square_row["code_leakage_raw_maximum"],
         },
     )
 
-    seam_source = inspect.getsource(routed.signed_seam_resources)
+    block_counts = Counter(len(label) for label in routed.route_c.FOCK_BASIS)
+    block_dimensions = {
+        routed.packet_dimension(label) for label in routed.route_c.FOCK_BASIS
+    }
+    ambient_rows_from_blocks = sum(
+        routed.packet_dimension(label) for label in routed.route_c.FOCK_BASIS
+    )
+    ambient_is_power_of_two = (
+        ambient_rows_from_blocks > 0
+        and ambient_rows_from_blocks & (ambient_rows_from_blocks - 1) == 0
+    )
+    ambient_source = inspect.getsource(routed.ambient_square_model)
+    lift_source = inspect.getsource(routed.lift_logical_operand)
+    check(
+        "the square matrix is a global-label direct sum, not a fixed tensor-product M2 ambient",
+        block_counts == Counter({2: 2556, 1: 72, 0: 1})
+        and block_dimensions == {1, 7, 49}
+        and ambient_rows_from_blocks == 125749
+        and not ambient_is_power_of_two
+        and "for column, label in enumerate(route_c.FOCK_BASIS)" in ambient_source
+        and "sparse.block_diag(prepare_blocks" in ambient_source
+        and "column = logical.getcol(source)" in lift_source
+        and "target = int(column.indices[0])" in lift_source
+        and "offsets[target] + packet" in lift_source,
+        {
+            "global_label_counts": dict(sorted(block_counts.items())),
+            "label_conditioned_block_dimensions": sorted(block_dimensions),
+            "direct_sum_dimension": ambient_rows_from_blocks,
+            "power_of_two_dimension": ambient_is_power_of_two,
+            "local_M2_tensor_factorization_executed": False,
+        },
+    )
+
+    decoded_source = inspect.getsource(routed.decoded_gate_product)
+    square_source = inspect.getsource(routed.square_decoded_certificate)
     same_e_source = inspect.getsource(routed.same_encoding_certificate)
     check(
-        "all eleven signed carriers are resource-censused rather than composed on E_refresh",
-        "signed_carrier_census" in seam_source
-        and "local_seam_matrices" not in seam_source
-        and "factorized_intertwiner" in same_e_source
-        and "execute_transition_word" not in same_e_source
-        and "signed_seam_resources" not in same_e_source,
+        "the candidate is independent but the transition discloses offline target synthesis",
+        "candidate = sparse.eye" in decoded_source
+        and decoded_source.index("candidate = sparse.eye")
+        < decoded_source.index("target_stream = route_c.patch_stream")
+        and "decoded_ambient = (prepare @ decoded_correct @ unprepare).tocsc()"
+        in square_source
+        and "expected = encoding @ target_contact" in square_source
+        and "target_contact" not in square_source.split(
+            "decoded_ambient = (prepare @ decoded_correct @ unprepare).tocsc()"
+        )[1].split("wrong_decoded =", maxsplit=1)[0]
+        and "_target_update" in same_e_source
+        and "square_decoded_certificate" in same_e_source
+        and not gate_rows["candidate_target_derived"]
+        and gate_rows["transition_synthesized_offline_from_target_inversion_set"],
         {
-            "resource_rows": 11,
-            "physical_signed_seam_product_applied": False,
-            "transition_plus_seams_plus_contact_operator_applied": False,
+            "candidate_target_derived": gate_rows["candidate_target_derived"],
+            "transition_synthesized_offline_from_target_inversion_set": gate_rows[
+                "transition_synthesized_offline_from_target_inversion_set"
+            ],
+            "comparison_target_matrix_injected_as_runtime_operand": False,
+            "prior_runtime_target_injection_defect": "closed",
         },
     )
 
+    qutrit_position = square_source.index("qutrit = route_c.qutrit_module_controls()")
+    physical_position = square_source.index(
+        "decoded_ambient = (prepare @ decoded_correct @ unprepare).tocsc()"
+    )
+    check(
+        "the square word lifts aggregate logical monomials instead of the declared local factors",
+        len(square_row["stage_rows"]) == 14
+        and "transition_lift = lift_logical_operand(transition, offsets)"
+        in square_source
+        and "seam_lifts = tuple(lift_logical_operand(gate, offsets)" in square_source
+        and "contact_lift = lift_logical_operand(contact, offsets)" in square_source
+        and "for term in ROUTED_TERMS" not in square_source
+        and "execute_routed_term" not in square_source
+        and "patch_coin" not in square_source
+        and qutrit_position > physical_position,
+        {
+            "aggregate_transition_lifts": 1,
+            "aggregate_seam_lifts": len(seam_gates),
+            "aggregate_contact_lifts": 1,
+            "routed_378_local_factors_applied_to_square_ambient": False,
+            "qutrit_chart_XOR_matrix_operand_present": False,
+            "physical_coin_operand_present": False,
+            "physical_mass_operand_present": False,
+        },
+    )
+
+    logical, target_update = routed.logical_composition_certificate()
+    covariance = routed.covariance_certificate(target_update)
     covariance_source = inspect.getsource(routed.covariance_certificate)
+    logical_covariance_source = inspect.getsource(
+        routed.route_c.frame_and_translation_controls
+    )
     deletion_source = inspect.getsource(routed.deletion_certificate)
     check(
-        "shared-chart preservation and physical covariance are not tested after the full word",
-        encoding_row["shared_copy_equality_failures"] == 0
+        "24/576 and translation checks remain geometric/logical rather than square-word covariance",
+        logical["routed_transition_stream_raw_maximum"] < TOL
+        and covariance["proper_cubic_frames"] == 24
+        and covariance["ordered_frame_products"] == 576
+        and covariance["rotated_route_failures"] == 0
+        and covariance["frame_product_word_failures"] == 0
         and "transform_word" in covariance_source
         and "frame_and_translation_controls" in covariance_source
-        and "execute_transition_word" not in covariance_source
-        and "patch_branch_rows" not in covariance_source
+        and "square_physical_certificate" not in covariance_source
+        and "lift_logical_operand" not in covariance_source
+        and "translation_rows" in logical_covariance_source
+        and "translated_cells" in logical_covariance_source
+        and "physical" not in logical_covariance_source
         and "tuple(2.0 for _term in ROUTED_TERMS)" in deletion_source,
         {
-            "initial_shared_chart_equality_failures": encoding_row[
-                "shared_copy_equality_failures"
-            ],
-            "post_full_word_shared_chart_check_present": False,
-            "physical_routed_unitary_covariance_residual_present": False,
+            "proper_frames": covariance["proper_cubic_frames"],
+            "frame_products": covariance["ordered_frame_products"],
+            "physical_square_word_covariance_residual_present": False,
+            "translated_square_operand_executed": False,
             "macro_deletion_residuals_are_literal": True,
         },
     )
@@ -288,10 +434,17 @@ def sparse_route_checks() -> dict[str, object]:
         "transition_word_executed": True,
         "transition_order_closed": True,
         "dirty_transit_reuse_closed": True,
-        "physical_signed_seam_product_executed": False,
+        "five_Givens_coefficient_provenance_executed": True,
+        "abstract_direct_sum_square_unitary_executed": True,
+        "same_finite_encoding_intertwiner_executed": True,
+        "candidate_target_derived": False,
+        "transition_synthesized_offline_from_target_inversion_set": True,
+        "comparison_target_matrix_injected_as_runtime_operand": False,
+        "fixed_tensor_product_M2_ambient_executed": False,
+        "declared_local_factors_applied_to_square_ambient": False,
+        "aggregate_global_label_seam_lifts_executed": True,
         "postword_shared_chart_preservation_executed": False,
         "physical_covariance_executed": False,
-        "factorized_intertwiner_is_gram_identity": True,
         "candidate_sha256": sha256(Path(routed.__file__).read_bytes()).hexdigest(),
     }
 
@@ -301,20 +454,22 @@ def main() -> None:
     sparse_result = sparse_route_checks()
     missing = {
         "direct_ROM": (
-            "a serialized or autonomously generated ordered ROM row (owner, stage, source/target "
-            "physical observations, Pauli transition, complex Givens coefficient), with geometric "
-            "diameter, followed by the directly measured eleven-owner common-E product residual"
+            "the directly measured eleven-owner common-E product residual using the supplied "
+            "coefficient-tagged finite ROMs, plus a volume-independent translated generator and "
+            "overlapping-fixture composition theorem before any recurrent/autonomous-law claim"
         ),
         "sparse_route": (
-            "one executed U_physical on the 59,941-row E_refresh ambient that composes free coin, "
-            "the routed 224-CZ correction, all eleven signed-carrier seam words, shared-chart "
-            "updates, contact and clean return, followed by U_physical E-E G and rotated-word residuals"
+            "embed the finite encoding in a declared fixed tensor-product M2 register ambient and "
+            "replace global FOCK-label block lifts by the 378 routed local factors, eleven local "
+            "seam words, onsite contact and chart/work erase-return operands; then compute the "
+            "same-E residual and covariance of that physical operand. Free coin and mass remain "
+            "separate unless they are also included in the claimed word"
         ),
     }
     summary = {
         "authority": "none",
         "audit": "unset",
-        "status": "transition-positive-full-physical-compositions-open",
+        "status": "finite-primitive-positive-full-physical-compositions-open",
         "pass": FAIL == 0,
         "tests_passed": PASS,
         "tests_failed": FAIL,
@@ -322,9 +477,12 @@ def main() -> None:
         "sparse_route": sparse_result,
         "missing_executed_objects": missing,
         "claim_ceiling": (
-            "The direct route supplies conflict-free finite Pauli descriptors without coefficient-"
-            "tagged ordered ROM execution. The sparse route supplies an exact nearest-neighbor "
-            "224-CZ transition word, but not the advertised full signed-seam physical composition."
+            "The direct route supplies coefficient-tagged, observation-only, bounded-diameter, "
+            "hash-inventoried finite ROM primitives with full torus-translation audits. Its common-E "
+            "all-owner composition and recurrent law remain open. The sparse route supplies an exact "
+            "nearest-neighbor 224-CZ transition word and an algebraically square global-label direct-"
+            "sum completion, with the transition synthesized offline from the target inversion set, "
+            "but not a local-M2 tensor-product signed-seam physical composition."
         ),
         "terminal": "OWNED_SEAM_TRANSITIONS_POSITIVE_FULL_PHYSICAL_COMPOSITIONS_OPEN",
     }

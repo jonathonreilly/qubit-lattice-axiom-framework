@@ -1,44 +1,66 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T12:19:07.321240+00:00",
+  "audit_invocation_history": [
+    "d53d5d2a16d542e0b8e2c702cf18c455"
+  ],
+  "audit_invocation_id": "d53d5d2a16d542e0b8e2c702cf18c455",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "The abstract R^+ algebraic identities T1-T6 relating alpha_bare, u_0, alpha_LM, alpha_s(v), and the optional positive substitution u_0=P^(1/4), with no physical plaquette, normalization, gauge-group, running, or numerical target import."
+    },
+    "dep_claim_type": {
+      "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 2.085,
+    "runner_hash": "a89e9f1fa5e27775532e927c4c4fb7e6e27a34452aa72afcdd7f85128133f233",
+    "transitive_descendants": 2
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260725-d2d030d8",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The formulas close exactly from D1-D2; independent substitution confirms P1, P2, and all four corollaries. This closure is purely algebraic and duplicates the retained parent's packet.",
   "claim_id": "alpha_s_derived_narrow_theorem_note_2026-05-10",
-  "claim_scope": null,
-  "claim_type": "positive_theorem",
+  "claim_scope": "The identities P1 and P2 and the four listed corollaries as exact algebraic consequences of D1-D2 for positive alpha_bare and u_0, excluding physical coupling identifications and numerical evaluations.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T12:19:07.321240+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
   "deps": [
     "alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10",
   "load_bearing_score": 2.085,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Substituting alpha_LM = alpha_bare/u_0 and alpha_s(v) = alpha_bare/u_0^2 yields alpha_LM^2 = alpha_bare*alpha_s(v) and alpha_s(v)/alpha_LM = 1/u_0.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "77d52cbafd6f26e3e058bf2b10be8a0e98919da14a496f6b5bb28dc2e903039b",
   "note_path": "docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -306,14 +328,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 18,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 18
   },
   "runner_path": "scripts/audit_companion_alpha_s_tadpole_power_identity.py",
   "title": "alpha_s Derived Narrow Theorem (Tadpole-Power Coupling-Chain Identity)",
   "transitive_descendants": 2,
-  "verdict_rationale": null
+  "verdict_rationale": "Independent substitution confirms P1, P2, and every listed corollary, with positivity discharging all divisions; the runner's 18 class-A checks agree and include counterfactual power probes. However, the retained cited authority already states the same definitions, geometric-mean identity, and ratio chain, so this row adds no independent comparator, falsifiability, compression, or physical content. It is therefore an exact algebraic decoration of that retained authority rather than a new positive theorem."
 }

@@ -19,7 +19,7 @@ file per claim), summarized in
 | Retained positive rows | 104 |
 | Retained bounded rows | 330 |
 | Retained no-go rows | 0 |
-| Boxed decorations under retained parents | 23 |
+| Boxed decorations under retained parents | 24 |
 
 ## Retained positive rows (104)
 
@@ -469,7 +469,7 @@ Sorted by load-bearing graph score (descending).
 
 - none at present
 
-## Boxed decorations under retained parents (23)
+## Boxed decorations under retained parents (24)
 
 - [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.099; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
 - [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.748; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
@@ -490,6 +490,7 @@ Sorted by load-bearing graph score (descending).
 - [`lhcm_matter_assignment_su3_block_representation_narrow_theorem_note_2026-05-17`](../../docs/LHCM_MATTER_ASSIGNMENT_SU3_BLOCK_REPRESENTATION_NARROW_THEOREM_NOTE_2026-05-17.md) — score 5.255; audited 2026-07-10T03:19:43.094692+00:00; under `graph_first_su3_integration_note`
 - [`staggered_hamiltonian_direction_decomposition_bounded_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_HAMILTONIAN_DIRECTION_DECOMPOSITION_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md) — score 4.822; audited 2026-07-25T03:13:02.973128+00:00; under `cpt_exact_note`
 - [`cluster_decomposition_delta_x_finite_lambda_axis_permutation_narrow_note_2026-06-02`](../../docs/CLUSTER_DECOMPOSITION_DELTA_X_FINITE_LAMBDA_AXIS_PERMUTATION_NARROW_NOTE_2026-06-02.md) — score 2.500; audited 2026-06-03T02:09:41.602441+00:00; under `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19`
+- [`alpha_s_derived_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md) — score 2.085; audited 2026-07-25T12:19:07.321240+00:00; under `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
 - [`beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md) — score 0.000; audited 2026-07-25T11:20:02.772224+00:00; under `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`
 - [`commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12`](../../docs/COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md) — score 0.000; audited 2026-07-12T04:18:56.272539+00:00; under `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12`
 - [`koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02`](../../docs/KOIDE_CYCLIC_WILSON_3_RESPONSE_NARROW_THEOREM_NOTE_2026-05-02.md) — score 0.000; audited 2026-05-05T11:39:48.207299+00:00; under `koide_dweh_cyclic_compression_note_2026-04-18`

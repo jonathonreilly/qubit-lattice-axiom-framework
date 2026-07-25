@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T21:54:02.516111+00:00",
+  "audit_invocation_history": [
+    "dc5f3293884b472b95b16a14f19d2470"
+  ],
+  "audit_invocation_id": "dc5f3293884b472b95b16a14f19d2470",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 0,
+        "D": 3
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_lh_doublet_partition_ratio_inverse_uniqueness_exact_2026_05_17.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "Exact structural eigenvalue ratio 1:(-3) on the Sym\u00b2 and Anti\u00b2 LH-doublet sub-decompositions under the graph-first selected-axis commutant decomposition, excluding normalization, SM hypercharge identification, charge formula, and anomaly claims."
+    },
+    "dep_claim_type": {
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration"
+    },
+    "dep_effective_status": {
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": "decoration_under_graph_first_su3_integration_note"
+    },
+    "deps": [
+      "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_lh_doublet_partition_ratio_inverse_uniqueness_exact_2026_05_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "5a82b417b13b4841a9331a6d471b2184546239c7b8c2b9d05693cce5a913b764",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "5a82b417b13b4841a9331a6d471b2184546239c7b8c2b9d05693cce5a913b764",
+    "runner_path": "scripts/audit_companion_lh_doublet_partition_ratio_inverse_uniqueness_exact_2026_05_17.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-ca8871a7",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The central algebra closes for alpha != 0, but the source omits that domain restriction and its opening scope misclassifies k = 2, 4, 5, 6 as integer-admissible at N = 8, contradicting C4-C7.",
   "claim_id": "lh_doublet_partition_ratio_inverse_uniqueness_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
+  "claim_scope": "The abstract inverse-uniqueness theorem and its N = 8 corollaries, including the stated classification of alternative integer ratios.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T21:54:02.516111+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,20 @@
     "lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Setting beta/alpha = -k gives m = kn, and combining this with m + n = N gives n = N/(k+1) and m = kN/(k+1).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "62974b374440dd13839e39a7c26756afdc697bef24cf2b27d36143b5bfed989c",
   "note_path": "docs/LH_DOUBLET_PARTITION_RATIO_INVERSE_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after correcting the alternative-k sentence, adding alpha != 0 explicitly to the theorem statement, and making the runner's ledger-status check packet-safe or non-load-bearing.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -146,14 +200,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 56,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 56
   },
   "runner_path": "scripts/audit_companion_lh_doublet_partition_ratio_inverse_uniqueness_exact_2026_05_17.py",
   "title": "LH-Doublet Trace-Surface Partition / Ratio Inverse Uniqueness (Narrow Theorem)",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The opening claim scope incorrectly calls k = 2, 4, 5, 6 integer-admissible alternatives for N = 8, although the note later proves that only k = 1, 3, 7 are admissible; it also forms beta/alpha without explicitly excluding alpha = 0. Why this blocks: These are mutually inconsistent quantitative assertions and an omitted domain condition, so the source is not correct as written despite the valid central algebra. Repair target: Correct the opening enumeration and state alpha != 0, then rerun the exact checks without the ledger-path crash. Claim boundary until fixed: For alpha != 0, the abstract uniqueness formulas are correct, and at N = 8 the admissible positive integer ratios are exactly k = 1, 3, 7, with k = 3 yielding (6, 2)."
 }

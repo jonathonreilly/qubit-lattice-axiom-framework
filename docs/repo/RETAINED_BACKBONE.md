@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 115 |
+| Retained positive rows | 116 |
 | Retained bounded rows | 340 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 27 |
 
-## Retained positive rows (115)
+## Retained positive rows (116)
 
 Sorted by load-bearing graph score (descending).
 
@@ -137,6 +137,7 @@ Sorted by load-bearing graph score (descending).
 - [`proper_cubic_scalar_even_antipodal_transition_lemma_note_2026-07-23`](../../docs/PROPER_CUBIC_SCALAR_EVEN_ANTIPODAL_TRANSITION_LEMMA_NOTE_2026-07-23.md) — score 0.000; audited 2026-07-25T12:25:00.054259+00:00
 - [`quark_route2_double_local_projector_normalization_bridge_conditional_note_2026-06-21`](../../docs/QUARK_ROUTE2_DOUBLE_LOCAL_PROJECTOR_NORMALIZATION_BRIDGE_CONDITIONAL_NOTE_2026-06-21.md) — score 0.000; audited 2026-07-25T12:23:38.189606+00:00
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
+- [`six_mode_paired_direction_coin_b_eigenvalue_determinant_factorization_theorem_note_2026-07-23`](../../docs/SIX_MODE_PAIRED_DIRECTION_COIN_B_EIGENVALUE_DETERMINANT_FACTORIZATION_THEOREM_NOTE_2026-07-23.md) — score 0.000; audited 2026-07-25T18:52:47.962564+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00

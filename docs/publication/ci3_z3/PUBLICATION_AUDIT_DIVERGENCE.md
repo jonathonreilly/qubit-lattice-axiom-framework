@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 123 |
+| medium | `unaudited` | 122 |
 | critical | `audited_conditional` | 16 |
 | high | `audited_conditional` | 5 |
 | ? | `unresolved` | 4 |
@@ -34,7 +34,7 @@ publication tables phrase it.
 | high | `audited_numerical_match` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 554
+**Total non-retained-grade rows in publication tables:** 553
 
 ## Per-row breakdown
 
@@ -510,7 +510,6 @@ publication tables phrase it.
 | medium | `hadron_lane1_chiral_condensate_banks_casher_scoping_support_note_2026-04-27` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `hadron_mass_lane1_theorem_plan_support_note_2026-04-27` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `hadronic_charges_from_quark_y_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `higgs_mechanism_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `koide_c3_constant_singlet_reparameterization_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

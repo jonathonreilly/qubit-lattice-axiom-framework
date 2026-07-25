@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 99 |
+| Retained positive rows | 100 |
 | Retained bounded rows | 324 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 22 |
 
-## Retained positive rows (99)
+## Retained positive rows (100)
 
 Sorted by load-bearing graph score (descending).
 
@@ -80,6 +80,7 @@ Sorted by load-bearing graph score (descending).
 - [`kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05`](../../docs/KRAUS_CHOI_REPRESENTATION_NORMALIZATION_RECONCILED_NARROW_THEOREM_NOTE_2026-06-05.md) — score 7.748; audited 2026-07-11T22:29:03.496521+00:00
 - [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) — score 7.585; audited 2026-06-10T03:26:11.088428+00:00
 - [`electrostatics_card_note`](../../docs/ELECTROSTATICS_CARD_NOTE.md) — score 7.500; audited 2026-05-04T23:50:38.970936+00:00
+- [`higgs_mechanism_note`](../../docs/HIGGS_MECHANISM_NOTE.md) — score 7.085; audited 2026-07-25T06:58:31.922115+00:00
 - [`block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02`](../../docs/BLOCK_GAUSSIAN_SCHUR_MARGINALIZATION_NARROW_THEOREM_NOTE_2026-05-02.md) — score 7.044; audited 2026-05-05T11:20:25.074219+00:00
 - [`electrostatics_superposition_proxy_note`](../../docs/ELECTROSTATICS_SUPERPOSITION_PROXY_NOTE.md) — score 7.000; audited 2026-05-04T23:52:26.154523+00:00
 - [`acphilambda_fermionic_realification_pfaffian_power_identity_narrow_theorem_note_2026-07-12`](../../docs/ACPHILAMBDA_FERMIONIC_REALIFICATION_PFAFFIAN_POWER_IDENTITY_NARROW_THEOREM_NOTE_2026-07-12.md) — score 6.585; audited 2026-07-12

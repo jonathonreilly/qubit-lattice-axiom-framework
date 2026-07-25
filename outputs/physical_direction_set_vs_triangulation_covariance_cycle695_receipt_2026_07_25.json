@@ -1,7 +1,7 @@
 {
  "audit": "unset",
  "authority": "none",
- "consequence": "Cycle 690's ceiling of 12 bounds TRIANGULATION invariance. It does not bound a construction whose covariance is mediated by the edge direction set. Reading the 12 as a universal ceiling for real-space Regge covariance is a misreading, and citing it as the licence for a direction-set scope of 6 is a category error: for the Kuhn complex those two numbers coincide by accident of that complex, not by entailment.",
+ "consequence": "Cycle 690's ceiling of 12 bounds TRIANGULATION invariance. It does not bound a construction whose covariance is mediated by the edge direction set. Reading the 12 as a universal ceiling for real-space Regge covariance is a misreading, and citing that triangulation ceiling as the reason for a direction-set scope of 6 is a category error. Cycle 690's separate Kuhn direction-set row does compute 6; the ceiling theorem does not entail it.",
  "cycle": 695,
  "cycle_claim": null,
  "fail_count": 0,
@@ -20,7 +20,7 @@
  "pass": true,
  "pass_count": 6,
  "resources": {
-  "elapsed_seconds": 0.0032371249981224537
+  "elapsed_seconds": 0.003914291970431805
  },
- "runner_sha256": "72dfbabd82458831ae6f05b17752975d8b48e97bedce13bc69c0863e754d94fa"
+ "runner_sha256": "e20f31b12cf37e2f17b63f411dfe27854a6a83ef96240d1c0687d4b0cc4a36a6"
 }

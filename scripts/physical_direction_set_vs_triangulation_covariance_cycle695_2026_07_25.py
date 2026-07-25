@@ -6,11 +6,11 @@ unit-cube triangulation is invariant under all 24 proper cubic rotations, and th
 maximum stabilizer is exactly 12, attained by the five-tetrahedron decomposition,
 while the Kuhn/Freudenthal complex attains 6.
 
-A real-space Regge construction, however, does not always mediate its covariance
-through the triangulation. It may mediate it through the EDGE DIRECTION SET --
-asking which frames carry every spatial direction class back into the set (up to
-a global sign). That is a different invariant, and this cycle shows the two can
-COME APART.
+If a real-space Regge construction mediates its covariance through the EDGE
+DIRECTION SET rather than through the triangulation, the relevant question is
+which frames carry every spatial direction class back into the set, with each
+direction read as unoriented (d equivalent to -d). That is a different
+invariant, and this cycle shows the two can COME APART.
 
 Exact integer results:
 
@@ -178,6 +178,10 @@ def main() -> int:
     fdirs = edge_directions(five)
     sf = signed_scope(fdirs)
     cf = complex_stabilizer(five)
+    expected_fdirs = {
+        d for d in itertools.product((-1, 0, 1), repeat=3)
+        if sum(c * c for c in d) in (1, 2)
+    }
 
     table = {
         "kuhn_direction_set_oriented_stabilizer": len(o01),
@@ -186,10 +190,19 @@ def main() -> int:
         "five_tet_direction_set_signed_scope": len(sf),
         "five_tet_complex_cube_centred_stabilizer": len(cf),
     }
-    check("the five invariants are computed exactly and reproduce the landed Cycle-690 "
-          "numbers where they overlap: the Kuhn complex stabilizer is 6 and the "
-          "five-tetrahedron complex stabilizer is 12",
-          len(ck) == 6 and len(cf) == 12, table)
+    check("the five invariant values are computed exactly, the five-tetrahedron "
+          "direction accumulator is the nonempty 18-vector axes-plus-face-diagonals "
+          "set, and the overlapping complex values reproduce Cycle 690",
+          table == {
+              "kuhn_direction_set_oriented_stabilizer": 3,
+              "kuhn_direction_set_signed_scope": 6,
+              "kuhn_complex_cube_centred_stabilizer": 6,
+              "five_tet_direction_set_signed_scope": 24,
+              "five_tet_complex_cube_centred_stabilizer": 12,
+          }
+          and fdirs == expected_fdirs
+          and len(fdirs) == 18,
+          {**table, "five_tet_signed_direction_vectors": len(fdirs)})
     summary["invariants"] = table
 
     check("for the KUHN complex the two invariants COINCIDE: the signed direction-set "
@@ -207,12 +220,16 @@ def main() -> int:
           {"signed_direction_scope": len(sf), "complex_stabilizer": len(cf),
            "ratio": len(sf) // len(cf)})
 
-    check("NEITHER INVARIANT BOUNDS THE OTHER: the five-tetrahedron case exhibits a "
-          "direction-set scope (24) STRICTLY GREATER than the Cycle-690 triangulation "
-          "ceiling (12), so that ceiling cannot be quoted as a bound on direction-set "
-          "covariance",
-          len(sf) > len(cf) and len(sf) > 12,
-          {"direction_scope": len(sf), "cycle690_triangulation_ceiling": 12})
+    check("the complex stabilizer is contained in the associated direction-set "
+          "stabilizer: equality holds for Kuhn and containment is strict for the "
+          "five-tetrahedron complex, so a triangulation-only ceiling cannot be "
+          "reused as an upper bound on direction-set covariance",
+          set(ck) == set(s01)
+          and set(cf) < set(sf)
+          and len(sf) > 12,
+          {"kuhn_equal": set(ck) == set(s01),
+           "five_tet_complex_is_strict_subgroup": set(cf) < set(sf),
+           "direction_scope": len(sf), "cycle690_triangulation_ceiling": 12})
 
     check("preregistered falsifier does not fire: had the two invariants agreed on every "
           "declared complex, the distinction asserted here would be empty -- they "
@@ -224,9 +241,9 @@ def main() -> int:
         "Cycle 690's ceiling of 12 bounds TRIANGULATION invariance. It does not bound a "
         "construction whose covariance is mediated by the edge direction set. Reading "
         "the 12 as a universal ceiling for real-space Regge covariance is a misreading, "
-        "and citing it as the licence for a direction-set scope of 6 is a category "
-        "error: for the Kuhn complex those two numbers coincide by accident of that "
-        "complex, not by entailment."
+        "and citing that triangulation ceiling as the reason for a direction-set scope "
+        "of 6 is a category error. Cycle 690's separate Kuhn direction-set row does "
+        "compute 6; the ceiling theorem does not entail it."
     )
     summary["firewalls"] = {
         "any_physics_claim": False,

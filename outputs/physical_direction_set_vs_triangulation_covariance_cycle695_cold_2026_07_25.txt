@@ -1,18 +1,18 @@
 PASS the acting group is exactly the 24 proper cubic rotations and closes under all 576 products (exact integer arithmetic) :: {'order': 24, 'products_outside': 0}
-PASS the five invariants are computed exactly and reproduce the landed Cycle-690 numbers where they overlap: the Kuhn complex stabilizer is 6 and the five-tetrahedron complex stabilizer is 12 :: {'kuhn_direction_set_oriented_stabilizer': 3, 'kuhn_direction_set_signed_scope': 6, 'kuhn_complex_cube_centred_stabilizer': 6, 'five_tet_direction_set_signed_scope': 24, 'five_tet_complex_cube_centred_stabilizer': 12}
+PASS the five invariant values are computed exactly, the five-tetrahedron direction accumulator is the nonempty 18-vector axes-plus-face-diagonals set, and the overlapping complex values reproduce Cycle 690 :: {'kuhn_direction_set_oriented_stabilizer': 3, 'kuhn_direction_set_signed_scope': 6, 'kuhn_complex_cube_centred_stabilizer': 6, 'five_tet_direction_set_signed_scope': 24, 'five_tet_complex_cube_centred_stabilizer': 12, 'five_tet_signed_direction_vectors': 18}
 PASS for the KUHN complex the two invariants COINCIDE: the signed direction-set scope and the cube-centred complex stabilizer are both 6 -- which is exactly why a construction reporting '6 of 24' can appear to quote the triangulation ceiling when it is really quoting its direction set :: {'signed_direction_scope': 6, 'complex_stabilizer': 6}
 PASS for the FIVE-TETRAHEDRON complex the two invariants DIVERGE by a factor of two: its edge-direction set is closed under all 24 rotations while the triangulation itself is invariant under only 12 -- so the two invariants are genuinely different objects :: {'signed_direction_scope': 24, 'complex_stabilizer': 12, 'ratio': 2}
-PASS NEITHER INVARIANT BOUNDS THE OTHER: the five-tetrahedron case exhibits a direction-set scope (24) STRICTLY GREATER than the Cycle-690 triangulation ceiling (12), so that ceiling cannot be quoted as a bound on direction-set covariance :: {'direction_scope': 24, 'cycle690_triangulation_ceiling': 12}
+PASS the complex stabilizer is contained in the associated direction-set stabilizer: equality holds for Kuhn and containment is strict for the five-tetrahedron complex, so a triangulation-only ceiling cannot be reused as an upper bound on direction-set covariance :: {'kuhn_equal': True, 'five_tet_complex_is_strict_subgroup': True, 'direction_scope': 24, 'cycle690_triangulation_ceiling': 12}
 PASS preregistered falsifier does not fire: had the two invariants agreed on every declared complex, the distinction asserted here would be empty -- they disagree on the five-tetrahedron complex :: {'agree_on_kuhn': True, 'agree_on_five_tet': False}
-SUMMARY_JSON {"audit": "unset", "authority": "none", "consequence": "Cycle 690's ceiling of 12 bounds TRIANGULATION invariance. It does not bound a construction whose covariance is mediated by the edge direction set. Reading the 12 as a universal ceiling for real-space Regge covariance is a misreading, and citing it as the licence for a direction-set scope of 6 is a category error: for the Kuhn complex those two numbers coincide by accident of that complex, not by entailment.", "cycle": 695, "cycle_claim": null, "fail_count": 0, "firewalls": {"any_physics_claim": false, "asserts_some_construction_achieves_24": false, "new_axiom_or_primitive_proposed": false}, "invariants": {"five_tet_complex_cube_centred_stabilizer": 12, "five_tet_direction_set_signed_scope": 24, "kuhn_complex_cube_centred_stabilizer": 6, "kuhn_direction_set_oriented_stabilizer": 3, "kuhn_direction_set_signed_scope": 6}, "pass": true, "pass_count": 6, "resources": {"elapsed_seconds": 0.0032371249981224537}, "runner_sha256": "72dfbabd82458831ae6f05b17752975d8b48e97bedce13bc69c0863e754d94fa"}
+SUMMARY_JSON {"audit": "unset", "authority": "none", "consequence": "Cycle 690's ceiling of 12 bounds TRIANGULATION invariance. It does not bound a construction whose covariance is mediated by the edge direction set. Reading the 12 as a universal ceiling for real-space Regge covariance is a misreading, and citing that triangulation ceiling as the reason for a direction-set scope of 6 is a category error. Cycle 690's separate Kuhn direction-set row does compute 6; the ceiling theorem does not entail it.", "cycle": 695, "cycle_claim": null, "fail_count": 0, "firewalls": {"any_physics_claim": false, "asserts_some_construction_achieves_24": false, "new_axiom_or_primitive_proposed": false}, "invariants": {"five_tet_complex_cube_centred_stabilizer": 12, "five_tet_direction_set_signed_scope": 24, "kuhn_complex_cube_centred_stabilizer": 6, "kuhn_direction_set_oriented_stabilizer": 3, "kuhn_direction_set_signed_scope": 6}, "pass": true, "pass_count": 6, "resources": {"elapsed_seconds": 0.003934958018362522}, "runner_sha256": "e20f31b12cf37e2f17b63f411dfe27854a6a83ef96240d1c0687d4b0cc4a36a6"}
 RESULT 6 0 elapsed 0.00 s
 RESULT DIRECTION_SET_AND_TRIANGULATION_COVARIANCE_ARE_DIFFERENT_INVARIANTS
-        0.02 real         0.02 user         0.00 sys
-            21233664  maximum resident set size
+        0.03 real         0.02 user         0.00 sys
+            22036480  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-                2353  page reclaims
+                2385  page reclaims
                    0  page faults
                    0  swaps
                    0  block input operations
@@ -21,7 +21,7 @@ RESULT DIRECTION_SET_AND_TRIANGULATION_COVARIANCE_ARE_DIFFERENT_INVARIANTS
                    0  messages received
                    0  signals received
                    0  voluntary context switches
-                  18  involuntary context switches
-           389714037  instructions retired
-           113270275  cycles elapsed
-            11485664  peak memory footprint
+                  78  involuntary context switches
+           385642203  instructions retired
+           117776687  cycles elapsed
+            12304912  peak memory footprint

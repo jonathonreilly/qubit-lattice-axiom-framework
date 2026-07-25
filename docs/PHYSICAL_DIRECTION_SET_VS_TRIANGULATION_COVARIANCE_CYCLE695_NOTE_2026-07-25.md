@@ -17,11 +17,16 @@ bounds **triangulation** invariance: no eight-vertex unit-cube triangulation is
 invariant under all 24 proper cubic rotations, the maximum is exactly 12
 (five-tetrahedron), and the Kuhn/Freudenthal complex attains 6.
 
-A real-space Regge construction does not always mediate its covariance through
-the triangulation. It may mediate it through the **edge direction set** — asking
-which frames carry every spatial direction class back into the set, up to a
-global sign. That is a **different invariant**, and this cycle shows the two come
-apart.
+If a real-space Regge construction mediates its covariance through the **edge
+direction set** rather than through the triangulation, the relevant question is
+which frames carry every spatial direction class back into the set, with each
+direction read as unoriented (`d ~ -d`). That is a **different invariant**, and
+this cycle shows the two come apart.
+
+There is nevertheless a one-way relation. Every rotation that preserves a
+triangulation maps its edges to edges, so it preserves the associated
+unoriented edge-direction set. Thus the triangulation stabilizer is a subgroup
+of the direction-set stabilizer. Equality can hold, but it is not forced.
 
 ## Result
 
@@ -42,9 +47,10 @@ ceiling when it is really quoting its direction set.
 edge-direction set is closed under all 24 rotations while the triangulation it
 belongs to is invariant under only 12.
 
-**Neither invariant bounds the other.** The five-tetrahedron case exhibits a
-direction-set scope (24) strictly greater than the Cycle-690 triangulation
-ceiling (12).
+**The containment can be strict.** The five-tetrahedron case has triangulation
+stabilizer 12 and direction-set stabilizer 24. Thus direction-set scope
+upper-bounds triangulation scope for a fixed complex, while a ceiling proved
+only for triangulations does not upper-bound direction-set scope.
 
 ## Consequence
 
@@ -55,9 +61,10 @@ Two specific misreadings are blocked:
 
 1. Reading the 12 as a universal ceiling for real-space Regge covariance. It is
    not; a direction-set-mediated construction is not bounded by it.
-2. Citing Cycle 690 as the *licence* for a measured direction-set scope of 6.
-   For the Kuhn complex those numbers coincide, so the citation looks right and
-   is not — the theorem's stabilizer computation is about a different object.
+2. Citing Cycle 690's **triangulation ceiling** as the reason for a measured
+   direction-set scope of 6. Cycle 690 separately computes that Kuhn
+   direction-set scope, so that separate row can support the value; the
+   ceiling theorem cannot.
 
 This does not assert that any construction achieves 24. It asserts only that the
 12-ceiling does not forbid it, and that the two invariants must be quoted
@@ -80,6 +87,8 @@ reviewer-owned.
 
 ## Dependency citations
 
-Self-contained; imports nothing from the repository. It cites
+The runner is computationally self-contained and imports no repository code or
+data. The global triangulation-ceiling consequence has one explicit theorem
+dependency:
 [Proper-cubic covariance ceiling](PHYSICAL_PROPER_CUBIC_COVARIANCE_CEILING_CYCLE690_NOTE_2026-07-24.md)
-for the triangulation ceiling it reproduces and delimits.
+for the ceiling it reproduces and delimits.

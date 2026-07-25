@@ -1,4 +1,4 @@
-# Admissible configurations are closed under neither disjoint union nor sub-collection, and the exact separation that restores union closure — Cycle 700
+# Admissible configurations are closed under neither disjoint union nor sub-collection, and a sufficient separation that restores union closure — Cycle 700
 
 Date: 2026-07-25
 
@@ -115,7 +115,7 @@ The runner verifies that neither rule ever returns an empty available set. So
 the closure failures are not an artefact of degenerate availability; they follow
 from availability varying at all, which the axiom requires.
 
-## U4 — the exact separation, valid for every nearest-neighbor rule
+## U4 — a sufficient separation, valid for every nearest-neighbor rule
 
 **Theorem.** Let `S1, S2` be configurations whose closed one-neighbourhoods are
 disjoint, `N[S1] ∩ N[S2] = {}`. Then no site has occupied neighbours in both
@@ -134,9 +134,12 @@ checks the combinatorial content exhaustively over a window: 2070 site-disjoint
 configuration pairs examined, 316 of them separated, and on every separated
 pair the count is additive and no site sees both parts.
 
-**Tightness.** At closed-neighbourhood contact the conclusion fails: the `U2`
-every-site witness has `N[T1] ∩ N[T2] = {(1,0,0)}`, one site, and its union is
-inadmissible.
+**Not claimed necessary.** The condition is sufficient, not shown necessary.
+One boundary witness shows it cannot simply be dropped: the `U2` every-site
+pair has `N[T1] ∩ N[T2] = {(1,0,0)}`, a single site of contact, and its union is
+inadmissible. That is one contacting pair under one rule; it does not establish
+that closure fails for every contacting pair or every rule, and the note does
+not say so.
 
 ## U5 — what a duplication argument actually needs
 
@@ -193,8 +196,11 @@ against two translations and six rotations, which is a check on the exhibited
 rules rather than a proof for all rules — the rules' covariance is also
 immediate from their depending on the neighbour count alone, which is
 rotation-invariant. U4's proof is general and box-free; the exhaustive window
-check is corroboration, not the argument. Rules of range greater than one,
-content-dependent availability, and infinite configurations are outside scope.
+check is corroboration, not the argument. Rules of range greater than one and infinite configurations are outside scope.
+The exhaustive U4 window check quantifies over occupancy-count rules on finite
+configurations; the U4 *proof* is what carries the statement for
+content-dependent nearest-neighbour rules, since it uses only that availability
+is a function of the nearest-neighbour conditions.
 
 ## Dependency citations
 

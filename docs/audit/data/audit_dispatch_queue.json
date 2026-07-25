@@ -2122,9 +2122,9 @@
       "state": "invalid_missing_claim_id"
     },
     {
-      "actual_audit_status": "unaudited",
-      "actual_claim_type": "bounded_theorem",
-      "actual_effective_status": "unaudited",
+      "actual_audit_status": "audited_decoration",
+      "actual_claim_type": "decoration",
+      "actual_effective_status": "decoration_under_cpt_exact_note",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",

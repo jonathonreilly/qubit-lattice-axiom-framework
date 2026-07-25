@@ -19,7 +19,7 @@ file per claim), summarized in
 | Retained positive rows | 107 |
 | Retained bounded rows | 331 |
 | Retained no-go rows | 0 |
-| Boxed decorations under retained parents | 25 |
+| Boxed decorations under retained parents | 26 |
 
 ## Retained positive rows (107)
 
@@ -473,7 +473,7 @@ Sorted by load-bearing graph score (descending).
 
 - none at present
 
-## Boxed decorations under retained parents (25)
+## Boxed decorations under retained parents (26)
 
 - [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.099; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
 - [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.748; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
@@ -497,6 +497,7 @@ Sorted by load-bearing graph score (descending).
 - [`alpha_s_derived_narrow_theorem_note_2026-05-10`](../../docs/ALPHA_S_DERIVED_NARROW_THEOREM_NOTE_2026-05-10.md) — score 2.085; audited 2026-07-25T12:19:07.321240+00:00; under `alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10`
 - [`beta_gbare_squared_rescaling_invariance_bounded_note_2026-05-08`](../../docs/BETA_GBARE_SQUARED_RESCALING_INVARIANCE_BOUNDED_NOTE_2026-05-08.md) — score 0.000; audited 2026-07-25T11:20:02.772224+00:00; under `beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`
 - [`commensuration_general_lemma_period_parity_bounded_theorem_note_2026-06-12`](../../docs/COMMENSURATION_GENERAL_LEMMA_PERIOD_PARITY_BOUNDED_THEOREM_NOTE_2026-06-12.md) — score 0.000; audited 2026-07-12T04:18:56.272539+00:00; under `d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12`
+- [`hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17`](../../docs/HERMITIAN_LIFT_THETA_H_PK_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md) — score 0.000; audited 2026-07-25T13:04:57.127362+00:00; under `cpt_exact_note`
 - [`koide_cyclic_wilson_3_response_narrow_theorem_note_2026-05-02`](../../docs/KOIDE_CYCLIC_WILSON_3_RESPONSE_NARROW_THEOREM_NOTE_2026-05-02.md) — score 0.000; audited 2026-05-05T11:39:48.207299+00:00; under `koide_dweh_cyclic_compression_note_2026-04-18`
 - [`lh_doublet_eigenvalue_ratio_proof_walk_lattice_independence_bounded_note_2026-05-10`](../../docs/LH_DOUBLET_EIGENVALUE_RATIO_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T12:39:32.935228+00:00; under `lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02`
 - [`lhcm_matter_assignment_block_proof_walk_lattice_independence_bounded_note_2026-05-10`](../../docs/LHCM_MATTER_ASSIGNMENT_BLOCK_PROOF_WALK_LATTICE_INDEPENDENCE_BOUNDED_NOTE_2026-05-10.md) — score 0.000; audited 2026-05-24T21:03:48.233481+00:00; under `graph_first_su3_integration_note`

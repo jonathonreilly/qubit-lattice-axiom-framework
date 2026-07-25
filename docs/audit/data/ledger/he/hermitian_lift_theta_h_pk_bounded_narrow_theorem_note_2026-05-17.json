@@ -1,45 +1,71 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T13:04:57.127362+00:00",
+  "audit_invocation_history": [
+    "402bc9e3b0fa490eb4f96f3d8671fc96"
+  ],
+  "audit_invocation_id": "402bc9e3b0fa490eb4f96f3d8671fc96",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "cpt_exact_note": "For the explicitly defined free one-component staggered operator on every finite even periodic lattice, D is real anti-Hermitian; H=iD has the stated unitary and antiunitary actions and involutive representatives; and its full and direction-resolved Theta_H=P K-odd sectors vanish.",
+      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "Conditional algebraic free-staggered theorem: for real anti-Hermitian D satisfying P D P = -D, H=iD is Hermitian, Theta_H=P K preserves H, and the full Theta_H-odd Hamiltonian proxy vanishes; the runner additionally verifies direction-resolved proxies at L=4 and L=6. No SME operator-basis completeness or physical SME-coefficient conclusion was audited."
+    },
+    "dep_claim_type": {
+      "cpt_exact_note": "positive_theorem",
+      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "cpt_exact_note": "retained",
+      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30": "retained_bounded"
+    },
+    "deps": [
+      "cpt_exact_note",
+      "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "3b47bff12eaeea935b0d787e76d2d8131ac9b3636e2430899cc567c3cfa416a7",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_decoration",
+  "auditor": "codex-audit-batch-A-20260725-c3422f4d",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Because D is real and P D P^{-1}=-D, antilinearity gives P K(iD)(P K)^{-1}=-i P D P^{-1}=iD=H. The full and direction-resolved odd-sector identities follow immediately.",
   "claim_id": "hermitian_lift_theta_h_pk_bounded_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
-  "claim_type": "bounded_theorem",
+  "claim_scope": "Exact algebraic corollary that on the explicit even-periodic staggered lattice, \u0398_H=P K is an antiunitary involution preserving H=iD, so the full and direction-resolved \u0398_H-odd Hamiltonian-sector matrices vanish.",
+  "claim_type": "decoration",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T13:04:57.127362+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
-  "decoration_parent_claim_id": null,
+  "decoration_parent_claim_id": "cpt_exact_note",
   "deps": [
     "physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30",
     "cpt_exact_note"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "decoration_under_cpt_exact_note",
+  "effective_status_reason": "decoration_parent_retained",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "decoration_under_cpt_exact_note",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "\u0398_H H \u0398_H^{-1} = -i\u00b7PDP^{-1} = -i\u00b7(-D) = iD = H.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "13795f52c4ee2381384c0d1d20c1726517baa62fa9eccbc7eb896d848ef909e2",
   "note_path": "docs/HERMITIAN_LIFT_THETA_H_PK_BOUNDED_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -103,14 +129,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 42,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 42
   },
   "runner_path": "scripts/audit_companion_hermitian_lift_theta_h_pk_bounded_exact_2026_05_17.py",
   "title": "Hermitian-Lift `\u0398_H = P K` Bounded Narrow Theorem on Framework C, P",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The P K conjugation algebra is correct, and the runner genuinely reconstructs the matrices and reports 42 class-A checks rather than printing assumed targets. However, the retained cpt_exact_note already states and proves the same all-even-L antiunitary symmetry and full and direction-resolved odd-sector identities, so this note reduces to one parent plus standard algebra without an independent comparator or new physical content. The chain therefore closes only as an algebraic decoration; the SME-dictionary exclusions are scope boundaries, not negative-theorem assertions."
 }

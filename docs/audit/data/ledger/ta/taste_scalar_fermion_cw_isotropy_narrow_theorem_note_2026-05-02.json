@@ -1,24 +1,47 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T12:10:18.436507+00:00",
+  "audit_invocation_history": [
+    "e1ab694da63d4caf9b3c4cc50787156e"
+  ],
+  "audit_invocation_id": "e1ab694da63d4caf9b3c4cc50787156e",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 3.0,
+    "runner_hash": "5d85503e368bda9e0788712e0822c250801120fe2b146337f7565ad159c967af",
+    "transitive_descendants": 3
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-A-20260725-f11723c8",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Independent differentiation gives \u2202\u1d62\u2202\u2c7cV_f=(2f\u2032(v\u00b2)+4v\u00b2f\u2033(v\u00b2))\u03a3_s(-1)^{s_i+s_j}; binary-character orthogonality then gives 8\u03b4\u1d62\u2c7c, proving isotropy for every smooth f in the stated domain.",
   "claim_id": "taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02",
-  "claim_scope": null,
+  "claim_scope": "Pure algebraic isotropy of the Hessian of V_f(\u03c6)=\u03a3_s f(\u03bb_s(\u03c6)\u00b2) for the specified commuting three-shift binary block at \u03c6=(v,0,0); physical carrier identification and non-fermion consequences are excluded.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem (axiom-reset source narrowing 2026-05-03; source-scope sync 2026-06-12)",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T12:10:18.436507+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +49,20 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
   "load_bearing_score": 3.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "At \u03c6=(v,0,0), \u03bb_s\u00b2=v\u00b2 for every binary state, so \u2202\u1d62\u2202\u2c7cV_f=(2f\u2032(v\u00b2)+4v\u00b2f\u2033(v\u00b2))\u03a3_s(-1)^{s_i+s_j}=8(2f\u2032(v\u00b2)+4v\u00b2f\u2033(v\u00b2))\u03b4\u1d62\u2c7c.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "7c192e555025841d91bfcdb62d0ebcdb663bc97b203ede7a14efc7c3e2e1157c",
   "note_path": "docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1559,14 +1583,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 32,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 32
   },
   "runner_path": "scripts/frontier_taste_scalar_fermion_cw_isotropy_narrow.py",
   "title": "Taste-Scalar Fermion Coleman-Weinberg Isotropy \u2014 Narrow Theorem",
   "transitive_descendants": 3,
-  "verdict_rationale": null
+  "verdict_rationale": "The result is a standalone algebraic identity on the explicitly supplied binary tensor-product block. Manual chain-rule differentiation independently confirms the runner\u2019s sign and factors, yielding C(v)=16f\u2032(v\u00b2)+32v\u00b2f\u2033(v\u00b2), while exhaustive binary orthogonality removes every off-diagonal entry and equalizes the diagonal entries. The physical taste/fermion naming is outside the audited algebraic scope and supplies no premise used by the proof."
 }

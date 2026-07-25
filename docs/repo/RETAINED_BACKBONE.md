@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 104 |
-| Retained bounded rows | 329 |
+| Retained bounded rows | 330 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 23 |
 
@@ -130,7 +130,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (329)
+## Retained bounded rows (330)
 
 Sorted by load-bearing graph score (descending).
 
@@ -285,6 +285,7 @@ Sorted by load-bearing graph score (descending).
 - [`persistent_record_overlap_kernel_note`](../../docs/PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md) — score 3.322; audited 2026-05-01T10:48:25.559149+00:00
 - [`flavor_measure_positivity_agnostic_note_2026-05-31`](../../docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md) — score 3.085; audited 2026-07-25T08:31:44.598500+00:00
 - [`source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md) — score 3.085; audited 2026-05-31T13:44:24.250543+00:00
+- [`taste_scalar_fermion_cw_isotropy_narrow_theorem_note_2026-05-02`](../../docs/TASTE_SCALAR_FERMION_CW_ISOTROPY_NARROW_THEOREM_NOTE_2026-05-02.md) — score 3.000; audited 2026-07-25T12:10:18.436507+00:00
 - [`directional_b_density_stencil_note`](../../docs/DIRECTIONAL_B_DENSITY_STENCIL_NOTE.md) — score 2.822; audited 2026-05-19T14:57:14.610762+00:00
 - [`evolving_network_prototype_v2_note`](../../docs/EVOLVING_NETWORK_PROTOTYPE_V2_NOTE.md) — score 2.822; audited 2026-05-24T17:37:05.323451+00:00
 - [`record_conditional_law_three_point_period_series_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_THREE_POINT_PERIOD_SERIES_BOUNDED_THEOREM_NOTE_2026-06-11.md) — score 2.822; audited 2026-06-18T08:43:57.646067+00:00

@@ -32,14 +32,14 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3865 |
-| Applied audit verdicts | 575 |
-| Retained-grade rows, including boxed decorations | 435 |
-| Retained positive theorems | 96 |
+| Applied audit verdicts | 576 |
+| Retained-grade rows, including boxed decorations | 436 |
+| Retained positive theorems | 97 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 318 |
 | Boxed decorations under retained parents | 21 |
 | Open gates | 2 |
-| Unaudited rows | 2932 |
+| Unaudited rows | 2931 |
 | Retained-pending-chain rows | 5 |
 | Audited conditional rows | 89 |
 | Audited renaming rows | 21 |
@@ -54,11 +54,11 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3040 |
-| Ready rows | 630 |
+| Total pending rows | 3039 |
+| Ready rows | 629 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
-| High pending | 366 |
+| High pending | 365 |
 | Medium pending | 838 |
 | Leaf pending | 1201 |
 
@@ -78,12 +78,12 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 
 ## Publication Gap
 
-- Non-retained-grade cited rows in publication tables: **556**.
+- Non-retained-grade cited rows in publication tables: **555**.
 
 | Criticality | Effective status | Count |
 |---|---|---:|
 | critical | `unaudited` | 225 |
-| high | `unaudited` | 166 |
+| high | `unaudited` | 165 |
 | medium | `unaudited` | 129 |
 | critical | `audited_conditional` | 16 |
 | ? | `unresolved` | 4 |
@@ -99,20 +99,21 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 
 | Metric | Value |
 |---|---:|
-| Publication-lane size (shadow, admitted only) | 568 |
+| Publication-lane size (shadow, admitted only) | 567 |
 | Manifest state | ok |
 | Manifest pending additions | 0 |
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
-| Admitted ids absent from lane candidates | 22 |
+| Admitted ids absent from lane candidates | 23 |
 | Live conditional/failed rows that would park | 49 |
 | Live rows fail-open (legacy/unversioned snapshot) | 42 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
-| Lane rows removed since prior pass | 2 |
+| Lane rows removed since prior pass | 3 |
 | Non-lane rows deferred by simulated interleave | 99 |
 
 Named lane membership churn since the prior pass:
+- removed: `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25`
 - removed: `matter_inertial_closure_note`
 - removed: `single_axiom_hilbert_note`
 
@@ -122,6 +123,7 @@ Admitted ids currently absent from lane candidates:
 - `ckm_five_sixths_bridge_support_note`
 - `cl3_taste_generation_theorem`
 - `cpt_exact_note`
+- `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25`
 - `ew_higgs_gauge_mass_diagonalization_theorem_note_2026-04-26`
 - `g_bare_rigidity_theorem_note`
 - `gauge_vacuum_plaquette_connected_hierarchy_theorem_note`

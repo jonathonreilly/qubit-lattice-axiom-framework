@@ -53,9 +53,23 @@ identifications are load-bearing and none is written in the axiom text:
    condition appropriate to an unordered pair of records. It is reported
    separately from the covariance count throughout, so a reader who rejects it
    can read the 6 instead of the 5.
+4. **The counted object is a rational, finite-support, linear trilinear form,
+   covariant under the stated group.** Rational scalars, linearity in the two
+   contents, support on the six face displacements, and covariance are all
+   supplied conditions. The Lattice and Qubit axioms supply `Z^3`, its proper
+   cubic rotations, and the `M_2(C)` presentation; they do **not** supply these
+   four conditions for a downstream physical law, and Record additivity does not
+   make a law linear. A prior review of an earlier block in this campaign found
+   exactly this conflation, and the correction is applied here.
 
-Every number below is stated against these three conditions. Reject any of
-them and the census changes.
+Every number below is stated against these four conditions. Reject any of them
+and the census changes.
+
+The orbit-count and character machinery is standard and is not claimed as new;
+`CUBIC_ORBIT_REYNOLDS_PROJECTOR_NARROW_THEOREM_NOTE_2026-05-10.md` already
+proves that invariant functions are constant on orbit classes and that the
+invariant dimension equals the orbit count. What is counted here is a specific
+object under a specific supplied action.
 
 ## The count
 
@@ -166,7 +180,7 @@ improper action is that note's subject, not this one's.
 |---|---|
 | source action | **counted**: 5 independent nearest-neighbour two-body couplings, with an exhibited basis. Values, signs, range, and licensing all remain open. |
 | site-anchored readout | shape derived in cycle 698; existence still gated by the additivity reading. |
-| reference normalization | untouched; still the object cycle 697 named. |
+| reference normalization | untouched. An *intensive* dimensionless target needs a selected reference; a dimensionless extensive count does not. |
 | carrier | untouched. |
 
 ## Scope for independent review
@@ -186,9 +200,15 @@ authority is [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md).
 [Cycle 698](PHYSICAL_PAIR_KERNEL_MINIMAL_POSITION_EXTENSION_CYCLE698_NOTE_2026-07-25.md)
 is cited for the content-blind classification this cycle generalizes and for
 the licensing question it leaves open;
-[cycle 697](PHYSICAL_READOUT_POSITION_SCALE_LIMITS_AND_FORCED_LOCAL_LAW_CYCLE697_NOTE_2026-07-25.md)
-for the readout limits that motivate the extension. Neither is load-bearing for
-this runner's arithmetic. The standard-math analogue for the orbit and
+the landed
+[proper-cubic finite-support linear-kernel classification](PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-25.md)
+for the orbit-count machinery in its scoped form. Neither is load-bearing for
+this runner's arithmetic.
+
+An earlier block in this campaign motivated the extension by arguing that a
+Record readout is position-blind. That block was rejected as submitted and only
+the abstract kernel classification above was salvaged and landed; this note
+therefore does not cite it, and nothing below depends on it. The standard-math analogue for the orbit and
 character machinery is
 [Cubic-orbit Reynolds projector](CUBIC_ORBIT_REYNOLDS_PROJECTOR_NARROW_THEOREM_NOTE_2026-05-10.md),
 cited in cycle 698 with the same distinction: it fixes a preferred forward

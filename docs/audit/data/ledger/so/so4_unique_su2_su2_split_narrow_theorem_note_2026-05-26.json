@@ -1,42 +1,90 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T12:32:57.574146+00:00",
+  "audit_invocation_history": [
+    "3f577057bfe440129e748b12b5fc0ef1"
+  ],
+  "audit_invocation_id": "3f577057bfe440129e748b12b5fc0ef1",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "611b5422f47b56ca5651eccf6078afd1511361a34572d0f01499ce1c8b24b74f",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "611b5422f47b56ca5651eccf6078afd1511361a34572d0f01499ce1c8b24b74f",
+    "runner_path": "scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-f5d427b7",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Under the note's explicit anti-self-dual basis and matrix convention, direct multiplication gives [\u03b7^-_0,\u03b7^-_1]=+2\u03b7^-_2, agreeing with the rendered runner result c_-=2 but contradicting the note's c_-=-2. The runner stdout is also clipped, so the complete load-bearing evidence is unavailable.",
   "claim_id": "so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26",
-  "claim_scope": null,
+  "claim_scope": "The finite-dimensional real Lie-algebra claim that d=4 is unique among d\u22652 with so(d) decomposing into two simple non-abelian ideals, including the explicit Hodge-basis bracket realization.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T12:32:57.574146+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Combining simplicity of so(d) for d\u22653, d\u22604 with the explicit Hodge split so(4)=\u039b^+(R^4)\u2295\u039b^-(R^4)\u2245su(2)\u2295su(2), exactly d=4 admits two simple non-abelian ideals.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "d55528a900fe0045e4effc5451df297b282c06985161775641378c0cdeb68e3f",
   "note_path": "docs/SO4_UNIQUE_SU2_SU2_SPLIT_NARROW_THEOREM_NOTE_2026-05-26.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after reconciling the source/runner c_- sign and supplying the complete unclipped runner transcript; independently confirm the Cartan simplicity step for every d\u22653, d\u22604, rather than only the finite cases through d=8.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -88,14 +136,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 68,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 68
   },
   "runner_path": "scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py",
   "title": "`so(4) \u2245 su(2) \u2295 su(2)` Unique Among Rotation Algebras Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The displayed anti-self-dual structure-constant family states c_-=-2, while direct multiplication of the supplied matrices and the rendered runner evidence give c_-=+2, and the load-bearing runner stdout is clipped. Why this blocks: the note claims the explicit bracket formulas as part of S4, so incomplete evidence plus a source-runner sign mismatch prevents closure as written; the exclusion of every d\u22604 is also a derived no-go boundary that cannot receive clean ratification from the clipped finite runner excerpt. Repair target: correct the c_- sign or change the basis convention consistently, restore full unclipped SHA-bound stdout, and repeat an independent exact matrix and classification check. Claim boundary until fixed: the standard headline uniqueness statement and direct-sum span may remain a plausible narrow theorem, but this source note is not auditable clean as written."
 }

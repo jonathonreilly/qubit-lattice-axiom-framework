@@ -593,7 +593,8 @@ def main() -> None:
     )
 
     # Full n<=2 stream/contact at train size; held L6 uses an independently
-    # recomputed carrier table on a deterministic sector-spanning set.
+    # recomputed carrier table on a deterministic particle-number-sector
+    # sample: vacuum, all 72 singles, and 5 of 2556 pairs.
     full_columns = tuple(range(len(base.FOCK_BASIS)))
     held_columns = (
         0,
@@ -606,7 +607,7 @@ def main() -> None:
         intertwiner(6, False, tuple(held_columns)),
     )
     check(
-        "the literal fixed-M2 word closes the complete L5 stream/contact basis and held L6 sectors",
+        "the literal word closes complete L5 stream/contact and a held L6 particle-number-sector sample",
         stream_rows[0]["columns"] == 2629
         and stream_rows[1]["columns"] == 78
         and all(
@@ -623,16 +624,18 @@ def main() -> None:
         stream_rows,
     )
 
-    # Coin is executed literally on a sector-spanning sample only in this
+    # Coin is executed literally on the same 78-column particle-number-sector
+    # sample only in this
     # successor; the contracted predecessor retains the complete 2629-column
-    # same-E coin sweep.
+    # same-E coin sweep.  This 78-column subset touches the vacuum and
+    # one-/two-particle sectors but does not span the two-particle subspace.
     coin_columns = tuple(held_columns)
     coin_rows = (
         intertwiner(5, True, coin_columns),
         intertwiner(6, True, coin_columns),
     )
     check(
-        "the literal onsite coin factors compose on the same M2 word on held sector-spanning columns",
+        "the literal onsite coin factors compose on the held particle-number-sector sample",
         all(
             row["columns"] == 78
             and row["mismatch_columns"] == 0
@@ -674,19 +677,22 @@ def main() -> None:
         ),
         "derived": (
             "literal storage of all 335 decoded-interface M2s and execution of every nonidentity operand on reachable states",
-            "complete 2629-column L5 stream/contact closure and held L6 sector controls",
-            "literal same-word coin closure on 78 sector-spanning columns at L5/L6",
+            "complete 2629-column L5 stream/contact closure and a held L6 vacuum/all-single/five-pair sample",
+            "literal same-word coin closure on the 78-column particle-number-sector sample at L5/L6",
         ),
         "open": (
             "complete literal coin sweep (available only in contracted predecessor)",
+            "complete literal L6 stream/contact sweep beyond the 78-column sample",
+            "complete inverse macrostep G_literal^{-1} execution and intertwiner",
             "Cycle655 landed physical decode/encode execution with these literal auxiliary M2s",
             "target-independent recurrent local even-CAR gauge law on L-shaped/2x2 overlaps",
             "actual transformed-E/rebuilt-word 24/576 covariance",
         ),
         "claim_ceiling": (
             "Positive literal fixed-M2 decoded-interface compiler for the bounded two-star stream/contact fixture. "
-            "The global-order transition remains supplied and nonrecurrent; the coin literal sweep is sampled, "
-            "and the physical Cycle655 binding and full covariance remain open."
+            "The global-order transition remains supplied and nonrecurrent; L6 stream/contact and the coin "
+            "literal word are sampled, inverse execution is open, and the physical Cycle655 binding and full "
+            "covariance remain open."
         ),
         "resources": {
             "elapsed_seconds": time.perf_counter() - START,

@@ -1,42 +1,91 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T14:44:35.191295+00:00",
+  "audit_invocation_history": [
+    "dafbb121a995472dbe8ac5e1bca6e152"
+  ],
+  "audit_invocation_id": "dafbb121a995472dbe8ac5e1bca6e152",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_plaquette_hierarchy_polynomial_boundedness_narrow.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_plaquette_hierarchy_polynomial_boundedness_narrow.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "ce555305606fe3efc00fe05661c421ba71d3f17ae1b96de540608e6b52b6a4d4",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "ce555305606fe3efc00fe05661c421ba71d3f17ae1b96de540608e6b52b6a4d4",
+    "runner_path": "scripts/frontier_plaquette_hierarchy_polynomial_boundedness_narrow.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-9af54e4b",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The algebraic proof is self-contained, but the audit chain does not close because the restricted runner stdout is clipped across load-bearing T1\u2013T4 evidence; the full exact-invocation output is required.",
   "claim_id": "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
-  "claim_scope": null,
+  "claim_scope": "Standalone real-polynomial claims T1\u2013T4: leading-term divergence, finite-limit-forces-constant, the distinct-endpoint obstruction, and bounded-on-[0,+infinity)-forces-constant, without physical plaquette inputs.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T14:44:35.191295+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For d >= 1, p(t)/t^d tends to a_d != 0 as t tends to +infinity, hence |p(t)| tends to +infinity.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary",
+    "no_go_result"
+  ],
   "note_hash": "02b50fdf0ab695f1022a17e0ee852a3ae2eaa7c8a2285aafaafc37482424a172",
   "note_path": "docs/PLAQUETTE_HIERARCHY_POLYNOMIAL_BOUNDEDNESS_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: provide the full unclipped stdout for the exact runner invocation and re-audit all 52 claimed class-A checks against the source and runner code.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -87,14 +136,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 52,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 52
   },
   "runner_path": "scripts/frontier_plaquette_hierarchy_polynomial_boundedness_narrow.py",
   "title": "Plaquette-Hierarchy Polynomial-Boundedness Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The runner stdout is explicitly clipped at the packet's load-bearing evidence URI, so PASS=52 cannot be matched to every executed T1\u2013T4 check from the rendered evidence. Why this blocks: Although the note gives an elementary class-A leading-term argument, the restricted-packet completeness preflight forbids clean closure with incomplete runner evidence. Repair target: Render the full unclipped stdout for the exact runner invocation, preserving all 52 check lines, then repeat the independent formula audit. Claim boundary until fixed: The source presents a correct-looking polynomial argument, including a derived no-go boundary for distinct endpoint values, but this audit does not certify it clean from the supplied packet."
 }

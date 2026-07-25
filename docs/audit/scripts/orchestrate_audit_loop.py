@@ -7,12 +7,13 @@ disagreement appears. This supervisor owns the missing control-flow edge:
     panel pending work -> drain lane -> panel new disagreement -> resume lane
 
 It drains authenticated dispatch and cascade sources, prioritizes configured
-flagship lanes, then drains every remaining eligible development-tier row. A
-coordinator owns panels and advances all forensic sources one validated row at
-a time; named development helpers may run from independent clones with
-dispersed target ordering. Auditor fan-out remains inside the existing batch
-and judicial orchestrators; this process never authors or edits verdict
-content.
+flagship lanes, then drains every remaining eligible development-tier row.
+Every independent clone runs this same complete loop. A per-session worker id
+only disperses target ordering; current ``origin/main`` plus the existing
+delivery-supersession and fast-forward transaction checks remain the authority.
+Duplicate computation is harmless and is discarded when another worker lands
+first. Auditor fan-out remains inside the existing batch and judicial
+orchestrators; this process never authors or edits verdict content.
 """
 from __future__ import annotations
 
@@ -58,6 +59,7 @@ PROGRESS = {
     "last_canary_claim_id": None,
     "last_canary_terminal_phase": None,
     "last_canary_source": None,
+    "worker_id": None,
     "baseline_status": {},
     "quarantine_file": None,
 }
@@ -192,6 +194,7 @@ def summary_line(final: bool = False) -> str:
         f"elapsed={elapsed // 3600}h{(elapsed % 3600) // 60:02d}m "
         f"phase={PROGRESS['phase']} pass={PROGRESS['pass']} "
         f"lane={PROGRESS['lane'] or '-'} attempts={PROGRESS['attempts']} "
+        f"worker_id={PROGRESS['worker_id'] or '-'} "
         f"failures={sum(failures.values())} top_failure_reasons={failure_text} "
         f"verdicts_landed={verdict_text} panel_reseat={PROGRESS['panel_state']} "
         f"canary={PROGRESS['canary_state']} "
@@ -375,9 +378,6 @@ def batch_command(
 
 
 def run_panel(args: argparse.Namespace, label: str) -> int:
-    if getattr(args, "development_helper", False):
-        PROGRESS["panel_state"] = "delegated_to_coordinator"
-        return 0
     return run_command(label, panel_command(args))
 
 
@@ -386,7 +386,7 @@ def drain_lane(
     args: argparse.Namespace,
     source: str | None = None,
 ) -> tuple[int, bool]:
-    """Drain one scoped phase, paneling after every batch when coordinator."""
+    """Drain one scoped phase and panel after every batch."""
     made_progress = False
     label = f"{source}-source" if source else (lane or "global-development")
     for cycle in itertools.count(1):
@@ -722,16 +722,8 @@ def build_parser() -> argparse.ArgumentParser:
         "--worker-id",
         default=os.environ.get("AUDIT_WORKER_ID", ""),
         help=(
-            "stable employee/account identifier used to disperse development "
-            "targets across independent clones"
-        ),
-    )
-    parser.add_argument(
-        "--development-helper",
-        action="store_true",
-        help=(
-            "drain development-tier work only; the one designated coordinator "
-            "owns judicial panels and forensic rows"
+            "optional session identifier used only to disperse target ordering; "
+            "a unique id is generated when omitted"
         ),
     )
     parser.add_argument(
@@ -785,9 +777,12 @@ def main(argv: list[str] | None = None) -> int:
         raise SystemExit("worker, round, timeout, and retry values must be positive")
     if args.max_passes < 0 or args.max_lane_cycles < 0:
         raise SystemExit("pass and cycle safety bounds must be non-negative")
-    if args.development_helper and not args.worker_id.strip():
-        raise SystemExit("--development-helper requires a non-empty --worker-id")
-    args.worker_id = args.worker_id.strip()
+    args.worker_id = args.worker_id.strip() or f"worker-{uuid.uuid4().hex[:12]}"
+    PROGRESS["worker_id"] = args.worker_id
+    emit(
+        "optimistic worker identity: "
+        f"{args.worker_id} (ordering hint only; origin/main is authoritative)"
+    )
     campaign_dir = args.campaign_workdir or Path(
         tempfile.mkdtemp(prefix="audit_loop_campaign_")
     )
@@ -848,25 +843,21 @@ def main(argv: list[str] | None = None) -> int:
             PROGRESS["pass"] = pass_number
             PROGRESS["lane"] = None
             before = git_head()
-            if args.development_helper:
-                PROGRESS["panel_state"] = "delegated_to_coordinator"
-                lanes = []
-            else:
-                rc = run_panel(args, f"panel-pass-{pass_number}-opening")
-                if rc != 0:
-                    return rc
-                if not args.lane:
-                    for source in ("dispatch", "reaudit"):
-                        PROGRESS["lane"] = f"{source}-source"
-                        emit(f"draining ready {source} source rows")
-                        rc, _ = drain_lane(None, args, source=source)
-                        if rc != 0:
-                            return rc
-                try:
-                    lanes = blocking_lanes(args.lane)
-                except ValueError as exc:
-                    emit(str(exc))
-                    return 2
+            rc = run_panel(args, f"panel-pass-{pass_number}-opening")
+            if rc != 0:
+                return rc
+            if not args.lane:
+                for source in ("dispatch", "reaudit"):
+                    PROGRESS["lane"] = f"{source}-source"
+                    emit(f"draining ready {source} source rows")
+                    rc, _ = drain_lane(None, args, source=source)
+                    if rc != 0:
+                        return rc
+            try:
+                lanes = blocking_lanes(args.lane)
+            except ValueError as exc:
+                emit(str(exc))
+                return 2
             emit(
                 "blocking lanes: "
                 + (", ".join(f"{lane}={count}" for lane, count in lanes) or "none")
@@ -896,13 +887,9 @@ def main(argv: list[str] | None = None) -> int:
                 except (OSError, ValueError) as exc:
                     emit(f"invalid campaign state; refusing fixed point: {exc}")
                     return 2
-                fixed_point_kind = (
-                    "helper-local development fixed point"
-                    if args.development_helper
-                    else "development fixed point"
-                )
                 emit(
-                    f"{fixed_point_kind} reached: full pass landed nothing new"
+                    "worker-local development fixed point reached: "
+                    "fresh full pass landed nothing new"
                 )
                 if exclusions[batch.SCHEMA_QUARANTINE_RESULT]:
                     emit(
@@ -934,8 +921,7 @@ def main(argv: list[str] | None = None) -> int:
                         f"{args.campaign_selection_skip_file}"
                     )
                 if (
-                    args.development_helper
-                    or args.skip_forensic_canary
+                    args.skip_forensic_canary
                     or args.lane
                 ):
                     return 0

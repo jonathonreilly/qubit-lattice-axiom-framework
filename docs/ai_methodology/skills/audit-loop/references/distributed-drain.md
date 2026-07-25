@@ -1,112 +1,83 @@
-# Distributed Audit Drain
+# Coordinatorless Audit Drain
 
-Use this operating contract when more than one employee or Codex account is
-helping drain the same repository.
+Use this contract when more than one employee or Codex account is helping
+drain the same repository.
 
-## Roles
+## One command, separate clones
 
-Designate exactly one **coordinator** for the campaign. It owns:
-
-- targeted dispatch and cascade re-audit sources;
-- flagship-lane priority sweeps;
-- judicial panels and reseats;
-- serial forensic rows;
-- the final all-source fixed-point declaration.
-
-During the concurrent development wave, run the coordinator from its own clean
-`main` clone with forensic work deferred:
+Every participant uses a separate clean clone and runs the same command:
 
 ```bash
-AUDIT_WORKER_ID=<unique-coordinator-id> \
-python3 docs/audit/scripts/orchestrate_audit_loop.py \
-  --max-workers 4 --skip-forensic-canary
-```
-
-Every other employee is a **development helper**. Give every helper a stable,
-globally unique worker id and a separate clean `main` clone:
-
-```bash
-AUDIT_WORKER_ID=<unique-employee-account-id> \
-python3 docs/audit/scripts/orchestrate_audit_loop.py \
-  --development-helper --max-workers 2
-```
-
-A helper skips dispatch, cascade, flagship priority passes, panels, and
-forensics. It only drains the complete eligible development set in a
-worker-specific order. The worker id changes ordering; it does not assign an
-exclusive shard. If a helper disappears, every unfinished row remains
-eligible to every surviving worker.
-
-## Collision Safety
-
-- Run at most one orchestrator in any clone. The clone-wide lock covers all
-  worktrees of that clone.
-- Independent clones may run concurrently. Every apply transaction first
-  synchronizes to `origin/main` and compares the current ledger provenance,
-  exact packet evidence manifest, dependency note bytes, runner/helper inputs,
-  computed seat role/independence/passes, and alternate-source selection with
-  the state seen by the restricted seat. The cascade source must exactly match
-  a pure recomputation from current ledger and runner bytes. If anything
-  moved, the stale delivery is discarded as `remote_state_superseded`; it
-  mints no verdict and creates no quarantine.
-- Different claims still commit one at a time per clone. A push race is
-  reconciled against the intended commit and replayed from current
-  `origin/main`; never hand-merge generated audit state. If the remote outcome
-  cannot be reconciled, preserve the intended local commit and stop instead of
-  resetting or replaying an uncertain push.
-- Primary and helper runners execute in disposable isolated worktrees. Their
-  processes and detached children inherit a per-invocation identity token.
-  Cleanup repeatedly enumerates that token, revalidates it immediately before
-  every signal, and fails unless no token-bearing process remains; it never
-  signals a remembered bare PID. On macOS a kernel sandbox additionally denies
-  writes to the canonical checkout. Containment and whole-worktree discard are
-  both mandatory on every exit path; cleanup never deletes deltas observed in
-  the canonical committer checkout.
-- Use unique worker ids. Reusing an id is safe but defeats target dispersion
-  and wastes seats.
-- Keep the combined repository-wide load near 8-10 active Codex processes,
-  including coordinator seats, helper seats, panels, and review-loop
-  reviewers. Separate subscriptions do not remove the shared Git/pipeline
-  bottleneck.
-- Do not run the specialized forensic committer while development helpers are
-  still live. The development batch has remote-state replay guards; the
-  forensic path is intentionally serial. The concurrent-wave coordinator
-  therefore uses `--skip-forensic-canary`.
-
-## Completion Protocol
-
-A helper's zero-progress exit is only a **helper-local development fixed
-point**. It never certifies that the audit is finished because another clone
-may still have an in-flight seat whose commit does not yet exist.
-
-After every helper is quiescent, run a fresh coordinator-only final sweep
-without `--skip-forensic-canary`:
-
-```bash
-AUDIT_WORKER_ID=<unique-coordinator-id> \
 python3 docs/audit/scripts/orchestrate_audit_loop.py --max-workers 4
 ```
 
-The coordinator may declare completion only after:
+Run at most one orchestrator in a clone. The clone-wide lock covers every
+worktree that shares that clone's Git common directory. Separate employees
+must not share one mutable checkout.
 
-1. every helper is quiescent or has reported its local fixed point;
-2. the coordinator performs a fresh final sweep from current `origin/main`;
-3. ready dispatch and cascade sources have no actionable non-forensic target;
-4. flagship and global development phases land nothing;
-5. panels have no resumable handoff;
-6. the serial forensic selector has no ready non-excluded target.
+The drainer generates a unique session id when `AUDIT_WORKER_ID` and
+`--worker-id` are both omitted. The id only rotates target ordering so
+independent workers usually start on different claims. It is not a lock,
+lease, shard assignment, or scientific authority.
 
-The concurrent-wave coordinator is expected to exit at a development fixed
-point. Always start the coordinator-only final campaign after helpers
-quiesce. Campaign-local quarantines and typed selector skips are not proof
-that the entire scientific backlog is empty; report them as governed repair
-inventory and route them through `science-fix-loop`.
+## Deliberately optimistic
 
-Schema-invalid, compute-required, and verified claim-transaction failures
-exclude only their claim for the current campaign. The coordinator continues
-to the next unrelated row. A successfully applied non-clean forensic verdict
-that immediately re-enters unchanged is durably excluded from that campaign
-so it cannot consume the next forensic seat before source repair. A newly
-written exclusion counts as operational progress: the supervisor starts
-another bounded batch even when that round landed no Git commit, and declares
-a lane fixed point only after both HEAD and the exclusion set remain stable.
+There is no coordinator, leader election, heartbeat, campaign ref, shared
+checkout ledger, or global completion record. A Markdown checkout ledger
+would create a new contended source of truth and could strand work after a
+crash, so the canonical workflow does not use one.
+
+Two workers may compute the same claim. That is safe and occasionally
+wasteful:
+
+1. each restricted seat binds its delivery to the source, ledger provenance,
+   dependencies, runner/helper inputs, evidence manifest, role, independence,
+   passes, and selecting dispatch/cascade entry it observed;
+2. immediately before apply, the committer fetches current `origin/main` and
+   rechecks that complete selection fingerprint;
+3. remote movement returns `remote_state_superseded`; the stale delivery mints
+   no verdict and creates no quarantine;
+4. accepted claims still pass the normal apply, full pipeline, strict lint,
+   one-claim commit, and fast-forward push transaction;
+5. a push race is reconciled from fresh `origin/main`; generated audit state is
+   regenerated, never hand-merged.
+
+These existing claim-transaction checks are the safety boundary. Worker ids
+and target rotation only reduce duplicated compute.
+
+## Panels, forensics, and failures
+
+Every worker runs the complete panel-aware loop. Panels and forensic rows are
+serial inside one worker but may overlap optimistically across independent
+clones. The same current-main precondition and push reconciliation decide
+which current transaction can land; stale duplicates are discarded.
+
+Schema-invalid, compute-required, verified claim-transaction failures, and
+post-verdict blocked-row reentries remain claim-local campaign exclusions.
+The worker records the exact repair artifact and continues every unrelated
+eligible row. Unknown execution failures and unreconciled apply, propagation,
+or push failures still stop that worker fail-closed; they do not authorize
+another worker to reinterpret the failed scientific packet.
+
+Keep repository-wide load near 8-10 active Codex processes when practical,
+including audit seats, panels, and review-loop reviewers. This is a throughput
+guideline, not a correctness lock. If capacity is exhausted, lower
+`--max-workers` or restart later.
+
+## Completion is observational
+
+A worker exits after a fresh synchronized pass lands nothing and no ready
+non-excluded forensic target remains. That is a worker-local fixed-point
+observation, not a global certificate: another clone may still have an
+in-flight delivery.
+
+After visible workers quiesce, refresh `main` and read the canonical audit
+queue, lane certification, and campaign exclusion reports. If new work is
+visible, run the same command again. A worker that landed the last in-flight
+verdict naturally loops back through development and drains anything it
+unblocked. A crash after landing may leave newly unblocked work for the next
+ordinary invocation; it never creates a false terminal campaign state.
+
+Route quarantined and typed selector-skip repair inventory through
+`science-fix-loop`. No operational checkout note, worker exit, or local
+campaign artifact may certify retained grade or backlog completion.

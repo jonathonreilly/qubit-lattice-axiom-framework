@@ -16,17 +16,23 @@ Thus the 224-term transition becomes a 378-factor word (224 CZ and 154 SWAP)
 whose primitives touch one cell or one coarse edge.  The program ordinal is a
 finite circuit label, not physical time.
 
-With the supplied free coin executed first, the routed transition followed by
-the eleven signed-carrier seam words closes the full two-star stream on
-E_refresh; the local contact then closes the declared n<=2 update at L5 and
-held L6.  This is a finite two-overlapping-star certificate.  Recurrent tiling,
-n>2 graph-code integration, and primitive genesis remain open; no no-go,
-minimum-content, or axiom-pressure claim is made.
+On a square 125,749-row *decoded direct-sum* carrier-packet ambient, the routed
+transition followed by the ordered eleven local seam operands closes the
+two-star stream on E_refresh; the local contact then closes on the same
+encoding at L5 and held L6.  This square ambient is indexed by complete n<=2
+Fock labels and is not, by itself, a fixed tensor-product M2 Hilbert or a
+local-gate decomposition of every lifted operand.  The supplied free coin and
+mass remain separate logical/bound-factor fixtures.  The physical result is
+therefore the bounded routed transition word; the common-E result is an exact
+decoded closure and a compiler candidate, not yet a physical-site compiler.
+Recurrent tiling, n>2 graph-code integration, fixed-register factorization,
+and primitive genesis remain open; no no-go, minimum-content, or axiom-pressure
+claim is made.
 """
 
 from __future__ import annotations
 
-from collections import Counter
+from collections import Counter, defaultdict
 from dataclasses import dataclass
 from hashlib import sha256
 from itertools import product
@@ -349,31 +355,487 @@ def logical_composition_certificate() -> tuple[dict[str, object], sparse.csc_mat
     }, target_update
 
 
-def same_encoding_certificate(
-    target_update: sparse.csc_matrix,
-) -> tuple[dict[str, object], tuple[sparse.csc_matrix, ...]]:
-    target_stream = route_c.patch_stream(route_c.BASE_CELLS, route_c.BASE_EDGES)
-    contact_stream = route_c.patch_contact(route_c.BASE_CELLS) @ target_stream
+def role_gate_matrices() -> tuple[tuple[np.ndarray, np.ndarray], ...]:
+    """Execute the landed five-Givens words as literal seven-rail matrices."""
     rows = []
-    encodings = []
-    for length in (5, 6):
-        encoding_row, encoding = refresh.patch_branch_rows(length)
-        encodings.append(encoding)
-        rows.append({
-            "encoding": encoding_row,
-            "stream": refresh.factorized_intertwiner(encoding, target_stream),
-            "contact_stream": refresh.factorized_intertwiner(encoding, contact_stream),
-            "full_update": refresh.factorized_intertwiner(encoding, target_update),
+    for occupied in range(6):
+        preparation = np.eye(refresh.ROLE_RAILS, dtype=complex)
+        for carrier, two_level in refresh.ROLE_PREPARATIONS[occupied]:
+            factor = np.eye(refresh.ROLE_RAILS, dtype=complex)
+            factor[np.ix_((refresh.SENTINEL, carrier), (refresh.SENTINEL, carrier))] = (
+                two_level
+            )
+            preparation = factor @ preparation
+        unprepare = np.eye(refresh.ROLE_RAILS, dtype=complex)
+        for carrier, two_level in reversed(refresh.ROLE_PREPARATIONS[occupied]):
+            factor = np.eye(refresh.ROLE_RAILS, dtype=complex)
+            factor[np.ix_((refresh.SENTINEL, carrier), (refresh.SENTINEL, carrier))] = (
+                two_level.conj().T
+            )
+            unprepare = factor @ unprepare
+        rows.append((preparation, unprepare))
+    return tuple(rows)
+
+
+ROLE_GATE_MATRICES = role_gate_matrices()
+
+
+def packet_dimension(label: tuple[int, ...]) -> int:
+    return 1 if not label else refresh.ROLE_RAILS ** len(label)
+
+
+def packet_preparation(label: tuple[int, ...]) -> tuple[np.ndarray, np.ndarray]:
+    """Square carrier-packet preparation and inverse for one logical label.
+
+    The n<=2 declared ambient carries one seven-rail packet per particle.  If
+    two particles occupy one cell, both packets bypass: E_refresh has no
+    one-particle carrier on that cell.  Otherwise the packets are assigned by
+    the finite local Fock chart and receive the literal landed Givens words.
+    This packet chart is a bounded two-star program convention, not a runtime
+    host ordering service.
+    """
+    if not label:
+        return np.eye(1, dtype=complex), np.eye(1, dtype=complex)
+    if len(label) == 1:
+        return ROLE_GATE_MATRICES[label[0] % 6]
+    if label[0] // 6 == label[1] // 6:
+        identity = np.eye(refresh.ROLE_RAILS ** 2, dtype=complex)
+        return identity, identity
+    first_prepare, first_inverse = ROLE_GATE_MATRICES[label[0] % 6]
+    second_prepare, second_inverse = ROLE_GATE_MATRICES[label[1] % 6]
+    return (
+        np.kron(first_prepare, second_prepare),
+        np.kron(first_inverse, second_inverse),
+    )
+
+
+def packet_roles(label: tuple[int, ...], packet_index: int) -> tuple[int, ...]:
+    roles = [refresh.SENTINEL] * len(route_c.BASE_CELLS)
+    if len(label) == 1:
+        roles[label[0] // 6] = packet_index
+    elif len(label) == 2 and label[0] // 6 != label[1] // 6:
+        roles[label[0] // 6] = packet_index // refresh.ROLE_RAILS
+        roles[label[1] // 6] = packet_index % refresh.ROLE_RAILS
+    return tuple(roles)
+
+
+def packet_sentinel_index(label: tuple[int, ...]) -> int:
+    if not label:
+        return 0
+    if len(label) == 1:
+        return refresh.SENTINEL
+    return refresh.SENTINEL * refresh.ROLE_RAILS + refresh.SENTINEL
+
+
+def local_seam_gate_matrix(spec: adjacent.EdgeSpec) -> sparse.csc_matrix:
+    """One decoded seam from its literal local CZ pairs and endpoint SWAP."""
+    left, right, _intermediate = spec
+    pairs = adjacent.local_seam_pairs(spec)
+    rows = []
+    phases = []
+    for label in route_c.FOCK_BASIS:
+        source = sum(1 << mode for mode in label)
+        mapped = tuple(
+            right if mode == left else left if mode == right else mode
+            for mode in label
+        )
+        rows.append(route_c.FOCK_INDEX[tuple(sorted(mapped))])
+        phases.append(adjacent.phase_from_pairs(source, pairs))
+    return sparse.coo_matrix(
+        (phases, (rows, np.arange(len(route_c.FOCK_BASIS)))),
+        shape=(len(route_c.FOCK_BASIS), len(route_c.FOCK_BASIS)),
+        dtype=complex,
+    ).tocsc()
+
+
+def direct_endpoint_fswap_matrix(spec: adjacent.EdgeSpec) -> sparse.csc_matrix:
+    """Literal two-endpoint FSWAP, without the local chart correction."""
+    left, right, _intermediate = spec
+    rows = []
+    phases = []
+    for label in route_c.FOCK_BASIS:
+        mapped = tuple(
+            right if mode == left else left if mode == right else mode
+            for mode in label
+        )
+        rows.append(route_c.FOCK_INDEX[tuple(sorted(mapped))])
+        phases.append(-1 if left in label and right in label else 1)
+    return sparse.coo_matrix(
+        (phases, (rows, np.arange(len(route_c.FOCK_BASIS)))),
+        shape=(len(route_c.FOCK_BASIS), len(route_c.FOCK_BASIS)),
+        dtype=complex,
+    ).tocsc()
+
+
+def decoded_gate_product() -> tuple[dict[str, object], sparse.csc_matrix,
+                                    sparse.csc_matrix, tuple[sparse.csc_matrix, ...]]:
+    """Assemble transition and candidate only from their explicit gate lists."""
+    seam_gates = tuple(local_seam_gate_matrix(spec) for spec in PATCH_SPECS)
+    direct_gates = tuple(direct_endpoint_fswap_matrix(spec) for spec in PATCH_SPECS)
+    candidate = sparse.eye(len(route_c.FOCK_BASIS), format="csc", dtype=complex)
+    direct = sparse.eye(len(route_c.FOCK_BASIS), format="csc", dtype=complex)
+    seam_rows = []
+    hasher = sha256()
+    for index, (spec, gate) in enumerate(zip(PATCH_SPECS, seam_gates)):
+        candidate = gate @ candidate
+        direct = direct_gates[index] @ direct
+        pairs = tuple(sorted(adjacent.local_seam_pairs(spec)))
+        hasher.update(repr((spec, pairs)).encode())
+        seam_rows.append({
+            "stage": index,
+            "edge": route_c.BASE_EDGES[index],
+            "decoded_operand_shape": gate.shape,
+            "decoded_operand_nonzeros": gate.nnz,
+            "local_CZ_pairs": len(pairs),
+            "maximum_pair_mode_span": max(right - left for left, right in pairs),
         })
+
+    transition_phases = np.ones(len(route_c.FOCK_BASIS), dtype=complex)
+    for pair in sorted(TRANSITION):
+        for column, label in enumerate(route_c.FOCK_BASIS):
+            if pair[0] in label and pair[1] in label:
+                transition_phases[column] *= -1
+        hasher.update(repr(("CZ", pair)).encode())
+    transition = sparse.diags(transition_phases, format="csc", dtype=complex)
+    direct_candidate = logical_permutation_matrix(CANDIDATE)
+    direct_transition = sparse.diags(
+        [
+            adjacent.phase_from_pairs(sum(1 << mode for mode in label), TRANSITION)
+            for label in route_c.FOCK_BASIS
+        ],
+        format="csc", dtype=complex,
+    )
+    target_stream = route_c.patch_stream(route_c.BASE_CELLS, route_c.BASE_EDGES)
+    corrected = candidate @ transition
+    direct_difference = direct - target_stream
+    candidate_difference = candidate - target_stream
     return {
-        "rows": tuple(rows),
-        "factorization": (
-            "E_refresh decode; supplied free coin; routed 224-term transition; "
-            "eleven signed-carrier seams; onsite contact; recompute local charts/carriers; encode"
+        "ordered_seam_gates": len(seam_gates),
+        "transition_CZ_gates": len(TRANSITION),
+        "candidate_product_vs_pair_formula_raw_maximum": raw_maximum(
+            candidate - direct_candidate
         ),
+        "transition_product_vs_pair_formula_raw_maximum": raw_maximum(
+            transition - direct_transition
+        ),
+        "corrected_product_vs_target_raw_maximum": raw_maximum(
+            corrected - target_stream
+        ),
+        "corrected_product_vs_target_residual": c315.largest_singular(
+            corrected - target_stream
+        ),
+        "direct_FSWAP_mismatch_columns": sum(
+            raw_maximum(direct_difference.getcol(column)) > TOL
+            for column in range(len(route_c.FOCK_BASIS))
+        ),
+        "direct_FSWAP_residual": c315.largest_singular(direct_difference),
+        "local_signed_seam_mismatch_columns": sum(
+            raw_maximum(candidate_difference.getcol(column)) > TOL
+            for column in range(len(route_c.FOCK_BASIS))
+        ),
+        "local_signed_seam_residual": c315.largest_singular(candidate_difference),
+        "routed_transition_corrected_mismatch_columns": sum(
+            raw_maximum((corrected - target_stream).getcol(column)) > TOL
+            for column in range(len(route_c.FOCK_BASIS))
+        ),
+        "ordered_gate_word_sha256": hasher.hexdigest(),
+        "seam_stage_rows": tuple(seam_rows),
+        "candidate_target_derived": False,
+        "transition_synthesized_offline_from_target_inversion_set": True,
+    }, candidate, transition, seam_gates
+
+
+def ambient_square_model(length: int) -> tuple[dict[str, object], sparse.csc_matrix,
+                                               sparse.csc_matrix, sparse.csc_matrix,
+                                               tuple[int, ...]]:
+    """Square 125,749-ray lawful carrier-packet ambient and landed E."""
+    offsets = []
+    cursor = 0
+    prepare_blocks = []
+    inverse_blocks = []
+    e_rows = []
+    e_columns = []
+    e_values = []
+    landed = refresh.role_amplitudes(length)
+    coefficient_failures = ambient_invalid_charts = landed_chart_failures = 0
+    shared_chart_failures = 0
+    landed_support = 0
+    maximum_block_unitarity = maximum_block_inverse = 0.0
+
+    for column, label in enumerate(route_c.FOCK_BASIS):
+        offsets.append(cursor)
+        preparation, inverse = packet_preparation(label)
+        dimension = packet_dimension(label)
+        prepare_blocks.append(sparse.csc_matrix(preparation))
+        inverse_blocks.append(sparse.csc_matrix(inverse))
+        maximum_block_unitarity = max(
+            maximum_block_unitarity,
+            float(np.linalg.norm(preparation.conj().T @ preparation - np.eye(dimension))),
+            float(np.linalg.norm(inverse.conj().T @ inverse - np.eye(dimension))),
+        )
+        maximum_block_inverse = max(
+            maximum_block_inverse,
+            float(np.linalg.norm(inverse @ preparation - np.eye(dimension))),
+        )
+        sentinel = packet_sentinel_index(label)
+        vector = preparation[:, sentinel]
+        for packet_index, amplitude in enumerate(vector):
+            roles = packet_roles(label, packet_index)
+            occupied_by_cell: dict[int, list[int]] = defaultdict(list)
+            for mode in label:
+                occupied_by_cell[mode // 6].append(mode % 6)
+            chart = []
+            for _star, _direction, _endpoint, cell_coord, mode in (
+                refresh.previous.FEATURE_BLOCKS
+            ):
+                cell = route_c.BASE_CELLS.index(cell_coord)
+                local = tuple(occupied_by_cell.get(cell, ()))
+                occupied = int(mode in local)
+                outer = int(len(local) == 1 and roles[cell] == mode)
+                # The square off-code carrier ambient includes the otherwise
+                # excluded carrier==occupied rail, hence raw feature word 11.
+                # Chart erase/recompute is XOR on both chart M2s and is a
+                # bijection on all four words; only landed E must stay qutrit-lawful.
+                word = (outer << 1) | occupied
+                chart.append(word)
+                ambient_invalid_charts += (
+                    word not in refresh.qcore.LAWFUL_QUTRIT_WORDS
+                )
+                if abs(amplitude) > 1e-15:
+                    landed_chart_failures += (
+                        word not in refresh.qcore.LAWFUL_QUTRIT_WORDS
+                    )
+            for duplicate in refresh.previous.DUPLICATE_ROWS.values():
+                shared_chart_failures += chart[duplicate[0]] != chart[duplicate[1]]
+
+            expected = 0.0 + 0.0j
+            if not label:
+                expected = 1.0 if packet_index == 0 else 0.0
+            elif len(label) == 1:
+                carrier = packet_index
+                if carrier < 6 and carrier != label[0] % 6:
+                    expected = landed[(label[0] % 6, carrier)]
+            elif label[0] // 6 == label[1] // 6:
+                expected = 1.0 if packet_index == sentinel else 0.0
+            else:
+                first, second = divmod(packet_index, refresh.ROLE_RAILS)
+                if first < 6 and first != label[0] % 6 and second < 6 and second != label[1] % 6:
+                    expected = landed[(label[0] % 6, first)] * landed[(label[1] % 6, second)]
+            coefficient_failures += abs(amplitude - expected) > TOL
+            if abs(amplitude) > 1e-15:
+                e_rows.append(cursor + packet_index)
+                e_columns.append(column)
+                e_values.append(amplitude)
+                landed_support += 1
+        cursor += dimension
+
+    prepare = sparse.block_diag(prepare_blocks, format="csc")
+    unprepare = sparse.block_diag(inverse_blocks, format="csc")
+    encoding = sparse.coo_matrix(
+        (e_values, (e_rows, e_columns)),
+        shape=(cursor, len(route_c.FOCK_BASIS)), dtype=complex,
+    ).tocsc()
+    identity = sparse.eye(cursor, format="csc")
+    logical_identity = sparse.eye(len(route_c.FOCK_BASIS), format="csc")
+    return {
+        "L": length,
+        "split": "train" if length == 5 else "held-no-refit",
+        "ambient_square_rows": cursor,
+        "logical_columns_n_le_2": len(route_c.FOCK_BASIS),
+        "landed_E_support_rays": landed_support,
+        "square_prepare_shape": prepare.shape,
+        "square_unprepare_shape": unprepare.shape,
+        "square_prepare_nonzeros": prepare.nnz,
+        "square_unprepare_nonzeros": unprepare.nnz,
+        "gate_derived_coefficient_failures": coefficient_failures,
+        "ambient_invalid_feature_words": ambient_invalid_charts,
+        "landed_qutrit_lawful_failures": landed_chart_failures,
+        "ambient_shared_chart_equality_failures": shared_chart_failures,
+        "maximum_packet_block_unitarity_residual": maximum_block_unitarity,
+        "maximum_packet_block_inverse_residual": maximum_block_inverse,
+        "square_unprepare_prepare_raw_maximum": raw_maximum(
+            unprepare @ prepare - identity
+        ),
+        "E_Gram_raw_maximum": raw_maximum(
+            encoding.conj().T @ encoding - logical_identity
+        ),
+        "symbolic_E_adjoint_used": False,
+    }, encoding, prepare, unprepare, tuple(offsets)
+
+
+def lift_logical_operand(
+    logical: sparse.csc_matrix, offsets: tuple[int, ...]
+) -> sparse.csc_matrix:
+    rows = []
+    columns = []
+    values = []
+    for source, label in enumerate(route_c.FOCK_BASIS):
+        column = logical.getcol(source)
+        if column.nnz != 1:
+            raise ValueError("decoded seam/contact lift requires a monomial operand")
+        target = int(column.indices[0])
+        phase = complex(column.data[0])
+        dimension = packet_dimension(label)
+        if packet_dimension(route_c.FOCK_BASIS[target]) != dimension:
+            raise AssertionError((source, target, dimension))
+        for packet in range(dimension):
+            rows.append(offsets[target] + packet)
+            columns.append(offsets[source] + packet)
+            values.append(phase)
+    size = offsets[-1] + packet_dimension(route_c.FOCK_BASIS[-1])
+    return sparse.coo_matrix(
+        (values, (rows, columns)), shape=(size, size), dtype=complex
+    ).tocsc()
+
+
+def non_sentinel_raw(
+    state: sparse.csc_matrix, offsets: tuple[int, ...]
+) -> float:
+    sentinel_rows = {
+        offsets[column] + packet_sentinel_index(label)
+        for column, label in enumerate(route_c.FOCK_BASIS)
+    }
+    maximum = 0.0
+    coo = state.tocoo()
+    for row, value in zip(coo.row, coo.data):
+        if row not in sentinel_rows:
+            maximum = max(maximum, float(abs(value)))
+    return maximum
+
+
+def square_decoded_certificate(
+    length: int,
+    gate_rows: dict[str, object],
+    candidate: sparse.csc_matrix,
+    transition: sparse.csc_matrix,
+    seam_gates: tuple[sparse.csc_matrix, ...],
+) -> dict[str, object]:
+    model, encoding, prepare, unprepare, offsets = ambient_square_model(length)
+    contact = route_c.patch_contact(route_c.BASE_CELLS)
+    target_stream = route_c.patch_stream(route_c.BASE_CELLS, route_c.BASE_EDGES)
+    target_contact = contact @ target_stream
+    transition_lift = lift_logical_operand(transition, offsets)
+    seam_lifts = tuple(lift_logical_operand(gate, offsets) for gate in seam_gates)
+    contact_lift = lift_logical_operand(contact, offsets)
+
+    post = unprepare @ encoding
+    stage_rows = [{
+        "stage": "explicit-square-Givens-unprepare",
+        "poststate_nonzeros": post.nnz,
+        "non_sentinel_raw_maximum": non_sentinel_raw(post, offsets),
+        "column_norm_residual": raw_maximum(post.conj().T @ post - sparse.eye(
+            post.shape[1], format="csc"
+        )),
+    }]
+    post = transition_lift @ post
+    stage_rows.append({
+        "stage": "224-routed-CZ-transition",
+        "poststate_nonzeros": post.nnz,
+        "non_sentinel_raw_maximum": non_sentinel_raw(post, offsets),
+        "column_norm_residual": raw_maximum(post.conj().T @ post - sparse.eye(
+            post.shape[1], format="csc"
+        )),
+    })
+    for index, seam in enumerate(seam_lifts):
+        post = seam @ post
+        stage_rows.append({
+            "stage": f"decoded-local-seam-{index}",
+            "poststate_nonzeros": post.nnz,
+            "non_sentinel_raw_maximum": non_sentinel_raw(post, offsets),
+            "column_norm_residual": raw_maximum(post.conj().T @ post - sparse.eye(
+                post.shape[1], format="csc"
+            )),
+        })
+    post = contact_lift @ post
+    stage_rows.append({
+        "stage": "decoded-onsite-contact",
+        "poststate_nonzeros": post.nnz,
+        "non_sentinel_raw_maximum": non_sentinel_raw(post, offsets),
+        "column_norm_residual": raw_maximum(post.conj().T @ post - sparse.eye(
+            post.shape[1], format="csc"
+        )),
+    })
+    decoded_on_E = prepare @ post
+    expected = encoding @ target_contact
+    difference = decoded_on_E - expected
+    effective = encoding.conj().T @ decoded_on_E
+    leakage = decoded_on_E - encoding @ effective
+
+    decoded_correct = contact_lift
+    for seam in reversed(seam_lifts):
+        decoded_correct = decoded_correct @ seam
+    decoded_correct = decoded_correct @ transition_lift
+    decoded_ambient = (prepare @ decoded_correct @ unprepare).tocsc()
+    ambient_identity = sparse.eye(decoded_ambient.shape[0], format="csc")
+    unitarity = decoded_ambient.conj().T @ decoded_ambient - ambient_identity
+
+    wrong_decoded = contact_lift @ transition_lift
+    for seam in reversed(seam_lifts):
+        wrong_decoded = wrong_decoded @ seam
+    wrong_decoded_on_E = prepare @ wrong_decoded @ unprepare @ encoding
+    wrong_difference = wrong_decoded_on_E - expected
+    qutrit = route_c.qutrit_module_controls()
+    unlawful = route_c.unlawful_domain_controls()
+    return {
+        "encoding": model,
+        "decoded_gate_product": gate_rows,
+        "stage_rows": tuple(stage_rows),
+        "U_decoded_ambient_shape": decoded_ambient.shape,
+        "U_decoded_ambient_nonzeros": decoded_ambient.nnz,
+        "U_decoded_ambient_unitarity_raw_maximum": raw_maximum(unitarity),
+        "U_decoded_ambient_E_nonzeros": decoded_on_E.nnz,
+        "intertwiner_raw_maximum": raw_maximum(difference),
+        "intertwiner_opnorm": c315.largest_singular(difference),
+        "code_leakage_raw_maximum": raw_maximum(leakage),
+        "code_leakage_opnorm": c315.largest_singular(leakage),
+        "transition_after_seams_raw_maximum": raw_maximum(wrong_difference),
+        "transition_after_seams_residual": c315.largest_singular(wrong_difference),
+        "qutrit_chart_XOR_bijection_failures": qutrit[
+            "full_basis_bijection_failures"
+        ],
+        "qutrit_chart_XOR_work_return_failures": qutrit["work_return_failures"],
+        "dirty_chart_genesis_nonreturn": unlawful["dirty_work_genesis_nonreturn"],
+        "decoded_off_code_extension": (
+            "square controlled seven-rail Givens blocks on one packet in n=1 and two packets in n=2; "
+            "identity packet transport through each decoded monomial gate; reversible qutrit XOR erase/recompute"
+        ),
+        "constructed_from_rectangular_PGA": False,
+        "symbolic_E_adjoint_used_as_gate": False,
+        "fixed_tensor_product_M2_factorization_supplied": False,
+        "global_label_indexed_direct_sum": True,
+    }
+
+
+def same_encoding_certificate(
+    _target_update: sparse.csc_matrix,
+) -> dict[str, object]:
+    gate_rows, candidate, transition, seam_gates = decoded_gate_product()
+    rows = tuple(
+        square_decoded_certificate(
+            length, gate_rows, candidate, transition, seam_gates
+        )
+        for length in (5, 6)
+    )
+    bindings = dict(refresh.physical_factor_bindings())
+    bindings["cross_cell_seam_factor"] = (
+        "bound by eleven explicit decoded local CZ+endpoint-SWAP operands, preceded by 224 routed CZs"
+    )
+    bindings["cross_cell_seam_owners_executed"] = len(PATCH_SPECS)
+    return {
+        "rows": rows,
+        "decoded_factorization": (
+            "square label-block seven-rail Givens inverse; 224 decoded transition CZs; "
+            "ordered product of eleven decoded local CZ+SWAP seams; onsite contact; "
+            "square target label-block Givens preparation"
+        ),
+        "Cycle655_refresh_bindings": bindings,
         "same_E_on_both_sides": True,
         "dense_code_completion_used": False,
-    }, tuple(encodings)
+        "symbolic_E_adjoint_used_as_physical_operand": False,
+        "rectangular_PGA_used_as_physical_operand": False,
+        "fixed_tensor_product_M2_compiler_claimed": False,
+        "free_coin_composed_on_same_E": False,
+    }
 
 
 def signed_seam_resources() -> dict[str, object]:
@@ -476,6 +938,8 @@ def covariance_certificate(target_update: sparse.csc_matrix) -> dict[str, object
         "frame_product_failures": product_frame_failures,
         "frame_product_word_failures": product_word_failures,
         "logical_update_covariance": logical,
+        "physical_operand_matrices_rebuilt_under_frames": False,
+        "translation_test_level": "geometry-and-logical-update-only",
     }
 
 
@@ -638,28 +1102,97 @@ def main() -> None:
         seams,
     )
 
-    same_E, _encodings = same_encoding_certificate(target_update)
+    same_E = same_encoding_certificate(target_update)
     check(
-        "the stream, contact and full update close on the same E_refresh at L5 and held L6",
+        "a square decoded direct-sum word closes routed seam and contact on the same E_refresh",
         same_E["same_E_on_both_sides"]
         and not same_E["dense_code_completion_used"]
+        and not same_E["symbolic_E_adjoint_used_as_physical_operand"]
+        and not same_E["rectangular_PGA_used_as_physical_operand"]
+        and not same_E["fixed_tensor_product_M2_compiler_claimed"]
+        and not same_E["free_coin_composed_on_same_E"]
         and all(
             row["encoding"]["logical_columns_n_le_2"] == 2629
-            and row["encoding"]["physical_role_chart_rays"] == 59941
-            and row["encoding"]["Gram_raw_maximum"] < TOL
+            and row["encoding"]["ambient_square_rows"] == 125749
+            and row["encoding"]["landed_E_support_rays"] == 59941
+            and row["encoding"]["square_prepare_shape"] == (125749, 125749)
+            and row["encoding"]["square_unprepare_shape"] == (125749, 125749)
+            and row["encoding"]["gate_derived_coefficient_failures"] == 0
+            and row["encoding"]["ambient_invalid_feature_words"] > 0
+            and row["encoding"]["landed_qutrit_lawful_failures"] == 0
+            and row["encoding"]["ambient_shared_chart_equality_failures"] == 0
+            and row["encoding"]["maximum_packet_block_unitarity_residual"] < TOL
+            and row["encoding"]["maximum_packet_block_inverse_residual"] < TOL
+            and row["encoding"]["square_unprepare_prepare_raw_maximum"] < TOL
+            and row["encoding"]["E_Gram_raw_maximum"] < TOL
+            and not row["encoding"]["symbolic_E_adjoint_used"]
             and row["encoding"]["split"]
             == ("train" if row["encoding"]["L"] == 5 else "held-no-refit")
-            and max(row[stage].values()) < TOL
+            and row["decoded_gate_product"]["ordered_seam_gates"] == 11
+            and row["decoded_gate_product"]["transition_CZ_gates"] == 224
+            and row["decoded_gate_product"][
+                "candidate_product_vs_pair_formula_raw_maximum"
+            ] < TOL
+            and row["decoded_gate_product"][
+                "transition_product_vs_pair_formula_raw_maximum"
+            ] < TOL
+            and row["decoded_gate_product"][
+                "corrected_product_vs_target_residual"
+            ] < TOL
+            and row["decoded_gate_product"]["direct_FSWAP_mismatch_columns"] == 240
+            and row["decoded_gate_product"]["direct_FSWAP_residual"] > 1.9
+            and row["decoded_gate_product"][
+                "local_signed_seam_mismatch_columns"
+            ] == 224
+            and row["decoded_gate_product"]["local_signed_seam_residual"] > 1.9
+            and row["decoded_gate_product"][
+                "routed_transition_corrected_mismatch_columns"
+            ] == 0
+            and not row["decoded_gate_product"]["candidate_target_derived"]
+            and row["decoded_gate_product"][
+                "transition_synthesized_offline_from_target_inversion_set"
+            ]
+            and row["U_decoded_ambient_shape"] == (125749, 125749)
+            and row["U_decoded_ambient_nonzeros"] > 1_000_000
+            and row["U_decoded_ambient_unitarity_raw_maximum"] < TOL
+            and row["intertwiner_raw_maximum"] < TOL
+            and row["intertwiner_opnorm"] < TOL
+            and row["code_leakage_raw_maximum"] < TOL
+            and row["code_leakage_opnorm"] < TOL
+            and row["qutrit_chart_XOR_bijection_failures"] == 0
+            and row["qutrit_chart_XOR_work_return_failures"] == 0
+            and row["dirty_chart_genesis_nonreturn"] == 1
+            and not row["constructed_from_rectangular_PGA"]
+            and not row["symbolic_E_adjoint_used_as_gate"]
+            and not row["fixed_tensor_product_M2_factorization_supplied"]
+            and row["global_label_indexed_direct_sum"]
+            and all(
+                stage["non_sentinel_raw_maximum"] < TOL
+                and stage["column_norm_residual"] < TOL
+                for stage in row["stage_rows"]
+            )
             for row in same_E["rows"]
-            for stage in ("stream", "contact_stream", "full_update")
         ),
         same_E,
+    )
+    check(
+        "placing the transition after the seam word fails against the target common-E update",
+        all(
+            row["transition_after_seams_residual"] > 1.9
+            and row["transition_after_seams_raw_maximum"] > 1.9
+            for row in same_E["rows"]
+        ),
+        tuple({
+            "L": row["encoding"]["L"],
+            "decoded_residual": row["transition_after_seams_residual"],
+            "decoded_raw_maximum": row["transition_after_seams_raw_maximum"],
+        } for row in same_E["rows"]),
     )
 
     covariance = covariance_certificate(target_update)
     logical_covariance = covariance["logical_update_covariance"]
     check(
-        "the routed word and completed update are covariant over 24 frames and 576 products",
+        "the routed geometry and logical update are covariant over 24 frames and 576 products",
         covariance["proper_cubic_frames"] == 24
         and covariance["ordered_frame_products"] == 576
         and covariance["rotated_route_failures"] == 0
@@ -695,7 +1228,7 @@ def main() -> None:
 
     update_rows, _ = route_c.build_patch_update(route_c.BASE_AXIS)
     check(
-        "the completed physical word preserves the Cycle-219 mass and active local contact fixture",
+        "the separate logical update preserves the Cycle-219 mass and active local contact fixture",
         update_rows["one_particle_mass_residual"] < TOL
         and update_rows["uniform_one_particle_eigen_residual"] < TOL
         and update_rows["contact_nontrivial_columns"] == 180
@@ -736,12 +1269,12 @@ def main() -> None:
     result = {
         "authority": "none",
         "audit": "unset",
-        "status": "bounded-nearest-neighbor-two-star-transition-certificate",
-        "terminal": "ALL_ELEVEN_TWO_STAR_STREAM_CONTACT_CLOSED_RECURRENT_TILING_OPEN",
+        "status": "bounded-transition-word-plus-decoded-common-E-closure",
+        "terminal": "TWO_STAR_DECODED_CLOSURE_FIXED_M2_FACTORIZATION_OPEN",
         "pass": FAIL == 0,
         "tests_passed": PASS,
         "tests_failed": FAIL,
-        "equation": "E_refresh G_coarse,n<=2 = G_physical,routed E_refresh",
+        "equation": "E_refresh G_stream/contact,n<=2 = U_decoded,direct-sum E_refresh",
         "physical_word": physical,
         "routing_truth_table": routing,
         "logical_composition": logical,
@@ -754,6 +1287,15 @@ def main() -> None:
             "returned_SWAP_factors": 154,
             "two_M2_factors": 378,
             "CNOT_CZ_factors_after_SWAP_decomposition": 686,
+            "square_carrier_packet_ambient_rows": same_E["rows"][0][
+                "encoding"
+            ]["ambient_square_rows"],
+            "landed_E_support_rays": same_E["rows"][0]["encoding"][
+                "landed_E_support_rays"
+            ],
+            "square_U_decoded_ambient_nonzeros": same_E["rows"][0][
+                "U_decoded_ambient_nonzeros"
+            ],
             "transit_M2_per_coarse_cell": 1,
             "maximum_primitive_support_M2": 2,
             "maximum_primitive_cell_distance": 1,
@@ -770,26 +1312,34 @@ def main() -> None:
             "Cycle655 bounded occupation decoder/encoder and fixed finite program ordinal",
             "E_refresh local carrier/qutrit graph code and clean matcher convention",
             "the eleven independently returned signed-carrier seam words",
-            "the exact 224-CZ inversion-set transition and Route-C exterior fixture",
+            "the target exterior inversion set and its offline-synthesized exact 224-CZ transition",
             "the beta=-0.3 free coin, g=0.37 local contact and proper-cubic frame family",
         ),
         "derived": (
             "a unique common star center for all 77 distance-two transition terms",
             "an arbitrary-transit-state SWAP-CZ-SWAP identity with exact work return",
-            "a 378-factor nearest-neighbor physical transition word with constant overhead",
-            "zero stream/contact/full-update logical residual and same-E leakage at L5/held-L6",
-            "strict geometric 24/576 covariance and active primitive/macro deletions",
+            "a 378-factor nearest-neighbor transition word on data/transit M2s with constant overhead",
+            "a square 125749-row decoded direct-sum carrier-packet word containing the 59941 landed E rays",
+            "the independent staged census 240 direct-FSWAP mismatches to 224 local-chart mismatches to zero",
+            "zero stream/contact decoded intertwiner and leakage at L5/held-L6",
+            "residual two when the transition is incorrectly placed after the seam word",
+            "strict geometric 24/576 covariance, logical-update covariance, and active primitive/macro deletions",
         ),
         "open": (
+            "a bijection from the decoded direct sum to fixed local M2 registers, including all off-code states",
+            "bounded local M2 gate decompositions of label-block prepare and every lifted seam/contact operand",
+            "composition of the supplied free coin and mass fixture on this exact same E_refresh",
+            "operand-level rather than label/geometry-level translation and proper-cubic covariance",
             "recurrent placement and collision theorem for overlapping two-star words on an unbounded lattice",
             "n>2 E_refresh carrier/chart integration despite the number-independent transition identity",
             "primitive genesis/enforcement of the wider E_refresh code space and volume scaling",
             "physical time, rate, energy, source, Record, occurrence, Born meaning, minimum or axiom pressure",
         ),
         "claim_ceiling": (
-            "Positive bounded nearest-neighbor compiler for the complete eleven-seam stream/contact word "
-            "on the declared finite two-star n<=2 E_refresh code.  This removes the finite chart-cocycle "
-            "wall but does not establish recurrent-lattice closure or a route-independent obstruction."
+            "Positive bounded nearest-neighbor transition word and exact decoded direct-sum common-E closure "
+            "for the eleven-seam stream/contact fixture.  This is not yet a physical-site compiler: fixed "
+            "tensor-product local registers, local preparation/lift synthesis, same-E coin composition, and "
+            "operand-level covariance remain to be constructed.  No route-independent obstruction follows."
         ),
         "certificate_sha256": digest,
     }

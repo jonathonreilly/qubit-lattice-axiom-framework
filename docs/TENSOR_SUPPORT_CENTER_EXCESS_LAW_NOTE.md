@@ -2,7 +2,9 @@
 
 **Date:** 2026-04-14  
 **Script:** `scripts/frontier_tensor_support_center_excess_law.py`  
-**Status:** exact support-side reduction plus bounded tensor-law narrowing
+**Status:** exact support-side center-excess law on the whole canonical `A1`
+family, plus a sampled tensor-law compatibility observation conditional on the
+current chosen tensor observable
 
 ## Purpose
 
@@ -15,7 +17,8 @@ That still left one key axiom-first question:
 > after leaving the shell side, what exact microscopic scalar on the support
 > block actually survives and can carry the last tensor law?
 
-This note answers that question.
+This note answers the support-side half of that question exactly. What it says
+about the tensor side is narrower, and is stated as such below.
 
 ## Exact support-side statement
 
@@ -59,78 +62,115 @@ the support-side scalar is exactly
 
 `delta_A1(r) = 1 / (6 (1 + sqrt(6) r))`.
 
-So the last microscopic scalar is no longer an abstract projective parameter.
-It is an explicit exact support-side center-excess observable.
+### Why this holds for the whole family, not only at sampled `r`
+
+The map `q -> phi_support = G_S q` is linear, so the unnormalized center-excess
+numerator
+
+`n(q) = phi_support(center) - phi_support(arm_mean)`
+
+is a linear functional of `q`. Every member of the canonical family is the
+fixed-total-charge combination
+
+`q_A1(r) = (1 - t) e0 + t (s / sqrt(6))`, with `t = sqrt(6) r / (1 + sqrt(6) r)`,
+
+of the two unit-charge endpoint backgrounds, and every member carries total
+charge `Q = 1`, so the normalization by `Q` is the same at every `r`. Linearity
+therefore gives
+
+`delta_A1(q_A1(r)) = (1 - t) delta_A1(e0) + t delta_A1(s / sqrt(6))`,
+
+and the two endpoint values are exactly `1/6` and `0`. Substituting `t` returns
+the displayed closed form. So the law holds for every real `r >= 0` on the
+canonical family, not only at the values the runner happens to evaluate. The
+runner's explicit linearity test and its dense `r` sweep are witnesses of this
+derivation, not its source.
+
+So the surviving microscopic scalar is no longer an abstract projective
+parameter. It is an explicit exact support-side center-excess observable.
 
 ## Bounded tensor-law consequence
 
-Using the current bright tensor coefficients
+Everything in this section is conditional and sampled. It is a statement about
+one specific chosen tensor observable, evaluated at one specific finite list of
+backgrounds. It is not a statement about the projective `A1` family as such.
 
-- `gamma_E`
-- `gamma_T`
+**The observable this is conditioned on.** The tensor coefficients `gamma_E`
+and `gamma_T` used here are not exact quantities. Each is a central
+finite-difference derivative, taken with step `EPS = 0.005`, of the `eta` floor
+returned by `tensor_metrics` in
+`scripts/frontier_tensor_boundary_drive_two_channel.py`, normalized by the
+`anchor_per_Q` value returned by `reduced_data` in
+`scripts/frontier_one_parameter_reduced_shell_law.py`. Changing that observable,
+that normalization, or that finite-difference step changes the numbers reported
+below, and the statement would then have to be re-derived.
 
-from the current tensor-boundary-drive pipeline, the runner fixes an affine law
-from the two exact `A1` support endpoints:
+**The affine law is fitted, not derived.** The runner fixes an affine law in
+`delta_A1` by interpolating the two `A1` support endpoints
 
 - center background `e0`
 - shell background `s / sqrt(6)`
 
-and tests it on:
+and then evaluates that fitted law elsewhere. Nothing in this note derives the
+slope or the intercept; both are read off those two endpoints.
 
-1. intermediate canonical `A1` projective backgrounds
-2. the exact local `O_h` `A1` baseline
-3. the finite-rank `A1` baseline
+**Where the fitted law was actually tested.** It was evaluated at exactly eight
+backgrounds:
 
-Result:
+1. the six canonical `A1` samples `r = 0.25, 0.5, 0.75, 1.0, 1.5, 2.0`
+2. the `exact local O_h` `A1` baseline
+3. the `finite-rank` `A1` baseline
 
-- on the canonical `A1` family the affine support law reproduces the bright
-  tensor coefficients with errors of order `1e-8`
-- on the audited exact local `O_h` and finite-rank `A1` baselines, the same
-  law reproduces the coefficients at the same `few x 1e-6` level already seen
-  in the earlier projective-compatibility note
+**What was observed there.** At those eight tested backgrounds, and only there:
 
-So the remaining tensor law is now much tighter than
+- across the six canonical `A1` samples the maximum affine-law error is of
+  order `1e-8`
+- across the two named baselines the maximum affine-law error is at the
+  `few x 1e-6` level already seen in the earlier projective-compatibility note
 
-- “some unknown scalar function of `r`”
-
-It is almost exactly:
-
-- an affine law in one exact support-side scalar `delta_A1`
-
-with coefficients fixed by the two exact `A1` endpoint backgrounds.
+Those two figures are observed maxima over the eight tested points. This note
+makes no claim about the affine law's error at any other `r`, at any other
+background, or for any other tensor observable.
 
 ## Interpretation
 
-This is the cleanest axiom-first gravity reduction so far.
-
-The shell side is blind to the last scalar datum, but the microscopic support
-block is not.
-
-And on that support block, the surviving scalar datum is explicit:
+On the support side the statement is exact and holds for the whole canonical
+family: after fixing total charge, the microscopic support block retains one
+explicit scalar datum,
 
 - center excess at fixed total charge
 
-So the remaining gravity theorem is no longer:
+and the shell side is blind to it.
 
-- derive an arbitrary scalar renormalization function
+On the tensor side the statement is much narrower. At the eight tested
+backgrounds, with the current chosen tensor observable and finite-difference
+step named above, the bright coefficients are numerically compatible with an
+affine law in `delta_A1` whose two constants were fitted from the two endpoint
+backgrounds. That is a sampled compatibility observation, not a derived tensor
+law.
 
-It is:
+So the forward target keeps its shape and is better organized:
 
 1. derive the exact tensor observable on the support block
 2. derive the exact tensor endpoint coefficients at
    - `e0`
    - `s / sqrt(6)`
-3. then recover the full affine support law in `delta_A1`
+3. then ask whether an affine support law in `delta_A1` follows for the family,
+   rather than holding only at tested backgrounds
 
-## What this closes
+## What this narrows, and what it opens
 
-This closes another false level of generality.
-
-The last tensor law is no longer a generic function on the projective `A1`
-manifold. On the current restricted class it is almost entirely controlled by:
+What it narrows: on the support side, the surviving scalar is no longer a
+generic function on the projective `A1` manifold. It is an exact center-excess
+observable with a closed form valid on the whole canonical family, carried by
 
 - one exact support-side scalar `delta_A1`
-- two endpoint tensor coefficients
+
+What it opens: a sharp, checkable question on the tensor side. The affine
+compatibility seen at the eight tested backgrounds is a lead, not a theorem.
+The next path this opens is to derive the tensor observable and its two
+endpoint coefficients, and then to test the affine form against a continuous
+family the way `delta_A1` is now tested.
 
 ## What this still does not close
 
@@ -147,5 +187,15 @@ The current best gravity target is now:
 
 > derive the exact tensor observable on the microscopic `A1 x {E_x, T1x}`
 > support block and its two `A1` endpoint coefficients. If that lands, the
-> remaining scalar law is already organized as the affine support-side
-> center-excess law.
+> support-side scalar it would be evaluated against is already exact on the
+> whole canonical family.
+
+## Downstream hygiene (2026-07-25)
+
+Downstream work may cite the exact support-side statements — the endpoint
+center excess `1/6` and the continuous-family `delta_A1(r)` law — without
+further conditioning. The tensor-law statements in this note are sampled and
+conditional: they hold for the current chosen tensor observable named above, at
+the six canonical samples and two baselines actually tested, and must be
+re-derived before being used at any other background or with any other tensor
+observable.

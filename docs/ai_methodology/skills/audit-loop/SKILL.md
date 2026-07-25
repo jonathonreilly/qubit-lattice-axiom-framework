@@ -217,7 +217,10 @@ default session is:
    operator explicitly requests a bounded campaign, add
    `--max-runtime-hours 12` (or the requested duration). The limit is checked
    only between completed batch/panel/canary phases, so it never interrupts a
-   claim transaction, pipeline, lint, or push.
+   claim transaction, pipeline, lint, or push. The bound must be finite and
+   non-negative. If a batch crosses the deadline, its mandatory post-batch
+   panel sweep still runs once before the bounded stop, and any hard batch
+   result remains hard.
 
    This command owns the complete control loop: drain authenticated targeted
    dispatch and cascade re-audit sources, finish pending judicial work, drain
@@ -357,21 +360,26 @@ failures. This boundary is fail-closed and does not weaken any audit gate.
   preserve the local intended commit and hard-stop with
   `push_reconciliation_required`; do not reset to a stale remote-tracking ref.
 - **Auditor service retryable:** a nonzero auditor exit is retryable only when
-  the bounded worker-log tail contains an allowlisted backend/transport outage
-  signature (for example HTTP 502/503/504, service-unavailable circuit-open, or
-  a reset upstream connection) and contains no credit, quota, authentication,
-  billing, or policy marker. Batch, judicial-panel, and forensic-canary seats
-  propagate the same typed temporary-service exit. The top-level orchestrator
-  still finishes the mandatory panel sweep after a batch, then retries the
-  affected canonical phase with capped exponential backoff. The failed seat
-  mints no verdict and is not converted into a scientific or campaign
-  quarantine result. Credit/authentication and unknown worker exits remain
-  hard stops.
+  its bounded terminal worker-log diagnostic contains an allowlisted
+  backend/transport outage signature (for example HTTP 502/503/504,
+  service-unavailable circuit-open, or a reset upstream connection) and
+  contains no credit, quota/rate-limit, authentication/authorization, billing,
+  policy, or unknown-failure marker. Batch, judicial-panel, and
+  forensic-canary seats propagate the same typed temporary-service exit. A
+  panel is temporary only when every unresolved seat failure is typed
+  transient; any transient/contract/hard mix remains hard. The forensic path
+  inspects only a pre-authority Codex execution diagnostic, never verdict
+  payload, apply, propagation, or push fields. The top-level orchestrator still
+  finishes the mandatory panel sweep after a batch, then retries the affected
+  canonical phase with capped exponential backoff. The failed seat mints no
+  verdict and is not converted into a scientific or campaign quarantine
+  result. Credit, quota/rate-limit, authentication/authorization, policy, and
+  unknown worker exits remain hard stops.
 - **Global hard stop:** dirty or divergent source state, failed rollback,
   repository invariant failure, unclassifiable generated diff, corrupted
   campaign state, unavailable required audit model, authentication failure
-  after bounded retry, or an applyability/policy defect that cannot be scoped
-  to one row. Preserve artifacts and stop before minting authority.
+  or authorization failure, or an applyability/policy defect that cannot be
+  scoped to one row. Preserve artifacts and stop before minting authority.
 - Treat the campaign exclusion JSONL as a closed operational schema. Reject
   blank records, duplicate JSON keys, unknown exclusion reasons, noncanonical
   claim ids, non-finite numbers, noncanonical UTC timestamps, missing or

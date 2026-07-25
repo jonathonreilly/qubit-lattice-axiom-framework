@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import itertools
 import json
+import math
 import os
 import subprocess
 import sys
@@ -423,10 +424,18 @@ def batch_command(
     return command
 
 
-def run_panel(args: argparse.Namespace, label: str) -> int:
+def run_panel(
+    args: argparse.Namespace,
+    label: str,
+    *,
+    required_after_batch: bool = False,
+) -> int:
     transient_failures = 0
+    attempts = 0
     while True:
-        stop_if_runtime_limit_reached(args)
+        if attempts or not required_after_batch:
+            stop_if_runtime_limit_reached(args)
+        attempts += 1
         rc = run_command(label, panel_command(args))
         if rc != batch.TRANSIENT_SERVICE_EXIT_CODE:
             return rc
@@ -460,8 +469,21 @@ def drain_lane(
         # result: another row in the same batch may already have recorded a
         # panel-eligible disagreement. Preserve the hard result only after the
         # judicial sweep has consumed every resumable handoff.
-        panel_rc = run_panel(args, f"panel-after-{label}-cycle-{cycle}")
+        try:
+            panel_rc = run_panel(
+                args,
+                f"panel-after-{label}-cycle-{cycle}",
+                required_after_batch=True,
+            )
+        except RuntimeLimitReached:
+            # The required sweep ran at least once. Do not let a bounded stop
+            # erase a hard or typed-temporary batch result.
+            if batch_rc != 0:
+                return batch_rc, made_progress
+            raise
         if panel_rc != 0:
+            if batch_rc not in {0, batch.TRANSIENT_SERVICE_EXIT_CODE}:
+                return batch_rc, made_progress
             return panel_rc, made_progress
         after = git_head()
         after_exclusions = campaign_exclusion_keys(
@@ -469,6 +491,9 @@ def drain_lane(
         )
         if after != before or after_exclusions != before_exclusions:
             made_progress = True
+        if batch_rc not in {0, batch.TRANSIENT_SERVICE_EXIT_CODE}:
+            return batch_rc, made_progress
+        stop_if_runtime_limit_reached(args)
         if batch_rc == batch.TRANSIENT_SERVICE_EXIT_CODE:
             transient_failures += 1
             wait_for_service_retry(
@@ -477,8 +502,6 @@ def drain_lane(
                 transient_failures,
             )
             continue
-        if batch_rc != 0:
-            return batch_rc, made_progress
         transient_failures = 0
         if after == before and after_exclusions == before_exclusions:
             return 0, made_progress
@@ -653,6 +676,30 @@ def forensic_canary_claim_local_failure(
     return None
 
 
+def forensic_canary_transient_diagnostic(terminal: dict | None) -> str:
+    """Return only a pre-authority Codex execution diagnostic.
+
+    Apply, propagation, push, extraction, and verdict payload fields are never
+    transport evidence. A bounded validation-repair outage is eligible only
+    through the runner's exact no-verdict execution-error prefix.
+    """
+    if not isinstance(terminal, dict):
+        return ""
+    phase = terminal.get("phase")
+    if phase == "codex_failed":
+        return str(terminal.get("stderr") or "")
+    if phase == "validate_failed":
+        error = str(terminal.get("error") or "")
+        if error.startswith(
+            (
+                "fresh schema retry codex exec failed:",
+                "validation repair codex exec failed:",
+            )
+        ):
+            return error
+    return ""
+
+
 def run_forensic_canary(
     args: argparse.Namespace,
     extra_excluded: set[str] | None = None,
@@ -729,7 +776,7 @@ def run_forensic_canary(
     if claim_local is None:
         if rc != 0:
             marker = batch.retryable_service_failure_marker(
-                json.dumps(terminal, sort_keys=True) if terminal else ""
+                forensic_canary_transient_diagnostic(terminal)
             )
             if marker is not None:
                 emit(
@@ -874,8 +921,11 @@ def main(argv: list[str] | None = None) -> int:
         raise SystemExit("worker, round, timeout, and retry values must be positive")
     if args.max_passes < 0 or args.max_lane_cycles < 0:
         raise SystemExit("pass and cycle safety bounds must be non-negative")
-    if args.max_runtime_hours < 0:
-        raise SystemExit("runtime bound must be non-negative")
+    if (
+        not math.isfinite(args.max_runtime_hours)
+        or args.max_runtime_hours < 0
+    ):
+        raise SystemExit("runtime bound must be finite and non-negative")
     if args.service_retry_initial_sec > args.service_retry_max_sec:
         raise SystemExit("initial service retry delay cannot exceed its maximum")
     args.worker_id = args.worker_id.strip() or f"worker-{uuid.uuid4().hex[:12]}"

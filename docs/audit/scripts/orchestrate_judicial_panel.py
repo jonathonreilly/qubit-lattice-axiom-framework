@@ -1002,11 +1002,7 @@ def run_panel(
                 for failure in failures
                 if f":{batch.TRANSIENT_SERVICE_FAILURE_RESULT}:" in failure
             ]
-            if (
-                transient_failures
-                and len(transient_failures) + len(contract_failures)
-                == len(failures)
-            ):
+            if transient_failures and len(transient_failures) == len(failures):
                 record["result"] = PANEL_TRANSIENT_SERVICE_RESULT
                 write_panel_record(workdir, cid, panel_no, record)
                 return {
@@ -1366,10 +1362,7 @@ def runtime_arg_error(args: argparse.Namespace) -> str | None:
 
 def report_exit_code(report: list[dict], reseat_failures: list[dict]) -> int:
     """Return success, typed temporary-service failure, or hard failure."""
-    applied = {
-        "audited_clean", "audited_renaming", "audited_conditional",
-        "audited_decoration", "audited_failed", "audited_numerical_match",
-    }
+    applied = ALLOWED_VERDICTS
     panels_ok = all(item.get("result") in applied for item in report)
     transient = any(
         item.get("result") == PANEL_TRANSIENT_SERVICE_RESULT

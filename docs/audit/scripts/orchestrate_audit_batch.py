@@ -138,22 +138,55 @@ TRANSIENT_SERVICE_MARKERS = (
     "status code 504",
 )
 NON_RETRYABLE_SERVICE_MARKERS = (
-    "insufficient_quota",
+    "insufficient quota",
     "usage limit",
     "quota exceeded",
+    "quota exhausted",
+    "exceeded your current quota",
     "out of credit",
     "out of credits",
+    "credits exhausted",
     "credit balance",
     "billing",
+    "rate limit",
+    "too many requests",
+    "http 429",
+    "status 429",
+    "status code 429",
     "unauthorized",
     "forbidden",
     "authentication failed",
+    "authentication error",
+    "authentication required",
+    "not authenticated",
+    "authorization failed",
+    "authorization error",
+    "authorization denied",
+    "not authorized",
+    "authz failed",
+    "permission denied",
+    "access denied",
     "invalid api key",
-    "invalid_api_key",
+    "http 401",
+    "http 403",
     "status 401",
     "status 403",
     "status code 401",
     "status code 403",
+    "policy violation",
+    "policy blocked",
+    "policy rejection",
+    "content policy",
+    "model policy",
+    "safety policy",
+    "unknown error",
+    "unknown failure",
+    "unknown worker failure",
+    "unrecognized error",
+    "unrecognized failure",
+    "unclassified error",
+    "unclassified failure",
+    "corrupt local configuration",
 )
 
 
@@ -1279,13 +1312,48 @@ def packet_completion_pass(
     return completed
 
 
+def _normalized_service_marker_text(text: str) -> str:
+    """Normalize common diagnostic separators without joining distinct lines."""
+    return re.sub(r"[ _-]+", " ", text.lower())
+
+
+def _service_marker_present(text: str, marker: str) -> bool:
+    """Match a complete marker, never a numeric or identifier prefix."""
+    normalized_marker = _normalized_service_marker_text(marker)
+    return re.search(
+        rf"(?<![a-z0-9]){re.escape(normalized_marker)}(?![a-z0-9])",
+        text,
+    ) is not None
+
+
 def retryable_service_failure_marker(text: str) -> str | None:
-    """Classify a bounded terminal diagnostic as a transient service outage."""
-    tail = "\n".join(text.splitlines()[-WORKER_FAILURE_LOG_TAIL_LINES:]).lower()
-    if any(marker in tail for marker in NON_RETRYABLE_SERVICE_MARKERS):
+    """Classify only a bounded terminal diagnostic as a service outage.
+
+    Hard markers anywhere in the bounded tail win. The final nonblank line
+    must itself carry an allowlisted outage marker, so an older outage message
+    cannot convert a later unknown failure into a retry.
+    """
+    encoded = text.encode("utf-8", errors="replace")
+    bounded = encoded[-WORKER_FAILURE_LOG_TAIL_BYTES:].decode(
+        "utf-8", errors="replace"
+    )
+    lines = bounded.splitlines()[-WORKER_FAILURE_LOG_TAIL_LINES:]
+    nonblank = [line for line in lines if line.strip()]
+    if not nonblank:
         return None
+    tail = _normalized_service_marker_text("\n".join(lines))
+    if any(
+        _service_marker_present(tail, marker)
+        for marker in NON_RETRYABLE_SERVICE_MARKERS
+    ):
+        return None
+    terminal_line = _normalized_service_marker_text(nonblank[-1])
     return next(
-        (marker for marker in TRANSIENT_SERVICE_MARKERS if marker in tail),
+        (
+            marker
+            for marker in TRANSIENT_SERVICE_MARKERS
+            if _service_marker_present(terminal_line, marker)
+        ),
         None,
     )
 
@@ -3456,7 +3524,16 @@ def hard_blocking_report_items(report: list[dict]) -> list[dict]:
         for item in report
         if item.get("result") == CLAIM_TRANSACTION_QUARANTINE_RESULT
     }
+    transient_claims = {
+        item.get("cid")
+        for item in report
+        if item.get("result") == TRANSIENT_SERVICE_FAILURE_RESULT
+    }
     quarantine_companions = SCHEMA_INVALID_RESULTS | {"critical_peer_pending"}
+    transient_companions = {
+        "critical_peer_delivery_missing",
+        "critical_peer_pending",
+    }
     return [
         item
         for item in report
@@ -3468,6 +3545,10 @@ def hard_blocking_report_items(report: list[dict]) -> list[dict]:
         and not (
             item.get("cid") in transaction_quarantined
             and item.get("result") == "apply_or_gate_failed"
+        )
+        and not (
+            item.get("cid") in transient_claims
+            and item.get("result") in transient_companions
         )
     ]
 

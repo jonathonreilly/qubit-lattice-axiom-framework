@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 116 |
-| Retained bounded rows | 341 |
+| Retained bounded rows | 342 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 27 |
 
@@ -142,7 +142,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (341)
+## Retained bounded rows (342)
 
 Sorted by load-bearing graph score (descending).
 
@@ -441,6 +441,7 @@ Sorted by load-bearing graph score (descending).
 - [`post_record_stable_kernel_count_audit_interface_2026-06-06`](../../docs/POST_RECORD_STABLE_KERNEL_COUNT_AUDIT_INTERFACE_2026-06-06.md) — score 0.000; audited 2026-07-25T15:35:07.389401+00:00
 - [`post_record_stable_kernel_expected_frequency_interface_2026-06-06`](../../docs/POST_RECORD_STABLE_KERNEL_EXPECTED_FREQUENCY_INTERFACE_2026-06-06.md) — score 0.000; audited 2026-07-25T15:36:30.809053+00:00
 - [`pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md) — score 0.000; audited 2026-07-25T12:26:20.399223+00:00
+- [`rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20`](../../docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T19:18:25.664176+00:00
 - [`s3_endpoint_fiber_uniform_lift_support_2026-06-27`](../../docs/S3_ENDPOINT_FIBER_UNIFORM_LIFT_SUPPORT_2026-06-27.md) — score 0.000; audited 2026-07-09T11:30:22.012429+00:00
 - [`scalar_kg_rerun_note_2026-04-10`](../../docs/SCALAR_KG_RERUN_NOTE_2026-04-10.md) — score 0.000; audited 2026-05-01T21:02:06.946242+00:00
 - [`self_gravity_scaling_note_2026-04-10`](../../docs/SELF_GRAVITY_SCALING_NOTE_2026-04-10.md) — score 0.000; audited 2026-05-01T23:33:38.266607+00:00

@@ -32,14 +32,14 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3876 |
-| Applied audit verdicts | 862 |
-| Retained-grade rows, including boxed decorations | 484 |
+| Applied audit verdicts | 863 |
+| Retained-grade rows, including boxed decorations | 485 |
 | Retained positive theorems | 116 |
 | Retained no-go rows | 0 |
-| Retained bounded rows | 341 |
+| Retained bounded rows | 342 |
 | Boxed decorations under retained parents | 27 |
 | Open gates | 2 |
-| Unaudited rows | 2656 |
+| Unaudited rows | 2655 |
 | Retained-pending-chain rows | 10 |
 | Audited conditional rows | 260 |
 | Audited renaming rows | 34 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2979 |
-| Ready rows | 564 |
+| Total pending rows | 2978 |
+| Ready rows | 563 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
 | High pending | 365 |
 | Medium pending | 815 |
-| Leaf pending | 1164 |
+| Leaf pending | 1163 |
 
 Next ready rows by queue order:
 

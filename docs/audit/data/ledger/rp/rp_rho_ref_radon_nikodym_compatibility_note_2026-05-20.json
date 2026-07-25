@@ -1,24 +1,47 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T19:18:25.664176+00:00",
+  "audit_invocation_history": [
+    "c8898b0b0c64454e911d114377e70fdc"
+  ],
+  "audit_invocation_id": "c8898b0b0c64454e911d114377e70fdc",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "85e5817681a6771918b954f63f909d52900e73bb1416a3140584997ed17bb946",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-A-20260725-2fcc6c48",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The accepted Qubit algebra gives a finite matrix algebra, and spectral functional calculus plus the faithful normalized trace proves positivity, normalization, and the unique trace-relative density exactly. The conditional rho_ref and Wilson/RP applications are outside the audited scope.",
   "claim_id": "rp_rho_ref_radon_nikodym_compatibility_note_2026-05-20",
-  "claim_scope": null,
+  "claim_scope": "For every finite Lambda subset of Z^3 and self-adjoint H in A_Lambda, D_H=e^{-H}/tau_Lambda(e^{-H}) is the Radon-Nikodym density of the positive normalized state omega_H(O)=tau_Lambda(D_H O) relative to tau_Lambda.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem candidate",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T19:18:25.664176+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +49,20 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For self-adjoint H, D_H=e^{-H}/tau_Lambda(e^{-H}) is positive with tau_Lambda(D_H)=1, and omega_H(O)=tau_Lambda(D_H O) has Radon-Nikodym density D_H relative to tau_Lambda.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "3f4dcf367801be509732dd19cb53591e43fd022ac14e3301d37971671be17aee",
   "note_path": "docs/RP_RHO_REF_RADON_NIKODYM_COMPATIBILITY_NOTE_2026-05-20.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -267,14 +291,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 5,
     "B": 0,
-    "C": 0,
+    "C": 9,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 14
   },
   "runner_path": "scripts/rp_trace_gibbs_radon_nikodym_certificate_2026_06_06.py",
   "title": "Finite-Volume Gibbs State Relative to the Normalized Trace",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "An independent spectral check gives e^{-H}=U diag(e^{-lambda_i})U* > 0 and tau_Lambda(e^{-H})>0; direct substitution then gives tau_Lambda(D_H)=1. For O>=0, cyclicity yields Tr(e^{-H}O)=Tr(e^{-H/2}Oe^{-H/2})>=0, while nondegeneracy of the finite-dimensional trace pairing makes D_H the unique density. The runner's 14 passing checks corroborate finite cases, but the exact argument\u2014not the sampling\u2014closes the universal finite-volume theorem; applications to separately identified rho_ref or Wilson/RP carriers were not audited."
 }

@@ -1,0 +1,317 @@
+{
+ "cycle": 610,
+ "authority": "none",
+ "audit": "unset",
+ "frozen_contract_sha256": "52666bb481107d722f976a4ebb72943d802211acac84e6108dca8f5daa233406",
+ "parameters": {
+  "beta_train": -0.3,
+  "beta_held": -0.35,
+  "contact": 0.37,
+  "L_train": 9,
+  "L_held": 13,
+  "Q_train": 4096,
+  "Q_held": 2048,
+  "Q_skip": 64,
+  "v_floor": 1e-08,
+  "weyl_dim": 16,
+  "field_rows": [
+   [
+    1,
+    1
+   ],
+   [
+    1,
+    -1
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    -1
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    3,
+    -1
+   ],
+   [
+    8,
+    1
+   ],
+   [
+    8,
+    -1
+   ]
+  ],
+  "K_rows": [
+   [
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.14726215563702155,
+    0.0,
+    0.0
+   ],
+   [
+    0.2945243112740431,
+    0.0,
+    0.0
+   ]
+  ],
+  "bank": 24,
+  "refill": 8
+ },
+ "spectral_roots": {
+  "train_K0": {
+   "theta": -2.975574708446694,
+   "branch_abs_value": 1.1314491454171574e-11,
+   "null_A2_overlap": 0.9999999999999997
+  },
+  "train_K1": {
+   "theta": -2.9715803763794373,
+   "branch_abs_value": 2.0916480525568522e-11,
+   "null_A2_overlap": 0.9199379332385472
+  },
+  "held_K2": {
+   "theta": -2.966481085938268,
+   "branch_abs_value": 3.8107363957817645e-12,
+   "null_A2_overlap": 0.940271158974692
+  },
+  "held_K0": {
+   "theta": -2.9755759081693407,
+   "branch_abs_value": 1.3344648343258849e-11,
+   "null_A2_overlap": 1.0
+  },
+  "beta_held": {
+   "theta": -2.962262618149122,
+   "branch_abs_value": 1.7279583034054814e-12,
+   "null_A2_overlap": 0.9999999999999997
+  }
+ },
+ "route_a_train": {
+  "raw": {
+   "rate": 0.04985119047619048,
+   "count": 221,
+   "locked": true,
+   "rate_half1": 0.0496031746031746,
+   "rate_half2": 0.05009920634920635,
+   "fine_rate": 0.04994234828231525
+  },
+  "raw_T2": {
+   "rate": 0.05009920634920635,
+   "count": 236,
+   "locked": true
+  },
+  "purified": {
+   "rate": -0.47346230158730157,
+   "count": 1909,
+   "locked": true,
+   "fine_rate": -0.4735774233886729
+  },
+  "predicted_rate": -0.47357742338851666,
+  "bound_eigen_residual": 2.1331798302301967e-12,
+  "odd_darkness": {
+   "q1": 4.30626753587503e-17,
+   "q3": 0.23172271558009597
+  }
+ },
+ "preparation_rates": {
+  "raw_a2": {
+   "rate": 0.049899193548387094,
+   "locked": true,
+   "matched": false
+  },
+  "raw_a3": {
+   "rate": 0.04838709677419355,
+   "locked": true,
+   "matched": false
+  },
+  "pure_mix1": {
+   "rate": -0.4732862903225806,
+   "locked": true,
+   "matched": true
+  },
+  "pure_mix2": {
+   "rate": -0.4732862903225806,
+   "locked": true,
+   "matched": true
+  }
+ },
+ "motion_rows": {
+  "train": {
+   "ratio_pred": 0.9986576266910999,
+   "ratio_meas_pure": 0.998952331063384,
+   "ratio_meas_raw": 1.0,
+   "fine_ratio": 0.9986576266913295,
+   "raw_locked": true
+  },
+  "held": {
+   "ratio_meas": 0.9968051118210863,
+   "ratio_pred": 0.9969435085806068,
+   "fine_ratio": 0.9969435085808884
+  }
+ },
+ "species_row": {
+  "rate": -0.47127016129032256,
+  "predicted": -0.4714587384147724,
+  "theta_beta_held": -2.962262618149122
+ },
+ "field_rows": [
+  {
+   "weyl_Q": 1,
+   "sign": 1,
+   "alpha": 0.7853981633974483,
+   "rate_pure": -0.34846230158730157,
+   "rate_pred": -0.34857742338851666,
+   "ratio_pure": 0.7359874279727606,
+   "ratio_pred": 0.7360516067138368,
+   "rate_raw": 0.1746031746031746,
+   "raw_locked": true,
+   "orientation_flip": false,
+   "matched": true
+  },
+  {
+   "weyl_Q": 1,
+   "sign": -1,
+   "alpha": -0.7853981633974483,
+   "rate_pure": 0.40153769841269843,
+   "rate_pred": 0.40142257661148334,
+   "ratio_pure": -0.8480880041906758,
+   "ratio_pred": -0.8476387530031421,
+   "rate_raw": -0.07514880952380952,
+   "raw_locked": true,
+   "orientation_flip": true,
+   "matched": true
+  },
+  {
+   "weyl_Q": 2,
+   "sign": 1,
+   "alpha": 1.5707963267948966,
+   "rate_pure": -0.2234623015873016,
+   "rate_pred": -0.2235774233885167,
+   "ratio_pure": 0.47197485594552124,
+   "ratio_pred": 0.4721032134276737,
+   "rate_raw": 0.2986111111111111,
+   "raw_locked": true,
+   "orientation_flip": false,
+   "matched": true
+  },
+  {
+   "weyl_Q": 2,
+   "sign": -1,
+   "alpha": -1.5707963267948966,
+   "rate_pure": 0.27653769841269843,
+   "rate_pred": 0.27642257661148334,
+   "ratio_pure": -0.5840754321634364,
+   "ratio_pred": -0.5836903597169789,
+   "rate_raw": -0.20014880952380953,
+   "raw_locked": true,
+   "orientation_flip": true,
+   "matched": true
+  },
+  {
+   "weyl_Q": 3,
+   "sign": 1,
+   "alpha": 2.356194490192345,
+   "rate_pure": -0.09846230158730158,
+   "rate_pred": -0.09857742338851667,
+   "ratio_pure": 0.20796228391828184,
+   "ratio_pred": 0.20815482014151054,
+   "rate_raw": 0.3568948412698413,
+   "raw_locked": false,
+   "orientation_flip": false,
+   "matched": true
+  },
+  {
+   "weyl_Q": 3,
+   "sign": -1,
+   "alpha": -2.356194490192345,
+   "rate_pure": 0.1515376984126984,
+   "rate_pred": 0.1514225766114833,
+   "ratio_pure": -0.32006286013619695,
+   "ratio_pred": -0.31974196643081576,
+   "rate_raw": -0.32415674603174605,
+   "raw_locked": true,
+   "orientation_flip": true,
+   "matched": true
+  },
+  {
+   "weyl_Q": 8,
+   "sign": 1,
+   "alpha": 6.283185307179586,
+   "rate_pure": -0.47346230158730157,
+   "rate_pred": -0.47357742338851666,
+   "ratio_pure": 1.0,
+   "ratio_pred": 1.0,
+   "rate_raw": 0.04985119047619048,
+   "raw_locked": true,
+   "orientation_flip": false,
+   "matched": true
+  },
+  {
+   "weyl_Q": 8,
+   "sign": -1,
+   "alpha": -6.283185307179586,
+   "rate_pure": -0.47346230158730157,
+   "rate_pred": -0.47357742338851655,
+   "ratio_pure": 1.0,
+   "ratio_pred": 0.9999999999999997,
+   "rate_raw": 0.04985119047619048,
+   "raw_locked": true,
+   "orientation_flip": false,
+   "matched": true
+  }
+ ],
+ "comparator_map": {
+  "near_hits": [
+   {
+    "row": [
+     1,
+     1
+    ],
+    "target": "3:4",
+    "ratio_pred": 0.7360516067138368
+   }
+  ],
+  "statement": "algebraic reachability only; the association between Cycle-610 tick events and Cycle-451 echo events and the empirical calibration are underived, so no identification with the 3:4/5:4 words is claimed"
+ },
+ "route_b": {
+  "admitted_total": 25,
+  "sample_intervals": {
+   "d_ab": 9,
+   "d_bc": 12,
+   "d_ac": 21
+  },
+  "carries": 2
+ },
+ "n1_families": [
+  "two-channel transported-detector tick clock (attempted, positive)",
+  "onsite single-channel Ramsey clock (prior 599 failure, boundary reproduced)",
+  "controlled first-return comparator (prior 586, supplied controller)",
+  "spectral-instrument pointer clock (prior 586, supplied instrument)",
+  "event/Record interval chain with supplied opportunity (prior 570)",
+  "A2/T2 vernier beat clock (open)",
+  "two-dimer encounter clock (open, N4 outside code)"
+ ],
+ "interpretation_firewall": [
+  "update count is not time; the tick ordinal is not proper time",
+  "wrapped phase is not energy; a generator element is not a rate",
+  "a tick certificate is a candidate opportunity, not an occurrence",
+  "an admitted cell is a conditional candidate Record; actuality, admissibility, and law-domain tokens are supplied",
+  "tick-rate ratios are dimensionless relational candidates, not lapse, redshift, or proper time",
+  "proper-cubic covariance is not Lorentz covariance",
+  "the uniform-field row is a supplied lawful field configuration; non-uniform field gradients across the packet remain open",
+  "the purified source is a supplied preparation (disclosed); the raw onsite-A2 rows measure the lawful-domain boundary"
+ ],
+ "elapsed_seconds": 64.30412316322327,
+ "pass_count": 33,
+ "fail_count": 3,
+ "pass": false
+}

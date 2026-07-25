@@ -1,0 +1,245 @@
+{
+ "cycle": 611,
+ "authority": "none",
+ "audit": "unset",
+ "frozen_contract_sha256": "1dab9ebb17ac1d351651da745ca698a15a3bc94648dd38c6222022df6df77bde",
+ "consumed_cycle610_sha256": "10f2d837940b1f364a9c75325f15f52dbec640e6ba0b91862caaa14dce2d121c",
+ "parameters": {
+  "beta": -0.3,
+  "contact": 0.37,
+  "L_train": 9,
+  "L_held": 13,
+  "Q_cert": 2048,
+  "Q_skip": 64,
+  "g_start": 3.141592653589793,
+  "ramp_steps": [
+   256,
+   1024,
+   4096
+  ],
+  "filter_m": [
+   8,
+   16
+  ],
+  "filter_k": 12,
+  "cert_k_grid": [
+   4,
+   8,
+   12
+  ],
+  "window_radius": 1
+ },
+ "noop_control": {
+  "rate_T1": 0.049899193548387094,
+  "rate_T2": 0.049899193548387094,
+  "count_T1": 109,
+  "count_T2": 121,
+  "locked": true,
+  "convention_independent": false,
+  "rate_matches": false,
+  "fine_matches": false,
+  "fine_rate": 0.049933577819205245,
+  "certified": false,
+  "predicted": -0.47357742338851666
+ },
+ "route_pb": [
+  {
+   "m": 8,
+   "k": 4,
+   "bound_weight": 0.40298565571196215,
+   "cumulative_success": 0.2753001503914804,
+   "round_success_last": 0.7080593894518864,
+   "certified": false,
+   "locked": true,
+   "convention_independent": true,
+   "rate_matches": false,
+   "rate_T1": 0.049899193548387094,
+   "fine_rate": 0.04996164066258265
+  },
+  {
+   "m": 8,
+   "k": 8,
+   "bound_weight": 0.4063387546234809,
+   "cumulative_success": 0.11422071892052359,
+   "round_success_last": 0.8084337500419113,
+   "certified": false,
+   "locked": true,
+   "convention_independent": true,
+   "rate_matches": false,
+   "rate_T1": 0.049899193548387094,
+   "fine_rate": 0.049936773455831064
+  },
+  {
+   "m": 8,
+   "k": 12,
+   "bound_weight": 0.38224253996775526,
+   "cumulative_success": 0.046589888452013756,
+   "round_success_last": 0.8100938512001506,
+   "certified": false,
+   "locked": true,
+   "convention_independent": true,
+   "rate_matches": false,
+   "rate_T1": 0.049899193548387094,
+   "fine_rate": 0.049973275653770535
+  },
+  {
+   "m": 16,
+   "k": 4,
+   "bound_weight": 0.6035757665066795,
+   "cumulative_success": 0.19926581780606623,
+   "round_success_last": 0.7121200430350099,
+   "certified": false,
+   "locked": true,
+   "convention_independent": true,
+   "rate_matches": false,
+   "rate_T1": 0.049899193548387094,
+   "fine_rate": 0.04991185821236686
+  },
+  {
+   "m": 16,
+   "k": 8,
+   "bound_weight": 0.7345201485289217,
+   "cumulative_success": 0.05960932828056338,
+   "round_success_last": 0.7459517598522195,
+   "certified": false,
+   "locked": true,
+   "convention_independent": true,
+   "rate_matches": false,
+   "rate_T1": 0.049899193548387094,
+   "fine_rate": 0.05000179894119878
+  },
+  {
+   "m": 16,
+   "k": 12,
+   "bound_weight": 0.8155797804804212,
+   "cumulative_success": 0.019607839399531212,
+   "round_success_last": 0.7618794858568688,
+   "certified": false,
+   "locked": true,
+   "convention_independent": false,
+   "rate_matches": false,
+   "rate_T1": 0.049899193548387094,
+   "fine_rate": 0.049903734395966154
+  }
+ ],
+ "route_pa_success_tail": {
+  "8": [
+   0.12636582967735394,
+   0.12552520569083175,
+   0.12762750538895412
+  ],
+  "16": [
+   0.39840625362451937,
+   0.3985968505147061,
+   0.39878340697664805
+  ]
+ },
+ "route_pa": [
+  {
+   "m": 8,
+   "k": 4,
+   "bound_weight": 0.5121837320932577,
+   "cumulative_success": 0.0001337553829086205,
+   "certified": false,
+   "locked": true,
+   "convention_independent": true,
+   "rate_matches": false,
+   "rate_T1": 0.049899193548387094
+  },
+  {
+   "m": 8,
+   "k": 8,
+   "bound_weight": 0.6887356301508124,
+   "cumulative_success": 3.942390660437619e-08,
+   "certified": false,
+   "locked": true,
+   "convention_independent": true,
+   "rate_matches": false,
+   "rate_T1": 0.049899193548387094
+  },
+  {
+   "m": 8,
+   "k": 12,
+   "bound_weight": 0.8102964429438053,
+   "cumulative_success": 1.0334452897883804e-11,
+   "certified": false,
+   "locked": true,
+   "convention_independent": false,
+   "rate_matches": false,
+   "rate_T1": 0.04939516129032258
+  },
+  {
+   "m": 16,
+   "k": 4,
+   "bound_weight": 0.8928849839419933,
+   "cumulative_success": 0.00695871364018185,
+   "certified": false,
+   "locked": false,
+   "convention_independent": false,
+   "rate_matches": false,
+   "rate_T1": 0.034274193548387094
+  },
+  {
+   "m": 16,
+   "k": 8,
+   "bound_weight": 0.9089595408417511,
+   "cumulative_success": 0.00017202207634141317,
+   "certified": false,
+   "locked": false,
+   "convention_independent": false,
+   "rate_matches": false,
+   "rate_T1": -0.08820564516129033
+  },
+  {
+   "m": 16,
+   "k": 12,
+   "bound_weight": 0.9090084407618519,
+   "cumulative_success": 4.348877600251707e-06,
+   "certified": false,
+   "locked": false,
+   "convention_independent": false,
+   "rate_matches": false,
+   "rate_T1": -0.08316532258064516
+  }
+ ],
+ "route_pc": [
+  {
+   "T": 256,
+   "bound_weight": 0.019636420358634703,
+   "certified": false,
+   "locked": false,
+   "convention_independent": false,
+   "rate_matches": false,
+   "rate_T1": 0.04435483870967742
+  },
+  {
+   "T": 1024,
+   "bound_weight": 0.0040701209157419085,
+   "certified": false,
+   "locked": false,
+   "convention_independent": false,
+   "rate_matches": false,
+   "rate_T1": 0.043850806451612906
+  },
+  {
+   "T": 4096,
+   "bound_weight": 0.00032152958907083137,
+   "certified": false,
+   "locked": false,
+   "convention_independent": false,
+   "rate_matches": false,
+   "rate_T1": 0.046875
+  }
+ ],
+ "interpretation_firewall": [
+  "a preparation schedule is not time; update count is not time",
+  "the conditioning pointer/selector is not a Record",
+  "success probability is a norm account, not Born probability",
+  "certification uses spectral data; preparation does not",
+  "conditioned routes are resource-accounted postselection, not deterministic autonomy; the deterministic route is P-C"
+ ],
+ "elapsed_seconds": 16.000629663467407,
+ "pass_count": 9,
+ "fail_count": 2,
+ "pass": false
+}

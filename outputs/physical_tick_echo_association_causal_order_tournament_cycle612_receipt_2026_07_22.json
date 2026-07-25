@@ -1,0 +1,131 @@
+{
+ "cycle": 612,
+ "authority": "none",
+ "audit": "unset",
+ "frozen_contract_sha256": "8c8c0082d56c79fec970af54213961db2feb4415c674796d0cefea88a75cbc2c",
+ "consumed": {
+  "cycle610_runner": "10f2d837940b1f364a9c75325f15f52dbec640e6ba0b91862caaa14dce2d121c",
+  "cycle611_runner": "1b6bad7ca54d72a9ac3e7effb0ef069b5cdd6e8d31d21af3d2c2adab1e813bec",
+  "cycle610_receipt_sha256": "b3b0a412ab995c11e2161e9d33e979d1f2a808c97f1f10680b25ef778476c3ca"
+ },
+ "w4_mechanism_verdict": "COUNT-EDIT (single receiver-gated +/-1 tick edit in a dedicated post-corridor stage; both signs symmetric swaps)",
+ "a_count_table": [
+  {
+   "Q": 1,
+   "s": 1,
+   "ratio": 0.7360516067138368,
+   "count": 3,
+   "word": "3:4",
+   "matches_frozen": true
+  },
+  {
+   "Q": 1,
+   "s": -1,
+   "ratio": -0.8476387530031421,
+   "count": -3,
+   "word": "reversed",
+   "matches_frozen": true
+  },
+  {
+   "Q": 2,
+   "s": 1,
+   "ratio": 0.4721032134276737,
+   "count": 2,
+   "word": "2:4",
+   "matches_frozen": true
+  },
+  {
+   "Q": 2,
+   "s": -1,
+   "ratio": -0.5836903597169789,
+   "count": -2,
+   "word": "reversed",
+   "matches_frozen": true
+  },
+  {
+   "Q": 3,
+   "s": 1,
+   "ratio": 0.20815482014151054,
+   "count": 1,
+   "word": "1:4",
+   "matches_frozen": true
+  },
+  {
+   "Q": 3,
+   "s": -1,
+   "ratio": -0.31974196643081576,
+   "count": -1,
+   "word": "reversed",
+   "matches_frozen": true
+  },
+  {
+   "Q": 8,
+   "s": 1,
+   "ratio": 1.0,
+   "count": 4,
+   "word": "4:4",
+   "matches_frozen": true
+  },
+  {
+   "Q": 8,
+   "s": -1,
+   "ratio": 0.9999999999999997,
+   "count": 4,
+   "word": "4:4",
+   "matches_frozen": true
+  },
+  {
+   "row": "motion_train",
+   "ratio": 0.9986576266910999,
+   "count": 4,
+   "word": "4:4",
+   "matches_frozen": true
+  },
+  {
+   "row": "motion_held",
+   "ratio": 0.9969435085806068,
+   "count": 4,
+   "word": "4:4",
+   "matches_frozen": true
+  },
+  {
+   "row": "species",
+   "ratio": 0.9955262120424053,
+   "count": 4,
+   "word": "4:4",
+   "matches_frozen": true
+  }
+ ],
+ "pi_ceiling": {
+  "ceiling": 1.0557935731446526,
+  "max_ratio": 1.045600047967765
+ },
+ "matched_ray": {
+  "rate": -0.3125,
+  "rate_T2": -0.3130040322580645,
+  "predicted": -0.47357742338851666,
+  "certified": false,
+  "fine_rate": -0.3128055737015332,
+  "raw_control_certified": false,
+  "cumulative_success": 0.00695871364018185,
+  "bound_weight_input": 0.892885
+ },
+ "causal_order": {
+  "consistent_admitted": [
+   "admitted",
+   "admitted"
+  ],
+  "inverted_refused": "refused_inverted",
+  "forced_cycle_detected": true
+ },
+ "interpretation_firewall": [
+  "a count word is not time; A-count consistency is not identification",
+  "the pi ceiling is a property of the candidate tick law, not a no-go on advance responses; count-edit mechanisms remain lawful for both signs (W4: the Cycle-451 mechanism is itself a count edit)",
+  "matched-ray certification uses spectral data on the certification side only; the preparation and rays consume no spectral data",
+  "shared co-registrations are candidate events; the acyclicity result is a finite declared-code statement, not a lattice-wide light-cone theorem"
+ ],
+ "elapsed_seconds": 5.0688817501068115,
+ "pass_count": 6,
+ "fail_count": 1,
+ "pass": false
+}

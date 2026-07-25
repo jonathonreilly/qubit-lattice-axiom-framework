@@ -1,0 +1,24 @@
+PASS channel reweighting factors at this species: the plus aggregate suppresses the bound line (0.0138) and the minus channel enhances it (1.97) :: {'plus_bound_factor': 0.013749355556730332, 'minus_bound_factor': 1.9862506444432695}
+PASS (a) the Cycle-611 P-A state certifies through the minus channel with raw rays (frozen prediction) :: {'rate': -0.4732862903225806, 'rate_T2': -0.4737903225806452, 'fine_rate': -0.47357971506585766, 'locked': True, 'convention_independent': True, 'rate_matches': True, 'certified': True, 'predicted': -0.47357742338851666}
+PASS (c) the exact bound eigenvector certifies through the minus channel :: {'rate': -0.4737903225806452, 'rate_T2': -0.4732862903225806, 'fine_rate': -0.47357742338869263, 'locked': True, 'convention_independent': True, 'rate_matches': True, 'certified': True, 'predicted': -0.47357742338851666}
+PASS (b) OPEN ROW REPORTED: whether the raw onsite-A2 source certifies through the minus channel (no frozen prior; a pass means the autonomous clock needs no preparation at all) :: {'rate': -0.2696572580645161, 'rate_T2': -0.2701612903225806, 'fine_rate': -0.2699322726726929, 'locked': False, 'convention_independent': False, 'rate_matches': False, 'certified': False, 'predicted': -0.47357742338851666}
+PASS (d) the certificate-based channel selector picks the minus channel for every state that certifies on either channel, and the contact-off deletion word selects no channel or fails certification :: {'selection': {'pa_state': 'minus', 'raw_source': 'none', 'bound_eigenvector': 'both', 'contact_off': 'none'}, 'contact_off_certified': False}
+RESULT 5 0 elapsed 8.13 s
+        8.47 real         8.20 user         0.26 sys
+           187891712  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               16605  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 434  involuntary context switches
+        118655253509  instructions retired
+         31075159884  cycles elapsed
+           125682336  peak memory footprint

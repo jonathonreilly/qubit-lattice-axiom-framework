@@ -1,0 +1,26 @@
+PASS the Cycle-610 runner is byte-pinned and unchanged :: 10f2d837940b1f36
+PASS A-count reproduces the frozen expected table: exactly one 3:4 hit at (Q=1, s=+1), 4:4 at nulls/motion/species, reversed-class rows for s=-1, and no 5:4 anywhere :: {'hit_3_4': [(1, 1)]}
+PASS pi-ceiling corollary: |R| <= pi/|theta0| = 1.0556 for every uniform-field modulation on the full W=16 and W=64 lattices; the 5:4 advance word (|R| = 1.25) is unreachable by any uniform-field rate shift, while 3:4 is reached — the two Cycle-451 response signs are mechanically distinguishable (delay rate-reachable, advance only edit-reachable) :: {'ceiling': 1.0557935731446526, 'max_ratio_found': 1.045600047967765}
+FAIL matched-ray certification: the Cycle-611 P-A (m=16, k=4) prepared state certifies through its own rays (frozen prediction), while the raw-ray control on the same state stays uncertified — certification is a property of the (ray, state) pair :: {'matched': {'rate': -0.3125, 'predicted': -0.47357742338851666, 'locked': False, 'convention_independent': False}, 'raw_control_certified': False, 'cumulative_success': 0.00695871364018185}
+PASS causal-order bridge: consistent sequential co-registrations are admitted and the joint predecessor relation is acyclic :: {'s1': 'admitted', 's2': 'admitted', 'acyclic': True}
+PASS inverted registration: the locally checkable cross-order rule refuses a shared event that would precede an earlier shared event in one device (no silent cycle admission) :: {'first': 'admitted', 'attempt_after_forced_inversion': 'refused_inverted'}
+PASS adversary witness: forcing inverted identifications past the rule creates a cyclic joint relation, which the acyclicity decoder detects (undefined, never a lawful order) :: {'acyclic': False}
+RESULT 6 1 elapsed 5.07 s
+        5.41 real         5.19 user         0.20 sys
+           201490432  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               17442  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 494  involuntary context switches
+         66720753514  instructions retired
+         19473466265  cycles elapsed
+           124306032  peak memory footprint

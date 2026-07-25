@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T11:25:05.559837+00:00",
+  "audit_invocation_history": [
+    "b672fa28f44d46b0b425bcb009603226"
+  ],
+  "audit_invocation_id": "b672fa28f44d46b0b425bcb009603226",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": true,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "c098afe399eb86e748c9d8b7ca0da70a40584cc67998a1b0add21544e117ec4d",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "c098afe399eb86e748c9d8b7ca0da70a40584cc67998a1b0add21544e117ec4d",
+    "runner_path": "scripts/audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-5ba131d9",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The degree-counting proof supports the narrow nonzero wedge-square statement, but the restricted packet's load-bearing runner stdout is clipped. Under the binding packet-completeness preflight, the chain cannot be certified closed.",
   "claim_id": "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26",
-  "claim_scope": null,
+  "claim_scope": "Standalone exterior-algebra theorem that a nonzero square of a 2-form has degree 4 and is top-degree exactly when d=4, with vanishing at d<4 and non-top degree at d>4; gauge, topology, and framework dimension-selection bridges are excluded.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T11:25:05.559837+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For a 2-form \u03c9, \u03c9 \u2227 \u03c9 lies in \u039b^4, so any nonzero wedge-square is top-degree exactly when 4=d.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "75ea32bebfeb35de4e96b90cee5ed374cd8dfd078989f50ff254f159e94f30ab",
   "note_path": "docs/F_WEDGE_F_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: provide the complete SHA-bound stdout for scripts/audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26.py, or an independently complete exact certificate, and rerun the audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -90,14 +136,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 96,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 96
   },
   "runner_path": "scripts/audit_companion_f_wedge_f_top_form_forces_d_four_exact_2026_05_26.py",
   "title": "Wedge-Square of a 2-Form is a Top-Degree Form Iff `d = 4` Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the runner stdout is explicitly clipped, so the complete 96-check load-bearing transcript is absent even though the visible exact checks and runner source support the exterior-degree argument. Why this blocks: the packet-completeness preflight expressly forbids audited_clean. Repair target: supply complete SHA-bound runner stdout or an independently complete exact certificate. Claim boundary until fixed: the narrow nonzero wedge-square degree theorem remains supported, without ratifying broader integration or topological corollaries."
 }

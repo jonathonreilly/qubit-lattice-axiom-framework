@@ -1,42 +1,90 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T16:53:30.272086+00:00",
+  "audit_invocation_history": [
+    "2e4a960cbabc4382bc1f9e5a0e8f92dd"
+  ],
+  "audit_invocation_id": "2e4a960cbabc4382bc1f9e5a0e8f92dd",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 14,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "1d84a1894bd7f2647da6d001a8a7b2bec8cd156c9558ce8730ec68c3969fa62e",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "1d84a1894bd7f2647da6d001a8a7b2bec8cd156c9558ce8730ec68c3969fa62e",
+    "runner_path": "scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-0e4bc2e2",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Under the stated H1/H3/H4 premises and rho>=0, the algebraic chain closes: the non-negative Neumann expansion proves M^{-1}>=0 and hence Phi>=0. Clean ratification is nevertheless barred because the supplied current-cycle runner stdout is clipped across load-bearing checks.",
   "claim_id": "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
+  "claim_scope": "Conditional finite-graph linear-algebra theorem: for a finite simple undirected graph with mu^2>0, G>0, and the screened-Poisson equation assumed, non-negative rho implies non-negative Phi via the Stieltjes positivity of (L+mu^2 I)^{-1}.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T16:53:30.272086+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Writing M=sI-B with B entrywise non-negative and rho(B)<s gives the convergent Neumann expansion M^{-1}=(1/s) sum_{k>=0}(B/s)^k, so M^{-1} is entrywise non-negative.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "4fb4fbd532aebf04ecc133b3bbb3571c8c13dcc8dd9e365c32e53508ee093469",
   "note_path": "docs/STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: provide complete, unclipped current-cycle stdout for all 47 companion checks, especially the symbolic Stieltjes and inverse-positivity blocks.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -114,14 +162,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 47,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 47
   },
   "runner_path": "scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py",
   "title": "Staggered Fermion Card H2 \u2014 Positive Source \u21d2 Positive \u03a6 \u2014 Narrow Theorem (Stieltjes / non-singular M-matrix)",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The source gives a correct algebraic proof that L+mu^2 I is a nonsingular M-matrix and therefore maps non-negative sources to non-negative Phi under the stated bridge premise. The full runner source genuinely computes the advertised checks, but the restricted packet clips the current-cycle stdout across load-bearing evidence, so the binding preflight forbids audited_clean. The note also establishes derived negative boundaries: allowing signed rho can produce negative Phi, while mu^2=0 destroys the claimed invertibility."
 }

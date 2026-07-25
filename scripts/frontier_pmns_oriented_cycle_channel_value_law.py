@@ -174,9 +174,7 @@ def generic_test_matrices() -> tuple[np.ndarray, ...]:
 
 
 def part0_source_scope_firewall() -> None:
-    print("\n" + "=" * 88)
-    print("PART 0: SOURCE SCOPE FIREWALL")
-    print("=" * 88)
+    print("\n== PART 0: SOURCE SCOPE FIREWALL")
 
     note = NOTE_PATH.read_text(encoding="utf-8")
     source = Path(__file__).read_text(encoding="utf-8")
@@ -219,9 +217,7 @@ def part0_source_scope_firewall() -> None:
 
 
 def part1_supplied_projected_cycle_and_basis_identities() -> None:
-    print("\n" + "=" * 88)
-    print("PART 1: SUPPLIED PROJECTED-CYCLE AND BASIS IDENTITIES")
-    print("=" * 88)
+    print("\n== PART 1: SUPPLIED PROJECTED-CYCLE AND BASIS IDENTITIES")
 
     embedding = supplied_triplet_embedding()
     cycle8 = supplied_cycle_representation()
@@ -247,9 +243,7 @@ def part1_supplied_projected_cycle_and_basis_identities() -> None:
 
 
 def part2_generic_complex_matrix_coordinate_extraction() -> None:
-    print("\n" + "=" * 88)
-    print("PART 2: GENERIC COMPLEX-MATRIX COORDINATE EXTRACTION")
-    print("=" * 88)
+    print("\n== PART 2: GENERIC COMPLEX-MATRIX COORDINATE EXTRACTION")
 
     basis = oriented_cycle_basis()
     matrix_units = tuple(e(i, j) for i in range(3) for j in range(3))
@@ -290,9 +284,7 @@ def part2_generic_complex_matrix_coordinate_extraction() -> None:
 
 
 def part3_projection_identities() -> None:
-    print("\n" + "=" * 88)
-    print("PART 3: FORWARD-CYCLE PROJECTION IDENTITIES")
-    print("=" * 88)
+    print("\n== PART 3: FORWARD-CYCLE PROJECTION IDENTITIES")
 
     a, b = generic_test_matrices()[:2]
     alpha = 0.7 - 0.4j
@@ -312,9 +304,7 @@ def part3_projection_identities() -> None:
 
 
 def part4_hostile_wrong_cycle_and_wrong_basis_controls() -> None:
-    print("\n" + "=" * 88)
-    print("PART 4: HOSTILE WRONG-CYCLE AND WRONG-BASIS CONTROLS")
-    print("=" * 88)
+    print("\n== PART 4: HOSTILE WRONG-CYCLE AND WRONG-BASIS CONTROLS")
 
     matrix = generic_test_matrices()[0]
     correct_coeffs = oriented_cycle_coeffs_from_block(matrix)
@@ -350,9 +340,7 @@ def part4_hostile_wrong_cycle_and_wrong_basis_controls() -> None:
 
 
 def part5_result() -> None:
-    print("\n" + "=" * 88)
-    print("RESULT")
-    print("=" * 88)
+    print("\n== RESULT")
     print("  Bounded algebraic oriented-cycle coordinate-extraction lemma:")
     print("    - the supplied finite projection gives C and E12,E23,E31")
     print("    - diag(A C^dagger) gives the exact coordinates for any supplied")
@@ -365,10 +353,7 @@ def part5_result() -> None:
 
 
 def main() -> int:
-    print("=" * 88)
-    print("ORIENTED-CYCLE COORDINATE-EXTRACTION LEMMA")
-    print("=" * 88)
-    print()
+    print("== ORIENTED-CYCLE COORDINATE-EXTRACTION LEMMA")
     print("Scope:")
     print("  Exact finite matrix algebra for a supplied complex 3x3 block.")
 

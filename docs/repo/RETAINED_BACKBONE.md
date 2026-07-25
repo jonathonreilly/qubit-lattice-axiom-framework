@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 113 |
-| Retained bounded rows | 337 |
+| Retained bounded rows | 338 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 26 |
 
@@ -139,7 +139,7 @@ Sorted by load-bearing graph score (descending).
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 
-## Retained bounded rows (337)
+## Retained bounded rows (338)
 
 Sorted by load-bearing graph score (descending).
 
@@ -398,6 +398,7 @@ Sorted by load-bearing graph score (descending).
 - [`evolving_network_prototype_note`](../../docs/EVOLVING_NETWORK_PROTOTYPE_NOTE.md) — score 0.000; audited 2026-05-17T15:26:59.476634+00:00
 - [`fifth_family_radial_fm_transfer_note`](../../docs/FIFTH_FAMILY_RADIAL_FM_TRANSFER_NOTE.md) — score 0.000; audited 2026-06-09T12:55:27.686409+00:00
 - [`fine_h_family_universality_note`](../../docs/FINE_H_FAMILY_UNIVERSALITY_NOTE.md) — score 0.000; audited 2026-05-11T21:36:05.530096+00:00
+- [`flavor_ba_ratio_bound_hs_equipartition_note_2026-05-30`](../../docs/FLAVOR_BA_RATIO_BOUND_HS_EQUIPARTITION_NOTE_2026-05-30.md) — score 0.000; audited 2026-07-25T17:40:06.228134+00:00
 - [`flavor_center_trace_closed_capstone_note_2026-05-30`](../../docs/FLAVOR_CENTER_TRACE_CLOSED_CAPSTONE_NOTE_2026-05-30.md) — score 0.000; audited 2026-06-07T17:56:13.606390+00:00
 - [`flavor_native_beta_no_half_attractor_note_2026-05-30`](../../docs/FLAVOR_NATIVE_BETA_NO_HALF_ATTRACTOR_NOTE_2026-05-30.md) — score 0.000; audited 2026-07-25T13:09:18.040688+00:00
 - [`flavor_spin_statistics_forces_modulo_reconstruction_2026-05-31`](../../docs/FLAVOR_SPIN_STATISTICS_FORCES_MODULO_RECONSTRUCTION_2026-05-31.md) — score 0.000; audited 2026-07-12T05:33:05.271152+00:00

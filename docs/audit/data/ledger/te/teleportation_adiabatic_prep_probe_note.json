@@ -1,45 +1,110 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T13:23:29.277678+00:00",
+  "audit_invocation_history": [
+    "d4786e98aff4416c83c2606bf3925302"
+  ],
+  "audit_invocation_id": "d4786e98aff4416c83c2606bf3925302",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_teleportation_adiabatic_prep_probe.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/frontier_bell_inequality.py": "1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689",
+      "scripts/frontier_teleportation_resource_from_poisson.py": "3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_bell_inequality.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "1a290c8e305c53084825076a409452857feeb44d7414e1d69eb8648fff115689",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_teleportation_adiabatic_prep_probe.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "4bfb8c77de9afd3311fc523f85664520673722b875d0265890ef0c7875afa972",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_teleportation_resource_from_poisson.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "4bfb8c77de9afd3311fc523f85664520673722b875d0265890ef0c7875afa972",
+    "runner_path": "scripts/frontier_teleportation_adiabatic_prep_probe.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-20ca7ac2",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The code forms H(s), dH/ds, spectral gaps, eigenbasis couplings, and the norm/gap\u00b2 diagnostic consistently, but the source's exact-diagnostic maxima disagree with the included runner stdout. Because that stdout is clipped, extrema over all 41 grid points also cannot be independently closed from this packet.",
   "claim_id": "teleportation_adiabatic_prep_probe_note",
-  "claim_scope": null,
+  "claim_scope": "Finite 41-point numerical diagnostics for the four default small linear ramps from G=0 to the Poisson target, including sampled gaps, endpoint logical Bell-resource metrics, CHSH/negativity, and adiabatic diagnostics, without a finite-time preparation or physical-transport claim.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T13:23:29.277678+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_bell_inequality.py",
     "scripts/frontier_teleportation_resource_from_poisson.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The sampled Poisson paths have finite gaps and favorable endpoint Bell-resource overlaps, with the 2D 4x4 path staying below both default adiabatic-diagnostic thresholds and therefore being the cleaner bounded candidate.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "stretch_attempt_negative"
+  ],
   "note_hash": "f9fc1029799090fd4bdf85cb98ec1795a47ff76eb472215d5533af2a95f22248",
   "note_path": "docs/TELEPORTATION_ADIABATIC_PREP_PROBE_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Regenerate every displayed table from the current runner, provide complete SHA-bound stdout for all 41 points, and independently recheck the extrema and diagnostic formulas.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -90,12 +155,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 9,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/frontier_teleportation_adiabatic_prep_probe.py",
   "title": "Teleportation Adiabatic Preparation Probe",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the source's displayed exact-diagnostic values are stale against the included runner stdout\u20141D reports 155.558660 instead of 155.483868, while 2D reports 1.456812/1.413460 instead of 1.962946\u2014and the stdout is explicitly clipped. Why this blocks: the quantitative record is false as written, and the clipped 41-point surface prevents independent verification that the stated extrema are exhaustive. Repair target: regenerate all tables from the current runner, supply complete authenticated stdout, and independently recompute the extrema and formulas. Claim boundary until fixed: only independently matched finite-case quantities and the bounded G=0 null-control negative may be reported; that null result is a finite stretch-attempt negative, not a no-go or preparation theorem."
 }

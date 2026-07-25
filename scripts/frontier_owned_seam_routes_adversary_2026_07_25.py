@@ -18,6 +18,7 @@ import numpy as np
 from scipy import sparse
 
 import frontier_owned_seam_carrier_givens_refresh_2026_07_25 as direct_rom
+import frontier_two_star_fixed_register_local_executor_2026_07_25 as fixed
 import frontier_two_star_routed_transition_physical_word_2026_07_25 as routed
 
 
@@ -449,9 +450,224 @@ def sparse_route_checks() -> dict[str, object]:
     }
 
 
+def fixed_register_route_checks() -> dict[str, object]:
+    """Attack the hardened decoded-interface boundary at exact commit 928eeb641d."""
+
+    registers = fixed.register_and_constraint_certificate()
+    binding = fixed.source_identity_and_physical_binding()
+    factors = fixed.factor_inventory(True)
+    coin_unitarity = max(
+        float(np.linalg.norm(gate.matrix.conj().T @ gate.matrix - np.eye(gate.matrix.shape[0])))
+        for gate in fixed.COIN_GATES
+    )
+    check(
+        "the fixed executor genuinely acts on 72 data bits and the supplied local coin matrices",
+        registers["fixed_data_M2"] == 72
+        and len(fixed.COIN_GATES) == 11
+        and {len(gate.wires) for gate in fixed.COIN_GATES} == {1, 2}
+        and coin_unitarity < TOL
+        and factors["transition_synthesized_offline_from_target_inversion_set"],
+        {
+            "data_bits": registers["fixed_data_M2"],
+            "coin_factors_per_cell": len(fixed.COIN_GATES),
+            "maximum_coin_factor_unitarity_residual": coin_unitarity,
+            "transition_synthesized_offline_from_target_inversion_set": True,
+        },
+    )
+
+    stream = fixed.route_c.patch_stream(fixed.CELLS, fixed.EDGES)
+    identity = sparse.eye(len(fixed.FOCK_BASIS), format="csc")
+    column = next(
+        index
+        for index in range(len(fixed.FOCK_BASIS))
+        if (stream.getcol(index) - identity.getcol(index)).nnz
+    )
+    source = fixed.encoded_column(fixed.FOCK_BASIS[column], 5, 0)
+    observed, stages = fixed.execute_word(source, False)
+    contact = fixed.route_c.patch_contact(fixed.CELLS)
+    correct = fixed.encoded_logical_column(contact @ stream, column, 5, 0)
+    wrong = fixed.encoded_logical_column(contact, column, 5, 0)
+    correct_raw, correct_norm = fixed.state_difference(observed, correct)
+    wrong_raw, wrong_norm = fixed.state_difference(observed, wrong)
+    add_source = inspect.getsource(fixed.add_term)
+    check(
+        "the finite code-sector macro result is target-discriminating and collision-safe as a sparse map",
+        correct_raw < TOL
+        and correct_norm < TOL
+        and wrong_raw > 0.4
+        and wrong_norm > 1.4
+        and all(fixed.chart_xor(fixed.chart_xor(key)) == key for key in source)
+        and "output.get(key" in add_source
+        and "del output[key]" in add_source
+        and min(abs(value) for value in observed.values()) > 1e-3
+        and stages["chart_after_erase_maximum"] == 0
+        and stages["nonsentinel_role_rays_before_seams"] == 0
+        and stages["dirty_work_rays_after_seams"] == 0,
+        {
+            "probe_column": column,
+            "correct_target_residual": (correct_raw, correct_norm),
+            "wrong_target_residual": (wrong_raw, wrong_norm),
+            "minimum_observed_amplitude": min(abs(value) for value in observed.values()),
+            "dict_collisions_accumulate_before_cancellation": True,
+            "chart_XOR_is_involutive": True,
+        },
+    )
+
+    role_source = inspect.getsource(fixed.role_refresh)
+    executor_source = inspect.getsource(fixed.execute_word)
+    carrier_sector_dimension = 7 ** len(fixed.CELLS)
+    carrier_full_M2_dimension = 2 ** registers["fixed_carrier_rail_M2"]
+    check(
+        "the executed carrier/matcher word remains compressed to a host-selected one-hot macro",
+        carrier_sector_dimension < carrier_full_M2_dimension
+        and set(fixed.FixedBasis.__dataclass_fields__)
+        == {"data", "roles", "charts", "matcher_work", "edge_work", "transit"}
+        and "bypass" not in fixed.FixedBasis.__dataclass_fields__
+        and "supplied = local_data_word(key, cell)" in role_source
+        and "occupied = supplied.bit_length() - 1" in role_source
+        and "matrix = routed.ROLE_GATE_MATRICES[occupied]" in role_source
+        and "matcher_trace(" not in role_source
+        and "apply_role_factor(" not in role_source
+        and "matcher_work" not in role_source
+        and registers["fixed_matcher_work_M2"] == 96
+        and factors["fixed_schedule_macro_factors"][
+            "controlled_two_rail_role_Givens"
+        ] == 720,
+        {
+            "represented_carrier_sector_dimension": carrier_sector_dimension,
+            "declared_seven_rail_M2_dimension": carrier_full_M2_dimension,
+            "bypass_register_field_present": False,
+            "matcher_or_bypass_operands_executed_in_role_refresh": False,
+            "counted_controlled_role_factors": factors["fixed_schedule_macro_factors"][
+                "controlled_two_rail_role_Givens"
+            ],
+            "executed_role_operation": "one host-selected 7x7 block per cell/stage",
+        },
+    )
+
+    file_source = Path(fixed.__file__).read_text(encoding="utf-8")
+    contact_source = inspect.getsource(fixed.apply_contact)
+    seam_source = inspect.getsource(fixed.apply_seam)
+    check(
+        "the hardened successor accurately separates the decoded interface from its supplied physical binding",
+        binding["executed_encoding_name"] == "E_fixed_decoded"
+        and not binding["executed_encoding_equals_landed_E_refresh"]
+        and binding["decoded_interface_M2_count"] == 323
+        and binding["Cycle655_semantic_M2_per_cell"] == 61
+        and binding["Cycle655_decoder_encoder_GF2_residual"] == 0
+        and binding["bound_physical_fixture_M2_count"] == 983
+        and not binding["Cycle655_binding_executed_end_to_end_in_this_runner"]
+        and binding["physical_site_claim_requires_supplied_Cycle655_binding"]
+        and not binding["new_axiom_or_primitive_claimed"],
+        binding,
+    )
+
+    deletions = fixed.deletion_and_domain_certificate()
+    check(
+        "the successor adds active component deletion and local-domain witnesses",
+        deletions["coin_deleted_factor_witnesses"] == 11
+        and deletions["minimum_delete_coin_factor_residual"] > 0.05
+        and deletions["transition_deleted_CZ_witnesses"] == 224
+        and deletions["minimum_delete_transition_CZ_residual"] > 1.9
+        and deletions["route_delete_first_SWAP_failed_cases"] > 0
+        and deletions["route_delete_CZ_failed_cases"] > 0
+        and deletions["route_delete_last_SWAP_failed_cases"] > 0
+        and deletions["edge_role_phase_delete_witnesses"] == 11
+        and deletions["delete_endpoint_seam_update_residual"] > 1.9
+        and deletions["delete_contact_update_residual"] > 0.3
+        and deletions["delete_carrier_Givens_residual"] > 0.4
+        and deletions["delete_chart_CNOT_column_residual"] > 1.4
+        and deletions["dirty_match_false_fires"] > 0
+        and deletions["dirty_bypass_change"] > 1.4
+        and deletions["maximum_two_rail_unitarity_residual"] < TOL
+        and deletions["off_code_vacuum_change"] < TOL
+        and deletions["off_code_double_occupation_change"] < TOL
+        and not deletions["dirty_edge_or_matcher_in_declared_code"],
+        deletions,
+    )
+
+    deletion_source = inspect.getsource(fixed.deletion_and_domain_certificate)
+    check(
+        "component controls do not substitute for a literal whole-word inverse or deletion trace",
+        "np.exp(1j * route_c.c230.COUPLING * pairs)" in contact_source
+        and "for mode in intermediate" in seam_source
+        and "state = apply_contact(state)" in executor_source
+        and "minimum_delete_transition_CZ_residual\": 2.0" in deletion_source
+        and "minimum_delete_edge_role_phase_residual\": 2.0" in deletion_source
+        and "routed.routing_truth_tables()" in deletion_source
+        and "route_c.build_patch_update" in deletion_source
+        and "refresh.matcher_and_role_resources()" in deletion_source
+        and "route_c.unlawful_domain_controls()" in deletion_source
+        and "execute_word(" not in deletion_source
+        and "U_dagger_U" not in file_source
+        and "execute_inverse" not in file_source,
+        {
+            "contact_execution": "aggregate basis-phase formula",
+            "seam_execution": "aggregate parity/FSWAP macro",
+            "full_2^323_off_code_execution": False,
+            "whole_word_inverse_executed": False,
+            "component_deletion_controls_executed": True,
+            "whole_literal_word_deletions_executed": False,
+            "literal_transition_and_edge_phase_minima": True,
+            "global_n_le_2_constraint_is_local": registers[
+                "global_n_le_2_constraint_is_local"
+            ],
+        },
+    )
+
+    covariance = fixed.covariance_and_translation_certificate()
+    covariance_source = inspect.getsource(fixed.covariance_and_translation_certificate)
+    check(
+        "fixed-register covariance remains a partial coordinate census, not executed-word covariance",
+        covariance["proper_cubic_frames"] == 24
+        and covariance["ordered_frame_products"] == 576
+        and covariance["rotated_operand_locality_failures"] == 0
+        and covariance["operand_frame_composition_failures"] == 0
+        and all(row["operand_collision_failures"] == 0 for row in covariance["translation_rows"])
+        and not covariance["coin_operand_factorization_covariant_gate_by_gate"]
+        and not covariance["E_fixed_columns_transformed_and_compared"]
+        and not covariance["executed_operand_matrices_rebuilt_under_frames"]
+        and not covariance["full_fixed_register_covariance_claimed"]
+        and covariance["translation_test_level"] == "fixed operand addresses only"
+        and "execute_word" not in covariance_source
+        and "apply_contact" not in covariance_source
+        and "apply_coin" not in covariance_source
+        and "role_refresh" not in covariance_source
+        and "failures += len(translated) != len(set(translated))" in covariance_source,
+        {
+            "coordinate_operand_families": covariance["physical_operand_families"],
+            "executed_word_covariance_residual_present": False,
+            "E_fixed_columns_transformed_and_compared": False,
+            "contact_role_matcher_coin_operands_in_coordinate_family": False,
+            "translation_test": covariance["translation_test_level"],
+            "coin_gate_by_gate_covariance": covariance[
+                "coin_operand_factorization_covariant_gate_by_gate"
+            ],
+        },
+    )
+    return {
+        "exact_target_commit": "928eeb641d688a8774fbf885fc5fdd556246ca02",
+        "finite_code_sector_macro_intertwiner_positive": True,
+        "wrong_target_rejected": True,
+        "fixed_data_bits_executed": True,
+        "decoded_interface_M2_count": binding["decoded_interface_M2_count"],
+        "bound_physical_fixture_M2_count": binding["bound_physical_fixture_M2_count"],
+        "source_identity_and_physical_binding_boundary_accurate": True,
+        "Cycle655_binding_executed_end_to_end": False,
+        "literal_323_M2_tensor_product_word_executed": False,
+        "matcher_controlled_Givens_composed": False,
+        "full_off_code_unitarity_executed": False,
+        "component_deletion_and_domain_controls_executed": True,
+        "whole_literal_word_deletions_executed": False,
+        "executed_word_covariance_residual_present": False,
+        "candidate_sha256": sha256(Path(fixed.__file__).read_bytes()).hexdigest(),
+    }
+
+
 def main() -> None:
     direct = direct_route_checks()
     sparse_result = sparse_route_checks()
+    fixed_result = fixed_register_route_checks()
     missing = {
         "direct_ROM": (
             "the directly measured eleven-owner common-E product residual using the supplied "
@@ -465,6 +681,15 @@ def main() -> None:
             "same-E residual and covariance of that physical operand. Free coin and mass remain "
             "separate unless they are also included in the claimed word"
         ),
+        "fixed_register_successor": (
+            "execute the supplied Cycle655 decode/interface/encode binding end to end and the counted "
+            "matcher compute/control/uncompute and bypass registers on literal "
+            "rail M2 bitstrings, including multi-rail/off-code states; execute primitive seam/contact "
+            "factors rather than aggregate formulas, extend the component deletion controls to the "
+            "literal complete word and its inverse, and compare the "
+            "transformed complete word rather than coordinate tuples before claiming a 323-M2 "
+            "physical-site compiler"
+        ),
     }
     summary = {
         "authority": "none",
@@ -475,6 +700,7 @@ def main() -> None:
         "tests_failed": FAIL,
         "direct_ROM": direct,
         "sparse_route": sparse_result,
+        "fixed_register_successor": fixed_result,
         "missing_executed_objects": missing,
         "claim_ceiling": (
             "The direct route supplies coefficient-tagged, observation-only, bounded-diameter, "
@@ -482,7 +708,10 @@ def main() -> None:
             "all-owner composition and recurrent law remain open. The sparse route supplies an exact "
             "nearest-neighbor 224-CZ transition word and an algebraically square global-label direct-"
             "sum completion, with the transition synthesized offline from the target inversion set, "
-            "but not a local-M2 tensor-product signed-seam physical composition."
+            "but not a local-M2 tensor-product signed-seam physical composition. The fixed-register "
+            "successor accurately closes a target-discriminating 323-M2 decoded-interface macro "
+            "intertwiner and adds component deletion/domain controls, but the 983-M2 physical binding "
+            "is supplied rather than re-executed and the matcher/rail circuit remains contracted."
         ),
         "terminal": "OWNED_SEAM_TRANSITIONS_POSITIVE_FULL_PHYSICAL_COMPOSITIONS_OPEN",
     }

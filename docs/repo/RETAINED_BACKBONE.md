@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 116 |
+| Retained positive rows | 117 |
 | Retained bounded rows | 350 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
-## Retained positive rows (116)
+## Retained positive rows (117)
 
 Sorted by load-bearing graph score (descending).
 
@@ -125,6 +125,7 @@ Sorted by load-bearing graph score (descending).
 - [`acphilambda_c3_resolvent_determinant_holonomy_coupling_narrow_theorem_note_2026-07-12`](../../docs/ACPHILAMBDA_C3_RESOLVENT_DETERMINANT_HOLONOMY_COUPLING_NARROW_THEOREM_NOTE_2026-07-12.md) — score 0.000; audited 2026-07-12T19:01:41Z
 - [`alpha_s_heavy_threshold_matching_kernel_theorem_note_2026-06-18`](../../docs/ALPHA_S_HEAVY_THRESHOLD_MATCHING_KERNEL_THEOREM_NOTE_2026-06-18.md) — score 0.000; audited 2026-07-25T17:20:33.273091+00:00
 - [`bbn_eta10_to_omega_b_h2_coefficient_admission_bridge_bounded_note_2026-05-28`](../../docs/BBN_ETA10_TO_OMEGA_B_H2_COEFFICIENT_ADMISSION_BRIDGE_BOUNDED_NOTE_2026-05-28.md) — score 0.000; audited 2026-07-25T17:19:01.367351+00:00
+- [`bridge_gap_hk_cube_perron_note_2026-05-06`](../../docs/BRIDGE_GAP_HK_CUBE_PERRON_NOTE_2026-05-06.md) — score 0.000; audited 2026-07-25T23:08:41.196757+00:00
 - [`central_band_born_largen_note`](../../docs/CENTRAL_BAND_BORN_LARGEN_NOTE.md) — score 0.000; audited 2026-05-17T15:17:37.837536+00:00
 - [`dm_lepton_synthesis_note_2026-04-19`](../../docs/DM_LEPTON_SYNTHESIS_NOTE_2026-04-19.md) — score 0.000; audited 2026-04-30T19:20:01.270753+00:00
 - [`fm_transfer_note`](../../docs/FM_TRANSFER_NOTE.md) — score 0.000; audited 2026-04-27

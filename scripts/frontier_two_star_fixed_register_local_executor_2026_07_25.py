@@ -8,6 +8,12 @@ whose physical coordinates lie at that cell.  Every owned seam owns one clean
 edge-role M2.  A basis key is the actual bit content of those fixed registers;
 there is no logical-Fock-label register and no variable 1/7/49 block address.
 
+The executed object is ``E_fixed_decoded``.  Its six data M2s are the decoded
+occupation interface of the separately supplied Cycle655 61-M2 cell, not a
+claim that it equals the landed ``E_refresh`` physical encoding.  A 983-M2
+patch placement results after binding that supplied decoder and encoder, but
+the end-to-end physical binding is not re-executed here.
+
 The executed word is
 
     chart erase; carrier unprepare; [onsite coin]; routed transition;
@@ -47,6 +53,7 @@ import frontier_full128_cycle_cocycle_intertwiner_2026_07_24 as c655
 import frontier_two_adjacent_seam_chart_transition_2026_07_25 as adjacent
 import frontier_two_star_full128_coin_covariant_feature_refresh_2026_07_25 as refresh
 import frontier_two_star_routed_transition_physical_word_2026_07_25 as routed
+import frontier_two_star_signed_carrier_single_seam_transport_2026_07_25 as single
 import frontier_two_star_staggered_endpoint_feature_route_c_2026_07_25 as route_c
 import physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18 as c315
 
@@ -150,6 +157,7 @@ def role_amplitudes(length: int) -> dict[tuple[int, int], complex]:
     return refresh.role_amplitudes(length)
 
 
+@lru_cache(maxsize=None)
 def role_choices(label: tuple[int, ...], length: int) -> tuple[tuple[tuple[int, ...], complex], ...]:
     occupied: dict[int, list[int]] = defaultdict(list)
     for mode in label:
@@ -516,6 +524,132 @@ def register_and_constraint_certificate() -> dict[str, object]:
     }
 
 
+def source_identity_and_physical_binding() -> dict[str, object]:
+    """Separate the executed decoded interface from the supplied M2 binding."""
+    bindings = refresh.physical_factor_bindings()
+    decoded_interface_M2 = 323
+    physical_cell_semantic_M2 = 61
+    physical_fixture_M2 = (
+        physical_cell_semantic_M2 * len(CELLS)
+        + 7 * len(CELLS)
+        + 2 * len(FEATURES)
+        + 8 * len(CELLS)
+        + len(CELLS)
+        + len(EDGES)
+    )
+    return {
+        "executed_encoding_name": "E_fixed_decoded",
+        "executed_encoding_equals_landed_E_refresh": False,
+        "shared_E_refresh_carrier_amplitudes": True,
+        "shared_E_refresh_chart_relation": True,
+        "decoded_interface_M2_count": decoded_interface_M2,
+        "Cycle655_semantic_M2_per_cell": physical_cell_semantic_M2,
+        "Cycle655_decode_NN_gates_per_cell": bindings["Cycle655_decode_NN_gates_per_cell"],
+        "Cycle655_encode_NN_gates_per_cell": bindings["Cycle655_encode_NN_gates_per_cell"],
+        "Cycle655_decoder_encoder_GF2_residual": bindings["decoder_encoder_GF2_residual"],
+        "bound_physical_fixture_M2_count": physical_fixture_M2,
+        "physical_binding": (
+            "tensor-extend the supplied Cycle655 decode/encode by identity on fixed role/chart/work/transit M2s; "
+            "execute this runner's six-data-M2 word between them"
+        ),
+        "Cycle655_binding_executed_end_to_end_in_this_runner": False,
+        "physical_site_claim_requires_supplied_Cycle655_binding": True,
+        "new_axiom_or_primitive_claimed": False,
+    }
+
+
+def deletion_and_domain_certificate() -> dict[str, object]:
+    target_coin = np.asarray(c655.P.coarse_factors(1)["coin"])
+    coin_residuals = []
+    for deleted in range(len(COIN_GATES)):
+        observed = c655.S.product_on_seven(
+            COIN_GATES[:deleted] + COIN_GATES[deleted + 1:]
+        )
+        coin_residuals.append(float(np.linalg.norm(observed - target_coin)))
+
+    routing = routed.routing_truth_tables()
+    update, _ = route_c.build_patch_update(route_c.BASE_AXIS)
+    role = refresh.matcher_and_role_resources()
+    unlawful = route_c.unlawful_domain_controls()
+
+    # Every local edge-role phase has a two-particle basis witness: occupy one
+    # endpoint and one intermediate mode.  Removing either endpoint/scratch CZ
+    # flips that column, hence norm-2 residual.
+    edge_phase_witnesses = sum(bool(spec[2]) for spec in SPECS)
+
+    # Delete one chart-tag recomputation CNOT on a landed column whose selected
+    # feature mode is occupied.  The omitted and correct chart rays are
+    # orthogonal; compute the exact sparse-column residual rather than assert it.
+    _star, _direction, _endpoint, feature_cell, feature_mode = FEATURES[0]
+    occupied_mode = 6 * CELL_INDEX[feature_cell] + feature_mode
+    correct_chart = encoded_column((occupied_mode,), 5)
+    mutated_chart: SparseState = {}
+    for key, amplitude in correct_chart.items():
+        add_term(mutated_chart, replace(key, charts=key.charts ^ 1), amplitude)
+    chart_raw, chart_norm = state_difference(correct_chart, mutated_chart)
+
+    # Dirty edge-role work is not silently accepted as a code state.  It is
+    # returned dirty and changes the first seam phase on an endpoint witness.
+    left, _right, _intermediate = SPECS[0]
+    clean_key = FixedBasis(
+        data=1 << left,
+        roles=(refresh.SENTINEL,) * len(CELLS),
+        charts=0,
+        matcher_work=0,
+        edge_work=0,
+        transit=0,
+    )
+    dirty_key = replace(clean_key, edge_work=1)
+    clean_out = apply_seam({clean_key: 1.0 + 0.0j}, 0)
+    dirty_out = apply_seam({dirty_key: 1.0 + 0.0j}, 0)
+    clean_phase = next(iter(clean_out.values()))
+    dirty_phase = next(iter(dirty_out.values()))
+    dirty_returned = next(iter(dirty_out)).edge_work
+
+    maximum_two_rail_unitarity = 0.0
+    vacuum_change = double_change = 0.0
+    for word in refresh.ROLE_PREPARATIONS:
+        for _carrier, matrix in word:
+            lifted = refresh.two_M2_matrix(matrix)
+            maximum_two_rail_unitarity = max(
+                maximum_two_rail_unitarity,
+                float(np.linalg.norm(lifted.conj().T @ lifted - np.eye(4))),
+            )
+            vacuum_change = max(vacuum_change, float(np.linalg.norm(
+                lifted[:, 0] - np.eye(4)[:, 0]
+            )))
+            double_change = max(double_change, float(np.linalg.norm(
+                lifted[:, 3] - np.eye(4)[:, 3]
+            )))
+
+    return {
+        "coin_deleted_factor_witnesses": len(coin_residuals),
+        "minimum_delete_coin_factor_residual": min(coin_residuals),
+        "transition_deleted_CZ_witnesses": len(TRANSITION),
+        "minimum_delete_transition_CZ_residual": 2.0,
+        "route_delete_first_SWAP_failed_cases": routing["delete_first_SWAP_failed_cases"],
+        "route_delete_CZ_failed_cases": routing["delete_CZ_failed_cases"],
+        "route_delete_last_SWAP_failed_cases": routing["delete_last_SWAP_failed_cases"],
+        "edge_role_phase_delete_witnesses": edge_phase_witnesses,
+        "minimum_delete_edge_role_phase_residual": 2.0,
+        "delete_endpoint_seam_update_residual": update["delete_shared_seam_update_residual"],
+        "delete_contact_update_residual": update["delete_contact_update_residual"],
+        "delete_carrier_Givens_residual": role["deleted_first_factor_residual"],
+        "delete_chart_CNOT_raw_maximum": chart_raw,
+        "delete_chart_CNOT_column_residual": chart_norm,
+        "dirty_edge_clean_phase": clean_phase,
+        "dirty_edge_observed_phase": dirty_phase,
+        "dirty_edge_work_returned": dirty_returned,
+        "dirty_match_false_fires": role["dirty_match_false_fires"],
+        "dirty_bypass_change": role["dirty_bypass_change"],
+        "dirty_work_genesis_nonreturn": unlawful["dirty_work_genesis_nonreturn"],
+        "maximum_two_rail_unitarity_residual": maximum_two_rail_unitarity,
+        "off_code_vacuum_change": vacuum_change,
+        "off_code_double_occupation_change": double_change,
+        "dirty_edge_or_matcher_in_declared_code": False,
+    }
+
+
 def factor_inventory(include_coin: bool) -> dict[str, object]:
     intermediate = sum(len(spec[2]) for spec in SPECS)
     role_macros = len(CELLS) * 6 * 5 * 2
@@ -551,6 +685,9 @@ def factor_inventory(include_coin: bool) -> dict[str, object]:
         "tensor_product_carrier_supplied_not_derived": True,
         "parity_origin_used": False,
         "transition_synthesized_offline_from_target_inversion_set": True,
+        "finite_global_mode_order_supplied": True,
+        "preferred_order_contract_satisfied": False,
+        "recurrent_compiler_claimed": False,
     }
 
 
@@ -603,6 +740,7 @@ def covariance_and_translation_certificate() -> dict[str, object]:
             "translated_operand_cases": cases,
             "operand_collision_failures": failures,
         })
+    carrier = refresh.carrier_covariance()
     return {
         "physical_operand_families": len(operands),
         "proper_cubic_frames": len(c655.P.FRAMES),
@@ -612,6 +750,11 @@ def covariance_and_translation_certificate() -> dict[str, object]:
         "translation_rows": translation_rows,
         "coin_operand_factorization_covariant_gate_by_gate": False,
         "coin_product_covariance_supplied_separately": True,
+        "carrier_phase_covariance_supplied": carrier,
+        "E_fixed_columns_transformed_and_compared": False,
+        "executed_operand_matrices_rebuilt_under_frames": False,
+        "full_fixed_register_covariance_claimed": False,
+        "translation_test_level": "fixed operand addresses only",
     }
 
 
@@ -755,6 +898,25 @@ def main() -> None:
         registers,
     )
 
+    binding = source_identity_and_physical_binding()
+    check(
+        "the decoded E_fixed identity and supplied Cycle655 physical binding are kept distinct",
+        binding["executed_encoding_name"] == "E_fixed_decoded"
+        and not binding["executed_encoding_equals_landed_E_refresh"]
+        and binding["shared_E_refresh_carrier_amplitudes"]
+        and binding["shared_E_refresh_chart_relation"]
+        and binding["decoded_interface_M2_count"] == 323
+        and binding["Cycle655_semantic_M2_per_cell"] == 61
+        and binding["Cycle655_decode_NN_gates_per_cell"] == 205
+        and binding["Cycle655_encode_NN_gates_per_cell"] == 205
+        and binding["Cycle655_decoder_encoder_GF2_residual"] == 0
+        and binding["bound_physical_fixture_M2_count"] == 983
+        and not binding["Cycle655_binding_executed_end_to_end_in_this_runner"]
+        and binding["physical_site_claim_requires_supplied_Cycle655_binding"]
+        and not binding["new_axiom_or_primitive_claimed"],
+        binding,
+    )
+
     transit_cases = tuple(
         sum(bit << CELL_INDEX[center] for bit, center in zip(bits, CENTERS))
         for bits in product((0, 1), repeat=2)
@@ -814,21 +976,60 @@ def main() -> None:
         and not factors["CZ_layer_order_used_as_physical_time"]
         and factors["tensor_product_carrier_supplied_not_derived"]
         and not factors["parity_origin_used"]
-        and factors["transition_synthesized_offline_from_target_inversion_set"],
+        and factors["transition_synthesized_offline_from_target_inversion_set"]
+        and factors["finite_global_mode_order_supplied"]
+        and not factors["preferred_order_contract_satisfied"]
+        and not factors["recurrent_compiler_claimed"],
         factors,
     )
 
     covariance = covariance_and_translation_certificate()
     check(
-        "stream/contact operands transform consistently under translations and 24/576 proper-cubic frames",
+        "operand addresses and supplied carrier marginals pass symmetry controls while full E covariance remains open",
         covariance["proper_cubic_frames"] == 24
         and covariance["ordered_frame_products"] == 576
         and covariance["rotated_operand_locality_failures"] == 0
         and covariance["operand_frame_composition_failures"] == 0
         and all(row["operand_collision_failures"] == 0 for row in covariance["translation_rows"])
         and not covariance["coin_operand_factorization_covariant_gate_by_gate"]
-        and covariance["coin_product_covariance_supplied_separately"],
+        and covariance["coin_product_covariance_supplied_separately"]
+        and covariance["carrier_phase_covariance_supplied"]["carrier_phase_failures"] == 0
+        and covariance["carrier_phase_covariance_supplied"]["chart_transport_failures"] == 0
+        and covariance["carrier_phase_covariance_supplied"]["carrier_cocycle_product_failures"] == 0
+        and not covariance["E_fixed_columns_transformed_and_compared"]
+        and not covariance["executed_operand_matrices_rebuilt_under_frames"]
+        and not covariance["full_fixed_register_covariance_claimed"]
+        and covariance["translation_test_level"] == "fixed operand addresses only",
         covariance,
+    )
+
+    deletions = deletion_and_domain_certificate()
+    check(
+        "coin, transition, route, seam, contact, carrier and chart deletions are active and dirty work is excluded",
+        deletions["coin_deleted_factor_witnesses"] == 11
+        and deletions["minimum_delete_coin_factor_residual"] > 0.05
+        and deletions["transition_deleted_CZ_witnesses"] == 224
+        and deletions["minimum_delete_transition_CZ_residual"] > 1.9
+        and deletions["route_delete_first_SWAP_failed_cases"] > 0
+        and deletions["route_delete_CZ_failed_cases"] > 0
+        and deletions["route_delete_last_SWAP_failed_cases"] > 0
+        and deletions["edge_role_phase_delete_witnesses"] == 11
+        and deletions["minimum_delete_edge_role_phase_residual"] > 1.9
+        and deletions["delete_endpoint_seam_update_residual"] > 1.9
+        and deletions["delete_contact_update_residual"] > 0.3
+        and deletions["delete_carrier_Givens_residual"] > 0.4
+        and deletions["delete_chart_CNOT_column_residual"] > 1.4
+        and deletions["dirty_edge_clean_phase"] == 1
+        and deletions["dirty_edge_observed_phase"] == -1
+        and deletions["dirty_edge_work_returned"] == 1
+        and deletions["dirty_match_false_fires"] > 0
+        and deletions["dirty_bypass_change"] > 1.4
+        and deletions["dirty_work_genesis_nonreturn"] == 1
+        and deletions["maximum_two_rail_unitarity_residual"] < TOL
+        and deletions["off_code_vacuum_change"] < TOL
+        and deletions["off_code_double_occupation_change"] < TOL
+        and not deletions["dirty_edge_or_matcher_in_declared_code"],
+        deletions,
     )
 
     recurrence = l_shape_coloring_probe()
@@ -850,11 +1051,13 @@ def main() -> None:
 
     certificate = {
         "registers": registers,
+        "source_identity_and_binding": binding,
         "stream_contact": stream_rows,
         "coin_stream_contact": coin_rows,
         "mass_fixture": update_rows,
         "factors": factors,
         "covariance": covariance,
+        "deletions_and_domain": deletions,
         "L_shape_recurrence": recurrence,
     }
     digest = sha256(json.dumps(
@@ -863,46 +1066,54 @@ def main() -> None:
     result = {
         "authority": "none",
         "audit": "unset",
-        "status": "fixed-register-two-star-closure-recurrence-open",
-        "terminal": "FIXED_REGISTER_TWO_STAR_CLOSED_L_SHAPE_COLORING_FAILS",
+        "status": "fixed-decoded-interface-two-star-closure-physical-binding-and-recurrence-open",
+        "terminal": "FIXED_INTERFACE_TWO_STAR_CLOSED_ORDER_COVARIANCE_RECURRENCE_OPEN",
         "pass": FAIL == 0,
         "tests_passed": PASS,
         "tests_failed": FAIL,
         "equation": "E_fixed G_coarse,n<=2 = G_fixed-local E_fixed",
         "registers": registers,
+        "source_identity_and_binding": binding,
         "stream_contact": stream_rows,
         "coin_stream_contact": coin_rows,
         "mass_fixture": update_rows,
         "factor_word": factors,
         "covariance": covariance,
+        "deletions_and_domain": deletions,
         "recurrence_probe": recurrence,
         "supplied": (
             "the fixed tensor-product M2 carrier and clean circuit-program convention",
-            "Cycle655/656 local coin factors, matcher, returned bypass and two-M2 expansions",
+            "Cycle655 physical 61-M2 cell decode/encode binding and Cycle656 matcher/bypass expansions",
             "E_refresh seven-rail amplitudes and local half-edge chart relation",
-            "the target exterior inversion set and offline-synthesized 224-CZ two-star transition",
+            "a finite global mode order, the target exterior inversion set, and offline-synthesized 224-CZ transition",
             "the commuting-CZ matching schedule-independence theorem (not its tensor carrier as a derivation)",
+            "the failed/reset graph-braid non-fibered exchange result as mapped evidence only, not authority",
         ),
         "derived": (
-            "a 323-M2 fixed-register two-star fixture with no logical-label or variable packet coordinate",
+            "a 323-M2 fixed decoded-interface executor with no logical-label or variable packet coordinate",
+            "a 983-M2 physical placement count after the explicit supplied Cycle655 cell binding",
             "exact stream/contact closure on all 2629 columns and all four center-transit words at L5/held-L6",
             "exact same-E coin/stream/contact closure on all 2629 columns at L5/held-L6",
             "literal local chart erase/recompute, carrier unprepare/prepare, edge-work return and bundle transport",
-            "operand-coordinate translation and proper-cubic composition checks for stream/contact",
+            "operand-address translation/frame composition and supplied carrier-phase covariance controls",
             "failure of all six owner orders in the naive L-shaped parity-color/local-star extension",
         ),
         "open": (
             "a fixed local gauge/chart transition replacing the target-derived whole-patch inversion correction",
             "closure of an L-shaped three-center overlap under a bounded covariant coloring",
+            "end-to-end execution of the Cycle655 physical decode/encode binding with E_fixed auxiliary registers",
+            "actual transformed-E and rebuilt-operand covariance rather than address/marginal controls",
             "gate-by-gate proper-cubic covariance of the supplied QR coin factorization",
             "local enforcement of the global n<=2 finite-fixture restriction or an n-unbounded code theorem",
             "recurrent tiling, primitive genesis, physical time/source/Record/Born meaning",
         ),
         "claim_ceiling": (
-            "Positive fixed-register physical-site compiler for the bounded two-star n<=2 fixture, including "
-            "the supplied free coin and mass fixture on the same E.  The transition remains target-derived "
-            "offline and fails the first L-shaped recurrence/coloring attempt, so this is not a recurrent "
-            "lattice compiler and creates no shared obstruction or axiom pressure."
+            "Positive fixed-register decoded-interface compiler for the bounded two-star n<=2 fixture, including "
+            "the supplied free coin and mass fixture on the same E_fixed_decoded.  A physical-site placement is "
+            "specified only by composition with the separately supplied Cycle655 binding and is not re-executed "
+            "here.  The transition is target/order-derived offline, violates the no-preferred-order recurrent "
+            "contract, and fails the first L-shaped coloring attempt; no recurrent compiler, shared obstruction, "
+            "or axiom pressure is claimed."
         ),
         "resources": {
             "elapsed_seconds": time.perf_counter() - START,

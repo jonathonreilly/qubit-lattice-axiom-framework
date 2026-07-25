@@ -81,8 +81,8 @@
   "cycles_detected": 58,
   "effective_status_counts": {
     "audit_in_progress": 2,
-    "audited_conditional": 78,
-    "audited_failed": 12,
+    "audited_conditional": 79,
+    "audited_failed": 11,
     "audited_numerical_match": 6,
     "audited_renaming": 20,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,

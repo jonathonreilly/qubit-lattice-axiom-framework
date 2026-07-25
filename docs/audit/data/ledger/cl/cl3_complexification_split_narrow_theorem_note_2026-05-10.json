@@ -1,102 +1,44 @@
 {
-  "audit_date": "2026-07-21T15:56:39.740035+00:00",
-  "audit_invocation_history": [
-    "db3144bc33634f51bc71ce74f69e1d5d"
-  ],
-  "audit_invocation_id": "db3144bc33634f51bc71ce74f69e1d5d",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 6,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f"
-    },
-    "load_bearing_score": 25.286,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/cl3_complexification_exclusion_stress_2026_07_13.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "2c480ed92e1dd9dcd929cf0650143a6e527160c946b2148e2a9627522ec39221",
-        "cache_status": "ok"
-      },
-      "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "2c480ed92e1dd9dcd929cf0650143a6e527160c946b2148e2a9627522ec39221",
-    "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 1765
-  },
-  "audit_status": "audited_failed",
-  "auditor": "codex-audit-batch-B-20260721-5f30bd34",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The intended theorem is independently supported, but the displayed K3 computation of e_+\u00b2 contains the undefined denominator `(2\u00b2 \u00b7 )`. Consequently, not every quantitative identity in the source closes as written.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-  "claim_scope": "Pure abstract-algebra audit of (K1)-(K4).",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-21T15:56:39.740035+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 29,
-  "effective_status": "audited_failed",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
   ],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_failed",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 25.291,
-  "load_bearing_step": "The central idempotents split the complexification into two simple summands M_2(C), whose unique irreducible modules have complex dimension 2.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
-  "no_go_discipline": null,
-  "note_hash": "0853bab805b1e879d90c170e7ce51722950df42c18cdc8903af1a07e09868e1e",
+  "note_hash": "a1dbc3f515f982cc72a369c46457e5c0a0f5ad812a0a4718c216da92ac9addaa",
   "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "Correct the displayed K3 e_+\u00b2 denominator to 4, then re-audit the refreshed source and independently recheck the faithful-real/nonfaithful-complex representation boundary.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -4624,6 +4566,100 @@
         "total_pass": 62
       },
       "verdict_rationale": "Issue: the K3 idempotence display contains the malformed expression `(1 - 2 i \u03c9 + 1)/(2\u00b2 \u00b7 )`, although the following equality and runner use the correct denominator 4. Why this blocks: a clean math audit must certify every displayed formula; the negative-assertion judgment otherwise passes N1-N8, with five distinct live routes closing the single faithfulness boundary, no hidden import or prior-witness mismatch, all five resolution classes executed, the faithful-direct-sum steelman resolved by reducibility, and no applicable supplied partial-closure or cross-cycle candidate. Repair target: replace the malformed denominator with `4` and independently rerun the K1-K4 formula audit and 62 exact assertions. Claim boundary until fixed: the abstract split and dimension conclusions remain runner-supported, but the source note is not clean as written."
+    },
+    {
+      "archived_at": "2026-07-25T02:16:29.116204+00:00",
+      "archived_for_note_hash": "0853bab805b1e879d90c170e7ce51722950df42c18cdc8903af1a07e09868e1e",
+      "audit_date": "2026-07-21T15:56:39.740035+00:00",
+      "audit_invocation_history": [
+        "db3144bc33634f51bc71ce74f69e1d5d"
+      ],
+      "audit_invocation_id": "db3144bc33634f51bc71ce74f69e1d5d",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 6,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f"
+        },
+        "load_bearing_score": 25.286,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/cl3_complexification_exclusion_stress_2026_07_13.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "2c480ed92e1dd9dcd929cf0650143a6e527160c946b2148e2a9627522ec39221",
+            "cache_status": "ok"
+          },
+          "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          }
+        },
+        "runner_hash": "2c480ed92e1dd9dcd929cf0650143a6e527160c946b2148e2a9627522ec39221",
+        "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 1765
+      },
+      "audit_status": "audited_failed",
+      "auditor": "codex-audit-batch-B-20260721-5f30bd34",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The intended theorem is independently supported, but the displayed K3 computation of e_+\u00b2 contains the undefined denominator `(2\u00b2 \u00b7 )`. Consequently, not every quantitative identity in the source closes as written.",
+      "claim_scope": "Pure abstract-algebra audit of (K1)-(K4).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-21T15:56:39.740035+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The central idempotents split the complexification into two simple summands M_2(C), whose unique irreducible modules have complex dimension 2.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "Correct the displayed K3 e_+\u00b2 denominator to 4, then re-audit the refreshed source and independently recheck the faithful-real/nonfaithful-complex representation boundary.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 62,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 62
+      },
+      "verdict_rationale": "Issue: the K3 idempotence display contains the malformed expression `(1 - 2 i \u03c9 + 1)/(2\u00b2 \u00b7 )`, although the following equality and runner use the correct denominator 4. Why this blocks: a clean math audit must certify every displayed formula; the negative-assertion judgment otherwise passes N1-N8, with five distinct live routes closing the single faithfulness boundary, no hidden import or prior-witness mismatch, all five resolution classes executed, the faithful-direct-sum steelman resolved by reducibility, and no applicable supplied partial-closure or cross-cycle candidate. Repair target: replace the malformed denominator with `4` and independently rerun the K1-K4 formula audit and 62 exact assertions. Claim boundary until fixed: the abstract split and dimension conclusions remain runner-supported, but the source note is not clean as written."
     }
   ],
   "prose_corrections": [],
@@ -4638,14 +4674,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 62,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 62
+    "total_pass": 0
   },
   "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py",
   "title": "Cl(3) Complexification Split Narrow Theorem",
   "transitive_descendants": 1771,
-  "verdict_rationale": "Issue: the K3 idempotence display contains the malformed expression `(1 - 2 i \u03c9 + 1)/(2\u00b2 \u00b7 )`, although the following equality and runner use the correct denominator 4. Why this blocks: a clean math audit must certify every displayed formula; the negative-assertion judgment otherwise passes N1-N8, with five distinct live routes closing the single faithfulness boundary, no hidden import or prior-witness mismatch, all five resolution classes executed, the faithful-direct-sum steelman resolved by reducibility, and no applicable supplied partial-closure or cross-cycle candidate. Repair target: replace the malformed denominator with `4` and independently rerun the K1-K4 formula audit and 62 exact assertions. Claim boundary until fixed: the abstract split and dimension conclusions remain runner-supported, but the source note is not clean as written."
+  "verdict_rationale": null
 }

@@ -1,0 +1,25 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "conclusion": "Using only the approved scale-reference primitive and the coherence of the axiom text, and adopting no counting convention: the nearest-neighbour covariant additive law has exactly one member that needs no supplied dimensionless number, namely the Laplacian ray A=0; and no genuinely varying admissibility rule makes the unrestricted additivity clause well posed, so how that clause is restricted is itself law content.",
+ "cycle": 702,
+ "cycle_claim": null,
+ "fail_count": 0,
+ "firewalls": {
+  "axiom_reading_ratified": false,
+  "counting_convention_adopted": false,
+  "dimensionless_value_supplied": false,
+  "empirical_or_observed_input_used": false,
+  "exhibited_rule_claimed_to_be_the_framework_rule": false,
+  "lane_status_changed": false,
+  "new_axiom_or_primitive_proposed": false
+ },
+ "part_one": "at nearest-neighbor range the covariant additive family is A*I + B*Delta; B is absorbed by source normalization; the sole dimensionless input is A/B; the response is long-ranged exactly at A=0, which is fixed by a structural condition and needs no supplied number, while every other member needs a dimensionless quantity the current surface does not supply",
+ "part_two": "no genuinely varying nearest-neighbour availability rule yields an admissible-configuration set closed under both sub-collection and disjoint union; the unrestricted reading of the Record additivity clause is therefore incompatible with the Admissibility 'vary with' clause, and the resolutions are law content",
+ "pass": true,
+ "pass_count": 8,
+ "resources": {
+  "elapsed_seconds": 0.11644291691482067
+ },
+ "runner_sha256": "af8b60645a92104738d16ab2e284aec88ed1548adcc88d1b3c9120f65bef6cc3"
+}

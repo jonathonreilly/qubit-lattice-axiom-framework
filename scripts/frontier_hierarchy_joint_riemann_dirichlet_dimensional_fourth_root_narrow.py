@@ -68,8 +68,16 @@ def check(
     condition: object,
     detail: str = "",
     klass: str = "A",
+    fail_detail: str = "",
 ) -> bool:
-    """Record one computed check without relying on Python assert."""
+    """Record one computed check without relying on Python assert.
+
+    ``detail`` always prints. ``fail_detail`` carries the diagnostics that only
+    restate a value already asserted in this check's own label, so they print
+    on FAIL and are suppressed on PASS; the cached stdout of this runner has to
+    fit inside the audit packet's 6000-character budget, and no check line, no
+    class tag, and no failure diagnostic is dropped by that suppression.
+    """
 
     global PASS_COUNT, FAIL_COUNT
     ok = bool(condition)
@@ -81,13 +89,14 @@ def check(
         MODE_COUNTS[mode] += 1
     else:
         FAIL_COUNT += 1
-    suffix = f"  ({detail})" if detail else ""
+    parts = [part for part in (detail, "" if ok else fail_detail) if part]
+    suffix = f"  ({'; '.join(parts)})" if parts else ""
     print(f"  [{tag}][{klass}][{evidence}] {label}{suffix}")
     return ok
 
 
 def section(title: str) -> None:
-    print(f"\n{'-' * 88}\n{title}\n{'-' * 88}")
+    print(f"\n-- {title}")
 
 
 def closed_ratio(s: int) -> Fraction:
@@ -223,7 +232,7 @@ def normal_mode() -> None:
         "theorem",
         "odd/even series split has zero eta/zeta closed-form residual",
         split_residual == 0,
-        detail=f"residual = {split_residual}",
+        fail_detail=f"residual = {split_residual}",
     )
 
     s_i, k_i = sp.symbols("s_i k_i", positive=True, integer=True)
@@ -256,7 +265,7 @@ def normal_mode() -> None:
         "theorem",
         "log g(s) tends to zero, so g(s) tends to one",
         log_limit == 0,
-        detail=f"lim log(g) = {log_limit}",
+        fail_detail=f"lim log(g) = {log_limit}",
     )
 
     value_at_four = closed_ratio(4)
@@ -265,7 +274,7 @@ def normal_mode() -> None:
         "theorem",
         "the exact target base at s=4 is 7/8",
         value_at_four == Fraction(7, 8),
-        detail=f"1 - 2^(-3) = {value_at_four}",
+        fail_detail=f"1 - 2^(-3) = {value_at_four}",
     )
 
     d, p = sp.symbols("d p", positive=True)
@@ -275,7 +284,7 @@ def normal_mode() -> None:
         "conditional",
         "mass-dimension equation d*p=1 has exponent p=1/d",
         exponent_solutions == [1 / d],
-        detail=f"solutions = {exponent_solutions}",
+        fail_detail=f"solutions = {exponent_solutions}",
     )
 
     valid_cases = [
@@ -499,7 +508,7 @@ def hostile_mode() -> None:
         "boundary",
         "d <= 0 is rejected by the positive mass-dimension theorem domain",
         all(case.issues() == {"invalid_dimension"} for case in invalid_dimensions),
-        detail=f"issues={[sorted(case.issues()) for case in invalid_dimensions]}",
+        fail_detail=f"issues={[sorted(case.issues()) for case in invalid_dimensions]}",
     )
 
     wrong_exponent = ScaleMapCase(d=4, p=Fraction(1, 3))
@@ -545,7 +554,7 @@ def hostile_mode() -> None:
         "boundary",
         "negative f with even d rejects the naive real-positive root",
         "nonreal_even_root" in negative_even.issues(),
-        detail=f"issues={sorted(negative_even.issues())}",
+        fail_detail=f"issues={sorted(negative_even.issues())}",
     )
 
     negative_odd = ScaleMapCase(
@@ -560,7 +569,7 @@ def hostile_mode() -> None:
         "negative f with odd d has a signed root, not a nonnegative magnitude",
         "signed_not_magnitude" in negative_odd.issues()
         and sp.real_root(-8, 3) < 0,
-        detail=f"issues={sorted(negative_odd.issues())}, root={sp.real_root(-8, 3)}",
+        fail_detail=f"issues={sorted(negative_odd.issues())}, root={sp.real_root(-8, 3)}",
     )
 
     unit_coefficient = ScaleMapCase(
@@ -574,7 +583,7 @@ def hostile_mode() -> None:
         "boundary",
         "unit coefficient is rejected when kappa=1 was not supplied",
         "unsupplied_coefficient" in unit_coefficient.issues(),
-        detail=f"issues={sorted(unit_coefficient.issues())}",
+        fail_detail=f"issues={sorted(unit_coefficient.issues())}",
     )
 
     alternate_unsupplied = ScaleMapCase(
@@ -588,7 +597,7 @@ def hostile_mode() -> None:
         "boundary",
         "an alternate coefficient is also rejected when it was not supplied",
         "unsupplied_coefficient" in alternate_unsupplied.issues(),
-        detail=f"issues={sorted(alternate_unsupplied.issues())}",
+        fail_detail=f"issues={sorted(alternate_unsupplied.issues())}",
     )
 
     negative_coefficient = ScaleMapCase(
@@ -602,7 +611,7 @@ def hostile_mode() -> None:
         "a negative coefficient is rejected for a nonnegative magnitude map",
         "negative_magnitude_coefficient" in negative_coefficient.issues()
         and negative_coefficient.magnitude_value() < 0,
-        detail=f"issues={sorted(negative_coefficient.issues())}",
+        fail_detail=f"issues={sorted(negative_coefficient.issues())}",
     )
 
     challenged_power = ScaleMapCase(
@@ -662,7 +671,7 @@ def hostile_mode() -> None:
             case.supplied_conditions() == {name}
             for name, case in condition_witnesses.items()
         ),
-        detail=(
+        fail_detail=(
             "witnesses="
             + str(
                 {
@@ -685,7 +694,7 @@ def hostile_mode() -> None:
         "boundary",
         "physical-value inference is rejected without a carrier and value for f",
         "unsupported_physical_inference" in physical_inference.issues(),
-        detail=f"issues={sorted(physical_inference.issues())}",
+        fail_detail=f"issues={sorted(physical_inference.issues())}",
     )
 
     zero_map_covariance = []
@@ -718,7 +727,7 @@ def hygiene_mode() -> None:
         "hygiene",
         "source note has one explicit positive_theorem author hint",
         claim_types == ["positive_theorem"],
-        detail=f"parsed claim types={claim_types}",
+        fail_detail=f"parsed claim types={claim_types}",
         klass="B",
     )
 
@@ -744,7 +753,7 @@ def hygiene_mode() -> None:
         and "vacuous rescaling convention"
         in conventions.get("g_bare_rigidity_theorem_note", {}).get("class", "")
         and re.search(r"zero\s+dimensionless\s+content", scale_text) is not None,
-        detail="Y0/g0 are provenance-only; scale reference is units-only",
+        fail_detail="Y0/g0 are provenance-only; scale reference is units-only",
         klass="B",
     )
 
@@ -810,7 +819,7 @@ def hygiene_mode() -> None:
         "hygiene",
         "source note contains no bare M=f^(1/d) or unique-map normalization overread",
         not bare_map_hits and not unique_map_hits,
-        detail=f"bare-map hits={len(bare_map_hits)}, unique-map hits={len(unique_map_hits)}",
+        fail_detail=f"bare-map hits={len(bare_map_hits)}, unique-map hits={len(unique_map_hits)}",
         klass="B",
     )
 
@@ -827,7 +836,7 @@ def hygiene_mode() -> None:
         "hygiene",
         "source rhetoric does not promote coefficient, physical-value, or empirical authority",
         all(not hits for hits in forbidden_inferences.values()),
-        detail=f"hits={inference_hit_counts}",
+        fail_detail=f"hits={inference_hit_counts}",
         klass="B",
     )
 
@@ -844,11 +853,9 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    print("=" * 88)
     print("frontier_hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow.py")
     print(f"mode={args.mode}")
     print("exact A-C theorem; exponent-only D with supplied kappa/sign boundary")
-    print("=" * 88)
 
     if args.mode in ("normal", "all"):
         normal_mode()
@@ -858,7 +865,7 @@ def main() -> int:
         hostile_mode()
     hygiene_mode()
 
-    print(f"\n{'=' * 88}")
+    print()
     print(
         "EVIDENCE: "
         + " ".join(
@@ -872,7 +879,6 @@ def main() -> int:
     )
     print("MODES: " + " ".join(f"{name}={count}" for name, count in sorted(MODE_COUNTS.items())))
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
-    print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1
 
 

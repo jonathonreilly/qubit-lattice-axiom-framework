@@ -1,44 +1,101 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T12:55:48.268457+00:00",
+  "audit_invocation_history": [
+    "068ab781839445d38fd010e1924a38a1"
+  ],
+  "audit_invocation_id": "068ab781839445d38fd010e1924a38a1",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/persistent_inertial_object_probe.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/two_body_momentum_harness.py": "7cd4c698f5873b49f9a16183e78d57a0e63f83f90fa8a3fd537d4bc9ef486c24"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/persistent_inertial_object_probe.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "0e5a9780f6bb4153cb30067a1883981ce14f7780027b1e933bc67668d0586480",
+        "cache_status": "ok"
+      },
+      "scripts/two_body_momentum_harness.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      }
+    },
+    "runner_hash": "0e5a9780f6bb4153cb30067a1883981ce14f7780027b1e933bc67668d0586480",
+    "runner_path": "scripts/persistent_inertial_object_probe.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-d41750f7",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The pass predicate is correctly implemented and matches the printed table for the sixteen enumerated classes. The physical chain does not close because the valley-linear dynamics and persistence criteria are not derived from the supplied axioms or any cited authority.",
   "claim_id": "newton_persistent_pattern_control_note_2026-04-11",
-  "claim_scope": null,
+  "claim_scope": "Whether the supplied valley-linear h=0.5, W=8, L=12, z_mass=5.0, strength=5e-5 sweep over the enumerated top-N relaunch classes establishes a bounded persistent-inertial-object negative under the stated capture, carry, and relative-shift criteria.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T12:55:48.268457+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/two_body_momentum_harness.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The stricter persistent inertial-object probe finds no admissible class that meets the capture / carry / shift thresholds.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls"
+  ],
   "note_hash": "b903af91f033b62222974015471c8ece213c570ac07b293514728a68ec9a4c4e",
   "note_path": "docs/NEWTON_PERSISTENT_PATTERN_CONTROL_NOTE_2026-04-11.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive and cite a retained bridge from the supplied axioms to the valley-linear propagator, relaunch-class carrier, boundary/initial data, and capture/carry/rel_shift_err persistence criteria, then independently check the sweep.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -130,12 +187,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 1,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 1
   },
   "runner_path": "scripts/persistent_inertial_object_probe.py",
   "title": "Newton Persistent-Pattern Control Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the runner verifies that none of sixteen hard-coded top-N classes passes the three hard-coded cutoffs, but neither the valley-linear propagator and its K/BETA/field/boundary choices nor capture/carry/rel_shift_err as the physical persistence observable is derived from a cited authority or the supplied axioms. Why this blocks: the table arithmetic closes for this finite configuration\u2014topN=361 is the only row with capture>=0.80, yet rel_shift_err=0.271>0.05\u2014but it cannot support the physical statement about admissible persistent inertial objects or the Newton mass gap. No-go-discipline judgment: N1/N7 remain open because only one finite top-N numerical route is tested; the three criteria are independently imposed but physically unsupported, the dynamics and initial/boundary choices are hidden premises, no prior residual or five-resolution rhetoric test is supplied, approved primitives do not close these ingredients, and no cross-cycle retirement evidence is present. Repair target: supply the missing retained bridge and independent route checks; claim boundary until fixed is the reported finite-scan negative for the enumerated top-N rows only, with no global no-go or persistent-mass conclusion."
 }

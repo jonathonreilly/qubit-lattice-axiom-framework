@@ -637,7 +637,7 @@ def main() -> None:
     inventory = common_encoder_inventory()
     disposition = two_star_word_disposition()
 
-    print("CYCLE659_QUTRIT_COMPUTE_UNCOMPUTE_FIRST_COIN")
+    print("CYCLE700_QUTRIT_COMPUTE_UNCOMPUTE_FIRST_COIN")
     print("inventory", inventory)
     for result in results:
         print("local", result)

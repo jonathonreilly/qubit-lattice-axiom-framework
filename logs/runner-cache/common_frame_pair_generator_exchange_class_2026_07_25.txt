@@ -1,0 +1,92 @@
+===== runner cache v1 =====
+runner: scripts/common_frame_pair_generator_exchange_class_2026_07_25.py
+runner_sha256: c6d9a1da9a6be01d599963c2fb513167ce1b3c12bf4f991dd5db4745ff2c3de8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+
+==============================================================================
+G1  common-frame commutant = span{I, SWAP}
+==============================================================================
+PASS G1a common-frame (diagonal SU(2)) commutant has complex dimension 2 :: dim=2
+PASS G1b identity lies in the computed commutant :: rank=2
+PASS G1c SWAP lies in the computed commutant :: rank=2
+PASS G1d span{I, SWAP} EQUALS the computed commutant (both containments)
+PASS G1e MUTATION non-invariant candidate X(x)I is NOT in the commutant (so G1d is not a tautology) :: rank=3
+PASS G1f exchange identity SWAP = (I + XX + YY + ZZ)/2 is exact
+PASS G1g finite frame check: (U(x)U) SWAP (U(x)U)^dag = SWAP for exact SU(2) samples, while X(x)I is moved by the same conjugation
+
+==============================================================================
+G2  MUTATION of the covariance construction: independent onsite
+==============================================================================
+PASS G2a MUTATION independent-onsite covariance collapses the commutant to complex dimension 1 :: dim=1
+PASS G2b the single surviving direction is the scalars span{I}
+PASS G2c SWAP is NOT in the independent-onsite commutant (explicit noncommutation with X(x)I)
+PASS G2d hence NO nontrivial pair term survives independent-onsite covariance: a*I + b*SWAP is invariant only for b = 0 :: solutions=[{b: 0}]
+
+==============================================================================
+G3  both sign candidates are Hermitian; the licensed quotient
+==============================================================================
+PASS G3a h = a*I + b*SWAP is Hermitian for symbolic real a, b
+PASS G3b both candidates are Hermitian at exact rational (a, b) and are genuinely different operators
+PASS G3c positive clock rescaling + energy shift leaves the generated channel unchanged up to a global phase (matrix exponentials)
+PASS G3d alpha = 1/|b| > 0 with beta = -alpha*a carries h to sign(b)*SWAP exactly, for BOTH signs -- a and |b| are removed
+PASS G3e NO positive rescaling plus energy shift maps +SWAP to -SWAP: the only solution has alpha = -1 :: solutions=[{alpha: -1, beta: 0}] positive=[]
+PASS G3f MUTATION dropping the positivity constraint on the rescaling IDENTIFIES the two signs (gamma = -1 solves it), so alpha > 0 is exactly what makes the sign physical :: solutions=[{beta: 0, gamma: -1}]
+
+==============================================================================
+G4  ground-sector degeneracy separates the two signs: 1 vs 3
+==============================================================================
+PASS G4a SWAP is the transposition (it exchanges |01> and |10>) and its spectrum is {+1 (x3), -1 (x1)}: the multiplicity split the invariant reads, on the operator G1 pinned :: spectrum={1: 3, -1: 1}
+PASS G4b b > 0: ground sector of a*I + b*SWAP is 1-dimensional (the singlet) :: deg=1
+PASS G4c MUTATION flip the sign IN THE CONSTRUCTION: the ground sector becomes 3-dimensional (the triplet) :: deg=3
+PASS G4d the degeneracies 1 and 3 are invariant across a 3x3 grid of exact (alpha > 0, beta) -- they survive the whole licensed quotient
+PASS G4e the degeneracy is invariant under a common frame change (U(x)U) h (U(x)U)^dag for exact SU(2) samples
+PASS G4f +SWAP and -SWAP have the SAME eigenvalue SET {+1, -1}: only the multiplicities differ, so a set-valued spectral invariant cannot separate the signs and the DEGENERACY is what does :: set={1, -1}
+
+==============================================================================
+G5  the one-excitation band minimum is NOT a sign separator
+==============================================================================
+PASS G5a the one-excitation block ASSEMBLED from the edge permutations equals A + (|E| - deg)*I on every regular instance :: C4: |E|-deg=2; Q3: |E|-deg=9; K3,3: |E|-deg=6; Z^3 torus L=4: |E|-deg=186
+PASS G5b the exchange sum preserves excitation number on the FULL 2^n space (C4 and Q3), so the block is an invariant restriction
+PASS G5c Z^3 nearest-neighbour adjacency is bipartite: x + y + z parity is a proper 2-colouring of every edge (L = 4 chunk, 192 edges) :: edges=192 sites=64
+PASS G5d the sublattice relabeling D = diag((-1)^parity) satisfies D^2 = I and D A D = -A on every bipartite instance INCLUDING the Z^3 chunk :: instances=['C4', 'K3,3', 'P3', 'Q3', 'Z^3 torus L=4']
+PASS G5e hence spec(A) = -spec(A) as multisets: A is similar to -A through D, so the band is sign-symmetric :: C4:[-2, 0, 0, 2]; Q3:[-3, -1, -1, -1, 1, 1, 1, 3]; K3,3:[-3, 0, 0, 0, 0, 3]; P3:[-sqrt(2), 0, sqrt(2)]
+PASS G5f consequently the +J and -J one-excitation bands are IDENTICAL as multisets after the licensed energy shift, so the band minimum (and the whole band shape) separates NOTHING on a bipartite graph :: C4: band=[-2, 0, 0, 2]; Q3: band=[-3, -1, -1, -1, 1, 1, 1, 3]; K3,3: band=[-3, 0, 0, 0, 0, 3]
+PASS G5g MUTATION swap the bipartite graph for the non-bipartite triangle: NO diagonal +-1 relabeling gives D A D = -A, spec(A) is not sign-symmetric, and the shifted +J / -J bands DIFFER -- so the band minimum DOES separate there and the failure is bipartiteness :: spec=[-1, -1, 2] +J band=[-1, -1, 2] -J band=[-2, 1, 1]
+PASS G5h independently, the band minimum is not even a quotient invariant: an energy shift beta*I moves it by beta, whereas the ground-sector degeneracy of G4 does not move at all :: min=-3 -> -1/4
+
+==============================================================================
+G6  three sites: an independent dimensionless eta survives
+==============================================================================
+PASS G6a H_1 = SWAP_01 + SWAP_02 and H_2 = SWAP_01 SWAP_02 + SWAP_02 SWAP_01 are both Hermitian
+PASS G6b both are invariant under the neighbour-exchange automorphism R = SWAP_12 of the three-site star
+PASS G6c both COMMUTE with all three diagonal SU(2) generators, i.e. both are common-frame covariant -- the check the source runners asserted but never computed
+PASS G6d finite frame check: (U(x)U(x)U) H_i (U(x)U(x)U)^dag = H_i for exact SU(2) samples
+PASS G6e MUTATION / negative control: Z_0 Z_1 is Hermitian too, but it FAILS both the common-frame commutation and the neighbour-exchange invariance -- so G6b and G6c are not tautologies
+PASS G6f I, H_1, H_2 are linearly independent, so eta is a genuinely new coefficient and not a disguised rescaling or energy shift :: rank=3
+PASS G6g gap ratio (E1 - E0)/(E2 - E1) = 2 at eta = 0 :: levels=[-1, 1, 2] ratio=2
+PASS G6h gap ratio = 1 at eta = 1/3 :: levels=[-4/3, 2/3, 8/3] ratio=1
+PASS G6i MUTATION sweep eta IN THE CONSTRUCTION: the ratio moves at every sampled value and never returns to a single number, so eta is not removable and 'exactly two parameters' fails past one edge :: ratios={'-1/2': '3', '1/6': '4/3', '1/2': '4/5'}
+PASS G6j the gap RATIO is invariant under h -> alpha*h + beta*I for exact alpha > 0 and beta, so neither clock rescaling nor an energy-zero choice can remove eta
+
+==============================================================================
+G7  the identity term is not inert on a record-conditioned set
+==============================================================================
+PASS G7a the active-edge count is COMPUTED from the graph and the record configuration and differs between the two record sectors :: N_active=1 vs 2 on edges=[(0, 1), (1, 2)]
+PASS G7b the sector phase operator built from those counts is NOT a scalar multiple of the identity :: diag=exp(-I*pi/3), exp(-2*I*pi/3)
+PASS G7c on a coherent superposition of the two record sectors the identity term MOVES the interference term, so it is not a removable global phase :: witness 1 -> 1/2
+PASS G7d MUTATION rebuild the record configuration so both sectors carry EQUAL active-edge counts: the same identity term becomes a genuine global phase and the interference term stops moving :: N_active=1 vs 1, witness 1 -> 1
+PASS G7e on a FIXED active-edge set the identity term IS inert: exp(-i(h + beta*I)t) = exp(-i*beta*t) exp(-i*h*t) exactly, so R2 holds exactly where it is claimed and L3 is a boundary, not a contradiction
+
+==============================================================================
+SUMMARY
+==============================================================================
+
+PASS=46
+FAIL=0
+
+----- stderr -----
+

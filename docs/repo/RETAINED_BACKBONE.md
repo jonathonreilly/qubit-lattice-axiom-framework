@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 106 |
-| Retained bounded rows | 330 |
+| Retained bounded rows | 331 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 24 |
 
@@ -132,7 +132,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (330)
+## Retained bounded rows (331)
 
 Sorted by load-bearing graph score (descending).
 
@@ -420,6 +420,7 @@ Sorted by load-bearing graph score (descending).
 - [`persistent_object_green_scout_note`](../../docs/PERSISTENT_OBJECT_GREEN_SCOUT_NOTE.md) — score 0.000; audited 2026-05-01T09:10:59.686577+00:00
 - [`persistent_object_readout_localization_note`](../../docs/PERSISTENT_OBJECT_READOUT_LOCALIZATION_NOTE.md) — score 0.000; audited 2026-05-01T09:39:41.757320+00:00
 - [`persistent_object_top3_multistage_probe_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_TOP3_MULTISTAGE_PROBE_NOTE_2026-04-16.md) — score 0.000; audited 2026-05-01T09:44:27.955677+00:00
+- [`pwc_derivation_from_cumulant_generating_functional_narrow_theorem_note_2026-05-22`](../../docs/PWC_DERIVATION_FROM_CUMULANT_GENERATING_FUNCTIONAL_NARROW_THEOREM_NOTE_2026-05-22.md) — score 0.000; audited 2026-07-25T12:26:20.399223+00:00
 - [`s3_endpoint_fiber_uniform_lift_support_2026-06-27`](../../docs/S3_ENDPOINT_FIBER_UNIFORM_LIFT_SUPPORT_2026-06-27.md) — score 0.000; audited 2026-07-09T11:30:22.012429+00:00
 - [`scalar_kg_rerun_note_2026-04-10`](../../docs/SCALAR_KG_RERUN_NOTE_2026-04-10.md) — score 0.000; audited 2026-05-01T21:02:06.946242+00:00
 - [`self_gravity_scaling_note_2026-04-10`](../../docs/SELF_GRAVITY_SCALING_NOTE_2026-04-10.md) — score 0.000; audited 2026-05-01T23:33:38.266607+00:00

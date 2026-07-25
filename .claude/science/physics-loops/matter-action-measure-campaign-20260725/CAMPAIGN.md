@@ -94,3 +94,106 @@ already forced and where the supply actually enters.
   measures on a fixed carrier are rigid), in which case the grain
   question the last campaign chased might be answerable even though
   the action is not.
+
+---
+
+## WAVE 1 RESULT (2026-07-25): the decisive witness EXISTS and was BUILT
+
+**Supervisor prediction CONFIRMED and sharpened.** I predicted a MENU
+rather than a point. The menu is exactly **TWO POINTS**.
+
+### THE THEOREM (kill-check agent, 37/0 exact gates)
+
+The Hermitian commutant of the diagonal one-site frame group
+`u (x) u` on an edge is **exactly 2-real-dimensional**,
+`span{I (x) I, SWAP}` (this is Schur-Weyl duality on two tensor
+factors — supervisor independently confirms the core algebra).
+Modulo the inert identity shift and positive rescaling, the
+admissible matter-law menu is therefore a **2-POINT SET**:
+
+> `I - SWAP` and `I + SWAP` both satisfy every property the landed
+> non-forcing no-go's theorem demands, yet place the one-excitation
+> band minimum at `k = 0` versus `k = (pi, pi, pi)` — and that
+> separator is INVARIANT under every positive rescaling and shift.
+
+**This is the matter-law-level non-entailment witness the corpus
+explicitly says it lacks.** The closest prior art,
+`ACPHILAMBDA_RECORD_OUTCOME_ORBIT_OCCUPANCY_NON_SUPPLY_NO_GO_NOTE_2026-07-04.md:112-116`,
+states in its own words that it "does not prove that two inequivalent
+matter actions or Gaussian measures exist". That is precisely the gap
+now filled.
+
+### SUPPLY ENTERS AT LINK ONE (forcing-state agent, 29/0)
+
+There is NO derived link between the axioms and the staggered action.
+`STAGGERED_DIRAC_MINIMAL_SURFACE_KINETIC_CORNER_NONFORCING_NO_GO_NOTE_2026-07-10.md:239-244`
+already proves by four-axiom countermodel
+(`Phi = I - SWAP`, symbol `4 sum sin^2(k_mu/2)`, ONE corner zero not
+eight) that the axioms do not select a nonzero first-order kinetic
+law; rebuilt natively and it holds.
+
+Forcing ladder, verified:
+- **Grassmann/fermionic character: NOT forced.** The "Grassmann
+  forcing bridge" DISCLAIMS it in its own scope (`:24-27`, "it is
+  NOT a statistics-forcing theorem"); hard-core bosons tie on every
+  readout; Fermi statistics is unregistered in
+  `axiom_premise_nodes.json`.
+- **First-order (Dirac-type) form: NOT forced.**
+- **Staggered phases: forced only UP TO ONE BIT** — covariance
+  collapses the family to exactly `{K0, K1}` and KS is then the
+  unique gauge class, but the `K1`-vs-`K0` bit resists three no-gos.
+- **Mass term: never even scoped** (excluded as a separate sector).
+
+**The campaign target is therefore ONE joint depth-0 import:**
+(S) fermionic statistics + (K) the first-order bilinear surface.
+A single countermodel defeats both at once, so they are ONE supply,
+not two stages. Positive half worth keeping: after that datum, only
+one bit and two conventions remain.
+
+### THE OBLIGATION ITSELF IS DEFECTIVE (obligation agent)
+
+The first conjunct is **not a registered target and has no
+registered success condition**. It is a subordinate instrumental
+clause ("derive the physical matter action and its measure, THEN
+distinguish...") inside a GRAIN-counting obligation. BOTH the note's
+own `## Exact target` (`:11-13`) and the machine registry
+(`derivation_obligations.json:13` target, `:15`
+self_liquidation_condition) **omit the action-and-measure clause
+entirely**, naming only the grain, and `audit_lint.py:693-706` never
+reconciles them. As registered, deriving an action is NEITHER
+necessary NOR sufficient to liquidate the obligation.
+
+Both nouns are undefined corpus-wide: 16 non-ledger occurrences of
+"physical matter action", every one a quote or a disclaimer, ZERO
+constructions. "Its measure" splits three unreconciled ways. And the
+parent-shaped gate `MINIMAL_AXIOMS_2026-06-29.md:170` is
+**UNREGISTERED** — no node, no ledger row, no closure criterion.
+
+### GOVERNANCE / HYGIENE FINDINGS FOR THE OWNER
+
+- **ZERO no-gos are retained anywhere in the repository.** Across
+  3867 ledger shards there are 438 `no_go` rows: 437 `unaudited`,
+  1 `audited_conditional` (an unrelated gauge-plaquette row).
+- This lane: 41 of 46 rows `unaudited`; **44 prose/ledger
+  contradictions across 14 claim ids, MUTUALLY CIRCULAR** (the
+  Grassmann note calls the no-go "retained"; the no-go calls the
+  Grassmann note "retained_bounded"; both are `unaudited`).
+- The obligation row itself: `audited_renaming`, `open_gate`,
+  criticality `critical`, 99 descendants, `deps: []`, no runner.
+- Nobody has ever attempted conjunct 1 — but **the negative is ~80%
+  already written across six uncomposed, unaudited notes.**
+
+## WAVE 2 (dispatched): compose and land the underdetermination no-go
+
+The campaign's deliverable is now clear and is a NEGATIVE:
+**the four axioms do not determine the matter law, and here is the
+explicit two-point menu that proves it.**
+
+Supervisor prediction before Wave 2: the witness survives (Schur-Weyl
+is not in doubt), but the load-bearing risk is whether `I + SWAP` and
+`I - SWAP` really both satisfy EVERY framework-native constraint —
+in particular Admissibility, Record-compatibility, and reflection
+positivity. If one of them fails a constraint the menu collapses to
+a point and the result inverts into a FORCING theorem, which would be
+even better. I expect both to survive, but the adversarial wave must
+try hard to kill one of them.

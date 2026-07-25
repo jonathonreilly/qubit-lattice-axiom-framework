@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 96 |
-| Retained bounded rows | 317 |
+| Retained bounded rows | 318 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 19 |
 
@@ -122,7 +122,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (317)
+## Retained bounded rows (318)
 
 Sorted by load-bearing graph score (descending).
 
@@ -239,6 +239,7 @@ Sorted by load-bearing graph score (descending).
 - [`d2_sign_boundary_bisection_between_landmarks_bounded_theorem_note_2026-06-12`](../../docs/D2_SIGN_BOUNDARY_BISECTION_BETWEEN_LANDMARKS_BOUNDED_THEOREM_NOTE_2026-06-12.md) — score 5.500; audited 2026-06-14T01:26:41.659383+00:00
 - [`weak_coupling_retention_note_2026-04-11`](../../docs/WEAK_COUPLING_RETENTION_NOTE_2026-04-11.md) — score 5.407; audited 2026-05-25T11:37:14.102733+00:00
 - [`wilson_two_body_open_note_2026-04-11`](../../docs/WILSON_TWO_BODY_OPEN_NOTE_2026-04-11.md) — score 5.307; audited 2026-05-24T17:29:13.423914+00:00
+- [`coulomb_stability_upper_bound_support_note_2026-05-20`](../../docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md) — score 5.085; audited 2026-07-25T02:57:11.241359+00:00
 - [`d3_checkerboard_step1_closed_form_parity_lemma_bounded_theorem_note_2026-06-12`](../../docs/D3_CHECKERBOARD_STEP1_CLOSED_FORM_PARITY_LEMMA_BOUNDED_THEOREM_NOTE_2026-06-12.md) — score 5.085; audited 2026-07-11T23:26:59.641194+00:00
 - [`d3_step2_range_growth_period_class_dichotomy_bounded_theorem_note_2026-06-12`](../../docs/D3_STEP2_RANGE_GROWTH_PERIOD_CLASS_DICHOTOMY_BOUNDED_THEOREM_NOTE_2026-06-12.md) — score 5.085; audited 2026-06-14T01:35:44.503077+00:00
 - [`valley_linear_robustness_note`](../../docs/VALLEY_LINEAR_ROBUSTNESS_NOTE.md) — score 5.085; audited 2026-05-12T00:26:58.004161+00:00

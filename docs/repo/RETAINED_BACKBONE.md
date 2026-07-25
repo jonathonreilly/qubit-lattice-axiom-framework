@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 99 |
-| Retained bounded rows | 323 |
+| Retained bounded rows | 324 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 22 |
 
@@ -125,7 +125,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (323)
+## Retained bounded rows (324)
 
 Sorted by load-bearing graph score (descending).
 
@@ -181,6 +181,8 @@ Sorted by load-bearing graph score (descending).
 - [`persistent_object_inward_boundary_floor_diagnosis_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_INWARD_BOUNDARY_FLOOR_DIAGNOSIS_NOTE_2026-04-16.md) — score 9.615; audited 2026-05-12T00:25:13.086147+00:00
 - [`wave_direct_dm_h025_fam1_seed1_control_note`](../../docs/WAVE_DIRECT_DM_H025_FAM1_SEED1_CONTROL_NOTE.md) — score 9.587; audited 2026-05-22T23:32:34.495203+00:00
 - [`persistent_object_blended_readout_transfer_sweep_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_BLENDED_READOUT_TRANSFER_SWEEP_NOTE_2026-04-16.md) — score 9.585; audited 2026-05-12T00:30:06.593080+00:00
+- [`dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md) — score 9.144; audited 2026-04-30T20:20:19.600693+00:00
+- [`dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md) — score 9.144; audited 2026-04-30T20:20:57.340384+00:00
 - [`wave_direct_dm_h025_fam1_seed0_control_note`](../../docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md) — score 9.087; audited 2026-05-27T02:28:32.349690+00:00
 - [`persistent_object_blended_readout_outer_transfer_sweep_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_BLENDED_READOUT_OUTER_TRANSFER_SWEEP_NOTE_2026-04-16.md) — score 9.085; audited 2026-05-19T15:27:39.246691+00:00
 - [`persistent_object_multistage_floor_sweep_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_MULTISTAGE_FLOOR_SWEEP_NOTE_2026-04-16.md) — score 9.085; audited 2026-05-07T01:10:39.669093+00:00
@@ -209,6 +211,7 @@ Sorted by load-bearing graph score (descending).
 - [`gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_note_2026-04-20`](../../docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_3PLUS1_LINE_EXACT_SOLVE_DOUBLET_THEOREM_NOTE_2026-04-20.md) — score 7.585; audited 2026-05-25T23:48:13.001024+00:00
 - [`gauge_vacuum_plaquette_su3_full_slice_product_fubini_factorization_note_2026-06-06`](../../docs/GAUGE_VACUUM_PLAQUETTE_SU3_FULL_SLICE_PRODUCT_FUBINI_FACTORIZATION_NOTE_2026-06-06.md) — score 7.477; audited 2026-06-07T16:03:17.644920+00:00
 - [`koide_cyclic_projector_block_democracy_note_2026-04-18`](../../docs/KOIDE_CYCLIC_PROJECTOR_BLOCK_DEMOCRACY_NOTE_2026-04-18.md) — score 7.392; audited 2026-05-05T11:21:48.452312+00:00
+- [`dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md) — score 7.115; audited 2026-07-25T06:48:32.525863+00:00
 - [`dm_full_closure_same_surface_thermal_series_tail_support_note_2026-04-17`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SERIES_TAIL_SUPPORT_NOTE_2026-04-17.md) — score 7.115; audited 2026-06-15T23:17:32.891327+00:00
 - [`bound_state_selection_note`](../../docs/BOUND_STATE_SELECTION_NOTE.md) — score 7.085; audited 2026-05-11T23:15:10.825675+00:00
 - [`persistent_object_exact_lattice_park_note_2026-04-16`](../../docs/PERSISTENT_OBJECT_EXACT_LATTICE_PARK_NOTE_2026-04-16.md) — score 7.055; audited 2026-05-19T15:40:08.411036+00:00
@@ -226,8 +229,6 @@ Sorted by load-bearing graph score (descending).
 - [`staggered_newton_reproduction_note_2026-04-11`](../../docs/STAGGERED_NEWTON_REPRODUCTION_NOTE_2026-04-11.md) — score 6.426; audited 2026-05-06T02:49:41.372930+00:00
 - [`d2_orbital_susceptibility_sign_regions_bounded_theorem_note_2026-06-12`](../../docs/D2_ORBITAL_SUSCEPTIBILITY_SIGN_REGIONS_BOUNDED_THEOREM_NOTE_2026-06-12.md) — score 6.322; audited 2026-06-13T01:46:37.755286+00:00
 - [`dm_abcc_basin_finite_search_support_note_2026-04-30`](../../docs/DM_ABCC_BASIN_FINITE_SEARCH_SUPPORT_NOTE_2026-04-30.md) — score 6.200; audited 2026-05-28T03:52:23.814600+00:00
-- [`dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_CONVERGED_THERMAL_SELECTOR_SUPPORT_NOTE_2026-04-16.md) — score 6.144; audited 2026-04-30T20:20:19.600693+00:00
-- [`dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16`](../../docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_SELECTOR_SENSITIVITY_BOUNDARY_NOTE_2026-04-16.md) — score 6.144; audited 2026-04-30T20:20:57.340384+00:00
 - [`axiom_first_coleman_mermin_wagner_theorem_note_2026-04-29`](../../docs/AXIOM_FIRST_COLEMAN_MERMIN_WAGNER_THEOREM_NOTE_2026-04-29.md) — score 6.085; audited 2026-05-31T00:15:33.913636+00:00
 - [`record_conditional_law_period_scaling_l3_to_l4_bounded_theorem_note_2026-06-11`](../../docs/RECORD_CONDITIONAL_LAW_PERIOD_SCALING_L3_TO_L4_BOUNDED_THEOREM_NOTE_2026-06-11.md) — score 6.085; audited 2026-06-18T08:05:56.775728+00:00
 - [`retarded_field_causality_probe_note`](../../docs/RETARDED_FIELD_CAUSALITY_PROBE_NOTE.md) — score 6.085; audited 2026-05-04T23:31:09.124684+00:00

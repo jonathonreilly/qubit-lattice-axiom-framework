@@ -1,24 +1,54 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T06:48:32.525863+00:00",
+  "audit_invocation_history": [
+    "b43da0cc365b4bbc8fae9c5cea27e4cd"
+  ],
+  "audit_invocation_id": "b43da0cc365b4bbc8fae9c5cea27e4cd",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope.",
+      "dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16": "Legacy audit row backfilled during scope-aware classification migration; re-audit may narrow this scope."
+    },
+    "dep_claim_type": {
+      "dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16": "bounded_theorem",
+      "dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16": "retained_bounded",
+      "dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16": "retained_bounded"
+    },
+    "deps": [
+      "dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16",
+      "dm_full_closure_same_surface_thermal_selector_sensitivity_boundary_note_2026-04-16"
+    ],
+    "helper_runner_hashes": {
+      "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693",
+      "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py": "63d6f323675fc1d97a5453b9ae44ca0c60a9fdd5222eb176dc7d4d66f2a50097",
+      "scripts/dm_full_closure_same_surface_thermal_support_common.py": "a35b8aa9bf42484fe3467dcbf97aac42ec1039598d525b130c049b432c12dc82",
+      "scripts/dm_leptogenesis_exact_common.py": "4120a70d63082dd2115b7a9337fb91804478f706ef36f602ab210737f8f0dc41"
+    },
+    "load_bearing_score": 7.115,
+    "runner_hash": "07403cec245b13f7e751b7d2be053981a5c1f24e053903e12a23c98cb82ed053",
+    "transitive_descendants": 48
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-A-20260725-1450ce8c",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Within the stated helper-defined domain, the strict inequalities follow directly, and an independent direct-quadrature recomputation reproduces every displayed endpoint and interval. The note expressly excludes selector and completeness claims.",
   "claim_id": "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
-  "claim_scope": null,
+  "claim_scope": "Arithmetic verification that the helper-defined endpoint couplings, certified R(alpha) intervals, and Omega_b-scaled Omega_DM intervals satisfy the displayed strict ordering and non-overlap inequalities, with no selector or completeness claim.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T06:48:32.525863+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,24 +57,25 @@
     "dm_full_closure_same_surface_converged_thermal_selector_support_note_2026-04-16"
   ],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
   "helper_runner_paths": [
     "scripts/canonical_plaquette_surface.py",
     "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
     "scripts/dm_full_closure_same_surface_thermal_support_common.py",
     "scripts/dm_leptogenesis_exact_common.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "retained_bounded",
   "load_bearing_score": 7.115,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The arithmetic conclusion is alpha_bare < alpha_lo < alpha_hi, R(alpha_lo)_hi < R(alpha_hi)_lo, and Omega_DM(alpha_lo)_hi < Omega_DM(alpha_hi)_lo.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "f4aa6ebeca5c8daa84008903094dc1a631eeac79f8b6dce64a79359dc4890907",
   "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-check if the helper formulas or constants change; this verdict does not ratify their physical provenance or any selector claim.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -428,14 +459,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 8,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 8
   },
   "runner_path": "scripts/frontier_dm_full_closure_same_surface_numerator_selector_boundary.py",
   "title": "DM Full Closure Same-Surface Endpoint Non-Overlap Arithmetic Certificate",
   "transitive_descendants": 48,
-  "verdict_rationale": null
+  "verdict_rationale": "The claim is explicitly bounded to arithmetic over helper-defined outputs, and all eight runner assertions test those inequalities without importing a selector conclusion. Independent recomputation of the endpoint formulas, exact-series tail bounds, and positive Omega_b scaling reproduces the displayed values and confirms the strict non-overlap. The certificate therefore closes on its stated scope while making no claim that the helper inputs themselves are framework-derived selectors."
 }

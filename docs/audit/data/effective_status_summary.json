@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 2158,
-    "decoration": 36,
+    "decoration": 37,
     "meta": 364,
     "no_go": 439,
     "open_gate": 207,
-    "positive_theorem": 669
+    "positive_theorem": 668
   },
   "cycle_examples": [
     [
@@ -107,10 +107,10 @@
     "open_gate": 2,
     "retained": 111,
     "retained_bounded": 336,
-    "retained_pending_chain": 7,
-    "unaudited": 2704
+    "retained_pending_chain": 8,
+    "unaudited": 2703
   },
-  "retained_pending_chain_count": 7,
+  "retained_pending_chain_count": 8,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "cl3_taste_generation_theorem",
@@ -118,6 +118,7 @@
     "formation_rate_law_class_reduction_bounded_note_2026-07-08",
     "pre_record_reference_state_tracial_derivation_note_2026-05-20",
     "tensor_product_translation_fermion_operator_bridge_narrow_theorem_note_2026-05-25",
-    "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"
+    "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+    "wolfenstein_lambda_a_structural_identities_narrow_theorem_note_2026-05-10"
   ]
 }

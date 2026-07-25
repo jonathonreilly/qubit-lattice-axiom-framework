@@ -11,7 +11,7 @@
       "overturned_by_third": 0,
       "ratified_by_third": 0,
       "total_audits": 0,
-      "verdict_changed_after_re_audit": 9,
+      "verdict_changed_after_re_audit": 10,
       "verdict_counts": {}
     },
     "codex-current": {
@@ -68,7 +68,7 @@
       "third_pass_overturn_rate": 0.333,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
       "total_audits": 90,
-      "verdict_changed_after_re_audit": 267,
+      "verdict_changed_after_re_audit": 268,
       "verdict_counts": {
         "audited_clean": 90
       }
@@ -121,7 +121,7 @@
     },
     "codex-gpt-5.6": {
       "audits_with_runner_class": {
-        "A": 158,
+        "A": 159,
         "B": 7,
         "C": 41,
         "D": 1,
@@ -138,7 +138,7 @@
         "critical": 124,
         "high": 50,
         "leaf": 19,
-        "medium": 30
+        "medium": 31
       },
       "cross_confirmation_agreement_rate": 0.552,
       "cross_confirmation_outcomes": {
@@ -156,13 +156,13 @@
       "third_pass_decisions_n": 48,
       "third_pass_overturn_rate": 0.5,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
-      "total_audits": 223,
+      "total_audits": 224,
       "verdict_changed_after_re_audit": 124,
       "verdict_counts": {
         "audited_clean": 70,
         "audited_conditional": 103,
         "audited_decoration": 15,
-        "audited_failed": 22,
+        "audited_failed": 23,
         "audited_numerical_match": 2,
         "audited_renaming": 11
       }
@@ -195,7 +195,7 @@
   "totals": {
     "auditor_families_observed": 5,
     "overall_agreement_rate": 0.718,
-    "total_audits_recorded": 603,
+    "total_audits_recorded": 604,
     "total_cross_confirmation_family_participations": 157,
     "total_cross_confirmation_pairs": 142,
     "total_third_pass_decisions": 76

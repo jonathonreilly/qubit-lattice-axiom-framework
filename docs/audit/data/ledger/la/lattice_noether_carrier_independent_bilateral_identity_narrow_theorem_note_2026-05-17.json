@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T22:40:05.428787+00:00",
+  "audit_invocation_history": [
+    "608fcd2d28a04744bde45690fc0f36f2"
+  ],
+  "audit_invocation_id": "608fcd2d28a04744bde45690fc0f36f2",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 5,
+        "B": 0,
+        "C": 8,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "For finite Grassmann generators with the stated relations and a consistently ordered Berezin measure, the unnormalized quadratic integral equals det(M), and odd-odd products and Berezin integrals are antisymmetric; normalized correlators are included only when Z_F is nonzero."
+    },
+    "dep_claim_type": {
+      "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10": "retained_bounded"
+    },
+    "deps": [
+      "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "3f8ba0dcafe3f046adf2cb9fbc8d1df0ad77a696fc8658276d55da2b139993a3",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "3f8ba0dcafe3f046adf2cb9fbc8d1df0ad77a696fc8658276d55da2b139993a3",
+    "runner_path": "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-784f5272",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The AxisInv reindexing algebra closes, but the packet clips the load-bearing Berezin determinant authority, so the Wick-sign and bilinear-calculus dependency cannot be independently verified from the restricted evidence.",
   "claim_id": "lattice_noether_carrier_independent_bilateral_identity_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
+  "claim_scope": "T1\u2013T5 for the AxisInv nearest-neighbour carrier class on the stated finite periodic Grassmann-bilinear surface, including the bilateral current, on-shell divergence, class sharpness, carrier uniformity, and Wick-sign convention; physical identification with M_KS and lattice-index-shifting generators are excluded.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T22:40:05.428787+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,22 @@
     "spin_statistics_berezin_determinant_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "By AxisInv, c_mu(x' + mu_hat) = c_mu(x'), so the reindexed backward coefficient matches the forward coefficient and produces the bilateral current (5).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "6c0b080b3be807faf8660e2eb211b8ec383b6a8e91c229707bf721ac66d1390a",
   "note_path": "docs/LATTICE_NOETHER_CARRIER_INDEPENDENT_BILATERAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: include the complete unclipped docs/SPIN_STATISTICS_BEREZIN_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-10.md authority in the restricted packet and rerun the audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -322,14 +378,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 2,
     "B": 0,
-    "C": 0,
+    "C": 7,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/lattice_noether_carrier_independent_bilateral_identity_narrow_2026_05_17.py",
   "title": "Carrier-Independent Bilateral Lattice-Noether Identity \u2014 Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The AxisInv reindexing step is a genuine class-A algebraic closure, and all nine executable checks pass; T4's outside-AxisInv sharpness is a derived no-go boundary, not a general Ward-theorem no-go. However, the sole load-bearing Berezin determinant authority is packet-clipped, preventing restricted-record verification of the Wick/bilinear dependency. A clean verdict therefore requires an unclipped authority packet."
 }

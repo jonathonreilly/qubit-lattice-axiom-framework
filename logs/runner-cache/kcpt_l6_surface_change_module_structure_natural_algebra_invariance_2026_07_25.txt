@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_l6_surface_change_module_structure_natural_algebra_invariance_2026_07_25.py
+runner_sha256: b1ecfa9697390b7af4d937db4367060871b6e0df9c9c3f0706c97f03d7402955
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 80.19
+status: ok
+----- stdout -----
+[info] L=6 built: N=216, M spectrum [0, -3, -6, -9], shell mults [8, 48, 96, 64] (0s)
+[GATE A1] PASS -- D2 integer and D2^T = -D2
+[GATE A2] PASS -- M spectrum [0, -3, -6, -9] mults [8, 48, 96, 64], cluster gap>=1 (True), max|ev-round|=2.0e-14
+[GATE A3] PASS -- mult formula C(3,m)*2^(3-m)*4^m = [8, 48, 96, 64], sum 216
+[GATE A4] PASS -- ker dim 8, D2@V8 resid 0.0e+00, entries +/-1 True
+[GATE A5] PASS -- J real (im 0.0e+00), antisym 0.0e+00, ||J^2+I|| 4.4e-16
+[info] groups built: |G_amb|=2592, |H|=5184 (13s)
+[GATE B1] PASS -- |G_amb|=2592=6^3*12, |H|=5184, [H:G]=2, S_eps in G_amb: False
+[GATE B2] PASS -- 137 H-classes, size multiset {1: 2, 2: 5, 3: 4, 4: 3, 6: 24, 12: 57, 54: 6, 72: 6, 108: 21, 144: 9}
+[GATE B3] PASS -- 75 G-orbits under H-conj, size multiset {1: 2, 2: 3, 3: 4, 4: 1, 6: 14, 12: 27, 54: 6, 72: 6, 108: 9, 144: 3}
+[GATE B4] PASS -- chi_sgn=+1 on 2592, =-1 on 2592, neither on 0
+[GATE B5] PASS -- ker chi_sgn set == G_amb (2592 vs 2592)
+[GATE B6] PASS -- chi_sgn multiplicative on 400 seeded pairs
+[GATE B7] PASS -- S_eps D2 S_eps = -D2, chi_sgn(S_eps) = -1
+[GATE B8] PASS -- dressed-r4 witness: commutes with D2 True, in H False (H not maximal)
+[info] End_H: char c_H=19, dim c_H=19, c_m(char)=[1, 4, 8, 6], c_m(dim)=[1, 4, 8, 6] (64s)
+[GATE C1] PASS -- c_H=19 (char & dim), c_m=[1, 4, 8, 6], cross-shell Hom max 1.8e-16, 19=1+4+8+6
+[GATE C2s7] PASS -- isotypic tables seed 7: m0:[(8, 1)]; m1:[(24, 2)]; m2:[(12, 1), (12, 1), (12, 1), (12, 1), (24, 2)]; m3:[(8, 1), (8, 1), (24, 2)]
+[GATE C2s1234] PASS -- isotypic tables seed 1234: m0:[(8, 1)]; m1:[(24, 2)]; m2:[(12, 1), (12, 1), (12, 1), (12, 1), (24, 2)]; m3:[(8, 1), (8, 1), (24, 2)]
+[GATE C3] PASS -- two-seed agreement + sum(mult^2)=c_m + sum(mult*dim)=shell dim per shell
+[GATE C4] PASS -- End_H non-abelian: max pairwise ||[X,Y]||_F = 0.280 (L=4 landed comparison: abelian C^6)
+[GATE D1] PASS -- dim A_nat = 16, closed below cap = True
+[GATE D2] PASS -- dim Z(A_nat)=4, overlap^2(Z, P_m) min 1.000000000000
+[GATE D3s7] PASS -- 4 blocks, ranks [8, 48, 64, 96], block-alg dim [4, 4, 4, 4] (=>M_2), block-center [1, 1, 1, 1], max||P_block-P_shell|| 1.4e-13
+[GATE D3s1234] PASS -- 4 blocks, ranks [8, 48, 64, 96], block-alg dim [4, 4, 4, 4] (=>M_2), block-center [1, 1, 1, 1], max||P_block-P_shell|| 2.0e-14
+[GATE D4] PASS -- positive control overlap^2(A_nat, P_m) min 1.000000000000
+[info] section D done (0s)
+[GATE E1] PASS -- dim A' = 13; Gram null_max 2.93e-14, first non-null 1.60e+01, scale 4.00e+01
+[GATE E2] PASS -- A' abelian: max pairwise ||[A,B]||_F = 1.60e-15
+[GATE E3s11] PASS -- ranks [8, 8, 8, 12, 12, 12, 12, 24, 24, 24, 24, 24, 24], sum 216, dim A = sum r_i^2 = 4224
+[GATE E3s2024] PASS -- ranks [8, 8, 8, 12, 12, 12, 12, 24, 24, 24, 24, 24, 24], sum 216, dim A = sum r_i^2 = 4224
+[GATE E4] PASS -- L=4: |H|=1536, dim A'=5, ranks [8, 8, 12, 12, 24], dim A = 992
+[GATE E4b] PASS -- L=4: End_H = C^6 abelian (char 6, dim 6, max ||[X,Y]||_F 2.3e-15); dressed-r4 commutes True, in H False
+[GATE E5] PASS -- L=6 separator complement dim 9 (C[M] dim 4); L=4 comparison dim 1
+[GATE E6] PASS -- sep6 rank sum 16, ||sep6||_F 4.000000000000, [sep6,D2] 5.2e-14, [sep6,J] 1.8e-14, max[sep6,rho(h)] 2.0e-14
+[GATE E7a] PASS -- overlap^2(A_nat, 9 complement dirs) max 8.15e-31
+[GATE E7b] PASS -- sep6 + 6 quartet diffs blind: overlap^2 max 5.89e-32
+[GATE E8] PASS -- augmented A_nat basis: overlap^2(aug, sep6) = 1.000000000000
+[info] section E done (1s)
+[info] wall-clock 80.0s, peak RSS 0.48 GB
+TOTAL: PASS=34 FAIL=0
+
+----- stderr -----
+

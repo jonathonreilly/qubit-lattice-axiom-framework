@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 100 |
+| Retained positive rows | 101 |
 | Retained bounded rows | 324 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 22 |
 
-## Retained positive rows (100)
+## Retained positive rows (101)
 
 Sorted by load-bearing graph score (descending).
 
@@ -94,6 +94,7 @@ Sorted by load-bearing graph score (descending).
 - [`background_independence_note`](../../docs/BACKGROUND_INDEPENDENCE_NOTE.md) — score 6.024; audited 2026-05-05T11:20:02.143221+00:00
 - [`circulant_response_master_identity_narrow_theorem_note_2026-05-02`](../../docs/CIRCULANT_RESPONSE_MASTER_IDENTITY_NARROW_THEOREM_NOTE_2026-05-02.md) — score 6.024; audited 2026-05-05T11:21:06.403479+00:00
 - [`radial_scaling_protected_angle_narrow_theorem_note_2026-05-02`](../../docs/RADIAL_SCALING_PROTECTED_ANGLE_NARROW_THEOREM_NOTE_2026-05-02.md) — score 6.024; audited 2026-05-07T01:26:33.508622+00:00
+- [`z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02`](../../docs/Z3_CONJUGATE_SUPPORT_TRICHOTOMY_NARROW_THEOREM_NOTE_2026-05-02.md) — score 6.024; audited 2026-07-25T07:10:22.261156+00:00
 - [`higgs_mean_field_determinant_apbc_taste_bridge_note_2026-06-06`](../../docs/HIGGS_MEAN_FIELD_DETERMINANT_APBC_TASTE_BRIDGE_NOTE_2026-06-06.md) — score 5.322; audited 2026-06-07T00:39:36.037602+00:00
 - [`fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10`](../../docs/FERMION_PARITY_PAULI_TENSOR_INVOLUTION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 5.307; audited 2026-05-11T01:53:59.618423+00:00
 - [`ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10`](../../docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md) — score 5.087; audited 2026-07-25T06:01:42.665852+00:00

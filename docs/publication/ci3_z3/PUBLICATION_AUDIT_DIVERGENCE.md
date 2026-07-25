@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 122 |
+| medium | `unaudited` | 121 |
 | critical | `audited_conditional` | 16 |
 | high | `audited_conditional` | 5 |
 | ? | `unresolved` | 4 |
@@ -34,7 +34,7 @@ publication tables phrase it.
 | high | `audited_numerical_match` | 1 |
 | medium | `audited_numerical_match` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 553
+**Total non-retained-grade rows in publication tables:** 552
 
 ## Per-row breakdown
 
@@ -588,7 +588,6 @@ publication tables phrase it.
 | medium | `yt_gauge_crossover_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `yt_microscopic_schur_class_admissibility_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `yt_schur_stability_gap_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | ? | `unresolved:docs/KOIDE_CLOSURE_ATLAS_ISSUES_FLAGGED.md` | `unresolved` | `?` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | ? | `unresolved:docs/publication/ci3_z3/ARXIV_DRAFT.md` | `unresolved` | `?` | RESULTS_INDEX.md |
 | ? | `unresolved:docs/publication/ci3_z3/GRAVITY_PUBLICATION_PACKAGE_SUMMARY_2026-04-15.md` | `unresolved` | `?` | CLAIMS_TABLE.md |

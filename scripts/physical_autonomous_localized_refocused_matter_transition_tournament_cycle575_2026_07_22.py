@@ -68,7 +68,7 @@ DEPENDENCY_SHA256 = {
     "physical_joint_clock_accumulator_contraction_bridge_cycle570_2026_07_22.py":
         "853abe5470efd15b154d6cb348d49795a6fa84e77a62f0b21a79105892b1d415",
     "physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py":
-        "e959fa0ef29787b6eaca0fa0552ad3e921541432e11cdefffda7e9255472ff77",
+        "a9786cf68a9c669e7e7fe310a00ab9912aa404689651682ccfe3045a06e357f1",
 }
 RECEIPT_SHA256 = {
     "physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json":
@@ -78,9 +78,9 @@ RECEIPT_SHA256 = {
     "physical_joint_clock_accumulator_contraction_bridge_cycle570_receipt_2026_07_22.json":
         "f104399af621ded1b50e180e6fcce5f254008715b72191c6199fe4d583a8a806",
     "physical_matter_transition_clock_equivalence_tournament_cycle573_receipt_2026_07_22.json":
-        "bac4169a90f7bf45dd05fa0ea1a9febd96497ddb664fcf7673c365b456422e0a",
+        "61888b3dfa3e777c7b036f0c2156011155afd7c09e022c8ff8f200d1fa8b05c7",
 }
-CYCLE573_NOTE_SHA256 = "7c27ee648c4865985c7286ebb8c332f6c91846cebb608aafab79222b4e2ef1b5"
+CYCLE573_NOTE_SHA256 = "fb5eeabcdf7b76fd2c55737e5f0c87bcb557ddd4ec5f03569989ab8aae4d4de2"
 
 SCALAR = c573.SCALAR.copy()
 EVEN = c573.EVEN.copy()

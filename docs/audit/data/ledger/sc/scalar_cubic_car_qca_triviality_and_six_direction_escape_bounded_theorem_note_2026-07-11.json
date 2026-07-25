@@ -1,24 +1,79 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T22:03:22.511171+00:00",
+  "audit_invocation_history": [
+    "d9fecb08a8134fc19ec494250c55b175"
+  ],
+  "audit_invocation_id": "d9fecb08a8134fc19ec494250c55b175",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 13,
+        "B": 2,
+        "C": 1,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "A",
+      "exists": true,
+      "runner_path": "scripts/scalar_cubic_car_qca_triviality_six_direction_escape_2026_07_11.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/scalar_cubic_car_qca_triviality_six_direction_escape_2026_07_11.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "4d98eef8b3beb5dd30be87ded29f10c79371e677cf442080aed2d67b72748067",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "4d98eef8b3beb5dd30be87ded29f10c79371e677cf442080aed2d67b72748067",
+    "runner_path": "scripts/scalar_cubic_car_qca_triviality_six_direction_escape_2026_07_11.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-d452e52f",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The algebraic CAR lift and scalar Laurent classification close on their stated inputs, but the derived scalar no-transport boundary lacks the mandatory complete No-Go Discipline stress coverage, especially five distinct closed N1 routes and five-resolution N5 execution evidence.",
   "claim_id": "scalar_cubic_car_qca_triviality_and_six_direction_escape_bounded_theorem_note_2026-07-11",
-  "claim_scope": null,
+  "claim_scope": "Exact finite-Laurent CAR lift and six-direction radius-one cubic escape; the one-mode scalar transport-triviality boundary remains conditional pending complete N1-N8 stress coverage.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T22:03:22.511171+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,32 +81,37 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Scalar Laurent unitarity gives u(k)=exp(i phi)exp(i k\u00b7w), and full proper-cubic covariance forces w=0.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary",
+    "no_go_result"
+  ],
   "note_hash": "91482fcf25f04cd1ed464060d795918e7f91601bfefd53e63d0828a9991e8e8c",
   "note_path": "docs/SCALAR_CUBIC_CAR_QCA_TRIVIALITY_AND_SIX_DIRECTION_ESCAPE_BOUNDED_THEOREM_NOTE_2026-07-11.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: add a live N1-N8 stress artifact with five distinct attack routes, five-resolution rhetoric checks, and complete index dispositions; also add a dated downstream-hygiene line to this note's own boundary so the narrowed scope re-enters audit.",
   "open_dependency_paths": [],
   "previous_audits": [],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 29,
+    "B": 5,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 34
   },
   "runner_path": "scripts/scalar_cubic_car_qca_triviality_six_direction_escape_2026_07_11.py",
   "title": "Scalar Cubic CAR-QCA Triviality And The Six-Direction Carrier Escape",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the note asserts a derived no-go boundary for finite-range, translation-invariant, number-preserving scalar Gaussian/CAR ticks with full proper-cubic covariance, but the live runner does not close N1 with five distinct closed attack mechanisms or N5 at per-element, per-site, per-mode, per-block, and lattice-wide resolutions. Why this blocks: N2's explicit walls are individually material, N3 exposes no hidden premise beyond the disclosed supplied CAR realization, and N4 has no prior-witness residual, but N6/N8 are not completely dispositioned and the strongest N7 larger-carrier steelman is excluded only by the one-mode scope. Repair target: supply a live N1-N8 stress artifact with complete route, rhetoric, partial-closure, and cross-cycle coverage. Claim boundary until fixed: the coefficient-level CAR lift and explicit six-direction radius-one cubic permutation remain exact constructions, while the scalar no-transport classification cannot receive clean retained authority."
 }

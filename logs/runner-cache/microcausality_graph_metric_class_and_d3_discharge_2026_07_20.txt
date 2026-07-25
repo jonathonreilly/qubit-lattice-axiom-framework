@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/microcausality_graph_metric_class_and_d3_discharge_2026_07_20.py
+runner_sha256: f1116d6f256b037a274eb656af6c276b18bb19492342707ac1c516ac492bb4a8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.59
+status: ok
+----- stdout -----
+PASS: G1 torus l1 spheres on (Z/6)^3: 6, 18, 35 vs Z^3's 6, 18, 38 (equality below L/2; first deficit exactly at r = 3 = L/2)
+PASS: G2 torus l_inf spheres: (Z/6)^3 gives 26, 98, 91 (deficit at r = 3 = L/2); (Z/8)^3 gives 26, 98, 218 = 24r^2+2 below L/2
+PASS: G3 torus conversion d1 <= 3 d_inf (enumerated), coordinatewise |a|_L <= |a| (instances), and the periodic seam bond has torus diameter 1 (not L-1)
+PASS: G4 chain lemma on the 6-cycle (instance illustration, not the general lemma): reach <= sum of torus diameters for all mixed-size two-step chains from X = {0}
+PASS: G5 d = 3 radicand m^2 + sum sin^2 >= m^2 (symbolic, three terms), E_3 >= arcsinh(m) with a strict instance, and 0 < t <= e^{-2 arcsinh(m)} < 1
+PASS: G6 taste degeneracy sin^2(k + pi) = sin^2(k) (symbolic)
+PASS: G7 per-mode composition -log Gamma(e^{-2 a_tau E})/(2 a_tau) = dGamma(E) with the 2 a_tau factor independent of the E argument's dimension content (symbolic two-mode exemplar), and the mode count (L/2)^d 2^d = L^d (symbolic)
+PASS: G8 kernel constant: C_d^2 = m^2 + (d-1) + cosh^2(eta) with the (d-1) OFFSET PINNED at d = 1 (C_1^2 = m^2 + cosh^2 eta, so a (d+1) or (d) offset is rejected), d-monotone (C_3^2 - C_1^2 = 2), and the instance C_3(eta = 1/4, m = 1/2) obtained by substitution INTO the symbolic form (not a re-expressed literal)
+PASS: G9 feed re-gate: numerator 24x(1+x)+2x(1-x)^2 = 2x(13+10x+x^2) and the envelope evaluates to 585 (in C_3 units) at x = 1/2
+PASS: G10 threshold is per-chosen-eta: mu = eta/6 admissible and mu = eta/2 rejected at eta = arcsinh(m)/4; the false universal claim exhibited (arcsinh(m)/6 > eta/3 at this eta); r_3 > 0.  The rejector uses an EXACT NEGATIVE predicate (is_negative is True), not 'is_positive is not True', so an indeterminate symbolic result cannot be read as a rejection
+PASS: G11 alias law (exact toy, d = 1, L = 6, symbol cos 4k): the torus DFT kernel equals the alias sum sum_n h(z + nL) at every z, and the naive infinite-lattice restriction is WRONG at z = 2, 4 (the aliasing exhibit)
+PASS: G12 alias transfer: ||z + nL||_inf >= max(L||n||_inf - L/2, ||z||_inf,L) enumerated (d = 2, L = 6, ||n||_inf <= 2); shell sums by finite-N telescoping (geometric exact, j^2 remainder of degree >= N+1) with the note-carried limit; the rational identity 24 u(1+u)/(1-u)^3 + 2u/(1-u) = 2u(13+10u+u^2)/(1-u)^3; A_3 -> 1 at u = 0, i.e. beta -> +infinity (NOT beta -> 0, where A_3 diverges); and the HALF-INTEGER shell pin -- A_3 - 1 and A_1 - 1 each agree with their direct sum_j N_d(j) u^{j-1/2} truncation to order u^{N+1/2} (this is the gate that fixes the sqrt(u) offset and the numerator coefficients), CLOSED by the EXACT identity A_d - 1 = u^{-1/2} x (integer-power shell generating function), which forbids an extra numerator term at ANY order (a finite-N remainder test alone cannot)
+PASS: G13 end-to-end d = 1 torus instance (m = 1/2, L = 6, eta = (3/4) arcsinh(1/2), eta' = eta/2): exact parity zeros h_L(1) = h_L(3) = h_L(5) = 0, and |h_L(z)| <= C_1 A_1 e^{-eta' d_L(z)} at every z (50-digit instance margins).  Honest scope: the parity zeros are exact and discriminating; the bound margins are LOOSE -- this instance also satisfies the uncorrected A_1 = 1 bound, so it is an end-to-end consistency instance and NOT evidence for the alias constant (that is G11 + G12)
+PASS: G14 activity assembly, gated in two DECOUPLED halves so no factor can cancel against itself: (i) exact CAR spectra give ||c_x^dag c_y + h.c.|| = 1 and ||c_x^dag c_y|| = 1 (block08's 2K envelope is an upper bound carrying real slack), and the (Z/6)^3 torus l_inf shell COUNTS -- carrying no weight factor at all -- are <= 24r^2+2 with the full L^3-1 sites accounted, d1 <= 3 d_inf re-enumerated per term; (ii) the weights are DERIVED from the constructed objects (envelope factor = number of operator terms in h_{xy}; support sizes |{x,y}| and |{x}|) and, fed into the Z^3 shell series, must reproduce the CITED closed-form display 1 + 8x(13+10x+x^2)/(1-x)^3 to order x^{N+1} -- so a wrong envelope factor, support size, or dropped diagonal is rejected by the landed note's own 8
+PASS: N1 block07 audited step sentences (activity display, chain lemma, disconnected supports, meeting bound, constants) — the steps the extension carries
+PASS: N2 dispersion note: E_d display, C_d bound, taste-corner degeneracy sentence, corner parameterization p_r = k + pi r, even periods, the ONE-PARTICLE BOUNDARY SENTENCE verbatim (a bare 'one-particle' substring would match anywhere and is deliberately not used), the position-space kernel convention, and the r_d remark
+PASS: N3 the landed corner-note's own sentences, quoted neutrally: it declines every locality claim and NAMES two prerequisites as REQUIRED (it does not say this note supplies them -- this note supplies one of the two and replaces the other with a construction), plus its functor displays
+PASS: N4 RP-positivity note wording only: it states the same vacuum/creation functor relations for a diagonal kernel.  It is NOT an authority for this note and NOT an upstream dependency -- the landed corner-note proves the canonical intertwiner from finite-dimensional exterior algebra
+PASS: N5 block08 feed authority (the Z^3 shell chain consumed: display, numerator identity, threshold, shell count)
+PASS: N6 axiom memo supplies no dynamics
+PASS: N7 self-pin needles (anti-drift for the target note; NOT independent evidence).  These pin the NARROWED claim boundary: exactly one of the corner-note's two prerequisites is claimed, the other is explicitly replaced by a construction, and the no-go battery awards itself no verdict
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

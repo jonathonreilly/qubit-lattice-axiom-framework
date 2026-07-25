@@ -1,6 +1,6 @@
 {
- "edge_count": 14988,
- "node_count": 4480,
+ "edge_count": 14993,
+ "node_count": 4481,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -8960,6 +8960,10 @@
   },
   "microcausality_gauged_kernel_weighted_activity_feed_bounded_theorem_note_2026-07-18": {
    "deps_hash": "7ef7d79fcc04",
+   "out_degree": 5
+  },
+  "microcausality_graph_metric_class_and_d3_second_quantization_discharge_bounded_theorem_note_2026-07-20": {
+   "deps_hash": "4e50fe15d293",
    "out_degree": 5
   },
   "microcausality_many_body_nested_commutator_lightcone_bounded_theorem_note_2026-07-18": {

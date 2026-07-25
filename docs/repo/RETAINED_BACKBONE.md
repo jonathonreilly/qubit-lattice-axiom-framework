@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 97 |
-| Retained bounded rows | 319 |
+| Retained bounded rows | 320 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 21 |
 
@@ -123,7 +123,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (319)
+## Retained bounded rows (320)
 
 Sorted by load-bearing graph score (descending).
 
@@ -250,6 +250,7 @@ Sorted by load-bearing graph score (descending).
 - [`alt_connectivity_family_fm_transfer_note`](../../docs/ALT_CONNECTIVITY_FAMILY_FM_TRANSFER_NOTE.md) — score 4.700; audited 2026-05-05T11:39:01.965488+00:00
 - [`chiral_3plus1d_boundary_phase_note`](../../docs/CHIRAL_3PLUS1D_BOUNDARY_PHASE_NOTE.md) — score 4.700; audited 2026-05-17T15:21:44.946233+00:00
 - [`chiral_3plus1d_coupled_coin_note`](../../docs/CHIRAL_3PLUS1D_COUPLED_COIN_NOTE.md) — score 4.700; audited 2026-05-23T17:58:15.439009+00:00
+- [`read_reset_cadence_interference_channel_bounded_theorem_note_2026-07-17`](../../docs/READ_RESET_CADENCE_INTERFERENCE_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-17.md) — score 4.700; audited 2026-07-25T04:50:33.372465+00:00
 - [`architecture_portability_sweep_note`](../../docs/ARCHITECTURE_PORTABILITY_SWEEP_NOTE.md) — score 4.500; audited 2026-06-21T14:35:07.078849+00:00
 - [`cycle_battery_scaled_note_2026-04-10`](../../docs/CYCLE_BATTERY_SCALED_NOTE_2026-04-10.md) — score 4.500; audited 2026-05-03T02:53:44.450230+00:00
 - [`dirac_core_card_note`](../../docs/DIRAC_CORE_CARD_NOTE.md) — score 4.500; audited 2026-04-30T20:26:06.956529+00:00

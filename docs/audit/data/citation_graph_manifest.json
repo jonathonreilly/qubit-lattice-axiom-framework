@@ -1,6 +1,6 @@
 {
- "edge_count": 15067,
- "node_count": 4510,
+ "edge_count": 15068,
+ "node_count": 4511,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -11029,6 +11029,10 @@
   "propagator_family_unification_note": {
    "deps_hash": "475143577275",
    "out_degree": 5
+  },
+  "proper_cubic_finite_support_linear_kernel_classification_bounded_theorem_note_2026-07-25": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "proper_cubic_local_admission_relations_conditional_port_finite_grade_block_bounded_theorem_note_2026-07-23": {
    "deps_hash": "e3b0c44298fc",

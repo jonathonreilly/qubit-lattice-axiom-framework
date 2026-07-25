@@ -1,24 +1,45 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T06:10:16.492919+00:00",
+  "audit_invocation_history": [
+    "c106cea066db44088844c84164ac1bd1"
+  ],
+  "audit_invocation_id": "c106cea066db44088844c84164ac1bd1",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "bound_state_selection_note": "Finite regularized lattice diagnostic for d=2,3,4,5 on the listed grid sizes and couplings: the runner-built sparse Hamiltonians reproduce the printed negative-eigenvalue counts, ground-state energies, IPR/localization diagnostics, propagation ratios, and d=4/d=5 coupling-scan trends. This excludes any retained continuum bridge to atomic chemistry, anthropic dimension selection, exclusion of d=2, or a theorem that d>=4 falls to center under the implemented IPR threshold."
+    },
+    "dep_claim_type": {
+      "bound_state_selection_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "bound_state_selection_note": "retained_bounded"
+    },
+    "deps": [
+      "bound_state_selection_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 5.585,
+    "runner_hash": "2f8e12b1247c5653700c1eae9ee9390bc2cdebd044ce9bde2b869ec8200b7af0",
+    "transitive_descendants": 23
+  },
+  "audit_status": "audited_numerical_match",
+  "auditor": "codex-audit-batch-A-20260725-f37fff5c",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The bounded computational chain closes at the explicitly supplied textbook standard-QM and calibrated comparator inputs: the runner computes the finite-grid hydrogen spectrum and helium benchmarks consistently. It does not close a framework-internal atomic prediction.",
   "claim_id": "atomic_hydrogen_helium_probe_note",
-  "claim_scope": null,
+  "claim_scope": "A standard-QM numerical scaffold reproduces the listed finite-grid hydrogen energies and evaluates the stated independent-electron and one-parameter variational helium benchmarks.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T06:10:16.492919+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +47,20 @@
     "bound_state_selection_note"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_numerical_match",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_numerical_match",
   "load_bearing_score": 5.585,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "With textbook standard-QM inputs, the runner reproduces the hydrogen spectrum to approximately 10^-4 relative error and obtains the one-parameter helium variational benchmark within approximately 2% of experiment.",
+  "load_bearing_step_class": "G",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "a130aec6f29bcd390a80f566847b8f1813ea51c31fe44c4798ded0789d4b0df1",
   "note_path": "docs/ATOMIC_HYDROGEN_HELIUM_PROBE_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit if framework-derived electron-mass, Coulomb-normalization, and one-body Schr\u00f6dinger-sector inputs replace the textbook and calibrated values.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -125,14 +147,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 3,
+    "B": 4,
     "C": 0,
-    "D": 0,
-    "total_pass": 0
+    "D": 3,
+    "total_pass": 10
   },
   "runner_path": "scripts/frontier_atomic_hydrogen_helium_probe.py",
   "title": "Atomic Hydrogen and Helium Probe --- Standard-QM Scaffold Lane",
   "transitive_descendants": 23,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the physical-eV results and helium residual use the calibrated Hartree conversion and embedded experimental comparator, while the Hamiltonian itself is supplied textbook standard QM. Why this blocks: the successful calculation is a numerical benchmark at chosen external inputs, not a structural framework derivation. Repair target: substitute retained framework-derived atomic Hamiltonian, electron-mass, Coulomb-normalization, and unit-map inputs into the computational harness. Claim boundary until fixed: the listed finite-grid hydrogen results and one-parameter helium benchmark are internally reproduced, but no framework-internal atomic prediction follows."
 }

@@ -70,7 +70,7 @@ residual actually costs to discharge. Nothing here is adopted or recommended.
 
 | residual | what discharging it costs | notes |
 |---|---|---|
-| `alpha` (hypercharge) | **a unit convention** — one owner decision | Cheapest of the four. Tracelessness already fixes the ratio `+1 : -3` exactly; only the scale is at stake, and the convention that the trivial block reads unit charge gives `1/3`. |
+| `alpha` (hypercharge) | **a dimensionless normalization choice** — one owner decision | Cheapest of the four, but **not paid by taking Planck**. Tracelessness already fixes the ratio `+1 : -3` exactly, so only one number is at stake; the choice that the trivial block reads unit charge gives `1/3`. An earlier version of this table called this "a unit convention", which was wrong and misleading: `alpha` is a pure number, while the scale primitive supplies a *dimensionful* ruler and declares zero dimensionless content. Two different senses of "unit". |
 | `w_formation` (Koide) | **a counting convention** — one owner decision | Consequences already computed in landed work: `w = 1/2` gives `r = 1/2, kappa = 2`; `w = 1/3` gives `r = 1`. |
 | `kappa_EW` (electroweak) | **conditional**: a carrier/readout-context identification first, then it collapses to a counting convention | Gated by the **EW instance premise**. `CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md` states the EW identification is "a named instance premise with witnesses" and that "cardinality `8/9` is consistent with the `M_3` unit/traceless split, but **cardinality alone does not supply the Hilbert-Schmidt cell structure**." If that premise is discharged, the C2 conditional correspondence makes `kappa_EW`'s missing rule exactly a choice of `w` on that class. |
 | `a_act` (AC occurrence) | **a formation or rate law** — not a convention at all | Largest commitment, and the one the axioms most explicitly withhold: every formation rule is downstream content. `|b|` is slaved to it by the AC target at `delta = 2/9`. |
@@ -89,9 +89,34 @@ most.
 the only place where discharging one named object demonstrably converts a
 second residual into an already-priced decision.
 
-## Planck-as-scale cannot pin the law, and this is now sharp
+## Planck's scope, and one mechanism tested and ruled out
 
-Attempted directly, at owner direction, and it fails for a precise reason.
+**What Planck settles.** The scale-reference primitive fixes `a^{-1} = M_Pl`, a
+dimensionful units conversion. That is the whole of it. By its own text it
+"carries zero dimensionless content", so it settles no pure number anywhere in
+the framework — not `alpha`, not `A/B`, not `w`. Any table row priced as "a unit
+convention" should be checked against that distinction; one row in the pricing
+table above was mislabeled and is now corrected.
+
+**A mechanism tested and ruled out.** The most direct route from neighbour
+constraints to the law's coefficients: `L = A·I + B·Delta` is only ever applied
+to *admissible* sources, so if admissibility forced a linear relation among
+`rho` and `sum_nbr rho`, then `I` and `Delta` would be dependent there and the
+two-parameter family would collapse. Tested on a `3^3` torus by enumerating
+admissible configurations and taking the rank of their span:
+
+| rule | admissible configs (<= 3 records) | span rank |
+|---|---|---|
+| hard-core (no occupied neighbour) | 1576 | 27/27 |
+| exactly one occupied neighbour | 82 | 27/27 |
+| at most one | 2953 | 27/27 |
+| unconstrained | 3304 | 27/27 |
+
+Admissible sources span the full space even under the tightest rules, so `I` and
+`Delta` remain independent on them. **The neighbour rule does not pin the law's
+coefficients by source-restriction.** A different mechanism would be needed.
+
+## An attempt that failed, recorded because the reason is instructive
 
 The scale-reference primitive fixes `a^{-1} = M_Pl` and declares it "carries
 zero dimensionless content". The landed kernel classification leaves the

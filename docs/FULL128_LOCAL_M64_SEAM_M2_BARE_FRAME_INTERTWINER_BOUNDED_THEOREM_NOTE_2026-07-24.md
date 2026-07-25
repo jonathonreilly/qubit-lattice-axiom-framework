@@ -19,7 +19,7 @@
 **Bare-frame pair-cocycle runner:**
 [`scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py`](../scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py)
 
-**Primary integrated runner:**
+**Primary runner:**
 [`scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py`](../scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py)
 
 **Receipt:**
@@ -247,11 +247,13 @@ This note claims no global literature priority for any of them.
 The new campaign result recorded here is their exact combination for this
 specific six-mode-plus-seam update: a full128 physical-M2 intertwiner with the
 stated local contact/seam block, resources, deletions, static code projectors,
-and bare-coordinate proper-cubic code-space covariance. The
-[Cycle 230 coarse target fixture](work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md)
-is contextual provenance for the supplied coin/contact target only; no Cycle
-230 source object is imported, and the present source closure supplies and
-recomputes its exact finite matrices and constants directly. This note does
+and bare-coordinate proper-cubic code-space covariance. The historical
+`Cycle 230 coarse target fixture` is contextual provenance for the supplied
+coin/contact target only; no Cycle 230 source object is imported, and the
+present source closure supplies and recomputes its exact finite matrices and
+constants directly. The archived context path is
+`docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md`.
+This note does
 not turn that historical calculation into a recurrent law or extend an
 unrelated prior-art engine.
 

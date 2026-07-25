@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T09:52:01.127742+00:00",
+  "audit_invocation_history": [
+    "381e2e6d7cf2446693ab6b57b9f27a8b"
+  ],
+  "audit_invocation_id": "381e2e6d7cf2446693ab6b57b9f27a8b",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/frontier_nonlinear_born_gravity.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "i3_zero_exact_theorem_note": "Given linearly additive disjoint-path amplitudes and quadratic Hilbert-surface probabilities P_S=|A_S|^2, the Sorkin third-order interference parameter I_3 vanishes identically by inclusion-exclusion."
+    },
+    "dep_claim_type": {
+      "i3_zero_exact_theorem_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "i3_zero_exact_theorem_note": "retained"
+    },
+    "deps": [
+      "i3_zero_exact_theorem_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 6.024,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_nonlinear_born_gravity.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "d21ed55a30b5846a3ad5c3fbdf53a1218d817f07e850bfe843a8fd27e238c7ea",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "d21ed55a30b5846a3ad5c3fbdf53a1218d817f07e850bfe843a8fd27e238c7ea",
+    "runner_path": "scripts/frontier_nonlinear_born_gravity.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 45
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-c5b62164",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The quadratic branch closes, but the runner's purported cubic branch computes psi * |psi|^2 rather than the claimed psi^3. Consequently, the packet provides no computation of the cubic half of the conjunctive claim.",
   "claim_id": "nonlinear_born_gravity_note",
-  "claim_scope": null,
+  "claim_scope": "Quadratic and cubic pointwise nonlinear propagators, defined respectively as |psi|psi and psi^3, on the specified finite 2D setup produce nonzero Sorkin I_3 and centroid shifts opposite in sign to the linear baseline.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T09:52:01.127742+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,20 @@
     "i3_zero_exact_theorem_note"
   ],
   "direct_in_degree": 1,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 6.024,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For these two nonlinearities on this lattice / kernel / coupling choice, the Born rule is violated and the sign of the centroid shift relative to the linear baseline flips from toward to away.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "60fec570648d08fe7f5954890a6d62ecf172f280c3feab328295e09b6bf61dcd",
   "note_path": "docs/NONLINEAR_BORN_GRAVITY_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit after implementing the claimed psi^3 cubic branch and regenerating stdout, or after consistently narrowing the source and labels to the actually computed psi * |psi|^2 map.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -230,12 +284,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 2,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 2
   },
   "runner_path": "scripts/frontier_nonlinear_born_gravity.py",
   "title": "Nonlinear Propagator: Born-Rule and Gravity-Sign Correlation (Exhibited Examples)",
   "transitive_descendants": 45,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner performs substantive calculations rather than printing hard-coded expected results, and its quadratic branch supports the two quadratic observations. However, apply_nonlinearity labels its cubic branch as psi^3 while returning psi * |psi|^2; these maps differ for complex amplitudes, so both reported cubic observations concern a different nonlinearity. Because the scoped assertion conjoins the quadratic and cubic examples, it does not close on its own terms."
 }

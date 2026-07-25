@@ -153,7 +153,7 @@
         },
         {
           "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10",
@@ -477,7 +477,7 @@
         },
         {
           "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "cl3_normalization_i3_accepted_premise_bridge_bounded_note_2026-05-27",

@@ -12,7 +12,7 @@
   "blocker": null,
   "chain_closes": null,
   "chain_closure_explanation": null,
-  "claim_id": "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24",
+  "claim_id": "full128_two_rail_fixed_law_compositional_induction_bounded_theorem_note_2026-07-24",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
@@ -23,26 +23,29 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "minimal_axioms"
+    "minimal_axioms",
+    "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
     "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
     "scripts/frontier_full128_code_projectors_2026_07_24.py",
-    "scripts/frontier_full128_cycle_encoder_2026_07_24.py"
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 0.0,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "79e07213087f11e0fc387c5ff3920e63c3ad2b9aaac97437e4d772a3a9e5a095",
-  "note_path": "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+  "note_hash": "3caba3e2e27140f3e65c4bb2298738b084083ca3f68e451017430ce2657325ac",
+  "note_path": "docs/FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [],
@@ -55,8 +58,8 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
-  "title": "Full128 local M64 \u00d7 seam-M2 bare-frame intertwiner",
-  "transitive_descendants": 1,
+  "runner_path": "scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py",
+  "title": "Full128 two-rail fixed-law compositional induction",
+  "transitive_descendants": 0,
   "verdict_rationale": null
 }

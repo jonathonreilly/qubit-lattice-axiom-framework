@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 97 |
+| Retained positive rows | 98 |
 | Retained bounded rows | 321 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 21 |
 
-## Retained positive rows (97)
+## Retained positive rows (98)
 
 Sorted by load-bearing graph score (descending).
 
@@ -86,6 +86,7 @@ Sorted by load-bearing graph score (descending).
 - [`acphilambda_occupancy_determinant_power_split_exact_support_note_2026-07-04`](../../docs/ACPHILAMBDA_OCCUPANCY_DETERMINANT_POWER_SPLIT_EXACT_SUPPORT_NOTE_2026-07-04.md) — score 6.500; audited 2026-07-12T18:04:53Z
 - [`bmv_threebody_note_2026-04-11`](../../docs/BMV_THREEBODY_NOTE_2026-04-11.md) — score 6.500; audited 2026-04-30T18:43:54.122930+00:00
 - [`second_grown_family_complex_note`](../../docs/SECOND_GROWN_FAMILY_COMPLEX_NOTE.md) — score 6.500; audited 2026-05-10T16:44:56.011413+00:00
+- [`ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17`](../../docs/CKM_MASS_BASIS_NNI_STRUCTURAL_IDENTITIES_NARROW_THEOREM_NOTE_2026-06-17.md) — score 6.172; audited 2026-07-25T05:28:03.791586+00:00
 - [`staggered_graph_gauge_closure_note`](../../docs/STAGGERED_GRAPH_GAUGE_CLOSURE_NOTE.md) — score 6.085; audited 2026-05-08T02:57:40.106289+00:00
 - [`wave_poisson_cinf_bridge_theorem_note_2026-05-28`](../../docs/WAVE_POISSON_CINF_BRIDGE_THEOREM_NOTE_2026-05-28.md) — score 6.055; audited 2026-05-29T21:23:07.927656+00:00
 - [`affine_imaginary_slot_invariance_narrow_theorem_note_2026-05-02`](../../docs/AFFINE_IMAGINARY_SLOT_INVARIANCE_NARROW_THEOREM_NOTE_2026-05-02.md) — score 6.024; audited 2026-05-05T11:19:40.764849+00:00

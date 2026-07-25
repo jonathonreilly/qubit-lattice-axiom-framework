@@ -71,13 +71,13 @@ AUDIT_INPUT_PATHS = (
 
 DEPENDENCIES = {
     "scripts/physical_dynamical_metric_source_law_bridge_cycle576_regge_support_2026_07_22.py":
-        "1211c739167236636f35a362f374a0204de8bb8476812a00cb4d3f5d0fa75430",
+        "dcc397cbdade106d959b4fed41177f4928c8d2d99668b549c31af13ef5f7dcf1",
     "scripts/physical_dynamical_metric_source_law_bridge_cycle576_plaquette_support_2026_07_22.py":
-        "652801a920d65735e0156ec9ad1958604cdc3b297af5c33a957e4b9b8896d440",
+        "b5050b0df3d59b713448c399431a5028ea5c28c4c0d63e1a187a431d28a2f31d",
     "outputs/physical_source_insertion_selection_backreaction_tournament_cycle572_receipt_2026_07_22.json":
-        "312ea93982e59dca5385a47d3054994c2d9921fa9e5ed042ddb8bc6d082b5d87",
+        "d565d081b6c0e01adff2fd4e6e04f5f3da6991db7264843c1ae1d4c332d1a8ed",
     "scripts/physical_source_insertion_selection_backreaction_tournament_cycle572_2026_07_22.py":
-        "ee3cae3d548dbf7f28c848cdb2710521483aa66e46b4e60363627b7d2d36e9b0",
+        "cc71457e605d778ea91cf6b1ab24b6b68eca5eae5b673bde7c3cdecacffae28b",
     "docs/FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md":
         "72e37ba7301e2aa6926c666304440bf370e2e22158d69e26262440d51bf07ecc",
     "scripts/r3_regge_linearization_lambda1_healthy_graviton_2026_06_08.py":

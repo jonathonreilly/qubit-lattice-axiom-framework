@@ -165,4 +165,3 @@ def route_b_plaquette(receipt: dict) -> dict:
         "called_physical_stress_energy_or_gravity": False,
         "physical_site_encoding_or_intertwiner_executed": False,
     }
-

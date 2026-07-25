@@ -1,0 +1,131 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_l6_ind8_separator_reach_census_surface_comparison_2026_07_25.py
+runner_sha256: 8aa8923f35252f5c1c10b7f84f81c8166370fb7bc9afb2f2595eee7bdd200227
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 135.89
+status: ok
+----- stdout -----
+[info] L=6 built: N=216, M spectrum [0, -3, -6, -9], shell mults [8, 48, 96, 64] (0s)
+[info] groups built: |G_amb|=2592, |H|=5184 (13s)
+[GATE S1] PASS -- |G_amb|=2592=6^3*12, |H|=5184, [H:G]=2, S_eps in G_amb: False
+[GATE S2] PASS -- 137 H-classes {1: 2, 2: 5, 3: 4, 4: 3, 6: 24, 12: 57, 54: 6, 72: 6, 108: 21, 144: 9}; 75 G-orbits {1: 2, 2: 3, 3: 4, 4: 1, 6: 14, 12: 27, 54: 6, 72: 6, 108: 9, 144: 3} sum 2592
+[GATE S3] PASS -- dim A_nat=16, dim Z=4 (=C[M], min overlap 1.0000000000); 4 blocks ranks [8,48,64,96], each M_2(C), two-seed agree True
+[GATE S4] PASS -- sep6 rank sum 16, ||sep6||_F 4.000000000000, [sep6,D2] 5.2e-14, [sep6,J] 1.8e-14, max[sep6,rho(h)] 2.0e-14, overlap^2(A_nat,sep6) 2.57e-33
+[GATE S5] PASS -- dim A'=13 abelian (max||[A,B]|| 1.6e-15); C[M] dim 4, separator complement dim 9, blind to A_nat (max overlap^2 8.2e-31)
+[GATE L1] PASS -- sep6 H-invariance: max ||U sep6 U^T - sep6||_F over gens_H+inverses = 1.7e-14
+[info] structure done (66s)
+
+==== L=6 REACH CENSUS (75 H-orbits of G_amb) ====
+ci size dim closed omega(15) d(g) Dchi
+C   0 sz   1 dim   16 closed 1 omega 0.000000000000000 dg 0 dchi +0.0000000000
+C   1 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 0 dchi -0.0000000000
+C   2 sz   6 dim   36 closed 1 omega 0.000000000000000 dg 0 dchi +0.0000000000
+C   3 sz   6 dim   32 closed 1 omega 0.000000000000000 dg 0 dchi +0.0000000000
+C   4 sz  12 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C   5 sz   6 dim   40 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C   6 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 0 dchi -0.0000000000
+C   7 sz   3 dim   40 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C   8 sz  12 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C   9 sz  12 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  10 sz   3 dim   40 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  11 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 0 dchi -0.0000000000
+C  12 sz  12 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  13 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  14 sz   2 dim   36 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  15 sz  12 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  16 sz   6 dim   36 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  17 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  18 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  19 sz   6 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  20 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  21 sz   6 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  22 sz  12 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  23 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 0 dchi -0.0000000000
+C  24 sz   6 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  25 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 0 dchi -0.0000000000
+C  26 sz   6 dim   32 closed 1 omega 0.000000000000000 dg 0 dchi +0.0000000000
+C  27 sz   6 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  28 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  29 sz  12 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  30 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  31 sz  12 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  32 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 0 dchi +0.0000000000
+C  33 sz  12 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  34 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  35 sz  12 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  36 sz  12 dim   72 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  37 sz   4 dim   68 closed 1 omega 1.000000000000030 dg 9 dchi +0.0000000000
+C  38 sz  12 dim   76 closed 1 omega 0.500000000000014 dg 9 dchi -0.0000000000
+C  39 sz  12 dim   68 closed 1 omega 0.333333333333343 dg 9 dchi +0.0000000000
+C  40 sz  12 dim   68 closed 1 omega 0.250000000000007 dg 9 dchi +0.0000000000
+C  41 sz   6 dim   76 closed 1 omega 0.500000000000013 dg 9 dchi -0.0000000000
+C  42 sz   6 dim   76 closed 1 omega 0.500000000000013 dg 9 dchi -0.0000000000
+C  43 sz   2 dim   28 closed 1 omega 0.250000000000006 dg 9 dchi -0.0000000000
+C  44 sz 108 dim  160 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  45 sz  54 dim  160 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  46 sz 108 dim  160 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  47 sz  54 dim  160 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  48 sz 108 dim   64 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  49 sz  54 dim   64 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  50 sz 108 dim   32 closed 1 omega 0.000000000000000 dg 0 dchi -0.0000000000
+C  51 sz 108 dim   32 closed 1 omega 0.000000000000000 dg 0 dchi +0.0000000000
+C  52 sz 108 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  53 sz 108 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  54 sz 108 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  55 sz 108 dim   80 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  56 sz  72 dim   48 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  57 sz 144 dim  200 closed 1 omega 1.000000000000027 dg 9 dchi -0.0000000000
+C  58 sz  72 dim  108 closed 1 omega 0.333333333333342 dg 9 dchi +6.0000000000
+C  59 sz 144 dim   84 closed 1 omega 0.266666666666674 dg 9 dchi +0.0000000000
+C  60 sz  72 dim  108 closed 1 omega 0.333333333333342 dg 9 dchi -6.0000000000
+C  61 sz 144 dim  200 closed 1 omega 1.000000000000027 dg 9 dchi -0.0000000000
+C  62 sz  72 dim  108 closed 1 omega 0.333333333333342 dg 9 dchi -6.0000000000
+C  63 sz  72 dim  108 closed 1 omega 0.333333333333342 dg 9 dchi +6.0000000000
+C  64 sz  72 dim   48 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  65 sz  54 dim  160 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  66 sz  54 dim  160 closed 1 omega 0.000000000000000 dg 9 dchi -0.0000000000
+C  67 sz  54 dim   64 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  68 sz   2 dim   36 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  69 sz   6 dim   40 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  70 sz   6 dim   36 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  71 sz   6 dim   36 closed 1 omega 0.000000000000000 dg 0 dchi +0.0000000000
+C  72 sz   3 dim   40 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  73 sz   3 dim   40 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
+C  74 sz   1 dim   16 closed 1 omega 0.000000000000000 dg 0 dchi +0.0000000000
+[info] census done (34s), peak RSS 0.64 GB
+[GATE CN0] PASS -- all 75 closures closed at cap 600, elements sum 2592=2592, 0 UNRESOLVED
+
+==== OMEGA VALUE SET ====
+omega=0.000000000000000 classes=61 elements=1818 nearest q<=12 0(err 1.7e-32) second 1/12(err 8.3e-02)
+omega=0.250000000000007 classes=2 elements=14 nearest q<=12 1/4(err 6.7e-15) second 3/11(err 2.3e-02)
+omega=0.266666666666674 classes=1 elements=144 nearest q<=12 3/11(err 6.1e-03) second 1/4(err 1.7e-02)
+omega=0.333333333333342 classes=5 elements=300 nearest q<=12 1/3(err 8.9e-15) second 4/11(err 3.0e-02)
+omega=0.500000000000013 classes=3 elements=24 nearest q<=12 1/2(err 1.3e-14) second 6/11(err 4.5e-02)
+omega=1.000000000000028 classes=3 elements=292 nearest q<=12 1(err 2.8e-14) second 11/12(err 8.3e-02)
+[GATE CN_total] PASS -- 6 distinct omega values, element total 2592=2592
+[GATE CN_q[0]] PASS -- omega=0 (err 1.7e-32) classes=61 elements=1818; rejector: next q<=12 1/12 off by 8.3e-02(>=1e-6)
+[GATE CN_q[1/4]] PASS -- omega=1/4 (err 6.7e-15) classes=2 elements=14; rejector: next q<=12 3/11 off by 2.3e-02(>=1e-6)
+[GATE CN_nonq] PASS -- omega=0.266666666666674 matches no q<=12 rational (nearest 3/11 err 6.1e-03); equals 4/15 (denominator 15>12, err 7.4e-15) classes=1 elements=144
+[GATE CN_q[1/3]] PASS -- omega=1/3 (err 8.9e-15) classes=5 elements=300; rejector: next q<=12 4/11 off by 3.0e-02(>=1e-6)
+[GATE CN_q[1/2]] PASS -- omega=1/2 (err 1.3e-14) classes=3 elements=24; rejector: next q<=12 6/11 off by 4.5e-02(>=1e-6)
+[GATE CN_q[1]] PASS -- omega=1 (err 2.8e-14) classes=3 elements=292; rejector: next q<=12 11/12 off by 8.3e-02(>=1e-6)
+[GATE CN_counts] PASS -- class/element counts: 0->(61,1818) 1/4->(2,14) 1/3->(5,300) 1/2->(3,24) 1->(3,292)
+[GATE CN_dg] PASS -- d(g) values [0, 9] (subset of {0,9}), counts d=0:14 d=9:61; omega>0 => d(g)=9: True
+[GATE L2] PASS -- class-function check: 6 orbits (one per omega stratum) x 3 random conjugates; all reproduce (dim, omega): True
+[GATE CMP1] PASS -- L=4 value 1/9 absent at L=6 (min|omega-1/9| 0.111); L=6 gains 1/4 True, 4/15 True, 1/2 True (not in L=4 set)
+[GATE CHR1] PASS -- Dchi set [-6, 0, 6]; +6 on 2 classes/144 el, -6 on 2 classes/144 el; |Dchi!=0|=4 classes/288 el, each size 72 dim 108
+[GATE CHR2] PASS -- {Dchi!=0} (n=4) is a PROPER subset of {omega=1/3} (n=5); counterexample class size 12 dim 68 has omega=1/3, Dchi=+8.3e-16 (L=4 equality does not survive)
+[GATE UNL1] PASS -- max omega 1.000000000000 on 3 classes sizes [4, 144, 144]; minimal reaching class size 4
+[GATE UNL2] PASS -- g1=diag((-1)^x1).T(1,1,1): in G_amb True, [g1,D2]=0 True, class size 4, dim<A_nat,g1>=68, omega=1.000000000000
+[GATE UNL3] PASS -- dim Z(<A_nat,g1>)=17; sep6 = e_a - e_b (resid 6.5e-15), e_a,e_b central (max comm 1.9e-15), each a single minimal central idempotent of rank 8=8; corner-center counts e_a->1, e_b->1, (e_a+e_b, rank 16)->2 (rejector resolves 2 blocks)
+[GATE DIAL1] PASS -- fixed sign (-1)^x1, linear part I: translation alone sweeps omega [((1, 1, 1), np.float64(1.0)), ((1, 1, 3), np.float64(0.5)), ((1, 1, 5), np.float64(0.333333)), ((3, 3, 3), np.float64(0.25)), ((1, 1, 0), np.float64(0.0))]
+
+[PERT] wrong separator P8a flips: ['S4-blindness (overlap^2 A_nat: sep6 2.6e-33 -> P8a 0.1250)', 'CN[omega=0] identity class (sep6 2.6e-33 -> P8a 0.1250)']
+[GATE PERT1] PASS -- P8a not blind (overlap^2 0.1250); identity class omega: sep6 2.6e-33 vs P8a 0.1250; 2 gates flip -> runner discriminates
+
+[info] wall-clock 135.7s, peak RSS 1.08 GB
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

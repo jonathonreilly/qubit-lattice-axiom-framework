@@ -69,9 +69,9 @@ DEPENDENCY_SHA256 = {
     "physical_enlarged_link_contact_work_tournament_cycle569_2026_07_22.py":
         "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
     "physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py":
-        "e959fa0ef29787b6eaca0fa0552ad3e921541432e11cdefffda7e9255472ff77",
+        "a9786cf68a9c669e7e7fe310a00ab9912aa404689651682ccfe3045a06e357f1",
     "physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py":
-        "7221d4ebb86fd599cf9dc7cc42535ad5ec461f99661f718c6a2b8d9317c64ba7",
+        "67aa2435d66fb34b6734cc564a82ac839525139fdc9e8c347dc1b2277d08b40b",
 }
 RECEIPT_SHA256 = {
     "physical_held_sparse_order_retirement_cycle563_receipt_2026_07_21.json":
@@ -79,11 +79,11 @@ RECEIPT_SHA256 = {
     "physical_enlarged_link_contact_work_tournament_cycle569_receipt_2026_07_22.json":
         "c80aae229d3721b273d12188960e2a4b16402d10a982856bec76c465dad52baa",
     "physical_matter_transition_clock_equivalence_tournament_cycle573_receipt_2026_07_22.json":
-        "bac4169a90f7bf45dd05fa0ea1a9febd96497ddb664fcf7673c365b456422e0a",
+        "61888b3dfa3e777c7b036f0c2156011155afd7c09e022c8ff8f200d1fa8b05c7",
     "physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_receipt_2026_07_22.json":
-        "7c276b540cd1a99b6d949b11257165cb328d878da6fddb7b5f3f9bec24e88dda",
+        "8fc92bed4e28f0b268a902d09e7cb3360684b1b7b0d24d5ecf7c25a55688c662",
 }
-CYCLE575_NOTE_SHA256 = "59bc7ae275140943f017d2a31107504e19fc8871c3bb7881d5b796761ada05ec"
+CYCLE575_NOTE_SHA256 = "4a603896d1c659420b72c2ce261aa495aeb085017276e57e1c91ac6e1a8c27a2"
 
 
 def check(label: str, condition: bool, detail: object = "") -> None:

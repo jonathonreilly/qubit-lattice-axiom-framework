@@ -1,0 +1,40 @@
+{
+ "all_24_invariant_triangulation_exists": false,
+ "audit": "unset",
+ "authority": "none",
+ "chirality_forced_at_ceiling": true,
+ "covariance_ceiling": 12,
+ "cycle": 690,
+ "cycle_claim": null,
+ "diagonal_orbits": {
+  "body": 4,
+  "face": 12
+ },
+ "escape_requires_vertices_beyond_Z3": true,
+ "fail_count": 0,
+ "failures": 0,
+ "firewalls": {
+  "any_gravity_stress_energy_or_einstein_claim": false,
+  "chirality_choice_called_parity_violation": false,
+  "stabilizer_called_a_physical_symmetry": false
+ },
+ "group_order": 24,
+ "landed_kuhn_covariance": 6,
+ "no_go": {
+  "axiom_pressure": false,
+  "escape_conditions": [
+   "enrich the vertex set beyond Z^3 (face/body centres), at the cost of leaving the lattice",
+   "accept 12 via the five-tetrahedron decomposition and declare a chirality",
+   "accept 6, which is what the landed Kuhn complex carries"
+  ],
+  "shared_obstruction": false,
+  "statement": "no Z^3-vertex cube triangulation is invariant under all 24 proper cubic rotations"
+ },
+ "pass": true,
+ "pass_count": 15,
+ "passes": 15,
+ "resources": {
+  "elapsed_seconds": 0.007560500002000481
+ },
+ "runner_sha256": "c32ea0011a4018bd2bff34d8f4762673cf720162b1f878d3d7cf3e8da34e19a7"
+}

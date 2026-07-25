@@ -1,42 +1,90 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T06:59:42.333343+00:00",
+  "audit_invocation_history": [
+    "0b629dca571942e1bf2dc73c104d42d6"
+  ],
+  "audit_invocation_id": "0b629dca571942e1bf2dc73c104d42d6",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 4.959,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "803035e1e7f379f21001ba09cc2e644da85bcddf4015fa113631e02fe63e21af",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "803035e1e7f379f21001ba09cc2e644da85bcddf4015fa113631e02fe63e21af",
+    "runner_path": "scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 10
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-3c32eb7a",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The scoped finite-computation core closes, but the source packet additionally asserts a sign-phase exclusion boundary without the N1, N5, and N7 evidence required to ratify that negative conclusion.",
   "claim_id": "graph_braid_z3_anyon_exclusion_dichotomy_narrow_theorem_note_2026-05-29",
-  "claim_scope": null,
-  "claim_type": "positive_theorem",
+  "claim_scope": "Exact UD_2 homology for C_3, C_4, C_5, K_4, K_5, and K_{3,3}; nonplanarity and vertex-connectivity checks for L=3,4 cubic boxes.",
+  "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": "bounded_support",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "default_positive_theorem",
+  "claim_type_last_reviewed": "2026-07-25T06:59:42.333343+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 4.959,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For an already-established order-2 exchange class t, phi(t)^2=1, so phi(t) is +1 or -1.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "2bb601d0311df662dc677cd88a84e764f32361dc5939c0c830ac213a854f4030",
   "note_path": "docs/GRAPH_BRAID_Z3_ANYON_EXCLUSION_DICHOTOMY_NARROW_THEOREM_NOTE_2026-05-29.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: add a current-cycle N1-N8 stress surface with at least five distinct attacks, all five N5 resolution checks, and an independently evidenced N7 steelman resolution for the sign-phase exclusion, then re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1496,14 +1544,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 12,
     "B": 0,
-    "C": 0,
+    "C": 13,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 25
   },
   "runner_path": "scripts/graph_braid_z3_anyon_exclusion_dichotomy_2026_05_29.py",
   "title": "Graph-Braid Anyon-Exclusion Computed Witness Packet on Z^3 Cubes",
   "transitive_descendants": 10,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: Independent rank and maximal-minor checks confirm the displayed finite homology, and the graph counts, cut checks, and x^2=1 algebra are correct, but the artifact also asserts a derived sign-phase no-go without five distinct N1 attack routes or the required N5 resolution audit; N2 reduces to one order-2-character wall, N3 hits are non-load-bearing scope or cell-complex prose, and N4 has no cited prior residual witness. Why this blocks: N6 supplies no relevant partial-closure path, N7 lacks an independently evidenced steelman resolution, and N8 shows no applicable prior retirement mechanism, so the mandatory negative-claim gate cannot pass. Repair target: add current-cycle evidence for at least five genuinely distinct attacks, the per-element, per-site, per-mode, per-block, and lattice-wide rhetoric checks, and an independent steelman resolution. Claim boundary until fixed: retain only the exact finite UD_2 homology and L=3,4 cube nonplanarity/connectivity witnesses; leave the sign-phase exclusion unratified."
 }

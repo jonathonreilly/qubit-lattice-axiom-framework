@@ -1,4 +1,4 @@
-# Recurrent endpoint-incidence physical-M2 compiler tournament — Cycle 700
+# Recurrent endpoint-incidence physical-M2 compiler tournament — Cycle 703
 
 Date: 2026-07-25
 
@@ -6,9 +6,9 @@ Claim type: bounded_theorem
 
 Authority: none. Audit: unset. Constitutional effect: none.
 
-Cycle 700 is the next unused number on current main when this package is cut;
-the concurrently developed gravity/readout families have landed through Cycle
-699.  This package edits no
+Cycle 703 is the next unused number above the joint remote campaign maximum
+when this package is cut; the concurrently developed gravity/source family has
+claimed Cycles 697--702 on its remote branch.  This package edits no
 axiom, foundation, Qualification, primitive, registry, policy, queue, or audit
 surface.
 

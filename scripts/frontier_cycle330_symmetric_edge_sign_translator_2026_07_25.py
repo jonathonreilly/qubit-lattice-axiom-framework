@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 700 supporting diagnostic: symmetric edge-sign translator.
+"""Cycle 703 supporting diagnostic: symmetric edge-sign translator.
 
 Cycle 658 showed that factor-private endpoint-incidence features predict the
 Cycle-330 branch commutation sign.  This runner asks the stronger state-local

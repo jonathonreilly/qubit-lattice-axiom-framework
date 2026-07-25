@@ -964,12 +964,16 @@ def run_panel(
         votes: list[dict] = []
         failures: list[str] = []
         contract_failures: list[str] = []
+        transient_failures: list[str] = []
+        transient_prefix = f"{batch.TRANSIENT_SERVICE_FAILURE_RESULT}:"
         for job in jobs:
             vote, status = collect_vote(job)
             if vote is None:
                 failure = f"judge{job['judge']}:{status}"
                 failures.append(failure)
-                if status.startswith(VOTE_CONTRACT_ERROR_PREFIX):
+                if status.startswith(transient_prefix):
+                    transient_failures.append(failure)
+                elif status.startswith(VOTE_CONTRACT_ERROR_PREFIX):
                     contract_failures.append(failure)
             else:
                 context_error = sided_vote_context_error(row, vote)
@@ -997,11 +1001,6 @@ def run_panel(
             "tally": serialized_tally(votes),
         }
         if len(votes) != PANEL_SIZE:
-            transient_failures = [
-                failure
-                for failure in failures
-                if f":{batch.TRANSIENT_SERVICE_FAILURE_RESULT}:" in failure
-            ]
             if transient_failures and len(transient_failures) == len(failures):
                 record["result"] = PANEL_TRANSIENT_SERVICE_RESULT
                 write_panel_record(workdir, cid, panel_no, record)

@@ -910,11 +910,15 @@ class SchemaRecoveryTest(unittest.TestCase):
         diagnostics = (
             "HTTP 503 Service Unavailable\nHTTP 401 Unauthorized",
             "HTTP 503 Service Unavailable\nHTTP 403 Forbidden",
+            "HTTP 503 Service Unavailable\nauth failed",
+            "HTTP 503 Service Unavailable\nauth_error",
             "HTTP 503 Service Unavailable\nauthorization_error",
+            "HTTP 503 Service Unavailable\nauthorization required",
             "HTTP 503 Service Unavailable\npermission denied",
             "HTTP 503 Service Unavailable\nrate_limit_exceeded",
             "HTTP 503 Service Unavailable\ncontent policy blocked",
             "HTTP 503 Service Unavailable\nyou exceeded your current quota",
+            "HTTP 503 Service Unavailable\nquota limit reached",
             "HTTP 503 Service Unavailable\nunknown worker failure",
         )
         for diagnostic in diagnostics:
@@ -962,6 +966,39 @@ class SchemaRecoveryTest(unittest.TestCase):
             f"{batch.TRANSIENT_SERVICE_FAILURE_RESULT}:service unavailable",
         )
 
+    def test_judicial_vote_contract_error_cannot_spoof_transient_result(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            raw_output = root / "vote.json"
+            log = root / "judge.log"
+            raw_output.write_text(
+                json.dumps({
+                    "sided_with": "first",
+                    "ratified_verdict": "audited_conditional",
+                    "ratified_claim_type": "open_gate",
+                    "ratified_claim_scope": "scope",
+                    "ratified_load_bearing_step_class": "A",
+                    "negative_assertion_classes": [
+                        f":{batch.TRANSIENT_SERVICE_FAILURE_RESULT}:"
+                    ],
+                    "judgment_rationale": "rationale",
+                    "first_auditor_error": "none",
+                    "second_auditor_error": "error",
+                }),
+                encoding="utf-8",
+            )
+            log.write_text("", encoding="utf-8")
+            vote, status = panel.collect_vote({
+                "stalled": False,
+                "returncode": 0,
+                "raw_output": raw_output,
+                "log_path": log,
+            })
+
+        self.assertIsNone(vote)
+        self.assertTrue(status.startswith(panel.VOTE_CONTRACT_ERROR_PREFIX))
+        self.assertIn(batch.TRANSIENT_SERVICE_FAILURE_RESULT, status)
+
     def test_judicial_panel_requires_every_failure_to_be_transient(self):
         jobs = [
             {"judge": judge, "auditor": f"judge-{judge}"}
@@ -973,7 +1010,12 @@ class SchemaRecoveryTest(unittest.TestCase):
                 f"{batch.TRANSIENT_SERVICE_FAILURE_RESULT}:service unavailable",
             ),
             *[
-                (None, f"{panel.VOTE_CONTRACT_ERROR_PREFIX}bad schema")
+                (
+                    None,
+                    f"{panel.VOTE_CONTRACT_ERROR_PREFIX}"
+                    "negative_assertion_classes contains unknown classes "
+                    f"[':{batch.TRANSIENT_SERVICE_FAILURE_RESULT}:']",
+                )
                 for _ in range(panel.PANEL_SIZE - 1)
             ],
         ]

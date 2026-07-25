@@ -18,6 +18,8 @@ coefficientwise helper with itself.
 
 from __future__ import annotations
 
+import re
+
 from collections import defaultdict
 from fractions import Fraction
 from math import comb, factorial
@@ -41,23 +43,45 @@ PASS = 0
 FAIL = 0
 
 
-def check(label: str, condition: bool, detail: str = "") -> None:
+ECHOED_EXPECTATION = re.compile(
+    r"(?P<name>[A-Za-z_][A-Za-z0-9_]*)=(?P<value>\S+) expected=(?P=value)"
+)
+
+
+def check(
+    label: str,
+    condition: bool,
+    detail: str = "",
+    fail_detail: str = "",
+) -> None:
+    """Emit exactly one line per check.
+
+    The audit packet caps the cached runner stdout at 6000 characters, so the
+    printing layer carries only content that is not already stated in `label`.
+    `detail` holds the computed values; `fail_detail` holds the restatements
+    and mutant diagnostics, which are appended only when the check fails, so
+    no failure diagnostic is ever lost. Check count, ordering, tags and the
+    numerical logic are untouched.
+    """
     global PASS, FAIL
     if condition:
         PASS += 1
         tag = "PASS"
+        rendered = detail
     else:
         FAIL += 1
         tag = "FAIL"
-    suffix = f" :: {detail}" if detail else ""
+        rendered = "; ".join(part for part in (detail, fail_detail) if part)
+    if ECHOED_EXPECTATION.fullmatch(rendered):
+        rendered = ECHOED_EXPECTATION.sub(
+            r"\g<name>=expected=\g<value>", rendered
+        )
+    suffix = f" :: {rendered}" if rendered else ""
     print(f"[{tag}] {label}{suffix}")
 
 
 def section(title: str) -> None:
-    print()
-    print("-" * 96)
-    print(title)
-    print("-" * 96)
+    print(f"\n-- {title}")
 
 
 def dim_su3(weight: Weight) -> int:
@@ -452,13 +476,11 @@ def expected_diagonal_polynomial(target: Weight, coefficient: Fraction) -> Matri
 
 
 def main() -> int:
-    print("=" * 96)
     print("GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE")
     print(
         "Exact Pieri recurrence through level "
         f"{MAX_TENSOR_LEVEL}; certified coordinate box B_{CERTIFIED_BOX_MAX}"
     )
-    print("=" * 96)
 
     section("Part 1: exact SU(3) Pieri identities and full-support tensor recurrence")
     local_fund_dim_ok = True
@@ -481,17 +503,17 @@ def main() -> int:
     check(
         "fundamental Pieri branches conserve dimension locally",
         local_fund_dim_ok,
-        detail=f"checked all weights in coordinate box B_{MAX_TENSOR_LEVEL}",
+        fail_detail=f"checked all weights in coordinate box B_{MAX_TENSOR_LEVEL}",
     )
     check(
         "antifundamental Pieri branches conserve dimension locally",
         local_antifund_dim_ok,
-        detail=f"checked all weights in coordinate box B_{MAX_TENSOR_LEVEL}",
+        fail_detail=f"checked all weights in coordinate box B_{MAX_TENSOR_LEVEL}",
     )
     check(
         "fundamental and antifundamental Pieri rules are exchanged by conjugation",
         local_swap_ok,
-        detail="(p,q) <-> (q,p)",
+        fail_detail="(p,q) <-> (q,p)",
     )
 
     levels = build_levels(MAX_TENSOR_LEVEL)
@@ -581,7 +603,7 @@ def main() -> int:
     check(
         "computed first-occurrence levels equal p+q throughout B_8",
         first_levels_ok,
-        detail="level is read from the recurrence, not assigned by a witness helper",
+        fail_detail="level is read from the recurrence, not assigned by a witness helper",
     )
 
     minimal_multiplicity_ok = all(
@@ -591,7 +613,7 @@ def main() -> int:
     check(
         "computed minimal-level multiplicity equals binomial(p+q,p) throughout B_8",
         minimal_multiplicity_ok,
-        detail="stronger finite certificate than the analytic >=1 occurrence",
+        fail_detail="stronger finite certificate than the analytic >=1 occurrence",
     )
 
     conjugation_symmetry_ok = all(
@@ -629,10 +651,7 @@ def main() -> int:
                 multiplicity,
                 (6**level) * factorial(level),
             )
-            detail = (
-                f"first n={level}, multiplicity={multiplicity}, "
-                f"beta=1 term={lower}"
-            )
+            detail = f"first n={level}, mult={multiplicity}, beta=1 term={lower}"
             ok &= lower > 0
         check(f"computed positive Wilson-series term for weight {weight}", ok, detail)
 
@@ -648,7 +667,7 @@ def main() -> int:
     check(
         "beta=0 has c_(0,0)=1 and zero coefficient for every nontrivial B_8 weight",
         beta_zero_ok,
-        detail="only the n=0 tensor power contributes",
+        fail_detail="only the n=0 tensor power contributes",
     )
 
     normalized_sign_ok = True
@@ -662,13 +681,12 @@ def main() -> int:
         c_lower = Fraction(multiplicity, (6**level) * factorial(level))
         dimension = dim_su3(weight)
         normalized_sign_ok &= c_lower > 0 and dimension > 0
-        normalized_details.append(
-            f"{weight}:positive c term={c_lower}, d={dimension}, c00>0 from n=0"
-        )
+        normalized_details.append(f"{weight}:c={c_lower},d={dimension}")
     check(
         "computed numerator, irrep dimension, and c_00 have the signs required for a_lambda>0",
         normalized_sign_ok,
-        detail="; ".join(normalized_details),
+        detail="all c terms positive, c00>0 from n=0; "
+        + "; ".join(normalized_details),
     )
 
     section("Part 5: hostile controls for the tensor-product certificate")
@@ -692,7 +710,7 @@ def main() -> int:
     check(
         "hostile control rejects deletion of a fundamental Pieri branch",
         missing_branch_dimension_failure,
-        detail="mutant violates exact dimension conservation",
+        fail_detail="mutant violates exact dimension conservation",
     )
 
     swapped_rule_levels = build_levels(
@@ -712,7 +730,7 @@ def main() -> int:
     check(
         "hostile control rejects replacing 3bar Pieri by a second 3 Pieri rule",
         swapped_rule_failure,
-        detail="dimension alone is insufficient; conjugation and first occurrence catch it",
+        fail_detail="dimension alone is insufficient; conjugation and first occurrence catch it",
     )
 
     recurrence_mutants_rejected_independently = all(
@@ -726,7 +744,7 @@ def main() -> int:
     check(
         "independent character decompositions reject both hostile Pieri recurrences",
         recurrence_mutants_rejected_independently,
-        detail="both mutants disagree with Jacobi-Trudi and Gelfand-Tsetlin tables",
+        fail_detail="both mutants disagree with Jacobi-Trudi and Gelfand-Tsetlin tables",
     )
 
     independently_computed_mixed_occurrences = [
@@ -800,7 +818,7 @@ def main() -> int:
     check(
         "d_lambda in Z cancels the Schur 1/d_mu only on lambda=mu",
         dimension_cancellation_ok,
-        detail="checked before choosing any z sequence",
+        fail_detail="checked before choosing any z sequence",
     )
 
     z = {
@@ -823,7 +841,7 @@ def main() -> int:
     check(
         "finite Haar convolution gives z_mu chi_mu as a full matrix polynomial",
         exact_action_ok,
-        detail="arbitrary nonsymmetric rational sequence on B_3",
+        fail_detail="arbitrary nonsymmetric rational sequence on B_3",
     )
 
     test_support = [(0, 0), (1, 0), (0, 1), (2, 1)]
@@ -866,7 +884,7 @@ def main() -> int:
             == dim_su3((1, 0)) * correct_fundamental[key]
             for key in correct_fundamental
         ),
-        detail="mutant produces Tr D instead of Tr D/3",
+        fail_detail="mutant produces Tr D instead of Tr D/3",
     )
 
     missing_z_dimension_rejected = any(
@@ -884,7 +902,7 @@ def main() -> int:
     check(
         "hostile control rejects omission of d_lambda from the central polynomial",
         missing_z_dimension_rejected,
-        detail="mutant leaves an uncancelled 1/d_lambda",
+        fail_detail="mutant leaves an uncancelled 1/d_lambda",
     )
 
     scalar_only_mutant = {((1, 0), 0, 0): z[(1, 0)]}
@@ -892,7 +910,7 @@ def main() -> int:
     check(
         "hostile control rejects returning only z_mu without chi_mu(V)",
         scalar_only_mutant != correct_polynomial and len(correct_polynomial) == 3,
-        detail="correct fundamental output has all three diagonal trace entries",
+        fail_detail="correct fundamental output has all three diagonal trace entries",
     )
 
     wrong_dual_pairing = {
@@ -904,7 +922,7 @@ def main() -> int:
         "hostile control rejects the dual-irrep pairing caused by an inverse/conjugation mutation",
         wrong_dual_pairing[((0, 1), (1, 0))] == 1
         and wrong_dual_pairing[((1, 0), (1, 0))] == 0,
-        detail="mutant swaps fundamental and antifundamental instead of acting diagonally",
+        fail_detail="mutant swaps fundamental and antifundamental instead of acting diagonally",
     )
 
     section("Part 8: source-scope checks")
@@ -926,10 +944,7 @@ def main() -> int:
     for marker in note_markers:
         check(f"source-note marker present: {marker}", marker in note_text)
 
-    print()
-    print("=" * 96)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
-    print("=" * 96)
     return 0 if FAIL == 0 else 1
 
 

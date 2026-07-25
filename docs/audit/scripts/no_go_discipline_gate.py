@@ -19,6 +19,54 @@ from typing import Any
 
 
 RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
+
+# Publication-strength rank, mirroring compute_effective_status.RANK. This
+# module is a leaf import for the whole audit lane (apply, invalidate, queue,
+# lint, orchestrators), so it deliberately does not import the pipeline stage
+# that owns the canonical table. `test_snapshot_status_rank_matches_pipeline`
+# asserts the two tables agree, so the copy cannot drift silently.
+SNAPSHOT_STATUS_RANK = {
+    "retained": 100,
+    "retained_no_go": 100,
+    "retained_bounded": 95,
+    "retained_pending_chain": 80,
+    "open_gate": 40,
+    "unaudited": 30,
+    "audit_in_progress": 30,
+    "meta": 25,
+    "audited_decoration": 20,
+    "audited_numerical_match": 15,
+    "audited_renaming": 10,
+    "audited_conditional": 10,
+    "audited_failed": 0,
+}
+
+
+def snapshot_status_rank(status: str | None) -> int:
+    """Rank a manifest authority's effective_status for drift comparison."""
+    if isinstance(status, str) and status.startswith("decoration_under_"):
+        return 70
+    return SNAPSHOT_STATUS_RANK.get(status or "unaudited", -1)
+
+
+# Authenticated-evidence snapshot contract. The tag and the required entry
+# fields must move together: `test_evidence_snapshot_writer_satisfies_reader`
+# fails if `build_evidence_snapshot` ever stops emitting a field the reader
+# demands. Expanding the required set without that guard is what silently
+# voided every stored no-go snapshot on 2026-07-11.
+EVIDENCE_SNAPSHOT_SCHEMA = "no_go_evidence_snapshot_v1"
+EVIDENCE_SNAPSHOT_ENTRY_REQUIRED_FIELDS = frozenset(
+    {
+        "roles",
+        "content_sha256",
+        "verified_locators",
+        "verified_values",
+        "phrase_occurrences",
+        "full_phrase_groups",
+    }
+)
+
+
 PRIOR_AUTHORITY_PREMISE_TYPES = {
     "axiom_or_approved_primitive",
 }
@@ -2254,14 +2302,48 @@ def build_evidence_snapshot(
                 candidate_id_universe
             )
         entries[path] = snapshot_entry
-    return {"schema": "no_go_evidence_snapshot_v1", "entries": entries}
+    return {"schema": EVIDENCE_SNAPSHOT_SCHEMA, "entries": entries}
+
+
+def evidence_snapshot_schema_defect(packet: dict[str, Any]) -> str | None:
+    """Name the reason a snapshot cannot be read, distinguishing shapes.
+
+    `evidence_manifest_from_snapshot` returns a bare None from ~25 validation
+    points, so a snapshot written by an older writer and a genuinely corrupt
+    one were indistinguishable in the invalidation reason. On 2026-07-11 the
+    reader's required entry-field set was expanded under an unchanged schema
+    tag; every snapshot already on disk became unreadable, and the resulting
+    `no_go_discipline_packet_invalid` reason gave no way to tell a schema
+    migration from evidence tampering. This reports the difference.
+    """
+    if not isinstance(packet, dict):
+        return "packet is not an object"
+    snapshot = packet.get("evidence_snapshot")
+    if not isinstance(snapshot, dict):
+        return "evidence_snapshot is absent or not an object"
+    if snapshot.get("schema") != EVIDENCE_SNAPSHOT_SCHEMA:
+        return f"evidence_snapshot schema is {snapshot.get('schema')!r}"
+    raw_entries = snapshot.get("entries")
+    if not isinstance(raw_entries, dict):
+        return "evidence_snapshot entries is absent or not an object"
+    for path in sorted(raw_entries):
+        stored = raw_entries[path]
+        if not isinstance(stored, dict):
+            return f"entries[{path!r}] is not an object"
+        absent = sorted(EVIDENCE_SNAPSHOT_ENTRY_REQUIRED_FIELDS - set(stored))
+        if absent:
+            return (
+                f"entries[{path!r}] predates the current entry shape; "
+                f"required fields absent: {', '.join(absent)}"
+            )
+    return None
 
 
 def evidence_manifest_from_snapshot(packet: dict[str, Any]) -> dict[str, dict] | None:
     if not isinstance(packet, dict):
         return None
     snapshot = packet.get("evidence_snapshot")
-    if not isinstance(snapshot, dict) or snapshot.get("schema") != "no_go_evidence_snapshot_v1":
+    if not isinstance(snapshot, dict) or snapshot.get("schema") != EVIDENCE_SNAPSHOT_SCHEMA:
         return None
     raw_entries = snapshot.get("entries")
     if not isinstance(raw_entries, dict):
@@ -2515,7 +2597,11 @@ def evidence_snapshot_current_error(
     doubly-confirmed cross-family cleans."""
     stored_manifest = evidence_manifest_from_snapshot(packet)
     if stored_manifest is None:
-        return "evidence_snapshot is malformed or predates the current authenticated schema"
+        defect = evidence_snapshot_schema_defect(packet)
+        return (
+            "evidence_snapshot is malformed or predates the current "
+            f"authenticated schema ({defect or 'entry failed field validation'})"
+        )
     stable_roles = {
         "source", "authority", "runner", "helper", "premise_registry",
         "framework_premise",
@@ -2590,9 +2676,24 @@ def evidence_snapshot_current_error(
                 return f"evidence_snapshot raw content hash drifted for {path!r}"
         if set(current.get("roles") or []) != roles:
             return f"evidence_snapshot roles drifted for {path!r}"
-        for field in ("effective_status", "accepted_premise_type"):
-            if current.get(field) != stored.get(field):
-                return f"evidence_snapshot {field} drifted for {path!r}"
+        if current.get("accepted_premise_type") != stored.get("accepted_premise_type"):
+            return f"evidence_snapshot accepted_premise_type drifted for {path!r}"
+        # An authority that got STRONGER is not evidence decay. The
+        # development tier already invalidates on rank decrease only
+        # (invalidate_stale_audits.detect_invalidation), and applying strict
+        # equality here made the audit lane's own throughput destructive:
+        # promoting a cited authority deleted the citing no-go verdict.
+        # Strengthening is re-audit signal instead, carried by
+        # evidence_snapshot_index_growth.
+        stored_status = stored.get("effective_status")
+        current_status = current.get("effective_status")
+        if current_status != stored_status and snapshot_status_rank(
+            current_status
+        ) < snapshot_status_rank(stored_status):
+            return (
+                f"evidence_snapshot effective_status weakened for {path!r}: "
+                f"{stored_status} -> {current_status}"
+            )
     return None
 
 
@@ -2613,6 +2714,18 @@ def evidence_snapshot_index_growth(
     for path, stored in stored_manifest.items():
         roles = set(stored.get("roles") or [])
         current_entry = current_manifest.get(path) or {}
+        # A cited authority that gained strength is a targeted re-audit
+        # signal, never a retroactive deletion. `evidence_snapshot_current_error`
+        # deliberately lets this through; recording it here is what keeps the
+        # movement visible to the dispatcher.
+        stored_status = stored.get("effective_status")
+        current_status = current_entry.get("effective_status")
+        if current_status != stored_status and snapshot_status_rank(
+            current_status
+        ) > snapshot_status_rank(stored_status):
+            growth.setdefault(path, []).append(
+                f"authority_strengthened:{stored_status}->{current_status}"
+            )
         if "source" in roles and (
             stored.get("full_content_sha256")
             == current_entry.get("full_content_sha256")

@@ -1510,6 +1510,62 @@ def main() -> int:
         if cycle_count:
             add_notice("graph_cycles", f"graph contains {cycle_count} back-edges (cycles)")
 
+    # No-go grade-path health. `retained_no_go` is a named retained grade and
+    # the framework leans on foreclosures constantly, but nothing reported
+    # whether the grade was ever actually reached. It was not: the population
+    # sat at zero for months while clean forensic verdicts were minted and
+    # then reset, and no surface said so. These notices make the grade path
+    # observable without asserting anything about any row's verdict.
+    no_go_rows = [r for r in rows.values() if r.get("claim_type") == "no_go"]
+    if no_go_rows:
+        retained_no_go = sum(
+            1 for r in no_go_rows if r.get("effective_status") == "retained_no_go"
+        )
+        reset_after_clean = 0
+        legacy_snapshot_rows = 0
+        for row in no_go_rows:
+            archived = row.get("previous_audits") or []
+            if row.get("audit_status") in {None, "unaudited"} and any(
+                a.get("audit_status") == "audited_clean"
+                and str(a.get("invalidation_reason") or "").startswith(
+                    "no_go_discipline_packet_"
+                )
+                for a in archived
+            ):
+                reset_after_clean += 1
+            if any(
+                isinstance(a.get("no_go_discipline"), dict)
+                and no_go_discipline_gate.evidence_snapshot_schema_defect(
+                    a["no_go_discipline"]
+                )
+                is not None
+                and isinstance(
+                    (a.get("no_go_discipline") or {}).get("evidence_snapshot"), dict
+                )
+                for a in archived
+            ):
+                legacy_snapshot_rows += 1
+        if retained_no_go == 0:
+            add_notice(
+                "no_go_grade_path_unreached",
+                f"{len(no_go_rows)} no_go rows and 0 at retained_no_go; "
+                "every foreclosure the repo cites is ungraded",
+            )
+        if reset_after_clean:
+            add_notice(
+                "no_go_clean_verdict_reset_by_packet_gate",
+                f"{reset_after_clean} no_go rows are unaudited today but hold an "
+                "archived audited_clean reset by a no_go_discipline_packet_* "
+                "reason; these are re-audit targets, not fresh rows",
+            )
+        if legacy_snapshot_rows:
+            add_notice(
+                "no_go_legacy_evidence_snapshot",
+                f"{legacy_snapshot_rows} no_go rows carry an archived evidence "
+                "snapshot the current reader cannot authenticate (pre-expansion "
+                "entry shape); their forensic evidence is not restorable in place",
+            )
+
     # Output.
     def issue_count(groups: dict[str, list[str]]) -> int:
         return sum(len(items) for items in groups.values())

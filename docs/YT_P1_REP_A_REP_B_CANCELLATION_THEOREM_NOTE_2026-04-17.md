@@ -43,7 +43,7 @@ coefficients in each channel.
 
 ## Authority notice
 
-This note is a retained structural sub-theorem that settles the
+This note is a structural sub-theorem that settles the
 "Ward cancellation not established" caveat recorded in
 `docs/YT_P1_I_S_REVISION_VERIFICATION_NOTE_2026-04-17.md` §4.4. It
 does NOT modify:

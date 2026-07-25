@@ -21,7 +21,7 @@ the Schur commutation premise — the runner Part 6 witness measures
 
 Therefore the scalar-baseline curvature `Q = 6(δ² + q_+²)/m²` derived
 from `D = m I_3` IS NOT the live-sheet curvature of the DM-neutrino
-source surface. This note is retained only as a commutant-class
+source surface. This note stands only as a commutant-class
 reference lemma.
 **Script:** `scripts/frontier_dm_neutrino_source_surface_schur_scalar_baseline_theorem.py`
 **Runner:** `PASS = 26, FAIL = 0` (Part 6 witness makes the non-

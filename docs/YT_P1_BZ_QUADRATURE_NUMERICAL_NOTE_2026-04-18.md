@@ -25,7 +25,7 @@ value `Δ_R ≃ -3.3%` driven by the C_A channel
 
 ## Authority notice
 
-This note is a retained **numerical-quadrature** computation layer on
+This note is a **numerical-quadrature** computation layer on
 top of the retained Rep-A/Rep-B cancellation sub-theorem
 (`docs/YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`) and
 the retained citation-and-bound computations for the three channel

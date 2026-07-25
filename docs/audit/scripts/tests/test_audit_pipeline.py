@@ -16751,5 +16751,156 @@ class LedgerIoTest(unittest.TestCase):
                          "row_a")
 
 
+class ProseStatusAttributionTest(unittest.TestCase):
+    """audit_lint compares a prose status token attached to a named claim
+    against that claim's live effective_status.
+
+    docs/audit/README.md permits authors to write status prose in their own
+    notes, so the general case is a notice. The two narrow shapes that
+    impersonate the ledger are errors.
+    """
+
+    def setUp(self):
+        self.m = _import("audit_lint")
+        # Fixture names deliberately avoid the hedge vocabulary ("target",
+        # "candidate", "pending", ...): the rule skips a line whose text before
+        # the token hedges it, and a filename carrying a hedge word would
+        # suppress its own fixture.
+        self.rows = {
+            "citing_note": {
+                "claim_id": "citing_note",
+                "note_path": "docs/CITING_NOTE.md",
+                "effective_status": "unaudited",
+            },
+            "alpha_note": {
+                "claim_id": "alpha_note",
+                "note_path": "docs/ALPHA_NOTE.md",
+                "effective_status": "unaudited",
+            },
+            "beta_note": {
+                "claim_id": "beta_note",
+                "note_path": "docs/BETA_NOTE.md",
+                "effective_status": "retained",
+            },
+            "gamma_note": {
+                "claim_id": "gamma_note",
+                "note_path": "docs/GAMMA_NOTE.md",
+                "effective_status": "decoration_under_alpha_note",
+            },
+        }
+        self.basename_index, self.claim_id_index = self.m.build_prose_reference_index(
+            self.rows
+        )
+
+    def _hits(self, body, self_claim_id="citing_note"):
+        return list(
+            self.m.prose_status_attributions(
+                body,
+                self_claim_id,
+                self.rows,
+                self.basename_index,
+                self.claim_id_index,
+            )
+        )
+
+    def test_adjacent_label_on_weaker_target_is_reported(self):
+        hits = self._hits(
+            "| [`ALPHA_NOTE.md`](ALPHA_NOTE.md) | retained | the cited content |"
+        )
+        self.assertEqual([(1, "retained", "alpha_note")],
+                         [(ln, tok, tgt) for ln, _line, tok, tgt in hits])
+
+    def test_backticked_claim_id_reference_resolves(self):
+        hits = self._hits("`alpha_note`, **retained_bounded**")
+        self.assertEqual([("retained_bounded", "alpha_note")],
+                         [(tok, tgt) for _ln, _line, tok, tgt in hits])
+
+    def test_label_matching_live_status_is_not_reported(self):
+        self.assertEqual(
+            [], self._hits("| [`BETA_NOTE.md`](BETA_NOTE.md) | retained | x |")
+        )
+
+    def test_decoration_under_parent_is_not_treated_as_a_literal_grade(self):
+        # decoration_under_<parent> closes a chain but is explicitly not
+        # independent content, so calling it `retained` overstates it.
+        hits = self._hits("| [`GAMMA_NOTE.md`](GAMMA_NOTE.md) | retained | x |")
+        self.assertEqual(["gamma_note"], [tgt for *_r, tgt in hits])
+
+    def test_self_reference_is_not_an_attribution(self):
+        # A note describing its own status is population S, handled by authors,
+        # not by this rule.
+        self.assertEqual(
+            [], self._hits("[`CITING_NOTE.md`](CITING_NOTE.md) — retained")
+        )
+
+    def test_hedged_and_prose_separated_tokens_are_not_attributions(self):
+        for body in (
+            "not yet retained: [`ALPHA_NOTE.md`](ALPHA_NOTE.md)",
+            "would be retained — [`ALPHA_NOTE.md`](ALPHA_NOTE.md)",
+            "was retained: [`ALPHA_NOTE.md`](ALPHA_NOTE.md)",
+            "retained authorities are listed by [`ALPHA_NOTE.md`](ALPHA_NOTE.md)",
+            "the retained-observational inputs feed [`ALPHA_NOTE.md`](ALPHA_NOTE.md) here",
+        ):
+            self.assertEqual([], self._hits(body), body)
+
+    def test_unregistered_reference_is_ignored(self):
+        self.assertEqual(
+            [], self._hits("[`NOT_IN_LEDGER.md`](NOT_IN_LEDGER.md) — retained")
+        )
+
+    def test_ledger_impersonation_shapes_are_recognised(self):
+        for line in (
+            "| `retained_bounded` in the current audit ledger |",
+            "(`audited_clean / retained_bounded`, audit_date 2026-05-05)",
+            "`retained` per the ledger",
+            "`retained` per the current audit ledger",
+        ):
+            self.assertTrue(
+                self.m._PROSE_LEDGER_IMPERSONATION_RE.search(line), line
+            )
+        for line in (
+            "| retained | the cited content |",
+            "the audit ledger records this separately",
+        ):
+            self.assertIsNone(
+                self.m._PROSE_LEDGER_IMPERSONATION_RE.search(line), line
+            )
+
+    def test_strength_ranking(self):
+        self.assertEqual(0, self.m.prose_status_strength(None))
+        self.assertEqual(0, self.m.prose_status_strength("unaudited"))
+        self.assertEqual(10, self.m.prose_status_strength("audited_failed"))
+        self.assertEqual(
+            self.m.PROSE_DECORATION_UNDER_STRENGTH,
+            self.m.prose_status_strength("decoration_under_anything"),
+        )
+        self.assertLess(
+            self.m.prose_status_strength("audited_conditional"),
+            self.m.prose_status_strength("retained_bounded"),
+        )
+
+    def test_baseline_file_is_key_shaped_and_resolvable(self):
+        baseline = (
+            REPO_ROOT
+            / "audit"
+            / "scripts"
+            / self.m.PROSE_RETAINED_NO_GO_BASELINE_NAME
+        )
+        self.assertTrue(baseline.exists(), baseline)
+        keys = [
+            line.strip()
+            for line in baseline.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.strip().startswith("#")
+        ]
+        self.assertTrue(keys)
+        self.assertEqual(sorted(keys), keys, "baseline must stay sorted")
+        self.assertEqual(len(set(keys)), len(keys), "baseline must stay unique")
+        for key in keys:
+            self.assertIn("::", key)
+            note_path, _, target = key.partition("::")
+            self.assertTrue(note_path.startswith("docs/"), key)
+            self.assertTrue(target, key)
+
+
 if __name__ == "__main__":
     unittest.main()

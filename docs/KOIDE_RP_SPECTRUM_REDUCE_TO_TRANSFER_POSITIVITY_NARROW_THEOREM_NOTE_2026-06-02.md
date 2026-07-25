@@ -50,11 +50,11 @@ the same statement: `T` is positive Hermitian.**
 ### B. The records-route scaffold (records CP semigroup + tracial reference)
 
 Model the emergent-time step as the framework's records / decoherence
-completely-positive map (the CP / Kraus structure is retained:
+completely-positive map (the CP / Kraus structure is carried by
 `kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`,
-**retained**; `persistent_record_as_kraus_operator_note_2026-05-20`,
-**retained_bounded**; `decoherence_action_independence_note`,
-**retained_bounded**). If the record / Lindblad operators are HERMITIAN, then
+`persistent_record_as_kraus_operator_note_2026-05-20`, and
+`decoherence_action_independence_note`; status per ledger for each, and this
+note does not assert their grades). If the record / Lindblad operators are HERMITIAN, then
 with the retained tracial reference state
 `rho_ref = (x) I/2`
 (`pre_record_reference_state_tracial_derivation_note_2026-05-20`, **retained**)
@@ -110,11 +110,11 @@ disallowed move; this note instead localizes the cascade to a checkable target.
 
 | claim_id | effective status |
 |---|---|
-| [`single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) | retained |
+| [`single_clock_stone_finite_dim_uniqueness_narrow_theorem_note_2026-05-10`](SINGLE_CLOCK_STONE_FINITE_DIM_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md) | status per ledger |
 | [`pre_record_reference_state_tracial_derivation_note_2026-05-20`](PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md) | retained |
 | [`kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20`](KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) | retained |
 | [`persistent_record_as_kraus_operator_note_2026-05-20`](PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md) | retained_bounded |
-| [`decoherence_action_independence_note`](DECOHERENCE_ACTION_INDEPENDENCE_NOTE.md) | retained_bounded |
+| [`decoherence_action_independence_note`](DECOHERENCE_ACTION_INDEPENDENCE_NOTE.md) | status per ledger |
 | [`axiom_first_reflection_positivity_theorem_note_2026-04-29`](AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md) | unaudited |
 | [`axiom_first_spectrum_condition_theorem_note_2026-04-29`](AXIOM_FIRST_SPECTRUM_CONDITION_THEOREM_NOTE_2026-04-29.md) | unaudited |
 | [`axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28`](AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md) | audited_conditional |

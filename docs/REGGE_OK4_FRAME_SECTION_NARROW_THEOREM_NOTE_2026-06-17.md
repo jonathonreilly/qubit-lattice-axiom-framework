@@ -30,13 +30,14 @@ the leading SO(3)-breaking graviton anisotropy amplitude. It does not discharge 
 polarization-frame-bundle blocker, construct a connection, transplant the result to a curved `S³`
 Regge background, or calibrate the dimensionful GR coupling.
 
-## 1. The two regimes (what is already retained)
+## 1. The two regimes (cited content; grades per ledger)
 
 - **O(k²) — covariant (no sectioning).** [`CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md`](CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md)
-  (**retained_bounded**): `δ²S_R = −½·Q_EH` at O(k²), exactly and **isotropically**; and
-  [`UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md`](UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md) (**retained**): the isotropic
-  complement energy is SO(3)-orbit-flat. So at the EH order there is **no** preferred frame — GR-like
-  covariance. (The flat-atlas note `UNIVERSAL_GR_SPIN2_TWO_DERIVATIVE_CURVATURE_GENERATOR_SUPPLIED_FLAT_ATLAS`,
+  states `δ²S_R = −½·Q_EH` at O(k²), exactly and **isotropically**; and
+  [`UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md`](UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md) states that the isotropic
+  complement energy is SO(3)-orbit-flat. On those two statements, at the EH order there is **no**
+  preferred frame — GR-like covariance. This note asserts no grade for either; status per ledger.
+  (The flat-atlas note `UNIVERSAL_GR_SPIN2_TWO_DERIVATIVE_CURVATURE_GENERATOR_SUPPLIED_FLAT_ATLAS`,
   unaudited, independently shows the O(k²) generator transforms as `c·M_EH(Rk)` with the same `c=−½`
   in all frames.)
 - **O(k⁴) — anisotropic.** [`CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md`](CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md)
@@ -49,9 +50,9 @@ and that its structural amplitude is lattice-intrinsic.
 
 | Input | Role | Status |
 |---|---|---|
-| `δ²S_R = −½ Q_EH` at O(k²), isotropic | [SPLIT]/[WEIGHT] O(k²) covariant regime | [`CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH…2026-06-09`](CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md) — **retained_bounded** |
+| `δ²S_R = −½ Q_EH` at O(k²), isotropic | [SPLIT]/[WEIGHT] O(k²) covariant regime | [`CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH…2026-06-09`](CUBIC_COXETER_REGGE_SECOND_VARIATION_EQUALS_LINEARIZED_EH_NARROW_THEOREM_NOTE_2026-06-09.md) — status per ledger |
 | on-shell O(k⁴) tail `α(n̂) = −(1+Σ n̂_a⁴)/12` | [DISP] | [`CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT…2026-06-10`](CUBIC_COXETER_REGGE_OK4_LATTICE_FINGERPRINT_BOUNDED_THEOREM_NOTE_2026-06-10.md) — **retained_bounded** |
-| isotropic complement energy is SO(3)-orbit-flat (the criterion) | [WEIGHT] | [`UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT…2026-05-10`](UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md) — **retained** |
+| isotropic complement energy is SO(3)-orbit-flat (the criterion) | [WEIGHT] | [`UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT…2026-05-10`](UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md) — status per ledger |
 | cubic O_h weight splits spin-2 as `E⊕T2` and breaks orbit-flatness | [WEIGHT] | recomputed self-contained here; not imported from PR #4285 |
 | `Z³` adjacency `H = 6I − A` | [DISP] baseline finite lattice surface | [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) — Lattice axiom baseline, not a bounded-status source |
 

@@ -214,7 +214,7 @@ retention is the loop-geometric bound, not an MC pin.
 
 ## Authority notice
 
-This note is a retained **framework-native 8D Monte Carlo
+This note is a **framework-native 8D Monte Carlo
 quadrature** layer on top of the retained 2-loop structural
 extension note (`docs/YT_P1_DELTA_R_2_LOOP_EXTENSION_NOTE_2026-04-18.md`)
 and the retained 1-loop full staggered-PT note

@@ -26,7 +26,7 @@ shortcut.
 
 ## Authority notice
 
-This note is a retained structural sub-theorem on the P1 primitive
+This note is a structural sub-theorem on the P1 primitive
 of the master UV-to-IR transport obstruction theorem
 (`docs/YT_UV_TO_IR_TRANSPORT_OBSTRUCTION_THEOREM_NOTE_2026-04-17.md`).
 It does NOT modify:

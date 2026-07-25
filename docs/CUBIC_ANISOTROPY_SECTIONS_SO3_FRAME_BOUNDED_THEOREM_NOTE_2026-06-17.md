@@ -54,7 +54,7 @@ the cubic `O_h` class supplied by the lattice.
 
 | Input | Role | Status |
 |---|---|---|
-| SO(3) orbit-flatness for isotropic weights (the criterion) | §1, [FLAT] isotropic leg recomputed | [`UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT…`](UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md) — **retained** |
+| SO(3) orbit-flatness for isotropic weights (the criterion) | §1, [FLAT] isotropic leg recomputed | [`UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT…`](UNIVERSAL_GR_SO3_ISOTYPIC_ORBIT_FLAT_NARROW_THEOREM_NOTE_2026-05-10.md) — status per ledger; the [FLAT] leg is recomputed here, not imported |
 | cubic `O_h` action = signed coordinate permutations (from the Cl(3) axis structure on Z³) | the `O_h` group; [REP] | [`CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26`](CL3_OH_CUBIC_LIFT_FAITHFUL_NARROW_THEOREM_NOTE_2026-05-26.md) — **retained_bounded** |
 | Z³ nearest-neighbour adjacency / lattice Laplacian `H = 6I − A` | [LATTICE]; dispersion recomputed here, not cited | [`MINIMAL_AXIOMS_2026-06-05`](MINIMAL_AXIOMS_2026-06-05.md) — Lattice axiom |
 

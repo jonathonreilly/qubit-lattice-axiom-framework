@@ -25,7 +25,7 @@ to the ratio correction.
 
 ## Authority notice
 
-This note is a retained **citation-and-bound** computation layer on
+This note is a **citation-and-bound** computation layer on
 top of the retained Rep-A/Rep-B cancellation sub-theorem
 (`docs/YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`),
 which derives `Δ_1 = 2 · (I_v_scalar − I_v_gauge) − 6` as the

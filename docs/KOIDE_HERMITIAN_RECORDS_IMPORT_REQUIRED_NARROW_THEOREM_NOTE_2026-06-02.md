@@ -124,7 +124,7 @@ value-side pin and the signed-readout class a third independent weakest-link.
 
 | claim_id | effective status |
 |---|---|
-| [`lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`](LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md) | retained_bounded |
+| [`lsp_projective_derivation_from_naimark_frame_narrow_theorem_note_2026-05-22`](LSP_PROJECTIVE_DERIVATION_FROM_NAIMARK_FRAME_NARROW_THEOREM_NOTE_2026-05-22.md) | status per ledger |
 | [`luders_rule_from_composition_consistency_note_2026-05-20`](LUDERS_RULE_FROM_COMPOSITION_CONSISTENCY_NOTE_2026-05-20.md) | retained_bounded |
 | [`persistent_record_overlap_kernel_note`](PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md) | retained_bounded |
 | [`persistent_record_as_kraus_operator_note_2026-05-20`](PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20.md) | retained_bounded |

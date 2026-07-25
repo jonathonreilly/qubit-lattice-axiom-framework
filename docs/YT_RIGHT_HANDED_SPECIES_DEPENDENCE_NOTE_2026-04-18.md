@@ -28,7 +28,7 @@ analysis (`YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md`).
 
 ## Authority notice
 
-This note is a retained **retention-analysis note** closing candidate
+This note is a **retention-analysis note** closing candidate
 class #4 (right-handed sector species dependence) as a mechanism for
 breaking Yukawa unification at M_Pl. It does **not** modify:
 

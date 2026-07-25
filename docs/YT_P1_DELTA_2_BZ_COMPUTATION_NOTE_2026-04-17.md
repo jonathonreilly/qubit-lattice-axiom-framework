@@ -25,7 +25,7 @@ physical/canonical authority.
 
 ## Authority notice
 
-This note is a retained citation-and-bound layer on top of the
+This note is a citation-and-bound layer on top of the
 retained Rep-A/Rep-B 1-loop partial-cancellation sub-theorem
 (`docs/YT_P1_REP_A_REP_B_CANCELLATION_THEOREM_NOTE_2026-04-17.md`),
 which already derived the structural formula

@@ -11,7 +11,7 @@ retained, not cited.
 
 ## Authority notice
 
-This note is a retained framework-native sub-theorem on the K-series
+This note is a framework-native sub-theorem on the K-series
 structural retention program for the P3 primitive of the master UV-to-IR
 transport obstruction theorem (the MSbar-to-pole mass conversion
 coefficient series used for the top-quark pole mass). It records the

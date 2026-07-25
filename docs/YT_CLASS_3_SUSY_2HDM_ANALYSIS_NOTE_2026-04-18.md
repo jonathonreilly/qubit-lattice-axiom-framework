@@ -38,7 +38,7 @@ Class #3 is closed as Outcome B (retained no-go).
 
 ## Authority notice
 
-This note is a retained **no-go retention-analysis note** closing
+This note is a **no-go retention-analysis note** closing
 candidate class #3 (SUSY-like / 2HDM) from the b-quark retention
 analysis. It does **not** modify:
 

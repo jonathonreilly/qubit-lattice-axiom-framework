@@ -13,7 +13,7 @@ computed separately (not retained as structural primitives here).
 
 ## Authority notice
 
-This note is a retained structural sub-theorem on the P1 primitive of
+This note is a structural sub-theorem on the P1 primitive of
 the master UV-to-IR transport obstruction theorem. It records the
 color-tensor (gauge-group-irreducible) decomposition of the 1-loop ratio
 correction `Δ_R ≡ δ_y − δ_g`, with exact SU(3) prefactors

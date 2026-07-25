@@ -191,7 +191,7 @@ supersedes the original "Outcome A FALSIFIED" verdict.**
 
 ## Authority notice
 
-This note is a retained **retention-analysis note** on the b-quark Yukawa.
+This note is a **retention-analysis note** on the b-quark Yukawa.
 It does **not** modify:
 
 - the retained Ward-identity tree-level theorem

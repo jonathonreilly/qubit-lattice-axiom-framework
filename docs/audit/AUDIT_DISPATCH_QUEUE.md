@@ -72,7 +72,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | 17 | resolved_or_superseded | `cluster_decomposition_mass_gap_bridge_theorem_note_2026-05-09` | bounded_theorem / audited_conditional / audited_conditional |
 | 18 | resolved_or_superseded | `cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19` | positive_theorem / audited_clean / retained |
 | 19 | resolved_or_superseded | `axiom_first_cluster_decomposition_theorem_note_2026-04-29` | bounded_theorem / unaudited / unaudited |
-| 20 | resolved_or_superseded | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem / unaudited / unaudited |
+| 20 | resolved_or_superseded | `dm_leptogenesis_pmns_sole_axiom_boundary_note_2026-04-16` | bounded_theorem / audited_conditional / audited_conditional |
 | 21 | resolved_or_superseded | `lorentz_violation_derived_note` | bounded_theorem / audited_conditional / audited_conditional |
 | 22 | resolved_or_superseded | `luders_rule_from_composition_consistency_note_2026-05-20` | bounded_theorem / unaudited / unaudited |
 | 23 | resolved_or_superseded | `cl3_pauli_irrep_uniqueness_narrow_theorem_note_2026-05-10` | positive_theorem / audited_conditional / audited_conditional |

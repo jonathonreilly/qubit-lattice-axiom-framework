@@ -31,8 +31,8 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3867 |
-| Applied audit verdicts | 712 |
+| Ledger rows | 3868 |
+| Applied audit verdicts | 713 |
 | Retained-grade rows, including boxed decorations | 454 |
 | Retained positive theorems | 104 |
 | Retained no-go rows | 0 |
@@ -41,7 +41,7 @@ Owner-approval history for axioms and primitives:
 | Open gates | 2 |
 | Unaudited rows | 2797 |
 | Retained-pending-chain rows | 6 |
-| Audited conditional rows | 172 |
+| Audited conditional rows | 173 |
 | Audited renaming rows | 27 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 58 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3013 |
-| Ready rows | 604 |
+| Total pending rows | 3014 |
+| Ready rows | 605 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
 | High pending | 365 |
 | Medium pending | 814 |
-| Leaf pending | 1199 |
+| Leaf pending | 1200 |
 
 Next ready rows by queue order:
 
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 30 |
-| Live conditional/failed rows that would park | 157 |
+| Live conditional/failed rows that would park | 158 |
 | Live rows fail-open (legacy/unversioned snapshot) | 42 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
@@ -332,15 +332,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4501 |
+| Citation-graph nodes | 4502 |
 | Critical nodes | 755 |
 | High nodes | 444 |
 | Medium nodes | 1129 |
-| Leaf nodes | 2173 |
+| Leaf nodes | 2174 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2130 descendants; score 269.057
+- `minimal_axioms` - critical; 2131 descendants; score 269.558
 - `graph_first_su3_integration_note` - critical; 1672 descendants; score 64.208
 - `three_generation_observable_theorem_note` - critical; 1280 descendants; score 62.323
 - `observable_principle_from_axiom_note` - critical; 1119 descendants; score 61.629

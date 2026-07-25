@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_d2_commutant_extension_translation_localization_2026_07_25.py
-runner_sha256: 827a24f798a1cc09ccf0adfc0618e35b003708101c5f94c802c30ed6e44f46be
+runner_sha256: 3c13cf9980a80465af7e30e9a7cc74fcf07900ad92fcecb475bb106e774de410
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.82
+elapsed_sec: 4.79
 status: ok
 ----- stdout -----
 KCPT Unit 27 runner -- extension translation localization
@@ -136,7 +136,7 @@ cross-surface gates
 
 ========================================================================
 TOTAL: PASS=110 FAIL=0
-gates=110 wall=4.7s
+gates=110 wall=4.6s
 
 ----- stderr -----
 

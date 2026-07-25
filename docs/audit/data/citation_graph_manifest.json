@@ -1,6 +1,6 @@
 {
- "edge_count": 15063,
- "node_count": 4507,
+ "edge_count": 15064,
+ "node_count": 4508,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6984,6 +6984,10 @@
   },
   "kcpt_d2_commutant_double_cover_bicommutant_structure_bounded_theorem_note_2026-07-25": {
    "deps_hash": "07ebc1943d0d",
+   "out_degree": 1
+  },
+  "kcpt_d2_commutant_extension_translation_localization_bounded_theorem_note_2026-07-25": {
+   "deps_hash": "aa7425900352",
    "out_degree": 1
   },
   "kcpt_d2_graded_signed_permutation_commutant_characterization_bounded_theorem_note_2026-07-25": {

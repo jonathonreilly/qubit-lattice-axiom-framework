@@ -23,7 +23,7 @@ labels match the paired note):
       trivial at L=4 and nontrivial at L=6 on {(3,3,0),(3,0,3),(0,3,3),(3,3,3)}.
   T4  Comm = T~ x| S internally (S = B3): T~ normal, T~ cap S = {+I}, and the
       product set T~*S equals Comm elementwise (96N distinct products), so the
-      entire non-splitness is carried by T~ = pi^{-1}(T).
+      failure to split is already witnessed by T~ = pi^{-1}(T).
   T5  derived-cover identification: pi^{-1}(T_even x| A4) = [Comm, Comm] as a
       key-set equality (order 12N), the internal shadow of Unit 26's derived-
       subgroup double cover.

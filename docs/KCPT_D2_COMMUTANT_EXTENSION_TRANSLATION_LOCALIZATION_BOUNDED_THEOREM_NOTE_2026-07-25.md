@@ -10,11 +10,11 @@ The Unit-26 central extension class `1 → {±I} → Comm(D2) → T ⋊ B₃ →
 along subgroups of `T ⋊ B₃`, is trivial on the entire point-group side (B₃, O, A₄, D₃
 all split via an explicit `−I`-free section) and non-trivial on every
 translation-containing subgroup tested (T, T_even, T_even⋊A₄, each certified by
-`−I ∈ K`). The translation obstruction is exactly the unique nontrivial B₃-invariant
-alternating bimultiplicative commutator form `β(s,t) = (−1)^{(Σs)(Σt) − s·t}` together with a
+`−I ∈ K`). The translation restriction has the unique nontrivial B₃-invariant alternating
+bimultiplicative commutator form `β(s,t) = (−1)^{(Σs)(Σt) − s·t}` together with a
 surface-dependent 2-torsion square class `q((L/2)v) = (−1)^{(L/2)² Σ_{i<j} v_i v_j}`.
-Consequently `Comm ≅ T̃ ⋊ S` internally with `S ≅ B₃`, and the entire non-splitness of
-the extension is carried by the translation double cover `T̃ = π⁻¹(T)`.
+Consequently `Comm ≅ T̃ ⋊ S` internally with `S ≅ B₃`, and the extension's failure to split is
+already witnessed by the translation double cover `T̃ = π⁻¹(T)`.
 
 ## claim_scope
 
@@ -33,8 +33,8 @@ the extension is carried by the translation double cover `T̃ = π⁻¹(T)`.
   every quantity is a numerical invariant of the finite L ∈ {4, 6} construction. The two
   lattice sizes are two separate finite-surface measurements, not a general-L statement.
   The restriction analysis covers the listed subgroup family, not every subgroup of
-  `T ⋊ B₃`. The class is characterized by its restriction data plus the explicit `(β, q)`,
-  not by an independent computation of the full `H²(T ⋊ B₃, Z₂)`.
+  `T ⋊ B₃`. The listed restrictions and the explicit `(β, q)` probe the class but are not
+  claimed to classify the full `H²(T ⋊ B₃, Z₂)` or all mixed translation–point-group data.
 
 ## 1. Objects and setup
 
@@ -163,8 +163,9 @@ close to `|Comm| = 96N`; the conjugates of the `T̃`-generators by all seven lan
 (so `T̃ = π⁻¹(T)` is normal); `T̃ ∩ S = {+I}`; `|T̃| · |S| = 2N · 48 = 96N = |Comm|`; and
 the product set `T̃·S` has `96N` distinct elements and equals `Comm` elementwise (exact
 factorization). Since `S` is a genuine section (T1) and `T̃` carries all of `−I`'s
-squares and commutators, the entire non-splitness of the Unit-26 extension is localized in the
-translation double cover `T̃`, pinned by the pair `(β, q)`.
+  squares and commutators, the Unit-26 extension's failure to split is already present in the
+  translation double cover `T̃`; the pair `(β, q)` records its measured commutator and
+  2-torsion square data.
 
 **T5 (derived-cover identification; gate G8).** The order-`12N` obstruction subgroup on the
 `T_even ⋊ A₄` side coincides with the commutator subgroup: `π⁻¹(T_even ⋊ A₄) = [Comm, Comm]`
@@ -205,19 +206,20 @@ about 5 s.
 
 ## 4. The localization picture
 
-The Unit-26 double cover is not uniformly twisted over `T ⋊ B₃`; the twist lives entirely on
-the translation side. Over the point-group factor the extension is honestly a direct product:
+The Unit-26 double cover has an untwisted point-group restriction and an obstructed translation
+restriction. Over the point-group factor the extension is honestly a direct product:
 an explicit `−I`-free section `S ≅ B₃` exists, and its sub-sections realize O, A₄, and D₃ as
 genuine `−I`-free subgroups, so restricting the class to any of these point groups gives the
 trivial class. Restricting to any of the tested translation-containing subgroups (T, T_even,
 T_even⋊A₄) makes `−I` reappear as a square/commutator: the commutator of two unit-translation
 lifts along different axes is `−I`
-(the off-diagonal `−1` of the `β` matrix), and this single alternating form `β`, together with
-the 2-torsion square class `q`, accounts for all of the non-splitness. The two data pieces
+(the off-diagonal `−1` of the `β` matrix). The alternating form `β` and 2-torsion square class
+`q` record two exact invariants of that obstructed translation restriction. The two data pieces
 separate cleanly: `β` is surface-independent (same unit matrix, same closed form at L=4 and
 L=6), while `q` toggles with the parity of `(L/2)²` (trivial at L=4, nontrivial at L=6). The
-internal decomposition `Comm = T̃ ⋊ S` packages this: `S` is a flat section, and the whole
-double-cover structure is concentrated in `T̃ = π⁻¹(T)`, characterized by `(β, q)`.
+internal decomposition `Comm = T̃ ⋊ S` packages the localization: `S` is a flat section, and
+the global failure to split is already visible in `T̃ = π⁻¹(T)`. No completeness claim about
+mixed translation–point-group extension data is made.
 
 ## 5. Dependencies
 
@@ -241,20 +243,20 @@ basename is context, not a dependency edge.
 - The restriction analysis covers the subgroup family {B₃, O, A₄, D₃, T, T_even, T_even⋊A₄},
   not every subgroup of `T ⋊ B₃`. The dichotomy (point-group split, translation-containing
   non-split) is established on this family.
-- The class is characterized by its restriction data plus the explicit pair `(β, q)`, not by an
-  independent computation of the full `H²(T ⋊ B₃, Z₂)`. The uniqueness statement (T2) pins `β`
-  among the 512 bimultiplicative forms on `T/2T`; it does not enumerate the entire second
-  cohomology of the quotient.
+- The listed restriction data and explicit pair `(β, q)` are measured invariants, not an
+  independent computation or classification of the full `H²(T ⋊ B₃, Z₂)`. The uniqueness
+  statement (T2) pins `β` among the 512 bimultiplicative forms on `T/2T`; it does not enumerate
+  the entire second cohomology of the quotient or classify mixed translation–point-group data.
 - All group-theoretic decisions use exact integer signed-permutation arithmetic; the sole
   floating computation is the D2-spectrum anchor gate (numpy `eigvalsh` on `M = D2²`, tolerance
   `1e-9`, observed integer residual `~1e-14`).
 - The identity `|K_T| = 2·|2T|` and `q`'s `(L/2)²`-parity behaviour hold at both measured sizes,
   but two data points are a two-point observation; no general-L law is asserted.
 
-## Honest-auditor read
+## Reproduction and scope notes
 
-- Evidentiary verdict: PASS WITH BOUNDED CLAIMS. The dichotomy is certified in both directions
-  by discriminating gates: every SPLIT row exhibits an explicit `−I`-free section subgroup with
+- The dichotomy is tested in both directions by discriminating gates: every SPLIT row exhibits
+  an explicit `−I`-free section subgroup with
   bijective projection (not merely an order count), and every NON-SPLIT row exhibits `−I` inside
   the squares-and-commutators subgroup `K` — with a named commutator witness for the T and
 T_even rows, and for the T_even⋊A₄ row the key-set equality

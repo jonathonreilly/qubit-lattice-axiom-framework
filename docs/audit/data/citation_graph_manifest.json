@@ -1,6 +1,6 @@
 {
- "edge_count": 15068,
- "node_count": 4512,
+ "edge_count": 15077,
+ "node_count": 4514,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10246,6 +10246,10 @@
    "deps_hash": "c7f25fda525e",
    "out_degree": 2
   },
+  "physical_content_pair_kernel_channel_census_cycle699_note_2026-07-25": {
+   "deps_hash": "6205bdc13b15",
+   "out_degree": 5
+  },
   "physical_direction_set_vs_triangulation_covariance_cycle695_note_2026-07-25": {
    "deps_hash": "b5d4aaddc594",
    "out_degree": 1
@@ -10269,6 +10273,10 @@
   "physical_lattice_necessity_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "physical_pair_kernel_minimal_position_extension_cycle698_note_2026-07-25": {
+   "deps_hash": "32ac84e8f2ad",
+   "out_degree": 4
   },
   "physical_proper_cubic_covariance_ceiling_cycle690_note_2026-07-24": {
    "deps_hash": "e3b0c44298fc",

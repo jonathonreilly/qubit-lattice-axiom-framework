@@ -7,8 +7,8 @@
     "RSS_bytes": 3221225472,
     "wall_seconds": 360.0
   },
-  "cold_internal_elapsed_seconds": 54.98847312503494,
-  "cold_maximum_RSS_bytes": 1196589056,
+  "cold_internal_elapsed_seconds": 61.40385066595627,
+  "cold_maximum_RSS_bytes": 1202388992,
   "controls": {
     "CAR_fiber_EG_and_inverse_tested": true,
     "RouteC_physical_M2_candidate_EG_tested": true,
@@ -27,7 +27,7 @@
     "source_variation_called_gravity": false,
     "wrapped_phase_called_energy": false
   },
-  "definitive_run_HEAD": "152fa84bf2646abface1e04622249886550ead40",
+  "definitive_run_HEAD": "3f7c89314e6915af0f14898ef01474d0362e65ab",
   "exact_pinned_dependencies": {
     "Cycle219_runner_sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
     "Cycle230_runner_sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
@@ -35,11 +35,11 @@
     "Cycle563_runner_sha256": "444a5c0fb3cb1758236ddefaeb472d0002cadb256d3c4df723fd562129c7325b",
     "Cycle569_receipt_sha256": "c80aae229d3721b273d12188960e2a4b16402d10a982856bec76c465dad52baa",
     "Cycle569_runner_sha256": "c0f06a9cc9ffc4dcfe1d80b94da10bbef81ca1c74fddddac48712b0a7c332ced",
-    "Cycle573_receipt_sha256": "bac4169a90f7bf45dd05fa0ea1a9febd96497ddb664fcf7673c365b456422e0a",
-    "Cycle573_runner_sha256": "e959fa0ef29787b6eaca0fa0552ad3e921541432e11cdefffda7e9255472ff77",
-    "Cycle575_note_sha256": "59bc7ae275140943f017d2a31107504e19fc8871c3bb7881d5b796761ada05ec",
-    "Cycle575_receipt_sha256": "7c276b540cd1a99b6d949b11257165cb328d878da6fddb7b5f3f9bec24e88dda",
-    "Cycle575_runner_sha256": "7221d4ebb86fd599cf9dc7cc42535ad5ec461f99661f718c6a2b8d9317c64ba7"
+    "Cycle573_receipt_sha256": "61888b3dfa3e777c7b036f0c2156011155afd7c09e022c8ff8f200d1fa8b05c7",
+    "Cycle573_runner_sha256": "a9786cf68a9c669e7e7fe310a00ab9912aa404689651682ccfe3045a06e357f1",
+    "Cycle575_note_sha256": "4a603896d1c659420b72c2ce261aa495aeb085017276e57e1c91ac6e1a8c27a2",
+    "Cycle575_receipt_sha256": "8fc92bed4e28f0b268a902d09e7cb3360684b1b7b0d24d5ecf7c25a55688c662",
+    "Cycle575_runner_sha256": "67aa2435d66fb34b6734cc564a82ac839525139fdc9e8c347dc1b2277d08b40b"
   },
   "no_go_discipline": {
     "N1_observed_qualifying_negative_families": 1,
@@ -55,8 +55,8 @@
     "second_band_absence_claim": "WITHHELD / N1 FAIL",
     "shared_substrate_obstruction": false
   },
-  "note_sha256": "2f04343e82925524accea75ce54af2c30b934da2343fa0d03f3c5da7fd9778d8",
-  "optimal_next_campaign": "prove or falsify an infinite-volume contact-resolvent pole uniformly in volume, decompose the bound spectrum by proper-cubic irreps, and search the three-particle/contact sector for a second co-moving localized band with a local observable cross term; only then attack the Route-C 66-rail import through an admitted recyclable orientation/tag carrier",
+  "note_sha256": "a66126cf39bf6020680da5654bcbc85b11107e1f7d955f0ff5449098a0aa5dfc",
+  "optimal_next_campaign": "prove or falsify an infinite-volume contact-resolvent pole uniformly in volume, decompose the bound spectrum by proper-cubic irreps, and search the three-particle/contact sector for a second co-moving localized band with a local observable cross term; only then attack the Route-C 66-rail import through a supplied recyclable orientation/tag carrier",
   "pass": true,
   "retained_physical_M2_fixtures": {
     "Cycle230_contact_factorization_residual": 2.149937642474629e-15,
@@ -224,7 +224,7 @@
     "paired_matter_carriage_macro_receipts": 576,
     "second_reversal_deletion_signal": 1.4142135623730998
   },
-  "runner_sha256": "73ab0364fc5b8ddd9c708a3bd8910b660d36cb0d53aad388f42e2b09b970a7ac",
+  "runner_sha256": "4ef60441d31d62b1fc61c9b5e09ff3bc8f7f32d1b68bc3c548834431d24302f6",
   "scope_boundary": {
     "Born_probability_closed": false,
     "FORMATION_Record_actuality_closed": false,

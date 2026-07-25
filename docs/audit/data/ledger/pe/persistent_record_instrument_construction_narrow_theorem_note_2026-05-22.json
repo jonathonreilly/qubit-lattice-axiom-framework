@@ -1,24 +1,83 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T06:54:20.527170+00:00",
+  "audit_invocation_history": [
+    "0711647c062f46999d3a2d2a0366cc9d"
+  ],
+  "audit_invocation_id": "0711647c062f46999d3a2d2a0366cc9d",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_persistent_record_instrument_construction.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "Finite-region specialization of the retained single-convention Kraus\u2013Choi correspondence to A_\u039b = \u2297_{x\u2208\u039b} M_2(\u2102) \u2245 M_{2^|\u039b|}(\u2102), excluding infinite-volume channels and specific record dynamics.",
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "decoration",
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20": "decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05",
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "kraus_choi_representation_on_qubit_lattice_narrow_theorem_note_2026-05-20",
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 5.67,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_persistent_record_instrument_construction.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "431e3d0c62216cd7c44c3ab906cb53c3a43512b3aa30c0dcd84f50e2d3910a54",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "431e3d0c62216cd7c44c3ab906cb53c3a43512b3aa30c0dcd84f50e2d3910a54",
+    "runner_path": "scripts/frontier_persistent_record_instrument_construction.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 17
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-63eefa95",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The implication from the assumed Kraus resolution of identity to the isometry property closes by block-matrix algebra. The framework-side chain does not close in this packet because the cited Kraus\u2013Choi authority is clipped across its load-bearing extraction and normalization argument.",
   "claim_id": "persistent_record_instrument_construction_narrow_theorem_note_2026-05-22",
-  "claim_scope": null,
+  "claim_scope": "Given a finite qubit-lattice Kraus family satisfying \u03a3_r K_r\u2020K_r = \ud835\udfd9, block-column stacking defines V and algebraically yields V\u2020V = \ud835\udfd9.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T06:54:20.527170+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,20 +86,26 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 5.67,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The block-column construction gives (V\u2020V)_{i,j} = \u03a3_r(K_r\u2020K_r)_{i,j} = \u03b4_{i,j} by the Kraus resolution-of-identity hypothesis.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale"
+  ],
   "note_hash": "d26a35abf084b12e7b5d79beba497b9de8b5b88ec2a92b1ad45f4ba879697eaa",
   "note_path": "docs/PERSISTENT_RECORD_INSTRUMENT_CONSTRUCTION_NARROW_THEOREM_NOTE_2026-05-22.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "other: rebuild the restricted packet with the complete byte-authenticated Kraus\u2013Choi authority, especially its Kraus-extraction and trace-preserving normalization proof, then re-audit.",
+  "open_dependency_paths": [
+    "docs/KRAUS_CHOI_REPRESENTATION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md"
+  ],
   "previous_audits": [
     {
       "archived_at": "2026-06-04T16:59:09.080742+00:00",
@@ -385,14 +450,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 21,
+    "B": 8,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 29
   },
   "runner_path": "scripts/frontier_persistent_record_instrument_construction.py",
   "title": "Persistent-Record Instrument: Framework-Side Stinespring V Construction (Narrow)",
   "transitive_descendants": 17,
-  "verdict_rationale": null
+  "verdict_rationale": "The block-stack computation is correct class-A algebra, and the runner's 29 checks support its concrete and parametric instances. However, the provided framework-side Kraus\u2013Choi authority is clipped across its load-bearing extraction step, so its supply of a finite Kraus family with trace-preserving normalization cannot be authenticated from the restricted packet; audited_clean is therefore unavailable. The note's negative content is a bounded, conditional boundary naming the absent overlap-label identification and physical Kraus-family selection, not a no-go result."
 }

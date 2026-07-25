@@ -97,6 +97,33 @@ Covariance took the law from infinite-dimensional to a single number. It cannot
 take 1 to 0, and neither can source-restriction by the neighbour rule — tested
 and ruled out above.
 
+### What pins `A/B`: four mechanisms checked, all negative
+
+The law's remaining debt is one dimensionless number. Four candidate mechanisms
+have now been checked. None supplies it.
+
+| mechanism | verdict | evidence |
+|---|---|---|
+| the scale primitive | **no** | declares "zero dimensionless content" in its own text; `A/B` is a pure number |
+| covariance | **no** | already exhausted by the landed kernel classification, which *leaves* exactly this number |
+| source restriction by the neighbour rule | **no** | tested 2026-07-25: admissible configurations span the full space (rank 27/27 on a `3^3` torus) under hard-core, exactly-one-neighbour, and at-most-one rules, so `I` and `Delta` stay independent on them |
+| coarse-graining / decimation RG | **no** | landed 2026-06-12: the massless point is a fixed point of the declared Schur RG map, but an **unstable** one, at the `E=0` resolvent threshold — so RG does not select it, it must be tuned to |
+
+The RG entry is worth stating carefully because it is easy to get backwards.
+Masslessness *is* preserved by decimation — the condition "annihilates
+constants" is exactly invariant, and the landed `d=3` step-1 closed form
+(`diag' = mu - 6t^2/mu`, face-diagonal `-2t^2/mu`, axial `-t^2/mu`, nothing
+beyond) satisfies it. But being a fixed point is not being selected: the landed
+uniform-chain RG note finds the fixed set `g in {0, 1/2, -1}` with `|g| = 1/2`
+— which is exactly the massless, row-sum-zero point — labelled **unstable**.
+An unstable fixed point is a critical surface reached by tuning, not an
+attractor reached by flowing.
+
+**Consequence.** `A/B` is not determined by anything currently in the framework.
+The remaining candidates are dynamics or a formation rule, both explicitly
+withheld by the axioms, or a structural principle not yet identified. It is not
+a convention-shaped gap; it is a genuine derivation debt with no current route.
+
 ### What could discharge the last numbers without an import
 
 Not a convention, by owner standard. Two candidate classes:

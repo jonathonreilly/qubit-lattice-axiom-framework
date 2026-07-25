@@ -66,10 +66,19 @@ Second PR in the readout/source-action parent family this campaign. The
 cluster-cap evaluator applies from the third; not triggered here. If a third is
 proposed, the evaluator must run first.
 
-## Stacking
+## Stacking — resolved
 
-This block cites cycle 697's note by markdown link, so the PR is stacked on
-`physics-loop/record-readout-limits-forced-local-law-20260725` rather than on
-`main`. If the parent is rejected, this block must be rebased onto `main` and
-the two links to the 697 note replaced with prose, since the runner does not
-depend on it.
+This block originally stacked on the campaign's first block. That block was
+**rejected as submitted** by review-loop on PR #5620; only its abstract kernel
+classification was salvaged and landed, as
+`PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-25.md`.
+As the contingency above anticipated, this block was rebased onto `main` off
+the rejected commits, and its citations were repointed at the landed salvage.
+
+The reviewer's findings were then applied to this block as well — see the
+repair commit. The most important is that the earlier block's
+"no nonzero Record readout is dimensionless" was an overclaim: the record count
+is a dimensionless extensive counterexample, and only the intensive
+(duplication-invariant) statement was ever proved. Nothing in M1-M5 depended on
+the overclaimed form; the wording is corrected and the correction is stated in
+the note so it is not repeated downstream.

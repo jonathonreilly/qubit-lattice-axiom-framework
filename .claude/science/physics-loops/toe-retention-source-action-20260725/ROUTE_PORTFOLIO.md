@@ -53,7 +53,16 @@ as the owner of the framework's principled improper-action question.
 
 **Target state:** not already proven, not already refuted. Proceed.
 
-## Cycle 697 — readout position/scale limits and the forced local law
+## Cycle 697 — REJECTED AS SUBMITTED, abstract core salvaged and landed
+
+Recorded for completeness. Review-loop rejected PR #5620 as submitted and
+landed only the abstract kernel classification, as
+`PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-25.md`
+(`a89337f0bd`). The rejected parts were the position-blindness and
+"dimensionless" claims and the admissibility step of the duplication argument.
+The sweep below is kept as the record of what was searched.
+
+### Original sweep
 
 Swept before the PR at `origin/main` `1f4e053d87`/`cf8e85dc1c`. Searches, all
 over `docs/*.md`, on the statement rather than the lane:

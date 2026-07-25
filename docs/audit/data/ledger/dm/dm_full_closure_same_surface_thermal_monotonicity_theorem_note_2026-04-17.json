@@ -1,24 +1,81 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T05:14:02.476996+00:00",
+  "audit_invocation_history": [
+    "d971e21ccf264fd2a5ac138121c4ac8b"
+  ],
+  "audit_invocation_id": "d971e21ccf264fd2a5ac138121c4ac8b",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "Bounded same-surface thermal integral representation at the declared freeze-out slice x_f=25: using the retained Maxwell-Boltzmann/Sommerfeld normalization certificate, the thermal average can be written as <S>=(2/sqrt(pi))*int_0^infty S(alpha_eff*sqrt(a)/sqrt(t))*sqrt(t)*exp(-t) dt with a=25/4 and sqrt(a)=5/2, and the low-order moments are <1/v>=5/sqrt(pi), <1/v^2>=25/2. No DM selector closure, Sommerfeld-factor derivation, freeze-out derivation, relic-abundance theorem, or evaluation/bound of the remaining integral family is audited.",
+      "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "Bounded Maxwell-Boltzmann/Sommerfeld normalization algebra at the explicit benchmark slice x_f=25, with a=x_f/4=25/4: verifies the normalized MB denominator, <1/v>=5/sqrt(pi), <1/v^2>=25/2, the substitution t=a v^2 giving alpha_eff/v=alpha_eff*sqrt(a/t), and the thermal-average t-measure prefactor 2/sqrt(pi). No framework derivation of the Maxwell-Boltzmann distribution, freeze-out value x_f=25, Sommerfeld enhancement law, relic-abundance dynamics, or downstream DM thermal closure is audited."
+    },
+    "dep_claim_type": {
+      "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "bounded_theorem",
+      "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
+      "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17": "retained_bounded"
+    },
+    "deps": [
+      "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16",
+      "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 7.115,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "88f4bf367040aa290800c61bd3416864f29e3a4a7c717e04e12924a46d89c71b",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "88f4bf367040aa290800c61bd3416864f29e3a4a7c717e04e12924a46d89c71b",
+    "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 48
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260725-207c15e8",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Manual algebra verifies the identities once the derivative formulas are assumed, but neither the source nor its retained one-hop authorities define f_att and f_rep or derive those formulas. The conditional 64:1 exhibit is also internally inconsistent: d/dy[64 f_att(8y)+f_rep(y)] has coefficient 512, not 64, on f_att'(8y).",
   "claim_id": "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
-  "claim_scope": null,
+  "claim_scope": "Bounded same-surface thermal-kernel algebra: the attractive and repulsive Sommerfeld-kernel derivative identities and sign bounds for y>0, including consistency of the displayed conditional derivative exhibit; excludes live-DM monotonicity, root uniqueness, and integral evaluation.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T05:14:02.476996+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +84,20 @@
     "dm_thermal_average_sommerfeld_textbook_import_note_2026-05-17"
   ],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 7.115,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "From h(0)=0 and h'(y)=2 e^y(e^y-1-y)>0 for y>0, the note infers f_att'(y)>=1/2 and f_rep'(y)>=-1/2.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "6e7919a8473a9e3a137a0ea436483be8734d33663d3fdbef6195e5bcb8b6eb60",
   "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_MONOTONICITY_THEOREM_NOTE_2026-04-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-check explicit kernel definitions, symbolic differentiation, the factor-of-eight chain rule, and the 5.169657065141 runner number after repair.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -316,14 +374,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 3,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 3
   },
   "runner_path": "scripts/frontier_dm_full_closure_same_surface_thermal_monotonicity_theorem.py",
   "title": "DM Full Closure Same-Surface Thermal Monotonicity Theorem",
   "transitive_descendants": 48,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the runner hard-codes f_att_prime and f_rep_prime instead of differentiating packet-defined kernels, its claimed exact-identity gate is an unconditional True, and the source's conditional derivative omits the chain-rule factor 8. Why this blocks: the valid h-algebra proves bounds only for the inserted derivative expressions, not the claimed kernel functions as identified in the note, while one displayed quantitative formula is false as written. Repair target: state or cite retained definitions of f_att and f_rep, derive their derivatives symbolically, assert the identities nontrivially, and correct d/dy[64 f_att(8y)+f_rep(y)] plus any dependent numerical bound. Claim boundary until fixed: the algebraic implication from the two hard-coded derivative formulas to the sign bounds survives, but the note as written is not a closed Sommerfeld-kernel theorem."
 }

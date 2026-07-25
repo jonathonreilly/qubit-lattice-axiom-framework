@@ -32,14 +32,14 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3865 |
-| Applied audit verdicts | 607 |
+| Applied audit verdicts | 608 |
 | Retained-grade rows, including boxed decorations | 438 |
 | Retained positive theorems | 97 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 320 |
 | Boxed decorations under retained parents | 21 |
 | Open gates | 2 |
-| Unaudited rows | 2900 |
+| Unaudited rows | 2899 |
 | Retained-pending-chain rows | 6 |
 | Audited conditional rows | 110 |
 | Audited renaming rows | 22 |
@@ -84,7 +84,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 127 |
+| medium | `unaudited` | 126 |
 | critical | `audited_conditional` | 16 |
 | high | `audited_conditional` | 5 |
 | ? | `unresolved` | 4 |
@@ -93,7 +93,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | high | `audited_failed` | 2 |
 | high | `audited_renaming` | 2 |
 | medium | `audited_conditional` | 2 |
-| critical | `audited_numerical_match` | 1 |
+| medium | `audited_failed` | 2 |
 
 ## Dispatch Shadow Report (no dispatch effect)
 
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 23 |
-| Live conditional/failed rows that would park | 76 |
+| Live conditional/failed rows that would park | 77 |
 | Live rows fail-open (legacy/unversioned snapshot) | 42 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |

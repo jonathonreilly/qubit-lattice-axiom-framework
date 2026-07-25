@@ -1,24 +1,45 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T06:04:59.720990+00:00",
+  "audit_invocation_history": [
+    "c690adc6dd79438a8e892c5f0d4a717f"
+  ],
+  "audit_invocation_id": "c690adc6dd79438a8e892c5f0d4a717f",
+  "audit_state_snapshot": {
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17": "Exact algebraic identities T1\u2013T4 for positive masses and arbitrary positive geometric-basis NNI coefficients under c_13^geom=c_12 c_23 and Phi_ij(c)=c sqrt(m_i/m_j)."
+    },
+    "dep_claim_type": {
+      "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17": "retained"
+    },
+    "deps": [
+      "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 7.644,
+    "runner_hash": "545453b4272f2665125efb9b5dd41036759d638f9d8d1c9ebcf8e602443fa7bd",
+    "transitive_descendants": 49
+  },
+  "audit_status": "audited_numerical_match",
+  "auditor": "codex-audit-batch-A-20260725-e6a59b5f",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "The chain closes for the scoped numerical-match statement: at the imported masses and fitted coefficients, the runner computes |V_us| \u2248 0.2251 and compares it with the imported PDG value 0.2243. It does not close a first-principles Cabibbo derivation.",
   "claim_id": "work_history.ckm.cabibbo_bound_note",
-  "claim_scope": null,
+  "claim_scope": "At imported PDG quark masses and fitted NNI coefficients, the mass-basis NNI runner outputs |V_us| \u2248 0.2251 versus PDG 0.2243; the cited retained authority supplies only the structural identities T1-T4.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_last_reviewed": "2026-07-25T06:04:59.720990+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +47,20 @@
     "ckm_mass_basis_nni_structural_identities_narrow_theorem_note_2026-06-17"
   ],
   "direct_in_degree": 4,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_numerical_match",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_numerical_match",
   "load_bearing_score": 7.644,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Within the mass-basis NNI flavor package, the framework gives |V_us| = 0.2251, compared with the PDG value 0.2243.",
+  "load_bearing_step_class": "G",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "4b058cd1f457f5e92d1315727e02c8c79c0127fcddb9b92b3e3496c66fca74a6",
   "note_path": "docs/work_history/ckm/CABIBBO_BOUND_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit with unclipped runner stdout and source plus an independent recomputation before any promotion beyond numerical-match scope.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -201,14 +223,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 11,
     "B": 0,
     "C": 0,
-    "D": 0,
-    "total_pass": 0
+    "D": 5,
+    "total_pass": 16
   },
   "runner_path": "scripts/frontier_ckm_mass_basis_nni.py",
   "title": "Historical Cabibbo Bound Note",
   "transitive_descendants": 49,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the Cabibbo value is generated only after importing PDG quark masses, a PDG comparator, and fitted NNI coefficients, and the packet clips parts of the runner evidence. Why this blocks: the retained authority proves only T1-T4, so the numerical agreement cannot establish a first-principles Cabibbo derivation. Repair target: derive the mass inputs and NNI coefficients from retained framework dynamics and supply complete runner evidence for independent verification. Claim boundary until fixed: only the imports-conditioned |V_us| numerical consistency result is supported."
 }

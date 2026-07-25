@@ -83,7 +83,7 @@
     "audit_in_progress": 2,
     "audited_conditional": 121,
     "audited_failed": 25,
-    "audited_numerical_match": 6,
+    "audited_numerical_match": 7,
     "audited_renaming": 23,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_cpt_exact_note": 1,
@@ -104,7 +104,7 @@
     "retained": 99,
     "retained_bounded": 322,
     "retained_pending_chain": 6,
-    "unaudited": 2882
+    "unaudited": 2881
   },
   "retained_pending_chain_count": 6,
   "retained_pending_chain_examples": [

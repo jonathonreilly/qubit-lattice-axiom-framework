@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 126 |
+| medium | `unaudited` | 125 |
 | critical | `audited_conditional` | 16 |
 | high | `audited_conditional` | 5 |
 | ? | `unresolved` | 4 |
@@ -32,6 +32,7 @@ publication tables phrase it.
 | critical | `audited_numerical_match` | 1 |
 | critical | `retained_pending_chain` | 1 |
 | high | `audited_numerical_match` | 1 |
+| medium | `audited_numerical_match` | 1 |
 
 **Total non-retained-grade rows in publication tables:** 555
 
@@ -581,7 +582,7 @@ publication tables phrase it.
 | medium | `universal_qg_continuum_bridge_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | medium | `up_sector_partition_revisit_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | medium | `wave_retarded_gravity_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `work_history.ckm.cabibbo_bound_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `work_history.ckm.cabibbo_bound_note` | `audited_numerical_match` | `audited_numerical_match` | DERIVATION_ATLAS.md |
 | medium | `yt_axiom_first_microscopic_bridge_theorem` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `yt_bridge_variational_selector_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `yt_exact_hessian_selector_uniqueness_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

@@ -1,24 +1,47 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T15:42:17.276386+00:00",
+  "audit_invocation_history": [
+    "c144b7c3a90248ff937d49675ea48a91"
+  ],
+  "audit_invocation_id": "c144b7c3a90248ff937d49675ea48a91",
+  "audit_state_snapshot": {
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "runner_hash": "0bf932b90f835006a98047d75af9163e140db40496199b68d5e020bf816f60b7",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_renaming",
+  "auditor": "codex-audit-batch-A-20260725-5ffe7cdd",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The textual correspondences are substantially correct, but the claimed theorem-grade chain adds no independent derivation: T2 and T4 reread explicit wording, while T1 and T3 encode definitional consequences in a toy model. The missing step is a load-bearing derivation beyond identification with the adopted axiom text.",
   "claim_id": "reading_note_claims_are_axiom_text_theorems_bounded_note_2026-07-02",
-  "claim_scope": null,
+  "claim_scope": "Four named contents\u2014admissibility-inherited statehood, per-site record uniqueness, the empty state with I(empty)=0, and placement of the \u201csupplied\u201d qualifier\u2014were checked against the supplied minimal-axiom text; historical retirement and status policy were excluded.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T15:42:17.276386+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +49,20 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_renaming",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_renaming",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The four reading-note claims are theorem or text-fact content and need no citable reading note.",
+  "load_bearing_step_class": "F",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "52b318d976d0f1e11eabce7f3e877c8509991627eaca579fafced71344c733e3",
   "note_path": "docs/READING_NOTE_CLAIMS_ARE_AXIOM_TEXT_THEOREMS_BOUNDED_NOTE_2026-07-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: Reclassify the row as text-concordance and reading-note-retirement support rather than a bounded theorem, then re-audit only if an independent derivation is added.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -101,14 +125,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 4,
+    "B": 5,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/frontier_reading_note_derivations_2026_07_02.py",
   "title": "Four Policy Reading-Note Claims Are Axiom-Text Theorems",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The accepted minimal-axiom authority contains the operative record, state, uniqueness, empty-readout, and supplied-condition language. The runner verifies five such phrases cross-note and performs four elementary toy-model or vacuity checks, but it does not derive new framework content. Under the rubric and clean-versus-renaming tie-break, the note is a valid textual/definitional identification rather than an independently derived bounded theorem."
 }

@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_d2_graded_signed_permutation_commutant_characterization_2026_07_25.py
-runner_sha256: 32f74e910cce13cf61fc67052f874950822d3412640706ed3e67aad36c4dbe5e
+runner_sha256: de5b788f8392074a8e423742f85dd94ec0933c077fb09092d5c79d91359188a1
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 323.75
+elapsed_sec: 311.16
 status: ok
 ----- stdout -----
-[info] L=4 analysis done (6s), peak RSS 0.15 GB
-[info] L=6 analysis done (324s), peak RSS 0.57 GB
+[info] L=4 analysis done (5s), peak RSS 0.15 GB
+[info] L=6 analysis done (311s), peak RSS 0.63 GB
 
 ==================== PHASE A PROBE (raw measurements) ====================
 
@@ -88,7 +88,7 @@ status: ok
 [GATE PERT1_NEITHER] PASS -- diag((-1)^x0) grade=0 (neither: classifier is not a commute/anticommute proxy)
 [GATE PERT2_FAIL] PASS -- Comm generator o adjacent transposition commutes=False (exact verification rejects a corrupted element)
 
-[info] total wall-clock 324s, peak RSS 0.57 GB
+[info] total wall-clock 311s, peak RSS 0.63 GB
 
 TOTAL: PASS=32 FAIL=0
 

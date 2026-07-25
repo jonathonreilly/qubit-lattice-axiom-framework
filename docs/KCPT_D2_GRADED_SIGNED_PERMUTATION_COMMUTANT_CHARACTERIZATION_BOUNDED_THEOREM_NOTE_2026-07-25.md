@@ -6,19 +6,20 @@ registry id: `kcpt_d2_graded_signed_permutation_commutant_characterization`
 
 ## claim_scope
 
-- **Kind:** bounded_theorem. Exact integer group enumeration plus finite-dimensional
-  matrix-algebra closures on the fixed staggered lattices L ∈ {4, 6}
-  (N = 64 and N = 216 on the L³ torus). Every statement is an exact statement about
-  signed permutations, group orders, character sums, and Frobenius projections of those
-  two finite objects.
+- **Kind:** bounded_theorem. Exact integer group enumeration plus numerically resolved
+  finite-dimensional matrix-algebra closures on the fixed staggered lattices L ∈ {4, 6}
+  (N = 64 and N = 216 on the L³ torus). Signed-permutation decisions, group orders, and
+  character sums are exact; Frobenius-projection statements are resolved at the stated
+  tolerances on those two finite objects.
 - **Object:** the full signed-permutation commutant
   `Comm(D2) = { signed permutation U : U D2 = D2 U }`, the symmetry group
   `H = closure(G_amb ∪ {S_eps})` and the dressed-rotation extension `<H, g_r4>` located
-  inside it, and the Z₂ grading `grade(U) : U D2 U⁻¹ = grade(U) · D2 ∈ {+1, −1}` induced
-  on the graded commutant `GC = closure(Comm ∪ {S_eps})`.
+  relative to it inside the graded commutant, and the Z₂ grading
+  `grade(U) : U D2 U⁻¹ = grade(U) · D2 ∈ {+1, −1}` induced on
+  `GC = closure(Comm ∪ {S_eps})`.
 - **Scope limits:** r-neutral. No physical, continuum, or thermodynamic claim is made;
   every quantity is a numerical invariant of the finite L ∈ {4, 6} construction. The two
-  lattice sizes are two separate exact measurements, not a general-L statement.
+  lattice sizes are two separate finite-surface measurements, not a general-L statement.
 
 ## 1. Objects and setup
 
@@ -74,7 +75,7 @@ support graph being connected), found by propagating `s_i s_j D2[p(i),p(j)] = D2
 a spanning tree from site 0 and verified on every support pair. The sign-liftable count is
 `3072 / 10368`, equal to `48 · N` at both L, and
 
-    Comm(D2) = { P_p · diag(s) : p sign-liftable, s ∈ {+s_p, −s_p} },
+    Comm(D2) = { diag(s) · P_p : p sign-liftable, s ∈ {+s_p, −s_p} },
     |Comm| = 2 × (liftable count) = 6144 (L=4), 20736 (L=6).
 
 Every one of the `6144 / 20736` elements is verified to satisfy `U D2 = D2 U` exactly over
@@ -99,15 +100,15 @@ grade `−1` coset is `S_eps · Comm`. `Comm`, `H`, and `<H, g_r4>` are all subg
 and `[GC : H] = 8` at both L. The graded commutant, not `H`, is the ambient signed-permutation
 object carrying both the commuting symmetries of `D2` and the anticommuting Dirac sign.
 
-**T5 (order coincidence forced by the grading; gate ORDER_COINCIDENCE).**
+**T5 (grade-resolved order coincidence; gate ORDER_COINCIDENCE).**
 `|<H, g_r4>| = |Comm|` at both L (`6144` at L=4, `20736` at L=6), yet `<H, g_r4> ≠ Comm` as
 subgroups: `|Comm \ <H, g_r4>| = |<H, g_r4> \ Comm| = |Comm|/2` (`3072 / 10368`). Explicit
 deterministic witnesses are exhibited — an element of `Comm \ <H, g_r4>` with grade `+1`,
 and an element of `<H, g_r4> \ Comm` with grade `−1` (the latter cannot be in `Comm`, whose
-elements are all grade `+1`). The order equality is forced by the grade map:
+elements are all grade `+1`). The grade map resolves the measured equality:
 `|<H, g_r4> ∩ Comm| = |Comm|/2` at both L, i.e. `<H, g_r4>` has an index-2 commuting part
-sitting inside `Comm` together with an equal-size anticommuting coset, so its order matches
-`|Comm|` structurally rather than by numerical accident.
+sitting inside `Comm` together with an equal-size anticommuting coset. The runner directly
+enumerates the two group orders and this intersection; no general-L order law is claimed.
 
 **T6 (endomorphism dimensions; gates END_COMM, END_HG, END_H).** With
 `c(K) = mean_{U∈K} χ(U)²`, `χ(U) = Σ_{i: p(i)=i} s_i`, equal to the complex dimension of the
@@ -125,8 +126,8 @@ while `dim End_H` grows `6 → 19` with L.
 at both L. Through the fresh enumerator `g_r4` is an element of `Comm \ H` at both L — an
 independent confirmation, from the exhaustive commutant, of the landed `B8`/`E4b` fact that
 `H` is not the maximal signed-permutation symmetry group of `D2`. (The gate pins the reach
-dimension exactly — 52 at L=4, 60 at L=6; the explicit `≠ 20` exclusion at L=6 is kept
-but redundant given the equality pin.)
+dimension numerically — 52 at L=4, 60 at L=6 at the stated rank tolerance; the explicit
+`≠ 20` exclusion at L=6 is kept but redundant given the equality pin.)
 
 **T8 (separator H-specificity, L=6; gates SEP6_ANCHOR, SEP6_GENSET_MOVE).** The ind-8
 separator `sep6 = P8a − P8b` has rank sum 16 and `||sep6||_F = 4`, and is invariant under the
@@ -196,8 +197,9 @@ commuting with `D2`; `S_eps` anticommutes; and the graded commutant `GC` glues t
 symmetry group `H` and its dressed-rotation extension `<H, g_r4>` embed in `GC`. `H`
 straddles the grading — half of it (namely `G_amb`) commutes and half anticommutes — which
 is exactly why `H` is not inside `Comm`. `<H, g_r4>` also straddles it, with an index-2
-commuting part inside `Comm`; that index-2 structure is what makes `|<H, g_r4>|` coincide
-with `|Comm|` while the two groups share only half their elements. The endomorphism
+commuting part inside `Comm`; together with the directly enumerated half-size intersection,
+that structure resolves how `|<H, g_r4>|` can coincide with `|Comm|` while the two groups
+share only half their elements. The endomorphism
 dimension over the full commutant is 7 at both sizes, a stability that `dim End_H` (6 at
 L=4, 19 at L=6) does not share.
 
@@ -218,10 +220,11 @@ L=4, 19 at L=6) does not share.
   not a census. A full reach census over `Comm \ H` (the analog of the landed `G_amb`
   census, now over the strictly larger commutant) is another path this opens.
 - The commutant is enumerated as exact integer signed permutations and verified
-  element-by-element; the endomorphism dimensions come from exact character sums; the reach
-  quantities are floating Frobenius projections. Gate tolerances: `1e-10` for the `sep6`
-  norm and H-invariance anchor, `1e-9` for the `omega` sample and the pinned displacement
-  values — all well inside the observed `~1e-14` residuals.
+  element-by-element; the endomorphism dimensions come from exact character sums. The
+  word-algebra dimensions, separator construction, displacement values, and reach quantities
+  use floating Frobenius orthogonalization or projection. Gate tolerances: `1e-10` for the
+  `sep6` norm and H-invariance anchor, `1e-9` for the `omega` sample and the pinned
+  displacement values — all well inside the observed `~1e-14` residuals.
 - The two dependency rows (the landed L=6 surface-change and separator-census lanes) are
   landed on main but themselves unaudited; their anchors (`dim End_H`, `sep6`, `g_r4`) are
   consumed here as landed values, not as audited facts.
@@ -231,17 +234,18 @@ L=4, 19 at L=6) does not share.
 - The dangerous move this unit could make is to presuppose that `H` (or `<H, g_r4>`) already
   is the full signed-permutation symmetry group of `D2`. It is not: the exhaustive commutant
   has order `6144 / 20736`, strictly larger than `H`, and `g_r4` is exhibited inside
-  `Comm \ H` at both L through an enumerator that shares no code with the object it is
-  testing. The enumeration is verified two ways — every automorphism by permuted-adjacency
-  equality, and every one of the `6144 / 20736` signed permutations by the full `U D2 = D2 U`
-  identity — with explicit wrong-value rejectors (`|Comm|_{L=4} ≠ 20736`, the corrupted
-  element failing commutation, the equality-pinned reach dimensions 52/60 with the kept
-  `≠ 20` exclusion at L=6).
-- The order coincidence `|<H, g_r4>| = |Comm|` is recorded with its explanation and its
-  witnesses, not as numerology: the two groups are shown to differ as sets (deterministic
-  elements on each side), and the coincidence is traced to the index-2 commuting part forced
-  by the grade map (`|<H, g_r4> ∩ Comm| = |Comm|/2`). A reader who distrusts the explanation
-  can check the two witness elements and the intersection order directly.
+  `Comm \ H` at both L through the fresh support-automorphism/sign-lift enumerator rather
+  than only the landed H-membership gate. Every stabilizer completion is checked by exact
+  permuted-adjacency equality; the translated full-Aut list has 256 deterministic exact
+  spot-checks; and every one of the `6144 / 20736` signed permutations is checked by the full
+  `U D2 = D2 U` identity. Explicit wrong-value rejectors include
+  `|Comm|_{L=4} ≠ 20736`, the corrupted element failing commutation, and the equality-pinned
+  reach dimensions 52/60 with the kept `≠ 20` exclusion at L=6.
+- The order coincidence `|<H, g_r4>| = |Comm|` is recorded with its grade-resolved
+  decomposition and its witnesses: the two groups differ as sets (deterministic elements on
+  each side), while the directly enumerated intersection obeys
+  `|<H, g_r4> ∩ Comm| = |Comm|/2`. A reader can check the two witness elements and the
+  intersection order directly; no general-L order law is inferred.
 - The grade map is shown to discriminate: `S_eps` reads `−1`, the parity field
   `diag((-1)^{x0})` reads "neither" (a parity-proxy classifier would misfile it as `±1`), and
   grade multiplicativity is checked on 400 products. The zero "neither"-counts inside `H`,

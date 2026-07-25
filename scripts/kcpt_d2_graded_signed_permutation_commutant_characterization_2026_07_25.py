@@ -6,8 +6,8 @@ Characterizes the FULL signed-permutation commutant
 
 of the staggered lattice operator D2 at L in {4, 6} (N = L^3, staggered eta:
 eta_0 = 1, eta_1 = (-1)^x0, eta_2 = (-1)^(x0+x1)), locates the symmetry group
-H = <G_amb, S_eps> and the dressed rotation extension <H, g_r4> inside it, and
-characterizes the Z_2 grading
+H = <G_amb, S_eps> and the dressed rotation extension <H, g_r4> relative to it
+inside the graded commutant, and characterizes the Z_2 grading
 
     grade(U) : U D2 U^{-1} = grade(U) * D2 ,  grade in {+1, -1}
 

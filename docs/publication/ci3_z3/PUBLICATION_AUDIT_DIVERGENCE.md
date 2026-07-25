@@ -19,16 +19,16 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 117 |
+| medium | `unaudited` | 116 |
 | critical | `audited_conditional` | 16 |
 | medium | `audited_conditional` | 6 |
 | high | `audited_conditional` | 5 |
 | ? | `unresolved` | 4 |
+| medium | `audited_failed` | 3 |
 | critical | `audited_failed` | 2 |
 | critical | `audited_renaming` | 2 |
 | high | `audited_failed` | 2 |
 | high | `audited_renaming` | 2 |
-| medium | `audited_failed` | 2 |
 | critical | `audited_numerical_match` | 1 |
 | critical | `retained_pending_chain` | 1 |
 | high | `audited_numerical_match` | 1 |
@@ -511,7 +511,7 @@ publication tables phrase it.
 | medium | `hadron_lane1_chiral_condensate_banks_casher_scoping_support_note_2026-04-27` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `hadron_mass_lane1_theorem_plan_support_note_2026-04-27` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `hadronic_charges_from_quark_y_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
+| medium | `industrial_sdp_bootstrap_infrastructure_note_2026-05-03` | `audited_failed` | `audited_failed` | DERIVATION_ATLAS.md |
 | medium | `industrial_sdp_bootstrap_lattice_bracket_note_2026-05-03` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `koide_c3_constant_singlet_reparameterization_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `koide_c3_singlet_extension_reduction_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

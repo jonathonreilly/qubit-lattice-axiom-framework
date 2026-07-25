@@ -1,0 +1,27 @@
+PASS every sum-of-content readout satisfies additivity over disjoint collections and vanishes on the empty collection, over the full declared coefficient grid :: {'readouts_tested': 343, 'violations': 0}
+PASS the representing function is recovered UNIQUELY from singleton readouts, so the map {readouts} -> {functions O -> scalars} is injective; combined with R1 it is a linear bijection :: {'distinct_readouts': 343, 'collisions': 0, 'expected': 343}
+PASS CARRIER IS DERIVED: the correspondence is linear, so Record's (D)+(A)+(Z) alone force the readout space to be exactly the complex-linear function space on record contents -- the C^O carrier is axiom content, not a supplied input :: {'linear': True}
+PASS FINITENESS IS NOT ENTAILED: an explicit countably-infinite-alphabet model satisfies determinacy, additivity over finite disjoint collections, and I(empty)=0 in full -- and the Qubit axiom states only 'each site has a domain of local possibilities', with no cardinality bound anywhere in the axiom text :: {'alphabet': 'Z (countably infinite)', 'empty_zero': True, 'additive': True, 'determinate': True}
+PASS THE ALGEBRA PRODUCT IS NOT ENTAILED AND WAS NEVER NAMED: two unital commutative products live on the very same derived carrier -- pointwise C^3 and the truncated polynomial algebra C[x]/(x^3) -- and they are NOT isomorphic, since the second has a nonzero nilpotent w with w^3=0 and the first has none. Additivity constrains the additive structure only, so the product is a THIRD input that the obligation does not list :: {'pointwise_unital': True, 'truncated_unital': True, 'pointwise_nonzero_nilpotent': 'None', 'truncated_nonzero_nilpotent': '(Fraction(0, 1), Fraction(-2, 1), Fraction(-2, 1))', 'not_isomorphic': True}
+PASS the obligation's TWO named objects are really THREE with three different statuses, and the third was never named -- so the repair instruction as written cannot be satisfied honestly without adding the product to its list :: {'complex_linear_carrier_C_to_the_O': 'DERIVED from Record (D)+(A)+(Z)', 'finite_alphabet': 'NOT ENTAILED -- supplied input; infinite-alphabet countermodel satisfies every Record clause', 'unital_algebra_product': 'NOT ENTAILED and NOT NAMED by the obligation -- non-isomorphic unital products coexist on the derived carrier'}
+SUMMARY_JSON {"algebra_product": "NOT entailed; unnamed third input (non-isomorphic models exhibited)", "audit": "unset", "authority": "none", "carrier": "derived from (D)+(A)+(Z)", "conclusion": "Record's determinacy and additivity genuinely derive the complex-linear readout carrier on record contents. They do not entail a finite alphabet, and they do not entail any algebra product -- not even up to isomorphism. The obligation should be re-stated over three inputs, one of which it already has for free.", "cycle": 693, "cycle_claim": null, "fail_count": 0, "finite_alphabet": "NOT entailed; supplied input (countermodel exhibited)", "firewalls": {"dynamics_probability_or_measurement_claimed": false, "new_axiom_or_primitive_proposed": false, "physical_carrier_identified": false, "vector_space_carrier_called_an_observable_algebra": false}, "pass": true, "pass_count": 6, "resources": {"elapsed_seconds": 0.07024045800790191}, "runner_sha256": "6aa09718f2671d8587811be4883cefed93090daacb663031b276ccf5ac7c9561", "three_way_split": {"complex_linear_carrier_C_to_the_O": "DERIVED from Record (D)+(A)+(Z)", "finite_alphabet": "NOT ENTAILED -- supplied input; infinite-alphabet countermodel satisfies every Record clause", "unital_algebra_product": "NOT ENTAILED and NOT NAMED by the obligation -- non-isomorphic unital products coexist on the derived carrier"}}
+RESULT 6 0 elapsed 0.07 s
+RESULT RECORD_DERIVES_THE_CARRIER_NOT_THE_ALPHABET_AND_NEVER_THE_PRODUCT
+        0.09 real         0.08 user         0.00 sys
+            21643264  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2408  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  18  involuntary context switches
+          2271335374  instructions retired
+           403837964  cycles elapsed
+            11813416  peak memory footprint

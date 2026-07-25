@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 101 |
-| Retained bounded rows | 326 |
+| Retained bounded rows | 327 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 22 |
 
@@ -127,7 +127,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (326)
+## Retained bounded rows (327)
 
 Sorted by load-bearing graph score (descending).
 
@@ -278,6 +278,7 @@ Sorted by load-bearing graph score (descending).
 - [`branching_slack_rate_projective_limit_bounded_theorem_note_2026-06-12`](../../docs/BRANCHING_SLACK_RATE_PROJECTIVE_LIMIT_BOUNDED_THEOREM_NOTE_2026-06-12.md) — score 3.500; audited 2026-06-13T00:40:22.625917+00:00
 - [`graph_laplacian_core_card_note`](../../docs/GRAPH_LAPLACIAN_CORE_CARD_NOTE.md) — score 3.322; audited 2026-05-08T20:23:16.271336+00:00
 - [`persistent_record_overlap_kernel_note`](../../docs/PERSISTENT_RECORD_OVERLAP_KERNEL_NOTE.md) — score 3.322; audited 2026-05-01T10:48:25.559149+00:00
+- [`flavor_measure_positivity_agnostic_note_2026-05-31`](../../docs/FLAVOR_MEASURE_POSITIVITY_AGNOSTIC_NOTE_2026-05-31.md) — score 3.085; audited 2026-07-25T08:31:44.598500+00:00
 - [`source_measure_pcal_cumulant_mobius_theorem_note_2026-05-30`](../../docs/SOURCE_MEASURE_PCAL_CUMULANT_MOBIUS_THEOREM_NOTE_2026-05-30.md) — score 3.085; audited 2026-05-31T13:44:24.250543+00:00
 - [`directional_b_density_stencil_note`](../../docs/DIRECTIONAL_B_DENSITY_STENCIL_NOTE.md) — score 2.822; audited 2026-05-19T14:57:14.610762+00:00
 - [`evolving_network_prototype_v2_note`](../../docs/EVOLVING_NETWORK_PROTOTYPE_V2_NOTE.md) — score 2.822; audited 2026-05-24T17:37:05.323451+00:00

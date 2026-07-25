@@ -111,6 +111,22 @@ primitives in `docs/audit/data/axiom_premise_nodes.json`. Derivation obligations
 historical admissions, governance decisions, and conventions do not satisfy a
 dependency. They must earn retained-grade normally or leave the consumer
 conditional/pending-chain.
+
+An entry in `docs/audit/data/derivation_obligations.json` and the source note
+named by its own `current_path` are two records of the same open obligation, so
+`audit_lint.py` reconciles them: the registry `target` must match the note's
+`## Exact target`, `self_liquidation_condition` must be grounded in the note's
+`## Closure criterion` rather than another section, a declared
+`historical_governance_source` must actually be cited by the note, and the
+obligation's ledger row must be typed `open_gate` — the only typing that keeps
+the registry's promise that an obligation never satisfies dependency closure.
+The lint reports divergence and never repairs it: what an obligation demands is
+owner/audit-lane content, and deciding which of the two surfaces is right is
+not a mechanical call. The population measured when the rule landed is
+grandfathered in `scripts/derivation_obligation_reconciliation_baseline.txt`
+and surfaces as `derivation_obligation_registry_note_divergence` notices; only
+a new divergence errors, a drained line surfaces as
+`..._baseline_stale`, and the `open_gate` typing check is not grandfatherable.
 - `prose_status` — vocabulary-drift status, orthogonal to `audit_status`. See
   `docs/repo/VOCABULARY_HYGIENE_DESIGN.md`. One of:
   - `clean` — no vocabulary drift detected by `vocab_lint`.

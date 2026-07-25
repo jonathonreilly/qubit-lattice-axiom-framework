@@ -1,0 +1,42 @@
+# Grandfathered derivation-obligation registry/note divergences.
+#
+# audit_lint.obligation_reconciliation_findings reconciles each entry in
+# docs/audit/data/derivation_obligations.json against the source note named by
+# its own current_path. Every divergence listed here reproduces on the state
+# this file was written against; each is reported as a drainable notice
+# instead of an error. Any divergence NOT listed here is an error.
+#
+# This list may only SHRINK. It is not a suppression switch: what an
+# obligation demands is owner/audit-lane content, so the lint never decides
+# which surface is right and never edits either one. Draining a line means the
+# owner adjudicated the divergence and one of the two surfaces was corrected;
+# a drained line then surfaces as a
+# derivation_obligation_registry_note_divergence_baseline_stale notice until
+# it is pruned.
+#
+# Format: <claim_id>:<finding_kind>
+#
+# The file lives beside the scripts, not in docs/audit/data/, because that
+# directory is restored wholesale from the branch merge-base before a science
+# PR is committed; a baseline there would have every drain silently reverted.
+#
+# Open owner questions behind these six lines are recorded in the PR that
+# introduced this file:
+#   - all three entries record a closure condition paraphrased from the note's
+#     "## Running-program relation" rather than its "## Closure criterion", so
+#     the registry omits the matter-action/measure conjunct (AC grain), the
+#     carrier/source-action bridge conjunct (AC R-eta), and the carrier +
+#     readout-map + cross-sector-correspondence conjuncts (theta);
+#   - the AC R-eta registry target omits the note's "clock-rate" exclusion and
+#     the "h" density-class label;
+#   - the theta registry target omits the note's "from the retained framework
+#     chain" provenance restriction and narrows "quark-sector" to "quark";
+#   - the theta entry asserts a historical_governance_source that its own note
+#     does not cite, unlike its two siblings.
+
+ac_orbit_occupancy_statistical_grain_derivation_obligation:closure_condition_not_grounded
+ac_reta_hclass_hunit_readout_derivation_obligation:target_mismatch
+ac_reta_hclass_hunit_readout_derivation_obligation:closure_condition_not_grounded
+theta_quark_determinant_cross_sector_readout_derivation_obligation:target_mismatch
+theta_quark_determinant_cross_sector_readout_derivation_obligation:closure_condition_not_grounded
+theta_quark_determinant_cross_sector_readout_derivation_obligation:governance_source_not_cited

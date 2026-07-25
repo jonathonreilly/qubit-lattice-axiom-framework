@@ -72,6 +72,15 @@ Against landed `main`: S1–S8 found no counting result for this object.
 
 **Verdict: PR allowed.**
 
+## Post-review revision
+
+The campaign's first block was rejected as submitted on PR #5620. This block
+was rebased onto `main` off the rejected commits and revised to apply the same
+findings: the supplied conditions (rational scalars, linearity, finite support,
+covariance) are now a named fourth condition, the orbit-count theorem is
+explicitly credited to the landed Reynolds-projector note rather than presented
+as new, and the reference-normalization row is narrowed to intensive targets.
+
 ## Cluster cap — evaluator run and recorded
 
 This is the **third** PR in the readout/source-action parent family, so the

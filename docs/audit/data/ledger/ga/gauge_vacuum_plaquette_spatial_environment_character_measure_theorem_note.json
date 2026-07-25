@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 16.255,
+  "load_bearing_score": 16.257,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -362,7 +362,7 @@
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure_actual_l3.py",
   "title": "Gauge-Vacuum Plaquette Actual Spatial-Environment Character Measure",
-  "transitive_descendants": 863,
+  "transitive_descendants": 864,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

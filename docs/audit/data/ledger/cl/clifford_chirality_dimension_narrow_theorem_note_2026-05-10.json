@@ -86,7 +86,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.524,
+  "load_bearing_score": 10.526,
   "load_bearing_step": "`gamma_S gamma_mu = (-1)^{r - 1_{mu in S}} gamma_mu gamma_S`, so simultaneous anticommutation with every generator is possible only for the full volume monomial when `n` is even.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1000,6 +1000,6 @@
   },
   "runner_path": "scripts/frontier_clifford_chirality_dimension_narrow.py",
   "title": "Clifford Chirality-Dimension Narrow Theorem",
-  "transitive_descendants": 735,
+  "transitive_descendants": 736,
   "verdict_rationale": "The Clifford-basis parity proof correctly establishes the volume-element identity, even-dimensional chirality involution, and conditional d_s=3 parity consequence. The note also asserts a substantive odd-dimensional no-go result, while the supplied runner lacks the mandatory five-resolution rhetoric probes and sufficient independently evidenced attack-route coverage for a clean verdict. N1 has fewer than five live distinct route classes, N2 has only the single internal-algebra exclusion boundary, N3 reveals no load-bearing hidden admission, and N4 has no prior-ruled residual witness. N5 lacks the prescribed resolution lines, N6 exposes no relevant indexed closure candidate, N7 lacks an independent resolution surface naming the boundary, and N8's indexed echoes are unrelated to this Clifford-parity scope."
 }

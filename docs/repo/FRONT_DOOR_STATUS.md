@@ -31,8 +31,8 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3871 |
-| Applied audit verdicts | 756 |
+| Ledger rows | 3872 |
+| Applied audit verdicts | 757 |
 | Retained-grade rows, including boxed decorations | 466 |
 | Retained positive theorems | 108 |
 | Retained no-go rows | 0 |
@@ -40,7 +40,7 @@ Owner-approval history for axioms and primitives:
 | Boxed decorations under retained parents | 26 |
 | Open gates | 2 |
 | Unaudited rows | 2757 |
-| Retained-pending-chain rows | 6 |
+| Retained-pending-chain rows | 7 |
 | Audited conditional rows | 195 |
 | Audited renaming rows | 29 |
 | Audited numerical-match rows | 9 |
@@ -55,12 +55,12 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 | Metric | Value |
 |---|---:|
 | Total pending rows | 3003 |
-| Ready rows | 593 |
+| Ready rows | 592 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
 | High pending | 365 |
-| Medium pending | 813 |
-| Leaf pending | 1190 |
+| Medium pending | 815 |
+| Leaf pending | 1188 |
 
 Next ready rows by queue order:
 
@@ -226,9 +226,9 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25`: +1
 
 Non-lane rows deferred by the simulated interleave (positions lost; complete list):
-- `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08`: -13
+- `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30`: -13
 - `lensing_finite_path_explanation_note`: -13
-- `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30`: -12
+- `koide_r_half_dynamical_determinant_route_pruning_no_go_note_2026-06-08`: -12
 - `dm_pmns_asymptotic_source_no_go_note_2026-04-20`: -11
 - `su3_cube_index_graph_shortcut_open_gate_note_2026-05-03`: -10
 - `record_history_order_time_rate_firewall_2026-06-05`: -10
@@ -332,19 +332,19 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4505 |
+| Citation-graph nodes | 4506 |
 | Critical nodes | 755 |
 | High nodes | 444 |
-| Medium nodes | 1130 |
-| Leaf nodes | 2176 |
+| Medium nodes | 1132 |
+| Leaf nodes | 2175 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2134 descendants; score 270.560
-- `graph_first_su3_integration_note` - critical; 1674 descendants; score 64.210
-- `three_generation_observable_theorem_note` - critical; 1281 descendants; score 62.324
-- `observable_principle_from_axiom_note` - critical; 1120 descendants; score 61.631
+- `minimal_axioms` - critical; 2135 descendants; score 270.561
+- `graph_first_su3_integration_note` - critical; 1675 descendants; score 64.211
+- `three_generation_observable_theorem_note` - critical; 1282 descendants; score 62.325
+- `observable_principle_from_axiom_note` - critical; 1121 descendants; score 61.632
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 197 descendants; score 61.629
-- `plaquette_self_consistency_note` - critical; 1256 descendants; score 49.296
-- `key_terminology` - critical; 1303 descendants; score 44.849
-- `minimal_axioms_2026-05-03` - critical; 1151 descendants; score 44.170
+- `plaquette_self_consistency_note` - critical; 1257 descendants; score 49.297
+- `key_terminology` - critical; 1304 descendants; score 44.850
+- `minimal_axioms_2026-05-03` - critical; 1152 descendants; score 44.171

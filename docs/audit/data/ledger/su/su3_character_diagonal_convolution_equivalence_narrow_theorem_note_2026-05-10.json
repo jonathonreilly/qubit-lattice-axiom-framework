@@ -75,7 +75,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 23.281,
+  "load_bearing_score": 23.283,
   "load_bearing_step": "Substituting the Schur contraction into the finite sum cancels d_mu and gives C_Z chi_mu(V) = rho_mu chi_mu(V).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1420,6 +1420,6 @@
   },
   "runner_path": "scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py",
   "title": "SU(3) Character Diagonal Convolution Equivalence Narrow Theorem",
-  "transitive_descendants": 879,
+  "transitive_descendants": 880,
   "verdict_rationale": "The source presents a genuine class-A algebraic contraction on the stated finite character basis, and the visible runner excerpt reports exact dimension cancellation, uniqueness, positivity, symmetry, hostile controls, and independent numerical support. However, the binding packet preflight identifies clipped load-bearing evidence, so the complete execution certificate cannot be verified and audited_clean is forbidden. The Wilson-environment identification is explicitly outside the audited theorem as a division-of-labor boundary, not asserted as a no-go result."
 }

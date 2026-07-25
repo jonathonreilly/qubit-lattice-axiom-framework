@@ -82,7 +82,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 24.585,
+  "load_bearing_score": 24.587,
   "load_bearing_step": "For k=1,2 the real normal determinants det_R(I-P^k|_N) are both 3, so the defined group average is (1/3)(1/3+1/3)=2/9.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "retained_no_go",
@@ -4698,6 +4698,6 @@
   },
   "runner_path": "scripts/audit_companion_koide_aps_c3_fixed_locus_weights_2026_06_05.py",
   "title": "C\u2083 Body-Diagonal Fixed Locus and Local Inverse-Determinant Density",
-  "transitive_descendants": 767,
+  "transitive_descendants": 768,
   "verdict_rationale": "In the displayed integer basis, independent recomputation gives N=[[0,-1],[1,-1]], N^2=[[-1,1],[-1,0]], and det(I-N)=det(I-N^2)=3; independently, the invariant rotation formula det(I-R_theta)=2-2*cos(theta) gives 3 at theta=+/-2*pi/3. Averaging the two inverse determinants with the stated 1/|C3| factor gives exactly 2/9. The source explicitly excludes physical-axis selection and all APS, charged-lepton, readout, probability, and global-identification bridges, so no such bridge is being ratified; residual risk is confined to downstream uses that exceed this narrow scope."
 }

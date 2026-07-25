@@ -417,6 +417,6 @@
   },
   "runner_path": "scripts/frontier_z2_hw1_mass_matrix_parametrization.py",
   "title": "Z_2 `hw=1` Mass-Matrix Parametrization Note",
-  "transitive_descendants": 1473,
+  "transitive_descendants": 1474,
   "verdict_rationale": "The theorem is universally quantified over the supplied finite-dimensional permutation-matrix realization and makes no physical-carrier identification. The source derives every structural assertion by exact matrix equations, block diagonalization, and a symbolic discriminant with an explicit nonzero witness. The runner genuinely recomputes these results from general Hermitian coordinates and imports no contested premise or external comparator."
 }

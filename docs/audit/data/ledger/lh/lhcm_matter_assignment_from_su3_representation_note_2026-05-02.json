@@ -57,7 +57,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "decoration_under_graph_first_su3_integration_note",
-  "load_bearing_score": 12.531,
+  "load_bearing_score": 12.532,
   "load_bearing_step": "The retained graph-first SU(3) integration gives a residual C^4 = Sym^2 \u2295 Anti^2 = C^3 \u2295 C^1 split with structural SU(3) acting as the 3-dimensional fundamental on Sym^2 and trivially on the 1-dimensional Anti^2 block, so the LH doublet sector is (2,3) \u2295 (2,1).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "unknown",
@@ -136,6 +136,6 @@
   },
   "runner_path": "scripts/frontier_lhcm_matter_assignment.py",
   "title": "LHCM Matter Assignment from SU(3) Representation Content",
-  "transitive_descendants": 1045,
+  "transitive_descendants": 1046,
   "verdict_rationale": "All load-bearing checks are class-A algebra over the already retained graph-first SU(3) selected-axis package: the runner verifies the swap decomposition, standard SU(3) fundamental matrices on the 3-block, triviality on the 1-block, and the tensor dimensions. The runner does not import external comparators or tuned numerical inputs. Because the claim reduces to a direct algebraic corollary of the graph-first SU(3) integration parent plus standard representation terminology, it is a decoration rather than an independent positive theorem."
 }

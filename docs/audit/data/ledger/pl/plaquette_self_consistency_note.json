@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 49.296,
+  "load_bearing_score": 49.297,
   "load_bearing_step": "For the selected finite periodic SU(3) Wilson surface, compactness and boundedness make the positive finite partition function and the expectation of P_bar unique and finite.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "unknown",
@@ -548,6 +548,6 @@
   },
   "runner_path": "scripts/frontier_plaquette_self_consistency_finite_mc_repair.py",
   "title": "Plaquette Self-Consistency Finite MC Diagnostic",
-  "transitive_descendants": 1256,
+  "transitive_descendants": 1257,
   "verdict_rationale": "The finite theorem follows from compactness, continuity, boundedness, and positivity on the explicitly selected mathematical surface. The runner constructs SU(3) matrices and computes finite-lattice observables and seeded Metropolis diagnostics rather than merely printing expected results. The value 0.5934 occurs only in scope-text checks and is not an input to the substantive computations."
 }

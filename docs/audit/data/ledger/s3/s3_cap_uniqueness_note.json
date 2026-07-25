@@ -73,7 +73,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 21.77,
+  "load_bearing_score": 21.771,
   "load_bearing_step": "For the explicit cubical-ball family constructed by the runner at R=2,3,4,5, the checker constructs the boundary triangulation and cone complex and verifies the listed finite incidence, link, boundary, and Euler facts.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "unknown",
@@ -317,6 +317,6 @@
   },
   "runner_path": "scripts/frontier_s3_cap_uniqueness.py",
   "title": "S^3 Cap Finite Cone-Cap Construction Certificate",
-  "transitive_descendants": 1234,
+  "transitive_descendants": 1235,
   "verdict_rationale": "The second audit agrees that the narrowed bounded certificate closes only for the explicit finite construction. The runner directly constructs the cubical balls, boundary triangulations, and cone complexes for R=2,3,4,5, while the source explicitly removes global PL cap uniqueness, physical closure, Schoenflies/Alexander/Perelman/Moise imports, and PL S^3 identification."
 }

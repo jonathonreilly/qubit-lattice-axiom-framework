@@ -1,0 +1,63 @@
+{
+ "audit": "unset",
+ "authority": "none",
+ "conclusion": "The declared composition countermodel refutes composition from Qubit plus locality, exactly as its source note says. It does NOT refute composition on the four-axiom surface: the generated algebra is always the ordinary tensor product, and the countermodel's excess carries no record-determined readout. Interface C's 'no extra global sector' content therefore follows for readable structure without a new axiom, modulo the one named premise.",
+ "countermodel": {
+  "span_dim": 16,
+  "with_Z": 17
+ },
+ "cycle": 691,
+ "cycle_claim": null,
+ "fail_count": 0,
+ "firewalls": {
+  "generated_algebra_called_a_physical_hilbert_space": false,
+  "local_tomography_claimed": false,
+  "new_axiom_or_primitive_proposed": false,
+  "probability_or_born_content_claimed": false
+ },
+ "generation": {
+  "declared countermodel M_4 (+) M_4": {
+   "ambient_complex_dim": 64,
+   "generated_complex_dim": 16
+  },
+  "multiplicity amplification (extra I_2 factor)": {
+   "ambient_complex_dim": 64,
+   "generated_complex_dim": 16
+  },
+  "plain M_2 (x) M_2": {
+   "ambient_complex_dim": 16,
+   "generated_complex_dim": 16
+  },
+  "signed-permutation twist on the second summand": {
+   "ambient_complex_dim": 64,
+   "generated_complex_dim": 16
+  },
+  "three identical summands": {
+   "ambient_complex_dim": 144,
+   "generated_complex_dim": 16
+  }
+ },
+ "pass": true,
+ "pass_count": 6,
+ "record_determinacy": {
+  "central_gap": "2",
+  "max_local_difference": "0",
+  "pairs": 80
+ },
+ "residuals": {
+  "not_closed_by_this_cycle": [
+   "local tomography",
+   "operational preparation/effect/channel typing (interface Q)",
+   "frame measure, denominator, probability (interface P)",
+   "which composite projectors are physically available or readable",
+   "identification of a prepared density operator",
+   "any claim about three or more sites, which is not tested here"
+  ],
+  "premise_used_beyond_computation": "The step from 'carries no lawful readout' to 'is not a distinct physical state' is performed by the Qualification sentence 'a state is a configuration of records'. That is a declared framework-wording citation, not a computed row of this runner.",
+  "scope": "two sites, one M_2(C) each, finite-dimensional ambient algebras from the declared fixture family; no claim is made for infinite dimensions or for ambient algebras outside that family"
+ },
+ "resources": {
+  "elapsed_seconds": 1.2475842079729773
+ },
+ "runner_sha256": "b51cd345a5ed296883ca25f93c5042783d75d401ef77f229672efe682872559a"
+}

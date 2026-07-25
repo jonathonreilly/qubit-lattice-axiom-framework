@@ -16,10 +16,23 @@ decisive row, with a negative control in each).
 ## The question
 
 Cycle 693 showed that content determinacy plus finite additivity force every
-scalar readout into the singleton-weight form. Cycle 697 showed that such a
-readout is position-blind and never dimensionless, and named the missing
-objects. Both are negative. This cycle asks the positive question the audit
-verdicts actually need answered:
+scalar readout into the singleton-weight form. An earlier block in this
+campaign added that such a readout is blind to record position and that an
+additive readout cannot also be duplication-invariant; that block was rejected
+as submitted and only its abstract kernel classification was salvaged and
+landed, as
+[Proper-cubic finite-support linear-kernel classification](PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-25.md).
+Nothing below relies on the rejected parts.
+
+One wording correction inherited from that review, made here so it is not
+repeated: **"cannot be duplication-invariant" is not "cannot be
+dimensionless."** The record count `I(S) = |S|` is a nonzero, finitely
+additive, dimensionless pure number, and it doubles under duplication. The
+correct statement is about intensive (degree-zero) quantities only. This note
+uses the narrow form throughout.
+
+This cycle asks the positive question the audit verdicts actually need
+answered:
 
 > "Record additivity and the approved primitives do not themselves determine
 > the carrier, source action, or dimensionless readout normalization."
@@ -80,6 +93,33 @@ control.
 The minimal covariant local two-body readout is therefore one constant times
 the number of adjacent record pairs.
 
+### The hypotheses of M2 are supplied, not derived
+
+A prior review of an earlier block in this campaign found that Record
+additivity was being asked to carry more than it does. The correction applies
+here and is stated up front. M2 assumes, as explicit conditions:
+
+1. a rational scalar/module structure for the kernel values — cycle 693
+   supplies only an arbitrary additive scalar group `G`;
+2. that the two-body term enters **linearly**, as a sum over unordered record
+   pairs of a kernel value;
+3. **finite support** for the kernel;
+4. **covariance** of the kernel under translations and proper cubic rotations.
+
+The Lattice axiom supplies `Z^3`, its translations, and the proper cubic
+rotations. It does **not** supply conditions 1–4 for a downstream physical law,
+and Record additivity does not make a law linear. These are the named boundary
+of M2, exactly as they are the named boundary of the landed
+[proper-cubic kernel classification](PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-25.md).
+What M1 establishes from the axiom text alone is the *negative* half — that a
+strictly additive readout has no pair term at all — and that half needs none of
+1–4.
+
+The orbit-count step itself is standard and is not claimed as new here; see
+`CUBIC_ORBIT_REYNOLDS_PROJECTOR_NARROW_THEOREM_NOTE_2026-05-10.md`, which
+proves that invariant functions are constant on orbit classes and that the
+invariant dimension equals the orbit count.
+
 ## M3 — the pair readout is additive at separation and fails exactly on contact
 
 For `A = {(0,0,0), (1,0,0)}` the runner computes exactly:
@@ -96,9 +136,9 @@ pathological.
 
 ## M4 — the field is the marginal readout cost of a test record
 
-The pair kernel supplies the site-anchored value cycle 697 showed was missing,
-and it supplies it in one specific shape. The runner verifies exactly that for
-every tested site
+The pair kernel supplies a site-anchored value — the thing a position-blind
+readout can never supply — and it supplies it in one specific shape. The runner
+verifies exactly that for every tested site
 
 ```text
 pairs(S + {x}) - pairs(S) = number of occupied neighbors of x
@@ -124,12 +164,11 @@ The field operator induced by the range-1 pair kernel is, entrywise and exactly
 on a periodic `5^3` box, `6*I + Delta`. An exact solve over `Q` confirms it lies
 in `span{I, Delta}` and that a single-axis pair kernel does not.
 
-That is the same two-dimensional family that
-[cycle 697](PHYSICAL_READOUT_POSITION_SCALE_LIMITS_AND_FORCED_LOCAL_LAW_CYCLE697_NOTE_2026-07-25.md)
-derived from the law side, by an independent argument that never mentions a
-source. Two different questions — "what operator can a covariant local law
-use?" and "what field can a covariant local pair kernel induce?" — land on the
-same two constants. The agreement is a consistency check on both, not a new
+That is the same two-dimensional family the landed
+[proper-cubic kernel classification](PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-25.md)
+gives at range 1, by an argument that never mentions a source. Two different
+questions — "what operator can a covariant local law use?" and "what field can
+a covariant local pair kernel induce?" — land on the same two constants. The agreement is a consistency check on both, not a new
 premise.
 
 ## What this does not do
@@ -153,7 +192,7 @@ premise.
 |---|---|
 | site-anchored readout | **shape derived**: the marginal cost of a test record. Its existence still requires the two-body extension, which the strict reading of the additivity clause excludes. |
 | source action | **shape classified**: a two-body kernel on octahedral orbits; one constant at range 1. Value, sign, and range remain open. |
-| reference normalization | untouched by this cycle; still the open object cycle 697 named. |
+| reference normalization | untouched by this cycle; still open. A dimensionless *intensive* target needs a selected reference; a dimensionless extensive count does not. |
 | carrier | untouched. |
 
 ## Scope for independent review
@@ -175,9 +214,15 @@ The runner imports nothing from the repository. The load-bearing framework
 authority is [Minimal axioms](MINIMAL_AXIOMS_2026-06-29.md).
 [Cycle 693](PHYSICAL_RECORD_READOUT_CARRIER_THREE_WAY_SPLIT_CYCLE693_NOTE_2026-07-25.md)
 is cited for the singleton-weight factorization it established, and
-[cycle 697](PHYSICAL_READOUT_POSITION_SCALE_LIMITS_AND_FORCED_LOCAL_LAW_CYCLE697_NOTE_2026-07-25.md)
-for the position and scale limits and the law-side family that M5 compares
-against; neither is load-bearing for this runner's arithmetic.
+[Proper-cubic finite-support linear-kernel classification](PROPER_CUBIC_FINITE_SUPPORT_LINEAR_KERNEL_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-25.md)
+for the range-1 family that M5 compares against; neither is load-bearing for
+this runner's arithmetic.
+
+`FLAVOR_READOUT_GATE_EQUALS_CARRIER_IDENTIFICATION_2026-05-31.md` records that
+the framework permits both intensive local densities and extensive quasi-local
+sums. It is named here as the cross-cycle surface a prior review found missing
+from an earlier block's scan; it is consistent with M1-M5 and is not
+load-bearing.
 
 Closest standard-math analogue, cited so the distinction is explicit:
 [Cubic-orbit Reynolds projector](CUBIC_ORBIT_REYNOLDS_PROJECTOR_NARROW_THEOREM_NOTE_2026-05-10.md)

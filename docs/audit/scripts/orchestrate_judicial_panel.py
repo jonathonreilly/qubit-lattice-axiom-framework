@@ -51,6 +51,7 @@ MAJORITY = 3
 MIN_VOTE_BYTES = 120
 MAX_FRESH_PANEL_CONTRACT_RETRIES = 2
 VOTE_CONTRACT_ERROR_PREFIX = "vote_contract_error:"
+PANEL_TRANSIENT_SERVICE_RESULT = "panel_transient_service_unavailable"
 
 ALLOWED_SIDES = audit_contract.JUDICIAL_SIDES
 ALLOWED_VERDICTS = audit_contract.TERMINAL_VERDICTS
@@ -544,6 +545,9 @@ def collect_vote(job: dict) -> tuple[dict | None, str]:
         return None, "stall_killed"
     raw = job["raw_output"]
     if job.get("returncode") != 0:
+        marker = batch.retryable_worker_service_failure(job)
+        if marker is not None:
+            return None, f"{batch.TRANSIENT_SERVICE_FAILURE_RESULT}:{marker}"
         return None, f"judge_exit_{job.get('returncode')}"
     if not raw.exists() or raw.stat().st_size <= MIN_VOTE_BYTES:
         return None, "no_size_qualified_vote"
@@ -993,6 +997,24 @@ def run_panel(
             "tally": serialized_tally(votes),
         }
         if len(votes) != PANEL_SIZE:
+            transient_failures = [
+                failure
+                for failure in failures
+                if f":{batch.TRANSIENT_SERVICE_FAILURE_RESULT}:" in failure
+            ]
+            if (
+                transient_failures
+                and len(transient_failures) + len(contract_failures)
+                == len(failures)
+            ):
+                record["result"] = PANEL_TRANSIENT_SERVICE_RESULT
+                write_panel_record(workdir, cid, panel_no, record)
+                return {
+                    "cid": cid,
+                    "result": PANEL_TRANSIENT_SERVICE_RESULT,
+                    "detail": ";".join(failures),
+                    "votes": record["votes"],
+                }
             if failures and len(contract_failures) == len(failures):
                 consecutive_contract_retries += 1
                 if (
@@ -1342,6 +1364,26 @@ def runtime_arg_error(args: argparse.Namespace) -> str | None:
     return None
 
 
+def report_exit_code(report: list[dict], reseat_failures: list[dict]) -> int:
+    """Return success, typed temporary-service failure, or hard failure."""
+    applied = {
+        "audited_clean", "audited_renaming", "audited_conditional",
+        "audited_decoration", "audited_failed", "audited_numerical_match",
+    }
+    panels_ok = all(item.get("result") in applied for item in report)
+    transient = any(
+        item.get("result") == PANEL_TRANSIENT_SERVICE_RESULT
+        for item in report
+    )
+    retryable = all(
+        item.get("result") in applied | {PANEL_TRANSIENT_SERVICE_RESULT}
+        for item in report
+    )
+    if retryable and transient and not reseat_failures:
+        return batch.TRANSIENT_SERVICE_EXIT_CODE
+    return 0 if (panels_ok and not reseat_failures) else 1
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Five-judge panel drainer for cross-confirmation disagreements"
@@ -1481,14 +1523,9 @@ def main() -> int:
         encoding="utf-8",
     )
     print(f"report: {workdir / 'report.jsonl'}")
-    applied = {
-        "audited_clean", "audited_renaming", "audited_conditional",
-        "audited_decoration", "audited_failed", "audited_numerical_match",
-    }
     if reseat_failures:
         print(f"== reseat failures: {len(reseat_failures)} (nonzero exit)")
-    panels_ok = all(item.get("result") in applied for item in report)
-    return 0 if (panels_ok and not reseat_failures) else 1
+    return report_exit_code(report, reseat_failures)
 
 
 if __name__ == "__main__":

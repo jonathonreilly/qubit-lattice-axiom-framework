@@ -65,6 +65,12 @@ PROGRESS = {
 }
 _STOP_HEARTBEAT = threading.Event()
 _DRAIN_LOCK_HANDLE: TextIO | None = None
+DEFAULT_SERVICE_RETRY_INITIAL_SECONDS = 60
+DEFAULT_SERVICE_RETRY_MAX_SECONDS = 15 * 60
+
+
+class RuntimeLimitReached(Exception):
+    """Raised only at a safe phase boundary after the requested runtime."""
 
 
 def emit(message: str) -> None:
@@ -210,6 +216,46 @@ def summary_line(final: bool = False) -> str:
 def heartbeat() -> None:
     while not _STOP_HEARTBEAT.wait(15 * 60):
         emit(summary_line())
+
+
+def remaining_runtime_seconds(args: argparse.Namespace) -> float | None:
+    hours = float(getattr(args, "max_runtime_hours", 0) or 0)
+    started = PROGRESS.get("started")
+    if hours <= 0 or not isinstance(started, (int, float)):
+        return None
+    return (hours * 60 * 60) - (time.monotonic() - started)
+
+
+def stop_if_runtime_limit_reached(args: argparse.Namespace) -> None:
+    remaining = remaining_runtime_seconds(args)
+    if remaining is not None and remaining <= 0:
+        emit(
+            "STOP requested runtime reached at a completed phase boundary: "
+            f"max_runtime_hours={args.max_runtime_hours}"
+        )
+        raise RuntimeLimitReached
+
+
+def wait_for_service_retry(
+    args: argparse.Namespace,
+    context: str,
+    consecutive_failures: int,
+) -> None:
+    delay = min(
+        args.service_retry_initial_sec
+        * (2 ** min(consecutive_failures - 1, 20)),
+        args.service_retry_max_sec,
+    )
+    remaining = remaining_runtime_seconds(args)
+    if remaining is not None:
+        delay = min(delay, max(0.0, remaining))
+    emit(
+        "retryable auditor service outage: "
+        f"context={context} consecutive={consecutive_failures} "
+        f"backoff_seconds={delay:g}"
+    )
+    if delay > 0:
+        time.sleep(delay)
 
 
 def git_head() -> str:
@@ -378,7 +424,14 @@ def batch_command(
 
 
 def run_panel(args: argparse.Namespace, label: str) -> int:
-    return run_command(label, panel_command(args))
+    transient_failures = 0
+    while True:
+        stop_if_runtime_limit_reached(args)
+        rc = run_command(label, panel_command(args))
+        if rc != batch.TRANSIENT_SERVICE_EXIT_CODE:
+            return rc
+        transient_failures += 1
+        wait_for_service_retry(args, label, transient_failures)
 
 
 def drain_lane(
@@ -388,8 +441,10 @@ def drain_lane(
 ) -> tuple[int, bool]:
     """Drain one scoped phase and panel after every batch."""
     made_progress = False
+    transient_failures = 0
     label = f"{source}-source" if source else (lane or "global-development")
     for cycle in itertools.count(1):
+        stop_if_runtime_limit_reached(args)
         if args.max_lane_cycles and cycle > args.max_lane_cycles:
             emit(f"STOP lane cycle safety bound reached: lane={label}")
             return 4, made_progress
@@ -408,15 +463,25 @@ def drain_lane(
         panel_rc = run_panel(args, f"panel-after-{label}-cycle-{cycle}")
         if panel_rc != 0:
             return panel_rc, made_progress
-        if batch_rc != 0:
-            return batch_rc, made_progress
         after = git_head()
         after_exclusions = campaign_exclusion_keys(
             getattr(args, "campaign_quarantine_file", None)
         )
+        if after != before or after_exclusions != before_exclusions:
+            made_progress = True
+        if batch_rc == batch.TRANSIENT_SERVICE_EXIT_CODE:
+            transient_failures += 1
+            wait_for_service_retry(
+                args,
+                f"batch-{label}-after-panel",
+                transient_failures,
+            )
+            continue
+        if batch_rc != 0:
+            return batch_rc, made_progress
+        transient_failures = 0
         if after == before and after_exclusions == before_exclusions:
             return 0, made_progress
-        made_progress = True
         if args.dry_run:
             return 0, made_progress
 
@@ -663,6 +728,15 @@ def run_forensic_canary(
     )
     if claim_local is None:
         if rc != 0:
+            marker = batch.retryable_service_failure_marker(
+                json.dumps(terminal, sort_keys=True) if terminal else ""
+            )
+            if marker is not None:
+                emit(
+                    "forensic auditor hit a retryable service outage: "
+                    f"claim={claim_id} matched={marker!r}"
+                )
+                return batch.TRANSIENT_SERVICE_EXIT_CODE
             return rc
         terminal_phase = terminal.get("phase") if terminal else None
         if terminal_phase in {"applied", "remote_state_superseded"} or (
@@ -733,6 +807,15 @@ def build_parser() -> argparse.ArgumentParser:
         help="full-pass safety bound; 0 drains to a fixed point (default)",
     )
     parser.add_argument(
+        "--max-runtime-hours",
+        type=float,
+        default=0,
+        help=(
+            "stop successfully at the first completed phase boundary after "
+            "this many hours; 0 has no runtime bound"
+        ),
+    )
+    parser.add_argument(
         "--max-lane-cycles",
         type=int,
         default=0,
@@ -743,6 +826,18 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--runner-timeout-sec", type=int, default=120)
     parser.add_argument("--codex-timeout-sec", type=int, default=2700)
     parser.add_argument("--push-retries", type=int, default=3)
+    parser.add_argument(
+        "--service-retry-initial-sec",
+        type=int,
+        default=DEFAULT_SERVICE_RETRY_INITIAL_SECONDS,
+        help="initial backoff after a typed transient auditor service outage",
+    )
+    parser.add_argument(
+        "--service-retry-max-sec",
+        type=int,
+        default=DEFAULT_SERVICE_RETRY_MAX_SECONDS,
+        help="maximum backoff between typed transient-service batch retries",
+    )
     parser.add_argument(
         "--campaign-workdir",
         type=Path,
@@ -772,11 +867,17 @@ def main(argv: list[str] | None = None) -> int:
         args.runner_timeout_sec,
         args.codex_timeout_sec,
         args.push_retries,
+        args.service_retry_initial_sec,
+        args.service_retry_max_sec,
     )
     if any(value < 1 for value in positive):
         raise SystemExit("worker, round, timeout, and retry values must be positive")
     if args.max_passes < 0 or args.max_lane_cycles < 0:
         raise SystemExit("pass and cycle safety bounds must be non-negative")
+    if args.max_runtime_hours < 0:
+        raise SystemExit("runtime bound must be non-negative")
+    if args.service_retry_initial_sec > args.service_retry_max_sec:
+        raise SystemExit("initial service retry delay cannot exceed its maximum")
     args.worker_id = args.worker_id.strip() or f"worker-{uuid.uuid4().hex[:12]}"
     PROGRESS["worker_id"] = args.worker_id
     emit(
@@ -832,11 +933,13 @@ def main(argv: list[str] | None = None) -> int:
     PROGRESS["last_canary_terminal_phase"] = None
     PROGRESS["last_canary_source"] = None
     forensic_attempted: set[str] = set()
+    forensic_service_failures = 0
     _STOP_HEARTBEAT.clear()
     thread = threading.Thread(target=heartbeat, daemon=True)
     thread.start()
     try:
         for pass_number in itertools.count(1):
+            stop_if_runtime_limit_reached(args)
             if args.max_passes and pass_number > args.max_passes:
                 emit("STOP pass safety bound reached")
                 return 4
@@ -925,10 +1028,20 @@ def main(argv: list[str] | None = None) -> int:
                     or args.lane
                 ):
                     return 0
+                stop_if_runtime_limit_reached(args)
                 forensic_before = after
                 rc = run_forensic_canary(args, forensic_attempted)
+                if rc == batch.TRANSIENT_SERVICE_EXIT_CODE:
+                    forensic_service_failures += 1
+                    wait_for_service_retry(
+                        args,
+                        "forensic-canary",
+                        forensic_service_failures,
+                    )
+                    continue
                 if rc != 0:
                     return rc
+                forensic_service_failures = 0
                 if args.dry_run:
                     return 0
                 synced, detail = batch.sync_origin_main()
@@ -1031,6 +1144,8 @@ def main(argv: list[str] | None = None) -> int:
                     )
                     continue
                 return 0
+    except RuntimeLimitReached:
+        return 0
     finally:
         _STOP_HEARTBEAT.set()
         emit(summary_line(final=True))

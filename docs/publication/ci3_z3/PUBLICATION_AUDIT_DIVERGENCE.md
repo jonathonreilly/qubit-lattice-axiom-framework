@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 118 |
+| medium | `unaudited` | 117 |
 | critical | `audited_conditional` | 16 |
 | medium | `audited_conditional` | 6 |
 | high | `audited_conditional` | 5 |
@@ -33,6 +33,7 @@ publication tables phrase it.
 | critical | `retained_pending_chain` | 1 |
 | high | `audited_numerical_match` | 1 |
 | medium | `audited_numerical_match` | 1 |
+| medium | `audited_renaming` | 1 |
 
 **Total non-retained-grade rows in publication tables:** 552
 
@@ -567,7 +568,7 @@ publication tables phrase it.
 | medium | `shapiro_family_portability_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `shapiro_qa_retest_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `shapiro_unique_discriminator_v2_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `teleportation_native_axioms_theory_note` | `unaudited` | `unaudited` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
+| medium | `teleportation_native_axioms_theory_note` | `audited_renaming` | `audited_renaming` | CLAIMS_TABLE.md, DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | medium | `tensor_block_closure_test_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `tensor_matching_completion_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `tensor_scalar_ratio_consolidation_theorem_note_2026-04-22` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |

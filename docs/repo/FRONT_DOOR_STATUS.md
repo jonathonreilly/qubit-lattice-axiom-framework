@@ -32,17 +32,17 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3866 |
-| Applied audit verdicts | 671 |
+| Applied audit verdicts | 672 |
 | Retained-grade rows, including boxed decorations | 449 |
 | Retained positive theorems | 101 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 326 |
 | Boxed decorations under retained parents | 22 |
 | Open gates | 2 |
-| Unaudited rows | 2837 |
+| Unaudited rows | 2836 |
 | Retained-pending-chain rows | 6 |
 | Audited conditional rows | 148 |
-| Audited renaming rows | 24 |
+| Audited renaming rows | 25 |
 | Audited numerical-match rows | 9 |
 | Citation cycles detected | 58 |
 
@@ -54,12 +54,12 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 3020 |
-| Ready rows | 612 |
+| Total pending rows | 3019 |
+| Ready rows | 611 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
 | High pending | 365 |
-| Medium pending | 818 |
+| Medium pending | 817 |
 | Leaf pending | 1202 |
 
 Next ready rows by queue order:
@@ -84,7 +84,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 118 |
+| medium | `unaudited` | 117 |
 | critical | `audited_conditional` | 16 |
 | medium | `audited_conditional` | 6 |
 | high | `audited_conditional` | 5 |
@@ -99,17 +99,17 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 
 | Metric | Value |
 |---|---:|
-| Publication-lane size (shadow, admitted only) | 563 |
+| Publication-lane size (shadow, admitted only) | 562 |
 | Manifest state | ok |
 | Manifest pending additions | 0 |
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
-| Admitted ids absent from lane candidates | 27 |
+| Admitted ids absent from lane candidates | 28 |
 | Live conditional/failed rows that would park | 124 |
 | Live rows fail-open (legacy/unversioned snapshot) | 42 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
-| Lane rows removed since prior pass | 7 |
+| Lane rows removed since prior pass | 8 |
 | Non-lane rows deferred by simulated interleave | 97 |
 
 Named lane membership churn since the prior pass:
@@ -118,6 +118,7 @@ Named lane membership churn since the prior pass:
 - removed: `higgs_mechanism_note`
 - removed: `matter_inertial_closure_note`
 - removed: `single_axiom_hilbert_note`
+- removed: `teleportation_native_axioms_theory_note`
 - removed: `work_history.ckm.cabibbo_bound_note`
 - removed: `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02`
 
@@ -145,6 +146,7 @@ Admitted ids currently absent from lane candidates:
 - `quark_cp_carrier_completion_note_2026-04-18`
 - `shapiro_static_discriminator_note`
 - `single_axiom_hilbert_note`
+- `teleportation_native_axioms_theory_note`
 - `universal_gr_lorentzian_global_atlas_closure_note`
 - `work_history.ckm.cabibbo_bound_note`
 - `z2_hw1_mass_matrix_parametrization_note`
@@ -197,28 +199,28 @@ Lane rows advanced by the simulated interleave (positions gained; complete list)
 - `physical_lattice_necessity_note`: +5
 - `rconn_derived_note`: +5
 - `bh_entropy_rt_ratio_widom_no_go_note`: +5
-- `teleportation_native_axioms_theory_note`: +5
+- `charged_lepton_two_higgs_canonical_reduction_note`: +5
 - `hypercharge_identification_note`: +4
 - `three_generation_observable_count_corollary_note_2026-05-03`: +4
 - `sigma_hier_uniqueness_theorem_note_2026-04-19`: +4
-- `charged_lepton_two_higgs_canonical_reduction_note`: +4
+- `koide_q_bridge_single_primitive_note_2026-04-22`: +4
 - `yt_color_projection_correction_note`: +3
 - `koide_q_delta_residual_cohomology_obstruction_no_go_note_2026-04-24`: +3
 - `koide_dimensionless_note_2026-04-24`: +3
-- `koide_q_bridge_single_primitive_note_2026-04-22`: +3
+- `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02`: +3
 - `s3_mass_matrix_conditional_degeneracy_note_2026-07-11`: +2
 - `yt_ew_color_projection_theorem`: +2
 - `gauge_vacuum_plaquette_constant_lift_obstruction_note`: +2
 - `gauge_vacuum_plaquette_mixed_cumulant_audit_note`: +2
 - `action_normalization_note`: +2
 - `planck_target3_phase_unit_edge_statistics_boundary_note_2026-04-25`: +2
-- `cpt_particle_antiparticle_lifetime_equality_theorem_note_2026-05-02`: +2
+- `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02`: +2
 - `unit_singlet_overlap_narrow_theorem_note_2026-05-02`: +1
 - `yt_ew_m_residual_note_2026-05-02`: +1
 - `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note`: +1
 - `area_law_algebraic_spectrum_entropy_no_go_note_2026-04-25`: +1
 - `gravitomagnetic_note`: +1
-- `cpt_particle_antiparticle_mass_equality_theorem_note_2026-05-02`: +1
+- `koide_transport_gap_constant_no_go_note_2026-04-20`: +1
 
 Non-lane rows deferred by the simulated interleave (positions lost; complete list):
 - `hadron_lane1_sqrt_sigma_b5_framework_link_audit_note_2026-04-30`: -11

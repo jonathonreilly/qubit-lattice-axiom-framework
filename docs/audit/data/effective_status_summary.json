@@ -84,7 +84,7 @@
     "audited_conditional": 148,
     "audited_failed": 33,
     "audited_numerical_match": 9,
-    "audited_renaming": 24,
+    "audited_renaming": 25,
     "decoration_under_abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": 1,
     "decoration_under_cluster_decomposition_delta_t_finite_lambda_operator_real_note_2026-05-19": 1,
     "decoration_under_cpt_exact_note": 1,
@@ -105,7 +105,7 @@
     "retained": 101,
     "retained_bounded": 326,
     "retained_pending_chain": 6,
-    "unaudited": 2837
+    "unaudited": 2836
   },
   "retained_pending_chain_count": 6,
   "retained_pending_chain_examples": [

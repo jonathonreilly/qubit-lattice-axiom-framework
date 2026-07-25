@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 97 |
-| Retained bounded rows | 320 |
+| Retained bounded rows | 321 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 21 |
 
@@ -123,7 +123,7 @@ Sorted by load-bearing graph score (descending).
 - [`replay_environment_note`](../../docs/REPLAY_ENVIRONMENT_NOTE.md) — score 0.000; audited 2026-05-01T23:28:33.389906+00:00
 - [`staggered_graph_portability_stress_note`](../../docs/STAGGERED_GRAPH_PORTABILITY_STRESS_NOTE.md) — score 0.000; audited 2026-05-05T11:44:13.477263+00:00
 
-## Retained bounded rows (320)
+## Retained bounded rows (321)
 
 Sorted by load-bearing graph score (descending).
 
@@ -282,6 +282,7 @@ Sorted by load-bearing graph score (descending).
 - [`gate_b_local_stencil_connectivity_bridge_bounded_theorem_note_2026-06-18`](../../docs/GATE_B_LOCAL_STENCIL_CONNECTIVITY_BRIDGE_BOUNDED_THEOREM_NOTE_2026-06-18.md) — score 2.585; audited 2026-07-09T06:41:59.617948+00:00
 - [`gravity_observable_hierarchy_note`](../../docs/GRAVITY_OBSERVABLE_HIERARCHY_NOTE.md) — score 2.585; audited 2026-05-10T17:18:54.923403+00:00
 - [`matched_2d_4d_decoherence_note`](../../docs/MATCHED_2D_4D_DECOHERENCE_NOTE.md) — score 2.585; audited 2026-05-11T15:36:39.062261+00:00
+- [`mermin_wagner_bogoliubov_textbook_import_note_2026-05-18`](../../docs/MERMIN_WAGNER_BOGOLIUBOV_TEXTBOOK_IMPORT_NOTE_2026-05-18.md) — score 2.585; audited 2026-07-25T05:24:43.268490+00:00
 - [`signed_gravity_interface_kodd_pfaffian_line_bundle_label_narrow_theorem_note_2026-06-12`](../../docs/SIGNED_GRAVITY_INTERFACE_KODD_PFAFFIAN_LINE_BUNDLE_LABEL_NARROW_THEOREM_NOTE_2026-06-12.md) — score 2.585; audited 2026-06-13T01:11:14.539215+00:00
 - [`source_resolved_exact_green_scaling_note`](../../docs/SOURCE_RESOLVED_EXACT_GREEN_SCALING_NOTE.md) — score 2.585; audited 2026-05-17T14:42:11.906633+00:00
 - [`staggered_fermion_card_2026-04-10`](../../docs/STAGGERED_FERMION_CARD_2026-04-10.md) — score 2.585; audited 2026-05-03T21:01:42.077181+00:00

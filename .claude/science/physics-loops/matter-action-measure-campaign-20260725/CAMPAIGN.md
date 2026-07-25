@@ -313,3 +313,101 @@ repo has a capture problem, not (only) a physics problem.**
     independent-onsite covariance there is NO menu, that single
     question decides whether the matter law is underdetermined at all.
     That is the real gate and it is now sharply stated.
+
+---
+
+## TASK B RESULT (2026-07-25): ANSWERED — and it REFUTES L1 of PR #5602
+
+**The question is already answered in the corpus, twice, nine and
+nineteen days before this campaign opened — and both answers
+contradict the polarity I registered.**
+
+### THE CORRECTION I MUST MAKE (urgent)
+
+PR #5602's limitation L1 says: "common-frame covariance is a PREMISE
+that CREATES the two-point menu — under independent onsite covariance
+the commutant is only the scalars and no nontrivial pair law
+survives." **That is wrong, and three independent agents refuted it
+from three directions:**
+
+1. **The scalars claim is false under the group the axioms actually
+   name.** "Independent-onsite implies no nontrivial pair law" holds
+   only for a SUPPLIED CONTINUOUS `SU(2)`. Under the axioms' own
+   group, independent-onsite covariance leaves `dim_R = 4`, witness
+   `Z (x) Z`. Gated.
+2. **The menu does not depend on the supplied half, and dropping it
+   ENLARGES the underdetermination.** The covariance premise splits
+   in two with OPPOSITE statuses: (H4a) the *correlation* — the edge
+   group is a TWISTED DIAGONAL `{(u, v u v^dag)}` — is FORCED, by
+   **Admissibility**, not by Qubit (value-blindness lemma:
+   independent onsite covariance forces `Avail` in `{empty, Omega}`
+   and content-blindness, so the corpus's own registered vary-with
+   witnesses are not independent-covariant). (H4b) *flatness*
+   (`v = I`) is SUPPLIED — it entered 2026-05-25 as a `:=`.
+   **Commutant dimension is exactly 2 for EVERY twist** and the
+   ground-degeneracy separator is conjugation-invariant, so dropping
+   flatness gives a link field with gauge-invariant holonomy —
+   the two-point menu is a **LOWER BOUND**, not an artifact.
+3. **Prior art says the opposite polarity.**
+   `COLOR_ARENA_BONDED_PAIR_ADMISSIBILITY_CROSS_SITE_SURFACE_BOUNDED_THEOREM_NOTE_2026-07-06.md:76-78`:
+   "**The Qubit axiom itself supplies that identification**", with
+   frame-relativity at `:96-101` and the leftover registered as
+   "R5 frame transport ... not supplied — open".
+   `docs/work_history/.../FOUNDATION_LICENSED_PHYSICAL_EQUIVALENCE_WEYL_PAIR_NOTE_2026-07-14.md:29-34,198-216`
+   has a section titled "Common versus site-dependent frames" and
+   concludes common `PU(2)` conjugation is the **narrow SAFE**
+   licensed re-presentation, while "Neither statement licenses
+   arbitrary site-dependent quantum frames". So **independent-onsite
+   is the horn needing the EXTRA supplied object, not common-frame.**
+
+### WHAT IS ACTUALLY TRUE (the answer to B)
+
+- **Common-frame covariance is NOT axiom-forced** (confidence ~0.95):
+  `MINIMAL_AXIOMS_2026-06-29.md` contains the word "frame" **zero
+  times**, and its only covariance clause (`:57-58`) quantifies over
+  lattice translations and proper cubic rotations — spatial motions,
+  never an internal `SU(2)`. `:47` grants an algebraic PRESENTATION,
+  fixing an isomorphism class, not a chosen isomorphism.
+  Prior art agrees verbatim:
+  `MATTER_GAUGE_MINIMAL_COUPLING_FIBER_FRAME_FORCES_CONNECTION_NARROW_THEOREM_NOTE_2026-06-08.md:98-99`
+  — "The Lattice and Qubit axioms do not supply such a canonical
+  identification."
+- **The translation route dies constructively** — my own recorded
+  suspicion, now proved (gates F0-F9): with distinct exact-rational
+  `SU(2)` frames, `T' = G T G^dag` is a legitimate translation lift
+  and `H' = G H G^dag` is EXACTLY `T'`-invariant with isospectral
+  edge terms, yet FAILS diagonal-`SU(2)` covariance. Translation
+  invariance of the LAW does not force a SHARED FRAME.
+- **The real fork is one untyped word.** The axiom "does not type
+  'conditions'". Typed as record CONTENT -> menu of 2. Typed as
+  record OCCUPANCY -> no pair law at all. Evidence favours content
+  (~0.65) because both registered exhibits are content-sensitive and
+  occupancy-typing empties the matter sector. **This is an owner
+  typing decision, not a derivation.**
+- **A dichotomy theorem** (su(2) simplicity + `Aut(su(2)) = SO(3)` +
+  ray-transitivity, rebuilt natively): reachable commutant
+  dimensions are exactly `{2, 1}`, nothing between. And the
+  framework's OWN finite proper-cubic group `2O`, acting diagonally,
+  already gives dimension 2 and the same `span{I, SWAP}`, while
+  independent `2O x 2O` collapses to 1.
+- **Sharper negative than "two points":** "no possibility is
+  privileged" is a REDUNDANCY, and redundancies quotient rather than
+  constrain. One edge carries **8** physical parameters; the chain
+  16 -> 10 -> 6 -> 5 -> 2 shows the two-point menu costs **seven
+  dimensions of supplied content**. And `(w (x) w^dag) SWAP` is not
+  in `span{I, SWAP}` — so "the law is `I - SWAP`" is not even a
+  frame-invariant sentence.
+
+### BLAST RADIUS
+
+27 `origin/main` surfaces cite the flat trivialization: 20
+`unaudited`, 1 `audited_conditional`, 1 `retained_pending_chain`,
+2 `meta`, 3 no row — **zero retained**. The inherited premise is
+precisely "the matter sector is the zero-holonomy sector", which the
+framework's own colour lane already proved forces a connection.
+**Zero landed results stand on the two-point menu** (PR #5602 is not
+on main).
+
+Caution recorded: the local worktree ledger diverges from
+origin/main by 1111 shards; all statuses above were re-read from
+origin/main blobs.

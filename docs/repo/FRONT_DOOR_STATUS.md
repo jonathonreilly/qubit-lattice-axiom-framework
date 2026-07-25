@@ -32,16 +32,16 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3865 |
-| Applied audit verdicts | 579 |
+| Applied audit verdicts | 580 |
 | Retained-grade rows, including boxed decorations | 436 |
 | Retained positive theorems | 97 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 318 |
 | Boxed decorations under retained parents | 21 |
 | Open gates | 2 |
-| Unaudited rows | 2928 |
+| Unaudited rows | 2927 |
 | Retained-pending-chain rows | 5 |
-| Audited conditional rows | 92 |
+| Audited conditional rows | 93 |
 | Audited renaming rows | 21 |
 | Audited numerical-match rows | 6 |
 | Citation cycles detected | 58 |
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 23 |
-| Live conditional/failed rows that would park | 52 |
+| Live conditional/failed rows that would park | 53 |
 | Live rows fail-open (legacy/unversioned snapshot) | 42 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
@@ -323,15 +323,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4492 |
+| Citation-graph nodes | 4495 |
 | Critical nodes | 755 |
 | High nodes | 443 |
-| Medium nodes | 1121 |
-| Leaf nodes | 2173 |
+| Medium nodes | 1125 |
+| Leaf nodes | 2172 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2121 descendants; score 269.051
+- `minimal_axioms` - critical; 2124 descendants; score 269.053
 - `graph_first_su3_integration_note` - critical; 1670 descendants; score 64.206
 - `three_generation_observable_theorem_note` - critical; 1278 descendants; score 62.321
 - `quark_route2_exact_readout_map_note_2026-04-19` - critical; 197 descendants; score 61.629

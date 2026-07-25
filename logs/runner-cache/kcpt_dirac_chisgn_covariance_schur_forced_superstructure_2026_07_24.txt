@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/kcpt_dirac_chisgn_covariance_schur_forced_superstructure_2026_07_24.py
+runner_sha256: 21a8ed8cfe479f02f4b1b7d8c1a1affdfb3756f47b078ec6f9e28396cd027100
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 22.36
+status: ok
+----- stdout -----
+[INFO] matrix norm convention: ||X|| means ||X||_max = max_ij |X_ij| unless ||.||_2/SV is named
+[PASS] G01a: |G_amb|=768 (=768)  |H|=1536 (=1536)
+[PASS] G01b: all 1536 integer=True  max_h ||h@h.T - I||_int=0 (=0, exact orthogonal)
+[PASS] G01c: S_eps in H=True  S_eps in G_amb=False (must be False)
+[PASS] G01d: D2 integer=True  D2^T=-D2 =True  M-eigs {0,-4,-8,-12} mults=[8, 24, 24, 8] (=[8,24,24,8])
+[PASS] G01e: ||J_full^2 + I|| <= 1.0e-12
+[PASS] G01f: max||P-P^dag|| <= 1.0e-12  max||P^2-P|| <= 1.0e-12  max||PiPj|| <= 1.0e-12  ||sumP-I|| <= 1.0e-12  ranks=[8, 8, 12, 12, 12, 12]
+[PASS] G02a: h@D2@h.T is EXACTLY +-D2 for all 1536 h (integer equality); violations=0/1536
+[PASS] G02b: s(h)=+1 <=> h in G_amb : True   counts +1:768  -1:768
+[PASS] G02c: rejector: s(S_eps)=-1 (=-1); S_eps@D2@S_eps != +D2, max entry deviation=2 (=2*max|D2|)
+[PASS] G02d: nondegeneracy: max|D2|=1 (>0, so the sign is meaningful)
+[PASS] G03a: s(g@h)==s(g)*s(h) over gens_H x H (5 x 1536 = 7680 products); failures=0
+[PASS] G03b: homomorphism H -> {+-1} with kernel exactly G_amb (|ker|=768=768, ker==G_amb True) => s = chi_sgn
+[PASS] G04a: max_h ||h@J_full@h.T - s(h)*J_full||=0.000e+00 (<= 1.0e-09); violations=0/1536
+[PASS] G04b: the SAME sign function s from G02 works for J_full: sign mismatches D2-vs-J_full=0/1536
+[PASS] G04c: contrast rejector: for h=S_eps, ||S@J_full@S - J_full||=0.747891 (>0.1, the wrong +sign fails loudly)
+[PASS] G05a: twisted diagonal dims (ind8,ind8,ind12,ind12,12+,12-)=[1, 1, 1, 1, 0, 0] (=[1,1,1,1,0,0]); SV-gap ok=True (min kept sv over the four dim-1 blocks=0.967, SV_NULL=1e-08)
+[PASS] G05b: twisted Hom(12+,12-)=1 (=1); largest null sv=3.51e-15, smallest kept=0.967
+[PASS] G05c: twisted Hom(12-,12+)=1 (=1); largest null sv=3.48e-15, smallest kept=0.967
+[PASS] G05d: untwisted diagonal dims=[1, 1, 1, 1, 1, 1] (=[1,1,1,1,1,1]), sum=6 (=End_H=6); SV-gap ok=True
+[PASS] G05e: untwisted Hom(12+,12-)=0 (=0); smallest sv=0.967 (>SV_GAP=1e-04)
+[PASS] G05f: discriminator: twisted diag [1, 1, 1, 1, 0, 0] != untwisted diag [1, 1, 1, 1, 1, 1], and twisted cross 1 != untwisted cross 0 -> the census genuinely depends on chi (a chi-blind solver cannot produce both tables)
+[PASS] G06a: Schur-forced P+/- X P+/- = 0 for X in {D2,J_full}: max(||P+D2P+||,||P-D2P-||,||P+JP+||,||P-JP-||)=9.376e-16 (<= 1.0e-12)
+[PASS] G06b: anticommutator ||{Gam, D24}||=3.089e-15 (<= 1.0e-12)
+[PASS] G06c: anticommutator ||{Gam, J24}||=1.542e-15 (<= 1.0e-12)
+[PASS] G06d: ||D24^2 + 4 Q24||=3.775e-15 (<= 1.0e-12)  ||J24^2 + Q24||=9.437e-16 (<= 1.0e-12)
+[PASS] G06e: rho(H)|24 entirely EVEN: max_h ||h@Gam - Gam@h||=4.184e-15 (<= 1.0e-12)
+[PASS] G06f: even-part span-rank(rho(H)|24)=288 (=12^2+12^2=288 < 576); smallest kept sv=11.3, largest dropped sv=1.62e-14 (SV-gap certified)
+[PASS] G07a: exact identity [D2, P_12+] = -Gam @ D24: ||K + Gam@D24||=3.788e-15 (<= 1.0e-12)
+[PASS] G07b: singular values of K: 24 within 1e-9 of 2, 40 <= 1e-9 (sv1=2.000000000000001, sv24=1.999999999999998, sv25=1.052e-15)
+[PASS] G07c: external anchor 1 (DERIVED): ||[D2,P_12+]||_2 = max sv(K)=2.000000000000001, |max sv - 2.0|=8.882e-16 (<= 1.0e-12)
+[PASS] G07d: external anchor 2 (measured lattice-frame, re-pinned): ||[D2,P_12+]||_max=0.35355339059327884 vs 1/(2 sqrt 2)=0.35355339059327373, diff=5.107e-15 (<= 1.0e-12)
+[PASS] G07e: contrast rejector: an UNFUSED (central) ind12 projector commutes with D2: ||[D2, P_ind12]||=4.279e-15 (<= 1.0e-12) -- sharp central-vs-noncentral contrast
+[PASS] G08a: each of six M-blocks Z^dag M Z is scalar lambda*I: max residual=1.070e-14 (<= 1.0e-12); lambdas=[-0.0, -12.0, -8.0, -8.0, -4.0, -4.0]
+[PASS] G08b: m := -lambda/4 DERIVED: multiset sorted=[0, 1, 1, 2, 2, 3] (=[0,1,1,2,2,3]); ind8s->{0,3}=(0,3)  ind12s->{2,2}=(2,2)  12+/-->{1,1}=(1,1)
+[PASS] G08c: m=0 ind8 (kernel shell): ||Z^dag D2 Z||=2.753e-17 (<= 1.0e-12) -- D2 vanishes (D2^2=0 there and D2 normal => D2=0)
+[PASS] G08d: m=0 ind8: J_full block spans the twisted line, J_blk = c*X0: residual=1.339e-15 (<= 1.0e-12), |c|=2.82843 (>0)
+[PASS] G08e: m=3 ind8: D2 block spans the twisted line, D2_blk = c*X0: residual=4.082e-15 (<= 1.0e-12), |c|=9.79796 (>0)
+[PASS] G08f: both m=2 ind12s: D2 block spans the twisted line, D2_blk = c*X0: max residual=4.905e-15 (<= 1.0e-12), min|c|=9.79796 (>0)
+TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+

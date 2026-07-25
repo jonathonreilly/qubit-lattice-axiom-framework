@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T06:34:30.048220+00:00",
+  "audit_invocation_history": [
+    "7d60034b94664920b8110afa20c55cb0"
+  ],
+  "audit_invocation_id": "7d60034b94664920b8110afa20c55cb0",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 3.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "4105731d3bc78c486346d56001ba3a278218e6b0843c59cf961b2e0f214e944b",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "4105731d3bc78c486346d56001ba3a278218e6b0843c59cf961b2e0f214e944b",
+    "runner_path": "scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 3
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-e8e79c46",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The C1-C4 core is algebraically consistent, but the complete certification chain does not close because the supplied stdout is clipped and the runner omits contradictory displayed identities elsewhere in the note, including the even-subalgebra formula.",
   "claim_id": "cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26",
-  "claim_scope": null,
+  "claim_scope": "Exact C1-C4: dim_R Cl(p,q)=2^(p+q), Cl(3,1)\u2245M_4(R), the dimension readout 16=2^4, and n=4 as the smallest total dimension admitting an M_4(R) cell; downstream physical identifications, sample table entries above n=4, and section 6 corollaries are excluded.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T06:34:30.048220+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 3.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The 16 standard monomials of the explicit \u0393_i have rank 16 in M_4(R), so the universal-property map Cl(3,1)\u2192M_4(R) is an isomorphism.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "38ac31c43c19af74cf8005848222d16c23608968b432a1fddbd3d811a370a6f1",
   "note_path": "docs/CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: correct the n=5 sample cells and the section 6 identity to Cl^0(3,1)\u2245M_2(C), add executable assertions covering those displayed formulas, and provide complete unclipped current-cycle stdout.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1242,14 +1288,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 100,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 100
   },
   "runner_path": "scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py",
   "title": "`Cl(3,1) \u2245 M_4(R)` Dimension-Sixteen Narrow Theorem",
   "transitive_descendants": 3,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the restricted stdout is clipped, and the runner does not check the note's displayed n=5 cells or its section 6 assertion Cl^0(3,1)\u2245M_2(R)\u2295M_2(R), which contradicts the same sentence's identification with Cl(3,0) and the note's own Cl(3,0)\u2245M_2(C) table entry. Why this blocks: C1-C4 are independently consistent, but the packet preflight forbids clean certification and the source contains unchecked contradictory closed forms. Repair target: correct the ancillary classification formulas and supply complete runner evidence asserting every displayed identity. Claim boundary until fixed: only C1-C4 remain supported; the n>4 table samples and section 6 corollaries are not certified."
 }

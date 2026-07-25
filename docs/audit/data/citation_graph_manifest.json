@@ -1,6 +1,6 @@
 {
- "edge_count": 15053,
- "node_count": 4502,
+ "edge_count": 15055,
+ "node_count": 4503,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -7029,6 +7029,10 @@
   "kcpt_kernel_kreal_readout_face_classification_bounded_theorem_note_2026-07-18": {
    "deps_hash": "50dddb4a2314",
    "out_degree": 4
+  },
+  "kcpt_l6_ind8_separator_reach_census_surface_comparison_bounded_theorem_note_2026-07-25": {
+   "deps_hash": "f7d47710551c",
+   "out_degree": 2
   },
   "kcpt_l6_surface_change_module_structure_natural_algebra_invariance_bounded_theorem_note_2026-07-25": {
    "deps_hash": "0e21574e86bc",

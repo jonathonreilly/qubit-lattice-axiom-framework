@@ -1,20 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_l6_ind8_separator_reach_census_surface_comparison_2026_07_25.py
-runner_sha256: 8aa8923f35252f5c1c10b7f84f81c8166370fb7bc9afb2f2595eee7bdd200227
+runner_sha256: 3fb0beb3e18464d3da78980ca39174d45f4e420830a6dd0709c57eb7f7abc8b5
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 135.89
+elapsed_sec: 138.68
 status: ok
 ----- stdout -----
 [info] L=6 built: N=216, M spectrum [0, -3, -6, -9], shell mults [8, 48, 96, 64] (0s)
-[info] groups built: |G_amb|=2592, |H|=5184 (13s)
+[info] groups built: |G_amb|=2592, |H|=5184 (15s)
 [GATE S1] PASS -- |G_amb|=2592=6^3*12, |H|=5184, [H:G]=2, S_eps in G_amb: False
 [GATE S2] PASS -- 137 H-classes {1: 2, 2: 5, 3: 4, 4: 3, 6: 24, 12: 57, 54: 6, 72: 6, 108: 21, 144: 9}; 75 G-orbits {1: 2, 2: 3, 3: 4, 4: 1, 6: 14, 12: 27, 54: 6, 72: 6, 108: 9, 144: 3} sum 2592
 [GATE S3] PASS -- dim A_nat=16, dim Z=4 (=C[M], min overlap 1.0000000000); 4 blocks ranks [8,48,64,96], each M_2(C), two-seed agree True
 [GATE S4] PASS -- sep6 rank sum 16, ||sep6||_F 4.000000000000, [sep6,D2] 5.2e-14, [sep6,J] 1.8e-14, max[sep6,rho(h)] 2.0e-14, overlap^2(A_nat,sep6) 2.57e-33
 [GATE S5] PASS -- dim A'=13 abelian (max||[A,B]|| 1.6e-15); C[M] dim 4, separator complement dim 9, blind to A_nat (max overlap^2 8.2e-31)
+[GATE L1-NAT] PASS -- H normalizes A_nat: max normalized projection residual over gens_H+inverses and X in {D2,J_full,S_eps} = 3.8e-15
 [GATE L1] PASS -- sep6 H-invariance: max ||U sep6 U^T - sep6||_F over gens_H+inverses = 1.7e-14
-[info] structure done (66s)
+[info] structure done (70s)
 
 ==== L=6 REACH CENSUS (75 H-orbits of G_amb) ====
 ci size dim closed omega(15) d(g) Dchi
@@ -93,8 +94,8 @@ C  71 sz   6 dim   36 closed 1 omega 0.000000000000000 dg 0 dchi +0.0000000000
 C  72 sz   3 dim   40 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
 C  73 sz   3 dim   40 closed 1 omega 0.000000000000000 dg 9 dchi +0.0000000000
 C  74 sz   1 dim   16 closed 1 omega 0.000000000000000 dg 0 dchi +0.0000000000
-[info] census done (34s), peak RSS 0.64 GB
-[GATE CN0] PASS -- all 75 closures closed at cap 600, elements sum 2592=2592, 0 UNRESOLVED
+[info] census done (32s), peak RSS 0.39 GB
+[GATE CN0] PASS -- all 75 closures closed at cap 600 (cap-600 misses 0), elements sum 2592=2592, 0 UNRESOLVED
 
 ==== OMEGA VALUE SET ====
 omega=0.000000000000000 classes=61 elements=1818 nearest q<=12 0(err 1.7e-32) second 1/12(err 8.3e-02)
@@ -124,8 +125,8 @@ omega=1.000000000000028 classes=3 elements=292 nearest q<=12 1(err 2.8e-14) seco
 [PERT] wrong separator P8a flips: ['S4-blindness (overlap^2 A_nat: sep6 2.6e-33 -> P8a 0.1250)', 'CN[omega=0] identity class (sep6 2.6e-33 -> P8a 0.1250)']
 [GATE PERT1] PASS -- P8a not blind (overlap^2 0.1250); identity class omega: sep6 2.6e-33 vs P8a 0.1250; 2 gates flip -> runner discriminates
 
-[info] wall-clock 135.7s, peak RSS 1.08 GB
-TOTAL: PASS=25 FAIL=0
+[info] wall-clock 138.5s, peak RSS 1.30 GB
+TOTAL: PASS=26 FAIL=0
 
 ----- stderr -----
 

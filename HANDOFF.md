@@ -63,10 +63,19 @@ one real linkage found, and it is the natural place to push: closing it would
 connect the electroweak weighting to the readout class, which is more than any
 of the other pairs currently offer.
 
-## The priced decision surface (the reference-pricing output)
+## The dimensionless debt ledger (was: the priced decision surface)
 
-Verified by per-source reading, at `origin/main` `a17b5e74a8`. This is what each
-residual actually costs to discharge. Nothing here is adopted or recommended.
+**Owner standard, stated 2026-07-25:** Planck is the single CORE unit import —
+one dimensionful anchor — and every other value should be *built off it*. So the
+framework's target is **one dimensionful import and zero dimensionless imports**,
+which is also what the scale primitive's "zero dimensionless content" clause
+says when read as an aspiration rather than a limitation.
+
+Under that standard the entries below are **derivation debt, not prices**. A
+convention is not payment. An earlier version of this section framed them as
+conventions to purchase; that frame is withdrawn.
+
+Verified by per-source reading, at `origin/main` `a17b5e74a8`.
 
 | residual | what discharging it costs | notes |
 |---|---|---|
@@ -75,19 +84,41 @@ residual actually costs to discharge. Nothing here is adopted or recommended.
 | `kappa_EW` (electroweak) | **conditional**: a carrier/readout-context identification first, then it collapses to a counting convention | Gated by the **EW instance premise**. `CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md` states the EW identification is "a named instance premise with witnesses" and that "cardinality `8/9` is consistent with the `M_3` unit/traceless split, but **cardinality alone does not supply the Hilbert-Schmidt cell structure**." If that premise is discharged, the C2 conditional correspondence makes `kappa_EW`'s missing rule exactly a choice of `w` on that class. |
 | `a_act` (AC occurrence) | **a formation or rate law** — not a convention at all | Largest commitment, and the one the axioms most explicitly withhold: every formation rule is downstream content. `|b|` is slaved to it by the AC target at `delta = 2/9`. |
 
-**The shape of the answer.** Two of the four are ordinary owner decisions whose
-consequences are already computed. One is gated by a named, undischarged premise
-that would, if supplied, convert it into the same kind of decision. One is not a
-convention at all and needs new physics.
+### What covariance already bought
 
-So the reference-pricing question has a definite answer, and it is not the
-convenient one: there is no single adoption that clears the board, and the AC
-obligations — the highest-leverage lanes — sit behind the item that costs the
-most.
+Recast as debt reduction, today's landed work did real work:
 
-**The one linkage worth attacking** is the EW instance premise, because it is
-the only place where discharging one named object demonstrably converts a
-second residual into an already-priced decision.
+| object | before | after covariance | remaining debt |
+|---|---|---|---|
+| the field law | an arbitrary linear operator | `A·I + B·Delta`, with `B` factoring out | **1 number**, `A/B` |
+| the source action at range 1 | an arbitrary two-body kernel | classified by octahedral orbits | **5 numbers**, with an exhibited basis |
+
+Covariance took the law from infinite-dimensional to a single number. It cannot
+take 1 to 0, and neither can source-restriction by the neighbour rule — tested
+and ruled out above.
+
+### What could discharge the last numbers without an import
+
+Not a convention, by owner standard. Two candidate classes:
+
+1. **Dynamics or a formation rule.** Explicitly withheld by the axioms. This is
+   what `a_act` needs.
+2. **Self-consistency conditions.** `L^{-1} = G_0` in the gravity lane is a
+   *condition*, not a supplied number: if the field's propagator must be the
+   inverse of its own law operator, that could pin `A/B` with nothing imported.
+   **This class was under-rated in this campaign** — T4a was declined twice as
+   corollary churn, which was the wrong judgement under the one-import standard,
+   because it is the only identified route that discharges a dimensionless debt
+   without paying anything.
+
+   Honest caveat: the two landed weak-field bridge notes obtain `L^{-1} = G_0`
+   from a *supplied* action or *supplied* dynamics, so as currently written it is
+   not free either. Whether self-consistency **alone** pins `A/B` is well posed
+   and untested.
+
+**Next target on this standard:** test whether a self-consistency condition, with
+no supplied action and no supplied dynamics, constrains `A/B` within the landed
+two-parameter family. That is a bounded, self-contained question.
 
 ## Planck's scope, and one mechanism tested and ruled out
 

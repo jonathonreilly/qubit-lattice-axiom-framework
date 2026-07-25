@@ -64,8 +64,66 @@
   D2.1/D2.2, E2.2, E8.2, F1/F2, G2) and exits 1 — the battery discriminates;
   B3 correctly passes on it (its role is rejecting a non-H-invariant
   separator, not a wrong in-frame one).
-- PR #5589 OPEN (commit dda134b288); codex review-loop worker dispatched.
-  Verdict to be recorded here.
+- 2026-07-25 codex review-loop verdict on PR #5589: `PASS WITH BOUNDED CLAIMS`
+  on the repaired integration (the original PR state did not pass review).
+  Reviewer repairs before landing: an unsupported promotion from algebra
+  membership to physical readout/Record claims removed; floating-point
+  results reframed as tolerance-qualified numerical evidence; live SVD and
+  cluster-separation margins added; bare gate names replaced with scientific
+  labels; the citation-graph manifest update added; N1-N8 no-go discipline
+  completed for the narrowed finite-algebra non-membership claim. Landed
+  runner `TOTAL: PASS=49 FAIL=0`, cache SHA exact; audit pipeline full PASS,
+  strict lint zero errors. Closed-not-merged = salvage-landed on main as
+  dd9f6003e2 plus reviewer fixes b84a792204. No audit verdict applied — the
+  row lands unaudited. Block 3 CLOSED.
+
+## Block 4 — KCPT Unit 23
+
+- 2026-07-25 planner review (Fable): note and runner read line-by-line
+  against the recon ground truth; own independent re-run clean (exit 0,
+  FAIL=0); PRESERVE/forbidden-string greps and dependency link inventory
+  verified; 3-lens adversarial-verification pass (fabrication-hunt,
+  algebra-re-derive, framing-audit) completed and synthesized by the
+  planner before commit.
+- 2026-07-25 codex review-loop verdict on PR #5590: `PASS WITH BOUNDED
+  CLAIMS`; 2 review iterations (round-one review plus focused
+  confirmation); 2 findings, both fixed; N1-N8 checklist PASS; live runner
+  34/34 PASS after the fix, independent L=4/L=6 order cross-check PASS,
+  cache SHA exact; audit pipeline full PASS, strict lint zero errors.
+  Closed-not-merged = salvage-landed on main as 93586b92bb plus reviewer
+  fix eaf6ea001f. No audit verdict applied — the row and its direct
+  dependencies land unaudited. Block 4 CLOSED.
+
+## Block 5 — KCPT Unit 24
+
+- 2026-07-25 planner review (Fable): note and runner read line-by-line;
+  the two spec-mandated LICENSING gates — L1 (sep6 H-invariance over
+  generators plus inverses, measured 1.7e-14) and L2 ((dim C_g, omega)
+  H-class-function check over 6 strata x 3 random conjugates) — were
+  missing from the executor build and added in review, gate count 23 -> 25;
+  the note's d(g) aggregate corrected to the measured 47-of-61 split at
+  d=9 and CN_dg strengthened to pin the 14/61 split; one executor deviation
+  accepted and disclosed (an RNG-free corner-center certificate substituted
+  for the spec's two-seed central-idempotent clustering, which failed to
+  converge on the 17-atom center; certificate reviewed line-by-line, a
+  closed-flag guard added). Own re-run `TOTAL: PASS=25 FAIL=0`.
+- 2026-07-25 adversarial-verification pass (3 independent lenses): algebra
+  re-derivation clean; fabrication and framing lenses returned 5 minor
+  findings, all repaired pre-commit (an unbacked DIAL orbit attribution
+  softened to the census-backed statement; "every rho(h)" re-attributed
+  from the sampled gate to the generating-set gate L1; "equals 4/15
+  exactly" restated with the honest 7.4e-15 residual; CHR1/CHR2
+  strengthened to pin size 72 / dim 108 on the four Delta-chi != 0 orbits
+  and size 12 / dim 68 on the counterexample class). Runner re-run after
+  strengthening: `TOTAL: PASS=25 FAIL=0`.
+- 2026-07-25 codex review-loop verdict on PR #5591: `PASS WITH BOUNDED
+  CLAIMS`; one remediation iteration, 4 findings fixed, 0 skipped
+  (bounded_theorem claim typing added; H-class-function proof and gate
+  strengthened; cap-600 closure gate corrected to track cap-600 misses;
+  algebra dimensions clarified as complex). Landed runner
+  `TOTAL: PASS=26 FAIL=0`, cache freshness verified. Closed-not-merged =
+  salvage-landed on main as f1ebe0b00a plus reviewer fixes d127cf56df.
+  No audit verdict applied — the row lands unaudited. Block 5 CLOSED.
 
 ## Lane A — audit-loop drain
 
@@ -103,5 +161,17 @@
 ## Lane C — audit-loop drain (third pass)
 
 - 2026-07-25: worker `audit-w-20260725-c` dispatched on the same clone,
-  re-synced clean to origin/main 7fdbbdd2c1 first. Exit summary to be
-  recorded here.
+  re-synced clean to origin/main 7fdbbdd2c1 first.
+- 2026-07-25 exit summary: 108 rows audited and landed on main by the
+  independent lane — 64 audited_conditional, 19 audited_failed,
+  15 audited_clean, 5 audited_renaming, 3 audited_numerical_match,
+  2 audited_decoration (grades are the audit lane's own outputs, recorded
+  verbatim from its log). Quarantines: 3 schema, 3 compute-required,
+  1 blocked-row reentry. Zero coordinator failures and zero transaction
+  quarantines; concurrent-worker collisions resolved as
+  `remote_state_superseded` (authoritative) throughout. Stop cause:
+  codex-API 503 outage (service circuit open; websocket and HTTPS
+  reconnect attempts exhausted) — an external service outage, not a
+  coordinator failure; the final round drained clean (4 verdicts) before
+  the outage and the clone state was left clean. 219 dependency-ready
+  targets remained at the last round start. 753,338 tokens.

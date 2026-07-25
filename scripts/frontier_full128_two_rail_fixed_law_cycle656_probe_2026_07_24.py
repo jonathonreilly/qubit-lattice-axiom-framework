@@ -469,16 +469,43 @@ def main() -> None:
 
     rail = A.rail_geometry_certificate()
     route = A.route_geometry_certificate()
+    resources = A.selector_resources()
     check(
-        "R is two explicit disjoint NN SWAP layers and every Q route returns",
+        "R is two explicit disjoint NN SWAP layers and every ordered Q route returns",
         rail["layer1_edges"] == rail["layer2_edges"] == A.T * A.PACKET_LANES
         and all(rail[key] == 0 for key in (
             "layer1_repeats", "layer2_repeats",
             "layer1_vertex_collisions", "layer2_vertex_collisions",
             "layer1_non_NN", "layer2_non_NN",
         ))
-        and route["endpoint_or_return_failures"] == route["non_NN_edges"] == 0,
-        {"rail": rail, "route": route},
+        and route["ordered_orientation_cases"] == 2 * (A.STATION_COLUMN_M2 - 1)
+        and all(route[key] == 0 for key in (
+            "endpoint_or_return_failures", "non_NN_edges", "outside_station_edges",
+        ))
+        and resources["routed_Q_factor_occurrences_checked"]
+        == resources["logical_Q_factors_per_station"]
+        and resources["ascending_two_M2_factors_per_station"]
+        + resources["descending_two_M2_factors_per_station"]
+        == resources["logical_two_M2_factors_per_station"]
+        and resources["descending_two_M2_factors_per_station"] > 0
+        and all(resources[f"routed_{field}"] == 0 for field in (
+            "length_failures", "non_NN_factors", "outside_station_factors",
+            "route_kind_failures", "central_kind_failures",
+            "central_matrix_failures", "operand_order_failures",
+            "wire_return_failures",
+        )),
+        {"rail": rail, "route": route, "Q_routing": {
+            key: resources[key] for key in (
+                "logical_Q_factors_per_station",
+                "logical_two_M2_factors_per_station",
+                "ascending_two_M2_factors_per_station",
+                "descending_two_M2_factors_per_station",
+                "unique_Q_primitive_signatures",
+                "routed_Q_NN_factors_per_station",
+                "maximum_route_distance",
+                "Q_schedule_sha256",
+            )
+        }},
     )
 
     primary = full_primary_orbit()
@@ -548,7 +575,6 @@ def main() -> None:
         hostile,
     )
 
-    resources = A.selector_resources()
     check(
         "fixed-law footprint and executed-power resources are separately counted",
         resources["ROM_blocks_per_station"] == A.T

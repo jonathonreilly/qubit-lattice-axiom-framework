@@ -135,8 +135,15 @@ two-`M2` opcode fixes the blank work state exactly.
 
 All logical one- and two-`M2` selector factors are replaced by explicit
 route-and-return circuits along the 184-factor A column. The longest distance
-is 183. The route certificate checks every distance `1,...,183`, 33,489
-instantiated nearest-neighbor edges, and exact endpoint/return order.
+is 183. The ordered route expands the first listed operand toward the second,
+applies the original matrix on that ordered adjacent pair, and reverses every
+transport SWAP. The certificate checks both orientations at every distance
+`1,...,183` (66,978 instantiated nearest-neighbor factors), exact operand
+order and wire return, and all 4,216,662 logical `Q` occurrences through 1,444
+distinct routed signatures. This includes 569,354 descending-order two-site
+occurrences that an ascending-only distance check would miss. The routed
+subword-sequence SHA-256 is
+`b63d8eb96f7ab3dd6cc88c8f353e3bfa9a911a05659985da5aa7a93238d92ea8`.
 
 ### Shift `R`
 
@@ -295,7 +302,7 @@ optimality or minimum-resource claim is made.
 |---:|---|---|
 | 1 | repo-native dependency and size closure | all declared inputs present; no external input; every source below 40,000 bytes |
 | 2 | exact selector `Q` | 15,272,464 ROM pairs; exact unique matches; zero clean reset/action failures |
-| 3 | rail `R` and selector routing | two disjoint NN layers; zero collision, NN, endpoint, or return failures |
+| 3 | rail `R` and selector routing | two disjoint NN layers; all 4,216,662 `Q` occurrences bound to routed subwords; zero collision, locality, operand-order, matrix, endpoint, or return failures |
 | 4 | full `A_auto=R Q` orbit | 3,908 steps; factors `0,...,3907`; packet returns to station zero |
 | 5 | Cycle-655 composition | padded identity residual zero; inherited full128 residual `8.40686768501364e-15` |
 | 6 | hostile controls | every order, offset, dirty-ancilla, token-domain, ROM, and program control active |

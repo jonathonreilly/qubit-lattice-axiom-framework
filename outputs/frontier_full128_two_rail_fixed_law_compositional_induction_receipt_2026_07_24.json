@@ -11,17 +11,17 @@
   "package_scope": "A positive bounded compositional induction on the exact supplied station-zero one-token, fixed-program, clean-ancilla genesis. The exhaustive 3908-step trace, composed with the Cycle655 decoded intertwiner, proves A_auto^3908 E_combined = E_combined G_coarse without forming the infeasible full global matrix.",
   "note": {
     "path": "docs/FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md",
-    "bytes": 14813,
-    "sha256": "1419a5cd285d85ddee0a0edb2fd2b03392dc068abeaaafcce1e90191abf0e0c0"
+    "bytes": 15385,
+    "sha256": "3caba3e2e27140f3e65c4bb2298738b084083ca3f68e451017430ce2657325ac"
   },
   "primary_run": {
     "runner": "scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py",
-    "runner_bytes": 27932,
-    "runner_sha256": "475e2e8360624a439c1680778f53c2555a54cf38cb501bd4b6c949cfce5c14c2",
+    "runner_bytes": 29238,
+    "runner_sha256": "7ae16effb69785d20216db5a54a38f8943a0dec53fd5e297739d46ee3cc13a46",
     "cache": "logs/runner-cache/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.txt",
-    "cache_bytes": 17352,
-    "cache_sha256": "3a529a715ab0b67983e6a1e7098556cd8f9fdc8fa55ba328863e8ba6e5319483",
-    "input_fingerprint_sha256": "91f1ea0dd8ec239e6601f04074319a7ccca10039a337a23bff71c47098b8c06e",
+    "cache_bytes": 19037,
+    "cache_sha256": "3aea5afc95cd28e307c367b6a8cc8152ce51870ed50ccae1af31f64eec327614",
+    "input_fingerprint_sha256": "699b5d14a3887fe23d928486956252031c3cabba377748919c75e975c382e714",
     "timeout_sec": 180,
     "exit_code": 0,
     "cache_status": "ok",
@@ -32,13 +32,13 @@
   "source_dependency_closure": [
     {
       "path": "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
-      "bytes": 25229,
-      "sha256": "59b67dac6e0c22a9bb0a390812d7032a36b1c757e388b1080b7d696960d5c27c"
+      "bytes": 30748,
+      "sha256": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb"
     },
     {
       "path": "scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py",
-      "bytes": 27932,
-      "sha256": "475e2e8360624a439c1680778f53c2555a54cf38cb501bd4b6c949cfce5c14c2"
+      "bytes": 29238,
+      "sha256": "7ae16effb69785d20216db5a54a38f8943a0dec53fd5e297739d46ee3cc13a46"
     },
     {
       "path": "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
@@ -122,9 +122,17 @@
     "layer1_non_NN": 0,
     "layer2_non_NN": 0,
     "route_distances_checked": 183,
+    "route_ordered_orientation_cases": 366,
     "route_endpoint_or_return_failures": 0,
-    "route_NN_edges_checked": 33489,
-    "route_non_NN_edges": 0
+    "route_NN_edges_checked": 66978,
+    "route_non_NN_edges": 0,
+    "route_outside_station_edges": 0,
+    "Q_logical_factor_occurrences_checked": 4216662,
+    "Q_unique_primitive_signatures": 1444,
+    "Q_ascending_two_M2_occurrences": 1087914,
+    "Q_descending_two_M2_occurrences": 569354,
+    "Q_routed_NN_factors_per_station": 86464312,
+    "Q_routed_failure_count": 0
   },
   "imported_cycle655_intertwiner": {
     "word_sha256": "a2e461d4984e4901fa0e8902c289ed2543da7545370891b96f2b50c6ba7f0fbf",
@@ -196,7 +204,12 @@
     "A_auto_NN_instances": 337903437952,
     "A_auto_power_3908_executed_NN_instances": 1320526635516416,
     "maximum_route_distance": 183,
-    "Q_schedule_sha256": "ed0e20087b27f351cd358a4a8dabd370337d250a67e98c58baf0bafda4f556bd"
+    "Q_schedule_sha256": "b63d8eb96f7ab3dd6cc88c8f353e3bfa9a911a05659985da5aa7a93238d92ea8",
+    "Q_schedule_digest_definition": "sha256 of the ordered sequence of exact routed-subword sha256 bytes",
+    "Q_routed_factor_occurrences_checked": 4216662,
+    "Q_unique_primitive_signatures": 1444,
+    "Q_descending_two_M2_factors_per_station": 569354,
+    "Q_routing_failures": 0
   },
   "supplied": [
     "the Cycle655 repo-native full128 combined word and finite matrix table",

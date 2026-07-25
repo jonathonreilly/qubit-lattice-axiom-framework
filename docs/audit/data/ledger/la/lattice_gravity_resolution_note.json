@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T15:26:57.793077+00:00",
+  "audit_invocation_history": [
+    "dbb8e8f22a354769bd1d65e873415fd4"
+  ],
+  "audit_invocation_id": "dbb8e8f22a354769bd1d65e873415fd4",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/lattice_3d_dense_10prop.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "gravity_observable_hierarchy_note": "Bounded sign-classification hierarchy for the supplied runner-computed rows: 2D ultra-weak, 2D strong-field depletion, 3D power-action barrier, and 3D dense spent-delay z=3 and z=5 only."
+    },
+    "dep_claim_type": {
+      "gravity_observable_hierarchy_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "gravity_observable_hierarchy_note": "retained_bounded"
+    },
+    "deps": [
+      "gravity_observable_hierarchy_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/lattice_3d_dense_10prop.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "1eca0d9998f2629294fd043131a563355b31640187cbfcdb22c50f69a1b13b9e",
+    "runner_path": "scripts/lattice_3d_dense_10prop.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-5d8ab7b7",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner computes positive centroid, P_near, and bias values for z = 2..5, but the retained hierarchy authority explicitly ratifies only z = 3 and z = 5. The packet therefore lacks retained authority for extending the \u201cgenuine attraction\u201d interpretation to z = 2 and z = 4.",
   "claim_id": "lattice_gravity_resolution_note",
-  "claim_scope": null,
+  "claim_scope": "3D dense spent-delay ordered lattice at strength = 5e-5, L = 12, W = 6, h = 1.0, max_d = 3, with z_mass = 2..5 only; no z = 6, refinement, 2D, or all-distances claim is audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T15:26:57.793077+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,20 +79,23 @@
     "gravity_observable_hierarchy_note"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Under the gravity-observable hierarchy classifier, the runner-computed z = 2, 3, 4, 5 window is genuinely attractive on this tested card.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "df962ce867253a3038ae083f9408cce3118bb20f28eff65a11f9aaaa20a33ce9",
   "note_path": "docs/LATTICE_GRAVITY_RESOLUTION_NOTE.md",
-  "notes_for_re_audit_if_any": null,
-  "open_dependency_paths": [],
+  "notes_for_re_audit_if_any": "scope_too_broad: add retained hierarchy authority covering z = 2 and z = 4 on this runner, or narrow the downstream claim to z = 3 and z = 5 and add a dated downstream-hygiene line to this note's own boundary.",
+  "open_dependency_paths": [
+    "docs/GRAVITY_OBSERVABLE_HIERARCHY_NOTE.md"
+  ],
   "previous_audits": [
     {
       "archived_at": "2026-05-03T11:37:21.236313+00:00",
@@ -188,12 +244,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 1,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 1
   },
   "runner_path": "scripts/lattice_3d_dense_10prop.py",
   "title": "Lattice Gravity Resolution: 3D Dense Spent-Delay z = 2..5 Attractive Window",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The supplied source genuinely constructs the lattice, propagates amplitudes, and computes the reported observables rather than printing expected constants. Its completed output supports all four numerical z rows and the quoted card values. However, the semantic step from those numbers to retained \u201cgenuine attraction\u201d at z = 2 and z = 4 exceeds the cited hierarchy authority's explicit retained-grade scope, so the full z = 2..5 claim remains conditional."
 }

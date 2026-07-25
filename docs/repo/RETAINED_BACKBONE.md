@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 95 |
+| Retained positive rows | 96 |
 | Retained bounded rows | 316 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 19 |
 
-## Retained positive rows (95)
+## Retained positive rows (96)
 
 Sorted by load-bearing graph score (descending).
 
@@ -72,6 +72,7 @@ Sorted by load-bearing graph score (descending).
 - [`circulant_parity_cp_tensor_narrow_theorem_note_2026-05-02`](../../docs/CIRCULANT_PARITY_CP_TENSOR_NARROW_THEOREM_NOTE_2026-05-02.md) — score 10.494; audited 2026-07-21T16:40:14.832259+00:00
 - [`eta_holonomy_base_flux_scope_boundary_note_2026-06-06`](../../docs/ETA_HOLONOMY_BASE_FLUX_SCOPE_BOUNDARY_NOTE_2026-06-06.md) — score 10.104; audited 2026-07-18T06:29:49.810608+00:00
 - [`scalar_3plus1_temporal_ratio_note`](../../docs/SCALAR_3PLUS1_TEMPORAL_RATIO_NOTE.md) — score 8.822; audited 2026-05-23T13:54:19.575626+00:00
+- [`bh_quarter_wald_newton_coefficient_narrow_theorem_note_2026-05-10`](../../docs/BH_QUARTER_WALD_NEWTON_COEFFICIENT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 8.781; audited 2026-07-25T01:17:04.026567+00:00
 - [`koide_cone_three_form_equivalence_narrow_theorem_note_2026-05-02`](../../docs/KOIDE_CONE_THREE_FORM_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-02.md) — score 8.781; audited 2026-05-05T11:37:06.412053+00:00
 - [`koide_cone_completing_root_narrow_theorem_note_2026-05-02`](../../docs/KOIDE_CONE_COMPLETING_ROOT_NARROW_THEOREM_NOTE_2026-05-02.md) — score 8.281; audited 2026-05-05T11:38:02.248823+00:00
 - [`wave_direct_dm_h025_fam2_seed1_control_note`](../../docs/WAVE_DIRECT_DM_H025_FAM2_SEED1_CONTROL_NOTE.md) — score 8.087; audited 2026-05-23T19:39:42.325205+00:00

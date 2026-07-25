@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 106 |
+| Retained positive rows | 107 |
 | Retained bounded rows | 331 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 25 |
 
-## Retained positive rows (106)
+## Retained positive rows (107)
 
 Sorted by load-bearing graph score (descending).
 
@@ -116,6 +116,7 @@ Sorted by load-bearing graph score (descending).
 - [`generation_dial_local_stability_grammar_2026-06-05`](../../docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md) — score 2.085; audited 2026-07-11T23:26:40.409989+00:00
 - [`asymmetry_persistence_born_note`](../../docs/ASYMMETRY_PERSISTENCE_BORN_NOTE.md) — score 1.500; audited 2026-05-29T21:40:44.925162+00:00
 - [`axiom_first_lattice_noether_abstract_bilinear_continuity_narrow_theorem_note_2026-06-06`](../../docs/AXIOM_FIRST_LATTICE_NOETHER_ABSTRACT_BILINEAR_CONTINUITY_NARROW_THEOREM_NOTE_2026-06-06.md) — score 1.500; audited 2026-06-07T00:03:35.443886+00:00
+- [`ckm_inverse_square_structural_sum_rule_narrow_theorem_note_2026-05-10`](../../docs/CKM_INVERSE_SQUARE_STRUCTURAL_SUM_RULE_NARROW_THEOREM_NOTE_2026-05-10.md) — score 1.500; audited 2026-07-25T12:43:21.790713+00:00
 - [`fixed_field_grown_transfer_scout_note`](../../docs/FIXED_FIELD_GROWN_TRANSFER_SCOUT_NOTE.md) — score 1.500; audited 2026-05-12T00:20:01.571961+00:00
 - [`koide_gamma_orbit_cyclic_return_candidate_note_2026-04-18`](../../docs/KOIDE_GAMMA_ORBIT_CYCLIC_RETURN_CANDIDATE_NOTE_2026-04-18.md) — score 1.500; audited 2026-05-10T16:06:44.033908+00:00
 - [`staggered_graph_gauge_closure_results_2026-04-10`](../../docs/STAGGERED_GRAPH_GAUGE_CLOSURE_RESULTS_2026-04-10.md) — score 1.500; audited 2026-05-08T03:01:03.682496+00:00

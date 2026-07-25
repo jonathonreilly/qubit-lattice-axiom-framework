@@ -2,6 +2,8 @@
 
 Date: 2026-07-22
 
+Claim type: bounded_theorem
+
 Authority: none
 
 Audit: unset
@@ -431,3 +433,13 @@ file (SHA-256
 `d27f8e84f23d9953fe137e983a624f232e2417a225b22e25d935c172f59aea24`) contained
 the later-corrected K != 0 branch hop discussed in Route C; both hashes are
 recorded so the two-stage verification is fully reconstructible.
+
+## Dependency citations
+
+This runner byte-pins or imports the landed upstream surfaces
+[Cycle 210](PROPER_CUBIC_BOUND_OBJECT_EQUIVALENCE_CYCLE210_NOTE_2026-07-16.md),
+[Cycle 219](COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md),
+[Cycle 230](SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md),
+[Cycle 578](PHYSICAL_INTRINSIC_CONTACT_BOUND_MOVING_TRANSITION_TOURNAMENT_CYCLE578_NOTE_2026-07-22.md),
+and [Cycle 583](PHYSICAL_CONTACT_DIMER_INFINITE_INTERNAL_CONTENT_TOURNAMENT_CYCLE583_NOTE_2026-07-22.md),
+whose landed bytes this cycle consumes.

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_d2_commutant_double_cover_bicommutant_structure_2026_07_25.py
-runner_sha256: e6aa8b55c74d9aa6e99cf0f260d4f8857d7709579845368f8edcd13c952a4fab
+runner_sha256: ec4b03f91c58d099785ee9470373804306300798a6dbcbc635b39c690291b1bb
+input_fingerprint_sha256: 02d98592d4c2ad1e5896610eec57bd83e45aa9061d2135ca56d0b54679fe3442
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 18.72
+elapsed_sec: 18.18
 status: ok
 ----- stdout -----
 ========================================================================
@@ -29,16 +30,16 @@ KCPT U26  Comm(D2) double cover + End_Comm = C[D2]
   PASS  MINUS1_DERIVED_L4          -1 in [Comm,Comm] = True
   PASS  PIDERIVED_L4               |pi([Comm,Comm])|=384 (anchor 6N=384)
   PASS  EVENSUB_L4                 pi(D) cap T = even sublattice size 32 (anchor N/2=32), set-eq True
-  PASS  A4IMAGE_L4                 B3-image(D) order 12 spectrum {2: 3, 3: 8, 1: 1} dets {1}
+  PASS  A4IMAGE_L4                 B3-image(D) order 12 spectrum {1: 1, 3: 8, 2: 3} dets {1}
   PASS  MINPOLY_L4                 D2*prod(M+cI)=0 True, drop-one nonzero [True, True, True, True], deg 7 cs [4, 8, 12]
-  PASS  ENDCOMM_CD2_L4             dim End_Comm=7 == deg minpoly=7 == dim C[D2]; commute-sample 512/512
+  PASS  ENDCOMM_CD2_L4             exact char sum 43008/6144=7 rem 0; deg minpoly=7 == dim C[D2]; commute-sample 512/512
   PASS  KERDIM_L4                  dim ker D2 = 8 (anchor 8)
   PASS  EIGDIMS_L4                 eigenspace dims [4, 12, 12, 8, 12, 12, 4] (anchor [4, 12, 12, 8, 12, 12, 4]), sum 64
   PASS  CHARNORM_L4                7 chars norm 1 (max dev 8.88e-16), cross max 5.55e-17
   PASS  HCAPCOMM_L4                |H cap Comm|=768 (anchor 12N=768), |D cap (H cap Comm)|=192 (anchor 3N=192), D!=HcapC True
-  PASS  D3_L4                      coords(H cap Comm) order 6 spectrum {3: 2, 2: 3, 1: 1} dets {1} bodydiag-eq True
+  PASS  D3_L4                      coords(H cap Comm) order 6 spectrum {2: 3, 3: 2, 1: 1} dets {1} bodydiag-eq True
   PASS  AR4_L4                     A_r4 == [[0,1,0],[-1,0,0],[0,0,1]] True, in B3 True, det 1
-  PASS  OCLOSURE_L4                <D3,A_r4> order 24 spectrum {1: 1, 3: 8, 2: 9, 4: 6} dets {1} O-eq True
+  PASS  OCLOSURE_L4                <D3,A_r4> order 24 spectrum {1: 1, 2: 9, 3: 8, 4: 6} dets {1} O-eq True
   PASS  FULLCLOSURE_L4             |<H,g_r4>|=6144 (anchor 6144), cap Comm=3072 (anchor |Comm|/2=3072), route-eq True
 
 [PHASE A] build L=6 (N=216)
@@ -57,16 +58,16 @@ KCPT U26  Comm(D2) double cover + End_Comm = C[D2]
   PASS  MINUS1_DERIVED_L6          -1 in [Comm,Comm] = True
   PASS  PIDERIVED_L6               |pi([Comm,Comm])|=1296 (anchor 6N=1296)
   PASS  EVENSUB_L6                 pi(D) cap T = even sublattice size 108 (anchor N/2=108), set-eq True
-  PASS  A4IMAGE_L6                 B3-image(D) order 12 spectrum {3: 8, 1: 1, 2: 3} dets {1}
+  PASS  A4IMAGE_L6                 B3-image(D) order 12 spectrum {3: 8, 2: 3, 1: 1} dets {1}
   PASS  MINPOLY_L6                 D2*prod(M+cI)=0 True, drop-one nonzero [True, True, True, True], deg 7 cs [3, 6, 9]
-  PASS  ENDCOMM_CD2_L6             dim End_Comm=7 == deg minpoly=7 == dim C[D2]; commute-sample 506/506
+  PASS  ENDCOMM_CD2_L6             exact char sum 145152/20736=7 rem 0; deg minpoly=7 == dim C[D2]; commute-sample 506/506
   PASS  KERDIM_L6                  dim ker D2 = 8 (anchor 8)
   PASS  EIGDIMS_L6                 eigenspace dims [32, 48, 24, 8, 24, 48, 32] (anchor [32, 48, 24, 8, 24, 48, 32]), sum 216
   PASS  CHARNORM_L6                7 chars norm 1 (max dev 2.22e-16), cross max 4.39e-17
   PASS  HCAPCOMM_L6                |H cap Comm|=2592 (anchor 12N=2592), |D cap (H cap Comm)|=648 (anchor 3N=648), D!=HcapC True
-  PASS  D3_L6                      coords(H cap Comm) order 6 spectrum {2: 3, 3: 2, 1: 1} dets {1} bodydiag-eq True
+  PASS  D3_L6                      coords(H cap Comm) order 6 spectrum {3: 2, 2: 3, 1: 1} dets {1} bodydiag-eq True
   PASS  AR4_L6                     A_r4 == [[0,1,0],[-1,0,0],[0,0,1]] True, in B3 True, det 1
-  PASS  OCLOSURE_L6                <D3,A_r4> order 24 spectrum {1: 1, 2: 9, 3: 8, 4: 6} dets {1} O-eq True
+  PASS  OCLOSURE_L6                <D3,A_r4> order 24 spectrum {1: 1, 3: 8, 2: 9, 4: 6} dets {1} O-eq True
 
 [PHASE B] cross-L gates
   PASS  CROSSL_B3                  A-set(L4)==A-set(L6)==B3 (48 matrices)
@@ -74,7 +75,7 @@ KCPT U26  Comm(D2) double cover + End_Comm = C[D2]
 
 ========================================================================
 TOTAL: PASS=50 FAIL=0
-wall-clock: 18.6s
+wall-clock: 18.0s
 
 ----- stderr -----
 

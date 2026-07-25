@@ -29,6 +29,10 @@ if _HERE not in sys.path:
 
 import kcpt_d2_graded_signed_permutation_commutant_characterization_2026_07_25 as u25
 
+AUDIT_INPUT_PATHS = (
+    "scripts/kcpt_d2_graded_signed_permutation_commutant_characterization_2026_07_25.py",
+)
+
 # ---------------------------------------------------------------- gate harness
 _P = [0]
 _F = [0]
@@ -421,10 +425,17 @@ def analyze(L, refs):
     R["drop_nonzero"] = drop_nonzero
     R["deg"] = 1 + 2 * len(cs)
 
-    # dim End_Comm via the U25 character-sum machinery
-    raw_dim, dim_end = u25.char_dim(Comm)
+    # dim End_Comm via an exact integer character sum
+    P_arr, S_arr = u25.group_arrays(Comm)
+    fixed = P_arr == ar[None, :]
+    chi = np.sum(S_arr * fixed, axis=1, dtype=np.int64)
+    dim_end_num = int(np.dot(chi, chi))
+    dim_end, dim_end_rem = divmod(dim_end_num, nComm)
+    raw_dim = float(dim_end_num) / float(nComm)
     R["dim_end"] = dim_end
     R["dim_end_raw"] = raw_dim
+    R["dim_end_num"] = dim_end_num
+    R["dim_end_rem"] = dim_end_rem
     # C[D2] subset End_Comm: spot-check a deterministic sample commutes with D2
     keys_sorted = sorted(Comm.keys())
     step = max(1, len(keys_sorted) // 500)
@@ -441,7 +452,6 @@ def analyze(L, refs):
     vals, dims, projs = eig_projectors(D2, N)
     R["eigdims"] = dims
     R["eig_sum"] = int(sum(dims))
-    P_arr, S_arr = u25.group_arrays(Comm)
     chis = eig_characters(projs, P_arr, S_arr)
     K = len(projs)
     cmat = np.empty((K, K), dtype=complex)
@@ -568,9 +578,12 @@ def run_gates(L, R):
          "D2*prod(M+cI)=0 {}, drop-one nonzero {}, deg {} cs {}".format(
              R["minpoly_zero"], R["drop_nonzero"], R["deg"], R["cs"]))
     gate("ENDCOMM_CD2_L{}".format(L),
-         R["dim_end"] == 7 and R["deg"] == 7 and R["commute_ok"],
-         "dim End_Comm={} == deg minpoly={} == dim C[D2]; commute-sample {}/{}".format(
-             R["dim_end"], R["deg"], R["commute_sample"], R["commute_sample"]))
+         R["dim_end_rem"] == 0 and R["dim_end"] == 7
+         and R["deg"] == 7 and R["commute_ok"],
+         "exact char sum {}/{}={} rem {}; deg minpoly={} == dim C[D2]; "
+         "commute-sample {}/{}".format(
+             R["dim_end_num"], x["nComm"], R["dim_end"], R["dim_end_rem"],
+             R["deg"], R["commute_sample"], R["commute_sample"]))
     gate("KERDIM_L{}".format(L),
          R["ker_dim"] == x["ker"],
          "dim ker D2 = {} (anchor 8)".format(R["ker_dim"]))

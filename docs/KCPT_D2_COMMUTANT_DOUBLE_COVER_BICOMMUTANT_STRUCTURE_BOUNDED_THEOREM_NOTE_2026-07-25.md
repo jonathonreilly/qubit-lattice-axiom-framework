@@ -4,6 +4,8 @@
 
 registry id: `kcpt_d2_commutant_double_cover_bicommutant_structure`
 
+**Primary runner:** `scripts/kcpt_d2_commutant_double_cover_bicommutant_structure_2026_07_25.py`
+
 ## claim_scope
 
 - **Kind:** bounded_theorem. Exact integer group enumeration and an exact-integer
@@ -163,9 +165,9 @@ object); this unit does not recompute `GC`.
 All 50 gates pass with zero failures; the paired runner
 `scripts/kcpt_d2_commutant_double_cover_bicommutant_structure_2026_07_25.py` prints
 `TOTAL: PASS=50 FAIL=0`, wall-clock about 19 s (`np.linalg.eigh` of `i·D2` only for the
-eigenspace/character block). The evidentiary verdict is PASS WITH BOUNDED CLAIMS:
-exact-integer facts where stated, the eigenspace/character block resolved at the gated
-tolerances, everything bounded to the two computed surfaces L = 4 and L = 6.
+eigenspace/character block). The evidence consists of exact-integer facts where stated
+and an eigenspace/character block resolved at the gated tolerances, all bounded to the
+two computed surfaces L = 4 and L = 6.
 
 ## 4. The cover-and-bicommutant picture
 

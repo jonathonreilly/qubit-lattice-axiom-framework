@@ -63,6 +63,32 @@ one real linkage found, and it is the natural place to push: closing it would
 connect the electroweak weighting to the readout class, which is more than any
 of the other pairs currently offer.
 
+## The priced decision surface (the reference-pricing output)
+
+Verified by per-source reading, at `origin/main` `a17b5e74a8`. This is what each
+residual actually costs to discharge. Nothing here is adopted or recommended.
+
+| residual | what discharging it costs | notes |
+|---|---|---|
+| `alpha` (hypercharge) | **a unit convention** — one owner decision | Cheapest of the four. Tracelessness already fixes the ratio `+1 : -3` exactly; only the scale is at stake, and the convention that the trivial block reads unit charge gives `1/3`. |
+| `w_formation` (Koide) | **a counting convention** — one owner decision | Consequences already computed in landed work: `w = 1/2` gives `r = 1/2, kappa = 2`; `w = 1/3` gives `r = 1`. |
+| `kappa_EW` (electroweak) | **conditional**: a carrier/readout-context identification first, then it collapses to a counting convention | Gated by the **EW instance premise**. `CANONICAL_TWO_CELL_CONTEXT_C3_EW_INSTANCE_BOUNDED_NOTE_2026-07-02.md` states the EW identification is "a named instance premise with witnesses" and that "cardinality `8/9` is consistent with the `M_3` unit/traceless split, but **cardinality alone does not supply the Hilbert-Schmidt cell structure**." If that premise is discharged, the C2 conditional correspondence makes `kappa_EW`'s missing rule exactly a choice of `w` on that class. |
+| `a_act` (AC occurrence) | **a formation or rate law** — not a convention at all | Largest commitment, and the one the axioms most explicitly withhold: every formation rule is downstream content. `|b|` is slaved to it by the AC target at `delta = 2/9`. |
+
+**The shape of the answer.** Two of the four are ordinary owner decisions whose
+consequences are already computed. One is gated by a named, undischarged premise
+that would, if supplied, convert it into the same kind of decision. One is not a
+convention at all and needs new physics.
+
+So the reference-pricing question has a definite answer, and it is not the
+convenient one: there is no single adoption that clears the board, and the AC
+obligations — the highest-leverage lanes — sit behind the item that costs the
+most.
+
+**The one linkage worth attacking** is the EW instance premise, because it is
+the only place where discharging one named object demonstrably converts a
+second residual into an already-priced decision.
+
 ## Backlogged, with branches pushed and recovery commands
 
 See `PR_BACKLOG.md`. Cycle 700 (admissibility closed under neither union nor

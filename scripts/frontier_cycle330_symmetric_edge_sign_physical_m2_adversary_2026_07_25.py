@@ -38,12 +38,11 @@ TOL = 2.0e-12
 PASS = 0
 FAIL = 0
 
-ROOT_CANDIDATE = Path(
-    "/Users/jonreilly/Projects/Physics-cycle657-658-endpoint/scripts/"
+SCRIPT_DIR = Path(__file__).resolve().parent
+ROOT_CANDIDATE = SCRIPT_DIR / (
     "frontier_cycle330_symmetric_edge_sign_translator_2026_07_25.py"
 )
-ROUTE_B = Path(
-    "/private/tmp/toe-route-b-sparse.sGeR8Z/scripts/"
+ROUTE_B = SCRIPT_DIR / (
     "frontier_two_overlapping_star_sparse_qutrit_edge_gauge_2026_07_25.py"
 )
 NOTE_PATH = Path(__file__).resolve().parents[1] / (

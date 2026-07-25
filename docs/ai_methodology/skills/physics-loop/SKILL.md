@@ -445,8 +445,42 @@ For publication-facing or quantitative work, also inspect
 
 1. **Preflight.** Check worktree state. If running unattended or modifying
    files, use the repo lock protocol and plan lock refreshes at checkpoints.
-2. **Ground.** Build the current lane map from repo authority surfaces rather
-   than memory.
+2. **Ground, then sweep for prior art.** Build the current lane map from repo
+   authority surfaces rather than memory.
+
+   **Then search the repo for the result you are about to produce, before you
+   produce it.** This is a hard prerequisite, not a courtesy. The failure mode
+   it prevents is real and recent: a cycle derived that two commuting faithful
+   `M_2(C)` embeddings generate `M_2 (x) M_2`, opened a PR, and was rejected
+   because `docs/GENERATED_FINITE_COMPOSITION_MINIMALITY_THEOREM_2026-07-13.md`
+   already proved it for `n` sites — strictly more general, landed twelve days
+   earlier. The loop had searched hard for claims that would *contradict* the
+   result and never once searched for the *result itself*.
+
+   Search on the **statement**, not on the lane name and not on your framing:
+
+   ```bash
+   # the distinctive nouns of the theorem, over landed source notes
+   git grep -l -iE "<noun1>.*<noun2>" origin/main -- 'docs/*.md'
+   # titles encode results in this repo -- read the file list before the files
+   git ls-tree -r --name-only origin/main -- docs/ | grep -iE "<key-noun>"
+   # and the obligation/no-go registries that name the same object
+   git grep -l "<object>" origin/main -- docs/audit/data/derivation_obligations.json
+   ```
+
+   Classify every hit into exactly one of three outcomes and record it in
+   `ROUTE_PORTFOLIO.md`:
+
+   - **Already proven.** Stop. Cite it and pick a different target. A more
+     general landed version outranks your special case even when your proof is
+     cleaner.
+   - **Already refuted, with escapes.** Do not stop — see step 4.
+   - **Open.** Proceed, and quote the search you ran in `V2` so the reviewer can
+     check the novelty claim instead of taking it on trust.
+
+   Understanding repo state is the point of this step. A campaign that does not
+   know what is already landed cannot price its own novelty, and the Promotion
+   Value Gate's `V2` and `V5` answers are worthless without it.
 3. **Audit assumptions/imports + counterfactual pass.** Create or
    refresh `ASSUMPTIONS_AND_IMPORTS.md` with the import ledger AND
    the counterfactual pass over implicit framework choices (geometry,
@@ -456,8 +490,42 @@ For publication-facing or quantitative work, also inspect
    assumption, "what if this is wrong, and what direction does the
    alternative open?" — bounded by the no-new-axiom rule below. See
    [`references/assumption-import-audit.md`](references/assumption-import-audit.md).
-4. **Update no-go memory.** Extract prior no-go routes and reviewer objections
-   into `NO_GO_LEDGER.md` so the loop does not re-explore dead routes.
+4. **Update no-go memory — by reading the proofs, not the headlines.** Extract
+   prior no-go routes and reviewer objections into `NO_GO_LEDGER.md` so the loop
+   does not re-explore dead routes.
+
+   **Do not treat a no-go title, verdict, or summary as the finding.** Open the
+   note and read what was actually proved, at what scope, under which supplied
+   premises. In this repo a no-go is a map, not a wall: notes routinely carry a
+   `Remaining Live Routes`, `Escape conditions`, or `What Does Not Move` section
+   that names precisely what would still close the target. That section is
+   usually the most valuable text in the lane, and it is invisible from the
+   title.
+
+   Record for each no-go, in `NO_GO_LEDGER.md`:
+
+   - the **exact quantified scope** — what it ruled out, over which family, on
+     which surface. Broad-sounding titles frequently cover narrow claims;
+   - the **supplied premises** the refutation leans on, since a route can reopen
+     when one of them is retired;
+   - every **named live route**, verbatim, with its own status;
+   - whether the escape is derivation, governance, or an approved-primitive
+     route — the last two are not available to a physics-loop run.
+
+   Two failure modes this prevents, both observed:
+
+   - **Believing the headline and stopping.** A lane's no-go listed four
+     remaining live routes; a run that read only the verdict would have written
+     the whole target off.
+   - **Believing the headline and duplicating.** The same lane's route 2 was
+     already closed in a *different* note that exhibited the full admissible
+     coefficient family (`alpha` in `{0, 1/9, 1/3, 1, 2/27}`, only one of which
+     is the target member). A run that skipped the proof would have spent a
+     cycle re-deriving a weaker version of it.
+
+   Prior-art hits classified as "already refuted, with escapes" in step 2 land
+   here, and the surviving escapes — not the refutation — are what feed the
+   route portfolio in step 5.
 5. **Generate route portfolio.** Produce several independent routes and score
    them by likely claim-state movement. See
    [`references/route-patterns.md`](references/route-patterns.md).
@@ -506,10 +574,10 @@ For publication-facing or quantitative work, also inspect
    | # | Question | Required answer to allow PR |
    |---|---|---|
    | V1 | What SPECIFIC verdict-identified obstruction does this PR close? | Quote the exact obstruction text from the parent row's `verdict_rationale`. "The upstream is unratified" does NOT qualify — that's a dependency-chain issue, not a derivation gap. |
-   | V2 | What NEW derivation does this PR contain that the audit lane doesn't already have? | One paragraph describing genuinely new content. "Sympy-exact verification of the existing primary runner's identities" is NOT new derivation. "Pattern A narrow rescope of the algebraic core" is NOT new derivation if the audit lane already understands the algebra; it just creates a new audit-pending row with no closer derivation. |
+   | V2 | What NEW derivation does this PR contain that the audit lane doesn't already have, and **what repo search did you run to establish that** (step 2)? | One paragraph describing genuinely new content. "Sympy-exact verification of the existing primary runner's identities" is NOT new derivation. "Pattern A narrow rescope of the algebraic core" is NOT new derivation if the audit lane already understands the algebra; it just creates a new audit-pending row with no closer derivation. Quote the step-2 prior-art search commands and their hits; an unevidenced novelty claim fails this question. |
    | V3 | Could the audit lane already complete this derivation from existing retained primitives + standard math machinery (Schur complement, cube-root-of-unity arithmetic, Casimir formulas, Pauli matrix algebra, etc.)? | "No" — explain why the framework's retained primitives are necessary. If "yes", the cycle is performative and the PR must not be opened. |
    | V4 | Is the marginal content non-trivial (not a textbook identity, not a definition restated)? | "Yes" with one-sentence justification. Examples that fail: "real shifts don't change imaginary parts", "(1/sqrt(N)) * I has matrix elements 1/sqrt(N)", "scaling by mu preserves slope". |
-   | V5 | Is this a one-step variant of an already-landed cycle in this campaign? | "No" — name the closest prior cycle and explain the structural distinction. "Same matrix structure, different physical interpretation" is NOT a structural distinction; it's relabeling. |
+   | V5 | Is this a one-step variant of an already-landed cycle in this campaign, **or of anything already on `origin/main`**? | "No" — name the closest prior cycle and explain the structural distinction. "Same matrix structure, different physical interpretation" is NOT a structural distinction; it's relabeling. Check against `origin/main`, not only against this campaign's own cycles — a landed note you did not know about still counts, and a more general landed version outranks your special case. |
 
    A `frontier_discovery` route satisfies this gate only if it introduces a
    genuinely new structure, falsifier, or hard-premise test; it must not be
@@ -794,7 +862,7 @@ Stop and write a clear `HANDOFF.md` when:
   substantive ground is covered when the highest-value remaining moves are
   "apply cycle N's exact-support theorem to a different label";
 - **value-gate exhaustion**: every remaining ranked opportunity would fail
-  V1-V5 of the Promotion Value Gate (workflow step 7). If the only PRs the
+  V1-V5 of the Promotion Value Gate (workflow step 8). If the only PRs the
   campaign can produce are textbook re-verifications, near-tautological
   rescopes, or one-step variants of landed cycles, the campaign must stop
   rather than fill the cycle cap;

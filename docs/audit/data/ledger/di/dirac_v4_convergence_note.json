@@ -1,42 +1,93 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-25T19:54:20.455498+00:00",
+  "audit_invocation_history": [
+    "659fbb213b7c4e0a9c685d12cf13af3b"
+  ],
+  "audit_invocation_id": "659fbb213b7c4e0a9c685d12cf13af3b",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_dirac_walk_3plus1d_v4_convergence.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_dirac_walk_3plus1d_v4_convergence.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "a043c07f8e867ea1a39a09df0c5e1f252ddfd76df7c9dd473497aa71400a2b6d",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "a043c07f8e867ea1a39a09df0c5e1f252ddfd76df7c9dd473497aa71400a2b6d",
+    "runner_path": "scripts/frontier_dirac_walk_3plus1d_v4_convergence.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260725-a19d5f95",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite computation closes for the runner\u2019s declared model, but the restricted packet does not derive its four-component carrier, factorized dynamics, reversed mass coupling, initial state, or density-difference readout from the accepted axioms.",
   "claim_id": "dirac_v4_convergence_note",
-  "claim_scope": null,
+  "claim_scope": "At mass0=0.300 and strength=5e-4, the coded four-component walk yields 6/10 closure for n=17,21,25,29 at N=12 and nonmonotone or away-biased n=29 sweeps on periodic and open boundaries.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-25T19:54:20.455498+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Closure stays at 6/10 across the entire n = 17..29 sweep, and the gravity-monotonicity and distance-law failures persist on both boundaries.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary",
+    "stretch_attempt_negative"
+  ],
   "note_hash": "2fc2f0009c0613fe3974a7c8de15df1509ba664e61c4c83d5d224c2b3405203d",
   "note_path": "docs/DIRAC_V4_CONVERGENCE_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: derive or register retained bridges for the selected four-component Dirac carrier, factorized coin/shift dynamics, reversed mass coupling, initial state, and density-difference readout, then rerun this exact cached scope.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1439,12 +1490,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 6,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 6
   },
   "runner_path": "scripts/frontier_dirac_walk_3plus1d_v4_convergence.py",
   "title": "Dirac v4 Convergence Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "The supplied source genuinely computes the six headline comparison surfaces, and its default-argument stdout agrees with the note rather than printing hard-coded outcomes. The result nevertheless depends on a selected Dirac carrier, evolution rule, coupling, state, and readout that the accepted framework premises explicitly do not supply. N1-N4 show that the lattice-size and boundary routes were attempted, alternate coin/readout routes remain open, the gravity-monotonicity and distance-law walls are distinct, the model choices are load-bearing admissions, and no one-hop prior residual witness closes them. N5-N8 limit the negative rhetoric to the finite scan, find no supplied primitive or cross-cycle echo that closes the missing bridge, and leave the open-boundary comparison as the strongest but still model-conditional steelman."
 }

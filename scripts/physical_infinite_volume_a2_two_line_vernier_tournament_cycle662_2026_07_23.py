@@ -40,7 +40,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 FROZEN_CONTRACT_SHA256 = (
     "24199cd1ac9d3bf46db8ee59b8d83f6e27c6058dd55a07122181f4993d42f2b3"
 )
-C610_SHA256 = "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458"
+C610_SHA256 = "e658ee75020f503553b8a69b9db2c6ddc5a61f6933923d1eace281255e59373a"
 RECEIPT = ROOT / (
     "outputs/physical_infinite_volume_a2_two_line_vernier_tournament_"
     "cycle662_receipt_2026_07_23.json"
@@ -189,9 +189,9 @@ def main() -> int:
         "cycle": 662, "authority": "none", "audit": "unset",
         "frozen_contract_sha256": FROZEN_CONTRACT_SHA256,
         "consumed_cycle610_sha256": C610_SHA,
-        "stacking": "substrate not on origin/main at cut (main max cycle "
-        "335); branched off cycle629 tip 1085e03fdd; joint lane max 661, "
-        "claiming 662",
+        "stacking": "substrate landed by the parent substrate PR of this "
+        "stack (Cycles 563-583); rebuilt off cycle629 tip 53bdb7645e; "
+        "joint lane max 661, claiming 662",
     }
     check("the Cycle-610 runner is byte-pinned and unchanged",
           C610_SHA == C610_SHA256, C610_SHA[:16])

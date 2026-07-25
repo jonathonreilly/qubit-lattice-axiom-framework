@@ -1,4 +1,4 @@
-PASS the Cycle-610 runner is byte-pinned and unchanged :: 61d624d3f47e371a
+PASS the Cycle-610 runner is byte-pinned and unchanged :: e658ee75020f5035
 PASS the Chebyshev shell family is exactly invariant under all 24 frames :: {'defect_sites': 0}
 PASS D-1 ledger: matter plus exhaust norm equals one to 1e-12 at every step of every row (no discarded weight, no renormalization) :: {'max_ledger': 3.952393967665557e-14, 'max_antisym': 1.2818637113990361e-15}
 FAIL P1: D-1 certifies at (R_shell=3, N_prep>=128) with the minus channel selected by CT-1'' (raw source in, certified clock out, deterministically) :: {'first_certified': None}
@@ -10,23 +10,22 @@ PASS lawful domain: non-antisymmetric input is refused :: {'defect': 0.070710678
 FAIL P4/P5: no certified configuration exists to test :: route D-1 never certified
 FAIL P8 internal: the masked-operator dominant phase lies within 5e-3 of the Cycle-610 root (independent worker comparison recorded in the note) :: {'abs_lambda': 0.3087251561077763, 'arg_lambda': 0.46874753709363653, 'theta0': -2.975574708446694}
 PASS D-3 mechanism probe (frozen negative-leaning prior): the P0-dephasing cascade does not purify — the bound-branch weight of the dephased ensemble does not rise above the raw value plus 0.05 :: {'weights': [0.26305, 0.13624, 0.13727, 0.11787, 0.09291, 0.05945, 0.03965, 0.03416, 0.0313]}
-RESULT 6 6 elapsed 14.28 s
-       14.71 real        14.13 user         0.46 sys
-           209862656  maximum resident set size
+RESULT 6 6 elapsed 17.34 s
+       17.77 real        17.01 user         0.70 sys
+           281657344  maximum resident set size
                    0  average shared memory size
                    0  average unshared data size
                    0  average unshared stack size
-               17724  page reclaims
-                 184  page faults
+               22362  page reclaims
+                   0  page faults
                    0  swaps
                    0  block input operations
                    0  block output operations
                    0  messages sent
                    0  messages received
                    0  signals received
-                 617  voluntary context switches
-                 500  involuntary context switches
-        237851638254  instructions retired
-         55627859875  cycles elapsed
-           122782368  peak memory footprint
-exit=1
+                   1  voluntary context switches
+                4371  involuntary context switches
+        238210797653  instructions retired
+         59935038082  cycles elapsed
+           136364824  peak memory footprint

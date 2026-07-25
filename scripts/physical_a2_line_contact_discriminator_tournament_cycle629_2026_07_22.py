@@ -8,10 +8,10 @@ internal A2 state; vernier path opens) or is a free lattice/cavity resonance
 (reading R2: contact-echo filtering stays the live preparation route).  Both
 readings' criteria were frozen before output (contract SHA below).
 
-Citation note: PR #5523 is marked ready but the Cycle-573/575/578/583
-substrate has not landed to main; citations refer to the campaign-branch
-surfaces carried in-tree on this branch.  Joint lane max observed 628; this
-lane claims Cycle 629.
+Citation note: the Cycle-573/575/578/583 substrate is landed by the parent
+substrate PR of this stack; citations refer to those re-frozen surfaces, which
+are present in this tree.  Joint lane max observed 628; this lane claims
+Cycle 629.
 
 Firewalls: a spectral line is not energy; a beat is not a clock law; the DFT
 of a retained word is data analysis, not a physical instrument; no vernier
@@ -38,7 +38,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 FROZEN_CONTRACT_SHA256 = (
     "77a152201d9a2fab6396f087ed11cfb82aee4e76c8bc155b16acc77d5939697a"
 )
-C610_SHA256 = "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458"
+C610_SHA256 = "e658ee75020f503553b8a69b9db2c6ddc5a61f6933923d1eace281255e59373a"
 W5_ANCHORS = {"ball3": (0.99910937, 0.30655), "ball4": (0.99981521, 0.31182)}
 
 RECEIPT = ROOT / (
@@ -152,8 +152,8 @@ def main() -> int:
         "frozen_contract_sha256": FROZEN_CONTRACT_SHA256,
         "consumed": {"c610": C610_SHA, "c611": C611_SHA, "c622": C622_SHA},
         "cycle_number_note": "joint lane max observed 628; claiming 629; "
-        "PR #5523 ready but 573/575/578/583 substrate unlanded on main "
-        "(citations refer to in-tree campaign surfaces)",
+        "573/575/578/583 substrate landed by the parent substrate PR of this "
+        "stack (citations refer to those re-frozen surfaces)",
     }
     check("the Cycle-610 runner is byte-pinned and unchanged",
           C610_SHA == C610_SHA256, C610_SHA[:16])

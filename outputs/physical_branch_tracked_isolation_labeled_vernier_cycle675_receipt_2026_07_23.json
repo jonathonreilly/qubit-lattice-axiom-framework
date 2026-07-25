@@ -3,7 +3,7 @@
  "authority": "none",
  "audit": "unset",
  "contract_sha256": "174ce1cae3edce3f888f1ecb10e6d258d9ffd23c620aea5f92d6524c74e1bf32",
- "consumed_cycle662": "18232a8cc85c8a6fc102a0bac3c83d7bea89ad337ed8cca2fedd16f78d326567",
+ "consumed_cycle662": "6d658b4047bcaaeb48ad371c48ab7d2cc33b9f36998c13740c17ad96106b29f6",
  "branch_tracked": {
   "orders": {
    "32": {
@@ -63,7 +63,7 @@
    "ok": true
   }
  ],
- "elapsed_seconds": 201.79603385925293,
+ "elapsed_seconds": 219.71067714691162,
  "pass_count": 2,
  "fail_count": 0,
  "pass": true

@@ -39,7 +39,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 FROZEN_CONTRACT_SHA256 = (
     "46f9cbe09fd60cddde1f69005f87a8173d0cfbf0e5e24098c90f414ace258a55"
 )
-C610_SHA256 = "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458"
+C610_SHA256 = "e658ee75020f503553b8a69b9db2c6ddc5a61f6933923d1eace281255e59373a"
 
 RECEIPT = ROOT / (
     "outputs/physical_deterministic_exhaust_shell_preparation_tournament_"

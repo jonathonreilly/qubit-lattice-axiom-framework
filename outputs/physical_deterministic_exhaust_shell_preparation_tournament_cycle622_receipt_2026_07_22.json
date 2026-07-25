@@ -4,8 +4,8 @@
  "audit": "unset",
  "frozen_contract_sha256": "46f9cbe09fd60cddde1f69005f87a8173d0cfbf0e5e24098c90f414ace258a55",
  "consumed": {
-  "cycle610_runner": "61d624d3f47e371a3b99f55a3c60db68c1fe77f5d93a21651f9172b2d49f1458",
-  "cycle611_runner": "9f1d4a2aabca8af1f61ef42071c8d2bce05018eace7a6f0886d769871689a13d"
+  "cycle610_runner": "e658ee75020f503553b8a69b9db2c6ddc5a61f6933923d1eace281255e59373a",
+  "cycle611_runner": "ebb96f23ab8040947904dab9d0be0bb48ea9a80447861109eebe1ed9759fdc57"
  },
  "cycle_number_collision": "campaign branch reaches Cycle 621 and carries unrelated Cycle 610/611/612 notes; this lane claims Cycle 622 per owner directive",
  "parameters": {
@@ -129,7 +129,7 @@
   "the detector ray lives in the matter x blank-exhaust sector; absorbed amplitude is orthogonal by exhaust occupancy \u2014 a locality fact, not a conditioning step",
   "certification uses spectral data; preparation uses only geometry and a frozen schedule"
  ],
- "elapsed_seconds": 14.283928871154785,
+ "elapsed_seconds": 17.336703062057495,
  "pass_count": 6,
  "fail_count": 6,
  "pass": false

@@ -2,7 +2,7 @@
 
 Block: `physics-loop/poisson-response-kernel-diagnostic-20260726`
 Deliverable: `docs/POISSON_SELF_CONSISTENCY_BOTH_OPERATOR_DISCRIMINATORS_ARE_ARTIFACTS_ON_THE_TESTED_CONSTRUCTION_DEMOTION_NOTE_2026-07-26.md`
-Runner: `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py` (14 PASS / 0 FAIL)
+Runner: `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py` (15 PASS / 0 FAIL)
 
 ## V1–V5 Promotion Value Gate
 
@@ -99,7 +99,7 @@ not a scalar multiple of the inverse Laplacian on this construction (L3); the
 content beyond the source-sign convention (L8, and R12 via L9); Poisson is not the
 best-ranked operator under normalization (L9).
 
-**N1 — Alternative route enumeration (>=5 distinct attacks on the no-go). Eight named; six attempted and closed, one ruled out by prior, one declared untested.**
+**N1 — Alternative route enumeration (>=5 distinct attacks on the no-go). Nine named; seven attempted and closed, one ruled out by prior, one declared untested.**
 
 | # | Route | What it would attempt | Outcome |
 |---|---|---|---|
@@ -111,6 +111,7 @@ best-ranked operator under normalization (L9).
 | 6 | Wrong Green's function sign convention | `G` should be `+Laplacian^{-1}` not `-Laplacian^{-1}`, flipping the correlation sign | **RULED OUT.** A global sign flip changes `corr` by a sign and leaves `abs(corr) ≤ 0.13` and the residual unchanged; R3's sign-indefiniteness of `K` is convention-free. |
 | 7 | Different beta diagnostic | The ranking inversion is an artifact of `check_field_physics`'s power-law fit | **PARTIALLY UNTESTED — declared.** R11 deliberately uses the parent note's own diagnostic so the comparison is apples-to-apples. A different decay measure could reorder the operators. This is recorded as an open route below, not as a closed one. |
 | 8 | Mediator positivity | Require the field kernel to be positive so superposing positive masses never anti-attracts; this would exclude biharmonic independently of the source sign | **ATTEMPTED (R14).** The parent runner's biharmonic is `A @ A`, whose inverse is `(Delta_D^-1)^2`, a product of two entrywise single-signed matrices, hence entrywise positive. Clamped-plate positivity can fail (Coffman-Duffin) but that is a different operator. The escape is not available. |
+| 9 | Unmatched field amplitude | The parent note's single `G = 0.5` evaluates each operator at a different converged amplitude, and the loop is nonlinear, so the ranking could be an amplitude artifact | **ATTEMPTED (R15).** `beta` is amplitude-independent to within 0.023 across an 80-fold `G` sweep, and the ranking is unchanged at matched amplitude. Fails to rescue. |
 
 **N2 — Wall-independence audit.**
 Named walls: (a) sign-indefiniteness of `K`; (b) non-discrimination of the 0.93

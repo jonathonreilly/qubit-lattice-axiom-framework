@@ -63,7 +63,7 @@ def check(name: str, condition: bool, detail: str = "", bucket: str = "SUPPORT")
         FAIL += 1
     print(f"  [{status}] [{bucket}] {name}")
     if detail:
-        print(f"         {detail}")
+        print(f"    {detail}")
 
 
 # ---------------------------------------------------------------------------
@@ -771,26 +771,15 @@ def main() -> int:
         np.linalg.eigvalsh(negative_effective_square["transfer"]).min()
     )
 
-    print("=" * 88)
     print("GAUGE-VACUUM WILSON TRANSFER / SPATIAL-MIXED SOURCE SUPPORT")
-    print("=" * 88)
     print()
     print("Exact SU(3) character data")
     print(f"  tensor levels checked                    = 0..{NMAX_TENSOR}")
-    print(f"  dimension sums                           = {dimension_sums}")
-    print(f"  minimum truncated coefficient            = {coefficient_minimum:.6e}")
-    print(f"  recurrence errors (3,3bar,real)          = "
-          f"{fundamental_error:.3e}, {antifundamental_error:.3e}, {combined_error:.3e}")
     print(f"  recurrence symmetry error                = {recurrence_symmetry_error:.3e}")
-    print(f"  recurrence boundary counts               = {boundary_counts}")
-    print(f"  recurrence compressed spectrum           = "
-          f"[{recurrence_eigenvalues.min():.6f}, {recurrence_eigenvalues.max():.6f}]")
-    print(f"  sampled SU(3) Wilson Gram min eigenvalue = {positive_gram_minimum:.6e}")
     print()
     print("Finite S3 one-plaquette gauge carrier (SUPPORT)")
     print(f"  link configurations                      = {S3_CONFIG_COUNT}")
     print(f"  physical class-function dimension        = {pullback.shape[1]}")
-    print(f"  pullback/group basis errors              = {pullback_error:.3e}, {group_basis_error:.3e}")
     print(f"  Q / T minimum eigenvalues                = {q_minimum:.6e}, {transfer_minimum:.6e}")
     print(f"  transfer Gram-factorization error        = {factorization_error:.3e}")
     print(f"  temporal-link/projected-kernel error     = {temporal_kernel_error:.3e}")
@@ -811,7 +800,6 @@ def main() -> int:
     print()
     print("Hostile controls")
     print(f"  pointwise-positive symmetric min eig      = {counterexample_minimum:.6e}")
-    print(f"  correct/wrong plaquette gauge errors      = {correct_orientation_error:.3e}, {wrong_orientation_error:.3e}")
     print(f"  selected-vs-repeated slice mismatch       = {abs(spatial_single_value-wrong_slice_placement_value):.6e}")
     print(f"  selected-vs-repeated mixed mismatch       = {abs(mixed_single_value-mixed_repeated_value):.6e}")
     print(f"  correct/doubled half-weight mismatch      = {abs(trace_value-wrong_half_trace):.6e}")
@@ -875,7 +863,7 @@ def main() -> int:
     check(
         "the finite square pullback is an isometry onto the three class functions",
         pullback_error < TOL and group_basis_error < TOL,
-        detail=f"errors={pullback_error:.3e}, {group_basis_error:.3e}",
+        detail=f"pullback={pullback_error:.3e}, group_basis={group_basis_error:.3e}",
         bucket="SUPPORT",
     )
     check(
@@ -998,9 +986,7 @@ def main() -> int:
     )
 
     print()
-    print("=" * 88)
     print(f"SUMMARY: THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")
-    print("=" * 88)
     return 0 if FAIL == 0 else 1
 
 

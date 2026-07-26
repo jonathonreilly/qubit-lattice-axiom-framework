@@ -1,29 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py
-runner_sha256: e4da7117aca2f942c8dd862c9e2fd5827f6c235cffca6eb45ec42ffad156690b
+runner_sha256: 77fa08f636ffe840a38bba6e1c9fd2d31737d7d469e72d6f5d6a1d79dcd37a61
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
-========================================================================================
 GAUGE-VACUUM WILSON TRANSFER / SPATIAL-MIXED SOURCE SUPPORT
-========================================================================================
 
 Exact SU(3) character data
   tensor levels checked                    = 0..8
-  dimension sums                           = [1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616]
-  minimum truncated coefficient            = 1.030056e-09
-  recurrence errors (3,3bar,real)          = 1.361e-13, 1.616e-13, 4.775e-14
   recurrence symmetry error                = 0.000e+00
-  recurrence boundary counts               = {(0, 0): 2, (1, 0): 4, (0, 1): 4, (1, 1): 6}
-  recurrence compressed spectrum           = [-0.439488, 0.877072]
-  sampled SU(3) Wilson Gram min eigenvalue = 1.665696e+00
 
 Finite S3 one-plaquette gauge carrier (SUPPORT)
   link configurations                      = 1296
   physical class-function dimension        = 3
-  pullback/group basis errors              = 6.661e-16, 2.220e-16
   Q / T minimum eigenvalues                = 7.565913e-06, 7.443935e-06
   transfer Gram-factorization error        = 2.220e-16
   temporal-link/projected-kernel error     = 0.000e+00
@@ -44,7 +35,6 @@ Mixed two-slice source (SUPPORT)
 
 Hostile controls
   pointwise-positive symmetric min eig      = -1.000000e+00
-  correct/wrong plaquette gauge errors      = 0.000e+00, 1.500e+00
   selected-vs-repeated slice mismatch       = 6.544801e-02
   selected-vs-repeated mixed mismatch       = 2.100161e-01
   correct/doubled half-weight mismatch      = 3.744333e-01
@@ -53,51 +43,49 @@ Hostile controls
   negative effective-coupling min eig       = -6.696686e-04
 
   [PASS] [SUPPORT] tensor powers of 3 direct-sum 3bar have exact nonnegative integer multiplicities
-         checked all dominant weights through tensor level 8
+    checked all dominant weights through tensor level 8
   [PASS] [SUPPORT] the representation-ring decomposition preserves dimension 6^n
-         dimension sums = [1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616]
+    dimension sums = [1, 6, 36, 216, 1296, 7776, 46656, 279936, 1679616]
   [PASS] [SUPPORT] positive Taylor weights give nonnegative truncated Wilson coefficients
-         minimum checked partial coefficient = 1.030056e-09
+    minimum checked partial coefficient = 1.030056e-09
   [PASS] [SUPPORT] multiplication by chi_(1,0) obeys the exact SU(3) recurrence
-         maximum error = 1.361e-13
+    maximum error = 1.361e-13
   [PASS] [SUPPORT] multiplication by chi_(0,1) obeys the exact conjugate recurrence
-         maximum error = 1.616e-13
+    maximum error = 1.616e-13
   [PASS] [SUPPORT] the real plaquette source obeys the exact six-neighbor recurrence
-         combined error = 4.775e-14, symmetry error = 0.000e+00
+    combined error = 4.775e-14, symmetry error = 0.000e+00
   [PASS] [SUPPORT] dominant-weight boundary terms omit exactly the negative labels
-         neighbor counts at (0,0),(1,0),(0,1),(1,1) = [2, 4, 4, 6]
+    neighbor counts at (0,0),(1,0),(0,1),(1,1) = [2, 4, 4, 6]
   [PASS] [SUPPORT] sampled SU(3) Wilson positive-type Gram matrices are positive semidefinite
-         minimum eigenvalue = 1.665696e+00
+    minimum eigenvalue = 1.665696e+00
   [PASS] [SUPPORT] the finite square pullback is an isometry onto the three class functions
-         errors=6.661e-16, 2.220e-16
+    pullback=6.661e-16, group_basis=2.220e-16
   [PASS] [SUPPORT] the finite gauge-projected transfer is positive and has the explicit Gram factorization
-         lambda_min(Q)=7.566e-06, lambda_min(T)=7.444e-06, factor error=2.220e-16
+    lambda_min(Q)=7.566e-06, lambda_min(T)=7.444e-06, factor error=2.220e-16
   [PASS] [SUPPORT] projected convolution equals temporal-link integration on selected square configurations
-         maximum selected-pair error = 0.000e+00
+    maximum selected-pair error = 0.000e+00
   [PASS] [SUPPORT] finite transfer trace and marked spatial insertion equal explicit path sums
-         trace error=4.441e-16, mark error=9.437e-16
+    trace error=4.441e-16, mark error=9.437e-16
   [PASS] [SUPPORT] selected and repeated spatial sources obey their distinct insertion formulas
-         selected error=1.110e-15, repeated error=2.665e-15
+    selected error=1.110e-15, repeated error=2.665e-15
   [PASS] [SUPPORT] selected and repeated mixed sources match their distinct two-slice path sums
-         lambda_min=1.491e-05, selected error=3.553e-15, repeated error=4.441e-16
+    lambda_min=1.491e-05, selected error=3.553e-15, repeated error=4.441e-16
   [PASS] [SUPPORT] mixed source derivatives have H^(circle m) circle exp(gamma H) Schur-power form
-         lambda_min(H)=-5.551e-17, max form error=0.000e+00
+    lambda_min(H)=-5.551e-17, max form error=0.000e+00
   [PASS] [SUPPORT] the marked mixed insertion matches its path sum and source derivative
-         path error=4.996e-16, finite-difference error=9.419e-10
+    path error=4.996e-16, finite-difference error=9.419e-10
   [PASS] [SUPPORT] pointwise positive symmetry alone does not imply quadratic-form positivity
-         counterexample minimum eigenvalue = -1.0
+    counterexample minimum eigenvalue = -1.0
   [PASS] [SUPPORT] the wrong plaquette word fails gauge invariance while the oriented word passes
-         correct error=0.000e+00, wrong error=1.500e+00
+    correct error=0.000e+00, wrong error=1.500e+00
   [PASS] [SUPPORT] wrong slice placement, half weighting, or Haar normalization changes the path sum
-         slice=6.545e-02, half(doubled/missing)=3.744e-01/1.036e-01, Haar=4.245e+09
+    slice=6.545e-02, half(doubled/missing)=3.744e-01/1.036e-01, Haar=4.245e+09
   [PASS] [SUPPORT] negative effective mixed coupling is detected outside the source-positivity domain
-         minimum eigenvalue = -6.696686e-04
+    minimum eigenvalue = -6.696686e-04
   [PASS] [SUPPORT] the compressed recurrence spectrum stays inside the plaquette support interval
-         spectrum=[-0.439488, 0.877072]
+    spectrum=[-0.439488, 0.877072]
 
-========================================================================================
 SUMMARY: THEOREM PASS=0 SUPPORT=21 FAIL=0
-========================================================================================
 
 ----- stderr -----
 

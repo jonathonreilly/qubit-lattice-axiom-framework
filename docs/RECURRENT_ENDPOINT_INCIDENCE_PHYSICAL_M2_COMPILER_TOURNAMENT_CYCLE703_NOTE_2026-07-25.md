@@ -128,16 +128,31 @@ reference assignment `n(r_x)=sum_a n(m_(x,a)) mod 2`; the old uniform
 reference parity bus is gone.  An explicit reference-dressed hop/FSWAP is
 bounded, preserves every `D`, loop, and Wilson stabilizer, is exact on all
 4,096 two-cell matter columns for all 36 directed port pairs, and is a
-Hermitian involution on all `2^14` extended-Fock states.  The mapped BKSF word
-has maximum Pauli weight 28 and its directed family passes all 24 frames and
-576 products after the disclosed local incidence-order gauge.
+Hermitian involution on all `2^14` extended-Fock states.  Replacing a dedicated
+reference-stream edge by the existing `r_x-u-v-r_y` path reduces the held
+L/`2x2`/`3x3` grammar to 19 edge M2 per cell plus matter bonds, with maximum
+stream Pauli weight 17 and no work M2.  Every onsite coin/contact factor and
+both orientations of every held bond use that same target-independent rule;
+the transformed operator words pass all 24 frames and 576 products.
 
-This closes recurrent capacity and the bounded parity-even operator algebra,
-not yet the physical state compiler.  The executed common `E` is the local
-`12 -> 14` extended-fermion occupation map, not an edge-qubit BKSF common
-encoding.  Periodic domains retain three fixed Wilson characters; a physical
-`E_BKSF`, its leakage residual, transformed-encoding covariance, and
-preparation/genesis remain open.  The full boundary and N1--N8 audit are in
+The physical state seam is now partly constructive as well.  On the complete
+two-cell graph, a phase-aware 76-row symplectic tableau gives an explicit
+38-edge-M2 `E_BKSF` with 12 logical matter qubits.  Hop, FSWAP, all 12
+occupations, 30 contacts, and all 24 onsite octahedral coin edges have exact
+tableau conjugation, inverse, zero leakage, and all 4,096 logical-column
+actions.  Open L-shaped, planar, and cubic boxes through L5 also have an exact
+unique-vacuum stabilizer tableau and a bounded, phase-oriented coherent loader
+for arbitrary `6N`-qubit matter input.  The original prefix logical-X formula
+was caught carrying an occupation-dependent phase; the retained suffix formula
+passes all 384 local mode/state checks and the complete 64-state cell load.
+
+What remains is autonomous genesis, not a missing finite state isometry.
+Exact open plaquette correction in the declared measurement-plus-Z protocol
+needs worst-case feedforward radius `floor((L-2)/2)`, and the retained decoder
+is boundary/host supplied.  Periodic domains retain three fixed Wilson
+characters; periodic preparation, larger-overlap common-E conjugation,
+transformed-E covariance, and a no-host-side-control decoder remain open.  The
+full initial boundary and N1--N8 audit are in
 [`CYCLE703_LOCAL_GAUSS_REFERENCE_ADVERSARIAL_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_LOCAL_GAUSS_REFERENCE_ADVERSARIAL_NOTE_2026-07-25.md).
 
 An unoriented scalar edge selector is insufficient for that representation:
@@ -332,10 +347,32 @@ belonged to the old uniform-reference route and does not transfer.
 
 The physical BKSF Pauli identities, constraint commutators, active reference
 deletion, full two-cell extended-Fock intertwiner, off-code involution, and
-24/576 operator covariance are executed.  The still-missing object is one
-actual edge-qubit state matrix `E_BKSF` in a fixed Wilson character and its
-physical intertwiner/leakage.  Rank equality is not substituted for that
-matrix, and local algebra is not substituted for bounded state preparation.
+24/576 operator covariance are executed.  The held-patch addendum then closes
+one target-independent path-dressed grammar for every L/`2x2`/`3x3` coin,
+contact, and directed bond operand with maximum Pauli weight 17, mass residual
+`5.551115123125783e-17`, zero projector/covariance failures, and no dedicated
+reference-stream M2.
+
+The two-cell tableau runner closes the previously missing physical state
+object without a dense `2^38` matrix: 25 independent loops plus one `D` leave
+12 logicals; a full rank-76 canonical tableau orients their phases and gives
+exact common-E conjugation/leakage for hop, FSWAP, contact, and coin
+generators.  Separately, the open-code runner constructs a unique stabilizer
+vacuum and bounded arbitrary-state loader through cubes L2--L5.  Its exact
+plaquette-syndrome feedforward radius grows with boundary distance, so the
+state isometry is positive while autonomous scalable preparation remains
+open.  Rank equality and canonical commutators are not substituted for the
+phase decoder: a 384-column audit rejected the earlier prefix representative
+and certifies the retained suffix representative.
+
+The additive physical-state and held-grammar packets are:
+
+- [`frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py`](../scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py), with
+  [`CYCLE703_LOCAL_GAUSS_HELD_PATCH_GRAMMAR_ADDENDUM_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_LOCAL_GAUSS_HELD_PATCH_GRAMMAR_ADDENDUM_2026-07-25.md);
+- [`frontier_cycle703_bksf_two_cell_tableau_intertwiner_2026_07_25.py`](../scripts/frontier_cycle703_bksf_two_cell_tableau_intertwiner_2026_07_25.py), with
+  [`CYCLE703_BKSF_TWO_CELL_TABLEAU_INTERTWINER_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_BKSF_TWO_CELL_TABLEAU_INTERTWINER_NOTE_2026-07-25.md);
+- [`frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py`](../scripts/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py), with
+  [`CYCLE703_OPEN_BKSF_STABILIZER_PREPARATION_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_OPEN_BKSF_STABILIZER_PREPARATION_NOTE_2026-07-25.md).
 
 ## Route C — staggered/time-multiplexed feature word
 
@@ -470,6 +507,16 @@ Derived:
   two-cell extended-Fock common encoding, bounded dressed hop/FSWAPs,
   constraint-preserving BKSF Pauli words, active deletions, and 24/576
   directed-operator covariance without a parity bus or runtime order query;
+- one target-independent path-dressed physical grammar for every
+  L/`2x2`/`3x3` coin, contact, and directed bond operand, with zero additional
+  reference-stream or work M2 and maximum update Pauli weight 17;
+- an explicit phase-aware 38-edge-M2/12-logical two-cell `E_BKSF` tableau with
+  exact inverse, common-E hop/FSWAP/contact/coin conjugation, all 4,096
+  logical columns, and zero stabilizer leakage;
+- unique open-code vacuum tableaus and a bounded phase-correct coherent loader
+  for arbitrary `6N`-qubit matter input on L, planar `2x2`, and open cubes
+  L2--L5, plus the exact growing feedforward-range boundary for the declared
+  measurement-plus-Z preparation protocol;
 - held-size stability, constant overhead, mass preservation, and 24/576
   covariance;
 - exact retirement of the eleven-chart transition residual and active
@@ -477,12 +524,12 @@ Derived:
 
 Open:
 
-- a physical edge-qubit `E_BKSF` in one disclosed Wilson character and an
-  actual `U_BKSF E_BKSF-E_BKSF U_matter` plus leakage residual; this is the
-  remaining state-layer test before the local-Gauss route can retire the
-  preferred finite exterior order for the physical compiler;
 - fixed-Wilson sector preparation/genesis, or an explicit declaration and
   control of that supplied topological resource;
+- a no-host-side-control open-code vacuum preparation law; the exact retained
+  feedforward decoder has growing boundary range and is supplied;
+- scaled common-E conjugation and transformed-E 24/576 covariance on the
+  L/`2x2`/`3x3` overlap tableaus, beyond the exact two-cell result;
 - a target-independent, locally constrained edge/corner or plaquette gauge
   whose restrictions close the L, `2x2`, and `3x3` overlap fixtures;
 - recurrent overlap/placement/collision for translated words beyond the one
@@ -507,24 +554,26 @@ Open:
 
 | Wall | Cycle-703 effect | Remaining dependency |
 |---|---|---|
-| `C_ref` | the uniform reference parity bus and runtime exterior-order query are retired for the local-Gauss even-operator law | local coframe/incidence convention, one Wilson/spin character on periodic domains, its preparation/genesis, mode labels, beta, contact coupling, and program factorization remain supplied |
-| `C_num` | local-D capacity is exactly the full `6N` matter Fock dimension at odd and even volume; the dressed two-cell FSWAP is tested on all `2^14` extended states | the finite common-`E_refresh` route remains `n<=2`; physical meaning/superselection of fermion number and a complete all-number BKSF coin/contact composition remain open |
+| `C_ref` | the uniform reference parity bus and runtime exterior-order query are retired for the local-Gauss update law; an open-code vacuum and phase-correct arbitrary-state loader are explicit | local coframe/incidence convention, supplied open boundary/feedforward, one Wilson/spin character on periodic domains, its preparation/genesis, mode labels, beta, contact coupling, and program factorization remain supplied |
+| `C_num` | local-D capacity is exactly the full `6N` matter Fock dimension at odd and even volume; the dressed two-cell FSWAP is tested on all `2^14` extended states and the open loader accepts arbitrary `6N` matter | the finite common-`E_refresh` route remains `n<=2`; physical meaning/superselection of fermion number and a complete all-number many-bond update composition remain open |
 | `C_wrap` | unchanged; no parity loop, Wilson label, controller ordinal, color stage, or two-frame phase is called time | the landed causal-time law still needs a physical matter-caused endpoint/interval association on the same state code |
-| `C_int` | contact is a bounded onsite polynomial in local BKSF `B` operators, and the finite physical compiler reproduces the supplied `g=0.37` contact | selection of the contact, coupling value, physical rate, protection, and its BKSF common-`E` composition remain open |
-| `C_local` | finite physical common-`E` closure is exact under a supplied order; independently, a target-independent recurrent local-Gauss algebra now removes the parity bus and exterior-order table | one physical edge-qubit `E_BKSF`, leakage/covariance on that encoding, Wilson-sector preparation, and an arbitrary-volume state/compiler composition remain open |
+| `C_int` | contact is a bounded onsite polynomial in local BKSF `B` operators; the two-cell physical tableau conjugates all 30 contacts exactly and the held grammar reproduces the supplied `g=0.37` block | selection of the contact, coupling value, physical rate, protection, and larger-overlap common-E composition remain open |
+| `C_local` | finite order-derived physical common-E closure remains as a control; independently, the local-Gauss route now has target-independent held operator recurrence, an exact physical two-cell common E, and an arbitrary-size open state loader without parity bus or exterior-order table | no-host-side-control vacuum genesis, fixed-Wilson periodic preparation, scaled overlap common-E conjugation, and transformed-E covariance remain open |
 | `C_source` | unchanged at the physical compiler layer | no action/stress/resource source or backreaction law is selected by this compiler |
 
-This ledger distinguishes the recurrent update-algebra gain from the still-open
-state encoder.  Audit retention does not change any of these mapped science
-coordinates.
+This ledger distinguishes the now-constructed finite/open state encoders from
+their still-open autonomous genesis and periodic topological sector.  Audit
+retention does not change any of these mapped science coordinates.
 
 ## Claim boundary
 
-This is a positive complete finite-common-encoding compiler advance, plus a
-recurrent all-parity local even-operator algebra with exact odd/even-volume
-capacity.  It is not yet a no-preferred-order physical state compiler,
-arbitrary-volume prepared isometry, or infinite-volume compiler because the
-BKSF edge-qubit common encoding and Wilson-sector genesis remain open.  The fixed-coordinate macro is
+This is a positive finite physical common-E compiler advance, a recurrent
+all-parity local even-operator grammar with exact odd/even-volume capacity,
+and an explicit open-boundary BKSF state encoder.  It is not yet the requested
+autonomous no-host-side-control recurrent compiler: open vacuum correction has
+growing supplied feedforward range, periodic Wilson genesis is open, and
+larger-overlap/transformed-E common-encoding conjugation is not yet executed.
+The fixed-coordinate macro is
 not substituted for the still-open literal Cycle-655 physical binding.
 Static projectors are not physical energy.  Gate ordinals are not time or
 rates.  Pointer/feature copying is not a framework Record.  No wrapped phase
@@ -537,16 +586,15 @@ support routes or to the substrate.
 
 ## Optimal next experiment
 
-The local-Gauss route has replaced the target-derived handoff at the bounded
-even-operator level.  The next experiment is now the missing state layer:
-construct an explicit stabilizer-Clifford/tableau isometry `E_BKSF` on the
-smallest open and fixed-Wilson periodic fixtures, orient its logical basis
-against the independent matter basis, and conjugate the actual dressed
-free/seam/contact word through it.  Require
-the physical intertwiner and leakage, active loop/`D`/Wilson deletions,
-odd/even held sizes, transformed-encoding 24/576 covariance, and an exact
-inventory of Wilson-sector preparation versus supplied boundary data.  If
-that closes, run the Cycle-612 matter-caused endpoint/causal-interval harness
-unchanged before attempting a source/gravity or Record/Born prediction
-surface.  The qutrit/H/K/P and two-frame routes remain useful adversarial
-controls, but another target-fitted table expansion is lower leverage.
+The local-Gauss route has replaced the target-derived handoff and now supplies
+a finite physical common E plus an arbitrary-size open-code loader.  The next
+experiment has two coupled obligations.  First, scale the phase-oriented
+tableau conjugation from two cells to the actual L/`2x2`/`3x3` overlap graphs
+and rebuild the full encoding under translations and all 24/576 frames.
+Second, replace the supplied open-boundary syndrome paths by one fixed local
+autonomous decoder—or explicitly carry a fixed-Wilson periodic resource—and
+measure its support, rounds, returned work, and genesis without calling those
+rounds time.  If the same-code overlap intertwiner closes, run the Cycle-612
+matter-caused endpoint/causal-interval harness unchanged before attempting a
+source/gravity or Record/Born prediction surface.  Another target-fitted table
+expansion is now lower leverage.

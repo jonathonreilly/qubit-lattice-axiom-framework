@@ -676,32 +676,52 @@ For publication-facing or quantitative work, also inspect
    audit/no-go/blocker-isolation outputs, or if no easy route passes the gate,
    run a stretch-attempt cycle before declaring the active route blocked. See
    **Deep Work Rules** below.
-11. **Certify status and trace.** Before committing a block, write or update
+11. **Run the inference audit — after the runner passes, before the note
+    freezes.** The step-2 sweep stops you re-deriving what exists; this stops
+    you asserting more than you showed. Run
+
+    ```bash
+    python3 scripts/inference_audit_lint.py --runner <runner>.py --note <note>.md
+    ```
+
+    fix or justify every finding, and fill the **claim ledger** in the note —
+    one row per claim, with `Support`, `Hypotheses`, `Shown vs claimed` and
+    `Falsifier`, and no empty cells. A restatement of a theorem in a discussion
+    section gets its own row and is diffed against the theorem statement: a
+    dropped qualifier is a defect, not a simplification. See
+    [`references/inference-audit.md`](references/inference-audit.md).
+
+    This step exists because six consecutive value-gate rejections in the
+    2026-07-25/26 campaign were all inference defects on correct arithmetic,
+    and because recording the lesson in a backlog file after four of them did
+    not prevent the fifth.
+
+12. **Certify status and trace.** Before committing a block, write or update
     `CLAIM_STATUS_CERTIFICATE.md` and `TRACE_GATE.md`. Demote any title,
     status line, table row, runner printout, or handoff sentence that fails
     the claim-type certificate or overstates trace reachability.
-12. **Checkpoint.** Update `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md`
+13. **Checkpoint.** Update `STATE.yaml`, `TRACE_GATE.md`, and `HANDOFF.md`
    at least every checkpoint interval, before long scripts, after long
    scripts, and before any authorized campaign stop.
-13. **Review at milestones.** After each major artifact, run the `review-loop`
+14. **Review at milestones.** After each major artifact, run the `review-loop`
    skill unless disabled. In science-run mode, record findings in branch-local
    `REVIEW_HISTORY.md` and `HANDOFF.md`; do not update the live active review
    queue or other repo-wide authority surfaces before the later review and
    integration process. The local disposition must be one of `pass`, `demote`,
    or `block`; `self-review pending` is not enough to push a PR. Either fix
    locally, demote locally, archive locally, or select a new route.
-14. **Close the cycle honestly.** Use the narrowest honest status inside the
+15. **Close the cycle honestly.** Use the narrowest honest status inside the
     branch artifacts: candidate retained-grade only when the certificate names
     an audit-ready `claim_type`; otherwise exact support, bounded support,
     open, no-go, reject, or historical. Do not patch a missing
     theorem step with prose. Put
     any proposed repo-wide weaving in `HANDOFF.md` for later review and
     backpressure integration.
-15. **Open review PRs.** At each block closure, open or prepare one PR for the
+16. **Open review PRs.** At each block closure, open or prepare one PR for the
     coherent science block unless `--no-pr` was supplied. In campaign mode,
     a missing PR must become `PR_BACKLOG.md` and the campaign must continue if
     runtime remains.
-16. **Continue the campaign or stop.** After PR/backlog handling, if runtime
+17. **Continue the campaign or stop.** After PR/backlog handling, if runtime
     remains and the current lane is blocked or closed, pick the next
     `OPPORTUNITY_QUEUE.md` item and continue. Stop the whole campaign only
     when runtime/max cycles expires, the target status is genuinely achieved
@@ -844,6 +864,14 @@ loop branch and is recorded in `PR_BACKLOG.md`.
   when the runner already exists
 - "Pattern A narrow rescope of the algebraic core" — creates audit
   row but no closer derivation
+- A claim whose ledger row has an empty `Support`, or whose `Support` is an
+  objective, weighting, aggregation, or coupling the author chose — that is an
+  import presented as a result
+- A named theorem cited without its hypotheses, or with the conclusion
+  restated in place of the hypotheses
+- "X requires Y" where the evidence shows only "Y permits X"
+- A restatement in a discussion section that drops a qualifier the theorem
+  statement carries
 
 ### Patterns the evaluator should approve
 

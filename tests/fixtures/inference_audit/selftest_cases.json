@@ -1,0 +1,46 @@
+[
+  {
+    "id": "c704-clone",
+    "runner": "tests/fixtures/inference_audit/clone_defect_c704_reconstruction.py",
+    "note": null,
+    "expect": [
+      "CLONE"
+    ],
+    "why": "Cycle 704 wrote the formation and migration gates with identical bodies, then verified they agreed over 2187 rules."
+  },
+  {
+    "id": "c707-slice",
+    "runner": "tests/fixtures/inference_audit/slice_defect_c707_reconstruction.py",
+    "note": null,
+    "expect": [
+      "SLICE"
+    ],
+    "why": "Cycle 707 row G tested hill[:1], dropping the member that contradicted its own sign classification."
+  },
+  {
+    "id": "c707-note",
+    "runner": null,
+    "note": "tests/fixtures/inference_audit/note_defects_c707_reconstruction.md",
+    "expect": [
+      "DIRECTION",
+      "LEDGER"
+    ],
+    "why": "Cycle 707 claimed 'forces ... unconditional' with the converse never established, and carried no claim ledger. Note HYPOTHESIS does NOT fire here: the note says the eigenvalues are 'analytic', so the keyword is present -- but that is the CONCLUSION, not the hypothesis that the family depends analytically on the coupling. That confusion is exactly the real defect and proximity cannot see it; only the ledger's Hypotheses column catches it."
+  },
+  {
+    "id": "hypothesis-omitted",
+    "runner": null,
+    "note": "tests/fixtures/inference_audit/note_hypothesis_omitted.md",
+    "expect": [
+      "HYPOTHESIS"
+    ],
+    "why": "Outright omission of a named theorem's hypotheses, which keyword proximity does catch."
+  },
+  {
+    "id": "negative-control",
+    "runner": null,
+    "note": "tests/fixtures/inference_audit/clean_note_negative_control.md",
+    "expect": [],
+    "why": "A complete note must pass: a linter that fires on everything is worthless."
+  }
+]

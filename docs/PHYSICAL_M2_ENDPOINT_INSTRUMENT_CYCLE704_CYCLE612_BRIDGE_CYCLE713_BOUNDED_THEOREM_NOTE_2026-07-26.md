@@ -14,6 +14,12 @@
 **Primary runner:**
 [`scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py`](../scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py)
 
+**Receipt:**
+[`outputs/physical_m2_endpoint_instrument_cycle713_receipt_2026_07_26.json`](../outputs/physical_m2_endpoint_instrument_cycle713_receipt_2026_07_26.json)
+
+**Canonical runner cache:**
+[`logs/runner-cache/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.txt`](../logs/runner-cache/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.txt)
+
 ## Result
 
 The Cycle-712 direct PatchGraph state isometry can emit a coherent

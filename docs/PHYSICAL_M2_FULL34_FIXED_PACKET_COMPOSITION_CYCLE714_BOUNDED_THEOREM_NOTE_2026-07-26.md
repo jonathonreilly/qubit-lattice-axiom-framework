@@ -19,6 +19,15 @@
 and
 [`scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py`](../scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py)
 
+**Receipt:**
+[`outputs/physical_m2_full34_fixed_packet_composition_cycle714_receipt_2026_07_26.json`](../outputs/physical_m2_full34_fixed_packet_composition_cycle714_receipt_2026_07_26.json)
+
+**Canonical runner caches:**
+[`logs/runner-cache/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.txt`](../logs/runner-cache/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.txt),
+[`logs/runner-cache/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.txt`](../logs/runner-cache/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.txt),
+and
+[`logs/runner-cache/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.txt`](../logs/runner-cache/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.txt)
+
 ## Bounded result
 
 Cycle 713 left one coherent matter-change opportunity bit on a literal M2 at

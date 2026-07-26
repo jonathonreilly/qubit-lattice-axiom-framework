@@ -1,0 +1,169 @@
+{
+  "cycle": 709,
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "supplied_order_open_box_local_signed_clifford_and_literal_nn_m2_compiler_closed_order_gauge_full_box_covariance_parallel_recurrence_and_genesis_open",
+  "tests_passed": 21,
+  "tests_failed": 0,
+  "route_independent_obstruction": false,
+  "axiom_pressure": false,
+  "key_results": {
+    "reference_qubits": 38,
+    "rank_S_minus_I": 3,
+    "constructed_transvection_depth": 4,
+    "depth_le_three_axis_class": "all nonzero axes in im(S-I)",
+    "depth_le_three_hits": 0,
+    "reference_abstract_factor_weights": [13, 12, 1, 1],
+    "reference_physical_factor_weights": [14, 13, 1, 1],
+    "rotation_signs": [1, -1, -1, 1],
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "no_refit_boxes": 5,
+    "largest_checked_box": [3, 3, 3],
+    "largest_checked_abstract_qubits": 594,
+    "largest_checked_seams": 54,
+    "primary_box": [3, 2, 2],
+    "primary_cells": 12,
+    "primary_seams": 20,
+    "primary_abstract_qubits": 256,
+    "primary_literal_M2": 276,
+    "primary_physical_factor_rows": 80,
+    "primary_cleanup_edges": 11,
+    "primary_primitive_gates": 1265,
+    "primary_routed_nearest_neighbour_gates": 22635,
+    "primary_route_SWAPS": 21370,
+    "maximum_route_distance": 24,
+    "primary_non_NN_failures": 0,
+    "primary_operand_order_failures": 0,
+    "primary_route_return_failures": 0,
+    "primary_repetition_stabilizer_failures": 0,
+    "primary_delete_first_swap_detected_macros": 723,
+    "reference_state_residual_up_to_global_phase": 1.5899293649329254e-15,
+    "overlapping_cube_identity": "180+180-84=276",
+    "overlap_mapping_failures": 0,
+    "Cycle708_endpoint_rows": 36,
+    "Cycle708_endpoint_regression_failures": 0,
+    "literal_placement_formula": "18*N_cells+3*N_seams<=27*N_cells",
+    "placement_collisions_on_five_boxes": 0,
+    "four_by_two_by_two_collinear_cleanup_edges": 4,
+    "orthogonal_only_cleanup_failures": 8,
+    "shuffled_orders_tested": 12,
+    "shuffled_order_coarse_face_phase_failures": 24,
+    "shuffled_order_coarse_face_exact_per_shuffle": [2, 2, 0, 2, 2, 2, 2, 4, 2, 2, 0, 4],
+    "shuffled_order_full_mismatch_census": [54, 6, 55, 52, 57, 56, 57, 68, 51, 28, 28, 54]
+  },
+  "claim_boundary": {
+    "executed": "four signed seam transvections, fixed six-colour local cleanup, literal M2 lift, and supplied serial nearest-neighbour route-and-return word on the complete 3x2x2 overlapping-box instance",
+    "supplied": "canonical product cell/path tuple, chart/coframe/colour origin, positive OpenReference and repetition/rail sectors, factor signs, cleanup predicate, serial Manhattan/support order, and blank work",
+    "open": "order-gauge repair, full-box 24/576 semantic covariance, collision-safe constant-depth parallel routing, autonomous recurrence/genesis/enforcement, periodic or irregular domains, physical Cycle612 bank, and prediction bridges",
+    "free_completion_used_in_emitted_word": false,
+    "free_completion_used_as_verification_oracle": true,
+    "one_seam_factor_covariance_claimed": true,
+    "full_box_semantic_covariance_claimed": false,
+    "physical_time_claimed": false,
+    "Record_or_Born_claimed": false
+  },
+  "dependency_sources": [
+    {
+      "path": "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+      "sha256": "fcef8f6f965d1649741acc19302c4cdf4cb48286f9f969ff5d2ad250320f8c06"
+    },
+    {
+      "path": "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+      "sha256": "71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69"
+    },
+    {
+      "path": "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "c2599377d0627d701589185f942a1a42d2861c6e05136a4790c4f107c0121af1"
+    },
+    {
+      "path": "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+      "sha256": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480"
+    },
+    {
+      "path": "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "602cd4f5342deb44f064001e1fbc4d8902194d8a4929473e65e295ce10c1eafd"
+    },
+    {
+      "path": "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+      "sha256": "3aa964a6eaca559048a53de580f39d9295a3e4b41ef9d4ff9dcdd4d3ff7444a7"
+    },
+    {
+      "path": "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+      "sha256": "f5b604b714e8fbb33e2b6284cb38199e900859d710cd9e1411ee941a021235f3"
+    },
+    {
+      "path": "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+      "sha256": "b42ea07c1ed671b9cbab38bc38eba6f8166fe65be52295941a95e3ed75049abf"
+    },
+    {
+      "path": "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+      "sha256": "05cb2f6083cf6c4307c04284632e991b7fd7378cbd2a4eb08a52d5e3c7ae6b99"
+    },
+    {
+      "path": "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+      "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+    },
+    {
+      "path": "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+      "sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935"
+    },
+    {
+      "path": "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+      "sha256": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb"
+    },
+    {
+      "path": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+      "sha256": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195"
+    },
+    {
+      "path": "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+      "sha256": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0"
+    },
+    {
+      "path": "scripts/frontier_full128_code_projectors_2026_07_24.py",
+      "sha256": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44"
+    },
+    {
+      "path": "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+      "sha256": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "f9afa05025210774561d9956f3d8243ba0c019ca90eddd2f894cd1ea14c75d5c"
+    },
+    {
+      "path": "scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
+      "sha256": "08cade9e1ad83132b3fbdb5a2533422951e31a2654e552b25fd6b30f8862b174"
+    },
+    {
+      "path": "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+      "sha256": "5d49d85ddbc4daddfc0b24737dc569eaa9f32a050f5fccf48f048fe0fdd74b40"
+    },
+    {
+      "path": "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+      "sha256": "d74fb32e21879b2a843eae822c8e71b950729d9dc295eaf336911f174cceee3a"
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle709_local_seam_clifford_2026_07_26.txt",
+      "sha256": "43bf39a39066a60d627d943d7a8b6349e4512bd3c4d9aa7f4b34099141d5cd82"
+    }
+  ],
+  "independent_reconstruction": {
+    "artifact_sha256": "68b3a1008d4cfaa7b5206bf63c2a3f0af0f21180f454d1fa9b1de7ed958f0051",
+    "output_sha256": "6a61454b38e326fea98b75d488386f93e39a99a8d3a59aa1b8fe971d9f5aa1f1",
+    "packaged": false,
+    "repository_dependency": false
+  },
+  "regressions": {
+    "mass_contact_terminal": "ACTUAL_59941_ROW_GAUGE_CORRECTED_CAR_COMPILER_CLOSED",
+    "mass_contact_stdout_sha256": "22e794b02d9cf97042052641e77476ec3de9106a96ece9ba6990dbce15df3b93",
+    "Cycle708_terminal": "CYCLE708_PHYSICAL_ENDPOINT_CUBE_CERTIFICATE",
+    "Cycle708_stdout_sha256": "a44d2731444b4fbb68355406546d93a0e02cba341bfafd26bde409949cdf575a",
+    "packaged": false
+  },
+  "terminal": "CYCLE709_LOCAL_SEAM_PHYSICAL_M2_BOUNDED_COMPILER_PASS"
+}

@@ -96,19 +96,49 @@ For mode `a=0,...,5` in cell `x`, with reference vertex `r_x`, define
 
 ```text
 Z_(x,a) = B_(x,a),
-X_(x,a) = A_((x,a),r_x) product_(b<a) B_(x,b),
+X_(x,a) = -i [product_(b=a)^5 B_(x,b)] A_((x,a),r_x).
 ```
 
-with the positive Hermitian Pauli phase.  The order is a six-mode intra-cell
-Fock chart; it is not a global Jordan--Wigner order or parity service.  Exact
-tests on the L shape, planar square, and cubes L2--L5 give:
+The suffix and its phase are load bearing.  In the `D_x=+1` code sector the
+reference occupation is the parity of the six matter occupations.  An
+independent seven-mode Jordan--Wigner decoder exhausts all 64 matter states for
+each of the six modes.  All 384 suffix actions flip the requested matter bit,
+flip the reference-parity bit, and have amplitude `+1`, with zero orientation
+failure.  A second explicit test loads every one of the 64 six-mode basis
+states from vacuum: the suffix loader has zero state or amplitude failures.
+
+This amplitude test resolves an ambiguity invisible to canonical
+commutators.  The local prefix representative
+
+```text
+A_((x,a),r_x) product_(b<a) B_(x,b)
+```
+
+has the same canonical Pauli algebra but decodes as
+`-i X_(x,a) product_(b=0)^5 Z_(x,b)`.  It mismatches plain `+1` X on all 384
+mode/state columns.  The runner verifies both the decoded phase formula with
+zero failures and the exact physical-Pauli relation
+
+```text
+prefix = -i suffix-X cell-Z
+```
+
+with operator order as written.  A scalar phase cannot remove the
+occupation-dependent cell-parity factor, so the prefix is not used by the
+loader.  When applied successively from vacuum it has a non-`+1` amplitude on
+32 of the 64 full-cell columns.  It could define a bounded parity-twisted local
+chart, but it is not the plain computational-basis isometry claimed here.
+
+The remaining order is a six-mode intra-cell Fock chart; it is not a global
+Jordan--Wigner order or parity service.  Exact tests on the L shape, planar
+square, and cubes L2--L5 give:
 
 - zero canonical-pair failures;
 - zero commutators with every loop and `D` stabilizer;
 - zero Hermitian-involution failures;
 - logical symplectic rank exactly `12N`;
-- maximum X weight 12 and maximum Z weight 6;
-- at most 11 controlled-X support colors and six parity-CNOT support colors.
+- maximum X weight 19 and maximum Z weight 6;
+- at most 12 controlled-X support colors and six parity-CNOT support colors.
 
 Given a prepared vacuum and one input qubit per logical mode, apply controlled
 `X_(x,a)` from the input to the edge code, then apply CNOTs from the physical
@@ -139,7 +169,7 @@ as a bounded logical Clifford chart change on the six origin modes.
 
 On a periodic L3 bulk test, all 24 proper-cubic frames have logical chart rank
 12, zero rank failures, and zero logical components outside the transformed
-cell.  The maximum mapped physical Pauli weight is 17.  Thus no global mode
+cell.  The maximum mapped physical Pauli weight is 19.  Thus no global mode
 ordering is introduced; covariance is realized by a bounded local change of
 logical chart.  This bulk covariance test does not solve open-boundary shape
 covariance or choose a covariant boundary decoder.  The supplied open boundary
@@ -243,10 +273,13 @@ counter only.
 Exact tableau ranks reproduce `6N` logical qubits and a unique all-B vacuum on
 all six fixtures.  Every triangle unit syndrome, planar plaquette column, and
 cube single-edge syndrome closes.  The logical pairs have zero canonical,
-stabilizer, and involution residuals.  All 24 logical frame charts are full
-rank with no off-cell component.  The negative residual is precisely the
-distance from an isolated lawful plaquette to the boundary, not leakage or a
-failed CAR commutator.
+stabilizer, and involution residuals.  The independent 384-column phase decoder
+has zero suffix-orientation and zero prefix-relation residual, while detecting
+384/384 prefix-versus-plain-X mismatches.  The direct 64-state load has zero
+suffix failures and detects 32 prefix amplitude mismatches.  All 24 logical
+frame charts are full rank with no off-cell component.  The negative residual
+is precisely the distance from an isolated lawful plaquette to the boundary,
+not leakage or a failed CAR commutator.
 
 ### N5 — resolution audit
 

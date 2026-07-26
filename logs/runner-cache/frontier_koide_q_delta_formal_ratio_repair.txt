@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_delta_formal_ratio_repair.py
 runner_sha256: c49966f809d3a17a18221f39e8a5222147e105db3355e262c7246279c6ef061d
-timeout_sec: 120
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 1.12
+elapsed_sec: 1.43
 status: ok
 ----- stdout -----
 Koide Q-delta formal ratio repair
@@ -74,32 +74,32 @@ Direct citation firewall
   [PASS] docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md:63 citation avoids forbidden authority language
   [PASS] docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md:106 citation is explicitly formal/open/contextual
   [PASS] docs/KOIDE_RHO_DELTA_DIMENSIONLESS_DOF_RATIO_BRIDGE_BOUNDED_NOTE_2026-05-25.md:106 citation avoids forbidden authority language
-  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:9 citation is explicitly formal/open/contextual
-  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:9 citation avoids forbidden authority language
-  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:142 citation is explicitly formal/open/contextual
-  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:142 citation avoids forbidden authority language
-  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:179 citation is explicitly formal/open/contextual
-  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:179 citation avoids forbidden authority language
-  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:192 citation is explicitly formal/open/contextual
-  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:192 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:10 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:10 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:147 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:147 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:186 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:186 citation avoids forbidden authority language
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:198 citation is explicitly formal/open/contextual
+  [PASS] docs/KOIDE_Z3_QUBIT_RADIAN_BRIDGE_NO_GO_NOTE_2026-04-20.md:198 citation avoids forbidden authority language
   [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:24 citation is explicitly formal/open/contextual
   [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:24 citation avoids forbidden authority language
   [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:592 citation is explicitly formal/open/contextual
   [PASS] docs/RADIAN_BRIDGE_EXPANDED_INVENTORY_BOUNDED_NOTE_2026-05-10_radianexp.md:592 citation avoids forbidden authority language
-  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:241 citation is explicitly formal/open/contextual
-  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:241 citation avoids forbidden authority language
-  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:300 citation is explicitly formal/open/contextual
-  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:300 citation avoids forbidden authority language
-  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:410 citation is explicitly formal/open/contextual
-  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:410 citation avoids forbidden authority language
-  [PASS] docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md:173 citation is explicitly formal/open/contextual
-  [PASS] docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md:173 citation avoids forbidden authority language
-  [PASS] docs/publication/ci3_z3/DERIVATION_ATLAS.md:388 citation is explicitly formal/open/contextual
-  [PASS] docs/publication/ci3_z3/DERIVATION_ATLAS.md:388 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:242 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:242 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:301 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:301 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:412 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REMAINING_OPEN_IMPORTS_2026-04-20.md:412 citation avoids forbidden authority language
+  [PASS] docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md:183 citation is explicitly formal/open/contextual
+  [PASS] docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md:183 citation avoids forbidden authority language
+  [PASS] docs/publication/ci3_z3/DERIVATION_ATLAS.md:387 citation is explicitly formal/open/contextual
+  [PASS] docs/publication/ci3_z3/DERIVATION_ATLAS.md:387 citation avoids forbidden authority language
   [PASS] scripts/frontier_koide_q_delta_linking_relation.py:5 citation is explicitly formal/open/contextual
   [PASS] scripts/frontier_koide_q_delta_linking_relation.py:5 citation avoids forbidden authority language
-  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:23 citation is explicitly formal/open/contextual
-  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:23 citation avoids forbidden authority language
+  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:30 citation is explicitly formal/open/contextual
+  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:30 citation avoids forbidden authority language
   [PASS] at least one direct citation was scanned (citations=32)
 
 ========================================================================================

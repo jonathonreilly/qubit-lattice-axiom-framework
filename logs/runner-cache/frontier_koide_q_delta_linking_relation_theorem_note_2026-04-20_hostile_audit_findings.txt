@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py
-runner_sha256: 71c7691261297b708e726e6948419a582c97bdcd61aeb0ccceaca79042137a50
-timeout_sec: 120
+runner_sha256: 77f25819e63a27ca8e97ba89b9510cfee935eaf5f1d4833661159e5800036cf8
+timeout_sec: 180
 exit_code: 0
 elapsed_sec: 0.04
 status: ok
@@ -9,16 +9,22 @@ status: ok
 ==============================================================================
 AUDIT-PREP VERIFIER — koide_q_delta_linking_relation_theorem_note_2026-04-20
 ==============================================================================
-  [PASS] [A] Parent note exists  (KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md, 16075 bytes)
+  [PASS] [A] Parent note exists  (KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md, 10613 bytes)
 
 PART 1 — CITED deps (expect: >=1 hit each):
-  [PASS] [A]   scalar_selector_remaining_open_imports_2026-04-20 IS cited (>=1 hit)  (hits = 2)
 
 PART 2 — NOT-CITED deps (expect: 0 hits each):
+  [PASS] [A]   scalar_selector_remaining_open_imports_2026-04-20 NOT cited (0 hits)  (hits = 0)
+
+PART 3 — findings note agrees with the measured classification:
+  [PASS] [A] Findings note exists  (KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md)
+  [PASS] [A]   NOT-CITED row matches this runner's NOT_CITED_DEPS  (note = 1, runner = 1)
+  [PASS] [A]   CITED rows match this runner's CITED_DEPS  (note = 0, runner = 0)
+  [PASS] [A]   total row matches the classified dep count  (note = 1, runner = 1)
 
 ==============================================================================
-SUMMARY: 2 PASS / 0 FAIL
-Class-A pattern hits: 2
+SUMMARY: 6 PASS / 0 FAIL
+Class-A pattern hits: 6
 ==============================================================================
 
 VERIFIED

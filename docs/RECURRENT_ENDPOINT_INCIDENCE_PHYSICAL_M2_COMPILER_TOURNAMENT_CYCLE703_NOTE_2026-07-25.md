@@ -6,11 +6,35 @@ Claim type: bounded_theorem
 
 Authority: none. Audit: unset. Constitutional effect: none.
 
-Cycle 703 is the next unused number above the joint remote campaign maximum
-when this package is cut; the concurrently developed gravity/source family has
-claimed Cycles 697--702 on its remote branch.  This package edits no
+Cycle 703 follows the Cycle-697--702 gravity/source family in the shared cycle
+sequence.  This package edits no
 axiom, foundation, Qualification, primitive, registry, policy, queue, or audit
 surface.
+
+**Primary runner:**
+[`scripts/frontier_cycle703_recurrent_endpoint_incidence_package_acceptance_2026_07_25.py`](../scripts/frontier_cycle703_recurrent_endpoint_incidence_package_acceptance_2026_07_25.py)
+
+The load-bearing antecedent claim packages are the landed
+[`FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md`](FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md)
+and
+[`FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md`](FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md).
+The framework-physical target is the one-M2-per-`Z^3`-site interface declared
+by [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md); it is a
+premise/interface dependency, not edited or granted authority here.
+The primary runner imports the complete transitive source packet for seven
+load-bearing positive/negative surfaces and replays each one in an isolated
+interpreter.
+Links below into `work_history/repo/review_feedback/` are explanatory
+provenance and route-level detail, not substitutes for that restricted
+load-bearing packet.
+
+Two representation levels must not be conflated.  The finite `E_refresh`
+construction is bound to the landed Cycle-655 physical-M2 interface, but it
+retains a supplied order-derived table.  The stronger local-Gauss construction
+below closes on abstract BKSF graph-edge qubits.  Its common-E tableaus,
+preparation controller, and finite schedules have not been composed with the
+Cycle-232 `Z^3` site placement/repetition isometry.  They are therefore
+edge-qubit compiler evidence, not yet a strict physical-site-M2 compiler.
 
 ## Result up front
 
@@ -130,14 +154,14 @@ bounded, preserves every `D`, loop, and Wilson stabilizer, is exact on all
 4,096 two-cell matter columns for all 36 directed port pairs, and is a
 Hermitian involution on all `2^14` extended-Fock states.  Replacing a dedicated
 reference-stream edge by the existing `r_x-u-v-r_y` path reduces the held
-L/`2x2`/`3x3` grammar to 19 edge M2 per cell plus matter bonds, with maximum
+L/`2x2`/`3x3` grammar to 19 BKSF edge qubits per cell plus matter bonds, with maximum
 stream Pauli weight 17 and no work M2.  Every onsite coin/contact factor and
 both orientations of every held bond use that same target-independent rule;
 the transformed operator words pass all 24 frames and 576 products.
 
-The physical state seam is now partly constructive as well.  On the complete
+The edge-qubit state seam is now partly constructive as well.  On the complete
 two-cell graph, a phase-aware 76-row symplectic tableau gives an explicit
-38-edge-M2 `E_BKSF` with 12 logical matter qubits.  Hop, FSWAP, all 12
+38-graph-edge-qubit `E_BKSF` with 12 logical matter qubits.  Hop, FSWAP, all 12
 occupations, 30 contacts, and all 24 onsite octahedral coin edges have exact
 tableau conjugation, inverse, zero leakage, and all 4,096 logical-column
 actions.  Open L-shaped, planar, and cubic boxes through L5 also have an exact
@@ -146,7 +170,8 @@ for arbitrary `6N`-qubit matter input.  The original prefix logical-X formula
 was caught carrying an occupation-dependent phase; the retained suffix formula
 passes all 384 local mode/state checks and the complete 64-state cell load.
 
-What remains is autonomous genesis, not a missing finite state isometry.  The
+On that reference-bond graph, what remains is autonomous genesis, not a
+missing finite edge-qubit isometry.  The
 one-shot open plaquette decoder has the exact worst-case radius
 `floor((L-2)/2)`, but a subsequent construction removes the host-selected
 path/table: one frozen radius-one axial cellular recurrence clears every
@@ -157,8 +182,8 @@ The rule locally quiesces after `2(L-1)` iterations without a host stop or
 global apply barrier.  Those iterations are not called time.
 
 The forward-only version consumed irreversible ready memory, but a subsequent
-radius-one Euler echo/ack controller closes that implementation wall.  Its
-local XOR/router/token/epoch tables are bijective M2 permutations, controlled
+radius-one Euler echo/ack controller closes that dependency-graph wall.  Its
+local XOR/router/token/epoch tables are bijective abstract-qubit permutations, controlled
 Z is unitary, every token returns idle, and all recurrence work returns blank.
 L2 is exhaustive over 4,096 edge patterns and 32 lawful syndromes; all 2,944
 unit-edge cases through L8, 64 linear pairs per size, nine transition
@@ -172,11 +197,21 @@ A_s P_s |0_edge> = P_+ |0_edge>
 ```
 
 with common phase-zero amplitude, so preparation factors as the unique
-168-M2 physical vacuum times a pure 114-M2 record stabilizer state.  Both
-factor tableaus are full rank, the edge/record Schmidt rank is one, and later
-logical/physical updates act only on the edge factor.  Thus a one-time `E`
+168-BKSF-edge-qubit vacuum times a pure 114-qubit syndrome-bank stabilizer state.
+Both factor tableaus are full rank, the edge/syndrome-bank Schmidt rank is one,
+and later
+logical/edge-qubit updates act only on the edge factor.  Thus a one-time `E`
 needs no dissipative reset; reuse of the same bank as blank remains a separate
 entropy/export obligation.
+
+This returned-work preparation and the scaled schedule below are two
+graph-specific positives, not one composed compiler.  The preparation uses
+`OpenReferenceGraph`, including a parallel intercell reference-bond edge (80
+graph-edge qubits on `2x2`).  The scaled tableau uses `PatchGraph`, with no
+intercell reference bond and a supplied path-parity dressing (76 graph-edge
+qubits on `2x2`).  No stabilizer isometry or update equivalence between those
+graphs is constructed.  Returned-work preparation of the scaled schedule's
+common E therefore remains open in addition to the `Z^3` placement lift.
 
 Periodic domains carry three Wilson characters, but their dynamical role is
 now exact rather than mysterious.  On periodic L3/L4 the locally constrained
@@ -219,16 +254,16 @@ the coherent candidate opportunity
 P_B(before,after) = OR_a [B_a(before) != B_a(after)]
 ```
 
-from the physical endpoint `B` words.  Across all 4,096 two-cell matter
+from the local-Gauss edge-qubit endpoint `B` words.  Across all 4,096 two-cell matter
 columns and all 36 directed port pairs it produces 73,728 true and 73,728
 false cases with zero predicate, delta, local-`D`, reference, or inverse
 failures.  Diagonal contact produces zero false endpoints.  The physical `B`
-support is at most 11 edge M2 over two owner cells, and all 24 frames preserve
+support is at most 11 BKSF edge qubits over two owner cells, and all 24 frames preserve
 the port family.
 
 With supplied actuality, admissibility, law-domain, co-registration, and
-blank-address ports, a reversible 34-M2-per-cell predecessor packet projects
-exactly to the existing EventChain and JointOrder implementations:
+blank-address values, a finite reversible Python predecessor-bank model
+projects exactly to the existing EventChain and JointOrder implementations:
 
 ```text
 Pi_610 A_packet = A_610 Pi_610,
@@ -237,15 +272,17 @@ J_612 Pi_610 preserves the admitted/refused causal-order cases.
 ```
 
 All 25 bank append attempts match, the decoded intervals are `9`, `12`, and
-`21` with exact additivity/reversal, 96 register/carry cases invert exactly,
-and the existing inverted-order/cycle controls remain active.  The accessible
-packet inverse proves that the packet is not a permanent Record.  On a
-superposed input the comparator creates an entangled opportunity pointer; it
-does not select or actualize a branch.  Thus this is a conditional physical
-endpoint/interval bridge, not an occurrence, admission, empirical-time,
-Record, or Born law.  Its independent canonical replay passes 6/0 with
-certificate
-`357091195c097d1c7cf25465b5243a05b456990f7f0f1509eb5469dd9466022b`.
+`21` with exact additivity/reversal, 96 model register/carry cases invert
+exactly, and the existing inverted-order/cycle controls remain active.  This
+is an edge-qubit endpoint comparator feeding an exact software interface adapter,
+not a physical-M2 predecessor-bank compiler.  Address/freshness selection,
+conditional writes, bank update, and clean uncomputation remain open.  The
+accessible model inverse also shows that this adapter is not a permanent
+Record.  On a superposed input the comparator creates an entangled opportunity
+pointer; it does not select or actualize a branch.  Thus this is not an
+occurrence, admission, empirical-time, Record, or Born law.  Its independent
+canonical replay passes 6/0; the regenerated certificate is pinned by the
+receipt.
 
 The complete resource boundary is in
 [`CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md).
@@ -422,6 +459,30 @@ controls.  Its ordinal is circuit order, not physical time.
 
 ### Route-B local-Gauss recurrence escape
 
+#### Prior-art and novelty boundary
+
+The bounded even-CAR edge-qubit representation is not new here.  Setia,
+Bravyi, Mezzacapo, and Whitfield, [“Superfast encodings for fermionic quantum
+simulation”](https://doi.org/10.1103/PhysRevResearch.1.033033), supply the
+`A/B` edge-qubit presentation, loop stabilizers, bounded-weight even-sector
+operators, and the `m-1` logical-qubit result.  Farrelly and Short,
+[“Causal Fermions in Discrete Space-Time”](https://doi.org/10.1103/PhysRevA.89.012302),
+give a distinct auxiliary-Majorana causal construction; it is prior art and a
+live alternative, not machinery imported by this route.  Chen,
+[“Exact bosonization in arbitrary dimensions”](https://doi.org/10.1103/PhysRevResearch.2.033527),
+supplies the comparison class of three-dimensional local fermion/gauge
+duality with explicit spin-structure data.
+
+Cycle 703 claims only the fixture-specific additions: the local-`D`
+all-parity `6N` capacity on the seven-mode-per-cell graph, explicit
+phase-oriented common-`E` tableaus and returned-work open preparation, the
+periodic Wilson direct-sum typing, and the executed finite coin/seam/contact
+schedules and conditional Cycle-612 bridge.  It does not claim a new general
+fermion-to-qubit mapping, fixed-depth preparation, or a uniform bounded-support
+family compiler.  The earlier Cycle-232 route packet is explanatory provenance
+for this boundary; the executable `ROUTE2_LOCAL_GAUGE...` source is included
+transitively in the primary evidence packet.
+
 The independent runner
 [`frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py`](../scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py)
 replaces the target-derived transition-table question by a local even-algebra
@@ -430,34 +491,38 @@ matter qubits after the local `D` rows and, on tori, three supplied Wilson
 rows.  In particular, held even L4 closes; the Cycle-232 even-volume failure
 belonged to the old uniform-reference route and does not transfer.
 
-The physical BKSF Pauli identities, constraint commutators, active reference
+The edge-qubit BKSF Pauli identities, constraint commutators, active reference
 deletion, full two-cell extended-Fock intertwiner, off-code involution, and
 24/576 operator covariance are executed.  The held-patch addendum then closes
 one target-independent path-dressed grammar for every L/`2x2`/`3x3` coin,
 contact, and directed bond operand with maximum Pauli weight 17, mass residual
 `5.551115123125783e-17`, zero projector/covariance failures, and no dedicated
-reference-stream M2.
+reference-stream graph-edge qubit.
 
-The two-cell tableau runner closes the previously missing physical state
+The two-cell tableau runner closes the previously missing BKSF edge-qubit state
 object without a dense `2^38` matrix: 25 independent loops plus one `D` leave
 12 logicals; a full rank-76 canonical tableau orients their phases and gives
 exact common-E conjugation/leakage for hop, FSWAP, contact, and coin
-generators.  The open-code runner constructs a unique stabilizer vacuum and
-bounded arbitrary-state loader through cubes L2--L5.  A radius-one axial
+generators.  The reference-bond open-code runner separately constructs a
+unique stabilizer vacuum and bounded arbitrary-state loader through cubes
+L2--L5.  A radius-one axial
 decoder plus reversible echo/ack controller now replaces its growing host
-feedforward paths; all work returns and the complete L2 coherent record
+feedforward paths; all work returns and the complete L2 coherent syndrome-bank
 factors exactly from the vacuum, so one-time E needs no reset.  Rank equality
 and canonical commutators are not substituted for the phase decoder: a
 384-column audit rejected the earlier prefix representative and certifies the
 retained suffix representative.
 
-The scaled tableau runner then rebuilds independent common E objects on L,
+The no-reference-bond scaled tableau runner then rebuilds independent common E objects on L,
 held `2x2`, held `3x3`, and periodic L3 and executes complete finite L/`2x2`
 coin/seam/contact schedules factor by factor.  It also exposes the remaining
 family wall: the state-compatible individual stream summands have maximum
 weights `13,23,39,135`.  Therefore the separate max-17 operand grammar is not
 silently substituted for the scaled common-E recurrence.  Finite schedules
-are exact; uniform constant support remains open.
+are exact; equivalence to the returned-work reference-bond E, physical-site
+placement, and uniform constant support remain open.  The physical repetition
+lift gives the suggestive count identity `76+4=80` on `2x2`, but no signed
+Clifford/stabilizer intertwiner is inferred from that count.
 
 The additive physical-state and held-grammar packets are:
 
@@ -504,6 +569,24 @@ wrong held bits for every training solution in that basis.  The full N1--N8
 note leaves larger neighborhoods, different charts, auxiliary frame state,
 non-diagonal encodings, and the local-Gauss route live.  No phase-slot or
 schedule counter is interpreted as physical time.
+
+### Audit-visible N1--N8 boundary for the scoped rephase negatives
+
+| Gate | Same-register diagonal theorem | Colored two-frame held failure |
+|---|---|---|
+| N1 alternatives | onsite/edge, face, two-step, cube, unrestricted quadratic, arbitrary diagonal, and all six L owner orders were tested; auxiliary-updated, two-frame, non-diagonal, and gauge routes remain open | four nested colored bases and the full training affine solution space were tested; larger radius/chart, auxiliary dynamics, non-diagonal, and gauge routes remain open |
+| N2 wall independence | the involution-orbit wall is distinct from common-E, coframe genesis, and scheduling | held basis inconsistency is distinct from periodic color, clock, and common-E |
+| N3 hidden inputs | residual RHS, stream involution, sector, static/same-register/diagonal assumptions, coframe, support, and covariance are explicit | chart origin, phase slots, support, fitted coefficients, held shapes, routing, and missing common-E are explicit |
+| N4 residual match | predecessor counts `24,178,250,942,1136`, an independent Cycle-330 witness, and all six L orders match | training counts match exactly; held `942/1136` use no refit, and combined-rank implications certify the `251/224` forced errors |
+| N5 resolution | all pair addresses through the five fixtures, arbitrary diagonal necessity on `n<=2`, 24/576 covariance, and returned CZ routing; not higher number or auxiliary/non-diagonal encodings | all train/held equations, four bases, affine-space implications, 24/576 transports, translations, routing, and deletions; not larger support or other charts |
+| N6 partial closure | every candidate monomial routes covariantly with returned work; only one static phase fails | distinct input/output phases close all training fixtures before held transfer fails |
+| N7 steelman | a bounded auxiliary chart or distinct input/output phase can distinguish the bad orbit member | derive the 280 coefficients from local incidence/Gauss data and predict the forced held bits without another fitted table |
+| N8 cross-cycle echo | earlier direct failures were retired by gauge and plaquette state, forbidding a broad inference | the two-frame training success retires the same-register training wall, so its own held failure is likewise ansatz-specific |
+
+The exact three-data-M2 support theorem carries its executable full N1--N8
+packet in the primary runner closure.  None of these scoped negatives supports
+a route-independent obstruction, minimum-content theorem, or axiom pressure;
+the broad no-go gate is `FAIL`.
 
 ## Label-space shortcut and physical support audit
 
@@ -605,10 +688,10 @@ Derived:
   two-cell extended-Fock common encoding, bounded dressed hop/FSWAPs,
   constraint-preserving BKSF Pauli words, active deletions, and 24/576
   directed-operator covariance without a parity bus or runtime order query;
-- one target-independent path-dressed physical grammar for every
+- one target-independent path-dressed edge-qubit grammar for every
   L/`2x2`/`3x3` coin, contact, and directed bond operand, with zero additional
-  reference-stream or work M2 and maximum update Pauli weight 17;
-- an explicit phase-aware 38-edge-M2/12-logical two-cell `E_BKSF` tableau with
+  reference-stream or work qubits and maximum update Pauli weight 17;
+- an explicit phase-aware 38-graph-edge-qubit/12-logical two-cell `E_BKSF` tableau with
   exact inverse, common-E hop/FSWAP/contact/coin conjugation, all 4,096
   logical columns, and zero stabilizer leakage;
 - unique open-code vacuum tableaus and a bounded phase-correct coherent loader
@@ -616,9 +699,9 @@ Derived:
   L2--L5, plus the exact growing feedforward-range boundary for the declared
   measurement-plus-Z preparation protocol;
 - one uniform radius-one axial syndrome recurrence valid on every open cube,
-  followed by an explicit local reversible Euler echo/ack M2 controller with
-  returned work, exact L2 coherent edge/record factorization, held L8 tests,
-  6,912 covariance cases, and no required one-time record reset;
+  followed by an explicit dependency-graph reversible Euler echo/ack controller with
+  returned work, exact L2 coherent edge/syndrome-bank factorization, held L8
+  tests, 6,912 covariance cases, and no required one-time syndrome-bank reset;
 - exact periodic typing as `H_matter tensor C^8_Wilson`, with the complete
   local even algebra acting as `U_matter tensor I_8` and exact 24/576 Wilson
   gauge covariance;
@@ -628,11 +711,11 @@ Derived:
   `2x2`; the same test exposes growing individual seam-summand weights
   `13,23,39,135`, so uniform constant support remains open;
 - no-refit preservation of the three non-null Cycle-629 contact-dimer
-  spectrum/Ritz rows under the finite physical common E, with zero spectral
+  spectrum/Ritz rows under the finite edge-qubit common E, with zero spectral
   or Ritz-residual difference;
-- a conditional bounded physical-`B` endpoint comparator and reversible M2
-  predecessor packet that project exactly into the unchanged Cycle-610/612
-  interval/order harness on all 4,096 two-cell columns and 36 port pairs;
+- a conditional bounded local-Gauss edge-qubit `B` endpoint comparator on all 4,096
+  two-cell columns and 36 port pairs, followed by an exact finite software
+  predecessor/interval adapter into the unchanged Cycle-610/612 harness;
 - held-size stability, constant overhead, mass preservation, and 24/576
   covariance;
 - exact retirement of the eleven-chart transition residual and active
@@ -643,15 +726,22 @@ Open:
 - a matter-only selection/preparation of one periodic Wilson vector; the
   direct-sum compiler instead retains the three characters as inert typed
   gauge input;
-- physical genesis of the open boundary/coframe and one invocation of the
-  now-local returned-work preparation isometry; repeat use of the same
+- genesis of the open boundary/coframe and one invocation of the now-local
+  returned-work edge-qubit preparation isometry; repeat use of the same
   syndrome bank as blank needs reset/export, but one-time `E` does not;
 - a uniformly constant-support seam representative compatible with the
   scaled common E: finite transformed-E and full scheduled updates close, but
   individual path-chord summands grow `13,23,39,135` across the tested family;
+- a signed stabilizer/logical-Pauli isometry between the returned-work
+  `OpenReferenceGraph` code and the no-reference-bond `PatchGraph` scaled
+  schedule code; the `2x2` count identity `76+4=80` is only a constructive
+  hint, not an equivalence proof;
 - a target-independent local gauge/tableau change, bounded ancilla route, or
   different physical graph that reduces those state-compatible seam cosets
   without importing a preferred global cell path;
+- composition of the local-Gauss edge-qubit tableaus, preparation, and
+  schedules with an injective proper-cubic `Z^3` physical-site placement,
+  stream-edge repetition isometry, and collision-free routed controller;
 - an infinite-volume recurrence theorem beyond the exact L/`2x2` schedules,
   held `3x3`/periodic operator tests, and translated collision audits;
 - full surrounding-qutrit/chart conditioning of the L correction;
@@ -662,6 +752,9 @@ Open:
 - local dynamical enforcement and genesis of the combined transition charts;
 - a uniform-support family version of the now-executed finite
   free-plus-seam-plus-contact common-E recurrence;
+- a bit-level reversible physical-M2 address, freshness, append/unappend,
+  bank-selection, and returned-work implementation for the Cycle-704
+  predecessor interface;
 - `n>2`, full `M64^12`, more than two overlapping stars, volume collision
   control, and an infinite-lattice recurrence theorem;
 - primitive preparation/enforcement of all code and controller constraints;
@@ -674,11 +767,11 @@ Open:
 
 | Wall | Cycle-703 effect | Remaining dependency |
 |---|---|---|
-| `C_ref` | the uniform parity bus and runtime exterior-order query are retired; open vacuum/loader preparation has a local returned-work controller, and periodic Wilson characters are inert typed gauge input under the full local even law | coframe/boundary and one preparation invocation, the supplied cell path used by the scaled tableau, mode labels, beta, contact coupling, and program factorization remain supplied; a matter-only periodic E still needs a gauge vector |
+| `C_ref` | the uniform parity bus and runtime exterior-order query are retired; the reference-bond open code has a returned-work dependency-graph controller, while periodic Wilson characters are inert typed gauge input | reference-bond-to-path-graph isometry, physical-site placement/routing, coframe/boundary and one preparation invocation, the scaled tableau's supplied cell path, mode labels, beta, contact coupling, and program factorization remain open/supplied; a matter-only periodic E still needs a gauge vector |
 | `C_num` | local-D capacity is exactly the full `6N` matter Fock dimension at odd/even volume; the arbitrary-state loader and finite common-E factor induction are not restricted to `n<=2` | the separate `E_refresh` control remains `n<=2`; physical number meaning/superselection and a uniform-support infinite-volume update remain open |
-| `C_wrap` | a bounded physical-B opportunity and reversible predecessor packet now project exactly into the landed Cycle-610/612 interval/order code; no controller ordinal, packet count, rotor, or color stage is called time | occurrence/admission, empirical interval unit, diagonal/superposed endpoint law, and Record permanence remain open |
+| `C_wrap` | a bounded local-Gauss edge-qubit B opportunity feeds an exact finite software adapter into the landed Cycle-610/612 interval/order code; no controller ordinal, packet count, rotor, or color stage is called time | physical-site placement, physical-M2 bank compilation, occurrence/admission, empirical interval unit, diagonal/superposed endpoint law, and Record permanence remain open |
 | `C_int` | contact is a bounded onsite BKSF polynomial inside the exact finite common-E schedules, retains the one-particle mass fixture, and transports the no-refit Cycle-629 spectral/Ritz rows exactly | selection of the contact/coupling, physical rate/protection, and uniform-support family composition remain open |
-| `C_local` | finite order-derived closure remains a control; local Gauss now supplies returned-work open-state preparation, scaled transformed-E tableaus, exact L/`2x2` scheduled updates, held covariance, and periodic direct-sum typing | state-compatible stream summands grow `13,23,39,135`; a uniform constant-support representative, boundary/coframe genesis, and infinite-volume recurrence remain open |
+| `C_local` | the finite order-derived Cycle-655 physical-M2 closure remains a control; on distinct graph codes, local Gauss supplies returned-work edge-qubit preparation and scaled transformed-E/exact L/`2x2` edge-qubit schedules with held covariance and periodic direct-sum typing | the graph-code equivalence and Cycle-232 `Z^3` placement/repetition/controller lift are uncomposed; state-compatible stream summands grow `13,23,39,135`; a uniform constant-support representative, boundary/coframe genesis, and infinite-volume recurrence remain open |
 | `C_source` | unchanged at the physical compiler layer | no action/stress/resource source or backreaction law is selected by this compiler |
 
 This ledger distinguishes exact finite common-E recurrence and local one-time
@@ -687,10 +780,15 @@ retention does not change any of these mapped science coordinates.
 
 ## Claim boundary
 
-This is a positive finite physical common-E compiler advance, an exact
-all-parity local even algebra with odd/even-volume capacity, a returned-work
-open-boundary state encoder, scaled transformed-E tableaus, and complete
-scheduled finite L/`2x2` physical updates.  It is not yet the requested
+This is a positive finite order-derived physical common-E compiler advance,
+plus an exact all-parity edge-qubit local even algebra with odd/even-volume
+capacity, a returned-work edge-qubit state encoder on one graph code, and
+scaled transformed-E tableaus plus complete scheduled finite L/`2x2`
+edge-qubit updates on another.  The
+edge-qubit surface is not yet composed with physical-site placement.  It is
+also split between a returned-work reference-bond code and a separately
+scheduled no-reference-bond path code with no executed equivalence.  It is not
+yet the requested
 uniform constant-support recurrent compiler: the state-compatible individual
 stream summands grow `13,23,39,135`, the scaled E is a global stabilizer-code
 isometry rather than a bounded tensor block per cell, and its cell path plus
@@ -703,25 +801,27 @@ rates.  Pointer/feature copying is not a framework Record.  No wrapped phase
 is called energy.  No source, gravity, probability, minimum content, shared
 obstruction, or axiom pressure is claimed.
 
-The exact three-factor support defect receives a separate N1--N8 scope audit
-in its adversarial note.  It is not generalized to the successful larger
-support routes or to the substrate.
+The exact three-factor support defect carries its executable N1--N8 scope
+packet in the primary runner closure, with the adversarial note retained as
+provenance.  It is not generalized to the successful larger-support routes or
+to the substrate.
 
 ## Optimal next experiment
 
-The local-Gauss route now supplies the finite common E, returned-work open
-preparation, transformed-E tableaus, exact finite scheduled recurrence, the
-Cycle-612 conditional endpoint bridge, and no-refit Cycle-629 spectral
-preservation.  The next experiment should attack only the remaining compiler
-wall: the growing state-compatible path-chord seam support.
+The local-Gauss route now supplies two distinct positives: returned-work
+preparation on the parallel-reference-bond graph, and transformed-E finite
+schedules/no-refit Cycle-629 transport on the no-reference-bond path graph.
+The highest-value next experiment is to bridge those graphs and the strict
+physical-site interface before treating them as one compiler.
 
-Run a three-route local-representative tournament: add bounded parallel
-reference/face auxiliaries, synthesize a geometry-aware local gauge/tableau
-whose cosets match the existing max-17 even grammar, and test the Cycle-269
-carrier/role graph as the physical common-E substrate.  Freeze on L/`2x2`,
-hold out `3x3` and periodic L3/L4, and require individual summand weight and
-diameter to remain constant under every frame/translation—not merely exact
-finite tableau rank.  If one route closes, rerun Cycle 704 and then connect the
-physical local matter source to the independent boundary-source construction
-currently proposed in PR 5632.  Another target-fitted finite sign table or a
-dense global Clifford is now lower leverage.
+Run a three-route composition tournament: construct the signed stabilizer and
+logical-Pauli isometry suggested by the `2x2` count identity `76+4=80`; lift
+the path graph directly through the Cycle-232 two-site stream repetition and
+proper-cubic `Z^3` placement; and alternatively compile the scheduled update
+onto the already prepared parallel-reference graph.  Require injective site
+placement, shared-register consistency, collision-free nearest-neighbor
+controller routing, all 24/576 frames/products, and held `3x3` plus periodic
+L3/L4 without refit.  Then attack the still-growing path-chord weights
+`13,23,39,135`, rerun the Cycle-704 interface, and only afterward connect the
+matter source to the independent boundary-source construction.  Another
+target-fitted finite sign table or dense global Clifford is lower leverage.

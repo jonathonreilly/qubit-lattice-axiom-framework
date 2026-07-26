@@ -5,13 +5,18 @@
  "cycle": 703,
  "date": "2026-07-25",
  "pass": true,
-  "package_scope": "finite physical common-E compiler tournament, target-independent local-Gauss all-parity grammar, returned-work open-state encoder, scaled finite recurrent schedules with an explicit uniform-support ceiling, and a conditional Cycle612 endpoint bridge",
+  "package_scope": "finite order-derived physical-M2 common-E compiler tournament; target-independent local-Gauss all-parity edge-qubit grammar; graph-specific returned-work OpenReferenceGraph encoder and separate scaled PatchGraph schedules with explicit equivalence/placement/support ceilings; and an edge-qubit endpoint comparator feeding a conditional Cycle612 software adapter",
  "primary_note": {
   "path": "docs/RECURRENT_ENDPOINT_INCIDENCE_PHYSICAL_M2_COMPILER_TOURNAMENT_CYCLE703_NOTE_2026-07-25.md",
-    "bytes": 45863,
-    "sha256": "5e96dd6c8fdcfd6537121bfa5c3ecee97524c633cb4235303e9ab27211c78eb6"
+    "bytes": 54099,
+    "sha256": "2ba3273e93a7c8739407498e49706f9726a5ced1bb40eee66e8578161eca42f0"
  },
  "decisive_sources": [
+  {
+   "path": "scripts/frontier_cycle703_recurrent_endpoint_incidence_package_acceptance_2026_07_25.py",
+   "bytes": 6176,
+   "sha256": "ea4dc8ab86063f33d2d72cac15d943d59ee062b062681c91300283deaa322346"
+  },
   {
    "path": "scripts/frontier_common_e_ordered_physical_rom_composition_2026_07_25.py",
    "bytes": 35371,
@@ -38,6 +43,11 @@
    "sha256": "d9e88ba7e9a2eaa01095f755b1b6c1819708a17b480b866ccb4f51069b8bbfce"
   },
   {
+   "path": "scripts/frontier_cycle330_symmetric_edge_sign_physical_m2_adversary_2026_07_25.py",
+   "bytes": 61300,
+   "sha256": "a324dfadc0f6269d738539dca84fbe43bd2b596700235839f712207198ff8586"
+  },
+  {
    "path": "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
    "bytes": 27451,
    "sha256": "781823cf744be93de73f5e86e4e4cc988e0e7fe19c9c88a264b6f58169c07b0e"
@@ -54,8 +64,8 @@
   },
     {
       "path": "scripts/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py",
-      "bytes": 44230,
-      "sha256": "12e181e77801ad760ab61ed9c69bef7fa5c62ea5c58c357e297dd81bc0e91f82"
+      "bytes": 44565,
+      "sha256": "833ac9ee1d7f83185fdd66d89e2f3208e514c0b3b2cff660e7227dc28f506245"
     },
     {
       "path": "scripts/frontier_cycle703_local_cellular_plaquette_decoder_2026_07_25.py",
@@ -64,8 +74,8 @@
     },
     {
       "path": "scripts/frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py",
-      "bytes": 39537,
-      "sha256": "d1b582abc990fac0be7f36da0230bb626b200ec44f681b45495b2c435ebb2a35"
+      "bytes": 40749,
+      "sha256": "5dab64cd17ead6cb5062eab9266b9206d74bb608dcc22f3a1132ee1f1af3e9a9"
     },
     {
       "path": "scripts/frontier_cycle703_bksf_vacuum_gauge_ancilla_addendum_2026_07_25.py",
@@ -74,16 +84,24 @@
     },
     {
       "path": "scripts/frontier_cycle703_bksf_patch_tableau_covariance_2026_07_25.py",
-      "bytes": 72411,
-      "sha256": "d1cd6d905fb271fe79b92b52ad26e6ad8d6c8c685ee5485871937ac3230e8685"
+      "bytes": 72975,
+      "sha256": "8240ab7d3cd27f3058a7b44c1cfe35dda638cf011fbdd12ccecc1bc8054043c9"
     },
     {
       "path": "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
-      "bytes": 30451,
-      "sha256": "ca79e7edb0fc3ef99c1e4878e71b20fde6af2076148570b9b018e8488f47fd85"
+      "bytes": 31179,
+      "sha256": "4d0049dbcb231301e0b0b110bc1933dfb2bda1aea2628e5e30bc5c1cee97d66a"
     }
  ],
  "primary_runs": [
+  {
+   "runner": "scripts/frontier_cycle703_recurrent_endpoint_incidence_package_acceptance_2026_07_25.py",
+   "terminal": "CYCLE703_RECURRENT_ENDPOINT_INCIDENCE_PACKAGE_ACCEPTANCE_CLOSED",
+   "tests_passed": 14,
+   "tests_failed": 0,
+   "cache": "logs/runner-cache/frontier_cycle703_recurrent_endpoint_incidence_package_acceptance_2026_07_25.txt",
+   "cache_sha256": "7ef85acca5eca7de07a5363b745c8c321c41cf0e82ee5ce2a6e16aca67dbb5fe"
+  },
   {
    "runner": "scripts/frontier_common_e_ordered_physical_rom_composition_2026_07_25.py",
    "terminal": "actual common-E direct composition: 240 signed columns remain",
@@ -115,6 +133,14 @@
    "cache_sha256": "ecce6621b6d0d5b4287e442211af4bc852480b37ef9cb5608e54792e570be77a"
   },
   {
+   "runner": "scripts/frontier_cycle330_symmetric_edge_sign_physical_m2_adversary_2026_07_25.py",
+   "terminal": "EXACT_THREE_DATA_M2_TRANSLATOR_NO_UNITARY_N1_N8_PASS_LARGER_SUPPORT_OPEN",
+   "tests_passed": 9,
+   "tests_failed": 0,
+   "cache": "logs/runner-cache/frontier_cycle330_symmetric_edge_sign_physical_m2_adversary_2026_07_25.txt",
+   "cache_sha256": "7eb46b4dc514704e6e19c2d0d407e1f1d0d00e5aa563681b65793a9f05288926"
+  },
+  {
    "runner": "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
    "terminal": "LOCAL_GAUSS_ALGEBRA_AND_FOCK_ISOMETRY_POSITIVE_BKSF_COMMON_E_OPEN",
    "tests_passed": 8,
@@ -142,7 +168,7 @@
    "runner": "scripts/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py",
    "terminal": "CYCLE703_OPEN_BKSF_STATE_ENCODER_LOCAL_FEEDFORWARD_NOT_FIXED_DEPTH",
    "cache": "logs/runner-cache/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.txt",
-   "cache_sha256": "809131d3981d56e4f77f9ac6b84f38430ae59d3cc25ba2310679157a40f8824e"
+   "cache_sha256": "7f27928e7503bf94cc0d8332b900eb057743e8b963d2bd4afbe4af330146a8b5"
   },
   {
    "runner": "scripts/frontier_cycle703_local_cellular_plaquette_decoder_2026_07_25.py",
@@ -152,9 +178,9 @@
   },
   {
    "runner": "scripts/frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py",
-   "terminal": "CYCLE703_ECHO_WORK_RETURNED_RECORD_FACTORS_AND_STAYS_INERT",
+   "terminal": "CYCLE703_ECHO_WORK_RETURNED_SYNDROME_BANK_FACTORS_AND_STAYS_INERT",
    "cache": "logs/runner-cache/frontier_cycle703_reversible_echo_ack_controller_2026_07_25.txt",
-   "cache_sha256": "abdacfbb19d38db3ffad612870a571fb661a67c93e187f87238f7425e39c88a7"
+   "cache_sha256": "78a5be57fc7e9bcea2bb7798e012a60ccc11803449b3e64162b76ef45d1ce5de"
   },
   {
    "runner": "scripts/frontier_cycle703_bksf_vacuum_gauge_ancilla_addendum_2026_07_25.py",
@@ -170,20 +196,20 @@
    "tests_passed": 6,
    "tests_failed": 0,
    "cache": "logs/runner-cache/frontier_cycle703_bksf_patch_tableau_covariance_2026_07_25.txt",
-   "cache_sha256": "ee9e6a14207856ecbd2d5704c7690077bd572ef0009112187ce4fe4abe06ed9e"
+   "cache_sha256": "ef009260544f38b1eff8721c9b4ceeb10e0275185f44c4ddf9cfc413c70c7cd4"
   },
   {
    "runner": "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
-   "terminal": "LOCAL_GAUSS_ENDPOINT_PACKET_INTERTWINER_CLOSED_OCCURRENCE_RECORD_UNIT_PREPARATION_OPEN",
+   "terminal": "LOCAL_GAUSS_ENDPOINT_SOFTWARE_PACKET_INTERFACE_CLOSED_PHYSICAL_BANK_OPEN",
    "tests_passed": 6,
    "tests_failed": 0,
    "cache": "logs/runner-cache/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.txt",
-   "cache_sha256": "2f4ce7041d4486e7b271d0efb38afa017b5b439f225207e60c06c116fb6878b6"
+   "cache_sha256": "2a90e0e893f447835fc09d0f3877a8ce4599cc43c591ab919dffa64296926cc4"
   }
  ],
  "strongest_constructive_result": {
-  "statement": "A local-Gauss BKSF code has exact 6N capacity, a phase-correct arbitrary-state E, returned-work radius-one open preparation, exact transformed-E tableaus on L/2x2/3x3/periodic L3, and complete factor-by-factor L/2x2 physical coin-seam-contact schedules. The state-compatible stream summands grow 13,23,39,135, so the uniform constant-support family contract remains open.",
-  "open_state_result": "Open L2 preparation factors exactly as the unique 168-edge-M2 vacuum tensor a pure 114-M2 record state; the echo controller returns all recurrence work and the retained record is inert. One-time E needs no reset; boundary/coframe genesis and blank-bank reuse remain supplied/open.",
+  "statement": "Local-Gauss BKSF has exact 6N edge-qubit capacity. Separately, the parallel-reference OpenReferenceGraph has a phase-correct arbitrary-state E with returned-work radius-one preparation, while the no-reference-bond PatchGraph has exact transformed-E tableaus on L/2x2/3x3/periodic L3 and complete factor-by-factor L/2x2 edge-qubit schedules. No signed stabilizer/logical-Pauli equivalence between those graphs is constructed. The Cycle232 physical-site placement/repetition/controller lift is also uncomposed, and state-compatible stream summands grow 13,23,39,135, so the strict physical-M2 family contract remains open.",
+  "open_state_result": "Open L2 preparation factors exactly as the unique 168-BKSF-edge-qubit vacuum tensor a pure 114-qubit syndrome-bank state; the abstract dependency-graph echo controller returns all recurrence work and the retained syndrome bank is inert. One-time edge-qubit E needs no reset; Z3 placement/routing, boundary/coframe genesis, and blank-bank reuse remain supplied/open.",
   "one_particle_mass": 0.45340565417488515,
   "one_particle_mass_fixture": 0.4534056541748851,
   "one_particle_mass_residual": 5.551115123125783e-17,
@@ -201,7 +227,7 @@
   "order_derived_gauge": "finite positive common-E closure at Frobenius residual 1.612663082506538e-14; preferred order remains supplied",
   "static_same_register_rephase": "route-specific no-go: involution orbit condition fails on training",
   "colored_two_frame": "finite training positive, held no-refit falsified with forced row-space conflicts",
-  "local_Gauss_BKSF": "strongest positive: returned-work open-state E, periodic Wilson direct-sum typing, scaled finite common-E schedules, and conditional Cycle612 bridge; uniform state-compatible seam support remains open",
+  "local_Gauss_BKSF": "strongest edge-qubit positives are graph-specific: returned-work E on OpenReferenceGraph and scaled finite schedules on PatchGraph; their equivalence, physical-site placement/controller composition, uniform state-compatible seam support, and physical packet-bank compilation remain open",
   "vacuum_face_ancilla": "route-specific failure: edge-loop projector leakage 1/2; dense coherent identity positive",
   "translation_linear_vacuum": "whole-torus finite fits do not hold at fixed radius on held L6; nonlinear radius-one echo route closes open boxes",
   "periodic_Wilson": "positive direct-sum typing H_matter tensor C^8 with U_matter tensor I_8 and exact 24/576 covariance"
@@ -210,14 +236,23 @@
   "autonomous_no_host_side_control_recurrent_compiler": false,
   "scaled_overlap_common_E_conjugation": true,
   "transformed_E_covariance": true,
-  "finite_full_scheduled_physical_update": true,
+  "finite_order_derived_full_scheduled_physical_update": true,
+  "scaled_local_Gauss_full_scheduled_edge_qubit_update": true,
+  "scaled_local_Gauss_physical_site_placement_composed": false,
+  "returned_work_OpenReferenceGraph_to_scheduled_PatchGraph_equivalence": false,
+  "OpenReferenceGraph_edge_qubits_2x2": 80,
+  "PatchGraph_edge_qubits_2x2": 76,
+  "suggestive_repetition_lift_extra_qubits_2x2": 4,
   "uniform_constant_support_recurrent_family": false,
   "periodic_fixed_Wilson_preparation": false,
   "periodic_Wilson_direct_sum_typing": true,
   "open_state_isometry": true,
-  "returned_work_open_preparation": true,
-  "conditional_Cycle612_endpoint_bridge": true,
-  "two_cell_physical_common_E": true,
+  "returned_work_OpenReferenceGraph_edge_qubit_preparation": true,
+  "returned_work_PatchGraph_preparation": false,
+  "conditional_edge_qubit_endpoint_to_Cycle612_software_adapter": true,
+  "physical_Cycle612_packet_bank_compiler": false,
+  "two_cell_edge_qubit_common_E": true,
+  "two_cell_local_Gauss_physical_site_common_E": false,
   "target_independent_held_operator_grammar": true,
   "physical_time_energy_source_gravity_Record_or_Born_law": false,
   "shared_obstruction_or_axiom_pressure": false
@@ -225,7 +260,7 @@
  "supplied": [
   "one scalar reference fermion per coarse cell and the local D_x law",
   "BKSF incidence, local loop projectors, local port-order gauge, and open boundary/coframe",
-  "one invocation of the preparation epoch and retained inert syndrome record",
+  "one invocation of the preparation epoch and retained inert syndrome bank",
   "supplied Hamiltonian cell path for the scaled tableau; or an explicit three-qubit Wilson gauge input on periodic domains",
   "Cycle219 coin and mass fixture, Cycle230 contact coupling and declared factor schedule",
   "mode labels, beta, contact coupling, genesis, empirical calibration, and physical-time/source/Record/Born interfaces"

@@ -905,9 +905,8 @@ def no_go_discipline_census(matrix_rows, censuses) -> dict[str, object]:
     }
     return {
         "skill_freshness": {
-            "fetched_origin_main": True,
             "skill_source": "origin/main:docs/ai_methodology/skills/no-go-discipline/SKILL.md",
-            "used_newer_origin_version": True,
+            "classification": "review-time procedural supply; not self-certified by this runner",
         },
         "target_contract": target_contract,
         "N1_routes": routes,
@@ -956,10 +955,13 @@ def no_go_discipline_census(matrix_rows, censuses) -> dict[str, object]:
 def main() -> None:
     source_rows = {
         "root_candidate": {
-            "path": str(ROOT_CANDIDATE),
+            "path": ROOT_CANDIDATE.relative_to(SCRIPT_DIR.parent).as_posix(),
             "sha256": file_sha256(ROOT_CANDIDATE),
         },
-        "route_b": {"path": str(ROUTE_B), "sha256": file_sha256(ROUTE_B)},
+        "route_b": {
+            "path": ROUTE_B.relative_to(SCRIPT_DIR.parent).as_posix(),
+            "sha256": file_sha256(ROUTE_B),
+        },
     }
     label_rows = label_space_diagnostics()
     check(

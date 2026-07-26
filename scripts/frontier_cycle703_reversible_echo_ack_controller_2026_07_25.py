@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 703: reversible local echo/ack controller and record factorization.
+"""Cycle 703: reversible local echo/ack controller and syndrome-bank factorization.
 
 Each axial-decoder dependency component is a rooted tree.  A finite-state token
 walks its local Euler contour: parent->child computes the child prefix and
@@ -9,9 +9,14 @@ one-time preparation epoch.  No host selects a path, stop, barrier, or round.
 
 The measured/coherently extracted syndrome bits are retained.  This runner also
 proves that coherent extraction and phase-zero Z correction factor the unique
-open BKSF vacuum from a fixed pure record stabilizer state.  That record is
+open BKSF vacuum from a fixed pure syndrome-bank stabilizer state.  That bank is
 inert under later loading/update, but this runner does not reuse it as a blank
-syndrome bank or erase a dephased classical record unitarily.
+syndrome bank or erase a dephased classical syndrome bank unitarily.
+
+The controller is local on the abstract BKSF dependency graph.  This runner
+does not allocate graph-edge or controller-work qubits into Cycle-232 Z3
+macrocells and does not prove collision-free nearest-neighbor physical-site
+routing.
 """
 
 from __future__ import annotations
@@ -254,11 +259,11 @@ def local_permutation_tables() -> dict[str, object]:
         "epoch_bijection_failures": int(epoch_failures),
         "controlled_Z_basis_phases": cz_phases,
         "controlled_Z_unitarity_failures": sum(abs(value) != 1 for value in cz_phases),
-        "maximum_port_bits_M2": 2,
-        "finite_controller_M2_upper_bound_per_work_node": 6,
+        "maximum_port_work_qubits": 2,
+        "finite_controller_work_qubit_upper_bound_per_dependency_node": 6,
         "meaning": (
             "all local data, routing, token, epoch, and correction primitives "
-            "are bounded M2 permutations or a bounded controlled phase"
+            "are bounded abstract-qubit permutations or a bounded controlled phase"
         ),
     }
 
@@ -490,9 +495,10 @@ def physical_coarse_z(
     return base.Pauli(z=z)
 
 
-def record_stabilizers_l2() -> tuple[base.Pauli, ...]:
-    # 96 triangle records are |+>; six coarse records are the uniform even
-    # state; 12 bond records are |+>.  The ordering is triangle/coarse/bond.
+def syndrome_bank_stabilizers_l2() -> tuple[base.Pauli, ...]:
+    # 96 triangle auxiliaries are |+>; six coarse auxiliaries are the uniform
+    # even state; 12 bond auxiliaries are |+>.  The ordering is
+    # triangle/coarse/bond.
     rows = []
     triangle_count = 96
     coarse_offset = triangle_count
@@ -513,7 +519,7 @@ def record_stabilizers_l2() -> tuple[base.Pauli, ...]:
     return tuple(rows)
 
 
-def l2_record_factorization_certificate() -> dict[str, object]:
+def l2_syndrome_bank_factorization_certificate() -> dict[str, object]:
     cells = tuple(product(range(2), repeat=3))
     graph = prep.OpenReferenceGraph(cells)
     cycles = prep.open_local_cycles(graph)
@@ -638,7 +644,7 @@ def l2_record_factorization_certificate() -> dict[str, object]:
     # projection proves that every nonidentity product has zero expectation in
     # |0_Z>; full rank of the correction/check anticommutation matrix proves
     # that all 2^113 syndrome characters occur.  Neither conclusion uses the
-    # disjoint physical/record register typing census below.
+    # disjoint physical/syndrome-bank register typing census below.
     independent_checks = (
         triangles + ordered_coarse[:5] + tuple(row for row, _ in bonds_with_key)
     )
@@ -701,18 +707,18 @@ def l2_record_factorization_certificate() -> dict[str, object]:
         list(independent_checks), qubits
     )
 
-    record_rows = record_stabilizers_l2()
-    record_qubits = 114
-    record_rank = base.gf2_rank(
-        row.symplectic(record_qubits) for row in record_rows
+    syndrome_bank_rows = syndrome_bank_stabilizers_l2()
+    syndrome_bank_qubits = 114
+    syndrome_bank_rank = base.gf2_rank(
+        row.symplectic(syndrome_bank_qubits) for row in syndrome_bank_rows
     )
-    record_phase_failures = base.stabilizer_phase_failures(
-        list(record_rows), record_qubits
+    syndrome_bank_phase_failures = base.stabilizer_phase_failures(
+        list(syndrome_bank_rows), syndrome_bank_qubits
     )
-    record_commutator_failures = sum(
+    syndrome_bank_commutator_failures = sum(
         not left.commutes(right)
-        for index, left in enumerate(record_rows)
-        for right in record_rows[index + 1 :]
+        for index, left in enumerate(syndrome_bank_rows)
+        for right in syndrome_bank_rows[index + 1 :]
     )
     physical_vacuum_rank = prep.base.gf2_rank(
         row.symplectic(qubits)
@@ -722,7 +728,7 @@ def l2_record_factorization_certificate() -> dict[str, object]:
         + tuple(graph.B(vertex) for vertex in range(len(graph.vertices)))
     )
 
-    # Type-separation census only: physical and record tableaux occupy
+    # Type-separation census only: physical and syndrome-bank tableaus occupy
     # disjoint registers, so these commutators are true by construction.  This
     # checks that the later-update interface was typed onto the physical edge
     # register; it is not evidence for the factorization proved above.
@@ -739,20 +745,20 @@ def l2_record_factorization_certificate() -> dict[str, object]:
         physical_combined = base.Pauli(
             physical.phase, physical.x, physical.z
         )
-        for record in record_rows:
-            record_combined = base.Pauli(
-                record.phase,
-                record.x << qubits,
-                record.z << qubits,
+        for syndrome_row in syndrome_bank_rows:
+            syndrome_bank_combined = base.Pauli(
+                syndrome_row.phase,
+                syndrome_row.x << qubits,
+                syndrome_row.z << qubits,
             )
             type_separation_commutator_failures += not physical_combined.commutes(
-                record_combined
+                syndrome_bank_combined
             )
 
-    total_rank = physical_vacuum_rank + record_rank
+    total_rank = physical_vacuum_rank + syndrome_bank_rank
     return {
-        "physical_edge_M2": qubits,
-        "measured_loop_records": 114,
+        "BKSF_graph_edge_qubits": qubits,
+        "measured_loop_syndrome_banks": 114,
         "stage_rank_increments": (
             rank_triangles,
             rank_tri_coarse - rank_triangles,
@@ -775,10 +781,10 @@ def l2_record_factorization_certificate() -> dict[str, object]:
         "bond_branch_failures": bond_branch_failures,
         "bond_phase_failures": bond_phase_failures,
         "bond_previous_stage_commutator_failures": bond_previous_commutator_failures,
-        "lawful_full_record_support_exponent": rank_all,
-        "lawful_full_record_support_count": f"2^{rank_all}",
-        "common_record_amplitude": f"2^(-{rank_all}/2)",
-        "nonzero_record_amplitude_phase": 0,
+        "lawful_full_syndrome_bank_support_exponent": rank_all,
+        "lawful_full_syndrome_bank_support_count": f"2^{rank_all}",
+        "common_syndrome_bank_amplitude": f"2^(-{rank_all}/2)",
+        "nonzero_syndrome_bank_amplitude_phase": 0,
         "uniform_amplitude_discriminator": {
             "independent_check_rows": len(independent_checks),
             "all_measured_check_rows": len(triangles + ordered_coarse + bonds),
@@ -809,23 +815,23 @@ def l2_record_factorization_certificate() -> dict[str, object]:
                 "Z-correction pairing realizes every syndrome character"
             ),
         },
-        "record_stabilizer_rows": len(record_rows),
-        "record_stabilizer_rank": record_rank,
-        "record_stabilizer_phase_failures": record_phase_failures,
-        "record_stabilizer_commutator_failures": record_commutator_failures,
+        "syndrome_bank_stabilizer_rows": len(syndrome_bank_rows),
+        "syndrome_bank_stabilizer_rank": syndrome_bank_rank,
+        "syndrome_bank_stabilizer_phase_failures": syndrome_bank_phase_failures,
+        "syndrome_bank_stabilizer_commutator_failures": syndrome_bank_commutator_failures,
         "physical_vacuum_rank": physical_vacuum_rank,
         "factor_product_tableau_rank": total_rank,
-        "factor_product_qubits": qubits + record_qubits,
+        "factor_product_qubits": qubits + syndrome_bank_qubits,
         "code_edge_reduced_purity": 1.0,
-        "record_reduced_purity": 1.0,
-        "code_record_Schmidt_rank": 1,
-        "type_separation_physical_record_commutator_failures": (
+        "syndrome_bank_reduced_purity": 1.0,
+        "code_syndrome_bank_Schmidt_rank": 1,
+        "type_separation_physical_syndrome_bank_commutator_failures": (
             type_separation_commutator_failures
         ),
         "type_separation_physical_Pauli_basis_rows": (
             len(physical_update_rows)
         ),
-        "fixed_record_state": (
+        "fixed_syndrome_bank_state": (
             "|+>^96_triangle tensor uniform-even-six-coarse tensor |+>^12_bond"
         ),
         "factorization_identity": (
@@ -835,29 +841,29 @@ def l2_record_factorization_certificate() -> dict[str, object]:
     }
 
 
-def record_reuse_certificate() -> dict[str, object]:
+def syndrome_bank_reuse_certificate() -> dict[str, object]:
     immutable_rows = tuple(
         (syndrome, spent, syndrome, spent)
         for syndrome, spent in product((0, 1), repeat=2)
         if spent == 1
     )
     immutable_failures = sum(row[:2] != row[2:] for row in immutable_rows)
-    # If a dephased record with N possible values were reset to one blank value
+    # If a dephased syndrome bank with N possible values were reset to one blank value
     # while the code is already the same vacuum, N orthogonal inputs would
-    # collide.  L2 has 2^113 complete lawful record values.
+    # collide.  L2 has 2^113 complete lawful syndrome-bank values.
     return {
         "spent_sector_truth_rows": immutable_rows,
         "spent_sector_immutable_failures": immutable_failures,
-        "later_logical_loader_touches_record": False,
-        "recurrent_physical_update_touches_record": False,
-        "one_time_E_requires_record_reset": False,
-        "record_can_remain_bounded_local_inert_auxiliary": True,
+        "later_logical_loader_touches_syndrome_bank": False,
+        "recurrent_edge_qubit_update_touches_syndrome_bank": False,
+        "one_time_E_requires_syndrome_bank_reset": False,
+        "syndrome_bank_can_remain_bounded_local_inert_auxiliary": True,
         "reuse_as_blank_without_reset_constructed": False,
-        "coherent_fixed_record_reset_status": (
-            "a unitary exists because the factorized record is one fixed pure "
-            "stabilizer state, but no uniform local inverse-record encoder is constructed"
+        "coherent_fixed_syndrome_bank_reset_status": (
+            "a unitary exists because the factorized syndrome bank is one fixed pure "
+            "stabilizer state, but no uniform local inverse-syndrome-bank encoder is constructed"
         ),
-        "dephased_record_unitary_reset_collision_count_L2": "2^113-1",
+        "dephased_syndrome_bank_unitary_reset_collision_count_L2": "2^113-1",
         "dephased_reset_scope": (
             "without exporting the syndrome entropy to another retained register"
         ),
@@ -870,14 +876,16 @@ def main() -> None:
     box_rows = tuple(box_echo_certificate(length) for length in range(2, 9))
     deletions = transition_deletion_certificate()
     covariance = echo_covariance_certificate()
-    factorization = l2_record_factorization_certificate()
-    reuse = record_reuse_certificate()
+    factorization = l2_syndrome_bank_factorization_certificate()
+    reuse = syndrome_bank_reuse_certificate()
     certificate = {
         "cycle": 703,
         "authority": "none",
         "audit": "unset",
-        "status": "reversible-local-echo-ack-and-one-time-record-factor-positive",
+        "status": "reversible-local-echo-ack-and-one-time-syndrome-bank-factor-positive",
         "controller": {
+            "graph_code": "parallel-reference-bond OpenReferenceGraph",
+            "scaled_no_reference_bond_PatchGraph_equivalence_constructed": False,
             "dependency_forest": "axial Ay lines plus Az y-spines with x-branches",
             "token_rule": (
                 "local Euler port successor; down computes/emits, up uncomputes, "
@@ -888,26 +896,29 @@ def main() -> None:
             "host_stop_barrier_path_or_counter": False,
             "round_or_event_counter_is_physical_time": False,
             "recurrence_work_returned": True,
-            "syndrome_record_returned_blank": False,
+            "syndrome_syndrome_bank_returned_blank": False,
         },
-        "local_M2_permutation_tables": permutations,
+        "local_abstract_qubit_permutation_tables": permutations,
         "exhaustive_L2": exhaustive,
         "box_basis_linearity_L2_L8": box_rows,
         "active_transition_deletions": deletions,
         "proper_cubic_boundary_translation_covariance": covariance,
-        "complete_L2_record_factorization": factorization,
-        "record_decoupling_and_reuse": reuse,
+        "complete_L2_syndrome_bank_factorization": factorization,
+        "syndrome_bank_decoupling_and_reuse": reuse,
         "supplied": (
             "the open boundary, transported coframe, and local port order",
             "one fresh/spent preparation epoch state per dependency root",
             "coherently extracted or measured local syndrome bits",
-            "bounded blank token/value M2 per dependency node",
+            "bounded blank token/value work qubits per dependency node",
+            "a future collision-free Z3 placement/routing of graph edges and controller work qubits",
             "one invocation of the preparation isometry E",
         ),
         "not_claimed": (
             "that controller events are physical time",
-            "reuse of the same record bank as blank without a reset circuit",
-            "unitary reset of a dephased classical record",
+            "a physical-site-M2 placement or nearest-neighbor routing compiler",
+            "an isometry to the no-reference-bond PatchGraph scaled schedule code",
+            "reuse of the same syndrome bank as blank without a reset circuit",
+            "unitary reset of a dephased classical syndrome bank",
             "periodic fixed-Wilson preparation",
             "a Record, Born rule, source law, or axiom pressure",
         ),
@@ -948,9 +959,9 @@ def main() -> None:
         "bond_branch_failures",
         "bond_phase_failures",
         "bond_previous_stage_commutator_failures",
-        "record_stabilizer_phase_failures",
-        "record_stabilizer_commutator_failures",
-        "type_separation_physical_record_commutator_failures",
+        "syndrome_bank_stabilizer_phase_failures",
+        "syndrome_bank_stabilizer_commutator_failures",
+        "type_separation_physical_syndrome_bank_commutator_failures",
     )
     assert all(factorization[key] == 0 for key in required_factor_zero)
     assert factorization["stage_rank_increments"] == (96, 5, 12)
@@ -975,13 +986,13 @@ def main() -> None:
     )
     assert all(uniform[key] == 0 for key in uniform_zero)
     assert uniform["dependent_relation_count"] == 1
-    assert factorization["record_stabilizer_rank"] == 114
+    assert factorization["syndrome_bank_stabilizer_rank"] == 114
     assert factorization["physical_vacuum_rank"] == 168
     assert factorization["factor_product_tableau_rank"] == 282
     assert factorization["factor_product_qubits"] == 282
-    assert factorization["code_record_Schmidt_rank"] == 1
+    assert factorization["code_syndrome_bank_Schmidt_rank"] == 1
     assert reuse["spent_sector_immutable_failures"] == 0
-    print("CYCLE703_ECHO_WORK_RETURNED_RECORD_FACTORS_AND_STAYS_INERT")
+    print("CYCLE703_ECHO_WORK_RETURNED_SYNDROME_BANK_FACTORS_AND_STAYS_INERT")
 
 
 if __name__ == "__main__":

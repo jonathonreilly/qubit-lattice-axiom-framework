@@ -1,0 +1,11 @@
+Cycle 708 - A2's two-sided-inverse proviso on a finite covariant lattice
+==========================================================================
+[PASS] Z1 ker(-Delta_lat) on the periodic torus is exactly the constants, dimension 1  --  L=2: dim ker = 1; L=3: dim ker = 1
+[PASS] Z2 H is singular, so no two-sided inverse exists and A2's stated proviso fails  --  rank 26 of 27; H maps 0 and the all-ones vector to the same image
+[PASS] Z3 the periodic pseudoinverse convention is also singular, so `L^{-1} = G_0` has no full-space solution  --  H+ built explicitly: H·H+ = I - J/n exactly, H+ annihilates the constants, rank(H+) = 7 < 8, rank(H) = 7 < 8
+[PASS] Z4 H restricted to the zero-mean sector is invertible, so A2 determines L there  --  sector dim 7, rank 7
+[PASS] Z5 covariance closes the gap: the zero-mean sector forces A = 0, B = -1 uniquely  --  6 distinct nonzero Dhat values; solved A=0, B=-1; consistent on all of them
+[PASS] Z6 control: a mass term restores invertibility but changes the operator  --  rank 8 of 8 with m^2 = 1/4; diagonal shifted, so L != -Delta_lat
+[PASS] Z7 control: the Dirichlet repair restores invertibility but is not translation-invariant  --  rank 27 of 27; row sum at corner 3 vs centre 0 -- the box annihilates no constant
+==========================================================================
+7 PASS / 0 FAIL

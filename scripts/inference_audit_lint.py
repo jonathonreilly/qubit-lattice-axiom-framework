@@ -125,8 +125,26 @@ def check_slice(runner: Path) -> list[Finding]:
                 iterables.append(node.iter)
             elif isinstance(node, (ast.ListComp, ast.SetComp, ast.GeneratorExp, ast.DictComp)):
                 iterables.extend(g.iter for g in node.generators)
+        # `zip(xs, xs[1:])` is the adjacent-pairs idiom, not a domain restriction:
+        # it pairs consecutive elements and tests every pair. Flagging it made the
+        # check fire on a ubiquitous pattern, and a check that cries wolf on
+        # idiomatic code gets ignored -- which is worse than not having it.
+        adjacent_pair_slices = set()
+        for it in iterables:
+            for call in ast.walk(it):
+                if (isinstance(call, ast.Call) and isinstance(call.func, ast.Name)
+                        and call.func.id == "zip" and len(call.args) >= 2):
+                    bases = {ast.dump(a) for a in call.args
+                             if not isinstance(a, ast.Subscript)}
+                    for a in call.args:
+                        if (isinstance(a, ast.Subscript)
+                                and ast.dump(a.value) in bases):
+                            adjacent_pair_slices.add(id(a))
+
         for it in iterables:
             for sub in ast.walk(it):
+                if id(sub) in adjacent_pair_slices:
+                    continue
                 if _is_narrowing_slice(sub):
                     ln = getattr(sub, "lineno", fn.lineno)
                     window = "\n".join(lines[max(0, ln - 4) : ln + 1])

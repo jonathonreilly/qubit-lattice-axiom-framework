@@ -60,6 +60,17 @@ EVIDENCE_COUNTS: Counter[str] = Counter()
 CLASS_COUNTS: Counter[str] = Counter()
 MODE_COUNTS: Counter[str] = Counter()
 
+# Per-check evidence tags are abbreviated on the printed line and expanded by the
+# TAGS legend below the mode banner; the EVIDENCE summary still names them in full.
+# An unmapped tag prints unabbreviated rather than being dropped.
+EVIDENCE_TAGS = {
+    "theorem": "thm",
+    "conditional": "cond",
+    "numerical": "num",
+    "boundary": "bnd",
+    "hygiene": "hyg",
+}
+
 
 def check(
     mode: str,
@@ -82,12 +93,12 @@ def check(
     else:
         FAIL_COUNT += 1
     suffix = f"  ({detail})" if detail else ""
-    print(f"  [{tag}][{klass}][{evidence}] {label}{suffix}")
+    print(f"[{tag}][{klass}][{EVIDENCE_TAGS.get(evidence, evidence)}] {label}{suffix}")
     return ok
 
 
 def section(title: str) -> None:
-    print(f"\n{'-' * 88}\n{title}\n{'-' * 88}")
+    print(title)
 
 
 def closed_ratio(s: int) -> Fraction:
@@ -185,7 +196,7 @@ class ScaleMapCase:
 
 def normal_mode() -> None:
     mode = "normal"
-    section("NORMAL: exact theorem and conditional-map reconstruction")
+    section("NORMAL")
 
     s = sp.symbols("s", real=True)
     closed_base = 1 - sp.Pow(2, 1 - s)
@@ -372,7 +383,7 @@ def normal_mode() -> None:
 
 def independent_mode() -> None:
     mode = "independent"
-    section("INDEPENDENT: derivative, rational brackets, and unit covariance")
+    section("INDEPENDENT")
 
     s = sp.symbols("s", real=True)
     x = sp.Pow(2, 1 - s)
@@ -489,7 +500,7 @@ def independent_mode() -> None:
 
 def hostile_mode() -> None:
     mode = "hostile"
-    section("HOSTILE: reject sign, normalization, domain, and inference overreads")
+    section("HOSTILE")
 
     invalid_dimensions = [
         ScaleMapCase(d=d0, p=Fraction(1, 4)) for d0 in (0, -1, -4)
@@ -705,7 +716,7 @@ def hostile_mode() -> None:
 
 def hygiene_mode() -> None:
     mode = "hygiene"
-    section("HYGIENE: source metadata, links, and overread guards")
+    section("HYGIENE")
 
     note_text = NOTE_PATH.read_text(encoding="utf-8") if NOTE_PATH.exists() else ""
     claim_types = re.findall(
@@ -844,11 +855,8 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    print("=" * 88)
-    print("frontier_hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow.py")
-    print(f"mode={args.mode}")
-    print("exact A-C theorem; exponent-only D with supplied kappa/sign boundary")
-    print("=" * 88)
+    print(f"mode={args.mode};A-C exact,D exponent-only")
+    print("TAGS: " + " ".join(f"{v}={k}" for k, v in EVIDENCE_TAGS.items()))
 
     if args.mode in ("normal", "all"):
         normal_mode()
@@ -858,7 +866,6 @@ def main() -> int:
         hostile_mode()
     hygiene_mode()
 
-    print(f"\n{'=' * 88}")
     print(
         "EVIDENCE: "
         + " ".join(
@@ -872,7 +879,6 @@ def main() -> int:
     )
     print("MODES: " + " ".join(f"{name}={count}" for name, count in sorted(MODE_COUNTS.items())))
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
-    print("=" * 88)
     return 0 if FAIL_COUNT == 0 else 1
 
 

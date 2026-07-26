@@ -23,7 +23,7 @@ bare_retained_allowed: false
 ```
 
 Runner: `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py`
-(13 PASS / 0 FAIL)
+(14 PASS / 0 FAIL)
 
 ## What the parent row asked for
 
@@ -170,6 +170,7 @@ lattice sizes, behind biharmonic and the `1/r^2` kernel.
 | L8 | Poisson's fundamental solution has the opposite sign to all three rivals, and the parent runner feeds all four the same source sign. | R10, parent runner line 296 | unit positive point source **[satisfied]** | Shown: signs `-1` for Poisson, `+1` for biharmonic, local, `1/r^2`. Claimed: the attractiveness column's content is this one bit. | the signs agreeing |
 | L9 | Under per-operator sign normalization, Poisson ranks third of four by `abs(beta-1)` at N=20 and N=24. | R11, R12 | the parent note's parameters `k=5.0, G=0.5, sigma=2.0, mixing=0.3, tol=1e-4, max_iter=30` **[supplied]**; the parent note's `check_field_physics` `beta` diagnostic **[supplied]**; four operators feasible at these sizes **[satisfied]** | Shown: biharmonic `0.876/0.867`, `1/r^2` `1.211/1.242`, Poisson `1.280/1.286`, all attractive and monotone. Claimed: Poisson is not the best operator in the tested family at these sizes. Not claimed: a continuum-limit ranking; the parent note ran its continuum extrapolation for Poisson only. | Poisson ranking first at either size |
 | L10 | The screened-Poisson family shares Poisson's definiteness, so the parent note's Test 4 is unaffected. | R13 | `mu^2 >= 0` **[satisfied]** | Shown: `max eig(Laplacian - mu^2 I) < 0` for all six tested `mu^2`. Claimed: the sign defect does not reach Test 4. | a nonnegative eigenvalue |
+| L11 | The tested biharmonic rival is positivity-preserving by construction, so a mediator-positivity requirement cannot exclude it either. | R14 | the parent runner's biharmonic is `A @ A`, the square of the Dirichlet Laplacian, not the clamped-plate operator **[satisfied]**; N=10 **[satisfied]** | Shown: `Delta_D^-1` entrywise single-signed, `(A@A)^-1 = (A^-1)^2` to `1.2e-15`, `(A@A)^-1` entrywise positive. Claimed: no positivity discriminator separates the tested biharmonic from Poisson. Not claimed: that clamped-plate biharmonic is positivity-preserving; it is not. | a sign change in the tested biharmonic Green's function |
 
 ## Scope, and what this cycle does not claim
 
@@ -189,6 +190,26 @@ lattice sizes, behind biharmonic and the `1/r^2` kernel.
   holds. The statistic `sum|rho_p - rho_0|` scales as `delta_phi^1.124` over
   `delta_phi` in `[0.0125, 0.2]` at `r = 3`, N=12 — approximately linear. This
   cycle looked for a linearity failure and did not find one.
+
+### The strongest escape from Part C, and why it is not available
+
+If the ranking is not the discriminator, a positivity requirement might be:
+demand the mediator kernel be positive so that superposing positive masses never
+anti-attracts. That would exclude biharmonic on grounds independent of the
+source-sign convention, and for the **clamped-plate** biharmonic operator
+positivity genuinely can fail (Coffman–Duffin). The parent runner does not
+implement that operator. It implements `A @ A`, the square of the Dirichlet
+Laplacian, and (R14)
+
+- `Delta_D^-1` is entrywise single-signed;
+- `(A@A)^-1 = (A^-1)^2` to `1.2e-15`;
+- so `(A@A)^-1` is a product of two entrywise single-signed matrices and is
+  entrywise positive, `frac > 0 = 1.000000`.
+
+The tested biharmonic Green's function therefore cannot change sign, and the
+strongest convention-free discriminator available does not separate it from
+Poisson either. This escape was looked for on the parent note's behalf and
+closed.
 
 ## The strongest objection to this cycle, and why the demotion still stands
 

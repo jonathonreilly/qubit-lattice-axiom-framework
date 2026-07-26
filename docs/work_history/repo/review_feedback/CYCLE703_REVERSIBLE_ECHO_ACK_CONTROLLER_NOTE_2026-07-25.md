@@ -169,6 +169,21 @@ The executable checks:
 - pure-Z, phase-zero correction for every column;
 - the dependent coarse relation including Pauli phase.
 
+The load-bearing uniform-amplitude discriminator is independent of the
+physical/record register split.  Select the 96 triangle rows, five independent
+coarse rows, and 12 bond rows.  Their X-part has rank 113.  The X-part of all
+114 measured rows also has rank 113, with the sole dependency the phase-zero
+coarse relation.  Thus every nonidentity product of the 113 independent checks
+is off-diagonal in the edge Z basis and has exactly zero `|0_edge>`
+expectation.
+
+The runner separately constructs 113 phase-zero pure-Z corrections.  Their
+113-by-113 correction/check anticommutation matrix has rank 113, with unit
+diagonal and no earlier-stage entries.  Therefore every syndrome character is
+realized, while the X-rank test makes all nontrivial Fourier coefficients
+zero.  This is the explicit uniform-amplitude discriminator; it does not infer
+uniformity from a disjoint-register commutator.
+
 Every residual is zero.  For every lawful stage syndrome `s`, correction
 `A_s`, and syndrome projector `P_s`, the checked commutators give
 
@@ -202,10 +217,13 @@ Fixed spent flags and parked-idle token states are additional local product
 factors; omitting those constant rows from the displayed 282-qubit tableau
 does not change purity or Schmidt rank.
 
-All 336 single-edge physical Pauli basis rows commute with the shifted record
-tableau.  This proves decoupling for the full physical edge algebra, hence for
-the repaired logical loader and recurrent physical update, not only for the
-vacuum stabilizers.
+A 336-row type-separation census confirms that the recurrent physical Pauli
+algebra is typed on the edge register while the fixed record occupies its own
+register.  The resulting commutators are tautological by disjoint support; they
+check later-update inertness at the declared interface but do not prove
+factorization.  Factorization and equal amplitudes rest instead on the
+X-projection, full-rank correction/check pairing, phase-zero branch relations,
+and the two complete stabilizer tableaux above.
 
 ## Record retention and reuse boundary
 
@@ -315,6 +333,9 @@ syndrome, all triangle/bond columns, every unit-edge generator L2--L8, complete
 L2 factor tableaux/phases, and all 24 transported frames at L4.  Not tested are
 arbitrary shapes, noisy/fault-tolerant controllers, a local coherent
 `|chi> -> |0>` circuit, periodic sectors, or repeated measurement-bank reuse.
+The equal-amplitude test does not use the 336 type-separated cross-register
+commutators: it uses the independent check X-rank 113 and the correction/check
+pairing rank 113.
 The collision claim is only for a dephased bank with every other output fixed.
 
 ### N6 — partial-closure paths

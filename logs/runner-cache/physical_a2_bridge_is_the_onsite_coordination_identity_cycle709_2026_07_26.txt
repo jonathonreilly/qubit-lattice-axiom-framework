@@ -1,0 +1,12 @@
+Cycle 709 - A2's missing bridge theorem, identified exactly
+==========================================================================
+[PASS] R1 H(mu) = (mu-6)*I - Delta exactly, so the covariant coefficient is A = mu - 6  --  mu=0 -> A=-6; mu=6 -> A=0; mu=13/2 -> A=1/2; mu=-3 -> A=-9
+[PASS] R2 A2 on the resolvent gives L = H - E and A = mu - 6 - E; A2 as written is A = 0  --  (mu=6,E=0)->A=0; (mu=6,E=1)->A=-1; (mu=6,E=-5/2)->A=5/2; (mu=4,E=0)->A=-2 ...
+[PASS] R3 min spec(L) = A exactly, so A is the field's mass gap and is observable  --  A=0: min spec = 0; A=1: min spec = 1; A=7/2: min spec = 7/2; A=13: min spec = 13; band top at A+12
+[PASS] R4 the energy-origin shift is spectrally rigid: same eigenbasis, same gaps, real spectrum for every mu -- no observable consequence  --  shift c=9/2 moves every eigenvalue by exactly c; 63 gaps identical; [H(mu), A_adj] = 0 for every mu tested
+[PASS] R5 mu = 6 exactly iff the row sums vanish iff H annihilates the uniform state  --  mu=0: row sum -6; mu=6: row sum 0; mu=15/2: row sum 3/2
+[PASS] R6 zero row sums are forced for a Markov generator and not for a self-adjoint quantum Hamiltonian  --  mu=0: col sum 6, conserves=False; mu=6: col sum 0, conserves=True; mu=9: col sum -3, conserves=False; H self-adjoint for every mu tested
+[PASS] R7 the band of L is [A, A+12] with both endpoints exact; A = 0 is where its bottom touches zero (with the finite-torus caveat exhibited)  --  Dhat range [-12, 0]; min spec at A=0 is 0; A=-1 nonsingular on the L=4 torus though inside the continuum band
+[PASS] R8 finite-volume corollary: at A = 0 solvability needs a zero-mean source, which a non-negative record density supplies only when empty  --  <1,rho> = 8 for uniform rho blocks solvability; of 81 non-negative sources enumerated, exactly 1 has zero sum
+==========================================================================
+8 PASS / 0 FAIL

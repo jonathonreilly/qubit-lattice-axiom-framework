@@ -368,3 +368,38 @@ paying anything.
 
 Second: the `kappa_EW`–`w` conditional correspondence, which is the one real
 linkage found among the normalization residuals.
+
+## Addendum, 23:34 — the self-consistency route checked and also not free
+
+The target recommended two sections above was checked before starting a cycle
+on it, and it does **not** discharge `A/B` for free either.
+
+**The idea.** Cycle 698 landed "the field is the marginal readout cost of a
+test record". If readout cost is nonnegative, then `phi = G rho` must be
+nonnegative for nonnegative sources, which constrains the Green's function of
+`L = A·I + B·Delta` — and since `Dhat` sweeps `[-12, 0]` continuously,
+invertibility alone already forces `A/B` outside `[0, 12]`. That would be a
+genuine constraint on `A/B` obtained with nothing supplied.
+
+**Why it fails.** It needs readout nonnegativity, and the Record axiom does not
+supply it. The axiom text is:
+
+> "For any finite collection of pairwise-disjoint records, scalar readout `I`
+> is additive, with `I(empty)=0`."
+
+Additivity and a zero at the empty collection — **no positivity**. So `I >= 0`
+is an import, and a conditional theorem resting on it is exactly the shape the
+gate rejected in cycle 705 (a real consequence of an imported premise, with the
+premise doing the work).
+
+Also relevant: the landed weak-field bridge gets `L^{-1} = G0` from
+`G0 = H^{-1}` for a **supplied** Hessian, so self-consistency as it currently
+exists on `main` is not free in the other direction either.
+
+**Updated scoreboard — five mechanisms checked against `A/B`, all negative:**
+the scale primitive, covariance, source-restriction by the neighbour rule,
+coarse-graining RG, and now field positivity via self-consistency. The first
+four are argued earlier in this handoff; the fifth is above.
+
+This is corollary exhaustion in the brief's sense, and it is why this campaign
+stopped rather than starting an eighth cycle.

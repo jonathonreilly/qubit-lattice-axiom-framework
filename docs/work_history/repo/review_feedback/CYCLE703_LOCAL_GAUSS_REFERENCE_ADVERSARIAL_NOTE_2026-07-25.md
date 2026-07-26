@@ -101,6 +101,8 @@ and periodic even `L=4`.
 For every case:
 
 - every `D_x` commutes with every local loop and Wilson row;
+- each `D_x` is a bounded Pauli word: weight 6 on the tested open-boundary
+  cells and weight 12 in the periodic bulk, independent of volume;
 - `product_x D_x` is the phase-free identity Pauli;
 - the rank increment is `N-1`;
 - deleting any one `D_x` leaves the rank unchanged;

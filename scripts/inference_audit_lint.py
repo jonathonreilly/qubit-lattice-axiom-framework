@@ -236,24 +236,32 @@ def check_direction(note: Path, ledger: str) -> list[Finding]:
         if not m:
             continue
         # a converse must be recorded somewhere in the ledger for this sentence
-        # Normalize BOTH sides identically. An earlier version normalized only
-        # the sentence and compared against a merely-lowercased ledger, so any
-        # anchor containing punctuation could never match and the check
-        # over-fired on correctly-ledgered claims.
-        def norm(t: str) -> str:
-            return " ".join(re.sub(r"[^a-z0-9 ]", " ", t.lower()).split())
+        # Coverage is content-word overlap against the ledger ROWS, not a
+        # prefix match. A prefix match is brittle whenever a sentence opens
+        # with an inline formula ("`G_0 = H^{-1}` does not exist and ...");
+        # the first six tokens are then punctuation debris and can never be
+        # found. Overlap asks the question that matters: does some ledger row
+        # actually talk about this claim?
+        def content(t: str) -> set:
+            words = re.sub(r"[^a-z0-9 ]", " ", t.lower()).split()
+            return {w for w in words if len(w) > 3}
 
-        key = norm(sent).split()
-        anchor = " ".join(key[:6])
-        if anchor and anchor not in norm(ledger):
-            out.append(
-                Finding(
-                    "DIRECTION",
-                    f"{note.name}:{lineno}",
-                    f'asserts "{m.group(0)}" but the claim ledger records no converse '
-                    f"for: \"{sent[:70]}...\"",
-                )
+        sent_words = content(sent)
+        covered = False
+        for row in ledger.splitlines():
+            if len(sent_words & content(row)) >= 4:
+                covered = True
+                break
+        if covered:
+            continue
+        out.append(
+            Finding(
+                "DIRECTION",
+                f"{note.name}:{lineno}",
+                f'asserts "{m.group(0)}" but no claim-ledger row covers '
+                f"it: \"{sent[:70]}...\"",
             )
+        )
     return out
 
 

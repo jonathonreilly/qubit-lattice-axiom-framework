@@ -1,0 +1,69 @@
+{
+  "cycle": 713,
+  "date": "2026-07-26",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "CYCLE713_PHYSICAL_M2_ENDPOINT_INSTRUMENT_BRIDGE_PASS",
+  "checks": {
+    "passed": 11,
+    "failed": 0
+  },
+  "result": {
+    "two_cell_source_columns": 4096,
+    "literal_seam_rows": 4096,
+    "maximum_EG_instrument_residual": 8.121767085755588e-16,
+    "maximum_norm_residual": 3.1086244689504383e-15,
+    "maximum_number_leakage": 0.0,
+    "held_three_cell_literal_rows": 289,
+    "held_complete_N_le_2_rows": 172,
+    "held_hostile_background_rows": 117,
+    "dirty_ancilla_rows_rejected": 3,
+    "delete_left_prewrite_maximum_residual": 1.414213562373096,
+    "delete_OR_Toffoli_maximum_residual": 1.4142135623730951,
+    "two_cell_assigned_M2": 42,
+    "two_cell_primitive_gates": 1400,
+    "two_cell_routed_gates": 17798,
+    "two_cell_maximum_route_distance": 24,
+    "two_cell_touched_M2": 503,
+    "two_cell_blank_route_work_M2": 461,
+    "two_cell_routed_word_sha256": "185fdb5270931877474ef720926bde016ff2fece03c1b8b58588e52e517d04f7",
+    "held_assigned_M2": 66,
+    "held_primitive_gates": 2165,
+    "held_routed_gates": 38829,
+    "held_maximum_route_distance": 40,
+    "held_touched_M2": 790,
+    "held_blank_route_work_M2": 724,
+    "held_routed_word_sha256": "a1040745b93c60bf766b369d1c344f0ee7b5d3cd1e747ba5d561edb1e76de210",
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "frame_or_product_failures": 0
+  },
+  "boundary": {
+    "positive_scope": "coherent matter-change opportunity pointer compiled into the complete two-cell physical-M2 matter word on the same state isometry, with held overlap and unchanged Cycle-704/610/612 interface checks",
+    "pointer_meaning": "candidate opportunity only; not occurrence, actuality, clock tick, Record, or probability",
+    "clean_domain": "three endpoint registers, code sectors, and routing workspace are supplied clean",
+    "program": "offline serial gate word and Manhattan route remain supplied circuit ordinals and are not physical time",
+    "autonomous_recurrence": false,
+    "constitutional_effect": "none",
+    "axiom_pressure": false
+  },
+  "artifacts": {
+    "note": {
+      "path": "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "8bcc51ca9241331d2ae9942e649b4ce5c6f12c54c7d9c40485067bc07636784c"
+    },
+    "runner": {
+      "path": "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+      "sha256": "c07d20edefcacff34b4d11f4eaad2ed93da18dae2d9bf6a8f98f2223e3e563ee"
+    },
+    "cache": {
+      "path": "logs/runner-cache/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.txt",
+      "sha256": "f9af30c9380d115010e80d48430eacce52a53df0bd7ddd1371431bde9bc7058d",
+      "input_fingerprint_sha256": "73a62f6633dba912b7b5b96a54673983902851333cbceddcba41a4c1df90b95a",
+      "elapsed_sec": 35.96,
+      "exit_code": 0,
+      "report_sha256": "efc3e01aa6af7995a0833f5a5dea157bdba567a9d0aad0078c02e5383b5b56c2"
+    }
+  }
+}

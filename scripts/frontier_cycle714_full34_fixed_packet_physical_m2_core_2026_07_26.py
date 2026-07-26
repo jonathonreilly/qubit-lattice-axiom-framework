@@ -22,7 +22,7 @@ NOTE_PATH = (
     "CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md"
 )
 AUDIT_INPUT_PATHS = (
-    NOTE_PATH,
+    "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md",
     "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
     "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
     "scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",

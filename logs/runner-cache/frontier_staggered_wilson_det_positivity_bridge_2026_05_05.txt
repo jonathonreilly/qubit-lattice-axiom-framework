@@ -1,118 +1,104 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py
-runner_sha256: 2fd8e75e893f059137fff521efb433d5d16c259545975f99e73114ff34037f95
+runner_sha256: 6b2ac42f1d11a1ddbaca181ae159da1e8cff403320c1d5bde713dee2ee3cdeba
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.44
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
-==============================================================================
 SUPPLIED-SURFACE STAGGERED + WILSON DET-POSITIVITY VERIFIER
-==============================================================================
 seed=42
 supplied surface: M_W = r * d * I (eps-commuting); mass = m * I
-            r = 1, d = 4 (4D); alpha = m + r * d = m + 4
-
+  r = 1, d = 4 (4D); alpha = m + r * d = m + 4
 Block decomposition: eps reorders sites so eps = diag(+I, -I).
 Then M = M_KS + alpha * I has eps-block form
-    [[ +alpha I, +K     ],
-     [ -K^dag,   +alpha I ]]
+  [[ +alpha I, +K ], [ -K^dag, +alpha I ]]
 Bridge: det(M) = prod_i (alpha^2 + sigma_i^2) > 0 unconditionally.
-
-
-=== L = 2, scale = 0.0 ===
+case cols: ldd=log_det_direct, ldb=log_det_bridge, dif=log_diff=|ldd-ldb|, sre/sim=Re/Im of slogdet sign
+L = 2, scale = 0.0
   [PASS] L=2: M_KS has zero diagonal eps-blocks (anticommutation {eps, M_KS} = 0)
-         max |diag block| = 0.000e+00
+    max |diag block| = 0.000e+00
   [PASS] L=2: M_KS lower-left block equals -K^dagger (anti-Hermiticity)
-         max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
-  m=0.10, alpha=4.10: log_det_direct=+67.727375, log_det_bridge=+67.727375, log_diff=8.53e-14, sign_real=+1.000, sign_imag=+0.00e+00
-  m=0.50, alpha=4.50: log_det_direct=+72.195715, log_det_bridge=+72.195715, log_diff=1.42e-14, sign_real=+1.000, sign_imag=+0.00e+00
-  m=1.00, alpha=5.00: log_det_direct=+77.253020, log_det_bridge=+77.253020, log_diff=7.11e-14, sign_real=+1.000, sign_imag=+0.00e+00
-  m=2.00, alpha=6.00: log_det_direct=+86.004455, log_det_bridge=+86.004455, log_diff=1.42e-14, sign_real=+1.000, sign_imag=+0.00e+00
-
-=== L = 2, scale = 0.5 ===
+    max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
+  m=0.10 alpha=4.10 ldd=+67.727375 ldb=+67.727375 dif=8.53e-14 sre=+1.000 sim=+0.00e+00
+  m=0.50 alpha=4.50 ldd=+72.195715 ldb=+72.195715 dif=1.42e-14 sre=+1.000 sim=+0.00e+00
+  m=1.00 alpha=5.00 ldd=+77.253020 ldb=+77.253020 dif=7.11e-14 sre=+1.000 sim=+0.00e+00
+  m=2.00 alpha=6.00 ldd=+86.004455 ldb=+86.004455 dif=1.42e-14 sre=+1.000 sim=+0.00e+00
+L = 2, scale = 0.5
   [PASS] L=2: M_KS has zero diagonal eps-blocks (anticommutation {eps, M_KS} = 0)
-         max |diag block| = 0.000e+00
+    max |diag block| = 0.000e+00
   [PASS] L=2: M_KS lower-left block equals -K^dagger (anti-Hermiticity)
-         max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
-  m=0.10, alpha=4.10: log_det_direct=+68.572458, log_det_bridge=+68.572458, log_diff=1.42e-14, sign_real=+1.000, sign_imag=+6.02e-19
-  m=0.50, alpha=4.50: log_det_direct=+72.901107, log_det_bridge=+72.901107, log_diff=1.42e-14, sign_real=+1.000, sign_imag=+6.13e-19
-  m=1.00, alpha=5.00: log_det_direct=+77.827347, log_det_bridge=+77.827347, log_diff=1.42e-14, sign_real=+1.000, sign_imag=+3.84e-18
-  m=2.00, alpha=6.00: log_det_direct=+86.406024, log_det_bridge=+86.406024, log_diff=1.42e-14, sign_real=+1.000, sign_imag=-5.18e-19
-
-=== L = 2, scale = 1.0 ===
+    max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
+  m=0.10 alpha=4.10 ldd=+68.572458 ldb=+68.572458 dif=1.42e-14 sre=+1.000 sim=+1.86e-18
+  m=0.50 alpha=4.50 ldd=+72.901107 ldb=+72.901107 dif=0.00e+00 sre=+1.000 sim=-1.37e-18
+  m=1.00 alpha=5.00 ldd=+77.827347 ldb=+77.827347 dif=1.42e-14 sre=+1.000 sim=+4.66e-18
+  m=2.00 alpha=6.00 ldd=+86.406024 ldb=+86.406024 dif=1.42e-14 sre=+1.000 sim=+8.87e-19
+L = 2, scale = 1.0
   [PASS] L=2: M_KS has zero diagonal eps-blocks (anticommutation {eps, M_KS} = 0)
-         max |diag block| = 0.000e+00
+    max |diag block| = 0.000e+00
   [PASS] L=2: M_KS lower-left block equals -K^dagger (anti-Hermiticity)
-         max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
-  m=0.10, alpha=4.10: log_det_direct=+69.736634, log_det_bridge=+69.736634, log_diff=1.42e-14, sign_real=+1.000, sign_imag=-2.92e-18
-  m=0.50, alpha=4.50: log_det_direct=+73.885182, log_det_bridge=+73.885182, log_diff=1.42e-14, sign_real=+1.000, sign_imag=+5.58e-18
-  m=1.00, alpha=5.00: log_det_direct=+78.638336, log_det_bridge=+78.638336, log_diff=0.00e+00, sign_real=+1.000, sign_imag=+1.23e-18
-  m=2.00, alpha=6.00: log_det_direct=+86.982430, log_det_bridge=+86.982430, log_diff=1.42e-14, sign_real=+1.000, sign_imag=+5.58e-18
-
-=== L = 4, scale = 0.0 ===
+    max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
+  m=0.10 alpha=4.10 ldd=+69.736634 ldb=+69.736634 dif=1.42e-14 sre=+1.000 sim=+4.49e-18
+  m=0.50 alpha=4.50 ldd=+73.885182 ldb=+73.885182 dif=1.42e-14 sre=+1.000 sim=-3.35e-18
+  m=1.00 alpha=5.00 ldd=+78.638336 ldb=+78.638336 dif=0.00e+00 sre=+1.000 sim=-4.12e-18
+  m=2.00 alpha=6.00 ldd=+86.982430 ldb=+86.982430 dif=1.42e-14 sre=+1.000 sim=+2.97e-19
+L = 4, scale = 0.0
   [PASS] L=4: M_KS has zero diagonal eps-blocks (anticommutation {eps, M_KS} = 0)
-         max |diag block| = 0.000e+00
+    max |diag block| = 0.000e+00
   [PASS] L=4: M_KS lower-left block equals -K^dagger (anti-Hermiticity)
-         max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
-  m=0.10, alpha=4.10: log_det_direct=+1126.260655, log_det_bridge=+1126.260655, log_diff=4.55e-13, sign_real=+1.000, sign_imag=+0.00e+00
-  m=0.50, alpha=4.50: log_det_direct=+1190.910518, log_det_bridge=+1190.910518, log_diff=0.00e+00, sign_real=+1.000, sign_imag=+0.00e+00
-  m=1.00, alpha=5.00: log_det_direct=+1265.337529, log_det_bridge=+1265.337529, log_diff=4.55e-13, sign_real=+1.000, sign_imag=+0.00e+00
-  m=2.00, alpha=6.00: log_det_direct=+1396.700006, log_det_bridge=+1396.700006, log_diff=9.09e-13, sign_real=+1.000, sign_imag=+0.00e+00
-
-=== L = 4, scale = 0.5 ===
+    max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
+  m=0.10 alpha=4.10 ldd=+1126.260655 ldb=+1126.260655 dif=4.55e-13 sre=+1.000 sim=+0.00e+00
+  m=0.50 alpha=4.50 ldd=+1190.910518 ldb=+1190.910518 dif=0.00e+00 sre=+1.000 sim=+0.00e+00
+  m=1.00 alpha=5.00 ldd=+1265.337529 ldb=+1265.337529 dif=4.55e-13 sre=+1.000 sim=+0.00e+00
+  m=2.00 alpha=6.00 ldd=+1396.700006 ldb=+1396.700006 dif=9.09e-13 sre=+1.000 sim=+0.00e+00
+L = 4, scale = 0.5
   [PASS] L=4: M_KS has zero diagonal eps-blocks (anticommutation {eps, M_KS} = 0)
-         max |diag block| = 0.000e+00
+    max |diag block| = 0.000e+00
   [PASS] L=4: M_KS lower-left block equals -K^dagger (anti-Hermiticity)
-         max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
-  m=0.10, alpha=4.10: log_det_direct=+1125.609416, log_det_bridge=+1125.609416, log_diff=9.09e-13, sign_real=+1.000, sign_imag=+1.27e-19
-  m=0.50, alpha=4.50: log_det_direct=+1190.442596, log_det_bridge=+1190.442596, log_diff=6.82e-13, sign_real=+1.000, sign_imag=+1.16e-16
-  m=1.00, alpha=5.00: log_det_direct=+1265.018022, log_det_bridge=+1265.018022, log_diff=2.27e-13, sign_real=+1.000, sign_imag=-1.17e-16
-  m=2.00, alpha=6.00: log_det_direct=+1396.537416, log_det_bridge=+1396.537416, log_diff=4.55e-13, sign_real=+1.000, sign_imag=-3.62e-17
-
-=== L = 4, scale = 1.0 ===
+    max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
+  m=0.10 alpha=4.10 ldd=+1125.609416 ldb=+1125.609416 dif=9.09e-13 sre=+1.000 sim=-2.81e-17
+  m=0.50 alpha=4.50 ldd=+1190.442596 ldb=+1190.442596 dif=6.82e-13 sre=+1.000 sim=+8.32e-17
+  m=1.00 alpha=5.00 ldd=+1265.018022 ldb=+1265.018022 dif=2.27e-13 sre=+1.000 sim=-8.69e-17
+  m=2.00 alpha=6.00 ldd=+1396.537416 ldb=+1396.537416 dif=4.55e-13 sre=+1.000 sim=-3.95e-17
+L = 4, scale = 1.0
   [PASS] L=4: M_KS has zero diagonal eps-blocks (anticommutation {eps, M_KS} = 0)
-         max |diag block| = 0.000e+00
+    max |diag block| = 0.000e+00
   [PASS] L=4: M_KS lower-left block equals -K^dagger (anti-Hermiticity)
-         max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
-  m=0.10, alpha=4.10: log_det_direct=+1125.029076, log_det_bridge=+1125.029076, log_diff=2.05e-12, sign_real=+1.000, sign_imag=+6.53e-17
-  m=0.50, alpha=4.50: log_det_direct=+1190.023277, log_det_bridge=+1190.023277, log_diff=1.36e-12, sign_real=+1.000, sign_imag=-7.81e-17
-  m=1.00, alpha=5.00: log_det_direct=+1264.730075, log_det_bridge=+1264.730075, log_diff=1.14e-12, sign_real=+1.000, sign_imag=-9.29e-17
-  m=2.00, alpha=6.00: log_det_direct=+1396.389684, log_det_bridge=+1396.389684, log_diff=2.27e-13, sign_real=+1.000, sign_imag=+7.81e-17
-
---- Bridge assertions ---
+    max |K_lower + K^dag| = 0.000e+00, alt-form |K_lower - (-K^dag)| = 0.000e+00
+  m=0.10 alpha=4.10 ldd=+1125.029076 ldb=+1125.029076 dif=1.82e-12 sre=+1.000 sim=+4.46e-17
+  m=0.50 alpha=4.50 ldd=+1190.023277 ldb=+1190.023277 dif=1.36e-12 sre=+1.000 sim=-6.79e-17
+  m=1.00 alpha=5.00 ldd=+1264.730075 ldb=+1264.730075 dif=1.14e-12 sre=+1.000 sim=-9.78e-17
+  m=2.00 alpha=6.00 ldd=+1396.389684 ldb=+1396.389684 dif=2.27e-13 sre=+1.000 sim=+7.25e-17
+Bridge assertions
   [PASS] balanced sublattice n_+ = n_- on L=2
-         n_+=24, n_-=24
+    n_+=24, n_-=24
   [PASS] balanced sublattice n_+ = n_- on L=2
-         n_+=24, n_-=24
+    n_+=24, n_-=24
   [PASS] balanced sublattice n_+ = n_- on L=2
-         n_+=24, n_-=24
+    n_+=24, n_-=24
   [PASS] balanced sublattice n_+ = n_- on L=4
-         n_+=384, n_-=384
+    n_+=384, n_-=384
   [PASS] balanced sublattice n_+ = n_- on L=4
-         n_+=384, n_-=384
+    n_+=384, n_-=384
   [PASS] balanced sublattice n_+ = n_- on L=4
-         n_+=384, n_-=384
+    n_+=384, n_-=384
   [PASS] every (L, scale, m) case has det(M) > 0
-         checked 24 (L, scale, m) configurations
+    checked 24 (L, scale, m) configurations
   [PASS] bridge factorisation det(M) = prod (alpha^2 + sigma_i^2) matches direct det
-         max log_diff over all cases = 2.05e-12 (tol 1e-7)
+    max log_diff over all cases = 1.82e-12 (tol 1e-7)
   [PASS] L=2 K block has n_+ = 24 singular values
-         got 24
+    got 24
   [PASS] L=2 K block has n_+ = 24 singular values
-         got 24
+    got 24
   [PASS] L=2 K block has n_+ = 24 singular values
-         got 24
+    got 24
   [PASS] L=4 K block has n_+ = 384 singular values
-         got 384
+    got 384
   [PASS] L=4 K block has n_+ = 384 singular values
-         got 384
+    got 384
   [PASS] L=4 K block has n_+ = 384 singular values
-         got 384
-
-==============================================================================
+    got 384
 SUMMARY: PASS=26 FAIL=0
-==============================================================================
 
 ----- stderr -----
 

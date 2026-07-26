@@ -633,6 +633,74 @@ def l2_record_factorization_certificate() -> dict[str, object]:
             not physical.commutes(row) for row in triangles + coarse
         )
 
+    # Uniform-amplitude discriminator.  Choose 113 independent check rows and
+    # one phase-zero pure-Z correction for each row.  Injectivity of the X
+    # projection proves that every nonidentity product has zero expectation in
+    # |0_Z>; full rank of the correction/check anticommutation matrix proves
+    # that all 2^113 syndrome characters occur.  Neither conclusion uses the
+    # disjoint physical/record register typing census below.
+    independent_checks = (
+        triangles + ordered_coarse[:5] + tuple(row for row, _ in bonds_with_key)
+    )
+    triangle_corrections: list[base.Pauli] = []
+    for cell in graph.cells:
+        for column in triangle_decoder:
+            z = 0
+            for local_edge, (source, target, _, _) in enumerate(one_cell.edges):
+                if (column >> local_edge) & 1:
+                    source_mode = one_cell.vertices[source][1]
+                    target_mode = one_cell.vertices[target][1]
+                    source_vertex = graph.vertex_index[(cell, source_mode)]
+                    target_vertex = graph.vertex_index[(cell, target_mode)]
+                    z ^= 1 << graph.edge_between(source_vertex, target_vertex)
+            triangle_corrections.append(base.Pauli(z=z))
+    coarse_corrections = tuple(
+        physical_coarse_z(
+            graph,
+            geometry,
+            echo_ack_decode(2, (1 << index) | (1 << 5))["correction"],
+        )
+        for index in range(5)
+    )
+    bond_corrections = tuple(
+        base.Pauli(z=1 << graph.cross_edge[(cell, axis, 1)])
+        for _, (cell, axis) in bonds_with_key
+    )
+    independent_corrections = (
+        tuple(triangle_corrections) + coarse_corrections + bond_corrections
+    )
+    pairing_rows = tuple(
+        sum(
+            int(not correction.commutes(check)) << check_index
+            for check_index, check in enumerate(independent_checks)
+        )
+        for correction in independent_corrections
+    )
+    independent_x_rank = base.gf2_rank(row.x for row in independent_checks)
+    all_check_x_rank = base.gf2_rank(
+        row.x for row in triangles + ordered_coarse + bonds
+    )
+    pairing_rank = base.gf2_rank(pairing_rows)
+    pairing_diagonal_failures = sum(
+        ((row >> index) & 1) != 1 for index, row in enumerate(pairing_rows)
+    )
+    pairing_prior_stage_failures = sum(
+        (row & ((1 << index) - 1)).bit_count()
+        for index, row in enumerate(pairing_rows)
+    )
+    independent_correction_phase_or_x_failures = sum(
+        correction.phase != 0 or correction.x != 0
+        for correction in independent_corrections
+    )
+    independent_check_commutator_failures = sum(
+        not left.commutes(right)
+        for index, left in enumerate(independent_checks)
+        for right in independent_checks[index + 1 :]
+    )
+    independent_check_phase_failures = base.stabilizer_phase_failures(
+        list(independent_checks), qubits
+    )
+
     record_rows = record_stabilizers_l2()
     record_qubits = 114
     record_rank = base.gf2_rank(
@@ -654,8 +722,10 @@ def l2_record_factorization_certificate() -> dict[str, object]:
         + tuple(graph.B(vertex) for vertex in range(len(graph.vertices)))
     )
 
-    # Physical and record tableaux occupy disjoint registers, so every later
-    # physical Pauli/update term commutes with the immutable record sector.
+    # Type-separation census only: physical and record tableaux occupy
+    # disjoint registers, so these commutators are true by construction.  This
+    # checks that the later-update interface was typed onto the physical edge
+    # register; it is not evidence for the factorization proved above.
     physical_update_rows = tuple(
         row
         for edge in range(qubits)
@@ -664,7 +734,7 @@ def l2_record_factorization_certificate() -> dict[str, object]:
             base.Pauli(z=1 << edge),
         )
     )
-    cross_register_commutator_failures = 0
+    type_separation_commutator_failures = 0
     for physical in physical_update_rows:
         physical_combined = base.Pauli(
             physical.phase, physical.x, physical.z
@@ -675,7 +745,7 @@ def l2_record_factorization_certificate() -> dict[str, object]:
                 record.x << qubits,
                 record.z << qubits,
             )
-            cross_register_commutator_failures += not physical_combined.commutes(
+            type_separation_commutator_failures += not physical_combined.commutes(
                 record_combined
             )
 
@@ -709,6 +779,36 @@ def l2_record_factorization_certificate() -> dict[str, object]:
         "lawful_full_record_support_count": f"2^{rank_all}",
         "common_record_amplitude": f"2^(-{rank_all}/2)",
         "nonzero_record_amplitude_phase": 0,
+        "uniform_amplitude_discriminator": {
+            "independent_check_rows": len(independent_checks),
+            "all_measured_check_rows": len(triangles + ordered_coarse + bonds),
+            "independent_X_part_rank": independent_x_rank,
+            "all_check_X_part_rank": all_check_x_rank,
+            "nonidentity_independent_products_with_possible_nonzero_Z_vacuum_expectation": (
+                0 if independent_x_rank == len(independent_checks) else "not excluded"
+            ),
+            "independent_phase_zero_Z_corrections": len(independent_corrections),
+            "correction_check_anticommutation_rank": pairing_rank,
+            "pairing_diagonal_failures": pairing_diagonal_failures,
+            "pairing_prior_stage_failures": pairing_prior_stage_failures,
+            "correction_phase_or_X_failures": (
+                independent_correction_phase_or_x_failures
+            ),
+            "independent_check_commutator_failures": (
+                independent_check_commutator_failures
+            ),
+            "independent_check_stabilizer_phase_failures": (
+                independent_check_phase_failures
+            ),
+            "dependent_relation_count": len(triangles + ordered_coarse + bonds)
+            - len(independent_checks),
+            "dependent_relation_phase_failures": relation_phase_failures,
+            "meaning": (
+                "X-projection injectivity makes every nonidentity independent "
+                "check product off-diagonal on |0_Z>; the full-rank phase-zero "
+                "Z-correction pairing realizes every syndrome character"
+            ),
+        },
         "record_stabilizer_rows": len(record_rows),
         "record_stabilizer_rank": record_rank,
         "record_stabilizer_phase_failures": record_phase_failures,
@@ -719,10 +819,10 @@ def l2_record_factorization_certificate() -> dict[str, object]:
         "code_edge_reduced_purity": 1.0,
         "record_reduced_purity": 1.0,
         "code_record_Schmidt_rank": 1,
-        "cross_register_update_commutator_failures": (
-            cross_register_commutator_failures
+        "type_separation_physical_record_commutator_failures": (
+            type_separation_commutator_failures
         ),
-        "complete_physical_Pauli_basis_rows_checked_against_record": (
+        "type_separation_physical_Pauli_basis_rows": (
             len(physical_update_rows)
         ),
         "fixed_record_state": (
@@ -850,11 +950,31 @@ def main() -> None:
         "bond_previous_stage_commutator_failures",
         "record_stabilizer_phase_failures",
         "record_stabilizer_commutator_failures",
-        "cross_register_update_commutator_failures",
+        "type_separation_physical_record_commutator_failures",
     )
     assert all(factorization[key] == 0 for key in required_factor_zero)
     assert factorization["stage_rank_increments"] == (96, 5, 12)
     assert factorization["total_independent_syndrome_exponent"] == 113
+    uniform = factorization["uniform_amplitude_discriminator"]
+    assert uniform["independent_check_rows"] == 113
+    assert uniform["all_measured_check_rows"] == 114
+    assert uniform["independent_X_part_rank"] == 113
+    assert uniform["all_check_X_part_rank"] == 113
+    assert uniform[
+        "nonidentity_independent_products_with_possible_nonzero_Z_vacuum_expectation"
+    ] == 0
+    assert uniform["independent_phase_zero_Z_corrections"] == 113
+    assert uniform["correction_check_anticommutation_rank"] == 113
+    uniform_zero = (
+        "pairing_diagonal_failures",
+        "pairing_prior_stage_failures",
+        "correction_phase_or_X_failures",
+        "independent_check_commutator_failures",
+        "independent_check_stabilizer_phase_failures",
+        "dependent_relation_phase_failures",
+    )
+    assert all(uniform[key] == 0 for key in uniform_zero)
+    assert uniform["dependent_relation_count"] == 1
     assert factorization["record_stabilizer_rank"] == 114
     assert factorization["physical_vacuum_rank"] == 168
     assert factorization["factor_product_tableau_rank"] == 282

@@ -158,6 +158,6 @@ Expected terminal:
 LOCAL_GAUSS_ENDPOINT_PACKET_INTERTWINER_CLOSED_OCCURRENCE_RECORD_UNIT_PREPARATION_OPEN
 ```
 
-The retained run passed 6 checks, failed 0, used 97.28125 MB peak RSS, and
-took 1.1631524171680212 seconds.  Certificate SHA-256:
+The retained canonical replay passed 6 checks, failed 0, used 94.390625 MB
+peak RSS, and took 1.1022878328803927 seconds.  Certificate SHA-256:
 `357091195c097d1c7cf25465b5243a05b456990f7f0f1509eb5469dd9466022b`.

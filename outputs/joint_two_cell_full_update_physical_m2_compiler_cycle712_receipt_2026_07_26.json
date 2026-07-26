@@ -1,0 +1,83 @@
+{
+  "cycle": 712,
+  "date": "2026-07-26",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "CYCLE712_TWO_CELL_JOINT_E_FREE_SEAM_CONTACT_PHYSICAL_M2_PASS",
+  "primary_checks": {
+    "passed": 11,
+    "failed": 0
+  },
+  "independent_checks": {
+    "passed": 8,
+    "failed": 0,
+    "status": "CYCLE712_JOINT_TWO_CELL_FULL_UPDATE_INDEPENDENT_CHECK_PASS"
+  },
+  "result": {
+    "two_cell_logical_dimension": 4096,
+    "two_cell_abstract_qubits": 38,
+    "two_cell_stabilizer_rank": 26,
+    "two_cell_literal_M2": 39,
+    "combined_N_le_2_EG_residual": 6.251918067842639e-15,
+    "primary_full_domain_maximum_active_column_residual": 2.526252967680787e-15,
+    "independent_exhaustive_4096_column_EG_residual": 5.566705740848049e-16,
+    "independent_update_digest_13dp": "c2778e0cda9eefd0a417724c702fbf704a2b38af5ae58dffd312301f7f6aa612",
+    "one_particle_mass_residual": 5.551115123125783e-17,
+    "direct_primitives": 1375,
+    "direct_routed_nearest_neighbor_gates": 17709,
+    "direct_maximum_route_distance": 24,
+    "direct_routing_failures": 0,
+    "held_three_cell_logical_dimension": 262144,
+    "held_three_cell_combined_N_le_2_EG_residual": 9.46085985276513e-15,
+    "held_three_cell_routed_nearest_neighbor_gates": 38651,
+    "held_three_cell_routing_failures": 0,
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "chart_failures": 0,
+    "single_nonadjacent_tensor_FSWAP_primary_residual": 5.656854249492381,
+    "single_nonadjacent_tensor_FSWAP_independent_false_columns": 1024,
+    "single_nonadjacent_tensor_FSWAP_independent_maximum_residual": 2.0
+  },
+  "boundary": {
+    "positive_scope": "fixed-program two-cell joint state isometry and free-plus-internal-seam-plus-contact physical update, with a no-refit held three-cell/two-seam case",
+    "full_domain_method": "primary sector-complete factor proof plus independent exhaustive 4096-column creator-wedge comparison",
+    "program_order": "supplied offline serial circuit ordinal; not physical time",
+    "code_genesis": "stabilizer, rail, repetition, blank-work preparation and enforcement remain supplied",
+    "exterior_streams": "not closed beyond tested internal bonds",
+    "active_local_coframes": "independently stored overlapping coframes and relation-tag control remain open",
+    "autonomous_recurrence": false,
+    "constitutional_effect": "none",
+    "axiom_pressure": false
+  },
+  "artifacts": {
+    "note": {
+      "path": "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "e1ec50cf2c194281a8cbad68c54a5e4c5dfa11c2f852557371fade18d43f5444"
+    },
+    "primary_runner": {
+      "path": "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+      "sha256": "4eace2b325dd1c601d6c8cd28b2acc2728e015ab717869639ea8fbf76d261c76"
+    },
+    "primary_cache": {
+      "path": "logs/runner-cache/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.txt",
+      "sha256": "9ddfaaa2fbdbb948513200d57b2a076b16c601f84c66d18a5a4ac46c60c92800",
+      "input_fingerprint_sha256": "2780ed1f4b821d547598c855255ca2aa40c7344b37d8468fc34a75a44623d08d",
+      "elapsed_sec": 25.62,
+      "exit_code": 0,
+      "report_sha256": "75d00f7b778f09e19a54be911f661a2a2f699869e79794e319306c4f75002de9"
+    },
+    "independent_runner": {
+      "path": "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+      "sha256": "70de0f729f0fa3cc5181a7e43c50ffb989dd926b396b3c1a06e5ac1138088efb"
+    },
+    "independent_cache": {
+      "path": "logs/runner-cache/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.txt",
+      "sha256": "362417c5727dbf27ada2a7115b617549e621371ec3102ec8c92f20d6ef7ee417",
+      "input_fingerprint_sha256": "39841b3a784f6092b567553071d40985edf0cb7f7c15bfb6595a26acca830a96",
+      "elapsed_sec": 5.50,
+      "exit_code": 0,
+      "report_sha256": "8f658f37569ebbdf21c57d828505dd97a24ba41d6f23cd7c01ac3cac054c5f33"
+    }
+  }
+}

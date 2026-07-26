@@ -4,7 +4,7 @@
   "authority": "none",
   "audit": "unset",
   "status": "supplied_order_open_box_local_signed_clifford_and_literal_nn_m2_compiler_closed_order_gauge_full_box_covariance_parallel_recurrence_and_genesis_open",
-  "tests_passed": 21,
+  "tests_passed": 22,
   "tests_failed": 0,
   "route_independent_obstruction": false,
   "axiom_pressure": false,
@@ -44,6 +44,13 @@
     "overlap_mapping_failures": 0,
     "Cycle708_endpoint_rows": 36,
     "Cycle708_endpoint_regression_failures": 0,
+    "Cycle219_one_particle_mass": 0.45340565417488515,
+    "Cycle219_mass_fixture": 0.4534056541748851,
+    "Cycle219_mass_residual": 5.551115123125783e-17,
+    "Cycle219_coin_eigen_residual": 2.594441202963249e-16,
+    "Cycle230_contact_coupling": 0.37,
+    "Cycle230_contact_vacuum_one_particle_residual": 0.0,
+    "Cycle230_contact_double_occupation_phase_residual": 0.0,
     "literal_placement_formula": "18*N_cells+3*N_seams<=27*N_cells",
     "placement_collisions_on_five_boxes": 0,
     "four_by_two_by_two_collinear_cleanup_edges": 4,
@@ -128,16 +135,24 @@
     {
       "path": "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
       "sha256": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b"
+    },
+    {
+      "path": "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+      "sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a"
+    },
+    {
+      "path": "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+      "sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae"
     }
   ],
   "artifacts": [
     {
       "path": "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
-      "sha256": "f9afa05025210774561d9956f3d8243ba0c019ca90eddd2f894cd1ea14c75d5c"
+      "sha256": "72bfa1ce92bb7021988500732ccd2f54f02fd50381364da852fd639d23b6ec7a"
     },
     {
       "path": "scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
-      "sha256": "08cade9e1ad83132b3fbdb5a2533422951e31a2654e552b25fd6b30f8862b174"
+      "sha256": "64f73efb404f2acacb1a4e5e392aa8c6ac139eafb3e5f05380af9a3b3cc91826"
     },
     {
       "path": "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
@@ -149,7 +164,7 @@
     },
     {
       "path": "logs/runner-cache/frontier_cycle709_local_seam_clifford_2026_07_26.txt",
-      "sha256": "43bf39a39066a60d627d943d7a8b6349e4512bd3c4d9aa7f4b34099141d5cd82"
+      "sha256": "8efe4a924dc651697bc5a4212299582cca9197d603fbbd9e30a2dc64d05e1382"
     }
   ],
   "independent_reconstruction": {
@@ -159,11 +174,19 @@
     "repository_dependency": false
   },
   "regressions": {
-    "mass_contact_terminal": "ACTUAL_59941_ROW_GAUGE_CORRECTED_CAR_COMPILER_CLOSED",
-    "mass_contact_stdout_sha256": "22e794b02d9cf97042052641e77476ec3de9106a96ece9ba6990dbce15df3b93",
+    "mass_contact_primary_runner_check": "the primary runner re-executes the Cycle219 one-particle mass fixture and Cycle230 local contact controls",
+    "Cycle219_one_particle_mass": 0.45340565417488515,
+    "Cycle219_mass_fixture": 0.4534056541748851,
+    "Cycle219_mass_residual": 5.551115123125783e-17,
+    "Cycle219_coin_eigen_residual": 2.594441202963249e-16,
+    "Cycle230_contact_coupling": 0.37,
+    "Cycle230_contact_vacuum_one_particle_residual": 0.0,
+    "Cycle230_contact_double_occupation_phase_residual": 0.0,
+    "Cycle219_runner_sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "Cycle230_runner_sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
     "Cycle708_terminal": "CYCLE708_PHYSICAL_ENDPOINT_CUBE_CERTIFICATE",
     "Cycle708_stdout_sha256": "a44d2731444b4fbb68355406546d93a0e02cba341bfafd26bde409949cdf575a",
-    "packaged": false
+    "packaged": true
   },
   "terminal": "CYCLE709_LOCAL_SEAM_PHYSICAL_M2_BOUNDED_COMPILER_PASS"
 }

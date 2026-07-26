@@ -1,4 +1,4 @@
-# Both operator discriminators in the self-consistency Poisson note are artifacts, under the parent note's own parameters and its own decay diagnostic
+# The attractiveness comparison and the 0.93 correlation in the self-consistency Poisson note are both empty discriminators, under the parent note's own parameters and its own decay diagnostic
 
 **Type:** demotion packet
 **Claim type:** `no_go` for the two named discriminators, scoped to the tested construction
@@ -23,7 +23,7 @@ bare_retained_allowed: false
 ```
 
 Runner: `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py`
-(15 PASS / 0 FAIL)
+(16 PASS / 0 FAIL)
 
 ## What the parent row asked for
 
@@ -151,15 +151,32 @@ rerunning with the parent note's own parameters and its own `beta` diagnostic
 
 All four are positive throughout the interior after normalization, not merely at
 the source (R12), so the source-point sign read the parent note uses carries no
-content beyond the convention. What survives as a genuine discriminator is the
-decay exponent alone — and on that, Poisson ranks **third of four** at both
-lattice sizes, behind biharmonic and the `1/r^2` kernel.
+content beyond the convention. The only candidate discriminator left is the decay
+exponent, and on that Poisson ranks third of four at both lattice sizes.
+
+**This cycle does not conclude that biharmonic is the better operator, and R16
+refuses that reading.** Two facts forbid it:
+
+- The `beta` power-law fits are of uneven quality and **biharmonic's is the worst
+  of the four** (`R^2 = 0.8556`, against `0.9240` for Poisson and `0.9855` for the
+  `1/r^2` kernel). Its `beta` is the least trustworthy number in the table.
+- The gap in `abs(beta-1)` between biharmonic and Poisson is `0.156`, which is
+  **smaller than the finite-size shift the parent note itself documents** —
+  Poisson's `beta = 1.28` at N=20 extrapolating to `1.0` in the continuum, a
+  shift of `0.28`.
+
+So the supported statement is the weaker and more robust one: **the `beta`
+comparison does not favour Poisson, and it does not establish any operator in
+this family as best at any tested lattice size.** That is enough to remove the
+parent note's stated ground for Bounded Claim 1 — "the only tested one that stays
+close to the Newtonian target" — because three of the four sit within the
+finite-size budget of that target. The discriminator is empty, not reversed.
 
 ## Claim ledger
 
 | ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |
 |---|---|---|---|---|---|
-| **thesis** | Both operator discriminators the parent note reports — the attractiveness comparison and the 0.93 shape correlation — are artifacts on its own tested construction: the density response kernel is sign-indefinite where the inverse Dirichlet Laplacian is single-signed, and the operator ranking inverts once the source sign is normalized per operator. | R2, R3, R4, R10, R11, R12 | Tested construction, parameters, and lattice sizes as stated in each row **[satisfied]**; the parent note's own `beta` diagnostic as the decay measure **[supplied]**; Dirichlet boundary conditions **[satisfied]** | Shown: on this construction `K` is sign-indefinite and no scalar matches it to `G`, and the sign-normalized `beta` ranking places Poisson third at N=20 and N=24. Claimed: the two discriminators are artifacts of this construction. Not claimed: that the field equation of the lane is not Poisson, nor anything about the continuum limit. | `K` single-signed at any tested site, or Poisson ranking first under sign normalization at either lattice size |
+| **thesis** | The two discriminators the parent note reports as favouring Poisson — the attractiveness comparison and the 0.93 shape correlation — are both empty on its own tested construction: the density response kernel is sign-indefinite where the inverse Dirichlet Laplacian is single-signed, and after per-operator source-sign normalization all four operators are attractive and monotone with the decay comparison not favouring Poisson. | R2, R3, R4, R9, R10, R11, R12, R16 | Tested construction, parameters, and lattice sizes as stated in each row **[satisfied]**; the parent note's own `beta` diagnostic as the decay measure **[supplied]**; Pearson correlation as the shape statistic, which is the parent note's choice **[supplied]**; Dirichlet boundary conditions **[satisfied]** | Shown: `K` is sign-indefinite and no scalar matches it to `G`; the 0.93 threshold admits every exponent up to 4.57; all four operators are attractive and monotone throughout the interior after normalization; the `beta` comparison places Poisson third, though within the finite-size budget and with uneven fit quality (R16). Claimed: both discriminators are empty. Not claimed: that any rival operator is better, that the field equation of the lane is not Poisson, or anything about the continuum limit. | `K` single-signed at any tested site, a rival remaining non-attractive after normalization, or Poisson ranking first under sign normalization at either lattice size |
 | L1 | The inverse Dirichlet graph Laplacian is single-signed on the interior at N=10 and N=12. | R2 | Dirichlet boundary conditions on a connected cubic interior **[satisfied]** | Shown: `frac(G>0) = 1.000000`, `min abs(G) > 0` at both sizes. Claimed: the same. | any interior sign change or exact zero |
 | L2 | The response kernel `d rho / d phi(y)` is sign-indefinite at the three tested perturbation sites, N=10. | R3 | Single-site perturbation, `delta_phi = 1e-3` **[supplied]**; N=10, k=5.0 **[satisfied]** | Shown: both sign fractions exceed 5% at all three sites. Claimed: the same, at those sites and that size. | either sign fraction below 5% |
 | L3 | No scalar `c` makes `K = c*G` at the tested sites. | R4 (least-squares `c`, residual > 0.9), L1, L2 | Dirichlet boundary conditions on a connected cubic interior **[satisfied]**; single-site perturbation at `delta_phi = 1e-3` **[supplied]**; N=10 and k=5.0 **[satisfied]**; least squares as the matching criterion **[supplied]** | Shown: best-fit residual `0.9987..0.9996`, `corr` in `[-0.058, -0.031]`. Claimed: no scalar match at these sites. Not claimed: that no operator-valued relation exists between them. | a small residual at any tested site |
@@ -168,10 +185,11 @@ lattice sizes, behind biharmonic and the `1/r^2` kernel.
 | L6 | Per-layer mass is exactly `1/N` independent of `phi`, so the parent statistic's absolute value is load-bearing. | R7 | five distinct fields including uniform and large-amplitude random **[supplied]** | Shown: `max abs(layer mass - 1/N) < 2.8e-17` for all five; signed response sum `4.2e-17` against absolute sum `5.2e-2`. Claimed: the same. | layer mass varying with `phi`, or a nonzero signed sum |
 | L7 | On the parent note's own radii, its 0.93 statistic coexists with a 10.7-fold shape disagreement and does not exclude exponents up to 4.57. | R8, R9 | the parent note's radius set 1..7 at N=20 **[satisfied]**; Pearson correlation as the statistic, which is the parent note's choice **[supplied]** | Shown: `corr = 0.920` with slopes `-2.242` vs `-1.567` and ratio spread `10.7x`; threshold band extends to `p = 4.57`. Claimed: the statistic has no discriminating power across the parent note's own tested exponents. Not claimed: that `chi` and `G` are unrelated. | a near-constant `chi/G` ratio, or a band excluding 2.805 |
 | L8 | Poisson's fundamental solution has the opposite sign to all three rivals, and the parent runner feeds all four the same source sign. | R10, parent runner line 296 | unit positive point source **[satisfied]** | Shown: signs `-1` for Poisson, `+1` for biharmonic, local, `1/r^2`. Claimed: the attractiveness column's content is this one bit. | the signs agreeing |
-| L9 | Under per-operator sign normalization, Poisson ranks third of four by `abs(beta-1)` at N=20 and N=24. | R11, R12 | the parent note's parameters `k=5.0, G=0.5, sigma=2.0, mixing=0.3, tol=1e-4, max_iter=30` **[supplied]**; the parent note's `check_field_physics` `beta` diagnostic **[supplied]**; four operators feasible at these sizes **[satisfied]** | Shown: biharmonic `0.876/0.867`, `1/r^2` `1.211/1.242`, Poisson `1.280/1.286`, all attractive and monotone. Claimed: Poisson is not the best operator in the tested family at these sizes. Not claimed: a continuum-limit ranking; the parent note ran its continuum extrapolation for Poisson only. | Poisson ranking first at either size |
+| L9 | Under per-operator sign normalization the `beta` comparison does not favour Poisson: it ranks third of four at N=20 and N=24, and no operator in the family is established as best. | R11, R12, R15, R16 | the parent note's parameters `k=5.0, G=0.5, sigma=2.0, mixing=0.3, tol=1e-4, max_iter=30` **[supplied]**; the parent note's `check_field_physics` `beta` diagnostic **[supplied]**; four operators feasible at these sizes **[satisfied]** | Shown: biharmonic `0.876/0.867`, `1/r^2` `1.211/1.242`, Poisson `1.280/1.286`, all attractive and monotone; ordering stable under amplitude matching (R15); but biharmonic's fit is the worst of the four and the gap is inside the finite-size shift (R16). Claimed: the comparison does not favour Poisson, so the parent note's stated ground for Bounded Claim 1 is removed. Not claimed: that biharmonic or any rival is the better operator, nor any continuum-limit ranking. | Poisson ranking first at either size, or the ranking gap exceeding the finite-size shift |
 | L10 | The screened-Poisson family shares Poisson's definiteness, so the parent note's Test 4 is unaffected. | R13 | `mu^2 >= 0` **[satisfied]** | Shown: `max eig(Laplacian - mu^2 I) < 0` for all six tested `mu^2`. Claimed: the sign defect does not reach Test 4. | a nonnegative eigenvalue |
 | L11 | The tested biharmonic rival is positivity-preserving by construction, so a mediator-positivity requirement cannot exclude it either. | R14 | the parent runner's biharmonic is `A @ A`, the square of the Dirichlet Laplacian, not the clamped-plate operator **[satisfied]**; N=10 **[satisfied]** | Shown: `Delta_D^-1` entrywise single-signed, `(A@A)^-1 = (A^-1)^2` to `1.2e-15`, `(A@A)^-1` entrywise positive. Claimed: no positivity discriminator separates the tested biharmonic from Poisson. Not claimed: that clamped-plate biharmonic is positivity-preserving; it is not. | a sign change in the tested biharmonic Green's function |
 | L12 | The R11 ranking is not an amplitude artifact: `beta` is amplitude-independent per operator and the ranking is unchanged at matched converged amplitude. | R15 | coupling `G` swept over `[0.05, 4.0]`, an 80-fold range **[supplied]**; N=20 **[satisfied]**; matched on converged `max abs(phi)` **[supplied]** | Shown: `beta` spread at most `0.0229` per operator across the sweep; at matched amplitude the order is biharmonic, `1/r^2`, poisson, local, with Poisson third. Claimed: the ranking is a property of operator shape, not of field strength. Not claimed: that `beta` is exactly amplitude-independent, only that it varies by less than the gaps between operators. | `beta` varying appreciably with `G`, or Poisson ranking first at matched amplitude |
+| L13 | The `beta` ranking does not establish a better operator: biharmonic's fit is the worst of the four and the ranking gap is inside the parent note's own finite-size shift. | R16 | N=20 **[satisfied]**; the parent note's documented continuum extrapolation `beta: 1.28 -> 1.0` for Poisson as the finite-size scale **[supplied]** | Shown: fit `R^2` of `0.8556` (biharmonic), `0.9240` (poisson), `0.9855` (`1/r^2`), `0.8889` (local); gap `0.156` against a finite-size shift of `0.280`. Claimed: the stronger reading of R11 is unsupported. Not claimed: that the ranking is wrong as arithmetic; it is reported and is stable (R15). | biharmonic having the best fit, or the gap exceeding the finite-size shift |
 
 ## Scope, and what this cycle does not claim
 
@@ -187,6 +205,8 @@ lattice sizes, behind biharmonic and the `1/r^2` kernel.
   extrapolation was run for Poisson only, so no tested lattice size supports
   the tested-family preference it claims.
 - L4 is a seven-point grid in `k`, not a statement about all `k`.
+- L9 is explicitly not a claim that any rival operator is better. R16 states the
+  two reasons that reading is unsupported, and this cycle takes the weaker one.
 - Measured but not claimed: the parent note's "linear response regime" caveat
   holds. The statistic `sum|rho_p - rho_0|` scales as `delta_phi^1.124` over
   `delta_phi` in `[0.0125, 0.2]` at `r = 3`, N=12 — approximately linear. This
@@ -278,8 +298,11 @@ or any audit-lane surface.
 
 - **Bounded Claim 1** — "unscreened Poisson is the best-supported operator in
   the tested family and the only tested one that stays close to the Newtonian
-  target": not supported at N=20 or N=24 under per-operator sign normalization
-  (L9). Narrow to the screened family, where R13 leaves it intact.
+  target": its stated ground does not survive per-operator sign normalization at
+  N=20 or N=24 (L9), because three of four operators sit within the finite-size
+  budget of the target and the attractiveness half of the ground is empty. This
+  is not a finding that a rival is better (L13). Narrow to the screened family,
+  where R13 leaves it intact.
 - **Bounded Claim 2** — Poisson "preferred over biharmonic, local,
   random-kernel, and screened variants": the preference over biharmonic and the
   `1/r^2` kernel is a source-sign convention (L8, L9). The preference over

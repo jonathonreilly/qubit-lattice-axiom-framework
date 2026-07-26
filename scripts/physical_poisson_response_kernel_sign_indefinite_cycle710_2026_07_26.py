@@ -451,8 +451,8 @@ for Nsz, rows in r11.items():
                      f"frac(phi>0)={r['fpos']:.4f}")
     poisson_rank[Nsz] = [n for n, _ in order].index("poisson") + 1
 check(
-    "R11 under per-operator sign normalization Poisson is not the best "
-    "operator in the tested family: it ranks third at both lattice sizes",
+    "R11 under per-operator sign normalization the beta comparison does not "
+    "favour Poisson: it ranks third at both lattice sizes",
     all(rk == 3 for rk in poisson_rank.values()),
     "\n".join(lines) + "\n"
     f"Poisson's rank by |beta - 1| among attractive+monotone operators: "
@@ -462,7 +462,8 @@ check(
     "that stays close to the\nNewtonian target'. At the parent note's own "
     "working point, with its own beta\ndiagnostic, and with the source sign "
     "normalized per operator as the re-audit\nnote asks, biharmonic and the "
-    "1/r^2 kernel both land closer to beta = 1.\n"
+    "1/r^2 kernel both land closer to beta = 1. R16 refuses\nthe stronger "
+    "reading that either is therefore the better operator.\n"
     "falsifier: Poisson ranking first at either size.",
 )
 check(
@@ -597,8 +598,8 @@ for name, rows in sweep.items():
 matched_order = sorted(matched.items(), key=lambda t: abs(t[1][2] - 1.0))
 matched_rank = [n for n, _ in matched_order].index("poisson") + 1
 check(
-    "R15 the R11 ranking is not an amplitude artifact: beta is amplitude-"
-    "independent per operator, and the ranking is unchanged at matched amplitude",
+    "R15 the R11 ordering is not an amplitude artifact: beta is amplitude-"
+    "independent per operator, and the ordering is unchanged at matched amplitude",
     all(hi - lo < 0.05 for lo, hi in spreads.values()) and matched_rank == 3,
     "beta range across an 80x sweep in the coupling G, per operator:\n"
     + "\n".join(f"  {n:11s} beta in [{lo:.4f}, {hi:.4f}]  spread {hi-lo:.4f}"
@@ -618,6 +619,52 @@ check(
     "operator at a different effective amplitude.\n"
     "falsifier: beta varying appreciably with G, or Poisson ranking first once\n"
     "amplitudes are matched.",
+)
+
+
+# --- R16 -------------------------------------------------------------------
+# Refuses an over-reading of R11/R15. The ranking is real as data, but two facts
+# forbid concluding that biharmonic is the better operator:
+#   (a) the beta power-law fits are of uneven quality, and biharmonic's is the
+#       WORST of the four, so its beta is the least trustworthy number in the
+#       table;
+#   (b) the parent note documents beta -> 1.0 in the continuum from beta = 1.28
+#       at N=20 for Poisson, i.e. a finite-size shift of about 0.28, which is
+#       LARGER than the 0.156 gap in abs(beta-1) between biharmonic and Poisson.
+# So the honest reading is that the beta comparison does not favour Poisson and
+# does not establish any operator as best. The discriminator is empty, not
+# reversed.
+N16 = 20
+fits = {}
+for name, (solver, kw) in SOLVERS.items():
+    eps = fundamental_sign(N16, solver, kw)
+    phi, _, _ = iterate_signed(N16, solver, kw, eps)
+    p = F.check_field_physics(N16, phi, (N16 // 2, N16 // 2, N16 // 2))
+    fits[name] = (float(p["beta"]), float(p["beta_r2"]))
+worst_fit = min(fits, key=lambda n: fits[n][1])
+gap = abs(abs(fits["biharmonic"][0] - 1.0) - abs(fits["poisson"][0] - 1.0))
+POISSON_FINITE_SIZE_SHIFT = abs(fits["poisson"][0] - 1.0)  # parent note: -> 1.0
+check(
+    "R16 the beta ranking does not establish a better operator: biharmonic's "
+    "fit is the worst of the four and the ranking gap is inside the parent "
+    "note's own finite-size shift",
+    worst_fit == "biharmonic" and gap < POISSON_FINITE_SIZE_SHIFT,
+    "\n".join(f"  {n:11s} beta = {b:7.4f}  power-law fit R^2 = {r2:.4f}"
+              for n, (b, r2) in fits.items())
+    + f"\nworst power-law fit among the four: {worst_fit} "
+      f"(R^2 = {fits[worst_fit][1]:.4f})\n"
+    + f"gap in abs(beta-1) between biharmonic and poisson = {gap:.4f}\n"
+    + f"parent note's documented finite-size shift for Poisson alone "
+      f"(1.28 at N=20 -> 1.0 in\nthe continuum) = "
+      f"{POISSON_FINITE_SIZE_SHIFT:.4f}, which exceeds that gap\n"
+    "therefore this cycle claims only that the beta comparison does NOT FAVOUR\n"
+    "Poisson. It does not claim biharmonic is the better operator, and it does\n"
+    "not claim a continuum ranking. The parent note's Bounded Claim 1 fails\n"
+    "because three of four operators sit within the finite-size budget of the\n"
+    "Newtonian target, not because a rival wins.\n"
+    "falsifier: biharmonic having the best fit of the four, or the ranking gap\n"
+    "exceeding the finite-size shift, either of which would license the stronger\n"
+    "reading this row refuses.",
 )
 
 print()

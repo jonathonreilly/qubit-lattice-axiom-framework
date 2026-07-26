@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py
-runner_sha256: 70de0f729f0fa3cc5181a7e43c50ffb989dd926b396b3c1a06e5ac1138088efb
-input_fingerprint_sha256: 39841b3a784f6092b567553071d40985edf0cb7f7c15bfb6595a26acca830a96
+runner_sha256: d4cb1fe7ba27dcf534d37e413d12dc50531ce17f2ca097a6c8b632644c260027
+input_fingerprint_sha256: f5537b2a0c0699f79ddf59bbd6385840a5fc768d461dd954bffe0e8d01a48d7d
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 5.50
+elapsed_sec: 5.84
 status: ok
 ----- stdout -----
 PASS source_closure :: True
 PASS dimension :: True
 PASS isometry_columns :: True
-PASS all_4096_EG :: True
+PASS all_4096_decoded_update :: True
 PASS mass_contact :: True
 PASS lawful_and_false_seam :: True
 PASS placement_and_repetition :: True
@@ -40,7 +40,7 @@ PASS axis_routing :: True
     ]
   ],
   "checks": {
-    "all_4096_EG": true,
+    "all_4096_decoded_update": true,
     "axis_routing": true,
     "dimension": true,
     "isometry_columns": true,
@@ -59,10 +59,10 @@ PASS axis_routing :: True
   "logical_k": 12,
   "mass_fixture": 0.4534056541748851,
   "mass_residual": 1.1102230246251565e-16,
-  "maximum_EG_residual": 5.566705740848049e-16,
   "maximum_compiled_axis_L1_diameter": 13,
   "maximum_compiled_axis_weight": 15,
   "maximum_contact_residual": 0.0,
+  "maximum_decoded_update_residual": 5.566705740848049e-16,
   "maximum_norm_residual": 9.992007221626409e-16,
   "maximum_number_leakage": 0.0,
   "maximum_seam_residual": 0.0,
@@ -71,12 +71,15 @@ PASS axis_routing :: True
   "patch_cycle_rank": 24,
   "patch_tree_edges": 13,
   "patch_vertices_reached": 14,
+  "physical_W_commutator_failures": 0,
+  "physical_W_nonhermitian_failures": 0,
   "physical_constraint_rank": 27,
   "physical_constraint_s_including_repetition": 27,
+  "physical_full_W_rank": 39,
   "physical_n": 39,
   "placement_collisions": 0,
   "repetition_constraint_failures": 0,
-  "report_sha256": "8f658f37569ebbdf21c57d828505dd97a24ba41d6f23cd7c01ac3cac054c5f33",
+  "report_sha256": "0f7c62ba033d8bae950f1f7be6dbf8fc77ac1fa762ff6a46c0ad8c749f3e1abc",
   "reverse_fswap_count": 6,
   "seam_adjacent_fswap_count": 9,
   "sector_column_counts": {
@@ -97,8 +100,13 @@ PASS axis_routing :: True
   "single_nonadjacent_fswap_false_columns": 1024,
   "single_nonadjacent_fswap_max_residual": 2.0,
   "source_inventory_sha256": {
-    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md": "e1ec50cf2c194281a8cbad68c54a5e4c5dfa11c2f852557371fade18d43f5444",
+    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md": "4a4dce8a459102124696e9449fb28e9cfee576645d22ab20da52624642047158",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
     "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
     "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
     "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py": "71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69",
     "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py": "b42ea07c1ed671b9cbab38bc38eba6f8166fe65be52295941a95e3ed75049abf",
@@ -106,7 +114,7 @@ PASS axis_routing :: True
     "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py": "3aa964a6eaca559048a53de580f39d9295a3e4b41ef9d4ff9dcdd4d3ff7444a7",
     "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py": "5d49d85ddbc4daddfc0b24737dc569eaa9f32a050f5fccf48f048fe0fdd74b40",
     "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py": "d74fb32e21879b2a843eae822c8e71b950729d9dc295eaf336911f174cceee3a",
-    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py": "70de0f729f0fa3cc5181a7e43c50ffb989dd926b396b3c1a06e5ac1138088efb",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py": "d4cb1fe7ba27dcf534d37e413d12dc50531ce17f2ca097a6c8b632644c260027",
     "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13",
     "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0",
     "scripts/frontier_full128_code_projectors_2026_07_24.py": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44",
@@ -115,7 +123,12 @@ PASS axis_routing :: True
     "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb",
     "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py": "05cb2f6083cf6c4307c04284632e991b7fd7378cbd2a4eb08a52d5e3c7ae6b99",
     "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480",
-    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b"
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011"
   },
   "supplied_structure": [
     "two-cell +x PatchGraph geometry and Cycle708 signed tableau",

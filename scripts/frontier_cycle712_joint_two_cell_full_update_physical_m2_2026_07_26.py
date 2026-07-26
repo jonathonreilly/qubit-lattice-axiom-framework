@@ -14,6 +14,7 @@ named supplies rather than autonomously generated initial conditions.
 
 from __future__ import annotations
 
+import ast
 from dataclasses import dataclass
 from functools import lru_cache
 from hashlib import sha256
@@ -64,6 +65,16 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
     "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
     "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
     "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
     "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
     "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
@@ -93,6 +104,32 @@ class AGate:
 
 def digest(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
+
+
+def transitive_repo_script_paths():
+    """Resolve the literal flat-module import closure under ``scripts/``."""
+    scripts_dir = ROOT / "scripts"
+    module_paths = {path.stem: path for path in scripts_dir.glob("*.py")}
+    pending = [Path(__file__).resolve()]
+    seen = set()
+    while pending:
+        path = pending.pop()
+        if path in seen:
+            continue
+        seen.add(path)
+        tree = ast.parse(path.read_text(), filename=str(path))
+        imported = []
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Import):
+                imported.extend(alias.name.split(".")[0] for alias in node.names)
+            elif isinstance(node, ast.ImportFrom) and node.module:
+                imported.append(node.module.split(".")[0])
+        pending.extend(
+            module_paths[name]
+            for name in imported
+            if name in module_paths and module_paths[name] not in seen
+        )
+    return tuple(sorted(path.relative_to(ROOT).as_posix() for path in seen))
 
 
 def json_safe(value):
@@ -714,12 +751,16 @@ def inverse_instructions(word, prefix="inverse_"):
     )
 
 
-def stabilizer_certificate(eq, target_decode, repeated):
+def stabilizer_certificate(eq, target_decode, repeated, logical_word):
     qubits = eq.qubits
     logical = len(eq.target_logical_z)
     auxiliaries = eq.target_w[logical:]
     decoded = apply_word_rows(auxiliaries, target_decode)
     expected = [c707.Pauli(z=1 << index) for index in range(logical, qubits)]
+    auxiliary_wire_violations = sum(
+        any(wire >= logical for wire in gate.wires) for gate in logical_word
+    )
+    restored = apply_word_rows(decoded, inverse_word(target_decode))
     shared = len(eq.target_shared_loops)
     ds = len(eq.target_ds)
     rails = len(eq.target_rails)
@@ -749,9 +790,10 @@ def stabilizer_certificate(eq, target_decode, repeated):
             "repetition": len(repeated),
         },
         "auxiliary_stabilizer_decode_failures": tableau_failures(decoded, expected),
-        "auxiliary_wires_touched_by_decoded_update": 0,
-        "cycle_D_rail_leakage_failures_after_full_word": 0,
-        "repetition_leakage_failures_after_decode_update_encode": 0,
+        "decoded_update_auxiliary_wire_violations": auxiliary_wire_violations,
+        "cycle_D_rail_restoration_failures": tableau_failures(
+            restored, auxiliaries
+        ),
         "reason": (
             "target decode sends all code stabilizers to Z on auxiliary wires; "
             "the update acts only on logical wires; target encode restores them; "
@@ -1164,22 +1206,15 @@ def main():
     full_sector = sector_complete_certificate(logical_word, free12, 2)
     stages = stage_and_falsifier_certificate(logical_word, basis, free12)
     cycle230_semantics = cycle230_semantic_certificate(logical_word)
-    stabilizer_leakage = stabilizer_certificate(eq, target_decode, repeated)
+    stabilizer_leakage = stabilizer_certificate(
+        eq, target_decode, repeated, logical_word
+    )
     held = held_three_cell_certificate()
     frames = frame_chart_certificate()
-    source_paths = (
-        "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
-        "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
-        "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
-        "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
-        "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
-        "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
-        "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
-    )
+    source_paths = transitive_repo_script_paths()
     source_inventory = {
         path: digest(ROOT / path) for path in source_paths
     }
-    source_inventory[str(Path(__file__).relative_to(ROOT))] = digest(Path(__file__))
 
     report = {
         "baseline_commit": "70e8153ec24ecc812ad692debd57f8a8b67573f2",
@@ -1192,7 +1227,7 @@ def main():
             "placement_collisions": collisions,
             "repeated_abstract_qubits": repeated,
             "repetition_ancilla_M2": sum(len(carrier) - 1 for carrier in carriers),
-            "E_dagger_E_residual": 0.0,
+            "E_dagger_E_exact_by_unitary_ancilla_injection": True,
             "synthesis": synth,
         },
         "Cycle655_naive_gluing_control": {
@@ -1262,7 +1297,11 @@ def main():
             "landed_bridge_routed_word_sha256": route_report["word_sha256"],
             "landed_bridge_touched_M2": len(route_report["touched_coordinates"]),
             "landed_bridge_blank_route_work_M2": len(set(route_report["touched_coordinates"]) - set(occupied_sites)),
-            "code_leakage_residual": 0.0,
+            "code_leakage_exact_by_decode_update_encode": (
+                stabilizer_leakage["auxiliary_stabilizer_decode_failures"] == 0
+                and stabilizer_leakage["decoded_update_auxiliary_wire_violations"] == 0
+                and stabilizer_leakage["cycle_D_rail_restoration_failures"] == 0
+            ),
             "EG_residual_by_exact_decode_update_encode_induction": combined_residual,
         },
         "deletions": {
@@ -1287,7 +1326,7 @@ def main():
             "a rank-38 Clifford state encoder for the 12 logical occupations plus 26 fixed auxiliaries",
             "exact equivalence of the direct target encoder and the source encoder followed by the landed Cycle709 seam-chart bridge",
             "one literal physical decode/free-coin/reverse/seam/contact/re-encode word on the same 39-M2 code",
-            "an independent 79-column combined-update comparator on the invariant vacuum/one/two sector",
+            "a direct 79-column combined-update comparator on the invariant vacuum/one/two sector",
             "a sector-complete factor proof plus active columns in every particle-number sector of all 4096 logical columns",
             "a held three-cell/two-overlapping-seam 262144-dimensional code and routed word without refit",
             "all-24 native state encoders and all-576 exact W/V chart compositions",
@@ -1308,9 +1347,16 @@ def main():
         ),
     }
     declared = tuple((ROOT / path).resolve() for path in AUDIT_INPUT_PATHS)
+    declared_scripts = {
+        path for path in AUDIT_INPUT_PATHS if path.startswith("scripts/")
+    }
+    missing_scripts = tuple(
+        path for path in source_paths if path not in declared_scripts
+    )
     checks = {
         "source_closure": len(declared) == len(set(declared))
-        and all(path.is_file() and path.is_relative_to(ROOT) for path in declared),
+        and all(path.is_file() and path.is_relative_to(ROOT) for path in declared)
+        and not missing_scripts,
         "dimension": dimension["code_dimension"] == dimension["expected_M64_tensor_M64"] == 4096
         and dimension["delete_rail_code_dimension"] == 8192
         and dimension["formula_abstract_qubits"] == dimension["abstract_qubits"]
@@ -1338,8 +1384,8 @@ def main():
         )),
         "stabilizer_leakage": (
             stabilizer_leakage["auxiliary_stabilizer_decode_failures"] == 0
-            and stabilizer_leakage["cycle_D_rail_leakage_failures_after_full_word"] == 0
-            and stabilizer_leakage["repetition_leakage_failures_after_decode_update_encode"] == 0
+            and stabilizer_leakage["decoded_update_auxiliary_wire_violations"] == 0
+            and stabilizer_leakage["cycle_D_rail_restoration_failures"] == 0
             and all(row["dimension_ratio"] == 2 for row in stabilizer_leakage["one_row_deletions"].values())
             and stabilizer_leakage["delete_repetition_encode_stabilizer_mismatches"] > 0
         ),

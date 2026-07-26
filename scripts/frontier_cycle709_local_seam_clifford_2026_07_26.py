@@ -14,6 +14,10 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import frontier_cycle709_local_seam_clifford_core_2026_07_26 as C
 import frontier_cycle709_local_seam_physical_core_2026_07_26 as P
+import common_matter_field_coin_family_cycle219_2026_07_16 as c219
+import spatial_car_contact_seam_form_factor_cycle230_2026_07_17 as c230
+
+import numpy as np
 
 
 PASS = 0
@@ -39,6 +43,8 @@ ACTIVE_SOURCE_PATHS = (
     "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
     "scripts/frontier_full128_code_projectors_2026_07_24.py",
     "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
 )
 AUDIT_INPUT_PATHS = (
     "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_"
@@ -65,6 +71,8 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
     "scripts/frontier_full128_code_projectors_2026_07_24.py",
     "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 EXPECTED_DEPENDENCIES = {
@@ -78,6 +86,10 @@ EXPECTED_DEPENDENCIES = {
         "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480",
     "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py":
         "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py":
+        "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py":
+        "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
 }
 
 
@@ -118,12 +130,55 @@ def dependency_controls() -> dict[str, object]:
     }
 
 
+def mass_contact_regression_certificate() -> dict[str, object]:
+    """Re-execute the inherited Cycle219/230 fixtures used by this compiler."""
+    species = c219.common_species(-0.3)
+    uniform = np.ones(6, dtype=complex) / np.sqrt(6.0)
+    eigenvalue = np.vdot(uniform, species.coin @ uniform)
+    measured_mass = float(np.angle(eigenvalue)) / c219.C_SQUARED
+    fixture_mass = c219.rest_mass(species)
+    contact = np.diag(
+        (1.0, 1.0, 1.0, np.exp(1j * c230.COUPLING))
+    ).astype(complex)
+    return {
+        "one_particle_coin_eigen_residual": float(
+            np.linalg.norm(species.coin @ uniform - eigenvalue * uniform)
+        ),
+        "one_particle_mass": measured_mass,
+        "Cycle219_mass_fixture": fixture_mass,
+        "one_particle_mass_residual": abs(measured_mass - fixture_mass),
+        "contact_vacuum_and_one_particle_residual": float(
+            np.linalg.norm(np.diag(contact)[:3] - 1.0)
+        ),
+        "contact_double_occupation_phase_residual": abs(
+            contact[3, 3] - np.exp(1j * c230.COUPLING)
+        ),
+        "contact_coupling": c230.COUPLING,
+        "Cycle219_runner_sha256": EXPECTED_DEPENDENCIES[
+            "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py"
+        ],
+        "Cycle230_runner_sha256": EXPECTED_DEPENDENCIES[
+            "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py"
+        ],
+        "packaged": True,
+    }
 def main() -> int:
     dependencies = dependency_controls()
     check(
-        "Cycle706/708 algebra sources are pinned to main@57d6361fa5",
+        "Cycle219/230/706/708 algebra sources are pinned to main@57d6361fa5",
         not dependencies["mismatches"],
         dependencies,
+    )
+
+    mass_contact = mass_contact_regression_certificate()
+    check(
+        "the primary runner re-executes the Cycle219 one-particle mass fixture and Cycle230 local contact controls",
+        mass_contact["one_particle_coin_eigen_residual"] < 3e-12
+        and mass_contact["one_particle_mass_residual"] < 3e-12
+        and mass_contact["contact_vacuum_and_one_particle_residual"] < 3e-12
+        and mass_contact["contact_double_occupation_phase_residual"] < 3e-12
+        and mass_contact["packaged"],
+        mass_contact,
     )
 
     reference = C.reference_certificate()
@@ -422,6 +477,7 @@ def main() -> int:
         "frame_products": products,
         "boxes": boxes,
         "deletions": deletions,
+        "mass_contact_regression": mass_contact,
         "inverse": inverse,
         "translations": translations,
         "unlawful": unlawful,

@@ -20,6 +20,11 @@
 **Endpoint regression input:**
 [`PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md`](PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md)
 
+**Mass/contact regression inputs:**
+[`common_matter_field_coin_family_cycle219_2026_07_16.py`](../scripts/common_matter_field_coin_family_cycle219_2026_07_16.py)
+and
+[`spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py`](../scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py)
+
 **Primary runner:**
 [`scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py`](../scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py)
 
@@ -256,8 +261,9 @@ Derived and executed on the declared surface:
 - explicit H/S/CNOT/SWAP realization on all three seam axes;
 - the complete supplied-order `3 x 2 x 2` routed word and overlapping-cube
   register consistency; and
-- preservation of the landed mass/contact and Cycle-708 endpoint regression
-  terminals.
+- primary-runner re-execution of the Cycle-219 one-particle mass fixture and
+  Cycle-230 vacuum/one-particle and double-occupation contact controls, plus
+  preservation of the Cycle-708 endpoint regression terminal.
 
 Removed from the emitted compiler word, but not from verification:
 

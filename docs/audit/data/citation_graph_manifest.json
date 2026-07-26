@@ -1,6 +1,6 @@
 {
- "edge_count": 15120,
- "node_count": 4544,
+ "edge_count": 15121,
+ "node_count": 4545,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1821,6 +1821,10 @@
   "charged_lepton_y_tau_ward_structural_anchor_requirements_positive_theorem_note_2026-05-17": {
    "deps_hash": "a7f22af043f4",
    "out_degree": 7
+  },
+  "chart_erased_fixed_program_physical_m2_compiler_cycle711_bounded_theorem_note_2026-07-26": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",

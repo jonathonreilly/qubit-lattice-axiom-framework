@@ -1,0 +1,2279 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle711_chart_erased_fixed_program_2026_07_26.py
+runner_sha256: 2d2996705df6bbee250d5f8e1bd1d5089a582cb9d90ad54c2c90742b8f8c2dd8
+input_fingerprint_sha256: 56f66d8df9d79135b3e706580f137801388aed3300eaf3ff9aca1a25117f4b7d
+timeout_sec: 360
+exit_code: 0
+elapsed_sec: 236.14
+status: ok
+----- stdout -----
+PASS the transitive source closure is repo-local and complete :: {'declared_inputs': 28}
+PHASE immutable W-star
+PASS one immutable routed W-star is emitted with no runtime frame/tag/gauge opcode :: {'constructor_signature': '()', 'primitive_gate_count': 1265, 'primitive_digest': 'ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859', 'routed_gate_count': 22635, 'routed_digest': '673932d45609b52da0c07495e93dd6d13fa5ef0afe323c8113448e63f5744f6d', 'maximum_route_distance': 24, 'route_failures': 0, 'runtime_frame_fields': 0, 'primary_M2': 276, 'input_tableau_digest': '94694bb71b8688ef604f7389b912457e39ad7921ca8ed30316be88ec167bee98', 'output_tableau_digest': 'c4798992331d1410f2f54b83afb8800efbae209a1c57682710487859571412ae'}
+PHASE 24 physical chart erasures
+FRAME 0 (-1, 0, 0, 0, -1, 0, 0, 0, 1)
+FRAME 1 (-1, 0, 0, 0, 1, 0, 0, 0, -1)
+FRAME 2 (1, 0, 0, 0, -1, 0, 0, 0, -1)
+FRAME 3 (1, 0, 0, 0, 1, 0, 0, 0, 1)
+FRAME 4 (-1, 0, 0, 0, 0, -1, 0, -1, 0)
+FRAME 5 (-1, 0, 0, 0, 0, 1, 0, 1, 0)
+FRAME 6 (1, 0, 0, 0, 0, -1, 0, 1, 0)
+FRAME 7 (1, 0, 0, 0, 0, 1, 0, -1, 0)
+FRAME 8 (0, -1, 0, -1, 0, 0, 0, 0, -1)
+FRAME 9 (0, -1, 0, 1, 0, 0, 0, 0, 1)
+FRAME 10 (0, 1, 0, -1, 0, 0, 0, 0, 1)
+FRAME 11 (0, 1, 0, 1, 0, 0, 0, 0, -1)
+FRAME 12 (0, -1, 0, 0, 0, -1, 1, 0, 0)
+FRAME 13 (0, -1, 0, 0, 0, 1, -1, 0, 0)
+FRAME 14 (0, 1, 0, 0, 0, -1, -1, 0, 0)
+FRAME 15 (0, 1, 0, 0, 0, 1, 1, 0, 0)
+FRAME 16 (0, 0, -1, -1, 0, 0, 0, 1, 0)
+FRAME 17 (0, 0, -1, 1, 0, 0, 0, -1, 0)
+FRAME 18 (0, 0, 1, -1, 0, 0, 0, -1, 0)
+FRAME 19 (0, 0, 1, 1, 0, 0, 0, 1, 0)
+FRAME 20 (0, 0, -1, 0, -1, 0, -1, 0, 0)
+FRAME 21 (0, 0, -1, 0, 1, 0, 1, 0, 0)
+FRAME 22 (0, 0, 1, 0, -1, 0, 1, 0, 0)
+FRAME 23 (0, 0, 1, 0, 1, 0, -1, 0, 0)
+PASS all 24 verified physical actions chart-erase to one W-star exactly :: {'failure_sum': 0, 'abstract_digests': {'e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f'}, 'primitive_digests': {'ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859'}}
+PASS address relabeling alone is separated from the executed signed-code chart Clifford :: {'nonidentity_frames': 23, 'minimum_exact_mismatch': 44, 'maximum_exact_mismatch': 92, 'minimum_code_mismatch': 44, 'maximum_code_mismatch': 92}
+PASS the original 24 pre/base/post words remain exact, local, leakage-free, and deletion-active :: {'placement_failures': 0, 'leakage_failures': 0, 'route_failures': 0, 'minimum_SWAP_deletions': 723}
+PHASE overlap, held sizes, and 24/576
+PASS two fixed physical overlapping cubes accept independent passive storage charts with no transition :: {'independently_shuffled_cube_views': 2, 'shared_augmented_addresses': 80, 'shared_patch_edge_addresses': 76, 'shared_rail_addresses': 4, 'independent_order_transition_terms': 0, 'graph_A_failures': 0, 'rows': ({'open_CZ': 0, 'open_Z': 0, 'patch_CZ': 0, 'patch_Z': 0, 'graph_A_failures': 0}, {'open_CZ': 0, 'open_Z': 0, 'patch_CZ': 0, 'patch_Z': 0, 'graph_A_failures': 0})}
+PASS held storage charts close without refit and abstract proper-cubic 24/576 remains exact :: {'held': {'shapes': [(2, 2, 2), (3, 2, 2), (3, 3, 2), (3, 3, 3), (4, 2, 2)], 'rows': 20, 'semantic_failure_sum': 0, 'storage_transition_terms': 0, 'maximum_qubits': 594, 'parameters_refit_sum': 0}, 'frame_products': {'proper_cubic_frames': 24, 'ordered_frame_products': 576, 'semantic_failure_sum': 0, 'open_product_failures': 0, 'patch_product_failures': 0, 'inverse_failures': 0, 'locality_failures': 0, 'maximum_open_CZ_terms': 432, 'maximum_patch_CZ_terms': 408, 'maximum_open_Z_terms': 120, 'maximum_patch_Z_terms': 108}, 'common_restrictions': {'proper_cubic_frames': 24, 'subcubes': 2, 'graph_types': 2, 'checks': 96, 'failure_checks': 0, 'maximum_difference': 0}}
+PASS the same frame-argument-free generator closes all tested colour origins, translations, and normalized frames :: {'shapes': ((2, 2, 2), (3, 2, 2), (4, 2, 2), (3, 3, 3)), 'colour_origins_per_shape': 8, 'colour_origin_exact_failure_sum': 0, 'fixed_origin_translation_residues_per_shape': 8, 'fixed_origin_translation_exact_failure_sum': 0, 'proper_cubic_normalized_boxes': 24, 'proper_cubic_frame_argument_count': 0, 'proper_cubic_exact_failure_sum': 0, 'rotated_rows': ({'shape': (3, 2, 2), 'exact_mismatch': 0}, {'shape': (3, 2, 2), 'exact_mismatch': 0}, {'shape': (3, 2, 2), 'exact_mismatch': 0}, {'shape': (3, 2, 2), 'exact_mismatch': 0}, {'shape': (3, 2, 2), 'exact_mismatch': 0}, {'shape': (3, 2, 2), 'exact_mismatch': 0}, {'shape': (3, 2, 2), 'exact_mismatch': 0}, {'shape': (3, 2, 2), 'exact_mismatch': 0}, {'shape': (2, 3, 2), 'exact_mismatch': 0}, {'shape': (2, 3, 2), 'exact_mismatch': 0}, {'shape': (2, 3, 2), 'exact_mismatch': 0}, {'shape': (2, 3, 2), 'exact_mismatch': 0}, {'shape': (2, 2, 3), 'exact_mismatch': 0}, {'shape': (2, 2, 3), 'exact_mismatch': 0}, {'shape': (2, 2, 3), 'exact_mismatch': 0}, {'shape': (2, 2, 3), 'exact_mismatch': 0}, {'shape': (2, 3, 2), 'exact_mismatch': 0}, {'shape': (2, 3, 2), 'exact_mismatch': 0}, {'shape': (2, 3, 2), 'exact_mismatch': 0}, {'shape': (2, 3, 2), 'exact_mismatch': 0}, {'shape': (2, 2, 3), 'exact_mismatch': 0}, {'shape': (2, 2, 3), 'exact_mismatch': 0}, {'shape': (2, 2, 3), 'exact_mismatch': 0}, {'shape': (2, 2, 3), 'exact_mismatch': 0}), 'colour_function_signature': "(key: 'tuple[Coord, int]', colour_origin: 'Coord' = (0, 0, 0))", 'cleanup_function_signature': "(left: 'tuple[Coord, int]', right: 'tuple[Coord, int]', colour_origin: 'Coord' = (0, 0, 0)) -> 'bool'"}
+PHASE schedule
+PASS same-colour layers are locally disjoint :: {'active_layers': ((0, 0), (0, 1), (1, 0), (2, 0)), 'collisions': 0}
+ACCEPTANCE invariant_or_commuting_schedule False {'noncommuting_pairs': 6, 'active_pairs': 6, 'equal_permutations': 1, 'all_permutations': 24, 'maximum_permutation_exact_mismatch': 20}
+PASS mass/contact/seam/gauge/physical deletion controls remain active :: {'mass_contact': {'one_particle_coin_eigen_residual': 2.594441202963249e-16, 'one_particle_mass': 0.45340565417488515, 'Cycle219_mass_fixture': 0.4534056541748851, 'one_particle_mass_residual': 5.551115123125783e-17, 'contact_vacuum_and_one_particle_residual': 0.0, 'contact_double_occupation_phase_residual': np.float64(0.0), 'contact_coupling': 0.37, 'Cycle219_runner_sha256': 'ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a', 'Cycle230_runner_sha256': 'b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae', 'packaged': True}, 'base_deletions': {'active_colours_present': ((0, 0), (0, 1), (1, 0), (2, 0)), 'delete_active_colour_failures': (56, 60, 68, 50), 'delete_cleanup_edge_failures': (2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2), 'wrong_rotation_sign_failures': (13, 12, 1, 14), 'empty_colour_layers_declared_noops': ((1, 1), (2, 1))}, 'gauge_deletions': {'open': {'CZ_deletions': 660, 'minimum_CZ_delete_graph_A_failures': 2, 'Z_deletions': 184, 'minimum_Z_delete_graph_A_failures': 1}, 'patch': {'CZ_deletions': 612, 'minimum_CZ_delete_graph_A_failures': 2, 'Z_deletions': 164, 'minimum_Z_delete_graph_A_failures': 1}}, 'primitive_deletions': {'minimum_delete_one_Z_S_residual': 1.4142135623730951, 'minimum_delete_one_CZ_primitive_residual': 1.9999999999999998}}
+{
+  "abstract_24_576": {
+    "inverse_failures": 0,
+    "locality_failures": 0,
+    "maximum_open_CZ_terms": 432,
+    "maximum_open_Z_terms": 120,
+    "maximum_patch_CZ_terms": 408,
+    "maximum_patch_Z_terms": 108,
+    "open_product_failures": 0,
+    "ordered_frame_products": 576,
+    "patch_product_failures": 0,
+    "proper_cubic_frames": 24,
+    "semantic_failure_sum": 0
+  },
+  "boundary": "Common-frame dependence is exactly removable into passive input/output chart identifications on the declared code space, and passive storage charts glue without transition data.  The original W_R family nevertheless executes a nontrivial signed-code Clifford in every nonidentity frame; address relabeling alone does not remove it.  Reclassifying that Clifford as a passive code-chart identification is therefore the load-bearing chart convention.  The surviving immutable W-star uses one noncommuting fixed six-colour order.  The same frame-free bounded generator closes every tested origin/translation/frame, so this is a supplied law-program order wall rather than a coframe register, but an order-free schedule has not been derived.  Independently active neighboring coframes are a different unclosed interface.  No impossibility or axiom-pressure claim is made.",
+  "checks": {
+    "fail": 0,
+    "pass": 10
+  },
+  "common_coframe_restrictions": {
+    "checks": 96,
+    "failure_checks": 0,
+    "graph_types": 2,
+    "maximum_difference": 0,
+    "proper_cubic_frames": 24,
+    "subcubes": 2
+  },
+  "deletions": {
+    "base": {
+      "active_colours_present": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "delete_active_colour_failures": [
+        56,
+        60,
+        68,
+        50
+      ],
+      "delete_cleanup_edge_failures": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "empty_colour_layers_declared_noops": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "wrong_rotation_sign_failures": [
+        13,
+        12,
+        1,
+        14
+      ]
+    },
+    "gauge": {
+      "open": {
+        "CZ_deletions": 660,
+        "Z_deletions": 184,
+        "minimum_CZ_delete_graph_A_failures": 2,
+        "minimum_Z_delete_graph_A_failures": 1
+      },
+      "patch": {
+        "CZ_deletions": 612,
+        "Z_deletions": 164,
+        "minimum_CZ_delete_graph_A_failures": 2,
+        "minimum_Z_delete_graph_A_failures": 1
+      }
+    },
+    "physical_primitive": {
+      "minimum_delete_one_CZ_primitive_residual": 1.9999999999999998,
+      "minimum_delete_one_Z_S_residual": 1.4142135623730951
+    }
+  },
+  "frame_rows": [
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 48,
+        "exact": 48
+      },
+      "frame_index": 0,
+      "frame_key": [
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 2147,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 989,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 388,
+      "pre_gates_moved_to_passive_chart": 494,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "10eb2a12afb4647832d2404fec1fdfee0071bd5112e76a4d6a8cc4e4b82370f5",
+      "routed_gates_before_erasure": 26121
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 48,
+        "exact": 48
+      },
+      "frame_index": 1,
+      "frame_key": [
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 2147,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 989,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 388,
+      "pre_gates_moved_to_passive_chart": 494,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "2a49529ec6ca525445a16f0100b5c032c1e29d2729ee665c3f2dccd60d652a6f",
+      "routed_gates_before_erasure": 26121
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 44,
+        "exact": 44
+      },
+      "frame_index": 2,
+      "frame_key": [
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 2123,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 985,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 384,
+      "pre_gates_moved_to_passive_chart": 474,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "b9cb0a99a72d8791883233e853eb988650702879403e4520dd89502cc3f46dcf",
+      "routed_gates_before_erasure": 25977
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "frame_index": 3,
+      "frame_key": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 1265,
+      "is_identity": true,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 723,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 0,
+      "pre_gates_moved_to_passive_chart": 0,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "673932d45609b52da0c07495e93dd6d13fa5ef0afe323c8113448e63f5744f6d",
+      "routed_gates_before_erasure": 22635
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 84,
+        "exact": 84
+      },
+      "frame_index": 4,
+      "frame_key": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 3617,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1403,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1108,
+      "pre_gates_moved_to_passive_chart": 1244,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "5d264b0b2a56acf75b2da2c586290242638a56151d0d81ac3a61933f71a72518",
+      "routed_gates_before_erasure": 31179
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 84,
+        "exact": 84
+      },
+      "frame_index": 5,
+      "frame_key": [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 2807,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1157,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 724,
+      "pre_gates_moved_to_passive_chart": 818,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "e277796e4bcb10a60e010df50c90b70ee94687107b2c5fca44326336dd796520",
+      "routed_gates_before_erasure": 28365
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 68,
+        "exact": 68
+      },
+      "frame_index": 6,
+      "frame_key": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 2759,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1145,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 720,
+      "pre_gates_moved_to_passive_chart": 774,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "041aa34ff42f52ad1a1a67c156d27622c8b6983c7fcb4a7d5bf58c150cc92cbc",
+      "routed_gates_before_erasure": 27957
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 68,
+        "exact": 68
+      },
+      "frame_index": 7,
+      "frame_key": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 2759,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1145,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 720,
+      "pre_gates_moved_to_passive_chart": 774,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "88853a8324f63a746d5ce3211af757a766893deb3dc21107a105037625f3273d",
+      "routed_gates_before_erasure": 27957
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 80,
+        "exact": 80
+      },
+      "frame_index": 8,
+      "frame_key": [
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 3623,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1405,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1108,
+      "pre_gates_moved_to_passive_chart": 1250,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "5534d0885f40bb58df4d4eaf0f7c0f99481335b131f3b933bfafd190a511ff72",
+      "routed_gates_before_erasure": 31245
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 68,
+        "exact": 68
+      },
+      "frame_index": 9,
+      "frame_key": [
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 2759,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1145,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 720,
+      "pre_gates_moved_to_passive_chart": 774,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "bbb8b60ba3bded410634be0bac8be6bb4e86c1ea8589c1909707dc1470e6ccd4",
+      "routed_gates_before_erasure": 27957
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 68,
+        "exact": 68
+      },
+      "frame_index": 10,
+      "frame_key": [
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 2789,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1151,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 724,
+      "pre_gates_moved_to_passive_chart": 800,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "3015f4fd89312fe3ace582c096fafe9abc4e514d657cacad66b4dbf3b16a7603",
+      "routed_gates_before_erasure": 28167
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 80,
+        "exact": 80
+      },
+      "frame_index": 11,
+      "frame_key": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 2783,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1153,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 720,
+      "pre_gates_moved_to_passive_chart": 798,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "98bd52daf3c7c6a4b175c5f215fd5e16c58f2d27d1d6b7e4f66b03e300da38e1",
+      "routed_gates_before_erasure": 28221
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 12,
+      "frame_key": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 4235,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1561,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1440,
+      "pre_gates_moved_to_passive_chart": 1530,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "74787efc71ce46e27b4e1793f11825f371e8986da55d0e585935ec684c6fd98f",
+      "routed_gates_before_erasure": 33081
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 13,
+      "frame_key": [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 4283,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1573,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1444,
+      "pre_gates_moved_to_passive_chart": 1574,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "66e361b52920b5f43b587bf55efad3319a24eb99ec978349ba9454a351cf9427",
+      "routed_gates_before_erasure": 33489
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 14,
+      "frame_key": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 4283,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1573,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1444,
+      "pre_gates_moved_to_passive_chart": 1574,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "9d2ad700ec7d1c39ae6104829fa782400fa2a4cb795c5f5680932c92cfbb6a86",
+      "routed_gates_before_erasure": 33489
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 15,
+      "frame_key": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 3425,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1315,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1056,
+      "pre_gates_moved_to_passive_chart": 1104,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "ebd52160accdf05ad04e822d34a730f0c5dda674da8613200786bb45389c7400",
+      "routed_gates_before_erasure": 30267
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 16,
+      "frame_key": [
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 4283,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1573,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1444,
+      "pre_gates_moved_to_passive_chart": 1574,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "3b649de23cd010972232f088c61dac4c059007a90dbc41ce0fda24acd2480069",
+      "routed_gates_before_erasure": 33489
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 17,
+      "frame_key": [
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 4253,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1567,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1440,
+      "pre_gates_moved_to_passive_chart": 1548,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "1aa27878e8e99d727c7f9f43590a351da0d5b46f0775867e11d0e5784e9434d1",
+      "routed_gates_before_erasure": 33279
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 18,
+      "frame_key": [
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 4259,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1565,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1444,
+      "pre_gates_moved_to_passive_chart": 1550,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "c03f8afd5cd8de2b3df7b1a0f5c3cd48e2625b09c01f9e25f4ead604d92d63ff",
+      "routed_gates_before_erasure": 33225
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 19,
+      "frame_key": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 3419,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1313,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1056,
+      "pre_gates_moved_to_passive_chart": 1098,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "a116ef400d3b56a0b52dedbdebbeb7bff2b05f94009bb6c8bc36aa5fb3be0a59",
+      "routed_gates_before_erasure": 30201
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 20,
+      "frame_key": [
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 5777,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1995,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 2164,
+      "pre_gates_moved_to_passive_chart": 2348,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "ac007e1aae4304960be782f1ca2ab8f3743b21b56e37bc22126ed000a312e995",
+      "routed_gates_before_erasure": 38811
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 21,
+      "frame_key": [
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 4895,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1729,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1776,
+      "pre_gates_moved_to_passive_chart": 1854,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "d4f9ceacf6ca0052adbd304a2bf9257c1606a02d8d6f6528b9da918aac7ce565",
+      "routed_gates_before_erasure": 35325
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 22,
+      "frame_key": [
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 4895,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1729,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1776,
+      "pre_gates_moved_to_passive_chart": 1854,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "a0512caba434045ed41bf68e7dc24d24f85008f00a27555357bd599976be753e",
+      "routed_gates_before_erasure": 35325
+    },
+    {
+      "abstract_chart_erased_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+      "abstract_chart_erased_mismatch": {
+        "exact": 0,
+        "phase_only": 0,
+        "symplectic": 0
+      },
+      "address_only_without_chart_Clifford_mismatch": {
+        "code": 92,
+        "exact": 92
+      },
+      "frame_index": 23,
+      "frame_key": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "full_physical_intertwiner_mismatch": {
+        "code": 0,
+        "exact": 0
+      },
+      "full_primitive_gates_before_erasure": 4919,
+      "is_identity": false,
+      "leakage_stabilizer_failures": 0,
+      "minimum_detected_first_SWAP_deletions": 1733,
+      "physical_M2": 276,
+      "placement_failures": 0,
+      "post_gates_moved_to_passive_chart": 1780,
+      "pre_gates_moved_to_passive_chart": 1874,
+      "recovered_base_instruction_failures": 0,
+      "recovered_base_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+      "route_failures": 0,
+      "routed_digest_before_erasure": "587cd237ab53eaf8faf0aa6eca0f6fa7a4c85de5330c73b7b51c7ee930baed60",
+      "routed_gates_before_erasure": 35469
+    }
+  ],
+  "held_storage": {
+    "maximum_qubits": 594,
+    "parameters_refit_sum": 0,
+    "rows": 20,
+    "semantic_failure_sum": 0,
+    "shapes": [
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        3,
+        2,
+        2
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        3,
+        3,
+        3
+      ],
+      [
+        4,
+        2,
+        2
+      ]
+    ],
+    "storage_transition_terms": 0
+  },
+  "immutable_program": {
+    "constructor_signature": "()",
+    "input_tableau_digest": "94694bb71b8688ef604f7389b912457e39ad7921ca8ed30316be88ec167bee98",
+    "maximum_route_distance": 24,
+    "output_tableau_digest": "c4798992331d1410f2f54b83afb8800efbae209a1c57682710487859571412ae",
+    "primary_M2": 276,
+    "primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+    "primitive_gate_count": 1265,
+    "route_failures": 0,
+    "routed_digest": "673932d45609b52da0c07495e93dd6d13fa5ef0afe323c8113448e63f5744f6d",
+    "routed_gate_count": 22635,
+    "runtime_frame_fields": 0
+  },
+  "independent_active_coframe_boundary": {
+    "overlap_open": {
+      "left_terms": 0,
+      "right_terms": 46,
+      "shared_edges": 80,
+      "term_difference": 46
+    },
+    "overlap_patch": {
+      "left_terms": 0,
+      "right_terms": 42,
+      "shared_edges": 76,
+      "term_difference": 42
+    },
+    "relative_frame": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "same_physical_cube": {
+      "open_term_difference": 108,
+      "patch_term_difference": 88
+    },
+    "semantic_failure_sum": 0
+  },
+  "inventory": {
+    "derived_here": [
+      "one frame-argument-free immutable W-star primitive and routed digest",
+      "exact abstract and full-physical chart-erasure equality for all 24 common frames",
+      "zero-transition descent for independent passive storage charts on a fixed overlap",
+      "the exact noncommuting six-colour schedule residual"
+    ],
+    "not_derived": [
+      "an order-free/invariant autonomous schedule; W-star retains one fixed noncommuting law-program order",
+      "translation-invariant recurrent application or controller genesis",
+      "an interface for independently active neighboring coframes",
+      "physical preparation of code/source/work sectors",
+      "off-code canonical completion, physical time, Record, probability, source, or gravity meaning"
+    ],
+    "supplied": [
+      "one finite legacy Cycle709 reference word and its fixed chart/colour origin",
+      "Cycle707 placement/repetition/rail sectors and source-sector preparation",
+      "the radius-one legacy-local port key and local A orientation",
+      "the declared input/output code-space chart identifications",
+      "the fixed serial Manhattan route-and-return implementation",
+      "Cycle219 coin and Cycle230 contact data"
+    ]
+  },
+  "mass_contact": {
+    "Cycle219_mass_fixture": 0.4534056541748851,
+    "Cycle219_runner_sha256": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "Cycle230_runner_sha256": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+    "contact_coupling": 0.37,
+    "contact_double_occupation_phase_residual": 0.0,
+    "contact_vacuum_and_one_particle_residual": 0.0,
+    "one_particle_coin_eigen_residual": 2.594441202963249e-16,
+    "one_particle_mass": 0.45340565417488515,
+    "one_particle_mass_residual": 5.551115123125783e-17,
+    "packaged": true
+  },
+  "origin_and_frame_free_program": {
+    "cleanup_function_signature": "(left: 'tuple[Coord, int]', right: 'tuple[Coord, int]', colour_origin: 'Coord' = (0, 0, 0)) -> 'bool'",
+    "colour_function_signature": "(key: 'tuple[Coord, int]', colour_origin: 'Coord' = (0, 0, 0))",
+    "colour_origin_exact_failure_sum": 0,
+    "colour_origins_per_shape": 8,
+    "fixed_origin_translation_exact_failure_sum": 0,
+    "fixed_origin_translation_residues_per_shape": 8,
+    "proper_cubic_exact_failure_sum": 0,
+    "proper_cubic_frame_argument_count": 0,
+    "proper_cubic_normalized_boxes": 24,
+    "rotated_rows": [
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "exact_mismatch": 0,
+        "shape": [
+          2,
+          2,
+          3
+        ]
+      }
+    ],
+    "shapes": [
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        3,
+        2,
+        2
+      ],
+      [
+        4,
+        2,
+        2
+      ],
+      [
+        3,
+        3,
+        3
+      ]
+    ]
+  },
+  "passive_chart_gates_removed_from_execution": {
+    "frames_with_executed_chart_Clifford_before_erasure": 23,
+    "maximum_full_gates_before_erasure": 5777,
+    "maximum_post_gates": 2164,
+    "maximum_pre_gates": 2348,
+    "minimum_full_gates_before_erasure": 1265
+  },
+  "schedule": {
+    "active_layer_pairs": 6,
+    "active_layer_permutations": 24,
+    "active_layers": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "all_layers": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "maximum_pair_exact_mismatch": 12,
+    "maximum_permutation_exact_mismatch": 20,
+    "noncommuting_layer_pairs": 6,
+    "pair_rows": [
+      {
+        "left": [
+          0,
+          0
+        ],
+        "mismatch": {
+          "exact": 8,
+          "phase_only": 0,
+          "symplectic": 8
+        },
+        "right": [
+          0,
+          1
+        ]
+      },
+      {
+        "left": [
+          0,
+          0
+        ],
+        "mismatch": {
+          "exact": 8,
+          "phase_only": 0,
+          "symplectic": 8
+        },
+        "right": [
+          1,
+          0
+        ]
+      },
+      {
+        "left": [
+          0,
+          0
+        ],
+        "mismatch": {
+          "exact": 8,
+          "phase_only": 0,
+          "symplectic": 8
+        },
+        "right": [
+          2,
+          0
+        ]
+      },
+      {
+        "left": [
+          0,
+          1
+        ],
+        "mismatch": {
+          "exact": 8,
+          "phase_only": 0,
+          "symplectic": 8
+        },
+        "right": [
+          1,
+          0
+        ]
+      },
+      {
+        "left": [
+          0,
+          1
+        ],
+        "mismatch": {
+          "exact": 8,
+          "phase_only": 0,
+          "symplectic": 8
+        },
+        "right": [
+          2,
+          0
+        ]
+      },
+      {
+        "left": [
+          1,
+          0
+        ],
+        "mismatch": {
+          "exact": 12,
+          "phase_only": 0,
+          "symplectic": 12
+        },
+        "right": [
+          2,
+          0
+        ]
+      }
+    ],
+    "permutation_rows": [
+      {
+        "mismatch": {
+          "exact": 0,
+          "phase_only": 0,
+          "symplectic": 0
+        },
+        "order": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 12,
+          "phase_only": 0,
+          "symplectic": 12
+        },
+        "order": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 8,
+          "phase_only": 0,
+          "symplectic": 8
+        },
+        "order": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 12,
+          "phase_only": 0,
+          "symplectic": 12
+        },
+        "order": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 16,
+          "phase_only": 0,
+          "symplectic": 16
+        },
+        "order": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 16,
+          "phase_only": 0,
+          "symplectic": 16
+        },
+        "order": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 8,
+          "phase_only": 0,
+          "symplectic": 8
+        },
+        "order": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 20,
+          "phase_only": 0,
+          "symplectic": 20
+        },
+        "order": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 12,
+          "phase_only": 0,
+          "symplectic": 12
+        },
+        "order": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 16,
+          "phase_only": 0,
+          "symplectic": 16
+        },
+        "order": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 20,
+          "phase_only": 0,
+          "symplectic": 20
+        },
+        "order": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 20,
+          "phase_only": 0,
+          "symplectic": 20
+        },
+        "order": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 14,
+          "phase_only": 0,
+          "symplectic": 14
+        },
+        "order": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 18,
+          "phase_only": 0,
+          "symplectic": 18
+        },
+        "order": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 14,
+          "phase_only": 0,
+          "symplectic": 14
+        },
+        "order": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 18,
+          "phase_only": 0,
+          "symplectic": 18
+        },
+        "order": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 20,
+          "phase_only": 0,
+          "symplectic": 20
+        },
+        "order": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 20,
+          "phase_only": 0,
+          "symplectic": 20
+        },
+        "order": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 20,
+          "phase_only": 0,
+          "symplectic": 20
+        },
+        "order": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 20,
+          "phase_only": 0,
+          "symplectic": 20
+        },
+        "order": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 20,
+          "phase_only": 0,
+          "symplectic": 20
+        },
+        "order": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 20,
+          "phase_only": 0,
+          "symplectic": 20
+        },
+        "order": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 20,
+          "phase_only": 0,
+          "symplectic": 20
+        },
+        "order": [
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "mismatch": {
+          "exact": 20,
+          "phase_only": 0,
+          "symplectic": 20
+        },
+        "order": [
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "permutations_equal_to_reference": 1,
+    "same_layer_physical_support_collisions": 0,
+    "seams_per_layer": {
+      "(0, 0)": 4,
+      "(0, 1)": 4,
+      "(1, 0)": 6,
+      "(2, 0)": 6
+    }
+  },
+  "source_hashes": {
+    "Cycle709_physical_core": "d74fb32e21879b2a843eae822c8e71b950729d9dc295eaf336911f174cceee3a",
+    "Cycle710_package_core": "d06c133176658a353ae7886b82f4ecbb981cb6e1c811cff0c12cd857c87d3185",
+    "Cycle710_physical_core": "27a8536cc0e78393713f9b8ff7c7987c94b7a5ebeedcffd43a5771510b9d58cd",
+    "runner": "2d2996705df6bbee250d5f8e1bd1d5089a582cb9d90ad54c2c90742b8f8c2dd8"
+  },
+  "status": "CYCLE711_CHART_ERASED_FIXED_PROGRAM_BOUNDED_PASS",
+  "storage_overlap": {
+    "graph_A_failures": 0,
+    "independent_order_transition_terms": 0,
+    "independently_shuffled_cube_views": 2,
+    "rows": [
+      {
+        "graph_A_failures": 0,
+        "open_CZ": 0,
+        "open_Z": 0,
+        "patch_CZ": 0,
+        "patch_Z": 0
+      },
+      {
+        "graph_A_failures": 0,
+        "open_CZ": 0,
+        "open_Z": 0,
+        "patch_CZ": 0,
+        "patch_Z": 0
+      }
+    ],
+    "shared_augmented_addresses": 80,
+    "shared_patch_edge_addresses": 76,
+    "shared_rail_addresses": 4
+  }
+}
+REPORT_SHA256 5edc0349f6abcdb72e1447ebc50927e27201b2b28ba81d9936f5f63979570b2e
+RUNNER_SHA256 2d2996705df6bbee250d5f8e1bd1d5089a582cb9d90ad54c2c90742b8f8c2dd8
+CYCLE711_CHART_ERASED_FIXED_PROGRAM_BOUNDED_PASS
+
+----- stderr -----
+

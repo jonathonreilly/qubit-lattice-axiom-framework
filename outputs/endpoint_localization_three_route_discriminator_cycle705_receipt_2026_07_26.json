@@ -1,0 +1,71 @@
+{
+  "cycle": 705,
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "three_route_discriminator_closed_recurrent_physical_site_compiler_open",
+  "route_independent_obstruction": false,
+  "axiom_pressure": false,
+  "checks": {
+    "route_a": {"passed": 9, "failed": 0},
+    "route_b": {"passed": 7, "failed": 0},
+    "route_c": {"passed": 21, "failed": 0},
+    "package_acceptance": {
+      "all_three_sources_pinned": true,
+      "all_children_exit_zero": true,
+      "all_children_stderr_empty": true,
+      "expected_total_checks": true
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/ENDPOINT_LOCALIZATION_THREE_ROUTE_DISCRIMINATOR_CYCLE705_NOTE_2026-07-26.md",
+      "sha256": "d127d307b370aae93693b7148d5c4e0df6c11d13c9d6f5cc0ff0e453f7b43a40"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/CYCLE705_DIRECT_REFERENCE_EDGE_SUPPORT_LOCALIZATION_ROUTE_A_NOTE_2026-07-25.md",
+      "sha256": "880b87b8111ed2895af05705f0ca1034dd768668f8b95f37b7c8ebfb8cb6840e"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/CYCLE705_GEOMETRY_LOCAL_SEAM_GAUGE_TABLEAU_NOTE_2026-07-25.md",
+      "sha256": "9626465687c8f647572202402315f6c968c66004be771bc56a6c74ed66e792a4"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/CYCLE705_CYCLE269_CARRIER_ROLE_SUPPORT_LOCALIZATION_NOTE_2026-07-26.md",
+      "sha256": "08fd7f3c32ae5ae49eff94024516c35b8aaa33668a6c9e8e221f496d4c4adf14"
+    },
+    {
+      "path": "scripts/frontier_cycle705_endpoint_localization_tournament_acceptance_2026_07_26.py",
+      "sha256": "341fcbadc3bec4a2931bf07b88a3a0d1b311788b92775639b2a73d2f9fb5e5bb"
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle705_endpoint_localization_tournament_acceptance_2026_07_26.txt",
+      "sha256": "a489d9f9cbc26bb6407f24f352bf1ecd5b39271e1275d38d4363432f9b13ea90"
+    },
+    {
+      "path": "scripts/frontier_cycle705_direct_reference_edge_support_localization_2026_07_25.py",
+      "sha256": "fe16008972dd77bfcea789ba530dc744bf6a8bf4777a06744032e372cdbce32e"
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle705_direct_reference_edge_support_localization_2026_07_25.txt",
+      "sha256": "40d1191f98b21f36f59cfaf60ded1a2f9e8fd5af8c7fbfe370c0b3da809cc3b9"
+    },
+    {
+      "path": "scripts/frontier_cycle705_geometry_local_seam_gauge_tableau_2026_07_25.py",
+      "sha256": "bc61e5f93e47f18117064243d9d9a6b34bbe6bfdc07bda27c953b78880ef6d00"
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle705_geometry_local_seam_gauge_tableau_2026_07_25.txt",
+      "sha256": "bfbd91fe0f942b1f214a6fa024fb7d51b3b9051f4674c1cf80362ad1ee014af6"
+    },
+    {
+      "path": "scripts/frontier_cycle705_cycle269_carrier_role_support_localization_2026_07_26.py",
+      "sha256": "92191de04731fee6a9fb5ecdeea2d32b38d688825e464dbc5ce3d6b7d6ee1a28"
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle705_cycle269_carrier_role_support_localization_2026_07_26.txt",
+      "sha256": "b03a89ca4c43f4fa087ebebf20a21730c0ced9e733f61d01165130563f085605"
+    }
+  ],
+  "terminal": "CYCLE705_ENDPOINT_LOCALIZATION_THREE_ROUTE_ACCEPTANCE_CLOSED"
+}

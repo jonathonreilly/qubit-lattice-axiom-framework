@@ -2,6 +2,8 @@
 
 **Date:** 2026-07-25
 
+**Type:** meta
+
 **Authority:** none
 
 **Audit:** unset
@@ -21,7 +23,7 @@ L_xy = loop(r_x,u,v,r_y) = +1.
 This produces the strongest honest split result:
 
 - **Phase-aware common E: positive.**  An explicit stabilizer-tableau common E
-  is constructed on L, held 2x2/3x3, and periodic `L=3,4`.  Every physical
+  is constructed on L, held 2x2/3x3, and periodic `L=3,4`.  Every graph-edge
   coin, contact, and directed stream summand restricts to its intended matter
   Pauli with zero phase failures and zero Wilson-gauge coordinates.
 - **Matter law and degree count: unchanged.**  Every added edge brings one
@@ -35,10 +37,12 @@ This produces the strongest honest split result:
   remains at `17/28` on every fixture.  The new reference vertex incidence
   enlarges the `A(r_x,r_y)` order tail; a graph-theoretically shorter edge is
   not a smaller BKSF Pauli word.
-- **Resource import: explicit.**  A matter and reference M2 share each bond
-  midpoint as two distinct typed fiber slots.  Spatial midpoint collisions
-  therefore equal the bond count, while typed M2-address collisions are zero.
-  The fiber label is invariant under translations and all proper-cubic frames.
+- **Resource import: explicit.**  A matter and reference graph-edge qubit share
+  each bond midpoint as two distinct typed abstract fiber slots.  Spatial
+  midpoint collisions therefore equal the bond count, while typed abstract
+  fiber-address collisions are zero.  This is placement data on the graph, not
+  an injective one-M2-per-`Z^3`-site placement.  The fiber label is invariant
+  under translations and all proper-cubic frames.
 - **Retirement path: exact.**  On the full Pauli algebra,
 
   ```text
@@ -54,7 +58,7 @@ No general reference-edge, incidence-order, gadget, or locality no-go follows.
 
 ## Exact ranks and phase-aware common E
 
-| Fixture | cells `N` | bonds / added M2 | total edge M2 | local-loop rank | local-loop+`D` rank | fixed-Wilson rank | direct-sum exponent | fixed exponent |
+| Fixture | cells `N` | bonds / added edge qubits | total edge qubits | local-loop rank | local-loop+`D` rank | fixed-Wilson rank | direct-sum exponent | fixed exponent |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | L | 16 | 16 | 320 | 209 | 224 | 224 | 96 | 96 |
 | held 2x2 | 20 | 20 | 400 | 261 | 280 | 280 | 120 | 120 |
@@ -88,7 +92,7 @@ common E is the phase-fixed tableau map
 E |n,g> = product_i X_i^(n_i) product_j Xg_j^(g_j) |Omega_+>.
 ```
 
-The vacuum tableau rank equals the number of physical edge M2s on all five
+The vacuum tableau rank equals the number of graph-edge qubits on all five
 fixtures, with zero inconsistent-phase relations.  Its columns are specified
 by the tableau and logical actions; exponentially large dense vectors are not
 materialized.  No preparation-depth conclusion is attached to this E.
@@ -137,7 +141,7 @@ two endpoint `D` rows on every operand, so reference dressing is active.
 
 For every listed coin/contact Hermitian-log summand:
 
-- the physical term restricts to the independently identified local matter
+- the graph-edge term restricts to the independently identified local matter
   Pauli with exact phase;
 - the maximum logarithm reconstruction residual is
   `7.397092656394907e-18`;
@@ -175,9 +179,9 @@ Supplied structure:
 
 - one scalar reference fermion per cell and the local law
   `D_x=B(r_x) product_a B(m_(x,a))=+1`;
-- one reference-stream edge M2 per matter bond;
+- one reference-stream graph-edge qubit per matter bond;
 - a local two-channel bond-midpoint fiber distinguishing matter/reference
-  edge M2s without orienting the undirected bond;
+  graph-edge qubits without orienting the undirected bond;
 - one rectangle constraint per added edge;
 - the local incidence-order gauge and, periodically, a typed three-qubit
   Wilson input; and
@@ -221,7 +225,7 @@ fixed-incidence support negative and the algebraic common-E positive.**
   BKSF incidence around reference bonds to reduce the direct `A` order tail.
   (4) **UNTESTED:** replace the co-located fiber by a proper-cubic symmetric
   split-edge gadget.  (5) **UNTESTED:** time-multiplex a reference ancilla and
-  trade static M2 count for schedule depth.  (6) **ATTEMPTED:** phase-aware
+  trade static edge-qubit count for schedule depth.  (6) **ATTEMPTED:** phase-aware
   tableau/Wilson subsystem encoding; it closes E and `I_8`, not support.
   Because at least three actionable families remain untested, a broad no-go
   fails.
@@ -237,7 +241,7 @@ fixed-incidence support negative and the algebraic common-E positive.**
 
   The edge-cycle and rectangle-enforcement obligations are not counted as two
   walls: the rectangle row is precisely what removes the edge's extra cycle.
-- **N3 — Hidden-condition scan.** The added M2, midpoint fiber, rectangle
+- **N3 — Hidden-condition scan.** The added graph-edge qubit, midpoint fiber, rectangle
   enforcement, incidence order, directed operand tensor order, periodic
   boundary, and Wilson input are explicit.  No appeal to “standard” or
   “obvious” physics carries a residual.

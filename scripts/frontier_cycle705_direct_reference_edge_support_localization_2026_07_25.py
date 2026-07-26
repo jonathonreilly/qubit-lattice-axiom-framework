@@ -54,7 +54,7 @@ def check(label: str, condition: bool, detail: object = "") -> None:
 class DirectReferenceGraph(P.ExtendedGraph):
     """Cycle-703 graph plus one scalar-reference stream edge per coarse bond.
 
-    Matter and reference stream M2s occupy distinct slots of a supplied local
+    Matter and reference stream graph-edge qubits occupy distinct slots of a supplied abstract
     two-channel bond fiber.  Their spatial midpoint is the same, so no sign of
     an unoriented bond or preferred endpoint order is introduced.
     """
@@ -388,11 +388,11 @@ def chart_certificate(name: str, graph: DirectReferenceGraph, chart: CommonEChar
         "cells": len(graph.cells),
         "coarse_bonds": len(graph.coarse_edges),
         "extended_vertices": len(graph.vertices),
-        "physical_edge_M2": qubits,
-        "added_reference_edge_M2": len(graph.coarse_edges),
+        "graph_edge_qubits": qubits,
+        "added_reference_edge_qubits": len(graph.coarse_edges),
         "edge_kind_census": dict(Counter(kind for _u, _v, kind, _p in graph.edges)),
         "spatial_midpoint_collisions": spatial_collisions,
-        "typed_M2_address_collisions": len(addresses) - len(set(addresses)),
+        "typed_abstract_fiber_address_collisions": len(addresses) - len(set(addresses)),
         "local_loop_rows": len(loops),
         "reference_rectangle_rows": sum(row[2] == "reference_rectangle" for row in loops),
         "local_loop_rank": loop_rank,
@@ -933,7 +933,7 @@ def frame_covariance_certificate(spec: P.PatchSpec):
         "corrected_A_B_failures": operator_failures,
         "projector_family_failures": projector_failures,
         "direct_stream_summand_failures": stream_failures,
-        "typed_M2_address_failures": address_failures,
+        "typed_abstract_fiber_address_failures": address_failures,
         "phase_aware_common_E_failures": common_e_failures,
         "common_E_group_law_failures": composition_failures,
         "full_coin_covariance_residual": coin_residual,
@@ -1076,13 +1076,13 @@ def main():
         "rectangle projectors absorb every added edge and retain exact 6N(+3 Wilson gauge) typing",
         all(
             row["local_loop_rank"] + row["missing_Wilson_rank"] == row["full_cycle_rank"]
-            and row["reference_rectangle_rows"] == row["added_reference_edge_M2"]
-            and row["typed_M2_address_collisions"] == 0
+            and row["reference_rectangle_rows"] == row["added_reference_edge_qubits"]
+            and row["typed_abstract_fiber_address_collisions"] == 0
             and row["direct_sum_exponent"] == row["target_direct_sum_exponent"]
             and row["fixed_sector_exponent"] == row["target_fixed_sector_exponent"]
             and row["canonical_pair_failures"] == 0
             and row["logical_code_commutator_failures"] == 0
-            and row["vacuum_stabilizer_rank"] == row["physical_edge_M2"]
+            and row["vacuum_stabilizer_rank"] == row["graph_edge_qubits"]
             and row["vacuum_phase_failures"] == 0
             and not row["common_E_columns_materialized_dense"]
             and not row["bounded_preparation_circuit_claimed"]
@@ -1144,7 +1144,7 @@ def main():
 
     covariance = [frame_covariance_certificate(spec) for spec in P.PATCHES]
     check(
-        "typed physical sites, direct summands, and phase-aware common E pass proper-cubic 24/576 covariance",
+        "typed graph-edge addresses, direct summands, and phase-aware common E pass proper-cubic 24/576 covariance",
         all(
             row["frames"] == 24
             and row["ordered_products"] == 576
@@ -1152,7 +1152,7 @@ def main():
             and row["corrected_A_B_failures"] == 0
             and row["projector_family_failures"] == 0
             and row["direct_stream_summand_failures"] == 0
-            and row["typed_M2_address_failures"] == 0
+            and row["typed_abstract_fiber_address_failures"] == 0
             and row["phase_aware_common_E_failures"] == 0
             and row["common_E_group_law_failures"] == 0
             and row["full_coin_covariance_residual"] < TOL
@@ -1208,7 +1208,7 @@ def main():
             "ATTEMPTED three-edge path BKSF incidence: exact and retains the lower 17/28 support baseline",
             "UNTESTED re-ordered reference-edge incidence could reduce the A(r_x,r_y) Z tail while preserving the rectangle",
             "UNTESTED symmetric split-edge gadget could avoid a co-located two-channel fiber with different support cost",
-            "UNTESTED time-multiplexed reference ancilla could trade static M2 overhead for schedule depth",
+            "UNTESTED time-multiplexed reference ancilla could trade static edge-qubit overhead for schedule depth",
             "ATTEMPTED phase-aware stabilizer tableau and Wilson subsystem: algebraic common E and U_matter tensor I_8 are positive but do not improve support",
         ),
         "N2": (
@@ -1218,7 +1218,7 @@ def main():
             "Wilson gauge typing and local update correctness are independently checked by gauge coordinates",
         ),
         "N3": (
-            "one extra M2 per bond, a matter/reference two-channel midpoint fiber, rectangle enforcement, local port-order gauge, and supplied Wilson input are explicit",
+            "one extra graph-edge qubit per bond, a matter/reference two-channel midpoint fiber, rectangle enforcement, local port-order gauge, and supplied Wilson input are explicit",
         ),
         "N4": (
             "Cycle703 path grammar matches the exact same stream residual and supplies the 17/28 support comparator",
@@ -1275,7 +1275,7 @@ def main():
         ),
         "supplied": (
             "one scalar reference fermion per cell and local D_x law",
-            "one reference-stream M2 per matter bond in a typed two-channel bond fiber",
+            "one reference-stream graph-edge qubit per matter bond in a typed two-channel bond fiber",
             "one bounded rectangle projector per added reference edge",
             "BKSF incidence/order gauge and supplied periodic Wilson gauge input",
             "Cycle219 coin, Cycle230 contact and stream schedule",

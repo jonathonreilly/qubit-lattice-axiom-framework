@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Cycle 705 Route B: geometry-local seam-gauge/tableau discriminator.
 
-The construction appends one Z2 edge gauge M2 to every coarse matter seam of
+The construction appends one abstract Z2 edge-gauge qubit to every coarse matter seam of
 the Cycle-703 seven-mode local-D graph.  The gauge stabilizer copies a frozen
-elementary-face cell-parity word into that edge M2.  The physical seam word is
+elementary-face cell-parity word into that edge qubit.  The edge-qubit seam word is
 built directly from the transported coframe, a local staggered orientation,
 the two endpoint cells, and bounded gauge support.  No path interval is
 queried by that constructor.
@@ -383,7 +383,7 @@ def positive_stabilizer_delta(
     )
 
 
-def physical_seam_rows(
+def edge_seam_rows(
     code: GaugeCode, seam_index: int
 ) -> tuple[tuple[base.Pauli, base.Pauli], dict[str, object]]:
     graph = code.graph
@@ -445,9 +445,9 @@ def physical_seam_rows(
 def seam_terms(
     code: GaugeCode, seam_index: int
 ) -> tuple[tuple[base.Pauli, base.Pauli], dict[str, object]]:
-    """Attach target logical labels only after the physical rows are built."""
+    """Attach target logical labels only after the edge-qubit rows are built."""
 
-    rows, detail = physical_seam_rows(code, seam_index)
+    rows, detail = edge_seam_rows(code, seam_index)
     graph = code.graph
     _edge, source_cell, target_cell, source_mode, target_mode, _axis = (
         graph.stream_edges[seam_index]
@@ -677,7 +677,7 @@ def schedule_controls(code: GaugeCode):
         },
         "colors": len(layer_supports),
         "collisions": collisions,
-        "physical_schedule_sha256": full_digest,
+        "edge_schedule_sha256": full_digest,
         "complete_seam_factor_deletion_active": deleted_digest != full_digest,
         "individual_G_summand_max_weight": max(map(pauli_weight, summands)),
         "individual_G_summand_max_cell_diameter": max(
@@ -711,8 +711,8 @@ def held_span_controls(code: GaugeCode):
     radius_one_failures = []
     residual_shape_failures = 0
     for seam_index, row in enumerate(code.graph.stream_edges):
-        physical_rows, detail = seam_terms(code, seam_index)
-        decoded = tuple(decoded_logical(term, code) for term in physical_rows)
+        edge_rows, detail = seam_terms(code, seam_index)
+        decoded = tuple(decoded_logical(term, code) for term in edge_rows)
         target = patch.logical_hop_terms(*detail["logical_indices"])
         residual = logical_right_z_residual(decoded, target)
         residual_cells = set()
@@ -1135,9 +1135,9 @@ def fixture_row(name, graph):
     return code, {
         "name": name,
         "cells": len(graph.cells),
-        "base_edge_M2": code.base_qubits,
-        "seam_gauge_M2": code.gauge_qubits,
-        "total_M2": code.qubits,
+        "base_edge_qubits": code.base_qubits,
+        "seam_gauge_edge_qubits": code.gauge_qubits,
+        "total_edge_qubits": code.qubits,
         "base_stabilizers": len(code.base_code.stabilizers),
         "edge_gauge_stabilizers": len(code.gauge_stabilizers),
         "logical_matter_qubits": len(code.logical_z),
@@ -1166,7 +1166,7 @@ def note_contract() -> None:
         "type: meta",
         "authority: none",
         "audit: unset",
-        "one edge gauge m2",
+        "one abstract edge-gauge qubit",
         "elementary face",
         "no supplied hamiltonian cell path",
         "common e",
@@ -1191,10 +1191,10 @@ def note_contract() -> None:
 
 
 def run():
-    physical_source = inspect.getsource(locally_oriented_seam) + inspect.getsource(
-        physical_seam_rows
+    edge_source = inspect.getsource(locally_oriented_seam) + inspect.getsource(
+        edge_seam_rows
     )
-    forbidden_physical_queries = tuple(
+    forbidden_edge_queries = tuple(
         token
         for token in (
             "stream_terms",
@@ -1203,12 +1203,12 @@ def run():
             "cell_path",
             "desired_interval",
         )
-        if token in physical_source
+        if token in edge_source
     )
     check(
-        "physical seam construction contains no path, interval, or target-order query",
-        not forbidden_physical_queries,
-        forbidden_physical_queries,
+        "edge-qubit seam construction contains no path, interval, or target-order query",
+        not forbidden_edge_queries,
+        forbidden_edge_queries,
     )
     fixtures = (
         (
@@ -1272,7 +1272,7 @@ def run():
         all(row["structural_failures"] == 0 for row in rows.values()),
         {
             name: {
-                "M2": row["total_M2"],
+                "edge_qubits": row["total_edge_qubits"],
                 "tableau_rows": row["tableau_rows"],
                 "translations": row["covariance"]["translations"],
                 "frames": row["covariance"]["proper_cubic_frames"],

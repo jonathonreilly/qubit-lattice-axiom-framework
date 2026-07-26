@@ -550,6 +550,9 @@ def common_coframe_physical_campaign():
         "non_NN_failures": sum(row["route"]["non_NN_failures"] for row in rows),
         "operand_order_failures": sum(row["route"]["operand_order_failures"] for row in rows),
         "route_return_failures": sum(row["route"]["route_return_failures"] for row in rows),
+        "minimum_first_route_SWAP_detected_macros": min(
+            row["route"]["delete_first_swap_detected_macros"] for row in rows
+        ),
         "minimum_active_gauge_deletion_failures": min(gauge_delete_values),
         "minimum_active_primitive_deletion_residual": min(
             deletions["primitive"].values()

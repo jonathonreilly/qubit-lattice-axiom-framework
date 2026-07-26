@@ -1,0 +1,42 @@
+{
+  "cycle": 706,
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "finite_signed_graph_code_equivalence_closed_bounded_recurrent_circuit_open",
+  "tests_passed": 8,
+  "tests_failed": 0,
+  "route_independent_obstruction": false,
+  "axiom_pressure": false,
+  "key_results": {
+    "logical_pairs_fixed": 24,
+    "edge_generator_images": 160,
+    "edge_image_rank": 160,
+    "ordered_generator_products": 25600,
+    "maximum_image_weight": 15,
+    "maximum_image_cell_diameter": 2,
+    "natural_signed_rail_choices_falsified": 1296,
+    "individual_frame_semantic_checks": 2496,
+    "ordered_direction_products": 576,
+    "rail_label_product_checks": 2304
+  },
+  "artifacts": [
+    {
+      "path": "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+      "sha256": "ecdc1011414beded428c06121942eae43c886506e5ee2836757eb6d75af115b5"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/CYCLE706_OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_EQUIVALENCE_NOTE_2026-07-26.md",
+      "sha256": "c939a50f13bde54c6e3a395a340f8bb070b1d9a08a60d732f5ef3a961d819231"
+    },
+    {
+      "path": "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+      "sha256": "2e468616374d2d24842acb7792812355b9abfc6ad17a38f14485804531649da7"
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.txt",
+      "sha256": "f55191a1c62b01a5b3f00e703ff015d0b265437a8a285382e63f224a48f6e81b"
+    }
+  ],
+  "terminal": "SUMMARY pass=8 fail=0"
+}

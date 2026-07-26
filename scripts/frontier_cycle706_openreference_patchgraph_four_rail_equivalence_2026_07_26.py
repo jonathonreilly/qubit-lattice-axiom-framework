@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """Cycle 706: exact 80 <-> 76+4 OpenReference/PatchGraph bridge.
 
-PR 5641 is read-only evidence.  This runner independently reconstructs its
-OpenReferenceGraph and no-reference-bond PatchGraph definitions on current
-origin/main, then tests two distinct propositions:
+This runner independently reconstructs the landed Cycle-703 OpenReferenceGraph
+and no-reference-bond PatchGraph definitions, then tests two distinct propositions:
 
 1. the natural edge relabeling to PatchGraph tensor four single-Pauli rails;
 2. a signed Clifford tableau equivalence which fixes all matter logical pairs
    and sends each bond-rectangle stabilizer to one prepared Z rail.
 
 The second map is an exact finite code equivalence.  Its ambient tableau
-completion is not asserted to be a bounded recurrent physical circuit.
+completion is not asserted to be a bounded recurrent edge-qubit circuit or a
+literal one-M2-per-Z3-site implementation.
 """
 
 from __future__ import annotations
@@ -33,7 +33,6 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17 as base
 
 
-PR5641_HEAD = "b88d7458eb44353269884e5e70dfe29f7c0f7870"
 EXPECTED_OPEN_2X2_EDGE_DIGEST = (
     "324a88a72a23afb0f2d8ac445aa6d3a8709d4a2d4ce0eee6a8fea031f33ea6c4"
 )
@@ -897,7 +896,7 @@ def candidate_controls(equivalence: Equivalence) -> dict[str, object]:
         positive_span_status(row, equivalence) for row in patch_fundamental
     )
 
-    physical_generators = []
+    edge_generators = []
     image_weights = []
     image_diameters = []
     inverse_failures = 0
@@ -909,18 +908,18 @@ def candidate_controls(equivalence: Equivalence) -> dict[str, object]:
                 else base.Pauli(z=1 << qubit)
             )
             image = equivalence.forward(row)
-            physical_generators.append((row, image))
+            edge_generators.append((row, image))
             image_weights.append(pauli_weight(image))
             image_diameters.append(
                 cell_diameter(target_support_cells(image, equivalence))
             )
             inverse_failures += equivalence.inverse(image) != row
     image_rank = base.gf2_rank(
-        image.symplectic(qubits) for _source, image in physical_generators
+        image.symplectic(qubits) for _source, image in edge_generators
     )
     multiplication_failures = 0
-    for left, _left_image in physical_generators:
-        for right, _right_image in physical_generators:
+    for left, _left_image in edge_generators:
+        for right, _right_image in edge_generators:
             multiplication_failures += (
                 equivalence.forward(left @ right)
                 != equivalence.forward(left) @ equivalence.forward(right)
@@ -947,14 +946,14 @@ def candidate_controls(equivalence: Equivalence) -> dict[str, object]:
                 for deleted in range(len(equivalence.target_rails))
             }
         ),
-        "physical_map_any_generator_deleted": sorted(
+        "edge_map_any_generator_deleted": sorted(
             {
                 base.gf2_rank(
                     image.symplectic(qubits)
-                    for index, (_source, image) in enumerate(physical_generators)
+                    for index, (_source, image) in enumerate(edge_generators)
                     if index != deleted
                 )
-                for deleted in range(len(physical_generators))
+                for deleted in range(len(edge_generators))
             }
         ),
     }
@@ -981,10 +980,10 @@ def candidate_controls(equivalence: Equivalence) -> dict[str, object]:
         "semantic_map_failures": semantic_failures,
         "patch_fundamental_loop_count": len(patch_fundamental),
         "patch_fundamental_signed_status": dict(patch_fundamental_status),
-        "physical_generator_images": len(physical_generators),
-        "physical_image_rank": image_rank,
+        "edge_generator_images": len(edge_generators),
+        "edge_image_rank": image_rank,
         "inverse_failures": inverse_failures,
-        "ordered_generator_pair_products": len(physical_generators) ** 2,
+        "ordered_generator_pair_products": len(edge_generators) ** 2,
         "multiplication_failures": multiplication_failures,
         "image_weight_census": dict(sorted(Counter(image_weights).items())),
         "maximum_image_weight": max(image_weights),
@@ -1003,16 +1002,16 @@ def candidate_controls(equivalence: Equivalence) -> dict[str, object]:
         details,
     )
     check(
-        "the 160 physical Pauli generators give a full-rank exact signed group isomorphism with exhaustive pair multiplication and inverse checks",
+        "the 160 graph-edge Pauli generators give a full-rank exact signed group isomorphism with exhaustive pair multiplication and inverse checks",
         image_rank == 2 * qubits
         and inverse_failures == 0
         and multiplication_failures == 0
-        and deletion_ranks["physical_map_any_generator_deleted"] == [2 * qubits - 1],
+        and deletion_ranks["edge_map_any_generator_deleted"] == [2 * qubits - 1],
         {
             key: details[key]
             for key in (
-                "physical_generator_images",
-                "physical_image_rank",
+                "edge_generator_images",
+                "edge_image_rank",
                 "inverse_failures",
                 "ordered_generator_pair_products",
                 "multiplication_failures",
@@ -1263,8 +1262,8 @@ def geometry_controls() -> tuple[dict[str, object], Equivalence]:
         rows[name] = {
             "cells": n,
             "coarse_adjacencies": adjacency,
-            "open_edge_M2": len(fixture.open_graph.edges),
-            "patch_edge_M2": len(fixture.patch_graph.edges),
+            "open_edge_qubits": len(fixture.open_graph.edges),
+            "patch_edge_qubits": len(fixture.patch_graph.edges),
             "candidate_rails": len(fixture.rail_labels),
             "open_stabilizer_rank": source_stabilizer_rank,
             "patch_plus_rail_stabilizer_rank": target_stabilizer_rank,
@@ -1278,24 +1277,24 @@ def geometry_controls() -> tuple[dict[str, object], Equivalence]:
         }
     held = fixtures["held_2x2"]
     evidence = {
-        "PR5641_read_only_head": PR5641_HEAD,
+        "landed_cycle703_graph_source": "docs/RECURRENT_ENDPOINT_INCIDENCE_PHYSICAL_M2_COMPILER_TOURNAMENT_CYCLE703_NOTE_2026-07-25.md",
         "open_2x2_edge_digest": edge_digest(held.open_graph),
         "patch_path_2x2_edge_digest": edge_digest(held.patch_graph),
         "expected_open_digest": EXPECTED_OPEN_2X2_EDGE_DIGEST,
         "expected_patch_digest": EXPECTED_PATCH_PATH_2X2_EDGE_DIGEST,
     }
     check(
-        "the independent reconstruction matches the PR5641 2x2 graph digests and gives Open=Patch+one rail per coarse adjacency",
+        "the independent reconstruction matches the landed Cycle703 2x2 graph digests and gives Open=Patch+one rail per coarse adjacency",
         evidence["open_2x2_edge_digest"] == evidence["expected_open_digest"]
         and evidence["patch_path_2x2_edge_digest"] == evidence["expected_patch_digest"]
         and all(
-            row["open_edge_M2"]
-            == row["patch_edge_M2"] + row["candidate_rails"]
+            row["open_edge_qubits"]
+            == row["patch_edge_qubits"] + row["candidate_rails"]
             and row["candidate_rails"] == row["coarse_adjacencies"]
             and row["logical_qubits"] == 6 * row["cells"]
             and row["open_stabilizer_rank"]
             == row["patch_plus_rail_stabilizer_rank"]
-            == row["open_edge_M2"] - row["logical_qubits"]
+            == row["open_edge_qubits"] - row["logical_qubits"]
             and row["source_canonical_failures"] == 0
             and row["target_canonical_failures"] == 0
             for row in rows.values()
@@ -1332,7 +1331,7 @@ def unlawful_domain_controls() -> dict[str, object]:
 def supplied_inventory() -> dict[str, object]:
     inventory = {
         "supplied": [
-            "PR5641 head SHA and the two graph definitions as read-only evidence",
+            "the landed Cycle703 graph definitions and their two edge-list digests",
             "the 2x2 cell set and its finite coordinate chart",
             "the six-mode intra-cell Fock order",
             "the local edge order used by the BKSF A generators",
@@ -1343,18 +1342,18 @@ def supplied_inventory() -> dict[str, object]:
             "the 76 shared-edge bijection and four reference-bond rail labels",
             "the signed canonical bases and exact Clifford Pauli map",
             "the natural-map signed-sector falsifier",
-            "the 24-frame semantic covariance diagram and 576-product rail action",
+            "the 24 individual-frame semantic covariance diagrams and 576-product direction/rail-label composition",
             "all ranks, inverse checks, multiplication checks, and deletion residuals",
         ],
         "open": [
             "a bounded recurrent Clifford circuit implementing the ambient tableau map",
             "an all-volume natural family with constant support independent of patch size",
-            "composition with preparation controller, stream repetition, and physical M2 placement",
+            "composition with preparation controller, stream repetition, and literal Z3/M2 placement",
             "autonomous generation of the rail-Z reference state",
         ],
         "not_claimed": [
             "the direct edge relabeling is not an equivalence",
-            "the finite tableau map is not called a local physical compiler",
+            "the finite tableau map is not called a local physical-site compiler",
             "no minimum four-rail content or graph-level impossibility is claimed",
             "no compiler order is called time and no stabilizer sign is called energy",
         ],

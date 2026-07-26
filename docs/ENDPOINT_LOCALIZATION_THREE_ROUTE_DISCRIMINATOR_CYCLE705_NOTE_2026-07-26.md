@@ -9,8 +9,11 @@ Authority: none. Audit: unset. Constitutional effect: none.
 This package depends on the bounded Cycle-703/704 tournament in
 [`RECURRENT_ENDPOINT_INCIDENCE_PHYSICAL_M2_COMPILER_TOURNAMENT_CYCLE703_NOTE_2026-07-25.md`](RECURRENT_ENDPOINT_INCIDENCE_PHYSICAL_M2_COMPILER_TOURNAMENT_CYCLE703_NOTE_2026-07-25.md)
 and tests three independent localizations of its remaining recurrent sign and
-support wall.  Its primary fail-closed runner is
+support wall.
+
+**Primary runner:**
 [`scripts/frontier_cycle705_endpoint_localization_tournament_acceptance_2026_07_26.py`](../scripts/frontier_cycle705_endpoint_localization_tournament_acceptance_2026_07_26.py).
+
 The runner pins and replays all three route programs in isolated interpreters.
 Detailed route provenance, including route-specific N1--N8 and supplied/open
 inventories, is recorded in:

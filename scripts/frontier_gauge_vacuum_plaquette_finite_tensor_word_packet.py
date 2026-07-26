@@ -34,6 +34,12 @@ amplitudes is NOT claimed here.
 Imports: numpy + scipy.special.iv (family convention; matches the
 stipulated-integral companion runner
 frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.py).
+
+Output form: deliberately compact — one line per check, no rule bars, marker
+text carried once — so that the complete execution certificate stays small.
+Every one of the checks is printed individually with its measured value; no
+check, value, or section is elided or summarized away. The numeric content and
+the check set are identical to the prior verbose-format revision of this runner.
 """
 
 from __future__ import annotations
@@ -59,21 +65,11 @@ def check(name: str, ok: bool, detail: str = "") -> None:
         PASS += 1
     else:
         FAIL += 1
-    print(f"  [{tag}] {name}" + (f"  ({detail})" if detail else ""))
-
-
-def banner(title: str) -> None:
-    print()
-    print("=" * 88)
-    print(f" {title}")
-    print("=" * 88)
+    print(f"[{tag}] {name}" + (f" | {detail}" if detail else ""))
 
 
 def section(title: str) -> None:
-    print()
-    print("-" * 88)
-    print(f" {title}")
-    print("-" * 88)
+    print(f"-- {title}")
 
 
 # Stipulated finite-evaluation parameters (match the companion integral).
@@ -156,50 +152,39 @@ def conjugation_swap_matrix(weights, index) -> np.ndarray:
 # Part 1: Note structure
 # ---------------------------------------------------------------------------
 def part1_note_structure():
-    section("Part 1: note structure")
+    section("Part 1: note structure (20 markers)")
     required = [
-        ("title token: Finite Tensor-Word Packet",
-         "Finite Tensor-Word Packet"),
-        ("claim_type: bounded_theorem",
-         "Claim type:** bounded_theorem"),
-        ("bounded status phrase",
-         "finite truncated tensor-word packet only"),
-        ("Claim section header", "## Claim"),
-        ("Bounded inputs section header", "## Bounded inputs"),
-        ("Proof-Walk section header", "## Proof-Walk"),
-        ("Dependencies section header", "## Dependencies"),
-        ("Boundaries section header", "## Boundaries"),
-        ("Verification section header", "## Verification"),
-        ("(P1) nonnegativity stated", "(P1) **Nonnegativity"),
-        ("(P2) conjugation-swap stated", "(P2) **Conjugation-swap"),
-        ("(P3) boundary nonneg stated", "(P3) **Nonnegative boundary amplitude"),
-        ("(P3-corollary) S·boundary0=boundary0 derived from (P2)",
-         "Derived corollary of (P2)"),
-        ("I-1 stipulated finite integral coefficients stated",
-         "(I-1) **Stipulated finite integral coefficients.**"),
-        ("I-2 fusion multiplicities stated",
-         "(I-2) **`SU(3)` fundamental and anti-fundamental fusion"),
-        ("parent-note cite: GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER",
-         "GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md"),
-        ("Wilson-environment companion cited (rho_pq6)",
-         "GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09"),
-        ("explicit not-claimed: parent's matrix-element identity",
-         "claim the parent note's structural matrix-element identity"),
-        ("explicit not-claimed: full untruncated case",
-         "close the full untruncated tensor-transfer construction"),
-        ("split-note finite-packet framing",
-         "split note for one finite tensor-word packet"),
+        "Finite Tensor-Word Packet",
+        "Claim type:** bounded_theorem",
+        "finite truncated tensor-word packet only",
+        "## Claim",
+        "## Bounded inputs",
+        "## Proof-Walk",
+        "## Dependencies",
+        "## Boundaries",
+        "## Verification",
+        "(P1) **Nonnegativity",
+        "(P2) **Conjugation-swap",
+        "(P3) **Nonnegative boundary amplitude",
+        "Derived corollary of (P2)",
+        "(I-1) **Stipulated finite integral coefficients.**",
+        "(I-2) **`SU(3)` fundamental and anti-fundamental fusion",
+        "GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md",
+        "GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09",
+        "claim the parent note's structural matrix-element identity",
+        "close the full untruncated tensor-transfer construction",
+        "split note for one finite tensor-word packet",
     ]
-    for label, marker in required:
+    for marker in required:
         ok = marker in NOTE_TEXT or marker in NOTE_FLAT
-        check(f"contains: {label}", ok, f"marker = {marker!r}")
+        check(f"note has {marker!r}", ok)
 
 
 # ---------------------------------------------------------------------------
 # Part 2: Forbidden vocabulary
 # ---------------------------------------------------------------------------
 def part2_forbidden_vocabulary():
-    section("Part 2: forbidden meta-framing vocabulary absent (note + runner docstring)")
+    section("Part 2: rejected vocabulary absent (note + docstring)")
     forbidden = [
         "algebraic universality",
         "lattice-realization-invariant",
@@ -223,40 +208,32 @@ def part2_forbidden_vocabulary():
                                runner_text, re.DOTALL)
     runner_docstring = docstring_match.group(1) if docstring_match else ""
     for token in forbidden:
-        check(
-            f"absent in note (rejected vocabulary): {token!r}",
-            token not in NOTE_TEXT,
-        )
-        check(
-            f"absent in runner docstring (rejected vocabulary): {token!r}",
-            token not in runner_docstring,
-        )
+        check(f"note lacks {token!r}", token not in NOTE_TEXT)
+        check(f"doc lacks {token!r}", token not in runner_docstring)
 
 
 # ---------------------------------------------------------------------------
 # Part 3: Cited upstreams
 # ---------------------------------------------------------------------------
 def part3_cited_upstreams():
-    section("Part 3: cited upstreams (all on origin/main)")
+    section("Part 3: cited upstreams")
     must_exist = [
         "docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_THEOREM_NOTE.md",
         "docs/GAUGE_VACUUM_PLAQUETTE_RHO_PQ6_WILSON_ENVIRONMENT_BOUNDED_NOTE_2026-05-09.md",
     ]
     for rel in must_exist:
-        check(f"upstream exists: {rel}", (ROOT / rel).exists())
+        check(f"upstream: {rel}", (ROOT / rel).exists())
 
 
 # ---------------------------------------------------------------------------
 # Part 4: Construct tensor_word and verify (P1), (P2), (P3.a), (P3.b)
 # ---------------------------------------------------------------------------
 def part4_construct_and_verify_packet():
-    section("Part 4: construct tensor_word; verify (P1), (P2), (P3.a), (P3.b)")
+    section("Part 4: construct tensor_word; verify (P1),(P2),(P3)")
     nf, nfb, weights, index = build_mult_matrices(NMAX)
     swap = conjugation_swap_matrix(weights, index)
-    print(f"  truncation: NMAX = {NMAX} (weight box [0..{NMAX}]^2 = {len(weights)} states)")
-    print(f"             MODE_MAX = {MODE_MAX} (Bessel mode sum)")
-    print(f"             beta = {BETA}, beta/3 = {ARG}")
-    print()
+    print(f"NMAX={NMAX} box [0..{NMAX}]^2 = {len(weights)} states; "
+          f"MODE_MAX={MODE_MAX}; beta={BETA}; beta/3={ARG}")
 
     # Compute Wilson character coefficients on the box
     coeffs = np.array(
@@ -269,67 +246,43 @@ def part4_construct_and_verify_packet():
     # (I-2) sanity checks: N_f and N_fbar entries in {0, 1}
     nf_entries_ok = bool(np.min(nf) >= 0 and np.max(nf) <= 1)
     nfb_entries_ok = bool(np.min(nfb) >= 0 and np.max(nfb) <= 1)
-    check("(I-2) N_f entries in {0, 1}", nf_entries_ok)
-    check("(I-2) N_fbar entries in {0, 1}", nfb_entries_ok)
+    check("(I-2) N_f entries in {0,1}", nf_entries_ok)
+    check("(I-2) N_fbar entries in {0,1}", nfb_entries_ok)
 
     # (I-2) sanity checks: S · N_f = N_fbar · S (conjugation swap)
     nf_swap_diff = int(np.max(np.abs(swap @ nf - nfb @ swap)))
     nfb_swap_diff = int(np.max(np.abs(swap @ nfb - nf @ swap)))
-    check(
-        "(I-2) S · N_f = N_fbar · S (fundamental ↔ anti-fundamental conjugation)",
-        nf_swap_diff == 0,
-        f"max |S·N_f - N_fbar·S| = {nf_swap_diff}",
-    )
-    check(
-        "(I-2) S · N_fbar = N_f · S (conjugation symmetry)",
-        nfb_swap_diff == 0,
-        f"max |S·N_fbar - N_f·S| = {nfb_swap_diff}",
-    )
+    check("(I-2) S·N_f = N_fbar·S", nf_swap_diff == 0, f"max|.| = {nf_swap_diff}")
+    check("(I-2) S·N_fbar = N_f·S", nfb_swap_diff == 0, f"max|.| = {nfb_swap_diff}")
 
     # Local Wilson coefficient sanity: c_(0,0)(6) > 0, normalized[(0,0)] = 1
     c00_pos = bool(c00 > 0)
     norm_00_one = bool(abs(normalized[index[(0, 0)]] - 1.0) < 1e-12)
     check("(I-1) c_(0,0)(x=2) > 0", c00_pos, f"c_(0,0)(2) = {c00:.6f}")
-    check(
-        "(I-1) normalized[(0,0)] = 1 (definition)",
-        norm_00_one,
-        f"normalized[(0,0)] = {normalized[index[(0, 0)]]:.15f}",
-    )
+    check("(I-1) normalized[(0,0)] = 1", norm_00_one,
+          f"val = {normalized[index[(0, 0)]]:.15f}")
 
     # Local Wilson coefficient conjugation symmetry: normalized[(p,q)] = normalized[(q,p)]
     norm_swap_diff = float(
         np.max(np.abs(normalized - normalized[[index[(q, p)] for p, q in weights]]))
     )
-    check(
-        "(I-1) c_(p,q)(2) = c_(q,p)(2) up to normalization (conjugation symmetry)",
-        norm_swap_diff < 1e-12,
-        f"max |normalized - swap·normalized| = {norm_swap_diff:.2e}",
-    )
+    check("(I-1) c_(p,q)(2) = c_(q,p)(2) up to normalization",
+          norm_swap_diff < 1e-12, f"max|norm - S·norm| = {norm_swap_diff:.2e}")
 
     # Construct tensor_word per eq. (3) of the bounded note
     diag_c = np.diag(normalized)
     tensor_word = diag_c @ (nf + nfb) @ diag_c @ (nf + nfb).T @ diag_c
-    print()
-    print(f"  tensor_word: {tensor_word.shape[0]} x {tensor_word.shape[1]} real matrix")
-    print(f"               built from diag_c · (N_f+N_fbar) · diag_c · (N_f+N_fbar)^T · diag_c")
-    print()
+    print(f"tensor_word = {tensor_word.shape[0]}x{tensor_word.shape[1]} real"
+          " = diag_c·(N_f+N_fbar)·diag_c·(N_f+N_fbar)^T·diag_c")
 
     # (P1) nonnegativity
     word_min = float(np.min(tensor_word))
     word_max = float(np.max(tensor_word))
-    check(
-        "(P1) min(tensor_word) ≥ 0 (nonnegativity of all matrix entries)",
-        word_min >= 0.0,
-        f"min = {word_min:.6e}, max = {word_max:.6e}",
-    )
+    check("(P1) min(tensor_word) >= 0", word_min >= 0.0, f"min = {word_min:.6e}, max = {word_max:.6e}")
 
     # (P2) conjugation-swap symmetry
     word_swap_diff = float(np.max(np.abs(swap @ tensor_word - tensor_word @ swap)))
-    check(
-        "(P2) ‖S · tensor_word − tensor_word · S‖_∞ < 10⁻¹² (conjugation-swap symmetry)",
-        word_swap_diff < 1e-12,
-        f"max diff = {word_swap_diff:.2e}",
-    )
+    check("(P2) ||S·tw - tw·S||_inf < 1e-12", word_swap_diff < 1e-12, f"max diff = {word_swap_diff:.2e}")
 
     # (P3) nonneg boundary amplitude
     boundary0 = np.zeros(len(weights), dtype=float)
@@ -337,11 +290,7 @@ def part4_construct_and_verify_packet():
     amp = tensor_word @ boundary0
     amp_min = float(np.min(amp))
     amp_max = float(np.max(amp))
-    check(
-        "(P3) min(amp) ≥ 0 (nonneg boundary amplitude)",
-        amp_min >= 0.0,
-        f"min = {amp_min:.6e}, max = {amp_max:.6e}",
-    )
+    check("(P3) min(amp) >= 0", amp_min >= 0.0, f"min = {amp_min:.6e}, max = {amp_max:.6e}")
 
     # (P3-corollary, derived from P2): the (0,0) state is fixed by S,
     # so S · boundary0 = boundary0 trivially. Combined with (P2):
@@ -352,46 +301,29 @@ def part4_construct_and_verify_packet():
     # Verify the trivial S-fixed-point step explicitly, plus the
     # consistency S · amp = amp at numerical precision.
     s_b0_diff = int(np.max(np.abs(swap @ boundary0 - boundary0)))
-    check(
-        "(P3-corollary, EXACT) S · boundary0 = boundary0 (since (0,0) is "
-        "S-fixed)",
-        s_b0_diff == 0,
-        f"max |S·boundary0 - boundary0| = {s_b0_diff}",
-    )
+    check("(P3-cor, EXACT) S·boundary0 = boundary0", s_b0_diff == 0, f"max|S·b0 - b0| = {s_b0_diff}")
     amp_swap_diff = float(np.max(np.abs(swap @ amp - amp)))
-    check(
-        "(P3-corollary, consistency) ‖S · amp − amp‖_∞ < 10⁻¹² "
-        "(follows from (P2) + S·b0 = b0; consistency check, not separate load-bearing)",
-        amp_swap_diff < 1e-12,
-        f"max diff = {amp_swap_diff:.2e}",
-    )
+    check("(P3-cor, consistency) ||S·amp - amp||_inf < 1e-12",
+          amp_swap_diff < 1e-12, f"max diff = {amp_swap_diff:.2e}")
 
     # Print sample entries for diagnostic visibility
-    print()
-    print("  Sample tensor_word entries (boundary-projection diagonals):")
-    for w in [(0, 0), (1, 0), (0, 1), (1, 1), (2, 0)]:
-        if w in index:
-            i = index[w]
-            print(f"    tensor_word[{w!s:>9}, (0,0)] = {tensor_word[i, index[(0, 0)]]:.6e}")
-    print(f"  amp = tensor_word · e_{{(0,0)}}")
-    for w in [(0, 0), (1, 0), (1, 1), (2, 0), (2, 2)]:
-        if w in index:
-            i = index[w]
-            print(f"    amp[{w!s:>9}] = {amp[i]:.6e}")
+    cols = [(0, 0), (1, 0), (0, 1), (1, 1), (2, 0)]
+    print("tensor_word[w,(0,0)] " + "  ".join(
+        f"{w}={tensor_word[index[w], index[(0, 0)]]:.6e}"
+        for w in cols if w in index))
+    rows = [(0, 0), (1, 0), (1, 1), (2, 0), (2, 2)]
+    print("amp[w] = (tensor_word·e_(0,0))[w] " + "  ".join(
+        f"{w}={amp[index[w]]:.6e}" for w in rows if w in index))
 
 
 # ---------------------------------------------------------------------------
 # Part 5: Import boundary
 # ---------------------------------------------------------------------------
 def part5_import_boundary():
-    section("Part 5: imports limited to family convention (numpy + scipy)")
+    section("Part 5: import boundary")
     runner_text = Path(__file__).read_text()
     # numpy + scipy.special.iv is the family convention used by the companion
     # frontier_gauge_vacuum_plaquette_rho_pq_6_wilson_environment_compute.
-    allowed = {
-        "numpy", "scipy", "scipy.special",
-        "pathlib", "re", "sys", "__future__",
-    }
     bad = []
     for ln in runner_text.splitlines():
         ln = ln.strip()
@@ -404,18 +336,15 @@ def part5_import_boundary():
         # Allow numpy, scipy, plus stdlib
         if mod not in {"numpy", "scipy", "pathlib", "re", "sys", "__future__"}:
             bad.append(ln)
-    check(
-        "imports limited to numpy + scipy + stdlib (family convention)",
-        not bad,
-        f"non-allowed = {bad}" if bad else "ok",
-    )
+    check("imports limited to numpy + scipy + stdlib",
+          not bad, f"non-allowed = {bad}" if bad else "ok")
 
 
 # ---------------------------------------------------------------------------
 # Part 6: Boundary check
 # ---------------------------------------------------------------------------
 def part6_boundary_check():
-    section("Part 6: boundary check (what is NOT claimed)")
+    section("Part 6: what is NOT claimed")
     not_claimed = [
         "claim the parent note's structural matrix-element identity",
         "close the full untruncated tensor-transfer construction",
@@ -423,35 +352,20 @@ def part6_boundary_check():
         "change any parent or companion source row",
     ]
     for marker in not_claimed:
-        check(
-            f"note explicitly does not claim: {marker[:55]}",
-            marker in NOTE_TEXT,
-        )
+        check(f"not claimed: {marker!r}", marker in NOTE_TEXT)
 
-    check(
-        "claim_type: bounded_theorem stated",
-        "Claim type:** bounded_theorem" in NOTE_TEXT,
-    )
-    check(
-        "split-note finite-packet framing referenced",
-        "split note for one finite tensor-word packet" in NOTE_TEXT,
-    )
-    check(
-        "(I-1) and (I-2) are declared supplied mathematical inputs",
-        "No framework axiom" in NOTE_TEXT,
-    )
+    check("note has 'Claim type:** bounded_theorem'",
+          "Claim type:** bounded_theorem" in NOTE_TEXT)
+    check("note has 'split note for one finite tensor-word packet'",
+          "split note for one finite tensor-word packet" in NOTE_TEXT)
+    check("note has 'No framework axiom'",
+          "No framework axiom" in NOTE_TEXT)
 
 
 def main() -> int:
-    banner("frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py")
-    print(" Bounded source note: one explicit nonnegative-entry matrix tensor_word,")
-    print(" constructed at NMAX = 4, MODE_MAX = 80, x = 2 from stipulated")
-    print(" finite integral coefficients and SU(3) fusion multiplicities.")
-    print(" Verifies three load-bearing structural properties (P1)-(P3) at")
-    print(" double precision, plus the (P3-corollary) consistency check that")
-    print(" S·amp = amp follows from (P2) since S·boundary0 = boundary0.")
-    print(" Follows prior audit feedback's split-note finite-packet path")
-    print(" on parent gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note.")
+    print("frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py")
+    print("Bounded packet: tensor_word at NMAX=4, MODE_MAX=80, x=2; verifies"
+          " (P1)-(P3) at double precision plus the derived (P3-corollary) check.")
 
     part1_note_structure()
     part2_forbidden_vocabulary()
@@ -460,23 +374,19 @@ def main() -> int:
     part5_import_boundary()
     part6_boundary_check()
 
-    print()
-    print("=" * 88)
-    print(f" TOTAL: PASS={PASS}, FAIL={FAIL}")
-    print("=" * 88)
+    print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     if FAIL == 0:
-        print()
-        print(" RESULT: one explicit nonnegative-entry matrix tensor_word constructed from")
-        print(" stipulated finite integral coefficients (NMAX=4, MODE_MAX=80,")
-        print(" x=2) and SU(3) fusion multiplicities verifies three load-bearing")
-        print(" structural properties at double precision: (P1) nonnegativity of")
-        print(" matrix entries, (P2) conjugation-swap symmetry, (P3) nonnegative")
-        print(" boundary amplitude under (0,0)-component unit-vector readout. The")
-        print(" boundary-amplitude conjugation symmetry follows immediately from")
-        print(" (P2) since (0,0) is fixed by the conjugation swap (consistency")
-        print(" check, not a separate load-bearing property). The parent's broader")
-        print(" matrix-element identity z_(p,q)^env = <chi, T^L eta> is NOT claimed")
-        print(" here; this is a split-note bounded packet only.")
+        print("RESULT: one explicit nonnegative-entry matrix tensor_word constructed from")
+        print("stipulated finite integral coefficients (NMAX=4, MODE_MAX=80,")
+        print("x=2) and SU(3) fusion multiplicities verifies three structural")
+        print("properties at double precision: (P1) nonnegativity of matrix entries,")
+        print("(P2) conjugation-swap symmetry, (P3) nonnegative boundary amplitude")
+        print("under (0,0)-component unit-vector readout. The boundary-amplitude")
+        print("conjugation symmetry follows immediately from (P2) since (0,0) is")
+        print("fixed by the conjugation swap (consistency check, not a separate")
+        print("load-bearing property). The parent's broader matrix-element identity")
+        print("z_(p,q)^env = <chi, T^L eta> is NOT claimed here; this is a")
+        print("split-note bounded packet only.")
     return 0 if FAIL == 0 else 1
 
 

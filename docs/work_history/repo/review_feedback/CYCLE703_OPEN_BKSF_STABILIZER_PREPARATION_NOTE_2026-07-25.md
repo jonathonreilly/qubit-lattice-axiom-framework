@@ -10,7 +10,7 @@ This checkpoint attacks the remaining local-Gauss state layer of the Cycle-232
 seven-vertex BKSF graph.  It supplies a target-independent open-boundary state
 encoder in two cleanly separated pieces:
 
-1. start every edge M2 in `|0>`, measure the local loop checks, and apply
+1. start every BKSF graph-edge qubit in `|0>`, measure the local loop checks, and apply
    Z-type syndrome corrections to prepare the unique all-`B_v=+1` vacuum;
 2. coherently load an arbitrary six-qubit-per-cell input through an explicit
    bounded logical Pauli tableau and reset the input register.
@@ -25,6 +25,11 @@ minimum worst-case radius is
 ```text
 floor((L-2)/2).
 ```
+
+This `OpenReferenceGraph` includes a parallel intercell reference-bond edge
+(`80` graph-edge qubits on `2x2`).  It is not the no-reference-bond
+`PatchGraph` (`76` on `2x2`) used by the scaled schedule companion.  No signed
+stabilizer/logical-Pauli isometry between those graph codes is constructed.
 
 Thus the narrow negative result is about measurement-plus-Z-correction with
 local information propagation.  It is not a no-go for the BKSF common-`E`, for
@@ -161,7 +166,9 @@ boundary below.
 
 ## Proper-cubic covariance
 
-The physical checks inherit the Cycle-232 proper-cubic BKSF graph covariance.
+The graph-edge checks inherit the Cycle-232 proper-cubic BKSF graph covariance.
+Their `Z^3` site placement, stream-edge repetition lift, ancilla allocation,
+and routed preparation circuit are not composed here.
 The finite intra-cell Fock chart is not literally invariant under direction
 permutation, so the runner audits the correct stronger statement: a frame
 change is repaired by the Cycle-232 local incidence-order CZ/Z gauge and acts

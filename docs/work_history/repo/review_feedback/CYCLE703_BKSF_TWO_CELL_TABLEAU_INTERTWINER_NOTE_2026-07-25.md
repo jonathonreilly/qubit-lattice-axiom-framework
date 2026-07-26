@@ -8,6 +8,12 @@
 
 **Audit:** unset
 
+Terminology boundary: “physical” inside the stabilizer/tableau calculation
+means the BKSF graph-edge-qubit layer as opposed to its logical matter
+subsystem.  This note does not compose that layer with the Cycle-232 `Z^3`
+site placement/repetition isometry and therefore does not close a strict
+physical-site-M2 compiler.
+
 **Reviewed object:** an explicit edge-qubit stabilizer-Clifford isometry for
 the smallest connected two-complete-cell local-Gauss graph, with a fixed +1
 loop character
@@ -122,7 +128,7 @@ and inverse-tableau checks pass.  “Onsite generator coverage” here means the
 octahedral coin edges; the three opposite-port pairs per cell are not graph
 edges and are not silently counted.
 
-This result closes the finite two-cell physical-common-E objection.  It does
+This result closes the finite two-cell BKSF edge-qubit common-E objection.  It does
 not prove bounded-depth or bounded-range preparation on a growing graph.  The
 implemented symplectic completion solves equations against all tableau rows;
 it is global Gaussian elimination.  On a graph family, a literal circuit

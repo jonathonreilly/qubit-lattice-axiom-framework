@@ -4,14 +4,16 @@
 This runner does not call an update ordinal, packet count, rotor value, or
 schedule position time.  It computes a coherent candidate endpoint predicate
 from changes of local matter occupation/B eigenvalues across the exact
-Cycle-703 dressed FSWAP.  Supplied occurrence/admission/domain ports gate a
-bounded reversible predecessor/interval packet.  Projection of that packet
-intertwines the unchanged Cycle-610 EventChain, and packet identities feed the
-unchanged Cycle-612 JointOrder harness.
+Cycle-703 dressed FSWAP.  Supplied occurrence/admission/domain values gate a
+finite reversible software predecessor/interval model.  Projection of that
+model intertwines the unchanged Cycle-610 EventChain, and its identities feed
+the unchanged Cycle-612 JointOrder harness.
 
-The predicate is an opportunity, not occurrence.  The reversible packet is
-not a permanent Record.  Its integer interval has no empirical unit.  BKSF
-state preparation/common E remains open.
+The predicate is an opportunity, not occurrence.  The software packet model
+is not a physical-M2 bank and is not a permanent Record.  Its integer interval
+has no empirical unit.  The local-Gauss operators are BKSF graph-edge qubits;
+their Cycle-232 Z3 physical-site placement/repetition lift is not composed in
+this runner.  BKSF state preparation/common E remains open here.
 
 Authority: none.  Audit: unset.  Constitutional effect: none.
 """
@@ -75,7 +77,7 @@ GAUSS_SHA = sha256(Path(GAUSS.__file__).read_bytes()).hexdigest()
 
 
 # ---------------------------------------------------------------------------
-# Local physical endpoint predicate.
+# Local BKSF edge-qubit endpoint predicate.
 # ---------------------------------------------------------------------------
 
 def b_eigenvalue(occupation: int) -> int:
@@ -232,9 +234,9 @@ def endpoint_controls() -> dict[str, object]:
         "contact_false_positives": contact_false_positives,
         "endpoint_true_cases": endpoint_true,
         "endpoint_false_cases": endpoint_false,
-        "physical_B_words": len(b_weights),
-        "maximum_single_B_M2_weight": max(b_weights),
-        "maximum_two_endpoint_B_M2_union": max(b_union_weights),
+        "edge_qubit_B_words": len(b_weights),
+        "maximum_single_B_edge_qubit_weight": max(b_weights),
+        "maximum_two_endpoint_B_edge_qubit_union": max(b_union_weights),
         "maximum_B_support_owner_cells": max(b_owner_cells),
         "proper_cubic_frames": len(frames),
         "frame_port_failures": frame_port_failures,
@@ -244,7 +246,7 @@ def endpoint_controls() -> dict[str, object]:
 
 
 # ---------------------------------------------------------------------------
-# Reversible bounded predecessor/interval packet.
+# Finite reversible predecessor/interval software model.
 # ---------------------------------------------------------------------------
 
 @dataclass(frozen=True)
@@ -402,7 +404,7 @@ def bank_state(bank: ReversiblePacketBank) -> str:
     return sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
 
 
-def physical_endpoint_case(changed: bool = True):
+def edge_qubit_endpoint_case(changed: bool = True):
     logical = [0] * 12
     if changed:
         logical[0] = 1
@@ -419,8 +421,8 @@ def physical_endpoint_case(changed: bool = True):
 
 
 def packet_interface_controls() -> dict[str, object]:
-    changed = physical_endpoint_case(True)
-    unchanged = physical_endpoint_case(False)
+    changed = edge_qubit_endpoint_case(True)
+    unchanged = edge_qubit_endpoint_case(False)
     packet = ReversiblePacketBank(bank=C610.BANK_SIZE)
     chain = C610.EventChain(bank=C610.BANK_SIZE)
     statuses_match = 0
@@ -547,7 +549,7 @@ def packet_interface_controls() -> dict[str, object]:
     address_bits = math.ceil(math.log2(C610.BANK_SIZE + C610.BANK_REFILL + 1))
     # predecessor, rotor-before, rotor-after, carry, 12-bit matter delta,
     # endpoint, binder, valid, orientation, and three supplied admission bits.
-    packet_payload_M2 = (
+    packet_payload_bits = (
         address_bits + 4 + 4 + 1 + 12 + 1 + 1 + 1 + 1 + 3
     )
     return {
@@ -574,14 +576,14 @@ def packet_interface_controls() -> dict[str, object]:
         "register_inverse_cases": register_inverse_cases,
         "register_inverse_failures": register_inverse_failures,
         "carry_truth_failures": carry_failures,
-        "packet_payload_M2_per_bank_cell": packet_payload_M2,
-        "head_M2": address_bits,
+        "candidate_packet_payload_bits_per_bank_cell": packet_payload_bits,
+        "candidate_head_bits": address_bits,
         "bank_cells": C610.BANK_SIZE,
-        "blank_address_selector_supplied": True,
+        "software_blank_address_selector_supplied": True,
         "actuality_admissibility_domain_supplied": True,
         "empirical_unit_supplied": False,
         "schedule_ordinal_stored": False,
-        "bounded_packet_inverse_accessible": True,
+        "software_packet_inverse_accessible": True,
     }
 
 
@@ -590,7 +592,7 @@ def packet_interface_controls() -> dict[str, object]:
 # ---------------------------------------------------------------------------
 
 def joint_order_controls() -> dict[str, object]:
-    changed = physical_endpoint_case(True)
+    changed = edge_qubit_endpoint_case(True)
     opportunity_a = changed["endpoint"]
     opportunity_b = changed["endpoint"]
 
@@ -625,13 +627,13 @@ def joint_order_controls() -> dict[str, object]:
     forced.force_shared(920, 0, 2)
     forced.force_shared(921, 2, 0)
 
-    unchanged = physical_endpoint_case(False)
+    unchanged = edge_qubit_endpoint_case(False)
     gated = C612.JointOrder()
     no_endpoint_status = (
         gated.admit_shared(930) if unchanged["endpoint"] else "no_opportunity"
     )
     return {
-        "physical_opportunities": (opportunity_a, opportunity_b),
+        "edge_qubit_opportunities": (opportunity_a, opportunity_b),
         "consistent_statuses": (s1, s2),
         "consistent_acyclic": consistent_acyclic,
         "inverted_first": first,
@@ -676,7 +678,7 @@ def main() -> None:
 
     packet = packet_interface_controls()
     check(
-        "the reversible packet append projects exactly to unchanged Cycle610 admission and interval semantics",
+        "the reversible software packet model projects exactly to unchanged Cycle610 admission and interval semantics",
         packet["matching_statuses"] == packet["Cycle610_append_attempts_compared"]
         and packet["bank_admitted"] == C610.BANK_SIZE
         and packet["bank_exhausted_seen"]
@@ -692,14 +694,14 @@ def main() -> None:
     )
 
     check(
-        "the bounded predecessor/interval packet has an exact inverse and replay",
+        "the finite predecessor/interval software model has an exact inverse and replay",
         set(packet["inverse_statuses"]) == {"unappended"}
         and packet["inverse_returned_initial_state"]
         and packet["forward_replay_exact"]
         and packet["register_inverse_cases"] == 96
         and packet["register_inverse_failures"] == 0
         and packet["carry_truth_failures"] == 0
-        and packet["bounded_packet_inverse_accessible"]
+        and packet["software_packet_inverse_accessible"]
         and not packet["schedule_ordinal_stored"],
         {
             "inverse_statuses": packet["inverse_statuses"],
@@ -710,8 +712,8 @@ def main() -> None:
 
     joint = joint_order_controls()
     check(
-        "the physical endpoint adapter preserves the unchanged Cycle612 acyclicity/refusal harness",
-        joint["physical_opportunities"] == (1, 1)
+        "the edge-qubit endpoint adapter preserves the unchanged Cycle612 acyclicity/refusal harness",
+        joint["edge_qubit_opportunities"] == (1, 1)
         and joint["consistent_statuses"] == ("admitted", "admitted")
         and joint["consistent_acyclic"]
         and joint["inverted_first"] == "admitted"
@@ -722,16 +724,16 @@ def main() -> None:
     )
 
     check(
-        "occurrence, admission, permanence, empirical unit, and physical state preparation remain explicit",
-        packet["blank_address_selector_supplied"]
+        "physical-site placement, occurrence, admission, permanence, empirical unit, and state preparation remain explicit",
+        packet["software_blank_address_selector_supplied"]
         and packet["actuality_admissibility_domain_supplied"]
         and not packet["empirical_unit_supplied"]
-        and packet["bounded_packet_inverse_accessible"]
+        and packet["software_packet_inverse_accessible"]
         and not BKSF_STATE_PREPARATION_EXECUTED,
         {
             "endpoint_type": "coherent candidate opportunity",
             "occurrence_and_admission": "supplied ports",
-            "packet_type": "reversible conditional candidate packet",
+            "packet_type": "finite reversible software adapter; physical M2 bank unconstructed",
             "Record_permanence": False,
             "empirical_unit": None,
             "BKSF_state_preparation": False,
@@ -750,7 +752,7 @@ def main() -> None:
         "audit": "unset",
         "cycle": 704,
         "status": "conditional-local-Gauss-Cycle612-endpoint-bridge",
-        "terminal": "LOCAL_GAUSS_ENDPOINT_PACKET_INTERTWINER_CLOSED_OCCURRENCE_RECORD_UNIT_PREPARATION_OPEN",
+        "terminal": "LOCAL_GAUSS_ENDPOINT_SOFTWARE_PACKET_INTERFACE_CLOSED_PHYSICAL_BANK_OPEN",
         "pass": FAIL == 0,
         "tests_passed": PASS,
         "tests_failed": FAIL,
@@ -762,27 +764,30 @@ def main() -> None:
         "certificate": certificate,
         "supplied": (
             "local-D BKSF code and exact dressed FSWAP",
-            "blank endpoint/payload M2 and a blank-address selector",
+            "blank endpoint/payload values and address selection in the software model",
             "actuality, admissibility, law-domain, and co-registration ports",
             "Cycle610 K16 packet convention and Cycle612 cross-order rule",
         ),
         "derived": (
-            "bounded coherent endpoint opportunity from matter B changes",
-            "exact reversible predecessor/interval packet",
+            "bounded coherent endpoint opportunity from local-Gauss edge-qubit B changes",
+            "exact finite reversible predecessor/interval software adapter",
             "Cycle610 projection/intertwiner and unchanged Cycle612 order harness",
         ),
         "open": (
             "objective occurrence and an autonomous admission law",
             "Record permanence (the packet inverse remains accessible)",
             "empirical interval unit or identification with duration",
-            "BKSF physical state common E/preparation",
+            "composition with the BKSF edge-qubit common E/preparation and a Z3 physical-site placement",
             "endpoints for diagonal-phase-only or general superposed coin dynamics",
+            "a bit-level reversible M2 address, freshness, append/unappend, and bank-selection circuit",
         ),
         "claim_ceiling": (
-            "A conditional finite interface theorem: on occupation-basis local-D seam transitions, "
-            "a bounded matter-caused B-change opportunity and reversible M2 packet project exactly "
-            "to the landed predecessor/interval and finite causal-order code. It is not an occurrence "
-            "law, Record, clock, empirical duration, or state-preparation result."
+            "A conditional finite interface theorem: on occupation-basis local-D edge-qubit seam transitions, "
+            "a bounded matter-caused B-change opportunity feeds a finite reversible software adapter "
+            "that projects exactly to the landed predecessor/interval and finite causal-order code. "
+            "The BKSF graph has not been lifted into a physical-site placement and the packet bank "
+            "has not been compiled to physical M2. This is not an occurrence law, "
+            "Record, clock, empirical duration, or state-preparation result."
         ),
         "resources": {
             "elapsed_seconds": time.perf_counter() - START,

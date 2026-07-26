@@ -32,19 +32,20 @@ The stronger state result is also positive.  Coherent syndrome extraction and
 the phase-zero Z decoders factor the complete open L2 preparation as
 
 ```text
-|vac_BKSF>_edge tensor |chi>_record,
+|vac_BKSF>_edge tensor |chi>_syndrome-bank,
 
 |chi> = |+>^96_triangle
         tensor |uniform-even>_six-coarse
         tensor |+>^12_bond.
 ```
 
-The physical vacuum and record are individually pure and have Schmidt rank
-one across the edge/record cut.  The repaired logical loader and every later
-physical update act trivially on the record register.  Therefore one-time `E`
-does not require record reset: the bounded local record can remain in a fixed
-immutable sector.  Reusing the same bank as a new blank measurement target is
-a different obligation and is not constructed.
+The physical vacuum and syndrome-bank factor are individually pure and have
+Schmidt rank one across the edge/syndrome-bank cut.  The repaired logical
+loader and every later edge-qubit update act trivially on the syndrome-bank
+register.  Therefore one-time `E` does not require syndrome-bank reset: the
+bounded local auxiliary can remain in a fixed immutable sector.  Reusing the
+same bank as a new blank measurement target is a different obligation and is
+not constructed.
 
 ## Local dependency forest and echo
 
@@ -149,7 +150,7 @@ preparation remains separate.
 
 ## Complete L2 phase and factorization proof
 
-The open L2 graph has 168 edge M2.  Its loop stages add independent ranks
+The open L2 graph has 168 BKSF edge qubits.  Its loop stages add independent ranks
 
 ```text
 triangle / coarse quotient / bond = 96 / 5 / 12,
@@ -157,7 +158,7 @@ triangle / coarse quotient / bond = 96 / 5 / 12,
 
 for total loop rank 113.  The six coarse rows have one quotient relation: their
 product equals a phase-zero product of 24 already fixed triangle rows.  Hence
-the six coarse record bits have even parity and exactly 32 lawful values.
+the six coarse syndrome bits have even parity and exactly 32 lawful values.
 
 The executable checks:
 
@@ -170,7 +171,7 @@ The executable checks:
 - the dependent coarse relation including Pauli phase.
 
 The load-bearing uniform-amplitude discriminator is independent of the
-physical/record register split.  Select the 96 triangle rows, five independent
+physical/syndrome-bank register split.  Select the 96 triangle rows, five independent
 coarse rows, and 12 bond rows.  Their X-part has rank 113.  The X-part of all
 114 measured rows also has rank 113, with the sole dependency the phase-zero
 coarse relation.  Thus every nonidentity product of the 113 independent checks
@@ -197,20 +198,20 @@ Every `A_s` is phase-zero pure Z, so `A_s|0_edge>=|0_edge>` exactly.  Therefore
 A_s P_s |0_edge> = P_+ |0_edge>
 ```
 
-with no branch phase.  All `2^113` complete record columns have common
+with no branch phase.  All `2^113` complete syndrome-bank columns have common
 amplitude `2^(-113/2)` and phase zero.  This is an amplitude statement, not a
 Born-frequency derivation.
 
-The record state above has 114 independent stabilizer rows on its 114 record
-qubits: 96 triangle X rows, five independent even-X shifts plus the six-bit Z
+The syndrome-bank state above has 114 independent stabilizer rows on its 114
+auxiliary qubits: 96 triangle X rows, five independent even-X shifts plus the six-bit Z
 parity row for the coarse block, and 12 bond X rows.  It has rank 114, zero
 phase failures, and zero commutator failures.  The physical vacuum tableau has
 rank 168.  Their direct product has rank 282 on 282 qubits.  Thus:
 
 ```text
 edge reduced purity   = 1,
-record reduced purity = 1,
-edge/record Schmidt rank = 1.
+syndrome-bank reduced purity = 1,
+edge/syndrome-bank Schmidt rank = 1.
 ```
 
 Fixed spent flags and parked-idle token states are additional local product
@@ -218,17 +219,17 @@ factors; omitting those constant rows from the displayed 282-qubit tableau
 does not change purity or Schmidt rank.
 
 A 336-row type-separation census confirms that the recurrent physical Pauli
-algebra is typed on the edge register while the fixed record occupies its own
+algebra is typed on the edge register while the fixed syndrome bank occupies its own
 register.  The resulting commutators are tautological by disjoint support; they
 check later-update inertness at the declared interface but do not prove
 factorization.  Factorization and equal amplitudes rest instead on the
 X-projection, full-rank correction/check pairing, phase-zero branch relations,
 and the two complete stabilizer tableaux above.
 
-## Record retention and reuse boundary
+## Syndrome-bank retention and reuse boundary
 
 During later physics the local spent-sector rule is identity on both possible
-syndrome bits.  The runner checks its two truth rows exactly.  The record may
+syndrome bits.  The runner checks its two truth rows exactly.  The syndrome bank may
 therefore remain as a bounded inert auxiliary for a one-time state isometry;
 it neither carries later logical input nor participates in `G_physical`.
 Keeping this fixed pure state does not consume growing memory during recurrent
@@ -236,12 +237,12 @@ matter updates.
 
 Three reset questions must not be conflated:
 
-1. **One-time coherent E:** no reset is required.  The record is fixed,
+1. **One-time coherent E:** no reset is required.  The syndrome bank is fixed,
    factorized, and inert.
 2. **Reset of coherent `|chi>`:** a unitary exists because `|chi>` is one known
-   pure stabilizer state.  A uniform local inverse-record encoder is not
+   pure stabilizer state.  A uniform local inverse-bank encoder is not
    constructed here.
-3. **Reset after actual measurement/dephasing:** the record is a mixture over
+3. **Reset after actual measurement/dephasing:** the syndrome bank is a mixture over
    `2^113` orthogonal values.  Mapping all of them to one blank while the
    already identical physical vacuum and every other register remain fixed has
    `2^113-1` collisions.  A unitary reset must export that entropy; a
@@ -250,6 +251,14 @@ Three reset questions must not be conflated:
 The same bank is therefore not claimed reusable as a blank measurement target
 without a reset/export circuit.  That does not block the one-time compiler.
 No pointer copy is called a Record.
+
+The controller is embedded only in the abstract dependency graph.  A
+collision-free allocation of its work qubits into the Cycle-232 spacing-16
+`Z^3` macrocells, including nearest-neighbor routing around carrier sites, is
+not constructed and remains a physical-site compiler obligation.
+It acts on the parallel-reference-bond `OpenReferenceGraph`, not the
+no-reference-bond `PatchGraph` used by the scaled schedule.  No common-E
+equivalence between those graph codes is constructed here.
 
 ## Supplied structure and dependency effect
 
@@ -261,9 +270,9 @@ isometry `E`.
 | Wall | Effect |
 |---|---|
 | `C_ref` | improved: bounded reference/gauge state preparation now has a local returned-work controller; coframe/boundary genesis remains supplied |
-| `C_num` | unchanged: controller and record factorization are number blind |
+| `C_num` | unchanged: controller and syndrome-bank factorization are number blind |
 | `C_wrap` | unchanged: token events and preparation stages are not causal time or realized history |
-| `C_int` | improved operationally: the inherited local update starts from an exact phase-oriented state encoder with an inert factorized preparation record |
+| `C_int` | improved operationally: the inherited local update starts from an exact phase-oriented state encoder with an inert factorized preparation auxiliary |
 | `C_local` | materially improved: host table/path, forward-only work, and mandatory one-time reset are removed; blank-bank reuse and physical genesis of boundary/coframe remain open |
 | `C_source` | unchanged |
 
@@ -276,18 +285,18 @@ The fresh `origin/main` no-go-discipline instructions were applied to the only
 negative boundary: a dephased syndrome bank cannot be unitarily reset to one
 blank while the identical vacuum and all other registers remain fixed.  The
 claim is deliberately this narrow injectivity statement, not a no-go for
-coherent reset, record retention, entropy export, or dissipative reuse.
+coherent reset, syndrome-bank retention, entropy export, or dissipative reuse.
 
 ### N1 — alternative route enumeration
 
-1. **Record-only unitary reset — ATTEMPTED.** `2^113` orthogonal dephased inputs
+1. **Syndrome-bank-only unitary reset — ATTEMPTED.** `2^113` orthogonal dephased inputs
    would map to one output, producing `2^113-1` collisions.
 2. **Use the already corrected code as entropy sink while restoring the same
    vacuum — ATTEMPTED.** The output code column is identical by the exact
    factorization proof, so it supplies no orthogonal destination labels.
 3. **Use recurrence work while returning it blank — ATTEMPTED.** Echo returns
    every value/token; requiring the same blank output reproduces the collision.
-4. **Retain the record inert — ATTEMPTED AND POSITIVE.** It avoids reset and is
+4. **Retain the syndrome bank inert — ATTEMPTED AND POSITIVE.** It avoids reset and is
    sufficient for one-time `E`, so it lies outside the reset premise.
 5. **Coherently unprepare fixed pure `|chi>` — ATTEMPTED AT EXISTENCE LEVEL.**
    Purity/rank prove a unitary exists; its uniform local circuit remains open
@@ -314,16 +323,16 @@ Returned recurrence work is closed and is not counted as another wall.
 
 ### N3 — hidden-wall scan
 
-Fresh/spent epoch state, coherent-versus-dephased record domain, one-time use,
-open boundary, coframe/port order, token/value M2, record retention, and absent
-blank-bank reset are explicit.  “Fixed” record means the exact displayed
+Fresh/spent epoch state, coherent-versus-dephased syndrome-bank domain,
+one-time use, open boundary, coframe/port order, token/value M2, syndrome-bank
+retention, and absent blank-bank reset are explicit.  “Fixed syndrome bank” means the exact displayed
 rank-114 stabilizer state, not a silently selected classical outcome.
 
 ### N4 — residual matching
 
 The predecessor CA note left autonomous returned work open; this runner attacks
 that exact residual and closes it.  The new reuse residual concerns only
-dephased record entropy after physical factorization.  Periodic Wilson,
+dephased syndrome-bank entropy after physical factorization.  Periodic Wilson,
 same-register rephase, and direct-route failures are not cited as witnesses.
 
 ### N5 — rhetoric audit
@@ -341,14 +350,14 @@ The collision claim is only for a dephased bank with every other output fixed.
 ### N6 — partial-closure paths
 
 One-time inert retention already closes the compiler need.  Coherent inverse
-stabilizer synthesis can close pure-record reset; a boundary rail, another
+stabilizer synthesis can close pure-bank reset; a boundary rail, another
 retained bank, or a bath can close dephased reuse by carrying entropy.  These
 are resource/interface constructions, not reasons for a new axiom.
 
 ### N7 — steelman
 
-A hostile reviewer should reject any claim that “the syndrome record cannot be
-reset.”  The record is one fixed pure stabilizer state in the coherent route,
+A hostile reviewer should reject any claim that “the syndrome bank cannot be
+reset.”  The syndrome bank is one fixed pure stabilizer state in the coherent route,
 so Clifford synthesis can unprepare it; after dephasing, a local boundary
 conveyor can export its entropy.  The only surviving theorem is injectivity:
 no unitary can merge `2^113` orthogonal dephased inputs when code, work, and
@@ -371,6 +380,6 @@ PYTHONPATH=scripts python3 scripts/frontier_cycle703_reversible_echo_ack_control
 ```
 
 The terminal marker is
-`CYCLE703_ECHO_WORK_RETURNED_RECORD_FACTORS_AND_STAYS_INERT`.
+`CYCLE703_ECHO_WORK_RETURNED_SYNDROME_BANK_FACTORS_AND_STAYS_INERT`.
 The content-pinned cache is
 `logs/runner-cache/frontier_cycle703_reversible_echo_ack_controller_2026_07_25.txt`.

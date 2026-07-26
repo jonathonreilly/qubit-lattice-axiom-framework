@@ -32,20 +32,21 @@ all 36 directed port pairs:
 - all 24 proper-cubic frames preserve the port family without an exterior
   ordering table.
 
-The predicate is computed by a seven-M2 reversible XOR/Toffoli comparator.
-Its complete 128-row truth table has zero inverse failures.  The two physical
-endpoint `B` words occupy at most 11 edge M2 across two owner cells; a single
-`B` word has weight at most 6.  No update ordinal or schedule position is read
-or stored.
+The predicate is computed by a seven-qubit reversible XOR/Toffoli comparator.
+Its complete 128-row truth table has zero inverse failures.  The two BKSF
+endpoint `B` words occupy at most 11 graph-edge qubits across two owner cells;
+a single `B` word has weight at most 6.  No update ordinal or schedule position
+is read or stored.  These graph-edge qubits have not been composed with the
+Cycle-232 `Z^3` physical-site placement/repetition isometry.
 
 This is a candidate opportunity predicate, not an occurrence law.
 
 ## Closed interface equations
 
-Let `A_packet` be the reversible packet append, `Pi_610` forget its extra
-reversible payload and retain the landed Cycle-610 `EventCell`, and `D` denote
-the interval decoder.  On the declared lawful domain with explicit supplied
-tokens, the runner executes
+Let `A_packet` be the reversible software-model append, `Pi_610` forget its
+extra payload and retain the landed Cycle-610 `EventCell`, and `D` denote the
+interval decoder.  On the declared lawful software domain with explicit
+supplied values, the runner executes
 
 ```text
 Pi_610 A_packet(P_B, supplied_tokens) = A_610 Pi_610
@@ -73,21 +74,23 @@ the existing inverted registration is refused; forcing the two inverted
 identifications still creates a detected cycle; and a no-B-change control is
 not presented to the harness.
 
-## Reversible packet
+## Reversible packet model — software adapter, not an M2 compiler
 
-Each bounded packet cell stores:
+Each model packet cell stores the following candidate binary fields:
 
-- a 6-M2 predecessor address;
-- four pre-rotor and four post-rotor M2;
-- one carry M2;
+- a 6-bit predecessor address;
+- four pre-rotor and four post-rotor bits;
+- one carry bit;
 - the 12-bit matter delta;
-- endpoint, binder, valid, and orientation M2;
+- endpoint, binder, valid, and orientation bits;
 - the three supplied actuality/admissibility/law-domain bits.
 
-Total: 34 payload M2 per packet cell, a 6-M2 head, and the declared finite
-24-cell bank.  A blank-address selector is supplied.  The resource is large
-but constant on this finite interface; no asymptotic or minimality claim is
-made.
+Total: a candidate 34 payload bits per packet cell, a 6-bit head, and the
+declared finite 24-cell model.  These counts are a candidate register
+inventory, not executed physical M2 resources.  Address selection, freshness,
+conditional writes, head/rotor update, and their uncomputation are implemented
+by host Python in this runner.  A bit-level reversible M2 circuit for those
+operations remains open.  No asymptotic or minimality claim is made.
 
 Append retains the old head and rotor in the new packet, so unappend is exact
 on the last-packet domain.  Six successive appends return exactly to the
@@ -95,37 +98,48 @@ initial state under six inverses and replay to the identical forward state.
 Additionally, 96 cases spanning every K16 rotor value, both orientations,
 and three matter-delta words have zero inverse and carry-truth failures.
 
-The accessible inverse is positive evidence for a reversible candidate
-packet and explicit evidence that this object is **not** a permanent Record.
+The accessible model inverse is positive software-interface evidence and
+explicit evidence that this object is **not** a permanent Record.  It is not
+evidence of a physical inverse circuit.
 
-## What is and is not physical
+## What is executed and what remains physical
 
-Physical and executed:
+Executed on the abstract BKSF edge-qubit surface:
 
-- `B` is the actual local BKSF product of incident edge-M2 Z operators;
-- the predicate comparator is a bounded reversible binary-M2 permutation;
-- the underlying dressed seam action is the exact Cycle-703 local-D action;
-- the predecessor/rotor/carry payload is a bounded reversible M2 word;
-- projection to the actual landed Cycle-610/612 classes is exact.
+- `B` is the actual local BKSF product of incident graph-edge-qubit Z
+  operators;
+- the predicate comparator is a bounded reversible binary permutation on
+  those graph-edge qubits plus work qubits;
+- the underlying dressed seam action is the exact Cycle-703 local-D
+  edge-qubit action.
 
 Conditional or supplied:
 
 - the input is already in the local-D occupation-basis code sector;
-- blank predicate/payload M2 and a blank-address selector are supplied;
+- blank comparator work M2, model payload values, and a model address selector
+  are supplied;
 - actuality, admissibility, law-domain, and co-registration ports are
   supplied;
 - the K16 rotor convention and cross-order consistency rule are consumed
-  from Cycles 610/612.
+  from Cycles 610/612;
+- predecessor-bank append/unappend, address/freshness selection, interval
+  decode, and projection to the landed Cycle-610/612 classes are exact host
+  software operations, not an executed M2 circuit.
 
 Open:
 
 - composition with the separate Cycle-703 returned-work open-state E and a
-  uniform-support family version of its physical update;
+  uniform-support family version of its edge-qubit update;
+- composition with an injective proper-cubic `Z^3` physical-site placement,
+  stream-edge repetition isometry, and collision-free routed work-qubit
+  controller;
 - objective occurrence and an autonomous admission law;
 - Record permanence;
 - an empirical unit or identification of the decoded integer with duration;
 - a satisfactory endpoint predicate for diagonal-phase-only contact or
-  general superposed coin dynamics.
+  general superposed coin dynamics;
+- a reversible bit-level M2 implementation of the bank, including address,
+  freshness, conditional write, head/rotor update, and clean work return.
 
 This runner itself does not execute the later Cycle-703 returned-work
 preparation or scaled patch tableau; those are independent companion evidence.
@@ -137,10 +151,11 @@ produces an endpoint.
 
 ## Discipline and novelty boundary
 
-The new content is the bounded local-B endpoint predicate, reversible packet,
-and exact projection equations.  The predecessor arithmetic, K16 carry
-convention, admission token types, and causal-order refusal rule are landed
-Cycle-610/612 content and are not presented as new.
+The new physical content is the bounded local-B endpoint predicate.  The
+finite reversible software adapter and exact projection equations test the
+interface contract only.  The predecessor arithmetic, K16 carry convention,
+admission token types, and causal-order refusal rule are landed Cycle-610/612
+content and are not presented as new.
 
 No count word, packet ordinal, or rotor value is called time.  No packet is
 called a Record.  No occurrence, permanence, empirical calibration, Born
@@ -158,7 +173,7 @@ PYTHONPATH=scripts python3 -u \
 Expected terminal:
 
 ```text
-LOCAL_GAUSS_ENDPOINT_PACKET_INTERTWINER_CLOSED_OCCURRENCE_RECORD_UNIT_PREPARATION_OPEN
+LOCAL_GAUSS_ENDPOINT_SOFTWARE_PACKET_INTERFACE_CLOSED_PHYSICAL_BANK_OPEN
 ```
 
 The retained canonical replay passed 6 checks, failed 0, used 94.390625 MB

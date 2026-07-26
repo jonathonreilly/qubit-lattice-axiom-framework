@@ -73,7 +73,7 @@ record.
 
 ## Exact vacuum tableaus and preparation controls
 
-| Fixture | edge M2 | `rank(B)` | local-loop rank | Wilson rank added | full cycle rank | fixed tableau rank | max dense `Z` weight |
+| Fixture | BKSF edge qubits | `rank(B)` | local-loop rank | Wilson rank added | full cycle rank | fixed tableau rank | max dense `Z` weight |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | L patch | 304 | 111 | 193 | 0 | 193 | 304 | 6 |
 | held 2x2 patch | 380 | 139 | 241 | 0 | 241 | 380 | 6 |
@@ -126,7 +126,7 @@ ansatz and no fitted table exported from `L=5`.
 
 ## Wilson direct-sum and covariance audit
 
-| periodic size | edge M2 | local-loop+`D` rank | plus three Wilsons | direct-sum exponent | fixed-sector exponent |
+| periodic size | BKSF edge qubits | local-loop+`D` rank | plus three Wilsons | direct-sum exponent | fixed-sector exponent |
 | ---: | ---: | ---: | ---: | ---: | ---: |
 | 3 | 648 | 483 | 486 | 165 = `6N+3` | 162 = `6N` |
 | 4 | 1536 | 1149 | 1152 | 387 = `6N+3` | 384 = `6N` |
@@ -181,7 +181,7 @@ Not supplied or derived:
 - within this runner, a nonlinear local measurement decoder or recurrent
   radius-one controller with bounded returned work (the separate
   `CYCLE703_REVERSIBLE_ECHO_ACK_CONTROLLER_NOTE_2026-07-25.md` constructs one);
-- an arbitrary-matter-state physical common E and direct
+- an arbitrary-matter-state BKSF edge-qubit common E and direct
   `U_physical E - E U_matter` residual; or
 - a matter-only selection of one Wilson character without an admitted gauge
   vector or preparation mechanism.
@@ -201,7 +201,7 @@ negative and the constructive partial closures.**
 - **N2 — Wall independence.** Loop disentangling and correction locality are
   one coupled preparation wall.  Wilson selection is separate and is
   conditionally retired by taking a typed gauge input.  Arbitrary-state
-  physical common E is separate again.
+  physical-site common E is separate again.
 - **N3 — Hidden-wall scan.** Product `|0_Z>`, blank ancillas, controlled-Pauli
   availability, translation-linearity, fixed radius, periodic boundaries,
   and the fixed/typed Wilson choice are explicit assumptions.

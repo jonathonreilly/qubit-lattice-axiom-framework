@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Cycle 703: target-independent open-boundary BKSF state preparation.
 
-The protocol starts every BKSF edge M2 in |0>, measures local loop checks,
+The protocol starts every BKSF graph-edge qubit in |0>, measures local loop checks,
 and removes their signs in three causal circuit stages:
 
   cell triangles -> coarse plaquettes -> bond rectangles.
@@ -13,6 +13,10 @@ vertex B and local D remains +1.  A separate bounded local Clifford tableau
 then loads arbitrary six-qubit-per-cell matter data into that vacuum.  The
 separation is deliberate: checks and logical loading are bounded, while exact
 open-boundary syndrome feedforward is not a fixed-range family.
+
+This is an abstract graph-edge-qubit construction.  Cycle-232 Z3 placement,
+stream-edge repetition, ancilla allocation, and nearest-neighbor controller
+routing are not composed here.
 """
 
 from __future__ import annotations
@@ -1067,10 +1071,12 @@ def main() -> None:
             "the Cycle232 incidence order and proper-cubic coframe",
             "one measurement ancilla per simultaneously measured check",
             "classical feedforward paths or Gaussian decoder table",
+            "a future Z3 placement/routing of graph edges, ancillas, and work qubits",
         ),
         "not_claimed": (
             "a fixed-depth local-feedforward preparation family",
             "periodic fixed-Wilson preparation",
+            "a physical-site-M2 preparation compiler",
             "causal time, a Record, a source law, or Born derivation",
             "a route-independent obstruction, minimum content, or axiom pressure",
         ),

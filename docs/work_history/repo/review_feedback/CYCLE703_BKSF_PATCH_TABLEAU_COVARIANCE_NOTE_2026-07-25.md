@@ -68,7 +68,7 @@ from update-word covariance.
 The phase-aware rank, deletion, inverse, and operator checks close with zero
 failures:
 
-| geometry | edge M2 | loops / Wilson / D | logical qubits | tableau rows | stream / coin / contact factors |
+| geometry | BKSF edge qubits | loops / Wilson / D | logical qubits | tableau rows | stream / coin / contact factors |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | open three-center L | 56 | 36 / 0 / 2 | 18 | 112 | 2 / 36 / 45 |
 | held 2 x 2 | 76 | 49 / 0 / 3 | 24 | 152 | 4 / 48 / 60 |
@@ -134,7 +134,7 @@ The support roles must not be conflated.  The following rows use the base
 geometry after the same strict stabilizer descent; each entry is
 `maximum weight / maximum cell diameter`:
 
-| geometry | individual `G_physical` Pauli summand | complete factor union | logical loader `Z` | logical loader `X` | full `W/V` tableau row |
+| geometry | individual edge-qubit `G` Pauli summand | complete factor union | logical loader `Z` | logical loader `X` | full `W/V` tableau row |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | open L | 13 / 2 | 17 / 2 | 6 / 1 | 15 / 2 | 15 / 2 |
 | held 2 x 2 | 23 / 2 | 28 / 2 | 6 / 1 | 16 / 2 | 38 / 2 |
@@ -142,7 +142,7 @@ geometry after the same strict stabilizer descent; each entry is
 | periodic `L=3` | 135 / 3 | 139 / 3 | 6 / 1 | 19 / 2 | 74 / 3 |
 
 Thus the existing weight-17 local grammar closes the open-L fixture only.
-On these supplied path-chord targets, even the individual physical update
+On these supplied path-chord targets, even the individual edge-qubit update
 summands grow; this is not merely growth of a logical loader or a tableau
 destabilizer.  The finite scheduled recurrence below is exact, but the
 uniform constant-support recurrent-update success contract remains open.
@@ -152,7 +152,7 @@ uniform constant-support recurrent-update success contract remains open.
 The note does not stop at an operand dictionary.  On the open L and held
 2 x 2 code spaces it fixes an ordered product of formal nonzero Pauli
 rotations comprising every onsite coin edge, every directed seam, and every
-onsite contact.  A deterministic edge-M2 conflict coloring gives:
+onsite contact.  A deterministic edge-qubit conflict coloring gives:
 
 | geometry | coin / seam / contact factors | colors | collisions |
 | --- | ---: | ---: | ---: |
@@ -162,10 +162,10 @@ onsite contact.  A deterministic edge-M2 conflict coloring gives:
 Each two-term hop factor is decoded as a complete factor, preserves every
 stabilizer, and induces the target logical rotation before the next factor is
 appended.  This supplies an exact factor-by-factor common-E induction for the
-whole scheduled `G_physical`; no dense full-volume matrix is inferred or
+whole scheduled edge-qubit `G`; no dense full-volume matrix is inferred or
 formed.  Four translated rebuilds have zero coset, color, or collision
 failures.  Removing the complete first directed-seam factor changes both the
-physical and logical schedule digests on each geometry, so the composition
+edge-qubit and logical schedule digests on each geometry, so the composition
 deletion is active.
 
 The common E used here is not a locally prepared tensor product of bounded
@@ -173,9 +173,16 @@ per-cell blocks.  It is the global Clifford isometry selected by symplectic
 completion of the connected loop/`D`/(on the displayed slice, Wilson)
 stabilizer code.  No bounded-depth/range circuit prepares it in this note.
 
+It is also not the common E prepared by the returned-work companion.  That
+companion uses parallel intercell reference bonds (`80` graph-edge qubits on
+`2x2`); this `PatchGraph` has no such bonds (`76` on `2x2`) and uses path
+parity dressing.  The repetition-lift count `76+4=80` is a constructive hint,
+not a signed stabilizer/logical-Pauli isometry.  Graph equivalence and the
+Cycle-232 `Z^3` physical-site lift both remain open.
+
 As a no-refit bridge only, the runner consumes the byte-pinned Cycle-629
 contact-dimer receipt with inherited `beta=-0.3` and `g=0.37`.  Exact
-factor induction gives `E^dagger U_physical E = U_matter`; therefore each
+factor induction gives `E^dagger U_edge E = U_matter`; therefore each
 retained Ritz vector maps to `E v` with the same eigenvalue and residual norm.
 The three non-null Cycle-629 rows are copied with exactly zero restricted
 spectrum and Ritz-residual differences.  This is inherited spectral

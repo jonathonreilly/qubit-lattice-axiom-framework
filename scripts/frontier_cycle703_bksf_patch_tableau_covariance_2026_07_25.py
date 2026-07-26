@@ -16,7 +16,10 @@ logical permutation.  Periodic L=3 is included with 376 contractible loop
 rows, three explicitly fixed Wilson rows, and 26 independent local-D rows.
 
 No dense physical state or matrix is formed, and no preparation-depth claim is
-inferred from symplectic completion.
+inferred from symplectic completion.  Here “physical” Pauli/tableau rows mean
+the BKSF graph-edge-qubit layer.  The Cycle-232 Z3 site placement, stream-edge
+repetition isometry, controller allocation, and nearest-neighbor routing are
+not composed by this runner.
 """
 
 from __future__ import annotations
@@ -1797,7 +1800,7 @@ def run() -> dict[str, object]:
         for name in ("open_three_center_L", "held_2x2")
     }
     check(
-        "a fixed collision-free recurrent physical layer intertwines factor by factor on L and 2x2, with active whole-factor deletion",
+        "a fixed collision-free recurrent edge-qubit layer intertwines factor by factor on L and 2x2, with active whole-factor deletion",
         all(not row["failures"] for row in layer_rows.values()),
         {
             name: {
@@ -1843,6 +1846,8 @@ def run() -> dict[str, object]:
             "tableau_completion": "global_GF2_symplectic_completion",
             "bounded_depth_or_range_proved": False,
             "Wilson_genesis_proved": False,
+            "Z3_physical_site_placement_composed": False,
+            "controller_nearest_neighbor_routing_composed": False,
         },
         "pass": PASS,
         "fail": FAIL,
@@ -1892,6 +1897,11 @@ def run() -> dict[str, object]:
             for name, row in layer_rows.items()
         },
         "spectral_bridge_failures": spectral_bridge["failures"],
+        "physical_site_interface": {
+            "BKSF_graph_edge_qubit_layer": True,
+            "Z3_placement_repetition_lift_composed": False,
+            "controller_routing_composed": False,
+        },
         "pass": PASS,
         "fail": FAIL,
     }

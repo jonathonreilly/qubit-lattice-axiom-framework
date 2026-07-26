@@ -10,6 +10,7 @@ coframes, and audits whether the surviving six-colour schedule is order-free.
 
 from __future__ import annotations
 
+import ast
 from collections import Counter
 from hashlib import sha256
 import inspect
@@ -71,6 +72,16 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
     "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
     "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
     "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
     "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
     "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
@@ -123,6 +134,32 @@ def word_digest(word) -> str:
         separators=(",", ":"),
     ).encode()
     return sha256(payload).hexdigest()
+
+
+def transitive_repo_script_paths():
+    """Resolve the literal flat-module import closure under ``scripts/``."""
+    scripts_dir = ROOT / "scripts"
+    module_paths = {path.stem: path for path in scripts_dir.glob("*.py")}
+    pending = [Path(__file__).resolve()]
+    seen = set()
+    while pending:
+        path = pending.pop()
+        if path in seen:
+            continue
+        seen.add(path)
+        tree = ast.parse(path.read_text(), filename=str(path))
+        imported = []
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Import):
+                imported.extend(alias.name.split(".")[0] for alias in node.names)
+            elif isinstance(node, ast.ImportFrom) and node.module:
+                imported.append(node.module.split(".")[0])
+        pending.extend(
+            module_paths[name]
+            for name in imported
+            if name in module_paths and module_paths[name] not in seen
+        )
+    return tuple(sorted(path.relative_to(ROOT).as_posix() for path in seen))
 
 
 def inverse_tableau(images, qubits: int):
@@ -488,12 +525,24 @@ def origin_and_frame_free_program_audit():
 
 
 def main():
+    transitive_scripts = transitive_repo_script_paths()
+    declared_scripts = {
+        path for path in AUDIT_INPUT_PATHS if path.startswith("scripts/")
+    }
+    missing_scripts = tuple(
+        path for path in transitive_scripts if path not in declared_scripts
+    )
     check(
         "the transitive source closure is repo-local and complete",
         len(AUDIT_INPUT_PATHS) == len(set(AUDIT_INPUT_PATHS))
         and all((ROOT / path).is_file() for path in AUDIT_INPUT_PATHS)
-        and all(not path.startswith(("/", "../")) for path in AUDIT_INPUT_PATHS),
-        {"declared_inputs": len(AUDIT_INPUT_PATHS)},
+        and all(not path.startswith(("/", "../")) for path in AUDIT_INPUT_PATHS)
+        and not missing_scripts,
+        {
+            "declared_inputs": len(AUDIT_INPUT_PATHS),
+            "transitive_local_scripts": len(transitive_scripts),
+            "missing_transitive_scripts": missing_scripts,
+        },
     )
     print("PHASE immutable W-star", flush=True)
     cells = K.G.box_cells((3, 2, 2))
@@ -789,6 +838,10 @@ def main():
         "status": status,
         "checks": {"pass": PASS, "fail": FAIL},
         "source_hashes": source_hashes,
+        "transitive_source_inventory_sha256": {
+            path: sha256((ROOT / path).read_bytes()).hexdigest()
+            for path in transitive_scripts
+        },
         "immutable_program": immutable,
         "frame_rows": frame_rows,
         "passive_chart_gates_removed_from_execution": moved,

@@ -10,6 +10,7 @@ wedge, not by importing the primary Cycle712 runner's factor proof.
 """
 from __future__ import annotations
 
+import ast
 from collections import deque
 from functools import lru_cache
 from hashlib import sha256
@@ -45,6 +46,16 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
     "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
     "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
     "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
     "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
     "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
@@ -75,6 +86,32 @@ def gf2_rank(rows):
                 pivots[pivot] = row
                 break
     return len(pivots)
+
+
+def transitive_repo_script_paths():
+    """Resolve the literal flat-module import closure under ``scripts/``."""
+    scripts_dir = ROOT / "scripts"
+    module_paths = {path.stem: path for path in scripts_dir.glob("*.py")}
+    pending = [Path(__file__).resolve()]
+    seen = set()
+    while pending:
+        path = pending.pop()
+        if path in seen:
+            continue
+        seen.add(path)
+        tree = ast.parse(path.read_text(), filename=str(path))
+        imported = []
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Import):
+                imported.extend(alias.name.split(".")[0] for alias in node.names)
+            elif isinstance(node, ast.ImportFrom) and node.module:
+                imported.append(node.module.split(".")[0])
+        pending.extend(
+            module_paths[name]
+            for name in imported
+            if name in module_paths and module_paths[name] not in seen
+        )
+    return tuple(sorted(path.relative_to(ROOT).as_posix() for path in seen))
 
 
 def spanning_tree(graph):
@@ -255,6 +292,22 @@ def main():
         row.x | (row.z << len(all_sites))
         for row in physical_w[k:] + repetition
     ])
+    physical_full_w = physical_w + repetition
+    physical_full_w_rank = gf2_rank([
+        row.x | (row.z << len(all_sites)) for row in physical_full_w
+    ])
+    physical_w_commutator_failures = sum(
+        (
+            ((left.x & right.z).bit_count()
+             + (left.z & right.x).bit_count()) & 1
+        )
+        for index, left in enumerate(physical_full_w)
+        for right in physical_full_w[index + 1 :]
+    )
+    physical_w_nonhermitian_failures = sum(
+        (row.phase - (row.x & row.z).bit_count()) % 2
+        for row in physical_full_w
+    )
 
     # Full isometry receipt: each Fock basis column is the unique joint
     # eigenspace of physical W rows (+ repetition), with logical-Z signs.
@@ -358,12 +411,15 @@ def main():
             tree_loop_rank == tree_shared_union_rank == len(eq.target_shared_loops)
         ),
         "physical_constraint_rank": physical_rank,
+        "physical_full_W_rank": physical_full_w_rank,
+        "physical_W_commutator_failures": physical_w_commutator_failures,
+        "physical_W_nonhermitian_failures": physical_w_nonhermitian_failures,
         "tree_digest": sha256(json.dumps(tree).encode()).hexdigest(),
         "isometry_tableau_digest": iso.hexdigest(),
         "distinct_code_columns": len(distinct_signatures),
         "all_columns_tested": 1 << 12,
         "sector_column_counts": sector_counts,
-        "maximum_EG_residual": max_eg,
+        "maximum_decoded_update_residual": max_eg,
         "maximum_norm_residual": max_norm,
         "maximum_number_leakage": max_number,
         "update_column_digest_13dp": update_hash.hexdigest(),
@@ -400,15 +456,28 @@ def main():
         ],
     }
     declared = tuple((ROOT / path).resolve() for path in AUDIT_INPUT_PATHS)
+    transitive_scripts = transitive_repo_script_paths()
+    declared_scripts = {
+        path for path in AUDIT_INPUT_PATHS if path.startswith("scripts/")
+    }
+    missing_scripts = tuple(
+        path for path in transitive_scripts if path not in declared_scripts
+    )
     checks = {
         "source_closure": len(declared) == len(set(declared))
-        and all(path.is_file() and path.is_relative_to(ROOT) for path in declared),
+        and all(path.is_file() and path.is_relative_to(ROOT) for path in declared)
+        and not missing_scripts,
         "dimension": n == 38 and len(all_sites) == 39 and k == 12
         and len(eq.target_w) - k == 26 and len(repetition) == 1
         and tree_loop_rank == tree_shared_union_rank == len(eq.target_shared_loops) == 24
         and physical_rank == 27,
-        "isometry_columns": len(distinct_signatures) == 4096,
-        "all_4096_EG": max_eg < 3e-12 and max_norm < 3e-12 and max_number == 0,
+        "isometry_columns": len(distinct_signatures) == 4096
+        and physical_full_w_rank == len(all_sites) == 39
+        and physical_w_commutator_failures == 0
+        and physical_w_nonhermitian_failures == 0,
+        "all_4096_decoded_update": (
+            max_eg < 3e-12 and max_norm < 3e-12 and max_number == 0
+        ),
         "mass_contact": max_contact < 3e-12 and abs(mass-analytic) < 3e-12,
         "lawful_and_false_seam": max_seam == 0 and false_count > 0 and false_max > 1,
         "placement_and_repetition": collisions == 0 and repetition_failures == 0,

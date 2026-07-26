@@ -11,6 +11,11 @@
 **Framework substrate:**
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 
+**Direct compiler inputs:**
+[`LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md`](LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+and
+[`FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md`](FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md)
+
 **Primary runner:**
 [`scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py`](../scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py)
 
@@ -94,13 +99,15 @@ An independently written checker reconstructs a fresh lexicographic BFS
 tree, its 24 fundamental cycles, the signed-tableau code columns, and the
 coarse update through a creator-wedge calculation.  Its fundamental-cycle
 space has rank 24 and union rank 24 with the landed shared-cycle rows; the
-literal 39-site constraint rank is 27.  Exhaustive comparison of all 4096
-columns gives maximum `EG` residual `5.566705740848049e-16`, norm residual
+literal 39-site constraint rank is 27, while the complete commuting physical
+W basis has rank 39.  Exhaustive comparison of all 4096 decoded-update
+columns gives maximum residual `5.566705740848049e-16`, norm residual
 `9.992007221626409e-16`, zero number leakage, zero contact residual, and zero
 lawful-seam residual.  Its update digest is
 `c2778e0cda9eefd0a417724c702fbf704a2b38af5ae58dffd312301f7f6aa612`.
-This is an independent numerical construction, not a restatement of the
-primary factor proof.
+This independently checks the full decoded update and the physical code
+tableau; it does not expand the 39-M2 encoded amplitudes.  It is not a
+restatement of the primary factor proof.
 
 ## Literal M2 execution
 
@@ -223,9 +230,10 @@ No negative theorem ships.  N1--N8 gives:
 - **N1 routes:** direct global PatchGraph encoding succeeds; source-chart
   bridging succeeds; punctured-local, borrow/uncompute, explicit port-copy,
   sparse scheduler, and owned-interface routes remain live.
-- **N2 wall independence:** state-isometry closure, external streams, active
-  coframes, scheduler recurrence, code genesis, and physical time are distinct
-  obligations.
+- **N2 wall independence:** the state-isometry wall is closed on the declared
+  two- and three-cell domains and is removed from the remaining set.  External
+  streams, active coframes, scheduler recurrence, code genesis, and physical
+  time are distinct remaining obligations.
 - **N3 hidden inputs:** geometry, mode order, signed bases, rails, stabilizer
   eigenvalues, contact/coin constants, factor order, routing, and blank work
   are inventoried above.

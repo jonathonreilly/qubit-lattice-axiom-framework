@@ -50,19 +50,19 @@
   "artifacts": {
     "note": {
       "path": "docs/CHART_ERASED_FIXED_PROGRAM_PHYSICAL_M2_COMPILER_CYCLE711_BOUNDED_THEOREM_NOTE_2026-07-26.md",
-      "sha256": "0e38c8522f974c3aa475b24dd7caae28d05180dfa8b07abdf737948ec33d531c"
+      "sha256": "a30b7073ec8a5ace974e094365551ff7180e848915842787c7bd4e69777c1e50"
     },
     "runner": {
       "path": "scripts/frontier_cycle711_chart_erased_fixed_program_2026_07_26.py",
-      "sha256": "2d2996705df6bbee250d5f8e1bd1d5089a582cb9d90ad54c2c90742b8f8c2dd8"
+      "sha256": "cb04ee18405e9361b89d6390a156ceac4f9e65d45c1df5662950a6ac4d9fcad3"
     },
     "cache": {
       "path": "logs/runner-cache/frontier_cycle711_chart_erased_fixed_program_2026_07_26.txt",
-      "sha256": "1d0c219ea7f5c96b595e27961d8da0e4442d799b6eedbc25627fcef47b353a00",
-      "input_fingerprint_sha256": "56f66d8df9d79135b3e706580f137801388aed3300eaf3ff9aca1a25117f4b7d",
-      "elapsed_sec": 236.14,
+      "sha256": "f68d5a48d480950809264807fcc7b018b492bb55b8e7331f8a63dfa8c4e18764",
+      "input_fingerprint_sha256": "d323b3a550d005d754831a866df72b486d350702f9e5417ca7a317bb94dddad7",
+      "elapsed_sec": 256.32,
       "exit_code": 0,
-      "report_sha256": "5edc0349f6abcdb72e1447ebc50927e27201b2b28ba81d9936f5f63979570b2e"
+      "report_sha256": "0a338633617bee10a63960e545367db3e02fb790aa8ee0035b394e9e231b4f6e"
     }
   }
 }

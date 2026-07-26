@@ -1,5 +1,5 @@
 {
- "edge_count": 15122,
+ "edge_count": 15126,
  "node_count": 4546,
  "nodes": {
   "3d_correction_master_note": {
@@ -1823,8 +1823,8 @@
    "out_degree": 7
   },
   "chart_erased_fixed_program_physical_m2_compiler_cycle711_bounded_theorem_note_2026-07-26": {
-   "deps_hash": "c8eee4235fc9",
-   "out_degree": 1
+   "deps_hash": "efb7ed4b144b",
+   "out_degree": 3
   },
   "chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",
@@ -6947,8 +6947,8 @@
    "out_degree": 2
   },
   "joint_two_cell_full_update_physical_m2_compiler_cycle712_bounded_theorem_note_2026-07-26": {
-   "deps_hash": "c8eee4235fc9",
-   "out_degree": 1
+   "deps_hash": "18d35b6d2ab0",
+   "out_degree": 3
   },
   "k_dependence_review_safe_note": {
    "deps_hash": "e3b0c44298fc",

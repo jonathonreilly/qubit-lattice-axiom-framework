@@ -148,7 +148,7 @@
   "artifacts": [
     {
       "path": "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
-      "sha256": "72bfa1ce92bb7021988500732ccd2f54f02fd50381364da852fd639d23b6ec7a"
+      "sha256": "0272a14eb5a1283ac0fb7edb05a0a08e68b9ced428020943d81364cad0033f03"
     },
     {
       "path": "scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
@@ -164,7 +164,7 @@
     },
     {
       "path": "logs/runner-cache/frontier_cycle709_local_seam_clifford_2026_07_26.txt",
-      "sha256": "8efe4a924dc651697bc5a4212299582cca9197d603fbbd9e30a2dc64d05e1382"
+      "sha256": "2734f4f6de67509226743499255932952a2654ad79ac23f76a7349eb59f120b3"
     }
   ],
   "independent_reconstruction": {
@@ -174,6 +174,10 @@
     "repository_dependency": false
   },
   "regressions": {
+    "primary_runner_cache_format": "runner cache v1",
+    "primary_runner_cache_status": "ok",
+    "primary_runner_cache_runner_sha256": "64f73efb404f2acacb1a4e5e392aa8c6ac139eafb3e5f05380af9a3b3cc91826",
+    "primary_runner_cache_input_fingerprint_sha256": "3d03d5b9a58f542daf8652fba8528623e09a6d4d0c2b706be9378667b2d68e0b",
     "mass_contact_primary_runner_check": "the primary runner re-executes the Cycle219 one-particle mass fixture and Cycle230 local contact controls",
     "Cycle219_one_particle_mass": 0.45340565417488515,
     "Cycle219_mass_fixture": 0.4534056541748851,

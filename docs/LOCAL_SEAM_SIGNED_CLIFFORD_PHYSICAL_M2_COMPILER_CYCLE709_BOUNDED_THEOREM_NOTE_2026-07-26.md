@@ -443,7 +443,7 @@ python3 -u scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py
 Expected terminal:
 
 ```text
-SUMMARY_JSON ... "pass": 21, "fail": 0 ...
+SUMMARY_JSON ... "pass": 22, "fail": 0 ...
 CYCLE709_LOCAL_SEAM_PHYSICAL_M2_BOUNDED_COMPILER_PASS
 ```
 

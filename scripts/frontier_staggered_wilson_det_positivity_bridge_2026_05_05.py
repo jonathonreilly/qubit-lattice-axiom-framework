@@ -48,7 +48,7 @@ def check(name: str, condition: bool, detail: str = "") -> None:
         FAIL_COUNT += 1
     print(f"  [{status}] {name}")
     if detail:
-        print(f"         {detail}")
+        print(f"    {detail}")
 
 
 # ---- SU(3) generators (Gell-Mann basis) ------------------------------------
@@ -181,8 +181,7 @@ def build_eps_diagonal(L: int) -> np.ndarray:
 # ---- Bridge structural and numerical checks ---------------------------------
 
 def run_volume(L: int, scale: float, masses: list[float], rng: np.random.Generator) -> dict:
-    print()
-    print(f"=== L = {L}, scale = {scale} ===")
+    print(f"L = {L}, scale = {scale}")
     links = build_links(L, scale, rng)
     M_KS = build_M_KS(L, links)
     dim = M_KS.shape[0]
@@ -272,9 +271,9 @@ def run_volume(L: int, scale: float, masses: list[float], rng: np.random.Generat
         )
 
         print(
-            f"  m={m:.2f}, alpha={alpha:.2f}: log_det_direct={float(log_det_direct):+.6f}, "
-            f"log_det_bridge={log_det_bridge:+.6f}, log_diff={log_diff:.2e}, "
-            f"sign_real={sign_direct_real:+.3f}, sign_imag={sign_direct_imag:+.2e}"
+            f"  m={m:.2f} alpha={alpha:.2f} ldd={float(log_det_direct):+.6f} "
+            f"ldb={log_det_bridge:+.6f} dif={log_diff:.2e} "
+            f"sre={sign_direct_real:+.3f} sim={sign_direct_imag:+.2e}"
         )
 
     return {
@@ -288,19 +287,16 @@ def run_volume(L: int, scale: float, masses: list[float], rng: np.random.Generat
 
 
 def main() -> int:
-    print("=" * 78)
     print("SUPPLIED-SURFACE STAGGERED + WILSON DET-POSITIVITY VERIFIER")
-    print("=" * 78)
     print(f"seed={SEED}")
     print(f"supplied surface: M_W = r * d * I (eps-commuting); mass = m * I")
-    print(f"            r = 1, d = 4 (4D); alpha = m + r * d = m + 4")
-    print()
+    print(f"  r = 1, d = 4 (4D); alpha = m + r * d = m + 4")
     print("Block decomposition: eps reorders sites so eps = diag(+I, -I).")
     print("Then M = M_KS + alpha * I has eps-block form")
-    print("    [[ +alpha I, +K     ],")
-    print("     [ -K^dag,   +alpha I ]]")
+    print("  [[ +alpha I, +K ], [ -K^dag, +alpha I ]]")
     print("Bridge: det(M) = prod_i (alpha^2 + sigma_i^2) > 0 unconditionally.")
-    print()
+    print("case cols: ldd=log_det_direct, ldb=log_det_bridge,"
+          " dif=log_diff=|ldd-ldb|, sre/sim=Re/Im of slogdet sign")
 
     rng = np.random.default_rng(SEED)
 
@@ -312,8 +308,7 @@ def main() -> int:
             cases.append(volume)
 
     # Aggregate assertions
-    print()
-    print("--- Bridge assertions ---")
+    print("Bridge assertions")
 
     # Balanced sublattice on every L
     for v in cases:
@@ -349,10 +344,7 @@ def main() -> int:
             detail=f"got {v['n_sigmas']}",
         )
 
-    print()
-    print("=" * 78)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
-    print("=" * 78)
     return 0 if FAIL_COUNT == 0 else 1
 
 

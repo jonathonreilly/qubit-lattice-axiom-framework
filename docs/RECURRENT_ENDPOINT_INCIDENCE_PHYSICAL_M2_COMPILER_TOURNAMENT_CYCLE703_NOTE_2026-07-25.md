@@ -113,6 +113,33 @@ on the cube proves that this is not a wrong binary choice of the extracted
 plaquette words.  This is a route-specific falsification of the finite
 `H/K/P` extrapolation, not a recurrence no-go.
 
+A different local-gauge escape is substantially stronger than that finite
+dictionary ladder.  Add one reference fermion `r_x` per cell and impose the
+cell-local even constraint
+
+```text
+D_x = B(r_x) product_(a=1)^6 B(m_(x,a)) = +1.
+```
+
+Inside fixed-even BKSF, the product of all `D_x` is already the total-parity
+identity, so their rank is `N-1` and the code has exactly `6N` matter qubits
+at both odd and even volume.  Every matter word has the unique *local*
+reference assignment `n(r_x)=sum_a n(m_(x,a)) mod 2`; the old uniform
+reference parity bus is gone.  An explicit reference-dressed hop/FSWAP is
+bounded, preserves every `D`, loop, and Wilson stabilizer, is exact on all
+4,096 two-cell matter columns for all 36 directed port pairs, and is a
+Hermitian involution on all `2^14` extended-Fock states.  The mapped BKSF word
+has maximum Pauli weight 28 and its directed family passes all 24 frames and
+576 products after the disclosed local incidence-order gauge.
+
+This closes recurrent capacity and the bounded parity-even operator algebra,
+not yet the physical state compiler.  The executed common `E` is the local
+`12 -> 14` extended-fermion occupation map, not an edge-qubit BKSF common
+encoding.  Periodic domains retain three fixed Wilson characters; a physical
+`E_BKSF`, its leakage residual, transformed-encoding covariance, and
+preparation/genesis remain open.  The full boundary and N1--N8 audit are in
+[`CYCLE703_LOCAL_GAUSS_REFERENCE_ADVERSARIAL_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_LOCAL_GAUSS_REFERENCE_ADVERSARIAL_NOTE_2026-07-25.md).
+
 An unoriented scalar edge selector is insufficient for that representation:
 the four proper-cubic rotations fixing a `+x` edge produce four distinct
 24-pair words.  The transported 24-frame family itself composes exactly over
@@ -293,6 +320,23 @@ The controller uses one station-zero token, returns its work, performs zero
 runtime measurement/parity/order queries, and has exact zero-/two-token
 controls.  Its ordinal is circuit order, not physical time.
 
+### Route-B local-Gauss recurrence escape
+
+The independent runner
+[`frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py`](../scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py)
+replaces the target-derived transition-table question by a local even-algebra
+representation.  Open L2 and periodic L3/L4/L5 all retain exactly `6N`
+matter qubits after the local `D` rows and, on tori, three supplied Wilson
+rows.  In particular, held even L4 closes; the Cycle-232 even-volume failure
+belonged to the old uniform-reference route and does not transfer.
+
+The physical BKSF Pauli identities, constraint commutators, active reference
+deletion, full two-cell extended-Fock intertwiner, off-code involution, and
+24/576 operator covariance are executed.  The still-missing object is one
+actual edge-qubit state matrix `E_BKSF` in a fixed Wilson character and its
+physical intertwiner/leakage.  Rank equality is not substituted for that
+matrix, and local algebra is not substituted for bounded state preparation.
+
 ## Route C — staggered/time-multiplexed feature word
 
 Runner and detailed route note:
@@ -313,6 +357,18 @@ This route remains partial in isolation because its charts are supplied and
 its logical update is not coupled to one complete physical `E`.  Route B uses
 its fixed owner schedule as one input to the still-partial composite word
 above.  The schedule counter is not physical time.
+
+The closest diagonal two-frame escape is also tested independently in
+[`frontier_cycle703_two_frame_colored_rephase_2026_07_25.py`](../scripts/frontier_cycle703_two_frame_colored_rephase_2026_07_25.py).
+A target-independent taxi-two feature basis with supplied 27-color chart has
+an exact finite training fit: 110 input-phase plus 170 output-phase monomials
+close adjacent, L, and square fixtures.  Frozen without refit, it misses 714
+pairs/rank 42 on `3x3` and 906/rank 54 on the cube.  This is not merely the
+chosen free-zero solution: training row-space implications force 251 and 224
+wrong held bits for every training solution in that basis.  The full N1--N8
+note leaves larger neighborhoods, different charts, auxiliary frame state,
+non-diagonal encodings, and the local-Gauss route live.  No phase-slot or
+schedule counter is interpreted as physical time.
 
 ## Label-space shortcut and physical support audit
 
@@ -408,6 +464,12 @@ Derived:
 - the same-register diagonal-rephase involution obstruction, including an
   independent Cycle-330 orbit witness, unrestricted per-patch quadratic
   systems, bounded covariant basis routing, and a full N1--N8 scope audit;
+- one bounded colored two-frame training closure and its no-refit held
+  falsification, including the complete training-solution row-space attack;
+- exact `6N` local-Gauss reference capacity at odd and even volume, an exact
+  two-cell extended-Fock common encoding, bounded dressed hop/FSWAPs,
+  constraint-preserving BKSF Pauli words, active deletions, and 24/576
+  directed-operator covariance without a parity bus or runtime order query;
 - held-size stability, constant overhead, mass preservation, and 24/576
   covariance;
 - exact retirement of the eleven-chart transition residual and active
@@ -415,8 +477,12 @@ Derived:
 
 Open:
 
-- retirement of the preferred finite exterior order and its target-derived
-  224-CZ transition ROM;
+- a physical edge-qubit `E_BKSF` in one disclosed Wilson character and an
+  actual `U_BKSF E_BKSF-E_BKSF U_matter` plus leakage residual; this is the
+  remaining state-layer test before the local-Gauss route can retire the
+  preferred finite exterior order for the physical compiler;
+- fixed-Wilson sector preparation/genesis, or an explicit declaration and
+  control of that supplied topological resource;
 - a target-independent, locally constrained edge/corner or plaquette gauge
   whose restrictions close the L, `2x2`, and `3x3` overlap fixtures;
 - recurrent overlap/placement/collision for translated words beyond the one
@@ -427,7 +493,8 @@ Open:
 - a complete literal L6 two-particle sweep, one complete-word deletion
   intertwiner, and the complete inverse macrostep;
 - local dynamical enforcement and genesis of the combined transition charts;
-- full free-plus-seam-plus-contact physical recurrence;
+- full free-plus-seam-plus-contact physical recurrence on the BKSF common
+  encoding rather than only its bounded even-operator algebra;
 - `n>2`, full `M64^12`, more than two overlapping stars, volume collision
   control, and an infinite-lattice recurrence theorem;
 - primitive preparation/enforcement of all code and controller constraints;
@@ -438,9 +505,11 @@ Open:
 
 ## Claim boundary
 
-This is a positive complete finite-common-encoding compiler advance and a
-route-by-route disposition, not a no-preferred-order recurrent-lattice,
-arbitrary-volume, or infinite-volume compiler.  The fixed-coordinate macro is
+This is a positive complete finite-common-encoding compiler advance, plus a
+recurrent all-parity local even-operator algebra with exact odd/even-volume
+capacity.  It is not yet a no-preferred-order physical state compiler,
+arbitrary-volume prepared isometry, or infinite-volume compiler because the
+BKSF edge-qubit common encoding and Wilson-sector genesis remain open.  The fixed-coordinate macro is
 not substituted for the still-open literal Cycle-655 physical binding.
 Static projectors are not physical energy.  Gate ordinals are not time or
 rates.  Pointer/feature copying is not a framework Record.  No wrapped phase
@@ -453,15 +522,16 @@ support routes or to the substrate.
 
 ## Optimal next experiment
 
-The finite common-encoding composition has succeeded under a supplied
-preferred-order transition.  The next experiment must replace that table by a
-target-independent recurrent handoff.  Give every cell/edge a bounded
-transported coframe label, enforce neighboring coframes with sparse local
-projectors, and derive edge plus corner/plaquette parity channels from those
-local data alone.  Freeze the rule on the adjacent-pair and L fixtures, then
-run it unchanged on `2x2` and held `3x3` centers.  Require returned loop/work
-M2, bounded elementary routing, translation compatibility, transformed-word
-24/576 covariance, and exact comparison with the common encoding.  In
-parallel, finish the literal 335-M2 deletion/inverse audit and the supplied
-Cycle-655 binding so a successful recurrence cannot hide in a macro.  The
-Cycle-612 bridge remains gated on recurrent no-preferred-order closure.
+The local-Gauss route has replaced the target-derived handoff at the bounded
+even-operator level.  The next experiment is now the missing state layer:
+construct an explicit stabilizer-Clifford/tableau isometry `E_BKSF` on the
+smallest open and fixed-Wilson periodic fixtures, orient its logical basis
+against the independent matter basis, and conjugate the actual dressed
+free/seam/contact word through it.  Require
+the physical intertwiner and leakage, active loop/`D`/Wilson deletions,
+odd/even held sizes, transformed-encoding 24/576 covariance, and an exact
+inventory of Wilson-sector preparation versus supplied boundary data.  If
+that closes, run the Cycle-612 matter-caused endpoint/causal-interval harness
+unchanged before attempting a source/gravity or Record/Born prediction
+surface.  The qutrit/H/K/P and two-frame routes remain useful adversarial
+controls, but another target-fitted table expansion is lower leverage.

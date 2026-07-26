@@ -1,0 +1,103 @@
+{
+  "cycle": 707,
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "literal_finite_patch_placement_and_segment_closed_abstract_packettrace_closed_literal_selector_and_recurrence_open",
+  "tests_passed": 12,
+  "tests_failed": 0,
+  "route_independent_obstruction": false,
+  "axiom_pressure": false,
+  "key_results": {
+    "abstract_graph_edge_qubits": 76,
+    "literal_physical_M2": 80,
+    "prepared_plus_gauge_M2": 84,
+    "executed_segment_physical_sites": 14,
+    "maximum_execution_residual": 1.0903676167168099e-15,
+    "minimum_delete_all_RZ_residual": 0.2594121225570971,
+    "cycle655_routed_gate_count": 910,
+    "cycle656_controller_stations": 910,
+    "cycle656_projected_complete_footprint_M2": 384020,
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "held_3x3_literal_physical_M2": 186,
+    "held_4x4_literal_physical_M2": 336
+  },
+  "dependency_sources": [
+    {
+      "path": "docs/work_history/repo/review_feedback/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_NOTE_2026-07-17.md",
+      "sha256": "0a8a768c8b68b151b356f7a4ba88d14dfd5a71a048ca85ade6a0f2febe25e3bf"
+    },
+    {
+      "path": "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+      "sha256": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9"
+    },
+    {
+      "path": "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+      "sha256": "79e07213087f11e0fc387c5ff3920e63c3ad2b9aaac97437e4d772a3a9e5a095"
+    },
+    {
+      "path": "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+      "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+    },
+    {
+      "path": "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+      "sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935"
+    },
+    {
+      "path": "docs/FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+      "sha256": "3caba3e2e27140f3e65c4bb2298738b084083ca3f68e451017430ce2657325ac"
+    },
+    {
+      "path": "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+      "sha256": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb"
+    },
+    {
+      "path": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+      "sha256": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195"
+    },
+    {
+      "path": "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+      "sha256": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0"
+    },
+    {
+      "path": "scripts/frontier_full128_code_projectors_2026_07_24.py",
+      "sha256": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44"
+    },
+    {
+      "path": "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+      "sha256": "fcef8f6f965d1649741acc19302c4cdf4cb48286f9f969ff5d2ad250320f8c06"
+    },
+    {
+      "path": "docs/work_history/repo/review_feedback/PROPER_CUBIC_BOUND_OBJECT_EQUIVALENCE_CYCLE210_NOTE_2026-07-16.md",
+      "sha256": "c05aa08d1baa25a814f5ab583eb640822ea2fe6630f46da285de2fcd84d1285f"
+    },
+    {
+      "path": "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+      "sha256": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "c2599377d0627d701589185f942a1a42d2861c6e05136a4790c4f107c0121af1"
+    },
+    {
+      "path": "scripts/frontier_literal_patchgraph_z3_m2_placement_controller_cycle707_2026_07_26.py",
+      "sha256": "b91ed840aeededcad03f6557d4cba59bb49783f1b1d9e5feebd89d14e193aeb6"
+    },
+    {
+      "path": "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+      "sha256": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480"
+    },
+    {
+      "path": "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+      "sha256": "05cb2f6083cf6c4307c04284632e991b7fd7378cbd2a4eb08a52d5e3c7ae6b99"
+    },
+    {
+      "path": "logs/runner-cache/frontier_literal_patchgraph_z3_m2_placement_controller_cycle707_2026_07_26.txt",
+      "sha256": "9d3fa33fe66ead7cd52912c5460af7afaed72f121e4e1ecbe82066a46b499280"
+    }
+  ],
+  "terminal": "SUMMARY PASS 12 FAIL 0"
+}

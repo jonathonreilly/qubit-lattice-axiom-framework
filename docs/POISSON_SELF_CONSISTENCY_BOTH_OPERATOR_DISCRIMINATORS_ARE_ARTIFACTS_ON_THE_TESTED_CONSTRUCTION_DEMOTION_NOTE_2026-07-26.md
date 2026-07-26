@@ -23,7 +23,7 @@ bare_retained_allowed: false
 ```
 
 Runner: `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py`
-(14 PASS / 0 FAIL)
+(15 PASS / 0 FAIL)
 
 ## What the parent row asked for
 
@@ -171,6 +171,7 @@ lattice sizes, behind biharmonic and the `1/r^2` kernel.
 | L9 | Under per-operator sign normalization, Poisson ranks third of four by `abs(beta-1)` at N=20 and N=24. | R11, R12 | the parent note's parameters `k=5.0, G=0.5, sigma=2.0, mixing=0.3, tol=1e-4, max_iter=30` **[supplied]**; the parent note's `check_field_physics` `beta` diagnostic **[supplied]**; four operators feasible at these sizes **[satisfied]** | Shown: biharmonic `0.876/0.867`, `1/r^2` `1.211/1.242`, Poisson `1.280/1.286`, all attractive and monotone. Claimed: Poisson is not the best operator in the tested family at these sizes. Not claimed: a continuum-limit ranking; the parent note ran its continuum extrapolation for Poisson only. | Poisson ranking first at either size |
 | L10 | The screened-Poisson family shares Poisson's definiteness, so the parent note's Test 4 is unaffected. | R13 | `mu^2 >= 0` **[satisfied]** | Shown: `max eig(Laplacian - mu^2 I) < 0` for all six tested `mu^2`. Claimed: the sign defect does not reach Test 4. | a nonnegative eigenvalue |
 | L11 | The tested biharmonic rival is positivity-preserving by construction, so a mediator-positivity requirement cannot exclude it either. | R14 | the parent runner's biharmonic is `A @ A`, the square of the Dirichlet Laplacian, not the clamped-plate operator **[satisfied]**; N=10 **[satisfied]** | Shown: `Delta_D^-1` entrywise single-signed, `(A@A)^-1 = (A^-1)^2` to `1.2e-15`, `(A@A)^-1` entrywise positive. Claimed: no positivity discriminator separates the tested biharmonic from Poisson. Not claimed: that clamped-plate biharmonic is positivity-preserving; it is not. | a sign change in the tested biharmonic Green's function |
+| L12 | The R11 ranking is not an amplitude artifact: `beta` is amplitude-independent per operator and the ranking is unchanged at matched converged amplitude. | R15 | coupling `G` swept over `[0.05, 4.0]`, an 80-fold range **[supplied]**; N=20 **[satisfied]**; matched on converged `max abs(phi)` **[supplied]** | Shown: `beta` spread at most `0.0229` per operator across the sweep; at matched amplitude the order is biharmonic, `1/r^2`, poisson, local, with Poisson third. Claimed: the ranking is a property of operator shape, not of field strength. Not claimed: that `beta` is exactly amplitude-independent, only that it varies by less than the gaps between operators. | `beta` varying appreciably with `G`, or Poisson ranking first at matched amplitude |
 
 ## Scope, and what this cycle does not claim
 
@@ -190,6 +191,27 @@ lattice sizes, behind biharmonic and the `1/r^2` kernel.
   holds. The statistic `sum|rho_p - rho_0|` scales as `delta_phi^1.124` over
   `delta_phi` in `[0.0125, 0.2]` at `r = 3`, N=12 — approximately linear. This
   cycle looked for a linearity failure and did not find one.
+
+### Is the ranking an amplitude artifact? No
+
+R11 uses the parent note's single `G = 0.5` for every operator, but the operators
+have very different natural scales, so each converges to a different field
+amplitude — and the self-consistent loop is nonlinear. If `beta` depended on the
+converged amplitude, the ranking would be an artifact of unmatched coupling
+rather than a statement about operator shape. Sweeping `G` over an 80-fold range
+(R15):
+
+| operator | `beta` range over the sweep | spread | `beta` at matched amplitude |
+|---|---|---|---|
+| poisson | `1.2797 .. 1.2818` | `0.0021` | `1.2799` |
+| biharmonic | `0.8752 .. 0.8882` | `0.0130` | `0.8752` |
+| `1/r^2` kernel | `1.2101 .. 1.2330` | `0.0229` | `1.2101` |
+| local | `8.6371 .. 8.6371` | `0.0000` | `8.6371` |
+
+`beta` is amplitude-independent to within `0.023` across the whole sweep, and at
+matched converged amplitude the ranking is unchanged: biharmonic, `1/r^2`,
+poisson, local. So `beta` is a property of the operator's shape, and the R11
+ranking survives amplitude matching.
 
 ### The strongest escape from Part C, and why it is not available
 

@@ -544,6 +544,82 @@ check(
     "parent note.",
 )
 
+
+# --- R15 -------------------------------------------------------------------
+# R11 uses the parent note's single G = 0.5 for every operator. The operators
+# have very different natural scales, so each converges to a different |phi|,
+# and the self-consistent loop is nonlinear. If beta depended on the converged
+# amplitude, the R11 ranking would be an amplitude artifact rather than an
+# operator-shape result. Sweep G per operator over an 80x range, then compare
+# at matched converged amplitude.
+def _iter_G(Nsz, solver, kwargs, eps, Gc):
+    kw = dict(kwargs)
+    if "mid" in kw:
+        kw["mid"] = Nsz // 2
+    kernel_type = "G" in kw
+    if kernel_type:
+        kw["G"] = Gc
+    srcpos = (Nsz // 2, Nsz // 2, Nsz // 2)
+    phi = np.zeros((Nsz, Nsz, Nsz))
+    for it in range(MAX_ITER):
+        rho = F.propagate_wavepacket_fast(Nsz, phi, K_WAVE, srcpos, sigma=SIGMA)
+        srcterm = eps * rho if kernel_type else eps * Gc * rho
+        pn = solver(Nsz, srcterm, **kw)
+        if not np.all(np.isfinite(pn)):
+            return None, None
+        pm = (1 - MIXING) * phi + MIXING * pn
+        res = float(np.max(np.abs(pm - phi)))
+        phi = pm
+        if res < TOL and it > 0:
+            break
+    p = F.check_field_physics(Nsz, phi, srcpos)
+    return float(np.max(np.abs(phi))), float(p["beta"])
+
+
+N15 = 20
+G_SWEEP = (0.05, 0.125, 0.25, 0.5, 1.0, 2.0, 4.0)
+sweep = {}
+for name, (solver, kw) in SOLVERS.items():
+    eps = fundamental_sign(N15, solver, kw)
+    rows = []
+    for Gc in G_SWEEP:
+        amp, beta = _iter_G(N15, solver, kw, eps, Gc)
+        if amp is not None and not math.isnan(beta):
+            rows.append((Gc, amp, beta))
+    sweep[name] = rows
+spreads = {n: (min(b for _, _, b in r), max(b for _, _, b in r))
+           for n, r in sweep.items() if r}
+ref_amp = [a for g, a, _ in sweep["poisson"] if abs(g - G_COUPLING) < 1e-12][0]
+matched = {}
+for name, rows in sweep.items():
+    g, a, b = min(rows, key=lambda t: abs(math.log(t[1]) - math.log(ref_amp)))
+    matched[name] = (g, a, b)
+matched_order = sorted(matched.items(), key=lambda t: abs(t[1][2] - 1.0))
+matched_rank = [n for n, _ in matched_order].index("poisson") + 1
+check(
+    "R15 the R11 ranking is not an amplitude artifact: beta is amplitude-"
+    "independent per operator, and the ranking is unchanged at matched amplitude",
+    all(hi - lo < 0.05 for lo, hi in spreads.values()) and matched_rank == 3,
+    "beta range across an 80x sweep in the coupling G, per operator:\n"
+    + "\n".join(f"  {n:11s} beta in [{lo:.4f}, {hi:.4f}]  spread {hi-lo:.4f}"
+                for n, (lo, hi) in spreads.items())
+    + f"\nreference amplitude: poisson at G={G_COUPLING} gives "
+      f"max abs(phi) = {ref_amp:.5f}\n"
+    "each operator at the G whose converged amplitude is closest to that "
+    "reference:\n"
+    + "\n".join(f"  {n:11s} G={g:<6} max abs(phi)={a:.5f}  beta={b:7.4f}  "
+                f"abs(beta-1)={abs(b-1.0):.4f}" for n, (g, a, b) in matched.items())
+    + "\nranking at matched amplitude: "
+    + ", ".join(f"{i}. {n}" for i, (n, _) in enumerate(matched_order, 1))
+    + f"\nPoisson's rank at matched amplitude: {matched_rank}\n"
+    "so beta is a property of the operator's shape, not of the field strength it\n"
+    "happens to converge to at a shared coupling. This closes the strongest\n"
+    "objection to R11: that the parent note's single G = 0.5 evaluates each\n"
+    "operator at a different effective amplitude.\n"
+    "falsifier: beta varying appreciably with G, or Poisson ranking first once\n"
+    "amplitudes are matched.",
+)
+
 print()
 print("=" * 78)
 print(f"TOTAL: {PASS_COUNT} PASS / {FAIL_COUNT} FAIL")

@@ -39,23 +39,48 @@ stated discriminator is wrong.
 ## Answer
 
 **Theorem 1 (the rival formula is misstated — correction).** P4 names the
-rival as `S = L√(1 - φ)` and assigns it `F~M = 0.50`. The landed `0.50` row is
-`S = L(1 - f^0.5)`. **These are different functions and lie in different
-classes.** Since
+rival as `S = L√(1 - φ)` and assigns it `F~M = 0.50`, in three separate places.
+The **source code settles what was actually measured**. In
+[`scripts/action_universality_probe.py`](../scripts/action_universality_probe.py),
+`action_value()` defines the sqrt mode as
 
-```text
-1 - sqrt(1 - f) = f/2 + f^2/8 + ...,
+```python
+if action_mode == "valley_sqrt":
+    return L * (1.0 - np.sqrt(f))
 ```
 
-`L√(1 - φ)` is weak-field **linear** — leading power exactly 1, coefficient
-1/2 — so it sits in the *Newtonian* class alongside `L(1-f)`, `L exp(-f)` and
-`L/(1+f)`. The `0.50` class is `L(1 - √f)`, where the square root is on the
-field, not on `1 - f`. The parenthesis moved between notes. Row B verifies
-both powers and the convergence `depth/f → 1/2`.
+that is `S = L(1 - √f)` — the square root is on the **field**, not on `1 - f`,
+and the mode is named `valley_sqrt`, not "spent-delay". P4's expression is a
+different function:
 
-Consequence: **admission (c)'s stated discriminator does not discriminate.**
-As written, the comparison "valley-linear vs `L√(1-φ)`" is a comparison
-between two members of the same universality class.
+```text
+1 - sqrt(1 - f) = f/2 + f^2/8 + ...
+```
+
+so `L√(1 - φ)` is weak-field **linear** — leading power exactly 1, coefficient
+1/2 — placing it in the *Newtonian* class alongside `L(1-f)`, `L exp(-f)` and
+`L/(1+f)`. Row B verifies both powers and the convergence `depth/f → 1/2`.
+
+**The measured number is right; the formula and the label attached to it are
+not.** Row I shows why the number survives: the genuinely geometric
+spent-delay of
+[`ACTION_CROSSOVER_NOTE`](ACTION_CROSSOVER_NOTE.md), `S = dl - √(dl² - L²)`,
+expands with `dl = L(1+ε)` as
+
+```text
+S = L[(1+eps) - sqrt(2 eps + eps^2)]  ->  L[1 - sqrt(2 eps)],
+```
+
+so it is *also* sublinear with leading power 1/2 and coefficient `√2`. Three
+expressions carry the "spent-delay/sqrt" name across the repo; two of them
+(`L(1-√f)` and the geometric one) share the `p = 1/2` class and match the
+measurement, and **P4's `L√(1-φ)` is the sole outlier**.
+
+Consequence: **admission (c)'s stated discriminator, as written, does not
+discriminate** — it compares valley-linear against another member of the
+Newtonian class. The real rival is the sublinear class, which Theorem 2
+excludes on different grounds, so the exclusion below is aimed at the genuine
+alternative and not at a strawman.
 
 **Theorem 2 (self-adjointness forces integer powers — unconditional).** Let
 the field enter as a perturbation `H(λ) = H + λV` with `H` self-adjoint and

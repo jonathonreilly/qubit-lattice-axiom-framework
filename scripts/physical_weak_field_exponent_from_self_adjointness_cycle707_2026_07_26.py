@@ -39,6 +39,7 @@ Rows:
   D  generic self-adjoint coupling gives p=1 (nonvanishing first order)
   E  a symmetry that kills the first-order term gives p=2, not p=1/2
   F  p=1/2 requires non-self-adjointness: exact branch-point witness
+  I  the GENUINE geometric spent-delay is sublinear -- the rival is real
   H  the propagator itself responds linearly, exact rational resolvent
   G  valley/hill sign control, reproducing the landed sign statement
 
@@ -473,6 +474,49 @@ def h_propagator_responds_linearly():
     )
 
 
+def i_geometric_spent_delay_is_sublinear():
+    """The GENUINE spent-delay expression is sublinear -- so the rival is real.
+
+    Three different expressions are called "spent-delay" across the repo:
+
+        (1) ACTION_CROSSOVER_NOTE:  S = dl - sqrt(dl^2 - L^2)   (geometric)
+        (2) ACTION_UNIQUENESS_NOTE: S = L(1 - f^0.5)            (the 0.50 row)
+        (3) P4:                     S = L*sqrt(1 - phi)
+
+    Writing dl = L(1 + eps) with eps proportional to the field, (1) expands as
+
+        S = L[(1+eps) - sqrt(2 eps + eps^2)] -> L[1 - sqrt(2 eps)],
+
+    so its valley depth goes as sqrt(eps): leading power 1/2, matching (2) and
+    matching the measured F~M = 0.50.  Expression (3) is the odd one out -- it
+    is weak-field linear.  So P4 mis-transcribes the weak-field form of the
+    genuine spent-delay action, and the rival that Theorem 2 excludes is the
+    real one, not a strawman.
+    """
+    def depth_geometric(eps, L=1.0):
+        dl = L * (1.0 + eps)
+        return L - (dl - math.sqrt(dl * dl - L * L))
+
+    p_geo = math.log(depth_geometric(1e-8) / depth_geometric(1e-9)) / math.log(10.0)
+    # the coefficient is exactly sqrt(2)
+    coeff = [depth_geometric(e) / math.sqrt(2 * e) for e in (1e-7, 1e-8, 1e-9)]
+    coeff_ok = all(abs(c - 1.0) < 1e-3 for c in coeff)
+
+    # (1) and (2) share a class; (3) does not
+    p_uniq = leading_power(math.sqrt)
+    p_p4 = leading_power(lambda f: f / (1 + math.sqrt(1 - f)))
+    same_class = abs(p_geo - p_uniq) < 1e-3
+    p4_differs = abs(p_p4 - 1.0) < 1e-6
+
+    check(
+        "I the geometric spent-delay is genuinely sublinear (p=1/2), matching the landed "
+        "0.50 row; P4's `L*sqrt(1-phi)` is the outlier",
+        abs(p_geo - 0.5) < 1e-3 and coeff_ok and same_class and p4_differs,
+        f"p[geometric]={p_geo:.6f}, depth/sqrt(2 eps) -> {coeff[-1]:.6f}, "
+        f"p[L(1-sqrt f)]={p_uniq:.4f}, p[L sqrt(1-f)]={p_p4:.4f}",
+    )
+
+
 def main() -> int:
     print("Cycle 707 - the weak-field exponent is forced by self-adjointness")
     print("=" * 74)
@@ -482,6 +526,7 @@ def main() -> int:
     d_generic_gives_p_one()
     e_vanishing_first_order_gives_p_two()
     f_half_power_needs_non_self_adjointness()
+    i_geometric_spent_delay_is_sublinear()
     h_propagator_responds_linearly()
     g_valley_sign_control()
     print("=" * 74)

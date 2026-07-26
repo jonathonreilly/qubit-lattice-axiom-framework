@@ -260,7 +260,9 @@ Supplied:
 2. the finite `2x2` cell path and six-mode intra-cell Fock chart;
 3. the local edge order entering every BKSF A generator;
 4. the positive loop, D, and rail-Z characters; and
-5. deterministic free-zero tableau completion.
+5. Cycle-232 Pauli, GF(2), proper-frame, and local order-gauge helper
+   conventions; and
+6. deterministic free-zero tableau completion.
 
 Derived:
 
@@ -293,7 +295,7 @@ time, and no controller copy is called a Record.
 | `C_num` | unchanged: the map fixes the complete 24-qubit logical Pauli algebra and is number-sector independent |
 | `C_wrap` | unchanged: tableau and cell-path order are not causal time or realized winding history |
 | `C_int` | unchanged: this is a code bridge, not a new interaction result |
-| `C_local` | improved finitely: the two PR graph codes are exactly signed-Clifford equivalent; a uniform bounded implementation remains open |
+| `C_local` | improved finitely: the two graph codes are exactly signed-Clifford equivalent; a uniform bounded implementation remains open |
 | `C_source` | unchanged |
 
 No global 0–5 TOE maturity score changes.  No Record, causal time,
@@ -386,7 +388,7 @@ two adjacent eliminations to commute up to positive Patch stabilizers.
 The landed Cycle-703 checkpoint explicitly kept OpenReferenceGraph preparation and
 PatchGraph scaled scheduling separate because no signed equivalence had been
 constructed.  This checkpoint supplies that missing finite equivalence, but
-the PR's locality/composition caution remains valid.  Earlier BKSF tableau,
+that checkpoint's locality/composition caution remains valid.  Earlier BKSF tableau,
 decoder, and controller results use different terminal obligations and do not
 establish either minimum rail content or failure of local bond elimination.
 There is no shared obstruction and no axiom pressure.

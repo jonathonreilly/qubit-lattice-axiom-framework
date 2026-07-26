@@ -13,6 +13,10 @@ Dependencies are the landed
 [`RECURRENT_ENDPOINT_INCIDENCE_PHYSICAL_M2_COMPILER_TOURNAMENT_CYCLE703_NOTE_2026-07-25.md`](RECURRENT_ENDPOINT_INCIDENCE_PHYSICAL_M2_COMPILER_TOURNAMENT_CYCLE703_NOTE_2026-07-25.md)
 and the
 [`ENDPOINT_LOCALIZATION_THREE_ROUTE_DISCRIMINATOR_CYCLE705_NOTE_2026-07-26.md`](ENDPOINT_LOCALIZATION_THREE_ROUTE_DISCRIMINATOR_CYCLE705_NOTE_2026-07-26.md).
+The runner directly reuses Pauli, GF(2), frame, and order-gauge helpers from
+the Cycle-232
+[`ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py`](../scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py)
+and its [route note](work_history/repo/review_feedback/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_NOTE_2026-07-17.md).
 The complete route packet, inventories, and N1--N8 boundary are in the
 explanatory
 [`CYCLE706_OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_EQUIVALENCE_NOTE_2026-07-26.md`](work_history/repo/review_feedback/CYCLE706_OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_EQUIVALENCE_NOTE_2026-07-26.md).
@@ -66,6 +70,7 @@ tableau-diagram proof.
 Supplied:
 
 - the two landed Cycle-703 graph definitions and pinned edge-list digests;
+- Cycle-232 Pauli/GF(2)/frame/order-gauge helper conventions;
 - the finite `2x2` path/chart, BKSF local edge order, positive loop/D/rail
   characters, and deterministic free-zero symplectic completion.
 

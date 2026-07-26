@@ -1,0 +1,82 @@
+loop_slug: poisson-response-kernel-diagnostic
+goal: >
+  Close the named missing_bridge_theorem obstruction on
+  self_consistency_forces_poisson_note by performing the two computations its
+  re-audit note specifies, and report the resulting scope.
+target_status: best-honest-status
+cycle: 710
+block: 01
+active_route: diagnostic repair of a critical root row's numerical evidence
+runtime_note: >
+  Entered after eight consecutive value-gate rejections on abstract-derivation
+  cycles (702-709) against A2 (L^-1 = G_0). The pivot that produced this cycle:
+  stop trying to derive the identification and read what the ledger actually
+  asks for on the row that carries it. The parent row named two concrete
+  computations; nobody had run them.
+
+parent_row:
+  claim_id: self_consistency_forces_poisson_note
+  path: docs/audit/data/ledger/se/self_consistency_forces_poisson_note.json
+  criticality: critical
+  deps: []
+  direct_in_degree: 17
+  transitive_descendants: 727
+  load_bearing_score: 18.092
+  runner_hash_in_ledger: 9714bfc547816059745b009ddba47db626444270e34e00aae08319cd2b5d1da2
+  runner_hash_verified_this_cycle: 9714bfc547816059745b009ddba47db626444270e34e00aae08319cd2b5d1da2
+  pin_match: true
+
+strongest_result: >
+  The inverse Dirichlet graph Laplacian is single-signed on the interior; the
+  parent propagator's density response kernel d rho / d phi is sign-indefinite
+  (70-78% of interior sites negative). No scalar multiple connects them, and the
+  least-squares residual is 0.9987-0.9996. The matched point-to-point comparison
+  the re-audit note asks for gives corr = -0.06 where the parent note reports
+  0.93. Robust across k in [0.05, 10] and robust to removing the per-layer
+  renormalization.
+
+second_result: >
+  Under the per-operator source-sign normalization the re-audit note asks for,
+  the parent note's operator ranking inverts: Poisson is third of four by
+  abs(beta-1) at N=20 and N=24, behind biharmonic (0.876/0.867) and the 1/r^2
+  kernel (1.211/1.242), with all four attractive and monotone throughout the
+  interior. The parent note's Bounded Claim 1 is not supported at either tested
+  lattice size.
+
+hypotheses_falsified_this_cycle:
+  - >
+    MINE: that the per-layer renormalization is what destroys the Green-function
+    structure. Removing it leaves the residual at 1.0000 (R6). The cause is the
+    phase-only field coupling, not the normalization.
+  - >
+    MINE: that the parent note's linear-response caveat fails. It holds -
+    sum|rho_p - rho_0| scales as delta_phi^1.124. Reported in the note as a
+    negative result for my own hypothesis and dropped as a claim.
+  - >
+    STEELMAN: that a weak-coupling regime rescues the identification. corr stays
+    in [-0.13, +0.01] across four decades of k (R5).
+
+open_imports: none. No axiom or primitive is load-bearing; this is a
+  diagnostic-correctness result about a runner.
+
+open_routes_not_closed:
+  - alternative decay diagnostic (R11 uses the parent note's own beta fit)
+  - continuum limit: the parent note extrapolated beta -> 1 for Poisson only,
+    never for the rivals. Highest-value follow-up.
+  - what the density response kernel of a phase-only coupling actually is
+
+gates:
+  runner: 13 PASS / 0 FAIL
+  cold_run: clean, isolated detached worktree, pins verified via git show
+  inference_audit_step11: clean (3 findings found and fixed: unqualified title,
+    L3 cross-referencing instead of writing hypotheses out, escaped pipes
+    shifting ledger columns)
+  value_gate_V1_V5: PASS on all five, in writing
+  no_go_gate_N1_N8: no failure condition hit; N1 route 7 declared untested
+  vocab_lint: clean
+  forbidden_surfaces: none touched
+
+next_exact_action: >
+  Await the adversarial review verdict, then open one PR for this block. If the
+  review finds a defect, fix or demote locally per the standing authorization
+  and resubmit; do not open the PR on an unresolved objection.

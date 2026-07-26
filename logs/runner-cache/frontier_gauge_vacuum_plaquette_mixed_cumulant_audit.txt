@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py
-runner_sha256: ee013ee9d87ca89cbda5fd6c7229d4d31cdb9c1eba027aeb7881f31f4d6a4fdc
+runner_sha256: 11c90e379aca3a9b9532b06f841d0cd9d43a9a251ee036dad8a9929fafa6221d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 45.69
+elapsed_sec: 33.21
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -11,37 +11,34 @@ GAUGE-VACUUM PLAQUETTE MIXED-CUMULANT AUDIT
 ==============================================================================
 
 Observed-edge local combinatorics
-  candidates per observed edge             = [5, 5, 5, 5]
-  order-beta^4 leafless supports tested    = 625
-  order-beta^4 leafless survivors          = 0
+  candidates per observed edge          = [5, 5, 5, 5]
+  max observed edges on one other face  = 1
+  order-beta^4 supports tested          = 625
+  order-beta^4 survivors                = 0
 
-Order-beta^5 distinct survivor audit
-  order-beta^5 supports tested             = 37176
-  order-beta^5 distinct survivors          = 4
-  survivor signs                           = (1, -1, 1, -1, -1, 1)
-    ((0, 0, -1, 0), (0, 1))
-    ((0, 0, -1, 0), (0, 2))
-    ((0, 0, -1, 0), (1, 2))
-    ((0, 1, -1, 0), (0, 2))
-    ((1, 0, -1, 0), (1, 2))
-  survivor signs                           = (1, -1, 1, -1, -1, 1)
-    ((0, 0, 0, -1), (0, 1))
-    ((0, 0, 0, -1), (0, 3))
-    ((0, 0, 0, -1), (1, 3))
-    ((0, 1, 0, -1), (0, 3))
-    ((1, 0, 0, -1), (1, 3))
-  survivor signs                           = (1, -1, 1, -1, 1, -1)
-    ((0, 0, 0, 0), (0, 2))
-    ((0, 0, 0, 0), (1, 2))
-    ((0, 0, 1, 0), (0, 1))
-    ((0, 1, 0, 0), (0, 2))
-    ((1, 0, 0, 0), (1, 2))
-  survivor signs                           = (1, -1, 1, -1, 1, -1)
-    ((0, 0, 0, 0), (0, 3))
-    ((0, 0, 0, 0), (1, 3))
-    ((0, 0, 0, 1), (0, 1))
-    ((0, 1, 0, 0), (0, 3))
-    ((1, 0, 0, 0), (1, 3))
+Order-beta^5 multiplicity sectors
+  multiplicity patterns of five         = 7
+  patterns with < 4 distinct faces      = 5
+  sector 1+1+1+1+1 tested / survivors   = 37176 / 4
+  sector 2+1+1+1   tested / survivors   = 2500 / 0
+  shell 0 = +0+0-1+0:01 +0+0-1+0:02 +0+0-1+0:12 +0+1-1+0:02 +1+0-1+0:12
+  shell 1 = +0+0+0-1:01 +0+0+0-1:03 +0+0+0-1:13 +0+1+0-1:03 +1+0+0-1:13
+  shell 2 = +0+0+0+0:02 +0+0+0+0:12 +0+0+1+0:01 +0+1+0+0:02 +1+0+0+0:12
+  shell 3 = +0+0+0+0:03 +0+0+0+0:13 +0+0+0+1:01 +0+1+0+0:03 +1+0+0+0:13
+
+Cube-shell Haar contraction from the shell geometry
+  shell 0: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568
+  shell 1: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568
+  shell 2: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568
+  shell 3: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568
+  rejector, single-face flips still coherent = 0 of 6
+  rejector, wrong index pairing classes      = 4 vs 8
+
+Monte-Carlo SU(3) cross-check
+  measure residuals |UU*-I| / |det-1|   = 1.55e-15 / 1.73e-15
+  moment residuals E[U] / E[UU] / E[UU*] = 1.55e-03 / 1.45e-03 / 1.82e-03
+  coherent shell    = +0.011606 +- 0.000913   exact 1/81 = 0.012346
+  one face flipped  = +0.000429 +- 0.001127   exact 0
 
 First nonlinear coefficient
   per-cube-shell coefficient               = 1/1889568 = 5.292214940134464e-07
@@ -50,21 +47,38 @@ First nonlinear coefficient
 
   [PASS] [THEOREM] each observed edge has exactly five distinct one-edge-sharing local action plaquettes
          candidate counts = [5, 5, 5, 5]
+  [PASS] [THEOREM] no distinct non-observed local plaquette carries more than one observed edge
+         largest observed-edge overlap = 1
   [PASS] [THEOREM] no leafless nonlocal support survives through order beta^4
          tested 625 one-per-edge supports and found 0 survivors
+  [PASS] [THEOREM] every order-beta^5 pattern with fewer than four distinct faces leaves an observed edge uncovered
+         5 of 7 patterns cover at most 3 of 4 observed edges
   [PASS] [THEOREM] the only distinct order-beta^5 survivors are the four elementary cube shells through the observed plaquette
          tested 37176 supports and found 4 survivors
+  [PASS] [THEOREM] no four-distinct-plus-one-repeat order-beta^5 support survives the exact link-balance condition
+         tested 2500 distinct 2+1+1+1 multisets and found 0 survivors
+  [PASS] [THEOREM] each surviving shell closes: V - E + F = 2 with every link shared by exactly two faces
+         F=6 V=8 E=12 on every shell
+  [PASS] [THEOREM] exactly two global face orientations traverse every shared link once in each direction
+         coherent orientations per shell = [2]
+  [PASS] [THEOREM] the exact second Haar moment leaves one free color index class per shell vertex
+         index classes = 8 for V = 8 on every shell
+  [PASS] [THEOREM] each index class carries a single lattice vertex, bijectively onto the shell vertices
+         slot -> vertex is constant on classes and onto the eight cube vertices
+  [PASS] [THEOREM] the contraction is rejected by a mis-oriented face and by the wrong second-moment pairing
+         0 of 6 single-face flips stay coherent; wrong pairing gives 4 classes
   [PASS] [THEOREM] each cube shell contributes exactly 1/18^5
          per-shell coefficient = 1/1889568
   [PASS] [THEOREM] the first nonlocal numerator correction is exactly 4/18^5 * beta^5
          total coefficient = 1/472392
   [PASS] [THEOREM] the full-vacuum reduction law therefore begins beta_eff(beta)=beta + beta^5/26244 + O(beta^6)
          beta_eff coefficient = 1/26244
-  [PASS] [SUPPORT] tree repeated-plaquette supports are handled analytically by the leaf-factorization lemma in the authority note
-         the finite search above classifies only the leafless residual supports after exact leaf peeling
+  [PASS] [SUPPORT] the sampled group measure reproduces the exact SU(3) first and second moments
+         E[U]=1.55e-03 E[UU]=1.45e-03 E[UU*]-dd/N=1.82e-03
+  [PASS] [SUPPORT] independent Haar sampling reproduces 1/81 for the coherent shell and rejects 1/27, 1/243 and 0
+         coherent +0.011606+-0.000913, flipped +0.000429+-0.001127
 
-==============================================================================
-SUMMARY: THEOREM PASS=6 SUPPORT=1 FAIL=0
+SUMMARY: THEOREM PASS=14 SUPPORT=2 FAIL=0
 ==============================================================================
 
 ----- stderr -----

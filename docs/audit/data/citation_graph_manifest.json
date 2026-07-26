@@ -1,6 +1,6 @@
 {
- "edge_count": 15118,
- "node_count": 4543,
+ "edge_count": 15120,
+ "node_count": 4544,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10825,6 +10825,10 @@
   "poisson_self_gravity_zero_coupling_exact_reduction_narrow_theorem_note_2026-05-17": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "port_canonical_common_coframe_physical_m2_compiler_cycle710_bounded_theorem_note_2026-07-26": {
+   "deps_hash": "4fe8cb39513a",
+   "out_degree": 2
   },
   "portable_package_hierarchy_classifier_note": {
    "deps_hash": "4692e4ec0e97",

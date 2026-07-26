@@ -1,0 +1,156 @@
+{
+  "cycle": 710,
+  "artifact": "port_canonical_common_coframe_physical_m2_compiler_cycle710",
+  "date": "2026-07-26",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "bounded_positive_common_coframe_compiler",
+  "tests_passed": 13,
+  "tests_failed": 0,
+  "route_independent_obstruction": false,
+  "axiom_pressure": false,
+  "baseline_commit": "922b9b12a6f58cfd12afe829df914a3bf970d249",
+  "claim_scope": "enumeration-independent port-canonical physical-M2 compiler on the declared open-box signed code space with one supplied common proper-cubic coframe",
+  "formula": "C_b = Q_patch(a->b) C_a N_a Q_open(a->b)^-1 N_b^-1",
+  "local_presentation": {
+    "octahedral_key": "fixed rank of the unordered non-opposite endpoint-mode pair",
+    "spoke_key": "matter endpoint mode",
+    "cross_key": "signed physical port -x,-y,-z,+x,+y,+z",
+    "A_orientation": "lower internal mode or directed positive-axis cross endpoint",
+    "global_cell_rank_inputs": 0,
+    "global_Jordan_Wigner_inputs": 0,
+    "copied_branch_ray_inputs": 0
+  },
+  "enumeration_campaign": {
+    "fixtures": 20,
+    "shapes": [[2, 2, 2], [3, 2, 2], [4, 2, 2], [3, 3, 2], [3, 3, 3]],
+    "transition_term_sum": 0,
+    "semantic_failure_sum": 0,
+    "locality_failure_sum": 0,
+    "centralizer_span_failures": 0,
+    "rank_table_n_minus_k_n_plus_k": [
+      [[2, 2, 2], 120, 216],
+      [[3, 2, 2], 184, 328],
+      [[4, 2, 2], 248, 440],
+      [[3, 3, 2], 282, 498],
+      [[3, 3, 3], 432, 756]
+    ]
+  },
+  "common_coframe_campaign": {
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "semantic_failures": 0,
+    "inverse_failures": 0,
+    "open_product_failures": 0,
+    "patch_product_failures": 0,
+    "locality_failures": 0,
+    "common_coframe_restriction_checks": 96,
+    "common_coframe_restriction_failures": 0
+  },
+  "physical_campaign": {
+    "abstract_qubits": 256,
+    "assigned_M2": 276,
+    "encoded_signed_Pauli_rows": 12288,
+    "logical_intertwiner_failures": 0,
+    "repetition_stabilizer_rows": 480,
+    "leakage_failures": 0,
+    "encoded_number_failures": 0,
+    "semantic_failures": 0,
+    "minimum_primitive_gates": 1265,
+    "maximum_primitive_gates": 5777,
+    "minimum_routed_gates": 22635,
+    "maximum_routed_gates": 38811,
+    "maximum_route_distance": 24,
+    "non_NN_failures": 0,
+    "operand_order_failures": 0,
+    "route_return_failures": 0,
+    "identity_routed_word_sha256": "673932d45609b52da0c07495e93dd6d13fa5ef0afe323c8113448e63f5744f6d",
+    "maximum_pre_Z": 184,
+    "maximum_pre_CZ": 660,
+    "maximum_post_Z": 164,
+    "maximum_post_CZ": 612,
+    "maximum_logical_CZ_degree": 6,
+    "maximum_greedy_logical_CZ_layers": 8
+  },
+  "mass_contact_regression": {
+    "one_particle_coin_eigen_residual": 2.594441202963249e-16,
+    "one_particle_mass": 0.45340565417488515,
+    "Cycle219_mass_fixture": 0.4534056541748851,
+    "one_particle_mass_residual": 5.551115123125783e-17,
+    "contact_vacuum_and_one_particle_residual": 0.0,
+    "contact_double_occupation_phase_residual": 0.0,
+    "contact_coupling": 0.37
+  },
+  "independent_coframe_falsifier": {
+    "same_cube_open_term_difference": 108,
+    "same_cube_patch_term_difference": 88,
+    "overlap_open_shared_edges": 80,
+    "overlap_open_term_difference": 46,
+    "overlap_patch_shared_edges": 76,
+    "overlap_patch_term_difference": 42,
+    "semantic_failures": 0
+  },
+  "deletion_controls": {
+    "minimum_active_gauge_CZ_graph_A_failures": 2,
+    "minimum_active_gauge_Z_graph_A_failures": 1,
+    "minimum_delete_one_physical_Z_S_residual": 1.4142135623730951,
+    "minimum_delete_one_physical_CZ_primitive_residual": 1.9999999999999998,
+    "minimum_first_route_SWAP_detected_macros": 723
+  },
+  "supplied": [
+    "one finite landed Cycle709 reference word template and colour origin",
+    "one common proper-cubic coframe and integer chart origin",
+    "local edge-kind, endpoint-mode, signed-port, and incidence labels",
+    "the Cycle706 OpenReference source sector and natural Open-to-Patch map",
+    "prepared Cycle707 repetition/PatchGraph/rail registers",
+    "serial Manhattan route work and deterministic numeric tolerances",
+    "Cycle219 coin and Cycle230 contact inputs"
+  ],
+  "derived": [
+    "the landed signed presentation from radius-one local ports",
+    "enumeration-independent address relabeling and bounded local Z/CZ gauges",
+    "full signed-code centralizer coverage on twenty shuffle fixtures",
+    "exact 24-frame and 576-product covariance",
+    "exact common-coframe two-cube restriction",
+    "the full routed physical pre-gauge, relabelled base, and post-gauge compiler"
+  ],
+  "open": [
+    "autonomous coframe-tag production and local enforcement",
+    "independent-coframe overlap transition enforcement",
+    "autonomous source/repetition/code-sector genesis",
+    "collision-free parallel recurrence and route-work genesis",
+    "periodic Wilson-sector and all-volume closure",
+    "time, source/gravity, Record, Born/history, and prediction bridges"
+  ],
+  "no_go_discipline": {
+    "N1_normalized_routes": 6,
+    "N1_unexhausted_routes": 4,
+    "gate_for_broad_negative": "FAIL",
+    "disposition": "positive bounded theorem and exact conditional falsifier only",
+    "axiom_pressure": false
+  },
+  "artifacts": [
+    {
+      "path": "docs/PORT_CANONICAL_COMMON_COFRAME_PHYSICAL_M2_COMPILER_CYCLE710_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "13ef04ea9cd819ef4df84d5a5daa0dd2752ce01452787805cabcf53cb6f8a0e1"
+    },
+    {
+      "path": "scripts/frontier_cycle710_port_canonical_common_coframe_physical_m2_2026_07_26.py",
+      "sha256": "e72e2e017139bb3054f99bf618a6a8cee5030830affa340c9f07c6a711fc03af"
+    },
+    {
+      "path": "scripts/frontier_cycle710_port_canonical_order_gauge_core_2026_07_26.py",
+      "sha256": "d06c133176658a353ae7886b82f4ecbb981cb6e1c811cff0c12cd857c87d3185"
+    },
+    {
+      "path": "scripts/frontier_cycle710_port_canonical_physical_core_2026_07_26.py",
+      "sha256": "f6a9461cb8b9993b905279b3caf36d695f2133ac1d4088d088d9d2d94bda1134"
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle710_port_canonical_common_coframe_physical_m2_2026_07_26.txt",
+      "sha256": "4e3ae85c4295deafc38a3d3294e57b2a9a1b8d701d937343c6bb63a6b3dbd50d"
+    }
+  ],
+  "terminal": "CYCLE710_PORT_CANONICAL_COMMON_COFRAME_PHYSICAL_M2_COMPILER_PASS"
+}

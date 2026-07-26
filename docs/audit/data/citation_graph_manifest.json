@@ -1,6 +1,6 @@
 {
- "edge_count": 15093,
- "node_count": 4534,
+ "edge_count": 15105,
+ "node_count": 4540,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4221,6 +4221,10 @@
   "empty_state_bootstrap_all_open_availability_orbit_dichotomy_degree_nine_chirality_wall_bounded_theorem_note_2026-07-04": {
    "deps_hash": "d8a3bd39934d",
    "out_degree": 5
+  },
+  "endpoint_localization_three_route_discriminator_cycle705_note_2026-07-26": {
+   "deps_hash": "4a2a6080dd99",
+   "out_degree": 4
   },
   "energy_channel_induced_kernel_route_a_note_2026-07-08": {
    "deps_hash": "e3b0c44298fc",
@@ -10000,6 +10004,10 @@
   },
   "open_shell_invariant_locus_conditional_neutrality_no_derived_selector_bounded_theorem_note_2026-06-10": {
    "deps_hash": "5ed0add88d9d",
+   "out_degree": 4
+  },
+  "openreference_patchgraph_four_rail_signed_clifford_equivalence_cycle706_note_2026-07-26": {
+   "deps_hash": "a9cb5a27b029",
    "out_degree": 4
   },
   "orbit_occupancy_neutrino_out_of_sample_program_note_2026-06-09": {
@@ -16133,6 +16141,22 @@
   "work_history.repo.review_feedback.cycle704_local_gauss_cycle612_endpoint_bridge_note_2026-07-25": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle705_cycle269_carrier_role_support_localization_note_2026-07-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle705_direct_reference_edge_support_localization_route_a_note_2026-07-25": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "work_history.repo.review_feedback.cycle705_geometry_local_seam_gauge_tableau_note_2026-07-25": {
+   "deps_hash": "c66a8f16c027",
+   "out_degree": 3
+  },
+  "work_history.repo.review_feedback.cycle706_openreference_patchgraph_four_rail_equivalence_note_2026-07-26": {
+   "deps_hash": "3e5327bb1f2c",
+   "out_degree": 1
   },
   "work_history.repo.review_feedback.cycle80_recurrence_audit_endpoint_tube_nucleation_cycle85_note_2026-07-14": {
    "deps_hash": "e3b0c44298fc",

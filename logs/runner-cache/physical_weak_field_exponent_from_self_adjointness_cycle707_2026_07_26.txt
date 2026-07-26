@@ -1,0 +1,18 @@
+Cycle 707 - the weak-field exponent is forced by self-adjointness
+==========================================================================
+      valley_linear   g=1-f        p=1.000000  expected 1.0  depth-form agrees: True
+      exponential     g=exp(-f)    p=1.000000  expected 1.0  depth-form agrees: True
+      reciprocal      g=1/(1+f)    p=1.000000  expected 1.0  depth-form agrees: True
+      sqrt_of_1mf     g=sqrt(1-f)  p=1.000000  expected 1.0  depth-form agrees: True
+      sublinear       g=1-sqrt(f)  p=0.500000  expected 0.5  depth-form agrees: True
+      superlinear     g=1-f^2      p=2.000000  expected 2.0  depth-form agrees: True
+[PASS] A leading power of the valley depth matches the named class for all six forms  --  6 forms, closed-form depths cross-checked against 1-g(f)
+[PASS] B P4's rival `L*sqrt(1-phi)` is weak-field LINEAR (p=1), not the p=1/2 class; the landed 0.50 row is `L*(1-sqrt(f))`  --  depth/f -> 0.50000004 (= 1/2); p[sqrt(1-f)]=1.0000, p[1-sqrt(f)]=0.5000
+[PASS] C Hellmann-Feynman: first-order response equals <psi|V|psi>, exact and nonzero  --  <psi|V|psi> = 10/27 = 0.370370
+[PASS] D self-adjoint coupling with nonvanishing first-order term gives p = 1  --  p = 1.000000000, first-order coefficient = 1.000000000 = <e_1|V|e_1>
+[PASS] E vanishing first-order term gives p = 2 (still an integer), never p = 1/2  --  p = 2.000000000, second-order coefficient = 0.045000000 = b^2/(a0-c0) = 0.045
+[PASS] F p = 1/2 requires non-self-adjointness; self-adjoint families give integer powers  --  branch-point witness p = 0.500000; 12 self-adjoint samples, integer_powers=True, powers seen: [1.0, 2.0]...
+[PASS] H the propagator itself responds linearly: G(lam V) - G_0 = -lam G_0 V G_0 + O(lam^2), exact  --  27x27 exact rational inverse; |G_0 V G_0|_max = 0.0554594, residual/lam shrinks 1.57e-08 -> 7.83e-09
+[PASS] G sign control: valley forms have g'(0) < 0, hill forms g'(0) > 0, no coupling g'(0) = 0  --  matches the landed phase-valley requirement
+==========================================================================
+8 PASS / 0 FAIL

@@ -113,6 +113,7 @@ MIN_AUDIT_MODEL_RANK = (5, 6)
 # helpers now used by the audit queue.
 RUNNER_SOURCE_CHAR_LIMIT = 40_000
 HELPER_SOURCE_CHAR_LIMIT = 40_000
+RUNNER_STDOUT_CHAR_LIMIT = 20_000
 NOTE_BODY_CHAR_LIMIT = 30_000
 AUTHORITY_TOTAL_CHAR_LIMIT = 60_000
 AUTHORITY_PER_NOTE_MAX = 10_000
@@ -863,6 +864,7 @@ def load_reaudit_candidates(
     streams.extend(payload.get("candidates", []))
     if include_runner_drift:
         streams.extend(payload.get("runner_drift_candidates", []))
+    streams.extend(payload.get("runner_stdout_transport_candidates", []))
 
     if criticality_filter:
         streams = [
@@ -1124,6 +1126,7 @@ def find_cached_runner_output(runner_path: str) -> str | None:
 
 AUDIT_PACKET_CONTROL_PATHS = (
     "scripts/codex_audit_runner.py",
+    "scripts/runner_cache.py",
     "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
     "docs/audit/scripts/apply_audit.py",
     "docs/audit/scripts/audit_contract.py",
@@ -1588,12 +1591,11 @@ def get_runner_stdout(runner_path: str | None, default_timeout_sec: int,
         res = _run_repo_runner(p, timeout_sec)
         if res.returncode != 0:
             return f"[runner exit={res.returncode}]\n{res.stdout[-3000:]}\n--- stderr ---\n{res.stderr[-1500:]}"
-        if len(res.stdout) > 6000:
-            return (
-                f"[runner stdout clipped; {len(res.stdout)} chars total]\n"
-                f"{res.stdout[-6000:]}"
-            )
-        return res.stdout
+        return clip_packet_text(
+            res.stdout,
+            RUNNER_STDOUT_CHAR_LIMIT,
+            "runner stdout",
+        )
     except subprocess.TimeoutExpired:
         return f"[runner timed out at {timeout_sec}s — likely needs compute-rerun]"
     except Exception as e:
@@ -1646,13 +1648,14 @@ def get_independent_runner_stdout(
                 f"{result.stderr[-1500:]}",
                 False,
             )
-        if len(result.stdout) > 6000:
-            return (
-                f"[runner stdout clipped; {len(result.stdout)} chars total]\n"
-                f"{result.stdout[-6000:]}",
-                True,
-            )
-        return result.stdout, True
+        return (
+            clip_packet_text(
+                result.stdout,
+                RUNNER_STDOUT_CHAR_LIMIT,
+                "independent runner stdout",
+            ),
+            True,
+        )
     except subprocess.TimeoutExpired:
         return f"[runner timed out at {timeout_sec}s — likely needs compute-rerun]", False
     except Exception as error:
@@ -2631,6 +2634,7 @@ AUTHENTICATED_OCCURRENCE_FIELDS = (
     "occurrence_group_id",
     "occurrence_count",
     "occurrence_locator_sha256",
+    "evidence_locator",
 )
 
 
@@ -2745,10 +2749,13 @@ def bind_authenticated_occurrence_metadata(
 
     The auditor owns classification, rationale, tested resolutions, walls, and
     verdict content. The orchestrator owns the occurrence IDs/counts/digests.
-    Bind those three metadata fields only when the auditor's exact
+    Bind those metadata fields when the auditor's exact
     (evidence_path, phrase, evidence_locator) selects one authenticated
-    full_phrase_groups record. Zero or multiple matches remain untouched and
-    fail closed in the ordinary validator.
+    full_phrase_groups record. A shortened or malformed locator may also be
+    replaced when (evidence_path, phrase) selects exactly one record and the
+    supplied locator is not the exact locator of a different phrase record.
+    Zero, multiple, and cross-labelled matches remain untouched and fail
+    closed in the ordinary validator.
     """
     if evidence_manifest is None:
         return []
@@ -2777,13 +2784,26 @@ def bind_authenticated_occurrence_metadata(
             entry = evidence_manifest.get(path)
             if not isinstance(entry, dict):
                 continue
-            matches = [
+            groups = [
                 group
                 for group in entry.get("full_phrase_groups") or []
                 if isinstance(group, dict)
-                and group.get("phrase") == phrase
+            ]
+            matches = [
+                group
+                for group in groups
+                if group.get("phrase") == phrase
                 and group.get("evidence_locator") == locator
             ]
+            if not matches and locator not in {
+                group.get("evidence_locator")
+                for group in groups
+                if isinstance(group.get("evidence_locator"), str)
+            }:
+                matches = [
+                    group for group in groups
+                    if group.get("phrase") == phrase
+                ]
             if len(matches) != 1:
                 continue
             group = matches[0]
@@ -2957,6 +2977,17 @@ def fresh_schema_retry_eligible(validation_error: str | None) -> bool:
 
 def fresh_schema_retry_code(validation_error: str) -> str:
     """Reduce validator text to a conclusion-free control-plane code."""
+    if (
+        not validation_error.startswith("N4 witness ")
+        and "evidence_locator" in validation_error
+        and (
+            "must contain at least 12 normalized characters" in validation_error
+            or "is not present in" in validation_error
+            or "requires non-empty evidence_path and evidence_locator"
+            in validation_error
+        )
+    ):
+        return "EVIDENCE_LOCATOR_VERBATIM_MISMATCH"
     if validation_error.startswith(
         "N3.hits must exactly disposition orchestrator phrase scan"
     ):
@@ -2982,6 +3013,7 @@ def fresh_schema_retry_code(validation_error: str) -> str:
         "N7.resolution is not evidenced at resolution_evidence_path",
         "N7.argument must name the steelmanned route mechanism",
         "N7.argument must name the steelmanned route attempt",
+        "N7.argument and N7.resolution must each contain at least 80 normalized characters",
     }:
         return "N7_EXECUTION_EVIDENCE_VERBATIM_MISMATCH"
     if validation_error.startswith("transport-bounded N8"):
@@ -3056,6 +3088,13 @@ def render_fresh_schema_retry_prompt(
     no failed section, scientific framing, or prior conclusion.
     """
     guidance = {
+        "EVIDENCE_LOCATOR_VERBATIM_MISMATCH": (
+            "Static evidence-locator invariant: every evidence_locator must be "
+            "a contiguous verbatim substring of at least 12 normalized "
+            "characters from its cited restricted-packet surface. Copy a "
+            "distinctive complete phrase or line; do not use a short label, "
+            "ellipsis, paraphrase, or text from another path.\n"
+        ),
         "N3_RETAINED_AUTHORITY_PROVENANCE_MISMATCH": (
             "Static N3 invariant: retained_authority describes path provenance, "
             "not phrase semantics. Use it exactly when the hit path has an "
@@ -3354,7 +3393,9 @@ def main() -> int:
                         "instead of audit_queue.json. These are rows whose prior "
                         "audit was non-clean (conditional/renaming/etc.) but "
                         "whose deps have since become retained-grade, OR whose "
-                        "cited runner SHA has drifted. Each row gets a fresh "
+                        "cited runner SHA has drifted, OR whose runner stdout "
+                        "now fits the repaired head+tail transport budget. "
+                        "Each row gets a fresh "
                         "audit pass that can now potentially close the chain. "
                         "--allow-blocked is ignored for this alternate source; "
                         "the candidate producer owns eligibility.")
@@ -3705,9 +3746,10 @@ def main() -> int:
                         }) + "\n")
                     continue
 
-            # Cache files remain readiness/performance artifacts, but their
-            # identity is source-SHA-only and cannot authenticate mutable data
-            # inputs. Authority-bearing audit prompts therefore execute the
+            # Cache files remain readiness/performance artifacts. Their
+            # identity covers the runner and only its explicitly declared
+            # repository inputs; it cannot authenticate undeclared mutable or
+            # external state. Authority-bearing prompts therefore execute the
             # current primary runner rather than consuming cached stdout.
             use_cache = False
             exact_evidence_manifest: dict[str, dict] = {}
@@ -3789,6 +3831,16 @@ def main() -> int:
             )
             delivery_selection_fingerprint = audit_selection_fingerprint(row)
 
+            with run_log.open("a", encoding="utf-8") as f:
+                f.write(json.dumps({
+                    "claim_id": cid,
+                    "phase": "prompt_transport",
+                    "prompt_chars": len(prompt),
+                    "soft_limit_chars": CODEX_INPUT_CHAR_LIMIT,
+                    "hard_limit_chars": CODEX_HARD_INPUT_CHAR_LIMIT,
+                    "transport_bound": transport_bound is not None,
+                }) + "\n")
+
             if args.dry_run:
                 print(f"  [dry-run] prompt size: {len(prompt)} chars")
                 with run_log.open("a", encoding="utf-8") as f:
@@ -3806,6 +3858,15 @@ def main() -> int:
                 model=audit_model,
             )
             elapsed = time.time() - t0
+            with run_log.open("a", encoding="utf-8") as f:
+                f.write(json.dumps({
+                    "claim_id": cid,
+                    "phase": "codex_transport_result",
+                    "elapsed_sec": elapsed,
+                    "ok": ok,
+                    "stdout_chars": len(stdout),
+                    "stderr_chars": len(stderr),
+                }) + "\n")
 
             if not ok:
                 print(f"  FAIL codex exec: {stderr.strip()[:300]}")
@@ -3827,6 +3888,12 @@ def main() -> int:
                         "elapsed_sec": elapsed, "stdout_tail": stdout[-2000:]
                     }) + "\n")
                 continue
+            with run_log.open("a", encoding="utf-8") as f:
+                f.write(json.dumps({
+                    "claim_id": cid,
+                    "phase": "codex_reply_extracted",
+                    "reply_chars": len(reply),
+                }) + "\n")
 
             # COMPUTE_REQUIRED escape per AUDIT_AGENT_PROMPT_TEMPLATE.md:
             # if codex says the load-bearing step needs a missing run, do

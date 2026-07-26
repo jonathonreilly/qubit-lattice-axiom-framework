@@ -37,6 +37,7 @@ from scipy import sparse
 from scipy.sparse.linalg import expm_multiply, spsolve
 from scipy.optimize import curve_fit
 
+AUDIT_TIMEOUT_SEC = 900
 
 # ── Physics parameters ──────────────────────────────────────────────────
 MASS = 0.30

@@ -3,6 +3,7 @@
 **Date:** 2026-04-03  
 **Status:** bounded refinement tested
 **Claim type:** bounded_theorem
+**Primary runner:** [`scripts/persistent_record_sidebit_audit_runner.py`](../scripts/persistent_record_sidebit_audit_runner.py)
 
 **Audit-conditional perimeter (2026-05-08):**
 The current generated audit ledger records this row `audited_conditional` with

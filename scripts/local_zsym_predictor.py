@@ -42,6 +42,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import independent_generators_heldout as ind
 import universality_classifier as uc
 
+AUDIT_TIMEOUT_SEC = 900
+
 
 def local_z_asym(pos, adj):
     """Mean over source nodes of |sum(dz_out)| / sum(|dz_out|).

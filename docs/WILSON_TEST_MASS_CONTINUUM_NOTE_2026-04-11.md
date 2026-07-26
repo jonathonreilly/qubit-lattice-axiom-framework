@@ -4,6 +4,7 @@
 **Status:** bounded companion on the Wilson lane
 **Scope:** same-convention open-boundary Wilson runners only; finite-L
 distance-law table is the binding evidence
+**Primary runner:** [`scripts/frontier_test_mass_limit.py`](../scripts/frontier_test_mass_limit.py)
 
 ## Scope narrowing (2026-05-17 audited_conditional repair)
 

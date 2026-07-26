@@ -409,7 +409,8 @@ def fingerprint_v1_problems(snapshot: object) -> list[str]:
             problems.append(f"runner_cache_state:{path}:wrong_keys")
             continue
         if entry["cache_freshness"] not in {
-            "fresh", "missing", "corrupt", "sha_mismatch", "input_mismatch"
+            "fresh", "missing", "corrupt", "sha_mismatch", "input_mismatch",
+            "execution_timeout", "execution_error", "execution_nonzero_exit",
         }:
             problems.append(f"runner_cache_state:{path}:bad_freshness")
         cache_sha = entry["cache_runner_sha256"]

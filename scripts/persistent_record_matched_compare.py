@@ -26,6 +26,7 @@ import math
 import os
 import sys
 from collections import deque
+from collections.abc import Sequence
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -177,8 +178,8 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def main() -> None:
-    args = build_parser().parse_args()
+def main(argv: Sequence[str] | None = None) -> dict[str, list[float]]:
+    args = build_parser().parse_args(argv)
     n_layers_values = parse_int_list(args.n_layers)
     k_band = parse_float_list(args.k_band)
     gammas = parse_float_list(args.gamma)
@@ -527,6 +528,7 @@ def main() -> None:
     for method in methods:
         if method_results[method]:
             print(summarize_fit(method, n_layers_values[: len(method_results[method])], method_results[method]))
+    return method_results
 
 
 if __name__ == "__main__":

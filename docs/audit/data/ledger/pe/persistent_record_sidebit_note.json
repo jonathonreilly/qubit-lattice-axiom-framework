@@ -29,7 +29,15 @@
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/density_matrix_analysis.py",
+    "scripts/entangling_env_decoherence.py",
+    "scripts/generative_causal_dag_interference.py",
+    "scripts/graph_memory_scar_decoherence.py",
+    "scripts/persistent_record_matched_compare.py",
+    "scripts/persistent_record_overlap_kernel.py",
+    "scripts/two_register_decoherence.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
@@ -37,7 +45,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e606d5225e03186d70738cd15f7c20c6a90c8bb67219a555c469f30a44b91e6b",
+  "note_hash": "0754bae943e652c695b9d2f3440a66d193e3ec72e9c12a808de2ab926fb95ee3",
   "note_path": "docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -231,7 +239,7 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": null,
+  "runner_path": "scripts/persistent_record_sidebit_audit_runner.py",
   "title": "Persistent Record Side-Bit Note",
   "transitive_descendants": 0,
   "verdict_rationale": null

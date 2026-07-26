@@ -135,6 +135,14 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # The Wilson companion is a same-convention four-runner package. These
+    # siblings are not imports of the primary test-mass runner, so register
+    # their sources claim-scoped for the restricted packet.
+    "wilson_test_mass_continuum_note_2026-04-11": [
+        "scripts/frontier_perturbative_mass_law.py",
+        "scripts/frontier_continuum_limit.py",
+        "scripts/frontier_newton_systematic.py",
+    ],
     # This theorem note's N7 steelman is the faithful-but-reducible direct sum
     # of the two complexified simple-sector modules.  The independent helper is
     # not imported by the primary stress runner, so expose it only to this row.

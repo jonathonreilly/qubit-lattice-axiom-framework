@@ -313,6 +313,13 @@ The agent does **not** receive the broader publication framing or the
 publication-facing claim status. That is the "fresh look" requirement. The
 agent returns a fill of the audit row.
 
+Live primary and independent-helper stdout use a named 20,000-character
+per-section budget. Oversized output retains both its header and tail through
+deterministic head+tail clipping; the clipping marker remains load-bearing
+evidence, so an `audited_clean` verdict is still forbidden until the complete
+needed evidence fits. The overall prompt keeps its separate 1,000,000-character
+soft transport limit.
+
 If the primary runner is load-bearing but does not complete inside the
 current audit budget, the audit is not applied as `audited_conditional` or
 `audited_failed` for that reason alone. The loop records a local

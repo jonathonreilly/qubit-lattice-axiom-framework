@@ -38,6 +38,7 @@ import numpy as np
 from scipy import sparse
 from scipy.sparse.linalg import expm_multiply, spsolve
 
+AUDIT_TIMEOUT_SEC = 900
 
 # ── Physics constants (matching baseline that gave -2.02) ──
 MASS = 0.30

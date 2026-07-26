@@ -80,6 +80,7 @@ restatement of one in an Answer/Summary/discussion section.
 | `LEDGER` | a missing ledger, or any empty cell | presence and completeness, not honesty |
 | `TAG` | a hypothesis not marked `[supplied]` or `[satisfied]` | cannot tell whether your tag is honest |
 | `HEADLINE` | any `[supplied]` row while the **title** carries no qualifier | title only; a body that overclaims is the reviewer's job |
+| `THESIS` | no ledger row marked `**thesis**`, or a title the thesis row does not cover | cannot tell whether the row you marked is really your headline claim |
 
 The linter is a filter, not a judge. Its self-test
 (`--selftest tests/fixtures/inference_audit/selftest_cases.json`) asserts it
@@ -109,9 +110,26 @@ the note *"…and Covariance Repairs It Without New Input"*. The reviewer's word
 > claim. The inference audit is therefore syntactically complete but not
 > substantively discriminating."
 
-`TAG` and `HEADLINE` are the second layer, added in response. The lesson
+`TAG` and `HEADLINE` are the second layer, added in response.
+
+The **next** cycle (709) then passed *both* layers and was rejected again, this
+time because its complete eight-row ledger contained no row for its own thesis:
+
+> "most importantly, the central route no-go has no ledger row or genuine
+> falsifier."
+
+`THESIS` is the third layer. Two mechanical designs were tried and abandoned
+first — an allowlist of claim-bearing section headings missed the thesis
+(it sat under "Why the route as posed cannot close"), and inverting to a
+denylist flagged metadata and boilerplate in a clean note. Both fail the same
+way: **a linter cannot tell a claim from a sentence.** So the author marks one
+row `**thesis**` and the title must be covered by it — which forces the headline
+claim to carry a Support, a tagged Hypotheses cell and a Falsifier like every
+other claim. The lesson
 generalizes: **a mechanical check makes a defect visible; it does not make you
-honest about it.** If a row is `[supplied]`, the title must say so — the reader
+honest about it** — and each layer has been defeated by the next cycle finding
+a place the check does not look. Expect that to continue; add the layer rather
+than re-resolving to be careful. If a row is `[supplied]`, the title must say so — the reader
 of a title is exactly the person who will not read the ledger.
 
 ## What this does not do

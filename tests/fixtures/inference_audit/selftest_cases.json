@@ -46,6 +46,15 @@
     "why": "Cycle 708 PASSED the first version of this audit and was still rejected: the author recorded the supplied operator-family hypothesis in the ledger and then titled the note 'and Covariance Repairs It Without New Input'. Reviewer: 'Listing the family in the Hypotheses column does not cure the headline claim.' The HEADLINE check is the second layer, derived from that failure."
   },
   {
+    "id": "c709-thesis-missing",
+    "runner": null,
+    "note": "tests/fixtures/inference_audit/thesis_missing_c709_reconstruction.md",
+    "expect": [
+      "THESIS"
+    ],
+    "why": "Cycle 709 passed the audit with a complete eight-row ledger that contained no row for its own headline claim. Reviewer: 'most importantly, the central route no-go has no ledger row or genuine falsifier.' Detecting claims in prose was tried and abandoned (an allowlist missed the thesis, a denylist flagged boilerplate); the author must now mark the thesis row explicitly."
+  },
+  {
     "id": "negative-control",
     "runner": null,
     "note": "tests/fixtures/inference_audit/clean_note_negative_control.md",

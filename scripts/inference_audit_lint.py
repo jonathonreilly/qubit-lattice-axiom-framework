@@ -218,7 +218,12 @@ def _sentences(text: str) -> list[tuple[int, str]]:
     return out
 
 
-CLAIM_SECTION = re.compile(r"^#{1,3}\s*(answer|claim|result|summary|consequence|what this (shows|establishes)|why this)", re.I)
+CLAIM_SECTION = re.compile(
+    r"^#{1,3}\s*(answer|claim|result|summary|consequence|why|"
+    r"what this (shows|establishes)|the no.go|obstruction|"
+    r"cannot close|does not close)",
+    re.I,
+)
 ANY_HEADING = re.compile(r"^#{1,6}\s")
 
 
@@ -237,6 +242,7 @@ def _claim_positions(text: str) -> set[int]:
     for i, line in enumerate(lines, 1):
         if ANY_HEADING.match(line):
             in_claim = bool(CLAIM_SECTION.match(line))
+            continue
         if i == 1 or in_claim or "**Theorem" in line:
             out.add(i)
     return out
@@ -418,6 +424,61 @@ def check_headline(note: Path) -> list[Finding]:
     return out
 
 
+def check_thesis(note: Path, ledger: str) -> list[Finding]:
+    """The ledger must contain the note's own headline claim, marked as thesis.
+
+    Added after cycle 709, whose ledger was complete over eight component rows
+    and contained NO row for the note's thesis. The reviewer: "most importantly,
+    the central route no-go has no ledger row or genuine falsifier."
+
+    Detecting "substantive claims" in prose mechanically was tried first and
+    abandoned: an allowlist of section headings missed the thesis (it sat under
+    "Why the route as posed cannot close"), and inverting to a denylist flagged
+    metadata lines and boilerplate in a clean note. Both failures are the same
+    shape -- the linter cannot tell a claim from a sentence.
+
+    So responsibility is flipped onto the author, where it belongs: mark one
+    ledger row `**thesis**`, and the title must be covered by it. That makes the
+    headline claim carry a Support, a Hypotheses tag, and a Falsifier like every
+    other claim -- which is exactly what 709 lacked.
+    """
+    out: list[Finding] = []
+    if not ledger:
+        return out  # LEDGER already reports the absence
+    text = note.read_text()
+    title = text.splitlines()[0] if text else ""
+
+    rows = list(_ledger_rows(ledger))
+    thesis = [c for c in rows if re.search(r"\bthesis\b", " ".join(c), re.I)]
+    if not thesis:
+        out.append(
+            Finding(
+                "THESIS",
+                f"{note.name}",
+                "no ledger row is marked `**thesis**`; the note's headline claim must "
+                "carry a Support, a tagged Hypotheses cell and a Falsifier like every "
+                "other claim",
+            )
+        )
+        return out
+
+    def content(t: str) -> set:
+        return {w for w in re.sub(r"[^a-z0-9 ]", " ", t.lower()).split() if len(w) > 4}
+
+    tw = content(title)
+    if not any(len(tw & content(c[1])) >= 3 for c in thesis):
+        out.append(
+            Finding(
+                "THESIS",
+                f"{note.name}:1",
+                "the title is not covered by the `**thesis**` ledger row; either the "
+                "title claims something the ledger does not, or the thesis row is not "
+                "the note's headline claim",
+            )
+        )
+    return out
+
+
 def check_hypothesis_tags(note: Path) -> list[Finding]:
     """Every non-trivial Hypotheses cell must be tagged [supplied] or [satisfied]."""
     out: list[Finding] = []
@@ -455,6 +516,7 @@ def run(runner: Path | None, note: Path | None) -> list[Finding]:
         findings += check_direction(note, ledger)
         findings += check_headline(note)
         findings += check_hypothesis_tags(note)
+        findings += check_thesis(note, ledger)
     if runner and runner.exists():
         findings += check_slice(runner)
         findings += check_clone(runner)

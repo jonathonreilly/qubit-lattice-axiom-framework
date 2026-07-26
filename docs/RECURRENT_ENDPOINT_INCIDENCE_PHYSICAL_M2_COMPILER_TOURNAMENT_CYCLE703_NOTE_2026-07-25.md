@@ -503,6 +503,21 @@ Open:
 - physical time, rate, energy, source/gravity, Record occurrence/permanence,
   Born probability, and realized-history meaning.
 
+## TOE dependency ledger
+
+| Wall | Cycle-703 effect | Remaining dependency |
+|---|---|---|
+| `C_ref` | the uniform reference parity bus and runtime exterior-order query are retired for the local-Gauss even-operator law | local coframe/incidence convention, one Wilson/spin character on periodic domains, its preparation/genesis, mode labels, beta, contact coupling, and program factorization remain supplied |
+| `C_num` | local-D capacity is exactly the full `6N` matter Fock dimension at odd and even volume; the dressed two-cell FSWAP is tested on all `2^14` extended states | the finite common-`E_refresh` route remains `n<=2`; physical meaning/superselection of fermion number and a complete all-number BKSF coin/contact composition remain open |
+| `C_wrap` | unchanged; no parity loop, Wilson label, controller ordinal, color stage, or two-frame phase is called time | the landed causal-time law still needs a physical matter-caused endpoint/interval association on the same state code |
+| `C_int` | contact is a bounded onsite polynomial in local BKSF `B` operators, and the finite physical compiler reproduces the supplied `g=0.37` contact | selection of the contact, coupling value, physical rate, protection, and its BKSF common-`E` composition remain open |
+| `C_local` | finite physical common-`E` closure is exact under a supplied order; independently, a target-independent recurrent local-Gauss algebra now removes the parity bus and exterior-order table | one physical edge-qubit `E_BKSF`, leakage/covariance on that encoding, Wilson-sector preparation, and an arbitrary-volume state/compiler composition remain open |
+| `C_source` | unchanged at the physical compiler layer | no action/stress/resource source or backreaction law is selected by this compiler |
+
+This ledger distinguishes the recurrent update-algebra gain from the still-open
+state encoder.  Audit retention does not change any of these mapped science
+coordinates.
+
 ## Claim boundary
 
 This is a positive complete finite-common-encoding compiler advance, plus a

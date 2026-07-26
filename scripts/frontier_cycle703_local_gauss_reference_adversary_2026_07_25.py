@@ -105,6 +105,7 @@ def rank_and_sector_controls() -> dict[str, object]:
         wilsons = wilson_rows(graph)
         qubits = len(graph.edges)
         cells = length**3
+        d_weights = [(d.x | d.z).bit_count() for d in ds]
 
         loop_rank = stabilizer_rank(loops, qubits)
         loop_d_rank = stabilizer_rank(loops + ds, qubits)
@@ -126,6 +127,8 @@ def rank_and_sector_controls() -> dict[str, object]:
                 "periodic": periodic,
                 "cells": cells,
                 "edge_M2": qubits,
+                "minimum_D_Pauli_weight": min(d_weights),
+                "maximum_D_Pauli_weight": max(d_weights),
                 "local_loop_rank": loop_rank,
                 "D_increment": loop_d_rank - loop_rank,
                 "D_delete_one_increment": delete_one_rank - loop_rank,
@@ -154,6 +157,7 @@ def rank_and_sector_controls() -> dict[str, object]:
             and row["product_D_is_fixed_even_identity"]
             and row["commutator_failures"] == 0
             and row["phase_failures"] == 0
+            and row["maximum_D_Pauli_weight"] <= 12
             for row in rows
         ),
         rows,

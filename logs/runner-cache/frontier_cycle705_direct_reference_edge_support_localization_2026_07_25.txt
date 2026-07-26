@@ -1,0 +1,86 @@
+Cycle 705 Route A direct reference-edge support-localization runner cache
+date=2026-07-25
+authority=none
+audit=unset
+dependency_sha256=eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4
+
+PASS the Cycle703 held-patch grammar dependency is byte-pinned
+PASS rectangle projectors absorb every added edge and retain exact 6N(+3 Wilson gauge) typing
+PASS every direct stream summand is common-E exact, but the intended support advantage over the path route is falsified
+PASS every coin/contact Hermitian-log summand restricts exactly through the same common E with no Wilson action
+PASS the one-particle mass fixture and Cycle230 local contact block are unchanged
+PASS typed physical sites, direct summands, and phase-aware common E pass proper-cubic 24/576 covariance
+PASS all periodic translations preserve the direct grammar and phase-aware common E
+PASS reference-edge, rectangle, local-D, Wilson, and contact deletions are active with the path retirement route explicit
+PASS N1-N8 bars a locality/preparation no-go and keeps the common-E claim at tableau resolution
+
+rank_and_common_E:
+fixture,cells,bonds,edge_M2,local_loop_rank,local_loop_D_rank,fixed_Wilson_rank,direct_sum_exponent,fixed_exponent,logical_X_weight,logical_X_diameter
+L,16,16,320,209,224,224,96,96,19,16
+2x2,20,20,400,261,280,280,120,120,19,16
+3x3,39,42,786,514,552,552,234,234,19,16
+periodic-L3,27,81,648,457,483,486,165,162,19,16
+periodic-L4,64,192,1536,1086,1149,1152,387,384,19,16
+
+support_comparison:
+fixture,direct_weight,path_weight,direct_diameter,path_diameter,improved
+L,23,17,32,28,false
+2x2,23,17,32,28,false
+3x3,23,17,32,28,false
+periodic-L3,28,17,32,28,false
+periodic-L4,28,17,32,28,false
+
+constraint_support:
+patch_rectangle_weight_diameter=18,32
+periodic_rectangle_weight_diameter=21,32
+D_weight_diameter=12,16
+coin_contact_weight_diameter=12,16
+
+summands:
+fixture,directed_stream_operands,stream_summands,coin_factors,contact_factors,active_onsite_log_summands,failures
+L,32,128,176,240,1792,0
+2x2,40,160,220,300,2240,0
+3x3,84,336,429,585,4368,0
+periodic-L3,162,648,297,405,3024,0
+periodic-L4,384,1536,704,960,7168,0
+each_directed_stream_operand_columns=4096
+maximum_log_expansion_residual=7.397092656394907e-18
+
+mass_contact:
+one_particle_coin_eigen_residual=2.594441202963249e-16
+one_particle_mass=0.45340565417488515
+Cycle219_mass_fixture=0.4534056541748851
+one_particle_mass_residual=5.551115123125783e-17
+contact_residuals=0
+
+proper_cubic:
+fixture,frames,products,raw_mismatches,corrected_A_B,projectors,stream,typed_address,common_E,common_E_composition
+L,24,576,6945,0,0,0,0,0,0
+2x2,24,576,8682,0,0,0,0,0,0
+3x3,24,576,17034,0,0,0,0,0,0
+translations_L3=27; failures=0
+translations_L4=64; failures=0
+
+deletions:
+fixture,rectangle_rank_loss_1,reference_dressing_D_failures_2,delete_one_D_rank_change_0,delete_two_D_rank_change_1,Wilson_rank_losses
+L,16,16,16,120,none
+2x2,20,20,20,190,none
+3x3,42,42,39,741,none
+periodic-L3,81,81,27,351,"1,1,1"
+periodic-L4,192,192,64,2016,"1,1,1"
+delete_contact_column_residual=0.36789306705608243
+
+typed_midpoint_fiber_spatial_collisions_equal_bond_count=true
+typed_M2_address_collisions=0
+direct_equals_path_times_rectangle_phase_failures=0
+direct_path_common_E_failures=0
+Wilson_gauge_coordinate_failures=0
+common_E_dense_columns_materialized=false
+bounded_preparation_claimed=false
+no_go_gate=FAIL broad no-go; retain route-specific support negative plus algebraic positive
+tests_passed=9
+tests_failed=0
+elapsed_seconds=222.84535558288917
+peak_rss_mb=118.6875
+certificate_sha256=7d79c968204fc14952a72aae721f0f13a6b2d171a639d1d8bea9bb654b20798c
+terminal=DIRECT_REFERENCE_EDGE_COMMON_E_EXACT_PATH_SUPPORT_ADVANTAGE_RETAINED

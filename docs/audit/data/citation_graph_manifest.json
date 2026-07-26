@@ -1,6 +1,6 @@
 {
- "edge_count": 15114,
- "node_count": 4542,
+ "edge_count": 15118,
+ "node_count": 4543,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -8740,6 +8740,10 @@
   },
   "local_frame_orbit_flat_sector_exact_converse_holonomy_frame_unreachable_residual_bounded_theorem_note_2026-06-10": {
    "deps_hash": "902cbaf48a4c",
+   "out_degree": 4
+  },
+  "local_seam_signed_clifford_physical_m2_compiler_cycle709_bounded_theorem_note_2026-07-26": {
+   "deps_hash": "4a5e2b7df738",
    "out_degree": 4
   },
   "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {

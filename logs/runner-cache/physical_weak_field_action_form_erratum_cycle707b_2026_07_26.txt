@@ -1,0 +1,17 @@
+Cycle 707b - erratum: which action formula is in which class
+==========================================================================
+      L(1-f)        valley-linear    p = 1.000000   (class 1.0)
+      L*exp(-f)                      p = 1.000000   (class 1.0)
+      L/(1+f)                        p = 1.000000   (class 1.0)
+      L*sqrt(1-f)   <- P4's rival    p = 1.000000   (class 1.0)
+      L(1-sqrt f)   <- measured      p = 0.500000   (class 0.5)
+      L(1-f^2)                       p = 2.000000   (class 2.0)
+[PASS] R1 leading power of each named expression  --  6 expressions
+[PASS] R2 the probe's `valley_sqrt` is L*(1-sqrt f), power 1/2; P4's L*sqrt(1-f) is power 1  --  p[valley_sqrt]=0.500000, p[P4]=1.000000, P4 depth/f -> 0.50000000
+      (1) geometric   p = 0.499979   depth/sqrt(2 eps) -> 0.999978
+      (2) measured    p = 0.500000
+      (3) P4          p = 1.000000
+[PASS] R3 the geometric spent-delay and the measured form share p=1/2; P4's formula is the outlier  --  so P4 misstates the formula, not the intended class
+[PASS] R4 control: closed-form depths match 1-g(f) at moderate f; direct subtraction underflows at 1e-9  --  worst disagreement 1.451e-16; direct 1-(1-f^2) at f=1e-9 gives exactly 0
+==========================================================================
+4 PASS / 0 FAIL

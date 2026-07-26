@@ -1,0 +1,48 @@
+Cycle 703 BKSF vacuum gauge/ancilla addendum retained runner cache
+date=2026-07-25
+authority=none
+audit=unset
+gauge_dependency_sha256=781823cf744be93de73f5e86e4e4cc988e0e7fe19c9c88a264b6f58169c07b0e
+patch_dependency_sha256=eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4
+
+PASS canonical Cycle703 gauge and held-patch runners are byte-pinned
+PASS all-B plus full-loop vacuum tableaus close exactly on L/2x2 and cube L2-L5
+PASS bounded face ancillas preserve B but do not prepare the required edge-loop vacuum
+PASS dense coherent Z correction closes A_s P_s|0_Z> = P_+|0_Z> with active columns
+PASS translation-linear coherent correction needs the tested whole-torus radius and fails held L6 without refit
+PASS three Wilson characters are inert typed gauge qubits for the complete local even algebra
+PASS proper-cubic frames permute the three Wilson gauge qubits with exact 24/576 composition
+PASS N1-N8 blocks a broad no-go and preserves the exact live completion routes
+
+vacuum_tableaus:
+case,edge_M2,B_rank,local_loop_rank,Wilson_rows,full_cycle_rank,fixed_rank,max_dense_Z_weight
+patch-L,304,111,193,0,193,304,6
+patch-2x2,380,139,241,0,241,380,6
+cube-open-L2,168,55,113,0,113,168,23
+cube-periodic-L3,648,188,457,3,460,648,117
+cube-periodic-L4,1536,447,1086,3,1089,1536,241
+cube-periodic-L5,3000,874,2123,3,2126,3000,413
+
+translation_decoder:
+L,radius,variables,equations,rank,result,first_failure
+3,0,432,850,360,fail,"(15,487)"
+3,1,11664,11664,7739,consistent,none
+4,1,11664,14140,8356,fail,"(15,1363)"
+5,1,11664,14346,8372,fail,"(15,2425)"
+5,2,54000,54000,36061,consistent,none
+6,2,54000,58506,36960,fail,"(15,4927)"
+
+Wilson_direct_sum:
+L,edge_M2,local_D_rank,fixed_Wilson_rank,direct_sum_exponent,fixed_sector_exponent,A_B_Wilson_commutator_failures,single_site_sector_changers
+3,648,483,486,165,162,0,0
+4,1536,1149,1152,387,384,0,0
+
+Wilson_covariance=24 frames; 576 ordered products; 6 coordinate permutations; coordinate_failures=0; phase_failures=0; composition_failures=0; +++ invariant=true
+deletions=one dense correction column -> one syndrome failure; one independent loop -> rank loss 1; one Wilson -> rank loss 1
+no_go_gate=FAIL broad no-go; retain route-specific partial only
+tests_passed=8
+tests_failed=0
+elapsed_seconds=10.092988916905597
+peak_rss_mb=232.25
+certificate_sha256=f3df92574675cfeebc8362dbe10d1589d59c9e73cd177fef190a79801524650f
+terminal=DENSE_COHERENT_VACUUM_AND_WILSON_GAUGE_POSITIVE_FIXED_RADIUS_LOCAL_PREP_OPEN

@@ -119,13 +119,16 @@ Conditional or supplied:
 
 Open:
 
-- the BKSF edge-qubit common E and physical state preparation;
+- composition with the separate Cycle-703 returned-work open-state E and a
+  uniform-support family version of its physical update;
 - objective occurrence and an autonomous admission law;
 - Record permanence;
 - an empirical unit or identification of the decoded integer with duration;
 - a satisfactory endpoint predicate for diagonal-phase-only contact or
   general superposed coin dynamics.
 
+This runner itself does not execute the later Cycle-703 returned-work
+preparation or scaled patch tableau; those are independent companion evidence.
 On a superposed input the reversible B comparator produces an entangled
 opportunity pointer.  Nothing in this runner selects or actualizes a branch.
 The diagonal contact control is intentionally silent because no occupation
@@ -141,9 +144,9 @@ Cycle-610/612 content and are not presented as new.
 
 No count word, packet ordinal, or rotor value is called time.  No packet is
 called a Record.  No occurrence, permanence, empirical calibration, Born
-meaning, or state preparation is inferred.  No no-go, minimum-content, or
-axiom-pressure claim is made; diagonal and superposed endpoints remain live
-constructive work.
+meaning, or state-preparation result is inferred from this bridge.  No no-go,
+minimum-content, or axiom-pressure claim is made; diagonal and superposed
+endpoints remain live constructive work.
 
 ## Reproduction
 

@@ -74,7 +74,7 @@ def check(label: str, ok: bool, detail: str = "") -> None:
 
 
 def section(title: str) -> None:
-    print("\n" + "-" * 88 + f"\n{title}\n" + "-" * 88)
+    print(f"\n{title}")
 
 
 # =============================================================================
@@ -802,54 +802,39 @@ check(
 section("Narrow theorem summary")
 # =============================================================================
 print("""
-  Narrow B_4 theorem statement:
+Narrow B_4 theorem statement.
 
-  HYPOTHESIS:
-    Fix N = 4 with B_4 = {(p, q) : 0 <= p, q <= 4}.
-    Let (rho_(p,q))_(p,q in B_4) be an abstract real sequence with:
-      rho_(p,q) >= 0,
-      rho_(p,q) = rho_(q,p),
-      rho_(0,0) = 1.
-    Define
-      R chi_(p,q) = rho_(p,q) chi_(p,q),
-      Z(W)       = sum_(p,q in B_4) d_(p,q) rho_(p,q) chi_(p,q)(W),
-      Z_(0,0)    = d_(0,0) rho_(0,0) = 1,
-      C_{Z/Z_(0,0)} f (V) = int_{SU(3)} (Z(V W^{-1}) / Z_(0,0)) f(W) dW,
-      with normalized Haar probability measure dW.
+HYPOTHESIS:
+  Fix N = 4 with B_4 = {(p, q) : 0 <= p, q <= 4}.
+  Let (rho_(p,q))_(p,q in B_4) be an abstract real sequence with
+  rho_(p,q) >= 0, rho_(p,q) = rho_(q,p), rho_(0,0) = 1. Define
+    R chi_(p,q) = rho_(p,q) chi_(p,q),
+    Z(W) = sum_(p,q in B_4) d_(p,q) rho_(p,q) chi_(p,q)(W),
+    Z_(0,0) = d_(0,0) rho_(0,0) = 1,
+    C_{Z/Z_(0,0)} f (V) = int_{SU(3)} (Z(V W^{-1}) / Z_(0,0)) f(W) dW,
+  with dW the normalized Haar probability measure.
 
-  CONCLUSION:
-    (T1)  Schur character orthogonality on B_4:
-              <chi_(p,q), chi_(p',q')>_Haar
-                 = int_{SU(3)} chi_(p,q)(W) conj(chi_(p',q')(W)) dW
-                 = delta_((p,q),(p',q')).
+CONCLUSION:
+  (T1) Schur character orthogonality on B_4: <chi_(p,q), chi_(p',q')>_Haar
+       = int_{SU(3)} chi_(p,q)(W) conj(chi_(p',q')(W)) dW = delta_((p,q),(p',q')).
+  (T2) Diagonal-action identity: C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)
+       on V_4.
+  (T3) Coefficient uniqueness: R^(1) = R^(2) iff rho^(1) = rho^(2) on B_4.
+  (T4) R is positive, self-adjoint in the Schur-orthonormal character basis,
+       and commutes with the conjugation swap (p,q) <-> (q,p).
 
-    (T2)  Diagonal-action identity:
-              C_{Z/Z_(0,0)} chi_(p,q) = rho_(p,q) chi_(p,q)  on V_4.
-
-    (T3)  Coefficient uniqueness:
-              R^(1) = R^(2)  iff  rho^(1) = rho^(2) on B_4.
-
-    (T4)  R is positive, self-adjoint (in the Schur-orthonormal character basis),
-          and commutes with the conjugation swap (p,q) <-> (q,p).
-
-  INPUT AND AUTHORITY SURFACE:
-    The complete input is the finite B_4 SU(3) character basis, normalized
-    Haar probability measure, an abstract real nonnegative swap-symmetric
-    sequence with rho_(0,0) = 1, and standard compact-group representation
-    algebra.
-
-  OUTPUT SURFACE:
-    T1 Schur orthogonality; T2 equality of normalized convolution and diagonal
-    action on V_4; T3 coefficient uniqueness; T4 positivity,
-    self-adjointness, and swap symmetry.
-
-  PARENT PROGRAM DIVISION OF LABOR:
-    A physical Wilson-environment coefficient result supplies the sequence
-    with its own source authority. This theorem supplies the algebraic
-    convolution/diagonal equivalence after that typed input is present.
+INPUT AND AUTHORITY SURFACE: the complete input is the finite B_4 SU(3)
+  character basis, normalized Haar probability measure, an abstract real
+  nonnegative swap-symmetric sequence with rho_(0,0) = 1, and standard
+  compact-group representation algebra.
+OUTPUT SURFACE: T1, T2, T3, T4 as stated above.
+PARENT PROGRAM DIVISION OF LABOR: a physical Wilson-environment coefficient
+  result supplies the sequence with its own source authority; this theorem
+  supplies the algebraic convolution/diagonal equivalence after that typed
+  input is present.
 """)
 
 
-print(f"\n{'='*88}\n  TOTAL: PASS={PASS}, FAIL={FAIL}\n{'='*88}")
+print(f"  TOTAL: PASS={PASS}, FAIL={FAIL}")
 print(f"PASS={PASS} FAIL={FAIL}")
 sys.exit(1 if FAIL > 0 else 0)

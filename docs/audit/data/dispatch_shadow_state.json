@@ -1,5 +1,5 @@
 {
- "as_of_date": "2026-07-25",
+ "as_of_date": "2026-07-26",
  "lane_ids": [
   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
   "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr",
@@ -108,7 +108,6 @@
   "dm_effective_parent_one_clock_transfer_boundary_theorem_note_2026-04-18",
   "dm_eta_freezeout_bypass_quantitative_theorem_note_2026-04-25",
   "dm_flagship_closure_review_note_2026-04-17",
-  "dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16",
   "dm_full_closure_same_surface_thermal_bounding_theorem_note_2026-04-17",
   "dm_full_closure_same_surface_thermal_monotonicity_theorem_note_2026-04-17",
   "dm_leptogenesis_equilibrium_conversion_theorem_note_2026-04-16",
@@ -179,7 +178,6 @@
   "dm_wilson_direct_descendant_microscopic_value_frontier_theorem_note_2026-04-18",
   "dm_wilson_direct_descendant_positive_branch_compatibility_and_insufficiency_theorem_note_2026-04-18",
   "dm_wilson_direct_descendant_projected_source_branch_discriminant_theorem_note_2026-04-18",
-  "dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25",
   "dm_wilson_direct_descendant_transport_fiber_spectral_completion_theorem_note_2026-04-19",
   "dm_z3_texture_factor_theorem_note_2026-04-15",
   "down_type_mass_ratio_ckm_dual_note",
@@ -222,7 +220,6 @@
   "gellmann_completeness_theorem_note_2026-05-02",
   "gr_class_expansion_finite_rank_target_note",
   "grav_decoherence_derived_note",
-  "gravitomagnetic_note",
   "graviton_mass_derived_note",
   "graviton_mass_spectral_gap_identity_theorem_note",
   "graviton_spectral_tower_theorem_note_2026-04-24",
@@ -241,7 +238,6 @@
   "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
   "higgs_mass_derived_note",
   "higgs_mass_retention_analysis_note_2026-04-18",
-  "higgs_mechanism_note",
   "higgs_vacuum_explicit_systematic_note",
   "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17",
   "higher_order_structural_theorems_note",
@@ -323,7 +319,6 @@
   "lorentz_kernel_positive_closure_note",
   "lorentz_violation_derived_note",
   "mass_mixing_subspace_disjointness_theorem_note",
-  "matter_inertial_closure_note",
   "matter_radiation_equality_structural_identity_theorem_note_2026-04-24",
   "meron_half_action_core_from_topological_infrastructure_bounded_note_2026-06-18",
   "meson_charges_from_quark_y_note_2026-05-02",
@@ -417,7 +412,6 @@
   "poisson_exhaustive_uniqueness_note",
   "primordial_spectrum_note",
   "proton_lifetime_derived_note",
-  "q_integer_spectrum_theorem_note_2026-05-02",
   "quark_bicac_endpoint_obstruction_theorem_note_2026-04-19",
   "quark_bimodule_lo_shell_normalization_theorem_note_2026-04-19",
   "quark_bimodule_norm_existence_theorem_note_2026-04-19",
@@ -466,7 +460,6 @@
   "shapiro_unique_discriminator_v2_note",
   "sigma_hier_uniqueness_theorem_note_2026-04-19",
   "signed_gravity_response_lane_status_note_2026-04-26",
-  "single_axiom_hilbert_note",
   "sm_one_higgs_yukawa_gauge_selection_theorem_note_2026-04-26",
   "staggered_dirac_realization_gate_note_2026-05-03",
   "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
@@ -478,7 +471,6 @@
   "su2_weak_beta_coefficient_structural_closed_form_theorem_note_2026-04-26",
   "su2_witten_z2_anomaly_theorem_note_2026-04-24",
   "su3_cubic_anomaly_cancellation_theorem_note_2026-04-24",
-  "teleportation_native_axioms_theory_note",
   "teleportation_protocol_note",
   "tensor_block_closure_test_note",
   "tensor_matching_completion_theorem_note",
@@ -531,7 +523,6 @@
   "w_mass_derived_note",
   "wave_retarded_gravity_note",
   "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
-  "work_history.ckm.cabibbo_bound_note",
   "yt_axiom_first_microscopic_bridge_theorem",
   "yt_boundary_theorem",
   "yt_bridge_action_invariant_note",
@@ -569,8 +560,7 @@
   "yt_uv_to_ir_transport_obstruction_theorem_note_2026-04-17",
   "yt_vertex_power_derivation",
   "yt_ward_identity_derivation_theorem",
-  "yt_zero_import_authority_note",
-  "z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02"
+  "yt_zero_import_authority_note"
  ],
  "schema_version": 2
 }

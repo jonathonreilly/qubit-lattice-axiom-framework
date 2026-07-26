@@ -33,7 +33,8 @@ input.
 Companion role: not a new audit-companion; this is a Pattern A new narrow
 claim row carving out the algebra-only core of the existing
 `ckm_magnitudes_structural_counts_theorem_note_2026-04-25` (claim_type=
-positive_theorem, load_bearing_step_class=A).
+positive_theorem). The parent's audit-lane-owned fields are printed as
+context at the end of the run, never asserted -- see the Part 9 comment.
 """
 
 from pathlib import Path
@@ -64,7 +65,10 @@ def check(label, ok, detail=""):
 
 
 def section(title):
-    print("\n" + "-" * 88 + f"\n{title}\n" + "-" * 88)
+    # Rule width kept narrow: 22 rules at 88 columns pushed total stdout to
+    # 6080 chars, past the 6000-char audit-packet excerpt window, which keeps
+    # only the tail. Nothing semantic changes; the whole run stays visible.
+    print("\n" + "-" * 72 + f"\n{title}\n" + "-" * 72)
 
 
 # ============================================================================
@@ -215,18 +219,32 @@ check("(3,4,12) instance: |V_td|_0^2 = 11 alpha_s^3 / 432",
 
 
 # ----------------------------------------------------------------------------
-section("Part 9: parent row context (no ledger modification)")
+section("Part 9: parent row context (report-only, no pin)")
 # ----------------------------------------------------------------------------
-LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
-ledger = json.loads(LEDGER.read_text())
-parent = ledger['rows'].get('ckm_magnitudes_structural_counts_theorem_note_2026-04-25', {})
-print(f"\n  Parent row state on origin/main:")
-print(f"    claim_type: {parent.get('claim_type')}")
-print(f"    transitive_descendants: {parent.get('transitive_descendants')}")
-print(f"    load_bearing_step_class: {parent.get('load_bearing_step_class')}")
-
-check("parent row class-A load-bearing step (algebraic substitution)",
-      parent.get('load_bearing_step_class') == 'A')
+# Reader context only; nothing above depends on it.
+#
+# Earlier revisions read the monolithic docs/audit/data/audit_ledger.json.
+# That file is untracked, so the read raised FileNotFoundError inside the
+# tracked-only audit checkout and aborted the run before its summary line.
+# The read now targets the tracked per-claim ledger shard and degrades to a
+# notice when the shard is absent, so this section can no longer abort a run.
+#
+# The load_bearing_step_class equality assertion that used to live here is
+# removed rather than repointed: that field is audit-lane-authored and the lane
+# rewrites it at re-audit, so pinning it goes stale by construction. It reads
+# None today, which made the pin stale wherever the file was readable at all.
+PARENT_ID = "ckm_magnitudes_structural_counts_theorem_note_2026-04-25"
+SHARD = (ROOT / "docs" / "audit" / "data" / "ledger"
+         / PARENT_ID[:2] / f"{PARENT_ID}.json")
+print("\n  Parent row context (report-only, not asserted):")
+try:
+    parent = json.loads(SHARD.read_text())
+except (OSError, ValueError) as exc:
+    print(f"    shard unavailable ({type(exc).__name__}); context omitted")
+else:
+    print(f"    claim_type             : {parent.get('claim_type')}")
+    print(f"    transitive_descendants : {parent.get('transitive_descendants')}")
+    print(f"    load_bearing_step_class: {parent.get('load_bearing_step_class')}")
 
 
 # ----------------------------------------------------------------------------

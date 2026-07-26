@@ -180,7 +180,7 @@ parametric input identities and the count constraint.
 ## Validation
 
 Primary runner: [`scripts/frontier_ckm_magnitudes_structural_counts_narrow.py`](./../scripts/frontier_ckm_magnitudes_structural_counts_narrow.py)
-verifies (PASS=16/0):
+verifies (PASS=15/0):
 
 1. Each of `(M1)`-`(M5)` reduces by sympy `simplify` to the claimed
    closed-form expression in `(alpha_s, n_pair, n_color, n_quark)`.
@@ -191,7 +191,20 @@ verifies (PASS=16/0):
    rational closed forms `(alpha_s/3, alpha_s^2/12, alpha_s^3/432,
    11 alpha_s^3/432)`, confirming independence from the framework count
    choice.
-5. Parent row's `load_bearing_step_class == 'A'` ledger check.
+A closing section prints parent-row context (claim type, transitive descendant
+count, load-bearing step class) read from the tracked per-claim ledger shard.
+It is report-only and asserts nothing, so it carries no check of its own.
+
+An earlier revision of this runner both asserted the parent's
+`load_bearing_step_class == 'A'` and read the monolithic
+`docs/audit/data/audit_ledger.json`, and each half broke on its own. That file
+is untracked, so the read raised `FileNotFoundError` in a tracked-only
+checkout and the run aborted before printing its summary line. Independently,
+that field is written by the audit lane and rewritten at re-audit — it reads
+`None` now — so the assertion was also stale wherever the file could be read.
+Reading such fields for the reader is fine; pinning their content is what goes
+stale by construction, so the read was repointed to the shard and the
+assertion dropped.
 
 ## Cross-references
 

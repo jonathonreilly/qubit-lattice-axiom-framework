@@ -5,7 +5,7 @@
   "claim_type": "bounded_theorem",
   "authority": "none",
   "audit": "unset",
-  "status": "bounded_positive_common_coframe_compiler",
+  "status": "bounded",
   "tests_passed": 13,
   "tests_failed": 0,
   "route_independent_obstruction": false,
@@ -50,7 +50,10 @@
   },
   "physical_campaign": {
     "abstract_qubits": 256,
-    "assigned_M2": 276,
+    "assigned_data_code_rail_M2": 276,
+    "maximum_total_routed_footprint_M2": 2869,
+    "maximum_supplied_blank_route_work_M2": 2593,
+    "maximum_traversed_nonendpoint_primary_data_M2": 4,
     "encoded_signed_Pauli_rows": 12288,
     "logical_intertwiner_failures": 0,
     "repetition_stabilizer_rows": 480,
@@ -133,11 +136,11 @@
   "artifacts": [
     {
       "path": "docs/PORT_CANONICAL_COMMON_COFRAME_PHYSICAL_M2_COMPILER_CYCLE710_BOUNDED_THEOREM_NOTE_2026-07-26.md",
-      "sha256": "13ef04ea9cd819ef4df84d5a5daa0dd2752ce01452787805cabcf53cb6f8a0e1"
+      "sha256": "374763afe5d7f6346c6bbce5c6de6c1739c4667c143aee578149eb034f0a90b5"
     },
     {
       "path": "scripts/frontier_cycle710_port_canonical_common_coframe_physical_m2_2026_07_26.py",
-      "sha256": "e72e2e017139bb3054f99bf618a6a8cee5030830affa340c9f07c6a711fc03af"
+      "sha256": "9d96f3289c8e48cdf4a29279290daa1925fccc24c2401b7f7d4bb5b8a00ce385"
     },
     {
       "path": "scripts/frontier_cycle710_port_canonical_order_gauge_core_2026_07_26.py",
@@ -145,11 +148,11 @@
     },
     {
       "path": "scripts/frontier_cycle710_port_canonical_physical_core_2026_07_26.py",
-      "sha256": "f6a9461cb8b9993b905279b3caf36d695f2133ac1d4088d088d9d2d94bda1134"
+      "sha256": "27a8536cc0e78393713f9b8ff7c7987c94b7a5ebeedcffd43a5771510b9d58cd"
     },
     {
       "path": "logs/runner-cache/frontier_cycle710_port_canonical_common_coframe_physical_m2_2026_07_26.txt",
-      "sha256": "4e3ae85c4295deafc38a3d3294e57b2a9a1b8d701d937343c6bb63a6b3dbd50d"
+      "sha256": "f120dbb66b8482665fce93156f085dfb1b36e1956291dce4ba1a1d8f3c341246"
     }
   ],
   "terminal": "CYCLE710_PORT_CANONICAL_COMMON_COFRAME_PHYSICAL_M2_COMPILER_PASS"

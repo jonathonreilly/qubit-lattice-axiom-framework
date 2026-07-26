@@ -19,11 +19,22 @@ import frontier_cycle710_port_canonical_physical_core_2026_07_26 as P
 
 PASS = 0
 FAIL = 0
+AUDIT_TIMEOUT_SEC = 360
 NOTE_PATH = (
     "docs/PORT_CANONICAL_COMMON_COFRAME_PHYSICAL_M2_COMPILER_"
     "CYCLE710_BOUNDED_THEOREM_NOTE_2026-07-26.md"
 )
-ACTIVE_SOURCE_PATHS = (
+AUDIT_INPUT_PATHS = (
+    "docs/PORT_CANONICAL_COMMON_COFRAME_PHYSICAL_M2_COMPILER_"
+    "CYCLE710_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_"
+    "CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_"
+    "EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+    "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_"
+    "CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_"
+    "CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
     "scripts/frontier_cycle710_port_canonical_common_coframe_physical_m2_2026_07_26.py",
     "scripts/frontier_cycle710_port_canonical_order_gauge_core_2026_07_26.py",
     "scripts/frontier_cycle710_port_canonical_physical_core_2026_07_26.py",
@@ -32,16 +43,19 @@ ACTIVE_SOURCE_PATHS = (
     "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
     "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
     "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
     "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
     "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
     "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
     "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
-)
-AUDIT_INPUT_PATHS = (
-    NOTE_PATH,
-    "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_"
-    "CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
-    *ACTIVE_SOURCE_PATHS,
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 EXPECTED_DEPENDENCIES = {
@@ -285,6 +299,7 @@ def main() -> int:
         and physical["non_NN_failures"] == 0
         and physical["operand_order_failures"] == 0
         and physical["route_return_failures"] == 0
+        and physical["minimum_first_route_SWAP_detected_macros"] > 0
         and physical["minimum_active_gauge_deletion_failures"] > 0,
         physical,
     )

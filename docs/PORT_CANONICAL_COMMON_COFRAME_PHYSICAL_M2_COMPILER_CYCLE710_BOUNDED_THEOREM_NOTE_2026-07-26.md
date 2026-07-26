@@ -155,7 +155,10 @@ The complete physical census is:
 | resource/control | exact result |
 | --- | ---: |
 | abstract PatchGraph-plus-rail qubits | 256 |
-| primary assigned M2 sites | 276 |
+| primary assigned data/code/rail M2 sites | 276 |
+| maximum total routed footprint M2 sites | 2,869 |
+| maximum supplied blank route-work M2 sites | 2,593 |
+| maximum traversed non-endpoint primary data M2 sites | 4 |
 | encoded signed-Pauli rows | 12,288 |
 | exact/code intertwiner failures | 0 |
 | repetition stabilizer rows / leakage failures | 480 / 0 |
@@ -164,6 +167,11 @@ The complete physical census is:
 | routed nearest-neighbour gates | 22,635--38,811 |
 | maximum route distance | 24 |
 | NN / operand-order / route-return failures | 0 / 0 / 0 |
+| minimum first-route-SWAP deletion witnesses per frame | 723 |
+
+The 276 assigned sites are the data/code/rail footprint, not the full routing
+footprint.  The supplied serial router may additionally touch up to 2,593
+blank route-work M2 sites in a frame, for 2,869 touched M2 sites total.
 
 The identity coframe contains no extra gauge factors and reproduces the landed
 Cycle 709 routed-word digest
@@ -177,8 +185,8 @@ Deleting any active gauge `CZ` causes at least two local-`A` failures and any
 active gauge `Z` causes at least one.  Deleting one `S` from the physical `Z`
 intertwiner has residual `sqrt(2)`; deleting any one primitive from the
 physical `H-CNOT-H` realization of `CZ` has residual at least
-`1.9999999999999998`.  Every frame retains active first-route-SWAP deletion
-witnesses.
+`1.9999999999999998`.  Every frame retains at least 723 active first-route-
+SWAP deletion witnesses.
 
 The unchanged upstream runner gives a one-particle coin eigen residual of
 `2.594441202963249e-16`, mass residual `5.551115123125783e-17`, and zero
@@ -221,8 +229,9 @@ Derived and executed:
 - full signed-code centralizer coverage on all twenty shuffle fixtures;
 - physical repetition-code `Z/CZ` intertwiners, leakage/number controls,
   nearest-neighbour route-and-return words, and active deletions; and
-- preservation of the landed Cycle 219 one-particle mass, Cycle 230 contact,
-  Cycle 708 endpoint, and Cycle 709 seam/compiler regression surfaces.
+- unchanged replay of the landed Cycle 219 one-particle mass, Cycle 230
+  contact, Cycle 708 endpoint, and Cycle 709 seam/compiler regression
+  surfaces.
 
 Open and not claimed:
 

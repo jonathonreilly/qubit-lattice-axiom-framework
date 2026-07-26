@@ -65,8 +65,11 @@ The result is a layered partial closure:
   The eight-dimensional factor cannot be silently discarded.
 
 There is no broad preparation no-go and no axiom pressure.  The dense exact
-identity and Wilson direct-sum typing are constructive results; bounded
-nonlinear and recurrent correction routes remain live.
+identity and Wilson direct-sum typing are constructive results.  Bounded
+nonlinear and recurrent correction routes remain live in this subroute; the
+separate Cycle-703 echo/ack addendum subsequently constructs one such
+radius-one recurrent correction with returned work and a factorized retained
+record.
 
 ## Exact vacuum tableaus and preparation controls
 
@@ -175,8 +178,9 @@ Not supplied or derived:
 
 - a fixed-radius autonomous circuit preparing the all-`B` edge vacuum from
   product ancillas;
-- a nonlinear local measurement decoder with bounded returned work;
-- a recurrent radius-one decoder and its stopping/cleanup law;
+- within this runner, a nonlinear local measurement decoder or recurrent
+  radius-one controller with bounded returned work (the separate
+  `CYCLE703_REVERSIBLE_ECHO_ACK_CONTROLLER_NOTE_2026-07-25.md` constructs one);
 - an arbitrary-matter-state physical common E and direct
   `U_physical E - E U_matter` residual; or
 - a matter-only selection of one Wilson character without an admitted gauge
@@ -192,7 +196,8 @@ negative and the constructive partial closures.**
   translation-linear fixed-radius correction, and Wilson subsystem/direct
   sum.  The dense route is exact and the subsystem route closes Wilson typing.
   Nonlinear local measurement decoding and recurrent radius-one correction
-  remain untested and live.
+  remain untested inside this runner; the independent echo/ack companion now
+  provides a positive construction rather than support for this negative.
 - **N2 — Wall independence.** Loop disentangling and correction locality are
   one coupled preparation wall.  Wilson selection is separate and is
   conditionally retired by taking a typed gauge input.  Arbitrary-state

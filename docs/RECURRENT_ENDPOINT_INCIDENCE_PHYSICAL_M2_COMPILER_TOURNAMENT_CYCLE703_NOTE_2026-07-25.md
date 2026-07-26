@@ -146,14 +146,58 @@ for arbitrary `6N`-qubit matter input.  The original prefix logical-X formula
 was caught carrying an occupation-dependent phase; the retained suffix formula
 passes all 384 local mode/state checks and the complete 64-state cell load.
 
-What remains is autonomous genesis, not a missing finite state isometry.
-Exact open plaquette correction in the declared measurement-plus-Z protocol
-needs worst-case feedforward radius `floor((L-2)/2)`, and the retained decoder
-is boundary/host supplied.  Periodic domains retain three fixed Wilson
-characters; periodic preparation, larger-overlap common-E conjugation,
-transformed-E covariance, and a no-host-side-control decoder remain open.  The
-full initial boundary and N1--N8 audit are in
+What remains is autonomous genesis, not a missing finite state isometry.  The
+one-shot open plaquette decoder has the exact worst-case radius
+`floor((L-2)/2)`, but a subsequent construction removes the host-selected
+path/table: one frozen radius-one axial cellular recurrence clears every
+lawful open-box syndrome for all `L` by the cube-Bianchi identity.  It passes
+all 4,096 L2 edge patterns, every unit-edge basis case through held L8, 6,912
+proper-cubic/translated boundary-chart cases, and ten active rule deletions.
+The rule locally quiesces after `2(L-1)` iterations without a host stop or
+global apply barrier.  Those iterations are not called time.
+
+The forward-only version consumed irreversible ready memory, but a subsequent
+radius-one Euler echo/ack controller closes that implementation wall.  Its
+local XOR/router/token/epoch tables are bijective M2 permutations, controlled
+Z is unitary, every token returns idle, and all recurrence work returns blank.
+L2 is exhaustive over 4,096 edge patterns and 32 lawful syndromes; all 2,944
+unit-edge cases through L8, 64 linear pairs per size, nine transition
+deletions, and 6,912 proper-cubic/translated controller cases pass exactly.
+
+The syndrome bank is retained rather than erased.  On the complete open L2
+preparation, all 113 independent syndrome branches obey
+
+```text
+A_s P_s |0_edge> = P_+ |0_edge>
+```
+
+with common phase-zero amplitude, so preparation factors as the unique
+168-M2 physical vacuum times a pure 114-M2 record stabilizer state.  Both
+factor tableaus are full rank, the edge/record Schmidt rank is one, and later
+logical/physical updates act only on the edge factor.  Thus a one-time `E`
+needs no dissipative reset; reuse of the same bank as blank remains a separate
+entropy/export obligation.
+
+Periodic domains carry three Wilson characters, but their dynamical role is
+now exact rather than mysterious.  On periodic L3/L4 the locally constrained
+code has exponent `6N+3`; adding the three Wilson rows gives `6N`.  Every
+actual local `A/B` generator commutes with all three, so the complete local
+even update is typed as `U_matter tensor I_8`.  All 24 frames merely permute
+the gauge basis and all 576 products compose exactly.  No Wilson selection is
+needed for the direct-sum compiler, although a matter-only isometry still
+requires an explicit three-qubit gauge vector.  Larger-overlap common-E
+conjugation and transformed-E covariance remain under independent test.  The
+full initial boundary and N1--N8 audits are in
 [`CYCLE703_LOCAL_GAUSS_REFERENCE_ADVERSARIAL_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_LOCAL_GAUSS_REFERENCE_ADVERSARIAL_NOTE_2026-07-25.md).
+
+The uniform decoder and returned-work/factorization evidence are in
+[`CYCLE703_LOCAL_CELLULAR_PLAQUETTE_DECODER_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_LOCAL_CELLULAR_PLAQUETTE_DECODER_NOTE_2026-07-25.md)
+and
+[`CYCLE703_REVERSIBLE_ECHO_ACK_CONTROLLER_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_REVERSIBLE_ECHO_ACK_CONTROLLER_NOTE_2026-07-25.md).
+
+The independent face-ancilla, dense-correction, held-radius, and Wilson-gauge
+tests are in
+[`CYCLE703_BKSF_VACUUM_GAUGE_ANCILLA_ADDENDUM_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_BKSF_VACUUM_GAUGE_ANCILLA_ADDENDUM_2026-07-25.md).
 
 An unoriented scalar edge selector is insufficient for that representation:
 the four proper-cubic rotations fixing a `+x` edge produce four distinct
@@ -164,6 +208,47 @@ plaquette handoff rule, tested on L, `2x2`, and `3x3` patches.  Full surrounding
 qutrit/chart conditioning, recurrent placement, `n>2`, and primitive
 genesis/enforcement remain open.  No shared obstruction or axiom pressure is
 claimed.
+
+## Conditional bridge into the causal-interval interface
+
+Cycle 704 consumes the exact local-Gauss two-cell seam and tests the existing
+Cycle-610/612 interface code unchanged.  A bounded seven-M2 comparator derives
+the coherent candidate opportunity
+
+```text
+P_B(before,after) = OR_a [B_a(before) != B_a(after)]
+```
+
+from the physical endpoint `B` words.  Across all 4,096 two-cell matter
+columns and all 36 directed port pairs it produces 73,728 true and 73,728
+false cases with zero predicate, delta, local-`D`, reference, or inverse
+failures.  Diagonal contact produces zero false endpoints.  The physical `B`
+support is at most 11 edge M2 over two owner cells, and all 24 frames preserve
+the port family.
+
+With supplied actuality, admissibility, law-domain, co-registration, and
+blank-address ports, a reversible 34-M2-per-cell predecessor packet projects
+exactly to the existing EventChain and JointOrder implementations:
+
+```text
+Pi_610 A_packet = A_610 Pi_610,
+D_packet = D_610 Pi_610,
+J_612 Pi_610 preserves the admitted/refused causal-order cases.
+```
+
+All 25 bank append attempts match, the decoded intervals are `9`, `12`, and
+`21` with exact additivity/reversal, 96 register/carry cases invert exactly,
+and the existing inverted-order/cycle controls remain active.  The accessible
+packet inverse proves that the packet is not a permanent Record.  On a
+superposed input the comparator creates an entangled opportunity pointer; it
+does not select or actualize a branch.  Thus this is a conditional physical
+endpoint/interval bridge, not an occurrence, admission, empirical-time,
+Record, or Born law.  Its independent canonical replay passes 6/0 with
+certificate
+`357091195c097d1c7cf25465b5243a05b456990f7f0f1509eb5469dd9466022b`.
+
+The complete resource boundary is in
+[`CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md).
 
 ## Inputs and historical discriminants
 
@@ -357,13 +442,22 @@ The two-cell tableau runner closes the previously missing physical state
 object without a dense `2^38` matrix: 25 independent loops plus one `D` leave
 12 logicals; a full rank-76 canonical tableau orients their phases and gives
 exact common-E conjugation/leakage for hop, FSWAP, contact, and coin
-generators.  Separately, the open-code runner constructs a unique stabilizer
-vacuum and bounded arbitrary-state loader through cubes L2--L5.  Its exact
-plaquette-syndrome feedforward radius grows with boundary distance, so the
-state isometry is positive while autonomous scalable preparation remains
-open.  Rank equality and canonical commutators are not substituted for the
-phase decoder: a 384-column audit rejected the earlier prefix representative
-and certifies the retained suffix representative.
+generators.  The open-code runner constructs a unique stabilizer vacuum and
+bounded arbitrary-state loader through cubes L2--L5.  A radius-one axial
+decoder plus reversible echo/ack controller now replaces its growing host
+feedforward paths; all work returns and the complete L2 coherent record
+factors exactly from the vacuum, so one-time E needs no reset.  Rank equality
+and canonical commutators are not substituted for the phase decoder: a
+384-column audit rejected the earlier prefix representative and certifies the
+retained suffix representative.
+
+The scaled tableau runner then rebuilds independent common E objects on L,
+held `2x2`, held `3x3`, and periodic L3 and executes complete finite L/`2x2`
+coin/seam/contact schedules factor by factor.  It also exposes the remaining
+family wall: the state-compatible individual stream summands have maximum
+weights `13,23,39,135`.  Therefore the separate max-17 operand grammar is not
+silently substituted for the scaled common-E recurrence.  Finite schedules
+are exact; uniform constant support remains open.
 
 The additive physical-state and held-grammar packets are:
 
@@ -372,7 +466,11 @@ The additive physical-state and held-grammar packets are:
 - [`frontier_cycle703_bksf_two_cell_tableau_intertwiner_2026_07_25.py`](../scripts/frontier_cycle703_bksf_two_cell_tableau_intertwiner_2026_07_25.py), with
   [`CYCLE703_BKSF_TWO_CELL_TABLEAU_INTERTWINER_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_BKSF_TWO_CELL_TABLEAU_INTERTWINER_NOTE_2026-07-25.md);
 - [`frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py`](../scripts/frontier_cycle703_open_bksf_stabilizer_preparation_2026_07_25.py), with
-  [`CYCLE703_OPEN_BKSF_STABILIZER_PREPARATION_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_OPEN_BKSF_STABILIZER_PREPARATION_NOTE_2026-07-25.md).
+  [`CYCLE703_OPEN_BKSF_STABILIZER_PREPARATION_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_OPEN_BKSF_STABILIZER_PREPARATION_NOTE_2026-07-25.md);
+- [`frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py`](../scripts/frontier_cycle703_reversible_echo_ack_controller_2026_07_25.py), with
+  [`CYCLE703_REVERSIBLE_ECHO_ACK_CONTROLLER_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_REVERSIBLE_ECHO_ACK_CONTROLLER_NOTE_2026-07-25.md);
+- [`frontier_cycle703_bksf_patch_tableau_covariance_2026_07_25.py`](../scripts/frontier_cycle703_bksf_patch_tableau_covariance_2026_07_25.py), with
+  [`CYCLE703_BKSF_PATCH_TABLEAU_COVARIANCE_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE703_BKSF_PATCH_TABLEAU_COVARIANCE_NOTE_2026-07-25.md).
 
 ## Route C — staggered/time-multiplexed feature word
 
@@ -517,6 +615,24 @@ Derived:
   for arbitrary `6N`-qubit matter input on L, planar `2x2`, and open cubes
   L2--L5, plus the exact growing feedforward-range boundary for the declared
   measurement-plus-Z preparation protocol;
+- one uniform radius-one axial syndrome recurrence valid on every open cube,
+  followed by an explicit local reversible Euler echo/ack M2 controller with
+  returned work, exact L2 coherent edge/record factorization, held L8 tests,
+  6,912 covariance cases, and no required one-time record reset;
+- exact periodic typing as `H_matter tensor C^8_Wilson`, with the complete
+  local even algebra acting as `U_matter tensor I_8` and exact 24/576 Wilson
+  gauge covariance;
+- phase-oriented common-E tableaus on open L, held `2x2`, held `3x3`, and
+  periodic L3, including transformed-E frame/translation reconstruction and
+  exact factor-by-factor scheduled free/seam/contact induction on L and
+  `2x2`; the same test exposes growing individual seam-summand weights
+  `13,23,39,135`, so uniform constant support remains open;
+- no-refit preservation of the three non-null Cycle-629 contact-dimer
+  spectrum/Ritz rows under the finite physical common E, with zero spectral
+  or Ritz-residual difference;
+- a conditional bounded physical-`B` endpoint comparator and reversible M2
+  predecessor packet that project exactly into the unchanged Cycle-610/612
+  interval/order harness on all 4,096 two-cell columns and 36 port pairs;
 - held-size stability, constant overhead, mass preservation, and 24/576
   covariance;
 - exact retirement of the eleven-chart transition residual and active
@@ -524,24 +640,28 @@ Derived:
 
 Open:
 
-- fixed-Wilson sector preparation/genesis, or an explicit declaration and
-  control of that supplied topological resource;
-- a no-host-side-control open-code vacuum preparation law; the exact retained
-  feedforward decoder has growing boundary range and is supplied;
-- scaled common-E conjugation and transformed-E 24/576 covariance on the
-  L/`2x2`/`3x3` overlap tableaus, beyond the exact two-cell result;
-- a target-independent, locally constrained edge/corner or plaquette gauge
-  whose restrictions close the L, `2x2`, and `3x3` overlap fixtures;
-- recurrent overlap/placement/collision for translated words beyond the one
-  finite two-star patch;
+- a matter-only selection/preparation of one periodic Wilson vector; the
+  direct-sum compiler instead retains the three characters as inert typed
+  gauge input;
+- physical genesis of the open boundary/coframe and one invocation of the
+  now-local returned-work preparation isometry; repeat use of the same
+  syndrome bank as blank needs reset/export, but one-time `E` does not;
+- a uniformly constant-support seam representative compatible with the
+  scaled common E: finite transformed-E and full scheduled updates close, but
+  individual path-chord summands grow `13,23,39,135` across the tested family;
+- a target-independent local gauge/tableau change, bounded ancilla route, or
+  different physical graph that reduces those state-compatible seam cosets
+  without importing a preferred global cell path;
+- an infinite-volume recurrence theorem beyond the exact L/`2x2` schedules,
+  held `3x3`/periodic operator tests, and translated collision audits;
 - full surrounding-qutrit/chart conditioning of the L correction;
 - an end-to-end literal Cycle-655 physical decode/interface/encode binding and
   transformed-encoding 24/576 covariance for the fixed-register executor;
 - a complete literal L6 two-particle sweep, one complete-word deletion
   intertwiner, and the complete inverse macrostep;
 - local dynamical enforcement and genesis of the combined transition charts;
-- full free-plus-seam-plus-contact physical recurrence on the BKSF common
-  encoding rather than only its bounded even-operator algebra;
+- a uniform-support family version of the now-executed finite
+  free-plus-seam-plus-contact common-E recurrence;
 - `n>2`, full `M64^12`, more than two overlapping stars, volume collision
   control, and an infinite-lattice recurrence theorem;
 - primitive preparation/enforcement of all code and controller constraints;
@@ -554,27 +674,30 @@ Open:
 
 | Wall | Cycle-703 effect | Remaining dependency |
 |---|---|---|
-| `C_ref` | the uniform reference parity bus and runtime exterior-order query are retired for the local-Gauss update law; an open-code vacuum and phase-correct arbitrary-state loader are explicit | local coframe/incidence convention, supplied open boundary/feedforward, one Wilson/spin character on periodic domains, its preparation/genesis, mode labels, beta, contact coupling, and program factorization remain supplied |
-| `C_num` | local-D capacity is exactly the full `6N` matter Fock dimension at odd and even volume; the dressed two-cell FSWAP is tested on all `2^14` extended states and the open loader accepts arbitrary `6N` matter | the finite common-`E_refresh` route remains `n<=2`; physical meaning/superselection of fermion number and a complete all-number many-bond update composition remain open |
-| `C_wrap` | unchanged; no parity loop, Wilson label, controller ordinal, color stage, or two-frame phase is called time | the landed causal-time law still needs a physical matter-caused endpoint/interval association on the same state code |
-| `C_int` | contact is a bounded onsite polynomial in local BKSF `B` operators; the two-cell physical tableau conjugates all 30 contacts exactly and the held grammar reproduces the supplied `g=0.37` block | selection of the contact, coupling value, physical rate, protection, and larger-overlap common-E composition remain open |
-| `C_local` | finite order-derived physical common-E closure remains as a control; independently, the local-Gauss route now has target-independent held operator recurrence, an exact physical two-cell common E, and an arbitrary-size open state loader without parity bus or exterior-order table | no-host-side-control vacuum genesis, fixed-Wilson periodic preparation, scaled overlap common-E conjugation, and transformed-E covariance remain open |
+| `C_ref` | the uniform parity bus and runtime exterior-order query are retired; open vacuum/loader preparation has a local returned-work controller, and periodic Wilson characters are inert typed gauge input under the full local even law | coframe/boundary and one preparation invocation, the supplied cell path used by the scaled tableau, mode labels, beta, contact coupling, and program factorization remain supplied; a matter-only periodic E still needs a gauge vector |
+| `C_num` | local-D capacity is exactly the full `6N` matter Fock dimension at odd/even volume; the arbitrary-state loader and finite common-E factor induction are not restricted to `n<=2` | the separate `E_refresh` control remains `n<=2`; physical number meaning/superselection and a uniform-support infinite-volume update remain open |
+| `C_wrap` | a bounded physical-B opportunity and reversible predecessor packet now project exactly into the landed Cycle-610/612 interval/order code; no controller ordinal, packet count, rotor, or color stage is called time | occurrence/admission, empirical interval unit, diagonal/superposed endpoint law, and Record permanence remain open |
+| `C_int` | contact is a bounded onsite BKSF polynomial inside the exact finite common-E schedules, retains the one-particle mass fixture, and transports the no-refit Cycle-629 spectral/Ritz rows exactly | selection of the contact/coupling, physical rate/protection, and uniform-support family composition remain open |
+| `C_local` | finite order-derived closure remains a control; local Gauss now supplies returned-work open-state preparation, scaled transformed-E tableaus, exact L/`2x2` scheduled updates, held covariance, and periodic direct-sum typing | state-compatible stream summands grow `13,23,39,135`; a uniform constant-support representative, boundary/coframe genesis, and infinite-volume recurrence remain open |
 | `C_source` | unchanged at the physical compiler layer | no action/stress/resource source or backreaction law is selected by this compiler |
 
-This ledger distinguishes the now-constructed finite/open state encoders from
-their still-open autonomous genesis and periodic topological sector.  Audit
+This ledger distinguishes exact finite common-E recurrence and local one-time
+state preparation from the still-open uniform-support family theorem.  Audit
 retention does not change any of these mapped science coordinates.
 
 ## Claim boundary
 
-This is a positive finite physical common-E compiler advance, a recurrent
-all-parity local even-operator grammar with exact odd/even-volume capacity,
-and an explicit open-boundary BKSF state encoder.  It is not yet the requested
-autonomous no-host-side-control recurrent compiler: open vacuum correction has
-growing supplied feedforward range, periodic Wilson genesis is open, and
-larger-overlap/transformed-E common-encoding conjugation is not yet executed.
-The fixed-coordinate macro is
-not substituted for the still-open literal Cycle-655 physical binding.
+This is a positive finite physical common-E compiler advance, an exact
+all-parity local even algebra with odd/even-volume capacity, a returned-work
+open-boundary state encoder, scaled transformed-E tableaus, and complete
+scheduled finite L/`2x2` physical updates.  It is not yet the requested
+uniform constant-support recurrent compiler: the state-compatible individual
+stream summands grow `13,23,39,135`, the scaled E is a global stabilizer-code
+isometry rather than a bounded tensor block per cell, and its cell path plus
+boundary/coframe remain supplied.  Periodic Wilson selection is not a
+dynamical wall for the explicitly typed direct sum, but matter-only E still
+needs a gauge vector.  The fixed-coordinate macro is not substituted for the
+still-open literal Cycle-655 physical binding.
 Static projectors are not physical energy.  Gate ordinals are not time or
 rates.  Pointer/feature copying is not a framework Record.  No wrapped phase
 is called energy.  No source, gravity, probability, minimum content, shared
@@ -586,15 +709,19 @@ support routes or to the substrate.
 
 ## Optimal next experiment
 
-The local-Gauss route has replaced the target-derived handoff and now supplies
-a finite physical common E plus an arbitrary-size open-code loader.  The next
-experiment has two coupled obligations.  First, scale the phase-oriented
-tableau conjugation from two cells to the actual L/`2x2`/`3x3` overlap graphs
-and rebuild the full encoding under translations and all 24/576 frames.
-Second, replace the supplied open-boundary syndrome paths by one fixed local
-autonomous decoder—or explicitly carry a fixed-Wilson periodic resource—and
-measure its support, rounds, returned work, and genesis without calling those
-rounds time.  If the same-code overlap intertwiner closes, run the Cycle-612
-matter-caused endpoint/causal-interval harness unchanged before attempting a
-source/gravity or Record/Born prediction surface.  Another target-fitted table
-expansion is now lower leverage.
+The local-Gauss route now supplies the finite common E, returned-work open
+preparation, transformed-E tableaus, exact finite scheduled recurrence, the
+Cycle-612 conditional endpoint bridge, and no-refit Cycle-629 spectral
+preservation.  The next experiment should attack only the remaining compiler
+wall: the growing state-compatible path-chord seam support.
+
+Run a three-route local-representative tournament: add bounded parallel
+reference/face auxiliaries, synthesize a geometry-aware local gauge/tableau
+whose cosets match the existing max-17 even grammar, and test the Cycle-269
+carrier/role graph as the physical common-E substrate.  Freeze on L/`2x2`,
+hold out `3x3` and periodic L3/L4, and require individual summand weight and
+diameter to remain constant under every frame/translation—not merely exact
+finite tableau rank.  If one route closes, rerun Cycle 704 and then connect the
+physical local matter source to the independent boundary-source construction
+currently proposed in PR 5632.  Another target-fitted finite sign table or a
+dense global Clifford is now lower leverage.

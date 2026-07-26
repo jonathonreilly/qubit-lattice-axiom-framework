@@ -1,0 +1,120 @@
+{
+  "cycle": 708,
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "selected_seam_fswap_endpoint_extractor_closed_on_supplied_encoded_cube_tableau_locality_genesis_bank_and_recurrence_open",
+  "tests_passed": 18,
+  "tests_failed": 0,
+  "route_independent_obstruction": false,
+  "axiom_pressure": false,
+  "key_results": {
+    "open_graph_edge_qubits": 168,
+    "patch_graph_edge_qubits": 156,
+    "prepared_Z_rails": 12,
+    "literal_active_M2": 168,
+    "literal_plus_prepared_rails_M2": 180,
+    "selected_seam_routed_factors": 242,
+    "all_seam_independent_factor_census": 2904,
+    "routed_coordinate_union": 812,
+    "routed_plus_carrier_rail_union": 832,
+    "endpoint_physical_weights": [6, 6, 10],
+    "maximum_endpoint_physical_diameters": [11, 13, 24],
+    "truth_rows": 12288,
+    "symbolic_spectator_rows": 960,
+    "active_CNOT_deletions_detected": 120,
+    "first_route_SWAP_deletions_detected": 12,
+    "unique_basis_relation_weight": 30,
+    "eligible_basis_deletions": 30,
+    "eligible_endpoint_maps": 1080,
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "held_box": [3, 2, 2],
+    "fswap_domain_mismatches": 0,
+    "unrestricted_before_after_mismatches": 8,
+    "unchanged_diagonal_false_fires": 2,
+    "unitarity_residual": 0.0,
+    "blank_pointer_isometry_residual": 0.0,
+    "projector_relation_residual": 0.0
+  },
+  "claim_boundary": {
+    "executed": "one selected-seam nearest-neighbor opportunity extractor V on an already encoded PatchGraph/repetition state",
+    "supplied": "open-cube chart, coframe, basis gauge, prepared code/rail sectors, FSWAP opcode, blank pointer and route work, Manhattan/support/CNOT order",
+    "open": "local implementation of dense tableau T, code genesis/enforcement, intrinsic redundancy gauge, simultaneous schedule, general comparator, physical bank, occurrence, Record, recurrence, and global physical-site compiler",
+    "full_tableau_drop_covariance_claimed": false,
+    "endpoint_and_physical_word_covariance_claimed": true
+  },
+  "dependency_sources": [
+    {
+      "path": "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+      "sha256": "fcef8f6f965d1649741acc19302c4cdf4cb48286f9f969ff5d2ad250320f8c06"
+    },
+    {
+      "path": "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+      "sha256": "71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69"
+    },
+    {
+      "path": "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "c2599377d0627d701589185f942a1a42d2861c6e05136a4790c4f107c0121af1"
+    },
+    {
+      "path": "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+      "sha256": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480"
+    },
+    {
+      "path": "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+      "sha256": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13"
+    },
+    {
+      "path": "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+      "sha256": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b"
+    }
+  ],
+  "historical_provenance": {
+    "load_bearing": false,
+    "paths": [
+      {
+        "path": "docs/work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
+        "sha256": "f57df7fb23fa2be384cd174162490a1b38a8bee5c300547822e42ee8d6a9ce7b"
+      },
+      {
+        "path": "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+        "sha256": "4d0049dbcb231301e0b0b110bc1933dfb2bda1aea2628e5e30bc5c1cee97d66a"
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "602cd4f5342deb44f064001e1fbc4d8902194d8a4929473e65e295ce10c1eafd"
+    },
+    {
+      "path": "scripts/frontier_cycle708_physical_endpoint_cube_2026_07_26.py",
+      "sha256": "ffeea1f37c6166a94aaef8e23757e04c3a0494f3c097984a9bdaf0b8869667db"
+    },
+    {
+      "path": "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+      "sha256": "3aa964a6eaca559048a53de580f39d9295a3e4b41ef9d4ff9dcdd4d3ff7444a7"
+    },
+    {
+      "path": "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+      "sha256": "f5b604b714e8fbb33e2b6284cb38199e900859d710cd9e1411ee941a021235f3"
+    },
+    {
+      "path": "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+      "sha256": "b42ea07c1ed671b9cbab38bc38eba6f8166fe65be52295941a95e3ed75049abf"
+    },
+    {
+      "path": "logs/runner-cache/frontier_cycle708_physical_endpoint_cube_2026_07_26.txt",
+      "sha256": "a41cd968162a7c4f2286d6784d8fbbdfd7f581ea4105d4f1e1d7e68f030c76ad"
+    }
+  ],
+  "independent_reconstruction": {
+    "artifact_sha256": "8778c70949618465cc417b3d3684a4f7d13f1a938ca206a3f52710c9419d9d45",
+    "output_sha256": "cbab7dfd36a13713b8cfc7957932ea70d6c36a49bf4823ce172bab49bd267a34",
+    "terminal": "CYCLE708_INDEPENDENT_AUDIT_RECON_PASS",
+    "packaged": false,
+    "repository_dependency": false
+  },
+  "terminal": "SUMMARY PASS 18 FAIL 0"
+}

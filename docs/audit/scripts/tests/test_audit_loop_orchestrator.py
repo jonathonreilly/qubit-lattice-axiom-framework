@@ -4860,7 +4860,7 @@ class CampaignContractTest(unittest.TestCase):
             audit_loop, "blocking_lanes", return_value=[]
         ), mock.patch.object(
             audit_loop, "drain_lane", return_value=(0, False)
-        ), mock.patch.object(
+        ) as drain_lane, mock.patch.object(
             audit_loop, "run_forensic_canary", side_effect=fake_canary
         ):
             rc = audit_loop.main(
@@ -4874,6 +4874,7 @@ class CampaignContractTest(unittest.TestCase):
 
         self.assertEqual(rc, 0)
         self.assertEqual(canary_calls, 2)
+        self.assertEqual(len(drain_lane.call_args_list), 3)
         lock.close.assert_called_once_with()
 
     def test_runtime_consumed_by_forensic_backoff_preserves_temporary_exit(self):

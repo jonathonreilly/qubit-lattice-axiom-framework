@@ -11647,6 +11647,38 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertNotIn("Recheck every N1-N8", prompt)
         self.assertNotIn("prior_secret", prompt)
         self.assertIn("not given its JSON or conclusion", prompt)
+        self.assertEqual(
+            m.fresh_schema_retry_code(
+                "N5 statement 1 must record one tested resolution per "
+                "required class"
+            ),
+            "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE",
+        )
+        self.assertEqual(
+            m.fresh_schema_retry_code(
+                "N2.walls must each be evidenced at N2.evidence_path"
+            ),
+            "N2_WALL_EVIDENCE_BINDING_MISMATCH",
+        )
+        accumulated_prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET",
+            [
+                "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE",
+                "N2_WALL_EVIDENCE_BINDING_MISMATCH",
+            ],
+            2,
+        )
+        self.assertIn("VALIDATOR CODES:", accumulated_prompt)
+        self.assertIn(
+            "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE", accumulated_prompt
+        )
+        self.assertIn(
+            "N2_WALL_EVIDENCE_BINDING_MISMATCH", accumulated_prompt
+        )
+        self.assertIn(
+            "per_element, per_site, per_mode", accumulated_prompt
+        )
+        self.assertIn("name both complete wall strings", accumulated_prompt)
         n3_code = m.fresh_schema_retry_code(
             "N3 retained_authority hit 1 is not retained or accepted in the manifest"
         )
@@ -11812,6 +11844,60 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         self.assertIn("complete text verbatim inside its disposition", n6_wall_prompt)
         self.assertNotIn("candidate 1", n6_wall_prompt)
         self.assertNotIn("secret_wall", n6_wall_prompt)
+
+    def test_forensic_readiness_requires_live_n5_resolution_certificate(self):
+        m = _import_codex_audit_runner()
+        phrase = m.no_go_discipline_gate.N5_SCAN_PHRASES[0]
+        evidence_manifest = {
+            "docs/SOURCE.md": {
+                "roles": ["source"],
+                "text": f"The source says {phrase} as a physical conclusion.",
+                "full_phrase_groups": [
+                    {
+                        "phrase": phrase,
+                        "occurrence_group_id": "1" * 16,
+                        "occurrence_count": 1,
+                        "occurrence_locator_sha256": "2" * 64,
+                        "evidence_locator": (
+                            f"The source says {phrase} as a physical conclusion."
+                        ),
+                    }
+                ],
+            },
+            "audit-packet://runner-stdout/target": {
+                "roles": ["runner_stdout"],
+                "text": "PASS without the required resolution certificate",
+            },
+        }
+
+        issue = m.forensic_evidence_readiness_issue(evidence_manifest)
+        self.assertIsNotNone(issue)
+        for resolution_class in sorted(
+            m.no_go_discipline_gate.N5_RESOLUTION_CLASSES
+        ):
+            self.assertIn(resolution_class, issue)
+
+        evidence_manifest["audit-packet://runner-stdout/target"]["text"] = "\n".join(
+            (
+                f"{resolution_class}: current-cycle deterministic check covers "
+                "this resolution and records an explicit outcome"
+            )
+            for resolution_class in sorted(
+                m.no_go_discipline_gate.N5_RESOLUTION_CLASSES
+            )
+        )
+        self.assertIsNone(
+            m.forensic_evidence_readiness_issue(evidence_manifest)
+        )
+
+        evidence_manifest["docs/SOURCE.md"]["full_phrase_groups"] = []
+        evidence_manifest["docs/SOURCE.md"]["text"] = (
+            "The source states a constructive physical conclusion."
+        )
+        evidence_manifest["audit-packet://runner-stdout/target"]["text"] = ""
+        self.assertIsNone(
+            m.forensic_evidence_readiness_issue(evidence_manifest)
+        )
 
     def test_failed_locator_repair_preserves_fresh_schema_eligibility(self):
         m = _import_codex_audit_runner()

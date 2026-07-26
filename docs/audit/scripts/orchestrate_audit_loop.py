@@ -853,6 +853,145 @@ def run_forensic_canary(
     return 0
 
 
+def drain_forensic_sequence(
+    args: argparse.Namespace,
+    forensic_attempted: set[str],
+) -> tuple[int, bool]:
+    """Drain claim-local forensic outcomes without redundant development scans.
+
+    Returns ``(rc, resume_development)``. A canonical state change or remote
+    supersession returns to the full development phases because dependency
+    readiness may have changed. A schema/compute quarantine changes only the
+    campaign exclusion file, so the next forensic row is selected directly
+    while the repository head remains stable.
+    """
+    service_failures = 0
+    while True:
+        stop_if_runtime_limit_reached(args)
+        forensic_before = git_head()
+        rc = run_forensic_canary(args, forensic_attempted)
+        if rc == batch.TRANSIENT_SERVICE_EXIT_CODE:
+            service_failures += 1
+            runtime_consumed = wait_for_service_retry(
+                args,
+                "forensic-canary",
+                service_failures,
+            )
+            if runtime_consumed:
+                return rc, False
+            try:
+                stop_if_runtime_limit_reached(args)
+            except RuntimeLimitReached:
+                return rc, False
+            continue
+        if rc != 0:
+            return rc, False
+        service_failures = 0
+        if args.dry_run:
+            return 0, False
+        synced, detail = batch.sync_origin_main()
+        if not synced:
+            emit(f"cannot reconcile forensic result with origin/main: {detail}")
+            return 2, False
+        forensic_after = git_head()
+        canary_claim = PROGRESS.get("last_canary_claim_id")
+        if (
+            PROGRESS.get("last_canary_terminal_phase")
+            == "remote_state_superseded"
+        ):
+            emit(
+                "forensic seat was superseded by remote source/state "
+                "movement; returning to development for fresh selection"
+            )
+            return 0, True
+        if forensic_after != forensic_before:
+            if isinstance(canary_claim, str) and canary_claim:
+                current_rows = batch.load_rows()
+                current_row = current_rows.get(canary_claim) or {}
+                canary_source = PROGRESS.get("last_canary_source")
+                cross_status = (
+                    current_row.get("cross_confirmation") or {}
+                ).get("status")
+                awaiting_second = (
+                    current_row.get("audit_status") == "audit_in_progress"
+                    and cross_status == "awaiting_second"
+                )
+                if not awaiting_second:
+                    forensic_attempted.add(canary_claim)
+                reentry_reason = None
+                if canary_source in {"dispatch", "reaudit"}:
+                    try:
+                        source_ids = {
+                            row.get("claim_id")
+                            for row in batch.source_queue_rows(
+                                str(canary_source),
+                                current_rows,
+                            )
+                        }
+                    except (
+                        OSError,
+                        ValueError,
+                        json.JSONDecodeError,
+                    ) as exc:
+                        emit(
+                            "cannot authenticate post-forensic source "
+                            f"state: {exc}"
+                        )
+                        return 2, False
+                    if canary_claim in source_ids:
+                        reentry_reason = (
+                            f"{canary_source}_selection_still_live_"
+                            "after_applied_verdict"
+                        )
+                elif (
+                    current_row.get("audit_status") == "unaudited"
+                    and batch.source_requires_forensic(current_row)
+                ):
+                    reentry_reason = batch._latest_invalidation_reason(
+                        current_row
+                    )
+                if reentry_reason is not None:
+                    batch.persist_blocked_row_reentries(
+                        args.campaign_quarantine_file,
+                        {canary_claim: reentry_reason},
+                    )
+                    forensic_attempted.add(canary_claim)
+                    emit(
+                        "forensic verdict re-entered the unchanged "
+                        "ready queue and was excluded for this campaign: "
+                        f"claim={canary_claim} reason={reentry_reason}"
+                    )
+            emit(
+                "forensic row landed; returning to development because "
+                "the new verdict may unblock additional dependencies"
+            )
+            return 0, True
+        if isinstance(canary_claim, str) and canary_claim:
+            forensic_attempted.add(canary_claim)
+            if PROGRESS.get("last_canary_terminal_phase") == "applied":
+                reason = (
+                    "applied_forensic_verdict_produced_no_canonical_"
+                    "state_change"
+                )
+                batch.persist_blocked_row_reentries(
+                    args.campaign_quarantine_file,
+                    {canary_claim: reason},
+                )
+                emit(
+                    "forensic apply produced no canonical commit and "
+                    "was excluded for this campaign: "
+                    f"claim={canary_claim} reason={reason}"
+                )
+                continue
+            emit(
+                "forensic row minted no verdict and is excluded for "
+                "this campaign; advancing directly to the next ready "
+                "forensic row"
+            )
+            continue
+        return 0, False
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Panel-aware end-to-end audit backlog drainer"
@@ -1003,7 +1142,6 @@ def main(argv: list[str] | None = None) -> int:
     PROGRESS["last_canary_terminal_phase"] = None
     PROGRESS["last_canary_source"] = None
     forensic_attempted: set[str] = set()
-    forensic_service_failures = 0
     _STOP_HEARTBEAT.clear()
     thread = threading.Thread(target=heartbeat, daemon=True)
     thread.start()
@@ -1098,126 +1236,13 @@ def main(argv: list[str] | None = None) -> int:
                     or args.lane
                 ):
                     return 0
-                stop_if_runtime_limit_reached(args)
-                forensic_before = after
-                rc = run_forensic_canary(args, forensic_attempted)
-                if rc == batch.TRANSIENT_SERVICE_EXIT_CODE:
-                    forensic_service_failures += 1
-                    runtime_consumed = wait_for_service_retry(
-                        args,
-                        "forensic-canary",
-                        forensic_service_failures,
-                    )
-                    if runtime_consumed:
-                        return rc
-                    try:
-                        stop_if_runtime_limit_reached(args)
-                    except RuntimeLimitReached:
-                        return rc
-                    continue
+                rc, resume_development = drain_forensic_sequence(
+                    args,
+                    forensic_attempted,
+                )
                 if rc != 0:
                     return rc
-                forensic_service_failures = 0
-                if args.dry_run:
-                    return 0
-                synced, detail = batch.sync_origin_main()
-                if not synced:
-                    emit(f"cannot reconcile forensic result with origin/main: {detail}")
-                    return 2
-                forensic_after = git_head()
-                canary_claim = PROGRESS.get("last_canary_claim_id")
-                if (
-                    PROGRESS.get("last_canary_terminal_phase")
-                    == "remote_state_superseded"
-                ):
-                    emit(
-                        "forensic seat was superseded by remote source/state "
-                        "movement; returning to development for fresh selection"
-                    )
-                    continue
-                if forensic_after != forensic_before:
-                    if isinstance(canary_claim, str) and canary_claim:
-                        current_rows = batch.load_rows()
-                        current_row = current_rows.get(canary_claim) or {}
-                        canary_source = PROGRESS.get("last_canary_source")
-                        cross_status = (
-                            current_row.get("cross_confirmation") or {}
-                        ).get("status")
-                        awaiting_second = (
-                            current_row.get("audit_status") == "audit_in_progress"
-                            and cross_status == "awaiting_second"
-                        )
-                        if not awaiting_second:
-                            forensic_attempted.add(canary_claim)
-                        reentry_reason = None
-                        if canary_source in {"dispatch", "reaudit"}:
-                            try:
-                                source_ids = {
-                                    row.get("claim_id")
-                                    for row in batch.source_queue_rows(
-                                        str(canary_source),
-                                        current_rows,
-                                    )
-                                }
-                            except (
-                                OSError,
-                                ValueError,
-                                json.JSONDecodeError,
-                            ) as exc:
-                                emit(
-                                    "cannot authenticate post-forensic source "
-                                    f"state: {exc}"
-                                )
-                                return 2
-                            if canary_claim in source_ids:
-                                reentry_reason = (
-                                    f"{canary_source}_selection_still_live_"
-                                    "after_applied_verdict"
-                                )
-                        elif (
-                            current_row.get("audit_status") == "unaudited"
-                            and batch.source_requires_forensic(current_row)
-                        ):
-                            reentry_reason = batch._latest_invalidation_reason(
-                                current_row
-                            )
-                        if reentry_reason is not None:
-                            batch.persist_blocked_row_reentries(
-                                args.campaign_quarantine_file,
-                                {canary_claim: reentry_reason},
-                            )
-                            forensic_attempted.add(canary_claim)
-                            emit(
-                                "forensic verdict re-entered the unchanged "
-                                "ready queue and was excluded for this campaign: "
-                                f"claim={canary_claim} reason={reentry_reason}"
-                            )
-                    emit(
-                        "forensic row landed; returning to development because "
-                        "the new verdict may unblock additional dependencies"
-                    )
-                    continue
-                if isinstance(canary_claim, str) and canary_claim:
-                    forensic_attempted.add(canary_claim)
-                    if PROGRESS.get("last_canary_terminal_phase") == "applied":
-                        reason = (
-                            "applied_forensic_verdict_produced_no_canonical_"
-                            "state_change"
-                        )
-                        batch.persist_blocked_row_reentries(
-                            args.campaign_quarantine_file,
-                            {canary_claim: reason},
-                        )
-                        emit(
-                            "forensic apply produced no canonical commit and "
-                            "was excluded for this campaign: "
-                            f"claim={canary_claim} reason={reason}"
-                        )
-                        continue
-                    emit(
-                        "forensic row minted no verdict and is excluded for "
-                        "this campaign; advancing to the next ready forensic row"
-                    )
+                if resume_development:
                     continue
                 return 0
     except RuntimeLimitReached:

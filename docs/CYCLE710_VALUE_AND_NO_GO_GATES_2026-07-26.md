@@ -2,7 +2,7 @@
 
 Block: `physics-loop/poisson-response-kernel-diagnostic-20260726`
 Deliverable: `docs/POISSON_SELF_CONSISTENCY_BOTH_OPERATOR_DISCRIMINATORS_ARE_ARTIFACTS_ON_THE_TESTED_CONSTRUCTION_DEMOTION_NOTE_2026-07-26.md`
-Runner: `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py` (13 PASS / 0 FAIL)
+Runner: `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py` (14 PASS / 0 FAIL)
 
 ## V1–V5 Promotion Value Gate
 
@@ -96,10 +96,10 @@ Applies because the deliverable asserts negative results (`no_go` for the two
 named discriminators). The negative claims are exactly: the response kernel is
 not a scalar multiple of the inverse Laplacian on this construction (L3); the
 0.93 statistic does not discriminate (L7); the attractiveness column has no
-content beyond the source-sign convention (L8, L12); Poisson is not the
+content beyond the source-sign convention (L8, and R12 via L9); Poisson is not the
 best-ranked operator under normalization (L9).
 
-**N1 — Alternative route enumeration (≥5 distinct attacks on the no-go).**
+**N1 — Alternative route enumeration (>=5 distinct attacks on the no-go). Eight named; six attempted and closed, one ruled out by prior, one declared untested.**
 
 | # | Route | What it would attempt | Outcome |
 |---|---|---|---|
@@ -110,6 +110,7 @@ best-ranked operator under normalization (L9).
 | 5 | Smearing | The parent note perturbs a 3×3×3 block, not a site; the smeared kernel might match while the site kernel does not | **ATTEMPTED.** R8 runs the parent note's own smeared statistic and reproduces `corr = 0.920`, then shows the slopes differ (`-2.24` vs `-1.57`) and the ratio spreads 10.7×. The smeared comparison is the one that looks good and it does not survive a matched test. |
 | 6 | Wrong Green's function sign convention | `G` should be `+Laplacian^{-1}` not `-Laplacian^{-1}`, flipping the correlation sign | **RULED OUT.** A global sign flip changes `corr` by a sign and leaves `abs(corr) ≤ 0.13` and the residual unchanged; R3's sign-indefiniteness of `K` is convention-free. |
 | 7 | Different beta diagnostic | The ranking inversion is an artifact of `check_field_physics`'s power-law fit | **PARTIALLY UNTESTED — declared.** R11 deliberately uses the parent note's own diagnostic so the comparison is apples-to-apples. A different decay measure could reorder the operators. This is recorded as an open route below, not as a closed one. |
+| 8 | Mediator positivity | Require the field kernel to be positive so superposing positive masses never anti-attracts; this would exclude biharmonic independently of the source sign | **ATTEMPTED (R14).** The parent runner's biharmonic is `A @ A`, whose inverse is `(Delta_D^-1)^2`, a product of two entrywise single-signed matrices, hence entrywise positive. Clamped-plate positivity can fail (Coffman-Duffin) but that is a different operator. The escape is not available. |
 
 **N2 — Wall-independence audit.**
 Named walls: (a) sign-indefiniteness of `K`; (b) non-discrimination of the 0.93

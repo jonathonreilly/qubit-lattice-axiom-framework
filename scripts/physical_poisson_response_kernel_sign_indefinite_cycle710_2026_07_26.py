@@ -507,6 +507,43 @@ check(
     "to Test 4.",
 )
 
+
+# --- R14 -------------------------------------------------------------------
+# The strongest physical escape from Part C: require the mediator kernel to be
+# positive, so that superposing positive masses never anti-attracts. That would
+# exclude biharmonic on grounds independent of the source-sign convention. For
+# the clamped-plate biharmonic operator positivity genuinely can fail
+# (Coffman-Duffin). The parent runner does not implement that operator: it
+# implements A @ A, the square of the Dirichlet Laplacian, whose inverse is the
+# square of an entrywise single-signed matrix and is therefore entrywise
+# positive by construction. So this escape is not available here.
+N14 = 10
+A14, M14 = F.build_laplacian_sparse(N14)
+A14d = A14.toarray()
+Ainv = np.linalg.inv(A14d)
+Bih = np.linalg.inv((A14 @ A14).toarray())
+lap_single = bool(np.all(Ainv < 0) or np.all(Ainv > 0))
+compose_err = float(np.abs(Bih - Ainv @ Ainv).max())
+bih_pos = float(np.mean(Bih > 0))
+check(
+    "R14 the tested biharmonic rival is positivity-preserving by construction, "
+    "so a mediator-positivity requirement cannot exclude it either",
+    lap_single and compose_err < 1e-12 and bih_pos == 1.0,
+    f"Dirichlet Laplacian inverse is entrywise single-signed: {lap_single}\n"
+    f"max|(A@A)^-1 - (A^-1)^2| = {compose_err:.3e}  (so the tested biharmonic "
+    f"is (Delta_D)^-2)\n"
+    f"fraction of entries of (A@A)^-1 that are positive = {bih_pos:.6f}\n"
+    "the product of two entrywise single-signed matrices is entrywise positive, "
+    "so the\ntested biharmonic Green's function cannot change sign. Requiring a "
+    "positive\nmediator kernel - the strongest convention-free discriminator "
+    "available - does\nnot separate it from Poisson. Clamped-plate biharmonic "
+    "positivity can fail\n(Coffman-Duffin), but that is a different operator "
+    "from the one the parent\nrunner tests.\n"
+    "falsifier: a sign change in the tested biharmonic Green's function, which "
+    "would\nrestore a convention-free discriminator and partially rescue the "
+    "parent note.",
+)
+
 print()
 print("=" * 78)
 print(f"TOTAL: {PASS_COUNT} PASS / {FAIL_COUNT} FAIL")

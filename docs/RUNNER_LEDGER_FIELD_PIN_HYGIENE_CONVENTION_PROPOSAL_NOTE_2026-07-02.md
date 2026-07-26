@@ -28,7 +28,7 @@ construction, silently, behind a green cache:
 
 - **Field-content pins.** Runners asserting the verbatim content of
   audit-authored row fields (`load_bearing_step`, `load_bearing_step_class`,
-  verdict/rationale text). Instances on live `main` at proposal time:
+  verdict/rationale text). Instances named from the proposal-time sweep:
   - `scripts/frontier_thales_right_angle_narrow.py`
   - `scripts/frontier_half_plane_chart_equivalence_narrow.py`
   - `scripts/frontier_ckm_magnitudes_structural_counts_narrow.py`
@@ -36,6 +36,20 @@ construction, silently, behind a green cache:
   (each reads `docs/audit/data/audit_ledger.json` and asserts
   `load_bearing_step_class == 'A'` for its parent row; all four failed the
   sweep after audit-side field updates while their rows remained retained).
+
+  A 2026-07-24 re-measurement of the same pattern over `scripts/` finds nine
+  runners carrying it, so the proposal-time list named four of nine. The other
+  five follow the identical shape — read the ledger, assert
+  `load_bearing_step_class == 'A'` for their own parent row:
+  - `scripts/audit_companion_ckm_bernoulli_two_ninths_exact.py`
+  - `scripts/audit_companion_dm_neutrino_cascade_geometry_exact.py`
+  - `scripts/audit_companion_dm_neutrino_z3_character_exact.py`
+  - `scripts/audit_companion_dm_neutrino_z3_circulant_nogo_exact.py`
+  - `scripts/audit_companion_g_bare_forced_by_ward_rep_b_record_axiom_invariance_2026_06_04.py`
+
+  Checked against the repo state at the end of 2026-07-02 (commit
+  `952647de06`), all nine already carried the pin then: the class did not grow
+  after the proposal, the proposal-time listing was a partial selection from it.
 - **Exact-tier / exact-state status pins.** Runners asserting one exact
   status string, including non-retained transition states. Instance:
   `scripts/frontier_observable_principle_p1_bridge_extensivity_primitive.py`
@@ -75,9 +89,23 @@ construction, silently, behind a green cache:
   when it runs red, that is the freshness contract working during a
   dependency's transition window, not a defect.
 - `scripts/staggered_dirac_substep1_statistics_selection_check_2026_06_10.py`
-  is the documented tier-exact case: its packet expectation
-  (`== "retained_bounded"`) is stated in its note, i.e. the (H2) exception
-  path with justification.
+  was named here on 2026-07-02 as the tier-exact case, its packet expectation
+  being `== "retained_bounded"`. That runner was rewritten on 2026-07-16
+  (commit `03ca2d51f4`), which removed its ledger reads entirely: it now
+  asserts no status at all, so it is (H1)/(H2)-compliant by containing no pin
+  rather than by taking the exception path. No live runner is named here as an
+  exception-path exemplar. The (H2) exception is a clause of the convention,
+  not a claim about the current contents of `scripts/`; a runner takes it by
+  pinning one tier with its own note saying why, and the audit lane judges
+  that pairing when such a row is reviewed.
+
+  This bullet is also the note's own worked example of §1. From that rewrite
+  until this repair the paired runner asserted the pre-rewrite literal and
+  failed on live execution while its cached output stayed green — a runner
+  pinning another file's internal text goes stale by construction in exactly
+  the way a runner pinning ledger-field content does. The checks below are
+  written to accept either documented state of a named instance rather than
+  freezing the one that happened to hold when the note was written.
 - `scripts/audit_companion_dirac_weyl_fermion_dof_from_lorentz_and_chirality_2026_05_28.py`
   was realigned to the membership form in the 2026-07-02 repair wave after
   its `{"retained"}`-only pin went stale against a retained-grade tier move.
@@ -85,7 +113,7 @@ construction, silently, behind a green cache:
 ## 4. Remediation path (proposed, not executed here)
 
 If this convention is adopted, the named Section-1 instances get narrowed in
-follow-up repair PRs: the four field-content pins move their
+follow-up repair PRs: the field-content pins move their
 `load_bearing_step_class` assertions to report-only prints, and the
 exact-state pins in the extensivity runner become either retained-grade
 membership checks or note-documented justified exceptions. This note edits
@@ -99,9 +127,14 @@ no runner and proposes no wording for those rows' notes.
   audit-lane data; does not modify any named runner.
 - Adoption authority is the independent audit lane; a question to the owner
   or a landed PR is not adoption.
-- The named-instance lists describe live `main` at proposal time and are
-  verified by the paired runner; they are illustrative of the class, not an
-  enumeration bound on it (the runner prints the current census).
+- The named-instance lists describe the proposal-time sweep plus the
+  2026-07-24 re-measurement, and are verified by the paired runner; they are
+  illustrative of the class, not an enumeration bound on it (the runner prints
+  the current census size). A name appearing here is not a claim that the
+  instance is still unrepaired: the runner accepts a named instance in either
+  documented state — still pinning, or narrowed per §4 — and fails only if the
+  file stops handling the field, so a §4 repair landing in a later PR does not
+  require an edit to this note.
 
 ## 6. Command and expected output
 

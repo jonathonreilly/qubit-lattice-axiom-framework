@@ -334,6 +334,96 @@ def check_ledger(note: Path) -> tuple[list[Finding], str]:
     return out, "\n".join(ledger_text)
 
 
+
+QUALIFIER = re.compile(
+    r"\b(conditional|conditionally|given|assuming|granted|under|subject to|"
+    r"modulo|premise|supplied|imported|unforced)\b",
+    re.I,
+)
+SUPPLIED_TAG = re.compile(r"\[supplied\]", re.I)
+SATISFIED_TAG = re.compile(r"\[satisfied\]", re.I)
+
+
+def _ledger_rows(ledger: str):
+    for row in ledger.splitlines():
+        if set(row.replace("|", "").strip()) <= set("-: "):
+            continue
+        cells = [c.strip() for c in row.strip().strip("|").split("|")]
+        if len(cells) >= 4:
+            yield cells
+
+
+def check_headline(note: Path) -> list[Finding]:
+    """A claim resting on a SUPPLIED hypothesis may not appear unqualified in
+    the title.
+
+    This check exists because the first cycle run under the inference audit
+    passed the audit and was still rejected for exactly the failure the audit
+    was built to stop. The author recorded the load-bearing assumption in the
+    Hypotheses cell and then titled the note as though it were not there. The
+    reviewer's words: "Listing the family in the Hypotheses column does not
+    cure the headline claim."
+
+    Ledger completeness is necessary and not sufficient. Two refinements were
+    needed after the first attempt at this check fired on a clean note and
+    stayed silent on the rejected one:
+
+    * only hypotheses tagged `[supplied]` count. A hypothesis satisfied by
+      construction (`[satisfied]`, e.g. "finite group action") constrains
+      nothing about the headline. The tag forces the author to make exactly the
+      distinction whose absence caused the failure.
+    * the qualifier must be in the TITLE, not anywhere in the Answer section.
+      Scanning a long blob for "if" or "given" suppressed the check on every
+      real note.
+    """
+    out: list[Finding] = []
+    text = note.read_text()
+    lines = text.splitlines()
+    title = lines[0] if lines else ""
+
+    _, ledger = check_ledger(note)
+    supplied = [c[0] for c in _ledger_rows(ledger) if SUPPLIED_TAG.search(c[3])]
+    if not supplied:
+        return out
+    if QUALIFIER.search(title):
+        return out
+    out.append(
+        Finding(
+            "HEADLINE",
+            f"{note.name}:1",
+            f"rows {supplied} rest on [supplied] hypotheses, but the title carries no "
+            f"qualifier. A title that advertises an achievement while a load-bearing "
+            f"row is unforced overstates the result -- qualify the title or move the "
+            f"claim out of it",
+        )
+    )
+    return out
+
+
+def check_hypothesis_tags(note: Path) -> list[Finding]:
+    """Every non-trivial Hypotheses cell must be tagged [supplied] or [satisfied]."""
+    out: list[Finding] = []
+    _, ledger = check_ledger(note)
+    for cells in _ledger_rows(ledger):
+        hyp = cells[3]
+        if hyp.lower() in TRIVIAL_HYP or len(hyp) < 8:
+            continue
+        if not (SUPPLIED_TAG.search(hyp) or SATISFIED_TAG.search(hyp)):
+            out.append(
+                Finding(
+                    "TAG",
+                    f"{note.name}",
+                    f"row `{cells[0]}` hypothesis is untagged; mark each as "
+                    f"`[supplied]` (assumed, unforced) or `[satisfied]` (met by "
+                    f"construction) -- the distinction is what the headline check needs",
+                )
+            )
+    return out
+
+
+TRIVIAL_HYP = {"", "-", "none", "n/a", "none needed"}
+
+
 # ---------------------------------------------------------------------------
 
 
@@ -345,6 +435,8 @@ def run(runner: Path | None, note: Path | None) -> list[Finding]:
         findings += led_findings
         findings += check_hypothesis(note)
         findings += check_direction(note, ledger)
+        findings += check_headline(note)
+        findings += check_hypothesis_tags(note)
     if runner and runner.exists():
         findings += check_slice(runner)
         findings += check_clone(runner)

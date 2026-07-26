@@ -52,7 +52,11 @@ restatement of one in an Answer/Summary/discussion section.
   it. If this is empty, the claim rests on nothing shown. An objective, a
   weighting, an aggregation, or a coupling that *you* chose is not support; it
   is an import, and belongs in `ASSUMPTIONS_AND_IMPORTS.md` with a class.
-- **Hypotheses** — every hypothesis of every named result cited, written out.
+- **Hypotheses** — every hypothesis of every named result cited, written out,
+  each tagged **`[supplied]`** (assumed and unforced) or **`[satisfied]`** (met
+  by construction). The tag is the load-bearing part: it is the distinction
+  whose absence caused the first cycle run under this audit to pass the audit
+  and still be rejected.
   Not the conclusion. The linter's keyword check catches outright omission but
   **cannot** distinguish a hypothesis from a conclusion; this column is the only
   thing that does. A cited theorem whose hypotheses you cannot state is a
@@ -74,6 +78,8 @@ restatement of one in an Answer/Summary/discussion section.
 | `DIRECTION` | a necessity word in claim position with no converse recorded in the ledger | claim positions only — title, `**Theorem`, Answer/Summary sections — since flagging proof internals was too noisy to run |
 | `HYPOTHESIS` | a named external theorem invoked with its hypotheses absent nearby | keyword proximity; **does not** catch hypothesis/conclusion confusion |
 | `LEDGER` | a missing ledger, or any empty cell | presence and completeness, not honesty |
+| `TAG` | a hypothesis not marked `[supplied]` or `[satisfied]` | cannot tell whether your tag is honest |
+| `HEADLINE` | any `[supplied]` row while the **title** carries no qualifier | title only; a body that overclaims is the reviewer's job |
 
 The linter is a filter, not a judge. Its self-test
 (`--selftest tests/fixtures/inference_audit/selftest_cases.json`) asserts it
@@ -91,6 +97,22 @@ Each row is a defect that reached a value gate.
 | 704 | formation and migration gates written with identical bodies, then "verified" to agree over 2187 rules | clone |
 | 705 | theorem correctly qualified; the discussion restated it without the qualifier, making it false. Separately, an author-chosen objective described as a functional "the framework already carries" | restatement; import as support |
 | 707 | Rellich invoked without its analyticity hypothesis and the conclusion called unconditional; "permits" shown, "requires" claimed; a control row that sliced away its own counterexample | hypotheses; direction; slice |
+
+## Ledger completeness is necessary and not sufficient
+
+The first cycle run under this audit (708) **passed** the linter and was still
+rejected for the exact failure the audit was built to stop. The author recorded
+the supplied operator-family hypothesis in the Hypotheses cell, and then titled
+the note *"…and Covariance Repairs It Without New Input"*. The reviewer's words:
+
+> "Listing the family in the Hypotheses column does not cure the headline
+> claim. The inference audit is therefore syntactically complete but not
+> substantively discriminating."
+
+`TAG` and `HEADLINE` are the second layer, added in response. The lesson
+generalizes: **a mechanical check makes a defect visible; it does not make you
+honest about it.** If a row is `[supplied]`, the title must say so — the reader
+of a title is exactly the person who will not read the ledger.
 
 ## What this does not do
 

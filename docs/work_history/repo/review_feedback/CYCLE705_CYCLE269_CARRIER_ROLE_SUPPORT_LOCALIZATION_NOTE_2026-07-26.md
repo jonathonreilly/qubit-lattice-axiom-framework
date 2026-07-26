@@ -1,5 +1,7 @@
 # Cycle 705 Cycle-269 carrier/role support-localization attack — 2026-07-26
 
+Type: meta
+
 Authority: none
 
 Audit: unset

@@ -16,7 +16,8 @@
 ## Result and claim ceiling
 
 This checkpoint tests a geometry-aware Route-B state chart on the existing
-seven-mode-per-cell local-`D` BKSF graph.  It adds one edge gauge M2 to each
+seven-mode-per-cell local-`D` BKSF graph.  It adds one abstract edge-gauge
+qubit to each
 coarse matter seam.  A bounded diagonal stabilizer copies an elementary-face
 cell-parity word into that gauge bit, and a directly constructed two-endpoint
 spoke word reads the bit.  A closed-form staggered seam orientation is
@@ -24,7 +25,9 @@ evaluated from the transported coframe, origin, endpoint coordinates, and
 periodic chart cut.  The candidate constructor never calls the target path
 helper, inspects an interval of cells, or requests a runtime exterior-order or
 global parity service.  There is no supplied Hamiltonian cell path on the
-physical-construction interface.
+edge-qubit constructor interface.  The graph-edge addresses and coframe/origin
+labels used here are abstract placement data; they are not yet an injective
+one-M2-per-`Z^3`-site placement or nearest-neighbour routing circuit.
 
 The construction is an exact positive on the frozen open L and `2 x 2`
 fixtures, but its target transfer is negative on all three held families:
@@ -33,7 +36,7 @@ fixtures, but its target transfer is negative on all three held families:
   translations, 24 proper-cubic frames, and 576 ordered frame products close
   on all five finite fixtures;
 - every onsite coin, directed seam, and onsite contact is present in the full
-  scheduled `G`, with zero physical support collisions and active complete
+  scheduled `G_edge`, with zero edge-qubit support collisions and active complete
   seam-factor deletion;
 - after deterministic stabilizer-coset descent, every individual Pauli
   summand has constant support, every seam representative has weight at most
@@ -53,7 +56,7 @@ route-independent no-go, minimum-content claim, or axiom pressure.
 
 ## Frozen gauge/tableau construction
 
-Let `q_e` be the edge gauge M2 on a coarse seam `e`.  The underlying BKSF
+Let `q_e` be the edge-gauge qubit on a coarse seam `e`.  The underlying BKSF
 graph retains the six matter modes, scalar reference mode, 12 octahedral
 edges, six reference spokes, and the ordinary matter stream edge in every
 cell neighborhood.  It adds no parallel intercell reference fermion edge.
@@ -102,8 +105,8 @@ local_word_e Z(q_e) product_(f toggled by e) X(q_f)
     -> target_hop_e times P_between(e) times D_e.
 ```
 
-Here `P_between(e)` appears only when the physical word is decoded and scored
-against the supplied prior Fock target; it is absent from the physical
+Here `P_between(e)` appears only when the edge-qubit word is decoded and scored
+against the supplied prior Fock target; it is absent from the edge-qubit
 constructor.  Exact Pauli-phase decoding verifies that the residual is a
 product of whole-cell parity blocks on every seam.  The seam is exact
 precisely when `D_e=P_between(e)`.  The L and `2 x 2` freeze determines the
@@ -116,16 +119,16 @@ independent.  Starting from the landed patch tableau, the common E is extended
 analytically: a logical `X_i` also flips every `q_e` whose copied word contains
 `Z_i`, and `X(q_e)` is the destabilizer paired with `S_e`.  The resulting
 `W/V` rows have the exact canonical symplectic matrix and full rank.  This is
-a physical edge-qubit stabilizer isometry, not a dimension-only count.
+an abstract graph-edge stabilizer isometry, not a dimension-only count.
 
-The compact `S_e` can equivalently be factored through one bounded face M2 as
+The compact `S_e` can equivalently be factored through one bounded face qubit as
 `Z(f_e)D_e=+1` and `Z(q_e)Z(f_e)=+1`.  That factorization changes routing and
 ancilla count but not the logical copied word.  It therefore cannot repair a
 held target outside the tested face-parity span by itself.
 
 ## Common-E typing and finite census
 
-| Fixture | total M2 | scheduled coin / seam / contact | target seam misses | radius-one span misses | max seam weight / cell diameter |
+| Fixture | total edge qubits | scheduled coin / seam / contact | target seam misses | radius-one span misses | max seam weight / cell diameter |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | frozen open L | 58 | `36 / 2 / 45` | 0 | 0 | `13 / 2` |
 | frozen open `2 x 2` | 80 | `48 / 4 / 60` | 0 | 0 | `14 / 2` |
@@ -137,14 +140,14 @@ For the open fixtures the typing is
 
 ```text
 E_gauge : H_matter -> H_gauge_code,
-G_physical E_gauge = E_gauge G_candidate.
+G_edge E_gauge = E_gauge G_candidate.
 ```
 
 On the periodic fixtures, before a Wilson vector is selected, it is
 
 ```text
 E_direct_sum : H_matter tensor C^8_Wilson -> H_gauge_code,
-G_physical E_direct_sum
+G_edge E_direct_sum
     = E_direct_sum (G_candidate tensor I_8).
 ```
 
@@ -152,14 +155,14 @@ The displayed fixed tableau uses the `+++` slice only to orient columns.  The
 three Wilson characters are retained as typed spectators, every update acts
 sector-identically, and no matter-only Wilson genesis is claimed.  A supplied
 Hamiltonian cell path is used only by the adversarial target oracle to state
-the prior Fock-chart seam signs.  The physical-row helper is separated from
+the prior Fock-chart seam signs.  The edge-row helper is separated from
 the scorer and is statically checked to contain no path helper, interval,
 ordered-cell index, or target-order query.  Only after those rows exist does a
 wrapper attach target logical labels for exact common-E scoring.
 
 The common-E identity is exact for `G_candidate` on every fixture.  On the two
 freeze fixtures `G_candidate=G_target`.  On the three holds the common E is
-still a valid isometry and the full physical schedule is still code
+still a valid isometry and the full edge-qubit schedule is still code
 preserving, but the listed seam factors decode to the wrong target logical
 Paulis.  Those nonzero target residuals are not called leakage or tableau
 failure.
@@ -186,7 +189,7 @@ logical `X` comparison includes the second-quantized Fock-permutation crossing
 Every edge-gauge stabilizer is rank-active because it owns a unique gauge
 pivot.  Deleting any one lowers the stabilizer rank by one.  On `2 x 2`,
 deleting the nontrivial face-copy factor changes the target seam action.
-Removing the complete first seam factor changes the physical schedule digest
+Removing the complete first seam factor changes the edge-qubit schedule digest
 on every fixture.  The redundant all-cell local-`D` relation and the three
 periodic Wilson deletions remain as typed in the landed patch tableau.
 
@@ -201,7 +204,7 @@ exposed negative-axis-0 boundary, so the frozen copied word is identity there;
 their path-chart chords and axis-2 seams remain exact target discriminators.
 
 To ensure that this is not merely the wrong coefficient on the one frozen
-face, the runner first decodes each two-term physical seam and verifies, with
+face, the runner first decodes each two-term edge-qubit seam and verifies, with
 exact Pauli phases and both term permutations, that its common right-`Z`
 residual consists only of complete six-bit cell-parity blocks.  It then grants
 each seam an arbitrary product of all whole-cell parities at cell-Manhattan
@@ -222,7 +225,7 @@ Supplied:
 - the Cycle-703 seven-mode local-`D` BKSF graph, local incidence-order gauge,
   and prior target Fock chart used only by the scorer;
 - one transported ordered coframe and its origin;
-- one blank edge gauge M2 per matter seam;
+- one blank edge-gauge qubit per matter seam;
 - fixed `+++` Wilson rows for the displayed periodic tableau, or the explicit
   eight-dimensional Wilson input for direct-sum typing; and
 - the complete coin/seam/contact factor inventory.
@@ -243,7 +246,7 @@ Derived and executed:
 
 Not supplied or derived:
 
-- a selected Hamiltonian path or ordered-cell index for the physical-row
+- a selected Hamiltonian path or ordered-cell index for the edge-row
   helper, or any runtime global parity query or exterior-order service;
 - a radius-two/cube/multichannel or non-diagonal gauge law;
 - a recurrent local correction rule and cleanup theorem;
@@ -276,7 +279,7 @@ negative and the constructive common-E/tableau closures.**
 7. **Radius-two or cube-supported copies, multiple face channels,
    non-diagonal Gauss laws, subsystem gauge inputs, and recurrent local
    dynamics — OPEN.** Each changes the ansatz and remains live.
-8. **A different physical state chart — OPEN.** It must compare one common E
+8. **A different graph-edge state chart — OPEN.** It must compare one common E
    on training and held fixtures without importing a path-selected parity
    service.
 
@@ -313,7 +316,7 @@ local quantum codes.  The staggered orientation 1-cochain is also an explicit
 chart texture: it agrees with the target's endpoint order and its torus version
 uses the origin-selected periodic cut (including on odd `L=3`).  It does not
 contain the interval parity, but autonomous genesis of this orientation is not
-proved.  The executable rejects path/interval/order queries in the physical-
+proved.  The executable rejects path/interval/order queries in the edge-
 row helper rather than relying on an algebraic cancellation claim.
 
 ### N4 — residual matching
@@ -368,7 +371,7 @@ covariance all close.  Only held target transfer fails.
 | recurrent local gauge dynamics | open | transport parity information over growing rounds |
 | non-diagonal Gauss law | open | change the copied observable class |
 | different common-E chart | open | remove the prior Fock-interval target residual |
-| convention-only relabeling | insufficient for the fixed target comparison | can change labels, not the scored physical target |
+| convention-only relabeling | insufficient for the fixed target comparison | can change labels, not the scored supplied target |
 
 No row requires a new axiom, and no open construction is reclassified as an
 axiom wall.  Each has a concrete acceptance test using the present fixtures.
@@ -409,7 +412,7 @@ CYCLE705_FACE_GAUGE_COMMON_E_FREEZE_EXACT_HELD_SEAM_COSETS_5_55_132_ROUTE_OPEN
 ```
 
 The retained replay passed 7 checks and failed 0.  Its cache SHA-256 is
-`21cb922614bd6ab66a312e78511c2f80c5fbc1635c62b406f95e107fc0caa860`.
+`bfbd91fe0f942b1f214a6fa024fb7d51b3b9051f4674c1cf80362ad1ee014af6`.
 
 As an independent math check, a separate combinatorial enumerator using no
 BKSF/tableau or Cycle-705 runner helper rebuilt the snake cell orders, nearest

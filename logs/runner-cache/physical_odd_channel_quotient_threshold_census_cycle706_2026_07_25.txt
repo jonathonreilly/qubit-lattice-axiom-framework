@@ -1,0 +1,37 @@
+Cycle 706 - odd-channel census by lattice quotient and range
+==========================================================================
+[PASS] K1 full cubic group of order 48 acts on (Z/L)^3, 24 proper / 24 improper  --  |G|=48
+[PASS] K2 L=2: inversion acts trivially on sites, so every odd occupancy channel vanishes at every range  --  mult(det) by range {1: 0, 2: 0, 3: 0}
+[PASS] K3 L=4: inversion acts nontrivially, so the L=2 protection is not an even-L effect  --  -1 != 1 mod 4
+      L=2 r=1 |W|=4 mult=0
+      L=2 r=2 |W|=7 mult=0
+      L=2 r=3 |W|=8 mult=0
+      L=3 r=1 |W|=7 mult=0
+      L=3 r=2 |W|=19 mult=9776
+      L=3 r=3 |W|=27 mult=2753216
+      L=4 r=1 |W|=7 mult=0
+      L=4 r=2 |W|=22 mult=79088
+      L=4 r=3 |W|=42 mult=91488443648
+      L=5 r=1 |W|=7 mult=0
+      L=5 r=2 |W|=25 mult=662192
+      L=5 r=3 |W|=57 mult=3002363501982720
+[PASS] K4 occupancy census computed over L in {2..5}, r in {1..3}; L=2 identically zero  --  first firing (L,r) = (3, 2); 6 of 12 cells nonzero
+      L=2 r=1 |W|=4 mult=13
+      L=2 r=2 |W|=7 mult=12289
+      L=3 r=1 |W|=7 mult=15771
+      L=3 r=2 |W|=19 mult=237474916012502
+      L=4 r=1 |W|=7 mult=15771
+      L=4 r=2 |W|=22 mult=81454348466096662
+[PASS] K5 contented census; contents carry oddness occupancy cannot  --  L=2 contented mult by range {1: 13, 2: 12289}
+[PASS] K6 Burnside cross-check: trivial-character multiplicity equals the orbit count  --  (L=2,r=1) orbits=8 burnside=8; (L=3,r=1) orbits=20 burnside=20; (L=2,r=2) orbits=40 burnside=40
+[PASS] K7 every nearest-neighbour occupancy pattern has an improper symmetry, so NN occupancy is achiral; contents on the same star are not  --  128 patterns each with an improper stabilizer element; contented mult=15771
+[PASS] K8 at L=2 oddness is exclusively content-carried: inert labels give zero at every richness and range, polar contents do not  --  inert L=2 all zero over k in {1,2,6,12}; polar L=2 {1: 13, 2: 12289}; inert L=3 r=1 = 9310
+      k=1 (alphabet 2 incl. empty)  mult=0
+      k=2 (alphabet 3 incl. empty)  mult=3
+      k=3 (alphabet 4 incl. empty)  mult=80
+      k=4 (alphabet 5 incl. empty)  mult=600
+      k=5 (alphabet 6 incl. empty)  mult=2730
+      k=6 (alphabet 7 incl. empty)  mult=9310
+[PASS] K9 alphabet-richness threshold on the nearest-neighbour star, cross-checked by direct orbit-stabilizer counting  --  binary occupancy = 0; first nonzero at k=2 (alphabet size 3 including empty), mult=3; direct orbit count = 3
+==========================================================================
+9 PASS / 0 FAIL

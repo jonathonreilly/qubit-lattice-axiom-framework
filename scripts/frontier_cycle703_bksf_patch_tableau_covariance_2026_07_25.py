@@ -1483,6 +1483,32 @@ def support_role_controls(code: CodeData) -> dict[str, object]:
     }
 
 
+def concise_support_roles(controls: dict[str, object]) -> dict[str, object]:
+    return {
+        "individual_G_summand_weight_diameter": [
+            controls["individual_G_summand_max_weight"],
+            controls["individual_G_summand_max_cell_diameter"],
+        ],
+        "complete_factor_union_weight_diameter": [
+            controls["complete_factor_union_max_weight"],
+            controls["complete_factor_union_max_cell_diameter"],
+        ],
+        "loader_Z_weight_diameter": [
+            controls["logical_Z_max_weight"],
+            controls["logical_Z_max_cell_diameter"],
+        ],
+        "loader_X_weight_diameter": [
+            controls["logical_X_max_weight"],
+            controls["logical_X_max_cell_diameter"],
+        ],
+        "tableau_row_weight_diameter": [
+            controls["tableau_WV_max_weight"],
+            controls["tableau_WV_max_cell_diameter"],
+        ],
+        "failures": controls["failures"],
+    }
+
+
 def inherited_spectral_bridge(layer_rows: dict[str, object]) -> dict[str, object]:
     receipt_digest = sha256(C629_RECEIPT.read_bytes()).hexdigest()
     receipt = json.loads(C629_RECEIPT.read_text(encoding="utf-8"))
@@ -1646,6 +1672,7 @@ def run() -> dict[str, object]:
                 "max_raw_weight": row["covariance"]["frame_failure_totals"]["max_stream_raw_weight"],
                 "max_localized_weight": row["covariance"]["frame_failure_totals"]["max_stream_localized_weight"],
                 "max_localized_diameter": row["covariance"]["frame_failure_totals"]["max_stream_localized_cell_diameter"],
+                "support_roles": concise_support_roles(row["support_roles"]),
                 "failures": row["failures"],
             }
             for name, row in open_rows.items()
@@ -1739,6 +1766,7 @@ def run() -> dict[str, object]:
             "max_raw_weight": periodic_covariance["frame_failure_totals"]["max_stream_raw_weight"],
             "max_localized_weight": periodic_covariance["frame_failure_totals"]["max_stream_localized_weight"],
             "max_localized_diameter": periodic_covariance["frame_failure_totals"]["max_stream_localized_cell_diameter"],
+            "support_roles": concise_support_roles(periodic_support_roles),
             "unfixed_typing": "H_matter tensor C^8_Wilson",
             "failures": periodic_failures,
         },
@@ -1833,6 +1861,7 @@ def run() -> dict[str, object]:
                 "max_raw_weight": row["covariance"]["frame_failure_totals"]["max_stream_raw_weight"],
                 "max_localized_weight": row["covariance"]["frame_failure_totals"]["max_stream_localized_weight"],
                 "max_localized_diameter": row["covariance"]["frame_failure_totals"]["max_stream_localized_cell_diameter"],
+                "support_roles": concise_support_roles(row["support_roles"]),
                 "failures": row["failures"],
             }
             for name, row in open_rows.items()
@@ -1849,6 +1878,7 @@ def run() -> dict[str, object]:
             "max_raw_weight": periodic_covariance["frame_failure_totals"]["max_stream_raw_weight"],
             "max_localized_weight": periodic_covariance["frame_failure_totals"]["max_stream_localized_weight"],
             "max_localized_diameter": periodic_covariance["frame_failure_totals"]["max_stream_localized_cell_diameter"],
+            "support_roles": concise_support_roles(periodic_support_roles),
             "direct_sum_typing": "H_matter tensor C^8_Wilson",
             "failures": periodic_failures,
         },

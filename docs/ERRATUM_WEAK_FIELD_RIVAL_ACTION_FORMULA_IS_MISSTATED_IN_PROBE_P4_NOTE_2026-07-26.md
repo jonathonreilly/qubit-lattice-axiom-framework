@@ -99,6 +99,23 @@ the parent row and is quoted only to indicate why the lane is worth keeping
 tidy — **it does not follow that this transcription error bears on those
 descendants**, and no such claim is made here.
 
+## Claim ledger
+
+Per the inference audit (physics-loop step 11). One row per claim; a
+restatement gets its own row.
+
+| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |
+|---|---|---|---|---|---|
+| E1 | `L√(1-φ)` has leading power 1 | row R1/R2, exact closed-form depth `f/(1+√(1-f))` | `f > 0` and small; real branch of the square root | shown: depth/f → 1/2, a finite nonzero limit; claimed: the same | depth/f failing to converge, or converging to 0 or ∞ |
+| E2 | the probe measures `L(1-√f)`, power 1/2 | `action_value()` in `scripts/action_universality_probe.py`, quoted verbatim | none — it is a source quotation | shown: the source defines `valley_sqrt` as `L*(1.0 - np.sqrt(f))`; claimed: the same | the branch reading otherwise on `main` at the searched commit |
+| E3 | P4 pairs the first formula with the second's number | P4 lines ~89, ~199, ~305, quoted | none — a quotation | shown: three occurrences pairing `L√(1-φ)` with 0.50; claimed: the same | any of the three reading `L(1-√f)` |
+| E4 | the geometric spent-delay is also power 1/2 | row R3, expansion of `dl - √(dl²-L²)` at `dl = L(1+ε)` | `ε > 0` and small, so the root is real | shown: depth/√(2ε) → 1 and the log-log slope → 1/2; claimed: the same | the coefficient failing to converge to 1 |
+| E5 | the mass-law exponent cannot discriminate `L(1-f)` from `L√(1-φ)` | E1 plus the landed class definition | the landed classes are keyed to leading power on that fixed family | shown: both have leading power 1, so that one observable cannot separate them; claimed: the same, **and explicitly not** that no observable can — higher-order behaviour may | an observable keyed to leading power that separates them |
+
+Note on E5: an earlier draft claimed the comparison was undecidable outright.
+That overstated it — the two are different functions and only the leading
+mass exponent is blind to the difference. The row records the narrower claim.
+
 ## What this does not do
 
 - It does **not** derive the weak-field action, supply a mechanism for why any

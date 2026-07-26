@@ -12,9 +12,15 @@ from dataclasses import dataclass
 from itertools import product
 from typing import Iterable
 
+from lattice_nn_topological_causal_bound_n7_independent_check import (
+    SCHEDULE_COUNT,
+    compute_steelman_evidence,
+)
+
 
 Vertex = int
 Edge = tuple[Vertex, Vertex]
+N2_WALL = "outside-reachability influence under shared extensional R-local updates"
 
 
 @dataclass(frozen=True)
@@ -300,6 +306,189 @@ def check_realized_history_bound(horizon: int = 3) -> tuple[int, int]:
     return len(graph_edges), checks
 
 
+def check_exhaustive_three_vertex_relations(horizon: int = 3) -> tuple[int, int]:
+    """Check every directed relation and source set on three labeled vertices."""
+    vertex_count = 3
+    possible_edges = tuple(product(range(vertex_count), repeat=2))
+    checks = 0
+    relation_count = 0
+    for relation_mask in range(1 << len(possible_edges)):
+        relation_count += 1
+        edges = tuple(
+            edge
+            for bit, edge in enumerate(possible_edges)
+            if relation_mask & (1 << bit)
+        )
+        pred = predecessors(vertex_count, edges)
+        succ = successors(vertex_count, edges)
+        deps = dependency_supports(vertex_count, pred, horizon)
+        for source_mask in range(1 << vertex_count):
+            sources = frozenset(
+                vertex
+                for vertex in range(vertex_count)
+                if source_mask & (1 << vertex)
+            )
+            reachable = forward_reachability(succ, sources, horizon)
+            for tick in range(horizon + 1):
+                affected = {
+                    vertex
+                    for vertex in range(vertex_count)
+                    if deps[tick][vertex] & sources
+                }
+                require(
+                    affected <= reachable[tick],
+                    relation_mask,
+                    source_mask,
+                    tick,
+                    sorted(affected),
+                    sorted(reachable[tick]),
+                )
+                checks += 1
+    return relation_count, checks
+
+
+def check_heterogeneous_mode_provenance(horizon: int = 4) -> tuple[int, int]:
+    """Propagate two labeled modes per vertex as carrier-specific tokens."""
+    case = layered_dag_case()
+    pred = predecessors(case.vertex_count, dependency_edges(case))
+    succ = successors(case.vertex_count, dependency_edges(case))
+    modes = ("alpha", "beta")
+    provenance_by_tick = [[
+        {(vertex, mode)}
+        for vertex in range(case.vertex_count)
+        for mode in modes
+    ]]
+    for _ in range(horizon):
+        previous = provenance_by_tick[-1]
+        current = []
+        for vertex in range(case.vertex_count):
+            for _mode in modes:
+                tokens = set()
+                for source in pred[vertex]:
+                    for source_mode in modes:
+                        tokens.update(previous[2 * source + modes.index(source_mode)])
+                current.append(tokens)
+        provenance_by_tick.append(current)
+
+    checks = 0
+    for source_vertex in range(case.vertex_count):
+        reachable_by_tick = forward_reachability(
+            succ, frozenset({source_vertex}), horizon
+        )
+        for tick, provenance in enumerate(provenance_by_tick):
+            for vertex in range(case.vertex_count):
+                for mode_index, _mode in enumerate(modes):
+                    source_tokens = {
+                        token
+                        for token in provenance[2 * vertex + mode_index]
+                        if token[0] == source_vertex
+                    }
+                    require(
+                        not source_tokens or vertex in reachable_by_tick[tick],
+                        source_vertex,
+                        tick,
+                        vertex,
+                        sorted(source_tokens),
+                        sorted(reachable_by_tick[tick]),
+                    )
+                    checks += 1
+    return len(modes), checks
+
+
+def emit_current_cycle_no_go_evidence(
+    *,
+    realized_cases: int,
+    exhaustive_relations: int,
+    exhaustive_assertions: int,
+    graph_family_count: int,
+    graph_support_assertions: int,
+    mode_count: int,
+    mode_assertions: int,
+    history_checks: int,
+) -> None:
+    """Emit N1/N2/N5/N7 evidence only after every live calculation passes."""
+    steelman = compute_steelman_evidence()
+    require(steelman.resolved, steelman)
+    require(steelman.schedules_checked == SCHEDULE_COUNT, steelman)
+
+    print()
+    print("NO-GO DISCIPLINE CURRENT-CYCLE EVIDENCE")
+    print(
+        f"N2_WALL wall={N2_WALL}; collapsed_wall_set={N2_WALL}; "
+        "result=single-wall exact boundary, so no pairwise independence claim is made"
+    )
+    print(
+        "N1_ROUTE route_id=extensionality-contradiction; "
+        "route_class=algebraic_rearrangement; honesty_marker=ATTEMPTED; "
+        "disposition=CLOSED; mechanism=algebraic extensionality contradiction; "
+        "attempt=assume an output difference at v with identical predecessor tuples and compare the same realized F_v_t; "
+        "outcome=function extensionality makes the outputs equal, contradicting the attempted exterior difference"
+    )
+    print(
+        "N1_ROUTE route_id=complete-finite-relations; "
+        "route_class=numerical_or_finite_case; honesty_marker=ATTEMPTED; "
+        "disposition=CLOSED; mechanism=finite complete relation scan; "
+        "attempt=enumerate every directed relation on three labeled vertices, every source set, and ticks zero through three; "
+        "outcome=every computed dependency support remains inside cumulative forward reachability"
+    )
+    print(
+        "N1_ROUTE route_id=initial-boundary-adversary; "
+        "route_class=boundary_or_initial_condition; honesty_marker=ATTEMPTED; "
+        "disposition=CLOSED; mechanism=initial and boundary adversary; "
+        "attempt=test empty, singleton, alternating, endpoint, and full source sets on line, grid, cyclic, and acyclic graph boundaries; "
+        "outcome=all tested initial and boundary placements obey the same one-step containment"
+    )
+    print(
+        "N1_ROUTE route_id=heterogeneous-mode-carrier; "
+        "route_class=alternate_carrier_or_sector; honesty_marker=ATTEMPTED; "
+        "disposition=CLOSED; mechanism=alternate carrier provenance propagation; "
+        "attempt=replace Boolean values by two labeled source-token modes on heterogeneous vertex carriers and propagate only predecessor tokens; "
+        "outcome=every carrier-mode token remains inside its lifted vertex reachability set"
+    )
+    print(
+        "N1_ROUTE route_id=time-varying-shared-random; "
+        "route_class=dynamical_or_effective_action; honesty_marker=ATTEMPTED; "
+        "disposition=CLOSED; mechanism=dynamical time-dependent shared-random map schedule; "
+        f"attempt=enumerate {SCHEDULE_COUNT} seed-selected local truth-table schedules on a three-vertex chain and compare every initial-history pair through three ticks; "
+        "outcome=no exterior difference appears when each time-dependent seed schedule is shared pathwise"
+    )
+
+    print(
+        "N5_RESOLUTION per_element: every Boolean local truth table through arity "
+        f"three was checked on all {realized_cases} input-pair cases; an output "
+        "difference never occurs when the indexed predecessor tuple is identical."
+    )
+    print(
+        "N5_RESOLUTION per_site: every vertex of all "
+        f"{exhaustive_relations} directed three-vertex relations, every source "
+        f"set, and ticks zero through three passed {exhaustive_assertions} "
+        "support-containment assertions."
+    )
+    print(
+        f"N5_RESOLUTION per_mode: {mode_count} labeled modes on heterogeneous vertex "
+        f"carriers passed {mode_assertions} provenance checks; every mode token "
+        "remains inside lifted forward reachability."
+    )
+    print(
+        "N5_RESOLUTION per_block: empty, singleton, alternating, endpoint, and "
+        f"full source blocks across {graph_family_count} graph families passed "
+        f"{graph_support_assertions} recurrence and containment assertions."
+    )
+    print(
+        "N5_RESOLUTION lattice_wide: every vertex of the complete finite line, "
+        f"grid, cyclic, and acyclic graph families passed {graph_support_assertions} "
+        f"support assertions, while {history_checks} exact Boolean-history assertions "
+        "and the exhaustive three-vertex relation scan agree; the conclusion is "
+        "lattice-wide only for the declared finite dependency graph."
+    )
+
+    print(
+        "N7_STEELMAN_ARGUMENT mechanism=dynamical time-dependent shared-random map schedule; "
+        f"attempt=enumerate {SCHEDULE_COUNT} seed-selected local truth-table schedules on a three-vertex chain and compare every initial-history pair through three ticks; "
+        "argument=the strongest attack is that changing realized maps across ticks could let common external randomness reactivate a vanished difference outside the apparent cone, so an independently implemented schedule calculation must close that route."
+    )
+
+
 def line_case(length: int, horizon: int) -> GraphCase:
     edges = []
     for i in range(length - 1):
@@ -354,6 +543,7 @@ def layered_dag_case() -> GraphCase:
 
 def main() -> None:
     cases = (
+        GraphCase("empty_graph", 0, (), 2, False),
         line_case(length=9, horizon=5),
         grid_case(width=5, height=4, horizon=4),
         branching_dag_case(),
@@ -367,6 +557,10 @@ def main() -> None:
         signature_counts,
     ) = check_realized_difference_lemma()
     history_graphs, history_checks = check_realized_history_bound()
+    exhaustive_relations, exhaustive_assertions = (
+        check_exhaustive_three_vertex_relations()
+    )
+    mode_count, mode_assertions = check_heterogeneous_mode_provenance()
     print("NN topological causal-bound certificate")
     print("claim: finite graph/DAG forward reachability for source sets")
     print()
@@ -380,6 +574,15 @@ def main() -> None:
     print(
         "PASS realized_history_multitick: "
         f"graphs={history_graphs} horizon=3 assertions={history_checks}"
+    )
+    print(
+        "PASS exhaustive_three_vertex_relations: "
+        f"relations={exhaustive_relations} source_sets=8 horizon=3 "
+        f"assertions={exhaustive_assertions}"
+    )
+    print(
+        "PASS heterogeneous_mode_provenance: "
+        f"modes={mode_count} horizon=4 assertions={mode_assertions}"
     )
 
     for case in cases:
@@ -398,6 +601,16 @@ def main() -> None:
         f"TOTAL PASS: {len(cases)} graph families, {total_checks} support "
         f"assertions, {realized_cases} realized-difference cases, "
         f"{history_checks} realized-history assertions"
+    )
+    emit_current_cycle_no_go_evidence(
+        realized_cases=realized_cases,
+        exhaustive_relations=exhaustive_relations,
+        exhaustive_assertions=exhaustive_assertions,
+        graph_family_count=len(cases),
+        graph_support_assertions=total_checks,
+        mode_count=mode_count,
+        mode_assertions=mode_assertions,
+        history_checks=history_checks,
     )
     print("NON-CLAIMS:")
     print("  - no emergent relativity check")

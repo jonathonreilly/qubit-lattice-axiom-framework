@@ -2,7 +2,7 @@
 
 Block: `physics-loop/poisson-response-kernel-diagnostic-20260726`
 Deliverable: `docs/POISSON_SELF_CONSISTENCY_BOTH_OPERATOR_DISCRIMINATORS_ARE_ARTIFACTS_ON_THE_TESTED_CONSTRUCTION_DEMOTION_NOTE_2026-07-26.md`
-Runner: `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py` (15 PASS / 0 FAIL)
+Runner: `scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py` (16 PASS / 0 FAIL)
 
 ## V1–V5 Promotion Value Gate
 
@@ -70,10 +70,15 @@ runner, which is why the deliverable is a demotion packet and not a theorem.
 
 **V4 — Is the marginal content non-trivial?**
 Yes. The strongest single item is that correcting the convention the audit lane
-had already flagged as suspect does not merely weaken the parent note's
-conclusion, it **reverses** it: the operator the parent note lists as
-unphysical-by-attractiveness (biharmonic) is attractive, monotone, and closer to
-the Newtonian exponent than Poisson at both tested lattice sizes. That is not a
+had already flagged as suspect **empties** the parent note's discriminator rather
+than merely weakening it: after normalization all four operators are attractive
+and monotone throughout the interior, so the attractiveness half of Bounded
+Claim 1's ground has no content, and the remaining half does not favour Poisson.
+R16 then refuses the over-reading that a rival is therefore better, on two
+grounds: biharmonic's power-law fit is the worst of the four (R^2 = 0.8556) and
+the ranking gap (0.156) is inside the finite-size shift the parent note itself
+documents (0.280). Establishing that a flagged convention **empties** a
+discriminator, and bounding how far that result can be pushed, is not a
 restatement of the flag. **PASS.**
 
 **V5 — Is this a one-step variant of an already-landed cycle in this campaign?**
@@ -96,10 +101,10 @@ Applies because the deliverable asserts negative results (`no_go` for the two
 named discriminators). The negative claims are exactly: the response kernel is
 not a scalar multiple of the inverse Laplacian on this construction (L3); the
 0.93 statistic does not discriminate (L7); the attractiveness column has no
-content beyond the source-sign convention (L8, and R12 via L9); Poisson is not the
-best-ranked operator under normalization (L9).
+content beyond the source-sign convention (L8, and R12 via L9); the beta comparison does not favour
+Poisson under normalization (L9), bounded by L13.
 
-**N1 — Alternative route enumeration (>=5 distinct attacks on the no-go). Nine named; seven attempted and closed, one ruled out by prior, one declared untested.**
+**N1 — Alternative route enumeration (>=5 distinct attacks on the no-go). Ten named; eight attempted, one ruled out by prior, one declared untested. Route 10 partly succeeded and the cycle's claim was weakened to match.**
 
 | # | Route | What it would attempt | Outcome |
 |---|---|---|---|
@@ -112,6 +117,7 @@ best-ranked operator under normalization (L9).
 | 7 | Different beta diagnostic | The ranking inversion is an artifact of `check_field_physics`'s power-law fit | **PARTIALLY UNTESTED — declared.** R11 deliberately uses the parent note's own diagnostic so the comparison is apples-to-apples. A different decay measure could reorder the operators. This is recorded as an open route below, not as a closed one. |
 | 8 | Mediator positivity | Require the field kernel to be positive so superposing positive masses never anti-attracts; this would exclude biharmonic independently of the source sign | **ATTEMPTED (R14).** The parent runner's biharmonic is `A @ A`, whose inverse is `(Delta_D^-1)^2`, a product of two entrywise single-signed matrices, hence entrywise positive. Clamped-plate positivity can fail (Coffman-Duffin) but that is a different operator. The escape is not available. |
 | 9 | Unmatched field amplitude | The parent note's single `G = 0.5` evaluates each operator at a different converged amplitude, and the loop is nonlinear, so the ranking could be an amplitude artifact | **ATTEMPTED (R15).** `beta` is amplitude-independent to within 0.023 across an 80-fold `G` sweep, and the ranking is unchanged at matched amplitude. Fails to rescue. |
+| 10 | Fit quality and finite-size budget | The beta ranking is too noisy and too tight to mean anything, so the ranking claim is unsupported | **ATTEMPTED (R16), and it PARTLY SUCCEEDS.** Biharmonic's fit is the worst of the four and the gap is inside the parent note's own finite-size shift. The cycle's claim was weakened accordingly: it now says the comparison does not favour Poisson, not that a rival is better. |
 
 **N2 — Wall-independence audit.**
 Named walls: (a) sign-indefiniteness of `K`; (b) non-discrimination of the 0.93

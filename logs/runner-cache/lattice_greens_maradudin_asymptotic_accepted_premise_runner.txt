@@ -1,107 +1,99 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py
-runner_sha256: 3889c5bbc03974c0677b8a0bb1f79cc70d0fa0434c9a07d3e203d15b4d639aa0
+runner_sha256: 0e7cfb619db9ba8aab6382983bfdd36f1e960f538137e1498416179899d9d0a8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.38
 status: ok
 ----- stdout -----
 CUBIC-LATTICE GREEN ASYMPTOTIC FRAMEWORK-NATIVE REROUTE
-
-== Part 0: source firewall ==
+Part 0: source firewall
+  [req: phrase present in note; abs: phrase absent from note]
   PASS: source note file exists (docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md)
-  PASS: source contains required phrase: Framework-Native Replacement For The Former Import
-  PASS: source contains required phrase: Textbook Reference Boundary
-  PASS: source contains required phrase: Maradudin
-  PASS: source contains required phrase: Lawler
-  PASS: source contains required phrase: Spitzer
-  PASS: source contains required phrase: parallel textbook provenance
-  PASS: source contains required phrase: not load-bearing authority
-  PASS: source contains required phrase: framework-local theorem
-  PASS: source contains required phrase: It no longer uses a textbook theorem as a load-bearing premise
-  PASS: source contains required phrase: No new axiom is introduced
-  PASS: source contains required phrase: No new accepted premise is introduced
-  PASS: source contains required phrase: MINIMAL_AXIOMS_2026-06-05.md
-  PASS: source contains required phrase: scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py
-  PASS: source contains required phrase: LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
-  PASS: source contains required phrase: scripts/lattice_greens_z3_asymptotic_normalization_certificate.py
-  PASS: source contains required phrase: bounded_theorem
-  PASS: source contains required phrase: Status authority
-  PASS: source contains required phrase: independent audit lane only
-  PASS: source note excludes forbidden phrase: PDG load-bearing value
-  PASS: source note excludes forbidden phrase: load-bearing fitted
-  PASS: source note excludes forbidden phrase: Monte Carlo measurement consumed
-  PASS: source note excludes forbidden phrase: load-bearing g_bare value
-  PASS: source note excludes forbidden phrase: Wilson plaquette load-bearing input
-  PASS: source note excludes forbidden phrase: Newton constant G_obs imported
-  PASS: source note excludes forbidden phrase: accepted-premise packet entry
-  PASS: source note excludes forbidden phrase: not derived in this bridge
-  PASS: source note excludes forbidden phrase: admitted named import
-  PASS: source note excludes forbidden phrase: single non-framework input
-  PASS: source note excludes forbidden phrase: named textbook theorem remains
-  PASS: source note excludes forbidden phrase: supplied accepted-premise packet
-
-== Part 1: (B1) symbol normalization (sympy) ==
-  PASS: (B1) sympy: lambda(k) at order 2 equals kx^2 + ky^2 + kz^2 (deg2 = kx**2 + ky**2 + kz**2)
-  PASS: (B1) sympy: lambda(k) has no order-3 cross-terms (even-cosine symmetry)
-  PASS: (B1) sympy: lambda(k) has non-zero O(|k|^4) correction (deg4 = -kx**4/12 - ky**4/12 - kz**4/12)
-  PASS: (B1) sympy: axis expansion is eps^2 - eps^4/12 + O(eps^6)
-
-== Part 1b: (B1) symbol normalization (numerical) ==
-  PASS: (B1) axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.10000 (ratio=0.9991669444)
-  PASS: (B1) diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.10000 (ratio=0.9991669444)
-  PASS: (B1) axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.05000 (ratio=0.9997916840)
-  PASS: (B1) diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.05000 (ratio=0.9997916840)
-  PASS: (B1) axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.02500 (ratio=0.9999479178)
-  PASS: (B1) diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.02500 (ratio=0.9999479178)
-  PASS: (B1) axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.01250 (ratio=0.9999869792)
-  PASS: (B1) diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.01250 (ratio=0.9999869792)
-
-== Part 2: (B2) continuum-kernel unit flux (sympy) ==
-  PASS: (B2) sympy: -d(1/(4 pi r))/dr = 1/(4 pi r^2)
-  PASS: (B2) sympy: int_{S^2} R^2 * (1/(4 pi R^2)) dOmega = 1 (flux = 1)
-  PASS: (B2) numerical: flux at R=1.0 equals 1.0 (flux=1.0000000000000000)
-  PASS: (B2) numerical: flux at R=2.0 equals 1.0 (flux=1.0000000000000000)
-  PASS: (B2) numerical: flux at R=5.0 equals 1.0 (flux=1.0000000000000000)
-  PASS: (B2) numerical: flux at R=10.0 equals 1.0 (flux=1.0000000000000000)
-  PASS: (B2) numerical: flux at R=100.0 equals 1.0 (flux=1.0000000000000000)
-
-== Part 3: (B3) lattice-harmonic residual decay ==
-  PASS: (B3) scaled residual r^5 |Delta_lat phi| bounded at r=16 (scaled=0.278758)
-  PASS: (B3) scaled residual r^5 |Delta_lat phi| bounded at r=32 (scaled=0.278580)
-  PASS: (B3) residual decays by ~r^-5 between r and r/2 at r=32 (ratio=32.020)
-  PASS: (B3) scaled residual r^5 |Delta_lat phi| bounded at r=64 (scaled=0.278536)
-  PASS: (B3) residual decays by ~r^-5 between r and r/2 at r=64 (ratio=32.005)
-  PASS: (B3) scaled residual r^5 |Delta_lat phi| bounded at r=128 (scaled=0.278525)
-  PASS: (B3) residual decays by ~r^-5 between r and r/2 at r=128 (ratio=32.001)
-  PASS: (B3) scaled coefficient stable across r=16..128 (first=0.2788 last=0.2785)
-
-== Part 4: (B4) framework constant identification ==
-  PASS: (B4) sympy: c = 1/(4 pi) for the framework unit point-source convention
-  PASS: (B4) numerical: target c value 1/(4 pi) computed (c = 0.0795774715459477)
-  PASS: (B4) numerical: 4 pi = 12.566370614... (4 pi = 12.566370614359)
-
-== Part 5: dependency status check ==
+  PASS: req: Framework-Native Replacement For The Former Import
+  PASS: req: Textbook Reference Boundary
+  PASS: req: Maradudin
+  PASS: req: Lawler
+  PASS: req: Spitzer
+  PASS: req: parallel textbook provenance
+  PASS: req: not load-bearing authority
+  PASS: req: framework-local theorem
+  PASS: req: It no longer uses a textbook theorem as a load-bearing premise
+  PASS: req: No new axiom is introduced
+  PASS: req: No new accepted premise is introduced
+  PASS: req: MINIMAL_AXIOMS_2026-06-05.md
+  PASS: req: scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py
+  PASS: req: LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md
+  PASS: req: scripts/lattice_greens_z3_asymptotic_normalization_certificate.py
+  PASS: req: bounded_theorem
+  PASS: req: Status authority
+  PASS: req: independent audit lane only
+  PASS: abs: PDG load-bearing value
+  PASS: abs: load-bearing fitted
+  PASS: abs: Monte Carlo measurement consumed
+  PASS: abs: load-bearing g_bare value
+  PASS: abs: Wilson plaquette load-bearing input
+  PASS: abs: Newton constant G_obs imported
+  PASS: abs: accepted-premise packet entry
+  PASS: abs: not derived in this bridge
+  PASS: abs: admitted named import
+  PASS: abs: single non-framework input
+  PASS: abs: named textbook theorem remains
+  PASS: abs: supplied accepted-premise packet
+Part 1: (B1) symbol normalization (sympy)
+  PASS: sympy: lambda(k) at order 2 equals kx^2 + ky^2 + kz^2 (deg2 = kx**2 + ky**2 + kz**2)
+  PASS: sympy: lambda(k) has no order-3 cross-terms (even-cosine symmetry)
+  PASS: sympy: lambda(k) has non-zero O(|k|^4) correction (deg4 = -kx**4/12 - ky**4/12 - kz**4/12)
+  PASS: sympy: axis expansion is eps^2 - eps^4/12 + O(eps^6)
+Part 1b: (B1) symbol normalization (numerical)
+  PASS: axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.10000 (ratio=0.9991669444)
+  PASS: diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.10000 (ratio=0.9991669444)
+  PASS: axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.05000 (ratio=0.9997916840)
+  PASS: diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.05000 (ratio=0.9997916840)
+  PASS: axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.02500 (ratio=0.9999479178)
+  PASS: diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.02500 (ratio=0.9999479178)
+  PASS: axis lambda(eps,0,0) / eps^2 ~ 1 at eps=0.01250 (ratio=0.9999869792)
+  PASS: diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps=0.01250 (ratio=0.9999869792)
+Part 2: (B2) continuum-kernel unit flux (sympy)
+  PASS: sympy: -d(1/(4 pi r))/dr = 1/(4 pi r^2)
+  PASS: sympy: int_{S^2} R^2 * (1/(4 pi R^2)) dOmega = 1 (flux = 1)
+  PASS: numerical: flux at R=1.0 equals 1.0 (flux=1.0000000000000000)
+  PASS: numerical: flux at R=2.0 equals 1.0 (flux=1.0000000000000000)
+  PASS: numerical: flux at R=5.0 equals 1.0 (flux=1.0000000000000000)
+  PASS: numerical: flux at R=10.0 equals 1.0 (flux=1.0000000000000000)
+  PASS: numerical: flux at R=100.0 equals 1.0 (flux=1.0000000000000000)
+Part 3: (B3) lattice-harmonic residual decay
+  PASS: scaled residual r^5 |Delta_lat phi| bounded at r=16 (scaled=0.278758)
+  PASS: scaled residual r^5 |Delta_lat phi| bounded at r=32 (scaled=0.278580)
+  PASS: residual decays by ~r^-5 between r and r/2 at r=32 (ratio=32.020)
+  PASS: scaled residual r^5 |Delta_lat phi| bounded at r=64 (scaled=0.278536)
+  PASS: residual decays by ~r^-5 between r and r/2 at r=64 (ratio=32.005)
+  PASS: scaled residual r^5 |Delta_lat phi| bounded at r=128 (scaled=0.278525)
+  PASS: residual decays by ~r^-5 between r and r/2 at r=128 (ratio=32.001)
+  PASS: scaled coefficient stable across r=16..128 (first=0.2788 last=0.2785)
+Part 4: (B4) framework constant identification
+  PASS: sympy: c = 1/(4 pi) for the framework unit point-source convention
+  PASS: numerical: target c value 1/(4 pi) computed (c = 0.0795774715459477)
+  PASS: numerical: 4 pi = 12.566370614... (4 pi = 12.566370614359)
+Part 5: dependency status check
   PASS: Parent Maradudin wrapper note file exists (docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
   PASS: parent carries framework-local proof language
   PASS: Parent normalization certificate runner exists (scripts/lattice_greens_z3_asymptotic_normalization_certificate.py)
   PASS: Parent normalization certificate cache exists (logs/runner-cache/lattice_greens_z3_asymptotic_normalization_certificate.txt)
   PASS: MINIMAL_AXIOMS_2026-06-05.md exists (docs/MINIMAL_AXIOMS_2026-06-05.md)
-
-== Part 6: no forbidden imports ==
-  PASS: source note excludes literature comparator: PDG obs value
-  PASS: source note excludes literature comparator: fitted selector consumed
-  PASS: source note excludes literature comparator: Newton constant G_obs imported
-  PASS: source note excludes literature comparator: Planck length l_P_obs imported
-  PASS: source note excludes literature comparator: Bekenstein-Hawking entropy observed import
-  PASS: source note excludes literature comparator: Wilson plaquette load-bearing input
-  PASS: source note excludes literature comparator: Monte Carlo measurement consumed
-
-== Part 7: no new axioms or vocabulary ==
+Part 6: no forbidden imports
+  [lit: literature comparator absent from note]
+  PASS: lit: PDG obs value
+  PASS: lit: fitted selector consumed
+  PASS: lit: Newton constant G_obs imported
+  PASS: lit: Planck length l_P_obs imported
+  PASS: lit: Bekenstein-Hawking entropy observed import
+  PASS: lit: Wilson plaquette load-bearing input
+  PASS: lit: Monte Carlo measurement consumed
+Part 7: no new axioms or vocabulary
   PASS: note disclaims new axiom introduction
   PASS: note disclaims new accepted-premise introduction
   PASS: legacy row consumes parent framework-local theorem
-
 TOTAL: PASS=76 FAIL=0
 VERDICT: framework-native lattice Green asymptotic reroute passes; (B1)-(B4) follow from the parent framework-local Green-kernel theorem plus lattice-internal arithmetic and finite-precision lattice-harmonic residual evaluation. Textbooks are parallel references only.
 

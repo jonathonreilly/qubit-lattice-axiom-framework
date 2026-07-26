@@ -62,7 +62,8 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
 
 def part0_source_firewall() -> None:
     """Verify the source note carries the required boundary phrases."""
-    print("\n== Part 0: source firewall ==")
+    print("Part 0: source firewall")
+    print("  [req: phrase present in note; abs: phrase absent from note]")
     check(
         "source note file exists",
         NOTE_PATH.is_file(),
@@ -92,7 +93,7 @@ def part0_source_firewall() -> None:
     ]
     for phrase in required:
         check(
-            f"source contains required phrase: {phrase}",
+            f"req: {phrase}",
             phrase in note or phrase in note_flat,
         )
 
@@ -112,14 +113,14 @@ def part0_source_firewall() -> None:
     ]
     for phrase in forbidden:
         check(
-            f"source note excludes forbidden phrase: {phrase}",
+            f"abs: {phrase}",
             phrase not in note and phrase not in note_flat,
         )
 
 
 def part1_symbol_normalization_symbolic() -> None:
     """(B1) sympy: lambda(k) = |k|^2 + O(|k|^4) on Z^3."""
-    print("\n== Part 1: (B1) symbol normalization (sympy) ==")
+    print("Part 1: (B1) symbol normalization (sympy)")
     kx, ky, kz = sp.symbols("kx ky kz", real=True)
     lam = 6 - 2 * (sp.cos(kx) + sp.cos(ky) + sp.cos(kz))
     # Taylor expand at k=0 to fourth order
@@ -139,7 +140,7 @@ def part1_symbol_normalization_symbolic() -> None:
     )
     target = kx**2 + ky**2 + kz**2
     check(
-        "(B1) sympy: lambda(k) at order 2 equals kx^2 + ky^2 + kz^2",
+        "sympy: lambda(k) at order 2 equals kx^2 + ky^2 + kz^2",
         sp.simplify(deg2 - target) == 0,
         f"deg2 = {sp.simplify(deg2)}",
     )
@@ -151,7 +152,7 @@ def part1_symbol_normalization_symbolic() -> None:
         if sum(m) == 3
     )
     check(
-        "(B1) sympy: lambda(k) has no order-3 cross-terms (even-cosine symmetry)",
+        "sympy: lambda(k) has no order-3 cross-terms (even-cosine symmetry)",
         sp.simplify(deg3) == 0,
     )
 
@@ -164,7 +165,7 @@ def part1_symbol_normalization_symbolic() -> None:
         if sum(m) == 4
     )
     check(
-        "(B1) sympy: lambda(k) has non-zero O(|k|^4) correction",
+        "sympy: lambda(k) has non-zero O(|k|^4) correction",
         sp.simplify(deg4) != 0,
         f"deg4 = {sp.simplify(deg4)}",
     )
@@ -175,19 +176,19 @@ def part1_symbol_normalization_symbolic() -> None:
     axis_expansion = (lam.subs({kx: eps, ky: 0, kz: 0})).series(eps, 0, 6).removeO()
     expected_axis = eps**2 - eps**4 / sp.Integer(12)
     check(
-        "(B1) sympy: axis expansion is eps^2 - eps^4/12 + O(eps^6)",
+        "sympy: axis expansion is eps^2 - eps^4/12 + O(eps^6)",
         sp.simplify(axis_expansion - expected_axis) == 0,
     )
 
 
 def part1b_symbol_normalization_numerical() -> None:
     """(B1) numerical: lambda(k) / |k|^2 -> 1 as |k| -> 0."""
-    print("\n== Part 1b: (B1) symbol normalization (numerical) ==")
+    print("Part 1b: (B1) symbol normalization (numerical)")
     for eps in (1e-1, 5e-2, 2.5e-2, 1.25e-2):
         sym_axis = 6.0 - 2.0 * (math.cos(eps) + math.cos(0.0) + math.cos(0.0))
         ratio_axis = sym_axis / (eps * eps)
         check(
-            f"(B1) axis lambda(eps,0,0) / eps^2 ~ 1 at eps={eps:.5f}",
+            f"axis lambda(eps,0,0) / eps^2 ~ 1 at eps={eps:.5f}",
             abs(ratio_axis - 1.0) < eps * eps / 10.0,
             f"ratio={ratio_axis:.10f}",
         )
@@ -196,7 +197,7 @@ def part1b_symbol_normalization_numerical() -> None:
         )
         ratio_diag = sym_diag / (3.0 * eps * eps)
         check(
-            f"(B1) diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps={eps:.5f}",
+            f"diag lambda(eps,eps,eps) / (3 eps^2) ~ 1 at eps={eps:.5f}",
             abs(ratio_diag - 1.0) < eps * eps / 10.0,
             f"ratio={ratio_diag:.10f}",
         )
@@ -204,14 +205,14 @@ def part1b_symbol_normalization_numerical() -> None:
 
 def part2_unit_flux_symbolic() -> None:
     """(B2) sympy: continuum kernel 1/(4 pi r) carries unit outward flux."""
-    print("\n== Part 2: (B2) continuum-kernel unit flux (sympy) ==")
+    print("Part 2: (B2) continuum-kernel unit flux (sympy)")
     r = sp.Symbol("r", positive=True)
     phi = 1 / (4 * sp.pi * r)
     grad_phi_radial = sp.diff(phi, r)
     # -grad phi is the outward radial component = 1/(4 pi r^2)
     minus_grad = -grad_phi_radial
     check(
-        "(B2) sympy: -d(1/(4 pi r))/dr = 1/(4 pi r^2)",
+        "sympy: -d(1/(4 pi r))/dr = 1/(4 pi r^2)",
         sp.simplify(minus_grad - 1 / (4 * sp.pi * r * r)) == 0,
     )
     # Integrate over S^2 at radius R: int_{S^2} R^2 * (1/(4 pi R^2)) dOmega
@@ -225,7 +226,7 @@ def part2_unit_flux_symbolic() -> None:
         (sp.Symbol("ph"), 0, 2 * sp.pi),
     )
     check(
-        "(B2) sympy: int_{S^2} R^2 * (1/(4 pi R^2)) dOmega = 1",
+        "sympy: int_{S^2} R^2 * (1/(4 pi R^2)) dOmega = 1",
         sp.simplify(flux - 1) == 0,
         f"flux = {flux}",
     )
@@ -235,7 +236,7 @@ def part2_unit_flux_symbolic() -> None:
             1.0 / (4.0 * math.pi * radius * radius)
         )
         check(
-            f"(B2) numerical: flux at R={radius:.1f} equals 1.0",
+            f"numerical: flux at R={radius:.1f} equals 1.0",
             math.isclose(flux_num, 1.0, rel_tol=0.0, abs_tol=1e-15),
             f"flux={flux_num:.16f}",
         )
@@ -265,7 +266,7 @@ def graph_laplacian_on_kernel(x: tuple[int, int, int]) -> float:
 
 def part3_lattice_harmonic_residual() -> None:
     """(B3) numerical: (-Delta_lat)(1/(4 pi r)) = O(r^-5) at axis."""
-    print("\n== Part 3: (B3) lattice-harmonic residual decay ==")
+    print("Part 3: (B3) lattice-harmonic residual decay")
     previous = None
     scaled_history = []
     for radius in (16, 32, 64, 128):
@@ -273,7 +274,7 @@ def part3_lattice_harmonic_residual() -> None:
         scaled = residual * (radius**5)
         scaled_history.append(scaled)
         check(
-            f"(B3) scaled residual r^5 |Delta_lat phi| bounded at r={radius}",
+            f"scaled residual r^5 |Delta_lat phi| bounded at r={radius}",
             scaled < 0.29,
             f"scaled={scaled:.6f}",
         )
@@ -281,7 +282,7 @@ def part3_lattice_harmonic_residual() -> None:
             # Each doubling of r should reduce residual by at least factor ~31
             # (i.e. close to 2^5 = 32), reflecting r^-5 decay
             check(
-                f"(B3) residual decays by ~r^-5 between r and r/2 at r={radius}",
+                f"residual decays by ~r^-5 between r and r/2 at r={radius}",
                 residual < previous / 31.0,
                 f"ratio={previous/residual:.3f}",
             )
@@ -292,7 +293,7 @@ def part3_lattice_harmonic_residual() -> None:
         first = scaled_history[0]
         last = scaled_history[-1]
         check(
-            "(B3) scaled coefficient stable across r=16..128",
+            "scaled coefficient stable across r=16..128",
             abs(last - first) / first < 0.5,
             f"first={first:.4f} last={last:.4f}",
         )
@@ -300,7 +301,7 @@ def part3_lattice_harmonic_residual() -> None:
 
 def part4_framework_constant_identification() -> None:
     """(B4) c = 1/(4 pi) is the framework-stencil asymptotic constant."""
-    print("\n== Part 4: (B4) framework constant identification ==")
+    print("Part 4: (B4) framework constant identification")
     # Symbolic: parameterise G(r) = c / r and check that the only c
     # making (-Delta_lat) (G) asymptotically consistent with a unit
     # point source is c = 1/(4 pi).
@@ -311,7 +312,7 @@ def part4_framework_constant_identification() -> None:
     # normalization (B1) and unit-flux convention (B2).
     target_c = sp.Rational(1, 1) / (4 * sp.pi)
     check(
-        "(B4) sympy: c = 1/(4 pi) for the framework unit point-source convention",
+        "sympy: c = 1/(4 pi) for the framework unit point-source convention",
         sp.simplify(target_c - 1 / (4 * sp.pi)) == 0,
     )
     # Cross-check the numeric target used by the native reroute.
@@ -319,14 +320,14 @@ def part4_framework_constant_identification() -> None:
     # asymptotic; the checks above pin the normalization convention.
     c_target_numerical = 1.0 / (4.0 * math.pi)
     check(
-        "(B4) numerical: target c value 1/(4 pi) computed",
+        "numerical: target c value 1/(4 pi) computed",
         math.isclose(c_target_numerical, 0.07957747154594767, rel_tol=1e-15),
         f"c = {c_target_numerical:.16f}",
     )
     # Closed-form 4 pi check
     four_pi = 4.0 * math.pi
     check(
-        "(B4) numerical: 4 pi = 12.566370614...",
+        "numerical: 4 pi = 12.566370614...",
         math.isclose(four_pi, 12.566370614359172, rel_tol=1e-15),
         f"4 pi = {four_pi:.12f}",
     )
@@ -334,7 +335,7 @@ def part4_framework_constant_identification() -> None:
 
 def part5_dependency_status() -> None:
     """Verify load-bearing one-hop dependency is framework-local."""
-    print("\n== Part 5: dependency status check ==")
+    print("Part 5: dependency status check")
     parent = (
         ROOT
         / "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md"
@@ -376,7 +377,8 @@ def part5_dependency_status() -> None:
 
 def part6_no_forbidden_imports() -> None:
     """No PDG / Monte Carlo / fitted value imported."""
-    print("\n== Part 6: no forbidden imports ==")
+    print("Part 6: no forbidden imports")
+    print("  [lit: literature comparator absent from note]")
     note = NOTE_PATH.read_text(encoding="utf-8")
     forbidden_substrings = [
         "PDG " + "obs " + "value",
@@ -389,14 +391,14 @@ def part6_no_forbidden_imports() -> None:
     ]
     for phrase in forbidden_substrings:
         check(
-            f"source note excludes literature comparator: {phrase}",
+            f"lit: {phrase}",
             phrase not in note,
         )
 
 
 def part7_no_new_axioms() -> None:
     """No new repo vocabulary or repo-wide axiom introduced."""
-    print("\n== Part 7: no new axioms or vocabulary ==")
+    print("Part 7: no new axioms or vocabulary")
     note = NOTE_PATH.read_text(encoding="utf-8")
     note_flat = " ".join(note.split())
     # Verify the note explicitly disclaims new axioms
@@ -428,7 +430,7 @@ def main() -> int:
     part5_dependency_status()
     part6_no_forbidden_imports()
     part7_no_new_axioms()
-    print(f"\nTOTAL: PASS={PASS} FAIL={FAIL}")
+    print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     if FAIL == 0:
         print(
             "VERDICT: framework-native lattice Green asymptotic reroute passes; "

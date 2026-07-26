@@ -88,7 +88,7 @@ class ReferencePatchGraph:
             raise ValueError("empty cell set")
         if len(set(cells)) != len(cells):
             raise ValueError("duplicate cells")
-        # The PR OpenReferenceGraph sorts its cell set, while PatchGraph keeps
+        # The landed Cycle703 OpenReferenceGraph sorts its cell set, while PatchGraph keeps
         # the supplied Hamiltonian cell path.  That distinction changes one
         # signed coarse-plaquette row on 2x2 and is deliberately preserved.
         self.cells = tuple(sorted(cells)) if reference_bonds else tuple(cells)

@@ -584,20 +584,16 @@ def greedy_check_colors(rows: tuple[base.Pauli, ...]) -> int:
     return maximum_color + 1
 
 
-def canonical_hermitian(row: base.Pauli) -> base.Pauli:
-    """Choose the positive Hermitian phase for a Pauli symplectic row."""
-
-    return base.Pauli((row.x & row.z).bit_count() % 4, row.x, row.z)
-
-
 def local_logical_pairs(graph, cells: tuple[Coord, ...]):
     """Six bounded canonical qubit pairs per cell in the BKSF code space.
 
     Z_(x,a)=B_(x,a) and
-    X_(x,a)=A_((x,a),(x,r)) product_(b<a) B_(x,b).
+    X_(x,a)=-i product_(b=a)^5 B_(x,b) A_((x,a),(x,r)).
     The finite mode order is an intra-cell Fock chart, not a global
     Jordan--Wigner order.  Proper-cubic changes of chart are audited below as
-    bounded local logical Clifford transformations.
+    bounded local logical Clifford transformations.  The suffix and its phase
+    are load bearing: the canonical prefix representative has the same
+    commutators but carries an occupation-dependent cell-parity amplitude.
     """
 
     result = []
@@ -606,15 +602,155 @@ def local_logical_pairs(graph, cells: tuple[Coord, ...]):
         for mode in range(6):
             matter = graph.vertex_index[(cell, mode)]
             logical_z = graph.B(matter)
-            logical_x = graph.A(matter, reference)
-            for earlier in range(mode):
-                logical_x = logical_x @ graph.B(
-                    graph.vertex_index[(cell, earlier)]
+            suffix = base.Pauli()
+            for suffix_mode in range(mode, 6):
+                suffix = suffix @ graph.B(
+                    graph.vertex_index[(cell, suffix_mode)]
                 )
+            logical_x = (
+                base.Pauli(phase=3)
+                @ suffix
+                @ graph.A(matter, reference)
+            )
             result.append(
-                (cell, mode, canonical_hermitian(logical_x), logical_z)
+                (cell, mode, logical_x, logical_z)
             )
     return tuple(result)
+
+
+def local_gamma(state: tuple[int, ...], target: int):
+    out = list(state)
+    phase = -1 if sum(state[:target]) & 1 else 1
+    out[target] ^= 1
+    return tuple(out), phase
+
+
+def local_a_action(bits: tuple[int, ...], mode: int):
+    out, right_phase = local_gamma(bits, 6)
+    out, left_phase = local_gamma(out, mode)
+    # A_(mode,r)=-i gamma_mode gamma_r; gamma_r acts first.
+    return out, -1j * left_phase * right_phase
+
+
+def local_suffix_x_action(bits: tuple[int, ...], mode: int):
+    """Decoded action of -i product_(k=mode)^5 B_k A_(mode,r)."""
+
+    out, a_phase = local_a_action(bits, mode)
+    suffix_phase = -1 if sum(out[mode:6]) & 1 else 1
+    return out, (-1j) * suffix_phase * a_phase
+
+
+def local_prefix_action(bits: tuple[int, ...], mode: int):
+    """Decoded action of A_(mode,r) product_(k<mode) B_k."""
+
+    prefix_phase = -1 if sum(bits[:mode]) & 1 else 1
+    out, a_phase = local_a_action(bits, mode)
+    return out, prefix_phase * a_phase
+
+
+def logical_phase_orientation_certificate() -> dict[str, object]:
+    """Exhaust the 64-state cell decoder and compare prefix versus suffix."""
+
+    suffix_orientation_failures = 0
+    prefix_relation_failures = 0
+    prefix_plain_x_mismatches = 0
+    graph_relation_failures = 0
+    suffix_full_load_failures = 0
+    prefix_full_load_plain_amplitude_mismatches = 0
+    graph = OpenReferenceGraph((ORIGIN,))
+    reference = graph.vertex_index[(ORIGIN, 6)]
+    cell_z = base.Pauli()
+    for mode in range(6):
+        cell_z = cell_z @ graph.B(graph.vertex_index[(ORIGIN, mode)])
+    for mode in range(6):
+        matter_vertex = graph.vertex_index[(ORIGIN, mode)]
+        prefix = graph.A(matter_vertex, reference)
+        for earlier in range(mode):
+            prefix = prefix @ graph.B(
+                graph.vertex_index[(ORIGIN, earlier)]
+            )
+        suffix = base.Pauli()
+        for suffix_mode in range(mode, 6):
+            suffix = suffix @ graph.B(
+                graph.vertex_index[(ORIGIN, suffix_mode)]
+            )
+        suffix = (
+            base.Pauli(phase=3)
+            @ suffix
+            @ graph.A(matter_vertex, reference)
+        )
+        graph_relation_failures += prefix != (
+            base.Pauli(phase=3) @ suffix @ cell_z
+        )
+        for matter_bits in range(1 << 6):
+            matter = tuple(
+                (matter_bits >> index) & 1 for index in range(6)
+            )
+            extended = matter + (sum(matter) & 1,)
+            target_matter = list(matter)
+            target_matter[mode] ^= 1
+            target = tuple(target_matter) + (
+                sum(target_matter) & 1,
+            )
+            suffix_out, suffix_phase = local_suffix_x_action(
+                extended, mode
+            )
+            suffix_orientation_failures += (
+                suffix_out != target or abs(suffix_phase - 1.0) > 1.0e-12
+            )
+            prefix_out, prefix_phase = local_prefix_action(extended, mode)
+            expected_prefix_phase = (-1j) * (
+                -1.0 if sum(matter) & 1 else 1.0
+            )
+            prefix_relation_failures += (
+                prefix_out != target
+                or abs(prefix_phase - expected_prefix_phase) > 1.0e-12
+            )
+            prefix_plain_x_mismatches += (
+                prefix_out != target or abs(prefix_phase - 1.0) > 1.0e-12
+            )
+    for matter_bits in range(1 << 6):
+        target_matter = tuple(
+            (matter_bits >> index) & 1 for index in range(6)
+        )
+        target = target_matter + (sum(target_matter) & 1,)
+        suffix_state = (0,) * 7
+        suffix_amplitude = 1.0 + 0.0j
+        prefix_state = (0,) * 7
+        prefix_amplitude = 1.0 + 0.0j
+        for mode in range(6):
+            if not ((matter_bits >> mode) & 1):
+                continue
+            suffix_state, amplitude = local_suffix_x_action(
+                suffix_state, mode
+            )
+            suffix_amplitude *= amplitude
+            prefix_state, amplitude = local_prefix_action(prefix_state, mode)
+            prefix_amplitude *= amplitude
+        suffix_full_load_failures += (
+            suffix_state != target
+            or abs(suffix_amplitude - 1.0) > 1.0e-12
+        )
+        prefix_full_load_plain_amplitude_mismatches += (
+            prefix_state != target
+            or abs(prefix_amplitude - 1.0) > 1.0e-12
+        )
+    return {
+        "matter_columns_per_mode": 1 << 6,
+        "mode_columns_checked": 6 * (1 << 6),
+        "suffix_plus_one_orientation_failures": suffix_orientation_failures,
+        "prefix_minus_i_cell_parity_relation_failures": prefix_relation_failures,
+        "prefix_plain_X_mismatches": prefix_plain_x_mismatches,
+        "physical_prefix_suffix_relation_failures": graph_relation_failures,
+        "full_six_mode_load_columns_checked": 1 << 6,
+        "suffix_full_load_plus_one_failures": suffix_full_load_failures,
+        "prefix_full_load_plain_amplitude_mismatches": (
+            prefix_full_load_plain_amplitude_mismatches
+        ),
+        "physical_relation": (
+            "prefix = -i suffix-X times cell-Z, with operator order as written"
+        ),
+    }
 
 
 def logical_tableau_certificate(
@@ -856,6 +992,7 @@ def main() -> None:
         planar_boundary_path_decoder(length) for length in range(2, 10)
     )
     cell_decoder = cell_triangle_decoder_certificate()
+    phase_orientation = logical_phase_orientation_certificate()
     covariance = logical_covariance_certificate()
     maximum_check_depth = max(
         row["sequential_ancilla_two_qubit_layer_upper_bound"]
@@ -878,6 +1015,7 @@ def main() -> None:
         "cell_triangle_decoder": cell_decoder,
         "graph_and_measurement_tableaux": tuple(graph_rows),
         "local_logical_tableaux_and_load_circuits": tuple(logical_rows),
+        "logical_phase_orientation": phase_orientation,
         "logical_proper_cubic_covariance": covariance,
         "maximum_local_check_measurement_layer_upper_bound_L_le_5": maximum_check_depth,
         "planar_open_boundary_path_decoders": planar_rows,
@@ -975,6 +1113,20 @@ def main() -> None:
     assert all(
         row["Hermitian_involution_failures"] == 0 for row in logical_rows
     )
+    assert phase_orientation == {
+        "matter_columns_per_mode": 64,
+        "mode_columns_checked": 384,
+        "suffix_plus_one_orientation_failures": 0,
+        "prefix_minus_i_cell_parity_relation_failures": 0,
+        "prefix_plain_X_mismatches": 384,
+        "physical_prefix_suffix_relation_failures": 0,
+        "full_six_mode_load_columns_checked": 64,
+        "suffix_full_load_plus_one_failures": 0,
+        "prefix_full_load_plain_amplitude_mismatches": 32,
+        "physical_relation": (
+            "prefix = -i suffix-X times cell-Z, with operator order as written"
+        ),
+    }
     assert covariance["frames"] == 24
     assert covariance["chart_rank_minimum"] == 12
     assert covariance["rank_failures"] == 0

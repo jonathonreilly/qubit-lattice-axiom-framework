@@ -1,0 +1,10 @@
+PASS one local reference bit encodes every six-mode cell without a parity service
+PASS L and held 2x2/3x3 loop plus local-D projectors have exact 6N capacity
+PASS one onsite gate grammar maps every Cycle219 coin and Cycle230 contact factor
+PASS the exact local-D stream grammar compiles every directed held-patch bond without extra M2
+PASS the one-particle mass fixture and local contact block are unchanged
+PASS actual held-patch A/B operators, projectors, sites, coin, contact, and dressed stream pass 24/576 covariance
+PASS loop, full-D-family, Wilson, and contact deletions distinguish the supplied structure
+certificate_sha256 1c1aa58c255d263e2926c6cdc3e8cbc5f198e77dc36733371ab3606b7a97d5d8
+resources elapsed_seconds=618.4993827501312 peak_rss_mb=100.0
+RESULT LOCAL_GAUSS_HELD_PATCH_GRAMMAR_CLOSED_BKSF_COMMON_E_OPEN

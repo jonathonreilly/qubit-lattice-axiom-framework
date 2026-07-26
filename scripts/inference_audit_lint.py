@@ -236,9 +236,16 @@ def check_direction(note: Path, ledger: str) -> list[Finding]:
         if not m:
             continue
         # a converse must be recorded somewhere in the ledger for this sentence
-        key = re.sub(r"[^a-z ]", "", sent.lower()).split()
+        # Normalize BOTH sides identically. An earlier version normalized only
+        # the sentence and compared against a merely-lowercased ledger, so any
+        # anchor containing punctuation could never match and the check
+        # over-fired on correctly-ledgered claims.
+        def norm(t: str) -> str:
+            return " ".join(re.sub(r"[^a-z0-9 ]", " ", t.lower()).split())
+
+        key = norm(sent).split()
         anchor = " ".join(key[:6])
-        if anchor and anchor not in ledger.lower():
+        if anchor and anchor not in norm(ledger):
             out.append(
                 Finding(
                     "DIRECTION",

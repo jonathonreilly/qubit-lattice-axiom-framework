@@ -1,12 +1,12 @@
 CYCLE 706 OPENREFERENCEGRAPH 80 <-> PATCHGRAPH 76+4 EQUIVALENCE
-PASS the independent reconstruction matches the PR5641 2x2 graph digests and gives Open=Patch+one rail per coarse adjacency :: {'geometries': {'one_cell': {'cells': 1, 'coarse_adjacencies': 0, 'open_edge_M2': 18, 'patch_edge_M2': 18, 'candidate_rails': 0, 'open_stabilizer_rank': 12, 'patch_plus_rail_stabilizer_rank': 12, 'logical_qubits': 6, 'source_canonical_failures': 0, 'target_canonical_failures': 0}, 'one_edge': {'cells': 2, 'coarse_adjacencies': 1, 'open_edge_M2': 38, 'patch_edge_M2': 37, 'candidate_rails': 1, 'open_stabilizer_rank': 26, 'patch_plus_rail_stabilizer_rank': 26, 'logical_qubits': 12, 'source_canonical_failures': 0, 'target_canonical_failures': 0}, 'L_triomino': {'cells': 3, 'coarse_adjacencies': 2, 'open_edge_M2': 58, 'patch_edge_M2': 56, 'candidate_rails': 2, 'open_stabilizer_rank': 40, 'patch_plus_rail_stabilizer_rank': 40, 'logical_qubits': 18, 'source_canonical_failures': 0, 'target_canonical_failures': 0}, 'held_2x2': {'cells': 4, 'coarse_adjacencies': 4, 'open_edge_M2': 80, 'patch_edge_M2': 76, 'candidate_rails': 4, 'open_stabilizer_rank': 56, 'patch_plus_rail_stabilizer_rank': 56, 'logical_qubits': 24, 'source_canonical_failures': 0, 'target_canonical_failures': 0}}, 'evidence': {'PR5641_read_only_head': 'b88d7458eb44353269884e5e70dfe29f7c0f7870', 'open_2x2_edge_digest': '324a88a72a23afb0f2d8ac445aa6d3a8709d4a2d4ce0eee6a8fea031f33ea6c4', 'patch_path_2x2_edge_digest': 'd9e04aca40f3e2ffeaaf6c6dfa02e5d7066b4891ecd273fe54d537483c6a64b8', 'expected_open_digest': '324a88a72a23afb0f2d8ac445aa6d3a8709d4a2d4ce0eee6a8fea031f33ea6c4', 'expected_patch_digest': 'd9e04aca40f3e2ffeaaf6c6dfa02e5d7066b4891ecd273fe54d537483c6a64b8'}}
+PASS the independent reconstruction matches the landed Cycle703 2x2 graph digests and gives Open=Patch+one rail per coarse adjacency :: {'geometries': {'one_cell': {'cells': 1, 'coarse_adjacencies': 0, 'open_edge_qubits': 18, 'patch_edge_qubits': 18, 'candidate_rails': 0, 'open_stabilizer_rank': 12, 'patch_plus_rail_stabilizer_rank': 12, 'logical_qubits': 6, 'source_canonical_failures': 0, 'target_canonical_failures': 0}, 'one_edge': {'cells': 2, 'coarse_adjacencies': 1, 'open_edge_qubits': 38, 'patch_edge_qubits': 37, 'candidate_rails': 1, 'open_stabilizer_rank': 26, 'patch_plus_rail_stabilizer_rank': 26, 'logical_qubits': 12, 'source_canonical_failures': 0, 'target_canonical_failures': 0}, 'L_triomino': {'cells': 3, 'coarse_adjacencies': 2, 'open_edge_qubits': 58, 'patch_edge_qubits': 56, 'candidate_rails': 2, 'open_stabilizer_rank': 40, 'patch_plus_rail_stabilizer_rank': 40, 'logical_qubits': 18, 'source_canonical_failures': 0, 'target_canonical_failures': 0}, 'held_2x2': {'cells': 4, 'coarse_adjacencies': 4, 'open_edge_qubits': 80, 'patch_edge_qubits': 76, 'candidate_rails': 4, 'open_stabilizer_rank': 56, 'patch_plus_rail_stabilizer_rank': 56, 'logical_qubits': 24, 'source_canonical_failures': 0, 'target_canonical_failures': 0}}, 'evidence': {'landed_cycle703_graph_source': 'docs/RECURRENT_ENDPOINT_INCIDENCE_PHYSICAL_M2_COMPILER_TOURNAMENT_CYCLE703_NOTE_2026-07-25.md', 'open_2x2_edge_digest': '324a88a72a23afb0f2d8ac445aa6d3a8709d4a2d4ce0eee6a8fea031f33ea6c4', 'patch_path_2x2_edge_digest': 'd9e04aca40f3e2ffeaaf6c6dfa02e5d7066b4891ecd273fe54d537483c6a64b8', 'expected_open_digest': '324a88a72a23afb0f2d8ac445aa6d3a8709d4a2d4ce0eee6a8fea031f33ea6c4', 'expected_patch_digest': 'd9e04aca40f3e2ffeaaf6c6dfa02e5d7066b4891ecd273fe54d537483c6a64b8'}}
 PASS the natural edge relabeling fixes all matter logical pairs but all 1,296 signed independent single-Pauli rail codes fail :: {'logical_and_shared': {'logical_Z_exact_failures': 0, 'logical_X_exact_failures': 0, 'shared_loop_unsigned_failures': 0, 'shared_loop_signed_failures': 1}, 'uniform_rail_axes': {'X': {'target_rank': 56, 'union_rank': 62, 'cross_commutator_failures': 16, 'signed_status_not_applicable': {}}, 'Y': {'target_rank': 56, 'union_rank': 62, 'cross_commutator_failures': 20, 'signed_status_not_applicable': {}}, 'Z': {'target_rank': 56, 'union_rank': 60, 'cross_commutator_failures': 10, 'Z_tableau_signed_status': {'positive': 51, 'negative': 1, 'outside': 4}}}, 'exhaustive_independent_rail_scan': {'unsigned_axis_assignments': 81, 'minimum_union_rank': 60, 'maximum_union_rank': 63, 'minimum_cross_commutator_failures': 10, 'maximum_cross_commutator_failures': 20, 'exact_unsigned_assignments': 0, 'signed_axis_assignments': 1296, 'signed_assignments_rejected_by_support_or_coarse_loop_sign': 1296}}
-PASS the signed Clifford map fixes all 24 logical pairs and sends four bond checks to four prepared Z rails :: {'qubits': 80, 'logical_qubits': 24, 'source_full_W_rank': 80, 'target_full_W_rank': 80, 'source_canonical_failures': 0, 'target_canonical_failures': 0, 'source_stabilizer_phase_failures': 0, 'target_stabilizer_phase_failures': 0, 'semantic_map_failures': {'logical_Z': 0, 'logical_X': 0, 'shared_loops': 0, 'local_D': 0, 'bond_to_rail_Z': 0}, 'patch_fundamental_loop_count': 49, 'patch_fundamental_signed_status': {'positive': 49}, 'physical_generator_images': 160, 'physical_image_rank': 160, 'inverse_failures': 0, 'ordered_generator_pair_products': 25600, 'multiplication_failures': 0, 'image_weight_census': {1: 126, 2: 20, 3: 10, 9: 1, 10: 1, 14: 1, 15: 1}, 'maximum_image_weight': 15, 'maximum_image_cell_diameter': 2, 'deletion_ranks': {'source_bond_loop': [79], 'target_rail_Z': [79], 'physical_map_any_generator_deleted': [159]}, 'bond_sign_mutations_detected': 4}
-PASS the 160 physical Pauli generators give a full-rank exact signed group isomorphism with exhaustive pair multiplication and inverse checks :: {'physical_generator_images': 160, 'physical_image_rank': 160, 'inverse_failures': 0, 'ordered_generator_pair_products': 25600, 'multiplication_failures': 0, 'image_weight_census': {1: 126, 2: 20, 3: 10, 9: 1, 10: 1, 14: 1, 15: 1}, 'maximum_image_weight': 15, 'maximum_image_cell_diameter': 2}
-PASS deleting any bond/rail basis row loses one rank and every bond-sign mutation changes the prepared signed sector :: {'deletion_ranks': {'source_bond_loop': [79], 'target_rail_Z': [79], 'physical_map_any_generator_deleted': [159]}, 'bond_sign_mutations_detected': 4}
+PASS the signed Clifford map fixes all 24 logical pairs and sends four bond checks to four prepared Z rails :: {'qubits': 80, 'logical_qubits': 24, 'source_full_W_rank': 80, 'target_full_W_rank': 80, 'source_canonical_failures': 0, 'target_canonical_failures': 0, 'source_stabilizer_phase_failures': 0, 'target_stabilizer_phase_failures': 0, 'semantic_map_failures': {'logical_Z': 0, 'logical_X': 0, 'shared_loops': 0, 'local_D': 0, 'bond_to_rail_Z': 0}, 'patch_fundamental_loop_count': 49, 'patch_fundamental_signed_status': {'positive': 49}, 'edge_generator_images': 160, 'edge_image_rank': 160, 'inverse_failures': 0, 'ordered_generator_pair_products': 25600, 'multiplication_failures': 0, 'image_weight_census': {1: 126, 2: 20, 3: 10, 9: 1, 10: 1, 14: 1, 15: 1}, 'maximum_image_weight': 15, 'maximum_image_cell_diameter': 2, 'deletion_ranks': {'source_bond_loop': [79], 'target_rail_Z': [79], 'edge_map_any_generator_deleted': [159]}, 'bond_sign_mutations_detected': 4}
+PASS the 160 graph-edge Pauli generators give a full-rank exact signed group isomorphism with exhaustive pair multiplication and inverse checks :: {'edge_generator_images': 160, 'edge_image_rank': 160, 'inverse_failures': 0, 'ordered_generator_pair_products': 25600, 'multiplication_failures': 0, 'image_weight_census': {1: 126, 2: 20, 3: 10, 9: 1, 10: 1, 14: 1, 15: 1}, 'maximum_image_weight': 15, 'maximum_image_cell_diameter': 2}
+PASS deleting any bond/rail basis row loses one rank and every bond-sign mutation changes the prepared signed sector :: {'deletion_ranks': {'source_bond_loop': [79], 'target_rail_Z': [79], 'edge_map_any_generator_deleted': [159]}, 'bond_sign_mutations_detected': 4}
 PASS the code/logical equivalence diagram closes under all 24 proper frames and the frame/rail labels close under all 576 products :: {'proper_cubic_frames': 24, 'frame_semantic_rows': 2496, 'maximum_frame_row': {'open_generator_transport_failures': 0, 'patch_generator_transport_failures': 0, 'semantic_rows': 104, 'equivalence_diagram_failures': 0, 'source_canonical_failures': 0, 'target_canonical_failures': 0}, 'group_products': 576, 'group_failures': 0, 'rail_group_composition_tests': 2304, 'rail_group_composition_failures': 0}
 PASS empty, duplicate, and disconnected candidate domains are actively rejected :: {'invalid_cases': 3, 'invalid_rejections': 3, 'cases': ('empty', 'duplicate', 'disconnected')}
-PASS the supplied, derived, open, and not-claimed inventories are explicit :: {'supplied': ['PR5641 head SHA and the two graph definitions as read-only evidence', 'the 2x2 cell set and its finite coordinate chart', 'the six-mode intra-cell Fock order', 'the local edge order used by the BKSF A generators', 'the +1 loop, D, and prepared rail-Z characters', 'a deterministic free-zero symplectic tableau completion'], 'derived': ['the 76 shared-edge bijection and four reference-bond rail labels', 'the signed canonical bases and exact Clifford Pauli map', 'the natural-map signed-sector falsifier', 'the 24-frame semantic covariance diagram and 576-product rail action', 'all ranks, inverse checks, multiplication checks, and deletion residuals'], 'open': ['a bounded recurrent Clifford circuit implementing the ambient tableau map', 'an all-volume natural family with constant support independent of patch size', 'composition with preparation controller, stream repetition, and physical M2 placement', 'autonomous generation of the rail-Z reference state'], 'not_claimed': ['the direct edge relabeling is not an equivalence', 'the finite tableau map is not called a local physical compiler', 'no minimum four-rail content or graph-level impossibility is claimed', 'no compiler order is called time and no stabilizer sign is called energy']}
+PASS the supplied, derived, open, and not-claimed inventories are explicit :: {'supplied': ['the landed Cycle703 graph definitions and their two edge-list digests', 'the 2x2 cell set and its finite coordinate chart', 'the six-mode intra-cell Fock order', 'the local edge order used by the BKSF A generators', 'the +1 loop, D, and prepared rail-Z characters', 'a deterministic free-zero symplectic tableau completion'], 'derived': ['the 76 shared-edge bijection and four reference-bond rail labels', 'the signed canonical bases and exact Clifford Pauli map', 'the natural-map signed-sector falsifier', 'the 24 individual-frame semantic covariance diagrams and 576-product direction/rail-label composition', 'all ranks, inverse checks, multiplication checks, and deletion residuals'], 'open': ['a bounded recurrent Clifford circuit implementing the ambient tableau map', 'an all-volume natural family with constant support independent of patch size', 'composition with preparation controller, stream repetition, and literal Z3/M2 placement', 'autonomous generation of the rail-Z reference state'], 'not_claimed': ['the direct edge relabeling is not an equivalence', 'the finite tableau map is not called a local physical-site compiler', 'no minimum four-rail content or graph-level impossibility is claimed', 'no compiler order is called time and no stabilizer sign is called energy']}
 
 CYCLE706_REPORT_JSON
 {
@@ -41,9 +41,9 @@ CYCLE706_REPORT_JSON
   },
   "geometry": {
     "evidence": {
-      "PR5641_read_only_head": "b88d7458eb44353269884e5e70dfe29f7c0f7870",
       "expected_open_digest": "324a88a72a23afb0f2d8ac445aa6d3a8709d4a2d4ce0eee6a8fea031f33ea6c4",
       "expected_patch_digest": "d9e04aca40f3e2ffeaaf6c6dfa02e5d7066b4891ecd273fe54d537483c6a64b8",
+      "landed_cycle703_graph_source": "docs/RECURRENT_ENDPOINT_INCIDENCE_PHYSICAL_M2_COMPILER_TOURNAMENT_CYCLE703_NOTE_2026-07-25.md",
       "open_2x2_edge_digest": "324a88a72a23afb0f2d8ac445aa6d3a8709d4a2d4ce0eee6a8fea031f33ea6c4",
       "patch_path_2x2_edge_digest": "d9e04aca40f3e2ffeaaf6c6dfa02e5d7066b4891ecd273fe54d537483c6a64b8"
     },
@@ -53,9 +53,9 @@ CYCLE706_REPORT_JSON
         "cells": 3,
         "coarse_adjacencies": 2,
         "logical_qubits": 18,
-        "open_edge_M2": 58,
+        "open_edge_qubits": 58,
         "open_stabilizer_rank": 40,
-        "patch_edge_M2": 56,
+        "patch_edge_qubits": 56,
         "patch_plus_rail_stabilizer_rank": 40,
         "source_canonical_failures": 0,
         "target_canonical_failures": 0
@@ -65,9 +65,9 @@ CYCLE706_REPORT_JSON
         "cells": 4,
         "coarse_adjacencies": 4,
         "logical_qubits": 24,
-        "open_edge_M2": 80,
+        "open_edge_qubits": 80,
         "open_stabilizer_rank": 56,
-        "patch_edge_M2": 76,
+        "patch_edge_qubits": 76,
         "patch_plus_rail_stabilizer_rank": 56,
         "source_canonical_failures": 0,
         "target_canonical_failures": 0
@@ -77,9 +77,9 @@ CYCLE706_REPORT_JSON
         "cells": 1,
         "coarse_adjacencies": 0,
         "logical_qubits": 6,
-        "open_edge_M2": 18,
+        "open_edge_qubits": 18,
         "open_stabilizer_rank": 12,
-        "patch_edge_M2": 18,
+        "patch_edge_qubits": 18,
         "patch_plus_rail_stabilizer_rank": 12,
         "source_canonical_failures": 0,
         "target_canonical_failures": 0
@@ -89,9 +89,9 @@ CYCLE706_REPORT_JSON
         "cells": 2,
         "coarse_adjacencies": 1,
         "logical_qubits": 12,
-        "open_edge_M2": 38,
+        "open_edge_qubits": 38,
         "open_stabilizer_rank": 26,
-        "patch_edge_M2": 37,
+        "patch_edge_qubits": 37,
         "patch_plus_rail_stabilizer_rank": 26,
         "source_canonical_failures": 0,
         "target_canonical_failures": 0
@@ -103,23 +103,23 @@ CYCLE706_REPORT_JSON
       "the 76 shared-edge bijection and four reference-bond rail labels",
       "the signed canonical bases and exact Clifford Pauli map",
       "the natural-map signed-sector falsifier",
-      "the 24-frame semantic covariance diagram and 576-product rail action",
+      "the 24 individual-frame semantic covariance diagrams and 576-product direction/rail-label composition",
       "all ranks, inverse checks, multiplication checks, and deletion residuals"
     ],
     "not_claimed": [
       "the direct edge relabeling is not an equivalence",
-      "the finite tableau map is not called a local physical compiler",
+      "the finite tableau map is not called a local physical-site compiler",
       "no minimum four-rail content or graph-level impossibility is claimed",
       "no compiler order is called time and no stabilizer sign is called energy"
     ],
     "open": [
       "a bounded recurrent Clifford circuit implementing the ambient tableau map",
       "an all-volume natural family with constant support independent of patch size",
-      "composition with preparation controller, stream repetition, and physical M2 placement",
+      "composition with preparation controller, stream repetition, and literal Z3/M2 placement",
       "autonomous generation of the rail-Z reference state"
     ],
     "supplied": [
-      "PR5641 head SHA and the two graph definitions as read-only evidence",
+      "the landed Cycle703 graph definitions and their two edge-list digests",
       "the 2x2 cell set and its finite coordinate chart",
       "the six-mode intra-cell Fock order",
       "the local edge order used by the BKSF A generators",
@@ -172,7 +172,7 @@ CYCLE706_REPORT_JSON
   "signed_clifford_candidate": {
     "bond_sign_mutations_detected": 4,
     "deletion_ranks": {
-      "physical_map_any_generator_deleted": [
+      "edge_map_any_generator_deleted": [
         159
       ],
       "source_bond_loop": [
@@ -182,6 +182,8 @@ CYCLE706_REPORT_JSON
         79
       ]
     },
+    "edge_generator_images": 160,
+    "edge_image_rank": 160,
     "image_weight_census": {
       "1": 126,
       "2": 20,
@@ -201,8 +203,6 @@ CYCLE706_REPORT_JSON
     "patch_fundamental_signed_status": {
       "positive": 49
     },
-    "physical_generator_images": 160,
-    "physical_image_rank": 160,
     "qubits": 80,
     "semantic_map_failures": {
       "bond_to_rail_Z": 0,

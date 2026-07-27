@@ -51,7 +51,7 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": null,
+  "runner_path": "scripts/frontier_ckm_five_sixths_exponent_discriminator_support.py",
   "title": "CKM Five-Sixths Exponent Discriminator Support Note",
   "transitive_descendants": 0,
   "verdict_rationale": null

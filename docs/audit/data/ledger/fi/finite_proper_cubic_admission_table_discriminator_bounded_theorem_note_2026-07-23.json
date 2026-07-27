@@ -68,13 +68,13 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 1.5,
   "load_bearing_step": "The implemented four-tier discriminator is total on grammar-valid finite streams and either identifies the unique supplied table consistent with the observations or returns an explicit ambiguity, off-family, covariance, contradiction, or malformed-port witness.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -96,6 +96,6 @@
   },
   "runner_path": "scripts/finite_proper_cubic_admission_table_discriminator_2026_07_23.py",
   "title": "Finite Proper-Cubic Admission-Table Discriminator",
-  "transitive_descendants": 0,
+  "transitive_descendants": 1,
   "verdict_rationale": "Issue: the packet clips the load-bearing runner source before the full stream-generation and verification implementation can be inspected. Why this blocks: stdout and partial source cannot establish that all claimed finite results were computed without hidden constructions or unchecked constants. Repair target: provide the complete primary runner plus the independent checker and grid evidence for an independent finite recomputation. Claim boundary until fixed: the finite discriminator result remains supported by reported tests but is not independently audit-closed."
 }

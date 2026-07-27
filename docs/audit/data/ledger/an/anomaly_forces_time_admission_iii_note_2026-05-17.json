@@ -54,7 +54,7 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": null,
+  "runner_path": "scripts/frontier_anomaly_forces_time_admission_iii_routing_correction.py",
   "title": "Anomaly-Forces-Time admission (iii) routing correction",
   "transitive_descendants": 4,
   "verdict_rationale": null

@@ -3438,6 +3438,35 @@ drive.
 ```
 
 
+### `full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24`
+
+**Note:** [docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md](../FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md)  |  **Descendants:** 17  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: The declared bounded finite-data certificate for the 128-column local M64 times seam-M2 intertwiner, 61-site semantic code, 3,907-gate nearest-neighbor word, commuting-projector certificate, and proper-cubic code-space covariance.
+
+Auditor's verdict_rationale:
+The note presents a bounded class-(A) finite algebraic certificate conditioned on supplied labels, couplings, routing word, and seam family; its exclusions of recurrence, autonomous scheduling, dynamics, and physical interpretation are named scope walls rather than no-go results. The included source appears to compute the 13 stated checks and the visible stdout tail reports 13 passes, but the authenticated current-cycle stdout begins mid-record and omits part of the load-bearing execution evidence. Because the packet explicitly flags that clipping and forbids clean ratification, the claim remains conditional on a complete authenticated runner transcript rather than failing on its scientific terms.
+
+Auditor-quoted load-bearing step:
+The executable checks all 128 decoded columns, with maximum intertwiner residual 8.40686768501364e-15.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: Re-render the restricted packet with complete byte-authenticated current-cycle stdout, or an authenticated slice containing the entire all-128 intertwiner check and terminal summary.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
 ### `lattice_symmetry_unification_decision_note`
 
 **Note:** [docs/LATTICE_SYMMETRY_UNIFICATION_DECISION_NOTE.md](../LATTICE_SYMMETRY_UNIFICATION_DECISION_NOTE.md)  |  **Descendants:** 13  |  **Class:** C
@@ -3575,35 +3604,6 @@ The runner instantiates the 3D+1 channel and three-register qubit algebra to com
 
 Auditor's repair target (canonical class + action):
 runner_artifact_issue: rerun the primary runner in a checkout containing docs/audit/data/audit_ledger.json and docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md, then refresh the recorded First Run output.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24`
-
-**Note:** [docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md](../FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md)  |  **Descendants:** 6  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: The declared bounded finite-data certificate for the 128-column local M64 times seam-M2 intertwiner, 61-site semantic code, 3,907-gate nearest-neighbor word, commuting-projector certificate, and proper-cubic code-space covariance.
-
-Auditor's verdict_rationale:
-The note presents a bounded class-(A) finite algebraic certificate conditioned on supplied labels, couplings, routing word, and seam family; its exclusions of recurrence, autonomous scheduling, dynamics, and physical interpretation are named scope walls rather than no-go results. The included source appears to compute the 13 stated checks and the visible stdout tail reports 13 passes, but the authenticated current-cycle stdout begins mid-record and omits part of the load-bearing execution evidence. Because the packet explicitly flags that clipping and forbids clean ratification, the claim remains conditional on a complete authenticated runner transcript rather than failing on its scientific terms.
-
-Auditor-quoted load-bearing step:
-The executable checks all 128 decoded columns, with maximum intertwiner residual 8.40686768501364e-15.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue: Re-render the restricted packet with complete byte-authenticated current-cycle stdout, or an authenticated slice containing the entire all-128 intertwiner check and terminal summary.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -3981,6 +3981,35 @@ The exact intertwiner system gives su3_nullity=0 and su2_nullity=1, while the cu
 
 Auditor's repair target (canonical class + action):
 runner_artifact_issue: replace the stale qualification quotation in both the source note and runner with the current axiom text, rerun the exact checks, and re-audit; any stronger physical-succession claim also needs retained closure of SUPPLIED-C3, comparability, ARROW, SUCCESSION-ORIENT, and ANOMALY-CANCEL.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `finite_proper_cubic_admission_table_discriminator_bounded_theorem_note_2026-07-23`
+
+**Note:** [docs/FINITE_PROPER_CUBIC_ADMISSION_TABLE_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-07-23.md](../FINITE_PROPER_CUBIC_ADMISSION_TABLE_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-07-23.md)  |  **Descendants:** 1  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/FINITE_PROPER_CUBIC_ADMISSION_TABLE_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-07-23.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: For the five supplied shell tables and lane-zero grammar, the four-tier discriminator is total on grammar-valid finite streams and returns the claimed identification or explicit refusal witnesses for the frozen corpus and controls.
+
+Auditor's verdict_rationale:
+Issue: the packet clips the load-bearing runner source before the full stream-generation and verification implementation can be inspected. Why this blocks: stdout and partial source cannot establish that all claimed finite results were computed without hidden constructions or unchecked constants. Repair target: provide the complete primary runner plus the independent checker and grid evidence for an independent finite recomputation. Claim boundary until fixed: the finite discriminator result remains supported by reported tests but is not independently audit-closed.
+
+Auditor-quoted load-bearing step:
+The implemented four-tier discriminator is total on grammar-valid finite streams and either identifies the unique supplied table consistent with the observations or returns an explicit ambiguity, off-family, covariance, contradiction, or malformed-port witness.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: regenerate the restricted packet with the complete source of scripts/finite_proper_cubic_admission_table_discriminator_2026_07_23.py and the independent checker/grid evidence, then rerun the audit.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -4503,35 +4532,6 @@ For the supplied finite graph/link Pauli data at periodic sizes L=3,6,7, the run
 
 Auditor's repair target (canonical class + action):
 runner_artifact_issue: provide the complete byte-authenticated current-cycle stdout for all 17 checks and re-audit the same source-complete runner packet.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `finite_proper_cubic_admission_table_discriminator_bounded_theorem_note_2026-07-23`
-
-**Note:** [docs/FINITE_PROPER_CUBIC_ADMISSION_TABLE_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-07-23.md](../FINITE_PROPER_CUBIC_ADMISSION_TABLE_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-07-23.md)  |  **Descendants:** 0  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/FINITE_PROPER_CUBIC_ADMISSION_TABLE_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-07-23.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: For the five supplied shell tables and lane-zero grammar, the four-tier discriminator is total on grammar-valid finite streams and returns the claimed identification or explicit refusal witnesses for the frozen corpus and controls.
-
-Auditor's verdict_rationale:
-Issue: the packet clips the load-bearing runner source before the full stream-generation and verification implementation can be inspected. Why this blocks: stdout and partial source cannot establish that all claimed finite results were computed without hidden constructions or unchecked constants. Repair target: provide the complete primary runner plus the independent checker and grid evidence for an independent finite recomputation. Claim boundary until fixed: the finite discriminator result remains supported by reported tests but is not independently audit-closed.
-
-Auditor-quoted load-bearing step:
-The implemented four-tier discriminator is total on grammar-valid finite streams and either identifies the unique supplied table consistent with the observations or returns an explicit ambiguity, off-family, covariance, contradiction, or malformed-port witness.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue: regenerate the restricted packet with the complete source of scripts/finite_proper_cubic_admission_table_discriminator_2026_07_23.py and the independent checker/grid evidence, then rerun the audit.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

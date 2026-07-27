@@ -12,7 +12,7 @@
   "blocker": null,
   "chain_closes": null,
   "chain_closure_explanation": null,
-  "claim_id": "full128_two_rail_fixed_law_compositional_induction_bounded_theorem_note_2026-07-24",
+  "claim_id": "physical_cycle704_fswap_endpoint_cube_bridge_cycle708_bounded_theorem_note_2026-07-26",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
@@ -24,28 +24,35 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms",
-    "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24"
+    "openreference_patchgraph_four_rail_signed_clifford_equivalence_cycle706_note_2026-07-26",
+    "literal_patchgraph_z3_m2_placement_and_fixed_controller_cycle707_bounded_theorem_note_2026-07-26"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
     "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
     "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
     "scripts/frontier_full128_code_projectors_2026_07_24.py",
     "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
     "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
-    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py"
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.087,
+  "load_bearing_score": 3.959,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "3caba3e2e27140f3e65c4bb2298738b084083ca3f68e451017430ce2657325ac",
-  "note_path": "docs/FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+  "note_hash": "602cd4f5342deb44f064001e1fbc4d8902194d8a4929473e65e295ce10c1eafd",
+  "note_path": "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [],
@@ -58,8 +65,8 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": "scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py",
-  "title": "Full128 two-rail fixed-law compositional induction",
-  "transitive_descendants": 16,
+  "runner_path": "scripts/frontier_cycle708_physical_endpoint_cube_2026_07_26.py",
+  "title": "Cycle 708 physical Cycle-704 FSWAP endpoint cube bridge",
+  "transitive_descendants": 10,
   "verdict_rationale": null
 }

@@ -113,7 +113,7 @@
   "deps": [
     "minimal_axioms"
   ],
-  "direct_in_degree": 3,
+  "direct_in_degree": 4,
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
@@ -124,7 +124,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 4.307,
+  "load_bearing_score": 6.17,
   "load_bearing_step": "The executable checks all 128 decoded columns, with maximum intertwiner residual 8.40686768501364e-15.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -148,6 +148,6 @@
   },
   "runner_path": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
   "title": "Full128 local M64 \u00d7 seam-M2 bare-frame intertwiner",
-  "transitive_descendants": 6,
+  "transitive_descendants": 17,
   "verdict_rationale": "The note presents a bounded class-(A) finite algebraic certificate conditioned on supplied labels, couplings, routing word, and seam family; its exclusions of recurrence, autonomous scheduling, dynamics, and physical interpretation are named scope walls rather than no-go results. The included source appears to compute the 13 stated checks and the visible stdout tail reports 13 passes, but the authenticated current-cycle stdout begins mid-record and omits part of the load-bearing execution evidence. Because the packet explicitly flags that clipping and forbids clean ratification, the claim remains conditional on a complete authenticated runner transcript rather than failing on its scientific terms."
 }

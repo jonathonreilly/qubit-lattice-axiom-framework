@@ -566,10 +566,13 @@ def markdown_sections(text: str) -> dict[str, str]:
     fence and heading rules follow CommonMark rather than approximating it: a
     fence closes only on the same character, at least as long as the opener and
     with nothing after it (so ```` ```python ```` inside a block is content, not
-    a closer), a backtick opener may not carry a backtick in its info string,
-    and an ATX heading may be closed by a trailing run of ``#`` (``## Exact
-    target ##`` names the section ``Exact target``). Getting any of those wrong
-    turns valid Markdown into a missing-section or target-mismatch error.
+    a closer), a backtick opener may not carry a backtick in its info string, an
+    ATX heading may be indented up to three spaces and closed by a trailing run
+    of ``#`` (``## Exact target ##`` names the section ``Exact target``), and
+    fenced lines are dropped entirely rather than folded into the enclosing
+    section -- a fence may interrupt a paragraph with no blank line, and the
+    target comparison reads a section's opening paragraph. Getting any of those
+    wrong turns valid Markdown into a missing-section or target-mismatch error.
     """
     sections: dict[str, list[str]] = {}
     order: list[str] = []
@@ -589,17 +592,22 @@ def markdown_sections(text: str) -> dict[str, str]:
             elif char == fence_char and len(run) >= fence_len and not rest.strip():
                 fence_char, fence_len = None, 0
                 delimiter = True
-        if fence_char is None and not delimiter:
-            heading = re.match(r"^##(?!#)\s+(.*?)(?:\s+#+)?\s*$", line)
-            if heading and heading.group(1).strip():
-                current = heading.group(1).strip()
-                if current not in sections:
-                    sections[current] = []
-                    order.append(current)
-                else:
-                    # Repeated heading: keep the first body, ignore the rest.
-                    current = None
-                continue
+        if delimiter or fence_char is not None:
+            # Fenced content is sample text: it neither opens a section nor
+            # belongs to one. Dropping it matters because a fence may interrupt
+            # a paragraph with no blank line, and the target comparison reads
+            # the section's opening paragraph.
+            continue
+        heading = re.match(r"^ {0,3}##(?!#)\s+(.*?)(?:\s+#+)?\s*$", line)
+        if heading and heading.group(1).strip():
+            current = heading.group(1).strip()
+            if current not in sections:
+                sections[current] = []
+                order.append(current)
+            else:
+                # Repeated heading: keep the first body, ignore the rest.
+                current = None
+            continue
         if current is not None:
             sections[current].append(line)
     return {name: "\n".join(sections[name]).strip() for name in order}

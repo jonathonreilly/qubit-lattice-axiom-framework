@@ -199,6 +199,27 @@ class ObligationReconciliationRuleTest(unittest.TestCase):
         )
         self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
 
+    def test_an_indented_heading_is_still_a_heading(self):
+        # CommonMark allows up to three leading spaces; reading them as body
+        # made a valid note report its sections missing as hard errors. Four
+        # spaces is an indented code block and must NOT become a section.
+        for indent in ("", " ", "  ", "   "):
+            note = ALIGNED_NOTE.replace("## Exact target", indent + "## Exact target")
+            self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set(), repr(indent))
+        note = ALIGNED_NOTE + "\n    ## Appendix\n"
+        self.assertNotIn("Appendix", audit_lint.markdown_sections(note))
+
+    def test_a_fence_interrupting_the_target_paragraph_is_dropped(self):
+        # A fence may interrupt a paragraph with no blank line. Folding its
+        # lines into the section made them part of the opening paragraph the
+        # target comparison reads, producing a false target_mismatch.
+        note = ALIGNED_NOTE.replace(
+            "`same` physical channel as the sprocket readout.\n",
+            "`same` physical channel as the sprocket readout.\n"
+            "```\nsample text\n```\n",
+        )
+        self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
+
     def test_live_obligation_notes_parse_to_their_four_sections(self):
         # The fence/heading rules must not change the live population's parse.
         registry = json.loads(

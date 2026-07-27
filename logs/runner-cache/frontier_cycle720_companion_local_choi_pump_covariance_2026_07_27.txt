@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_companion_local_choi_pump_covariance_2026_07_27.py
 runner_sha256: 91ec583b03dafa5af1e26b1a87de771d3f92b1908848794d4b5b32b5e170e399
-input_fingerprint_sha256: d62df421f3bb3ae67e2de8777c92aa5c51157813a766de458505c9375a82e705
+input_fingerprint_sha256: 64f4e3a4adb6a03a5c47c7641d2ef12c0475f609631ed0d0643d8bf459b8d637
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 210.59
+elapsed_sec: 304.90
 status: ok
 ----- stdout -----
 PASS all active Choi stabilizers and private corrections are signed-covariant in every retained coframe sector

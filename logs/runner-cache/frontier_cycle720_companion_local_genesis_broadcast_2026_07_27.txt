@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_companion_local_genesis_broadcast_2026_07_27.py
 runner_sha256: a6409543a2c27545c4788550fc334c5d0c3948b252a29f164a83ca6743763649
-input_fingerprint_sha256: 9ee1298328e4cb6f6df6ce2335f9caf2321cb136af92cb061915c74ff56c9c4d
+input_fingerprint_sha256: f9aab16efe37dbd819359ab022bb5799eabede741b71df1c2755d12ec462db42
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 13.62
+elapsed_sec: 17.07
 status: ok
 ----- stdout -----
 PASS all bounded controller primitives are reversible local M2 gates or permutations

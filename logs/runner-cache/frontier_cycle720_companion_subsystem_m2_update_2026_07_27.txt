@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py
 runner_sha256: 34c3b0fe14b6937010b88daf8594811fa8a6ef1741ab539b682db2429560c87d
-input_fingerprint_sha256: de2d3017e9db195987a3a47b2ecce0fdb7e3126ccedbdb83767ec56a47189b5b
+input_fingerprint_sha256: 9b93167a730d68745775bd294a6650b21fb094495de31e63fabd3be67dd559db
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 38.23
+elapsed_sec: 49.01
 status: ok
 ----- stdout -----
 PASS one R1 subsystem gauge closes 6N-1 quantum logical qubits plus parity label with no extra logical operators

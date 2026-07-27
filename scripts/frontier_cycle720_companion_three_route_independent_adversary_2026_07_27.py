@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Cycle-720 independent adversarial reconstruction of companion-code routes.
 
-This independent checker intentionally does not import the three top-level route
+This independent checker intentionally does not import the four top-level route
 runners under review.  It loads their lower-level construction modules from a
 caller-supplied checkout and independently rebuilds:
 
@@ -1303,7 +1303,6 @@ def main() -> None:
         "status": "PASS" if all(row["pass"] for row in checks) else "FAIL",
         "authority": "none",
         "audit": "unset",
-        "source_root": str(source_root),
         "declared_source_identity_sha256": source_identity,
         "top_level_blocklist": sorted(TOP_LEVEL_BLOCKLIST),
         "checks": checks,

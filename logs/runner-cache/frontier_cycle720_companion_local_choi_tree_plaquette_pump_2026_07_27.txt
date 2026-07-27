@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py
 runner_sha256: 108568254546e1f64e4454b455f4aa866fe9abfbd4a6ca3a82f65b6a29e28974
-input_fingerprint_sha256: b22ebc18bc1fee58dcbba773176405ea0ab0051b1a158310294495de17f7dd7b
+input_fingerprint_sha256: 2aecbe13a28f2d424399757f08492efb40c4f8c12b31ed4084cefc950714564d
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 152.26
+elapsed_sec: 228.42
 status: ok
 ----- stdout -----
 PASS finite local port-mask atlas derives private corrections without conflicts

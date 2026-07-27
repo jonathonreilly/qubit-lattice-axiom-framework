@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py
 runner_sha256: 6877d532aaa1c9a97358ce2dfa2e26b1264c1f5a8ef477c217e9cc5a16c8d205
-input_fingerprint_sha256: d6d3a40b743064fb9bd7e38d74640d411c8ab9b3a2fd0fd90ff2bfeae1998bbf
+input_fingerprint_sha256: b1d546cefe5c9be00475ad11fa94601beb4738dae0d45cb3772f3839d0220661
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 16.49
+elapsed_sec: 23.19
 status: ok
 ----- stdout -----
 PASS fixed parity adds one independent Choi stabilizer with a bounded corner correction and retained syndrome

@@ -183,13 +183,48 @@ def general_clifford_reduction(
     physical representation; it is not a statement about other codes/QCAs.
     """
     modes = fixture.matter_qubits
+    block_entries = modes * modes
+
+    # With B=0 and D=I, the first symplectic equation is A^T=I. Solve that
+    # affine GF(2) system explicitly instead of reporting the consequence as a
+    # literal boolean. The remaining equation is C+C^T=0; its rank must leave
+    # exactly the symmetric-matrix degrees of freedom.
+    a_equations = [
+        (1 << (row * modes + column), int(row == column))
+        for row in range(modes)
+        for column in range(modes)
+    ]
+    a_solution, a_rank, a_contradictions = C.gf2_solve(a_equations)
+    a_identity_mask = sum(1 << (index * modes + index) for index in range(modes))
+    c_equations = [
+        (
+            (1 << (row * modes + column))
+            ^ (1 << (column * modes + row)),
+            0,
+        )
+        for row in range(modes)
+        for column in range(row)
+    ]
+    _c_solution, c_rank, c_contradictions = C.gf2_solve(c_equations)
+    symmetric_variables = block_entries - c_rank
     return {
         "logical_modes": modes,
         "onsite_Z_constraints": modes,
-        "forced_block_B_zero_entries": modes * modes,
-        "forced_block_D_identity_entries": modes * modes,
-        "symplectic_consequence_A_identity": True,
-        "symplectic_consequence_C_symmetric": True,
+        "forced_block_B_zero_entries": block_entries,
+        "forced_block_D_identity_entries": block_entries,
+        "A_symplectic_equation_rank": a_rank,
+        "A_symplectic_equation_contradictions": a_contradictions,
+        "C_symmetry_equation_rank": c_rank,
+        "C_symmetry_equation_contradictions": c_contradictions,
+        "symplectic_consequence_A_identity": (
+            a_contradictions == 0
+            and a_rank == block_entries
+            and a_solution == a_identity_mask
+        ),
+        "symplectic_consequence_C_symmetric": (
+            c_contradictions == 0
+            and symmetric_variables == modes * (modes + 1) // 2
+        ),
         "remaining_general_Clifford_variables": modes * (modes + 1) // 2,
         "matches_diagonal_variable_count": (
             diagonal["symmetric_variables"] == modes * (modes + 1) // 2

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py
 runner_sha256: f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982
-input_fingerprint_sha256: 85b7bd38586bcc7488c33b118ecec7a937354ca8639f21e58ff75116170fbdd9
+input_fingerprint_sha256: 66c94597e45e4506738354dc38df9c28116d110abfc2156224df5843281546fb
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 6.18
+elapsed_sec: 7.35
 status: ok
 ----- stdout -----
 PASS three cell-local companion qubits reproduce the complete even-CAR commutator Gram without a parity query

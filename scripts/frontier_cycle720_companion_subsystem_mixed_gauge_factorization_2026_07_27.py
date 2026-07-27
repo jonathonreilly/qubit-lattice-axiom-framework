@@ -432,6 +432,31 @@ def phase_fixed_factorization(shape: tuple[int, int, int]) -> dict[str, object]:
         diagonal_changed_generators += bool(difference)
 
     canonical_rows = tuple(physical_w) + tuple(physical_v)
+    canonical_tableau_rank = C.R.F.base.gf2_rank(
+        row.symplectic(fixture.qubits) for row in canonical_rows
+    )
+    canonical_tableau_pairing_failures = sum(
+        M.symplectic(
+            physical_w[left].symplectic(fixture.qubits),
+            physical_w[right].symplectic(fixture.qubits),
+            fixture.qubits,
+        )
+        != 0
+        or M.symplectic(
+            physical_v[left].symplectic(fixture.qubits),
+            physical_v[right].symplectic(fixture.qubits),
+            fixture.qubits,
+        )
+        != 0
+        or M.symplectic(
+            physical_w[left].symplectic(fixture.qubits),
+            physical_v[right].symplectic(fixture.qubits),
+            fixture.qubits,
+        )
+        != int(left == right)
+        for left in range(fixture.qubits)
+        for right in range(fixture.qubits)
+    )
     logical_rows = (
         tuple(physical_w[:logical_count])
         + tuple(physical_v[:logical_count])
@@ -515,7 +540,16 @@ def phase_fixed_factorization(shape: tuple[int, int, int]) -> dict[str, object]:
             "relation_center_coordinate_rank": C.R.F.base.gf2_rank(
                 relation_center_use
             ),
-            "finite_box_mixed_gauge_CPTP_E_constructed": True,
+            "canonical_tableau_rank": canonical_tableau_rank,
+            "canonical_tableau_pairing_failures": (
+                canonical_tableau_pairing_failures
+            ),
+            "finite_box_mixed_gauge_CPTP_E_constructed": (
+                len(physical_w) == fixture.qubits
+                and len(physical_v) == fixture.qubits
+                and canonical_tableau_rank == 2 * fixture.qubits
+                and canonical_tableau_pairing_failures == 0
+            ),
             "factorwise_full_word_intertwiner_exact": (
                 logical_coordinate_failures == 0
                 and gauge_coordinate_failures == 0

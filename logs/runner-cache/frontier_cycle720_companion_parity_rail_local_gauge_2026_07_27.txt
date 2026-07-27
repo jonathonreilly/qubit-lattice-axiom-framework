@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_companion_parity_rail_local_gauge_2026_07_27.py
 runner_sha256: d85a0dda0004e395d9e14b891a2c2616a93295b99c256b2d3e0f19e6c3bb360a
-input_fingerprint_sha256: 42f84a788f0aa6f416d5e7bd2ae4fa20087b74849d1c7f29af30a24dcad40de4
+input_fingerprint_sha256: d92d90d4c50128cdf8be58e22a37fe674b82dfd6743b43c007454bc1884c0662
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 56.09
+elapsed_sec: 63.65
 status: ok
 ----- stdout -----
 PASS local edge equality plus cell Gauss constraints solve every actual Choi selector charge with constant cycle multiplicity

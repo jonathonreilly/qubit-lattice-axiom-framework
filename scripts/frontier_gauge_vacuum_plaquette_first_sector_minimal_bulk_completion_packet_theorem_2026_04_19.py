@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
 """
-Selected Wilson/Perron packet on the bounded zero-extension witness surface.
+Selected Wilson/Perron packet on the bounded zero-extension branch.
 
-This runner no longer treats the sibling minimal-bulk completion principle as
-a universal least-positive completion theorem.  The principle note was
-narrowed by audit to runner-tested zero-extension/witness families, with the
-universal Loewner-minimality step left open.  The checks below certify only
-the explicit packet obtained on that narrowed surface.
+The sibling principle proves that the zero extension is the unique minimal
+packet on its finite tail cone.  This runner does not infer that status from
+substrings in the sibling note; it directly checks that the selected packet
+has zero tail and then computes the explicit first-layer packet on that
+branch.
 """
 
 from __future__ import annotations
 
-from pathlib import Path
 import math
 import sys
 
 import numpy as np
 
 from frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19 import (
+    RETAINED_SUPPORT,
     retained_packet,
     zero_extension,
 )
@@ -35,8 +35,6 @@ from frontier_gauge_vacuum_plaquette_spatial_environment_character_measure impor
     matrix_exponential_symmetric,
 )
 
-
-ROOT = Path(__file__).resolve().parents[1]
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -56,19 +54,12 @@ def check(name: str, condition: bool, detail: str = "") -> bool:
     return condition
 
 
-def read(rel_path: str) -> str:
-    return (ROOT / rel_path).read_text()
-
-
-def normalized(text: str) -> str:
-    return " ".join(text.lower().split())
-
-
 def selected_transfer_and_packet() -> dict[str, np.ndarray | float]:
     rho_ret, _z00 = retained_packet()
     jmat, weights, index = build_recurrence_matrix(5)
     swap = conjugation_swap_matrix(weights, index)
     rho_ext = zero_extension(weights, index, rho_ret)
+    tail_indices = [i for i, weight in enumerate(weights) if weight not in RETAINED_SUPPORT]
     multiplier = matrix_exponential_symmetric(jmat, BETA / 2.0)
     d_local = local_factor_diagonal(weights)
     transfer = multiplier @ d_local @ np.diag(rho_ext) @ multiplier
@@ -81,6 +72,7 @@ def selected_transfer_and_packet() -> dict[str, np.ndarray | float]:
         "jmat": jmat,
         "swap": swap,
         "rho_ext": rho_ext,
+        "tail_max": float(np.max(np.abs(rho_ext[tail_indices]))),
         "transfer": transfer,
         "eig": float(eig),
         "psi": psi,
@@ -98,18 +90,8 @@ def main() -> int:
     print("=" * 118)
     print()
     print("Question:")
-    print("  What explicit Wilson/Perron first-layer packet is obtained on the narrowed")
-    print("  zero-extension/witness surface of the minimal-bulk completion principle?")
-
-    principle_note = read("docs/GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md")
-    principle_text = normalized(principle_note)
-    principle_is_bounded_witness_surface = (
-        "runner-tested witness families" in principle_text
-        and "zero-extension packet" in principle_text
-        and "universal loewner-monotonicity" in principle_text
-        and "open derivation gap" in principle_text
-        and "does not promote a new axiom" in principle_text
-    )
+    print("  What explicit Wilson/Perron first-layer packet is obtained on the")
+    print("  finite-cone zero-extension branch of the minimal-bulk principle?")
 
     pkg = selected_transfer_and_packet()
     transfer = np.asarray(pkg["transfer"], dtype=float)
@@ -129,8 +111,9 @@ def main() -> int:
     print()
 
     check(
-        "The sibling minimal-bulk completion principle is narrowed to a bounded zero-extension/witness surface and leaves universal Loewner minimality open",
-        principle_is_bounded_witness_surface,
+        "The selected finite-box packet directly has zero mass in every non-retained slot",
+        pkg["tail_max"] == 0.0,
+        f"max_abs_tail={pkg['tail_max']:.1e}",
     )
     check(
         "That selected extension yields one positive self-adjoint conjugation-symmetric factorized transfer operator",
@@ -149,7 +132,7 @@ def main() -> int:
         f"(alpha0,beta1)=({pkg['alpha0']:.6f},{pkg['beta1']:.6f})",
     )
     check(
-        "So on the narrowed zero-extension/witness surface, the Wilson-side first-layer packet is explicit",
+        "So on the finite-cone zero-extension branch, the Wilson-side first-layer packet is explicit",
         pkg["beta1"] > 0.0,
         f"(m1,m2)=({pkg['m1']:.6f},{pkg['m2']:.6f})",
     )
@@ -157,13 +140,13 @@ def main() -> int:
     print("\n" + "=" * 118)
     print("RESULT")
     print("=" * 118)
-    print("  Selected Wilson/Perron packet on the narrowed zero-extension/witness surface:")
+    print("  Selected Wilson/Perron packet on the finite-cone zero-extension branch:")
     print(f"    - alpha0 = {pkg['alpha0']:.15f}")
     print(f"    - beta1  = {pkg['beta1']:.15f}")
     print(f"    - m1     = {pkg['m1']:.15f}")
     print(f"    - m2     = {pkg['m2']:.15f}")
     print("    - this is now the explicit first-layer packet of the selected")
-    print("      factorized-class zero-extension witness branch")
+    print("      factorized-class finite-cone zero-extension branch")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1

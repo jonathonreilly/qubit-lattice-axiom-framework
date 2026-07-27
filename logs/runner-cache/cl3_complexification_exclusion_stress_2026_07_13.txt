@@ -1,107 +1,81 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_complexification_exclusion_stress_2026_07_13.py
-runner_sha256: 2c480ed92e1dd9dcd929cf0650143a6e527160c946b2148e2a9627522ec39221
+runner_sha256: 38e35f8379316f60c401b389d19db125e8060b5779339e43c80b786fe0905eb4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.33
+elapsed_sec: 2.13
 status: ok
 ----- stdout -----
 Dedicated exact exclusion stress runner
-Source: docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md
-Arithmetic: exact SymPy/stdlib; no random or floating-point checks
 
-========================================================================================
-E1: central-idempotent split and simplicity
-========================================================================================
-[PASS] E1.1 complete basis-triple associativity of the constructed 8-dim algebra | 512/512 products
-[PASS] E1.2 all defining Clifford relations hold in the multiplication table | 9/9 relations
-[PASS] E1.3 omega^2 = -1
-[PASS] E1.4 omega is central against the complete algebra basis | 8/8 basis elements
-[PASS] E1.5 e_+ and e_- are complete central orthogonal idempotents | 5/5 identities
-[PASS] E1.6 e_+ and e_- commute with the complete algebra basis | 16/16 commutators
-[PASS] E1.7 both two-sided summands have complex dimension 4 | ranks=(4,4)
-[PASS] E1.8 the two summands have zero intersection and span all 8 dimensions | combined rank=8
-[PASS] E1.9 exhaustive left/right closure of both summands | 128/128 products
-[PASS] E1.10 full commutator solve gives Z(A) = span_C{1, omega} | constraint rank=6, center dim=2
-Computed central idempotents (coefficient of 1, coefficient of omega):
-  (0, 0)
-  (1, 0)
-  (1/2, -I/2)
-  (1/2, I/2)
-[PASS] E1.11 exhaustive central-idempotent solve gives only 0, e_+, e_-, 1 | solutions=4
-[PASS] E1.12+ constructed matrix units span the e_+ summand | rank=4
-[PASS] E1.13+ all E_ab E_cd = delta_bc E_ad identities | 16/16 products
-[PASS] E1.14+ generic coefficient isolation by two-sided multiplication | 16/16 identities
-[PASS] E1.15+ no proper nonzero two-sided ideal in the e_+ summand | any nonzero coefficient generates every matrix unit
-[PASS] E1.12- constructed matrix units span the e_- summand | rank=4
-[PASS] E1.13- all E_ab E_cd = delta_bc E_ad identities | 16/16 products
-[PASS] E1.14- generic coefficient isolation by two-sided multiplication | 16/16 identities
-[PASS] E1.15- no proper nonzero two-sided ideal in the e_- summand | any nonzero coefficient generates every matrix unit
-[PASS] E1.TOTAL A = e_+A direct-sum e_-A = M2(C) direct-sum M2(C), both simple | central idempotents exhausted in the full 8-dim algebra
+=== E1: central-idempotent split and simplicity ===
+[PASS] 01 E1.1
+[PASS] 02 E1.2
+[PASS] 03 E1.3
+[PASS] 04 E1.4
+[PASS] 05 E1.5
+[PASS] 06 E1.6
+[PASS] 07 E1.7
+[PASS] 08 E1.8
+[PASS] 09 E1.9
+[PASS] 10 E1.10
+[PASS] 11 E1.11
+[PASS] 12 E1.12+
+[PASS] 13 E1.13+
+[PASS] 14 E1.14+
+[PASS] 15 E1.15+
+[PASS] 16 E1.12-
+[PASS] 17 E1.13-
+[PASS] 18 E1.14-
+[PASS] 19 E1.15-
+[PASS] 20 E1.TOTAL
 
-========================================================================================
-E2: exhaustive irreducible-module dimension
-========================================================================================
-For a simple module V, centrality makes e_+V and e_-V submodules; each action is therefore 0 or identity.
-Computed central-idempotent actions on a simple module:
-  (e_+, e_-) = (0, 1)
-  (e_+, e_-) = (1, 0)
-[PASS] E2.1 central-idempotent actions exhaust to exactly one active summand | solutions=2
-Every simple unital module is a cyclic quotient of its active regular summand; the computed minimal-left-ideal decomposition below exhausts those quotients.
-[PASS] E2.2+.1 idempotent left-ideal rank is 2 and corner rank is 1 | left rank=2, corner rank=1
-[PASS] E2.3+.1 the rank-2 left ideal is minimal | either nonzero coordinate generates the diagonal idempotent and both basis vectors
-[PASS] E2.2+.2 idempotent left-ideal rank is 2 and corner rank is 1 | left rank=2, corner rank=1
-[PASS] E2.3+.2 the rank-2 left ideal is minimal | either nonzero coordinate generates the diagonal idempotent and both basis vectors
-[PASS] E2.4+ the regular summand is the direct sum of the two rank-2 left ideals | combined rank=4
-[PASS] E2.5+ the two minimal rank-2 left ideals are explicitly isomorphic | 4/4 inverse-map identities
-[PASS] E2.6+ the e_+ summand has one simple-module class, of dimension 2 | computed from primitive-idempotent ranks and matrix-unit maps
-[PASS] E2.2-.1 idempotent left-ideal rank is 2 and corner rank is 1 | left rank=2, corner rank=1
-[PASS] E2.3-.1 the rank-2 left ideal is minimal | either nonzero coordinate generates the diagonal idempotent and both basis vectors
-[PASS] E2.2-.2 idempotent left-ideal rank is 2 and corner rank is 1 | left rank=2, corner rank=1
-[PASS] E2.3-.2 the rank-2 left ideal is minimal | either nonzero coordinate generates the diagonal idempotent and both basis vectors
-[PASS] E2.4- the regular summand is the direct sum of the two rank-2 left ideals | combined rank=4
-[PASS] E2.5- the two minimal rank-2 left ideals are explicitly isomorphic | 4/4 inverse-map identities
-[PASS] E2.6- the e_- summand has one simple-module class, of dimension 2 | computed from primitive-idempotent ranks and matrix-unit maps
-[PASS] E2.TOTAL every irreducible complex module of M2(C) direct-sum M2(C) has dimension 2 | both central actions and both summands exhausted
+=== E2: exhaustive irreducible-module dimension ===
+[PASS] 21 E2.1
+[PASS] 22 E2.2+.1
+[PASS] 23 E2.3+.1
+[PASS] 24 E2.2+.2
+[PASS] 25 E2.3+.2
+[PASS] 26 E2.4+
+[PASS] 27 E2.5+
+[PASS] 28 E2.6+
+[PASS] 29 E2.2-.1
+[PASS] 30 E2.3-.1
+[PASS] 31 E2.2-.2
+[PASS] 32 E2.3-.2
+[PASS] 33 E2.4-
+[PASS] 34 E2.5-
+[PASS] 35 E2.6-
+[PASS] 36 E2.TOTAL
 
-========================================================================================
-E3: one-dimensional exclusion and two-dimensional positive control
-========================================================================================
-SymPy solve for the complete scalar Clifford system: []
-[PASS] E3.1 exhaustive SymPy solve finds no 1x1 complex Clifford representation | solutions=0
-Groebner contradiction basis: [1]
-[PASS] E3.2 exact polynomial ideal is the unit ideal | contradiction certificate: 1 = 0
-Explicit d=1 exhaustion after x_i^2=1: tested=8, valid=[]
-[PASS] E3.3 all eight d=1 square-law candidates violate an off-diagonal relation | valid=0
-[PASS] E3.4 d=2 Pauli witness satisfies the complete Clifford system | 9/9 relations
-[PASS] E3.5 Pauli positive control has omega = i I2 and omega^2 = -I2
-[PASS] E3.TOTAL d=1 is excluded exhaustively and d=2 has an exact witness
+=== E3: one-dimensional exclusion and two-dimensional positive control ===
+[PASS] 37 E3.1
+[PASS] 38 E3.2
+[PASS] 39 E3.3
+[PASS] 40 E3.4
+[PASS] 41 E3.5
+[PASS] 42 E3.TOTAL
 
-========================================================================================
-E4: full-complexification kernel and real-algebra faithfulness boundary
-========================================================================================
-[PASS] E4.1+ pi_+ is multiplicative on every basis pair | 64/64 products
-[PASS] E4.2+ full complexified pi_+ has the opposite summand as its exact kernel | map rank=4, kernel dim=4
-[PASS] E4.3+ the 2-dim representation of the full complexified algebra is non-faithful | kernel dim=4
-[PASS] E4.4+ restriction to real Cl(3,0) is faithful | real rank=8, determinant=16
-[PASS] E4.1- pi_- is multiplicative on every basis pair | 64/64 products
-[PASS] E4.2- full complexified pi_- has the opposite summand as its exact kernel | map rank=4, kernel dim=4
-[PASS] E4.3- the 2-dim representation of the full complexified algebra is non-faithful | kernel dim=4
-[PASS] E4.4- restriction to real Cl(3,0) is faithful | real rank=8, determinant=16
-[PASS] E4.TOTAL both 2-dim full-complexification modules are non-faithful, while both real Cl(3,0) restrictions are faithful | ker(pi_+)=e_-A and ker(pi_-)=e_+A
+=== E4: full-complexification kernel and real-algebra faithfulness boundary ===
+[PASS] 43 E4.1+
+[PASS] 44 E4.2+
+[PASS] 45 E4.3+
+[PASS] 46 E4.4+
+[PASS] 47 E4.1-
+[PASS] 48 E4.2-
+[PASS] 49 E4.3-
+[PASS] 50 E4.4-
+[PASS] 51 E4.TOTAL
 
-========================================================================================
-EL: executed finite-region lattice-wide tensor extension of both exclusions
-========================================================================================
-The one-site exclusions are re-proved on real multi-site lattice tensor algebras Cl(3,0)^{tensor_R N}: a one-dimensional complex character of the lattice algebra restricts to multiplicative scalar characters per site factor, and the joint per-site scalar Clifford systems are solved exhaustively; the N=2 irreducible modules are constructed and exhausted by exact dimension count. Here lattice-wide means every nonempty finite site set: restriction to one site makes the scalar contradiction N-independent, while, for A_C := Cl(3,0) tensor_R C, tensor distributivity gives A_C^{tensor_C N} = direct-sum_{s in {+,-}^N} M_{2^N}(C), with 2^N simple modules of dimension 2^N and site-restriction multiplicity 2^(N-1). No infinite quasi-local completion or physical lattice Hilbert-space realization is asserted.
-[PASS] EL.scalar N=2: the joint per-site scalar Clifford system over the 2-site lattice algebra has no solution | unknowns=6, equations=18, solutions=0
-[PASS] EL.scalar N=3: the joint per-site scalar Clifford system over the 3-site lattice algebra has no solution | unknowns=9, equations=27, solutions=0
-[PASS] EL.module (+,+): the 4-dim two-site module is irreducible (scalar commutant), has its stated central characters, and restricts to two copies of each 2-dim site module | commutant rank=15, nullity=1; explicit per-site direct-sum intertwiners; real tensor-algebra map rank=32, kernel dim=32
-[PASS] EL.module (+,-): the 4-dim two-site module is irreducible (scalar commutant), has its stated central characters, and restricts to two copies of each 2-dim site module | commutant rank=15, nullity=1; explicit per-site direct-sum intertwiners; real tensor-algebra map rank=32, kernel dim=32
-[PASS] EL.module (-,+): the 4-dim two-site module is irreducible (scalar commutant), has its stated central characters, and restricts to two copies of each 2-dim site module | commutant rank=15, nullity=1; explicit per-site direct-sum intertwiners; real tensor-algebra map rank=32, kernel dim=32
-[PASS] EL.module (-,-): the 4-dim two-site module is irreducible (scalar commutant), has its stated central characters, and restricts to two copies of each 2-dim site module | commutant rank=15, nullity=1; explicit per-site direct-sum intertwiners; real tensor-algebra map rank=32, kernel dim=32
-[PASS] EL.exhaustion: the four central-character-distinct 4-dim modules exhaust the semisimple 64-dim two-site algebra by Artin-Wedderburn dimension count (4 x 16 = 64) | central characters=[(-1, -1), (-1, 1), (1, -1), (1, 1)]; sum of squared dimensions = 64; symbolic finite-N dimension identity 2^N(2^N)^2=8^N and N>=2 real-dimension nonfaithfulness ratio 2^(N-1)
-[PASS] EL.TOTAL lattice-wide certificates for both exclusions are executed | no finite-region lattice-wide one-dim character exists; the N-site simple dimensions are 2^N, and every N>=2 simple is nonfaithful on the real tensor algebra, with the N=2 modules and kernels constructed explicitly
+=== EL: finite-region lattice tensor extension ===
+[PASS] 52 EL.scalar N=2
+[PASS] 53 EL.scalar N=3
+[PASS] 54 EL.module (+,+)
+[PASS] 55 EL.module (+,-)
+[PASS] 56 EL.module (-,+)
+[PASS] 57 EL.module (-,-)
+[PASS] 58 EL.exhaustion
+[PASS] 59 EL.TOTAL finite-region certificates for both exclusions execute
 
 N1 MECHANISM CLASSES (distinct attack routes, live evidence above):
 mechanism_class 1: route_id=central_split route_class=algebraic_rearrangement mechanism=solve the complete center and central-idempotent algebra, then isolate matrix units in each summand; attempt=test whether an omitted central block or proper ideal supports another simple-module dimension; outcome=E1 exhausts exactly two simple M2(C) summands; honesty_marker=ATTEMPTED disposition=CLOSED
@@ -110,9 +84,7 @@ mechanism_class 3: route_id=scalar_finite_scan route_class=numerical_or_finite_c
 mechanism_class 4: route_id=faithfulness_boundary route_class=boundary_or_initial_condition mechanism=compute kernels on the full complexification and at the real-algebra restriction boundary; attempt=test whether the faithfulness wording hides an alternate full-complexification representation; outcome=E4 computes the opposite summand kernels and faithful real restrictions; honesty_marker=ATTEMPTED disposition=CLOSED
 mechanism_class 5: route_id=finite_lattice_tensor route_class=lattice_scale_or_limit mechanism=restrict finite-region tensor-algebra characters sitewise and construct the two-site tensor modules; attempt=test whether multiple lattice sites evade the one-site exclusions or change the tensor-power simple-module dimensions; outcome=EL closes the site-character route for every finite N and constructs and exhausts all N=2 blocks; honesty_marker=ATTEMPTED disposition=CLOSED
 
-========================================================================================
-N5 RESOLUTION SWEEP (per authenticated negative statement)
-========================================================================================
+=== N5 RESOLUTION SWEEP (per authenticated negative statement) ===
 Each negative statement below is swept over the five canonical resolution classes; every class is executed against a computed certificate above, including the lattice-wide tensor extension. Lines are stable for byte-for-byte citation.
 NEGATIVE STATEMENT 1: no faithful one-dimensional complex representation of Cl(3,0) exists
 per_element: [EXECUTED] each generator pair (x_i, x_j), i != j, already forces the contradiction x_i x_j = -x_j x_i with commuting scalars; the scalar Clifford system has no solution element-by-element
@@ -120,19 +92,17 @@ per_site: [EXECUTED] Cl(3,0) is the one-site real algebra; the full scalar syste
 per_mode: [EXECUTED] every irreducible module (mode) restricts to one central summand and has computed complex dimension 2, never 1
 per_block: [EXECUTED] both central-idempotent blocks e_+A and e_-A carry only the 2-dimensional simple module; no block admits a 1-dimensional faithful action
 lattice_wide: [EXECUTED] for every nonempty finite N-site tensor algebra, a unital one-dimensional representation restricts to a forbidden one-site scalar character; the N=2 and N=3 joint systems were also solved explicitly with no solutions
-[PASS] N5 sweep backed by computed certificates :: NEGATIVE STATEMENT 1: no faithful one-dimensional complex re | every executed resolution line restates a computed exclusion above
+[PASS] 60 N5.1
 NEGATIVE STATEMENT 2: no faithful irreducible complex representation of Cl(3,0) has dimension other than 2
 per_element: [EXECUTED] central idempotent actions on any simple module were solved element-wise to exactly one active summand
 per_site: [EXECUTED] at the single site, the minimal-left-ideal decomposition exhausts all simple quotients and each has dimension 2
 per_mode: [EXECUTED] every irreducible module (mode) is a quotient of its active regular summand and computes to dimension exactly 2
 per_block: [EXECUTED] each 4-dimensional simple block decomposes into two copies of the same 2-dimensional simple module; no other dimension occurs
 lattice_wide: [EXECUTED] at N=1 every faithful irreducible has dimension 2, while for every finite N>=2 the real algebra dimension 8^N exceeds the real endomorphism dimension 2*4^N by ratio 2^(N-1), so no irreducible tensor-power module can be faithful; at N=2 all four real map ranks 32 and kernel dimensions 32 were computed explicitly
-[PASS] N5 sweep backed by computed certificates :: NEGATIVE STATEMENT 2: no faithful irreducible complex repres | every executed resolution line restates a computed exclusion above
+[PASS] 61 N5.2
 
-========================================================================================
-TOTAL
-========================================================================================
-[PASS] UNIVERSAL EXCLUSION CERTIFICATE | faithful irreducible complex Cl(3,0) representations have dimension 2; d=1 is impossible
+=== TOTAL ===
+[PASS] 62 UNIVERSAL
 TOTAL: PASS=62 FAIL=0
 FLAGS: none
 

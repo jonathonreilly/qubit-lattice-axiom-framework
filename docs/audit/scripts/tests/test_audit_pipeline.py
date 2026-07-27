@@ -3189,11 +3189,18 @@ class Cl3ComplexificationIndependentN7HelperTest(unittest.TestCase):
         "scripts/"
         "cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
     )
+    LATTICE_HELPER = (
+        "scripts/"
+        "cl3_complexification_lattice_exclusion_helper_2026_07_26.py"
+    )
 
-    def test_every_packet_consumer_returns_only_the_claim_scoped_helper(self):
+    def test_packet_consumers_include_imported_and_claim_scoped_helpers(self):
         citation_graph = _import("build_citation_graph")
         packet_deps = _import_repo_script("audit_packet_script_deps.py")
-        expected = [self.HELPER]
+        expected_by_primary = {
+            self.PRIMARY: [self.LATTICE_HELPER, self.HELPER],
+            self.COMPANION: [self.HELPER],
+        }
 
         for primary in (self.PRIMARY, self.COMPANION):
             with self.subTest(primary=primary):
@@ -3201,13 +3208,13 @@ class Cl3ComplexificationIndependentN7HelperTest(unittest.TestCase):
                     citation_graph.helper_runner_paths_for_claim(
                         self.CLAIM_ID, primary
                     ),
-                    expected,
+                    expected_by_primary[primary],
                 )
                 self.assertEqual(
                     packet_deps.helper_runner_paths_for_claim(
                         self.CLAIM_ID, Path(primary).stem
                     ),
-                    expected,
+                    expected_by_primary[primary],
                 )
 
         control_claim = f"{self.CLAIM_ID}-unregistered-control"
@@ -3215,13 +3222,13 @@ class Cl3ComplexificationIndependentN7HelperTest(unittest.TestCase):
             citation_graph.helper_runner_paths_for_claim(
                 control_claim, self.PRIMARY
             ),
-            [],
+            [self.LATTICE_HELPER],
         )
         self.assertEqual(
             packet_deps.helper_runner_paths_for_claim(
                 control_claim, Path(self.PRIMARY).stem
             ),
-            [],
+            [self.LATTICE_HELPER],
         )
 
     def test_development_packet_hash_binds_source_and_authenticates_live_stdout(self):

@@ -1,0 +1,13 @@
+loop: koide-frobenius-isotype-split-repair-20260727
+goal: "Repair the failed Frobenius-uniqueness framing at its exact algebraic scope."
+actual_current_surface_status: no-go
+target_claim_type: no_go
+active_route: explicit_positive_definite_counterexample
+cycle_count: 1
+strongest_result: "B_{1,1} is positive definite, unitary-Ad-invariant, scalar/traceless orthogonal, and non-Frobenius."
+open_imports: []
+trace_class: direct_blocker_closure
+review_disposition: pass
+audit_required_before_effective_retained: true
+next_exact_action: "Submit the source note, runner, and cache to the independent audit queue."
+stop_condition: "The narrow no-go is self-contained, runner-backed, review-clean, and queue-ready."

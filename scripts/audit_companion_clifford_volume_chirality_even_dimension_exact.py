@@ -10,6 +10,10 @@ using the exact coefficient of e_(S symmetric-difference {mu}) in
 {e_S, gamma_mu}.  It solves the full system over SymPy, rather than scanning
 basis monomials one at a time.  Exact explicit-matrix calculations provide an
 independent implementation route and positive even-dimensional controls.
+
+The default report is deliberately compact so the audit lane can authenticate
+the complete live stdout without its 6,000-character transport clip.  Pass
+``--verbose`` to print every individual class-A check for human diagnostics.
 """
 
 from pathlib import Path
@@ -35,6 +39,7 @@ CLAIM_ID = "clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05
 
 PASS = 0
 FAIL = 0
+VERBOSE = "--verbose" in sys.argv[1:]
 
 
 def check(label: str, ok: bool, detail: str = "") -> None:
@@ -45,15 +50,18 @@ def check(label: str, ok: bool, detail: str = "") -> None:
     else:
         FAIL += 1
         tag = "FAIL (A)"
+    if ok and not VERBOSE:
+        return
     suffix = f"  ({detail})" if detail else ""
     print(f"  [{tag}] {label}{suffix}")
 
 
 def section(title: str) -> None:
-    print()
-    print("-" * 88)
-    print(title)
-    print("-" * 88)
+    if VERBOSE:
+        print()
+        print("-" * 88)
+        print(title)
+        print("-" * 88)
 
 
 sigma_x = Matrix([[0, 1], [1, 0]])
@@ -685,6 +693,7 @@ def main() -> int:
 
     print()
     print("=" * 88)
+    print(f"CLASS_A_TOTAL: PASS={PASS}, FAIL={FAIL}")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     print("=" * 88)
     return 0 if FAIL == 0 else 1

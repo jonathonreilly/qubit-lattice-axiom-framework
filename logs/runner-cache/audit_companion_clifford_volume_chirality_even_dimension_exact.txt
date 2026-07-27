@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_clifford_volume_chirality_even_dimension_exact.py
-runner_sha256: 552d7bd8f6086c4355df50e1a2363e4ee3e2f7a530100a14d9985d213bcf4dc9
+runner_sha256: 6d382695fbb8c50ef70bb361c28ee41fdcb35cba60e9ffcc9ed0222363ac48eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.06
+elapsed_sec: 3.56
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,92 +11,6 @@ Exact Clifford coefficient-kernel companion for
 clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10
 Goal: solve the full anticommutator system and verify the parity theorem.
 ========================================================================================
-
-----------------------------------------------------------------------------------------
-Part 1: exact Clifford matrices and the volume-element parity rule
-----------------------------------------------------------------------------------------
-  [PASS (A)] Cl(1,0) generators satisfy the exact CAR  (dim=2)
-  [PASS (A)] n=1: omega gamma_mu = (1) gamma_mu omega  (all 1 generators)
-  [PASS (A)] Cl(2,0) generators satisfy the exact CAR  (dim=2)
-  [PASS (A)] n=2: omega gamma_mu = (-1) gamma_mu omega  (all 2 generators)
-  [PASS (A)] Cl(3,0) generators satisfy the exact CAR  (dim=4)
-  [PASS (A)] n=3: omega gamma_mu = (1) gamma_mu omega  (all 3 generators)
-  [PASS (A)] Cl(4,0) generators satisfy the exact CAR  (dim=4)
-  [PASS (A)] n=4: omega gamma_mu = (-1) gamma_mu omega  (all 4 generators)
-  [PASS (A)] Cl(5,0) generators satisfy the exact CAR  (dim=8)
-  [PASS (A)] n=5: omega gamma_mu = (1) gamma_mu omega  (all 5 generators)
-  [PASS (A)] Cl(6,0) generators satisfy the exact CAR  (dim=8)
-  [PASS (A)] n=6: omega gamma_mu = (-1) gamma_mu omega  (all 6 generators)
-  [PASS (A)] Cl(7,0) generators satisfy the exact CAR  (dim=16)
-  [PASS (A)] n=7: omega gamma_mu = (1) gamma_mu omega  (all 7 generators)
-
-----------------------------------------------------------------------------------------
-Part 2: positive even-n controls and square normalization
-----------------------------------------------------------------------------------------
-  [PASS (A)] n=2: omega^2 is scalar  (c=-1)
-  [PASS (A)] n=2: gamma_5^2 = I
-  [PASS (A)] n=2: gamma_5 anticommutes with every generator
-  [PASS (A)] n=4: omega^2 is scalar  (c=1)
-  [PASS (A)] n=4: gamma_5^2 = I
-  [PASS (A)] n=4: gamma_5 anticommutes with every generator
-  [PASS (A)] n=6: omega^2 is scalar  (c=-1)
-  [PASS (A)] n=6: gamma_5^2 = I
-  [PASS (A)] n=6: gamma_5 anticommutes with every generator
-
-----------------------------------------------------------------------------------------
-Part 3: odd-n centrality and the central-invertible route
-----------------------------------------------------------------------------------------
-  [PASS (A)] n=1: omega is central
-  [PASS (A)] n=1: omega is invertible  (det=-1)
-  [PASS (A)] n=3: omega is central
-  [PASS (A)] n=3: omega is invertible  (det=1)
-  [PASS (A)] n=5: omega is central
-  [PASS (A)] n=5: omega is invertible  (det=1)
-  [PASS (A)] n=7: omega is central
-  [PASS (A)] n=7: omega is invertible  (det=1)
-
-----------------------------------------------------------------------------------------
-Part 4: structural certificate for the arbitrary-n coefficient rule
-----------------------------------------------------------------------------------------
-  [PASS (A)] coefficient is nonzero exactly when |S|-delta is even  (table={(0, 0): True, (1, 0): False, (1, 1): True, (2, 0): True, (2, 1): False, (3, 1): True})
-  [PASS (A)] S -> S symmetric-difference {mu} is a per-generator bijection/involution  (all masks at n=1..7)
-  [PASS (A)] exact coefficient sign agrees with direct matrix multiplication  (all (n,S,mu) at n=1..7)
-  [PASS (A)] signed generators realize every tested diagonal signature exactly  (42 signatures; exhaustive through n=4)
-  [PASS (A)] metric and reordering signs agree with direct signed-matrix multiplication  (all (signature,S,mu) in 42 signature cases)
-  [PASS (A)] generic odd-n witness selector constrains every Clifford coefficient  (43690 masks checked through n=15; branch proof is parity-generic)
-
-----------------------------------------------------------------------------------------
-Part 5: construct and solve the full simultaneous coefficient system
-----------------------------------------------------------------------------------------
-  [PASS (A)] n=1: full coefficient-system nullity is 0  (shape=2x2, exact nullity=0)
-  [PASS (A)] n=2: full coefficient-system nullity is 1  (shape=8x4, exact nullity=1)
-  [PASS (A)] n=2: coefficient kernel is exactly span(omega)
-  [PASS (A)] n=3: full coefficient-system nullity is 0  (shape=24x8, exact nullity=0)
-  [PASS (A)] n=4: full coefficient-system nullity is 1  (shape=64x16, exact nullity=1)
-  [PASS (A)] n=4: coefficient kernel is exactly span(omega)
-  [PASS (A)] n=5: full coefficient-system nullity is 0  (shape=160x32, exact nullity=0)
-  [PASS (A)] n=6: full coefficient-system nullity is 1  (shape=384x64, exact nullity=1)
-  [PASS (A)] n=6: coefficient kernel is exactly span(omega)
-  [PASS (A)] n=7: full coefficient-system nullity is 0  (shape=896x128, exact nullity=0)
-
-----------------------------------------------------------------------------------------
-Part 6: independent exact matrix-vectorization cross-check
-----------------------------------------------------------------------------------------
-  [PASS (A)] n=1: explicit monomials form a faithful 2^1-element span  (rank=2)
-  [PASS (A)] n=1: independent matrix route gives nullity 0  (matrix-system shape=4x2)
-  [PASS (A)] n=2: explicit monomials form a faithful 2^2-element span  (rank=4)
-  [PASS (A)] n=2: independent matrix route gives nullity 1  (matrix-system shape=8x4)
-  [PASS (A)] n=3: explicit monomials form a faithful 2^3-element span  (rank=8)
-  [PASS (A)] n=3: independent matrix route gives nullity 0  (matrix-system shape=48x8)
-  [PASS (A)] n=4: explicit monomials form a faithful 2^4-element span  (rank=16)
-  [PASS (A)] n=4: independent matrix route gives nullity 1  (matrix-system shape=64x16)
-  [PASS (A)] n=5: explicit monomials form a faithful 2^5-element span  (rank=32)
-  [PASS (A)] n=5: independent matrix route gives nullity 0  (matrix-system shape=320x32)
-
-----------------------------------------------------------------------------------------
-Part 7: live alternative routes and external-matrix steelman
-----------------------------------------------------------------------------------------
-  [PASS (A)] external ambient-matrix chirality exists but lies outside the faithful internal span  (odd n=[1, 3, 5])
   N1_ROUTE route_id=coefficient_cancellation; route_class=algebraic_rearrangement; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=arbitrary coefficient cancellation in the simultaneous anticommutator algebra; attempt=solve the exact stacked coefficient kernel rather than inspect basis vectors separately; outcome=CLOSED: odd nullity is zero and fixed-mu symmetric difference prevents cross-slot cancellation
   N1_ROUTE route_id=zero_square_normalization; route_class=normalization_or_units; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=square normalization could hide the zero element inside the common kernel; attempt=evaluate the zero coefficient vector in both anticommutation and x squared equals identity tests; outcome=CLOSED: zero anticommutes but fails square normalization, while the odd internal kernel is exactly zero
   N1_ROUTE route_id=central_volume; route_class=symmetry_or_representation; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=central invertible volume representation could permit a non-monomial internal anticommuter; attempt=check centrality and invertibility and compare x omega with omega x for every tested odd dimension; outcome=CLOSED: odd centrality plus invertibility forces every internal simultaneous anticommuter to zero
@@ -104,44 +18,11 @@ Part 7: live alternative routes and external-matrix steelman
   N1_ROUTE route_id=external_matrix_carrier; route_class=alternate_carrier_or_sector; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=an alternate ambient matrix carrier may contain chirality outside the internal Clifford algebra; attempt=construct gamma n plus one on each faithful odd-dimensional representation and test span membership; outcome=CLOSED FOR STATED SCOPE: the external operator exists and squares to identity but is outside the internal span
   N7_STEELMAN_ARGUMENT mechanism=an alternate ambient matrix carrier may contain chirality outside the internal Clifford algebra; attempt=construct gamma n plus one on each faithful odd-dimensional representation and test span membership; a hostile reviewer can therefore refute any claim about all ambient matrix operators, because a square-normalized external anticommuter exists in every tested faithful odd representation.
   N7_STEELMAN_RESOLUTION internal Clifford-algebra kernel wall resolved: faithfulness is certified before vectorized evidence is used, the external anticommuter raises the matrix-span rank and is therefore not an algebra element, and the exact internal coefficient kernel remains zero; the source makes no ambient-operator claim.
-
-----------------------------------------------------------------------------------------
-Part 8: mutation falsifiers
-----------------------------------------------------------------------------------------
-  [PASS (A)] full-kernel mutation: basis scan misses a cancelling linear combination  ([1,1] has kernel span((-1,1)) although neither basis vector is in it)
-  [PASS (A)] zero-exclusion mutation: zero solves anticommutation but fails x^2=I
-  [PASS (A)] sign mutation: dropping the (-1)^r reordering sign is rejected  (correct=-2, mutated=2)
-  [PASS (A)] metric mutation: dropping eta_mu_mu^delta is rejected  (correct=-2, mutated=2)
-  [PASS (A)] parity mutation: odd/even activation reversal is rejected  (correct=2, mutated=0)
-
-----------------------------------------------------------------------------------------
-Part 9: d_s=3 application, rhetoric resolutions, and note boundary
-----------------------------------------------------------------------------------------
-  [PASS (A)] at d_s=3, chirality-allowed d_t in [1,7] are {1,3,5,7}  (got [1, 3, 5, 7])
-  [PASS (A)] note contains: 'Clifford Volume-Element Chirality Forces Even Total Dimension Narrow Theorem'
-  [PASS (A)] note contains: 'Status authority:** independent audit lane only'
-  [PASS (A)] note contains: 'common anticommutant of all generators'
-  [PASS (A)] note contains: 'only zero lies in the common anticommutant'
-  [PASS (A)] note contains: 'S -> S symmetric-difference {mu}'
-  [PASS (A)] note contains: 'no nonzero square-normalized element'
-  [PASS (A)] note contains: 'Does **not** claim `d_t = 1`'
-  [PASS (A)] note contains: 'Forbidden imports check'
-  [PASS (A)] note avoids: 'promotes the parent to positive_theorem'
-  [PASS (A)] touched note uses no retired premise-class wording
-  [PASS (A)] N5 per_element rhetoric resolution is explicit
   N5_RESOLUTION per_element: per_element resolution tested by the exact full kernel for arbitrary internal algebra elements
-  [PASS (A)] N5 per_site rhetoric resolution is explicit
   N5_RESOLUTION per_site: per_site resolution tested as an explicit scope exclusion because no physical site realization is claimed
-  [PASS (A)] N5 per_mode rhetoric resolution is explicit
   N5_RESOLUTION per_mode: per_mode resolution tested as outside scope because the claim is only one finite Clifford algebra element
-  [PASS (A)] N5 per_block rhetoric resolution is explicit
   N5_RESOLUTION per_block: per_block resolution tested as outside scope because no block decomposition enters the theorem or runner
-  [PASS (A)] N5 lattice_wide rhetoric resolution is explicit
   N5_RESOLUTION lattice_wide: lattice_wide resolution tested as outside scope because the note excludes a physical staggered realization
-
-----------------------------------------------------------------------------------------
-Summary
-----------------------------------------------------------------------------------------
   Exact results:
     CAR and volume parity: n=1..7
     Full coefficient systems: odd nullity 0 at n=1,3,5,7;
@@ -154,6 +35,7 @@ Summary
     Mutations caught: basis-scan/full-kernel, zero, reordering, metric, and parity
 
 ========================================================================================
+CLASS_A_TOTAL: PASS=79, FAIL=0
 TOTAL: PASS=79, FAIL=0
 ========================================================================================
 

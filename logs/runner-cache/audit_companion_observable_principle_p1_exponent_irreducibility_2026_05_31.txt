@@ -1,10 +1,11 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_observable_principle_p1_exponent_irreducibility_2026_05_31.py
-runner_sha256: f9f71716117bd4782111d7dbb45aca52c6560723d793f4f0384c3440a4f9d61c
+runner_sha256: b2710984f01ff2b7e4fa83d3ff1b50b19d05eb70cb1145c3e76270efff41cb54
+input_fingerprint_sha256: ebfb1927a655a3ac1fc760f218d48ef67f078a30144d899bc45d8935310294bd
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.75
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
 ----- stdout -----
 Observable-Principle P1 exponent-fixing irreducibility — companion runner
 Reproves from primitives (exact SymPy); no fitted or observed inputs.
@@ -62,8 +63,8 @@ T6: NORMALIZED-gradient (Born) selector selects NOTHING; only the BARE-gradient 
 ==============================================================================
 T7: live-ledger context presence (no dependency status consumed)
 ==============================================================================
-  [FAIL] audit_ledger.json exists
-         Missing: /private/tmp/cl3-n5-certificates-odd-20260727/docs/audit/data/audit_ledger.json
+  [PASS] target/context rows present without status-gating the claim
+         context rows present; no dependency status consumed
 
 ==============================================================================
 T8: note honest-scope strings present; forbidden strings absent
@@ -80,7 +81,7 @@ T9: source-note boundary declarations present
          missing: []
 
 ==============================================================================
-SCORECARD: PASS=16 FAIL=1
+SCORECARD: PASS=17 FAIL=0
 ==============================================================================
 
 A passing run supports ONLY the bounded irreducibility finding: the
@@ -89,11 +90,11 @@ EXPONENT-FIXING step is P1-equivalent under every selector that fixes it
 ((Add)/(Loc)/(Pot)), and the one exponent-blind selector (normalized
 Born gradient) is too weak. It does NOT close P1, does NOT promote any
 row, and consumes no fitted or observed numerical targets.
-per_element: checked — exact determinant-versus-trace scalar tests T1-T2 executed; aggregate runner FAIL=1.
-per_site: checked — independent block perturbations in T4 were differentiated explicitly; aggregate runner FAIL=1.
-per_mode: checked — the exponent family F_p and normalized-gradient exponent blindness were evaluated in T3/T6; aggregate runner FAIL=1.
-per_block: checked — block-diagonal factorization and the (Add)/(Loc)/(Pot) equivalence tests ran symbolically; aggregate runner FAIL=1.
-lattice_wide: checked and not executed — the finite-block theorem supplies no lattice realization; the executed scope/firewall tests bind the conclusion to bounded irreducibility with PASS=16, FAIL=1.
+per_element: checked — exact determinant-versus-trace scalar tests T1-T2 executed; aggregate runner FAIL=0.
+per_site: checked — independent block perturbations in T4 were differentiated explicitly; aggregate runner FAIL=0.
+per_mode: checked — the exponent family F_p and normalized-gradient exponent blindness were evaluated in T3/T6; aggregate runner FAIL=0.
+per_block: checked — block-diagonal factorization and the (Add)/(Loc)/(Pot) equivalence tests ran symbolically; aggregate runner FAIL=0.
+lattice_wide: checked and not executed — the finite-block theorem supplies no lattice realization; the executed scope/firewall tests bind the conclusion to bounded irreducibility with PASS=17, FAIL=0.
 
 ----- stderr -----
 

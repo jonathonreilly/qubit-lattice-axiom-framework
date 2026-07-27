@@ -37,16 +37,31 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import sys
 
 import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_SCRIPTS = ROOT / "docs" / "audit" / "scripts"
+if str(AUDIT_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(AUDIT_SCRIPTS))
+
+sys.dont_write_bytecode = True
+import ledger_io
+
 NOTE = (
     ROOT
     / "docs"
     / "OBSERVABLE_PRINCIPLE_P1_BRIDGE_LOCALITY_OF_SOURCE_DERIVATIVES_NARROW_NOTE_2026-05-21.md"
 )
-LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+AUDIT_INPUT_PATHS = (
+    "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_LOCALITY_OF_SOURCE_DERIVATIVES_NARROW_NOTE_2026-05-21.md",
+    "docs/audit/scripts/ledger_io.py",
+    "docs/audit/data/ledger/st/staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16.json",
+    "docs/audit/data/ledger/cp/cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10.json",
+    "docs/audit/data/ledger/ob/observable_principle_from_axiom_note.json",
+    "docs/audit/data/ledger/ob/observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17.json",
+)
 
 PASS = 0
 FAIL = 0
@@ -69,6 +84,22 @@ def section(title: str) -> None:
     print("\n" + "=" * 78)
     print(title)
     print("=" * 78)
+
+
+def load_context_rows(claim_ids: set[str]) -> dict[str, dict]:
+    """Read the exact tracked shards consumed by the context check."""
+    if ledger_io.sharded():
+        rows = {}
+        for claim_id in claim_ids:
+            path = ledger_io.shard_path(claim_id)
+            if not path.exists():
+                continue
+            row = json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(row, dict) or row.get("claim_id") != claim_id:
+                raise ValueError(f"audit ledger shard identity mismatch: {path}")
+            rows[claim_id] = row
+        return rows
+    return ledger_io.load_ledger().get("rows", {})
 
 
 def test_T1_block_det_factorization() -> None:
@@ -301,11 +332,6 @@ def test_T5_integration_step_recovers_additivity() -> None:
 
 def test_T6_cited_dependency_ledger_status() -> None:
     section("T6: live ledger presence checks for context rows")
-    if not LEDGER_PATH.exists():
-        check("audit_ledger.json exists", False, f"Missing: {LEDGER_PATH}")
-        return
-    full = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
-    rows = full.get("rows", full)
     # This note's load-bearing result is the general calculus equivalence
     # L_partial <=> P1. The framework rows below are target/context only.
     context_rows = {
@@ -314,6 +340,7 @@ def test_T6_cited_dependency_ledger_status() -> None:
         "observable_principle_from_axiom_note",
         "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
     }
+    rows = load_context_rows(context_rows)
     ok_all = True
     mismatches = []
     for cid in sorted(context_rows):

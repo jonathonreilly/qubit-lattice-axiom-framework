@@ -79,16 +79,32 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import sys
 
 import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_SCRIPTS = ROOT / "docs" / "audit" / "scripts"
+if str(AUDIT_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(AUDIT_SCRIPTS))
+
+sys.dont_write_bytecode = True
+import ledger_io
+
 NOTE = (
     ROOT
     / "docs"
     / "OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md"
 )
-LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+AUDIT_INPUT_PATHS = (
+    "docs/OBSERVABLE_PRINCIPLE_P1_EXPONENT_FIXING_IRREDUCIBILITY_NARROW_NOTE_2026-05-31.md",
+    "docs/audit/scripts/ledger_io.py",
+    "docs/audit/data/ledger/ob/observable_principle_from_axiom_note.json",
+    "docs/audit/data/ledger/ob/observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17.json",
+    "docs/audit/data/ledger/ob/observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21.json",
+    "docs/audit/data/ledger/ob/observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28.json",
+    "docs/audit/data/ledger/ob/observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28.json",
+)
 
 PASS = 0
 FAIL = 0
@@ -111,6 +127,22 @@ def section(title: str) -> None:
     print("\n" + "=" * 78)
     print(title)
     print("=" * 78)
+
+
+def load_context_rows(claim_ids: set[str]) -> dict[str, dict]:
+    """Read the exact tracked shards consumed by the context check."""
+    if ledger_io.sharded():
+        rows = {}
+        for claim_id in claim_ids:
+            path = ledger_io.shard_path(claim_id)
+            if not path.exists():
+                continue
+            row = json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(row, dict) or row.get("claim_id") != claim_id:
+                raise ValueError(f"audit ledger shard identity mismatch: {path}")
+            rows[claim_id] = row
+        return rows
+    return ledger_io.load_ledger().get("rows", {})
 
 
 def _block_diag_det_setup():
@@ -301,11 +333,6 @@ def test_T6_normalized_gradient_is_exponent_blind() -> None:
 
 def test_T7_context_ledger_presence() -> None:
     section("T7: live-ledger context presence (no dependency status consumed)")
-    if not LEDGER_PATH.exists():
-        check("audit_ledger.json exists", False, f"Missing: {LEDGER_PATH}")
-        return
-    full = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
-    rows = full.get("rows", full)
     # The load-bearing content is the elementary SymPy equivalence Lemma; the
     # framework rows below are target/context only (status NOT gated on here).
     context_rows = {
@@ -315,6 +342,7 @@ def test_T7_context_ledger_presence() -> None:
         "observable_principle_det_unique_multiplicative_character_form_selection_narrow_theorem_note_2026-05-28",
         "observable_principle_p1p2_two_stage_synthesis_narrow_theorem_note_2026-05-28",
     }
+    rows = load_context_rows(context_rows)
     ok_all = True
     missing = []
     for cid in sorted(context_rows):

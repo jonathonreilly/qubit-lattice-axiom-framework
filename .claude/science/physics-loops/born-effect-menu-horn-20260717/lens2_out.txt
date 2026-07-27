@@ -1,0 +1,1595 @@
+2026-07-17T19:32:15.060165Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f7190-af94-73d3-babf-3733bba4ae7d
+--------
+user
+You are a READ-ONLY adversarial review lens (licensing/quotes). Do NOT create, edit, or delete any file. Do NOT touch git. Deliver your verdict as your final message only.
+
+Files to read (exactly these):
+1. docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md
+2. docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md
+3. docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+4. docs/MINIMAL_AXIOMS_2026-06-29.md
+5. docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+
+Task: verify every quotation in file 1 appears VERBATIM in its cited source; verify every characterization file 1 makes about a cited note against that note's own text (especially: what the 2026-07-04 note's H1-H4 and R1-R4 actually say; what the 2026-06-05 bridge actually proves and its (M1)-(M3); whether the 2026-05-20 extension note really routes the multi-site case through the projective Gleason companion and really assumes countable additivity). Flag any characterization stronger than the source's own wording. Also check the note's frontmatter fields are coherent (claim_id matches filename, runner path, claim_scope matches body).
+
+Output format: "VERDICT: <n> blocker(s), <m> major, <k> minor" then a numbered list with exact quotes for any mismatch. If clean, list the three most load-bearing quote/characterization checks you performed.
+
+codex
+I’ll inspect only the five specified files, without changing files or repository state.
+exec
+/bin/zsh -lc 'wc -l docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md docs/MINIMAL_AXIOMS_2026-06-29.md docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     338 docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md
+     200 docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md
+     444 docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+     193 docs/MINIMAL_AXIOMS_2026-06-29.md
+     315 docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md
+    1490 total
+
+2026-07-17T19:32:31.662133Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'nl -ba docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: born_form_effect_menu_sitewise_forcing_and_product_menu_boundary_bounded_theorem_note_2026-07-17
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional dichotomy on the menu grade of the graded-constraint hypothesis surface. Effect horn: if the assumed grading is defined on the effect algebra of a finite region with finite effect-partition menus eligible, the Born trace form is forced sitewise at every finite dimension >= 2, reproved from finite operator algebra with no literature bridge input; the landed one-site projective rogue extends to no such grading. Projective horn boundary: on a bonded pair, grading hypotheses restricted to product-projector menus do not force the trace form (constructive witness; exhaustive product-menu classification), so the landed composite route's entangled-menu strength is necessary at 2x2, not a convenience. The menu grade itself is underived; no horn is selected; the grading primitive is assumed here, not adopted."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	runner: scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py
+     8	---
+     9	
+    10	# Born Form At Effect-Menu Grade: Sitewise Forcing With No Bridge Input, And The Product-Menu Boundary On The Projective Horn
+    11	
+    12	**Date:** 2026-07-17
+    13	**Type:** bounded_theorem
+    14	**Claim type:** bounded_theorem
+    15	**Scope:** bridge-conditional; the grading hypotheses are assumed here, not
+    16	adopted, and the menu grade they are stated at is itself underived.
+    17	**Audit-status authority:** independent audit lane only. This note sets no
+    18	audit verdict and predicts none.
+    19	**Primitive status:** no primitive is approved, registered, edited, or
+    20	enlarged here. Every grading hypothesis below is conditional input only.
+    21	**Primary runner:**
+    22	[`scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py`](../scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py)
+    23	**Runner cache:**
+    24	[`logs/runner-cache/born_form_effect_menu_sitewise_forcing_2026_07_17.txt`](../logs/runner-cache/born_form_effect_menu_sitewise_forcing_2026_07_17.txt)
+    25	
+    26	## Purpose
+    27	
+    28	The landed composite bridge note
+    29	[`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+    30	fixes the form of a lawful graded constraint at projective-menu grade: its
+    31	hypotheses H1-H3 place a weight function on projections, H4 makes every
+    32	finite orthogonal resolution of a bonded-pair identity menu-eligible,
+    33	including resolutions that contain entangled projections, and the trace form
+    34	then follows through one named literature bridge input, stated there as
+    35	"Gleason's theorem is imported as named classical mathematics."
+    36	
+    37	This note isolates the menu-grade dial in that hypothesis surface and proves
+    38	one exact statement on each side of it:
+    39	
+    40	- **Effect horn.** If the same grading hypotheses are instead stated on the
+    41	  effect algebra of a finite region — weights defined on all effects, finite
+    42	  effect partitions of the identity menu-eligible — the Born trace form is
+    43	  forced already at a single site, at every finite dimension `>= 2`, by a
+    44	  five-step finite operator-algebra argument reproved here with no literature
+    45	  bridge input. The landed one-site projective rogue assignment extends to no
+    46	  grading of this kind, so the dimension-2 loophole is a feature of the
+    47	  projective grade, not of the site dimension.
+    48	- **Projective horn boundary.** On the bonded pair, the projective-grade
+    49	  hypotheses restricted to product-projector menus force nothing: a
+    50	  constructive product-form rogue normalizes every product-projector menu
+    51	  (classified exhaustively) while restricting on one site to the landed
+    52	  non-quadratic assignment. The entangled-menu strength of H4 is therefore
+    53	  necessary for the landed composite route at `2 x 2`, not a convenience.
+    54	
+    55	Neither horn is selected. The axioms supply no menus at all; which resolutions
+    56	of the identity are menus, and at which grade, is exactly the registration
+    57	content the landed note declares as H4's specification burden. This note
+    58	sharpens that burden into a two-sided exact statement and moves nothing else.
+    59	
+    60	## Authorities and Inputs
+    61	
+    62	- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+    63	  the `Z^3` nearest-neighbor lattice, the one-site `M_2(C)` possibility
+    64	  domain, and the Record sentences "Only records are readable. A readout
+    65	  value is determined by record content alone." The axioms do not supply
+    66	  probabilities, weights, menus, update rules, or record-production
+    67	  processes, and the memo's Qualification states: "These axioms state only
+    68	  their named primitive content. Further physical structure requires a
+    69	  retained derivation or bridge, or explicit approved-primitive registration,
+    70	  before use as a premise."
+    71	- [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+    72	  — the landed projective-horn route: hypotheses H1-H4, the one-site rogue
+    73	  construction R1, the composite rescue R2/R3 through the Gleason bridge
+    74	  input, and the declared specification burden. Cited as the projective-horn
+    75	  authority; its Gleason import is not used by this note's effect-horn
+    76	  results.
+    77	- [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+    78	  — the repo's reproven-from-primitives effect-representation argument on
+    79	  `M_2(C)` under hypotheses (M1)-(M3), with the explicit reconstruction
+    80	  `σ = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ]`. Theorem T1 below
+    81	  restates that five-step argument dimension-generically and the runner
+    82	  re-derives its load-bearing identities independently at dimensions 2 and 4.
+    83	- Literature comparators (never proof inputs): Busch 2003 and
+    84	  Caves-Fuchs-Manne-Renes 2004 for the effect-level representation theorem;
+    85	  Wallach 2002 for the statement that unentangled frame functions determine
+    86	  density operators only when every tensor factor has dimension at least 3.
+    87	  The `2 x 2` product-menu boundary claimed here is proved by this note's own
+    88	  constructive witness and classification, not by the comparator.
+    89	
+    90	## Hypotheses
+    91	
+    92	Let `Λ ⊂ Z^3` be a finite region, `H_Λ = ⊗_{x∈Λ} C^2`, `d = 2^{|Λ|}`, and
+    93	`E(H_Λ) = { E : 0 ≤ E ≤ 1 }` the effect algebra of the region algebra. The
+    94	landed projective-horn hypotheses H1-H3 place `w ≥ 0` on projections with
+    95	`w(0) = 0`, `w(identity) = 1`, menu-normalization on finite orthogonal
+    96	resolutions of the identity, additivity, and embedding-independence. The
+    97	effect-grade restatement assumed by the effect horn is:
+    98	
+    99	**(E1) grading exists at effect grade.** There is `w : E(H_Λ) → [0,1]` with
+   100	`w(0) = 0` and `w(1) = 1`. As at projective grade, `w` is a function of the
+   101	effect alone; the value does not depend on which eligible menu embeds it.
+   102	
+   103	**(E2) finite effect menus are eligible.** For every finite family
+   104	`{E_i} ⊂ E(H_Λ)` with `Σ_i E_i = 1`, the family is an eligible menu and
+   105	`Σ_i w(E_i) = 1`.
+   106	
+   107	E1-E2 keep the exact shape of H1-H3 with "projection" replaced by "effect"
+   108	and orthogonal resolutions replaced by finite effect partitions. They are
+   109	neither implied by nor implied-in the projective-grade hypotheses on the same
+   110	region: the domain and the menu family are both enlarged, and the enlarged
+   111	menu family is a strictly stronger normalization demand. Only finite menus
+   112	are used anywhere below; no countable-additivity clause is assumed. Whether
+   113	the physical registration supplies menus at projective grade, at effect
+   114	grade, at neither, or at some intermediate family is underived and is not
+   115	decided here.
+   116	
+   117	## Results
+   118	
+   119	**T1 (effect horn: sitewise forcing at every finite dimension, no bridge
+   120	input).** Assume E1-E2 on a finite region of dimension `d ≥ 2`. Then there is
+   121	a unique density matrix `σ` with `w(E) = Tr(σE)` for every effect `E`. The
+   122	proof is the five-step finite argument, dimension-generic:
+   123	
+   124	- **(A) Partial additivity.** For effects with `E_1 + E_2 ≤ 1`, apply E2 to
+   125	  the menus `{E_1, E_2, 1 − E_1 − E_2}` and `{E_1 + E_2, 1 − E_1 − E_2}`:
+   126	  subtracting, `w(E_1 + E_2) = w(E_1) + w(E_2)`. The two-outcome menu
+   127	  `{E, 1 − E}` gives the complement law `w(E) + w(1 − E) = 1`.
+   128	- **(B) Homogeneity.** Iterating (A) on the `(r+1)`-outcome menu
+   129	  `{E/r, ..., E/r, 1 − E}` gives `w(E/r) = w(E)/r` and then `w(qE) = q w(E)`
+   130	  for rational `q ∈ [0,1]`. Monotonicity follows from (A): if `E ≤ F` then
+   131	  `F − E` is an effect and `w(F) = w(E) + w(F − E) ≥ w(E)`. For real
+   132	  `t ∈ [0,1]` and rationals `q_1 < t < q_2`, the operator inequalities
+   133	  `q_1 E ≤ tE ≤ q_2 E` then squeeze `w(tE)` between `q_1 w(E)` and
+   134	  `q_2 w(E)`, so `w(tE) = t w(E)`.
+   135	- **(C) Linear extension.** `Herm(M_d)` is a real vector space of dimension
+   136	  `d^2` spanned by effects (the normalized identity-plus-generator elements
+   137	  `(1 + B_k)/2` and `1` itself). Additivity plus homogeneity on the positive
+   138	  cone extend `w` to a well-defined real-linear functional `F` on
+   139	  `Herm(M_d)`: scale any positive `A` into the effect interval, set
+   140	  `F(A) = s·w(A/s)` for `s` dominating the top eigenvalue (well-defined by
+   141	  homogeneity), and define `F` on differences; the standard two-sided
+   142	  cancellation argument shows representation-independence.
+   143	- **(D) Trace representation.** The trace pairing `⟨X,Y⟩ = Tr(XY)` is a
+   144	  nondegenerate real inner product on `Herm(M_d)`, so `F(H) = Tr(σH)` for a
+   145	  unique Hermitian `σ`, reconstructed linearly from the `d^2` basis values of
+   146	  `w`. At `d = 2` this is exactly the landed display
+   147	  `σ = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ]`.
+   148	- **(E) State property.** `w(1) = 1` gives `Tr σ = 1`; for every unit vector
+   149	  `ψ` the rank-1 projector is an effect, so `⟨ψ|σ|ψ⟩ = w(P_ψ) ≥ 0`, hence
+   150	  `σ ≥ 0`.
+   151	
+   152	No step uses `d ≥ 3`, a composite, a projective frame-function analysis, or
+   153	any literature theorem. The runner re-derives the load-bearing identities of
+   154	every step exactly at `d = 2` and `d = 4`.
+   155	
+   156	**T2 (effect horn: the landed rogue extends to no effect-grade grading).**
+   157	The landed R1 assignment `g` — the lexicographic hemisphere rule on one-site
+   158	rank-1 projections, which satisfies the projective-grade hypotheses on
+   159	one-site binary menus — extends to no `w` satisfying E1-E2 on a single site.
+   160	By T1 any such `w` is a trace form; every `2 x 2` trace form is affine in the
+   161	Bloch direction, and the landed exact three-direction contradiction
+   162	(`g(e_x) = g(e_z) = 1` with `g(1) = 1` forces the value `1/2` at
+   163	`(e_x − e_z)/√2`, where `g` assigns `0`) refutes every trace-form
+   164	restriction. The landed note's sentence "Three directions plus normalization
+   165	refute every `2x2` trace form at once" is reused unchanged; what is new is
+   166	the direction of use: at effect grade the refutation kills the rogue rather
+   167	than the forcing, at one site, with no composite and no bridge input.
+   168	
+   169	**T3 (projective horn boundary: product-projector menus force nothing on the
+   170	bonded pair).** Work on a bonded nearest-neighbor pair, `d = 4`, at
+   171	projective grade, but with menus restricted to product-projector resolutions:
+   172	finite families of nonzero projectors of the form `A ⊗ B` (`A`, `B` one-site
+   173	projectors) summing to the pair identity. Then:
+   174	
+   175	- **(T3a) Classification.** Every product-projector menu is a tree menu: up
+   176	  to swapping the two sites, it is `{1}`, or `{P(a)⊗1, P(−a)⊗1}`, or
+   177	  `{P(a)⊗1, P(−a)⊗P(d), P(−a)⊗P(−d)}`, or
+   178	  `{P(a)⊗P(b), P(a)⊗P(−b), P(−a)⊗P(b'), P(−a)⊗P(−b')}` — a first-site split
+   179	  refined branchwise on the second site, or the site-swapped form. The proof
+   180	  is a finite case analysis from two exact facts: one-site rank-1 projectors
+   181	  are orthogonal exactly when their Bloch directions are antipodal, and
+   182	  `(P(a)⊗P(b)) ⊥ (P(c)⊗P(d))` exactly when `a·c = −1` or `b·d = −1`. Three
+   183	  pairwise-orthogonal rank-1 products cannot share one first-site direction
+   184	  (three mutually antipodal second-site directions are impossible), a rank-3
+   185	  complement is never a product projector (product-projector ranks on the
+   186	  pair are 1, 2, 4), and a rank-1 product below `P(−a)⊗1` must carry first
+   187	  slot `−a` (a rank-1 projector lies below a projector exactly when their
+   188	  overlap trace is 1, and `Tr(P(−a)P(c)) = (1 − a·c)/2 = 1` forces
+   189	  `c = −a`). The runner gates each fact and each case branch exactly.
+   190	- **(T3b) Constructive rogue.** Define `W` on product projectors by the
+   191	  product rule `W(A ⊗ B) = g_1(A) · g_2(B)`, with `g_1`, `g_2` lexicographic
+   192	  hemisphere rules and `g_i(1) = 1`, `g_i(0) = 0`. Using
+   193	  `g_i(n) + g_i(−n) = 1` (which the hemisphere rule satisfies exactly,
+   194	  including on its tie set), `W` sums to 1 on every tree menu of either
+   195	  rooting, hence on every product-projector menu by T3a. Its one-site
+   196	  restriction `W(A ⊗ 1) = g_1(A)` is the landed rogue, which by the
+   197	  three-direction contradiction is no trace form; since
+   198	  `E ↦ Tr(ρ(E ⊗ 1))` is trace-affine for every pair state `ρ`, no density
+   199	  matrix on the pair represents `W`.
+   200	- **(T3c) Consequence.** At `2 x 2`, projective-grade hypotheses whose menu
+   201	  family contains only product-projector resolutions do not force the Born
+   202	  form. The landed composite route's H4 clause — menu-eligibility for
+   203	  resolutions "that contain entangled projections", with the landed
+   204	  refutation-seat finding "Without this full projection-measure strength a
+   205	  partial menu assignment is not a frame function and Gleason does not
+   206	  apply" — is therefore necessary at `2 x 2`, not a strengthening of
+   207	  convenience. This agrees with the comparator statement (Wallach 2002) that
+   208	  unentangled frame functions determine density operators only when every
+   209	  factor has dimension at least 3; the `2 x 2` case claimed here is proved
+   210	  natively by T3a-T3b. Entangled projections are not products (the runner
+   211	  gates a Bell-projector Schmidt-rank witness), and `W` assigns them no
+   212	  value, so T3 is consistent with, and does not touch, the landed R2/R3
+   213	  forcing under full H4 strength.
+   214	
+   215	**T4 (the menu grade is the dial, and the attribution moves).** T1-T3
+   216	together relocate the landed dimension-2 loophole: it is not a fact about the
+   217	site, it is a fact about the projective grade. On the effect horn the form is
+   218	fixed sitewise and the nearest-neighbor lattice pays for nothing in the
+   219	form-fixing step — composites matter there only for values (joint states and
+   220	their conditioning), which remain underived. On the projective horn the
+   221	lattice composite plus full entangled-menu strength plus the Gleason bridge
+   222	input remain exactly what the landed note says they are, and T3 shows the
+   223	entangled-menu clause cannot be weakened to product menus at `2 x 2`. The
+   224	landed attribution sentence "adjacency alone pays for nothing here without
+   225	H4's strength" is thereby sharpened in both directions: with effect menus,
+   226	adjacency is not needed for the form; with product-projective menus,
+   227	adjacency plus the bridge input still do not suffice. Which grade the
+   228	physical registration supplies is an exact open binary of the declared
+   229	specification burden; this note registers it and selects nothing.
+   230	
+   231	**T5 (zero-information limit at a finite-group premise, effect horn).**
+   232	Under the additional named premise that `w` is invariant under conjugation by
+   233	the three one-site Pauli unitaries — a finite group, strictly weaker than the
+   234	landed R4 premise of invariance under every unitary automorphism — the
+   235	reconstruction of T1 forces `σ = 1/2` at one site: invariance transfers to
+   236	`σ` by uniqueness, and the only `2 x 2` Hermitian commuting with all three
+   237	Pauli conjugations is scalar. Weights are then uniform on binary menus,
+   238	consistent with the landed uniform-on-orbits results. This premise is named
+   239	here and not derived; "no conditioning records" alone does not supply it.
+   240	
+   241	## Relation To The Landed Effect-Level Surface
+   242	
+   243	The finite-region statement of
+   244	[`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+   245	reaches the same trace-form conclusion on `E(H_Λ)`, but its landed
+   246	derivation routes the `|Λ| ≥ 2` case through the projective companion
+   247	[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md),
+   248	which imports Gleason's projective theorem as named standard mathematics,
+   249	and it assumes countable additivity. T1 differs on exactly those two
+   250	surfaces: the five-step argument is dimension-generic on the effect algebra,
+   251	so no projective import enters at any `|Λ|`, and only finite menus are
+   252	assumed. The legacy chain
+   253	[`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`](BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md)
+   254	carries separate inductive-limit and identification inputs that this note
+   255	does not use and does not discharge. The orientation memo
+   256	[`GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md`](GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md)
+   257	is cited for orientation and scope discipline only and carries no premise
+   258	weight here.
+   259	
+   260	## No-Go Discipline Gate
+   261	
+   262	T3 is a bounded negative boundary ("product-projector menus force nothing at
+   263	`2 x 2`"), so the negative-claim checklist is answered for it:
+   264	
+   265	- **N1 route inventory (five routes against T3):** (1) coarse rank-2 product
+   266	  menus added — ATTEMPTED, the rogue normalizes them (T3a covers ranks 1, 2,
+   267	  4); (2) non-tree product menus that might constrain further — RULED OUT by
+   268	  the T3a classification; (3) countable product-projector partitions — a
+   269	  finite-dimensional identity admits at most `d` nonzero mutually orthogonal
+   270	  projectors, so countable adds nothing at `d = 4`; (4) menus mixing
+   271	  projective structure with non-projective effects (classical mixtures of
+   272	  projective menus and other intermediate families) — OUTSIDE T3's scope by
+   273	  construction and named untested; the comparator literature suggests such
+   274	  families can force the form already at one site, which is exactly why T3
+   275	  is scoped to product-projector resolutions only; (5) larger regions
+   276	  (`2 x 2 x 2` product menus) — untested here; the comparator statement says
+   277	  qubit factors never suffice, but no native claim is made beyond the bonded
+   278	  pair.
+   279	- **N2 wall independence:** T3 names one wall (product-menu insufficiency at
+   280	  `2 x 2`); no second wall is presented.
+   281	- **N3 hidden-wall scan:** T3 assumes the projective-grade hypotheses of the
+   282	  landed note restricted to a smaller menu family; the restriction is the
+   283	  claim, not a hidden condition. The tie-set convention inside the hemisphere
+   284	  rule is inherited verbatim from the landed R1 construction and gated.
+   285	- **N4 residual matching:** the only cited prior negative is the landed R1
+   286	  rogue existence, reused at the same resolution (one-site binary menus and
+   287	  their product refinements).
+   288	- **N5 rhetoric audit:** the phrase "force nothing" is scoped to the stated
+   289	  menu family on the stated pair; T3c states the exact family and dimension.
+   290	- **N6 partial-closure scan:** the closure path is named, not denied — full
+   291	  H4 strength (landed) or effect-grade menus (T1); T3 forecloses neither.
+   292	- **N7 steelman:** "product menus are the physically natural family, so T3
+   293	  kills the projective horn." Reply: T3 proves insufficiency of that family,
+   294	  not naturalness; which family the registration supplies is exactly the
+   295	  declared open binary, and the landed composite route under full H4
+   296	  strength is untouched.
+   297	- **N8 cross-cycle echo:** the structurally similar prior wall — one-site
+   298	  dimension-2 rogue existence — was retired on the composite by H4 strength
+   299	  (landed R3) and is retired sitewise at effect grade by T2 here; both
+   300	  mechanisms are cited, and neither retires T3's product-menu wall.
+   301	
+   302	## Non-Claims
+   303	
+   304	- Does **not** claim any grading exists, at any grade; E1-E2 and the
+   305	  projective-grade hypotheses are conditional input only.
+   306	- Does **not** select a menu grade, register or modify any primitive, or
+   307	  derive menu-eligibility from the axioms; the axioms supply no menus.
+   308	- Does **not** derive weight values, record conditioning, rates, dynamics,
+   309	  update rules, orientation, or scale.
+   310	- Does **not** touch the landed composite route's conclusions under full H4
+   311	  strength, and does **not** re-prove or use Gleason's projective theorem.
+   312	- Does **not** set an audit verdict or close the probability wall; landing is
+   313	  not ratification, and independent audit remains required.
+   314	
+   315	## Verification
+   316	
+   317	The primary runner re-derives every load-bearing identity exactly (sympy,
+   318	rational/symbolic arithmetic, single process, dimensions 2 and 4 only):
+   319	the menu bookkeeping behind (A) and (B) as formal linear elimination; the
+   320	effect-cone witnesses (including a noncommuting pair); the monotonicity and
+   321	squeeze inequalities on exact witnesses with a non-monotone rejector; the
+   322	`d = 2` and `d = 4` effect bases with nondegenerate trace Gram matrices; the
+   323	reconstruction identity `w(E) = Tr(σE)` on symbolic effects, matching the
+   324	landed Bloch display at `d = 2`; the state property; the exact
+   325	three-direction refutation of every `2 x 2` trace form and its T2 corollary
+   326	logic; the antipodal-orthogonality and product-orthogonality lemmas; each
+   327	case branch of the T3a classification (including the three-antipodal
+   328	impossibility, the rank-3 non-product fact, and the below-`P(−a)⊗1`
+   329	forcing); the hemisphere complement law including tie-set witnesses; the
+   330	product-rogue normalization on both tree rootings and coarse menus; the
+   331	trace-affinity of pair-state restrictions; the Bell-projector Schmidt-rank
+   332	witness; the Pauli-commutant computation behind T5; and needle checks that
+   333	pin the quoted sentences of the axiom memo and the two landed notes named
+   334	above. Mutation checks (one load-bearing mutation per check family,
+   335	reverted) are recorded in the review history and PR body.
+   336	
+   337	Measured runner total after final verification:
+   338	`TOTAL: PASS=54 FAIL=0`.
+
+2026-07-17T19:32:35.886808Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'nl -ba docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional: if a lawful graded record-conditioned constraint exists and exposes full neighbor-composite projection menus, Gleason's theorem forces Born trace form on the composite and therefore on single-site restrictions. The grading primitive and entangled-menu eligibility are assumed here, not adopted."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	bridge_inputs:
+     8	  - gleason_theorem_1957
+     9	runner: scripts/born_form_composite_gleason_bridge_2026_07_04.py
+    10	---
+    11	
+    12	# Born Form From Lawful Graded Constraint via Composite Gleason (Bridge Note)
+    13	
+    14	**Date:** 2026-07-04
+    15	**Type:** bounded_theorem
+    16	**Claim type:** bounded_theorem
+    17	**Scope:** bridge-conditional; the grading primitive and entangled-menu
+    18	eligibility are assumed here, not adopted.
+    19	**Audit-status authority:** independent audit lane only. This note sets no audit
+    20	verdict and predicts none.
+    21	**Primitive status:** no primitive is approved, registered, edited, or enlarged
+    22	here. The graded-constraint premise is conditional input only.
+    23	**Primary runner:**
+    24	[`scripts/born_form_composite_gleason_bridge_2026_07_04.py`](../scripts/born_form_composite_gleason_bridge_2026_07_04.py)
+    25	**Runner cache:**
+    26	[`logs/runner-cache/born_form_composite_gleason_bridge_2026_07_04.txt`](../logs/runner-cache/born_form_composite_gleason_bridge_2026_07_04.txt)
+    27	
+    28	## Purpose
+    29	
+    30	The landed framework supplies a `Z^3` nearest-neighbor lattice, one-site
+    31	possibility algebra `M_2(C)`, local admissibility by nearest-neighbor
+    32	conditions, and Record content: Records form.; when present, a record locks
+    33	exactly one admissible local possibility, records are permanent, one site
+    34	carries at most one record, only records are readable, and finite scalar readout
+    35	is additive over disjoint records. Those axioms do not supply probabilities,
+    36	weights, dynamics, update rules, or record-production processes.
+    37	
+    38	This note isolates one conditional mathematical point in the graded-constraint
+    39	program: if record influence on possibility menus is lawfully graded, and if
+    40	the local lattice structure exposes the full projection lattice of a neighbor
+    41	composite, then the form of that grading is forced. The note does not claim that
+    42	the grading primitive exists.
+    43	
+    44	## Authorities and Inputs
+    45	
+    46	- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+    47	  the `Z^3` nearest-neighbor lattice, one-site `M_2(C)` possibility domain,
+    48	  local admissibility by nearest-neighbor conditions, and Record sentences used
+    49	  above. These axioms do not supply probabilities, weights, dynamics, update
+    50	  rules, or record-production processes.
+    51	- Gleason's theorem (1957) — named bridge input only; this note uses the
+    52	  dimension `>= 3` trace-form consequence and does not re-prove the theorem.
+    53	
+    54	## Bridge Input
+    55	
+    56	**Bridge input:** Gleason's theorem (1957) - every non-negative frame function
+    57	on the projection lattice of a Hilbert space of dimension >= 3 has the form
+    58	`w(P) = Tr(rho P)` for a density operator `rho`.
+    59	
+    60	This is cited as classical mathematics, not re-proved. The framework-specific
+    61	content is the lattice/composite use of that bridge: a one-site `M_2(C)` surface
+    62	has the usual dimension-2 loophole, while a nearest-neighbor bonded pair has
+    63	`M_2 tensor M_2 = M_4`, so the composite is inside Gleason's dimension range.
+    64	
+    65	## Hypotheses
+    66	
+    67	**H1 (grading exists).** There is a weight function `w >= 0` defined on every
+    68	projection of the relevant algebra, with `w(0) = 0` and `w(identity) = 1`, and
+    69	with menu-normalization `sum_i w(P_i) = 1` on every eligible menu (finite
+    70	orthogonal resolution of the identity). This is the candidate primitive: it is
+    71	assumed here, not claimed, derived, approved, or registered.
+    72	
+    73	**H2 (additivity).** For orthogonal projections `P` and `Q`, the grading is
+    74	additive: `w(P + Q) = w(P) + w(Q)`.
+    75	
+    76	**H3 (non-contextuality).** The value `w(P)` does not depend on which admissible
+    77	menu embeds `P`.
+    78	
+    79	**H4 (composite menus realized).** Menus range over neighbor-composite
+    80	algebras: a bonded nearest-neighbor pair carries `M_2 tensor M_2 = M_4`, `w` is
+    81	defined on the full projection lattice of the composite, and every finite
+    82	orthogonal resolution of the composite identity - including resolutions that
+    83	contain entangled projections - is menu-eligible, so H2 applies to all
+    84	orthogonal pairs in `Proj(M_4)`. Without this full projection-measure strength
+    85	a partial menu assignment is not a frame function and Gleason does not apply
+    86	(refutation-seat finding, 2026-07-04).
+    87	
+    88	H4 is a substantive physical hypothesis, not axiom content. The minimal axioms
+    89	supply site-local possibility domains with neighbor-dependent availability -
+    90	not a pair-level possibility domain, not bonded-pair selection, not
+    91	configuration-independent menu eligibility, and not records that lock composite
+    92	entangled possibilities. Any registration of the graded-constraint primitive
+    93	must therefore specify: which neighbor pairs carry composite menus; whether
+    94	eligibility depends on the record configuration; how pair menus coexist with
+    95	site-local admissibility; and in what sense entangled projections are
+    96	alternatives. Those four items are the registration's specification burden,
+    97	declared here rather than hidden.
+    98	
+    99	## Results
+   100	
+   101	**R1 (single-site exception, constructive).** On one `M_2(C)` site alone,
+   102	H1-H3 do not force the Born form. Rank-1 one-site projections are indexed by
+   103	Bloch directions `n`, with binary menus `{P(n), P(-n)}`. Any assignment
+   104	`g(n) >= 0` with `g(n) + g(-n) = 1` is a normalized frame function on those
+   105	menus. A non-quadratic example is the hemisphere/sign rule used by the runner:
+   106	`g(n)=1` when `(n_z,n_y,n_x)` is lexicographically positive and `g(n)=0`
+   107	otherwise, with the equator made well-defined by the same lexicographic tie
+   108	rule. It normalizes every antipodal menu and is non-contextual on the one-site
+   109	binary menus, and it extends to rank `0` and rank `2` by `g(0) = 0`,
+   110	`g(I) = 1`. Its non-quadraticity is exact, not merely sampled: any trace form
+   111	is affine in the Bloch direction, so `g(e_x) = g(e_z) = 1` with `g(I) = 1`
+   112	forces the value `1/2` at the direction `(e_x - e_z)/sqrt(2)`, while the
+   113	lexicographic rule assigns `0` there. Three directions plus normalization
+   114	refute every `2x2` trace form at once; the sampled least-squares fit is kept
+   115	only as a secondary bound and control.
+   116	
+   117	**R2 (composite rescue).** A bonded neighbor pair has Hilbert dimension `4`,
+   118	which is `>= 3`, so Gleason applies to any `w` satisfying H1-H4 on the pair.
+   119	There is a density operator `rho` on the pair such that `w(E) = Tr(rho E)` for
+   120	composite projections `E`. For embedded single-site projections this gives
+   121	`w(P tensor I) = Tr(rho (P tensor I)) = Tr(rho_1 P)`, where `rho_1` is the
+   122	partial trace over the neighbor. Thus the single-site restriction is quadratic:
+   123	it has Born form. The value of `rho` is determined by conditioning, here by
+   124	records, but this note does not derive those values.
+   125	
+   126	**R3 (exception voided).** The R1 rogue functions do not extend to any grading
+   127	that satisfies H1-H4 on the neighbor composite. If such an extension existed,
+   128	R2 would force the embedded single-site restriction to have the quadratic Born
+   129	form `Tr(rho_1 P)`, contradicting the explicit non-quadratic R1 assignment. The
+   130	nearest-neighbor lattice is what makes a composite available; H4's full
+   131	composite projection measure is what voids the dimension-2 loophole. The
+   132	attribution matters: adjacency alone pays for nothing here without H4's
+   133	strength.
+   134	
+   135	**R4 (zero-information limit).** Under an explicit additional premise -
+   136	invariance of `w` under every unitary automorphism of the composite, whose
+   137	commutant is scalar - `rho = I/d` follows. This full-symmetry premise is named
+   138	here; it is not derived from H1-H4 or from the minimal axioms, and "no
+   139	conditioning records" alone does not supply it. Under it, weights are uniform
+   140	on symmetric menus: `1/2` on embedded one-site rank-1 binary alternatives in a
+   141	pair, and `1/4` on the Bell-basis rank-1 composite menu. This is consistent
+   142	with the landed uniform-on-orbits results and adds no new selection claim.
+   143	
+   144	## No-Go Discipline Gate
+   145	
+   146	- **N1 route inventory:** direct one-site Gleason is unavailable in dimension
+   147	  `2`; imposing H1-H3 alone leaves the constructive rogue `g`; using the
+   148	  neighbor composite invokes an explicit bridge input plus H4; deriving grading
+   149	  values from records is downstream and not attempted.
+   150	- **N2 primitive boundary:** H1 is the candidate primitive. The note assumes it
+   151	  only to determine form; it does not approve, register, rename, or strengthen
+   152	  any primitive.
+   153	- **N3 hidden-wall scan:** H4 does not smuggle dynamics - no rates, histories,
+   154	  updates, transition kernels, Hamiltonians, or record-production. It DOES
+   155	  import pair-level menu ontology beyond the minimal axioms (pair possibility
+   156	  domain, entangled alternatives, eligibility structure); that import is
+   157	  declared inside H4 as the registration's specification burden rather than
+   158	  hidden.
+   159	- **N4 bridge-source honesty:** Gleason's theorem is imported as named
+   160	  classical mathematics. The runner checks the finite-dimensional consequences
+   161	  used here; it does not pretend to re-prove Gleason.
+   162	- **N5 steelman:** "This is just textbook Gleason." Reply: the bridge input is
+   163	  textbook, but the framework content is R1/R3 plus H4's declared specification
+   164	  burden - one `M_2(C)` site admits rogue frame functions, and the neighbor
+   165	  composite is where H4's projection-measure strength voids the loophole.
+   166	- **N6 hidden-value scan:** The theorem fixes form, not values. Record
+   167	  conditioning of `rho`, if admitted anywhere, is downstream content outside
+   168	  this note.
+   169	- **N7 scope guard:** The note does not touch orientation, scale, rate, time,
+   170	  readout-context selection, record production, or physical persistence. It is
+   171	  only a conditional bridge about menu weights.
+   172	- **N8 audit hygiene:** No audit verdict is set, forecast, or implied; no axiom
+   173	  or primitive file is changed; no claim is made that H4 follows from the
+   174	  minimal axioms.
+   175	
+   176	## Non-Claims
+   177	
+   178	- Does **not** claim H1, the graded-constraint primitive, is approved or exists.
+   179	- Does **not** derive weight values; record-conditioning of `rho` is downstream.
+   180	- Does **not** touch orientation, rate, scale, record production, dynamics,
+   181	  update rules, or persistence.
+   182	- Does **not** set an audit verdict or close a wall.
+   183	- Does **not** re-prove Gleason's theorem; Gleason is the named bridge input.
+   184	
+   185	## Verification
+   186	
+   187	The companion runner is a mechanical harness, not the proof: the load-bearing
+   188	steps are the named bridge input and the exact R1 contradiction. It performs
+   189	needle checks against the note and the minimal axiom memo; constructs the R1
+   190	rogue frame function and verifies the exact three-direction contradiction
+   191	against every `2x2` trace form, keeping the sampled least-squares
+   192	Hermitian-trace-form fit (a superset of Born density forms) as a secondary
+   193	bound with a Born-form control; verifies partial-trace bookkeeping identities
+   194	for product, Bell, and maximally mixed states (implementation checks, not R2
+   195	evidence); checks embedded and Bell menu normalization; checks the maximally
+   196	mixed consequences for the separately-premised R4 limit; and exercises
+   197	additivity and non-contextuality rejectors. R3 is carried as a corollary of
+   198	the bridge input plus the exact R1 contradiction, and the runner labels it so.
+   199	
+   200	Measured runner total after final verification: `TOTAL: PASS=24 FAIL=0`.
+
+2026-07-17T19:32:41.490469Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'nl -ba docs/BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	# Busch / CFMR Effect-Valued (POVM) Gleason Theorem On The Qubit `M_2(C)` — Reproven-From-Primitives Authority Bridge Narrow Theorem Note
+     2	
+     3	**Date:** 2026-06-05
+     4	**Claim type:** bounded_theorem
+     5	**Type:** bounded_theorem
+     6	**Status authority:** independent audit lane only. This source note does not set
+     7	or predict an audit outcome; later status is generated by the audit pipeline
+     8	after independent review. The `bounded_theorem` label is a source-side
+     9	claim-boundary declaration, not an audit verdict.
+    10	**Primary runner:**
+    11	[`scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py`](../scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py)
+    12	**Cached log:**
+    13	[`logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt`](../logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt)
+    14	
+    15	## Claim
+    16	
+    17	The parent narrow theorem
+    18	`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`
+    19	concludes `m(E) = Tr(σ · E)` on the qubit-lattice effect algebra
+    20	`E(H_Λ) = { E ∈ M_{2^|Λ|}(C) : 0 ≤ E ≤ 𝟙 }`, but it imports **by name** the
+    21	load-bearing mathematical content — the Busch 2003 / Caves–Fuchs–Manne–Renes 2004
+    22	effect-valued (POVM) Gleason theorem. The audit row
+    23	`busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20` is
+    24	`audited_conditional` with the verbatim repair item: *"missing_dependency_edge:
+    25	add the Busch 2003/CFMR 2004 theorem authority or a retained standard-math import
+    26	node to the restricted packet, with the exact hypotheses matching the note's
+    27	POVM-additivity assumptions."* The auditor's rationale records that the named
+    28	theorem "is not included as a cited authority in full, so the audit cannot verify
+    29	the theorem from the permitted inputs." This note supplies that authority on the
+    30	load-bearing single-site case, reproven from finite operator-algebra primitives
+    31	on `M_2(C)`.
+    32	
+    33	> **Claim (the effect-Gleason representation `m(E) = Tr(σ · E)` is forced on the
+    34	> qubit `M_2(C)`, with hypotheses matched verbatim to the parent's
+    35	> POVM-additivity assumptions).** Let `A_x ≅ M_2(C)` be the per-site qubit
+    36	> operator algebra of the Quantum axiom, with effect algebra
+    37	> `E(M_2) = { E ∈ M_2(C) : 0 ≤ E ≤ 𝟙 }`. Let `m : E(M_2) → [0,1]` satisfy the
+    38	> parent note's POVM-additivity assumptions, restated verbatim:
+    39	>
+    40	> - **(M1)** `m(0) = 0`;
+    41	> - **(M2)** `m(𝟙) = 1`;
+    42	> - **(M3)** σ-additivity over POVM partitions: for any POVM `{E_i}` with
+    43	>   `Σ_i E_i = 𝟙`, `Σ_i m(E_i) = 1`.
+    44	>
+    45	> Then there is a **unique density matrix** `σ ∈ M_2(C)` (`σ = σ†`, `σ ≥ 0`,
+    46	> `Tr σ = 1`) with `m(E) = Tr(σ · E)` for every `E ∈ E(M_2)`. Explicitly, with
+    47	> `P_a^+ = (𝟙 + σ_a)/2` the `+1` eigenprojector of the Pauli `σ_a`,
+    48	>
+    49	> > `σ = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ]`,
+    50	>
+    51	> reconstructed from `m`'s values on a basis of `Herm(M_2)` without reference to
+    52	> any pre-chosen `σ`.
+    53	>
+    54	> The load-bearing direction is reproven from primitives in five steps, each
+    55	> checked at exact (sympy, rational) and machine (numpy) precision:
+    56	>
+    57	> - **(A) Additivity on effects.** (M1)–(M3) give the partial-additivity law
+    58	>   `m(E_1 + E_2) = m(E_1) + m(E_2)` whenever `E_1 + E_2 ≤ 𝟙`: apply (M3) to the
+    59	>   3-outcome POVM `{E_1, E_2, 𝟙 − E_1 − E_2}` and the complement law
+    60	>   `m(E) + m(𝟙 − E) = 1` (the 2-outcome POVM `{E, 𝟙 − E}`).
+    61	> - **(B) Additivity + boundedness ⟹ linearity on effects.** Partial additivity
+    62	>   forces `m(qE) = q m(E)` for rational `q ∈ [0,1]` with `qE` an effect; the
+    63	>   bound `0 ≤ m ≤ 1` (a Cauchy functional equation on the bounded effect cone)
+    64	>   upgrades this to real homogeneity `m(tE) = t m(E)`, `t ∈ [0,1]`.
+    65	> - **(C) Linear extension to `Herm(M_2)`.** `Herm(M_2)` is the 4-dim **real**
+    66	>   vector space with basis `{𝟙, σ_x, σ_y, σ_z}`. Every Hermitian `H` is a real
+    67	>   combination of effects (shift/scale into the cone); (A),(B) define a unique
+    68	>   **real-linear** functional `F` on `Herm(M_2)` with `F(E) = m(E)` on effects,
+    69	>   fixed by its four basis values.
+    70	> - **(D) Riesz / trace form.** A real-linear functional on `Herm(M_2)` (a real
+    71	>   Hilbert space under `⟨X,Y⟩ = Tr(XY)`) is `F(H) = Tr(σ · H)` for a **unique**
+    72	>   Hermitian `σ`, given by the displayed Bloch reconstruction.
+    73	> - **(E) `σ` is a state.** `m(𝟙) = 1 ⟹ Tr σ = 1`; `m ≥ 0` on every rank-1
+    74	>   projector `P_ψ = |ψ⟩⟨ψ|` (an effect) gives `⟨ψ|σ|ψ⟩ ≥ 0` for all `|ψ⟩`, i.e.
+    75	>   `σ ≥ 0`. Hence `σ` is a density matrix.
+    76	
+    77	This note closes **only** the bounded authority-bridge question named in the
+    78	repair item, for the load-bearing single-site (`dim H = 2`) case (and, as a
+    79	non-coincidence cross-check, the two-site `dim H = 4` case). It does **not**
+    80	retag or set a terminal status for the parent row, and it does **not** discharge
+    81	the parent's other admitted inputs (the quasi-local inductive-limit state
+    82	theorem, the no-extra-structure pre-record identification, or the rest of the
+    83	Born derivation chain). See §6 and §8.
+    84	
+    85	## 0. Honest framing up front
+    86	
+    87	The parent note is explicit that it "does not re-prove Busch's theorem from
+    88	scratch" and applies it as named standard mathematical-physics content. The
+    89	auditor accepted the qubit-on-`Z^3` axiom authority but flagged that the
+    90	load-bearing step — the POVM-additive representation theorem for all complex
+    91	Hilbert spaces with `dim ≥ 2` — was present only as a literature name, so the
+    92	restricted packet could not verify the theorem from its permitted inputs.
+    93	
+    94	This note takes the reprove-from-primitives route for the **load-bearing
+    95	direction on the qubit** (`dim H = 2`): given an additive, nonnegative,
+    96	normalized effect-functional `m` on `E(M_2)` with exactly the parent's (M1)–(M3)
+    97	hypotheses, `m(E) = Tr(σ · E)` is **forced**, with `σ` a unique density matrix.
+    98	The contribution is **not** a new mechanism: the effect-valued Gleason theorem is
+    99	exactly the textbook Busch 2003 / CFMR 2004 result. The contribution is that the
+   100	qubit case is **derived inside `M_2(C)` from the effect/POVM/density primitives**,
+   101	so the parent's named import is discharged to standard mathematics the companion
+   102	runner checks at exact and machine precision, rather than left as a bare
+   103	admission. The literature is cited as a **comparator**, never as a derivation
+   104	input.
+   105	
+   106	The bridge is also shown to be **dimension-2-specific in the right way**: the
+   107	projective (Gleason) frame-function constraint `m(P) + m(P^⊥) = 1` alone does
+   108	**not** fix `σ` on `dim 2` — a non-affine Bloch frame function satisfies it — yet
+   109	the POVM-additive constraint (M3) over a genuine 3-outcome qubit POVM **does**.
+   110	This is precisely why Busch's effect-valued theorem reaches `dim 2` where
+   111	Gleason's projective theorem cannot, which is the gap the parent note invokes its
+   112	import to fill.
+   113	
+   114	## 1. Setup and primitives
+   115	
+   116	By the Quantum axiom ([`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md),
+   117	§"Quantum"), the per-site operator algebra is `A_x ≅ M_2(C)`. The same axiom
+   118	states it supplies no Born rule and no physical-observable bridge; the
+   119	effect-functional representation `m(E) = Tr(σ · E)` is exactly such standard
+   120	measurement-theory structure and must be earned, which is what this note does for
+   121	the qubit. The parent's lattice/operator-algebra setting `H_Λ = ⊗_x C²`,
+   122	`A_Λ = ⊗_x M_2(C) ≅ M_{2^|Λ|}(C)` is the Lattice + Quantum content; the
+   123	load-bearing case the auditor highlighted is the single site `|Λ| = 1`,
+   124	`dim H = 2`. The bridge statements are finite-linear-algebraic, so it suffices to
+   125	verify them on `M_2(C)` (and, to rule out a `d = 2` coincidence, on
+   126	`M_2(C) ⊗ M_2(C) ≅ M_4(C)`).
+   127	
+   128	The primitives, all standard on `M_d(C)`:
+   129	
+   130	- an **effect** `E`: `E = E†`, `0 ≤ E ≤ 𝟙` (a POVM element);
+   131	- a **POVM** `{E_i}`: effects with `Σ_i E_i = 𝟙`;
+   132	- a **state** `σ`: `σ = σ†`, `σ ≥ 0`, `Tr σ = 1` (a density operator);
+   133	- a **POVM-additive probability measure** `m : E(M_d) → [0,1]` satisfying
+   134	  (M1)–(M3) above — the object the parent note's Busch import is about;
+   135	- the real inner product `⟨X,Y⟩ = Tr(XY)` on `Herm(M_d)` (the Hilbert–Schmidt /
+   136	  Frobenius product), under which `{𝟙, σ_x, σ_y, σ_z}` (and its tensor-string
+   137	  generalization) is an orthogonal basis with `Tr(B_a B_b) = d δ_{ab}`.
+   138	
+   139	## 2. Load-bearing step (A) — additivity on effects from (M1)–(M3)
+   140	
+   141	The complement law and partial additivity follow from the parent's exact
+   142	hypotheses:
+   143	
+   144	```text
+   145	two-outcome POVM {E, 𝟙 − E}:  m(E) + m(𝟙 − E) = 1            (complement law)
+   146	three-outcome POVM {E_1, E_2, 𝟙 − E_1 − E_2} (valid when E_1 + E_2 ≤ 𝟙):
+   147	                              m(E_1) + m(E_2) + m(𝟙 − E_1 − E_2) = 1.
+   148	```
+   149	
+   150	Subtracting, and using the complement law on `E_1 + E_2`
+   151	(`m(𝟙 − (E_1+E_2)) = 1 − m(E_1+E_2)`):
+   152	
+   153	```text
+   154	m(E_1 + E_2) = m(E_1) + m(E_2)        whenever E_1 + E_2 ≤ 𝟙.   (partial additivity)
+   155	```
+   156	
+   157	This is the effect-algebra additivity law. The runner reproves the complement law
+   158	and partial additivity exactly on a rational qubit instance (`Part 0`) and
+   159	numerically over 2000 admissible effect pairs on `M_2` (`Part 3`, residuals
+   160	`~10⁻¹⁶`).
+   161	
+   162	## 3. Load-bearing steps (B),(C) — linearity and the real-linear extension
+   163	
+   164	**(B) Homogeneity.** Iterating partial additivity gives `m(nE) = n m(E)` whenever
+   165	`nE ≤ 𝟙` (integer `n`), hence `m((p/q)E) = (p/q) m(E)` for rationals
+   166	`p/q ∈ [0,1]` with `(p/q)E` an effect. The bound `0 ≤ m ≤ 1` makes `t ↦ m(tE)`
+   167	monotone and bounded on `[0,1]`, so the rational homogeneity extends to all real
+   168	`t ∈ [0,1]`: `m(tE) = t m(E)` (the standard Cauchy-on-a-bounded-domain upgrade).
+   169	The runner reproves rational homogeneity exactly (`Part 0`, `q = 1/2, 1/3, 3/7`)
+   170	and real homogeneity numerically over 1000 seeds (`Part 4`, residuals `~10⁻¹⁶`).
+   171	
+   172	**(C) Real-linear extension to `Herm(M_2)`.** `Herm(M_2)` is the **real** 4-dim
+   173	space spanned by `{𝟙, σ_x, σ_y, σ_z}`. Any Hermitian `H` can be written
+   174	`H = c_0 𝟙 + c · σ`; choosing a real `α > 0` and `β` so that `αH + β𝟙` lies in
+   175	the effect cone, (A)+(B) determine `m(αH + β𝟙) = α F(H) + β m(𝟙)`, which defines
+   176	a single real-linear functional `F` on `Herm(M_2)` agreeing with `m` on effects.
+   177	`F` is fixed by its four values `F(𝟙), F(σ_x), F(σ_y), F(σ_z)`; equivalently,
+   178	`F(σ_a) = 2 m(P_a^+) − 1` since `σ_a = 2P_a^+ − 𝟙` and `F(𝟙) = m(𝟙) = 1`. The
+   179	runner evaluates `F` on the basis using only effect-cone values of `m`
+   180	(`reconstruct_sigma_from_effect_functional`, used throughout).
+   181	
+   182	## 4. Load-bearing steps (D),(E) — Riesz/trace form and that `σ` is a state
+   183	
+   184	**(D) Riesz / trace form.** On the real Hilbert space `(Herm(M_2), ⟨·,·⟩)` with
+   185	`⟨X,Y⟩ = Tr(XY)`, every real-linear functional `F` is represented by a unique
+   186	`σ ∈ Herm(M_2)` via `F(H) = Tr(σ H) = ⟨σ, H⟩`. Expanding `σ` in the orthogonal
+   187	basis (`Tr(B_a B_b) = 2 δ_{ab}` on `M_2`):
+   188	
+   189	```text
+   190	σ = (1/2) Σ_a F(B_a) B_a
+   191	  = ½[ F(𝟙) 𝟙 + Σ_{a} (2 m(P_a^+) − 1) σ_a ]
+   192	  = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ].
+   193	```
+   194	
+   195	The runner reproves the basis orthogonality `Tr(B_a B_b) = d δ_{ab}` on `M_2` and
+   196	`M_4` (`Part 7`), and reconstructs `σ` from `m` **blind** to any pre-chosen
+   197	operator, verifying `σ_reconstructed = σ_true` exactly on a rational qubit
+   198	instance (`Part 0`) and numerically over 400 random qubit measures (`Part 1`,
+   199	residuals `~10⁻¹⁶`). Uniqueness is immediate from the orthogonal expansion.
+   200	
+   201	**(E) `σ` is a density matrix.** Normalization (M2) gives
+   202	`Tr σ = ⟨σ, 𝟙⟩ = F(𝟙) = m(𝟙) = 1`. Nonnegativity: for any unit `|ψ⟩`, the rank-1
+   203	projector `P_ψ = |ψ⟩⟨ψ|` is an effect, and `m(P_ψ) = Tr(σ P_ψ) = ⟨ψ|σ|ψ⟩ ≥ 0`
+   204	by (M1)–(M3)-nonnegativity (`m ≥ 0`); since this holds for all `|ψ⟩`, `σ ≥ 0`.
+   205	The runner confirms `m(P_ψ) ≥ 0` on random rank-1 projectors and that the
+   206	reconstructed `σ` has nonnegative spectrum (`Part 5`), and that the induced
+   207	measure satisfies (M1)–(M3) on random POVMs with `n = 2,3,4` outcomes
+   208	(`Part 2`).
+   209	
+   210	Combining (A)–(E): `m(E) = Tr(σ · E)` on `E(M_2)` with `σ` a unique density
+   211	matrix. This is the Busch / CFMR effect-Gleason representation, reproven on the
+   212	qubit from primitives — the load-bearing direction the parent imported by name.
+   213	
+   214	## 5. Test plan / runner
+   215	
+   216	The companion runner
+   217	[`scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py`](../scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py)
+   218	with cached output
+   219	[`logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt`](../logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt)
+   220	verifies the following, **40 PASS / 0 FAIL** (exact sympy on a rational qubit
+   221	instance, machine-precision numpy on `M_2` and `M_2 ⊗ M_2`):
+   222	
+   223	- **Part 0 (exact, `d = 2`):** rational state `σ_true` (Bloch `|r| = 1/2`); the
+   224	  hypotheses (M1) `m(0)=0`, (M2) `m(𝟙)=1`; blind reconstruction
+   225	  `σ = ½[𝟙 + Σ_a (2m(P_a^+)−1)σ_a]` equals `σ_true` exactly; `m(E)=Tr(σ E)` on a
+   226	  rational non-Pauli effect; partial additivity (A); complement law; rational
+   227	  homogeneity (B); and POVM-additivity (M3) over an exact 3-outcome qubit POVM.
+   228	- **Part 1 (numeric `d = 2`, 400 seeds):** blind `σ_reconstructed = σ_true`,
+   229	  reconstructed `σ` is a valid state, and `m(E)=Tr(σ E)` on random effects.
+   230	- **Part 2 (numeric `d = 2`, 300 seeds):** the reconstructed measure satisfies
+   231	  (M1), (M2), (M3) over random POVMs (`n = 2,3,4`), with each `m(E_i) ∈ [0,1]`.
+   232	- **Part 3 (numeric `d = 2`, 2000 seeds):** partial additivity
+   233	  `m(E_1+E_2)=m(E_1)+m(E_2)` on admissible pairs and the complement law (A).
+   234	- **Part 4 (numeric `d = 2`, 1000 seeds):** real homogeneity `m(tE)=t m(E)` (B).
+   235	- **Part 5 (numeric `d = 2`, 400 seeds):** `m(P_ψ)=⟨ψ|σ|ψ⟩ ≥ 0` on random rank-1
+   236	  projectors and reconstructed `σ ≥ 0` (E).
+   237	- **Part 6 (numeric `d = 4 = 2·2`, 200 seeds):** the same blind reconstruction on
+   238	  `M_2 ⊗ M_2` — `σ_reconstructed = σ_true`, valid state, `m(E)=Tr(σ E)`, (M3) —
+   239	  confirming the bridge is not a `d = 2` coincidence and matches the parent's
+   240	  `|Λ| ≥ 1`.
+   241	- **Part 7 (numeric `d = 2, 4`):** Hermitian Pauli(-string) basis is Hermitian
+   242	  and orthogonal `Tr(B_a B_b) = d δ_{ab}` (the genuine Riesz expansion, D).
+   243	- **Part 8 (numeric `d = 2`, guard):** a non-affine Bloch frame function
+   244	  `g(n) = ½ + ½ n_z³` satisfies the projective constraint `g(n)+g(−n)=1` yet is
+   245	  not of the trace form `(1+r·n)/2`, and **violates** POVM-additivity on the
+   246	  trine POVM (`sum = 1.25 ≠ 1`), while the trace form obeys it — so (M3) selects
+   247	  the trace form where the projective constraint alone underdetermines it.
+   248	
+   249	## 6. What this does NOT claim
+   250	
+   251	This note is deliberately narrow. It does **not**:
+   252	
+   253	- **Reprove the effect-Gleason theorem in full generality.** It reproves the
+   254	  **load-bearing direction on the qubit `M_2(C)`** (and the two-site `M_4`
+   255	  cross-check) — the single-site case the auditor flagged as the gap Gleason's
+   256	  projective theorem cannot cover. The general all-dimensions Busch 2003 / CFMR
+   257	  2004 theorem is cited as the standard authority/comparator; the higher-`|Λ|`
+   258	  cases are not individually reproven here (they are covered by the cited theorem
+   259	  and, for `|Λ| ≥ 2`, also by the projective Gleason route).
+   260	- **Derive *why* probabilities are trace pairings** from the framework axioms.
+   261	  The Quantum axiom is explicit that it supplies no Born rule; this bridge shows
+   262	  that *given* the POVM-additivity hypotheses (M1)–(M3) on effects, the trace form
+   263	  is forced on the qubit. The deeper question of motivating (M1)–(M3) themselves
+   264	  is the parent's separate standard-probability-axioms input, out of scope here.
+   265	- **Promote, demote, retag, or set the audit status** of the parent row, the
+   266	  minimal-axioms node, or any cited row. All status is set by the independent
+   267	  audit lane.
+   268	- **Discharge the parent's other admissions.** The quasi-local inductive-limit
+   269	  state theorem on `A = ⊗_x M_2(C)`, the no-extra-structure pre-record
+   270	  identification (`σ = ρ_ref`), and the remaining Born derivation chain each
+   271	  remain separate admissions of the parent and its siblings (see "What this does
+   272	  not close" in the parent note).
+   273	- **Introduce any new axiom, primitive, repo vocabulary, or class tag**, and it
+   274	  consumes no fitted/PDG/lattice-MC/`g_bare`/`β=6` value.
+   275	
+   276	## 7. Bounded-Wall Discipline Gate (N1–N8)
+   277	
+   278	**Status:** PASS for the bounded authority-bridge claim only. The claim is not
+   279	"the effect-Gleason theorem is reproven in all dimensions" and not "the Born rule
+   280	is derived from the axioms." It is: the named Busch 2003 / CFMR 2004 effect-valued
+   281	Gleason representation `m(E) = Tr(σ · E)` is reproven on the qubit `M_2(C)` from
+   282	the effect/POVM/density primitives, with the parent's (M1)–(M3) hypotheses matched
+   283	verbatim and `σ` a unique density matrix.
+   284	
+   285	### N1 — Alternative route enumeration
+   286	
+   287	| route | what it would attempt | result for this scoped claim | marker |
+   288	|---|---|---|---|
+   289	| Reprove-from-primitives (this note) | Derive `m(E)=Tr(σE)` on `M_2` from (M1)–(M3) + effect/density primitives. | Succeeds: exact `d=2` + numeric `d=2,4`, 40/0. | ADOPTED |
+   290	| Projective Gleason on `dim 2` | Fix `σ` from `m(P)+m(P^⊥)=1` alone. | Insufficient: a non-affine Bloch frame function satisfies it (`Part 8`). | RULED OUT |
+   291	| Retained standard-math import node | Add a ledger node asserting Busch/CFMR as fact. | Busch/CFMR is standard math; reproven from primitives and cited as comparator instead (repo discipline). | NOT TAKEN |
+   292	| Full all-dimensions reproof | Reprove the effect-Gleason theorem for every `dim ≥ 2`. | Out of scope as a load-bearing input; the flagged gap is the qubit case. | DEFERRED |
+   293	| Born-from-axioms route | Derive the trace pairing from the Quantum axiom. | Separate parent import (standard probability axioms / Gleason–Busch); not this bridge. | OUT OF SCOPE |
+   294	
+   295	### N2 — Wall-independence audit
+   296	
+   297	The bridge rests on finite operator-algebra primitives only: effects, POVMs,
+   298	density operators, the trace functional, and the Hilbert–Schmidt inner product.
+   299	Each load-bearing step ((A) additivity, (B) homogeneity, (C) real-linear
+   300	extension, (D) Riesz/trace form, (E) `σ ≥ 0`, `Tr σ = 1`) is an independent
+   301	finite-linear-algebra statement reproven in its own runner block. None depends on
+   302	a fitted number, a continuum limit, or a downstream theory consequence.
+   303	
+   304	### N3 — Hidden-wall scan
+   305	
+   306	The explicit hypotheses are exactly the parent's: (M1) `m(0)=0`, (M2) `m(𝟙)=1`,
+   307	(M3) POVM-additivity over `Σ_i E_i = 𝟙`, and `m : E(M_2) → [0,1]` (nonnegativity
+   308	and boundedness). The only mathematics used beyond these is finite-dimensional
+   309	linear algebra (basis expansion, Riesz representation on a finite-dim real Hilbert
+   310	space). No hidden continuity, separability, or normalization assumption beyond the
+   311	stated ones enters; the carrier dimension is finite (`M_2`, `M_4`), exactly the
+   312	framework's per-site/region setting.
+   313	
+   314	### N4 — Residual matching
+   315	
+   316	| cited witness | residual it attacks | residual here | match? |
+   317	|---|---|---|---|
+   318	| parent import (Busch/CFMR effect-Gleason) | named POVM-additive representation theorem | reproven `m(E)=Tr(σE)` on `M_2` from primitives | yes |
+   319	| parent (M1)–(M3) probability axioms | the POVM-additivity hypotheses | restated verbatim and used as the hypotheses | yes |
+   320	| parent "dim-2 single-site case" | the case Gleason's projective theorem cannot supply | reproven on `M_2`; dim-2 guard (`Part 8`) | yes |
+   321	| parent quasi-local inductive-limit step | finite-region → UHF normal state | not this bridge (context only) | no |
+   322	| pre-record reference state (`σ = ρ_ref`) | identification of `σ` | not this bridge (context only) | no |
+   323	
+   324	### N5 — Rhetoric audit
+   325	
+   326	"Reproven from primitives" means the algebra is checked from the
+   327	effect/POVM/density definitions on `M_2(C)` (and `M_4`) in the runner; it does
+   328	**not** mean the all-dimensions effect-Gleason theorem, the (M1)–(M3) axioms, or
+   329	the Born rule are derived from the framework axioms. "Authority bridge" means the
+   330	named import's load-bearing qubit direction is supplied as reproven-plus-cited
+   331	standard mathematics on this source surface; it does **not** assert any parent-row
+   332	status change.
+   333	
+   334	### N6 — Partial-closure path scan
+   335	
+   336	No new axiom or primitive is proposed. The legitimate further-closure path is the
+   337	parent's *other* admissions (the quasi-local inductive-limit state theorem, the
+   338	pre-record identification, the rest of the Born chain), each handled separately.
+   339	This bridge discharges only the missing-dependency-edge item — the qubit
+   340	load-bearing direction of the effect-Gleason theorem — to standard mathematics.
+   341	
+   342	### N7 — Steelman
+   343	
+   344	The strongest objection is that reproving the qubit case is not the same as
+   345	reproving the effect-Gleason theorem for all `dim ≥ 2`, so a reviewer could insist
+   346	the parent still "imports" the higher-dimensional content. The response is
+   347	bounded: the auditor's flagged gap is precisely the **single-site `dim H = 2`
+   348	case** — the one Gleason's projective theorem cannot supply and that the parent
+   349	adds Busch to cover — and that case is now reproven from primitives (exact + 400
+   350	numeric seeds), with a `d = 4` cross-check confirming it is not a `d = 2`
+   351	artifact. The all-dimensions theorem remains a named comparator (Busch 2003 / CFMR
+   352	2004), not a load-bearing input on this surface; the parent's higher-`|Λ|` cases
+   353	also enjoy the independent projective Gleason route for `|Λ| ≥ 2`.
+   354	
+   355	### N8 — Cross-cycle echo
+   356	
+   357	This mirrors the reprove-from-primitives + cite pattern used for the Lüders
+   358	sequential-effect composition and the form-selection / phase-blindness notes: a
+   359	standard-math object the parent imported by name is reproven from the framework's
+   360	finite operator-algebra primitives in a companion runner and cited to the
+   361	literature only as a comparator, leaving the genuinely separate admissions (here
+   362	the quasi-local inductive limit and the pre-record identification) untouched and
+   363	unmerged.
+   364	
+   365	## 8. Re-audit case for the target row
+   366	
+   367	Supplying this reproven-from-primitives authority bridge for the qubit
+   368	load-bearing direction of the Busch 2003 / CFMR 2004 effect-Gleason theorem
+   369	addresses the verbatim repair item on
+   370	`busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20`
+   371	(*"add the Busch 2003/CFMR 2004 theorem authority ... with the exact hypotheses
+   372	matching the note's POVM-additivity assumptions"*). The hypotheses (M1)–(M3) are
+   373	matched verbatim to the parent's assumptions; the load-bearing representation
+   374	`m(E) = Tr(σ · E)` on the single-site `dim H = 2` carrier — the case the auditor
+   375	flagged as not verifiable from the named import — is now reproven inside `M_2(C)`
+   376	(exact rational instance + 400 numeric seeds, plus a `M_4` cross-check, 40/0) and
+   377	cited to the literature as comparator only. The bounded re-audit **case** is that
+   378	the missing-dependency-edge for the load-bearing qubit theorem is closed to
+   379	standard mathematics on this source surface; the parent's remaining content (the
+   380	quasi-local inductive-limit state theorem, the pre-record identification, and the
+   381	rest of the Born chain) is unchanged and separately admitted. The audit lane is
+   382	the sole authority for any parent-row status or chain classification; this note
+   383	makes the case, it does not set or predict the status.
+   384	
+   385	## 9. Dependencies and citations
+   386	
+   387	**Dependency surfaces:**
+   388	
+   389	- The Quantum-axiom carrier `A_x ≅ M_2(C)` on which the bridge is reproven:
+   390	  [`MINIMAL_AXIOMS_2026-06-05.md`](MINIMAL_AXIOMS_2026-06-05.md) (registered
+   391	  `minimal_axioms` axiom node; chain-satisfies, does not bound).
+   392	
+   393	**External mathematics (named inline as comparator, NOT as a derivation input;
+   394	the runner reproves the algebra from primitives):**
+   395	
+   396	- P. Busch, *Quantum States and Generalized Observables: A Simple Proof of
+   397	  Gleason's Theorem*, Phys. Rev. Lett. **91**, 120403 (2003) — the effect-valued
+   398	  (POVM) Gleason theorem; holds at `dim 2`.
+   399	- C. M. Caves, C. A. Fuchs, K. K. Manne, J. M. Renes, *Gleason-Type Derivations
+   400	  of the Quantum Probability Rule for Generalized Measurements*, Found. Phys.
+   401	  **34**, 193 (2004) — the refined/clarified effect-Gleason proof.
+   402	- A. M. Gleason, *Measures on the Closed Subspaces of a Hilbert Space*, J. Math.
+   403	  Mech. **6**, 885 (1957) — the original projective theorem (`dim ≥ 3`); the
+   404	  `dim 2` gap this note's `Part 8` guard exhibits.
+   405	- Finite-dimensional Riesz representation of a linear functional on the real
+   406	  Hilbert space `(Herm(M_d), ⟨X,Y⟩ = Tr(XY))` — textbook linear algebra.
+   407	
+   408	**See-also (non-load-bearing, backticked to avoid citation-graph edges; the
+   409	target row and conditional/unaudited notes are intentionally not markdown
+   410	links):**
+   411	`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md` (the
+   412	parent row this bridge supports),
+   413	`BUSCH_POVM_EXTENSION_DEPS_CHANGED_HYGIENE_COMPANION_NOTE_2026-06-04.md` (prior
+   414	Record-axiom-invariance companion for the same parent),
+   415	`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` (downstream consumer
+   416	in the Born derivation chain),
+   417	`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`
+   418	(companion projective-Gleason candidate for `|Λ| ≥ 2`),
+   419	`LUDERS_SEQUENTIAL_EFFECT_COMPOSITION_PEP_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`
+   420	(parallel reprove-from-primitives bridge for a different named import of the same
+   421	measurement-theory family).
+   422	
+   423	### Source-note boundary
+   424	
+   425	**Hypothesis set used:** (1) the per-site qubit carrier `A_x ≅ M_2(C)` and the
+   426	two-site carrier `M_4(C)` (Quantum axiom; chain-satisfies); (2) `m : E(M_2) →
+   427	[0,1]` is an additive, nonnegative, normalized effect-functional with the parent's
+   428	exact POVM-additivity assumptions (M1) `m(0)=0`, (M2) `m(𝟙)=1`, (M3) σ-additivity
+   429	over POVM partitions `Σ_i E_i = 𝟙`; (3) effects, POVMs, density operators, and
+   430	the Hilbert–Schmidt inner product `⟨X,Y⟩ = Tr(XY)` are the standard finite
+   431	operator-algebra primitives.
+   432	
+   433	**Forbidden-imports check:** this note introduces **no** new axiom, primitive,
+   434	repo vocabulary, or class tag. It uses only standard mathematical terms ("effect,"
+   435	"POVM," "density operator," "frame function," "Bloch vector," "trace pairing,"
+   436	"Riesz representation," "Hilbert–Schmidt inner product," "affine"). No fitted
+   437	values, observed targets, PDG comparators, lattice-MC measurements, `g_bare`, or
+   438	`β=6` inputs are consumed. The Busch / CFMR / Gleason references are comparators,
+   439	not derivation inputs.
+   440	
+   441	**No-promotion statement:** this note does **not** promote, demote, or set the
+   442	audit status of `busch_povm_extension_on_qubit_lattice_narrow_theorem_note_2026-05-20`,
+   443	the Born-rule note, the projective-Gleason companion, the minimal-axioms node, or
+   444	any other row. The audit lane is the only status authority.
+
+2026-07-17T19:32:55.088155Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'nl -ba docs/MINIMAL_AXIOMS_2026-06-29.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	# Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)
+     2	
+     3	> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
+     4	> each row points to the canonical source-of-truth doc.
+     5	
+     6	**Date:** 2026-06-29
+     7	**Type:** meta
+     8	**Status:** current public framework axiom memo for the qubit-on-`Z^3`
+     9	package with local admissibility and fixed scalar record readout.
+    10	**Status authority:** explicit owner approval for the 2026-06-29 foundation
+    11	reset is recorded in `docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
+    12	Audit status remains set only by the independent audit lane.
+    13	
+    14	**Supersedes:** `MINIMAL_AXIOMS_2026-06-05.md`. The 2026-06-05 memo remains the
+    15	historical source for the prior Lattice/Quantum/Record wording in which
+    16	realized outcome was latent in Record and no explicit local admissibility
+    17	constraint was named.
+    18	
+    19	## Purpose
+    20	
+    21	This note states the framework's minimal ontology premises. They are named
+    22	rather than treated as bare letter codes:
+    23	
+    24	1. **Lattice**
+    25	2. **Qubit**
+    26	3. **Admissibility**
+    27	4. **Record**
+    28	
+    29	Legacy `A1`/`A2` numbering and the older `Quantum` axiom name are historical.
+    30	New repo surfaces should use the axiom names above unless quoting an older
+    31	document.
+    32	
+    33	## The Four Framework Axioms
+    34	
+    35	### Lattice / Physical Locality
+    36	
+    37	Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
+    38	adjacency, standard translations, and proper cubic rotations about each site.
+    39	
+    40	No site is privileged. Sites are distinguished by the supplied lattice
+    41	structure alone.
+    42	
+    43	### Qubit / Site Possibility
+    44	
+    45	Each site has a domain of local possibilities.
+    46	
+    47	The full one-site possibility domain has algebraic presentation `M_2(C)`.
+    48	
+    49	A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
+    50	adds no further primitive structure.
+    51	
+    52	No possibility is privileged. Possibilities are distinguished by the supplied
+    53	algebraic structure alone.
+    54	
+    55	### Admissibility / Local Constraint
+    56	
+    57	There is one fixed nearest-neighbor admissibility rule, covariant under lattice
+    58	translations and proper cubic rotations.
+    59	
+    60	For each site, the available possibilities are determined by, and vary with,
+    61	the nearest-neighbor conditions.
+    62	
+    63	### Record / Fixed Reality
+    64	
+    65	Records form.
+    66	
+    67	When present, a record locks exactly one admissible local possibility. A
+    68	site never carries more than one record; records are permanent.
+    69	
+    70	Only records are readable. A readout value is determined by record content
+    71	alone. For any finite collection of pairwise-disjoint records, scalar readout
+    72	`I` is additive, with `I(empty)=0`.
+    73	
+    74	## Qualification
+    75	
+    76	These axioms state only their named primitive content. Further physical
+    77	structure requires a retained derivation or bridge, or explicit approved-
+    78	primitive registration, before use as a premise. A choice not fixed by the
+    79	supplied structure remains a named conditional or open dependency.
+    80	
+    81	A state is a configuration of records.
+    82	
+    83	A law privileges no states. Its domain is a supplied condition, and at every
+    84	state where the condition holds it gives exactly one answer.
+    85	
+    86	## Audit-Pipeline Treatment
+    87	
+    88	The machine-readable source of this axiom set is the stable `minimal_axioms`
+    89	entry in `docs/audit/data/axiom_premise_nodes.json`. Dependencies on
+    90	`minimal_axioms` chain-satisfy without making downstream rows
+    91	`retained_bounded`.
+    92	
+    93	**Primary runner:** `scripts/audit_companion_minimal_axioms_clean_base_exact.py`
+    94	checks only elementary algebra/notation sanity for the four axiom names. It
+    95	does not derive or enlarge the axiom set.
+    96	
+    97	Axioms and approved primitives are the complete supplied foundation.
+    98	Depending on the Lattice, Qubit, Admissibility, or Record axiom, or on an
+    99	explicitly approved primitive such as `scale_reference_primitive`, must not be
+   100	treated as a source of bounded status. No admission class exists: every other
+   101	scientific dependency must be retained-derived or remain conditional/open.
+   102	
+   103	## Relation To Dynamics And Kinetic Branch Selection
+   104	
+   105	Admissibility is not a dynamics axiom. It determines availability by a
+   106	nearest-neighbor rule: for each site, the available possibilities are
+   107	determined by, and vary with, the nearest-neighbor conditions. It does not
+   108	choose a Hamiltonian or transfer operator, supply transition probabilities or
+   109	weights, select a scalar or nonzero kinetic branch, assert a Dirac-square
+   110	carrier, define a time metric, or provide a record-production process or
+   111	physical persistence dynamics.
+   112	
+   113	Static spatial kinetic questions, probability/process questions, and temporal
+   114	evolution questions should be tracked separately. A realized kinetic branch, if
+   115	proposed, is downstream content: it needs a retained derivation or bridge, or
+   116	an approved-primitive registry update, before audit rows may use it
+   117	as load-bearing content. The four axioms are compatible with such later
+   118	content, but do not include it.
+   119	
+   120	## Relation To The Older Observable-Principle Parent
+   121	
+   122	`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not this axiom note and is not an
+   123	approved axiom-premise node. It remains a broader conditional parent that
+   124	packages additive scalar observables with further readout/log-det/modulus
+   125	structure. That older parent must not be moved wholesale into
+   126	`docs/audit/data/axiom_premise_nodes.json`.
+   127	
+   128	Rows that require only the Record axiom should cite this minimal-axiom
+   129	authority. Rows that require P2/modulus, log-det, source/action, measurement,
+   130	Born weights, readout-context selection, central-sector decomposition, `K`/CPT
+   131	structure, transition relations, record-production dynamics, physical
+   132	persistence dynamics, local observability, or any other additional bridge must
+   133	cite separate retained authorities or remain bounded/pending according to the
+   134	audit ledger.
+   135	
+   136	## Relation To The 2026-06-05 Record Wording
+   137	
+   138	The 2026-06-05 Record axiom named durable realized-outcome registration and
+   139	gave a `K`/CPT orbit reading once a finite central-sector readout context and
+   140	fixed `K`/CPT conjugation were supplied. This reset separates generic site
+   141	possibility, local admissibility, and fixed records from context-specific
+   142	readout structure:
+   143	
+   144	- Qubit names the domain of local possibilities and its full one-site algebraic
+   145	  presentation.
+   146	- Admissibility names the nearest-neighbor rule by which, for each site, the
+   147	  available possibilities are determined by, and vary with, the
+   148	  nearest-neighbor conditions.
+   149	- Record names the fixed locking of one admissible local possibility,
+   150	  one-record-per-site uniqueness, permanence, and finite scalar readout
+   151	  additivity over disjoint record collections.
+   152	- `K`/CPT orbit structure, central-sector decomposition, and any sector
+   153	  generation rule are downstream readout-context content, not generic axiom
+   154	  content.
+   155	
+   156	## Open Gates Outside The Axioms
+   157	
+   158	The four axioms do not close, import, or rename the framework's downstream open
+   159	gates. In particular, the following remain outside axiom content:
+   160	
+   161	- the staggered-Dirac/finite-Grassmann realization and `AC_phi_lambda`;
+   162	- the strong-CP theta gauge and mass-side derivation obligations;
+   163	- P2/modulus/phase-blindness and any log-det readout theorem;
+   164	- context selection, measurement basis selection, Born weights, probability
+   165	  rules, update laws, decoherence mechanisms, and formation rules (which
+   166	  admissible possibility a new record locks, at which site, with what weight,
+   167	  or at what rate);
+   168	- arrow, record-production dynamics, physical persistence dynamics, time metric,
+   169	  and local observability of records;
+   170	- source/action and physical-observable identification;
+   171	- `g_bare = 1` convention handling;
+   172	- the scale-reference primitive and the separate gravity self-consistency
+   173	  question that the framework's natural unit equals the Planck length.
+   174	
+   175	## Historical Context
+   176	
+   177	The April 15 through May 20 sequence separated the one-qubit local algebra and
+   178	the `Z^3` lattice from downstream realization gates that had previously been
+   179	written too axiomatically. The 2026-06-04 memo added scalar finite Record
+   180	additivity as the third explicitly approved premise. The 2026-06-05 memo refined
+   181	Record to durable realized-outcome registration in a supplied readout context.
+   182	The 2026-07-04 owner-approved revision appended the formation sentence "Records
+   183	form." to the Record axiom: occurrence became named axiom content, while every
+   184	formation rule (which admissible possibility, at which site, with what weight,
+   185	at what rate) remained downstream supplier content. The file path was kept
+   186	unchanged so existing runner needles and links continue to resolve.
+   187	
+   188	This memo exposes the remaining minimal ontology needed by the blocked audit
+   189	lanes: records are not arbitrary mosaics. The admissibility rule determines the
+   190	available possibilities at each site from the nearest-neighbor conditions, and
+   191	those available possibilities vary with those conditions, before a record can
+   192	lock one available local possibility. Probability, dynamics, readout contexts,
+   193	and physical observable bridges remain downstream.
+
+exec
+/bin/zsh -lc 'nl -ba docs/BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	# Busch POVM Extension on the Qubit-Lattice Effect Algebra (Narrow)
+     2	
+     3	**Date:** 2026-05-20
+     4	**Type:** positive_theorem candidate (narrow theorem)
+     5	**Status:** source-side proposal — independent audit lane owns the verdict
+     6	**Purpose:** Apply Busch's 2003 POVM-extension of Gleason's theorem to
+     7	the qubit-lattice effect algebra, covering the single-site dim-2
+     8	case (`|Λ| = 1`) that Gleason's original projection-lattice theorem
+     9	does not handle. It is a companion to the separate
+    10	`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`
+    11	candidate. The current source packet also includes a native
+    12	effect-Gleason authority bridge for the single-site qubit case:
+    13	[`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
+    14	with runner
+    15	[`scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py`](../scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py)
+    16	and cache
+    17	[`logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt`](../logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt).
+    18	
+    19	## Honest scope
+    20	
+    21	The original May packet stated the standard Busch 2003 / CFMR 2004
+    22	effect-Gleason theorem as a named mathematical input. The current
+    23	restricted packet routes the finite qubit-lattice claim through
+    24	framework-local finite operator algebra instead:
+    25	
+    26	- for `|Λ| = 1`, the single-site qubit effect case is supplied by
+    27	  [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
+    28	  which reproves the load-bearing `m(E)=Tr(σE)` direction from the
+    29	  parent hypotheses (M1)-(M3) on `M_2(C)`;
+    30	- for `|Λ| >= 2`, the projection-lattice companion
+    31	  [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+    32	  supplies the projection values, while POVM additivity plus spectral
+    33	  decomposition extends those values from projections to effects.
+    34	
+    35	Busch 2003 and CFMR 2004 remain the parallel literature comparators
+    36	for the same theorem. They are no longer the only source-side route
+    37	for the finite qubit-lattice statement claimed here.
+    38	
+    39	## Claim
+    40	
+    41	Let `Λ ⊂ Z^3` be any finite region with `|Λ| ≥ 1`. The qubit-lattice
+    42	Hilbert space `H_Λ = ⊗_{x ∈ Λ} ℂ²` has dimension
+    43	`d = 2^|Λ| ≥ 2`. Let `E(H_Λ)` denote the POVM effect algebra on
+    44	`H_Λ` (the set of positive operators `0 ≤ E ≤ 𝟙`).
+    45	
+    46	**Theorem.** Every countably additive POVM-additive probability
+    47	measure `m: E(H_Λ) → [0, 1]` (satisfying `m(0) = 0`, `m(𝟙) = 1`,
+    48	and σ-additivity over countable POVM partitions) is of the form
+    49	
+    50	```text
+    51	m(E) = Tr(σ · E)                                                         (1)
+    52	```
+    53	
+    54	for a unique density matrix `σ ∈ M_d(ℂ)` (positive, `Tr σ = 1`).
+    55	
+    56	This is the finite-region effect-Gleason statement on the
+    57	qubit-lattice substrate, **including the `dim H = 2` single-site
+    58	case** that lies outside Gleason's original projection-lattice
+    59	theorem. The form `m(E) = Tr(σE)` is the Born-form representation for
+    60	POVM effect functionals on the qubit-lattice effect algebra at all
+    61	finite dimensions `2^|Λ| >= 2`, under the stated POVM-additivity
+    62	hypotheses.
+    63	
+    64	## Setup
+    65	
+    66	By A1+A2 of
+    67	[`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md), the
+    68	per-site operator algebra is `M_2(ℂ)`. For any finite `Λ ⊂ Z^3`:
+    69	
+    70	- `H_Λ = ⊗_{x ∈ Λ} ℂ²_x`, complex Hilbert space of dimension
+    71	  `d = 2^|Λ|`
+    72	- `A_Λ = ⊗_{x ∈ Λ} M_2(ℂ)_x = M_d(ℂ)`
+    73	
+    74	The **POVM effect algebra** `E(H_Λ)` is the set of positive operators
+    75	bounded by the identity:
+    76	
+    77	```text
+    78	E(H_Λ) := { E ∈ A_Λ : 0 ≤ E ≤ 𝟙 }                                       (2)
+    79	```
+    80	
+    81	A **POVM** on `H_Λ` is a finite collection `{E_i}_{i=1}^n ⊂ E(H_Λ)`
+    82	with `Σ_i E_i = 𝟙`. POVMs generalize projective measurements (which
+    83	are POVMs with `E_i = P_i` projections) to unsharp measurements.
+    84	
+    85	A **POVM-additive probability measure** is a function
+    86	`m: E(H_Λ) → [0, 1]` satisfying:
+    87	
+    88	- (M1) `m(0) = 0`
+    89	- (M2) `m(𝟙) = 1`
+    90	- (M3) σ-additivity over POVM partitions: for any countable POVM
+    91	  `{E_i}` with `Σ_i E_i = 𝟙`, `Σ_i m(E_i) = 1`
+    92	
+    93	(M3) is strictly stronger than projection-lattice σ-additivity:
+    94	POVMs include unsharp effects, which are not projections.
+    95	
+    96	## Step 1 — Why Gleason's projection-lattice theorem fails at dim 2
+    97	
+    98	At `dim H_Λ = 2` (single qubit, `|Λ| = 1`), the projection lattice
+    99	`P(H_Λ)` has a small structure: the only orthogonal pairs are
+   100	`(|ψ⟩⟨ψ|, |ψ^⊥⟩⟨ψ^⊥|)` for unit vectors `|ψ⟩`. The orthonormal-basis
+   101	constraint `m(|ψ⟩⟨ψ|) + m(|ψ^⊥⟩⟨ψ^⊥|) = 1` permits non-unique
+   102	extensions — frame functions on `S(ℂ²)` are not forced to be
+   103	quadratic.
+   104	
+   105	Gleason's theorem proof relies on the dim ≥ 3 structure: orthonormal
+   106	bases come in continuous families, and the frame function's values
+   107	at "rotated" bases force the quadratic extension via a regularity
+   108	argument. At dim 2, the rotation freedom is insufficient and the
+   109	quadratic extension can fail.
+   110	
+   111	This is the **classical Gleason gap at dim 2**, addressed by going
+   112	to the POVM-effect-algebra extension.
+   113	
+   114	## Step 2 — Replacing the bare Busch import in the restricted packet
+   115	
+   116	The standard comparator theorem is Busch's theorem (Busch 2003
+   117	*Phys. Rev. Lett.* 91, 120403; refined Caves–Fuchs–Manne–Renes 2004
+   118	*Found. Phys.* 34, 193):
+   119	
+   120	On a complex Hilbert space `H` with `dim H ≥ 2`, every POVM-additive
+   121	probability measure `m: E(H) → [0, 1]` is of the form
+   122	
+   123	```text
+   124	m(E) = Tr(σ · E)                                                         (B)
+   125	```
+   126	
+   127	for a unique density matrix `σ` on `H`.
+   128	
+   129	The current packet does not leave (B) as a bare theorem name. It
+   130	spells out the finite qubit-lattice route in two branches.
+   131	
+   132	**Branch A: the single-site qubit `M_2(C)`.** The authority bridge
+   133	[`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+   134	matches the parent hypotheses exactly:
+   135	
+   136	- (M1) `m(0)=0`;
+   137	- (M2) `m(𝟙)=1`;
+   138	- (M3) POVM-additivity over `Σ_i E_i = 𝟙`, with `m:E(M_2)->[0,1]`.
+   139	
+   140	From those hypotheses it reproves the load-bearing direction on
+   141	`M_2(C)`:
+   142	
+   143	1. the two- and three-outcome POVM laws give partial additivity
+   144	   `m(E_1+E_2)=m(E_1)+m(E_2)` whenever `E_1+E_2 <= 𝟙`;
+   145	2. partial additivity plus boundedness gives homogeneity on effects;
+   146	3. the functional extends real-linearly to `Herm(M_2)`;
+   147	4. finite-dimensional Riesz representation gives `F(H)=Tr(σH)`;
+   148	5. `m(𝟙)=1` and `m(P_ψ)>=0` force `Tr σ=1` and `σ>=0`.
+   149	
+   150	The paired runner
+   151	[`scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py`](../scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py)
+   152	and cache
+   153	[`logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt`](../logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt)
+   154	check the exact rational `M_2` reconstruction, randomized `M_2`
+   155	effect/POVM tests, a `M_4` cross-check, and the dim-2 guard showing
+   156	that projection additivity alone underdetermines the trace form while
+   157	POVM additivity selects it.
+   158	
+   159	**Branch B: multi-site regions `|Λ| >= 2`.** Restrict any
+   160	POVM-additive `m:E(H_Λ)->[0,1]` to the projections `P(H_Λ)`. Since
+   161	orthogonal projection families are POVM subfamilies, the restriction
+   162	is a projection-lattice probability measure. The projection-lattice
+   163	companion
+   164	[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+   165	therefore supplies a density matrix `σ` with `m(P)=Tr(σP)` for every
+   166	projection `P` on `H_Λ`.
+   167	
+   168	It remains only to extend from projections to effects. If
+   169	`E=Σ_j λ_j P_j` is the finite spectral decomposition of an effect
+   170	(`0 <= λ_j <= 1`, pairwise orthogonal `P_j`), then homogeneity on
+   171	effects gives `m(λ_j P_j)=λ_j m(P_j)`, and partial additivity over
+   172	orthogonal effects gives
+   173	
+   174	```text
+   175	m(E) = Σ_j m(λ_j P_j)
+   176	     = Σ_j λ_j Tr(σP_j)
+   177	     = Tr(σE).
+   178	```
+   179	
+   180	Thus the multi-site effect theorem is obtained by the projection
+   181	companion plus finite spectral decomposition and the same
+   182	effect-additivity/homogeneity laws used in Branch A.
+   183	
+   184	## Step 3 — Application to the qubit-lattice substrate
+   185	
+   186	For any `|Λ| ≥ 1` (so `dim H_Λ = 2^|Λ| ≥ 2`), the restricted packet now
+   187	has a finite-region route to the effect theorem:
+   188	
+   189	```text
+   190	m(E) = Tr(σ · E)   ∀ E ∈ E(H_Λ)                                          (3)
+   191	```
+   192	
+   193	with `σ` a unique density matrix on `H_Λ`.
+   194	
+   195	This covers all qubit-lattice region sizes including:
+   196	- `|Λ| = 1` (single site, dim 2): the **single-qubit Born form**
+   197	  — not handled by projective Gleason, supplied by the native
+   198	  `M_2(C)` effect bridge;
+   199	- `|Λ| >= 2` (dim `>= 4`): the projection-lattice companion gives
+   200	  the projection values, and finite spectral decomposition extends
+   201	  the result to every POVM effect.
+   202	
+   203	Together, the single-site native effect bridge plus the multi-site
+   204	projection/spectral route cover **all finite qubit-lattice substrate
+   205	sizes**. Busch 2003 / CFMR 2004 remain parallel literature
+   206	comparators for the same conclusion.
+   207	
+   208	## Step 4 — Finite-region scope and inductive-limit boundary
+   209	
+   210	The theorem above is finite-region: every finite `Λ` has effect
+   211	algebra `E(H_Λ)`, and the source-local single-site plus multi-site
+   212	routes above give the Born-form representation on that finite algebra.
+   213	Passing from the compatible finite-region family to a state on the
+   214	quasi-local UHF algebra `A = ⊗_x M_2(ℂ)` is a separate standard
+   215	operator-algebraic inductive-limit step.
+   216	
+   217	This note therefore supplies the finite-region Born form on the
+   218	framework substrate. It does not by itself prove an all-at-once
+   219	quasi-local normal-state theorem, nor does it identify the pre-record
+   220	state; those are separate rows / imports.
+   221	
+   222	## What this can close after audit
+   223	
+   224	- **The previous bare Busch/CFMR admitted-input** in
+   225	  `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`'s
+   226	  derivation chain. If independently retained, this row supplies a
+   227	  framework-scoped finite-region effect-Gleason application on the
+   228	  qubit-lattice effect algebra, with native source support for the
+   229	  single-site case and a projection/spectral route for multi-site
+   230	  regions.
+   231	- **The dim-2 single-qubit Born form**, which Gleason's projection-
+   232	  lattice theorem cannot supply directly.
+   233	- **One textbook-import slot** in the Born-support chain. This note
+   234	  does not by itself promote Born; parent-row status changes require
+   235	  the rest of the chain and independent audit closure.
+   236	
+   237	## What this does not close
+   238	
+   239	- **The other admissions in the Born derivation chain**: no-extra-structure
+   240	  pre-record identification, persistent-record → Kraus identification
+   241	  (latter handled by `PERSISTENT_RECORD_AS_KRAUS_OPERATOR_NOTE_2026-05-20`),
+   242	  Lüders rule (handled by the Lüders companion + Greechie
+   243	  sequential-product bridge).
+   244	- **A general all-Hilbert-space re-derivation of Busch's theorem** —
+   245	  the packet proves the finite qubit-lattice cases it uses and cites
+   246	  Busch/CFMR in parallel.
+   247	- **Non-commutative joint-system Born forms** that go beyond the
+   248	  finite-dim POVM effect-algebra (e.g., continuous-variable
+   249	  systems) — out of scope; the framework's substrate is finite-dim
+   250	  per site.
+   251	- **The quasi-local inductive-limit state theorem** — only the
+   252	  finite-region effect-Gleason application is claimed here.
+   253	
+   254	## Source dependencies and inputs
+   255	
+   256	1. **Single-site effect-Gleason bridge on `M_2(C)`** —
+   257	   [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md),
+   258	   with runner/cache linked above, supplies the load-bearing dim-2
+   259	   case.
+   260	2. **Projection-lattice companion for `|Λ| >= 2`** —
+   261	   [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+   262	   supplies `m(P)=Tr(σP)` on projections in dimensions `>= 4`.
+   263	3. **Standard probability/effect-algebra axioms (M1)-(M3)** — the
+   264	   stated hypotheses of this theorem.
+   265	4. **Standard finite-dimensional spectral and Riesz representation
+   266	   facts** — used to extend from projection values to effects and to
+   267	   identify the representing density matrix.
+   268	
+   269	## Risk classification
+   270	
+   271	This is a `positive_theorem` candidate at the narrow-theorem granularity.
+   272	Finite effect-Gleason theory applied to the framework's specific
+   273	effect algebra `E(⊗_x M_2(ℂ))`. The narrow contribution is the
+   274	explicit application to the qubit-lattice substrate, with the dim-2
+   275	single-site case supplied by a native authority bridge and the
+   276	multi-site effect case routed through projection Gleason plus spectral
+   277	decomposition.
+   278	
+   279	Granularity matches retained Clifford-algebra narrow theorems
+   280	(positive_theorem, retained): standard math applied to the
+   281	framework's specific operator structure.
+   282	
+   283	## Citation-graph note
+   284	
+   285	**Upstream framework dependencies** (load-bearing; markdown links):
+   286	
+   287	- [`MINIMAL_AXIOMS_2026-05-20.md`](MINIMAL_AXIOMS_2026-05-20.md) — supplies A1+A2 (qubit-form local algebra + Z^3 substrate)
+   288	- [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) — native `M_2(C)` effect-Gleason bridge for the single-site gap, with exact hypotheses matched to (M1)-(M3)
+   289	- [`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md) — projection-lattice density representation for multi-site finite regions
+   290	
+   291	**Runner/cache evidence** (load-bearing for the native single-site bridge):
+   292	
+   293	- [`scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py`](../scripts/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.py)
+   294	- [`logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt`](../logs/runner-cache/audit_companion_busch_povm_effect_gleason_qubit_2026_06_05.txt)
+   295	
+   296	**Parallel standard-math comparators** (not the only source route):
+   297	
+   298	- Busch 2003 *Phys. Rev. Lett.* 91, 120403 — original POVM-extension theorem
+   299	- Caves–Fuchs–Manne–Renes 2004 *Found. Phys.* 34, 193 — refined / clarified proof
+   300	- Standard finite-dim C*-algebra Riesz-representation result
+   301	
+   302	**Plain-text pointer references** (NOT load-bearing deps):
+   303	
+   304	- `BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md` — downstream consumer of this narrow theorem in the Born derivation chain
+   305	- `PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md` — supplies the pre-record reference `σ = ρ_ref` for the Born evaluation
+   306	
+   307	## What this file is not
+   308	
+   309	- Not a re-derivation of Busch's theorem for arbitrary Hilbert spaces
+   310	- Not a bare standard-math import; the finite qubit-lattice cases used
+   311	  here are routed through source-local notes/runners, with Busch/CFMR
+   312	  cited in parallel
+   313	- Not a closure of the Born derivation row (other admissions remain; see "What this does not close" above)
+   314	- Not an automatic Born promotion to retained (verdicts owned by audit lane)
+   315	- Not a numerical-prediction change
+
+2026-07-17T19:33:25.769828Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "rg -n '\"' docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+4:claim_scope: "Bridge-conditional dichotomy on the menu grade of the graded-constraint hypothesis surface. Effect horn: if the assumed grading is defined on the effect algebra of a finite region with finite effect-partition menus eligible, the Born trace form is forced sitewise at every finite dimension >= 2, reproved from finite operator algebra with no literature bridge input; the landed one-site projective rogue extends to no such grading. Projective horn boundary: on a bonded pair, grading hypotheses restricted to product-projector menus do not force the trace form (constructive witness; exhaustive product-menu classification), so the landed composite route's entangled-menu strength is necessary at 2x2, not a convenience. The menu grade itself is underived; no horn is selected; the grading primitive is assumed here, not adopted."
+35:"Gleason's theorem is imported as named classical mathematics."
+64:  domain, and the Record sentences "Only records are readable. A readout
+65:  value is determined by record content alone." The axioms do not supply
+67:  processes, and the memo's Qualification states: "These axioms state only
+70:  before use as a premise."
+107:E1-E2 keep the exact shape of H1-H3 with "projection" replaced by "effect"
+164:restriction. The landed note's sentence "Three directions plus normalization
+165:refute every `2x2` trace form at once" is reused unchanged; what is new is
+203:  resolutions "that contain entangled projections", with the landed
+204:  refutation-seat finding "Without this full projection-measure strength a
+206:  apply" — is therefore necessary at `2 x 2`, not a strengthening of
+224:landed attribution sentence "adjacency alone pays for nothing here without
+225:H4's strength" is thereby sharpened in both directions: with effect menus,
+239:here and not derived; "no conditioning records" alone does not supply it.
+262:T3 is a bounded negative boundary ("product-projector menus force nothing at
+263:`2 x 2`"), so the negative-claim checklist is answered for it:
+288:- **N5 rhetoric audit:** the phrase "force nothing" is scoped to the stated
+292:- **N7 steelman:** "product menus are the physically natural family, so T3
+293:  kills the projective horn." Reply: T3 proves insufficiency of that family,
+
+exec
+/bin/zsh -lc "if [[ -f scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py ]]; then print 'runner_exists=yes'; else print 'runner_exists=no'; fi" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+runner_exists=yes
+
+codex
+VERDICT: 0 blocker(s), 0 major, 1 minor
+
+1. File 1 states: “E1-E2 keep the exact shape of H1-H3 with ‘projection’ replaced by ‘effect’.” This is slightly stronger than the source. H1 normalizes “every eligible menu,” H2 separately imposes orthogonal additivity, and H3 imposes non-contextuality. Universal eligibility appears in H4: “every finite orthogonal resolution ... is menu-eligible.” E2 likewise declares every finite effect partition eligible, so it is more accurately an effect-grade analogue of H1-H3 plus H4-style universal menu eligibility—not merely the exact shape of H1-H3.
+
+All source-attributed quotations otherwise match verbatim. The R1-R4 and M1-M3 characterizations are accurate; the 2026-05-20 note explicitly uses the projective-Gleason companion for `|Λ| >= 2` and assumes countable additivity. The claim ID, existing runner path, and claim scope are coherent.
+tokens used
+56,002
+VERDICT: 0 blocker(s), 0 major, 1 minor
+
+1. File 1 states: “E1-E2 keep the exact shape of H1-H3 with ‘projection’ replaced by ‘effect’.” This is slightly stronger than the source. H1 normalizes “every eligible menu,” H2 separately imposes orthogonal additivity, and H3 imposes non-contextuality. Universal eligibility appears in H4: “every finite orthogonal resolution ... is menu-eligible.” E2 likewise declares every finite effect partition eligible, so it is more accurately an effect-grade analogue of H1-H3 plus H4-style universal menu eligibility—not merely the exact shape of H1-H3.
+
+All source-attributed quotations otherwise match verbatim. The R1-R4 and M1-M3 characterizations are accurate; the 2026-05-20 note explicitly uses the projective-Gleason companion for `|Λ| >= 2` and assumes countable additivity. The claim ID, existing runner path, and claim scope are coherent.

@@ -1,0 +1,543 @@
+2026-07-17T21:14:12.840219Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f71ee-0956-7880-b310-59e1d148080c
+--------
+user
+READ-ONLY adversarial review lens (independent algebra), block02. No file writes, no git. Verdict = final message.
+Read exactly ONE file (not the runner — your value is independence): docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md
+Attempt to BREAK the mathematics from scratch: (a) T1 characterization — any scaled-projector family violating it or menus it misses? (b) T2 — is the ray-additivity derivation sound (both split menus valid?); does the squeeze really deliver real homogeneity from the stated hypotheses; is the axis-cancellation menu always valid (coefficients in (0,1] for every unit n? check extreme n); does the elimination really give g(n) = (1+n·s)/2 including nonpositive components and zero components; is positivity->|s|<=1 airtight (s = 0 case?); uniqueness claim. (c) T3a — does the rogue extension really normalize EVERY paired menu (arbitrary many pairs, coins of any weight)? Is w(lambda P(n)) := lambda g(n) well defined on S (representation uniqueness)? (d) T3b logic. (e) Try to construct a NON-affine w satisfying F1-F2 (i.e., attack the theorem itself). Verify algebra with python3/sympy HEREDOC snippets, no file writes.
+Output: "VERDICT: ..." + numbered findings (exact objection or counterexample attempt and outcome); if clean, list the counterexample families you tried and why each fails.
+
+codex
+I’ll inspect only the specified theorem note, then independently reconstruct each argument and stress-test the algebra with in-memory `python3`/SymPy snippets. I will not write files or run any Git commands.
+exec
+/bin/zsh -lc "sed -n '1,260p' docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+---
+claim_id: born_form_scaled_projector_menu_family_sitewise_forcing_and_paired_menu_boundary_bounded_theorem_note_2026-07-17
+claim_type: bounded_theorem
+claim_scope: "Bridge-conditional thinning of the effect-menu horn at one site: on the scaled-projector family (nonnegative multiples of one-site rank-1 projectors and of the identity), menu normalization plus effect-functionality forces the Born trace form on that domain at a single M_2(C) site, with no literature bridge input, no composite, finite menus only, and no genuinely unsharp effect used anywhere — the forcing already runs on scaled rank-1 menus alone. Boundary: the paired subfamily (equal-weight antipodal pairs plus identity multiples) does not force — the landed one-site rogue extends to it explicitly — so some menu outside the paired subfamily is necessary. The family sits strictly between the projective and full-effect menu families; whether it or any smaller family is minimal is not established; no menu grade is selected; the grading primitive is assumed here, not adopted."
+upstream_dependencies:
+  - minimal_axioms
+runner: scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py
+---
+
+# Born Form On The Scaled-Projector Menu Family: Sitewise Forcing With No Bridge Input, And The Paired-Menu Boundary
+
+**Date:** 2026-07-17
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Scope:** bridge-conditional; the grading hypotheses are assumed here, not
+adopted; the menu family the physical registration supplies is underived.
+**Audit-status authority:** independent audit lane only. This note sets no
+audit verdict and predicts none.
+**Primitive status:** no primitive is approved, registered, edited, or
+enlarged here. Every grading hypothesis below is conditional input only.
+**Primary runner:**
+[`scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py`](../scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py)
+**Runner cache:**
+[`logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt`](../logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt)
+
+## Purpose
+
+The parent block
+[`BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md`](BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+proved sitewise Born forcing at effect grade (its E1-E2: weights on all
+effects, every finite effect partition eligible) and left the space between
+the poles open, naming "classical mixtures of projective menus and other
+intermediate families" as untested, with the hypothesis-surface sentence:
+"Whether the physical registration supplies menus at projective grade, at
+effect grade, at neither, or at some intermediate family is underived and is
+not decided here."
+
+This note closes one named piece of that gap with an exactly delimited
+intermediate family and a two-sided statement:
+
+- **Forcing.** On the scaled-projector family — effects that are nonnegative
+  multiples of one-site rank-1 projectors or of the identity — menu
+  normalization plus effect-functionality already forces the Born trace form
+  on that domain, at a single `M_2(C)` site, with no literature bridge
+  input. The proof is a direct four-menu-schema argument (complement,
+  same-direction split, axis cancellation, coins) and never uses a genuinely
+  unsharp effect: the forcing runs on scaled rank-1 menus alone.
+- **Boundary.** The paired subfamily — menus that are disjoint unions of
+  equal-weight antipodal pairs and identity multiples, the shape produced by
+  classically mixing binary projective measurements without splitting or
+  regrouping outcomes — does not force: the landed one-site rogue extends to
+  it explicitly. Some menu outside the paired subfamily is therefore
+  necessary for any forcing on this surface, and the proof's split and
+  axis-cancellation schemas are exactly such menus.
+
+Consequence for the menu-grade dial: sitewise form-fixing does not need
+unsharp effects. The registration question sharpens to whether the supplied
+menus ever leave the paired subfamily — an exactly witnessed line — while no
+family is selected and no claim of minimality is made.
+
+## Authorities and Inputs
+
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+  the one-site `M_2(C)` possibility domain and the Record sentences "Only
+  records are readable. A readout value is determined by record content
+  alone." The axioms do not supply probabilities, weights, menus, update
+  rules, or record-production processes.
+- [`BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md`](BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+  — the parent surface: the effect-grade pole (its T1), the landed
+  lexicographic hemisphere rogue and its exact three-direction refutation of
+  every `2 x 2` trace form (reused here at the same resolution), and the
+  named-untested intermediate-family gap this note addresses.
+- [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+  — the projective-horn frontier note whose hypothesis surface both blocks
+  condition on; not otherwise used.
+- Literature comparators (never proof inputs): Wright-Weigert 2019 (a
+  Gleason-type theorem for qubits from projective measurements and their
+  classical mixtures — a differently delimited restricted family; a native
+  translation of their exact class is a separate open increment); Busch 2003
+  and Caves-Fuchs-Manne-Renes 2004 (the full effect-family pole).
+
+## The Family
+
+Work at one site, `A ≅ M_2(C)`, `P(n) = (1 + n·σ)/2` for unit Bloch
+directions `n`. Define the scaled-projector effects
+
+> `S = { c P(n) : c ∈ [0,1], n unit } ∪ { c 1 : c ∈ [0,1] }`,
+
+and write `S_sharp` for the rank-1 part `{ c P(n) : c ∈ (0,1] }`. Every
+element of `S` is an effect; a nonzero element determines its parameters
+uniquely (`c P(n)` has eigenvalue pair `{c, 0}`, `c 1` has `{c, c}`, so `c`
+and, for rank 1, `n` are recovered from the operator). A **scaled-projector
+menu** is a finite family of nonzero elements of `S` summing to `1`.
+
+**T1 (exact menu characterization).** A finite family
+`{c_k P(n_k)}_k ∪ {d_j 1}_j` of nonzero scaled-projector effects is a menu
+iff
+
+> `Σ_k c_k n_k = 0` and `Σ_k c_k / 2 + Σ_j d_j = 1`.
+
+Proof: expand in the basis `{1, σ_x, σ_y, σ_z}`; the identity component
+gives the scalar condition, the Pauli components give the vector condition.
+The family therefore contains, among others: every projective menu
+`{P(n), P(−n)}`; every coin `{c 1, (1−c) 1}` and its refinements;
+same-direction splits `{λP(n), μP(n), (1−λ−μ)P(n), P(−n)}`; the
+axis-cancellation menus of T2; and three-element coplanar menus such as
+`{(2/3)P(n_1), (2/3)P(n_2), (2/3)P(n_3)}` with `n_1 + n_2 + n_3 = 0`. It
+does not contain any effect with two distinct nonzero eigenvalues (e.g.
+`diag(1/2, 1/4)`), so it is a proper subfamily of the parent block's
+effect-partition family.
+
+## Hypotheses
+
+**(F1) grading exists on the scaled-projector domain.** There is
+`w : S → [0,1]` with `w(0) = 0` and `w(1) = 1`; `w` is a function of the
+effect alone — its value does not depend on which eligible menu embeds the
+effect.
+
+**(F2) scaled-projector menus are eligible.** For every scaled-projector
+menu `{A_j}`, `Σ_j w(A_j) = 1`.
+
+F1-F2 are the parent block's E1-E2 with the effect algebra replaced by `S`
+and effect partitions replaced by scaled-projector menus: the domain and the
+menu family both shrink, so F1-F2 is a strictly weaker hypothesis surface
+than the effect-grade pole, and strictly stronger than bare projective
+menus, which it contains. Only finite menus are used; no countable clause is
+assumed. Whether the physical registration supplies this family, a larger
+one, a smaller one, or none is underived and is not decided here.
+
+## Results
+
+**T2 (forcing on the scaled-projector family, no bridge input).** Assume
+F1-F2 at one site. Then there is a unique density matrix `σ` with
+`w(E) = Tr(σE)` for every `E ∈ S`. The proof uses four menu schemas, all
+inside `S`, and only the rank-1 schemas carry the forcing:
+
+- **(a) Ray additivity.** Fix `n` and write `h(λ) = w(λP(n))`. For
+  `λ, μ ≥ 0` with `λ + μ ≤ 1`, T1 validates the same-direction splits
+  `{λP(n), μP(n), (1−λ−μ)P(n), P(−n)}` and
+  `{(λ+μ)P(n), (1−λ−μ)P(n), P(−n)}` (the degenerate members with zero
+  coefficient are dropped). Subtracting their normalizations gives
+  `h(λ) + h(μ) = h(λ+μ)`. With `h ≥ 0` this gives monotonicity
+  (`h(μ') = h(μ) + h(μ'−μ) ≥ h(μ)`), rational homogeneity by iteration, and
+  the rational squeeze `q_1 h(1) ≤ h(t) ≤ q_2 h(1)` for rationals
+  `q_1 < t < q_2`; hence `h(λ) = λ g(n)` for all real `λ ∈ [0,1]`, with
+  `g(n) := w(P(n))`.
+- **(b) Complement.** The projective menu `{P(n), P(−n)}` gives
+  `g(n) + g(−n) = 1`.
+- **(c) Axis cancellation.** For a unit `n` with components `n_a`
+  (`a ∈ {x,y,z}`), set `L = |n_x| + |n_y| + |n_z| ∈ [1, √3]` and
+  `c_0 = 2/(1+L) ∈ (0,1]`. By T1,
+
+  > `{ c_0 P(n) } ∪ { c_0 |n_a| P(−sign(n_a) e_a) : n_a ≠ 0 }`
+
+  is a menu: its vector part is `c_0 (n − Σ_a n_a e_a) = 0` and its scalar
+  part is `c_0 (1 + L)/2 = 1`. Normalization, (a), and (b) give
+
+  > `g(n) = (1 + L)/2 − Σ_a |n_a| g(−sign(n_a) e_a)
+  >        = (1 − L)/2 + Σ_a |n_a| g(sign(n_a) e_a)
+  >        = (1 + n·s)/2`,
+
+  with `s_a := 2 g(e_a) − 1`. So `g` is affine in the Bloch direction, with
+  its coefficients read off the three axis values.
+- **(d) Coins.** Menus `{c 1, c' 1, (1−c−c') 1}` make `f(c) := w(c 1)`
+  additive and bounded, hence `f(c) = c` by the same
+  rational-homogeneity-plus-squeeze argument. Coins are not used in
+  (a)-(c); they only complete the representation over the identity ray of
+  `S`.
+- **(e) State property and uniqueness.** `g(n) ∈ [0,1]` for all unit `n`
+  forces `|s| ≤ 1` (evaluate at `n = −s/|s|` when `s ≠ 0`), so
+  `σ := (1 + s·σ)/2` is a density matrix, and
+  `w(cP(n)) = c g(n) = Tr(σ · cP(n))`, `w(c1) = c = Tr(σ · c1)` on all of
+  `S`. Uniqueness: any representing density matrix reproduces the three
+  axis values, which determine `s`.
+
+No step uses a literature theorem, a composite, an effect outside `S`, a
+projective frame-function analysis, or countable additivity. The runner
+re-derives every load-bearing identity exactly, including the
+axis-cancellation identity symbolically on a generic octant and on rational
+witnesses in all octants and on the degenerate axis cases.
+
+**T3 (paired-menu boundary).** Call a scaled-projector menu **paired** when
+its multiset of elements is a disjoint union of equal-weight antipodal pairs
+`{λP(m), λP(−m)}` and identity multiples `{d 1}` — the shape produced by
+classically mixing binary projective measurements and coins without
+splitting or regrouping outcomes. Then:
+
+- **(T3a) The paired subfamily does not force.** Extend the parent block's
+  landed lexicographic hemisphere rogue `g` by
+  `w(λP(n)) := λ g(n)`, `w(c1) := c`. On any paired menu the normalization
+  sum is `Σ_i λ_i [g(m_i) + g(−m_i)] + Σ_j d_j = Σ_i λ_i + Σ_j d_j = 1` by
+  the complement law and T1's scalar condition, so the extension satisfies
+  F1-F2 restricted to paired menus; and it is no trace form, by the landed
+  exact three-direction contradiction, reused at the same resolution.
+- **(T3b) Some unpaired menu is necessary.** By T3a, any hypothesis surface
+  whose eligible menus are all paired admits a non-Born grading, so any
+  forcing theorem on this domain must use at least one menu outside the
+  paired subfamily. The T2 proof uses exactly two unpaired schemas — the
+  same-direction split and the axis-cancellation menu (the latter has no
+  antipodal pair at all for generic `n`) — and by T3a it could not have
+  succeeded without some such menu.
+
+T3 makes no claim about which intermediate families beyond the paired
+subfamily force or fail: the scaled-projector family forces (T2), the
+paired subfamily does not (T3a), and the exact boundary between them across
+all intermediate families is not classified here.
+
+**T4 (dial recalibration and comparators).** Combined with the parent
+block: sitewise Born form-fixing needs neither the full effect algebra nor
+any genuinely unsharp effect — the scaled-projector family suffices, and
+within it the forcing runs on scaled rank-1 menus alone. The landed one-site
+rogue survives on bare projective and paired menus and dies on the
+scaled-projector family (T2 plus the three-direction contradiction), with
+the composite/entangled/Gleason route of the projective horn unchanged and
+untouched. The registration question therefore sharpens to an exactly
+witnessed line: whether the supplied menus ever leave the paired subfamily.
+The comparator literature (Wright-Weigert 2019) reaches a Born-forcing
+conclusion for a differently delimited restricted family built from
+projective measurements and their classical mixtures with outcome
+processing; no containment claim between that class and `S` is made here,
+and a native translation of their exact class — like any minimal-family
+classification — is a named open increment, not attempted in this note.
+
+## No-Go Discipline Gate
+
+T3a is a bounded negative ("the paired subfamily does not force"), so the
+negative-claim checklist is answered for it:
+
+- **N1 route inventory (five routes against T3a):** (1) unequal-weight
+  antipodal completions — such menus are not paired by definition and lie in
+  the forcing family; ATTEMPTED via T2, which covers them; (2) adding coins
+  of arbitrary rational or real weight — paired menus already include
+  identity multiples, and the extension normalizes them (T3a computation);
+  (3) same-direction splits — exactly the unpaired schema; RULED OUT as a
+  rescue of the paired subfamily by definition, and named as what activates
+  forcing (T3b); (4) countable paired menus — a finite-sum menu family is
+  assumed throughout (F2 is finite); named outside scope; (5) two-site
+  paired menus and composite rescues — outside this note's one-site scope
+  and already handled at the projective grade by the parent block's product
+  boundary; named untested at scaled grade.
+- **N2 wall independence:** one wall (paired subfamily insufficiency); no
+  second wall presented.
+- **N3 hidden-wall scan:** the T3a witness is total on `S` (both rays
+  defined), satisfies F1 on all of `S`, and its menu obligations are
+  evaluated on the paired subfamily only — the restriction is the claim.
+  The hemisphere tie convention is inherited verbatim from the landed
+  parent construction and gated.
+- **N4 residual matching:** the only cited prior negative is the landed
+  one-site rogue existence, reused at the same resolution.
+- **N5 rhetoric audit:** "does not force" is scoped to the paired subfamily
+  at one site; T3 explicitly declines to classify other intermediate
+  families.
+- **N6 partial-closure scan:** the closure paths are named, not denied —
+  the scaled-projector family itself (T2), or the parent block's effect
+  pole, or the landed projective-composite route.
+- **N7 steelman:** "paired menus are what classical mixing gives you, so
+  the physical case is closed against forcing." Reply: T3a proves exactly
+  that insufficiency for unsplit mixing; whether record formation supplies
+  only paired menus is the underived registration question, and the note
+  selects nothing.
+
+codex
+The first pass finds no immediate gap in T1 or ray additivity. I’m now checking the edge cases that can hide defects: zero coefficients, endpoint splits, axis directions with \(c_0=1\), zero Bloch components, and all eight sign octants.
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import sympy as sp
+
+# T1: expand a generic finite sharp-plus-identity sum in the Pauli basis.
+c1,c2,d = sp.symbols('c1 c2 d', nonnegative=True)
+n1x,n1y,n1z,n2x,n2y,n2z = sp.symbols('n1x n1y n1z n2x n2y n2z', real=True)
+scalar = sp.simplify((c1+c2)/2+d)
+vector = sp.Matrix([c1*n1x+c2*n2x, c1*n1y+c2*n2y, c1*n1z+c2*n2z])/2
+print('T1 scalar coefficient =', scalar)
+print('T1 Pauli coefficient   =', tuple(vector))
+
+# Both ray-split menus: total sharp coefficient and weighted direction.
+lam,mu = sp.symbols('lambda mu', nonnegative=True)
+for label, coeffs in [
+    ('split', [(lam,1),(mu,1),(1-lam-mu,1),(1,-1)]),
+    ('merged', [(lam+mu,1),(1-lam-mu,1),(1,-1)]),
+]:
+    print(label, 'scalar numerator =', sp.simplify(sum(c for c,_ in coeffs)),
+          'vector coefficient =', sp.simplify(sum(c*s for c,s in coeffs)))
+
+# Axis-cancellation menu in a fixed octant: signs are parameters +/-1 and r_a=|n_a|.
+rx,ry,rz = sp.symbols('r_x r_y r_z', nonnegative=True)
+L = rx+ry+rz
+c0 = 2/(1+L)
+for signs in [(sx,sy,sz) for sx in (-1,1) for sy in (-1,1) for sz in (-1,1)]:
+    n = sp.Matrix([signs[0]*rx, signs[1]*ry, signs[2]*rz])
+    cancel = c0*n + sum((c0*r*sp.Matrix([-s if i==a else 0 for i in range(3)])
+                         for a,(r,s) in enumerate(zip((rx,ry,rz),signs))), sp.zeros(3,1))
+    scalar_sum = sp.simplify(c0*(1+L)/2)
+    assert all(sp.simplify(x)==0 for x in cancel) and scalar_sum == 1
+print('axis menu: cancellation verified in all 8 octants; scalar = 1')
+print('coefficient bounds: c0 in [2/(1+sqrt(3)),1], c0*|n_a| <= c0 <= 1')
+PY" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-17T21:15:45.438972Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 240ms:
+T1 scalar coefficient = c1/2 + c2/2 + d
+T1 Pauli coefficient   = (c1*n1x/2 + c2*n2x/2, c1*n1y/2 + c2*n2y/2, c1*n1z/2 + c2*n2z/2)
+split scalar numerator = 2 vector coefficient = 0
+merged scalar numerator = 2 vector coefficient = 0
+axis menu: cancellation verified in all 8 octants; scalar = 1
+coefficient bounds: c0 in [2/(1+sqrt(3)),1], c0*|n_a| <= c0 <= 1
+
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import sympy as sp
+
+rx,ry,rz = sp.symbols('r_x r_y r_z', nonnegative=True)
+sx,sy,sz = sp.symbols('s_x s_y s_z', real=True)
+r = (rx,ry,rz); s = (sx,sy,sz)
+L = sum(r)
+
+# From complement: g(sign(e_a))=(1+sign*s_a)/2.
+for signs in [(a,b,c) for a in (-1,1) for b in (-1,1) for c in (-1,1)]:
+    sum_axis = sum(ra*(1+sgn*sa)/2 for ra,sgn,sa in zip(r,signs,s))
+    g_from_menu = sp.simplify((1-L)/2 + sum_axis)
+    target = sp.simplify((1+sum(sgn*ra*sa for ra,sgn,sa in zip(r,signs,s)))/2)
+    assert sp.simplify(g_from_menu-target) == 0
+print('elimination: g(n)=(1+n.s)/2 verified symbolically in all 8 octants')
+
+# Zero-component faces and coordinate axes are limits only not needed: omitted terms contribute 0.
+for subs in ({rx:0}, {ry:0,rz:0}, {rx:0,ry:0}):
+    signs=(1,-1,1)
+    lhs=sp.simplify(((1-L)/2 + sum(ra*(1+sgn*sa)/2 for ra,sgn,sa in zip(r,signs,s))).subs(subs))
+    rhs=sp.simplify(((1+sum(sgn*ra*sa for ra,sgn,sa in zip(r,signs,s)))/2).subs(subs))
+    assert sp.simplify(lhs-rhs)==0
+print('elimination: zero-component faces and axis cases verified by exact substitution')
+
+# Bloch density matrix spectrum.
+I=sp.I
+rho=sp.Matrix([[1+sz, sx-I*sy],[sx+I*sy,1-sz]])/2
+x=sp.symbols('x')
+print('rho characteristic polynomial =', sp.factor(rho.charpoly(x).as_expr()))
+print('expected eigenvalues = (1 +/- sqrt(sx"'^2+sy''^2+sz''^2))/2'"')
+PY" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-17T21:17:06.761307Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 338ms:
+elimination: g(n)=(1+n.s)/2 verified symbolically in all 8 octants
+elimination: zero-component faces and axis cases verified by exact substitution
+rho characteristic polynomial = (-s_x**2 - s_y**2 - s_z**2 + 4*x**2 - 4*x + 1)/4
+expected eigenvalues = (1 +/- sqrt(sx^2+sy^2+sz^2))/2
+
+codex
+The axis calculation survives every sign pattern and the coordinate-axis degeneracies. Two independent non-Born constructions also clarify the boundary: one keeps rays linear but bends the direction dependence; another bends the ray dependence while preserving all paired-menu sums. I’m checking exactly where each is killed by the full menu family.
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import sympy as sp
+
+sqrt = sp.sqrt
+
+# Independent T3 rogue: g(n)=(1+n_z"'^3)/2, w(lambda P(n))=lambda*g(n), w(dI)=d.
+# Any finite paired menu contributes lambda per pair, regardless of direction.
+l1,l2,l3,d1,d2 = sp.symbols('"'l1 l2 l3 d1 d2', nonnegative=True)
+paired_weight = sp.simplify(sum([l1,l2,l3]) + d1+d2)
+print('three arbitrary pairs + two coins normalize to:', paired_weight,
+      '(=1 exactly when the operator menu sums to I)')
+
+# It is not a trace form: axis data force s=(0,0,1), contradicted at a fourth direction.
+g_ex = sp.Rational(1,2); g_ey = sp.Rational(1,2); g_ez = 1
+n = sp.Matrix([sqrt(3)/2, 0, sp.Rational(1,2)])
+g_rogue = sp.simplify((1+n[2]**3)/2)
+g_trace_forced_by_axes = sp.simplify((1+n[2])/2)
+print('cubic rogue: axis-forced s=(0,0,1); at n=(sqrt(3)/2,0,1/2):',
+      'rogue =', g_rogue, ', trace =', g_trace_forced_by_axes)
+
+# The full-family axis-cancellation menu kills that rogue.
+L = sp.simplify(abs(n[0])+abs(n[2]))
+c0 = sp.simplify(2/(1+L))
+axis_menu_sum = sp.simplify(c0*g_rogue + c0*n[0]*sp.Rational(1,2) + c0*n[2]*0)
+print('cubic rogue axis-menu sum =', axis_menu_sum,
+      '; defect from 1 =', sp.simplify(axis_menu_sum-1))
+
+# Lexicographic hemisphere-type step rogue also fails a generic axis menu.
+c0_diag = sp.simplify(2/(1+sqrt(3)))
+print('hemisphere rogue on positive diagonal axis-menu sum =', c0_diag,
+      '; defect =', sp.simplify(c0_diag-1))
+
+# A nonlinear-ray attack that still normalizes every paired menu.
+# h_n(t)=t/2 + eps*t*(1-t)*n_z, eps=1/4. Antipodal terms cancel.
+t,eps,z = sp.symbols('t eps z', real=True)
+h = t/sp.Integer(2)+eps*t*(1-t)*z
+h_anti = t/sp.Integer(2)+eps*t*(1-t)*(-z)
+print('nonlinear-ray paired contribution =', sp.simplify(h+h_anti))
+# Full same-direction split at n=e_z, lambda=mu=1/4.
+epsv=sp.Rational(1,4)
+def hez(q): return q/sp.Integer(2)+epsv*q*(1-q)
+split_defect=sp.simplify(hez(sp.Rational(1,4))*2-hez(sp.Rational(1,2)))
+print('nonlinear-ray same-direction additivity defect =', split_defect)
+PY" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-17T21:17:54.875241Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 177ms:
+three arbitrary pairs + two coins normalize to: d1 + d2 + l1 + l2 + l3 (=1 exactly when the operator menu sums to I)
+cubic rogue: axis-forced s=(0,0,1); at n=(sqrt(3)/2,0,1/2): rogue = 9/16 , trace = 3/4
+cubic rogue axis-menu sum = sqrt(3)/8 + 5/8 ; defect from 1 = -3/8 + sqrt(3)/8
+hemisphere rogue on positive diagonal axis-menu sum = -1 + sqrt(3) ; defect = -2 + sqrt(3)
+nonlinear-ray paired contribution = t
+nonlinear-ray same-direction additivity defect = 1/32
+
+codex
+VERDICT: PASS — no mathematical break found. T1–T3 are sound; T3b has one wording-scope caveat but no in-scope logical defect.
+
+1. T1 is exact. Expanding
+   \[
+   \sum_k c_kP(n_k)+\sum_jd_jI
+   \]
+   gives identity coefficient \(\sum c_k/2+\sum d_j\) and Pauli coefficient \(\sum c_kn_k/2\). Linear independence makes the two stated conditions necessary and sufficient. Nonzero elements of \(S\) have unique rank, coefficient, and—when rank one—direction. No menu or counterexample family is missed, including repeated effects interpreted as an indexed family/multiset.
+
+2. T2 ray additivity is sound. Both split menus have total sharp coefficient \(2\), zero Bloch vector, and every retained coefficient lies in \((0,1]\). Endpoint zero effects can be dropped because \(h(0)=0\). Subtraction yields truncated additivity exactly. Nonnegativity then gives monotonicity; \(h(p/q)=(p/q)h(1)\), followed by rational squeeze, proves real homogeneity without assuming continuity or measurability. The \(h(1)=0\) case is also covered.
+
+3. The axis-cancellation menu is always valid. For unit \(n\),
+   \[
+   1\le L=\|n\|_1\le\sqrt3,\qquad
+   \frac{2}{1+\sqrt3}\le c_0\le1,
+   \]
+   and \(0<c_0|n_a|\le1\) whenever \(n_a\ne0\). At an extreme axis, \(L=c_0=1\), and the menu reduces to the ordinary antipodal projective menu. SymPy verified exact cancellation in all eight octants and on zero-component faces.
+
+4. The elimination handles negative and zero components correctly. Complementarity gives
+   \[
+   g(\operatorname{sign}(n_a)e_a)
+   =\frac{1+\operatorname{sign}(n_a)s_a}{2},
+   \]
+   hence
+   \[
+   \sum_a|n_a|g(\operatorname{sign}(n_a)e_a)
+   =\frac L2+\frac{n\cdot s}{2}.
+   \]
+   Substitution gives \(g(n)=(1+n\cdot s)/2\). Zero components contribute zero and require no sign convention.
+
+5. Positivity and uniqueness are airtight. If \(s\ne0\), evaluation at \(n=-s/|s|\) gives \((1-|s|)/2\ge0\); if \(s=0\), the bound is immediate. The resulting matrix has eigenvalues \((1\pm|s|)/2\). Any representing density matrix must reproduce the three axis values, uniquely fixing all three components of \(s\). The coin argument is likewise valid by comparing split and merged identity menus.
+
+6. T3a normalizes every finite paired menu. Representation on \(S\) is unique away from zero, while every \(\lambda=0\) representation gives value zero. For arbitrary pairs and identity multiples,
+   \[
+   \sum_i\lambda_i[g(m_i)+g(-m_i)]+\sum_jd_j
+   =\sum_i\lambda_i+\sum_jd_j=1.
+   \]
+   This does not depend on the number, directions, or real weights of the pairs and coins.
+
+7. T3a can be proved independently of the inherited rogue. Take
+   \[
+   g(n)=\frac{1+n_z^3}{2},\qquad w(\lambda P(n))=\lambda g(n),\qquad w(cI)=c.
+   \]
+   It has the complement law and normalizes every paired menu. It cannot be a trace form: its axis values force \(s=(0,0,1)\), but at \(n=(\sqrt3/2,0,1/2)\) it gives \(9/16\), whereas that trace form gives \(3/4\).
+
+8. T3b follows within the advertised framework: F1 plus normalization over a selected menu family. Read completely outside that framework, “any forcing theorem” would be too broad because extra non-menu axioms could exclude the rogue. The surrounding “on this surface” language supplies the needed restriction.
+
+9. Non-affine attacks on full F1–F2 all failed at an identified menu:
+
+   - The cubic rogue above fails its axis-cancellation menu at \(n=(\sqrt3/2,0,1/2)\): the weight sum is \((5+\sqrt3)/8\ne1\).
+   - A lexicographic-hemisphere rogue fails the positive-diagonal axis menu: its sum is \(\sqrt3-1\ne1\).
+   - The nonlinear-ray candidate
+     \[
+     w(tP(n))=\frac t2+\frac14t(1-t)n_z
+     \]
+     stays in \([0,1]\) and normalizes every paired menu, but the \(\lambda=\mu=1/4\), \(n=e_z\) split has additivity defect \(1/32\).
+   - Pathological additive/Hamel ray deformations cannot survive because the codomain’s nonnegativity makes each ray function monotone, and bounded monotone additive functions are linear.
+
+Thus the split menus eliminate scale nonlinearity, the axis menus eliminate directional nonlinearity, and the coin menus eliminate identity-ray nonlinearity. No full F1–F2 counterexample remains.
+tokens used
+49,939
+VERDICT: PASS — no mathematical break found. T1–T3 are sound; T3b has one wording-scope caveat but no in-scope logical defect.
+
+1. T1 is exact. Expanding
+   \[
+   \sum_k c_kP(n_k)+\sum_jd_jI
+   \]
+   gives identity coefficient \(\sum c_k/2+\sum d_j\) and Pauli coefficient \(\sum c_kn_k/2\). Linear independence makes the two stated conditions necessary and sufficient. Nonzero elements of \(S\) have unique rank, coefficient, and—when rank one—direction. No menu or counterexample family is missed, including repeated effects interpreted as an indexed family/multiset.
+
+2. T2 ray additivity is sound. Both split menus have total sharp coefficient \(2\), zero Bloch vector, and every retained coefficient lies in \((0,1]\). Endpoint zero effects can be dropped because \(h(0)=0\). Subtraction yields truncated additivity exactly. Nonnegativity then gives monotonicity; \(h(p/q)=(p/q)h(1)\), followed by rational squeeze, proves real homogeneity without assuming continuity or measurability. The \(h(1)=0\) case is also covered.
+
+3. The axis-cancellation menu is always valid. For unit \(n\),
+   \[
+   1\le L=\|n\|_1\le\sqrt3,\qquad
+   \frac{2}{1+\sqrt3}\le c_0\le1,
+   \]
+   and \(0<c_0|n_a|\le1\) whenever \(n_a\ne0\). At an extreme axis, \(L=c_0=1\), and the menu reduces to the ordinary antipodal projective menu. SymPy verified exact cancellation in all eight octants and on zero-component faces.
+
+4. The elimination handles negative and zero components correctly. Complementarity gives
+   \[
+   g(\operatorname{sign}(n_a)e_a)
+   =\frac{1+\operatorname{sign}(n_a)s_a}{2},
+   \]
+   hence
+   \[
+   \sum_a|n_a|g(\operatorname{sign}(n_a)e_a)
+   =\frac L2+\frac{n\cdot s}{2}.
+   \]
+   Substitution gives \(g(n)=(1+n\cdot s)/2\). Zero components contribute zero and require no sign convention.
+
+5. Positivity and uniqueness are airtight. If \(s\ne0\), evaluation at \(n=-s/|s|\) gives \((1-|s|)/2\ge0\); if \(s=0\), the bound is immediate. The resulting matrix has eigenvalues \((1\pm|s|)/2\). Any representing density matrix must reproduce the three axis values, uniquely fixing all three components of \(s\). The coin argument is likewise valid by comparing split and merged identity menus.
+
+6. T3a normalizes every finite paired menu. Representation on \(S\) is unique away from zero, while every \(\lambda=0\) representation gives value zero. For arbitrary pairs and identity multiples,
+   \[
+   \sum_i\lambda_i[g(m_i)+g(-m_i)]+\sum_jd_j
+   =\sum_i\lambda_i+\sum_jd_j=1.
+   \]
+   This does not depend on the number, directions, or real weights of the pairs and coins.
+
+7. T3a can be proved independently of the inherited rogue. Take
+   \[
+   g(n)=\frac{1+n_z^3}{2},\qquad w(\lambda P(n))=\lambda g(n),\qquad w(cI)=c.
+   \]
+   It has the complement law and normalizes every paired menu. It cannot be a trace form: its axis values force \(s=(0,0,1)\), but at \(n=(\sqrt3/2,0,1/2)\) it gives \(9/16\), whereas that trace form gives \(3/4\).
+
+8. T3b follows within the advertised framework: F1 plus normalization over a selected menu family. Read completely outside that framework, “any forcing theorem” would be too broad because extra non-menu axioms could exclude the rogue. The surrounding “on this surface” language supplies the needed restriction.
+
+9. Non-affine attacks on full F1–F2 all failed at an identified menu:
+
+   - The cubic rogue above fails its axis-cancellation menu at \(n=(\sqrt3/2,0,1/2)\): the weight sum is \((5+\sqrt3)/8\ne1\).
+   - A lexicographic-hemisphere rogue fails the positive-diagonal axis menu: its sum is \(\sqrt3-1\ne1\).
+   - The nonlinear-ray candidate
+     \[
+     w(tP(n))=\frac t2+\frac14t(1-t)n_z
+     \]
+     stays in \([0,1]\) and normalizes every paired menu, but the \(\lambda=\mu=1/4\), \(n=e_z\) split has additivity defect \(1/32\).
+   - Pathological additive/Hamel ray deformations cannot survive because the codomain’s nonnegativity makes each ray function monotone, and bounded monotone additive functions are linear.
+
+Thus the split menus eliminate scale nonlinearity, the axis menus eliminate directional nonlinearity, and the coin menus eliminate identity-ray nonlinearity. No full F1–F2 counterexample remains.

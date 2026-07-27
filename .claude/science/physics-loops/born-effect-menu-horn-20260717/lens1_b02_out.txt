@@ -1,0 +1,3417 @@
+2026-07-17T21:14:12.846340Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f71ee-094c-7291-95e4-e60451f333a0
+--------
+user
+READ-ONLY adversarial review lens (convention/sign), block02. No file writes, no git. Verdict = final message.
+Read exactly: (1) docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md (2) scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py
+Hunt convention/sign defects: the axis-cancellation menu construction (signs of the opposite-axis elements; the |n_a| weights; c0 = 2/(1+L)); the affinity elimination's complement direction (g at MINUS axes vs plus axes); L in [1, sqrt(3)] claim; the lex-tuple order (n_z,n_y,n_x) at every use; u-direction; the sigma sign in T2f; the note's formula g(n) = (1+L)/2 − Σ|n_a| g(−sign(n_a)e_a) = (1−L)/2 + Σ|n_a| g(sign(n_a)e_a) — recompute this chain yourself. Recompute anything suspicious symbolically (HEREDOC snippets fine, no file writes).
+Output: "VERDICT: <n> blocker(s), <m> major, <k> minor" + numbered findings with exact locations and fixes; if clean, name the three likeliest failure points and why they pass.
+
+codex
+I’ll perform the requested read-only convention/sign audit on exactly those two files, including an independent symbolic recomputation of the affinity-elimination identity. I’ll use the review-loop skill because this is an explicit adversarial review request; I’ll first read its instructions, then inspect only the scoped artifacts.
+exec
+/bin/zsh -lc "sed -n '1,240p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+---
+name: review-loop
+description: Use when an LLM agent needs to run `/review-loop`, review branch changes, run parallel physics-specific reviewers, identify overclaims/imported values/support-only material, apply narrow honest fixes, verify audit-system compatibility without applying audit verdicts, and re-review only files changed by those fixes.
+---
+
+# Review Loop
+
+## Skill Freshness
+
+Before applying this skill, perform the repo skill freshness check described in
+`docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`. If a newer version of
+this `SKILL.md` exists on `origin/main`, follow that version for the current
+task.
+
+Run a local review/fix/re-review loop for this physics repo. This is not a
+generic software review. Its job is to protect the live claim boundary:
+retained/Nature-grade claims must have artifact support, imported values must
+be explicit, and support-only results must not be promoted by prose.
+
+## Model And Tool Boundary
+
+Review-loop is a text/code/math review path. Run it with the user's configured
+highest-tier Codex reviewer model and maximum available reasoning for this
+repo (currently GPT-5.5 at extra-high/xhigh reasoning in the local Codex
+configuration). Do not switch to lower-reasoning models for convenience, and
+do not use image-generation, image-editing, presentation, document-rendering,
+or visual-generation tools unless the user explicitly asks for a separate
+visual artifact task.
+
+If a run surfaces an image-generation model/tool error such as a stale
+`gpt-image-*` tool configuration, treat it as a local Codex tooling/config
+problem, not as part of review-loop. Do not retry the review by invoking
+imagegen, changing the science-review model, or routing science review through
+visual tooling.
+
+This skill is **review only**. It may make branch/package hygiene changes that
+allow the independent audit system to parse and queue claims, but it must not
+apply audit verdicts, write `audited_clean`, or run the audit worker.
+Audit results have a strict provenance boundary: review-loop must never land
+PR-submitted audit verdicts, audit-status promotions/demotions, effective-status
+changes, auditor transcripts, or `apply_audit.py` outputs as authority. Audits
+come only from the independent post-landing audit loop. PRs may land source
+repairs, runners, controlled-data dispatch sidecars, and explicit audit or
+re-audit targeting metadata when those are review-clean; they may not carry the
+answer to the audit they request.
+It must not create or open pull requests. When reviewing an existing PR or
+branch, review-loop either fixes/narrows that existing landing path and lands it
+when requested, or rejects/closes it with a clear reason. Salvage, dependency
+chain repair, audit queue regeneration, and parent re-audit gates are part of
+that same landing path, not follow-up PRs.
+Delete a closed PR's head branch **only when durable content actually landed** --
+its reviewed content was salvaged to `main`, or it was merged. In that case run
+`gh pr close <N> --delete-branch` (or `git push origin --delete <head>` after a
+manual close) so stale heads do not accumulate on `origin` (review-loop closes
+rather than merges, so GitHub's auto-delete-on-merge never fires). **Do NOT
+delete the head branch when a PR is closed without landing its content** --
+rejected as non-landable with nothing salvaged, or with salvage deferred to a
+later pass: keep that branch as the working handle on the un-landed work. Never
+delete a head that still backs another open PR, nor `main` or a protected
+branch. (Closed PRs retain their commits either way; the live branch matters as
+the recovery handle precisely when the content did not land.)
+It auto-corrects status vocabulary and terminology so a PR follows repo
+conventions by running `scripts/vocab_lint.py --fix` on all
+branch-modified files before any landing gate. Vocabulary is canonical
+in
+[`docs/repo/controlled_vocabulary.yaml`](../../../repo/controlled_vocabulary.yaml)
+(design in
+[`VOCABULARY_HYGIENE_DESIGN.md`](../../../repo/VOCABULARY_HYGIENE_DESIGN.md)).
+Routine local drift that has a non-link-aware rewrite rule, such as legacy
+aliases and deprecated wording, is rewritten mechanically as part of the
+same review commit; this is never a science blocker. Link-aware filename
+suffix migrations and F-letter finding-label migrations are reported but
+deferred to Cleanup-2 tooling. Genuinely new terms, pending link-aware
+renames, or pending F-letter migrations that `vocab_lint` cannot
+mechanically rewrite are recorded as
+`prose_status: needs_human_vocab_decision` for the periodic
+vocab-extension review; they do not block the landing. Review-loop
+must not introduce new repo-wide axioms, new theory
+language, new retained-surface claims, framework primitives, or new
+foundational premises without explicit user approval. Imports are allowed for
+bounded theorem surfaces when they are scoped, labelled, and
+dependency-checked; repo-wide axiom additions and primitive additions are not
+review-loop fixes.
+
+Review-loop must keep accepted premise classes distinct. Repo-wide axioms and
+explicitly approved framework primitives are registered in
+`docs/audit/data/axiom_premise_nodes.json` and chain-satisfy dependencies
+without making downstream rows `retained_bounded`. Tier-A admitted derivation
+targets are registered in `docs/audit/data/tier_a_admissions.json` and
+chain-satisfy only at `retained_bounded` until retired by a retained
+derivation. Record is part of the approved `minimal_axioms` node in its narrow
+permanent-record form, not a Tier-A admission; the older
+`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` parent is not an axiom-premise node.
+The scale-reference primitive is the approved units primitive, not a Tier-A
+admission or a bounded Planck import. The kinetic-isotropy primitive is the
+approved structural OS0 kinetic-form isotropy `c_t = c_s`, not a Tier-A
+admission or a bounded-status source; it supplies no dynamics, Lorentz-closure
+theorem, absolute scale, spacing-ratio theorem, mass ratio, coupling, mixing
+angle, phase, selector, readout bridge, probability rule, normalization rule,
+or empirical match. New axioms and new primitives both require explicit owner
+approval and a reviewed registry/policy update before review-loop may treat
+them as accepted premises.
+Before naming a changed dependency as an import, wall, Tier-A admission, or
+bounded-status source, perform the primitive registry check in
+`docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`. In particular, if
+the dependency is only the registered `scale_reference_primitive`, treat the
+Planck scale reference as already granted units conversion and do not mark the
+row `retained_bounded` on that basis. If the dependency is only the registered
+`kinetic_isotropy_primitive`, treat `c_t = c_s` as already granted structural
+kinetic-form isotropy and do not bound the row on that basis; audit only the
+extra dynamics, closure theorem, observable, or empirical content actually
+claimed. If the dependency is only the registered `realized_state_primitive`,
+treat pointwise evaluation at the supplied realized state as already granted
+and do not bound the row on that basis; audit only any averaging, typicality
+or genericity predicate, weighting, or state-contingent value actually
+claimed.
+
+The framework baseline (per `MINIMAL_AXIOMS_2026-06-29.md`) is the four named
+axioms Lattice, Qubit, Admissibility, and Record. Lattice is the cubic `Z^3`
+lattice with nearest-neighbor adjacency, standard translations, and proper
+cubic rotations about each site; no site is privileged, and sites are
+distinguished by the supplied lattice structure alone. Qubit is the domain of
+local possibilities with full one-site algebraic presentation `M_2(ℂ)`;
+`Cl(3,0)` is equivalent notation, not extra primitive structure, and no
+possibility is privileged; possibilities are distinguished by the supplied
+algebraic structure alone.
+Admissibility is one fixed finite-neighborhood rule, the same at every lattice
+translate; for each site, the available possibilities are determined by, and
+vary with, the nearest-neighbor conditions, consistent with local records. A
+record, when present, locks exactly one admissible local possibility. A site
+never carries more than one record; records are permanent. Only records are
+readable; a readout value is
+determined by record content alone;
+finite scalar readout is additive over finite pairwise-disjoint record
+collections. A state is a configuration of records. A law privileges no states:
+its domain is a supplied condition, and where that condition holds it gives
+exactly one answer. Additional
+structures such as readout-context selection, decomposition, `K`/CPT
+structure, sector-generation rules, weighting, normalization, probability,
+measurement/decoherence dynamics, record-production dynamics, physical
+persistence dynamics, occurrence rules, update laws, time metric,
+within-sector data, occupancy rules, P2/modulus, log-det readouts,
+source/action bridges, scale, local observability, law-admissibility or
+transition relations, kinetic-branch selection, or arbitrary observable
+identification remain compatible downstream targets, but require derivation,
+bridge, explicit admission, or approved primitive registration before use as
+load-bearing content. Do not
+land new science under bare letter-number names such as `A1`, `A2`, `G1`,
+or `R3`; those labels are overloaded with axioms, assumptions, Lie
+types, lane stages, route codes, and branch blocks. Use the explicit
+scientific name on live science surfaces; archival aliases belong
+only in clearly historical work-history/archive material. Review-loop must
+not treat the framework baseline as a
+new axiom, new admitted premise, regulator interpretation, or optional
+theory language. Correcting a PR back to this repo language is allowed. This
+does not promote downstream science by itself: physical-species
+identifications, `C_3`-breaking selectors, kinetic-branch selectors,
+readout/scale/unit bridges, and empirical matches remain separate
+bounded/open inputs unless they have their own retained-grade derivation and
+independent audit closure.
+
+The bar is intentionally high: if review-loop is doing its job, the later
+fresh-context audit should be mostly confirmatory. Do not pass branches that
+leave the audit lane to discover basic claim-boundary, dependency-graph,
+status-vocabulary, or runner-validity defects. Do not lose durable science
+when a PR fails that bar: before closing or rejecting a branch, run the
+salvage pass below and preserve any narrow, runner-backed lemma that can be
+made canonical without changing the science.
+Review-loop is still not the audit loop: it must never apply verdicts or
+describe its review as an audit. Its job is to decide whether source/tooling
+math, claim boundaries, and repo language are honest enough to land and be
+sent to the independent auditor afterward.
+Non-science PRs require the same discipline: do not reject generated
+audit/status or hygiene-only work just because it is not theorem science.
+First decide whether it exposes a real audit-graph, cache, queue,
+normalization, dependency-chain, or audit-readiness defect. If it does,
+salvage the value into durable source, tooling, pipeline, or controlled-data
+repairs and regenerate the generated surfaces from that repair.
+Audit-dispatch manifests are a special non-science case. If a PR lands a
+source note whose purpose is to request future re-audit, retagging, cascade
+repair, or batch audit selection, review-loop is not done when the source note
+lands. It must also make the request machine-visible by adding or updating a
+supported dispatcher sidecar under `docs/audit/data/`, rerunning the audit
+pipeline, and verifying the target appears in `docs/audit/AUDIT_DISPATCH_QUEUE.md`
+or `docs/audit/data/audit_dispatch_queue.json`. The dispatch manifest is
+target-selection metadata only; it must not be passed to auditors as evidence
+and must not apply audit verdicts.
+
+## Arguments
+
+Parse:
+
+- focus text: optional free-text review focus;
+- `--max-iterations N`: optional cap, default `5`;
+- `--no-fix`: review only, do not edit;
+- `--no-commit`: fix locally but do not create iteration commits.
+
+## Setup
+
+1. Read the local review/governance surfaces before judging status:
+   - `docs/repo/REVIEW_FEEDBACK_WORKFLOW.md`
+   - `docs/repo/ACTIVE_REVIEW_QUEUE.md`
+   - `docs/repo/CONTROLLED_VOCABULARY.md`
+   - `docs/CANONICAL_HARNESS_INDEX.md`
+   - `docs/audit/README.md`
+   - `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md`
+   - `docs/audit/data/axiom_premise_nodes.json` and the source notes named by
+     relevant primitive nodes
+   - `docs/audit/data/tier_a_admissions.json`
+   - `docs/publication/ci3_z3/` when publication-facing files changed
+   - `docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX.md` when
+     quantitative or imported-value claims changed
+2. Determine the base ref:
+   - prefer `origin/main` if present;
+   - otherwise use `main`;
+   - if the current branch is the base branch, use `HEAD~1`.
+3. Compute the review base with `git merge-base HEAD <base-ref>`.
+4. Build the original changed-file set from committed, staged, unstaged, and
+   untracked changes. Do not review outside this set except interacting files
+   that are also in this original set.
+5. Record whether the worktree was initially clean. If it was dirty, do not
+   auto-commit without explicit user permission unless the slash-command
+   invocation clearly requested commit-producing fixes.
+6. If the task is to review open/non-landed PRs, include all non-merged,
+   non-draft PRs in the requested scope except PRs the user explicitly
+   excluded. Draft PRs are out of scope: ignore them entirely and do not land
+   them unless the user explicitly asks to inspect a draft PR without landing
+   it. Closed-but-unmerged PR heads can be inspected with `gh pr view` and
+   `git fetch origin pull/<N>/head:refs/tmp/pr-<N>`.
+
+Useful commands:
+
+```bash
+git diff --name-only <base>...HEAD
+git diff --name-only --cached
+git diff --name-only
+git ls-files --others --exclude-standard
+git diff <base>...HEAD -- <files>
+git diff --cached -- <files>
+git diff -- <files>
+
+exec
+/bin/zsh -lc "sed -n '241,520p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+```
+
+For untracked files, include their full content or a concise new-file summary
+in reviewer prompts.
+
+## Stale PR Integration Guard
+
+When landing one or more PRs, protect already-landed science before applying
+any branch content. A PR branch may be based before another PR just landed, so
+checking out whole files from that stale PR head can erase current-main source
+science in shared files.
+
+For every PR before integration:
+
+```bash
+git fetch origin main pull/<N>/head:refs/tmp/pr-<N>
+pr_base=$(git merge-base origin/main refs/tmp/pr-<N>)
+comm -12 \
+  <(git diff --name-only "$pr_base"..origin/main | sort) \
+  <(git diff --name-only "$pr_base"..refs/tmp/pr-<N> | sort)
+```
+
+If the overlap list is non-empty, or if earlier PRs have landed during the
+same review-loop run, do **not** run `git checkout refs/tmp/pr-<N> -- <file>`
+for those paths. Integrate the PR's delta against its merge base with a
+three-way patch, rebase/merge, or cherry-pick source commits, then resolve any
+conflicts by preserving both current-main science and the salvageable PR
+science:
+
+```bash
+git diff --binary "$pr_base"..refs/tmp/pr-<N> -- <source paths> > /tmp/pr<N>.patch
+git apply --3way /tmp/pr<N>.patch
+```
+
+Whole-file checkout from a PR head is allowed only when the file is new on the
+PR or when `git diff --quiet "$pr_base"..origin/main -- <file>` proves current
+`main` has not changed that path since the PR base. For every overlapped
+source path, do a science-loss guard after integration: the current-main diff
+from `pr_base` to `origin/main` must still be represented in the final file.
+If that cannot be verified quickly, stop and treat it as a blocking integration
+hazard rather than risking science loss.
+
+Generated audit JSON/Markdown is a special case: do not hand-merge generated
+files from stale PR heads. Resolve source files first, prefer the current
+`origin/main` generated audit surface, then rerun the audit pipeline and strict
+lint to regenerate it.
+
+## Reviewer Fanout
+
+On each iteration, set `files_to_review` to the files that changed since their
+last clean review. On iteration 1, use all original changed files.
+
+Run all applicable reviewers in parallel through the available agent/subagent
+mechanism. If parallel agents are unavailable, run the same reviewer passes
+locally and report that limitation.
+
+### Required Reviewers
+
+- `CodeRunnerReviewer`
+  Review changed Python/scripts/log-producing code. Check syntax, decisive
+  assertions, hard-coded targets, stale fixtures, literal `True` checks,
+  hidden observations, reproducibility, paired runner/output agreement, and
+  whether the runner actually tests the note's load-bearing bridge. If a
+  runner checks audit-ledger dependency status, it must use the current
+  retained-grade set (`retained`, `retained_bounded`, `retained_no_go`) rather
+  than hard-coding stale expectations such as exactly `retained`.
+  For math-bearing runners, PASS output is not enough. Extract every
+  load-bearing formula, sign, factor, normalization, matrix identity,
+  optimizer objective, and expected numeric value from the changed code and
+  note, then verify them by an independent route before landing: manual
+  derivation against the note, symbolic simplification, small-case exhaustive
+  enumeration, a second implementation that does not share the same expression,
+  or invariant/limit/property checks. Treat self-confirming tests, expected
+  values generated by the same implementation under review, missing factor/sign
+  checks, or stale reopened bug reports as blocking until the formula is
+  corrected or the claim is demoted to a narrower supported boundary.
+
+- `PhysicsClaimReviewer`
+  Attack theorem notes, claims tables, publication surfaces, and prose. Check
+  semantic bridges, selector assumptions, status labels, exact/bounded/support
+  boundaries, and code/prose drift.
+
+- `ImportSupportReviewer`
+  Inventory every measured, fitted, literature, PDG, cosmological,
+  normalization, boundary-condition, or convention input. Classify each as
+  `zero-input structural`, `framework-derived`, `one computed lattice input`,
+  `admitted normalization/boundary condition`, `standard/literature
+  correction`, `observational comparator`, `support-only`, `insensitive
+  nuisance`, or `unjustified import`. For a Nature-grade retention claim, every
+  import must be derived, admitted with a narrow role, quantitatively
+  insensitive, or the claim must be demoted.
+
+- `NatureRetentionReviewer`
+  Apply the hostile external-review bar. Ask whether the result can honestly
+  be called retained/Nature-grade: no hidden unit identification, no structural
+  redefinition, no imported selector, no unsupported first-principles claim,
+  no unmatched observed target, and clear falsifiers/open gates. Output
+  `RETAINED`, `RETAINED SUPPORT`, `BOUNDED`, `OPEN`, `NO-GO`, or `REJECT`.
+
+- `NoGoDisciplineReviewer`
+  Scrutinize negative claims with the same rigor as positive ones. Trigger
+  this reviewer whenever changed content includes a `no_go`, `stretch_attempt`,
+  `bounded_with_named_walls`, or derived-no-go-boundary artifact, or when any
+  other reviewer in this fanout outputs `NO-GO` / `BOUNDED` / `OVERCLAIM` on
+  a negative claim. The reviewer must invoke the `no-go-discipline` skill
+  and walk N1-N8 against the branch content (see
+  [`docs/ai_methodology/skills/no-go-discipline/SKILL.md`](../no-go-discipline/SKILL.md)):
+  N1 alternative-route enumeration (≥5 distinct routes), N2
+  wall-independence audit, N3 hidden-wall scan, N4 residual matching,
+  N5 rhetoric audit (per-element / per-mode / per-block / lattice-wide
+  resolutions), N6 partial-closure path scan (convention-reframe vs new
+  axiom), N7 steelman, N8 cross-cycle echo. Output `PASS` (negative claim
+  honestly scoped) or `FAIL` with the failing checklist items named and the
+  narrowest demoted claim proposed (`partial-attempt-with-named-untested-routes`,
+  `partial-narrowing`, `bounded-with-corrected-wall-count`, or
+  `stretch-attempt-with-honest-residual`). The reviewer must not approve a
+  no-go that has not been stress-tested against the framework's full
+  authority surface — under-tested negative claims are at least as harmful
+  as overclaimed positive ones because they foreclose investigation paths
+  permanently.
+
+- `LabelingConventionReviewer`
+  Detect labeling/naming/convention content masquerading as a bounded
+  theorem. Trigger whenever changed content includes a `bounded_theorem`
+  candidate whose load-bearing claim is a labeling/naming/convention
+  statement (parallel to the u/c/t mass-ordering convention or the
+  e/μ/τ charged-lepton naming) rather than an algebraic claim with
+  explicit named admissions. A labeling convention has no propositional
+  content to admit, so `retained_bounded` grade does not apply — the
+  grade is for algebraic claims with explicit named premises, not for
+  stipulations about names.
+
+  The right outcome is to split:
+  (i) the algebraic core (if any) ships as a narrow `positive_theorem`
+      or `bounded_theorem` with the algebraic premises explicit;
+  (ii) the labeling content ships as a separate `meta` convention note,
+       parallel to the No-Go Discipline Battery's labeling-vs-physics
+       check in
+       `docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md`
+       ("If labeling, the right outcome is a `meta` convention note").
+
+  Output `PASS` if the candidate is genuinely algebraic with named
+  admissions, `SPLIT-REQUIRED` if labeling content is bundled with
+  algebraic content (ship the algebraic theorem narrow + the convention
+  as a separate `meta` note), or `DEMOTE-TO-META` if the candidate is
+  purely convention with no derivation. The reviewer must not approve a
+  `bounded_theorem` whose load-bearing content is a labeling stipulation
+  — conflating conventions with bounded theorems hides which premises
+  are actually load-bearing and prevents downstream rows from cleanly
+  identifying their dependency status. Downstream costs of the
+  conflation: the bundled convention becomes an undischargeable
+  "premise" that blocks the row from reaching retained-unbounded;
+  downstream rows that cite the bundled bounded_theorem inherit an
+  unstated convention dependency; the audit lane cannot cleanly verify
+  "all premises retained" because the convention is not propositional
+  content; and future agents may waste cycles trying to "prove" the
+  convention as if it were derivable.
+
+- `RepoGovernanceReviewer`
+  Check placement and authority surfaces. Ensure live findings route through
+  `docs/repo/ACTIVE_REVIEW_QUEUE.md`, long packets go under
+  `docs/work_history/repo/review_feedback/`, publication edits update the
+  relevant `docs/publication/ci3_z3/` surfaces, status wording follows
+  `docs/repo/CONTROLLED_VOCABULARY.md`, and changed claim notes are compatible
+  with the audit lane's propose/ratify split. Also verify that load-bearing
+  dependencies are real markdown links that seed the citation graph, not just
+  code-formatted file names in prose. Block ambiguous new science names such
+  as bare `A1`, `A2`, `G1`, `R3`, `Route F`, or `Block 2` when they appear as
+  titles, primary table labels, claim scopes, runner headlines, or review
+  findings without an explicit scientific noun phrase. Block repo-wide axiom
+  additions, nonstandard theory vocabulary, or new foundational claims unless
+  the user explicitly approved that change; vocabulary corrections back to
+  repo conventions are allowed.
+  Block branch-local or draft-PR language from landing on repo-facing surfaces.
+  Long-lived draft wording, PR-specific labels, campaign names, and branch-only
+  framings must be translated into native repo vocabulary before merge
+  (including language leaked from PR230 or any similar draft branch). If a
+  scientific claim is otherwise salvageable, fix the vocabulary in the landing
+  commit instead of rejecting the science.
+
+### Optional Reviewer
+
+Run `MethodologySkillReviewer` when files under `docs/ai_methodology/skills/`,
+`docs/ai_methodology/`, or `.claude/commands/` changed. Check that the skill is
+concise, triggerable from its frontmatter/command name, aligned with the AI
+methodology lane, and not claiming physics authority.
+
+## Reviewer Prompt
+
+Use this prompt shape for each reviewer, filtered to only that reviewer's file
+scope:
+
+````text
+Review the following physics-repo changes.
+
+Files to review:
+<files>
+
+Diff/content:
+```diff
+<diff for only those files; include untracked file content separately>
+```
+
+Focus:
+<focus text or "None specified">
+
+Context:
+- Base ref: <base-ref>
+- Iteration: <N> of <max>
+- Already reviewed and unchanged: <reviewed_files>
+- Repo review surfaces: REVIEW_FEEDBACK_WORKFLOW, ACTIVE_REVIEW_QUEUE,
+  CONTROLLED_VOCABULARY, CANONICAL_HARNESS_INDEX, docs/audit/README.md
+
+Rules:
+- Findings must cite file/line when possible.
+- Separate bugs, overclaims, support-only demotions, imported-value problems,
+  repo-governance problems, and nits.
+- Do not require new science for wording problems.
+- Do not approve retained/Nature-grade language if an import or bridge remains
+  hidden.
+- Do not apply audit verdicts. Review only whether the branch is ready for the
+  independent audit worker.
+- Do not approve new bare letter-number science names. Require explicit names
+  from CONTROLLED_VOCABULARY, with shorthand only as a parenthetical alias.
+- Do not approve a `NO-GO` or `BOUNDED with named walls` recommendation
+  without running `no-go-discipline` N1-N8 against the branch content. An
+  unscrutinized negative claim forecloses investigation paths permanently and
+  is at least as harmful as an overclaimed positive.
+````
+
+## Consolidate Findings
+
+Present one iteration summary:
+
+```text
+## Review Results (Iteration N)
+
+### Code / Runner: PASS | RISK | FAIL
+### Physics Claim Boundary: RETAINED | SUPPORT | BOUNDED | OPEN | REJECT
+### Imports / Support: CLEAN | DISCLOSED | DEMOTE | FAIL
+### Nature Retention: RETAINED | RETAINED SUPPORT | BOUNDED | OPEN | NO-GO | REJECT
+### No-Go Discipline: PASS | FAIL | NOT APPLICABLE
+### Labeling Convention: PASS | SPLIT-REQUIRED | DEMOTE-TO-META | NOT APPLICABLE
+### Repo Governance: PASS | FIX | QUEUE | ARCHIVE
+### Audit Compatibility: PASS | FIX | BLOCKED | NOT APPLICABLE
+### Methodology Skill: PASS | FIX | SKIPPED
+```
+
+Classify every finding:
+
+- `BUG`
+- `OVERCLAIM`
+- `NO_GO_OVERCLAIM`
+- `IMPORTED_VALUE`
+- `SUPPORT_ONLY_DEMOTION`
+- `MISSING_ARTIFACT`
+- `SEMANTIC_BRIDGE`
+- `REPO_GOVERNANCE`
+- `AUDIT_COMPATIBILITY`
+- `NIT`
+- `SALVAGE_CANDIDATE`
+- `SALVAGE_REJECT`
+
+Stop immediately when all applicable reviewers are clean.
+
+## Salvage Pass
+
+Run this pass before closing a PR, marking it non-landable, or discarding a
+stretch/campaign packet. The goal is to preserve meaningful science without
+lowering the review bar.
+
+1. Inventory the branch into these buckets:
+   - canonical source candidates: theorem/no-go/open-gate notes and paired
+     runners;
+   - useful negative results: failed routes that name a durable obstruction and
+     have a runner or exact calculation;
+   - support-only calculations: exact algebra or bookkeeping that may be useful
+     as bounded support but not as retained/Nature-grade science;
+   - audit/process hygiene: dependency-graph repairs, audit queue unlocks,
+     stale runner-cache detection, generated-data normalization, cycle-break
+
+exec
+/bin/zsh -lc "sed -n '521,820p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     hygiene, and pipeline/tooling fixes that make audit results more reliable;
+   - non-source material: claim-status certificates, handoffs, campaign state,
+     generated audit files, expected audit verdicts, and branch-local logs.
+2. For each source candidate, decide whether it can be salvaged with only
+   review-level edits:
+   - the claim can be narrowed to a canonical `claim_type`:
+     `positive_theorem`, `bounded_theorem`, `no_go`, `open_gate`,
+     `decoration`, or `meta`;
+   - all imported physics, textbook machinery, observations, fitted values,
+     and conventions are explicitly labelled;
+   - the runner tests the actual load-bearing bridge, not just downstream
+     arithmetic after the premise is assumed;
+   - load-bearing dependencies can be represented as markdown links and
+     non-load-bearing siblings can be kept out of the citation graph;
+   - the salvage does not rely on a closed, unlanded, unaudited, or rejected
+     sibling PR unless the dependency is copied in as a self-contained
+     derivation and reviewed in the same salvage branch.
+3. Do not salvage by papering over missing science. If the durable part is
+   only an obstruction or failed route, salvage it as a narrow `open_gate` or
+   `no_go` only when the runner directly supports that negative boundary.
+4. Strip all non-source material from salvage branches:
+   claim-status certificates, handoffs, campaign state, expected audit
+   verdicts, `target_effective_status_*`, `audit_status = ...`, generated audit
+   verdict payloads, and branch-local logs.
+5. Prefer small salvage slices grouped by coherent topic. Split unrelated
+   lemmas rather than bundling them only because they came from the same failed
+   PR, but do not open follow-up PRs for those slices. Land them through the
+   current requested landing path or report that the work cannot be landed yet.
+6. Run the normal audit-system compatibility gate on every salvage slice.
+   The resulting rows must remain `unaudited`; the independent audit lane owns
+   all verdicts.
+7. For audit/process hygiene, preserve the durable repair rather than the
+   generated symptom. Land source/tooling/pipeline/controlled-data changes when
+   they strengthen the repo or unblock auditing without changing science.
+   Regenerate audit JSON/Markdown from the pipeline afterward only from the
+   reviewed source repair on current `main`. Do not land PR-authored
+   `effective_status`, `intrinsic_status`, `audit_status`, auditor-output,
+   previous-audit, or expected-verdict edits as the authority for the change.
+   Source repairs may intentionally invalidate a prior row hash and make a row
+   visible for re-audit; that is allowed. The independent audit loop must still
+   produce the verdict after landing.
+8. If no salvage is possible, leave a concise PR comment or review summary
+   saying why, for example: "runner only rechecks assumed premise",
+   "claim depends on closed sibling", "noncanonical stretch packet with no
+   theorem-grade boundary", or "overbroad theorem not supported by runner".
+
+Salvageable examples:
+
+- a parity/counting/no-go lemma with a decisive finite algebra runner;
+- a conditional textbook lemma that is useful only when explicitly marked as
+  bounded support;
+- a negative route that conclusively rules out one proposed mechanism and
+  narrows the remaining open gate;
+- an audit-hygiene PR whose generated status change reveals a real durable
+  graph/tooling/pipeline defect, salvaged as the underlying repair plus
+  regenerated audit outputs.
+
+Not salvageable without a new research task:
+
+- branch-local certificates and handoffs with no source theorem;
+- broad "closing derivations" whose runner assumes the missing bridge;
+- expected audit verdicts or status-elevation packages;
+- stretch-attempt notes that document research direction but do not define a
+  canonical theorem/no-go/open-gate boundary.
+
+## Fix Policy
+
+If `--no-fix` was passed, do not edit.
+
+Otherwise apply the narrowest honest fix:
+
+1. Fix verified code bugs, broken reproduction commands, stale runner names,
+   false PASS checks, and code/prose mismatches.
+2. Demote overclaimed status when the artifact supports only support/bounded
+   language.
+3. Mark imported values explicitly; distinguish derived, admitted, fitted,
+   measured, literature, boundary-condition, and insensitive nuisance inputs.
+4. Add or repair paired runner/note references only when the artifact exists.
+5. Make audit-system hygiene fixes only when they do not change the science:
+   status-line tier labels, machine-local path removal, stale runner transcript
+   refreshes, generated audit queue/ledger seeding, and discoverability wiring.
+6. Rename ambiguous science shorthand to explicit repo vocabulary without
+   changing the claim boundary. Examples: write `one-qubit operator algebra`
+   (or equivalently `M_2(ℂ) ≅ Cl(3,0)`, `physical Cl(3) local algebra` as
+   the real-algebra reading — all co-equal labels for the same retained
+   algebra-isomorphism class), `Z^3 lattice`,
+   `Koide Frobenius-equipartition condition`, or `Lie type A_1` instead of
+   bare `A1` / `A2`.
+7. Update `docs/repo/ACTIVE_REVIEW_QUEUE.md` for live unresolved findings.
+8. Route detailed resolved packets to
+   `docs/work_history/repo/review_feedback/` only when a long packet is needed.
+9. When a PR is non-landable but salvageable, preserve only the durable
+   note/runner content, make the claim boundary canonical, and land that source
+   salvage through the current requested landing path. If the rejected branch
+   contains substantial non-source packet material, use a clean temporary
+   worktree for integration, but do not create or open a follow-up PR.
+
+Skip:
+
+- nits;
+- suspected findings without evidence;
+- ambiguous science gaps that need new derivation;
+- attempts to paper over missing theorem steps with confident prose;
+- repo-wide axiom additions, new theory terminology, or new foundational
+  premises that lack explicit user approval;
+- broad refactors unrelated to the finding.
+
+## Audit-System Compatibility Gate
+
+This gate is mandatory when a branch adds or edits source notes, runners,
+claim tables, lane stubs, or publication/control-plane files.
+
+The review loop must enforce the audit lane's propose/ratify split without
+performing the independent audit:
+
+**Audit-hash churn guard.** Non-semantic hygiene sweeps on audited source notes
+can be scientifically harmless while still invalidating large parts of the
+audit ledger, because note hashes are source-content hashes. Before landing any
+branch that touches many existing claim-note files for formatting, link-target,
+path, vocabulary, or other non-science cleanup, run the pipeline in validation
+mode and inspect the `seed_audit_ledger.py` / `invalidate_stale_audits.py`
+counts. If the change would reset or requeue already-audited rows solely due to
+non-semantic churn, do not land the broad source sweep. Either narrow the PR to
+non-ledger/non-claim surfaces, land a reviewed hash/canonicalization tooling
+repair first, or ask for explicit user approval to spend the audit capacity.
+Never trade a clean audit graph for cosmetic source-note churn without making
+that cost explicit.
+
+0. Before applying a PR, inventory any audit-status surface it touches:
+
+```bash
+git diff --name-only <pr-base>..refs/tmp/pr-<N> -- \
+  docs/audit/AUDIT_LEDGER.md docs/audit/AUDIT_QUEUE.md docs/audit/data \
+  'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md'
+git diff <pr-base>..refs/tmp/pr-<N> -- docs/audit docs/publication/ci3_z3 \
+  | grep -E 'audit_status|effective_status|audited_clean|audited_conditional|audited_failed|audited_renaming|audited_decoration|audited_numerical_match|previous_audits|audit_result|verdict'
+```
+
+Treat this output as a provenance review, not as a merge recipe. Strip
+PR-submitted generated ledgers, queues, effective-status tables, auditor
+transcripts, and audit verdict payloads before landing. The only acceptable
+audit-lane changes from a PR are reviewed source/tooling repairs and
+machine-readable audit/re-audit targeting metadata, such as dispatcher
+sidecars, that do not assert a verdict. After applying the source repair, run
+the local pipeline to verify the row is queued or re-queued as intended, then
+restore generated audit outputs from `origin/main` before committing. Pipeline
+regeneration of `docs/audit/data/`, `docs/audit/AUDIT_LEDGER.md`,
+`docs/audit/AUDIT_QUEUE.md`, `docs/audit/MISSING_DERIVATION_PROMPTS.md`, and
+`docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md` is a VALIDATION step only;
+framework PRs must never ship these files because the merge would overwrite
+the audit lane's ratified state. The audit-loop run on `main` (nightly cron
+plus `audit:` commits) is the sole channel for landing those outputs.
+
+1. Source-note `Status:` prose is not an audit authority. New or touched claim
+   notes should use `Type:` / `Claim type:` metadata for intended audit
+   classification.
+2. If a no-go/firewall is intended to be theorem-grade, use
+   `claim_type = no_go`; do not rely on support-style prose and expect audit
+   ratification.
+3. Keep disclaimers such as "This is not charged-lepton mass closure" outside
+   audit metadata fields.
+4. Do not prefill or recommend a verdict in author/review surfaces. Wording
+   such as `target_audit_status: audited_clean`, `audit_status =
+   audited_clean`, `effective_status = retained`, or "can land audited_clean"
+   is not review-loop compatible. Use wording like `audit_status_authority:
+   independent audit lane only` and "effective status is pipeline-derived
+   after audit ratification and dependency closure."
+5. Changed claim notes that cite load-bearing authorities must use markdown
+   links, for example
+   ``[`GRAPH_FIRST_SU3_INTEGRATION_NOTE.md`](GRAPH_FIRST_SU3_INTEGRATION_NOTE.md)``.
+   Code-formatted names such as `` `GRAPH_FIRST_SU3_INTEGRATION_NOTE.md` `` do
+   not seed graph dependencies and are not enough.
+6. Run the audit pipeline after review fixes:
+
+```bash
+bash docs/audit/scripts/run_pipeline.sh
+python3 docs/audit/scripts/audit_lint.py --strict
+git diff --check
+```
+
+The known graph-cycle warning is acceptable. Any strict-lint error blocks a
+review-loop PASS.
+
+**`note_hash` drift is a notice for non-retained rows, an error only for
+retained-grade rows.** `note_hash` is a *source-content* hash, not an audit
+verdict. When a review fix edits a claim note, its `note_hash` drifts from the
+seeded value; `audit_lint.py` reports this drift as a non-blocking
+`note_hash_drift_reaudit_pending` **notice** when the row is not retained-grade
+(`unaudited` / `audited_conditional` / pending), because re-audit is simply
+pending and the audit-lane re-seed refreshes the hash. Such a notice does **not**
+block review-loop PASS and must **not** be "fixed" by committing audit-lane
+ledger churn (that is the forbidden pipeline-output commit). A `note_hash`
+mismatch on a **retained-grade** row (`retained` / `retained_bounded` /
+`retained_no_go`) stays a hard **error**: an edited retained note laundered past
+a stale ratification is a real integrity violation. Resolve it by re-auditing
+(the audit lane re-seeds and archives the prior verdict) or by demoting the edit
+per the audit-hash churn guard — never by refreshing the hash while keeping the
+retained verdict.
+
+**Stuck-row repair requeue gate.** Terminal non-clean rows
+(`audited_conditional` / `audited_renaming` / `audited_failed` /
+`audited_numerical_match`) re-enter the audit queue only through their own
+note or paired-runner hash drift, an upstream `deps_changed` invalidation, or
+a dispatcher-sidecar re-audit target. Dependent-side edits never reschedule
+the stuck row. When a branch's stated purpose is repairing such a row (the PR
+title/body names the row or quotes its audit repair target):
+
+1. Verify the stuck row itself will requeue: its note or paired runner
+   changes on the branch, or the branch ships dispatcher-sidecar targeting
+   metadata naming the row.
+2. If the audit-named repair is dependent-side only (for example, narrowing
+   dependents' citing sentences to the audited scope), add a dated
+   downstream-hygiene line to the stuck row's own note boundary as part of
+   the landing: a one-line source-side record of what changed downstream
+   (date + what was narrowed + PR number), with no grade or verdict
+   language. The hash drift re-enters the row into the ordinary queue and
+   the re-auditor (or second auditor) sees the recorded condition.
+3. Run the validation pipeline and confirm the row is queued or re-queued as
+   intended, then restore generated audit outputs per the
+   pipeline-output-stripped gate below.
+4. Repair-PR review checklist: the audit repair target is quoted verbatim
+   (from `verdict_rationale` / `notes_for_re_audit_if_any`) in the PR body;
+   a sibling-runner pin sweep was done before every note edit (grep
+   `scripts/` for runners pinning the edited sentences); no authored grade
+   language anywhere; no `docs/audit/data/` content beyond
+   dispatcher-sidecar targeting metadata.
+
+7. **Pipeline-output-stripped PASS gate (hard).** After running the pipeline
+   for validation, the framework PR must NOT land any pipeline-regenerated
+   audit-lane or effective-status surface. The independent audit lane is the
+   sole authority for these files; a framework PR that ships them creates a
+   dual-source-of-truth and overwrites the audit lane's ratified state at
+   merge. The following must hold for review-loop to issue PASS:
+
+```bash
+# Must produce no output. Any change here means the working tree has
+# pipeline-regenerated audit-lane outputs left over from validation;
+# drop them (see below) before recommitting.
+git status --porcelain docs/audit/AUDIT_LEDGER.md \
+                       docs/audit/AUDIT_QUEUE.md \
+                       docs/audit/data \
+                       docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md \
+                       docs/publication/ci3_z3/CLAIMS_TABLE_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/DERIVATION_ATLAS_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/PUBLICATION_MATRIX_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/FULL_CLAIM_LEDGER_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/USABLE_DERIVED_VALUES_INDEX_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/RESULTS_INDEX_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/QUANTITATIVE_SUMMARY_TABLE_EFFECTIVE_STATUS.md \
+                       docs/publication/ci3_z3/DERIVATION_VALIDATION_MAP_EFFECTIVE_STATUS.md
+```
+
+If this command prints any lines, BLOCK PASS and instruct the operator to
+DROP the regenerated files before recommitting:
+
+```bash
+git checkout origin/main -- docs/audit/data/ \
+                            docs/audit/AUDIT_LEDGER.md \
+                            docs/audit/AUDIT_QUEUE.md \
+                            docs/audit/MISSING_DERIVATION_PROMPTS.md \
+                            'docs/publication/ci3_z3/*_EFFECTIVE_STATUS.md' \
+                            docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md
+git clean -fd -- docs/audit/data/
+```
+
+The pipeline is run for VALIDATION only — to confirm the source repair is
+ingested and the runner row is queued or re-queued as intended. The
+audit-loop pipeline run on `main` (nightly cron + `audit:` commits) is the
+sole channel for landing the regenerated outputs. Framework PRs that ship
+these files force a destructive overwrite of ratified audit state at merge
+time and have been an active source of broken-row regressions.
+
+8. **Repository-portable links PASS gate (hard).** Markdown link targets on
+   branch-modified `.md` files must be repo-relative or web URLs. Absolute
+   local paths such as `/Users/<name>/...`, `/home/<name>/...`,
+   `/private/tmp/...`, `/tmp/...`, `/var/...`, `/opt/...`, or `file://...`
+   inside a markdown link target are non-portable: they break for other
+   developers, CI runners, fresh clones, and independent reviewers.
+
+```bash
+# Must produce no output. Scans branch-modified markdown for local absolute
+# paths inside markdown link targets.
+git diff --name-only origin/main...HEAD -- '*.md' \
+  | xargs -I{} grep -nE '\]\((/Users/|/home/|/private/|/tmp/|/var/|/opt/|file://)' {} 2>/dev/null
+```
+
+If this command prints lines for files the branch is already modifying for
+source, runner, methodology, or review reasons, rewrite the offending link
+targets before PASS. The usual mechanical fix is to preserve the display text
+and replace the target with a `../` chain relative to the source file's
+directory, e.g. in `docs/SOURCE_RESOLVED_FOO_NOTE.md` rewrite
+`(/Users/me/Projects/Physics/scripts/foo.py)` to `(../scripts/foo.py)`.
+
+This gate prevents new non-portable links from landing; it is not a license for
+large standalone cosmetic sweeps over audited claim notes. If the PR's only
+purpose is to rewrite existing local-path links across many audited source
+notes, apply the audit-hash churn guard above before landing any broad cleanup.
+
+9. **No-Go Discipline PASS gate (hard).** Before issuing review-loop PASS,
+   identify any artifact on the branch that ships a negative claim:
+
+exec
+/bin/zsh -lc "sed -n '821,1120p' '/Users/jonBridger/.codex/skills/review-loop/SKILL.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+
+```bash
+# Source notes whose claim_type is no_go, or whose Status / Type line
+# names walls / admissions / "conditional on" content
+git diff --name-only origin/main...HEAD -- 'docs/*NO_GO*.md' 'docs/*BOUNDED*.md' \
+                                           'docs/*STRETCH_ATTEMPT*.md' \
+                                           'docs/*OBSTRUCTION*.md'
+# Audit-data rows whose verdict_rationale or claim_type record walls
+git diff origin/main...HEAD -- docs/audit/data/audit_ledger.json \
+  | grep -E '"claim_type": "no_go"|"verdict_rationale".*wall|"verdict_rationale".*admission'
+# Any source note touched on this branch whose body contains negative-claim shape
+git diff origin/main...HEAD -- 'docs/*.md' \
+  | grep -E 'structurally undecidable|no retained primitive|requires new axiom|cannot be derived from A_min|conditional on .* walls?'
+```
+
+For every match, the NoGoDisciplineReviewer must output `PASS` (N1-N8 walk
+complete and no failure condition hit) before review-loop issues PASS. A
+`FAIL` from NoGoDisciplineReviewer blocks PASS regardless of how other
+reviewers voted. An unscrutinized no-go that ships through review cements
+the overclaim at audit time and forecloses investigation paths permanently.
+
+If NoGoDisciplineReviewer outputs FAIL, apply the narrowest honest fix per
+Fix Policy step 2 (demote to a narrower honest claim that passes N1-N8) and
+re-review. Do not weaken the gate to PASS the branch.
+
+This gate is independent of the Pipeline-clean PASS gate above; both must
+pass for review-loop to issue PASS.
+
+10. **Math-runner independent-check PASS gate (hard).** Before issuing
+review-loop PASS for any branch that changes a runner, proof script, numeric
+constant, matrix construction, optimizer, expected value, or note formula,
+record the independent math check used by `CodeRunnerReviewer`. At least one
+check must not share the same implementation path as the changed runner:
+manual formula derivation, symbolic/algebraic reduction, finite toy-case
+enumeration, independent recomputation, or invariant/limit tests. A runner
+that merely computes its own target and prints PASS is not a proof that the
+formula is correct. If an issue was reopened because the runner's math was
+wrong, treat the whole formula family as suspect until the changed expression
+and any reused helpers are cross-checked.
+
+11. **Native-language PASS gate (hard).** Changed repo-facing text must use
+controlled, native repo vocabulary. Run `scripts/vocab_lint.py --fix` on all
+branch-modified files before landing, then inspect changed headings, metadata,
+runner banners, claim scopes, table labels, and review comments for
+branch-local/draft language that the linter cannot know about. PR-specific
+labels, draft-branch vocabulary, campaign names, and noncanonical theory
+phrases must be rewritten into repo-native language or explicitly deferred in
+`docs/repo/ACTIVE_REVIEW_QUEUE.md`; do not land them silently.
+
+The review loop must not run `docs/audit/scripts/apply_audit.py` and must not
+write `audit_status`, `audited_clean`, or other audit verdicts. If the branch
+introduces retained-grade `claim_type` rows, report those claim IDs in the
+final report as requiring the independent audit worker.
+When a source repair changes a note or runner for a previously audited row,
+the local result is `note_hash`/runner-hash drift plus queue/dispatch
+visibility for independent re-audit. For a non-retained row this drift is a
+benign `note_hash_drift_reaudit_pending` notice (see the Audit-System
+Compatibility Gate) — it does not block strict lint and must not be repaired by
+committing ledger churn. For a retained-grade row the drift is a strict error
+that must be resolved by re-audit, not laundered. In all cases, do not preserve,
+copy, or author a fresh `previous_audits` entry, `audit_status`, or verdict
+rationale from the PR branch; the independent audit lane (nightly cron +
+`audit:` commits) is the sole channel that refreshes the hash and re-ratifies.
+
+After the pipeline, inspect the changed claim rows in
+`docs/audit/data/audit_ledger.json`:
+
+- `claim_type` must match the intended class (`positive_theorem`,
+  `bounded_theorem`, `no_go`, `open_gate`, `decoration`, or `meta`).
+- `audit_status` must remain `unaudited` unless the branch is only carrying
+  already-audited history from `origin/main`.
+- `effective_status` must be pipeline-derived, not hand-authored.
+- New theorem/no-go/bounded rows with declared load-bearing authorities must
+  have non-empty `deps` matching the markdown-linked authorities.
+- Dependencies asserted as retained-grade must currently have
+  `effective_status` in `{retained, retained_bounded, retained_no_go}`. Open
+  gates, `unaudited`, `audit_in_progress`, `retained_pending_chain`, and
+  terminal non-clean audit statuses are blockers for retained-grade claims.
+
+Useful review-only inventory:
+
+```bash
+python3 - <<'PY'
+import json, subprocess
+changed = set()
+for cmd in (
+    ["git", "diff", "--name-only", "HEAD"],
+    ["git", "diff", "--name-only", "--cached"],
+):
+    changed.update(subprocess.check_output(cmd, text=True).splitlines())
+try:
+    changed.update(subprocess.check_output(
+        ["git", "diff", "--name-only", "origin/main...HEAD"], text=True
+    ).splitlines())
+except Exception:
+    pass
+rows=json.load(open("docs/audit/data/audit_ledger.json"))["rows"]
+for cid,row in rows.items():
+    if row.get("note_path") in changed:
+        print(cid, row.get("claim_type"), row.get("audit_status"),
+              row.get("effective_status"), row.get("deps"),
+              row.get("note_path"))
+PY
+```
+
+If generated audit files conflict while integrating current `origin/main`, do
+not hand-merge generated JSON/Markdown. Resolve source files, prefer the
+current remote generated audit files, then rerun `run_pipeline.sh` and strict
+lint so the generated surface is rebuilt from source.
+
+## Smoketest
+
+After fixes, run the smallest relevant checks:
+
+- `python3 -m py_compile <changed .py files>` for changed Python files;
+- changed paired runners directly when they are expected to be short;
+- for changed math-bearing runners, independently verify formulas/constants
+  before trusting PASS output: compare note equations to code line by line,
+  check signs/factors/normalizations, run a second implementation or symbolic
+  simplification when practical, and add finite edge-case or invariant checks
+  when they would have caught the suspected class of error;
+- if many changed runners are part of the branch, execute all practical
+  changed runners with a bounded timeout, then rerun any timeout once with a
+  longer timeout before classifying it as slow rather than broken;
+- any reproduction commands named in changed notes when practical;
+- publication/control-plane consistency checks by reading changed tables and
+  nearby authority surfaces.
+- `bash docs/audit/scripts/run_pipeline.sh` and
+  `python3 docs/audit/scripts/audit_lint.py --strict` when claim notes or
+  governance/publication surfaces changed.
+
+If a runner is long, stochastic, or requires unavailable data, do not fake the
+check. Report it as not run with the reason.
+
+## Re-Review Tracking
+
+Never re-review unchanged files.
+
+After each fix pass:
+
+1. Identify files modified by the fix pass.
+2. If committing is allowed, create one iteration commit:
+   `fix: address physics review findings (iteration N)`.
+3. Set `files_to_review` to the files modified by the fix pass.
+4. Add interacting files only if they are also in the original changed-file
+   set. Find interactions through imports, runner/note pairs, canonical harness
+   rows, publication tables, and explicit cross-links.
+5. Loop until clean, no files changed, or max iterations reached.
+
+## Final Report
+
+Report:
+
+- iterations run;
+- files reviewed;
+- total findings, fixed findings, skipped findings;
+- import/support inventory summary;
+- final claim-strength disposition;
+- audit-compatibility status and proposed claim IDs needing independent audit;
+- commits created;
+- checks run and checks skipped;
+- remaining issues with disposition;
+- recommendation: `PASS`, `PASS WITH BOUNDED CLAIMS`, or `NEEDS MANUAL SCIENCE`.
+
+Do not claim Nature readiness. Say whether the branch meets this repo's
+Nature-grade retention bar or exactly what remains open.
+
+codex
+The review-loop instructions ordinarily call for repository-wide governance checks and git-based freshness/diff setup. Your tighter scope controls here: I will not run git, inspect neighboring repo artifacts, edit files, or fan out reviewers. I’m retaining only the skill’s independent-math-check discipline for these two scoped files.
+exec
+/bin/zsh -lc "sed -n '1,260p' 'docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+# Skill Freshness Check
+
+Before using any repo methodology skill, make a best-effort check for a newer
+skill body.
+
+Every repo methodology `SKILL.md` must include a `## Skill Freshness` section
+that points to this file before its workflow-specific instructions. This applies
+to review-loop, audit-loop, physics-loop, no-go-discipline, reviewer skills,
+and any future repo skill. A skill that cannot safely complete this check must
+state that freshness could not be verified before continuing.
+
+1. If `origin/main` is reachable, run `git fetch origin main`.
+2. If the current worktree is clean and can be safely fast-forwarded, update it
+   before continuing.
+3. If the worktree is dirty, detached in a way that should not be moved, ahead
+   of `origin/main`, or otherwise cannot be fast-forwarded safely, do not modify
+   it just to refresh a skill. Read the latest skill text directly with
+   `git show origin/main:docs/ai_methodology/skills/<skill>/SKILL.md` and follow
+   that version for the current task.
+4. If `origin/main` cannot be reached, continue with the local skill and state
+   that freshness could not be checked.
+5. Never discard user work, overwrite local edits, or force-reset a worktree as
+   part of the freshness check.
+
+codex
+Skill freshness could not be verified because its check is git-based and you explicitly prohibited git. I’m proceeding with the local review discipline and will now read the two scoped artifacts in full, with line numbers for exact findings.
+exec
+/bin/zsh -lc "nl -ba 'docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: born_form_scaled_projector_menu_family_sitewise_forcing_and_paired_menu_boundary_bounded_theorem_note_2026-07-17
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional thinning of the effect-menu horn at one site: on the scaled-projector family (nonnegative multiples of one-site rank-1 projectors and of the identity), menu normalization plus effect-functionality forces the Born trace form on that domain at a single M_2(C) site, with no literature bridge input, no composite, finite menus only, and no genuinely unsharp effect used anywhere — the forcing already runs on scaled rank-1 menus alone. Boundary: the paired subfamily (equal-weight antipodal pairs plus identity multiples) does not force — the landed one-site rogue extends to it explicitly — so some menu outside the paired subfamily is necessary. The family sits strictly between the projective and full-effect menu families; whether it or any smaller family is minimal is not established; no menu grade is selected; the grading primitive is assumed here, not adopted."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	runner: scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py
+     8	---
+     9	
+    10	# Born Form On The Scaled-Projector Menu Family: Sitewise Forcing With No Bridge Input, And The Paired-Menu Boundary
+    11	
+    12	**Date:** 2026-07-17
+    13	**Type:** bounded_theorem
+    14	**Claim type:** bounded_theorem
+    15	**Scope:** bridge-conditional; the grading hypotheses are assumed here, not
+    16	adopted; the menu family the physical registration supplies is underived.
+    17	**Audit-status authority:** independent audit lane only. This note sets no
+    18	audit verdict and predicts none.
+    19	**Primitive status:** no primitive is approved, registered, edited, or
+    20	enlarged here. Every grading hypothesis below is conditional input only.
+    21	**Primary runner:**
+    22	[`scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py`](../scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py)
+    23	**Runner cache:**
+    24	[`logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt`](../logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt)
+    25	
+    26	## Purpose
+    27	
+    28	The parent block
+    29	[`BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md`](BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+    30	proved sitewise Born forcing at effect grade (its E1-E2: weights on all
+    31	effects, every finite effect partition eligible) and left the space between
+    32	the poles open, naming "classical mixtures of projective menus and other
+    33	intermediate families" as untested, with the hypothesis-surface sentence:
+    34	"Whether the physical registration supplies menus at projective grade, at
+    35	effect grade, at neither, or at some intermediate family is underived and is
+    36	not decided here."
+    37	
+    38	This note closes one named piece of that gap with an exactly delimited
+    39	intermediate family and a two-sided statement:
+    40	
+    41	- **Forcing.** On the scaled-projector family — effects that are nonnegative
+    42	  multiples of one-site rank-1 projectors or of the identity — menu
+    43	  normalization plus effect-functionality already forces the Born trace form
+    44	  on that domain, at a single `M_2(C)` site, with no literature bridge
+    45	  input. The proof is a direct four-menu-schema argument (complement,
+    46	  same-direction split, axis cancellation, coins) and never uses a genuinely
+    47	  unsharp effect: the forcing runs on scaled rank-1 menus alone.
+    48	- **Boundary.** The paired subfamily — menus that are disjoint unions of
+    49	  equal-weight antipodal pairs and identity multiples, the shape produced by
+    50	  classically mixing binary projective measurements without splitting or
+    51	  regrouping outcomes — does not force: the landed one-site rogue extends to
+    52	  it explicitly. Some menu outside the paired subfamily is therefore
+    53	  necessary for any forcing on this surface, and the proof's split and
+    54	  axis-cancellation schemas are exactly such menus.
+    55	
+    56	Consequence for the menu-grade dial: sitewise form-fixing does not need
+    57	unsharp effects. The registration question sharpens to whether the supplied
+    58	menus ever leave the paired subfamily — an exactly witnessed line — while no
+    59	family is selected and no claim of minimality is made.
+    60	
+    61	## Authorities and Inputs
+    62	
+    63	- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+    64	  the one-site `M_2(C)` possibility domain and the Record sentences "Only
+    65	  records are readable. A readout value is determined by record content
+    66	  alone." The axioms do not supply probabilities, weights, menus, update
+    67	  rules, or record-production processes.
+    68	- [`BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md`](BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+    69	  — the parent surface: the effect-grade pole (its T1), the landed
+    70	  lexicographic hemisphere rogue and its exact three-direction refutation of
+    71	  every `2 x 2` trace form (reused here at the same resolution), and the
+    72	  named-untested intermediate-family gap this note addresses.
+    73	- [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+    74	  — the projective-horn frontier note whose hypothesis surface both blocks
+    75	  condition on; not otherwise used.
+    76	- Literature comparators (never proof inputs): Wright-Weigert 2019 (a
+    77	  Gleason-type theorem for qubits from projective measurements and their
+    78	  classical mixtures — a differently delimited restricted family; a native
+    79	  translation of their exact class is a separate open increment); Busch 2003
+    80	  and Caves-Fuchs-Manne-Renes 2004 (the full effect-family pole).
+    81	
+    82	## The Family
+    83	
+    84	Work at one site, `A ≅ M_2(C)`, `P(n) = (1 + n·σ)/2` for unit Bloch
+    85	directions `n`. Define the scaled-projector effects
+    86	
+    87	> `S = { c P(n) : c ∈ [0,1], n unit } ∪ { c 1 : c ∈ [0,1] }`,
+    88	
+    89	and write `S_sharp` for the rank-1 part `{ c P(n) : c ∈ (0,1] }`. Every
+    90	element of `S` is an effect; a nonzero element determines its parameters
+    91	uniquely (`c P(n)` has eigenvalue pair `{c, 0}`, `c 1` has `{c, c}`, so `c`
+    92	and, for rank 1, `n` are recovered from the operator). A **scaled-projector
+    93	menu** is a finite family of nonzero elements of `S` summing to `1`.
+    94	
+    95	**T1 (exact menu characterization).** A finite family
+    96	`{c_k P(n_k)}_k ∪ {d_j 1}_j` of nonzero scaled-projector effects is a menu
+    97	iff
+    98	
+    99	> `Σ_k c_k n_k = 0` and `Σ_k c_k / 2 + Σ_j d_j = 1`.
+   100	
+   101	Proof: expand in the basis `{1, σ_x, σ_y, σ_z}`; the identity component
+   102	gives the scalar condition, the Pauli components give the vector condition.
+   103	The family therefore contains, among others: every projective menu
+   104	`{P(n), P(−n)}`; every coin `{c 1, (1−c) 1}` and its refinements;
+   105	same-direction splits `{λP(n), μP(n), (1−λ−μ)P(n), P(−n)}`; the
+   106	axis-cancellation menus of T2; and three-element coplanar menus such as
+   107	`{(2/3)P(n_1), (2/3)P(n_2), (2/3)P(n_3)}` with `n_1 + n_2 + n_3 = 0`. It
+   108	does not contain any effect with two distinct nonzero eigenvalues (e.g.
+   109	`diag(1/2, 1/4)`), so it is a proper subfamily of the parent block's
+   110	effect-partition family.
+   111	
+   112	## Hypotheses
+   113	
+   114	**(F1) grading exists on the scaled-projector domain.** There is
+   115	`w : S → [0,1]` with `w(0) = 0` and `w(1) = 1`; `w` is a function of the
+   116	effect alone — its value does not depend on which eligible menu embeds the
+   117	effect.
+   118	
+   119	**(F2) scaled-projector menus are eligible.** For every scaled-projector
+   120	menu `{A_j}`, `Σ_j w(A_j) = 1`.
+   121	
+   122	F1-F2 are the parent block's E1-E2 with the effect algebra replaced by `S`
+   123	and effect partitions replaced by scaled-projector menus: the domain and the
+   124	menu family both shrink, so F1-F2 is a strictly weaker hypothesis surface
+   125	than the effect-grade pole, and strictly stronger than bare projective
+   126	menus, which it contains. Only finite menus are used; no countable clause is
+   127	assumed. Whether the physical registration supplies this family, a larger
+   128	one, a smaller one, or none is underived and is not decided here.
+   129	
+   130	## Results
+   131	
+   132	**T2 (forcing on the scaled-projector family, no bridge input).** Assume
+   133	F1-F2 at one site. Then there is a unique density matrix `σ` with
+   134	`w(E) = Tr(σE)` for every `E ∈ S`. The proof uses four menu schemas, all
+   135	inside `S`, and only the rank-1 schemas carry the forcing:
+   136	
+   137	- **(a) Ray additivity.** Fix `n` and write `h(λ) = w(λP(n))`. For
+   138	  `λ, μ ≥ 0` with `λ + μ ≤ 1`, T1 validates the same-direction splits
+   139	  `{λP(n), μP(n), (1−λ−μ)P(n), P(−n)}` and
+   140	  `{(λ+μ)P(n), (1−λ−μ)P(n), P(−n)}` (the degenerate members with zero
+   141	  coefficient are dropped). Subtracting their normalizations gives
+   142	  `h(λ) + h(μ) = h(λ+μ)`. With `h ≥ 0` this gives monotonicity
+   143	  (`h(μ') = h(μ) + h(μ'−μ) ≥ h(μ)`), rational homogeneity by iteration, and
+   144	  the rational squeeze `q_1 h(1) ≤ h(t) ≤ q_2 h(1)` for rationals
+   145	  `q_1 < t < q_2`; hence `h(λ) = λ g(n)` for all real `λ ∈ [0,1]`, with
+   146	  `g(n) := w(P(n))`.
+   147	- **(b) Complement.** The projective menu `{P(n), P(−n)}` gives
+   148	  `g(n) + g(−n) = 1`.
+   149	- **(c) Axis cancellation.** For a unit `n` with components `n_a`
+   150	  (`a ∈ {x,y,z}`), set `L = |n_x| + |n_y| + |n_z| ∈ [1, √3]` and
+   151	  `c_0 = 2/(1+L) ∈ (0,1]`. By T1,
+   152	
+   153	  > `{ c_0 P(n) } ∪ { c_0 |n_a| P(−sign(n_a) e_a) : n_a ≠ 0 }`
+   154	
+   155	  is a menu: its vector part is `c_0 (n − Σ_a n_a e_a) = 0` and its scalar
+   156	  part is `c_0 (1 + L)/2 = 1`. Normalization, (a), and (b) give
+   157	
+   158	  > `g(n) = (1 + L)/2 − Σ_a |n_a| g(−sign(n_a) e_a)
+   159	  >        = (1 − L)/2 + Σ_a |n_a| g(sign(n_a) e_a)
+   160	  >        = (1 + n·s)/2`,
+   161	
+   162	  with `s_a := 2 g(e_a) − 1`. So `g` is affine in the Bloch direction, with
+   163	  its coefficients read off the three axis values.
+   164	- **(d) Coins.** Menus `{c 1, c' 1, (1−c−c') 1}` make `f(c) := w(c 1)`
+   165	  additive and bounded, hence `f(c) = c` by the same
+   166	  rational-homogeneity-plus-squeeze argument. Coins are not used in
+   167	  (a)-(c); they only complete the representation over the identity ray of
+   168	  `S`.
+   169	- **(e) State property and uniqueness.** `g(n) ∈ [0,1]` for all unit `n`
+   170	  forces `|s| ≤ 1` (evaluate at `n = −s/|s|` when `s ≠ 0`), so
+   171	  `σ := (1 + s·σ)/2` is a density matrix, and
+   172	  `w(cP(n)) = c g(n) = Tr(σ · cP(n))`, `w(c1) = c = Tr(σ · c1)` on all of
+   173	  `S`. Uniqueness: any representing density matrix reproduces the three
+   174	  axis values, which determine `s`.
+   175	
+   176	No step uses a literature theorem, a composite, an effect outside `S`, a
+   177	projective frame-function analysis, or countable additivity. The runner
+   178	re-derives every load-bearing identity exactly, including the
+   179	axis-cancellation identity symbolically on a generic octant and on rational
+   180	witnesses in all octants and on the degenerate axis cases.
+   181	
+   182	**T3 (paired-menu boundary).** Call a scaled-projector menu **paired** when
+   183	its multiset of elements is a disjoint union of equal-weight antipodal pairs
+   184	`{λP(m), λP(−m)}` and identity multiples `{d 1}` — the shape produced by
+   185	classically mixing binary projective measurements and coins without
+   186	splitting or regrouping outcomes. Then:
+   187	
+   188	- **(T3a) The paired subfamily does not force.** Extend the parent block's
+   189	  landed lexicographic hemisphere rogue `g` by
+   190	  `w(λP(n)) := λ g(n)`, `w(c1) := c`. On any paired menu the normalization
+   191	  sum is `Σ_i λ_i [g(m_i) + g(−m_i)] + Σ_j d_j = Σ_i λ_i + Σ_j d_j = 1` by
+   192	  the complement law and T1's scalar condition, so the extension satisfies
+   193	  F1-F2 restricted to paired menus; and it is no trace form, by the landed
+   194	  exact three-direction contradiction, reused at the same resolution.
+   195	- **(T3b) Some unpaired menu is necessary.** By T3a, any hypothesis surface
+   196	  whose eligible menus are all paired admits a non-Born grading, so any
+   197	  forcing theorem on this domain must use at least one menu outside the
+   198	  paired subfamily. The T2 proof uses exactly two unpaired schemas — the
+   199	  same-direction split and the axis-cancellation menu (the latter has no
+   200	  antipodal pair at all for generic `n`) — and by T3a it could not have
+   201	  succeeded without some such menu.
+   202	
+   203	T3 makes no claim about which intermediate families beyond the paired
+   204	subfamily force or fail: the scaled-projector family forces (T2), the
+   205	paired subfamily does not (T3a), and the exact boundary between them across
+   206	all intermediate families is not classified here.
+   207	
+   208	**T4 (dial recalibration and comparators).** Combined with the parent
+   209	block: sitewise Born form-fixing needs neither the full effect algebra nor
+   210	any genuinely unsharp effect — the scaled-projector family suffices, and
+   211	within it the forcing runs on scaled rank-1 menus alone. The landed one-site
+   212	rogue survives on bare projective and paired menus and dies on the
+   213	scaled-projector family (T2 plus the three-direction contradiction), with
+   214	the composite/entangled/Gleason route of the projective horn unchanged and
+   215	untouched. The registration question therefore sharpens to an exactly
+   216	witnessed line: whether the supplied menus ever leave the paired subfamily.
+   217	The comparator literature (Wright-Weigert 2019) reaches a Born-forcing
+   218	conclusion for a differently delimited restricted family built from
+   219	projective measurements and their classical mixtures with outcome
+   220	processing; no containment claim between that class and `S` is made here,
+   221	and a native translation of their exact class — like any minimal-family
+   222	classification — is a named open increment, not attempted in this note.
+   223	
+   224	## No-Go Discipline Gate
+   225	
+   226	T3a is a bounded negative ("the paired subfamily does not force"), so the
+   227	negative-claim checklist is answered for it:
+   228	
+   229	- **N1 route inventory (five routes against T3a):** (1) unequal-weight
+   230	  antipodal completions — such menus are not paired by definition and lie in
+   231	  the forcing family; ATTEMPTED via T2, which covers them; (2) adding coins
+   232	  of arbitrary rational or real weight — paired menus already include
+   233	  identity multiples, and the extension normalizes them (T3a computation);
+   234	  (3) same-direction splits — exactly the unpaired schema; RULED OUT as a
+   235	  rescue of the paired subfamily by definition, and named as what activates
+   236	  forcing (T3b); (4) countable paired menus — a finite-sum menu family is
+   237	  assumed throughout (F2 is finite); named outside scope; (5) two-site
+   238	  paired menus and composite rescues — outside this note's one-site scope
+   239	  and already handled at the projective grade by the parent block's product
+   240	  boundary; named untested at scaled grade.
+   241	- **N2 wall independence:** one wall (paired subfamily insufficiency); no
+   242	  second wall presented.
+   243	- **N3 hidden-wall scan:** the T3a witness is total on `S` (both rays
+   244	  defined), satisfies F1 on all of `S`, and its menu obligations are
+   245	  evaluated on the paired subfamily only — the restriction is the claim.
+   246	  The hemisphere tie convention is inherited verbatim from the landed
+   247	  parent construction and gated.
+   248	- **N4 residual matching:** the only cited prior negative is the landed
+   249	  one-site rogue existence, reused at the same resolution.
+   250	- **N5 rhetoric audit:** "does not force" is scoped to the paired subfamily
+   251	  at one site; T3 explicitly declines to classify other intermediate
+   252	  families.
+   253	- **N6 partial-closure scan:** the closure paths are named, not denied —
+   254	  the scaled-projector family itself (T2), or the parent block's effect
+   255	  pole, or the landed projective-composite route.
+   256	- **N7 steelman:** "paired menus are what classical mixing gives you, so
+   257	  the physical case is closed against forcing." Reply: T3a proves exactly
+   258	  that insufficiency for unsplit mixing; whether record formation supplies
+   259	  only paired menus is the underived registration question, and the note
+   260	  selects nothing.
+   261	- **N8 cross-cycle echo:** the structurally similar prior walls — the
+   262	  one-site projective rogue (parent R1 lineage) and the parent's
+   263	  product-menu boundary — were crossed by enlarging the menu family
+   264	  (effect grade; entangled composite menus). T3b records the same
+   265	  mechanism here: the wall is crossed by the unpaired schemas, not by
+   266	  dimension or composites.
+   267	
+   268	## Non-Claims
+   269	
+   270	- Does **not** claim any grading exists, on any family; F1-F2 are
+   271	  conditional input only.
+   272	- Does **not** select a menu family or grade, register or modify any
+   273	  primitive, or derive menu eligibility from the axioms.
+   274	- Does **not** claim the scaled-projector family is minimal, and does
+   275	  **not** classify intermediate families between the paired subfamily and
+   276	  `S`; the Wright-Weigert class is a comparator, not translated here.
+   277	- Does **not** extend beyond one site: composite menus, values, and record
+   278	  conditioning are outside scope, as in the parent block.
+   279	- Does **not** set an audit verdict; landing is not ratification, and
+   280	  independent audit remains required.
+   281	
+   282	## Verification
+   283	
+   284	The primary runner re-derives every load-bearing identity exactly (sympy,
+   285	rational/symbolic arithmetic, single process, one-site `M_2` objects only):
+   286	the parameter-recovery lemma for `S`; the T1 characterization identity
+   287	symbolically and on witnesses (projective, coin, split, axis-cancellation
+   288	in a generic octant, all-octant rationals, degenerate axis cases, a
+   289	coplanar three-element menu) with a non-menu rejector; the ray-additivity
+   290	and coin eliminations as formal linear algebra; the monotone
+   291	rational-squeeze scaffolding with the interval-nonvacuity guard and a
+   292	non-monotone rejector; the axis-cancellation affinity elimination to
+   293	`g(n) = (1 + n·s)/2`; the state bound `|s| ≤ 1` and the representation and
+   294	uniqueness identities on symbolic scaled effects; the paired-menu
+   295	normalization of the rogue extension as a formal identity under the
+   296	complement law; the unpairedness of the split and axis schemas; the reused
+   297	exact three-direction refutation with an affine control; and needle checks
+   298	pinning the quoted sentences of the axiom memo and the parent block note.
+   299	Mutation checks (one load-bearing mutation per check family, reverted) are
+   300	recorded in the review history and PR body.
+   301	
+   302	Measured runner total after final verification:
+   303	`TOTAL: PASS=57 FAIL=0`.
+
+2026-07-17T21:14:45.081929Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "nl -ba 'scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	#!/usr/bin/env python3
+     2	"""Exact checks for the scaled-projector menu forcing and paired boundary note."""
+     3	
+     4	from pathlib import Path
+     5	import sys
+     6	
+     7	import sympy as sp
+     8	
+     9	
+    10	ROOT = Path(__file__).resolve().parents[1]
+    11	NOTE_PATH = ROOT / "docs" / "BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md"
+    12	PARENT_PATH = ROOT / "docs" / "BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md"
+    13	AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
+    14	
+    15	I2 = sp.eye(2)
+    16	sx = sp.Matrix([[0, 1], [1, 0]])
+    17	sy = sp.Matrix([[0, -sp.I], [sp.I, 0]])
+    18	sz = sp.Matrix([[1, 0], [0, -1]])
+    19	PAULIS = (sx, sy, sz)
+    20	
+    21	
+    22	def normalize(text):
+    23	    return " ".join(text.split())
+    24	
+    25	
+    26	def matrix_is_zero(matrix):
+    27	    return matrix.applyfunc(sp.simplify) == sp.zeros(*matrix.shape)
+    28	
+    29	
+    30	def exact_eigenvalue_multiset(matrix):
+    31	    values = []
+    32	    for value, multiplicity in matrix.eigenvals().items():
+    33	        values.extend([sp.simplify(value)] * multiplicity)
+    34	    return tuple(sorted(values, key=sp.default_sort_key))
+    35	
+    36	
+    37	def same_multiset(left, right):
+    38	    if len(left) != len(right):
+    39	        return False
+    40	    if len(left) == 2:
+    41	        return (
+    42	            sp.simplify(left[0] - right[0]) == 0
+    43	            and sp.simplify(left[1] - right[1]) == 0
+    44	        ) or (
+    45	            sp.simplify(left[0] - right[1]) == 0
+    46	            and sp.simplify(left[1] - right[0]) == 0
+    47	        )
+    48	    return tuple(sorted(left, key=sp.default_sort_key)) == tuple(
+    49	        sorted(right, key=sp.default_sort_key)
+    50	    )
+    51	
+    52	
+    53	def is_effect(matrix):
+    54	    if matrix.shape != (2, 2) or not matrix_is_zero(matrix - matrix.H):
+    55	        return False
+    56	    return all(
+    57	        value.is_real is True
+    58	        and value.is_nonnegative is True
+    59	        and (sp.Integer(1) - value).is_nonnegative is True
+    60	        for value in exact_eigenvalue_multiset(matrix)
+    61	    )
+    62	
+    63	
+    64	def bloch_projector(direction):
+    65	    nx, ny, nz = direction
+    66	    return (I2 + nx * sx + ny * sy + nz * sz) / 2
+    67	
+    68	
+    69	def hemisphere_weight(direction):
+    70	    nx, ny, nz = (sp.simplify(component) for component in direction)
+    71	    for component in (nz, ny, nx):
+    72	        if component == 0:
+    73	            continue
+    74	        if component.is_positive is True:
+    75	            return sp.Integer(1)
+    76	        if component.is_negative is True:
+    77	            return sp.Integer(0)
+    78	        raise ValueError("hemisphere sign is not exactly decidable")
+    79	    return sp.Integer(0)
+    80	
+    81	
+    82	def forced_trace_value(samples, target, trace_value=sp.Integer(1)):
+    83	    a, d, x, y = sp.symbols("forced_a forced_d forced_x forced_y", real=True)
+    84	    sigma = sp.Matrix([[a, x - sp.I * y], [x + sp.I * y, d]])
+    85	    equations = [sp.Eq(sp.trace(sigma), trace_value)] + [
+    86	        sp.Eq(sp.trace(sigma * bloch_projector(direction)), value)
+    87	        for direction, value in samples
+    88	    ]
+    89	    solution_set = sp.linsolve(equations, (a, d, x, y))
+    90	    if solution_set is sp.EmptySet or len(solution_set) != 1:
+    91	        return None
+    92	    solution = next(iter(solution_set))
+    93	    substitutions = dict(zip((a, d, x, y), solution))
+    94	    value = sp.simplify(
+    95	        sp.trace(sigma * bloch_projector(target)).subs(substitutions)
+    96	    )
+    97	    if value.free_symbols.intersection({a, d, x, y}):
+    98	        return None
+    99	    return value
+   100	
+   101	
+   102	def detects_trace_conflict(samples, target, assigned_value):
+   103	    forced = forced_trace_value(samples, target)
+   104	    return forced is not None and sp.simplify(forced - assigned_value) != 0
+   105	
+   106	
+   107	def scaled_projector_parameters(matrix):
+   108	    """Return the exact S-branch and recovered parameters, or None."""
+   109	    if matrix.shape != (2, 2) or not matrix_is_zero(matrix - matrix.H):
+   110	        return None
+   111	    eigenvalues = exact_eigenvalue_multiset(matrix)
+   112	    c = sp.simplify(sp.trace(matrix))
+   113	    if (
+   114	        c.is_positive is True
+   115	        and (1 - c).is_nonnegative is True
+   116	        and same_multiset(eigenvalues, (sp.Integer(0), c))
+   117	    ):
+   118	        direction = tuple(
+   119	            sp.simplify(sp.trace(matrix * pauli) / c) for pauli in PAULIS
+   120	        )
+   121	        if (
+   122	            sp.simplify(sum(component**2 for component in direction) - 1) == 0
+   123	            and matrix_is_zero(matrix - c * bloch_projector(direction))
+   124	        ):
+   125	            return ("projector", c, direction)
+   126	    coin_c = sp.simplify(c / 2)
+   127	    if (
+   128	        coin_c.is_positive is True
+   129	        and (1 - coin_c).is_nonnegative is True
+   130	        and same_multiset(eigenvalues, (coin_c, coin_c))
+   131	        and matrix_is_zero(matrix - coin_c * I2)
+   132	    ):
+   133	        return ("identity", coin_c, None)
+   134	    return None
+   135	
+   136	
+   137	def valid_scaled_projector_menu(menu):
+   138	    return bool(menu) and all(
+   139	        scaled_projector_parameters(item) is not None for item in menu
+   140	    ) and matrix_is_zero(sum(menu, sp.zeros(2)) - I2)
+   141	
+   142	
+   143	def unit_sphere_zero(expression, direction):
+   144	    """Test a rational identity modulo nx^2+ny^2+nz^2=1."""
+   145	    nx, ny, nz = direction
+   146	    numerator = sp.together(expression).as_numer_denom()[0]
+   147	    relation = nz**2 + nx**2 + ny**2 - 1
+   148	    remainder = sp.rem(
+   149	        sp.Poly(sp.expand(numerator), nz), sp.Poly(relation, nz)
+   150	    ).as_expr()
+   151	    return sp.simplify(remainder) == 0
+   152	
+   153	
+   154	def nonnegative_between(value, variable, lower, upper):
+   155	    interval_nonempty = sp.reduce_inequalities(
+   156	        [variable > lower, variable < upper], variable
+   157	    )
+   158	    if interval_nonempty is sp.false or interval_nonempty == False:
+   159	        return False
+   160	    contradiction = sp.reduce_inequalities(
+   161	        [variable > lower, variable < upper, value < 0], variable
+   162	    )
+   163	    return contradiction is sp.false or contradiction == False
+   164	
+   165	
+   166	def axis_cancellation_menu(direction):
+   167	    axes = (
+   168	        (sp.Integer(1), sp.Integer(0), sp.Integer(0)),
+   169	        (sp.Integer(0), sp.Integer(1), sp.Integer(0)),
+   170	        (sp.Integer(0), sp.Integer(0), sp.Integer(1)),
+   171	    )
+   172	    length_one = sp.simplify(sum(abs(component) for component in direction))
+   173	    c0 = sp.simplify(2 / (1 + length_one))
+   174	    menu = [c0 * bloch_projector(direction)]
+   175	    for component, axis in zip(direction, axes):
+   176	        if component == 0:
+   177	            continue
+   178	        sign = sp.Integer(1) if component.is_positive is True else sp.Integer(-1)
+   179	        opposite_axis = tuple(-sign * entry for entry in axis)
+   180	        menu.append(
+   181	            sp.simplify(c0 * abs(component))
+   182	            * bloch_projector(opposite_axis)
+   183	        )
+   184	    return tuple(menu)
+   185	
+   186	
+   187	class CheckRunner:
+   188	    def __init__(self):
+   189	        self.pass_count = 0
+   190	        self.fail_count = 0
+   191	
+   192	    def check(self, gate_id, description, condition):
+   193	        passed = bool(condition)
+   194	        if passed:
+   195	            self.pass_count += 1
+   196	        else:
+   197	            self.fail_count += 1
+   198	        print(f"{'PASS' if passed else 'FAIL'}: {gate_id} {description}")
+   199	
+   200	    def total(self):
+   201	        print(f"TOTAL: PASS={self.pass_count} FAIL={self.fail_count}")
+   202	        return self.fail_count
+   203	
+   204	
+   205	def main():
+   206	    runner = CheckRunner()
+   207	
+   208	    # Group D - domain and parameter recovery
+   209	    nx, ny, nz = sp.symbols("nx ny nz", real=True)
+   210	    direction = (nx, ny, nz)
+   211	    c = sp.symbols("c", positive=True)
+   212	    symbolic_projector = bloch_projector(direction)
+   213	    scaled_projector = c * symbolic_projector
+   214	    projector_idempotence = all(
+   215	        unit_sphere_zero(entry, direction)
+   216	        for entry in symbolic_projector**2 - symbolic_projector
+   217	    )
+   218	    traceless_part = scaled_projector - sp.trace(scaled_projector) * I2 / 2
+   219	    recovered_coefficients = tuple(
+   220	        sp.simplify(sp.trace(traceless_part * pauli) / 2) for pauli in PAULIS
+   221	    )
+   222	    runner.check(
+   223	        "D1",
+   224	        "trace and traceless coefficients recover c and c*n/2",
+   225	        projector_idempotence
+   226	        and matrix_is_zero(symbolic_projector - symbolic_projector.H)
+   227	        and sp.simplify(sp.trace(scaled_projector) - c) == 0
+   228	        and all(
+   229	            sp.simplify(actual - c * component / 2) == 0
+   230	            for actual, component in zip(recovered_coefficients, direction)
+   231	        ),
+   232	    )
+   233	
+   234	    cp = sp.symbols("c_prime", positive=True)
+   235	    spectral_parameter = sp.symbols("spectral_parameter")
+   236	    projector_characteristic = sp.det(
+   237	        spectral_parameter * I2 - scaled_projector
+   238	    )
+   239	    coin_characteristic = sp.det(spectral_parameter * I2 - cp * I2)
+   240	    projector_spectrum_certificate = unit_sphere_zero(
+   241	        projector_characteristic - spectral_parameter * (spectral_parameter - c),
+   242	        direction,
+   243	    )
+   244	    spectral_collision_solution = sp.solve(
+   245	        [sp.Eq(cp, 0), sp.Eq(cp, c)], (cp, c), dict=True
+   246	    )
+   247	    runner.check(
+   248	        "D2-types",
+   249	        "rank-one and identity rays have incompatible exact eigenvalue multisets",
+   250	        projector_spectrum_certificate
+   251	        and sp.simplify(coin_characteristic - (spectral_parameter - cp) ** 2)
+   252	        == 0
+   253	        and c.is_positive is True
+   254	        and cp.is_positive is True
+   255	        and spectral_collision_solution == [],
+   256	    )
+   257	
+   258	    npx, npy, npz = sp.symbols("npx npy npz", real=True)
+   259	    prime_direction = (npx, npy, npz)
+   260	    scaled_projector_prime = cp * bloch_projector(prime_direction)
+   261	    trace_difference = sp.simplify(
+   262	        sp.trace(scaled_projector - scaled_projector_prime)
+   263	    )
+   264	    pauli_differences = tuple(
+   265	        sp.simplify(sp.trace((scaled_projector - scaled_projector_prime) * pauli))
+   266	        for pauli in PAULIS
+   267	    )
+   268	    direction_after_trace = tuple(
+   269	        sp.simplify(value.subs(cp, c) / c) for value in pauli_differences
+   270	    )
+   271	    runner.check(
+   272	        "D2-projectors",
+   273	        "equal nonzero scaled projectors force equal scale and direction",
+   274	        trace_difference == c - cp
+   275	        and direction_after_trace
+   276	        == tuple(
+   277	            component - prime_component
+   278	            for component, prime_component in zip(direction, prime_direction)
+   279	        ),
+   280	    )
+   281	
+   282	    # Group T1 - exact menu characterization
+   283	    c1, c2, c3, d = sp.symbols("c1 c2 c3 d", real=True)
+   284	    direction_symbols = sp.symbols("n1x n1y n1z n2x n2y n2z n3x n3y n3z", real=True)
+   285	    directions = tuple(
+   286	        tuple(direction_symbols[3 * index : 3 * index + 3]) for index in range(3)
+   287	    )
+   288	    coefficients = (c1, c2, c3)
+   289	    generic_sum = sum(
+   290	        (coefficient * bloch_projector(item_direction)
+   291	         for coefficient, item_direction in zip(coefficients, directions)),
+   292	        d * I2,
+   293	    )
+   294	    residual = generic_sum - I2
+   295	    scalar_condition = sp.simplify(sum(coefficients) / 2 + d - 1)
+   296	    vector_conditions = tuple(
+   297	        sp.simplify(
+   298	            sum(
+   299	                coefficient * item_direction[axis]
+   300	                for coefficient, item_direction in zip(coefficients, directions)
+   301	            )
+   302	        )
+   303	        for axis in range(3)
+   304	    )
+   305	    residual_from_conditions = scalar_condition * I2 + sum(
+   306	        (vector_conditions[index] * PAULIS[index] / 2 for index in range(3)),
+   307	        sp.zeros(2),
+   308	    )
+   309	    recovered_conditions = (sp.trace(residual) / 2,) + tuple(
+   310	        sp.trace(residual * pauli) for pauli in PAULIS
+   311	    )
+   312	    runner.check(
+   313	        "T1a",
+   314	        "generic three-ray plus one-coin residual vanishes iff scalar and vector conditions do",
+   315	        matrix_is_zero(residual - residual_from_conditions)
+   316	        and all(
+   317	            sp.simplify(actual - expected) == 0
+   318	            for actual, expected in zip(
+   319	                recovered_conditions, (scalar_condition,) + vector_conditions
+   320	            )
+   321	        ),
+   322	    )
+   323	
+   324	    minus_direction = tuple(-component for component in direction)
+   325	    projective_menu_sum = bloch_projector(direction) + bloch_projector(minus_direction)
+   326	    runner.check(
+   327	        "T1b-projective",
+   328	        "symbolic antipodal projective menu sums to identity",
+   329	        projector_idempotence and matrix_is_zero(projective_menu_sum - I2),
+   330	    )
+   331	
+   332	    coin_c = sp.symbols("coin_c", real=True)
+   333	    coin_interval = sp.reduce_inequalities(
+   334	        [coin_c > 0, coin_c < 1], coin_c
+   335	    )
+   336	    runner.check(
+   337	        "T1b-coin",
+   338	        "symbolic two-outcome identity coin sums to identity",
+   339	        coin_interval is not sp.false
+   340	        and coin_interval != False
+   341	        and matrix_is_zero(coin_c * I2 + (1 - coin_c) * I2 - I2),
+   342	    )
+   343	
+   344	    split_l, split_m, split_r = sp.symbols(
+   345	        "split_l split_m split_r", positive=True
+   346	    )
+   347	    split_sum = (
+   348	        split_l * bloch_projector(direction)
+   349	        + split_m * bloch_projector(direction)
+   350	        + split_r * bloch_projector(direction)
+   351	        + bloch_projector(minus_direction)
+   352	    )
+   353	    runner.check(
+   354	        "T1b-split",
+   355	        "symbolic same-direction split menu sums to identity under l+m+r=1",
+   356	        matrix_is_zero(split_sum.subs(split_r, 1 - split_l - split_m) - I2),
+   357	    )
+   358	
+   359	    coplanar_directions = (
+   360	        (sp.Integer(1), sp.Integer(0), sp.Integer(0)),
+   361	        (-sp.Rational(1, 2), sp.sqrt(3) / 2, sp.Integer(0)),
+   362	        (-sp.Rational(1, 2), -sp.sqrt(3) / 2, sp.Integer(0)),
+   363	    )
+   364	    coplanar_menu = tuple(
+   365	        sp.Rational(2, 3) * bloch_projector(item_direction)
+   366	        for item_direction in coplanar_directions
+   367	    )
+   368	    runner.check(
+   369	        "T1b-coplanar",
+   370	        "exact three-element coplanar scaled-projector menu sums to identity",
+   371	        all(
+   372	            sp.simplify(sum(component**2 for component in item_direction) - 1) == 0
+   373	            for item_direction in coplanar_directions
+   374	        )
+   375	        and valid_scaled_projector_menu(coplanar_menu),
+   376	    )
+   377	
+   378	    px, py, pz = sp.symbols("px py pz", positive=True)
+   379	    positive_direction = (px, py, pz)
+   380	    positive_length = px + py + pz
+   381	    positive_c0 = sp.simplify(2 / (1 + positive_length))
+   382	    generic_axis_sum = (
+   383	        positive_c0 * bloch_projector(positive_direction)
+   384	        + positive_c0 * px * bloch_projector((-1, 0, 0))
+   385	        + positive_c0 * py * bloch_projector((0, -1, 0))
+   386	        + positive_c0 * pz * bloch_projector((0, 0, -1))
+   387	    )
+   388	    pair_sum = px * py + px * pz + py * pz
+   389	    c0_upper_certificate = sp.simplify(2 * pair_sum / (1 + positive_length) ** 2)
+   390	    coefficient_upper_certificates = tuple(
+   391	        sp.simplify(
+   392	            (
+   393	                sum(other**2 for other in positive_direction if other != component)
+   394	                / (1 + component)
+   395	                + sum(other for other in positive_direction if other != component)
+   396	            )
+   397	            / (1 + positive_length)
+   398	        )
+   399	        for component in positive_direction
+   400	    )
+   401	    runner.check(
+   402	        "T1c-generic",
+   403	        "generic positive-octant axis cancellation is a menu with coefficients in (0,1]",
+   404	        matrix_is_zero(generic_axis_sum - I2)
+   405	        and positive_c0.is_positive is True
+   406	        and all((positive_c0 * component).is_positive is True for component in positive_direction)
+   407	        and c0_upper_certificate.is_positive is True
+   408	        and unit_sphere_zero(1 - positive_c0 - c0_upper_certificate, positive_direction)
+   409	        and all(
+   410	            certificate.is_positive is True
+   411	            and unit_sphere_zero(
+   412	                1 - positive_c0 * component - certificate,
+   413	                positive_direction,
+   414	            )
+   415	            for component, certificate in zip(
+   416	                positive_direction, coefficient_upper_certificates
+   417	            )
+   418	        ),
+   419	    )
+   420	
+   421	    octant_signs = (
+   422	        (1, 1, 1),
+   423	        (1, 1, -1),
+   424	        (1, -1, 1),
+   425	        (1, -1, -1),
+   426	        (-1, 1, 1),
+   427	        (-1, 1, -1),
+   428	        (-1, -1, 1),
+   429	        (-1, -1, -1),
+   430	    )
+   431	    for index, signs in enumerate(octant_signs, start=1):
+   432	        octant_direction = tuple(
+   433	            sign * component
+   434	            for sign, component in zip(
+   435	                signs, (sp.Rational(3, 7), sp.Rational(6, 7), sp.Rational(2, 7))
+   436	            )
+   437	        )
+   438	        octant_menu = axis_cancellation_menu(octant_direction)
+   439	        runner.check(
+   440	            f"T1c-octant-{index}",
+   441	            "rational octant witness is an exact axis-cancellation menu",
+   442	            sp.simplify(sum(component**2 for component in octant_direction) - 1) == 0
+   443	            and valid_scaled_projector_menu(octant_menu),
+   444	        )
+   445	
+   446	    zero_component_direction = (
+   447	        sp.Rational(3, 5), sp.Integer(0), -sp.Rational(4, 5)
+   448	    )
+   449	    zero_component_menu = axis_cancellation_menu(zero_component_direction)
+   450	    runner.check(
+   451	        "T1c-zero-component",
+   452	        "zero-component axis menu omits the zero-weight element and sums exactly",
+   453	        len(zero_component_menu) == 3
+   454	        and valid_scaled_projector_menu(zero_component_menu),
+   455	    )
+   456	
+   457	    e_z = (sp.Integer(0), sp.Integer(0), sp.Integer(1))
+   458	    axis_menu = axis_cancellation_menu(e_z)
+   459	    runner.check(
+   460	        "T1c-axis",
+   461	        "axis cancellation degenerates to the antipodal projective menu",
+   462	        len(axis_menu) == 2
+   463	        and valid_scaled_projector_menu(axis_menu)
+   464	        and all(
+   465	            matrix_is_zero(actual - expected)
+   466	            for actual, expected in zip(
+   467	                axis_menu, (bloch_projector(e_z), bloch_projector((0, 0, -1)))
+   468	            )
+   469	        ),
+   470	    )
+   471	
+   472	    reject_direction = (
+   473	        sp.Rational(3, 7), sp.Rational(6, 7), sp.Rational(2, 7)
+   474	    )
+   475	    full_axis_menu = axis_cancellation_menu(reject_direction)
+   476	    dropped_axis_menu = full_axis_menu[:-1]
+   477	    runner.check(
+   478	        "T1d",
+   479	        "menu checker rejects an axis family with a vector-cancelling element dropped",
+   480	        all(scaled_projector_parameters(item) is not None for item in dropped_axis_menu)
+   481	        and not matrix_is_zero(sum(dropped_axis_menu, sp.zeros(2)) - I2)
+   482	        and not valid_scaled_projector_menu(dropped_axis_menu),
+   483	    )
+   484	
+   485	    unsharp_effect = sp.diag(sp.Rational(1, 2), sp.Rational(1, 4))
+   486	    runner.check(
+   487	        "T1e",
+   488	        "effect with two distinct nonzero eigenvalues is outside S",
+   489	        is_effect(unsharp_effect)
+   490	        and exact_eigenvalue_multiset(unsharp_effect)
+   491	        == (sp.Rational(1, 4), sp.Rational(1, 2))
+   492	        and scaled_projector_parameters(unsharp_effect) is None,
+   493	    )
+   494	
+   495	    # Group T2 - forcing on the scaled-projector family
+   496	    h_l, h_m, h_lm, h_r, g_minus = sp.symbols(
+   497	        "h_l h_m h_lm h_r g_minus", real=True
+   498	    )
+   499	    ray_solution = sp.solve(
+   500	        [
+   501	            sp.Eq(h_l + h_m + h_r + g_minus, 1),
+   502	            sp.Eq(h_lm + h_r + g_minus, 1),
+   503	        ],
+   504	        (h_lm, g_minus),
+   505	        dict=True,
+   506	    )
+   507	    split_first = (
+   508	        split_l * bloch_projector(direction)
+   509	        + split_m * bloch_projector(direction)
+   510	        + (1 - split_l - split_m) * bloch_projector(direction)
+   511	        + bloch_projector(minus_direction)
+   512	    )
+   513	    split_regrouped = (
+   514	        (split_l + split_m) * bloch_projector(direction)
+   515	        + (1 - split_l - split_m) * bloch_projector(direction)
+   516	        + bloch_projector(minus_direction)
+   517	    )
+   518	    runner.check(
+   519	        "T2a",
+   520	        "two valid split-menu normalizations eliminate to ray additivity",
+   521	        projector_idempotence
+   522	        and matrix_is_zero(split_first - I2)
+   523	        and matrix_is_zero(split_regrouped - I2)
+   524	        and len(ray_solution) == 1
+   525	        and sp.simplify(ray_solution[0][h_lm] - h_l - h_m) == 0,
+   526	    )
+   527	
+   528	    h_one, h_half, h_third, h_two_thirds, h_remainder = sp.symbols(
+   529	        "h_one h_half h_third h_two_thirds h_remainder", real=True
+   530	    )
+   531	    half_solution = sp.solve(
+   532	        [
+   533	            sp.Eq(2 * h_half + h_remainder, 1),
+   534	            sp.Eq(h_one + h_remainder, 1),
+   535	        ],
+   536	        (h_half, h_remainder),
+   537	        dict=True,
+   538	    )
+   539	    thirds_solution = sp.solve(
+   540	        [
+   541	            sp.Eq(3 * h_third + h_remainder, 1),
+   542	            sp.Eq(h_one + h_remainder, 1),
+   543	            sp.Eq(h_two_thirds, 2 * h_third),
+   544	        ],
+   545	        (h_third, h_two_thirds, h_remainder),
+   546	        dict=True,
+   547	    )
+   548	    runner.check(
+   549	        "T2b-rational",
+   550	        "ray additivity gives exact homogeneity at one-half and two-thirds",
+   551	        len(half_solution) == 1
+   552	        and len(thirds_solution) == 1
+   553	        and sp.simplify(half_solution[0][h_half] - h_one / 2) == 0
+   554	        and sp.simplify(
+   555	            thirds_solution[0][h_two_thirds] - 2 * h_one / 3
+   556	        )
+   557	        == 0,
+   558	    )
+   559	
+   560	    h_lower, h_upper = sp.symbols("h_lower h_upper", real=True)
+   561	    h_increment = sp.symbols("h_increment", nonnegative=True)
+   562	    monotone_solution = sp.solve(
+   563	        [sp.Eq(h_upper, h_lower + h_increment)], h_upper, dict=True
+   564	    )
+   565	    monotone_difference = sp.simplify(
+   566	        (h_upper - h_lower).subs(monotone_solution[0])
+   567	    )
+   568	    runner.check(
+   569	        "T2b-monotone",
+   570	        "nonnegative ray increments force monotonicity",
+   571	        monotone_difference == h_increment
+   572	        and monotone_difference.is_nonnegative is True,
+   573	    )
+   574	
+   575	    t = sp.symbols("t", real=True)
+   576	    q1 = sp.Rational(1, 2)
+   577	    q2 = sp.Rational(2, 3)
+   578	    squeeze_interval_ok = nonnegative_between(t - q1, t, q1, q2) and nonnegative_between(
+   579	        q2 - t, t, q1, q2
+   580	    )
+   581	    h_t, h_base = sp.symbols("h_t h_base", real=True)
+   582	    lower_weight, upper_weight = sp.symbols(
+   583	        "lower_weight upper_weight", nonnegative=True
+   584	    )
+   585	    squeeze_solution = sp.solve(
+   586	        [
+   587	            sp.Eq(h_t, q1 * h_base + lower_weight),
+   588	            sp.Eq(q2 * h_base, h_t + upper_weight),
+   589	        ],
+   590	        (h_base, h_t),
+   591	        dict=True,
+   592	    )
+   593	    squeeze_lower_residual = sp.simplify(
+   594	        (h_t - q1 * h_base).subs(squeeze_solution[0])
+   595	    )
+   596	    squeeze_upper_residual = sp.simplify(
+   597	        (q2 * h_base - h_t).subs(squeeze_solution[0])
+   598	    )
+   599	    runner.check(
+   600	        "T2b-squeeze",
+   601	        "hardened nonempty-interval guard and formal squeeze hold between one-half and two-thirds",
+   602	        squeeze_interval_ok
+   603	        and squeeze_lower_residual == lower_weight
+   604	        and squeeze_upper_residual == upper_weight
+   605	        and squeeze_lower_residual.is_nonnegative is True
+   606	        and squeeze_upper_residual.is_nonnegative is True,
+   607	    )
+   608	
+   609	    toy_small = sp.Rational(1, 4) * bloch_projector(e_z)
+   610	    toy_large = sp.Rational(1, 2) * bloch_projector(e_z)
+   611	    toy_weights = {
+   612	        "small": sp.Rational(3, 4),
+   613	        "large": sp.Rational(1, 4),
+   614	    }
+   615	    runner.check(
+   616	        "T2b-rejector",
+   617	        "checker detects a non-monotone toy assignment on one ray",
+   618	        scaled_projector_parameters(toy_small) is not None
+   619	        and scaled_projector_parameters(toy_large - toy_small) is not None
+   620	        and (toy_weights["large"] - toy_weights["small"]).is_negative is True,
+   621	    )
+   622	
+   623	    g_n, g_n_complement = sp.symbols("g_n g_n_complement", real=True)
+   624	    complement_solution = sp.solve(
+   625	        [sp.Eq(g_n + g_n_complement, 1)], g_n_complement, dict=True
+   626	    )
+   627	    runner.check(
+   628	        "T2c",
+   629	        "projective-menu normalization formally gives the complement identity",
+   630	        matrix_is_zero(projective_menu_sum - I2)
+   631	        and len(complement_solution) == 1
+   632	        and sp.simplify(complement_solution[0][g_n_complement] - (1 - g_n))
+   633	        == 0,
+   634	    )
+   635	
+   636	    g_xp, g_xm, g_yp, g_ym, g_zp, g_zm = sp.symbols(
+   637	        "g_xp g_xm g_yp g_ym g_zp g_zm", real=True
+   638	    )
+   639	    axis_g = sp.symbols("axis_g", real=True)
+   640	    axis_affinity_solution = sp.solve(
+   641	        [
+   642	            sp.Eq(g_xp + g_xm, 1),
+   643	            sp.Eq(g_yp + g_ym, 1),
+   644	            sp.Eq(g_zp + g_zm, 1),
+   645	            sp.Eq(
+   646	                positive_c0 * axis_g
+   647	                + positive_c0 * px * g_xm
+   648	                + positive_c0 * py * g_ym
+   649	                + positive_c0 * pz * g_zm,
+   650	                1,
+   651	            ),
+   652	        ],
+   653	        (axis_g, g_xm, g_ym, g_zm),
+   654	        dict=True,
+   655	    )
+   656	    s_axes = (2 * g_xp - 1, 2 * g_yp - 1, 2 * g_zp - 1)
+   657	    positive_affine_target = sp.simplify(
+   658	        (1 + sum(component * s_axis for component, s_axis in zip(positive_direction, s_axes)))
+   659	        / 2
+   660	    )
+   661	    runner.check(
+   662	        "T2d-generic",
+   663	        "complements and the symbolic positive-octant axis menu eliminate to Bloch affinity",
+   664	        len(axis_affinity_solution) == 1
+   665	        and sp.simplify(
+   666	            axis_affinity_solution[0][axis_g] - positive_affine_target
+   667	        )
+   668	        == 0,
+   669	    )
+   670	
+   671	    axis_value_by_sign = (
+   672	        (g_xp, g_xm),
+   673	        (g_yp, g_ym),
+   674	        (g_zp, g_zm),
+   675	    )
+   676	    complement_substitutions = {g_xm: 1 - g_xp, g_ym: 1 - g_yp, g_zm: 1 - g_zp}
+   677	
+   678	    def axis_menu_forced_value(witness_direction):
+   679	        witness_length = sp.simplify(
+   680	            sum(abs(component) for component in witness_direction)
+   681	        )
+   682	        witness_c0 = sp.simplify(2 / (1 + witness_length))
+   683	        normalization_left = witness_c0 * axis_g
+   684	        for component, (positive_value, negative_value) in zip(
+   685	            witness_direction, axis_value_by_sign
+   686	        ):
+   687	            if component == 0:
+   688	                continue
+   689	            opposite_value = negative_value if component.is_positive is True else positive_value
+   690	            normalization_left += witness_c0 * abs(component) * opposite_value
+   691	        solved = sp.solve(
+   692	            [sp.Eq(normalization_left.subs(complement_substitutions), 1)],
+   693	            axis_g,
+   694	            dict=True,
+   695	        )
+   696	        if len(solved) != 1:
+   697	            return None
+   698	        return sp.simplify(solved[0][axis_g])
+   699	
+   700	    for index, signs in enumerate(octant_signs, start=1):
+   701	        octant_direction = tuple(
+   702	            sign * component
+   703	            for sign, component in zip(
+   704	                signs, (sp.Rational(3, 7), sp.Rational(6, 7), sp.Rational(2, 7))
+   705	            )
+   706	        )
+   707	        forced_value = axis_menu_forced_value(octant_direction)
+   708	        affine_target = sp.simplify(
+   709	            (1 + sum(component * s_axis for component, s_axis in zip(octant_direction, s_axes)))
+   710	            / 2
+   711	        )
+   712	        runner.check(
+   713	            f"T2d-octant-{index}",
+   714	            "rational octant axis normalization gives the same affine value",
+   715	            forced_value is not None
+   716	            and sp.simplify(forced_value - affine_target) == 0,
+   717	        )
+   718	
+   719	    zero_forced_value = axis_menu_forced_value(zero_component_direction)
+   720	    zero_affine_target = sp.simplify(
+   721	        (1 + sum(component * s_axis for component, s_axis in zip(zero_component_direction, s_axes)))
+   722	        / 2
+   723	    )
+   724	    runner.check(
+   725	        "T2d-zero-component",
+   726	        "zero-component axis normalization gives the same affine value",
+   727	        zero_forced_value is not None
+   728	        and sp.simplify(zero_forced_value - zero_affine_target) == 0,
+   729	    )
+   730	
+   731	    f_c, f_cp, f_sum, f_remainder = sp.symbols(
+   732	        "f_c f_cp f_sum f_remainder", real=True
+   733	    )
+   734	    coin_additivity_solution = sp.solve(
+   735	        [
+   736	            sp.Eq(f_c + f_cp + f_remainder, 1),
+   737	            sp.Eq(f_sum + f_remainder, 1),
+   738	        ],
+   739	        (f_sum, f_remainder),
+   740	        dict=True,
+   741	    )
+   742	    runner.check(
+   743	        "T2e-additivity",
+   744	        "two coin-menu normalizations eliminate to identity-ray additivity",
+   745	        len(coin_additivity_solution) == 1
+   746	        and sp.simplify(coin_additivity_solution[0][f_sum] - f_c - f_cp) == 0,
+   747	    )
+   748	
+   749	    rational_numerator = sp.symbols("rational_numerator", positive=True, integer=True)
+   750	    rational_denominator = sp.symbols(
+   751	        "rational_denominator", positive=True, integer=True
+   752	    )
+   753	    f_unit_fraction, f_rational = sp.symbols(
+   754	        "f_unit_fraction f_rational", real=True
+   755	    )
+   756	    rational_value_solution = sp.solve(
+   757	        [
+   758	            sp.Eq(rational_denominator * f_unit_fraction, 1),
+   759	            sp.Eq(f_rational, rational_numerator * f_unit_fraction),
+   760	        ],
+   761	        (f_unit_fraction, f_rational),
+   762	        dict=True,
+   763	    )
+   764	    runner.check(
+   765	        "T2e-rational",
+   766	        "coin additivity and f(1)=1 give f(p/r)=p/r",
+   767	        len(rational_value_solution) == 1
+   768	        and sp.simplify(
+   769	            rational_value_solution[0][f_rational]
+   770	            - rational_numerator / rational_denominator
+   771	        )
+   772	        == 0,
+   773	    )
+   774	
+   775	    f_t, f_base = sp.symbols("f_t f_base", real=True)
+   776	    f_lower_weight, f_upper_weight = sp.symbols(
+   777	        "f_lower_weight f_upper_weight", nonnegative=True
+   778	    )
+   779	    coin_squeeze_solution = sp.solve(
+   780	        [
+   781	            sp.Eq(f_t, q1 * f_base + f_lower_weight),
+   782	            sp.Eq(q2 * f_base, f_t + f_upper_weight),
+   783	        ],
+   784	        (f_base, f_t),
+   785	        dict=True,
+   786	    )
+   787	    coin_lower_residual = sp.simplify(
+   788	        (f_t - q1 * f_base).subs(coin_squeeze_solution[0])
+   789	    )
+   790	    coin_upper_residual = sp.simplify(
+   791	        (q2 * f_base - f_t).subs(coin_squeeze_solution[0])
+   792	    )
+   793	    runner.check(
+   794	        "T2e-squeeze",
+   795	        "coin continuity uses the same hardened rational-squeeze scaffolding",
+   796	        squeeze_interval_ok
+   797	        and nonnegative_between(t - q1, t, q1, q2)
+   798	        and nonnegative_between(q2 - t, t, q1, q2)
+   799	        and coin_lower_residual == f_lower_weight
+   800	        and coin_upper_residual == f_upper_weight
+   801	        and coin_lower_residual.is_nonnegative is True
+   802	        and coin_upper_residual.is_nonnegative is True,
+   803	    )
+   804	
+   805	    s_x, s_y, s_z = sp.symbols("s_x s_y s_z", real=True)
+   806	    s_length = sp.symbols("s_length", positive=True)
+   807	    s_squared = s_x**2 + s_y**2 + s_z**2
+   808	    negative_s_direction = (-s_x / s_length, -s_y / s_length, -s_z / s_length)
+   809	    g_at_negative_s = sp.simplify(
+   810	        (1 + sum(component * s_axis for component, s_axis in zip(
+   811	            negative_s_direction, (s_x, s_y, s_z)
+   812	        )))
+   813	        / 2
+   814	    )
+   815	    g_at_negative_s_on_radius = sp.simplify(
+   816	        g_at_negative_s.subs(s_z**2, s_length**2 - s_x**2 - s_y**2)
+   817	    )
+   818	    g_minimum = sp.symbols("g_minimum", nonnegative=True)
+   819	    norm_solution = sp.solve(
+   820	        [sp.Eq(g_minimum, g_at_negative_s_on_radius)], s_length, dict=True
+   821	    )
+   822	    norm_margin = sp.simplify(
+   823	        (1 - s_length).subs(norm_solution[0])
+   824	    )
+   825	    sigma_state = (I2 + s_x * sx + s_y * sy + s_z * sz) / 2
+   826	    state_spectral_parameter = sp.symbols("state_spectral_parameter")
+   827	    state_characteristic = sp.det(state_spectral_parameter * I2 - sigma_state)
+   828	    target_characteristic = (
+   829	        state_spectral_parameter - (1 - s_length) / 2
+   830	    ) * (
+   831	        state_spectral_parameter - (1 + s_length) / 2
+   832	    )
+   833	    state_char_numerator = sp.together(
+   834	        state_characteristic - target_characteristic
+   835	    ).as_numer_denom()[0]
+   836	    state_char_remainder = sp.rem(
+   837	        sp.Poly(sp.expand(state_char_numerator), s_z),
+   838	        sp.Poly(s_z**2 + s_x**2 + s_y**2 - s_length**2, s_z),
+   839	    ).as_expr()
+   840	    lower_state_eigenvalue = (1 - s_length) / 2
+   841	    upper_state_eigenvalue = (1 + s_length) / 2
+   842	    runner.check(
+   843	        "T2f-state",
+   844	        "the antipodal minimum forces norm at most one and sigma is a density matrix",
+   845	        g_at_negative_s_on_radius == (1 - s_length) / 2
+   846	        and len(norm_solution) == 1
+   847	        and norm_margin == 2 * g_minimum
+   848	        and norm_margin.is_nonnegative is True
+   849	        and sp.trace(sigma_state) == 1
+   850	        and sp.simplify(state_char_remainder) == 0
+   851	        and sp.simplify(
+   852	            lower_state_eigenvalue.subs(norm_solution[0]) - g_minimum
+   853	        )
+   854	        == 0
+   855	        and upper_state_eigenvalue.is_positive is True,
+   856	    )
+   857	
+   858	    representation_scale = sp.symbols("representation_scale", positive=True)
+   859	    representation_direction = (nx, ny, nz)
+   860	    affine_value = sp.simplify(
+   861	        (1 + nx * s_x + ny * s_y + nz * s_z) / 2
+   862	    )
+   863	    runner.check(
+   864	        "T2f-representation",
+   865	        "sigma represents every symbolic scaled projector and identity multiple",
+   866	        sp.simplify(
+   867	            sp.trace(
+   868	                sigma_state
+   869	                * representation_scale
+   870	                * bloch_projector(representation_direction)
+   871	            )
+   872	            - representation_scale * affine_value
+   873	        )
+   874	        == 0
+   875	        and sp.simplify(
+   876	            sp.trace(sigma_state * representation_scale * I2)
+   877	            - representation_scale
+   878	        )
+   879	        == 0,
+   880	    )
+   881	
+   882	    delta_a, delta_d, delta_x, delta_y = sp.symbols(
+   883	        "delta_a delta_d delta_x delta_y", real=True
+   884	    )
+   885	    hermitian_difference = sp.Matrix(
+   886	        [
+   887	            [delta_a, delta_x - sp.I * delta_y],
+   888	            [delta_x + sp.I * delta_y, delta_d],
+   889	        ]
+   890	    )
+   891	    uniqueness_solution = sp.solve(
+   892	        [
+   893	            sp.Eq(sp.trace(hermitian_difference * observable), 0)
+   894	            for observable in (
+   895	                bloch_projector((1, 0, 0)),
+   896	                bloch_projector((0, 1, 0)),
+   897	                bloch_projector((0, 0, 1)),
+   898	                I2,
+   899	            )
+   900	        ],
+   901	        (delta_a, delta_d, delta_x, delta_y),
+   902	        dict=True,
+   903	    )
+   904	    runner.check(
+   905	        "T2f-uniqueness",
+   906	        "four trace values determine a Hermitian M2 representative uniquely",
+   907	        uniqueness_solution
+   908	        == [{delta_a: 0, delta_d: 0, delta_x: 0, delta_y: 0}],
+   909	    )
+   910	
+   911	    # Group T3 - paired-menu boundary
+   912	    pair_g1, pair_g1c, pair_g2, pair_g2c = sp.symbols(
+   913	        "pair_g1 pair_g1c pair_g2 pair_g2c", real=True
+   914	    )
+   915	    pair_l1, pair_l2, pair_d = sp.symbols(
+   916	        "pair_l1 pair_l2 pair_d", real=True
+   917	    )
+   918	    paired_weight_sum = (
+   919	        pair_l1 * (pair_g1 + pair_g1c)
+   920	        + pair_l2 * (pair_g2 + pair_g2c)
+   921	        + pair_d
+   922	    )
+   923	    paired_solution = sp.solve(
+   924	        [
+   925	            sp.Eq(pair_g1 + pair_g1c, 1),
+   926	            sp.Eq(pair_g2 + pair_g2c, 1),
+   927	            sp.Eq(pair_l1 + pair_l2 + pair_d, 1),
+   928	        ],
+   929	        (pair_g1c, pair_g2c, pair_d),
+   930	        dict=True,
+   931	    )
+   932	    paired_normalization_ok = (
+   933	        len(paired_solution) == 1
+   934	        and sp.simplify(paired_weight_sum.subs(paired_solution[0]) - 1) == 0
+   935	    )
+   936	    runner.check(
+   937	        "T3a",
+   938	        "two-pair plus one-coin rogue normalization reduces to the T1 scalar condition",
+   939	        paired_normalization_ok,
+   940	    )
+   941	
+   942	    e_x = (sp.Integer(1), sp.Integer(0), sp.Integer(0))
+   943	    inv_sqrt2 = sp.sqrt(2) / 2
+   944	    u_direction = (inv_sqrt2, sp.Integer(0), -inv_sqrt2)
+   945	    hemisphere_values_ok = (
+   946	        hemisphere_weight(e_x) == 1
+   947	        and hemisphere_weight(e_z) == 1
+   948	        and hemisphere_weight(u_direction) == 0
+   949	        and hemisphere_weight(tuple(-component for component in e_x)) == 0
+   950	        and hemisphere_weight(tuple(-component for component in e_z)) == 0
+   951	        and hemisphere_weight(u_direction)
+   952	        + hemisphere_weight(tuple(-component for component in u_direction))
+   953	        == 1
+   954	    )
+   955	    runner.check(
+   956	        "T3b-hemisphere",
+   957	        "lexicographic hemisphere rogue has the required tie-aware values",
+   958	        hemisphere_values_ok,
+   959	    )
+   960	
+   961	    rogue_samples = ((e_x, sp.Integer(1)), (e_z, sp.Integer(1)))
+   962	    rogue_forced_u = forced_trace_value(rogue_samples, u_direction)
+   963	    rogue_conflict_ok = (
+   964	        rogue_forced_u == sp.Rational(1, 2)
+   965	        and detects_trace_conflict(
+   966	            rogue_samples, u_direction, hemisphere_weight(u_direction)
+   967	        )
+   968	    )
+   969	    runner.check(
+   970	        "T3b-conflict",
+   971	        "normalization and two rogue values force trace value one-half at u",
+   972	        rogue_conflict_ok,
+   973	    )
+   974	
+   975	    def affine_z_weight(item_direction):
+   976	        return sp.simplify((1 + item_direction[2]) / 2)
+   977	
+   978	    affine_samples = (
+   979	        (e_x, affine_z_weight(e_x)),
+   980	        (e_z, affine_z_weight(e_z)),
+   981	    )
+   982	    affine_forced_u = forced_trace_value(affine_samples, u_direction)
+   983	    affine_sigma = (I2 + sz) / 2
+   984	    affine_control_ok = (
+   985	        affine_forced_u == affine_z_weight(u_direction)
+   986	        and not detects_trace_conflict(
+   987	            affine_samples, u_direction, affine_z_weight(u_direction)
+   988	        )
+   989	        and all(
+   990	            sp.simplify(
+   991	                sp.trace(affine_sigma * bloch_projector(item_direction))
+   992	                - affine_z_weight(item_direction)
+   993	            )
+   994	            == 0
+   995	            for item_direction in (e_x, e_z, u_direction)
+   996	        )
+   997	    )
+   998	    runner.check(
+   999	        "T3b-control",
+  1000	        "affine Bloch control remains consistent and is not falsely detected",
+  1001	        affine_control_ok,
+  1002	    )
+  1003	
+  1004	    split_direction = e_z
+  1005	    split_antipode = tuple(-component for component in split_direction)
+  1006	    split_weights_side = (
+  1007	        sp.Rational(1, 5),
+  1008	        sp.Rational(1, 4),
+  1009	        1 - sp.Rational(1, 5) - sp.Rational(1, 4),
+  1010	    )
+  1011	    split_weights_antipode = (sp.Integer(1),)
+  1012	    exact_split_menu = tuple(
+  1013	        weight * bloch_projector(split_direction)
+  1014	        for weight in split_weights_side
+  1015	    ) + tuple(
+  1016	        weight * bloch_projector(split_antipode)
+  1017	        for weight in split_weights_antipode
+  1018	    )
+  1019	    split_unpaired = (
+  1020	        valid_scaled_projector_menu(exact_split_menu)
+  1021	        and tuple(sorted(split_weights_side, key=sp.default_sort_key))
+  1022	        != tuple(sorted(split_weights_antipode, key=sp.default_sort_key))
+  1023	    )
+  1024	    runner.check(
+  1025	        "T3c-split",
+  1026	        "exact split witness has no equal-weight antipodal perfect matching",
+  1027	        split_unpaired,
+  1028	    )
+  1029	
+  1030	    positive_octant_direction = (
+  1031	        sp.Rational(3, 7), sp.Rational(6, 7), sp.Rational(2, 7)
+  1032	    )
+  1033	    positive_octant_axis_directions = (
+  1034	        positive_octant_direction,
+  1035	        (-sp.Integer(1), sp.Integer(0), sp.Integer(0)),
+  1036	        (sp.Integer(0), -sp.Integer(1), sp.Integer(0)),
+  1037	        (sp.Integer(0), sp.Integer(0), -sp.Integer(1)),
+  1038	    )
+  1039	    pair_dots = tuple(
+  1040	        sp.simplify(
+  1041	            sum(left_component * right_component for left_component, right_component in zip(left, right))
+  1042	        )
+  1043	        for left_index, left in enumerate(positive_octant_axis_directions)
+  1044	        for right in positive_octant_axis_directions[left_index + 1 :]
+  1045	    )
+  1046	    axis_unpaired = (
+  1047	        valid_scaled_projector_menu(axis_cancellation_menu(positive_octant_direction))
+  1048	        and len(pair_dots) == 6
+  1049	        and all(sp.simplify(dot + 1) != 0 for dot in pair_dots)
+  1050	    )
+  1051	    runner.check(
+  1052	        "T3c-axis",
+  1053	        "positive-octant axis menu has four pairwise non-antipodal directions",
+  1054	        axis_unpaired,
+  1055	    )
+  1056	
+  1057	    runner.check(
+  1058	        "T3d-corollary",
+  1059	        "corollary: paired rogue survives, so forcing uses split and axis-cancellation schemas",
+  1060	        paired_normalization_ok
+  1061	        and hemisphere_values_ok
+  1062	        and rogue_conflict_ok
+  1063	        and affine_control_ok
+  1064	        and split_unpaired
+  1065	        and axis_unpaired,
+  1066	    )
+  1067	
+  1068	    # Group N - exact document needle checks
+  1069	    note_text = NOTE_PATH.read_text(encoding="utf-8")
+  1070	    parent_text = PARENT_PATH.read_text(encoding="utf-8")
+  1071	    axiom_text = AXIOM_PATH.read_text(encoding="utf-8")
+  1072	    note_normalized = normalize(note_text)
+  1073	    parent_normalized = normalize(parent_text)
+  1074	    axiom_normalized = normalize(axiom_text)
+  1075	
+  1076	    runner.check(
+  1077	        "N1",
+  1078	        "axiom memo pins record readability to record content alone",
+  1079	        "Only records are readable. A readout value is determined by record content alone."
+  1080	        in axiom_normalized,
+  1081	    )
+  1082	
+  1083	    runner.check(
+  1084	        "N2",
+  1085	        "parent note names intermediate classical mixtures as untested",
+  1086	        "classical mixtures of projective menus and other intermediate families"
+  1087	        in parent_normalized,
+  1088	    )
+  1089	
+  1090	    runner.check(
+  1091	        "N3",
+  1092	        "parent note pins the menu-grade hypothesis surface as underived",
+  1093	        "Whether the physical registration supplies menus at projective grade, at effect grade, at neither, or at some intermediate family is underived and is not decided here."
+  1094	        in parent_normalized,
+  1095	    )
+  1096	
+  1097	    runner.check(
+  1098	        "N4-claim",
+  1099	        "source note pins its exact claim identifier",
+  1100	        "claim_id: born_form_scaled_projector_menu_family_sitewise_forcing_and_paired_menu_boundary_bounded_theorem_note_2026-07-17"
+  1101	        in note_text,
+  1102	    )
+  1103	
+  1104	    runner.check(
+  1105	        "N4-labels",
+  1106	        "source note contains both scaled-projector hypothesis labels",
+  1107	        "**(F1)" in note_text and "**(F2)" in note_text,
+  1108	    )
+  1109	
+  1110	    runner.check(
+  1111	        "N4-no-bridge",
+  1112	        "source note pins the no-literature-bridge-input scope",
+  1113	        "no literature bridge input" in note_normalized,
+  1114	    )
+  1115	
+  1116	    runner.check(
+  1117	        "N4-paired",
+  1118	        "source note states that the paired subfamily does not force",
+  1119	        "The paired subfamily does not force" in note_normalized,
+  1120	    )
+  1121	
+  1122	    failures = runner.total()
+  1123	    return 1 if failures else 0
+  1124	
+  1125	
+  1126	if __name__ == "__main__":
+  1127	    sys.exit(main())
+
+2026-07-17T21:14:48.219010Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "nl -ba 'scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py' | sed -n '460,760p'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+   460	        "T1c-axis",
+   461	        "axis cancellation degenerates to the antipodal projective menu",
+   462	        len(axis_menu) == 2
+   463	        and valid_scaled_projector_menu(axis_menu)
+   464	        and all(
+   465	            matrix_is_zero(actual - expected)
+   466	            for actual, expected in zip(
+   467	                axis_menu, (bloch_projector(e_z), bloch_projector((0, 0, -1)))
+   468	            )
+   469	        ),
+   470	    )
+   471	
+   472	    reject_direction = (
+   473	        sp.Rational(3, 7), sp.Rational(6, 7), sp.Rational(2, 7)
+   474	    )
+   475	    full_axis_menu = axis_cancellation_menu(reject_direction)
+   476	    dropped_axis_menu = full_axis_menu[:-1]
+   477	    runner.check(
+   478	        "T1d",
+   479	        "menu checker rejects an axis family with a vector-cancelling element dropped",
+   480	        all(scaled_projector_parameters(item) is not None for item in dropped_axis_menu)
+   481	        and not matrix_is_zero(sum(dropped_axis_menu, sp.zeros(2)) - I2)
+   482	        and not valid_scaled_projector_menu(dropped_axis_menu),
+   483	    )
+   484	
+   485	    unsharp_effect = sp.diag(sp.Rational(1, 2), sp.Rational(1, 4))
+   486	    runner.check(
+   487	        "T1e",
+   488	        "effect with two distinct nonzero eigenvalues is outside S",
+   489	        is_effect(unsharp_effect)
+   490	        and exact_eigenvalue_multiset(unsharp_effect)
+   491	        == (sp.Rational(1, 4), sp.Rational(1, 2))
+   492	        and scaled_projector_parameters(unsharp_effect) is None,
+   493	    )
+   494	
+   495	    # Group T2 - forcing on the scaled-projector family
+   496	    h_l, h_m, h_lm, h_r, g_minus = sp.symbols(
+   497	        "h_l h_m h_lm h_r g_minus", real=True
+   498	    )
+   499	    ray_solution = sp.solve(
+   500	        [
+   501	            sp.Eq(h_l + h_m + h_r + g_minus, 1),
+   502	            sp.Eq(h_lm + h_r + g_minus, 1),
+   503	        ],
+   504	        (h_lm, g_minus),
+   505	        dict=True,
+   506	    )
+   507	    split_first = (
+   508	        split_l * bloch_projector(direction)
+   509	        + split_m * bloch_projector(direction)
+   510	        + (1 - split_l - split_m) * bloch_projector(direction)
+   511	        + bloch_projector(minus_direction)
+   512	    )
+   513	    split_regrouped = (
+   514	        (split_l + split_m) * bloch_projector(direction)
+   515	        + (1 - split_l - split_m) * bloch_projector(direction)
+   516	        + bloch_projector(minus_direction)
+   517	    )
+   518	    runner.check(
+   519	        "T2a",
+   520	        "two valid split-menu normalizations eliminate to ray additivity",
+   521	        projector_idempotence
+   522	        and matrix_is_zero(split_first - I2)
+   523	        and matrix_is_zero(split_regrouped - I2)
+   524	        and len(ray_solution) == 1
+   525	        and sp.simplify(ray_solution[0][h_lm] - h_l - h_m) == 0,
+   526	    )
+   527	
+   528	    h_one, h_half, h_third, h_two_thirds, h_remainder = sp.symbols(
+   529	        "h_one h_half h_third h_two_thirds h_remainder", real=True
+   530	    )
+   531	    half_solution = sp.solve(
+   532	        [
+   533	            sp.Eq(2 * h_half + h_remainder, 1),
+   534	            sp.Eq(h_one + h_remainder, 1),
+   535	        ],
+   536	        (h_half, h_remainder),
+   537	        dict=True,
+   538	    )
+   539	    thirds_solution = sp.solve(
+   540	        [
+   541	            sp.Eq(3 * h_third + h_remainder, 1),
+   542	            sp.Eq(h_one + h_remainder, 1),
+   543	            sp.Eq(h_two_thirds, 2 * h_third),
+   544	        ],
+   545	        (h_third, h_two_thirds, h_remainder),
+   546	        dict=True,
+   547	    )
+   548	    runner.check(
+   549	        "T2b-rational",
+   550	        "ray additivity gives exact homogeneity at one-half and two-thirds",
+   551	        len(half_solution) == 1
+   552	        and len(thirds_solution) == 1
+   553	        and sp.simplify(half_solution[0][h_half] - h_one / 2) == 0
+   554	        and sp.simplify(
+   555	            thirds_solution[0][h_two_thirds] - 2 * h_one / 3
+   556	        )
+   557	        == 0,
+   558	    )
+   559	
+   560	    h_lower, h_upper = sp.symbols("h_lower h_upper", real=True)
+   561	    h_increment = sp.symbols("h_increment", nonnegative=True)
+   562	    monotone_solution = sp.solve(
+   563	        [sp.Eq(h_upper, h_lower + h_increment)], h_upper, dict=True
+   564	    )
+   565	    monotone_difference = sp.simplify(
+   566	        (h_upper - h_lower).subs(monotone_solution[0])
+   567	    )
+   568	    runner.check(
+   569	        "T2b-monotone",
+   570	        "nonnegative ray increments force monotonicity",
+   571	        monotone_difference == h_increment
+   572	        and monotone_difference.is_nonnegative is True,
+   573	    )
+   574	
+   575	    t = sp.symbols("t", real=True)
+   576	    q1 = sp.Rational(1, 2)
+   577	    q2 = sp.Rational(2, 3)
+   578	    squeeze_interval_ok = nonnegative_between(t - q1, t, q1, q2) and nonnegative_between(
+   579	        q2 - t, t, q1, q2
+   580	    )
+   581	    h_t, h_base = sp.symbols("h_t h_base", real=True)
+   582	    lower_weight, upper_weight = sp.symbols(
+   583	        "lower_weight upper_weight", nonnegative=True
+   584	    )
+   585	    squeeze_solution = sp.solve(
+   586	        [
+   587	            sp.Eq(h_t, q1 * h_base + lower_weight),
+   588	            sp.Eq(q2 * h_base, h_t + upper_weight),
+   589	        ],
+   590	        (h_base, h_t),
+   591	        dict=True,
+   592	    )
+   593	    squeeze_lower_residual = sp.simplify(
+   594	        (h_t - q1 * h_base).subs(squeeze_solution[0])
+   595	    )
+   596	    squeeze_upper_residual = sp.simplify(
+   597	        (q2 * h_base - h_t).subs(squeeze_solution[0])
+   598	    )
+   599	    runner.check(
+   600	        "T2b-squeeze",
+   601	        "hardened nonempty-interval guard and formal squeeze hold between one-half and two-thirds",
+   602	        squeeze_interval_ok
+   603	        and squeeze_lower_residual == lower_weight
+   604	        and squeeze_upper_residual == upper_weight
+   605	        and squeeze_lower_residual.is_nonnegative is True
+   606	        and squeeze_upper_residual.is_nonnegative is True,
+   607	    )
+   608	
+   609	    toy_small = sp.Rational(1, 4) * bloch_projector(e_z)
+   610	    toy_large = sp.Rational(1, 2) * bloch_projector(e_z)
+   611	    toy_weights = {
+   612	        "small": sp.Rational(3, 4),
+   613	        "large": sp.Rational(1, 4),
+   614	    }
+   615	    runner.check(
+   616	        "T2b-rejector",
+   617	        "checker detects a non-monotone toy assignment on one ray",
+   618	        scaled_projector_parameters(toy_small) is not None
+   619	        and scaled_projector_parameters(toy_large - toy_small) is not None
+   620	        and (toy_weights["large"] - toy_weights["small"]).is_negative is True,
+   621	    )
+   622	
+   623	    g_n, g_n_complement = sp.symbols("g_n g_n_complement", real=True)
+   624	    complement_solution = sp.solve(
+   625	        [sp.Eq(g_n + g_n_complement, 1)], g_n_complement, dict=True
+   626	    )
+   627	    runner.check(
+   628	        "T2c",
+   629	        "projective-menu normalization formally gives the complement identity",
+   630	        matrix_is_zero(projective_menu_sum - I2)
+   631	        and len(complement_solution) == 1
+   632	        and sp.simplify(complement_solution[0][g_n_complement] - (1 - g_n))
+   633	        == 0,
+   634	    )
+   635	
+   636	    g_xp, g_xm, g_yp, g_ym, g_zp, g_zm = sp.symbols(
+   637	        "g_xp g_xm g_yp g_ym g_zp g_zm", real=True
+   638	    )
+   639	    axis_g = sp.symbols("axis_g", real=True)
+   640	    axis_affinity_solution = sp.solve(
+   641	        [
+   642	            sp.Eq(g_xp + g_xm, 1),
+   643	            sp.Eq(g_yp + g_ym, 1),
+   644	            sp.Eq(g_zp + g_zm, 1),
+   645	            sp.Eq(
+   646	                positive_c0 * axis_g
+   647	                + positive_c0 * px * g_xm
+   648	                + positive_c0 * py * g_ym
+   649	                + positive_c0 * pz * g_zm,
+   650	                1,
+   651	            ),
+   652	        ],
+   653	        (axis_g, g_xm, g_ym, g_zm),
+   654	        dict=True,
+   655	    )
+   656	    s_axes = (2 * g_xp - 1, 2 * g_yp - 1, 2 * g_zp - 1)
+   657	    positive_affine_target = sp.simplify(
+   658	        (1 + sum(component * s_axis for component, s_axis in zip(positive_direction, s_axes)))
+   659	        / 2
+   660	    )
+   661	    runner.check(
+   662	        "T2d-generic",
+   663	        "complements and the symbolic positive-octant axis menu eliminate to Bloch affinity",
+   664	        len(axis_affinity_solution) == 1
+   665	        and sp.simplify(
+   666	            axis_affinity_solution[0][axis_g] - positive_affine_target
+   667	        )
+   668	        == 0,
+   669	    )
+   670	
+   671	    axis_value_by_sign = (
+   672	        (g_xp, g_xm),
+   673	        (g_yp, g_ym),
+   674	        (g_zp, g_zm),
+   675	    )
+   676	    complement_substitutions = {g_xm: 1 - g_xp, g_ym: 1 - g_yp, g_zm: 1 - g_zp}
+   677	
+   678	    def axis_menu_forced_value(witness_direction):
+   679	        witness_length = sp.simplify(
+   680	            sum(abs(component) for component in witness_direction)
+   681	        )
+   682	        witness_c0 = sp.simplify(2 / (1 + witness_length))
+   683	        normalization_left = witness_c0 * axis_g
+   684	        for component, (positive_value, negative_value) in zip(
+   685	            witness_direction, axis_value_by_sign
+   686	        ):
+   687	            if component == 0:
+   688	                continue
+   689	            opposite_value = negative_value if component.is_positive is True else positive_value
+   690	            normalization_left += witness_c0 * abs(component) * opposite_value
+   691	        solved = sp.solve(
+   692	            [sp.Eq(normalization_left.subs(complement_substitutions), 1)],
+   693	            axis_g,
+   694	            dict=True,
+   695	        )
+   696	        if len(solved) != 1:
+   697	            return None
+   698	        return sp.simplify(solved[0][axis_g])
+   699	
+   700	    for index, signs in enumerate(octant_signs, start=1):
+   701	        octant_direction = tuple(
+   702	            sign * component
+   703	            for sign, component in zip(
+   704	                signs, (sp.Rational(3, 7), sp.Rational(6, 7), sp.Rational(2, 7))
+   705	            )
+   706	        )
+   707	        forced_value = axis_menu_forced_value(octant_direction)
+   708	        affine_target = sp.simplify(
+   709	            (1 + sum(component * s_axis for component, s_axis in zip(octant_direction, s_axes)))
+   710	            / 2
+   711	        )
+   712	        runner.check(
+   713	            f"T2d-octant-{index}",
+   714	            "rational octant axis normalization gives the same affine value",
+   715	            forced_value is not None
+   716	            and sp.simplify(forced_value - affine_target) == 0,
+   717	        )
+   718	
+   719	    zero_forced_value = axis_menu_forced_value(zero_component_direction)
+   720	    zero_affine_target = sp.simplify(
+   721	        (1 + sum(component * s_axis for component, s_axis in zip(zero_component_direction, s_axes)))
+   722	        / 2
+   723	    )
+   724	    runner.check(
+   725	        "T2d-zero-component",
+   726	        "zero-component axis normalization gives the same affine value",
+   727	        zero_forced_value is not None
+   728	        and sp.simplify(zero_forced_value - zero_affine_target) == 0,
+   729	    )
+   730	
+   731	    f_c, f_cp, f_sum, f_remainder = sp.symbols(
+   732	        "f_c f_cp f_sum f_remainder", real=True
+   733	    )
+   734	    coin_additivity_solution = sp.solve(
+   735	        [
+   736	            sp.Eq(f_c + f_cp + f_remainder, 1),
+   737	            sp.Eq(f_sum + f_remainder, 1),
+   738	        ],
+   739	        (f_sum, f_remainder),
+   740	        dict=True,
+   741	    )
+   742	    runner.check(
+   743	        "T2e-additivity",
+   744	        "two coin-menu normalizations eliminate to identity-ray additivity",
+   745	        len(coin_additivity_solution) == 1
+   746	        and sp.simplify(coin_additivity_solution[0][f_sum] - f_c - f_cp) == 0,
+   747	    )
+   748	
+   749	    rational_numerator = sp.symbols("rational_numerator", positive=True, integer=True)
+   750	    rational_denominator = sp.symbols(
+   751	        "rational_denominator", positive=True, integer=True
+   752	    )
+   753	    f_unit_fraction, f_rational = sp.symbols(
+   754	        "f_unit_fraction f_rational", real=True
+   755	    )
+   756	    rational_value_solution = sp.solve(
+   757	        [
+   758	            sp.Eq(rational_denominator * f_unit_fraction, 1),
+   759	            sp.Eq(f_rational, rational_numerator * f_unit_fraction),
+   760	        ],
+
+2026-07-17T21:14:54.383125Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "nl -ba 'scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py' | sed -n '760,1127p'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+   760	        ],
+   761	        (f_unit_fraction, f_rational),
+   762	        dict=True,
+   763	    )
+   764	    runner.check(
+   765	        "T2e-rational",
+   766	        "coin additivity and f(1)=1 give f(p/r)=p/r",
+   767	        len(rational_value_solution) == 1
+   768	        and sp.simplify(
+   769	            rational_value_solution[0][f_rational]
+   770	            - rational_numerator / rational_denominator
+   771	        )
+   772	        == 0,
+   773	    )
+   774	
+   775	    f_t, f_base = sp.symbols("f_t f_base", real=True)
+   776	    f_lower_weight, f_upper_weight = sp.symbols(
+   777	        "f_lower_weight f_upper_weight", nonnegative=True
+   778	    )
+   779	    coin_squeeze_solution = sp.solve(
+   780	        [
+   781	            sp.Eq(f_t, q1 * f_base + f_lower_weight),
+   782	            sp.Eq(q2 * f_base, f_t + f_upper_weight),
+   783	        ],
+   784	        (f_base, f_t),
+   785	        dict=True,
+   786	    )
+   787	    coin_lower_residual = sp.simplify(
+   788	        (f_t - q1 * f_base).subs(coin_squeeze_solution[0])
+   789	    )
+   790	    coin_upper_residual = sp.simplify(
+   791	        (q2 * f_base - f_t).subs(coin_squeeze_solution[0])
+   792	    )
+   793	    runner.check(
+   794	        "T2e-squeeze",
+   795	        "coin continuity uses the same hardened rational-squeeze scaffolding",
+   796	        squeeze_interval_ok
+   797	        and nonnegative_between(t - q1, t, q1, q2)
+   798	        and nonnegative_between(q2 - t, t, q1, q2)
+   799	        and coin_lower_residual == f_lower_weight
+   800	        and coin_upper_residual == f_upper_weight
+   801	        and coin_lower_residual.is_nonnegative is True
+   802	        and coin_upper_residual.is_nonnegative is True,
+   803	    )
+   804	
+   805	    s_x, s_y, s_z = sp.symbols("s_x s_y s_z", real=True)
+   806	    s_length = sp.symbols("s_length", positive=True)
+   807	    s_squared = s_x**2 + s_y**2 + s_z**2
+   808	    negative_s_direction = (-s_x / s_length, -s_y / s_length, -s_z / s_length)
+   809	    g_at_negative_s = sp.simplify(
+   810	        (1 + sum(component * s_axis for component, s_axis in zip(
+   811	            negative_s_direction, (s_x, s_y, s_z)
+   812	        )))
+   813	        / 2
+   814	    )
+   815	    g_at_negative_s_on_radius = sp.simplify(
+   816	        g_at_negative_s.subs(s_z**2, s_length**2 - s_x**2 - s_y**2)
+   817	    )
+   818	    g_minimum = sp.symbols("g_minimum", nonnegative=True)
+   819	    norm_solution = sp.solve(
+   820	        [sp.Eq(g_minimum, g_at_negative_s_on_radius)], s_length, dict=True
+   821	    )
+   822	    norm_margin = sp.simplify(
+   823	        (1 - s_length).subs(norm_solution[0])
+   824	    )
+   825	    sigma_state = (I2 + s_x * sx + s_y * sy + s_z * sz) / 2
+   826	    state_spectral_parameter = sp.symbols("state_spectral_parameter")
+   827	    state_characteristic = sp.det(state_spectral_parameter * I2 - sigma_state)
+   828	    target_characteristic = (
+   829	        state_spectral_parameter - (1 - s_length) / 2
+   830	    ) * (
+   831	        state_spectral_parameter - (1 + s_length) / 2
+   832	    )
+   833	    state_char_numerator = sp.together(
+   834	        state_characteristic - target_characteristic
+   835	    ).as_numer_denom()[0]
+   836	    state_char_remainder = sp.rem(
+   837	        sp.Poly(sp.expand(state_char_numerator), s_z),
+   838	        sp.Poly(s_z**2 + s_x**2 + s_y**2 - s_length**2, s_z),
+   839	    ).as_expr()
+   840	    lower_state_eigenvalue = (1 - s_length) / 2
+   841	    upper_state_eigenvalue = (1 + s_length) / 2
+   842	    runner.check(
+   843	        "T2f-state",
+   844	        "the antipodal minimum forces norm at most one and sigma is a density matrix",
+   845	        g_at_negative_s_on_radius == (1 - s_length) / 2
+   846	        and len(norm_solution) == 1
+   847	        and norm_margin == 2 * g_minimum
+   848	        and norm_margin.is_nonnegative is True
+   849	        and sp.trace(sigma_state) == 1
+   850	        and sp.simplify(state_char_remainder) == 0
+   851	        and sp.simplify(
+   852	            lower_state_eigenvalue.subs(norm_solution[0]) - g_minimum
+   853	        )
+   854	        == 0
+   855	        and upper_state_eigenvalue.is_positive is True,
+   856	    )
+   857	
+   858	    representation_scale = sp.symbols("representation_scale", positive=True)
+   859	    representation_direction = (nx, ny, nz)
+   860	    affine_value = sp.simplify(
+   861	        (1 + nx * s_x + ny * s_y + nz * s_z) / 2
+   862	    )
+   863	    runner.check(
+   864	        "T2f-representation",
+   865	        "sigma represents every symbolic scaled projector and identity multiple",
+   866	        sp.simplify(
+   867	            sp.trace(
+   868	                sigma_state
+   869	                * representation_scale
+   870	                * bloch_projector(representation_direction)
+   871	            )
+   872	            - representation_scale * affine_value
+   873	        )
+   874	        == 0
+   875	        and sp.simplify(
+   876	            sp.trace(sigma_state * representation_scale * I2)
+   877	            - representation_scale
+   878	        )
+   879	        == 0,
+   880	    )
+   881	
+   882	    delta_a, delta_d, delta_x, delta_y = sp.symbols(
+   883	        "delta_a delta_d delta_x delta_y", real=True
+   884	    )
+   885	    hermitian_difference = sp.Matrix(
+   886	        [
+   887	            [delta_a, delta_x - sp.I * delta_y],
+   888	            [delta_x + sp.I * delta_y, delta_d],
+   889	        ]
+   890	    )
+   891	    uniqueness_solution = sp.solve(
+   892	        [
+   893	            sp.Eq(sp.trace(hermitian_difference * observable), 0)
+   894	            for observable in (
+   895	                bloch_projector((1, 0, 0)),
+   896	                bloch_projector((0, 1, 0)),
+   897	                bloch_projector((0, 0, 1)),
+   898	                I2,
+   899	            )
+   900	        ],
+   901	        (delta_a, delta_d, delta_x, delta_y),
+   902	        dict=True,
+   903	    )
+   904	    runner.check(
+   905	        "T2f-uniqueness",
+   906	        "four trace values determine a Hermitian M2 representative uniquely",
+   907	        uniqueness_solution
+   908	        == [{delta_a: 0, delta_d: 0, delta_x: 0, delta_y: 0}],
+   909	    )
+   910	
+   911	    # Group T3 - paired-menu boundary
+   912	    pair_g1, pair_g1c, pair_g2, pair_g2c = sp.symbols(
+   913	        "pair_g1 pair_g1c pair_g2 pair_g2c", real=True
+   914	    )
+   915	    pair_l1, pair_l2, pair_d = sp.symbols(
+   916	        "pair_l1 pair_l2 pair_d", real=True
+   917	    )
+   918	    paired_weight_sum = (
+   919	        pair_l1 * (pair_g1 + pair_g1c)
+   920	        + pair_l2 * (pair_g2 + pair_g2c)
+   921	        + pair_d
+   922	    )
+   923	    paired_solution = sp.solve(
+   924	        [
+   925	            sp.Eq(pair_g1 + pair_g1c, 1),
+   926	            sp.Eq(pair_g2 + pair_g2c, 1),
+   927	            sp.Eq(pair_l1 + pair_l2 + pair_d, 1),
+   928	        ],
+   929	        (pair_g1c, pair_g2c, pair_d),
+   930	        dict=True,
+   931	    )
+   932	    paired_normalization_ok = (
+   933	        len(paired_solution) == 1
+   934	        and sp.simplify(paired_weight_sum.subs(paired_solution[0]) - 1) == 0
+   935	    )
+   936	    runner.check(
+   937	        "T3a",
+   938	        "two-pair plus one-coin rogue normalization reduces to the T1 scalar condition",
+   939	        paired_normalization_ok,
+   940	    )
+   941	
+   942	    e_x = (sp.Integer(1), sp.Integer(0), sp.Integer(0))
+   943	    inv_sqrt2 = sp.sqrt(2) / 2
+   944	    u_direction = (inv_sqrt2, sp.Integer(0), -inv_sqrt2)
+   945	    hemisphere_values_ok = (
+   946	        hemisphere_weight(e_x) == 1
+   947	        and hemisphere_weight(e_z) == 1
+   948	        and hemisphere_weight(u_direction) == 0
+   949	        and hemisphere_weight(tuple(-component for component in e_x)) == 0
+   950	        and hemisphere_weight(tuple(-component for component in e_z)) == 0
+   951	        and hemisphere_weight(u_direction)
+   952	        + hemisphere_weight(tuple(-component for component in u_direction))
+   953	        == 1
+   954	    )
+   955	    runner.check(
+   956	        "T3b-hemisphere",
+   957	        "lexicographic hemisphere rogue has the required tie-aware values",
+   958	        hemisphere_values_ok,
+   959	    )
+   960	
+   961	    rogue_samples = ((e_x, sp.Integer(1)), (e_z, sp.Integer(1)))
+   962	    rogue_forced_u = forced_trace_value(rogue_samples, u_direction)
+   963	    rogue_conflict_ok = (
+   964	        rogue_forced_u == sp.Rational(1, 2)
+   965	        and detects_trace_conflict(
+   966	            rogue_samples, u_direction, hemisphere_weight(u_direction)
+   967	        )
+   968	    )
+   969	    runner.check(
+   970	        "T3b-conflict",
+   971	        "normalization and two rogue values force trace value one-half at u",
+   972	        rogue_conflict_ok,
+   973	    )
+   974	
+   975	    def affine_z_weight(item_direction):
+   976	        return sp.simplify((1 + item_direction[2]) / 2)
+   977	
+   978	    affine_samples = (
+   979	        (e_x, affine_z_weight(e_x)),
+   980	        (e_z, affine_z_weight(e_z)),
+   981	    )
+   982	    affine_forced_u = forced_trace_value(affine_samples, u_direction)
+   983	    affine_sigma = (I2 + sz) / 2
+   984	    affine_control_ok = (
+   985	        affine_forced_u == affine_z_weight(u_direction)
+   986	        and not detects_trace_conflict(
+   987	            affine_samples, u_direction, affine_z_weight(u_direction)
+   988	        )
+   989	        and all(
+   990	            sp.simplify(
+   991	                sp.trace(affine_sigma * bloch_projector(item_direction))
+   992	                - affine_z_weight(item_direction)
+   993	            )
+   994	            == 0
+   995	            for item_direction in (e_x, e_z, u_direction)
+   996	        )
+   997	    )
+   998	    runner.check(
+   999	        "T3b-control",
+  1000	        "affine Bloch control remains consistent and is not falsely detected",
+  1001	        affine_control_ok,
+  1002	    )
+  1003	
+  1004	    split_direction = e_z
+  1005	    split_antipode = tuple(-component for component in split_direction)
+  1006	    split_weights_side = (
+  1007	        sp.Rational(1, 5),
+  1008	        sp.Rational(1, 4),
+  1009	        1 - sp.Rational(1, 5) - sp.Rational(1, 4),
+  1010	    )
+  1011	    split_weights_antipode = (sp.Integer(1),)
+  1012	    exact_split_menu = tuple(
+  1013	        weight * bloch_projector(split_direction)
+  1014	        for weight in split_weights_side
+  1015	    ) + tuple(
+  1016	        weight * bloch_projector(split_antipode)
+  1017	        for weight in split_weights_antipode
+  1018	    )
+  1019	    split_unpaired = (
+  1020	        valid_scaled_projector_menu(exact_split_menu)
+  1021	        and tuple(sorted(split_weights_side, key=sp.default_sort_key))
+  1022	        != tuple(sorted(split_weights_antipode, key=sp.default_sort_key))
+  1023	    )
+  1024	    runner.check(
+  1025	        "T3c-split",
+  1026	        "exact split witness has no equal-weight antipodal perfect matching",
+  1027	        split_unpaired,
+  1028	    )
+  1029	
+  1030	    positive_octant_direction = (
+  1031	        sp.Rational(3, 7), sp.Rational(6, 7), sp.Rational(2, 7)
+  1032	    )
+  1033	    positive_octant_axis_directions = (
+  1034	        positive_octant_direction,
+  1035	        (-sp.Integer(1), sp.Integer(0), sp.Integer(0)),
+  1036	        (sp.Integer(0), -sp.Integer(1), sp.Integer(0)),
+  1037	        (sp.Integer(0), sp.Integer(0), -sp.Integer(1)),
+  1038	    )
+  1039	    pair_dots = tuple(
+  1040	        sp.simplify(
+  1041	            sum(left_component * right_component for left_component, right_component in zip(left, right))
+  1042	        )
+  1043	        for left_index, left in enumerate(positive_octant_axis_directions)
+  1044	        for right in positive_octant_axis_directions[left_index + 1 :]
+  1045	    )
+  1046	    axis_unpaired = (
+  1047	        valid_scaled_projector_menu(axis_cancellation_menu(positive_octant_direction))
+  1048	        and len(pair_dots) == 6
+  1049	        and all(sp.simplify(dot + 1) != 0 for dot in pair_dots)
+  1050	    )
+  1051	    runner.check(
+  1052	        "T3c-axis",
+  1053	        "positive-octant axis menu has four pairwise non-antipodal directions",
+  1054	        axis_unpaired,
+  1055	    )
+  1056	
+  1057	    runner.check(
+  1058	        "T3d-corollary",
+  1059	        "corollary: paired rogue survives, so forcing uses split and axis-cancellation schemas",
+  1060	        paired_normalization_ok
+  1061	        and hemisphere_values_ok
+  1062	        and rogue_conflict_ok
+  1063	        and affine_control_ok
+  1064	        and split_unpaired
+  1065	        and axis_unpaired,
+  1066	    )
+  1067	
+  1068	    # Group N - exact document needle checks
+  1069	    note_text = NOTE_PATH.read_text(encoding="utf-8")
+  1070	    parent_text = PARENT_PATH.read_text(encoding="utf-8")
+  1071	    axiom_text = AXIOM_PATH.read_text(encoding="utf-8")
+  1072	    note_normalized = normalize(note_text)
+  1073	    parent_normalized = normalize(parent_text)
+  1074	    axiom_normalized = normalize(axiom_text)
+  1075	
+  1076	    runner.check(
+  1077	        "N1",
+  1078	        "axiom memo pins record readability to record content alone",
+  1079	        "Only records are readable. A readout value is determined by record content alone."
+  1080	        in axiom_normalized,
+  1081	    )
+  1082	
+  1083	    runner.check(
+  1084	        "N2",
+  1085	        "parent note names intermediate classical mixtures as untested",
+  1086	        "classical mixtures of projective menus and other intermediate families"
+  1087	        in parent_normalized,
+  1088	    )
+  1089	
+  1090	    runner.check(
+  1091	        "N3",
+  1092	        "parent note pins the menu-grade hypothesis surface as underived",
+  1093	        "Whether the physical registration supplies menus at projective grade, at effect grade, at neither, or at some intermediate family is underived and is not decided here."
+  1094	        in parent_normalized,
+  1095	    )
+  1096	
+  1097	    runner.check(
+  1098	        "N4-claim",
+  1099	        "source note pins its exact claim identifier",
+  1100	        "claim_id: born_form_scaled_projector_menu_family_sitewise_forcing_and_paired_menu_boundary_bounded_theorem_note_2026-07-17"
+  1101	        in note_text,
+  1102	    )
+  1103	
+  1104	    runner.check(
+  1105	        "N4-labels",
+  1106	        "source note contains both scaled-projector hypothesis labels",
+  1107	        "**(F1)" in note_text and "**(F2)" in note_text,
+  1108	    )
+  1109	
+  1110	    runner.check(
+  1111	        "N4-no-bridge",
+  1112	        "source note pins the no-literature-bridge-input scope",
+  1113	        "no literature bridge input" in note_normalized,
+  1114	    )
+  1115	
+  1116	    runner.check(
+  1117	        "N4-paired",
+  1118	        "source note states that the paired subfamily does not force",
+  1119	        "The paired subfamily does not force" in note_normalized,
+  1120	    )
+  1121	
+  1122	    failures = runner.total()
+  1123	    return 1 if failures else 0
+  1124	
+  1125	
+  1126	if __name__ == "__main__":
+  1127	    sys.exit(main())
+
+2026-07-17T21:15:00.181108Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+The scoped read is complete. The highest-risk area is the axis-affinity elimination: I’m checking it independently from the runner, including all eight sign patterns and zero-component cases, then separately checking the lexicographic hemisphere witness and the Pauli/Bloch sign in the trace representation.
+exec
+/bin/zsh -lc "rg -n \"hemisphere|lexicographic|\\(nz, ny, nx\\)|n_z|n_y|n_x|u_direction|u-direction|sigma_state|s·σ|sign\\(|opposite|axis|c_0|positive_c0|witness_c0|L =|√3|sqrt\\(3\\)\" 'docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md' 'scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:69:def hemisphere_weight(direction):
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:71:    for component in (nz, ny, nx):
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:78:        raise ValueError("hemisphere sign is not exactly decidable")
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:166:def axis_cancellation_menu(direction):
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:175:    for component, axis in zip(direction, axes):
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:179:        opposite_axis = tuple(-sign * entry for entry in axis)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:182:            * bloch_projector(opposite_axis)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:299:                coefficient * item_direction[axis]
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:303:        for axis in range(3)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:361:        (-sp.Rational(1, 2), sp.sqrt(3) / 2, sp.Integer(0)),
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:362:        (-sp.Rational(1, 2), -sp.sqrt(3) / 2, sp.Integer(0)),
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:381:    positive_c0 = sp.simplify(2 / (1 + positive_length))
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:382:    generic_axis_sum = (
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:383:        positive_c0 * bloch_projector(positive_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:384:        + positive_c0 * px * bloch_projector((-1, 0, 0))
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:385:        + positive_c0 * py * bloch_projector((0, -1, 0))
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:386:        + positive_c0 * pz * bloch_projector((0, 0, -1))
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:403:        "generic positive-octant axis cancellation is a menu with coefficients in (0,1]",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:404:        matrix_is_zero(generic_axis_sum - I2)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:405:        and positive_c0.is_positive is True
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:406:        and all((positive_c0 * component).is_positive is True for component in positive_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:408:        and unit_sphere_zero(1 - positive_c0 - c0_upper_certificate, positive_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:412:                1 - positive_c0 * component - certificate,
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:438:        octant_menu = axis_cancellation_menu(octant_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:441:            "rational octant witness is an exact axis-cancellation menu",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:449:    zero_component_menu = axis_cancellation_menu(zero_component_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:452:        "zero-component axis menu omits the zero-weight element and sums exactly",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:458:    axis_menu = axis_cancellation_menu(e_z)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:460:        "T1c-axis",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:461:        "axis cancellation degenerates to the antipodal projective menu",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:462:        len(axis_menu) == 2
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:463:        and valid_scaled_projector_menu(axis_menu)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:467:                axis_menu, (bloch_projector(e_z), bloch_projector((0, 0, -1)))
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:475:    full_axis_menu = axis_cancellation_menu(reject_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:476:    dropped_axis_menu = full_axis_menu[:-1]
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:479:        "menu checker rejects an axis family with a vector-cancelling element dropped",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:480:        all(scaled_projector_parameters(item) is not None for item in dropped_axis_menu)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:481:        and not matrix_is_zero(sum(dropped_axis_menu, sp.zeros(2)) - I2)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:482:        and not valid_scaled_projector_menu(dropped_axis_menu),
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:639:    axis_g = sp.symbols("axis_g", real=True)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:640:    axis_affinity_solution = sp.solve(
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:646:                positive_c0 * axis_g
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:647:                + positive_c0 * px * g_xm
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:648:                + positive_c0 * py * g_ym
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:649:                + positive_c0 * pz * g_zm,
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:653:        (axis_g, g_xm, g_ym, g_zm),
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:658:        (1 + sum(component * s_axis for component, s_axis in zip(positive_direction, s_axes)))
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:663:        "complements and the symbolic positive-octant axis menu eliminate to Bloch affinity",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:664:        len(axis_affinity_solution) == 1
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:666:            axis_affinity_solution[0][axis_g] - positive_affine_target
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:671:    axis_value_by_sign = (
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:678:    def axis_menu_forced_value(witness_direction):
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:682:        witness_c0 = sp.simplify(2 / (1 + witness_length))
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:683:        normalization_left = witness_c0 * axis_g
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:685:            witness_direction, axis_value_by_sign
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:689:            opposite_value = negative_value if component.is_positive is True else positive_value
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:690:            normalization_left += witness_c0 * abs(component) * opposite_value
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:693:            axis_g,
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:698:        return sp.simplify(solved[0][axis_g])
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:707:        forced_value = axis_menu_forced_value(octant_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:709:            (1 + sum(component * s_axis for component, s_axis in zip(octant_direction, s_axes)))
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:714:            "rational octant axis normalization gives the same affine value",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:719:    zero_forced_value = axis_menu_forced_value(zero_component_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:721:        (1 + sum(component * s_axis for component, s_axis in zip(zero_component_direction, s_axes)))
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:726:        "zero-component axis normalization gives the same affine value",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:810:        (1 + sum(component * s_axis for component, s_axis in zip(
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:825:    sigma_state = (I2 + s_x * sx + s_y * sy + s_z * sz) / 2
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:827:    state_characteristic = sp.det(state_spectral_parameter * I2 - sigma_state)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:849:        and sp.trace(sigma_state) == 1
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:868:                sigma_state
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:876:            sp.trace(sigma_state * representation_scale * I2)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:944:    u_direction = (inv_sqrt2, sp.Integer(0), -inv_sqrt2)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:945:    hemisphere_values_ok = (
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:946:        hemisphere_weight(e_x) == 1
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:947:        and hemisphere_weight(e_z) == 1
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:948:        and hemisphere_weight(u_direction) == 0
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:949:        and hemisphere_weight(tuple(-component for component in e_x)) == 0
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:950:        and hemisphere_weight(tuple(-component for component in e_z)) == 0
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:951:        and hemisphere_weight(u_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:952:        + hemisphere_weight(tuple(-component for component in u_direction))
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:956:        "T3b-hemisphere",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:957:        "lexicographic hemisphere rogue has the required tie-aware values",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:958:        hemisphere_values_ok,
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:962:    rogue_forced_u = forced_trace_value(rogue_samples, u_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:966:            rogue_samples, u_direction, hemisphere_weight(u_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:982:    affine_forced_u = forced_trace_value(affine_samples, u_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:985:        affine_forced_u == affine_z_weight(u_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:987:            affine_samples, u_direction, affine_z_weight(u_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:995:            for item_direction in (e_x, e_z, u_direction)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:1033:    positive_octant_axis_directions = (
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:1043:        for left_index, left in enumerate(positive_octant_axis_directions)
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:1044:        for right in positive_octant_axis_directions[left_index + 1 :]
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:1046:    axis_unpaired = (
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:1047:        valid_scaled_projector_menu(axis_cancellation_menu(positive_octant_direction))
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:1052:        "T3c-axis",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:1053:        "positive-octant axis menu has four pairwise non-antipodal directions",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:1054:        axis_unpaired,
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:1059:        "corollary: paired rogue survives, so forcing uses split and axis-cancellation schemas",
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:1061:        and hemisphere_values_ok
+scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:1065:        and axis_unpaired,
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:46:  same-direction split, axis cancellation, coins) and never uses a genuinely
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:54:  axis-cancellation schemas are exactly such menus.
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:70:  lexicographic hemisphere rogue and its exact three-direction refutation of
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:106:axis-cancellation menus of T2; and three-element coplanar menus such as
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:150:  (`a ∈ {x,y,z}`), set `L = |n_x| + |n_y| + |n_z| ∈ [1, √3]` and
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:151:  `c_0 = 2/(1+L) ∈ (0,1]`. By T1,
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:153:  > `{ c_0 P(n) } ∪ { c_0 |n_a| P(−sign(n_a) e_a) : n_a ≠ 0 }`
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:155:  is a menu: its vector part is `c_0 (n − Σ_a n_a e_a) = 0` and its scalar
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:156:  part is `c_0 (1 + L)/2 = 1`. Normalization, (a), and (b) give
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:158:  > `g(n) = (1 + L)/2 − Σ_a |n_a| g(−sign(n_a) e_a)
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:159:  >        = (1 − L)/2 + Σ_a |n_a| g(sign(n_a) e_a)
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:163:  its coefficients read off the three axis values.
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:171:  `σ := (1 + s·σ)/2` is a density matrix, and
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:174:  axis values, which determine `s`.
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:179:axis-cancellation identity symbolically on a generic octant and on rational
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:180:witnesses in all octants and on the degenerate axis cases.
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:189:  landed lexicographic hemisphere rogue `g` by
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:199:  same-direction split and the axis-cancellation menu (the latter has no
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:246:  The hemisphere tie convention is inherited verbatim from the landed
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:287:symbolically and on witnesses (projective, coin, split, axis-cancellation
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:288:in a generic octant, all-octant rationals, degenerate axis cases, a
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:292:non-monotone rejector; the axis-cancellation affinity elimination to
+docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:296:complement law; the unpairedness of the split and axis schemas; the reused
+
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import itertools
+import sympy as sp
+
+# Independent symbols and Pauli convention.
+a,b,c = sp.symbols('a b c', positive=True, real=True)
+gx,gy,gz = sp.symbols('gx gy gz', real=True)
+L = a+b+c
+c0 = sp.Rational(2,1)/(1+L)
+axes = [(1,0,0),(0,1,0),(0,0,1)]
+
+all_octants = []
+for eps in itertools.product((sp.Integer(-1), sp.Integer(1)), repeat=3):
+    n = tuple(e*m for e,m in zip(eps,(a,b,c)))
+    # Menu has directions -eps_a e_a with weights c0*|n_a|=c0*m_a.
+    vector = [sp.simplify(c0*n[j] + sum(c0*m*(-e*axis[j]) for m,e,axis in zip((a,b,c),eps,axes))) for j in range(3)]
+    scalar = sp.simplify(c0*(1+L)/2)
+    # g(-eps e)=1-g(eps e), g(eps e)=(1+eps*s_a)/2, s_a=2g(+e_a)-1.
+    s = (2*gx-1,2*gy-1,2*gz-1)
+    g_same = [(1+e*sa)/2 for e,sa in zip(eps,s)]
+    first = sp.simplify((1+L)/2 - sum(m*(1-gv) for m,gv in zip((a,b,c),g_same)))
+    second = sp.simplify((1-L)/2 + sum(m*gv for m,gv in zip((a,b,c),g_same)))
+    target = sp.simplify((1+sum(ni*si for ni,si in zip(n,s)))/2)
+    all_octants.append(vector == [0,0,0] and scalar == 1 and sp.simplify(first-second)==0 and sp.simplify(second-target)==0)
+print('axis_all_8_octants:', all(all_octants))
+print('c0_normalization:', scalar)
+print('affinity_residual:', sp.simplify(second-target))
+
+# L bounds for ||n||_2=1: L"'^2-1=2 sum pair products of |components| >=0;
+# 3-L''^2 = sum pairwise squared differences >=0.
+print('"'L_lower_certificate:', sp.expand(L**2-(a*a+b*b+c*c)))
+print('L_upper_certificate:', sp.expand(3*(a*a+b*b+c*c)-L**2))
+
+I=sp.eye(2)
+sx=sp.Matrix([[0,1],[1,0]])
+sy=sp.Matrix([[0,-sp.I],[sp.I,0]])
+sz=sp.Matrix([[1,0],[0,-1]])
+X,Y,Z,nx,ny,nz=sp.symbols('X Y Z nx ny nz', real=True)
+rho=(I+X*sx+Y*sy+Z*sz)/2
+P=(I+nx*sx+ny*sy+nz*sz)/2
+print('trace_sign_residual:', sp.simplify(sp.trace(rho*P)-(1+nx*X+ny*Y+nz*Z)/2))
+
+q=sp.sqrt(2)/2
+ex=(1,0,0); ez=(0,0,1); u=(q,0,-q)
+def lex_weight(v):
+    for component in (v[2],v[1],v[0]):
+        if component "'!= 0:
+            return 1 if component > 0 else 0
+    return 0
+print('"'lex_values_ex_ez_u_minus_u:', [lex_weight(v) for v in (ex,ez,u,tuple(-x for x in u))])
+print('u_dot_forced_bloch:', sp.simplify(u[0]+u[2]))
+print('forced_trace_u:', sp.simplify((1+u[0]+u[2])/2))
+PY" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-17T21:16:10.418424Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 386ms:
+axis_all_8_octants: True
+c0_normalization: 1
+affinity_residual: 0
+L_lower_certificate: 2*a*b + 2*a*c + 2*b*c
+L_upper_certificate: 2*a**2 - 2*a*b - 2*a*c + 2*b**2 - 2*b*c + 2*c**2
+trace_sign_residual: 0
+lex_values_ex_ez_u_minus_u: [1, 1, 0, 1]
+u_dot_forced_bloch: 0
+forced_trace_u: 1/2
+
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import sympy as sp
+q, r = sp.symbols('q r', real=True)
+# Mirror the helper's branch: unknown q is treated as negative; declared-positive r as positive.
+rp = sp.symbols('rp', positive=True, real=True)
+direction = (q, rp, sp.Integer(0))
+chosen_signs = []
+for component in direction:
+    if component == 0:
+        chosen_signs.append(0)
+    else:
+        chosen_signs.append(1 if component.is_positive is True else -1)
+print('helper_branch_signs:', chosen_signs)
+print('actual_after_q=3/5:', [sp.sign(component.subs({q:sp.Rational(3,5),rp:sp.Rational(4,5)})) for component in direction])
+# Vector residual before the harmless common c0 factor.
+residual = tuple(sp.simplify(direction[j] + sum(abs(component)*(-sign)*(1 if i==j else 0) for i,(component,sign) in enumerate(zip(direction, chosen_signs)) if sign)) for j in range(3))
+print('residual_after_positive_substitution:', tuple(x.subs({q:sp.Rational(3,5),rp:sp.Rational(4,5)}) for x in residual))
+PY" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-17T21:17:37.697229Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 161ms:
+helper_branch_signs: [-1, 1, 0]
+actual_after_q=3/5: [1, 1, 0]
+residual_after_positive_substitution: (6/5, 0, 0)
+
+codex
+VERDICT: 0 blocker(s), 0 major, 1 minor
+
+1. **Undecidable component signs silently default to negative.** In [runner:178](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:178>) and [runner:689](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:689>), any nonzero component not provably positive is treated as negative. A real symbol of unknown sign that is later specialized positive therefore selects the wrong opposite axis; an independent example produced pre-\(c_0\) vector residual \((6/5,0,0)\). Current call sites use sign-decidable rationals, so this does not affect the theorem or present checks. Fix: branch explicitly on `is_positive is True`, `is_negative is True`, and zero; otherwise raise `ValueError`. Reuse that helper in both locations.
+
+All load-bearing conventions pass:
+
+- [Note:149](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:149>): opposite-axis directions, \(|n_a|\) weights, and \(c_0=2/(1+L)\) cancel correctly. For \(a,b,c=|n_x|,|n_y|,|n_z|\), \(L^2-1=2(ab+ac+bc)\ge0\) and \(3-L^2=(a-b)^2+(a-c)^2+(b-c)^2\ge0\).
+- [Note:158](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:158>): the menu initially contains \(g(-\operatorname{sign}(n_a)e_a)\); complementing correctly produces the plus/sign-matched axes. The displayed chain reduces exactly to \((1+n\cdot s)/2\).
+- [Runner:69](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:69>), [runner:944](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:944>), and [runner:825](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:825>): lexicographic order is consistently \((n_z,n_y,n_x)\); \(u=(1,0,-1)/\sqrt2\) has rogue value \(0\) but forced trace value \(1/2\); and the plus sign in \(\sigma=(I+s\cdot\sigma)/2\) gives \(\operatorname{Tr}[\sigma P(n)]=(1+n\cdot s)/2\) as required.
+
+No files were written and no git commands were run.
+tokens used
+79,045
+VERDICT: 0 blocker(s), 0 major, 1 minor
+
+1. **Undecidable component signs silently default to negative.** In [runner:178](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:178>) and [runner:689](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:689>), any nonzero component not provably positive is treated as negative. A real symbol of unknown sign that is later specialized positive therefore selects the wrong opposite axis; an independent example produced pre-\(c_0\) vector residual \((6/5,0,0)\). Current call sites use sign-decidable rationals, so this does not affect the theorem or present checks. Fix: branch explicitly on `is_positive is True`, `is_negative is True`, and zero; otherwise raise `ValueError`. Reuse that helper in both locations.
+
+All load-bearing conventions pass:
+
+- [Note:149](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:149>): opposite-axis directions, \(|n_a|\) weights, and \(c_0=2/(1+L)\) cancel correctly. For \(a,b,c=|n_x|,|n_y|,|n_z|\), \(L^2-1=2(ab+ac+bc)\ge0\) and \(3-L^2=(a-b)^2+(a-c)^2+(b-c)^2\ge0\).
+- [Note:158](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:158>): the menu initially contains \(g(-\operatorname{sign}(n_a)e_a)\); complementing correctly produces the plus/sign-matched axes. The displayed chain reduces exactly to \((1+n\cdot s)/2\).
+- [Runner:69](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:69>), [runner:944](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:944>), and [runner:825](</Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4/scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py:825>): lexicographic order is consistently \((n_z,n_y,n_x)\); \(u=(1,0,-1)/\sqrt2\) has rogue value \(0\) but forced trace value \(1/2\); and the plus sign in \(\sigma=(I+s\cdot\sigma)/2\) gives \(\operatorname{Tr}[\sigma P(n)]=(1+n\cdot s)/2\) as required.
+
+No files were written and no git commands were run.

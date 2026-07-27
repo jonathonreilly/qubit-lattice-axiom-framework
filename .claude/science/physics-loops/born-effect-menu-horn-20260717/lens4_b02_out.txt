@@ -1,0 +1,2115 @@
+2026-07-17T21:14:12.855539Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f71ee-0979-7c90-a7cf-caec8b9cc12e
+--------
+user
+READ-ONLY adversarial review lens (governance/status), block02. No file writes, no git. Verdict = final message.
+Read exactly: (1) docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md (2) .claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE_BLOCK02.md (3) .claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE_BLOCK02.md (4) docs/repo/CONTROLLED_VOCABULARY.md
+Hunt: (i) status-grade vocabulary misuse in the NOTE (bare retained/promoted/ratified/audited_*); (ii) newly coined tier/class noun phrases in the NOTE not in controlled vocabulary and not plain descriptive prose (assess "scaled-projector family", "paired subfamily", "axis-cancellation menu" — are these descriptive prose or coined tier words?); (iii) N1-N8 completeness for T3a and whether any negative wording exceeds "the paired subfamily does not force"; (iv) any sentence adopting/selecting a family or registering a primitive; (v) audit-outcome prediction; (vi) certificate/trace-gate internal consistency. Known context you must NOT re-flag: yaml enumerations like `bounded-support`/`trace_class` in loop-pack files are physics-loop skill-mandated schema values (prior panel disposition).
+Output: "VERDICT: ..." + numbered findings with exact quotes; if clean, the three closest calls.
+
+codex
+I’ll inspect only the four named files, applying the requested governance/status lens and treating the loop-pack schema values as already disposed. I’ll make no writes and run no git commands.
+exec
+/bin/zsh -lc 'cat -- "docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+---
+claim_id: born_form_scaled_projector_menu_family_sitewise_forcing_and_paired_menu_boundary_bounded_theorem_note_2026-07-17
+claim_type: bounded_theorem
+claim_scope: "Bridge-conditional thinning of the effect-menu horn at one site: on the scaled-projector family (nonnegative multiples of one-site rank-1 projectors and of the identity), menu normalization plus effect-functionality forces the Born trace form on that domain at a single M_2(C) site, with no literature bridge input, no composite, finite menus only, and no genuinely unsharp effect used anywhere — the forcing already runs on scaled rank-1 menus alone. Boundary: the paired subfamily (equal-weight antipodal pairs plus identity multiples) does not force — the landed one-site rogue extends to it explicitly — so some menu outside the paired subfamily is necessary. The family sits strictly between the projective and full-effect menu families; whether it or any smaller family is minimal is not established; no menu grade is selected; the grading primitive is assumed here, not adopted."
+upstream_dependencies:
+  - minimal_axioms
+runner: scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py
+---
+
+# Born Form On The Scaled-Projector Menu Family: Sitewise Forcing With No Bridge Input, And The Paired-Menu Boundary
+
+**Date:** 2026-07-17
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Scope:** bridge-conditional; the grading hypotheses are assumed here, not
+adopted; the menu family the physical registration supplies is underived.
+**Audit-status authority:** independent audit lane only. This note sets no
+audit verdict and predicts none.
+**Primitive status:** no primitive is approved, registered, edited, or
+enlarged here. Every grading hypothesis below is conditional input only.
+**Primary runner:**
+[`scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py`](../scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py)
+**Runner cache:**
+[`logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt`](../logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt)
+
+## Purpose
+
+The parent block
+[`BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md`](BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+proved sitewise Born forcing at effect grade (its E1-E2: weights on all
+effects, every finite effect partition eligible) and left the space between
+the poles open, naming "classical mixtures of projective menus and other
+intermediate families" as untested, with the hypothesis-surface sentence:
+"Whether the physical registration supplies menus at projective grade, at
+effect grade, at neither, or at some intermediate family is underived and is
+not decided here."
+
+This note closes one named piece of that gap with an exactly delimited
+intermediate family and a two-sided statement:
+
+- **Forcing.** On the scaled-projector family — effects that are nonnegative
+  multiples of one-site rank-1 projectors or of the identity — menu
+  normalization plus effect-functionality already forces the Born trace form
+  on that domain, at a single `M_2(C)` site, with no literature bridge
+  input. The proof is a direct four-menu-schema argument (complement,
+  same-direction split, axis cancellation, coins) and never uses a genuinely
+  unsharp effect: the forcing runs on scaled rank-1 menus alone.
+- **Boundary.** The paired subfamily — menus that are disjoint unions of
+  equal-weight antipodal pairs and identity multiples, the shape produced by
+  classically mixing binary projective measurements without splitting or
+  regrouping outcomes — does not force: the landed one-site rogue extends to
+  it explicitly. Some menu outside the paired subfamily is therefore
+  necessary for any forcing on this surface, and the proof's split and
+  axis-cancellation schemas are exactly such menus.
+
+Consequence for the menu-grade dial: sitewise form-fixing does not need
+unsharp effects. The registration question sharpens to whether the supplied
+menus ever leave the paired subfamily — an exactly witnessed line — while no
+family is selected and no claim of minimality is made.
+
+## Authorities and Inputs
+
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+  the one-site `M_2(C)` possibility domain and the Record sentences "Only
+  records are readable. A readout value is determined by record content
+  alone." The axioms do not supply probabilities, weights, menus, update
+  rules, or record-production processes.
+- [`BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md`](BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+  — the parent surface: the effect-grade pole (its T1), the landed
+  lexicographic hemisphere rogue and its exact three-direction refutation of
+  every `2 x 2` trace form (reused here at the same resolution), and the
+  named-untested intermediate-family gap this note addresses.
+- [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+  — the projective-horn frontier note whose hypothesis surface both blocks
+  condition on; not otherwise used.
+- Literature comparators (never proof inputs): Wright-Weigert 2019 (a
+  Gleason-type theorem for qubits from projective measurements and their
+  classical mixtures — a differently delimited restricted family; a native
+  translation of their exact class is a separate open increment); Busch 2003
+  and Caves-Fuchs-Manne-Renes 2004 (the full effect-family pole).
+
+## The Family
+
+Work at one site, `A ≅ M_2(C)`, `P(n) = (1 + n·σ)/2` for unit Bloch
+directions `n`. Define the scaled-projector effects
+
+> `S = { c P(n) : c ∈ [0,1], n unit } ∪ { c 1 : c ∈ [0,1] }`,
+
+and write `S_sharp` for the rank-1 part `{ c P(n) : c ∈ (0,1] }`. Every
+element of `S` is an effect; a nonzero element determines its parameters
+uniquely (`c P(n)` has eigenvalue pair `{c, 0}`, `c 1` has `{c, c}`, so `c`
+and, for rank 1, `n` are recovered from the operator). A **scaled-projector
+menu** is a finite family of nonzero elements of `S` summing to `1`.
+
+**T1 (exact menu characterization).** A finite family
+`{c_k P(n_k)}_k ∪ {d_j 1}_j` of nonzero scaled-projector effects is a menu
+iff
+
+> `Σ_k c_k n_k = 0` and `Σ_k c_k / 2 + Σ_j d_j = 1`.
+
+Proof: expand in the basis `{1, σ_x, σ_y, σ_z}`; the identity component
+gives the scalar condition, the Pauli components give the vector condition.
+The family therefore contains, among others: every projective menu
+`{P(n), P(−n)}`; every coin `{c 1, (1−c) 1}` and its refinements;
+same-direction splits `{λP(n), μP(n), (1−λ−μ)P(n), P(−n)}`; the
+axis-cancellation menus of T2; and three-element coplanar menus such as
+`{(2/3)P(n_1), (2/3)P(n_2), (2/3)P(n_3)}` with `n_1 + n_2 + n_3 = 0`. It
+does not contain any effect with two distinct nonzero eigenvalues (e.g.
+`diag(1/2, 1/4)`), so it is a proper subfamily of the parent block's
+effect-partition family.
+
+## Hypotheses
+
+**(F1) grading exists on the scaled-projector domain.** There is
+`w : S → [0,1]` with `w(0) = 0` and `w(1) = 1`; `w` is a function of the
+effect alone — its value does not depend on which eligible menu embeds the
+effect.
+
+**(F2) scaled-projector menus are eligible.** For every scaled-projector
+menu `{A_j}`, `Σ_j w(A_j) = 1`.
+
+F1-F2 are the parent block's E1-E2 with the effect algebra replaced by `S`
+and effect partitions replaced by scaled-projector menus: the domain and the
+menu family both shrink, so F1-F2 is a strictly weaker hypothesis surface
+than the effect-grade pole, and strictly stronger than bare projective
+menus, which it contains. Only finite menus are used; no countable clause is
+assumed. Whether the physical registration supplies this family, a larger
+one, a smaller one, or none is underived and is not decided here.
+
+## Results
+
+**T2 (forcing on the scaled-projector family, no bridge input).** Assume
+F1-F2 at one site. Then there is a unique density matrix `σ` with
+`w(E) = Tr(σE)` for every `E ∈ S`. The proof uses four menu schemas, all
+inside `S`, and only the rank-1 schemas carry the forcing:
+
+- **(a) Ray additivity.** Fix `n` and write `h(λ) = w(λP(n))`. For
+  `λ, μ ≥ 0` with `λ + μ ≤ 1`, T1 validates the same-direction splits
+  `{λP(n), μP(n), (1−λ−μ)P(n), P(−n)}` and
+  `{(λ+μ)P(n), (1−λ−μ)P(n), P(−n)}` (the degenerate members with zero
+  coefficient are dropped). Subtracting their normalizations gives
+  `h(λ) + h(μ) = h(λ+μ)`. With `h ≥ 0` this gives monotonicity
+  (`h(μ') = h(μ) + h(μ'−μ) ≥ h(μ)`), rational homogeneity by iteration, and
+  the rational squeeze `q_1 h(1) ≤ h(t) ≤ q_2 h(1)` for rationals
+  `q_1 < t < q_2`; hence `h(λ) = λ g(n)` for all real `λ ∈ [0,1]`, with
+  `g(n) := w(P(n))`.
+- **(b) Complement.** The projective menu `{P(n), P(−n)}` gives
+  `g(n) + g(−n) = 1`.
+- **(c) Axis cancellation.** For a unit `n` with components `n_a`
+  (`a ∈ {x,y,z}`), set `L = |n_x| + |n_y| + |n_z| ∈ [1, √3]` and
+  `c_0 = 2/(1+L) ∈ (0,1]`. By T1,
+
+  > `{ c_0 P(n) } ∪ { c_0 |n_a| P(−sign(n_a) e_a) : n_a ≠ 0 }`
+
+  is a menu: its vector part is `c_0 (n − Σ_a n_a e_a) = 0` and its scalar
+  part is `c_0 (1 + L)/2 = 1`. Normalization, (a), and (b) give
+
+  > `g(n) = (1 + L)/2 − Σ_a |n_a| g(−sign(n_a) e_a)
+  >        = (1 − L)/2 + Σ_a |n_a| g(sign(n_a) e_a)
+  >        = (1 + n·s)/2`,
+
+  with `s_a := 2 g(e_a) − 1`. So `g` is affine in the Bloch direction, with
+  its coefficients read off the three axis values.
+- **(d) Coins.** Menus `{c 1, c' 1, (1−c−c') 1}` make `f(c) := w(c 1)`
+  additive and bounded, hence `f(c) = c` by the same
+  rational-homogeneity-plus-squeeze argument. Coins are not used in
+  (a)-(c); they only complete the representation over the identity ray of
+  `S`.
+- **(e) State property and uniqueness.** `g(n) ∈ [0,1]` for all unit `n`
+  forces `|s| ≤ 1` (evaluate at `n = −s/|s|` when `s ≠ 0`), so
+  `σ := (1 + s·σ)/2` is a density matrix, and
+  `w(cP(n)) = c g(n) = Tr(σ · cP(n))`, `w(c1) = c = Tr(σ · c1)` on all of
+  `S`. Uniqueness: any representing density matrix reproduces the three
+  axis values, which determine `s`.
+
+No step uses a literature theorem, a composite, an effect outside `S`, a
+projective frame-function analysis, or countable additivity. The runner
+re-derives every load-bearing identity exactly, including the
+axis-cancellation identity symbolically on a generic octant and on rational
+witnesses in all octants and on the degenerate axis cases.
+
+**T3 (paired-menu boundary).** Call a scaled-projector menu **paired** when
+its multiset of elements is a disjoint union of equal-weight antipodal pairs
+`{λP(m), λP(−m)}` and identity multiples `{d 1}` — the shape produced by
+classically mixing binary projective measurements and coins without
+splitting or regrouping outcomes. Then:
+
+- **(T3a) The paired subfamily does not force.** Extend the parent block's
+  landed lexicographic hemisphere rogue `g` by
+  `w(λP(n)) := λ g(n)`, `w(c1) := c`. On any paired menu the normalization
+  sum is `Σ_i λ_i [g(m_i) + g(−m_i)] + Σ_j d_j = Σ_i λ_i + Σ_j d_j = 1` by
+  the complement law and T1's scalar condition, so the extension satisfies
+  F1-F2 restricted to paired menus; and it is no trace form, by the landed
+  exact three-direction contradiction, reused at the same resolution.
+- **(T3b) Some unpaired menu is necessary.** By T3a, any hypothesis surface
+  whose eligible menus are all paired admits a non-Born grading, so any
+  forcing theorem on this domain must use at least one menu outside the
+  paired subfamily. The T2 proof uses exactly two unpaired schemas — the
+  same-direction split and the axis-cancellation menu (the latter has no
+  antipodal pair at all for generic `n`) — and by T3a it could not have
+  succeeded without some such menu.
+
+T3 makes no claim about which intermediate families beyond the paired
+subfamily force or fail: the scaled-projector family forces (T2), the
+paired subfamily does not (T3a), and the exact boundary between them across
+all intermediate families is not classified here.
+
+**T4 (dial recalibration and comparators).** Combined with the parent
+block: sitewise Born form-fixing needs neither the full effect algebra nor
+any genuinely unsharp effect — the scaled-projector family suffices, and
+within it the forcing runs on scaled rank-1 menus alone. The landed one-site
+rogue survives on bare projective and paired menus and dies on the
+scaled-projector family (T2 plus the three-direction contradiction), with
+the composite/entangled/Gleason route of the projective horn unchanged and
+untouched. The registration question therefore sharpens to an exactly
+witnessed line: whether the supplied menus ever leave the paired subfamily.
+The comparator literature (Wright-Weigert 2019) reaches a Born-forcing
+conclusion for a differently delimited restricted family built from
+projective measurements and their classical mixtures with outcome
+processing; no containment claim between that class and `S` is made here,
+and a native translation of their exact class — like any minimal-family
+classification — is a named open increment, not attempted in this note.
+
+## No-Go Discipline Gate
+
+T3a is a bounded negative ("the paired subfamily does not force"), so the
+negative-claim checklist is answered for it:
+
+- **N1 route inventory (five routes against T3a):** (1) unequal-weight
+  antipodal completions — such menus are not paired by definition and lie in
+  the forcing family; ATTEMPTED via T2, which covers them; (2) adding coins
+  of arbitrary rational or real weight — paired menus already include
+  identity multiples, and the extension normalizes them (T3a computation);
+  (3) same-direction splits — exactly the unpaired schema; RULED OUT as a
+  rescue of the paired subfamily by definition, and named as what activates
+  forcing (T3b); (4) countable paired menus — a finite-sum menu family is
+  assumed throughout (F2 is finite); named outside scope; (5) two-site
+  paired menus and composite rescues — outside this note's one-site scope
+  and already handled at the projective grade by the parent block's product
+  boundary; named untested at scaled grade.
+- **N2 wall independence:** one wall (paired subfamily insufficiency); no
+  second wall presented.
+- **N3 hidden-wall scan:** the T3a witness is total on `S` (both rays
+  defined), satisfies F1 on all of `S`, and its menu obligations are
+  evaluated on the paired subfamily only — the restriction is the claim.
+  The hemisphere tie convention is inherited verbatim from the landed
+  parent construction and gated.
+- **N4 residual matching:** the only cited prior negative is the landed
+  one-site rogue existence, reused at the same resolution.
+- **N5 rhetoric audit:** "does not force" is scoped to the paired subfamily
+  at one site; T3 explicitly declines to classify other intermediate
+  families.
+- **N6 partial-closure scan:** the closure paths are named, not denied —
+  the scaled-projector family itself (T2), or the parent block's effect
+  pole, or the landed projective-composite route.
+- **N7 steelman:** "paired menus are what classical mixing gives you, so
+  the physical case is closed against forcing." Reply: T3a proves exactly
+  that insufficiency for unsplit mixing; whether record formation supplies
+  only paired menus is the underived registration question, and the note
+  selects nothing.
+- **N8 cross-cycle echo:** the structurally similar prior walls — the
+  one-site projective rogue (parent R1 lineage) and the parent's
+  product-menu boundary — were crossed by enlarging the menu family
+  (effect grade; entangled composite menus). T3b records the same
+  mechanism here: the wall is crossed by the unpaired schemas, not by
+  dimension or composites.
+
+## Non-Claims
+
+- Does **not** claim any grading exists, on any family; F1-F2 are
+  conditional input only.
+- Does **not** select a menu family or grade, register or modify any
+  primitive, or derive menu eligibility from the axioms.
+- Does **not** claim the scaled-projector family is minimal, and does
+  **not** classify intermediate families between the paired subfamily and
+  `S`; the Wright-Weigert class is a comparator, not translated here.
+- Does **not** extend beyond one site: composite menus, values, and record
+  conditioning are outside scope, as in the parent block.
+- Does **not** set an audit verdict; landing is not ratification, and
+  independent audit remains required.
+
+## Verification
+
+The primary runner re-derives every load-bearing identity exactly (sympy,
+rational/symbolic arithmetic, single process, one-site `M_2` objects only):
+the parameter-recovery lemma for `S`; the T1 characterization identity
+symbolically and on witnesses (projective, coin, split, axis-cancellation
+in a generic octant, all-octant rationals, degenerate axis cases, a
+coplanar three-element menu) with a non-menu rejector; the ray-additivity
+and coin eliminations as formal linear algebra; the monotone
+rational-squeeze scaffolding with the interval-nonvacuity guard and a
+non-monotone rejector; the axis-cancellation affinity elimination to
+`g(n) = (1 + n·s)/2`; the state bound `|s| ≤ 1` and the representation and
+uniqueness identities on symbolic scaled effects; the paired-menu
+normalization of the rogue extension as a formal identity under the
+complement law; the unpairedness of the split and axis schemas; the reused
+exact three-direction refutation with an affine control; and needle checks
+pinning the quoted sentences of the axiom memo and the parent block note.
+Mutation checks (one load-bearing mutation per check family, reverted) are
+recorded in the review history and PR body.
+
+Measured runner total after final verification:
+`TOTAL: PASS=57 FAIL=0`.
+
+exec
+/bin/zsh -lc 'cat -- ".claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE_BLOCK02.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+# Claim Status Certificate — block02 (2026-07-17)
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: >
+  bridge-conditional on the assumed grading hypotheses F1-F2 (scaled-projector
+  domain and menus); no menus are claimed to exist; the family the physical
+  registration supplies is underived; minimality of the family is not claimed.
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: >
+  Exact finite theorems under explicitly assumed conditional hypotheses, with
+  a scoped negative boundary (T3a: the paired subfamily does not force)
+  carrying a constructive witness. No unconditional physical claim; hence
+  bounded_theorem.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Promotion Value Gate (V1-V5)
+
+- **V1 (specific target text).** The parent block's own named-untested gap,
+  quoted verbatim in the note: "classical mixtures of projective menus and
+  other intermediate families" (named untested in the parent N1 item 4) and
+  the parent hypothesis-surface sentence "Whether the physical registration
+  supplies menus at projective grade, at effect grade, at neither, or at
+  some intermediate family is underived and is not decided here." Block02
+  supplies an exactly delimited intermediate family with a two-sided
+  forcing/boundary statement.
+- **V2 (new derivation).** (i) The scaled-projector menu characterization
+  (vector-zero + scalar-two conditions); (ii) the axis-cancellation menu
+  construction and the direct affinity forcing g(n) = (1 + n·s)/2 — a proof
+  mechanism used nowhere in the repo (not the five-step Busch route: no
+  Herm-spanning, no Riesz step, no general-effect additivity); (iii) the
+  paired-subfamily boundary with the explicit rogue extension; (iv) the
+  observation that the forcing runs on scaled rank-1 menus alone (no
+  unsharp effects, no coins load-bearing).
+- **V3 (standard machinery?).** The Cauchy/squeeze scaffolding is shared
+  with block01; the family definition, the characterization, the
+  axis-cancellation construction, and the paired boundary are native
+  content with no literature source used as input; the comparator class
+  (Wright-Weigert) is differently delimited and explicitly not translated.
+- **V4 (non-trivial).** Yes: the axis-cancellation identity is a genuine
+  construction (weights 2/(1+L)·|n_a| with the L-dependent normalization),
+  and the two-sided placement requires the exact characterization.
+- **V5 (one-step variant?).** No. Closest cycle is block01: its T1 forces
+  on the FULL effect family via the five-step argument; block02 forces on a
+  strictly thinner family via a different mechanism, and its boundary
+  (paired) is a different object from block01's product-menu boundary
+  (different algebra: one site vs pair; different family; different
+  witness). Not a relabeling; the cluster-cap evaluator is not yet
+  triggered (2nd PR in the family), but this distinction is recorded for
+  it.
+
+## No-Go Discipline Gate (N1-N8)
+
+Answered inline in the note's own No-Go Discipline Gate section for the T3a
+negative slice (five routes with ATTEMPTED / RULED OUT / named-outside-scope
+markers; reopen paths named: unpaired schemas, effect pole, projective
+composite route). The note section is authoritative; the PR body reproduces
+it.
+
+## Review-loop disposition
+
+pending — to be replaced with the actual block02 panel outcome in
+`REVIEW_HISTORY.md` before the PR opens.
+
+Independent audit remains required before any effective-status change; this
+certificate predicts no verdict.
+
+exec
+/bin/zsh -lc 'cat -- "docs/repo/CONTROLLED_VOCABULARY.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=dc02750e482ab935590058a2194f976ba8fba24eb54d6abde65acc594de73d05 -->
+# Controlled Vocabulary
+
+> **Front-door lookup:** Looking up a single term? Go to
+> `docs/KEY_TERMINOLOGY.md` — flat A-Z index of
+> every repo-canonical term with one-line definition and a pointer to
+> the source-of-truth doc for each.
+
+## Vocabulary Hierarchy
+
+The repo has five language layers. This doc is the **operational** layer
+(layer 3). Higher layers are sovereign for their domains; do not duplicate
+their content here, and do not override their wording from here.
+
+| Layer | Source-of-truth doc | Governs |
+|---|---|---|
+| 0. Front-door A-Z lookup | `docs/KEY_TERMINOLOGY.md` | Single-page A-Z index of every repo-canonical term with a one-line definition and a pointer to its source-of-truth doc. The reader entry-point above all layers below; an index, not an authority. New terms enter the index only after the source-of-truth doc accepts them. |
+| 1. Framework substantive | `docs/MINIMAL_AXIOMS_2026-06-29.md` and `docs/audit/data/axiom_premise_nodes.json` | Framework axioms and explicitly approved primitive premise nodes the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor adjacency, standard translations, proper cubic rotations about each site, no privileged site, and site distinctions carried only by the supplied lattice structure), Qubit (the domain of local possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is equivalent notation, not extra primitive content; no possibility is privileged; possibilities are distinguished by the supplied algebraic structure alone), Admissibility (one fixed nearest-neighbor rule, covariant under lattice translations and proper cubic rotations, by which the available possibilities are determined by, and vary with, the nearest-neighbor conditions at each site), Record (when present, fixed locking of exactly one admissible local possibility; at most one record per site; permanence; readout value determined by record content alone; finite scalar additivity), the state/law qualification clauses, the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms, and registered primitive premise nodes such as the scale-reference and kinetic-isotropy primitives. Changes only when a framework-level science decision changes. |
+| 2. External paper text | [`docs/ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md`](../ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md), [`docs/ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md`](../ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md) | Verbatim reusable disclosure paragraphs for papers, preprints, and talks. The framing paragraph is the short paper-facing form; the accountability disclosure is the longer package-level form. Both carry their own usage guidance (e.g. replacing `[repo URL]`, narrowing the tool list when only one was used). |
+| 3. Operational (this doc) | `docs/repo/CONTROLLED_VOCABULARY.md` | Status taxonomy, claim-strength labels, audit-lane field enums, repair classes, filename conventions, archival paths, topic language, and paper-facing prose voice — the working vocabulary used inside the repo across ledgers, tables, notes, runners, skills, and PR descriptions. |
+| 4. Methodology framing (adjacent) | `docs/AI_METHODOLOGY_NOTE_2026-04-25.md` | The curated front-door note for the methodology lane. Defines how to talk about the AI / methodology side at the project level. |
+
+For a single-term lookup (layer 0), use `KEY_TERMINOLOGY.md`. For
+framework axioms and approved primitive premise nodes (layer 1), cite
+`MINIMAL_AXIOMS_2026-06-29.md` and
+`docs/audit/data/axiom_premise_nodes.json` — do not redefine Lattice, Qubit,
+Admissibility, Record, `Cl(3)`, `Z^3`, `A_min`, or registered primitives here. For external paper text
+(layer 2), use the canonical framing paragraph and the accountability
+disclosure verbatim — do not paraphrase. This doc governs layer 3 only.
+
+---
+
+This file is the single repo-wide home for the **operational** vocabulary
+layer: status taxonomy, audit-lane field enums, filename conventions,
+axiom-naming **rules** (above the science decision in layer 1), archival
+paths, topic language, and paper-facing prose voice. Other policy /
+process docs in the repo cite this file for vocab rather than inlining
+their own. If a sanctioned term, label, suffix, or wording is not listed
+here and is not defined in the layer 1 or layer 2 sources above, it does
+not exist for repo purposes — vocabulary additions require a PR against
+this file before any note, runner, ledger row, status badge, or PR
+description that uses them.
+
+Goals:
+
+- one taxonomy home for matrix / ledger / atlas / review / note / runner / script
+  language
+- separate publication-capture decisions from theorem-strength labels
+- separate authoring vocabulary from audit-lane field enums
+- avoid vague shorthand on live package surfaces
+- prefer explicit protocol qualifiers over loose adjectives
+- forbid new tags / classes / meta-framings on `claim_type: meta` notes
+  and elsewhere; emergent vocabulary is a substantive defect even when
+  the per-claim content is correct
+
+## Vocabulary Families
+
+There are five status families in this repo. Do not mix them casually.
+
+1. publication-capture dispositions
+2. claim-strength / release labels
+3. audit-lane field vocabulary (claim_type / audit_status /
+   effective_status / repair classes / independence tiers)
+4. historical lane-board labels
+5. historical discovery-log labels
+
+If a file already has separate columns for `Status`, `Qualifier`, `Import
+class`, or `Current publication decision`, keep one family per column
+rather than collapsing everything into one hybrid phrase.
+
+## Science Naming Rules
+
+Landed science must use domain-explicit names. Do not introduce a bare
+letter-number or route code as the primary name of a theorem, lane, source
+note, runner headline, table row, or review finding when that code could also
+mean an axiom, assumption, algebra type, branch block, route number, or
+workstream index.
+
+Examples of ambiguous primary names to avoid on new landed surfaces:
+
+- `A1`, `A2`, `G1`, `R3`
+- `Route F`, `Block 2`, `Origin B`
+- `Step 1` or `Assumption 1` compressed to `S1` / `A1`
+
+Use the scientific object as the name instead:
+
+- `physical Cl(3) local algebra`, not bare `A1`
+- `Lattice`, not bare `A2`
+- `Koide Frobenius-equipartition condition`, not bare `A1`
+- `Lie type A_1` or `SU(2) root-system check`, not bare `A1`
+- `DM-eta Coleman-Weinberg residual`, not bare `G1`
+
+**Canonical mathematical-object names are allowed.** Bare letter-number
+forms that name an *established mathematical object* — `S^3` (3-sphere),
+`S^2` (2-sphere), `U(1)` and `SU(N)` (gauge groups), `Z_3` / `Z_n`
+(cyclic groups), `C_3` (cyclic / symmetry group), `A_n` / `D_n` /
+`E_n` (Lie types), `I_3` (third isospin component), etc. — are the
+canonical names for those objects and do not require domain-explicit
+expansion. The rule above targets *code-like primary names that don't
+reference an established mathematical object* (e.g. `A1` used as a
+workstream label, `G1` used as a route code, `R3` used as a routing
+index), not standard mathematical notation. If both readings are
+plausible in context (e.g. `A_1` as Lie type vs. `A1` as
+workstream-index abbreviation), spell out the mathematical reading
+on first use (`Lie type A_1`) so the bare form is unambiguous.
+
+Legacy shorthand may be preserved only as an alias after the explicit name,
+for example: `Koide Frobenius-equipartition condition (legacy alias: A1)`.
+If an existing file already uses a shorthand, new edits should define it on
+first use and prefer the explicit name in headings, metadata, claim scopes,
+review summaries, and publication/control-plane rows.
+
+Axioms and assumptions must be written out as `Axiom 1`, `Assumption 1`, or a
+descriptive premise name. Do not abbreviate them to `A1` on live science
+surfaces.
+
+### Meta-note vocabulary discipline
+
+`claim_type: meta` notes (audit-prep, synthesis, fix-record, infrastructure
+documentation) must use a plain `_NOTE_<YYYY-MM-DD>.md` filename suffix
+and repo-canonical vocabulary in their content. The following emergent
+patterns are vocabulary additions and forbidden until they appear in this
+file:
+
+- new filename suffixes such as `_HOSTILE_AUDIT_FINDINGS_NOTE_`,
+  `_DOWNSTREAM_FIX_NOTE_`, `_SURGICAL_FIX_RECORD_`, `_FINDINGS_MEMO_`,
+  `_FIX_RECORD_`, `_AUDIT_BRIEF_`, `_ADDENDUM_`
+- new within-note labelling schemes such as `F-A` / `F-B` / `F-C`
+  "Finding F-letter" headings
+- new finding-class names such as `framing-fix`, `routing correction`,
+  `tier over-claim`, `admission-inheritance`, `audit-prep input`
+- new authority-role phrases such as
+  `Status authority: independent audit lane only` as a load-bearing role
+- new repair-class names beyond the seven listed in "Audit Lane Field
+  Vocabulary" below
+- new "X is a Y" meta-framings that imply a class or parent-framing
+  cross-reference for a collection of not-yet-shipped sub-PRs
+
+The reviewer rejects custom tags / classes / meta-framings even when the
+underlying per-claim work is correct. Ship narrow content one identity at a
+time, mirroring an existing canonical template, with no new vocabulary.
+
+## Filename Taxonomy
+
+### Script filename prefixes
+
+- `frontier_*`
+  - active frontier or later-stage retained runners
+  - this is the current default namespace
+- `mirror_*`, `lattice_*`, `gate_b_*`, `source_resolved_*`, `wave_*`
+  - older major programs that are still important on `main`
+- everything else
+  - usually lane-specific historical or exploratory runners
+
+Lane-specific prefixes are preferred when creating new frontier runners:
+`frontier_staggered_*`, `frontier_two_field_*`, `frontier_emergent_geometry_*`,
+etc. Pick a prefix that names the lane, not the date or the author.
+
+### Note filename rules
+
+- New retained notes should be explicit about the runner they interpret
+  in the filename when feasible.
+- New strategy or synthesis notes should not silently replace retained
+  notes; if the synthesis is forward-looking it lands at
+  `claim_type: meta` with the `_NOTE_<YYYY-MM-DD>.md` plain suffix.
+- Historical lanes should not be renamed just to fit the current
+  taxonomy. They should be indexed in the lane board and registry
+  instead. If a lane is historical, mark that in the lane board and
+  registry rather than renaming dozens of files.
+
+### Reserved filename suffixes
+
+See "Meta-note vocabulary discipline" above for the list of forbidden
+emergent suffixes. The only sanctioned form for new audit-prep / meta
+notes is `<DOMAIN>_NOTE_<YYYY-MM-DD>.md`.
+
+## Publication-Capture Dispositions
+
+Use these on publication-control-plane surfaces such as
+`PUBLICATION_MATRIX.md`.
+
+| Label | Use |
+|---|---|
+| `retained` | live retained family on the current paper-authority surface |
+| `promoted` | main-paper publication-core family carried directly in the current paper package |
+| `bounded` | live captured family kept outside the main paper core with explicit caveats |
+| `open` | live gate / blocker that is not yet closed |
+| `frozen-out` | intentionally excluded from the main paper while still recorded |
+
+These are package-capture decisions, not generic adjectives.
+
+## Claim-Strength / Release Labels
+
+Use these on notes, claims tables, quantitative tables, and runner summaries.
+
+| Label | Use |
+|---|---|
+| `retained` | theorem-grade closure on the retained authority surface |
+| `derived` | current-main downstream result obtained from retained structure plus named bridge/import assumptions; safe to quote, but not the same as zero-input retained closure |
+| `retained corollary` | safe retained consequence of a retained theorem/action surface |
+| `retained support theorem` / `retained support` | exact retained support result that is reusable but not itself the manuscript headline |
+| `retained support batch` | coherent retained batch of support theorems/tools carried together for atlas, reviewer, or support-package reuse |
+| `retained exact theorem` / `retained exact companion` | exact retained theorem/companion variant used when exactness itself is part of the safe statement |
+| `retained structural theorem` / `retained exact structural theorem` | retained exact structural law on the framework/package surface |
+| `retained support tool` | reusable retained tool/subderivation that supports other lanes without itself being the manuscript headline |
+| `retained framework statement` / `retained positioning` / `retained quantitative lane` | retained package-authority framing labels for front-door/control-plane use |
+| `retained action-surface closure` / `retained restricted theorem` / `retained restricted support` / `retained evaluated theorem` | retained exact-result variants where the constrained surface/class/evaluation matters |
+| `retained positive` / `retained partial positive` | retained positive lane result used mainly on atlas/toolbox surfaces rather than as the headline theorem |
+| `exact support theorem` / `exact support` | accepted exact-support variant when exactness itself is material to the safe statement; use with the same non-headline semantics as retained support, and keep bridge/import qualifiers explicit |
+| `exact support batch` | coherent exact batch of support theorems/tools carried together for atlas or reviewer reuse |
+| `exact structural theorem` / `exact algebraic identity` / `exact subderivation` | accepted exact-result specializations for atlas / theorem-bank rows when the mathematical role matters |
+| `exact boundary theorem` / `exact reduction theorem` | accepted exact-result specializations for atlas / theorem-bank rows when the mathematical role is an open-lane boundary or a compression/reduction statement |
+| `exact current-stack theorem` / `exact current-bank theorem` / `exact current-bank reduction` / `exact current-bank no-go theorem` | accepted exact-result specializations for current-stack/current-bank closeout rows on atlas and reviewer surfaces |
+| `exact negative boundary` / `exact negative closeout` / `exact post-selector reduction` | accepted exact-result specializations for explicit no-go/closeout/post-selector roles on atlas and reviewer surfaces |
+| `exact support/boundary theorem` | accepted mixed exact-role label when a row simultaneously contributes a reusable exact support input and an exact open-lane boundary statement |
+| `exact support tool` | reusable exact tool/subderivation that supports other lanes without being the headline claim |
+| `bounded support theorem` / `bounded support note` / `bounded support tool` | bounded supporting result/tool carried for atlas, reviewer, or secondary-lane use; not a main closure claim |
+| `bounded support batch` | coherent bounded batch of support tools/calculations carried for atlas or reviewer reuse |
+| `promoted quantitative package` | quantitative package strong enough for the current main-paper surface |
+| `bounded companion` | live bounded supporting lane outside the main paper core |
+| `bounded secondary lane` | live bounded lane worth carrying, but clearly secondary to the main package |
+| `bounded frontier` / `bounded negative boundary` / `bounded Route 2 build candidate` | bounded frontier/result classes kept for ongoing design work rather than current-package promotion |
+| `main closure package` | package-level main-paper closure claim on the current review/package surface; stronger than support, but not automatically the retained quantitative paper core |
+| `conditional` / `support` | useful positive package whose load-bearing step is still conditional, imposed, or support-only |
+| `open main gate` | still-open main closure target |
+| `historical` / `diagnostic` | preserved for audit/history/instrumentation, not live evidence |
+| `historical support` / `provenance` / `exact transport provenance` | provenance-only rows kept for route history, reviewer handoff, or closure bookkeeping rather than live promotion |
+| `negative-result` | useful negative or no-go result |
+| `negative-result` / `support` | negative/no-go result that is also a reusable support/pruning surface |
+| `inconclusive` | signal exists but interpretation is not frozen |
+
+Allowed composite forms should be built from the labels above and kept narrow:
+
+- `retained exact theorem`
+- `retained exact companion`
+- `retained structural theorem`
+- `retained exact structural theorem`
+- `retained corollary`
+- `retained support theorem`
+- `retained support batch`
+- `retained support tool`
+- `exact support theorem`
+- `exact support batch`
+- `exact structural theorem`
+- `exact algebraic identity`
+- `exact subderivation`
+- `exact boundary theorem`
+- `exact reduction theorem`
+- `exact current-stack theorem`
+- `exact current-bank theorem`
+- `exact current-bank reduction`
+- `exact current-bank no-go theorem`
+- `exact negative boundary`
+- `exact negative closeout`
+- `exact post-selector reduction`
+- `exact support/boundary theorem`
+- `exact support tool`
+- `bounded support theorem`
+- `bounded support note`
+- `bounded support tool`
+- `bounded support batch`
+- `bounded companion prediction`
+- `bounded frontier`
+- `bounded negative boundary`
+- `bounded Route 2 build candidate`
+- `main closure package`
+- `promoted quantitative package`
+- `open main gate`
+
+Avoid minting new slash-composites when a nearby qualifier/import column can carry the caveat instead.
+
+Role-specialized variants are acceptable when the cell begins with one of the
+accepted base labels above and the trailing noun names the mathematical role
+or control-plane role of the row, for example:
+
+- `retained framework statement`
+- `retained quantitative lane`
+- `retained action-surface closure`
+- `retained restricted theorem`
+- `exact structural theorem`
+- `exact algebraic identity`
+- `exact subderivation`
+- `retained support tool`
+- `retained support batch`
+- `exact support tool`
+- `exact support batch`
+- `exact boundary theorem`
+- `exact reduction theorem`
+- `exact current-stack theorem`
+- `exact current-bank theorem`
+- `exact current-bank no-go theorem`
+- `exact negative boundary`
+- `exact negative closeout`
+- `exact post-selector reduction`
+- `historical support / provenance`
+
+Do not mix a publication-capture disposition with a claim-strength label in
+the same cell unless the file explicitly allows hybrid narrative decisions.
+
+Short scope qualifiers may follow an accepted label when they state where the
+claim lives, for example:
+
+- `exact boundary theorem on open gate`
+- `exact reduction theorem outside main core`
+- `exact support theorem on the bounded charged-lepton package`
+- `exact support theorem with bounded downstream reuse`
+- `retained support theorem on the current package surface`
+
+Do not use `reviewed` or `reviewer-tested` as status labels. Those are review
+process adjectives, not controlled-vocabulary claim-strength labels. Carry
+review context in prose, placement, or authority notes instead.
+
+## Audit Lane Field Vocabulary
+
+These enums govern the audit ledger rows in
+`docs/audit/data/audit_ledger.json`, the rendered surface
+`docs/audit/AUDIT_LEDGER.md`, and the audit pipeline's derived outputs.
+Authors may write whatever status prose they need inside source notes,
+but the retained library is driven only by these auditor-owned fields.
+The audit-lane process and workflows live in `docs/audit/README.md`,
+`docs/audit/FRESH_LOOK_REQUIREMENTS.md`, and the audit-loop skill; the
+enums themselves live here.
+
+### `claim_type` (auditor-set)
+
+What kind of object the auditor says the row is. Exactly one of:
+
+- `positive_theorem`
+- `bounded_theorem`
+- `no_go`
+- `open_gate`
+- `decoration`
+- `meta`
+
+`meta` is used for non-claim infrastructure rows (audit-prep notes,
+synthesis catalogues, infrastructure documentation). `meta` rows must
+not promote to non-meta claim types via re-classification — these notes
+are by design out-of-band.
+
+### `claim_scope` (auditor-set)
+
+The auditor's short, citeable statement of exactly what was audited.
+Required for applied audits. Prose, not enum.
+
+### `audit_status` (auditor-set)
+
+What the audit found. Exactly one of:
+
+- `unaudited`
+- `audit_in_progress`
+- `audited_clean`
+- `audited_renaming`
+- `audited_conditional`
+- `audited_decoration`
+- `audited_failed`
+- `audited_numerical_match`
+
+### `effective_status` (derived by pipeline)
+
+Publication-facing status derived from `claim_type` plus
+`audit_status` plus the citation-graph closure of dependencies. The
+pipeline computes this; do not write to it directly. Possible values:
+
+- `retained` — `claim_type = positive_theorem` plus
+  `audit_status = audited_clean` plus retained-grade dependencies
+- `retained_no_go` — `claim_type = no_go` plus
+  `audit_status = audited_clean` plus retained-grade dependencies
+- `retained_bounded` — `claim_type = bounded_theorem` plus
+  `audit_status = audited_clean` plus retained-grade dependencies
+- `retained_pending_chain` — clean theorem/no-go/bounded row whose
+  upstream chain is not yet retained-grade
+- `open_gate` — clean open gate; blocks retained propagation
+- `decoration_under_<parent_claim_id>` — audited decoration whose
+  parent is retained-grade
+- `meta` — non-claim infrastructure rows
+- `audited_<failure_mode>` — terminal non-clean audit verdicts on active
+  claims
+
+Generated audit data must not contain legacy source-status authority
+fields. The graph builder may use old source-note status prose as a
+one-way migration hint when seeding `claim_type`, but the ledger, queue,
+prompt, and rendered audit surfaces are
+`claim_type` / `audit_status` / `effective_status` only. `support` is
+not a claim class.
+
+### Conditional repair classes
+
+For every `audited_conditional` result, the auditor must make the next
+repair lane sortable by prefixing `notes_for_re_audit_if_any` with
+exactly one of these seven classes:
+
+- `missing_dependency_edge` — a needed source note or authority exists
+  or is named, but is not wired as a direct dependency for the audited
+  claim
+- `dependency_not_retained` — a direct dependency exists but is not
+  retained grade
+- `missing_bridge_theorem` — the claim needs a new theorem for a
+  physical carrier, readout, unit map, boundary condition, sector
+  choice, normalization, or observable bridge
+- `scope_too_broad` — a clean bounded core exists, but the current claim
+  scope includes an unclosed extension
+- `runner_artifact_issue` — a runner, log, classifier, threshold,
+  import, or pass/fail accounting problem blocks closure despite
+  otherwise local scope
+- `compute_required` — closure needs a completed long run, sliced
+  runner, cached certificate, or independent derivation
+- `other` — use only when none of the above fits, and state why
+
+After the class, the auditor names the cheapest next repair action.
+
+### No-Go Discipline packet fields
+
+`no_go_discipline.status` records the mandatory structured N1-N8 stress-test outcome for negative boundaries. Exactly one of:
+
+- `PASS` — Every required N1-N8 record closes with no unresolved item; eligible to support a clean negative verdict.
+- `FAIL` — At least one required stress test remains open, incomplete, or mismatched; forbids audited_clean and requires an explicit demotion.
+
+When the status is `FAIL`, `no_go_discipline.demotion` is required and must be exactly one of:
+
+- `partial-attempt-with-named-untested-routes` — Records the tested work while naming alternative routes that remain untested.
+- `partial-narrowing` — Narrows the claim to the portion actually supported by the restricted packet.
+- `bounded-with-corrected-wall-count` — Retains only the bounded wall set that survives the independence audit.
+- `stretch-attempt-with-honest-residual` — Preserves a useful stretch attempt while stating the unresolved residual explicitly.
+
+Packetless legacy negative authority is invalidated with the controlled reason:
+
+- `no_go_discipline_packet_missing` — A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative.
+
+`negative_assertion_classes` is the mandatory auditor declaration on every incoming audit: the policy assertion classes the artifact makes, judged semantically from the full note (empty list when none). Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger. Allowed classes:
+
+- `no_go_result` — Asserts a no_go outcome: structurally closed, no route exists, no retained primitive supplies the target.
+- `stretch_attempt_negative` — Asserts a stretch-attempt negative outcome: the attempted route does not close.
+- `bounded_with_named_walls` — Asserts a bounded result conditional on named walls or admissions.
+- `derived_no_go_boundary` — Asserts a derived no-go boundary inside a positive theorem, such as a per-element identity that does not lift.
+- `conditional_wall_rationale` — An audit rationale that names a residual wall as the reason a verdict is conditional.
+
+### Independence tiers
+
+`auditor` must not equal `author`. Strength tiers for the `independence`
+field on an audit row:
+
+- `independence: weak` — same model family, or a session whose context
+  restrictions cannot be established. Permitted for diagnostic review,
+  not eligible to land `audited_clean`
+- `independence: fresh_context` — same model family, different
+  auditor/session identity, restricted-input audit. Same-family
+  clean-room tier for detecting context poisoning without claiming
+  cross-family review
+- `independence: cross_family` — different model family from the author
+- `independence: strong` — human auditor with no prior involvement in
+  the note
+- `independence: external` — off-repo reviewer with no project context;
+  the audit lane does not produce these on its own
+
+### `auditor_family`
+
+The model family of the auditor (e.g., `codex-gpt-5.5`, `codex-gpt-5.6`,
+`claude-opus-4.x`, `human`). Used to enforce cross-family independence.
+The designated cross-family auditor for this repo is the best available
+full Codex GPT model at maximum reasoning; see
+`docs/audit/FRESH_LOOK_REQUIREMENTS.md` for the auto-selection rule.
+
+### Load-bearing step classes
+
+When the auditor records the kind of step the load-bearing sentence /
+equation is, pick exactly one of:
+
+- `(A)` algebraic identity check on existing inputs
+- `(B)` cross-note input verification (reads value from another note)
+- `(C)` first-principles compute from the axiom (`Cl(3)` on `Z^3` plus
+  accepted normalizations) producing a number not present in any input
+- `(D)` external comparator check against PDG / lattice QCD / observation
+- `(E)` definition (introduces a new symbol)
+- `(F)` renaming (asserts symbol identity between two existing concepts)
+- `(G)` numerical match at a tuned input scale
+
+## Migration / Legacy Wording
+
+The repo is migrating from author-declared `retained` / `promoted`
+language to the audit-lane propose / ratify vocabulary. Source-note
+`Status` lines now use:
+
+- `proposed_retained` — author proposes retained-grade; awaits audit ratification
+- `proposed_promoted` — author proposes promoted-grade; awaits audit ratification
+
+The canonical audit-ratified surface is the tracked sharded ledger
+`docs/audit/data/ledger/`; the rendered
+`docs/audit/AUDIT_LEDGER.md` is a local pipeline-materialized cache.
+Legacy publication summaries may still use manuscript shorthand, but
+those rows should be read as proposed until the audit ledger marks
+them clean.
+
+New notes must use `proposed_retained` / `proposed_promoted` on author
+side and rely on the pipeline's `effective_status` for the
+publication-facing label. Do not bare-declare `retained` on a source
+note.
+
+## Historical Lane-Board Labels
+
+Use these only on Historical repo-map surfaces such as `LANE_STATUS_BOARD.md` and the lane registry.
+
+| Label | Use |
+|---|---|
+| `primary-retained` | current best-supported lane in the historical lane-board sense |
+| `retained-companion` | real, replayable companion lane, but not the single default entrypoint |
+| `open-blocker` | active blocker limiting the historical lane claim boundary |
+| `exploratory-reopen` | partially positive lane worth more work, but not promoted |
+| `historical-control` | historical comparison/control lane |
+| `historical-retained` | older retained major program, no longer the default |
+| `historical-bounded` | scientifically useful historical work, no longer the lead lane |
+| `historical-blocked` | diagnosed dead-end or mechanism-level blocker |
+
+## Historical Discovery-Log Labels
+
+Use these only on Historical discovery / paper-seed ledgers such as `POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`.
+
+| Label | Use |
+|---|---|
+| `retained` | historically important retained discovery |
+| `bounded-retained` | bounded positive result preserved on `main`, worth paper planning, but not a retained theorem-grade closure |
+| `methodological` | important measurement / methodology / audit contribution |
+| `negative-result` | strong structural no-go or narrowing result |
+| `exploratory-lead` | quantitatively interesting lead worth preserving, not yet frozen |
+
+## Column Rules
+
+- `PUBLICATION_MATRIX.md`
+  - use publication-capture dispositions for capture decisions
+  - `Current publication decision` cells should begin with one of `retained`, `promoted`, `bounded`, `open`, `frozen-out`; a short placement note may follow after a semicolon
+- `CLAIMS_TABLE.md, QUANTITATIVE_SUMMARY_TABLE.md, DERIVATION_ATLAS.md`
+  - use claim-strength / release labels
+  - accepted role-specialized variants may be used when they begin with the primary claim-strength label
+- `FULL_CLAIM_LEDGER.md`
+  - may begin with either a publication-capture disposition or a claim-strength label because it narrates package decisions row-by-row
+  - avoid ad hoc hybrids; if a row begins with one family, keep any second-family qualifier short and explanatory
+  - on mixed audit rows, the cell should begin with the primary label from the family being used; a short explanatory qualifier may follow after a semicolon
+  - accepted ledger-style hybrids include forms such as `promoted exact companion`, `promoted restricted theorem`, `promoted retained closure`, `promoted retained support batch`, and `promoted retained action-surface closure`
+- `docs/audit/AUDIT_LEDGER.md, docs/audit/data/audit_ledger.json`
+  - use audit-lane field vocabulary only
+  - rows are written by the audit pipeline / `apply_audit.py`; do not hand-edit
+- `LANE_STATUS_BOARD.md`
+  - use historical lane-board labels
+- `POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`
+  - use historical discovery-log labels
+
+Do not use row prose like `Retained ...` when the row status is `bounded-retained`.
+
+## Protocol Qualifiers
+
+These are qualifiers, not standalone status labels:
+
+- `review surface`
+- `current package grade`
+- `strict/native map`
+- `exact-target strict/native map`
+
+They can appear in prose or qualifier/import columns, but they should not replace the primary status label.
+
+## Evidence Terms
+
+Prefer these nouns:
+
+- `protocol`: a specific constructed experimental/computational setup
+- `witness`: a bounded positive signal on a stated protocol
+- `diagnostic`: an instrument/readout used for triage or debugging
+- `companion`: a bounded supporting lane attached to a stronger package
+- `closure`: use only when the load-bearing claim is actually closed
+
+Avoid vague upgrades like:
+
+- `proof` when the surface is only a witness or protocol
+- `closure` when the status is really `bounded-retained` or `conditional / support`
+
+## Hyphenation
+
+- prefer `observational-pin as a compound adjective`
+- prefer `observational pin only as a noun phrase`
+
+## Axiom Naming (out of scope for this doc)
+
+Axiom names (`A_min`, `Axiom 1`, `Axiom 2`, `Axiom*`) are **physics
+primitives**, not process vocabulary. Per
+`VOCABULARY_HYGIENE_DESIGN.md`, vocabulary
+is disjoint from physics. The canonical home for these names and the
+policy governing their use is:
+
+- `docs/MINIMAL_AXIOMS_2026-06-29.md` — the framework axioms themselves (Lattice, Qubit, Admissibility, Record, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-06-05.md`
+- `docs/audit/data/axiom_premise_nodes.json` — explicitly approved primitive premise nodes such as `scale_reference_primitive` and `kinetic_isotropy_primitive`
+- [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) — the binding rules around proposing extensions (`Axiom*`)
+
+Do not redefine, alias, or document these names here.
+
+## Stale-Narrative Archival Vocabulary
+
+When a wrapper note's narrative frame fails an audit, archival uses
+fixed path and content vocabulary.
+
+### Archive path
+
+`archive_unlanded/<cluster-tag>/` — the canonical recovery surface for failed-narrative source notes. The cluster-tag is a short stable noun
+phrase for the wrapper cluster (e.g. `koide-q-v6-cluster`, `route-2-exhaustion-failed-cluster`).
+
+### Salvage-note required content
+
+When a wrapper note fails but some sub-observations survive, the salvage
+note must state:
+
+- what failed (the wrapper's load-bearing claim that the audit invalidated)
+- what survived (the durable structural observations that remain)
+- the source wrapper's archive recovery path
+
+The salvage note must not restate the failed global conclusion.
+
+### Banned archival wording
+
+- describing the archived wrapper as "deprecated" or "obsolete" — imply a deliberate retirement decision; `audit_status: audited_failed` is the canonical record, no additional adjective needed
+- describing the archived wrapper as "still useful" — unless the sentence also states exactly for what it is still useful
+
+The associated workflow rules live in
+`docs/audit/STALE_NARRATIVE_POLICY.md`. Vocabulary lives here.
+
+## Branch-Entanglement / BMV Language
+
+Preferred terms for the current staggered branch-entanglement lane:
+
+- `branch-mediated entanglement`
+- `externally imposed geometry/source-branch protocol`
+- `fixed-adjacency two-branch protocol`
+- `branch-mediated entanglement witness`
+
+Only call something a `BMV witness` when the surface closes the stronger
+mediator-side requirements, including:
+
+- branch/mediator structure is generated by the relevant physical degrees of
+  freedom, not inserted externally
+- the mediator-null / LOCC-exclusion logic is implemented at the claimed level
+
+For the current live branch-entanglement package, say explicitly:
+
+- `not a self-generated mediator-branch BMV witness`
+- `not a mediator-null / LOCC-exclusion closure`
+
+Avoid as the primary descriptor on live package surfaces:
+
+- `toy`
+- `toy model`
+- `toy witness`
+- `BMV-like evidence`
+
+Those are acceptable only in historical commentary where the sentence also says
+what the protocol is missing.
+
+## Boundary-Law Language
+
+For the live boundary-law lane, prefer:
+
+- `Dirac-sea boundary-law probe`
+- `many-body-style boundary-law result`
+- `bounded boundary-law package`
+
+Avoid calling historical transfer-entropy scripts:
+
+- `area law`
+- `subsystem entanglement measurement`
+
+unless the measured object actually matches that wording.
+
+## Historical Retirement Language
+
+When an old runner is no longer live evidence, prefer:
+
+- `retired as evidence`
+- `historical / diagnostic`
+- `historical exploratory predecessor`
+
+Avoid ambiguous phrasing like:
+
+- `still useful`
+
+unless the sentence also states exactly for what it is still useful.
+
+## Paper-Facing Prose Voice
+
+The target voice for paper-facing prose, curated methodology prose, repo
+instructions, and new synthesis is Feynman-like in the useful sense:
+plain, physical, concrete, curious, and hard to fool. Do not imitate
+quirks or make the prose performative. Use the attitude.
+
+Do not rewrite raw captures or historical dated notes just to polish the
+voice; those files are evidence of the work as it happened.
+
+### The rule
+
+Explain what we are doing as if the reader is smart, skeptical, and busy.
+
+Say the simple physical question first. Then say what was checked. Then say
+what did not close.
+
+### Use this voice
+
+- Start from the physical question, not from the institutional framing.
+- Prefer short sentences when the idea is hard.
+- Explain why a result is surprising or useful in ordinary language before listing the machinery.
+- Put equations after the idea they express.
+- Say "we find", "we check", "we keep", and "we do not claim" when those are the honest verbs.
+- Treat negative results as information.
+- Keep the reader close to the object: lattice, operator, runner, eigenvalue, projector, source, bridge.
+
+### Avoid this voice
+
+- "broad exact backbone"
+- "methodological innovation"
+- "transformative framework"
+- "groundbreaking result"
+- "paradigm"
+- "comprehensive package" unless the sentence immediately says what is inside
+- "already closed" without naming the exact surface
+- any sentence whose main job is to sound important
+
+### Decoration-pruning tone
+
+When pruning algebraic decoration, the tone is "claim-surface management",
+not "criticism of the algebra itself". The identities are real; what's
+being pruned is the count of separately-retained rows. A package that
+presents 25 separate retained theorems where 3 distinct claims exist is
+harder to review, harder to falsify, and harder to take seriously as an
+external reader. Pruning improves signal density of the publication
+package. Use that framing in prose.
+
+### Paragraph test
+
+For each paragraph, ask:
+
+1. What is the question?
+2. What is the object being calculated?
+3. What is the support surface?
+4. What is still open?
+
+If the paragraph does not answer at least one of these, cut it or move
+it to a ledger.
+
+exec
+/bin/zsh -lc 'cat -- ".claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE_BLOCK02.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+# Trace Gate — block02 (2026-07-17)
+
+```yaml
+trace_class: upstream_support
+target_claim_id: born_form_effect_menu_sitewise_forcing_and_product_menu_boundary_bounded_theorem_note_2026-07-17
+target_blocker_text: >
+  Parent block N1 item 4: "(4) menus mixing projective structure with
+  non-projective effects (classical mixtures of projective menus and other
+  intermediate families) — OUTSIDE T3's scope by construction and named
+  untested"; and the parent hypothesis-surface sentence: "Whether the
+  physical registration supplies menus at projective grade, at effect
+  grade, at neither, or at some intermediate family is underived and is not
+  decided here."
+source_of_blocker_text: parent_source_note
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: >
+  Hand the stacked PR to owner-operated review/audit behind block01. If
+  ratified, the menu-grade dial gains a calibrated intermediate notch: the
+  scaled-projector family forces sitewise with zero imports (T2), the
+  paired subfamily does not (T3a), so the registration question narrows to
+  whether supplied menus ever leave the paired subfamily. Downstream
+  consumers: any grading-primitive registration proposal; the parked
+  minimal-family / Wright-Weigert-translation increment.
+```
+
+Notes: `upstream_support` — block02 does not close the parent block (which
+remains bridge-conditional) but thins its effect-horn premise on the exact
+named-untested surface. The negative slice (T3a) is
+`negative_route_pruning` at the sub-claim level: it prunes "force the Born
+form from paired menus alone" with the reopen condition named (admit any
+unpaired scaled-projector menu — the split or axis-cancellation schemas
+suffice by T2).
+
+exec
+/bin/zsh -lc 'cat -- ".claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE_BLOCK02.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+# Claim Status Certificate — block02 (2026-07-17)
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: >
+  bridge-conditional on the assumed grading hypotheses F1-F2 (scaled-projector
+  domain and menus); no menus are claimed to exist; the family the physical
+  registration supplies is underived; minimality of the family is not claimed.
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: >
+  Exact finite theorems under explicitly assumed conditional hypotheses, with
+  a scoped negative boundary (T3a: the paired subfamily does not force)
+  carrying a constructive witness. No unconditional physical claim; hence
+  bounded_theorem.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```
+
+## Promotion Value Gate (V1-V5)
+
+- **V1 (specific target text).** The parent block's own named-untested gap,
+  quoted verbatim in the note: "classical mixtures of projective menus and
+  other intermediate families" (named untested in the parent N1 item 4) and
+  the parent hypothesis-surface sentence "Whether the physical registration
+  supplies menus at projective grade, at effect grade, at neither, or at
+  some intermediate family is underived and is not decided here." Block02
+  supplies an exactly delimited intermediate family with a two-sided
+  forcing/boundary statement.
+- **V2 (new derivation).** (i) The scaled-projector menu characterization
+  (vector-zero + scalar-two conditions); (ii) the axis-cancellation menu
+  construction and the direct affinity forcing g(n) = (1 + n·s)/2 — a proof
+  mechanism used nowhere in the repo (not the five-step Busch route: no
+  Herm-spanning, no Riesz step, no general-effect additivity); (iii) the
+  paired-subfamily boundary with the explicit rogue extension; (iv) the
+  observation that the forcing runs on scaled rank-1 menus alone (no
+  unsharp effects, no coins load-bearing).
+- **V3 (standard machinery?).** The Cauchy/squeeze scaffolding is shared
+  with block01; the family definition, the characterization, the
+  axis-cancellation construction, and the paired boundary are native
+  content with no literature source used as input; the comparator class
+  (Wright-Weigert) is differently delimited and explicitly not translated.
+- **V4 (non-trivial).** Yes: the axis-cancellation identity is a genuine
+  construction (weights 2/(1+L)·|n_a| with the L-dependent normalization),
+  and the two-sided placement requires the exact characterization.
+- **V5 (one-step variant?).** No. Closest cycle is block01: its T1 forces
+  on the FULL effect family via the five-step argument; block02 forces on a
+  strictly thinner family via a different mechanism, and its boundary
+  (paired) is a different object from block01's product-menu boundary
+  (different algebra: one site vs pair; different family; different
+  witness). Not a relabeling; the cluster-cap evaluator is not yet
+  triggered (2nd PR in the family), but this distinction is recorded for
+  it.
+
+## No-Go Discipline Gate (N1-N8)
+
+Answered inline in the note's own No-Go Discipline Gate section for the T3a
+negative slice (five routes with ATTEMPTED / RULED OUT / named-outside-scope
+markers; reopen paths named: unpaired schemas, effect pole, projective
+composite route). The note section is authoritative; the PR body reproduces
+it.
+
+## Review-loop disposition
+
+pending — to be replaced with the actual block02 panel outcome in
+`REVIEW_HISTORY.md` before the PR opens.
+
+Independent audit remains required before any effective-status change; this
+certificate predicts no verdict.
+
+exec
+/bin/zsh -lc 'cat -- ".claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE_BLOCK02.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+# Trace Gate — block02 (2026-07-17)
+
+```yaml
+trace_class: upstream_support
+target_claim_id: born_form_effect_menu_sitewise_forcing_and_product_menu_boundary_bounded_theorem_note_2026-07-17
+target_blocker_text: >
+  Parent block N1 item 4: "(4) menus mixing projective structure with
+  non-projective effects (classical mixtures of projective menus and other
+  intermediate families) — OUTSIDE T3's scope by construction and named
+  untested"; and the parent hypothesis-surface sentence: "Whether the
+  physical registration supplies menus at projective grade, at effect
+  grade, at neither, or at some intermediate family is underived and is not
+  decided here."
+source_of_blocker_text: parent_source_note
+reachability_to_target: supports
+artifact_role: theorem
+next_trace_action: >
+  Hand the stacked PR to owner-operated review/audit behind block01. If
+  ratified, the menu-grade dial gains a calibrated intermediate notch: the
+  scaled-projector family forces sitewise with zero imports (T2), the
+  paired subfamily does not (T3a), so the registration question narrows to
+  whether supplied menus ever leave the paired subfamily. Downstream
+  consumers: any grading-primitive registration proposal; the parked
+  minimal-family / Wright-Weigert-translation increment.
+```
+
+Notes: `upstream_support` — block02 does not close the parent block (which
+remains bridge-conditional) but thins its effect-horn premise on the exact
+named-untested surface. The negative slice (T3a) is
+`negative_route_pruning` at the sub-claim level: it prunes "force the Born
+form from paired menus alone" with the reopen condition named (admit any
+unpaired scaled-projector menu — the split or axis-cancellation schemas
+suffice by T2).
+
+exec
+/bin/zsh -lc 'cat -- "docs/repo/CONTROLLED_VOCABULARY.md"' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=dc02750e482ab935590058a2194f976ba8fba24eb54d6abde65acc594de73d05 -->
+# Controlled Vocabulary
+
+> **Front-door lookup:** Looking up a single term? Go to
+> `docs/KEY_TERMINOLOGY.md` — flat A-Z index of
+> every repo-canonical term with one-line definition and a pointer to
+> the source-of-truth doc for each.
+
+## Vocabulary Hierarchy
+
+The repo has five language layers. This doc is the **operational** layer
+(layer 3). Higher layers are sovereign for their domains; do not duplicate
+their content here, and do not override their wording from here.
+
+| Layer | Source-of-truth doc | Governs |
+|---|---|---|
+| 0. Front-door A-Z lookup | `docs/KEY_TERMINOLOGY.md` | Single-page A-Z index of every repo-canonical term with a one-line definition and a pointer to its source-of-truth doc. The reader entry-point above all layers below; an index, not an authority. New terms enter the index only after the source-of-truth doc accepts them. |
+| 1. Framework substantive | `docs/MINIMAL_AXIOMS_2026-06-29.md` and `docs/audit/data/axiom_premise_nodes.json` | Framework axioms and explicitly approved primitive premise nodes the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor adjacency, standard translations, proper cubic rotations about each site, no privileged site, and site distinctions carried only by the supplied lattice structure), Qubit (the domain of local possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is equivalent notation, not extra primitive content; no possibility is privileged; possibilities are distinguished by the supplied algebraic structure alone), Admissibility (one fixed nearest-neighbor rule, covariant under lattice translations and proper cubic rotations, by which the available possibilities are determined by, and vary with, the nearest-neighbor conditions at each site), Record (when present, fixed locking of exactly one admissible local possibility; at most one record per site; permanence; readout value determined by record content alone; finite scalar additivity), the state/law qualification clauses, the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms, and registered primitive premise nodes such as the scale-reference and kinetic-isotropy primitives. Changes only when a framework-level science decision changes. |
+| 2. External paper text | [`docs/ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md`](../ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md), [`docs/ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md`](../ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md) | Verbatim reusable disclosure paragraphs for papers, preprints, and talks. The framing paragraph is the short paper-facing form; the accountability disclosure is the longer package-level form. Both carry their own usage guidance (e.g. replacing `[repo URL]`, narrowing the tool list when only one was used). |
+| 3. Operational (this doc) | `docs/repo/CONTROLLED_VOCABULARY.md` | Status taxonomy, claim-strength labels, audit-lane field enums, repair classes, filename conventions, archival paths, topic language, and paper-facing prose voice — the working vocabulary used inside the repo across ledgers, tables, notes, runners, skills, and PR descriptions. |
+| 4. Methodology framing (adjacent) | `docs/AI_METHODOLOGY_NOTE_2026-04-25.md` | The curated front-door note for the methodology lane. Defines how to talk about the AI / methodology side at the project level. |
+
+For a single-term lookup (layer 0), use `KEY_TERMINOLOGY.md`. For
+framework axioms and approved primitive premise nodes (layer 1), cite
+`MINIMAL_AXIOMS_2026-06-29.md` and
+`docs/audit/data/axiom_premise_nodes.json` — do not redefine Lattice, Qubit,
+Admissibility, Record, `Cl(3)`, `Z^3`, `A_min`, or registered primitives here. For external paper text
+(layer 2), use the canonical framing paragraph and the accountability
+disclosure verbatim — do not paraphrase. This doc governs layer 3 only.
+
+---
+
+This file is the single repo-wide home for the **operational** vocabulary
+layer: status taxonomy, audit-lane field enums, filename conventions,
+axiom-naming **rules** (above the science decision in layer 1), archival
+paths, topic language, and paper-facing prose voice. Other policy /
+process docs in the repo cite this file for vocab rather than inlining
+their own. If a sanctioned term, label, suffix, or wording is not listed
+here and is not defined in the layer 1 or layer 2 sources above, it does
+not exist for repo purposes — vocabulary additions require a PR against
+this file before any note, runner, ledger row, status badge, or PR
+description that uses them.
+
+Goals:
+
+- one taxonomy home for matrix / ledger / atlas / review / note / runner / script
+  language
+- separate publication-capture decisions from theorem-strength labels
+- separate authoring vocabulary from audit-lane field enums
+- avoid vague shorthand on live package surfaces
+- prefer explicit protocol qualifiers over loose adjectives
+- forbid new tags / classes / meta-framings on `claim_type: meta` notes
+  and elsewhere; emergent vocabulary is a substantive defect even when
+  the per-claim content is correct
+
+## Vocabulary Families
+
+There are five status families in this repo. Do not mix them casually.
+
+1. publication-capture dispositions
+2. claim-strength / release labels
+3. audit-lane field vocabulary (claim_type / audit_status /
+   effective_status / repair classes / independence tiers)
+4. historical lane-board labels
+5. historical discovery-log labels
+
+If a file already has separate columns for `Status`, `Qualifier`, `Import
+class`, or `Current publication decision`, keep one family per column
+rather than collapsing everything into one hybrid phrase.
+
+## Science Naming Rules
+
+Landed science must use domain-explicit names. Do not introduce a bare
+letter-number or route code as the primary name of a theorem, lane, source
+note, runner headline, table row, or review finding when that code could also
+mean an axiom, assumption, algebra type, branch block, route number, or
+workstream index.
+
+Examples of ambiguous primary names to avoid on new landed surfaces:
+
+- `A1`, `A2`, `G1`, `R3`
+- `Route F`, `Block 2`, `Origin B`
+- `Step 1` or `Assumption 1` compressed to `S1` / `A1`
+
+Use the scientific object as the name instead:
+
+- `physical Cl(3) local algebra`, not bare `A1`
+- `Lattice`, not bare `A2`
+- `Koide Frobenius-equipartition condition`, not bare `A1`
+- `Lie type A_1` or `SU(2) root-system check`, not bare `A1`
+- `DM-eta Coleman-Weinberg residual`, not bare `G1`
+
+**Canonical mathematical-object names are allowed.** Bare letter-number
+forms that name an *established mathematical object* — `S^3` (3-sphere),
+`S^2` (2-sphere), `U(1)` and `SU(N)` (gauge groups), `Z_3` / `Z_n`
+(cyclic groups), `C_3` (cyclic / symmetry group), `A_n` / `D_n` /
+`E_n` (Lie types), `I_3` (third isospin component), etc. — are the
+canonical names for those objects and do not require domain-explicit
+expansion. The rule above targets *code-like primary names that don't
+reference an established mathematical object* (e.g. `A1` used as a
+workstream label, `G1` used as a route code, `R3` used as a routing
+index), not standard mathematical notation. If both readings are
+plausible in context (e.g. `A_1` as Lie type vs. `A1` as
+workstream-index abbreviation), spell out the mathematical reading
+on first use (`Lie type A_1`) so the bare form is unambiguous.
+
+Legacy shorthand may be preserved only as an alias after the explicit name,
+for example: `Koide Frobenius-equipartition condition (legacy alias: A1)`.
+If an existing file already uses a shorthand, new edits should define it on
+first use and prefer the explicit name in headings, metadata, claim scopes,
+review summaries, and publication/control-plane rows.
+
+Axioms and assumptions must be written out as `Axiom 1`, `Assumption 1`, or a
+descriptive premise name. Do not abbreviate them to `A1` on live science
+surfaces.
+
+### Meta-note vocabulary discipline
+
+`claim_type: meta` notes (audit-prep, synthesis, fix-record, infrastructure
+documentation) must use a plain `_NOTE_<YYYY-MM-DD>.md` filename suffix
+and repo-canonical vocabulary in their content. The following emergent
+patterns are vocabulary additions and forbidden until they appear in this
+file:
+
+- new filename suffixes such as `_HOSTILE_AUDIT_FINDINGS_NOTE_`,
+  `_DOWNSTREAM_FIX_NOTE_`, `_SURGICAL_FIX_RECORD_`, `_FINDINGS_MEMO_`,
+  `_FIX_RECORD_`, `_AUDIT_BRIEF_`, `_ADDENDUM_`
+- new within-note labelling schemes such as `F-A` / `F-B` / `F-C`
+  "Finding F-letter" headings
+- new finding-class names such as `framing-fix`, `routing correction`,
+  `tier over-claim`, `admission-inheritance`, `audit-prep input`
+- new authority-role phrases such as
+  `Status authority: independent audit lane only` as a load-bearing role
+- new repair-class names beyond the seven listed in "Audit Lane Field
+  Vocabulary" below
+- new "X is a Y" meta-framings that imply a class or parent-framing
+  cross-reference for a collection of not-yet-shipped sub-PRs
+
+The reviewer rejects custom tags / classes / meta-framings even when the
+underlying per-claim work is correct. Ship narrow content one identity at a
+time, mirroring an existing canonical template, with no new vocabulary.
+
+## Filename Taxonomy
+
+### Script filename prefixes
+
+- `frontier_*`
+  - active frontier or later-stage retained runners
+  - this is the current default namespace
+- `mirror_*`, `lattice_*`, `gate_b_*`, `source_resolved_*`, `wave_*`
+  - older major programs that are still important on `main`
+- everything else
+  - usually lane-specific historical or exploratory runners
+
+Lane-specific prefixes are preferred when creating new frontier runners:
+`frontier_staggered_*`, `frontier_two_field_*`, `frontier_emergent_geometry_*`,
+etc. Pick a prefix that names the lane, not the date or the author.
+
+### Note filename rules
+
+- New retained notes should be explicit about the runner they interpret
+  in the filename when feasible.
+- New strategy or synthesis notes should not silently replace retained
+  notes; if the synthesis is forward-looking it lands at
+  `claim_type: meta` with the `_NOTE_<YYYY-MM-DD>.md` plain suffix.
+- Historical lanes should not be renamed just to fit the current
+  taxonomy. They should be indexed in the lane board and registry
+  instead. If a lane is historical, mark that in the lane board and
+  registry rather than renaming dozens of files.
+
+### Reserved filename suffixes
+
+See "Meta-note vocabulary discipline" above for the list of forbidden
+emergent suffixes. The only sanctioned form for new audit-prep / meta
+notes is `<DOMAIN>_NOTE_<YYYY-MM-DD>.md`.
+
+## Publication-Capture Dispositions
+
+Use these on publication-control-plane surfaces such as
+`PUBLICATION_MATRIX.md`.
+
+| Label | Use |
+|---|---|
+| `retained` | live retained family on the current paper-authority surface |
+| `promoted` | main-paper publication-core family carried directly in the current paper package |
+| `bounded` | live captured family kept outside the main paper core with explicit caveats |
+| `open` | live gate / blocker that is not yet closed |
+| `frozen-out` | intentionally excluded from the main paper while still recorded |
+
+These are package-capture decisions, not generic adjectives.
+
+## Claim-Strength / Release Labels
+
+Use these on notes, claims tables, quantitative tables, and runner summaries.
+
+| Label | Use |
+|---|---|
+| `retained` | theorem-grade closure on the retained authority surface |
+| `derived` | current-main downstream result obtained from retained structure plus named bridge/import assumptions; safe to quote, but not the same as zero-input retained closure |
+| `retained corollary` | safe retained consequence of a retained theorem/action surface |
+| `retained support theorem` / `retained support` | exact retained support result that is reusable but not itself the manuscript headline |
+| `retained support batch` | coherent retained batch of support theorems/tools carried together for atlas, reviewer, or support-package reuse |
+| `retained exact theorem` / `retained exact companion` | exact retained theorem/companion variant used when exactness itself is part of the safe statement |
+| `retained structural theorem` / `retained exact structural theorem` | retained exact structural law on the framework/package surface |
+| `retained support tool` | reusable retained tool/subderivation that supports other lanes without itself being the manuscript headline |
+| `retained framework statement` / `retained positioning` / `retained quantitative lane` | retained package-authority framing labels for front-door/control-plane use |
+| `retained action-surface closure` / `retained restricted theorem` / `retained restricted support` / `retained evaluated theorem` | retained exact-result variants where the constrained surface/class/evaluation matters |
+| `retained positive` / `retained partial positive` | retained positive lane result used mainly on atlas/toolbox surfaces rather than as the headline theorem |
+| `exact support theorem` / `exact support` | accepted exact-support variant when exactness itself is material to the safe statement; use with the same non-headline semantics as retained support, and keep bridge/import qualifiers explicit |
+| `exact support batch` | coherent exact batch of support theorems/tools carried together for atlas or reviewer reuse |
+| `exact structural theorem` / `exact algebraic identity` / `exact subderivation` | accepted exact-result specializations for atlas / theorem-bank rows when the mathematical role matters |
+| `exact boundary theorem` / `exact reduction theorem` | accepted exact-result specializations for atlas / theorem-bank rows when the mathematical role is an open-lane boundary or a compression/reduction statement |
+| `exact current-stack theorem` / `exact current-bank theorem` / `exact current-bank reduction` / `exact current-bank no-go theorem` | accepted exact-result specializations for current-stack/current-bank closeout rows on atlas and reviewer surfaces |
+| `exact negative boundary` / `exact negative closeout` / `exact post-selector reduction` | accepted exact-result specializations for explicit no-go/closeout/post-selector roles on atlas and reviewer surfaces |
+| `exact support/boundary theorem` | accepted mixed exact-role label when a row simultaneously contributes a reusable exact support input and an exact open-lane boundary statement |
+| `exact support tool` | reusable exact tool/subderivation that supports other lanes without being the headline claim |
+| `bounded support theorem` / `bounded support note` / `bounded support tool` | bounded supporting result/tool carried for atlas, reviewer, or secondary-lane use; not a main closure claim |
+| `bounded support batch` | coherent bounded batch of support tools/calculations carried for atlas or reviewer reuse |
+| `promoted quantitative package` | quantitative package strong enough for the current main-paper surface |
+| `bounded companion` | live bounded supporting lane outside the main paper core |
+| `bounded secondary lane` | live bounded lane worth carrying, but clearly secondary to the main package |
+| `bounded frontier` / `bounded negative boundary` / `bounded Route 2 build candidate` | bounded frontier/result classes kept for ongoing design work rather than current-package promotion |
+| `main closure package` | package-level main-paper closure claim on the current review/package surface; stronger than support, but not automatically the retained quantitative paper core |
+| `conditional` / `support` | useful positive package whose load-bearing step is still conditional, imposed, or support-only |
+| `open main gate` | still-open main closure target |
+| `historical` / `diagnostic` | preserved for audit/history/instrumentation, not live evidence |
+| `historical support` / `provenance` / `exact transport provenance` | provenance-only rows kept for route history, reviewer handoff, or closure bookkeeping rather than live promotion |
+| `negative-result` | useful negative or no-go result |
+| `negative-result` / `support` | negative/no-go result that is also a reusable support/pruning surface |
+| `inconclusive` | signal exists but interpretation is not frozen |
+
+Allowed composite forms should be built from the labels above and kept narrow:
+
+- `retained exact theorem`
+- `retained exact companion`
+- `retained structural theorem`
+- `retained exact structural theorem`
+- `retained corollary`
+- `retained support theorem`
+- `retained support batch`
+- `retained support tool`
+- `exact support theorem`
+- `exact support batch`
+- `exact structural theorem`
+- `exact algebraic identity`
+- `exact subderivation`
+- `exact boundary theorem`
+- `exact reduction theorem`
+- `exact current-stack theorem`
+- `exact current-bank theorem`
+- `exact current-bank reduction`
+- `exact current-bank no-go theorem`
+- `exact negative boundary`
+- `exact negative closeout`
+- `exact post-selector reduction`
+- `exact support/boundary theorem`
+- `exact support tool`
+- `bounded support theorem`
+- `bounded support note`
+- `bounded support tool`
+- `bounded support batch`
+- `bounded companion prediction`
+- `bounded frontier`
+- `bounded negative boundary`
+- `bounded Route 2 build candidate`
+- `main closure package`
+- `promoted quantitative package`
+- `open main gate`
+
+Avoid minting new slash-composites when a nearby qualifier/import column can carry the caveat instead.
+
+Role-specialized variants are acceptable when the cell begins with one of the
+accepted base labels above and the trailing noun names the mathematical role
+or control-plane role of the row, for example:
+
+- `retained framework statement`
+- `retained quantitative lane`
+- `retained action-surface closure`
+- `retained restricted theorem`
+- `exact structural theorem`
+- `exact algebraic identity`
+- `exact subderivation`
+- `retained support tool`
+- `retained support batch`
+- `exact support tool`
+- `exact support batch`
+- `exact boundary theorem`
+- `exact reduction theorem`
+- `exact current-stack theorem`
+- `exact current-bank theorem`
+- `exact current-bank no-go theorem`
+- `exact negative boundary`
+- `exact negative closeout`
+- `exact post-selector reduction`
+- `historical support / provenance`
+
+Do not mix a publication-capture disposition with a claim-strength label in
+the same cell unless the file explicitly allows hybrid narrative decisions.
+
+Short scope qualifiers may follow an accepted label when they state where the
+claim lives, for example:
+
+- `exact boundary theorem on open gate`
+- `exact reduction theorem outside main core`
+- `exact support theorem on the bounded charged-lepton package`
+- `exact support theorem with bounded downstream reuse`
+- `retained support theorem on the current package surface`
+
+Do not use `reviewed` or `reviewer-tested` as status labels. Those are review
+process adjectives, not controlled-vocabulary claim-strength labels. Carry
+review context in prose, placement, or authority notes instead.
+
+## Audit Lane Field Vocabulary
+
+These enums govern the audit ledger rows in
+`docs/audit/data/audit_ledger.json`, the rendered surface
+`docs/audit/AUDIT_LEDGER.md`, and the audit pipeline's derived outputs.
+Authors may write whatever status prose they need inside source notes,
+but the retained library is driven only by these auditor-owned fields.
+The audit-lane process and workflows live in `docs/audit/README.md`,
+`docs/audit/FRESH_LOOK_REQUIREMENTS.md`, and the audit-loop skill; the
+enums themselves live here.
+
+### `claim_type` (auditor-set)
+
+What kind of object the auditor says the row is. Exactly one of:
+
+- `positive_theorem`
+- `bounded_theorem`
+- `no_go`
+- `open_gate`
+- `decoration`
+- `meta`
+
+`meta` is used for non-claim infrastructure rows (audit-prep notes,
+synthesis catalogues, infrastructure documentation). `meta` rows must
+not promote to non-meta claim types via re-classification — these notes
+are by design out-of-band.
+
+### `claim_scope` (auditor-set)
+
+The auditor's short, citeable statement of exactly what was audited.
+Required for applied audits. Prose, not enum.
+
+### `audit_status` (auditor-set)
+
+What the audit found. Exactly one of:
+
+- `unaudited`
+- `audit_in_progress`
+- `audited_clean`
+- `audited_renaming`
+- `audited_conditional`
+- `audited_decoration`
+- `audited_failed`
+- `audited_numerical_match`
+
+### `effective_status` (derived by pipeline)
+
+Publication-facing status derived from `claim_type` plus
+`audit_status` plus the citation-graph closure of dependencies. The
+pipeline computes this; do not write to it directly. Possible values:
+
+- `retained` — `claim_type = positive_theorem` plus
+  `audit_status = audited_clean` plus retained-grade dependencies
+- `retained_no_go` — `claim_type = no_go` plus
+  `audit_status = audited_clean` plus retained-grade dependencies
+- `retained_bounded` — `claim_type = bounded_theorem` plus
+  `audit_status = audited_clean` plus retained-grade dependencies
+- `retained_pending_chain` — clean theorem/no-go/bounded row whose
+  upstream chain is not yet retained-grade
+- `open_gate` — clean open gate; blocks retained propagation
+- `decoration_under_<parent_claim_id>` — audited decoration whose
+  parent is retained-grade
+- `meta` — non-claim infrastructure rows
+- `audited_<failure_mode>` — terminal non-clean audit verdicts on active
+  claims
+
+Generated audit data must not contain legacy source-status authority
+fields. The graph builder may use old source-note status prose as a
+one-way migration hint when seeding `claim_type`, but the ledger, queue,
+prompt, and rendered audit surfaces are
+`claim_type` / `audit_status` / `effective_status` only. `support` is
+not a claim class.
+
+### Conditional repair classes
+
+For every `audited_conditional` result, the auditor must make the next
+repair lane sortable by prefixing `notes_for_re_audit_if_any` with
+exactly one of these seven classes:
+
+- `missing_dependency_edge` — a needed source note or authority exists
+  or is named, but is not wired as a direct dependency for the audited
+  claim
+- `dependency_not_retained` — a direct dependency exists but is not
+  retained grade
+- `missing_bridge_theorem` — the claim needs a new theorem for a
+  physical carrier, readout, unit map, boundary condition, sector
+  choice, normalization, or observable bridge
+- `scope_too_broad` — a clean bounded core exists, but the current claim
+  scope includes an unclosed extension
+- `runner_artifact_issue` — a runner, log, classifier, threshold,
+  import, or pass/fail accounting problem blocks closure despite
+  otherwise local scope
+- `compute_required` — closure needs a completed long run, sliced
+  runner, cached certificate, or independent derivation
+- `other` — use only when none of the above fits, and state why
+
+After the class, the auditor names the cheapest next repair action.
+
+### No-Go Discipline packet fields
+
+`no_go_discipline.status` records the mandatory structured N1-N8 stress-test outcome for negative boundaries. Exactly one of:
+
+- `PASS` — Every required N1-N8 record closes with no unresolved item; eligible to support a clean negative verdict.
+- `FAIL` — At least one required stress test remains open, incomplete, or mismatched; forbids audited_clean and requires an explicit demotion.
+
+When the status is `FAIL`, `no_go_discipline.demotion` is required and must be exactly one of:
+
+- `partial-attempt-with-named-untested-routes` — Records the tested work while naming alternative routes that remain untested.
+- `partial-narrowing` — Narrows the claim to the portion actually supported by the restricted packet.
+- `bounded-with-corrected-wall-count` — Retains only the bounded wall set that survives the independence audit.
+- `stretch-attempt-with-honest-residual` — Preserves a useful stretch attempt while stating the unresolved residual explicitly.
+
+Packetless legacy negative authority is invalidated with the controlled reason:
+
+- `no_go_discipline_packet_missing` — A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative.
+
+`negative_assertion_classes` is the mandatory auditor declaration on every incoming audit: the policy assertion classes the artifact makes, judged semantically from the full note (empty list when none). Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger. Allowed classes:
+
+- `no_go_result` — Asserts a no_go outcome: structurally closed, no route exists, no retained primitive supplies the target.
+- `stretch_attempt_negative` — Asserts a stretch-attempt negative outcome: the attempted route does not close.
+- `bounded_with_named_walls` — Asserts a bounded result conditional on named walls or admissions.
+- `derived_no_go_boundary` — Asserts a derived no-go boundary inside a positive theorem, such as a per-element identity that does not lift.
+- `conditional_wall_rationale` — An audit rationale that names a residual wall as the reason a verdict is conditional.
+
+### Independence tiers
+
+`auditor` must not equal `author`. Strength tiers for the `independence`
+field on an audit row:
+
+- `independence: weak` — same model family, or a session whose context
+  restrictions cannot be established. Permitted for diagnostic review,
+  not eligible to land `audited_clean`
+- `independence: fresh_context` — same model family, different
+  auditor/session identity, restricted-input audit. Same-family
+  clean-room tier for detecting context poisoning without claiming
+  cross-family review
+- `independence: cross_family` — different model family from the author
+- `independence: strong` — human auditor with no prior involvement in
+  the note
+- `independence: external` — off-repo reviewer with no project context;
+  the audit lane does not produce these on its own
+
+### `auditor_family`
+
+The model family of the auditor (e.g., `codex-gpt-5.5`, `codex-gpt-5.6`,
+`claude-opus-4.x`, `human`). Used to enforce cross-family independence.
+The designated cross-family auditor for this repo is the best available
+full Codex GPT model at maximum reasoning; see
+`docs/audit/FRESH_LOOK_REQUIREMENTS.md` for the auto-selection rule.
+
+### Load-bearing step classes
+
+When the auditor records the kind of step the load-bearing sentence /
+equation is, pick exactly one of:
+
+- `(A)` algebraic identity check on existing inputs
+- `(B)` cross-note input verification (reads value from another note)
+- `(C)` first-principles compute from the axiom (`Cl(3)` on `Z^3` plus
+  accepted normalizations) producing a number not present in any input
+- `(D)` external comparator check against PDG / lattice QCD / observation
+- `(E)` definition (introduces a new symbol)
+- `(F)` renaming (asserts symbol identity between two existing concepts)
+- `(G)` numerical match at a tuned input scale
+
+## Migration / Legacy Wording
+
+The repo is migrating from author-declared `retained` / `promoted`
+language to the audit-lane propose / ratify vocabulary. Source-note
+`Status` lines now use:
+
+- `proposed_retained` — author proposes retained-grade; awaits audit ratification
+- `proposed_promoted` — author proposes promoted-grade; awaits audit ratification
+
+The canonical audit-ratified surface is the tracked sharded ledger
+`docs/audit/data/ledger/`; the rendered
+`docs/audit/AUDIT_LEDGER.md` is a local pipeline-materialized cache.
+Legacy publication summaries may still use manuscript shorthand, but
+those rows should be read as proposed until the audit ledger marks
+them clean.
+
+New notes must use `proposed_retained` / `proposed_promoted` on author
+side and rely on the pipeline's `effective_status` for the
+publication-facing label. Do not bare-declare `retained` on a source
+note.
+
+## Historical Lane-Board Labels
+
+Use these only on Historical repo-map surfaces such as `LANE_STATUS_BOARD.md` and the lane registry.
+
+| Label | Use |
+|---|---|
+| `primary-retained` | current best-supported lane in the historical lane-board sense |
+| `retained-companion` | real, replayable companion lane, but not the single default entrypoint |
+| `open-blocker` | active blocker limiting the historical lane claim boundary |
+| `exploratory-reopen` | partially positive lane worth more work, but not promoted |
+| `historical-control` | historical comparison/control lane |
+| `historical-retained` | older retained major program, no longer the default |
+| `historical-bounded` | scientifically useful historical work, no longer the lead lane |
+| `historical-blocked` | diagnosed dead-end or mechanism-level blocker |
+
+## Historical Discovery-Log Labels
+
+Use these only on Historical discovery / paper-seed ledgers such as `POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`.
+
+| Label | Use |
+|---|---|
+| `retained` | historically important retained discovery |
+| `bounded-retained` | bounded positive result preserved on `main`, worth paper planning, but not a retained theorem-grade closure |
+| `methodological` | important measurement / methodology / audit contribution |
+| `negative-result` | strong structural no-go or narrowing result |
+| `exploratory-lead` | quantitatively interesting lead worth preserving, not yet frozen |
+
+## Column Rules
+
+- `PUBLICATION_MATRIX.md`
+  - use publication-capture dispositions for capture decisions
+  - `Current publication decision` cells should begin with one of `retained`, `promoted`, `bounded`, `open`, `frozen-out`; a short placement note may follow after a semicolon
+- `CLAIMS_TABLE.md, QUANTITATIVE_SUMMARY_TABLE.md, DERIVATION_ATLAS.md`
+  - use claim-strength / release labels
+  - accepted role-specialized variants may be used when they begin with the primary claim-strength label
+- `FULL_CLAIM_LEDGER.md`
+  - may begin with either a publication-capture disposition or a claim-strength label because it narrates package decisions row-by-row
+  - avoid ad hoc hybrids; if a row begins with one family, keep any second-family qualifier short and explanatory
+  - on mixed audit rows, the cell should begin with the primary label from the family being used; a short explanatory qualifier may follow after a semicolon
+  - accepted ledger-style hybrids include forms such as `promoted exact companion`, `promoted restricted theorem`, `promoted retained closure`, `promoted retained support batch`, and `promoted retained action-surface closure`
+- `docs/audit/AUDIT_LEDGER.md, docs/audit/data/audit_ledger.json`
+  - use audit-lane field vocabulary only
+  - rows are written by the audit pipeline / `apply_audit.py`; do not hand-edit
+- `LANE_STATUS_BOARD.md`
+  - use historical lane-board labels
+- `POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`
+  - use historical discovery-log labels
+
+Do not use row prose like `Retained ...` when the row status is `bounded-retained`.
+
+## Protocol Qualifiers
+
+These are qualifiers, not standalone status labels:
+
+- `review surface`
+- `current package grade`
+- `strict/native map`
+- `exact-target strict/native map`
+
+They can appear in prose or qualifier/import columns, but they should not replace the primary status label.
+
+## Evidence Terms
+
+Prefer these nouns:
+
+- `protocol`: a specific constructed experimental/computational setup
+- `witness`: a bounded positive signal on a stated protocol
+- `diagnostic`: an instrument/readout used for triage or debugging
+- `companion`: a bounded supporting lane attached to a stronger package
+- `closure`: use only when the load-bearing claim is actually closed
+
+Avoid vague upgrades like:
+
+- `proof` when the surface is only a witness or protocol
+- `closure` when the status is really `bounded-retained` or `conditional / support`
+
+## Hyphenation
+
+- prefer `observational-pin as a compound adjective`
+- prefer `observational pin only as a noun phrase`
+
+## Axiom Naming (out of scope for this doc)
+
+Axiom names (`A_min`, `Axiom 1`, `Axiom 2`, `Axiom*`) are **physics
+primitives**, not process vocabulary. Per
+`VOCABULARY_HYGIENE_DESIGN.md`, vocabulary
+is disjoint from physics. The canonical home for these names and the
+policy governing their use is:
+
+- `docs/MINIMAL_AXIOMS_2026-06-29.md` — the framework axioms themselves (Lattice, Qubit, Admissibility, Record, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-06-05.md`
+- `docs/audit/data/axiom_premise_nodes.json` — explicitly approved primitive premise nodes such as `scale_reference_primitive` and `kinetic_isotropy_primitive`
+- [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) — the binding rules around proposing extensions (`Axiom*`)
+
+Do not redefine, alias, or document these names here.
+
+## Stale-Narrative Archival Vocabulary
+
+When a wrapper note's narrative frame fails an audit, archival uses
+fixed path and content vocabulary.
+
+### Archive path
+
+`archive_unlanded/<cluster-tag>/` — the canonical recovery surface for failed-narrative source notes. The cluster-tag is a short stable noun
+phrase for the wrapper cluster (e.g. `koide-q-v6-cluster`, `route-2-exhaustion-failed-cluster`).
+
+### Salvage-note required content
+
+When a wrapper note fails but some sub-observations survive, the salvage
+note must state:
+
+- what failed (the wrapper's load-bearing claim that the audit invalidated)
+- what survived (the durable structural observations that remain)
+- the source wrapper's archive recovery path
+
+The salvage note must not restate the failed global conclusion.
+
+### Banned archival wording
+
+- describing the archived wrapper as "deprecated" or "obsolete" — imply a deliberate retirement decision; `audit_status: audited_failed` is the canonical record, no additional adjective needed
+- describing the archived wrapper as "still useful" — unless the sentence also states exactly for what it is still useful
+
+The associated workflow rules live in
+`docs/audit/STALE_NARRATIVE_POLICY.md`. Vocabulary lives here.
+
+## Branch-Entanglement / BMV Language
+
+Preferred terms for the current staggered branch-entanglement lane:
+
+- `branch-mediated entanglement`
+- `externally imposed geometry/source-branch protocol`
+- `fixed-adjacency two-branch protocol`
+- `branch-mediated entanglement witness`
+
+Only call something a `BMV witness` when the surface closes the stronger
+mediator-side requirements, including:
+
+- branch/mediator structure is generated by the relevant physical degrees of
+  freedom, not inserted externally
+- the mediator-null / LOCC-exclusion logic is implemented at the claimed level
+
+For the current live branch-entanglement package, say explicitly:
+
+- `not a self-generated mediator-branch BMV witness`
+- `not a mediator-null / LOCC-exclusion closure`
+
+Avoid as the primary descriptor on live package surfaces:
+
+- `toy`
+- `toy model`
+- `toy witness`
+- `BMV-like evidence`
+
+Those are acceptable only in historical commentary where the sentence also says
+what the protocol is missing.
+
+## Boundary-Law Language
+
+For the live boundary-law lane, prefer:
+
+- `Dirac-sea boundary-law probe`
+- `many-body-style boundary-law result`
+- `bounded boundary-law package`
+
+Avoid calling historical transfer-entropy scripts:
+
+- `area law`
+- `subsystem entanglement measurement`
+
+unless the measured object actually matches that wording.
+
+## Historical Retirement Language
+
+When an old runner is no longer live evidence, prefer:
+
+- `retired as evidence`
+- `historical / diagnostic`
+- `historical exploratory predecessor`
+
+Avoid ambiguous phrasing like:
+
+- `still useful`
+
+unless the sentence also states exactly for what it is still useful.
+
+## Paper-Facing Prose Voice
+
+The target voice for paper-facing prose, curated methodology prose, repo
+instructions, and new synthesis is Feynman-like in the useful sense:
+plain, physical, concrete, curious, and hard to fool. Do not imitate
+quirks or make the prose performative. Use the attitude.
+
+Do not rewrite raw captures or historical dated notes just to polish the
+voice; those files are evidence of the work as it happened.
+
+### The rule
+
+Explain what we are doing as if the reader is smart, skeptical, and busy.
+
+Say the simple physical question first. Then say what was checked. Then say
+what did not close.
+
+### Use this voice
+
+- Start from the physical question, not from the institutional framing.
+- Prefer short sentences when the idea is hard.
+- Explain why a result is surprising or useful in ordinary language before listing the machinery.
+- Put equations after the idea they express.
+- Say "we find", "we check", "we keep", and "we do not claim" when those are the honest verbs.
+- Treat negative results as information.
+- Keep the reader close to the object: lattice, operator, runner, eigenvalue, projector, source, bridge.
+
+### Avoid this voice
+
+- "broad exact backbone"
+- "methodological innovation"
+- "transformative framework"
+- "groundbreaking result"
+- "paradigm"
+- "comprehensive package" unless the sentence immediately says what is inside
+- "already closed" without naming the exact surface
+- any sentence whose main job is to sound important
+
+### Decoration-pruning tone
+
+When pruning algebraic decoration, the tone is "claim-surface management",
+not "criticism of the algebra itself". The identities are real; what's
+being pruned is the count of separately-retained rows. A package that
+presents 25 separate retained theorems where 3 distinct claims exist is
+harder to review, harder to falsify, and harder to take seriously as an
+external reader. Pruning improves signal density of the publication
+package. Use that framing in prose.
+
+### Paragraph test
+
+For each paragraph, ask:
+
+1. What is the question?
+2. What is the object being calculated?
+3. What is the support surface?
+4. What is still open?
+
+If the paragraph does not answer at least one of these, cut it or move
+it to a ledger.
+
+2026-07-17T21:14:44.635852Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+VERDICT: CONDITIONAL — predicted `audited_conditional` with repair class `missing_dependency_edge`; the negative-scope discipline itself is clean.
+
+1. The NOTE imports the parent’s rogue and contradiction, but frontmatter lists only:
+
+   > “upstream_dependencies:  
+   >   - minimal_axioms”
+
+   T3a explicitly says:
+
+   > “Extend the parent block's landed lexicographic hemisphere rogue `g`…”
+
+   and later:
+
+   > “the landed exact three-direction contradiction, reused at the same resolution.”
+
+   That is a load-bearing direct dependency. The trace gate simultaneously names the parent as block02’s `target_claim_id`, creating a lineage ambiguity: block02 supports the parent while importing its negative witness. The dependency must be declared, or the witness and contradiction made self-contained.
+
+2. The TRACE_GATE coins an unsanctioned backticked class:
+
+   > “The negative slice (T3a) is `negative_route_pruning` at the sub-claim level…”
+
+   `negative_route_pruning` is absent from the controlled vocabulary and is not one of the exempt YAML schema values. Treat it as descriptive prose or replace it with an accepted negative-assertion/status term.
+
+3. The certificate remains procedurally unfinished:
+
+   > “pending — to be replaced with the actual block02 panel outcome in `REVIEW_HISTORY.md` before the PR opens.”
+
+   This is not a scientific defect, but the current certificate is not closeout-ready.
+
+All other requested checks pass:
+
+- No bare `retained`, `promoted`, `ratified`, or `audited_*` status claim occurs in the NOTE. The closest wording is expressly defensive: “landing is not ratification.”
+- “scaled-projector family,” “paired subfamily,” and “axis-cancellation menu” are mathematically defined descriptive names, not newly coined governance tiers.
+- T3a supplies N1–N8 completely. The apparent overreach “the physical case is closed against forcing” occurs only inside the N7 steelman and is immediately rejected. Adopted negative wording stays equivalent to “the paired subfamily does not force.”
+- No family is selected and no primitive is adopted or registered; the NOTE repeatedly states those are conditional or underived.
+tokens used
+37,699
+VERDICT: CONDITIONAL — predicted `audited_conditional` with repair class `missing_dependency_edge`; the negative-scope discipline itself is clean.
+
+1. The NOTE imports the parent’s rogue and contradiction, but frontmatter lists only:
+
+   > “upstream_dependencies:  
+   >   - minimal_axioms”
+
+   T3a explicitly says:
+
+   > “Extend the parent block's landed lexicographic hemisphere rogue `g`…”
+
+   and later:
+
+   > “the landed exact three-direction contradiction, reused at the same resolution.”
+
+   That is a load-bearing direct dependency. The trace gate simultaneously names the parent as block02’s `target_claim_id`, creating a lineage ambiguity: block02 supports the parent while importing its negative witness. The dependency must be declared, or the witness and contradiction made self-contained.
+
+2. The TRACE_GATE coins an unsanctioned backticked class:
+
+   > “The negative slice (T3a) is `negative_route_pruning` at the sub-claim level…”
+
+   `negative_route_pruning` is absent from the controlled vocabulary and is not one of the exempt YAML schema values. Treat it as descriptive prose or replace it with an accepted negative-assertion/status term.
+
+3. The certificate remains procedurally unfinished:
+
+   > “pending — to be replaced with the actual block02 panel outcome in `REVIEW_HISTORY.md` before the PR opens.”
+
+   This is not a scientific defect, but the current certificate is not closeout-ready.
+
+All other requested checks pass:
+
+- No bare `retained`, `promoted`, `ratified`, or `audited_*` status claim occurs in the NOTE. The closest wording is expressly defensive: “landing is not ratification.”
+- “scaled-projector family,” “paired subfamily,” and “axis-cancellation menu” are mathematically defined descriptive names, not newly coined governance tiers.
+- T3a supplies N1–N8 completely. The apparent overreach “the physical case is closed against forcing” occurs only inside the N7 steelman and is immediately rejected. Adopted negative wording stays equivalent to “the paired subfamily does not force.”
+- No family is selected and no primitive is adopted or registered; the NOTE repeatedly states those are conditional or underived.

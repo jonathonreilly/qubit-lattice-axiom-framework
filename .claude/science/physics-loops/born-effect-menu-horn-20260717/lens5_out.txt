@@ -1,0 +1,1657 @@
+2026-07-17T19:32:15.038274Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f7190-afa2-7673-8c4e-e1e800a95202
+--------
+user
+You are a READ-ONLY adversarial review lens (overclaim). Do NOT create, edit, or delete any file. Do NOT touch git. Deliver your verdict as your final message only.
+
+Files to read (exactly these):
+1. docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md
+2. scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py
+
+Task: for EVERY strong word in the note — "forced", "necessary", "nothing", "zero", "every finite dimension", "exhaustively", "no literature bridge input", "kills", "voids" — decide whether (a) the runner certifies it, (b) the note's proof text carries it with the runner certifying the load-bearing identities, or (c) it is overclaimed. Specifically scrutinize: the T1 claim at general finite d versus runner instantiation at d in {2,4}; whether "classified exhaustively" in T3 is carried by the note's case analysis plus the gated lemmas; whether the claimed "Measured runner total" matches the actual runner; whether the Verification section's inventory matches the actual gate list; and whether any sentence claims more than bridge-conditional status. Run the runner once (python3, no file writes) to confirm the total.
+
+Output format: "VERDICT: <n> blocker(s), <m> major, <k> minor" then numbered findings each quoting the exact overclaiming sentence and the narrowest honest replacement. If clean, list the three strongest statements and why each is within its support.
+
+exec
+/bin/zsh -lc "sed -n '1,260p' docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md
+sed -n '1,320p' scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+---
+claim_id: born_form_effect_menu_sitewise_forcing_and_product_menu_boundary_bounded_theorem_note_2026-07-17
+claim_type: bounded_theorem
+claim_scope: "Bridge-conditional dichotomy on the menu grade of the graded-constraint hypothesis surface. Effect horn: if the assumed grading is defined on the effect algebra of a finite region with finite effect-partition menus eligible, the Born trace form is forced sitewise at every finite dimension >= 2, reproved from finite operator algebra with no literature bridge input; the landed one-site projective rogue extends to no such grading. Projective horn boundary: on a bonded pair, grading hypotheses restricted to product-projector menus do not force the trace form (constructive witness; exhaustive product-menu classification), so the landed composite route's entangled-menu strength is necessary at 2x2, not a convenience. The menu grade itself is underived; no horn is selected; the grading primitive is assumed here, not adopted."
+upstream_dependencies:
+  - minimal_axioms
+runner: scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py
+---
+
+# Born Form At Effect-Menu Grade: Sitewise Forcing With No Bridge Input, And The Product-Menu Boundary On The Projective Horn
+
+**Date:** 2026-07-17
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Scope:** bridge-conditional; the grading hypotheses are assumed here, not
+adopted, and the menu grade they are stated at is itself underived.
+**Audit-status authority:** independent audit lane only. This note sets no
+audit verdict and predicts none.
+**Primitive status:** no primitive is approved, registered, edited, or
+enlarged here. Every grading hypothesis below is conditional input only.
+**Primary runner:**
+[`scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py`](../scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py)
+**Runner cache:**
+[`logs/runner-cache/born_form_effect_menu_sitewise_forcing_2026_07_17.txt`](../logs/runner-cache/born_form_effect_menu_sitewise_forcing_2026_07_17.txt)
+
+## Purpose
+
+The landed composite bridge note
+[`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+fixes the form of a lawful graded constraint at projective-menu grade: its
+hypotheses H1-H3 place a weight function on projections, H4 makes every
+finite orthogonal resolution of a bonded-pair identity menu-eligible,
+including resolutions that contain entangled projections, and the trace form
+then follows through one named literature bridge input, stated there as
+"Gleason's theorem is imported as named classical mathematics."
+
+This note isolates the menu-grade dial in that hypothesis surface and proves
+one exact statement on each side of it:
+
+- **Effect horn.** If the same grading hypotheses are instead stated on the
+  effect algebra of a finite region — weights defined on all effects, finite
+  effect partitions of the identity menu-eligible — the Born trace form is
+  forced already at a single site, at every finite dimension `>= 2`, by a
+  five-step finite operator-algebra argument reproved here with no literature
+  bridge input. The landed one-site projective rogue assignment extends to no
+  grading of this kind, so the dimension-2 loophole is a feature of the
+  projective grade, not of the site dimension.
+- **Projective horn boundary.** On the bonded pair, the projective-grade
+  hypotheses restricted to product-projector menus force nothing: a
+  constructive product-form rogue normalizes every product-projector menu
+  (classified exhaustively) while restricting on one site to the landed
+  non-quadratic assignment. The entangled-menu strength of H4 is therefore
+  necessary for the landed composite route at `2 x 2`, not a convenience.
+
+Neither horn is selected. The axioms supply no menus at all; which resolutions
+of the identity are menus, and at which grade, is exactly the registration
+content the landed note declares as H4's specification burden. This note
+sharpens that burden into a two-sided exact statement and moves nothing else.
+
+## Authorities and Inputs
+
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+  the `Z^3` nearest-neighbor lattice, the one-site `M_2(C)` possibility
+  domain, and the Record sentences "Only records are readable. A readout
+  value is determined by record content alone." The axioms do not supply
+  probabilities, weights, menus, update rules, or record-production
+  processes, and the memo's Qualification states: "These axioms state only
+  their named primitive content. Further physical structure requires a
+  retained derivation or bridge, or explicit approved-primitive registration,
+  before use as a premise."
+- [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+  — the landed projective-horn route: hypotheses H1-H4, the one-site rogue
+  construction R1, the composite rescue R2/R3 through the Gleason bridge
+  input, and the declared specification burden. Cited as the projective-horn
+  authority; its Gleason import is not used by this note's effect-horn
+  results.
+- [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+  — the repo's reproven-from-primitives effect-representation argument on
+  `M_2(C)` under hypotheses (M1)-(M3), with the explicit reconstruction
+  `σ = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ]`. Theorem T1 below
+  restates that five-step argument dimension-generically and the runner
+  re-derives its load-bearing identities independently at dimensions 2 and 4.
+- Literature comparators (never proof inputs): Busch 2003 and
+  Caves-Fuchs-Manne-Renes 2004 for the effect-level representation theorem;
+  Wallach 2002 for the statement that unentangled frame functions determine
+  density operators only when every tensor factor has dimension at least 3.
+  The `2 x 2` product-menu boundary claimed here is proved by this note's own
+  constructive witness and classification, not by the comparator.
+
+## Hypotheses
+
+Let `Λ ⊂ Z^3` be a finite region, `H_Λ = ⊗_{x∈Λ} C^2`, `d = 2^{|Λ|}`, and
+`E(H_Λ) = { E : 0 ≤ E ≤ 1 }` the effect algebra of the region algebra. The
+landed projective-horn hypotheses H1-H3 place `w ≥ 0` on projections with
+`w(0) = 0`, `w(identity) = 1`, menu-normalization on finite orthogonal
+resolutions of the identity, additivity, and embedding-independence. The
+effect-grade restatement assumed by the effect horn is:
+
+**(E1) grading exists at effect grade.** There is `w : E(H_Λ) → [0,1]` with
+`w(0) = 0` and `w(1) = 1`. As at projective grade, `w` is a function of the
+effect alone; the value does not depend on which eligible menu embeds it.
+
+**(E2) finite effect menus are eligible.** For every finite family
+`{E_i} ⊂ E(H_Λ)` with `Σ_i E_i = 1`, the family is an eligible menu and
+`Σ_i w(E_i) = 1`.
+
+E1-E2 keep the exact shape of H1-H3 with "projection" replaced by "effect"
+and orthogonal resolutions replaced by finite effect partitions. They are
+neither implied by nor implied-in the projective-grade hypotheses on the same
+region: the domain and the menu family are both enlarged, and the enlarged
+menu family is a strictly stronger normalization demand. Only finite menus
+are used anywhere below; no countable-additivity clause is assumed. Whether
+the physical registration supplies menus at projective grade, at effect
+grade, at neither, or at some intermediate family is underived and is not
+decided here.
+
+## Results
+
+**T1 (effect horn: sitewise forcing at every finite dimension, no bridge
+input).** Assume E1-E2 on a finite region of dimension `d ≥ 2`. Then there is
+a unique density matrix `σ` with `w(E) = Tr(σE)` for every effect `E`. The
+proof is the five-step finite argument, dimension-generic:
+
+- **(A) Partial additivity.** For effects with `E_1 + E_2 ≤ 1`, apply E2 to
+  the menus `{E_1, E_2, 1 − E_1 − E_2}` and `{E_1 + E_2, 1 − E_1 − E_2}`:
+  subtracting, `w(E_1 + E_2) = w(E_1) + w(E_2)`. The two-outcome menu
+  `{E, 1 − E}` gives the complement law `w(E) + w(1 − E) = 1`.
+- **(B) Homogeneity.** Iterating (A) on the `(r+1)`-outcome menu
+  `{E/r, ..., E/r, 1 − E}` gives `w(E/r) = w(E)/r` and then `w(qE) = q w(E)`
+  for rational `q ∈ [0,1]`. Monotonicity follows from (A): if `E ≤ F` then
+  `F − E` is an effect and `w(F) = w(E) + w(F − E) ≥ w(E)`. For real
+  `t ∈ [0,1]` and rationals `q_1 < t < q_2`, the operator inequalities
+  `q_1 E ≤ tE ≤ q_2 E` then squeeze `w(tE)` between `q_1 w(E)` and
+  `q_2 w(E)`, so `w(tE) = t w(E)`.
+- **(C) Linear extension.** `Herm(M_d)` is a real vector space of dimension
+  `d^2` spanned by effects (the normalized identity-plus-generator elements
+  `(1 + B_k)/2` and `1` itself). Additivity plus homogeneity on the positive
+  cone extend `w` to a well-defined real-linear functional `F` on
+  `Herm(M_d)`: scale any positive `A` into the effect interval, set
+  `F(A) = s·w(A/s)` for `s` dominating the top eigenvalue (well-defined by
+  homogeneity), and define `F` on differences; the standard two-sided
+  cancellation argument shows representation-independence.
+- **(D) Trace representation.** The trace pairing `⟨X,Y⟩ = Tr(XY)` is a
+  nondegenerate real inner product on `Herm(M_d)`, so `F(H) = Tr(σH)` for a
+  unique Hermitian `σ`, reconstructed linearly from the `d^2` basis values of
+  `w`. At `d = 2` this is exactly the landed display
+  `σ = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ]`.
+- **(E) State property.** `w(1) = 1` gives `Tr σ = 1`; for every unit vector
+  `ψ` the rank-1 projector is an effect, so `⟨ψ|σ|ψ⟩ = w(P_ψ) ≥ 0`, hence
+  `σ ≥ 0`.
+
+No step uses `d ≥ 3`, a composite, a projective frame-function analysis, or
+any literature theorem. The runner re-derives the load-bearing identities of
+every step exactly at `d = 2` and `d = 4`.
+
+**T2 (effect horn: the landed rogue extends to no effect-grade grading).**
+The landed R1 assignment `g` — the lexicographic hemisphere rule on one-site
+rank-1 projections, which satisfies the projective-grade hypotheses on
+one-site binary menus — extends to no `w` satisfying E1-E2 on a single site.
+By T1 any such `w` is a trace form; every `2 x 2` trace form is affine in the
+Bloch direction, and the landed exact three-direction contradiction
+(`g(e_x) = g(e_z) = 1` with `g(1) = 1` forces the value `1/2` at
+`(e_x − e_z)/√2`, where `g` assigns `0`) refutes every trace-form
+restriction. The landed note's sentence "Three directions plus normalization
+refute every `2x2` trace form at once" is reused unchanged; what is new is
+the direction of use: at effect grade the refutation kills the rogue rather
+than the forcing, at one site, with no composite and no bridge input.
+
+**T3 (projective horn boundary: product-projector menus force nothing on the
+bonded pair).** Work on a bonded nearest-neighbor pair, `d = 4`, at
+projective grade, but with menus restricted to product-projector resolutions:
+finite families of nonzero projectors of the form `A ⊗ B` (`A`, `B` one-site
+projectors) summing to the pair identity. Then:
+
+- **(T3a) Classification.** Every product-projector menu is a tree menu: up
+  to swapping the two sites, it is `{1}`, or `{P(a)⊗1, P(−a)⊗1}`, or
+  `{P(a)⊗1, P(−a)⊗P(d), P(−a)⊗P(−d)}`, or
+  `{P(a)⊗P(b), P(a)⊗P(−b), P(−a)⊗P(b'), P(−a)⊗P(−b')}` — a first-site split
+  refined branchwise on the second site, or the site-swapped form. The proof
+  is a finite case analysis from two exact facts: one-site rank-1 projectors
+  are orthogonal exactly when their Bloch directions are antipodal, and
+  `(P(a)⊗P(b)) ⊥ (P(c)⊗P(d))` exactly when `a·c = −1` or `b·d = −1`. Three
+  pairwise-orthogonal rank-1 products cannot share one first-site direction
+  (three mutually antipodal second-site directions are impossible), a rank-3
+  complement is never a product projector (product-projector ranks on the
+  pair are 1, 2, 4), and a rank-1 product below `P(−a)⊗1` must carry first
+  slot `−a` (a rank-1 projector lies below a projector exactly when their
+  overlap trace is 1, and `Tr(P(−a)P(c)) = (1 − a·c)/2 = 1` forces
+  `c = −a`). The runner gates each fact and each case branch exactly.
+- **(T3b) Constructive rogue.** Define `W` on product projectors by the
+  product rule `W(A ⊗ B) = g_1(A) · g_2(B)`, with `g_1`, `g_2` lexicographic
+  hemisphere rules and `g_i(1) = 1`, `g_i(0) = 0`. Using
+  `g_i(n) + g_i(−n) = 1` (which the hemisphere rule satisfies exactly,
+  including on its tie set), `W` sums to 1 on every tree menu of either
+  rooting, hence on every product-projector menu by T3a. Its one-site
+  restriction `W(A ⊗ 1) = g_1(A)` is the landed rogue, which by the
+  three-direction contradiction is no trace form; since
+  `E ↦ Tr(ρ(E ⊗ 1))` is trace-affine for every pair state `ρ`, no density
+  matrix on the pair represents `W`.
+- **(T3c) Consequence.** At `2 x 2`, projective-grade hypotheses whose menu
+  family contains only product-projector resolutions do not force the Born
+  form. The landed composite route's H4 clause — menu-eligibility for
+  resolutions "that contain entangled projections", with the landed
+  refutation-seat finding "Without this full projection-measure strength a
+  partial menu assignment is not a frame function and Gleason does not
+  apply" — is therefore necessary at `2 x 2`, not a strengthening of
+  convenience. This agrees with the comparator statement (Wallach 2002) that
+  unentangled frame functions determine density operators only when every
+  factor has dimension at least 3; the `2 x 2` case claimed here is proved
+  natively by T3a-T3b. Entangled projections are not products (the runner
+  gates a Bell-projector Schmidt-rank witness), and `W` assigns them no
+  value, so T3 is consistent with, and does not touch, the landed R2/R3
+  forcing under full H4 strength.
+
+**T4 (the menu grade is the dial, and the attribution moves).** T1-T3
+together relocate the landed dimension-2 loophole: it is not a fact about the
+site, it is a fact about the projective grade. On the effect horn the form is
+fixed sitewise and the nearest-neighbor lattice pays for nothing in the
+form-fixing step — composites matter there only for values (joint states and
+their conditioning), which remain underived. On the projective horn the
+lattice composite plus full entangled-menu strength plus the Gleason bridge
+input remain exactly what the landed note says they are, and T3 shows the
+entangled-menu clause cannot be weakened to product menus at `2 x 2`. The
+landed attribution sentence "adjacency alone pays for nothing here without
+H4's strength" is thereby sharpened in both directions: with effect menus,
+adjacency is not needed for the form; with product-projective menus,
+adjacency plus the bridge input still do not suffice. Which grade the
+physical registration supplies is an exact open binary of the declared
+specification burden; this note registers it and selects nothing.
+
+**T5 (zero-information limit at a finite-group premise, effect horn).**
+Under the additional named premise that `w` is invariant under conjugation by
+the three one-site Pauli unitaries — a finite group, strictly weaker than the
+landed R4 premise of invariance under every unitary automorphism — the
+reconstruction of T1 forces `σ = 1/2` at one site: invariance transfers to
+`σ` by uniqueness, and the only `2 x 2` Hermitian commuting with all three
+Pauli conjugations is scalar. Weights are then uniform on binary menus,
+consistent with the landed uniform-on-orbits results. This premise is named
+here and not derived; "no conditioning records" alone does not supply it.
+
+## Relation To The Landed Effect-Level Surface
+
+The finite-region statement of
+[`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+reaches the same trace-form conclusion on `E(H_Λ)`, but its landed
+derivation routes the `|Λ| ≥ 2` case through the projective companion
+[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md),
+which imports Gleason's projective theorem as named standard mathematics,
+and it assumes countable additivity. T1 differs on exactly those two
+surfaces: the five-step argument is dimension-generic on the effect algebra,
+so no projective import enters at any `|Λ|`, and only finite menus are
+assumed. The legacy chain
+[`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`](BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md)
+carries separate inductive-limit and identification inputs that this note
+does not use and does not discharge. The orientation memo
+[`GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md`](GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md)
+is cited for orientation and scope discipline only and carries no premise
+weight here.
+
+## No-Go Discipline Gate
+#!/usr/bin/env python3
+"""Exact checks for the effect-menu Born-form and product-menu boundary note."""
+
+from pathlib import Path
+import sys
+
+import sympy as sp
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = ROOT / "docs" / "BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md"
+BRIDGE_PATH = ROOT / "docs" / "BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md"
+AXIOM_PATH = ROOT / "docs" / "MINIMAL_AXIOMS_2026-06-29.md"
+EFFECT_BRIDGE_PATH = ROOT / "docs" / "BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md"
+
+I2 = sp.eye(2)
+sx = sp.Matrix([[0, 1], [1, 0]])
+sy = sp.Matrix([[0, -sp.I], [sp.I, 0]])
+sz = sp.Matrix([[1, 0], [0, -1]])
+PAULIS = (sx, sy, sz)
+
+
+def normalize(text):
+    return " ".join(text.split())
+
+
+def matrix_is_zero(matrix):
+    return matrix.applyfunc(sp.simplify) == sp.zeros(*matrix.shape)
+
+
+def exact_eigenvalues(matrix):
+    return tuple(sp.simplify(value) for value in matrix.eigenvals())
+
+
+def is_effect(matrix):
+    if matrix.rows != matrix.cols or not matrix_is_zero(matrix - matrix.H):
+        return False
+    return all(
+        value.is_real is True
+        and value.is_nonnegative is True
+        and (sp.Integer(1) - value).is_nonnegative is True
+        for value in exact_eigenvalues(matrix)
+    )
+
+
+def has_negative_eigenvalue(matrix):
+    return any(value.is_negative is True for value in exact_eigenvalues(matrix))
+
+
+def valid_effect_menu(menu):
+    if not menu:
+        return False
+    dimension = menu[0].rows
+    return (
+        all(item.shape == (dimension, dimension) and is_effect(item) for item in menu)
+        and matrix_is_zero(sum(menu, sp.zeros(dimension)) - sp.eye(dimension))
+    )
+
+
+def bloch_projector(direction):
+    nx, ny, nz = direction
+    return (I2 + nx * sx + ny * sy + nz * sz) / 2
+
+
+def hemisphere_weight(direction):
+    nx, ny, nz = (sp.simplify(component) for component in direction)
+    for component in (nz, ny, nx):
+        if component == 0:
+            continue
+        if component.is_positive is True:
+            return sp.Integer(1)
+        if component.is_negative is True:
+            return sp.Integer(0)
+        raise ValueError("hemisphere sign is not exactly decidable")
+    return sp.Integer(0)
+
+
+def forced_trace_value(samples, target, trace_value=sp.Integer(1)):
+    a, d, x, y = sp.symbols("forced_a forced_d forced_x forced_y", real=True)
+    sigma = sp.Matrix([[a, x - sp.I * y], [x + sp.I * y, d]])
+    equations = [sp.Eq(sp.trace(sigma), trace_value)] + [
+        sp.Eq(sp.trace(sigma * bloch_projector(direction)), value)
+        for direction, value in samples
+    ]
+    solution_set = sp.linsolve(equations, (a, d, x, y))
+    if solution_set is sp.EmptySet or len(solution_set) != 1:
+        return None
+    solution = next(iter(solution_set))
+    substitutions = dict(zip((a, d, x, y), solution))
+    value = sp.simplify(
+        sp.trace(sigma * bloch_projector(target)).subs(substitutions)
+    )
+    if value.free_symbols.intersection({a, d, x, y}):
+        return None
+    return value
+
+
+def detects_trace_conflict(samples, target, assigned_value):
+    forced = forced_trace_value(samples, target)
+    return forced is not None and sp.simplify(forced - assigned_value) != 0
+
+
+class CheckRunner:
+    def __init__(self):
+        self.pass_count = 0
+        self.fail_count = 0
+
+    def check(self, gate_id, description, condition):
+        passed = bool(condition)
+        if passed:
+            self.pass_count += 1
+        else:
+            self.fail_count += 1
+        print(f"{'PASS' if passed else 'FAIL'}: {gate_id} {description}")
+
+    def total(self):
+        print(f"TOTAL: PASS={self.pass_count} FAIL={self.fail_count}")
+        return self.fail_count
+
+
+def main():
+    runner = CheckRunner()
+
+    # Group A - partial additivity from menu normalization (formal)
+    w1, w2, w12, wR = sp.symbols("w1 w2 w12 wR", real=True)
+    a1_solution = sp.solve(
+        [sp.Eq(w1 + w2 + wR, 1), sp.Eq(w12 + wR, 1)],
+        (w12, wR),
+        dict=True,
+    )
+    runner.check(
+        "A1",
+        "two menu normalizations eliminate to partial additivity",
+        len(a1_solution) == 1
+        and sp.simplify(a1_solution[0][w12] - w1 - w2) == 0,
+    )
+
+    wE, wComplement = sp.symbols("wE wComplement", real=True)
+    a2_solution = sp.solve([sp.Eq(wE + wComplement, 1)], wComplement, dict=True)
+    runner.check(
+        "A2",
+        "binary menu normalization gives the complement law",
+        len(a2_solution) == 1
+        and sp.simplify(a2_solution[0][wComplement] - (1 - wE)) == 0,
+    )
+
+    E1 = sp.diag(sp.Rational(1, 4), sp.Rational(1, 8))
+    E2 = sp.Matrix(
+        [
+            [sp.Rational(1, 4), sp.Rational(1, 8)],
+            [sp.Rational(1, 8), sp.Rational(1, 4)],
+        ]
+    )
+    R2 = I2 - E1 - E2
+    runner.check(
+        "A3-d2",
+        "noncommuting rational M2 effects have a positive menu remainder",
+        not matrix_is_zero(E1 * E2 - E2 * E1)
+        and all(is_effect(item) for item in (E1, E2, R2))
+        and valid_effect_menu((E1, E2, R2)),
+    )
+
+    E1_4 = sp.kronecker_product(E1, I2)
+    E2_4 = sp.kronecker_product(E2, I2)
+    R4 = sp.eye(4) - E1_4 - E2_4
+    runner.check(
+        "A3-d4",
+        "noncommuting rational M4 effects have a positive menu remainder",
+        not matrix_is_zero(E1_4 * E2_4 - E2_4 * E1_4)
+        and all(is_effect(item) for item in (E1_4, E2_4, R4))
+        and valid_effect_menu((E1_4, E2_4, R4)),
+    )
+
+    bad1 = sp.Rational(3, 4) * sp.diag(1, 0)
+    bad2 = sp.Rational(3, 4) * sp.diag(1, 0)
+    bad_remainder = I2 - bad1 - bad2
+    runner.check(
+        "A4",
+        "menu checker rejects a negative remainder eigenvalue",
+        is_effect(bad1)
+        and is_effect(bad2)
+        and has_negative_eigenvalue(bad_remainder)
+        and not valid_effect_menu((bad1, bad2, bad_remainder)),
+    )
+
+    # Group B - homogeneity and monotonicity
+    wE_b1, wPart, wComp_b1 = sp.symbols("wE_b1 wPart wComp_b1", real=True)
+    for divisor, gate_id in ((3, "B1-r3"), (5, "B1-r5")):
+        b1_solution = sp.solve(
+            [
+                sp.Eq(divisor * wPart + wComp_b1, 1),
+                sp.Eq(wE_b1 + wComp_b1, 1),
+            ],
+            (wPart, wComp_b1),
+            dict=True,
+        )
+        runner.check(
+            gate_id,
+            f"{divisor}-fold menu elimination gives rational homogeneity",
+            len(b1_solution) == 1
+            and sp.simplify(b1_solution[0][wPart] - wE_b1 / divisor) == 0,
+        )
+
+    wE_b2, wF_b2 = sp.symbols("wE_b2 wF_b2", real=True)
+    wDelta = sp.symbols("wDelta", nonnegative=True)
+    b2_solution = sp.solve(
+        [sp.Eq(wF_b2, wE_b2 + wDelta)], wF_b2, dict=True
+    )
+    E_mono = sp.diag(sp.Rational(1, 4), sp.Rational(1, 8))
+    F_mono = sp.diag(sp.Rational(1, 2), sp.Rational(1, 4))
+    b2_difference = sp.simplify(b2_solution[0][wF_b2] - wE_b2)
+    runner.check(
+        "B2",
+        "partial additivity and nonnegative difference weight imply monotonicity",
+        is_effect(E_mono)
+        and is_effect(F_mono)
+        and is_effect(F_mono - E_mono)
+        and b2_difference == wDelta
+        and b2_difference.is_nonnegative is True,
+    )
+
+    t = sp.symbols("t", real=True)
+    q1 = sp.Rational(1, 2)
+    q2 = sp.Rational(2, 3)
+    squeeze_effect = sp.diag(sp.Rational(1, 2), sp.Rational(1, 4))
+    lower_gap_eigenvalues = exact_eigenvalues((t - q1) * squeeze_effect)
+    upper_gap_eigenvalues = exact_eigenvalues((q2 - t) * squeeze_effect)
+
+    def nonnegative_between(value, lower, upper):
+        interval_nonempty = sp.reduce_inequalities(
+            [t > lower, t < upper], t
+        )
+        if interval_nonempty is sp.false or interval_nonempty == False:
+            return False
+        contradiction = sp.reduce_inequalities(
+            [t > lower, t < upper, value < 0], t
+        )
+        return contradiction is sp.false or contradiction == False
+
+    squeeze_spectrum_ok = all(
+        nonnegative_between(value, q1, q2)
+        for value in lower_gap_eigenvalues + upper_gap_eigenvalues
+    )
+    wE_b3, wt = sp.symbols("wE_b3 wt", real=True)
+    lower_weight, upper_weight = sp.symbols(
+        "lower_weight upper_weight", nonnegative=True
+    )
+    b3_solution = sp.solve(
+        [
+            sp.Eq(wt, q1 * wE_b3 + lower_weight),
+            sp.Eq(q2 * wE_b3, wt + upper_weight),
+        ],
+        (wE_b3, wt),
+        dict=True,
+    )
+    b3_lower_residual = sp.simplify(
+        (wt - q1 * wE_b3).subs(b3_solution[0])
+    )
+    b3_upper_residual = sp.simplify(
+        (q2 * wE_b3 - wt).subs(b3_solution[0])
+    )
+    runner.check(
+        "B3",
+        "exact operator squeeze and formal weight chain hold between 1/2 and 2/3",
+        squeeze_spectrum_ok
+        and b3_lower_residual == lower_weight
+        and b3_upper_residual == upper_weight
+        and b3_lower_residual.is_nonnegative is True
+        and b3_upper_residual.is_nonnegative is True,
+    )
+
+    toy_E = sp.diag(sp.Rational(1, 4), 0)
+    toy_F = sp.diag(sp.Rational(1, 2), 0)
+    toy_weights = {"E": sp.Rational(3, 4), "F": sp.Rational(1, 4)}
+    runner.check(
+        "B4",
+        "checker detects a non-monotone toy assignment on an effect chain",
+        is_effect(toy_E)
+        and is_effect(toy_F - toy_E)
+        and (toy_weights["F"] - toy_weights["E"]).is_negative is True,
+    )
+
+    # Group C - linear extension bases
+    basis2 = (I2,) + tuple((I2 + pauli) / 2 for pauli in PAULIS)
+    runner.check(
+        "C1-effects",
+        "the four M2 identity-plus-Pauli basis elements are effects",
+        len(basis2) == 4 and all(is_effect(item) for item in basis2),
+    )
+    gram2 = sp.Matrix(
+        [[sp.trace(left * right) for right in basis2] for left in basis2]
+    )
+    runner.check(
+        "C1-gram",
+        "the exact M2 effect-basis trace Gram matrix is nonsingular",
+        sp.simplify(gram2.det()) != 0,
+    )
+
+    paulis_with_identity = (I2,) + PAULIS
+    pauli_products4 = tuple(
+        sp.kronecker_product(left, right)
+        for left_index, left in enumerate(paulis_with_identity)
+        for right_index, right in enumerate(paulis_with_identity)
+        if (left_index, right_index) != (0, 0)
+    )
+    basis4 = (sp.eye(4),) + tuple(
+        (sp.eye(4) + product) / 2 for product in pauli_products4
+    )
+    runner.check(
+        "C2-effects",
+        "the sixteen M4 identity-plus-Pauli-product basis elements are effects",
+        len(basis4) == 16 and all(is_effect(item) for item in basis4),
+    )
+    gram4 = sp.Matrix(
+        [[sp.trace(left * right) for right in basis4] for left in basis4]
+    )
+    runner.check(
+        "C2-gram",
+        "the exact M4 effect-basis trace Gram matrix is nonsingular",
+        sp.simplify(gram4.det()) != 0,
+
+2026-07-17T19:32:24.841114Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "sed -n '261,620p' docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md
+sed -n '321,760p' scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+
+T3 is a bounded negative boundary ("product-projector menus force nothing at
+`2 x 2`"), so the negative-claim checklist is answered for it:
+
+- **N1 route inventory (five routes against T3):** (1) coarse rank-2 product
+  menus added — ATTEMPTED, the rogue normalizes them (T3a covers ranks 1, 2,
+  4); (2) non-tree product menus that might constrain further — RULED OUT by
+  the T3a classification; (3) countable product-projector partitions — a
+  finite-dimensional identity admits at most `d` nonzero mutually orthogonal
+  projectors, so countable adds nothing at `d = 4`; (4) menus mixing
+  projective structure with non-projective effects (classical mixtures of
+  projective menus and other intermediate families) — OUTSIDE T3's scope by
+  construction and named untested; the comparator literature suggests such
+  families can force the form already at one site, which is exactly why T3
+  is scoped to product-projector resolutions only; (5) larger regions
+  (`2 x 2 x 2` product menus) — untested here; the comparator statement says
+  qubit factors never suffice, but no native claim is made beyond the bonded
+  pair.
+- **N2 wall independence:** T3 names one wall (product-menu insufficiency at
+  `2 x 2`); no second wall is presented.
+- **N3 hidden-wall scan:** T3 assumes the projective-grade hypotheses of the
+  landed note restricted to a smaller menu family; the restriction is the
+  claim, not a hidden condition. The tie-set convention inside the hemisphere
+  rule is inherited verbatim from the landed R1 construction and gated.
+- **N4 residual matching:** the only cited prior negative is the landed R1
+  rogue existence, reused at the same resolution (one-site binary menus and
+  their product refinements).
+- **N5 rhetoric audit:** the phrase "force nothing" is scoped to the stated
+  menu family on the stated pair; T3c states the exact family and dimension.
+- **N6 partial-closure scan:** the closure path is named, not denied — full
+  H4 strength (landed) or effect-grade menus (T1); T3 forecloses neither.
+- **N7 steelman:** "product menus are the physically natural family, so T3
+  kills the projective horn." Reply: T3 proves insufficiency of that family,
+  not naturalness; which family the registration supplies is exactly the
+  declared open binary, and the landed composite route under full H4
+  strength is untouched.
+- **N8 cross-cycle echo:** the structurally similar prior wall — one-site
+  dimension-2 rogue existence — was retired on the composite by H4 strength
+  (landed R3) and is retired sitewise at effect grade by T2 here; both
+  mechanisms are cited, and neither retires T3's product-menu wall.
+
+## Non-Claims
+
+- Does **not** claim any grading exists, at any grade; E1-E2 and the
+  projective-grade hypotheses are conditional input only.
+- Does **not** select a menu grade, register or modify any primitive, or
+  derive menu-eligibility from the axioms; the axioms supply no menus.
+- Does **not** derive weight values, record conditioning, rates, dynamics,
+  update rules, orientation, or scale.
+- Does **not** touch the landed composite route's conclusions under full H4
+  strength, and does **not** re-prove or use Gleason's projective theorem.
+- Does **not** set an audit verdict or close the probability wall; landing is
+  not ratification, and independent audit remains required.
+
+## Verification
+
+The primary runner re-derives every load-bearing identity exactly (sympy,
+rational/symbolic arithmetic, single process, dimensions 2 and 4 only):
+the menu bookkeeping behind (A) and (B) as formal linear elimination; the
+effect-cone witnesses (including a noncommuting pair); the monotonicity and
+squeeze inequalities on exact witnesses with a non-monotone rejector; the
+`d = 2` and `d = 4` effect bases with nondegenerate trace Gram matrices; the
+reconstruction identity `w(E) = Tr(σE)` on symbolic effects, matching the
+landed Bloch display at `d = 2`; the state property; the exact
+three-direction refutation of every `2 x 2` trace form and its T2 corollary
+logic; the antipodal-orthogonality and product-orthogonality lemmas; each
+case branch of the T3a classification (including the three-antipodal
+impossibility, the rank-3 non-product fact, and the below-`P(−a)⊗1`
+forcing); the hemisphere complement law including tie-set witnesses; the
+product-rogue normalization on both tree rootings and coarse menus; the
+trace-affinity of pair-state restrictions; the Bell-projector Schmidt-rank
+witness; the Pauli-commutant computation behind T5; and needle checks that
+pin the quoted sentences of the axiom memo and the two landed notes named
+above. Mutation checks (one load-bearing mutation per check family,
+reverted) are recorded in the review history and PR body.
+
+Measured runner total after final verification:
+`TOTAL: PASS=54 FAIL=0`.
+    )
+
+    A = sp.Matrix(
+        [[1, sp.Rational(1, 4)], [sp.Rational(1, 4), sp.Rational(1, 2)]]
+    )
+    D = sp.diag(sp.Rational(1, 2), sp.Rational(1, 2))
+    B = sp.diag(sp.Rational(1, 2), sp.Rational(1, 4))
+    C = A + D - B
+    scale = sp.Integer(2)
+    wA, wB, wC, wD, wSum = sp.symbols("wA wB wC wD wSum", real=True)
+    c3_solution = sp.solve(
+        [sp.Eq(wA + wD, wSum), sp.Eq(wC + wB, wSum)],
+        (wA, wC),
+        dict=True,
+    )
+    cancellation_target = sp.simplify(
+        (scale * wA + scale * wD - scale * wC - scale * wB).subs(
+            c3_solution[0]
+        )
+    )
+    runner.check(
+        "C3",
+        "scaled effect additivity makes positive-cone cancellation well-defined",
+        matrix_is_zero(A + D - C - B)
+        and all(is_effect(item / scale) for item in (A, B, C, D))
+        and is_effect((A + D) / scale)
+        and is_effect((C + B) / scale)
+        and cancellation_target == 0,
+    )
+
+    # Group D - trace representation and reconstruction
+    w_I = sp.Integer(1)
+    w_x, w_y, w_z = sp.symbols("w_x w_y w_z", real=True)
+    sigma00, sigma11, sigma_re, sigma_im = sp.symbols(
+        "sigma00 sigma11 sigma_re sigma_im", real=True
+    )
+    sigma_unknown = sp.Matrix(
+        [
+            [sigma00, sigma_re - sp.I * sigma_im],
+            [sigma_re + sp.I * sigma_im, sigma11],
+        ]
+    )
+    basis_values2 = (w_I, w_x, w_y, w_z)
+    d1_solution = sp.solve(
+        [
+            sp.Eq(sp.trace(sigma_unknown * basis), value)
+            for basis, value in zip(basis2, basis_values2)
+        ],
+        (sigma00, sigma11, sigma_re, sigma_im),
+        dict=True,
+    )
+    sigma2_symbolic = sigma_unknown.subs(d1_solution[0]).applyfunc(sp.simplify)
+    landed_sigma2 = sp.Rational(1, 2) * (
+        I2
+        + (2 * w_x - 1) * sx
+        + (2 * w_y - 1) * sy
+        + (2 * w_z - 1) * sz
+    )
+    runner.check(
+        "D1",
+        "M2 trace-pairing solve equals the landed Bloch reconstruction",
+        len(d1_solution) == 1
+        and matrix_is_zero(sigma2_symbolic - landed_sigma2),
+    )
+
+    e0, ex, ey, ez = sp.symbols("e0 ex ey ez", real=True)
+    generic_E2 = e0 * I2 + ex * sx + ey * sy + ez * sz
+    generic_E2_from_effect_basis = (
+        (e0 - ex - ey - ez) * basis2[0]
+        + 2 * ex * basis2[1]
+        + 2 * ey * basis2[2]
+        + 2 * ez * basis2[3]
+    )
+    extension_E2 = (
+        (e0 - ex - ey - ez) * w_I
+        + 2 * ex * w_x
+        + 2 * ey * w_y
+        + 2 * ez * w_z
+    )
+    runner.check(
+        "D2",
+        "M2 trace pairing reproduces the generic effect-basis linear extension",
+        matrix_is_zero(generic_E2 - generic_E2_from_effect_basis)
+        and sp.simplify(sp.trace(sigma2_symbolic * generic_E2) - extension_E2)
+        == 0,
+    )
+
+    basis_values4 = sp.Matrix(
+        [sp.Integer(1)]
+        + list(sp.symbols("w4_1:16", real=True))
+    )
+    sigma4_coefficients = gram4.inv() * basis_values4
+    sigma4_symbolic = sum(
+        (
+            sigma4_coefficients[index] * basis4[index]
+            for index in range(len(basis4))
+        ),
+        sp.zeros(4),
+    ).applyfunc(sp.simplify)
+    h4_coefficients = sp.symbols("h4_0:16", real=True)
+    pauli_basis4 = (sp.eye(4),) + pauli_products4
+    generic_E4 = sum(
+        (
+            coefficient * basis
+            for coefficient, basis in zip(h4_coefficients, pauli_basis4)
+        ),
+        sp.zeros(4),
+    )
+    generic_E4_from_effect_basis = (
+        (h4_coefficients[0] - sum(h4_coefficients[1:])) * basis4[0]
+        + sum(
+            (
+                2 * h4_coefficients[index] * basis4[index]
+                for index in range(1, 16)
+            ),
+            sp.zeros(4),
+        )
+    )
+    extension_E4 = (
+        (h4_coefficients[0] - sum(h4_coefficients[1:])) * basis_values4[0]
+        + sum(
+            2 * h4_coefficients[index] * basis_values4[index]
+            for index in range(1, 16)
+        )
+    )
+    reconstructed_values4 = sp.Matrix(
+        [sp.trace(sigma4_symbolic * basis) for basis in basis4]
+    )
+    runner.check(
+        "D3",
+        "M4 sixteen-value solve reproduces a generic Pauli-product extension",
+        matrix_is_zero(gram4 * sigma4_coefficients - basis_values4)
+        and matrix_is_zero(generic_E4 - generic_E4_from_effect_basis)
+        and matrix_is_zero(reconstructed_values4 - basis_values4)
+        and sp.simplify(sp.trace(sigma4_symbolic * generic_E4) - extension_E4)
+        == 0,
+    )
+
+    runner.check(
+        "D4-d2",
+        "M2 Gram nonsingularity forces uniqueness of the trace representative",
+        gram2.det() != 0 and gram2.nullspace() == [],
+    )
+    runner.check(
+        "D4-d4",
+        "M4 Gram nonsingularity forces uniqueness of the trace representative",
+        gram4.det() != 0 and gram4.nullspace() == [],
+    )
+
+    # Group E - state property
+    runner.check(
+        "E1",
+        "the reconstructed identity value one gives trace one in both dimensions",
+        sp.simplify(sp.trace(sigma2_symbolic) - 1) == 0
+        and sp.simplify(sp.trace(sigma4_symbolic) - 1) == 0,
+    )
+
+    alpha, beta = sp.symbols("alpha beta", complex=True)
+    psi = sp.Matrix([alpha, beta])
+    psi_projector = psi * psi.H
+    psi_quadratic = (psi.H * sigma2_symbolic * psi)[0]
+    runner.check(
+        "E2",
+        "the projector trace equals the symbolic bra-ket quadratic form",
+        sp.simplify(
+            sp.expand_complex(
+                sp.trace(sigma2_symbolic * psi_projector) - psi_quadratic
+            )
+        )
+        == 0,
+    )
+
+    state_a, state_d, state_x, state_y = sp.symbols(
+        "state_a state_d state_x state_y", real=True
+    )
+    generic_sigma2 = sp.Matrix(
+        [
+            [state_a, state_x - sp.I * state_y],
+            [state_x + sp.I * state_y, state_d],
+        ]
+    )
+    named_vectors = (
+        sp.Matrix([1, 0]),
+        sp.Matrix([0, 1]),
+        sp.Matrix([1, 1]),
+        sp.Matrix([1, sp.I]),
+    )
+    named_quadratics = tuple(
+        sp.expand((vector.H * generic_sigma2 * vector)[0])
+        for vector in named_vectors
+    )
+    named_expected = (
+        state_a,
+        state_d,
+        state_a + state_d + 2 * state_x,
+        state_a + state_d + 2 * state_y,
+    )
+    q_axis_a, q_axis_d, q_real, q_imag = sp.symbols(
+        "q_axis_a q_axis_d q_real q_imag", nonnegative=True
+    )
+    named_solution = sp.solve(
+        [
+            sp.Eq(state_a, q_axis_a),
+            sp.Eq(state_d, q_axis_d),
+            sp.Eq(state_a + state_d + 2 * state_x, q_real),
+            sp.Eq(state_a + state_d + 2 * state_y, q_imag),
+        ],
+        (state_a, state_d, state_x, state_y),
+        dict=True,
+    )
+    real_lower_residual = sp.simplify(
+        (state_x + (state_a + state_d) / 2).subs(named_solution[0])
+    )
+    imag_lower_residual = sp.simplify(
+        (state_y + (state_a + state_d) / 2).subs(named_solution[0])
+    )
+    runner.check(
+        "E3-vectors",
+        "the named four-vector principal-minor scaffolding gives exact lower bounds",
+        all(
+            sp.simplify(actual - expected) == 0
+            for actual, expected in zip(named_quadratics, named_expected)
+        )
+        and real_lower_residual == q_real / 2
+        and imag_lower_residual == q_imag / 2
+        and real_lower_residual.is_nonnegative is True
+        and imag_lower_residual.is_nonnegative is True,
+    )
+
+    r_state, p_state, q_state = sp.symbols("r_state p_state q_state", real=True)
+    sigma_witness_family = sp.Matrix(
+        [[sp.Rational(1, 2), r_state], [r_state, sp.Rational(1, 2)]]
+    )
+    family_eigenvalues = set(exact_eigenvalues(sigma_witness_family))
+    family_quadratic = sp.expand(
+        (
+            sp.Matrix([p_state, q_state]).T
+            * sigma_witness_family
+            * sp.Matrix([p_state, q_state])
+        )[0]
+    )
+    family_decomposition = (
+        (sp.Rational(1, 2) + r_state) * (p_state + q_state) ** 2 / 2
+        + (sp.Rational(1, 2) - r_state) * (p_state - q_state) ** 2 / 2
+    )
+    eigenvalue_region = sp.reduce_inequalities(
+        [
+            sp.Rational(1, 2) + r_state >= 0,
+            sp.Rational(1, 2) - r_state >= 0,
+        ],
+        r_state,
+    )
+    expected_region = sp.And(
+        r_state >= -sp.Rational(1, 2), r_state <= sp.Rational(1, 2)
+    )
+    runner.check(
+        "E3-family",
+        "witness-family quadratic nonnegativity is exactly the PSD eigenvalue criterion",
+        family_eigenvalues
+        == {
+            sp.Rational(1, 2) + r_state,
+            sp.Rational(1, 2) - r_state,
+        }
+        and sp.simplify(family_quadratic - family_decomposition) == 0
+        and sp.simplify(sp.Equivalent(eigenvalue_region, expected_region)) is sp.true
+        and sp.simplify(
+            sigma_witness_family.det()
+            - (sp.Rational(1, 4) - r_state**2)
+        )
+        == 0
+        and sp.simplify(
+            family_quadratic.subs({p_state: 1, q_state: 1})
+            - 2 * (sp.Rational(1, 2) + r_state)
+        )
+        == 0
+        and sp.simplify(
+            family_quadratic.subs({p_state: 1, q_state: -1})
+            - 2 * (sp.Rational(1, 2) - r_state)
+        )
+        == 0,
+    )
+
+    # Group T2 - rogue non-extension at one site
+    e_x = (sp.Integer(1), sp.Integer(0), sp.Integer(0))
+    e_z = (sp.Integer(0), sp.Integer(0), sp.Integer(1))
+    inv_sqrt2 = sp.sqrt(2) / 2
+    u_direction = (inv_sqrt2, sp.Integer(0), -inv_sqrt2)
+    runner.check(
+        "T2a",
+        "lexicographic hemisphere values respect the nz-ny-nx tuple order",
+        hemisphere_weight(e_x) == 1
+        and hemisphere_weight(e_z) == 1
+        and hemisphere_weight(u_direction) == 0,
+    )
+
+    rogue_samples = ((e_x, sp.Integer(1)), (e_z, sp.Integer(1)))
+    rogue_forced_u = forced_trace_value(rogue_samples, u_direction)
+    runner.check(
+        "T2b",
+        "normalization and two rogue values force trace value one-half at u",
+        rogue_forced_u == sp.Rational(1, 2)
+        and detects_trace_conflict(
+            rogue_samples, u_direction, hemisphere_weight(u_direction)
+        ),
+    )
+
+    def affine_z_weight(direction):
+        return sp.simplify((1 + direction[2]) / 2)
+
+    affine_samples = (
+        (e_x, affine_z_weight(e_x)),
+        (e_z, affine_z_weight(e_z)),
+    )
+    affine_forced_u = forced_trace_value(affine_samples, u_direction)
+    affine_sigma = (I2 + sz) / 2
+    runner.check(
+        "T2c",
+        "affine Bloch control remains consistent with its forced trace value",
+        affine_forced_u == affine_z_weight(u_direction)
+        and not detects_trace_conflict(
+            affine_samples, u_direction, affine_z_weight(u_direction)
+        )
+        and all(
+            sp.simplify(
+                sp.trace(affine_sigma * bloch_projector(direction))
+                - affine_z_weight(direction)
+            )
+            == 0
+            for direction in (e_x, e_z, u_direction)
+        ),
+    )
+
+    complement_directions = (
+        (
+            "T2d-1",
+            (
+                sp.Rational(3, 5),
+                sp.Integer(0),
+                sp.Rational(4, 5),
+            ),
+        ),
+        ("T2d-2", (sp.Integer(0), sp.Integer(1), sp.Integer(0))),
+        ("T2d-3", (sp.Integer(1), sp.Integer(0), sp.Integer(0))),
+        ("T2d-4", (sp.Integer(0), sp.Integer(0), sp.Integer(1))),
+    )
+    for gate_id, direction in complement_directions:
+        antipode = tuple(-component for component in direction)
+        runner.check(
+            gate_id,
+            "hemisphere rule complements an exact antipodal tie-aware pair",
+            sp.simplify(sum(component**2 for component in direction) - 1) == 0
+            and hemisphere_weight(direction) + hemisphere_weight(antipode) == 1,
+        )
+
+    # Group T3 - product-menu boundary on the bonded pair
+    ax, ay, az, cx, cy, cz = sp.symbols("ax ay az cx cy cz", real=True)
+    a_vector = sp.Matrix([ax, ay, az])
+    c_vector = sp.Matrix([cx, cy, cz])
+    a_direction = (ax, ay, az)
+    c_direction = (cx, cy, cz)
+    dot_ac = (a_vector.T * c_vector)[0]
+    norm_a = (a_vector.T * a_vector)[0]
+    norm_c = (c_vector.T * c_vector)[0]
+    single_overlap = sp.expand(
+        sp.trace(bloch_projector(a_direction) * bloch_projector(c_direction))
+    )
+    antipode_deltas = tuple(a_vector[index] + c_vector[index] for index in range(3))
+    antipode_sum_squares = sp.expand(sum(delta**2 for delta in antipode_deltas))
+    sum_of_squares_certificate = (
+        sp.simplify(antipode_sum_squares - (norm_a + norm_c + 2 * dot_ac))
+        == 0
+        and all(delta.is_real is True for delta in antipode_deltas)
+        and all(
+            sum(
+                other_delta**2
+                for other_index, other_delta in enumerate(antipode_deltas)
+                if other_index != index
+            ).is_nonnegative
+            is True
+            for index in range(len(antipode_deltas))
+        )
+    )
+    runner.check(
+        "T3a",
+        "single-site overlap and real sum-of-squares force the antipode",
+        sp.simplify(single_overlap - (1 + dot_ac) / 2) == 0
+        and sum_of_squares_certificate
+        and sp.simplify(sp.Integer(1) + sp.Integer(1) + 2 * (-1)) == 0
+        and all(
+            sp.simplify(
+                delta.subs({cx: -ax, cy: -ay, cz: -az}, simultaneous=True)
+            )
+            == 0
+            for delta in antipode_deltas
+        ),
+    )
+
+    bx, by, bz, dx, dy, dz = sp.symbols("bx by bz dx dy dz", real=True)
+    b_vector = sp.Matrix([bx, by, bz])
+    d_vector = sp.Matrix([dx, dy, dz])
+    b_direction = (bx, by, bz)
+    d_direction = (dx, dy, dz)
+    dot_bd = (b_vector.T * d_vector)[0]
+    product_overlap = sp.expand(
+        sp.trace(
+            sp.kronecker_product(
+                bloch_projector(a_direction), bloch_projector(b_direction)
+            )
+            * sp.kronecker_product(
+                bloch_projector(c_direction), bloch_projector(d_direction)
+            )
+        )
+    )
+    runner.check(
+        "T3b",
+        "product-projector overlap factorizes into the two Bloch overlaps",
+        sp.simplify(product_overlap - (1 + dot_ac) * (1 + dot_bd) / 4)
+        == 0,
+    )
+
+    b1x, b1y, b1z = sp.symbols("b1x b1y b1z", real=True)
+    b2x, b2y, b2z = sp.symbols("b2x b2y b2z", real=True)
+    b3x, b3y, b3z = sp.symbols("b3x b3y b3z", real=True)
+    b1 = sp.Matrix([b1x, b1y, b1z])
+    b2 = sp.Matrix([b2x, b2y, b2z])
+    b3 = sp.Matrix([b3x, b3y, b3z])
+    forced_antipodes = {
+        b2x: -b1x,
+        b2y: -b1y,
+        b2z: -b1z,
+        b3x: -b1x,
+        b3y: -b1y,
+        b3z: -b1z,
+    }
+    forced_b2b3 = sp.expand((b2.T * b3)[0].subs(forced_antipodes))
+    b1_norm = sp.expand((b1.T * b1)[0])
+    forced_contradiction = sp.expand(forced_b2b3 + 1).subs(
+        {b1z**2: 1 - b1x**2 - b1y**2}
+    )
+    runner.check(
+
+2026-07-17T19:32:28.852290Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "sed -n '761,1200p' scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+        "T3c",
+        "three mutually antipodal unit directions are inconsistent",
+        sp.simplify(forced_b2b3 - b1_norm) == 0
+        and sp.simplify(forced_contradiction - 2) == 0,
+    )
+
+    product_ranks = {
+        left_rank * right_rank
+        for left_rank in (0, 1, 2)
+        for right_rank in (0, 1, 2)
+    }
+    runner.check(
+        "T3d",
+        "product-projector ranks are exactly 0, 1, 2, and 4",
+        product_ranks == {0, 1, 2, 4} and 3 not in product_ranks,
+    )
+
+    negative_a_direction = (-ax, -ay, -az)
+    below_overlap = sp.expand(
+        sp.trace(
+            sp.kronecker_product(
+                bloch_projector(negative_a_direction), I2
+            )
+            * sp.kronecker_product(
+                bloch_projector(c_direction), bloch_projector(d_direction)
+            )
+        )
+    )
+    overlap_parameter = sp.symbols("overlap_parameter", real=True)
+    unit_overlap_solution = sp.solve(
+        sp.Eq((1 - overlap_parameter) / 2, 1), overlap_parameter
+    )
+    runner.check(
+        "T3e",
+        "a rank-one product below P(-a) tensor I has first slot -a",
+        sp.simplify(below_overlap - (1 - dot_ac) / 2) == 0
+        and unit_overlap_solution == [-1]
+        and sum_of_squares_certificate,
+    )
+
+    exact_a = e_z
+    exact_b = e_x
+    mixed_rank_two_sum = (
+        sp.kronecker_product(bloch_projector(exact_a), I2)
+        + sp.kronecker_product(I2, bloch_projector(exact_b))
+    )
+    a_perp = sp.Matrix([0, 1])
+    b_perp = sp.Matrix([1, -1]) / sp.sqrt(2)
+    joint_perp = sp.kronecker_product(a_perp, b_perp)
+    symbolic_mixed_sum = (
+        sp.kronecker_product(bloch_projector(a_direction), I2)
+        + sp.kronecker_product(I2, bloch_projector(b_direction))
+    )
+    norm_b = (b_vector.T * b_vector)[0]
+    generic_square_trace = sp.expand(sp.trace(symbolic_mixed_sum**2))
+    runner.check(
+        "T3f",
+        "mixed rank-two sum is not identity by a null vector and square trace",
+        matrix_is_zero(mixed_rank_two_sum * joint_perp)
+        and not matrix_is_zero(sp.eye(4) * joint_perp)
+        and sp.trace(mixed_rank_two_sum**2) == 6
+        and sp.trace(sp.eye(4) ** 2) == 4
+        and sp.simplify(generic_square_trace - (4 + norm_a + norm_b)) == 0,
+    )
+
+    (
+        g1a,
+        g1na,
+        g1d,
+        g1nd,
+        g2b,
+        g2nb,
+        g2c,
+        g2nc,
+        g2d,
+        g2nd,
+    ) = sp.symbols(
+        "g1a g1na g1d g1nd g2b g2nb g2c g2nc g2d g2nd", real=True
+    )
+    complement_solution = sp.solve(
+        [
+            sp.Eq(g1a + g1na, 1),
+            sp.Eq(g1d + g1nd, 1),
+            sp.Eq(g2b + g2nb, 1),
+            sp.Eq(g2c + g2nc, 1),
+            sp.Eq(g2d + g2nd, 1),
+        ],
+        (g1na, g1nd, g2nb, g2nc, g2nd),
+        dict=True,
+    )[0]
+
+    site1_rooted = (
+        g1a * g2b + g1a * g2nb + g1na * g2c + g1na * g2nc
+    )
+    site2_rooted = (
+        g1a * g2b + g1na * g2b + g1d * g2nb + g1nd * g2nb
+    )
+    runner.check(
+        "T3g-tree4",
+        "complement identities normalize both rooted four-leaf tree menus",
+        sp.simplify(site1_rooted.subs(complement_solution) - 1) == 0
+        and sp.simplify(site2_rooted.subs(complement_solution) - 1) == 0,
+    )
+
+    site1_211 = g1a + g1na * g2d + g1na * g2nd
+    site2_211 = g2b + g1d * g2nb + g1nd * g2nb
+    runner.check(
+        "T3g-211",
+        "complement identities normalize both site-swapped 2-1-1 menus",
+        sp.simplify(site1_211.subs(complement_solution) - 1) == 0
+        and sp.simplify(site2_211.subs(complement_solution) - 1) == 0,
+    )
+
+    site1_22 = g1a + g1na
+    site2_22 = g2b + g2nb
+    trivial_menu = sp.Integer(1) * sp.Integer(1)
+    runner.check(
+        "T3g-coarse",
+        "complement identities normalize both 2-2 menus and the identity menu",
+        sp.simplify(site1_22.subs(complement_solution) - 1) == 0
+        and sp.simplify(site2_22.subs(complement_solution) - 1) == 0
+        and trivial_menu == 1,
+    )
+
+    rho_diagonal = sp.symbols("rho_d0:4", real=True)
+    rho_pair = sp.zeros(4)
+    for index in range(4):
+        rho_pair[index, index] = rho_diagonal[index]
+    for row in range(4):
+        for column in range(row + 1, 4):
+            real_part, imag_part = sp.symbols(
+                f"rho_r{row}{column} rho_i{row}{column}", real=True
+            )
+            rho_pair[row, column] = real_part - sp.I * imag_part
+            rho_pair[column, row] = real_part + sp.I * imag_part
+    nx, ny, nz = sp.symbols("nx ny nz", real=True)
+    n_direction = (nx, ny, nz)
+    pair_marginal_components = tuple(
+        sp.trace(rho_pair * sp.kronecker_product(pauli, I2))
+        for pauli in PAULIS
+    )
+    pair_affine_left = sp.trace(
+        rho_pair * sp.kronecker_product(bloch_projector(n_direction), I2)
+    )
+    pair_affine_right = (
+        sp.trace(rho_pair)
+        + nx * pair_marginal_components[0]
+        + ny * pair_marginal_components[1]
+        + nz * pair_marginal_components[2]
+    ) / 2
+    pair_forced_u = forced_trace_value(rogue_samples, u_direction)
+    product_rogue_u = hemisphere_weight(u_direction) * sp.Integer(1)
+    runner.check(
+        "T3h",
+        "pair-state restriction is affine and conflicts with the product rogue",
+        matrix_is_zero(rho_pair - rho_pair.H)
+        and sp.simplify(pair_affine_left - pair_affine_right) == 0
+        and pair_forced_u == sp.Rational(1, 2)
+        and product_rogue_u == 0
+        and pair_forced_u != product_rogue_u,
+    )
+
+    bell_vector = sp.Matrix([1, 0, 0, 1]) / sp.sqrt(2)
+    bell_projector = bell_vector * bell_vector.H
+    bell_coefficient_matrix = sp.Matrix(
+        [[bell_vector[0], bell_vector[1]], [bell_vector[2], bell_vector[3]]]
+    )
+    runner.check(
+        "T3i",
+        "Bell projection is entangled and therefore outside product menus",
+        bell_projector.rank() == 1
+        and bell_coefficient_matrix.rank() == 2
+        and sp.simplify(bell_coefficient_matrix.det() - sp.Rational(1, 2))
+        == 0,
+    )
+
+    # Group T5 - finite-group zero-information limit
+    invariance_equations = []
+    for pauli in PAULIS:
+        invariance_equations.extend(
+            list(pauli * generic_sigma2 * pauli - generic_sigma2)
+        )
+    invariant_solution = sp.solve(
+        invariance_equations,
+        (state_a, state_d, state_x, state_y),
+        dict=True,
+    )
+    invariant_sigma = generic_sigma2.subs(invariant_solution[0]).applyfunc(
+        sp.simplify
+    )
+    invariant_scalar = sp.simplify(sp.trace(invariant_sigma) / 2)
+    runner.check(
+        "T5a",
+        "Pauli-conjugation invariance forces a symbolic Hermitian matrix scalar",
+        len(invariant_solution) == 1
+        and matrix_is_zero(invariant_sigma - invariant_scalar * I2),
+    )
+
+    invariant_free_symbols = tuple(
+        sorted(invariant_sigma.free_symbols, key=lambda symbol: symbol.name)
+    )
+    trace_one_solution = sp.solve(
+        [sp.Eq(sp.trace(invariant_sigma), 1)],
+        invariant_free_symbols,
+        dict=True,
+    )
+    normalized_invariant_sigma = invariant_sigma.subs(
+        trace_one_solution[0]
+    ).applyfunc(sp.simplify)
+    symbolic_binary_weights = (
+        sp.simplify(
+            sp.trace(normalized_invariant_sigma * bloch_projector(n_direction))
+        ),
+        sp.simplify(
+            sp.trace(
+                normalized_invariant_sigma
+                * bloch_projector(tuple(-component for component in n_direction))
+            )
+        ),
+    )
+    runner.check(
+        "T5b",
+        "trace normalization gives I/2 and uniform embedded binary weights",
+        len(invariant_free_symbols) == 1
+        and len(trace_one_solution) == 1
+        and matrix_is_zero(normalized_invariant_sigma - I2 / 2)
+        and sp.trace(normalized_invariant_sigma) == 1
+        and symbolic_binary_weights
+        == (sp.Rational(1, 2), sp.Rational(1, 2)),
+    )
+
+    # Group N - exact document needle checks
+    note_text = NOTE_PATH.read_text(encoding="utf-8")
+    bridge_text = BRIDGE_PATH.read_text(encoding="utf-8")
+    axiom_text = AXIOM_PATH.read_text(encoding="utf-8")
+    effect_bridge_text = EFFECT_BRIDGE_PATH.read_text(encoding="utf-8")
+    note_normalized = normalize(note_text)
+    bridge_normalized = normalize(bridge_text)
+    axiom_normalized = normalize(axiom_text)
+    effect_bridge_normalized = normalize(effect_bridge_text)
+
+    runner.check(
+        "N1",
+        "axiom memo pins record readability to record content alone",
+        "Only records are readable. A readout value is determined by record content alone."
+        in axiom_normalized,
+    )
+    runner.check(
+        "N2",
+        "axiom memo limits the axioms to their named primitive content",
+        "These axioms state only their named primitive content."
+        in axiom_normalized,
+    )
+    runner.check(
+        "N3",
+        "landed bridge identifies Gleason as imported classical mathematics",
+        "Gleason's theorem is imported as named classical mathematics."
+        in bridge_normalized,
+    )
+    runner.check(
+        "N4",
+        "landed bridge pins the exact three-direction trace-form refutation",
+        "Three directions plus normalization refute every `2x2` trace form at once"
+        in bridge_normalized,
+    )
+    runner.check(
+        "N5",
+        "landed bridge pins the full projection-measure strength warning",
+        "Without this full projection-measure strength a partial menu assignment is not a frame function and Gleason does not apply"
+        in bridge_normalized,
+    )
+    runner.check(
+        "N6",
+        "landed bridge pins the adjacency and H4 attribution",
+        "adjacency alone pays for nothing here without H4's strength"
+        in bridge_normalized,
+    )
+    runner.check(
+        "N7",
+        "effect bridge pins the landed Bloch coefficient with exact Unicode minus",
+        "(2 m(P_a^+) − 1)" in effect_bridge_normalized,
+    )
+    runner.check(
+        "N8-claim",
+        "source note pins its exact claim identifier",
+        "claim_id: born_form_effect_menu_sitewise_forcing_and_product_menu_boundary_bounded_theorem_note_2026-07-17"
+        in note_text,
+    )
+    runner.check(
+        "N8-hypotheses",
+        "source note contains both effect-grade hypothesis labels",
+        "**(E1)" in note_text and "**(E2)" in note_text,
+    )
+    runner.check(
+        "N8-no-bridge",
+        "source note pins the no-literature-bridge-input scope",
+        "no literature bridge input" in note_normalized,
+    )
+
+    failures = runner.total()
+    return 1 if failures else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
+2026-07-17T19:32:32.656251Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc 'python3 scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+2026-07-17T19:32:38.313902Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+ succeeded in 924ms:
+PASS: A1 two menu normalizations eliminate to partial additivity
+PASS: A2 binary menu normalization gives the complement law
+PASS: A3-d2 noncommuting rational M2 effects have a positive menu remainder
+PASS: A3-d4 noncommuting rational M4 effects have a positive menu remainder
+PASS: A4 menu checker rejects a negative remainder eigenvalue
+PASS: B1-r3 3-fold menu elimination gives rational homogeneity
+PASS: B1-r5 5-fold menu elimination gives rational homogeneity
+PASS: B2 partial additivity and nonnegative difference weight imply monotonicity
+PASS: B3 exact operator squeeze and formal weight chain hold between 1/2 and 2/3
+PASS: B4 checker detects a non-monotone toy assignment on an effect chain
+PASS: C1-effects the four M2 identity-plus-Pauli basis elements are effects
+PASS: C1-gram the exact M2 effect-basis trace Gram matrix is nonsingular
+PASS: C2-effects the sixteen M4 identity-plus-Pauli-product basis elements are effects
+PASS: C2-gram the exact M4 effect-basis trace Gram matrix is nonsingular
+PASS: C3 scaled effect additivity makes positive-cone cancellation well-defined
+PASS: D1 M2 trace-pairing solve equals the landed Bloch reconstruction
+PASS: D2 M2 trace pairing reproduces the generic effect-basis linear extension
+PASS: D3 M4 sixteen-value solve reproduces a generic Pauli-product extension
+PASS: D4-d2 M2 Gram nonsingularity forces uniqueness of the trace representative
+PASS: D4-d4 M4 Gram nonsingularity forces uniqueness of the trace representative
+PASS: E1 the reconstructed identity value one gives trace one in both dimensions
+PASS: E2 the projector trace equals the symbolic bra-ket quadratic form
+PASS: E3-vectors the named four-vector principal-minor scaffolding gives exact lower bounds
+PASS: E3-family witness-family quadratic nonnegativity is exactly the PSD eigenvalue criterion
+PASS: T2a lexicographic hemisphere values respect the nz-ny-nx tuple order
+PASS: T2b normalization and two rogue values force trace value one-half at u
+PASS: T2c affine Bloch control remains consistent with its forced trace value
+PASS: T2d-1 hemisphere rule complements an exact antipodal tie-aware pair
+PASS: T2d-2 hemisphere rule complements an exact antipodal tie-aware pair
+PASS: T2d-3 hemisphere rule complements an exact antipodal tie-aware pair
+PASS: T2d-4 hemisphere rule complements an exact antipodal tie-aware pair
+PASS: T3a single-site overlap and real sum-of-squares force the antipode
+PASS: T3b product-projector overlap factorizes into the two Bloch overlaps
+PASS: T3c three mutually antipodal unit directions are inconsistent
+PASS: T3d product-projector ranks are exactly 0, 1, 2, and 4
+PASS: T3e a rank-one product below P(-a) tensor I has first slot -a
+PASS: T3f mixed rank-two sum is not identity by a null vector and square trace
+PASS: T3g-tree4 complement identities normalize both rooted four-leaf tree menus
+PASS: T3g-211 complement identities normalize both site-swapped 2-1-1 menus
+PASS: T3g-coarse complement identities normalize both 2-2 menus and the identity menu
+PASS: T3h pair-state restriction is affine and conflicts with the product rogue
+PASS: T3i Bell projection is entangled and therefore outside product menus
+PASS: T5a Pauli-conjugation invariance forces a symbolic Hermitian matrix scalar
+PASS: T5b trace normalization gives I/2 and uniform embedded binary weights
+PASS: N1 axiom memo pins record readability to record content alone
+PASS: N2 axiom memo limits the axioms to their named primitive content
+PASS: N3 landed bridge identifies Gleason as imported classical mathematics
+PASS: N4 landed bridge pins the exact three-direction trace-form refutation
+PASS: N5 landed bridge pins the full projection-measure strength warning
+PASS: N6 landed bridge pins the adjacency and H4 attribution
+PASS: N7 effect bridge pins the landed Bloch coefficient with exact Unicode minus
+PASS: N8-claim source note pins its exact claim identifier
+PASS: N8-hypotheses source note contains both effect-grade hypothesis labels
+PASS: N8-no-bridge source note pins the no-literature-bridge-input scope
+TOTAL: PASS=54 FAIL=0
+
+exec
+/bin/zsh -lc "rg -n -i -C 1 'forced|necessary|nothing|zero|every finite dimension|exhaustively|no literature bridge input|kills|voids' docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+3-claim_type: bounded_theorem
+4:claim_scope: "Bridge-conditional dichotomy on the menu grade of the graded-constraint hypothesis surface. Effect horn: if the assumed grading is defined on the effect algebra of a finite region with finite effect-partition menus eligible, the Born trace form is forced sitewise at every finite dimension >= 2, reproved from finite operator algebra with no literature bridge input; the landed one-site projective rogue extends to no such grading. Projective horn boundary: on a bonded pair, grading hypotheses restricted to product-projector menus do not force the trace form (constructive witness; exhaustive product-menu classification), so the landed composite route's entangled-menu strength is necessary at 2x2, not a convenience. The menu grade itself is underived; no horn is selected; the grading primitive is assumed here, not adopted."
+5-upstream_dependencies:
+--
+42-  effect partitions of the identity menu-eligible — the Born trace form is
+43:  forced already at a single site, at every finite dimension `>= 2`, by a
+44-  five-step finite operator-algebra argument reproved here with no literature
+--
+48-- **Projective horn boundary.** On the bonded pair, the projective-grade
+49:  hypotheses restricted to product-projector menus force nothing: a
+50-  constructive product-form rogue normalizes every product-projector menu
+51:  (classified exhaustively) while restricting on one site to the landed
+52-  non-quadratic assignment. The entangled-menu strength of H4 is therefore
+53:  necessary for the landed composite route at `2 x 2`, not a convenience.
+54-
+--
+57-content the landed note declares as H4's specification burden. This note
+58:sharpens that burden into a two-sided exact statement and moves nothing else.
+59-
+--
+118-
+119:**T1 (effect horn: sitewise forcing at every finite dimension, no bridge
+120-input).** Assume E1-E2 on a finite region of dimension `d ≥ 2`. Then there is
+--
+165-refute every `2x2` trace form at once" is reused unchanged; what is new is
+166:the direction of use: at effect grade the refutation kills the rogue rather
+167-than the forcing, at one site, with no composite and no bridge input.
+168-
+169:**T3 (projective horn boundary: product-projector menus force nothing on the
+170-bonded pair).** Work on a bonded nearest-neighbor pair, `d = 4`, at
+171-projective grade, but with menus restricted to product-projector resolutions:
+172:finite families of nonzero projectors of the form `A ⊗ B` (`A`, `B` one-site
+173-projectors) summing to the pair identity. Then:
+--
+205-  partial menu assignment is not a frame function and Gleason does not
+206:  apply" — is therefore necessary at `2 x 2`, not a strengthening of
+207-  convenience. This agrees with the comparator statement (Wallach 2002) that
+--
+217-site, it is a fact about the projective grade. On the effect horn the form is
+218:fixed sitewise and the nearest-neighbor lattice pays for nothing in the
+219-form-fixing step — composites matter there only for values (joint states and
+--
+223-entangled-menu clause cannot be weakened to product menus at `2 x 2`. The
+224:landed attribution sentence "adjacency alone pays for nothing here without
+225-H4's strength" is thereby sharpened in both directions: with effect menus,
+--
+228-physical registration supplies is an exact open binary of the declared
+229:specification burden; this note registers it and selects nothing.
+230-
+231:**T5 (zero-information limit at a finite-group premise, effect horn).**
+232-Under the additional named premise that `w` is invariant under conjugation by
+--
+261-
+262:T3 is a bounded negative boundary ("product-projector menus force nothing at
+263-`2 x 2`"), so the negative-claim checklist is answered for it:
+--
+268-  the T3a classification; (3) countable product-projector partitions — a
+269:  finite-dimensional identity admits at most `d` nonzero mutually orthogonal
+270:  projectors, so countable adds nothing at `d = 4`; (4) menus mixing
+271-  projective structure with non-projective effects (classical mixtures of
+--
+287-  their product refinements).
+288:- **N5 rhetoric audit:** the phrase "force nothing" is scoped to the stated
+289-  menu family on the stated pair; T3c states the exact family and dimension.
+--
+292-- **N7 steelman:** "product menus are the physically natural family, so T3
+293:  kills the projective horn." Reply: T3 proves insufficiency of that family,
+294-  not naturalness; which family the registration supplies is exactly the
+
+2026-07-17T19:32:44.461295Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+VERDICT: 0 blocker(s), 1 major, 2 minor
+
+1. **Major — “necessary” exceeds the demonstrated boundary (c).**
+
+   Exact sentence: “The entangled-menu strength of H4 is therefore necessary for the landed composite route at `2 x 2`, not a convenience.”
+
+   T3 proves only that product-projector menus are insufficient. It does not exclude intermediate projective-menu families or establish full H4 as minimal.
+
+   Narrowest honest replacement: “The product-only witness shows that H4 cannot be weakened all the way to product-projector menus at `2 x 2`; it does not establish that full H4, or any particular entangled-menu family, is minimal.”
+
+2. **Minor — “force nothing” is literally too broad (c).**
+
+   Exact sentence: “On the bonded pair, the projective-grade hypotheses restricted to product-projector menus force nothing: a constructive product-form rogue normalizes every product-projector menu (classified exhaustively) while restricting on one site to the landed non-quadratic assignment.”
+
+   Those hypotheses do impose normalization and complement constraints; the witness establishes only failure to force the Born form.
+
+   Narrowest honest replacement: “On the bonded pair, the projective-grade hypotheses restricted to product-projector menus do not force the Born trace form: a constructive product-form rogue normalizes every product-projector menu while restricting on one site to the landed non-quadratic assignment.”
+
+3. **Minor — “exact open binary” contradicts the note’s admitted intermediate possibilities (c).**
+
+   Exact sentence: “Which grade the physical registration supplies is an exact open binary of the declared specification burden; this note registers it and selects nothing.”
+
+   Earlier text expressly allows projective grade, effect grade, neither, or an intermediate menu family.
+
+   Narrowest honest replacement: “Which menu family the physical registration supplies remains an open specification burden; this note records two bounded horns and selects no grade.”
+
+Strong-word disposition:
+
+- **“forced”**: (b) for T1 at general finite \(d\); the dimension-generic proof carries it, while the runner checks only \(d=2,4\). The specific T2 and T5 forcing identities are (a).
+- **“necessary”**: (c), as above.
+- **“nothing”**: (c) only in “force nothing”; “countable adds nothing,” “pays for nothing,” and “selects nothing” are carried by their stated scopes. The steelman “kills the projective horn” is explicitly rejected.
+- **“zero”**: the mathematical content—\(\sigma=I/2\) under the additional Pauli-invariance premise—is (a); the note does not derive that premise from absence of records.
+- **“every finite dimension”**: (b), not (a). The proof is dimension-generic; the runner is explicitly limited to \(2\) and \(4\).
+- **“exhaustively”**: (b). The rank partition/case analysis is carried by the note, with T3a–T3f gating its load-bearing algebraic lemmas and T3g gating all listed menu forms.
+- **“no literature bridge input”**: (b). T1’s finite-dimensional proof supplies the argument; runner N8 only pins the wording.
+- **“kills”**: (b) for the T2 rogue non-extension; the other occurrence is a rejected steelman.
+- **“voids”**: absent from the note.
+
+The executed runner reported exactly `TOTAL: PASS=54 FAIL=0`. Its gate families match the Verification inventory, subject to the note’s explicit limitation to dimensions \(2\) and \(4\); it does not itself certify the universal-\(d\) quantifier. No sentence adopts a grading primitive or selects a horn unconditionally.
+tokens used
+41,423
+VERDICT: 0 blocker(s), 1 major, 2 minor
+
+1. **Major — “necessary” exceeds the demonstrated boundary (c).**
+
+   Exact sentence: “The entangled-menu strength of H4 is therefore necessary for the landed composite route at `2 x 2`, not a convenience.”
+
+   T3 proves only that product-projector menus are insufficient. It does not exclude intermediate projective-menu families or establish full H4 as minimal.
+
+   Narrowest honest replacement: “The product-only witness shows that H4 cannot be weakened all the way to product-projector menus at `2 x 2`; it does not establish that full H4, or any particular entangled-menu family, is minimal.”
+
+2. **Minor — “force nothing” is literally too broad (c).**
+
+   Exact sentence: “On the bonded pair, the projective-grade hypotheses restricted to product-projector menus force nothing: a constructive product-form rogue normalizes every product-projector menu (classified exhaustively) while restricting on one site to the landed non-quadratic assignment.”
+
+   Those hypotheses do impose normalization and complement constraints; the witness establishes only failure to force the Born form.
+
+   Narrowest honest replacement: “On the bonded pair, the projective-grade hypotheses restricted to product-projector menus do not force the Born trace form: a constructive product-form rogue normalizes every product-projector menu while restricting on one site to the landed non-quadratic assignment.”
+
+3. **Minor — “exact open binary” contradicts the note’s admitted intermediate possibilities (c).**
+
+   Exact sentence: “Which grade the physical registration supplies is an exact open binary of the declared specification burden; this note registers it and selects nothing.”
+
+   Earlier text expressly allows projective grade, effect grade, neither, or an intermediate menu family.
+
+   Narrowest honest replacement: “Which menu family the physical registration supplies remains an open specification burden; this note records two bounded horns and selects no grade.”
+
+Strong-word disposition:
+
+- **“forced”**: (b) for T1 at general finite \(d\); the dimension-generic proof carries it, while the runner checks only \(d=2,4\). The specific T2 and T5 forcing identities are (a).
+- **“necessary”**: (c), as above.
+- **“nothing”**: (c) only in “force nothing”; “countable adds nothing,” “pays for nothing,” and “selects nothing” are carried by their stated scopes. The steelman “kills the projective horn” is explicitly rejected.
+- **“zero”**: the mathematical content—\(\sigma=I/2\) under the additional Pauli-invariance premise—is (a); the note does not derive that premise from absence of records.
+- **“every finite dimension”**: (b), not (a). The proof is dimension-generic; the runner is explicitly limited to \(2\) and \(4\).
+- **“exhaustively”**: (b). The rank partition/case analysis is carried by the note, with T3a–T3f gating its load-bearing algebraic lemmas and T3g gating all listed menu forms.
+- **“no literature bridge input”**: (b). T1’s finite-dimensional proof supplies the argument; runner N8 only pins the wording.
+- **“kills”**: (b) for the T2 rogue non-extension; the other occurrence is a rejected steelman.
+- **“voids”**: absent from the note.
+
+The executed runner reported exactly `TOTAL: PASS=54 FAIL=0`. Its gate families match the Verification inventory, subject to the note’s explicit limitation to dimensions \(2\) and \(4\); it does not itself certify the universal-\(d\) quantifier. No sentence adopts a grading primitive or selects a horn unconditionally.

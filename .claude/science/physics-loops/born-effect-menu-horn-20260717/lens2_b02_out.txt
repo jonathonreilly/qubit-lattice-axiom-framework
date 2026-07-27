@@ -1,0 +1,1620 @@
+2026-07-17T21:14:12.844524Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f71ee-096f-7ab2-a774-6294d2203703
+--------
+user
+READ-ONLY adversarial review lens (licensing/quotes), block02. No file writes, no git. Verdict = final message.
+Read exactly: (1) docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md (2) docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md (3) docs/MINIMAL_AXIOMS_2026-06-29.md (4) docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md
+Verify every quotation in file 1 verbatim against its source; every characterization of the parent block (its E1-E2, its T-numbering, its named-untested item, its rogue construction and three-direction refutation) against the parent's own text; frontmatter coherence (claim_id vs filename, runner path, claim_scope vs body); every markdown link target exists as written. Flag any characterization stronger than the source wording.
+Output: "VERDICT: ..." + numbered findings with exact quote mismatches; if clean, the three most load-bearing checks performed.
+
+codex
+I’ll inspect only the four named documents, then validate file 1’s quotations, parent-block characterizations, frontmatter, and written link targets without modifying the workspace or invoking git.
+exec
+/bin/zsh -c 'nl -ba docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md
+nl -ba docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md
+nl -ba docs/MINIMAL_AXIOMS_2026-06-29.md
+nl -ba docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: born_form_scaled_projector_menu_family_sitewise_forcing_and_paired_menu_boundary_bounded_theorem_note_2026-07-17
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional thinning of the effect-menu horn at one site: on the scaled-projector family (nonnegative multiples of one-site rank-1 projectors and of the identity), menu normalization plus effect-functionality forces the Born trace form on that domain at a single M_2(C) site, with no literature bridge input, no composite, finite menus only, and no genuinely unsharp effect used anywhere — the forcing already runs on scaled rank-1 menus alone. Boundary: the paired subfamily (equal-weight antipodal pairs plus identity multiples) does not force — the landed one-site rogue extends to it explicitly — so some menu outside the paired subfamily is necessary. The family sits strictly between the projective and full-effect menu families; whether it or any smaller family is minimal is not established; no menu grade is selected; the grading primitive is assumed here, not adopted."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	runner: scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py
+     8	---
+     9	
+    10	# Born Form On The Scaled-Projector Menu Family: Sitewise Forcing With No Bridge Input, And The Paired-Menu Boundary
+    11	
+    12	**Date:** 2026-07-17
+    13	**Type:** bounded_theorem
+    14	**Claim type:** bounded_theorem
+    15	**Scope:** bridge-conditional; the grading hypotheses are assumed here, not
+    16	adopted; the menu family the physical registration supplies is underived.
+    17	**Audit-status authority:** independent audit lane only. This note sets no
+    18	audit verdict and predicts none.
+    19	**Primitive status:** no primitive is approved, registered, edited, or
+    20	enlarged here. Every grading hypothesis below is conditional input only.
+    21	**Primary runner:**
+    22	[`scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py`](../scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py)
+    23	**Runner cache:**
+    24	[`logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt`](../logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt)
+    25	
+    26	## Purpose
+    27	
+    28	The parent block
+    29	[`BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md`](BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+    30	proved sitewise Born forcing at effect grade (its E1-E2: weights on all
+    31	effects, every finite effect partition eligible) and left the space between
+    32	the poles open, naming "classical mixtures of projective menus and other
+    33	intermediate families" as untested, with the hypothesis-surface sentence:
+    34	"Whether the physical registration supplies menus at projective grade, at
+    35	effect grade, at neither, or at some intermediate family is underived and is
+    36	not decided here."
+    37	
+    38	This note closes one named piece of that gap with an exactly delimited
+    39	intermediate family and a two-sided statement:
+    40	
+    41	- **Forcing.** On the scaled-projector family — effects that are nonnegative
+    42	  multiples of one-site rank-1 projectors or of the identity — menu
+    43	  normalization plus effect-functionality already forces the Born trace form
+    44	  on that domain, at a single `M_2(C)` site, with no literature bridge
+    45	  input. The proof is a direct four-menu-schema argument (complement,
+    46	  same-direction split, axis cancellation, coins) and never uses a genuinely
+    47	  unsharp effect: the forcing runs on scaled rank-1 menus alone.
+    48	- **Boundary.** The paired subfamily — menus that are disjoint unions of
+    49	  equal-weight antipodal pairs and identity multiples, the shape produced by
+    50	  classically mixing binary projective measurements without splitting or
+    51	  regrouping outcomes — does not force: the landed one-site rogue extends to
+    52	  it explicitly. Some menu outside the paired subfamily is therefore
+    53	  necessary for any forcing on this surface, and the proof's split and
+    54	  axis-cancellation schemas are exactly such menus.
+    55	
+    56	Consequence for the menu-grade dial: sitewise form-fixing does not need
+    57	unsharp effects. The registration question sharpens to whether the supplied
+    58	menus ever leave the paired subfamily — an exactly witnessed line — while no
+    59	family is selected and no claim of minimality is made.
+    60	
+    61	## Authorities and Inputs
+    62	
+    63	- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+    64	  the one-site `M_2(C)` possibility domain and the Record sentences "Only
+    65	  records are readable. A readout value is determined by record content
+    66	  alone." The axioms do not supply probabilities, weights, menus, update
+    67	  rules, or record-production processes.
+    68	- [`BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md`](BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+    69	  — the parent surface: the effect-grade pole (its T1), the landed
+    70	  lexicographic hemisphere rogue and its exact three-direction refutation of
+    71	  every `2 x 2` trace form (reused here at the same resolution), and the
+    72	  named-untested intermediate-family gap this note addresses.
+    73	- [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+    74	  — the projective-horn frontier note whose hypothesis surface both blocks
+    75	  condition on; not otherwise used.
+    76	- Literature comparators (never proof inputs): Wright-Weigert 2019 (a
+    77	  Gleason-type theorem for qubits from projective measurements and their
+    78	  classical mixtures — a differently delimited restricted family; a native
+    79	  translation of their exact class is a separate open increment); Busch 2003
+    80	  and Caves-Fuchs-Manne-Renes 2004 (the full effect-family pole).
+    81	
+    82	## The Family
+    83	
+    84	Work at one site, `A ≅ M_2(C)`, `P(n) = (1 + n·σ)/2` for unit Bloch
+    85	directions `n`. Define the scaled-projector effects
+    86	
+    87	> `S = { c P(n) : c ∈ [0,1], n unit } ∪ { c 1 : c ∈ [0,1] }`,
+    88	
+    89	and write `S_sharp` for the rank-1 part `{ c P(n) : c ∈ (0,1] }`. Every
+    90	element of `S` is an effect; a nonzero element determines its parameters
+    91	uniquely (`c P(n)` has eigenvalue pair `{c, 0}`, `c 1` has `{c, c}`, so `c`
+    92	and, for rank 1, `n` are recovered from the operator). A **scaled-projector
+    93	menu** is a finite family of nonzero elements of `S` summing to `1`.
+    94	
+    95	**T1 (exact menu characterization).** A finite family
+    96	`{c_k P(n_k)}_k ∪ {d_j 1}_j` of nonzero scaled-projector effects is a menu
+    97	iff
+    98	
+    99	> `Σ_k c_k n_k = 0` and `Σ_k c_k / 2 + Σ_j d_j = 1`.
+   100	
+   101	Proof: expand in the basis `{1, σ_x, σ_y, σ_z}`; the identity component
+   102	gives the scalar condition, the Pauli components give the vector condition.
+   103	The family therefore contains, among others: every projective menu
+   104	`{P(n), P(−n)}`; every coin `{c 1, (1−c) 1}` and its refinements;
+   105	same-direction splits `{λP(n), μP(n), (1−λ−μ)P(n), P(−n)}`; the
+   106	axis-cancellation menus of T2; and three-element coplanar menus such as
+   107	`{(2/3)P(n_1), (2/3)P(n_2), (2/3)P(n_3)}` with `n_1 + n_2 + n_3 = 0`. It
+   108	does not contain any effect with two distinct nonzero eigenvalues (e.g.
+   109	`diag(1/2, 1/4)`), so it is a proper subfamily of the parent block's
+   110	effect-partition family.
+   111	
+   112	## Hypotheses
+   113	
+   114	**(F1) grading exists on the scaled-projector domain.** There is
+   115	`w : S → [0,1]` with `w(0) = 0` and `w(1) = 1`; `w` is a function of the
+   116	effect alone — its value does not depend on which eligible menu embeds the
+   117	effect.
+   118	
+   119	**(F2) scaled-projector menus are eligible.** For every scaled-projector
+   120	menu `{A_j}`, `Σ_j w(A_j) = 1`.
+   121	
+   122	F1-F2 are the parent block's E1-E2 with the effect algebra replaced by `S`
+   123	and effect partitions replaced by scaled-projector menus: the domain and the
+   124	menu family both shrink, so F1-F2 is a strictly weaker hypothesis surface
+   125	than the effect-grade pole, and strictly stronger than bare projective
+   126	menus, which it contains. Only finite menus are used; no countable clause is
+   127	assumed. Whether the physical registration supplies this family, a larger
+   128	one, a smaller one, or none is underived and is not decided here.
+   129	
+   130	## Results
+   131	
+   132	**T2 (forcing on the scaled-projector family, no bridge input).** Assume
+   133	F1-F2 at one site. Then there is a unique density matrix `σ` with
+   134	`w(E) = Tr(σE)` for every `E ∈ S`. The proof uses four menu schemas, all
+   135	inside `S`, and only the rank-1 schemas carry the forcing:
+   136	
+   137	- **(a) Ray additivity.** Fix `n` and write `h(λ) = w(λP(n))`. For
+   138	  `λ, μ ≥ 0` with `λ + μ ≤ 1`, T1 validates the same-direction splits
+   139	  `{λP(n), μP(n), (1−λ−μ)P(n), P(−n)}` and
+   140	  `{(λ+μ)P(n), (1−λ−μ)P(n), P(−n)}` (the degenerate members with zero
+   141	  coefficient are dropped). Subtracting their normalizations gives
+   142	  `h(λ) + h(μ) = h(λ+μ)`. With `h ≥ 0` this gives monotonicity
+   143	  (`h(μ') = h(μ) + h(μ'−μ) ≥ h(μ)`), rational homogeneity by iteration, and
+   144	  the rational squeeze `q_1 h(1) ≤ h(t) ≤ q_2 h(1)` for rationals
+   145	  `q_1 < t < q_2`; hence `h(λ) = λ g(n)` for all real `λ ∈ [0,1]`, with
+   146	  `g(n) := w(P(n))`.
+   147	- **(b) Complement.** The projective menu `{P(n), P(−n)}` gives
+   148	  `g(n) + g(−n) = 1`.
+   149	- **(c) Axis cancellation.** For a unit `n` with components `n_a`
+   150	  (`a ∈ {x,y,z}`), set `L = |n_x| + |n_y| + |n_z| ∈ [1, √3]` and
+   151	  `c_0 = 2/(1+L) ∈ (0,1]`. By T1,
+   152	
+   153	  > `{ c_0 P(n) } ∪ { c_0 |n_a| P(−sign(n_a) e_a) : n_a ≠ 0 }`
+   154	
+   155	  is a menu: its vector part is `c_0 (n − Σ_a n_a e_a) = 0` and its scalar
+   156	  part is `c_0 (1 + L)/2 = 1`. Normalization, (a), and (b) give
+   157	
+   158	  > `g(n) = (1 + L)/2 − Σ_a |n_a| g(−sign(n_a) e_a)
+   159	  >        = (1 − L)/2 + Σ_a |n_a| g(sign(n_a) e_a)
+   160	  >        = (1 + n·s)/2`,
+   161	
+   162	  with `s_a := 2 g(e_a) − 1`. So `g` is affine in the Bloch direction, with
+   163	  its coefficients read off the three axis values.
+   164	- **(d) Coins.** Menus `{c 1, c' 1, (1−c−c') 1}` make `f(c) := w(c 1)`
+   165	  additive and bounded, hence `f(c) = c` by the same
+   166	  rational-homogeneity-plus-squeeze argument. Coins are not used in
+   167	  (a)-(c); they only complete the representation over the identity ray of
+   168	  `S`.
+   169	- **(e) State property and uniqueness.** `g(n) ∈ [0,1]` for all unit `n`
+   170	  forces `|s| ≤ 1` (evaluate at `n = −s/|s|` when `s ≠ 0`), so
+   171	  `σ := (1 + s·σ)/2` is a density matrix, and
+   172	  `w(cP(n)) = c g(n) = Tr(σ · cP(n))`, `w(c1) = c = Tr(σ · c1)` on all of
+   173	  `S`. Uniqueness: any representing density matrix reproduces the three
+   174	  axis values, which determine `s`.
+   175	
+   176	No step uses a literature theorem, a composite, an effect outside `S`, a
+   177	projective frame-function analysis, or countable additivity. The runner
+   178	re-derives every load-bearing identity exactly, including the
+   179	axis-cancellation identity symbolically on a generic octant and on rational
+   180	witnesses in all octants and on the degenerate axis cases.
+   181	
+   182	**T3 (paired-menu boundary).** Call a scaled-projector menu **paired** when
+   183	its multiset of elements is a disjoint union of equal-weight antipodal pairs
+   184	`{λP(m), λP(−m)}` and identity multiples `{d 1}` — the shape produced by
+   185	classically mixing binary projective measurements and coins without
+   186	splitting or regrouping outcomes. Then:
+   187	
+   188	- **(T3a) The paired subfamily does not force.** Extend the parent block's
+   189	  landed lexicographic hemisphere rogue `g` by
+   190	  `w(λP(n)) := λ g(n)`, `w(c1) := c`. On any paired menu the normalization
+   191	  sum is `Σ_i λ_i [g(m_i) + g(−m_i)] + Σ_j d_j = Σ_i λ_i + Σ_j d_j = 1` by
+   192	  the complement law and T1's scalar condition, so the extension satisfies
+   193	  F1-F2 restricted to paired menus; and it is no trace form, by the landed
+   194	  exact three-direction contradiction, reused at the same resolution.
+   195	- **(T3b) Some unpaired menu is necessary.** By T3a, any hypothesis surface
+   196	  whose eligible menus are all paired admits a non-Born grading, so any
+   197	  forcing theorem on this domain must use at least one menu outside the
+   198	  paired subfamily. The T2 proof uses exactly two unpaired schemas — the
+   199	  same-direction split and the axis-cancellation menu (the latter has no
+   200	  antipodal pair at all for generic `n`) — and by T3a it could not have
+   201	  succeeded without some such menu.
+   202	
+   203	T3 makes no claim about which intermediate families beyond the paired
+   204	subfamily force or fail: the scaled-projector family forces (T2), the
+   205	paired subfamily does not (T3a), and the exact boundary between them across
+   206	all intermediate families is not classified here.
+   207	
+   208	**T4 (dial recalibration and comparators).** Combined with the parent
+   209	block: sitewise Born form-fixing needs neither the full effect algebra nor
+   210	any genuinely unsharp effect — the scaled-projector family suffices, and
+   211	within it the forcing runs on scaled rank-1 menus alone. The landed one-site
+   212	rogue survives on bare projective and paired menus and dies on the
+   213	scaled-projector family (T2 plus the three-direction contradiction), with
+   214	the composite/entangled/Gleason route of the projective horn unchanged and
+   215	untouched. The registration question therefore sharpens to an exactly
+   216	witnessed line: whether the supplied menus ever leave the paired subfamily.
+   217	The comparator literature (Wright-Weigert 2019) reaches a Born-forcing
+   218	conclusion for a differently delimited restricted family built from
+   219	projective measurements and their classical mixtures with outcome
+   220	processing; no containment claim between that class and `S` is made here,
+   221	and a native translation of their exact class — like any minimal-family
+   222	classification — is a named open increment, not attempted in this note.
+   223	
+   224	## No-Go Discipline Gate
+   225	
+   226	T3a is a bounded negative ("the paired subfamily does not force"), so the
+   227	negative-claim checklist is answered for it:
+   228	
+   229	- **N1 route inventory (five routes against T3a):** (1) unequal-weight
+   230	  antipodal completions — such menus are not paired by definition and lie in
+   231	  the forcing family; ATTEMPTED via T2, which covers them; (2) adding coins
+   232	  of arbitrary rational or real weight — paired menus already include
+   233	  identity multiples, and the extension normalizes them (T3a computation);
+   234	  (3) same-direction splits — exactly the unpaired schema; RULED OUT as a
+   235	  rescue of the paired subfamily by definition, and named as what activates
+   236	  forcing (T3b); (4) countable paired menus — a finite-sum menu family is
+   237	  assumed throughout (F2 is finite); named outside scope; (5) two-site
+   238	  paired menus and composite rescues — outside this note's one-site scope
+   239	  and already handled at the projective grade by the parent block's product
+   240	  boundary; named untested at scaled grade.
+   241	- **N2 wall independence:** one wall (paired subfamily insufficiency); no
+   242	  second wall presented.
+   243	- **N3 hidden-wall scan:** the T3a witness is total on `S` (both rays
+   244	  defined), satisfies F1 on all of `S`, and its menu obligations are
+   245	  evaluated on the paired subfamily only — the restriction is the claim.
+   246	  The hemisphere tie convention is inherited verbatim from the landed
+   247	  parent construction and gated.
+   248	- **N4 residual matching:** the only cited prior negative is the landed
+   249	  one-site rogue existence, reused at the same resolution.
+   250	- **N5 rhetoric audit:** "does not force" is scoped to the paired subfamily
+   251	  at one site; T3 explicitly declines to classify other intermediate
+   252	  families.
+   253	- **N6 partial-closure scan:** the closure paths are named, not denied —
+   254	  the scaled-projector family itself (T2), or the parent block's effect
+   255	  pole, or the landed projective-composite route.
+   256	- **N7 steelman:** "paired menus are what classical mixing gives you, so
+   257	  the physical case is closed against forcing." Reply: T3a proves exactly
+   258	  that insufficiency for unsplit mixing; whether record formation supplies
+   259	  only paired menus is the underived registration question, and the note
+   260	  selects nothing.
+   261	- **N8 cross-cycle echo:** the structurally similar prior walls — the
+   262	  one-site projective rogue (parent R1 lineage) and the parent's
+   263	  product-menu boundary — were crossed by enlarging the menu family
+   264	  (effect grade; entangled composite menus). T3b records the same
+   265	  mechanism here: the wall is crossed by the unpaired schemas, not by
+   266	  dimension or composites.
+   267	
+   268	## Non-Claims
+   269	
+   270	- Does **not** claim any grading exists, on any family; F1-F2 are
+   271	  conditional input only.
+   272	- Does **not** select a menu family or grade, register or modify any
+   273	  primitive, or derive menu eligibility from the axioms.
+   274	- Does **not** claim the scaled-projector family is minimal, and does
+   275	  **not** classify intermediate families between the paired subfamily and
+   276	  `S`; the Wright-Weigert class is a comparator, not translated here.
+   277	- Does **not** extend beyond one site: composite menus, values, and record
+   278	  conditioning are outside scope, as in the parent block.
+   279	- Does **not** set an audit verdict; landing is not ratification, and
+   280	  independent audit remains required.
+   281	
+   282	## Verification
+   283	
+   284	The primary runner re-derives every load-bearing identity exactly (sympy,
+   285	rational/symbolic arithmetic, single process, one-site `M_2` objects only):
+   286	the parameter-recovery lemma for `S`; the T1 characterization identity
+   287	symbolically and on witnesses (projective, coin, split, axis-cancellation
+   288	in a generic octant, all-octant rationals, degenerate axis cases, a
+   289	coplanar three-element menu) with a non-menu rejector; the ray-additivity
+   290	and coin eliminations as formal linear algebra; the monotone
+   291	rational-squeeze scaffolding with the interval-nonvacuity guard and a
+   292	non-monotone rejector; the axis-cancellation affinity elimination to
+   293	`g(n) = (1 + n·s)/2`; the state bound `|s| ≤ 1` and the representation and
+   294	uniqueness identities on symbolic scaled effects; the paired-menu
+   295	normalization of the rogue extension as a formal identity under the
+   296	complement law; the unpairedness of the split and axis schemas; the reused
+   297	exact three-direction refutation with an affine control; and needle checks
+   298	pinning the quoted sentences of the axiom memo and the parent block note.
+   299	Mutation checks (one load-bearing mutation per check family, reverted) are
+   300	recorded in the review history and PR body.
+   301	
+   302	Measured runner total after final verification:
+   303	`TOTAL: PASS=57 FAIL=0`.
+     1	---
+     2	claim_id: born_form_effect_menu_sitewise_forcing_and_product_menu_boundary_bounded_theorem_note_2026-07-17
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional two-sided statement on the menu grade of the graded-constraint hypothesis surface, with the projective and effect grades treated as the two poles and intermediate menu families named untested. Effect horn: if the assumed grading is defined on the effect algebra of a finite region with finite effect-partition menus eligible, the Born trace form is forced sitewise at every finite dimension >= 2, reproved from finite operator algebra with no literature bridge input; the landed one-site projective rogue extends to no such grading. Projective horn boundary: on a bonded pair, grading hypotheses whose eligible menus are the product-projector resolutions do not force the Born trace form (constructive witness; exhaustive product-menu classification), so the landed composite route's menu family cannot be weakened all the way to product-projector menus at 2x2; no claim is made that full H4 or any particular entangled-menu family is minimal. The menu grade itself is underived; no horn is selected; the grading primitive is assumed here, not adopted."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	runner: scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py
+     8	---
+     9	
+    10	# Born Form At Effect-Menu Grade: Sitewise Forcing With No Bridge Input, And The Product-Menu Boundary On The Projective Horn
+    11	
+    12	**Date:** 2026-07-17
+    13	**Type:** bounded_theorem
+    14	**Claim type:** bounded_theorem
+    15	**Scope:** bridge-conditional; the grading hypotheses are assumed here, not
+    16	adopted, and the menu grade they are stated at is itself underived.
+    17	**Audit-status authority:** independent audit lane only. This note sets no
+    18	audit verdict and predicts none.
+    19	**Primitive status:** no primitive is approved, registered, edited, or
+    20	enlarged here. Every grading hypothesis below is conditional input only.
+    21	**Primary runner:**
+    22	[`scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py`](../scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py)
+    23	**Runner cache:**
+    24	[`logs/runner-cache/born_form_effect_menu_sitewise_forcing_2026_07_17.txt`](../logs/runner-cache/born_form_effect_menu_sitewise_forcing_2026_07_17.txt)
+    25	
+    26	## Purpose
+    27	
+    28	The landed composite bridge note
+    29	[`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+    30	fixes the form of a lawful graded constraint at projective-menu grade: its
+    31	hypotheses H1-H3 place a weight function on projections, H4 makes every
+    32	finite orthogonal resolution of a bonded-pair identity menu-eligible,
+    33	including resolutions that contain entangled projections, and the trace form
+    34	then follows through one named literature bridge input, stated there as
+    35	"Gleason's theorem is imported as named classical mathematics."
+    36	
+    37	This note isolates the menu-grade dial in that hypothesis surface and proves
+    38	one exact statement on each side of it:
+    39	
+    40	- **Effect horn.** If the same grading hypotheses are instead stated on the
+    41	  effect algebra of a finite region — weights defined on all effects, finite
+    42	  effect partitions of the identity menu-eligible — the Born trace form is
+    43	  forced already at a single site, at every finite dimension `>= 2`, by a
+    44	  five-step finite operator-algebra argument reproved here with no literature
+    45	  bridge input. The landed one-site projective rogue assignment extends to no
+    46	  grading of this kind, so the dimension-2 loophole is a feature of the
+    47	  projective grade, not of the site dimension.
+    48	- **Projective horn boundary.** On the bonded pair, the projective-grade
+    49	  hypotheses restricted to product-projector menus do not force the Born
+    50	  trace form: a constructive product-form rogue normalizes every
+    51	  product-projector menu (classified exhaustively) while restricting on one
+    52	  site to the landed non-quadratic assignment. H4's menu family therefore
+    53	  cannot be weakened all the way to product-projector menus at `2 x 2`;
+    54	  whether full H4 or some intermediate entangled-menu family is minimal is
+    55	  not established here.
+    56	
+    57	Neither horn is selected. The axioms supply no menus at all; which resolutions
+    58	of the identity are menus, and at which grade, is exactly the registration
+    59	content the landed note declares as H4's specification burden. This note
+    60	sharpens that burden into a two-sided exact statement and moves nothing else.
+    61	
+    62	## Authorities and Inputs
+    63	
+    64	- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+    65	  the `Z^3` nearest-neighbor lattice, the one-site `M_2(C)` possibility
+    66	  domain, and the Record sentences "Only records are readable. A readout
+    67	  value is determined by record content alone." The axioms do not supply
+    68	  probabilities, weights, menus, update rules, or record-production
+    69	  processes, and the memo's Qualification states: "These axioms state only
+    70	  their named primitive content. Further physical structure requires a
+    71	  retained derivation or bridge, or explicit approved-primitive registration,
+    72	  before use as a premise."
+    73	- [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+    74	  — the landed projective-horn route: hypotheses H1-H4, the one-site rogue
+    75	  construction R1, the composite rescue R2/R3 through the Gleason bridge
+    76	  input, and the declared specification burden. Cited as the projective-horn
+    77	  authority; its Gleason import is not used by this note's effect-horn
+    78	  results.
+    79	- [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+    80	  — the repo's reproven-from-primitives effect-representation argument on
+    81	  `M_2(C)` under hypotheses (M1)-(M3), with the explicit reconstruction
+    82	  `σ = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ]`. Theorem T1 below
+    83	  restates that five-step argument dimension-generically and the runner
+    84	  re-derives its load-bearing identities independently at dimensions 2 and 4.
+    85	- Literature comparators (never proof inputs): Busch 2003 and
+    86	  Caves-Fuchs-Manne-Renes 2004 for the effect-level representation theorem;
+    87	  Wallach 2002 for the statement that unentangled frame functions determine
+    88	  density operators only when every tensor factor has dimension at least 3.
+    89	  The `2 x 2` product-menu boundary claimed here is proved by this note's own
+    90	  constructive witness and classification, not by the comparator.
+    91	
+    92	## Hypotheses
+    93	
+    94	Let `Λ ⊂ Z^3` be a finite region, `H_Λ = ⊗_{x∈Λ} C^2`, `d = 2^{|Λ|}`, and
+    95	`E(H_Λ) = { E : 0 ≤ E ≤ 1 }` the effect algebra of the region algebra. The
+    96	landed projective-horn hypotheses H1-H3 place `w ≥ 0` on projections with
+    97	`w(0) = 0`, `w(identity) = 1`, menu-normalization on finite orthogonal
+    98	resolutions of the identity, additivity, and embedding-independence. The
+    99	effect-grade restatement assumed by the effect horn is:
+   100	
+   101	**(E1) grading exists at effect grade.** There is `w : E(H_Λ) → [0,1]` with
+   102	`w(0) = 0` and `w(1) = 1`. As at projective grade, `w` is a function of the
+   103	effect alone; the value does not depend on which eligible menu embeds it.
+   104	
+   105	**(E2) finite effect menus are eligible.** For every finite family
+   106	`{E_i} ⊂ E(H_Λ)` with `Σ_i E_i = 1`, the family is an eligible menu and
+   107	`Σ_i w(E_i) = 1`.
+   108	
+   109	E1-E2 keep the shape of H1-H3 together with an H4-style universal
+   110	menu-eligibility clause — in the landed note, universal eligibility is
+   111	carried by H4's "every finite orthogonal resolution ... is menu-eligible",
+   112	not by H1-H3 alone — with "projection" replaced by "effect" and orthogonal
+   113	resolutions replaced by finite effect partitions. They are neither implied
+   114	by nor implied-in the projective-grade hypotheses on the same region: the
+   115	domain and the menu family are both enlarged, and the enlarged menu family
+   116	is a strictly stronger normalization demand. Only finite menus
+   117	are used anywhere below; no countable-additivity clause is assumed. Whether
+   118	the physical registration supplies menus at projective grade, at effect
+   119	grade, at neither, or at some intermediate family is underived and is not
+   120	decided here.
+   121	
+   122	## Results
+   123	
+   124	**T1 (effect horn: sitewise forcing at every finite dimension, no bridge
+   125	input).** Assume E1-E2 on a finite region of dimension `d ≥ 2`. Then there is
+   126	a unique density matrix `σ` with `w(E) = Tr(σE)` for every effect `E`. The
+   127	proof is the five-step finite argument, dimension-generic:
+   128	
+   129	- **(A) Partial additivity.** For effects with `E_1 + E_2 ≤ 1`, apply E2 to
+   130	  the menus `{E_1, E_2, 1 − E_1 − E_2}` and `{E_1 + E_2, 1 − E_1 − E_2}`:
+   131	  subtracting, `w(E_1 + E_2) = w(E_1) + w(E_2)`. The two-outcome menu
+   132	  `{E, 1 − E}` gives the complement law `w(E) + w(1 − E) = 1`.
+   133	- **(B) Homogeneity.** Iterating (A) on the `(r+1)`-outcome menu
+   134	  `{E/r, ..., E/r, 1 − E}` gives `w(E/r) = w(E)/r` and then `w(qE) = q w(E)`
+   135	  for rational `q ∈ [0,1]`. Monotonicity follows from (A): if `E ≤ F` then
+   136	  `F − E` is an effect and `w(F) = w(E) + w(F − E) ≥ w(E)`. For real
+   137	  `t ∈ [0,1]` and rationals `q_1 < t < q_2`, the operator inequalities
+   138	  `q_1 E ≤ tE ≤ q_2 E` then squeeze `w(tE)` between `q_1 w(E)` and
+   139	  `q_2 w(E)`, so `w(tE) = t w(E)`.
+   140	- **(C) Linear extension.** `Herm(M_d)` is a real vector space of dimension
+   141	  `d^2` spanned by effects (the normalized identity-plus-generator elements
+   142	  `(1 + B_k)/2` and `1` itself). Additivity plus homogeneity on the positive
+   143	  cone extend `w` to a well-defined real-linear functional `F` on
+   144	  `Herm(M_d)`: scale any positive `A` into the effect interval, set
+   145	  `F(A) = s·w(A/s)` for `s` dominating the top eigenvalue (well-defined by
+   146	  homogeneity), and define `F` on differences; the standard two-sided
+   147	  cancellation argument shows representation-independence.
+   148	- **(D) Trace representation.** The trace pairing `⟨X,Y⟩ = Tr(XY)` is a
+   149	  nondegenerate real inner product on `Herm(M_d)`, so `F(H) = Tr(σH)` for a
+   150	  unique Hermitian `σ`, reconstructed linearly from the `d^2` basis values of
+   151	  `w`. At `d = 2` this is exactly the landed display
+   152	  `σ = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ]`.
+   153	- **(E) State property.** `w(1) = 1` gives `Tr σ = 1`; for every unit vector
+   154	  `ψ` the rank-1 projector is an effect, so `⟨ψ|σ|ψ⟩ = w(P_ψ) ≥ 0`, hence
+   155	  `σ ≥ 0`.
+   156	
+   157	No step uses `d ≥ 3`, a composite, a projective frame-function analysis, or
+   158	any literature theorem. The runner re-derives the load-bearing identities of
+   159	every step exactly at `d = 2` and `d = 4`.
+   160	
+   161	**T2 (effect horn: the landed rogue extends to no effect-grade grading).**
+   162	The landed R1 assignment `g` — the lexicographic hemisphere rule on one-site
+   163	rank-1 projections, which satisfies the projective-grade hypotheses on
+   164	one-site binary menus — extends to no `w` satisfying E1-E2 on a single site.
+   165	By T1 any such `w` is a trace form; every `2 x 2` trace form is affine in the
+   166	Bloch direction, and the landed exact three-direction contradiction
+   167	(`g(e_x) = g(e_z) = 1` with `g(1) = 1` forces the value `1/2` at
+   168	`(e_x − e_z)/√2`, where `g` assigns `0`) refutes every trace-form
+   169	restriction. The landed note's sentence "Three directions plus normalization
+   170	refute every `2x2` trace form at once" is reused unchanged; what is new is
+   171	the direction of use: at effect grade the refutation kills the rogue rather
+   172	than the forcing, at one site, with no composite and no bridge input.
+   173	
+   174	**T3 (projective horn boundary: product-projector menus do not force the
+   175	Born form on the bonded pair).** Work on a bonded nearest-neighbor pair,
+   176	`d = 4`, at projective grade, but with the eligible menus restricted to
+   177	product-projector resolutions: finite families of nonzero projectors of the
+   178	form `A ⊗ B` (`A`, `B` one-site projectors) summing to the pair identity.
+   179	The weight domain remains all pair projections, as in the landed H1; with
+   180	the menu family so restricted, values on non-product projections are
+   181	constrained by no eligible menu, and the witness below is completed to the
+   182	full domain by an explicit arbitrary extension. Then:
+   183	
+   184	- **(T3a) Classification.** Every product-projector menu is a tree menu: up
+   185	  to swapping the two sites, it is `{1}`, or `{P(a)⊗1, P(−a)⊗1}`, or
+   186	  `{P(a)⊗1, P(−a)⊗P(d), P(−a)⊗P(−d)}`, or
+   187	  `{P(a)⊗P(b), P(a)⊗P(−b), P(−a)⊗P(b'), P(−a)⊗P(−b')}` — a first-site split
+   188	  refined branchwise on the second site, or the site-swapped form. The proof
+   189	  is a finite case analysis from two exact facts: one-site rank-1 projectors
+   190	  are orthogonal exactly when their Bloch directions are antipodal, and
+   191	  `(P(a)⊗P(b)) ⊥ (P(c)⊗P(d))` exactly when `a·c = −1` or `b·d = −1`. Three
+   192	  pairwise-orthogonal rank-1 products cannot share one first-site direction
+   193	  (three mutually antipodal second-site directions are impossible), a rank-3
+   194	  complement is never a product projector (product-projector ranks on the
+   195	  pair are 1, 2, 4), and a rank-1 product below `P(−a)⊗1` must carry first
+   196	  slot `−a` (a rank-1 projector lies below a projector exactly when their
+   197	  overlap trace is 1, and `Tr(P(−a)P(c)) = (1 − a·c)/2 = 1` forces
+   198	  `c = −a`). The runner gates each fact and each case branch exactly.
+   199	- **(T3b) Constructive rogue.** Define `W` on product projectors by the
+   200	  product rule `W(A ⊗ B) = g_1(A) · g_2(B)`, with `g_1`, `g_2` lexicographic
+   201	  hemisphere rules and `g_i(1) = 1`, `g_i(0) = 0`, and extend `W` to the
+   202	  remaining (non-product) pair projections by the constant value `1/2` — an
+   203	  arbitrary choice that no product-projector menu constrains, so the
+   204	  extended `W` is defined on the full projection domain of the landed H1
+   205	  while every menu-normalization obligation of the restricted family falls
+   206	  on the product values alone. Using `g_i(n) + g_i(−n) = 1` (which the
+   207	  hemisphere rule satisfies exactly, including on its tie set), `W` sums to
+   208	  1 on every tree menu of either rooting, hence on every product-projector
+   209	  menu by T3a. Its one-site restriction `W(A ⊗ 1) = g_1(A)` is the landed
+   210	  rogue, which by the three-direction contradiction is no trace form; since
+   211	  `E ↦ Tr(ρ(E ⊗ 1))` is trace-affine for every pair state `ρ`, no density
+   212	  matrix on the pair represents `W`.
+   213	- **(T3c) Consequence.** At `2 x 2`, projective-grade hypotheses whose menu
+   214	  family contains only product-projector resolutions do not force the Born
+   215	  form. The landed composite route's H4 clause — menu-eligibility for
+   216	  resolutions "that contain entangled projections", with the landed
+   217	  refutation-seat finding "Without this full projection-measure strength a
+   218	  partial menu assignment is not a frame function and Gleason does not
+   219	  apply" — therefore cannot be weakened all the way to product-projector
+   220	  menus at `2 x 2`; whether full H4, or some intermediate projective-menu
+   221	  family, is minimal is untested here. This agrees with the comparator
+   222	  statement (Wallach 2002) that
+   223	  unentangled frame functions determine density operators only when every
+   224	  factor has dimension at least 3; the `2 x 2` case claimed here is proved
+   225	  natively by T3a-T3b. Entangled projections are not products (the runner
+   226	  gates a Bell-projector Schmidt-rank witness), and `W` assigns them no
+   227	  value, so T3 is consistent with, and does not touch, the landed R2/R3
+   228	  forcing under full H4 strength.
+   229	
+   230	**T4 (the menu grade is the dial, and the attribution moves).** T1-T3
+   231	together relocate the landed dimension-2 loophole: it is not a fact about the
+   232	site, it is a fact about the projective grade. On the effect horn the form is
+   233	fixed sitewise and the nearest-neighbor lattice pays for nothing in the
+   234	form-fixing step — composites matter there only for values (joint states and
+   235	their conditioning), which remain underived. On the projective horn the
+   236	lattice composite plus full entangled-menu strength plus the Gleason bridge
+   237	input remain exactly what the landed note says they are, and T3 shows the
+   238	entangled-menu clause cannot be weakened to product menus at `2 x 2`. The
+   239	landed attribution sentence "adjacency alone pays for nothing here without
+   240	H4's strength" is thereby sharpened in both directions: with effect menus,
+   241	adjacency is not needed for the form; with product-projective menus,
+   242	adjacency plus the bridge input still do not suffice. Which menu family the
+   243	physical registration supplies — the two grades treated here are the poles,
+   244	and intermediate families remain untested — is an open item of the declared
+   245	specification burden; this note records two bounded horns and selects no
+   246	grade.
+   247	
+   248	**T5 (zero-information limit at a finite-group premise, effect horn).**
+   249	Under the additional named premise that `w` is invariant under conjugation by
+   250	the three one-site Pauli unitaries — a finite group, strictly weaker than the
+   251	landed R4 premise of invariance under every unitary automorphism — the
+   252	reconstruction of T1 forces `σ = 1/2 · 1` (the maximally mixed `I/2`) at
+   253	one site: invariance transfers to
+   254	`σ` by uniqueness, and the only `2 x 2` Hermitian commuting with all three
+   255	Pauli conjugations is scalar. Weights are then uniform on binary menus,
+   256	consistent with the landed uniform-on-orbits results. This premise is named
+   257	here and not derived; "no conditioning records" alone does not supply it.
+   258	
+   259	## Relation To The Landed Effect-Level Surface
+   260	
+   261	The finite-region statement of
+   262	[`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+   263	reaches the same trace-form conclusion on `E(H_Λ)`, but its landed
+   264	derivation routes the `|Λ| ≥ 2` case through the projective companion
+   265	[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md),
+   266	which imports Gleason's projective theorem as named standard mathematics,
+   267	and it assumes countable additivity. T1 differs on exactly those two
+   268	surfaces: the five-step argument is dimension-generic on the effect algebra,
+   269	so no projective import enters at any `|Λ|`, and only finite menus are
+   270	assumed. The legacy chain
+   271	[`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`](BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md)
+   272	carries separate inductive-limit and identification inputs that this note
+   273	does not use and does not discharge. The orientation memo
+   274	[`GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md`](GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md)
+   275	is cited for orientation and scope discipline only and carries no premise
+   276	weight here.
+   277	
+   278	## No-Go Discipline Gate
+   279	
+   280	T3 is a bounded negative boundary ("product-projector menus do not force the
+   281	Born trace form at `2 x 2`"), so the negative-claim checklist is answered
+   282	for it:
+   283	
+   284	- **N1 route inventory (five routes against T3):** (1) coarse rank-2 product
+   285	  menus added — ATTEMPTED, the rogue normalizes them (T3a covers ranks 1, 2,
+   286	  4); (2) non-tree product menus that might constrain further — RULED OUT by
+   287	  the T3a classification; (3) countable product-projector partitions — a
+   288	  finite-dimensional identity admits at most `d` nonzero mutually orthogonal
+   289	  projectors, so countable adds nothing at `d = 4`; (4) menus mixing
+   290	  projective structure with non-projective effects (classical mixtures of
+   291	  projective menus and other intermediate families) — OUTSIDE T3's scope by
+   292	  construction and named untested; the comparator literature suggests such
+   293	  families can force the form already at one site, which is exactly why T3
+   294	  is scoped to product-projector resolutions only; (5) larger regions
+   295	  (`2 x 2 x 2` product menus) — untested here; the comparator statement says
+   296	  qubit factors never suffice, but no native claim is made beyond the bonded
+   297	  pair.
+   298	- **N2 wall independence:** T3 names one wall (product-menu insufficiency at
+   299	  `2 x 2`); no second wall is presented.
+   300	- **N3 hidden-wall scan:** T3 assumes the projective-grade hypotheses of the
+   301	  landed note restricted to a smaller menu family; the restriction is the
+   302	  claim, not a hidden condition, and the witness is completed to the full
+   303	  projection domain by the explicit arbitrary extension stated in T3b (the
+   304	  restricted menu family constrains no non-product value, which is exactly
+   305	  the content of the restriction). The tie-set convention inside the
+   306	  hemisphere rule is inherited verbatim from the landed R1 construction and
+   307	  gated.
+   308	- **N4 residual matching:** the only cited prior negative is the landed R1
+   309	  rogue existence, reused at the same resolution (one-site binary menus and
+   310	  their product refinements).
+   311	- **N5 rhetoric audit:** the negative is stated as "do not force the Born
+   312	  trace form", scoped to the stated menu family on the stated pair; T3c
+   313	  states the exact family and dimension, and the note nowhere claims that
+   314	  full H4 or any particular entangled-menu family is minimal.
+   315	- **N6 partial-closure scan:** the closure path is named, not denied — full
+   316	  H4 strength (landed) or effect-grade menus (T1); T3 forecloses neither.
+   317	- **N7 steelman:** "product menus are the physically natural family, so T3
+   318	  kills the projective horn." Reply: T3 proves insufficiency of that family,
+   319	  not naturalness; which family the registration supplies is exactly the
+   320	  declared open specification item, and the landed composite route under
+   321	  full H4 strength is untouched.
+   322	- **N8 cross-cycle echo:** the structurally similar prior wall — one-site
+   323	  dimension-2 rogue existence — was retired on the composite by H4 strength
+   324	  (landed R3) and is retired sitewise at effect grade by T2 here; both
+   325	  mechanisms are cited, and neither retires T3's product-menu wall.
+   326	
+   327	## Non-Claims
+   328	
+   329	- Does **not** claim any grading exists, at any grade; E1-E2 and the
+   330	  projective-grade hypotheses are conditional input only.
+   331	- Does **not** select a menu grade, register or modify any primitive, or
+   332	  derive menu-eligibility from the axioms; the axioms supply no menus.
+   333	- Does **not** derive weight values, record conditioning, rates, dynamics,
+   334	  update rules, orientation, or scale.
+   335	- Does **not** touch the landed composite route's conclusions under full H4
+   336	  strength, and does **not** re-prove or use Gleason's projective theorem.
+   337	- Does **not** set an audit verdict or close the probability wall; landing is
+   338	  not ratification, and independent audit remains required.
+   339	
+   340	## Verification
+   341	
+   342	The primary runner re-derives every load-bearing identity exactly (sympy,
+   343	rational/symbolic arithmetic, single process, dimensions 2 and 4 only):
+   344	the menu bookkeeping behind (A) and (B) as formal linear elimination; the
+   345	effect-cone witnesses (including a noncommuting pair); the monotonicity and
+   346	squeeze inequalities on exact witnesses with a non-monotone rejector; the
+   347	`d = 2` and `d = 4` effect bases with nondegenerate trace Gram matrices; the
+   348	reconstruction identity `w(E) = Tr(σE)` on symbolic effects, matching the
+   349	landed Bloch display at `d = 2`; the state property; the exact
+   350	three-direction refutation of every `2 x 2` trace form and its T2 corollary
+   351	logic; the antipodal-orthogonality and product-orthogonality lemmas; each
+   352	case branch of the T3a classification (including the three-antipodal
+   353	impossibility, the rank-3 non-product fact, and the below-`P(−a)⊗1`
+   354	forcing); the hemisphere complement law including tie-set witnesses; the
+   355	product-rogue normalization on both tree rootings and coarse menus; the
+   356	trace-affinity of pair-state restrictions; the Bell-projector Schmidt-rank
+   357	witness; the Pauli-commutant computation behind T5; and needle checks that
+   358	pin the quoted sentences of the axiom memo and the two landed notes named
+   359	above. Mutation checks (one load-bearing mutation per check family,
+   360	reverted) are recorded in the review history and PR body.
+   361	
+   362	Measured runner total after final verification:
+   363	`TOTAL: PASS=54 FAIL=0`.
+     1	# Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)
+     2	
+     3	> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
+     4	> each row points to the canonical source-of-truth doc.
+     5	
+     6	**Date:** 2026-06-29
+     7	**Type:** meta
+     8	**Status:** current public framework axiom memo for the qubit-on-`Z^3`
+     9	package with local admissibility and fixed scalar record readout.
+    10	**Status authority:** explicit owner approval for the 2026-06-29 foundation
+    11	reset is recorded in `docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
+    12	Audit status remains set only by the independent audit lane.
+    13	
+    14	**Supersedes:** `MINIMAL_AXIOMS_2026-06-05.md`. The 2026-06-05 memo remains the
+    15	historical source for the prior Lattice/Quantum/Record wording in which
+    16	realized outcome was latent in Record and no explicit local admissibility
+    17	constraint was named.
+    18	
+    19	## Purpose
+    20	
+    21	This note states the framework's minimal ontology premises. They are named
+    22	rather than treated as bare letter codes:
+    23	
+    24	1. **Lattice**
+    25	2. **Qubit**
+    26	3. **Admissibility**
+    27	4. **Record**
+    28	
+    29	Legacy `A1`/`A2` numbering and the older `Quantum` axiom name are historical.
+    30	New repo surfaces should use the axiom names above unless quoting an older
+    31	document.
+    32	
+    33	## The Four Framework Axioms
+    34	
+    35	### Lattice / Physical Locality
+    36	
+    37	Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
+    38	adjacency, standard translations, and proper cubic rotations about each site.
+    39	
+    40	No site is privileged. Sites are distinguished by the supplied lattice
+    41	structure alone.
+    42	
+    43	### Qubit / Site Possibility
+    44	
+    45	Each site has a domain of local possibilities.
+    46	
+    47	The full one-site possibility domain has algebraic presentation `M_2(C)`.
+    48	
+    49	A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
+    50	adds no further primitive structure.
+    51	
+    52	No possibility is privileged. Possibilities are distinguished by the supplied
+    53	algebraic structure alone.
+    54	
+    55	### Admissibility / Local Constraint
+    56	
+    57	There is one fixed nearest-neighbor admissibility rule, covariant under lattice
+    58	translations and proper cubic rotations.
+    59	
+    60	For each site, the available possibilities are determined by, and vary with,
+    61	the nearest-neighbor conditions.
+    62	
+    63	### Record / Fixed Reality
+    64	
+    65	Records form.
+    66	
+    67	When present, a record locks exactly one admissible local possibility. A
+    68	site never carries more than one record; records are permanent.
+    69	
+    70	Only records are readable. A readout value is determined by record content
+    71	alone. For any finite collection of pairwise-disjoint records, scalar readout
+    72	`I` is additive, with `I(empty)=0`.
+    73	
+    74	## Qualification
+    75	
+    76	These axioms state only their named primitive content. Further physical
+    77	structure requires a retained derivation or bridge, or explicit approved-
+    78	primitive registration, before use as a premise. A choice not fixed by the
+    79	supplied structure remains a named conditional or open dependency.
+    80	
+    81	A state is a configuration of records.
+    82	
+    83	A law privileges no states. Its domain is a supplied condition, and at every
+    84	state where the condition holds it gives exactly one answer.
+    85	
+    86	## Audit-Pipeline Treatment
+    87	
+    88	The machine-readable source of this axiom set is the stable `minimal_axioms`
+    89	entry in `docs/audit/data/axiom_premise_nodes.json`. Dependencies on
+    90	`minimal_axioms` chain-satisfy without making downstream rows
+    91	`retained_bounded`.
+    92	
+    93	**Primary runner:** `scripts/audit_companion_minimal_axioms_clean_base_exact.py`
+    94	checks only elementary algebra/notation sanity for the four axiom names. It
+    95	does not derive or enlarge the axiom set.
+    96	
+    97	Axioms and approved primitives are the complete supplied foundation.
+    98	Depending on the Lattice, Qubit, Admissibility, or Record axiom, or on an
+    99	explicitly approved primitive such as `scale_reference_primitive`, must not be
+   100	treated as a source of bounded status. No admission class exists: every other
+   101	scientific dependency must be retained-derived or remain conditional/open.
+   102	
+   103	## Relation To Dynamics And Kinetic Branch Selection
+   104	
+   105	Admissibility is not a dynamics axiom. It determines availability by a
+   106	nearest-neighbor rule: for each site, the available possibilities are
+   107	determined by, and vary with, the nearest-neighbor conditions. It does not
+   108	choose a Hamiltonian or transfer operator, supply transition probabilities or
+   109	weights, select a scalar or nonzero kinetic branch, assert a Dirac-square
+   110	carrier, define a time metric, or provide a record-production process or
+   111	physical persistence dynamics.
+   112	
+   113	Static spatial kinetic questions, probability/process questions, and temporal
+   114	evolution questions should be tracked separately. A realized kinetic branch, if
+   115	proposed, is downstream content: it needs a retained derivation or bridge, or
+   116	an approved-primitive registry update, before audit rows may use it
+   117	as load-bearing content. The four axioms are compatible with such later
+   118	content, but do not include it.
+   119	
+   120	## Relation To The Older Observable-Principle Parent
+   121	
+   122	`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md` is not this axiom note and is not an
+   123	approved axiom-premise node. It remains a broader conditional parent that
+   124	packages additive scalar observables with further readout/log-det/modulus
+   125	structure. That older parent must not be moved wholesale into
+   126	`docs/audit/data/axiom_premise_nodes.json`.
+   127	
+   128	Rows that require only the Record axiom should cite this minimal-axiom
+   129	authority. Rows that require P2/modulus, log-det, source/action, measurement,
+   130	Born weights, readout-context selection, central-sector decomposition, `K`/CPT
+   131	structure, transition relations, record-production dynamics, physical
+   132	persistence dynamics, local observability, or any other additional bridge must
+   133	cite separate retained authorities or remain bounded/pending according to the
+   134	audit ledger.
+   135	
+   136	## Relation To The 2026-06-05 Record Wording
+   137	
+   138	The 2026-06-05 Record axiom named durable realized-outcome registration and
+   139	gave a `K`/CPT orbit reading once a finite central-sector readout context and
+   140	fixed `K`/CPT conjugation were supplied. This reset separates generic site
+   141	possibility, local admissibility, and fixed records from context-specific
+   142	readout structure:
+   143	
+   144	- Qubit names the domain of local possibilities and its full one-site algebraic
+   145	  presentation.
+   146	- Admissibility names the nearest-neighbor rule by which, for each site, the
+   147	  available possibilities are determined by, and vary with, the
+   148	  nearest-neighbor conditions.
+   149	- Record names the fixed locking of one admissible local possibility,
+   150	  one-record-per-site uniqueness, permanence, and finite scalar readout
+   151	  additivity over disjoint record collections.
+   152	- `K`/CPT orbit structure, central-sector decomposition, and any sector
+   153	  generation rule are downstream readout-context content, not generic axiom
+   154	  content.
+   155	
+   156	## Open Gates Outside The Axioms
+   157	
+   158	The four axioms do not close, import, or rename the framework's downstream open
+   159	gates. In particular, the following remain outside axiom content:
+   160	
+   161	- the staggered-Dirac/finite-Grassmann realization and `AC_phi_lambda`;
+   162	- the strong-CP theta gauge and mass-side derivation obligations;
+   163	- P2/modulus/phase-blindness and any log-det readout theorem;
+   164	- context selection, measurement basis selection, Born weights, probability
+   165	  rules, update laws, decoherence mechanisms, and formation rules (which
+   166	  admissible possibility a new record locks, at which site, with what weight,
+   167	  or at what rate);
+   168	- arrow, record-production dynamics, physical persistence dynamics, time metric,
+   169	  and local observability of records;
+   170	- source/action and physical-observable identification;
+   171	- `g_bare = 1` convention handling;
+   172	- the scale-reference primitive and the separate gravity self-consistency
+   173	  question that the framework's natural unit equals the Planck length.
+   174	
+   175	## Historical Context
+   176	
+   177	The April 15 through May 20 sequence separated the one-qubit local algebra and
+   178	the `Z^3` lattice from downstream realization gates that had previously been
+   179	written too axiomatically. The 2026-06-04 memo added scalar finite Record
+   180	additivity as the third explicitly approved premise. The 2026-06-05 memo refined
+   181	Record to durable realized-outcome registration in a supplied readout context.
+   182	The 2026-07-04 owner-approved revision appended the formation sentence "Records
+   183	form." to the Record axiom: occurrence became named axiom content, while every
+   184	formation rule (which admissible possibility, at which site, with what weight,
+   185	at what rate) remained downstream supplier content. The file path was kept
+   186	unchanged so existing runner needles and links continue to resolve.
+   187	
+   188	This memo exposes the remaining minimal ontology needed by the blocked audit
+   189	lanes: records are not arbitrary mosaics. The admissibility rule determines the
+   190	available possibilities at each site from the nearest-neighbor conditions, and
+   191	those available possibilities vary with those conditions, before a record can
+   192	lock one available local possibility. Probability, dynamics, readout contexts,
+   193	and physical observable bridges remain downstream.
+     1	---
+     2	claim_id: born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional: if a lawful graded record-conditioned constraint exists and exposes full neighbor-composite projection menus, Gleason's theorem forces Born trace form on the composite and therefore on single-site restrictions. The grading primitive and entangled-menu eligibility are assumed here, not adopted."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	bridge_inputs:
+     8	  - gleason_theorem_1957
+     9	runner: scripts/born_form_composite_gleason_bridge_2026_07_04.py
+    10	---
+    11	
+    12	# Born Form From Lawful Graded Constraint via Composite Gleason (Bridge Note)
+    13	
+    14	**Date:** 2026-07-04
+    15	**Type:** bounded_theorem
+    16	**Claim type:** bounded_theorem
+    17	**Scope:** bridge-conditional; the grading primitive and entangled-menu
+    18	eligibility are assumed here, not adopted.
+    19	**Audit-status authority:** independent audit lane only. This note sets no audit
+    20	verdict and predicts none.
+    21	**Primitive status:** no primitive is approved, registered, edited, or enlarged
+    22	here. The graded-constraint premise is conditional input only.
+    23	**Primary runner:**
+    24	[`scripts/born_form_composite_gleason_bridge_2026_07_04.py`](../scripts/born_form_composite_gleason_bridge_2026_07_04.py)
+    25	**Runner cache:**
+    26	[`logs/runner-cache/born_form_composite_gleason_bridge_2026_07_04.txt`](../logs/runner-cache/born_form_composite_gleason_bridge_2026_07_04.txt)
+    27	
+    28	## Purpose
+    29	
+    30	The landed framework supplies a `Z^3` nearest-neighbor lattice, one-site
+    31	possibility algebra `M_2(C)`, local admissibility by nearest-neighbor
+    32	conditions, and Record content: Records form.; when present, a record locks
+    33	exactly one admissible local possibility, records are permanent, one site
+    34	carries at most one record, only records are readable, and finite scalar readout
+    35	is additive over disjoint records. Those axioms do not supply probabilities,
+    36	weights, dynamics, update rules, or record-production processes.
+    37	
+    38	This note isolates one conditional mathematical point in the graded-constraint
+    39	program: if record influence on possibility menus is lawfully graded, and if
+    40	the local lattice structure exposes the full projection lattice of a neighbor
+    41	composite, then the form of that grading is forced. The note does not claim that
+    42	the grading primitive exists.
+    43	
+    44	## Authorities and Inputs
+    45	
+    46	- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+    47	  the `Z^3` nearest-neighbor lattice, one-site `M_2(C)` possibility domain,
+    48	  local admissibility by nearest-neighbor conditions, and Record sentences used
+    49	  above. These axioms do not supply probabilities, weights, dynamics, update
+    50	  rules, or record-production processes.
+    51	- Gleason's theorem (1957) — named bridge input only; this note uses the
+    52	  dimension `>= 3` trace-form consequence and does not re-prove the theorem.
+    53	
+    54	## Bridge Input
+    55	
+    56	**Bridge input:** Gleason's theorem (1957) - every non-negative frame function
+    57	on the projection lattice of a Hilbert space of dimension >= 3 has the form
+    58	`w(P) = Tr(rho P)` for a density operator `rho`.
+    59	
+    60	This is cited as classical mathematics, not re-proved. The framework-specific
+    61	content is the lattice/composite use of that bridge: a one-site `M_2(C)` surface
+    62	has the usual dimension-2 loophole, while a nearest-neighbor bonded pair has
+    63	`M_2 tensor M_2 = M_4`, so the composite is inside Gleason's dimension range.
+    64	
+    65	## Hypotheses
+    66	
+    67	**H1 (grading exists).** There is a weight function `w >= 0` defined on every
+    68	projection of the relevant algebra, with `w(0) = 0` and `w(identity) = 1`, and
+    69	with menu-normalization `sum_i w(P_i) = 1` on every eligible menu (finite
+    70	orthogonal resolution of the identity). This is the candidate primitive: it is
+    71	assumed here, not claimed, derived, approved, or registered.
+    72	
+    73	**H2 (additivity).** For orthogonal projections `P` and `Q`, the grading is
+    74	additive: `w(P + Q) = w(P) + w(Q)`.
+    75	
+    76	**H3 (non-contextuality).** The value `w(P)` does not depend on which admissible
+    77	menu embeds `P`.
+    78	
+    79	**H4 (composite menus realized).** Menus range over neighbor-composite
+    80	algebras: a bonded nearest-neighbor pair carries `M_2 tensor M_2 = M_4`, `w` is
+    81	defined on the full projection lattice of the composite, and every finite
+    82	orthogonal resolution of the composite identity - including resolutions that
+    83	contain entangled projections - is menu-eligible, so H2 applies to all
+    84	orthogonal pairs in `Proj(M_4)`. Without this full projection-measure strength
+    85	a partial menu assignment is not a frame function and Gleason does not apply
+    86	(refutation-seat finding, 2026-07-04).
+    87	
+    88	H4 is a substantive physical hypothesis, not axiom content. The minimal axioms
+    89	supply site-local possibility domains with neighbor-dependent availability -
+    90	not a pair-level possibility domain, not bonded-pair selection, not
+    91	configuration-independent menu eligibility, and not records that lock composite
+    92	entangled possibilities. Any registration of the graded-constraint primitive
+    93	must therefore specify: which neighbor pairs carry composite menus; whether
+    94	eligibility depends on the record configuration; how pair menus coexist with
+    95	site-local admissibility; and in what sense entangled projections are
+    96	alternatives. Those four items are the registration's specification burden,
+    97	declared here rather than hidden.
+    98	
+    99	## Results
+   100	
+   101	**R1 (single-site exception, constructive).** On one `M_2(C)` site alone,
+   102	H1-H3 do not force the Born form. Rank-1 one-site projections are indexed by
+   103	Bloch directions `n`, with binary menus `{P(n), P(-n)}`. Any assignment
+   104	`g(n) >= 0` with `g(n) + g(-n) = 1` is a normalized frame function on those
+   105	menus. A non-quadratic example is the hemisphere/sign rule used by the runner:
+   106	`g(n)=1` when `(n_z,n_y,n_x)` is lexicographically positive and `g(n)=0`
+   107	otherwise, with the equator made well-defined by the same lexicographic tie
+   108	rule. It normalizes every antipodal menu and is non-contextual on the one-site
+   109	binary menus, and it extends to rank `0` and rank `2` by `g(0) = 0`,
+   110	`g(I) = 1`. Its non-quadraticity is exact, not merely sampled: any trace form
+   111	is affine in the Bloch direction, so `g(e_x) = g(e_z) = 1` with `g(I) = 1`
+   112	forces the value `1/2` at the direction `(e_x - e_z)/sqrt(2)`, while the
+   113	lexicographic rule assigns `0` there. Three directions plus normalization
+   114	refute every `2x2` trace form at once; the sampled least-squares fit is kept
+   115	only as a secondary bound and control.
+   116	
+   117	**R2 (composite rescue).** A bonded neighbor pair has Hilbert dimension `4`,
+   118	which is `>= 3`, so Gleason applies to any `w` satisfying H1-H4 on the pair.
+   119	There is a density operator `rho` on the pair such that `w(E) = Tr(rho E)` for
+   120	composite projections `E`. For embedded single-site projections this gives
+   121	`w(P tensor I) = Tr(rho (P tensor I)) = Tr(rho_1 P)`, where `rho_1` is the
+   122	partial trace over the neighbor. Thus the single-site restriction is quadratic:
+   123	it has Born form. The value of `rho` is determined by conditioning, here by
+   124	records, but this note does not derive those values.
+   125	
+   126	**R3 (exception voided).** The R1 rogue functions do not extend to any grading
+   127	that satisfies H1-H4 on the neighbor composite. If such an extension existed,
+   128	R2 would force the embedded single-site restriction to have the quadratic Born
+   129	form `Tr(rho_1 P)`, contradicting the explicit non-quadratic R1 assignment. The
+   130	nearest-neighbor lattice is what makes a composite available; H4's full
+   131	composite projection measure is what voids the dimension-2 loophole. The
+   132	attribution matters: adjacency alone pays for nothing here without H4's
+   133	strength.
+   134	
+   135	**R4 (zero-information limit).** Under an explicit additional premise -
+   136	invariance of `w` under every unitary automorphism of the composite, whose
+   137	commutant is scalar - `rho = I/d` follows. This full-symmetry premise is named
+   138	here; it is not derived from H1-H4 or from the minimal axioms, and "no
+   139	conditioning records" alone does not supply it. Under it, weights are uniform
+   140	on symmetric menus: `1/2` on embedded one-site rank-1 binary alternatives in a
+   141	pair, and `1/4` on the Bell-basis rank-1 composite menu. This is consistent
+   142	with the landed uniform-on-orbits results and adds no new selection claim.
+   143	
+   144	## No-Go Discipline Gate
+   145	
+   146	- **N1 route inventory:** direct one-site Gleason is unavailable in dimension
+   147	  `2`; imposing H1-H3 alone leaves the constructive rogue `g`; using the
+   148	  neighbor composite invokes an explicit bridge input plus H4; deriving grading
+   149	  values from records is downstream and not attempted.
+   150	- **N2 primitive boundary:** H1 is the candidate primitive. The note assumes it
+   151	  only to determine form; it does not approve, register, rename, or strengthen
+   152	  any primitive.
+   153	- **N3 hidden-wall scan:** H4 does not smuggle dynamics - no rates, histories,
+   154	  updates, transition kernels, Hamiltonians, or record-production. It DOES
+   155	  import pair-level menu ontology beyond the minimal axioms (pair possibility
+   156	  domain, entangled alternatives, eligibility structure); that import is
+   157	  declared inside H4 as the registration's specification burden rather than
+   158	  hidden.
+   159	- **N4 bridge-source honesty:** Gleason's theorem is imported as named
+   160	  classical mathematics. The runner checks the finite-dimensional consequences
+   161	  used here; it does not pretend to re-prove Gleason.
+   162	- **N5 steelman:** "This is just textbook Gleason." Reply: the bridge input is
+   163	  textbook, but the framework content is R1/R3 plus H4's declared specification
+   164	  burden - one `M_2(C)` site admits rogue frame functions, and the neighbor
+   165	  composite is where H4's projection-measure strength voids the loophole.
+   166	- **N6 hidden-value scan:** The theorem fixes form, not values. Record
+   167	  conditioning of `rho`, if admitted anywhere, is downstream content outside
+   168	  this note.
+   169	- **N7 scope guard:** The note does not touch orientation, scale, rate, time,
+   170	  readout-context selection, record production, or physical persistence. It is
+   171	  only a conditional bridge about menu weights.
+   172	- **N8 audit hygiene:** No audit verdict is set, forecast, or implied; no axiom
+   173	  or primitive file is changed; no claim is made that H4 follows from the
+   174	  minimal axioms.
+   175	
+   176	## Non-Claims
+   177	
+   178	- Does **not** claim H1, the graded-constraint primitive, is approved or exists.
+   179	- Does **not** derive weight values; record-conditioning of `rho` is downstream.
+   180	- Does **not** touch orientation, rate, scale, record production, dynamics,
+   181	  update rules, or persistence.
+   182	- Does **not** set an audit verdict or close a wall.
+   183	- Does **not** re-prove Gleason's theorem; Gleason is the named bridge input.
+   184	
+   185	## Verification
+   186	
+   187	The companion runner is a mechanical harness, not the proof: the load-bearing
+   188	steps are the named bridge input and the exact R1 contradiction. It performs
+   189	needle checks against the note and the minimal axiom memo; constructs the R1
+   190	rogue frame function and verifies the exact three-direction contradiction
+   191	against every `2x2` trace form, keeping the sampled least-squares
+   192	Hermitian-trace-form fit (a superset of Born density forms) as a secondary
+   193	bound with a Born-form control; verifies partial-trace bookkeeping identities
+   194	for product, Bell, and maximally mixed states (implementation checks, not R2
+   195	evidence); checks embedded and Bell menu normalization; checks the maximally
+   196	mixed consequences for the separately-premised R4 limit; and exercises
+   197	additivity and non-contextuality rejectors. R3 is carried as a corollary of
+   198	the bridge input plus the exact R1 contradiction, and the runner labels it so.
+   199	
+   200	Measured runner total after final verification: `TOTAL: PASS=24 FAIL=0`.
+
+exec
+/bin/zsh -c "nl -ba docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md | sed -n '282,380p'
+nl -ba docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+   282	## Verification
+   283	
+   284	The primary runner re-derives every load-bearing identity exactly (sympy,
+   285	rational/symbolic arithmetic, single process, one-site `M_2` objects only):
+   286	the parameter-recovery lemma for `S`; the T1 characterization identity
+   287	symbolically and on witnesses (projective, coin, split, axis-cancellation
+   288	in a generic octant, all-octant rationals, degenerate axis cases, a
+   289	coplanar three-element menu) with a non-menu rejector; the ray-additivity
+   290	and coin eliminations as formal linear algebra; the monotone
+   291	rational-squeeze scaffolding with the interval-nonvacuity guard and a
+   292	non-monotone rejector; the axis-cancellation affinity elimination to
+   293	`g(n) = (1 + n·s)/2`; the state bound `|s| ≤ 1` and the representation and
+   294	uniqueness identities on symbolic scaled effects; the paired-menu
+   295	normalization of the rogue extension as a formal identity under the
+   296	complement law; the unpairedness of the split and axis schemas; the reused
+   297	exact three-direction refutation with an affine control; and needle checks
+   298	pinning the quoted sentences of the axiom memo and the parent block note.
+   299	Mutation checks (one load-bearing mutation per check family, reverted) are
+   300	recorded in the review history and PR body.
+   301	
+   302	Measured runner total after final verification:
+   303	`TOTAL: PASS=57 FAIL=0`.
+     1	---
+     2	claim_id: born_form_effect_menu_sitewise_forcing_and_product_menu_boundary_bounded_theorem_note_2026-07-17
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional two-sided statement on the menu grade of the graded-constraint hypothesis surface, with the projective and effect grades treated as the two poles and intermediate menu families named untested. Effect horn: if the assumed grading is defined on the effect algebra of a finite region with finite effect-partition menus eligible, the Born trace form is forced sitewise at every finite dimension >= 2, reproved from finite operator algebra with no literature bridge input; the landed one-site projective rogue extends to no such grading. Projective horn boundary: on a bonded pair, grading hypotheses whose eligible menus are the product-projector resolutions do not force the Born trace form (constructive witness; exhaustive product-menu classification), so the landed composite route's menu family cannot be weakened all the way to product-projector menus at 2x2; no claim is made that full H4 or any particular entangled-menu family is minimal. The menu grade itself is underived; no horn is selected; the grading primitive is assumed here, not adopted."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	runner: scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py
+     8	---
+     9	
+    10	# Born Form At Effect-Menu Grade: Sitewise Forcing With No Bridge Input, And The Product-Menu Boundary On The Projective Horn
+    11	
+    12	**Date:** 2026-07-17
+    13	**Type:** bounded_theorem
+    14	**Claim type:** bounded_theorem
+    15	**Scope:** bridge-conditional; the grading hypotheses are assumed here, not
+    16	adopted, and the menu grade they are stated at is itself underived.
+    17	**Audit-status authority:** independent audit lane only. This note sets no
+    18	audit verdict and predicts none.
+    19	**Primitive status:** no primitive is approved, registered, edited, or
+    20	enlarged here. Every grading hypothesis below is conditional input only.
+    21	**Primary runner:**
+    22	[`scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py`](../scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py)
+    23	**Runner cache:**
+    24	[`logs/runner-cache/born_form_effect_menu_sitewise_forcing_2026_07_17.txt`](../logs/runner-cache/born_form_effect_menu_sitewise_forcing_2026_07_17.txt)
+    25	
+    26	## Purpose
+    27	
+    28	The landed composite bridge note
+    29	[`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+    30	fixes the form of a lawful graded constraint at projective-menu grade: its
+    31	hypotheses H1-H3 place a weight function on projections, H4 makes every
+    32	finite orthogonal resolution of a bonded-pair identity menu-eligible,
+    33	including resolutions that contain entangled projections, and the trace form
+    34	then follows through one named literature bridge input, stated there as
+    35	"Gleason's theorem is imported as named classical mathematics."
+    36	
+    37	This note isolates the menu-grade dial in that hypothesis surface and proves
+    38	one exact statement on each side of it:
+    39	
+    40	- **Effect horn.** If the same grading hypotheses are instead stated on the
+    41	  effect algebra of a finite region — weights defined on all effects, finite
+    42	  effect partitions of the identity menu-eligible — the Born trace form is
+    43	  forced already at a single site, at every finite dimension `>= 2`, by a
+    44	  five-step finite operator-algebra argument reproved here with no literature
+    45	  bridge input. The landed one-site projective rogue assignment extends to no
+    46	  grading of this kind, so the dimension-2 loophole is a feature of the
+    47	  projective grade, not of the site dimension.
+    48	- **Projective horn boundary.** On the bonded pair, the projective-grade
+    49	  hypotheses restricted to product-projector menus do not force the Born
+    50	  trace form: a constructive product-form rogue normalizes every
+    51	  product-projector menu (classified exhaustively) while restricting on one
+    52	  site to the landed non-quadratic assignment. H4's menu family therefore
+    53	  cannot be weakened all the way to product-projector menus at `2 x 2`;
+    54	  whether full H4 or some intermediate entangled-menu family is minimal is
+    55	  not established here.
+    56	
+    57	Neither horn is selected. The axioms supply no menus at all; which resolutions
+    58	of the identity are menus, and at which grade, is exactly the registration
+    59	content the landed note declares as H4's specification burden. This note
+    60	sharpens that burden into a two-sided exact statement and moves nothing else.
+    61	
+    62	## Authorities and Inputs
+    63	
+    64	- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+    65	  the `Z^3` nearest-neighbor lattice, the one-site `M_2(C)` possibility
+    66	  domain, and the Record sentences "Only records are readable. A readout
+    67	  value is determined by record content alone." The axioms do not supply
+    68	  probabilities, weights, menus, update rules, or record-production
+    69	  processes, and the memo's Qualification states: "These axioms state only
+    70	  their named primitive content. Further physical structure requires a
+    71	  retained derivation or bridge, or explicit approved-primitive registration,
+    72	  before use as a premise."
+    73	- [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+    74	  — the landed projective-horn route: hypotheses H1-H4, the one-site rogue
+    75	  construction R1, the composite rescue R2/R3 through the Gleason bridge
+    76	  input, and the declared specification burden. Cited as the projective-horn
+    77	  authority; its Gleason import is not used by this note's effect-horn
+    78	  results.
+    79	- [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+    80	  — the repo's reproven-from-primitives effect-representation argument on
+    81	  `M_2(C)` under hypotheses (M1)-(M3), with the explicit reconstruction
+    82	  `σ = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ]`. Theorem T1 below
+    83	  restates that five-step argument dimension-generically and the runner
+    84	  re-derives its load-bearing identities independently at dimensions 2 and 4.
+    85	- Literature comparators (never proof inputs): Busch 2003 and
+    86	  Caves-Fuchs-Manne-Renes 2004 for the effect-level representation theorem;
+    87	  Wallach 2002 for the statement that unentangled frame functions determine
+    88	  density operators only when every tensor factor has dimension at least 3.
+    89	  The `2 x 2` product-menu boundary claimed here is proved by this note's own
+    90	  constructive witness and classification, not by the comparator.
+    91	
+    92	## Hypotheses
+    93	
+    94	Let `Λ ⊂ Z^3` be a finite region, `H_Λ = ⊗_{x∈Λ} C^2`, `d = 2^{|Λ|}`, and
+    95	`E(H_Λ) = { E : 0 ≤ E ≤ 1 }` the effect algebra of the region algebra. The
+    96	landed projective-horn hypotheses H1-H3 place `w ≥ 0` on projections with
+    97	`w(0) = 0`, `w(identity) = 1`, menu-normalization on finite orthogonal
+    98	resolutions of the identity, additivity, and embedding-independence. The
+    99	effect-grade restatement assumed by the effect horn is:
+   100	
+   101	**(E1) grading exists at effect grade.** There is `w : E(H_Λ) → [0,1]` with
+   102	`w(0) = 0` and `w(1) = 1`. As at projective grade, `w` is a function of the
+   103	effect alone; the value does not depend on which eligible menu embeds it.
+   104	
+   105	**(E2) finite effect menus are eligible.** For every finite family
+   106	`{E_i} ⊂ E(H_Λ)` with `Σ_i E_i = 1`, the family is an eligible menu and
+   107	`Σ_i w(E_i) = 1`.
+   108	
+   109	E1-E2 keep the shape of H1-H3 together with an H4-style universal
+   110	menu-eligibility clause — in the landed note, universal eligibility is
+   111	carried by H4's "every finite orthogonal resolution ... is menu-eligible",
+   112	not by H1-H3 alone — with "projection" replaced by "effect" and orthogonal
+   113	resolutions replaced by finite effect partitions. They are neither implied
+   114	by nor implied-in the projective-grade hypotheses on the same region: the
+   115	domain and the menu family are both enlarged, and the enlarged menu family
+   116	is a strictly stronger normalization demand. Only finite menus
+   117	are used anywhere below; no countable-additivity clause is assumed. Whether
+   118	the physical registration supplies menus at projective grade, at effect
+   119	grade, at neither, or at some intermediate family is underived and is not
+   120	decided here.
+   121	
+   122	## Results
+   123	
+   124	**T1 (effect horn: sitewise forcing at every finite dimension, no bridge
+   125	input).** Assume E1-E2 on a finite region of dimension `d ≥ 2`. Then there is
+   126	a unique density matrix `σ` with `w(E) = Tr(σE)` for every effect `E`. The
+   127	proof is the five-step finite argument, dimension-generic:
+   128	
+   129	- **(A) Partial additivity.** For effects with `E_1 + E_2 ≤ 1`, apply E2 to
+   130	  the menus `{E_1, E_2, 1 − E_1 − E_2}` and `{E_1 + E_2, 1 − E_1 − E_2}`:
+   131	  subtracting, `w(E_1 + E_2) = w(E_1) + w(E_2)`. The two-outcome menu
+   132	  `{E, 1 − E}` gives the complement law `w(E) + w(1 − E) = 1`.
+   133	- **(B) Homogeneity.** Iterating (A) on the `(r+1)`-outcome menu
+   134	  `{E/r, ..., E/r, 1 − E}` gives `w(E/r) = w(E)/r` and then `w(qE) = q w(E)`
+   135	  for rational `q ∈ [0,1]`. Monotonicity follows from (A): if `E ≤ F` then
+   136	  `F − E` is an effect and `w(F) = w(E) + w(F − E) ≥ w(E)`. For real
+   137	  `t ∈ [0,1]` and rationals `q_1 < t < q_2`, the operator inequalities
+   138	  `q_1 E ≤ tE ≤ q_2 E` then squeeze `w(tE)` between `q_1 w(E)` and
+   139	  `q_2 w(E)`, so `w(tE) = t w(E)`.
+   140	- **(C) Linear extension.** `Herm(M_d)` is a real vector space of dimension
+   141	  `d^2` spanned by effects (the normalized identity-plus-generator elements
+   142	  `(1 + B_k)/2` and `1` itself). Additivity plus homogeneity on the positive
+   143	  cone extend `w` to a well-defined real-linear functional `F` on
+   144	  `Herm(M_d)`: scale any positive `A` into the effect interval, set
+   145	  `F(A) = s·w(A/s)` for `s` dominating the top eigenvalue (well-defined by
+   146	  homogeneity), and define `F` on differences; the standard two-sided
+   147	  cancellation argument shows representation-independence.
+   148	- **(D) Trace representation.** The trace pairing `⟨X,Y⟩ = Tr(XY)` is a
+   149	  nondegenerate real inner product on `Herm(M_d)`, so `F(H) = Tr(σH)` for a
+   150	  unique Hermitian `σ`, reconstructed linearly from the `d^2` basis values of
+   151	  `w`. At `d = 2` this is exactly the landed display
+   152	  `σ = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ]`.
+   153	- **(E) State property.** `w(1) = 1` gives `Tr σ = 1`; for every unit vector
+   154	  `ψ` the rank-1 projector is an effect, so `⟨ψ|σ|ψ⟩ = w(P_ψ) ≥ 0`, hence
+   155	  `σ ≥ 0`.
+   156	
+   157	No step uses `d ≥ 3`, a composite, a projective frame-function analysis, or
+   158	any literature theorem. The runner re-derives the load-bearing identities of
+   159	every step exactly at `d = 2` and `d = 4`.
+   160	
+   161	**T2 (effect horn: the landed rogue extends to no effect-grade grading).**
+   162	The landed R1 assignment `g` — the lexicographic hemisphere rule on one-site
+   163	rank-1 projections, which satisfies the projective-grade hypotheses on
+   164	one-site binary menus — extends to no `w` satisfying E1-E2 on a single site.
+   165	By T1 any such `w` is a trace form; every `2 x 2` trace form is affine in the
+   166	Bloch direction, and the landed exact three-direction contradiction
+   167	(`g(e_x) = g(e_z) = 1` with `g(1) = 1` forces the value `1/2` at
+   168	`(e_x − e_z)/√2`, where `g` assigns `0`) refutes every trace-form
+   169	restriction. The landed note's sentence "Three directions plus normalization
+   170	refute every `2x2` trace form at once" is reused unchanged; what is new is
+   171	the direction of use: at effect grade the refutation kills the rogue rather
+   172	than the forcing, at one site, with no composite and no bridge input.
+   173	
+   174	**T3 (projective horn boundary: product-projector menus do not force the
+   175	Born form on the bonded pair).** Work on a bonded nearest-neighbor pair,
+   176	`d = 4`, at projective grade, but with the eligible menus restricted to
+   177	product-projector resolutions: finite families of nonzero projectors of the
+   178	form `A ⊗ B` (`A`, `B` one-site projectors) summing to the pair identity.
+   179	The weight domain remains all pair projections, as in the landed H1; with
+   180	the menu family so restricted, values on non-product projections are
+   181	constrained by no eligible menu, and the witness below is completed to the
+   182	full domain by an explicit arbitrary extension. Then:
+   183	
+   184	- **(T3a) Classification.** Every product-projector menu is a tree menu: up
+   185	  to swapping the two sites, it is `{1}`, or `{P(a)⊗1, P(−a)⊗1}`, or
+   186	  `{P(a)⊗1, P(−a)⊗P(d), P(−a)⊗P(−d)}`, or
+   187	  `{P(a)⊗P(b), P(a)⊗P(−b), P(−a)⊗P(b'), P(−a)⊗P(−b')}` — a first-site split
+   188	  refined branchwise on the second site, or the site-swapped form. The proof
+   189	  is a finite case analysis from two exact facts: one-site rank-1 projectors
+   190	  are orthogonal exactly when their Bloch directions are antipodal, and
+   191	  `(P(a)⊗P(b)) ⊥ (P(c)⊗P(d))` exactly when `a·c = −1` or `b·d = −1`. Three
+   192	  pairwise-orthogonal rank-1 products cannot share one first-site direction
+   193	  (three mutually antipodal second-site directions are impossible), a rank-3
+   194	  complement is never a product projector (product-projector ranks on the
+   195	  pair are 1, 2, 4), and a rank-1 product below `P(−a)⊗1` must carry first
+   196	  slot `−a` (a rank-1 projector lies below a projector exactly when their
+   197	  overlap trace is 1, and `Tr(P(−a)P(c)) = (1 − a·c)/2 = 1` forces
+   198	  `c = −a`). The runner gates each fact and each case branch exactly.
+   199	- **(T3b) Constructive rogue.** Define `W` on product projectors by the
+   200	  product rule `W(A ⊗ B) = g_1(A) · g_2(B)`, with `g_1`, `g_2` lexicographic
+   201	  hemisphere rules and `g_i(1) = 1`, `g_i(0) = 0`, and extend `W` to the
+   202	  remaining (non-product) pair projections by the constant value `1/2` — an
+   203	  arbitrary choice that no product-projector menu constrains, so the
+   204	  extended `W` is defined on the full projection domain of the landed H1
+   205	  while every menu-normalization obligation of the restricted family falls
+   206	  on the product values alone. Using `g_i(n) + g_i(−n) = 1` (which the
+   207	  hemisphere rule satisfies exactly, including on its tie set), `W` sums to
+   208	  1 on every tree menu of either rooting, hence on every product-projector
+   209	  menu by T3a. Its one-site restriction `W(A ⊗ 1) = g_1(A)` is the landed
+   210	  rogue, which by the three-direction contradiction is no trace form; since
+   211	  `E ↦ Tr(ρ(E ⊗ 1))` is trace-affine for every pair state `ρ`, no density
+   212	  matrix on the pair represents `W`.
+   213	- **(T3c) Consequence.** At `2 x 2`, projective-grade hypotheses whose menu
+   214	  family contains only product-projector resolutions do not force the Born
+   215	  form. The landed composite route's H4 clause — menu-eligibility for
+   216	  resolutions "that contain entangled projections", with the landed
+   217	  refutation-seat finding "Without this full projection-measure strength a
+   218	  partial menu assignment is not a frame function and Gleason does not
+   219	  apply" — therefore cannot be weakened all the way to product-projector
+   220	  menus at `2 x 2`; whether full H4, or some intermediate projective-menu
+   221	  family, is minimal is untested here. This agrees with the comparator
+   222	  statement (Wallach 2002) that
+   223	  unentangled frame functions determine density operators only when every
+   224	  factor has dimension at least 3; the `2 x 2` case claimed here is proved
+   225	  natively by T3a-T3b. Entangled projections are not products (the runner
+   226	  gates a Bell-projector Schmidt-rank witness), and `W` assigns them no
+   227	  value, so T3 is consistent with, and does not touch, the landed R2/R3
+   228	  forcing under full H4 strength.
+   229	
+   230	**T4 (the menu grade is the dial, and the attribution moves).** T1-T3
+   231	together relocate the landed dimension-2 loophole: it is not a fact about the
+   232	site, it is a fact about the projective grade. On the effect horn the form is
+   233	fixed sitewise and the nearest-neighbor lattice pays for nothing in the
+   234	form-fixing step — composites matter there only for values (joint states and
+   235	their conditioning), which remain underived. On the projective horn the
+   236	lattice composite plus full entangled-menu strength plus the Gleason bridge
+   237	input remain exactly what the landed note says they are, and T3 shows the
+   238	entangled-menu clause cannot be weakened to product menus at `2 x 2`. The
+   239	landed attribution sentence "adjacency alone pays for nothing here without
+   240	H4's strength" is thereby sharpened in both directions: with effect menus,
+   241	adjacency is not needed for the form; with product-projective menus,
+   242	adjacency plus the bridge input still do not suffice. Which menu family the
+   243	physical registration supplies — the two grades treated here are the poles,
+   244	and intermediate families remain untested — is an open item of the declared
+   245	specification burden; this note records two bounded horns and selects no
+   246	grade.
+   247	
+   248	**T5 (zero-information limit at a finite-group premise, effect horn).**
+   249	Under the additional named premise that `w` is invariant under conjugation by
+   250	the three one-site Pauli unitaries — a finite group, strictly weaker than the
+   251	landed R4 premise of invariance under every unitary automorphism — the
+   252	reconstruction of T1 forces `σ = 1/2 · 1` (the maximally mixed `I/2`) at
+   253	one site: invariance transfers to
+   254	`σ` by uniqueness, and the only `2 x 2` Hermitian commuting with all three
+   255	Pauli conjugations is scalar. Weights are then uniform on binary menus,
+   256	consistent with the landed uniform-on-orbits results. This premise is named
+   257	here and not derived; "no conditioning records" alone does not supply it.
+   258	
+   259	## Relation To The Landed Effect-Level Surface
+   260	
+   261	The finite-region statement of
+   262	[`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+   263	reaches the same trace-form conclusion on `E(H_Λ)`, but its landed
+   264	derivation routes the `|Λ| ≥ 2` case through the projective companion
+   265	[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md),
+   266	which imports Gleason's projective theorem as named standard mathematics,
+   267	and it assumes countable additivity. T1 differs on exactly those two
+   268	surfaces: the five-step argument is dimension-generic on the effect algebra,
+   269	so no projective import enters at any `|Λ|`, and only finite menus are
+   270	assumed. The legacy chain
+   271	[`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`](BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md)
+   272	carries separate inductive-limit and identification inputs that this note
+   273	does not use and does not discharge. The orientation memo
+   274	[`GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md`](GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md)
+   275	is cited for orientation and scope discipline only and carries no premise
+   276	weight here.
+   277	
+   278	## No-Go Discipline Gate
+   279	
+   280	T3 is a bounded negative boundary ("product-projector menus do not force the
+   281	Born trace form at `2 x 2`"), so the negative-claim checklist is answered
+   282	for it:
+   283	
+   284	- **N1 route inventory (five routes against T3):** (1) coarse rank-2 product
+   285	  menus added — ATTEMPTED, the rogue normalizes them (T3a covers ranks 1, 2,
+   286	  4); (2) non-tree product menus that might constrain further — RULED OUT by
+   287	  the T3a classification; (3) countable product-projector partitions — a
+   288	  finite-dimensional identity admits at most `d` nonzero mutually orthogonal
+   289	  projectors, so countable adds nothing at `d = 4`; (4) menus mixing
+   290	  projective structure with non-projective effects (classical mixtures of
+   291	  projective menus and other intermediate families) — OUTSIDE T3's scope by
+   292	  construction and named untested; the comparator literature suggests such
+   293	  families can force the form already at one site, which is exactly why T3
+   294	  is scoped to product-projector resolutions only; (5) larger regions
+   295	  (`2 x 2 x 2` product menus) — untested here; the comparator statement says
+   296	  qubit factors never suffice, but no native claim is made beyond the bonded
+   297	  pair.
+   298	- **N2 wall independence:** T3 names one wall (product-menu insufficiency at
+   299	  `2 x 2`); no second wall is presented.
+   300	- **N3 hidden-wall scan:** T3 assumes the projective-grade hypotheses of the
+   301	  landed note restricted to a smaller menu family; the restriction is the
+   302	  claim, not a hidden condition, and the witness is completed to the full
+   303	  projection domain by the explicit arbitrary extension stated in T3b (the
+   304	  restricted menu family constrains no non-product value, which is exactly
+   305	  the content of the restriction). The tie-set convention inside the
+   306	  hemisphere rule is inherited verbatim from the landed R1 construction and
+   307	  gated.
+   308	- **N4 residual matching:** the only cited prior negative is the landed R1
+   309	  rogue existence, reused at the same resolution (one-site binary menus and
+   310	  their product refinements).
+   311	- **N5 rhetoric audit:** the negative is stated as "do not force the Born
+   312	  trace form", scoped to the stated menu family on the stated pair; T3c
+   313	  states the exact family and dimension, and the note nowhere claims that
+   314	  full H4 or any particular entangled-menu family is minimal.
+   315	- **N6 partial-closure scan:** the closure path is named, not denied — full
+   316	  H4 strength (landed) or effect-grade menus (T1); T3 forecloses neither.
+   317	- **N7 steelman:** "product menus are the physically natural family, so T3
+   318	  kills the projective horn." Reply: T3 proves insufficiency of that family,
+   319	  not naturalness; which family the registration supplies is exactly the
+   320	  declared open specification item, and the landed composite route under
+   321	  full H4 strength is untouched.
+   322	- **N8 cross-cycle echo:** the structurally similar prior wall — one-site
+   323	  dimension-2 rogue existence — was retired on the composite by H4 strength
+   324	  (landed R3) and is retired sitewise at effect grade by T2 here; both
+   325	  mechanisms are cited, and neither retires T3's product-menu wall.
+   326	
+   327	## Non-Claims
+   328	
+   329	- Does **not** claim any grading exists, at any grade; E1-E2 and the
+   330	  projective-grade hypotheses are conditional input only.
+   331	- Does **not** select a menu grade, register or modify any primitive, or
+   332	  derive menu-eligibility from the axioms; the axioms supply no menus.
+   333	- Does **not** derive weight values, record conditioning, rates, dynamics,
+   334	  update rules, orientation, or scale.
+   335	- Does **not** touch the landed composite route's conclusions under full H4
+   336	  strength, and does **not** re-prove or use Gleason's projective theorem.
+   337	- Does **not** set an audit verdict or close the probability wall; landing is
+   338	  not ratification, and independent audit remains required.
+   339	
+   340	## Verification
+   341	
+   342	The primary runner re-derives every load-bearing identity exactly (sympy,
+   343	rational/symbolic arithmetic, single process, dimensions 2 and 4 only):
+   344	the menu bookkeeping behind (A) and (B) as formal linear elimination; the
+   345	effect-cone witnesses (including a noncommuting pair); the monotonicity and
+   346	squeeze inequalities on exact witnesses with a non-monotone rejector; the
+   347	`d = 2` and `d = 4` effect bases with nondegenerate trace Gram matrices; the
+   348	reconstruction identity `w(E) = Tr(σE)` on symbolic effects, matching the
+   349	landed Bloch display at `d = 2`; the state property; the exact
+   350	three-direction refutation of every `2 x 2` trace form and its T2 corollary
+   351	logic; the antipodal-orthogonality and product-orthogonality lemmas; each
+   352	case branch of the T3a classification (including the three-antipodal
+   353	impossibility, the rank-3 non-product fact, and the below-`P(−a)⊗1`
+   354	forcing); the hemisphere complement law including tie-set witnesses; the
+   355	product-rogue normalization on both tree rootings and coarse menus; the
+   356	trace-affinity of pair-state restrictions; the Bell-projector Schmidt-rank
+   357	witness; the Pauli-commutant computation behind T5; and needle checks that
+   358	pin the quoted sentences of the axiom memo and the two landed notes named
+   359	above. Mutation checks (one load-bearing mutation per check family,
+   360	reverted) are recorded in the review history and PR body.
+   361	
+   362	Measured runner total after final verification:
+   363	`TOTAL: PASS=54 FAIL=0`.
+
+exec
+/bin/zsh -c "nl -ba docs/MINIMAL_AXIOMS_2026-06-29.md | sed -n '1,74p'
+rg -n '\"|“|”|\\]\\(' docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	# Minimal Framework Axioms (Lattice, Qubit, Admissibility, Record)
+     2	
+     3	> **Key terms used in this doc** are indexed A-Z at `docs/KEY_TERMINOLOGY.md`;
+     4	> each row points to the canonical source-of-truth doc.
+     5	
+     6	**Date:** 2026-06-29
+     7	**Type:** meta
+     8	**Status:** current public framework axiom memo for the qubit-on-`Z^3`
+     9	package with local admissibility and fixed scalar record readout.
+    10	**Status authority:** explicit owner approval for the 2026-06-29 foundation
+    11	reset is recorded in `docs/audit/AXIOM_MINIMALITY_POLICY.md` section 6.
+    12	Audit status remains set only by the independent audit lane.
+    13	
+    14	**Supersedes:** `MINIMAL_AXIOMS_2026-06-05.md`. The 2026-06-05 memo remains the
+    15	historical source for the prior Lattice/Quantum/Record wording in which
+    16	realized outcome was latent in Record and no explicit local admissibility
+    17	constraint was named.
+    18	
+    19	## Purpose
+    20	
+    21	This note states the framework's minimal ontology premises. They are named
+    22	rather than treated as bare letter codes:
+    23	
+    24	1. **Lattice**
+    25	2. **Qubit**
+    26	3. **Admissibility**
+    27	4. **Record**
+    28	
+    29	Legacy `A1`/`A2` numbering and the older `Quantum` axiom name are historical.
+    30	New repo surfaces should use the axiom names above unless quoting an older
+    31	document.
+    32	
+    33	## The Four Framework Axioms
+    34	
+    35	### Lattice / Physical Locality
+    36	
+    37	Physical sites are the points of the cubic lattice `Z^3`, with nearest-neighbor
+    38	adjacency, standard translations, and proper cubic rotations about each site.
+    39	
+    40	No site is privileged. Sites are distinguished by the supplied lattice
+    41	structure alone.
+    42	
+    43	### Qubit / Site Possibility
+    44	
+    45	Each site has a domain of local possibilities.
+    46	
+    47	The full one-site possibility domain has algebraic presentation `M_2(C)`.
+    48	
+    49	A `Cl(3,0)`-compatible real-algebra presentation may be used equivalently and
+    50	adds no further primitive structure.
+    51	
+    52	No possibility is privileged. Possibilities are distinguished by the supplied
+    53	algebraic structure alone.
+    54	
+    55	### Admissibility / Local Constraint
+    56	
+    57	There is one fixed nearest-neighbor admissibility rule, covariant under lattice
+    58	translations and proper cubic rotations.
+    59	
+    60	For each site, the available possibilities are determined by, and vary with,
+    61	the nearest-neighbor conditions.
+    62	
+    63	### Record / Fixed Reality
+    64	
+    65	Records form.
+    66	
+    67	When present, a record locks exactly one admissible local possibility. A
+    68	site never carries more than one record; records are permanent.
+    69	
+    70	Only records are readable. A readout value is determined by record content
+    71	alone. For any finite collection of pairwise-disjoint records, scalar readout
+    72	`I` is additive, with `I(empty)=0`.
+    73	
+    74	## Qualification
+4:claim_scope: "Bridge-conditional thinning of the effect-menu horn at one site: on the scaled-projector family (nonnegative multiples of one-site rank-1 projectors and of the identity), menu normalization plus effect-functionality forces the Born trace form on that domain at a single M_2(C) site, with no literature bridge input, no composite, finite menus only, and no genuinely unsharp effect used anywhere — the forcing already runs on scaled rank-1 menus alone. Boundary: the paired subfamily (equal-weight antipodal pairs plus identity multiples) does not force — the landed one-site rogue extends to it explicitly — so some menu outside the paired subfamily is necessary. The family sits strictly between the projective and full-effect menu families; whether it or any smaller family is minimal is not established; no menu grade is selected; the grading primitive is assumed here, not adopted."
+22:[`scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py`](../scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py)
+24:[`logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt`](../logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt)
+29:[`BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md`](BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+32:the poles open, naming "classical mixtures of projective menus and other
+33:intermediate families" as untested, with the hypothesis-surface sentence:
+34:"Whether the physical registration supplies menus at projective grade, at
+36:not decided here."
+63:- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+64:  the one-site `M_2(C)` possibility domain and the Record sentences "Only
+66:  alone." The axioms do not supply probabilities, weights, menus, update
+68:- [`BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md`](BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md)
+73:- [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+226:T3a is a bounded negative ("the paired subfamily does not force"), so the
+250:- **N5 rhetoric audit:** "does not force" is scoped to the paired subfamily
+256:- **N7 steelman:** "paired menus are what classical mixing gives you, so
+257:  the physical case is closed against forcing." Reply: T3a proves exactly
+
+2026-07-17T21:14:46.787395Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+The source quotations and parent labels are matching so far. I’m now checking the literal local targets and the tighter frontmatter/body boundary, where the key distinction is between state-form forcing on scaled rank-1 effects and completing the theorem on the identity ray.
+exec
+/bin/zsh -c "for target in \\
+  scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py \\
+  docs/../scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py \\
+  docs/../logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt \\
+  docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md \\
+  docs/MINIMAL_AXIOMS_2026-06-29.md \\
+  docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md
+do
+  if [ -e \""'$target" ]; then
+    printf '"'EXISTS %s\\n' \""'$target"
+  else
+    printf '"'MISSING %s\\n' \""'$target"
+  fi
+done' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+EXISTS scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py
+EXISTS docs/../scripts/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.py
+EXISTS docs/../logs/runner-cache/born_form_scaled_projector_menu_family_sitewise_forcing_2026_07_17.txt
+EXISTS docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md
+EXISTS docs/MINIMAL_AXIOMS_2026-06-29.md
+EXISTS docs/BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md
+
+2026-07-17T21:15:42.214773Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+VERDICT: REVISE — quotations, parent-block characterizations, numbering, and links are clean, but one frontmatter claim is stronger than the body.
+
+1. In [file 1](/Users/jonBridger/Toy%20Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:4), `claim_scope` says:
+
+   > “no genuinely unsharp effect used anywhere — the forcing already runs on scaled rank-1 menus alone.”
+
+   But T2(d) explicitly uses identity-ray coin menus and says they “complete the representation over the identity ray of `S`.” Thus scaled rank-1 menus alone fix the state/form on the rank-1 part, but do not prove the stated representation for every `E ∈ S`. “Genuinely unsharp” is also undefined and potentially misleading because scaled nonprojectors are ordinarily effects. Narrow the claim to the body’s precise wording: rank-1 schemas carry the state-form forcing; coins complete the identity ray.
+
+No verbatim quotation mismatches found. The quoted intermediate-family phrase and hypothesis-surface sentence match the parent exactly; the Record quotation matches `MINIMAL_AXIOMS_2026-06-29.md`. The parent’s E1–E2, T1 attribution, named-untested item, lexicographic rogue, and exact three-direction refutation are characterized accurately. The `claim_id` matches the filename, the runner exists, and all six Markdown targets in file 1 exist as written.
+tokens used
+39,986
+VERDICT: REVISE — quotations, parent-block characterizations, numbering, and links are clean, but one frontmatter claim is stronger than the body.
+
+1. In [file 1](/Users/jonBridger/Toy%20Physics/.claude/worktrees/quirky-wiles-92e3b4/docs/BORN_FORM_SCALED_PROJECTOR_MENU_FAMILY_SITEWISE_FORCING_AND_PAIRED_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:4), `claim_scope` says:
+
+   > “no genuinely unsharp effect used anywhere — the forcing already runs on scaled rank-1 menus alone.”
+
+   But T2(d) explicitly uses identity-ray coin menus and says they “complete the representation over the identity ray of `S`.” Thus scaled rank-1 menus alone fix the state/form on the rank-1 part, but do not prove the stated representation for every `E ∈ S`. “Genuinely unsharp” is also undefined and potentially misleading because scaled nonprojectors are ordinarily effects. Narrow the claim to the body’s precise wording: rank-1 schemas carry the state-form forcing; coins complete the identity ray.
+
+No verbatim quotation mismatches found. The quoted intermediate-family phrase and hypothesis-surface sentence match the parent exactly; the Record quotation matches `MINIMAL_AXIOMS_2026-06-29.md`. The parent’s E1–E2, T1 attribution, named-untested item, lexicographic rogue, and exact three-direction refutation are characterized accurately. The `claim_id` matches the filename, the runner exists, and all six Markdown targets in file 1 exist as written.

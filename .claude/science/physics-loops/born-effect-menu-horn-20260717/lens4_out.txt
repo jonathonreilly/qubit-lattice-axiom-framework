@@ -1,0 +1,2212 @@
+2026-07-17T19:32:15.060870Z ERROR codex_models_manager::cache: failed to load models cache: missing field `supports_reasoning_summaries` at line 88 column 5
+OpenAI Codex v0.144.1
+--------
+workdir: /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+model: gpt-5.6-sol
+provider: openai
+approval: never
+sandbox: danger-full-access
+reasoning effort: xhigh
+reasoning summaries: none
+session id: 019f7190-af7a-7fe3-b75f-50f4b6246d51
+--------
+user
+You are a READ-ONLY adversarial review lens (governance/status). Do NOT create, edit, or delete any file. Do NOT touch git. Deliver your verdict as your final message only.
+
+Files to read (exactly these):
+1. docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md
+2. .claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md
+3. .claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE.md
+4. .claude/science/physics-loops/born-effect-menu-horn-20260717/NO_GO_LEDGER.md
+5. docs/repo/CONTROLLED_VOCABULARY.md
+
+Task: hunt for governance defects: (i) any status-grade vocabulary misuse in the note (bare retained/promoted/ratified/audited_* outside historical context); (ii) any newly coined tier/class noun phrase not in the controlled vocabulary and not plain descriptive prose; (iii) N1-N8 completeness and whether the T3 negative claim's scope wording anywhere exceeds "product-projector menus at the bonded pair"; (iv) whether any sentence adopts, registers, or selects the grading primitive or a menu grade (it must not); (v) whether the note anywhere predicts or sets an audit outcome; (vi) certificate/trace-gate internal consistency (trace_class vs claims made).
+
+Output format: "VERDICT: <n> blocker(s), <m> major, <k> minor" then numbered findings with exact quotes. If clean, name the three sentences that came closest to a violation.
+
+exec
+/bin/zsh -lc "for f in 'docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md' '.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md' '.claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE.md' '.claude/science/physics-loops/born-effect-menu-horn-20260717/NO_GO_LEDGER.md' 'docs/repo/CONTROLLED_VOCABULARY.md'; do
+  awk '{printf \"%6d\\t%s\\n\", NR, "'$0}'"' \""'$f"
+done' in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	---
+     2	claim_id: born_form_effect_menu_sitewise_forcing_and_product_menu_boundary_bounded_theorem_note_2026-07-17
+     3	claim_type: bounded_theorem
+     4	claim_scope: "Bridge-conditional dichotomy on the menu grade of the graded-constraint hypothesis surface. Effect horn: if the assumed grading is defined on the effect algebra of a finite region with finite effect-partition menus eligible, the Born trace form is forced sitewise at every finite dimension >= 2, reproved from finite operator algebra with no literature bridge input; the landed one-site projective rogue extends to no such grading. Projective horn boundary: on a bonded pair, grading hypotheses restricted to product-projector menus do not force the trace form (constructive witness; exhaustive product-menu classification), so the landed composite route's entangled-menu strength is necessary at 2x2, not a convenience. The menu grade itself is underived; no horn is selected; the grading primitive is assumed here, not adopted."
+     5	upstream_dependencies:
+     6	  - minimal_axioms
+     7	runner: scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py
+     8	---
+     9	
+    10	# Born Form At Effect-Menu Grade: Sitewise Forcing With No Bridge Input, And The Product-Menu Boundary On The Projective Horn
+    11	
+    12	**Date:** 2026-07-17
+    13	**Type:** bounded_theorem
+    14	**Claim type:** bounded_theorem
+    15	**Scope:** bridge-conditional; the grading hypotheses are assumed here, not
+    16	adopted, and the menu grade they are stated at is itself underived.
+    17	**Audit-status authority:** independent audit lane only. This note sets no
+    18	audit verdict and predicts none.
+    19	**Primitive status:** no primitive is approved, registered, edited, or
+    20	enlarged here. Every grading hypothesis below is conditional input only.
+    21	**Primary runner:**
+    22	[`scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py`](../scripts/born_form_effect_menu_sitewise_forcing_2026_07_17.py)
+    23	**Runner cache:**
+    24	[`logs/runner-cache/born_form_effect_menu_sitewise_forcing_2026_07_17.txt`](../logs/runner-cache/born_form_effect_menu_sitewise_forcing_2026_07_17.txt)
+    25	
+    26	## Purpose
+    27	
+    28	The landed composite bridge note
+    29	[`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+    30	fixes the form of a lawful graded constraint at projective-menu grade: its
+    31	hypotheses H1-H3 place a weight function on projections, H4 makes every
+    32	finite orthogonal resolution of a bonded-pair identity menu-eligible,
+    33	including resolutions that contain entangled projections, and the trace form
+    34	then follows through one named literature bridge input, stated there as
+    35	"Gleason's theorem is imported as named classical mathematics."
+    36	
+    37	This note isolates the menu-grade dial in that hypothesis surface and proves
+    38	one exact statement on each side of it:
+    39	
+    40	- **Effect horn.** If the same grading hypotheses are instead stated on the
+    41	  effect algebra of a finite region — weights defined on all effects, finite
+    42	  effect partitions of the identity menu-eligible — the Born trace form is
+    43	  forced already at a single site, at every finite dimension `>= 2`, by a
+    44	  five-step finite operator-algebra argument reproved here with no literature
+    45	  bridge input. The landed one-site projective rogue assignment extends to no
+    46	  grading of this kind, so the dimension-2 loophole is a feature of the
+    47	  projective grade, not of the site dimension.
+    48	- **Projective horn boundary.** On the bonded pair, the projective-grade
+    49	  hypotheses restricted to product-projector menus force nothing: a
+    50	  constructive product-form rogue normalizes every product-projector menu
+    51	  (classified exhaustively) while restricting on one site to the landed
+    52	  non-quadratic assignment. The entangled-menu strength of H4 is therefore
+    53	  necessary for the landed composite route at `2 x 2`, not a convenience.
+    54	
+    55	Neither horn is selected. The axioms supply no menus at all; which resolutions
+    56	of the identity are menus, and at which grade, is exactly the registration
+    57	content the landed note declares as H4's specification burden. This note
+    58	sharpens that burden into a two-sided exact statement and moves nothing else.
+    59	
+    60	## Authorities and Inputs
+    61	
+    62	- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) — source for
+    63	  the `Z^3` nearest-neighbor lattice, the one-site `M_2(C)` possibility
+    64	  domain, and the Record sentences "Only records are readable. A readout
+    65	  value is determined by record content alone." The axioms do not supply
+    66	  probabilities, weights, menus, update rules, or record-production
+    67	  processes, and the memo's Qualification states: "These axioms state only
+    68	  their named primitive content. Further physical structure requires a
+    69	  retained derivation or bridge, or explicit approved-primitive registration,
+    70	  before use as a premise."
+    71	- [`BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md`](BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md)
+    72	  — the landed projective-horn route: hypotheses H1-H4, the one-site rogue
+    73	  construction R1, the composite rescue R2/R3 through the Gleason bridge
+    74	  input, and the declared specification burden. Cited as the projective-horn
+    75	  authority; its Gleason import is not used by this note's effect-horn
+    76	  results.
+    77	- [`BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md`](BUSCH_POVM_EFFECT_GLEASON_QUBIT_AUTHORITY_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md)
+    78	  — the repo's reproven-from-primitives effect-representation argument on
+    79	  `M_2(C)` under hypotheses (M1)-(M3), with the explicit reconstruction
+    80	  `σ = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ]`. Theorem T1 below
+    81	  restates that five-step argument dimension-generically and the runner
+    82	  re-derives its load-bearing identities independently at dimensions 2 and 4.
+    83	- Literature comparators (never proof inputs): Busch 2003 and
+    84	  Caves-Fuchs-Manne-Renes 2004 for the effect-level representation theorem;
+    85	  Wallach 2002 for the statement that unentangled frame functions determine
+    86	  density operators only when every tensor factor has dimension at least 3.
+    87	  The `2 x 2` product-menu boundary claimed here is proved by this note's own
+    88	  constructive witness and classification, not by the comparator.
+    89	
+    90	## Hypotheses
+    91	
+    92	Let `Λ ⊂ Z^3` be a finite region, `H_Λ = ⊗_{x∈Λ} C^2`, `d = 2^{|Λ|}`, and
+    93	`E(H_Λ) = { E : 0 ≤ E ≤ 1 }` the effect algebra of the region algebra. The
+    94	landed projective-horn hypotheses H1-H3 place `w ≥ 0` on projections with
+    95	`w(0) = 0`, `w(identity) = 1`, menu-normalization on finite orthogonal
+    96	resolutions of the identity, additivity, and embedding-independence. The
+    97	effect-grade restatement assumed by the effect horn is:
+    98	
+    99	**(E1) grading exists at effect grade.** There is `w : E(H_Λ) → [0,1]` with
+   100	`w(0) = 0` and `w(1) = 1`. As at projective grade, `w` is a function of the
+   101	effect alone; the value does not depend on which eligible menu embeds it.
+   102	
+   103	**(E2) finite effect menus are eligible.** For every finite family
+   104	`{E_i} ⊂ E(H_Λ)` with `Σ_i E_i = 1`, the family is an eligible menu and
+   105	`Σ_i w(E_i) = 1`.
+   106	
+   107	E1-E2 keep the exact shape of H1-H3 with "projection" replaced by "effect"
+   108	and orthogonal resolutions replaced by finite effect partitions. They are
+   109	neither implied by nor implied-in the projective-grade hypotheses on the same
+   110	region: the domain and the menu family are both enlarged, and the enlarged
+   111	menu family is a strictly stronger normalization demand. Only finite menus
+   112	are used anywhere below; no countable-additivity clause is assumed. Whether
+   113	the physical registration supplies menus at projective grade, at effect
+   114	grade, at neither, or at some intermediate family is underived and is not
+   115	decided here.
+   116	
+   117	## Results
+   118	
+   119	**T1 (effect horn: sitewise forcing at every finite dimension, no bridge
+   120	input).** Assume E1-E2 on a finite region of dimension `d ≥ 2`. Then there is
+   121	a unique density matrix `σ` with `w(E) = Tr(σE)` for every effect `E`. The
+   122	proof is the five-step finite argument, dimension-generic:
+   123	
+   124	- **(A) Partial additivity.** For effects with `E_1 + E_2 ≤ 1`, apply E2 to
+   125	  the menus `{E_1, E_2, 1 − E_1 − E_2}` and `{E_1 + E_2, 1 − E_1 − E_2}`:
+   126	  subtracting, `w(E_1 + E_2) = w(E_1) + w(E_2)`. The two-outcome menu
+   127	  `{E, 1 − E}` gives the complement law `w(E) + w(1 − E) = 1`.
+   128	- **(B) Homogeneity.** Iterating (A) on the `(r+1)`-outcome menu
+   129	  `{E/r, ..., E/r, 1 − E}` gives `w(E/r) = w(E)/r` and then `w(qE) = q w(E)`
+   130	  for rational `q ∈ [0,1]`. Monotonicity follows from (A): if `E ≤ F` then
+   131	  `F − E` is an effect and `w(F) = w(E) + w(F − E) ≥ w(E)`. For real
+   132	  `t ∈ [0,1]` and rationals `q_1 < t < q_2`, the operator inequalities
+   133	  `q_1 E ≤ tE ≤ q_2 E` then squeeze `w(tE)` between `q_1 w(E)` and
+   134	  `q_2 w(E)`, so `w(tE) = t w(E)`.
+   135	- **(C) Linear extension.** `Herm(M_d)` is a real vector space of dimension
+   136	  `d^2` spanned by effects (the normalized identity-plus-generator elements
+   137	  `(1 + B_k)/2` and `1` itself). Additivity plus homogeneity on the positive
+   138	  cone extend `w` to a well-defined real-linear functional `F` on
+   139	  `Herm(M_d)`: scale any positive `A` into the effect interval, set
+   140	  `F(A) = s·w(A/s)` for `s` dominating the top eigenvalue (well-defined by
+   141	  homogeneity), and define `F` on differences; the standard two-sided
+   142	  cancellation argument shows representation-independence.
+   143	- **(D) Trace representation.** The trace pairing `⟨X,Y⟩ = Tr(XY)` is a
+   144	  nondegenerate real inner product on `Herm(M_d)`, so `F(H) = Tr(σH)` for a
+   145	  unique Hermitian `σ`, reconstructed linearly from the `d^2` basis values of
+   146	  `w`. At `d = 2` this is exactly the landed display
+   147	  `σ = ½[ 𝟙 + Σ_{a∈{x,y,z}} (2 m(P_a^+) − 1) σ_a ]`.
+   148	- **(E) State property.** `w(1) = 1` gives `Tr σ = 1`; for every unit vector
+   149	  `ψ` the rank-1 projector is an effect, so `⟨ψ|σ|ψ⟩ = w(P_ψ) ≥ 0`, hence
+   150	  `σ ≥ 0`.
+   151	
+   152	No step uses `d ≥ 3`, a composite, a projective frame-function analysis, or
+   153	any literature theorem. The runner re-derives the load-bearing identities of
+   154	every step exactly at `d = 2` and `d = 4`.
+   155	
+   156	**T2 (effect horn: the landed rogue extends to no effect-grade grading).**
+   157	The landed R1 assignment `g` — the lexicographic hemisphere rule on one-site
+   158	rank-1 projections, which satisfies the projective-grade hypotheses on
+   159	one-site binary menus — extends to no `w` satisfying E1-E2 on a single site.
+   160	By T1 any such `w` is a trace form; every `2 x 2` trace form is affine in the
+   161	Bloch direction, and the landed exact three-direction contradiction
+   162	(`g(e_x) = g(e_z) = 1` with `g(1) = 1` forces the value `1/2` at
+   163	`(e_x − e_z)/√2`, where `g` assigns `0`) refutes every trace-form
+   164	restriction. The landed note's sentence "Three directions plus normalization
+   165	refute every `2x2` trace form at once" is reused unchanged; what is new is
+   166	the direction of use: at effect grade the refutation kills the rogue rather
+   167	than the forcing, at one site, with no composite and no bridge input.
+   168	
+   169	**T3 (projective horn boundary: product-projector menus force nothing on the
+   170	bonded pair).** Work on a bonded nearest-neighbor pair, `d = 4`, at
+   171	projective grade, but with menus restricted to product-projector resolutions:
+   172	finite families of nonzero projectors of the form `A ⊗ B` (`A`, `B` one-site
+   173	projectors) summing to the pair identity. Then:
+   174	
+   175	- **(T3a) Classification.** Every product-projector menu is a tree menu: up
+   176	  to swapping the two sites, it is `{1}`, or `{P(a)⊗1, P(−a)⊗1}`, or
+   177	  `{P(a)⊗1, P(−a)⊗P(d), P(−a)⊗P(−d)}`, or
+   178	  `{P(a)⊗P(b), P(a)⊗P(−b), P(−a)⊗P(b'), P(−a)⊗P(−b')}` — a first-site split
+   179	  refined branchwise on the second site, or the site-swapped form. The proof
+   180	  is a finite case analysis from two exact facts: one-site rank-1 projectors
+   181	  are orthogonal exactly when their Bloch directions are antipodal, and
+   182	  `(P(a)⊗P(b)) ⊥ (P(c)⊗P(d))` exactly when `a·c = −1` or `b·d = −1`. Three
+   183	  pairwise-orthogonal rank-1 products cannot share one first-site direction
+   184	  (three mutually antipodal second-site directions are impossible), a rank-3
+   185	  complement is never a product projector (product-projector ranks on the
+   186	  pair are 1, 2, 4), and a rank-1 product below `P(−a)⊗1` must carry first
+   187	  slot `−a` (a rank-1 projector lies below a projector exactly when their
+   188	  overlap trace is 1, and `Tr(P(−a)P(c)) = (1 − a·c)/2 = 1` forces
+   189	  `c = −a`). The runner gates each fact and each case branch exactly.
+   190	- **(T3b) Constructive rogue.** Define `W` on product projectors by the
+   191	  product rule `W(A ⊗ B) = g_1(A) · g_2(B)`, with `g_1`, `g_2` lexicographic
+   192	  hemisphere rules and `g_i(1) = 1`, `g_i(0) = 0`. Using
+   193	  `g_i(n) + g_i(−n) = 1` (which the hemisphere rule satisfies exactly,
+   194	  including on its tie set), `W` sums to 1 on every tree menu of either
+   195	  rooting, hence on every product-projector menu by T3a. Its one-site
+   196	  restriction `W(A ⊗ 1) = g_1(A)` is the landed rogue, which by the
+   197	  three-direction contradiction is no trace form; since
+   198	  `E ↦ Tr(ρ(E ⊗ 1))` is trace-affine for every pair state `ρ`, no density
+   199	  matrix on the pair represents `W`.
+   200	- **(T3c) Consequence.** At `2 x 2`, projective-grade hypotheses whose menu
+   201	  family contains only product-projector resolutions do not force the Born
+   202	  form. The landed composite route's H4 clause — menu-eligibility for
+   203	  resolutions "that contain entangled projections", with the landed
+   204	  refutation-seat finding "Without this full projection-measure strength a
+   205	  partial menu assignment is not a frame function and Gleason does not
+   206	  apply" — is therefore necessary at `2 x 2`, not a strengthening of
+   207	  convenience. This agrees with the comparator statement (Wallach 2002) that
+   208	  unentangled frame functions determine density operators only when every
+   209	  factor has dimension at least 3; the `2 x 2` case claimed here is proved
+   210	  natively by T3a-T3b. Entangled projections are not products (the runner
+   211	  gates a Bell-projector Schmidt-rank witness), and `W` assigns them no
+   212	  value, so T3 is consistent with, and does not touch, the landed R2/R3
+   213	  forcing under full H4 strength.
+   214	
+   215	**T4 (the menu grade is the dial, and the attribution moves).** T1-T3
+   216	together relocate the landed dimension-2 loophole: it is not a fact about the
+   217	site, it is a fact about the projective grade. On the effect horn the form is
+   218	fixed sitewise and the nearest-neighbor lattice pays for nothing in the
+   219	form-fixing step — composites matter there only for values (joint states and
+   220	their conditioning), which remain underived. On the projective horn the
+   221	lattice composite plus full entangled-menu strength plus the Gleason bridge
+   222	input remain exactly what the landed note says they are, and T3 shows the
+   223	entangled-menu clause cannot be weakened to product menus at `2 x 2`. The
+   224	landed attribution sentence "adjacency alone pays for nothing here without
+   225	H4's strength" is thereby sharpened in both directions: with effect menus,
+   226	adjacency is not needed for the form; with product-projective menus,
+   227	adjacency plus the bridge input still do not suffice. Which grade the
+   228	physical registration supplies is an exact open binary of the declared
+   229	specification burden; this note registers it and selects nothing.
+   230	
+   231	**T5 (zero-information limit at a finite-group premise, effect horn).**
+   232	Under the additional named premise that `w` is invariant under conjugation by
+   233	the three one-site Pauli unitaries — a finite group, strictly weaker than the
+   234	landed R4 premise of invariance under every unitary automorphism — the
+   235	reconstruction of T1 forces `σ = 1/2` at one site: invariance transfers to
+   236	`σ` by uniqueness, and the only `2 x 2` Hermitian commuting with all three
+   237	Pauli conjugations is scalar. Weights are then uniform on binary menus,
+   238	consistent with the landed uniform-on-orbits results. This premise is named
+   239	here and not derived; "no conditioning records" alone does not supply it.
+   240	
+   241	## Relation To The Landed Effect-Level Surface
+   242	
+   243	The finite-region statement of
+   244	[`BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](BUSCH_POVM_EXTENSION_ON_QUBIT_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md)
+   245	reaches the same trace-form conclusion on `E(H_Λ)`, but its landed
+   246	derivation routes the `|Λ| ≥ 2` case through the projective companion
+   247	[`GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md`](GLEASON_ON_QUBIT_LATTICE_PROJECTION_LATTICE_NARROW_THEOREM_NOTE_2026-05-20.md),
+   248	which imports Gleason's projective theorem as named standard mathematics,
+   249	and it assumes countable additivity. T1 differs on exactly those two
+   250	surfaces: the five-step argument is dimension-generic on the effect algebra,
+   251	so no projective import enters at any `|Λ|`, and only finite menus are
+   252	assumed. The legacy chain
+   253	[`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`](BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md)
+   254	carries separate inductive-limit and identification inputs that this note
+   255	does not use and does not discharge. The orientation memo
+   256	[`GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md`](GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md)
+   257	is cited for orientation and scope discipline only and carries no premise
+   258	weight here.
+   259	
+   260	## No-Go Discipline Gate
+   261	
+   262	T3 is a bounded negative boundary ("product-projector menus force nothing at
+   263	`2 x 2`"), so the negative-claim checklist is answered for it:
+   264	
+   265	- **N1 route inventory (five routes against T3):** (1) coarse rank-2 product
+   266	  menus added — ATTEMPTED, the rogue normalizes them (T3a covers ranks 1, 2,
+   267	  4); (2) non-tree product menus that might constrain further — RULED OUT by
+   268	  the T3a classification; (3) countable product-projector partitions — a
+   269	  finite-dimensional identity admits at most `d` nonzero mutually orthogonal
+   270	  projectors, so countable adds nothing at `d = 4`; (4) menus mixing
+   271	  projective structure with non-projective effects (classical mixtures of
+   272	  projective menus and other intermediate families) — OUTSIDE T3's scope by
+   273	  construction and named untested; the comparator literature suggests such
+   274	  families can force the form already at one site, which is exactly why T3
+   275	  is scoped to product-projector resolutions only; (5) larger regions
+   276	  (`2 x 2 x 2` product menus) — untested here; the comparator statement says
+   277	  qubit factors never suffice, but no native claim is made beyond the bonded
+   278	  pair.
+   279	- **N2 wall independence:** T3 names one wall (product-menu insufficiency at
+   280	  `2 x 2`); no second wall is presented.
+   281	- **N3 hidden-wall scan:** T3 assumes the projective-grade hypotheses of the
+   282	  landed note restricted to a smaller menu family; the restriction is the
+   283	  claim, not a hidden condition. The tie-set convention inside the hemisphere
+   284	  rule is inherited verbatim from the landed R1 construction and gated.
+   285	- **N4 residual matching:** the only cited prior negative is the landed R1
+   286	  rogue existence, reused at the same resolution (one-site binary menus and
+   287	  their product refinements).
+   288	- **N5 rhetoric audit:** the phrase "force nothing" is scoped to the stated
+   289	  menu family on the stated pair; T3c states the exact family and dimension.
+   290	- **N6 partial-closure scan:** the closure path is named, not denied — full
+   291	  H4 strength (landed) or effect-grade menus (T1); T3 forecloses neither.
+   292	- **N7 steelman:** "product menus are the physically natural family, so T3
+   293	  kills the projective horn." Reply: T3 proves insufficiency of that family,
+   294	  not naturalness; which family the registration supplies is exactly the
+   295	  declared open binary, and the landed composite route under full H4
+   296	  strength is untouched.
+   297	- **N8 cross-cycle echo:** the structurally similar prior wall — one-site
+   298	  dimension-2 rogue existence — was retired on the composite by H4 strength
+   299	  (landed R3) and is retired sitewise at effect grade by T2 here; both
+   300	  mechanisms are cited, and neither retires T3's product-menu wall.
+   301	
+   302	## Non-Claims
+   303	
+   304	- Does **not** claim any grading exists, at any grade; E1-E2 and the
+   305	  projective-grade hypotheses are conditional input only.
+   306	- Does **not** select a menu grade, register or modify any primitive, or
+   307	  derive menu-eligibility from the axioms; the axioms supply no menus.
+   308	- Does **not** derive weight values, record conditioning, rates, dynamics,
+   309	  update rules, orientation, or scale.
+   310	- Does **not** touch the landed composite route's conclusions under full H4
+   311	  strength, and does **not** re-prove or use Gleason's projective theorem.
+   312	- Does **not** set an audit verdict or close the probability wall; landing is
+   313	  not ratification, and independent audit remains required.
+   314	
+   315	## Verification
+   316	
+   317	The primary runner re-derives every load-bearing identity exactly (sympy,
+   318	rational/symbolic arithmetic, single process, dimensions 2 and 4 only):
+   319	the menu bookkeeping behind (A) and (B) as formal linear elimination; the
+   320	effect-cone witnesses (including a noncommuting pair); the monotonicity and
+   321	squeeze inequalities on exact witnesses with a non-monotone rejector; the
+   322	`d = 2` and `d = 4` effect bases with nondegenerate trace Gram matrices; the
+   323	reconstruction identity `w(E) = Tr(σE)` on symbolic effects, matching the
+   324	landed Bloch display at `d = 2`; the state property; the exact
+   325	three-direction refutation of every `2 x 2` trace form and its T2 corollary
+   326	logic; the antipodal-orthogonality and product-orthogonality lemmas; each
+   327	case branch of the T3a classification (including the three-antipodal
+   328	impossibility, the rank-3 non-product fact, and the below-`P(−a)⊗1`
+   329	forcing); the hemisphere complement law including tie-set witnesses; the
+   330	product-rogue normalization on both tree rootings and coarse menus; the
+   331	trace-affinity of pair-state restrictions; the Bell-projector Schmidt-rank
+   332	witness; the Pauli-commutant computation behind T5; and needle checks that
+   333	pin the quoted sentences of the axiom memo and the two landed notes named
+   334	above. Mutation checks (one load-bearing mutation per check family,
+   335	reverted) are recorded in the review history and PR body.
+   336	
+   337	Measured runner total after final verification:
+   338	`TOTAL: PASS=54 FAIL=0`.
+     1	# Claim Status Certificate — block01 (2026-07-17)
+     2	
+     3	```yaml
+     4	actual_current_surface_status: bounded-support
+     5	target_claim_type: bounded_theorem
+     6	trace_class: upstream_support
+     7	reachability_to_target: supports
+     8	conditional_surface_status: >
+     9	  bridge-conditional on the assumed grading hypotheses (E1-E2 at effect
+    10	  grade; the landed H1-H4 at projective grade); the menu grade itself is
+    11	  underived; no menus are claimed to exist.
+    12	hypothetical_axiom_status: null
+    13	admitted_observation_status: null
+    14	claim_type_reason: >
+    15	  Exact finite theorems under explicitly assumed conditional hypotheses,
+    16	  with a scoped negative boundary (T3) carrying a constructive witness and
+    17	  an exhaustive finite classification. No unconditional physical claim; the
+    18	  grading primitive is assumed, not adopted; hence bounded_theorem, not
+    19	  positive_theorem.
+    20	audit_required_before_effective_retained: true
+    21	bare_retained_allowed: false
+    22	```
+    23	
+    24	## Promotion Value Gate (V1-V5, answered in writing)
+    25	
+    26	- **V1 (specific obstruction).** This is a new-content bounded theorem, not
+    27	  a promotion of an existing row; the named target surface is the landed
+    28	  frontier note's own import declaration and specification burden, quoted in
+    29	  `TRACE_GATE.md`: the Gleason bridge input ("imported as named classical
+    30	  mathematics") and the H4 burden item "in what sense entangled projections
+    31	  are alternatives". The block supplies a zero-import horn for the first and
+    32	  an exact necessity theorem for the second.
+    33	- **V2 (new derivation).** (i) The dimension-generic effect-grade five-step
+    34	  forcing stated on the graded-constraint hypothesis surface — no landed
+    35	  note connects the effect-level representation to the program's H1-H3, and
+    36	  the landed finite-region effect statement routes |Λ| >= 2 through the
+    37	  projective Gleason import, which T1 removes; (ii) the one-site
+    38	  non-extension corollary T2 (loophole is grade-relative, not
+    39	  dimension-relative); (iii) the exhaustive product-menu classification at
+    40	  2x2 and the multiplicative rogue T3 — nowhere in the repo; (iv) the
+    41	  finite-menu (no countable additivity) weakening made explicit; (v) the
+    42	  finite-group (Pauli) zero-information variant T5 with a strictly weaker
+    43	  premise than the landed R4.
+    44	- **V3 (could the audit lane already do it from standard machinery?).** The
+    45	  five-step argument is standard-adjacent mathematics, and the note treats
+    46	  it that way: it is reproved in-runner rather than imported, exactly like
+    47	  the landed bridge note's practice. The framework-necessary content is the
+    48	  menu-grade dichotomy on the program's own hypothesis surface, the R1-rogue
+    49	  reuse, the 2x2 necessity theorem against H4's own burden text, and the
+    50	  attribution correction to the landed "adjacency alone pays for nothing"
+    51	  sentence — none of which exists as a derivable corollary of retained rows.
+    52	- **V4 (non-trivial).** Yes: the tree classification is a genuine finite
+    53	  case analysis with three load-bearing lemmas; the squeeze and
+    54	  well-definedness steps are the two analytically substantive steps of the
+    55	  forcing; the product rogue is a constructive counterexample with a
+    56	  well-definedness obligation discharged by the classification.
+    57	- **V5 (one-step variant of a landed cycle?).** No. Closest surfaces:
+    58	  the 2026-07-04 composite bridge note (projective horn; keeps import and
+    59	  composite; no effect statement) and the 2026-06-05 authority bridge
+    60	  (d=2 representation only; not connected to menus, the program, the rogue,
+    61	  or the pair). The structural distinctions are the dichotomy itself, the
+    62	  necessity theorem, and the dimension-generic import-free route.
+    63	
+    64	## No-Go Discipline Gate (N1-N8)
+    65	
+    66	Answered in the note's own "No-Go Discipline Gate" section for the T3
+    67	negative slice (five routes enumerated with ATTEMPTED / RULED OUT BY PRIOR
+    68	markers; wall independence; hidden-wall scan; residual matching; rhetoric
+    69	scoping; partial-closure paths named; steelman; cross-cycle echo). The note
+    70	section is the authoritative copy; the PR body reproduces it.
+    71	
+    72	## Review-loop disposition
+    73	
+    74	pending — to be replaced with the actual panel outcome in
+    75	`REVIEW_HISTORY.md` before the PR opens. A `pending` disposition does not
+    76	permit pushing the PR; the block closes only on `pass` (or an honest demote
+    77	with the artifact rescoped).
+    78	
+    79	Independent audit remains required before any effective-status change; this
+    80	certificate predicts no verdict.
+     1	# Trace Gate — block01 (2026-07-17)
+     2	
+     3	```yaml
+     4	trace_class: upstream_support
+     5	target_claim_id: born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04
+     6	target_blocker_text: >
+     7	  "Gleason's theorem is imported as named classical mathematics. The runner
+     8	  checks the finite-dimensional consequences used here; it does not pretend
+     9	  to re-prove Gleason." ; and H4's declared specification burden: "Any
+    10	  registration of the graded-constraint primitive must therefore specify:
+    11	  which neighbor pairs carry composite menus; whether eligibility depends on
+    12	  the record configuration; how pair menus coexist with site-local
+    13	  admissibility; and in what sense entangled projections are alternatives."
+    14	source_of_blocker_text: audit_ledger_source_note
+    15	reachability_to_target: supports
+    16	artifact_role: theorem
+    17	next_trace_action: >
+    18	  Hand the PR to owner-operated review/audit. If ratified, the effect horn
+    19	  gives the graded-constraint program a zero-literature-import form-fixing
+    20	  route (import retirement on that horn), and the registration's
+    21	  specification burden gains an exact two-sided statement: entangled-menu
+    22	  eligibility is NECESSARY at 2x2 on the projective horn (T3), and
+    23	  unnecessary for form-fixing on the effect horn (T1). Downstream consumer:
+    24	  any future registration proposal for the grading primitive must now state
+    25	  its menu grade explicitly.
+    26	```
+    27	
+    28	Notes: `upstream_support`, not `direct_blocker_closure` — the landed note's
+    29	Gleason import is not removed from that note (it remains correct on its
+    30	horn); this block supplies the parallel horn with no import and the
+    31	necessity boundary. No retained-positive proposal is made, so the
+    32	direct-closure requirement for retained-grade language does not bind. The
+    33	negative slice (T3) is `negative_route_pruning` at the sub-claim level: it
+    34	prunes "weaken H4 to product menus at 2x2" exactly, with the reopen
+    35	condition named (entangled resolutions or effect-grade menus).
+     1	# No-Go Ledger — born-effect-menu-horn (2026-07-17)
+     2	
+     3	Prior negative results this block must respect (primary texts read, not
+     4	titles):
+     5	
+     6	| Route | Exact wall (from the primary text) | Where | This block's posture |
+     7	|---|---|---|---|
+     8	| One-site projective Gleason at d=2 | "On one `M_2(C)` site alone, H1-H3 do not force the Born form" — constructive rogue R1 | `BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md` R1 | respected; T2 changes the GRADE, not the projective statement; R1 re-derived, not contradicted |
+     9	| Composite forcing without full projection-measure strength | "Without this full projection-measure strength a partial menu assignment is not a frame function and Gleason does not apply" | same note, H4 | strengthened into an exact necessity theorem at 2x2 (T3): product menus provably insufficient |
+    10	| Reading rulings from axiom prose | supply-indexed readings carry no premise weight until derived or promoted | `GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md` (orientation only) | no menu family is derived from axiom prose; the grade stays an underived binary |
+    11	| New primitive/axiom in physics-loop work | forbidden | physics-loop skill | nothing registered; hypotheses conditional only |
+    12	
+    13	New negative boundary produced by this block (scoped):
+    14	
+    15	| Claim | Scope | Witness | Reopen condition |
+    16	|---|---|---|---|
+    17	| Product-projector menus force nothing | bonded pair (d=4), projective grade, menus = orthogonal resolutions into nonzero product projectors | multiplicative hemisphere rogue W = g1*g2 + exhaustive tree classification | admit entangled resolutions (landed H4 route) or move to effect grade (T1); intermediate menu families named untested |
+     1	<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=dc02750e482ab935590058a2194f976ba8fba24eb54d6abde65acc594de73d05 -->
+     2	# Controlled Vocabulary
+     3	
+     4	> **Front-door lookup:** Looking up a single term? Go to
+     5	> `docs/KEY_TERMINOLOGY.md` — flat A-Z index of
+     6	> every repo-canonical term with one-line definition and a pointer to
+     7	> the source-of-truth doc for each.
+     8	
+     9	## Vocabulary Hierarchy
+    10	
+    11	The repo has five language layers. This doc is the **operational** layer
+    12	(layer 3). Higher layers are sovereign for their domains; do not duplicate
+    13	their content here, and do not override their wording from here.
+    14	
+    15	| Layer | Source-of-truth doc | Governs |
+    16	|---|---|---|
+    17	| 0. Front-door A-Z lookup | `docs/KEY_TERMINOLOGY.md` | Single-page A-Z index of every repo-canonical term with a one-line definition and a pointer to its source-of-truth doc. The reader entry-point above all layers below; an index, not an authority. New terms enter the index only after the source-of-truth doc accepts them. |
+    18	| 1. Framework substantive | `docs/MINIMAL_AXIOMS_2026-06-29.md` and `docs/audit/data/axiom_premise_nodes.json` | Framework axioms and explicitly approved primitive premise nodes the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor adjacency, standard translations, proper cubic rotations about each site, no privileged site, and site distinctions carried only by the supplied lattice structure), Qubit (the domain of local possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is equivalent notation, not extra primitive content; no possibility is privileged; possibilities are distinguished by the supplied algebraic structure alone), Admissibility (one fixed nearest-neighbor rule, covariant under lattice translations and proper cubic rotations, by which the available possibilities are determined by, and vary with, the nearest-neighbor conditions at each site), Record (when present, fixed locking of exactly one admissible local possibility; at most one record per site; permanence; readout value determined by record content alone; finite scalar additivity), the state/law qualification clauses, the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms, and registered primitive premise nodes such as the scale-reference and kinetic-isotropy primitives. Changes only when a framework-level science decision changes. |
+    19	| 2. External paper text | [`docs/ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md`](../ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md), [`docs/ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md`](../ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md) | Verbatim reusable disclosure paragraphs for papers, preprints, and talks. The framing paragraph is the short paper-facing form; the accountability disclosure is the longer package-level form. Both carry their own usage guidance (e.g. replacing `[repo URL]`, narrowing the tool list when only one was used). |
+    20	| 3. Operational (this doc) | `docs/repo/CONTROLLED_VOCABULARY.md` | Status taxonomy, claim-strength labels, audit-lane field enums, repair classes, filename conventions, archival paths, topic language, and paper-facing prose voice — the working vocabulary used inside the repo across ledgers, tables, notes, runners, skills, and PR descriptions. |
+    21	| 4. Methodology framing (adjacent) | `docs/AI_METHODOLOGY_NOTE_2026-04-25.md` | The curated front-door note for the methodology lane. Defines how to talk about the AI / methodology side at the project level. |
+    22	
+    23	For a single-term lookup (layer 0), use `KEY_TERMINOLOGY.md`. For
+    24	framework axioms and approved primitive premise nodes (layer 1), cite
+    25	`MINIMAL_AXIOMS_2026-06-29.md` and
+    26	`docs/audit/data/axiom_premise_nodes.json` — do not redefine Lattice, Qubit,
+    27	Admissibility, Record, `Cl(3)`, `Z^3`, `A_min`, or registered primitives here. For external paper text
+    28	(layer 2), use the canonical framing paragraph and the accountability
+    29	disclosure verbatim — do not paraphrase. This doc governs layer 3 only.
+    30	
+    31	---
+    32	
+    33	This file is the single repo-wide home for the **operational** vocabulary
+    34	layer: status taxonomy, audit-lane field enums, filename conventions,
+    35	axiom-naming **rules** (above the science decision in layer 1), archival
+    36	paths, topic language, and paper-facing prose voice. Other policy /
+    37	process docs in the repo cite this file for vocab rather than inlining
+    38	their own. If a sanctioned term, label, suffix, or wording is not listed
+    39	here and is not defined in the layer 1 or layer 2 sources above, it does
+    40	not exist for repo purposes — vocabulary additions require a PR against
+    41	this file before any note, runner, ledger row, status badge, or PR
+    42	description that uses them.
+    43	
+    44	Goals:
+    45	
+    46	- one taxonomy home for matrix / ledger / atlas / review / note / runner / script
+    47	  language
+    48	- separate publication-capture decisions from theorem-strength labels
+    49	- separate authoring vocabulary from audit-lane field enums
+    50	- avoid vague shorthand on live package surfaces
+    51	- prefer explicit protocol qualifiers over loose adjectives
+    52	- forbid new tags / classes / meta-framings on `claim_type: meta` notes
+    53	  and elsewhere; emergent vocabulary is a substantive defect even when
+    54	  the per-claim content is correct
+    55	
+    56	## Vocabulary Families
+    57	
+    58	There are five status families in this repo. Do not mix them casually.
+    59	
+    60	1. publication-capture dispositions
+    61	2. claim-strength / release labels
+    62	3. audit-lane field vocabulary (claim_type / audit_status /
+    63	   effective_status / repair classes / independence tiers)
+    64	4. historical lane-board labels
+    65	5. historical discovery-log labels
+    66	
+    67	If a file already has separate columns for `Status`, `Qualifier`, `Import
+    68	class`, or `Current publication decision`, keep one family per column
+    69	rather than collapsing everything into one hybrid phrase.
+    70	
+    71	## Science Naming Rules
+    72	
+    73	Landed science must use domain-explicit names. Do not introduce a bare
+    74	letter-number or route code as the primary name of a theorem, lane, source
+    75	note, runner headline, table row, or review finding when that code could also
+    76	mean an axiom, assumption, algebra type, branch block, route number, or
+    77	workstream index.
+    78	
+    79	Examples of ambiguous primary names to avoid on new landed surfaces:
+    80	
+    81	- `A1`, `A2`, `G1`, `R3`
+    82	- `Route F`, `Block 2`, `Origin B`
+    83	- `Step 1` or `Assumption 1` compressed to `S1` / `A1`
+    84	
+    85	Use the scientific object as the name instead:
+    86	
+    87	- `physical Cl(3) local algebra`, not bare `A1`
+    88	- `Lattice`, not bare `A2`
+    89	- `Koide Frobenius-equipartition condition`, not bare `A1`
+    90	- `Lie type A_1` or `SU(2) root-system check`, not bare `A1`
+    91	- `DM-eta Coleman-Weinberg residual`, not bare `G1`
+    92	
+    93	**Canonical mathematical-object names are allowed.** Bare letter-number
+    94	forms that name an *established mathematical object* — `S^3` (3-sphere),
+    95	`S^2` (2-sphere), `U(1)` and `SU(N)` (gauge groups), `Z_3` / `Z_n`
+    96	(cyclic groups), `C_3` (cyclic / symmetry group), `A_n` / `D_n` /
+    97	`E_n` (Lie types), `I_3` (third isospin component), etc. — are the
+    98	canonical names for those objects and do not require domain-explicit
+    99	expansion. The rule above targets *code-like primary names that don't
+   100	reference an established mathematical object* (e.g. `A1` used as a
+   101	workstream label, `G1` used as a route code, `R3` used as a routing
+   102	index), not standard mathematical notation. If both readings are
+   103	plausible in context (e.g. `A_1` as Lie type vs. `A1` as
+   104	workstream-index abbreviation), spell out the mathematical reading
+   105	on first use (`Lie type A_1`) so the bare form is unambiguous.
+   106	
+   107	Legacy shorthand may be preserved only as an alias after the explicit name,
+   108	for example: `Koide Frobenius-equipartition condition (legacy alias: A1)`.
+   109	If an existing file already uses a shorthand, new edits should define it on
+   110	first use and prefer the explicit name in headings, metadata, claim scopes,
+   111	review summaries, and publication/control-plane rows.
+   112	
+   113	Axioms and assumptions must be written out as `Axiom 1`, `Assumption 1`, or a
+   114	descriptive premise name. Do not abbreviate them to `A1` on live science
+   115	surfaces.
+   116	
+   117	### Meta-note vocabulary discipline
+   118	
+   119	`claim_type: meta` notes (audit-prep, synthesis, fix-record, infrastructure
+   120	documentation) must use a plain `_NOTE_<YYYY-MM-DD>.md` filename suffix
+   121	and repo-canonical vocabulary in their content. The following emergent
+   122	patterns are vocabulary additions and forbidden until they appear in this
+   123	file:
+   124	
+   125	- new filename suffixes such as `_HOSTILE_AUDIT_FINDINGS_NOTE_`,
+   126	  `_DOWNSTREAM_FIX_NOTE_`, `_SURGICAL_FIX_RECORD_`, `_FINDINGS_MEMO_`,
+   127	  `_FIX_RECORD_`, `_AUDIT_BRIEF_`, `_ADDENDUM_`
+   128	- new within-note labelling schemes such as `F-A` / `F-B` / `F-C`
+   129	  "Finding F-letter" headings
+   130	- new finding-class names such as `framing-fix`, `routing correction`,
+   131	  `tier over-claim`, `admission-inheritance`, `audit-prep input`
+   132	- new authority-role phrases such as
+   133	  `Status authority: independent audit lane only` as a load-bearing role
+   134	- new repair-class names beyond the seven listed in "Audit Lane Field
+   135	  Vocabulary" below
+   136	- new "X is a Y" meta-framings that imply a class or parent-framing
+   137	  cross-reference for a collection of not-yet-shipped sub-PRs
+   138	
+   139	The reviewer rejects custom tags / classes / meta-framings even when the
+   140	underlying per-claim work is correct. Ship narrow content one identity at a
+   141	time, mirroring an existing canonical template, with no new vocabulary.
+   142	
+   143	## Filename Taxonomy
+   144	
+   145	### Script filename prefixes
+   146	
+   147	- `frontier_*`
+   148	  - active frontier or later-stage retained runners
+   149	  - this is the current default namespace
+   150	- `mirror_*`, `lattice_*`, `gate_b_*`, `source_resolved_*`, `wave_*`
+   151	  - older major programs that are still important on `main`
+   152	- everything else
+   153	  - usually lane-specific historical or exploratory runners
+   154	
+   155	Lane-specific prefixes are preferred when creating new frontier runners:
+   156	`frontier_staggered_*`, `frontier_two_field_*`, `frontier_emergent_geometry_*`,
+   157	etc. Pick a prefix that names the lane, not the date or the author.
+   158	
+   159	### Note filename rules
+   160	
+   161	- New retained notes should be explicit about the runner they interpret
+   162	  in the filename when feasible.
+   163	- New strategy or synthesis notes should not silently replace retained
+   164	  notes; if the synthesis is forward-looking it lands at
+   165	  `claim_type: meta` with the `_NOTE_<YYYY-MM-DD>.md` plain suffix.
+   166	- Historical lanes should not be renamed just to fit the current
+   167	  taxonomy. They should be indexed in the lane board and registry
+   168	  instead. If a lane is historical, mark that in the lane board and
+   169	  registry rather than renaming dozens of files.
+   170	
+   171	### Reserved filename suffixes
+   172	
+   173	See "Meta-note vocabulary discipline" above for the list of forbidden
+   174	emergent suffixes. The only sanctioned form for new audit-prep / meta
+   175	notes is `<DOMAIN>_NOTE_<YYYY-MM-DD>.md`.
+   176	
+   177	## Publication-Capture Dispositions
+   178	
+   179	Use these on publication-control-plane surfaces such as
+   180	`PUBLICATION_MATRIX.md`.
+   181	
+   182	| Label | Use |
+   183	|---|---|
+   184	| `retained` | live retained family on the current paper-authority surface |
+   185	| `promoted` | main-paper publication-core family carried directly in the current paper package |
+   186	| `bounded` | live captured family kept outside the main paper core with explicit caveats |
+   187	| `open` | live gate / blocker that is not yet closed |
+   188	| `frozen-out` | intentionally excluded from the main paper while still recorded |
+   189	
+   190	These are package-capture decisions, not generic adjectives.
+   191	
+   192	## Claim-Strength / Release Labels
+   193	
+   194	Use these on notes, claims tables, quantitative tables, and runner summaries.
+   195	
+   196	| Label | Use |
+   197	|---|---|
+   198	| `retained` | theorem-grade closure on the retained authority surface |
+   199	| `derived` | current-main downstream result obtained from retained structure plus named bridge/import assumptions; safe to quote, but not the same as zero-input retained closure |
+   200	| `retained corollary` | safe retained consequence of a retained theorem/action surface |
+   201	| `retained support theorem` / `retained support` | exact retained support result that is reusable but not itself the manuscript headline |
+   202	| `retained support batch` | coherent retained batch of support theorems/tools carried together for atlas, reviewer, or support-package reuse |
+   203	| `retained exact theorem` / `retained exact companion` | exact retained theorem/companion variant used when exactness itself is part of the safe statement |
+   204	| `retained structural theorem` / `retained exact structural theorem` | retained exact structural law on the framework/package surface |
+   205	| `retained support tool` | reusable retained tool/subderivation that supports other lanes without itself being the manuscript headline |
+   206	| `retained framework statement` / `retained positioning` / `retained quantitative lane` | retained package-authority framing labels for front-door/control-plane use |
+   207	| `retained action-surface closure` / `retained restricted theorem` / `retained restricted support` / `retained evaluated theorem` | retained exact-result variants where the constrained surface/class/evaluation matters |
+   208	| `retained positive` / `retained partial positive` | retained positive lane result used mainly on atlas/toolbox surfaces rather than as the headline theorem |
+   209	| `exact support theorem` / `exact support` | accepted exact-support variant when exactness itself is material to the safe statement; use with the same non-headline semantics as retained support, and keep bridge/import qualifiers explicit |
+   210	| `exact support batch` | coherent exact batch of support theorems/tools carried together for atlas or reviewer reuse |
+   211	| `exact structural theorem` / `exact algebraic identity` / `exact subderivation` | accepted exact-result specializations for atlas / theorem-bank rows when the mathematical role matters |
+   212	| `exact boundary theorem` / `exact reduction theorem` | accepted exact-result specializations for atlas / theorem-bank rows when the mathematical role is an open-lane boundary or a compression/reduction statement |
+   213	| `exact current-stack theorem` / `exact current-bank theorem` / `exact current-bank reduction` / `exact current-bank no-go theorem` | accepted exact-result specializations for current-stack/current-bank closeout rows on atlas and reviewer surfaces |
+   214	| `exact negative boundary` / `exact negative closeout` / `exact post-selector reduction` | accepted exact-result specializations for explicit no-go/closeout/post-selector roles on atlas and reviewer surfaces |
+   215	| `exact support/boundary theorem` | accepted mixed exact-role label when a row simultaneously contributes a reusable exact support input and an exact open-lane boundary statement |
+   216	| `exact support tool` | reusable exact tool/subderivation that supports other lanes without being the headline claim |
+   217	| `bounded support theorem` / `bounded support note` / `bounded support tool` | bounded supporting result/tool carried for atlas, reviewer, or secondary-lane use; not a main closure claim |
+   218	| `bounded support batch` | coherent bounded batch of support tools/calculations carried for atlas or reviewer reuse |
+   219	| `promoted quantitative package` | quantitative package strong enough for the current main-paper surface |
+   220	| `bounded companion` | live bounded supporting lane outside the main paper core |
+   221	| `bounded secondary lane` | live bounded lane worth carrying, but clearly secondary to the main package |
+   222	| `bounded frontier` / `bounded negative boundary` / `bounded Route 2 build candidate` | bounded frontier/result classes kept for ongoing design work rather than current-package promotion |
+   223	| `main closure package` | package-level main-paper closure claim on the current review/package surface; stronger than support, but not automatically the retained quantitative paper core |
+   224	| `conditional` / `support` | useful positive package whose load-bearing step is still conditional, imposed, or support-only |
+   225	| `open main gate` | still-open main closure target |
+   226	| `historical` / `diagnostic` | preserved for audit/history/instrumentation, not live evidence |
+   227	| `historical support` / `provenance` / `exact transport provenance` | provenance-only rows kept for route history, reviewer handoff, or closure bookkeeping rather than live promotion |
+   228	| `negative-result` | useful negative or no-go result |
+   229	| `negative-result` / `support` | negative/no-go result that is also a reusable support/pruning surface |
+   230	| `inconclusive` | signal exists but interpretation is not frozen |
+   231	
+   232	Allowed composite forms should be built from the labels above and kept narrow:
+   233	
+   234	- `retained exact theorem`
+   235	- `retained exact companion`
+   236	- `retained structural theorem`
+   237	- `retained exact structural theorem`
+   238	- `retained corollary`
+   239	- `retained support theorem`
+   240	- `retained support batch`
+   241	- `retained support tool`
+   242	- `exact support theorem`
+   243	- `exact support batch`
+   244	- `exact structural theorem`
+   245	- `exact algebraic identity`
+   246	- `exact subderivation`
+   247	- `exact boundary theorem`
+   248	- `exact reduction theorem`
+   249	- `exact current-stack theorem`
+   250	- `exact current-bank theorem`
+   251	- `exact current-bank reduction`
+   252	- `exact current-bank no-go theorem`
+   253	- `exact negative boundary`
+   254	- `exact negative closeout`
+   255	- `exact post-selector reduction`
+   256	- `exact support/boundary theorem`
+   257	- `exact support tool`
+   258	- `bounded support theorem`
+   259	- `bounded support note`
+   260	- `bounded support tool`
+   261	- `bounded support batch`
+   262	- `bounded companion prediction`
+   263	- `bounded frontier`
+   264	- `bounded negative boundary`
+   265	- `bounded Route 2 build candidate`
+   266	- `main closure package`
+   267	- `promoted quantitative package`
+   268	- `open main gate`
+   269	
+   270	Avoid minting new slash-composites when a nearby qualifier/import column can carry the caveat instead.
+   271	
+   272	Role-specialized variants are acceptable when the cell begins with one of the
+   273	accepted base labels above and the trailing noun names the mathematical role
+   274	or control-plane role of the row, for example:
+   275	
+   276	- `retained framework statement`
+   277	- `retained quantitative lane`
+   278	- `retained action-surface closure`
+   279	- `retained restricted theorem`
+   280	- `exact structural theorem`
+   281	- `exact algebraic identity`
+   282	- `exact subderivation`
+   283	- `retained support tool`
+   284	- `retained support batch`
+   285	- `exact support tool`
+   286	- `exact support batch`
+   287	- `exact boundary theorem`
+   288	- `exact reduction theorem`
+   289	- `exact current-stack theorem`
+   290	- `exact current-bank theorem`
+   291	- `exact current-bank no-go theorem`
+   292	- `exact negative boundary`
+   293	- `exact negative closeout`
+   294	- `exact post-selector reduction`
+   295	- `historical support / provenance`
+   296	
+   297	Do not mix a publication-capture disposition with a claim-strength label in
+   298	the same cell unless the file explicitly allows hybrid narrative decisions.
+   299	
+   300	Short scope qualifiers may follow an accepted label when they state where the
+   301	claim lives, for example:
+   302	
+   303	- `exact boundary theorem on open gate`
+   304	- `exact reduction theorem outside main core`
+   305	- `exact support theorem on the bounded charged-lepton package`
+   306	- `exact support theorem with bounded downstream reuse`
+   307	- `retained support theorem on the current package surface`
+   308	
+   309	Do not use `reviewed` or `reviewer-tested` as status labels. Those are review
+   310	process adjectives, not controlled-vocabulary claim-strength labels. Carry
+   311	review context in prose, placement, or authority notes instead.
+   312	
+   313	## Audit Lane Field Vocabulary
+   314	
+   315	These enums govern the audit ledger rows in
+   316	`docs/audit/data/audit_ledger.json`, the rendered surface
+   317	`docs/audit/AUDIT_LEDGER.md`, and the audit pipeline's derived outputs.
+   318	Authors may write whatever status prose they need inside source notes,
+   319	but the retained library is driven only by these auditor-owned fields.
+   320	The audit-lane process and workflows live in `docs/audit/README.md`,
+   321	`docs/audit/FRESH_LOOK_REQUIREMENTS.md`, and the audit-loop skill; the
+   322	enums themselves live here.
+   323	
+   324	### `claim_type` (auditor-set)
+   325	
+   326	What kind of object the auditor says the row is. Exactly one of:
+   327	
+   328	- `positive_theorem`
+   329	- `bounded_theorem`
+   330	- `no_go`
+   331	- `open_gate`
+   332	- `decoration`
+   333	- `meta`
+   334	
+   335	`meta` is used for non-claim infrastructure rows (audit-prep notes,
+   336	synthesis catalogues, infrastructure documentation). `meta` rows must
+   337	not promote to non-meta claim types via re-classification — these notes
+   338	are by design out-of-band.
+   339	
+   340	### `claim_scope` (auditor-set)
+   341	
+   342	The auditor's short, citeable statement of exactly what was audited.
+   343	Required for applied audits. Prose, not enum.
+   344	
+   345	### `audit_status` (auditor-set)
+   346	
+   347	What the audit found. Exactly one of:
+   348	
+   349	- `unaudited`
+   350	- `audit_in_progress`
+   351	- `audited_clean`
+   352	- `audited_renaming`
+   353	- `audited_conditional`
+   354	- `audited_decoration`
+   355	- `audited_failed`
+   356	- `audited_numerical_match`
+   357	
+   358	### `effective_status` (derived by pipeline)
+   359	
+   360	Publication-facing status derived from `claim_type` plus
+   361	`audit_status` plus the citation-graph closure of dependencies. The
+   362	pipeline computes this; do not write to it directly. Possible values:
+   363	
+   364	- `retained` — `claim_type = positive_theorem` plus
+   365	  `audit_status = audited_clean` plus retained-grade dependencies
+   366	- `retained_no_go` — `claim_type = no_go` plus
+   367	  `audit_status = audited_clean` plus retained-grade dependencies
+   368	- `retained_bounded` — `claim_type = bounded_theorem` plus
+   369	  `audit_status = audited_clean` plus retained-grade dependencies
+   370	- `retained_pending_chain` — clean theorem/no-go/bounded row whose
+   371	  upstream chain is not yet retained-grade
+   372	- `open_gate` — clean open gate; blocks retained propagation
+   373	- `decoration_under_<parent_claim_id>` — audited decoration whose
+   374	  parent is retained-grade
+   375	- `meta` — non-claim infrastructure rows
+   376	- `audited_<failure_mode>` — terminal non-clean audit verdicts on active
+   377	  claims
+   378	
+   379	Generated audit data must not contain legacy source-status authority
+   380	fields. The graph builder may use old source-note status prose as a
+   381	one-way migration hint when seeding `claim_type`, but the ledger, queue,
+   382	prompt, and rendered audit surfaces are
+   383	`claim_type` / `audit_status` / `effective_status` only. `support` is
+   384	not a claim class.
+   385	
+   386	### Conditional repair classes
+   387	
+   388	For every `audited_conditional` result, the auditor must make the next
+   389	repair lane sortable by prefixing `notes_for_re_audit_if_any` with
+   390	exactly one of these seven classes:
+   391	
+   392	- `missing_dependency_edge` — a needed source note or authority exists
+   393	  or is named, but is not wired as a direct dependency for the audited
+   394	  claim
+   395	- `dependency_not_retained` — a direct dependency exists but is not
+   396	  retained grade
+   397	- `missing_bridge_theorem` — the claim needs a new theorem for a
+   398	  physical carrier, readout, unit map, boundary condition, sector
+   399	  choice, normalization, or observable bridge
+   400	- `scope_too_broad` — a clean bounded core exists, but the current claim
+   401	  scope includes an unclosed extension
+   402	- `runner_artifact_issue` — a runner, log, classifier, threshold,
+   403	  import, or pass/fail accounting problem blocks closure despite
+   404	  otherwise local scope
+   405	- `compute_required` — closure needs a completed long run, sliced
+   406	  runner, cached certificate, or independent derivation
+   407	- `other` — use only when none of the above fits, and state why
+   408	
+   409	After the class, the auditor names the cheapest next repair action.
+   410	
+   411	### No-Go Discipline packet fields
+   412	
+   413	`no_go_discipline.status` records the mandatory structured N1-N8 stress-test outcome for negative boundaries. Exactly one of:
+   414	
+   415	- `PASS` — Every required N1-N8 record closes with no unresolved item; eligible to support a clean negative verdict.
+   416	- `FAIL` — At least one required stress test remains open, incomplete, or mismatched; forbids audited_clean and requires an explicit demotion.
+   417	
+   418	When the status is `FAIL`, `no_go_discipline.demotion` is required and must be exactly one of:
+   419	
+   420	- `partial-attempt-with-named-untested-routes` — Records the tested work while naming alternative routes that remain untested.
+   421	- `partial-narrowing` — Narrows the claim to the portion actually supported by the restricted packet.
+   422	- `bounded-with-corrected-wall-count` — Retains only the bounded wall set that survives the independence audit.
+   423	- `stretch-attempt-with-honest-residual` — Preserves a useful stretch attempt while stating the unresolved residual explicitly.
+   424	
+   425	Packetless legacy negative authority is invalidated with the controlled reason:
+   426	
+   427	- `no_go_discipline_packet_missing` — A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative.
+   428	
+   429	`negative_assertion_classes` is the mandatory auditor declaration on every incoming audit: the policy assertion classes the artifact makes, judged semantically from the full note (empty list when none). Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger. Allowed classes:
+   430	
+   431	- `no_go_result` — Asserts a no_go outcome: structurally closed, no route exists, no retained primitive supplies the target.
+   432	- `stretch_attempt_negative` — Asserts a stretch-attempt negative outcome: the attempted route does not close.
+   433	- `bounded_with_named_walls` — Asserts a bounded result conditional on named walls or admissions.
+   434	- `derived_no_go_boundary` — Asserts a derived no-go boundary inside a positive theorem, such as a per-element identity that does not lift.
+   435	- `conditional_wall_rationale` — An audit rationale that names a residual wall as the reason a verdict is conditional.
+   436	
+   437	### Independence tiers
+   438	
+   439	`auditor` must not equal `author`. Strength tiers for the `independence`
+   440	field on an audit row:
+   441	
+   442	- `independence: weak` — same model family, or a session whose context
+   443	  restrictions cannot be established. Permitted for diagnostic review,
+   444	  not eligible to land `audited_clean`
+   445	- `independence: fresh_context` — same model family, different
+   446	  auditor/session identity, restricted-input audit. Same-family
+   447	  clean-room tier for detecting context poisoning without claiming
+   448	  cross-family review
+   449	- `independence: cross_family` — different model family from the author
+   450	- `independence: strong` — human auditor with no prior involvement in
+   451	  the note
+   452	- `independence: external` — off-repo reviewer with no project context;
+   453	  the audit lane does not produce these on its own
+   454	
+   455	### `auditor_family`
+   456	
+   457	The model family of the auditor (e.g., `codex-gpt-5.5`, `codex-gpt-5.6`,
+   458	`claude-opus-4.x`, `human`). Used to enforce cross-family independence.
+   459	The designated cross-family auditor for this repo is the best available
+   460	full Codex GPT model at maximum reasoning; see
+   461	`docs/audit/FRESH_LOOK_REQUIREMENTS.md` for the auto-selection rule.
+   462	
+   463	### Load-bearing step classes
+   464	
+   465	When the auditor records the kind of step the load-bearing sentence /
+   466	equation is, pick exactly one of:
+   467	
+   468	- `(A)` algebraic identity check on existing inputs
+   469	- `(B)` cross-note input verification (reads value from another note)
+   470	- `(C)` first-principles compute from the axiom (`Cl(3)` on `Z^3` plus
+   471	  accepted normalizations) producing a number not present in any input
+   472	- `(D)` external comparator check against PDG / lattice QCD / observation
+   473	- `(E)` definition (introduces a new symbol)
+   474	- `(F)` renaming (asserts symbol identity between two existing concepts)
+   475	- `(G)` numerical match at a tuned input scale
+   476	
+   477	## Migration / Legacy Wording
+   478	
+   479	The repo is migrating from author-declared `retained` / `promoted`
+   480	language to the audit-lane propose / ratify vocabulary. Source-note
+   481	`Status` lines now use:
+   482	
+   483	- `proposed_retained` — author proposes retained-grade; awaits audit ratification
+   484	- `proposed_promoted` — author proposes promoted-grade; awaits audit ratification
+   485	
+   486	The canonical audit-ratified surface is the tracked sharded ledger
+   487	`docs/audit/data/ledger/`; the rendered
+   488	`docs/audit/AUDIT_LEDGER.md` is a local pipeline-materialized cache.
+   489	Legacy publication summaries may still use manuscript shorthand, but
+   490	those rows should be read as proposed until the audit ledger marks
+   491	them clean.
+   492	
+   493	New notes must use `proposed_retained` / `proposed_promoted` on author
+   494	side and rely on the pipeline's `effective_status` for the
+   495	publication-facing label. Do not bare-declare `retained` on a source
+   496	note.
+   497	
+   498	## Historical Lane-Board Labels
+   499	
+   500	Use these only on Historical repo-map surfaces such as `LANE_STATUS_BOARD.md` and the lane registry.
+   501	
+   502	| Label | Use |
+   503	|---|---|
+   504	| `primary-retained` | current best-supported lane in the historical lane-board sense |
+   505	| `retained-companion` | real, replayable companion lane, but not the single default entrypoint |
+   506	| `open-blocker` | active blocker limiting the historical lane claim boundary |
+   507	| `exploratory-reopen` | partially positive lane worth more work, but not promoted |
+   508	| `historical-control` | historical comparison/control lane |
+   509	| `historical-retained` | older retained major program, no longer the default |
+   510	| `historical-bounded` | scientifically useful historical work, no longer the lead lane |
+   511	| `historical-blocked` | diagnosed dead-end or mechanism-level blocker |
+   512	
+   513	## Historical Discovery-Log Labels
+   514	
+   515	Use these only on Historical discovery / paper-seed ledgers such as `POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`.
+   516	
+   517	| Label | Use |
+   518	|---|---|
+   519	| `retained` | historically important retained discovery |
+   520	| `bounded-retained` | bounded positive result preserved on `main`, worth paper planning, but not a retained theorem-grade closure |
+   521	| `methodological` | important measurement / methodology / audit contribution |
+   522	| `negative-result` | strong structural no-go or narrowing result |
+   523	| `exploratory-lead` | quantitatively interesting lead worth preserving, not yet frozen |
+   524	
+   525	## Column Rules
+   526	
+   527	- `PUBLICATION_MATRIX.md`
+   528	  - use publication-capture dispositions for capture decisions
+   529	  - `Current publication decision` cells should begin with one of `retained`, `promoted`, `bounded`, `open`, `frozen-out`; a short placement note may follow after a semicolon
+   530	- `CLAIMS_TABLE.md, QUANTITATIVE_SUMMARY_TABLE.md, DERIVATION_ATLAS.md`
+   531	  - use claim-strength / release labels
+   532	  - accepted role-specialized variants may be used when they begin with the primary claim-strength label
+   533	- `FULL_CLAIM_LEDGER.md`
+   534	  - may begin with either a publication-capture disposition or a claim-strength label because it narrates package decisions row-by-row
+   535	  - avoid ad hoc hybrids; if a row begins with one family, keep any second-family qualifier short and explanatory
+   536	  - on mixed audit rows, the cell should begin with the primary label from the family being used; a short explanatory qualifier may follow after a semicolon
+   537	  - accepted ledger-style hybrids include forms such as `promoted exact companion`, `promoted restricted theorem`, `promoted retained closure`, `promoted retained support batch`, and `promoted retained action-surface closure`
+   538	- `docs/audit/AUDIT_LEDGER.md, docs/audit/data/audit_ledger.json`
+   539	  - use audit-lane field vocabulary only
+   540	  - rows are written by the audit pipeline / `apply_audit.py`; do not hand-edit
+   541	- `LANE_STATUS_BOARD.md`
+   542	  - use historical lane-board labels
+   543	- `POTENTIAL_PUBLICATION_DISCOVERIES_LOG.md`
+   544	  - use historical discovery-log labels
+   545	
+   546	Do not use row prose like `Retained ...` when the row status is `bounded-retained`.
+   547	
+   548	## Protocol Qualifiers
+   549	
+   550	These are qualifiers, not standalone status labels:
+   551	
+   552	- `review surface`
+   553	- `current package grade`
+   554	- `strict/native map`
+   555	- `exact-target strict/native map`
+   556	
+   557	They can appear in prose or qualifier/import columns, but they should not replace the primary status label.
+   558	
+   559	## Evidence Terms
+   560	
+   561	Prefer these nouns:
+   562	
+   563	- `protocol`: a specific constructed experimental/computational setup
+   564	- `witness`: a bounded positive signal on a stated protocol
+   565	- `diagnostic`: an instrument/readout used for triage or debugging
+   566	- `companion`: a bounded supporting lane attached to a stronger package
+   567	- `closure`: use only when the load-bearing claim is actually closed
+   568	
+   569	Avoid vague upgrades like:
+   570	
+   571	- `proof` when the surface is only a witness or protocol
+   572	- `closure` when the status is really `bounded-retained` or `conditional / support`
+   573	
+   574	## Hyphenation
+   575	
+   576	- prefer `observational-pin as a compound adjective`
+   577	- prefer `observational pin only as a noun phrase`
+   578	
+   579	## Axiom Naming (out of scope for this doc)
+   580	
+   581	Axiom names (`A_min`, `Axiom 1`, `Axiom 2`, `Axiom*`) are **physics
+   582	primitives**, not process vocabulary. Per
+   583	`VOCABULARY_HYGIENE_DESIGN.md`, vocabulary
+   584	is disjoint from physics. The canonical home for these names and the
+   585	policy governing their use is:
+   586	
+   587	- `docs/MINIMAL_AXIOMS_2026-06-29.md` — the framework axioms themselves (Lattice, Qubit, Admissibility, Record, definition of A_min); supersedes `MINIMAL_AXIOMS_2026-06-05.md`
+   588	- `docs/audit/data/axiom_premise_nodes.json` — explicitly approved primitive premise nodes such as `scale_reference_primitive` and `kinetic_isotropy_primitive`
+   589	- [`docs/audit/AXIOM_MINIMALITY_POLICY.md`](../audit/AXIOM_MINIMALITY_POLICY.md) — the binding rules around proposing extensions (`Axiom*`)
+   590	
+   591	Do not redefine, alias, or document these names here.
+   592	
+   593	## Stale-Narrative Archival Vocabulary
+   594	
+   595	When a wrapper note's narrative frame fails an audit, archival uses
+   596	fixed path and content vocabulary.
+   597	
+   598	### Archive path
+   599	
+   600	`archive_unlanded/<cluster-tag>/` — the canonical recovery surface for failed-narrative source notes. The cluster-tag is a short stable noun
+   601	phrase for the wrapper cluster (e.g. `koide-q-v6-cluster`, `route-2-exhaustion-failed-cluster`).
+   602	
+   603	### Salvage-note required content
+   604	
+   605	When a wrapper note fails but some sub-observations survive, the salvage
+   606	note must state:
+   607	
+   608	- what failed (the wrapper's load-bearing claim that the audit invalidated)
+   609	- what survived (the durable structural observations that remain)
+   610	- the source wrapper's archive recovery path
+   611	
+   612	The salvage note must not restate the failed global conclusion.
+   613	
+   614	### Banned archival wording
+   615	
+   616	- describing the archived wrapper as "deprecated" or "obsolete" — imply a deliberate retirement decision; `audit_status: audited_failed` is the canonical record, no additional adjective needed
+   617	- describing the archived wrapper as "still useful" — unless the sentence also states exactly for what it is still useful
+   618	
+   619	The associated workflow rules live in
+   620	`docs/audit/STALE_NARRATIVE_POLICY.md`. Vocabulary lives here.
+   621	
+   622	## Branch-Entanglement / BMV Language
+   623	
+   624	Preferred terms for the current staggered branch-entanglement lane:
+   625	
+   626	- `branch-mediated entanglement`
+   627	- `externally imposed geometry/source-branch protocol`
+   628	- `fixed-adjacency two-branch protocol`
+   629	- `branch-mediated entanglement witness`
+   630	
+   631	Only call something a `BMV witness` when the surface closes the stronger
+   632	mediator-side requirements, including:
+   633	
+   634	- branch/mediator structure is generated by the relevant physical degrees of
+   635	  freedom, not inserted externally
+   636	- the mediator-null / LOCC-exclusion logic is implemented at the claimed level
+   637	
+   638	For the current live branch-entanglement package, say explicitly:
+   639	
+   640	- `not a self-generated mediator-branch BMV witness`
+   641	- `not a mediator-null / LOCC-exclusion closure`
+   642	
+   643	Avoid as the primary descriptor on live package surfaces:
+   644	
+   645	- `toy`
+   646	- `toy model`
+   647	- `toy witness`
+   648	- `BMV-like evidence`
+   649	
+   650	Those are acceptable only in historical commentary where the sentence also says
+   651	what the protocol is missing.
+   652	
+   653	## Boundary-Law Language
+   654	
+   655	For the live boundary-law lane, prefer:
+   656	
+   657	- `Dirac-sea boundary-law probe`
+   658	- `many-body-style boundary-law result`
+   659	- `bounded boundary-law package`
+   660	
+   661	Avoid calling historical transfer-entropy scripts:
+   662	
+   663	- `area law`
+   664	- `subsystem entanglement measurement`
+   665	
+   666	unless the measured object actually matches that wording.
+   667	
+   668	## Historical Retirement Language
+   669	
+   670	When an old runner is no longer live evidence, prefer:
+   671	
+   672	- `retired as evidence`
+   673	- `historical / diagnostic`
+   674	- `historical exploratory predecessor`
+   675	
+   676	Avoid ambiguous phrasing like:
+   677	
+   678	- `still useful`
+   679	
+   680	unless the sentence also states exactly for what it is still useful.
+   681	
+   682	## Paper-Facing Prose Voice
+   683	
+   684	The target voice for paper-facing prose, curated methodology prose, repo
+   685	instructions, and new synthesis is Feynman-like in the useful sense:
+   686	plain, physical, concrete, curious, and hard to fool. Do not imitate
+   687	quirks or make the prose performative. Use the attitude.
+   688	
+   689	Do not rewrite raw captures or historical dated notes just to polish the
+   690	voice; those files are evidence of the work as it happened.
+   691	
+   692	### The rule
+   693	
+   694	Explain what we are doing as if the reader is smart, skeptical, and busy.
+   695	
+   696	Say the simple physical question first. Then say what was checked. Then say
+   697	what did not close.
+   698	
+   699	### Use this voice
+   700	
+   701	- Start from the physical question, not from the institutional framing.
+   702	- Prefer short sentences when the idea is hard.
+   703	- Explain why a result is surprising or useful in ordinary language before listing the machinery.
+   704	- Put equations after the idea they express.
+   705	- Say "we find", "we check", "we keep", and "we do not claim" when those are the honest verbs.
+   706	- Treat negative results as information.
+   707	- Keep the reader close to the object: lattice, operator, runner, eigenvalue, projector, source, bridge.
+   708	
+   709	### Avoid this voice
+   710	
+   711	- "broad exact backbone"
+   712	- "methodological innovation"
+   713	- "transformative framework"
+   714	- "groundbreaking result"
+   715	- "paradigm"
+   716	- "comprehensive package" unless the sentence immediately says what is inside
+   717	- "already closed" without naming the exact surface
+   718	- any sentence whose main job is to sound important
+   719	
+   720	### Decoration-pruning tone
+   721	
+   722	When pruning algebraic decoration, the tone is "claim-surface management",
+   723	not "criticism of the algebra itself". The identities are real; what's
+   724	being pruned is the count of separately-retained rows. A package that
+   725	presents 25 separate retained theorems where 3 distinct claims exist is
+   726	harder to review, harder to falsify, and harder to take seriously as an
+   727	external reader. Pruning improves signal density of the publication
+   728	package. Use that framing in prose.
+   729	
+   730	### Paragraph test
+   731	
+   732	For each paragraph, ask:
+   733	
+   734	1. What is the question?
+   735	2. What is the object being calculated?
+   736	3. What is the support surface?
+   737	4. What is still open?
+   738	
+   739	If the paragraph does not answer at least one of these, cut it or move
+   740	it to a ledger.
+
+2026-07-17T19:32:25.507033Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "awk 'NR>=250 {printf \"%6d\\t%s\\n\", NR, "'$0}'"' 'docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+   250	surfaces: the five-step argument is dimension-generic on the effect algebra,
+   251	so no projective import enters at any `|Λ|`, and only finite menus are
+   252	assumed. The legacy chain
+   253	[`BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md`](BORN_RULE_FROM_GLEASON_BUSCH_DERIVATION_NOTE_2026-05-20.md)
+   254	carries separate inductive-limit and identification inputs that this note
+   255	does not use and does not discharge. The orientation memo
+   256	[`GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md`](GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md)
+   257	is cited for orientation and scope discipline only and carries no premise
+   258	weight here.
+   259	
+   260	## No-Go Discipline Gate
+   261	
+   262	T3 is a bounded negative boundary ("product-projector menus force nothing at
+   263	`2 x 2`"), so the negative-claim checklist is answered for it:
+   264	
+   265	- **N1 route inventory (five routes against T3):** (1) coarse rank-2 product
+   266	  menus added — ATTEMPTED, the rogue normalizes them (T3a covers ranks 1, 2,
+   267	  4); (2) non-tree product menus that might constrain further — RULED OUT by
+   268	  the T3a classification; (3) countable product-projector partitions — a
+   269	  finite-dimensional identity admits at most `d` nonzero mutually orthogonal
+   270	  projectors, so countable adds nothing at `d = 4`; (4) menus mixing
+   271	  projective structure with non-projective effects (classical mixtures of
+   272	  projective menus and other intermediate families) — OUTSIDE T3's scope by
+   273	  construction and named untested; the comparator literature suggests such
+   274	  families can force the form already at one site, which is exactly why T3
+   275	  is scoped to product-projector resolutions only; (5) larger regions
+   276	  (`2 x 2 x 2` product menus) — untested here; the comparator statement says
+   277	  qubit factors never suffice, but no native claim is made beyond the bonded
+   278	  pair.
+   279	- **N2 wall independence:** T3 names one wall (product-menu insufficiency at
+   280	  `2 x 2`); no second wall is presented.
+   281	- **N3 hidden-wall scan:** T3 assumes the projective-grade hypotheses of the
+   282	  landed note restricted to a smaller menu family; the restriction is the
+   283	  claim, not a hidden condition. The tie-set convention inside the hemisphere
+   284	  rule is inherited verbatim from the landed R1 construction and gated.
+   285	- **N4 residual matching:** the only cited prior negative is the landed R1
+   286	  rogue existence, reused at the same resolution (one-site binary menus and
+   287	  their product refinements).
+   288	- **N5 rhetoric audit:** the phrase "force nothing" is scoped to the stated
+   289	  menu family on the stated pair; T3c states the exact family and dimension.
+   290	- **N6 partial-closure scan:** the closure path is named, not denied — full
+   291	  H4 strength (landed) or effect-grade menus (T1); T3 forecloses neither.
+   292	- **N7 steelman:** "product menus are the physically natural family, so T3
+   293	  kills the projective horn." Reply: T3 proves insufficiency of that family,
+   294	  not naturalness; which family the registration supplies is exactly the
+   295	  declared open binary, and the landed composite route under full H4
+   296	  strength is untouched.
+   297	- **N8 cross-cycle echo:** the structurally similar prior wall — one-site
+   298	  dimension-2 rogue existence — was retired on the composite by H4 strength
+   299	  (landed R3) and is retired sitewise at effect grade by T2 here; both
+   300	  mechanisms are cited, and neither retires T3's product-menu wall.
+   301	
+   302	## Non-Claims
+   303	
+   304	- Does **not** claim any grading exists, at any grade; E1-E2 and the
+   305	  projective-grade hypotheses are conditional input only.
+   306	- Does **not** select a menu grade, register or modify any primitive, or
+   307	  derive menu-eligibility from the axioms; the axioms supply no menus.
+   308	- Does **not** derive weight values, record conditioning, rates, dynamics,
+   309	  update rules, orientation, or scale.
+   310	- Does **not** touch the landed composite route's conclusions under full H4
+   311	  strength, and does **not** re-prove or use Gleason's projective theorem.
+   312	- Does **not** set an audit verdict or close the probability wall; landing is
+   313	  not ratification, and independent audit remains required.
+   314	
+   315	## Verification
+   316	
+   317	The primary runner re-derives every load-bearing identity exactly (sympy,
+   318	rational/symbolic arithmetic, single process, dimensions 2 and 4 only):
+   319	the menu bookkeeping behind (A) and (B) as formal linear elimination; the
+   320	effect-cone witnesses (including a noncommuting pair); the monotonicity and
+   321	squeeze inequalities on exact witnesses with a non-monotone rejector; the
+   322	`d = 2` and `d = 4` effect bases with nondegenerate trace Gram matrices; the
+   323	reconstruction identity `w(E) = Tr(σE)` on symbolic effects, matching the
+   324	landed Bloch display at `d = 2`; the state property; the exact
+   325	three-direction refutation of every `2 x 2` trace form and its T2 corollary
+   326	logic; the antipodal-orthogonality and product-orthogonality lemmas; each
+   327	case branch of the T3a classification (including the three-antipodal
+   328	impossibility, the rank-3 non-product fact, and the below-`P(−a)⊗1`
+   329	forcing); the hemisphere complement law including tie-set witnesses; the
+   330	product-rogue normalization on both tree rootings and coarse menus; the
+   331	trace-affinity of pair-state restrictions; the Bell-projector Schmidt-rank
+   332	witness; the Pauli-commutant computation behind T5; and needle checks that
+   333	pin the quoted sentences of the axiom memo and the two landed notes named
+   334	above. Mutation checks (one load-bearing mutation per check family,
+   335	reverted) are recorded in the review history and PR body.
+   336	
+   337	Measured runner total after final verification:
+   338	`TOTAL: PASS=54 FAIL=0`.
+
+2026-07-17T19:32:35.055017Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "awk '{printf \"%6d\\t%s\\n\", NR, "'$0}'"' '.claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	# Trace Gate — block01 (2026-07-17)
+     2	
+     3	```yaml
+     4	trace_class: upstream_support
+     5	target_claim_id: born_form_from_lawful_graded_constraint_composite_gleason_bridge_note_2026-07-04
+     6	target_blocker_text: >
+     7	  "Gleason's theorem is imported as named classical mathematics. The runner
+     8	  checks the finite-dimensional consequences used here; it does not pretend
+     9	  to re-prove Gleason." ; and H4's declared specification burden: "Any
+    10	  registration of the graded-constraint primitive must therefore specify:
+    11	  which neighbor pairs carry composite menus; whether eligibility depends on
+    12	  the record configuration; how pair menus coexist with site-local
+    13	  admissibility; and in what sense entangled projections are alternatives."
+    14	source_of_blocker_text: audit_ledger_source_note
+    15	reachability_to_target: supports
+    16	artifact_role: theorem
+    17	next_trace_action: >
+    18	  Hand the PR to owner-operated review/audit. If ratified, the effect horn
+    19	  gives the graded-constraint program a zero-literature-import form-fixing
+    20	  route (import retirement on that horn), and the registration's
+    21	  specification burden gains an exact two-sided statement: entangled-menu
+    22	  eligibility is NECESSARY at 2x2 on the projective horn (T3), and
+    23	  unnecessary for form-fixing on the effect horn (T1). Downstream consumer:
+    24	  any future registration proposal for the grading primitive must now state
+    25	  its menu grade explicitly.
+    26	```
+    27	
+    28	Notes: `upstream_support`, not `direct_blocker_closure` — the landed note's
+    29	Gleason import is not removed from that note (it remains correct on its
+    30	horn); this block supplies the parallel horn with no import and the
+    31	necessity boundary. No retained-positive proposal is made, so the
+    32	direct-closure requirement for retained-grade language does not bind. The
+    33	negative slice (T3) is `negative_route_pruning` at the sub-claim level: it
+    34	prunes "weaken H4 to product menus at 2x2" exactly, with the reopen
+    35	condition named (entangled resolutions or effect-grade menus).
+
+exec
+/bin/zsh -lc "awk '{printf \"%6d\\t%s\\n\", NR, "'$0}'"' '.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	# Claim Status Certificate — block01 (2026-07-17)
+     2	
+     3	```yaml
+     4	actual_current_surface_status: bounded-support
+     5	target_claim_type: bounded_theorem
+     6	trace_class: upstream_support
+     7	reachability_to_target: supports
+     8	conditional_surface_status: >
+     9	  bridge-conditional on the assumed grading hypotheses (E1-E2 at effect
+    10	  grade; the landed H1-H4 at projective grade); the menu grade itself is
+    11	  underived; no menus are claimed to exist.
+    12	hypothetical_axiom_status: null
+    13	admitted_observation_status: null
+    14	claim_type_reason: >
+    15	  Exact finite theorems under explicitly assumed conditional hypotheses,
+    16	  with a scoped negative boundary (T3) carrying a constructive witness and
+    17	  an exhaustive finite classification. No unconditional physical claim; the
+    18	  grading primitive is assumed, not adopted; hence bounded_theorem, not
+    19	  positive_theorem.
+    20	audit_required_before_effective_retained: true
+    21	bare_retained_allowed: false
+    22	```
+    23	
+    24	## Promotion Value Gate (V1-V5, answered in writing)
+    25	
+    26	- **V1 (specific obstruction).** This is a new-content bounded theorem, not
+    27	  a promotion of an existing row; the named target surface is the landed
+    28	  frontier note's own import declaration and specification burden, quoted in
+    29	  `TRACE_GATE.md`: the Gleason bridge input ("imported as named classical
+    30	  mathematics") and the H4 burden item "in what sense entangled projections
+    31	  are alternatives". The block supplies a zero-import horn for the first and
+    32	  an exact necessity theorem for the second.
+    33	- **V2 (new derivation).** (i) The dimension-generic effect-grade five-step
+    34	  forcing stated on the graded-constraint hypothesis surface — no landed
+    35	  note connects the effect-level representation to the program's H1-H3, and
+    36	  the landed finite-region effect statement routes |Λ| >= 2 through the
+    37	  projective Gleason import, which T1 removes; (ii) the one-site
+    38	  non-extension corollary T2 (loophole is grade-relative, not
+    39	  dimension-relative); (iii) the exhaustive product-menu classification at
+    40	  2x2 and the multiplicative rogue T3 — nowhere in the repo; (iv) the
+    41	  finite-menu (no countable additivity) weakening made explicit; (v) the
+    42	  finite-group (Pauli) zero-information variant T5 with a strictly weaker
+    43	  premise than the landed R4.
+    44	- **V3 (could the audit lane already do it from standard machinery?).** The
+    45	  five-step argument is standard-adjacent mathematics, and the note treats
+    46	  it that way: it is reproved in-runner rather than imported, exactly like
+    47	  the landed bridge note's practice. The framework-necessary content is the
+    48	  menu-grade dichotomy on the program's own hypothesis surface, the R1-rogue
+    49	  reuse, the 2x2 necessity theorem against H4's own burden text, and the
+    50	  attribution correction to the landed "adjacency alone pays for nothing"
+    51	  sentence — none of which exists as a derivable corollary of retained rows.
+    52	- **V4 (non-trivial).** Yes: the tree classification is a genuine finite
+    53	  case analysis with three load-bearing lemmas; the squeeze and
+    54	  well-definedness steps are the two analytically substantive steps of the
+    55	  forcing; the product rogue is a constructive counterexample with a
+    56	  well-definedness obligation discharged by the classification.
+    57	- **V5 (one-step variant of a landed cycle?).** No. Closest surfaces:
+    58	  the 2026-07-04 composite bridge note (projective horn; keeps import and
+    59	  composite; no effect statement) and the 2026-06-05 authority bridge
+    60	  (d=2 representation only; not connected to menus, the program, the rogue,
+    61	  or the pair). The structural distinctions are the dichotomy itself, the
+    62	  necessity theorem, and the dimension-generic import-free route.
+    63	
+    64	## No-Go Discipline Gate (N1-N8)
+    65	
+    66	Answered in the note's own "No-Go Discipline Gate" section for the T3
+    67	negative slice (five routes enumerated with ATTEMPTED / RULED OUT BY PRIOR
+    68	markers; wall independence; hidden-wall scan; residual matching; rhetoric
+    69	scoping; partial-closure paths named; steelman; cross-cycle echo). The note
+    70	section is the authoritative copy; the PR body reproduces it.
+    71	
+    72	## Review-loop disposition
+    73	
+    74	pending — to be replaced with the actual panel outcome in
+    75	`REVIEW_HISTORY.md` before the PR opens. A `pending` disposition does not
+    76	permit pushing the PR; the block closes only on `pass` (or an honest demote
+    77	with the artifact rescoped).
+    78	
+    79	Independent audit remains required before any effective-status change; this
+    80	certificate predicts no verdict.
+
+exec
+/bin/zsh -lc "awk '{printf \"%6d\\t%s\\n\", NR, "'$0}'"' '.claude/science/physics-loops/born-effect-menu-horn-20260717/NO_GO_LEDGER.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+     1	# No-Go Ledger — born-effect-menu-horn (2026-07-17)
+     2	
+     3	Prior negative results this block must respect (primary texts read, not
+     4	titles):
+     5	
+     6	| Route | Exact wall (from the primary text) | Where | This block's posture |
+     7	|---|---|---|---|
+     8	| One-site projective Gleason at d=2 | "On one `M_2(C)` site alone, H1-H3 do not force the Born form" — constructive rogue R1 | `BORN_FORM_FROM_LAWFUL_GRADED_CONSTRAINT_COMPOSITE_GLEASON_BRIDGE_NOTE_2026-07-04.md` R1 | respected; T2 changes the GRADE, not the projective statement; R1 re-derived, not contradicted |
+     9	| Composite forcing without full projection-measure strength | "Without this full projection-measure strength a partial menu assignment is not a frame function and Gleason does not apply" | same note, H4 | strengthened into an exact necessity theorem at 2x2 (T3): product menus provably insufficient |
+    10	| Reading rulings from axiom prose | supply-indexed readings carry no premise weight until derived or promoted | `GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md` (orientation only) | no menu family is derived from axiom prose; the grade stays an underived binary |
+    11	| New primitive/axiom in physics-loop work | forbidden | physics-loop skill | nothing registered; hypotheses conditional only |
+    12	
+    13	New negative boundary produced by this block (scoped):
+    14	
+    15	| Claim | Scope | Witness | Reopen condition |
+    16	|---|---|---|---|
+    17	| Product-projector menus force nothing | bonded pair (d=4), projective grade, menus = orthogonal resolutions into nonzero product projectors | multiplicative hemisphere rogue W = g1*g2 + exhaustive tree classification | admit entangled resolutions (landed H4 route) or move to effect grade (T1); intermediate menu families named untested |
+
+2026-07-17T19:32:40.319141Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "awk 'NR>=1 && NR<=220 {printf \"%6d\\t%s\\n\", NR, "'$0}'"' 'docs/repo/CONTROLLED_VOCABULARY.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+exec
+/bin/zsh -lc "awk 'NR>=221 && NR<=440 {printf \"%6d\\t%s\\n\", NR, "'$0}'"' 'docs/repo/CONTROLLED_VOCABULARY.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+   221	| `bounded secondary lane` | live bounded lane worth carrying, but clearly secondary to the main package |
+   222	| `bounded frontier` / `bounded negative boundary` / `bounded Route 2 build candidate` | bounded frontier/result classes kept for ongoing design work rather than current-package promotion |
+   223	| `main closure package` | package-level main-paper closure claim on the current review/package surface; stronger than support, but not automatically the retained quantitative paper core |
+   224	| `conditional` / `support` | useful positive package whose load-bearing step is still conditional, imposed, or support-only |
+   225	| `open main gate` | still-open main closure target |
+   226	| `historical` / `diagnostic` | preserved for audit/history/instrumentation, not live evidence |
+   227	| `historical support` / `provenance` / `exact transport provenance` | provenance-only rows kept for route history, reviewer handoff, or closure bookkeeping rather than live promotion |
+   228	| `negative-result` | useful negative or no-go result |
+   229	| `negative-result` / `support` | negative/no-go result that is also a reusable support/pruning surface |
+   230	| `inconclusive` | signal exists but interpretation is not frozen |
+   231	
+   232	Allowed composite forms should be built from the labels above and kept narrow:
+   233	
+   234	- `retained exact theorem`
+   235	- `retained exact companion`
+   236	- `retained structural theorem`
+   237	- `retained exact structural theorem`
+   238	- `retained corollary`
+   239	- `retained support theorem`
+   240	- `retained support batch`
+   241	- `retained support tool`
+   242	- `exact support theorem`
+   243	- `exact support batch`
+   244	- `exact structural theorem`
+   245	- `exact algebraic identity`
+   246	- `exact subderivation`
+   247	- `exact boundary theorem`
+   248	- `exact reduction theorem`
+   249	- `exact current-stack theorem`
+   250	- `exact current-bank theorem`
+   251	- `exact current-bank reduction`
+   252	- `exact current-bank no-go theorem`
+   253	- `exact negative boundary`
+   254	- `exact negative closeout`
+   255	- `exact post-selector reduction`
+   256	- `exact support/boundary theorem`
+   257	- `exact support tool`
+   258	- `bounded support theorem`
+   259	- `bounded support note`
+   260	- `bounded support tool`
+   261	- `bounded support batch`
+   262	- `bounded companion prediction`
+   263	- `bounded frontier`
+   264	- `bounded negative boundary`
+   265	- `bounded Route 2 build candidate`
+   266	- `main closure package`
+   267	- `promoted quantitative package`
+   268	- `open main gate`
+   269	
+   270	Avoid minting new slash-composites when a nearby qualifier/import column can carry the caveat instead.
+   271	
+   272	Role-specialized variants are acceptable when the cell begins with one of the
+   273	accepted base labels above and the trailing noun names the mathematical role
+   274	or control-plane role of the row, for example:
+   275	
+   276	- `retained framework statement`
+   277	- `retained quantitative lane`
+   278	- `retained action-surface closure`
+   279	- `retained restricted theorem`
+   280	- `exact structural theorem`
+   281	- `exact algebraic identity`
+   282	- `exact subderivation`
+   283	- `retained support tool`
+   284	- `retained support batch`
+   285	- `exact support tool`
+   286	- `exact support batch`
+   287	- `exact boundary theorem`
+   288	- `exact reduction theorem`
+   289	- `exact current-stack theorem`
+   290	- `exact current-bank theorem`
+   291	- `exact current-bank no-go theorem`
+   292	- `exact negative boundary`
+   293	- `exact negative closeout`
+   294	- `exact post-selector reduction`
+   295	- `historical support / provenance`
+   296	
+   297	Do not mix a publication-capture disposition with a claim-strength label in
+   298	the same cell unless the file explicitly allows hybrid narrative decisions.
+   299	
+   300	Short scope qualifiers may follow an accepted label when they state where the
+   301	claim lives, for example:
+   302	
+   303	- `exact boundary theorem on open gate`
+   304	- `exact reduction theorem outside main core`
+   305	- `exact support theorem on the bounded charged-lepton package`
+   306	- `exact support theorem with bounded downstream reuse`
+   307	- `retained support theorem on the current package surface`
+   308	
+   309	Do not use `reviewed` or `reviewer-tested` as status labels. Those are review
+   310	process adjectives, not controlled-vocabulary claim-strength labels. Carry
+   311	review context in prose, placement, or authority notes instead.
+   312	
+   313	## Audit Lane Field Vocabulary
+   314	
+   315	These enums govern the audit ledger rows in
+   316	`docs/audit/data/audit_ledger.json`, the rendered surface
+   317	`docs/audit/AUDIT_LEDGER.md`, and the audit pipeline's derived outputs.
+   318	Authors may write whatever status prose they need inside source notes,
+   319	but the retained library is driven only by these auditor-owned fields.
+   320	The audit-lane process and workflows live in `docs/audit/README.md`,
+   321	`docs/audit/FRESH_LOOK_REQUIREMENTS.md`, and the audit-loop skill; the
+   322	enums themselves live here.
+   323	
+   324	### `claim_type` (auditor-set)
+   325	
+   326	What kind of object the auditor says the row is. Exactly one of:
+   327	
+   328	- `positive_theorem`
+   329	- `bounded_theorem`
+   330	- `no_go`
+   331	- `open_gate`
+   332	- `decoration`
+   333	- `meta`
+   334	
+   335	`meta` is used for non-claim infrastructure rows (audit-prep notes,
+   336	synthesis catalogues, infrastructure documentation). `meta` rows must
+   337	not promote to non-meta claim types via re-classification — these notes
+   338	are by design out-of-band.
+   339	
+   340	### `claim_scope` (auditor-set)
+   341	
+   342	The auditor's short, citeable statement of exactly what was audited.
+   343	Required for applied audits. Prose, not enum.
+   344	
+   345	### `audit_status` (auditor-set)
+   346	
+   347	What the audit found. Exactly one of:
+   348	
+   349	- `unaudited`
+   350	- `audit_in_progress`
+   351	- `audited_clean`
+   352	- `audited_renaming`
+   353	- `audited_conditional`
+   354	- `audited_decoration`
+   355	- `audited_failed`
+   356	- `audited_numerical_match`
+   357	
+   358	### `effective_status` (derived by pipeline)
+   359	
+   360	Publication-facing status derived from `claim_type` plus
+   361	`audit_status` plus the citation-graph closure of dependencies. The
+   362	pipeline computes this; do not write to it directly. Possible values:
+   363	
+   364	- `retained` — `claim_type = positive_theorem` plus
+   365	  `audit_status = audited_clean` plus retained-grade dependencies
+   366	- `retained_no_go` — `claim_type = no_go` plus
+   367	  `audit_status = audited_clean` plus retained-grade dependencies
+   368	- `retained_bounded` — `claim_type = bounded_theorem` plus
+   369	  `audit_status = audited_clean` plus retained-grade dependencies
+   370	- `retained_pending_chain` — clean theorem/no-go/bounded row whose
+   371	  upstream chain is not yet retained-grade
+   372	- `open_gate` — clean open gate; blocks retained propagation
+   373	- `decoration_under_<parent_claim_id>` — audited decoration whose
+   374	  parent is retained-grade
+   375	- `meta` — non-claim infrastructure rows
+   376	- `audited_<failure_mode>` — terminal non-clean audit verdicts on active
+   377	  claims
+   378	
+   379	Generated audit data must not contain legacy source-status authority
+   380	fields. The graph builder may use old source-note status prose as a
+   381	one-way migration hint when seeding `claim_type`, but the ledger, queue,
+   382	prompt, and rendered audit surfaces are
+   383	`claim_type` / `audit_status` / `effective_status` only. `support` is
+   384	not a claim class.
+   385	
+   386	### Conditional repair classes
+   387	
+   388	For every `audited_conditional` result, the auditor must make the next
+   389	repair lane sortable by prefixing `notes_for_re_audit_if_any` with
+   390	exactly one of these seven classes:
+   391	
+   392	- `missing_dependency_edge` — a needed source note or authority exists
+   393	  or is named, but is not wired as a direct dependency for the audited
+   394	  claim
+   395	- `dependency_not_retained` — a direct dependency exists but is not
+   396	  retained grade
+   397	- `missing_bridge_theorem` — the claim needs a new theorem for a
+   398	  physical carrier, readout, unit map, boundary condition, sector
+   399	  choice, normalization, or observable bridge
+   400	- `scope_too_broad` — a clean bounded core exists, but the current claim
+   401	  scope includes an unclosed extension
+   402	- `runner_artifact_issue` — a runner, log, classifier, threshold,
+   403	  import, or pass/fail accounting problem blocks closure despite
+   404	  otherwise local scope
+   405	- `compute_required` — closure needs a completed long run, sliced
+   406	  runner, cached certificate, or independent derivation
+   407	- `other` — use only when none of the above fits, and state why
+   408	
+   409	After the class, the auditor names the cheapest next repair action.
+   410	
+   411	### No-Go Discipline packet fields
+   412	
+   413	`no_go_discipline.status` records the mandatory structured N1-N8 stress-test outcome for negative boundaries. Exactly one of:
+   414	
+   415	- `PASS` — Every required N1-N8 record closes with no unresolved item; eligible to support a clean negative verdict.
+   416	- `FAIL` — At least one required stress test remains open, incomplete, or mismatched; forbids audited_clean and requires an explicit demotion.
+   417	
+   418	When the status is `FAIL`, `no_go_discipline.demotion` is required and must be exactly one of:
+   419	
+   420	- `partial-attempt-with-named-untested-routes` — Records the tested work while naming alternative routes that remain untested.
+   421	- `partial-narrowing` — Narrows the claim to the portion actually supported by the restricted packet.
+   422	- `bounded-with-corrected-wall-count` — Retains only the bounded wall set that survives the independence audit.
+   423	- `stretch-attempt-with-honest-residual` — Preserves a useful stretch attempt while stating the unresolved residual explicitly.
+   424	
+   425	Packetless legacy negative authority is invalidated with the controlled reason:
+   426	
+   427	- `no_go_discipline_packet_missing` — A clean negative-boundary audit has no structured N1-N8 packet; archive it and return the row to fresh audit before it can remain authoritative.
+   428	
+   429	`negative_assertion_classes` is the mandatory auditor declaration on every incoming audit: the policy assertion classes the artifact makes, judged semantically from the full note (empty list when none). Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger. Allowed classes:
+   430	
+   431	- `no_go_result` — Asserts a no_go outcome: structurally closed, no route exists, no retained primitive supplies the target.
+   432	- `stretch_attempt_negative` — Asserts a stretch-attempt negative outcome: the attempted route does not close.
+   433	- `bounded_with_named_walls` — Asserts a bounded result conditional on named walls or admissions.
+   434	- `derived_no_go_boundary` — Asserts a derived no-go boundary inside a positive theorem, such as a per-element identity that does not lift.
+   435	- `conditional_wall_rationale` — An audit rationale that names a residual wall as the reason a verdict is conditional.
+   436	
+   437	### Independence tiers
+   438	
+   439	`auditor` must not equal `author`. Strength tiers for the `independence`
+   440	field on an audit row:
+
+ succeeded in 0ms:
+     1	<!-- generated; do not edit by hand; source: docs/repo/controlled_vocabulary.yaml hash=dc02750e482ab935590058a2194f976ba8fba24eb54d6abde65acc594de73d05 -->
+     2	# Controlled Vocabulary
+     3	
+     4	> **Front-door lookup:** Looking up a single term? Go to
+     5	> `docs/KEY_TERMINOLOGY.md` — flat A-Z index of
+     6	> every repo-canonical term with one-line definition and a pointer to
+     7	> the source-of-truth doc for each.
+     8	
+     9	## Vocabulary Hierarchy
+    10	
+    11	The repo has five language layers. This doc is the **operational** layer
+    12	(layer 3). Higher layers are sovereign for their domains; do not duplicate
+    13	their content here, and do not override their wording from here.
+    14	
+    15	| Layer | Source-of-truth doc | Governs |
+    16	|---|---|---|
+    17	| 0. Front-door A-Z lookup | `docs/KEY_TERMINOLOGY.md` | Single-page A-Z index of every repo-canonical term with a one-line definition and a pointer to its source-of-truth doc. The reader entry-point above all layers below; an index, not an authority. New terms enter the index only after the source-of-truth doc accepts them. |
+    18	| 1. Framework substantive | `docs/MINIMAL_AXIOMS_2026-06-29.md` and `docs/audit/data/axiom_premise_nodes.json` | Framework axioms and explicitly approved primitive premise nodes the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor adjacency, standard translations, proper cubic rotations about each site, no privileged site, and site distinctions carried only by the supplied lattice structure), Qubit (the domain of local possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is equivalent notation, not extra primitive content; no possibility is privileged; possibilities are distinguished by the supplied algebraic structure alone), Admissibility (one fixed nearest-neighbor rule, covariant under lattice translations and proper cubic rotations, by which the available possibilities are determined by, and vary with, the nearest-neighbor conditions at each site), Record (when present, fixed locking of exactly one admissible local possibility; at most one record per site; permanence; readout value determined by record content alone; finite scalar additivity), the state/law qualification clauses, the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms, and registered primitive premise nodes such as the scale-reference and kinetic-isotropy primitives. Changes only when a framework-level science decision changes. |
+    19	| 2. External paper text | [`docs/ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md`](../ai_methodology/CANONICAL_FRAMING_PARAGRAPH_2026-04-25.md), [`docs/ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md`](../ai_methodology/AI_ACCOUNTABILITY_AND_DISCLOSURE_NOTE_2026-04-25.md) | Verbatim reusable disclosure paragraphs for papers, preprints, and talks. The framing paragraph is the short paper-facing form; the accountability disclosure is the longer package-level form. Both carry their own usage guidance (e.g. replacing `[repo URL]`, narrowing the tool list when only one was used). |
+    20	| 3. Operational (this doc) | `docs/repo/CONTROLLED_VOCABULARY.md` | Status taxonomy, claim-strength labels, audit-lane field enums, repair classes, filename conventions, archival paths, topic language, and paper-facing prose voice — the working vocabulary used inside the repo across ledgers, tables, notes, runners, skills, and PR descriptions. |
+    21	| 4. Methodology framing (adjacent) | `docs/AI_METHODOLOGY_NOTE_2026-04-25.md` | The curated front-door note for the methodology lane. Defines how to talk about the AI / methodology side at the project level. |
+    22	
+    23	For a single-term lookup (layer 0), use `KEY_TERMINOLOGY.md`. For
+    24	framework axioms and approved primitive premise nodes (layer 1), cite
+    25	`MINIMAL_AXIOMS_2026-06-29.md` and
+    26	`docs/audit/data/axiom_premise_nodes.json` — do not redefine Lattice, Qubit,
+    27	Admissibility, Record, `Cl(3)`, `Z^3`, `A_min`, or registered primitives here. For external paper text
+    28	(layer 2), use the canonical framing paragraph and the accountability
+    29	disclosure verbatim — do not paraphrase. This doc governs layer 3 only.
+    30	
+    31	---
+    32	
+    33	This file is the single repo-wide home for the **operational** vocabulary
+    34	layer: status taxonomy, audit-lane field enums, filename conventions,
+    35	axiom-naming **rules** (above the science decision in layer 1), archival
+    36	paths, topic language, and paper-facing prose voice. Other policy /
+    37	process docs in the repo cite this file for vocab rather than inlining
+    38	their own. If a sanctioned term, label, suffix, or wording is not listed
+    39	here and is not defined in the layer 1 or layer 2 sources above, it does
+    40	not exist for repo purposes — vocabulary additions require a PR against
+    41	this file before any note, runner, ledger row, status badge, or PR
+    42	description that uses them.
+    43	
+    44	Goals:
+    45	
+    46	- one taxonomy home for matrix / ledger / atlas / review / note / runner / script
+    47	  language
+    48	- separate publication-capture decisions from theorem-strength labels
+    49	- separate authoring vocabulary from audit-lane field enums
+    50	- avoid vague shorthand on live package surfaces
+    51	- prefer explicit protocol qualifiers over loose adjectives
+    52	- forbid new tags / classes / meta-framings on `claim_type: meta` notes
+    53	  and elsewhere; emergent vocabulary is a substantive defect even when
+    54	  the per-claim content is correct
+    55	
+    56	## Vocabulary Families
+    57	
+    58	There are five status families in this repo. Do not mix them casually.
+    59	
+    60	1. publication-capture dispositions
+    61	2. claim-strength / release labels
+    62	3. audit-lane field vocabulary (claim_type / audit_status /
+    63	   effective_status / repair classes / independence tiers)
+    64	4. historical lane-board labels
+    65	5. historical discovery-log labels
+    66	
+    67	If a file already has separate columns for `Status`, `Qualifier`, `Import
+    68	class`, or `Current publication decision`, keep one family per column
+    69	rather than collapsing everything into one hybrid phrase.
+    70	
+    71	## Science Naming Rules
+    72	
+    73	Landed science must use domain-explicit names. Do not introduce a bare
+    74	letter-number or route code as the primary name of a theorem, lane, source
+    75	note, runner headline, table row, or review finding when that code could also
+    76	mean an axiom, assumption, algebra type, branch block, route number, or
+    77	workstream index.
+    78	
+    79	Examples of ambiguous primary names to avoid on new landed surfaces:
+    80	
+    81	- `A1`, `A2`, `G1`, `R3`
+    82	- `Route F`, `Block 2`, `Origin B`
+    83	- `Step 1` or `Assumption 1` compressed to `S1` / `A1`
+    84	
+    85	Use the scientific object as the name instead:
+    86	
+    87	- `physical Cl(3) local algebra`, not bare `A1`
+    88	- `Lattice`, not bare `A2`
+    89	- `Koide Frobenius-equipartition condition`, not bare `A1`
+    90	- `Lie type A_1` or `SU(2) root-system check`, not bare `A1`
+    91	- `DM-eta Coleman-Weinberg residual`, not bare `G1`
+    92	
+    93	**Canonical mathematical-object names are allowed.** Bare letter-number
+    94	forms that name an *established mathematical object* — `S^3` (3-sphere),
+    95	`S^2` (2-sphere), `U(1)` and `SU(N)` (gauge groups), `Z_3` / `Z_n`
+    96	(cyclic groups), `C_3` (cyclic / symmetry group), `A_n` / `D_n` /
+    97	`E_n` (Lie types), `I_3` (third isospin component), etc. — are the
+    98	canonical names for those objects and do not require domain-explicit
+    99	expansion. The rule above targets *code-like primary names that don't
+   100	reference an established mathematical object* (e.g. `A1` used as a
+   101	workstream label, `G1` used as a route code, `R3` used as a routing
+   102	index), not standard mathematical notation. If both readings are
+   103	plausible in context (e.g. `A_1` as Lie type vs. `A1` as
+   104	workstream-index abbreviation), spell out the mathematical reading
+   105	on first use (`Lie type A_1`) so the bare form is unambiguous.
+   106	
+   107	Legacy shorthand may be preserved only as an alias after the explicit name,
+   108	for example: `Koide Frobenius-equipartition condition (legacy alias: A1)`.
+   109	If an existing file already uses a shorthand, new edits should define it on
+   110	first use and prefer the explicit name in headings, metadata, claim scopes,
+   111	review summaries, and publication/control-plane rows.
+   112	
+   113	Axioms and assumptions must be written out as `Axiom 1`, `Assumption 1`, or a
+   114	descriptive premise name. Do not abbreviate them to `A1` on live science
+   115	surfaces.
+   116	
+   117	### Meta-note vocabulary discipline
+   118	
+   119	`claim_type: meta` notes (audit-prep, synthesis, fix-record, infrastructure
+   120	documentation) must use a plain `_NOTE_<YYYY-MM-DD>.md` filename suffix
+   121	and repo-canonical vocabulary in their content. The following emergent
+   122	patterns are vocabulary additions and forbidden until they appear in this
+   123	file:
+   124	
+   125	- new filename suffixes such as `_HOSTILE_AUDIT_FINDINGS_NOTE_`,
+   126	  `_DOWNSTREAM_FIX_NOTE_`, `_SURGICAL_FIX_RECORD_`, `_FINDINGS_MEMO_`,
+   127	  `_FIX_RECORD_`, `_AUDIT_BRIEF_`, `_ADDENDUM_`
+   128	- new within-note labelling schemes such as `F-A` / `F-B` / `F-C`
+   129	  "Finding F-letter" headings
+   130	- new finding-class names such as `framing-fix`, `routing correction`,
+   131	  `tier over-claim`, `admission-inheritance`, `audit-prep input`
+   132	- new authority-role phrases such as
+   133	  `Status authority: independent audit lane only` as a load-bearing role
+   134	- new repair-class names beyond the seven listed in "Audit Lane Field
+   135	  Vocabulary" below
+   136	- new "X is a Y" meta-framings that imply a class or parent-framing
+   137	  cross-reference for a collection of not-yet-shipped sub-PRs
+   138	
+   139	The reviewer rejects custom tags / classes / meta-framings even when the
+   140	underlying per-claim work is correct. Ship narrow content one identity at a
+   141	time, mirroring an existing canonical template, with no new vocabulary.
+   142	
+   143	## Filename Taxonomy
+   144	
+   145	### Script filename prefixes
+   146	
+   147	- `frontier_*`
+   148	  - active frontier or later-stage retained runners
+   149	  - this is the current default namespace
+   150	- `mirror_*`, `lattice_*`, `gate_b_*`, `source_resolved_*`, `wave_*`
+   151	  - older major programs that are still important on `main`
+   152	- everything else
+   153	  - usually lane-specific historical or exploratory runners
+   154	
+   155	Lane-specific prefixes are preferred when creating new frontier runners:
+   156	`frontier_staggered_*`, `frontier_two_field_*`, `frontier_emergent_geometry_*`,
+   157	etc. Pick a prefix that names the lane, not the date or the author.
+   158	
+   159	### Note filename rules
+   160	
+   161	- New retained notes should be explicit about the runner they interpret
+   162	  in the filename when feasible.
+   163	- New strategy or synthesis notes should not silently replace retained
+   164	  notes; if the synthesis is forward-looking it lands at
+   165	  `claim_type: meta` with the `_NOTE_<YYYY-MM-DD>.md` plain suffix.
+   166	- Historical lanes should not be renamed just to fit the current
+   167	  taxonomy. They should be indexed in the lane board and registry
+   168	  instead. If a lane is historical, mark that in the lane board and
+   169	  registry rather than renaming dozens of files.
+   170	
+   171	### Reserved filename suffixes
+   172	
+   173	See "Meta-note vocabulary discipline" above for the list of forbidden
+   174	emergent suffixes. The only sanctioned form for new audit-prep / meta
+   175	notes is `<DOMAIN>_NOTE_<YYYY-MM-DD>.md`.
+   176	
+   177	## Publication-Capture Dispositions
+   178	
+   179	Use these on publication-control-plane surfaces such as
+   180	`PUBLICATION_MATRIX.md`.
+   181	
+   182	| Label | Use |
+   183	|---|---|
+   184	| `retained` | live retained family on the current paper-authority surface |
+   185	| `promoted` | main-paper publication-core family carried directly in the current paper package |
+   186	| `bounded` | live captured family kept outside the main paper core with explicit caveats |
+   187	| `open` | live gate / blocker that is not yet closed |
+   188	| `frozen-out` | intentionally excluded from the main paper while still recorded |
+   189	
+   190	These are package-capture decisions, not generic adjectives.
+   191	
+   192	## Claim-Strength / Release Labels
+   193	
+   194	Use these on notes, claims tables, quantitative tables, and runner summaries.
+   195	
+   196	| Label | Use |
+   197	|---|---|
+   198	| `retained` | theorem-grade closure on the retained authority surface |
+   199	| `derived` | current-main downstream result obtained from retained structure plus named bridge/import assumptions; safe to quote, but not the same as zero-input retained closure |
+   200	| `retained corollary` | safe retained consequence of a retained theorem/action surface |
+   201	| `retained support theorem` / `retained support` | exact retained support result that is reusable but not itself the manuscript headline |
+   202	| `retained support batch` | coherent retained batch of support theorems/tools carried together for atlas, reviewer, or support-package reuse |
+   203	| `retained exact theorem` / `retained exact companion` | exact retained theorem/companion variant used when exactness itself is part of the safe statement |
+   204	| `retained structural theorem` / `retained exact structural theorem` | retained exact structural law on the framework/package surface |
+   205	| `retained support tool` | reusable retained tool/subderivation that supports other lanes without itself being the manuscript headline |
+   206	| `retained framework statement` / `retained positioning` / `retained quantitative lane` | retained package-authority framing labels for front-door/control-plane use |
+   207	| `retained action-surface closure` / `retained restricted theorem` / `retained restricted support` / `retained evaluated theorem` | retained exact-result variants where the constrained surface/class/evaluation matters |
+   208	| `retained positive` / `retained partial positive` | retained positive lane result used mainly on atlas/toolbox surfaces rather than as the headline theorem |
+   209	| `exact support theorem` / `exact support` | accepted exact-support variant when exactness itself is material to the safe statement; use with the same non-headline semantics as retained support, and keep bridge/import qualifiers explicit |
+   210	| `exact support batch` | coherent exact batch of support theorems/tools carried together for atlas or reviewer reuse |
+   211	| `exact structural theorem` / `exact algebraic identity` / `exact subderivation` | accepted exact-result specializations for atlas / theorem-bank rows when the mathematical role matters |
+   212	| `exact boundary theorem` / `exact reduction theorem` | accepted exact-result specializations for atlas / theorem-bank rows when the mathematical role is an open-lane boundary or a compression/reduction statement |
+   213	| `exact current-stack theorem` / `exact current-bank theorem` / `exact current-bank reduction` / `exact current-bank no-go theorem` | accepted exact-result specializations for current-stack/current-bank closeout rows on atlas and reviewer surfaces |
+   214	| `exact negative boundary` / `exact negative closeout` / `exact post-selector reduction` | accepted exact-result specializations for explicit no-go/closeout/post-selector roles on atlas and reviewer surfaces |
+   215	| `exact support/boundary theorem` | accepted mixed exact-role label when a row simultaneously contributes a reusable exact support input and an exact open-lane boundary statement |
+   216	| `exact support tool` | reusable exact tool/subderivation that supports other lanes without being the headline claim |
+   217	| `bounded support theorem` / `bounded support note` / `bounded support tool` | bounded supporting result/tool carried for atlas, reviewer, or secondary-lane use; not a main closure claim |
+   218	| `bounded support batch` | coherent bounded batch of support tools/calculations carried for atlas or reviewer reuse |
+   219	| `promoted quantitative package` | quantitative package strong enough for the current main-paper surface |
+   220	| `bounded companion` | live bounded supporting lane outside the main paper core |
+
+2026-07-17T19:32:45.829388Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+exec
+/bin/zsh -lc "rg -n -i --no-heading 'trace_class|upstream_support|bounded-support|negative_route_pruning|direct_blocker_closure|retained|promoted|ratif|audited_|tier|class|register|select|adopt|predict|audit (outcome|verdict)' 'docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md' '.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md' '.claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE.md' '.claude/science/physics-loops/born-effect-menu-horn-20260717/NO_GO_LEDGER.md' 'docs/repo/CONTROLLED_VOCABULARY.md'" in /Users/jonBridger/Toy Physics/.claude/worktrees/quirky-wiles-92e3b4
+ succeeded in 0ms:
+.claude/science/physics-loops/born-effect-menu-horn-20260717/NO_GO_LEDGER.md:10:| Reading rulings from axiom prose | supply-indexed readings carry no premise weight until derived or promoted | `GRADED_CONSTRAINT_PROGRAM_AND_RECORD_INFLUENCE_CRITERION_2026-07-04.md` (orientation only) | no menu family is derived from axiom prose; the grade stays an underived binary |
+.claude/science/physics-loops/born-effect-menu-horn-20260717/NO_GO_LEDGER.md:11:| New primitive/axiom in physics-loop work | forbidden | physics-loop skill | nothing registered; hypotheses conditional only |
+.claude/science/physics-loops/born-effect-menu-horn-20260717/NO_GO_LEDGER.md:17:| Product-projector menus force nothing | bonded pair (d=4), projective grade, menus = orthogonal resolutions into nonzero product projectors | multiplicative hemisphere rogue W = g1*g2 + exhaustive tree classification | admit entangled resolutions (landed H4 route) or move to effect grade (T1); intermediate menu families named untested |
+.claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE.md:4:trace_class: upstream_support
+.claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE.md:7:  "Gleason's theorem is imported as named classical mathematics. The runner
+.claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE.md:18:  Hand the PR to owner-operated review/audit. If ratified, the effect horn
+.claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE.md:28:Notes: `upstream_support`, not `direct_blocker_closure` — the landed note's
+.claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE.md:31:necessity boundary. No retained-positive proposal is made, so the
+.claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE.md:32:direct-closure requirement for retained-grade language does not bind. The
+.claude/science/physics-loops/born-effect-menu-horn-20260717/TRACE_GATE.md:33:negative slice (T3) is `negative_route_pruning` at the sub-claim level: it
+docs/repo/CONTROLLED_VOCABULARY.md:18:| 1. Framework substantive | `docs/MINIMAL_AXIOMS_2026-06-29.md` and `docs/audit/data/axiom_premise_nodes.json` | Framework axioms and explicitly approved primitive premise nodes the operational vocabulary uses: Lattice (`Z^3` with nearest-neighbor adjacency, standard translations, proper cubic rotations about each site, no privileged site, and site distinctions carried only by the supplied lattice structure), Qubit (the domain of local possibilities with full one-site algebraic presentation `M_2(ℂ)`; `Cl(3,0)` is equivalent notation, not extra primitive content; no possibility is privileged; possibilities are distinguished by the supplied algebraic structure alone), Admissibility (one fixed nearest-neighbor rule, covariant under lattice translations and proper cubic rotations, by which the available possibilities are determined by, and vary with, the nearest-neighbor conditions at each site), Record (when present, fixed locking of exactly one admissible local possibility; at most one record per site; permanence; readout value determined by record content alone; finite scalar additivity), the state/law qualification clauses, the definition of `A_min`, the status of prior `A3` / `A4` / `A5` as open gates rather than axioms, and registered primitive premise nodes such as the scale-reference and kinetic-isotropy primitives. Changes only when a framework-level science decision changes. |
+docs/repo/CONTROLLED_VOCABULARY.md:20:| 3. Operational (this doc) | `docs/repo/CONTROLLED_VOCABULARY.md` | Status taxonomy, claim-strength labels, audit-lane field enums, repair classes, filename conventions, archival paths, topic language, and paper-facing prose voice — the working vocabulary used inside the repo across ledgers, tables, notes, runners, skills, and PR descriptions. |
+docs/repo/CONTROLLED_VOCABULARY.md:27:Admissibility, Record, `Cl(3)`, `Z^3`, `A_min`, or registered primitives here. For external paper text
+docs/repo/CONTROLLED_VOCABULARY.md:52:- forbid new tags / classes / meta-framings on `claim_type: meta` notes
+docs/repo/CONTROLLED_VOCABULARY.md:63:   effective_status / repair classes / independence tiers)
+docs/repo/CONTROLLED_VOCABULARY.md:68:class`, or `Current publication decision`, keep one family per column
+docs/repo/CONTROLLED_VOCABULARY.md:130:- new finding-class names such as `framing-fix`, `routing correction`,
+docs/repo/CONTROLLED_VOCABULARY.md:131:  `tier over-claim`, `admission-inheritance`, `audit-prep input`
+docs/repo/CONTROLLED_VOCABULARY.md:134:- new repair-class names beyond the seven listed in "Audit Lane Field
+docs/repo/CONTROLLED_VOCABULARY.md:136:- new "X is a Y" meta-framings that imply a class or parent-framing
+docs/repo/CONTROLLED_VOCABULARY.md:139:The reviewer rejects custom tags / classes / meta-framings even when the
+docs/repo/CONTROLLED_VOCABULARY.md:147:- `frontier_*`
+docs/repo/CONTROLLED_VOCABULARY.md:148:  - active frontier or later-stage retained runners
+docs/repo/CONTROLLED_VOCABULARY.md:155:Lane-specific prefixes are preferred when creating new frontier runners:
+docs/repo/CONTROLLED_VOCABULARY.md:156:`frontier_staggered_*`, `frontier_two_field_*`, `frontier_emergent_geometry_*`,
+docs/repo/CONTROLLED_VOCABULARY.md:161:- New retained notes should be explicit about the runner they interpret
+docs/repo/CONTROLLED_VOCABULARY.md:163:- New strategy or synthesis notes should not silently replace retained
+docs/repo/CONTROLLED_VOCABULARY.md:184:| `retained` | live retained family on the current paper-authority surface |
+docs/repo/CONTROLLED_VOCABULARY.md:185:| `promoted` | main-paper publication-core family carried directly in the current paper package |
+docs/repo/CONTROLLED_VOCABULARY.md:198:| `retained` | theorem-grade closure on the retained authority surface |
+docs/repo/CONTROLLED_VOCABULARY.md:199:| `derived` | current-main downstream result obtained from retained structure plus named bridge/import assumptions; safe to quote, but not the same as zero-input retained closure |
+docs/repo/CONTROLLED_VOCABULARY.md:200:| `retained corollary` | safe retained consequence of a retained theorem/action surface |
+docs/repo/CONTROLLED_VOCABULARY.md:201:| `retained support theorem` / `retained support` | exact retained support result that is reusable but not itself the manuscript headline |
+docs/repo/CONTROLLED_VOCABULARY.md:202:| `retained support batch` | coherent retained batch of support theorems/tools carried together for atlas, reviewer, or support-package reuse |
+docs/repo/CONTROLLED_VOCABULARY.md:203:| `retained exact theorem` / `retained exact companion` | exact retained theorem/companion variant used when exactness itself is part of the safe statement |
+docs/repo/CONTROLLED_VOCABULARY.md:204:| `retained structural theorem` / `retained exact structural theorem` | retained exact structural law on the framework/package surface |
+docs/repo/CONTROLLED_VOCABULARY.md:205:| `retained support tool` | reusable retained tool/subderivation that supports other lanes without itself being the manuscript headline |
+docs/repo/CONTROLLED_VOCABULARY.md:206:| `retained framework statement` / `retained positioning` / `retained quantitative lane` | retained package-authority framing labels for front-door/control-plane use |
+docs/repo/CONTROLLED_VOCABULARY.md:207:| `retained action-surface closure` / `retained restricted theorem` / `retained restricted support` / `retained evaluated theorem` | retained exact-result variants where the constrained surface/class/evaluation matters |
+docs/repo/CONTROLLED_VOCABULARY.md:208:| `retained positive` / `retained partial positive` | retained positive lane result used mainly on atlas/toolbox surfaces rather than as the headline theorem |
+docs/repo/CONTROLLED_VOCABULARY.md:209:| `exact support theorem` / `exact support` | accepted exact-support variant when exactness itself is material to the safe statement; use with the same non-headline semantics as retained support, and keep bridge/import qualifiers explicit |
+docs/repo/CONTROLLED_VOCABULARY.md:214:| `exact negative boundary` / `exact negative closeout` / `exact post-selector reduction` | accepted exact-result specializations for explicit no-go/closeout/post-selector roles on atlas and reviewer surfaces |
+docs/repo/CONTROLLED_VOCABULARY.md:219:| `promoted quantitative package` | quantitative package strong enough for the current main-paper surface |
+docs/repo/CONTROLLED_VOCABULARY.md:222:| `bounded frontier` / `bounded negative boundary` / `bounded Route 2 build candidate` | bounded frontier/result classes kept for ongoing design work rather than current-package promotion |
+docs/repo/CONTROLLED_VOCABULARY.md:223:| `main closure package` | package-level main-paper closure claim on the current review/package surface; stronger than support, but not automatically the retained quantitative paper core |
+docs/repo/CONTROLLED_VOCABULARY.md:234:- `retained exact theorem`
+docs/repo/CONTROLLED_VOCABULARY.md:235:- `retained exact companion`
+docs/repo/CONTROLLED_VOCABULARY.md:236:- `retained structural theorem`
+docs/repo/CONTROLLED_VOCABULARY.md:237:- `retained exact structural theorem`
+docs/repo/CONTROLLED_VOCABULARY.md:238:- `retained corollary`
+docs/repo/CONTROLLED_VOCABULARY.md:239:- `retained support theorem`
+docs/repo/CONTROLLED_VOCABULARY.md:240:- `retained support batch`
+docs/repo/CONTROLLED_VOCABULARY.md:241:- `retained support tool`
+docs/repo/CONTROLLED_VOCABULARY.md:255:- `exact post-selector reduction`
+docs/repo/CONTROLLED_VOCABULARY.md:262:- `bounded companion prediction`
+docs/repo/CONTROLLED_VOCABULARY.md:263:- `bounded frontier`
+docs/repo/CONTROLLED_VOCABULARY.md:267:- `promoted quantitative package`
+docs/repo/CONTROLLED_VOCABULARY.md:276:- `retained framework statement`
+docs/repo/CONTROLLED_VOCABULARY.md:277:- `retained quantitative lane`
+docs/repo/CONTROLLED_VOCABULARY.md:278:- `retained action-surface closure`
+docs/repo/CONTROLLED_VOCABULARY.md:279:- `retained restricted theorem`
+docs/repo/CONTROLLED_VOCABULARY.md:283:- `retained support tool`
+docs/repo/CONTROLLED_VOCABULARY.md:284:- `retained support batch`
+docs/repo/CONTROLLED_VOCABULARY.md:294:- `exact post-selector reduction`
+docs/repo/CONTROLLED_VOCABULARY.md:307:- `retained support theorem on the current package surface`
+docs/repo/CONTROLLED_VOCABULARY.md:319:but the retained library is driven only by these auditor-owned fields.
+docs/repo/CONTROLLED_VOCABULARY.md:337:not promote to non-meta claim types via re-classification — these notes
+docs/repo/CONTROLLED_VOCABULARY.md:351:- `audited_clean`
+docs/repo/CONTROLLED_VOCABULARY.md:352:- `audited_renaming`
+docs/repo/CONTROLLED_VOCABULARY.md:353:- `audited_conditional`
+docs/repo/CONTROLLED_VOCABULARY.md:354:- `audited_decoration`
+docs/repo/CONTROLLED_VOCABULARY.md:355:- `audited_failed`
+docs/repo/CONTROLLED_VOCABULARY.md:356:- `audited_numerical_match`
+docs/repo/CONTROLLED_VOCABULARY.md:364:- `retained` — `claim_type = positive_theorem` plus
+docs/repo/CONTROLLED_VOCABULARY.md:365:  `audit_status = audited_clean` plus retained-grade dependencies
+docs/repo/CONTROLLED_VOCABULARY.md:366:- `retained_no_go` — `claim_type = no_go` plus
+docs/repo/CONTROLLED_VOCABULARY.md:367:  `audit_status = audited_clean` plus retained-grade dependencies
+docs/repo/CONTROLLED_VOCABULARY.md:368:- `retained_bounded` — `claim_type = bounded_theorem` plus
+docs/repo/CONTROLLED_VOCABULARY.md:369:  `audit_status = audited_clean` plus retained-grade dependencies
+docs/repo/CONTROLLED_VOCABULARY.md:370:- `retained_pending_chain` — clean theorem/no-go/bounded row whose
+docs/repo/CONTROLLED_VOCABULARY.md:371:  upstream chain is not yet retained-grade
+docs/repo/CONTROLLED_VOCABULARY.md:372:- `open_gate` — clean open gate; blocks retained propagation
+docs/repo/CONTROLLED_VOCABULARY.md:374:  parent is retained-grade
+docs/repo/CONTROLLED_VOCABULARY.md:376:- `audited_<failure_mode>` — terminal non-clean audit verdicts on active
+docs/repo/CONTROLLED_VOCABULARY.md:384:not a claim class.
+docs/repo/CONTROLLED_VOCABULARY.md:386:### Conditional repair classes
+docs/repo/CONTROLLED_VOCABULARY.md:388:For every `audited_conditional` result, the auditor must make the next
+docs/repo/CONTROLLED_VOCABULARY.md:390:exactly one of these seven classes:
+docs/repo/CONTROLLED_VOCABULARY.md:395:- `dependency_not_retained` — a direct dependency exists but is not
+docs/repo/CONTROLLED_VOCABULARY.md:396:  retained grade
+docs/repo/CONTROLLED_VOCABULARY.md:402:- `runner_artifact_issue` — a runner, log, classifier, threshold,
+docs/repo/CONTROLLED_VOCABULARY.md:409:After the class, the auditor names the cheapest next repair action.
+docs/repo/CONTROLLED_VOCABULARY.md:416:- `FAIL` — At least one required stress test remains open, incomplete, or mismatched; forbids audited_clean and requires an explicit demotion.
+docs/repo/CONTROLLED_VOCABULARY.md:429:`negative_assertion_classes` is the mandatory auditor declaration on every incoming audit: the policy assertion classes the artifact makes, judged semantically from the full note (empty list when none). Any non-empty declaration requires the N1-N8 packet; an empty declaration never bypasses the mechanical trigger. Allowed classes:
+docs/repo/CONTROLLED_VOCABULARY.md:431:- `no_go_result` — Asserts a no_go outcome: structurally closed, no route exists, no retained primitive supplies the target.
+docs/repo/CONTROLLED_VOCABULARY.md:437:### Independence tiers
+docs/repo/CONTROLLED_VOCABULARY.md:439:`auditor` must not equal `author`. Strength tiers for the `independence`
+docs/repo/CONTROLLED_VOCABULARY.md:444:  not eligible to land `audited_clean`
+docs/repo/CONTROLLED_VOCABULARY.md:447:  clean-room tier for detecting context poisoning without claiming
+docs/repo/CONTROLLED_VOCABULARY.md:461:`docs/audit/FRESH_LOOK_REQUIREMENTS.md` for the auto-selection rule.
+docs/repo/CONTROLLED_VOCABULARY.md:463:### Load-bearing step classes
+docs/repo/CONTROLLED_VOCABULARY.md:479:The repo is migrating from author-declared `retained` / `promoted`
+docs/repo/CONTROLLED_VOCABULARY.md:480:language to the audit-lane propose / ratify vocabulary. Source-note
+docs/repo/CONTROLLED_VOCABULARY.md:483:- `proposed_retained` — author proposes retained-grade; awaits audit ratification
+docs/repo/CONTROLLED_VOCABULARY.md:484:- `proposed_promoted` — author proposes promoted-grade; awaits audit ratification
+docs/repo/CONTROLLED_VOCABULARY.md:486:The canonical audit-ratified surface is the tracked sharded ledger
+docs/repo/CONTROLLED_VOCABULARY.md:493:New notes must use `proposed_retained` / `proposed_promoted` on author
+docs/repo/CONTROLLED_VOCABULARY.md:495:publication-facing label. Do not bare-declare `retained` on a source
+docs/repo/CONTROLLED_VOCABULARY.md:504:| `primary-retained` | current best-supported lane in the historical lane-board sense |
+docs/repo/CONTROLLED_VOCABULARY.md:505:| `retained-companion` | real, replayable companion lane, but not the single default entrypoint |
+docs/repo/CONTROLLED_VOCABULARY.md:507:| `exploratory-reopen` | partially positive lane worth more work, but not promoted |
+docs/repo/CONTROLLED_VOCABULARY.md:509:| `historical-retained` | older retained major program, no longer the default |
+docs/repo/CONTROLLED_VOCABULARY.md:519:| `retained` | historically important retained discovery |
+docs/repo/CONTROLLED_VOCABULARY.md:520:| `bounded-retained` | bounded positive result preserved on `main`, worth paper planning, but not a retained theorem-grade closure |
+docs/repo/CONTROLLED_VOCABULARY.md:529:  - `Current publication decision` cells should begin with one of `retained`, `promoted`, `bounded`, `open`, `frozen-out`; a short placement note may follow after a semicolon
+docs/repo/CONTROLLED_VOCABULARY.md:537:  - accepted ledger-style hybrids include forms such as `promoted exact companion`, `promoted restricted theorem`, `promoted retained closure`, `promoted retained support batch`, and `promoted retained action-surface closure`
+docs/repo/CONTROLLED_VOCABULARY.md:546:Do not use row prose like `Retained ...` when the row status is `bounded-retained`.
+docs/repo/CONTROLLED_VOCABULARY.md:572:- `closure` when the status is really `bounded-retained` or `conditional / support`
+docs/repo/CONTROLLED_VOCABULARY.md:616:- describing the archived wrapper as "deprecated" or "obsolete" — imply a deliberate retirement decision; `audit_status: audited_failed` is the canonical record, no additional adjective needed
+docs/repo/CONTROLLED_VOCABULARY.md:724:being pruned is the count of separately-retained rows. A package that
+docs/repo/CONTROLLED_VOCABULARY.md:725:presents 25 separate retained theorems where 3 distinct claims exist is
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:4:actual_current_surface_status: bounded-support
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:6:trace_class: upstream_support
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:17:  an exhaustive finite classification. No unconditional physical claim; the
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:18:  grading primitive is assumed, not adopted; hence bounded_theorem, not
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:20:audit_required_before_effective_retained: true
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:21:bare_retained_allowed: false
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:28:  frontier note's own import declaration and specification burden, quoted in
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:29:  `TRACE_GATE.md`: the Gleason bridge input ("imported as named classical
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:39:  dimension-relative); (iii) the exhaustive product-menu classification at
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:51:  sentence — none of which exists as a derivable corollary of retained rows.
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:52:- **V4 (non-trivial).** Yes: the tree classification is a genuine finite
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:56:  well-definedness obligation discharged by the classification.
+.claude/science/physics-loops/born-effect-menu-horn-20260717/CLAIM_STATUS_CERTIFICATE.md:80:certificate predicts no verdict.
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:4:claim_scope: "Bridge-conditional dichotomy on the menu grade of the graded-constraint hypothesis surface. Effect horn: if the assumed grading is defined on the effect algebra of a finite region with finite effect-partition menus eligible, the Born trace form is forced sitewise at every finite dimension >= 2, reproved from finite operator algebra with no literature bridge input; the landed one-site projective rogue extends to no such grading. Projective horn boundary: on a bonded pair, grading hypotheses restricted to product-projector menus do not force the trace form (constructive witness; exhaustive product-menu classification), so the landed composite route's entangled-menu strength is necessary at 2x2, not a convenience. The menu grade itself is underived; no horn is selected; the grading primitive is assumed here, not adopted."
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:16:adopted, and the menu grade they are stated at is itself underived.
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:18:audit verdict and predicts none.
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:19:**Primitive status:** no primitive is approved, registered, edited, or
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:35:"Gleason's theorem is imported as named classical mathematics."
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:51:  (classified exhaustively) while restricting on one site to the landed
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:55:Neither horn is selected. The axioms supply no menus at all; which resolutions
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:69:  retained derivation or bridge, or explicit approved-primitive registration,
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:88:  constructive witness and classification, not by the comparator.
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:175:- **(T3a) Classification.** Every product-projector menu is a tree menu: up
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:229:specification burden; this note registers it and selects nothing.
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:268:  the T3a classification; (3) countable product-projector partitions — a
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:271:  projective structure with non-projective effects (classical mixtures of
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:306:- Does **not** select a menu grade, register or modify any primitive, or
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:312:- Does **not** set an audit verdict or close the probability wall; landing is
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:313:  not ratification, and independent audit remains required.
+docs/BORN_FORM_EFFECT_MENU_SITEWISE_FORCING_AND_PRODUCT_MENU_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-17.md:327:case branch of the T3a classification (including the three-antipodal
+
+2026-07-17T19:32:55.211813Z ERROR codex_models_manager::manager: failed to renew cache TTL: missing field `supports_reasoning_summaries` at line 88 column 5
+codex
+VERDICT: 2 blocker(s), 2 major, 1 minor
+
+1. **BLOCKER — T3’s negative scope is repeatedly broadened beyond product-projector menus at the bonded pair.** The supported claim is:
+
+   > “product-projector menus force nothing on the bonded pair”
+
+   But the note claims:
+
+   > “The entangled-menu strength of H4 is therefore necessary at `2 x 2`”  
+   > “the entangled-menu clause cannot be weakened to product menus at `2 x 2`”
+
+   TRACE_GATE.md broadens it further:
+
+   > “entangled-menu eligibility is NECESSARY at 2x2 on the projective horn”
+
+   This conflicts with N1’s admission that “other intermediate families” are “OUTSIDE T3’s scope” and “named untested.” Consequently N5’s assertion that the rhetoric remains exactly scoped is not satisfied.
+
+2. **BLOCKER — N3 misses a domain restriction in the constructive witness.** The declared hypothesis surface says:
+
+   > “H1-H3 place `w ≥ 0` on projections”
+
+   Yet T3b supplies only:
+
+   > “Define `W` on product projectors”
+
+   N3 nevertheless says:
+
+   > “the restriction is the claim, not a hidden condition”
+
+   The note restricts not merely eligible menus but, as written, the witness’s domain. No extension of `W` to every projection is supplied or checked. Thus the witness does not visibly inhabit the stated projective-grade hypothesis surface, leaving N3 incomplete.
+
+3. **MAJOR — several operational tier/class labels are newly coined and uncontrolled.** The clearest examples are:
+
+   > `actual_current_surface_status: bounded-support`  
+   > `trace_class: upstream_support`  
+   > “not `direct_blocker_closure`”  
+   > “is `negative_route_pruning` at the sub-claim level”
+
+   None appears in CONTROLLED_VOCABULARY.md. In particular, `bounded-support` is not the sanctioned `bounded support theorem`, `bounded support note`, `bounded support tool`, or `bounded support batch`. The governing rule is explicit:
+
+   > “If a sanctioned term, label, suffix, or wording is not listed here … it does not exist for repo purposes”
+
+   The two files agree on `trace_class: upstream_support`, and that class is semantically compatible with their support-only posture, but the class name itself is uncontrolled.
+
+4. **MAJOR — prohibited registration wording and an internally false binary.** The hypotheses allow:
+
+   > “projective grade, at effect grade, at neither, or at some intermediate family”
+
+   T4 later says:
+
+   > “Which grade the physical registration supplies is an exact open binary …; this note registers it and selects nothing.”
+
+   The alternatives are not binary, and “this note registers it” grammatically adopts a registration action over the menu-grade question. The following “selects nothing” does not cure that ambiguity.
+
+5. **MINOR — the certificate inaccurately summarizes the N1 route markers.** It says:
+
+   > “five routes enumerated with ATTEMPTED / RULED OUT BY PRIOR markers”
+
+   The note contains `ATTEMPTED`, `RULED OUT`, `OUTSIDE T3’s scope`, and “untested here”; it contains no `RULED OUT BY PRIOR` marker and leaves two routes explicitly untested outside scope.
+
+No bare author-declared `retained`, `promoted`, or `audited_*` misuse was found in the note; its “retained derivation” occurrence is inside an attributed historical quotation. No audit outcome is predicted: “predicts none” and “If ratified” remain non-predictive.
+tokens used
+50,167
+VERDICT: 2 blocker(s), 2 major, 1 minor
+
+1. **BLOCKER — T3’s negative scope is repeatedly broadened beyond product-projector menus at the bonded pair.** The supported claim is:
+
+   > “product-projector menus force nothing on the bonded pair”
+
+   But the note claims:
+
+   > “The entangled-menu strength of H4 is therefore necessary at `2 x 2`”  
+   > “the entangled-menu clause cannot be weakened to product menus at `2 x 2`”
+
+   TRACE_GATE.md broadens it further:
+
+   > “entangled-menu eligibility is NECESSARY at 2x2 on the projective horn”
+
+   This conflicts with N1’s admission that “other intermediate families” are “OUTSIDE T3’s scope” and “named untested.” Consequently N5’s assertion that the rhetoric remains exactly scoped is not satisfied.
+
+2. **BLOCKER — N3 misses a domain restriction in the constructive witness.** The declared hypothesis surface says:
+
+   > “H1-H3 place `w ≥ 0` on projections”
+
+   Yet T3b supplies only:
+
+   > “Define `W` on product projectors”
+
+   N3 nevertheless says:
+
+   > “the restriction is the claim, not a hidden condition”
+
+   The note restricts not merely eligible menus but, as written, the witness’s domain. No extension of `W` to every projection is supplied or checked. Thus the witness does not visibly inhabit the stated projective-grade hypothesis surface, leaving N3 incomplete.
+
+3. **MAJOR — several operational tier/class labels are newly coined and uncontrolled.** The clearest examples are:
+
+   > `actual_current_surface_status: bounded-support`  
+   > `trace_class: upstream_support`  
+   > “not `direct_blocker_closure`”  
+   > “is `negative_route_pruning` at the sub-claim level”
+
+   None appears in CONTROLLED_VOCABULARY.md. In particular, `bounded-support` is not the sanctioned `bounded support theorem`, `bounded support note`, `bounded support tool`, or `bounded support batch`. The governing rule is explicit:
+
+   > “If a sanctioned term, label, suffix, or wording is not listed here … it does not exist for repo purposes”
+
+   The two files agree on `trace_class: upstream_support`, and that class is semantically compatible with their support-only posture, but the class name itself is uncontrolled.
+
+4. **MAJOR — prohibited registration wording and an internally false binary.** The hypotheses allow:
+
+   > “projective grade, at effect grade, at neither, or at some intermediate family”
+
+   T4 later says:
+
+   > “Which grade the physical registration supplies is an exact open binary …; this note registers it and selects nothing.”
+
+   The alternatives are not binary, and “this note registers it” grammatically adopts a registration action over the menu-grade question. The following “selects nothing” does not cure that ambiguity.
+
+5. **MINOR — the certificate inaccurately summarizes the N1 route markers.** It says:
+
+   > “five routes enumerated with ATTEMPTED / RULED OUT BY PRIOR markers”
+
+   The note contains `ATTEMPTED`, `RULED OUT`, `OUTSIDE T3’s scope`, and “untested here”; it contains no `RULED OUT BY PRIOR` marker and leaves two routes explicitly untested outside scope.
+
+No bare author-declared `retained`, `promoted`, or `audited_*` misuse was found in the note; its “retained derivation” occurrence is inside an attributed historical quotation. No audit outcome is predicted: “predicts none” and “If ratified” remain non-predictive.

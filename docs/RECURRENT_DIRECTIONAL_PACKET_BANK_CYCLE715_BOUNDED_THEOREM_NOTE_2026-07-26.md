@@ -3,6 +3,16 @@
 Status: bounded constructive theorem, authority none, audit unset. This note
 makes no constitutional or no-go claim.
 
+Claim type: bounded_theorem
+
+Runner:
+[`scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py`](../scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py)
+
+Load-bearing dependencies:
+
+- [`PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md`](PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+- [`PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md`](PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+
 ## Question
 
 Can the repaired Cycle-713 physical-M2 seam opportunity and the Cycle-714

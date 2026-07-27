@@ -8,7 +8,12 @@ Audit: unset
 
 Status: bounded conditional construction
 
+Claim type: bounded_theorem
+
 Runner: [`scripts/frontier_cycle717_interbank_allocator_handoff_2026_07_26.py`](../scripts/frontier_cycle717_interbank_allocator_handoff_2026_07_26.py)
+
+Load-bearing dependency:
+[`RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md`](RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md)
 
 ## Question
 

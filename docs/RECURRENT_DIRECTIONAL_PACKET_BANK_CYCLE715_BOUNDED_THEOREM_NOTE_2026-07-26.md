@@ -146,11 +146,14 @@ Open:
 
 ## Disposition
 
-This closes the one-shot fixed-address objection for a bounded two-append code
-and identifies the next sharp wall as allocator genesis plus inter-bank
-handoff/exhaustion, not endpoint direction, freshness, local routing, coherent
-execution, inverse cleanup, or K16 packet propagation. It does not yet close
-the recurrent many-bank physical compiler and creates no axiom pressure.
+On the declared bounded code, this replaces one supplied fixed packet address
+with two structural local addresses under one fixed word. The exact tests above
+cover endpoint direction, freshness, local routing, coherent execution, inverse
+cleanup, and K16 packet propagation only on that code. Allocator genesis,
+inter-bank handoff, and lawful exhaustion behavior remain separate open tasks;
+the result does not classify other implementations or a substrate obstruction.
+It does not yet close the recurrent many-bank physical compiler and creates no
+axiom pressure.
 
 ## Tournament disposition
 

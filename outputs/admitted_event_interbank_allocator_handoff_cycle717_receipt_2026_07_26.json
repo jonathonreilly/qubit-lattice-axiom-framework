@@ -43,15 +43,15 @@
     },
     "runner": {
       "path": "scripts/frontier_cycle717_interbank_allocator_handoff_2026_07_26.py",
-      "sha256": "5a5c3a48da15f428bc7fa5db43561c5c5a9a854458c8499ba90aa3a9f7698955"
+      "sha256": "f08aea6e79ba26b1c5ae72b51e8695e5f3f12b709c94d32f5452a1fbedfcde28"
     },
     "cache": {
       "path": "logs/runner-cache/frontier_cycle717_interbank_allocator_handoff_2026_07_26.txt",
-      "sha256": "a6ecf22508a5053c40d39b15ed3b0e88c63c57045c408cf3d4328d920af5d581",
-      "input_fingerprint_sha256": "704eb92b9ae26a7a679ff143d821a7bc7f7d4c13f1c89080968bea22bc418b23",
-      "elapsed_sec": 16.33,
+      "sha256": "b9415ce19dbb8386b7ea437803fcd00e601f55a700a9f393f661b52fec4e4366",
+      "input_fingerprint_sha256": "f5e785933769d4ad76ddae95bdcc6eaea679b1ad9665e52346c0ae56cd941913",
+      "elapsed_sec": 15.49,
       "exit_code": 0,
-      "report_sha256": "34d576fc8f06d8dfaddb21bfb8d4ec1ec767bcba837c14687dba3f7fdbc7804d"
+      "report_sha256": "3fb092cd2b51fd57c911e17ede611be7667773d4de1348233026ef96fba7998c"
     }
   }
 }

@@ -41,19 +41,19 @@
   "artifacts": {
     "note": {
       "path": "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
-      "sha256": "c01943f6fff72b9557a3320c29822055ad079194a559507e37b973bef8c8ff45"
+      "sha256": "c68c9d0490dcfa50f7e8199dd2b287d3d9833864d9874950adede34463ee9672"
     },
     "runner": {
       "path": "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
-      "sha256": "f6971f1867a66cc211139e261cb33814e820c91275887d22ea62d3b0953c479d"
+      "sha256": "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884"
     },
     "cache": {
       "path": "logs/runner-cache/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.txt",
-      "sha256": "d16473b0c650c0530a5fa850b1d883c61fb55db5be7c89d00c0c123e8eb9bd79",
-      "input_fingerprint_sha256": "3e1c97eec7f0e60eb8978e29665c52e9d7b366955aecf83899cba7fdb0f834a5",
-      "elapsed_sec": 71.94,
+      "sha256": "ff608c2db51b51e30de2f2c74092adf27afb928331c19b409066448b5ecbf75d",
+      "input_fingerprint_sha256": "70bbcb46aa1c82b704c93457e202ce1a0424b5e64ddfadefa482a417a828b929",
+      "elapsed_sec": 67.3,
       "exit_code": 0,
-      "report_sha256": "5a780334503c76499ad2da17ffe7b558b1e5343d3be520350b4f030d39d02308"
+      "report_sha256": "0a80a831e46dbfcad0a643636e665d0e94b39cd31c3ab72a25b45f4860be25dd"
     }
   }
 }

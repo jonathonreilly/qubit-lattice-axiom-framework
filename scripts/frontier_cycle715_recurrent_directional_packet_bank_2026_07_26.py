@@ -665,6 +665,12 @@ def held_overlapping_stars_certificate() -> dict[str, object]:
         cleanup_word += (C713.cnot("held_pointer_clean_left", left, pointer),)
         cleanup_word += (C713.cnot("held_pointer_clean_right", right, pointer),)
     failures = cleanup_failures = packet_cross_failures = 0
+    # The two local packet banks occupy distinct physical register blocks.
+    # Compute the write-set intersection instead of self-awarding zero.
+    packet_targets = {gate.wires[-1] for gate in packet_word()}
+    first_bank_targets = packet_targets
+    second_bank_targets = {N + wire for wire in packet_targets}
+    shared_packet_register_writes = len(first_bank_targets & second_bank_targets)
     pattern_counts = Counter()
     for basis, row in zip(domain, base_maps):
         directed = C713.apply_sparse_word(row, direction_word)
@@ -715,7 +721,7 @@ def held_overlapping_stars_certificate() -> dict[str, object]:
         "independent_bank_cross_failures": packet_cross_failures,
         "two_seam_direction_patterns": {str(key): value for key, value in sorted(pattern_counts.items())},
         "shared_central_cell_modes": (6, 7),
-        "shared_packet_register_writes": 0,
+        "shared_packet_register_writes": shared_packet_register_writes,
     }
 
 

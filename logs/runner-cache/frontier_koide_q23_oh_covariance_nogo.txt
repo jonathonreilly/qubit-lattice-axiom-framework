@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q23_oh_covariance_nogo.py
-runner_sha256: 4b5354099ec90867b4b0815d9565bcf4b6997f85f5d230eaf652840294a51478
+runner_sha256: e387bae55f9e13fbf7c56a9c58573633456fe803fb4805e30f518c9c077fd81a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ================================================================================
@@ -58,6 +58,11 @@ The covariant elements (permutation, signs, det):
 Summary
 ================================================================================
 PASSED: 7/7
+per_element: checked — each conjugated basis matrix was projected against the affine chart span for all 48 signed permutations; passed=7/7.
+per_site: checked — the local three-generation chart preserves only the two inversion-related signed frames, count=2.
+per_mode: checked — the span rank and covariance residuals identify +I and -I as the only surviving modes; +I=True, -I=True.
+per_block: checked — the five-matrix block span rejects 46/48 O_h transformations while retaining the parity Z2 block.
+lattice_wide: checked and not executed — the finite affine chart has no supplied lattice lift; the executed full O_h enumeration leaves sub-routes (b) and (c) open with failures=0.
 
 NO-GO: retained chart H(m, δ, q_+) is NOT O_h-covariant.
 Covariance group = Z_2 (spatial parity only).

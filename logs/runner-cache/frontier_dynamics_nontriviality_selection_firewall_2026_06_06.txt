@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dynamics_nontriviality_selection_firewall_2026_06_06.py
-runner_sha256: 9c9fb63201e085dd2a451bc3504a5e720a2dc8d6c1ce49970d0f9ef892720d36
+runner_sha256: cde51b0d501ddc789bd679fceda0986972380cc8633c34c0afd964ec73e2a765
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 
@@ -76,6 +76,11 @@ FORM_CLASS_SELECTS_NONZERO_DYNAMICS=FALSE
 FORM_CLASS_SELECTS_COUPLINGS_ACTION_OR_TRUNCATION=FALSE
 ALLOWED_CLASS_MEMBERSHIP_INTERFACE=TRUE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+per_element: checked — Hermiticity and charge-commutator entries were computed for mass, electric, exchange, and gauge-variant control terms; FAIL=0.
+per_site: checked — one-site mass and bare-flip supports were tested against the same local charge-class predicate; FAIL=0.
+per_mode: checked — trivial and nontrivial Heisenberg derivatives were evaluated for zero and exchange generators; FAIL=0.
+per_block: checked — five distinct coefficient tuples remain in the allowed two-qubit Hamiltonian block; FAIL=0.
+lattice_wide: checked — supports through plaquette, rectangle, and longer paths were classified, but no truncation or dynamics selector was supplied; PASS=48, FAIL=0.
 
 ----- stderr -----
 

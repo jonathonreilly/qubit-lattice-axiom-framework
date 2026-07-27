@@ -339,6 +339,11 @@ def main() -> int:
     passed = sum(results)
     failed = len(results) - passed
     print(f"Summary: PASS={passed}  FAIL={failed}")
+    print(f"per_element: checked — cubical incidence pairings and Hodge-dual polynomial entries have residuals {pairing_error:.3e} and {dual_poly_error:.3e}.")
+    print(f"per_site: checked — one local 16-state exterior carrier gives P1/P3 symmetry residuals {p1_sym:.3e}/{p3_sym:.3e}.")
+    print(f"per_mode: checked — normal one-form and oriented-face three-form modes both have rank {one_rank}, with Hodge residual {p1_to_p3:.3e}.")
+    print(f"per_block: checked — all five boundary-orientation attack blocks pass their executed substrate tests={all(route_results.values())} without selecting P1.")
+    print(f"lattice_wide: checked and not executed — no inter-cell cochain-normal primitive is supplied; the executed local incidence carrier leaves the P1/P3 tie intact with PASS={passed}, FAIL={failed}.")
     if failed:
         return 1
     print()

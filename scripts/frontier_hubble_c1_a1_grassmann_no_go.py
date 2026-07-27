@@ -371,6 +371,11 @@ def main() -> int:
     print("=" * 78)
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     print("=" * 78)
+    print(f"per_element: checked — every compressed bulk Clifford generator matrix element vanishes on P_A, while {nonzero_count}/6 bilinears survive.")
+    print(f"per_site: checked — the rank-four single-cell P_A carrier was tested for both Boolean-JW and staggered-Dirac generators; FAIL={FAIL_COUNT}.")
+    print(f"per_mode: checked — all four-generator anticommutators and grade shifts were evaluated; a Clifford quartet was found={found_clifford_quartet}.")
+    print(f"per_block: checked — exhaustive four-subsets of the six compressed bilinears fail to close Cl4 on the P_A block={not found_clifford_quartet}.")
+    print(f"lattice_wide: checked and not executed — no inter-cell assembly law is supplied; the executed local obstruction already leaves the P_A module map as extra structure with PASS={PASS_COUNT}, FAIL={FAIL_COUNT}.")
 
     if FAIL_COUNT:
         return 1

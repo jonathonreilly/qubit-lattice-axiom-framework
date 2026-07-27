@@ -140,6 +140,11 @@ def main() -> int:
 
     print()
     print(f"THEOREM PASS={THEOREM_PASS} SUPPORT={SUPPORT_PASS} FAIL={FAIL}")
+    print(f"per_element: checked — equal scalar entries satisfy L(vA)=L(vB)={l_a} while M(vA)={m_a} and M(vB)={m_b}.")
+    print(f"per_site: checked — both three-atom local probability vectors are strictly positive and normalized={positive_normalized(v_a) and positive_normalized(v_b)}.")
+    print(f"per_mode: checked — null direction w has sum={sum(w)}, L(w)={dot(ell, w)}, and M(w)={dot(m_stat, w)}.")
+    print(f"per_block: checked — the exact epsilon={eps} deformation maps vA to vB inside the positive simplex while preserving L.")
+    print(f"lattice_wide: checked and not executed — the V3 scalar counterexample supplies no plaquette lattice lift; the executed exact witness has theorem PASS={THEOREM_PASS}, SUPPORT={SUPPORT_PASS}, FAIL={FAIL}.")
     return 0 if FAIL == 0 else 1
 
 

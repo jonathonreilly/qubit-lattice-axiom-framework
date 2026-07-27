@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_primitive_edge_entropy_selector_no_go.py
-runner_sha256: 8d8963ff84b5aabebaf7c8d1a79473a7660512e1d33f1dd5c47d10fb5037fbbe
+runner_sha256: 8d09b48cbe0bfce77a1618a0e3cb848e02bafcbf7294e0446b6fcc5b82d9dbd6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -45,6 +45,11 @@ Verdict: the 4/16 primitive trace is not an entanglement entropy
 coefficient under the canonical finite-cell entropy constructions.
 A positive gapped Target 2 carrier needs an additional Schmidt-spectrum
 or operational entropy selector.
+per_element: checked — the tuned binary atom p*=0.068599066737 gives H(p*)=0.250000000000 but is not a 1/16 rank atom.
+per_site: checked — one primitive rank-four cell gives trace coefficient 0.250000 while its projected entropy is 1.386294.
+per_mode: checked — equal-gap two-level modes have gap range [1.0,1.0] and entropy range [0.000000,0.693147].
+per_block: checked — finite face blocks [1, 2, 7, 31] preserve stipulated additivity without converting log(4) to 1/4.
+lattice_wide: checked — the executed finite-patch extension leaves the entropy-spectrum selector open; PASS=26, FAIL=0.
 
 ----- stderr -----
 

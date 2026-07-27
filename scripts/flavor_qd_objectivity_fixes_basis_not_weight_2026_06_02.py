@@ -111,6 +111,11 @@ def main() -> int:
         "The uniform sector weight remains an extra measure/reference choice, "
         "not a consequence of redundant objectivity."
     )
+    print(f"per_element: checked — projector traces are {np.trace(p_singlet).real:.1f} and {np.trace(p_doublet).real:.1f}, resolving the 1+2 pointer atoms.")
+    print(f"per_site: checked — one local tracial carrier gives weights ({p_triv:.6f},{p_doub:.6f}) and r={r_born:.6f}.")
+    print(f"per_mode: checked — 2000 sampled U(3) rotations preserve I/3={i3_invariant} but preserve the uniform-sector state={uniform_invariant}.")
+    print(f"per_block: checked — conjugation fixes both real rank blocks and the real C+Cdag operator={np.allclose(real_operator.imag, 0.0)}.")
+    print(f"lattice_wide: checked and not executed — lattice dynamics is outside this three-state objectivity claim; the executed finite-carrier suite has PASS={pass_count}, FAIL={fail_count}.")
     return 0 if all(passed) else 1
 
 

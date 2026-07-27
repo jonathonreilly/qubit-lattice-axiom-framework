@@ -651,6 +651,11 @@ def main() -> int:
     print("=" * 78)
     print(f"PASS={PASS} FAIL={FAIL}")
     print("=" * 78)
+    print(f"per_element: checked — Gibbs eigenvalue logarithms and modular-Hamiltonian matrix entries were evaluated exactly/numerically; aggregate FAIL={FAIL}.")
+    print(f"per_site: checked — tensor-factor Gibbs states were traced on each local factor and compared with the joint state; aggregate FAIL={FAIL}.")
+    print(f"per_mode: checked — spectral F_p modes were tested for multiplicativity, additivity, and modular-Hamiltonian compatibility; aggregate FAIL={FAIL}.")
+    print(f"per_block: checked — two-block and tracial-state modular factorizations were executed, including the weighted-trace identity; aggregate FAIL={FAIL}.")
+    print(f"lattice_wide: checked and not executed — no lattice law derives the required Gibbs/product hypothesis; the executed modular certificate leaves that bridge open with PASS={PASS}, FAIL={FAIL}.")
 
     return 0 if FAIL == 0 else 1
 

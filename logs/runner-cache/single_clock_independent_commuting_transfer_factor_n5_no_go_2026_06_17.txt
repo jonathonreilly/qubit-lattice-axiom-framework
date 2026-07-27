@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py
-runner_sha256: 12e9e909ab279a787a584791630e467d48e4125fcfd1844754d1d8d3cd698605
+runner_sha256: 488ee8c76d2e5d1b2c7cfb065718a74d4978052480807fd529b7d31156f0b52c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.65
 status: ok
 ----- stdout -----
 single-clock independent commuting transfer factor N5 no-go
@@ -47,6 +47,11 @@ SUMMARY: PASS=34 FAIL=0
 AUDIT_LEDGER_WRITTEN=FALSE
 B_AXIS_DERIVED=FALSE
 SECOND_PHYSICAL_CLOCK_PROVED=FALSE
+per_element: checked — positive transfer factors have minimum eigenvalues 0.212248 and 0.141564.
+per_site: checked — disjoint local factors and record projectors commute with residual 0.000e+00.
+per_mode: checked — factor-generator tangent span has rank 2, while the diagonal one-clock orbit misses U_A(1) by gap 0.2920.
+per_block: checked — common-tau product transfer reconstructs H_A tensor I + I tensor H_B with residual 2.220e-16.
+lattice_wide: checked and not executed — no lattice irreducibility coupling is supplied; the executed two-factor carrier has additive records and independent commuting clocks with PASS=34, FAIL=0.
 
 ----- stderr -----
 

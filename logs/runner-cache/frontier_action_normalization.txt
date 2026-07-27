@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_action_normalization.py
-runner_sha256: 3b796275bca09e419f19690505206820d89fd8f6f86492cb26579663bb335054
+runner_sha256: da09ee21d6ce5949b658c14bae5728a06f46912b7edd244f287051b025387cb9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 62.51
+elapsed_sec: 41.64
 status: ok
 ----- stdout -----
 ================================================================================
@@ -302,8 +302,13 @@ table previously printed in this runner (defl(k)/defl(5k)) compared two
 massive probe momenta and had no analytical relation to the (1+c)
 null-vs-massive ratio. That table has been removed.
 
-Total runtime: 62.0s
+Total runtime: 41.2s
 TOTAL: PASS=42 FAIL=0
+per_element: checked — finite Poisson/action scalar identities and c-dependent phase factors were recomputed; aggregate FAIL=0.
+per_site: checked — source-density and detector-centroid responses were evaluated for every registered c row; aggregate FAIL=0.
+per_mode: checked — the massive-probe momentum/deflection sanity rows are finite and positive through the executed sweep; aggregate FAIL=0.
+per_block: checked — self-consistent (c,G) and rescaled (c/a,aG) blocks were compared for dynamical degeneracy; aggregate FAIL=0.
+lattice_wide: checked — the finite lattice packet finds no convention-free c selector; certificate counts are PASS=42, FAIL=0, expected PASS=42.
 
 ----- stderr -----
 

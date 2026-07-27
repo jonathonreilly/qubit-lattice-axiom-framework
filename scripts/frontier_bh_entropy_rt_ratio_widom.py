@@ -352,6 +352,11 @@ def main() -> None:
 
     elapsed = time.time() - t0
     print(f"Runtime: {elapsed:.1f} s")
+    print(f"per_element: checked — each finite correlation eigenvalue contributes binary entropy and the L=64 ratio is {r_L64:.6f}.")
+    print(f"per_site: checked — straight-cut boundary contributions were evaluated on every sampled L in {[r['L'] for r in records]}.")
+    print(f"per_mode: checked — half-filled Gaussian modes give {records[-1]['zero_modes']} zero modes at L={records[-1]['L']}.")
+    print(f"per_block: checked — the L>=32 tail block fits c={c_fit_32:.6f}, deviation {abs(dev6_32):.2f}% from 1/6 and {abs(dev4_32):.2f}% from 1/4.")
+    print(f"lattice_wide: checked — finite samples through L={records[-1]['L']} favor 1/6 only as a tail diagnostic; PASS={PASS_COUNT}, FAIL={FAIL_COUNT}, all-L limit remains open.")
 
     if FAIL_COUNT > 0:
         sys.exit(1)

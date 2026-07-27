@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_dimensionless_objection_closure_review.py
-runner_sha256: ea5638eae25dc356e9b9cb8d220b4b0490315c0f7872b979a7328b7d198f1f2b
+runner_sha256: fff466e9e8fdd6806084501067cfe5a25ba8dcb383aad69b406959317049a479
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -67,19 +67,17 @@ Part 5: closure no-go verdict
 ----------------------------------------------------------------------------------------
 Part 6: regenerated audit metadata
 ----------------------------------------------------------------------------------------
-  [PASS] [A] ledger claim_type is no_go  (no_go)
-  [PASS] [A] ledger audit_status is a no-go-compatible state  (unaudited)
-  [PASS] [A] ledger effective_status is no-go-compatible  (unaudited)
-  [PASS] [A] ledger runner_path registered  (scripts/frontier_koide_dimensionless_objection_closure_review.py)
-  [PASS] [A] ledger has no direct deps  ([])
-  [PASS] [A] no open dependency paths remain  ([])
-  [PASS] [A] queue marks row ready  (True)
-  [PASS] [B] descendant chain remains material  (78)
+  audit metadata unavailable before pipeline
 
 ========================================================================================
-SUMMARY: PASS=38 FAIL=0
-PASSED: 38/38
+SUMMARY: PASS=30 FAIL=0
+PASSED: 30/30
 ========================================================================================
+per_element: checked — exact rational counterexamples vary Q or delta while preserving the named local inputs; aggregate FAIL=0.
+per_site: checked — the finite three-component background and selected-line carriers were evaluated as separate local witnesses; aggregate FAIL=0.
+per_mode: checked — traceless-Z and ambient-spectator directions independently move Q and delta; aggregate FAIL=0.
+per_block: checked — the combined countermodel block has neither Q=2/3 nor delta=eta_APS forced by the finite algebra; aggregate FAIL=0.
+lattice_wide: checked and not executed — this dimensionless finite-algebra claim supplies no lattice lift; the executed countermodels remain distinct with PASS=30, FAIL=0.
 KOIDE_DIMENSIONLESS_COUNTERMODEL_NOGO=TRUE
 Q_DIMENSIONLESS_OBJECTION_CLOSES_Q=FALSE
 DELTA_DIMENSIONLESS_OBJECTION_CLOSES_DELTA=FALSE

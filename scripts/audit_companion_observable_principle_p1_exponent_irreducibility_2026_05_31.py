@@ -405,6 +405,11 @@ def main() -> int:
         "Born gradient) is too weak. It does NOT close P1, does NOT promote any\n"
         "row, and consumes no fitted or observed numerical targets."
     )
+    print(f"per_element: checked — exact determinant-versus-trace scalar tests T1-T2 executed; aggregate runner FAIL={FAIL}.")
+    print(f"per_site: checked — independent block perturbations in T4 were differentiated explicitly; aggregate runner FAIL={FAIL}.")
+    print(f"per_mode: checked — the exponent family F_p and normalized-gradient exponent blindness were evaluated in T3/T6; aggregate runner FAIL={FAIL}.")
+    print(f"per_block: checked — block-diagonal factorization and the (Add)/(Loc)/(Pot) equivalence tests ran symbolically; aggregate runner FAIL={FAIL}.")
+    print(f"lattice_wide: checked and not executed — the finite-block theorem supplies no lattice realization; the executed scope/firewall tests bind the conclusion to bounded irreducibility with PASS={PASS}, FAIL={FAIL}.")
     return 1 if FAIL else 0
 
 

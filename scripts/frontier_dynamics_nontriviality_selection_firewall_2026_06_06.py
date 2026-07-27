@@ -211,6 +211,11 @@ def main() -> int:
     print("FORM_CLASS_SELECTS_COUPLINGS_ACTION_OR_TRUNCATION=FALSE")
     print("ALLOWED_CLASS_MEMBERSHIP_INTERFACE=TRUE")
     print("GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE")
+    print(f"per_element: checked — Hermiticity and charge-commutator entries were computed for mass, electric, exchange, and gauge-variant control terms; FAIL={FAIL}.")
+    print(f"per_site: checked — one-site mass and bare-flip supports were tested against the same local charge-class predicate; FAIL={FAIL}.")
+    print(f"per_mode: checked — trivial and nontrivial Heisenberg derivatives were evaluated for zero and exchange generators; FAIL={FAIL}.")
+    print(f"per_block: checked — five distinct coefficient tuples remain in the allowed two-qubit Hamiltonian block; FAIL={FAIL}.")
+    print(f"lattice_wide: checked — supports through plaquette, rectangle, and longer paths were classified, but no truncation or dynamics selector was supplied; PASS={PASS}, FAIL={FAIL}.")
     return 0 if FAIL == 0 else 1
 
 

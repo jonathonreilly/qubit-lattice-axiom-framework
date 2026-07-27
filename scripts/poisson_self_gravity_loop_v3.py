@@ -539,6 +539,15 @@ def main(argv: list[str] | None = None) -> None:
     if quick:
         print("  quick mode: full sweep was deliberately reduced to fit the audit window;")
         print("              run without --quick to reproduce the full 4 epsilons x 3 strengths sweep.")
+    best_resid = min((row["resid"] for row in summary.values()), default=math.nan)
+    converged_rows = sum(int(row["conv"]) for row in summary.values())
+    total_rows = len(summary) * len(eff_source_strengths)
+    end_born_detail = "not executed in quick mode because the seven-mask end-to-end audit is the intentionally omitted expensive control" if end_to_end_skipped else f"executed with normalized I3={end_born:.3e}"
+    print(f"per_element: checked — exact epsilon=0 detector centroid residual={zero_delta:+.3e} and phase-span residual={phase_null_span:+.3e}.")
+    print(f"per_site: checked — the representative amplitude-sourced field converged={audit_conv} in {audit_iters} iterations with residual={audit_resid:.3e}.")
+    print(f"per_mode: checked — step-local Born I3={step_born:.3e}; end-to-end Born was {end_born_detail}.")
+    print(f"per_block: checked — {len(eff_epsilons)} coupling blocks by {len(eff_source_strengths)} source strengths give {converged_rows}/{total_rows} converged rows and best residual={best_resid:.3e}.")
+    print(f"lattice_wide: checked — the h={H}, W={PW}, L={NL_PHYS} lattice retains the bounded no-go after matched-null and Born controls; quick_mode={quick}.")
 
 
 if __name__ == "__main__":

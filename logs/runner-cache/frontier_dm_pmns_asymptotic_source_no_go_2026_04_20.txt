@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_asymptotic_source_no_go_2026_04_20.py
-runner_sha256: 375d0f86502b621276eb1390c3b5391a3be2c0dc9b15947fe949c25189815d22
+runner_sha256: 4c2b0b506ab561aec3c862887c763a7b8f345a091946ef8a384908733a497fec
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 17.54
+elapsed_sec: 9.73
 status: ok
 ----- stdout -----
 === Part 1: linear-algebra no-go at infinity ===
@@ -33,7 +33,7 @@ status: ok
 [PASS] ((2, 1, 0), delta_CP=1 pi): only lambda=0 solves A lambda = 0  (min singular value=0.852543)
 
 === Part 2: numerical asymptotic chamber-sphere floor ===
-[PASS] Pure-source chamber-sphere minimum stays strictly above zero  (best chi^2_inf=0.001079584 at perm=(0, 1, 2), dir=(-0.9956212696923373, 0.0934196004841208, -0.0033264968969123664))
+[PASS] Pure-source chamber-sphere minimum stays strictly above zero  (best chi^2_inf=0.001079584 at perm=(0, 1, 2), dir=(-0.9956212725653529, 0.09341957044909154, -0.003326480490627972))
 [PASS] The asymptotic floor is near the observed 1e-3 scale, not numerical zero  (best chi^2_inf=0.001079584)
 
 Interpretation:
@@ -42,6 +42,11 @@ Interpretation:
   The remaining basin-enumeration problem is therefore compact.
 
 PASS=26 FAIL=0
+per_element: checked — every target-angle constraint-matrix entry was assembled from rank-one PMNS projectors; aggregate FAIL=0.
+per_site: checked — all six row permutations at delta_CP=0 and pi were evaluated as distinct source-label assignments; aggregate FAIL=0.
+per_mode: checked — each 3x3 constraint matrix has full singular-value rank in the executed permutation/phase sweep; aggregate FAIL=0.
+per_block: checked — the compact chamber-sphere minimization found chi2_inf=0.001079584 at permutation (0, 1, 2).
+lattice_wide: checked and not executed — the PMNS source-family claim asserts no spatial lattice lift; the executed asymptotic scan leaves a strictly positive floor=True.
 
 ----- stderr -----
 

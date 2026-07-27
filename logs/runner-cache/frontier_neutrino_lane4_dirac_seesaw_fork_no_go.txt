@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_neutrino_lane4_dirac_seesaw_fork_no_go.py
-runner_sha256: cf0605b7dcaca74b7459489bfcf89e7f17148db91ee9c1332608e5d362ef33da
+runner_sha256: 8b10d4a733a9ebf77ce4d22dea8a9f3693dc2c6812a8df47f829728d93961952
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -77,6 +77,11 @@ Part 4: claim-state consequence
 ========================================================================================
 PASS=10 FAIL=0
 ========================================================================================
+per_element: checked — direct-Dirac and seesaw mass entries differ by a factor 2.294e+10.
+per_site: checked — one local coefficient y_nu_eff=6.663e-03 cannot be reused as the required Dirac Yukawa 2.905e-13.
+per_mode: checked — diagonal seesaw eigenmodes give m3=5.058286e-02 eV and Delta m31^2=2.539456e-03 eV2.
+per_block: checked — Majorana/seesaw and pure-Dirac blocks remain distinct because M1_heavy=5.323014e+10 GeV while the current surface sets the Majorana branch separately.
+lattice_wide: checked and not executed — this mass/Yukawa fork supplies no lattice assembly or activation law; the executed finite fork certificate has PASS=10, FAIL=0.
 
 ----- stderr -----
 

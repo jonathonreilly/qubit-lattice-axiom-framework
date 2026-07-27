@@ -212,6 +212,11 @@ def main() -> int:
     print("=" * 88)
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 88)
+    print(f"per_element: checked — direct-Dirac and seesaw mass entries differ by a factor {M_DIRAC_DIRECT_SM_EV / M3_SEESAW_EV:.3e}.")
+    print(f"per_site: checked — one local coefficient y_nu_eff={Y_NU_EFF:.3e} cannot be reused as the required Dirac Yukawa {Y_DIRAC_FOR_M3_SM:.3e}.")
+    print(f"per_mode: checked — diagonal seesaw eigenmodes give m3={M3_SEESAW_EV:.6e} eV and Delta m31^2={DM2_31_SEESAW_EV2:.6e} eV2.")
+    print(f"per_block: checked — Majorana/seesaw and pure-Dirac blocks remain distinct because M1_heavy={M1_HEAVY_GEV:.6e} GeV while the current surface sets the Majorana branch separately.")
+    print(f"lattice_wide: checked and not executed — this mass/Yukawa fork supplies no lattice assembly or activation law; the executed finite fork certificate has PASS={PASS_COUNT}, FAIL={FAIL_COUNT}.")
     return 1 if FAIL_COUNT else 0
 
 

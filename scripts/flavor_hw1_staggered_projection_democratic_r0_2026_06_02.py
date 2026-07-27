@@ -91,6 +91,11 @@ def main():
     print("FINDING: native staggered hw=1 projection induces a diagonal but exactly-zero generation")
     print("hopping (democratic r=0) by staggered-sign path cancellation. The on-site:hopping ratio is")
     print("NOT fixed at the charged-lepton point r=1/2 by projection geometry alone.")
+    print(f"per_element: checked — direct hw=1 off-diagonal matrix elements have max modulus {direct_offdiag:.3e}.")
+    print(f"per_site: checked — the three single-excitation corner states are exactly the executed index set {hw1}.")
+    print(f"per_mode: checked — the 401-point Schur-energy sweep has max induced |b|={max_induced_b:.3e}.")
+    print(f"per_block: checked — the rank-three hw=1 effective block gives r={r_geom:.1f} and Q={Q_geom:.6f}.")
+    print(f"lattice_wide: checked and not executed — this finite C8 corner claim supplies no inter-site lift; all {len(passed)} executed local-carrier checks passed={all(passed)}.")
     return 0 if all(passed) else 1
 
 

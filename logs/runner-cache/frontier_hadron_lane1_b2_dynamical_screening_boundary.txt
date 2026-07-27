@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hadron_lane1_b2_dynamical_screening_boundary.py
-runner_sha256: 10fb182884b0322d1956dda50412c6f0dd35f03eece1cb005fd6b99f4bce5165
+runner_sha256: 1b5e5f0279473ff5dda05da67df8fcb96fb7f76f4fe3a0ee8bedff697924e18b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -71,6 +71,11 @@ PART 5: CLAIM-STATUS FIREWALL
 ========================================================================================
 SUMMARY: PASS=21 FAIL=0
 ========================================================================================
+per_element: checked — determinant reweighting changes individual configuration weights while the pure-gauge scalar input stays fixed; FAIL=0.
+per_site: checked — the current L=4 pure-gauge carrier and missing sea-mass data were inspected explicitly; FAIL=0.
+per_mode: checked — screening factors 0.90, 0.96, and 1.00 produce distinct sqrt(sigma) readouts; FAIL=0.
+per_block: checked — paired determinant-weight blocks with the same pure-gauge payload yield different reweighted observables; FAIL=0.
+lattice_wide: checked — the 16^4 target has 256 times the L=4 link count and the ten-percent screening spread exceeds the one-percent budget; PASS=21, FAIL=0.
 Result: B2 remains open; current pure-gauge data cannot close it.
 A proper N_f=2+1 determinant ensemble or explicit budgeted comparator is required.
 

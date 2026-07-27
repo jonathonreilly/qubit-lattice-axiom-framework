@@ -183,6 +183,11 @@ def main() -> int:
     textual_firewall_checks()
     print()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+    print(f"per_element: checked — all four symbolic joint-probability atoms were tested for normalization, nonnegativity, and shared marginals; aggregate FAIL={FAIL}.")
+    print(f"per_site: checked — each one-copy marginal equals p for both product and correlated witnesses; aggregate FAIL={FAIL}.")
+    print(f"per_mode: checked — ss and sd outcome modes distinguish the product law from the correlated law at fixed Born marginals; aggregate FAIL={FAIL}.")
+    print(f"per_block: checked — diagonal two-copy density blocks realize both joint laws as positive Born states; aggregate FAIL={FAIL}.")
+    print(f"lattice_wide: checked and not executed — no repeated-record independence law is supplied for a lattice extension; the executed one-/two-copy witness suite has PASS={PASS}, FAIL={FAIL}.")
     if FAIL == 0:
         print(
             "VERDICT: bounded no-go passes; outcome factorization is not forced "

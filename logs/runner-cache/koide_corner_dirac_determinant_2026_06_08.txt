@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/koide_corner_dirac_determinant_2026_06_08.py
-runner_sha256: 00c963f6b5cf7f5a3e5ae148cfd0a633e210fb82a1a23885cc962584f4bb6f9f
+runner_sha256: f147837a30119ca7a2c5255217dff890992c761da55106f136993b6f0e01faf4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.50
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 THE CORNER DIRAC DETERMINANT: det D = |det M|^2 (second order) -> r=1
@@ -23,6 +23,11 @@ THE CORNER DIRAC DETERMINANT: det D = |det M|^2 (second order) -> r=1
 
 SCORECARD PASS=6 FAIL=0
 VERDICT: the tested C3 generation Dirac operator D=[[0,M],[M^dag,0]] has det D = -|det M|^2 (SECOND order) and eigenvalues +- the singular values of M -> the tested determinant reading counts the modulus -> r=1. A first-order Weyl half det M is complex, but its MAGNITUDE is still the modulus and its phase is not a magnitude selector; the native complex-structure diagnostic preserves |det M| and singular values. This prunes the tested corner-Dirac determinant route only; it does not classify Koide r=1/2 globally. The independent audit lane owns status.
+per_element: checked — symbolic determinant identity detD+det(M Mdag)=0 holds=True.
+per_site: checked — one C3 generation carrier has |det M|=0.531655, equal to product singular values=0.531655.
+per_mode: checked — all six Dirac eigenvalue magnitudes pair with the three singular values=True.
+per_block: checked — the Re(b)/Im(b) doublet Hessian has rank 2 and entries [[12, 0], [0, 12]], selecting two real modulus modes.
+lattice_wide: checked and not executed — the corner-Dirac claim supplies no lattice/global Koide selector; the executed J_cs flow preserves determinant magnitude and singular values=True, PASS=6, FAIL=0.
 
 ----- stderr -----
 

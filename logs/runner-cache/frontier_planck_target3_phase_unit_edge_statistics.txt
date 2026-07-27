@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_planck_target3_phase_unit_edge_statistics.py
-runner_sha256: eeb8e07a85605ee5bf5a9e4fc1d5a3ae06d19cc50caffcd127a7faa9784c2b9b
+runner_sha256: 8a2bdf40975e934712e41d2b45ed37eb5d06651a133aca1643600fc969457f92
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -42,6 +42,11 @@ the absolute action unit and the primitive CAR horizon-edge semantics?
 [PASS] positive route needs the stronger Clifford coframe principle: the separate Clifford bridge supplies a sufficient conditional coframe-response premise
 
 Summary: 27/27 checks passed.
+per_element: checked — CAR anticommutators, two-qubit commutators, and ququart clock-shift matrix entries were evaluated; FAIL=0.
+per_site: checked — the same rank-four local Hilbert carrier realizes CAR, commuting-qubit, and ququart semantics; FAIL=0.
+per_mode: checked — CAR gamma words and two-qubit Pauli words each span 16 matrix modes, so Hilbert flow alone does not distinguish them.
+per_block: checked — identical diagonal Hamiltonian flow is unitary on every tested semantic block=True.
+lattice_wide: checked and not executed — the claim supplies neither a lattice-wide CAR selector nor an SI action-unit map; the executed finite edge suite has PASS=27, FAIL=0.
 Verdict: the current one-axiom bridge yields a dimensionless phase unit but not an absolute action scale or the primitive CAR edge statistics. This is the Hilbert-only boundary; the separate Clifford bridge records a conditional coframe-response route.
 
 ----- stderr -----

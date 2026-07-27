@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_qd_objectivity_fixes_basis_not_weight_2026_06_02.py
-runner_sha256: 51af6170efa1090a3fbb009c5e7df63b6cca3136f34fc81f107432a4b4b3ce92
+runner_sha256: 90e390100f3bce7740673401668e40d9b46e00cf7c64a5461480f34a4933d3e6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 [PASS] two K-real sectors give a rank-1/rank-2 pointer alphabet
@@ -17,6 +17,11 @@ status: ok
 SCORECARD PASS=5 FAIL=0
 FINDING: QD objectivity fixes the two-sector pointer basis but does not select the sector weights.
 The uniform sector weight remains an extra measure/reference choice, not a consequence of redundant objectivity.
+per_element: checked — projector traces are 1.0 and 2.0, resolving the 1+2 pointer atoms.
+per_site: checked — one local tracial carrier gives weights (0.333333,0.666667) and r=1.000000.
+per_mode: checked — 2000 sampled U(3) rotations preserve I/3=True but preserve the uniform-sector state=False.
+per_block: checked — conjugation fixes both real rank blocks and the real C+Cdag operator=True.
+lattice_wide: checked and not executed — lattice dynamics is outside this three-state objectivity claim; the executed finite-carrier suite has PASS=5, FAIL=0.
 
 ----- stderr -----
 

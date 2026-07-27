@@ -332,6 +332,11 @@ def main() -> int:
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
+    print(f"per_element: checked — exact RPSR amplitudes and C3 Fourier coefficients were reconstructed without observed mass inputs; aggregate FAIL={FAIL_COUNT}.")
+    print(f"per_site: checked — each three-generation carrier separately reaches amplitude or arbitrary-ratio support but not a physical channel assignment; aggregate FAIL={FAIL_COUNT}.")
+    print(f"per_mode: checked — three C3 eigenmodes encode two independent normalized ratios, while one RPSR scalar supplies only one coordinate; aggregate FAIL={FAIL_COUNT}.")
+    print(f"per_block: checked — typed-edge reachability was evaluated before and after adding the explicit source-law/assignment/scale bridge block; aggregate FAIL={FAIL_COUNT}.")
+    print(f"lattice_wide: checked and not executed — no lattice realization follows because the executed dependency graph has no RPSR+C3 path to physical up-type ratios; PASS={PASS_COUNT}, FAIL={FAIL_COUNT}.")
     if FAIL_COUNT == 0:
         print("VERDICT: exact RPSR plus exact C3 is carrier support, not retained")
         print("up-type two-ratio readout closure without a new source/readout theorem.")

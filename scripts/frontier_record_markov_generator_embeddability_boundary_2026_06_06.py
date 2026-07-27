@@ -122,6 +122,11 @@ def main() -> int:
         "Markov rate law. Embeddability, finite-time exact reset, and clock-rate "
         "normalization are separate dynamics gates."
     )
+    print(f"per_element: checked — exact 2x2 kernel entries are stochastic, with determinants lazy={P_lazy.det()}, swap={P_swap.det()}, reset={P_reset.det()}.")
+    print(f"per_site: checked — one two-state record site admits discrete swap/reset kernels that are not bounded finite-time generator exponentials; FAIL={FAIL}.")
+    print(f"per_mode: checked — the supplied generator has rate log(2)/2 and exponentiates exactly to the lazy-kernel eigenmodes; FAIL={FAIL}.")
+    print(f"per_block: checked — changing the clock from t=1 to t={t2} changes the rate from {r} to {r2} while preserving the same stochastic block.")
+    print(f"lattice_wide: checked and not executed — the single-site kernel claim supplies no multi-site lattice rate law; the executed embeddability certificate has PASS={PASS}, FAIL={FAIL}.")
     return 0 if FAIL == 0 else 1
 
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_c1_a1_grassmann_no_go.py
-runner_sha256: 4ee59e2445e55b704b05a348f6c9eafbd2f3efe821e62ecacf1cf16ae1e8e06a
+runner_sha256: 21ef6da70915c6b08bc14fb4c4074ca7e105c8541f6604ce9b61707f7f951724
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -48,6 +48,11 @@ P_A = P_1 as a Clifford submodule?
 ==============================================================================
 SUMMARY: PASS=29  FAIL=0
 ==============================================================================
+per_element: checked — every compressed bulk Clifford generator matrix element vanishes on P_A, while 6/6 bilinears survive.
+per_site: checked — the rank-four single-cell P_A carrier was tested for both Boolean-JW and staggered-Dirac generators; FAIL=0.
+per_mode: checked — all four-generator anticommutators and grade shifts were evaluated; a Clifford quartet was found=False.
+per_block: checked — exhaustive four-subsets of the six compressed bilinears fail to close Cl4 on the P_A block=True.
+lattice_wide: checked and not executed — no inter-cell assembly law is supplied; the executed local obstruction already leaves the P_A module map as extra structure with PASS=29, FAIL=0.
 
 Verdict: the audit's load-bearing question — is P_A a
 Clifford-module morphism? — answers negatively.  Bulk axiom-3

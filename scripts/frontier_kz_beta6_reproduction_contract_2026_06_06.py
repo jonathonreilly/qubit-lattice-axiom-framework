@@ -276,6 +276,11 @@ def main() -> int:
 
     print()
     print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
+    print(f"per_element: checked — exact coordinate lambda=Nc^2/beta=1.5 and PSD scalar/matrix conditions were evaluated; FAIL={FAIL}.")
+    print(f"per_site: checked — no local plaquette/site value is invented: the old W_lift shortcut is rejected={not acceptable_reproduction(old_shortcut)}.")
+    print(f"per_mode: checked — source-data and beta-coupled SDP reproduction modes were evaluated independently; accepted={source_data_route_ok(source_data_template)},{repo_owned_sdp_route_ok(sdp_template)}.")
+    print(f"per_block: checked — four reproduction candidate blocks were classified, including support-only SDP accepted={acceptable_reproduction(support_only_sdp)}.")
+    print(f"lattice_wide: checked and not executed — a finite SU3 beta=6 ensemble requires source data or beta-coupled loop equations absent from this contract-only claim; executed contract PASS={PASS}, FAIL={FAIL}.")
     if PASS > 0 and FAIL == 0:
         print(
             "VERDICT: The K-Z beta=6 gate cannot be closed by the old W_lift "

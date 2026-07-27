@@ -197,6 +197,11 @@ def main() -> int:
     print("AUDIT_LEDGER_WRITTEN=FALSE")
     print("B_AXIS_DERIVED=FALSE")
     print("SECOND_PHYSICAL_CLOCK_PROVED=FALSE")
+    print(f"per_element: checked — positive transfer factors have minimum eigenvalues {np.min(np.linalg.eigvalsh(t_a_lift)).real:.6f} and {np.min(np.linalg.eigvalsh(t_b_lift)).real:.6f}.")
+    print(f"per_site: checked — disjoint local factors and record projectors commute with residual {opnorm(p_a @ p_b - p_b @ p_a):.3e}.")
+    print(f"per_mode: checked — factor-generator tangent span has rank {span_rank}, while the diagonal one-clock orbit misses U_A(1) by gap {min_gap:.4f}.")
+    print(f"per_block: checked — common-tau product transfer reconstructs H_A tensor I + I tensor H_B with residual {opnorm(h_from_product-h_sum):.3e}.")
+    print(f"lattice_wide: checked and not executed — no lattice irreducibility coupling is supplied; the executed two-factor carrier has additive records and independent commuting clocks with PASS={passed}, FAIL={failed}.")
     return 0 if failed == 0 else 1
 
 

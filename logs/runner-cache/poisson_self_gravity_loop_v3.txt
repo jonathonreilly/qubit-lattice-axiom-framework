@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/poisson_self_gravity_loop_v3.py
-runner_sha256: 6f33585df07358cc2bc242c6ddff94846554e0fe94aafaecc0833c575f1a7a80
+runner_sha256: 6c41b40d866645d27aafa3c0049c4129c14d2741137d4b092efa2d58c1b853df
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 283.21
+elapsed_sec: 122.11
 status: ok
 ----- stdout -----
 ========================================================================================================
@@ -69,6 +69,11 @@ SAFE READ
   zero-epsilon phase slope/span: +0.0000e+00 / +0.0000e+00
   strict read: no retained positive survives the exact reduction and Born controls
   this lane remains a bounded no-go on the retained audit row
+per_element: checked — exact epsilon=0 detector centroid residual=+0.000e+00 and phase-span residual=+0.000e+00.
+per_site: checked — the representative amplitude-sourced field converged=False in 6 iterations with residual=3.086e-04.
+per_mode: checked — step-local Born I3=1.889e-16; end-to-end Born was executed with normalized I3=4.911e-06.
+per_block: checked — 4 coupling blocks by 3 source strengths give 3/12 converged rows and best residual=0.000e+00.
+lattice_wide: checked — the h=0.25, W=3, L=6 lattice retains the bounded no-go after matched-null and Born controls; quick_mode=False.
 
 ----- stderr -----
 

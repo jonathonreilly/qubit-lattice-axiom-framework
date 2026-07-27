@@ -2,7 +2,7 @@
 
 **Date:** 2026-04-08
 
-**Revised:** 2026-07-10
+**Revised:** 2026-07-26
 
 **Type:** bounded_theorem
 
@@ -21,15 +21,16 @@ re-audit and carries no retained-status assignment.
 ## Claim scope
 
 Fix the already-computed coordinate `H = 0.25`, seed `0`, and compare the
-`S = 0.004` rows supplied by the two retained-bounded control notes below.
+`S = 0.004` rows in the two SHA-pinned source transcripts below.
 On exactly those two rows:
 
 1. both `delta_hist` values are negative;
 2. `Fam2` is deeper than `Fam1` both in `|delta_hist|` and in the normalized
    value `R_hist`; and
-3. each row belongs to its source note's controlled weak-field ladder, with an
-   exact `S = 0` null, a negative sign at all three nonzero strengths, and the
-   source-reported bounded `|delta_hist/S|` spread.
+3. each row belongs to the same transcript's configured strength ladder, whose
+   finite checks are an exact `S = 0` null, a negative sign at all three
+   nonzero strengths, and the reported finite
+   `|delta_hist/S|` spread.
 
 This is a finite cross-note implication. It does not derive or select
 `H = 0.25`, seed `0`, either row magnitude, an amplitude law, or a portability
@@ -38,26 +39,34 @@ bounded claim, not fitted inputs used to match an external target.
 
 ## Frozen source packets
 
-These are the only note-level physics dependencies. Both are independently
-recorded in the audit ledger as `audited_clean` with
-`effective_status = retained_bounded`.
+These are the direct evidence artifacts. The two source runners are imported by
+the primary certificate so their complete source enters its restricted audit
+packet; the expensive computations are not rerun by the short certificate.
+The exact transcripts are then SHA-pinned and parsed. No mutable audit-ledger
+status is a proof input, and this source note does not snapshot upstream or
+downstream audit grades.
 
-| input | retained-bounded source note | source computation and SHA-256 | frozen transcript and SHA-256 | role here |
-| --- | --- | --- | --- | --- |
-| `Fam1`, seed `0`, `H=0.25` ladder | [Fam1 seed-0 control note](WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md) | [`wave_direct_dm_h025_fam1_seed0_control_batch.py`](../scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py), `ad4671d0c347b6ec9c6c7602e83e262986425306bf7b6018893f653bf3f7b183` | [`2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt), `487297bd521bea04dbafdce12e3c59d8faa9acb59e169b9982a6a31104be0737` | supplies row 1, its null, sign pattern, and spread |
-| `Fam2`, seed `0`, `H=0.25` ladder | [Fam2 seed-0 control note](WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md) | [`wave_direct_dm_h025_fam2_seed0_control_batch.py`](../scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py), `06127f24dfc9a2efd0e86c1e7a921e10e423e7bbb083d973ca7d10902dbeb22d` | [`2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt), `9a14b49586473ad0f5ef3a81b559fee26dfc85156e9e9b160390d8e1c2a1c619` | supplies row 2, its null, sign pattern, and spread |
+| input | source computation and SHA-256 | frozen transcript and SHA-256 | role here |
+| --- | --- | --- | --- |
+| `Fam1`, seed `0`, `H=0.25` ladder | [`wave_direct_dm_h025_fam1_seed0_control_batch.py`](../scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py), `ad4671d0c347b6ec9c6c7602e83e262986425306bf7b6018893f653bf3f7b183` | [`2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt), `487297bd521bea04dbafdce12e3c59d8faa9acb59e169b9982a6a31104be0737` | supplies row 1, its null, sign pattern, and spread |
+| `Fam2`, seed `0`, `H=0.25` ladder | [`wave_direct_dm_h025_fam2_seed0_control_batch.py`](../scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py), `06127f24dfc9a2efd0e86c1e7a921e10e423e7bbb083d973ca7d10902dbeb22d` | [`2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt`](../logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt), `9a14b49586473ad0f5ef3a81b559fee26dfc85156e9e9b160390d8e1c2a1c619` | supplies row 2, its null, sign pattern, and spread |
 
-The primary runner checks that both dependencies remain in the audit lane's
-retained-grade set in
-`docs/audit/data/audit_ledger.json`, checks that each source note registers its
-own runner and transcript, requires the exact SHA-256 pins above before parsing,
-and performs the finite comparison below. It contains no expected direct-`dM`
-magnitudes or expected `R_hist` values.
+For navigation only, the source interpretations are
+`WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md` and
+`WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md`; they are deliberately
+backticked rather than cited because no interpretation or current audit status
+from either note is load-bearing here.
+
+The primary runner checks the source-runner coordinates, requires the exact
+runner and transcript SHA-256 pins above before parsing, recomputes every
+ladder summary used here from the parsed rows, and performs the finite
+comparison below. It contains no expected direct-`dM` magnitudes or expected
+`R_hist` values.
 
 ## Cross-note derivation
 
 For family `F` and strength `S`, use the quantities already defined and
-computed in the source control note:
+printed in each source transcript:
 
 ```text
 D_F(S) = delta_hist_F(S),
@@ -65,7 +74,7 @@ Q_F(S) = D_F(S) / S                       (S > 0),
 R_F(S) = D_F(S) / max(|dM_early|, |dM_late|).
 ```
 
-The nonzero control ladder is
+The nonzero configured ladder is
 `L = {0.002, 0.004, 0.008}`. Its source-reported scaled spread is
 
 ```text
@@ -73,7 +82,7 @@ spread_F = (max_{S in L}|Q_F(S)| - min_{S in L}|Q_F(S)|)
            / mean_{S in L}|Q_F(S)|.
 ```
 
-The parsed retained inputs are:
+The parsed frozen inputs are:
 
 | family | `D_F(0)` | sign on `L` | `spread_F` | `dM_early(0.004)` | `dM_late(0.004)` | `D_F(0.004)` | `R_F(0.004)` |
 | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: |
@@ -94,22 +103,22 @@ D_Fam2(0.004) < 0,
 R_Fam2(0.004) = -22.61% < -20.12% = R_Fam1(0.004).
 ```
 
-The exact nulls, common negative ladder signs, and finite spreads are inherited
-from the same two retained-bounded controls. Thus the selected rows share
-negative sign and common depth ordering while remaining inside their respective
-controlled weak-field ladders.
+The exact nulls, common negative ladder signs, and finite spreads are recomputed
+from the same two frozen ladders. Thus the selected rows share negative sign
+and common depth ordering while satisfying the declared finite checks on their
+respective configured ladders.
 
 ## Bounded-proposition classification
 
-The source computations are the load-bearing first-principles numerical work
-for the two family/seed ladders. This note does not redo that work and does not
+The source computations are the load-bearing configured numerical work for the
+two family/seed ladders. This note does not redo that work and does not
 compare either output with an experimental or hand-selected target. It reads
-two retained-bounded inputs and applies sign and order relations.
+two frozen artifact inputs and applies sign and order relations.
 
-Reading, SHA-pinning, and comparing the two retained source packets supports
+Reading, SHA-pinning, and comparing the two frozen source packets supports
 the exact finite proposition stated above. Its theorem scope is only the
 conditional sign/order implication over those two frozen rows and their
-declared control ladders. It is not a structural law, a surface-selection
+declared configured ladders. It is not a structural law, a surface-selection
 result, or a portability theorem.
 
 No class-`(G)` numerical match remains: there is no target value in the runner
@@ -137,10 +146,10 @@ derivation. No such structural claim appears here.
 
 What survives is only the finite proposition
 
-> At `H = 0.25`, seed `0`, and `S = 0.004`, the retained-bounded `Fam1`
-> and `Fam2` control rows both have negative `delta_hist`; `Fam2` is deeper
-> than `Fam1`; and both rows belong to source ladders with exact null,
-> common negative nonzero sign, and bounded scaled spread.
+> At `H = 0.25`, seed `0`, and `S = 0.004`, the frozen `Fam1` and `Fam2`
+> rows both have negative `delta_hist`; `Fam2` is deeper than `Fam1`; and
+> both rows belong to the pinned configured ladders with exact null, common
+> negative nonzero sign, and the stated finite scaled spread.
 
 This note does **not** claim:
 
@@ -149,6 +158,8 @@ This note does **not** claim:
 - a derivation of the row magnitudes or of the chosen surface;
 - a statement about `Fam3`, another seed, another `H`, or another strength;
 - a mechanism-level explanation of the cross-family ordering.
+- physical weak-field control beyond the exact finite ladder checks stated
+  above.
 
 In particular, `Fam1` and `Fam2` have different normalized magnitudes. The
 comparison is evidence against treating the two rows as a universal amplitude.
@@ -165,16 +176,16 @@ The checked transcript is
 [`outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-07-10.txt`](../outputs/wave_direct_dm_h025_seed0_crossfamily_assertions_2026-07-10.txt).
 The runner prints, among its computed values:
 
-- `WAVE_DIRECT_DM_H025_SEED0_DEPENDENCIES_RETAINED_GRADE=TRUE`
+- `WAVE_DIRECT_DM_H025_SEED0_SOURCE_RUNNERS_IMPORTED=TRUE`
 - `WAVE_DIRECT_DM_H025_SEED0_ARTIFACT_SHA256_PINS=TRUE`
 - `WAVE_DIRECT_DM_H025_SEED0_CLAIM_TYPE=BOUNDED_THEOREM`
 - `WAVE_DIRECT_DM_H025_SEED0_ROLE=SHA_PINNED_TWO_ROW_CONDITIONAL_NUMERICAL_PROPOSITION`
 - `WAVE_DIRECT_DM_H025_SEED0_SHARED_SIGN=negative`
 - `WAVE_DIRECT_DM_H025_SEED0_COMMON_ORDERING=Fam2_deeper_than_Fam1_at_strength_0.004`
-- `WAVE_DIRECT_DM_H025_SEED0_WEAK_FIELD_CONTROL=TRUE`
+- `WAVE_DIRECT_DM_H025_SEED0_CONFIGURED_LADDER_CHECKS=TRUE`
 - `WAVE_DIRECT_DM_H025_SEED0_PORTABILITY_LAW=FALSE`
 - `WAVE_DIRECT_DM_H025_STABLE_AMPLITUDE_LAW=FALSE`
 
 This bounded source proposition requires independent re-audit. It does not
-inherit a retained verdict merely because its two source rows retain their own
-independent audit grades.
+inherit a retained verdict from the existence or prior grading of either
+source artifact.

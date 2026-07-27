@@ -1,0 +1,78 @@
+loop_slug: poisson-beta-continuum-scaling
+goal: >
+  Run the continuum extrapolation that self_consistency_forces_poisson_note
+  invokes in its own first caveat but never performed, for every operator rather
+  than for Poisson alone. Named by cycle 710 (PR #5656) as the highest-value
+  open follow-up.
+cycle: 711
+block: 01
+predecessor: PR #5656 (cycle 710, same parent row)
+parent_row:
+  claim_id: self_consistency_forces_poisson_note
+  criticality: critical
+  deps: []
+  transitive_descendants: 727
+  load_bearing_score: 18.092
+
+strongest_result: >
+  The parent note's finite-size caveat is not merely unsupported, it points the
+  wrong way. The beta diagnostic's fit window (radii 2..N/2-3) lies inside the
+  self-consistent source, and the fraction of source mass inside it RISES with
+  lattice size, from 0.5067 at N=16 to 0.8449 at N=48. Enlarging the lattice
+  moves the diagnostic further from a far-field measurement, which is the
+  opposite of what the caveat assumes. The mechanism is that the propagator pins
+  total density to 1 and each layer to exactly 1/N, so the source is a
+  box-filling distribution with RMS/N constant at ~0.30 and never localizes.
+
+second_result: >
+  Poisson's self-consistent beta does not extrapolate to 1.0: b_inf = 1.2747 +/-
+  0.0177 (1/N family) and 1.1578 +/- 0.0012 (1/N + 1/N^2 family), against the
+  caveat's asserted 1.0. Over the doubling N=24 -> 48 it moves only +0.0311.
+
+third_result: >
+  The continuum ranking is INDETERMINATE - the two extrapolation families
+  disagree on the sign of the Poisson-vs-biharmonic gap. This independently
+  confirms PR #5656's R16, which refused to name a better operator. Had 710
+  taken the stronger reading, this cycle would have refuted it.
+
+fourth_result: >
+  The script the caveat cites measures ray deflection in a PRESCRIBED f = s/r
+  field per its own docstring, and contains no occurrence of "self_consistent".
+  A different observable in a different field from the beta it is defending.
+
+hypotheses_falsified_this_cycle:
+  - >
+    MINE: that Poisson would extrapolate cleanly to 1.0 and the open question was
+    whether biharmonic did too. It does not, and the cause turned out to be the
+    source construction rather than the operator.
+
+open_routes_not_closed:
+  - >
+    THE SUCCESSOR: the fixed-source repair. A localized source of fixed extent
+    and fixed total mass, exponent fitted at radii OUTSIDE it. This is the one
+    route that could recover a far-field exponent from this construction and this
+    cycle does not claim it fails. It requires abandoning the per-layer
+    normalization for the source step, and #5656 R6 showed that same removal does
+    not by itself repair the response kernel - so the two repairs are independent
+    and both would be needed.
+  - extrapolation families beyond the two tested (1/N, 1/N + 1/N^2)
+  - 96^3 for the self-consistent loop (not run; trend and S6 argue against, not measured)
+
+gates:
+  runner: 8 PASS / 0 FAIL
+  inference_audit_step11: clean (3 TAG findings found and fixed - rows S2/S4/S8
+    cross-referenced "as thesis" instead of writing hypotheses out, the same
+    defect class as cycle 710's L3)
+  value_gate_V1_V5: PASS on all five, in writing
+  no_go_gate_N1_N8: no failure condition hit; route 2 declared non-exhaustive
+    (the cycle's weakest point), route 7 declared unattempted and named successor
+  cluster_cap: 2nd PR in this parent-row family, so the evaluator does not
+    trigger; content-integrity criteria answered anyway in the gates file
+  vocab_lint: clean
+  forbidden_surfaces: none touched
+
+next_exact_action: >
+  Run the fixed-source repair as cycle 712: localized source of fixed extent and
+  mass, no per-layer normalization on the source step, exponent fitted outside
+  the source. Until that is run, no exponent from this construction should be
+  read as a far-field decay law.

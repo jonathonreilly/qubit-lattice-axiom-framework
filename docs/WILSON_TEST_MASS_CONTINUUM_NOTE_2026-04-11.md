@@ -4,6 +4,7 @@
 **Status:** bounded companion on the Wilson lane
 **Scope:** same-convention open-boundary Wilson runners only; finite-L
 distance-law table is the binding evidence
+**Primary runner:** [`scripts/wilson_test_mass_continuum_certificate.py`](../scripts/wilson_test_mass_continuum_certificate.py)
 
 ## Scope narrowing (2026-05-17 audited_conditional repair)
 
@@ -51,10 +52,10 @@ It does **not** close:
 
 ## What Was Run
 
-- [`scripts/frontier_test_mass_limit.py`](scripts/frontier_test_mass_limit.py)
-- [`scripts/frontier_perturbative_mass_law.py`](scripts/frontier_perturbative_mass_law.py)
-- [`scripts/frontier_continuum_limit.py`](scripts/frontier_continuum_limit.py)
-- [`scripts/frontier_newton_systematic.py`](scripts/frontier_newton_systematic.py)
+- [`scripts/frontier_test_mass_limit.py`](../scripts/frontier_test_mass_limit.py)
+- [`scripts/frontier_perturbative_mass_law.py`](../scripts/frontier_perturbative_mass_law.py)
+- [`scripts/frontier_continuum_limit.py`](../scripts/frontier_continuum_limit.py)
+- [`scripts/frontier_newton_systematic.py`](../scripts/frontier_newton_systematic.py)
 
 All four share the same open-Wilson convention:
 
@@ -148,7 +149,7 @@ normalization mistake.
 
 Use this note with:
 
-- [`scripts/frontier_newton_systematic.py`](scripts/frontier_newton_systematic.py)
+- [`scripts/frontier_newton_systematic.py`](../scripts/frontier_newton_systematic.py)
 - `docs/WILSON_NORMALIZATION_RECONCILIATION_NOTE_2026-04-11.md`
   (plain-text reader pointer; the reconciliation companion is a
   meta-level cross-runner overview and is **not** a load-bearing
@@ -176,7 +177,7 @@ replace the primary staggered bounded story.
 The safe retained reading is:
 
 > On the low-screening open-Wilson surface, the **test-mass** and
-> **continuum-limit** companions support a Newton-compatible distance law and
+> **finite-L distance-law** companions support a Newton-compatible distance law and
 > exact source-mass scaling within the shared Wilson convention, while full
 > both-masses closure remains open.
 

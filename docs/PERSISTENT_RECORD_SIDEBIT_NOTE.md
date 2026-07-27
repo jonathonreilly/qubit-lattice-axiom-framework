@@ -3,30 +3,21 @@
 **Date:** 2026-04-03  
 **Status:** bounded refinement tested
 **Claim type:** bounded_theorem
+**Primary runner:** [`scripts/persistent_record_sidebit_certificate.py`](../scripts/persistent_record_sidebit_certificate.py)
 
-**Audit-conditional perimeter (2026-05-08):**
-The current generated audit ledger records this row `audited_conditional` with
-`auditor_confidence = high`, `chain_closes = false`, and `claim_type =
-bounded_theorem`. The audit chain-closure explanation is exact: "The
-packet contains retained bounded parents for the baseline matched
-comparison and overlap-kernel model, but it does not include the
-side-bit runner output or log that generated the new side-bit values.
-The missing step is an included computation or retained authority
-verifying the side-bit table and its implementation." This
-rigorization edit only sharpens the boundary of the conditional
-perimeter; nothing here promotes audit status. The supported content
-of this note is the methodological framing — the side-bit
-implementation rule, the matched-comparison protocol, and the
-qualitative "modest improvement on soft-overlap, no node-label win"
-read; the numerical table at N ∈ {8, 12, 18} is registered against
-[`logs/2026-04-03-persistent-record-sidebit-matched-compare.txt`](../logs/2026-04-03-persistent-record-sidebit-matched-compare.txt)
+## Reproducibility perimeter
+
+The supported content is the side-bit implementation rule, the matched
+comparison protocol, and the qualitative "modest improvement on soft-overlap,
+no node-label win" read. The numerical table at N ∈ {8, 12, 18} is
+reproducible through
+[`logs/runner-cache/persistent_record_sidebit_certificate.txt`](../logs/runner-cache/persistent_record_sidebit_certificate.txt)
 but the third-decimal drift across reruns is documented inline (e.g.
 side-bit `gamma=1.0` at N=12 reads ~0.5685–0.5698 across runs). The
 side-bit runner stdout from
-[`scripts/persistent_record_overlap_kernel.py --side-bit`](../scripts/persistent_record_overlap_kernel.py)
-is the registered re-derivation harness; a future runner-cache deposit
-of the side-bit row would close the missing-stdout gap and is the
-prescribed repair path.
+[`scripts/persistent_record_sidebit_certificate.py`](../scripts/persistent_record_sidebit_certificate.py)
+is the registered paired re-derivation harness; it executes both the direct
+`--side-bit` row and the matched comparison on the declared bounded slice.
 
 ## Purpose
 
@@ -59,9 +50,9 @@ The matched harness now also supports side-bit variants:
 
 - [`persistent_record_matched_compare.py`](../scripts/persistent_record_matched_compare.py)
 
-Relevant log:
+Relevant reproducibility record:
 
-- [`2026-04-03-persistent-record-sidebit-matched-compare.txt`](../logs/2026-04-03-persistent-record-sidebit-matched-compare.txt)
+- [`persistent_record_sidebit_certificate.txt`](../logs/runner-cache/persistent_record_sidebit_certificate.txt)
 
 ## Matched result (`2` seeds, `gamma = 1.0`)
 

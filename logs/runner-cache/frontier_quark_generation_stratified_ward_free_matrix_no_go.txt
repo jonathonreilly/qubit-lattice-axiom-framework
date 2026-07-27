@@ -1,10 +1,11 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_generation_stratified_ward_free_matrix_no_go.py
-runner_sha256: 0e9f45bafb0a59b5e5cf0c0f5d9f6f0122bfbe23b446625320ac55e6925e6a2c
+runner_sha256: 811cef980de177a55ff6f8d25c3d5b32477afbb546554b5ef04bee67d2209702
+input_fingerprint_sha256: 431b0640fae01b9c1ee020ff254bd75a7a6096b21be46ccc44f4f8626ee4bc22
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.08
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
 ----- stdout -----
 ========================================================================================
 LANE 3 DIRECT GENERATION-STRATIFIED QUARK WARD NO-GO
@@ -21,7 +22,7 @@ PASS: QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md exists
 PASS: YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md exists -- docs/YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md
 PASS: one-Higgs theorem says quark generation matrices are arbitrary
 PASS: top Ward theorem states Q_L block normalization
-FAIL: three-generation note states hierarchy remains open
+PASS: three-generation note states hierarchy remains open
 PASS: Lane 3 firewall keeps non-top masses open
 PASS: bottom analysis closes species-uniform physical reuse
 
@@ -70,10 +71,18 @@ PASS: note says it does not claim non-top retained masses
 PASS: note keeps future source/readout primitive open
 PASS: note states CKM is not eigenvalue closure
 
+per_element: computed gauge admissibility for all nine entries in each of the Y_u and Y_d generation matrices
+per_site: checked and not executed — this finite flavor-algebra claim defines no spatial-site observable
+per_mode: computed hypercharge/color selection, top-Ward normalization, and two same-CKM singular-value witnesses
+per_block: computed Q_L Ward block dimension 6, generation-averaged dimension 18, and both up/down spectrum blocks
+lattice_wide: checked and not executed — the claim is an exact generation-space obstruction and asserts no spatial-lattice dynamics
+
 Summary
 ------------------------------------------------------------------------
-TOTAL: PASS=41, FAIL=1
-VERDICT: no-go verifier has failing checks.
+TOTAL: PASS=42, FAIL=0
+VERDICT: direct generation-stratified quark Ward route remains open.
+The current retained bank selects quark Yukawa operator skeletons and
+top-channel normalization, but not non-top singular values.
 
 ----- stderr -----
 

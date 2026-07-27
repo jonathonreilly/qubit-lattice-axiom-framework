@@ -1,0 +1,77 @@
+===== runner cache v1 =====
+runner: scripts/persistent_record_sidebit_certificate.py
+runner_sha256: 8c4fdfcf0f21afc27cbaedea87acb13142df65a7921a3b7c676af1bd98a7cb23
+input_fingerprint_sha256: fa09d02c5950844038173b3b54e2f42c77f281d733262b00d00c5608fbbe87be
+timeout_sec: 480
+exit_code: 0
+elapsed_sec: 58.15
+status: ok
+----- stdout -----
+CHILD scripts/persistent_record_overlap_kernel.py --side-bit --seeds 2 --gamma 1.0 --n-layers 8,12,18 exit=0
+==============================================================================
+PERSISTENT RECORD OVERLAP KERNEL
+  Record state: mesoscopic counts over post-barrier worldtube cells
+  Kernel: K(r,r') = exp(-gamma * ||r-r'||^2)
+  Propagator: 1/L^p * exp(-0.8 * theta^2) * exp(i k S_spent)
+  N sweep: [8, 12, 18]  seeds=2  k_band=[3.0, 5.0, 7.0]
+  Record grid: y_bins=5, dir_bins=3, max_count=2
+  side_bit: True
+  packet_bit: False
+  entry_bit: False
+  active_write: False
+  marker_weight: 1.0
+  gamma sweep: [1.0]
+==============================================================================
+
+           N   pur_trace       n_env      pur_g1       ov_g1
+  ------------------------------------------------------------
+           8      0.8323         9.5      0.8644      0.3254
+          12      0.5284        37.5      0.5698      0.1787
+          18      0.7699       123.0      0.7287      0.1038
+
+Fit summary
+  trace: (1-pur) ~ 0.0999 * N^+0.390
+  gamma=1: (1-pur) ~ 0.03 * N^+0.855
+
+Interpretation:
+  pur_trace = exact trace over orthogonal record sectors for this record model
+  pur_gX = soft-overlap reduced purity with residual branch connection
+  ov_gX = detector-weighted mean branch overlap under that kernel
+  Lower purity and flatter/positive scaling of (1-pur) are the interesting signs
+CHILD scripts/persistent_record_matched_compare.py --seeds 2 --gamma 1.0 --n-layers 8,12,18 --methods node,pr_trace,pr_soft,pr_side_trace,pr_side_soft exit=0
+======================================================================================
+PERSISTENT RECORD MATCHED COMPARISON
+  Same generated DAGs, same seeds, same barrier setup, same k band
+  N sweep: [8, 12, 18]  seeds=2  k_band=[3.0, 5.0, 7.0]
+  Persistent kernel gammas: [1.0]
+======================================================================================
+
+           N        node    pr_trace       pr_g1  pr_side_trace  pr_side_g1
+  ------------------------------------------------------------------------
+           8      0.7971      0.8317      0.8672      0.8323      0.8644
+          12      0.5128      0.5349      0.6099      0.5284      0.5698
+          18      0.7121      0.7511      0.7314      0.7699      0.7287
+
+Environment counts (mean distinct detector env sectors)
+  node: 8:7.5, 12:13.0, 18:15.0
+  pr_trace: 8:8.5, 12:30.0, 18:91.5
+  pr_g1: 8:8.5, 12:30.0, 18:91.5
+  pr_side_trace: 8:9.5, 12:37.5, 18:123.0
+  pr_side_g1: 8:9.5, 12:37.5, 18:123.0
+
+Fit summary
+  node: (1-pur) ~ 0.104 * N^+0.432
+  pr_trace: (1-pur) ~ 0.0811 * N^+0.483
+  pr_g1: (1-pur) ~ 0.0278 * N^+0.869
+  pr_side_trace: (1-pur) ~ 0.0999 * N^+0.390
+  pr_side_g1: (1-pur) ~ 0.03 * N^+0.855
+
+per_element: computed every path-amplitude contribution entering the persistent record and side-marker states
+per_site: computed all generated DAG nodes for matched N=8,12,18 with two deterministic seeds
+per_mode: computed node, base trace/soft, and side-bit trace/soft modes at gamma=1.0
+per_block: computed paired overlap and matched-comparison blocks; implementation_evidence=True
+lattice_wide: checked and not executed — the claim is bounded to the matched N=8,12,18 DAG slice, not an asymptotic graph family
+CERTIFICATE execution_ok=True implementation_ok=True
+
+----- stderr -----
+

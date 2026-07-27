@@ -33,6 +33,9 @@ NOTE_PATH = (
     / "docs"
     / "AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md"
 )
+AUDIT_INPUT_PATHS = (
+    "docs/AREA_LAW_MULTIPOCKET_SELECTOR_NO_GO_NOTE_2026-04-25.md",
+)
 DOWNSTREAM_CONTEXT_NOTES = (
     "AREA_LAW_PRIMITIVE_PARITY_GATE_CARRIER_THEOREM_NOTE_2026-04-25.md",
     "AREA_LAW_PRIMITIVE_CAR_EDGE_IDENTIFICATION_THEOREM_NOTE_2026-04-25.md",
@@ -245,6 +248,27 @@ def main() -> int:
         "target note has no Markdown authority edges; both later carriers are backticked context handles",
     )
 
+    print()
+    print(
+        "per_element: computed the one- and two-interval fiber crossing "
+        "formula and its exact coefficient map"
+    )
+    print(
+        "per_site: checked and not executed — the executed momentum-fiber "
+        "candidate defines no site-resolved observable"
+    )
+    print(
+        "per_mode: computed mu perturbations, sector weights, and the "
+        "two-level entropy tuning mode"
+    )
+    print(
+        "per_block: computed simple/two-interval direct-sum calibration and "
+        "the independent selector condition mu=1/2"
+    )
+    print(
+        "lattice_wide: checked and not executed — the executed exact "
+        "candidate algebra defines no lattice-wide finite-size computation"
+    )
     print()
     print("=" * 78)
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")

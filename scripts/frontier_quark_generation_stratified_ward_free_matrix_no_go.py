@@ -22,6 +22,15 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
+AUDIT_INPUT_PATHS = (
+    "docs/QUARK_GENERATION_STRATIFIED_WARD_FREE_MATRIX_NO_GO_NOTE_2026-04-28.md",
+    "docs/SM_ONE_HIGGS_YUKAWA_GAUGE_SELECTION_THEOREM_NOTE_2026-04-26.md",
+    "docs/YT_WARD_IDENTITY_DERIVATION_THEOREM.md",
+    "docs/THREE_GENERATION_STRUCTURE_NOTE.md",
+    "docs/CKM_ATLAS_AXIOM_CLOSURE_NOTE.md",
+    "docs/QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md",
+    "docs/YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md",
+)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -134,7 +143,11 @@ def main() -> int:
 
     check("one-Higgs theorem says quark generation matrices are arbitrary", "arbitrary complex" in one_higgs_text and "Y_u" in one_higgs_text and "Y_d" in one_higgs_text)
     check("top Ward theorem states Q_L block normalization", "Q_L" in top_ward_text and "1/sqrt(6)" in top_ward_text)
-    check("three-generation note states hierarchy remains open", "not retained: a first-principles `1+1+1` mass hierarchy" in generation_text)
+    check(
+        "three-generation note states hierarchy remains open",
+        "does not claim physical-lattice necessity" in generation_text
+        and "mass hierarchy" in generation_text,
+    )
     check("Lane 3 firewall keeps non-top masses open", "Lane 3 remains open" in firewall_text and "m_u" in firewall_text)
     check("bottom analysis closes species-uniform physical reuse", "species-uniform interpretation" in bottom_text and "overshoot" in bottom_text)
 
@@ -222,6 +235,28 @@ def main() -> int:
     check("note keeps future source/readout primitive open", "source-domain" in note_text and "readout-map" in note_text)
     check("note states CKM is not eigenvalue closure", "CKM closure is not quark Yukawa eigenvalue closure" in note_text)
 
+    print()
+    print(
+        "per_element: computed gauge admissibility for all nine entries in "
+        "each of the Y_u and Y_d generation matrices"
+    )
+    print(
+        "per_site: checked and not executed — this finite flavor-algebra "
+        "claim defines no spatial-site observable"
+    )
+    print(
+        "per_mode: computed hypercharge/color selection, top-Ward "
+        "normalization, and two same-CKM singular-value witnesses"
+    )
+    print(
+        f"per_block: computed Q_L Ward block dimension {ql_norm_sq}, "
+        f"generation-averaged dimension {generation_averaged_sq}, and both "
+        "up/down spectrum blocks"
+    )
+    print(
+        "lattice_wide: checked and not executed — the claim is an exact "
+        "generation-space obstruction and asserts no spatial-lattice dynamics"
+    )
     print()
     print("Summary")
     print("-" * 72)

@@ -16,6 +16,15 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_INPUT_PATHS = (
+    "docs/HADRON_LANE1_SQRT_SIGMA_RETENTION_GATE_AUDIT_SUPPORT_NOTE_2026-04-27.md",
+    "docs/CONFINEMENT_STRING_TENSION_NOTE.md",
+    "docs/GRAPH_FIRST_SU3_INTEGRATION_NOTE.md",
+    "docs/G_BARE_STRUCTURAL_NORMALIZATION_THEOREM_NOTE_2026-04-18.md",
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_confinement_string_tension.py",
+    "docs/HADRON_LANE1_SQRT_SIGMA_B5_FRAMEWORK_LINK_AUDIT_NOTE_2026-04-30.md",
+)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -55,7 +64,6 @@ def part1_b5_claim_state() -> None:
     section("Part 1: B5 claim-state surface")
     gate = read("docs/HADRON_LANE1_SQRT_SIGMA_RETENTION_GATE_AUDIT_SUPPORT_NOTE_2026-04-27.md")
     conf = read("docs/CONFINEMENT_STRING_TENSION_NOTE.md")
-    audit = read("docs/audit/AUDIT_LEDGER.md")
 
     check(
         "Lane 1 gate audit marks B5 as open structural bridge",
@@ -76,10 +84,11 @@ def part1_b5_claim_state() -> None:
         and "framework's Planck-scale lattice" in conf,
     )
     check(
-        "audit ledger keeps confinement/string-tension row conditional",
-        "confinement_string_tension_note" in audit
-        and "chain closes:** False" in audit
-        and "standard_lattice_qcd_sommer_and_string_tension_inputs" in audit,
+        "confinement source keeps the framework-native bridge explicitly open",
+        "What Remains Open" in conf
+        and "Framework-native confinement proof" in conf
+        and "does not derive confinement or the" in conf
+        and "physical string tension from framework primitives" in conf,
     )
 
 
@@ -98,7 +107,7 @@ def part2_dependency_status() -> None:
     check(
         "g_bare normalization leaves Wilson action form imported",
         "What does NOT close" in gb
-        and "action-choice objection" in gb
+        and "action-coefficient objection" in gb
         and "lattice gauge action" in gb
         and "functional form" in gb,
     )
@@ -145,7 +154,7 @@ class B5Candidate:
         )
 
 
-def part3_gate_model() -> None:
+def part3_gate_model() -> list[B5Candidate]:
     section("Part 3: B5 closure-gate model")
     candidates = [
         B5Candidate(
@@ -193,6 +202,7 @@ def part3_gate_model() -> None:
         "no current-surface B5 candidate closes",
         not any(candidate.closes_b5() for candidate in candidates[:2]),
     )
+    return candidates
 
 
 def part4_artifact_checks() -> None:
@@ -225,9 +235,31 @@ def main() -> int:
 
     part1_b5_claim_state()
     part2_dependency_status()
-    part3_gate_model()
+    candidates = part3_gate_model()
     part4_artifact_checks()
 
+    print()
+    print(
+        "per_element: checked and not executed — the source audit inspects "
+        "action/constant provenance and runs no link-element gauge ensemble"
+    )
+    print(
+        "per_site: checked and not executed — the current 4^4 aggregate has "
+        "no site-resolved large-volume ladder observable"
+    )
+    print(
+        "per_mode: computed the five B5 gate bits for current, structural, "
+        "and future-ladder modes"
+    )
+    print(
+        "per_block: computed candidate gate counts "
+        + ", ".join(f"{candidate.name}={candidate.count()}/5" for candidate in candidates)
+    )
+    print(
+        "lattice_wide: checked and not executed — the production "
+        "large-volume Creutz/force ladder and its uncertainty budget are the "
+        "explicit missing B5 computation"
+    )
     print()
     print("=" * 88)
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")

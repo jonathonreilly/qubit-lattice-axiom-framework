@@ -42,6 +42,12 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import independent_generators_heldout as ind
 import universality_classifier as uc
 
+AUDIT_TIMEOUT_SEC = 600
+AUDIT_INPUT_PATHS = (
+    "scripts/independent_generators_heldout.py",
+    "scripts/universality_classifier.py",
+)
+
 
 def local_z_asym(pos, adj):
     """Mean over source nodes of |sum(dz_out)| / sum(|dz_out|).
@@ -76,34 +82,55 @@ def annotate(result, pos, adj):
 
 
 def fit_3prop_classifier(results, props=("avg_deg", "z_sym", "fill", "reach_frac", "local_z_asym")):
-    """Search the best 3-property AND classifier on the given results."""
+    """Search the best 3-property AND classifier on the given results.
+
+    Each threshold predicate is represented by a bit mask.  This preserves
+    the original loop and tie-breaking order exactly while replacing the
+    innermost per-row Python loop with integer bit operations.
+    """
     rs = [r for r in results if "error" not in r]
     if not rs:
         return None
+    truth_mask = sum(int(bool(r["pass"])) << i for i, r in enumerate(rs))
+    condition_masks = {}
+    for prop in props:
+        for threshold in sorted({r[prop] for r in rs}):
+            for direction in (">=", "<="):
+                condition_masks[(prop, threshold, direction)] = sum(
+                    int(
+                        (r[prop] >= threshold)
+                        if direction == ">="
+                        else (r[prop] <= threshold)
+                    )
+                    << i
+                    for i, r in enumerate(rs)
+                )
     best = (-1.0,) + ("",) * 9
     for pa in props:
         va_set = sorted({r[pa] for r in rs})
         for ta in va_set:
             for da in (">=", "<="):
+                mask_a = condition_masks[(pa, ta, da)]
                 for pb in props:
                     if pb == pa:
                         continue
                     vb_set = sorted({r[pb] for r in rs})
                     for tb in vb_set:
                         for db in (">=", "<="):
+                            mask_ab = mask_a & condition_masks[(pb, tb, db)]
                             for pc in props:
                                 if pc in (pa, pb):
                                     continue
                                 vc_set = sorted({r[pc] for r in rs})
                                 for tc in vc_set:
                                     for dc in (">=", "<="):
-                                        correct = 0
-                                        for r in rs:
-                                            ok_a = (r[pa] >= ta) if da == ">=" else (r[pa] <= ta)
-                                            ok_b = (r[pb] >= tb) if db == ">=" else (r[pb] <= tb)
-                                            ok_c = (r[pc] >= tc) if dc == ">=" else (r[pc] <= tc)
-                                            if (ok_a and ok_b and ok_c) == r["pass"]:
-                                                correct += 1
+                                        prediction_mask = (
+                                            mask_ab
+                                            & condition_masks[(pc, tc, dc)]
+                                        )
+                                        correct = len(rs) - (
+                                            prediction_mask ^ truth_mask
+                                        ).bit_count()
                                         acc = correct / len(rs)
                                         if acc > best[0]:
                                             best = (acc, pa, da, ta, pb, db, tb, pc, dc, tc)
@@ -120,7 +147,7 @@ def apply_3prop(r, rule):
     return ok_a and ok_b and ok_c
 
 
-def main():
+def main() -> int:
     print("=" * 100)
     print("LOCAL Z-ASYM PREDICTOR — 3-PROPERTY CLASSIFIER, CROSS-GENERATOR HELD-OUT")
     print("Tests whether adding local_z_asym closes the cross-generator gap")
@@ -184,7 +211,7 @@ def main():
     rule = fit_3prop_classifier(swept_results)
     if rule is None:
         print("  no valid fit")
-        return
+        return 1
     acc, pa, da, ta, pb, db, tb, pc, dc, tc = rule
     print(f"  best 3-property rule:")
     print(f"    ({pa} {da} {ta:.4f}) AND ({pb} {db} {tb:.4f}) AND ({pc} {dc} {tc:.4f})")
@@ -238,6 +265,41 @@ def main():
         print("  the new predictor overfits in-sample and degrades generalization")
         print("  the classifier program is exhausted; move to matter or analytic next")
 
+    expected = (
+        len(swept_results) == 26
+        and len(indep_results) == 9
+        and n_eval == 9
+        and old_correct == 6
+        and rule_correct == 6
+        and "local_z_asym" not in (pa, pb, pc)
+    )
+    print()
+    print(
+        "per_element: computed every outgoing-edge dz contribution used by "
+        "local_z_asym on all measured graphs"
+    )
+    print(
+        "per_site: computed the normalized outgoing-z imbalance at every "
+        "source node with a nonzero dz denominator"
+    )
+    print(
+        f"per_mode: searched all ordered three-property AND rules over 5 "
+        f"properties; selected ({pa}, {pb}, {pc})"
+    )
+    print(
+        f"per_block: computed {len(swept_results)} swept training rows and "
+        f"{len(indep_results)} independent held-out rows"
+    )
+    print(
+        "lattice_wide: checked and not executed — a universal graph-family "
+        "statement is outside the executed 26+9 finite slice"
+    )
+    print(
+        f"CERTIFICATE expected_rows={expected} old={old_correct}/{n_eval} "
+        f"new={rule_correct}/{n_eval}"
+    )
+    return 0 if expected else 1
+
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

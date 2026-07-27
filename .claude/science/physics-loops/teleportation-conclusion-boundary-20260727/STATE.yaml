@@ -1,0 +1,21 @@
+loop_id: teleportation-conclusion-boundary-20260727
+status: packaged_for_review
+created: 2026-07-27
+target_claim_id: teleportation_conclusion_boundary_note
+target_claim_type: open_gate
+target_prior_audit_status: audited_renaming
+source_note: docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md
+runner: scripts/frontier_teleportation_conclusion_boundary.py
+runner_cache: logs/runner-cache/frontier_teleportation_conclusion_boundary.txt
+actual_current_surface_status: open
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: exact_current_packet_non_entailment
+strongest_result: "Explicit selector, finite-scaling, and no-device countermodels prove that the current planning packet does not entail unconditional closure."
+strongest_unresolved_obligation: "Independent audit must decide whether the scoped open-gate derivation is clean; the underlying selector, all-even, and device obligations remain open."
+review_disposition: pass_with_bounded_claims
+no_go_discipline: pass_for_current_packet_non_entailment_only
+audit_required_before_effective_status_change: true
+bare_retained_allowed: false
+next_exact_action: "Run an independent restricted-packet re-audit of teleportation_conclusion_boundary_note."
+

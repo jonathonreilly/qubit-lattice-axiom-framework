@@ -1,0 +1,27 @@
+loop_slug: s3-boundary-link-accounting-20260727
+mode: source-note-hygiene
+goal: "Close the S3 boundary-link conditional audit's runner-accounting and restricted-packet synchronization issue without changing the audited bounded scope."
+target_status: best-honest-status
+runtime_budget: "bounded autonomous science-fix task; no long-running campaign"
+cycle_count: 1
+block_count: 0
+active_route: explicit_source_accounting_and_fresh_packet_render
+approach_family_coverage:
+  exact_runner_recount: candidate-complete
+  static_source_label_recount: candidate-complete
+  all_r_analytic_bridge: retired
+strongest_unresolved_proof_obligation: "The large-coordinate bridge lemma remains outside this note's audited R=2..6 plus Proposition Z scope."
+hard_residual_attacked: null
+files_touched:
+  - docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md
+  - .claude/science/physics-loops/s3-boundary-link-accounting-20260727/
+open_imports: []
+no_go_routes:
+  - "The 24 Q_3-both-connected subsets outside the 102 preference-order downsets cannot be present-cube sets P for cubical balls; scope is P-level only."
+trace_gate_classification: direct_blocker_closure
+review_disposition: revise-and-rerun
+pr_status: not_attempted
+next_exact_action: "Rerun focused review after the N1 route-family normalization, then record the final packet fingerprint and hand off for independent audit."
+stop_condition: "The current source, live stdout, and freshly rendered restricted packet agree on 121 PASS = 119 EXACT + 2 BOUNDED, with the unchanged bounded scope and no-go checklist explicit."
+lock_note: "The canonical automation lock was inaccessible in the managed worktree; a worktree-specific /tmp supervisor lock was acquired."
+skill_freshness_note: "origin/main fetch was blocked because Git's external FETCH_HEAD is not writable; the local skill matches the locally available origin/main blob."

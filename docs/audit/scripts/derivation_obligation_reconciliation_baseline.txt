@@ -1,22 +1,31 @@
 # Grandfathered derivation-obligation registry/note divergences.
 #
+# CURRENTLY EMPTY. Nothing error-eligible diverges today. The file ships as the
+# sanctioned drain if the owner ever needs to grandfather one.
+#
 # audit_lint.obligation_reconciliation_findings reconciles each entry in
 # docs/audit/data/derivation_obligations.json against the source note named by
-# its own current_path. Every divergence listed here reproduces on the state
-# this file was written against; each is reported as a drainable notice
-# instead of an error. Any error-eligible divergence NOT listed here is an
-# error.
+# its own current_path. A divergence listed here is reported as a drainable
+# notice instead of an error; any error-eligible divergence NOT listed here is
+# an error.
 #
-# Only findings that read NO Markdown structure are error-eligible, and so only
-# they are listable here: a registry field is empty or it is not, a governance
-# basename occurs somewhere in the note text or it does not, a ledger row is
-# typed open_gate or it is not. Everything that depends on resolving the note
-# into sections -- exact_target_section_missing, closure_criterion_section_
-# missing, target_mismatch, closure_condition_not_grounded -- is in
-# audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS: reported on every run,
-# never an error, never listed here, and not suppressible by this file.
-# ledger_row_not_open_gate is likewise not listable, for the opposite reason:
-# it carries the registry preamble's promise, not a wording divergence.
+# Only findings that read NO note prose are error-eligible, and so only they
+# are listable here:
+#   self_liquidation_condition_missing  -- a registry field is empty or not
+#   ledger_row_not_open_gate            -- the ledger row is typed open_gate
+#                                          or not
+# Both are facts about machine records the lint already owns, so neither can be
+# wrong about a note. ledger_row_not_open_gate is nonetheless NOT listable, for
+# the opposite reason: it carries the registry preamble's promise that an
+# obligation never satisfies dependency closure, which no baseline line may
+# suppress.
+#
+# Everything that interprets note prose is in
+# audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS -- exact_target_section_
+# missing, closure_criterion_section_missing, target_mismatch,
+# closure_condition_not_grounded, governance_source_not_cited. Those are
+# reported on every run, are never errors, are never listed here, and cannot be
+# suppressed by this file.
 #
 # This list may only SHRINK -- but that is a reviewed convention, not a
 # mechanical guarantee: the lint cannot tell a drained line from a newly added
@@ -34,12 +43,8 @@
 # directory is restored wholesale from the branch merge-base before a science
 # PR is committed; a baseline there would have every drain silently reverted.
 #
-# The open owner question behind the single line below, recorded in the PR that
-# introduced this file: the theta entry asserts a historical_governance_source
-# that its own note does not cite, unlike its two siblings.
-#
-# Reported every run as advisory notices rather than grandfathered here, and
-# also owner questions:
+# The open owner questions this rule surfaced are all reported every run as
+# advisory notices, not grandfathered here:
 #   - all three entries record a closure condition paraphrased from the note's
 #     "## Running-program relation" rather than its "## Closure criterion", so
 #     the registry omits the matter-action/measure conjunct (AC grain), the
@@ -48,6 +53,6 @@
 #   - the AC R-eta registry target omits the note's "clock-rate" exclusion and
 #     the "h" density-class label;
 #   - the theta registry target omits the note's "from the retained framework
-#     chain" provenance restriction and narrows "quark-sector" to "quark".
-
-theta_quark_determinant_cross_sector_readout_derivation_obligation:governance_source_not_cited
+#     chain" provenance restriction and narrows "quark-sector" to "quark";
+#   - the theta entry asserts a historical_governance_source that its own note
+#     does not cite, unlike its two siblings.

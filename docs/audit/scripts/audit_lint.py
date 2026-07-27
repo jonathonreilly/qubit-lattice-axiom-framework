@@ -26,13 +26,12 @@ Checks (all hard rules from FRESH_LOOK_REQUIREMENTS.md and README.md):
        confirmations must be cross-family, strong/external, or same-family
        fresh_context from a distinct restricted-input session.
      - note_hash on row must equal current note hash on disk.
-     - a registered derivation obligation must record a closure condition,
-       must be cited by any governance source it declares, and its ledger row
-       must be typed open_gate. Divergence between the registry and the note it
-       registers (exact target, closure condition, sections present) is
-       reported as an advisory notice: those comparisons depend on parsing the
-       note's Markdown, so they inform and never block. Nothing here is ever
-       repaired -- which surface is right is not a mechanical call.
+     - a registered derivation obligation must record a closure condition and
+       its ledger row must be typed open_gate. Divergence from the note it
+       registers (exact target, closure condition, declared governance source,
+       sections present) is reported as an advisory notice: every one of those
+       interprets note prose, so they inform and never block. Nothing here is
+       ever repaired -- which surface is right is not a mechanical call.
 
   3. Graph health:
      - No dangling deps.
@@ -563,7 +562,9 @@ def markdown_sections(text: str) -> dict[str, str]:
     keeps its FIRST body for the same reason -- the later occurrence must not
     be able to displace the section the note actually opened with.
 
-    Because every finding downstream of this parse can be a hard error, the
+    No finding downstream of this parse is a hard error any more -- they are
+    all advisory, precisely because this parse cannot be made trustworthy
+    enough to gate on. It still has to be right to be worth reporting, so the
     fence and heading rules follow CommonMark rather than approximating it: a
     fence closes only on the same character, at least as long as the opener and
     with nothing after it (so ```` ```python ```` inside a block is content, not
@@ -690,32 +691,36 @@ OBLIGATION_RECONCILIATION_NON_GRANDFATHERABLE_KINDS = frozenset(
 
 # Advisory: reported every run, never an error, baseline or no baseline.
 #
-# The dividing line is what a finding has to KNOW to be right. The three
-# error-eligible kinds read no Markdown structure at all -- a registry field is
-# empty or it is not, a basename occurs somewhere in the note text or it does
-# not, a ledger row is typed open_gate or it is not -- so each can only fire on
-# a fact, and the two that read the note can only fire when the string is
-# genuinely absent. The four below all rest on markdown_sections having
-# resolved the note into the right sections with the right bodies, and this is
-# a hand-rolled parser: review found four separate valid-Markdown shapes
+# The dividing line is whether a finding reads the NOTE FILE at all. The two
+# error-eligible kinds do not: `self_liquidation_condition_missing` asks
+# whether a registry field is empty, `ledger_row_not_open_gate` asks how the
+# ledger row is typed. Both are facts about machine records this lint already
+# owns, so neither can be wrong about a note.
+#
+# Everything below interprets note prose, and interpreting Markdown is where a
+# hard gate goes wrong. Review found four distinct valid-Markdown shapes
 # (fenced headings, list-nested headings and fences, lazy continuation,
 # indented top-level constructs) where a non-container-aware parse silently
-# compares the wrong text. audit_lint is a stop-work gate in run_pipeline.sh
-# and pre_commit_audit_check.sh, so a parser-dependent hard error is a repo-wide
-# outage whose trigger is somebody's Markdown style. Closure grounding is
-# weaker still: a thresholdless content-word comparison whose live margins are
-# one to two words (measured 0.36/0.18, 0.45/0.27, 0.50/0.40).
+# resolves the wrong section body, and `governance_source_not_cited` is a raw
+# substring test that a percent-encoded link target
+# (`TIER%5FA_...md`) defeats while resolving correctly for the citation graph.
+# Closure grounding is weaker still: a thresholdless content-word comparison
+# whose live margins are one to two words (measured 0.36/0.18, 0.45/0.27,
+# 0.50/0.40). audit_lint is a stop-work gate in run_pipeline.sh and
+# pre_commit_audit_check.sh, so any of these as a hard error is a repo-wide
+# outage whose trigger is somebody's Markdown style.
 #
 # They are real and useful diagnostics -- they are what surfaced that all three
 # registry entries diverge from their notes -- so they report on every run with
-# the full text and scores. Arming any of them needs container-aware parsing or
-# a structured registry field, not a baseline.
+# the full text and scores. Arming any of them needs container-aware parsing, a
+# link-resolving citation check, or a structured registry field. Not a baseline.
 OBLIGATION_RECONCILIATION_ADVISORY_KINDS = frozenset(
     {
         "exact_target_section_missing",
         "closure_criterion_section_missing",
         "target_mismatch",
         "closure_condition_not_grounded",
+        "governance_source_not_cited",
     }
 )
 
@@ -736,10 +741,15 @@ def obligation_reconciliation_findings(
     than the obligation it registers and no gate would notice.
 
     No check decides which surface is right. What an obligation demands is
-    owner/audit-lane content, so the caller reports and never repairs: today's
-    exact-comparison divergences are grandfathered and only a new one errors,
-    while ``closure_condition_not_grounded`` -- the one lexical, thresholdless
-    comparison here -- is advisory at every run.
+    owner/audit-lane content, so the caller reports and never repairs. Of the
+    kinds returned here, only ``self_liquidation_condition_missing`` is
+    error-eligible, and it reads the registry field alone; the rest interpret
+    note prose and the caller routes them to advisory notices. This function is
+    nonetheless reached only when ``current_path`` exists on disk, because it
+    parses the note -- a missing note is its own hard error upstream, and the
+    row-only ``open_gate`` invariant lives in
+    ``obligation_row_typing_findings`` so it does not inherit that
+    precondition.
     """
     findings: list[tuple[str, str]] = []
     source_path = entry.get("current_path") or "<no current_path>"
@@ -1048,19 +1058,17 @@ def main() -> int:
         #
         # This is a ratchet, not a rewrite. What an obligation demands is
         # owner/audit-lane content, so a divergence is never repaired here and
-        # never picked a side on: today's error-eligible population is
-        # grandfathered verbatim in
-        # derivation_obligation_reconciliation_baseline.txt and reported as a
-        # drainable notice, and only a NEW divergence is an error. Draining an
-        # entry is the owner's adjudication of which surface was right.
+        # never picked a side on. Every finding that interprets note prose is
+        # in OBLIGATION_RECONCILIATION_ADVISORY_KINDS: reported on every run,
+        # never suppressible by the baseline, and unable to reach `errors` at
+        # all (the advisory and error-eligible sets partition
+        # OBLIGATION_RECONCILIATION_KINDS, asserted in the tests). What remains
+        # error-eligible reads only machine records this lint already owns, and
+        # today none of it fires, so the baseline ships EMPTY -- it stays as the
+        # sanctioned drain if the owner ever needs to grandfather one.
         # Shrink-only is a reviewed convention, not a mechanical guarantee:
         # nothing here can tell a drained line from a newly added suppression,
-        # so growth of this file is a review question. That is one reason only
-        # findings that read no Markdown structure are error-eligible at all;
-        # everything that depends on the section parse lives in
-        # OBLIGATION_RECONCILIATION_ADVISORY_KINDS, which this file cannot
-        # suppress and which can never reach `errors` (the two sets partition
-        # OBLIGATION_RECONCILIATION_KINDS, asserted in the tests).
+        # so growth of this file is a review question.
         # The baseline lives beside the scripts rather than in
         # docs/audit/data/ because that directory is restored wholesale from
         # origin/main before a science PR lands, which would silently revert
@@ -1113,8 +1121,8 @@ def main() -> int:
                 elif kind in OBLIGATION_RECONCILIATION_ADVISORY_KINDS:
                     add_notice(
                         "derivation_obligation_registry_note_divergence_advisory",
-                        f"{message} [advisory: lexical content-word comparison, "
-                        "reported every run and never an error]",
+                        f"{message} [advisory: this finding interprets note prose, "
+                        "so it is reported every run and is never an error]",
                     )
                 elif key in reconciliation_baseline:
                     add_notice(

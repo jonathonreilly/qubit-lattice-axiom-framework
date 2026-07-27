@@ -11,10 +11,13 @@ weaker target or a closure condition copied from a different section of its own
 note with no gate firing.
 
 The lint never repairs a divergence and never decides which surface is right:
-what an obligation demands is owner/audit-lane content. Exact mechanical
-comparisons are error-eligible with the current population grandfathered in a
-shrink-only baseline; the one lexical comparison is advisory at every run and
-cannot be baselined; the `open_gate` typing invariant is neither.
+what an obligation demands is owner/audit-lane content. Every finding that
+interprets note prose is advisory — reported on each run, never an error, never
+baselineable — because `audit_lint` is a stop-work gate and no hand-rolled
+Markdown reading is safe as one. Only findings about machine records the lint
+already owns are error-eligible: an empty `self_liquidation_condition`, and a
+ledger row typed away from `open_gate` (which is additionally never
+grandfatherable, because it carries the registry's own preamble promise).
 
 Run via:
   python3 -m unittest docs.audit.scripts.tests.test_derivation_obligation_reconciliation
@@ -183,7 +186,8 @@ class ObligationReconciliationRuleTest(unittest.TestCase):
     def test_atx_closed_heading_names_the_section(self):
         # `## Exact target ##` is valid Markdown for the same heading. Reading
         # the trailing hashes as part of the name made a valid note report
-        # exact_target_section_missing as a hard error.
+        # exact_target_section_missing — noise now that the kind is advisory,
+        # but the parse still has to be right to be worth reporting.
         note = ALIGNED_NOTE.replace("## Exact target", "## Exact target ##")
         self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
 
@@ -431,24 +435,22 @@ class ObligationReconciliationBaselineTest(unittest.TestCase):
             sorted(self.error_eligible_live_findings()), sorted(self.baseline)
         )
 
-    def test_only_structure_free_findings_are_error_eligible(self):
+    def test_only_prose_free_findings_are_error_eligible(self):
         # The dividing line, locked so it cannot drift back. A finding may be a
-        # hard error only if it reads NO Markdown structure: a registry field is
-        # empty or not, a basename occurs in the note text or not, a ledger row
-        # is typed open_gate or not. Anything that needs markdown_sections to
-        # have resolved the note correctly is advisory, because audit_lint is a
-        # stop-work gate and the parser is hand-rolled.
+        # hard error only if it reads NO note prose: an empty registry field, or
+        # a ledger row's claim_type. Both are facts about machine records this
+        # lint already owns, so neither can be wrong about a note. Everything
+        # that interprets prose is advisory, because audit_lint is a stop-work
+        # gate: the section parse is hand-rolled, and the governance check is a
+        # raw substring test that a percent-encoded link target defeats while
+        # still resolving correctly for the citation graph.
         error_eligible = (
             audit_lint.OBLIGATION_RECONCILIATION_KINDS
             - audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS
         )
         self.assertEqual(
             error_eligible,
-            {
-                "self_liquidation_condition_missing",
-                "governance_source_not_cited",
-                "ledger_row_not_open_gate",
-            },
+            {"self_liquidation_condition_missing", "ledger_row_not_open_gate"},
         )
         self.assertEqual(
             audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS,
@@ -457,12 +459,30 @@ class ObligationReconciliationBaselineTest(unittest.TestCase):
                 "closure_criterion_section_missing",
                 "target_mismatch",
                 "closure_condition_not_grounded",
+                "governance_source_not_cited",
             },
         )
         # ... and the two tiers must partition the declared kinds.
         self.assertEqual(
             error_eligible | audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS,
             audit_lint.OBLIGATION_RECONCILIATION_KINDS,
+        )
+
+    def test_a_percent_encoded_governance_link_is_not_a_hard_error(self):
+        # The shape that forced the demotion: the citation resolver decodes
+        # `%5F` and resolves the declared governance source, but the literal
+        # basename is absent from the raw text, so the substring test fires.
+        entry = dict(ALIGNED_ENTRY)
+        entry["historical_governance_source"] = "docs/SOME_GOVERNANCE_DECISION.md"
+        note = ALIGNED_NOTE + (
+            "\nAdopted via [historical governance]"
+            "(SOME%5FGOVERNANCE%5FDECISION.md).\n"
+        )
+        self.assertIn("governance_source_not_cited", kinds(entry, note=note))
+        self.assertIn(
+            "governance_source_not_cited",
+            audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS,
+            "this false positive is only tolerable while the kind is advisory",
         )
 
     def test_advisory_kinds_are_never_baselined(self):

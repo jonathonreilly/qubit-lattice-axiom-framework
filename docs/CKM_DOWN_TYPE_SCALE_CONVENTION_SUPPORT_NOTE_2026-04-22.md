@@ -1,10 +1,12 @@
-# CKM Down-Type Five-Sixths Algebra And Scale-Covariance Boundary
+# CKM Down-Type Five-Sixths Algebra And Shared-Transport Covariance
 
-**Date:** 2026-04-22; first-principles covariance repair 2026-07-12
+**Date:** 2026-04-22; first-principles covariance repair 2026-07-12;
+exact-scope repair 2026-07-27
 **Type:** bounded_theorem
 **Claim type:** bounded_theorem
 **Status:** bounded support theorem with an exact algebraic core and an exact
-scale-rescue obstruction. Independent audit owns any effective status.
+shared-positive-scalar-transport identity. Independent audit owns any
+effective status.
 **Primary runner:**
 [`scripts/frontier_ckm_down_type_scale_convention_support.py`](../scripts/frontier_ckm_down_type_scale_convention_support.py)
 
@@ -33,12 +35,13 @@ This repair proves two narrower results:
 1. a rank-`1+5` normalized determinant realizes a `5/6` power exactly and
    singles out `N_c=3` within its `2N_c` generalization;
 2. any shared multiplicative transport preserves the relative deviation
-   between theory and observation, so a scale-convention change alone cannot
-   turn the common-scale mismatch into a sub-percent agreement.
+   between theory and observation. More generally, separate positive
+   transports change the deviation only through their ratio.
 
 The first result is an abstract algebraic lemma, not evidence for its physical
-typing. The second closes the scale-convention-rescue route on the stated
-multiplicative-transport domain.
+typing. The second is an exact covariance identity on the explicitly stated
+scalar-transport domain. It does not classify nonmultiplicative evolution,
+observable-specific matching, or a future typed CKM/mass readout.
 
 ## 2. Minimal premise set
 
@@ -144,7 +147,7 @@ physical bridge obligation, not an algebraic consequence of (3.1).
 This is a current-packet boundary only. A future source/action theorem may
 derive both maps.
 
-## 5. Exact scale-covariance theorem
+## 5. Exact shared-transport covariance theorem
 
 Let `R_pred` and `R_common` be positive theory and observation ratios on one
 common renormalization surface. Let `T>0` be the shared transport to a mixed
@@ -167,29 +170,51 @@ This identity is independent of the numerical value or perturbative order of
 `T`. Threshold matching factors may be included in `T`; if they act on the
 same numerator transport, they cancel in (5.2) as well.
 
-The crossed comparison used previously was instead
+The exact two-sided law makes the hypothesis in (5.1) explicit. For positive
+theory and observation transports `T_pred` and `T_obs`, define
 
 ```text
-D_cross(T) = R_pred/(T R_common) - 1.                    (5.3)
+D(T_pred,T_obs)
+  = (T_pred R_pred)/(T_obs R_common) - 1.
+```
+
+Then
+
+```text
+1 + D(T_pred,T_obs)
+  = (T_pred/T_obs) [1 + D(1,1)].                         (5.3)
+```
+
+Since all factors are positive, `D(T_pred,T_obs)=D(1,1)` if and only if
+`T_pred=T_obs`. Thus (5.2) is neither a claim about every possible RG map nor
+an assumption that theory and observation must always have the same
+transport; it is the exact result conditional on a shared scalar transport.
+
+The crossed comparison used previously is the special case
+`T_pred=1`, `T_obs=T`:
+
+```text
+D_cross(T) = R_pred/(T R_common) - 1.                    (5.4)
 ```
 
 It holds the theory result on the common surface while moving only the
 observation. It is not invariant:
 
 ```text
-d D_cross/dT = -R_pred/(T^2 R_common) != 0.              (5.4)
+d D_cross/dT = -R_pred/(T^2 R_common) != 0.              (5.5)
 ```
 
-Indeed, `T=R_pred/R_common` makes (5.3) vanish identically. A small crossed
-deviation can therefore be created by the selected transport and cannot serve
-as a scale-selection theorem.
+Indeed, `T=R_pred/R_common` makes (5.4) vanish identically. Consequently, a
+small crossed deviation does not by itself determine or derive a scale
+selector; an independent physical prescription for the unequal transport
+ratio would be additional input.
 
 For flavor-universal multiplicative QCD mass running on a fixed-flavor
 surface,
 
 ```text
 d ln(m_q)/d ln(mu) = -gamma_m,
-d ln[m_s(mu)/m_b(mu)]/d ln(mu) = -gamma_m + gamma_m = 0. (5.5)
+d ln[m_s(mu)/m_b(mu)]/d ln(mu) = -gamma_m + gamma_m = 0. (5.6)
 ```
 
 A mixed ratio with only the strange numerator moved has a nonzero scale
@@ -257,9 +282,9 @@ literal `1.14747`. Only the one-loop coefficient arithmetic leading to
 `12/25` is exact; a finite-order transport factor is not an exact all-orders
 QCD statement.
 
-## 7. Theorem and boundary
+## 7. Theorem and exact scope
 
-**Theorem (five-sixths algebra and scale-covariance boundary).** On the
+**Theorem (five-sixths algebra and shared-transport covariance).** On the
 explicit domain of Sections 2-5:
 
 1. the normalized determinant of a rank-`1+5` operator gives `R^(5/6)`
@@ -268,23 +293,27 @@ explicit domain of Sections 2-5:
 2. fixed mass spectra do not determine a mixing angle, so the composite
    mass-operator/CKM-readout bridge (4.1)-(4.2) remains a separate physical
    obligation;
-3. shared multiplicative RG transport preserves relative theory/observation
-   deviation, so scale convention alone cannot convert the common-scale
-   mismatch into the reported sub-percent agreement.
+3. separate positive scalar transports obey the exact ratio law (5.3), and a
+   shared positive scalar transport preserves relative theory/observation
+   deviation exactly.
 
-The scale-convention-rescue route is closed on this domain. The constructive
-remaining target is sharp: derive the composite typed bridge (4.1)-(4.2), and state the
-result on a common or explicitly RG-covariant mass surface. If a future bridge
-is instead defined directly on `m_s(2 GeV)/m_b(m_b)`, its `2 GeV` prescription
-must be supplied or derived as part of that bridge.
+The transport theorem quantifies only over the positive scalar factors in
+(5.3). It does not assert closure of every scale-convention route. In
+particular, non-shared or observable-specific transport, nonmultiplicative
+evolution, and a future source/action-derived CKM/mass readout remain outside
+the theorem. The constructive remaining target is the composite typed bridge
+(4.1)-(4.2), stated on a common or explicitly RG-covariant mass surface. If a
+future bridge is instead defined directly on `m_s(2 GeV)/m_b(m_b)`, its
+`2 GeV` prescription must be supplied or derived as part of that bridge.
 
 ## 8. Does not claim
 
 - no observed quark mass or CKM value is derived;
 - no absolute bottom or strange mass is closed;
 - the physical maps (4.1)-(4.2) are not supplied by the determinant identity;
-- no global impossibility is claimed for future source/action, RGI-mass, or
-  explicitly conditional convention routes;
+- no global impossibility is claimed, nor is exhaustive route closure, for
+  future source/action, RGI-mass, non-shared-transport, or explicitly
+  conditional convention routes;
 - the old `+0.20%` central-value coincidence is not retained as derivation
   evidence.
 
@@ -299,5 +328,5 @@ python3 scripts/frontier_ckm_down_type_scale_convention_support.py
 Expected final line:
 
 ```text
-SUMMARY: EXACT_PASS=26 COMPARATOR_PASS=6 FAIL=0
+SUMMARY: EXACT_PASS=29 COMPARATOR_PASS=6 FAIL=0
 ```

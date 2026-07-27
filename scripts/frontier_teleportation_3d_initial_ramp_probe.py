@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """3D initial-state and ramp probe for Poisson teleportation preparation.
 
-Status: planning / first artifact. This bounded diagnostic pressures the
-2D ramp evidence on the smallest exact 3D lattice: three spatial directions
-plus one finite ramp-time direction.
+Status: open finite diagnostic; intended audit claim type open_gate. This
+bounded diagnostic pressures the 2D ramp evidence on the smallest exact 3D
+lattice: three spatial directions plus one finite ramp-time direction.
 
 Scope boundary: ordinary quantum state teleportation resources only. This
 does not claim matter transfer, mass transfer, charge transfer, energy
@@ -36,6 +36,7 @@ from frontier_teleportation_resource_from_poisson import (  # noqa: E402
     AuditCase,
     amplitudes_by_logical_env,
     bell_state,
+    bell_overlap_ties,
     best_bell_overlap,
     factor_sites,
     lattice_for_case,
@@ -109,6 +110,7 @@ class ResourceMetrics:
     phi_plus_overlap: float
     best_bell_overlap: float
     best_bell_label: str
+    best_bell_labels: tuple[str, ...]
     exact_avg_fidelity: float
     best_frame_avg_fidelity: float
     logical_chsh: float
@@ -138,13 +140,23 @@ class RampStepDiagnostics:
     gap: float
     target_ground_overlap: float
     resource: ResourceMetrics
-    first_excited_adiabatic: float
-    max_excited_adiabatic: float
+    first_block_adiabatic: float
+    max_block_adiabatic: float
     rss_adiabatic: float
     norm_bound_adiabatic: float
-    dominant_level: int
+    dominant_level_start: int
+    dominant_level_end: int
     dominant_gap: float
     dominant_coupling: float
+
+
+@dataclasses.dataclass(frozen=True)
+class EigenspaceAdiabaticDiagnostics:
+    level_start: int
+    level_end: int
+    gap: float
+    coupling_norm: float
+    ratio: float
 
 
 @dataclasses.dataclass(frozen=True)
@@ -167,8 +179,8 @@ class RampDiagnostics:
         return min(self.steps, key=lambda row: row.gap)
 
     @property
-    def max_exact_step(self) -> RampStepDiagnostics:
-        return max(self.steps, key=lambda row: row.max_excited_adiabatic)
+    def max_block_step(self) -> RampStepDiagnostics:
+        return max(self.steps, key=lambda row: row.max_block_adiabatic)
 
     @property
     def max_norm_step(self) -> RampStepDiagnostics:
@@ -302,6 +314,8 @@ def bipartition_from_tensor(
     if total <= 1e-15:
         raise ValueError(f"{label}: zero Schmidt weight")
     weights = weights / total
+    weights = np.where(weights > tolerance, weights, 0.0)
+    weights = weights / float(np.sum(weights))
     purity = float(np.sum(weights * weights))
     return BipartitionDiagnostics(
         label=label,
@@ -340,10 +354,12 @@ def logical_resource_density(psi: np.ndarray, n_sites: int, factors) -> np.ndarr
 def resource_metrics(psi: np.ndarray, n_sites: int, factors) -> ResourceMetrics:
     rho = logical_resource_density(psi, n_sites, factors)
     best_overlap, best_label = best_bell_overlap(rho)
+    best_labels = bell_overlap_ties(rho)
     return ResourceMetrics(
         phi_plus_overlap=phi_plus_overlap(rho),
         best_bell_overlap=best_overlap,
         best_bell_label=best_label,
+        best_bell_labels=best_labels,
         exact_avg_fidelity=exact_average_fidelity(rho),
         best_frame_avg_fidelity=best_frame_avg_fidelity(best_overlap),
         logical_chsh=two_qubit_chsh(rho),
@@ -473,6 +489,50 @@ def finite_ratio(numerator: float, denominator: float, gap_floor: float) -> floa
     return numerator / (denominator * denominator)
 
 
+def eigenspace_adiabatic_diagnostics(
+    evals: np.ndarray,
+    evecs: np.ndarray,
+    d_ground: np.ndarray,
+    gap_floor: float,
+    degeneracy_tolerance: float,
+) -> tuple[EigenspaceAdiabaticDiagnostics, ...]:
+    """Return basis-invariant couplings to numerically degenerate energy blocks.
+
+    A per-eigenvector maximum is not defined invariantly inside a degenerate
+    excited eigenspace: an eigensolver may rotate that basis between runs.  For
+    a block B, ||P_B dH |0>|| / Delta_B^2 is invariant under all such rotations.
+    The minimum numerical gap in a tolerance-cluster is used conservatively.
+    """
+
+    gaps = evals[1:] - evals[0]
+    if len(gaps) == 0:
+        return ()
+
+    couplings = evecs[:, 1:].conj().T @ d_ground
+    blocks: list[EigenspaceAdiabaticDiagnostics] = []
+    start = 0
+    while start < len(gaps):
+        stop = start + 1
+        while (
+            stop < len(gaps)
+            and abs(float(gaps[stop] - gaps[start])) <= degeneracy_tolerance
+        ):
+            stop += 1
+        block_gap = float(np.min(gaps[start:stop]))
+        coupling_norm = float(np.linalg.norm(couplings[start:stop]))
+        blocks.append(
+            EigenspaceAdiabaticDiagnostics(
+                level_start=start + 1,
+                level_end=stop,
+                gap=block_gap,
+                coupling_norm=coupling_norm,
+                ratio=finite_ratio(coupling_norm, block_gap, gap_floor),
+            )
+        )
+        start = stop
+    return tuple(blocks)
+
+
 def ramp_step_diagnostics(
     s: float,
     hamiltonian: np.ndarray,
@@ -482,36 +542,34 @@ def ramp_step_diagnostics(
     n_sites: int,
     factors,
     gap_floor: float,
+    degeneracy_tolerance: float,
 ) -> RampStepDiagnostics:
     evals, evecs = eigh(hamiltonian)
     ground = evecs[:, 0]
-    gaps = evals[1:] - evals[0]
-    gap = float(gaps[0]) if len(gaps) else math.inf
+    gap = float(evals[1] - evals[0]) if len(evals) > 1 else math.inf
 
     d_ground = d_hamiltonian @ ground
-    couplings = np.abs(evecs[:, 1:].conj().T @ d_ground)
-    ratios = np.array(
-        [
-            finite_ratio(float(coupling), float(excited_gap), gap_floor)
-            for coupling, excited_gap in zip(couplings, gaps)
-        ],
-        dtype=float,
+    blocks = eigenspace_adiabatic_diagnostics(
+        evals=evals,
+        evecs=evecs,
+        d_ground=d_ground,
+        gap_floor=gap_floor,
+        degeneracy_tolerance=degeneracy_tolerance,
     )
-    if len(ratios):
-        dominant_offset = int(np.argmax(ratios))
-        dominant_level = dominant_offset + 1
-        max_exact = float(ratios[dominant_offset])
-        dominant_gap = float(gaps[dominant_offset])
-        dominant_coupling = float(couplings[dominant_offset])
-        first_excited = float(ratios[0])
-        finite_values = ratios[np.isfinite(ratios)]
-        rss = math.inf if len(finite_values) != len(ratios) else float(np.sqrt(np.sum(ratios * ratios)))
+    if blocks:
+        dominant = max(blocks, key=lambda row: row.ratio)
+        max_block = dominant.ratio
+        first_block = blocks[0].ratio
+        finite_values = tuple(row.ratio for row in blocks if math.isfinite(row.ratio))
+        rss = (
+            math.inf
+            if len(finite_values) != len(blocks)
+            else float(math.sqrt(sum(value * value for value in finite_values)))
+        )
     else:
-        dominant_level = 0
-        max_exact = 0.0
-        dominant_gap = math.inf
-        dominant_coupling = 0.0
-        first_excited = 0.0
+        dominant = EigenspaceAdiabaticDiagnostics(0, 0, math.inf, 0.0, 0.0)
+        max_block = 0.0
+        first_block = 0.0
         rss = 0.0
 
     return RampStepDiagnostics(
@@ -520,17 +578,23 @@ def ramp_step_diagnostics(
         gap=gap,
         target_ground_overlap=float(abs(np.vdot(target_ground, ground)) ** 2),
         resource=resource_metrics(ground, n_sites, factors),
-        first_excited_adiabatic=first_excited,
-        max_excited_adiabatic=max_exact,
+        first_block_adiabatic=first_block,
+        max_block_adiabatic=max_block,
         rss_adiabatic=rss,
         norm_bound_adiabatic=finite_ratio(d_hamiltonian_norm, gap, gap_floor),
-        dominant_level=dominant_level,
-        dominant_gap=dominant_gap,
-        dominant_coupling=dominant_coupling,
+        dominant_level_start=dominant.level_start,
+        dominant_level_end=dominant.level_end,
+        dominant_gap=dominant.gap,
+        dominant_coupling=dominant.coupling_norm,
     )
 
 
-def run_ramp_path(data: HamiltonianData, grid_points: int, gap_floor: float) -> RampDiagnostics:
+def run_ramp_path(
+    data: HamiltonianData,
+    grid_points: int,
+    gap_floor: float,
+    degeneracy_tolerance: float,
+) -> RampDiagnostics:
     target_evals, target_evecs = eigh(data.h_target)
     target_ground = target_evecs[:, 0]
     factors = factor_sites(data.case.dim, data.case.side)
@@ -547,6 +611,7 @@ def run_ramp_path(data: HamiltonianData, grid_points: int, gap_floor: float) -> 
                 n_sites=data.n_sites,
                 factors=factors,
                 gap_floor=gap_floor,
+                degeneracy_tolerance=degeneracy_tolerance,
             )
         )
     return RampDiagnostics(
@@ -633,10 +698,14 @@ def print_spectrum(label: str, spectrum: SpectrumDiagnostics) -> None:
 
 
 def print_resource(prefix: str, metrics: ResourceMetrics) -> None:
+    if len(metrics.best_bell_labels) == 1:
+        bell_label = metrics.best_bell_labels[0]
+    else:
+        bell_label = "/".join(metrics.best_bell_labels) + " tie"
     print(
         prefix
         + f"Phi+={metrics.phi_plus_overlap:.6f}, "
-        + f"Bell*={metrics.best_bell_overlap:.6f} ({metrics.best_bell_label}), "
+        + f"Bell*={metrics.best_bell_overlap:.6f} ({bell_label}), "
         + f"Favg(Phi frame)={metrics.exact_avg_fidelity:.6f}, "
         + f"Favg(best frame)={metrics.best_frame_avg_fidelity:.6f}, "
         + f"CHSH={metrics.logical_chsh:.6f}, "
@@ -719,8 +788,8 @@ def print_ramp(result: RampDiagnostics) -> None:
     print(
         "    "
         f"{'s':>6s} {'gap':>12s} {'target|ov|2':>12s} {'Bell*':>10s} "
-        f"{'label':>5s} {'Fbest':>10s} {'CHSH':>10s} {'neg':>10s} "
-        f"{'Amax':>12s} {'norm/gap2':>12s}"
+        f"{'label(s)':>14s} {'Fbest':>10s} {'CHSH':>10s} {'neg':>10s} "
+        f"{'Ablock':>12s} {'norm/gap2':>12s}"
     )
     for row in sample_rows(result.steps):
         resource = row.resource
@@ -730,21 +799,25 @@ def print_ramp(result: RampDiagnostics) -> None:
             f"{fmt_float(row.gap):>12s} "
             f"{fmt_float(row.target_ground_overlap):>12s} "
             f"{resource.best_bell_overlap:10.6f} "
-            f"{resource.best_bell_label:>5s} "
+            f"{'/'.join(resource.best_bell_labels):>14s} "
             f"{resource.best_frame_avg_fidelity:10.6f} "
             f"{resource.logical_chsh:10.6f} "
             f"{resource.negativity:10.6f} "
-            f"{fmt_float(row.max_excited_adiabatic):>12s} "
+            f"{fmt_float(row.max_block_adiabatic):>12s} "
             f"{fmt_float(row.norm_bound_adiabatic):>12s}"
         )
     min_gap = result.min_gap_step
-    max_exact = result.max_exact_step
+    max_block = result.max_block_step
     max_norm = result.max_norm_step
     print(
         "  path summary: "
         f"min gap={fmt_float(min_gap.gap)} at s={min_gap.s:.3f}; "
         f"target gap={fmt_float(result.target_gap)}; "
-        f"max exact A={fmt_float(max_exact.max_excited_adiabatic)} at s={max_exact.s:.3f}; "
+        "max invariant block A="
+        f"{fmt_float(max_block.max_block_adiabatic)} at s={max_block.s:.3f} "
+        f"(levels {max_block.dominant_level_start}-{max_block.dominant_level_end}, "
+        f"gap={fmt_float(max_block.dominant_gap)}, "
+        f"coupling_norm={fmt_float(max_block.dominant_coupling)}); "
         f"max ||dH||/gap^2={fmt_float(max_norm.norm_bound_adiabatic)} at s={max_norm.s:.3f}"
     )
     print_resource("  endpoint resource: ", result.final_step.resource)
@@ -967,7 +1040,10 @@ def main() -> int:
     schedule = SCHEDULES[args.schedule]
 
     print("TELEPORTATION 3D INITIAL-STATE AND RAMP PROBE")
-    print("Status: planning / first artifact; ordinary quantum state teleportation only")
+    print(
+        "Status: open finite diagnostic; intended audit claim type open_gate; "
+        "ordinary quantum state teleportation only"
+    )
     print(
         "Claim boundary: no matter, mass, charge, energy, object, or "
         "faster-than-light transport"
@@ -1001,8 +1077,18 @@ def main() -> int:
     )
     print_initial(initial, args.localization_fraction_threshold)
 
-    null_ramp = run_ramp_path(null_data, grid_points=args.grid_points, gap_floor=args.gap_floor)
-    target_ramp = run_ramp_path(target_data, grid_points=args.grid_points, gap_floor=args.gap_floor)
+    null_ramp = run_ramp_path(
+        null_data,
+        grid_points=args.grid_points,
+        gap_floor=args.gap_floor,
+        degeneracy_tolerance=args.degeneracy_tolerance,
+    )
+    target_ramp = run_ramp_path(
+        target_data,
+        grid_points=args.grid_points,
+        gap_floor=args.gap_floor,
+        degeneracy_tolerance=args.degeneracy_tolerance,
+    )
     print_ramp(null_ramp)
     print_ramp(target_ramp)
 
@@ -1059,12 +1145,28 @@ def main() -> int:
     )
     print(f"  resource-candidate checks passed: {'YES' if target_candidate else 'NO'}")
     print(f"  preparation verdict: {verdict}")
+    closure_checks = {
+        "G=0 Bell tie disclosed": frozenset(initial.resource.best_bell_labels)
+        == frozenset(("Phi+", "Psi+")),
+        "G=0 native-basis delocalization": abs(initial.supports[1].participation_fraction - 1.0)
+        <= 1e-10,
+        "null control": null_clean,
+        "Poisson endpoint and finite-time resource": target_candidate,
+        "Poisson Bell frame unique": target_ramp.final_step.resource.best_bell_labels
+        == ("Psi+",)
+        and target_evolution.resource.best_bell_labels == ("Psi+",),
+        "degenerate-block diagnostic used": target_ramp.max_block_step.dominant_level_end
+        > target_ramp.max_block_step.dominant_level_start,
+    }
+    print("  closure checks:")
+    for label, passed in closure_checks.items():
+        print(f"    {'PASS' if passed else 'FAIL'}: {label}")
     print(
         "  Interpretation: side=2 exact 3D pressure test only. A favorable "
         "Bell-frame resource on this lattice does not prove scalable "
         "preparation, robustness, readout, or any non-teleportation transport claim."
     )
-    return 0
+    return 0 if all(closure_checks.values()) else 1
 
 
 if __name__ == "__main__":

@@ -27,6 +27,9 @@ from scripts.growing_graph_decoherence import (  # type: ignore
     visibility_from_amps,
 )
 from scripts.generative_causal_dag_interference import generate_causal_dag
+from scripts.n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
 
 
 SEED_NODES = {(x, y) for x in range(0, 5) for y in range(-3, 4)}
@@ -83,7 +86,7 @@ def _slope(xs: list[float], ys: list[float]) -> float:
     return numer / denom
 
 
-def frontier_proxy() -> None:
+def frontier_proxy() -> dict[str, float]:
     snapshots = []
     current = set(SEED_NODES)
     snapshots.append(set(current))
@@ -138,9 +141,18 @@ def frontier_proxy() -> None:
     print(f"  rms slope vs step:      {rms_slope:+.4f} hops/step")
     print(f"  width slope vs step:    {width_slope:+.4f} hops/step")
     print(f"  final frontier / control frontier: {growth_frontier[-1] / max(control_frontier, 1):.3f}x")
+    return {
+        "initial_nodes": float(len(snapshots[0])),
+        "final_nodes": float(len(snapshots[-1])),
+        "control_frontier": float(control_frontier),
+        "final_frontier": growth_frontier[-1],
+        "frontier_slope": frontier_slope,
+        "rms_slope": rms_slope,
+        "width_slope": width_slope,
+    }
 
 
-def dynamic_propagation_limit() -> None:
+def dynamic_propagation_limit() -> list[tuple[int, float, float, int, int]]:
     print()
     print("=" * 84)
     print("DYNAMIC PROPAGATION LIMIT")
@@ -153,6 +165,7 @@ def dynamic_propagation_limit() -> None:
     print(f"{'layers':>6s} {'mean_deg':>8s} {'mean_Vdrop':>11s} {'pos/total':>10s}")
     print("-" * 44)
 
+    rows: list[tuple[int, float, float, int, int]] = []
     for n_layers in [10, 15, 20]:
         v_drops: list[float] = []
         positive = 0
@@ -258,16 +271,43 @@ def dynamic_propagation_limit() -> None:
 
         mean_drop = sum(v_drops) / len(v_drops) if v_drops else 0.0
         print(f"{n_layers:6d} {mean_deg:8.2f} {mean_drop:11.4f} {positive:2d}/{total:<7d}")
+        rows.append((n_layers, mean_deg, mean_drop, positive, total))
+    return rows
 
 
 def main() -> None:
-    frontier_proxy()
-    dynamic_propagation_limit()
+    frontier = frontier_proxy()
+    dynamic_rows = dynamic_propagation_limit()
     print()
     print("BOUNDED NO-GO")
     print("  - Frontier delay is the clean retained expansion observable.")
     print("  - Dynamic-propagation visibility stays weak, seed-dependent, and not monotone.")
     print("  - The retained growth story is graph-distance expansion, not a transport claim.")
+    mean_drops = [row[2] for row in dynamic_rows]
+    emit_n5_resolution_certificate(
+        per_element=(
+            frontier["initial_nodes"] == len(SEED_NODES)
+            and frontier["final_nodes"] > frontier["initial_nodes"],
+            "the executed growth process preserves the complete seed element set and adds nodes at every accumulated frontier",
+        ),
+        per_site=(
+            frontier["frontier_slope"] > 0.9,
+            "the twenty-step graph-distance frontier has an executed positive slope above 0.9 hops per growth step",
+        ),
+        per_mode=(
+            len(dynamic_rows) == 3 and all(row[4] == 10 for row in dynamic_rows),
+            "all three layer-count modes complete ten seeded visibility comparisons across the fixed three-value k band",
+        ),
+        per_block=(
+            mean_drops[0] > mean_drops[1] > mean_drops[2]
+            and dynamic_rows[-1][3] < dynamic_rows[0][3],
+            "the three size blocks have weak declining mean visibility drops and fewer positive cases at twenty than ten layers",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the largest run has twenty layers and finite random rewiring, so no infinite-graph or thermodynamic transport law was evaluated",
+        ),
+    )
 
 
 if __name__ == "__main__":

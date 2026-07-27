@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/complex_action_harness.py
-runner_sha256: 6d43dfc3283ec85bdeb14fee2e21a8e7afb651f8556697710e51fe6bccc8c50e
+runner_sha256: 598a5616eb25aaff0297044a0256acd425bcea1018561a8f941382939f6abf37
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 84.93
+elapsed_sec: 61.87
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -28,11 +29,11 @@ h=0.5, W=6, L=30, s=0.1, z_src=3.0
 
 BORN TEST (|I3|/P with gravitational field)
   running gamma=0.0...
-  gamma=0.0: |I3|/P = 2.41e-15
+  gamma=0.0: |I3|/P = 2.38e-15
   running gamma=0.5...
-  gamma=0.5: |I3|/P = 3.94e-16
+  gamma=0.5: |I3|/P = 1.13e-15
   running gamma=1.0...
-  gamma=1.0: |I3|/P = 1.24e-16
+  gamma=1.0: |I3|/P = 1.03e-16
 
 REDUCTION CHECK
   standard propagator delta: +9.339748e-02
@@ -53,6 +54,11 @@ SAFE READ
   escape < 1 means net absorption in this packet, not horizon physics
   escape > 1 means net amplification in this packet
   no gamma law, horizon observable, or unification theorem is derived here
+per_element: PASS | the executed gamma=0 complex-action propagation matches the standard valley-linear deflection element to 1e-12
+per_site: PASS | every detector-site aggregate in the ten-row gamma sweep has finite deflection and finite escape probability
+per_mode: PASS | all three executed gravitational-field Born modes have normalized third-order interference below 1e-9
+per_block: PASS | the live run completed all ten gamma blocks and all four source-strength blocks without dropping a configured case
+lattice_wide: PASS | the complete finite lattice sweep exhibits distinct gamma-dependent outcomes, so the runner supplies no lattice-wide gamma selector or horizon theorem
 
 ----- stderr -----
 

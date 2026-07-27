@@ -36,6 +36,9 @@ from pathlib import Path
 # Static import is intentional: the audit packet builder discovers helper
 # runner paths from the primary runner's import graph.
 import lensing_long_path_test as long_path_test
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -205,8 +208,10 @@ def main():
 
     print(f"{'model':<28s} {'slope':>10s} {'R²':>8s} {'|Δ slope|':>10s}")
     s_meas, r_meas = slope_loglog(bs, [models['measured H=0.25'][b] for b in bs])
+    slope_rows: dict[str, tuple[float, float]] = {}
     for label, vals in models.items():
         s, r2 = slope_loglog(bs, [vals[b] for b in bs])
+        slope_rows[label] = (s, r2)
         ds = abs(s - s_meas)
         delta = "—" if label == "measured H=0.25" else f"{ds:.4f}"
         print(f"{label:<28s} {s:+10.4f} {r2:8.4f} {delta:>10s}")
@@ -238,6 +243,29 @@ def main():
     print("angle integral over a centered interaction segment.")
     packet_ok = _check_long_path_packet()
     print(f"ASSERTIONS: {'PASS' if packet_ok else 'FAIL'}")
+    emit_n5_resolution_certificate(
+        per_element=(
+            all(math.isfinite(value) and value > 0 for values in models.values() for value in values.values()),
+            "all twenty executed impact-parameter model elements are finite and positive on b=3,4,5,6",
+        ),
+        per_site=(
+            x_src > 0.0 and x_det > x_src,
+            "the executed finite path places the source strictly inside the detector path from zero to x_det",
+        ),
+        per_mode=(
+            len(slope_rows) == len(models)
+            and all(math.isfinite(slope) and math.isfinite(r2) for slope, r2 in slope_rows.values()),
+            "all five measured and analytical modes yield finite log-log slopes and fit coefficients",
+        ),
+        per_block=(
+            packet_ok,
+            "the source-SHA-bound long-path companion packet passes and records the retained fine-lane and analytical slope mismatch",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — only finite source-to-detector paths and four impact parameters were compared, with no lattice-family centroid bridge",
+        ),
+    )
     if not packet_ok:
         raise SystemExit(1)
 

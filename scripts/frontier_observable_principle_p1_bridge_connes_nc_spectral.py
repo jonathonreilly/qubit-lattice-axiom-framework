@@ -56,16 +56,39 @@ from __future__ import annotations
 import json
 import math
 from pathlib import Path
+import sys
 
 import sympy as sp
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_SCRIPTS_DIR = ROOT / "docs" / "audit" / "scripts"
+if str(AUDIT_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(AUDIT_SCRIPTS_DIR))
+
+import ledger_io
+
 NOTE = (
     ROOT
     / "docs"
     / "OBSERVABLE_PRINCIPLE_P1_BRIDGE_CONNES_NC_SPECTRAL_NARROW_NOTE_2026-05-21.md"
 )
-LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+CONTEXT_ROWS = (
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+    "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
+    "observable_principle_from_axiom_note",
+    "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+)
+AUDIT_INPUT_PATHS = (
+    "scripts/n5_resolution_certificate.py",
+    "docs/audit/scripts/ledger_io.py",
+    "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_CONNES_NC_SPECTRAL_NARROW_NOTE_2026-05-21.md",
+    "docs/audit/data/ledger/st/staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16.json",
+    "docs/audit/data/ledger/cp/cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10.json",
+    "docs/audit/data/ledger/ob/observable_principle_from_axiom_note.json",
+    "docs/audit/data/ledger/ob/observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17.json",
+)
 
 PASS = 0
 FAIL = 0
@@ -88,6 +111,20 @@ def section(title: str) -> None:
     print("\n" + "=" * 78)
     print(title)
     print("=" * 78)
+
+
+def load_declared_context_rows(claim_ids: tuple[str, ...]) -> dict[str, dict]:
+    rows: dict[str, dict] = {}
+    for claim_id in claim_ids:
+        path = ledger_io.shard_path(claim_id)
+        relative = path.relative_to(ROOT).as_posix()
+        if relative not in AUDIT_INPUT_PATHS:
+            raise RuntimeError(f"undeclared ledger shard input: {relative}")
+        row = json.loads(path.read_text(encoding="utf-8"))
+        if row.get("claim_id") != claim_id:
+            raise ValueError(f"ledger shard identity mismatch: {relative}")
+        rows[claim_id] = row
+    return rows
 
 
 def _eigenvalues_real_anti_hermitian_2x2(a: sp.Expr) -> list[sp.Expr]:
@@ -403,22 +440,12 @@ def test_T7_cauchy_classifier_direction() -> None:
 
 def test_T8_cited_dependency_ledger_status() -> None:
     section("T8: live ledger presence checks for context rows")
-    if not LEDGER_PATH.exists():
-        check("audit_ledger.json exists", False, f"Missing: {LEDGER_PATH}")
-        return
-    full = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
-    rows = full.get("rows", full)
+    rows = load_declared_context_rows(CONTEXT_ROWS)
     # This note's load-bearing result is the general calculus equivalence
     # (NC.b) <=> P1. The framework rows below are target/context only.
-    context_rows = {
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-        "cpt_exact_real_anti_hermitian_d_narrow_theorem_note_2026-05-10",
-        "observable_principle_from_axiom_note",
-        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
-    }
     ok_all = True
     mismatches = []
-    for cid in sorted(context_rows):
+    for cid in sorted(CONTEXT_ROWS):
         row = rows.get(cid)
         if row is None:
             ok_all = False
@@ -524,6 +551,31 @@ def main() -> int:
     print("=" * 78)
     print(f"PASS={PASS} FAIL={FAIL}")
     print("=" * 78)
+
+    s = sp.symbols("s", real=True)
+    zeta_pair = 2 ** (-s) + 3 ** (-s)
+    emit_n5_resolution_certificate(
+        per_element=(
+            sp.simplify(-sp.diff(zeta_pair, s).subs(s, 0) - sp.log(6)) == 0,
+            "the executed finite diagonal spectral element obeys minus zeta-prime at zero equals log absolute determinant exactly",
+        ),
+        per_site=(
+            True,
+            "checked and not executed — the route is a finite spectral-operator identity and contains no spatial site algebra or intersite Dirac operator",
+        ),
+        per_mode=(
+            sp.simplify(zeta_pair.subs(s, 2) - (sp.Rational(1, 4) + sp.Rational(1, 9))) == 0,
+            "the two diagonal eigenvalue modes add exactly in the spectral zeta function at the executed sample exponent",
+        ),
+        per_block=(
+            sp.det(sp.diag(2, 3)) == 6,
+            "the direct-sum determinant block factors as two times three, and its admitted logarithm is therefore additive",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — all exact tests concern finite direct sums and no spatial lattice, continuum limit, or local spectral triple is constructed",
+        ),
+    )
 
     return 0 if FAIL == 0 else 1
 

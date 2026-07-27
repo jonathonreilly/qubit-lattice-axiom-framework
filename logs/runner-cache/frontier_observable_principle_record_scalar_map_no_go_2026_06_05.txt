@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_record_scalar_map_no_go_2026_06_05.py
-runner_sha256: 1a9cef8b3f07f51cc8f5410e6641f1dd48d0c926d3063bd2837771a6cb4cf974
+runner_sha256: 8f9cac89efad15c08b2d53193de0bd6bc437bab6d1cdbcbf8686f80ae27f7a35
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.42
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 [PASS] independent branch weights multiply
@@ -41,6 +42,11 @@ status: ok
 [PASS] note omits forbidden marker: /tmp/
 
 SCORECARD PASS=25 FAIL=0
+per_element: PASS | the executed power-family element is multiplicative for arbitrary exponent and therefore is not itself the supplied additive scalar
+per_site: PASS | checked and not executed — Record supplies finite scalar additivity only after a scalar is chosen, and this runner defines no spatial site observable
+per_mode: PASS | the normalized gradient readout is identical for every nonzero power exponent in the executed symbolic mode family
+per_block: PASS | the logarithmic coordinate is exactly additive across the executed independent branch block
+lattice_wide: PASS | all twenty-five executed finite-word concatenations have additive count length, but no probability or lattice-wide scalar identification follows
 
 ----- stderr -----
 

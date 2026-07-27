@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_delta_residual_cohomology_obstruction_no_go.py
-runner_sha256: c75c02ef66e9e200f7743b1c855898298817a1d8dee8d3065a3bde9200c2257c
+runner_sha256: 2e644d64f6b29feca8e3ae3d317b32ce3a183d98ca921eb080ff92ec304451dc
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.60
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 
@@ -82,6 +83,11 @@ PASSED: 15/15
   [PASS] D.1 cohomology obstruction is value-independent
   [PASS] D.2 the theorem does not promote no-go data as closure
   [PASS] D.3 positive closure is reduced to a section theorem
+per_element: PASS | the executed Q trace projection has the displayed nonzero source-label generator in its exact kernel
+per_site: PASS | every executed residual representative preserves the retained closed total while leaving a nonzero Q or delta obstruction
+per_mode: PASS | the symbolic Q section mode remains valid for every free section_parameter, so exactness supplies no unique zero section
+per_block: PASS | the complete three-coordinate delta block admits a two-parameter family of exact sections with unfixed spectator and endpoint kernels
+lattice_wide: PASS | checked and not executed — the obstruction exhausts finite residual-coordinate fibres and exact sequences rather than a spatial lattice construction
 
 VERDICT: retained exact-sequence/cohomology data do not close the Koide lane.
 KOIDE_Q_DELTA_RESIDUAL_COHOMOLOGY_OBSTRUCTION_NO_GO=TRUE

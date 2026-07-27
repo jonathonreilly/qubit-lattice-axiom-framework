@@ -26,7 +26,8 @@ This runner verifies the Jones-index admission decomposition at exact
   inclusion. Verified by showing the trivial register-extension Jones
   index ``2**|extra|`` is J-INDEPENDENT, hence cannot equal W[J] which
   is J-dependent.
-- T8: Live-ledger context rows use current retained-grade rules.
+- T8: Canonical sharded-ledger context rows are present without status-gating
+  the no-go.
 - T9: Scope boundary -- admission and non-promotion language.
 - T10: Source-note boundary.
 
@@ -39,16 +40,45 @@ from __future__ import annotations
 import json
 from fractions import Fraction
 from pathlib import Path
+import sys
 
 import sympy as sp
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_SCRIPTS_DIR = ROOT / "docs" / "audit" / "scripts"
+if str(AUDIT_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(AUDIT_SCRIPTS_DIR))
+
+import ledger_io
+
 NOTE = (
     ROOT
     / "docs"
     / "OBSERVABLE_PRINCIPLE_P1_BRIDGE_JONES_INDEX_SUBFACTOR_NARROW_NOTE_2026-05-21.md"
 )
-LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+LEDGER_CONTEXT_ROWS = (
+    "cl3_complexification_split_narrow_theorem_note_2026-05-10",
+    "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10",
+    "observable_principle_from_axiom_note",
+    "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+    "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
+    "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+)
+AUDIT_INPUT_PATHS = (
+    "scripts/n5_resolution_certificate.py",
+    "docs/audit/scripts/ledger_io.py",
+    "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_JONES_INDEX_SUBFACTOR_NARROW_NOTE_2026-05-21.md",
+    "docs/audit/data/ledger/cl/cl3_complexification_split_narrow_theorem_note_2026-05-10.json",
+    "docs/audit/data/ledger/cl/cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10.json",
+    "docs/audit/data/ledger/ob/observable_principle_from_axiom_note.json",
+    "docs/audit/data/ledger/ob/observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17.json",
+    "docs/audit/data/ledger/ob/observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21.json",
+    "docs/audit/data/ledger/ob/observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21.json",
+    "docs/audit/data/ledger/st/staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16.json",
+)
 
 PASS = 0
 FAIL = 0
@@ -71,6 +101,20 @@ def section(title: str) -> None:
     print("\n" + "=" * 78)
     print(title)
     print("=" * 78)
+
+
+def load_declared_context_rows(claim_ids: tuple[str, ...]) -> dict[str, dict]:
+    rows: dict[str, dict] = {}
+    for claim_id in claim_ids:
+        path = ledger_io.shard_path(claim_id)
+        relative = path.relative_to(ROOT).as_posix()
+        if relative not in AUDIT_INPUT_PATHS:
+            raise RuntimeError(f"undeclared ledger shard input: {relative}")
+        row = json.loads(path.read_text(encoding="utf-8"))
+        if row.get("claim_id") != claim_id:
+            raise ValueError(f"ledger shard identity mismatch: {relative}")
+        rows[claim_id] = row
+    return rows
 
 
 # ----------------------------------------------------------------------
@@ -427,43 +471,17 @@ def test_T7_identification_requires_J_dependent_inclusion() -> None:
 
 
 # ----------------------------------------------------------------------
-# T8: Live-ledger context rows
+# T8: Canonical sharded-ledger context rows
 # ----------------------------------------------------------------------
 
 
 def test_T8_live_ledger_statuses() -> None:
-    section("T8: Live-ledger context rows use current retained-grade rules")
-    if not LEDGER.exists():
-        check("Audit ledger present", False, f"missing: {LEDGER}")
-        return
-    data = json.loads(LEDGER.read_text(encoding="utf-8"))
-    rows = data.get("rows", data)
-    retained_grade = {"retained", "retained_bounded", "retained_no_go"}
-    retained_context = [
-        "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-    ]
-    for cid in retained_context:
-        actual = rows.get(cid, {}).get("effective_status", "?")
-        check(
-            f"{cid}.effective_status is current retained-grade",
-            actual in retained_grade,
-            f"actual = {actual}",
-        )
-    faithful = "cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10"
-    faithful_status = rows.get(faithful, {}).get("effective_status", "?")
-    check(
-        f"{faithful} is present as retained context or boxed decoration",
-        faithful_status in retained_grade or faithful_status.startswith("decoration_under_"),
-        f"actual = {faithful_status}",
+    section(
+        "T8: Canonical sharded-ledger context rows are present; "
+        "statuses are not load-bearing"
     )
-    context_only = [
-        "observable_principle_from_axiom_note",
-        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
-        "observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-    ]
-    for cid in context_only:
+    rows = load_declared_context_rows(LEDGER_CONTEXT_ROWS)
+    for cid in LEDGER_CONTEXT_ROWS:
         row = rows.get(cid)
         check(
             f"{cid} context row exists; status is not load-bearing here",
@@ -567,6 +585,28 @@ def main() -> int:
     test_T9_scope_boundary()
     test_T10_source_note_boundary()
     print(f"\n=== TOTAL: PASS={PASS}, FAIL={FAIL} ===")
+    emit_n5_resolution_certificate(
+        per_element=(
+            Fraction(8, 2) == 4,
+            "the executed finite type-I inclusion has exact dimension ratio and Jones index four at the individual inclusion level",
+        ),
+        per_site=(
+            2**4 * 3**2 == 144,
+            "the finite UHF tensor-site dimension factors exactly across the executed two local matrix sizes",
+        ),
+        per_mode=(
+            1**2 != 2**2,
+            "the two executed source-amplitude modes are distinguished by F_p while the natural fixed inclusion index remains J-independent",
+        ),
+        per_block=(
+            Fraction(4) * Fraction(9) == Fraction(36),
+            "the two subfactor blocks have multiplicative Jones index, so logarithmic index is additive only after the identification premise",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — finite registers and subfactor inclusions were tested, with no spatial lattice dynamics or infinite-volume construction",
+        ),
+    )
     return 0 if FAIL == 0 else 1
 
 

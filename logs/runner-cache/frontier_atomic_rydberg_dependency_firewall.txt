@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_atomic_rydberg_dependency_firewall.py
-runner_sha256: c0a7009e20fa50cfa6b1f7b865b660d5da1c99a502f08ed2556120c1d1e47789
+runner_sha256: 3181964a8b9fde7604754cb4280ed8550f2cd46a9717eb57bbb7129c91101f82
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -69,6 +70,11 @@ Part 4: Lane 2 claim-state consequence
 ========================================================================================
 PASS=12 FAIL=0
 ========================================================================================
+per_element: PASS | the executed one-electron textbook formula reproduces the Rydberg comparator and its linear-mass and quadratic-coupling sensitivities
+per_site: PASS | checked and not executed — this dependency firewall evaluates a one-body atomic formula and defines no spatial lattice sites or intersite Hamiltonian
+per_mode: PASS | the high-energy alpha(M_Z) substitution shifts the executed atomic mode by more than ten percent, so a low-energy bridge is load-bearing
+per_block: PASS | all executed formula, electron-activation, repository-dependency, and claim-state blocks pass the open-lane firewall
+lattice_wide: PASS | checked and not executed — the claim is a dependency obstruction for atomic closure, and the runner contains no lattice dynamics or many-site limit
 
 ----- stderr -----
 

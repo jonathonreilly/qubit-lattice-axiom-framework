@@ -22,6 +22,9 @@ import numpy as np
 import sympy as sp
 
 import frontier_planck_primitive_clifford_majorana_edge_derivation as conditional_helper
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
 
 
 PASS_BLOCKS = 0
@@ -466,6 +469,28 @@ def main() -> int:
 
     print()
     print(f"Summary: PASS={PASS_BLOCKS}  FAIL={FAIL_BLOCKS}")
+    emit_n5_resolution_certificate(
+        per_element=(
+            rank == 16 and nullity == 0,
+            "the exact simultaneous-intertwiner system has full rank sixteen and zero-dimensional kernel elementwise",
+        ),
+        per_site=(
+            np.linalg.matrix_rank(p_one) == 4,
+            "the executed sixteen-state event cell restricts to the four-dimensional one-form active site P_A",
+        ),
+        per_mode=(
+            native_algebra_dim == 8 and native_commutant == 8,
+            "the retained native cubic Clifford modes generate an eight-dimensional algebra with unresolved eight-dimensional commutant",
+        ),
+        per_block=(
+            joint_algebra_dim == 64 and joint_commutant == 4 and joint_center == 1,
+            "the smallest joint Clifford-plus-substrate block is the full M_8 algebra with the executed commutant and center dimensions",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the descent obstruction exhausts one event cell and finite taste realization but defines no intercell lattice dynamics",
+        ),
+    )
     if FAIL_BLOCKS:
         return 1
     print()

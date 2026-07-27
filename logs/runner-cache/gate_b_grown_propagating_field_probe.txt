@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_grown_propagating_field_probe.py
-runner_sha256: 89e45b6931dbb093ac5ba6004a2c33f7e27733693c0da47305e229166b4a646c
+runner_sha256: 430b937f8a20e17fbf29f552340b40cc781ecfef185a419eb4c55131b6353025
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 89.19
+elapsed_sec: 36.59
 status: ok
 ----- stdout -----
 ====================================================================================================
@@ -31,8 +32,13 @@ SAFE READ
   gamma = 0 recovers the retained grown baseline exactly by construction.
   finite gamma does not generate a coherent detector-line phase ramp on this retained grown row, and the escape ratio stays at 1.000 to three decimals.
   this is therefore a bounded no-go for this minimal retarded-like field state on the retained grown geometry row.
+per_element: PASS | the gamma=0 causal-field value equals the static-field element for every executed seed at tolerance 1e-12
+per_site: PASS | the gamma=0 propagated amplitude agrees at every executed graph site with the retained static baseline
+per_mode: PASS | all fifteen seed-by-gamma propagation modes return finite escape, deflection, slope, fit, and phase-span observables
+per_block: PASS | every finite-gamma block has sub-0.01 mean detector phase span and sub-0.2 mean ramp-fit R2 on the retained grown row
+lattice_wide: PASS | checked and not executed — only three seeds on one retained grown geometry row were run, so no graph-family or continuum-wide field law is claimed
 
-Total time: 89s
+Total time: 37s
 
 ----- stderr -----
 

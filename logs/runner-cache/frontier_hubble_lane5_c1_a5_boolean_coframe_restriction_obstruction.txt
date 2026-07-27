@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_c1_a5_boolean_coframe_restriction_obstruction.py
-runner_sha256: e387e9ea021646c89c6a06259714fa1e0f944075013304aed25fe280fab34496
+runner_sha256: 222f9fe767481bffb8cfcbf1d5fcce714d15f554597a7d201c870d8e0ec05f9d
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -20,6 +21,11 @@ Lane 5 (C1) A5 Boolean-coframe restriction obstruction verifier
 [PASS] a5_exposes_active_block_response_import: Need an intrinsic active-block coframe law, quotient/bilinear theorem, or explicit carrier premise.
 ------------------------------------------------------------------------------
 TOTAL: PASS=9, FAIL=0
+per_element: PASS | the four executed full-cell Boolean Jordan-Wigner generators satisfy the Cl_4 relations on every basis element
+per_site: PASS | each natural odd generator leaks all four weight-one basis states outside the active P_A event-cell subspace
+per_mode: PASS | direct compression annihilates every odd-generator mode while full occupation parity restricts to a scalar on P_A
+per_block: PASS | the restricted block has only scalar span, whereas a separate intrinsic active-block Cl_4 realization spans all sixteen matrices
+lattice_wide: PASS | checked and not executed — this obstruction is scoped to one sixteen-state Boolean event cell and defines no intercell transport or extended lattice
 Conclusion: P_A H_cell does not inherit the natural full-cell odd Boolean/Jordan-Wigner coframe response by restriction. The active Cl_4/CAR response must be derived intrinsically or kept conditional.
 
 ----- stderr -----

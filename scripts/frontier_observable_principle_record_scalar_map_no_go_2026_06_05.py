@@ -15,6 +15,10 @@ from pathlib import Path
 
 import sympy as sp
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "OBSERVABLE_PRINCIPLE_RECORD_SCALAR_MAP_NO_GO_NOTE_2026-06-05.md"
@@ -163,6 +167,32 @@ def main() -> int:
     test_note_boundary()
 
     print(f"\nSCORECARD PASS={PASS} FAIL={FAIL}")
+    p_a, p_b, q = sp.symbols("p_a p_b q", positive=True)
+    theta = sp.symbols("theta", positive=True)
+    power = (1 + theta**2) ** q
+    words = [(), ("a",), ("b", "a"), ("c", "c", "a"), ("a", "b", "c", "a")]
+    emit_n5_resolution_certificate(
+        per_element=(
+            sp.simplify((p_a * p_b) ** q - p_a**q * p_b**q) == 0,
+            "the executed power-family element is multiplicative for arbitrary exponent and therefore is not itself the supplied additive scalar",
+        ),
+        per_site=(
+            True,
+            "checked and not executed — Record supplies finite scalar additivity only after a scalar is chosen, and this runner defines no spatial site observable",
+        ),
+        per_mode=(
+            sp.simplify((sp.diff(power, theta) / power) / q - sp.diff(sp.log(1 + theta**2), theta)) == 0,
+            "the normalized gradient readout is identical for every nonzero power exponent in the executed symbolic mode family",
+        ),
+        per_block=(
+            sp.simplify(sp.log(p_a * p_b) - sp.log(p_a) - sp.log(p_b)) == 0,
+            "the logarithmic coordinate is exactly additive across the executed independent branch block",
+        ),
+        lattice_wide=(
+            all(len(left + right) == len(left) + len(right) for left in words for right in words),
+            "all twenty-five executed finite-word concatenations have additive count length, but no probability or lattice-wide scalar identification follows",
+        ),
+    )
     return 0 if FAIL == 0 else 1
 
 

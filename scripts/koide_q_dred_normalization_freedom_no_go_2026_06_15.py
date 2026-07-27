@@ -13,6 +13,10 @@ from pathlib import Path
 
 import sympy as sp
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 PASS = 0
 FAIL = 0
 
@@ -101,6 +105,30 @@ def main() -> int:
     print("\n" + "=" * 72)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print("=" * 72)
+    emit_n5_resolution_certificate(
+        per_element=(
+            pi_plus * pi_perp == sp.zeros(2) and pi_plus + pi_perp == i2,
+            "the two executed reduced-carrier projectors are exactly orthogonal and resolve the identity element",
+        ),
+        per_site=(
+            True,
+            "checked and not executed — the reduced determinant carrier has two internal slots but no spatial site coordinate or intersite coupling",
+        ),
+        per_mode=(
+            sp.simplify(sp.exp(normalized - target) - 1) == 0,
+            "the full positive-c normalization mode family reduces to the same dimensionless law after source-coordinate rescaling",
+        ),
+        per_block=(
+            deriv_plus == deriv_perp == 1 / c
+            and k_plus_star == 1 / y1 - c
+            and k_perp_star == 1 / y2 - c,
+            "both source derivatives and both Legendre-dual stationary blocks retain the arbitrary normalization scale c",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the exact c-family obstruction is finite reduced-block algebra and defines no lattice-wide normalization response",
+        ),
+    )
     return 0 if FAIL == 0 else 1
 
 

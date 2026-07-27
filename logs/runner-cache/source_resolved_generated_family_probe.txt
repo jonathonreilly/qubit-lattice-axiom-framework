@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/source_resolved_generated_family_probe.py
-runner_sha256: 74e2b5a7a7f3952e19b0ea6450e7446441e7b08c2324e9536875d506e9fcdd40
+runner_sha256: dfe22e36ca0949cc5693bafb5e5f18c72ba8266903d73cbde56f24156981278c
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.06
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ====================================================================================
@@ -38,6 +39,11 @@ SAFE READ
   mean |green/inst| ratio: 1.291
   this is a generated-family transfer test, not yet a full self-consistent
   field sector
+per_element: PASS | the zero-source Green-kernel element reduces exactly to free propagation for every executed generated-family seed
+per_site: PASS | each executed DAG contains one source site followed by all fifteen configured twenty-four-site generated layers
+per_mode: PASS | all four executed source-strength modes produce the wrong AWAY sign rather than the required TOWARD response
+per_block: PASS | both instantaneous and Green-kernel strength-scaling blocks are far from the required linear exponent
+lattice_wide: PASS | checked and not executed — four compact generated DAGs were tested, not a self-consistent field sector or an unbounded generated-geometry family
 
 ----- stderr -----
 

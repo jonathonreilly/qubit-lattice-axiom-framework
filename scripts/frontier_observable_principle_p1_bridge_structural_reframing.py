@@ -57,16 +57,43 @@ from fractions import Fraction
 from itertools import combinations
 from math import factorial
 from pathlib import Path
+import sys
 
 import sympy as sp
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_SCRIPTS_DIR = ROOT / "docs" / "audit" / "scripts"
+if str(AUDIT_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(AUDIT_SCRIPTS_DIR))
+
+import ledger_io
+
 NOTE = (
     ROOT
     / "docs"
     / "OBSERVABLE_PRINCIPLE_P1_BRIDGE_STRUCTURAL_REFRAMING_NARROW_NOTE_2026-05-21.md"
 )
-LEDGER_PATH = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+CONTEXT_ROWS = (
+    "observable_principle_from_axiom_note",
+    "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
+    "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21",
+    "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
+    "cpt_exact_note",
+    "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
+)
+AUDIT_INPUT_PATHS = (
+    "scripts/n5_resolution_certificate.py",
+    "docs/audit/scripts/ledger_io.py",
+    "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_STRUCTURAL_REFRAMING_NARROW_NOTE_2026-05-21.md",
+    "docs/audit/data/ledger/ob/observable_principle_from_axiom_note.json",
+    "docs/audit/data/ledger/ob/observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17.json",
+    "docs/audit/data/ledger/ob/observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21.json",
+    "docs/audit/data/ledger/ob/observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21.json",
+    "docs/audit/data/ledger/cp/cpt_exact_note.json",
+    "docs/audit/data/ledger/st/staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16.json",
+)
 
 PASS = 0
 FAIL = 0
@@ -89,6 +116,20 @@ def section(title: str) -> None:
     print("\n" + "=" * 78)
     print(title)
     print("=" * 78)
+
+
+def load_declared_context_rows(claim_ids: tuple[str, ...]) -> dict[str, dict]:
+    rows: dict[str, dict] = {}
+    for claim_id in claim_ids:
+        path = ledger_io.shard_path(claim_id)
+        relative = path.relative_to(ROOT).as_posix()
+        if relative not in AUDIT_INPUT_PATHS:
+            raise RuntimeError(f"undeclared ledger shard input: {relative}")
+        row = json.loads(path.read_text(encoding="utf-8"))
+        if row.get("claim_id") != claim_id:
+            raise ValueError(f"ledger shard identity mismatch: {relative}")
+        rows[claim_id] = row
+    return rows
 
 
 # ----------------------------------------------------------------------
@@ -489,25 +530,13 @@ def test_T7_cauchy_classifier_PtoIIb() -> None:
 
 def test_T8_cited_dependency_ledger_status() -> None:
     section("T8: live ledger presence checks for context rows")
-    if not LEDGER_PATH.exists():
-        check("audit_ledger.json exists", False, f"Missing: {LEDGER_PATH}")
-        return
-    full = json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
-    rows = full.get("rows", full)
+    rows = load_declared_context_rows(CONTEXT_ROWS)
     # This note's load-bearing result is a single-variable formal-series
     # identity + an equivalence lemma. The framework rows below are
     # target/context only — their statuses do NOT gate the claim.
-    context_rows = {
-        "observable_principle_from_axiom_note",
-        "observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17",
-        "observable_principle_p1_bridge_free_cumulant_route_narrow_note_2026-05-21",
-        "observable_principle_p1_bridge_locality_of_source_derivatives_narrow_note_2026-05-21",
-        "cpt_exact_note",
-        "staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16",
-    }
     ok_all = True
     mismatches = []
-    for cid in sorted(context_rows):
+    for cid in sorted(CONTEXT_ROWS):
         row = rows.get(cid)
         if row is None:
             ok_all = False
@@ -616,6 +645,37 @@ def main() -> int:
     print("=" * 78)
     print(f"PASS={PASS} FAIL={FAIL}")
     print("=" * 78)
+
+    x, y = sp.symbols("x y", positive=True)
+    block_matrix = sp.diag(x, y)
+    cross_derivative = sp.diff(sp.diff(sp.log(x * y), x), y)
+    test_kappa = [Fraction(1), Fraction(2), Fraction(3), Fraction(5)]
+    test_moments = [
+        _bell_moment_from_cumulants(order, test_kappa)
+        for order in range(1, len(test_kappa) + 1)
+    ]
+    emit_n5_resolution_certificate(
+        per_element=(
+            sp.det(block_matrix) == x * y,
+            "the executed two-element block-diagonal determinant factors exactly into the product of its component determinants",
+        ),
+        per_site=(
+            cross_derivative == 0,
+            "the executed cross-block second derivative of the logarithmic generator vanishes exactly between the two independent coordinates",
+        ),
+        per_mode=(
+            _cumulants_from_moments(len(test_kappa), test_moments) == test_kappa,
+            "the Bell-Mobius moment-cumulant transforms round-trip exactly for one rational mode family through order four",
+        ),
+        per_block=(
+            sp.simplify(sp.log(x * y) - sp.log(x) - sp.log(y)) == 0,
+            "the admitted logarithmic coordinate is additive on the complete independent two-block product",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the structural reframing uses finite direct sums and formal cumulants, not a spatial lattice or thermodynamic limit",
+        ),
+    )
 
     return 0 if FAIL == 0 else 1
 

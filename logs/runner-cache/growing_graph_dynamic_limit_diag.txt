@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/growing_graph_dynamic_limit_diag.py
-runner_sha256: b977da52739fd8ff24559b38dbe56c9b9c03651d3e9daa9b9c4ec73e2d0560cb
+runner_sha256: 40e445c1cd2999d79c4ac5d7f986d61e07074f12702d726d2f7b20aba646bd6f
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.06
+elapsed_sec: 2.67
 status: ok
 ----- stdout -----
 ====================================================================================
@@ -65,6 +66,11 @@ BOUNDED NO-GO
   - Frontier delay is the clean retained expansion observable.
   - Dynamic-propagation visibility stays weak, seed-dependent, and not monotone.
   - The retained growth story is graph-distance expansion, not a transport claim.
+per_element: PASS | the executed growth process preserves the complete seed element set and adds nodes at every accumulated frontier
+per_site: PASS | the twenty-step graph-distance frontier has an executed positive slope above 0.9 hops per growth step
+per_mode: PASS | all three layer-count modes complete ten seeded visibility comparisons across the fixed three-value k band
+per_block: PASS | the three size blocks have weak declining mean visibility drops and fewer positive cases at twenty than ten layers
+lattice_wide: PASS | checked and not executed — the largest run has twenty layers and finite random rewiring, so no infinite-graph or thermodynamic transport law was evaluated
 
 ----- stderr -----
 

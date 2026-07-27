@@ -12,6 +12,10 @@ import sys
 
 import sympy as sp
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 PASSES: list[tuple[str, bool, str]] = []
 
@@ -220,6 +224,29 @@ def main() -> int:
     print(f"PASSED: {n_pass}/{n_total}")
     for name, ok, _ in PASSES:
         print(f"  [{'PASS' if ok else 'FAIL'}] {name}")
+
+    emit_n5_resolution_certificate(
+        per_element=(
+            q_pointed == sp.Rational(2, 3) and delta_pointed == sp.Rational(2, 9),
+            "the executed pointed-origin representative produces the exact dimensionless values Q=2/3 and delta=2/9",
+        ),
+        per_site=(
+            scalar_expectation == mu and q_counter != sp.Rational(2, 3),
+            "the source-fibre countermodel preserves the unpointed scalar expectation while moving the Q readout away from two thirds",
+        ),
+        per_mode=(
+            q_poly_ok and endpoint_poly_ok,
+            "both residual translation modes have only constant finite polynomial invariants and therefore cannot select an absolute origin",
+        ),
+        per_block=(
+            difference_invariant == 0 and affine_gluing_invariant == 0,
+            "endpoint differences and affine gluing remain invariant across the complete translated torsor block",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — this exhaustion theorem covers residual source and endpoint coordinate fibres, not a spatial lattice or thermodynamic family",
+        ),
+    )
 
     print()
     if n_pass == n_total:

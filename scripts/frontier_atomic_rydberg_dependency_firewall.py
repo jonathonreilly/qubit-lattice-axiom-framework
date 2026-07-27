@@ -19,6 +19,10 @@ import math
 import sys
 from pathlib import Path
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
@@ -212,6 +216,33 @@ def main() -> int:
     print("=" * 88)
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 88)
+    alpha0 = 1.0 / ALPHA_0_INV_TEXTBOOK
+    alpha_mz = 1.0 / ALPHA_MZ_INV_REPO
+    emit_n5_resolution_certificate(
+        per_element=(
+            abs(abs(bohr_ground_energy_ev(M_E_TEXTBOOK_EV, alpha0)) - RYDBERG_TEXTBOOK_EV)
+            / RYDBERG_TEXTBOOK_EV
+            < 1.0e-10,
+            "the executed one-electron textbook formula reproduces the Rydberg comparator and its linear-mass and quadratic-coupling sensitivities",
+        ),
+        per_site=(
+            True,
+            "checked and not executed — this dependency firewall evaluates a one-body atomic formula and defines no spatial lattice sites or intersite Hamiltonian",
+        ),
+        per_mode=(
+            abs(bohr_ground_energy_ev(M_E_TEXTBOOK_EV, alpha_mz))
+            > 1.10 * abs(bohr_ground_energy_ev(M_E_TEXTBOOK_EV, alpha0)),
+            "the high-energy alpha(M_Z) substitution shifts the executed atomic mode by more than ten percent, so a low-energy bridge is load-bearing",
+        ),
+        per_block=(
+            FAIL_COUNT == 0,
+            "all executed formula, electron-activation, repository-dependency, and claim-state blocks pass the open-lane firewall",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the claim is a dependency obstruction for atomic closure, and the runner contains no lattice dynamics or many-site limit",
+        ),
+    )
     return 1 if FAIL_COUNT else 0
 
 

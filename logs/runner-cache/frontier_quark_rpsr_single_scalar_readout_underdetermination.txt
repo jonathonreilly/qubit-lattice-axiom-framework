@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_rpsr_single_scalar_readout_underdetermination.py
-runner_sha256: 6392ff0a3d63c457c7ea6896dcfb73fb2eb65e02c725bf0f6cc9f06878c80828
+runner_sha256: a85d2199556ede70e5b1bc3e3e86b612c811553a02704f7283f86b4a62d08568
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -114,6 +115,11 @@ PASS: new note does not claim retained non-top masses
 Summary
 ------------------------------------------------------------------------
 TOTAL: PASS=80, FAIL=0
+per_element: PASS | the executed single scalar amplitude maps elementwise to the stated power-law ratio for the identity exponent choice
+per_site: PASS | checked and not executed — the RPSR input is one reduced scalar amplitude and the runner defines no spatial site index or intersite dynamics
+per_mode: PASS | all four executed exponent modes map the same scalar amplitude to distinct ordered ratio pairs
+per_block: PASS | all four synthetic target blocks are reconstructed exactly after supplying their own two exponent parameters
+lattice_wide: PASS | the complete executed typed-edge graph has no path from RPSR amplitude support to the physical up-type ratio pair
 VERDICT: exact RPSR scalar support remains underdetermined as a
 two-ratio up-type Yukawa readout without a new readout theorem.
 

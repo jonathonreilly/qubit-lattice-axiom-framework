@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_jones_index_subfactor.py
-runner_sha256: cd7db2414d6653be8c92ebfb57589c603195e81716bd10d56ec002196868666d
+runner_sha256: dea974945fbd08731ba75cd45efaf0ac1c10e17defbf566354566d7a5b8385f5
+input_fingerprint_sha256: 476b87d0ffd1abe76ebf15d6453b49f448bd760043122c24f8d7621bef2e2baf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 # Observable-principle P1 bridge Jones-index / subfactor runner
@@ -66,14 +67,14 @@ T7: Identification W[J] = log[A(D+J):A(D)] requires J-dependent inclusion
          No canonical J-dependent inclusion identified; admission of J-dependent inclusion = P1 selection
 
 ==============================================================================
-T8: Live-ledger context rows use current retained-grade rules
+T8: Canonical sharded-ledger context rows are present; statuses are not load-bearing
 ==============================================================================
-  [PASS] cl3_complexification_split_narrow_theorem_note_2026-05-10.effective_status is current retained-grade
-         actual = retained
-  [PASS] cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10 is present as retained context or boxed decoration
-         actual = decoration_under_cl3_complexification_split_narrow_theorem_note_2026-05-10
-  [PASS] observable_principle_from_axiom_note context row exists; status is not load-bearing here
+  [PASS] cl3_complexification_split_narrow_theorem_note_2026-05-10 context row exists; status is not load-bearing here
          effective_status = audited_conditional
+  [PASS] cl3_faithful_irrep_dim_two_narrow_theorem_note_2026-05-10 context row exists; status is not load-bearing here
+         effective_status = unaudited
+  [PASS] observable_principle_from_axiom_note context row exists; status is not load-bearing here
+         effective_status = unaudited
   [PASS] observable_principle_p1_bridge_route_d_sharpened_no_go_note_2026-05-17 context row exists; status is not load-bearing here
          effective_status = unaudited
   [PASS] observable_principle_p1_bridge_structural_reframing_narrow_note_2026-05-21 context row exists; status is not load-bearing here
@@ -81,7 +82,7 @@ T8: Live-ledger context rows use current retained-grade rules
   [PASS] observable_principle_p1_bridge_operator_algebraic_qubit_reattempt_narrow_note_2026-05-21 context row exists; status is not load-bearing here
          effective_status = unaudited
   [PASS] staggered_dirac_substep1_grassmann_forcing_bridge_narrow_theorem_note_2026-05-16 context row exists; status is not load-bearing here
-         effective_status = audited_conditional
+         effective_status = unaudited
 
 ==============================================================================
 T9: Scope boundary -- admission and non-promotion language
@@ -115,6 +116,11 @@ T10: Source-note boundary
          hits=[]
 
 === TOTAL: PASS=34, FAIL=0 ===
+per_element: PASS | the executed finite type-I inclusion has exact dimension ratio and Jones index four at the individual inclusion level
+per_site: PASS | the finite UHF tensor-site dimension factors exactly across the executed two local matrix sizes
+per_mode: PASS | the two executed source-amplitude modes are distinguished by F_p while the natural fixed inclusion index remains J-independent
+per_block: PASS | the two subfactor blocks have multiplicative Jones index, so logarithmic index is additive only after the identification premise
+lattice_wide: PASS | checked and not executed — finite registers and subfactor inclusions were tested, with no spatial lattice dynamics or infinite-volume construction
 
 ----- stderr -----
 

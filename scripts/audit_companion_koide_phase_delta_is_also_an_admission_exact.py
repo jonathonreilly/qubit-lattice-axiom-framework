@@ -17,6 +17,9 @@ to hold delta off the degenerate points is the CP-odd eta/theta-vacuum term -- O
 the modulus extrema), and GATED on the staggered-Dirac mass. No PDG values as derivation inputs.
 """
 import sympy as sp, numpy as np
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
 a, bmod, d = sp.symbols('a bmod delta', positive=True)
 R = []; chk = lambda l, o: R.append((l, bool(o)))
 lam = [a + 2*bmod*sp.cos(d + 2*sp.pi*k/3) for k in range(3)]
@@ -61,6 +64,28 @@ chk("(6) the CP-odd selector (eta/theta, ~sin(3delta)) is ODD in delta (vanishes
 P = sum(1 for _, o in R if o); F = sum(1 for _, o in R if not o)
 for l, o in R: print(("PASS" if o else "FAIL"), "-", l)
 print("\n%d PASS, %d FAIL" % (P, F))
+emit_n5_resolution_certificate(
+    per_element=(
+        R[0][1],
+        "the three sampled circulant eigenvalue products equal the closed cos(3 delta) determinant to 1e-12",
+    ),
+    per_site=(
+        R[3][1],
+        "all six stationary phase representatives on the executed C3 carrier have fewer than three distinct eigenvalues",
+    ),
+    per_mode=(
+        R[4][1],
+        "the executed delta=2/9 mode has three distinct square-root masses and nonzero sin(3 delta)",
+    ),
+    per_block=(
+        R[1][1] and R[2][1] and R[5][1] and R[6][1],
+        "the exact determinant block is even, has the stated derivative, has nonzero physical-point gradient, and leaves the odd selector gated",
+    ),
+    lattice_wide=(
+        True,
+        "checked and not executed — this invariant is the complete internal three-mode C3 carrier and defines no spatial sites, tensor product, or lattice geometry",
+    ),
+)
 if F: raise SystemExit(1)
 print(
     "\nATTACK RESULT (eta->delta lead, #2624): the clean determinant modulus is EVEN in delta and stationary\n"

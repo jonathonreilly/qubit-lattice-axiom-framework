@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_substrate_to_p_a_forcing.py
-runner_sha256: 2c6081e92eb632863014e509cddf12a0e83d0430354012a897306274c839f1f3
+runner_sha256: 9871e973aad5a04a71723120d19f11dcb2a89d67916164eab1981fa9dd2753ef
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.10
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -21,6 +22,11 @@ Question: do the stated substrate symmetries uniquely force P_A?
 [PASS (A)] 7. pure hamming-rank-four sectors are not unique: rank-four hamming sectors=[(1, 4, 0.0), (3, 4, 0.0)]
 [PASS (A)] 8. retained-input boundary check: runner uses only local Cl(3) spin-lift action, forced time-axis grading, CPT grading, complex Hilbert structure, and tensor-local number operators
 
+per_element: PASS | the executed four-qubit event-cell basis contains exactly sixteen substrate elements with the expected Hamming ranks
+per_site: PASS | the single-cell spin, time, and CPT symmetry actions satisfy their local anti-Hermitian and unitary tests
+per_mode: PASS | all eight executed local irreducible modes partition the complete sixteen-dimensional event-cell carrier
+per_block: PASS | the rank-four equivariant enumeration yields seventeen blocks, including distinct admissible P_A and P_3 projectors
+lattice_wide: PASS | checked and not executed — the no-go exhausts one local event-cell representation and supplies no intercell coupling or extended lattice dynamics
 Summary: PASS=8  FAIL=0
 
 Verdict: NO-GO. P_A exists, but it is not uniquely forced by the stated substrate symmetries. P_3 and other rank-four local equivariant sums satisfy the same checks, so an additional orientation/first-order boundary law is required.

@@ -52,6 +52,10 @@ from __future__ import annotations
 import math
 import numpy as np
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 # Beam / source parameters ----------------------------------------------------
 # The beam runs along z in [-L/2, +L/2]; the source is in superposition of
@@ -275,6 +279,29 @@ def main() -> None:
     alpha_mean, r2_min = assert_s_squared_law()
     max_err_by_h = assert_lattice_continuum_convergence()
     assert_no_discrete_signature(alpha_mean, max_err_by_h)
+
+    emit_n5_resolution_certificate(
+        per_element=(
+            abs(alpha_mean - 2.0) < 1e-4,
+            "each executed weak-phase entanglement witness enters through 1-cos(delta Phi), and its fitted source exponent is two",
+        ),
+        per_site=(
+            max_err_by_h[0.25] < 0.02,
+            "the finest-spacing Riemann sum resolves every sampled beam-path site closely enough to keep the maximum continuum error below two percent",
+        ),
+        per_mode=(
+            r2_min > 0.999,
+            "all executed separation and spacing modes retain the quadratic source-strength law with minimum reported fit R2 above 0.999",
+        ),
+        per_block=(
+            max_err_by_h[0.25] < max_err_by_h[0.5] < max_err_by_h[1.0],
+            "the three h-block maxima decrease strictly under both refinement steps 1.0 to 0.5 to 0.25",
+        ),
+        lattice_wide=(
+            max_err_by_h[0.25] < 0.02 and abs(alpha_mean - 2.0) < 1e-4,
+            "the full executed finite beam family reproduces the continuum exponent and converges in spacing, so no retained lattice-wide BMV signature remains",
+        ),
+    )
 
     print()
     print("=" * 70)

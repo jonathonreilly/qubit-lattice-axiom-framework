@@ -1,6 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/quantum_local_algebra_boost_action_faith_no_go_2026_06_02.py
-runner_sha256: 55455414b54ae1d1d613d3072361d6a09ed68c9af680edc7054b561f28ed35fe
+runner_sha256: 21521cbfd92fabf91331cd40326d3669580d25e4e9902dce5375ac5c9042bec6
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -33,6 +34,11 @@ status: ok
 
 ======================================================================
 SCORECARD: PASS=18 FAIL=0
+per_element: PASS | the executed Pauli generators satisfy every local Clifford relation and give a faithful irreducible real-rank-eight image
+per_site: PASS | the executed orbital-times-spin site Hamiltonian commutes with all three onsite bivector boosts and therefore selects none
+per_mode: PASS | both faithful Weyl chirality modes close while the scalar K=0 mode fails in both Lorentzian and Euclidean signatures
+per_block: PASS | the relativistic kinetic-kernel block covaries under the faithful boost and fails under the scalar boost
+lattice_wide: PASS | checked and not executed — the complete local C2 and two-orbital operator blocks were tested, but no spatial lattice boost action was defined
 
 ----- stderr -----
 

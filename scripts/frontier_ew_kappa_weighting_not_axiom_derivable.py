@@ -13,6 +13,10 @@ from pathlib import Path
 
 import numpy as np
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "EW_KAPPA_WEIGHTING_NOT_AXIOM_DERIVABLE_NO_GO_NOTE_2026-06-09.md"
@@ -163,6 +167,28 @@ def main() -> int:
     print(
         "SCOPE: kappa_EW is not derivable from the current approved axiom/primitive baseline alone; "
         "future derivation or approved-primitive review remains open."
+    )
+    emit_n5_resolution_certificate(
+        per_element=(
+            count_ok,
+            "the executed central-sector element count is distinct from the inter-sector kappa_EW weighting parameter",
+        ),
+        per_site=(
+            True,
+            "checked and not executed — the runner audits axiom and primitive registries and contains no spatial sites or intersite observable",
+        ),
+        per_mode=(
+            sin2_ok,
+            "all four executed kappa modes cancel as a common factor from the weak-mixing ratio to numerical precision",
+        ),
+        per_block=(
+            primitive_ok and foundation_ok and guardrails_ok,
+            "the approved-primitive block, complete foundation registry, and source-note guardrails all omit a supplied kappa_EW selector",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — this is a complete registry-baseline obstruction and no lattice-wide electroweak weighting dynamics is defined",
+        ),
     )
     return 0 if FAIL == 0 else 1
 

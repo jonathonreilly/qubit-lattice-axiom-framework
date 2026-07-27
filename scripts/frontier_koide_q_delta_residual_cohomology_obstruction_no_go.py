@@ -30,6 +30,10 @@ import sys
 
 import sympy as sp
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 PASSES: list[tuple[str, bool, str]] = []
 
@@ -224,6 +228,29 @@ def main() -> int:
     print(f"PASSED: {n_pass}/{n_total}")
     for name, ok, _ in PASSES:
         print(f"  [{'PASS' if ok else 'FAIL'}] {name}")
+
+    emit_n5_resolution_certificate(
+        per_element=(
+            trace_projection * q_kernel[0] == sp.zeros(1, 1),
+            "the executed Q trace projection has the displayed nonzero source-label generator in its exact kernel",
+        ),
+        per_site=(
+            counter_ok,
+            "every executed residual representative preserves the retained closed total while leaving a nonzero Q or delta obstruction",
+        ),
+        per_mode=(
+            trace_projection * q_section_family == sp.Matrix([t]),
+            "the symbolic Q section mode remains valid for every free section_parameter, so exactness supplies no unique zero section",
+        ),
+        per_block=(
+            boundary_projection * delta_section_family == sp.Matrix([1]),
+            "the complete three-coordinate delta block admits a two-parameter family of exact sections with unfixed spectator and endpoint kernels",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the obstruction exhausts finite residual-coordinate fibres and exact sequences rather than a spatial lattice construction",
+        ),
+    )
 
     print()
     if n_pass == n_total:

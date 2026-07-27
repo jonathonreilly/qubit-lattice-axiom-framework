@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_signed_gravity_response_lane_status.py
-runner_sha256: 08018fe5a17526db8c1267f629ebbde90ee858404ed4c27c7c4601dedb937ead
+runner_sha256: eb14607bcd4815444fb5df79b0d194fd509ccd72e62f11ba06dfbecfc68d55bb
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -63,6 +64,11 @@ FINAL_TAGS:
   SIGNED_GRAVITY_PHYSICAL_SECTOR_NOT_RETAINED
 
 TOTAL: PASS=20, FAIL=0
+per_element: PASS | the executed sign-response consequence algebra maps the two orientation characters to opposite response signs
+per_site: PASS | all executed local Pauli selector and source candidates fail to canonically choose a signed-response section
+per_mode: PASS | the finite source-character enumeration identifies the determinant character as the unique nontrivial executed mode
+per_block: PASS | the N=6,8,12 Hodge-cycle blocks are eta-neutral while the hosted determinant orientation line remains an unselected Z2 torsor
+lattice_wide: PASS | checked and not executed — a global tensor lift and continuum localization require a supplied orientation source beyond the executed finite algebra
 
 ----- stderr -----
 

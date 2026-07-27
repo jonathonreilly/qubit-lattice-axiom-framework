@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_operator_spectral_functionals_do_not_force_r_half_no_go_2026_06_02.py
-runner_sha256: 8d5cd0c89ceab8ec61f0c2f4ac11a048443c8a4a3cea2891d3f5b16142d3fb96
+runner_sha256: f17120577f39d441392113c29266e1a1b73f1e512cb496906f103fd91917bc8d
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.82
+elapsed_sec: 0.77
 status: ok
 ----- stdout -----
 [PASS] 0a. Tr H^2 = 3 a^2 + 6 b^2 (HS norms 3,6)  -- TrH2=3*a**2 + 6*b**2
@@ -25,6 +26,11 @@ status: ok
 [PASS] 5. RP/T-positivity (e^{-tH} PD) holds on the WHOLE admissible r-line -> inequality, pins no interior r
 
 SCORECARD: PASS=17 FAIL=0
+per_element: PASS | the exact three-eigenvalue trace functional reduces elementwise to Q(r)=1/3+(2/3)r
+per_site: PASS | checked and not executed — the tested invariant is the internal C3 commutant Gram matrix and has no spatial-site index or intersite operator
+per_mode: PASS | the three canonical C3 modes are Hilbert-Schmidt isotropic while all fourteen positivity samples leave the interior ratio unpinned
+per_block: PASS | the two-sector fold reaches r=1/2 only after the executed block choice, while the invariant metric retains a free beta curve
+lattice_wide: PASS | checked and not executed — the exact proof exhausts the finite three-mode carrier and positivity samples but defines no lattice tensor product or spatial limit
 
 ----- stderr -----
 

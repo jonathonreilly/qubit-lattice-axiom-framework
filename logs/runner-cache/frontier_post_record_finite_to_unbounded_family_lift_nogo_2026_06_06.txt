@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_finite_to_unbounded_family_lift_nogo_2026_06_06.py
-runner_sha256: 4134f72de660122eae0fad1a1aa163ae882f2193179c486dd81413c13aa2b9e5
+runner_sha256: 27035990ac7e46994548d2f2eec67d1da77b49555ec5aa0080cab2b8c8db6ad0
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 
@@ -80,6 +81,11 @@ ONE_TAIL_LIMITING_DENSITY=1
 FINITE_CERTIFICATE_ALONE_DERIVES_UNBOUNDED_LAW=FALSE
 FAMILY_LIFT_REQUIRED=TRUE
 AUDIT_VERDICT_APPLIED=FALSE
+per_element: PASS | all four executed prefix elements agree between the zero-tail and one-tail completions
+per_site: PASS | the complete four-site certificate window has the same exact count three and frequency three quarters in both completions
+per_mode: PASS | the two executed unbounded completion modes share the prefix but have distinct limiting densities zero and one
+per_block: PASS | the length-twenty comparison block already separates the completions at exact densities 3/20 and 19/20
+lattice_wide: PASS | checked and not executed — no infinite lattice was simulated; the exact two-completion witness proves that the finite certificate alone cannot choose a familywide law
 
 ----- stderr -----
 

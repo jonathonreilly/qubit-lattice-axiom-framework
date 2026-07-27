@@ -23,6 +23,10 @@ from pathlib import Path
 
 import numpy as np
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 PASS = 0
 FAIL = 0
 ROOT = Path(__file__).resolve().parents[1]
@@ -224,6 +228,29 @@ def main() -> int:
         "conjugation-invariant carrier algebra data do not select the supplied "
         "factorwise su(3)+su(2)+u(1) embedding.  A factorization/gauging "
         "principle, MR_color bridge, and chiral su(2)_L bridge remain required."
+    )
+    emit_n5_resolution_certificate(
+        per_element=(
+            dim_factorwise == 12 and closure_factorwise < 1e-10,
+            "the executed factorwise generators span a closed twelve-dimensional carrier algebra elementwise",
+        ),
+        per_site=(
+            True,
+            "checked and not executed — the certificate acts on one six-dimensional internal carrier and defines no spatial sites or link variables",
+        ),
+        per_mode=(
+            comm_factorwise == comm_conjugate == 1
+            and center_factorwise == center_conjugate == 1,
+            "both factorwise and entangling-conjugate embedding modes have the same scalar commutant and one-dimensional center",
+        ),
+        per_block=(
+            combined_dim > 12 and max_conjugate_residual > 1e-2,
+            "the combined embedding block has dimension above twelve and a resolved residual, proving the two invariant-equivalent embeddings are distinct",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the full finite carrier profile was executed, but no lattice gauging dynamics or global bundle selection was constructed",
+        ),
     )
     return 0 if FAIL == 0 else 1
 

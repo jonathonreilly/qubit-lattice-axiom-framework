@@ -19,6 +19,10 @@ from math import comb
 
 import numpy as np
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 TOL = 1e-10
 AXES = ("t", "x", "y", "z")
 SPATIAL = (1, 2, 3)
@@ -282,6 +286,31 @@ def main() -> int:
     )
 
     print()
+    emit_n5_resolution_certificate(
+        per_element=(
+            DIM == 16 and len(BASIS) == 16,
+            "the executed four-qubit event-cell basis contains exactly sixteen substrate elements with the expected Hamming ranks",
+        ),
+        per_site=(
+            antihermitian < TOL and finite_unitary < TOL,
+            "the single-cell spin, time, and CPT symmetry actions satisfy their local anti-Hermitian and unitary tests",
+        ),
+        per_mode=(
+            len(blocks) == 8 and sum(block["rank"] for block in blocks) == 16,
+            "all eight executed local irreducible modes partition the complete sixteen-dimensional event-cell carrier",
+        ),
+        per_block=(
+            len(rank4_candidates) == 17
+            and is_projector(p_a)
+            and is_projector(p_3)
+            and fro_norm(p_a - p_3) > TOL,
+            "the rank-four equivariant enumeration yields seventeen blocks, including distinct admissible P_A and P_3 projectors",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the no-go exhausts one local event-cell representation and supplies no intercell coupling or extended lattice dynamics",
+        ),
+    )
     if all(results):
         print("Summary: PASS=8  FAIL=0")
         print()

@@ -10,6 +10,10 @@ from __future__ import annotations
 
 import sympy as sp
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 PASS = 0
 FAIL = 0
 
@@ -112,6 +116,33 @@ def main() -> int:
         "FINDING: record preservation constrains an allowed dynamics class, "
         "but leaves coupling magnitude, coefficient ratios, nontriviality, and "
         "clock-rate normalization open."
+    )
+    emit_n5_resolution_certificate(
+        per_element=(
+            P0 + P1 == I2 and is_zero(comm(H_g, P0)) and is_zero(comm(H_g, P1)),
+            "the two exact record atoms resolve identity and each commutes with the symbolic one-parameter Hamiltonian H(g)",
+        ),
+        per_site=(
+            all(
+                is_zero(comm(H, P0)) and is_zero(comm(H, P1))
+                for H in (H0, H1, H2)
+            ),
+            "all three executed local Hamiltonian choices g=0,1,2 preserve the same pair of record projectors",
+        ),
+        per_mode=(
+            T_1_2 == T_2_1 and H1 != H2,
+            "the two distinct coupling-clock modes (g,a)=(1,2) and (2,1) produce the same exact transfer operator",
+        ),
+        per_block=(
+            all(is_zero(comm(H_xy, projector)) for projector in projectors)
+            and x in H_xy.free_symbols
+            and y in H_xy.free_symbols,
+            "the four-atom block preserves every projector while retaining both independent symbolic coefficients x and y",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — this classifier exhausts finite two-atom and four-atom record algebras and defines no spatial lattice coupling family",
+        ),
     )
     return 0 if FAIL == 0 else 1
 

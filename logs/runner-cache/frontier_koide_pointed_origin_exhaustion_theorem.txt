@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_pointed_origin_exhaustion_theorem.py
-runner_sha256: 88aa07c2002621c759e34d47c597c5c6882cf3049f5c389bb20f18620b5ac55b
+runner_sha256: deb4b3531602f6b5dc74b05070fef5764bc8b4f806700cf0c50b4f259639bd36
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 
@@ -76,6 +77,11 @@ PASSED: 15/15
   [PASS] E.1 no origin-free retained invariant selects the closing representative in this atlas
   [PASS] E.2 the next positive theorem is a retained physical source/boundary-origin law
   [PASS] E.3 this theorem does not claim retained Koide closure
+per_element: PASS | the executed pointed-origin representative produces the exact dimensionless values Q=2/3 and delta=2/9
+per_site: PASS | the source-fibre countermodel preserves the unpointed scalar expectation while moving the Q readout away from two thirds
+per_mode: PASS | both residual translation modes have only constant finite polynomial invariants and therefore cannot select an absolute origin
+per_block: PASS | endpoint differences and affine gluing remain invariant across the complete translated torsor block
+lattice_wide: PASS | checked and not executed — this exhaustion theorem covers residual source and endpoint coordinate fibres, not a spatial lattice or thermodynamic family
 
 KOIDE_POINTED_ORIGIN_EXHAUSTION_THEOREM=TRUE
 RETAINED_UNPOINTED_DATA_FORCE_POINTED_ORIGIN=FALSE

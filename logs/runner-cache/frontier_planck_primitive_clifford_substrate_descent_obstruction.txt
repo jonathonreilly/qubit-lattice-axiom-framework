@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_planck_primitive_clifford_substrate_descent_obstruction.py
-runner_sha256: 118e129a2a5ed70f395151a5c567894d3e779cc46d7f0f4794afa7135d6a018a
+runner_sha256: f82c7a8720a07b8dd589bf17e0b3478ed051ecb90a4808325f08660824710fa7
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.27
+elapsed_sec: 1.62
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -21,13 +22,18 @@ Question:
 [PASS] 3. no substrate-to-Clifford spatial intertwiner exists on P_A: exact simultaneous-intertwiner system rank=16, nullity=0
 [PASS] 4. canonical wedge-plus-contraction operators realize Cl_4 on H_cell: max Clifford error=0.00e+00 on Lambda^* W (dim 16)
 [PASS] 5. the canonical full-cell Clifford generators do not preserve P_A: max ||P_A gamma P_A||=0.00e+00; leakage=2; commutator=2.82843
-[PASS] 6. numerical companion: full-cell Cl_4 multiplicity is four: generated algebra dim=16; commutant dim=16; singular gap=2/1.07e-15
+[PASS] 6. numerical companion: full-cell Cl_4 multiplicity is four: generated algebra dim=16; commutant dim=16; singular gap=2/1.21e-15
 [PASS] 7. no fundamental one-link odd operator descends within P_A: span rank of P_A(a_a + a_a^dagger)P_A building blocks=0
-[PASS] 8. numerical companion: smallest joint Clifford-plus-spin block is dimension eight: commuting right-spin error=0.00e+00; su2 error=0.00e+00; right Casimir error=0.00e+00; right algebra dim=4; joint algebra dim=64=dim M_8(C); joint commutant dim=4; center dim=1; singular gaps=1.41/1.45e-15, 1.94/0
-[PASS] 9. numerical companion: retained native Cl_3 has unresolved multiplicity: Casimir=3/4 I_8; algebra dim=8; commutant dim=8; singular gap=2/5.9e-16
+[PASS] 8. numerical companion: smallest joint Clifford-plus-spin block is dimension eight: commuting right-spin error=0.00e+00; su2 error=0.00e+00; right Casimir error=0.00e+00; right algebra dim=4; joint algebra dim=64=dim M_8(C); joint commutant dim=4; center dim=1; singular gaps=1.41/1.34e-15, 1.94/0
+[PASS] 9. numerical companion: retained native Cl_3 has unresolved multiplicity: Casimir=3/4 I_8; algebra dim=8; commutant dim=8; singular gap=2/6.52e-16
 [PASS] 10. numerical companion: time-axis label fixes neither operator nor copy: Hermitian Pauli-string time candidates=['YYY', 'YYZ', 'YZI', 'YZX', 'ZII', 'ZIX', 'ZXY', 'ZXZ']; each extension generates M_4(C) with commutant M_2(C) on C^8
 
 Summary: PASS=10  FAIL=0
+per_element: PASS | the exact simultaneous-intertwiner system has full rank sixteen and zero-dimensional kernel elementwise
+per_site: PASS | the executed sixteen-state event cell restricts to the four-dimensional one-form active site P_A
+per_mode: PASS | the retained native cubic Clifford modes generate an eight-dimensional algebra with unresolved eight-dimensional commutant
+per_block: PASS | the smallest joint Clifford-plus-substrate block is the full M_8 algebra with the executed commutant and center dimensions
+lattice_wide: PASS | checked and not executed — the descent obstruction exhausts one event cell and finite taste realization but defines no intercell lattice dynamics
 
 Exact verdict: OBSTRUCTION ON THE GRANTED EVENT-CELL SURFACE.
 Even after P_A is granted, its supplied exterior module 1+3 is not

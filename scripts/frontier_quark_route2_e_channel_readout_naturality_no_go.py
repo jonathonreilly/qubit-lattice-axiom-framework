@@ -19,6 +19,9 @@ import sys
 import numpy as np
 
 from frontier_quark_route2_exact_readout_map import restricted_readout_data
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -178,6 +181,31 @@ def main() -> int:
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
+    emit_n5_resolution_certificate(
+        per_element=(
+            np.max(np.abs(e_shell - target_shell)) < EXACT_TOL
+            and np.max(np.abs(e_center - target_center)) < EXACT_TOL,
+            "both executed E-channel carrier columns equal their exact shell and center target elements at the declared tolerance",
+        ),
+        per_site=(
+            np.max(np.abs(shell_zero - shell_target)) < EXACT_TOL
+            and abs(center_zero[0] - center_target[0]) > 0.5,
+            "the two rho_E values agree at the shell site while producing a resolved difference at the center lift",
+        ),
+        per_mode=(
+            center_te_ratio(rho_target) == Fraction(-8, 9)
+            and e_center_lift(rho_target) == Fraction(15, 8),
+            "the target center mode is exactly equivalent to the granted endpoint ratio -8/9 and center lift 15/8",
+        ),
+        per_block=(
+            len(candidates) > 80 and rho_target in candidates,
+            "the executed low-rational grammar block contains more than eighty admissible rho_E values including 21/4, so naturality is nonunique",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the proof exhausts the finite E-channel readout algebra but defines no spatial lattice dynamics or familywide mass selector",
+        ),
+    )
     if FAIL_COUNT == 0:
         print("VERDICT: minimal Route-2 naturality does not derive rho_E = 21/4.")
         print("A new E-center source/readout primitive is still required.")

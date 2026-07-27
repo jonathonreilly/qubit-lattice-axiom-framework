@@ -31,6 +31,7 @@ from itertools import product
 import json
 import math
 from pathlib import Path
+import subprocess
 import sys
 
 import numpy as np
@@ -43,6 +44,7 @@ AUDIT_TIMEOUT_SEC = 300
 NOTE_PATH = "docs/SAME_CODE_SIX_PORT_ADMISSION_CYCLE716_BOUNDED_CONSTRUCTION_NOTE_2026-07-26.md"
 AUDIT_INPUT_PATHS = (
     "docs/SAME_CODE_SIX_PORT_ADMISSION_CYCLE716_BOUNDED_CONSTRUCTION_NOTE_2026-07-26.md",
+    "docs/FINITE_PROPER_CUBIC_ADMISSION_TABLE_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-07-23.md",
     "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
     "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
     "docs/work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
@@ -85,8 +87,10 @@ AUDIT_INPUT_PATHS = (
     "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
     "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
     "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+    "outputs/finite_proper_cubic_admission_table_discriminator_receipt_2026_07_23.json",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
+PACKAGE_BASELINE = "5de8d59a9d762391179efd1576bd8f22e33ef686"
 
 import finite_proper_cubic_admission_table_discriminator_2026_07_23 as DISC
 import frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26 as C712
@@ -744,6 +748,68 @@ def expand_candidate_to_abstract(
     return tuple(output)
 
 
+def expanded_candidate_execution_certificate(law: str) -> dict[str, object]:
+    """Execute the actual H/S/CNOT/T primitive candidate word on all 64 rows."""
+    primitive_word = expand_candidate_to_abstract(law, INPUT, 6)
+    inverse_word = tuple(
+        C712.AGate("inverse_" + gate.kind, gate.wires, gate.matrix.conj().T)
+        for gate in reversed(primitive_word)
+    )
+    failures = inverse_failures = 0
+    maximum_residual = maximum_inverse_residual = 0.0
+    observed_rows: dict[tuple[int, ...], int] = {}
+    for input_word in DISC.WORDS:
+        before = initial_candidate(input_word)
+        source = sum(bit << wire for wire, bit in enumerate(before))
+        semantic_after = apply_word(before, candidate_word(law))
+        target = sum(bit << wire for wire, bit in enumerate(semantic_after))
+        observed = C713.apply_sparse_word({source: 1.0 + 0.0j}, primitive_word)
+        delta = {
+            basis: amplitude - (1.0 if basis == target else 0.0)
+            for basis, amplitude in observed.items()
+        }
+        if target not in delta:
+            delta[target] = -1.0
+        residual = math.sqrt(sum(abs(value) ** 2 for value in delta.values()))
+        maximum_residual = max(maximum_residual, residual)
+        failures += residual >= TOL
+        recovered = C713.apply_sparse_word(observed, inverse_word)
+        inverse_delta = {
+            basis: amplitude - (1.0 if basis == source else 0.0)
+            for basis, amplitude in recovered.items()
+        }
+        if source not in inverse_delta:
+            inverse_delta[source] = -1.0
+        inverse_residual = math.sqrt(sum(abs(value) ** 2 for value in inverse_delta.values()))
+        maximum_inverse_residual = max(maximum_inverse_residual, inverse_residual)
+        inverse_failures += inverse_residual >= TOL
+        observed_rows[input_word] = target
+
+    gate_kinds = tuple(gate.kind.lower() for gate in primitive_word)
+    table_gate_kinds = tuple(sorted({
+        kind for kind in gate_kinds
+        if kind == "rom" or kind.startswith("rom_") or kind.endswith("_rom")
+        or "_rom_" in kind or "lookup" in kind or "truth_table" in kind
+    }))
+    runtime_non_port_input_wires = tuple(
+        wire for wire in range(6, CANDIDATE_QUBITS)
+        if any(initial_candidate(word)[wire] for word in DISC.WORDS)
+    )
+    return {
+        "basis_rows": len(observed_rows),
+        "equation_failures": failures,
+        "inverse_failures": inverse_failures,
+        "maximum_equation_residual": maximum_residual,
+        "maximum_inverse_residual": maximum_inverse_residual,
+        "primitive_gates": len(primitive_word),
+        "runtime_table_gate_kinds": table_gate_kinds,
+        "runtime_truth_table_ROM_gates": len(table_gate_kinds),
+        "declared_runtime_input_wires": INPUT,
+        "runtime_non_port_input_wires": runtime_non_port_input_wires,
+        "runtime_law_selector_input_wires": len(runtime_non_port_input_wires),
+    }
+
+
 def allocate_near(
     occupied: set[tuple[int, int, int]], anchors: tuple[tuple[int, int, int], ...], count: int
 ) -> tuple[tuple[int, int, int], ...]:
@@ -913,6 +979,7 @@ def physical_certificate(law: str) -> dict[str, object]:
     # The 27-cell code is shared: all six central ports are distinct wires of
     # one equivalence, not six copies of the central branch state.
     central_carriers = tuple(wire_sites[left] for left, _right in endpoints)
+    expanded_candidate = expanded_candidate_execution_certificate(law)
     return {
         "law": law,
         "box_shape": (3, 3, 3),
@@ -955,8 +1022,9 @@ def physical_certificate(law: str) -> dict[str, object]:
             sort_keys=True,
         ).encode()).hexdigest(),
         "primitive_expansion": primitive_expansion_certificate(),
-        "runtime_truth_table_ROM_bits": 0,
-        "runtime_law_selector_bits": 0,
+        "expanded_candidate_execution": expanded_candidate,
+        "runtime_truth_table_ROM_bits": expanded_candidate["runtime_truth_table_ROM_gates"],
+        "runtime_law_selector_bits": expanded_candidate["runtime_law_selector_input_wires"],
     }
 
 
@@ -996,6 +1064,11 @@ def json_default(value):
 
 def main() -> int:
     provenance = C714.provenance_certificate(AUDIT_INPUT_PATHS, __file__)
+    provenance["package_baseline_commit"] = PACKAGE_BASELINE
+    provenance["package_baseline_is_ancestor"] = subprocess.run(
+        ("git", "merge-base", "--is-ancestor", PACKAGE_BASELINE, "HEAD"),
+        cwd=ROOT, check=False,
+    ).returncode == 0
     candidate = candidate_certificate()
     seam = seam_instrument_certificate()
     free = one_particle_certificate()
@@ -1006,6 +1079,7 @@ def main() -> int:
     }
     checks = {
         "source_closure": provenance["baseline_is_ancestor"]
+        and provenance["package_baseline_is_ancestor"]
         and provenance["declared_path_failures"] == 0
         and provenance["duplicate_declared_paths"] == 0
         and not provenance["missing_transitive_scripts"]
@@ -1027,13 +1101,20 @@ def main() -> int:
             for value in candidate[law]["deletion_difference_counts"].values()
         ),
         "discriminator_unique":
+            candidate["discriminator_bridge"]["unique_quorum_verdict"].get("kind")
+            == "identified"
+            and set(candidate["discriminator_bridge"]["unique_quorum_verdict"].get("witnesses", {}))
+            == {"nonempty", "even_nonzero", "low_density", "odd_shells"}
+            and
             candidate["discriminator_bridge"]["unique_quorum_verdict"].get("law")
             == "unique_quorum"
             and candidate["discriminator_bridge"]["unique_quorum_well_formed_ports"] == 64,
         "discriminator_odd_firewall":
             candidate["discriminator_bridge"]["odd_shells_verdict"].get("kind")
             == "refuse_malformed"
-            and candidate["discriminator_bridge"]["odd_shells_malformed_ports"] > 0,
+            and candidate["discriminator_bridge"]["odd_shells_verdict"].get("reason") == "W-losers1"
+            and candidate["discriminator_bridge"]["odd_shells_malformed_ports"] == 26
+            and candidate["discriminator_bridge"]["odd_shells_malformed_weights"] == [3, 5],
         "six_seam_instrument": seam["complete_direction_words_seen"] == 64
         and seam["support_failures"] == seam["matter_target_failures"] == 0
         and seam["pointer_truth_failures"] == seam["scratch_cleanup_failures"] == 0
@@ -1061,9 +1142,17 @@ def main() -> int:
             and row["decoded_stabilizer_failures"] == 0
             and row["primitive_expansion"]["X_HSSH_residual"] < TOL
             and row["primitive_expansion"]["Toffoli_HTCNOT_residual"] < TOL
+            and row["expanded_candidate_execution"]["basis_rows"] == 64
+            and row["expanded_candidate_execution"]["equation_failures"] == 0
+            and row["expanded_candidate_execution"]["inverse_failures"] == 0
+            and row["expanded_candidate_execution"]["maximum_equation_residual"] < TOL
+            and row["expanded_candidate_execution"]["maximum_inverse_residual"] < TOL
+            and row["expanded_candidate_execution"]["runtime_truth_table_ROM_gates"] == 0
+            and not row["expanded_candidate_execution"]["runtime_non_port_input_wires"]
+            and row["expanded_candidate_execution"]["runtime_law_selector_input_wires"] == 0
             for row in physical.values()
         ),
-        "physical_covariance_translation": all(
+        "physical_geometry_compatibility": all(
             row["physical_frame_failures"] == 0
             and row["frame_composition_coordinate_failures"] == 0
             and row["translation_metric_failures"] == 0
@@ -1097,14 +1186,17 @@ def main() -> int:
             "six directional seam-opportunity pointers in one shared central-cell code",
             "complete unique-quorum and odd-shell Boolean relations by fixed local gates",
             "coherent archive/eligible/rejected/collision/empty outputs",
-            "unique-quorum lane-zero discriminator stream without a winner convention",
-            "proper-cubic scalar/directional covariance and translation compatibility",
+            "semantic unique-quorum lane-zero discriminator stream without a winner convention",
+            "primitive candidate-word execution plus routed-word geometry compatibility",
+            "proper-cubic scalar/directional covariance of the candidate output relation",
         ],
         "open": [
             "Nature's fixed Admissibility and objective actuality",
             "an autonomous law selector or genesis/enforcement theorem",
             "a covariant winner-bearing grammar for multi-opportunity admitted words",
             "recurrent tiling of overlapping 3x3x3 blocks and autonomous clean-ancilla supply",
+            "one executed E G = G_physical E chain from the seam instrument through the routed candidate word into the discriminator",
+            "active-frame naturality of the full routed compiler rather than geometry compatibility alone",
             "Record permanence, Born/history selection, source/gravity, and physical time",
         ],
         "firewall": (

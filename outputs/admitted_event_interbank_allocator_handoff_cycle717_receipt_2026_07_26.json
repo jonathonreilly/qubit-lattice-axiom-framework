@@ -47,11 +47,11 @@
     },
     "cache": {
       "path": "logs/runner-cache/frontier_cycle717_interbank_allocator_handoff_2026_07_26.txt",
-      "sha256": "799b867272b0d012e6e9f320bf4e0cac0c1c515343f1757a2d381ae01d06f3d9",
-      "input_fingerprint_sha256": "3c100168b35b28b94dbccded2ac0b6fa3de10ee8cef4aa409b68b216df2f9b83",
-      "elapsed_sec": 16.91,
+      "sha256": "a6ecf22508a5053c40d39b15ed3b0e88c63c57045c408cf3d4328d920af5d581",
+      "input_fingerprint_sha256": "704eb92b9ae26a7a679ff143d821a7bc7f7d4c13f1c89080968bea22bc418b23",
+      "elapsed_sec": 16.33,
       "exit_code": 0,
-      "report_sha256": "8ea879723cfa2798c9a3274fa73e8a2dd9339e9352f9592a733afb7194297fc8"
+      "report_sha256": "34d576fc8f06d8dfaddb21bfb8d4ec1ec767bcba837c14687dba3f7fdbc7804d"
     }
   }
 }

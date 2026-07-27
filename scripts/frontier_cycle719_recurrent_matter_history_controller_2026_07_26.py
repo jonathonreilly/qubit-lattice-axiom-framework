@@ -502,10 +502,12 @@ def controller_full_input(data_basis):
 
 def compiled_H_orbit_certificate():
     """Execute the actual 61,562-gate H word, not the host orbit helper."""
+    code_qubits = M.R12.full_wire_layout()["equivalence"].qubits
     banks, links = B.chain_genesis(BANKS)
     initial_data = tuple_to_int(M.pack_state(banks, links, matter=1))
     matter = C713.apply_sparse_word({initial_data: 1.0 + 0.0j}, MATTER_WORD)
     equality_failures = inverse_failures = register_return_failures = 0
+    suffix_input_failures = 0
     rows = []
     for source_basis in sorted(matter):
         host_data, host_a, host_b, _trace = K.run_orbit(
@@ -519,6 +521,11 @@ def compiled_H_orbit_certificate():
         register_return_failures += observed["A"] != host_a
         register_return_failures += observed["B"] != host_b
         register_return_failures += any(observed["work"])
+        suffix_input_failures += (
+            (observed["data"] & ((1 << code_qubits) - 1))
+            != (source_basis & ((1 << code_qubits) - 1))
+        )
+        suffix_input_failures += bool(observed["data"] & (7 << code_qubits))
         restored_full = repeated_fast_word(
             observed_full, CONTROLLER_H_INVERSE_FAST
         )
@@ -550,19 +557,28 @@ def compiled_H_orbit_certificate():
         if row[0] == "finalizer"
     )
     finalizer_program[finalizer_station] = ("identity", 0, ())
+    source_program = list(PROGRAM)
+    source_program[0] = ("identity", 0, ())
     packet_H = fast_classical_word(K.controller_word(
         tuple(packet_program), CONTROLLER_DATA_WIDTH
     ))
     finalizer_H = fast_classical_word(K.controller_word(
         tuple(finalizer_program), CONTROLLER_DATA_WIDTH
     ))
+    source_H = fast_classical_word(K.controller_word(
+        tuple(source_program), CONTROLLER_DATA_WIDTH
+    ))
     packet_deleted = repeated_fast_word(endpoint_full, packet_H)
     finalizer_deleted = repeated_fast_word(endpoint_full, finalizer_H)
+    source_deleted = repeated_fast_word(endpoint_full, source_H)
     packet_data_bits = (
         (lawful_full ^ packet_deleted) & CONTROLLER_DATA_MASK
     ).bit_count()
     finalizer_data_bits = (
         (lawful_full ^ finalizer_deleted) & CONTROLLER_DATA_MASK
+    ).bit_count()
+    source_data_bits = (
+        (lawful_full ^ source_deleted) & CONTROLLER_DATA_MASK
     ).bit_count()
     return {
         "Cycle713_origin0_branches": len(matter),
@@ -580,11 +596,17 @@ def compiled_H_orbit_certificate():
         "compiled_host_equality_failures": equality_failures,
         "compiled_inverse_failures": inverse_failures,
         "controller_register_return_failures": register_return_failures,
+        "suffix_decoded_domain_failures": suffix_input_failures,
         "rows": rows,
         "packet_station": packet_station,
         "finalizer_station": finalizer_station,
         "compiled_packet_deletion_data_bit_differences": packet_data_bits,
         "compiled_finalizer_deletion_data_bit_differences": finalizer_data_bits,
+        "compiled_source_handoff_deletion_data_bit_differences": source_data_bits,
+        "deleted_finalizer_suffix_pointer_dirty": bool(
+            finalizer_deleted & (7 << code_qubits)
+        ),
+        "suffix_code_qubits": code_qubits,
         "controller_H_word_sha256": K.gate_digest(CONTROLLER_H_WORD),
     }
 
@@ -691,6 +713,8 @@ def source_physical_caps(layout):
     )
     word = prefix + suffix
     routed, route = C713.C712.c707.route_word(word)
+    prefix_routed, prefix_route = C713.C712.c707.route_word(prefix)
+    suffix_routed, suffix_route = C713.C712.c707.route_word(suffix)
     inverse_word = C713.C712.inverse_instructions(word, "joint_inverse_")
     inverse_routed, inverse_route = C713.C712.c707.route_word(inverse_word)
     covariance = M.R12.active_frame_certificate(word, routed)
@@ -701,6 +725,10 @@ def source_physical_caps(layout):
         "word": word,
         "routed": routed,
         "route": route,
+        "prefix_routed": prefix_routed,
+        "prefix_route": prefix_route,
+        "suffix_routed": suffix_routed,
+        "suffix_route": suffix_route,
         "inverse_route": inverse_route,
         "covariance": covariance,
         "coin_QR_residual": qr_residual,
@@ -718,18 +746,317 @@ def source_physical_caps(layout):
     }
 
 
+def physical_controller_block(bank_count):
+    """Map one exact controller H block to the same physical wire chart."""
+    program, track = K.held_physical_program_and_track(bank_count)
+    layout = M.R12.full_wire_layout()
+    data_sites = layout["wire_sites"]
+    a_sites = track[::2]
+    b_sites = track[1::2]
+    work_sites = tuple((x, y - 1, z) for x, y, z in a_sites)
+    wire_sites = data_sites + a_sites + b_sites + work_sites
+    semantic = K.controller_word(program, len(data_sites))
+    matrices = {"X": A.X, "H": A.H, "T": A.T, "TD": A.TD, "CNOT": A.CNOT}
+    physical = tuple(
+        C713.C712.c707.Instruction(
+            "joint_controller_" + kind,
+            tuple(wire_sites[wire] for wire in wires),
+            matrices[kind],
+        )
+        for gate in semantic
+        for kind, wires in A.expanded((gate,))
+    )
+    controller_sites = a_sites + b_sites + work_sites
+    return {
+        "program": program,
+        "track": track,
+        "semantic": semantic,
+        "physical": physical,
+        "wire_sites": wire_sites,
+        "data_wire_sites": data_sites,
+        "controller_sites": controller_sites,
+        "placement_collisions": (
+            len(controller_sites) - len(set(controller_sites))
+            + len(set(layout["assigned_sites"]) & set(controller_sites))
+        ),
+    }
+
+
+def stream_route_instructions(instructions):
+    """Route and hash a literal instruction stream without retaining routed gates."""
+    c655 = C713.C712.c707.c655
+    digest = sha256()
+    instructions_seen = routed = one = two = maximum = 0
+    nn = operand = returned = 0
+    for instruction in instructions:
+        instructions_seen += 1
+        if len(instruction.sites) == 1:
+            macro = (c655.Gate(instruction.kind, instruction.sites, instruction.matrix),)
+        else:
+            left, right = instruction.sites
+            path = c655.manhattan_path(left, right)
+            maximum = max(maximum, len(path) - 1)
+            labels = list(path)
+            for index in range(len(path) - 2):
+                labels[index], labels[index + 1] = labels[index + 1], labels[index]
+            operand += labels[-2:] != [left, right]
+            for index in reversed(range(len(path) - 2)):
+                labels[index], labels[index + 1] = labels[index + 1], labels[index]
+            returned += labels != list(path)
+            macro = c655.route_two(
+                instruction.kind, left, right, instruction.matrix
+            )
+        for gate in macro:
+            routed += 1
+            one += len(gate.sites) == 1
+            two += len(gate.sites) == 2
+            nn += len(gate.sites) == 2 and c655.l1(*gate.sites) != 1
+            digest.update(gate.kind.encode())
+            digest.update(repr(gate.sites).encode())
+            digest.update(c655.matrix_digest(gate.matrix).encode())
+    return {
+        "physical_instructions": instructions_seen,
+        "routed_gates": routed,
+        "routed_one_M2": one,
+        "routed_two_M2": two,
+        "maximum_route_distance": maximum,
+        "non_NN_failures": nn,
+        "operand_order_failures": operand,
+        "route_return_failures": returned,
+        "flat_routed_sha256": digest.hexdigest(),
+    }
+
+
+def ordered_route_composition_certificate(caps):
+    """Certify prefix ; H^P ; suffix as an ordered shared-map route."""
+    full = physical_controller_block(BANKS)
+    h_stream = stream_route_instructions(full["physical"])
+    prefix_stream = stream_route_instructions(caps["prefix"])
+    suffix_stream = stream_route_instructions(caps["suffix"])
+    inverse_h_physical = C713.C712.inverse_instructions(
+        full["physical"], "joint_inverse_H_"
+    )
+    inverse_prefix = C713.C712.inverse_instructions(
+        caps["prefix"], "joint_inverse_prefix_"
+    )
+    inverse_suffix = C713.C712.inverse_instructions(
+        caps["suffix"], "joint_inverse_suffix_"
+    )
+    inverse_h_stream = stream_route_instructions(inverse_h_physical)
+    inverse_prefix_stream = stream_route_instructions(inverse_prefix)
+    inverse_suffix_stream = stream_route_instructions(inverse_suffix)
+    stations = len(full["program"])
+    manifest = {
+        "format": "ordered-route-rle-v1",
+        "segments": (
+            ("prefix", 1, prefix_stream["physical_instructions"], prefix_stream["routed_gates"], prefix_stream["flat_routed_sha256"]),
+            ("H", stations, h_stream["physical_instructions"], h_stream["routed_gates"], h_stream["flat_routed_sha256"]),
+            ("suffix", 1, suffix_stream["physical_instructions"], suffix_stream["routed_gates"], suffix_stream["flat_routed_sha256"]),
+        ),
+    }
+    manifest_sha = sha256(
+        json.dumps(manifest, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()
+    inverse_manifest = {
+        "format": "ordered-route-rle-v1",
+        "segments": (
+            ("inverse_suffix", 1, inverse_suffix_stream["physical_instructions"], inverse_suffix_stream["routed_gates"], inverse_suffix_stream["flat_routed_sha256"]),
+            ("inverse_H", stations, inverse_h_stream["physical_instructions"], inverse_h_stream["routed_gates"], inverse_h_stream["flat_routed_sha256"]),
+            ("inverse_prefix", 1, inverse_prefix_stream["physical_instructions"], inverse_prefix_stream["routed_gates"], inverse_prefix_stream["flat_routed_sha256"]),
+        ),
+    }
+    inverse_manifest_sha = sha256(
+        json.dumps(inverse_manifest, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()
+
+    # Held P=11: materialize the exact ordered physical instruction word and
+    # compare its flat routed stream with an independent RLE expansion.
+    held = physical_controller_block(2)
+    held_stations = len(held["program"])
+    held_direct_word = caps["prefix"] + held["physical"] * held_stations + caps["suffix"]
+    held_direct = stream_route_instructions(held_direct_word)
+
+    def held_rle_expansion():
+        yield from caps["prefix"]
+        for _repeat in range(held_stations):
+            yield from held["physical"]
+        yield from caps["suffix"]
+
+    held_rle = stream_route_instructions(held_rle_expansion())
+    held_inverse_H = C713.C712.inverse_instructions(
+        held["physical"], "held_joint_inverse_H_"
+    )
+    held_inverse_direct_word = (
+        inverse_suffix + held_inverse_H * held_stations + inverse_prefix
+    )
+    held_inverse_direct = stream_route_instructions(held_inverse_direct_word)
+
+    def held_inverse_rle_expansion():
+        yield from inverse_suffix
+        for _repeat in range(held_stations):
+            yield from held_inverse_H
+        yield from inverse_prefix
+
+    held_inverse_rle = stream_route_instructions(held_inverse_rle_expansion())
+    route_failure_keys = (
+        "non_NN_failures", "operand_order_failures", "route_return_failures",
+    )
+    expected_physical = (
+        len(caps["prefix"]) + stations * len(full["physical"]) + len(caps["suffix"])
+    )
+    expected_routed = (
+        prefix_stream["routed_gates"]
+        + stations * h_stream["routed_gates"]
+        + suffix_stream["routed_gates"]
+    )
+    expected_inverse_physical = (
+        len(inverse_suffix)
+        + stations * len(inverse_h_physical)
+        + len(inverse_prefix)
+    )
+    expected_inverse_routed = (
+        inverse_suffix_stream["routed_gates"]
+        + stations * inverse_h_stream["routed_gates"]
+        + inverse_prefix_stream["routed_gates"]
+    )
+    return {
+        "shared_data_map_exact": full["data_wire_sites"] == M.R12.full_wire_layout()["wire_sites"],
+        "shared_data_wire_map_sha256": sha256(repr(full["data_wire_sites"]).encode()).hexdigest(),
+        "placement_collisions": full["placement_collisions"],
+        "prefix": prefix_stream,
+        "one_H": h_stream,
+        "suffix": suffix_stream,
+        "inverse_suffix": inverse_suffix_stream,
+        "one_inverse_H": inverse_h_stream,
+        "inverse_prefix": inverse_prefix_stream,
+        "H_repetitions": stations,
+        "ordered_manifest": manifest,
+        "ordered_manifest_sha256": manifest_sha,
+        "inverse_ordered_manifest": inverse_manifest,
+        "inverse_ordered_manifest_sha256": inverse_manifest_sha,
+        "full_physical_primitives": expected_physical,
+        "full_routed_NN_gates": expected_routed,
+        "inverse_full_physical_primitives": expected_inverse_physical,
+        "inverse_full_routed_NN_gates": expected_inverse_routed,
+        "forward_inverse_counts_equal": (
+            expected_physical == expected_inverse_physical
+            and expected_routed == expected_inverse_routed
+        ),
+        "segment_route_failures": sum(
+            row[key]
+            for row in (
+                prefix_stream, h_stream, suffix_stream,
+                inverse_suffix_stream, inverse_h_stream, inverse_prefix_stream,
+            )
+            for key in route_failure_keys
+        ),
+        "held_P11": {
+            "stations": held_stations,
+            "materialized_physical_instructions": len(held_direct_word),
+            "direct": held_direct,
+            "rle_expanded": held_rle,
+            "flat_digest_equal": held_direct["flat_routed_sha256"] == held_rle["flat_routed_sha256"],
+            "counts_equal": all(
+                held_direct[key] == held_rle[key]
+                for key in (
+                    "physical_instructions", "routed_gates", "routed_one_M2",
+                    "routed_two_M2", "maximum_route_distance", *route_failure_keys,
+                )
+            ),
+            "inverse_materialized_physical_instructions": len(held_inverse_direct_word),
+            "inverse_direct": held_inverse_direct,
+            "inverse_rle_expanded": held_inverse_rle,
+            "inverse_flat_digest_equal": (
+                held_inverse_direct["flat_routed_sha256"]
+                == held_inverse_rle["flat_routed_sha256"]
+            ),
+            "inverse_counts_equal": all(
+                held_inverse_direct[key] == held_inverse_rle[key]
+                for key in (
+                    "physical_instructions", "routed_gates", "routed_one_M2",
+                    "routed_two_M2", "maximum_route_distance", *route_failure_keys,
+                )
+            ),
+        },
+        "full_flat_word_materialized": False,
+        "full_flat_routed_digest_claimed": False,
+    }
+
+
+def suffix_domain_certificate(compiled, caps):
+    """Check the decoded controller output lies in the physical suffix domain."""
+    layout = M.R12.full_wire_layout()
+    equivalence = layout["equivalence"]
+    target_decode = C713.C712.synthesize_decode(
+        equivalence.target_w, equivalence.target_v
+    )
+    target_encode = C713.C712.inverse_word(target_decode)
+    logical_modes = len(equivalence.target_logical_z)
+    code_qubits = equivalence.qubits
+    canonical_aux = [
+        C713.C712.c707.Pauli(z=1 << wire)
+        for wire in range(logical_modes, code_qubits)
+    ]
+    encoded_aux = C713.C712.apply_word_rows(canonical_aux, target_encode)
+    expected_aux = equivalence.target_w[logical_modes:]
+    encoded_stabilizer_failures = C713.C712.tableau_failures(encoded_aux, expected_aux)
+    roundtrip = C713.C712.apply_word_rows(encoded_aux, target_decode)
+    roundtrip_failures = C713.C712.tableau_failures(roundtrip, canonical_aux)
+    program = K.program_word(PROGRAM)
+
+    def target_wire(gate):
+        return gate.wires[0] if gate.kind == "X" else gate.wires[-1]
+
+    targets = tuple(target_wire(gate) for gate in program)
+    suffix_sites = {site for instruction in caps["suffix"] for site in instruction.sites}
+    pointer_sites = set(layout["source_wire_sites"][code_qubits:code_qubits + 3])
+    deleted_encode_failures = []
+    for index in range(len(target_encode)):
+        damaged = target_encode[:index] + target_encode[index + 1:]
+        observed = C713.C712.apply_word_rows(canonical_aux, damaged)
+        mismatch = C713.C712.tableau_failures(observed, expected_aux)
+        if mismatch:
+            deleted_encode_failures.append((index, mismatch))
+            break
+    return {
+        "controller_suffix_input_failures": compiled["suffix_decoded_domain_failures"],
+        "logical_modes": logical_modes,
+        "code_qubits": code_qubits,
+        "controller_targets_matter_or_code_auxiliaries": sum(
+            wire < code_qubits for wire in targets
+        ),
+        "controller_minimum_target_wire": min(targets),
+        "controller_targets_direction_carriers": sum(
+            wire in (R3_SOURCE_POINTER() - 2, R3_SOURCE_POINTER() - 1)
+            for wire in targets
+        ),
+        "encoded_stabilizer_failures": encoded_stabilizer_failures,
+        "encode_decode_roundtrip_failures": roundtrip_failures,
+        "suffix_pointer_site_touches": len(suffix_sites & pointer_sites),
+        "history_register_suffix_site_touches": len(
+            suffix_sites & set(layout["wire_sites"][code_qubits + 3:])
+        ),
+        "deleted_target_encode_control": tuple(deleted_encode_failures),
+        "deleted_finalizer_pointer_dirty_survives_suffix": (
+            compiled["deleted_finalizer_suffix_pointer_dirty"]
+            and not (suffix_sites & pointer_sites)
+        ),
+        "boundary": (
+            f"The controller targets no matter/canonical-code wire below {code_qubits}, returns endpoint "
+            f"scratch {code_qubits}:{code_qubits + 3} clean, and the suffix maps canonical auxiliary Z rows back to the "
+            "target-code stabilizers. History registers are disjoint spectators."
+        ),
+    }
+
+
 def composed_physical_certificate():
-    """Bind Cycle713 caps and repeated H to one literal same-chart G word."""
+    """Bind Cycle713 caps and repeated H to one ordered same-chart G word."""
     layout = M.R12.full_wire_layout()
     caps = source_physical_caps(layout)
     controller = K.physical_controller_certificate(BANKS)
+    ordered = ordered_route_composition_certificate(caps)
     stations = controller["stations"]
-    structural_digest = sha256("|".join((
-        caps["route"]["word_sha256"],
-        str(stations),
-        controller["controller_word_sha256"],
-        controller["forward"]["route_blueprint_sha256"],
-    )).encode()).hexdigest()
+    structural_digest = ordered["ordered_manifest_sha256"]
     cap_failures = sum(
         caps["route"][key] + caps["inverse_route"][key]
         for key in ("non_NN_failures", "operand_order_failures", "route_return_failures")
@@ -750,7 +1077,7 @@ def composed_physical_certificate():
         "coordinate_failures", "frame_product_failures", "translation_failures"
     ))
     return {
-        "G_physical_structure": "Cycle713 physical decode/instrument; routed-counted H^P; physical re-encode",
+        "G_physical_structure": "ordered Cycle713 physical prefix; exact H^P RLE block; physical suffix",
         "structural_sha256": structural_digest,
         "source_pointer_M2": layout["source_wire_sites"][R3_SOURCE_POINTER()],
         "endpoint_pointer_M2": tuple(caps["landed"]["pointer_sites"])[2],
@@ -762,14 +1089,8 @@ def composed_physical_certificate():
         "one_H_physical_primitives": controller["forward"]["physical_primitives"],
         "one_H_routed_NN_gates": controller["forward"]["routed_NN_gates"],
         "full_orbit_H_applications": stations,
-        "full_G_physical_primitives": (
-            len(caps["word"])
-            + stations * controller["forward"]["physical_primitives"]
-        ),
-        "full_G_routed_NN_gates": (
-            len(caps["routed"])
-            + stations * controller["forward"]["routed_NN_gates"]
-        ),
+        "full_G_physical_primitives": ordered["full_physical_primitives"],
+        "full_G_routed_NN_gates": ordered["full_routed_NN_gates"],
         "maximum_route_distance": max(
             caps["route"]["maximum_route_distance"],
             controller["forward"]["maximum_route_distance"],
@@ -791,6 +1112,7 @@ def composed_physical_certificate():
         "total_declared_data_controller_M2": controller["total_declared_M2"],
         "source_cap_route_sha256": caps["route"]["word_sha256"],
         "one_H_route_blueprint_sha256": controller["forward"]["route_blueprint_sha256"],
+        "ordered_route_composition": ordered,
         "circuit_ordinal_is_time": False,
         "covariance_scope": (
             "Cycle713 cap has its landed active endpoint/frame checks; controller and "
@@ -813,6 +1135,9 @@ def main():
     refusal = local_refusal_primitive()
     compiled = compiled_H_orbit_certificate()
     physical = composed_physical_certificate()
+    suffix_domain = suffix_domain_certificate(
+        compiled, source_physical_caps(M.R12.full_wire_layout())
+    )
     matter = K.H.inherited_matter_certificate()
     instrument_surface = C713.exhaustive_two_cell_instrument()
     maximums = {
@@ -861,6 +1186,16 @@ def main():
             and physical["ordered_frame_products"] == 576
             and physical["route_swap_deletion_opportunities"] > 0
             and not physical["circuit_ordinal_is_time"]
+            and physical["ordered_route_composition"]["shared_data_map_exact"]
+            and physical["ordered_route_composition"]["placement_collisions"] == 0
+            and physical["ordered_route_composition"]["segment_route_failures"] == 0
+            and physical["ordered_route_composition"]["forward_inverse_counts_equal"]
+            and physical["ordered_route_composition"]["held_P11"]["flat_digest_equal"]
+            and physical["ordered_route_composition"]["held_P11"]["counts_equal"]
+            and physical["ordered_route_composition"]["held_P11"]["inverse_flat_digest_equal"]
+            and physical["ordered_route_composition"]["held_P11"]["inverse_counts_equal"]
+            and not physical["ordered_route_composition"]["full_flat_word_materialized"]
+            and not physical["ordered_route_composition"]["full_flat_routed_digest_claimed"]
         ),
         "actual_compiled_H_orbit": (
             compiled["Cycle713_origin0_branches"] == 6
@@ -872,6 +1207,20 @@ def main():
             and compiled["controller_register_return_failures"] == 0
             and compiled["compiled_packet_deletion_data_bit_differences"] == 35
             and compiled["compiled_finalizer_deletion_data_bit_differences"] == 3
+            and compiled["compiled_source_handoff_deletion_data_bit_differences"] > 0
+            and compiled["suffix_decoded_domain_failures"] == 0
+        ),
+        "suffix_consumes_controller_decoded_domain": (
+            suffix_domain["controller_suffix_input_failures"] == 0
+            and suffix_domain["controller_targets_matter_or_code_auxiliaries"] == 0
+            and suffix_domain["controller_minimum_target_wire"] == R3_SOURCE_POINTER()
+            and suffix_domain["controller_targets_direction_carriers"] == 0
+            and suffix_domain["encoded_stabilizer_failures"] == 0
+            and suffix_domain["encode_decode_roundtrip_failures"] == 0
+            and suffix_domain["suffix_pointer_site_touches"] == 0
+            and suffix_domain["history_register_suffix_site_touches"] == 0
+            and bool(suffix_domain["deleted_target_encode_control"])
+            and suffix_domain["deleted_finalizer_pointer_dirty_survives_suffix"]
         ),
         "hostile_controller_sectors": (
             sectors["lawful_token_return_failures"] == 0
@@ -923,6 +1272,7 @@ def main():
         "compiled_controller": compiled,
         "local_refusal": refusal,
         "physical_composition": physical,
+        "suffix_domain": suffix_domain,
         "matter_fixtures": matter,
         "instrument_surface": instrument_surface,
         "evidence_independence": {
@@ -978,8 +1328,9 @@ def main():
             "This is a same-chart compositional physical-M2 matter-to-reversible-history bridge. "
             "The endpoint is produced on the actual Cycle713 pointer M2; actual compiled H^130 is "
             "executed on all six first-event branches, while longer held recurrence uses the proven-"
-            "equal host orbit.  Full-G primitive and NN totals are routed counts, not a retained or "
-            "fully executed 1.7-billion-gate word.  The history remains reversible and is not called "
+            "equal host orbit.  The full P=130 physical route is an exact ordered RLE certificate, "
+            "not a materialized or flat-digested 1.731-billion-gate tuple; held P=11 independently "
+            "matches direct and RLE expansion in both directions.  The history remains reversible and is not called "
             "a Record, realized history, or time."
         ),
     }

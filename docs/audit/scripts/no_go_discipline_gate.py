@@ -2713,13 +2713,13 @@ def evidence_snapshot_current_error(
         stored_status = stored.get("effective_status")
         current_status = current.get("effective_status")
         if current_status != stored_status:
-            crosses_chain_line = snapshot_status_is_chain_satisfying(
+            touches_chain_line = snapshot_status_is_chain_satisfying(
                 stored_status
             ) or snapshot_status_is_chain_satisfying(current_status)
-            if crosses_chain_line:
+            if touches_chain_line:
                 return (
-                    "evidence_snapshot effective_status crossed the "
-                    f"chain-satisfying line for {path!r}: "
+                    "evidence_snapshot effective_status moved at or across "
+                    f"the chain-satisfying line for {path!r}: "
                     f"{stored_status} -> {current_status}"
                 )
             if snapshot_status_rank(current_status) < snapshot_status_rank(

@@ -7960,9 +7960,9 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         changed = json.loads(json.dumps(manifest))
         changed["docs/AUTH.md"]["effective_status"] = "audited_conditional"
         # A retained authority losing its grade both weakens the evidence and
-        # crosses the chain-satisfying line; either way it must invalidate.
+        # moves at the chain-satisfying line; either way it must invalidate.
         self.assertIn(
-            "crossed the chain-satisfying line",
+            "moved at or across the chain-satisfying line",
             m.evidence_snapshot_current_error(packet, changed) or "",
         )
         changed = json.loads(json.dumps(manifest))
@@ -8015,6 +8015,33 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 f"authority_strengthened:audited_failed->{stronger}",
                 growth.get("docs/AUTH.md", []),
             )
+        # Equal-rank churn below the line, pinned explicitly: neither
+        # direction of unaudited <-> audit_in_progress (both rank 30) may
+        # invalidate, and neither is strengthening.
+        for before, after in (
+            ("unaudited", "audit_in_progress"),
+            ("audit_in_progress", "unaudited"),
+            ("audited_renaming", "audited_conditional"),
+        ):
+            base = self._authority_manifest(before)
+            equal_packet = _no_go_packet()
+            _set_no_go_scan_coverage(equal_packet, base)
+            equal_packet["evidence_snapshot"] = m.build_evidence_snapshot(
+                equal_packet, base
+            )
+            changed = json.loads(json.dumps(base))
+            changed["docs/AUTH.md"]["effective_status"] = after
+            self.assertIsNone(
+                m.evidence_snapshot_current_error(equal_packet, changed),
+                f"{before} -> {after} must not invalidate",
+            )
+            self.assertEqual(
+                m.evidence_snapshot_index_growth(equal_packet, changed).get(
+                    "docs/AUTH.md", []
+                ),
+                [],
+                f"{before} -> {after} is not strengthening",
+            )
 
     def test_crossing_the_chain_satisfying_line_still_invalidates(self):
         """Promotion is not evidence decay, but it IS stale-N3 signal.
@@ -8052,7 +8079,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             changed = json.loads(json.dumps(manifest))
             changed["docs/AUTH.md"]["effective_status"] = after
             self.assertIn(
-                "crossed the chain-satisfying line",
+                "moved at or across the chain-satisfying line",
                 m.evidence_snapshot_current_error(packet, changed) or "",
                 f"{before} -> {after} must force re-audit",
             )

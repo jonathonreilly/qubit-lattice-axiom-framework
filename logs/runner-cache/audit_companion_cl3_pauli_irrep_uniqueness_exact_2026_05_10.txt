@@ -1,143 +1,37 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py
-runner_sha256: 7da6a714975f1359e68e989f5b97def6e439da1e313fa368b92e55efed42c2f9
+runner_sha256: fc7dd197d2a2ca6d3144391215ecb51a5fccac2e30cc7e135842947c2a350e2d
+input_fingerprint_sha256: 5f12d038e732b5f7db159466900c9f1f8e88c38fd8a1495989ffabfac93082b6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.18
+elapsed_sec: 2.18
 status: ok
 ----- stdout -----
-================================================================================================
-Exact abstract-algebra certificate for
-CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10
-Arithmetic: exact SymPy symbolic; algebra core Gaussian-rational; no floats
-Mode: normal; table construction: bit-inversion formula
-================================================================================================
-
-------------------------------------------------------------------------------------------------
-Part A: eight-dimensional algebra from the defining relations
-------------------------------------------------------------------------------------------------
-Exact multiplication table (rows multiply columns):
-               1      g1      g2      g3     g12     g13     g23   omega
-      1       1      g1      g2      g3     g12     g13     g23   omega
-     g1      g1       1     g12     g13      g2      g3   omega     g23
-     g2      g2    -g12       1     g23     -g1  -omega      g3    -g13
-     g3      g3    -g13    -g23       1   omega     -g1     -g2     g12
-    g12     g12     -g2      g1   omega      -1    -g23     g13     -g3
-    g13     g13     -g3  -omega      g1     g23      -1    -g12      g2
-    g23     g23   omega     -g3      g2    -g13     g12      -1     -g1
-  omega   omega     g23    -g13     g12     -g3      g2     -g1      -1
-  [PASS (A)] A1 complete 8^3 basis associativity table  (512/512 products)
-  [PASS (A)] A2 all defining Clifford relations hold in the abstract table  (9/9 relations)
-  [PASS (A)] A3 ordered generator monomials give the complete canonical basis  (rank=8)
-  [PASS (A)] A4 left/right generator products match the independent canonical-word reducer  (48/48 products)
-
-------------------------------------------------------------------------------------------------
-Part B: ordered volume element and central idempotents
-------------------------------------------------------------------------------------------------
-  [PASS (A)] B1 omega is the ordered product gamma_1 gamma_2 gamma_3
-  [PASS (A)] B2 omega^2 = -1 in the abstract algebra
-  [PASS (A)] B3 omega commutes with the complete eight-element basis  (8/8 commutators)
-  [PASS (A)] B5 e_+=(1-i omega)/2 and e_-=(1+i omega)/2 are central orthogonal idempotents
-  [PASS (A)] B6 abstract labels satisfy omega e_+=+i e_+ and omega e_-=-i e_-
-  [PASS (A)] B7 solving all generator commutators gives Z(A_C)=span_C{1,omega}  (center dimension=2)
-  [PASS (A)] B8 the only central idempotents are 0, 1, e_+, and e_-  (exact solutions=[(0, 0), (1, 0), (1/2, -I/2), (1/2, I/2)])
-
-------------------------------------------------------------------------------------------------
-Part C: complementary four-dimensional two-sided ideals
-------------------------------------------------------------------------------------------------
-  [PASS (A)] C1 A e_+ is four-dimensional with basis {e_+,g1e_+,g2e_+,g3e_+}  (chosen rank=4, ideal rank=4)
-  [PASS (A)] C2 A e_- is four-dimensional with basis {e_-,g1e_-,g2e_-,g3e_-}  (chosen rank=4, ideal rank=4)
-  [PASS (A)] C3 bivectors and omega reduce to the four stated ideal basis vectors  (8/8 reductions)
-  [PASS (A)] C4 exhaustive left/right closure of both ideals  (128/128 products)
-  [PASS (A)] C5 A e_+ and A e_- annihilate each other and form an 8-dimensional direct sum  (cross products=32/32, combined rank=8)
-
-------------------------------------------------------------------------------------------------
-Part D: matrix units constructed inside both abstract ideals
-------------------------------------------------------------------------------------------------
-  [PASS (A)] D1+ all 16 abstract E_ab E_cd=delta_bc E_ad products hold  (16/16 products)
-  [PASS (A)] D2+ E_11+E_22=e_+; the four units are an ideal basis  (matrix-unit rank=4)
-  [PASS (A)] D3+ coefficient isolation makes every nonzero two-sided ideal full  (16/16 identities)
-  [PASS (A)] D1- all 16 abstract E_ab E_cd=delta_bc E_ad products hold  (16/16 products)
-  [PASS (A)] D2- E_11+E_22=e_-; the four units are an ideal basis  (matrix-unit rank=4)
-  [PASS (A)] D3- coefficient isolation makes every nonzero two-sided ideal full  (16/16 identities)
-  [PASS (A)] D4 center exhaustion and two simple complementary ideals leave exactly two summands
-
-------------------------------------------------------------------------------------------------
-Part E: representation classification and faithfulness boundary
-------------------------------------------------------------------------------------------------
-  [PASS (A)] E0 ordered Pauli quotients give rho_+(omega)=+iI and rho_-(omega)=-iI
-  [PASS (A)] E1+ Pauli assignment respects every abstract basis product
-  [PASS (A)] E2+ in-ideal units map bijectively and unitaly to standard M_2(C) units  (ideal image rank=4)
-  [PASS (A)] E3+ complexified rho_+ has exactly the opposite ideal as kernel  (rank=4, kernel dim=4)
-  [PASS (A)] E4+ restriction of rho_+ to real Cl(3,0) is faithful  (real rank=8)
-  [PASS (A)] E1- Pauli assignment respects every abstract basis product
-  [PASS (A)] E2- in-ideal units map bijectively and unitaly to standard M_2(C) units  (ideal image rank=4)
-  [PASS (A)] E3- complexified rho_- has exactly the opposite ideal as kernel  (rank=4, kernel dim=4)
-  [PASS (A)] E4- restriction of rho_- to real Cl(3,0) is faithful  (real rank=8)
-  [PASS (A)] E5 simplicity forces exactly one central ideal to act on a simple module  (solutions=[(0, 1), (1, 0)])
-  [PASS (A)] E6 the commutant of the natural M_2(C) module is exactly C I_2  (commutant dimension=1)
-  [PASS (A)] E7 matrix units generate C^2 from every nonzero coordinate direction  (4/4 actions)
-  [PASS (A)] E8 the universal matrix-unit F/G identities are mutually inverse  (5/5 universal identities)
-  [PASS (A)] E9 F(e_j tensor w) is M_2(C)-linear for arbitrary w in E_11 V  (8/8 matrix-unit actions)
-  [PASS (A)] E10 F/G and matrix-unit transitivity force every simple ideal-module to be C^2
-  [PASS (A)] E11 rho_+ and rho_- are inequivalent because omega acts by opposite scalars
-
-------------------------------------------------------------------------------------------------
-Part F: conditional unitary refinement for *-representations
-------------------------------------------------------------------------------------------------
-  [PASS (A)] F1 a generic Gram matrix commuting with the Pauli algebra is scalar  (commutant dimension=1)
-  [PASS (A)] F2 computed scalar Gram normalizes a nontrivial exact intertwiner by sqrt(c), not c
-  [PASS (A)] F3 a nonunitary similarity still preserves all Clifford relations  (9/9 relations)
-  [PASS (A)] F4 without Hermitian generators the same-sign unitary claim is false  (T^dagger T=[[4, 0], [0, 1]])
-
-------------------------------------------------------------------------------------------------
-Part G: live development-tier N1-N8 evidence
-------------------------------------------------------------------------------------------------
-  N1_ROUTE route_id=complex-kernel-solve; route_class=algebraic_rearrangement; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=algebraic full-basis kernel solve for both complex actions; attempt=solve both four-by-eight complex action matrices and compare every kernel with the opposite central ideal; outcome=both exact maps have rank four and opposite-ideal kernel dimension four
-  N1_ROUTE route_id=central-character-separation; route_class=symmetry_or_representation; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=representation central-character and commutant separation; attempt=solve the central idempotent actions and every intertwiner between the plus-i and minus-i omega characters; outcome=a simple module selects one central character and the opposite-character intertwiner space is zero
-  N1_ROUTE route_id=finite-simple-counterexamples; route_class=numerical_or_finite_case; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=finite exact compute of scalar and doubled module candidates; attempt=compute the scalar Clifford Groebner system and the invariant submodule plus nonscalar commutant of the doubled module; outcome=the scalar system is inconsistent and the four-dimensional doubled module is reducible
-  N1_ROUTE route_id=faithful-direct-sum-carrier; route_class=alternate_carrier_or_sector; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=alternate module carrier rho_plus direct-sum rho_minus; attempt=stack both exact complex action maps and test rank eight, invariant summands, and reducibility; outcome=the stacked carrier is faithful only because it contains both invariant chirality summands and is reducible
-  N1_ROUTE route_id=gram-normalization; route_class=normalization_or_units; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=normalization of the intertwiner Gram matrix under Hermitian generators; attempt=solve the Pauli commutant, normalize a positive scalar Gram matrix, and test the nonscalar diagonal similarity; outcome=Hermitian images force scalar normalization while the bare non-Hermitian similarity keeps a nonscalar Gram matrix
-  N2_DISPOSITION open_walls=0; pairwise wall-independence is not applicable. The note contains two separately scoped exact boundaries, not unresolved or load-bearing conditions: (irreducible complexified A-module faithfulness boundary; bare complex-linear equivalence to unitary equivalence boundary); the standard Hermitian Pauli action retains a four-dimensional complex kernel, while the non-Hermitian similar action independently has a nonscalar Gram matrix.
-  N3_DISPOSITION hidden-wall scan closed for the finite algebra certificate: exact inputs are the displayed Clifford relations and finite-dimensional unital complex modules; Hermitian generators are kept explicit only for the conditional unitary refinement; no physical carrier, primitive, imported value, or lattice limit enters.
-  N4_DISPOSITION prior_witnesses=0; every N1 route is ATTEMPTED in the current execution, so no prior residual is reused or mismatched.
-  N5_RESOLUTION per_element: each exact irreducible action kills a computed nonzero opposite-ideal element, with kernel dimensions (4,4); this proves the complexified faithfulness boundary element by element.
-  N5_RESOLUTION per_site: one abstract algebra copy has computed real ranks (8,8) while both complexified kernels remain nonzero; this site-shaped check is formal and does not identify a physical site carrier.
-  N5_RESOLUTION per_mode: the exact central-action solve has 2 chirality choices and forces a simple module to choose exactly one, so the opposite chirality mode lies in its kernel.
-  N5_RESOLUTION per_block: the two computed central blocks have dimensions (4,4); their direct-sum action has rank 8, while either irreducible block action kills the other block exactly.
-  N5_RESOLUTION lattice_wide: NOT TESTED and outside the theorem scope; no lattice-wide negative statement is made. The note expressly limits both boundaries to the abstract finite-algebra/module classification.
-  N6_DISPOSITION partial-closure paths are explicit and require no new axiom, primitive, admission class, or imported value: stacking rho_+ direct-sum rho_- gives exact complex map rank 8 but is reducible, while the named Hermitian-generator condition gives the unitary refinement without changing the four-dimensional kernel of either irreducible complexified action.
-  N7_STEELMAN_ARGUMENT mechanism=alternate module carrier rho_plus direct-sum rho_minus; attempt=stack both exact complex action maps and test rank eight, invariant summands, and reducibility; argument=a hostile reader can stack both chiral actions and obtain a faithful representation, apparently contradicting the stated complexified faithfulness boundary.
-  N7_STEELMAN_RESOLUTION irreducible complexified A-module faithfulness boundary resolved: the stacked action has rank 8 precisely because it contains both central summands, and the computed invariant two-dimensional summands make it reducible; each irreducible action still has a four-dimensional opposite-ideal kernel.
-  N8_DISPOSITION restricted development packet has zero prior witnesses; two analogous failure shapes are rerun locally as the quotient-only-idempotents and unitary-without-hermitian hostile controls, with closed_controls=2; broader repository echo indexing remains audit-orchestrator-owned.
-
-------------------------------------------------------------------------------------------------
-Part H: hostile controls
-------------------------------------------------------------------------------------------------
-  [PASS (A)] H reject hostile fixture: wrong-multiplication-sign
-  [PASS (A)] H reject hostile fixture: quotient-only-idempotents
-  [PASS (A)] H reject hostile fixture: missing-ideal
-  [PASS (A)] H reject hostile fixture: false-faithful-extension
-  [PASS (A)] H reject hostile fixture: fake-one-dimensional-simple
-  [PASS (A)] H reject hostile fixture: fake-extra-dimensional-simple
-  [PASS (A)] H reject hostile fixture: chirality-merger
-  [PASS (A)] H reject hostile fixture: unitary-without-hermitian
-
-------------------------------------------------------------------------------------------------
-Summary
-------------------------------------------------------------------------------------------------
-  Certified from the defining relations:
-    A_C has the exact basis {1,g1,g2,g3,g12,g13,g23,omega}.
-    omega=g1 g2 g3 is central, omega^2=-1, and fixes the idempotent labels.
-    A_C=A_C e_+ direct-sum A_C e_-, with both ideals four-dimensional.
-    Phi_+: A_C e_+ -> M_2(C) and Phi_-: A_C e_- -> M_2(C) are isomorphisms.
-    Therefore A_C has exactly two simple summands and two irreducible module classes.
-    The two complexified irreps kill opposite ideals; their real Cl(3,0)
-    restrictions are faithful. No lattice carrier or physical selection is inferred.
-
-================================================================================================
+CL3_PAULI_IRREP_EXACT_CERTIFICATE arithmetic=Gaussian-rational
+mode=normal table=bit-inversion
+N1_N8_STATUS=PASS current_execution=true
+N1_ROUTE id=complex-kernel-solve; class=algebraic_rearrangement; marker=ATTEMPTED; closed=true; mechanism=algebraic full-basis kernel solve for both complex actions; outcome=both exact maps have rank four and opposite-ideal kernel dimension four
+N1_ROUTE id=central-character-separation; class=symmetry_or_representation; marker=ATTEMPTED; closed=true; mechanism=representation central-character and commutant separation; outcome=a simple module selects one central character and the opposite-character intertwiner space is zero
+N1_ROUTE id=finite-simple-counterexamples; class=numerical_or_finite_case; marker=ATTEMPTED; closed=true; mechanism=finite exact compute of scalar and doubled module candidates; outcome=the scalar system is inconsistent and the four-dimensional doubled module is reducible
+N1_ROUTE id=faithful-direct-sum-carrier; class=alternate_carrier_or_sector; marker=ATTEMPTED; closed=true; mechanism=alternate module carrier rho_plus direct-sum rho_minus; outcome=the stacked carrier is faithful only because it contains both invariant chirality summands and is reducible
+N1_ROUTE id=gram-normalization; class=normalization_or_units; marker=ATTEMPTED; closed=true; mechanism=normalization of the intertwiner Gram matrix under Hermitian generators; outcome=Hermitian images force scalar normalization while the bare non-Hermitian similarity keeps a nonscalar Gram matrix
+N2_DISPOSITION open_walls=0; the two conclusions are separately computed exact boundaries, not unresolved conditions.
+N3_DISPOSITION inputs=displayed_Clifford_relations,finite_unital_complex_modules; Hermitian generators are explicit only in the conditional unitary refinement; no carrier or imported value enters.
+N4_DISPOSITION prior_witnesses=0; all five route families are ATTEMPTED in this execution.
+N5_RESOLUTION per_element: both irreducible complex actions have computed opposite-ideal kernel dimensions (4,4).
+N5_RESOLUTION per_site: one abstract real Cl(3,0) copy has exact image ranks (8,8); no physical site is identified.
+N5_RESOLUTION per_mode: the central-action solve has exactly 2 characters and a simple module selects one.
+N5_RESOLUTION per_block: central-block dimensions are (4,4); stacked rank is 8, while each irrep kills the other block.
+N5_RESOLUTION lattice_wide: NOT TESTED and outside this abstract one-algebra theorem; no lattice-wide negative assertion is made.
+N6_DISPOSITION partial_closures=faithful_reducible_direct_sum,Hermitian_same_sign_unitary_refinement; neither changes the exact irreducible complex kernel boundary.
+N7_STEELMAN_ARGUMENT stack rho_plus and rho_minus to obtain a faithful complex representation, apparently defeating nonfaithfulness.
+N7_STEELMAN_RESOLUTION combined_rank=8; faithful=true; reducible=true; invariant_summand_dimensions=2,2; each irreducible kernel_dimension=4.
+N8_DISPOSITION prior_witnesses=0; local analogous controls closed=2; repository echo indexing remains audit-orchestrator-owned.
+CERTIFIED split=M2(C)+M2(C) irreps=2 dimensions=2,2
+CERTIFIED real_ranks=8,8 complex_kernel_dimensions=4,4
+========================================================================
 TOTAL: PASS=51, FAIL=0
-================================================================================================
+========================================================================
 
 ----- stderr -----
 

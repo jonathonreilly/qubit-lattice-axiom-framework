@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py
+runner_sha256: ca13b7064a17c14d6efe752879e2dd6e04fc9426bcd8c5dd930866df4d97ccac
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 6.90
+status: ok
+----- stdout -----
+PASS all_N_le_2_columns :: True
+PASS coherent_residual :: True
+PASS norm :: True
+PASS clean_auxiliaries :: True
+PASS particle_number :: True
+PASS active_deletions :: True
+SUMMARY_JSON {"assigned_decoded_registers": 494, "boundary": "Positive decoded-gate carrier-copy/uncompute composition on the supplied N<=2 domain.  This is not yet a routed physical-M2 recurrent compiler, Record permanence, time, source/gravity, Born realization, or no-go.", "classical_carrier_handoff_gates": 1897, "decoded_Cycle713_gates": 92, "deletion_residuals": {"carrier_pointer_copy": 1.0540925533894596, "carrier_return_first_swap": 1.0540925533894596, "source_pointer_cleanup": 1.0540925533894596}, "derived": ["literal carrier copy from the retained Cycle-713 endpoint pointer", "direction carrier derived from post-update physical matter endpoints", "exact carrier return to the original matter seam", "exact source-pointer and bank-interface uncompute without host reset", "coherent Cycle-713-plus-history composition on every N<=2 source"], "failures": 0, "maximum_composed_residual": 8.980574805303166e-16, "maximum_dirty_auxiliary_probability_weight": 0.0, "maximum_norm_residual": 1.1102230246251565e-15, "maximum_one_particle_norm_residual": 4.440892098500626e-16, "maximum_one_particle_residual": 6.057936537328431e-16, "maximum_particle_number_leakage": 0, "maximum_sparse_support": 36, "one_particle_sources": 12, "open": ["safe local destination backpressure/refusal", "literal physical-M2 placement and routing of the complete word", "active proper-cubic carrier covariance on the routed layout", "autonomous ACTUAL/ADMISS law and genesis/enforcement", "finite resource exhaustion behavior and unbounded realized history"], "pass": true, "report_sha256": "b59d2a2a10e125a628a7bd7a1f1f225bfab69085b18f2df28202692984b190f4", "sources_N_le_2": 79, "supplied": ["landed decoded Cycle-713 two-cell matter word and endpoint register", "Route-A full source bank, blank destination bank, and clean link work", "one-hot token and complete BINDER/ACTUAL/ADMISS/LAW inputs", "fixed three-phase handoff/append/carrier-return circuit order", "six-bit structural bank-prefix ROM"], "total_decoded_plus_classical_gates": 1989}
+CYCLE718_CYCLE713_CARRIER_RETURN_SUPPORT_PASS
+
+----- stderr -----
+

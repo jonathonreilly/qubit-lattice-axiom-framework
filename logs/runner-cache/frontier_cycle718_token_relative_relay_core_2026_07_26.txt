@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py
+runner_sha256: 110827f5d018a60df61ad82ae29c36ca1b861ce428cba347a7dd64b04e9bdc88
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 118.73
+status: ok
+----- stdout -----
+PASS two_identical_applications :: True
+PASS four_identical_applications :: True
+PASS active_deletions :: True
+SUMMARY_JSON {"assigned_decoded_registers": 1198, "boundary": "Positive finite-capacity token-relative relay on a supplied clean three-bank chain.  The test stops before exhaustion and is not yet a safe recurrent physical-M2 compiler.", "checks": {"active_deletions": true, "four_identical_applications": true, "two_identical_applications": true}, "classical_gates_per_application": 5816, "decoded_Cycle713_gates_per_application": 92, "deletion_residuals": {"edge0_relay_first_swap": 1.2138230622357071, "edge1_handoff_token": 1.0597397774626018, "source_pointer_cleanup": 1.3981181454925433}, "derived": ["carrier-only relay across tokenless completed banks", "token/head/rotor handoff only at a full allocator frontier", "carrier return through the same active edge tubes", "identical-word recurrence for two and four applications on all N<=2 sources"], "domains": {"2": {"applications": 2, "maximum_bad_history_or_auxiliary_probability_weight": 0.0, "maximum_norm_residual": 1.5543122344752192e-15, "maximum_particle_number_leakage": 0.0, "maximum_sparse_support": 38, "sources_N_le_2": 79}, "4": {"applications": 4, "maximum_bad_history_or_auxiliary_probability_weight": 0.0, "maximum_norm_residual": 2.6645352591003757e-15, "maximum_particle_number_leakage": 0.0, "maximum_sparse_support": 172, "sources_N_le_2": 79}}, "edge_tubes": [{"handoff_latch": 434, "handoff_work": 190, "relay_latch": 625, "relay_work": 190}, {"handoff_latch": 816, "handoff_work": 190, "relay_latch": 1007, "relay_work": 190}], "open": ["transient complete-blank NEW predicate and append ACK", "exact pending-event refusal under occupied, dirty, or exhausted destinations", "edge-local predecessor/frontier replacing structural bank-index ROM", "literal physical-M2 placement/routing and active proper-cubic covariance", "unbounded resources, autonomous ACTUAL/ADMISS, Record/Born/time/source bridges"], "pass": true, "report_sha256": "b5b95a12747e214be9d5ca1db86df13d28eea7d8e7477f1818df1c29fc904dee", "supplied": ["decoded Cycle-713 two-cell matter word at one fixed source seam", "three-bank chain with one token, blank downstream banks, and clean link tubes", "BINDER/ACTUAL/ADMISS/LAW event inputs and fixed forward/reverse edge order", "six-bit structural bank-index prefix ROM"]}
+CYCLE718_TOKEN_RELATIVE_RELAY_SUPPORT_PASS
+
+----- stderr -----
+

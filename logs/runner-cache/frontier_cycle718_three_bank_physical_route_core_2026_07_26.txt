@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py
+runner_sha256: 116ae065c9f7ebc6d584c93a8a7ddbfe1874e7187370284a025d0dad24833a1b
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 28.54
+status: ok
+----- stdout -----
+PASS collision_free_placement :: True
+PASS literal_nearest_neighbor_route :: True
+PASS active_route_deletion :: True
+PASS translated_bank_and_link_modules :: True
+PASS proper_cubic_active_covariance :: True
+SUMMARY_JSON {"boundary": "Positive physical-M2 placement/route of the finite four-application relay word only.  Routing does not repair its still-open exhaustion domain.", "checks": {"active_route_deletion": true, "collision_free_placement": true, "literal_nearest_neighbor_route": true, "proper_cubic_active_covariance": true, "translated_bank_and_link_modules": true}, "covariance": {"active_pointer_direction_failures": 0, "direction_product_failures": 0, "instruction_coordinate_failures": 0, "ordered_frame_products": 576, "proper_cubic_frames": 24, "routed_NN_frame_failures": 0, "translation_failures": 0}, "derived": ["collision-free literal placement sharing the Cycle-713 endpoint register", "nearest-neighbor route of Cycle-713 plus edge-local three-bank recurrence", "exact translated bank/link module geometry", "active endpoint-direction naturality under all proper-cubic frames/products"], "open": ["NEW/append-ACK and pending-event backpressure at dirty/exhausted frontier", "physical routing of the eventual ACK/pending repair", "general overlapping-chain genesis/enforcement and resource growth", "numeric Cycle-612 adapter and time/Record/Born/source-gravity bridges"], "pass": true, "placement": {"allocator_bank_M2": 393, "allocator_edge_tube_M2": 764, "bank_translation": [0, 0, 10], "bank_translation_failures": 0, "decoded_wire_sites": 1198, "link_translation_failures": 0, "physical_assigned_M2": 1199, "placement_collisions": 0, "source_endpoint_register_M2": 3, "source_literal_code_M2": 39}, "report_sha256": "656437c7b221967755ec6862c125c4564489e3ee6603f485fbb3163faa31b61f", "route": {"allocator_physical_primitives": 50892, "blank_route_work_M2": 803, "coin_QR_residual": 1.3496230663401984e-15, "decoded_Cycle713_gates": 92, "maximum_route_distance": 24, "non_NN_failures": 0, "operand_order_failures": 0, "route_deletion_detected_macros": 15256, "route_return_failures": 0, "routed_nearest_neighbor_gates": 274118, "routed_word_sha256": "b7bc19064350edb6764c6b725964202ab63c1bbc85ad8f72d53e50b788de9712", "semantic_allocator_gates": 5742, "source_physical_primitives": 1400, "total_physical_primitives": 52292, "touched_M2": 2002}, "supplied": ["Cycle-713 physical two-cell placement/decoder and blank route work", "three 131-M2 banks and two edge-exclusive 382-M2 link tubes", "fixed proper-cubic coframe relating matter seam and history chain", "finite clean genesis, one-token sector, and fixed circuit layer order"]}
+CYCLE718_THREE_BANK_PHYSICAL_ROUTE_SUPPORT_PASS
+
+----- stderr -----
+

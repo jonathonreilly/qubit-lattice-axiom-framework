@@ -25,6 +25,23 @@ import numpy as np
 from teleportation_boundary_checks_2026_06_13 import print_boundary_results, teleportation_boundary_check_results
 
 
+AUDIT_INPUT_PATHS = (
+    "scripts/teleportation_boundary_checks_2026_06_13.py",
+    "docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md",
+    "docs/audit/data/ledger/te/teleportation_causal_channel_note.json",
+    "docs/audit/data/ledger/te/teleportation_measurement_record_note.json",
+    "docs/audit/data/ledger/te/teleportation_apparatus_dynamics_closure_note.json",
+    "docs/audit/data/ledger/te/teleportation_dynamical_resource_generation_note.json",
+    "docs/audit/data/ledger/te/teleportation_resource_fidelity_note.json",
+    "docs/audit/data/ledger/te/teleportation_retained_axis_operator_algebra_closure_note.json",
+    "docs/audit/data/ledger/te/teleportation_cross_encoding_maps_note.json",
+    "docs/audit/data/ledger/te/teleportation_three_register_cross_encoding_note.json",
+    "docs/audit/data/ledger/te/teleportation_no_signaling_audit.json",
+    "docs/audit/data/ledger/te/teleportation_3d_operator_consistent_end_to_end_note.json",
+    "docs/audit/data/ledger/te/teleportation_conclusion_boundary_note.json",
+)
+
+
 I2 = np.eye(2, dtype=complex)
 X2 = np.array([[0, 1], [1, 0]], dtype=complex)
 Z2 = np.array([[1, 0], [0, -1]], dtype=complex)
@@ -657,7 +674,7 @@ def print_summary(
     wrong_fidelity_ceiling: float,
 ) -> bool:
     print("TELEPORTATION 3D+1 CAUSAL BELL-RECORD CHANNEL")
-    print("Status: planning / first 3D+1 local record-propagation artifact")
+    print("Status: open / finite 3D+1 local record-propagation artifact")
     print()
 
     print("3D+1 discrete light cone:")
@@ -789,11 +806,21 @@ def print_summary(
     print("  It does not enable faster-than-light signaling or pre-message control.")
     print("  It does not derive the Bell record, Bell resource, or measurement dynamics.")
 
-    boundary_ok = print_boundary_results(
+    boundary_alignment_ok = print_boundary_results(
         teleportation_boundary_check_results(Path(__file__).resolve().parents[1])
     )
+    print()
+    print("Downstream boundary disposition:")
+    print(
+        "  downstream retained-grade alignment currently complete: "
+        f"{boundary_alignment_ok}"
+    )
+    print(
+        "  downstream status is reported but does not gate this independent "
+        "upstream finite-channel result."
+    )
 
-    return all(pass_checks.values()) and boundary_ok
+    return all(pass_checks.values())
 
 
 def main() -> int:

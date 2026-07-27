@@ -26,8 +26,10 @@
 #            to the new path rather than pruning it.
 #
 # Not an exhaustive list: anything that stops the detector yielding that
-# (note, target) pair silences the key the same way. See the block comment
-# above PROSE_STATUS_STRENGTH in audit_lint.py for the full set.
+# (note, target) pair silences the key the same way -- including guards not
+# named anywhere, such as the line-length cap and the token-inside-reference
+# and self-reference skips. See the block comment above PROSE_STATUS_STRENGTH
+# in audit_lint.py for a fuller list.
 #
 # It lives beside the scripts rather than under docs/audit/data/ because that
 # directory is restored wholesale from origin/main before a science PR lands,

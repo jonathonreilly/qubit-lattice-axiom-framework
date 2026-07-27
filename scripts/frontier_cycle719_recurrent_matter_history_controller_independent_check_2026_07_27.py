@@ -13,6 +13,7 @@ from __future__ import annotations
 from hashlib import sha256
 import json
 from pathlib import Path
+import subprocess
 import sys
 
 
@@ -55,6 +56,13 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
     "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
     "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
     "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
     "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
     "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
@@ -78,7 +86,7 @@ import frontier_cycle719_recurrent_matter_history_controller_2026_07_26 as X
 K = X.K
 P = len(X.PROGRAM)
 D = X.M.R12.TOTAL_WIRES
-EXPECTED_RUNNER_SHA256 = "f61dc10de48304d2e747a78e9a72945604d39e85a13e9d5aa54fa270a24031f8"
+EXPECTED_RUNNER_SHA256 = "ef9398b3f27dcbb540446d6c5c165c5803014cffa37da59071751810a7ac9978"
 EXPECTED_FORWARD_MANIFEST_SHA256 = "1186170401b384fbaf410bb5490cb380954b41cb4501d105ee5f8115ce39043e"
 EXPECTED_INVERSE_MANIFEST_SHA256 = "6903107d1d9a657b8a805e8c68b512a30054b94e4aed9438ba6c732fcb1a7b2c"
 EXPECTED_FULL_PHYSICAL = 96_230_780
@@ -86,6 +94,84 @@ EXPECTED_FULL_ROUTED = 1_731_028_378
 EXPECTED_HELD_FORWARD_SHA256 = "a0486a07d212dfec8d8724180a568240d161ee40518a27ef403d0c633ce7c966"
 EXPECTED_HELD_INVERSE_SHA256 = "b56f377b8bab58757dfb0dd69949f7ce8fb6eb757a1763228ba92db080955e64"
 AUDIT_TIMEOUT_SEC = 900
+RUNTIME_CLOSURE_RUNNERS = (
+    "frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+    "frontier_cycle719_recurrent_matter_history_controller_independent_check_2026_07_27.py",
+)
+
+
+def runtime_closure_rows():
+    """Trace each entry in a fresh process, including importlib-loaded modules."""
+    tracer = r'''
+import importlib
+import json
+from pathlib import Path
+import sys
+
+scripts = Path(sys.argv[1]).resolve()
+root = scripts.parent
+sys.path.insert(0, str(scripts))
+module = importlib.import_module(sys.argv[2])
+loaded = set()
+for candidate in tuple(sys.modules.values()):
+    source = getattr(candidate, "__file__", None)
+    if source is None:
+        continue
+    path = Path(source).resolve()
+    try:
+        relative = path.relative_to(root).as_posix()
+    except ValueError:
+        continue
+    if relative.startswith("scripts/") and path.suffix == ".py":
+        loaded.add(relative)
+declared = tuple(
+    path for path in module.AUDIT_INPUT_PATHS if path.startswith("scripts/")
+)
+print("RUNTIME_CLOSURE_JSON", json.dumps({
+    "declared": declared,
+    "loaded": sorted(loaded),
+}, sort_keys=True))
+'''
+    rows = {}
+    for filename in RUNTIME_CLOSURE_RUNNERS:
+        completed = subprocess.run(
+            (sys.executable, "-c", tracer, str(SCRIPTS), Path(filename).stem),
+            cwd=X.ROOT,
+            text=True,
+            capture_output=True,
+            check=False,
+            timeout=120,
+        )
+        marker = "RUNTIME_CLOSURE_JSON "
+        payloads = [
+            line[len(marker):]
+            for line in completed.stdout.splitlines()
+            if line.startswith(marker)
+        ]
+        if completed.returncode or len(payloads) != 1:
+            rows[filename] = {
+                "returncode": completed.returncode,
+                "missing": ("trace_failed",),
+                "unexpected": (),
+                "stderr": completed.stderr[-1000:],
+            }
+            continue
+        payload = json.loads(payloads[0])
+        declared = tuple(payload["declared"])
+        loaded = tuple(payload["loaded"])
+        rows[filename] = {
+            "returncode": completed.returncode,
+            "declared_scripts": len(declared),
+            "runtime_loaded_scripts": len(loaded),
+            "missing": tuple(path for path in loaded if path not in declared),
+            "unexpected": tuple(path for path in declared if path not in loaded),
+        }
+    return rows
 
 
 def apply_word(value, word):
@@ -503,9 +589,16 @@ def physical_rows():
 
 
 def main():
+    runtime_closures = runtime_closure_rows()
     controller = controller_rows()
     physical = physical_rows()
     checks = {
+        "runtime_import_closures_exact": all(
+            row["returncode"] == 0
+            and not row["missing"]
+            and not row["unexpected"]
+            for row in runtime_closures.values()
+        ),
         "actual_92_gate_matter_word": physical["decoded_matter_gates"] == 92,
         "actual_H130_all_six_branches": (
             controller["matter_branches"] == 6
@@ -586,9 +679,10 @@ def main():
     report = {
         "checks": checks,
         "pass": all(checks.values()),
+        "runtime_import_closures": runtime_closures,
         "controller": controller,
         "physical": physical,
-        "attacked_runner": str(Path(X.__file__).resolve()),
+        "attacked_runner": Path(X.__file__).resolve().relative_to(X.ROOT).as_posix(),
         "attacked_runner_sha256": observed_runner_sha256,
         "expected_runner_sha256": EXPECTED_RUNNER_SHA256,
         "boundary": (

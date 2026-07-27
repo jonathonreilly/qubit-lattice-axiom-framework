@@ -40,6 +40,15 @@ NEW_INPUT_PATHS = (
     "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
     "scripts/frontier_cycle719_recurrent_matter_history_controller_independent_check_2026_07_27.py",
 )
+EXPECTED_DYNAMIC_IMPORT_PATHS = (
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+)
 AUDIT_INPUT_PATHS = (
     "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
     "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
@@ -48,7 +57,6 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
     "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
-    "scripts/frontier_cycle719_recurrent_matter_history_controller_independent_check_2026_07_27.py",
     "docs/PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md",
     "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
     "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md",
@@ -80,7 +88,6 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
     "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
     "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
-    "scripts/frontier_cycle718_cycle612_interval_bridge_2026_07_26.py",
     "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
     "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
     "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
@@ -94,10 +101,14 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
     "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
     "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
-    "scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py",
     "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
     "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
     "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
     "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
     "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
     "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
@@ -134,11 +145,71 @@ CONTROLLER_H_FAST = fast_classical_word(CONTROLLER_H_WORD)
 CONTROLLER_H_INVERSE_FAST = tuple(reversed(CONTROLLER_H_FAST))
 
 
-def transitive_repo_script_paths():
+def _constant_text(node, names):
+    if isinstance(node, ast.Constant) and isinstance(node.value, str):
+        return node.value
+    if isinstance(node, ast.Name):
+        return names.get(node.id)
+    if isinstance(node, ast.BinOp) and isinstance(node.op, ast.Add):
+        left = _constant_text(node.left, names)
+        right = _constant_text(node.right, names)
+        return left + right if left is not None and right is not None else None
+    return None
+
+
+def _dynamic_repo_import_names(tree, module_paths):
+    """Recover importlib loader targets from source, without importing them."""
+    names = {}
+    for node in tree.body:
+        if isinstance(node, ast.Assign) and len(node.targets) == 1:
+            target = node.targets[0]
+            value = _constant_text(node.value, names)
+            if isinstance(target, ast.Name) and value is not None:
+                names[target.id] = value
+
+    loaders = {}
+    for node in tree.body:
+        if not isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+            continue
+        for call in (
+            item for item in ast.walk(node)
+            if isinstance(item, ast.Call)
+            and isinstance(item.func, ast.Attribute)
+            and item.func.attr == "spec_from_file_location"
+            and item.args
+        ):
+            module_expr = call.args[0]
+            direct = _constant_text(module_expr, names)
+            parameter = None
+            if isinstance(module_expr, ast.Name):
+                for index, argument in enumerate(node.args.args):
+                    if argument.arg == module_expr.id:
+                        parameter = index
+                        break
+            loaders[node.name] = (direct, parameter)
+
+    imported = set()
+    for call in ast.walk(tree):
+        if not isinstance(call, ast.Call) or not isinstance(call.func, ast.Name):
+            continue
+        loader = loaders.get(call.func.id)
+        if loader is None:
+            continue
+        direct, parameter = loader
+        module_name = direct
+        if parameter is not None and parameter < len(call.args):
+            module_name = _constant_text(call.args[parameter], names)
+        if module_name in module_paths:
+            imported.add(module_name)
+    return imported
+
+
+def transitive_repo_script_paths(entry_path, *, include_dynamic=True):
     scripts_dir = ROOT / "scripts"
     module_paths = {path.stem: path for path in scripts_dir.glob("*.py")}
-    pending = [Path(__file__).resolve()]
+    pending = [Path(entry_path).resolve()]
     seen = set()
+    dynamic_seen = set()
     while pending:
         path = pending.pop()
         if path in seen:
@@ -151,30 +222,86 @@ def transitive_repo_script_paths():
                 imported.extend(alias.name.split(".")[0] for alias in node.names)
             elif isinstance(node, ast.ImportFrom) and node.module:
                 imported.append(node.module.split(".")[0])
+        dynamic = (
+            _dynamic_repo_import_names(tree, module_paths)
+            if include_dynamic else set()
+        )
+        dynamic_seen.update(module_paths[name] for name in dynamic)
+        imported.extend(dynamic)
         pending.extend(
             module_paths[name]
             for name in imported
             if name in module_paths and module_paths[name] not in seen
         )
-    return tuple(sorted(path.relative_to(ROOT).as_posix() for path in seen))
+    return (
+        tuple(sorted(path.relative_to(ROOT).as_posix() for path in seen)),
+        tuple(sorted(path.relative_to(ROOT).as_posix() for path in dynamic_seen)),
+    )
+
+
+def declared_repo_script_paths(entry_path):
+    tree = ast.parse(Path(entry_path).read_text(), filename=str(entry_path))
+    for node in tree.body:
+        if not isinstance(node, ast.Assign):
+            continue
+        if not any(
+            isinstance(target, ast.Name) and target.id == "AUDIT_INPUT_PATHS"
+            for target in node.targets
+        ):
+            continue
+        declared = ast.literal_eval(node.value)
+        return tuple(path for path in declared if path.startswith("scripts/"))
+    raise AssertionError(("missing literal AUDIT_INPUT_PATHS", str(entry_path)))
 
 
 def provenance_certificate():
-    transitive = transitive_repo_script_paths()
+    runner_paths = tuple(
+        path for path in NEW_INPUT_PATHS if path.startswith("scripts/")
+    )
+    closure_rows = {}
+    dynamic_union = set()
+    direct_dynamic_union = set()
+    for runner_path in runner_paths:
+        transitive, direct_dynamic = transitive_repo_script_paths(ROOT / runner_path)
+        ordinary, _ = transitive_repo_script_paths(
+            ROOT / runner_path, include_dynamic=False
+        )
+        dynamic = tuple(path for path in transitive if path not in ordinary)
+        declared_scripts = declared_repo_script_paths(ROOT / runner_path)
+        dynamic_union.update(dynamic)
+        direct_dynamic_union.update(direct_dynamic)
+        closure_rows[runner_path] = {
+            "declared_scripts": len(declared_scripts),
+            "transitive_repo_scripts": len(transitive),
+            "dynamic_import_scripts": dynamic,
+            "missing_transitive_scripts": tuple(
+                path for path in transitive if path not in declared_scripts
+            ),
+            "unexpected_declared_scripts": tuple(
+                path for path in declared_scripts if path not in transitive
+            ),
+        }
+    primary_path = "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py"
+    primary = closure_rows[primary_path]
     declared = tuple((ROOT / path).resolve() for path in AUDIT_INPUT_PATHS)
-    declared_scripts = {
-        path for path in AUDIT_INPUT_PATHS if path.startswith("scripts/")
-    }
     return {
         "declared_paths": len(declared),
         "duplicate_declared_paths": len(declared) - len(set(declared)),
         "declared_path_failures": sum(
             not path.is_file() or not path.is_relative_to(ROOT) for path in declared
         ),
-        "transitive_repo_scripts": len(transitive),
-        "missing_transitive_scripts": tuple(
-            path for path in transitive if path not in declared_scripts
+        "transitive_repo_scripts": primary["transitive_repo_scripts"],
+        "missing_transitive_scripts": primary["missing_transitive_scripts"],
+        "unexpected_declared_scripts": primary["unexpected_declared_scripts"],
+        "dynamic_import_scripts": tuple(sorted(dynamic_union)),
+        "direct_dynamic_loader_scripts": tuple(sorted(direct_dynamic_union)),
+        "expected_dynamic_import_scripts": EXPECTED_DYNAMIC_IMPORT_PATHS,
+        "runner_closure_failures": sum(
+            bool(row["missing_transitive_scripts"])
+            or bool(row["unexpected_declared_scripts"])
+            for row in closure_rows.values()
         ),
+        "runner_closures": closure_rows,
         "new_input_sha256": {
             path: sha256((ROOT / path).read_bytes()).hexdigest()
             for path in NEW_INPUT_PATHS if (ROOT / path).is_file()
@@ -1153,6 +1280,10 @@ def main():
             provenance["declared_path_failures"] == 0
             and provenance["duplicate_declared_paths"] == 0
             and not provenance["missing_transitive_scripts"]
+            and not provenance["unexpected_declared_scripts"]
+            and provenance["runner_closure_failures"] == 0
+            and provenance["dynamic_import_scripts"]
+            == provenance["expected_dynamic_import_scripts"]
         ),
         "actual_Cycle713_transition": (
             instrument["failures"] == instrument["endpoint_aux_cleanup_failures"] == 0

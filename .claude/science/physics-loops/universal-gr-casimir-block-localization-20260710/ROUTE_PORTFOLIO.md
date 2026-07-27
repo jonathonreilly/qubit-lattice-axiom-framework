@@ -6,3 +6,6 @@
    classification without closing the restricted-packet calculation.
 3. **Rejected:** import universal-GR sibling notes; they are unnecessary for
    the stipulated representation theorem and would create open dependencies.
+4. **Chosen after re-audit:** narrow the note metadata to the neutral theorem
+   already proved and add a dated downstream-citation boundary. A new physical
+   carrier/selection bridge is neither needed nor available for this claim.

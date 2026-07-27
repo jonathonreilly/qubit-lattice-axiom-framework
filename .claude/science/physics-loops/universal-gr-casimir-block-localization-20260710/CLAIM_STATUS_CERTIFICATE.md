@@ -1,4 +1,5 @@
-actual_current_surface_status: proposed_retained
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: positive_theorem
 trace_class: direct_blocker_closure
 reachability_to_target: closes
 conditional_surface_status: null
@@ -16,5 +17,7 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 
 This certificate applies only to the stipulated fixed-`3 + 1`
-representation theorem. For the broader universal-GR dynamics lane the result
-is support only; no Hessian or Einstein/Regge operator localization is claimed.
+representation theorem. The source note now states that scope in metadata and
+in a dated downstream-citation boundary. For the broader universal-GR dynamics
+lane the result is support only; no carrier, Hessian, intrinsic lapse/trace
+selector, or Einstein/Regge operator localization is claimed.

@@ -5,8 +5,15 @@ The restricted-packet derivation is now self-contained. The note displays
 rank-three/rank-five projectors as `(C+6I)/4` and `-(C+2I)/4`. The runner and
 SHA-pinned cache reproduce those identities with `PASS=8 FAIL=0 TOTAL=8`.
 
+After that algebraic closure, independent audit identified a scope residual:
+the row still read as a physical Universal-GR localization even though the
+proved object is neutral. The note metadata now limits the claim to the
+stipulated `(Sym^2(R^4), rho)` representation, and a dated boundary forbids
+downstream use as a carrier/Hessian theorem, intrinsic lapse/trace selector, or
+physical ADM identification.
+
 Pipeline validation found the target as a dependency-free
 `positive_theorem` in the ordinary audit queue; generated audit surfaces were
-removed afterward. Exact next action: independently re-audit
-`universal_gr_casimir_block_localization_note`. The outer science-fix
+removed afterward. Exact next action: independently re-audit the neutral scope
+of `universal_gr_casimir_block_localization_note`. The outer science-fix
 integrator owns commit, push, cleanup, and PR handling.

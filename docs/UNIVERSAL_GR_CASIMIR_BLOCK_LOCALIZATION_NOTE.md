@@ -4,10 +4,15 @@
 **Status authority:** source-note proposal only; audit verdict and effective
 status are set by the independent audit lane.
 **Date:** 2026-04-14
-**Updated:** 2026-07-10 (restricted-packet closure: explicit complement
-generator matrices, Casimir multiplication, and polynomial projectors)
+**Updated:** 2026-07-27 (neutral-scope and downstream-citation boundary;
+2026-07-10 restricted-packet closure: explicit complement generator matrices,
+Casimir multiplication, and polynomial projectors)
 **Role:** neutral finite-dimensional representation theorem on a stipulated
 `R + R^3` decomposition
+**Claim scope:** exact decomposition of the stipulated pair
+`(Sym^2(R^4), rho)` relative to its supplied temporal line, spatial complement,
+Frobenius metric, and displayed frame; no Universal-GR carrier, Hessian, or
+physical lapse/trace selector is claimed.
 **Primary runner:** [`scripts/frontier_universal_gr_casimir_block_localization.py`](../scripts/frontier_universal_gr_casimir_block_localization.py)
 **Cached runner output:** [`logs/runner-cache/frontier_universal_gr_casimir_block_localization.txt`](../logs/runner-cache/frontier_universal_gr_casimir_block_localization.txt)
 (`runner_sha256 = 5f4a8545b623e294b886754017fbe9b3e666a26fc474b215daf6fc738f2a322e`; `exit_code = 0`; `status = ok`; `PASS=8 FAIL=0 TOTAL=8`).
@@ -376,6 +381,13 @@ only to its exact runner and cached output.
 - Runner imports: `sympy` only. No `numpy`, no I/O, no external data.
 
 ## What this theorem does NOT close
+
+**Downstream-citation boundary (2026-07-27):** downstream work may cite this
+note only for the neutral decomposition on the explicitly stipulated
+`(V, rho)` representation. It may not cite this note as a derivation of a
+Universal-GR carrier or Hessian, an `SO(3)`-intrinsic separation of the two
+trivial lapse/trace summands, or a physical ADM identification; each such use
+requires a separate bridge theorem.
 
 - No preferred basis is chosen inside the degenerate `j = 1` shift block
   or the `j = 2` shear block. These are irreducible `SO(3)`

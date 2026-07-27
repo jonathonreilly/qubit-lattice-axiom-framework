@@ -1138,6 +1138,7 @@ def main() -> None:
         and inherited["maximum_number_leakage"] < TOL
         and inherited["literal_segment_phase_failures"] == 0,
     }
+    checks = {label: bool(passed) for label, passed in checks.items()}
     report = {
         "cycle": 715,
         "authority": "none",

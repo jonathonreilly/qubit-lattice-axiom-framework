@@ -1,6 +1,7 @@
 # Teleportation Resource-Fidelity Note
 
 **Date:** 2026-04-25
+**Claim type:** bounded_theorem
 **Status:** bounded open-gate derivation artifact; not a manuscript claim surface
 **Runner:** `scripts/frontier_teleportation_resource_fidelity.py`
 
@@ -16,6 +17,28 @@ matrix `rho_RB`.
 
 It does not claim matter teleportation, mass transfer, charge transfer, energy
 transport, or faster-than-light communication.
+
+## Direct dependency surface
+
+The fixed-protocol theorem below consumes the following direct suppliers.
+Each link has a deliberately narrow role; together they make the
+resource/operation supply line explicit without enlarging this note's claim
+beyond ordinary qubit-state teleportation.  Dependency audit and effective
+statuses are pipeline-derived; this source note does not set them.
+
+| Direct dependency | Role used here | Boundary preserved here |
+| --- | --- | --- |
+| [teleportation_dynamical_resource_generation_note](TELEPORTATION_DYNAMICAL_RESOURCE_GENERATION_NOTE.md) | Supplies explicit physical two-qubit reduced density matrices produced from product states by finite unitary evolution on its finite small surface. | It is a non-vacuity/resource-generation supplier only.  The theorem here still quantifies over any separately supplied physical `rho_RB`; it does not inherit a general preparation or scaling claim. |
+| [teleportation_retained_axis_operator_algebra_closure_note](TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md) | Supplies the ideal logical Bell projectors, the `Z^z X^x` Pauli composition law, and branch-conditioned correction on the retained-axis qubit algebra. | It supplies ideal logical operators, not a hardware measurement, noisy control, or apparatus theorem. |
+| [teleportation_causal_channel_note](TELEPORTATION_CAUSAL_CHANNEL_NOTE.md) | Supplies an explicit positive-latency two-bit Bell-record carrier and the post-delivery use of that record for Bob's correction. | It does not derive the Bell bits or a durable measurement apparatus; this note consumes only the ideal classical-record interface named in its scope. |
+
+No approved framework primitive is being used as a substitute for resource
+preparation, measurement dynamics, or record production.  Those stronger
+physical questions remain outside this bounded theorem.  Conditional on the
+three supplied interfaces just enumerated, the result proved here is the
+universal algebraic map from `rho_RB` to the fixed-protocol average fidelity;
+no numerical value or special resource family from a dependency enters that
+proof.
 
 ## Harness
 

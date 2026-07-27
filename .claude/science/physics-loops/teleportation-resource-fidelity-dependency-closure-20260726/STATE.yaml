@@ -1,0 +1,43 @@
+loop_slug: teleportation-resource-fidelity-dependency-closure-20260726
+mode: run
+date_started: 2026-07-26
+started_at_utc: 2026-07-27T02:30:40Z
+runtime_budget: approximately 15m science-fix window
+target: candidate-retained-grade
+branch: claude/science-fix/teleportation_resource_fidelity_note-ee5c2bb8
+base_commit_at_start: 460e7ed266f25b32e7a184ed0c768b5623dc2dcb
+latest_origin_main_observed: c0d9397c6f6e28b902bd011689eca07bdc8edd07
+current_goal: >-
+  Close the audited_conditional missing_dependency_edge on the fixed-protocol
+  teleportation resource-fidelity bounded theorem.
+cycle_count: 1
+block_count: 1
+active_route: acyclic retained-supplier wiring
+hard_residual: null
+lock_status: >-
+  Global lock unavailable because its configured path is outside the writable
+  sandbox; branch-local supervisor lock acquired for the cycle and released
+  at handoff.
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/TELEPORTATION_RESOURCE_FIDELITY_NOTE.md
+  - .claude/science/physics-loops/teleportation-resource-fidelity-dependency-closure-20260726/
+open_imports: []
+no_go_routes: []
+review_disposition: pass_with_bounded_claims
+landing_status: blocked_pending_latest_base_manifest
+pr_status: unavailable_in_sandbox
+next_exact_action: >-
+  Apply the note patch onto origin/main c0d9397c6f6e28b902bd011689eca07bdc8edd07
+  or newer, regenerate and stage citation_graph_manifest.json there, enforce
+  graph invariants, land the source plus manifest, and request independent
+  re-audit.
+stop_condition: source repair verified and locally reviewed; latest-base landing handoff recorded

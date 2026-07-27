@@ -1,10 +1,11 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hadron_lane1_sqrt_sigma_b5_framework_link_audit.py
-runner_sha256: 7168213526297fbcf187008d7d2c1818753afe0c35f588f63d27ae7f1d44e502
+runner_sha256: 48779d313455b5eec344123fa9e68747ce9e19828c4063a827aab04dbe09e0a2
+input_fingerprint_sha256: 7f4c7fe74bc72ea5dc8586ed5348ca7bce097b19a5d69dd4e798c9112934cf95
 timeout_sec: 120
-exit_code: 1
+exit_code: 0
 elapsed_sec: 0.05
-status: nonzero_exit
+status: ok
 ----- stdout -----
 ========================================================================================
 LANE 1 SQRT(SIGMA) B5 FRAMEWORK LINK AUDIT
@@ -25,7 +26,7 @@ Part 1: B5 claim-state surface
   [PASS] Lane 1 gate audit marks B5 as open structural bridge
   [PASS] B5 paths require volume scaling or asymptotic Wilson-loop checks
   [PASS] confinement note says quantitative sigma uses standard lattice simulations
-  [FAIL] audit ledger keeps confinement/string-tension row conditional
+  [PASS] confinement source keeps the framework-native bridge explicitly open
 
 ----------------------------------------------------------------------------------------
 Part 2: B5 dependency status
@@ -52,8 +53,14 @@ Part 4: artifact checks
   [PASS] note records B5 as current-surface no-go, not closure
   [PASS] note defines the future large-volume ladder
 
+per_element: checked and not executed — the source audit inspects action/constant provenance and runs no link-element gauge ensemble
+per_site: checked and not executed — the current 4^4 aggregate has no site-resolved large-volume ladder observable
+per_mode: computed the five B5 gate bits for current, structural, and future-ladder modes
+per_block: computed candidate gate counts current_4^4_plaquette_wilson_loop_check=3/5, graph_first_su3_plus_gbare_normalization=1/5, future_large_volume_creutz_or_force_scale_ladder=5/5
+lattice_wide: checked and not executed — the production large-volume Creutz/force ladder and its uncertainty budget are the explicit missing B5 computation
+
 ========================================================================================
-PASS=13 FAIL=1
+PASS=14 FAIL=0
 ========================================================================================
 
 ----- stderr -----

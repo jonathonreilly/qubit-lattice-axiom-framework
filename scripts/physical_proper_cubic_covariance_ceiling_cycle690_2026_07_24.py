@@ -497,6 +497,28 @@ def main() -> int:
         "chirality_choice_called_parity_violation": False,
         "any_gravity_stress_energy_or_einstein_claim": False,
     }
+    print(
+        "per_element: computed all 28 cube-vertex pairs and every "
+        "nondegenerate four-vertex tetrahedron exactly"
+    )
+    print(
+        "per_site: computed the faithful transitive action on all eight "
+        "unit-cube vertices"
+    )
+    print(
+        "per_mode: computed all 24 proper cubic rotations and all 576 "
+        "group products"
+    )
+    print(
+        f"per_block: computed the five-tetrahedron ceiling block "
+        f"(stabilizer {len(stab_five)}) and Kuhn block "
+        f"(stabilizer {len(stab_kuhn)})"
+    )
+    print(
+        "lattice_wide: checked and not executed — the executed claim is "
+        "local to one unit-cube substrate; global periodic or dynamical "
+        "covariance is outside scope"
+    )
     summary["resources"] = {"elapsed_seconds": perf_counter() - started}
     summary["passes"] = PASS
     summary["failures"] = FAIL

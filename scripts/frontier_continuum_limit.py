@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-Continuum-limit companion for the bounded Wilson weak-field distance law.
+Finite-L and extrapolation-diagnostic companion for the bounded Wilson
+weak-field distance law.
 
 Goal:
-  Test whether the distance-law exponent converges to exactly -2.0
-  as the lattice becomes finer (larger side at fixed physical problem).
+  Compute the finite-L distance-law table and report how several explicitly
+  chosen extrapolation ansatzes behave.  This runner does not establish
+  convergence or select a continuum extrapolation model.
 
 Method:
   For each lattice side L in [12, 15, 18, 20, 22, 25]:
@@ -17,16 +19,16 @@ Method:
   Then extrapolate:
     alpha(L) = alpha_inf + c / L^p
 
-  If alpha_inf approaches -2 with small error on this same open-Wilson
-  convention, the distance-law side of the bounded Wilson lane is
-  Newton-compatible in the weak-field limit.
+  Any alpha_inf value is a model-dependent diagnostic only.  The binding
+  evidence is the finite-L table; a continuum claim needs independent model
+  selection, convergence-rate, finite-volume, and error-budget authority.
 
 Parameters: G=5, mu2=0.001, MASS=0.3, WILSON_R=1.0, DT=0.08, N_STEPS=15
 
 Important boundary:
   This runner is a same-convention Wilson calibration study. It does not by
-  itself close full Newton closure, both-masses closure, or the broader
-  cross-runner normalization debate.
+  itself close a continuum limit, full Newton closure, both-masses closure,
+  or the broader cross-runner normalization debate.
 """
 
 from __future__ import annotations
@@ -249,12 +251,13 @@ def continuum_extrapolation(L_vals, alpha_vals, alpha_errs=None):
 
 def main():
     print("=" * 90)
-    print("CONTINUUM LIMIT: WILSON TWO-BODY INVERSE-SQUARE LAW")
+    print("FINITE-L WILSON TWO-BODY DISTANCE-LAW TABLE + EXTRAPOLATION DIAGNOSTIC")
     print("=" * 90)
     print(f"G={G_VAL}, mu2={MU2_VAL}, MASS={MASS}, WILSON_R={WILSON_R}")
     print(f"DT={DT}, N_STEPS={N_STEPS}, SIGMA={SIGMA}")
     print()
-    print("Question: does alpha(L) -> -2.0 as L -> infinity?")
+    print("Question: what finite-L exponents are computed, and how model-dependent")
+    print("diagnostic extrapolations compare with -2.0?")
     print()
 
     # ── Test grid ────────────────────────────────────────────────────────
@@ -358,10 +361,10 @@ def main():
             if d == target_d and m < -1e-6:
                 print(f"{side:>4} | {d:>4} | {d/side:>6.3f} | {abs(m):>12.6f}")
 
-    # ── Continuum extrapolation ──────────────────────────────────────────
+    # ── Model-dependent extrapolation diagnostic ─────────────────────────
     print()
     print("=" * 90)
-    print("CONTINUUM EXTRAPOLATION: alpha(L) = alpha_inf + c / L^p")
+    print("DIAGNOSTIC EXTRAPOLATION (NON-BINDING): alpha(L) = alpha_inf + c / L^p")
     print("=" * 90)
 
     if len(L_fit) >= 3:
@@ -389,7 +392,7 @@ def main():
                       f"  R^2 = {r['r2']:.6f}")
             print(f"         delta(alpha_inf + 2) = {delta:+.4f} +/- {a_inf_err:.4f}")
 
-            # Hypothesis test: is alpha_inf consistent with -2.0?
+            # Descriptive fit comparison only; this does not select a model.
             n_sigma = abs(delta) / a_inf_err if a_inf_err > 1e-10 else float("inf")
             if n_sigma < 1.0:
                 verdict = "CONSISTENT with -2.0 at 1-sigma"
@@ -424,10 +427,10 @@ def main():
                 quality = "POOR"
             print(f"{side:>4} | {r2:>10.6f} | {quality:>20}")
 
-    # ── Final verdict ────────────────────────────────────────────────────
+    # ── Final diagnostic readout ─────────────────────────────────────────
     print()
     print("=" * 90)
-    print("VERDICT")
+    print("DIAGNOSTIC READOUT (NOT A CONTINUUM CERTIFICATE)")
     print("=" * 90)
     if len(L_fit) >= 3:
         # Use the best extrapolation model
@@ -447,15 +450,16 @@ def main():
             print(f"  deviation from -2.0: {delta:+.4f} ({n_sigma:.1f} sigma)")
             if n_sigma < 2.0:
                 print()
-                print("  *** CONTINUUM LIMIT IS CONSISTENT WITH NEWTON'S")
-                print("      INVERSE-SQUARE LAW (alpha = -2.0) ***")
+                print("  Selected-fit diagnostic is compatible with alpha=-2.0.")
+                print("  This does not establish continuum convergence or model selection.")
             elif n_sigma < 3.0:
                 print()
-                print("  Marginal consistency with -2.0 (2-3 sigma)")
+                print("  Selected-fit diagnostic is 2-3 sigma from alpha=-2.0.")
+                print("  This does not establish continuum convergence or model selection.")
             else:
                 print()
-                print(f"  Continuum limit deviates from -2.0 by {n_sigma:.1f} sigma")
-                print(f"  alpha_infinity = {a_inf:.4f} is the intrinsic exponent")
+                print(f"  Selected-fit diagnostic is {n_sigma:.1f} sigma from alpha=-2.0.")
+                print("  No intrinsic or continuum exponent is inferred from this fit.")
         else:
             print("All extrapolation models failed")
     else:

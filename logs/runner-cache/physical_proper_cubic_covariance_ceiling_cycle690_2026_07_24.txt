@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/physical_proper_cubic_covariance_ceiling_cycle690_2026_07_24.py
+runner_sha256: 4f5cca0082c0fc344f9a1366381d17fb764d19e05fc3f056e987bfa3dee8ce21
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+PASS the acting group is exactly the 24 proper cubic rotations and all 576 products close inside it (exact integer arithmetic) :: {'order': 24, 'products_checked': 576, 'products_outside_group': 0}
+PASS the action on the eight cube vertices is transitive and faithful :: {'vertex_orbit_size': 8, 'faithful': True}
+PASS the 28 vertex pairs classify exhaustively as 12 cube edges, 12 face diagonals and 4 body diagonals :: {'edge': 12, 'face_diagonal': 12, 'body_diagonal': 4}
+PASS the face diagonals form a single 12-element orbit and the body diagonals a single 4-element orbit, so any invariant diagonal set is a union of these two orbits :: {'face_orbit': 12, 'body_orbit': 4}
+PASS every non-degenerate tetrahedron on cube vertices uses at least one diagonal, so a triangulation cannot avoid the diagonal set entirely :: {'nondegenerate_tetrahedra': 58, 'diagonal_free': 0}
+PASS the full face-diagonal orbit is simplicially inadmissible: the two diagonals of each face meet at the face centre, which is not a vertex :: {'interior_crossings': 6}
+PASS the full body-diagonal orbit is simplicially inadmissible: all four body diagonals meet at the cube centre, which is not a vertex :: {'interior_crossings': 6}
+PASS NO-GO: no triangulation of the cube on its eight vertices is invariant under all 24 proper cubic rotations -- a nonempty invariant diagonal set must contain a full orbit, and every full orbit crosses itself at a non-vertex point :: {'argument': 'nonempty diagonal set + union-of-orbits + both orbits self-intersecting', 'holds': True}
+PASS Lagrange: a stabilizer order divides 24, and 24 is excluded by the no-go, so the attainable covariance order is at most 12 :: {'full_invariance_excluded': True, 'divisors_of_24': [1, 2, 3, 4, 6, 8, 12, 24], 'ceiling_upper_bound': 12}
+PASS the five-tetrahedron decomposition is a genuine triangulation: exact volumes sum to 1 and the five pieces are pairwise interior-disjoint by an exact separating-axis test :: {'total_volume': '1', 'pieces': 5, 'overlapping_pairs': 0}
+PASS the ceiling is ATTAINED: the five-tetrahedron decomposition has stabilizer of order exactly 12, so the maximum proper-cubic covariance of any Z^3-vertex cube triangulation is exactly 12 :: {'full_complex_stabilizer_order': 12, 'central_tetrahedron_stabilizer_order': 12, 'frames': [0, 1, 2, 3, 12, 13, 14, 15, 16, 17, 18, 19]}
+PASS attaining the ceiling forces a binary combinatorial chirality choice: the commutator subgroup has order 12, so every index-2 stabilizer is the unique alternating-set stabilizer; the other 12 rotations exchange the two members of the ceiling-attaining pair :: {'even_stabilizer': 12, 'odd_stabilizer': 12, 'derived_subgroup_order': 12, 'unique_index_two_subgroup': True, 'exchanging_rotations': 12}
+PASS the standard Kuhn/Freudenthal path decomposition attains 6, which is half the ceiling and a quarter of the full group :: {'stabilizer_order': 6, 'ceiling': 12, 'group_order': 24}
+PASS MECHANISM: the obstruction is that the 0/1 spatial direction set is closed under coordinate permutation but not under sign flip -- only the 3 even permutations preserve it, and the other 21 rotations carry some direction out of {0,1}^3, so covariance there is ill posed rather than violated. The unoriented up-to-global-sign direction set has the distinct scope 6, exactly matching the Kuhn complex stabilizer :: {'frames_carrying_a_direction_out': 21, 'frames_preserving_the_spatial_direction_set': 3, 'frames_preserving_up_to_global_sign': 6, 'witness_frame': 1, 'witness': '(0, 0, 1) -> (0, 0, -1)'}
+PASS ESCAPE CONDITION: enriching the vertex set restores the full group -- the exact 24-tetrahedron refinement through the cube centre and six face centres is interior-disjoint, has total volume 1, and is invariant under all 24 rotations :: {'stabilizer_order': 24, 'tetrahedra': 24, 'added_vertices': 7, 'total_volume': '1', 'overlapping_pairs': 0}
+per_element: computed all 28 cube-vertex pairs and every nondegenerate four-vertex tetrahedron exactly
+per_site: computed the faithful transitive action on all eight unit-cube vertices
+per_mode: computed all 24 proper cubic rotations and all 576 group products
+per_block: computed the five-tetrahedron ceiling block (stabilizer 12) and Kuhn block (stabilizer 6)
+lattice_wide: checked and not executed — the executed claim is local to one unit-cube substrate; global periodic or dynamical covariance is outside scope
+SUMMARY_JSON {"all_24_invariant_triangulation_exists": false, "audit": "unset", "authority": "none", "chirality_forced_at_ceiling": true, "covariance_ceiling": 12, "cycle": 690, "cycle_claim": null, "diagonal_orbits": {"body": 4, "face": 12}, "escape_requires_vertices_beyond_Z3": true, "fail_count": 0, "failures": 0, "firewalls": {"any_gravity_stress_energy_or_einstein_claim": false, "chirality_choice_called_parity_violation": false, "stabilizer_called_a_physical_symmetry": false}, "group_order": 24, "kuhn_covariance": 6, "no_go": {"axiom_pressure": false, "escape_conditions": ["enrich the vertex set beyond Z^3 (cube and face centres), at the cost of leaving the lattice", "accept 12 via the five-tetrahedron decomposition and declare a chirality", "accept the standard Kuhn complex's scope of 6"], "shared_obstruction": false, "statement": "no Z^3-vertex cube triangulation is invariant under all 24 proper cubic rotations"}, "pass": true, "pass_count": 15, "passes": 15, "resources": {"elapsed_seconds": 0.14582983299987973}, "runner_sha256": "4f5cca0082c0fc344f9a1366381d17fb764d19e05fc3f056e987bfa3dee8ce21"}
+RESULT 15 0 elapsed 0.15 s
+RESULT Z3_VERTEX_PROPER_CUBIC_COVARIANCE_CEILING_IS_EXACTLY_12
+
+----- stderr -----
+

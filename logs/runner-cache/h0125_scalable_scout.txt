@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/h0125_scalable_scout.py
+runner_sha256: bb77c46b1dc90acc919462b593238743ffed602b292799db24812c4ca1470dcc
+input_fingerprint_sha256: 04dc14b36d8762185dc6418b9955c5c57d05a5a50940461394c131e137a7bb66
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 58.54
+status: ok
+----- stdout -----
+========================================================================================
+H=0.125 SCALABLE SCOUT — CLAIM-SPECIFIC FULL-WINDOW REPLAY
+phys_l=4 phys_w=3 h=0.125 nodes=79233 layers=33 nodes_per_layer=2401
+Born=6.518e-15 k0=+2.881301e-16 P_free=1.997458e+147
+z_mass=1.5 count=6 alpha=0.501246 delta_max=+4.112638e-03
+z_mass=2.0 count=6 alpha=0.501415 delta_max=+5.178879e-03
+z_mass=3.0 count=6 alpha=0.501512 delta_max=+5.594124e-03
+
+per_element: computed dense layer-transition amplitudes for 184473632 directed edges per propagation
+per_site: computed all 79233 sites on the phys_l=4, phys_w=3, h=0.125 family
+per_mode: computed Born, k=0, gravity sign, and six-strength F~M fits; alphas=0.501246,0.501415,0.501512
+per_block: computed full-window source blocks z_mass=1.5,2.0,3.0
+lattice_wide: checked and not executed — the claim is a single phys_l=4, phys_w=3 finite family, not a volume/width continuum limit
+CERTIFICATE passed=True rows=3
+
+----- stderr -----
+

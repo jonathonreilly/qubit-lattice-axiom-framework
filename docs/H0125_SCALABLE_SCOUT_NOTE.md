@@ -3,6 +3,8 @@
 **Date:** 2026-04-06
 
 **Status:** bounded no-go on the observed full-window rows; outside audit-ratified tier.
+**Primary runner:** [`scripts/h0125_scalable_scout.py`](../scripts/h0125_scalable_scout.py)
+**Runner cache:** [`logs/runner-cache/h0125_scalable_scout.txt`](../logs/runner-cache/h0125_scalable_scout.txt)
 
 This note records the shorter-axial-scale scout for the widened `h = 0.125`
 dense `1/L^2 + h^2` bridge lane. It is narrower than the already-closed
@@ -12,14 +14,14 @@ any genuinely wider or more scalable replay path worth keeping.
 ## Controls
 
 - shorter-scale scout:
-  - [`logs/2026-04-06-h0125-scalable-scout.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-h0125-scalable-scout.txt)
+  - [`h0125_scalable_scout.py`](../scripts/h0125_scalable_scout.py)
   - `phys_l = 4`
   - `phys_w = 3`
   - `h = 0.125`
   - full window
   - `z_mass = 1.5, 2.0, 3.0`
 - retained comparator already closed elsewhere:
-  - [`logs/2026-04-06-h0125-wide-full-window.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-06-h0125-wide-full-window.txt)
+  - [`lattice_3d_l2_wide_h0125_replay.txt`](../logs/runner-cache/lattice_3d_l2_wide_h0125_replay.txt)
   - `phys_l = 6`
   - `phys_w = 4`
   - full window

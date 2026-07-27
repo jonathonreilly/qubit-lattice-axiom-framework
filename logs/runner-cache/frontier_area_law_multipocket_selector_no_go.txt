@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_multipocket_selector_no_go.py
-runner_sha256: 68f7e6f9d4bac383c24b89c57429458a995d280c4ad2d56c73037a024868c872
+runner_sha256: d7be61e8e471b73e242ce6a0158b2a03bbff7c943c06fc1fb0992f4facf1a677
+input_fingerprint_sha256: e7e2162bff66b68d732040719b3004f76523c0b0a3a270274227f0489a5d2692
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -17,7 +18,7 @@ c_Widom = 1/4 carrier, or does it require a new selector?
 [PASS] ordinary scalar interval fibers have even crossing number: one interval -> 2 crossings; two intervals -> 4 crossings
 [PASS] quarter crossing count is not a full-pocket integer interval degeneracy: full-pocket coefficients are m/6, so m=1.5 would be required
 [PASS] minimal extra transverse pocket measure for c=1/4 is mu=1/2: mu=0.500000000000, c(mu)=0.250000000000
-[PASS] no extra pocket recovers the retained simple value 1/6: c(0)=0.166666666667
+[PASS] no extra pocket recovers the baseline simple-fiber value 1/6: c(0)=0.166666666667
 [PASS] extra pocket over the full transverse BZ gives 1/3, not 1/4: c(1)=0.333333333333
 [PASS] quarter is shifted by mu perturbation +0.01: c(0.51)=0.251666666667, shift=+0.001666666667
 [PASS] quarter is shifted by mu perturbation -0.01: c(0.49)=0.248333333333, shift=-0.001666666667
@@ -34,7 +35,13 @@ c_Widom = 1/4 carrier, or does it require a new selector?
 [PASS] a two-level gapped edge spectrum can be tuned to entropy 1/4 nat: p=0.068599066737, H2(p)=0.250000000000
 [PASS] mass-gap area law alone does not select the tuned edge probability: the exact entropy coefficient is a microscopic edge-spectrum datum
 [PASS] residual multipocket Widom route is selector-dependent: c=1/4 iff <N_x>=3, implemented here by mu=1/2 or equal sector weights
-[PASS] Target 2 remains open without a selector/bridge theorem: need to derive pocket measure, sector weight, or gapped edge entropy from Cl(3)/Z^3
+[PASS] downstream carrier comparisons are non-load-bearing context: target note has no Markdown authority edges; both later carriers are backticked context handles
+
+per_element: computed the one- and two-interval fiber crossing formula and its exact coefficient map
+per_site: checked and not executed — the executed momentum-fiber candidate defines no site-resolved observable
+per_mode: computed mu perturbations, sector weights, and the two-level entropy tuning mode
+per_block: computed simple/two-interval direct-sum calibration and the independent selector condition mu=1/2
+lattice_wide: checked and not executed — the executed exact candidate algebra defines no lattice-wide finite-size computation
 
 ==============================================================================
 SUMMARY: PASS=22  FAIL=0

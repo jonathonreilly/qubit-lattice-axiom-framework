@@ -1,11 +1,36 @@
 ===== runner cache v1 =====
 runner: scripts/FOURTH_FAMILY_COMPLEX.py
-runner_sha256: 4aa0b6b0d2f2357ab69d25a9960b583605a1a8b3663122e6e3854ecd1f0694b4
-timeout_sec: 120
-exit_code: None
-elapsed_sec: 120.04
-status: timeout
+runner_sha256: 0ec87adfc6226b3a7c7b631530459bbb9625902b87b0fb1c1e111a2ec74d5763
+input_fingerprint_sha256: ad98821f95e5ba04894dc38c681cdf6f924f159f20a4e077fde00ebaccfec90d
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 68.82
+status: ok
 ----- stdout -----
+==================================================================================================
+FOURTH FAMILY COMPLEX SCOUT
+  quadrant-reflection grown family + complex-action companion test
+==================================================================================================
+drifts=[0.0, 0.2, 0.5], seeds=[0, 1, 2]
+guards: exact gamma=0 baseline, Born proxy where feasible, TOWARD -> AWAY crossover
+
+drift       born           g0          d01          d02          d05      e01      e05     fm0    fm05   t01   t05
+----------------------------------------------------------------------------------------------------------------------
+ 0.00        n/a -1.232566e-05 -1.370755e-05 -1.508944e-05 -1.923508e-05    1.000    1.000   1.001   1.000     0     0
+ 0.20  4.988e-16 +1.406257e-06 +4.856117e-07 -4.350279e-07 -3.196911e-06    1.000    1.000   1.000   1.004     2     1
+ 0.50        n/a +4.844446e-07 +3.996989e-07 +3.149538e-07 +6.072233e-08    1.000    1.000   1.000   0.999     2     2
+
+SAFE READ
+  anchor retained gamma=0 + Born proxy: True
+  anchor TOWARD@0.1 -> AWAY@0.5: False
+  the quadrant-reflection family does not retain the complex-action companion cleanly
+
+per_element: checked and not executed — the claim concerns the executed detector/Born aggregates, not an edgewise invariant
+per_site: checked and not executed — the executed detector-centroid scout asserts no site-resolved invariant
+per_mode: computed gamma=[0.0, 0.1, 0.2, 0.5] plus weak-field exponents; anchor_crossover=False
+per_block: computed 3 drift blocks x 3 seeds on the quadrant-reflection family
+lattice_wide: checked and not executed — a family-wide theorem is outside the declared finite grown slice
+CERTIFICATE expected_no_go=True anchor_ok=True crossover_ok=False
 
 ----- stderr -----
 

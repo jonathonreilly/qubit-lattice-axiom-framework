@@ -48,6 +48,11 @@ DRIFTS = [0.0, 0.20, 0.50]
 SEEDS = [0, 1, 2]
 GAMMAS = [0.0, 0.1, 0.2, 0.5]
 SOURCE_STRENGTHS = [1e-6, 1e-5]
+AUDIT_TIMEOUT_SEC = 600
+AUDIT_INPUT_PATHS = (
+    "scripts/gate_b_no_restore_farfield.py",
+    "scripts/FOURTH_FAMILY_QUADRANT_SWEEP.py",
+)
 
 
 @dataclass(frozen=True)
@@ -168,14 +173,19 @@ def _measure_row(drift: float) -> RowResult:
         p_free = _det_prob(free, det)
 
         field = _field_from_sources(quad.positions, quad.layers, [(SOURCE_Z, +1)])
-        gamma0 = _propagate(quad.positions, quad.adj, field, 0.0)
-        gamma0_deltas.append(_centroid_z(gamma0, quad.positions, det) - z_free)
+        gamma_by_value = {
+            gamma: _propagate(quad.positions, quad.adj, field, gamma)
+            for gamma in GAMMAS
+        }
+        gamma0_deltas.append(
+            _centroid_z(gamma_by_value[0.0], quad.positions, det) - z_free
+        )
 
         if seed == 0 and abs(drift - 0.20) < 1e-12:
             born_vals.append(_born_proxy(quad.positions, quad.adj, quad.layers, field, 0.0))
 
         for gamma in [0.1, 0.2, 0.5]:
-            grav = _propagate(quad.positions, quad.adj, field, gamma)
+            grav = gamma_by_value[gamma]
             delta = _centroid_z(grav, quad.positions, det) - z_free
             if gamma == 0.1:
                 delta_01_vals.append(delta)
@@ -188,8 +198,8 @@ def _measure_row(drift: float) -> RowResult:
                 if delta > 0:
                     toward_05 += 1
 
-        for gamma, esc_bucket, fm_bucket in [(0.0, None, fm0_vals), (0.5, escape_05_vals, fm05_vals)]:
-            grav = _propagate(quad.positions, quad.adj, field, gamma)
+        for gamma, fm_bucket in [(0.0, fm0_vals), (0.5, fm05_vals)]:
+            grav = gamma_by_value[gamma]
             if gamma == 0.5:
                 escape_05_vals.append(_det_prob(grav, det) / p_free if p_free > 1e-30 else 0.0)
             weak_deltas = []
@@ -203,7 +213,7 @@ def _measure_row(drift: float) -> RowResult:
             if d1 > 1e-15 and d2 > 1e-15:
                 fm_bucket.append(math.log(d2 / d1) / math.log(s2 / s1))
 
-        grav_01 = _propagate(quad.positions, quad.adj, field, 0.1)
+        grav_01 = gamma_by_value[0.1]
         escape_01_vals.append(_det_prob(grav_01, det) / p_free if p_free > 1e-30 else 0.0)
 
     return RowResult(
@@ -222,7 +232,7 @@ def _measure_row(drift: float) -> RowResult:
     )
 
 
-def main() -> None:
+def main() -> int:
     print("=" * 98)
     print("FOURTH FAMILY COMPLEX SCOUT")
     print("  quadrant-reflection grown family + complex-action companion test")
@@ -259,7 +269,45 @@ def main() -> None:
         print("  the quadrant-reflection family carries a narrow complex-action companion")
     else:
         print("  the quadrant-reflection family does not retain the complex-action companion cleanly")
+    expected = (
+        len(rows) == len(DRIFTS) == 3
+        and anchor.anchor_ok
+        and all(
+            row.fm_0 is not None
+            and row.fm_05 is not None
+            and abs(row.fm_0 - 1.0) < 0.05
+            and abs(row.fm_05 - 1.0) < 0.05
+            for row in rows
+        )
+        and not anchor.crossover_ok
+    )
+    print()
+    print(
+        "per_element: checked and not executed — the claim concerns the "
+        "executed detector/Born aggregates, not an edgewise invariant"
+    )
+    print(
+        "per_site: checked and not executed — the executed detector-centroid "
+        "scout asserts no site-resolved invariant"
+    )
+    print(
+        f"per_mode: computed gamma={GAMMAS} plus weak-field exponents; "
+        f"anchor_crossover={anchor.crossover_ok}"
+    )
+    print(
+        f"per_block: computed {len(rows)} drift blocks x {len(SEEDS)} seeds "
+        f"on the quadrant-reflection family"
+    )
+    print(
+        "lattice_wide: checked and not executed — a family-wide theorem is "
+        "outside the declared finite grown slice"
+    )
+    print(
+        f"CERTIFICATE expected_no_go={expected} anchor_ok={anchor.anchor_ok} "
+        f"crossover_ok={anchor.crossover_ok}"
+    )
+    return 0 if expected else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

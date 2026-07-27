@@ -1,0 +1,423 @@
+===== runner cache v1 =====
+runner: scripts/wilson_test_mass_continuum_certificate.py
+runner_sha256: f9d4e81d315355007544d23a034a512e09cfe6f11fb20bc7476260359b2bcc37
+input_fingerprint_sha256: cc4b2d79b1a1263fa1350e688dcc01e8a53267f30c2dd36ac83739aa2f6c17bb
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 248.36
+status: ok
+----- stdout -----
+CHILD scripts/frontier_test_mass_limit.py exit=0
+================================================================================
+FRONTIER: TEST-MASS LIMIT  —  F = G * M_source / r^2
+================================================================================
+
+Wilson 3D open-BC lattice, side=20 (8000 sites)
+mu^2=0.001, G=0.002, MASS=0.3, WILSON_R=1.0
+DT=0.08, N_STEPS=30
+Source: Gaussian sigma=1.5 (heavy, unnormalized)
+Test:   Gaussian sigma=1.0 (light, normalized)
+Static potential: phi from source density ONLY
+
+================================================================================
+PART 1: MASS SWEEP  —  |a_test| vs M_source  (d=4 fixed)
+================================================================================
+
+A=0.5  M_source=4.698  a_mean=-0.000372 +/- 0.000027  SNR=13.91  [TOWARD]  v_late=-0.000415  dx_total=-0.000466  phi_test=+0.0085  (0.3s)
+A=1.0  M_source=18.793  a_mean=-0.001489 +/- 0.000107  SNR=13.96  [TOWARD]  v_late=-0.001663  dx_total=-0.001866  phi_test=+0.0340  (0.3s)
+A=1.5  M_source=42.284  a_mean=-0.003354 +/- 0.000239  SNR=14.05  [TOWARD]  v_late=-0.003747  dx_total=-0.004203  phi_test=+0.0764  (0.3s)
+A=2.0  M_source=75.172  a_mean=-0.005972 +/- 0.000421  SNR=14.17  [TOWARD]  v_late=-0.006673  dx_total=-0.007484  phi_test=+0.1358  (0.3s)
+A=3.0  M_source=169.138  a_mean=-0.013501 +/- 0.000929  SNR=14.53  [TOWARD]  v_late=-0.015092  dx_total=-0.016917  phi_test=+0.3057  (0.3s)
+
+--- Mass exponent fit ---
+|a_test| ~ M_source^1.002   (R^2=1.0000, n=5)
+|v_late| ~ M_source^1.002   (R^2=1.0000, n=5)
+|dx_total| ~ M_source^1.002   (R^2=1.0000, n=5)
+
+--- Linearity check (ratio test) ---
+A=0.5  M/M_ref=0.250  dx/dx_ref=0.250  ratio=0.999  (expect 1.0 for linear)
+A=1.0  M/M_ref=1.000  dx/dx_ref=1.000  ratio=1.000  (expect 1.0 for linear)
+A=1.5  M/M_ref=2.250  dx/dx_ref=2.253  ratio=1.001  (expect 1.0 for linear)
+A=2.0  M/M_ref=4.000  dx/dx_ref=4.011  ratio=1.003  (expect 1.0 for linear)
+A=3.0  M/M_ref=9.000  dx/dx_ref=9.067  ratio=1.007  (expect 1.0 for linear)
+
+================================================================================
+PART 2: DISTANCE SWEEP  —  |a_test| vs d  (A_source=2.0 fixed)
+================================================================================
+
+d=3  a_mean=-0.009573 +/- 0.000795  SNR=12.05  [TOWARD]  v_late=-0.010591  dx_total=-0.011911  phi_test=+0.1478  (0.3s)
+d=4  a_mean=-0.005972 +/- 0.000421  SNR=14.17  [TOWARD]  v_late=-0.006673  dx_total=-0.007484  phi_test=+0.1358  (0.3s)
+d=5  a_mean=-0.003738 +/- 0.000226  SNR=16.54  [TOWARD]  v_late=-0.004201  dx_total=-0.004700  phi_test=+0.1288  (0.3s)
+d=6  a_mean=-0.002367 +/- 0.000135  SNR=17.59  [TOWARD]  v_late=-0.002663  dx_total=-0.002973  phi_test=+0.1245  (0.3s)
+d=7  a_mean=-0.001461 +/- 0.000086  SNR=16.90  [TOWARD]  v_late=-0.001626  dx_total=-0.001809  phi_test=+0.1218  (0.3s)
+
+--- Distance exponent fit ---
+|a_test| ~ d^-2.196   (R^2=0.9843, n=5)
+|v_late| ~ d^-2.185   (R^2=0.9822, n=5)
+|dx_total| ~ d^-2.197   (R^2=0.9822, n=5)
+
+================================================================================
+PART 3: POTENTIAL PROFILE — phi(r) from the source
+================================================================================
+
+M_source = 75.172
+   r         V(r)      |V| * r    |V| * r^2
+------------------------------------------------
+   0    +0.215067    +0.000000    +0.000000
+   1    +0.198500    +0.198500    +0.198500
+   2    +0.168843    +0.337685    +0.675371
+   3    +0.147805    +0.443415    +1.330244
+   4    +0.135849    +0.543398    +2.173591
+   5    +0.128844    +0.644219    +3.221096
+   6    +0.124507    +0.747044    +4.482266
+   7    +0.121790    +0.852528    +5.967695
+   8    +0.120181    +0.961446    +7.691566
+   9    +0.119429    +1.074860    +9.673742
+
+|V(r)| ~ r^-0.247   (R^2=0.9739)
+Expected: r^-1.0 for 3D Coulomb/Newton
+
+================================================================================
+PART 4: TRAJECTORY DETAILS (mass sweep, d=4)
+================================================================================
+
+A=0.5, M_source=4.698:
+  t:           0       5      10      15      20      25      30
+  x_gv:  14.0000 14.3114 14.6228 14.9341 15.2452 15.5556 15.8634
+  x_fr:  14.0000 14.3115 14.6229 14.9344 15.2457 15.5563 15.8644
+  dx:     0.0000 -0.0000 -0.0001 -0.0003 -0.0005 -0.0007 -0.0009
+
+A=1.0, M_source=18.793:
+  t:           0       5      10      15      20      25      30
+  x_gv:  14.0000 14.3113 14.6224 14.9333 15.2438 15.5535 15.8606
+  x_fr:  14.0000 14.3115 14.6229 14.9344 15.2457 15.5563 15.8644
+  dx:     0.0000 -0.0001 -0.0005 -0.0011 -0.0019 -0.0028 -0.0038
+
+A=1.5, M_source=42.284:
+  t:           0       5      10      15      20      25      30
+  x_gv:  14.0000 14.3112 14.6218 14.9319 15.2415 15.5500 15.8558
+  x_fr:  14.0000 14.3115 14.6229 14.9344 15.2457 15.5563 15.8644
+  dx:     0.0000 -0.0003 -0.0011 -0.0025 -0.0042 -0.0063 -0.0086
+
+A=2.0, M_source=75.172:
+  t:           0       5      10      15      20      25      30
+  x_gv:  14.0000 14.3109 14.6209 14.9299 15.2382 15.5452 15.8491
+  x_fr:  14.0000 14.3115 14.6229 14.9344 15.2457 15.5563 15.8644
+  dx:     0.0000 -0.0005 -0.0020 -0.0044 -0.0075 -0.0111 -0.0153
+
+A=3.0, M_source=169.138:
+  t:           0       5      10      15      20      25      30
+  x_gv:  14.0000 14.3103 14.6183 14.9244 15.2287 15.5311 15.8298
+  x_fr:  14.0000 14.3115 14.6229 14.9344 15.2457 15.5563 15.8644
+  dx:     0.0000 -0.0012 -0.0046 -0.0100 -0.0169 -0.0252 -0.0346
+
+
+================================================================================
+SUMMARY
+================================================================================
+
+Direction: 5/5 mass-sweep configs show test particle moving TOWARD source
+Direction: 5/5 distance-sweep configs show TOWARD motion
+
+Mass exponent (dx_total):     1.002  [expect ~1.0]  [PASS]
+Mass exponent (v_late):       1.002  [expect ~1.0]  [PASS]
+Distance exponent (dx_total): -2.197  [expect ~-2.0]  [PASS]
+Distance exponent (v_late):   -2.185  [expect ~-2.0]  [PASS]
+
+CONCLUSION: Test-mass limit SUPPORTS F = G * M_source / r^n
+  with n ~ 2.20 and linear mass dependence (exponent 1.00)
+CHILD scripts/frontier_perturbative_mass_law.py exit=0
+================================================================================================
+PERTURBATIVE MASS LAW: First-Order Extraction of Newton's F ~ M_B / d^2
+Wilson 3D open-BC lattice
+================================================================================================
+MASS=0.3, WILSON_R=1.0, G=5.0, mu2=0.001, SIDE=20
+SIGMA=1.0, REG=0.001
+Mass weights (M_B): [0.25, 0.5, 1.0, 2.0, 3.0, 4.0]
+Separations: [3, 4, 5, 6, 7, 8, 9, 10, 12]
+
+KEY INSIGHT: At first order in G, the mutual acceleration
+  a(A<-B) = -<psi_A| d/dx [G * K * |psi_B|^2] |psi_A>
+is LINEAR in |psi_B|^2 (hence linear in M_B), with NO self-field mixing.
+
+Building 20^3 = 8000 site lattice... done (0.0s)
+
+================================================================================================
+PHASE 1: Mass dependence (fixed d=6, G=5.0)
+================================================================================================
+  Varying M_B (partner amplitude^2), measuring a_mutual(A<-B)
+
+  M_B= 0.25: a_pert=-3.81185974e-02  V_partner(A)=+1.010002e+00  (0.13s)
+  M_B= 0.50: a_pert=-7.62371948e-02  V_partner(A)=+2.020005e+00  (0.13s)
+  M_B= 1.00: a_pert=-1.52474390e-01  V_partner(A)=+4.040010e+00  (0.13s)
+  M_B= 2.00: a_pert=-3.04948779e-01  V_partner(A)=+8.080019e+00  (0.11s)
+  M_B= 3.00: a_pert=-4.57423169e-01  V_partner(A)=+1.212003e+01  (0.13s)
+  M_B= 4.00: a_pert=-6.09897558e-01  V_partner(A)=+1.616004e+01  (0.12s)
+
+  MASS EXPONENT: |a_pert| ~ M_B^1.0000
+    Standard error: 0.0000
+    R^2: 1.000000
+    Expected (Newton): 1.000
+    Deviation: 0.0000
+
+  LINEARITY CHECK (a_pert / M_B should be constant):
+    M_B= 0.25: a/M_B = -1.52474390e-01
+    M_B= 0.50: a/M_B = -1.52474390e-01
+    M_B= 1.00: a/M_B = -1.52474390e-01
+    M_B= 2.00: a/M_B = -1.52474390e-01
+    M_B= 3.00: a/M_B = -1.52474390e-01
+    M_B= 4.00: a/M_B = -1.52474390e-01
+    Mean: -1.52474390e-01, Std: 2.98e-16, CV: 0.000000
+    Perfect linearity would give CV = 0
+
+================================================================================================
+PHASE 2: Distance dependence (fixed M_B=1.0, G=5.0)
+================================================================================================
+  d= 3: a_pert=-5.93525892e-01  [ATTRACT]  (0.12s)
+  d= 4: a_pert=-3.42975858e-01  [ATTRACT]  (0.13s)
+  d= 5: a_pert=-2.22659718e-01  [ATTRACT]  (0.12s)
+  d= 6: a_pert=-1.52474390e-01  [ATTRACT]  (0.15s)
+  d= 7: a_pert=-1.17319192e-01  [ATTRACT]  (0.12s)
+  d= 8: a_pert=-8.83025869e-02  [ATTRACT]  (0.14s)
+  d= 9: a_pert=-7.50359683e-02  [ATTRACT]  (0.13s)
+  d=10: a_pert=-5.85880776e-02  [ATTRACT]  (0.12s)
+  d=12: a_pert=-4.13671327e-02  [ATTRACT]  (0.14s)
+
+  DISTANCE EXPONENT: |a_pert| ~ d^-1.9159
+    Standard error: 0.0163
+    R^2: 0.999493
+    Expected (Newton 3D): -2.000
+    Deviation: 0.0841
+
+================================================================================================
+PHASE 3: Coupling linearity (d=6, M_B=1.0)
+================================================================================================
+  At first order, a_pert should be LINEAR in G
+
+  G=  1.0: a_pert=-3.04948779e-02  (0.11s)
+  G=  2.0: a_pert=-6.09897558e-02  (0.14s)
+  G=  5.0: a_pert=-1.52474390e-01  (0.12s)
+  G= 10.0: a_pert=-3.04948779e-01  (0.12s)
+
+  G EXPONENT: |a_pert| ~ G^1.0000
+    R^2: 1.000000
+    Expected (first order): 1.000
+    Deviation: 0.0000
+
+================================================================================================
+PHASE 4: Full M_B x d grid (checking F ~ M_B / d^2)
+================================================================================================
+
+     M_B             d=4             d=6             d=8            d=10
+  ----------------------------------------------------------------------
+    0.50   -1.714879e-01   -7.623719e-02   -4.415129e-02   -2.929404e-02
+    1.00   -3.429759e-01   -1.524744e-01   -8.830259e-02   -5.858808e-02
+    2.00   -6.859517e-01   -3.049488e-01   -1.766052e-01   -1.171762e-01
+    4.00   -1.371903e+00   -6.098976e-01   -3.532103e-01   -2.343523e-01
+
+  NEWTON PRODUCT CHECK: a_pert * d^2 / M_B should be constant
+    M_B= 0.5, d= 4: a*d^2/M_B = -5.487614e+00
+    M_B= 0.5, d= 6: a*d^2/M_B = -5.489078e+00
+    M_B= 0.5, d= 8: a*d^2/M_B = -5.651366e+00
+    M_B= 0.5, d=10: a*d^2/M_B = -5.858808e+00
+    M_B= 1.0, d= 4: a*d^2/M_B = -5.487614e+00
+    M_B= 1.0, d= 6: a*d^2/M_B = -5.489078e+00
+    M_B= 1.0, d= 8: a*d^2/M_B = -5.651366e+00
+    M_B= 1.0, d=10: a*d^2/M_B = -5.858808e+00
+    M_B= 2.0, d= 4: a*d^2/M_B = -5.487614e+00
+    M_B= 2.0, d= 6: a*d^2/M_B = -5.489078e+00
+    M_B= 2.0, d= 8: a*d^2/M_B = -5.651366e+00
+    M_B= 2.0, d=10: a*d^2/M_B = -5.858808e+00
+    M_B= 4.0, d= 4: a*d^2/M_B = -5.487614e+00
+    M_B= 4.0, d= 6: a*d^2/M_B = -5.489078e+00
+    M_B= 4.0, d= 8: a*d^2/M_B = -5.651366e+00
+    M_B= 4.0, d=10: a*d^2/M_B = -5.858808e+00
+    Mean: -5.621716e+00, Std: 1.52e-01, CV: 0.027075
+
+================================================================================================
+PHASE 5: Perturbative vs Hartree comparison
+================================================================================================
+  Running full Hartree evolution at selected (M_B, d) points...
+
+  M_B= 1.0, d= 4: a_pert=-3.429759e-01  a_hartree=-4.951419e-01  ratio=0.6927  (5.4s)
+  M_B= 1.0, d= 6: a_pert=-1.524744e-01  a_hartree=-2.211923e-01  ratio=0.6893  (5.1s)
+  M_B= 1.0, d= 8: a_pert=-8.830259e-02  a_hartree=-1.269487e-01  ratio=0.6956  (5.2s)
+  M_B= 2.0, d= 6: a_pert=-3.049488e-01  a_hartree=-2.211923e-01  ratio=1.3787  (5.2s)
+
+================================================================================================
+FINAL SUMMARY: Perturbative Mass Law Results
+================================================================================================
+
+  MASS EXPONENT:     +1.0000 (expect +1.000)
+    R^2 = 1.000000
+    PASS: a_mutual ~ M_B^1.0000
+  DISTANCE EXPONENT: -1.9159 (expect -2.000)
+    R^2 = 0.999493
+    PASS: a_mutual ~ d^-1.9159
+  G EXPONENT:        +1.0000 (expect +1.000)
+    R^2 = 1.000000
+    PASS: a_mutual ~ G^1.0000
+
+  >>> MASS LAW CONFIRMED: F ~ M_B at first order in G <<<
+  The perturbative calculation cleanly separates mutual from self-field.
+  The Hartree self-field contamination is a HIGHER-ORDER effect.
+
+  >>> FULL NEWTON: F ~ G * M_B / d^2 CONFIRMED at first order <<<
+
+  Newton product a*d^2/M_B coefficient of variation: 0.027075
+
+  Total runtime: 26s
+CHILD scripts/frontier_continuum_limit.py exit=0
+==========================================================================================
+FINITE-L WILSON TWO-BODY DISTANCE-LAW TABLE + EXTRAPOLATION DIAGNOSTIC
+==========================================================================================
+G=5.0, mu2=0.001, MASS=0.3, WILSON_R=1.0
+DT=0.08, N_STEPS=15, SIGMA=1.0
+
+Question: what finite-L exponents are computed, and how model-dependent
+diagnostic extrapolations compare with -2.0?
+
+------------------------------------------------------------------------------------------
+L = 12  (N = 1728 sites)
+------------------------------------------------------------------------------------------
+  Lattice built in 0.0s
+  d= 3 (d/L=0.25): a_mut=-0.839643 +/- 0.104064 SNR=8.07 [ATTRACT] [CLEAN] (0.5s)
+  d= 4 (d/L=0.33): a_mut=-0.516786 +/- 0.085994 SNR=6.01 [ATTRACT] [CLEAN] (0.5s)
+  d= 5 (d/L=0.42): a_mut=-0.328181 +/- 0.056040 SNR=5.86 [ATTRACT] [CLEAN] (0.5s)
+  d= 6 (d/L=0.50): a_mut=-0.237526 +/- 0.039681 SNR=5.99 [ATTRACT] [CLEAN] (0.5s)
+  d= 7 (d/L=0.58): a_mut=-0.181643 +/- 0.041992 SNR=4.33 [ATTRACT] [CLEAN] (0.5s)
+  FIT: |a_mut| ~ d^-1.8274  (R^2=0.999091)
+  Side 12 total: 2.6s
+
+------------------------------------------------------------------------------------------
+L = 15  (N = 3375 sites)
+------------------------------------------------------------------------------------------
+  Lattice built in 0.0s
+  d= 3 (d/L=0.20): a_mut=-0.855371 +/- 0.099697 SNR=8.58 [ATTRACT] [CLEAN] (1.2s)
+  d= 4 (d/L=0.27): a_mut=-0.507894 +/- 0.081448 SNR=6.24 [ATTRACT] [CLEAN] (1.3s)
+  d= 6 (d/L=0.40): a_mut=-0.232758 +/- 0.041517 SNR=5.61 [ATTRACT] [CLEAN] (1.2s)
+  d= 8 (d/L=0.53): a_mut=-0.133547 +/- 0.023767 SNR=5.62 [ATTRACT] [CLEAN] (1.2s)
+  d= 9 (d/L=0.60): a_mut=-0.101116 +/- 0.016669 SNR=6.07 [ATTRACT] [CLEAN] (1.3s)
+  FIT: |a_mut| ~ d^-1.9324  (R^2=0.999280)
+  Side 15 total: 6.3s
+
+------------------------------------------------------------------------------------------
+L = 18  (N = 5832 sites)
+------------------------------------------------------------------------------------------
+  Lattice built in 0.0s
+  d= 4 (d/L=0.22): a_mut=-0.497845 +/- 0.079311 SNR=6.28 [ATTRACT] [CLEAN] (3.0s)
+  d= 5 (d/L=0.28): a_mut=-0.319118 +/- 0.056057 SNR=5.69 [ATTRACT] [CLEAN] (2.9s)
+  d= 7 (d/L=0.39): a_mut=-0.166552 +/- 0.030551 SNR=5.45 [ATTRACT] [CLEAN] (2.8s)
+  d= 9 (d/L=0.50): a_mut=-0.102855 +/- 0.018974 SNR=5.42 [ATTRACT] [CLEAN] (2.9s)
+  d=11 (d/L=0.61): a_mut=-0.066471 +/- 0.011345 SNR=5.86 [ATTRACT] [CLEAN] (3.0s)
+  FIT: |a_mut| ~ d^-1.9734  (R^2=0.999655)
+  Side 18 total: 14.7s
+
+------------------------------------------------------------------------------------------
+L = 20  (N = 8000 sites)
+------------------------------------------------------------------------------------------
+  Lattice built in 0.0s
+  d= 4 (d/L=0.20): a_mut=-0.495142 +/- 0.078343 SNR=6.32 [ATTRACT] [CLEAN] (5.9s)
+  d= 6 (d/L=0.30): a_mut=-0.221192 +/- 0.039313 SNR=5.63 [ATTRACT] [CLEAN] (5.2s)
+  d= 8 (d/L=0.40): a_mut=-0.126949 +/- 0.023067 SNR=5.50 [ATTRACT] [CLEAN] (5.2s)
+  d=10 (d/L=0.50): a_mut=-0.082667 +/- 0.015132 SNR=5.46 [ATTRACT] [CLEAN] (5.4s)
+  d=12 (d/L=0.60): a_mut=-0.056570 +/- 0.010290 SNR=5.50 [ATTRACT] [CLEAN] (5.4s)
+  FIT: |a_mut| ~ d^-1.9649  (R^2=0.999899)
+  Side 20 total: 27.2s
+
+------------------------------------------------------------------------------------------
+L = 22  (N = 10648 sites)
+------------------------------------------------------------------------------------------
+  Lattice built in 0.0s
+  d= 4 (d/L=0.18): a_mut=-0.493290 +/- 0.077693 SNR=6.35 [ATTRACT] [CLEAN] (9.8s)
+  d= 7 (d/L=0.32): a_mut=-0.160911 +/- 0.029086 SNR=5.53 [ATTRACT] [CLEAN] (10.1s)
+  d= 9 (d/L=0.41): a_mut=-0.098941 +/- 0.018126 SNR=5.46 [ATTRACT] [CLEAN] (10.0s)
+  d=11 (d/L=0.50): a_mut=-0.067008 +/- 0.012351 SNR=5.43 [ATTRACT] [CLEAN] (10.0s)
+  d=13 (d/L=0.59): a_mut=-0.047268 +/- 0.008686 SNR=5.44 [ATTRACT] [CLEAN] (11.0s)
+  FIT: |a_mut| ~ d^-1.9819  (R^2=0.999922)
+  Side 22 total: 50.9s
+
+------------------------------------------------------------------------------------------
+L = 25  (N = 15625 sites)
+------------------------------------------------------------------------------------------
+  Lattice built in 0.0s
+  d= 5 (d/L=0.20): a_mut=-0.312433 +/- 0.053551 SNR=5.83 [ATTRACT] [CLEAN] (24.1s)
+  d= 8 (d/L=0.32): a_mut=-0.121563 +/- 0.021844 SNR=5.57 [ATTRACT] [CLEAN] (24.7s)
+  d=10 (d/L=0.40): a_mut=-0.078495 +/- 0.014213 SNR=5.52 [ATTRACT] [CLEAN] (23.5s)
+  d=12 (d/L=0.48): a_mut=-0.054889 +/- 0.009971 SNR=5.51 [ATTRACT] [CLEAN] (21.7s)
+  d=15 (d/L=0.60): a_mut=-0.034310 +/- 0.006276 SNR=5.47 [ATTRACT] [CLEAN] (22.5s)
+  FIT: |a_mut| ~ d^-2.0023  (R^2=0.999889)
+  Side 25 total: 116.7s
+
+==========================================================================================
+EXPONENT vs LATTICE SIZE
+==========================================================================================
+   L |      alpha |        R^2 |    amplitude | delta(alpha+2)
+------------------------------------------------------------
+  12 |    -1.8274 |   0.999091 |     6.322180 |        +0.1726
+  15 |    -1.9324 |   0.999280 |     7.290177 |        +0.0676
+  18 |    -1.9734 |   0.999655 |     7.694745 |        +0.0266
+  20 |    -1.9649 |   0.999899 |     7.533174 |        +0.0351
+  22 |    -1.9819 |   0.999922 |     7.679638 |        +0.0181
+  25 |    -2.0023 |   0.999889 |     7.853356 |        -0.0023
+
+==========================================================================================
+AMPLITUDE at d/L ~ 0.3 (fixed physical separation fraction)
+==========================================================================================
+   L |    d |    d/L |      |a_mut|
+-----------------------------------
+  12 |    4 |  0.333 |     0.516786
+  15 |    4 |  0.267 |     0.507894
+  18 |    5 |  0.278 |     0.319118
+  20 |    6 |  0.300 |     0.221192
+  22 |    7 |  0.318 |     0.160911
+  25 |    8 |  0.320 |     0.121563
+
+==========================================================================================
+DIAGNOSTIC EXTRAPOLATION (NON-BINDING): alpha(L) = alpha_inf + c / L^p
+==========================================================================================
+  p=1: alpha_inf = -2.1634 +/- 0.0325  c = 3.806 +/- 0.555  R^2 = 0.921667
+         delta(alpha_inf + 2) = -0.1634 +/- 0.0325
+         INCONSISTENT (5.0 sigma from -2.0)
+
+  p=2: alpha_inf = -2.0542 +/- 0.0126  c = 31.141 +/- 3.240  R^2 = 0.958490
+         delta(alpha_inf + 2) = -0.0542 +/- 0.0126
+         INCONSISTENT (4.3 sigma from -2.0)
+
+  p=free: alpha_inf = -2.0090 +/- 0.0186  c = 1000.000 +/- 2433.509  p = 3.472 +/- 1.009  R^2 = 0.980836
+         delta(alpha_inf + 2) = -0.0090 +/- 0.0186
+         CONSISTENT with -2.0 at 1-sigma
+
+==========================================================================================
+FIT QUALITY (R^2) vs LATTICE SIZE
+==========================================================================================
+   L |        R^2 |              quality
+----------------------------------------
+  12 |   0.999091 |            EXCELLENT
+  15 |   0.999280 |            EXCELLENT
+  18 |   0.999655 |            EXCELLENT
+  20 |   0.999899 |            EXCELLENT
+  22 |   0.999922 |            EXCELLENT
+  25 |   0.999889 |            EXCELLENT
+
+==========================================================================================
+DIAGNOSTIC READOUT (NOT A CONTINUUM CERTIFICATE)
+==========================================================================================
+Best extrapolation model: p=free
+  alpha_infinity = -2.0090 +/- 0.0186
+  deviation from -2.0: -0.0090 (0.5 sigma)
+
+  Selected-fit diagnostic is compatible with alpha=-2.0.
+  This does not establish continuum convergence or model selection.
+
+Total runtime: 218s
+
+per_element: computed child finite-grid matrix/field updates; test_mass=+1.0020 (R^2=1.000000)
+per_site: computed every site on the declared open-Wilson grids; test_distance=-2.1970 (R^2=0.982200)
+per_mode: computed test-mass and perturbative mass, distance, and G modes; perturbative=(+1.0000, -1.9159, +1.0000)
+per_block: computed finite-L blocks L=12:alpha=-1.8274,R^2=0.999091, L=15:alpha=-1.9324,R^2=0.999280, L=18:alpha=-1.9734,R^2=0.999655, L=20:alpha=-1.9649,R^2=0.999899, L=22:alpha=-1.9819,R^2=0.999922, L=25:alpha=-2.0023,R^2=0.999889
+lattice_wide: checked and not executed — an asymptotic continuum certificate needs an independently justified extrapolation model; the executed evidence is the six finite-L blocks
+CERTIFICATE child_ok=True numerical_ok=True finite_rows=6
+
+----- stderr -----
+

@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle719_recurrent_matter_history_controller_independent_check_2026_07_27.py
+runner_sha256: d7fe2ac40dec3ef78247027fdda9afc6baeab752baa080d6ffda8147e91c6088
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 52.77
+status: ok
+----- stdout -----
+PASS actual_92_gate_matter_word :: True
+PASS actual_H130_all_six_branches :: True
+PASS actual_compiled_inverse :: True
+PASS actual_compiled_deletions :: True
+PASS same_pointer_site_binding :: True
+PASS literal_routes :: True
+PASS scope_firewall :: True
+PASS attacked_runner_pin :: True
+SUMMARY_JSON {"attacked_runner": "/private/tmp/cycle719-recurrent-controller.yk7pRi/worktree/scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py", "attacked_runner_sha256": "063103ae1c6bcfc44aff05200bea0c932a50e018b78f2b67ca90feec28c5aac2", "boundary": "The composed action survives literal H^130 execution on the frozen six-branch row. This checker does not upgrade passive controller coordinate covariance to active law covariance, and does not treat route deletion opportunities as executed deletions.", "checks": {"actual_92_gate_matter_word": true, "actual_H130_all_six_branches": true, "actual_compiled_deletions": true, "actual_compiled_inverse": true, "attacked_runner_pin": true, "literal_routes": true, "same_pointer_site_binding": true, "scope_firewall": true}, "controller": {"actual_inverse_failures": 0, "branch_rows": [{"compiled_A0_return": true, "compiled_B_vacuum": true, "compiled_work_clean": true, "data_equal_run_orbit": true, "expected_token_return": true, "pointer": 1}, {"compiled_A0_return": true, "compiled_B_vacuum": true, "compiled_work_clean": true, "data_equal_run_orbit": true, "expected_token_return": true, "pointer": 0}, {"compiled_A0_return": true, "compiled_B_vacuum": true, "compiled_work_clean": true, "data_equal_run_orbit": true, "expected_token_return": true, "pointer": 0}, {"compiled_A0_return": true, "compiled_B_vacuum": true, "compiled_work_clean": true, "data_equal_run_orbit": true, "expected_token_return": true, "pointer": 0}, {"compiled_A0_return": true, "compiled_B_vacuum": true, "compiled_work_clean": true, "data_equal_run_orbit": true, "expected_token_return": true, "pointer": 0}, {"compiled_A0_return": true, "compiled_B_vacuum": true, "compiled_work_clean": true, "data_equal_run_orbit": true, "expected_token_return": true, "pointer": 0}], "finalizer_delete_data_bits_changed": 3, "finalizer_delete_full_state_changed": true, "full_orbit_H_applications": 130, "full_orbit_semantic_gate_applications": 8003060, "matter_branches": 6, "one_H_semantic_gates": 61562, "packet_delete_data_bits_changed": 35, "packet_delete_full_state_changed": true}, "expected_runner_sha256": "063103ae1c6bcfc44aff05200bea0c932a50e018b78f2b67ca90feec28c5aac2", "pass": true, "physical": {"all_pointer_sites_equal": true, "controller_covariance_scope": "passive coordinate/group/translation roundtrips only", "decoded_matter_gates": 92, "endpoint_pointer_M2": [-8, -1, 1], "full_G_physical_primitives": 96230780, "full_G_routed_NN_gates": 1731028378, "joint_active_covariance_executed": false, "one_H_physical_primitives": 740226, "one_H_routed_NN_gates": 13315466, "pointer_binding_equal": true, "route_deletion_opportunities_are_executed_deletions": false, "route_failures": 0, "source_cap_physical_primitives": 1400, "source_cap_routed_NN_gates": 17798, "source_pointer_M2": [-8, -1, 1], "source_pointer_index": 40}, "report_sha256": "7d97f786facd60a6014cb1e25045fe06c88aff4ad2b13117e9bcc66d21146098"}
+CYCLE719_RECURRENT_CONTROLLER_INDEPENDENT_PASS
+
+----- stderr -----
+

@@ -87,10 +87,11 @@ construction, and the β form — is written fresh in the runner and not importe
 
 ## 2. Theorem claims
 
-**T1 (restriction dichotomy; gates G4, G5, G6, G7, G8, G9).** Restricting the Unit-26 class
-along the subgroup lattice of `T ⋊ B₃` gives a clean split/non-split dichotomy:
+**T1 (restriction dichotomy on the tested family; gates G4, G5, G6, G7, G8, G9).** Restricting
+the Unit-26 class along the tested subgroup family listed below gives a clean split/non-split
+dichotomy on that family:
 
-| subgroup | order (L=4 / L=6) | split? | certificate |
+| tested subgroup | order (L=4 / L=6) | split? | certificate |
 |----------|------------------:|:------:|-------------|
 | B₃ | 48 / 48 | SPLIT | explicit `−I`-free section `S`, `π|S` bijective onto reference B₃ (G4) |
 | O (rotations) | 24 / 24 | SPLIT | `−I`-free subgroup `S ∩ π⁻¹(O)`, bijective onto reference O (G5) |
@@ -99,6 +100,13 @@ along the subgroup lattice of `T ⋊ B₃` gives a clean split/non-split dichoto
 | T | 64 / 216 | NON-SPLIT | `−I ∈ K_T`, `|K_T| = 16 / 54`, witness `[t̃_x, t̃_y] = −I` (G6) |
 | T_even | 32 / 108 | NON-SPLIT | `−I ∈ K`, `|K| = 8 / 54`, witness `[lift(1,1,0), lift(1,0,1)] = −I` (G7) |
 | T_even ⋊ A₄ | 384 / 1296 | NON-SPLIT | `−I ∈ K`, `|K| = 768 / 2592`, `= [Comm, Comm]` exactly, order `12N` (G8) |
+
+This is a statement about the listed family only, not about every translation-containing
+subgroup of `T ⋊ B₃`. The cyclic subgroup `⟨e_x⟩ ⊂ T` SPLITS: by G17 the lift `t̃_x` has order
+exactly `L`, so `⟨t̃_x⟩` has order `L` and `π` restricts to a bijection `⟨t̃_x⟩ → ⟨e_x⟩`, which
+is a `−I`-free section. Non-splitness therefore does not propagate down to every translation
+subgroup, and the dichotomy above must be read on the tested family rather than as a general
+translation-versus-point-group law.
 
 The section `S` is the closure of the 48 canonical lifts of the 48 zero-fixing (linear)
 permutations; it has order exactly 48, contains no `−I`, projects bijectively onto `T ⋊ B₃`'s
@@ -162,10 +170,12 @@ two computed surfaces, governed entirely by the parity of `(L/2)²` (cross-surfa
 close to `|Comm| = 96N`; the conjugates of the `T̃`-generators by all seven land back in `T̃`
 (so `T̃ = π⁻¹(T)` is normal); `T̃ ∩ S = {+I}`; `|T̃| · |S| = 2N · 48 = 96N = |Comm|`; and
 the product set `T̃·S` has `96N` distinct elements and equals `Comm` elementwise (exact
-factorization). Since `S` is a genuine section (T1) and `T̃` carries all of `−I`'s
-  squares and commutators, the Unit-26 extension's failure to split is already present in the
-  translation double cover `T̃`; the pair `(β, q)` records its measured commutator and
-  2-torsion square data.
+factorization). Since `S` is a genuine section (T1) and `T̃` contains the commutator
+`[t̃_x, t̃_y] = −I` (G6), the Unit-26 extension's failure to split is already witnessed by the
+translation double cover `T̃`; the pair `(β, q)` records its measured commutator and 2-torsion
+square data. This is not a completeness claim about the squares and commutators of `Comm`: `T̃`
+does not contain the commutator subgroup `[Comm, Comm]`, whose order is `12N` (T5) against
+`|T̃| = 2N`.
 
 **T5 (derived-cover identification; gate G8).** The order-`12N` obstruction subgroup on the
 `T_even ⋊ A₄` side coincides with the commutator subgroup: `π⁻¹(T_even ⋊ A₄) = [Comm, Comm]`

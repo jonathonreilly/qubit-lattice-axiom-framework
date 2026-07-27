@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_d2_commutant_extension_translation_localization_2026_07_25.py
-runner_sha256: 3c13cf9980a80465af7e30e9a7cc74fcf07900ad92fcecb475bb106e774de410
+runner_sha256: aea254daeab2a0180be0bebef4e974a8dda2757575b2c05b1afd63532b4d19d2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 4.79
+elapsed_sec: 3.57
 status: ok
 ----- stdout -----
 KCPT Unit 27 runner -- extension translation localization
@@ -65,9 +65,9 @@ L = 4  (N = 64)
   PASS  L4.G19.Ttilde_cap_S_trivial                     T~ cap S = {+I}
   PASS  L4.G19.order_product                            |T~|*|S|=128*48=6144 = |Comm|
   PASS  L4.G19.TS_product_set_eq_Comm                   product set T~*S: 6144 distinct elements = Comm elementwise
-  PASS  L4.G20.spectrum_eigenvalues                     eig=[0, -4, -8, -12] (int resid 7.11e-15 < 1e-9)
+  PASS  L4.G20.spectrum_eigenvalues                     eig=[0, -4, -8, -12] (int resid 1.15e-14 < 1e-9)
   PASS  L4.G20.spectrum_multiplicities                  mults=[8, 24, 24, 8] (XREF [8, 24, 24, 8])
-  [L=4 wall 1.8s]
+  [L=4 wall 1.4s]
 
 ========================================================================
 L = 6  (N = 216)
@@ -124,9 +124,9 @@ L = 6  (N = 216)
   PASS  L6.G19.Ttilde_cap_S_trivial                     T~ cap S = {+I}
   PASS  L6.G19.order_product                            |T~|*|S|=432*48=20736 = |Comm|
   PASS  L6.G19.TS_product_set_eq_Comm                   product set T~*S: 20736 distinct elements = Comm elementwise
-  PASS  L6.G20.spectrum_eigenvalues                     eig=[0, -3, -6, -9] (int resid 1.95e-14 < 1e-9)
+  PASS  L6.G20.spectrum_eigenvalues                     eig=[0, -3, -6, -9] (int resid 2.13e-14 < 1e-9)
   PASS  L6.G20.spectrum_multiplicities                  mults=[8, 48, 96, 64] (XREF [8, 48, 96, 64])
-  [L=6 wall 2.8s]
+  [L=6 wall 2.1s]
 
 ========================================================================
 cross-surface gates
@@ -136,7 +136,7 @@ cross-surface gates
 
 ========================================================================
 TOTAL: PASS=110 FAIL=0
-gates=110 wall=4.6s
+gates=110 wall=3.5s
 
 ----- stderr -----
 

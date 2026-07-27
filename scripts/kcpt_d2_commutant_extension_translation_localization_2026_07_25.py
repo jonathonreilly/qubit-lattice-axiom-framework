@@ -66,9 +66,24 @@ def gate(name, cond, msg=""):
     return ok
 
 
-# ---------------------------------------------------------------- XREF anchors
-# External, exact integer anchors (from Unit-25/26 landed/inflight values and the
-# two U27 recon probes). Gated, never used as a computation source.
+# ------------------------------------------------------- XREF expected values
+# Exact integer values that are gated but never used as a computation source.
+# Their provenance is NOT uniform; do not read this table as a set of external
+# anchors:
+#   external (Unit-25/26 landed values): nComm, eig, mults, Ttilde (= 2N),
+#       TevA4_down, comm_comm (= 12N), and S = 48 (the reference B3 order).
+#   arithmetic definitions: N = L^3, twoT = (L/2)^3.
+#   this unit's own expected outputs -- regression fixtures, NOT independent
+#       anchors: K_T, K_Teven, K_TevenA4, q_minus.
+# Of that last group only two carry an independent in-runner cross-check: K_T is
+# pinned by the structural gate |K_T| = 2|2T| with pi(K_T) = 2T (G6), and
+# q_minus follows from the closed-form q formula derived in the note, checked
+# pointwise against measurement (G18). K_Teven and K_TevenA4 are BARE fixtures:
+# their gates compare against this table and nothing else. (G8 does separately
+# establish |pi^-1(T_even x| A4)| = 12N = |[Comm,Comm]| by construction, but it
+# never gates |K_TevenA4| against either of those.) The load-bearing content of
+# those two rows is the gated -I membership plus the named commutator witness
+# (G7), not the subgroup orders.
 XREF = {
     4: dict(N=64, nComm=6144, eig=[0, -4, -8, -12], mults=[8, 24, 24, 8],
             Ttilde=128, S=48, K_T=16, K_Teven=8, K_TevenA4=768,
@@ -147,14 +162,15 @@ def b3_coord(perm, coords, idx, L):
 
 # ---------------------------------------------------------------- group helpers
 def commutator(a, b):
-    """Central-kernel commutator of two Comm elements.
+    """Commutator of two Comm elements: [a, b] = a b a^-1 b^-1.
 
-    We use the Unit-26 convention compose(compose(a,b), compose(a^-1,b^-1)),
-    which realizes the operator word b^-1 a^-1 b a. This differs from the literal
-    a^-1 b^-1 a b by an inverse (an a<->b swap). Every use below reads ONLY
-    membership in / the +-1 value within the central kernel {+-I}; since +I and
-    -I are each self-inverse, that value is identical for both conventions, so the
-    choice is immaterial to all gates.
+    u25.compose(x, y) is the signed-permutation matrix product U_x U_y, so
+    compose(compose(a,b), compose(a^-1,b^-1)) is exactly the word a b a^-1 b^-1.
+    The opposite convention a^-1 b^-1 a b is the conjugate (ab)^-1 [a,b] (ab),
+    which changes nothing any gate below reads: conjugation fixes the central
+    kernel, so the {+I,-I} gates are unaffected, and the derived subgroup is
+    computed as a normal closure, which is invariant under conjugating its
+    generators.
     """
     return u25.compose(u25.compose(a, b), u25.compose(u25.sp_inv(a), u25.sp_inv(b)))
 

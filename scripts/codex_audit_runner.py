@@ -117,6 +117,12 @@ NOTE_BODY_CHAR_LIMIT = 30_000
 AUTHORITY_TOTAL_CHAR_LIMIT = 60_000
 AUTHORITY_PER_NOTE_MAX = 10_000
 AUTHORITY_PER_NOTE_MIN = 2_000
+AUTHORITY_PER_NOTE_OVERRIDES = {
+    (
+        "teleportation_taste_readout_operator_model_note",
+        "teleportation_retained_axis_operator_algebra_closure_note",
+    ): 20_000,
+}
 CLIPPED_EVIDENCE_MARKERS = (
     "... [packet-clipped ",
     "... [truncated; runner is ",
@@ -460,6 +466,16 @@ def clip_packet_text(text: str, limit: int, label: str) -> str:
     return (
         f"{head}\n\n... [packet-clipped {label}; {len(text)} chars total] ...\n\n"
         f"{tail}"
+    )
+
+
+def authority_note_limit(claim_id: str, dep_claim_id: str, dep_count: int) -> int:
+    per_note_max = AUTHORITY_PER_NOTE_OVERRIDES.get(
+        (claim_id, dep_claim_id), AUTHORITY_PER_NOTE_MAX
+    )
+    return min(
+        per_note_max,
+        max(AUTHORITY_PER_NOTE_MIN, AUTHORITY_TOTAL_CHAR_LIMIT // max(1, dep_count)),
     )
 
 
@@ -1734,12 +1750,9 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
         evidence_manifest
     )
     deps = led_row.get("deps", [])
-    authority_limit = min(
-        AUTHORITY_PER_NOTE_MAX,
-        max(AUTHORITY_PER_NOTE_MIN, AUTHORITY_TOTAL_CHAR_LIMIT // max(1, len(deps))),
-    )
     cited_blocks = []
     for dep_cid in deps:
+        authority_limit = authority_note_limit(cid, dep_cid, len(deps))
         dep_row = ledger_rows.get(dep_cid, {})
         dep_path = dep_row.get("note_path") or ""
         dep_body = clip_packet_text(

@@ -561,25 +561,37 @@ def markdown_sections(text: str) -> dict[str, str]:
     below reports a target divergence that does not exist. A repeated heading
     keeps its FIRST body for the same reason -- the later occurrence must not
     be able to displace the section the note actually opened with.
+
+    Because every finding downstream of this parse can be a hard error, the
+    fence and heading rules follow CommonMark rather than approximating it: a
+    fence closes only on the same character, at least as long as the opener and
+    with nothing after it (so ```` ```python ```` inside a block is content, not
+    a closer), a backtick opener may not carry a backtick in its info string,
+    and an ATX heading may be closed by a trailing run of ``#`` (``## Exact
+    target ##`` names the section ``Exact target``). Getting any of those wrong
+    turns valid Markdown into a missing-section or target-mismatch error.
     """
     sections: dict[str, list[str]] = {}
     order: list[str] = []
     current: str | None = None
-    fence: str | None = None
+    fence_char: str | None = None
+    fence_len = 0
     for line in text.splitlines():
-        fence_match = re.match(r"^\s{0,3}(`{3,}|~{3,})", line)
+        fence_match = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)$", line)
+        delimiter = False
         if fence_match:
-            marker = fence_match.group(1)[0] * 3
-            if fence is None:
-                fence = marker
-            elif marker == fence:
-                fence = None
-            if current is not None:
-                sections[current].append(line)
-            continue
-        if fence is None:
-            heading = re.match(r"^##(?!#)\s+(.+?)\s*$", line)
-            if heading:
+            run, rest = fence_match.group(1), fence_match.group(2)
+            char = run[0]
+            if fence_char is None:
+                if not (char == "`" and "`" in rest):
+                    fence_char, fence_len = char, len(run)
+                    delimiter = True
+            elif char == fence_char and len(run) >= fence_len and not rest.strip():
+                fence_char, fence_len = None, 0
+                delimiter = True
+        if fence_char is None and not delimiter:
+            heading = re.match(r"^##(?!#)\s+(.*?)(?:\s+#+)?\s*$", line)
+            if heading and heading.group(1).strip():
                 current = heading.group(1).strip()
                 if current not in sections:
                     sections[current] = []

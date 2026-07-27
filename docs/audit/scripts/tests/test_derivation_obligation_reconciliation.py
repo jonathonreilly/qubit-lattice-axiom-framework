@@ -180,6 +180,46 @@ class ObligationReconciliationRuleTest(unittest.TestCase):
         )
         self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
 
+    def test_atx_closed_heading_names_the_section(self):
+        # `## Exact target ##` is valid Markdown for the same heading. Reading
+        # the trailing hashes as part of the name made a valid note report
+        # exact_target_section_missing as a hard error.
+        note = ALIGNED_NOTE.replace("## Exact target", "## Exact target ##")
+        self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
+
+    def test_a_shorter_run_does_not_close_a_longer_fence(self):
+        note = ALIGNED_NOTE + (
+            "\n## Appendix\n\n````\n```\n## Exact target\nnot the target\n````\n"
+        )
+        self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
+
+    def test_an_info_string_line_does_not_close_a_fence(self):
+        note = ALIGNED_NOTE + (
+            "\n## Appendix\n\n```\n```python\n## Exact target\nnot the target\n```\n"
+        )
+        self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
+
+    def test_live_obligation_notes_parse_to_their_four_sections(self):
+        # The fence/heading rules must not change the live population's parse.
+        registry = json.loads(
+            audit_lint.DERIVATION_OBLIGATIONS_PATH.read_text(encoding="utf-8")
+        )
+        for dep_id, entry in sorted((registry.get("nodes") or {}).items()):
+            note_path = audit_lint.REPO_ROOT / entry["current_path"]
+            parsed = audit_lint.markdown_sections(
+                note_path.read_text(encoding="utf-8")
+            )
+            self.assertEqual(
+                sorted(parsed),
+                [
+                    "Closure criterion",
+                    "Exact target",
+                    "Non-claims",
+                    "Running-program relation",
+                ],
+                dep_id,
+            )
+
     def test_obligation_row_typed_away_from_open_gate_is_reported(self):
         # The registry preamble promises obligations "never satisfy dependency
         # closure". Only claim_type == open_gate carries that promise through
@@ -329,9 +369,11 @@ class ChainSatisfactionBoundaryTest(unittest.TestCase):
     "match the pipeline's chain boundary", but
     `compute_effective_status.is_chain_satisfying_status` accepts `meta` and it
     does not. The asymmetry is deliberate policy
-    (`lane_certification_config.json`: "Metadata does not"), and it is why
-    `meta` rows inside a lane closure are permanent blockers. These assertions
-    make a silent drift in either direction fail a test instead of a docstring.
+    (`lane_certification_config.json`: "Metadata does not"), and it is why a
+    `meta` row inside a lane closure blocks that lane for as long as it stays
+    typed `meta` — clearing it takes a source-level change, not audit
+    throughput. These assertions make a silent drift in either direction fail a
+    test instead of a docstring.
     """
 
     def setUp(self):

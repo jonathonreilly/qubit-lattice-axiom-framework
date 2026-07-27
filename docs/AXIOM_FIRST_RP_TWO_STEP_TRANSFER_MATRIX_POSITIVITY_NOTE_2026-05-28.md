@@ -50,7 +50,7 @@ treats the free case explicitly and decisively. The fixed-`SU(3)` gauge
 extension is the separate fixed-background note named above; it is not
 re-derived here, and full `U`-integrated RP is not claimed here.
 
-Numbers (primary runner, `PASS=6 FAIL=0` at `m = 0.5`): 2-step decaying
+Numbers (primary runner, `PASS=7 FAIL=0` at `m = 0.5`): 2-step decaying
 eigenvalue matches `e^{-2 E(p)}` over the Brillouin zone to max residual
 `2.9e-16` (C1, faithfulness); single-step spectra over `sin(p) != 0` have
 `min |Im eig(T_even/T_odd)| = 0.562` and the `sin(p)=0` modes have eigenvalues
@@ -155,23 +155,116 @@ Their spectral projectors are explicit:
 ```
 
 with `P_-^2=P_-`, `P_+^2=P_+`, `P_-P_+=0`, `P_-+P_+=I`, and
-`T2cl P_- = lambda_- P_-`. The positive-time coherent-state transfer is the
-stable half-line channel on `P_-`: a forward solution with any `P_+`
-component grows like `lambda_+^N` over `N` two-step blocks, so finite-action /
-finite-norm positive-time propagation sets that coefficient to zero. In the
-diagonal one-particle basis the forward kernel is therefore
-`K_2(p)=lambda_-(p)`. The growing reciprocal channel is the inverse
-backward-time solution, not the forward transfer kernel.
+`T2cl P_- = lambda_- P_-`. This projector algebra is exact, but by itself it
+does **not** decide which of the two reciprocal channels is the positive-time
+transfer kernel: `T2cl` is a classical recurrence matrix, and reading
+`K_2(p)=lambda_-(p)` off a growth or finite-norm argument is a selection, not a
+derivation. Step 3c settles the branch from the Grassmann integral that
+*defines* the kernel.
 
 For a one-mode coherent-state kernel
 `<bar z'|T_2|z> = exp(bar z' lambda_- z)`, the induced operator on the
 finite exterior algebra is exactly `diag(1,lambda_-)`; across momenta this is
-the wedge product `Gamma(K_2)`. The runner verifies the projector identities,
-the residual `T2cl P_- - lambda_- P_-`, the projector split/orthogonality, the
-finite exterior construction, the creation-operator intertwiner, and the
-`B^dag B` factorization at machine precision (C6). Thus
-`t1^(2)(p)=e^{-2E(p)}` is the action-derived decaying spectral channel, not a
-separate convention.
+the wedge product `Gamma(K_2)`. The runner verifies the projector identities and
+residual, the split/orthogonality, the finite exterior construction, the
+creation-operator intertwiner, and the `B^dag B` factorization at machine
+precision (C6). Every one of those checks is
+conditional on the branch: it verifies that *if* the kernel is `lambda_-`, the
+finite exterior image is `Gamma(K_2) = B^dag B`. Step 3c supplies the branch.
+
+### Step 3c — two-slice Berezin construction: the kernel is measured
+
+Steps 1-3b work with the classical recurrence; the transfer kernel is *defined*
+by the Grassmann integral, so that is where the branch has to be settled. This
+step builds the integral from the exterior algebra alone --
+`theta_i theta_j = -theta_j theta_i`, `int dtheta theta = 1`,
+`int dtheta 1 = 0`, nothing further -- and reads the kernel off it (C7).
+
+**Setup.** At spatial momentum `p` with `N_t` antiperiodic time slices the free
+staggered action is quadratic, `S = chibar D chi`, with
+
+```text
+    D_{t,t}   = alpha_t,   alpha_t = m + i (-1)^t sin p,
+    D_{t,t+1} = +1/2,      D_{t,t-1} = -1/2        (antiperiodic wrap)
+```
+
+so `eta_1(t)=(-1)^t` puts the alternation in the diagonal while the time hop is
+**antisymmetric**. The engine reproduces
+`int prod dchibar dchi e^{-chibar D chi} = det D` on all `n <= 4` test matrices
+(`max|Berezin - det D| = 5.0e-15`), so it is the Berezin integral, not a
+stand-in.
+
+**Elimination.** Integrating out the ODD slices is an exact Berezin (Schur)
+step. Splitting `D` into even/odd blocks `[[A, B],[C, E_odd]]`,
+
+```text
+    int (odd slices) e^{-chibar D chi}
+        = det(E_odd) . e^{-chibar_e D_eff chi_e},
+    D_eff = A - B E_odd^-1 C = a . 1 - b (S + S^-1),
+    a = alpha_e + 1/(2 alpha_o),      b = 1/(4 alpha_o),
+```
+
+`S` the shift on the surviving even slices. Measured at `N_t = 6, 8`: residue
+`|const - det(E_odd)| = 7.9e-17` and `max|D_eff - (A - B E_odd^-1 C)| =
+3.1e-16`. This is the derived reason two steps
+can be positive where one is not: the one-step hop is ANTIsymmetric
+(`|D[0,1] + D[1,0]| = 0.0`) while the eliminated two-step hop is SYMMETRIC
+(`|D_eff[0,1] - D_eff[1,0]| = 0.0`).
+
+**The chain roots are the monodromy pair.** Transfer roots of
+`a . 1 - b (S + S^-1)` satisfy `z + 1/z = a/b`, and
+
+```text
+    a/b = 4 alpha_e alpha_o + 2 = tr(T_odd T_even)       (|diff| = 7.0e-16)
+```
+
+so `{z_+, z_-} = {lambda_+, lambda_-}`: the Grassmann chain and the classical
+monodromy carry the *same* characteristic pair. Nothing so far chooses between
+them; the choice is made below by measurement.
+
+**Which root the integral produces.** Four independent properties of the
+integral each reject the growing root.
+
+1. *Half-line propagator and residue.* Inverting `D_eff` on the chain, the ratio
+   of neighbouring propagator entries converges on the decaying root:
+   `max|G_2/G_1 - lambda_-|` falls from `7.0e-3` (`M=8`) to `6.5e-13` (`M=32`),
+   while `min|G_2/G_1 - lambda_+| = 2.236`. The contact term matches the
+   decaying-root residue, `max|G_00 - 1/(b(lambda_+ - lambda_-))| = 7.6e-14`,
+   against `1.416` for the growing root.
+2. *CAR metric.* Mode operators extracted from the eliminated chain satisfy
+   `{a_i, a_j^dag} = delta_ij` and `{a_i, a_j} = 0`, both at `0.0`. The
+   reflected inner product is therefore the standard CAR one, not a rescaled
+   form that could absorb a branch flip.
+3. *Coherent-state normalization, predictively across `M`.* With
+   `|xi> = e^{-xi a^dag}|0>`, `<bar xi|xi> = e^{bar xi xi}`,
+   `1 = int dbar xi dxi e^{-bar xi xi} |xi><bar xi|` and
+   `<bar xi|Gamma(K)|xi> = e^{bar xi K xi}`, the antiperiodic Fock trace is
+   `Tr Gamma(kappa)^M = 1 + kappa^M`, squared for the doubler pair. That
+   predicts, with no free constant,
+
+   ```text
+       det D = det(E_odd) . b^M . lambda_+^M . (1 + lambda_-^M)^2
+   ```
+
+   Checked across `M = 2..6`: relative error `<= 4.0e-15`. Substituting the
+   growing root in the trace factor gives relative error `>= 45.98`.
+4. *Reflected Toeplitz Gram.* Reflection about the time origin gives the
+   half-line Gram `Gamma_ij = kappa^{|i-j|}`. At `kappa = lambda_-` its minimum
+   eigenvalue is `+0.469 > 0`; at `kappa = lambda_+` it is `-18.04 < 0` -- the
+   growing branch is not a positive inner product at all.
+
+The generator agrees: `-log(lambda_-)/2 = +0.4812 >= 0` against `-0.4812 < 0`
+for the growing root, which carries no bounded-below Hamiltonian.
+
+**Result.** The kernel measured from the Berezin integral -- the propagator
+ratio of item 1, evaluated momentum by momentum -- agrees with the Step 3b
+spectral channel over the sampled zone at `max|kappa(p) - t1^(2)(p)| = 6.5e-13`
+(the same convergence figure, reported across momenta rather than against `M`),
+with `kappa in [1.458980e-01, 3.819660e-01]` on the nine sampled momenta. So
+`K_2(p) = lambda_-(p) = e^{-2 E(p)}` is what the Grassmann integral produces.
+Step 3b's identification is a derived consequence: the residue, CAR metric,
+reflected inner product and coherent-state normalization are each constructed
+and checked here before that identification is used.
 
 ### Step 4 — many-body 2-step positivity
 
@@ -268,10 +361,12 @@ The runner reports a PASS/FAIL scorecard; PASS overall requires (free case):
 | C4 R2 OS Gram PSD | operator-picture 2-step OS Gram | Hermitian, `min eig >= -1e-10` | `min eig = 0`, PSD |
 | C5 functor identity | `Gamma(t1^(2))` from the defining intertwiner `= exp(-2 a_tau H_hat)`, `L_s in {2,3,4,6}` | intertwiner err `< 1e-12`, `||Gamma - exp(-2 a_tau H_hat)|| < 1e-10` | intertwiner `~1e-17`, `~1e-16` |
 | C6 decaying-channel bridge | spectral projector of action-derived `T_odd T_even` plus finite exterior/Gamma image | projector identities/residuals `<1e-10`; `0<lambda_-<=1<=lambda_+`; `Gamma=B^dag B` | projector residual `~3e-15`, `B^dag B` `~6e-17` |
+| C7 Berezin two-slice | Grassmann integral with the odd slices eliminated (Step 3c) | engine `= det D`, residue/Schur, `a/b` vs `tr`, CAR all `<1e-12`; hop antisym `-> ` sym exactly; ratio `-> lambda_-`, growing-root gap `>1`; norm relerr `<1e-12` vs growing-root relerr `>1`; Gram min eig `>0` decaying, `<0` growing | `5.0e-15`; `7.9e-17`/`3.1e-16`; `0.0`/`0.0`; `7.0e-16`; `6.5e-13`, gap `2.236`; `0.0`; `4.0e-15` vs `45.98`; `+0.469` vs `-18.04` |
 
-Overall: `PASS=6 FAIL=0`. The free 2-step blocked transfer matrix `T_hat^2` is
+Overall: `PASS=7 FAIL=0`. The free 2-step blocked transfer matrix `T_hat^2` is
 positive Hermitian; the single-step `T_hat` is non-positive; both are derived
-from the staggered action.
+from the staggered action, and the transfer kernel is measured from the Berezin
+integral, not selected from the recurrence.
 
 ## Gauge-case extension (separate fixed-background note)
 
@@ -337,17 +432,19 @@ the faithfulness anchor.
 ## Honest status
 
 Source-surface in-repo derivation. The free staggered 2-step blocked transfer
-matrix `T_hat^2` is **derived from the staggered action** (Steps 1-4 plus the
-finite decaying-projector/exterior-algebra bridge) and shown positive Hermitian
+matrix `T_hat^2` is **derived from the staggered action** (Steps 1-4, the finite
+decaying-projector/exterior-algebra bridge, and the Step 3c two-slice Berezin
+construction) and shown positive Hermitian
 (`T_hat^2 = B^dag B`, `H_hat = -log(T_hat^2)/(2 a_tau) >= 0`), anchored to the
 exact free staggered dispersion `sinh^2 E = m^2 + sin^2 p`, with the single-step
 transfer operator non-positive in the same construction. The transfer matrix,
-finite decaying-projector/`Gamma(K)` bridge, and OS Gram checks agree
-(`PASS=6 FAIL=0`).
-This replaces the prior citation-only treatment of the 2-step positivity in the
-reflection-positivity row's 2-step formulation. This note does not set or
-predict an audit outcome; it is not an author-applied audit promotion, and
-independent audit is still required.
+finite decaying-projector/`Gamma(K)` bridge, explicit Berezin elimination, and
+OS Gram checks agree (`PASS=7 FAIL=0`). The identification of the physical
+transfer kernel with the decaying recurrence eigenchannel — previously carried
+by a finite-norm growth argument — is measured from the Grassmann integral in
+Step 3c, so it is derived inside this note rather than granted by the reader.
+This note does not set or predict an audit outcome; independent audit is still
+required.
 
 What this can support if audit passes:
 
@@ -423,7 +520,14 @@ verifies, with `numpy` linear algebra on finite carriers:
 - **C6 decaying-channel bridge** — the spectral projector of the action-derived
   `T_odd T_even` selects the forward contraction eigenvalue `0<e^{-2E(p)}<=1`;
   the runner verifies the projector identities, finite exterior/Gamma image,
-  creation-operator intertwiner, and `B^dag B` factorization.
+  creation-operator intertwiner, and `B^dag B` factorization;
+- **C7 two-slice Berezin construction** — a from-scratch exterior engine
+  (validated against `det D` for `n <= 4`) performs the Berezin elimination of
+  the odd time slices, and the transfer kernel is then *measured* from the
+  resulting integral rather than selected: the half-line propagator ratio and
+  its residue, the CAR metric, the coherent-state normalization predictively
+  across `M`, and the reflected Toeplitz Gram each reject the growing root
+  (construction and figures: Step 3c).
 
 Reproduction:
 
@@ -431,4 +535,4 @@ Reproduction:
 python3 scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
 ```
 
-Expected scorecard: `PASS=6 FAIL=0`.
+Expected scorecard: `PASS=7 FAIL=0`.

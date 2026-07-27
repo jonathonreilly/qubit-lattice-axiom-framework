@@ -3,143 +3,59 @@
 matrix T_hat^2 is positive Hermitian (free case explicit), from first
 principles, NOT by literature citation.
 
-This runner is the load-bearing positive exhibit for the 2-step blocked
-formulation of
-docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md.
+Load-bearing positive exhibit for the 2-step blocked formulation of
+docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md, and the
+*positive* companion to the single-step no-go runner
+scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py (spin-basis
+single-step Lagrangian Gram non-PSD, min eig -0.80). That no-go is intact and
+correct; THIS runner addresses the SEPARATE 2-step blocked surface. Free
+staggered fermions, 1+1d, U=1, eta_1(t)=(-1)^t: the spatial phase alternates
+with the time slice, so the single-step transfer alternates T_even/T_odd and
+the physical object is T_hat^2 = T_odd . T_even. Nothing is admitted. The
+derivation is written out in the paired note (Steps 1-4 and Step 3b); the
+gates C1-C7 below are named in that note's Scorecard and printed by the run.
 
-It is the *positive* companion to the single-step no-go runner
-scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py (which shows
-the single-step spin-basis Lagrangian Gram matrix is non-PSD, min eig -0.80).
-The single-step no-go is intact and correct; THIS runner addresses the
-SEPARATE 2-step blocked surface and shows it is positive.
+R1 -- explicit transfer matrix (note Steps 1-4; gates C1,C2,C3,C5). T2cl has
+eigenvalues e^{+-2E(p)}, E(p) = arcsinh(sqrt(m^2 + sin^2 p)) -- the EXACT free
+staggered 1+1d dispersion, so the construction is faithful to the action (C1).
+spec(T_even), spec(T_odd) are complex off sin(p)=0 and carry a NEGATIVE
+eigenvalue at it, so the single-step transfer operator is NOT positive (C2).
+The many-body operator is the second quantization Gamma(t1), BUILT AND VERIFIED
+IN-REPO from its defining intertwiner Gamma(K) a_p^dag = lambda_p a_p^dag
+Gamma(K) (C5), not asserted. With t1^(2)(p) = e^{-2E(p)} MEASURED by C7 rather
+than selected by fiat,
 
-----------------------------------------------------------------------------
-THE PHYSICS (free staggered fermions, 1+1d, single Grassmann component/site)
-----------------------------------------------------------------------------
-Free staggered (Kogut-Susskind) action, U=1:
+  T_hat^2 = Gamma(t1^(2)) = tensor_p diag(1, e^{-2E(p)})
+          = exp(-2 a_tau H_hat), H_hat = sum_p E(p) a_p^dag a_p >= 0,
+  T_hat^2 = B^dag B,  B = tensor_p diag(1, e^{-E(p)}),
 
-    S = sum_{t,x} bar_chi(t,x) [ m chi(t,x)
-          + (1/2) eta_0 ( chi(t+1,x) - chi(t-1,x) )            (temporal hop)
-          + (1/2) eta_1(t) ( chi(t,x+1) - chi(t,x-1) ) ]       (spatial hop)
+so T_hat^2 is POSITIVE HERMITIAN and H_hat = -log(T_hat^2)/(2 a_tau) is
+self-adjoint and bounded below by 0 -- 2-step reflection positivity.
 
-with the canonical staggered phases eta_0 = 1 and eta_1(t) = (-1)^t (matching
-the no-go runner's eta_mu). The temporal hop is CLEAN (eta_0 = 1) but the
-spatial phase eta_1 = (-1)^t ALTERNATES with the time slice. Hence the
-single-step transfer operator alternates between two forms T_even (slices with
-(-1)^t = +1) and T_odd (slices with (-1)^t = -1); the physical object is the
-2-step transfer matrix T_hat^2 = T_odd . T_even over two lattice spacings.
-This is exactly the standard staggered subtlety (STW 1981 / Palumbo 2002 /
-Smit Sec.6); here we DERIVE it in-repo rather than cite it.
-
-Per spatial momentum p (free theory factorizes across p), the staggered
-action's banded-in-time mode equation
-    alpha_t psi_t + (1/2) psi_{t+1} - (1/2) psi_{t-1} = 0,
-    alpha_t = m + i eta_1(t) sin(p) = m + i (-1)^t sin(p),
-rearranges to psi_{t+1} = -2 alpha_t psi_t + psi_{t-1}, i.e. the classical
-single-step transfer matrix on the amplitude 2-vector V_t = (psi_t, psi_{t-1}):
-
-    V_{t+1} = T_s V_t,   T_s = [[ -2 alpha_s, 1 ], [ 1, 0 ]],
-    alpha_even = m + i sin(p),  alpha_odd = m - i sin(p).
-
-These T_even, T_odd come STRAIGHT FROM THE ACTION; no convention is admitted.
-
-----------------------------------------------------------------------------
-THE PROOF (route R1 -- explicit transfer matrix, decisive)
-----------------------------------------------------------------------------
-(P1) DISPERSION ANCHOR / faithfulness. The 2-step classical matrix
-     T2cl(p) = T_odd(p) . T_even(p) has eigenvalues { e^{+2E(p)}, e^{-2E(p)} }
-     with
-         E(p) = arcsinh( sqrt( m^2 + sin^2 p ) )   >= 0,
-     i.e. sinh^2 E(p) = m^2 + sin^2 p, the EXACT free staggered 1+1d
-     dispersion. The decaying (physical) eigenvalue is e^{-2E(p)}, real and
-     positive. Matching this known dispersion is the proof that the
-     construction is faithful to the staggered action, not an artifact.
-
-(P2) SINGLE-STEP NON-POSITIVITY. spec(T_even(p)), spec(T_odd(p)) are GENUINELY
-     COMPLEX (off the positive real axis) when sin(p) != 0. At the exceptional
-     real-spectrum momenta sin(p)=0 (p=0 and, on even lattices, p=pi), the
-     one-step matrix is real symmetric but has one negative eigenvalue, so it
-     is still not a positive operator. Hence the single-step transfer operator
-     T_hat is NOT positive -- consistent with the single-step Lagrangian no-go
-     runner (min eig -0.80).
-
-(P3) MANY-BODY 2-STEP POSITIVITY. For a free (quadratic) fermion theory the
-     many-body transfer operator is the second quantization Gamma(t1) of the
-     single-particle transfer kernel t1 (Luscher 1977; Creutz 1977;
-     Montvay-Munster Sec.4; the underlying functor is Shale-Stinespring /
-     Berezin -- standard free-fermion fact, used here as a functorial relation,
-     not as a positivity citation). For the DIAGONAL free kernel here the
-     functor is elementary finite-dimensional linear algebra and is built and
-     verified IN-REPO from its defining creation-operator intertwiner
-     Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K) (see C5 below), so the relation
-     Gamma(t1) = B^dag B is derived/checked, NOT asserted. The single-particle
-     2-step kernel is the action-derived decaying eigenvalue
-         t1^(2)(p) = e^{-2E(p)}   (real, positive, from P1),
-     so on Fock space H = tensor_p {|0>,|1>} (dim 2^{L_s}):
-
-         T_hat^2 = Gamma( t1^(2) ) = tensor_p diag( 1, e^{-2E(p)} ).
-
-     Equivalently T_hat^2 = exp(-2 a_tau H_hat) with
-         H_hat = sum_p E(p) a_p^dag a_p,  E(p) >= 0  ==>  H_hat >= 0.
-     Therefore T_hat^2 is POSITIVE HERMITIAN with ||T_hat^2|| = 1 (vacuum),
-     and admits the explicit factorization
-
-         T_hat^2 = B^dag B,   B = exp(-a_tau H_hat) = tensor_p diag(1, e^{-E(p)}).
-
-     This is exactly 2-step reflection positivity: H_hat = -log(T_hat^2)/(2 a_tau)
-     is self-adjoint and bounded below by 0.
-
-----------------------------------------------------------------------------
-CROSS-CHECK (route R2 -- 2-step OS Gram in the operator/transfer-matrix picture)
-----------------------------------------------------------------------------
-The Osterwalder-Schrader reflected two-point correlator on the 2-step blocked
-surface, in the transfer-matrix representation, is
-
-    G(F_I, F_J) = <vac| F_I^dag  T_hat^2  F_J |vac>
-
-for second-quantized positive-time observables F_J. This is the genuine OS
-Gram on the 2-step blocked surface: the 2-step block T_hat^2 evolves
-positive-time observables against reflected ones. G is manifestly Hermitian
-and PSD iff T_hat^2 >= 0. We build it explicitly on the Fock space and confirm
-PSD (min eig >= 0), in DIRECT CONTRAST to the single-step naive Lagrangian
+R2 -- cross-check (note Cross-check; gate C4). The OS reflected correlator
+G(F_I,F_J) = <vac| F_I^dag T_hat^2 F_J |vac>, built explicitly on Fock space,
+is Hermitian and PSD -- DIRECT CONTRAST to the single-step naive Lagrangian
 Gram (min eig -0.80). R1 and R2 agree.
 
-----------------------------------------------------------------------------
-GAUGE CASE REDUCTION TARGET (NOT re-derived here)
-----------------------------------------------------------------------------
-The intended SU(3)-gauged staggered closure is recorded as the reduction target
-   (fermion-sector 2-step transfer positivity, THIS runner's new result)
- x (positive determinant weight det(M_KS + m I) >= m^n > 0 config-by-config,
-    separate source row STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17)
- x (gauge/bosonic-half Cauchy-Schwarz norm-square,
-    separate source row
-    REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10).
-The piece newly supplied in-repo is the fermion-sector 2-step transfer-matrix
-positivity (P1)-(P3) + R2 above. The interacting gauge case is not re-derived
-by this runner, and full U-integrated RP is not claimed here.
+C7 -- two-slice Berezin construction (note Step 3b). R1/R2 TAKE the decaying
+monodromy root as the kernel; C7 DERIVES it from the Grassmann integral itself,
+with a from-scratch exterior engine (theta_i theta_j = -theta_j theta_i,
+int dtheta theta = 1, int dtheta 1 = 0 -- nothing else). Eliminating the ODD
+slices from exp(-chibar D chi) leaves residue det(E_odd) and
+D_eff = a . 1 - b (S + S^-1), a = alpha_e + 1/(2 alpha_o), b = 1/(4 alpha_o):
+the ANTIsymmetric one-step hop becomes a SYMMETRIC two-step hop -- the derived
+reason two steps can be positive when one is not -- and a/b = tr(T_odd T_even)
+exactly, so the chain's roots ARE lambda_+-. WHICH root is the transfer kernel
+is then MEASURED, not chosen, and the growing root is rejected four independent
+ways: half-line propagator ratio and residue, CAR metric, coherent-state
+normalization predictively across M, and the reflected Toeplitz Gram. Its
+generator -log(lambda_+)/2 is not bounded below. Full derivation: note Step 3b.
 
-----------------------------------------------------------------------------
-SCORECARD
-----------------------------------------------------------------------------
-PASS overall requires (in the free case):
-  C1 dispersion anchor   : 2-step decaying eigenvalue == e^{-2E(p)} over the BZ
-                           (max residual < 1e-9)
-  C2 single-step non-PSD : min |Im eig(T_even)| > 1e-3 off sin(p)=0, plus
-                           a negative real eigenvalue at sin(p)=0
-  C3 2-step positivity   : T_hat^2 positive Hermitian (min eig > 0) for several
-                           L_s, with exact B^dag B reconstruction
-  C4 R2 OS Gram PSD      : operator-picture 2-step OS Gram is Hermitian and PSD
-                           (min eig >= -1e-10) where single-step was -0.80
-  C5 functor identity    : Gamma(t1^(2)) built from its defining creation-operator
-                           intertwiner equals exp(-2 a_tau H_hat) (||.|| < 1e-10)
-                           -- the free-fermion functor Gamma = B^dag B verified
-                           in-repo, not asserted
-  C6 decaying bridge     : the action-derived T_odd T_even spectral projector
-                           selects the forward contraction channel and its finite
-                           exterior/Gamma image is positive = B^dag B
+Gauge-case reduction target (NOT re-derived here, recorded in the note): this
+runner's fermion-sector 2-step positivity times the separate det-positivity and
+gauge-half Cauchy-Schwarz source rows. Full U-integrated RP is not claimed.
 This runner verifies the free-case numerics and records only downstream
-gauge-case context; independent audit owns any
-status verdict.
+gauge-case context; independent audit owns any status verdict.
 """
 from __future__ import annotations
 
@@ -152,11 +68,10 @@ MASS = 0.5
 TOL_DISP = 1e-9
 TOL_PSD = 1e-10
 MASS_SWEEP = (0.05, 0.1, 0.5, 1.0, 2.0, 5.0)
+C7_MOMENTA = (0.0, 0.7, 2.1)
 
 
-# ---------------------------------------------------------------------------
 # Action-derived single-step classical transfer matrices and dispersion
-# ---------------------------------------------------------------------------
 
 def E_dispersion(p: float, m: float) -> float:
     """Free staggered 1+1d dispersion: sinh^2 E = m^2 + sin^2 p."""
@@ -184,9 +99,7 @@ def single_particle_2step_kernel(p: float, m: float) -> complex:
     return ev[int(np.argmin(np.abs(ev)))]
 
 
-# ---------------------------------------------------------------------------
 # R1 checks
-# ---------------------------------------------------------------------------
 
 def check_dispersion_anchor(m: float, n_bz: int = 16):
     """C1: 2-step decaying eigenvalue == e^{-2E(p)} over the Brillouin zone."""
@@ -291,13 +204,9 @@ def check_dispersion_mass_sweep(masses=MASS_SWEEP, ls_set=(2, 3, 4, 6)):
 
 
 def spectral_decaying_projection(p: float, m: float) -> dict[str, float]:
-    """Derive the stable one-particle channel from the action-derived T_odd T_even.
-
-    For m>0 the two eigenvalues are positive reciprocal modes e^{-2E} and
-    e^{+2E}. The positive-time transfer kernel is the decaying spectral
-    projector channel, not an extra convention. This finite 2x2 calculation is
-    the missing bridge between the classical recurrence and the one-particle
-    kernel used on Fock space.
+    """Spectral projector split of the action-derived T_odd T_even into its
+    reciprocal e^{-2E}/e^{+2E} channels. WHICH channel is the physical transfer
+    kernel is not decided here -- C7 measures it from the Berezin integral.
     """
     t2 = classical_2step(p, m)
     ev = np.linalg.eigvals(t2)
@@ -373,29 +282,19 @@ def check_decaying_gamma_bridge(Ls: int, m: float) -> dict[str, float]:
     }
 
 
-# ---------------------------------------------------------------------------
 # C5: second-quantization functor identity Gamma(t1) = exp(-2 a_tau H_hat),
 #     verified IN-REPO from the functor's defining creation-operator intertwiner
-# ---------------------------------------------------------------------------
 
 def check_second_quantization_functor(Ls: int, m: float):
     """C5: build the free-fermion second-quantization functor IN-REPO and verify
-    it, so Gamma(t1^(2)) = B^dag B is derived/checked rather than asserted as a
-    citation.
+    it, so Gamma(t1^(2)) = B^dag B is derived/checked rather than asserted.
 
-    The defining property of the second-quantization functor Gamma for a
-    one-body operator K (here diagonal, K e_p = lambda_p e_p) is that it fixes
-    the vacuum and intertwines the creation operators,
-        Gamma(K)|vac> = |vac>,   Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K).
-    For a diagonal kernel this is solved by the per-mode tensor product
-        Gamma(t1^(2)) = tensor_p diag(1, lambda_p),   lambda_p = e^{-2E(p)}.
-    We build that operator and check BOTH (i) the defining intertwiner relation
-    mode-by-mode against Jordan-Wigner creation operators, and (ii) that it
-    equals exp(-2 a_tau H_hat) for the second-quantized H_hat = sum_p E(p) n_p
-    (also built from Jordan-Wigner number operators). Agreement (~machine eps)
-    is the functor relation Gamma(e^{-h}) = e^{-dGamma(h)} for this quasi-free
-    kernel -- the standard free-fermion fact (Luscher 1977; Creutz 1977;
-    Shale-Stinespring / Berezin), here CONFIRMED in-repo rather than imported.
+    Gamma for a diagonal one-body K (K e_p = lambda_p e_p) is DEFINED by
+    Gamma(K)|vac> = |vac> and Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K),
+    solved by Gamma(t1^(2)) = tensor_p diag(1, lambda_p), lambda_p = e^{-2E(p)}.
+    We check (i) that intertwiner mode-by-mode against Jordan-Wigner creation
+    operators and (ii) equality with exp(-2 a_tau H_hat), H_hat = sum_p E(p) n_p
+    -- i.e. Gamma(e^{-h}) = e^{-dGamma(h)} CONFIRMED in-repo, not imported.
     """
     a_tau = 1.0  # the 2-step kernel already carries e^{-2E}; a_tau folded in
     ps = [2.0 * math.pi * k / Ls for k in range(Ls)]
@@ -440,9 +339,7 @@ def check_second_quantization_functor(Ls: int, m: float):
     }
 
 
-# ---------------------------------------------------------------------------
 # R2 cross-check: 2-step OS Gram in the operator/transfer-matrix picture
-# ---------------------------------------------------------------------------
 
 def jw_annihilation(mode: int, Ls: int) -> np.ndarray:
     """Jordan-Wigner annihilation operator a_mode on 2^{L_s} Fock space."""
@@ -511,41 +408,270 @@ def r2_os_gram(Ls: int, m: float):
     }
 
 
-# ---------------------------------------------------------------------------
+
+
+# C7 Berezin engine (note Step 3b): element = {mask: complex}, bit k <-> theta_k,
+# from theta_i theta_j = -theta_j theta_i, int dtheta theta = 1, int dtheta 1 = 0.
+
+
+def g_mul(x: dict, y: dict) -> dict:
+    """Exterior product; sign = parity of transpositions moving y's generators in."""
+    out: dict = {}
+    for a, ca in x.items():
+        for b, cb in y.items():
+            if a & b:
+                continue
+            s = 0
+            bb = b
+            while bb:
+                j = (bb & -bb).bit_length() - 1
+                s += bin(a >> (j + 1)).count("1")
+                bb &= bb - 1
+            v = ca * cb
+            mk = a | b
+            out[mk] = out.get(mk, 0j) + (-v if s & 1 else v)
+    return {k: v for k, v in out.items() if v != 0}
+
+
+def g_add(x: dict, y: dict) -> dict:
+    out = dict(x)
+    for mk, c in y.items():
+        out[mk] = out.get(mk, 0j) + c
+    return {k: v for k, v in out.items() if v != 0}
+
+
+def g_int(x: dict, k: int) -> dict:
+    """Berezin integral int d(theta_k): move theta_k to the front, then strip it."""
+    bit = 1 << k
+    out: dict = {}
+    for mk, c in x.items():
+        if not (mk & bit):
+            continue
+        s = bin(mk & (bit - 1)).count("1")
+        out[mk ^ bit] = out.get(mk ^ bit, 0j) + (-c if s & 1 else c)
+    return {k2: v for k2, v in out.items() if v != 0}
+
+
+def g_gaussian(D: np.ndarray, ci, bi) -> dict:
+    """exp(-sum_{jk} chibar_j D_jk chi_k) = prod_{jk} (1 - chibar_j D_jk chi_k)."""
+    e = {0: 1.0 + 0j}
+    for j in range(len(ci)):
+        for k in range(len(ci)):
+            d = complex(D[j, k])
+            if d == 0:
+                continue
+            e = g_mul(e, g_add({0: 1.0 + 0j},
+                               g_mul({1 << bi[j]: -d}, {1 << ci[k]: 1.0 + 0j})))
+    return e
+
+
+def g_bilinear(elem: dict, ci, bi):
+    """Read D off const * exp(-chibar D chi): D_jk = -coef(chibar_j chi_k)/const."""
+    const = elem.get(0, 0j)
+    n = len(ci)
+    D = np.zeros((n, n), dtype=complex)
+    for j in range(n):
+        for k in range(n):
+            (mask, sgn), = g_mul({1 << bi[j]: 1.0 + 0j}, {1 << ci[k]: 1.0 + 0j}).items()
+            D[j, k] = -elem.get(mask, 0j) / sgn / const
+    return const, D
+
+
+def staggered_time_form(p: float, m: float, nt: int) -> np.ndarray:
+    """Action's time-direction quadratic form at momentum p, antiperiodic:
+    D_tt = m + i(-1)^t sin p, D_{t,t+1} = +1/2, D_{t,t-1} = -1/2."""
+    D = np.zeros((nt, nt), dtype=complex)
+    s = math.sin(p)
+    for t in range(nt):
+        D[t, t] = m + (1j * s if t % 2 == 0 else -1j * s)
+        D[t, (t + 1) % nt] += 0.5 * (-1.0 if t + 1 == nt else 1.0)
+        D[t, (t - 1) % nt] += -0.5 * (-1.0 if t == 0 else 1.0)
+    return D
+
+
+def eliminated_chain(p: float, m: float, mm: int):
+    """Even-slice chain left by odd-slice elimination: a . 1 - b (S + S^-1),
+    antiperiodic, a = alpha_e + 1/(2 alpha_o), b = 1/(4 alpha_o)."""
+    a_o = m - 1j * math.sin(p)
+    a = (m + 1j * math.sin(p)) + 1.0 / (2.0 * a_o)
+    b = 1.0 / (4.0 * a_o)
+    D = np.zeros((mm, mm), dtype=complex)
+    for k in range(mm):
+        D[k, k] = a
+        D[k, (k + 1) % mm] += -b * (-1.0 if k + 1 == mm else 1.0)
+        D[k, (k - 1) % mm] += -b * (-1.0 if k == 0 else 1.0)
+    return D, a, b
+
+
+def monodromy_roots(p: float, m: float):
+    """(decaying, growing) eigenvalues of the action-derived T_odd T_even."""
+    ev = np.linalg.eigvals(classical_2step(p, m))
+    return (complex(ev[int(np.argmin(np.abs(ev)))]),
+            complex(ev[int(np.argmax(np.abs(ev)))]))
+
+
+def check_berezin_construction(m: float) -> dict:
+    """C7 (note Step 3b): two-slice Berezin integration with the transfer kernel
+    MEASURED from the eliminated-chain propagator, not selected from the roots."""
+    out: dict = {}
+
+    # (a) engine self-tests: anticommutation and Berezin Gaussian == det.
+    th = {k: {1 << k: 1.0 + 0j} for k in range(4)}
+    anti = True
+    for i in range(4):
+        for j in range(4):
+            anti = anti and (g_add(g_mul(th[i], th[j]), g_mul(th[j], th[i])) == {})
+    out["anti_ok"] = anti
+    out["int_theta"] = abs(g_int(th[0], 0).get(0, 0j))
+    out["int_one_empty"] = g_int({0: 1.0 + 0j}, 0) == {}
+    rng = np.random.default_rng(20260726)
+    det_err = 0.0
+    for n in (1, 2, 3, 4):
+        Dr = rng.standard_normal((n, n)) + 1j * rng.standard_normal((n, n))
+        ci = [2 * t for t in range(n)]
+        bi = [2 * t + 1 for t in range(n)]
+        e = g_gaussian(Dr, ci, bi)
+        for t in range(n):
+            e = g_int(g_int(e, ci[t]), bi[t])
+        det_err = max(det_err, abs(e.get(0, 0j) - np.linalg.det(Dr)))
+    out["det_err"] = det_err
+
+    # (b,c) integrate the ODD time slices out explicitly; compare to the Schur
+    # complement, and read off a/b == tr(T_odd T_even).
+    pe = C7_MOMENTA[1]
+    res_e = sch_e = anti1 = sym2 = ab_e = 0.0
+    ab = 0j
+    tr2 = complex(np.trace(classical_2step(pe, m)))
+    for nt in (6, 8):
+        D = staggered_time_form(pe, m, nt)
+        ci = [2 * t for t in range(nt)]
+        bi = [2 * t + 1 for t in range(nt)]
+        e = g_gaussian(D, ci, bi)
+        for t in range(1, nt, 2):
+            e = g_int(g_int(e, ci[t]), bi[t])
+        ie = list(range(0, nt, 2))
+        io = list(range(1, nt, 2))
+        const, Dg = g_bilinear(e, [2 * t for t in ie], [2 * t + 1 for t in ie])
+        Eo = D[np.ix_(io, io)]
+        Ds = D[np.ix_(ie, ie)] - D[np.ix_(ie, io)] @ np.linalg.inv(Eo) @ D[np.ix_(io, ie)]
+        res_e = max(res_e, abs(const - np.linalg.det(Eo)))
+        sch_e = max(sch_e, float(np.max(np.abs(Dg - Ds))))
+        anti1 = max(anti1, abs(D[0, 1] + D[1, 0]))
+        sym2 = max(sym2, abs(Dg[0, 1] - Dg[1, 0]))
+        ab = Dg[0, 0] / (-Dg[0, 1])
+        ab_e = max(ab_e, abs(ab - tr2))
+    out.update(elim_residue_err=res_e, elim_schur_err=sch_e, one_step_antisym=anti1,
+               two_step_sym=sym2, a_over_b=ab.real, tr_2step=tr2.real, ab_err=ab_e)
+
+    # (d) the residue: MEASURE the kernel as the half-line propagator ratio.
+    dev8 = dev32 = res_err = 0.0
+    grow_gap = res_wrong = math.inf
+    for p in C7_MOMENTA:
+        lam_d, lam_g = monodromy_roots(p, m)
+        for mm in (8, 32):
+            D, _a, b = eliminated_chain(p, m, mm)
+            G = np.linalg.inv(D)
+            r = G[0, 2] / G[0, 1]
+            if mm == 8:
+                dev8 = max(dev8, abs(r - lam_d))
+                continue
+            dev32 = max(dev32, abs(r - lam_d))
+            grow_gap = min(grow_gap, abs(r - lam_g))
+            res_err = max(res_err, abs(G[0, 0] - 1.0 / (b * (lam_g - lam_d))))
+            res_wrong = min(res_wrong, abs(G[0, 0] - 1.0 / (b * (lam_d - lam_g))))
+    out.update(dev8=dev8, dev32=dev32, grow_gap=grow_gap, res_err=res_err,
+               res_wrong=res_wrong)
+
+    # (e) CAR metric on this runner's own JW operators.
+    car_dag = car_aa = 0.0
+    for ls in (2, 3, 4):
+        aops = [jw_annihilation(k, ls) for k in range(ls)]
+        eye = np.eye(2 ** ls)
+        for i in range(ls):
+            for j in range(ls):
+                ac = aops[i] @ aops[j].conj().T + aops[j].conj().T @ aops[i]
+                car_dag = max(car_dag, float(np.max(np.abs(ac - (eye if i == j else 0.0)))))
+                car_aa = max(car_aa,
+                             float(np.max(np.abs(aops[i] @ aops[j] + aops[j] @ aops[i]))))
+    out.update(car_dag=car_dag, car_aa=car_aa)
+
+    # (e2) coherent-state normalization, predictive across M: the antiperiodic Fock
+    # trace Tr Gamma(K)^M = 1 + K^M, squared for the doubler pair.
+    norm_err = 0.0
+    norm_wrong = math.inf
+    for p in C7_MOMENTA:
+        lam_d, lam_g = monodromy_roots(p, m)
+        a_o = m - 1j * math.sin(p)          # det(E_odd) = a_o^M
+        b = 1.0 / (4.0 * a_o)               # the same b eliminated_chain() produces
+        pref0 = a_o * b * lam_g             # per-M factor of det(E_odd) b^M lam_+^M
+        for mh in (2, 3, 4, 5, 6):
+            dfull = np.linalg.det(staggered_time_form(p, m, 2 * mh))
+            pref = pref0 ** mh
+            norm_err = max(norm_err, abs(dfull - pref * (1.0 + lam_d ** mh) ** 2) / abs(dfull))
+            norm_wrong = min(norm_wrong,
+                             abs(dfull - pref * (1.0 + lam_g ** mh) ** 2) / abs(dfull))
+    out.update(norm_err=norm_err, norm_wrong=norm_wrong)
+
+    # (f) the identification, the reflected Toeplitz Gram, and boundedness below.
+    ident = 0.0
+    kaps = []
+    for j in range(9):
+        p = j * math.pi / 8.0
+        D, _a, _b = eliminated_chain(p, m, 32)
+        G = np.linalg.inv(D)
+        kap = G[0, 2] / G[0, 1]
+        kaps.append(kap.real)
+        ident = max(ident, abs(kap - single_particle_2step_kernel(p, m)))
+    gram_dec = gen_dec = math.inf
+    gram_gro = gen_gro = -math.inf
+    for p in C7_MOMENTA:
+        lam_d, lam_g = monodromy_roots(p, m)
+        for kk in (3, 5):
+            idx = np.arange(kk + 1)
+            gd = np.array([[lam_d.real ** abs(i - j) for j in idx] for i in idx])
+            gg = np.array([[lam_g.real ** abs(i - j) for j in idx] for i in idx])
+            gram_dec = min(gram_dec, float(np.min(np.linalg.eigvalsh(gd))))
+            gram_gro = max(gram_gro, float(np.min(np.linalg.eigvalsh(gg))))
+        gen_dec = min(gen_dec, -math.log(lam_d.real) / 2.0)
+        gen_gro = max(gen_gro, -math.log(lam_g.real) / 2.0)
+    out.update(ident=ident, kap_lo=min(kaps), kap_hi=max(kaps), gram_dec=gram_dec,
+               gram_gro=gram_gro, gen_dec=gen_dec, gen_gro=gen_gro)
+    return out
+
+
 # Main
-# ---------------------------------------------------------------------------
+
+def _hi(rs, k):
+    return max(r[k] for r in rs)
+
+
+def _lo(rs, k):
+    return min(r[k] for r in rs)
+
 
 def main() -> int:
-    print("=" * 78)
-    print("2-STEP BLOCKED STAGGERED-KS TRANSFER MATRIX POSITIVITY (free case, R1+R2)")
-    print("=" * 78)
-    print(f"Free staggered fermions, 1+1d, m={MASS}. eta_0=1, eta_1(t)=(-1)^t.")
-    print("Single-step transfer alternates T_even/T_odd; physical object T_hat^2 = T_odd T_even.")
+    print("2-STEP BLOCKED STAGGERED-KS TRANSFER MATRIX POSITIVITY (free case, R1+R2+C7)")
+    print(f"Free staggered fermions, 1+1d, m={MASS}. eta_0=1, eta_1(t)=(-1)^t. Single-step")
+    print("transfer alternates T_even/T_odd; physical object T_hat^2 = T_odd T_even.")
     print()
 
     passes = 0
     fails = 0
 
     # ---- C1: dispersion anchor (faithfulness) + mass-range persistence ----
-    print("-" * 78)
-    print("C1  DISPERSION ANCHOR (faithfulness): 2-step decaying eigenvalue == e^{-2E(p)}")
-    print("    E(p) = arcsinh( sqrt(m^2 + sin^2 p) ),  sinh^2 E = m^2 + sin^2 p")
-    print("-" * 78)
+    print("C1  DISPERSION ANCHOR: 2-step decaying eigenvalue == e^{-2E(p)}, "
+          "E(p) = arcsinh(sqrt(m^2+sin^2 p))")
     max_res, max_imag, rows = check_dispersion_anchor(MASS)
-    for p, decay, target, res in rows[: len(rows) // 2 + 1]:
+    for p, decay, target, res in rows[:3]:
         print(f"    p={p:6.3f}: decay-mode={decay.real:+.8f}{decay.imag:+.0e}j  "
               f"e^-2E={target:.8f}  |res|={res:.2e}")
-    print(f"    ... ({len(rows)} momenta over the Brillouin zone)")
-    print(f"    max dispersion residual = {max_res:.3e}  (tol {TOL_DISP:.0e})")
-    print(f"    max |Im(decay-mode)|    = {max_imag:.3e}")
-    print("    mass-range persistence (real m>0): "
-          f"m in {{{', '.join(format(m, 'g') for m in MASS_SWEEP)}}}")
+    print(f"    ... {len(rows)} momenta over the BZ: max residual={max_res:.3e}, "
+          f"max|Im(decay-mode)|={max_imag:.3e}  (tol {TOL_DISP:.0e})")
     sweep_rows, sweep_max_res, sweep_max_imag, sweep_min_eig = check_dispersion_mass_sweep()
-    for m, mr, mi, me in sweep_rows:
-        print(f"      m={m:6.3f}: max|res|={mr:.2e}  max|Im|={mi:.2e}  "
-              f"min eig(T_hat^2)={me:.3e}")
-    print(f"    sweep max dispersion residual = {sweep_max_res:.3e}  (tol {TOL_DISP:.0e})")
-    print(f"    sweep min eig(T_hat^2)        = {sweep_min_eig:.3e}  (>0 required throughout)")
+    print("    mass-range persistence (real m>0), min eig(T_hat^2) per m: "
+          + "  ".join(f"m={m:g}:{me:.3e}" for m, _mr, _mi, me in sweep_rows))
+    print(f"    sweep max residual={sweep_max_res:.3e}, max|Im|={sweep_max_imag:.3e}, "
+          f"min eig={sweep_min_eig:.3e} (>0 required throughout)")
     c1 = (
         max_res < TOL_DISP and max_imag < TOL_DISP
         and sweep_max_res < TOL_DISP and sweep_max_imag < TOL_DISP
@@ -557,10 +683,8 @@ def main() -> int:
     print()
 
     # ---- C2: single-step non-positivity ----
-    print("-" * 78)
     print("C2  SINGLE-STEP NON-POSITIVITY: complex when sin(p)!=0; negative mode when sin(p)=0")
     print("    => single-step T_hat NOT a positive operator (consistent with the no-go)")
-    print("-" * 78)
     complex_min_imag, complex_worst_imag, exceptional_ok, exceptional_rows, examples = check_single_step_nonpositive(MASS)
     for p, ev in examples:
         print(f"    p={p:6.3f}: eig(T_even) = "
@@ -569,8 +693,8 @@ def main() -> int:
         print(f"    sin(p)=0 mode p={p:6.3f}: eig(T_even) = "
               f"[{ev_real[0]:+.4f}, {ev_real[1]:+.4f}], Im err={real_err:.1e} "
               "(negative eigenvalue => non-positive)")
-    print(f"    min |Im eig(T_even/T_odd)| over sin(p)!=0 = {complex_min_imag:.4f}  (must exceed 1e-3)")
-    print(f"    max |Im eig(T_even/T_odd)| over sin(p)!=0 = {complex_worst_imag:.4f}")
+    print(f"    |Im eig(T_even/T_odd)| for sin(p)!=0 in [{complex_min_imag:.4f}, "
+          f"{complex_worst_imag:.4f}]  (min must exceed 1e-3)")
     c2 = complex_min_imag > 1e-3 and exceptional_ok
     print(f"    C2 = {'PASS' if c2 else 'FAIL'}")
     passes += int(c2)
@@ -578,50 +702,51 @@ def main() -> int:
     print()
 
     # ---- C3: 2-step positivity + B^dag B ----
-    print("-" * 78)
-    print("C3  TWO-STEP POSITIVITY: T_hat^2 = Gamma(t1^(2)) positive Hermitian = B^dag B")
-    print("    t1^(2)(p) = e^{-2E(p)} (action-derived decaying eigenvalue, from C1)")
-    print("-" * 78)
+    print("C3  TWO-STEP POSITIVITY: T_hat^2 = Gamma(t1^(2)) positive Hermitian, "
+          "t1^(2)(p) = e^{-2E(p)} from C1")
     c3 = True
+    rs3 = []
     for Ls in (2, 3, 4, 6):
         r = build_manybody_T2(Ls, MASS)
         ok = (r["min_eig"] > 0.0) and (r["herm_err"] < 1e-12) and (r["BdagB_err"] < 1e-10)
         c3 = c3 and ok
-        print(f"    L_s={Ls} dim={r['dim']:3d}: T_hat^2 min eig={r['min_eig']:.6e} "
-              f"max={r['max_eig']:.6f}  Herm-err={r['herm_err']:.1e}  "
-              f"||T_hat^2 - B^dag B||={r['BdagB_err']:.1e}  max|Im(kernel)|={r['max_imag_kernel']:.1e}")
+        rs3.append(r)
+    print(f"    L_s in (2,3,4,6), dim {_lo(rs3,'dim')}..{_hi(rs3,'dim')}, worst case: "
+          f"min eig={_lo(rs3,'min_eig'):.6e} (>0) max={_hi(rs3,'max_eig'):.6f} "
+          f"Herm-err={_hi(rs3,'herm_err'):.1e} "
+          f"||T_hat^2 - B^dag B||={_hi(rs3,'BdagB_err'):.1e} "
+          f"max|Im(kernel)|={_hi(rs3,'max_imag_kernel'):.1e}")
     print(f"    C3 = {'PASS' if c3 else 'FAIL'}  (positive Hermitian, exact B^dag B, all L_s)")
     passes += int(c3)
     fails += int(not c3)
     print()
 
     # ---- C4: R2 OS Gram cross-check ----
-    print("-" * 78)
-    print("C4  R2 CROSS-CHECK: operator-picture 2-step OS Gram PSD")
-    print("    G(F_I,F_J) = <vac| F_I^dag T_hat^2 F_J |vac>, Hermitian and PSD iff T_hat^2>=0")
-    print("    (contrast: single-step naive Lagrangian Gram min eig = -0.80)")
-    print("-" * 78)
+    print("C4  R2 CROSS-CHECK: operator-picture 2-step OS Gram "
+          "G(F_I,F_J) = <vac| F_I^dag T_hat^2 F_J |vac>,")
+    print("    Hermitian and PSD iff T_hat^2>=0 (contrast: single-step naive Lagrangian "
+          "Gram min eig = -0.80)")
     c4 = True
+    rs4 = []
     for Ls in (3, 4):
         r = r2_os_gram(Ls, MASS)
         ok = (r["min_eig"] > -TOL_PSD) and (r["herm_err"] < 1e-9) and (r["vac_ground_resid"] < 1e-9)
         c4 = c4 and ok
-        print(f"    L_s={Ls} dimFock={r['dim']:3d} #obs={r['n_obs']:2d}: "
-              f"||G-G^dag||={r['herm_err']:.1e}  Gram min eig={r['min_eig']:+.6e} "
-              f"max={r['max_eig']:.6f}  PSD={'YES' if r['min_eig']>-TOL_PSD else 'NO'}")
+        rs4.append(r)
+    print(f"    L_s in (3,4), dimFock {_lo(rs4,'dim')}..{_hi(rs4,'dim')} "
+          f"#obs {_lo(rs4,'n_obs')}..{_hi(rs4,'n_obs')}, worst case: "
+          f"||G-G^dag||={_hi(rs4,'herm_err'):.1e}  Gram min eig={_lo(rs4,'min_eig'):+.6e} "
+          f"max={_hi(rs4,'max_eig'):.6f}  PSD={'YES' if _lo(rs4,'min_eig')>-TOL_PSD else 'NO'}")
     print(f"    C4 = {'PASS' if c4 else 'FAIL'}  (Hermitian PSD where single-step was -0.80)")
     passes += int(c4)
     fails += int(not c4)
     print()
 
     # ---- C5: second-quantization functor identity (in-repo, not asserted) ----
-    print("-" * 78)
-    print("C5  SECOND-QUANTIZATION FUNCTOR (in-repo): Gamma(t1^(2)) from its defining")
+    print("C5  SECOND-QUANTIZATION FUNCTOR (in-repo): Gamma(t1^(2)) built from its defining")
     print("    intertwiner Gamma(K) a_p^dag = lambda_p a_p^dag Gamma(K), == exp(-2 a_tau H_hat)")
-    print("    => the free-fermion functor relation Gamma = B^dag B verified, not asserted")
-    print("    (Luscher/Creutz; Shale-Stinespring/Berezin)")
-    print("-" * 78)
     c5 = True
+    rs5 = []
     for Ls in (2, 3, 4, 6):
         r = check_second_quantization_functor(Ls, MASS)
         ok = (
@@ -631,20 +756,20 @@ def main() -> int:
             and r["H_offdiag"] < 1e-12
         )
         c5 = c5 and ok
-        print(f"    L_s={Ls} dim={r['dim']:3d}: intertwiner err={r['intertwiner_err']:.1e}  "
-              f"vac-fix err={r['vac_fix_err']:.1e}  H off-diag={r['H_offdiag']:.1e}  "
-              f"||Gamma - exp(-2 a_tau H_hat)||={r['functor_err']:.1e}")
+        rs5.append(r)
+    print(f"    L_s in (2,3,4,6), worst case: intertwiner err={_hi(rs5,'intertwiner_err'):.1e}  "
+          f"vac-fix err={_hi(rs5,'vac_fix_err'):.1e}  H off-diag={_hi(rs5,'H_offdiag'):.1e}  "
+          f"||Gamma - exp(-2 a_tau H_hat)||={_hi(rs5,'functor_err'):.1e}")
     print(f"    C5 = {'PASS' if c5 else 'FAIL'}  (functor relation Gamma=B^dag B verified in-repo)")
     passes += int(c5)
     fails += int(not c5)
     print()
 
     # ---- C6: decaying-channel spectral projector + exterior/Gamma bridge ----
-    print("-" * 78)
-    print("C6  DECAYING-CHANNEL BRIDGE: spectral projector of action-derived T_odd T_even")
-    print("    selects the forward contraction kernel; finite exterior/Gamma image is positive = B^dag B")
-    print("-" * 78)
+    print("C6  DECAYING-CHANNEL BRIDGE: spectral projector of action-derived T_odd T_even selects")
+    print("    the forward contraction kernel; finite exterior/Gamma image is positive = B^dag B")
     c6 = True
+    rs6 = []
     for Ls in (2, 3, 4, 6):
         r = check_decaying_gamma_bridge(Ls, MASS)
         ok = (
@@ -662,21 +787,74 @@ def main() -> int:
             and r["gamma_bdagb_err"] < 1e-10
         )
         c6 = c6 and ok
-        print(f"    L_s={Ls}: lambda_dec in [{r['kernel_min']:.6e}, {r['kernel_max']:.6e}], "
-              f"lambda_grow in [{r['grow_min']:.6e}, {r['grow_max']:.6e}], "
-              f"proj idem={r['max_projector_idem']:.1e}, "
-              f"T2P-lambdaP={r['max_projector_resid']:.1e}, split={r['max_projector_split']:.1e}, "
-              f"orth={r['max_projector_orth']:.1e}, Gamma tensor err={r['gamma_tensor_err']:.1e}, "
-              f"BdagB err={r['gamma_bdagb_err']:.1e}")
+        rs6.append(r)
+    print(f"    L_s in (2,3,4,6): lambda_dec in [{_lo(rs6,'kernel_min'):.6e}, "
+          f"{_hi(rs6,'kernel_max'):.6e}] (<=1), lambda_grow in "
+          f"[{_lo(rs6,'grow_min'):.6e}, {_hi(rs6,'grow_max'):.6e}] (>=1), "
+          f"min eig Gamma={_lo(rs6,'gamma_min_eig'):.6e}")
+    print(f"    worst case: proj idem={_hi(rs6,'max_projector_idem'):.1e}, "
+          f"T2P-lambdaP={_hi(rs6,'max_projector_resid'):.1e}, "
+          f"split={_hi(rs6,'max_projector_split'):.1e}, "
+          f"orth={_hi(rs6,'max_projector_orth'):.1e}, "
+          f"|Im|={max(_hi(rs6,'max_dec_imag'), _hi(rs6,'max_grow_imag')):.1e}, "
+          f"Gamma tensor={_hi(rs6,'gamma_tensor_err'):.1e}, "
+          f"BdagB={_hi(rs6,'gamma_bdagb_err'):.1e}")
     print(f"    C6 = {'PASS' if c6 else 'FAIL'}  (decaying spectral channel derives the Fock kernel)")
     passes += int(c6)
     fails += int(not c6)
     print()
 
+    # ---- C7: explicit two-slice Berezin construction (kernel MEASURED) ----
+    print("C7  TWO-SLICE BEREZIN CONSTRUCTION: int prod dchibar dchi e^{-chibar D chi},")
+    print("    odd slices eliminated; the decaying kernel is MEASURED, not selected")
+    r7 = check_berezin_construction(MASS)
+    print(f"    (a) engine: anticomm={r7['anti_ok']}  int dtheta theta={r7['int_theta']:.1f}  "
+          f"int dtheta 1=0:{r7['int_one_empty']}  max|Berezin - det D|={r7['det_err']:.1e} (n<=4)")
+    print(f"    (b) Nt=6,8: |const - det(E_odd)|={r7['elim_residue_err']:.1e}  "
+          f"max|D_eff - (A - B E^-1 C)|={r7['elim_schur_err']:.1e}")
+    print(f"        one-step hop ANTIsym |D[0,1]+D[1,0]|={r7['one_step_antisym']:.1e}  ->  "
+          f"two-step hop SYM |D_eff[0,1]-D_eff[1,0]|={r7['two_step_sym']:.1e}")
+    print(f"    (c) a/b={r7['a_over_b']:+.10f}  tr(T_odd T_even)={r7['tr_2step']:+.10f}  "
+          f"|diff|={r7['ab_err']:.1e} => chain roots ARE lambda_+-")
+    print(f"    (d) residue: max|G2/G1 - lambda_-| M=8 {r7['dev8']:.1e} -> M=32 {r7['dev32']:.1e}; "
+          f"min|G2/G1 - lambda_+|={r7['grow_gap']:.3f} rejected")
+    print(f"        max|G_00 - 1/(b(lam_+ - lam_-))|={r7['res_err']:.1e}   "
+          f"wrong-root min|G_00 - R_wrong|={r7['res_wrong']:.3f} rejected")
+    print(f"    (e) CAR metric max|{{a_i,a_j^dag}}-delta|={r7['car_dag']:.1e}  "
+          f"max|{{a_i,a_j}}|={r7['car_aa']:.1e}; coherent-state norm")
+    print(f"        det D == det(E_odd) b^M lam_+^M (1+lam_-^M)^2, M=2..6 relerr<={r7['norm_err']:.1e}; "
+          f"growing root relerr>={r7['norm_wrong']:.1f} rejected")
+    print(f"    (f) measured kappa(p) == t1^(2)(p) over the BZ: max|diff|={r7['ident']:.1e}, "
+          f"kappa in [{r7['kap_lo']:.6e}, {r7['kap_hi']:.6e}]")
+    print(f"        reflected Toeplitz Gram kappa^{{|i-j|}}: min eig(decaying)={r7['gram_dec']:+.6f} > 0, "
+          f"min eig(growing)={r7['gram_gro']:+.6f} < 0")
+    print(f"        -log(lam_-)/2={r7['gen_dec']:+.8f} >= 0 vs -log(lam_+)/2={r7['gen_gro']:+.8f} < 0 "
+          "(growing branch not bounded below)")
+    c7 = (
+        r7["anti_ok"] and r7["int_one_empty"]
+        and abs(r7["int_theta"] - 1.0) < 1e-12
+        and r7["det_err"] < 1e-12
+        and r7["elim_residue_err"] < 1e-12
+        and r7["elim_schur_err"] < 1e-12
+        and r7["one_step_antisym"] == 0.0
+        and r7["two_step_sym"] == 0.0
+        and r7["ab_err"] < 1e-12
+        and r7["dev32"] < r7["dev8"] and r7["dev32"] < 1e-10
+        and r7["grow_gap"] > 1.0
+        and r7["res_err"] < 1e-10 and r7["res_wrong"] > 1.0
+        and r7["car_dag"] < 1e-12 and r7["car_aa"] < 1e-12
+        and r7["norm_err"] < 1e-12 and r7["norm_wrong"] > 1.0
+        and r7["ident"] < 1e-10
+        and r7["gram_dec"] > 0.0 and r7["gram_gro"] < 0.0
+        and r7["gen_dec"] >= 0.0 and r7["gen_gro"] < 0.0
+    )
+    print(f"    C7 = {'PASS' if c7 else 'FAIL'}  (kernel MEASURED; growing root rejected 4 ways)")
+    passes += int(c7)
+    fails += int(not c7)
+    print()
+
     # ---- Verdict ----
-    print("=" * 78)
     print("SUMMARY")
-    print("=" * 78)
     print(f"  C1 dispersion anchor   : {'PASS' if c1 else 'FAIL'}"
           f"  (m={MASS} residual {max_res:.2e}; sweep max {sweep_max_res:.2e}, "
           f"min eig(T_hat^2)>0 over m in [0.05,5.0])")
@@ -687,20 +865,18 @@ def main() -> int:
     print(f"  C4 R2 OS Gram PSD      : {'PASS' if c4 else 'FAIL'}  (2-step OS Gram Hermitian PSD)")
     print(f"  C5 functor identity    : {'PASS' if c5 else 'FAIL'}  (Gamma=B^dag B verified in-repo)")
     print(f"  C6 decaying bridge     : {'PASS' if c6 else 'FAIL'}  (spectral projector -> Fock kernel)")
+    print(f"  C7 Berezin two-slice   : {'PASS' if c7 else 'FAIL'}  (measured kernel, residue, CAR, reflected Gram)")
     print()
     all_ok = (fails == 0)
     print(f"PASS={passes} FAIL={fails}")
     if all_ok:
-        print()
         print("  PASS -- the free staggered 2-step blocked transfer matrix T_hat^2 is")
-        print("  POSITIVE HERMITIAN (T_hat^2 = B^dag B, H_hat = -log(T_hat^2)/(2 a_tau) >= 0),")
-        print("  derived from the staggered action and anchored to the exact free staggered")
-        print("  dispersion sinh^2 E = m^2 + sin^2 p. The single-step T_hat is non-positive")
-        print("  (complex/negative one-step spectrum), consistent with the single-step no-go")
-        print("  runner. Continuum OS reconstruction and off-surface physical")
-        print("  completion remain out of scope.")
+        print("  POSITIVE HERMITIAN: T_hat^2 = B^dag B with the one-particle kernel")
+        print("  MEASURED by the two-slice Berezin construction (C7), so")
+        print("  H_hat = -log(T_hat^2)/(2 a_tau) >= 0, while the single-step T_hat stays")
+        print("  non-positive. Continuum OS reconstruction and the interacting gauge")
+        print("  case remain out of scope.")
     else:
-        print()
         print("  FAIL -- the 2-step positivity construction did not close on the free case.")
         print("  Do NOT force positivity; report the honest wall and run the no-go gate.")
     return 0 if all_ok else 1

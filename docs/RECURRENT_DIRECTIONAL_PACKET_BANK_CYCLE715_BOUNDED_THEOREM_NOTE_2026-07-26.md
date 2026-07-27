@@ -1,7 +1,7 @@
-# Route A recurrent directional packet bank — scratch construction
+# Cycle 715 recurrent directional packet bank — bounded theorem note
 
-Status: exploratory, unnumbered, authority none, audit unset. This note does
-not request retention and makes no constitutional or no-go claim.
+Status: bounded constructive theorem, authority none, audit unset. This note
+makes no constitutional or no-go claim.
 
 ## Question
 
@@ -57,7 +57,7 @@ claimed to fix an exhausted state.
 Runner:
 
 ```text
-scripts/scratch_route_a_recurrent_directional_packet_bank_2026_07_26.py
+scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py
 ```
 
 The current run reports:
@@ -141,3 +141,15 @@ and identifies the next sharp wall as allocator genesis plus inter-bank
 handoff/exhaustion, not endpoint direction, freshness, local routing, coherent
 execution, inverse cleanup, or K16 packet propagation. It does not yet close
 the recurrent many-bank physical compiler and creates no axiom pressure.
+
+## Tournament disposition
+
+This is the strongest surviving route in the Cycle-715 tournament because it
+uses the actual Cycle-713/714 same-code matter instrument, preserves the mass
+fixture, and routes the complete two-star word.  The independent scan/capsule
+route was falsified beyond its frozen two-lap horizon: a DONE capsule rearmed
+when it revisited the recorded address and emitted a spurious packet.  Its
+honest surviving result is a one-lap first-blank scanner.  The six-port
+admission construction is packaged separately as Cycle 716.  These are
+route-specific dispositions, not a no-go, minimum-content, shared-obstruction,
+or axiom-pressure result.

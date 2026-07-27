@@ -360,12 +360,13 @@ SUPPORTED_DISPATCH_SCHEMAS = {"promotion_reaudit_queue.v1"}
 # drain. Rule (ii) has no baseline.
 #
 # Shrink-only is a reviewed convention here, not a mechanical guarantee, and the
-# `..._baseline_stale` notice is NOT by itself an instruction to prune. A key
-# stops being reported for three different reasons and only one of them is a
-# drain:
+# `..._baseline_stale` notice is NOT by itself an instruction to prune. It says
+# only that the key was not reported on THIS run. Three common reasons, of
+# which one is a drain:
 #
-#   * DRAINED -- the label was removed from the note. Prune the key.
-#   * DORMANT -- the label is still in the note, but the named target was
+#   * DRAINED -- the note no longer makes the attribution: the label is gone,
+#     or rewritten so it no longer asserts the grade. Prune the key.
+#   * DORMANT -- the attribution is still there, but the named target was
 #     promoted, so the token no longer overstates it. Pruning here is harmful:
 #     an ordinary later demotion would turn the unchanged prose into a NEW hard
 #     error. Leave the key in place. (No live row carries `retained_no_go`
@@ -375,9 +376,16 @@ SUPPORTED_DISPATCH_SCHEMAS = {"promotion_reaudit_queue.v1"}
 #     changed. The old key goes quiet AND the label errors under its new key.
 #     Update the key rather than pruning it.
 #
-# Distinguishing these mechanically needs a source identifier that survives a
-# rename and a liveness signal independent of the target's current grade;
-# neither exists here, so the notice reports and the drainer decides.
+# That list is NOT exhaustive. Anything that stops the generator yielding this
+# (note, target) pair has the same effect: the line gaining ledger metadata and
+# routing through rule (ii) instead (which returns before `prose_no_go_live` is
+# touched), an edit that inserts a hedge or breaks token/reference adjacency,
+# an earlier reference on the same line winning the one-yield-per-token
+# `break`, the target row or the citing row leaving the ledger, or the note
+# becoming unreadable. Distinguishing any of these mechanically would need a
+# source identifier that survives a rename and a liveness signal independent of
+# the target's current grade; neither exists here, so the notice reports the
+# fact and the drainer reads the note before acting.
 
 # Strength ordering used ONLY to decide whether a prose token claims more than
 # the live row records. Retained-grade tokens sit at the top because they are
@@ -2197,12 +2205,14 @@ def main() -> int:
     for stale in sorted(prose_no_go_baseline - prose_no_go_live):
         add_notice(
             "prose_retained_no_go_attribution_baseline_stale",
-            f"{stale}: listed in {PROSE_RETAINED_NO_GO_BASELINE_NAME} but no longer "
-            "reported. Check the note before acting: prune the key only if the "
-            "`retained_no_go` label is actually gone; if the label is still there "
-            "and the target was promoted, leave the key (pruning it would make an "
-            "ordinary later demotion a new hard error); if the note was renamed, "
-            "update the key to the new path",
+            f"{stale}: listed in {PROSE_RETAINED_NO_GO_BASELINE_NAME} but not reported "
+            "this run. That is not by itself a drain -- read the note before acting. "
+            "Prune the key only if the note no longer makes the attribution at all; "
+            "if it still does and the target was promoted, leave the key (pruning it "
+            "would make an ordinary later demotion a new hard error on unchanged "
+            "prose); if the note was renamed, update the key to the new path. Other "
+            "mechanisms also silence a key -- see the block comment above "
+            "PROSE_STATUS_STRENGTH",
         )
 
     # Effective-status propagation sanity. A retained-grade row's deps must

@@ -10,19 +10,24 @@
 # target. Do not add keys to silence the rule -- fix the prose.
 #
 # When a key stops being reported, audit_lint raises a
-# `prose_retained_no_go_attribution_baseline_stale` notice. READ THE NOTE
-# BEFORE PRUNING: a key goes quiet for three different reasons and only one is
-# a drain.
+# `prose_retained_no_go_attribution_baseline_stale` notice. That means only
+# "not reported this run". READ THE NOTE BEFORE PRUNING. Three common reasons,
+# of which one is a drain:
 #
-#   DRAINED  the `retained_no_go` label is gone from the note. Prune the key.
-#   DORMANT  the label is still there, but the named target was promoted, so
-#            the token no longer overstates it. LEAVE THE KEY -- pruning it
+#   DRAINED  the note no longer makes the attribution -- label gone, or
+#            rewritten so it no longer asserts the grade. Prune the key.
+#   DORMANT  the attribution is still there, but the named target was promoted,
+#            so the token no longer overstates it. LEAVE THE KEY -- pruning it
 #            would make an ordinary later demotion a new hard error on
 #            unchanged prose. (Currently empty: no live row carries
 #            `retained_no_go`.)
 #   REKEYED  the citing note was renamed or moved, so the old key went quiet
 #            and the same label now errors under the new path. Update the key
 #            to the new path rather than pruning it.
+#
+# Not an exhaustive list: anything that stops the detector yielding that
+# (note, target) pair silences the key the same way. See the block comment
+# above PROSE_STATUS_STRENGTH in audit_lint.py for the full set.
 #
 # It lives beside the scripts rather than under docs/audit/data/ because that
 # directory is restored wholesale from origin/main before a science PR lands,

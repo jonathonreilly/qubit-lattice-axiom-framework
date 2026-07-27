@@ -16930,6 +16930,7 @@ class ProseStatusAttributionTest(unittest.TestCase):
         note_paths = {
             row.get("note_path") for row in rows.values() if row.get("note_path")
         }
+        self.assertTrue(keys, "baseline is empty; this check would be vacuous")
         for key in keys:
             note_path, _, target = key.partition("::")
             self.assertIn(note_path, note_paths, f"{key}: citing note has no row")
@@ -16952,9 +16953,17 @@ class ProseStatusAttributionSeverityTest(unittest.TestCase):
         self.tmp_root = Path(self._tmp.name)
         self.fx = CleanLedgerFixture(self.tmp_root)
 
-    def _run(self, citing_body: str, *, baseline: str | None) -> tuple[int, str]:
-        """Two rows: an `unaudited` target and a citing note carrying
-        `citing_body`. Returns (exit code, stdout)."""
+    def _run(
+        self,
+        citing_body: str,
+        *,
+        baseline: str | None,
+        retained_row: bool = False,
+    ) -> tuple[int, str]:
+        """An `unaudited` target row plus a citing note carrying `citing_body`;
+        with `retained_row`, also a row whose live effective_status is
+        `retained`, for the cases that need a token that does NOT overstate.
+        Returns (exit code, stdout)."""
         rows = {
             "alpha_row": {
                 "claim_id": "alpha_row",
@@ -16977,6 +16986,22 @@ class ProseStatusAttributionSeverityTest(unittest.TestCase):
             "docs/ALPHA_ROW.md": "# Alpha row\n",
             "docs/CITING_ROW.md": citing_body,
         }
+        if retained_row:
+            rows["clean_row"] = {
+                "claim_id": "clean_row",
+                "note_path": "docs/CLEAN_ROW.md",
+                "claim_type": "positive_theorem",
+                "audit_status": "audited_clean",
+                "effective_status": "retained",
+                "auditor": "x",
+                "auditor_family": "codex-gpt-5.5",
+                "criticality": "leaf",
+                "claim_scope": "real scope",
+                "load_bearing_step_class": "C",
+                "negative_assertion_classes": [],
+                "deps": [],
+            }
+            bodies["docs/CLEAN_ROW.md"] = "# Clean row\n"
         for cid, row in rows.items():
             np = row["note_path"]
             path = self.tmp_root / np
@@ -17021,7 +17046,12 @@ class ProseStatusAttributionSeverityTest(unittest.TestCase):
     def test_baselined_retained_no_go_attribution_is_only_a_notice(self):
         rc, out = self._run(self._NO_GO_LINE, baseline=self._NO_GO_KEY + "\n")
         self.assertEqual(0, rc, out)
-        self.assertIn("prose_retained_no_go_attribution", out)
+        # Assert the grandfathered-notice TEXT, not the bare category name --
+        # that name is also a prefix of `..._baseline_stale`, so a substring
+        # check on it alone passes when the detector reports nothing at all.
+        self.assertIn("Grandfathered in", out)
+        self.assertIn("prose labels 'alpha_row' `retained_no_go`", out)
+        self.assertNotIn("prose_retained_no_go_attribution_baseline_stale", out)
         self.assertNotIn("ERROR:", out)
 
     def test_baseline_key_grandfathers_only_the_target_it_names(self):
@@ -17049,7 +17079,10 @@ class ProseStatusAttributionSeverityTest(unittest.TestCase):
         )
         self.assertEqual(0, rc, out)
         self.assertIn("prose_retained_no_go_attribution_baseline_stale", out)
-        self.assertIn("prune the key only if", out)
+        # The notice must keep reporting rather than prescribing: a quiet key
+        # is not evidence of a drain, and pruning a dormant one is harmful.
+        self.assertIn("not by itself a drain", out)
+        self.assertIn("Prune the key only if", out)
 
     # Rule (ii): an OVERSTATING token asserted with ledger metadata.
     def test_ledger_metadata_with_overstating_token_is_a_hard_error(self):
@@ -17072,14 +17105,30 @@ class ProseStatusAttributionSeverityTest(unittest.TestCase):
 
     def test_matching_status_with_ledger_metadata_is_out_of_scope(self):
         """The rule is a refinement of the overstating population, not an
-        unconditional ban on quoting the ledger. Pinned because the README
-        and the block comment now state this scope explicitly."""
-        rc, out = self._run(
-            "| [`ALPHA_ROW.md`](ALPHA_ROW.md) | unaudited | audit_date 2026-05-05 |\n",
-            baseline="",
+        unconditional ban on quoting the ledger. Pinned because the README and
+        the block comment now state this scope explicitly.
+
+        The token must be one the detector RECOGNIZES and the target must
+        actually carry that status, or the case is vacuous: a word like
+        `unaudited` is not in the token regex at all, so it would prove nothing
+        about the strength comparison. The paired assertion below runs the same
+        line against a weaker target and requires the error, so this test
+        cannot pass merely because the detector stopped working."""
+        line_matching = (
+            "| [`CLEAN_ROW.md`](CLEAN_ROW.md) | retained | audit_date 2026-05-05 |\n"
         )
+        rc, out = self._run(line_matching, baseline="", retained_row=True)
         self.assertEqual(0, rc, out)
         self.assertNotIn("together with ledger metadata", out)
+
+        # Same shape, weaker target: the detector is alive and this IS an error.
+        rc2, out2 = self._run(
+            "| [`ALPHA_ROW.md`](ALPHA_ROW.md) | retained | audit_date 2026-05-05 |\n",
+            baseline="",
+            retained_row=True,
+        )
+        self.assertEqual(1, rc2, out2)
+        self.assertIn("together with ledger metadata", out2)
 
     # General case stays soft.
     def test_plain_overstating_attribution_is_only_a_notice(self):

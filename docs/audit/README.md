@@ -454,19 +454,27 @@ the target's live row — neither is an unconditional ban on the shape:
 
   A key that stops being reported surfaces as
   `prose_retained_no_go_attribution_baseline_stale`. That notice is a **report,
-  not an instruction to prune** — a key goes quiet for three different reasons
-  and only one is a drain. **Drained:** the label is gone from the note; prune
-  the key. **Dormant:** the label is still there but the named target was
-  promoted, so the token no longer overstates it; leave the key, because
-  pruning it would make an ordinary later demotion a new hard error on
-  unchanged prose. (No live row carries `retained_no_go` today — see the
-  `no_go_grade_path_unreached` notice — so this case is currently empty.)
+  not an instruction to prune** — it says only that the key was not reported on
+  this run. Three common reasons, of which one is a drain. **Drained:** the note
+  no longer makes the attribution (label gone, or rewritten so it no longer
+  asserts the grade); prune the key. **Dormant:** the attribution is still there
+  but the named target was promoted, so the token no longer overstates it; leave
+  the key, because pruning it would make an ordinary later demotion a new hard
+  error on unchanged prose. (No live row carries `retained_no_go` today — see
+  the `no_go_grade_path_unreached` notice — so this case is currently empty.)
   **Rekeyed:** the citing note was renamed, so the old key goes quiet *and* the
   label errors under its new path; update the key rather than pruning it.
-  Telling these apart mechanically would need a source identifier that survives
-  a rename and a liveness signal independent of the target's current grade;
-  neither exists yet, so shrink-only is a reviewed convention here rather than a
-  mechanical guarantee.
+
+  That list is **not exhaustive**: anything that stops the detector yielding
+  that (note, target) pair silences the key the same way — the line gaining
+  ledger metadata and routing through the second rule instead, an edit that
+  inserts a hedge or breaks token/reference adjacency, an earlier reference on
+  the same line winning the one-report-per-token rule, either row leaving the
+  ledger, or the note becoming unreadable. Telling these apart mechanically
+  would need a source identifier that survives a rename and a liveness signal
+  independent of the target's current grade; neither exists yet, so shrink-only
+  is a reviewed convention here rather than a mechanical guarantee, and the
+  drainer reads the note before acting.
 - **An overstating status token asserted with ledger metadata** — an
   `audit_date`, or an explicit "in the current audit ledger" / "per the ledger"
   claim. That impersonates the ledger rather than paraphrasing it, and it is

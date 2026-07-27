@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py
 runner_sha256: 42ada20e51eaf48c14d9862ddce1467982af90874829ddac62ba75b424d45da5
-input_fingerprint_sha256: dce4b4d159c4b7ed69edd2c77144114211f854c18d0460970eea0dc67e710ffd
+input_fingerprint_sha256: 7d823676cce45b25e9f8fa22e711307a37fad661367327a9c2fae4054440c6a6
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 364.71
+elapsed_sec: 434.82
 status: ok
 ----- stdout -----
 PASS the 2-cube unitary dilation exactly realizes the frozen normalized TP Choi channel

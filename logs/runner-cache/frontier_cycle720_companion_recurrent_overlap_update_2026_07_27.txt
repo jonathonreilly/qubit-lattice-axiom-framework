@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_companion_recurrent_overlap_update_2026_07_27.py
-runner_sha256: c4c25d7e82eceb4c8d546cbb4921f24df4f7d6f76d26a0ee7d7fa631ea0dfc3a
-input_fingerprint_sha256: c67fff6ff0fc3db877666991b462392e88bacdb1c57bf22946bd086a58eafd9e
+runner_sha256: 3064da20e961cea6c4c07a8317028ac9657d6fdd0643bd938a770491e5fad1fc
+input_fingerprint_sha256: 4aedd29b79d435dc83b37aef7d235b5d9c8a8fe3dd672995917d764fab155266
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 202.56
+elapsed_sec: 287.58
 status: ok
 ----- stdout -----
 PASS two overlapping cubes are views of one shared-register global encoder and update

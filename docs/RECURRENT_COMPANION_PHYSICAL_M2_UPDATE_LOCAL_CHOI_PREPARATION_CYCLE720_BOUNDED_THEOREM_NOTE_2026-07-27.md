@@ -6,7 +6,9 @@ Authority: none
 
 Audit: unset
 
-Claim type: bounded theorem with constructive and route-specific negative limbs
+Claim type: bounded_theorem
+
+Runner: [`frontier_cycle720_companion_recurrent_overlap_update_2026_07_27.py`](../scripts/frontier_cycle720_companion_recurrent_overlap_update_2026_07_27.py)
 
 Constitutional effect: none. This package changes no axiom, foundation,
 Qualification, primitive, registry, policy, queue, audit result, or audit
@@ -308,9 +310,9 @@ labels are chart relative; and a Choi resource is not a live-input encoder.
 - objective actuality/admission, physical time/rate, source/gravity meaning,
   permanent Record, Born weighting, and realized-history selection.
 
-## Six-wall dependency ledger
+## Six dependency categories (not independent walls)
 
-| wall | Cycle-720 change | remaining dependency |
+| category | Cycle-720 change | remaining dependency |
 |---|---|---|
 | `C_ref` | no runtime exterior-order query or global parity service; the coframe and parity channels have explicit local circuits | root/boundary, parity label, center signs, gauge reference, epoch, mode labels, parameters, and finite router remain supplied |
 | `C_num` | exact full fixed-parity mixed-gauge channel algebra, all-factor identity-gauge action, and a CAR-local fixed-sector live-input CPTP map | physical selection/enforcement of the parity and center sector, plus literal M2 compilation of the input Bell operations |
@@ -321,36 +323,116 @@ labels are chart relative; and a Choi resource is not a live-input encoder.
 
 ## No-go discipline N1--N8
 
-No universal negative ships. The broad no-go, minimum-content,
-shared-obstruction, and axiom-pressure gate is **FAIL**.
+**Gate target.** The strongest live-input negative datum is that the exact submitted
+root-at-maximum-cell, axis-order `(2,1,0)`, raw-X/Jordan--Wigner cleanup word
+misses the preregistered two-cell, diameter-one correction gate on the held
+`5x3x2` box. The gate is **FAIL** for every stronger impossibility statement.
+Accordingly this result ships only as a diagnostic falsification of that one
+frozen route, not as a no-go, minimum-content result, wall-independence theorem,
+shared obstruction, or axiom-pressure claim. The fixed-representation
+Clifford-radius rejection, product-state diagonal/gauge mismatch,
+hostile-order residual, and deletion failures elsewhere in the package are
+likewise frozen-representation, hypothesis, or sensitivity controls. None is
+promoted to a route-independent negative.
 
-- **N1 alternatives:** the local even-CAR Bell route is constructive;
-  fermionic input circuits, direct encoded-input Cliffords, dissipative center
-  enforcement, and sector-summed channels remain live. The recurrent, twirl,
-  Choi-pump, and even-CAR routes are positive on their declared boundaries.
-- **N2 wall audit:** recurrent `G`, local Choi preparation, live-input use,
-  sector selection, clean genesis, boundary removal, and downstream physical
-  meaning are separated. No independence theorem is claimed.
-- **N3 hidden inputs:** parity, center, mixed gauge, coframe mixture, root,
-  router, epoch, clean registers, parameters, and fixed order are explicit.
-- **N4 residual match:** coordinate ranks, signed spans, route return,
-  covariance products, mass/contact residuals, dirty-target visibility, and
-  the raw-Bell support/diameter ladder are distinct tests.
-- **N5 resolution:** constructive evidence covers overlapping `3x2x2`, held
-  `3x3x2` and `5x3x2`, larger atlas-reuse boxes, all 24 frames, all 576
-  products, and recurrent powers through eight. No infinite-volume or
-  positive-density theorem is asserted.
-- **N6 partial closure:** recurrent `G`, local Choi-resource preparation, and
-  the CAR-local fixed-sector CPTP `E` are retained as positives even though a
-  literal physical input circuit and autonomous genesis remain open.
-- **N7 steelman:** compiling the positive even-CAR Bell operations into the
-  input M2 substrate may close the remaining live-input hardware gap without
-  new axiom content.
-- **N8 cross-cycle echo:** Cycle 703 separated graph-code preparation from
-  scaled update; Cycles 709--719 repeatedly closed formerly supplied finite
-  interfaces. The present positive local pump and recurrent update continue
-  that constructive pattern and forbid constitutional promotion of an
-  unfinished bridge.
+### N1 — alternative-route enumeration
+
+| attack route | attempt and disposition | honesty marker |
+|---|---|---|
+| Re-root or reorder the raw mode tree | A different root or axis order could change every Jordan--Wigner cleanup representative. It was not run, so it defeats any all-tree inference. | `UNTESTED/OPEN`; only the distinct submitted root/order was tested |
+| Minimize modulo gauge and center rows | Multiplying the raw corrections by stabilizer/gauge representatives could reduce support without changing the corrected-channel syndrome. No minimum-support coset solve was run. | `UNTESTED/OPEN`; only the unminimized submitted representative was tested |
+| Replace raw-mode Bell rows by even-CAR characters | The doubled even-CAR family removes the raw-X cleanup and succeeds with one-cell private-dual corrections in this cycle. | `ATTEMPTED`; constructive counter-route |
+| Direct encoded-input Clifford | A bounded Clifford acting directly on input and companion/center coordinates could bypass raw teleportation corrections. No such literal input compiler was tested. | `UNTESTED/OPEN`; naming the route is not an attempt |
+| Local auxiliary parity rail or gauge teleportation | Extra local gauge/rail registers could carry the parity cleanup rather than a growing raw string. The current package does not eliminate that family. | `UNTESTED/OPEN` as a complete live-input route; adjacent ingredients do not count as an attempt |
+| Sector-summed or dissipative center handling | A channel that sums sectors or locally pumps center data could avoid the supplied fixed-sector raw decoder. No autonomous implementation was tested. | `UNTESTED/OPEN`; boundary analysis is not a physical-route attempt |
+
+The five `UNTESTED/OPEN` alternatives do not satisfy N1 and their presence is
+an explicit gate failure for every broader negative. Together with the one
+distinct constructive route that succeeds, they forbid a general raw-Bell,
+teleportation, encoder, substrate, or framework no-go. The current runner is
+the executable evidence for the one-route diagnostic; it has authority `none`
+and is not cited as retained authority for a broader closure.
+
+### N2 — wall-independence audit
+
+The six rows above are accounting categories, not claimed independent walls.
+For the diagnostic negative the collapsed wall set has one member:
+`W_raw = submitted raw correction support exceeds two cells or diameter one on
+the held box`. With one member there is no pairwise wall pair. Sector supply,
+input-side physical compilation, genesis, scheduling, boundary removal, and
+downstream interpretation neither prove nor strengthen `W_raw`; they remain
+separate open interfaces of the positive package. No independence count ships.
+
+### N3 — hidden-wall scan
+
+The note and runners were searched for `assume`, `by construction`, `as is
+standard`, `framework provides`, `bridge context`, `background`, `naturally`,
+`obviously`, `standard QFT`, `registered`, and `canonical`. The load-bearing
+hits are explicit supplied data: fixed parity and center signs, mixed gauge,
+coframe mixture, root, axis order, router/tree, epoch, clean registers,
+Cycle-219/230 parameters, fixed factor order, and finite open boxes.
+`Canonical tableau` names an algebraic coordinate choice and is explicitly not
+a bounded preparation circuit. No hidden admission is promoted to a wall, and
+no phrase licenses a broader negative.
+
+### N4 — residual matching
+
+| cited prior witness | prior residual | present residual | match? |
+|---|---|---|---|
+| `docs/RECURRENT_ENDPOINT_INCIDENCE_PHYSICAL_M2_COMPILER_TOURNAMENT_CYCLE703_NOTE_2026-07-25.md`, result discussion, lines 47--159 | finite order/table/ansatz transfer and common-encoding residuals | support cells/diameter of one frozen raw Bell correction word | no — dropped as a witness |
+| same file, Route-B local-Gauss escape, lines 460--529 | route-specific recurrence representations | submitted raw-X Bell cleanup locality | no — used only as a cross-cycle caution |
+
+No prior no-go or retained authority is used to prove `W_raw`; the exact
+support census comes solely from the current executable and held-size control.
+After dropping the nonmatching citations, witness support for any broader
+negative is zero, which is why no broader negative ships.
+
+### N5 — rhetoric and resolution audit
+
+| phrase | tested resolution | untested resolution and required narrowing |
+|---|---|---|
+| “raw-mode Bell route fails the bounded-local correction gate” | every correction generator of the one frozen tree on six finite boxes; exact held maximum seven cells and diameter four | not all roots, orders, gauge-equivalent representatives, circuits, or infinite boxes; therefore always read as “the submitted frozen route” |
+| “not a literal physical-M2 input-coupling circuit” | package-level artifact inventory and route/site-map boundary | not an impossibility at per-mode, per-block, or lattice-wide resolution; it means the artifact is absent here |
+| “not a clock” | runner ordinals, factor layers, tree walks, and controller stages | no claim about any future operational timing construction |
+| “not a global parity service” | the executed finite-box broadcast/twirl performs no runtime global query | autonomous selection, renewal, and boundary-free enforcement are untested and remain supplied/open |
+
+The generator-level and finite-box results are not generalized to per-route,
+all-representation, infinite-volume, or physical-law negatives.
+
+### N6 — partial-closure and package inventory
+
+Within this PR's submitted note, runners, reports, and receipt, no literal
+physical-M2 input-Bell compiler is constructed. That is an explicit package
+inventory statement, not a registry-wide negative or a new-axiom inference.
+The live import-retirement paths are constructive: literal compilation of the
+positive even-CAR Bell rows, a direct encoded-input Clifford, a local
+gauge/parity-rail transport, a sector-summed channel, or a collision-free epoch
+composition. No convention-only closure is mislabeled as an axiom, and the
+positive recurrent `G`, local Choi pump, and fixed-sector CAR-domain `E` remain
+retained as partial closures.
+
+### N7 — steelman
+
+A hostile reviewer should say: the reported growth may be a poor representative
+of the fixed-sector correction coset, not a property of raw Bell teleportation.
+Re-rooting the tree, changing its axis order, or multiplying every correction
+by local gauge/center rows could preserve all syndromes while shrinking the
+support; more decisively, this same cycle's even-CAR character basis already
+produces one-cell corrections. Since those attacks are unclosed, any negative
+beyond the exact frozen word is premature. This steelman is accepted and is
+the reason for the diagnostic-only disposition.
+
+### N8 — cross-cycle echo
+
+The repository phrase scan and all physics-loop `NO_GO_LEDGER.md` files were
+reviewed. Cycle 703 records direct and finite-dictionary route failures that
+were later escaped by local gauge, plaquette, or representation changes; its
+own N8 row says those escapes forbid a broad inference. The
+[`teleportation-acceptance-suite` no-go ledger](../.claude/science/physics-loops/teleportation-acceptance-suite-note-sync-20260710/NO_GO_LEDGER.md)
+likewise records no theorem-level no-go and a direct repair path. The same
+mechanism applies here: change the representation/route, as the positive
+even-CAR construction already does. Therefore the raw-word diagnostic cannot
+echo into a universal negative.
 
 ## Verdict and next experiment
 

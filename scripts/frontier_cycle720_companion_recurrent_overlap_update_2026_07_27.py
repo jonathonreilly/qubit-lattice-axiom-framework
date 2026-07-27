@@ -42,11 +42,17 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27.py",
     "scripts/frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py",
     "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_local_choi_pump_covariance_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_local_genesis_broadcast_2026_07_27.py",
     "scripts/frontier_cycle720_companion_parity_rail_local_gauge_2026_07_27.py",
     "scripts/frontier_cycle720_companion_recurrent_overlap_update_2026_07_27.py",
     "scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py",
     "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py",
     "scripts/frontier_cycle720_companion_subsystem_mixed_gauge_factorization_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_three_route_independent_adversary_2026_07_27.py",
     "scripts/frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27.py",
     "scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py",
     "scripts/frontier_cycle720_product_companion_full_word_holonomy_2026_07_27.py",
@@ -72,8 +78,20 @@ from hashlib import sha256
 from itertools import product as cartesian_product
 import json
 import math
+from typing import TYPE_CHECKING
 
 import numpy as np
+
+# These package-level runners are intentionally type-check-only imports.  The
+# citation-graph walker follows them into the complete audit packet, while the
+# recurrent runtime continues to consume only the exact helper modules below.
+if TYPE_CHECKING:
+    import frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27
+    import frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27
+    import frontier_cycle720_companion_local_choi_pump_covariance_2026_07_27
+    import frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27
+    import frontier_cycle720_companion_local_genesis_broadcast_2026_07_27
+    import frontier_cycle720_companion_three_route_independent_adversary_2026_07_27
 
 import frontier_cycle720_cell_majorana_companion_geometry_2026_07_27 as M
 import frontier_cycle720_companion_subsystem_m2_update_2026_07_27 as U

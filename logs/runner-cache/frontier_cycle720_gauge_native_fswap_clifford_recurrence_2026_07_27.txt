@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27.py
 runner_sha256: dee1557eca4b88af75c469413290801577415cdf4ebfa3d970ceaa5ea15a2a8b
-input_fingerprint_sha256: a8a470bb00f372084bb435fa63b4d6475de1ae7f88dce1c410aad5ba599d60ad
+input_fingerprint_sha256: ee0d3e746c51799d458037b4d2d0443c8d693750d04220b8c938c76ea1fdb4cf
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 221.54
+elapsed_sec: 256.35
 status: ok
 ----- stdout -----
 PASS four pi/4 rotations are the exact canonical FSWAP up to global phase :: {'unitarity_residual': 0.0, 'involution_residual': 0.0, 'four_rotation_residual_up_to_phase': 4.440892098500626e-16, 'global_phase': [0.0, -1.0], 'double_occupation_phase': [-1.0, 0.0], 'ordinary_SWAP_residual': 2.0}

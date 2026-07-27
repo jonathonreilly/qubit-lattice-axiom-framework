@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_product_companion_full_word_holonomy_2026_07_27.py
 runner_sha256: 438ab263262df8aee2ef1f2cc56fd6ac71a91d19c1fa9d422dd3f5418c7e340c
-input_fingerprint_sha256: 12e52761717f99fef3d71abe7a99b712d22775fa8dea4a3b72238785ad356283
+input_fingerprint_sha256: e2f9b49e9050080409c804b8b43745f4c3a69ba3942535139dc66a40f88470ae
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 9.96
+elapsed_sec: 12.10
 status: ok
 ----- stdout -----
 PASS the uncorrected per-cell |000> companion product state fails active gauge return

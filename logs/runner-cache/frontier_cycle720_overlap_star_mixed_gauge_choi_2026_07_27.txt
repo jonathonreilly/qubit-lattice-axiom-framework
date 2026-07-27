@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py
 runner_sha256: ed7cec59daa3a640a48706ed57d6a1699700a61d3d86964ad07a3e2b1c343721
-input_fingerprint_sha256: 982da3e20b7f1c3560f769ca028e26519e4791ab6d54bf84eeb96ad20ea40566
+input_fingerprint_sha256: 43b70689d46dc105efdeeb222dc9ddb7c623e12427a18dc686463d9683b2bfb8
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 10.49
+elapsed_sec: 12.03
 status: ok
 ----- stdout -----
 PASS both maximal stars and their union induce exactly the same nonzero Pauli domain on the shared register

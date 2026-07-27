@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27.py
 runner_sha256: 990016c074cfc98cd2e4ba2f27afe0e7dd2da7a96b9a38a13d4062f778216a36
-input_fingerprint_sha256: 7fdc44793e0baf9f326c6243520873c161b50ad4e79d63882008e871f63efe6b
+input_fingerprint_sha256: aee7c8d68444acbe3cd038d94605539e00517b35966a2db2767c26f6718d173c
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 242.44
+elapsed_sec: 334.74
 status: ok
 ----- stdout -----
 PASS local doubled even-CAR rows give a complete fixed-sector Bell algebra

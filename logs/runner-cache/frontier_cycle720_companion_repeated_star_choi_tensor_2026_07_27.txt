@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py
 runner_sha256: ee7d6c6d442bac4fe646535ed46369a649fc8b80eb661044242392058c139628
-input_fingerprint_sha256: e020fe3c05a77167939f8653a857b7189ad79ad5aa68e6e2d4b50419b7121b48
+input_fingerprint_sha256: 6e1085e844cd819303cf79fb84e8bd9785cc58b16724eaaa6fbd4c7df848fd65
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 46.62
+elapsed_sec: 52.46
 status: ok
 ----- stdout -----
 PASS three maximal stars and their union give one associative signed one-cell channel

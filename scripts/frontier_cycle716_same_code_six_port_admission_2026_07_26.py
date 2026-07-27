@@ -1070,6 +1070,7 @@ def main() -> int:
             for row in physical.values()
         ),
     }
+    checks = {label: bool(passed) for label, passed in checks.items()}
     report = {
         "authority": "none",
         "audit": "unset",

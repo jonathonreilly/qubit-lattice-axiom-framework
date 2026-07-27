@@ -839,6 +839,7 @@ def main() -> int:
         and route["product_failures"] == 0
         and route["translation_failures"] == 0,
     }
+    checks = {label: bool(passed) for label, passed in checks.items()}
     report = {
         "cycle": 717,
         "authority": "none",

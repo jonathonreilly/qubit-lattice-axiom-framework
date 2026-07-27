@@ -31,7 +31,7 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3883 |
+| Ledger rows | 3894 |
 | Applied audit verdicts | 942 |
 | Retained-grade rows, including boxed decorations | 498 |
 | Retained positive theorems | 118 |
@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 351 |
 | Boxed decorations under retained parents | 29 |
 | Open gates | 3 |
-| Unaudited rows | 2583 |
+| Unaudited rows | 2594 |
 | Retained-pending-chain rows | 10 |
 | Audited conditional rows | 310 |
 | Audited renaming rows | 35 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2970 |
+| Total pending rows | 2981 |
 | Ready rows | 549 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
 | High pending | 366 |
-| Medium pending | 818 |
-| Leaf pending | 1151 |
+| Medium pending | 827 |
+| Leaf pending | 1153 |
 
 Next ready rows by queue order:
 
@@ -105,24 +105,12 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 30 |
-| Live conditional/failed rows that would park | 329 |
+| Live conditional/failed rows that would park | 0 |
 | Live rows fail-open (legacy/unversioned snapshot) | 41 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
-| Lane rows removed since prior pass | 10 |
+| Lane rows removed since prior pass | 0 |
 | Non-lane rows deferred by simulated interleave | 98 |
-
-Named lane membership churn since the prior pass:
-- removed: `dm_full_closure_same_surface_numerator_selector_boundary_note_2026-04-16`
-- removed: `dm_wilson_direct_descendant_schur_feshbach_boundary_variational_theorem_note_2026-04-25`
-- removed: `gravitomagnetic_note`
-- removed: `higgs_mechanism_note`
-- removed: `matter_inertial_closure_note`
-- removed: `q_integer_spectrum_theorem_note_2026-05-02`
-- removed: `single_axiom_hilbert_note`
-- removed: `teleportation_native_axioms_theory_note`
-- removed: `work_history.ckm.cabibbo_bound_note`
-- removed: `z3_conjugate_support_trichotomy_narrow_theorem_note_2026-05-02`
 
 Admitted ids currently absent from lane candidates:
 - `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06`
@@ -333,15 +321,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4541 |
+| Citation-graph nodes | 4552 |
 | Critical nodes | 755 |
 | High nodes | 446 |
-| Medium nodes | 1149 |
-| Leaf nodes | 2191 |
+| Medium nodes | 1162 |
+| Leaf nodes | 2189 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2146 descendants; score 273.568
+- `minimal_axioms` - critical; 2157 descendants; score 277.075
 - `graph_first_su3_integration_note` - critical; 1678 descendants; score 64.213
 - `three_generation_observable_theorem_note` - critical; 1285 descendants; score 62.329
 - `observable_principle_from_axiom_note` - critical; 1124 descendants; score 61.636

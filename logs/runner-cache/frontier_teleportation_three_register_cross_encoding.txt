@@ -1,30 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_three_register_cross_encoding.py
-runner_sha256: b21a419a5173dd8e48f4827d70ee1ec3766a6510f6cd260d5fd15e2104741c62
+runner_sha256: cfa417f66f80961e520bf3356ff6b1a1ea26b910d54679ffb03435cb40f83eb2
+input_fingerprint_sha256: 7e922397d2c7bc227d888ceee23d28e89ed994bfc95ac52f3a8faad9993ec64b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.19
+elapsed_sec: 3.91
 status: ok
 ----- stdout -----
 THREE-REGISTER CROSS-ENCODING TASTE-QUBIT TELEPORTATION CERTIFICATE
 Scope: exact finite logical algebra; ideal state-transfer identity only
 
-Requested dimensions: (1, 2, 3)
-Requested side lengths: (2, 4)
-Valid KS geometries surveyed: 6
-Skipped invalid/out-of-scope geometries: 0
-Random teleportation trials per surveyed triple: 4 (seed=20260425)
-Max triples per geometry: 512 (0 means exhaustive)
-Tolerance: 1.0e-12
+Configuration: dims=(1, 2, 3), sides=(2, 4), geometries=6, trials=4, seed=20260425, triple_cap=512, tolerance=1.0e-12
 
 Encoding totals:
   encoding supports across geometries: 131
-  dim=1 side=2: 1 encodings, 1 possible A/R/B triples
-  dim=1 side=4: 2 encodings, 8 possible A/R/B triples
-  dim=2 side=2: 4 encodings, 64 possible A/R/B triples
-  dim=2 side=4: 16 encodings, 4096 possible A/R/B triples
-  dim=3 side=2: 12 encodings, 1728 possible A/R/B triples
-  dim=3 side=4: 96 encodings, 884736 possible A/R/B triples
 
 Exhaustive factorized structural certificate:
   encoding supports enumerated from the closed-form count: 131/131
@@ -84,140 +73,47 @@ Three-register requirement classification:
 axis_adapted_three_register_cross_encoding:
   expected pass cases: 1609/1609
   teleportation/no-signaling pass: 1609/1609 run (0 skipped before teleportation)
-  unexpected result count: 0
   failure causes: none
-  by geometry: dim side pass/total expected_pass
-      1    2      1/1           1
-      1    4      8/8           8
-      2    2     64/64         64
-      2    4    512/512       512
-      3    2    512/512       512
-      3    4    512/512       512
-  max Bell-projector resolution error: 0.000e+00
-  max Bell-projector idempotence error: 0.000e+00
-  max Bell-projector orthogonality error: 0.000e+00
   minimum corrected-state fidelity: 0.9999999999999996
   maximum infidelity: 6.661e-16
-  max branch probability error from 1/4: 2.220e-16
-  max total probability error from 1: 8.882e-16
-  max Bob trace distance to I/2 before Alice measurement: 4.441e-16
-  max Bob trace distance to I/2 after Alice measurement before message: 4.163e-16
-  max pairwise pre-message Bob-state distance across inputs: 4.718e-16
-  max corrected-state trace error: 2.220e-16
+  pairwise pre-message/corrected-trace errors: 4.718e-16/2.220e-16
+  Bell-projector errors (resolution/idempotence/orthogonality): 0.000e+00/0.000e+00/0.000e+00
+  probability errors (branch/total): 2.220e-16/8.882e-16
+  Bob I/2 trace distances (before/after Alice measurement): 4.441e-16/4.163e-16
   Bell outcomes seen: Phi+, Phi-, Psi+, Psi-
 
 missing_a_to_r_conversion_control:
   expected pass cases: 330/1609
   teleportation/no-signaling pass: 330/330 run (1279 skipped before teleportation)
-  unexpected result count: 0
   failure causes: missing_explicit_a_to_r_site_conversion=1279
-  by geometry: dim side pass/total expected_pass
-      1    2      1/1           1
-      1    4      4/8           4
-      2    2     16/64         16
-      2    4     63/512        63
-      3    2     53/512        53
-      3    4    193/512       193
-  max Bell-projector resolution error: 0.000e+00
-  max Bell-projector idempotence error: 0.000e+00
-  max Bell-projector orthogonality error: 0.000e+00
   minimum corrected-state fidelity: 0.9999999999999998
   maximum infidelity: 6.661e-16
-  max branch probability error from 1/4: 1.665e-16
-  max total probability error from 1: 6.661e-16
-  max Bob trace distance to I/2 before Alice measurement: 3.331e-16
-  max Bob trace distance to I/2 after Alice measurement before message: 3.608e-16
-  max pairwise pre-message Bob-state distance across inputs: 4.718e-16
-  max corrected-state trace error: 2.220e-16
-  Bell outcomes seen: Phi+, Phi-, Psi+, Psi-
+  pairwise pre-message/corrected-trace errors: 4.718e-16/2.220e-16
 
 non_adapted_bell_measurement_control:
   expected pass cases: 342/1609
   teleportation/no-signaling pass: 342/342 run (1267 skipped before teleportation)
-  unexpected result count: 0
   failure causes: a_and_r_bell_x_not_axis_adapted=673, a_bell_x_not_axis_adapted=282, r_bell_x_not_axis_adapted=312
-  by geometry: dim side pass/total expected_pass
-      1    2      1/1           1
-      1    4      8/8           8
-      2    2     16/64         16
-      2    4    137/512       137
-      3    2     58/512        58
-      3    4    122/512       122
-  max Bell-projector resolution error: 0.000e+00
-  max Bell-projector idempotence error: 0.000e+00
-  max Bell-projector orthogonality error: 0.000e+00
   minimum corrected-state fidelity: 0.9999999999999996
   maximum infidelity: 6.661e-16
-  max branch probability error from 1/4: 1.665e-16
-  max total probability error from 1: 6.661e-16
-  max Bob trace distance to I/2 before Alice measurement: 3.331e-16
-  max Bob trace distance to I/2 after Alice measurement before message: 3.608e-16
-  max pairwise pre-message Bob-state distance across inputs: 3.886e-16
-  max corrected-state trace error: 2.220e-16
-  Bell outcomes seen: Phi+, Phi-, Psi+, Psi-
+  pairwise pre-message/corrected-trace errors: 3.886e-16/2.220e-16
 
 non_adapted_bob_correction_control:
   expected pass cases: 642/1609
   teleportation/no-signaling pass: 642/1609 run (0 skipped before teleportation)
-  unexpected result count: 0
   failure causes: bob_fixed_pairhop_x_zero_on_encoding=967
-  by geometry: dim side pass/total expected_pass
-      1    2      1/1           1
-      1    4      8/8           8
-      2    2     32/64         32
-      2    4    267/512       267
-      3    2    164/512       164
-      3    4    170/512       170
-  max Bell-projector resolution error: 0.000e+00
-  max Bell-projector idempotence error: 0.000e+00
-  max Bell-projector orthogonality error: 0.000e+00
   minimum corrected-state fidelity: 0.0000000000000000
   maximum infidelity: 1.000e+00
-  max branch probability error from 1/4: 1.943e-16
-  max total probability error from 1: 7.772e-16
-  max Bob trace distance to I/2 before Alice measurement: 3.886e-16
-  max Bob trace distance to I/2 after Alice measurement before message: 3.608e-16
-  max pairwise pre-message Bob-state distance across inputs: 5.274e-16
-  max corrected-state trace error: 1.000e+00
-  Bell outcomes seen: Phi+, Phi-, Psi+, Psi-
+  pairwise pre-message/corrected-trace errors: 5.274e-16/1.000e+00
 
 wrong_b_resource_conversion_control:
   expected pass cases: 0/1609
   teleportation/no-signaling pass: 0/1609 run (0 skipped before teleportation)
-  unexpected result count: 0
   failure causes: wrong_b_resource_conversion_map=1609
-  by geometry: dim side pass/total expected_pass
-      1    2      0/1           0
-      1    4      0/8           0
-      2    2      0/64          0
-      2    4      0/512         0
-      3    2      0/512         0
-      3    4      0/512         0
-  max Bell-projector resolution error: 0.000e+00
-  max Bell-projector idempotence error: 0.000e+00
-  max Bell-projector orthogonality error: 0.000e+00
   minimum corrected-state fidelity: 0.0000000134850124
   maximum infidelity: 1.000e+00
-  max branch probability error from 1/4: 1.943e-16
-  max total probability error from 1: 7.772e-16
-  max Bob trace distance to I/2 before Alice measurement: 3.886e-16
-  max Bob trace distance to I/2 after Alice measurement before message: 4.163e-16
-  max pairwise pre-message Bob-state distance across inputs: 4.996e-16
-  max corrected-state trace error: 2.220e-16
-  Bell outcomes seen: Phi+, Phi-, Psi+, Psi-
+  pairwise pre-message/corrected-trace errors: 4.996e-16/2.220e-16
 
-Interpretation:
-  Axis-adapted A/R Bell measurements plus axis-adapted Bob corrections pass for every surveyed three-register encoding triple.
-  If A and R are different site supports, an explicit A->R site partial isometry is required to define the Bell-pairing map.
-  If either Alice-side Bell register uses a non-last logical taste axis, the fixed pair-hop X is insufficient and the Bell measurement must be axis-adapted.
-  If R and B differ, the Bell resource requires an explicit R->B site partial isometry; a wrong logical B-side conversion preserves pre-message no-signaling but fails post-message fidelity.
-
-Claim boundary:
-  This is a finite algebraic certificate on ideal encoded taste qubits.
-  It does not derive apparatus dynamics, durable records, resource
-  preparation, Hamiltonian transport, noise tolerance, matter transfer,
-  object transport, charge transfer, mass transfer, energy transfer,
-  physical teleportation, an unbounded-lattice result, or FTL signaling.
 
 Acceptance gates:
   exhaustive encoding-isometry premises: PASS

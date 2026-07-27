@@ -1,6 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_acceptance_suite_note_sync_check.py
-runner_sha256: 9099359571a9b5f0d604f72b78a0cd06050818cd3c903ac12056606f3cbe344f
+runner_sha256: 7e82efe7e92d9842cc01e994df4f4fbc0a0ac9594da12bb48d8309f9e3d2dd57
+input_fingerprint_sha256: 012742bc95459f740010df7bbadbb6f95745b9c859ce1f7263b9dd9490d07842
 timeout_sec: 30
 exit_code: 0
 elapsed_sec: 0.15
@@ -10,10 +11,16 @@ status: ok
 TELEPORTATION ACCEPTANCE SUITE NOTE SYNC CHECK
 ================================================================================================
 acceptance_runner_sha256: d0b70560361dbfab5b46d63a1ef824fe827f56af69719a3a6fa6e949c25d6072
-note_sha256: 36766f9393d3c0a3bd73d1864e343fb4862c5997b6508df298667e20c8b144d6
+note_sha256: 08afdec1434d7c86c4fe27c2e4c7ed1328f6ee3edda66271fbe83431bc879dcb
 
 [PASS] default --list-probes exits zero
 [PASS] strict-lane --list-probes exits zero
+[PASS] note default-required prose list exactly matches the live required prefix
+       note_keys=8 live_keys=8
+[PASS] note optional-hook prose list exactly matches the live optional suffix
+       note_keys=4 live_keys=4
+[PASS] note strict-addition prose list exactly matches the live strict suffix
+       note_keys=16 live_keys=16
 [PASS] note default inventory table exactly matches live default surface
        note_rows=12 live_rows=12
 [PASS] note strict-lane inventory table exactly matches live strict-lane surface
@@ -53,7 +60,7 @@ Strict-lane synchronized rows:
   remaining_open_item_attack             required-if-present frontier_teleportation_remaining_open_item_attack.py
   conclusion_boundary                    required-if-present frontier_teleportation_conclusion_boundary.py
 
-PASS=8 FAIL=0
+PASS=11 FAIL=0
 
 ----- stderr -----
 

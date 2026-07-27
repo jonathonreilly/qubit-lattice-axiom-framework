@@ -171,13 +171,15 @@ The current list-surface synchronization is checked by:
 python3 scripts/frontier_teleportation_acceptance_suite_note_sync_check.py
 ```
 
-The sync guard runs both `--list-probes` surfaces, parses the default and
-strict-lane inventory tables above, and fails unless every note probe key,
-category, candidate-script list, and row order exactly matches the live
-outputs. It also checks the profile algebra: strict-lane keeps the eight
-default required rows in order, replaces the four default optional hooks, and
-adds exactly sixteen `required-if-present` rows. The current guard reports
-`PASS=8 FAIL=0`.
+The sync guard runs both `--list-probes` surfaces, parses the three descriptive
+probe lists and the default and strict-lane inventory tables above, and fails
+unless every prose-list key and every table key, category, candidate-script
+list, and row order exactly matches the live outputs. It also checks the
+profile algebra: strict-lane keeps the eight default required rows in order,
+replaces the four default optional hooks, and adds exactly sixteen
+`required-if-present` rows. Thus the strict profile is the 24-row sequence
+printed by the live runner, not a selected subset of the strict additions. The
+current guard reports `PASS=11 FAIL=0`.
 
 The previous strict-lane snapshot is cached at
 [`outputs/frontier_teleportation_acceptance_suite_strict_list_probes_2026-05-06.txt`](../outputs/frontier_teleportation_acceptance_suite_strict_list_probes_2026-05-06.txt).
@@ -225,10 +227,11 @@ python3 -m py_compile scripts/frontier_teleportation_acceptance_suite_note_sync_
 
 The current sync-runner cache is SHA-pinned to the guard source at
 [`logs/runner-cache/frontier_teleportation_acceptance_suite_note_sync_check.txt`](../logs/runner-cache/frontier_teleportation_acceptance_suite_note_sync_check.txt)
-and reports `PASS=8 FAIL=0`. Its captured stdout records SHA-256 fingerprints
-for both mutable inputs: this note and the documented acceptance runner.
-Because the shared cache framework currently keys freshness only to runner
-source, rerun the live sync command after either input changes.
+and reports `PASS=11 FAIL=0`. Its header includes a deterministic fingerprint
+of both declared mutable inputs: this note and the documented acceptance
+runner. Its captured stdout also records their individual SHA-256 values. A
+change to the guard or either input therefore makes the cache stale, while a
+live sync run remains the authoritative recurrence check.
 
 The current default probe inventory is cached at
 [`outputs/frontier_teleportation_acceptance_suite_default_list_probes_2026-05-06.txt`](../outputs/frontier_teleportation_acceptance_suite_default_list_probes_2026-05-06.txt).

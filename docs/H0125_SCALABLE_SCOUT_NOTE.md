@@ -3,6 +3,7 @@
 **Date:** 2026-04-06
 
 **Status:** bounded no-go on the observed full-window rows; outside audit-ratified tier.
+**Type:** no_go
 **Primary runner:** [`scripts/h0125_scalable_scout.py`](../scripts/h0125_scalable_scout.py)
 **Runner cache:** [`logs/runner-cache/h0125_scalable_scout.txt`](../logs/runner-cache/h0125_scalable_scout.txt)
 
@@ -42,5 +43,7 @@ full-window row. The retained width-4 comparator stays pinned at
 `alpha = 0.499`, while the shorter-scale `phys_l = 4`, `phys_w = 3` scout
 only reaches `alpha = 0.501`, `0.501`, `0.502` across the tested masses.
 
-That is a clean bounded no-go for the observed full-window rows. There is no
-review-safe basis here for a genuinely wider or more scalable replay path.
+That is a clean bounded no-go for the observed full-window rows. On this
+executed `phys_l = 4`, `phys_w = 3`, three-mass slice, there is no rescue
+signal for a genuinely wider or more scalable replay path; no untested family
+or asymptotic statement is claimed.

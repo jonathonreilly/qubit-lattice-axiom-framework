@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_hierarchy_obstruction_lemmas.py
-runner_sha256: 3f305ab994095d47c531f8e330a7eae6a0a6d9d256dab6a35da75f910258888d
+runner_sha256: 41fcf8ea3f581298d898d8f433f98bff0920b13095d9dc94a3eb1aa8e35bcac8
+input_fingerprint_sha256: 24411480a1d03e4e9ff1f6d8859356faa9faf173e6bae0cfd39bd2cefe9c884c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 

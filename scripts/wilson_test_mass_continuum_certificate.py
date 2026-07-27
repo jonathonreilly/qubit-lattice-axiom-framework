@@ -29,6 +29,13 @@ RUNNERS = (
     "scripts/frontier_perturbative_mass_law.py",
     "scripts/frontier_continuum_limit.py",
 )
+N5_PREFIXES = (
+    "per_element:",
+    "per_site:",
+    "per_mode:",
+    "per_block:",
+    "lattice_wide:",
+)
 
 
 def run_child(path: str) -> tuple[int, str, str]:
@@ -40,7 +47,14 @@ def run_child(path: str) -> tuple[int, str, str]:
         check=False,
     )
     print(f"CHILD {path} exit={proc.returncode}")
-    print(proc.stdout, end="" if proc.stdout.endswith("\n") else "\n")
+    # Child N5 lines remain available in the returned stdout for parsing, but
+    # the registered wrapper emits one canonical five-line N5 tail of its own.
+    visible_stdout = "\n".join(
+        line
+        for line in proc.stdout.splitlines()
+        if not line.startswith(N5_PREFIXES)
+    )
+    print(visible_stdout)
     if proc.stderr:
         print(f"STDERR {path}")
         print(proc.stderr, end="" if proc.stderr.endswith("\n") else "\n")

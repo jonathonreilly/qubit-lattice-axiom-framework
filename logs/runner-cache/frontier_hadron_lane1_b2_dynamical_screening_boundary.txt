@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hadron_lane1_b2_dynamical_screening_boundary.py
-runner_sha256: 1b5e5f0279473ff5dda05da67df8fcb96fb7f76f4fe3a0ee8bedff697924e18b
+runner_sha256: 732f4fcc5b29b9a925be1c157e4f724a48b35069d7a716d63451e96446a4e928
+input_fingerprint_sha256: 0980b3bf621dc492fcf6089c2a69ceb2835687b8f56f0ddd7801672d9c952520
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================================

@@ -2,6 +2,7 @@
 
 **Date:** 2026-04-11 (scope narrowed 2026-05-17 per audited_conditional `scope_too_broad` repair: finite-L distance-law table is the binding evidence; the L→∞ continuum extrapolation becomes a diagnostic-only readout)
 **Status:** bounded companion on the Wilson lane
+**Type:** bounded_theorem
 **Scope:** same-convention open-boundary Wilson runners only; finite-L
 distance-law table is the binding evidence
 **Primary runner:** [`scripts/wilson_test_mass_continuum_certificate.py`](../scripts/wilson_test_mass_continuum_certificate.py)
@@ -26,7 +27,7 @@ note is now exactly:
 The asymptotic **L → ∞ continuum extrapolation** `alpha_inf = -2.009
 ± 0.019` is **demoted to a diagnostic-only readout, out of audited
 scope of this note**. Promoting that extrapolation to a continuum-
-limit fact requires a separately retained justification of the
+limit fact requires a separate justification of the
 extrapolation model (functional form, convergence rate, error budget,
 finite-volume systematics). No such justification is supplied here.
 
@@ -68,7 +69,7 @@ That common convention matters. These runners should be read as a **within-lane
 Wilson calibration package**, not as a reconciliation of every older Wilson
 script in the repo.
 
-## Retained Read
+## Bounded Read
 
 ### 1. Test-mass limit passes cleanly
 
@@ -122,7 +123,7 @@ L (L = 25) sits near `alpha ≈ -2` in this same-convention regime.
 > extrapolation model selection (functional form, convergence rate,
 > error budget, finite-volume systematics) is **not** independently
 > justified in this note. The continuum-extrapolation number is
-> recorded as a diagnostic-only readout, not as a retained
+> recorded as a diagnostic-only readout, not as an established
 > continuum-limit fact. A retained continuum-limit claim requires a
 > separate extrapolation-justification authority that this note does
 > not supply.
@@ -137,8 +138,9 @@ Why:
 
 - the valid Hartree both-masses lane still fails clean closure
 - the test-mass setup only closes the source-mass half of the law
-- the continuum result closes the distance exponent on the Wilson side lane,
-  not the full two-body law on the same surface
+- the finite-L table reaches a near-minus-two distance exponent on the largest
+  tested open-Wilson sizes, but supplies no continuum-limit closure and no
+  full two-body law on the same surface
 
 ### 2. Not a normalization verdict across all Wilson scripts
 
@@ -174,7 +176,7 @@ replace the primary staggered bounded story.
 
 ## Safe Claim
 
-The safe retained reading is:
+The safe bounded reading is:
 
 > On the low-screening open-Wilson surface, the **test-mass** and
 > **finite-L distance-law** companions support a Newton-compatible distance law and

@@ -38,7 +38,11 @@ from pathlib import Path
 import lensing_long_path_test as long_path_test
 from n5_resolution_certificate import emit_n5_resolution_certificate
 
-AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+AUDIT_INPUT_PATHS = (
+    "scripts/n5_resolution_certificate.py",
+    "scripts/kubo_continuum_limit.py",
+    "scripts/lensing_long_path_test.py",
+)
 
 
 ROOT = Path(__file__).resolve().parent.parent

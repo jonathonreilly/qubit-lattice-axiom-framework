@@ -24,7 +24,10 @@ import sympy as sp
 import frontier_planck_primitive_clifford_majorana_edge_derivation as conditional_helper
 from n5_resolution_certificate import emit_n5_resolution_certificate
 
-AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+AUDIT_INPUT_PATHS = (
+    "scripts/n5_resolution_certificate.py",
+    "scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py",
+)
 
 
 PASS_BLOCKS = 0

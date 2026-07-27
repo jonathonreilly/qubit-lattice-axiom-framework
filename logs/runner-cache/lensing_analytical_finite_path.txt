@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/lensing_analytical_finite_path.py
-runner_sha256: d2dad7356117014c7d2c94e606ba041637b99facde9af05ff0d7b614bd74fafe
-input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
+runner_sha256: a0f069f3f2759f8be3c4cb219198cd2243034f24d6d279c0e5ab8d757dcb7342
+input_fingerprint_sha256: 05ebe2cad5e83afadf64a396eaa7af023de42ae79b29f2154d2d069639ab3390
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ================================================================================

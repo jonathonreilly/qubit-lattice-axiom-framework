@@ -17,14 +17,27 @@ import json
 from dataclasses import dataclass
 from fractions import Fraction
 from pathlib import Path
+import sys
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 NOTE = REPO_ROOT / "docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md"
-LEDGER = REPO_ROOT / "docs/audit/data/audit_ledger.json"
-QUEUE = REPO_ROOT / "docs/audit/data/audit_queue.json"
+AUDIT_SCRIPTS = REPO_ROOT / "docs" / "audit" / "scripts"
+if str(AUDIT_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(AUDIT_SCRIPTS))
+
+import ledger_io
+
+CLAIM_SHARD = (
+    REPO_ROOT
+    / "docs/audit/data/ledger/ko/koide_dimensionless_note_2026-04-24.json"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md",
+    "docs/audit/scripts/ledger_io.py",
+    "docs/audit/data/ledger/ko/koide_dimensionless_note_2026-04-24.json",
+)
 
 CLAIM_ID = "koide_dimensionless_note_2026-04-24"
-RUNNER_PATH = "scripts/frontier_koide_dimensionless_objection_closure_review.py"
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -208,43 +221,25 @@ def part5_verdict() -> None:
     check("full dimensionless closure is not forced by the finite algebra", not full_forced)
 
 
-def audit_metadata_checks() -> None:
-    banner("Part 6: regenerated audit metadata")
-    if not LEDGER.exists() or not QUEUE.exists():
-        print("  audit metadata unavailable before pipeline")
-        return
-    ledger = json.loads(LEDGER.read_text(encoding="utf-8"))
-    row = ledger["rows"].get(CLAIM_ID)
-    if row is None:
-        print("  audit ledger row unavailable before pipeline")
-        return
-    queue = json.loads(QUEUE.read_text(encoding="utf-8"))["queue"]
-    queue_entry = next((e for e in queue if e["claim_id"] == CLAIM_ID), None)
-
-    check("ledger claim_type is no_go", row.get("claim_type") == "no_go", str(row.get("claim_type")))
+def context_provenance_checks() -> None:
+    banner("Part 6: tracked source/context provenance")
+    canonical = ledger_io.shard_path(CLAIM_ID)
     check(
-        "ledger audit_status is a no-go-compatible state",
-        row.get("audit_status") in {"unaudited", "audited_clean"},
-        str(row.get("audit_status")),
+        "canonical claim shard path is the exact declared input",
+        canonical == CLAIM_SHARD
+        and canonical.relative_to(REPO_ROOT).as_posix() in AUDIT_INPUT_PATHS,
+        canonical.relative_to(REPO_ROOT).as_posix(),
     )
+    row = json.loads(CLAIM_SHARD.read_text(encoding="utf-8"))
     check(
-        "ledger effective_status is no-go-compatible",
-        row.get("effective_status") in {"unaudited", "retained_no_go"},
-        str(row.get("effective_status")),
+        "canonical context shard identity matches the source claim",
+        row.get("claim_id") == CLAIM_ID,
+        str(row.get("claim_id")),
     )
-    check("ledger runner_path registered", row.get("runner_path") == RUNNER_PATH, str(row.get("runner_path")))
-    check("ledger has no direct deps", row.get("deps") == [], str(row.get("deps")))
-    check("no open dependency paths remain", row.get("open_dependency_paths") == [], str(row.get("open_dependency_paths")))
-    if queue_entry is None:
-        check(
-            "active queue entry absent only after retained no-go audit",
-            row.get("audit_status") == "audited_clean"
-            and row.get("effective_status") == "retained_no_go",
-            f"audit_status={row.get('audit_status')}, effective_status={row.get('effective_status')}",
-        )
-    else:
-        check("queue marks row ready", queue_entry.get("ready") is True, str(queue_entry.get("ready")))
-    check("descendant chain remains material", int(row.get("transitive_descendants") or 0) >= 70, str(row.get("transitive_descendants")), kind="B")
+    print(
+        "  audit verdict/status fields are intentionally neither interpreted "
+        "nor used as science gates"
+    )
 
 
 def main() -> int:
@@ -258,7 +253,7 @@ def main() -> int:
     part3_delta_selected_line_conditional()
     part4_delta_ambient_countermodels()
     part5_verdict()
-    audit_metadata_checks()
+    context_provenance_checks()
 
     print()
     print("=" * 88)

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dynamics_nontriviality_selection_firewall_2026_06_06.py
-runner_sha256: cde51b0d501ddc789bd679fceda0986972380cc8633c34c0afd964ec73e2a765
+runner_sha256: 16247c035e5f4c9ba168fa8dc172b913de7aef68e911bc2b14ddd253e5a0afa2
+input_fingerprint_sha256: 2b7dfdcbd8d91a62faad31ec8f86545f8f8ceda82b9db70114d545a0e3031579
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 

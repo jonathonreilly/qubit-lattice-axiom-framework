@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_planck_primitive_clifford_substrate_descent_obstruction.py
-runner_sha256: f82c7a8720a07b8dd589bf17e0b3478ed051ecb90a4808325f08660824710fa7
-input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
+runner_sha256: 55c3d68163d05ac2174e23b2164ed67b29afb54207b4a8c07c0393d3b66fb46b
+input_fingerprint_sha256: c2110c2f969b22b189cfce3bfaeea309f40de3ef1248fb1ac80b13baa23a9b0a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.62
+elapsed_sec: 1.34
 status: ok
 ----- stdout -----
 ==============================================================================

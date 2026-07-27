@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_pmns_asymptotic_source_no_go_2026_04_20.py
-runner_sha256: 4c2b0b506ab561aec3c862887c763a7b8f345a091946ef8a384908733a497fec
+runner_sha256: adc248e0355119fd745048e601cd78f96336c8a48c65cbfe9bddc0a649b22700
+input_fingerprint_sha256: 570193bafca4a1dc52e6abe3e4f569da1f6d4915db51db7e03f482e4c679ee8c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.73
+elapsed_sec: 7.89
 status: ok
 ----- stdout -----
 === Part 1: linear-algebra no-go at infinity ===

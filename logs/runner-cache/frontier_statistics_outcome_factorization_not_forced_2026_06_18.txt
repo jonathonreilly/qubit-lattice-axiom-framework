@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_statistics_outcome_factorization_not_forced_2026_06_18.py
-runner_sha256: 60af4e3f555dbd7feb4606a8e9b4bd7df6428fb334eb900aa726c9e6ab92530f
+runner_sha256: f9229de88d6359685188321e7573da28ab752596d6e0c383ccad4bc90128f3f7
+input_fingerprint_sha256: 80ab470fc5f566b897b5e1056cc03d1e474853534e93f155b1ac79b2d85cfd5f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 STATISTICS OUTCOME-FACTORIZATION NO-GO

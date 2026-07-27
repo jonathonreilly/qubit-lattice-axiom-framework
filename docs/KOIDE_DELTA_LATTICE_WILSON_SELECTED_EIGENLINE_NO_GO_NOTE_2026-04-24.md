@@ -192,6 +192,145 @@ The displayed Clifford-volume split does not falsify the scoped statement: it
 falsifies the broader statement that the full Wilson/Clifford construction has
 no selector, which is why that broader statement is not made here.
 
+## No-Go Discipline Gate
+
+This gate tests only the stated finite `A_DU = C*(D,U)` claim.  It does not
+test, and does not authorize, a no-go for the full Wilson/Clifford data, a
+physical charged-lepton selector, an ambient eta proxy, or an endpoint lift.
+
+### N1 — Alternative-route enumeration
+
+The five routes below differ in primary object, mechanism, and terminal proof
+obligation.  All were tested in the current source/runner pair.
+
+| Route family | Attack on the no-go | Result and direct evidence | Marker |
+|---|---|---|---|
+| Exact finite multiplicity | Make `M_zeta` one-dimensional, so its identity is already a rank-one selector. | The [exact finite multiplicity check](#exact-finite-multiplicity-check) proves that only the constant momentum block is in `ker(D)` and that the exact `zeta` projector on that block has rank two. | `ATTEMPTED` |
+| Algebraic functional calculus | Construct a polynomial, star-polynomial, or norm-limit in `D` and `U` whose restriction is non-scalar. | The [joint-algebra obstruction](#joint-algebra-obstruction) gives `D|M_zeta=0` and `U|M_zeta=zeta I_2`; the restriction homomorphism therefore sends the finite-dimensional `C*`-algebra `C*(D,U)` into `C I_2`. | `ATTEMPTED` |
+| Stabilizer-equivariant selection | Define a rank-one line from `(D,U)` without requiring the projector itself to be written as an algebra element. | The displayed nontrivial `U(2)` action on `M_zeta`, extended by the identity, commutes with both generators and moves every candidate line.  No stabilizer-equivariant line exists. | `ATTEMPTED` |
+| Numerical or basis ordering | Use the first eigenvector returned by diagonalization, a phase convention, or a basis label as the selector. | Runner check `D.1` rotates the reported basis while preserving all joint `D,U` data.  Ordering and phase conventions therefore do not define a canonical line. | `ATTEMPTED` |
+| Clifford-algebra enlargement | Use the volume element `Gamma=-i gamma_1 gamma_2 gamma_3` to split the doublet. | This route succeeds for the full Wilson/Clifford data: `Gamma|M_zeta` has eigenvalues `-1,+1`.  It does not attack the scoped theorem because `Gamma` is outside `A_DU`, as its non-scalar restriction proves.  This counter-route forced the present scope firewall. | `ATTEMPTED` |
+
+### N2 — Wall-independence audit
+
+The collapsed wall set contains one compound, directly computed obstruction:
+
+```text
+W_DU = M_zeta is rank two and the restriction image of C*(D,U) is C I_2.
+```
+
+The rank count and scalar-image statements are not advertised as two
+independent physical walls; together they are the single algebraic obstruction
+to a rank-one projector in the stated algebra.  There is consequently no
+pairwise independence claim to inflate.  Ambient eta and endpoint lift are not
+members of the wall set.
+
+### N3 — Hidden-wall scan
+
+The note and runner were scanned for `admission`, `ansatz`, `axiom`,
+`boundary`, `bridge context`, `by construction`, `convention`,
+`initial condition`, `normalization`, `obstruction`, `primitive`,
+`as is standard`, `naturally`, `sector`, `standard QFT`, `wall`,
+`we assume`, `the framework provides`, `background`, `obviously`,
+`registered`, and `canonical`, including close variants.
+
+| Hit class | Classification |
+|---|---|
+| `L=3`, periodic boundary conditions, `r=1`, the Wilson form, and the spin lift | Explicit theorem antecedents in the frozen finite input, not hidden framework consequences. |
+| `M_zeta` / character sector | Explicitly defined common eigenspace, not an imported physical-sector identification. |
+| `canonical from the pair (D,U)` | Explicitly defined by stabilizer equivariance, with the narrower algebra-membership formulation also stated. |
+| framework axioms, charged-lepton data, eta, and endpoint language | Non-load-bearing exclusions that delimit what the theorem does not consume or conclude. |
+| `obstruction` / `boundary` | Names the proved scalar-restriction result and the frozen input boundary; neither supplies a premise. |
+
+No hidden condition was promoted to a new wall, so the one-element collapsed
+wall set in N2 is unchanged.
+
+### N4 — Residual matching
+
+No prior no-go or campaign is used as a proof witness.  The primary runner is
+the direct witness, and its closeout residual exactly matches the note:
+
+| Candidate residual | Residual tested | Match and disposition |
+|---|---|---|
+| Current source/runner | `rank_two_zeta_zero_mode_sector_not_split_by_D_U_generated_algebra` | Exact match; kept as the sole residual. |
+| Former ambient eta proxy | A claimed finite eta mismatch with an APS value | No match; withdrawn and not used. |
+| Former endpoint/trivialization discussion | A based-section or endpoint-lift residual | No match; withdrawn and not used. |
+| Clifford chirality counter-route | Absence of a selector in the full Wilson/Clifford construction | No match; the counter-route succeeds, so the broader no-go is explicitly disclaimed. |
+
+Dropping the three nonmatching residuals leaves the proof intact because the
+sole claim closes directly on the exact rank and restriction calculation.
+
+### N5 — Rhetoric audit
+
+The negative statement is quantified over algebra elements: for every
+`A in C*(D,U)`, `A|M_zeta` is scalar and hence is not a rank-one projector on
+the two-dimensional space.  The checked resolutions are:
+
+- per element: every generator restriction is scalar, and closure under the
+  algebra operations preserves scalarity;
+- per mode and per block: the exact `L=3`, `r=1` momentum-block calculation
+  excludes every nonconstant zero mode and isolates the constant block;
+- lattice-wide: the exact block proof accounts for the full finite Hilbert
+  space, with the dense `108 x 108` calculation as an independent numerical
+  cross-check;
+- per site: no local-site selector claim is made;
+- full Wilson/Clifford construction: no negative claim is made, and `Gamma`
+  supplies an explicit selector outside `A_DU`.
+
+Thus the rhetoric is restricted to the resolutions and algebra actually
+proved.
+
+### N6 — Partial-closure path scan
+
+The strongest partial-closure path is already executed: adjoining the
+Clifford volume element enlarges the algebra to `C*(D,U,Gamma)`, and
+`(I+Gamma)/2` restricts to a rank-one projector on `M_zeta`.  This needs no new
+axiom or primitive.  It closes the broader selector-existence question while
+leaving the `A_DU` membership statement unchanged, so the note records it as a
+scope firewall rather than suppressing it.
+
+A basis relabeling or convention cannot place `Gamma` in `C*(D,U)`, because
+membership and scalar restriction are invariant under simultaneous unitary
+conjugation.  Changing `L`, `r`, boundary conditions, or the operator algebra
+defines a different theorem rather than a closure of this frozen one.  The
+primitive registry supplies no relevant selector, and this note makes no
+`new axiom required` claim.
+
+### N7 — Steelman
+
+**Hostile-reviewer steelman.**  “The finite Wilson construction already
+contains `Gamma`, it commutes with `D` and `U`, and its two eigenvalues split
+`M_zeta`; therefore a Wilson selected-eigenline no-go is false.”  This is a
+decisive objection to the superseded broad claim.  The repaired claim accepts
+the objection and asks the strictly narrower question of whether the algebra
+generated by `D` and `U` alone contains that selector.  It cannot: if `Gamma`
+were in `C*(D,U)`, its restriction would be scalar, contradicting the computed
+eigenvalues `-1,+1`.  After the scope correction, the steelman supplies no
+unclosed mechanism inside `A_DU`.
+
+### N8 — Cross-cycle echo
+
+The repository-wide echo scan found three nearby but distinct surfaces:
+
+- `KOIDE_RETAINED_WILSON_APS_SCALAR_ACTION_ON_RANK_TWO_MULTIPLICITY_BRIDGE_NARROW_THEOREM_NOTE_2026-05-16.md`
+  studies scalar action for a related, larger named generator set and is not
+  used as authority here;
+- `KOIDE_DELTA_RANK2_SELECTOR_IS_THE_CLIFFORD_CHIRALITY_DOMAIN_WALL_EDGE_BOUNDED_NOTE_2026-06-05.md`
+  records the chirality escape from an overbroad selector no-go; that exact
+  escape is incorporated in the present scope firewall;
+- `KOIDE_GAMMA5_FACTOR_BRIDGE_NO_GO_NOTE_2026-06-06.md` concerns a separate
+  generation-factor embedding residual, not membership in `C*(D,U)`.
+
+The structurally similar broad wall was therefore retired by algebra
+enlargement and scope correction, and the same mechanism has already been
+applied here.  No exact prior `A_DU` residual in the loop no-go ledgers supplies
+an unconsidered retirement mechanism.
+
+**Gate disposition: `PASS`.**  N1--N8 support only the finite periodic
+`L=3`, `r=1`, `D,U`-generated-algebra no-go.  The ambient eta and endpoint
+residuals remain excluded, and the full Wilson/Clifford counter-route remains
+open by explicit construction.
+
 ## Verification
 
 Run:

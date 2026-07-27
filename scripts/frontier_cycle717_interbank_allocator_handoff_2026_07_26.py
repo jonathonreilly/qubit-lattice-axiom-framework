@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Cycle717: admitted-event local handoff between packet banks.
 
-This probe attacks the finite two-cell exhaustion wall left by the recurrent
+This probe tests the finite two-cell capacity boundary left by the recurrent
 directional packet-bank construction.  A fixed local word transfers the
 one-hot allocator token plus its head/rotor state from a full bank into a
-neighboring blank bank.  The packet append then uses the unchanged Route-A
+neighboring blank bank.  The packet append then uses the unchanged Cycle-715
 word.  No retention, Record, time, Born, source, or no-go claim is made.
 """
 from __future__ import annotations
@@ -384,7 +384,7 @@ def event_ready_bank(
 
 
 def safe_packet_body_word() -> tuple[A.Gate, ...]:
-    """Route-A packet body with externally retained direction witness.
+    """Cycle-715 packet body with externally retained direction witness.
 
     The original seven-gate token mover keys only on the post-write VALID bit;
     on an already-full bank that can move a token without a new append.  The
@@ -859,7 +859,7 @@ def main() -> int:
         "recurrent_one_particle_chain": mass_chain,
         "route": route,
         "supplied": [
-            "Route-A two-cell physical bank and packet word",
+            "Cycle-715 two-cell physical bank and packet word",
             "finite translated chain of blank banks and link work genesis",
             "six-bit structural bank-address ROM (at most 32 two-cell banks)",
             "one initial token/head/rotor state",

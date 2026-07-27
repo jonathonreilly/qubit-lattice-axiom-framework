@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py
-runner_sha256: 2e6ca95bbb9567620a868c0717e7cb602dbf21ba66b0426ee4eb95c248136daa
+runner_sha256: 7a76c4a57e7039796c17b5327e80c6f63e56ffb1e22b85faf4af15e557be2ba2
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04
@@ -9,38 +9,49 @@ status: ok
 Hierarchy EW order-parameter D=4 density readout bridge
 ==============================================================================
 
-Section 1: neutral one-Higgs order-parameter coordinate
-  [PASS] neutral Higgs norm gives q = 2 H^dagger H = v^2
-         q=9/4, v^2=9/4
-  [PASS] positive quartic density is exactly rho = A v^4
-         rho=567/176, A v^4=567/176
-  [PASS] positive fourth-root coordinate is unique on v > 0
-         rho/A=81/16, v^4=81/16
+S1 order-parameter coordinate
+  [PASS] q = 2 H^dagger H = v^2 for the neutral vector H(v), over a rational grid
+         7 values of v; sample v=3/2: q=9/4, v^2=9/4
+  [PASS] positive quartic density is exactly rho_* = A v^4 > 0, over an (A, v) grid
+         5x7 pairs; sample rho_*=567/176, A v^4=567/176
+  [PASS] v -> A v^4 is strictly increasing on v > 0, hence injective there
+         rho_* rises 7/2816 -> 45927/176
+  [PASS] the unique positive coordinate is recovered exactly as the fourth root of rho_*/A
+         root(rho_*/A)=3/2, v=3/2; recovery exact on all 35 pairs
+  [PASS] positivity of v is load-bearing: v -> A v^4 is NOT injective on all of R
+         rho_*(-v)=567/176 equals rho_*(v)=567/176; v > 0 selects the branch
 
-Section 2: endpoint coefficient ratio
-  [PASS] endpoint coefficient ratio A_ref/A_L is 7/8
-         A_ref/A_L=7/8
-  [PASS] fixed density forces (v_L/v_ref)^4 = A_ref/A_L
-         same rho_* = A_ref v_ref^4 = A_L v_L^4
-  [PASS] direct placement A_L/A_ref is the wrong fixed-density direction
-         wrong=8/7, correct=7/8
-  [PASS] D=4 fourth-root readout is distinct from D=16 readout
-         D4=0.967168210134, D16=0.991689016736, separation=0.024726
+S2 fixed-density fourth-root law
+  [PASS] endpoint coefficient ratio A_ref/A_L = 7/8, independent of the common u0^2
+         A_2=1/(8u0^2), A_4=1/(7u0^2); ratio=7/8 for all 4 values of u0^2
+  [PASS] exact witness: solving A_ref v_ref^4 = A_L v_L^4 gives (v_L/v_ref)^4 = A_ref/A_L
+         A_ref/A_L=16/81, v_L/v_ref=2/3, rho_*=16=16 (exact)
+  [PASS] endpoint solve at A_ref/A_L = 7/8 reproduces the fixed density to machine precision
+         v_L/v_ref=0.967168210134, density residual=1.82e-16, A_L>A_ref so v_L<v_ref
+  [PASS] wrong-direction and D=16 exponents both MISS the same fixed density by a wide margin
+         (A_L/A_ref)^(1/4): residual=0.3061; (A_ref/A_L)^(1/16): residual=0.1053
 
-Section 3: defined scalar-readout compatibility
-  [PASS] formal rho readout stays one
-         rho_tree=1
-  [PASS] fixed-coupling formal readout ratios follow the same v ratio
-         (sqrt(MW2_L)/sqrt(MW2_ref))^4 = (v_L/v_ref)^4
+S3 formal scalar-readout compatibility
+  [PASS] formal rho readout stays exactly one at every coupling pair and every v
+         4x7 cases; sample g=3, gY=4: rho_tree=1
+  [PASS] formal readout ratios carry the same fourth power: (MW2_L/MW2_ref)^2 = A_ref/A_L
+         (MW2_L/MW2_ref)^2=16/81, (MZ2_L/MZ2_ref)^2=16/81, A_ref/A_L=16/81
+  [PASS] that ratio is independent of (g, gY): no coupling-valued prefactor enters
+         identical fourth power 16/81 at all 4 coupling pairs
 
-Section 4: source firewalls
-  [PASS] new bridge carries bounded-support status fields and no retained claim
-  [PASS] new bridge markdown-links load-bearing EW and D4 readout authorities
-  [PASS] new bridge explicitly leaves endpoint selection and absolute scale open
-  [PASS] parent note cites the new bridge while preserving the residual
+S4 source firewalls
+  [PASS] bridge carries bounded-support status fields and no retained claim
+  [PASS] bridge markdown-links load-bearing EW and D4 readout authorities
+  [PASS] bridge explicitly leaves endpoint selection and absolute scale open
+  [PASS] parent note cites the bridge while preserving the residual
+
+S5 verification-total consistency
+  [PASS] note Scorecard, note Expected fence, and this runner's check count all agree
+         declared S1=5,S2=4,S3=3,S4=4,S5=1 total=17 | actual S1=5,S2=4,S3=3,S4=4,S5=1 total=17 | note TOTAL lines=2
 
 ==============================================================================
-TOTAL: PASS=13 FAIL=0
+per-section: S1=5  S2=4  S3=3  S4=4  S5=1
+TOTAL: PASS=17 FAIL=0
 VERDICT: bounded support passes for the EW order-parameter D=4 density readout bridge. Endpoint selection, absolute scale, and hierarchy-to-physical-Higgs-density identification remain open.
 
 ----- stderr -----

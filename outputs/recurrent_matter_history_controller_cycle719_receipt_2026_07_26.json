@@ -8,9 +8,9 @@
   "checks": {
     "cold_runners_passed": 7,
     "cold_runners_failed": 0,
-    "primary_named_checks_passed": 14,
+    "primary_named_checks_passed": 15,
     "primary_named_checks_failed": 0,
-    "independent_named_checks_passed": 8,
+    "independent_named_checks_passed": 11,
     "independent_named_checks_failed": 0,
     "bounded_partial_support_runners": 2
   },
@@ -25,6 +25,7 @@
     "compiled_register_return_failures": 0,
     "compiled_packet_deletion_data_bit_differences": 35,
     "compiled_finalizer_deletion_data_bit_differences": 3,
+    "compiled_source_handoff_deletion_data_bit_differences": 33,
     "held_two_event_origins": 12,
     "held_five_maximum_joint_residual": 1.2564943544027162e-15,
     "held_24_maximum_joint_residual": 4.087754328527302e-15,
@@ -39,8 +40,21 @@
     "source_cap_routed_nearest_neighbor_gates": 17798,
     "one_H_physical_primitives": 740226,
     "one_H_routed_nearest_neighbor_gates": 13315466,
-    "full_G_counted_physical_primitives": 96230780,
-    "full_G_counted_routed_nearest_neighbor_gates": 1731028378,
+    "full_G_ordered_RLE_physical_primitives": 96230780,
+    "full_G_ordered_RLE_routed_nearest_neighbor_gates": 1731028378,
+    "full_G_inverse_ordered_RLE_physical_primitives": 96230780,
+    "full_G_inverse_ordered_RLE_routed_nearest_neighbor_gates": 1731028378,
+    "full_G_ordered_RLE_manifest_sha256": "1186170401b384fbaf410bb5490cb380954b41cb4501d105ee5f8115ce39043e",
+    "full_G_inverse_ordered_RLE_manifest_sha256": "6903107d1d9a657b8a805e8c68b512a30054b94e4aed9438ba6c732fcb1a7b2c",
+    "held_P11_materialized_physical_instructions": 899572,
+    "held_P11_routed_nearest_neighbor_gates": 8914686,
+    "held_P11_forward_flat_sha256": "a0486a07d212dfec8d8724180a568240d161ee40518a27ef403d0c633ce7c966",
+    "held_P11_inverse_flat_sha256": "b56f377b8bab58757dfb0dd69949f7ce8fb6eb757a1763228ba92db080955e64",
+    "suffix_code_qubits": 38,
+    "suffix_minimum_controller_target_wire": 40,
+    "suffix_encoded_stabilizer_failures": 0,
+    "suffix_encode_decode_roundtrip_failures": 0,
+    "suffix_pointer_or_history_register_touches": 0,
     "maximum_route_distance": 45,
     "proper_cubic_frames": 24,
     "ordered_frame_products": 576,
@@ -53,43 +67,48 @@
     "not_derived": "compiled H execution on every later history branch, active controller-content covariance, local installation of the diagnostic refusal circuit, autonomous genesis, positive-density multi-source arbitration, renewal, objective admission, inaccessible inverse, Record, Born/history, physical time, source/gravity response, or prediction",
     "joint_transition_is_independent_matter_evidence": false,
     "cycle713_exhaustive_EG_is_independent_anchor": true,
-    "full_G_route_totals_are_executed_full_state_word": false,
+    "full_G_is_exact_ordered_RLE_certificate": true,
+    "full_G_flat_word_is_materialized_or_digested": false,
+    "held_P11_direct_equals_independent_RLE_both_directions": true,
+    "suffix_consumes_controller_returned_decoded_domain": true,
     "controller_covariance_is_active_program_content_covariance": false,
     "diagnostic_refusal_is_integrated_enforcement": false,
     "integer_interval_is_physical_time": false,
     "reversible_history_is_permanent_Record": false,
+    "n1_n8_inventory_stress_test": "PASS",
+    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
     "axiom_pressure": false
   },
   "artifacts": {
     "note": {
       "path": "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
-      "sha256": "42bd820c3233583a4812ed3ca3ac04428786a51813cf20e710b27da2c80f7642"
+      "sha256": "d1b33aa0e892494027a64b4908446bf7f871b899d6de69cd65e0d05a9317e9be"
     },
     "primary_runner": {
       "path": "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
-      "sha256": "063103ae1c6bcfc44aff05200bea0c932a50e018b78f2b67ca90feec28c5aac2",
-      "report_sha256": "7356f6e327f02b9591e3cc64c73275298bff978de2fb750390a5f19adef0c067"
+      "sha256": "f61dc10de48304d2e747a78e9a72945604d39e85a13e9d5aa54fa270a24031f8",
+      "report_sha256": "02e2156f89366d885e6781aa04ab4c08307a5f4c1b2d1f81200b7a5b454663c2"
     },
     "independent_checker": {
       "path": "scripts/frontier_cycle719_recurrent_matter_history_controller_independent_check_2026_07_27.py",
-      "sha256": "d7fe2ac40dec3ef78247027fdda9afc6baeab752baa080d6ffda8147e91c6088",
-      "report_sha256": "7d97f786facd60a6014cb1e25045fe06c88aff4ad2b13117e9bcc66d21146098"
+      "sha256": "eec89331c74da727e627c4d8cb74f6aff572c2adce8330ffa09b3495bfc2f73f",
+      "report_sha256": "d1b490560d8e103f394fab15e4298e273f8f9182a38ff984c3b2cfdbbab0dacd"
     },
     "support_runners": {
-      "recurrent_bank_sha256": "0175a7597eedbf3b96c29822db31663a7c0a8b3dbc8281bc7e944e1fcd99feea",
-      "physical_route_sha256": "2fccfc7f7de1420ef769f79b1e21d0bfca089f0e2bfea8b012383cb1d6aca140",
-      "source_finalizer_sha256": "70b8e479955217a1bf86fc5b11bdebe0bbe84908086ce441059721f30d4ba807",
-      "local_handshake_sha256": "9b8f873c8598db1def3c6ac3f53ddc67531fb4c1064aab2ef274ef924fe0c8e0",
-      "two_rail_controller_sha256": "951bac58dc0a426a088f0da28a560853a270ac27b6ec74ad6e8ff15f7cfd3b86"
+      "recurrent_bank_sha256": "c8923e7fe003eae48b6cb4a6f9248367317cd5279f1b79e69182b6167b4648b2",
+      "physical_route_sha256": "befa0256e115a51d8b7fb66afc19b5e78739154ffde0480c17df8751a6b39c52",
+      "source_finalizer_sha256": "d9df383d17df6210bcbf7d3118fff52fdee67bbe3a6a0de06e3f025accedcda3",
+      "local_handshake_sha256": "ccfb74d3a29c32dd7930bd8756ac540749076e252810c69955ce058f157a7913",
+      "two_rail_controller_sha256": "b945c80dd6cff5ed21bf4446c41f3c99c8dcb78e600a2ee059a1e279aefbb971"
     },
     "caches": {
-      "recurrent_bank_sha256": "1f579b9c884b13dcf84a228a6f56ade109bda1b57e3e2695235cb4e456fdd1c6",
-      "physical_route_sha256": "fb34cdf7c5c5ec2a650b9ff3b652bb4f791d0584308c25168e4384d0b3a32c70",
-      "source_finalizer_sha256": "3d8f0ab36da499549c32d75e71eb1a1502dd97914f48f55f3eb6fc8805981755",
-      "local_handshake_sha256": "e44369e99129455cd4b34f084f6d2317dd8ce9d6b4dc520dff19217b09357450",
-      "two_rail_controller_sha256": "1cf7e55accf33ea2e268c94a4bf39da108f5403811bc89e46f8c1d373a13ddea",
-      "primary_sha256": "c5bba46a5a6dad68891d0b7b6656678e9175eb26b9b87e502032e793775cff1f",
-      "independent_sha256": "186b354a3714621a0bc12d39e422cea2c678232caee317700a21e3c8a237ed79"
+      "recurrent_bank_sha256": "4fa00c52bfc08f17163e8747b85b91462a8a988e8953a986e0663462773b5404",
+      "physical_route_sha256": "57546452c2acb9f5c987f37178826a0890ad4a34de1f3adf067939ee9e7af424",
+      "source_finalizer_sha256": "42d5008e4a5f6972cfaaed51617f0110f7aa501bdaeaf7770797476ea5d3e212",
+      "local_handshake_sha256": "81a2e8fabe5aceebaf4bc0f081a35b095ef43a9a20a61aabacb0a934be9b768a",
+      "two_rail_controller_sha256": "e7618e024f6789fb113db927adf7d46bc2f94468a41b8e035d9a653bed653159",
+      "primary_sha256": "d837350f12bf0607ad71e04896136050000db5d1a0f7405203ab1cf8daba4cf6",
+      "independent_sha256": "0169a1bcceac2206b397a062093916c2b1683c4c6a09d26cc74779876f793c4d"
     }
   }
 }

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py
-runner_sha256: 0175a7597eedbf3b96c29822db31663a7c0a8b3dbc8281bc7e944e1fcd99feea
+runner_sha256: c8923e7fe003eae48b6cb4a6f9248367317cd5279f1b79e69182b6167b4648b2
+input_fingerprint_sha256: 4af24e407c5deb973ae38ff2bb53691821535c200ac86b1d5e61d90e23ca05f0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.35
+elapsed_sec: 3.79
 status: ok
 ----- stdout -----
 PASS held_intertwiner :: True

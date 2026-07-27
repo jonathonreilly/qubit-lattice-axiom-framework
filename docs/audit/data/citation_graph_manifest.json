@@ -1,5 +1,5 @@
 {
- "edge_count": 15152,
+ "edge_count": 15163,
  "node_count": 4553,
  "nodes": {
   "3d_correction_master_note": {
@@ -12339,8 +12339,8 @@
    "out_degree": 16
   },
   "recurrent_matter_history_controller_cycle719_bounded_theorem_note_2026-07-26": {
-   "deps_hash": "21dd052ee515",
-   "out_degree": 6
+   "deps_hash": "21f117eb3761",
+   "out_degree": 17
   },
   "redundancy_not_forced_by_pnd_locality_no_go_note_2026-06-08": {
    "deps_hash": "d061b57206c8",

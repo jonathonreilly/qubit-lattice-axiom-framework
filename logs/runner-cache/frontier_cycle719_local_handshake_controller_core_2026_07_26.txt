@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py
-runner_sha256: 9b8f873c8598db1def3c6ac3f53ddc67531fb4c1064aab2ef274ef924fe0c8e0
+runner_sha256: ccfb74d3a29c32dd7930bd8756ac540749076e252810c69955ce058f157a7913
+input_fingerprint_sha256: 445d2a84605cda1e304440e37ae2fde97ecb7b6d0724fe916434ae546500c458
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 112.02
+elapsed_sec: 116.17
 status: ok
 ----- stdout -----
 PASS held_2_5_12_exact :: True

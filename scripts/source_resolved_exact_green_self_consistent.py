@@ -16,6 +16,7 @@ This is intentionally narrow:
 
 from __future__ import annotations
 
+import argparse
 import math
 import os
 import sys
@@ -31,10 +32,11 @@ NL_PHYS = 6
 PW = 3
 SOURCE_CLUSTER = [(0, 0), (1, 0), (-1, 0), (0, 1), (0, -1)]
 FIELD_TARGET_MAX = 0.02
-CALIBRATED_GAIN = 1.7578903308081324
+FROZEN_CALIBRATED_GAIN = 1.7578903308081324
 GREEN_EPS = 0.5
 GREEN_MU = 0.08
 ZERO_SOURCE_TOL = 1e-12
+GAIN_INPUT_TOL = 1e-15
 EXPONENT_TARGET = 1.0
 EXPONENT_TOL = 5e-3
 TABLE_REL_TOL = 5e-4
@@ -109,7 +111,27 @@ def _close(actual: float, expected: float) -> bool:
     return abs(actual - expected) <= TABLE_ABS_TOL + TABLE_REL_TOL * abs(expected)
 
 
+def _parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Verify the frozen, calibrated one-update Green pocket."
+    )
+    parser.add_argument(
+        "--calibrated-gain",
+        type=float,
+        default=FROZEN_CALIBRATED_GAIN,
+        help=(
+            "externally declared field-normalization input "
+            f"(frozen value: {FROZEN_CALIBRATED_GAIN:.16g})"
+        ),
+    )
+    args = parser.parse_args()
+    if not math.isfinite(args.calibrated_gain) or args.calibrated_gain <= 0.0:
+        parser.error("--calibrated-gain must be finite and strictly positive")
+    return args
+
+
 def main() -> int:
+    args = _parse_args()
     lat = m.Lattice3D.build(NL_PHYS, PW, H)
     source_nodes = _source_cluster_nodes(lat)
     zero_field = [[0.0 for _ in range(lat.npl)] for _ in range(lat.nl)]
@@ -125,14 +147,14 @@ def main() -> int:
     print(f"field kernel: exp(-mu r)/(r+eps), mu={GREEN_MU}, eps={GREEN_EPS}")
     print(f"source strengths: {m.SOURCE_STRENGTHS}")
     print(f"target max |f|: {FIELD_TARGET_MAX}")
-    print(f"calibrated gain input: {CALIBRATED_GAIN:.12e}")
+    print(f"declared calibrated gain input: {args.calibrated_gain:.12e}")
     print("calibration boundary: gain is a frozen input, not an independent amplitude prediction")
     print()
 
     base_weights = [1.0 / len(source_nodes)] * len(source_nodes)
     ref_raw = _source_resolved_green_field(lat, max(m.SOURCE_STRENGTHS), source_nodes, base_weights)
     ref_max = _field_abs_max(ref_raw)
-    gain = CALIBRATED_GAIN
+    gain = args.calibrated_gain
 
     zero_dyn = _source_resolved_green_field(lat, 0.0, source_nodes, base_weights)
     zero_amps = lat.propagate([[gain * v for v in row] for row in zero_dyn], m.K)
@@ -204,9 +226,14 @@ def main() -> int:
         f"zero_delta={zero_delta:+.12e}; tolerance={ZERO_SOURCE_TOL:.1e}",
     )
     record(
-        "calibrated gain is the frozen input that sets the base-field cap",
-        abs(gain * ref_max - FIELD_TARGET_MAX) <= TABLE_ABS_TOL,
-        f"gain={gain:.12e}; base_cap={gain * ref_max:.12e}; target={FIELD_TARGET_MAX:.12e}",
+        "declared calibrated gain matches the frozen input and base-field cap",
+        abs(gain - FROZEN_CALIBRATED_GAIN) <= GAIN_INPUT_TOL
+        and abs(gain * ref_max - FIELD_TARGET_MAX) <= TABLE_ABS_TOL,
+        (
+            f"declared_gain={gain:.12e}; frozen_gain={FROZEN_CALIBRATED_GAIN:.12e}; "
+            f"base_cap={gain * ref_max:.12e}; target={FIELD_TARGET_MAX:.12e}; "
+            "the cap is calibration provenance, not amplitude evidence"
+        ),
     )
     record(
         "self-consistent Green deflection has TOWARD sign in every source row",

@@ -23,6 +23,14 @@ update pocket with a theorem-grade self-consistent dynamics result.
 ## Artifact chain
 
 - [`scripts/source_resolved_exact_green_self_consistent.py`](../scripts/source_resolved_exact_green_self_consistent.py)
+- [`outputs/source_resolved_exact_green_self_consistent_assertions_2026-05-06.txt`](../outputs/source_resolved_exact_green_self_consistent_assertions_2026-05-06.txt)
+
+Reproduce the frozen assertion run with the gain supplied on the command line:
+
+```bash
+python3 scripts/source_resolved_exact_green_self_consistent.py \
+  --calibrated-gain 1.7578903308081324
+```
 
 ## Question
 
@@ -53,6 +61,47 @@ The calibration gain is part of the frozen setup.  It is chosen to set the
 base-field cap at the strongest source row and is not evidence of an
 independently derived physical amplitude.
 
+## Closed finite-run chain
+
+For this note, “self-consistent” means exactly one source-weight update.  If
+`g` denotes the declared calibrated gain input, the initial uniform weights
+are `w_j^(0) = 1/4` on the four in-bounds source nodes and the field used by
+the runner is
+
+```text
+f_g^(q)(x; s) = g s sum_j w_j^(q) exp(-mu r_j(x)) / (r_j(x) + eps).
+```
+
+The runner propagates once in `f_g^(0)`, forms
+
+```text
+w_j^(1) = |a_j^(0)|^2 / sum_k |a_k^(0)|^2,
+```
+
+and propagates again in `f_g^(1)`.  Its reported deflection is the resulting
+centroid minus the centroid from propagation in the identically zero field.
+Thus the frozen claim is conditional on the declared tuple
+
+```text
+(h, W, L, cluster, strengths, mu, eps, g, update_count)
+= (0.25, 3, 6, clipped-cross5, (0.001, 0.002, 0.004, 0.008),
+   0.08, 0.5, 1.7578903308081324, 1).
+```
+
+The four load-bearing gates are explicit and cause a nonzero process exit on
+failure:
+
+1. At `s = 0`, both constructed fields vanish term by term, so the dynamic
+   and free propagations receive the same field and `Delta z = 0`; the
+   numerical guard is `|Delta z| <= 1e-12`.
+2. `TOWARD` means `Delta z > 0` because the source lies at positive `z`
+   relative to the launch centroid; all four frozen source rows must pass.
+3. The log-log fits must obey `|alpha - 1| <= 5e-3`.  The unrounded runner
+   values are `alpha_inst = 1.000645` and `alpha_green = 1.001886`.
+4. The declared gain must equal the frozen gain input and reproduce the
+   pre-update base-field cap.  This is a configuration/provenance check, not
+   an independent amplitude prediction.
+
 Reduction check:
 
 - zero-source dynamic shift: `+0.000000e+00`
@@ -71,9 +120,10 @@ Fitted exponents:
 - instantaneous `F~M`: `1.00`
 - self-consistent Green `F~M`: `1.00`
 
-Note: `max |f|` scales linearly with source strength `s` (target cap of
-`2.0e-02` reached at `s = 0.008`); previous frozen readout misreported
-this column as fixed and rounded the deflections.
+Note: `max |f|` scales linearly with source strength `s`.  The calibrated
+*pre-update base field* reaches `2.0e-02` at `s = 0.008`; after the declared
+source-weight update the frozen row has `max |f| = 1.999447e-02`.  Previous
+frozen readout misreported this column as fixed and rounded the deflections.
 
 2026-05-06 assertion rerun:
 `outputs/source_resolved_exact_green_self_consistent_assertions_2026-05-06.txt`.
@@ -96,8 +146,9 @@ The strongest bounded statement is:
 - the mass-scaling class stays essentially linear
 - the dynamic field remains nontrivial relative to the chosen instantaneous
   comparator, with mean `|green/inst| = 1.330`
-- the runner now asserts zero-source exactness, the calibrated gain boundary,
-  `TOWARD` sign, exponent tolerances, and frozen table reproduction
+- the runner asserts zero-source exactness, the calibrated-gain input
+  boundary, `TOWARD` sign, exponent tolerances, and frozen table reproduction,
+  returning a nonzero exit status if any assertion fails
 
 ## Honest limitation
 

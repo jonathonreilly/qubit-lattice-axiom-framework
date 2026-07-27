@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scratch physical-M2 endpoint-instrument splice from Cycle712 to Cycle704/612.
+"""Bounded physical-M2 endpoint-instrument splice from Cycle712 to Cycle704/612.
 
 This inserts a coherent seam-change opportunity pointer into the decoded
 Cycle712 joint state isometry.  The pointer is an instrument output, not an
@@ -84,7 +84,7 @@ import frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25 as C704
 
 
 TOL = 3e-11
-BASELINE = "2b2008a1faa8d5a1f6ef62a0209cfc8092bfa418"
+BASELINE = "ebd05531036b844883e2e73186ebd95c46ffc119"
 T = np.diag((1.0, np.exp(0.25j * np.pi))).astype(complex)
 TDG = T.conj().T
 H = C712.c707.c655.H

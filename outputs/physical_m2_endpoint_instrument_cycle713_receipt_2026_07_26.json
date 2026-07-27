@@ -51,19 +51,19 @@
   "artifacts": {
     "note": {
       "path": "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
-      "sha256": "8bcc51ca9241331d2ae9942e649b4ce5c6f12c54c7d9c40485067bc07636784c"
+      "sha256": "5b6e1b1a98eb09ce4b347394a83a51a1264bc1d7749a7810ab6105c17c147e43"
     },
     "runner": {
       "path": "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
-      "sha256": "c07d20edefcacff34b4d11f4eaad2ed93da18dae2d9bf6a8f98f2223e3e563ee"
+      "sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f"
     },
     "cache": {
       "path": "logs/runner-cache/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.txt",
-      "sha256": "f9af30c9380d115010e80d48430eacce52a53df0bd7ddd1371431bde9bc7058d",
-      "input_fingerprint_sha256": "73a62f6633dba912b7b5b96a54673983902851333cbceddcba41a4c1df90b95a",
-      "elapsed_sec": 35.96,
+      "sha256": "1cf87d7c891afc77013a45eaedaab239974c5d02b02a0b0bfa5752144986cfb4",
+      "input_fingerprint_sha256": "2a9d4a9d836728bf8181d0a0938ee82a9b8b65d85f557535bafd3c6555cb60e0",
+      "elapsed_sec": 40.37,
       "exit_code": 0,
-      "report_sha256": "efc3e01aa6af7995a0833f5a5dea157bdba567a9d0aad0078c02e5383b5b56c2"
+      "report_sha256": "d5728efd2832e3ccf61423572c2649696337ab7da389d2aa061868e5656768bf"
     }
   }
 }

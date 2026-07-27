@@ -11,6 +11,11 @@
 **Framework substrate:**
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 
+**Direct compiler and interface inputs:**
+[`PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md`](PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+and
+[`CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md)
+
 **Primary runner:**
 [`scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py`](../scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py)
 
@@ -107,7 +112,7 @@ the physical packet circuit and the exact interface composition.  The maximum
 repaired Cycle-713 literal-instrument `EG` residual is
 `8.121767085755588e-16`; the maximum composed packet residual remains
 `1.00535e-14`.  The earlier disconnected-oracle and synthetic-deletion defects
-were repaired before this promotion, and the Cycle-714 checks were rerun on
+were repaired before this bounded composition was proposed, and the Cycle-714 checks were rerun on
 the repaired current-main lineage.
 
 ## Literal resources, routing, and proper-cubic scope

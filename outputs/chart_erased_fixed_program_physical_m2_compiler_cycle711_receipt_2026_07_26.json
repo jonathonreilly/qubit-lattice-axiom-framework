@@ -1,0 +1,68 @@
+{
+  "cycle": 711,
+  "date": "2026-07-26",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "CYCLE711_CHART_ERASED_FIXED_PROGRAM_BOUNDED_PASS",
+  "checks": {
+    "passed": 10,
+    "failed": 0
+  },
+  "result": {
+    "chart_erased_operator": "patch_forward_R^-1 G_R pre_R^-1 = W_star",
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "chart_erased_exact_failures": 0,
+    "chart_erased_tableau_digest": "e86fe5c5fc9e7d485782a8f8a3b1127724aaafdf13d30dfaa1a16c55b7edc25f",
+    "immutable_primitive_digest": "ca0ba6473136e89ac505013b6e33471ccb2da1d4e74da6f97be5e91238748859",
+    "immutable_routed_digest": "673932d45609b52da0c07495e93dd6d13fa5ef0afe323c8113448e63f5744f6d",
+    "primitive_gates": 1265,
+    "routed_nearest_neighbor_gates": 22635,
+    "assigned_data_code_rail_M2": 276,
+    "maximum_route_distance": 24,
+    "runtime_frame_tag_dispatch_opcodes": 0,
+    "passive_overlap_shared_augmented_addresses": 80,
+    "passive_overlap_transition_terms": 0,
+    "held_storage_rows": 20,
+    "held_maximum_logical_qubits": 594,
+    "address_only_nonidentity_exact_mismatch_minimum": 44,
+    "address_only_nonidentity_exact_mismatch_maximum": 92,
+    "independent_active_overlap_open_difference": 46,
+    "independent_active_overlap_patch_difference": 42,
+    "active_colour_layers": 4,
+    "noncommuting_active_layer_pairs": 6,
+    "active_layer_orders": 24,
+    "orders_reproducing_target": 1,
+    "maximum_wrong_order_exact_mismatch": 20,
+    "one_particle_mass_residual": 5.551115123125783e-17,
+    "contact_double_occupation_phase_residual": 0.0,
+    "minimum_first_route_swap_deletion_witnesses": 723
+  },
+  "boundary": {
+    "signed_code_charts": "pre/post Cliffords are passive code-chart identifications in the positive factorization; address relabeling alone is insufficient",
+    "program_order": "one fixed noncommuting law/program order remains supplied; no order-free or internally recurrent scheduler is derived",
+    "independent_local_coframes": "not erased or glued by this theorem",
+    "joint_full_update": "no joint two-star state isometry or literal combined free-plus-seam-plus-contact update is claimed",
+    "constitutional_effect": "none",
+    "axiom_pressure": false
+  },
+  "artifacts": {
+    "note": {
+      "path": "docs/CHART_ERASED_FIXED_PROGRAM_PHYSICAL_M2_COMPILER_CYCLE711_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "a30b7073ec8a5ace974e094365551ff7180e848915842787c7bd4e69777c1e50"
+    },
+    "runner": {
+      "path": "scripts/frontier_cycle711_chart_erased_fixed_program_2026_07_26.py",
+      "sha256": "cb04ee18405e9361b89d6390a156ceac4f9e65d45c1df5662950a6ac4d9fcad3"
+    },
+    "cache": {
+      "path": "logs/runner-cache/frontier_cycle711_chart_erased_fixed_program_2026_07_26.txt",
+      "sha256": "f68d5a48d480950809264807fcc7b018b492bb55b8e7331f8a63dfa8c4e18764",
+      "input_fingerprint_sha256": "d323b3a550d005d754831a866df72b486d350702f9e5417ca7a317bb94dddad7",
+      "elapsed_sec": 256.32,
+      "exit_code": 0,
+      "report_sha256": "0a338633617bee10a63960e545367db3e02fb790aa8ee0035b394e9e231b4f6e"
+    }
+  }
+}

@@ -2067,6 +2067,57 @@ def render_prompt(row: dict, ledger_rows: dict[str, dict],
     return prompt
 
 
+def forensic_evidence_readiness_issue(
+    evidence_manifest: dict[str, dict],
+) -> str | None:
+    """Return a definite missing-evidence reason before launching an auditor.
+
+    N5 dispositions are mechanically impossible when the authenticated source
+    contains negative-rhetoric groups but live current-cycle runner stdout does
+    not carry one substantive certificate line for each canonical resolution.
+    Detect only that necessary condition here; all scientific judgments and
+    every remaining N1-N8 gate stay with the restricted auditor and validator.
+    """
+    required_statements = no_go_discipline_gate.required_phrase_groups(
+        evidence_manifest,
+        {"source"},
+        no_go_discipline_gate.N5_SCAN_PHRASES,
+    )
+    if not required_statements:
+        return None
+
+    runner_text = "\n".join(
+        str(entry.get("text") or "")
+        for entry in evidence_manifest.values()
+        if "runner_stdout" in set(entry.get("roles") or [])
+    )
+    missing: list[str] = []
+    for resolution_class in sorted(
+        no_go_discipline_gate.N5_RESOLUTION_CLASSES
+    ):
+        marker = f"{resolution_class}:"
+        found = False
+        for line in runner_text.splitlines():
+            normalized = re.sub(r"\s+", " ", line.strip().casefold())
+            marker_index = normalized.find(marker)
+            if (
+                marker_index >= 0
+                and len(normalized[marker_index:]) >= 40
+            ):
+                found = True
+                break
+        if not found:
+            missing.append(resolution_class)
+    if not missing:
+        return None
+    return (
+        "forensic N5 execution certificate is incomplete: current-cycle "
+        "runner_stdout lacks substantive canonical resolution lines for "
+        f"{','.join(missing)}; add a deterministic runner certificate with "
+        "per_element, per_site, per_mode, per_block, and lattice_wide lines"
+    )
+
+
 def fit_prompt_to_transport_limit(
     prompt: str,
     evidence_manifest: dict[str, dict],
@@ -2957,6 +3008,16 @@ def fresh_schema_retry_eligible(validation_error: str | None) -> bool:
 
 def fresh_schema_retry_code(validation_error: str) -> str:
     """Reduce validator text to a conclusion-free control-plane code."""
+    if (
+        validation_error.startswith("N5 statement ")
+        and (
+            "must record one tested resolution per required class"
+            in validation_error
+            or "lacks a substantive " in validation_error
+            or ".resolution_classes_checked must equal " in validation_error
+        )
+    ):
+        return "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE"
     if validation_error.startswith(
         "N3.hits must exactly disposition orchestrator phrase scan"
     ):
@@ -2998,6 +3059,32 @@ def fresh_schema_retry_code(validation_error: str) -> str:
         and "is not supported by its evidenced" in validation_error
     ):
         return "N1_ROUTE_CLASS_MARKER_MISMATCH"
+    if (
+        validation_error.startswith("N1 ")
+        and (
+            "distinct attempts" in validation_error
+            or "distinct mechanisms" in validation_error
+        )
+    ) or (
+        validation_error.startswith("N1 route ")
+        and (
+            "ATTEMPTED must cite current-cycle live runner_stdout evidence"
+            in validation_error
+            or "evidence_locator is not present" in validation_error
+        )
+    ):
+        return "N1_ROUTE_EVIDENCE_COMPLETENESS_MISMATCH"
+    if validation_error.startswith("N2") and (
+        "must each be evidenced" in validation_error
+        or "rationale must name both walls" in validation_error
+        or "rationale is not evidenced" in validation_error
+    ):
+        return "N2_WALL_EVIDENCE_BINDING_MISMATCH"
+    if (
+        validation_error.startswith("N")
+        and "evidence_locator must contain at least" in validation_error
+    ):
+        return "EVIDENCE_LOCATOR_VERBATIM_LENGTH_MISMATCH"
     if validation_error.startswith("N4 witness "):
         return "N4_WITNESS_SCHEMA_MISMATCH"
     if validation_error.startswith("N5 contains unknown fields") and any(
@@ -3046,7 +3133,7 @@ def fresh_schema_retry_error(
 
 def render_fresh_schema_retry_prompt(
     original_prompt: str,
-    validation_code: str,
+    validation_code: str | list[str],
     attempt: int,
 ) -> str:
     """Request a fresh judgment without exposing the rejected JSON.
@@ -3055,7 +3142,14 @@ def render_fresh_schema_retry_prompt(
     discards the prior object completely. The generic validator code reveals
     no failed section, scientific framing, or prior conclusion.
     """
-    guidance = {
+    guidance_by_code = {
+        "N5_CANONICAL_RESOLUTION_SET_INCOMPLETE": (
+            "Static N5 invariant: every statements[] entry must list the five "
+            "canonical resolution classes exactly once and copy exactly five "
+            "substantive tested_resolutions lines from live current-cycle "
+            "runner_stdout: per_element, per_site, per_mode, per_block, and "
+            "lattice_wide. Recheck every statement before returning.\n"
+        ),
         "N3_RETAINED_AUTHORITY_PROVENANCE_MISMATCH": (
             "Static N3 invariant: retained_authority describes path provenance, "
             "not phrase semantics. Use it exactly when the hit path has an "
@@ -3070,6 +3164,25 @@ def render_fresh_schema_retry_prompt(
             "check label lacks it, use an evidenced marker-bearing live section "
             "header that genuinely names the same route; do not duplicate fields "
             "unless stdout supplies the same text for distinct semantic roles.\n"
+        ),
+        "N1_ROUTE_EVIDENCE_COMPLETENESS_MISMATCH": (
+            "Static N1 invariant: mechanisms and attempts must be semantically "
+            "distinct, not numbered paraphrases. Every ATTEMPTED route must cite "
+            "live current-cycle runner_stdout and copy a 12+ character locator "
+            "from that exact surface. Do not invent extra routes to reach five; "
+            "an honestly incomplete N1 set must remain FAIL.\n"
+        ),
+        "N2_WALL_EVIDENCE_BINDING_MISMATCH": (
+            "Static N2 invariant: copy every wall verbatim from the cited "
+            "evidence, and make each pairwise rationale name both complete wall "
+            "strings while remaining a verbatim-supported locator on the same "
+            "surface. Recheck every wall and pair, not only the first reject.\n"
+        ),
+        "EVIDENCE_LOCATOR_VERBATIM_LENGTH_MISMATCH": (
+            "Static evidence invariant: every evidence_locator must copy a "
+            "contiguous 12+ normalized-character substring from its cited "
+            "authenticated path. Section-level scan locators are subject to the "
+            "same rule. Recheck all N1-N8 locators before returning.\n"
         ),
         "N3_AUTHENTICATED_GROUP_TUPLE_MISMATCH": (
             "Static N3 invariant: copy phrase, occurrence_group_id, "
@@ -3150,7 +3263,18 @@ def render_fresh_schema_retry_prompt(
             "disposition before explaining why the candidate does or does not "
             "close the wall. Do not paraphrase or shorten affected_wall.\n"
         ),
-    }.get(validation_code, "")
+    }
+    validation_codes = (
+        [validation_code]
+        if isinstance(validation_code, str)
+        else list(dict.fromkeys(validation_code))
+    )
+    guidance = "".join(
+        guidance_by_code.get(code, "")
+        for code in validation_codes
+    )
+    code_label = "VALIDATOR CODE" if len(validation_codes) == 1 else "VALIDATOR CODES"
+    code_text = "\n".join(validation_codes)
     return (
         f"{original_prompt}\n\n"
         "---\n"
@@ -3163,7 +3287,7 @@ def render_fresh_schema_retry_prompt(
         "Do not infer or preserve any prior verdict. Recheck the complete "
         "output schema and every invariant already stated in the original "
         "restricted packet before responding.\n\n"
-        f"VALIDATOR CODE:\n{validation_code}\n"
+        f"{code_label}:\n{code_text}\n"
         f"{guidance}"
     )
 
@@ -3782,6 +3906,23 @@ def main() -> int:
                     f"{transport_disposition}"
                 )
 
+            readiness_issue = (
+                forensic_evidence_readiness_issue(exact_evidence_manifest)
+                if transport_forensic and not args.dry_run
+                else None
+            )
+            if readiness_issue is not None:
+                print(f"  COMPUTE_REQUIRED preflight: {readiness_issue}")
+                skipped += 1
+                with run_log.open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({
+                        "claim_id": cid,
+                        "phase": "compute_required",
+                        "reason": readiness_issue,
+                        "source": "forensic_evidence_preflight",
+                    }) + "\n")
+                continue
+
             delivery_packet_fingerprint = audit_packet_source_fingerprint(
                 row,
                 ledger_rows,
@@ -4080,14 +4221,17 @@ def main() -> int:
                 and fresh_schema_retry_eligible(err)
             ):
                 schema_elapsed = 0.0
+                schema_retry_codes: list[str] = []
                 for schema_attempt in range(1, args.fresh_schema_retry_attempts + 1):
                     retry_code = fresh_schema_retry_code(err)
+                    if retry_code not in schema_retry_codes:
+                        schema_retry_codes.append(retry_code)
                     print(
                         f"  fresh schema retry {schema_attempt}/"
                         f"{args.fresh_schema_retry_attempts}: {retry_code}"
                     )
                     schema_prompt = render_fresh_schema_retry_prompt(
-                        prompt, retry_code, schema_attempt
+                        prompt, schema_retry_codes, schema_attempt
                     )
                     if prompt_exceeds_hard_input_limit(schema_prompt):
                         err = "fresh schema retry prompt exceeds Codex hard input limit"

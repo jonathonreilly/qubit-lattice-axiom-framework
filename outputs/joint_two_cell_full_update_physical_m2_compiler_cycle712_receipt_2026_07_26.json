@@ -1,0 +1,83 @@
+{
+  "cycle": 712,
+  "date": "2026-07-26",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "CYCLE712_TWO_CELL_JOINT_E_FREE_SEAM_CONTACT_PHYSICAL_M2_PASS",
+  "primary_checks": {
+    "passed": 11,
+    "failed": 0
+  },
+  "independent_checks": {
+    "passed": 8,
+    "failed": 0,
+    "status": "CYCLE712_JOINT_TWO_CELL_FULL_UPDATE_INDEPENDENT_CHECK_PASS"
+  },
+  "result": {
+    "two_cell_logical_dimension": 4096,
+    "two_cell_abstract_qubits": 38,
+    "two_cell_stabilizer_rank": 26,
+    "two_cell_literal_M2": 39,
+    "combined_N_le_2_EG_residual": 6.251918067842639e-15,
+    "primary_full_domain_maximum_active_column_residual": 2.526252967680787e-15,
+    "independent_exhaustive_4096_column_decoded_update_residual": 5.566705740848049e-16,
+    "independent_update_digest_13dp": "c2778e0cda9eefd0a417724c702fbf704a2b38af5ae58dffd312301f7f6aa612",
+    "one_particle_mass_residual": 5.551115123125783e-17,
+    "direct_primitives": 1375,
+    "direct_routed_nearest_neighbor_gates": 17709,
+    "direct_maximum_route_distance": 24,
+    "direct_routing_failures": 0,
+    "held_three_cell_logical_dimension": 262144,
+    "held_three_cell_combined_N_le_2_EG_residual": 9.46085985276513e-15,
+    "held_three_cell_routed_nearest_neighbor_gates": 38651,
+    "held_three_cell_routing_failures": 0,
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "chart_failures": 0,
+    "single_nonadjacent_tensor_FSWAP_primary_residual": 5.656854249492381,
+    "single_nonadjacent_tensor_FSWAP_independent_false_columns": 1024,
+    "single_nonadjacent_tensor_FSWAP_independent_maximum_residual": 2.0
+  },
+  "boundary": {
+    "positive_scope": "fixed-program two-cell joint state isometry and free-plus-internal-seam-plus-contact physical update, with a no-refit held three-cell/two-seam case",
+    "full_domain_method": "primary sector-complete factor proof plus independent exhaustive 4096-column creator-wedge comparison",
+    "program_order": "supplied offline serial circuit ordinal; not physical time",
+    "code_genesis": "stabilizer, rail, repetition, blank-work preparation and enforcement remain supplied",
+    "exterior_streams": "not closed beyond tested internal bonds",
+    "active_local_coframes": "independently stored overlapping coframes and relation-tag control remain open",
+    "autonomous_recurrence": false,
+    "constitutional_effect": "none",
+    "axiom_pressure": false
+  },
+  "artifacts": {
+    "note": {
+      "path": "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "4a4dce8a459102124696e9449fb28e9cfee576645d22ab20da52624642047158"
+    },
+    "primary_runner": {
+      "path": "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+      "sha256": "c2e7f261c47092f11e445b16bde703330ccfd3e3af06bec0dac078ba64cf2297"
+    },
+    "primary_cache": {
+      "path": "logs/runner-cache/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.txt",
+      "sha256": "f6c70c60848bd6b7463c683ad1b6dadf3c2d885d754822e9ab0beeb9926c576f",
+      "input_fingerprint_sha256": "932333ae945f1575759f3fc3983291d0262f156f450e1d47067755b12c114c92",
+      "elapsed_sec": 25.99,
+      "exit_code": 0,
+      "report_sha256": "3ddf61bc0d70115b9c8ed4bf9ecccc0db151ac2b14e3affd3fe8705bb5ae6254"
+    },
+    "independent_runner": {
+      "path": "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+      "sha256": "d4cb1fe7ba27dcf534d37e413d12dc50531ce17f2ca097a6c8b632644c260027"
+    },
+    "independent_cache": {
+      "path": "logs/runner-cache/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.txt",
+      "sha256": "13c57f58d774f1e5220b83c9479c8f1c5d6d606a7ba26722798626561a075fe6",
+      "input_fingerprint_sha256": "f5537b2a0c0699f79ddf59bbd6385840a5fc768d461dd954bffe0e8d01a48d7d",
+      "elapsed_sec": 5.84,
+      "exit_code": 0,
+      "report_sha256": "0f7c62ba033d8bae950f1f7be6dbf8fc77ac1fa762ff6a46c0ad8c749f3e1abc"
+    }
+  }
+}

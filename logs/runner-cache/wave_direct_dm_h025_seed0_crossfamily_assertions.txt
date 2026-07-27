@@ -1,21 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/wave_direct_dm_h025_seed0_crossfamily_assertions.py
-runner_sha256: c5b26891b188ea9e20ce3f8c5b19cda8c41ae6483638f8c6cdaa4470b7df3629
+runner_sha256: 6cfe35776e8f076317beab49c2786bc49fdc0b2b48fd5df062223dd0eebddf7d
+input_fingerprint_sha256: 1eb103a62f37c16bb7839cc9018c5ce7f364ab8b0db2be8b63605527e74e4389
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.15
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_ASSERTIONS=TRUE
-WAVE_DIRECT_DM_H025_SEED0_DEPENDENCIES_RETAINED_GRADE=TRUE
+WAVE_DIRECT_DM_H025_SEED0_SOURCE_RUNNERS_IMPORTED=TRUE
 WAVE_DIRECT_DM_H025_SEED0_ARTIFACT_SHA256_PINS=TRUE
 WAVE_DIRECT_DM_H025_SEED0_CLAIM_TYPE=BOUNDED_THEOREM
 WAVE_DIRECT_DM_H025_SEED0_ROLE=SHA_PINNED_TWO_ROW_CONDITIONAL_NUMERICAL_PROPOSITION
-Fam1: dependency_status=retained_bounded delta_hist=-0.001256 R_hist=-20.12% spread=7.77%
-Fam2: dependency_status=retained_bounded delta_hist=-0.001576 R_hist=-22.61% spread=6.67%
+Fam1: delta_hist=-0.001256 R_hist=-20.12% spread=7.77%
+Fam2: delta_hist=-0.001576 R_hist=-22.61% spread=6.67%
 WAVE_DIRECT_DM_H025_SEED0_SHARED_SIGN=negative
 WAVE_DIRECT_DM_H025_SEED0_COMMON_ORDERING=Fam2_deeper_than_Fam1_at_strength_0.004
-WAVE_DIRECT_DM_H025_SEED0_WEAK_FIELD_CONTROL=TRUE
+WAVE_DIRECT_DM_H025_SEED0_CONFIGURED_LADDER_CHECKS=TRUE
 WAVE_DIRECT_DM_H025_SEED0_PORTABILITY_LAW=FALSE
 WAVE_DIRECT_DM_H025_STABLE_AMPLITUDE_LAW=FALSE
 RESIDUAL_SCOPE=fam3_family_wide_portability_and_structural_magnitude_law_not_claimed

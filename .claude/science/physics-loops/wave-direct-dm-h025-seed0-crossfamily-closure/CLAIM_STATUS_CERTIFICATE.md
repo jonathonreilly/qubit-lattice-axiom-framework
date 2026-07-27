@@ -5,16 +5,18 @@ reachability_to_target: closes
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "The bounded target closes by class-A inequalities over two retained-grade computed inputs; no observed value, fit, selector theorem, or open import is used."
+claim_type_reason: "The bounded target closes by class-A inequalities over two exact SHA-pinned computed artifacts; no audit grade, observed target, fit, selector theorem, or open import is used."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
-review_loop_disposition: pass
+review_loop_disposition: pending
 
-# Dependency classes
+# Evidence classes
 
-- `wave_direct_dm_h025_fam1_seed0_control_note`: `retained_bounded`
-- `wave_direct_dm_h025_fam2_seed0_control_note`: `retained_bounded`
+- Fam1 source runner and frozen transcript: `computed lattice input`,
+  SHA-pinned direct evidence.
+- Fam2 source runner and frozen transcript: `computed lattice input`,
+  SHA-pinned direct evidence.
 
-There are no open load-bearing imports. The target claim type is only for the
-bounded two-row theorem; independent audit remains required for effective
-retained-bounded status.
+There are no load-bearing note dependencies or open imports. The target claim
+type is only for the bounded two-row artifact theorem; independent audit
+remains required before any effective status changes.

@@ -35,7 +35,7 @@
     "unique_quorum_routed_sha256": "6d44d067bdace91a067c4a85e59a551563240d46874bd3932235e400686922ac"
   },
   "boundary": {
-    "positive_scope": "one shared six-port code block, two exact primitive candidate relations, semantic discriminator comparison, and structurally routed physical-M2 words",
+    "positive_scope": "one shared six-port code block, two exact gate-level candidate relations, semantic discriminator comparison, and structurally routed physical-M2 words",
     "fixed_supplies": "prepared clean 3x3x3 code block, clean auxiliaries, compile-time candidate-law choice, fixed controller order, route workspace, and the landed discriminator grammar as comparator",
     "not_derived": "Nature Admissibility, actuality, a physical end-to-end seam-to-discriminator intertwiner, active-frame naturality of the complete routed compiler, recurrent overlapping tiling, or autonomous genesis",
     "runtime_truth_table_ROM": false,
@@ -45,19 +45,19 @@
   "artifacts": {
     "note": {
       "path": "docs/SAME_CODE_SIX_PORT_ADMISSION_CYCLE716_BOUNDED_CONSTRUCTION_NOTE_2026-07-26.md",
-      "sha256": "9bd6c0c94d043422727b7d4f8693e656862a9b311834fba6d88d3f984ff070fc"
+      "sha256": "d59372cd8ffa2cd15e3de7dabbd18d8754ec6d02b1df9325361beff4edee261a"
     },
     "runner": {
       "path": "scripts/frontier_cycle716_same_code_six_port_admission_2026_07_26.py",
-      "sha256": "c225ce794f64e9045de355f8053b5e9b6218de9f77b4d15ac177e8995c4708c0"
+      "sha256": "5913a2e2af1cc0260a25a631ab72849cc048f1eefd21a423262fbeaad53d7ecd"
     },
     "cache": {
       "path": "logs/runner-cache/frontier_cycle716_same_code_six_port_admission_2026_07_26.txt",
-      "sha256": "1dbd404742bff77b9218a0e44ab01b51927a799c1a61d175e7ab6d5c85175757",
-      "input_fingerprint_sha256": "94b3cb6f45a0b3ab1312b60bf3bb69060d9cf330a9f59ac81c4832075738b427",
-      "elapsed_sec": 203.06,
+      "sha256": "9b175a50939680af81de4c0cd9262bd4d4eb5edfeb87c0947796eaf7b39f8f8d",
+      "input_fingerprint_sha256": "e5dc4668a537e40466b89d4f72760a365b28085b20400837fac20a0789860f86",
+      "elapsed_sec": 197.43,
       "exit_code": 0,
-      "report_sha256": "3ee215f5f7b7ced912f86e1fba45cb19cfdbbaa61dfe316ec5492f075ae5cb67"
+      "report_sha256": "c16419f95c8e39636ed8c3756fe55490fd120cdf0947008e6660135cded3d26c"
     }
   }
 }

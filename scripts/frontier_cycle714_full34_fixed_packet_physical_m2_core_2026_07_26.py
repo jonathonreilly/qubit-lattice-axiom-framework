@@ -28,16 +28,57 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",
     "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_"
     "CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_"
+    "CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/work_history/repo/review_feedback/"
+    "CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
+    "docs/work_history/repo/review_feedback/"
+    "PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+    "docs/work_history/repo/review_feedback/"
+    "PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
     "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
     "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
     "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
     "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
+DYNAMIC_REPO_SCRIPT_PATHS = (
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+)
 import frontier_cycle709_local_seam_physical_core_2026_07_26 as P
 import frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25 as C704
 
-BASELINE = "2b2008a1faa8d5a1f6ef62a0209cfc8092bfa418"
+BASELINE = "ebd05531036b844883e2e73186ebd95c46ffc119"
 
 def digest(path):return sha256(Path(path).read_bytes()).hexdigest()
 
@@ -56,6 +97,11 @@ def transitive_repo_script_paths(start=None):
 
 def provenance_certificate(declared_paths=AUDIT_INPUT_PATHS,start=None):
     scripts=transitive_repo_script_paths(start)
+    declared_labels=set(declared_paths)
+    missing=tuple(path for path in scripts if path not in declared_labels)
+    missing_dynamic=tuple(
+        path for path in DYNAMIC_REPO_SCRIPT_PATHS if path not in declared_labels
+    )
     declared=tuple((ROOT/path).resolve() for path in declared_paths)
     head=subprocess.check_output(('git','rev-parse','HEAD'),cwd=ROOT,text=True).strip()
     ancestor=subprocess.run(('git','merge-base','--is-ancestor',BASELINE,head),cwd=ROOT,check=False).returncode==0
@@ -69,7 +115,10 @@ def provenance_certificate(declared_paths=AUDIT_INPUT_PATHS,start=None):
       'baseline_commit':BASELINE,'actual_HEAD':head,'baseline_is_ancestor':ancestor,
       'declared_path_failures':sum(not path.is_file() or not path.is_relative_to(ROOT) for path in declared),
       'duplicate_declared_paths':len(declared)-len(set(declared)),
-      'transitive_repo_scripts':scripts,'untracked_inputs':tracked,
+      'transitive_repo_scripts':scripts,'missing_transitive_scripts':missing,
+      'dynamic_repo_scripts':DYNAMIC_REPO_SCRIPT_PATHS,
+      'missing_dynamic_scripts':missing_dynamic,
+      'untracked_inputs':tracked,
       'source_inventory_sha256':{path:digest(ROOT/path) for path in inventory if (ROOT/path).is_file()},
     }
 
@@ -463,6 +512,8 @@ def main():
     provenance=provenance_certificate()
     source_closure=(provenance['baseline_is_ancestor'] and
       provenance['declared_path_failures']==provenance['duplicate_declared_paths']==0 and
+      not provenance['missing_transitive_scripts'] and
+      not provenance['missing_dynamic_scripts'] and
       not provenance['untracked_inputs'])
     report={'baseline':BASELINE,'fixed_address':FIXED_ADDRESS,
       'source_closure':source_closure,'provenance':provenance,'declared_inputs':AUDIT_INPUT_PATHS,

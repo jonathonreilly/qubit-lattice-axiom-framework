@@ -66,43 +66,43 @@
   "artifacts": {
     "note": {
       "path": "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md",
-      "sha256": "7c61aeca1d1a8ee4385dd70f7a2e4b411229ceeb264ce5fef2ef98683d2d6640"
+      "sha256": "bd0a8c21774c78411b0dd5477a08dabcb16005ce013500c6e58bdc4684b088a2"
     },
     "primary_runner": {
       "path": "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
-      "sha256": "aa81ff2209c7a7f9211b54bce0f7abc50727e3d023477f85ff6ebe26535fe58a"
+      "sha256": "eb6c9a50681c69ea4fae47724c58d8ba10b48a270e7efa67a811af234afe9a1a"
     },
     "primary_cache": {
       "path": "logs/runner-cache/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.txt",
-      "sha256": "25a58b990888f92c5e1858061173de6b40f6ea2781ed22065b131083c2c5d778",
-      "input_fingerprint_sha256": "e176c85c017b82a3d649e8a6bb40d98530e3403d02d8ae80f2b8e1859790407a",
-      "elapsed_sec": 4.01,
+      "sha256": "03dc3541188de3d210d9d1c5f05220f1d383a8729c2114ae712ac64924152648",
+      "input_fingerprint_sha256": "0f572b00930aeab16e462e6ca77ca21c7262024ece76e629065ab5d698934ad0",
+      "elapsed_sec": 4.91,
       "exit_code": 0,
-      "report_sha256": "1492830dd2888368125804e952cbdb7a06acae2e9af9b15fea681d7b46dafd21"
+      "report_sha256": "d33b8fe727d9da3938ca2eca0d0bdfddb7afc03162ce45fb1674533ae746fa4f"
     },
     "coherent_runner": {
       "path": "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
-      "sha256": "c08e11d894b6409f295ad09028504daf7512c8372a9ae2f102ba5fd51d257ecd"
+      "sha256": "357e52e75d014cdab338f2655e8b1d2b18e64915a7826fd93a10a2ac3fd03347"
     },
     "coherent_cache": {
       "path": "logs/runner-cache/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.txt",
-      "sha256": "9884330297f7a79284652070e4fd808a56e88f34bce39aced7021d825c251145",
-      "input_fingerprint_sha256": "5027f0853d6590017b1ccc698949ccbd656530f33a3f5f28c8d3b0c42d105338",
-      "elapsed_sec": 45.37,
+      "sha256": "d6a7766bebba5852e38f13760089d7247167a0165243d6afc1e8d0331d8e2fd9",
+      "input_fingerprint_sha256": "99522a70b3ad9dc4c3f3167775714f16b406fd3e37883a37781487c2ba5cc5bb",
+      "elapsed_sec": 50.92,
       "exit_code": 0,
-      "report_sha256": "362834bcbbe85a2f94fb82689b96df1dc5a05f4612f20cd9a15bbdbf9d88a6a4"
+      "report_sha256": "85dffddb0cc5b17e582f80d51f0e95220af53d19be7c6e2789274eb323d135a3"
     },
     "route_runner": {
       "path": "scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",
-      "sha256": "b790b157adf4bc5f5b234926eaeb858aa3339f286821df35cbbe0b3c81f1d791"
+      "sha256": "ad12faa00fc8519451982d2f0f9266b227994bd649341e684828b8c1c5a99829"
     },
     "route_cache": {
       "path": "logs/runner-cache/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.txt",
-      "sha256": "05ca7876b6c2d9b6d2c4c7db65c0be0253deddb6ef255fdd3b7addeba2b1fb97",
-      "input_fingerprint_sha256": "4b571ade87ca1716a78834fb4dd0a8a2957237d22ad4772f5cd2443206780f77",
-      "elapsed_sec": 7.92,
+      "sha256": "f2006d486c6dc5c04c684f0e4e29225bc15011655757ce9dbe77169a13b1a121",
+      "input_fingerprint_sha256": "3d836e7268c5163986c48701f59544b1c7ca739c46efd4ba36a718e31afb8d42",
+      "elapsed_sec": 10.15,
       "exit_code": 0,
-      "report_sha256": "5548d25293043c55c71eb4e44c52b80b102a8793cb23108de2de0834526421bc"
+      "report_sha256": "9e1fa024e537df0b270a07384cb506288e3922e054f03142cee518a19e584a1e"
     }
   }
 }

@@ -11,6 +11,11 @@
 **Framework substrate:**
 [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 
+**Direct compiler and interface inputs:**
+[`JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md`](JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+and
+[`CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md`](work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md)
+
 **Primary runner:**
 [`scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py`](../scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py)
 

@@ -3,6 +3,7 @@
 **Date:** 2026-04-25
 **Type:** bounded_theorem
 **Runner:** `scripts/frontier_teleportation_three_register_cross_encoding.py`
+**Runner core:** `scripts/frontier_teleportation_three_register_cross_encoding_core.py`
 
 This is author-side exact support source material for a finite ideal logical
 algebra. It declares no audit verdict; audit status remains pipeline-derived
@@ -207,6 +208,24 @@ The control boundaries follow by removing one premise from the derivation:
   image of `|psi>`.
 
 ## Default Run
+
+The runner is split only at the source-presentation boundary. The core helper
+contains the encoding enumeration, structural certificate, logical
+operator-basis channel checks, and teleportation trial implementation. The
+primary runner contains the triple survey, four control paths, acceptance
+gates, and compact report. The primary runner declares the core helper in
+`AUDIT_INPUT_PATHS`, so the cached certificate is invalidated whenever either
+source changes.
+
+Both complete source files fit the audit renderer independently, and the
+complete default stdout fits its live-output block:
+
+```text
+primary runner source: less than 40000 characters
+core helper source: less than 40000 characters
+default stdout: less than 6000 characters
+cached certificate: less than 6000 characters
+```
 
 Command:
 

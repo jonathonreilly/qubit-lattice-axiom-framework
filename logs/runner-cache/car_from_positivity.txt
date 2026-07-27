@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/car_from_positivity.py
-runner_sha256: 34cda27898832a41d360862facc6a7f950f7e8aa91b659a644afa02db5721200
+runner_sha256: ffc6b607a84958e5f46414d09e10a65a605fa9f2dbe5467af136436615f91fca
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.13
@@ -41,6 +41,11 @@ status: ok
 
 ========================================================================
 SCORECARD: PASS=32 FAIL=0
+per_element: checked — on-site CAR/HCB matrix elements and transfer minima were computed; min eigenvalues are 0.326922 and 0.326922.
+per_site: checked — open-chain density correlator equality gives |delta<n0 n1>|=0.000e+00.
+per_mode: checked — open-chain spectra were diagonalized and compared; max spectral difference=0.000e+00.
+per_block: checked — the nonadjacent Jordan-Wigner string swaps naive/completed block correlators with residual 1.110e-16.
+lattice_wide: checked — closed-ring spectra differ while both transfer operators remain positive; total computed failures=0.
 
 ----- stderr -----
 

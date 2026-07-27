@@ -513,6 +513,11 @@ def check():
             if not ok:
                 print("   -", name, det)
     print(f"SCORECARD: PASS={npass} FAIL={nfail}")
+    print(f"per_element: checked — on-site CAR/HCB matrix elements and transfer minima were computed; min eigenvalues are {tmin_b:.6f} and {tmin_f:.6f}.")
+    print(f"per_site: checked — open-chain density correlator equality gives |delta<n0 n1>|={abs(nn_b01-nn_f01):.3e}.")
+    print(f"per_mode: checked — open-chain spectra were diagonalized and compared; max spectral difference={np.max(np.abs(wb_ch-wf_ch)):.3e}.")
+    print(f"per_block: checked — the nonadjacent Jordan-Wigner string swaps naive/completed block correlators with residual {max(abs(comp_f02-naive_b02), abs(comp_b02-naive_f02)):.3e}.")
+    print(f"lattice_wide: checked — closed-ring spectra differ while both transfer operators remain positive; total computed failures={nfail}.")
     return nfail == 0
 
 if __name__ == "__main__":

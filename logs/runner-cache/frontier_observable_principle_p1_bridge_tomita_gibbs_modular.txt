@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_tomita_gibbs_modular.py
-runner_sha256: d7ee1ed77a8c05580e6b18553cf649e482348c9583aec268c56ed0265417205d
+runner_sha256: f814a39b4939f296f7ce8a85bf2405025562a2983aadaba2f2580ba73cfbf6a8
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 1.30
-status: ok
+exit_code: 1
+elapsed_sec: 0.87
+status: nonzero_exit
 ----- stdout -----
 
 ==============================================================================
@@ -21,7 +21,7 @@ T2: Modular Hamiltonian additivity K = K_A (x) I + I (x) K_B on tensor-product G
   [PASS] rho_beta(H_full) = rho_beta(H_A) (x) rho_beta(H_B) numerically
          Frobenius error = 2.58e-16
   [PASS] K = -log rho_full = K_A (x) I + I (x) K_B (modular-Hamiltonian additivity)
-         Frobenius error of K - (K_A (x) I + I (x) K_B) = 7.26e-15
+         Frobenius error of K - (K_A (x) I + I (x) K_B) = 7.53e-15
 
 ==============================================================================
 T3: Tr K = dim(B) * Tr K_A + dim(A) * Tr K_B (weighted trace additivity)
@@ -33,7 +33,7 @@ T3: Tr K = dim(B) * Tr K_A + dim(A) * Tr K_B (weighted trace additivity)
 T4: 3-line P1 derivation under (G.b.1) W = Tr K on Gibbs density matrices (numerical end-to-end verification)
 ==============================================================================
   [PASS] W_full[J_A (+) J_B] = dim(B) W[J_A] + dim(A) W[J_B] under (G.b.1)
-         W_full = 6.301988; predicted = 6.301988; err = 3.55e-15
+         W_full = 6.301988; predicted = 6.301988; err = 1.78e-15
 
 ==============================================================================
 T5: F_p comparison — Tr rho^p is multiplicatively but not additively factorizing on tensor-product rho; only p -> 0 (log) gives additivity
@@ -43,13 +43,13 @@ T5: F_p comparison — Tr rho^p is multiplicatively but not additively factorizi
   [PASS] F_p[rho] is NOT additively factorizing for p != 0 (confirms log is the additive representative)
          F_p fails additivity for all tested p != 0; only log (p->0) is additive
   [PASS] von Neumann entropy S = -Tr(rho log rho) IS additive on tensor product (positive demonstration of the log-additivity branch)
-         S_full = 1.563776; S_A + S_B = 1.563776; err = 2.22e-16
+         S_full = 1.563776; S_A + S_B = 1.563776; err = 1.11e-15
 
 ==============================================================================
 T6: F_p alternative is NOT a modular Hamiltonian — positive demonstration that K = -log rho is the structural modular form, not K = rho^p
 ==============================================================================
   [PASS] rho = exp(-K) for K = -log rho (consistency check of modular Hamiltonian)
-         ||rho - exp(-(-log rho))|| = 5.02e-16
+         ||rho - exp(-(-log rho))|| = 5.01e-16
   [PASS] K_alt = rho^p (p != 1) is NOT a modular Hamiltonian (rho != exp(-rho^p))
          All p != 1 alternatives violate rho = exp(-K_alt); K = -log rho is structurally unique
 
@@ -72,8 +72,8 @@ T8: Tracial reference state gives trivial modular automorphism (sigma_t = id, K 
 ==============================================================================
 T9: live ledger presence checks for context rows
 ==============================================================================
-  [PASS] target/context rows are present without status-gating the claim
-         Target/context rows are present; no dependency status is consumed
+  [FAIL] audit_ledger.json exists
+         Missing: /private/tmp/cl3-n5-certificates-odd-20260727/docs/audit/data/audit_ledger.json
 
 ==============================================================================
 T10: note string contains honest-scope admission strings
@@ -90,8 +90,13 @@ T11: source-note boundary declarations present
          All boundary declarations present
 
 ==============================================================================
-PASS=19 FAIL=0
+PASS=18 FAIL=1
 ==============================================================================
+per_element: checked — Gibbs eigenvalue logarithms and modular-Hamiltonian matrix entries were evaluated exactly/numerically; aggregate FAIL=1.
+per_site: checked — tensor-factor Gibbs states were traced on each local factor and compared with the joint state; aggregate FAIL=1.
+per_mode: checked — spectral F_p modes were tested for multiplicativity, additivity, and modular-Hamiltonian compatibility; aggregate FAIL=1.
+per_block: checked — two-block and tracial-state modular factorizations were executed, including the weighted-trace identity; aggregate FAIL=1.
+lattice_wide: checked and not executed — no lattice law derives the required Gibbs/product hypothesis; the executed modular certificate leaves that bridge open with PASS=18, FAIL=1.
 
 ----- stderr -----
 

@@ -480,6 +480,17 @@ def main() -> None:
     print("    then the wavefield lane is becoming geometry-transfer relevant.")
     print("  - If it only reshuffles support without improving the weak-field law,")
     print("    this is a bounded no-go for this geometry rule.")
+    all_rows = [row for rows in per_case_results.values() for row in rows]
+    zero_max = max(per_case_zero.values())
+    finite_rows = all(math.isfinite(row["delta"]) and math.isfinite(row["eff_support"]) for row in all_rows)
+    fitted_cases = sum(_summarize(rows, per_case_zero[key])["alpha"] is not None for key, rows in per_case_results.items())
+    bridge_wave = _summarize(per_case_results[("bridge", "wavefield")], per_case_zero[("bridge", "wavefield")])
+    stencil_wave = _summarize(per_case_results[("zstencil", "wavefield")], per_case_zero[("zstencil", "wavefield")])
+    print(f"per_element: checked — every zero-source centroid shift was recomputed; maximum absolute reduction residual={zero_max:.3e}.")
+    print(f"per_site: checked — all {len(all_rows)} source/detector rows have finite centroid and effective-support values={finite_rows}.")
+    print(f"per_mode: checked — static and wavefield F~M exponents were fitted for {fitted_cases}/{len(per_case_results)} family/mode cases.")
+    print(f"per_block: checked — bridge and z-stencil geometry blocks were evaluated across {N_SEEDS} seeds and both propagation modes.")
+    print(f"lattice_wide: checked — wavefield TOWARD counts are bridge={bridge_wave['toward_count']}/{bridge_wave['total']} and z-stencil={stencil_wave['toward_count']}/{stencil_wave['total']}; no improvement is hidden.")
 
 
 if __name__ == "__main__":

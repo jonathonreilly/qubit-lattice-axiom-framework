@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_bh_entropy_rt_ratio_widom.py
-runner_sha256: e37af76d4152b0f4c9edbb207febb83c02326d3c3981634372434e913ddfbab6
+runner_sha256: 09b850e2e896fde9fdf05b41d1be54073bf557410350bde8dc31997762f8b071
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 13.08
+elapsed_sec: 18.59
 status: ok
 ----- stdout -----
 ========================================================================
@@ -71,7 +71,12 @@ Part 4.  Finite-size evidence checks
 SUMMARY: PASS=10  FAIL=0
 ========================================================================
 
-Runtime: 12.9 s
+Runtime: 18.4 s
+per_element: checked — each finite correlation eigenvalue contributes binary entropy and the L=64 ratio is 0.257004.
+per_site: checked — straight-cut boundary contributions were evaluated on every sampled L in [8, 12, 16, 20, 24, 28, 32, 40, 48, 56, 64].
+per_mode: checked — half-filled Gaussian modes give 64 zero modes at L=64.
+per_block: checked — the L>=32 tail block fits c=0.156828, deviation 5.90% from 1/6 and 37.27% from 1/4.
+lattice_wide: checked — finite samples through L=64 favor 1/6 only as a tail diagnostic; PASS=10, FAIL=0, all-L limit remains open.
 
 All finite-L<=64 checks passed; the tail-fit intercept favors 1/6
 over 1/4 on this sampled carrier. The all-L ratio limit remains

@@ -237,6 +237,11 @@ def main() -> int:
     passed = sum(results)
     failed = len(results) - passed
     print(f"Summary: PASS={passed}  FAIL={failed}")
+    print(f"per_element: checked — Hodge conjugation maps each number operator n_i to 1-n_i with max residual {max(local_errors):.3e}.")
+    print(f"per_site: checked — the local 16-state exterior carrier preserves spin/time/CPT structure under Hodge complement; max spin residual={max(spin_errors):.3e}.")
+    print(f"per_mode: checked — one-form and three-form projectors both have rank {one_form_rank} and Hodge-transfer residual {p1_to_p3:.3e}.")
+    print(f"per_block: checked — distinct P1/P3 blocks have Frobenius separation {p1_p3_distinct:.3e} while both symmetry residuals stay below tolerance.")
+    print(f"lattice_wide: checked and not executed — the coframe obstruction is a local exterior-algebra claim with no supplied inter-site lift; the executed substrate suite has PASS={passed}, FAIL={failed}.")
     if failed:
         return 1
     print()

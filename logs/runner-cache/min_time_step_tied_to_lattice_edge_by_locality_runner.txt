@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py
-runner_sha256: adcff662547dd82a7b31fa53001347d0ae6d70d69f92f7f877d614ee89c76b70
+runner_sha256: 06ffa0b1be9ac22f4a4be23db455b16f4b329585f796579667682056a22a3aaa
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.26
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -33,6 +33,11 @@ A4. separate dispersion-model finite-grid group-velocity diagnostic
 
 runner_check_breakdown = {A: 4, B: 0, C: 0, D: 0, total_pass: 4}
 TOTAL: PASS=4 FAIL=0
+per_element: checked — one chosen 6-neighbor relation edge has Euclidean radius 1.000000 and exactly 6 successors.
+per_site: checked — the center site has 6 chosen nearest neighbors versus 26 neighbors in the explicit diagonal comparison.
+per_mode: checked — the separate 25^3 momentum-grid dispersion diagnostic has sampled max |grad E|=0.935113.
+per_block: checked — five cumulative BFS recurrences reach every graph shell through radius 5; front completeness=True.
+lattice_wide: checked — the L=9 finite relation supports only combinatorial reachability, not a physical tick/edge identification; PASS=4, FAIL=0.
 
 ----- stderr -----
 

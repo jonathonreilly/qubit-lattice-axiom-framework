@@ -507,6 +507,14 @@ def main() -> int:
     expected_no_go = not all_cauchy_ok and not basin_cauchy_ok
     print(f"  Expected no-go check (both ensemble gates fail): "
           f"{'PASS' if expected_no_go else 'FAIL'}")
+    component_min = min(per_component_rates) if per_component_rates else math.nan
+    component_max = max(per_component_rates) if per_component_rates else math.nan
+    basin_counts = [n_basin_per_z[z] for z in SOURCE_Z_GRID]
+    print(f"per_element: checked — zero-source detector shifts have max absolute value {zero_max:.3e}; zero guard={zero_ok}.")
+    print(f"per_site: checked — source-position basin counts span {min(basin_counts)}/{n_max} to {max(basin_counts)}/{n_max} across the three executed z positions.")
+    print(f"per_mode: checked — {len(per_component_rates)} observable/source component decay fits give r in [{component_min:+.4f}, {component_max:+.4f}].")
+    print(f"per_block: checked — all-seed fit (r={r:+.4f}, R2={r2:.4f}) and on-basin fit (r={r_b:+.4f}, R2={r2_b:.4f}) were both executed.")
+    print(f"lattice_wide: checked — N={N_GRID[-1]} ensemble refinement gives expected bounded no-go={expected_no_go}; no spacing-continuum claim is substituted.")
 
     # Exit: pass only when the zero-source baseline is clean and the documented
     # no-go is actually observed. If a Cauchy fit closes, this runner's no-go

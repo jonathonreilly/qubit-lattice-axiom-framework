@@ -238,6 +238,11 @@ def main() -> int:
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
+    print(f"per_element: checked — C3 circulant entries and inverse Fourier coefficient formulas were evaluated exactly; aggregate FAIL={FAIL_COUNT}.")
+    print(f"per_site: checked — one three-generation carrier reconstructs arbitrary positive eigenvalue triples but supplies no species label; aggregate FAIL={FAIL_COUNT}.")
+    print(f"per_mode: checked — all three Fourier eigenmodes and the cyclic permutation covariance were checked; aggregate FAIL={FAIL_COUNT}.")
+    print(f"per_block: checked — normalized ratio triples can share the same Koide Q while requiring different coefficient blocks; aggregate FAIL={FAIL_COUNT}.")
+    print(f"lattice_wide: checked and not executed — no lattice/source law assigns the executed C3 modes to physical quark channels; the finite carrier suite has PASS={PASS_COUNT}, FAIL={FAIL_COUNT}.")
     if FAIL_COUNT == 0:
         print("VERDICT: C3 circulants are exact hierarchy carriers, but A1/P1 plus")
         print("quark-specific species source/readout laws remain load-bearing.")

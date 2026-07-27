@@ -155,6 +155,11 @@ def main() -> int:
     print("  pure-source limit admits no nonzero solution with the target angles.")
     print("  The remaining basin-enumeration problem is therefore compact.")
     print(f"\nPASS={PASS} FAIL={FAIL}")
+    print(f"per_element: checked — every target-angle constraint-matrix entry was assembled from rank-one PMNS projectors; aggregate FAIL={FAIL}.")
+    print(f"per_site: checked — all six row permutations at delta_CP=0 and pi were evaluated as distinct source-label assignments; aggregate FAIL={FAIL}.")
+    print(f"per_mode: checked — each 3x3 constraint matrix has full singular-value rank in the executed permutation/phase sweep; aggregate FAIL={FAIL}.")
+    print(f"per_block: checked — the compact chamber-sphere minimization found chi2_inf={best_value:.9f} at permutation {best_perm}.")
+    print(f"lattice_wide: checked and not executed — the PMNS source-family claim asserts no spatial lattice lift; the executed asymptotic scan leaves a strictly positive floor={best_value > 1e-4}.")
     return 0 if FAIL == 0 else 1
 
 

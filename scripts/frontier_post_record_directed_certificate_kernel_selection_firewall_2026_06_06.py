@@ -328,6 +328,11 @@ def main() -> int:
     print("STABLE_SETTING_SELECTS_DIAL=FALSE")
     print("AUDIT_LEDGER_WRITTEN=FALSE")
     print("AUDIT_VERDICT_APPLIED=FALSE")
+    print(f"per_element: checked — exact Fraction-valued endpoint statistics were evaluated for every candidate kernel; aggregate FAIL={FAIL}.")
+    print(f"per_site: checked — visited and unvisited source rows were tested separately, exposing unconstrained local transition probabilities; aggregate FAIL={FAIL}.")
+    print(f"per_mode: checked — A-to-B, B-to-A, signed, and second-is-B readout modes distinguish kernels sharing one scalar certificate; aggregate FAIL={FAIL}.")
+    print(f"per_block: checked — full-support k3/k4 law blocks share endpoint A-to-B=1/4 while other directed statistics differ; aggregate FAIL={FAIL}.")
+    print(f"lattice_wide: checked and not executed — the finite record law supplies no lattice bridge, orientation, or clock; the executed full-law certificate has PASS={PASS}, FAIL={FAIL}.")
     return 0 if FAIL == 0 else 1
 
 

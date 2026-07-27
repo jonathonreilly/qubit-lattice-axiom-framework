@@ -613,6 +613,13 @@ def main() -> int:
                       and mag_winners[-1] == "gaussian"
                       and phs_winners[-1] == "quadratic")
 
+    def emit_n5_resolution(k0_detail: str) -> None:
+        print(f"per_element: checked — finest-h amplitudes have Gaussian R2={mag_r2_finest:.6f} and quadratic-phase R2={phs_r2_finest:.6f}.")
+        print(f"per_site: checked — detector offsets at each sampled y bin were fitted on h={finest['h']} without replacing them by a continuum formula.")
+        print(f"per_mode: checked — phase and width modes give m_eff={m_eff_phase:+.6f} and {m_eff_width:+.6f}, relative disagreement={rel_err:.6f}.")
+        print(f"per_block: checked — magnitude winners {mag_winners} and phase winners {phs_winners} were compared across all {len(fits_per_h)} spacing blocks.")
+        print(f"lattice_wide: checked — bounded no-go={expected_no_go}, unexpected identification={positive}; {k0_detail}.")
+
     if positive:
         print("UNEXPECTED POSITIVE IDENTIFICATION: T_∞'s scattering kernel matches")
         print("the Schrödinger free-particle propagator.")
@@ -626,6 +633,7 @@ def main() -> int:
         print("  two independent m_eff extractions cross-validate.")
         print()
         print("  This contradicts the proposed no-go claim; failing the runner.")
+        emit_n5_resolution("K_PHYS=0 control not executed because the primary kernel already contradicted the claim")
         return 1
     elif not expected_no_go:
         print("FAIL: expected no-go prerequisites were not met.")
@@ -638,6 +646,7 @@ def main() -> int:
         print(f"Computed winners: magnitude={mag_winners[-1] if mag_winners else 'n/a'}, "
               f"phase={phs_winners[-1] if phs_winners else 'n/a'}; "
               f"cross_ok={cross_ok}.")
+        emit_n5_resolution("K_PHYS=0 control not executed because the primary no-go prerequisites failed")
         return 1
     else:
         print("BOUNDED NULL-RESULT: T_∞'s scattering kernel does NOT match")
@@ -684,6 +693,7 @@ def main() -> int:
     rec0 = measure_amplitude_pattern(0.25, k_phys=0.0)
     if rec0 is None or rec0["nan_or_inf"]:
         print("  FAIL: K_PHYS = 0 control build returned NaN/None")
+        emit_n5_resolution("K_PHYS=0 control executed but returned NaN/None")
         return 2
     f0 = fit_at_h(rec0)
     _print_fits(f0)
@@ -696,6 +706,7 @@ def main() -> int:
     print(f"  max |phase(A)| at K_PHYS = 0 = {max_phase0:.3e}: "
           f"{'PASS' if max_phase0 < 1e-10 else 'FAIL'}")
     if not k0_phase_pass:
+        emit_n5_resolution(f"K_PHYS=0 control executed and failed with max imaginary={max_imag0:.3e}, max phase={max_phase0:.3e}")
         return 2
     print()
     print(f"  At K_PHYS = 0 the per-edge factor reduces to a real")
@@ -706,6 +717,7 @@ def main() -> int:
     print(f"  signature without the framework's path-integral phase.")
     print()
 
+    emit_n5_resolution(f"K_PHYS=0 control passed with max imaginary={max_imag0:.3e}, max phase={max_phase0:.3e}")
     return 0
 
 

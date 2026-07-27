@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_planck_boundary_orientation_incidence_no_go.py
-runner_sha256: b4565a8f7f6b639fb6efe5e844f91b3cb8db254e9462ccbe229223240895640a
+runner_sha256: 1ffb4d981752cd07a62c7192730e060a940adf28db2a37139796df402f7b29de
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -24,6 +24,11 @@ Question: does oriented boundary incidence force P_1=P_A over P_3?
 [PASS (A)] 10. forbidden-input boundary: no forbidden theorem, decoration chain, or manual P_A selector used
 
 Summary: PASS=10  FAIL=0
+per_element: checked — cubical incidence pairings and Hodge-dual polynomial entries have residuals 0.000e+00 and 0.000e+00.
+per_site: checked — one local 16-state exterior carrier gives P1/P3 symmetry residuals 0.000e+00/0.000e+00.
+per_mode: checked — normal one-form and oriented-face three-form modes both have rank 4, with Hodge residual 0.000e+00.
+per_block: checked — all five boundary-orientation attack blocks pass their executed substrate tests=True without selecting P1.
+lattice_wide: checked and not executed — no inter-cell cochain-normal primitive is supplied; the executed local incidence carrier leaves the P1/P3 tie intact with PASS=10, FAIL=0.
 
 Verdict: NO-GO. Oriented boundary incidence does not force P_1=P_A. It gives a perfect normal/face duality: normals live in P_1, oriented faces/fluxes live in P_3, and Hodge duality preserves the substrate structure. Choosing the normal/cochain representation is the missing first-order boundary-orientation premise, not a derived consequence.
 

@@ -238,6 +238,11 @@ def main() -> int:
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 88)
+    print(f"per_element: checked — the PMNS A13 sign flip leaves every executed even matrix datum unchanged while reversing the targeted entry; FAIL={FAIL_COUNT}.")
+    print(f"per_site: checked — the three-generation CKM and PMNS carriers were evaluated separately with no typed cross-sector coupling present; FAIL={FAIL_COUNT}.")
+    print(f"per_mode: checked — CKM CP orientation selects the conditional sign branch, but both PMNS sign modes remain compatible with current even data; FAIL={FAIL_COUNT}.")
+    print(f"per_block: checked — explicit plus/minus witness blocks share CKM orientation and PMNS-even observables while differing only in A13; FAIL={FAIL_COUNT}.")
+    print(f"lattice_wide: checked and not executed — the required typed CKM-to-PMNS coupling is scientifically absent, so no lattice-wide selector exists to run; the finite witness suite has PASS={PASS_COUNT}, FAIL={FAIL_COUNT}.")
 
     if FAIL_COUNT:
         print("C2 selector stretch runner failed; do not use the note.")

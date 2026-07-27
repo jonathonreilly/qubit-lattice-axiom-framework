@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_nn_rescaled_kernel_identification.py
-runner_sha256: 53985734217949b64e3ad31798b0bfea6f6ee7c1f014911321d557382b4f3b9d
+runner_sha256: 390fcb5e587b4e714f9158f8a3894ffc20b5d355b8ce1e653720968135a1ae68
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.12
+elapsed_sec: 1.05
 status: ok
 ----- stdout -----
 ====================================================================================================
@@ -48,7 +48,7 @@ Primary sweep: K_PHYS = 5.0 (canonical framework value)
    +5.5000     9.0091e-05   -0.2024
    +6.0000     7.1696e-05   -0.0575
 
-  h = 0.25: nodes = 25921, sum |A|^2 = 9.7565e+03, time = 0.1s
+  h = 0.25: nodes = 25921, sum |A|^2 = 9.7565e+03, time = 0.0s
   detector y_d  |A(y_d)|  arg(A) (raw radians)
   --------------------------------------------------------
    -3.0000     1.0081e+01   -0.3269
@@ -106,7 +106,7 @@ Primary sweep: K_PHYS = 5.0 (canonical framework value)
    +1.3750     2.1629e+07   -0.4072
    +1.5000     2.0045e+07   -0.3965
 
-  h = 0.0625: nodes = 410881, sum |A|^2 = 4.8106e+37, time = 0.6s
+  h = 0.0625: nodes = 410881, sum |A|^2 = 4.8106e+37, time = 0.7s
   detector y_d  |A(y_d)|  arg(A) (raw radians)
   --------------------------------------------------------
    -0.7500     9.8478e+17   -0.3989
@@ -142,17 +142,17 @@ CANDIDATE FITS (central window |y_d| ≤ 6)
 
   h = 0.5: |y| ≤ central_window fits
     magnitude:
-      gaussian   c0=2.9758e-04  mu=+0.0000  sigma=3.5582  R^2=1.0000
+      gaussian   c0=2.9758e-04  mu=-0.0000  sigma=3.5582  R^2=1.0000
       constant   c0=1.9560e-04  R^2=0.0000
       power-law  c0=2.9366e-04  alpha=+0.5363  R^2=0.5518
     phase (unwrapped):
-      quadratic  c0=-0.9607  c1=-0.0000  c2=+0.025062  R^2=1.0000
-      linear     c0=-0.6349  c1=-0.0000  R^2=0.0000
+      quadratic  c0=-0.9607  c1=+0.0000  c2=+0.025062  R^2=1.0000
+      linear     c0=-0.6349  c1=+0.0000  R^2=0.0000
       constant   c0=-0.6349  R^2=0.0000
 
   h = 0.25: |y| ≤ central_window fits
     magnitude:
-      gaussian   c0=2.4850e+01  mu=-0.0000  sigma=2.2319  R^2=1.0000
+      gaussian   c0=2.4850e+01  mu=+0.0000  sigma=2.2319  R^2=1.0000
       constant   c0=1.1276e+01  R^2=0.0000
       power-law  c0=1.8973e+01  alpha=+1.1278  R^2=-2.0461
     phase (unwrapped):
@@ -162,12 +162,12 @@ CANDIDATE FITS (central window |y_d| ≤ 6)
 
   h = 0.125: |y| ≤ central_window fits
     magnitude:
-      gaussian   c0=3.2359e+07  mu=-0.0000  sigma=1.5344  R^2=1.0000
+      gaussian   c0=3.2359e+07  mu=+0.0000  sigma=1.5344  R^2=1.0000
       constant   c0=1.0251e+07  R^2=0.0000
       power-law  c0=1.4059e+07  alpha=+2.1085  R^2=-209.0067
     phase (unwrapped):
-      quadratic  c0=-0.4632  c1=+0.0000  c2=+0.029676  R^2=1.0000
-      linear     c0=-0.0997  c1=+0.0000  R^2=0.0000
+      quadratic  c0=-0.4632  c1=-0.0000  c2=+0.029676  R^2=1.0000
+      linear     c0=-0.0997  c1=-0.0000  R^2=-0.0000
       constant   c0=-0.0997  R^2=0.0000
 
   h = 0.0625: |y| ≤ central_window fits
@@ -176,8 +176,8 @@ CANDIDATE FITS (central window |y_d| ≤ 6)
       constant   c0=2.8111e+17  R^2=0.0000
       power-law  c0=1.7171e+17  alpha=+3.9471  R^2=-5945670.1360
     phase (unwrapped):
-      quadratic  c0=-0.4156  c1=+0.0000  c2=+0.029886  R^2=1.0000
-      linear     c0=-0.0532  c1=+0.0000  R^2=0.0000
+      quadratic  c0=-0.4156  c1=-0.0000  c2=+0.029886  R^2=1.0000
+      linear     c0=-0.0532  c1=-0.0000  R^2=0.0000
       constant   c0=-0.0532  R^2=0.0000
 
 ====================================================================================================
@@ -278,6 +278,11 @@ Secondary control: K_PHYS = 0 at h = 0.25
   carries the lattice's pure angular-weight diffusion
   signature without the framework's path-integral phase.
 
+per_element: checked — finest-h amplitudes have Gaussian R2=0.999975 and quadratic-phase R2=1.000000.
+per_site: checked — detector offsets at each sampled y bin were fitted on h=0.0625 without replacing them by a continuum formula.
+per_mode: checked — phase and width modes give m_eff=+2.390898 and +37.125961, relative disagreement=14.528042.
+per_block: checked — magnitude winners ['gaussian', 'gaussian', 'gaussian', 'gaussian'] and phase winners ['quadratic', 'quadratic', 'quadratic', 'quadratic'] were compared across all 4 spacing blocks.
+lattice_wide: checked — bounded no-go=True, unexpected identification=False; K_PHYS=0 control passed with max imaginary=0.000e+00, max phase=0.000e+00.
 
 ----- stderr -----
 

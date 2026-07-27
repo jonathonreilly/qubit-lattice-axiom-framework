@@ -258,6 +258,11 @@ def main() -> int:
     print("coefficient under the canonical finite-cell entropy constructions.")
     print("A positive gapped Target 2 carrier needs an additional Schmidt-spectrum")
     print("or operational entropy selector.")
+    print(f"per_element: checked — the tuned binary atom p*={p_star:.12f} gives H(p*)={binary_entropy(p_star):.12f} but is not a 1/16 rank atom.")
+    print(f"per_site: checked — one primitive rank-four cell gives trace coefficient {c_cell:.6f} while its projected entropy is {projected_entropy:.6f}.")
+    print(f"per_mode: checked — equal-gap two-level modes have gap range [{min(gaps):.1f},{max(gaps):.1f}] and entropy range [{min(entropies):.6f},{max(entropies):.6f}].")
+    print(f"per_block: checked — finite face blocks {faces} preserve stipulated additivity without converting log(4) to 1/4.")
+    print(f"lattice_wide: checked — the executed finite-patch extension leaves the entropy-spectrum selector open; PASS={PASS_COUNT}, FAIL={FAIL_COUNT}.")
     return 0
 
 

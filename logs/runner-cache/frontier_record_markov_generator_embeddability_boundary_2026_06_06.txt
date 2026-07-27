@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_record_markov_generator_embeddability_boundary_2026_06_06.py
-runner_sha256: 136a212fa9efd31aac7795755d514a02922ec87bf94da0ca13f1a1d729d31d85
+runner_sha256: 85a9e44779e75a67c3ef0285a0e82f21e0a953eff585f303a79fb9a4e29e273a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.29
 status: ok
 ----- stdout -----
 
@@ -60,6 +60,11 @@ Scorecard
 ========================================================================
 PASS=19 FAIL=0
 FINDING: a discrete record-production kernel is not yet a continuous Markov rate law. Embeddability, finite-time exact reset, and clock-rate normalization are separate dynamics gates.
+per_element: checked — exact 2x2 kernel entries are stochastic, with determinants lazy=1/2, swap=-1, reset=0.
+per_site: checked — one two-state record site admits discrete swap/reset kernels that are not bounded finite-time generator exponentials; FAIL=0.
+per_mode: checked — the supplied generator has rate log(2)/2 and exponentiates exactly to the lazy-kernel eigenmodes; FAIL=0.
+per_block: checked — changing the clock from t=1 to t=2 changes the rate from log(2)/2 to log(2)/4 while preserving the same stochastic block.
+lattice_wide: checked and not executed — the single-site kernel claim supplies no multi-site lattice rate law; the executed embeddability certificate has PASS=19, FAIL=0.
 
 ----- stderr -----
 

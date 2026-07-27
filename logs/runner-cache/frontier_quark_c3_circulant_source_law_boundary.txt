@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_c3_circulant_source_law_boundary.py
-runner_sha256: 3a6a6ddd9df430b7c2b1964d13c01ac66c7e8f1699c32cf515a04d70e79519b3
+runner_sha256: bf2c3cefa2a4db657fe3cfba2b0c546dde51b42b234fed6ad629b37a1e170bf5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -74,6 +74,11 @@ PASS: runner defines no observed quark mass constants
 Summary
 ------------------------------------------------------------------------
 TOTAL: PASS=43, FAIL=0
+per_element: checked — C3 circulant entries and inverse Fourier coefficient formulas were evaluated exactly; aggregate FAIL=0.
+per_site: checked — one three-generation carrier reconstructs arbitrary positive eigenvalue triples but supplies no species label; aggregate FAIL=0.
+per_mode: checked — all three Fourier eigenmodes and the cyclic permutation covariance were checked; aggregate FAIL=0.
+per_block: checked — normalized ratio triples can share the same Koide Q while requiring different coefficient blocks; aggregate FAIL=0.
+lattice_wide: checked and not executed — no lattice/source law assigns the executed C3 modes to physical quark channels; the finite carrier suite has PASS=43, FAIL=0.
 VERDICT: C3 circulants are exact hierarchy carriers, but A1/P1 plus
 quark-specific species source/readout laws remain load-bearing.
 

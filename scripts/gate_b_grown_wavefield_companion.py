@@ -453,6 +453,18 @@ def main() -> None:
     print("  The promoted observable is the detector-line phase ramp relative to the same-site control.")
     print("  If the ramp is flat or the wavefield fails to beat the same-site control,")
     print("  this should be written up as a bounded no-go instead of a transfer claim.")
+    zero_max = max([abs(x) for x in zero_same_spans + zero_wave_spans])
+    finite_rows = all(
+        all(math.isfinite(x) for x in (r.phase_lag, r.ramp_slope, r.ramp_r2, r.ramp_span, r.wave_same_ratio))
+        for r in rows
+    )
+    fitted_modes = sum(r.inst_alpha is not None and r.same_alpha is not None and r.wave_alpha is not None for r in rows)
+    wave_beats_same = sum(r.wave_same_ratio > 1.0 for r in rows)
+    print(f"per_element: checked — every zero-source detector shift was recomputed; maximum absolute residual={zero_max:.3e}.")
+    print(f"per_site: checked — detector-line phase lag, ramp, and support ratios are finite for all {len(rows)} source-layer rows={finite_rows}.")
+    print(f"per_mode: checked — instantaneous, same-site-memory, and wavefield F~M exponents were all fitted on {fitted_modes}/{len(rows)} rows.")
+    print(f"per_block: checked — {len(SOURCE_LAYERS)} source-layer blocks across {len(SEEDS)} grown-graph seeds were aggregated without hiding row variation.")
+    print(f"lattice_wide: checked — wavefield/same-site ratio exceeds one on {wave_beats_same}/{len(rows)} aggregate rows; this factual result determines transfer versus bounded no-go.")
 
 
 if __name__ == "__main__":

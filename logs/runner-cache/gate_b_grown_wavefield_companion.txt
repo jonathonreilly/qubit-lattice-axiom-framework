@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/gate_b_grown_wavefield_companion.py
-runner_sha256: 50d4577ce2717b0fe9a65784f3c68d969fe83ddfeeaf91fa90ada55438231d11
+runner_sha256: 1e9fadb717ab537bb4aecce368dacf040c35d0266c627a5e0c2d7c5531a2fb2b
 timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 251.46
+elapsed_sec: 121.97
 status: ok
 ----- stdout -----
 ============================================================================================================
@@ -34,6 +34,11 @@ SAFE READ
   The promoted observable is the detector-line phase ramp relative to the same-site control.
   If the ramp is flat or the wavefield fails to beat the same-site control,
   this should be written up as a bounded no-go instead of a transfer claim.
+per_element: checked — every zero-source detector shift was recomputed; maximum absolute residual=0.000e+00.
+per_site: checked — detector-line phase lag, ramp, and support ratios are finite for all 2 source-layer rows=True.
+per_mode: checked — instantaneous, same-site-memory, and wavefield F~M exponents were all fitted on 2/2 rows.
+per_block: checked — 2 source-layer blocks across 2 grown-graph seeds were aggregated without hiding row variation.
+lattice_wide: checked — wavefield/same-site ratio exceeds one on 2/2 aggregate rows; this factual result determines transfer versus bounded no-go.
 
 ----- stderr -----
 

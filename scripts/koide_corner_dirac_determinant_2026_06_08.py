@@ -129,6 +129,11 @@ def main() -> int:
         "and singular values. This prunes the tested corner-Dirac determinant route only; it does not classify "
         "Koide r=1/2 globally. The independent audit lane owns status."
     )
+    print(f"per_element: checked — symbolic determinant identity detD+det(M Mdag)=0 holds={sp.simplify(detD-target) == 0}.")
+    print(f"per_site: checked — one C3 generation carrier has |det M|={mag:.6f}, equal to product singular values={float(np.prod(sv)):.6f}.")
+    print(f"per_mode: checked — all six Dirac eigenvalue magnitudes pair with the three singular values={paired}.")
+    print(f"per_block: checked — the Re(b)/Im(b) doublet Hessian has rank {H.rank()} and entries {H.tolist()}, selecting two real modulus modes.")
+    print(f"lattice_wide: checked and not executed — the corner-Dirac claim supplies no lattice/global Koide selector; the executed J_cs flow preserves determinant magnitude and singular values={commutes and inv}, PASS={PASS}, FAIL={FAIL}.")
     return 0 if FAIL == 0 else 1
 
 

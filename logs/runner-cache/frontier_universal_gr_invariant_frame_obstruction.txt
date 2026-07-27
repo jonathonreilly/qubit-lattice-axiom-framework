@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_universal_gr_invariant_frame_obstruction.py
-runner_sha256: 66b71bfebd0c04a30ef4c4de6e27b0a7a9f9711835d520f6f78c7cffc1cade22
+runner_sha256: f86c06503f6343510dfea4552dc1c0a19dca30206311250ecb19ecf44f8b667a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 UNIVERSAL GR INVARIANT FRAME OBSTRUCTION AUDIT
@@ -61,6 +61,11 @@ SUMMARY
 ==============================================================================
 PASS=13 FAIL=0 TOTAL=13
 SUMMARY: PASS=13 FAIL=0
+per_element: checked — Pi_A1 matrix entries give exact rank 2 and commute with sampled rotation generators.
+per_site: checked — the canonical ten-component local tensor carrier splits into rank-2 invariant and rank-8 complement blocks; FAIL=0.
+per_mode: checked — complement weights are {0: 4, 1: 4, 2: 2}, doublets are {1: 2, 2: 1}, and the weight-1 commutant dimension is 8.
+per_block: checked — rotating the quotient Gram block changes its spectrum by only 0.000e+00, while the equivalent weight-1 doublets remain unsplit.
+lattice_wide: checked and not executed — the local representation packet supplies no lattice-wide canonical-section construction; the executed obstruction suite has PASS=13, FAIL=0.
 Bounded representation-theoretic facts on the canonical basis are verified: Pi_A1 is exact rank-2 invariant, the complement carries the rank-3 spatial-rotation generator algebra, the shared-axis decomposition has two weight-1 doublets plus a weight-2 sector, and the weight-1 multiplicity commutant of the canonical SO(2) doublet model has dimension 8. On the canonical basis tested, the complement is orbit-canonical, not section-canonical. The further atlas-exhaustion statement is not asserted here and is non-load-bearing per the source note's 2026-05-24 narrowing.
 
 ----- stderr -----

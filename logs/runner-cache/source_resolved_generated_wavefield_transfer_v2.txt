@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/source_resolved_generated_wavefield_transfer_v2.py
-runner_sha256: 115b63b336f2e87dba22cb2969844d17ad80de479f3e0256d5fedbc8efeba292
+runner_sha256: 38bb6f0ad050176912191e5e38d15f2cf7bb945c0c7eb05256c43e01f277d75f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.59
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 ============================================================================================================
@@ -53,6 +53,11 @@ SAFE READ
     then the wavefield lane is becoming geometry-transfer relevant.
   - If it only reshuffles support without improving the weak-field law,
     this is a bounded no-go for this geometry rule.
+per_element: checked — every zero-source centroid shift was recomputed; maximum absolute reduction residual=0.000e+00.
+per_site: checked — all 64 source/detector rows have finite centroid and effective-support values=True.
+per_mode: checked — static and wavefield F~M exponents were fitted for 4/4 family/mode cases.
+per_block: checked — bridge and z-stencil geometry blocks were evaluated across 4 seeds and both propagation modes.
+lattice_wide: checked — wavefield TOWARD counts are bridge=6/16 and z-stencil=7/16; no improvement is hidden.
 
 ----- stderr -----
 

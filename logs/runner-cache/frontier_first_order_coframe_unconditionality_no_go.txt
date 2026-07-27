@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_first_order_coframe_unconditionality_no_go.py
-runner_sha256: 015ea2b5eb1a133d467895245ad0c504fcfffc91a3804623e11c0f09ac1b6666
+runner_sha256: cf122f4a291090e8f6d9934187a53e56b38f202caf1ad772f9b91c1acd69986c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -22,6 +22,11 @@ Question: do retained substrate symmetries force first-order P_1 over its Hodge-
 [PASS (A)] 8. forbidden-input boundary: no observable-principle, YT Ward, or alpha_LM decoration input used
 
 Summary: PASS=8  FAIL=0
+per_element: checked — Hodge conjugation maps each number operator n_i to 1-n_i with max residual 0.000e+00.
+per_site: checked — the local 16-state exterior carrier preserves spin/time/CPT structure under Hodge complement; max spin residual=0.000e+00.
+per_mode: checked — one-form and three-form projectors both have rank 4 and Hodge-transfer residual 0.000e+00.
+per_block: checked — distinct P1/P3 blocks have Frobenius separation 2.828e+00 while both symmetry residuals stay below tolerance.
+lattice_wide: checked and not executed — the coframe obstruction is a local exterior-algebra claim with no supplied inter-site lift; the executed substrate suite has PASS=8, FAIL=0.
 
 Verdict: NO-GO. First-order coframe selection is not forced by the listed substrate symmetries. Hodge complement exchanges P_1 and P_3 while preserving the relevant spin/time/CPT/local structure, so an extra first-order boundary-orientation law is required.
 

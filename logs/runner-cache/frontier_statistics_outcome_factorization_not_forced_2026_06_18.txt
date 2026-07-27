@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_statistics_outcome_factorization_not_forced_2026_06_18.py
-runner_sha256: 1baa94181d835d8eca881533a8a3005c0cf85095d17b52bcecc187ac115d8a50
+runner_sha256: 60af4e3f555dbd7feb4606a8e9b4bd7df6428fb334eb900aa726c9e6ab92530f
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.06
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 STATISTICS OUTCOME-FACTORIZATION NO-GO
@@ -77,6 +77,11 @@ PASS: forbidden overclaim absent: outcome independence is impossible
 PASS: forbidden overclaim absent: physical repeated-registration independence is false
 
 TOTAL: PASS=56 FAIL=0
+per_element: checked — all four symbolic joint-probability atoms were tested for normalization, nonnegativity, and shared marginals; aggregate FAIL=0.
+per_site: checked — each one-copy marginal equals p for both product and correlated witnesses; aggregate FAIL=0.
+per_mode: checked — ss and sd outcome modes distinguish the product law from the correlated law at fixed Born marginals; aggregate FAIL=0.
+per_block: checked — diagonal two-copy density blocks realize both joint laws as positive Born states; aggregate FAIL=0.
+lattice_wide: checked and not executed — no repeated-record independence law is supplied for a lattice extension; the executed one-/two-copy witness suite has PASS=56, FAIL=0.
 VERDICT: bounded no-go passes; outcome factorization is not forced by retained one-copy Born marginals plus finite additivity.
 
 ----- stderr -----

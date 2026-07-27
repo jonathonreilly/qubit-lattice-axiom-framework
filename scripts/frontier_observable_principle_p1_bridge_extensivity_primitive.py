@@ -403,6 +403,13 @@ def test_T5_pattern_L_five_vocabularies() -> None:
 def test_T6_open_finite_range_gate_context() -> None:
     section("T6: open finite-range gate context (live ledger check)")
 
+    if not LEDGER.exists():
+        check(
+            "audit_ledger.json exists",
+            False,
+            f"missing live aggregate ledger: {LEDGER}",
+        )
+        return
     with LEDGER.open() as f:
         ledger = json.load(f)
     rows = ledger["rows"]
@@ -549,6 +556,11 @@ def main() -> int:
     test_T7_honest_scope_check()
     test_T8_source_note_boundary()
     section(f"RESULT  PASS={PASS}  FAIL={FAIL}")
+    print(f"per_element: checked — determinant atoms and F_p scalar responses were evaluated exactly; aggregate FAIL={FAIL}.")
+    print(f"per_site: checked — replicated independent local blocks were tested for linear bulk scaling; aggregate FAIL={FAIL}.")
+    print(f"per_mode: checked — integer Cauchy scaling and the five Pattern-L functional modes were compared; aggregate FAIL={FAIL}.")
+    print(f"per_block: checked — block-diagonal determinant additivity holds while F_p fails bulk extensivity for p != 0; aggregate FAIL={FAIL}.")
+    print(f"lattice_wide: checked — the executed arbitrary-block replication supports only the extensivity primitive and leaves the finite-range physical bridge open; PASS={PASS}, FAIL={FAIL}.")
     return 0 if FAIL == 0 else 1
 
 

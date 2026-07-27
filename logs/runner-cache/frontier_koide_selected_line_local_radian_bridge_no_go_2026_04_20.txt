@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_selected_line_local_radian_bridge_no_go_2026_04_20.py
-runner_sha256: 9bccecb047fc8bfedb744bb8074141f4d142e95fbab13e58525fb1a0575f8b32
+runner_sha256: 5cd50df1ec42b1a50632495b69cbd89d7b2e39e4e38694a4b0a7fb9a8686004c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 ========================================================================
@@ -37,6 +37,11 @@ Selected-line local radian-bridge no-go
 ========================================================================
 Summary: PASS=12, FAIL=0
 ========================================================================
+per_element: checked — local Berry connection, Fubini-Study density, and rho_delta agree at two distinct branch points=True.
+per_site: checked — the selected one-dimensional line has constant rho_delta=0.222222222222 across 21 sampled points.
+per_mode: checked — delta(m) is strictly monotone with derivative range [-0.293421,-0.161625].
+per_block: checked — identical local-invariant packets carry holonomy separation 0.146620, so the interior target is not locally selected.
+lattice_wide: checked and not executed — no lattice transport is supplied by the selected-line claim; the executed branch packet leaves Wilson/transport data open with PASS=12, FAIL=0.
 
 The 1D selected-line local packet is too small to canonically
 select the interior point delta = 2/d^2. Any closure of P must

@@ -190,6 +190,11 @@ def main() -> int:
     n_pass = sum(1 for _, ok, _ in PASSES if ok)
     n_total = len(PASSES)
     print(f"PASSED: {n_pass}/{n_total}")
+    print(f"per_element: checked — each conjugated basis matrix was projected against the affine chart span for all 48 signed permutations; passed={n_pass}/{n_total}.")
+    print(f"per_site: checked — the local three-generation chart preserves only the two inversion-related signed frames, count={len(covariant)}.")
+    print(f"per_mode: checked — the span rank and covariance residuals identify +I and -I as the only surviving modes; +I={has_I}, -I={has_minus_I}.")
+    print(f"per_block: checked — the five-matrix block span rejects 46/48 O_h transformations while retaining the parity Z2 block.")
+    print(f"lattice_wide: checked and not executed — the finite affine chart has no supplied lattice lift; the executed full O_h enumeration leaves sub-routes (b) and (c) open with failures={n_total-n_pass}.")
     if n_pass == n_total:
         print()
         print("NO-GO: retained chart H(m, δ, q_+) is NOT O_h-covariant.")

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_kz_beta6_reproduction_contract_2026_06_06.py
-runner_sha256: 095d0331e05dec9454c503e6dad8d2eed52ddc38a235e7a23a24d224690d0b7c
+runner_sha256: a116b56fdc022b0b43377c20ce53e807c4d8c57419b5952fb3a2a4609259bd85
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 K-Z SU(3) beta=6 reproduction firewall and acceptance contract
@@ -63,6 +63,11 @@ D. boundary
 [PASS] next positive K-Z route must supply source data or loop equations
 
 SCORECARD: PASS=21 FAIL=0
+per_element: checked — exact coordinate lambda=Nc^2/beta=1.5 and PSD scalar/matrix conditions were evaluated; FAIL=0.
+per_site: checked — no local plaquette/site value is invented: the old W_lift shortcut is rejected=True.
+per_mode: checked — source-data and beta-coupled SDP reproduction modes were evaluated independently; accepted=True,True.
+per_block: checked — four reproduction candidate blocks were classified, including support-only SDP accepted=False.
+lattice_wide: checked and not executed — a finite SU3 beta=6 ensemble requires source data or beta-coupled loop equations absent from this contract-only claim; executed contract PASS=21, FAIL=0.
 VERDICT: The K-Z beta=6 gate cannot be closed by the old W_lift shortcut or by support-only SDP constraints. A future reproduction must target lambda=1.5 and provide primary source data or beta-coupled loop equations with solver/cutoff evidence.
 
 ----- stderr -----

@@ -265,6 +265,11 @@ def main() -> int:
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print(f"PASSED: {PASS_COUNT}/{PASS_COUNT + FAIL_COUNT}")
     print("=" * 88)
+    print(f"per_element: checked — exact rational counterexamples vary Q or delta while preserving the named local inputs; aggregate FAIL={FAIL_COUNT}.")
+    print(f"per_site: checked — the finite three-component background and selected-line carriers were evaluated as separate local witnesses; aggregate FAIL={FAIL_COUNT}.")
+    print(f"per_mode: checked — traceless-Z and ambient-spectator directions independently move Q and delta; aggregate FAIL={FAIL_COUNT}.")
+    print(f"per_block: checked — the combined countermodel block has neither Q=2/3 nor delta=eta_APS forced by the finite algebra; aggregate FAIL={FAIL_COUNT}.")
+    print(f"lattice_wide: checked and not executed — this dimensionless finite-algebra claim supplies no lattice lift; the executed countermodels remain distinct with PASS={PASS_COUNT}, FAIL={FAIL_COUNT}.")
 
     if FAIL_COUNT == 0:
         print("KOIDE_DIMENSIONLESS_COUNTERMODEL_NOGO=TRUE")

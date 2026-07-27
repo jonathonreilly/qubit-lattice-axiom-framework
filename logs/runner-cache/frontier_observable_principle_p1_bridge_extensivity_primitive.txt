@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_extensivity_primitive.py
-runner_sha256: aabef915b10d90449c0f495bb935774e78932c385d8c6e63973fe5b58130ca80
+runner_sha256: 400f43f870ae27b3e1b43eb4c097d9679e3d2d19c12677596f7645821b831dcb
 timeout_sec: 120
-exit_code: 0
-elapsed_sec: 0.47
-status: ok
+exit_code: 1
+elapsed_sec: 0.41
+status: nonzero_exit
 ----- stdout -----
 Runner: extensivity-primitive narrow no_go on P1
 Note:   docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_EXTENSIVITY_PRIMITIVE_NARROW_NOTE_2026-05-21.md
@@ -70,12 +70,8 @@ T5: Pattern L comparison and corrected extensivity residual
 ==============================================================================
 T6: open finite-range gate context (live ledger check)
 ==============================================================================
-  [PASS] finite-range gate `staggered_dirac_realization_gate_note_2026-05-03` is `open_gate` on live ledger
-         live effective_status = 'open_gate'
-  [PASS] parent `observable_principle_from_axiom_note` is `audited_conditional` (unchanged by this note)
-         live effective_status = 'audited_conditional'
-  [PASS] note explicitly cites finite-range gate, parent, and Route D context
-         all refs present
+  [FAIL] audit_ledger.json exists
+         missing live aggregate ledger: /private/tmp/cl3-n5-certificates-odd-20260727/docs/audit/data/audit_ledger.json
 
 ==============================================================================
 T7: Honest scope check (no_go + non-promotion language)
@@ -94,8 +90,13 @@ T8: Source-note boundary check
          clean
 
 ==============================================================================
-RESULT  PASS=26  FAIL=0
+RESULT  PASS=23  FAIL=1
 ==============================================================================
+per_element: checked — determinant atoms and F_p scalar responses were evaluated exactly; aggregate FAIL=1.
+per_site: checked — replicated independent local blocks were tested for linear bulk scaling; aggregate FAIL=1.
+per_mode: checked — integer Cauchy scaling and the five Pattern-L functional modes were compared; aggregate FAIL=1.
+per_block: checked — block-diagonal determinant additivity holds while F_p fails bulk extensivity for p != 0; aggregate FAIL=1.
+lattice_wide: checked — the executed arbitrary-block replication supports only the extensivity primitive and leaves the finite-range physical bridge open; PASS=23, FAIL=1.
 
 ----- stderr -----
 

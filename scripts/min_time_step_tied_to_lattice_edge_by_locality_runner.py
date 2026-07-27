@@ -93,5 +93,10 @@ check("separate dispersion model has sampled max|grad E| <= 1",
 print()
 print(f"runner_check_breakdown = {{A: {PASS}, B: 0, C: 0, D: 0, total_pass: {PASS}}}")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+print(f"per_element: checked — one chosen 6-neighbor relation edge has Euclidean radius {maxeuclid6:.6f} and exactly {s6.get(1,0)} successors.")
+print(f"per_site: checked — the center site has 6 chosen nearest neighbors versus {s26.get(1,0)} neighbors in the explicit diagonal comparison.")
+print(f"per_mode: checked — the separate 25^3 momentum-grid dispersion diagnostic has sampled max |grad E|={vmax:.6f}.")
+print(f"per_block: checked — five cumulative BFS recurrences reach every graph shell through radius {max_dist_reached}; front completeness={front_per_tick}.")
+print(f"lattice_wide: checked — the L={L} finite relation supports only combinatorial reachability, not a physical tick/edge identification; PASS={PASS}, FAIL={FAIL}.")
 if FAIL:
     raise SystemExit(1)

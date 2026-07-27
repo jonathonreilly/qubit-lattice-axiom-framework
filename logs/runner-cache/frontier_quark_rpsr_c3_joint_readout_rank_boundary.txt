@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_rpsr_c3_joint_readout_rank_boundary.py
-runner_sha256: 44b2015666fee8d277876116aba9d52f1abd8396ad1c1695d92ec57ae3ef871e
+runner_sha256: da086a81ad574ada290165e8c77bd737858e80e5a49a7d3f972bab6a67b7cf28
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -121,6 +121,11 @@ PASS: new note does not claim retained up masses
 Summary
 ------------------------------------------------------------------------
 TOTAL: PASS=87, FAIL=0
+per_element: checked — exact RPSR amplitudes and C3 Fourier coefficients were reconstructed without observed mass inputs; aggregate FAIL=0.
+per_site: checked — each three-generation carrier separately reaches amplitude or arbitrary-ratio support but not a physical channel assignment; aggregate FAIL=0.
+per_mode: checked — three C3 eigenmodes encode two independent normalized ratios, while one RPSR scalar supplies only one coordinate; aggregate FAIL=0.
+per_block: checked — typed-edge reachability was evaluated before and after adding the explicit source-law/assignment/scale bridge block; aggregate FAIL=0.
+lattice_wide: checked and not executed — no lattice realization follows because the executed dependency graph has no RPSR+C3 path to physical up-type ratios; PASS=87, FAIL=0.
 VERDICT: exact RPSR plus exact C3 is carrier support, not retained
 up-type two-ratio readout closure without a new source/readout theorem.
 

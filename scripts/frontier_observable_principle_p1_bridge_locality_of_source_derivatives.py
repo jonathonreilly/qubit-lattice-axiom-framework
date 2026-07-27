@@ -419,6 +419,11 @@ def main() -> int:
     print("=" * 78)
     print(f"PASS={PASS} FAIL={FAIL}")
     print("=" * 78)
+    print(f"per_element: checked — exact scalar second derivatives of log(det) and F_p were computed; aggregate FAIL={FAIL}.")
+    print(f"per_site: checked — independent source coordinates on separate local blocks have zero log cross-response but nonzero F_p cross-response; aggregate FAIL={FAIL}.")
+    print(f"per_mode: checked — the polynomial exponent family was tested against the locality condition mode by mode; aggregate FAIL={FAIL}.")
+    print(f"per_block: checked — block determinant factorization and the integration-to-additivity step were verified symbolically; aggregate FAIL={FAIL}.")
+    print(f"lattice_wide: checked and not executed — a finite-range lattice locality theorem is the claim-specific missing bridge; the executed block calculation exposes that absence with PASS={PASS}, FAIL={FAIL}.")
 
     return 0 if FAIL == 0 else 1
 

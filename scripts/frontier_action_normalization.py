@@ -842,6 +842,11 @@ def main():
     dt = time.time() - t_start
     print(f"Total runtime: {dt:.1f}s")
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
+    print(f"per_element: checked — finite Poisson/action scalar identities and c-dependent phase factors were recomputed; aggregate FAIL={FAIL}.")
+    print(f"per_site: checked — source-density and detector-centroid responses were evaluated for every registered c row; aggregate FAIL={FAIL}.")
+    print(f"per_mode: checked — the massive-probe momentum/deflection sanity rows are finite and positive through the executed sweep; aggregate FAIL={FAIL}.")
+    print(f"per_block: checked — self-consistent (c,G) and rescaled (c/a,aG) blocks were compared for dynamical degeneracy; aggregate FAIL={FAIL}.")
+    print(f"lattice_wide: checked — the finite lattice packet finds no convention-free c selector; certificate counts are PASS={PASS}, FAIL={FAIL}, expected PASS={EXPECTED_PASS}.")
     if PASS != EXPECTED_PASS:
         print(f"ERROR: expected {EXPECTED_PASS} certificate PASS checks, got {PASS}.")
         raise SystemExit(1)

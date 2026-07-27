@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_hw1_staggered_projection_democratic_r0_2026_06_02.py
-runner_sha256: 97ebae28005cddfd90f1076b6803674d26d627636cfc3f3fa425de78c4b46418
+runner_sha256: 754230ebb8680ed7d6720510778f83fbac131f929f2f53ecccdf06df8d03fedc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 [PASS] hw=1 single-excitation basis indices are the set {1,2,4}
@@ -19,6 +19,11 @@ SCORECARD PASS=5 FAIL=0
 FINDING: native staggered hw=1 projection induces a diagonal but exactly-zero generation
 hopping (democratic r=0) by staggered-sign path cancellation. The on-site:hopping ratio is
 NOT fixed at the charged-lepton point r=1/2 by projection geometry alone.
+per_element: checked — direct hw=1 off-diagonal matrix elements have max modulus 0.000e+00.
+per_site: checked — the three single-excitation corner states are exactly the executed index set [1, 2, 4].
+per_mode: checked — the 401-point Schur-energy sweep has max induced |b|=1.066e-14.
+per_block: checked — the rank-three hw=1 effective block gives r=0.0 and Q=0.333333.
+lattice_wide: checked and not executed — this finite C8 corner claim supplies no inter-site lift; all 5 executed local-carrier checks passed=True.
 
 ----- stderr -----
 

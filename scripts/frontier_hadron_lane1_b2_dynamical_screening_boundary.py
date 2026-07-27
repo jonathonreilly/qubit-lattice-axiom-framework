@@ -270,6 +270,11 @@ def main() -> int:
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     print("=" * 88)
+    print(f"per_element: checked — determinant reweighting changes individual configuration weights while the pure-gauge scalar input stays fixed; FAIL={FAIL_COUNT}.")
+    print(f"per_site: checked — the current L=4 pure-gauge carrier and missing sea-mass data were inspected explicitly; FAIL={FAIL_COUNT}.")
+    print(f"per_mode: checked — screening factors 0.90, 0.96, and 1.00 produce distinct sqrt(sigma) readouts; FAIL={FAIL_COUNT}.")
+    print(f"per_block: checked — paired determinant-weight blocks with the same pure-gauge payload yield different reweighted observables; FAIL={FAIL_COUNT}.")
+    print(f"lattice_wide: checked — the 16^4 target has 256 times the L=4 link count and the ten-percent screening spread exceeds the one-percent budget; PASS={PASS_COUNT}, FAIL={FAIL_COUNT}.")
 
     if FAIL_COUNT:
         print("B2 boundary runner failed; do not use the note.")

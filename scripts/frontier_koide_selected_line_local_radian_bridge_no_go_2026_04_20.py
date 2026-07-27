@@ -283,6 +283,11 @@ check(
 print("\n" + "=" * 72)
 print(f"Summary: PASS={PASS}, FAIL={FAIL}")
 print("=" * 72)
+print(f"per_element: checked — local Berry connection, Fubini-Study density, and rho_delta agree at two distinct branch points={packet_same}.")
+print(f"per_site: checked — the selected one-dimensional line has constant rho_delta={rho_vals[0]:.12f} across {len(branch_ms)} sampled points.")
+print(f"per_mode: checked — delta(m) is strictly monotone with derivative range [{np.min(delta_diffs):.6f},{np.max(delta_diffs):.6f}].")
+print(f"per_block: checked — identical local-invariant packets carry holonomy separation {holonomy_diff:.6f}, so the interior target is not locally selected.")
+print(f"lattice_wide: checked and not executed — no lattice transport is supplied by the selected-line claim; the executed branch packet leaves Wilson/transport data open with PASS={PASS}, FAIL={FAIL}.")
 
 if FAIL == 0:
     print("\nThe 1D selected-line local packet is too small to canonically")

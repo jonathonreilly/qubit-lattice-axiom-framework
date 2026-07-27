@@ -324,6 +324,11 @@ def main() -> int:
 
     print()
     print(f"Summary: {PASS_COUNT}/{PASS_COUNT + FAIL_COUNT} checks passed.")
+    print(f"per_element: checked — CAR anticommutators, two-qubit commutators, and ququart clock-shift matrix entries were evaluated; FAIL={FAIL_COUNT}.")
+    print(f"per_site: checked — the same rank-four local Hilbert carrier realizes CAR, commuting-qubit, and ququart semantics; FAIL={FAIL_COUNT}.")
+    print(f"per_mode: checked — CAR gamma words and two-qubit Pauli words each span {complex_span_rank(algebra_words(gammas))} matrix modes, so Hilbert flow alone does not distinguish them.")
+    print(f"per_block: checked — identical diagonal Hamiltonian flow is unitary on every tested semantic block={is_unitary(u_diagonal)}.")
+    print(f"lattice_wide: checked and not executed — the claim supplies neither a lattice-wide CAR selector nor an SI action-unit map; the executed finite edge suite has PASS={PASS_COUNT}, FAIL={FAIL_COUNT}.")
     if FAIL_COUNT == 0:
         print(
             "Verdict: the current one-axiom bridge yields a dimensionless phase "

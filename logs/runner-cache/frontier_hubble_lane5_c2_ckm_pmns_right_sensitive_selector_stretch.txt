@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch.py
-runner_sha256: c1b8c8fbe968699a3e52265d2ba1fa27f2979a02c46cf8171e40d778134a7565
+runner_sha256: 78cb5efd1b6f4a08f465583aa38a6d0de687b34a1f5ad91d3ecc00e332e35433
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -71,6 +71,11 @@ PART 5: CLAIM-STATUS FIREWALL
 ========================================================================================
 SUMMARY: PASS=22 FAIL=0
 ========================================================================================
+per_element: checked — the PMNS A13 sign flip leaves every executed even matrix datum unchanged while reversing the targeted entry; FAIL=0.
+per_site: checked — the three-generation CKM and PMNS carriers were evaluated separately with no typed cross-sector coupling present; FAIL=0.
+per_mode: checked — CKM CP orientation selects the conditional sign branch, but both PMNS sign modes remain compatible with current even data; FAIL=0.
+per_block: checked — explicit plus/minus witness blocks share CKM orientation and PMNS-even observables while differing only in A13; FAIL=0.
+lattice_wide: checked and not executed — the required typed CKM-to-PMNS coupling is scientifically absent, so no lattice-wide selector exists to run; the finite witness suite has PASS=22, FAIL=0.
 Result: no unconditional C2 selector closure on the current surface.
 Conditional support exists only if a typed CKM->PMNS coupling law is added.
 

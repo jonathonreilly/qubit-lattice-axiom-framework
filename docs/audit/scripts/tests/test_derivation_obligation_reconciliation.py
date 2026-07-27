@@ -431,6 +431,40 @@ class ObligationReconciliationBaselineTest(unittest.TestCase):
             sorted(self.error_eligible_live_findings()), sorted(self.baseline)
         )
 
+    def test_only_structure_free_findings_are_error_eligible(self):
+        # The dividing line, locked so it cannot drift back. A finding may be a
+        # hard error only if it reads NO Markdown structure: a registry field is
+        # empty or not, a basename occurs in the note text or not, a ledger row
+        # is typed open_gate or not. Anything that needs markdown_sections to
+        # have resolved the note correctly is advisory, because audit_lint is a
+        # stop-work gate and the parser is hand-rolled.
+        error_eligible = (
+            audit_lint.OBLIGATION_RECONCILIATION_KINDS
+            - audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS
+        )
+        self.assertEqual(
+            error_eligible,
+            {
+                "self_liquidation_condition_missing",
+                "governance_source_not_cited",
+                "ledger_row_not_open_gate",
+            },
+        )
+        self.assertEqual(
+            audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS,
+            {
+                "exact_target_section_missing",
+                "closure_criterion_section_missing",
+                "target_mismatch",
+                "closure_condition_not_grounded",
+            },
+        )
+        # ... and the two tiers must partition the declared kinds.
+        self.assertEqual(
+            error_eligible | audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS,
+            audit_lint.OBLIGATION_RECONCILIATION_KINDS,
+        )
+
     def test_advisory_kinds_are_never_baselined(self):
         # The lexical comparison cannot be suppressed by this file, so a line
         # naming it would be dead weight that implies an enforcement it lacks.

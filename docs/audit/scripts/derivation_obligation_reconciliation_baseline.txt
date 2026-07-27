@@ -7,14 +7,16 @@
 # instead of an error. Any error-eligible divergence NOT listed here is an
 # error.
 #
-# Only EXACT mechanical comparisons are error-eligible and therefore listable
-# here: a section is present or absent, two normalized strings are equal or
-# not, a basename occurs in the note or does not. The one lexical comparison,
-# closure_condition_not_grounded, is in
-# audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS: it is reported on every
-# run and is never an error, so it is never listed here and this file cannot
-# suppress it. ledger_row_not_open_gate is likewise not listable: it carries
-# the registry preamble's promise, not a wording divergence.
+# Only findings that read NO Markdown structure are error-eligible, and so only
+# they are listable here: a registry field is empty or it is not, a governance
+# basename occurs somewhere in the note text or it does not, a ledger row is
+# typed open_gate or it is not. Everything that depends on resolving the note
+# into sections -- exact_target_section_missing, closure_criterion_section_
+# missing, target_mismatch, closure_condition_not_grounded -- is in
+# audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS: reported on every run,
+# never an error, never listed here, and not suppressible by this file.
+# ledger_row_not_open_gate is likewise not listable, for the opposite reason:
+# it carries the registry preamble's promise, not a wording divergence.
 #
 # This list may only SHRINK -- but that is a reviewed convention, not a
 # mechanical guarantee: the lint cannot tell a drained line from a newly added
@@ -32,22 +34,20 @@
 # directory is restored wholesale from the branch merge-base before a science
 # PR is committed; a baseline there would have every drain silently reverted.
 #
-# Open owner questions behind these three lines are recorded in the PR that
-# introduced this file:
+# The open owner question behind the single line below, recorded in the PR that
+# introduced this file: the theta entry asserts a historical_governance_source
+# that its own note does not cite, unlike its two siblings.
+#
+# Reported every run as advisory notices rather than grandfathered here, and
+# also owner questions:
+#   - all three entries record a closure condition paraphrased from the note's
+#     "## Running-program relation" rather than its "## Closure criterion", so
+#     the registry omits the matter-action/measure conjunct (AC grain), the
+#     carrier/source-action bridge conjunct (AC R-eta), and the carrier +
+#     readout-map + cross-sector-correspondence conjuncts (theta);
 #   - the AC R-eta registry target omits the note's "clock-rate" exclusion and
 #     the "h" density-class label;
 #   - the theta registry target omits the note's "from the retained framework
-#     chain" provenance restriction and narrows "quark-sector" to "quark";
-#   - the theta entry asserts a historical_governance_source that its own note
-#     does not cite, unlike its two siblings.
-#
-# Reported every run as an advisory notice rather than grandfathered here: all
-# three entries record a closure condition paraphrased from the note's
-# "## Running-program relation" rather than its "## Closure criterion", so the
-# registry omits the matter-action/measure conjunct (AC grain), the
-# carrier/source-action bridge conjunct (AC R-eta), and the carrier +
-# readout-map + cross-sector-correspondence conjuncts (theta).
+#     chain" provenance restriction and narrows "quark-sector" to "quark".
 
-ac_reta_hclass_hunit_readout_derivation_obligation:target_mismatch
-theta_quark_determinant_cross_sector_readout_derivation_obligation:target_mismatch
 theta_quark_determinant_cross_sector_readout_derivation_obligation:governance_source_not_cited

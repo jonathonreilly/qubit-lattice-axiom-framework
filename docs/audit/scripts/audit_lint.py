@@ -26,12 +26,13 @@ Checks (all hard rules from FRESH_LOOK_REQUIREMENTS.md and README.md):
        confirmations must be cross-family, strong/external, or same-family
        fresh_context from a distinct restricted-input session.
      - note_hash on row must equal current note hash on disk.
-     - a registered derivation obligation must agree with the source note it
-       registers (exact target, declared governance source, both sections
-       present) and its ledger row must be typed open_gate. Divergence is
-       reported, never repaired: which surface is right is not a mechanical
-       call. Closure-condition grounding is a lexical comparison and is
-       advisory only.
+     - a registered derivation obligation must record a closure condition,
+       must be cited by any governance source it declares, and its ledger row
+       must be typed open_gate. Divergence between the registry and the note it
+       registers (exact target, closure condition, sections present) is
+       reported as an advisory notice: those comparisons depend on parsing the
+       note's Markdown, so they inform and never block. Nothing here is ever
+       repaired -- which surface is right is not a mechanical call.
 
   3. Graph health:
      - No dangling deps.
@@ -687,20 +688,36 @@ OBLIGATION_RECONCILIATION_NON_GRANDFATHERABLE_KINDS = frozenset(
     {"ledger_row_not_open_gate"}
 )
 
-# Advisory, never an error, baseline or no baseline. Every other kind is an
-# exact mechanical comparison -- a section is present or absent, two normalized
-# strings are equal or not, a basename occurs in the note or does not -- so it
-# can only fire on a real divergence. Closure grounding is instead a lexical
-# content-word comparison with no threshold, and the live margins are one to
-# two words (measured: 0.36/0.18, 0.45/0.27, 0.50/0.40). A faithful but
-# differently-worded condition on a NEW obligation can lose that comparison, and
-# audit_lint is a stop-work gate in run_pipeline.sh and pre_commit_audit_check.sh
-# with no honest drain except rewording correct prose to win a word count.
-# It is a real and useful diagnostic -- it is what surfaced that all three
-# entries paraphrase '## Running-program relation' -- so it is reported every
-# run, and arming it needs a structured closure field or a validated threshold,
-# not a baseline.
-OBLIGATION_RECONCILIATION_ADVISORY_KINDS = frozenset({"closure_condition_not_grounded"})
+# Advisory: reported every run, never an error, baseline or no baseline.
+#
+# The dividing line is what a finding has to KNOW to be right. The three
+# error-eligible kinds read no Markdown structure at all -- a registry field is
+# empty or it is not, a basename occurs somewhere in the note text or it does
+# not, a ledger row is typed open_gate or it is not -- so each can only fire on
+# a fact, and the two that read the note can only fire when the string is
+# genuinely absent. The four below all rest on markdown_sections having
+# resolved the note into the right sections with the right bodies, and this is
+# a hand-rolled parser: review found four separate valid-Markdown shapes
+# (fenced headings, list-nested headings and fences, lazy continuation,
+# indented top-level constructs) where a non-container-aware parse silently
+# compares the wrong text. audit_lint is a stop-work gate in run_pipeline.sh
+# and pre_commit_audit_check.sh, so a parser-dependent hard error is a repo-wide
+# outage whose trigger is somebody's Markdown style. Closure grounding is
+# weaker still: a thresholdless content-word comparison whose live margins are
+# one to two words (measured 0.36/0.18, 0.45/0.27, 0.50/0.40).
+#
+# They are real and useful diagnostics -- they are what surfaced that all three
+# registry entries diverge from their notes -- so they report on every run with
+# the full text and scores. Arming any of them needs container-aware parsing or
+# a structured registry field, not a baseline.
+OBLIGATION_RECONCILIATION_ADVISORY_KINDS = frozenset(
+    {
+        "exact_target_section_missing",
+        "closure_criterion_section_missing",
+        "target_mismatch",
+        "closure_condition_not_grounded",
+    }
+)
 
 
 def obligation_reconciliation_findings(
@@ -1031,17 +1048,19 @@ def main() -> int:
         #
         # This is a ratchet, not a rewrite. What an obligation demands is
         # owner/audit-lane content, so a divergence is never repaired here and
-        # never picked a side on: today's exact-comparison population is
+        # never picked a side on: today's error-eligible population is
         # grandfathered verbatim in
         # derivation_obligation_reconciliation_baseline.txt and reported as a
         # drainable notice, and only a NEW divergence is an error. Draining an
         # entry is the owner's adjudication of which surface was right.
         # Shrink-only is a reviewed convention, not a mechanical guarantee:
         # nothing here can tell a drained line from a newly added suppression,
-        # so growth of this file is a review question. That is why only exact
-        # mechanical comparisons are error-eligible at all
-        # (OBLIGATION_RECONCILIATION_ADVISORY_KINDS carries the lexical one,
-        # which is never suppressed and never an error).
+        # so growth of this file is a review question. That is one reason only
+        # findings that read no Markdown structure are error-eligible at all;
+        # everything that depends on the section parse lives in
+        # OBLIGATION_RECONCILIATION_ADVISORY_KINDS, which this file cannot
+        # suppress and which can never reach `errors` (the two sets partition
+        # OBLIGATION_RECONCILIATION_KINDS, asserted in the tests).
         # The baseline lives beside the scripts rather than in
         # docs/audit/data/ because that directory is restored wholesale from
         # origin/main before a science PR lands, which would silently revert

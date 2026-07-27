@@ -124,19 +124,28 @@ dependency closure. The lint reports divergence and never repairs it: what an
 obligation demands is owner/audit-lane content, and deciding which of the two
 surfaces is right is not a mechanical call.
 
-Those are exact mechanical comparisons, so they are error-eligible. The
-population measured when the rule landed is grandfathered in
+What a finding has to know decides whether it can block. Three checks read no
+Markdown structure at all — a registry field is empty or it is not, a declared
+`historical_governance_source` basename occurs in the note text or it does not,
+the ledger row is typed `open_gate` or it is not — so each can only fire on a
+fact, and those are error-eligible. Everything that depends on resolving the
+note into sections (`## Exact target` and `## Closure criterion` present, the
+target comparison, and whether `self_liquidation_condition` is lexically closer
+to `## Closure criterion` than to another section) is reported on every run as a
+`..._advisory` notice and never errors: `audit_lint.py` is a stop-work gate in
+`run_pipeline.sh` and `pre_commit_audit_check.sh`, and a hard error whose
+trigger is a hand-rolled Markdown parse is a repo-wide outage caused by
+somebody's Markdown style. Arming those needs container-aware parsing or a
+structured registry field.
+
+The error-eligible population measured when the rule landed is grandfathered in
 `scripts/derivation_obligation_reconciliation_baseline.txt` and surfaces as
 `derivation_obligation_registry_note_divergence` notices; only a new divergence
 errors, and a drained line surfaces as `..._baseline_stale`. Shrink-only is a
 reviewed convention rather than a mechanical guarantee — the lint cannot
 distinguish a drained line from a newly added suppression — so growth of that
-file is a review question. Two checks are outside the baseline entirely: the
-`open_gate` typing check is not grandfatherable, and
-`closure_condition_not_grounded` (whether `self_liquidation_condition` is
-lexically closer to `## Closure criterion` than to another section) is a
-thresholdless content-word comparison, so it is reported on every run as an
-advisory notice and is never an error.
+file is a review question. The `open_gate` typing check is outside the baseline
+in the other direction: it is not grandfatherable at all.
 - `prose_status` — vocabulary-drift status, orthogonal to `audit_status`. See
   `docs/repo/VOCABULARY_HYGIENE_DESIGN.md`. One of:
   - `clean` — no vocabulary drift detected by `vocab_lint`.

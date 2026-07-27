@@ -3,14 +3,18 @@
 
 `docs/audit/data/derivation_obligations.json` and the source note named by each
 entry's `current_path` are two records of the same open obligation. Before this
-rule nothing compared them: `audit_lint` checked `target` for truthiness only,
-no rule in the repository read `self_liquidation_condition`, and the note was
-never opened — so a registry entry could record a weaker target or a closure
-condition copied from a different section of its own note with no gate firing.
+rule nothing reconciled them: `audit_lint` checked `target` for truthiness only,
+no rule in the repository validated `self_liquidation_condition` against its
+note (`no_go_discipline_gate` reads the field, but only to pick an evidence
+excerpt), and the note was never opened — so a registry entry could record a
+weaker target or a closure condition copied from a different section of its own
+note with no gate firing.
 
 The lint never repairs a divergence and never decides which surface is right:
-what an obligation demands is owner/audit-lane content. It reports, and the
-current population is grandfathered in a shrink-only baseline.
+what an obligation demands is owner/audit-lane content. Exact mechanical
+comparisons are error-eligible with the current population grandfathered in a
+shrink-only baseline; the one lexical comparison is advisory at every run and
+cannot be baselined; the `open_gate` typing invariant is neither.
 
 Run via:
   python3 -m unittest docs.audit.scripts.tests.test_derivation_obligation_reconciliation
@@ -25,8 +29,9 @@ import sys
 import unittest
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[3]
-SCRIPTS_DIR = REPO_ROOT / "audit" / "scripts"
+# parents[3] of docs/audit/scripts/tests/<file> is docs/, not the repo root.
+DOCS_ROOT = Path(__file__).resolve().parents[3]
+SCRIPTS_DIR = DOCS_ROOT / "audit" / "scripts"
 sys.path.insert(0, str(SCRIPTS_DIR))
 
 import audit_lint  # noqa: E402
@@ -75,12 +80,9 @@ OPEN_GATE_ROW = {"claim_type": "open_gate"}
 
 
 def kinds(entry, note=ALIGNED_NOTE, row=OPEN_GATE_ROW, dep_id="example_obligation"):
-    return {
-        kind
-        for kind, _message in audit_lint.obligation_reconciliation_findings(
-            dep_id, entry, note, row
-        )
-    }
+    findings = audit_lint.obligation_reconciliation_findings(dep_id, entry, note)
+    findings += audit_lint.obligation_row_typing_findings(dep_id, row)
+    return {kind for kind, _message in findings}
 
 
 class ObligationReconciliationRuleTest(unittest.TestCase):
@@ -108,7 +110,7 @@ class ObligationReconciliationRuleTest(unittest.TestCase):
         entry["target"] = "Derive whether the widget carrier is anything at all."
         message = dict(
             audit_lint.obligation_reconciliation_findings(
-                "example_obligation", entry, ALIGNED_NOTE, OPEN_GATE_ROW
+                "example_obligation", entry, ALIGNED_NOTE
             )
         )["target_mismatch"]
         self.assertIn("anything at all", message)
@@ -159,6 +161,25 @@ class ObligationReconciliationRuleTest(unittest.TestCase):
         note = ALIGNED_NOTE + "\nAdopted via `SOME_GOVERNANCE_DECISION.md`.\n"
         self.assertNotIn("governance_source_not_cited", kinds(entry, note=note))
 
+    def test_fenced_heading_does_not_hijack_a_section(self):
+        # A fenced ``## Exact target`` is sample text, not a section. Parsed as
+        # one it replaced the real body and produced a target_mismatch ERROR
+        # against a registry entry that matched its note exactly.
+        note = ALIGNED_NOTE + (
+            "\n## Appendix\n\n```\n## Exact target\n"
+            "Sample text that is not the target.\n```\n"
+        )
+        self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
+        self.assertNotIn("Exact target", audit_lint.markdown_sections(
+            "# T\n\n## Only\n\n~~~\n## Exact target\nfenced\n~~~\n"
+        ))
+
+    def test_repeated_heading_keeps_the_first_body(self):
+        note = ALIGNED_NOTE + (
+            "\n## Exact target\n\nA later restatement that is not the target.\n"
+        )
+        self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
+
     def test_obligation_row_typed_away_from_open_gate_is_reported(self):
         # The registry preamble promises obligations "never satisfy dependency
         # closure". Only claim_type == open_gate carries that promise through
@@ -168,6 +189,25 @@ class ObligationReconciliationRuleTest(unittest.TestCase):
         self.assertIn(
             "ledger_row_not_open_gate",
             kinds(ALIGNED_ENTRY, row={"claim_type": "bounded_theorem"}),
+        )
+
+    def test_meta_retyping_is_reported_too(self):
+        # meta is the shorter version of the same hole:
+        # is_chain_satisfying_status accepts "meta" directly, with no
+        # retained-grade step in between. Requiring exactly open_gate covers it.
+        self.assertIn(
+            "ledger_row_not_open_gate",
+            kinds(ALIGNED_ENTRY, row={"claim_type": "meta"}),
+        )
+
+    def test_typing_check_does_not_depend_on_the_note(self):
+        # The invariant is row-only: it must not inherit the reconciliation
+        # function's precondition that current_path exists on disk.
+        self.assertEqual(
+            [kind for kind, _ in audit_lint.obligation_row_typing_findings(
+                "example_obligation", {"claim_type": "positive_theorem"}
+            )],
+            ["ledger_row_not_open_gate"],
         )
 
     def test_absent_ledger_row_does_not_assert_a_typing(self):
@@ -199,10 +239,17 @@ class ObligationReconciliationBaselineTest(unittest.TestCase):
                 continue
             note_text = note_path.read_text(encoding="utf-8", errors="replace")
             for kind, _message in audit_lint.obligation_reconciliation_findings(
-                dep_id, entry, note_text, None
+                dep_id, entry, note_text
             ):
                 found.add(f"{dep_id}:{kind}")
         return found
+
+    def error_eligible_live_findings(self):
+        return {
+            key
+            for key in self.live_findings()
+            if key.rpartition(":")[2] not in audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS
+        }
 
     def test_every_baseline_line_is_a_registered_id_and_known_kind(self):
         registered = set(self.registry.get("nodes") or {})
@@ -215,12 +262,35 @@ class ObligationReconciliationBaselineTest(unittest.TestCase):
                 f"{line}: unknown finding kind",
             )
 
-    def test_no_live_divergence_escapes_the_baseline(self):
-        # Exactly the invariant strict lint enforces: a NEW divergence is an
-        # error. Failing here means a registry entry or its note drifted apart
-        # without owner adjudication.
-        escaped = sorted(self.live_findings() - self.baseline)
-        self.assertEqual(escaped, [], f"un-grandfathered divergences: {escaped}")
+    def test_baseline_matches_the_live_error_eligible_population_exactly(self):
+        # Both directions. `live - baseline` is the invariant the lint enforces:
+        # a NEW divergence is an error. `baseline - live` is the drain the lint
+        # can only report as a notice — asserting it here means a drained line
+        # must be pruned in the same change, so the file cannot silently accrete
+        # dead suppressions.
+        self.assertEqual(
+            sorted(self.error_eligible_live_findings()), sorted(self.baseline)
+        )
+
+    def test_advisory_kinds_are_never_baselined(self):
+        # The lexical comparison cannot be suppressed by this file, so a line
+        # naming it would be dead weight that implies an enforcement it lacks.
+        advisory = sorted(
+            line
+            for line in self.baseline
+            if line.rpartition(":")[2]
+            in audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS
+        )
+        self.assertEqual(advisory, [])
+        self.assertTrue(
+            audit_lint.OBLIGATION_RECONCILIATION_ADVISORY_KINDS
+            & self.live_findings_kinds(),
+            "the advisory kind should still reproduce live; if it no longer does, "
+            "re-examine whether it is worth reporting at all",
+        )
+
+    def live_findings_kinds(self):
+        return {key.rpartition(":")[2] for key in self.live_findings()}
 
     def test_typing_launder_is_not_grandfatherable(self):
         # ledger_row_not_open_gate protects the registry's own preamble promise
@@ -234,6 +304,22 @@ class ObligationReconciliationBaselineTest(unittest.TestCase):
             line for line in self.baseline if line.endswith(":ledger_row_not_open_gate")
         )
         self.assertEqual(laundered, [])
+
+    def test_every_live_obligation_row_is_typed_open_gate(self):
+        # The live half of the non-grandfatherable invariant. The unit tests
+        # above exercise the rule; this asserts the actual auditor-owned
+        # claim_type on the three registered rows, which is what the rule
+        # protects.
+        import ledger_io
+
+        rows = ledger_io.load_ledger()["rows"]
+        for dep_id in sorted(self.registry.get("nodes") or {}):
+            self.assertIn(dep_id, rows, f"{dep_id}: registered obligation has no row")
+            self.assertEqual(
+                [],
+                audit_lint.obligation_row_typing_findings(dep_id, rows[dep_id]),
+                f"{dep_id}: claim_type={rows[dep_id].get('claim_type')!r}",
+            )
 
 
 class ChainSatisfactionBoundaryTest(unittest.TestCase):

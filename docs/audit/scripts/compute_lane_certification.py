@@ -43,11 +43,13 @@ def status_satisfies_certification(claim_id: str, status: object) -> bool:
     compute_effective_status.is_chain_satisfying_status accepts ``meta`` as
     stable audit context for one-hop dependency closure, and this function does
     not. The divergence is deliberate policy, but it is not symmetric with
-    audit throughput: a ``meta`` row's clean status is ``meta`` forever
-    (compute_effective_status.clean_status), so a ``meta`` row inside a lane's
-    closure is a permanent blocker that no audit and no science can clear. Read
-    a lane's ``blocking`` list with that in mind, and change this boundary only
-    as a reviewed decision about what "certified" means.
+    audit throughput: while a row stays typed ``meta`` its clean status is
+    ``meta`` (compute_effective_status.clean_status), so a ``meta`` row inside a
+    lane's closure blocks that lane and no amount of auditing can clear it.
+    Clearing it takes a source-level change -- reclassifying the row away from
+    ``meta``, or removing the dependency that pulled it into the closure -- not
+    throughput. Read a lane's ``blocking`` list with that in mind, and change
+    this boundary only as a reviewed decision about what "certified" means.
     """
     if status in RETAINED_GRADE:
         return True

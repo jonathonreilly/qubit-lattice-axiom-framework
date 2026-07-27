@@ -27,9 +27,11 @@ Checks (all hard rules from FRESH_LOOK_REQUIREMENTS.md and README.md):
        fresh_context from a distinct restricted-input session.
      - note_hash on row must equal current note hash on disk.
      - a registered derivation obligation must agree with the source note it
-       registers (exact target, closure condition, declared governance source)
-       and its ledger row must be typed open_gate. Divergence is reported,
-       never repaired: which surface is right is not a mechanical call.
+       registers (exact target, declared governance source, both sections
+       present) and its ledger row must be typed open_gate. Divergence is
+       reported, never repaired: which surface is right is not a mechanical
+       call. Closure-condition grounding is a lexical comparison and is
+       advisory only.
 
   3. Graph health:
      - No dangling deps.
@@ -551,11 +553,44 @@ def obligation_text_normalize(text: object) -> str:
 
 
 def markdown_sections(text: str) -> dict[str, str]:
-    """Map each `## Heading` in a source note to its body text."""
-    return {
-        m.group(1).strip(): m.group(2).strip()
-        for m in re.finditer(r"^##\s+(.+?)\s*$(.*?)(?=^##\s|\Z)", text, re.M | re.S)
-    }
+    """Map each `## Heading` in a source note to its body text.
+
+    Fenced code blocks are skipped rather than scanned: a ``## ...`` line inside
+    a fence is sample text, not a section. Without that, a fenced ``## Exact
+    target`` silently replaces the real section body and the reconciliation
+    below reports a target divergence that does not exist. A repeated heading
+    keeps its FIRST body for the same reason -- the later occurrence must not
+    be able to displace the section the note actually opened with.
+    """
+    sections: dict[str, list[str]] = {}
+    order: list[str] = []
+    current: str | None = None
+    fence: str | None = None
+    for line in text.splitlines():
+        fence_match = re.match(r"^\s{0,3}(`{3,}|~{3,})", line)
+        if fence_match:
+            marker = fence_match.group(1)[0] * 3
+            if fence is None:
+                fence = marker
+            elif marker == fence:
+                fence = None
+            if current is not None:
+                sections[current].append(line)
+            continue
+        if fence is None:
+            heading = re.match(r"^##(?!#)\s+(.+?)\s*$", line)
+            if heading:
+                current = heading.group(1).strip()
+                if current not in sections:
+                    sections[current] = []
+                    order.append(current)
+                else:
+                    # Repeated heading: keep the first body, ignore the rest.
+                    current = None
+                continue
+        if current is not None:
+            sections[current].append(line)
+    return {name: "\n".join(sections[name]).strip() for name in order}
 
 
 # Comparison stopwords for obligation grounding. Deliberately small, fixed and
@@ -601,26 +636,42 @@ OBLIGATION_RECONCILIATION_NON_GRANDFATHERABLE_KINDS = frozenset(
     {"ledger_row_not_open_gate"}
 )
 
+# Advisory, never an error, baseline or no baseline. Every other kind is an
+# exact mechanical comparison -- a section is present or absent, two normalized
+# strings are equal or not, a basename occurs in the note or does not -- so it
+# can only fire on a real divergence. Closure grounding is instead a lexical
+# content-word comparison with no threshold, and the live margins are one to
+# two words (measured: 0.36/0.18, 0.45/0.27, 0.50/0.40). A faithful but
+# differently-worded condition on a NEW obligation can lose that comparison, and
+# audit_lint is a stop-work gate in run_pipeline.sh and pre_commit_audit_check.sh
+# with no honest drain except rewording correct prose to win a word count.
+# It is a real and useful diagnostic -- it is what surfaced that all three
+# entries paraphrase '## Running-program relation' -- so it is reported every
+# run, and arming it needs a structured closure field or a validated threshold,
+# not a baseline.
+OBLIGATION_RECONCILIATION_ADVISORY_KINDS = frozenset({"closure_condition_not_grounded"})
+
 
 def obligation_reconciliation_findings(
     dep_id: str,
     entry: dict,
     note_text: str,
-    row: dict | None,
 ) -> list[tuple[str, str]]:
     """Reconcile one derivation-obligation registry entry against its own note.
 
     Returns ``(kind, message)`` pairs. The registry preamble binds each entry to
-    the exact open target stated by its ``current_path`` note, but nothing read
-    that note: ``target`` was checked for truthiness only and
-    ``self_liquidation_condition`` was never read at all, so a registry record
-    could state a weaker target or a different closure condition than the
-    obligation it registers and no gate would notice.
+    the exact open target stated by its ``current_path`` note, but nothing
+    reconciled the two: ``target`` was checked for truthiness only and no rule
+    validated ``self_liquidation_condition`` against its note at all (the no-go
+    discipline gate reads the field, but only to pick an evidence excerpt), so a
+    registry record could state a weaker target or a different closure condition
+    than the obligation it registers and no gate would notice.
 
-    Every check is mechanical and reports a divergence; none of them decides
-    which surface is right. What an obligation demands is owner/audit-lane
-    content, so the caller grandfathers today's population and errors only on
-    new divergence.
+    No check decides which surface is right. What an obligation demands is
+    owner/audit-lane content, so the caller reports and never repairs: today's
+    exact-comparison divergences are grandfathered and only a new one errors,
+    while ``closure_condition_not_grounded`` -- the one lexical, thresholdless
+    comparison here -- is advisory at every run.
     """
     findings: list[tuple[str, str]] = []
     source_path = entry.get("current_path") or "<no current_path>"
@@ -705,24 +756,40 @@ def obligation_reconciliation_findings(
             )
         )
 
-    # The registry preamble promises these entries "never satisfy dependency
-    # closure, never bound or promote downstream rows". That invariant is
-    # carried solely by compute_effective_status.clean_status returning
-    # open_gate for claim_type == open_gate: retyping an obligation row to
-    # bounded_theorem and auditing it clean would launder an open obligation
-    # into a retained-grade premise. Nothing checked the typing.
-    if row is not None and row.get("claim_type") != "open_gate":
-        findings.append(
-            (
-                "ledger_row_not_open_gate",
-                f"{dep_id}: registered derivation obligation has ledger "
-                f"claim_type={row.get('claim_type')!r}, but only 'open_gate' keeps the "
-                "registry's promise that an obligation never satisfies dependency "
-                "closure; report the typing to the audit lane rather than editing "
-                "the row",
-            )
-        )
     return findings
+
+
+def obligation_row_typing_findings(
+    dep_id: str, row: dict | None
+) -> list[tuple[str, str]]:
+    """Registry membership implies ``claim_type == open_gate`` on the ledger row.
+
+    The registry preamble promises these entries "never satisfy dependency
+    closure, never bound or promote downstream rows". That invariant is carried
+    solely by ``compute_effective_status.clean_status`` returning ``open_gate``
+    for ``claim_type == open_gate``: retype the row to ``bounded_theorem`` and
+    audit it clean and ``CLAIM_TYPE_TO_RETAINED`` yields ``retained_bounded``,
+    which ``is_chain_satisfying_status`` accepts -- an open obligation laundered
+    into a premise. ``meta`` is the same hole one step shorter, because
+    ``is_chain_satisfying_status`` accepts ``meta`` directly. Requiring exactly
+    ``open_gate`` closes both. Nothing checked the typing.
+
+    Kept out of ``obligation_reconciliation_findings`` deliberately: this is a
+    row-only invariant and must not inherit that function's precondition that
+    the note file exists on disk.
+    """
+    if row is None or row.get("claim_type") == "open_gate":
+        return []
+    return [
+        (
+            "ledger_row_not_open_gate",
+            f"{dep_id}: registered derivation obligation has ledger "
+            f"claim_type={row.get('claim_type')!r}, but only 'open_gate' keeps the "
+            "registry's promise that an obligation never satisfies dependency "
+            "closure; report the typing to the audit lane rather than editing "
+            "the row",
+        )
+    ]
 
 
 def hash_note_on_disk(note_path_str: str) -> str | None:
@@ -904,19 +971,26 @@ def main() -> int:
         # Registry <-> source-note reconciliation.
         #
         # The registry entry and the note it registers are two records of the
-        # same obligation, and nothing compared them: `target` was checked for
-        # truthiness only, `self_liquidation_condition` was read by no rule in
-        # the repo, and the source note was never opened. A registry that
-        # states a weaker target, or a closure condition copied from a
+        # same obligation, and nothing reconciled them: `target` was checked for
+        # truthiness only, no rule validated `self_liquidation_condition`
+        # against its note, and the source note was never opened. A registry
+        # that states a weaker target, or a closure condition copied from a
         # different section of the note, is invisible to the audit lane
         # because no ledger row hashes docs/audit/data/.
         #
         # This is a ratchet, not a rewrite. What an obligation demands is
         # owner/audit-lane content, so a divergence is never repaired here and
-        # never picked a side on: today's population is grandfathered verbatim
-        # in derivation_obligation_reconciliation_baseline.txt and reported as
-        # a drainable notice, and only a NEW divergence is an error. Draining
-        # an entry is the owner's adjudication of which surface was right.
+        # never picked a side on: today's exact-comparison population is
+        # grandfathered verbatim in
+        # derivation_obligation_reconciliation_baseline.txt and reported as a
+        # drainable notice, and only a NEW divergence is an error. Draining an
+        # entry is the owner's adjudication of which surface was right.
+        # Shrink-only is a reviewed convention, not a mechanical guarantee:
+        # nothing here can tell a drained line from a newly added suppression,
+        # so growth of this file is a review question. That is why only exact
+        # mechanical comparisons are error-eligible at all
+        # (OBLIGATION_RECONCILIATION_ADVISORY_KINDS carries the lexical one,
+        # which is never suppressed and never an error).
         # The baseline lives beside the scripts rather than in
         # docs/audit/data/ because that directory is restored wholesale from
         # origin/main before a science PR lands, which would silently revert
@@ -940,6 +1014,7 @@ def main() -> int:
             if not entry.get("target"):
                 errors.append(f"derivation obligation {dep_id!r} lacks target")
             source_path = entry.get("current_path")
+            obligation_findings: list[tuple[str, str]] = []
             if not source_path:
                 errors.append(f"derivation obligation {dep_id!r} lacks current_path")
             elif not (REPO_ROOT / source_path).exists():
@@ -951,26 +1026,37 @@ def main() -> int:
                 note_text = (REPO_ROOT / source_path).read_text(
                     encoding="utf-8", errors="replace"
                 )
-                for kind, message in obligation_reconciliation_findings(
-                    dep_id, entry, note_text, rows.get(dep_id)
-                ):
-                    key = f"{dep_id}:{kind}"
-                    live_reconciliation_keys.add(key)
-                    if (
-                        key in reconciliation_baseline
-                        and kind
-                        not in OBLIGATION_RECONCILIATION_NON_GRANDFATHERABLE_KINDS
-                    ):
-                        add_notice(
-                            "derivation_obligation_registry_note_divergence",
-                            f"{message} [grandfathered as {key} in "
-                            "derivation_obligation_reconciliation_baseline.txt; "
-                            "drain by owner adjudication of which surface is right]",
-                        )
-                    else:
-                        errors.append(
-                            f"[derivation_obligation_registry_note_divergence] {message}"
-                        )
+                obligation_findings = obligation_reconciliation_findings(
+                    dep_id, entry, note_text
+                )
+            # Row-only invariant: runs whether or not the note is on disk.
+            obligation_findings += obligation_row_typing_findings(
+                dep_id, rows.get(dep_id)
+            )
+            for kind, message in obligation_findings:
+                key = f"{dep_id}:{kind}"
+                live_reconciliation_keys.add(key)
+                if kind in OBLIGATION_RECONCILIATION_NON_GRANDFATHERABLE_KINDS:
+                    errors.append(
+                        f"[derivation_obligation_registry_note_divergence] {message}"
+                    )
+                elif kind in OBLIGATION_RECONCILIATION_ADVISORY_KINDS:
+                    add_notice(
+                        "derivation_obligation_registry_note_divergence_advisory",
+                        f"{message} [advisory: lexical content-word comparison, "
+                        "reported every run and never an error]",
+                    )
+                elif key in reconciliation_baseline:
+                    add_notice(
+                        "derivation_obligation_registry_note_divergence",
+                        f"{message} [grandfathered as {key} in "
+                        "derivation_obligation_reconciliation_baseline.txt; "
+                        "drain by owner adjudication of which surface is right]",
+                    )
+                else:
+                    errors.append(
+                        f"[derivation_obligation_registry_note_divergence] {message}"
+                    )
 
         for stale in sorted(reconciliation_baseline - live_reconciliation_keys):
             add_notice(

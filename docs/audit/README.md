@@ -114,19 +114,29 @@ conditional/pending-chain.
 
 An entry in `docs/audit/data/derivation_obligations.json` and the source note
 named by its own `current_path` are two records of the same open obligation, so
-`audit_lint.py` reconciles them: the registry `target` must match the note's
-`## Exact target`, `self_liquidation_condition` must be grounded in the note's
-`## Closure criterion` rather than another section, a declared
-`historical_governance_source` must actually be cited by the note, and the
-obligation's ledger row must be typed `open_gate` — the only typing that keeps
-the registry's promise that an obligation never satisfies dependency closure.
-The lint reports divergence and never repairs it: what an obligation demands is
-owner/audit-lane content, and deciding which of the two surfaces is right is
-not a mechanical call. The population measured when the rule landed is
-grandfathered in `scripts/derivation_obligation_reconciliation_baseline.txt`
-and surfaces as `derivation_obligation_registry_note_divergence` notices; only
-a new divergence errors, a drained line surfaces as
-`..._baseline_stale`, and the `open_gate` typing check is not grandfatherable.
+`audit_lint.py` reconciles them: the registry `target` must match the opening
+paragraph of the note's `## Exact target` section, both that section and
+`## Closure criterion` must exist, `self_liquidation_condition` must be
+non-empty, a declared `historical_governance_source` must actually be named in
+the note, and the obligation's ledger row must be typed `open_gate` — the only
+typing that keeps the registry's promise that an obligation never satisfies
+dependency closure. The lint reports divergence and never repairs it: what an
+obligation demands is owner/audit-lane content, and deciding which of the two
+surfaces is right is not a mechanical call.
+
+Those are exact mechanical comparisons, so they are error-eligible. The
+population measured when the rule landed is grandfathered in
+`scripts/derivation_obligation_reconciliation_baseline.txt` and surfaces as
+`derivation_obligation_registry_note_divergence` notices; only a new divergence
+errors, and a drained line surfaces as `..._baseline_stale`. Shrink-only is a
+reviewed convention rather than a mechanical guarantee — the lint cannot
+distinguish a drained line from a newly added suppression — so growth of that
+file is a review question. Two checks are outside the baseline entirely: the
+`open_gate` typing check is not grandfatherable, and
+`closure_condition_not_grounded` (whether `self_liquidation_condition` is
+lexically closer to `## Closure criterion` than to another section) is a
+thresholdless content-word comparison, so it is reported on every run as an
+advisory notice and is never an error.
 - `prose_status` — vocabulary-drift status, orthogonal to `audit_status`. See
   `docs/repo/VOCABULARY_HYGIENE_DESIGN.md`. One of:
   - `clean` — no vocabulary drift detected by `vocab_lint`.

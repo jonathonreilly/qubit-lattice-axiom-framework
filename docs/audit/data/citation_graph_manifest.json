@@ -1,6 +1,6 @@
 {
- "edge_count": 15077,
- "node_count": 4514,
+ "edge_count": 15088,
+ "node_count": 4515,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10273,6 +10273,10 @@
   "physical_lattice_necessity_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "physical_operational_source_response_readout_chain_cycle700_note_2026-07-25": {
+   "deps_hash": "9545268e4369",
+   "out_degree": 11
   },
   "physical_pair_kernel_minimal_position_extension_cycle698_note_2026-07-25": {
    "deps_hash": "32ac84e8f2ad",

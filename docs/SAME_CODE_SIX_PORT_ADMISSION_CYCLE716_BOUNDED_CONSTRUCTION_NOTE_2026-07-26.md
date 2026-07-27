@@ -23,8 +23,9 @@ Load-bearing dependencies:
 
 Can one shared physical-M2 code block expose all six seam-opportunity bits
 incident on one M64 cell, feed them to more than one fixed local reversible
-candidate law, and reach the landed finite proper-cubic admission discriminator
-without a run-time truth-table ROM or a host-selected winner?
+candidate law, and reach the semantic port contract of the landed finite
+proper-cubic admission discriminator without a run-time truth-table ROM or a
+host-selected winner?
 
 ## Constructive result
 

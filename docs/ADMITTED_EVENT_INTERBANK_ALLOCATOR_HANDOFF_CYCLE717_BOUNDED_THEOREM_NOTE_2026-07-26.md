@@ -19,7 +19,7 @@ Load-bearing dependency:
 
 Can Cycle 715's two-cell packet bank admit a constant-size reversible handoff
 into a translated blank neighbor, and how far can that module support a finite
-semantic allocation chain before autonomous physical recurrence fails?
+semantic allocation chain while autonomous physical recurrence remains open?
 
 ## Construction
 

@@ -3,6 +3,7 @@
 **Date:** 2026-05-04
 **Closure update:** 2026-05-06
 **Derivation hardening:** 2026-07-10
+**No-go discipline packet:** 2026-07-26
 **Type:** no_go
 **Claim type:** no_go
 **Claim scope:** route-specific exact negative boundary for the accepted
@@ -254,11 +255,145 @@ coefficient across the six plaquette orientations. This note does not promote
 that statement or re-axiomatize it. It records that the two named candidate
 mechanisms do not force a different action surface.
 
-[`GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md`](GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md)
-also remains in force on its own narrower scope: an exact reduction
+The plain-text relation pointer
+`GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md` also remains in
+force on its own narrower scope: an exact reduction
 `P(beta) = P_1plaq(Gamma beta)` with constant `Gamma` must have `Gamma = 1`
 at strong-coupling onset. That result is non-load-bearing here and does not
 establish a general staggered-fermion source/action map.
+
+## No-Go Discipline Gate
+
+This gate stress-tests only the route-specific boundary theorem above:
+
+> on the accepted isotropic nearest-neighbor Wilson surface, neither the
+> `Cl(3)` pseudoscalar proposed as a fourth generator nor the displayed
+> standard staggered-eta plaquette-sign mechanism supplies a nonzero
+> anisotropic orientation datum.
+
+It does not test, and does not assert, a global no-go for anisotropic gauge
+actions, effective-action corrections, or spacetime emergence.
+
+### N1 — Alternative-route enumeration
+
+The route families are distinguished by their primary object, invariant, or
+terminal obligation rather than by notation.
+
+| Attack on the narrow claim | Marker | Resolution |
+|---|---|---|
+| Use `omega^2 = -I` alone as a time-like signature | `ATTEMPTED` | Section 1 and the primary runner check the actual terminal obligation for a fourth generator, `{omega,G_i}=0`; it fails for all three `G_i` because `omega` is central. |
+| Escape through a representation in which `omega` is not central | `ATTEMPTED` | The two-sign-flip proof in §1 is an identity in abstract `Cl(3,0)`, independent of representation; the Pauli runner separately checks the framework's `M_2(C)` presentation. |
+| Use integer sites outside the binary runner cube to change the eta product | `ATTEMPTED` | Section 2 proves the result for arbitrary integer `x`; the eta functions depend only on coordinate parity, so the runner's parity cube is exhaustive rather than sampled. |
+| Use another one of the six Wilson plaquette orientations to obtain a different eta sign | `ATTEMPTED` | Section 2 reduces every `mu < nu` product to `-1`, and the runner checks all six orientations supplied by the accepted Wilson source-class theorem. |
+| Challenge the premise that the accepted Wilson input has one common coefficient | `RULED OUT BY PRIOR` | [`GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md`](GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md) states the accepted source grammar as the one-dimensional common-coefficient class. Starting from six independent coefficients studies propagation of pre-existing anisotropy, not derivation by either mechanism tested here. |
+| Convert the uniform eta signs into anisotropic physical coefficients through an additional determinant, hopping, or source/action kernel | `ATTEMPTED` | Such a kernel is a third mechanism and an additional premise. The current framework axioms do not supply a source/action map, this theorem applies only to the displayed sign datum `E`, and the possible effective-action route remains explicitly open. |
+
+The first five attacks close on the stated premise surface. The sixth is the
+strongest scope escape: it does not refute the two-route theorem because it
+changes the mechanism and premise set, but it remains a live route against any
+broader no-go.
+
+### N2 — Wall-independence audit
+
+The theorem has two route walls. The accepted Wilson grammar is an input
+boundary, not a third wall, and the constant-lift obstruction is
+non-load-bearing context.
+
+| Wall pair | Closing the first closes the second? | Closing the second closes the first? | Independent? |
+|---|---:|---:|---:|
+| Pseudoscalar centrality / eta orientation-blindness | no | no | yes |
+
+The collapsed wall set therefore still contains exactly these two independent
+route failures.
+
+### N3 — Hidden-wall scan
+
+The phrases that could conceal premises resolve as follows:
+
+| Phrase class | Classification | Resolution |
+|---|---|---|
+| `current framework memo` / `framework's local algebra` | cited premise authority | The Qubit node in [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) supplies `M_2(C)`, equivalently the `Cl(3,0)` presentation. |
+| `accepted Wilson` | cited retained authority | The common-coefficient six-orientation grammar is supplied by the Wilson source-class theorem linked above. |
+| `standard staggered phases` | explicit definition | The full formula is stated in §2; no physical eta-to-action identification is hidden in the word `standard`. |
+| future approved or repo-conventional primitive | non-load-bearing scope context | No such primitive is used in the proof; the sentence preserves possible future routes. |
+
+No occurrence of `we assume`, `by construction`, `bridge context`, `naturally`,
+`obviously`, or `standard QFT` supplies an unlisted wall. In particular, the
+proof never assumes that eta signs act on physical Wilson coefficients.
+
+### N4 — Residual matching
+
+| Cited surface | Residual it addresses | Role here | Match? |
+|---|---|---|---:|
+| [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md) | the one-site `M_2(C) ~= Cl(3,0)` presentation | premise for the pseudoscalar calculation | yes |
+| [`GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md`](GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md) | the common-coefficient six-orientation Wilson grammar | definition of the accepted input surface | yes |
+| `GAUGE_VACUUM_PLAQUETTE_CONSTANT_LIFT_OBSTRUCTION_NOTE.md` | a nonunit constant observable reduction `P(beta)=P_1plaq(Gamma beta)` | plain-text relation context only, not a dependency | no; dropped from witness support |
+| `GAUGE_WILSON_ISOTROPY_BOUNDARY_HYGIENE_COMPANION_NOTE_2026-06-04.md` | invariance of these two calculations under a Record-axiom memo change | meta hygiene only; plain-text pointer, not a dependency | no independent proof weight claimed |
+
+The negative boundary therefore rests on the in-line algebra and the primary
+runner, with matching premise support. It does not borrow a differently scoped
+no-go as a witness.
+
+### N5 — Rhetoric audit by resolution
+
+| Resolution | Tested? | Exact boundary |
+|---|---:|---|
+| one-site algebra, proposed element `omega` | yes | `omega` is not the proposed fourth anticommuting generator |
+| integer site / parity class | yes | `E_mu_nu(x)=-1` for every `x` under the displayed eta definition |
+| each of the six unoriented plaquette classes | yes | the six-entry sign signature is `-1_6` |
+| one accepted six-coefficient Wilson block | yes | `Pi_aniso(E)=0` and the spatial/temporal contrast vanishes |
+| momentum mode, determinant/hopping order, multiplaquette effective action, radiative correction, or arbitrary dynamics | no | no negative claim is made at these resolutions |
+| every possible spacetime-emergence or anisotropy mechanism | no | explicitly left open |
+
+Accordingly, phrases such as "does not derive" and "provides no basis" refer
+only to the two named mechanisms at the tested resolutions, never to arbitrary
+operators or lattice-wide dynamics.
+
+### N6 — Partial-closure path scan
+
+The registered `kinetic_isotropy_primitive` (plain-text source pointer:
+`KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md`) supplies only structural OS0
+kinetic-form isotropy `c_t=c_s`. It is an approved
+primitive, not a wall or bounded import, but it supplies no Wilson
+gauge-action coefficient map and is not load-bearing here. The accepted Wilson
+grammar already supplies the input surface. A separate retained source/action,
+effective-action, or anisotropy theorem could still produce a different action
+surface; this note leaves that route open and does not misclassify it as
+requiring a new axiom. No convention or metadata reframe can change the
+algebraic identities `[omega,G_i]=0` or `E=-1_6` into a nonzero anisotropic
+signature.
+
+### N7 — Steelman
+
+A hostile reviewer should object that a uniform bare eta sign does not imply
+an isotropic renormalized gauge action: integrating out staggered matter could
+produce an orientation-dependent determinant or hopping correction once a
+derived temporal structure is present, and an enlarged operator module could
+supply a time-like generator other than `omega`. The nearby, currently
+unaudited source `SPATIAL_CUBIC_TIME_ANISOTROPY_GATE_NO_GO_2026-06-06.md`
+(plain-text prior-art pointer, not a dependency) gives the concrete witness
+family `c_t p_t^2 + c_s |p_spatial|^2` with independent temporal and spatial
+kinetic coefficients under spatial cubic symmetry alone. That witness defeats
+a global anisotropy no-go, but not the theorem stated here: an extra
+effective-action kernel, enlarged module, or different temporal supplier is
+not either of the two tested mechanisms and is expressly left open.
+
+### N8 — Cross-cycle echo
+
+The spatial-cubic time-anisotropy gate is the closest structural echo. Its
+kinetic-form escape was later supplied by the approved kinetic-isotropy
+primitive, but that governance mechanism cannot be reused as a derivation of
+orientation-dependent Wilson coefficients: the primitive supplies equality
+`c_t=c_s`, not a gauge source/action map. The Record-axiom hygiene companion is
+the closest same-claim echo; it confirms only that these two calculations are
+unchanged by the Record premise update. Neither echo retires a mechanism that
+could make `omega` anticommuting or make the displayed eta signature
+orientation-dependent. The broader effective-action route identified in N7
+therefore remains open rather than being hidden by this no-go.
+
+**N1-N8 status:** `PASS` for the route-specific two-mechanism negative
+boundary. A global anisotropic-action or spacetime-emergence no-go remains
+forbidden.
 
 ## Runner Result
 

@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""Scratch Route-B construction: same-code six-port admission candidates.
+"""Cycle716: same-code six-port admission candidates.
 
-This runner is deliberately not a numbered/package surface.  It asks a narrow
-constructive question on the Cycle713/714 physical-M2 lineage:
+This bounded runner asks a narrow constructive question on the Cycle713/714 physical-M2 lineage:
 
 * can all six seam-opportunity bits incident on one M64 cell be produced in one
   shared physical code block;
@@ -40,9 +39,59 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
+AUDIT_TIMEOUT_SEC = 300
+NOTE_PATH = "docs/SAME_CODE_SIX_PORT_ADMISSION_CYCLE716_BOUNDED_CONSTRUCTION_NOTE_2026-07-26.md"
+AUDIT_INPUT_PATHS = (
+    "docs/SAME_CODE_SIX_PORT_ADMISSION_CYCLE716_BOUNDED_CONSTRUCTION_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/finite_proper_cubic_admission_table_discriminator_2026_07_23.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle716_same_code_six_port_admission_2026_07_26.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+)
+DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
+
 import finite_proper_cubic_admission_table_discriminator_2026_07_23 as DISC
 import frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26 as C712
 import frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26 as C713
+import frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26 as C714
 
 
 TOL = 3e-10
@@ -946,6 +995,7 @@ def json_default(value):
 
 
 def main() -> int:
+    provenance = C714.provenance_certificate(AUDIT_INPUT_PATHS, __file__)
     candidate = candidate_certificate()
     seam = seam_instrument_certificate()
     free = one_particle_certificate()
@@ -955,6 +1005,12 @@ def main() -> int:
         for law in ("unique_quorum", "odd_shells")
     }
     checks = {
+        "source_closure": provenance["baseline_is_ancestor"]
+        and provenance["declared_path_failures"] == 0
+        and provenance["duplicate_declared_paths"] == 0
+        and not provenance["missing_transitive_scripts"]
+        and not provenance["missing_dynamic_scripts"]
+        and not provenance["untracked_inputs"],
         "candidate_unique": candidate["unique_quorum"]["all_64_equation_failures"] == 0
         and candidate["unique_quorum"]["all_64_inverse_failures"] == 0
         and candidate["unique_quorum"]["all_64_work_cleanup_failures"] == 0
@@ -1017,7 +1073,10 @@ def main() -> int:
     report = {
         "authority": "none",
         "audit": "unset",
-        "status": "scratch constructive route; not packaged",
+        "cycle": 716,
+        "status": "bounded constructive comparison",
+        "declared_inputs": AUDIT_INPUT_PATHS,
+        "provenance": provenance,
         "candidate_laws": candidate,
         "six_seam_instrument": seam,
         "free_contact_mass": free,
@@ -1054,8 +1113,8 @@ def main() -> int:
         ),
     }
     print(json.dumps(report, indent=2, sort_keys=True, default=json_default))
-    print("SCRATCH_ROUTE_B_SAME_CODE_STAR_ADMISSION_PASS" if report["pass"]
-          else "SCRATCH_ROUTE_B_SAME_CODE_STAR_ADMISSION_INCOMPLETE")
+    print("CYCLE716_SAME_CODE_SIX_PORT_ADMISSION_PASS" if report["pass"]
+          else "CYCLE716_SAME_CODE_SIX_PORT_ADMISSION_INCOMPLETE")
     return 0 if report["pass"] else 1
 
 

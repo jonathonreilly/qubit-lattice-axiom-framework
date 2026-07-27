@@ -1,4 +1,4 @@
-# Scratch Route B: same-code six-port admission construction
+# Cycle 716: same-code six-port admission bounded construction
 
 Date: 2026-07-26
 
@@ -6,10 +6,10 @@ Authority: none
 
 Audit: unset
 
-Status: scratch constructive evidence; not a numbered cycle and not packaged
+Status: bounded constructive comparison
 
 Runner:
-[`scripts/scratch_route_b_same_code_star_admission_2026_07_26.py`](../../../../scripts/scratch_route_b_same_code_star_admission_2026_07_26.py)
+[`scripts/frontier_cycle716_same_code_six_port_admission_2026_07_26.py`](../scripts/frontier_cycle716_same_code_six_port_admission_2026_07_26.py)
 
 ## Question
 

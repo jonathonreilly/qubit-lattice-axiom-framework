@@ -156,10 +156,7 @@ the recurrent many-bank physical compiler and creates no axiom pressure.
 
 This is the strongest surviving route in the Cycle-715 tournament because it
 uses the actual Cycle-713/714 same-code matter instrument, preserves the mass
-fixture, and routes the complete two-star word.  The independent scan/capsule
-route was falsified beyond its frozen two-lap horizon: a DONE capsule rearmed
-when it revisited the recorded address and emitted a spurious packet.  Its
-honest surviving result is a one-lap first-blank scanner.  The six-port
-admission construction is packaged separately as Cycle 716.  These are
-route-specific dispositions, not a no-go, minimum-content, shared-obstruction,
-or axiom-pressure result.
+fixture, and routes the complete two-star word.  The six-port admission
+construction is packaged separately as Cycle 716.  Other exploratory routes
+are not packaged here and carry no live claim.  This disposition is not a
+no-go, minimum-content, shared-obstruction, or axiom-pressure result.

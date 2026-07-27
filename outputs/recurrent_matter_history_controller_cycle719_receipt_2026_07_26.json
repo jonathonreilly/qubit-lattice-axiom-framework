@@ -1,0 +1,95 @@
+{
+  "cycle": 719,
+  "date": "2026-07-26",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "CYCLE719_RECURRENT_MATTER_HISTORY_CONTROLLER_PASS",
+  "checks": {
+    "cold_runners_passed": 7,
+    "cold_runners_failed": 0,
+    "primary_named_checks_passed": 14,
+    "primary_named_checks_failed": 0,
+    "independent_named_checks_passed": 8,
+    "independent_named_checks_failed": 0,
+    "bounded_partial_support_runners": 2
+  },
+  "result": {
+    "cycle713_origin0_branches_actual_compiled": 6,
+    "matter_word_gates": 92,
+    "controller_semantic_gates_per_H": 61562,
+    "controller_H_applications_per_orbit": 130,
+    "controller_semantic_gate_applications_per_branch": 8003060,
+    "compiled_host_equality_failures": 0,
+    "compiled_inverse_failures": 0,
+    "compiled_register_return_failures": 0,
+    "compiled_packet_deletion_data_bit_differences": 35,
+    "compiled_finalizer_deletion_data_bit_differences": 3,
+    "held_two_event_origins": 12,
+    "held_five_maximum_joint_residual": 1.2564943544027162e-15,
+    "held_24_maximum_joint_residual": 4.087754328527302e-15,
+    "held_24_inverse_residual": 5.826645898322889e-16,
+    "held_24_maximum_support": 144,
+    "held_24_packets": 24,
+    "independent_cycle713_columns": 4096,
+    "independent_cycle713_maximum_EG_residual": 8.121767085755588e-16,
+    "source_pointer_M2": [-8, -1, 1],
+    "endpoint_pointer_M2": [-8, -1, 1],
+    "source_cap_physical_primitives": 1400,
+    "source_cap_routed_nearest_neighbor_gates": 17798,
+    "one_H_physical_primitives": 740226,
+    "one_H_routed_nearest_neighbor_gates": 13315466,
+    "full_G_counted_physical_primitives": 96230780,
+    "full_G_counted_routed_nearest_neighbor_gates": 1731028378,
+    "maximum_route_distance": 45,
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "route_failures": 0,
+    "passive_controller_coordinate_group_failures": 0
+  },
+  "boundary": {
+    "positive_scope": "same-chart Cycle713 matter endpoint to fixed recurrent H controller, with actual compiled H^130 on all six first-event branches and proven-equal algebraic recurrence through 24 packets",
+    "fixed_supplies": "unique source token, finite oriented program ring and source boundary, clean bank/link/route/syndrome genesis, BINDER/ACTUAL/ADMISS/LAW, and fixed Q-before-R macro order",
+    "not_derived": "compiled H execution on every later history branch, active controller-content covariance, local installation of the diagnostic refusal circuit, autonomous genesis, positive-density multi-source arbitration, renewal, objective admission, inaccessible inverse, Record, Born/history, physical time, source/gravity response, or prediction",
+    "joint_transition_is_independent_matter_evidence": false,
+    "cycle713_exhaustive_EG_is_independent_anchor": true,
+    "full_G_route_totals_are_executed_full_state_word": false,
+    "controller_covariance_is_active_program_content_covariance": false,
+    "diagnostic_refusal_is_integrated_enforcement": false,
+    "integer_interval_is_physical_time": false,
+    "reversible_history_is_permanent_Record": false,
+    "axiom_pressure": false
+  },
+  "artifacts": {
+    "note": {
+      "path": "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "42bd820c3233583a4812ed3ca3ac04428786a51813cf20e710b27da2c80f7642"
+    },
+    "primary_runner": {
+      "path": "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+      "sha256": "063103ae1c6bcfc44aff05200bea0c932a50e018b78f2b67ca90feec28c5aac2",
+      "report_sha256": "7356f6e327f02b9591e3cc64c73275298bff978de2fb750390a5f19adef0c067"
+    },
+    "independent_checker": {
+      "path": "scripts/frontier_cycle719_recurrent_matter_history_controller_independent_check_2026_07_27.py",
+      "sha256": "d7fe2ac40dec3ef78247027fdda9afc6baeab752baa080d6ffda8147e91c6088",
+      "report_sha256": "7d97f786facd60a6014cb1e25045fe06c88aff4ad2b13117e9bcc66d21146098"
+    },
+    "support_runners": {
+      "recurrent_bank_sha256": "0175a7597eedbf3b96c29822db31663a7c0a8b3dbc8281bc7e944e1fcd99feea",
+      "physical_route_sha256": "2fccfc7f7de1420ef769f79b1e21d0bfca089f0e2bfea8b012383cb1d6aca140",
+      "source_finalizer_sha256": "70b8e479955217a1bf86fc5b11bdebe0bbe84908086ce441059721f30d4ba807",
+      "local_handshake_sha256": "9b8f873c8598db1def3c6ac3f53ddc67531fb4c1064aab2ef274ef924fe0c8e0",
+      "two_rail_controller_sha256": "951bac58dc0a426a088f0da28a560853a270ac27b6ec74ad6e8ff15f7cfd3b86"
+    },
+    "caches": {
+      "recurrent_bank_sha256": "1f579b9c884b13dcf84a228a6f56ade109bda1b57e3e2695235cb4e456fdd1c6",
+      "physical_route_sha256": "fb34cdf7c5c5ec2a650b9ff3b652bb4f791d0584308c25168e4384d0b3a32c70",
+      "source_finalizer_sha256": "3d8f0ab36da499549c32d75e71eb1a1502dd97914f48f55f3eb6fc8805981755",
+      "local_handshake_sha256": "e44369e99129455cd4b34f084f6d2317dd8ce9d6b4dc520dff19217b09357450",
+      "two_rail_controller_sha256": "1cf7e55accf33ea2e268c94a4bf39da108f5403811bc89e46f8c1d373a13ddea",
+      "primary_sha256": "c5bba46a5a6dad68891d0b7b6656678e9175eb26b9b87e502032e793775cff1f",
+      "independent_sha256": "186b354a3714621a0bc12d39e422cea2c678232caee317700a21e3c8a237ed79"
+    }
+  }
+}

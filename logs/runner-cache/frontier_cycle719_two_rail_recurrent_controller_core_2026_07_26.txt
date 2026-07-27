@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py
-runner_sha256: b945c80dd6cff5ed21bf4446c41f3c99c8dcb78e600a2ee059a1e279aefbb971
-input_fingerprint_sha256: c353a3fffc2843e3cd8d42e16c7091019e7aa7b31aea075711b32d67fb273649
+runner_sha256: 0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4
+input_fingerprint_sha256: 51b97ad5d814bf8e793ce491d31d5fca06bb6735469f4d22cb5a610f34ce5b26
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 31.41
+elapsed_sec: 32.79
 status: ok
 ----- stdout -----
 PASS held_2_5_12_full_orbit :: True

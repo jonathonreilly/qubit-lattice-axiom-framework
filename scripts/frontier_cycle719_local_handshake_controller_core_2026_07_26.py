@@ -20,6 +20,7 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_TIMEOUT_SEC = 300
 AUDIT_INPUT_PATHS = (
     "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
     "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
@@ -59,6 +60,13 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
     "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
     "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
     "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
     "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
     "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",

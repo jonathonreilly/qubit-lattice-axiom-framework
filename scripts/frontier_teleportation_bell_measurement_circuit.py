@@ -33,7 +33,20 @@ from typing import Iterable
 
 import numpy as np
 
-from teleportation_boundary_checks_2026_06_13 import print_boundary_results, teleportation_boundary_check_results
+from teleportation_bell_measurement_boundary_checks_2026_07_27 import (
+    bell_measurement_boundary_check_results,
+    print_boundary_results,
+)
+
+
+AUDIT_INPUT_PATHS = (
+    "scripts/teleportation_bell_measurement_boundary_checks_2026_07_27.py",
+    "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
+    "docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md",
+    "docs/audit/data/ledger/te/teleportation_causal_channel_note.json",
+    "docs/audit/data/ledger/te/teleportation_conclusion_boundary_note.json",
+    "docs/audit/data/ledger/te/teleportation_retained_axis_operator_algebra_closure_note.json",
+)
 
 
 I2 = np.eye(2, dtype=complex)
@@ -577,7 +590,7 @@ def print_summary(
     print("  no matter, mass, charge, energy, object transport, or FTL signaling is claimed")
 
     boundary_ok = print_boundary_results(
-        teleportation_boundary_check_results(Path(__file__).resolve().parents[1])
+        bell_measurement_boundary_check_results(Path(__file__).resolve().parents[1])
     )
 
     return all(pass_checks.values()) and boundary_ok

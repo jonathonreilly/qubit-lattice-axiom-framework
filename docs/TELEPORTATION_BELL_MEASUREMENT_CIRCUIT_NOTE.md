@@ -179,16 +179,41 @@ projector to an ideal logical/taste stabilizer or circuit measurement. The
 remaining gap is physical implementation: deriving or supplying a durable
 native apparatus/gate/readout mechanism with quantified imperfections.
 
-## Downstream Boundary Alignment (2026-06-13)
+## One-Hop Dependency And Boundary Alignment (2026-07-27)
 
-The paired runner now checks the audited downstream teleportation boundary
-stack before accepting the ideal Bell-measurement decomposition. In particular,
-the measurement-record, apparatus-dynamics, retained-axis operator-algebra,
-no-signaling, and conclusion-boundary anchors must already be audited as
-bounded support or audited renaming, alongside the resource and encoding
-anchors used by the planning lane.
+The ideal ingredients used here have the following explicit, scope-pinned
+one-hop suppliers:
 
-This does not turn the ideal circuit into a physical apparatus derivation. It
-only makes the source dependency explicit: the decomposition is a bounded
-logical/taste measurement artifact for ordinary quantum state teleportation,
-with nature-grade closure still held by the parent lane boundary.
+- **Ideal encoded Bell resource.** The retained bounded
+  [RALA theorem](TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md)
+  supplies, in its audited finite-grid algebraic scope, the exact fixed-
+  environment encoded `|Phi+>` resource used by its T8 ideal teleportation
+  identity. This is an algebraic resource on the supplied encoded surface,
+  not a preparation mechanism.
+- **Logical gate or parity-measurement algebra.** The same retained bounded
+  [RALA theorem](TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md)
+  supplies the full retained logical matrix algebra (T1/T2) and the commuting
+  `ZZ`/`XX` Bell projectors (T3). The `CNOT` and `H` matrices in this note are
+  explicit elements of that ideal algebra; no pulse schedule or physical
+  measurement is imported.
+- **Computational readout algebra.** The same retained bounded
+  [RALA theorem](TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md)
+  supplies retained-axis `Z` in the logical algebra (T2), so its two spectral
+  projectors are the ideal computational readout projectors used here. This
+  does not supply a detector or operational taste-only readout apparatus.
+- **Classical record handling.** The retained bounded
+  [causal-channel harness](TELEPORTATION_CAUSAL_CHANNEL_NOTE.md) supplies only
+  positive-latency scheduling, delivery, and duplicate handling for already-
+  created Bell bits. The local matrix calculation in this note fixes the bit
+  convention `(z,x)`; neither source derives durable endogenous record
+  creation.
+
+The paired runner reads the canonical sharded audit rows for those suppliers
+and checks their retained status before accepting the decomposition. It also
+checks the audited
+[teleportation conclusion boundary](TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md),
+which keeps the lane limited to ordinary quantum state teleportation and holds
+nature-grade physical implementation open. Thus the dependency chain closes
+for the stated ideal logical claim only; encoded-resource preparation,
+physical gates or parity meters, detector dynamics, and durable record
+formation remain explicitly outside this note's claim scope.

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_bell_measurement_circuit.py
-runner_sha256: a1a34efce476c6919b200c8d7ec950794a8e229ae9c59d5149b1aacfc163bc8b
+runner_sha256: 63deecbe1fb947f593e7e7808ae45010991d70b8a54815baffd528abed0029ac
+input_fingerprint_sha256: 3402400c7e382991a219a3183aa132eaa79ebe9483d027303d1feed8f26fc0e3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.46
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 TELEPORTATION BELL-MEASUREMENT CIRCUIT/DECOMPOSITION
@@ -69,19 +70,16 @@ Physical assumptions left open:
   no matter, mass, charge, energy, object transport, or FTL signaling is claimed
 
 Downstream boundary checks:
-  downstream teleportation boundary: teleportation_causal_channel_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_measurement_record_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_apparatus_dynamics_closure_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_dynamical_resource_generation_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_resource_fidelity_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_retained_axis_operator_algebra_closure_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_cross_encoding_maps_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_three_register_cross_encoding_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_no_signaling_audit has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_3d_operator_consistent_end_to_end_note has audited bounded/status support: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_conclusion_boundary_note has audited bounded/status support: PASS (effective=audited_renaming, audit=audited_renaming)
-  downstream teleportation boundary: lane remains state-teleportation only with no-transfer boundary: PASS (checked conclusion boundary note)
-  downstream teleportation boundary: finite planning support is not nature-grade closure: PASS (planning closure and nature-grade hold are distinct)
+  Bell-measurement dependency boundary: ideal encoded Bell resource has retained one-hop support: PASS (teleportation_retained_axis_operator_algebra_closure_note: effective=retained_bounded, audit=audited_clean)
+  Bell-measurement dependency boundary: ideal logical gate/parity-measurement algebra has retained one-hop support: PASS (teleportation_retained_axis_operator_algebra_closure_note: effective=retained_bounded, audit=audited_clean)
+  Bell-measurement dependency boundary: ideal computational-readout algebra has retained one-hop support: PASS (teleportation_retained_axis_operator_algebra_closure_note: effective=retained_bounded, audit=audited_clean)
+  Bell-measurement dependency boundary: classical Bell-record handling has retained one-hop support: PASS (teleportation_causal_channel_note: effective=retained_bounded, audit=audited_clean)
+  Bell-measurement dependency boundary: conclusion boundary has audited scope support: PASS (teleportation_conclusion_boundary_note: effective=audited_renaming, audit=audited_renaming)
+  Bell-measurement dependency boundary: source cites retained-axis Bell-resource/gate/parity/readout supplier: PASS (TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md)
+  Bell-measurement dependency boundary: source cites retained classical record-handling supplier: PASS (TELEPORTATION_CAUSAL_CHANNEL_NOTE.md)
+  Bell-measurement dependency boundary: source cites audited conclusion boundary: PASS (TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md)
+  Bell-measurement dependency boundary: lane remains state-teleportation only with no-transfer boundary: PASS (checked conclusion boundary note)
+  Bell-measurement dependency boundary: finite planning support is not nature-grade closure: PASS (planning closure and nature-grade hold are distinct)
 
 ----- stderr -----
 

@@ -53,8 +53,8 @@ docs/audit/
     compute_audit_dispatch_queue.py  # render dispatcher sidecars into audit_dispatch_queue.json
     audit_lint.py                    # validate ledger consistency
     unregistered_runner_bearing_note_baseline.txt
-                                     # controlled: grandfathered runner-bearing
-                                     # notes on excluded paths (see below)
+                                     # controlled: known runner-bearing notes
+                                     # on excluded paths (see below)
 ```
 
 Run `python3 docs/audit/scripts/ledger_io.py --materialize` before directly
@@ -224,23 +224,37 @@ path matches `data/excluded_source_patterns.txt` can never acquire a claim id,
 note hash, runner pin, queue entry, or verdict, whatever `Type:` header its
 author writes. That is correct for documentation, and wrong for a note that
 names a `scripts/*.py` runner — such a note is a runner-gated result the audit
-lane cannot see. `audit_lint.py` reports that combination as an **error**,
-which keeps an excluded directory from becoming a write-only sink for
-runner-gated science. The ordinary repairs are to move the note onto an
+lane cannot see, and an excluded directory that collects them is a write-only
+sink for runner-gated science. `audit_lint.py` reports that combination.
+
+It **reports** it; it does not refuse it. On the commit that introduced the
+detector it finds 398 notes, of which 369 sit under
+`docs/work_history/repo/review_feedback/` and were all added in the seventeen
+days from 2026-07-10 to 2026-07-26 by a lane that is still producing them. An
+error disposition would be red on arrival, red again within hours of any drain,
+and — because `audit_lint.py` is a hard gate in both `scripts/run_pipeline.sh`
+(stage 13, under `set -e`) and `scripts/pre_commit_audit_check.sh` — would stop
+every lane in the repo rather than the one producing the notes. Arming it
+therefore waits on the prior decision about what `docs/work_history/` is for
+and where a runner-gated result belongs, which is an owner call. The ordinary
+repairs, when a specific note is worth registering, are to move it onto an
 auditable `docs/` path, register the exact path in
 `data/never_gate_source_paths.txt`, or drop the runner reference when the note
 is narrative only.
 
-The rule is a ratchet, not a sweep. The population measured when it landed is
-listed in `scripts/unregistered_runner_bearing_note_baseline.txt` and surfaces
-as `unregistered_runner_bearing_note` notices instead of errors, so the backlog
-stays countable and drainable the same way `claim_type_defaulted` does; only a
-path absent from that baseline errors. A baseline line that no longer describes
-an unregistered runner-bearing note surfaces as an
+Two notice categories carry the measurement that decision needs.
+`unregistered_runner_bearing_note` covers the paths listed in
+`scripts/unregistered_runner_bearing_note_baseline.txt` — the population as
+measured when the detector was written.
+`unregistered_runner_bearing_note_unbaselined` covers everything else the
+detector finds, so what the class has grown by is readable straight off a lint
+run; five such notes already existed when the detector landed. A baseline line
+that no longer describes an unregistered runner-bearing note surfaces as an
 `unregistered_runner_bearing_note_baseline_stale` notice and should be pruned.
-Registering the notes in that baseline is a separate owner policy decision
-about what `docs/work_history/` is for; the file records the debt rather than
-settling it.
+Do not add lines to the baseline to quiet a new note: an unlisted note is
+already only a notice, and adding it destroys the growth measurement.
+Registering the notes themselves is the separate owner policy decision; these
+files record the debt rather than settling it.
 
 ### Draining the `claim_type_defaulted` backlog
 

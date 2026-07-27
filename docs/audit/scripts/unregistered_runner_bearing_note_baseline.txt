@@ -1,4 +1,4 @@
-# Grandfathered unregistered runner-bearing notes.
+# Unregistered runner-bearing notes, as measured when the detector was written.
 #
 # audit_lint.py reads this file. One repo-relative path per line. Lines
 # starting with `#` and blank lines are ignored.
@@ -7,13 +7,22 @@
 # acquire a claim id, note hash, runner pin, queue entry, or verdict:
 # seed_audit_ledger.should_gate_node drops the node before claim typing runs.
 # A note that ALSO names a scripts/*.py runner is therefore a runner-gated
-# result the audit lane can never see. audit_lint reports that as an error.
+# result the audit lane can never see.
 #
-# The paths below are the population measured when the rule landed. They are
-# reported as `unregistered_runner_bearing_note` notices instead of errors so
-# the rule is landable without a repo-wide sweep, and so the backlog stays
-# countable and drainable. The rule errors only on paths that are NOT listed
-# here, which is what stops the class from regrowing.
+# audit_lint reports the whole class, both listed and unlisted, as NOTICES. It
+# does not refuse anything. The split exists to make the shape of the class
+# measurable: the paths below are the population as measured when the detector
+# was written, and anything the detector finds outside this list surfaces as an
+# `unregistered_runner_bearing_note_unbaselined` notice -- what the class has
+# grown by since. That is not the same as "new on the landing commit": five
+# such notes already existed when this landed.
+#
+# See the block in audit_lint.py for why the error form was not armed. On the
+# landing commit the detector finds 398 notes, 369 of them under
+# docs/work_history/repo/review_feedback/ and all added in the seventeen days
+# from 2026-07-10 to 2026-07-26 by a lane still producing them, so an error
+# would be a repo-wide stop-work condition; arming it needs the prior owner
+# decision about where a runner-gated result belongs.
 #
 # This list lives beside the scripts rather than in docs/audit/data/ because
 # that directory is restored wholesale from origin/main before a PR lands, so
@@ -26,9 +35,9 @@
 # no longer describes an unregistered runner-bearing note, so stale entries
 # are visible.
 #
-# ADDING a line is not a routine fix. It grandfathers a new runner-gated
-# result out of the audit lane and must be argued for in review; the ordinary
-# repairs are to move the note or to drop the runner reference.
+# Do NOT add a line to silence a new note. Nothing is silenced -- an unlisted
+# note is already only a notice -- and adding it would destroy the growth
+# measurement this file exists to provide.
 #
 # Registering the notes below is a separate owner policy decision about what
 # docs/work_history/ is for. This file records the debt; it does not settle it.
@@ -64,7 +73,6 @@ docs/work_history/repo/backlog/NATURE_BACKLOG_2026-04-10.md
 docs/work_history/repo/review_feedback/ABELIAN_COMPATIBLE_SEED_BELL_MERGE_CYCLE15_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/ACTIVE_CUBIC_SOURCE_RESPONSE_CYCLE211_NOTE_2026-07-16.md
 docs/work_history/repo/review_feedback/ACTUAL_CONTACT_ACTION_SYNDROME_TOURNAMENT_CYCLE285_NOTE_2026-07-17.md
-docs/work_history/repo/review_feedback/ACTUAL_FIVE_PORT_OPEN_RLB_MACROSTEP_AUDIT_CYCLE99_NOTE_2026-07-15.md
 docs/work_history/repo/review_feedback/ACTUAL_HEADER_ROLE_DECODER_PARITY_SELECTION_CYCLE18_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/ADMISSIBILITY_SYMBOL_DEFINABILITY_AND_EXACT_LAW_REFERENCE_CHALLENGE_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/ALL_NINE_SIX_CONTEXT_SHARED_ANCESTRY_CYCLE177_NOTE_2026-07-16.md
@@ -162,7 +170,6 @@ docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE23
 docs/work_history/repo/review_feedback/EXACT_COMPILER_CLOSURE_LEDGER_CYCLE88_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/EXACT_LAW_CONSTITUTIONAL_PLACEMENT_SCHEMA_PROBE_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/EXACT_LAW_IRREDUCIBLE_CONTENT_INDEPENDENCE_TOURNAMENT_NOTE_2026-07-14.md
-docs/work_history/repo/review_feedback/EXACT_PREDICTIVE_SPECIFICATION_TOURNAMENT_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/EXISTENCE_UNIQUENESS_AND_EXACT_LAW_REFERENCE_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/FARRELLY_SHORT_AUXILIARY_MAJORANA_CAR_COMPILER_CYCLE236_NOTE_2026-07-17.md
 docs/work_history/repo/review_feedback/FINAL_M64_PHYSICAL_M2_COMPILER_TOURNAMENT_SYNTHESIS_CYCLE276_NOTE_2026-07-17.md
@@ -183,7 +190,6 @@ docs/work_history/repo/review_feedback/FOUNDATION_ATOM_LEDGER_AND_DEPENDENCY_MAP
 docs/work_history/repo/review_feedback/FOUR_AXIOM_TOE_COMPLETENESS_AND_FINAL_UPDATE_GATE_NOTE_2026-07-13.md
 docs/work_history/repo/review_feedback/FOUR_GENERATOR_PHYSICAL_TABLEAU_ROW_MACHINE_CYCLE149_NOTE_2026-07-15.md
 docs/work_history/repo/review_feedback/FOUR_OPEN_RESERVATION_COMB_CYCLE59_NOTE_2026-07-14.md
-docs/work_history/repo/review_feedback/FOUR_ROW_LATE_GUARD_SOCKET_BOUNDARY_CYCLE137_NOTE_2026-07-15.md
 docs/work_history/repo/review_feedback/FRAGMENT_SAFE_ROLE_REMAP_TYPE_INTEGRATION_CYCLE108_NOTE_2026-07-15.md
 docs/work_history/repo/review_feedback/FRAME_CAGED_LOCAL_MOTIF_CYCLE50_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/FULL_A_BOUNDARY_LAUNCHER_LAST_CYCLE57_NOTE_2026-07-14.md
@@ -240,7 +246,6 @@ docs/work_history/repo/review_feedback/MEASURE_TWICE_CONSTITUTIONAL_DECISION_PAC
 docs/work_history/repo/review_feedback/MEASURE_TWICE_FINAL_MINIMUM_AXIOM_CUT_READINESS_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/MINIMAL_EXCHANGE_ACTION_SELECTION_CYCLE217_NOTE_2026-07-16.md
 docs/work_history/repo/review_feedback/MINIMUM_AXIOM_UPDATE_EXERCISE_SYNTHESIS_AND_CUT_GATE_NOTE_2026-07-14.md
-docs/work_history/repo/review_feedback/MINIMUM_CONSTITUTIONAL_CONTENT_EXHAUSTION_LEDGER_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/MIXED_CYCLE72_GUIDE_REPAIR_CYCLE77_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/MIXED_CYCLE76_CAGED_GUIDE_AUDIT_CYCLE79_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/MIXED_LOCAL_CONTEXT_PHASE_CYCLE65_NOTE_2026-07-14.md
@@ -395,7 +400,6 @@ docs/work_history/repo/review_feedback/SEPARATED_RECURRENT_TUBE_COLLISION_CONTRO
 docs/work_history/repo/review_feedback/SEVEN_BIT_PHYSICAL_ROLE_COMPARATOR_CYCLE75_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/SHARED_ANCESTRY_DUAL_CONTEXT_PERES_MERMIN_CYCLE173_NOTE_2026-07-16.md
 docs/work_history/repo/review_feedback/SHARED_QAB_OPEN_COMMIT_COMB_CONDITIONAL_SCRATCH_NOTE_2026-07-14.md
-docs/work_history/repo/review_feedback/SIGNED_ROW_EGRESS_AND_MEMBERSHIP_SEAM_CYCLE167_NOTE_2026-07-16.md
 docs/work_history/repo/review_feedback/SINGLE_INVARIANT_ACTION_STEELMAN_ATTACK_NOTE_2026-07-14.md
 docs/work_history/repo/review_feedback/SOURCE_RESPONSE_COMMON_CODE_FOLLOWON_SYNTHESIS_CYCLE297_NOTE_2026-07-17.md
 docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md

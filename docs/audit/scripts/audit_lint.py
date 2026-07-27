@@ -1484,12 +1484,27 @@ def main() -> int:
     # runs, so no amount of author diligence registers the result. That makes
     # an excluded directory a write-only sink for runner-gated science.
     #
-    # This is a ratchet, not a sweep. The current population is grandfathered
-    # in unregistered_runner_bearing_note_baseline.txt and reported as a
-    # drainable notice; only a path absent from that baseline is an error. The
-    # baseline lives beside the scripts rather than in docs/audit/data/ because
-    # that directory is restored wholesale from origin/main before a science PR
-    # lands, which would silently revert every drain.
+    # REPORTING ONLY -- deliberately not an error, and that is the reviewed
+    # disposition, not an oversight. Measured on the landing commit, the
+    # detector finds 398 notes, of which 369 sit under
+    # docs/work_history/repo/review_feedback/ and were ALL added in the
+    # seventeen days from 2026-07-10 to 2026-07-26 by a lane still producing
+    # them. An error would therefore be red on arrival and red again within
+    # hours of every drain, and audit_lint is a hard gate in two places
+    # (run_pipeline.sh stage 13 under `set -e`, and pre_commit_audit_check.sh),
+    # so that is a repo-wide stop-work condition with no drain path -- the same
+    # objection that already ruled out erroring on the whole population.
+    # Arming the error needs the prior decision about what
+    # docs/work_history/ is for and where a runner-bearing result belongs;
+    # that decision is the owner's and is not made here. Until then the
+    # baseline split below is the measurement that decision needs: entries in
+    # unregistered_runner_bearing_note_baseline.txt are the population as
+    # measured when the detector was written, and anything the detector finds
+    # outside that list is what the class has grown by since.
+    #
+    # The baseline lives beside the scripts rather than in docs/audit/data/
+    # because that directory is restored wholesale from origin/main before a
+    # science PR lands, which would silently revert every drain.
     if graph and excluded_source_patterns:
         baseline_path = (
             REPO_ROOT
@@ -1531,13 +1546,16 @@ def main() -> int:
                     "drainable by moving the note onto an auditable path"
                 )
             else:
-                errors.append(
+                add_notice(
+                    "unregistered_runner_bearing_note_unbaselined",
                     f"{node_path}: names runner(s) {sorted(set(node_runners))} but matches "
                     "data/excluded_source_patterns.txt, so seed_audit_ledger.should_gate_node "
                     "drops it and the result can never acquire a claim id, note hash, runner "
-                    "pin, queue entry, or verdict. Move the note onto an auditable docs/ path, "
-                    "or register the exact path in docs/audit/data/never_gate_source_paths.txt, "
-                    "or drop the runner reference if the note is narrative only."
+                    "pin, queue entry, or verdict. Not in "
+                    "unregistered_runner_bearing_note_baseline.txt, so it postdates the rule. "
+                    "Move the note onto an auditable docs/ path, or register the exact path in "
+                    "docs/audit/data/never_gate_source_paths.txt, or drop the runner reference "
+                    "if the note is narrative only."
                 )
         for stale in sorted(baseline - live_unregistered):
             add_notice(

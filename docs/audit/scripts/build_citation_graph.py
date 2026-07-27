@@ -132,12 +132,16 @@ RUNNER_SECTION_RE = re.compile(
     re.IGNORECASE | re.MULTILINE,
 )
 # `## Verification` is the dominant house heading for naming a note's runner,
-# but it is deliberately NOT merged into RUNNER_SECTION_RE above: measured over
+# but it is deliberately NOT merged into RUNNER_SECTION_RE above. Measured over
 # the whole docs tree, merging it in place moves five notes off the runner they
-# already resolve to, because a `## Verification` section can precede the
-# `## Artifacts`/`## Runner` section that carries the note's own runner. Tried
-# LAST instead (see extract_runner) it is purely additive: 52 notes gain a
-# runner_path and no note changes the runner it already had.
+# already resolve to: a `## Verification` section that reproduces cited
+# comparator runners preempts a LATER stage of the ladder in extract_runner. In
+# all five measured cases the displaced stage is the final top-of-file
+# single-path fallback, not an `## Artifacts`/`## Runner` section (none of the
+# five has one) -- but the same displacement is available against every stage
+# below RUNNER_SECTION_RE, which is why the ordering, not the corpus, is what
+# the unit tests pin. Tried LAST instead (see extract_runner) it is purely
+# additive: no note changes the runner it already had.
 RUNNER_VERIFICATION_SECTION_RE = re.compile(
     r"^#{2,6}\s+(?:(?:Primary|Key|Audited|New|Source|Validated|Corrected(?:\s+live)?)\s+)?"
     r"Verification\b.*$",
@@ -600,10 +604,26 @@ def extract_runner(body: str, rel_path: str | None = None) -> str | None:
     # Last resort: a `## Verification` section. This runs only after every
     # pattern above has declined, so a note that already resolves through its
     # own runner label or artifact section keeps that runner unchanged.
+    #
+    # A Verification section is a reproduction recipe, not a runner label: it
+    # routinely lists several co-equal runners with no marked primary, and
+    # position in that list carries no authority. Taking the first would pin a
+    # packet note's audit evidence to whichever runner happens to be listed
+    # first -- measured on this corpus, that mispins at least one ledger-backed
+    # packet whose own runner is listed third and whose helper closure is
+    # empty, so the note's real runner would be absent from the audit packet
+    # entirely. Require exactly one distinct runner, matching the uniqueness
+    # rule the adjacent top-of-file fallback already applies.
+    #
+    # Ambiguity is section-local, so an ambiguous section is skipped rather
+    # than treated as a veto: a later singleton section (`## Source
+    # Verification`, say) still resolves. Only a note whose every Verification
+    # section is ambiguous or runnerless leaves `runner_path` unset, which is
+    # the same outcome as before this stage existed.
     for m in RUNNER_VERIFICATION_SECTION_RE.finditer(body):
-        runner = first_runner_path(extract_section(body, m.end()))
-        if runner:
-            return runner
+        section_paths = list(dict.fromkeys(runner_paths(extract_section(body, m.end()))))
+        if len(section_paths) == 1:
+            return section_paths[0]
 
     return None
 

@@ -2717,10 +2717,20 @@ class BuildCitationGraphParserTest(unittest.TestCase):
 
 class VerificationHeadingRunnerCaptureTest(unittest.TestCase):
     """`## Verification` is the dominant house heading for naming a runner,
-    but it must be tried LAST. Measured over the whole docs tree, merging it
-    into RUNNER_SECTION_RE in place moves five notes off the runner they
-    already resolve to; trying it last is purely additive (52 notes gain a
-    runner_path, none changes the one it had)."""
+    but it must be tried LAST and it must decline when ambiguous.
+
+    Ordering: measured over the whole docs tree, merging it into
+    RUNNER_SECTION_RE in place moves five notes off the runner they already
+    resolve to (in every measured case by preempting the final top-of-file
+    single-path fallback). Tried last it is purely additive: 46 notes gain a
+    runner_path and none changes the one it had.
+
+    Ambiguity: a Verification section is a reproduction recipe, not a runner
+    label, and routinely lists several co-equal runners in which position
+    carries no authority. Six corpus sections do; one of them backs a ledger
+    row whose own runner is listed third and whose helper closure is empty, so
+    taking the first would have put the wrong sole runner in that audit
+    packet."""
 
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
@@ -2793,6 +2803,68 @@ class VerificationHeadingRunnerCaptureTest(unittest.TestCase):
             "`scripts/verification_helper.py`\n"
         )
         self.assertEqual(self._extract(body), "scripts/labelled_runner.py")
+
+    def test_verification_never_displaces_the_top_of_file_fallback(self):
+        # This is the shape all five measured corpus regressions actually have:
+        # no Artifacts section anywhere, the note's own runner named once near
+        # the top, and a late Verification section reproducing cited runners.
+        self._runner("own_runner.py")
+        self._runner("cited_comparator.py")
+        body = (
+            "# A note\n\n"
+            "`scripts/own_runner.py`\n\n"
+            + "\n".join(f"filler line {i}" for i in range(120))
+            + "\n\n## Verification\n\n"
+            "Reproduced against `scripts/cited_comparator.py`.\n"
+        )
+        self.assertEqual(self._extract(body), "scripts/own_runner.py")
+
+    def test_ambiguous_verification_section_declines(self):
+        # A Verification section is a reproduction recipe: several co-equal
+        # runners, no marked primary, position carrying no authority. Guessing
+        # the first would mispin the audit packet, so decline instead.
+        self._runner("first_listed.py")
+        self._runner("second_listed.py")
+        self._runner("third_listed.py")
+        body = (
+            "# A packet note\n\n"
+            "## Verification\n\n"
+            "```bash\n"
+            "python3 scripts/first_listed.py\n"
+            "python3 scripts/second_listed.py\n"
+            "python3 scripts/third_listed.py\n"
+            "```\n"
+        )
+        self.assertIsNone(self._extract(body))
+
+    def test_ambiguous_verification_section_does_not_veto_a_later_singleton(self):
+        # Ambiguity is section-local. An earlier reproduction section listing
+        # several co-equal runners must be skipped, not treated as a veto, so a
+        # later section that names exactly one still resolves.
+        self._runner("listed_a.py")
+        self._runner("listed_b.py")
+        self._runner("the_one.py")
+        body = (
+            "# A note\n\n"
+            "## Verification\n\n"
+            "`scripts/listed_a.py` and `scripts/listed_b.py`\n\n"
+            "## Source Verification\n\n"
+            "`scripts/the_one.py`\n"
+        )
+        self.assertEqual(self._extract(body), "scripts/the_one.py")
+
+    def test_verification_section_repeating_one_runner_still_resolves(self):
+        # Declining is about DISTINCT runners, not about line count.
+        self._runner("only_runner.py")
+        body = (
+            "# A note\n\n"
+            "## Verification\n\n"
+            "```bash\n"
+            "python3 scripts/only_runner.py --fast\n"
+            "python3 scripts/only_runner.py --full\n"
+            "```\n"
+        )
+        self.assertEqual(self._extract(body), "scripts/only_runner.py")
 
     def test_verification_section_regex_is_separate_from_runner_section_regex(self):
         m = _import("build_citation_graph")
@@ -5017,8 +5089,14 @@ class UnregisteredRunnerBearingNoteTest(unittest.TestCase):
     note hash, runner pin, queue entry, or verdict — seed_audit_ledger
     .should_gate_node drops the node before claim typing runs. A note that
     ALSO names an existing runner is therefore a runner-gated result the
-    audit lane can never see. The rule is a ratchet: the population measured
-    when it landed is grandfathered as notices, and only unlisted paths error.
+    audit lane can never see.
+
+    The detector REPORTS this class and does not refuse it: the population is
+    dominated by an active producer, and audit_lint is a hard gate for every
+    lane in run_pipeline.sh and pre_commit_audit_check.sh. Baselined paths and
+    paths that postdate the baseline are separate notice categories so the
+    growth rate stays readable; neither is an error, and these tests pin that
+    exit code as the reviewed disposition rather than an accident.
     """
 
     def setUp(self):
@@ -5069,20 +5147,25 @@ class UnregisteredRunnerBearingNoteTest(unittest.TestCase):
             rc = m.main()
         return rc, buf.getvalue()
 
-    def test_new_unregistered_runner_bearing_note_is_an_error(self):
+    def test_unbaselined_note_is_reported_without_failing_the_lint(self):
+        # The growth signal. It must be visible AND must not turn --strict red,
+        # because audit_lint gates every lane and this class has an active
+        # producer; arming it is a separate owner decision.
         self._write_state(node_path=self.NOTE_PATH)
         rc, out = self._run()
-        self.assertEqual(rc, 1, out)
+        self.assertEqual(rc, 0, out)
+        self.assertIn("unregistered_runner_bearing_note_unbaselined", out)
         self.assertIn(self.NOTE_PATH, out)
         self.assertIn("scripts/sunk_result.py", out)
         self.assertIn("can never acquire a claim id", out)
 
-    def test_grandfathered_path_is_a_notice_not_an_error(self):
+    def test_baselined_path_is_the_known_backlog_category(self):
         self.baseline_path.write_text(f"# baseline\n{self.NOTE_PATH}\n", encoding="utf-8")
         self._write_state(node_path=self.NOTE_PATH)
         rc, out = self._run()
         self.assertEqual(rc, 0, out)
         self.assertIn("unregistered_runner_bearing_note", out)
+        self.assertNotIn("unregistered_runner_bearing_note_unbaselined", out)
         self.assertIn(self.NOTE_PATH, out)
 
     def test_note_with_a_ledger_row_does_not_fire(self):

@@ -268,6 +268,29 @@ class ObligationReconciliationRuleTest(unittest.TestCase):
             "nested body", audit_lint.markdown_sections(note)["Exact target"]
         )
 
+    def test_a_list_nested_fence_does_not_suppress_the_heading_after_it(self):
+        # The fence half of the column-0 rule. An indented fence tracked as
+        # top-level stays "open" across the real heading, suppressing it, and
+        # then admits a heading from inside a genuine fence later — silently
+        # comparing the wrong body against the registry.
+        note = ALIGNED_NOTE.replace(
+            "## Exact target", "- item\n  ```\n  sample\n  ```\n\n## Exact target", 1
+        )
+        self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
+        note = ALIGNED_NOTE.replace(
+            "## Exact target",
+            "- item\n  ```\n## Exact target\n\nDerive from the retained framework "
+            "chain whether the widget carrier is the\n`same` physical channel as the "
+            "sprocket readout.\n",
+            1,
+        )
+        self.assertIn("Exact target", audit_lint.markdown_sections(note))
+
+    def test_an_unindented_fence_still_hides_its_headings(self):
+        note = ALIGNED_NOTE + "\n## Appendix\n\n```\n## Exact target\nnot real\n```\n"
+        self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
+        self.assertNotIn("not real", audit_lint.markdown_sections(note)["Exact target"])
+
     def test_a_blockquoted_heading_is_not_a_section(self):
         note = ALIGNED_NOTE + "\n> ## Exact target\n> quoted\n"
         self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())

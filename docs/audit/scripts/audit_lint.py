@@ -574,19 +574,28 @@ def markdown_sections(text: str) -> dict[str, str]:
     paragraph. Getting any of those wrong turns valid Markdown into a
     missing-section or target-mismatch error.
 
-    One deliberate departure from CommonMark: a section heading must be
-    UNINDENTED. CommonMark also allows one to three leading spaces, but an
-    indented ``##`` is likewise how a heading nested in a list item appears, and
-    telling the two apart needs full container parsing -- marker width, content
-    indent, lazy continuation. Getting that wrong is not symmetric. A nested
-    ``  ## Exact target`` accepted as a section claims the name first and leaves
-    the note's real heading ignored as a repeat: a silent, wrong target compared
-    against the registry. A top-level heading indented one to three spaces and
-    missed instead raises ``exact_target_section_missing``, which names the file
-    and the section and is fixed by unindenting it. So the rule takes the loud
-    failure on a style no note in this repository uses, rather than the silent
-    one. An unindented heading is never a lazy continuation in CommonMark, so
-    this also ends any list that precedes it.
+    One deliberate departure from CommonMark: **only column-0 constructs are
+    structural here.** CommonMark also lets a heading or a fence carry one to
+    three leading spaces, but an indented ``##`` or ``` ``` ``` is likewise how
+    a heading or fence nested in a list item appears, and telling the two apart
+    needs full container parsing -- marker width, content indent, lazy
+    continuation. Getting that wrong is not symmetric:
+
+    - an indented construct accepted as structural fails SILENTLY. A
+      list-nested ``  ## Exact target`` claims the name first, so the note's
+      real heading is ignored as a repeat and the wrong text is compared
+      against the registry; a list-nested fence tracked as top-level suppresses
+      the real heading that follows it and then admits a heading from inside a
+      genuine fence later on.
+    - an indented top-level construct treated as prose fails LOUDLY: the
+      section is simply not found, which raises
+      ``exact_target_section_missing`` -- it names the file and the section and
+      is fixed by unindenting.
+
+    So the rule takes the loud failure, on a style no note under ``docs/`` uses.
+    An ATX heading is never a lazy continuation in CommonMark, so an unindented
+    heading still ends any list before it; and a list-nested fence's own content
+    is indented with its item, so its lines cannot be mistaken for headings.
     """
     sections: dict[str, list[str]] = {}
     order: list[str] = []
@@ -594,7 +603,7 @@ def markdown_sections(text: str) -> dict[str, str]:
     fence_char: str | None = None
     fence_len = 0
     for line in text.splitlines():
-        fence_match = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)$", line)
+        fence_match = re.match(r"^(`{3,}|~{3,})(.*)$", line)
         delimiter = False
         if fence_match:
             run, rest = fence_match.group(1), fence_match.group(2)

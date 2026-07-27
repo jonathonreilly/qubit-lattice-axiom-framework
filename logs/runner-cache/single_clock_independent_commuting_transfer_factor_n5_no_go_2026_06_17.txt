@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/single_clock_independent_commuting_transfer_factor_n5_no_go_2026_06_17.py
-runner_sha256: 488ee8c76d2e5d1b2c7cfb065718a74d4978052480807fd529b7d31156f0b52c
+runner_sha256: 733bcf9e398fe1f44015f02af01450396547daf996d05d63caa6db8d2671bd8d
+input_fingerprint_sha256: de2fc2e4a153b344366218c95643ce96570780d7b23028667cba41e54024063e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.65
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 single-clock independent commuting transfer factor N5 no-go

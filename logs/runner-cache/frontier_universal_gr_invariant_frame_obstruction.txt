@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_universal_gr_invariant_frame_obstruction.py
-runner_sha256: f86c06503f6343510dfea4552dc1c0a19dca30206311250ecb19ecf44f8b667a
+runner_sha256: 1a0fb5fc1f01e85085fde3a7a2fd38dd56fc769be56b521b9dc587af5b0e1895
+input_fingerprint_sha256: 35cf3dd813e1489040ab774293998209a695cfd8789723286ff2a1bbcdb33b24
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 UNIVERSAL GR INVARIANT FRAME OBSTRUCTION AUDIT

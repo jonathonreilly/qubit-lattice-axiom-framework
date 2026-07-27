@@ -14,6 +14,9 @@ from scipy.optimize import minimize
 
 from frontier_sigma_hier_uniqueness_theorem import T_M, T_DELTA, T_Q
 
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_sigma_hier_uniqueness_theorem.py",
+)
 
 PASS = 0
 FAIL = 0

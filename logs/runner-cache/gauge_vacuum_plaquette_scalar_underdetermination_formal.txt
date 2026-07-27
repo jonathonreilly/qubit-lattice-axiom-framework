@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_vacuum_plaquette_scalar_underdetermination_formal.py
-runner_sha256: 823df5aacc3b8dfeea44a523b6a6c6fe66024f1a1218dc0252e9b0c6c76008bb
+runner_sha256: e286db774fcd2892692bf8c9b97ba16ca945ee10fa2e73d92d5c91244a7cc2e4
+input_fingerprint_sha256: c1125a04a642a31ebfbd41222e5325338ef4ef7c5c8712e2fe7379b37ac0055a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================================

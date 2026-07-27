@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py
-runner_sha256: 0fb3e3addbbe11fb4cdb0624dd6f2dfa78134cadc5763cfa95b0a3f27f085997
-input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
+runner_sha256: 7c2967541be615662307e73966d73a1b6c99db1616f29b366efc3ac8d25b00a3
+input_fingerprint_sha256: fa9821efd403d91b81b25ad4db8a5051aac1c26bbe59a5d343725bedaddf99c2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.72
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 ========================================================================================

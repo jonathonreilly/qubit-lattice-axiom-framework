@@ -99,6 +99,10 @@ from __future__ import annotations
 # ceiling is too tight under concurrency contention; see
 # `docs/audit/RUNNER_CACHE_POLICY.md`.
 AUDIT_TIMEOUT_SEC = 1800
+AUDIT_INPUT_PATHS = (
+    "scripts/ALT_CONNECTIVITY_FAMILY_SIGN_SWEEP.py",
+    "scripts/gate_b_no_restore_farfield.py",
+)
 
 import math
 import os

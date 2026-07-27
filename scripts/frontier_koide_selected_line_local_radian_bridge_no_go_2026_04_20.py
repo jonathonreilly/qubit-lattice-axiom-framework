@@ -29,6 +29,10 @@ from scipy.optimize import brentq
 
 from frontier_higgs_dressed_propagator_v1 import H3
 
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_higgs_dressed_propagator_v1.py",
+)
+
 PASS = 0
 FAIL = 0
 

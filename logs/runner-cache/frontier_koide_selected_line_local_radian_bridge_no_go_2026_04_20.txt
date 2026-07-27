@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_selected_line_local_radian_bridge_no_go_2026_04_20.py
-runner_sha256: 5cd50df1ec42b1a50632495b69cbd89d7b2e39e4e38694a4b0a7fb9a8686004c
+runner_sha256: 11bcd513df316fa45d8abe452e436ec163741156cb12938a17b965b05fa5d08d
+input_fingerprint_sha256: 3a080ea7ae56b6097a13e2daafd2fcc842aa52620dad5f030dd1115f8d2fef03
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 ========================================================================

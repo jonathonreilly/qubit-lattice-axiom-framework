@@ -21,7 +21,14 @@ import numpy as np
 from frontier_quark_route2_exact_readout_map import restricted_readout_data
 from n5_resolution_certificate import emit_n5_resolution_certificate
 
-AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+AUDIT_INPUT_PATHS = (
+    "scripts/n5_resolution_certificate.py",
+    "scripts/_frontier_loader.py",
+    "scripts/frontier_quark_endpoint_readout_constraints.py",
+    "scripts/frontier_quark_route2_exact_readout_map.py",
+    "scripts/frontier_same_source_metric_ansatz_scan.py",
+    "scripts/frontier_tensor_support_center_excess_law.py",
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]

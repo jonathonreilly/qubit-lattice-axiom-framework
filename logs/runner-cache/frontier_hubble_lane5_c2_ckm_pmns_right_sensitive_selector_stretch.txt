@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hubble_lane5_c2_ckm_pmns_right_sensitive_selector_stretch.py
-runner_sha256: 78cb5efd1b6f4a08f465583aa38a6d0de687b34a1f5ad91d3ecc00e332e35433
+runner_sha256: 663c1fc3e151be940a3af35575e71b089c7b84f216bfbcc546f1673b30c71d26
+input_fingerprint_sha256: 73876f1eff2b516be789cea423fb7041c3eb8b86f2c9639acf1e52e69cb984a9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 ========================================================================================

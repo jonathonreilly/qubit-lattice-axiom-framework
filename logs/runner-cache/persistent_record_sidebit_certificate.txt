@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/persistent_record_sidebit_certificate.py
-runner_sha256: 8c4fdfcf0f21afc27cbaedea87acb13142df65a7921a3b7c676af1bd98a7cb23
+runner_sha256: 90cdef20350c7f56c50f645bd08fcccd3ca06c3af527d87666b578eff695ed12
 input_fingerprint_sha256: fa09d02c5950844038173b3b54e2f42c77f281d733262b00d00c5608fbbe87be
 timeout_sec: 480
 exit_code: 0
-elapsed_sec: 58.15
+elapsed_sec: 50.55
 status: ok
 ----- stdout -----
 CHILD scripts/persistent_record_overlap_kernel.py --side-bit --seeds 2 --gamma 1.0 --n-layers 8,12,18 exit=0
@@ -68,10 +68,10 @@ Fit summary
 
 per_element: computed every path-amplitude contribution entering the persistent record and side-marker states
 per_site: computed all generated DAG nodes for matched N=8,12,18 with two deterministic seeds
-per_mode: computed node, base trace/soft, and side-bit trace/soft modes at gamma=1.0
-per_block: computed paired overlap and matched-comparison blocks; implementation_evidence=True
+per_mode: computed node, base trace/soft, and side-bit trace/soft modes at gamma=1.0; N=8: node=0.7971, base_trace=0.8317, base_soft=0.8672, side_trace=0.8323, side_soft=0.8644; N=12: node=0.5128, base_trace=0.5349, base_soft=0.6099, side_trace=0.5284, side_soft=0.5698; N=18: node=0.7121, base_trace=0.7511, base_soft=0.7314, side_trace=0.7699, side_soft=0.7287
+per_block: computed paired overlap and matched-comparison blocks; soft_improves_N12_N18=True; node_remains_lower_N8_N12_N18=True; trace_not_uniform_N12_N18=True; implementation_evidence=True
 lattice_wide: checked and not executed — the claim is bounded to the matched N=8,12,18 DAG slice, not an asymptotic graph family
-CERTIFICATE execution_ok=True implementation_ok=True
+CERTIFICATE execution_ok=True implementation_ok=True comparison_ok=True
 
 ----- stderr -----
 

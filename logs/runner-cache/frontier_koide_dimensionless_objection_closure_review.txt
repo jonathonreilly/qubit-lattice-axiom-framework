@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_dimensionless_objection_closure_review.py
-runner_sha256: fff466e9e8fdd6806084501067cfe5a25ba8dcb383aad69b406959317049a479
+runner_sha256: 8c1b23802eca2d747822ede7b0aa7683a36b618552653680b467c39474a18734
+input_fingerprint_sha256: 2f482ccfe3853a33fbb6c8dc41647b963816e75f993d247629c52c4e60b305e3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -65,19 +66,21 @@ Part 5: closure no-go verdict
   [PASS] [A] full dimensionless closure is not forced by the finite algebra
 
 ----------------------------------------------------------------------------------------
-Part 6: regenerated audit metadata
+Part 6: tracked source/context provenance
 ----------------------------------------------------------------------------------------
-  audit metadata unavailable before pipeline
+  [PASS] [A] canonical claim shard path is the exact declared input  (docs/audit/data/ledger/ko/koide_dimensionless_note_2026-04-24.json)
+  [PASS] [A] canonical context shard identity matches the source claim  (koide_dimensionless_note_2026-04-24)
+  audit verdict/status fields are intentionally neither interpreted nor used as science gates
 
 ========================================================================================
-SUMMARY: PASS=30 FAIL=0
-PASSED: 30/30
+SUMMARY: PASS=32 FAIL=0
+PASSED: 32/32
 ========================================================================================
 per_element: checked — exact rational counterexamples vary Q or delta while preserving the named local inputs; aggregate FAIL=0.
 per_site: checked — the finite three-component background and selected-line carriers were evaluated as separate local witnesses; aggregate FAIL=0.
 per_mode: checked — traceless-Z and ambient-spectator directions independently move Q and delta; aggregate FAIL=0.
 per_block: checked — the combined countermodel block has neither Q=2/3 nor delta=eta_APS forced by the finite algebra; aggregate FAIL=0.
-lattice_wide: checked and not executed — this dimensionless finite-algebra claim supplies no lattice lift; the executed countermodels remain distinct with PASS=30, FAIL=0.
+lattice_wide: checked and not executed — this dimensionless finite-algebra claim supplies no lattice lift; the executed countermodels remain distinct with PASS=32, FAIL=0.
 KOIDE_DIMENSIONLESS_COUNTERMODEL_NOGO=TRUE
 Q_DIMENSIONLESS_OBJECTION_CLOSES_Q=FALSE
 DELTA_DIMENSIONLESS_OBJECTION_CLOSES_DELTA=FALSE

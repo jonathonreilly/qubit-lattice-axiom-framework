@@ -39,6 +39,8 @@ from scipy import sparse
 from scipy.sparse.linalg import expm_multiply, spsolve
 from scipy.optimize import curve_fit
 
+AUDIT_TIMEOUT_SEC = 480
+
 
 # ── Physics parameters ──────────────────────────────────────────────────
 MASS = 0.30
@@ -249,7 +251,7 @@ def continuum_extrapolation(L_vals, alpha_vals, alpha_errs=None):
     return results
 
 
-def main():
+def main() -> int:
     print("=" * 90)
     print("FINITE-L WILSON TWO-BODY DISTANCE-LAW TABLE + EXTRAPOLATION DIAGNOSTIC")
     print("=" * 90)
@@ -467,7 +469,38 @@ def main():
 
     print()
     print(f"Total runtime: {total_elapsed:.0f}s")
+    finite_rows_ok = (
+        set(alphas) == set(lattice_sides)
+        and all(
+            np.isfinite(alphas[side][0])
+            and np.isfinite(alphas[side][1])
+            and alphas[side][2] > 0.95
+            for side in lattice_sides
+        )
+    )
+    print(
+        "per_element: computed each finite-separation acceleration sample "
+        "used by the six log-log fits"
+    )
+    print(
+        "per_site: computed every site on each declared open-Wilson grid "
+        "with L=12,15,18,20,22,25"
+    )
+    print(
+        "per_mode: computed the finite-L distance exponent and fit quality "
+        "for each declared grid"
+    )
+    print(
+        f"per_block: computed {len(alphas)}/{len(lattice_sides)} finite-L "
+        f"blocks; all_fit_r2_above_0.95={finite_rows_ok}"
+    )
+    print(
+        "lattice_wide: checked and not executed — the extrapolation models "
+        "are diagnostic readouts, not an asymptotic continuum certificate"
+    )
+    print(f"CERTIFICATE finite_rows_ok={finite_rows_ok}")
+    return 0 if finite_rows_ok else 1
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

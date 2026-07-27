@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.py
-runner_sha256: bcce9283b573900c63d2288ee8823138d045ffa54f824929ec4f56baa81b8afc
+runner_sha256: 795d29396a2801cc0cc953bf21c978939c9ae63487937e1fb47535a0059408a3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.66
+elapsed_sec: 1.01
 status: ok
 ----- stdout -----
 ========================================================================
@@ -24,7 +24,7 @@ The parent's explicit disavowal of tau_phys = tau_b,min is preserved.
 
 ========================================================================
   PASS H1.1 parent note exists at canonical path :: path=docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md
-  PASS H1.2 parent note content sha256 matches current canonical hash :: observed=5ed33df184be15fff3b1847497c16fc22e2948a64fb996aace768651c8b57f5d, expected=5ed33df184be15fff3b1847497c16fc22e2948a64fb996aace768651c8b57f5d
+  PASS H1.2 parent note content sha256 matches current canonical hash :: observed=437c7445df083c750787babacc5186e15bf248b06e3d7ea86bd036a53b4ee9f9, expected=437c7445df083c750787babacc5186e15bf248b06e3d7ea86bd036a53b4ee9f9
 
 ========================================================================
   PASS H2.1 parent runner exists at canonical path :: path=scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py
@@ -54,8 +54,7 @@ The parent's explicit disavowal of tau_phys = tau_b,min is preserved.
   PASS H4.10 ledger row deps includes both declared upstream rows (nonrealization and stabilization) :: observed deps=['dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization_note_2026-04-18', 'dm_selector_threshold_stabilization_support_theorem_note_2026-04-21']; expected to include all of ['dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization_note_2026-04-18', 'dm_selector_threshold_stabilization_support_theorem_note_2026-04-21']
 
 ------------------------------------------------------------------------
-FINAL TALLY: 22 PASS / 0 FAIL  (elapsed 0.61 s)
+FINAL TALLY: 22 PASS / 0 FAIL  (elapsed 1.01 s)
 ------------------------------------------------------------------------
 
 ----- stderr -----
-

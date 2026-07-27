@@ -216,14 +216,13 @@ cycle evaluated.
 ### §3.1 Note-hash caveat (honest reporting)
 
 The current parent note-hash
-(`5ed33df184be15fff3b1847497c16fc22e2948a64fb996aace768651c8b57f5d`)
+(`437c7445df083c750787babacc5186e15bf248b06e3d7ea86bd036a53b4ee9f9`)
 differs from `previous_audits[1].archived_for_note_hash`
 (`27974cf3d96605b26780884d27790446e927cdb5282711864c3e1b895b8cd745`).
-This difference reflects a 2026-05-25 expansion of the parent prose
-that **sharpened the open-gate disavowal** and **added concrete
-recovered-bank parameter tables, strict numerical margins, and an
-explicit closing-the-load-bearing-algebraic-chain summary** — without
-introducing any new claim, new admitted-context input, or new
+This difference reflects a 2026-05-25 expansion of the parent prose and a
+2026-07-26 derivation-certificate repair. Together they **sharpen the
+open-gate disavowal** and **display the complete finite-bank certificate** —
+without introducing any new claim, new admitted-context input, or new
 promotion of the open-gate row.
 
 The structural diff between the prior cross-confirmed note hash and
@@ -248,6 +247,13 @@ exactly:
 - the closing four-line algebraic-chain summary
   (`tau_b(i) = log(1+b_i) => ... => argmin V_tau_b,min = {0}`)
   was added.
+- on 2026-07-26, the explicit `Type: open_gate` author hint and a
+  load-bearing derivation certificate were added; the certificate records
+  monotonicity, all four positive breakpoint margins, both positive window
+  margins, every competitor's strict middle-branch inequalities, and all four
+  positive selector gaps. It also names the two upstream dependencies and
+  states that no observed threshold, fitted selector, or physical threshold
+  law is used.
 
 All of these are prose-side sharpenings of the same open-gate claim
 that the 2026-05-05 cross-confirmed audit cycle evaluated. None of
@@ -264,8 +270,8 @@ audit-irrelevant. It records, narrowly and verifiably, that:
 
 - the four-fact algebraic chain is unchanged;
 - the runner script and its PASS count are unchanged;
-- the open-gate disavowal is preserved (and was made more explicit
-  in the 2026-05-25 expansion).
+- the open-gate disavowal is preserved (and was made more explicit in the
+  2026-05-25 expansion and the 2026-07-26 derivation certificate).
 
 ---
 
@@ -290,8 +296,7 @@ Block plan (one check per `record(...)` call):
 
 - Block §H1.1: parent note path exists on the working tree.
 - Block §H1.2: parent note content hash equals the canonical hash
-  observed on origin/main as the current `note_hash` (acknowledges
-  the §3.1 note-hash change).
+  of the repaired source note (acknowledges the §3.1 note-hash changes).
 - Block §H2.1: parent runner path exists on the working tree.
 - Block §H2.2: parent runner content hash equals the canonical hash
   observed in `previous_audits[1].audit_state_snapshot.runner_hash`
@@ -371,7 +376,8 @@ This companion explicitly does not:
   that disavowal; this companion preserves it as well);
 - assert that the prior clean verdict must be reused at
   the criticality-bumped re-evaluation;
-- assert that the 2026-05-25 prose expansion is audit-irrelevant
+- assert that the 2026-05-25 prose expansion or the 2026-07-26
+  derivation-certificate repair is audit-irrelevant
   (later independent audit handling decides whether the prose-side sharpening calls for a
   fresh per-row read or whether the prior runner-hash-invariant
   verdict can carry forward at the current criticality bucket);

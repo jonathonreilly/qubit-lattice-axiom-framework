@@ -1,6 +1,7 @@
 # DM Selector First-Shoulder-Exit Threshold Support Note
 
 **Date:** 2026-04-21  
+**Type:** open_gate
 **Status:** exact support theorem on the open DM selector gate
 **Primary runner:** `scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py`
 
@@ -199,6 +200,75 @@ tau_b(i) = log(1+b_i)
   => tau_star < tau_b,min < tau_zero(next)
   => argmin_i V_tau_b,min(H_i) = {0}.
 ```
+
+## Load-bearing derivation certificate
+
+This section makes the preceding finite-bank argument explicit enough to
+audit without promoting the open gate. Its only non-elementary inputs are the
+already named upstream surfaces:
+
+- the recovered bank, common positive comparison window, inverse-eigenvalue
+  triples, and exact piecewise formula for `V_tau` from
+  [`DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md`](DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md);
+- the stabilization endpoints `tau_star` and `tau_zero(next)` from
+  [`DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md`](DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md).
+
+No observed threshold, fitted selector, or physical threshold law is used.
+The word “preferred” labels recovered-bank lift `0`; it is not fed to the
+minimization. The runner evaluates all five lifts and then computes the
+minimizer.
+
+First, for every bank entry `b_i > -1`,
+
+```text
+d log(1+b_i) / d b_i = 1 / (1+b_i) > 0.
+```
+
+Thus `argmin_i tau_b(i) = argmin_i b_i`. The finite-bank margins relative to
+lift `0` are
+
+```text
+i     b_i-b_0             tau_b(i)-tau_b(0)
+1     0.033338613719324   0.028345654524497
+2     0.034525578231007   0.029340189514480
+3     0.027178841031985   0.023168552718445
+4     0.014583618720130   0.012498478202817
+```
+
+Every entry is strictly positive, so the minimum is unique and occurs at lift
+`0`. Second, direct subtraction from the imported stabilization endpoints
+gives
+
+```text
+tau_b(0) - tau_star       = 0.016398674056082 > 0,
+tau_zero(next) - tau_b(0) = 0.123604890448858 > 0.
+```
+
+Hence `tau_b(0)` is strictly inside the open stabilization window. Finally set
+`c = exp(tau_b(0))-1 = b_0`. Lift `0` is on its `c=b_0` branch boundary. For
+each competitor, the two branch margins and the resulting selector gap are
+
+```text
+j     c-g_j               b_j-c               V(H_j)-V(H_0)
+1     0.044659958504898   0.033338613719324   0.146091270049196
+2     0.044624016464289   0.034525578231007   0.158952429360092
+3     0.047631811375114   0.027178841031985   0.201891138627859
+4     0.052446014441572   0.014583618720130   0.267361742751076
+```
+
+The first two positive columns prove `g_j < c < b_j`, so the middle piece of
+`V_tau(H_j)` applies to every competitor. The positive last column then proves
+
+```text
+V_tau_b,min(H_0) < V_tau_b,min(H_j)  for every j > 0.
+```
+
+Therefore the earliest middle-branch breakpoint is uniquely lift `0`, lies in
+the stabilization window, and makes lift `0` the unique minimizer. The
+smallest strict margins in the three load-bearing comparisons are respectively
+`0.012498478202817`, `0.016398674056082`, and `0.146091270049196`; the paired
+runner recomputes them from the recovered-bank inputs rather than reading the
+displayed decimals.
 
 ## Consequence
 

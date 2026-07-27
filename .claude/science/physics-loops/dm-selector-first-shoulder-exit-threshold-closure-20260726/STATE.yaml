@@ -1,0 +1,38 @@
+loop_slug: dm-selector-first-shoulder-exit-threshold-closure-20260726
+mode: run
+target_status: best-honest-status
+current_goal: >-
+  Make the finite-bank derivation for the first middle-branch breakpoint
+  self-contained and re-auditable at the existing open-gate scope.
+branch: claude/science-fix/dm_selector_first_shoulder_exit_threshold_support_note_2026--f6eb5a95
+base_commit_inspected: c0d9397c6f6e28b902bd011689eca07bdc8edd07
+cycle: 1
+active_route: finite-bank derivation certificate
+approach_family_coverage:
+  - monotonic breakpoint ordering
+  - exhaustive branch-and-gap certificate
+strongest_unresolved_proof_obligation: >-
+  Derive a physical threshold law; deliberately outside this open-gate claim.
+hard_residual: null
+files_touched:
+  - docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md
+  - docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_CRITICALITY_BUMP_HYGIENE_COMPANION_NOTE_2026-06-04.md
+  - scripts/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.py
+  - logs/runner-cache/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.txt
+open_imports:
+  - recovered-bank and exact threshold-volume upstream support
+  - stabilization-window upstream support
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: pass
+pr_status: not_requested
+lock_mode: branch-local supervisor lock (released)
+lock_note: >-
+  Global automation lock was unavailable because its guard path is outside
+  this worktree's permitted filesystem surface.
+next_exact_action: Submit the open-gate source note to independent re-audit.
+stop_condition: Scoped algebraic closure verified and locally reviewed.
+actual_current_surface_status: exact-support
+target_claim_type: open_gate
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

@@ -1426,18 +1426,32 @@ def main() -> int:
                 add_warning("runner_pin_writer_regression", message)
         elif label == runner_pin_gate.PIN_BASELINE_MISSING:
             # Pre-pin snapshot shape on a row the recorded debt does not
-            # cover. The baseline is shrink-only; nothing may enter it.
-            errors.append(
+            # cover. The baseline is shrink-only; nothing may enter it. The
+            # retained-grade split is the same one the note_hash rule above
+            # uses, and for the same reason: a non-retained row in this shape
+            # is re-audit-pending, and erroring on it would make an ordinary
+            # ledger reshard or a newly resolved import closure a repo-wide
+            # stop-work with no drain path.
+            detail_msg = (
                 message + " (runner_pin_baseline.json is shrink-only; a new "
                 "unpinned terminal verdict must be pinned, not grandfathered)"
             )
+            if retained:
+                errors.append(detail_msg)
+            else:
+                add_warning("runner_pin_baseline_missing", detail_msg)
         elif label == runner_pin_gate.PIN_BASELINE_SOURCE_DRIFTED:
             add_warning("runner_pin_absent_and_source_drifted", message)
         elif label == runner_pin_gate.PIN_BASELINE_NEW_DRIFT:
             if retained:
                 errors.append(
                     message + " (RETAINED-grade row: do not move a runner that a "
-                    "live unpinned verdict cites — the audit lane must re-look first)"
+                    "live unpinned verdict cites — the audit lane must re-look first. "
+                    "If the move is intended and already made, record it on this "
+                    "row's runner_pin_baseline.json entry as "
+                    "source_drifted_since_verdict with drift_evidence; that states "
+                    "the debt without asserting a verdict and drops the row to the "
+                    "recorded-drift warning class)"
                 )
             else:
                 add_warning("runner_pin_baseline_new_drift", message)

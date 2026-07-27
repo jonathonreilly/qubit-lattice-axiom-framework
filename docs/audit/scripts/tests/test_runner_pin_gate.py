@@ -99,7 +99,12 @@ class WriterGateTest(unittest.TestCase):
             _row(), _snapshot(runner_hash=None), write_runner=False
         )
         self.assertTrue(
-            any(p.startswith("runner_hash:audited_clean_names_absent_runner") for p in clean),
+            any(
+                p.startswith(
+                    "runner_hash:audited_clean_names_absent_runner_without_presence_pin"
+                )
+                for p in clean
+            ),
             clean,
         )
         conditional = self._problems(
@@ -108,6 +113,44 @@ class WriterGateTest(unittest.TestCase):
             write_runner=False,
         )
         self.assertEqual(conditional, [])
+
+    def test_absent_runner_blocks_every_verdict_without_a_presence_pin(self):
+        """Only the v1-stamped verdicts pin `runner_present`, so only they can
+        legitimately record a null hash for a runner that is missing on disk.
+        `detect_invalidation` never fires on a null legacy hash, so an
+        absent->present move under any other terminal verdict is invisible
+        forever."""
+        for status in sorted(gate.TERMINAL_VERDICTS - gate.PRESENCE_PINNED_VERDICTS):
+            problems = self._problems(
+                _row(audit_status=status), _snapshot(runner_hash=None), write_runner=False
+            )
+            self.assertTrue(
+                any(
+                    p.startswith(f"runner_hash:{status}_names_absent_runner")
+                    for p in problems
+                ),
+                (status, problems),
+            )
+        for status in sorted(gate.PRESENCE_PINNED_VERDICTS):
+            self.assertEqual(
+                self._problems(
+                    _row(audit_status=status),
+                    _snapshot(runner_hash=None),
+                    write_runner=False,
+                ),
+                [],
+                status,
+            )
+
+    def test_presence_pinned_set_matches_the_writer_stamp_set(self):
+        """If `apply_audit.FINGERPRINT_STAMP_VERDICTS` grows or shrinks, the
+        absent-runner exemption above must move with it or the gate starts
+        exempting verdicts that carry no presence pin."""
+        import apply_audit
+
+        self.assertEqual(
+            gate.PRESENCE_PINNED_VERDICTS, apply_audit.FINGERPRINT_STAMP_VERDICTS
+        )
 
     def test_row_without_runner_is_unconstrained(self):
         self.assertEqual(
@@ -233,7 +276,10 @@ class ClassifierTest(unittest.TestCase):
         row = _row(audit_state_snapshot={"deps": []})
         label, detail = self._classify(row, baseline=baseline)
         self.assertEqual(label, gate.PIN_BASELINE_SOURCE_DRIFTED)
-        self.assertIn("re-dispatch", detail)
+        self.assertIn("re-audit candidate", detail)
+        # The finding must not claim the row has been queued: nothing in this
+        # module or in audit_lint writes a dispatcher sidecar.
+        self.assertIn("nothing here queues it", detail)
 
     def test_source_moving_after_the_baseline_is_new_drift(self):
         row = _row(audit_state_snapshot={"deps": []})
@@ -259,7 +305,11 @@ class ClassifierTest(unittest.TestCase):
         moved = self._classify(row, baseline=baseline, sha_map={HELPER_PATH: OTHER_SHA})
         self.assertEqual(moved[0], gate.PIN_BASELINE_NEW_DRIFT)
 
-    def test_helper_set_growth_under_a_recorded_map_is_new_drift_not_silence(self):
+    def test_helper_entering_an_unpinned_closure_is_new_drift(self):
+        """The recorded shas cover only the helpers that existed at baseline
+        time. On an unpinned helper channel nothing watches membership, so a
+        helper that enters the closure later is source the verdict has never
+        been compared against — it must not report as `source unchanged`."""
         baseline = {
             "fixture_row": {
                 "audit_status": "audited_clean",
@@ -271,11 +321,51 @@ class ClassifierTest(unittest.TestCase):
             helper_runner_paths=[HELPER_PATH, OTHER_HELPER_PATH],
             audit_state_snapshot={"runner_hash": None},
         )
-        label, _ = self._classify(row, baseline=baseline)
-        self.assertEqual(label, gate.PIN_GRANDFATHERED)
+        label, detail = self._classify(row, baseline=baseline)
+        self.assertEqual(label, gate.PIN_BASELINE_NEW_DRIFT)
+        self.assertIn(OTHER_HELPER_PATH, detail)
         self.assertEqual(
             gate.helpers_unpinned(row, row["audit_state_snapshot"]), True
         )
+
+    def test_recorded_prior_drift_does_not_mask_a_later_move(self):
+        """A row already flagged `source_drifted_since_verdict` is the worst-off
+        entry in the file. Short-circuiting on the flag would make every further
+        move on exactly those rows report as the softer recorded-drift warning
+        forever, so the rows with known drift would be the only ones the ratchet
+        never protects."""
+        baseline = {
+            "fixture_row": {
+                **self.BASELINE["fixture_row"],
+                "source_drifted_since_verdict": True,
+                "drift_evidence": ["abc1234 2026-07-12 scripts/fixture_runner.py"],
+            }
+        }
+        row = _row(audit_state_snapshot={"deps": []})
+        label, detail = self._classify(
+            row, baseline=baseline, sha_map={RUNNER_PATH: OTHER_SHA}
+        )
+        self.assertEqual(label, gate.PIN_BASELINE_NEW_DRIFT)
+        self.assertIn(RUNNER_PATH, detail)
+
+    def test_recorded_helper_map_with_a_changed_key_set_is_not_a_pin_finding(self):
+        """`detect_invalidation` returns `helper_runner_paths_changed` on any
+        key-set difference, so a recorded map binds the channel even when the
+        closure has moved. Reporting it here would turn an ordinary import edit
+        into a retained-grade hard error with no drain path."""
+        row = _row(
+            helper_runner_paths=[HELPER_PATH, OTHER_HELPER_PATH],
+            audit_state_snapshot=_snapshot(
+                helper_runner_hashes={HELPER_PATH: HELPER_SHA}
+            ),
+        )
+        self.assertFalse(gate.helpers_unpinned(row, row["audit_state_snapshot"]))
+        self.assertIsNone(self._classify(row))
+        empty_map = _row(
+            helper_runner_paths=[HELPER_PATH],
+            audit_state_snapshot=_snapshot(helper_runner_hashes={}),
+        )
+        self.assertFalse(gate.helpers_unpinned(empty_map, empty_map["audit_state_snapshot"]))
 
 
 class BaselineDrainTest(unittest.TestCase):

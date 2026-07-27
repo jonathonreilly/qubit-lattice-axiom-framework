@@ -56,6 +56,15 @@ TERMINAL_VERDICTS = {
     "audited_numerical_match",
 }
 
+# Verdicts whose snapshot receives the v1 blocker fingerprint. Only those
+# snapshots pin `runner_path` / `runner_present`, so only they bind a runner
+# that is ABSENT at audit time: the legacy comparator compares two hashes and
+# skips whenever either side is null, so an absent->present runner under a
+# legacy snapshot produces no invalidation at all (verified directly against
+# `invalidate_stale_audits.detect_invalidation`). Must stay in sync with
+# `apply_audit.FINGERPRINT_STAMP_VERDICTS`; `test_runner_pin_gate` asserts it.
+PRESENCE_PINNED_VERDICTS = {"audited_conditional", "audited_failed"}
+
 _SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 
 
@@ -126,16 +135,25 @@ def runner_unpinned(row: dict, snapshot: dict | None) -> bool:
 
 
 def helpers_unpinned(row: dict, snapshot: dict | None) -> bool:
-    """The row declares helper runners the snapshot does not bind."""
+    """The row declares helper runners the snapshot does not bind.
+
+    A recorded map binds the channel even when its key set no longer matches
+    the current import closure: `detect_invalidation` returns
+    `helper_runner_paths_changed` on ANY key-set difference (including an
+    empty recorded map against a non-empty closure), so the verdict is
+    reopened. Only an absent or non-dict map makes the comparator skip the
+    channel outright. Treating a key-set mismatch as "unpinned" would report a
+    routine closure change — an import added to a helper, with no note edit —
+    as a retained-grade writer regression and hard-fail every commit and
+    pipeline run until an audit-lane re-audit, which is a false positive with
+    no drain path.
+    """
     helpers = declared_helper_paths(row)
     if not helpers:
         return False
     if not isinstance(snapshot, dict):
         return True
-    recorded = snapshot.get("helper_runner_hashes")
-    if not isinstance(recorded, dict):
-        return True
-    return sorted(recorded) != helpers
+    return not isinstance(snapshot.get("helper_runner_hashes"), dict)
 
 
 # ---------------------------------------------------------------------------
@@ -161,13 +179,20 @@ def verdict_pin_problems(row: dict, snapshot: dict) -> list[str]:
             problems.append("runner_hash:missing_key")
         elif not _is_sha256(snapshot.get("runner_hash")):
             # A runner absent from disk cannot be hashed. That is a legitimate
-            # state for a non-clean verdict citing the missing artifact, and an
-            # illegitimate one for `audited_clean`: a clean verdict must not
-            # stand on a runner nobody can read.
+            # state only for a verdict whose snapshot carries the v1 blocker
+            # fingerprint, because `runner_present` binds the absence itself
+            # and a later absent->present move reopens the row. Every other
+            # terminal verdict — clean, renaming, decoration, numerical_match —
+            # would be recorded with a null hash that no comparator can ever
+            # act on: the runner may appear, change, and change again with the
+            # verdict standing. Refuse those rather than mint a permanently
+            # unbindable row.
             if runner_exists(path):
                 problems.append(f"runner_hash:required_sha256_for_present_runner:{path}")
-            elif verdict == "audited_clean":
-                problems.append(f"runner_hash:audited_clean_names_absent_runner:{path}")
+            elif verdict not in PRESENCE_PINNED_VERDICTS:
+                problems.append(
+                    f"runner_hash:{verdict}_names_absent_runner_without_presence_pin:{path}"
+                )
 
     helpers = declared_helper_paths(row)
     recorded = snapshot.get("helper_runner_hashes")
@@ -208,8 +233,17 @@ def load_baseline(path: Path | None = None) -> dict:
     return entries if isinstance(entries, dict) else {}
 
 
-def baseline_source_drift(entry: dict, row: dict) -> list[str]:
-    """Runner sources that have moved away from their recorded baseline sha."""
+def baseline_source_drift(
+    entry: dict, row: dict, *, check_helper_membership: bool = False
+) -> list[str]:
+    """Runner sources that have moved away from their recorded baseline sha.
+
+    `check_helper_membership` additionally reports helpers that have ENTERED
+    or LEFT the row's import closure since the baseline. On an unpinned helper
+    channel nothing watches membership — the recorded shas cover only the
+    helpers that existed when the debt was recorded — so a helper added later
+    is source the verdict has never been compared against.
+    """
     drifted: list[str] = []
     path = entry.get("runner_path")
     if path and entry.get("runner_sha256_at_baseline") != current_sha256(path):
@@ -218,6 +252,11 @@ def baseline_source_drift(entry: dict, row: dict) -> list[str]:
     if isinstance(recorded, dict):
         for helper_path, sha in sorted(recorded.items()):
             if sha != current_sha256(helper_path):
+                drifted.append(helper_path)
+    if check_helper_membership:
+        recorded_helpers = set(recorded or {})
+        for helper_path in declared_helper_paths(row):
+            if helper_path not in recorded_helpers and runner_exists(helper_path):
                 drifted.append(helper_path)
     return drifted
 
@@ -243,7 +282,8 @@ def classify_row(row: dict, baseline: dict) -> tuple[str, str] | None:
 
     A channel counts only when its runner is readable on disk. A pin cannot be
     demanded for source nobody can hash, and a row naming an absent runner is
-    already refused at clean-verdict write time by `verdict_pin_problems`.
+    already refused at verdict-write time by `verdict_pin_problems` unless the
+    verdict carries a v1 presence pin.
     """
     cid = row.get("claim_id")
     if row.get("audit_status") not in TERMINAL_VERDICTS:
@@ -281,19 +321,29 @@ def classify_row(row: dict, baseline: dict) -> tuple[str, str] | None:
             PIN_BASELINE_MISSING,
             f"pre-pin-shaped snapshot outside runner_pin_baseline.json ({detail})",
         )
+    # Movement since the baseline is checked BEFORE the recorded-drift flag.
+    # An entry already flagged `source_drifted_since_verdict` is the worst-off
+    # population in the file; short-circuiting on the flag would make every
+    # later move on those rows report as the old, softer finding forever, so
+    # exactly the rows with known drift would be the only ones the ratchet
+    # never protects.
+    drifted = baseline_source_drift(
+        entry, row, check_helper_membership=unpinned_helpers
+    )
+    if drifted:
+        return (
+            PIN_BASELINE_NEW_DRIFT,
+            f"runner source moved or entered the closure since the baseline while "
+            f"the verdict binds nothing: {', '.join(drifted[:3])}",
+        )
     if entry.get("source_drifted_since_verdict"):
         evidence = entry.get("drift_evidence") or []
         return (
             PIN_BASELINE_SOURCE_DRIFTED,
             f"runner source already moved after the verdict and no pin caught it "
-            f"({detail}; {len(evidence)} recorded commits) — audit-lane re-dispatch target",
-        )
-    drifted = baseline_source_drift(entry, row)
-    if drifted:
-        return (
-            PIN_BASELINE_NEW_DRIFT,
-            f"runner source moved since the baseline while the verdict binds nothing: "
-            f"{', '.join(drifted[:3])}",
+            f"({detail}; {len(evidence)} recorded commits) — re-audit candidate; "
+            "nothing here queues it, and whether to spend audit capacity on it is "
+            "an owner/audit-lane decision",
         )
     return (PIN_GRANDFATHERED, f"unpinned terminal verdict, source unchanged ({detail})")
 

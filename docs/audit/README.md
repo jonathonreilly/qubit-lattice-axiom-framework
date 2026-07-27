@@ -55,6 +55,9 @@ docs/audit/
     unregistered_runner_bearing_note_baseline.txt
                                      # controlled: known runner-bearing notes
                                      # on excluded paths (see below)
+    runner_pin_gate.py               # one runner-pin predicate for writer + lint
+    runner_pin_baseline.json         # controlled: terminal verdicts whose
+                                     # snapshot predates the runner-pin fields
 ```
 
 Run `python3 docs/audit/scripts/ledger_io.py --materialize` before directly
@@ -321,6 +324,59 @@ pre-commit gate stops regrowth. Per row, in order of preference:
    not mechanically reset rows that also contain an independent substantive
    blocker; repair those by re-auditing the actual blocker under the current
    restricted-input process.
+
+7. **A terminal verdict must bind the runner source it names.** A verdict is
+   tied to the runner it cites only through
+   `audit_state_snapshot.runner_hash` and `.helper_runner_hashes`; those are
+   the only fields `invalidate_stale_audits.detect_invalidation` compares, and
+   it skips a channel entirely when the field is null or absent. The writer
+   has recorded `runner_hash` since 2026-05-16 and `helper_runner_hashes`
+   since 2026-07-15, so verdicts issued before those dates leave a channel
+   unbound and their runners can be rewritten with the verdict standing.
+   `scripts/runner_pin_gate.py` is the one predicate both sides execute:
+   `apply_audit.snapshot_audit_state` refuses to write a terminal verdict that
+   leaves a named runner unbound, and `audit_lint.py` classifies the
+   pre-existing population against `scripts/runner_pin_baseline.json`.
+
+   A runner absent from disk may carry a null hash only under
+   `audited_conditional` / `audited_failed`, whose v1 blocker fingerprint pins
+   `runner_present` and therefore binds the absence itself. Every other
+   terminal verdict is refused on an absent runner, because a null legacy hash
+   is a pin no comparator can ever act on.
+
+   `runner_pin_baseline.json` records that legacy population once and is
+   **shrink-only**; tooling never adds to it. Each entry stores the runner's
+   sha *at baseline time* — repository content at the moment the debt was
+   recorded, never what an auditor saw. Nothing is back-filled into a
+   snapshot: writing today's sha into a legacy snapshot would assert the
+   auditor saw current content, which is precisely what the missing pin makes
+   unknowable. Lint dispositions:
+
+   - `runner_pin_grandfathered` (notice) — unpinned, recorded, source
+     unchanged.
+   - `runner_pin_absent_and_source_drifted` (warning) — the runner already
+     moved after the verdict and no pin caught it. These are re-audit
+     candidates; nothing queues them, and spending audit capacity on them is
+     an owner/audit-lane decision.
+   - `runner_pin_baseline_new_drift` — the recorded source moved, or a helper
+     entered an unbound closure, since the baseline. Error on a retained-grade
+     row, warning otherwise.
+   - `runner_pin_writer_regression` — the snapshot had the field and left it
+     empty. Error on a retained-grade row, warning otherwise.
+   - `runner_pin_baseline_missing` — a pre-pin-shaped terminal row the
+     baseline does not cover. Error on a retained-grade row, warning
+     otherwise; the retained/non-retained split is the same one the
+     `note_hash` drift rule uses.
+   - `runner_pin_baseline_stale` (notice) — the entry has drained because the
+     row was re-pinned or reset; drop the line.
+
+   Draining: re-audit re-pins the row and the entry drops out. Do **not** add
+   entries to quiet a finding. When a retained-grade row raises
+   `runner_pin_baseline_new_drift` for a move that is real and already made,
+   record it on that row's existing entry as `source_drifted_since_verdict`
+   with `drift_evidence`; that states the debt without asserting a verdict and
+   drops the row to the recorded-drift warning class. Clearing the debt itself
+   is a re-audit, which only the audit lane can perform.
 
 ## Workflow
 

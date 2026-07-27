@@ -567,20 +567,32 @@ def markdown_sections(text: str) -> dict[str, str]:
     fence closes only on the same character, at least as long as the opener and
     with nothing after it (so ```` ```python ```` inside a block is content, not
     a closer), a backtick opener may not carry a backtick in its info string, an
-    ATX heading may be indented up to three spaces and closed by a trailing run
-    of ``#`` (``## Exact target ##`` names the section ``Exact target``), an
-    indented heading inside an open list item belongs to that item and is not a
-    section, and fenced lines are blanked rather than folded into the enclosing
-    section -- a fence may interrupt a paragraph with no blank line, and the
-    target comparison reads a section's opening paragraph. Getting any of those
-    wrong turns valid Markdown into a missing-section or target-mismatch error.
+    ATX heading may be closed by a trailing run of ``#`` (``## Exact target ##``
+    names the section ``Exact target``), and fenced lines are blanked rather
+    than folded into the enclosing section -- a fence may interrupt a paragraph
+    with no blank line, and the target comparison reads a section's opening
+    paragraph. Getting any of those wrong turns valid Markdown into a
+    missing-section or target-mismatch error.
+
+    One deliberate departure from CommonMark: a section heading must be
+    UNINDENTED. CommonMark also allows one to three leading spaces, but an
+    indented ``##`` is likewise how a heading nested in a list item appears, and
+    telling the two apart needs full container parsing -- marker width, content
+    indent, lazy continuation. Getting that wrong is not symmetric. A nested
+    ``  ## Exact target`` accepted as a section claims the name first and leaves
+    the note's real heading ignored as a repeat: a silent, wrong target compared
+    against the registry. A top-level heading indented one to three spaces and
+    missed instead raises ``exact_target_section_missing``, which names the file
+    and the section and is fixed by unindenting it. So the rule takes the loud
+    failure on a style no note in this repository uses, rather than the silent
+    one. An unindented heading is never a lazy continuation in CommonMark, so
+    this also ends any list that precedes it.
     """
     sections: dict[str, list[str]] = {}
     order: list[str] = []
     current: str | None = None
     fence_char: str | None = None
     fence_len = 0
-    list_open = False
     for line in text.splitlines():
         fence_match = re.match(r"^ {0,3}(`{3,}|~{3,})(.*)$", line)
         delimiter = False
@@ -605,23 +617,11 @@ def markdown_sections(text: str) -> dict[str, str]:
             if current is not None:
                 sections[current].append("")
             continue
-        stripped = line.strip()
-        indent = len(line) - len(line.lstrip(" "))
-        is_marker = bool(
-            stripped
-            and indent <= 3
-            and re.match(r"^([-*+]|\d{1,9}[.)])(\s|$)", stripped)
-        )
-        heading = re.match(r"^ {0,3}##(?!#)\s+(.*?)(?:\s+#+)?\s*$", line)
-        # An indented heading inside an open list item is a heading of that
-        # item, not a section of the note. Accepting it would let
-        # ``- item`` / ``  ## Exact target`` claim the name first and leave the
-        # real top-level heading ignored as a repeat -- a false hard
-        # target_mismatch. Only an unindented heading can open a section while a
-        # list is open. The list state is read before it is updated, so the
-        # marker line itself does not close the list it opens.
-        if heading and heading.group(1).strip() and not (indent and list_open):
-            list_open = False
+        # Unindented only -- see the docstring. This is what keeps a heading
+        # nested in a list item out of the section map without container
+        # parsing: every nested heading is indented by construction.
+        heading = re.match(r"^##(?!#)\s+(.*?)(?:\s+#+)?\s*$", line)
+        if heading and heading.group(1).strip():
             current = heading.group(1).strip()
             if current not in sections:
                 sections[current] = []
@@ -630,10 +630,6 @@ def markdown_sections(text: str) -> dict[str, str]:
                 # Repeated heading: keep the first body, ignore the rest.
                 current = None
             continue
-        if is_marker:
-            list_open = True
-        elif stripped and indent == 0:
-            list_open = False
         if current is not None:
             sections[current].append(line)
     return {name: "\n".join(sections[name]).strip() for name in order}

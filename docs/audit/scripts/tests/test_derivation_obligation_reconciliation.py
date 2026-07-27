@@ -199,15 +199,25 @@ class ObligationReconciliationRuleTest(unittest.TestCase):
         )
         self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
 
-    def test_an_indented_heading_is_still_a_heading(self):
-        # CommonMark allows up to three leading spaces; reading them as body
-        # made a valid note report its sections missing as hard errors. Four
-        # spaces is an indented code block and must NOT become a section.
-        for indent in ("", " ", "  ", "   "):
+    def test_only_an_unindented_heading_opens_a_section(self):
+        # Deliberate departure from CommonMark, locked here so it stays a
+        # decision rather than drifting: an indented `##` is also how a heading
+        # nested in a list item looks, and separating the two needs full
+        # container parsing (marker width, content indent, lazy continuation).
+        # The two failure modes are not symmetric. A nested heading accepted as
+        # a section claims the name first and silently compares the wrong text
+        # against the registry; a top-level heading indented 1-3 spaces and
+        # missed raises exact_target_section_missing, which names the file and
+        # the section and is fixed by unindenting it. Take the loud failure.
+        self.assertEqual(kinds(ALIGNED_ENTRY), set())
+        for indent in (" ", "  ", "   ", "    "):
             note = ALIGNED_NOTE.replace("## Exact target", indent + "## Exact target")
-            self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set(), repr(indent))
-        note = ALIGNED_NOTE + "\n    ## Appendix\n"
-        self.assertNotIn("Appendix", audit_lint.markdown_sections(note))
+            self.assertNotIn("Exact target", audit_lint.markdown_sections(note))
+            self.assertIn(
+                "exact_target_section_missing",
+                kinds(ALIGNED_ENTRY, note=note),
+                repr(indent),
+            )
 
     def test_a_fence_interrupting_the_target_paragraph_is_dropped(self):
         # A fence may interrupt a paragraph with no blank line. Folding its
@@ -223,29 +233,52 @@ class ObligationReconciliationRuleTest(unittest.TestCase):
     def test_a_heading_nested_in_a_list_item_is_not_a_section(self):
         # CommonMark allows a heading inside a list item. Read as a section it
         # claims the name FIRST, so the real top-level heading is ignored as a
-        # repeat and the note reports a target_mismatch it does not have.
-        for marker in ("- item", "* item", "+ item", "1. item", "2) item"):
-            note = ALIGNED_NOTE.replace(
-                "## Exact target",
-                f"{marker}\n  ## Exact target\n  nested body\n\n## Exact target",
-                1,
-            )
-            self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set(), marker)
-            self.assertNotIn(
-                "nested body", audit_lint.markdown_sections(note)["Exact target"]
-            )
+        # repeat and the note reports a target_mismatch it does not have. This
+        # is why a section heading must be unindented: every nested heading is
+        # indented by construction, at whatever the item's content indent is.
+        markers = ("-", "*", "+", "1.", "2)", "10.")
+        for marker in markers:
+            for indent in ("  ", "   ", "    "):
+                note = ALIGNED_NOTE.replace(
+                    "## Exact target",
+                    f"{marker} item\n{indent}## Exact target\n{indent}nested body\n"
+                    "\n## Exact target",
+                    1,
+                )
+                self.assertEqual(
+                    kinds(ALIGNED_ENTRY, note=note), set(), f"{marker!r}/{indent!r}"
+                )
+                self.assertNotIn(
+                    "nested body", audit_lint.markdown_sections(note)["Exact target"]
+                )
+
+    def test_a_lazy_continuation_does_not_expose_a_nested_heading(self):
+        # CommonMark lazy continuation: an unindented paragraph line continues
+        # the list item, so the list is still open at the nested heading. Any
+        # rule that decided "unindented prose closes the list" would let the
+        # nested heading through; an unindented-only heading rule cannot.
+        note = ALIGNED_NOTE.replace(
+            "## Exact target",
+            "1. item\nlazy continuation\n   ## Exact target\n   nested body\n"
+            "\n## Exact target",
+            1,
+        )
+        self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
+        self.assertNotIn(
+            "nested body", audit_lint.markdown_sections(note)["Exact target"]
+        )
 
     def test_a_blockquoted_heading_is_not_a_section(self):
         note = ALIGNED_NOTE + "\n> ## Exact target\n> quoted\n"
         self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
 
-    def test_an_indented_heading_after_the_list_closes_is_a_section(self):
-        # The list-container exclusion must not swallow a later indented
-        # heading once unindented prose has closed the list.
+    def test_an_unindented_heading_after_a_list_is_a_section(self):
+        # An ATX heading is never a lazy continuation, so an unindented heading
+        # ends the list and opens its section normally.
         note = ALIGNED_NOTE.replace(
-            "## Exact target", "- item\n\nback to prose\n\n  ## Exact target", 1
+            "## Closure criterion", "- item\n- item two\n## Closure criterion", 1
         )
-        self.assertIn("Exact target", audit_lint.markdown_sections(note))
+        self.assertIn("Closure criterion", audit_lint.markdown_sections(note))
         self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
 
     def test_a_dropped_fence_still_separates_the_paragraphs_it_split(self):

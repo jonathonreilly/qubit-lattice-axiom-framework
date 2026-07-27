@@ -614,8 +614,11 @@ included.
 R = 2..6 have link(v, B_R) coinciding with the simplicial closure
 K_simp(P).
 
-Total runner output (current revision): 121 PASS / 0 FAIL
-(119 EXACT, 2 BOUNDED).
+Completed runner stdout accounting (current revision): 121 PASS / 0 FAIL,
+comprising 119 EXACT and 2 BOUNDED checks.  The two BOUNDED checks are the
+R = 2..10 finite-type enumeration (102 observed labelled types) and the
+R = 2..6 bridge-lemma cross-check (1,162 matches, 0 mismatches); Proposition Z's
+102/102 realizable-type and 126/126 Q_3-both-connected certificates are EXACT.
 
 The new finite combinatorial checks are:
 

@@ -35,6 +35,15 @@ SCRIPT_GLOBS = [
 ]
 SCRIPT_TIMEOUT_SECONDS = 30
 
+EXPECTED_DOC_PATHS = {
+    "docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
+    "docs/KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md",
+    "docs/KOIDE_DELTA_MARKED_RELATIVE_COBORDISM_NO_GO_NOTE_2026-04-24.md",
+    "docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md",
+    "docs/KOIDE_Q_DELTA_READOUT_RETENTION_SPLIT_NO_GO_NOTE_2026-04-24.md",
+    "docs/KOIDE_Q_DELTA_RESIDUAL_COHOMOLOGY_OBSTRUCTION_NO_GO_NOTE_2026-04-24.md",
+}
+
 FORBIDDEN_PROMOTION_PATTERNS = [
     re.compile(r"\bKOIDE(?:[_ -]Q)?(?:[_ -]CLOS(?:URE|ES)|[_ -]CLOSES[_ -]Q)\s*=\s*TRUE\b", re.I),
     re.compile(r"\bDELTA(?:[_ -]CLOS(?:URE|ES)|[_ -]CLOSES[_ -]DELTA)\s*=\s*TRUE\b", re.I),
@@ -53,18 +62,23 @@ FORBIDDEN_INPUT_PATTERNS = [
 ]
 
 NEGATIVE_CLOSEOUT_EMISSION_PATTERN = re.compile(
-    r"^[A-Z0-9_]*CLOSES[A-Z0-9_]*\s*=\s*FALSE\s*$",
+    r"^(?!CONDITIONAL(?:_|$))(?:[A-Z0-9]+_)*CLOSES(?:_[A-Z0-9]+)*"
+    r"\s*=\s*FALSE\s*$",
     re.I,
 )
 POSITIVE_CLOSEOUT_EMISSION_PATTERN = re.compile(
-    r"^[A-Z0-9_]*CLOSES[A-Z0-9_]*\s*=\s*TRUE\s*$",
+    r"^(?:[A-Z0-9]+_)*CLOSES(?:_[A-Z0-9]+)*\s*=\s*TRUE\s*$",
     re.I,
 )
 CONDITIONAL_TRUE_CLOSEOUT_PATTERN = re.compile(
-    r"^CONDITIONAL[A-Z0-9_]*CLOSES[A-Z0-9_]*IF[A-Z0-9_]*\s*=\s*TRUE\s*$",
+    r"^CONDITIONAL(?:_[A-Z0-9]+)*_CLOSES(?:_[A-Z0-9]+)*"
+    r"_IF(?:_[A-Z0-9]+)+\s*=\s*TRUE\s*$",
     re.I,
 )
-RESIDUAL_EMISSION_PATTERN = re.compile(r"^RESIDUAL[A-Z0-9_]*\s*=", re.I)
+RESIDUAL_EMISSION_PATTERN = re.compile(
+    r"^RESIDUAL(?:_[A-Z0-9]+)*\s*=\s*\S.*$",
+    re.I,
+)
 
 
 PASS_COUNT = 0
@@ -95,23 +109,76 @@ class ScriptEmission:
         return [
             line
             for line in self.lines
-            if NEGATIVE_CLOSEOUT_EMISSION_PATTERN.search(line)
+            if NEGATIVE_CLOSEOUT_EMISSION_PATTERN.fullmatch(line)
         ]
 
     @property
     def residuals(self) -> list[str]:
-        return [line for line in self.lines if RESIDUAL_EMISSION_PATTERN.search(line)]
+        return [line for line in self.lines if RESIDUAL_EMISSION_PATTERN.fullmatch(line)]
 
     @property
     def promotion_hits(self) -> list[str]:
         hits = [
             line
             for line in self.lines
-            if POSITIVE_CLOSEOUT_EMISSION_PATTERN.search(line)
-            and not CONDITIONAL_TRUE_CLOSEOUT_PATTERN.search(line)
+            if POSITIVE_CLOSEOUT_EMISSION_PATTERN.fullmatch(line)
+            and not CONDITIONAL_TRUE_CLOSEOUT_PATTERN.fullmatch(line)
         ]
         hits.extend(pattern_hits("\n".join(self.lines), FORBIDDEN_PROMOTION_PATTERNS))
         return list(dict.fromkeys(hits))
+
+
+@dataclass(frozen=True)
+class ScriptOutputContract:
+    required_closeouts: tuple[str, ...]
+    required_residual_labels: tuple[str, ...]
+
+
+SCRIPT_OUTPUT_CONTRACTS = {
+    "scripts/frontier_koide_a1_radian_bridge_irreducibility_audit.py": ScriptOutputContract(
+        required_closeouts=(
+            "KOIDE_A1_RADIAN_BRIDGE_AUDIT_CLOSES_Q=FALSE",
+            "KOIDE_A1_RADIAN_BRIDGE_AUDIT_CLOSES_DELTA=FALSE",
+        ),
+        required_residual_labels=("RESIDUAL_PRIMITIVE",),
+    ),
+    "scripts/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py": ScriptOutputContract(
+        required_closeouts=(
+            "DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_CLOSES_DELTA=FALSE",
+        ),
+        required_residual_labels=("RESIDUAL_EIGENLINE",),
+    ),
+    "scripts/frontier_koide_delta_marked_relative_cobordism_no_go.py": ScriptOutputContract(
+        required_closeouts=(
+            "DELTA_MARKED_RELATIVE_COBORDISM_CLOSES_DELTA=FALSE",
+        ),
+        required_residual_labels=("RESIDUAL_SCALAR",),
+    ),
+    "scripts/frontier_koide_dimensionless_objection_closure_review.py": ScriptOutputContract(
+        required_closeouts=(
+            "Q_DIMENSIONLESS_OBJECTION_CLOSES_Q=FALSE",
+            "DELTA_DIMENSIONLESS_OBJECTION_CLOSES_DELTA=FALSE",
+            "FULL_DIMENSIONLESS_OBJECTION_CLOSES_LANE=FALSE",
+        ),
+        required_residual_labels=("RESIDUAL_Q", "RESIDUAL_DELTA"),
+    ),
+    "scripts/frontier_koide_q_delta_readout_retention_split_no_go.py": ScriptOutputContract(
+        required_closeouts=(
+            "Q_DELTA_READOUT_RETENTION_SPLIT_CLOSES_Q=FALSE",
+            "Q_DELTA_READOUT_RETENTION_SPLIT_CLOSES_DELTA=FALSE",
+            "Q_DELTA_READOUT_RETENTION_SPLIT_CLOSES_FULL_LANE=FALSE",
+        ),
+        required_residual_labels=("RESIDUAL_SCALAR",),
+    ),
+    "scripts/frontier_koide_q_delta_residual_cohomology_obstruction_no_go.py": ScriptOutputContract(
+        required_closeouts=(
+            "Q_DELTA_RESIDUAL_COHOMOLOGY_CLOSES_Q=FALSE",
+            "Q_DELTA_RESIDUAL_COHOMOLOGY_CLOSES_DELTA=FALSE",
+            "Q_DELTA_RESIDUAL_COHOMOLOGY_CLOSES_FULL_LANE=FALSE",
+        ),
+        required_residual_labels=("RESIDUAL_SCALAR",),
+    ),
+}
 
 
 def check(name: str, condition: bool, detail: str = "") -> bool:
@@ -151,7 +218,35 @@ def pattern_hits(text: str, patterns: list[re.Pattern[str]]) -> list[str]:
     return hits
 
 
-def run_script_for_emissions(path: Path) -> ScriptEmission:
+def missing_required_closeouts(
+    emission: ScriptEmission,
+    contract: ScriptOutputContract,
+) -> list[str]:
+    emitted = {line.upper() for line in emission.negative_closeouts}
+    return [line for line in contract.required_closeouts if line.upper() not in emitted]
+
+
+def missing_required_residual_labels(
+    emission: ScriptEmission,
+    contract: ScriptOutputContract,
+) -> list[str]:
+    emitted = {line.split("=", 1)[0].strip().upper() for line in emission.residuals}
+    return [label for label in contract.required_residual_labels if label.upper() not in emitted]
+
+
+def normalize_subprocess_text(value: str | bytes | None) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, bytes):
+        return value.decode("utf-8", errors="replace")
+    return value
+
+
+def run_script_for_emissions(
+    path: Path,
+    *,
+    timeout_seconds: float = SCRIPT_TIMEOUT_SECONDS,
+) -> ScriptEmission:
     try:
         script_arg = str(path.relative_to(ROOT))
     except ValueError:
@@ -163,14 +258,14 @@ def run_script_for_emissions(path: Path) -> ScriptEmission:
             check=False,
             capture_output=True,
             text=True,
-            timeout=SCRIPT_TIMEOUT_SECONDS,
+            timeout=timeout_seconds,
         )
     except subprocess.TimeoutExpired as exc:
         return ScriptEmission(
             path=path,
             returncode=None,
-            stdout=exc.stdout or "",
-            stderr=exc.stderr or "",
+            stdout=normalize_subprocess_text(exc.stdout),
+            stderr=normalize_subprocess_text(exc.stderr),
             timed_out=True,
         )
     return ScriptEmission(
@@ -229,6 +324,27 @@ def run_self_tests() -> int:
             print("NO_EMITTED_GUARD_LABELS")
             """,
         )
+        unrelated_output_script = temporary_script(
+            tmp_path,
+            "unrelated_output_does_not_count.py",
+            """
+            print("OTHER_CLOSES_ROUTE=FALSE")
+            print("TEXT=RESIDUAL_SCALAR=embedded_but_not_a_label")
+            print("RESIDUAL_OTHER=unrelated_residual")
+            print("RESIDUAL_SCALAR=")
+            """,
+        )
+        timeout_script = temporary_script(
+            tmp_path,
+            "timeout_output_is_normalized.py",
+            """
+            import time
+
+            print("Q_TIMEOUT_CLOSES_Q=FALSE", flush=True)
+            print("RESIDUAL_Q=emitted_before_timeout", flush=True)
+            time.sleep(1)
+            """,
+        )
         good_script = temporary_script(
             tmp_path,
             "emitted_labels_pass.py",
@@ -253,11 +369,33 @@ def run_self_tests() -> int:
             print("RESIDUAL_Q=background_zero_law")
             """,
         )
+        malformed_conditional_true_script = temporary_script(
+            tmp_path,
+            "malformed_conditional_true_closeout_fails.py",
+            """
+            print("CONDITIONAL_Q_CLOSES_BACKGROUND_Z_ZERO=TRUE")
+            print("CONDITIONAL_Q_CLOSES_IF=TRUE")
+            print("RESIDUAL_Q=background_zero_law")
+            """,
+        )
 
         dead_emission = run_script_for_emissions(dead_literal_script)
+        unrelated_emission = run_script_for_emissions(unrelated_output_script)
+        timeout_emission = run_script_for_emissions(
+            timeout_script,
+            timeout_seconds=0.05,
+        )
         good_emission = run_script_for_emissions(good_script)
         true_emission = run_script_for_emissions(true_script)
         conditional_true_emission = run_script_for_emissions(conditional_true_script)
+        malformed_conditional_true_emission = run_script_for_emissions(
+            malformed_conditional_true_script
+        )
+
+    expected_selftest_contract = ScriptOutputContract(
+        required_closeouts=("Q_SELFTEST_CLOSES_Q=FALSE",),
+        required_residual_labels=("RESIDUAL_SCALAR",),
+    )
 
     record(
         "comments, dead strings, and dead print branches do not count as emitted negative closeouts",
@@ -268,6 +406,41 @@ def run_self_tests() -> int:
         "comments, dead strings, and dead print branches do not count as emitted residuals",
         dead_emission.returncode == 0 and not dead_emission.residuals,
         detail="stdout=" + repr(dead_emission.stdout.strip()),
+    )
+    record(
+        "unrelated emitted CLOSES labels do not satisfy the expected closeout contract",
+        unrelated_emission.returncode == 0
+        and missing_required_closeouts(
+            unrelated_emission,
+            expected_selftest_contract,
+        )
+        == ["Q_SELFTEST_CLOSES_Q=FALSE"],
+        detail="stdout=" + repr(unrelated_emission.stdout.strip()),
+    )
+    record(
+        "unrelated or empty emitted RESIDUAL labels do not satisfy the expected residual contract",
+        unrelated_emission.returncode == 0
+        and missing_required_residual_labels(
+            unrelated_emission,
+            expected_selftest_contract,
+        )
+        == ["RESIDUAL_SCALAR"],
+        detail="stdout=" + repr(unrelated_emission.stdout.strip()),
+    )
+    record(
+        "conditional negative labels do not count as unconditional negative closeouts",
+        not NEGATIVE_CLOSEOUT_EMISSION_PATTERN.fullmatch(
+            "CONDITIONAL_Q_CLOSES_IF_BACKGROUND_Z_ZERO=FALSE"
+        ),
+    )
+    record(
+        "timed-out captured stdout is normalized without changing timeout failure semantics",
+        timeout_emission.timed_out
+        and isinstance(timeout_emission.stdout, str)
+        and timeout_emission.negative_closeouts == ["Q_TIMEOUT_CLOSES_Q=FALSE"]
+        and timeout_emission.residuals == ["RESIDUAL_Q=emitted_before_timeout"]
+        and not timeout_emission.promotion_hits,
+        detail="stdout=" + repr(timeout_emission.stdout.strip()),
     )
     record(
         "real stdout negative CLOSES labels are detected",
@@ -289,6 +462,15 @@ def run_self_tests() -> int:
         conditional_true_emission.promotion_hits == [],
         detail="\n".join(conditional_true_emission.lines),
     )
+    record(
+        "malformed conditional TRUE closeout labels are rejected",
+        malformed_conditional_true_emission.promotion_hits
+        == [
+            "CONDITIONAL_Q_CLOSES_BACKGROUND_Z_ZERO=TRUE",
+            "CONDITIONAL_Q_CLOSES_IF=TRUE",
+        ],
+        detail="\n".join(malformed_conditional_true_emission.promotion_hits),
+    )
 
     print()
     print("=" * 88)
@@ -300,33 +482,71 @@ def run_self_tests() -> int:
     return 0 if fail_count == 0 else 1
 
 
-def format_emission_lines(
-    emissions: list[ScriptEmission],
+def format_manifest_difference(actual: set[str], expected: set[str]) -> str:
+    missing = sorted(expected - actual)
+    unexpected = sorted(actual - expected)
+    lines = [f"matched={len(actual & expected)}/{len(expected)}"]
+    lines.extend(f"MISSING_EXPECTED={path}" for path in missing)
+    lines.extend(f"UNEXPECTED_MATCH={path}" for path in unexpected)
+    if not missing and not unexpected:
+        lines.extend(sorted(actual))
+    return "\n".join(lines)
+
+
+def format_contract_results(
+    emissions_by_rel: dict[str, ScriptEmission],
     attr: str,
-    *,
-    missing_label: str,
 ) -> str:
     lines: list[str] = []
-    for emission in emissions:
-        values = getattr(emission, attr)
-        if values:
+    for rel, contract in SCRIPT_OUTPUT_CONTRACTS.items():
+        emission = emissions_by_rel.get(rel)
+        if emission is None:
+            lines.append(f"{rel}: MISSING_SCRIPT")
+            continue
+        missing = (
+            missing_required_closeouts(emission, contract)
+            if attr == "negative_closeouts"
+            else missing_required_residual_labels(emission, contract)
+        )
+        if attr == "negative_closeouts":
+            required_values = [
+                line
+                for line in emission.negative_closeouts
+                if line.upper()
+                in {expected.upper() for expected in contract.required_closeouts}
+            ]
+        else:
+            required_labels = {
+                label.upper() for label in contract.required_residual_labels
+            }
+            required_values = [
+                line
+                for line in emission.residuals
+                if line.split("=", 1)[0].strip().upper() in required_labels
+            ]
+        if missing:
             lines.append(
-                f"{emission.rel} (returncode={emission.returncode}): "
-                + "; ".join(values)
+                f"{rel} (returncode={emission.returncode}): "
+                f"MISSING_EXPECTED={'; '.join(missing)}; "
+                f"MATCHED={'; '.join(required_values) or 'NONE'}"
             )
         else:
-            lines.append(f"{emission.rel}: {missing_label}")
+            lines.append(
+                f"{rel} (returncode={emission.returncode}): "
+                + "; ".join(required_values)
+            )
     return "\n".join(lines)
 
 
 def audit_no_go_docs() -> None:
-    section("A. No-go notes retain residuals and do not promote closure")
+    section("A. Selected packet notes retain residuals and do not promote closure")
 
     docs = gather_files(DOC_GLOBS)
+    doc_paths = {str(path.relative_to(ROOT)) for path in docs}
     check(
-        "A.1 no-go note set is non-empty",
-        len(docs) > 0,
-        detail=f"notes={len(docs)}",
+        "A.1 selected packet note manifest is complete",
+        doc_paths == EXPECTED_DOC_PATHS,
+        detail=format_manifest_difference(doc_paths, EXPECTED_DOC_PATHS),
     )
 
     missing_residual: list[str] = []
@@ -347,68 +567,68 @@ def audit_no_go_docs() -> None:
             forbidden_inputs.append(f"{rel}: {input_hits}")
 
     check(
-        "A.2 every no-go note names a residual scalar or residual primitive",
+        "A.2 every selected packet note names a residual scalar or residual primitive",
         not missing_residual,
         detail="\n".join(missing_residual),
     )
     check(
-        "A.3 no no-go note promotes closure with a TRUE closeout flag",
+        "A.3 no selected packet note promotes closure with a TRUE closeout flag",
         not promotion_hits,
         detail="\n".join(promotion_hits),
     )
     check(
-        "A.4 no no-go note states a forbidden target as an assumption",
+        "A.4 no selected packet note states a forbidden target as an assumption",
         not forbidden_inputs,
         detail="\n".join(forbidden_inputs),
     )
 
 
 def audit_no_go_scripts() -> None:
-    section("B. No-go scripts expose negative closeout flags")
+    section("B. Selected packet scripts expose negative closeout flags")
 
     scripts = gather_files(SCRIPT_GLOBS)
+    script_paths = {str(path.relative_to(ROOT)) for path in scripts}
+    expected_script_paths = set(SCRIPT_OUTPUT_CONTRACTS)
     check(
-        "B.1 no-go script set is non-empty",
-        len(scripts) > 0,
-        detail=f"scripts={len(scripts)}",
+        "B.1 selected packet script manifest is complete",
+        script_paths == expected_script_paths,
+        detail=format_manifest_difference(script_paths, expected_script_paths),
     )
 
     emissions = [run_script_for_emissions(path) for path in scripts]
+    emissions_by_rel = {emission.rel: emission for emission in emissions}
     timed_out = [emission.rel for emission in emissions if emission.timed_out]
     missing_false_flag: list[str] = []
     promotion_hits: list[str] = []
     missing_residual: list[str] = []
-    for emission in emissions:
-        if emission.timed_out or not emission.negative_closeouts:
-            missing_false_flag.append(emission.rel)
-        if emission.timed_out or not emission.residuals:
-            missing_residual.append(emission.rel)
+    for rel, contract in SCRIPT_OUTPUT_CONTRACTS.items():
+        emission = emissions_by_rel.get(rel)
+        if emission is None:
+            missing_false_flag.append(rel)
+            missing_residual.append(rel)
+            continue
+        if emission.timed_out or missing_required_closeouts(emission, contract):
+            missing_false_flag.append(rel)
+        if emission.timed_out or missing_required_residual_labels(emission, contract):
+            missing_residual.append(rel)
         hits = emission.promotion_hits
         if hits:
-            promotion_hits.append(f"{emission.rel}: {hits}")
+            promotion_hits.append(f"{rel}: {hits}")
 
     check(
-        "B.2 every no-go script emits an explicit negative CLOSES flag",
+        "B.2 every selected packet script emits all expected negative CLOSES assignments",
         not timed_out and not missing_false_flag,
         detail="\n".join(timed_out)
-        or format_emission_lines(
-            emissions,
-            "negative_closeouts",
-            missing_label="MISSING_EMITTED_NEGATIVE_CLOSEOUT",
-        ),
+        or format_contract_results(emissions_by_rel, "negative_closeouts"),
     )
     check(
-        "B.3 every no-go script emits an explicit residual label",
+        "B.3 every selected packet script emits all expected nonempty residual labels",
         not timed_out and not missing_residual,
         detail="\n".join(timed_out)
-        or format_emission_lines(
-            emissions,
-            "residuals",
-            missing_label="MISSING_EMITTED_RESIDUAL",
-        ),
+        or format_contract_results(emissions_by_rel, "residuals"),
     )
     check(
-        "B.4 no no-go script output promotes closure with a TRUE closeout flag",
+        "B.4 no selected packet script output promotes closure with a TRUE closeout flag",
         not promotion_hits,
         detail="\n".join(promotion_hits),
     )

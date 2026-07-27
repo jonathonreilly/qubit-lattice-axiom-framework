@@ -17,26 +17,38 @@ It does not prove a physics theorem and does not close `Q` or `delta`.
 
 ## Checks
 
-The runner scans current 2026-04-24 Koide no-go notes and the consolidated
-objection-review packet.  For the paired no-go scripts, it executes each target
-script and verifies emitted stdout lines rather than source-text substrings, so
-comments, dead strings, or unrelated literals cannot satisfy the script-output
-checks.  The runner also exposes a `--self-test` mode that executes temporary
-scripts with comment-only, dead-branch, real-stdout, and TRUE-closeout fixtures
-to keep that distinction regression-tested.  The guard verifies:
+The runner scans the explicit six-note / six-script 2026-04-24 Koide `Q` and
+`delta` no-go / objection-review packet.  For the paired scripts, it executes
+each target and verifies a per-script stdout contract rather than source-text
+substrings or generic `FALSE` / `RESIDUAL` occurrences.  Each required
+closeout is an exact negative assignment named for that packet script, and
+each required residual is an anchored `RESIDUAL...=<nonempty value>` line with
+the expected label name.  This prevents comments, dead strings, unrelated
+emitted labels, empty residuals, or a different route's closeout from
+satisfying the script-output checks.
 
-1. no-go notes exist;
-2. every no-go note names a residual scalar or primitive;
-3. no no-go note promotes a closure flag as `TRUE`;
-4. no no-go note states a forbidden target as an assumption;
-5. no-go scripts exist;
-6. every no-go script emits an explicit negative `CLOSES` flag on stdout;
-7. every no-go script emits an explicit `RESIDUAL...=` label on stdout;
-8. no no-go script output promotes an unconditional closure flag as `TRUE`.
+The runner also exposes a `--self-test` mode that executes temporary hostile
+fixtures covering comment-only and dead-branch strings, unrelated but
+syntactically valid emitted labels, empty residual values, conditional
+closeouts, malformed conditional closeouts, timeout output, real stdout, and
+unconditional `TRUE` closeouts.  The guard verifies:
+
+1. the selected packet note manifest is complete;
+2. every selected packet note names a residual scalar or primitive;
+3. no selected packet note promotes a closure flag as `TRUE`;
+4. no selected packet note states a forbidden target as an assumption;
+5. the selected packet script manifest is complete;
+6. every selected packet script emits all of its expected negative `CLOSES`
+   assignments on stdout;
+7. every selected packet script emits all of its expected nonempty
+   `RESIDUAL...=` labels on stdout;
+8. no selected packet script output promotes an unconditional closure flag as
+   `TRUE`.
 
 Conditional support labels of the form `CONDITIONAL_*_CLOSES_IF_*=TRUE` are
 not treated as promoted closure by this guard; they remain conditional labels
 and still require the negative unconditional `CLOSES...=FALSE` lines.
+Malformed conditional labels do not receive that exemption.
 
 The script-output checks are label-hygiene checks, not target-proof checks: a
 no-go script may return a nonzero code while still emitting the negative
@@ -58,6 +70,14 @@ The first guard run correctly failed on packet hygiene:
 
 Those artifacts were updated rather than exempted.
 
+The current-contract rerun also caught a later drift in
+`frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py`: its current
+bounded `D,U`-algebra result emitted a negative rank-one-selection closeout but
+had lost the packet-level negative delta closeout.  The target script now
+again emits
+`DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_CLOSES_DELTA=FALSE`; an unrelated
+negative closeout cannot satisfy that per-script contract.
+
 ## Executable Result
 
 2026-05-06 rerun transcript:
@@ -65,6 +85,12 @@ Those artifacts were updated rather than exempted.
 
 2026-05-06 stdout-regression self-test transcript:
 `outputs/frontier_koide_hostile_review_guard_self_test_2026-05-06.txt`.
+
+2026-07-27 current-contract rerun transcript:
+`outputs/frontier_koide_hostile_review_guard_2026-07-27.txt`.
+
+2026-07-27 current-contract stdout-regression transcript:
+`outputs/frontier_koide_hostile_review_guard_self_test_2026-07-27.txt`.
 
 ```text
 PASSED: 8/8
@@ -77,9 +103,16 @@ RESIDUAL_SCALAR=not_applicable_review_guard
 
 ```text
 SELF_TEST_PASSED=TRUE
-SELF_TEST_PASS_COUNT=6
+SELF_TEST_PASS_COUNT=11
 SELF_TEST_FAIL_COUNT=0
 ```
+
+The current-contract rerun lists the complete manifests, all six executed
+script paths and return codes, and the emitted labels used to satisfy each
+contract.  The paired self-test demonstrates that source-only labels and
+unrelated stdout labels both fail the relevant contract, while a well-formed
+conditional support label remains allowed and a malformed conditional
+`TRUE` label is rejected.
 
 ## Boundary
 

@@ -1,0 +1,57 @@
+{
+  "cycle": 717,
+  "date": "2026-07-26",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "CYCLE717_INTERBANK_ALLOCATOR_HANDOFF_PASS",
+  "checks": {
+    "passed": 13,
+    "failed": 0
+  },
+  "result": {
+    "arbitrary_inverse_cases": 256,
+    "trained_banks": 2,
+    "trained_events": 4,
+    "held_banks": 5,
+    "held_events": 10,
+    "ceiling_banks": 32,
+    "ceiling_events": 64,
+    "one_particle_sources": 12,
+    "applications_per_source": 4,
+    "maximum_one_particle_norm_residual": 8.881784197001252e-16,
+    "maximum_particle_number_leakage": 0.0,
+    "history_oracle_failures": 0,
+    "assigned_M2": 453,
+    "primitive_one_two_M2_gates": 17823,
+    "routed_nearest_neighbor_gates": 1289681,
+    "maximum_route_distance": 361,
+    "routed_word_sha256": "a8aeeb6be8a63b7e3e57458e06166d05cb31ca9360a4d6fa1c3889ba7f14fc94"
+  },
+  "boundary": {
+    "positive_scope": "one constant-size routed full-left/blank-right handoff-plus-destination-append module and a conditional finite semantic allocator chain",
+    "fixed_supplies": "finite blank bank chain, link-work genesis, one initial token, six-bit structural address ROM, BINDER, ACTUAL, ADMISS, LAW, endpoint event, and controller order",
+    "not_derived": "one recurrent G_physical, physical event injection/cleanup, safe destination backpressure, local one-token enforcement, uniform translated bank law, active-frame naturality, or exhaustion dynamics",
+    "host_event_interface_service": true,
+    "autonomous_recurrence": false,
+    "axiom_pressure": false
+  },
+  "artifacts": {
+    "note": {
+      "path": "docs/ADMITTED_EVENT_INTERBANK_ALLOCATOR_HANDOFF_CYCLE717_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "823274ca8874c9b20cda07f063f2db1cc11ec0476e51d0bb285f379647b1f391"
+    },
+    "runner": {
+      "path": "scripts/frontier_cycle717_interbank_allocator_handoff_2026_07_26.py",
+      "sha256": "5a5c3a48da15f428bc7fa5db43561c5c5a9a854458c8499ba90aa3a9f7698955"
+    },
+    "cache": {
+      "path": "logs/runner-cache/frontier_cycle717_interbank_allocator_handoff_2026_07_26.txt",
+      "sha256": "799b867272b0d012e6e9f320bf4e0cac0c1c515343f1757a2d381ae01d06f3d9",
+      "input_fingerprint_sha256": "3c100168b35b28b94dbccded2ac0b6fa3de10ee8cef4aa409b68b216df2f9b83",
+      "elapsed_sec": 16.91,
+      "exit_code": 0,
+      "report_sha256": "8ea879723cfa2798c9a3274fa73e8a2dd9339e9352f9592a733afb7194297fc8"
+    }
+  }
+}

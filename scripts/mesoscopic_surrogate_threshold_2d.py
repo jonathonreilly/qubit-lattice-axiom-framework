@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""2D threshold sweep for the mesoscopic-surrogate two-stage lane.
+"""Finite two-stage stability evaluation for one fixed 2D harness.
 
 Question:
-  Does shrinking the surrogate-source support produce a clear threshold where
-  two-stage sourced-response stability collapses on the retained 2D family?
+  Which listed top-N support values satisfy the two programmed stability gates
+  for the exact implementation and constants imported below?
 
 This is intentionally cheap:
-  - retained 2D ordered-lattice family only
-  - same broad-source construction as the two-stage companion
-  - sweep top-N support sizes from very small to broad
+  - one fixed directed 2D ordered-grid implementation
+  - the broad-source construction imported from the two-stage companion
+  - one finite list of top-N support sizes
 
-The safe question is not whether the surrogate ever works. The safe question is
-whether there is a support threshold below which the two-stage stability falls
-apart.
+The output supports only the listed finite rows. It does not identify the
+implementation with a retained framework family or extrapolate to other
+actions, constants, boundaries, observables, or support values.
 """
 
 from __future__ import annotations
@@ -86,10 +86,9 @@ def main() -> None:
 
     print("=" * 100)
     print("MESOSCOPIC SURROGATE TWO-STAGE THRESHOLD SWEEP (2D)")
-    print("  Retained 2D ordered-lattice family")
+    print("  Fixed implementation-specific 2D ordered-grid harness")
     print(f"  h={H}, W={PHYS_W}, L={PHYS_L}, source_y={SOURCE_Y}, sigma={PACKET_SIGMA}")
-    print("  Goal: does shrinking source support produce a clear threshold in two-stage")
-    print("        sourced-response stability?")
+    print("  Goal: evaluate the two programmed stability gates at every listed topN")
     print("=" * 100)
     print()
     print(f"Free-profile centroid: {profile_centroid(free_profile, H):+.4f}")
@@ -133,18 +132,16 @@ def main() -> None:
 
     print()
     if stable_topns:
-        print(f"First stable topN in scanned range: {stable_topns[0]}")
-        print(f"Stable topNs in scanned range: {stable_topns}")
+        print(f"Smallest listed topN passing both gates: {stable_topns[0]}")
+        print(f"Listed topNs passing both gates: {stable_topns}")
     else:
-        print("No stable topN found in the scanned range.")
+        print("No listed topN passed both gates.")
 
     print()
-    print("SAFE READ")
-    print("  - If stability is present for all scanned topN, there is no sharp support")
-    print("    threshold in this 2D companion family.")
-    print("  - If stability fails only below some topN, that would identify a real")
-    print("    mesoscopic support floor.")
-    print("  - The honest output is whichever of those two cases the frozen scan shows.")
+    print("CITABLE SURFACE")
+    print("  - The computed result is the pass/fail state of the explicitly listed rows")
+    print("    for this fixed implementation and its programmed gates.")
+    print("  - No framework-family identification or extrapolation is part of the result.")
 
     min_carry = min(row["carry"] for row in rows)
     max_ratio_rel_err = max(row["ratio_rel_err"] for row in rows)
@@ -176,9 +173,9 @@ def main() -> None:
         f"min_carry={min_carry:.6g} >= {STABILITY_CARRY:.6g}",
     )
     pass_count += pass_check(
-        "no_sharp_collapse_in_scanned_range",
+        "smallest_listed_topN_satisfies_stability_gates",
         stable_topns and stable_topns[0] == TOPN_VALUES[0],
-        f"first stable topN={stable_topns[0] if stable_topns else None}",
+        f"smallest listed passing topN={stable_topns[0] if stable_topns else None}",
     )
     print()
     print(f"SUMMARY: PASS={pass_count} FAIL=0")

@@ -475,3 +475,65 @@ call.
    structural rather than backlog, EVERY foreclosure the framework
    relies on is ungraded — and this session alone leaned on landed
    no-gos a dozen times.
+
+---
+
+## PR #5602 REJECTED AT REVIEW (2026-07-26). My correction was ALSO wrong.
+
+Sol-xhigh reviewer, nine blocking findings, six confirmed by two
+independent computations. **NOT LANDED.** Closed with a full
+provenance comment and an 8-step repair order; head branch retained
+because nothing landed.
+
+**The decisive finding: I over-corrected.** The reviewer states the
+*superseded* L1 was CLOSER TO CORRECT than my replacement.
+
+- My replacement said the collapse is about CONTINUOUS vs finite
+  groups. **Continuity is the wrong wall.** The claim generalized from
+  one ABELIAN (hence reducible) order-4 edge-axis subgroup. Adding a
+  second cubic axis gives the FINITE binary octahedral group (order
+  48), under which independent-onsite covariance gives `dim_R = 1` and
+  common-frame gives `dim_R = 2` = exactly `span{I, SWAP}`.
+  **The operative property is IRREDUCIBILITY, not continuity.** This
+  sits in `claim_scope` — the audit-visible field — plus N2, N3, N8
+  and three gate labels.
+- **The dimension chain `16 -> 10 -> 6 -> 5 -> 2` IS NOT NESTED.**
+  `dim comm(SWAP) = 10`, `dim comm(rot (x) rot) = 6`, but
+  `dim comm(both) = 4` — the 6 is not inside the 10. Gate G8g checks
+  no inclusion. I reported that chain to the owner as a result.
+- **`G10f` is a tautology sold as a construction-mutation probe:** it
+  checks `trace(g h g^dag) == trace(h)`, true by cyclicity for EVERY
+  input. That is precisely the defect I instructed the author to
+  avoid, and it survived into the version I approved. `G10d` duplicates
+  `G9e`. `G5g`'s conclusion is FALSE under the note's own R2 and
+  contradicts `G5h` inside the same runner.
+- **A third orbit was omitted:** `b = 0` is admitted by H1-H4
+  (`aI` commutes with all diagonal generators), ground degeneracy 4,
+  and `alpha = 1/|b|` undefined. Three orbits, not two.
+- The backtick-vs-markdown-link decision: **conclusion holds, stated
+  reason is wrong.** A markdown link WOULD create a graph edge, but
+  the seeder strips gated targets from ledger `deps` via
+  `included_cids`, so no dangling dep arises. Right practice, wrong
+  mechanism.
+
+### HONEST ASSESSMENT
+
+Three times in this campaign I have been wrong about this material:
+the prior-art miss, the band-minimum separator I personally verified,
+and now the correction itself. The reviewer's judgement — that this
+needs manual science, not another review pass — is correct. The
+durable core (R1, R3 at `b != 0`, L2, L1(ii), R5, the individual G8
+dimensions, G5a-G5f + G5h) is twice-confirmed but NOT salvageable by
+review-level edits, because the false attribution is in `claim_scope`.
+
+**Nothing about the two-point menu should be cited until this is
+re-authored.**
+
+## OPERATIONAL: THE DISK WAS 100% FULL
+
+3 of 11 review agents died on `git worktree add` — "No space left on
+device" — with 1.5 GiB free of 228 GiB. Removed 15 CLEAN workflow
+worktrees (0 uncommitted changes each), freeing 5.6 GiB to 7.1 GiB.
+Codex workspaces (`CI3Z2-*`, `tp-*`) and other sessions' `agent-*`
+trees were NOT touched. **The three PRs whose reviewers died were
+never reviewed and remain open.**

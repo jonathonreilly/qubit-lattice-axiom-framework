@@ -2,6 +2,7 @@
 
 **Date:** 2026-04-25
 **Status:** planning audit; not a manuscript claim surface
+**Type:** open_gate
 **Runner:** `scripts/frontier_teleportation_encoding_portability.py`
 
 ## Scope
@@ -245,12 +246,20 @@ preparation) remains open.
 
 ## Downstream Boundary Alignment (2026-06-13)
 
-The runner now requires the audited downstream teleportation boundary stack
-before this finite portability artifact can report success. The direct
-consumers are the retained-axis operator-algebra closure, cross-encoding maps,
-three-register cross-encoding, no-signaling, 3D-operator, and conclusion
-boundary anchors; the shared helper also verifies the measurement, resource,
-and causal-channel anchors needed by the full planning stack.
+The runner now requires every downstream teleportation boundary anchor to be
+graph-visible with a recorded audit verdict before this finite portability
+artifact can report success. It records each anchor's current status without
+treating downstream scientific results as premises of the finite operator
+calculation. The direct consumers are the retained-axis operator-algebra
+closure, cross-encoding maps, three-register cross-encoding, no-signaling,
+3D-operator, and conclusion boundary anchors; the portability helper also records
+the measurement, resource, and causal-channel anchors needed by the full
+planning stack.
+
+The portability helper reads those statuses from the tracked sharded audit ledger
+through `docs/audit/scripts/ledger_io.py`. Therefore the boundary check works
+in an isolated checkout without requiring the ignored monolithic
+`docs/audit/data/audit_ledger.json` compatibility cache to be materialized.
 
 This alignment keeps the result bounded. It supports finite even-side encoding
 portability and operator targeting on the audited state-teleportation surface,

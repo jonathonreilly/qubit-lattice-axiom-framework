@@ -39,7 +39,28 @@ from typing import Iterable
 
 import numpy as np
 
-from teleportation_boundary_checks_2026_06_13 import print_boundary_results, teleportation_boundary_check_results
+from teleportation_encoding_portability_boundary_checks import (
+    print_boundary_results,
+    teleportation_boundary_check_results,
+)
+
+
+AUDIT_INPUT_PATHS = (
+    "scripts/teleportation_encoding_portability_boundary_checks.py",
+    "docs/audit/scripts/ledger_io.py",
+    "docs/audit/data/ledger/te/teleportation_causal_channel_note.json",
+    "docs/audit/data/ledger/te/teleportation_measurement_record_note.json",
+    "docs/audit/data/ledger/te/teleportation_apparatus_dynamics_closure_note.json",
+    "docs/audit/data/ledger/te/teleportation_dynamical_resource_generation_note.json",
+    "docs/audit/data/ledger/te/teleportation_resource_fidelity_note.json",
+    "docs/audit/data/ledger/te/teleportation_retained_axis_operator_algebra_closure_note.json",
+    "docs/audit/data/ledger/te/teleportation_cross_encoding_maps_note.json",
+    "docs/audit/data/ledger/te/teleportation_three_register_cross_encoding_note.json",
+    "docs/audit/data/ledger/te/teleportation_no_signaling_audit.json",
+    "docs/audit/data/ledger/te/teleportation_3d_operator_consistent_end_to_end_note.json",
+    "docs/audit/data/ledger/te/teleportation_conclusion_boundary_note.json",
+    "docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md",
+)
 
 
 I2 = np.eye(2, dtype=complex)

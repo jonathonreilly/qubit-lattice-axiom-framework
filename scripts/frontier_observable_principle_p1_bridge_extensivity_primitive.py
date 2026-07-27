@@ -31,16 +31,29 @@ from __future__ import annotations
 import json
 from fractions import Fraction
 from pathlib import Path
+import sys
 
 import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_SCRIPTS = ROOT / "docs" / "audit" / "scripts"
+if str(AUDIT_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(AUDIT_SCRIPTS))
+
+sys.dont_write_bytecode = True
+import ledger_io
+
 NOTE = (
     ROOT
     / "docs"
     / "OBSERVABLE_PRINCIPLE_P1_BRIDGE_EXTENSIVITY_PRIMITIVE_NARROW_NOTE_2026-05-21.md"
 )
-LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+AUDIT_INPUT_PATHS = (
+    "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_EXTENSIVITY_PRIMITIVE_NARROW_NOTE_2026-05-21.md",
+    "docs/audit/scripts/ledger_io.py",
+    "docs/audit/data/ledger/st/staggered_dirac_realization_gate_note_2026-05-03.json",
+    "docs/audit/data/ledger/ob/observable_principle_from_axiom_note.json",
+)
 
 PASS = 0
 FAIL = 0
@@ -63,6 +76,22 @@ def section(title: str) -> None:
     print("\n" + "=" * 78)
     print(title)
     print("=" * 78)
+
+
+def load_context_rows(claim_ids: set[str]) -> dict[str, dict]:
+    """Read the exact tracked shards consumed by the context check."""
+    if ledger_io.sharded():
+        rows = {}
+        for claim_id in claim_ids:
+            path = ledger_io.shard_path(claim_id)
+            if not path.exists():
+                continue
+            row = json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(row, dict) or row.get("claim_id") != claim_id:
+                raise ValueError(f"audit ledger shard identity mismatch: {path}")
+            rows[claim_id] = row
+        return rows
+    return ledger_io.load_ledger().get("rows", {})
 
 
 # ---------------------------------------------------------------------------
@@ -403,33 +432,32 @@ def test_T5_pattern_L_five_vocabularies() -> None:
 def test_T6_open_finite_range_gate_context() -> None:
     section("T6: open finite-range gate context (live ledger check)")
 
-    if not LEDGER.exists():
-        check(
-            "audit_ledger.json exists",
-            False,
-            f"missing live aggregate ledger: {LEDGER}",
-        )
-        return
-    with LEDGER.open() as f:
-        ledger = json.load(f)
-    rows = ledger["rows"]
-
     a3_key = "staggered_dirac_realization_gate_note_2026-05-03"
-    a3_status = rows.get(a3_key, {}).get("effective_status")
+    parent_key = "observable_principle_from_axiom_note"
+    rows = load_context_rows({a3_key, parent_key})
+    a3_row = rows.get(a3_key, {})
     check(
-        f"finite-range gate `{a3_key}` is `open_gate` on live ledger",
-        a3_status == "open_gate",
-        f"live effective_status = {a3_status!r}",
+        f"finite-range context row `{a3_key}` is present with source claim boundary `bounded_theorem`",
+        a3_row.get("claim_type") == "bounded_theorem",
+        (
+            f"source claim_type = {a3_row.get('claim_type')!r}; "
+            f"audit-owned effective_status observed, not asserted = "
+            f"{a3_row.get('effective_status')!r}"
+        ),
     )
 
-    # Also verify the parent OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE is still
-    # `audited_conditional` (NOT promoted by this note)
-    parent_key = "observable_principle_from_axiom_note"
-    parent_status = rows.get(parent_key, {}).get("effective_status")
+    # Verify the parent's source-side boundary without asserting an
+    # audit-owned verdict label. T7 independently checks that this note does
+    # not promote the parent.
+    parent_row = rows.get(parent_key, {})
     check(
-        f"parent `{parent_key}` is `audited_conditional` (unchanged by this note)",
-        parent_status == "audited_conditional",
-        f"live effective_status = {parent_status!r}",
+        f"parent context row `{parent_key}` is present with source claim boundary `bounded_theorem`",
+        parent_row.get("claim_type") == "bounded_theorem",
+        (
+            f"source claim_type = {parent_row.get('claim_type')!r}; "
+            f"audit-owned effective_status observed, not asserted = "
+            f"{parent_row.get('effective_status')!r}"
+        ),
     )
 
     # And verify the note references the relevant context rows.

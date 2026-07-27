@@ -1,10 +1,11 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_tomita_gibbs_modular.py
-runner_sha256: f814a39b4939f296f7ce8a85bf2405025562a2983aadaba2f2580ba73cfbf6a8
+runner_sha256: 0a322928fd602ea19ed89a1097f860d5409602047aaa94ad92ae68ac771af87b
+input_fingerprint_sha256: bb4d8f0a31a7e5fd6421edce2ee5482693f9f0e24f01a4e584502167a39d6492
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.87
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
 ----- stdout -----
 
 ==============================================================================
@@ -72,8 +73,8 @@ T8: Tracial reference state gives trivial modular automorphism (sigma_t = id, K 
 ==============================================================================
 T9: live ledger presence checks for context rows
 ==============================================================================
-  [FAIL] audit_ledger.json exists
-         Missing: /private/tmp/cl3-n5-certificates-odd-20260727/docs/audit/data/audit_ledger.json
+  [PASS] target/context rows are present without status-gating the claim
+         Target/context rows are present; no dependency status is consumed
 
 ==============================================================================
 T10: note string contains honest-scope admission strings
@@ -90,13 +91,13 @@ T11: source-note boundary declarations present
          All boundary declarations present
 
 ==============================================================================
-PASS=18 FAIL=1
+PASS=19 FAIL=0
 ==============================================================================
-per_element: checked — Gibbs eigenvalue logarithms and modular-Hamiltonian matrix entries were evaluated exactly/numerically; aggregate FAIL=1.
-per_site: checked — tensor-factor Gibbs states were traced on each local factor and compared with the joint state; aggregate FAIL=1.
-per_mode: checked — spectral F_p modes were tested for multiplicativity, additivity, and modular-Hamiltonian compatibility; aggregate FAIL=1.
-per_block: checked — two-block and tracial-state modular factorizations were executed, including the weighted-trace identity; aggregate FAIL=1.
-lattice_wide: checked and not executed — no lattice law derives the required Gibbs/product hypothesis; the executed modular certificate leaves that bridge open with PASS=18, FAIL=1.
+per_element: checked — Gibbs eigenvalue logarithms and modular-Hamiltonian matrix entries were evaluated exactly/numerically; aggregate FAIL=0.
+per_site: checked — tensor-factor Gibbs states were traced on each local factor and compared with the joint state; aggregate FAIL=0.
+per_mode: checked — spectral F_p modes were tested for multiplicativity, additivity, and modular-Hamiltonian compatibility; aggregate FAIL=0.
+per_block: checked — two-block and tracial-state modular factorizations were executed, including the weighted-trace identity; aggregate FAIL=0.
+lattice_wide: checked and not executed — no lattice law derives the required Gibbs/product hypothesis; the executed modular certificate leaves that bridge open with PASS=19, FAIL=0.
 
 ----- stderr -----
 

@@ -11,6 +11,12 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_INPUT_PATHS = (
+    "docs/POST_RECORD_DIRECTED_CERTIFICATE_KERNEL_SELECTION_FIREWALL_2026-06-06.md",
+    "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md",
+    "docs/POST_RECORD_SUPPLIED_ORIENTATION_BRIDGE_INTERFACE_2026-06-06.md",
+    "docs/POST_RECORD_ARROW_ORIENTATION_FIREWALL_2026-06-06.md",
+)
 PASS = 0
 FAIL = 0
 
@@ -175,9 +181,9 @@ def source_anchor_checks() -> None:
     require_text(
         "docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md",
         [
-            "supplied finite law plus supplied orientation bridge",
-            "examples do not derive an arrow, clock, kernel, or selected dial",
-            "The certificate is scoped to those inputs.",
+            "The load-bearing inputs are only the displayed rational masses, word lists,\nreversal map, and statistics.",
+            "a physical orientation or arrow;",
+            "Any physical claim using this theorem requires separately supported bridge\ninputs; this theorem supplies none.",
         ],
     )
     require_text(

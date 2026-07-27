@@ -1,10 +1,11 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_locality_of_source_derivatives.py
-runner_sha256: f631fc72b24e080836b9ac0936b3653fe6fabe2a9df6fd6427862a2adcee0d91
+runner_sha256: d807505cd57cfc787b75e14a10f4e9d1d97cc62d4056e0fd630629530fbd7765
+input_fingerprint_sha256: 17c187899b20d53856c0946701c61d9298a42a7ce518d99bf8e7152d2e162c99
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.69
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.49
+status: ok
 ----- stdout -----
 
 ==============================================================================
@@ -40,8 +41,8 @@ T5: Integration step W[J_A (+) J_B] - W[0 (+) J_B] = int dJ_a' recovers W[J_A] -
 ==============================================================================
 T6: live ledger presence checks for context rows
 ==============================================================================
-  [FAIL] audit_ledger.json exists
-         Missing: /private/tmp/cl3-n5-certificates-odd-20260727/docs/audit/data/audit_ledger.json
+  [PASS] target/context rows are present without status-gating the claim
+         Target/context rows are present; no dependency status is consumed
 
 ==============================================================================
 T7: note string contains honest-scope admission strings
@@ -58,13 +59,13 @@ T8: source-note boundary declarations present
          All boundary declarations present
 
 ==============================================================================
-PASS=8 FAIL=1
+PASS=9 FAIL=0
 ==============================================================================
-per_element: checked — exact scalar second derivatives of log(det) and F_p were computed; aggregate FAIL=1.
-per_site: checked — independent source coordinates on separate local blocks have zero log cross-response but nonzero F_p cross-response; aggregate FAIL=1.
-per_mode: checked — the polynomial exponent family was tested against the locality condition mode by mode; aggregate FAIL=1.
-per_block: checked — block determinant factorization and the integration-to-additivity step were verified symbolically; aggregate FAIL=1.
-lattice_wide: checked and not executed — a finite-range lattice locality theorem is the claim-specific missing bridge; the executed block calculation exposes that absence with PASS=8, FAIL=1.
+per_element: checked — exact scalar second derivatives of log(det) and F_p were computed; aggregate FAIL=0.
+per_site: checked — independent source coordinates on separate local blocks have zero log cross-response but nonzero F_p cross-response; aggregate FAIL=0.
+per_mode: checked — the polynomial exponent family was tested against the locality condition mode by mode; aggregate FAIL=0.
+per_block: checked — block determinant factorization and the integration-to-additivity step were verified symbolically; aggregate FAIL=0.
+lattice_wide: checked and not executed — a finite-range lattice locality theorem is the claim-specific missing bridge; the executed block calculation exposes that absence with PASS=9, FAIL=0.
 
 ----- stderr -----
 

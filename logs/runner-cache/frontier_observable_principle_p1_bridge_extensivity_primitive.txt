@@ -1,10 +1,11 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_extensivity_primitive.py
-runner_sha256: 400f43f870ae27b3e1b43eb4c097d9679e3d2d19c12677596f7645821b831dcb
+runner_sha256: 52c9cfea567dc9bebad1c18b56082652e49243cafdf111694eeeb5496d45c49b
+input_fingerprint_sha256: 05d684a93e7a9bfaea07dcfccf750640764a8282e0fc4365f6c3db75bb2c40af
 timeout_sec: 120
-exit_code: 1
-elapsed_sec: 0.41
-status: nonzero_exit
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
 ----- stdout -----
 Runner: extensivity-primitive narrow no_go on P1
 Note:   docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_EXTENSIVITY_PRIMITIVE_NARROW_NOTE_2026-05-21.md
@@ -70,8 +71,12 @@ T5: Pattern L comparison and corrected extensivity residual
 ==============================================================================
 T6: open finite-range gate context (live ledger check)
 ==============================================================================
-  [FAIL] audit_ledger.json exists
-         missing live aggregate ledger: /private/tmp/cl3-n5-certificates-odd-20260727/docs/audit/data/audit_ledger.json
+  [PASS] finite-range context row `staggered_dirac_realization_gate_note_2026-05-03` is present with source claim boundary `bounded_theorem`
+         source claim_type = 'bounded_theorem'; audit-owned effective_status observed, not asserted = 'unaudited'
+  [PASS] parent context row `observable_principle_from_axiom_note` is present with source claim boundary `bounded_theorem`
+         source claim_type = 'bounded_theorem'; audit-owned effective_status observed, not asserted = 'unaudited'
+  [PASS] note explicitly cites finite-range gate, parent, and Route D context
+         all refs present
 
 ==============================================================================
 T7: Honest scope check (no_go + non-promotion language)
@@ -90,13 +95,13 @@ T8: Source-note boundary check
          clean
 
 ==============================================================================
-RESULT  PASS=23  FAIL=1
+RESULT  PASS=26  FAIL=0
 ==============================================================================
-per_element: checked — determinant atoms and F_p scalar responses were evaluated exactly; aggregate FAIL=1.
-per_site: checked — replicated independent local blocks were tested for linear bulk scaling; aggregate FAIL=1.
-per_mode: checked — integer Cauchy scaling and the five Pattern-L functional modes were compared; aggregate FAIL=1.
-per_block: checked — block-diagonal determinant additivity holds while F_p fails bulk extensivity for p != 0; aggregate FAIL=1.
-lattice_wide: checked — the executed arbitrary-block replication supports only the extensivity primitive and leaves the finite-range physical bridge open; PASS=23, FAIL=1.
+per_element: checked — determinant atoms and F_p scalar responses were evaluated exactly; aggregate FAIL=0.
+per_site: checked — replicated independent local blocks were tested for linear bulk scaling; aggregate FAIL=0.
+per_mode: checked — integer Cauchy scaling and the five Pattern-L functional modes were compared; aggregate FAIL=0.
+per_block: checked — block-diagonal determinant additivity holds while F_p fails bulk extensivity for p != 0; aggregate FAIL=0.
+lattice_wide: checked — the executed arbitrary-block replication supports only the extensivity primitive and leaves the finite-range physical bridge open; PASS=26, FAIL=0.
 
 ----- stderr -----
 

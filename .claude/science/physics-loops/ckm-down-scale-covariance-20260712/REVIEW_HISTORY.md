@@ -106,3 +106,23 @@ Files requiring iteration-3 re-review: the historical companion,
 - Generated audit-ledger, audit-queue, citation-graph, classification, and
   front-door status outputs were restored from `origin/main` after validation
   and are excluded from this science block.
+
+## Iteration 4 — 2026-07-27 exact-scope repair
+
+- The 2026-07-25 independent audit returned `audited_conditional`. It accepted
+  the exact local identities but found the broader route-closure sentence
+  unsupported by the historical N1-N8 packet.
+- The source title, status, theorem statement, and scope firewall now claim
+  only exact local algebra and positive scalar transport covariance.
+- The new two-sided law isolates the exact condition for deviation
+  invariance: it holds precisely when `T_pred=T_obs` on the stated positive
+  scalar domain. Non-shared and observable-specific maps remain outside scope.
+- The primary runner now reports `EXACT_PASS=29 COMPARATOR_PASS=6 FAIL=0`;
+  its canonical cache is fresh. The source-edge verifier reports
+  `PASS=9 FAIL=0`.
+- Strict audit lint checks all `3883` rows with zero errors. Its warnings and
+  notices are repository-wide pre-existing diagnostics; the target-specific
+  result is the expected note-hash-drift re-audit notice.
+- Current disposition: local repair complete; independent review and re-audit
+  remain pending. The historical iteration-3 `pass` does not certify these new
+  bytes.

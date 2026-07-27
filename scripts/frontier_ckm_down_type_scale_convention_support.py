@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact algebra and scale-covariance checks for the CKM down-type boundary.
+"""Exact algebra and shared-transport covariance checks for the CKM note.
 
 The proof layer contains no observed mass, fitted exponent, or selected scale.
 The final numerical block is explicitly comparator-only and illustrates why
@@ -96,15 +96,55 @@ def orientation_countermodel() -> None:
 
 
 def scale_covariance() -> None:
-    print("\n3. EXACT SCALE-COVARIANCE OBSTRUCTION")
+    print("\n3. EXACT SHARED-TRANSPORT COVARIANCE")
     pred, common, transport = sp.symbols("R_pred R_common T", positive=True)
+    pred_transport, obs_transport = sp.symbols("T_pred T_obs", positive=True)
     dev_common = pred / common - 1
     dev_mixed = transport * pred / (transport * common) - 1
+    dev_two_sided = pred_transport * pred / (obs_transport * common) - 1
     dev_cross = pred / (transport * common) - 1
 
-    check("shared transport preserves relative deviation", sp.simplify(dev_mixed - dev_common) == 0)
-    check("crossed comparison depends on transport", sp.diff(dev_cross, transport) == -pred / (common * transport**2))
-    check("crossed comparison can be tuned to zero", sp.simplify(dev_cross.subs(transport, pred / common)) == 0)
+    check(
+        "shared transport preserves relative deviation",
+        sp.simplify(dev_mixed - dev_common) == 0,
+    )
+    check(
+        "two-sided transport obeys the exact ratio law",
+        sp.simplify(
+            (dev_two_sided + 1)
+            - pred_transport * (dev_common + 1) / obs_transport
+        )
+        == 0,
+    )
+    check(
+        "deviation shift factors through T_pred-T_obs",
+        sp.simplify(
+            dev_two_sided
+            - dev_common
+            - pred
+            * (pred_transport - obs_transport)
+            / (common * obs_transport)
+        )
+        == 0,
+    )
+    check(
+        "crossed comparison is T_pred=1 and T_obs=T",
+        sp.simplify(
+            dev_two_sided.subs(
+                {pred_transport: 1, obs_transport: transport}
+            )
+            - dev_cross
+        )
+        == 0,
+    )
+    check(
+        "crossed comparison depends on transport",
+        sp.diff(dev_cross, transport) == -pred / (common * transport**2),
+    )
+    check(
+        "crossed comparison can be tuned to zero",
+        sp.simplify(dev_cross.subs(transport, pred / common)) == 0,
+    )
 
     gamma = sp.symbols("gamma", positive=True)
     dlog_same = -gamma - (-gamma)
@@ -175,7 +215,7 @@ def comparator_only_illustration() -> None:
 
 
 def main() -> int:
-    print("CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SCALE-COVARIANCE BOUNDARY")
+    print("CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SHARED-TRANSPORT COVARIANCE")
     normalized_determinant_core()
     orientation_countermodel()
     scale_covariance()

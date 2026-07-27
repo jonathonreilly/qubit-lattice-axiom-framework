@@ -1,12 +1,12 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_down_type_scale_convention_support.py
-runner_sha256: b051cb7ab94f2955762af2dd26d6cbd0c183b0b4ba9d8825ca1d4db759ce9d58
+runner_sha256: 9cac9f549dc8cac373c4b61a1663da97379e411915c6368831b902af4ed96df1
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.59
+elapsed_sec: 0.57
 status: ok
 ----- stdout -----
-CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SCALE-COVARIANCE BOUNDARY
+CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SHARED-TRANSPORT COVARIANCE
 
 1. EXACT NORMALIZED-DETERMINANT CORE
 [EXACT_PASS] Q is a projector
@@ -32,8 +32,11 @@ CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SCALE-COVARIANCE BOUNDARY
 [EXACT_PASS] relative 2-3 mixing varies as sin(theta)
 [EXACT_PASS] two fixed-spectrum models have different mixing
 
-3. EXACT SCALE-COVARIANCE OBSTRUCTION
+3. EXACT SHARED-TRANSPORT COVARIANCE
 [EXACT_PASS] shared transport preserves relative deviation
+[EXACT_PASS] two-sided transport obeys the exact ratio law
+[EXACT_PASS] deviation shift factors through T_pred-T_obs
+[EXACT_PASS] crossed comparison is T_pred=1 and T_obs=T
 [EXACT_PASS] crossed comparison depends on transport
 [EXACT_PASS] crossed comparison can be tuned to zero
 [EXACT_PASS] flavor-universal common-scale mass ratio has zero RG derivative
@@ -52,7 +55,7 @@ CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SCALE-COVARIANCE BOUNDARY
 [COMPARATOR_PASS] one-loop factor differs from observed-mass transport
              one_loop=1.162557620, observed=1.153086420
 
-SUMMARY: EXACT_PASS=26 COMPARATOR_PASS=6 FAIL=0
+SUMMARY: EXACT_PASS=29 COMPARATOR_PASS=6 FAIL=0
 
 ----- stderr -----
 

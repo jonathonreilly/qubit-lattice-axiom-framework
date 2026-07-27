@@ -11,9 +11,9 @@ admitted_observation_status: comparator-only-non-load-bearing
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 runtime: interactive_single_target
-cycle_count: 1
-block_count: 1
-active_route: rank_one_plus_five_determinant_and_shared_transport_covariance
+cycle_count: 2
+block_count: 2
+active_route: exact_shared_transport_scope_and_two_sided_ratio_law
 hard_residual: physical_maps_Md_to_XR_and_XR_to_Vcb
 files_touched:
   - docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md
@@ -26,20 +26,16 @@ files_touched:
 open_imports: []
 open_parent_obligations:
   - physical_down_mass_to_ckm_composite_bridge
-no_go_routes:
-  - casimir_identity_only
-  - perturbative_qcd_exponent
-  - scale_convention_rescue
-  - fitted_reference_scale
-trace_gate: direct_blocker_closure_partially_closes
-review_disposition: pass
-pipeline_status: pass_16_of_16
-strict_audit_lint_status: pass_zero_errors
+no_go_routes: []
+trace_gate: direct_blocker_closure_closes_current_scope_objection
+review_disposition: pending_independent_review_after_exact_scope_repair
+pipeline_status: not_run_current_cycle_no_audit_authority_regeneration
+strict_audit_lint_status: pass_zero_errors_with_repository_warnings
 generated_audit_surfaces: excluded_after_validation
-remote_branch: physics-loop/ckm-down-scale-closure-block01-20260712
-pr_status: open_for_independent_review
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5235
+remote_branch: null
+pr_status: local_science_fix_only
+pr_url: null
 lock_path: /private/tmp/cl3-ckm-scale-physics-loop.lock
 lock_note: default path hardcodes unavailable user; authorized private-tmp fallback acquired
-next_exact_action: independent_audit_of_bounded_theorem_and_claim_firewall
-stop_condition: one_review_clean_pr_opened_or_review_blocks_with_honest_handoff
+next_exact_action: independently_reaudit_exact_shared_transport_theorem
+stop_condition: current_scope_repair_is_audit_ready_with_fresh_runner_cache

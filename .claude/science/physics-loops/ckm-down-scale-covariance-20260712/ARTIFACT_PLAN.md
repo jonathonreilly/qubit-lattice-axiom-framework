@@ -10,3 +10,14 @@
    restore every generated audit/effective-status surface before commit.
 5. Run review-loop fanout, apply only narrow verified fixes, and re-review only
    changed files.
+
+## 2026-07-27 exact-scope cycle
+
+1. Replace boundary/obstruction and route-closure prose with the exact positive
+   shared-transport theorem requested by the current audit.
+2. Add the two-sided positive scalar transport law and symbolic special-case
+   checks.
+3. Refresh the canonical runner cache and run source-edge, vocabulary,
+   compilation, diff, and audit-lint validation.
+4. Leave audit-authority and publication-control surfaces unchanged; hand the
+   same bounded-theorem row to independent re-audit.

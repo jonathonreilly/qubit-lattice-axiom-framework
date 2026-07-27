@@ -8,10 +8,9 @@ ledger or effective status.
 
 ## Claim
 
-On the explicitly narrowed zero-extension/witness surface supplied by the
-first-sector minimal-bulk completion principle note, the canonical
-factorized-class zero extension produces one explicit Wilson/Perron
-first-layer packet.
+On the finite-cone zero-extension branch supplied by the first-sector
+minimal-bulk completion principle note, the canonical factorized-class zero
+extension produces one explicit Wilson/Perron first-layer packet.
 
 Let `rho_ret` be the first-sector retained packet consumed by the local
 runner helpers, and let `rho_0` be its coefficient-order zero extension to
@@ -39,7 +38,7 @@ m1     = 0.430754683575...
 m2     = 0.249382329102...
 ```
 
-This is a bounded packet theorem on the zero-extension witness branch. It
+This is a bounded packet theorem on the finite-cone zero-extension branch. It
 does not assert that the framework-point Wilson environment packet is
 physically selected by this branch.
 
@@ -61,9 +60,10 @@ external mathematical authority.
 
 ## Boundaries
 
-This note does not prove universal Loewner-minimality for all admissible
-tails. The sibling minimal-bulk completion principle note records that as an
-open derivation gap.
+This note does not re-prove the sibling principle's arbitrary-tail
+coefficient and Loewner minimality theorem on the finite box. It consumes
+only that theorem's zero-extension branch to compute a packet. Neither note
+claims an infinite-weight completion theorem.
 
 This note does not add an axiom, selector law, or physical postulate.
 
@@ -81,8 +81,8 @@ effective-status change.
 ## Dependencies
 
 - [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_MINIMAL_BULK_COMPLETION_PRINCIPLE_THEOREM_NOTE_2026-04-19.md)
-  for the narrowed runner-tested zero-extension/witness surface and for the
-  explicit statement that universal Loewner-minimality remains open.
+  for the unique coefficient- and Loewner-minimal zero extension on the
+  finite 36-slot tail cone.
 - [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md)
   for the explicit factorized-class zero-extension construction and local
   factor diagonal used by the runner.

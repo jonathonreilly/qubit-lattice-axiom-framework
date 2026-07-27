@@ -1,102 +1,158 @@
 # Gauge-Vacuum Plaquette First-Sector Minimal-Bulk Completion Principle
 
-**Date:** 2026-04-19 (originally); 2026-05-10 (scope-narrowed per audit verdict); 2026-05-16 (substring-import mechanism removed from runner per audit verdict)
+**Date:** 2026-04-19 (originally); 2026-07-27 (finite-cone proof completed)
 **Claim type:** bounded_theorem
 **Status authority:** independent audit lane only.
 **Primary runner:** [`scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py`](../scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py)
 
 ## Claim
 
-Fix the retained packet `rho_ret` on the first-symmetric support inside the
-canonical Wilson factorized class.
+Let
 
-Inside the canonical Wilson factorized cone, the coefficient-order
-zero-extension `rho_0` is the unique zero-coefficient lift of `rho_ret`
-that adds zero mass to every higher-weight slot. Equivalently, on the
-explicit witness families exercised by the runner, every nonzero
-nonnegative tail strictly increases at least one positive bulk-tail
-functional (total tail mass, weighted tail mass, squared `l2` mass, or
-support size) and adds a positive-semidefinite Loewner increment to the
-factorized-Wilson transfer.
+```text
+W_5 = {(p,q): 0 <= p,q <= 5}
+R   = {(0,0), (1,0), (0,1), (1,1)}
+```
 
-This is the runner-certified part of the first-sector minimal-bulk
-completion picture. It does not promote a new axiom and does not change
-the framework-point Wilson environment packet that is still open.
+be the 36-slot dominant-weight box and retained support used by the runner.
+Fix the displayed nonnegative conjugation-symmetric retained packet
+`rho_ret` on `R`, and let `E(rho_ret)` be the set of all **full packets on
+this finite box** that are nonnegative, conjugation-symmetric, and restrict
+to `rho_ret` on `R`.  The phrase "full packet" below means all slots of
+`W_5`; no claim about an infinite dominant-weight lattice is made.
 
-## Scope
+Let `rho_0` equal `rho_ret` on `R` and zero off `R`.  Then:
 
-This note is restricted to the runner-tested witness families:
+1. `rho_0` is the unique least element of `E(rho_ret)` in coefficient
+   order.
+2. Every coefficient-order-monotone bulk-tail functional is minimized at
+   `rho_0`.  The minimizer is unique for every functional that is strictly
+   positive on every nonzero admissible tail.  This class includes positive
+   weighted tail mass, positive weighted `p`-mass for every `p > 0`, and
+   positive weighted support size; hence it includes all four functionals
+   printed by the runner.
+3. In the finite canonical factorized model
 
-- the explicit zero-extension packet `rho_0` of `rho_ret` to the
-  retained first-symmetric weights `(0,0), (1,0), (0,1), (1,1)`;
-- two explicit nonnegative tails inside the audited factorized cone,
-  the `(2,0) + (0,2)` witness with mass `0.05 + 0.05` and the
-  `(2,1) + (1,2) + (2,2)` witness with mass `0.03 + 0.03 + 0.02`;
-- the four positive bulk-tail functionals listed above (total tail
-  mass, weighted tail mass, squared `l2` mass, support size);
-- a randomized sweep (n = 64) of admissible nonnegative
-  conjugation-symmetric tails inside the cone, used solely to certify
-  the algebraic identity `delta >= 0 ==> rho_0 + delta >= rho_0`
-  coefficientwise. The sweep does **not** certify universal Loewner
-  monotonicity.
+   ```text
+   T(rho) = M D_loc diag(rho) M,
+   M = exp(beta J / 2),
+   ```
 
-For these explicit witness families the runner certifies coefficient-
-order minimality of `rho_0` and a positive-semidefinite Loewner
-increment for both tested tails inside the canonical factorized cone.
+   where the runner verifies that `M` is real symmetric and invertible and
+   that `D_loc` is strictly positive diagonal, `T(rho_0)` is the unique
+   least element of `{T(rho): rho in E(rho_ret)}` in Loewner order.
 
-## Open derivation gap
+Thus coefficient minimality, functional minimality, and finite-box Loewner
+minimality are separate consequences of one explicit tail-cone
+decomposition.  They are not asserted as definitionally equivalent.
 
-For arbitrary admissible nonnegative conjugation-symmetric tails inside
-the canonical Wilson factorized cone, the universal Loewner-monotonicity
-/ unique-minimality theorem is **not** established by this note or by
-the runner's finite witness checks. The auditor verdict was explicit:
+## Proof
 
-> The coefficient-order zero-extension result is valid on its own
-> terms, but the claimed equivalence to unique Loewner-minimality for
-> all admissible extensions is not established by the provided note and
-> code.
+Write `tau(p,q) = (q,p)`.  The non-retained slots split into disjoint
+`tau`-orbits.  For each such orbit `O`, let `g_O` be its indicator.  If
+`rho` is in `E(rho_ret)`, then
 
-Closing the universal-tail step would require an analytic proof that
-`T(rho_0 + delta) - T(rho_0)` is positive-semidefinite for every
-admissible `delta >= 0` inside the cone, plus a precise definition of
-the class of positive bulk-tail functionals on which strict
-monotonicity is claimed. That remains genuine open derivation work and
-is **not** closed by this note.
+```text
+delta = rho - rho_0 = sum_O a_O g_O,       a_O >= 0.                 (1)
+```
 
-## Dependencies
+Indeed, `delta` vanishes on `R`, is nonnegative, and is constant on every
+conjugation orbit.  Conversely every sum in (1) is an admissible tail.
+Because the orbit supports are disjoint, the coefficients `a_O` are unique.
 
-The runner does **not** import upstream notes via substring matching on
-prose. The previous audit verdict explicitly flagged that mechanism as
-not establishing closed inputs, and that mechanism has been removed.
-The numeric facts used by the runner are now verified directly on the
-packet and on the transfer matrix:
+Equation (1) gives `rho_0 <= rho` coefficientwise for every admissible
+extension.  If another extension were also a least element, it would be at
+most `rho_0`; equality on `R` and nonnegativity off `R` then force it to be
+`rho_0`.  This proves item 1 without a randomized or finite-witness
+inference.
 
-- `rho_ret` is consumed as the numeric vector returned by the local
-  Python helper `completed_sector_data` (an in-tree Python module
-  import). The runner directly checks that this vector is normalized,
-  conjugation-symmetric, nonnegative on `(1,0)/(0,1)`, and zero on
-  `(1,1)`.
-- The local-factor diagonal used in the transfer assembly is consumed
-  from the in-tree Python helper `local_factor_diagonal`. The runner
-  directly checks that the assembled zero-extension transfer is
-  self-adjoint on the truncated dominant-weight box.
+If `F` is coefficient-order-monotone, item 1 gives
+`F(rho_0) <= F(rho)`.  If in addition
 
-The two source notes that originally provided this material are still
-the conceptual references for the underlying retained packet and
-factorized-class existence, and remain conditional-dependency citations
-for that conceptual role; they are NOT treated as closed retained-grade
-inputs by this note. The current effective status of each upstream is
-tracked by the audit ledger; this note does not promote any of them.
+```text
+F(rho_0 + delta) > F(rho_0)
+```
+
+for every nonzero admissible `delta`, the minimizer is unique.  In
+particular, for weights `c_w > 0`, the functionals
+
+```text
+F_{c,p}(rho_0 + delta) = sum_{w off R} c_w delta_w^p,   p > 0,
+S_c(rho_0 + delta)     = sum_{w off R} c_w 1[delta_w > 0]
+```
+
+vanish at `delta = 0` and are strictly positive for every nonzero
+nonnegative tail.  Total tail mass has `c_w = 1, p = 1`; dimension-weighted
+mass has `c_w = dim(w), p = 1`; squared `l2` mass has `c_w = 1, p = 2`; and
+support size has `c_w = 1` in `S_c`.  This proves item 2.  Merely
+nonnegative weights would not ensure uniqueness, which is why strict
+positivity on every tail slot is part of the statement.
+
+Finally, put `A_O = D_loc diag(g_O)`.  Since both factors are diagonal,
+`A_O` is nonnegative diagonal.  For an arbitrary admissible tail, linearity
+and (1) give
+
+```text
+T(rho_0 + delta) - T(rho_0)
+  = M D_loc diag(delta) M
+  = sum_O a_O M A_O M.                                      (2)
+```
+
+For every real vector `x`, symmetry of `M` gives
+
+```text
+x^T M D_loc diag(delta) M x
+  = (M x)^T D_loc diag(delta) (M x) >= 0,
+```
+
+so (2) is positive semidefinite for **every** admissible tail, not only the
+two old witnesses.  If `delta` is nonzero, strict positivity of the diagonal
+of `D_loc` makes `D_loc diag(delta)` nonzero.  Invertibility of `M` makes
+congruence by `M` injective, so the increment in (2) is nonzero.  Hence no
+other admissible extension has the same transfer, and `T(rho_0)` is the
+unique Loewner-least transfer.  The nonzero increment need not be positive
+definite; nonzero positive semidefiniteness is the exact conclusion.
+
+## Scope and boundaries
+
+The theorem is universal over the admissible nonnegative
+conjugation-symmetric tails on `W_5`.  It is not inferred from 64 random
+tails or from the two named tails A and B; those are retained only as
+regression examples in the runner.
+
+The theorem does not address an infinite-weight completion, convergence of
+an infinite transfer operator, signed tails, a non-diagonal local factor, or
+selection of the actual framework-point Wilson environment packet.  It
+adds no physical selector axiom.
+
+The Loewner conclusion uses the displayed factorization and the explicit
+finite-box hypotheses `M = M^T`, `M` invertible, and `D_loc > 0`.  It is not
+a consequence of coefficient order for an arbitrary transfer map.
+
+## Dependency closure
+
+No theorem is imported from an upstream prose note.  The proof above is a
+finite-dimensional conditional algebra theorem for the packet and matrices
+constructed by the primary runner.  The runner obtains those numerical
+objects through in-tree Python functions and directly verifies every
+hypothesis used here:
+
+- the retained packet is finite, normalized, nonnegative, and
+  conjugation-symmetric;
+- the orbit generators partition every non-retained slot;
+- `M` is symmetric and nonsingular on `W_5`;
+- every diagonal entry of `D_loc` is strictly positive;
+- every tail-orbit generator produces a nonzero PSD congruence increment.
+
+The provenance notes for the retained packet and finite factorized model
+remain useful context, but their scientific conclusions are not premises
+of this bounded algebra theorem:
 
 - [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md)
-  for the conceptual retained first-sector packet
-  `rho_ret = (1, 0.267139..., 0.267139..., 0)`.
 - [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md)
-  for the conceptual existence of one explicit factorized-class
-  extension of `rho_ret` by zero on every higher weight, providing the
-  local-factor diagonal used by the runner.
 
-The row's effective status is set by the independent audit lane.
+Their audit status is owned by the independent audit lane; this note does
+not promote either row.
 
 ## Verification
 
@@ -112,6 +168,6 @@ Expected:
 PASS=8 FAIL=0
 ```
 
-The eight runner checks certify the witness-family-restricted
-statement above; they do not certify the universal Loewner-monotonicity
-step that the audit verdict flagged as the load-bearing failure.
+The analytic proof above establishes the arbitrary-tail implication.  The
+runner checks its finite-box hypotheses and exhausts the finitely many
+conjugation-orbit generators of the tail cone.

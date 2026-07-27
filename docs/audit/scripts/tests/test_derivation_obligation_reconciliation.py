@@ -220,6 +220,34 @@ class ObligationReconciliationRuleTest(unittest.TestCase):
         )
         self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
 
+    def test_a_heading_nested_in_a_list_item_is_not_a_section(self):
+        # CommonMark allows a heading inside a list item. Read as a section it
+        # claims the name FIRST, so the real top-level heading is ignored as a
+        # repeat and the note reports a target_mismatch it does not have.
+        for marker in ("- item", "* item", "+ item", "1. item", "2) item"):
+            note = ALIGNED_NOTE.replace(
+                "## Exact target",
+                f"{marker}\n  ## Exact target\n  nested body\n\n## Exact target",
+                1,
+            )
+            self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set(), marker)
+            self.assertNotIn(
+                "nested body", audit_lint.markdown_sections(note)["Exact target"]
+            )
+
+    def test_a_blockquoted_heading_is_not_a_section(self):
+        note = ALIGNED_NOTE + "\n> ## Exact target\n> quoted\n"
+        self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
+
+    def test_an_indented_heading_after_the_list_closes_is_a_section(self):
+        # The list-container exclusion must not swallow a later indented
+        # heading once unindented prose has closed the list.
+        note = ALIGNED_NOTE.replace(
+            "## Exact target", "- item\n\nback to prose\n\n  ## Exact target", 1
+        )
+        self.assertIn("Exact target", audit_lint.markdown_sections(note))
+        self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
+
     def test_a_dropped_fence_still_separates_the_paragraphs_it_split(self):
         # A fence between two paragraphs with no blank lines is a paragraph
         # break. Removing its lines outright would splice the paragraphs into

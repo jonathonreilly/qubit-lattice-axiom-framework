@@ -38,10 +38,9 @@ Block plan (one check per `record(...)` call):
   Block H1 (parent-note presence + canonical hash, 2 checks):
     H1.1 parent note exists at canonical path
     H1.2 parent note content sha256 equals the current canonical hash
-         `5ed33df184be15fff3b1847497c16fc22e2948a64fb996aace768651c8b57f5d`
-         (acknowledges the 2026-05-25 prose-side expansion that
-         sharpened the open-gate disavowal and added numerical
-         margins; see companion §3.1)
+         `437c7445df083c750787babacc5186e15bf248b06e3d7ea86bd036a53b4ee9f9`
+         (acknowledges the 2026-05-25 prose-side expansion and the
+         2026-07-26 derivation-certificate repair; see companion §3.1)
 
   Block H2 (parent-runner hygiene, 3 checks):
     H2.1 parent runner exists at canonical path
@@ -98,15 +97,14 @@ Discipline:
   - Does not import the parent runner module; executes it in a
     child process exactly as the audit pipeline observes it.
 
-Hostile-reviewer note: the canonical sha256 values for the parent
-note and runner are inline literals in this file. They were observed
-on origin/main commit `bc606828a` (just prior to the companion
-landing) and are verifiable by `shasum -a 256` on the two canonical
-paths. They will need updating only if the parent note or runner is
-genuinely modified upstream -- at which point the "substance
-unchanged relative to the runner-hash on `previous_audits[1]`" claim
-of this hygiene companion no longer applies cleanly and the companion
-should be revised or retired in line with the auditor's preference.
+Hostile-reviewer note: the canonical sha256 values for the parent note and
+runner are inline literals in this file and are verifiable by
+`shasum -a 256` on the two canonical paths. The runner hash is the value
+observed on origin/main commit `bc606828a` just prior to the companion landing;
+the parent note hash includes the later 2026-07-26 derivation-certificate
+repair documented in companion §3.1. Either value must be revised if its
+source is genuinely modified again. Such a revision does not itself establish
+substance invariance; the companion must be rechecked or retired.
 
 This companion does NOT assert the open gate has closed, does NOT
 promote `tau_b,min` to a physical threshold law, does NOT modify the
@@ -141,7 +139,7 @@ ROW_ID = "dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21"
 CLEAN_STATUS = "audited_" + "clean"
 
 EXPECTED_NOTE_SHA256 = (
-    "5ed33df184be15fff3b1847497c16fc22e2948a64fb996aace768651c8b57f5d"
+    "437c7445df083c750787babacc5186e15bf248b06e3d7ea86bd036a53b4ee9f9"
 )
 EXPECTED_RUNNER_SHA256 = (
     "08c7ae1063e4b211cf34086b6c94614358c4dd7ce9b5b0e4bc0155b474f18b86"

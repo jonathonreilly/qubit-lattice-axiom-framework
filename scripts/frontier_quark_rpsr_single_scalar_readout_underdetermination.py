@@ -17,6 +17,10 @@ from pathlib import Path
 import math
 import sys
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
@@ -265,6 +269,39 @@ def main() -> int:
     print("Summary")
     print("-" * 72)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
+    emit_n5_resolution_certificate(
+        per_element=(
+            abs(ratios(power_readout(a, 1.0, 1.0))[0] - a) < TOL,
+            "the executed single scalar amplitude maps elementwise to the stated power-law ratio for the identity exponent choice",
+        ),
+        per_site=(
+            True,
+            "checked and not executed — the RPSR input is one reduced scalar amplitude and the runner defines no spatial site index or intersite dynamics",
+        ),
+        per_mode=(
+            len({tuple(round(x, 12) for x in pair) for pair in ratio_pairs.values()})
+            == len(ratio_pairs),
+            "all four executed exponent modes map the same scalar amplitude to distinct ordered ratio pairs",
+        ),
+        per_block=(
+            all(
+                all(
+                    abs(actual - target) < TOL
+                    for actual, target in zip(
+                        ratios(power_readout(a, *exponents_for_ratios(a, *pair))),
+                        pair,
+                        strict=True,
+                    )
+                )
+                for pair in synthetic_pairs
+            ),
+            "all four synthetic target blocks are reconstructed exactly after supplying their own two exponent parameters",
+        ),
+        lattice_wide=(
+            not has_path(existing_edges, "RPSR_reduced_amplitude", target),
+            "the complete executed typed-edge graph has no path from RPSR amplitude support to the physical up-type ratio pair",
+        ),
+    )
     if FAIL_COUNT == 0:
         print("VERDICT: exact RPSR scalar support remains underdetermined as a")
         print("two-ratio up-type Yukawa readout without a new readout theorem.")

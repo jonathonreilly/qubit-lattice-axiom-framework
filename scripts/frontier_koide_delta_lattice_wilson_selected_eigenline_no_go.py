@@ -30,6 +30,10 @@ import sys
 import numpy as np
 import sympy as sp
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 PASSES: list[tuple[str, bool, str]] = []
 
@@ -427,6 +431,30 @@ def main() -> int:
     print(f"PASSED: {n_pass}/{n_total}")
     for name, ok, _ in PASSES:
         print(f"  [{'PASS' if ok else 'FAIL'}] {name}")
+
+    emit_n5_resolution_certificate(
+        per_element=(
+            np.linalg.norm(D - D.conj().T) < 1e-10
+            and np.linalg.norm(U.conj().T @ U - np.eye(U.shape[0])) < 1e-10,
+            "the executed finite Wilson Dirac element is Hermitian and the order-three translation element is unitary",
+        ),
+        per_site=(
+            exact_k0_ok and exact_momentum_ok,
+            "all three periodic L=3 lattice sites are included in the exact zero-mode and momentum-character construction",
+        ),
+        per_mode=(
+            joint_scalar_ok and rotated_joint_ok,
+            "both zeta-sector eigenline modes remain degenerate under D and U, including after a nontrivial basis rotation",
+        ),
+        per_block=(
+            generators_scalar and rank_one_is_extra,
+            "every D,U-generated block restricts to a scalar on the rank-two sector, while the displayed rank-one split is outside that algebra",
+        ),
+        lattice_wide=(
+            no_go_core and gamma_split_ok,
+            "the complete finite periodic L=3 lattice and its D,U algebra were executed; a Clifford-volume counter-route is explicitly outside the no-go scope",
+        ),
+    )
 
     print()
     if n_pass == n_total:

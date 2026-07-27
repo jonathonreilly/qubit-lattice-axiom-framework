@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_connes_nc_spectral.py
-runner_sha256: 980fb2f370266c2b81d0046cf920b2861397f7c0f264f339d7724941bc864c93
+runner_sha256: 81d080cf71617daa0dfd362c18f9be9549eaa239a3cfde752ce678b14516aec8
+input_fingerprint_sha256: 72400119aa84ba4c813300ce7e32ceb2b43ea0864ad571b6b0fb389c93740a10
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.83
+elapsed_sec: 0.49
 status: ok
 ----- stdout -----
 
@@ -78,6 +79,11 @@ T10: source-note boundary declarations present
 ==============================================================================
 PASS=14 FAIL=0
 ==============================================================================
+per_element: PASS | the executed finite diagonal spectral element obeys minus zeta-prime at zero equals log absolute determinant exactly
+per_site: PASS | checked and not executed — the route is a finite spectral-operator identity and contains no spatial site algebra or intersite Dirac operator
+per_mode: PASS | the two diagonal eigenvalue modes add exactly in the spectral zeta function at the executed sample exponent
+per_block: PASS | the direct-sum determinant block factors as two times three, and its admitted logarithm is therefore additive
+lattice_wide: PASS | checked and not executed — all exact tests concern finite direct sums and no spatial lattice, continuum limit, or local spectral triple is constructed
 
 ----- stderr -----
 

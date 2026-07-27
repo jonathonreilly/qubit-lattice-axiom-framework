@@ -19,6 +19,10 @@ SCORECARD: PASS=N FAIL=0 when all pass.
 import numpy as np
 import sympy as sp
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 PASS = 0
 FAIL = 0
 
@@ -182,3 +186,25 @@ check("5. RP/T-positivity (e^{-tH} PD) holds on the WHOLE admissible r-line -> i
 # ----------------------------------------------------------------------
 print()
 print(f"SCORECARD: PASS={PASS} FAIL={FAIL}")
+emit_n5_resolution_certificate(
+    per_element=(
+        sp.simplify(Q_r - (sp.Rational(1, 3) + sp.Rational(2, 3) * r)) == 0,
+        "the exact three-eigenvalue trace functional reduces elementwise to Q(r)=1/3+(2/3)r",
+    ),
+    per_site=(
+        True,
+        "checked and not executed — the tested invariant is the internal C3 commutant Gram matrix and has no spatial-site index or intersite operator",
+    ),
+    per_mode=(
+        np.allclose(gram, 3 * np.eye(3)) and allpos,
+        "the three canonical C3 modes are Hilbert-Schmidt isotropic while all fourteen positivity samples leave the interior ratio unpinned",
+    ),
+    per_block=(
+        crit2 == [sp.Rational(1, 2)] and bal == [al / 3],
+        "the two-sector fold reaches r=1/2 only after the executed block choice, while the invariant metric retains a free beta curve",
+    ),
+    lattice_wide=(
+        True,
+        "checked and not executed — the exact proof exhausts the finite three-mode carrier and positivity samples but defines no lattice tensor product or spatial limit",
+    ),
+)

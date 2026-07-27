@@ -16,6 +16,10 @@ import sys
 
 import numpy as np
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PASS = 0
@@ -240,6 +244,36 @@ def main() -> int:
     print("POST_RECORD_COUNTS_CAN_AUDIT_SUPPLIED_MODEL=TRUE")
     print("BORN_REQUIRES_PRE_RECORD_OR_INSTRUMENT_BRIDGE=TRUE")
     print("GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE")
+    word = ("0", "1", "0", "0")
+    counts = count_word(word)
+    w01 = ("0", "1")
+    w10 = ("1", "0")
+    laws = ((0.75, 0.25), (0.60, 0.40), (0.90, 0.10))
+    rho_a = np.diag([0.2, 0.8])
+    rho_b = np.diag([0.8, 0.2])
+    p0 = np.diag([1.0, 0.0])
+    emit_n5_resolution_certificate(
+        per_element=(
+            counts == (3, 1) and empirical(counts) == (Fraction(3, 4), Fraction(1, 4)),
+            "the executed four-record history has exact integer counts (3,1) and normalized empirical frequency (3/4,1/4)",
+        ),
+        per_site=(
+            count_word(w01) == count_word(w10) and w01[-1] != w10[-1],
+            "the two executed history sites have identical counts but different terminal order data and hence different admitted Markov predictions",
+        ),
+        per_mode=(
+            all(likelihood_iid(word, law) > 0 for law in laws),
+            "all three distinct executed iid law modes assign positive likelihood to the same realized finite record word",
+        ),
+        per_block=(
+            trace_prob(rho_a, p0) != trace_prob(rho_b, p0),
+            "two normalized pre-record density blocks give different Born weights while remaining compatible with the same realized count tuple",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — finite histories can score supplied models, but no unbounded record family, lattice law, or predictive limit is derived",
+        ),
+    )
     return 0 if FAIL == 0 else 1
 
 

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_koide_ratio_source_selector_firewall.py
-runner_sha256: c48ec554770c1c55788d46cc48aaad00ea040f34fcd79855aaedf89c83073cbb
+runner_sha256: 76ef580253be464801cfd6fcfd10b9c87310924d54ab9fda1921c5fa7960a8ea
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.09
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 
@@ -70,6 +71,11 @@ PASS: remaining primitive is a physical source/endpoint/generation law
 Summary
 ========================================================================================
 TOTAL: PASS=35, FAIL=0
+per_element: PASS | the exact Brannen-carrier element gives Q=(c^2+2)/6 with zero phase derivative before any observed mass comparator enters
+per_site: PASS | the executed onsite C3 source test keeps the common scalar source while rejecting the nonuniform generation-labeled source
+per_mode: PASS | four distinct positive phase modes share Q=2/3, so the ratio invariant does not select a physical phase
+per_block: PASS | all three cyclic relabeling blocks keep unordered ratios fixed while moving the largest-component generation label
+lattice_wide: PASS | checked and not executed — the complete invariant is the internal three-generation C3 carrier and supplies no spatial lattice geometry or intersite selector
 VERDICT: exact ratio/source selector firewall.
 CHARGED_LEPTON_KOIDE_RATIO_SOURCE_SELECTOR_FIREWALL=TRUE
 KOIDE_Q_PLUS_BRANNEN_PHASE_GENERATION_SELECTOR=FALSE

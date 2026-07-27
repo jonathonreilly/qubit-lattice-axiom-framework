@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_holonomy_native_plaquette_discriminator.py
-runner_sha256: 7b58e813d2eb704b9ef3b70612cf5abc7ba021f36b03841e3c217e8f46745188
+runner_sha256: a08795b035b0b6f2516371ee7aa17e5a2696075657011d0e9af70f06091e9f1d
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ============================================================================
@@ -67,6 +68,11 @@ VERDICT
      preserved, but this runner does not promote that downstream row.
 
 ============================================================================
+per_element: PASS | all six executed native hop elements are unitary and involutory at the configured numerical tolerance
+per_site: PASS | the single executed taste-space plaquette site has scalar holonomy under both native hop identifications
+per_mode: PASS | all three direction-pair modes in both Clifford-folded and graph-first identifications have zero traceless holonomy content
+per_block: PASS | the minus-identity flux commutes with every executed native su(2) generator and therefore remains in the operator center
+lattice_wide: PASS | checked and not executed — this discriminator intentionally evaluates one taste-space plaquette and defines no extended gauge lattice or transport dynamics
 PASS=22 FAIL=0
 
 ----- stderr -----

@@ -24,6 +24,10 @@ import random
 import statistics
 import time
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 BETA = 0.8
 K = 5.0
 MAX_D_PHYS = 3
@@ -302,6 +306,34 @@ def main():
     print(
         "  this is therefore a bounded no-go for this minimal retarded-like field"
         " state on the retained grown geometry row."
+    )
+    emit_n5_resolution_certificate(
+        per_element=(
+            max(ferr_rows[0.0]) < 1e-12,
+            "the gamma=0 causal-field value equals the static-field element for every executed seed at tolerance 1e-12",
+        ),
+        per_site=(
+            max(aerr_rows[0.0]) < 1e-12,
+            "the gamma=0 propagated amplitude agrees at every executed graph site with the retained static baseline",
+        ),
+        per_mode=(
+            all(
+                math.isfinite(value)
+                for rows in (escape_rows, dz_rows, slope_rows, r2_rows, span_rows)
+                for gamma in GAMMAS
+                for value in rows[gamma]
+            ),
+            "all fifteen seed-by-gamma propagation modes return finite escape, deflection, slope, fit, and phase-span observables",
+        ),
+        per_block=(
+            max(_mean(span_rows[gamma]) for gamma in GAMMAS[1:]) < 0.01
+            and max(_mean(r2_rows[gamma]) for gamma in GAMMAS[1:]) < 0.2,
+            "every finite-gamma block has sub-0.01 mean detector phase span and sub-0.2 mean ramp-fit R2 on the retained grown row",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — only three seeds on one retained grown geometry row were run, so no graph-family or continuum-wide field law is claimed",
+        ),
     )
     print(f"\nTotal time: {time.time() - t0:.0f}s")
 

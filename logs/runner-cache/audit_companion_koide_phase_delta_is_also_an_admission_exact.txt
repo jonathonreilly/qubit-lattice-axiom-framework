@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_koide_phase_delta_is_also_an_admission_exact.py
-runner_sha256: a86e75b10c275bb3a2200db4157d11e7516cc55d49c88e00eb2138b89a37b8ff
+runner_sha256: caac4b735ee6592aeb7cbdc8fc92573a0f4d8c18b7b45c165a640426d2f35540
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.43
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 PASS - (1) det M(delta) = a^3 - 3a|b|^2 + 2|b|^3 cos(3 delta) (function of cos 3delta only; verified numerically to 1e-12)
@@ -15,6 +16,11 @@ PASS - (5) modulus gradient at delta=2/9 is nonzero -> the modulus-only equation
 PASS - (6) the CP-odd selector (eta/theta, ~sin(3delta)) is ODD in delta (vanishes at the modulus extrema) and is GATED
 
 7 PASS, 0 FAIL
+per_element: PASS | the three sampled circulant eigenvalue products equal the closed cos(3 delta) determinant to 1e-12
+per_site: PASS | all six stationary phase representatives on the executed C3 carrier have fewer than three distinct eigenvalues
+per_mode: PASS | the executed delta=2/9 mode has three distinct square-root masses and nonzero sin(3 delta)
+per_block: PASS | the exact determinant block is even, has the stated derivative, has nonzero physical-point gradient, and leaves the odd selector gated
+lattice_wide: PASS | checked and not executed — this invariant is the complete internal three-mode C3 carrier and defines no spatial sites, tensor product, or lattice geometry
 
 ATTACK RESULT (eta->delta lead, #2624): the clean determinant modulus is EVEN in delta and stationary
 only at delta = multiples of 60 deg, where the sqrt-mass spectrum is DEGENERATE -- unphysical. The

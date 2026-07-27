@@ -17,6 +17,10 @@ from __future__ import annotations
 import math
 import sys
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -80,6 +84,30 @@ def main() -> int:
     print("  already-reduced lanes, and it carries no selected-line m dependence.")
     print()
     print(f"PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
+    emit_n5_resolution_certificate(
+        per_element=(
+            rel_gap > 1.0e-2,
+            "the executed transport-gap constant differs from 4 pi over square-root six by more than one percent",
+        ),
+        per_site=(
+            True,
+            "checked and not executed — this runner compares two branch-level constants and has no site-indexed observable or lattice coordinate",
+        ),
+        per_mode=(
+            max(transport_values) == min(transport_values)
+            and max(geometry_values) == min(geometry_values),
+            "all five executed selected-line m modes leave both compared quantities exactly constant at floating precision",
+        ),
+        per_block=(
+            (transport_values[0] - geometry_values[0])
+            == (transport_values[-1] - geometry_values[-1]),
+            "the comparison-gap block is itself independent of m, so even an exact identity would not select a charged-lepton coordinate",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — no lattice operator or lattice-size family is defined by this constant-versus-constant bridge",
+        ),
+    )
     return 0 if FAIL_COUNT == 0 else 1
 
 

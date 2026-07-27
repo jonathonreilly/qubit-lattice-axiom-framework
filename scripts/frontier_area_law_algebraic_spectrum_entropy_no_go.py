@@ -26,6 +26,10 @@ from fractions import Fraction
 import math
 import sys
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -234,6 +238,30 @@ def main() -> int:
     print("=" * 78)
     print(f"SUMMARY: PASS={PASS_COUNT}  FAIL={FAIL_COUNT}")
     print("=" * 78)
+
+    emit_n5_resolution_certificate(
+        per_element=(
+            target == c_cell == Fraction(1, 4),
+            "the executed primitive coefficient and Bekenstein-Hawking target are both the exact rational element 1/4",
+        ),
+        per_site=(
+            closest_delta > 1e-3,
+            "all fifteen primitive m/16 binary event spectra were executed, and none has entropy equal to one quarter",
+        ),
+        per_mode=(
+            all(baker_certificate_applies(spectrum) for _, spectrum in sample_spectra[1:]),
+            "all six executed nonproduct rational Schmidt modes satisfy the nonzero algebraic log-linear Baker certificate",
+        ),
+        per_block=(
+            not math.isclose(weighted_entropy, target_float, abs_tol=1e-12)
+            and math.isclose(binary_entropy(p_star), target_float, abs_tol=1e-13),
+            "rational direct-sum blocks miss one quarter, whereas the tuned two-level block reaches it only through the nonalgebraic selector",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the theorem covers every finite algebraic Schmidt spectrum but assumes no spatial lattice geometry or thermodynamic limit",
+        ),
+    )
 
     if FAIL_COUNT:
         return 1

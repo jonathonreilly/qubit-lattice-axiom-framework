@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/bmv_bounded_negative.py
-runner_sha256: 16e45d13ce2c1bf423e5058adf9322d4d30b32140966a9a92fca380fcafd91b6
+runner_sha256: 38fe86454efe7371f57c5b76609f5a39525edcf558746e0185f3bc2df74dd18e
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.16
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 
@@ -78,6 +79,11 @@ BMV BOUNDED NEGATIVE: continuum reproduction, no discrete signature
 
   -> lattice reproduces continuum on both axes
   -> no retained discrete-spacetime BMV signature
+per_element: PASS | each executed weak-phase entanglement witness enters through 1-cos(delta Phi), and its fitted source exponent is two
+per_site: PASS | the finest-spacing Riemann sum resolves every sampled beam-path site closely enough to keep the maximum continuum error below two percent
+per_mode: PASS | all executed separation and spacing modes retain the quadratic source-strength law with minimum reported fit R2 above 0.999
+per_block: PASS | the three h-block maxima decrease strictly under both refinement steps 1.0 to 0.5 to 0.25
+lattice_wide: PASS | the full executed finite beam family reproduces the continuum exponent and converges in spacing, so no retained lattice-wide BMV signature remains
 
 ======================================================================
 BMV bounded negative reproduction: PASS

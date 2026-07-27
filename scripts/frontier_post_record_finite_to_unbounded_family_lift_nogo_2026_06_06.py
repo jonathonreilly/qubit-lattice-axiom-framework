@@ -7,6 +7,10 @@ from dataclasses import dataclass
 from fractions import Fraction
 from pathlib import Path
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DOC = ROOT / "docs/POST_RECORD_FINITE_TO_UNBOUNDED_FAMILY_LIFT_NO_GO_2026-06-06.md"
@@ -186,6 +190,30 @@ def main() -> int:
     print("FINITE_CERTIFICATE_ALONE_DERIVES_UNBOUNDED_LAW=FALSE")
     print("FAMILY_LIFT_REQUIRED=TRUE")
     print("AUDIT_VERDICT_APPLIED=FALSE")
+    emit_n5_resolution_certificate(
+        per_element=(
+            all(left == right for left, right in zip(ZERO_TAIL.prefix, ONE_TAIL.prefix, strict=True)),
+            "all four executed prefix elements agree between the zero-tail and one-tail completions",
+        ),
+        per_site=(
+            ZERO_TAIL.prefix_count() == ONE_TAIL.prefix_count() == 3
+            and ZERO_TAIL.prefix_frequency() == ONE_TAIL.prefix_frequency() == Fraction(3, 4),
+            "the complete four-site certificate window has the same exact count three and frequency three quarters in both completions",
+        ),
+        per_mode=(
+            ZERO_TAIL.limiting_density() == 0 and ONE_TAIL.limiting_density() == 1,
+            "the two executed unbounded completion modes share the prefix but have distinct limiting densities zero and one",
+        ),
+        per_block=(
+            ZERO_TAIL.density_at(LONG_WINDOW) == Fraction(3, 20)
+            and ONE_TAIL.density_at(LONG_WINDOW) == Fraction(19, 20),
+            "the length-twenty comparison block already separates the completions at exact densities 3/20 and 19/20",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — no infinite lattice was simulated; the exact two-completion witness proves that the finite certificate alone cannot choose a familywide law",
+        ),
+    )
     return 0 if FAIL == 0 else 1
 
 

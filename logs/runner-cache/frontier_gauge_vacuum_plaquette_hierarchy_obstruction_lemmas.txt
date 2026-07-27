@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_hierarchy_obstruction_lemmas.py
-runner_sha256: 319bdc62b90fc23d5ce468e3a790eb86c8a79ddd8aec221ff8bd9e5ab73959c3
+runner_sha256: 3f305ab994095d47c531f8e330a7eae6a0a6d9d256dab6a35da75f910258888d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -183,6 +183,11 @@ status: ok
 ========================================================================================
  TOTAL: PASS=80, FAIL=0
 ========================================================================================
+per_element: PASS | the executed normalized U(1) Haar integral of the single plaquette character vanishes within 1e-10
+per_site: PASS | the one-plaquette site observable has the exact zero-coupling endpoint and reaches above 0.97 at the largest executed coupling
+per_mode: PASS | the five executed compact U(1) coupling modes are strictly increasing and remain between the Haar and concentration endpoints
+per_block: PASS | all first eight exact Taylor blocks of I_0 are nonzero, certifying the executed infinite-support obstruction to a polynomial cumulant
+lattice_wide: PASS | the finite-periodic compact-product reduction and endpoint lemmas pass across the complete executed bounded companion suite
 
  VERDICT: four lemmas (L1)-(L4) verified at numerical + structural
  precision under bounded admissions (BA-1)-(BA-4). The parent

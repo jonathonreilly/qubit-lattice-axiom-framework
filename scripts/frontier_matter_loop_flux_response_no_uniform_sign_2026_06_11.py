@@ -36,6 +36,10 @@ from typing import Iterable
 
 import numpy as np
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 T = 1.0
 NS = (8, 12, 16)
@@ -298,6 +302,28 @@ def main() -> None:
     print("  interacting matter, d=3, any beta-function number.  The")
     print("  Peskin-Schroeder formula (X3) is not used anywhere.  Statuses are")
     print("  pipeline-derived; the audit lane grades.")
+    emit_n5_resolution_certificate(
+        per_element=(
+            s1_ok and s1_err <= SPECTRUM_TOL,
+            "every executed massless twisted-ring eigenvalue agrees elementwise with the exact cosine spectrum at the declared tolerance",
+        ),
+        per_site=(
+            abs(e_gauge - e_flat) < 1e-12,
+            "the random zero-total-flux link transformation across all twelve ring sites leaves the ground-state energy invariant",
+        ),
+        per_mode=(
+            all(r[3] < 0 for r in even_rows) and all(r[3] > 0 for r in odd_rows),
+            "the twelve smooth N=4n filling modes split into opposite curvature signs for even and odd closed shells",
+        ),
+        per_block=(
+            all(v > 0 for _, v in flip) and all(j > 0.05 for _, j in jumps),
+            "both N=4n+2 half-filled blocks flip positive while both neighboring open-shell blocks exhibit resolved slope cusps",
+        ),
+        lattice_wide=(
+            rich_ok and flat < 1e-12,
+            "the complete finite-ring suite N=8,10,12,14,16 has consistent smooth responses and an exactly flux-flat filled band, but no thermodynamic-limit sign is claimed",
+        ),
+    )
     if FAIL:
         raise SystemExit(1)
 

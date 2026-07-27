@@ -15,6 +15,10 @@ import sys
 
 import numpy as np
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "SIGNED_GRAVITY_RESPONSE_LANE_STATUS_NOTE_2026-04-26.md"
@@ -405,6 +409,28 @@ def main() -> int:
     print("  SIGNED_GRAVITY_PHYSICAL_SECTOR_NOT_RETAINED")
     print()
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
+    emit_n5_resolution_certificate(
+        per_element=(
+            locked_ok,
+            "the executed sign-response consequence algebra maps the two orientation characters to opposite response signs",
+        ),
+        per_site=(
+            selector_ok and source_ok,
+            "all executed local Pauli selector and source candidates fail to canonically choose a signed-response section",
+        ),
+        per_mode=(
+            character_ok,
+            "the finite source-character enumeration identifies the determinant character as the unique nontrivial executed mode",
+        ),
+        per_block=(
+            raw_boundary_ok and host_ok,
+            "the N=6,8,12 Hodge-cycle blocks are eta-neutral while the hosted determinant orientation line remains an unselected Z2 torsor",
+        ),
+        lattice_wide=(
+            tensor_ok,
+            "checked and not executed — a global tensor lift and continuum localization require a supplied orientation source beyond the executed finite algebra",
+        ),
+    )
     return 0 if FAIL_COUNT == 0 else 1
 
 

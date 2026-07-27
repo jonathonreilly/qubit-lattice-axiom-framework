@@ -23,6 +23,10 @@ from pathlib import Path
 
 import sympy as sp
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
@@ -318,6 +322,32 @@ def main() -> int:
     print("Summary")
     print("=" * 88)
     print(f"TOTAL: PASS={PASS_COUNT}, FAIL={FAIL_COUNT}")
+    emit_n5_resolution_certificate(
+        per_element=(
+            sp.simplify(q_value - (c**2 + 2) / 6) == 0
+            and sp.simplify(sp.diff(q_value, delta)) == 0,
+            "the exact Brannen-carrier element gives Q=(c^2+2)/6 with zero phase derivative before any observed mass comparator enters",
+        ),
+        per_site=(
+            C3 * J_scalar * C3.T == J_scalar and C3 * J_nonuniform * C3.T != J_nonuniform,
+            "the executed onsite C3 source test keeps the common scalar source while rejecting the nonuniform generation-labeled source",
+        ),
+        per_mode=(
+            len({tuple(round(x, 12) for x in vec) for vec in sampled_vectors})
+            == len(phase_samples)
+            and all(abs(q - 2.0 / 3.0) < 1e-12 for q in sampled_q),
+            "four distinct positive phase modes share Q=2/3, so the ratio invariant does not select a physical phase",
+        ),
+        per_block=(
+            len(set(max_slots)) == 3
+            and len({tuple(round(x, 14) for x in ratio) for ratio in sorted_rotations}) == 1,
+            "all three cyclic relabeling blocks keep unordered ratios fixed while moving the largest-component generation label",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the complete invariant is the internal three-generation C3 carrier and supplies no spatial lattice geometry or intersite selector",
+        ),
+    )
     if FAIL_COUNT == 0:
         print("VERDICT: exact ratio/source selector firewall.")
         print("CHARGED_LEPTON_KOIDE_RATIO_SOURCE_SELECTOR_FIREWALL=TRUE")

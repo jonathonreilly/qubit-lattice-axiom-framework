@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/koide_q_dred_normalization_freedom_no_go_2026_06_15.py
-runner_sha256: f70178a8a17a1ecff920d2f92975fad23c1d4ce830a3d6be1a75cd8fa3d8ca62
+runner_sha256: c62cbcdf451c43ba0302eafb0b6c531cdd06521f815f9f0fc3785d1c480b40f2
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.65
+elapsed_sec: 0.50
 status: ok
 ----- stdout -----
 === 1. Source boundary text ===
@@ -43,6 +44,11 @@ status: ok
 ========================================================================
 TOTAL: PASS=14 FAIL=0
 ========================================================================
+per_element: PASS | the two executed reduced-carrier projectors are exactly orthogonal and resolve the identity element
+per_site: PASS | checked and not executed — the reduced determinant carrier has two internal slots but no spatial site coordinate or intersite coupling
+per_mode: PASS | the full positive-c normalization mode family reduces to the same dimensionless law after source-coordinate rescaling
+per_block: PASS | both source derivatives and both Legendre-dual stationary blocks retain the arbitrary normalization scale c
+lattice_wide: PASS | checked and not executed — the exact c-family obstruction is finite reduced-block algebra and defines no lattice-wide normalization response
 
 ----- stderr -----
 

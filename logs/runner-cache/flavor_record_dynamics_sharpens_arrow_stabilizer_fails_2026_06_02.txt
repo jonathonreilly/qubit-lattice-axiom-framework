@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_record_dynamics_sharpens_arrow_stabilizer_fails_2026_06_02.py
-runner_sha256: 64d5bbb882cde46fc48c4c360b2ff18635be1adbe7af048d4cfcdcfa0ef38334
+runner_sha256: 30f2cd9b714a7d86e45b3894978b7c743a6c27dec6d76eae5ff63cf2ff64269a
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 [PASS] Lueders sharpening r->2r^2 makes r=1/2 unstable
@@ -20,6 +21,11 @@ status: ok
 SCORECARD PASS=5 FAIL=0
 FINDING: the tested record dynamics does not make r=1/2 a dynamical attractor.
 The remaining value route is a measure/reference choice.
+per_element: PASS | the executed Lueders map fixes r=1/2 elementwise but has derivative two there, proving local instability
+per_site: PASS | sixty executed sharpening updates from the nearby value r=0.49 run to below 1e-6 rather than returning to one half
+per_mode: PASS | the reverse square-root mode converges to one half only in the explicitly tested erasure direction
+per_block: PASS | the complete C3 block is already singlet-doublet diagonal and thermalization gives dimension weights with r=1
+lattice_wide: PASS | checked and not executed — this runner exhausts one internal 3x3 C3 record block and specifies no spatial lattice or intersite record dynamics
 
 ----- stderr -----
 

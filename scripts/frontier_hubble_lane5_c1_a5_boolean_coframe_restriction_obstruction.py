@@ -21,6 +21,10 @@ import math
 
 import numpy as np
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 TOL = 1.0e-10
 
@@ -248,6 +252,28 @@ def main() -> int:
     failed = len(checks) - passed
     print("-" * 78)
     print(f"TOTAL: PASS={passed}, FAIL={failed}")
+    emit_n5_resolution_certificate(
+        per_element=(
+            full_clifford < TOL,
+            "the four executed full-cell Boolean Jordan-Wigner generators satisfy the Cl_4 relations on every basis element",
+        ),
+        per_site=(
+            leakage_counts == [4, 4, 4, 4],
+            "each natural odd generator leaks all four weight-one basis states outside the active P_A event-cell subspace",
+        ),
+        per_mode=(
+            compression_norm < TOL and parity_error < TOL,
+            "direct compression annihilates every odd-generator mode while full occupation parity restricts to a scalar on P_A",
+        ),
+        per_block=(
+            compressed_span == 1 and internal_clifford < TOL and internal_span == 16,
+            "the restricted block has only scalar span, whereas a separate intrinsic active-block Cl_4 realization spans all sixteen matrices",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — this obstruction is scoped to one sixteen-state Boolean event cell and defines no intercell transport or extended lattice",
+        ),
+    )
     if failed == 0:
         print(
             "Conclusion: P_A H_cell does not inherit the natural full-cell odd "

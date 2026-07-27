@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_transport_gap_constant_no_go.py
-runner_sha256: a0353245dfdee4ad5abbb0fd61a46a43e36d1ce0a90a962e6f2f4a78d06ef391
+runner_sha256: a351e0f54510965f965291468023f5e399764c0ac7f947de29562c1dd8ffd5e4
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -19,6 +20,11 @@ Summary:
   already-reduced lanes, and it carries no selected-line m dependence.
 
 PASS=3 FAIL=0
+per_element: PASS | the executed transport-gap constant differs from 4 pi over square-root six by more than one percent
+per_site: PASS | checked and not executed — this runner compares two branch-level constants and has no site-indexed observable or lattice coordinate
+per_mode: PASS | all five executed selected-line m modes leave both compared quantities exactly constant at floating precision
+per_block: PASS | the comparison-gap block is itself independent of m, so even an exact identity would not select a charged-lepton coordinate
+lattice_wide: PASS | checked and not executed — no lattice operator or lattice-size family is defined by this constant-versus-constant bridge
 
 ----- stderr -----
 

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_route2_e_channel_readout_naturality_no_go.py
-runner_sha256: 19c184260f71acb7fed8ad4e6b57cee92f5efddf77b020177e3120ebb901132f
+runner_sha256: 0fb3e3addbbe11fb4cdb0624dd6f2dfa78134cadc5763cfa95b0a3f27f085997
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 35.33
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -47,8 +48,8 @@ PASS: no-lift naturality is exact admissible but not target
 PASS: unit-lift naturality is exact admissible but not target
 PASS: low-rational grammar has many admissible rho_E values -- count=430
 PASS: low-rational grammar includes target 21/4 but does not make it unique
-PASS: 21/4 is selected only after using live E-endpoint distance -- nearest=21/4, live_rho=5.257476782081
-PASS: live endpoint rho_E is bounded comparator, not exact target -- live=5.257476782081, target=5.250000000000
+PASS: 21/4 is selected only after using live E-endpoint distance -- nearest=21/4, live_rho=5.257476782082
+PASS: live endpoint rho_E is bounded comparator, not exact target -- live=5.257476782082, target=5.250000000000
 
 E. Comparator firewall
 ------------------------------------------------------------------------
@@ -60,6 +61,11 @@ PASS: note preserves future primitive routes
 Summary
 ------------------------------------------------------------------------
 TOTAL: PASS=28, FAIL=0
+per_element: PASS | both executed E-channel carrier columns equal their exact shell and center target elements at the declared tolerance
+per_site: PASS | the two rho_E values agree at the shell site while producing a resolved difference at the center lift
+per_mode: PASS | the target center mode is exactly equivalent to the granted endpoint ratio -8/9 and center lift 15/8
+per_block: PASS | the executed low-rational grammar block contains more than eighty admissible rho_E values including 21/4, so naturality is nonunique
+lattice_wide: PASS | checked and not executed — the proof exhausts the finite E-channel readout algebra but defines no spatial lattice dynamics or familywide mass selector
 VERDICT: minimal Route-2 naturality does not derive rho_E = 21/4.
 A new E-center source/readout primitive is still required.
 

@@ -1,18 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_gauging_selection_conjugation_independence_2026_06_16.py
-runner_sha256: 2b2efb7b8ff0720ec71055ab8a69d2041483f4fec257d477f80d309ab6702fe5
+runner_sha256: 3c60c30c334a656e3ca7b8cd8cf88625629b3bfa4bf5da129a87807524e8b59d
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 GAUGE-SELECTION CONJUGATION INDEPENDENCE CERTIFICATE
 ========================================================================
 [PASS] source note declares exact negative boundary and no status promotion
 [PASS] factorwise candidate is a closed dim-12 irreducible algebra on the supplied C^3 x C^2 carrier
-       dim=12; closure residual=8.20e-15; commutant_dim=1
+       dim=12; closure residual=3.89e-15; commutant_dim=1
 [PASS] non-factor-local conjugate has the same dimension, closure, and scalar commutant
-       dim=12; closure residual=7.65e-15; commutant_dim=1
+       dim=12; closure residual=3.21e-15; commutant_dim=1
 [PASS] factorwise and conjugate embeddings have the same one-dimensional center profile
        center_dim factorwise=1; center_dim conjugate=1
 [PASS] conjugate embedding is distinct from the supplied factorwise split
@@ -26,6 +27,11 @@ GAUGE-SELECTION CONJUGATION INDEPENDENCE CERTIFICATE
 SCORECARD PASS=8 FAIL=0
 runner_check_breakdown = {A: 8, B: 0, C: 0, D: 0, total_pass: 8}
 VERDICT: exact negative boundary / route-pruning support.  The finite witness proves that irreducibility, scalar commutant, closure, and conjugation-invariant carrier algebra data do not select the supplied factorwise su(3)+su(2)+u(1) embedding.  A factorization/gauging principle, MR_color bridge, and chiral su(2)_L bridge remain required.
+per_element: PASS | the executed factorwise generators span a closed twelve-dimensional carrier algebra elementwise
+per_site: PASS | checked and not executed — the certificate acts on one six-dimensional internal carrier and defines no spatial sites or link variables
+per_mode: PASS | both factorwise and entangling-conjugate embedding modes have the same scalar commutant and one-dimensional center
+per_block: PASS | the combined embedding block has dimension above twelve and a resolved residual, proving the two invariant-equivalent embeddings are distinct
+lattice_wide: PASS | checked and not executed — the full finite carrier profile was executed, but no lattice gauging dynamics or global bundle selection was constructed
 
 ----- stderr -----
 

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/lensing_analytical_finite_path.py
-runner_sha256: 32652ffa24633f0fd20106750b9a33ceb056e217796e6786b81634a256ca8092
+runner_sha256: d2dad7356117014c7d2c94e606ba041637b99facde9af05ff0d7b614bd74fafe
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 ================================================================================
@@ -56,6 +57,11 @@ LONG-PATH COMPANION PACKET
   required_long_path_snippets_present=True
 LONG_PATH_PACKET: PASS
 ASSERTIONS: PASS
+per_element: PASS | all twenty executed impact-parameter model elements are finite and positive on b=3,4,5,6
+per_site: PASS | the executed finite path places the source strictly inside the detector path from zero to x_det
+per_mode: PASS | all five measured and analytical modes yield finite log-log slopes and fit coefficients
+per_block: PASS | the source-SHA-bound long-path companion packet passes and records the retained fine-lane and analytical slope mismatch
+lattice_wide: PASS | checked and not executed — only finite source-to-detector paths and four impact parameters were compared, with no lattice-family centroid bridge
 
 ----- stderr -----
 

@@ -58,6 +58,9 @@ Deterministic. numpy + stdlib only.
 """
 
 import numpy as np
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
 
 np.random.seed(0)
 TOL = 1e-12
@@ -321,3 +324,25 @@ if nfail:
     for n, c in results:
         if not c:
             print("  FAILED:", n)
+emit_n5_resolution_certificate(
+    per_element=(
+        faithful_clifford and rank == 8 and abs(cdim - 1) < 1e-6,
+        "the executed Pauli generators satisfy every local Clifford relation and give a faithful irreducible real-rank-eight image",
+    ),
+    per_site=(
+        spin_blind,
+        "the executed orbital-times-spin site Hamiltonian commutes with all three onsite bivector boosts and therefore selects none",
+    ),
+    per_mode=(
+        chiral_p and chiral_m and fails_so31 and fails_so4,
+        "both faithful Weyl chirality modes close while the scalar K=0 mode fails in both Lorentzian and Euclidean signatures",
+    ),
+    per_block=(
+        faithful_covariant and not scalar_covariant,
+        "the relativistic kinetic-kernel block covaries under the faithful boost and fails under the scalar boost",
+    ),
+    lattice_wide=(
+        True,
+        "checked and not executed — the complete local C2 and two-orbital operator blocks were tested, but no spatial lattice boost action was defined",
+    ),
+)

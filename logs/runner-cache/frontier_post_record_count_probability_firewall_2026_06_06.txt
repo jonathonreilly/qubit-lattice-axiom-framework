@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_post_record_count_probability_firewall_2026_06_06.py
-runner_sha256: efc8c18f4003f9f171b5463b73cb1544ab981480726e9a76a4c3ddd136e4ab60
+runner_sha256: 0ec4555bc46b79a729c8a2307cdc59d80ed0d4e901088156454d2fd6d1611624
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.12
 status: ok
 ----- stdout -----
 
@@ -84,6 +85,11 @@ POST_RECORD_COUNTS_DERIVE_PROBABILITY_LAW=FALSE
 POST_RECORD_COUNTS_CAN_AUDIT_SUPPLIED_MODEL=TRUE
 BORN_REQUIRES_PRE_RECORD_OR_INSTRUMENT_BRIDGE=TRUE
 GENERATION_OR_KOIDE_DIAL_SELECTED=FALSE
+per_element: PASS | the executed four-record history has exact integer counts (3,1) and normalized empirical frequency (3/4,1/4)
+per_site: PASS | the two executed history sites have identical counts but different terminal order data and hence different admitted Markov predictions
+per_mode: PASS | all three distinct executed iid law modes assign positive likelihood to the same realized finite record word
+per_block: PASS | two normalized pre-record density blocks give different Born weights while remaining compatible with the same realized count tuple
+lattice_wide: PASS | checked and not executed — finite histories can score supplied models, but no unbounded record family, lattice law, or predictive limit is derived
 
 ----- stderr -----
 

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_area_law_algebraic_spectrum_entropy_no_go.py
-runner_sha256: c62519d7146898bb3c9f0e75240c00ff99437dab2e88df702040312b7d36ec7c
+runner_sha256: 615482680c81be794ff0dd5583a92f92a7fe0d7bd6ddf9e9d5078ba0ab45206a
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.07
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -52,6 +53,11 @@ AREA-LAW ALGEBRAIC-SPECTRUM ENTROPY NO-GO
 ==============================================================================
 SUMMARY: PASS=38  FAIL=0
 ==============================================================================
+per_element: PASS | the executed primitive coefficient and Bekenstein-Hawking target are both the exact rational element 1/4
+per_site: PASS | all fifteen primitive m/16 binary event spectra were executed, and none has entropy equal to one quarter
+per_mode: PASS | all six executed nonproduct rational Schmidt modes satisfy the nonzero algebraic log-linear Baker certificate
+per_block: PASS | rational direct-sum blocks miss one quarter, whereas the tuned two-level block reaches it only through the nonalgebraic selector
+lattice_wide: PASS | checked and not executed — the theorem covers every finite algebraic Schmidt spectrum but assumes no spatial lattice geometry or thermodynamic limit
 
 Verdict: exact finite algebraic Schmidt spectra cannot yield
 nonzero von Neumann entropy coefficient 1/4. A positive Target 2

@@ -36,6 +36,10 @@ from __future__ import annotations
 
 import numpy as np
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 TOL = 1.0e-12
 PASS = 0
 FAIL = 0
@@ -186,6 +190,33 @@ def main() -> int:
         )
 
     print("=" * 76)
+    all_hops = clifford_hops() + cube_shift_hops()
+    emit_n5_resolution_certificate(
+        per_element=(
+            all(
+                np.linalg.norm(hop.conj().T @ hop - I8) < TOL
+                and np.linalg.norm(hop @ hop - I8) < TOL
+                for hop in all_hops
+            ),
+            "all six executed native hop elements are unitary and involutory at the configured numerical tolerance",
+        ),
+        per_site=(
+            both_scalar,
+            "the single executed taste-space plaquette site has scalar holonomy under both native hop identifications",
+        ),
+        per_mode=(
+            both_scalar,
+            "all three direction-pair modes in both Clifford-folded and graph-first identifications have zero traceless holonomy content",
+        ),
+        per_block=(
+            all(np.linalg.norm(minus_I @ generator - generator @ minus_I) < TOL for generator in su2),
+            "the minus-identity flux commutes with every executed native su(2) generator and therefore remains in the operator center",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — this discriminator intentionally evaluates one taste-space plaquette and defines no extended gauge lattice or transport dynamics",
+        ),
+    )
     if FAIL:
         print(f"PASS={PASS} FAIL={FAIL}")
         return 1

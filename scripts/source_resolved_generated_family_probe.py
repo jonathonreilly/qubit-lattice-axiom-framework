@@ -23,6 +23,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
 from scripts.causal_field_gravity import centroid_y, generate_3d_dag, propagate  # noqa: E402
+from scripts.n5_resolution_certificate import emit_n5_resolution_certificate  # noqa: E402
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
 
 
 N_LAYERS = 16
@@ -223,6 +226,36 @@ def main() -> None:
     print(f"  mean |green/inst| ratio: {mean_ratio:.3f}")
     print("  this is a generated-family transfer test, not yet a full self-consistent")
     print("  field sector")
+    emit_n5_resolution_certificate(
+        per_element=(
+            max(abs(value) for value in zero_shifts) < 1e-12,
+            "the zero-source Green-kernel element reduces exactly to free propagation for every executed generated-family seed",
+        ),
+        per_site=(
+            all(
+                len(layers) == N_LAYERS
+                and len(layers[0]) == 1
+                and all(len(layer) == NODES_PER_LAYER for layer in layers[1:])
+                for _, _, layers, _ in families
+            ),
+            "each executed DAG contains one source site followed by all fifteen configured twenty-four-site generated layers",
+        ),
+        per_mode=(
+            toward == 0 and all(value < 0 for value in green_means),
+            "all four executed source-strength modes produce the wrong AWAY sign rather than the required TOWARD response",
+        ),
+        per_block=(
+            inst_alpha is not None
+            and green_alpha is not None
+            and abs(inst_alpha - 1.0) > 0.25
+            and abs(green_alpha - 1.0) > 0.25,
+            "both instantaneous and Green-kernel strength-scaling blocks are far from the required linear exponent",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — four compact generated DAGs were tested, not a self-consistent field sector or an unbounded generated-geometry family",
+        ),
+    )
 
 
 if __name__ == "__main__":

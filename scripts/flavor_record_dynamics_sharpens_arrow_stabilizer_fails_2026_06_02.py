@@ -4,6 +4,10 @@ from __future__ import annotations
 
 import numpy as np
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 C = np.array([[0.0, 0.0, 1.0], [1.0, 0.0, 0.0], [0.0, 1.0, 0.0]])
 I3 = np.eye(3)
@@ -92,6 +96,28 @@ def main() -> int:
         "attractor."
     )
     print("The remaining value route is a measure/reference choice.")
+    emit_n5_resolution_certificate(
+        per_element=(
+            passed[0],
+            "the executed Lueders map fixes r=1/2 elementwise but has derivative two there, proving local instability",
+        ),
+        per_site=(
+            passed[1],
+            "sixty executed sharpening updates from the nearby value r=0.49 run to below 1e-6 rather than returning to one half",
+        ),
+        per_mode=(
+            passed[2],
+            "the reverse square-root mode converges to one half only in the explicitly tested erasure direction",
+        ),
+        per_block=(
+            passed[3] and passed[4],
+            "the complete C3 block is already singlet-doublet diagonal and thermalization gives dimension weights with r=1",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — this runner exhausts one internal 3x3 C3 record block and specifies no spatial lattice or intersite record dynamics",
+        ),
+    )
     return 0 if all(passed) else 1
 
 

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dynamics_coupling_residual_classifier_2026_06_06.py
-runner_sha256: 19b6b6b8dd10c39a6a40338c5d5f804f13d47fdb8726e4e5c9ed3aa765442529
+runner_sha256: a06f6f73750ef0b458a56ba19e77c51ef1f8eed49c937806bd6aa430b13d52e5
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 
@@ -52,6 +53,11 @@ Scorecard
 ========================================================================
 PASS=18 FAIL=0
 FINDING: record preservation constrains an allowed dynamics class, but leaves coupling magnitude, coefficient ratios, nontriviality, and clock-rate normalization open.
+per_element: PASS | the two exact record atoms resolve identity and each commutes with the symbolic one-parameter Hamiltonian H(g)
+per_site: PASS | all three executed local Hamiltonian choices g=0,1,2 preserve the same pair of record projectors
+per_mode: PASS | the two distinct coupling-clock modes (g,a)=(1,2) and (2,1) produce the same exact transfer operator
+per_block: PASS | the four-atom block preserves every projector while retaining both independent symbolic coefficients x and y
+lattice_wide: PASS | checked and not executed — this classifier exhausts finite two-atom and four-atom record algebras and defines no spatial lattice coupling family
 
 ----- stderr -----
 

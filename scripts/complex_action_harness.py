@@ -30,6 +30,10 @@ AUDIT_TIMEOUT_SEC = 1800
 
 import math
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 BETA = 0.8
 K = 5.0
 H = 0.5
@@ -246,21 +250,25 @@ def main() -> None:
     # Phase 1: gamma sweep (1 propagation each)
     print(f"{'gamma':>8s} {'deflection':>12s} {'direction':>10s} {'escape':>10s}")
     print("-" * 48)
+    gamma_rows = []
     for gamma in GAMMAS:
         amps = _propagate_complex(lat, field, K, gamma)
         delta = _centroid_z(amps, lat) - z_free
         p_det = _det_prob(amps, lat)
         escape = p_det / p_free if p_free > 1e-30 else 0.0
         direction = "TOWARD" if delta > 0 else "AWAY"
+        gamma_rows.append((gamma, delta, escape))
         print(f"{gamma:8.2f} {delta:+12.6e} {direction:>10s} {escape:10.4f}")
 
     # Phase 2: Born test at key gammas (7 propagations each)
     print()
     print("BORN TEST (|I3|/P with gravitational field)")
     born_gammas = [0.0, 0.5, 1.0]
+    born_results = []
     for gamma in born_gammas:
         print(f"  running gamma={gamma:.1f}...", flush=True)
         born_i3 = _born_test(lat, field, K, gamma)
+        born_results.append(born_i3)
         print(f"  gamma={gamma:.1f}: |I3|/P = {born_i3:.2e}")
 
     # Phase 3: Reduction check
@@ -279,10 +287,12 @@ def main() -> None:
     print("SOURCE-STRENGTH SCALING at gamma=0.5 (free-gamma ansatz)")
     gamma_test = 0.5
     strengths = [0.025, 0.05, 0.1, 0.2]
+    strength_rows = []
     for s in strengths:
         f = _inst_field(lat, s, SOURCE_Z)
         amps = _propagate_complex(lat, f, K, gamma_test)
         delta = _centroid_z(amps, lat) - z_free
+        strength_rows.append((s, delta))
         print(f"  s={s:.3f}: delta={delta:+.6e}")
 
     print()
@@ -294,6 +304,28 @@ def main() -> None:
     print("  escape < 1 means net absorption in this packet, not horizon physics")
     print("  escape > 1 means net amplification in this packet")
     print("  no gamma law, horizon observable, or unification theorem is derived here")
+    emit_n5_resolution_certificate(
+        per_element=(
+            abs(std_delta - cx0_delta) < 1e-12,
+            "the executed gamma=0 complex-action propagation matches the standard valley-linear deflection element to 1e-12",
+        ),
+        per_site=(
+            all(math.isfinite(value) for row in gamma_rows for value in row[1:]),
+            "every detector-site aggregate in the ten-row gamma sweep has finite deflection and finite escape probability",
+        ),
+        per_mode=(
+            max(born_results) < 1e-9,
+            "all three executed gravitational-field Born modes have normalized third-order interference below 1e-9",
+        ),
+        per_block=(
+            len(gamma_rows) == len(GAMMAS) and len(strength_rows) == len(strengths),
+            "the live run completed all ten gamma blocks and all four source-strength blocks without dropping a configured case",
+        ),
+        lattice_wide=(
+            len({round(delta, 12) for _, delta, _ in gamma_rows}) > 1,
+            "the complete finite lattice sweep exhibits distinct gamma-dependent outcomes, so the runner supplies no lattice-wide gamma selector or horizon theorem",
+        ),
+    )
 
 
 if __name__ == "__main__":

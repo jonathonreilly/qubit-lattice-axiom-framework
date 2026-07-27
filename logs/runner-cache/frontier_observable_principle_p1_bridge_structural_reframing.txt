@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_observable_principle_p1_bridge_structural_reframing.py
-runner_sha256: be706d26da79108d42bbc630174cff7df3462e9a605604ac154023d8295daa71
+runner_sha256: 122cb663c90536a7766678a6527b6768bdae33aef9c6582336d23a246877d5e7
+input_fingerprint_sha256: 291414c395cc8cc4957f303ed8a3d2a222977e724d71ea6327dc553c9a5f70d0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.19
+elapsed_sec: 0.90
 status: ok
 ----- stdout -----
 
@@ -80,6 +81,11 @@ T10: source-note boundary declarations present
 ==============================================================================
 PASS=15 FAIL=0
 ==============================================================================
+per_element: PASS | the executed two-element block-diagonal determinant factors exactly into the product of its component determinants
+per_site: PASS | the executed cross-block second derivative of the logarithmic generator vanishes exactly between the two independent coordinates
+per_mode: PASS | the Bell-Mobius moment-cumulant transforms round-trip exactly for one rational mode family through order four
+per_block: PASS | the admitted logarithmic coordinate is additive on the complete independent two-block product
+lattice_wide: PASS | checked and not executed — the structural reframing uses finite direct sums and formal cumulants, not a spatial lattice or thermodynamic limit
 
 ----- stderr -----
 

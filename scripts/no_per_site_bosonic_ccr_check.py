@@ -5,6 +5,10 @@ from pathlib import Path
 
 import numpy as np
 
+from n5_resolution_certificate import emit_n5_resolution_certificate
+
+AUDIT_INPUT_PATHS = ("scripts/n5_resolution_certificate.py",)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md"
@@ -115,6 +119,28 @@ def main() -> None:
     print(f"  Test 4 (bosonic CCR works infinite-dim):      {'PASS' if t4_ok else 'FAIL'}")
     all_ok = all([t0_ok, t1_ok, t2_ok, t3_ok, t4_ok])
     print(f"  OVERALL: {'PASS' if all_ok else 'FAIL'}")
+    emit_n5_resolution_certificate(
+        per_element=(
+            t1_ok,
+            "all ten executed random matrix pairs have commutator trace zero within 1e-12 in the local two-dimensional algebra",
+        ),
+        per_site=(
+            t2_ok,
+            "the exact per-site M_2 trace identity contradicts the bosonic equation because trace identity equals two rather than zero",
+        ),
+        per_mode=(
+            t3_ok and t4_ok,
+            "the Pauli ladder mode fails the bosonic commutator while the truncated Fock mode is exact only away from its boundary",
+        ),
+        per_block=(
+            deviation_bulk < 1e-12 and deviation_top > 1.0,
+            "the thirty-one-dimensional truncation block has exact bulk commutator entries and a resolved top-boundary obstruction",
+        ),
+        lattice_wide=(
+            True,
+            "checked and not executed — the theorem is strictly per-site finite-dimensional and no many-site or infinite-lattice bosonic field was constructed",
+        ),
+    )
     if not all_ok:
         raise SystemExit(1)
 

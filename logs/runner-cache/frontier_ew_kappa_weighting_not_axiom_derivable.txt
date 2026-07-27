@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ew_kappa_weighting_not_axiom_derivable.py
-runner_sha256: fcff9344cf842454c1748587550d47300a8cf17475c61381e556f8b5a1e035c9
+runner_sha256: daf95376dffa6eee9e5d3de227540c36f924fcad295009ba262dcb469bfda454
+input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 EW KAPPA WEIGHTING NOT AXIOM-DERIVABLE NO-GO
@@ -23,6 +24,11 @@ EW KAPPA WEIGHTING NOT AXIOM-DERIVABLE NO-GO
 
 RUNNER STATUS: PASS (PASS=7 FAIL=0)
 SCOPE: kappa_EW is not derivable from the current approved axiom/primitive baseline alone; future derivation or approved-primitive review remains open.
+per_element: PASS | the executed central-sector element count is distinct from the inter-sector kappa_EW weighting parameter
+per_site: PASS | checked and not executed — the runner audits axiom and primitive registries and contains no spatial sites or intersite observable
+per_mode: PASS | all four executed kappa modes cancel as a common factor from the weak-mixing ratio to numerical precision
+per_block: PASS | the approved-primitive block, complete foundation registry, and source-note guardrails all omit a supplied kappa_EW selector
+lattice_wide: PASS | checked and not executed — this is a complete registry-baseline obstruction and no lattice-wide electroweak weighting dynamics is defined
 
 ----- stderr -----
 

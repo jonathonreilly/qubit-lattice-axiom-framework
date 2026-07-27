@@ -220,6 +220,20 @@ class ObligationReconciliationRuleTest(unittest.TestCase):
         )
         self.assertEqual(kinds(ALIGNED_ENTRY, note=note), set())
 
+    def test_a_dropped_fence_still_separates_the_paragraphs_it_split(self):
+        # A fence between two paragraphs with no blank lines is a paragraph
+        # break. Removing its lines outright would splice the paragraphs into
+        # one and make the second paragraph part of the compared target.
+        note = (
+            "# Example\n\n## Exact target\n\nDerive the widget carrier.\n"
+            "```\nsample\n```\n"
+            "A second paragraph that is not the target.\n\n"
+            "## Closure criterion\n\nA closing theorem constructs it.\n"
+        )
+        entry = dict(ALIGNED_ENTRY)
+        entry["target"] = "Derive the widget carrier."
+        self.assertNotIn("target_mismatch", kinds(entry, note=note))
+
     def test_live_obligation_notes_parse_to_their_four_sections(self):
         # The fence/heading rules must not change the live population's parse.
         registry = json.loads(

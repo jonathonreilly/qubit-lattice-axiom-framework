@@ -594,9 +594,14 @@ def markdown_sections(text: str) -> dict[str, str]:
                 delimiter = True
         if delimiter or fence_char is not None:
             # Fenced content is sample text: it neither opens a section nor
-            # belongs to one. Dropping it matters because a fence may interrupt
-            # a paragraph with no blank line, and the target comparison reads
-            # the section's opening paragraph.
+            # belongs to one. This matters because a fence may interrupt a
+            # paragraph with no blank line, and the target comparison reads the
+            # section's opening paragraph. Each fenced line becomes a blank so
+            # the content is gone but the paragraph break the fence created
+            # survives -- dropping the lines outright would splice the
+            # paragraphs on either side of the fence into one.
+            if current is not None:
+                sections[current].append("")
             continue
         heading = re.match(r"^ {0,3}##(?!#)\s+(.*?)(?:\s+#+)?\s*$", line)
         if heading and heading.group(1).strip():

@@ -341,7 +341,7 @@ def semantic_certificate():
             packet.rotor != (rotor + 1) % 16,
             packet.carry != int(rotor == 15),
             packet.delta_mask != 66,
-            packet.endpoint != packet.binder != packet.valid,
+            not (packet.endpoint == packet.binder == packet.valid),
             packet.actuality != packet.admissibility,
             packet.admissibility != packet.law_domain,
         ))

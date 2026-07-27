@@ -53,12 +53,12 @@
     "primary_spatial_runner": {
       "path": "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
       "sha256": "6a8c8f8600289c49bff2a20ef22d59f10572b29e7122f016b8fbbb7265bd86f6",
-      "report_sha256": "d1b2fdf4cb9b158e3d3a31873cd4da2629d7184d9e58f88925095a02bdb5fce3"
+      "report_sha256": "e601af493ea5043df212a192feea9f95428cbea04681e3db429c030581325d96"
     },
     "primary_interval_runner": {
       "path": "scripts/frontier_cycle718_cycle612_interval_bridge_2026_07_26.py",
-      "sha256": "9e343d06fd98cb1b2bfa6072f8a570740b9e53ddf5035316f2dc752d35d4d678",
-      "report_sha256": "b686104d33ae65ef51b667b85ce3b8e1428c14cebd9582d2b26927315acdeb14"
+      "sha256": "f197b896ec97def6dabed308b3b3cd5fa5fd307878e50ab5a1ffc73208f0946f",
+      "report_sha256": "745ee0564aa2b529a3834a1f26355779166214332497c37c82c5f1c81e4b6ae8"
     },
     "support_runners": {
       "carrier_return_sha256": "c9196fdfe2ed6101f7f62ac3552c9fb4944276b67f9f82fe326c89f8c21e23d7",
@@ -73,9 +73,9 @@
       "token_relative_relay_sha256": "bd81cb3f73842d79dffdc9743c6a207dc20cc62275ba75d603ad6d49bd26c250",
       "three_bank_physical_route_sha256": "c3cf031df7909ae1873de720d7768cc88f9d12c0c7fda3526d1b9d0b8cefba53",
       "spatial_ack_export_sha256": "2b5bb84df03d43de6f223ae8de9e6686793b252f05f7b141143d49f06e98eb3f",
-      "spatial_ack_physical_sha256": "d07a953af92bc752516f79d8e9fffcda11644364546c6c661a2fb01d459ca477",
-      "cycle612_interval_sha256": "b9e72f44b8211603f1ae0804f9d860f9ec59a2d459f219f047414c01beccc9a8",
-      "primary_input_fingerprint_sha256": "35c95485250d36b4009c94faf25713b9ea8b32aff9213b9a9ccc519cbb41ecc5"
+      "spatial_ack_physical_sha256": "07e7c989960f07fbcb93ab2cde45d83ecc09ba112ebf330595155b709018dfbb",
+      "cycle612_interval_sha256": "695f91f77f21590c5e083d7ffa24b1258af6cc070dfd288b78461d404e812829",
+      "primary_input_fingerprint_sha256": "fb3fe192dd3805b08d3cc0f1901874e6a0adbbd28a2f035896dc3b4c909fa6be"
     }
   }
 }

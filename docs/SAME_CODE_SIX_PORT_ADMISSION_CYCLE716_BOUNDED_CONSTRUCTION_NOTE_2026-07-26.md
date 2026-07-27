@@ -51,7 +51,7 @@ tuples and the unchanged discriminator identifies `unique_quorum` with all
 four separating witnesses.  No winner convention is needed because every
 admitted word has exactly one bit.
 
-The odd-shell word is a second positive primitive candidate construction, but
+The odd-shell word is a second positive gate-level candidate construction, but
 its all-alternatives emission is not type-correct for the landed grammar:
 26/64 words, exactly the accepted weight-three and weight-five rows, are
 refused at `W-losers1`.  This is a precise representation mismatch.  It is not
@@ -154,7 +154,7 @@ Derived on that domain:
 - coherent archive, admitted-alternative, rejected-alternative, collision, and
   empty outputs;
 - a semantic unique-quorum stream accepted and identified by the unchanged
-  discriminator, plus an exact primitive candidate-word implementation;
+  discriminator, plus an exact gate-level candidate-word implementation;
 - proper-cubic covariance of the candidate relation, physical route-geometry
   compatibility, and preservation of the imported free/seam/contact/mass
   fixtures.

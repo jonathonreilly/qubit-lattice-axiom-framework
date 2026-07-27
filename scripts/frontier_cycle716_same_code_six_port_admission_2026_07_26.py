@@ -749,7 +749,7 @@ def expand_candidate_to_abstract(
 
 
 def expanded_candidate_execution_certificate(law: str) -> dict[str, object]:
-    """Execute the actual H/S/CNOT/T primitive candidate word on all 64 rows."""
+    """Execute the actual H/S/CNOT/T gate-level candidate word on all 64 rows."""
     primitive_word = expand_candidate_to_abstract(law, INPUT, 6)
     inverse_word = tuple(
         C712.AGate("inverse_" + gate.kind, gate.wires, gate.matrix.conj().T)
@@ -1187,7 +1187,7 @@ def main() -> int:
             "complete unique-quorum and odd-shell Boolean relations by fixed local gates",
             "coherent archive/eligible/rejected/collision/empty outputs",
             "semantic unique-quorum lane-zero discriminator stream without a winner convention",
-            "primitive candidate-word execution plus routed-word geometry compatibility",
+            "gate-level candidate-word execution plus routed-word geometry compatibility",
             "proper-cubic scalar/directional covariance of the candidate output relation",
         ],
         "open": [

@@ -1,630 +1,25 @@
 #!/usr/bin/env python3
-"""Exact algebra certificate for the Cl(3) Pauli-irrep classification.
-
-The runner constructs the complex Clifford algebra from the defining
-relations, rather than starting inside either Pauli representation.  It
-certifies:
-
-1. an exact eight-element monomial basis and its complete multiplication table;
-2. the ordered volume element omega = gamma_1 gamma_2 gamma_3, its sign,
-   centrality, and omega^2 = -1;
-3. the complementary central idempotents e_+ = (1 - i omega)/2 and
-   e_- = (1 + i omega)/2;
-4. two complementary four-dimensional two-sided ideals;
-5. explicit algebra isomorphisms from those ideals to M_2(C);
-6. the resulting two irreducible complex module classes and the faithfulness
-   distinction between the complexification and the original real algebra;
-7. an exhaustive center and simple-module classification; and
-8. the unitary-equivalence refinement under the explicit *-representation
-   (Hermitian-generator) hypothesis.
-
-All arithmetic is exact SymPy symbolic arithmetic.  The algebra,
-ideal-isomorphism, module-classification, and conditional unitary checks are
-rational/Gaussian-rational.
-Four explicit modes are provided: ``normal``, ``independent``, ``hostile``, and
-``intentional-failure``.  The independent mode reconstructs the table with a
-separate word-insertion reducer.  The last mode promotes a rejected hostile
-fixture to a primary assertion, so the process must exit nonzero.
-"""
+"""Compact exact certificate for the Cl(3) Pauli-irrep theorem."""
 
 from __future__ import annotations
 
-import argparse
-from dataclasses import dataclass, replace
-import itertools
-from typing import Sequence
+from cl3_pauli_irrep_exact_support_2026_05_10 import *
 
-try:
-    import sympy as sp
-    from sympy import I, Matrix, Rational, eye, simplify, symbols, zeros
-except ImportError:
-    print("FAIL: sympy is required for exact algebra")
-    raise SystemExit(1)
-
-
-DIM = 8
-PASS = 0
-FAIL = 0
-
-CANONICAL_MASKS = (0, 1, 2, 4, 3, 5, 6, 7)
-BASIS_NAME = {
-    0: "1",
-    1: "g1",
-    2: "g2",
-    4: "g3",
-    3: "g12",
-    5: "g13",
-    6: "g23",
-    7: "omega",
-}
-
-RESOLUTION_CLASSES = (
-    "per_element",
-    "per_site",
-    "per_mode",
-    "per_block",
-    "lattice_wide",
+AUDIT_INPUT_PATHS = (
+    "scripts/cl3_pauli_irrep_exact_support_2026_05_10.py",
+    "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py",
 )
-COMPLEX_FAITHFULNESS_BOUNDARY = (
-    "irreducible complexified A-module faithfulness boundary"
-)
-BARE_UNITARY_BOUNDARY = (
-    "bare complex-linear equivalence to unitary equivalence boundary"
-)
-
-
-@dataclass(frozen=True)
-class ResolutionRecord:
-    """One canonical N5 resolution bound to its live exact certificate."""
-
-    resolution_class: str
-    disposition: str
-    certificate: tuple[tuple[str, object], ...]
-    description: str
-
-
-@dataclass(frozen=True)
-class NoGoRoute:
-    """One computed N1 route emitted only after its exact check closes."""
-
-    route_id: str
-    route_class: str
-    mechanism: str
-    attempt: str
-    outcome: str
-    honesty_marker: str
-    closed: bool
-
-
-def make_resolution_records(
-    *,
-    plus_kernel_dimension: int,
-    minus_kernel_dimension: int,
-    plus_real_rank: int,
-    minus_real_rank: int,
-    central_action_count: int,
-    plus_ideal_dimension: int,
-    minus_ideal_dimension: int,
-    combined_map_rank: int,
-) -> tuple[ResolutionRecord, ...]:
-    """Build the five ordered resolutions directly from current exact ranks."""
-
-    return (
-        ResolutionRecord(
-            "per_element",
-            "PROVED",
-            (
-                ("plus_kernel_dimension", plus_kernel_dimension),
-                ("minus_kernel_dimension", minus_kernel_dimension),
-            ),
-            "per_element: each exact irreducible action kills a computed "
-            f"nonzero opposite-ideal element, with kernel dimensions "
-            f"({plus_kernel_dimension},{minus_kernel_dimension}); this proves "
-            "the complexified faithfulness boundary element by element.",
-        ),
-        ResolutionRecord(
-            "per_site",
-            "ABSTRACT_COPY_ONLY",
-            (
-                ("plus_real_rank", plus_real_rank),
-                ("minus_real_rank", minus_real_rank),
-            ),
-            "per_site: one abstract algebra copy has computed real ranks "
-            f"({plus_real_rank},{minus_real_rank}) while both complexified "
-            "kernels remain nonzero; this site-shaped check is formal and "
-            "does not identify a physical site carrier.",
-        ),
-        ResolutionRecord(
-            "per_mode",
-            "PROVED",
-            (("central_action_count", central_action_count),),
-            "per_mode: the exact central-action solve has "
-            f"{central_action_count} chirality choices and forces a simple "
-            "module to choose exactly one, so the opposite chirality mode "
-            "lies in its kernel.",
-        ),
-        ResolutionRecord(
-            "per_block",
-            "PROVED",
-            (
-                ("plus_ideal_dimension", plus_ideal_dimension),
-                ("minus_ideal_dimension", minus_ideal_dimension),
-                ("combined_map_rank", combined_map_rank),
-            ),
-            "per_block: the two computed central blocks have dimensions "
-            f"({plus_ideal_dimension},{minus_ideal_dimension}); their direct-"
-            f"sum action has rank {combined_map_rank}, while either irreducible "
-            "block action kills the other block exactly.",
-        ),
-        ResolutionRecord(
-            "lattice_wide",
-            "NOT_TESTED_OUT_OF_SCOPE",
-            (
-                ("resolution_tested", False),
-                ("lattice_wide_claim_made", False),
-            ),
-            "lattice_wide: NOT TESTED and outside the theorem scope; no "
-            "lattice-wide negative statement is made. The note expressly "
-            "limits both boundaries to the abstract finite-algebra/module "
-            "classification.",
-        ),
-    )
-
-
-def resolution_records_valid(
-    records: Sequence[ResolutionRecord],
-) -> bool:
-    """Reject missing, stale, reordered, duplicated, or false N5 evidence.
-
-    The oracle is intentionally independent of ``make_resolution_records``.
-    Comparing two calls to the same constructor would reproduce a false
-    disposition instead of detecting it.
-    """
-
-    names = tuple(record.resolution_class for record in records)
-    expected_dispositions = {
-        "per_element": "PROVED",
-        "per_site": "ABSTRACT_COPY_ONLY",
-        "per_mode": "PROVED",
-        "per_block": "PROVED",
-        "lattice_wide": "NOT_TESTED_OUT_OF_SCOPE",
-    }
-    expected_certificates = {
-        "per_element": (
-            ("plus_kernel_dimension", 4),
-            ("minus_kernel_dimension", 4),
-        ),
-        "per_site": (
-            ("plus_real_rank", 8),
-            ("minus_real_rank", 8),
-        ),
-        "per_mode": (("central_action_count", 2),),
-        "per_block": (
-            ("plus_ideal_dimension", 4),
-            ("minus_ideal_dimension", 4),
-            ("combined_map_rank", 8),
-        ),
-        "lattice_wide": (
-            ("resolution_tested", False),
-            ("lattice_wide_claim_made", False),
-        ),
-    }
-    return (
-        names == RESOLUTION_CLASSES
-        and len(set(names)) == len(RESOLUTION_CLASSES)
-        and all(
-            record.disposition
-            == expected_dispositions[record.resolution_class]
-            and record.certificate
-            == expected_certificates[record.resolution_class]
-            for record in records
-        )
-    )
-
-
-def emit_development_no_go_evidence(
-    *,
-    routes: Sequence[NoGoRoute],
-    resolutions: Sequence[ResolutionRecord],
-    boundaries_scoped: bool,
-    prior_witness_count: int,
-    combined_map_rank: int,
-    combined_module_reducible: bool,
-    hermitian_refinement_closes: bool,
-    standard_complex_kernel_dimension: int,
-    local_echo_controls_closed: int,
-) -> None:
-    """Emit a complete development-tier N1-N8 disposition after live checks."""
-
-    gate_results = (
-        ("at least five N1 routes", len(routes) >= 5),
-        (
-            "at least five distinct N1 route classes",
-            len({route.route_class for route in routes}) >= 5,
-        ),
-        ("every N1 route closed", all(route.closed for route in routes)),
-        ("N5 records match the independent oracle", resolution_records_valid(resolutions)),
-        ("negative boundaries remain honestly scoped", boundaries_scoped),
-        ("no prior witness is silently reused", prior_witness_count == 0),
-        ("combined complex action is faithful", combined_map_rank == DIM),
-        ("combined faithful carrier is reducible", combined_module_reducible),
-        ("Hermitian refinement closes", hermitian_refinement_closes),
-        (
-            "irreducible complex action has four-dimensional kernel",
-            standard_complex_kernel_dimension == 4,
-        ),
-        ("at least two local echo controls close", local_echo_controls_closed >= 2),
-    )
-    failed_gates = [label for label, result in gate_results if not bool(result)]
-    if failed_gates:
-        section("Part G: live development-tier N1-N8 evidence")
-        for label in failed_gates:
-            check(f"G fail-closed evidence gate: {label}", False)
-        print("  N1-N8 evidence suppressed because a live gate failed.")
-        return
-
-    section("Part G: live development-tier N1-N8 evidence")
-    for route in routes:
-        print(
-            "  N1_ROUTE "
-            f"route_id={route.route_id}; route_class={route.route_class}; "
-            f"honesty_marker={route.honesty_marker}; disposition=CLOSED; "
-            f"mechanism={route.mechanism}; attempt={route.attempt}; "
-            f"outcome={route.outcome}"
-        )
-
-    print(
-        "  N2_DISPOSITION open_walls=0; pairwise wall-independence is "
-        "not applicable. The note contains two separately scoped exact "
-        "boundaries, not unresolved or load-bearing conditions: ("
-        f"{COMPLEX_FAITHFULNESS_BOUNDARY}; {BARE_UNITARY_BOUNDARY}); "
-        "the standard Hermitian Pauli action retains a four-dimensional "
-        "complex kernel, while the non-Hermitian similar action independently "
-        "has a nonscalar Gram matrix."
-    )
-    print(
-        "  N3_DISPOSITION hidden-wall scan closed for the finite algebra "
-        "certificate: exact inputs are the displayed Clifford relations and "
-        "finite-dimensional unital complex modules; Hermitian generators are "
-        "kept explicit only for the conditional unitary refinement; no "
-        "physical carrier, primitive, imported value, or lattice limit enters."
-    )
-    print(
-        "  N4_DISPOSITION prior_witnesses="
-        f"{prior_witness_count}; every N1 route is ATTEMPTED in the current "
-        "execution, so no prior residual is reused or mismatched."
-    )
-
-    for record in resolutions:
-        print(f"  N5_RESOLUTION {record.description}")
-
-    print(
-        "  N6_DISPOSITION partial-closure paths are explicit and require no "
-        "new axiom, primitive, admission class, or imported value: stacking "
-        f"rho_+ direct-sum rho_- gives exact complex map rank {combined_map_rank} "
-        "but is reducible, while the named Hermitian-generator condition gives "
-        "the unitary refinement without changing the four-dimensional kernel "
-        "of either irreducible complexified action."
-    )
-
-    faithful_route = next(
-        route for route in routes if route.route_id == "faithful-direct-sum-carrier"
-    )
-    print(
-        "  N7_STEELMAN_ARGUMENT "
-        f"mechanism={faithful_route.mechanism}; attempt={faithful_route.attempt}; "
-        "argument=a hostile reader can stack both chiral actions and obtain a "
-        "faithful representation, apparently contradicting the stated "
-        "complexified faithfulness boundary."
-    )
-    print(
-        "  N7_STEELMAN_RESOLUTION "
-        f"{COMPLEX_FAITHFULNESS_BOUNDARY} resolved: the stacked action has "
-        f"rank {combined_map_rank} precisely because it contains both central "
-        "summands, and the computed invariant two-dimensional summands make it "
-        "reducible; each irreducible action still has a four-dimensional "
-        "opposite-ideal kernel."
-    )
-    print(
-        "  N8_DISPOSITION restricted development packet has zero prior "
-        "witnesses; two analogous failure shapes are rerun locally as the "
-        "quotient-only-idempotents and unitary-without-hermitian hostile "
-        f"controls, with closed_controls={local_echo_controls_closed}; broader "
-        "repository echo indexing remains audit-orchestrator-owned."
-    )
-
-
-def check(label: str, result: object, detail: str = "") -> bool:
-    """Record one computed check."""
-    global PASS, FAIL
-    ok = bool(result)
-    if ok:
-        PASS += 1
-        status = "PASS (A)"
-    else:
-        FAIL += 1
-        status = "FAIL (A)"
-    suffix = f"  ({detail})" if detail else ""
-    print(f"  [{status}] {label}{suffix}")
-    return ok
-
-
-def section(title: str) -> None:
-    print()
-    print("-" * 96)
-    print(title)
-    print("-" * 96)
-
-
-def blade(mask: int) -> Matrix:
-    return Matrix(
-        [sp.Integer(1) if row == mask else sp.Integer(0) for row in range(DIM)]
-    )
-
-
-def blade_product(left_mask: int, right_mask: int) -> tuple[int, int]:
-    """Return the exact sign and output mask for Euclidean Cl(3,0)."""
-    swaps = 0
-    for left_bit in range(3):
-        if left_mask & (1 << left_bit):
-            swaps += sum(
-                1
-                for right_bit in range(left_bit)
-                if right_mask & (1 << right_bit)
-            )
-    sign = -1 if swaps % 2 else 1
-    return sign, left_mask ^ right_mask
-
-
-PRODUCT_TABLE = [
-    [blade_product(left, right) for right in range(DIM)]
-    for left in range(DIM)
-]
-ACTIVE_TABLE = PRODUCT_TABLE
-
-
-def word_product(left_mask: int, right_mask: int) -> tuple[int, int]:
-    """Independent reducer: insert right-word letters into a canonical word."""
-    word = [bit for bit in range(3) if left_mask & (1 << bit)]
-    sign = 1
-    for bit in range(3):
-        if not right_mask & (1 << bit):
-            continue
-        greater = sum(1 for present in word if present > bit)
-        if greater % 2:
-            sign = -sign
-        if bit in word:
-            word.remove(bit)
-        else:
-            word.append(bit)
-            word.sort()
-    out_mask = sum(1 << bit for bit in word)
-    return sign, out_mask
-
-
-WORD_PRODUCT_TABLE = [
-    [word_product(left, right) for right in range(DIM)]
-    for left in range(DIM)
-]
-
-
-def algebra_product(
-    left: Matrix,
-    right: Matrix,
-    table: Sequence[Sequence[tuple[int, int]]] | None = None,
-) -> Matrix:
-    if table is None:
-        table = ACTIVE_TABLE
-    out = zeros(DIM, 1)
-    for left_mask in range(DIM):
-        for right_mask in range(DIM):
-            sign, out_mask = table[left_mask][right_mask]
-            out[out_mask] += sign * left[left_mask] * right[right_mask]
-    return out.applyfunc(sp.expand)
-
-
-def vector_eq(left: Matrix, right: Matrix) -> bool:
-    return left.shape == right.shape and all(
-        simplify(left[row] - right[row]) == 0 for row in range(left.rows)
-    )
-
-
-def matrix_eq(left: Matrix, right: Matrix) -> bool:
-    return left.shape == right.shape and all(
-        simplify(left[row, col] - right[row, col]) == 0
-        for row in range(left.rows)
-        for col in range(left.cols)
-    )
-
-
-def vector_rank(vectors: Sequence[Matrix]) -> int:
-    if not vectors:
-        return 0
-    return Matrix.hstack(*vectors).rank()
-
-
-def same_span(left: Sequence[Matrix], right: Sequence[Matrix]) -> bool:
-    left_rank = vector_rank(left)
-    right_rank = vector_rank(right)
-    combined_rank = vector_rank([*left, *right])
-    return left_rank == right_rank == combined_rank
-
-
-def in_span(vector: Matrix, spanning_vectors: Sequence[Matrix]) -> bool:
-    rank = vector_rank(spanning_vectors)
-    return vector_rank([*spanning_vectors, vector]) == rank
-
-
-def matrix_coordinates(matrix: Matrix) -> Matrix:
-    return Matrix(
-        [matrix[row, col] for row in range(matrix.rows) for col in range(matrix.cols)]
-    )
-
-
-def real_matrix_coordinates(matrix: Matrix) -> Matrix:
-    coordinates: list[sp.Expr] = []
-    for row in range(matrix.rows):
-        for col in range(matrix.cols):
-            coordinates.extend(
-                [sp.expand_complex(matrix[row, col]).as_real_imag()[0],
-                 sp.expand_complex(matrix[row, col]).as_real_imag()[1]]
-            )
-    return Matrix(coordinates)
-
-
-def representation_images(sign: int, pauli: Sequence[Matrix]) -> list[Matrix]:
-    """Images of all ordered blades under gamma_i -> sign sigma_i."""
-    images: list[Matrix] = []
-    for mask in range(DIM):
-        image = eye(2)
-        for bit in range(3):
-            if mask & (1 << bit):
-                image = image * (sign * pauli[bit])
-        images.append(image.applyfunc(sp.expand))
-    return images
-
-
-def representation_of_vector(vector: Matrix, images: Sequence[Matrix]) -> Matrix:
-    image = zeros(2, 2)
-    for mask in range(DIM):
-        image += vector[mask] * images[mask]
-    return image.applyfunc(sp.expand)
-
-
-def homomorphism_ok(
-    images: Sequence[Matrix],
-    table: Sequence[Sequence[tuple[int, int]]] | None = None,
-) -> bool:
-    if table is None:
-        table = ACTIVE_TABLE
-    basis = [blade(mask) for mask in range(DIM)]
-    for left_mask, right_mask in itertools.product(range(DIM), repeat=2):
-        product = algebra_product(
-            basis[left_mask],
-            basis[right_mask],
-            table,
-        )
-        if not matrix_eq(
-            representation_of_vector(product, images),
-            images[left_mask] * images[right_mask],
-        ):
-            return False
-    return True
-
-
-def table_relations_ok(
-    table: Sequence[Sequence[tuple[int, int]]],
-    gammas: Sequence[Matrix],
-    one: Matrix,
-) -> bool:
-    zero = zeros(DIM, 1)
-    for i, gamma_i in enumerate(gammas):
-        for j, gamma_j in enumerate(gammas):
-            anticommutator = algebra_product(
-                gamma_i, gamma_j, table
-            ) + algebra_product(gamma_j, gamma_i, table)
-            expected = 2 * one if i == j else zero
-            if not vector_eq(anticommutator, expected):
-                return False
-    return True
-
-
-def idempotent_axioms_ok(
-    e_plus: Matrix,
-    e_minus: Matrix,
-    basis: Sequence[Matrix],
-    one: Matrix,
-) -> bool:
-    zero = zeros(DIM, 1)
-    algebra_identities = (
-        vector_eq(e_plus + e_minus, one),
-        vector_eq(algebra_product(e_plus, e_minus), zero),
-        vector_eq(algebra_product(e_minus, e_plus), zero),
-        vector_eq(algebra_product(e_plus, e_plus), e_plus),
-        vector_eq(algebra_product(e_minus, e_minus), e_minus),
-    )
-    centrality = all(
-        vector_eq(
-            algebra_product(e, element),
-            algebra_product(element, e),
-        )
-        for e in (e_plus, e_minus)
-        for element in basis
-    )
-    return all(algebra_identities) and centrality
-
-
-def ideal_basis(idempotent: Matrix, basis: Sequence[Matrix]) -> list[Matrix]:
-    return Matrix.hstack(
-        *[algebra_product(element, idempotent) for element in basis]
-    ).columnspace()
-
-
-def print_multiplication_table(
-    table: Sequence[Sequence[tuple[int, int]]],
-) -> None:
-    print("Exact multiplication table (rows multiply columns):")
-    header = "         " + " ".join(f"{BASIS_NAME[m]:>7}" for m in CANONICAL_MASKS)
-    print(header)
-    for left_mask in CANONICAL_MASKS:
-        entries = []
-        for right_mask in CANONICAL_MASKS:
-            sign, out_mask = table[left_mask][right_mask]
-            prefix = "-" if sign == -1 else ""
-            entries.append(f"{prefix}{BASIS_NAME[out_mask]}")
-        print(
-            f"{BASIS_NAME[left_mask]:>7} "
-            + " ".join(f"{entry:>7}" for entry in entries)
-        )
-
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--mode",
-        choices=("normal", "independent", "hostile", "intentional-failure"),
-        default="normal",
-        help="Exact certificate lane (default: normal).",
-    )
-    parser.add_argument(
-        "--inject-failure",
-        choices=(
-            "wrong-multiplication-sign",
-            "quotient-only-idempotents",
-            "missing-ideal",
-            "false-faithful-extension",
-            "fake-one-dimensional-simple",
-            "fake-extra-dimensional-simple",
-            "chirality-merger",
-            "unitary-without-hermitian",
-            "missing-resolution-evidence",
-            "stale-resolution-evidence",
-            "reordered-resolution-evidence",
-            "false-resolution-evidence",
-        ),
-        help="Fixture promoted by intentional-failure mode.",
-    )
-    args = parser.parse_args()
-    if args.inject_failure and args.mode != "intentional-failure":
-        parser.error("--inject-failure requires --mode intentional-failure")
-    return args
-
 
 def main() -> int:
     args = parse_args()
-    global ACTIVE_TABLE
-    ACTIVE_TABLE = (
+    set_verbose(args.verbose)
+    active_table = (
         WORD_PRODUCT_TABLE if args.mode == "independent" else PRODUCT_TABLE
     )
-
-    print("=" * 96)
-    print("Exact abstract-algebra certificate for")
-    print("CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10")
-    print("Arithmetic: exact SymPy symbolic; algebra core Gaussian-rational; no floats")
-    print(f"Mode: {args.mode}; table construction: "
-          f"{'word-insertion reducer' if args.mode == 'independent' else 'bit-inversion formula'}")
-    print("=" * 96)
-
+    set_active_table(active_table)
+    construction = "word-insertion" if args.mode == "independent" else "bit-inversion"
+    print("CL3_PAULI_IRREP_EXACT_CERTIFICATE arithmetic=Gaussian-rational")
+    print(f"mode={args.mode} table={construction}")
     basis_by_mask = [blade(mask) for mask in range(DIM)]
     basis = [basis_by_mask[mask] for mask in CANONICAL_MASKS]
     one = basis_by_mask[0]
@@ -635,21 +30,16 @@ def main() -> int:
     )
     gammas = [gamma_1, gamma_2, gamma_3]
     zero = zeros(DIM, 1)
-
     sigma_1 = Matrix([[0, 1], [1, 0]])
     sigma_2 = Matrix([[0, -I], [I, 0]])
     sigma_3 = Matrix([[1, 0], [0, -1]])
     pauli = [sigma_1, sigma_2, sigma_3]
     identity_2 = eye(2)
     zero_2 = zeros(2, 2)
-
     images_plus = representation_images(1, pauli)
     images_minus = representation_images(-1, pauli)
-
-    # ------------------------------------------------------------------ A
     section("Part A: eight-dimensional algebra from the defining relations")
-    print_multiplication_table(ACTIVE_TABLE)
-
+    print_multiplication_table(active_table)
     if args.mode == "independent":
         check(
             "A0 independent word reducer reproduces all 64 signed products",
@@ -659,7 +49,6 @@ def main() -> int:
             ),
             "64/64 products compared after separate construction",
         )
-
     associativity_results = []
     for left, middle, right in itertools.product(basis, repeat=3):
         associativity_results.append(
@@ -675,7 +64,6 @@ def main() -> int:
         f"{sum(int(result) for result in associativity_results)}/"
         f"{len(associativity_results)} products",
     )
-
     clifford_results = []
     for i, gamma_i in enumerate(gammas):
         for j, gamma_j in enumerate(gammas):
@@ -690,7 +78,6 @@ def main() -> int:
         f"{sum(int(result) for result in clifford_results)}/"
         f"{len(clifford_results)} relations",
     )
-
     generated_blades = [
         one,
         gamma_1,
@@ -707,7 +94,6 @@ def main() -> int:
         and vector_rank(generated_blades) == DIM,
         f"rank={vector_rank(generated_blades)}",
     )
-
     generator_closure = []
     for element_mask, gamma_mask in itertools.product(
         CANONICAL_MASKS, (1, 2, 4)
@@ -732,8 +118,6 @@ def main() -> int:
         f"{sum(int(result) for result in generator_closure)}/"
         f"{len(generator_closure)} products",
     )
-
-    # ------------------------------------------------------------------ B
     section("Part B: ordered volume element and central idempotents")
     ordered_volume = algebra_product(
         algebra_product(gamma_1, gamma_2),
@@ -773,7 +157,6 @@ def main() -> int:
         vector_eq(algebra_product(omega, e_plus), I * e_plus)
         and vector_eq(algebra_product(omega, e_minus), -I * e_minus),
     )
-
     center_coefficients = symbols("z0:8")
     generic_element = Matrix(center_coefficients)
     center_equations: list[sp.Expr] = []
@@ -792,7 +175,6 @@ def main() -> int:
         and same_span(center_nullspace, [one, omega]),
         f"center dimension={len(center_nullspace)}",
     )
-
     central_scalar, central_volume = symbols("central_scalar central_volume")
     central_candidate = central_scalar * one + central_volume * omega
     central_idempotent_equations = list(
@@ -821,8 +203,6 @@ def main() -> int:
         },
         f"exact solutions={sorted(central_idempotent_pairs, key=str)}",
     )
-
-    # ------------------------------------------------------------------ C
     section("Part C: complementary four-dimensional two-sided ideals")
     plus_generators = [
         algebra_product(element, e_plus)
@@ -834,7 +214,6 @@ def main() -> int:
     ]
     plus_full = ideal_basis(e_plus, basis)
     minus_full = ideal_basis(e_minus, basis)
-
     check(
         "C1 A e_+ is four-dimensional with basis {e_+,g1e_+,g2e_+,g3e_+}",
         vector_rank(plus_generators) == 4
@@ -847,7 +226,6 @@ def main() -> int:
         and same_span(minus_generators, minus_full),
         f"chosen rank={vector_rank(minus_generators)}, ideal rank={vector_rank(minus_full)}",
     )
-
     reduction_results = []
     for sign, idempotent in ((1, e_plus), (-1, e_minus)):
         e, g1e, g2e, g3e = [
@@ -877,7 +255,6 @@ def main() -> int:
         f"{sum(int(result) for result in reduction_results)}/"
         f"{len(reduction_results)} reductions",
     )
-
     two_sided_results = []
     for ideal_generators in (plus_generators, minus_generators):
         for algebra_element, ideal_element in itertools.product(
@@ -901,7 +278,6 @@ def main() -> int:
         f"{sum(int(result) for result in two_sided_results)}/"
         f"{len(two_sided_results)} products",
     )
-
     cross_results = [
         vector_eq(algebra_product(left, right), zero)
         for left, right in itertools.product(plus_generators, minus_generators)
@@ -917,8 +293,6 @@ def main() -> int:
         f"cross products={sum(int(result) for result in cross_results)}/"
         f"{len(cross_results)}, combined rank={combined_rank}",
     )
-
-    # ------------------------------------------------------------------ D
     section("Part D: matrix units constructed inside both abstract ideals")
     external_matrix_units = {
         (0, 0): Matrix([[1, 0], [0, 0]]),
@@ -998,7 +372,6 @@ def main() -> int:
             f"{sum(int(result) for result in isolation_results)}/"
             f"{len(isolation_results)} identities",
         )
-
     check(
         "D4 center exhaustion and two simple complementary ideals leave exactly two summands",
         len(center_nullspace) == 2
@@ -1009,8 +382,6 @@ def main() -> int:
             for units in abstract_units_by_sign.values()
         ),
     )
-
-    # ------------------------------------------------------------------ E
     section("Part E: representation classification and faithfulness boundary")
     check(
         "E0 ordered Pauli quotients give rho_+(omega)=+iI and rho_-(omega)=-iI",
@@ -1072,7 +443,6 @@ def main() -> int:
             and same_span(kernel, opposite_ideal),
             f"rank={complex_map.rank()}, kernel dim={len(kernel)}",
         )
-
         real_map = Matrix.hstack(
             *[real_matrix_coordinates(images[mask]) for mask in CANONICAL_MASKS]
         )
@@ -1081,7 +451,6 @@ def main() -> int:
             real_map.rank() == DIM,
             f"real rank={real_map.rank()}",
         )
-
     lambda_plus, lambda_minus = symbols("lambda_plus lambda_minus")
     central_action_solutions = sp.solve(
         [
@@ -1109,7 +478,6 @@ def main() -> int:
         },
         f"solutions={sorted(central_action_pairs, key=str)}",
     )
-
     commutator_columns = []
     for candidate_unit in (
         external_matrix_units[(0, 0)],
@@ -1134,7 +502,6 @@ def main() -> int:
         ),
         f"commutant dimension={len(commutant)}",
     )
-
     standard_action_results = []
     e1 = Matrix([1, 0])
     e2 = Matrix([0, 1])
@@ -1155,7 +522,6 @@ def main() -> int:
         f"{sum(int(result) for result in standard_action_results)}/"
         f"{len(standard_action_results)} actions",
     )
-
     e11 = external_matrix_units[(0, 0)]
     e12 = external_matrix_units[(0, 1)]
     e21 = external_matrix_units[(1, 0)]
@@ -1173,7 +539,6 @@ def main() -> int:
         f"{sum(int(result) for result in module_inverse_results)}/"
         f"{len(module_inverse_results)} universal identities",
     )
-
     f_operators = (e11, e21)
     module_linearity_results = []
     for a, b, source_index in itertools.product(range(2), repeat=3):
@@ -1187,7 +552,6 @@ def main() -> int:
         f"{sum(int(result) for result in module_linearity_results)}/"
         f"{len(module_linearity_results)} matrix-unit actions",
     )
-
     check(
         "E10 F/G and matrix-unit transitivity force every simple ideal-module to be C^2",
         all(module_inverse_results)
@@ -1195,7 +559,6 @@ def main() -> int:
         and all(standard_action_results)
         and len(commutant) == 1,
     )
-
     check(
         "E11 rho_+ and rho_- are inequivalent because omega acts by opposite scalars",
         not matrix_eq(
@@ -1203,8 +566,6 @@ def main() -> int:
             representation_of_vector(omega, images_minus),
         ),
     )
-
-    # ------------------------------------------------------------------ F
     section("Part F: conditional unitary refinement for *-representations")
     adjoint = lambda matrix: matrix.conjugate().T
     h11, h12, h21, h22 = symbols("h11 h12 h21 h22")
@@ -1255,7 +616,6 @@ def main() -> int:
             identity_2,
         ),
     )
-
     nonunitary = Matrix([[2, 0], [0, 1]])
     nonunitary_images = [
         nonunitary * sigma * nonunitary.inv() for sigma in pauli
@@ -1287,11 +647,8 @@ def main() -> int:
         ),
         f"T^dagger T={nonunitary_gram.tolist()}",
     )
-
-    # ------------------------------------------------------------------ G/H
-    wrong_table = [list(row) for row in ACTIVE_TABLE]
+    wrong_table = [list(row) for row in active_table]
     wrong_table[1][1] = (-1, 0)
-
     quotient_only_accepts = (
         matrix_eq(representation_of_vector(e_plus, images_plus), identity_2)
         and matrix_eq(representation_of_vector(e_minus, images_plus), zero_2)
@@ -1305,7 +662,6 @@ def main() -> int:
         augmented_e_plus + augmented_e_minus,
         augmented_one,
     )
-
     complex_plus_map = Matrix.hstack(
         *[matrix_coordinates(images_plus[mask]) for mask in CANONICAL_MASKS]
     )
@@ -1334,7 +690,6 @@ def main() -> int:
         one_d_g3,
     )
     one_d_inconsistent = one_d_groebner.reduce(sp.Integer(1))[1] == 0
-
     doubled_actions = {
         index: sp.kronecker_product(unit, eye(2))
         for index, unit in external_matrix_units.items()
@@ -1356,7 +711,6 @@ def main() -> int:
         )
         for action in doubled_actions.values()
     )
-
     t11, t12, t21, t22 = symbols("t11 t12 t21 t22")
     chirality_intertwiner = Matrix([[t11, t12], [t21, t22]])
     chirality_equations = matrix_coordinates(
@@ -1366,7 +720,6 @@ def main() -> int:
     chirality_matrix, _ = sp.linear_eq_to_matrix(
         chirality_equations, [t11, t12, t21, t22]
     )
-
     complex_minus_map = Matrix.hstack(
         *[matrix_coordinates(images_minus[mask]) for mask in CANONICAL_MASKS]
     )
@@ -1408,7 +761,6 @@ def main() -> int:
         0 < vector_rank(subspace) < 4
         for subspace in (first_chirality_subspace, second_chirality_subspace)
     )
-
     plus_kernel_dimension = len(complex_plus_kernel)
     minus_kernel_dimension = len(complex_minus_kernel)
     plus_real_rank = real_plus_map.rank()
@@ -1445,13 +797,12 @@ def main() -> int:
         and combined_module_reducible
         and hermitian_refinement_closes
     )
-
     routes = (
         NoGoRoute(
             route_id="complex-kernel-solve",
             route_class="algebraic_rearrangement",
             mechanism="algebraic full-basis kernel solve for both complex actions",
-            attempt="solve both four-by-eight complex action matrices and compare every kernel with the opposite central ideal",
+            attempt="solve both action maps and opposite-ideal kernels",
             outcome="both exact maps have rank four and opposite-ideal kernel dimension four",
             honesty_marker="ATTEMPTED",
             closed=(
@@ -1465,7 +816,7 @@ def main() -> int:
             route_id="central-character-separation",
             route_class="symmetry_or_representation",
             mechanism="representation central-character and commutant separation",
-            attempt="solve the central idempotent actions and every intertwiner between the plus-i and minus-i omega characters",
+            attempt="solve central actions and cross-character intertwiners",
             outcome="a simple module selects one central character and the opposite-character intertwiner space is zero",
             honesty_marker="ATTEMPTED",
             closed=(
@@ -1482,7 +833,7 @@ def main() -> int:
             route_id="finite-simple-counterexamples",
             route_class="numerical_or_finite_case",
             mechanism="finite exact compute of scalar and doubled module candidates",
-            attempt="compute the scalar Clifford Groebner system and the invariant submodule plus nonscalar commutant of the doubled module",
+            attempt="test scalar and doubled-module candidates exactly",
             outcome="the scalar system is inconsistent and the four-dimensional doubled module is reducible",
             honesty_marker="ATTEMPTED",
             closed=(
@@ -1496,7 +847,7 @@ def main() -> int:
             route_id="faithful-direct-sum-carrier",
             route_class="alternate_carrier_or_sector",
             mechanism="alternate module carrier rho_plus direct-sum rho_minus",
-            attempt="stack both exact complex action maps and test rank eight, invariant summands, and reducibility",
+            attempt="stack both maps and test rank plus reducibility",
             outcome="the stacked carrier is faithful only because it contains both invariant chirality summands and is reducible",
             honesty_marker="ATTEMPTED",
             closed=combined_map_rank == DIM and combined_module_reducible,
@@ -1505,7 +856,7 @@ def main() -> int:
             route_id="gram-normalization",
             route_class="normalization_or_units",
             mechanism="normalization of the intertwiner Gram matrix under Hermitian generators",
-            attempt="solve the Pauli commutant, normalize a positive scalar Gram matrix, and test the nonscalar diagonal similarity",
+            attempt="solve the Gram commutant and diagonal similarity",
             outcome="Hermitian images force scalar normalization while the bare non-Hermitian similarity keeps a nonscalar Gram matrix",
             honesty_marker="ATTEMPTED",
             closed=hermitian_refinement_closes and nonunitary_boundary_witness,
@@ -1514,7 +865,6 @@ def main() -> int:
     prior_witness_count = sum(
         route.honesty_marker == "RULED OUT BY PRIOR" for route in routes
     )
-
     resolution_kwargs = {
         "plus_kernel_dimension": plus_kernel_dimension,
         "minus_kernel_dimension": minus_kernel_dimension,
@@ -1566,7 +916,6 @@ def main() -> int:
         ),
         "false-resolution-evidence": not resolution_records_valid(false_resolution),
     }
-
     hostile_results: dict[str, bool] = {
         "wrong-multiplication-sign": not table_relations_ok(
             wrong_table, gammas, one
@@ -1602,7 +951,6 @@ def main() -> int:
         and len(gram_commutant) == 1,
         **resolution_mutation_rejections,
     }
-
     local_echo_controls_closed = sum(
         hostile_results[name]
         for name in ("quotient-only-idempotents", "unitary-without-hermitian")
@@ -1618,7 +966,6 @@ def main() -> int:
         standard_complex_kernel_dimension=plus_kernel_dimension,
         local_echo_controls_closed=local_echo_controls_closed,
     )
-
     section("Part H: hostile controls")
     resolution_fixture_names = set(resolution_mutation_rejections)
     for hostile_name, rejected in hostile_results.items():
@@ -1631,7 +978,6 @@ def main() -> int:
             f"H reject hostile fixture: {hostile_name}",
             rejected,
         )
-
     if args.mode == "intentional-failure":
         promoted_fixture = args.inject_failure or "wrong-multiplication-sign"
         check(
@@ -1639,23 +985,13 @@ def main() -> int:
             not hostile_results[promoted_fixture],
             detail="this run must exit nonzero",
         )
-
-    # ---------------------------------------------------------------- summary
     section("Summary")
-    print("  Certified from the defining relations:")
-    print("    A_C has the exact basis {1,g1,g2,g3,g12,g13,g23,omega}.")
-    print("    omega=g1 g2 g3 is central, omega^2=-1, and fixes the idempotent labels.")
-    print("    A_C=A_C e_+ direct-sum A_C e_-, with both ideals four-dimensional.")
-    print("    Phi_+: A_C e_+ -> M_2(C) and Phi_-: A_C e_- -> M_2(C) are isomorphisms.")
-    print("    Therefore A_C has exactly two simple summands and two irreducible module classes.")
-    print("    The two complexified irreps kill opposite ideals; their real Cl(3,0)")
-    print("    restrictions are faithful. No lattice carrier or physical selection is inferred.")
-    print()
-    print("=" * 96)
-    print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
-    print("=" * 96)
-    return 0 if FAIL == 0 else 1
-
-
+    print("CERTIFIED split=M2(C)+M2(C) irreps=2 dimensions=2,2")
+    print("CERTIFIED real_ranks=8,8 complex_kernel_dimensions=4,4")
+    pass_count, fail_count = counts()
+    print("=" * 72)
+    print(f"TOTAL: PASS={pass_count}, FAIL={fail_count}")
+    print("=" * 72)
+    return 0 if fail_count == 0 else 1
 if __name__ == "__main__":
     raise SystemExit(main())

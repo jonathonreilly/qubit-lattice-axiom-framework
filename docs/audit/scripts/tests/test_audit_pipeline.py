@@ -3107,15 +3107,16 @@ class Cl3PauliIndependentN7HelperTest(unittest.TestCase):
         "scripts/"
         "audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py"
     )
+    SUPPORT = "scripts/cl3_pauli_irrep_exact_support_2026_05_10.py"
     HELPER = (
         "scripts/"
         "cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
     )
 
-    def test_both_packet_consumers_return_the_claim_scoped_helper(self):
+    def test_both_packet_consumers_return_the_static_source_closure(self):
         citation_graph = _import("build_citation_graph")
         packet_deps = _import_repo_script("audit_packet_script_deps.py")
-        expected = [self.HELPER]
+        expected = [self.SUPPORT, self.HELPER]
 
         self.assertEqual(
             citation_graph.helper_runner_paths_for_claim(
@@ -3135,13 +3136,13 @@ class Cl3PauliIndependentN7HelperTest(unittest.TestCase):
             citation_graph.helper_runner_paths_for_claim(
                 control_claim, self.PRIMARY
             ),
-            [],
+            [self.SUPPORT],
         )
         self.assertEqual(
             packet_deps.helper_runner_paths_for_claim(
                 control_claim, Path(self.PRIMARY).stem
             ),
-            [],
+            [self.SUPPORT],
         )
 
     def test_helper_accepts_exact_steelman_and_rejects_both_mutations(self):

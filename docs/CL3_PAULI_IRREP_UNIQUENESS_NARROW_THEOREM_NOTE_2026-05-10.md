@@ -24,6 +24,12 @@ pipeline after independent review.
 **Primary runner:**
 [`scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py`](../scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py)
 
+**Static exact-algebra support:**
+[`scripts/cl3_pauli_irrep_exact_support_2026_05_10.py`](../scripts/cl3_pauli_irrep_exact_support_2026_05_10.py)
+
+**Independent direct-sum steelman:**
+[`scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py`](../scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py)
+
 **Authority role:** narrow algebraic core used by the parent
 `axiom_first_cl3_per_site_uniqueness_theorem_note_2026-04-29` and by consumers
 that need the Pauli realization or the dimension-two abstract module. Any
@@ -471,7 +477,12 @@ of the following fixtures are rejected:
 All checks are exact algebraic computations: the runner does not read this
 note's prose as evidence, use random sampling, fit floating targets, or accept
 constant truth values or a hard-coded desired class list as its only claim
-evidence. Normal execution reports `TOTAL: PASS=51, FAIL=0`. The intentional
+evidence. The primary source and each statically imported helper are separately
+small enough to appear in full in the restricted audit packet. Normal mode
+suppresses only successful per-check chatter, emits the complete N1--N8
+certificate plus `TOTAL: PASS=51, FAIL=0`, and stays below the live-stdout
+packet limit; `--verbose` restores the multiplication table and every
+individual check line. The intentional
 failure lane demonstrably exits nonzero, for example:
 
 ```bash

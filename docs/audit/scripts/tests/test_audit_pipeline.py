@@ -16901,6 +16901,196 @@ class ProseStatusAttributionTest(unittest.TestCase):
             self.assertTrue(note_path.startswith("docs/"), key)
             self.assertTrue(target, key)
 
+    def test_baseline_keys_resolve_against_the_live_ledger(self):
+        """Both halves of every key must name something the ledger knows.
+
+        Shape alone is not enough: a key whose note_path or target claim id no
+        longer exists can never be reported and can never be drained, so it
+        would sit in a shrink-only list forever. This resolves both sides
+        against the live ledger so a rename or a dropped row is caught here
+        rather than surviving as a permanent unreachable entry.
+        """
+        baseline = (
+            REPO_ROOT
+            / "audit"
+            / "scripts"
+            / self.m.PROSE_RETAINED_NO_GO_BASELINE_NAME
+        )
+        keys = [
+            line.strip()
+            for line in baseline.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.strip().startswith("#")
+        ]
+        ledger = json.loads(
+            (REPO_ROOT / "audit" / "data" / "audit_ledger.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        rows = ledger["rows"]
+        note_paths = {
+            row.get("note_path") for row in rows.values() if row.get("note_path")
+        }
+        for key in keys:
+            note_path, _, target = key.partition("::")
+            self.assertIn(note_path, note_paths, f"{key}: citing note has no row")
+            self.assertIn(target, rows, f"{key}: target claim id has no row")
+
+
+class ProseStatusAttributionSeverityTest(unittest.TestCase):
+    """Severity ROUTING for the two hard sub-rules, exercised through main().
+
+    ProseStatusAttributionTest above covers the detector; this covers what
+    main() does with what the detector yields, which is where the hard/soft
+    split actually lives. Without this, both hard rules could silently degrade
+    to notices (or a notice could silently become a repo-wide stop-work) with
+    every helper test still green.
+    """
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self.tmp_root = Path(self._tmp.name)
+        self.fx = CleanLedgerFixture(self.tmp_root)
+
+    def _run(self, citing_body: str, *, baseline: str | None) -> tuple[int, str]:
+        """Two rows: an `unaudited` target and a citing note carrying
+        `citing_body`. Returns (exit code, stdout)."""
+        rows = {
+            "alpha_row": {
+                "claim_id": "alpha_row",
+                "note_path": "docs/ALPHA_ROW.md",
+                "claim_type": "no_go",
+                "audit_status": "unaudited",
+                "effective_status": "unaudited",
+                "deps": [],
+            },
+            "citing_row": {
+                "claim_id": "citing_row",
+                "note_path": "docs/CITING_ROW.md",
+                "claim_type": "positive_theorem",
+                "audit_status": "unaudited",
+                "effective_status": "unaudited",
+                "deps": [],
+            },
+        }
+        bodies = {
+            "docs/ALPHA_ROW.md": "# Alpha row\n",
+            "docs/CITING_ROW.md": citing_body,
+        }
+        for cid, row in rows.items():
+            np = row["note_path"]
+            path = self.tmp_root / np
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(bodies[np], encoding="utf-8")
+            row["note_hash"] = hashlib.sha256(
+                bodies[np].encode("utf-8")
+            ).hexdigest()
+        self.fx.write_graph({
+            "nodes": {cid: {"deps": []} for cid in rows},
+            "edges": [],
+        })
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+
+        m = _import("audit_lint")
+        _patch_repo_root(m, self.tmp_root)
+        baseline_path = (
+            self.tmp_root
+            / "docs"
+            / "audit"
+            / "scripts"
+            / m.PROSE_RETAINED_NO_GO_BASELINE_NAME
+        )
+        baseline_path.parent.mkdir(parents=True, exist_ok=True)
+        if baseline is not None:
+            baseline_path.write_text(baseline, encoding="utf-8")
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = m.main()
+        return rc, buf.getvalue()
+
+    # Rule (i): retained_no_go about a named weaker target.
+    _NO_GO_LINE = "| [`ALPHA_ROW.md`](ALPHA_ROW.md) | retained_no_go | x |\n"
+    _NO_GO_KEY = "docs/CITING_ROW.md::alpha_row"
+
+    def test_unbaselined_retained_no_go_attribution_is_a_hard_error(self):
+        rc, out = self._run(self._NO_GO_LINE, baseline="")
+        self.assertEqual(1, rc, out)
+        self.assertIn("ERROR:", out)
+        self.assertIn("prose labels 'alpha_row' `retained_no_go`", out)
+
+    def test_baselined_retained_no_go_attribution_is_only_a_notice(self):
+        rc, out = self._run(self._NO_GO_LINE, baseline=self._NO_GO_KEY + "\n")
+        self.assertEqual(0, rc, out)
+        self.assertIn("prose_retained_no_go_attribution", out)
+        self.assertNotIn("ERROR:", out)
+
+    def test_baseline_key_grandfathers_only_the_target_it_names(self):
+        """A grandfathered note must still error when it labels a NEW target:
+        the key is <note_path>::<target>, not a per-note mute."""
+        rc, out = self._run(
+            self._NO_GO_LINE,
+            baseline="docs/CITING_ROW.md::some_other_claim\n",
+        )
+        self.assertEqual(1, rc, out)
+        self.assertIn("ERROR:", out)
+
+    def test_absent_baseline_file_leaves_the_rule_hard(self):
+        """Documented consequence of the tracked-file design: with no baseline
+        on disk nothing is grandfathered. Pinned so a future refactor cannot
+        turn a missing file into a silent global mute."""
+        rc, out = self._run(self._NO_GO_LINE, baseline=None)
+        self.assertEqual(1, rc, out)
+        self.assertIn("ERROR:", out)
+
+    def test_quiet_baseline_key_is_a_notice_not_an_error(self):
+        rc, out = self._run(
+            "# Citing row\n",
+            baseline=self._NO_GO_KEY + "\n",
+        )
+        self.assertEqual(0, rc, out)
+        self.assertIn("prose_retained_no_go_attribution_baseline_stale", out)
+        self.assertIn("prune the key only if", out)
+
+    # Rule (ii): an OVERSTATING token asserted with ledger metadata.
+    def test_ledger_metadata_with_overstating_token_is_a_hard_error(self):
+        rc, out = self._run(
+            "| [`ALPHA_ROW.md`](ALPHA_ROW.md) | retained | audit_date 2026-05-05 |\n",
+            baseline="",
+        )
+        self.assertEqual(1, rc, out)
+        self.assertIn("together with ledger metadata", out)
+
+    def test_ledger_metadata_rule_has_no_baseline_escape(self):
+        """Rule (ii) ships with no grandfather list; a rule-(i)-shaped key must
+        not mute it."""
+        rc, out = self._run(
+            "| [`ALPHA_ROW.md`](ALPHA_ROW.md) | retained | per the ledger |\n",
+            baseline=self._NO_GO_KEY + "\n",
+        )
+        self.assertEqual(1, rc, out)
+        self.assertIn("together with ledger metadata", out)
+
+    def test_matching_status_with_ledger_metadata_is_out_of_scope(self):
+        """The rule is a refinement of the overstating population, not an
+        unconditional ban on quoting the ledger. Pinned because the README
+        and the block comment now state this scope explicitly."""
+        rc, out = self._run(
+            "| [`ALPHA_ROW.md`](ALPHA_ROW.md) | unaudited | audit_date 2026-05-05 |\n",
+            baseline="",
+        )
+        self.assertEqual(0, rc, out)
+        self.assertNotIn("together with ledger metadata", out)
+
+    # General case stays soft.
+    def test_plain_overstating_attribution_is_only_a_notice(self):
+        rc, out = self._run(
+            "| [`ALPHA_ROW.md`](ALPHA_ROW.md) | retained_bounded | x |\n",
+            baseline="",
+        )
+        self.assertEqual(0, rc, out)
+        self.assertIn("prose_status_attribution", out)
+        self.assertNotIn("ERROR:", out)
+
 
 if __name__ == "__main__":
     unittest.main()

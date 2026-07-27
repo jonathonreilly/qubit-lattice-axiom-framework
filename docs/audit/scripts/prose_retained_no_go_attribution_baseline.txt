@@ -5,11 +5,24 @@
 # effective_status is weaker. No live ledger row carries `retained_no_go`, so
 # every key here is a label the ledger does not support.
 #
-# This list is SHRINK-ONLY. A key absent from it is a hard lint error, so a
-# grandfathered note still errors when it labels a NEW target. Removing a
-# label drains its key; audit_lint then reports the leftover key as a
-# `prose_retained_no_go_attribution_baseline_stale` notice, and it must be
-# pruned. Do not add keys to silence the rule -- fix the prose.
+# This list is SHRINK-ONLY by reviewed convention. A key absent from it is a
+# hard lint error, so a grandfathered note still errors when it labels a NEW
+# target. Do not add keys to silence the rule -- fix the prose.
+#
+# When a key stops being reported, audit_lint raises a
+# `prose_retained_no_go_attribution_baseline_stale` notice. READ THE NOTE
+# BEFORE PRUNING: a key goes quiet for three different reasons and only one is
+# a drain.
+#
+#   DRAINED  the `retained_no_go` label is gone from the note. Prune the key.
+#   DORMANT  the label is still there, but the named target was promoted, so
+#            the token no longer overstates it. LEAVE THE KEY -- pruning it
+#            would make an ordinary later demotion a new hard error on
+#            unchanged prose. (Currently empty: no live row carries
+#            `retained_no_go`.)
+#   REKEYED  the citing note was renamed or moved, so the old key went quiet
+#            and the same label now errors under the new path. Update the key
+#            to the new path rather than pruning it.
 #
 # It lives beside the scripts rather than under docs/audit/data/ because that
 # directory is restored wholesale from origin/main before a science PR lands,

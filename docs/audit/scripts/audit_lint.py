@@ -324,27 +324,60 @@ SUPPORTED_DISPATCH_SCHEMAS = {"promotion_reaudit_queue.v1"}
 # accumulated. They are reported as drainable NOTICES -- author prose stays
 # permitted, and the adjacency rule below is high precision but not perfect.
 #
-# Two narrow shapes are errors instead, because no reading of them is legitimate:
+# Two narrow shapes are errors instead, because no reading of them is legitimate.
+# BOTH are refinements of the overstating population above -- they are reached
+# from the same generator, so each fires only where the token ALSO claims more
+# than the target's live row. Neither is an unconditional ban on the shape:
 #
-#   (i)  `retained_no_go` asserted about a named target. Promotion to that
-#        effective_status requires claim_type=no_go, audited_clean, AND a
-#        current No-Go Discipline packet; where the named row is weaker the
-#        label is wrong by construction, not merely stale.
-#   (ii) a status token asserted on the same line as ledger metadata -- an
-#        `audit_date`, or an explicit "in the current audit ledger" / "per the
-#        ledger" claim. That impersonates the ledger instead of paraphrasing it,
-#        and it is exactly what survives archive_prior_audit(): when the target
-#        note drifts, seed_audit_ledger archives the verdict and resets the row,
-#        and the hand-copied metadata downstream becomes a corpse nothing checks.
+#   (i)  `retained_no_go` asserted about a named target that is weaker.
+#        Pipeline-authoritative promotion to that effective_status requires
+#        claim_type=no_go and audited_clean (compute_effective_status.clean_status)
+#        and, for the clean verdict to survive, a valid No-Go Discipline packet
+#        (enforced by no_go_discipline_gate via apply_audit and
+#        invalidate_stale_audits, not by clean_status itself). Where the named
+#        row is weaker the label is wrong by construction, not merely stale.
+#   (ii) an OVERSTATING status token asserted on the same line as ledger
+#        metadata -- an `audit_date`, or an explicit "in the current audit
+#        ledger" / "per the ledger" claim. That impersonates the ledger instead
+#        of paraphrasing it, and it is exactly what survives
+#        archive_prior_audit(): when the target note drifts, seed_audit_ledger
+#        archives the verdict and resets the row, and the hand-copied metadata
+#        downstream becomes a corpse nothing checks. A line whose quoted status
+#        currently MATCHES the live row is deliberately out of scope: it is
+#        equally a hand-copied snapshot, but erroring on it would make the rule
+#        a ban on quoting the ledger at all, and it is not measurably wrong
+#        today. Widening rule (ii) to that population is a separate reviewed
+#        change (measured 2026-07-27: 0 additional lines repo-wide), not
+#        something to read into the current predicate.
 #
 # Rule (i) is a ratchet, not a sweep: instances present when it landed are
 # grandfathered in `prose_retained_no_go_attribution_baseline.txt`, keyed
 # `<note_path>::<target claim id>` so a grandfathered note still errors when it
-# names a NEW target. A baseline key that no longer describes a live attribution
-# surfaces as a `..._baseline_stale` notice, so the list can only shrink. The
-# baseline lives beside the scripts rather than under `docs/audit/data/` because
-# that directory is restored wholesale from origin/main before a science PR
-# lands, which would silently revert every drain. Rule (ii) has no baseline.
+# names a NEW target. A baseline key that stops being reported surfaces as a
+# `..._baseline_stale` notice. The baseline lives beside the scripts rather than
+# under `docs/audit/data/` because that directory is restored wholesale from
+# origin/main before a science PR lands, which would silently revert every
+# drain. Rule (ii) has no baseline.
+#
+# Shrink-only is a reviewed convention here, not a mechanical guarantee, and the
+# `..._baseline_stale` notice is NOT by itself an instruction to prune. A key
+# stops being reported for three different reasons and only one of them is a
+# drain:
+#
+#   * DRAINED -- the label was removed from the note. Prune the key.
+#   * DORMANT -- the label is still in the note, but the named target was
+#     promoted, so the token no longer overstates it. Pruning here is harmful:
+#     an ordinary later demotion would turn the unchanged prose into a NEW hard
+#     error. Leave the key in place. (No live row carries `retained_no_go`
+#     today, so this case is currently empty -- see the
+#     `no_go_grade_path_unreached` notice.)
+#   * REKEYED -- the citing note was renamed or moved, so its `note_path`
+#     changed. The old key goes quiet AND the label errors under its new key.
+#     Update the key rather than pruning it.
+#
+# Distinguishing these mechanically needs a source identifier that survives a
+# rename and a liveness signal independent of the target's current grade;
+# neither exists here, so the notice reports and the drainer decides.
 
 # Strength ordering used ONLY to decide whether a prose token claims more than
 # the live row records. Retained-grade tokens sit at the top because they are
@@ -1435,9 +1468,13 @@ def main() -> int:
             target_status = rows[target].get("effective_status")
             where = f"{note_path}:{line_no}"
             if _PROSE_LEDGER_IMPERSONATION_RE.search(line):
-                # Rule (ii): impersonating the ledger. No baseline; the ledger
-                # shards are the only status source, and a hand-copied
-                # audit_date outlives the verdict it quotes.
+                # Rule (ii): impersonating the ledger with a token that also
+                # OVERSTATES the live row -- the generator above already
+                # dropped every non-overstating line, so a correct-today
+                # snapshot alongside an audit_date is deliberately not reached
+                # here (see the rule-(ii) paragraph in the block comment). No
+                # baseline; the ledger shards are the only status source, and a
+                # hand-copied audit_date outlives the verdict it quotes.
                 errors.append(
                     f"{where}: prose states `{token}` for {target!r} together with ledger "
                     f"metadata (an audit_date or an explicit ledger claim), but the live row "
@@ -2151,14 +2188,21 @@ def main() -> int:
             "so the recorded debt keeps shrinking",
         )
 
-    # Grandfathered `retained_no_go` attributions that no longer exist. Reporting
-    # them keeps the baseline shrink-only: a drained key must be pruned, and it
-    # can never be re-added silently because re-adding it errors first.
+    # Grandfathered `retained_no_go` attributions the rule no longer reports.
+    # This keeps the baseline drainable -- a key can never be re-added silently,
+    # because re-adding it errors first -- but going quiet is NOT by itself
+    # evidence of a drain (see the DRAINED / DORMANT / REKEYED split in the
+    # block comment above PROSE_STATUS_STRENGTH). The notice reports; it does
+    # not prescribe.
     for stale in sorted(prose_no_go_baseline - prose_no_go_live):
         add_notice(
             "prose_retained_no_go_attribution_baseline_stale",
             f"{stale}: listed in {PROSE_RETAINED_NO_GO_BASELINE_NAME} but no longer "
-            "labels that target `retained_no_go`; prune the baseline entry",
+            "reported. Check the note before acting: prune the key only if the "
+            "`retained_no_go` label is actually gone; if the label is still there "
+            "and the target was promoted, leave the key (pruning it would make an "
+            "ordinary later demotion a new hard error); if the note was renamed, "
+            "update the key to the new path",
         )
 
     # Effective-status propagation sanity. A retained-grade row's deps must

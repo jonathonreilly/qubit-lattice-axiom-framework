@@ -432,28 +432,50 @@ resets the row — and every downstream sentence quoting the old verdict
 silently becomes false, because nothing in the toolchain reads those
 sentences.
 
-Two narrow shapes are **errors**:
+Two narrow shapes are **errors**. Both are refinements of the overstating
+population above, so each fires only where the token **also** claims more than
+the target's live row — neither is an unconditional ban on the shape:
 
-- **`retained_no_go` about a named target.** That effective_status is granted
-  only with `claim_type = no_go`, `audited_clean`, and a current No-Go
-  Discipline packet, so where the named row is weaker the label is wrong by
-  construction, not merely stale. This rule is a ratchet: the population
-  measured when it landed is grandfathered in
+- **`retained_no_go` about a named target that is weaker.** Pipeline-authoritative
+  promotion to that effective_status requires `claim_type = no_go` and
+  `audited_clean` (`compute_effective_status.clean_status`) and, for the clean
+  verdict to survive, a valid No-Go Discipline packet — enforced by
+  `no_go_discipline_gate` through `apply_audit` and `invalidate_stale_audits`,
+  not by `clean_status` itself. Where the named row is weaker the label is
+  wrong by construction, not merely stale. This rule is a ratchet: the
+  population measured when it landed is grandfathered in
   `scripts/prose_retained_no_go_attribution_baseline.txt`, keyed
   `<note_path>::<target claim id>` so a grandfathered note still errors when it
   labels a **new** target, and reported as a drainable
-  `prose_retained_no_go_attribution` notice. A key that no longer describes a
-  live attribution surfaces as
-  `prose_retained_no_go_attribution_baseline_stale` and must be pruned, so the
-  list can only shrink. The baseline sits beside the scripts, not under
-  `data/`, because that directory is restored wholesale from origin/main
-  before a science PR lands and a baseline there would have each drain
-  silently reverted.
-- **A status token asserted with ledger metadata** — an `audit_date`, or an
-  explicit "in the current audit ledger" / "per the ledger" claim. That
-  impersonates the ledger rather than paraphrasing it, and it is exactly the
-  form that outlives the verdict it quotes. No baseline: the ledger is the
-  ledger.
+  `prose_retained_no_go_attribution` notice. The baseline sits beside the
+  scripts, not under `data/`, because that directory is restored wholesale from
+  origin/main before a science PR lands and a baseline there would have each
+  drain silently reverted.
+
+  A key that stops being reported surfaces as
+  `prose_retained_no_go_attribution_baseline_stale`. That notice is a **report,
+  not an instruction to prune** — a key goes quiet for three different reasons
+  and only one is a drain. **Drained:** the label is gone from the note; prune
+  the key. **Dormant:** the label is still there but the named target was
+  promoted, so the token no longer overstates it; leave the key, because
+  pruning it would make an ordinary later demotion a new hard error on
+  unchanged prose. (No live row carries `retained_no_go` today — see the
+  `no_go_grade_path_unreached` notice — so this case is currently empty.)
+  **Rekeyed:** the citing note was renamed, so the old key goes quiet *and* the
+  label errors under its new path; update the key rather than pruning it.
+  Telling these apart mechanically would need a source identifier that survives
+  a rename and a liveness signal independent of the target's current grade;
+  neither exists yet, so shrink-only is a reviewed convention here rather than a
+  mechanical guarantee.
+- **An overstating status token asserted with ledger metadata** — an
+  `audit_date`, or an explicit "in the current audit ledger" / "per the ledger"
+  claim. That impersonates the ledger rather than paraphrasing it, and it is
+  exactly the form that outlives the verdict it quotes. No baseline: the ledger
+  is the ledger. A line whose quoted status currently **matches** the live row
+  is out of scope — it is equally a hand-copied snapshot, but erroring on it
+  would make the rule a ban on quoting the ledger at all, and it is not
+  measurably wrong today. Widening the rule to that population is a separate
+  reviewed change (measured 2026-07-27: 0 additional lines repo-wide).
 
 The repair in both cases is the same, and it is not to write a fresher status
 word. State the **cited content** and let `data/ledger/<id[:2]>/<id>.json`

@@ -41,7 +41,7 @@
   "artifacts": {
     "note": {
       "path": "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
-      "sha256": "565bc3249037dfc1b7a0c30ba2199df50db4526af97431c89e0f05a8b5f1dd8c"
+      "sha256": "c01943f6fff72b9557a3320c29822055ad079194a559507e37b973bef8c8ff45"
     },
     "runner": {
       "path": "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
@@ -49,11 +49,11 @@
     },
     "cache": {
       "path": "logs/runner-cache/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.txt",
-      "sha256": "cbaba24c6cce0b448d1104735bbf46be382beed01dde452c97c52d259d7345d8",
-      "input_fingerprint_sha256": "a5d592b969c4584b85dcabab9f8b02d28137fa6d97127350818a25134f06252f",
-      "elapsed_sec": 71.40,
+      "sha256": "d16473b0c650c0530a5fa850b1d883c61fb55db5be7c89d00c0c123e8eb9bd79",
+      "input_fingerprint_sha256": "3e1c97eec7f0e60eb8978e29665c52e9d7b366955aecf83899cba7fdb0f834a5",
+      "elapsed_sec": 71.94,
       "exit_code": 0,
-      "report_sha256": "586f967392f780896ac54462ee2cefc9345ad0d92eb6e4cf20369074a3e54ea9"
+      "report_sha256": "5a780334503c76499ad2da17ffe7b558b1e5343d3be520350b4f030d39d02308"
     }
   }
 }

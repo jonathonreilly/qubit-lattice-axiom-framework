@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_initial_state_preparation_probe.py
-runner_sha256: 4614dde7863ba6c83fbced70006a2f2b141c7b6a52565d9c105304f790db98bb
+runner_sha256: ef05b9ffc8dfbbf8a7c9dfb1c216b2839584bcfe53c5d9b44bb5764493df1995
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.27
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 TELEPORTATION INITIAL-STATE PREPARATION PROBE
-Status: planning / first artifact; ordinary quantum state teleportation only
+Status: exact boundary theorem on an open gate; ordinary quantum state teleportation only
 Claim boundary: no matter, mass, charge, energy, object, or faster-than-light transport
 Question: is the G=0 two-species ground state unique, product-like, separable, native-basis simple/localized, and operationally plausible?
 Thresholds: degeneracy_tol=1e-09, support_prob>1e-12, gap>=1e-06, localized_PR_fraction<=0.25
@@ -16,24 +16,26 @@ Case: 1d_null_initial
   setup: dim=1 side=8 N=8 envs/logical_qubit=4 mass=0 G=0
   single-species H1: E0=-2.000000, E1=-1.414214, degeneracy=1, gap_after_ground_space=0.585786
   two-species H(G=0): E0=-4.000000, E1=-3.414214, degeneracy=1, gap_after_ground_space=0.585786
+  analytic derivation certificate: connected=True, regular=True, degree=2/2, E0(H1)=-2.000000, E0(H2)=-4.000000, gap=0.585786
+    residuals: A-A_periodic=0, H1+A=0, H2-KroneckerSum=0, H1|u>-E0|u>=0, H2|uu>-2E0|uu>=0, logical/env factor=0
   exact-product checks: |<g_G0|g_H1 x g_H1>|^2=1.000000, |<g_G0|uniform x uniform>|^2=1.000000
   traced logical resource at G=0: Phi+=0.500000, Bell*=0.500000 (Phi+), CHSH=2.000000, negativity=0.000000, purity=1.000000
   separability diagnostics:
     partition                                  S(bits)     purity  max weight   rank_eff rank_num
-    species A | species B                   6.218312e-28   1.000000    1.000000   1.000000        1
-    logical pair | environment pair         1.229403e-27   1.000000    1.000000   1.000000        1
-    single H1 logical | single H1 environment 1.234057e-28   1.000000    1.000000   1.000000        1
+    species A | species B                   7.854128e-28   1.000000    1.000000   1.000000        1
+    logical pair | environment pair         1.115915e-27   1.000000    1.000000   1.000000        1
+    single H1 logical | single H1 environment 1.211120e-28   1.000000    1.000000   1.000000        1
   native site-basis support:
     state                                            dim  support         PR     PR/dim   max prob  Hsite(bits)
     single H1 ground in native sites                   8        8   8.000000   1.000000   0.125000     3.000000
     two-species G=0 ground in native site pairs       64       64  64.000000   1.000000   0.015625     6.000000
   simple candidate comparison:
     candidate                              E-E0    |<g|c>|2     PR/dim       S_AB      S_L|E     Bell*       neg
-    H1 ground tensor product       -2.664535e-15    1.000000   1.000000 1.159463e-30 2.548015e-28  0.500000  0.000000
-    uniform site product           -1.776357e-15    1.000000   1.000000 8.542265e-32 9.230725e-31  0.500000  0.000000
+    H1 ground tensor product       1.332268e-15    1.000000   1.000000 1.567415e-30 2.527436e-28  0.500000  0.000000
+    uniform site product           8.881784e-16    1.000000   1.000000 5.067005e-31 3.622957e-30  0.500000  0.000000
     localized |0>_A |0>_B              4.000000    0.015625   0.015625          0          0  0.500000  0.000000
     localized separated sites          4.000000    0.015625   0.015625          0          0  0.500000  0.000000
-    single-env logical |+> product     2.000000    0.062500   0.062500 3.135747e-32          0  0.500000  0.000000
+    single-env logical |+> product     2.000000    0.062500   0.062500          0          0  0.500000  0.000000
   local/native-basis preparation status: not localized (threshold PR/dim <= 0.25)
   verdict: unresolved gap: analytic product ground, but maximally delocalized in native site basis
 
@@ -41,24 +43,26 @@ Case: 2d_null_initial
   setup: dim=2 side=4 N=16 envs/logical_qubit=8 mass=0 G=0
   single-species H1: E0=-4.000000, E1=-2.000000, degeneracy=1, gap_after_ground_space=2.000000
   two-species H(G=0): E0=-8.000000, E1=-6.000000, degeneracy=1, gap_after_ground_space=2.000000
+  analytic derivation certificate: connected=True, regular=True, degree=4/4, E0(H1)=-4.000000, E0(H2)=-8.000000, gap=2.000000
+    residuals: A-A_periodic=0, H1+A=0, H2-KroneckerSum=0, H1|u>-E0|u>=0, H2|uu>-2E0|uu>=0, logical/env factor=0
   exact-product checks: |<g_G0|g_H1 x g_H1>|^2=1.000000, |<g_G0|uniform x uniform>|^2=1.000000
   traced logical resource at G=0: Phi+=0.500000, Bell*=0.500000 (Phi+), CHSH=2.000000, negativity=0.000000, purity=1.000000
   separability diagnostics:
     partition                                  S(bits)     purity  max weight   rank_eff rank_num
-    species A | species B                   1.847779e-29   1.000000    1.000000   1.000000        1
-    logical pair | environment pair         1.800077e-29   1.000000    1.000000   1.000000        1
-    single H1 logical | single H1 environment 1.808875e-29   1.000000    1.000000   1.000000        1
+    species A | species B                   2.081948e-29   1.000000    1.000000   1.000000        1
+    logical pair | environment pair         2.237988e-29   1.000000    1.000000   1.000000        1
+    single H1 logical | single H1 environment 2.071897e-29   1.000000    1.000000   1.000000        1
   native site-basis support:
     state                                            dim  support         PR     PR/dim   max prob  Hsite(bits)
     single H1 ground in native sites                  16       16  16.000000   1.000000   0.062500     4.000000
     two-species G=0 ground in native site pairs      256      256 256.000000   1.000000   0.003906     8.000000
   simple candidate comparison:
     candidate                              E-E0    |<g|c>|2     PR/dim       S_AB      S_L|E     Bell*       neg
-    H1 ground tensor product                  0    1.000000   1.000000 1.186505e-30 4.855549e-29  0.500000  0.000000
-    uniform site product                      0    1.000000   1.000000 9.863560e-31 9.685856e-31  0.500000  0.000000
+    H1 ground tensor product                  0    1.000000   1.000000 7.089792e-31 6.594612e-29  0.500000  0.000000
+    uniform site product                      0    1.000000   1.000000 1.150353e-30 6.592044e-29  0.500000  0.000000
     localized |0>_A |0>_B              8.000000    0.003906   0.003906          0          0  0.500000  0.000000
     localized separated sites          8.000000    0.003906   0.003906          0          0  0.500000  0.000000
-    single-env logical |+> product     6.000000    0.015625   0.015625 3.135747e-32          0  0.500000  0.000000
+    single-env logical |+> product     6.000000    0.015625   0.015625          0          0  0.500000  0.000000
   local/native-basis preparation status: not localized (threshold PR/dim <= 0.25)
   verdict: unresolved gap: analytic product ground, but maximally delocalized in native site basis
 
@@ -68,6 +72,7 @@ Conclusion:
   native-basis localized by participation threshold: 0/2
   verdict: unresolved preparation gap, not a spectral/product no-go. The assumed state is unique and separable on these small G=0 surfaces, but it is a fully delocalized coherent native-site superposition.
   Operational read: preparing the state reduces to preparing two independent single-species H1 ground states. This is simple analytically, but this artifact does not supply a cooling/control/readout protocol, noise model, or scaling proof.
+  derivation certificate: PASS
 
 ----- stderr -----
 

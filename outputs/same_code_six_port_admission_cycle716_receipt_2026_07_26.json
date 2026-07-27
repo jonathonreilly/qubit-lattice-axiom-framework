@@ -1,0 +1,63 @@
+{
+  "cycle": 716,
+  "date": "2026-07-26",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "CYCLE716_SAME_CODE_SIX_PORT_ADMISSION_PASS",
+  "checks": {
+    "passed": 14,
+    "failed": 0
+  },
+  "result": {
+    "shared_code_cells": 27,
+    "shared_code_qubits": 594,
+    "code_stabilizer_rank": 432,
+    "literal_code_M2": 648,
+    "seam_contact_rows": 449,
+    "maximum_seam_phase_residual": 1.5895974606912448e-15,
+    "maximum_seam_norm_residual": 1.2212453270876722e-15,
+    "one_particle_free_residual": 3.352541507938339e-15,
+    "mass_residual": 5.551115123125783e-17,
+    "candidate_rows_per_law": 64,
+    "primitive_unique_quorum_maximum_residual": 9.693932373837082e-15,
+    "primitive_unique_quorum_inverse_residual": 1.7656387584798197e-14,
+    "primitive_odd_shells_maximum_residual": 9.33688904444672e-15,
+    "primitive_odd_shells_inverse_residual": 1.6323485196346035e-14,
+    "unique_quorum_well_formed_ports": 64,
+    "odd_shells_malformed_ports": 26,
+    "odd_shells_malformed_weights": [3, 5],
+    "proper_cubic_frames": 24,
+    "ordered_direction_products": 576,
+    "unique_quorum_assigned_M2": 711,
+    "unique_quorum_primitive_gates": 33712,
+    "unique_quorum_routed_gates": 1341906,
+    "unique_quorum_routed_sha256": "6d44d067bdace91a067c4a85e59a551563240d46874bd3932235e400686922ac"
+  },
+  "boundary": {
+    "positive_scope": "one shared six-port code block, two exact primitive candidate relations, semantic discriminator comparison, and structurally routed physical-M2 words",
+    "fixed_supplies": "prepared clean 3x3x3 code block, clean auxiliaries, compile-time candidate-law choice, fixed controller order, route workspace, and the landed discriminator grammar as comparator",
+    "not_derived": "Nature Admissibility, actuality, a physical end-to-end seam-to-discriminator intertwiner, active-frame naturality of the complete routed compiler, recurrent overlapping tiling, or autonomous genesis",
+    "runtime_truth_table_ROM": false,
+    "runtime_law_selector": false,
+    "axiom_pressure": false
+  },
+  "artifacts": {
+    "note": {
+      "path": "docs/SAME_CODE_SIX_PORT_ADMISSION_CYCLE716_BOUNDED_CONSTRUCTION_NOTE_2026-07-26.md",
+      "sha256": "9bd6c0c94d043422727b7d4f8693e656862a9b311834fba6d88d3f984ff070fc"
+    },
+    "runner": {
+      "path": "scripts/frontier_cycle716_same_code_six_port_admission_2026_07_26.py",
+      "sha256": "c225ce794f64e9045de355f8053b5e9b6218de9f77b4d15ac177e8995c4708c0"
+    },
+    "cache": {
+      "path": "logs/runner-cache/frontier_cycle716_same_code_six_port_admission_2026_07_26.txt",
+      "sha256": "1dbd404742bff77b9218a0e44ab01b51927a799c1a61d175e7ab6d5c85175757",
+      "input_fingerprint_sha256": "94b3cb6f45a0b3ab1312b60bf3bb69060d9cf330a9f59ac81c4832075738b427",
+      "elapsed_sec": 203.06,
+      "exit_code": 0,
+      "report_sha256": "3ee215f5f7b7ced912f86e1fba45cb19cfdbbaa61dfe316ec5492f075ae5cb67"
+    }
+  }
+}

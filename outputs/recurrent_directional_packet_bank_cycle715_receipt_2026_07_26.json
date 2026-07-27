@@ -1,0 +1,59 @@
+{
+  "cycle": 715,
+  "date": "2026-07-26",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "CYCLE715_RECURRENT_DIRECTIONAL_PACKET_BANK_PASS",
+  "checks": {
+    "passed": 12,
+    "failed": 0
+  },
+  "result": {
+    "literal_seam_basis_rows": 4096,
+    "maximum_directional_endpoint_residual": 5.566705740848049e-16,
+    "maximum_composed_EG_residual": 4.6800871863168486e-14,
+    "maximum_composed_norm_residual": 8.326672684688674e-14,
+    "held_overlapping_star_rows": 289,
+    "clean_packet_cases": 160,
+    "arbitrary_inverse_cases": 256,
+    "coherent_maximum_norm_residual": 6.256226350075742e-14,
+    "coherent_maximum_inverse_norm_residual": 1.3386516141205655e-13,
+    "one_particle_sources": 12,
+    "applications_per_source": 2,
+    "maximum_one_particle_norm_residual": 4.440892098500626e-16,
+    "maximum_particle_number_leakage": 0.0,
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "combined_assigned_M2": 172,
+    "primitive_one_two_M2_gates": 6142,
+    "routed_nearest_neighbor_gates": 38650,
+    "maximum_route_distance": 24,
+    "routed_word_sha256": "8ad83c361cbd0fe3821fd723a3be4e325fed41b7d19e82fffb4cf059dfa647d1"
+  },
+  "boundary": {
+    "positive_scope": "one fixed reversible two-cell packet-bank word composed with the literal Cycle-713 free/seam/contact endpoint instrument",
+    "fixed_supplies": "clean finite bank/work genesis, one-hot token, head/rotor genesis, BINDER, ACTUAL, ADMISS, LAW, controller order, and route workspace",
+    "not_derived": "many-bank recurrence, event admission, actuality, genesis enforcement, exhaustion dynamics, physical time, source/gravity, Record permanence, Born probability, or realized history",
+    "autonomous_many_bank_recurrence": false,
+    "axiom_pressure": false
+  },
+  "artifacts": {
+    "note": {
+      "path": "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "565bc3249037dfc1b7a0c30ba2199df50db4526af97431c89e0f05a8b5f1dd8c"
+    },
+    "runner": {
+      "path": "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+      "sha256": "f6971f1867a66cc211139e261cb33814e820c91275887d22ea62d3b0953c479d"
+    },
+    "cache": {
+      "path": "logs/runner-cache/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.txt",
+      "sha256": "cbaba24c6cce0b448d1104735bbf46be382beed01dde452c97c52d259d7345d8",
+      "input_fingerprint_sha256": "a5d592b969c4584b85dcabab9f8b02d28137fa6d97127350818a25134f06252f",
+      "elapsed_sec": 71.40,
+      "exit_code": 0,
+      "report_sha256": "586f967392f780896ac54462ee2cefc9345ad0d92eb6e4cf20369074a3e54ea9"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "cycle": 718,
+  "date": "2026-07-26",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "CYCLE718_SPATIAL_ACK_AND_INTERVAL_BRIDGE_PASS",
+  "checks": {
+    "canonical_runners_passed": 7,
+    "canonical_runners_failed": 0,
+    "named_boolean_checks_passed": 34,
+    "named_boolean_checks_failed": 0
+  },
+  "result": {
+    "lawful_spatial_commit_rows": 256,
+    "pending_matter_rows": 4096,
+    "maximum_pending_shield_residual": 2.2263907214770273e-16,
+    "held_rail_lengths": [13, 17],
+    "applications_per_held_size": [1, 2, 4],
+    "sources_N_le_2": 79,
+    "maximum_intertwiner_residual": 6.074003643852178e-16,
+    "maximum_norm_residual": 4.218847493575595e-15,
+    "maximum_particle_number_leakage": 0.0,
+    "maximum_bad_packet_or_auxiliary_weight": 0.0,
+    "length_13_assigned_M2": 6199,
+    "length_13_routed_nearest_neighbor_gates": 190279,
+    "length_17_assigned_M2": 8071,
+    "length_17_routed_nearest_neighbor_gates": 195895,
+    "adapter_bank_cells": 24,
+    "adapter_assigned_M2": 158,
+    "adapter_primitives": 4661,
+    "adapter_forward_nearest_neighbor_gates": 39317,
+    "adapter_inverse_nearest_neighbor_gates": 39317,
+    "intervals": [9, 12, 21],
+    "proper_cubic_frames": 24,
+    "ordered_frame_products": 576,
+    "direct_raw_projection_mismatches": 4
+  },
+  "boundary": {
+    "positive_scope": "one isolated pre-wrap physical-M2 spatial ACK/export source and a reversible bit-level adapter into the unchanged Cycle-612 order/interval interface",
+    "fixed_supplies": "blank no-return loop sector, clean work and auxiliary genesis, BINDER/ACTUAL/ADMISS/LAW, fixed commit-before-shift order, one acknowledged station-one packet, and one host-selected blank adapter cell per append",
+    "not_derived": "positive-density arbitration, autonomous blank-cell selection or renewal, unique 24-cell membership enforcement, objective occurrence/admission, inaccessible inverse, empirical duration unit, Record permanence, Born realization, source/gravity response, or prediction",
+    "integer_interval_is_physical_time": false,
+    "reversible_packet_is_permanent_Record": false,
+    "autonomous_recurrence": false,
+    "axiom_pressure": false
+  },
+  "artifacts": {
+    "note": {
+      "path": "docs/PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+      "sha256": "10fdab98a49382115baa7b6e06e7cc3395be4f66f83f83d326a4255589691f6b"
+    },
+    "primary_spatial_runner": {
+      "path": "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+      "sha256": "6a8c8f8600289c49bff2a20ef22d59f10572b29e7122f016b8fbbb7265bd86f6",
+      "report_sha256": "d1b2fdf4cb9b158e3d3a31873cd4da2629d7184d9e58f88925095a02bdb5fce3"
+    },
+    "primary_interval_runner": {
+      "path": "scripts/frontier_cycle718_cycle612_interval_bridge_2026_07_26.py",
+      "sha256": "9e343d06fd98cb1b2bfa6072f8a570740b9e53ddf5035316f2dc752d35d4d678",
+      "report_sha256": "b686104d33ae65ef51b667b85ce3b8e1428c14cebd9582d2b26927315acdeb14"
+    },
+    "support_runners": {
+      "carrier_return_sha256": "c9196fdfe2ed6101f7f62ac3552c9fb4944276b67f9f82fe326c89f8c21e23d7",
+      "cycle713_carrier_composition_sha256": "ca13b7064a17c14d6efe752879e2dd6e04fc9426bcd8c5dd930866df4d97ccac",
+      "token_relative_relay_sha256": "110827f5d018a60df61ad82ae29c36ca1b861ce428cba347a7dd64b04e9bdc88",
+      "three_bank_physical_route_sha256": "116ae065c9f7ebc6d584c93a8a7ddbfe1874e7187370284a025d0dad24833a1b",
+      "spatial_ack_export_sha256": "a53df4dfe108bb3ca206ce882130f7fc3705d4f54604d896ed9028eb2d94a92f"
+    },
+    "caches": {
+      "carrier_return_sha256": "48e947a74e2b80c4162a8691e4a9cc45b722910eaf1d10a9b0a82798e8bc65fb",
+      "cycle713_carrier_composition_sha256": "7d7db43f8adf33a9423141454609ab82acb3e669d164a7e862b38cf2233a09ee",
+      "token_relative_relay_sha256": "bd81cb3f73842d79dffdc9743c6a207dc20cc62275ba75d603ad6d49bd26c250",
+      "three_bank_physical_route_sha256": "c3cf031df7909ae1873de720d7768cc88f9d12c0c7fda3526d1b9d0b8cefba53",
+      "spatial_ack_export_sha256": "2b5bb84df03d43de6f223ae8de9e6686793b252f05f7b141143d49f06e98eb3f",
+      "spatial_ack_physical_sha256": "d07a953af92bc752516f79d8e9fffcda11644364546c6c661a2fb01d459ca477",
+      "cycle612_interval_sha256": "b9e72f44b8211603f1ae0804f9d860f9ec59a2d459f219f047414c01beccc9a8",
+      "primary_input_fingerprint_sha256": "35c95485250d36b4009c94faf25713b9ea8b32aff9213b9a9ccc519cbb41ecc5"
+    }
+  }
+}

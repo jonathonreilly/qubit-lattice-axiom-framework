@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle718_carrier_return_core_2026_07_26.py
+runner_sha256: c9196fdfe2ed6101f7f62ac3552c9fb4944276b67f9f82fe326c89f8c21e23d7
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 10.62
+status: ok
+----- stdout -----
+PASS all_32_rows :: True
+PASS exact_state :: True
+PASS exact_inverse :: True
+PASS returned_clean_work :: True
+PASS active_carrier_return_deletion :: True
+PASS persistent_mixed_chain :: True
+PASS held_12_bank_chain :: True
+PASS code_space_order_independence :: True
+SUMMARY_JSON {"boundary": "Positive bounded carrier-return and persistent-link semantic chain only.  It does not compose the Cycle-713 source inverse, physically place/route the link chain, supply backpressure, or close an autonomous recurrent physical-M2 compiler.", "carrier_return_deletion_basis_residual": 1.4142135623730951, "derived": ["retained local transfer predicate across one packet append", "allocator token/head/rotor advances while endpoint carrier returns to source", "returned-clean link latch and link work", "exact reverse-word inverse on all 32 tested source rows", "persistent-link semantic fills through 12 banks with hosted source cleanup", "forward/reverse boundary-order independence on the declared one-token code"], "failures": 0, "gate_counts": {"carrier_return": 12, "forward_transfer": 45, "packet_and_prefix": 548, "post_latch": 577, "pre_latch": 703, "total_semantic": 1885}, "maximum_inverse_basis_residual": 0.0, "maximum_returned_work_population": 0, "maximum_state_basis_residual": 0.0, "open": ["literal composition with the Cycle-713 source extractor and its inverse", "literal M2 placement/routing of the persistent per-link reverse pass", "safe backpressure/refusal when the downstream bank is occupied or unlawful", "autonomous event admission, genesis/enforcement, and finite exhaustion behavior", "active proper-cubic carrier action and same-E recurrent physical update"], "pass": true, "persistent_chain": {"edge_permutations": 6, "forward_reverse_order_comparisons": 864, "held_failures": 0, "held_rows": [{"banks": 2, "events": 4, "issues": []}, {"banks": 5, "events": 10, "issues": []}, {"banks": 12, "events": 24, "issues": []}], "host_source_cleanup_still_supplied": true, "mixed_failures": 0, "mixed_sequences": 729, "order_failures": 0, "order_fill_phases": 8, "persistent_aux_bits_per_link": 191}, "report_sha256": "c1ebbc1066aa8dc44fb0a13be27238a4b62cee5d8ff5b42829e49f157b9f565d", "rows": 32, "supplied": ["Route-A two-cell bank and safe admitted packet body", "full source bank, blank destination bank, and clean 190-bit link work", "one-hot allocator token and complete BINDER/ACTUAL/ADMISS/LAW inputs", "one endpoint direction carrier and fixed handoff/packet/return order", "six-bit structural destination-bank ROM prefix", "host carrier injection and host source cleanup in the semantic chain"]}
+CYCLE718_CARRIER_RETURN_SUPPORT_PASS
+
+----- stderr -----
+

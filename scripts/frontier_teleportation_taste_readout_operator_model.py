@@ -28,6 +28,7 @@ from __future__ import annotations
 import argparse
 import dataclasses
 import itertools
+import json
 import math
 import sys
 from pathlib import Path
@@ -35,7 +36,47 @@ from typing import Iterable
 
 import numpy as np
 
-from teleportation_boundary_checks_2026_06_13 import print_boundary_results, teleportation_boundary_check_results
+AUDIT_INPUT_PATHS = (
+    "docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md",
+    "docs/audit/data/ledger/te/teleportation_causal_channel_note.json",
+    "docs/audit/data/ledger/te/teleportation_measurement_record_note.json",
+    "docs/audit/data/ledger/te/teleportation_apparatus_dynamics_closure_note.json",
+    "docs/audit/data/ledger/te/teleportation_dynamical_resource_generation_note.json",
+    "docs/audit/data/ledger/te/teleportation_resource_fidelity_note.json",
+    "docs/audit/data/ledger/te/teleportation_retained_axis_operator_algebra_closure_note.json",
+    "docs/audit/data/ledger/te/teleportation_cross_encoding_maps_note.json",
+    "docs/audit/data/ledger/te/teleportation_three_register_cross_encoding_note.json",
+    "docs/audit/data/ledger/te/teleportation_no_signaling_audit.json",
+    "docs/audit/data/ledger/te/teleportation_3d_operator_consistent_end_to_end_note.json",
+    "docs/audit/data/ledger/te/teleportation_conclusion_boundary_note.json",
+)
+
+RETAINED_STATUS_PAIRS = {
+    ("retained_bounded", "audited_clean"),
+    ("retained", "audited_clean"),
+}
+BOUNDARY_STATUS_PAIRS = {
+    "teleportation_causal_channel_note": RETAINED_STATUS_PAIRS,
+    "teleportation_measurement_record_note": RETAINED_STATUS_PAIRS
+    | {("audited_conditional", "audited_conditional")},
+    "teleportation_apparatus_dynamics_closure_note": RETAINED_STATUS_PAIRS
+    | {
+        ("audited_conditional", "audited_conditional"),
+        ("audited_failed", "audited_failed"),
+    },
+    "teleportation_dynamical_resource_generation_note": RETAINED_STATUS_PAIRS,
+    "teleportation_resource_fidelity_note": RETAINED_STATUS_PAIRS
+    | {("audited_conditional", "audited_conditional")},
+    "teleportation_retained_axis_operator_algebra_closure_note": RETAINED_STATUS_PAIRS,
+    "teleportation_cross_encoding_maps_note": RETAINED_STATUS_PAIRS
+    | {("audited_conditional", "audited_conditional")},
+    "teleportation_three_register_cross_encoding_note": RETAINED_STATUS_PAIRS
+    | {("audited_conditional", "audited_conditional")},
+    "teleportation_no_signaling_audit": RETAINED_STATUS_PAIRS,
+    "teleportation_3d_operator_consistent_end_to_end_note": RETAINED_STATUS_PAIRS,
+    "teleportation_conclusion_boundary_note": RETAINED_STATUS_PAIRS
+    | {("audited_renaming", "audited_renaming")},
+}
 
 
 I2 = np.eye(2, dtype=complex)
@@ -49,6 +90,88 @@ OUTCOME_LABELS = {
     (0, 1): "Psi+",
     (1, 1): "Psi-",
 }
+
+
+def _boundary_rows(root: Path) -> dict[str, dict[str, object]]:
+    rows: dict[str, dict[str, object]] = {}
+    for relative in AUDIT_INPUT_PATHS:
+        if not relative.startswith("docs/audit/data/ledger/"):
+            continue
+        row = json.loads((root / relative).read_text(encoding="utf-8"))
+        claim_id = row.get("claim_id")
+        if not isinstance(claim_id, str) or claim_id not in BOUNDARY_STATUS_PAIRS:
+            raise ValueError(f"unexpected teleportation boundary ledger shard: {relative}")
+        rows[claim_id] = row
+    missing = sorted(set(BOUNDARY_STATUS_PAIRS) - set(rows))
+    if missing:
+        raise ValueError(f"missing teleportation boundary ledger shards: {missing}")
+    return rows
+
+
+def _compact(text: str) -> str:
+    return " ".join(text.split())
+
+
+def teleportation_boundary_check_results(
+    root: Path, prefix: str = "downstream teleportation boundary"
+) -> list[tuple[str, bool, str]]:
+    rows = _boundary_rows(root)
+    out: list[tuple[str, bool, str]] = []
+
+    for row_id, allowed_pairs in BOUNDARY_STATUS_PAIRS.items():
+        row = rows[row_id]
+        effective = row.get("effective_status")
+        audit = row.get("audit_status")
+        out.append(
+            (
+                f"{prefix}: {row_id} has a scope-compatible audited status",
+                (effective, audit) in allowed_pairs,
+                f"effective={effective}, audit={audit}",
+            )
+        )
+
+    conclusion = _compact(
+        (root / "docs" / "TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md").read_text(
+            encoding="utf-8"
+        )
+    )
+    out.append(
+        (
+            f"{prefix}: lane remains state-teleportation only with no-transfer boundary",
+            all(
+                phrase in conclusion
+                for phrase in [
+                    "ordinary quantum state teleportation only",
+                    "No matter, mass, charge, energy, object, or faster-than-light transport is claimed.",
+                    "unconditional_closed = False",
+                    "nature-grade closure HOLD",
+                ]
+            ),
+            "checked conclusion boundary note",
+        )
+    )
+    out.append(
+        (
+            f"{prefix}: finite planning support is not nature-grade closure",
+            "planning_closed = True" in conclusion
+            and "promote_to_nature_grade = False" in conclusion,
+            "planning closure and nature-grade hold are distinct",
+        )
+    )
+    return out
+
+
+def print_boundary_results(results: list[tuple[str, bool, str]]) -> bool:
+    ok = True
+    print()
+    print("Downstream boundary checks:")
+    for label, passed, detail in results:
+        ok = ok and passed
+        print(
+            f"  {label}: {'PASS' if passed else 'FAIL'}"
+            + (f" ({detail})" if detail else "")
+        )
+    return ok
 
 
 @dataclasses.dataclass(frozen=True)

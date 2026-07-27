@@ -2107,6 +2107,7 @@
     "566aeac141 2026-06-15 scripts/frontier_teleportation_resource_from_poisson.py",
     "7447f6918b 2026-07-16 scripts/frontier_teleportation_resource_from_poisson.py",
     "8235ba655f 2026-06-17 scripts/frontier_teleportation_taste_readout_operator_model.py",
+    "science-fix-20260727 target-only sharded boundary fixture in scripts/frontier_teleportation_taste_readout_operator_model.py",
     "a1361f8086 2026-06-20 scripts/frontier_teleportation_resource_from_poisson.py",
     "a2f1a67541 2026-06-07 scripts/frontier_teleportation_resource_from_poisson.py",
     "bf7df9b06c 2026-06-13 scripts/frontier_teleportation_resource_from_poisson.py"
@@ -2119,7 +2120,7 @@
     "scripts/frontier_teleportation_operator_consistent_end_to_end.py": "c9bcc5c5a38a6cff578650dc7db536216d18daa5a3b86f7d24dc9d1ee9193184",
     "scripts/frontier_teleportation_resource_fidelity.py": "d9ca0c36744f9aa71687c58e8fcd1437471a39eefac4857d920096d3a60e10e9",
     "scripts/frontier_teleportation_resource_from_poisson.py": "3535f2d33e0abe98f2f921ab66dc0288a0293c8370a763189cc00708ac599ace",
-    "scripts/frontier_teleportation_taste_readout_operator_model.py": "69fde07391e2a34bfc1ddf75af625383056c416000557819bfec78e6644a48eb",
+    "scripts/frontier_teleportation_taste_readout_operator_model.py": "839f77e2c6aea3cef4e6a3f3db3e53931e5b10dc78dfbfdf786b71d7e8521910",
     "scripts/teleportation_boundary_checks_2026_06_13.py": "095f958d84c2549e235defe174553aad674ee84086d2e00f2a0eed2cab6f0392"
    },
    "runner_path": "scripts/frontier_teleportation_3d_operator_consistent_end_to_end.py",

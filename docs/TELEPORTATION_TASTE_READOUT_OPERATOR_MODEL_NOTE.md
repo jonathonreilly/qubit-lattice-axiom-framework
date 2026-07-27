@@ -35,6 +35,15 @@ python3 scripts/frontier_teleportation_taste_readout_operator_model.py
 
 Both commands completed successfully.
 
+The primary runner declares the conclusion-boundary note and the eleven
+canonical teleportation ledger shards in `AUDIT_INPUT_PATHS`. It reads those
+tracked shards directly rather than depending on the ignored materialized
+`audit_ledger.json` cache. Consequently the same command runs in a clean
+checkout and in the restricted audit checkout, while cache freshness remains
+bound to every boundary input. A claim/dependency-specific packet allowance
+also carries the cited RALA closure note unabridged; limits for unrelated
+claims and the aggregate authority budget are unchanged.
+
 Default settings:
 
 ```text
@@ -236,11 +245,12 @@ heralding and branch-conditioned correction workflow.
 
 ## Coordinated Algebraic Closure (2026-05-07)
 
-The case-by-case factorization audit documented above is now subsumed by a
-single algebraic theorem (T1 + T2 + T4 in the companion closure note):
-RALA(a) is the unique closed *-subalgebra of single-site operators that
-factors as `O_logical (x) I_env`; native sublattice parity Z is in RALA
-iff dim = 1.
+The case-by-case factorization audit documented above has bounded algebraic
+support from T1 + T2 + T4 in the companion closure note: RALA(a) is the full
+*-subalgebra of all single-site operators of the form
+`O_logical (x) I_env`, and native sublattice parity Z is in RALA iff dim = 1.
+Only T1, T2, and T4 are dependencies here; uniqueness among proper
+subalgebras and T3/T5-T8 are not load-bearing for this note.
 
 See [`TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md`](TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md)
 (runner `scripts/frontier_teleportation_retained_axis_operator_algebra_closure.py`)

@@ -1,0 +1,112 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle720_companion_local_choi_pump_covariance_2026_07_27.py
+runner_sha256: 91ec583b03dafa5af1e26b1a87de771d3f92b1908848794d4b5b32b5e170e399
+input_fingerprint_sha256: d62df421f3bb3ae67e2de8777c92aa5c51157813a766de458505c9375a82e705
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 210.59
+status: ok
+----- stdout -----
+PASS all active Choi stabilizers and private corrections are signed-covariant in every retained coframe sector
+PASS finite correction-atlas and tree-plaquette schedule descriptors transport invertibly under every frame
+PASS Bell-reference charts, retained syndrome labels, and mobile routes remain local and bijective
+PASS all 576 proper-cubic products close in every coframe-origin block on rows, corrections, schedules, and routes
+{
+  "atlas_sha256": "2000a1ba2e4969ca55fd8bc7c002a941b2e716a6b6b94ab4f9c1b2c3836c1eb2",
+  "audit": "unset",
+  "authority": "none",
+  "boxes": [
+    {
+      "Bell_reference_conjugate_chart_failures": 0,
+      "actively_transformed_private_corrections": 19200,
+      "actively_transformed_returned_routes": 19200,
+      "actively_transformed_stabilizer_rows": 19200,
+      "atlas_key_inverse_transport_failures": 0,
+      "finite_coframe_atlas_orbit_keys": 864,
+      "finite_coframe_correction_word_orbit": 1128,
+      "frame_origin_contexts": 192,
+      "geometric_route_words_changed_by_JW_chart_gauge": 2032,
+      "orbit_digest": "f8d56c31d79ca26cc51aa5a492e9288e9f4dd48681acb5be02046dcd016aeab4",
+      "oriented_factor_2_or_3_edge_row_failures": 0,
+      "private_correction_support_failures": 0,
+      "private_correction_syndrome_failures": 0,
+      "proper_cubic_frames": 24,
+      "retained_coframe_origin_sectors": 8,
+      "reversed_edge_rows": 1152,
+      "route_gauge_boundary": "the actual transformed signed Pauli row is routed afresh by the same deterministic NN returned-route compiler; a bare geometric image of the source JW route is only a chart gauge",
+      "route_locality_support_or_return_failures": 0,
+      "schedule_key_inverse_transport_failures": 0,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "signed_projector_failures": 0,
+      "syndrome_register_bijection_failures": 0
+    },
+    {
+      "Bell_reference_conjugate_chart_failures": 0,
+      "actively_transformed_private_corrections": 29184,
+      "actively_transformed_returned_routes": 29184,
+      "actively_transformed_stabilizer_rows": 29184,
+      "atlas_key_inverse_transport_failures": 0,
+      "finite_coframe_atlas_orbit_keys": 3216,
+      "finite_coframe_correction_word_orbit": 1750,
+      "frame_origin_contexts": 192,
+      "geometric_route_words_changed_by_JW_chart_gauge": 3392,
+      "orbit_digest": "0d2b27495d3afa0ae13539de513540683f446dd71aa087b531662c11ed6d4885",
+      "oriented_factor_2_or_3_edge_row_failures": 0,
+      "private_correction_support_failures": 0,
+      "private_correction_syndrome_failures": 0,
+      "proper_cubic_frames": 24,
+      "retained_coframe_origin_sectors": 8,
+      "reversed_edge_rows": 1920,
+      "route_gauge_boundary": "the actual transformed signed Pauli row is routed afresh by the same deterministic NN returned-route compiler; a bare geometric image of the source JW route is only a chart gauge",
+      "route_locality_support_or_return_failures": 0,
+      "schedule_key_inverse_transport_failures": 0,
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "signed_projector_failures": 0,
+      "syndrome_register_bijection_failures": 0
+    }
+  ],
+  "checks": [
+    {
+      "label": "all active Choi stabilizers and private corrections are signed-covariant in every retained coframe sector",
+      "pass": true
+    },
+    {
+      "label": "finite correction-atlas and tree-plaquette schedule descriptors transport invertibly under every frame",
+      "pass": true
+    },
+    {
+      "label": "Bell-reference charts, retained syndrome labels, and mobile routes remain local and bijective",
+      "pass": true
+    },
+    {
+      "label": "all 576 proper-cubic products close in every coframe-origin block on rows, corrections, schedules, and routes",
+      "pass": true
+    }
+  ],
+  "claim_boundary": "preparation covariance only; a covariant Choi resource is not by itself an executed encoder E on a live input",
+  "derived": "signed proper-cubic covariance of the entire finite Choi-pump apparatus modulo the already-retained eight coframe origins",
+  "open": "live-input injection and correction, collision-free recurrent controller placement, autonomous genesis, and physical selection of parity superselection",
+  "products": {
+    "atlas_key_product_failures": 0,
+    "coframe_origin_blocks": 4608,
+    "ordered_frame_products": 576,
+    "private_correction_word_product_failures": 0,
+    "returned_route_product_failures": 0,
+    "signed_Choi_tableau_image_product_failures": 0,
+    "stabilizer_row_product_failures": 0,
+    "tree_plaquette_schedule_product_failures": 0
+  },
+  "status": "PASS",
+  "supplied": "same one-time epoch, root/axis gauge, clean Bell/syndrome/route registers, and finite local atlas as the parent pump"
+}
+
+----- stderr -----
+

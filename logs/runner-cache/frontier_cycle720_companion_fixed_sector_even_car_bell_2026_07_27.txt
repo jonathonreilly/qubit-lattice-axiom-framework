@@ -1,0 +1,263 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27.py
+runner_sha256: 990016c074cfc98cd2e4ba2f27afe0e7dd2da7a96b9a38a13d4062f778216a36
+input_fingerprint_sha256: 7fdc44793e0baf9f326c6243520873c161b50ad4e79d63882008e871f63efe6b
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 242.44
+status: ok
+----- stdout -----
+PASS local doubled even-CAR rows give a complete fixed-sector Bell algebra
+PASS frozen private-dual atlas stays physical-M2 local on the held ladder
+PASS measurement and correction words admit size-independent conflict coloring
+PASS lawful even Bell characters are exactly cancelled without changing fixed centers
+PASS small-sector matrices certify CPTP teleportation rather than a formal syndrome relabeling
+PASS proper-cubic 24-frame and 576-product action preserves projector, atlas, corrections, and schedules
+PASS deleting a matching local private dual leaves a nonzero Bell sign residual
+{
+  "atlas": {
+    "atlas_sha256": "2000a1ba2e4969ca55fd8bc7c002a941b2e716a6b6b94ab4f9c1b2c3836c1eb2",
+    "distinct_edge_corrections": 10,
+    "distinct_onsite_corrections": 44,
+    "edge_conflicts": 0,
+    "edge_keys": 192,
+    "onsite_conflicts": 0,
+    "onsite_keys": 704,
+    "solve_contradictions": 0,
+    "training_rows": 12800,
+    "training_shapes": 64
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boxes": [
+    {
+      "CAR_edge_nearest_neighbor_failures": 0,
+      "CAR_measurement_support_cell_failures": 0,
+      "branch_character_entry_failures": 0,
+      "branch_private_dual_character_failures": 0,
+      "branch_target_relation_character_failures": 0,
+      "cells": 8,
+      "delete_matching_private_dual_residual": 1,
+      "doubled_Bell_row_commutator_failures": 0,
+      "doubled_Bell_row_rank": 95,
+      "edges": 12,
+      "expected_connected_even_algebra_rank": 95,
+      "expected_fixed_sector_Bell_bits": 94,
+      "fixed_sector_random_Bell_bits": 94,
+      "input_output_identity": "for every local even row T_i and lawful Bell error U, s_i=[U,T_i]; the physical correction product has exactly [C(s),P_i]=s_i, so the corrected fixed-sector Choi character is the identity character",
+      "lawful_even_characters_tested": 161,
+      "local_even_CAR_rows": 100,
+      "matter_M2": 48,
+      "maximum_private_dual_support_cells": 1,
+      "maximum_private_dual_support_diameter": 0,
+      "measurement_conflict_layers": 4,
+      "physical_correction_conflict_layers": 10,
+      "physical_private_dual_support_failures": 0,
+      "physical_private_dual_syndrome_failures": 0,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "target_even_algebra_rank": 95,
+      "target_relation_rows": 5
+    },
+    {
+      "CAR_edge_nearest_neighbor_failures": 0,
+      "CAR_measurement_support_cell_failures": 0,
+      "branch_character_entry_failures": 0,
+      "branch_private_dual_character_failures": 0,
+      "branch_target_relation_character_failures": 0,
+      "cells": 30,
+      "delete_matching_private_dual_residual": 1,
+      "doubled_Bell_row_commutator_failures": 0,
+      "doubled_Bell_row_rank": 359,
+      "edges": 59,
+      "expected_connected_even_algebra_rank": 359,
+      "expected_fixed_sector_Bell_bits": 358,
+      "fixed_sector_random_Bell_bits": 358,
+      "input_output_identity": "for every local even row T_i and lawful Bell error U, s_i=[U,T_i]; the physical correction product has exactly [C(s),P_i]=s_i, so the corrected fixed-sector Choi character is the identity character",
+      "lawful_even_characters_tested": 425,
+      "local_even_CAR_rows": 389,
+      "matter_M2": 180,
+      "maximum_private_dual_support_cells": 1,
+      "maximum_private_dual_support_diameter": 0,
+      "measurement_conflict_layers": 4,
+      "physical_correction_conflict_layers": 11,
+      "physical_private_dual_support_failures": 0,
+      "physical_private_dual_syndrome_failures": 0,
+      "shape": [
+        5,
+        3,
+        2
+      ],
+      "target_even_algebra_rank": 359,
+      "target_relation_rows": 30
+    },
+    {
+      "CAR_edge_nearest_neighbor_failures": 0,
+      "CAR_measurement_support_cell_failures": 0,
+      "branch_character_entry_failures": 0,
+      "branch_private_dual_character_failures": 0,
+      "branch_target_relation_character_failures": 0,
+      "cells": 75,
+      "delete_matching_private_dual_residual": 1,
+      "doubled_Bell_row_commutator_failures": 0,
+      "doubled_Bell_row_rank": 899,
+      "edges": 170,
+      "expected_connected_even_algebra_rank": 899,
+      "expected_fixed_sector_Bell_bits": 898,
+      "fixed_sector_random_Bell_bits": 898,
+      "input_output_identity": "for every local even row T_i and lawful Bell error U, s_i=[U,T_i]; the physical correction product has exactly [C(s),P_i]=s_i, so the corrected fixed-sector Choi character is the identity character",
+      "lawful_even_characters_tested": 965,
+      "local_even_CAR_rows": 995,
+      "matter_M2": 450,
+      "maximum_private_dual_support_cells": 1,
+      "maximum_private_dual_support_diameter": 0,
+      "measurement_conflict_layers": 4,
+      "physical_correction_conflict_layers": 11,
+      "physical_private_dual_support_failures": 0,
+      "physical_private_dual_syndrome_failures": 0,
+      "shape": [
+        5,
+        5,
+        3
+      ],
+      "target_even_algebra_rank": 899,
+      "target_relation_rows": 96
+    },
+    {
+      "CAR_edge_nearest_neighbor_failures": 0,
+      "CAR_measurement_support_cell_failures": 0,
+      "branch_character_entry_failures": 0,
+      "branch_private_dual_character_failures": 0,
+      "branch_target_relation_character_failures": 0,
+      "cells": 120,
+      "delete_matching_private_dual_residual": 1,
+      "doubled_Bell_row_commutator_failures": 0,
+      "doubled_Bell_row_rank": 1439,
+      "edges": 286,
+      "expected_connected_even_algebra_rank": 1439,
+      "expected_fixed_sector_Bell_bits": 1438,
+      "fixed_sector_random_Bell_bits": 1438,
+      "input_output_identity": "for every local even row T_i and lawful Bell error U, s_i=[U,T_i]; the physical correction product has exactly [C(s),P_i]=s_i, so the corrected fixed-sector Choi character is the identity character",
+      "lawful_even_characters_tested": 1505,
+      "local_even_CAR_rows": 1606,
+      "matter_M2": 720,
+      "maximum_private_dual_support_cells": 1,
+      "maximum_private_dual_support_diameter": 0,
+      "measurement_conflict_layers": 4,
+      "physical_correction_conflict_layers": 11,
+      "physical_private_dual_support_failures": 0,
+      "physical_private_dual_syndrome_failures": 0,
+      "shape": [
+        6,
+        5,
+        4
+      ],
+      "target_even_algebra_rank": 1439,
+      "target_relation_rows": 167
+    }
+  ],
+  "checks": [
+    {
+      "label": "local doubled even-CAR rows give a complete fixed-sector Bell algebra",
+      "pass": true
+    },
+    {
+      "label": "frozen private-dual atlas stays physical-M2 local on the held ladder",
+      "pass": true
+    },
+    {
+      "label": "measurement and correction words admit size-independent conflict coloring",
+      "pass": true
+    },
+    {
+      "label": "lawful even Bell characters are exactly cancelled without changing fixed centers",
+      "pass": true
+    },
+    {
+      "label": "small-sector matrices certify CPTP teleportation rather than a formal syndrome relabeling",
+      "pass": true
+    },
+    {
+      "label": "proper-cubic 24-frame and 576-product action preserves projector, atlas, corrections, and schedules",
+      "pass": true
+    },
+    {
+      "label": "deleting a matching local private dual leaves a nonzero Bell sign residual",
+      "pass": true
+    }
+  ],
+  "claim_boundary": "positive CPTP encoder only on a supplied common fixed-parity sector; CAR-local input measurements are domain operations, while all compiled corrections are bounded physical M2; not a pure isometry, sector law, physical time, Record, Born law, or source law",
+  "covariance": {
+    "Bell_reference_conjugate_chart_failures": 0,
+    "actively_transformed_private_corrections": 19200,
+    "actively_transformed_returned_routes": 19200,
+    "actively_transformed_stabilizer_rows": 19200,
+    "atlas_key_inverse_transport_failures": 0,
+    "finite_coframe_atlas_orbit_keys": 864,
+    "finite_coframe_correction_word_orbit": 1128,
+    "frame_origin_contexts": 192,
+    "geometric_route_words_changed_by_JW_chart_gauge": 2032,
+    "orbit_digest": "f8d56c31d79ca26cc51aa5a492e9288e9f4dd48681acb5be02046dcd016aeab4",
+    "oriented_factor_2_or_3_edge_row_failures": 0,
+    "private_correction_support_failures": 0,
+    "private_correction_syndrome_failures": 0,
+    "proper_cubic_frames": 24,
+    "retained_coframe_origin_sectors": 8,
+    "reversed_edge_rows": 1152,
+    "route_gauge_boundary": "the actual transformed signed Pauli row is routed afresh by the same deterministic NN returned-route compiler; a bare geometric image of the source JW route is only a chart gauge",
+    "route_locality_support_or_return_failures": 0,
+    "schedule_key_inverse_transport_failures": 0,
+    "shape": [
+      2,
+      2,
+      2
+    ],
+    "signed_projector_failures": 0,
+    "syndrome_register_bijection_failures": 0
+  },
+  "derived": "fixed-sector CPTP live-input encoder using bounded local even-CAR Bell rows and bounded physical-M2 private-dual corrections; exact character intertwiner, held-size reuse, constant conflict layers, and proper-cubic covariance",
+  "exact_CPTP_controls": [
+    {
+      "Bell_basis_orthonormality_residual": 4.440892098500626e-16,
+      "Bell_outcomes": 4,
+      "Kraus_completeness_residual": 6.280369834735101e-16,
+      "corrected_branch_identity_residual": 1.5700924586837752e-16,
+      "expected_even_rank": 3,
+      "expected_outcomes": 4,
+      "fixed_sector_dimension": 2,
+      "generator_rank": 3,
+      "modes": 2
+    },
+    {
+      "Bell_basis_orthonormality_residual": 0.0,
+      "Bell_outcomes": 16,
+      "Kraus_completeness_residual": 0.0,
+      "corrected_branch_identity_residual": 0.0,
+      "expected_even_rank": 5,
+      "expected_outcomes": 16,
+      "fixed_sector_dimension": 4,
+      "generator_rank": 5,
+      "modes": 3
+    }
+  ],
+  "frame_products": {
+    "atlas_key_product_failures": 0,
+    "coframe_origin_blocks": 4608,
+    "ordered_frame_products": 576,
+    "private_correction_word_product_failures": 0,
+    "returned_route_product_failures": 0,
+    "signed_Choi_tableau_image_product_failures": 0,
+    "stabilizer_row_product_failures": 0,
+    "tree_plaquette_schedule_product_failures": 0
+  },
+  "input_Bell_measurement_physical_M2_compiled": false,
+  "open": "autonomous sector and genesis selection; collision-free merge of preparation, Bell, correction, and recurrent-G epochs; sector-summed live E; downstream time/source/Record/Born acceptance harnesses",
+  "status": "PASS",
+  "supplied": "common fixed parity/center sector; one-time locally pumped Choi resource; mixed gauge reference; retained Bell/syndrome banks; finite 64-port-environment correction atlas; finite layer colors; coframe-origin gauge sector"
+}
+
+----- stderr -----
+

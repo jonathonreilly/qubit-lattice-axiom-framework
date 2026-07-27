@@ -37,12 +37,12 @@ scalar acceptance rails, and uncompute 16 feature-work bits.  The fixed words
 contain no law-selector bit and no truth-table ROM.  Their supplied choice at
 compile time is not derived as Nature's Admissibility.
 
-The unique-quorum output produces 64/64 well-formed landed lane-zero port
+The semantic unique-quorum output produces 64/64 well-formed landed lane-zero port
 tuples and the unchanged discriminator identifies `unique_quorum` with all
 four separating witnesses.  No winner convention is needed because every
 admitted word has exactly one bit.
 
-The odd-shell word is a second positive physical candidate construction, but
+The odd-shell word is a second positive primitive candidate construction, but
 its all-alternatives emission is not type-correct for the landed grammar:
 26/64 words, exactly the accepted weight-three and weight-five rows, are
 refused at `W-losers1`.  This is a precise representation mismatch.  It is not
@@ -98,6 +98,13 @@ The physical expansion checks `X = H S S H` to
 `3.1560822113208575e-16` and the inherited H/T/CNOT Toffoli to
 `7.346882794269506e-16`.
 
+The actual expanded H/S/CNOT/T candidate subword is also executed on all 64
+clean rows for each law, not only counted: it has zero equation or inverse
+failures.  Its non-port registers begin clean on every row, and an executable
+gate-kind scan finds no run-time table/ROM gate.  The law remains a supplied
+compile-time choice between two separate words; no law-selector input wire is
+present.
+
 ### Literal physical-M2 words
 
 Both candidate laws use the same 594-qubit code, rank-432 stabilizer sector,
@@ -111,11 +118,13 @@ placement collisions.
 | odd shells | 33,695 | 1,341,951 | 104 | 14,037 | 13,326 | `2666707c0c7098ccf6d7d983f08a1f791a1b7e860d1d658afc4c87c6833c6e80` |
 
 Both routed words have zero non-nearest-neighbor, operand-order, route-return,
-placement, or decoded-stabilizer failures.  The directional outputs are
-covariant under all 24 proper-cubic frames; all 576 ordered frame products
-close exactly.  Signed-permutation action preserves the actual routed word's
-nearest-neighbor step alphabet, and symbolic translations preserve it; three
-explicit offsets are included as witnesses.
+placement, or decoded-stabilizer failures.  The semantic directional output
+relations are covariant under all 24 proper-cubic frames, and the six-direction
+representation closes under all 576 ordered products.  For the routed words,
+the current result is narrower: signed-permutation and translation actions
+preserve their nearest-neighbor coordinate alphabet and assigned-site geometry.
+The runner does not transform and re-execute the complete routed compiler in
+each frame, so active physical naturality is open.
 
 ## Supplied, derived, and open
 
@@ -135,10 +144,11 @@ Derived on that domain:
 - fixed local unique-quorum and odd-shell Boolean relations;
 - coherent archive, admitted-alternative, rejected-alternative, collision, and
   empty outputs;
-- a physical unique-quorum stream accepted and identified by the unchanged
-  discriminator;
-- proper-cubic covariance, translation compatibility, and preservation of the
-  imported free/seam/contact/mass fixtures.
+- a semantic unique-quorum stream accepted and identified by the unchanged
+  discriminator, plus an exact primitive candidate-word implementation;
+- proper-cubic covariance of the candidate relation, physical route-geometry
+  compatibility, and preservation of the imported free/seam/contact/mass
+  fixtures.
 
 Open:
 
@@ -147,6 +157,9 @@ Open:
 - a covariant winner-bearing grammar if multi-opportunity admitted words must
   be represented as a single-winner port;
 - recurrent tiling and consistency of overlapping `3 x 3 x 3` blocks;
+- one executed `E G = G_physical E` chain from the seam instrument through the
+  routed candidate word into the unchanged discriminator;
+- active-frame naturality of that full routed compiler;
 - autonomous clean-ancilla supply;
 - Record permanence, Born/history selection, source/gravity, and physical
   time.

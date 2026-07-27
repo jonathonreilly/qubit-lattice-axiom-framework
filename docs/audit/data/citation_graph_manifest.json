@@ -1,6 +1,6 @@
 {
  "edge_count": 15163,
- "node_count": 4553,
+ "node_count": 4554,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12329,6 +12329,10 @@
   "records_only_os_reconstruction_untied_first_order_measure_bounded_theorem_note_2026-07-11": {
    "deps_hash": "a32c4dfe71ec",
    "out_degree": 7
+  },
+  "recurrent_companion_physical_m2_update_local_choi_preparation_cycle720_bounded_theorem_note_2026-07-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "recurrent_directional_packet_bank_cycle715_bounded_theorem_note_2026-07-26": {
    "deps_hash": "910e94d928e9",

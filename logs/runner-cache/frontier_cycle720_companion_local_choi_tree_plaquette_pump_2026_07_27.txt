@@ -1,0 +1,421 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py
+runner_sha256: 108568254546e1f64e4454b455f4aa866fe9abfbd4a6ca3a82f65b6a29e28974
+input_fingerprint_sha256: b22ebc18bc1fee58dcbba773176405ea0ab0051b1a158310294495de17f7dd7b
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 152.26
+status: ok
+----- stdout -----
+PASS finite local port-mask atlas derives private corrections without conflicts
+PASS explicit 11N+E basis is the complete signed repeated-star Choi projector
+PASS tree then elementary-plaquette schedule is triangular and spans the same signed projector
+PASS held boxes use the frozen atlas with exact one-cell or endpoint-private syndromes
+PASS non-tree seam strings cancel into bounded elementary-plaquette measurements
+PASS literal syndrome routes are nearest-neighbour returned words with held-size linear density
+PASS all corner and axis-order preparation gauges give the identical signed projector
+PASS onsite stabilizers derive physical-input/output parity correlation and the parent CPTP normalization
+PASS pump and controlled-factor deletions are active
+PASS retained-syndrome stabilizer pump is trace preserving and sets both eigensigns to plus
+{
+  "atlas": {
+    "atlas_sha256": "2000a1ba2e4969ca55fd8bc7c002a941b2e716a6b6b94ab4f9c1b2c3836c1eb2",
+    "distinct_edge_corrections": 10,
+    "distinct_onsite_corrections": 44,
+    "edge_conflicts": 0,
+    "edge_keys": 192,
+    "onsite_conflicts": 0,
+    "onsite_keys": 704,
+    "solve_contradictions": 0,
+    "training_rows": 12800,
+    "training_shapes": 64
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boxes": [
+    {
+      "Choi_system_M2": 120,
+      "atlas_private_dual_syndrome_failures": 0,
+      "cells": 8,
+      "controlled_Pauli_measurement_factors": 603,
+      "controlled_private_correction_factors": 312,
+      "corner_axis_schedule_contexts": 48,
+      "corner_axis_signed_projector_failures": 0,
+      "corrections_outside_declared_one_or_two_cells": 0,
+      "direct_basis_rank": 100,
+      "direct_commutator_failures": 0,
+      "direct_from_repeated_signed_failures": 0,
+      "direct_from_schedule_signed_failures": 0,
+      "distinct_basis_word_digests": 24,
+      "edges": 12,
+      "equal_parent_projector": true,
+      "explicit_direct_generators": 100,
+      "literal_reverse_route_failures": 0,
+      "maximum_edge_private_correction_weight": 1,
+      "maximum_plaquette_measurement_cells": 4,
+      "maximum_plaquette_measurement_diameter": 2,
+      "maximum_private_correction_weight": 8,
+      "maximum_single_measurement_route_transitions": 8,
+      "normalized_Choi_trace": 1,
+      "normalized_partial_trace_output": "I_input/2^matter_qubits",
+      "physical_input_output_parity_correlation_failure": false,
+      "rank_formula_11N_plus_E": 100,
+      "repeated_from_direct_signed_failures": 0,
+      "retained_Stinespring_resources": {
+        "inverse_and_work_boundary": "every route is an explicit down/up NN SWAP word and returns the mobile rail to its anchor; the syndrome and Bell purifiers are retained, not erased or called Records",
+        "local_Bell_reference_M2": 120,
+        "pump_word": "H_s; controlled-S_j along returned NN route; H_s; controlled-C_j along returned NN route; store s_j in its retained local bank",
+        "reduced_channel_formula": "Phi_j(rho)=P_j+ rho P_j+ + C_j P_j- rho P_j- C_j; commuting triangular private corrections give rho_J=2^(-Q) product_j(I+S_j)",
+        "retained_syndrome_bank_M2": 100,
+        "reusable_mobile_route_rail_M2": 8,
+        "system_initialization": "one local Bell pair per Choi-system M2; retaining the other half purifies the system maximally mixed state",
+        "total_auxiliary_M2_per_cell": 28.5
+      },
+      "returned_route_transitions_per_cell": 6.75,
+      "route_locality_or_return_failures": 0,
+      "schedule_basis_rank": 100,
+      "schedule_commutator_failures": 0,
+      "schedule_from_direct_signed_failures": 0,
+      "schedule_report": {
+        "edge_coverage_failures": 0,
+        "plaquette_fill_rows": 5,
+        "tree_edges": 7,
+        "triangular_predecessor_failures": 0
+      },
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "single_controlled_factor_deletions_tested": 3,
+      "single_controlled_factor_deletions_undetected": 0,
+      "single_pump_deletion_rank_failures": 0,
+      "single_pump_deletions_tested": 3,
+      "total_returned_route_transitions": 54,
+      "triangular_schedule_pump_failures": 0
+    },
+    {
+      "Choi_system_M2": 180,
+      "atlas_private_dual_syndrome_failures": 0,
+      "cells": 12,
+      "controlled_Pauli_measurement_factors": 977,
+      "controlled_private_correction_factors": 472,
+      "corner_axis_schedule_contexts": 48,
+      "corner_axis_signed_projector_failures": 0,
+      "corrections_outside_declared_one_or_two_cells": 0,
+      "direct_basis_rank": 152,
+      "direct_commutator_failures": 0,
+      "direct_from_repeated_signed_failures": 0,
+      "direct_from_schedule_signed_failures": 0,
+      "distinct_basis_word_digests": 24,
+      "edges": 20,
+      "equal_parent_projector": true,
+      "explicit_direct_generators": 152,
+      "literal_reverse_route_failures": 0,
+      "maximum_edge_private_correction_weight": 3,
+      "maximum_plaquette_measurement_cells": 4,
+      "maximum_plaquette_measurement_diameter": 2,
+      "maximum_private_correction_weight": 8,
+      "maximum_single_measurement_route_transitions": 8,
+      "normalized_Choi_trace": 1,
+      "normalized_partial_trace_output": "I_input/2^matter_qubits",
+      "physical_input_output_parity_correlation_failure": false,
+      "rank_formula_11N_plus_E": 152,
+      "repeated_from_direct_signed_failures": 0,
+      "retained_Stinespring_resources": {
+        "inverse_and_work_boundary": "every route is an explicit down/up NN SWAP word and returns the mobile rail to its anchor; the syndrome and Bell purifiers are retained, not erased or called Records",
+        "local_Bell_reference_M2": 180,
+        "pump_word": "H_s; controlled-S_j along returned NN route; H_s; controlled-C_j along returned NN route; store s_j in its retained local bank",
+        "reduced_channel_formula": "Phi_j(rho)=P_j+ rho P_j+ + C_j P_j- rho P_j- C_j; commuting triangular private corrections give rho_J=2^(-Q) product_j(I+S_j)",
+        "retained_syndrome_bank_M2": 152,
+        "reusable_mobile_route_rail_M2": 12,
+        "system_initialization": "one local Bell pair per Choi-system M2; retaining the other half purifies the system maximally mixed state",
+        "total_auxiliary_M2_per_cell": 28.666666666666668
+      },
+      "returned_route_transitions_per_cell": 7.833333333333333,
+      "route_locality_or_return_failures": 0,
+      "schedule_basis_rank": 152,
+      "schedule_commutator_failures": 0,
+      "schedule_from_direct_signed_failures": 0,
+      "schedule_report": {
+        "edge_coverage_failures": 0,
+        "plaquette_fill_rows": 9,
+        "tree_edges": 11,
+        "triangular_predecessor_failures": 0
+      },
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "single_controlled_factor_deletions_tested": 3,
+      "single_controlled_factor_deletions_undetected": 0,
+      "single_pump_deletion_rank_failures": 0,
+      "single_pump_deletions_tested": 3,
+      "total_returned_route_transitions": 94,
+      "triangular_schedule_pump_failures": 0
+    },
+    {
+      "Choi_system_M2": 270,
+      "atlas_private_dual_syndrome_failures": 0,
+      "cells": 18,
+      "controlled_Pauli_measurement_factors": 1555,
+      "controlled_private_correction_factors": 714,
+      "corner_axis_schedule_contexts": 48,
+      "corner_axis_signed_projector_failures": 0,
+      "corrections_outside_declared_one_or_two_cells": 0,
+      "direct_basis_rank": 231,
+      "direct_commutator_failures": 0,
+      "direct_from_repeated_signed_failures": 0,
+      "direct_from_schedule_signed_failures": 0,
+      "distinct_basis_word_digests": 24,
+      "edges": 33,
+      "equal_parent_projector": true,
+      "explicit_direct_generators": 231,
+      "literal_reverse_route_failures": 0,
+      "maximum_edge_private_correction_weight": 3,
+      "maximum_plaquette_measurement_cells": 4,
+      "maximum_plaquette_measurement_diameter": 2,
+      "maximum_private_correction_weight": 8,
+      "maximum_single_measurement_route_transitions": 12,
+      "normalized_Choi_trace": 1,
+      "normalized_partial_trace_output": "I_input/2^matter_qubits",
+      "physical_input_output_parity_correlation_failure": false,
+      "rank_formula_11N_plus_E": 231,
+      "repeated_from_direct_signed_failures": 0,
+      "retained_Stinespring_resources": {
+        "inverse_and_work_boundary": "every route is an explicit down/up NN SWAP word and returns the mobile rail to its anchor; the syndrome and Bell purifiers are retained, not erased or called Records",
+        "local_Bell_reference_M2": 270,
+        "pump_word": "H_s; controlled-S_j along returned NN route; H_s; controlled-C_j along returned NN route; store s_j in its retained local bank",
+        "reduced_channel_formula": "Phi_j(rho)=P_j+ rho P_j+ + C_j P_j- rho P_j- C_j; commuting triangular private corrections give rho_J=2^(-Q) product_j(I+S_j)",
+        "retained_syndrome_bank_M2": 231,
+        "reusable_mobile_route_rail_M2": 18,
+        "system_initialization": "one local Bell pair per Choi-system M2; retaining the other half purifies the system maximally mixed state",
+        "total_auxiliary_M2_per_cell": 28.833333333333332
+      },
+      "returned_route_transitions_per_cell": 9.0,
+      "route_locality_or_return_failures": 0,
+      "schedule_basis_rank": 231,
+      "schedule_commutator_failures": 0,
+      "schedule_from_direct_signed_failures": 0,
+      "schedule_report": {
+        "edge_coverage_failures": 0,
+        "plaquette_fill_rows": 16,
+        "tree_edges": 17,
+        "triangular_predecessor_failures": 0
+      },
+      "shape": [
+        3,
+        3,
+        2
+      ],
+      "single_controlled_factor_deletions_tested": 3,
+      "single_controlled_factor_deletions_undetected": 0,
+      "single_pump_deletion_rank_failures": 0,
+      "single_pump_deletions_tested": 3,
+      "total_returned_route_transitions": 162,
+      "triangular_schedule_pump_failures": 0
+    },
+    {
+      "Choi_system_M2": 450,
+      "atlas_private_dual_syndrome_failures": 0,
+      "cells": 30,
+      "controlled_Pauli_measurement_factors": 2739,
+      "controlled_private_correction_factors": 1198,
+      "corner_axis_schedule_contexts": 48,
+      "corner_axis_signed_projector_failures": 0,
+      "corrections_outside_declared_one_or_two_cells": 0,
+      "direct_basis_rank": 389,
+      "direct_commutator_failures": 0,
+      "direct_from_repeated_signed_failures": 0,
+      "direct_from_schedule_signed_failures": 0,
+      "distinct_basis_word_digests": 24,
+      "edges": 59,
+      "equal_parent_projector": true,
+      "explicit_direct_generators": 389,
+      "literal_reverse_route_failures": 0,
+      "maximum_edge_private_correction_weight": 3,
+      "maximum_plaquette_measurement_cells": 4,
+      "maximum_plaquette_measurement_diameter": 2,
+      "maximum_private_correction_weight": 8,
+      "maximum_single_measurement_route_transitions": 12,
+      "normalized_Choi_trace": 1,
+      "normalized_partial_trace_output": "I_input/2^matter_qubits",
+      "physical_input_output_parity_correlation_failure": false,
+      "rank_formula_11N_plus_E": 389,
+      "repeated_from_direct_signed_failures": 0,
+      "retained_Stinespring_resources": {
+        "inverse_and_work_boundary": "every route is an explicit down/up NN SWAP word and returns the mobile rail to its anchor; the syndrome and Bell purifiers are retained, not erased or called Records",
+        "local_Bell_reference_M2": 450,
+        "pump_word": "H_s; controlled-S_j along returned NN route; H_s; controlled-C_j along returned NN route; store s_j in its retained local bank",
+        "reduced_channel_formula": "Phi_j(rho)=P_j+ rho P_j+ + C_j P_j- rho P_j- C_j; commuting triangular private corrections give rho_J=2^(-Q) product_j(I+S_j)",
+        "retained_syndrome_bank_M2": 389,
+        "reusable_mobile_route_rail_M2": 30,
+        "system_initialization": "one local Bell pair per Choi-system M2; retaining the other half purifies the system maximally mixed state",
+        "total_auxiliary_M2_per_cell": 28.966666666666665
+      },
+      "returned_route_transitions_per_cell": 9.933333333333334,
+      "route_locality_or_return_failures": 0,
+      "schedule_basis_rank": 389,
+      "schedule_commutator_failures": 0,
+      "schedule_from_direct_signed_failures": 0,
+      "schedule_report": {
+        "edge_coverage_failures": 0,
+        "plaquette_fill_rows": 30,
+        "tree_edges": 29,
+        "triangular_predecessor_failures": 0
+      },
+      "shape": [
+        5,
+        3,
+        2
+      ],
+      "single_controlled_factor_deletions_tested": 3,
+      "single_controlled_factor_deletions_undetected": 0,
+      "single_pump_deletion_rank_failures": 0,
+      "single_pump_deletions_tested": 3,
+      "total_returned_route_transitions": 298,
+      "triangular_schedule_pump_failures": 0
+    },
+    {
+      "Choi_system_M2": 720,
+      "atlas_private_dual_syndrome_failures": 0,
+      "cells": 48,
+      "controlled_Pauli_measurement_factors": 4795,
+      "controlled_private_correction_factors": 1936,
+      "corner_axis_schedule_contexts": 48,
+      "corner_axis_signed_projector_failures": 0,
+      "corrections_outside_declared_one_or_two_cells": 0,
+      "direct_basis_rank": 632,
+      "direct_commutator_failures": 0,
+      "direct_from_repeated_signed_failures": 0,
+      "direct_from_schedule_signed_failures": 0,
+      "distinct_basis_word_digests": 24,
+      "edges": 104,
+      "equal_parent_projector": true,
+      "explicit_direct_generators": 632,
+      "literal_reverse_route_failures": 0,
+      "maximum_edge_private_correction_weight": 3,
+      "maximum_plaquette_measurement_cells": 4,
+      "maximum_plaquette_measurement_diameter": 2,
+      "maximum_private_correction_weight": 8,
+      "maximum_single_measurement_route_transitions": 24,
+      "normalized_Choi_trace": 1,
+      "normalized_partial_trace_output": "I_input/2^matter_qubits",
+      "physical_input_output_parity_correlation_failure": false,
+      "rank_formula_11N_plus_E": 632,
+      "repeated_from_direct_signed_failures": 0,
+      "retained_Stinespring_resources": {
+        "inverse_and_work_boundary": "every route is an explicit down/up NN SWAP word and returns the mobile rail to its anchor; the syndrome and Bell purifiers are retained, not erased or called Records",
+        "local_Bell_reference_M2": 720,
+        "pump_word": "H_s; controlled-S_j along returned NN route; H_s; controlled-C_j along returned NN route; store s_j in its retained local bank",
+        "reduced_channel_formula": "Phi_j(rho)=P_j+ rho P_j+ + C_j P_j- rho P_j- C_j; commuting triangular private corrections give rho_J=2^(-Q) product_j(I+S_j)",
+        "retained_syndrome_bank_M2": 632,
+        "reusable_mobile_route_rail_M2": 48,
+        "system_initialization": "one local Bell pair per Choi-system M2; retaining the other half purifies the system maximally mixed state",
+        "total_auxiliary_M2_per_cell": 29.166666666666668
+      },
+      "returned_route_transitions_per_cell": 11.458333333333334,
+      "route_locality_or_return_failures": 0,
+      "schedule_basis_rank": 632,
+      "schedule_commutator_failures": 0,
+      "schedule_from_direct_signed_failures": 0,
+      "schedule_report": {
+        "edge_coverage_failures": 0,
+        "plaquette_fill_rows": 57,
+        "tree_edges": 47,
+        "triangular_predecessor_failures": 0
+      },
+      "shape": [
+        4,
+        4,
+        3
+      ],
+      "single_controlled_factor_deletions_tested": 3,
+      "single_controlled_factor_deletions_undetected": 0,
+      "single_pump_deletion_rank_failures": 0,
+      "single_pump_deletions_tested": 3,
+      "total_returned_route_transitions": 550,
+      "triangular_schedule_pump_failures": 0
+    }
+  ],
+  "checks": [
+    {
+      "label": "finite local port-mask atlas derives private corrections without conflicts",
+      "pass": true
+    },
+    {
+      "label": "explicit 11N+E basis is the complete signed repeated-star Choi projector",
+      "pass": true
+    },
+    {
+      "label": "tree then elementary-plaquette schedule is triangular and spans the same signed projector",
+      "pass": true
+    },
+    {
+      "label": "held boxes use the frozen atlas with exact one-cell or endpoint-private syndromes",
+      "pass": true
+    },
+    {
+      "label": "non-tree seam strings cancel into bounded elementary-plaquette measurements",
+      "pass": true
+    },
+    {
+      "label": "literal syndrome routes are nearest-neighbour returned words with held-size linear density",
+      "pass": true
+    },
+    {
+      "label": "all corner and axis-order preparation gauges give the identical signed projector",
+      "pass": true
+    },
+    {
+      "label": "onsite stabilizers derive physical-input/output parity correlation and the parent CPTP normalization",
+      "pass": true
+    },
+    {
+      "label": "pump and controlled-factor deletions are active",
+      "pass": true
+    },
+    {
+      "label": "retained-syndrome stabilizer pump is trace preserving and sets both eigensigns to plus",
+      "pass": true
+    }
+  ],
+  "claim_boundary": "positive exact finite-box local-runtime Choi-resource preparation with constant amortized M2 resources and held-size rule; not yet the complete autonomous encoder E or a new physical law",
+  "derived": "explicit 11N+E signed Choi basis; finite local private-correction atlas; tree/plaquette triangular preparation; exact retained-purifier Stinespring pump; physical input/output parity correlation",
+  "no_go_discipline": {
+    "N1_alternative_routes": "tree/plaquette stabilizer pump is positive on finite open boxes; retained-purification, coherent CA pumping, and direct live-input injection remain distinct routes",
+    "N2_wall_independence": "local Choi preparation is separated from autonomous epoch genesis, live-input injection, and why parity dephasing is physical",
+    "N3_hidden_wall": "root/corner, axis order, finite port atlas, clean Bell references, clean mobile rail, syndrome banks, and router table are explicit",
+    "N4_residual_matching": "all claims are exact GF(2)/signed-Pauli identities; no numerical near-zero is used as an impossibility residual",
+    "N5_rhetoric": "no minimum-content, no-go, or axiom-pressure claim",
+    "N6_partial_closure": "mixed Choi projector preparation closes constructively; autonomous law selection and deterministic use of the resource remain open",
+    "N7_steelman": "a fixed translation-invariant reversible controller or direct encoded-input Clifford could remove the remaining supplied epoch",
+    "N8_cross_cycle": "uses the existing repeated-star Choi graph, local parity rail, coframe gauge, and recurrent G certificates without revising them",
+    "broad_no_go_gate": "FAIL"
+  },
+  "open": "translation-invariant autonomous genesis/enforcement law; literal collision-free controller layout with the recurrent matter word; deterministic Choi-to-live-input injection/teleportation correction; physical reason for parity superselection; Record/Born/time/source",
+  "pump_algebra": {
+    "Kraus_completeness_identity": "K_plus=P_plus, K_minus=C P_minus; K_plus^dagger K_plus + K_minus^dagger K_minus=P_plus+P_minus=I",
+    "canonical_eigensign_rows": [
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "canonical_output_plus_failures": 0,
+    "canonical_trace_preservation_failures": 0,
+    "isometry_identity": "V_dagger V=I because the retained-syndrome circuit is a product of Clifford unitaries; no reset or postselection occurs",
+    "prepared_sector_identity": "S K_plus=K_plus and S K_minus=K_minus when C anticommutes with S",
+    "unitary_dilation_gates": "Hadamard, controlled signed Pauli, Hadamard, controlled correction"
+  },
+  "status": "PASS",
+  "supplied": "one-time preparation epoch; root/corner and axis-order gauge; size/shape router instantiation from the fixed rule; clean local Bell references, route rail and syndrome banks; parity-superselected channel domain"
+}
+
+----- stderr -----
+

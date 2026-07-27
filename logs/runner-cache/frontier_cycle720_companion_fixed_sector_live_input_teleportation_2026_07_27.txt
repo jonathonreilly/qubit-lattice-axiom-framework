@@ -1,0 +1,456 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py
+runner_sha256: 6877d532aaa1c9a97358ce2dfa2e26b1264c1f5a8ef477c217e9cc5a16c8d205
+input_fingerprint_sha256: d6d3a40b743064fb9bd7e38d74640d411c8ab9b3a2fd0fd90ff2bfeae1998bbf
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 16.49
+status: ok
+----- stdout -----
+PASS fixed parity adds one independent Choi stabilizer with a bounded corner correction and retained syndrome
+PASS local Bell coupling makes every same-sector X word even and detects a parity mismatch at the decoder root
+PASS bounded-degree mode tree spans the complete even Pauli correction algebra and the reversible decoder returns its work
+PASS every physical correction generator is the exact gauge-and-center-preserving image of its raw Bell Pauli
+PASS exhaustive one-cell and deterministic larger-box branches satisfy the corrected-channel intertwiner
+PASS spatial correction deletion is detected
+PASS held non-collinear ladder detects failure of the bounded two-cell raw-X correction gate
+{
+  "audit": "unset",
+  "authority": "none",
+  "boxes": [
+    {
+      "Bell_coupling": {
+        "coherent_word": "CNOT(live,input-half), H(live); retain both Bell registers, decode the input-half X word on the local mode tree, control physical corrections, then reverse the decoder CNOTs",
+        "computational_parity_cases": 2048,
+        "local_Bell_gate_unitarity_residual": 4.463374267214424e-16,
+        "opposite_sector_root_bit_detection_failures": 0,
+        "same_sector_even_X_outcome_failures": 0
+      },
+      "Bell_outcome_branches_tested": 2048,
+      "branch_Heisenberg_intertwiner_failures": 0,
+      "branch_controller_word_failures": 0,
+      "branch_target_binary_failures": 0,
+      "cells": 1,
+      "channel_identity": "for every lawful Bell branch P, the executed physical correction C(P) has [C(P),A_physical]=[P,A_input] on every generating observable; therefore correction o E(P rho P) = E(rho) on the fixed sector, with the gauge factor still mixed",
+      "controller_basis_failures": 0,
+      "controller_inverse_failures": 0,
+      "correction_target_rank": 11,
+      "delete_one_spatial_correction_syndrome_mismatches": 10,
+      "even_Pauli_dimension": 11,
+      "even_reference_rows_outside_correction_span": 0,
+      "generator_route_locality_return_failures": 0,
+      "generator_route_transitions_per_cell": 0.0,
+      "lawful_even_root_parity_failures": 0,
+      "matter_M2": 6,
+      "maximum_generator_support_cells": 1,
+      "maximum_generator_support_diameter": 0,
+      "maximum_sampled_branch_physical_weight": 6,
+      "mode_tree_decoder_CNOT_locality_failures": 0,
+      "mode_tree_edges": 5,
+      "mode_tree_failures": 0,
+      "physical_correction_generator_center_commutator_failures": 0,
+      "physical_correction_generator_gauge_commutator_failures": 0,
+      "physical_correction_generator_syndrome_failures": 0,
+      "physical_output_M2": 9,
+      "sector_resource": {
+        "Choi_graph_rank_equals_2L_plus_C": true,
+        "both_parity_sector_center_signed_replay_failures": 0,
+        "boundary": "the parity sign is supplied to the one additional pump; the pump is coherent and trace preserving, with its syndrome retained",
+        "center_rows_outside_fixed_sector_Choi_span": 0,
+        "corner_private_correction_contradictions": 0,
+        "corner_private_correction_support_cells": 1,
+        "corner_private_correction_syndrome_failures": 0,
+        "corner_private_correction_weight": 2,
+        "fixed_physical_center_rows": 1,
+        "global_sector_measurement_route_transitions": 0,
+        "input_marginal_stabilizer_kernel_rank": 1,
+        "logical_qubits_in_fixed_parity_sector": 5,
+        "mixed_gauge_M2": 3,
+        "normalized_fixed_sector_input_marginal": "Pi_parity/2^(matter_qubits-1)",
+        "sector_correction_route_failures": 0,
+        "sector_correction_route_transitions": 0,
+        "sector_labels_tested": [
+          "even",
+          "odd"
+        ],
+        "sector_measurement_route_failures": 0,
+        "sector_stabilizer_rank_increment": 1
+      },
+      "shape": [
+        1,
+        1,
+        1
+      ],
+      "total_generator_route_transitions": 0,
+      "unlawful_odd_root_detection_failures": false
+    },
+    {
+      "Bell_coupling": {
+        "coherent_word": "CNOT(live,input-half), H(live); retain both Bell registers, decode the input-half X word on the local mode tree, control physical corrections, then reverse the decoder CNOTs",
+        "computational_parity_cases": 192,
+        "local_Bell_gate_unitarity_residual": 4.463374267214424e-16,
+        "opposite_sector_root_bit_detection_failures": 0,
+        "same_sector_even_X_outcome_failures": 0
+      },
+      "Bell_outcome_branches_tested": 161,
+      "branch_Heisenberg_intertwiner_failures": 0,
+      "branch_controller_word_failures": 0,
+      "branch_target_binary_failures": 0,
+      "cells": 8,
+      "channel_identity": "for every lawful Bell branch P, the executed physical correction C(P) has [C(P),A_physical]=[P,A_input] on every generating observable; therefore correction o E(P rho P) = E(rho) on the fixed sector, with the gauge factor still mixed",
+      "controller_basis_failures": 0,
+      "controller_inverse_failures": 0,
+      "correction_target_rank": 95,
+      "delete_one_spatial_correction_syndrome_mismatches": 26,
+      "even_Pauli_dimension": 95,
+      "even_reference_rows_outside_correction_span": 0,
+      "generator_route_locality_return_failures": 0,
+      "generator_route_transitions_per_cell": 3.0,
+      "lawful_even_root_parity_failures": 0,
+      "matter_M2": 48,
+      "maximum_generator_support_cells": 5,
+      "maximum_generator_support_diameter": 3,
+      "maximum_sampled_branch_physical_weight": 63,
+      "mode_tree_decoder_CNOT_locality_failures": 0,
+      "mode_tree_edges": 47,
+      "mode_tree_failures": 0,
+      "physical_correction_generator_center_commutator_failures": 0,
+      "physical_correction_generator_gauge_commutator_failures": 0,
+      "physical_correction_generator_syndrome_failures": 0,
+      "physical_output_M2": 72,
+      "sector_resource": {
+        "Choi_graph_rank_equals_2L_plus_C": true,
+        "both_parity_sector_center_signed_replay_failures": 0,
+        "boundary": "the parity sign is supplied to the one additional pump; the pump is coherent and trace preserving, with its syndrome retained",
+        "center_rows_outside_fixed_sector_Choi_span": 0,
+        "corner_private_correction_contradictions": 0,
+        "corner_private_correction_support_cells": 1,
+        "corner_private_correction_syndrome_failures": 0,
+        "corner_private_correction_weight": 2,
+        "fixed_physical_center_rows": 6,
+        "global_sector_measurement_route_transitions": 14,
+        "input_marginal_stabilizer_kernel_rank": 1,
+        "logical_qubits_in_fixed_parity_sector": 47,
+        "mixed_gauge_M2": 19,
+        "normalized_fixed_sector_input_marginal": "Pi_parity/2^(matter_qubits-1)",
+        "sector_correction_route_failures": 0,
+        "sector_correction_route_transitions": 6,
+        "sector_labels_tested": [
+          "even",
+          "odd"
+        ],
+        "sector_measurement_route_failures": 0,
+        "sector_stabilizer_rank_increment": 1
+      },
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "total_generator_route_transitions": 24,
+      "unlawful_odd_root_detection_failures": false
+    },
+    {
+      "Bell_coupling": {
+        "coherent_word": "CNOT(live,input-half), H(live); retain both Bell registers, decode the input-half X word on the local mode tree, control physical corrections, then reverse the decoder CNOTs",
+        "computational_parity_cases": 288,
+        "local_Bell_gate_unitarity_residual": 4.463374267214424e-16,
+        "opposite_sector_root_bit_detection_failures": 0,
+        "same_sector_even_X_outcome_failures": 0
+      },
+      "Bell_outcome_branches_tested": 209,
+      "branch_Heisenberg_intertwiner_failures": 0,
+      "branch_controller_word_failures": 0,
+      "branch_target_binary_failures": 0,
+      "cells": 12,
+      "channel_identity": "for every lawful Bell branch P, the executed physical correction C(P) has [C(P),A_physical]=[P,A_input] on every generating observable; therefore correction o E(P rho P) = E(rho) on the fixed sector, with the gauge factor still mixed",
+      "controller_basis_failures": 0,
+      "controller_inverse_failures": 0,
+      "correction_target_rank": 143,
+      "delete_one_spatial_correction_syndrome_mismatches": 26,
+      "even_Pauli_dimension": 143,
+      "even_reference_rows_outside_correction_span": 0,
+      "generator_route_locality_return_failures": 0,
+      "generator_route_transitions_per_cell": 3.3333333333333335,
+      "lawful_even_root_parity_failures": 0,
+      "matter_M2": 72,
+      "maximum_generator_support_cells": 5,
+      "maximum_generator_support_diameter": 3,
+      "maximum_sampled_branch_physical_weight": 90,
+      "mode_tree_decoder_CNOT_locality_failures": 0,
+      "mode_tree_edges": 71,
+      "mode_tree_failures": 0,
+      "physical_correction_generator_center_commutator_failures": 0,
+      "physical_correction_generator_gauge_commutator_failures": 0,
+      "physical_correction_generator_syndrome_failures": 0,
+      "physical_output_M2": 108,
+      "sector_resource": {
+        "Choi_graph_rank_equals_2L_plus_C": true,
+        "both_parity_sector_center_signed_replay_failures": 0,
+        "boundary": "the parity sign is supplied to the one additional pump; the pump is coherent and trace preserving, with its syndrome retained",
+        "center_rows_outside_fixed_sector_Choi_span": 0,
+        "corner_private_correction_contradictions": 0,
+        "corner_private_correction_support_cells": 1,
+        "corner_private_correction_syndrome_failures": 0,
+        "corner_private_correction_weight": 2,
+        "fixed_physical_center_rows": 10,
+        "global_sector_measurement_route_transitions": 22,
+        "input_marginal_stabilizer_kernel_rank": 1,
+        "logical_qubits_in_fixed_parity_sector": 71,
+        "mixed_gauge_M2": 27,
+        "normalized_fixed_sector_input_marginal": "Pi_parity/2^(matter_qubits-1)",
+        "sector_correction_route_failures": 0,
+        "sector_correction_route_transitions": 8,
+        "sector_labels_tested": [
+          "even",
+          "odd"
+        ],
+        "sector_measurement_route_failures": 0,
+        "sector_stabilizer_rank_increment": 1
+      },
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "total_generator_route_transitions": 40,
+      "unlawful_odd_root_detection_failures": false
+    },
+    {
+      "Bell_coupling": {
+        "coherent_word": "CNOT(live,input-half), H(live); retain both Bell registers, decode the input-half X word on the local mode tree, control physical corrections, then reverse the decoder CNOTs",
+        "computational_parity_cases": 384,
+        "local_Bell_gate_unitarity_residual": 4.463374267214424e-16,
+        "opposite_sector_root_bit_detection_failures": 0,
+        "same_sector_even_X_outcome_failures": 0
+      },
+      "Bell_outcome_branches_tested": 257,
+      "branch_Heisenberg_intertwiner_failures": 0,
+      "branch_controller_word_failures": 0,
+      "branch_target_binary_failures": 0,
+      "cells": 16,
+      "channel_identity": "for every lawful Bell branch P, the executed physical correction C(P) has [C(P),A_physical]=[P,A_input] on every generating observable; therefore correction o E(P rho P) = E(rho) on the fixed sector, with the gauge factor still mixed",
+      "controller_basis_failures": 0,
+      "controller_inverse_failures": 0,
+      "correction_target_rank": 191,
+      "delete_one_spatial_correction_syndrome_mismatches": 26,
+      "even_Pauli_dimension": 191,
+      "even_reference_rows_outside_correction_span": 0,
+      "generator_route_locality_return_failures": 0,
+      "generator_route_transitions_per_cell": 3.5,
+      "lawful_even_root_parity_failures": 0,
+      "matter_M2": 96,
+      "maximum_generator_support_cells": 5,
+      "maximum_generator_support_diameter": 3,
+      "maximum_sampled_branch_physical_weight": 114,
+      "mode_tree_decoder_CNOT_locality_failures": 0,
+      "mode_tree_edges": 95,
+      "mode_tree_failures": 0,
+      "physical_correction_generator_center_commutator_failures": 0,
+      "physical_correction_generator_gauge_commutator_failures": 0,
+      "physical_correction_generator_syndrome_failures": 0,
+      "physical_output_M2": 144,
+      "sector_resource": {
+        "Choi_graph_rank_equals_2L_plus_C": true,
+        "both_parity_sector_center_signed_replay_failures": 0,
+        "boundary": "the parity sign is supplied to the one additional pump; the pump is coherent and trace preserving, with its syndrome retained",
+        "center_rows_outside_fixed_sector_Choi_span": 0,
+        "corner_private_correction_contradictions": 0,
+        "corner_private_correction_support_cells": 1,
+        "corner_private_correction_syndrome_failures": 0,
+        "corner_private_correction_weight": 2,
+        "fixed_physical_center_rows": 14,
+        "global_sector_measurement_route_transitions": 30,
+        "input_marginal_stabilizer_kernel_rank": 1,
+        "logical_qubits_in_fixed_parity_sector": 95,
+        "mixed_gauge_M2": 35,
+        "normalized_fixed_sector_input_marginal": "Pi_parity/2^(matter_qubits-1)",
+        "sector_correction_route_failures": 0,
+        "sector_correction_route_transitions": 10,
+        "sector_labels_tested": [
+          "even",
+          "odd"
+        ],
+        "sector_measurement_route_failures": 0,
+        "sector_stabilizer_rank_increment": 1
+      },
+      "shape": [
+        4,
+        2,
+        2
+      ],
+      "total_generator_route_transitions": 56,
+      "unlawful_odd_root_detection_failures": false
+    },
+    {
+      "Bell_coupling": {
+        "coherent_word": "CNOT(live,input-half), H(live); retain both Bell registers, decode the input-half X word on the local mode tree, control physical corrections, then reverse the decoder CNOTs",
+        "computational_parity_cases": 480,
+        "local_Bell_gate_unitarity_residual": 4.463374267214424e-16,
+        "opposite_sector_root_bit_detection_failures": 0,
+        "same_sector_even_X_outcome_failures": 0
+      },
+      "Bell_outcome_branches_tested": 305,
+      "branch_Heisenberg_intertwiner_failures": 0,
+      "branch_controller_word_failures": 0,
+      "branch_target_binary_failures": 0,
+      "cells": 20,
+      "channel_identity": "for every lawful Bell branch P, the executed physical correction C(P) has [C(P),A_physical]=[P,A_input] on every generating observable; therefore correction o E(P rho P) = E(rho) on the fixed sector, with the gauge factor still mixed",
+      "controller_basis_failures": 0,
+      "controller_inverse_failures": 0,
+      "correction_target_rank": 239,
+      "delete_one_spatial_correction_syndrome_mismatches": 26,
+      "even_Pauli_dimension": 239,
+      "even_reference_rows_outside_correction_span": 0,
+      "generator_route_locality_return_failures": 0,
+      "generator_route_transitions_per_cell": 3.6,
+      "lawful_even_root_parity_failures": 0,
+      "matter_M2": 120,
+      "maximum_generator_support_cells": 5,
+      "maximum_generator_support_diameter": 3,
+      "maximum_sampled_branch_physical_weight": 142,
+      "mode_tree_decoder_CNOT_locality_failures": 0,
+      "mode_tree_edges": 119,
+      "mode_tree_failures": 0,
+      "physical_correction_generator_center_commutator_failures": 0,
+      "physical_correction_generator_gauge_commutator_failures": 0,
+      "physical_correction_generator_syndrome_failures": 0,
+      "physical_output_M2": 180,
+      "sector_resource": {
+        "Choi_graph_rank_equals_2L_plus_C": true,
+        "both_parity_sector_center_signed_replay_failures": 0,
+        "boundary": "the parity sign is supplied to the one additional pump; the pump is coherent and trace preserving, with its syndrome retained",
+        "center_rows_outside_fixed_sector_Choi_span": 0,
+        "corner_private_correction_contradictions": 0,
+        "corner_private_correction_support_cells": 1,
+        "corner_private_correction_syndrome_failures": 0,
+        "corner_private_correction_weight": 2,
+        "fixed_physical_center_rows": 18,
+        "global_sector_measurement_route_transitions": 38,
+        "input_marginal_stabilizer_kernel_rank": 1,
+        "logical_qubits_in_fixed_parity_sector": 119,
+        "mixed_gauge_M2": 43,
+        "normalized_fixed_sector_input_marginal": "Pi_parity/2^(matter_qubits-1)",
+        "sector_correction_route_failures": 0,
+        "sector_correction_route_transitions": 12,
+        "sector_labels_tested": [
+          "even",
+          "odd"
+        ],
+        "sector_measurement_route_failures": 0,
+        "sector_stabilizer_rank_increment": 1
+      },
+      "shape": [
+        5,
+        2,
+        2
+      ],
+      "total_generator_route_transitions": 72,
+      "unlawful_odd_root_detection_failures": false
+    },
+    {
+      "Bell_coupling": {
+        "coherent_word": "CNOT(live,input-half), H(live); retain both Bell registers, decode the input-half X word on the local mode tree, control physical corrections, then reverse the decoder CNOTs",
+        "computational_parity_cases": 720,
+        "local_Bell_gate_unitarity_residual": 4.463374267214424e-16,
+        "opposite_sector_root_bit_detection_failures": 0,
+        "same_sector_even_X_outcome_failures": 0
+      },
+      "Bell_outcome_branches_tested": 425,
+      "branch_Heisenberg_intertwiner_failures": 0,
+      "branch_controller_word_failures": 0,
+      "branch_target_binary_failures": 0,
+      "cells": 30,
+      "channel_identity": "for every lawful Bell branch P, the executed physical correction C(P) has [C(P),A_physical]=[P,A_input] on every generating observable; therefore correction o E(P rho P) = E(rho) on the fixed sector, with the gauge factor still mixed",
+      "controller_basis_failures": 0,
+      "controller_inverse_failures": 0,
+      "correction_target_rank": 359,
+      "delete_one_spatial_correction_syndrome_mismatches": 26,
+      "even_Pauli_dimension": 359,
+      "even_reference_rows_outside_correction_span": 0,
+      "generator_route_locality_return_failures": 0,
+      "generator_route_transitions_per_cell": 3.933333333333333,
+      "lawful_even_root_parity_failures": 0,
+      "matter_M2": 180,
+      "maximum_generator_support_cells": 7,
+      "maximum_generator_support_diameter": 4,
+      "maximum_sampled_branch_physical_weight": 208,
+      "mode_tree_decoder_CNOT_locality_failures": 0,
+      "mode_tree_edges": 179,
+      "mode_tree_failures": 0,
+      "physical_correction_generator_center_commutator_failures": 0,
+      "physical_correction_generator_gauge_commutator_failures": 0,
+      "physical_correction_generator_syndrome_failures": 0,
+      "physical_output_M2": 270,
+      "sector_resource": {
+        "Choi_graph_rank_equals_2L_plus_C": true,
+        "both_parity_sector_center_signed_replay_failures": 0,
+        "boundary": "the parity sign is supplied to the one additional pump; the pump is coherent and trace preserving, with its syndrome retained",
+        "center_rows_outside_fixed_sector_Choi_span": 0,
+        "corner_private_correction_contradictions": 0,
+        "corner_private_correction_support_cells": 1,
+        "corner_private_correction_syndrome_failures": 0,
+        "corner_private_correction_weight": 2,
+        "fixed_physical_center_rows": 31,
+        "global_sector_measurement_route_transitions": 58,
+        "input_marginal_stabilizer_kernel_rank": 1,
+        "logical_qubits_in_fixed_parity_sector": 179,
+        "mixed_gauge_M2": 60,
+        "normalized_fixed_sector_input_marginal": "Pi_parity/2^(matter_qubits-1)",
+        "sector_correction_route_failures": 0,
+        "sector_correction_route_transitions": 14,
+        "sector_labels_tested": [
+          "even",
+          "odd"
+        ],
+        "sector_measurement_route_failures": 0,
+        "sector_stabilizer_rank_increment": 1
+      },
+      "shape": [
+        5,
+        3,
+        2
+      ],
+      "total_generator_route_transitions": 118,
+      "unlawful_odd_root_detection_failures": false
+    }
+  ],
+  "checks": [
+    {
+      "label": "fixed parity adds one independent Choi stabilizer with a bounded corner correction and retained syndrome",
+      "pass": true
+    },
+    {
+      "label": "local Bell coupling makes every same-sector X word even and detects a parity mismatch at the decoder root",
+      "pass": true
+    },
+    {
+      "label": "bounded-degree mode tree spans the complete even Pauli correction algebra and the reversible decoder returns its work",
+      "pass": true
+    },
+    {
+      "label": "every physical correction generator is the exact gauge-and-center-preserving image of its raw Bell Pauli",
+      "pass": true
+    },
+    {
+      "label": "exhaustive one-cell and deterministic larger-box branches satisfy the corrected-channel intertwiner",
+      "pass": true
+    },
+    {
+      "label": "spatial correction deletion is detected",
+      "pass": true
+    },
+    {
+      "label": "held non-collinear ladder detects failure of the bounded two-cell raw-X correction gate",
+      "pass": true
+    }
+  ],
+  "claim_boundary": "exact fixed-sector corrected-channel algebra only; the raw-mode Bell route fails the bounded-local correction gate because its Jordan--Wigner cleanup grows on non-collinear boxes; not a physical compiler, no no-go, and no axiom pressure",
+  "derived": "fixed-sector raw Bell parity law, exact Heisenberg branch correction algebra, and a held-size locality falsification of the raw-X/Jordan--Wigner-cleanup correction route",
+  "open": "autonomous sector/genesis law; sector-summed live-input encoder; collision-free merge of preparation, Bell, decoder and recurrent G controllers; physical reason for parity superselection; downstream time/source/Record/Born bridges",
+  "status": "PASS",
+  "supplied": "fixed parity label shared by live input and resource; one-time Choi preparation epoch; fixed local center signs; mixed gauge reference; rooted mode-tree/router table; clean Bell and syndrome registers"
+}
+
+----- stderr -----
+

@@ -49,6 +49,19 @@ def snapshot_status_rank(status: str | None) -> int:
     return SNAPSHOT_STATUS_RANK.get(status or "unaudited", -1)
 
 
+def snapshot_status_is_chain_satisfying(status: str | None) -> bool:
+    """Mirror compute_effective_status.is_chain_satisfying_status.
+
+    Same leaf-module reasoning as SNAPSHOT_STATUS_RANK: this file is imported
+    by apply, invalidate, queue, lint and the orchestrators, so it does not
+    import the pipeline stage that owns the canonical predicate.
+    `test_snapshot_chain_satisfying_matches_pipeline` pins the two together.
+    """
+    if status in RETAINED_GRADE or status == "meta":
+        return True
+    return isinstance(status, str) and status.startswith("decoration_under_")
+
+
 # Authenticated-evidence snapshot contract. The tag and the required entry
 # fields must move together: `test_evidence_snapshot_writer_satisfies_reader`
 # fails if `build_evidence_snapshot` ever stops emitting a field the reader
@@ -2678,22 +2691,44 @@ def evidence_snapshot_current_error(
             return f"evidence_snapshot roles drifted for {path!r}"
         if current.get("accepted_premise_type") != stored.get("accepted_premise_type"):
             return f"evidence_snapshot accepted_premise_type drifted for {path!r}"
-        # An authority that got STRONGER is not evidence decay. The
-        # development tier already invalidates on rank decrease only
-        # (invalidate_stale_audits.detect_invalidation), and applying strict
-        # equality here made the audit lane's own throughput destructive:
-        # promoting a cited authority deleted the citing no-go verdict.
-        # Strengthening is re-audit signal instead, carried by
-        # evidence_snapshot_index_growth.
+        # Status churn BELOW the chain-satisfying line is not evidence decay.
+        # A cited authority moving unaudited -> audit_in_progress, or between
+        # terminal non-clean verdicts, changes nothing the packet reasoned
+        # about, yet strict equality deleted the citing no-go verdict every
+        # time the audit lane touched a dependency. Among non-chain-satisfying
+        # statuses this now invalidates on rank DECREASE only, matching the
+        # development tier (invalidate_stale_audits.detect_invalidation).
+        #
+        # Crossing the chain-satisfying line is different, and deliberately
+        # still invalidates in BOTH directions. A no-go packet's N3 sorted
+        # every scanned occurrence into retained_authority / hidden_admission /
+        # non_load_bearing against the authority statuses of the day; once a
+        # cited authority becomes retained-grade (or meta, or a decoration of a
+        # retained parent) that sort is stale, because a now-retained authority
+        # may already resolve the very wall the packet declares. Equal rank is
+        # not safety either: retained -> retained_no_go and
+        # decoration_under_A -> decoration_under_B both change which authority
+        # the packet is standing on. Forcing re-audit there is the forensic
+        # tier working, not the throughput defect this repair targets.
         stored_status = stored.get("effective_status")
         current_status = current.get("effective_status")
-        if current_status != stored_status and snapshot_status_rank(
-            current_status
-        ) < snapshot_status_rank(stored_status):
-            return (
-                f"evidence_snapshot effective_status weakened for {path!r}: "
-                f"{stored_status} -> {current_status}"
-            )
+        if current_status != stored_status:
+            crosses_chain_line = snapshot_status_is_chain_satisfying(
+                stored_status
+            ) or snapshot_status_is_chain_satisfying(current_status)
+            if crosses_chain_line:
+                return (
+                    "evidence_snapshot effective_status crossed the "
+                    f"chain-satisfying line for {path!r}: "
+                    f"{stored_status} -> {current_status}"
+                )
+            if snapshot_status_rank(current_status) < snapshot_status_rank(
+                stored_status
+            ):
+                return (
+                    f"evidence_snapshot effective_status weakened for {path!r}: "
+                    f"{stored_status} -> {current_status}"
+                )
     return None
 
 
@@ -2713,11 +2748,23 @@ def evidence_snapshot_index_growth(
         return growth
     for path, stored in stored_manifest.items():
         roles = set(stored.get("roles") or [])
-        current_entry = current_manifest.get(path) or {}
-        # A cited authority that gained strength is a targeted re-audit
-        # signal, never a retroactive deletion. `evidence_snapshot_current_error`
-        # deliberately lets this through; recording it here is what keeps the
-        # movement visible to the dispatcher.
+        current_entry = current_manifest.get(path)
+        # A path absent from the current manifest is evidence LOSS, not
+        # growth. Reading it as `{}` would make effective_status None, which
+        # snapshot_status_rank maps to the unaudited default (30) and would
+        # fabricate `authority_strengthened` for anything stored below that.
+        # `evidence_snapshot_current_error` rejects absent stable paths before
+        # the one production caller reaches here; this keeps the function
+        # honest when called on its own.
+        if current_entry is None:
+            continue
+        # A cited authority that gained strength below the chain-satisfying
+        # line is recorded as a targeted re-audit candidate rather than
+        # deleting the verdict (see `evidence_snapshot_current_error`).
+        # NOTE: `no_go_index_growth_targets.json` is written by
+        # invalidate_stale_audits but no dispatcher stage consumes it yet, so
+        # this is a recorded artifact, not a wired re-audit trigger. Do not
+        # rely on it as a safety backstop.
         stored_status = stored.get("effective_status")
         current_status = current_entry.get("effective_status")
         if current_status != stored_status and snapshot_status_rank(
@@ -2752,7 +2799,9 @@ def evidence_snapshot_index_growth(
                 for phrase, group_id, digest in sorted(current_groups - stored_groups)
             ]
             if scan_changes:
-                growth[path] = scan_changes
+                # extend, not assign: a plain assignment here discards any
+                # signal already recorded for this path earlier in the loop.
+                growth.setdefault(path, []).extend(scan_changes)
         if "cross_cycle_index" in roles:
             current_candidates = _index_candidate_id_universe(
                 current_entry,

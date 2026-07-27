@@ -7959,8 +7959,10 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         packet["evidence_snapshot"] = m.build_evidence_snapshot(packet, manifest)
         changed = json.loads(json.dumps(manifest))
         changed["docs/AUTH.md"]["effective_status"] = "audited_conditional"
+        # A retained authority losing its grade both weakens the evidence and
+        # crosses the chain-satisfying line; either way it must invalidate.
         self.assertIn(
-            "effective_status weakened",
+            "crossed the chain-satisfying line",
             m.evidence_snapshot_current_error(packet, changed) or "",
         )
         changed = json.loads(json.dumps(manifest))
@@ -7974,26 +7976,34 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.evidence_snapshot_current_error(packet, changed) or "",
         )
 
-    def test_strengthened_authority_is_growth_signal_not_invalidation(self):
-        """A cited authority getting stronger must not delete the verdict.
-
-        Strict equality on `effective_status` made the audit lane's own
-        throughput destructive: promoting a dependency wiped the no-go row
-        citing it, while the development tier (`invalidate_stale_audits`
-        rank rule) never invalidates on a rank increase.
-        """
-        m = _import("no_go_discipline_gate")
+    def _authority_manifest(self, status: str) -> dict:
         manifest = self._manifest()
         manifest["docs/AUTH.md"] = {
             "path": "docs/AUTH.md", "roles": ["authority"],
             "text": "Authority text with a canonical boundary.",
-            "effective_status": "unaudited", "accepted_premise_type": None,
+            "effective_status": status, "accepted_premise_type": None,
         }
+        return manifest
+
+    def test_sub_chain_line_status_churn_is_growth_signal_not_invalidation(self):
+        """Status churn BELOW the chain-satisfying line must not delete a verdict.
+
+        Strict equality on `effective_status` deleted the citing no-go verdict
+        every time the audit lane touched a dependency, including for moves
+        that change nothing the packet reasoned about (unaudited ->
+        audit_in_progress, or one terminal non-clean verdict to another). Among
+        non-chain-satisfying statuses this now matches the development tier's
+        rank rule (`invalidate_stale_audits.detect_invalidation`).
+        """
+        m = _import("no_go_discipline_gate")
+        manifest = self._authority_manifest("audited_failed")
         packet = _no_go_packet()
         _set_no_go_scan_coverage(packet, manifest)
         packet["evidence_snapshot"] = m.build_evidence_snapshot(packet, manifest)
         self.assertIsNone(m.evidence_snapshot_current_error(packet, manifest))
-        for stronger in ("retained_bounded", "retained", "retained_no_go"):
+        for stronger in ("audited_renaming", "audited_conditional",
+                         "audited_numerical_match", "unaudited",
+                         "audit_in_progress", "open_gate"):
             changed = json.loads(json.dumps(manifest))
             changed["docs/AUTH.md"]["effective_status"] = stronger
             self.assertIsNone(
@@ -8002,9 +8012,112 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             )
             growth = m.evidence_snapshot_index_growth(packet, changed)
             self.assertIn(
-                f"authority_strengthened:unaudited->{stronger}",
+                f"authority_strengthened:audited_failed->{stronger}",
                 growth.get("docs/AUTH.md", []),
             )
+
+    def test_crossing_the_chain_satisfying_line_still_invalidates(self):
+        """Promotion is not evidence decay, but it IS stale-N3 signal.
+
+        A no-go packet's N3 sorted every scanned occurrence into
+        retained_authority / hidden_admission / non_load_bearing against the
+        authority statuses of the day. Once a cited authority becomes
+        retained-grade, meta, or a decoration of a retained parent, a hit the
+        auditor could only classify as non_load_bearing may now be a
+        retained_authority that resolves the declared wall. Equal rank is not
+        safety either: retained -> retained_no_go and decoration_under_A ->
+        decoration_under_B change which authority the packet stands on.
+        """
+        m = _import("no_go_discipline_gate")
+        for before, after in (
+            ("unaudited", "retained"),
+            ("unaudited", "retained_bounded"),
+            ("unaudited", "retained_no_go"),
+            ("audited_conditional", "retained"),
+            ("meta", "retained"),
+            ("retained", "retained_no_go"),
+            ("retained", "meta"),
+            ("decoration_under_parent_a", "decoration_under_parent_b"),
+            ("retained", "decoration_under_parent_a"),
+        ):
+            manifest = self._authority_manifest(before)
+            packet = _no_go_packet()
+            _set_no_go_scan_coverage(packet, manifest)
+            packet["evidence_snapshot"] = m.build_evidence_snapshot(
+                packet, manifest
+            )
+            self.assertIsNone(
+                m.evidence_snapshot_current_error(packet, manifest), before
+            )
+            changed = json.loads(json.dumps(manifest))
+            changed["docs/AUTH.md"]["effective_status"] = after
+            self.assertIn(
+                "crossed the chain-satisfying line",
+                m.evidence_snapshot_current_error(packet, changed) or "",
+                f"{before} -> {after} must force re-audit",
+            )
+
+    def test_snapshot_chain_satisfying_matches_pipeline(self):
+        """The gate's local chain-line predicate must track the canonical one."""
+        m = _import("no_go_discipline_gate")
+        pipeline = _import("compute_effective_status")
+        for status in list(pipeline.RANK) + [
+            None, "", "nonsense", "decoration_under_x", "decoration_under_",
+        ]:
+            self.assertEqual(
+                m.snapshot_status_is_chain_satisfying(status),
+                pipeline.is_chain_satisfying_status(status),
+                status,
+            )
+
+    def test_growth_ignores_paths_absent_from_the_current_manifest(self):
+        """Evidence LOSS must never be reported as strengthening.
+
+        A missing current entry read as `{}` yields effective_status None,
+        which snapshot_status_rank maps to the unaudited default (30), so any
+        stored status below that would have been reported as strengthened.
+        """
+        m = _import("no_go_discipline_gate")
+        manifest = self._authority_manifest("audited_failed")
+        packet = _no_go_packet()
+        _set_no_go_scan_coverage(packet, manifest)
+        packet["evidence_snapshot"] = m.build_evidence_snapshot(packet, manifest)
+        self.assertEqual(m.evidence_snapshot_index_growth(packet, {}), {})
+
+    def test_authority_strengthened_survives_a_same_path_n5_group_change(self):
+        """The status signal must not be discarded by the N5 scan branch.
+
+        The N5 branch used a plain assignment, so a path carrying both the
+        `source` and `authority` roles lost its `authority_strengthened`
+        entry whenever the scan groups also moved.
+        """
+        m = _import("no_go_discipline_gate")
+        phrase = m.N5_SCAN_PHRASES[0]
+        digest = hashlib.sha256(b"identical-bytes").hexdigest()
+        stored = {
+            "docs/BOTH.md": {
+                "path": "docs/BOTH.md",
+                "roles": ["source", "authority"],
+                "text": f"Prose that includes {phrase} exactly once.",
+                "effective_status": "audited_failed",
+                "accepted_premise_type": None,
+                "full_content_sha256": digest,
+            }
+        }
+        current = json.loads(json.dumps(stored))
+        current["docs/BOTH.md"]["text"] = "Prose with the scan phrase removed."
+        current["docs/BOTH.md"]["effective_status"] = "audited_conditional"
+        packet = {"evidence_snapshot": m.build_evidence_snapshot({}, stored)}
+        entries = m.evidence_snapshot_index_growth(packet, current).get(
+            "docs/BOTH.md", []
+        )
+        self.assertIn(
+            "authority_strengthened:audited_failed->audited_conditional",
+            entries,
+        )
+        self.assertTrue(
+            any(e.startswith("n5_group_removed:") for e in entries), entries
+        )
 
     def test_evidence_snapshot_writer_satisfies_reader(self):
         """The writer must emit every entry field the reader demands.
@@ -9571,7 +9684,15 @@ class NoGoDisciplineGateTest(unittest.TestCase):
     def test_duplicate_n7_helper_declaration_runs_once_and_stays_authenticated(self):
         m = _import_codex_audit_runner()
         with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp)
+            # REPO_ROOT is a SUBDIRECTORY of the tempdir so the invocation
+            # counter can live beside it. `_runner_command` denies `file-write*`
+            # only beneath REPO_ROOT, and `_run_repo_runner` executes in a
+            # disposable checkout, so a runner cannot persist state inside the
+            # repo -- but a path outside it is writable and survives, which is
+            # what lets the stateful helper below prove the dedup end to end.
+            root = Path(tmp) / "repo"
+            root.mkdir()
+            counter_path = Path(tmp) / "invocations.txt"
             m.REPO_ROOT = root
             note_path = root / "docs" / "target.md"
             runner_path = root / "scripts" / "runner.py"
@@ -9580,8 +9701,22 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             runner_path.parent.mkdir(parents=True, exist_ok=True)
             note_path.write_text(_no_go_evidence_text(), encoding="utf-8")
             runner_path.write_text("print('primary')\n", encoding="utf-8")
+            # Stateful helper: the first invocation exits zero with the N7
+            # resolution marker; any second invocation exits nonzero with a
+            # markerless tail. Canonical dedup must keep the duplicate
+            # declaration from ever triggering that second invocation, so the
+            # authenticated role cannot be poisoned by a later failure tail on
+            # the same evidence surface.
             helper_path.write_text(
-                "print('N7_STEELMAN_RESOLUTION selector wall resolved')\n",
+                "import pathlib\n"
+                f"c = pathlib.Path({str(counter_path)!r})\n"
+                "n = int(c.read_text()) if c.exists() else 0\n"
+                "c.write_text(str(n + 1))\n"
+                "if n == 0:\n"
+                "    print('N7_STEELMAN_RESOLUTION selector wall resolved')\n"
+                "else:\n"
+                "    print('y' * 9000)\n"
+                "    raise SystemExit(7)\n",
                 encoding="utf-8",
             )
             _init_git_fixture_repo(root)
@@ -9594,12 +9729,9 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "deps": [],
             }
             manifest: dict[str, dict] = {}
-            # Invocation count is asserted with a call-through spy rather than
-            # a counter file the helper writes: `_run_repo_runner` executes in
-            # a disposable checkout under `sandbox-exec` with `file-write*`
-            # denied across REPO_ROOT, so no runner can carry state between
-            # invocations by design. The spy measures the dedup property
-            # directly while the helper still executes live.
+            # The counter is measured at the process boundary and the spy at
+            # the call boundary; both must agree that exactly one invocation
+            # happened.
             invocations: list[str] = []
             real_independent = m.get_independent_runner_stdout
 
@@ -9635,6 +9767,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             )
             # The helper ran exactly once; the duplicate declaration was dropped.
             self.assertEqual(invocations, ["scripts/helper.py"])
+            self.assertEqual(counter_path.read_text(), "1")
             self.assertEqual(
                 manifest[independent_path]["roles"],
                 ["runner_stdout_independent"],
@@ -9642,6 +9775,13 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             self.assertIn(
                 "selector wall resolved", manifest[independent_path]["text"]
             )
+            # The stored text is the FIRST invocation's output, not a second
+            # invocation's failure tail. Asserted on the exit-code banner, not
+            # on the payload: `get_independent_runner_stdout` returns only
+            # `stdout[-3000:]` on failure, so a marker word at the head of a
+            # 9000-character poison payload is clipped away and asserting its
+            # absence would pass no matter what.
+            self.assertNotIn("[runner exit=", manifest[independent_path]["text"])
 
     def test_n7_authenticated_role_revoked_by_failed_sibling(self):
         m = _import("no_go_discipline_gate")

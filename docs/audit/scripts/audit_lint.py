@@ -1634,8 +1634,8 @@ def main() -> int:
         if retained_no_go == 0:
             add_notice(
                 "no_go_grade_path_unreached",
-                f"{len(no_go_rows)} no_go rows and 0 at retained_no_go; "
-                "every foreclosure the repo cites is ungraded",
+                f"{len(no_go_rows)} rows carry claim_type no_go and none "
+                "currently reaches effective_status retained_no_go",
             )
         if reset_after_clean:
             add_notice(
@@ -1648,8 +1648,10 @@ def main() -> int:
             add_notice(
                 "no_go_legacy_evidence_snapshot",
                 f"{legacy_snapshot_rows} no_go rows carry an archived evidence "
-                "snapshot the current reader cannot authenticate (pre-expansion "
-                "entry shape); their forensic evidence is not restorable in place",
+                "snapshot the current reader cannot authenticate; run "
+                "no_go_discipline_gate.evidence_snapshot_schema_defect on the "
+                "archived packet for the specific reason. Their forensic "
+                "evidence is not restorable in place",
             )
 
     # Output.

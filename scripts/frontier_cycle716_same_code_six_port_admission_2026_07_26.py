@@ -1205,7 +1205,12 @@ def main() -> int:
             "no no-go or axiom-pressure claim."
         ),
     }
-    print(json.dumps(report, indent=2, sort_keys=True, default=json_default))
+    report["report_sha256"] = sha256(json.dumps(
+        report, sort_keys=True, default=json_default, separators=(",", ":")
+    ).encode()).hexdigest()
+    for label, passed in checks.items():
+        print("PASS" if passed else "FAIL", label, "::", passed)
+    print("SUMMARY_JSON", json.dumps(report, sort_keys=True, default=json_default))
     print("CYCLE716_SAME_CODE_SIX_PORT_ADMISSION_PASS" if report["pass"]
           else "CYCLE716_SAME_CODE_SIX_PORT_ADMISSION_INCOMPLETE")
     return 0 if report["pass"] else 1

@@ -1,6 +1,6 @@
 {
- "edge_count": 15196,
- "node_count": 4565,
+ "edge_count": 15197,
+ "node_count": 4566,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10846,6 +10846,10 @@
    "deps_hash": "4aaaab65f162",
    "out_degree": 2
   },
+  "poisson_response_kernel_and_sign_normalization_finite_grid_bounded_note_2026-07-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "poisson_self_consistent_beta_caveat_bounded_diagnostic_note_2026-07-26": {
    "deps_hash": "b9586de19b7c",
    "out_degree": 1
@@ -12839,8 +12843,8 @@
    "out_degree": 0
   },
   "self_consistency_forces_poisson_note": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "0c72e54e8637",
+   "out_degree": 1
   },
   "self_consistency_structured_null_note_2026-04-11": {
    "deps_hash": "e3b0c44298fc",

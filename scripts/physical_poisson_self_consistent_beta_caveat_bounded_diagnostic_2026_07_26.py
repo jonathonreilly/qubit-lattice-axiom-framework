@@ -44,7 +44,7 @@ MIXING = 0.3
 TOL = 1e-4
 MAX_ITER = 30
 EXPECTED_PARENT_RUNNER_SHA256 = (
-    "9714bfc547816059745b009ddba47db626444270e34e00aae08319cd2b5d1da2"
+    "9e49b83bb9ce50ecdff58092da859dd2ee5b5d2558bf428d0c840b38be4af4f6"
 )
 
 # N = 12 is excluded: check_field_physics fits radii 2..N//2-3, which is fewer

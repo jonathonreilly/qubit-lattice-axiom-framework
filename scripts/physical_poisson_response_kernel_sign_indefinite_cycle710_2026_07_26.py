@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Cycle 710 - diagnostic repair of self_consistency_forces_poisson_note.
+"""Finite-grid Poisson response-kernel and sign-normalization diagnostic.
 
-Parent row: docs/audit/data/ledger/se/self_consistency_forces_poisson_note.json
+Pre-repair audit snapshot:
+  docs/audit/data/ledger/se/self_consistency_forces_poisson_note.json
   criticality: critical, deps: [] (root), direct_in_degree: 17,
   transitive_descendants: 727, load_bearing_score: 18.092.
 
@@ -34,6 +35,7 @@ at the lattice sizes stated per row. No row is a continuum-limit claim.
 from __future__ import annotations
 
 import math
+import hashlib
 import sys
 from pathlib import Path
 
@@ -41,6 +43,11 @@ import numpy as np
 from scipy import sparse
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+PARENT_RUNNER = REPO_ROOT / "scripts" / "frontier_self_consistent_field_equation.py"
+EXPECTED_PARENT_RUNNER_SHA256 = (
+    "9e49b83bb9ce50ecdff58092da859dd2ee5b5d2558bf428d0c840b38be4af4f6"
+)
+PARENT_RUNNER_SHA256 = hashlib.sha256(PARENT_RUNNER.read_bytes()).hexdigest()
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
 import frontier_self_consistent_field_equation as F  # noqa: E402
@@ -76,13 +83,21 @@ def interior_mask(N: int) -> np.ndarray:
     return m
 
 
-def switchable_propagate(N, phi, k, source_pos, sigma=2.0, renormalize=True):
+def switchable_propagate(
+    N,
+    phi,
+    k,
+    source_pos,
+    sigma=2.0,
+    renormalize_layers=True,
+    normalize_total=True,
+):
     """Byte-for-byte re-implementation of F.propagate_wavepacket_fast with the
-    per-layer renormalization and the global normalization made switchable.
+    per-layer and final global normalizations made independently switchable.
 
-    R1 below verifies that renormalize=True reproduces the repo propagator
-    exactly, so the renormalize=False branch is the same physics with one
-    identified step removed and nothing else changed.
+    R1 below verifies that enabling both reproduces the repo propagator exactly.
+    R6 disables only the per-layer normalization while retaining the final
+    normalization.
     """
     sx, sy, sz = source_pos
     yy, zz = np.mgrid[0:N, 0:N]
@@ -118,27 +133,39 @@ def switchable_propagate(N, phi, k, source_pos, sigma=2.0, renormalize=True):
                 S = L * (1.0 - f_avg)
                 amp = np.exp(1j * k * S) / L
                 psi_new[dst_y, dst_z] += amp * psi_layer[src_y, src_z]
-            if renormalize:
+            if renormalize_layers:
                 nrm = np.sqrt(np.sum(np.abs(psi_new) ** 2))
                 if nrm > 1e-30:
                     psi_new /= nrm
             psi_layer = psi_new
             density[x_new, :, :] += np.abs(psi_layer) ** 2
 
-    if renormalize:
+    if normalize_total:
         tot = density.sum()
         if tot > 1e-30:
             density /= tot
     return density
 
 
-def response_column(N, y_site, source_pos, k=K_WAVE, dphi=1e-3, renormalize=True):
-    """K(.,y) = d rho(.) / d phi(y), a single-site field perturbation."""
+def response_column(
+    N,
+    y_site,
+    source_pos,
+    k=K_WAVE,
+    dphi=1e-3,
+    renormalize_layers=True,
+    normalize_total=True,
+):
+    """K_h(.,y), the forward finite-difference density response at step dphi."""
     zero = np.zeros((N, N, N))
-    rho0 = switchable_propagate(N, zero, k, source_pos, SIGMA, renormalize)
+    rho0 = switchable_propagate(
+        N, zero, k, source_pos, SIGMA, renormalize_layers, normalize_total
+    )
     phip = np.zeros((N, N, N))
     phip[y_site] = dphi
-    rhop = switchable_propagate(N, phip, k, source_pos, SIGMA, renormalize)
+    rhop = switchable_propagate(
+        N, phip, k, source_pos, SIGMA, renormalize_layers, normalize_total
+    )
     return (rhop - rho0) / dphi
 
 
@@ -154,8 +181,17 @@ def scalar_match(Kcol, Gcol, mask):
 # ---------------------------------------------------------------------------
 print(__doc__)
 print("=" * 78)
-print("PART A - the matched point-to-point response kernel (re-audit ask #1)")
+print("PART A - matched point-to-point finite-difference response")
 print("=" * 78)
+
+# --- R0 ---------------------------------------------------------------------
+check(
+    "R0  imported parent runner bytes match the reviewed source pin",
+    PARENT_RUNNER_SHA256 == EXPECTED_PARENT_RUNNER_SHA256,
+    f"expected sha256: {EXPECTED_PARENT_RUNNER_SHA256}\n"
+    f"actual sha256:   {PARENT_RUNNER_SHA256}\n"
+    "falsifier: any byte change in the imported parent runner.",
+)
 
 # --- R1 ---------------------------------------------------------------------
 diffs = []
@@ -164,11 +200,13 @@ for (N, k) in ((10, 5.0), (12, 2.0)):
     rng = np.random.default_rng(7)
     phi = rng.normal(0, 0.3, (N, N, N))
     a = F.propagate_wavepacket_fast(N, phi, k, s, sigma=SIGMA)
-    b = switchable_propagate(N, phi, k, s, SIGMA, renormalize=True)
+    b = switchable_propagate(
+        N, phi, k, s, SIGMA, renormalize_layers=True, normalize_total=True
+    )
     diffs.append(float(np.abs(a - b).max()))
 check(
     "R1  switchable propagator reproduces the parent runner exactly "
-    "(renormalize=True)",
+    "(both normalizations enabled)",
     all(d == 0.0 for d in diffs),
     f"max|repo - reimplementation| at (N=10,k=5.0) and (N=12,k=2.0): {diffs}\n"
     "falsifier: any nonzero difference would mean later rows test a different\n"
@@ -205,7 +243,7 @@ for dr in (1, 2, 3):
     c, resid, corr = scalar_match(Kcol, Gcol, mask)
     r4_rows.append((dr, c, resid, corr))
 check(
-    "R3  response kernel K(.,y) = d rho / d phi(y) is sign-indefinite",
+    "R3  finite-difference response K_h(.,y), h=1e-3, is sign-indefinite",
     all(fp > 0.05 and fn > 0.05 for _, fp, fn in r3_rows),
     "\n".join(f"y = source + {dr}*yhat : fraction K>0 = {fp:.4f}, "
               f"fraction K<0 = {fn:.4f}" for dr, fp, fn in r3_rows) + "\n"
@@ -213,7 +251,7 @@ check(
     "kernel proportional to the inverse Laplacian would have to be by R2.",
 )
 check(
-    "R4  no scalar c makes K proportional to G (relative residual > 0.9)",
+    "R4  no scalar c closely matches K_h to G (relative residual > 0.9)",
     all(resid > 0.9 for _, _, resid, _ in r4_rows),
     "\n".join(f"y = source + {dr}*yhat : best-fit c = {c:+.4e}, "
               f"relative residual = {resid:.4f}, corr(K,G) = {corr:+.4f}"
@@ -236,23 +274,25 @@ check(
     all(abs(corr) < 0.25 for _, corr, _, _ in k_rows),
     "\n".join(f"k = {k:<5}: corr(K,G) = {corr:+.4f}, residual = {resid:.4f}, "
               f"|K|_1 = {n1:.3e}" for k, corr, resid, n1 in k_rows) + "\n"
-    "falsifier: corr approaching 1 at small k, i.e. a weak-coupling regime in\n"
-    "which the parent note's identification would hold. This row is the\n"
-    "steelman for the parent note and it does not survive.",
+    "falsifier: corr approaching 1 at a sampled small k, which would exhibit\n"
+    "a sampled weak-coupling regime where the proposed identification holds.",
 )
 
 # --- R6 ---------------------------------------------------------------------
 r6_rows = []
 for dr in (1, 2, 3):
     yy_ = (s[0], s[1] + dr, s[2])
-    Kcol = response_column(N, yy_, s, renormalize=False)
+    Kcol = response_column(
+        N, yy_, s, renormalize_layers=False, normalize_total=True
+    )
     Gc = F.poisson_greens_function(N, yy_)
     c, resid, corr = scalar_match(Kcol, Gc, mask)
     r6_rows.append((dr, resid, corr))
 check(
     "R6  removing the per-layer renormalization does NOT produce a match",
     all(resid > 0.9 for _, resid, _ in r6_rows),
-    "\n".join(f"y = source + {dr}*yhat (renormalize=False): residual = {resid:.4f}, "
+    "\n".join(f"y = source + {dr}*yhat (layer normalization off): "
+              f"residual = {resid:.4f}, "
               f"corr = {corr:+.4f}" for dr, resid, corr in r6_rows) + "\n"
     "this row falsifies the natural repair hypothesis that the per-layer\n"
     "renormalization is what destroys the Green-function structure. It is not:\n"
@@ -293,15 +333,16 @@ check(
               for name, dev in lay_dev) + "\n"
     f"single-site perturbation: |signed sum| = {signed:.3e}, "
     f"sum|.| = {absolute:.6e}\n"
-    "the parent runner's statistic is sum(abs(rho_p - rho_0)) (line 489). The\n"
+    "the parent runner's statistic is sum(abs(rho_p - rho_0)) (line 485). The\n"
     "signed sum it would otherwise be is exactly zero, so the statistic is a\n"
-    "total-variation reshaping measure and carries no response amplitude.\n"
+    "total-variation reshaping measure rather than a signed integrated "
+    "response.\n"
     "falsifier: layer mass depending on phi, or a nonzero signed sum.",
 )
 
 print()
 print("=" * 78)
-print("PART B - the 0.93 shape correlation (parent note Bounded Claim 3)")
+print("PART B - selectivity of the previously reported 0.93 correlation")
 print("=" * 78)
 
 # --- R8 ---------------------------------------------------------------------
@@ -323,7 +364,8 @@ check(
     corr_note > 0.9 and abs(sl_chi - sl_g) > 0.5 and spread > 5.0,
     f"radii tested (the parent note's own set): {r_vals[ok].astype(int).tolist()}\n"
     f"Pearson corr(chi, G_poisson)   = {corr_note:.6f}   "
-    f"(parent note reports 0.93 as a 'strong match')\n"
+    f"(the previous source version rounded this to 0.93 and called it a "
+    f"'strong match')\n"
     f"chi(r) log-log slope           = {sl_chi:+.4f}\n"
     f"G_poisson(r) log-log slope     = {sl_g:+.4f}\n"
     f"chi/G ratio across the radii   = {ratio.min():.4g} .. {ratio.max():.4g}  "
@@ -334,39 +376,39 @@ check(
 
 # --- R9 ---------------------------------------------------------------------
 rr = r_vals[ok]
-g_pow = rr ** -1.0
 P_GRID_LO = 0.01
 band = [p for p in np.arange(P_GRID_LO, 10.001, 0.01)
-        if np.corrcoef(g_pow, rr ** -p)[0, 1] >= 0.93]
-probe = {p: float(np.corrcoef(g_pow, rr ** -p)[0, 1])
+        if np.corrcoef(gprof[ok], rr ** -p)[0, 1] >= 0.93]
+probe = {p: float(np.corrcoef(gprof[ok], rr ** -p)[0, 1])
          for p in (1.0, 1.28, 2.0, 2.805, 4.0, 8.637)}
 check(
     "R9  a 0.93 shape-correlation threshold on these radii does not exclude "
-    "the parent note's own rival exponents",
+    "the parent row's reported susceptibility exponent",
     min(band) < 0.5 and max(band) > 2.805 and probe[2.805] >= 0.93,
-    f"exponents p with corr(r^-1, r^-p) >= 0.93 : p in "
+    f"exponents p with corr(G_finite, r^-p) >= 0.93 : p in "
     f"[{min(band):.2f}, {max(band):.2f}]\n"
     f"(the lower endpoint is the scan grid's floor p = {P_GRID_LO}, not a real "
     f"boundary; the\ninformative endpoint is the upper one, {max(band):.2f})\n"
     + "\n".join(f"  p = {p:<6} corr = {c:.6f}" for p, c in probe.items()) + "\n"
     "p = 2.805 is the susceptibility exponent the parent row's verdict "
-    "rationale reports;\np = 8.637 is the 'local' operator's exponent the "
-    "parent note lists as unphysical.\n"
-    "falsifier: a narrow band excluding those exponents, which would make 0.93\n"
-    "a discriminating threshold.",
+    "rationale reports and is admitted by the threshold. p = 8.637, the "
+    "local-operator beta, is excluded.\n"
+    "falsifier: a band excluding p = 2.805, which would make 0.93 "
+    "discriminating for that reported mismatch.",
 )
 
 print()
 print("=" * 78
       )
-print("PART C - per-operator source-sign normalization (re-audit ask #2)")
+print("PART C - per-operator source-sign normalization")
 print("=" * 78)
 
 SOLVERS = {
     "poisson": (F.solve_poisson, {}),
     "biharmonic": (F.solve_biharmonic, {}),
-    "local": (F.solve_local, {"G": G_COUPLING}),
-    "inv_r2": (F.solve_inv_r2_kernel, {"G": G_COUPLING, "mid": None}),
+    # G is applied once in the source term below, as in the parent iterator.
+    "local": (F.solve_local, {"G": 1.0}),
+    "inv_r2": (F.solve_inv_r2_kernel, {"G": 1.0, "mid": None}),
 }
 
 
@@ -382,7 +424,7 @@ def fundamental_sign(N, solver, kwargs):
 
 def iterate_signed(N, solver, kwargs, eps):
     """The parent runner's self_consistent_iterate with its hardcoded
-    rho_source = -G*rho (line 296) replaced by rho_source = eps*G*rho."""
+    rho_source = -G*rho (line 292) replaced by rho_source = eps*G*rho."""
     kw = dict(kwargs)
     if "mid" in kw:
         kw["mid"] = N // 2
@@ -404,14 +446,14 @@ def iterate_signed(N, solver, kwargs, eps):
 # --- R10 --------------------------------------------------------------------
 signs = {n: fundamental_sign(20, sv, kw) for n, (sv, kw) in SOLVERS.items()}
 check(
-    "R10 Poisson's fundamental solution has the opposite sign to every rival, "
-    "and the parent runner feeds all of them the same source",
+    "R10 Poisson's fundamental solution has the opposite sign to each tested "
+    "deterministic rival, and the parent runner feeds them the same source",
     signs["poisson"] == -1.0
     and all(signs[n] == +1.0 for n in ("biharmonic", "local", "inv_r2")),
     "\n".join(f"  {n:12s} sign of O^-1(+delta) at the source = {v:+.0f}"
               for n, v in signs.items()) + "\n"
     "the parent runner's self_consistent_iterate hardcodes "
-    "rho_source = -G * rho\n(line 296) for every operator. The Laplacian is "
+    "rho_source = -G * rho\n(line 292) for every operator. The Laplacian is "
     "negative definite on the\nDirichlet interior; the biharmonic, local and "
     "1/r^2 kernels are positive.\nSo one fixed source sign yields an "
     "attractive well for Poisson and a\nrepulsive hill for each rival, which "
@@ -434,7 +476,7 @@ for Nsz in (20, 24):
         v = phi[interior_mask(Nsz)]
         rows[name] = dict(conv=conv, attr=bool(p["attractive"]),
                           mono=bool(p["monotonic"]), beta=float(p["beta"]),
-                          fpos=float(np.mean(v > 0)))
+                          fpos=float(np.mean(v > 0)), iters=iters)
     r11[Nsz] = rows
 
 lines = []
@@ -442,12 +484,14 @@ poisson_rank = {}
 for Nsz, rows in r11.items():
     lines.append(f"  N = {Nsz}:")
     elig = [(n, r) for n, r in rows.items()
-            if r["attr"] and r["mono"] and not math.isnan(r["beta"])]
+            if r["conv"] and r["attr"] and r["mono"]
+            and not math.isnan(r["beta"])]
     order = sorted(elig, key=lambda t: abs(t[1]["beta"] - 1.0))
     for rank, (n, r) in enumerate(order, 1):
         lines.append(f"    {rank}. {n:12s} beta = {r['beta']:7.4f}  "
                      f"|beta-1| = {abs(r['beta']-1.0):7.4f}  "
                      f"attractive={r['attr']}  monotone={r['mono']}  "
+                     f"converged={r['conv']} ({r['iters']} iter)  "
                      f"frac(phi>0)={r['fpos']:.4f}")
     poisson_rank[Nsz] = [n for n, _ in order].index("poisson") + 1
 check(
@@ -455,22 +499,24 @@ check(
     "favour Poisson: it ranks third at both lattice sizes",
     all(rk == 3 for rk in poisson_rank.values()),
     "\n".join(lines) + "\n"
-    f"Poisson's rank by |beta - 1| among attractive+monotone operators: "
+    f"Poisson's rank by |beta - 1| among converged, attractive, "
+    f"line-monotone operators: "
     f"{poisson_rank}\n"
-    "the parent note's Bounded Claim 1 states unscreened Poisson is 'the "
+    "the withdrawn source wording stated that unscreened Poisson is 'the "
     "best-supported\noperator in the tested family and the only tested one "
     "that stays close to the\nNewtonian target'. At the parent note's own "
     "working point, with its own beta\ndiagnostic, and with the source sign "
     "normalized per operator as the re-audit\nnote asks, biharmonic and the "
-    "1/r^2 kernel both land closer to beta = 1. R16 refuses\nthe stronger "
-    "reading that either is therefore the better operator.\n"
+    "1/r^2 kernel both land closer to beta = 1. This finite-grid ordering does "
+    "not establish that either is the better operator or extend to a "
+    "continuum limit.\n"
     "falsifier: Poisson ranking first at either size.",
 )
 check(
-    "R12 biharmonic and the 1/r^2 kernel are genuine global wells after "
-    "normalization, not merely positive at the source",
-    all(r11[Nsz][n]["fpos"] == 1.0 for Nsz in (20, 24)
-        for n in ("poisson", "biharmonic", "inv_r2")),
+    "R12 all four deterministic operators converge to single-signed interior "
+    "wells after normalization, not merely the imposed source-point sign",
+    all(r11[Nsz][n]["conv"] and r11[Nsz][n]["fpos"] == 1.0
+        for Nsz in (20, 24) for n in SOLVERS),
     "\n".join(f"  N={Nsz} {n:12s} fraction of interior sites with phi>0 = "
               f"{r11[Nsz][n]['fpos']:.6f}"
               for Nsz in (20, 24)
@@ -510,16 +556,12 @@ check(
 
 
 # --- R14 -------------------------------------------------------------------
-# The strongest physical escape from Part C: require the mediator kernel to be
-# positive, so that superposing positive masses never anti-attracts. That would
-# exclude biharmonic on grounds independent of the source-sign convention. For
-# the clamped-plate biharmonic operator positivity genuinely can fail
-# (Coffman-Duffin). The parent runner does not implement that operator: it
-# implements A @ A, the square of the Dirichlet Laplacian, whose inverse is the
-# square of an entrywise single-signed matrix and is therefore entrywise
-# positive by construction. So this escape is not available here.
+# A positivity requirement might exclude some fourth-order kernels on grounds
+# independent of a source-sign convention. This row tests only the operator
+# the parent runner actually implements: A @ A, the square of its Dirichlet
+# Laplacian. Its inverse is the square of an entrywise single-signed matrix.
 N14 = 10
-A14, M14 = F.build_laplacian_sparse(N14)
+A14, _ = F.build_laplacian_sparse(N14)
 A14d = A14.toarray()
 Ainv = np.linalg.inv(A14d)
 Bih = np.linalg.inv((A14 @ A14).toarray())
@@ -536,10 +578,9 @@ check(
     f"fraction of entries of (A@A)^-1 that are positive = {bih_pos:.6f}\n"
     "the product of two entrywise single-signed matrices is entrywise positive, "
     "so the\ntested biharmonic Green's function cannot change sign. Requiring a "
-    "positive\nmediator kernel - the strongest convention-free discriminator "
-    "available - does\nnot separate it from Poisson. Clamped-plate biharmonic "
-    "positivity can fail\n(Coffman-Duffin), but that is a different operator "
-    "from the one the parent\nrunner tests.\n"
+    "positive\nmediator kernel does not separate this tested operator from "
+    "Poisson. No statement\nabout other biharmonic boundary-value problems is "
+    "made.\n"
     "falsifier: a sign change in the tested biharmonic Green's function, which "
     "would\nrestore a convention-free discriminator and partially rescue the "
     "parent note.",
@@ -547,34 +588,29 @@ check(
 
 
 # --- R15 -------------------------------------------------------------------
-# R11 uses the parent note's single G = 0.5 for every operator. The operators
-# have very different natural scales, so each converges to a different |phi|,
-# and the self-consistent loop is nonlinear. If beta depended on the converged
-# amplitude, the R11 ranking would be an amplitude artifact rather than an
-# operator-shape result. Sweep G per operator over an 80x range, then compare
-# at matched converged amplitude.
+# R11 uses the parent note's single G = 0.5 for every operator. Because the
+# loop is nonlinear, test whether its finite-grid ordering is stable over an
+# 80-fold shared coupling sweep. This does not claim matched amplitudes.
 def _iter_G(Nsz, solver, kwargs, eps, Gc):
     kw = dict(kwargs)
     if "mid" in kw:
         kw["mid"] = Nsz // 2
-    kernel_type = "G" in kw
-    if kernel_type:
-        kw["G"] = Gc
     srcpos = (Nsz // 2, Nsz // 2, Nsz // 2)
     phi = np.zeros((Nsz, Nsz, Nsz))
+    converged = False
     for it in range(MAX_ITER):
         rho = F.propagate_wavepacket_fast(Nsz, phi, K_WAVE, srcpos, sigma=SIGMA)
-        srcterm = eps * rho if kernel_type else eps * Gc * rho
-        pn = solver(Nsz, srcterm, **kw)
+        pn = solver(Nsz, eps * Gc * rho, **kw)
         if not np.all(np.isfinite(pn)):
-            return None, None
+            return None, None, False
         pm = (1 - MIXING) * phi + MIXING * pn
         res = float(np.max(np.abs(pm - phi)))
         phi = pm
         if res < TOL and it > 0:
+            converged = True
             break
     p = F.check_field_physics(Nsz, phi, srcpos)
-    return float(np.max(np.abs(phi))), float(p["beta"])
+    return float(np.max(np.abs(phi))), float(p["beta"]), converged
 
 
 N15 = 20
@@ -584,97 +620,40 @@ for name, (solver, kw) in SOLVERS.items():
     eps = fundamental_sign(N15, solver, kw)
     rows = []
     for Gc in G_SWEEP:
-        amp, beta = _iter_G(N15, solver, kw, eps, Gc)
-        if amp is not None and not math.isnan(beta):
+        amp, beta, conv = _iter_G(N15, solver, kw, eps, Gc)
+        if amp is not None and not math.isnan(beta) and conv:
             rows.append((Gc, amp, beta))
     sweep[name] = rows
 spreads = {n: (min(b for _, _, b in r), max(b for _, _, b in r))
            for n, r in sweep.items() if r}
-ref_amp = [a for g, a, _ in sweep["poisson"] if abs(g - G_COUPLING) < 1e-12][0]
-matched = {}
-for name, rows in sweep.items():
-    g, a, b = min(rows, key=lambda t: abs(math.log(t[1]) - math.log(ref_amp)))
-    matched[name] = (g, a, b)
-matched_order = sorted(matched.items(), key=lambda t: abs(t[1][2] - 1.0))
-matched_rank = [n for n, _ in matched_order].index("poisson") + 1
+rank_by_G = {}
+for Gc in G_SWEEP:
+    betas = {
+        name: next(beta for g, _, beta in rows if g == Gc)
+        for name, rows in sweep.items()
+        if any(g == Gc for g, _, _ in rows)
+    }
+    order = sorted(betas, key=lambda name: abs(betas[name] - 1.0))
+    rank_by_G[Gc] = order.index("poisson") + 1
 check(
-    "R15 the R11 ordering is not an amplitude artifact: beta is amplitude-"
-    "independent per operator, and the ordering is unchanged at matched amplitude",
-    all(hi - lo < 0.05 for lo, hi in spreads.values()) and matched_rank == 3,
+    "R15 the finite-grid R11 ordering is stable over the sampled 80-fold "
+    "shared-coupling sweep",
+    all(len(rows) == len(G_SWEEP) for rows in sweep.values())
+    and all(hi - lo < 0.05 for lo, hi in spreads.values())
+    and all(rank == 3 for rank in rank_by_G.values()),
     "beta range across an 80x sweep in the coupling G, per operator:\n"
     + "\n".join(f"  {n:11s} beta in [{lo:.4f}, {hi:.4f}]  spread {hi-lo:.4f}"
                 for n, (lo, hi) in spreads.items())
-    + f"\nreference amplitude: poisson at G={G_COUPLING} gives "
-      f"max abs(phi) = {ref_amp:.5f}\n"
-    "each operator at the G whose converged amplitude is closest to that "
-    "reference:\n"
-    + "\n".join(f"  {n:11s} G={g:<6} max abs(phi)={a:.5f}  beta={b:7.4f}  "
-                f"abs(beta-1)={abs(b-1.0):.4f}" for n, (g, a, b) in matched.items())
-    + "\nranking at matched amplitude: "
-    + ", ".join(f"{i}. {n}" for i, (n, _) in enumerate(matched_order, 1))
-    + f"\nPoisson's rank at matched amplitude: {matched_rank}\n"
-    "so beta is a property of the operator's shape, not of the field strength it\n"
-    "happens to converge to at a shared coupling. This closes the strongest\n"
-    "objection to R11: that the parent note's single G = 0.5 evaluates each\n"
-    "operator at a different effective amplitude.\n"
-    "falsifier: beta varying appreciably with G, or Poisson ranking first once\n"
-    "amplitudes are matched.",
-)
-
-
-# --- R16 -------------------------------------------------------------------
-# Refuses an over-reading of R11/R15. The ranking is real as data, but two facts
-# forbid concluding that biharmonic is the better operator:
-#   (a) the beta power-law fits are of uneven quality, and biharmonic's is the
-#       WORST of the four, so its beta is the least trustworthy number in the
-#       table;
-#   (b) the parent note documents beta -> 1.0 in the continuum from beta = 1.28
-#       at N=20 for Poisson, i.e. a finite-size shift of about 0.28, which is
-#       LARGER than the 0.156 gap in abs(beta-1) between biharmonic and Poisson.
-# So the honest reading is that the beta comparison does not favour Poisson and
-# does not establish any operator as best. The discriminator is empty, not
-# reversed.
-N16 = 20
-fits = {}
-for name, (solver, kw) in SOLVERS.items():
-    eps = fundamental_sign(N16, solver, kw)
-    phi, _, _ = iterate_signed(N16, solver, kw, eps)
-    p = F.check_field_physics(N16, phi, (N16 // 2, N16 // 2, N16 // 2))
-    fits[name] = (float(p["beta"]), float(p["beta_r2"]))
-worst_fit = min(fits, key=lambda n: fits[n][1])
-gap = abs(abs(fits["biharmonic"][0] - 1.0) - abs(fits["poisson"][0] - 1.0))
-POISSON_FINITE_SIZE_SHIFT = abs(fits["poisson"][0] - 1.0)  # parent note: -> 1.0
-check(
-    "R16 the beta ranking does not establish a better operator: biharmonic's "
-    "fit is the worst of the four and the ranking gap is inside the parent "
-    "note's own finite-size shift",
-    worst_fit == "biharmonic" and gap < POISSON_FINITE_SIZE_SHIFT,
-    "\n".join(f"  {n:11s} beta = {b:7.4f}  power-law fit R^2 = {r2:.4f}"
-              for n, (b, r2) in fits.items())
-    + f"\nworst power-law fit among the four: {worst_fit} "
-      f"(R^2 = {fits[worst_fit][1]:.4f})\n"
-    + f"gap in abs(beta-1) between biharmonic and poisson = {gap:.4f}\n"
-    + f"parent note's documented finite-size shift for Poisson alone "
-      f"(1.28 at N=20 -> 1.0 in\nthe continuum) = "
-      f"{POISSON_FINITE_SIZE_SHIFT:.4f}, which exceeds that gap\n"
-    "therefore this cycle claims only that the beta comparison does NOT FAVOUR\n"
-    "Poisson. It does not claim biharmonic is the better operator, and it does\n"
-    "not claim a continuum ranking. The parent note's Bounded Claim 1 fails\n"
-    "because three of four operators sit within the finite-size budget of the\n"
-    "Newtonian target, not because a rival wins.\n"
-    "falsifier: biharmonic having the best fit of the four, or the ranking gap\n"
-    "exceeding the finite-size shift, either of which would license the stronger\n"
-    "reading this row refuses.",
+    + "\nPoisson rank by abs(beta-1) at each shared G: "
+    + ", ".join(f"G={g}: {rank}" for g, rank in rank_by_G.items())
+    + "\nThis is a sampled finite-grid robustness result. It does not match "
+    "field amplitudes and does not establish a continuum ranking.\n"
+    "falsifier: beta varying by 0.05 or more, non-convergence at a sampled G, "
+    "or Poisson ranking first at a sampled G.",
 )
 
 print()
 print("=" * 78)
 print(f"TOTAL: {PASS_COUNT} PASS / {FAIL_COUNT} FAIL")
 print("=" * 78)
-print("""
-Measured but NOT claimed: the parent note's 'linear response regime' caveat
-holds. The statistic sum|rho_p - rho_0| scales as delta_phi^1.124 over
-delta_phi in [0.0125, 0.2] at r = 3 (N = 12), i.e. approximately linear. This
-cycle looked for a linearity failure there and did not find one.
-""")
 sys.exit(0 if FAIL_COUNT == 0 else 1)

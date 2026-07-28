@@ -2418,7 +2418,7 @@ drive.
 
 Auditor judged the load-bearing step blocked by a runner, log, classifier, threshold, import, or pass/fail accounting problem. To close: repair the runner per the auditor's repair_target sentence and rerun, or replace the runner with a self-contained certificate.
 
-_95 rows in this category._
+_96 rows in this category._
 
 
 ### `cl3_complexification_split_narrow_theorem_note_2026-05-10`
@@ -3409,6 +3409,35 @@ drive.
 ```
 
 
+### `full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24`
+
+**Note:** [docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md](../FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md)  |  **Descendants:** 18  |  **Class:** A
+
+```
+Use the physics-loop skill to close the conditional audit on docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: A
+- claim_scope: The declared bounded finite-data certificate for the 128-column local M64 times seam-M2 intertwiner, 61-site semantic code, 3,907-gate nearest-neighbor word, commuting-projector certificate, and proper-cubic code-space covariance.
+
+Auditor's verdict_rationale:
+The note presents a bounded class-(A) finite algebraic certificate conditioned on supplied labels, couplings, routing word, and seam family; its exclusions of recurrence, autonomous scheduling, dynamics, and physical interpretation are named scope walls rather than no-go results. The included source appears to compute the 13 stated checks and the visible stdout tail reports 13 passes, but the authenticated current-cycle stdout begins mid-record and omits part of the load-bearing execution evidence. Because the packet explicitly flags that clipping and forbids clean ratification, the claim remains conditional on a complete authenticated runner transcript rather than failing on its scientific terms.
+
+Auditor-quoted load-bearing step:
+The executable checks all 128 decoded columns, with maximum intertwiner residual 8.40686768501364e-15.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: Re-render the restricted packet with complete byte-authenticated current-cycle stdout, or an authenticated slice containing the entire all-128 intertwiner check and terminal summary.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
 ### `massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28`
 
 **Note:** [docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md](../MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md)  |  **Descendants:** 18  |  **Class:** A
@@ -3430,35 +3459,6 @@ A nonzero functional on C^4 has a three-dimensional kernel, and quotienting it b
 
 Auditor's repair target (canonical class + action):
 runner_artifact_issue: supply the complete unclipped stdout or a SHA-pinned complete certificate for the load-bearing runner, then re-audit the otherwise elementary quotient proof.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24`
-
-**Note:** [docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md](../FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md)  |  **Descendants:** 17  |  **Class:** A
-
-```
-Use the physics-loop skill to close the conditional audit on docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: A
-- claim_scope: The declared bounded finite-data certificate for the 128-column local M64 times seam-M2 intertwiner, 61-site semantic code, 3,907-gate nearest-neighbor word, commuting-projector certificate, and proper-cubic code-space covariance.
-
-Auditor's verdict_rationale:
-The note presents a bounded class-(A) finite algebraic certificate conditioned on supplied labels, couplings, routing word, and seam family; its exclusions of recurrence, autonomous scheduling, dynamics, and physical interpretation are named scope walls rather than no-go results. The included source appears to compute the 13 stated checks and the visible stdout tail reports 13 passes, but the authenticated current-cycle stdout begins mid-record and omits part of the load-bearing execution evidence. Because the packet explicitly flags that clipping and forbids clean ratification, the claim remains conditional on a complete authenticated runner transcript rather than failing on its scientific terms.
-
-Auditor-quoted load-bearing step:
-The executable checks all 128 decoded columns, with maximum intertwiner residual 8.40686768501364e-15.
-
-Auditor's repair target (canonical class + action):
-runner_artifact_issue: Re-render the restricted packet with complete byte-authenticated current-cycle stdout, or an authenticated slice containing the entire all-128 intertwiner check and terminal summary.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -3546,6 +3546,35 @@ Across the five-value mu^2 grid, the fitted exponent softens monotonically from 
 
 Auditor's repair target (canonical class + action):
 runner_artifact_issue: supply complete SHA-pinned primary stdout and unclipped one-hop authority evidence, and include the both-masses runner/stdout if that failed-observable boundary remains in scope.
+
+Goal: close the chain so a re-audit of this same note can land
+audited_clean at retained-grade. Use the physics-loop skill to iterate.
+Do not over-prescribe approach — explore the framework, let the skill
+drive.
+```
+
+
+### `wilson_test_mass_continuum_note_2026-04-11`
+
+**Note:** [docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md](../WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md)  |  **Descendants:** 11  |  **Class:** C
+
+```
+Use the physics-loop skill to close the conditional audit on docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md.
+
+Current audit state:
+- audit_status: audited_conditional
+- claim_type: bounded_theorem
+- load_bearing_step_class: C
+- claim_scope: Audited only the bounded finite-L open-Wilson test-mass, perturbative mass-law, and finite-L distance-law table as stated in the note; the continuum extrapolation is out of scope.
+
+Auditor's verdict_rationale:
+The visible finite-L table and certificate tail match the bounded numerical claims, and the diagnostic continuum extrapolation is correctly excluded from scope. However, the packet explicitly clips load-bearing runner evidence, so the underlying test-mass, perturbative, and complete finite-L outputs cannot all be independently checked. The both-masses, action-reaction, architecture-independence, and continuum-limit exclusions are bounded named walls, not proofs that those routes are impossible.
+
+Auditor-quoted load-bearing step:
+The six computed finite-L fits, from alpha(12) = -1.827 to alpha(25) = -2.002 with R² at least 0.9991, are the binding evidence for a Newton-compatible distance law on this same-convention surface.
+
+Auditor's repair target (canonical class + action):
+runner_artifact_issue: re-render the restricted packet with complete unclipped stdout for the test-mass, perturbative mass-law, and finite-L child runs, then re-audit the numerical chain.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.
@@ -5182,7 +5211,7 @@ drive.
 
 Auditor judged that a clean bounded core exists inside a claim whose current scope includes an unclosed extension. To close: split the clean bounded core out as its own retained-grade claim and demote the extension to bounded or open scope.
 
-_76 rows in this category._
+_75 rows in this category._
 
 
 ### `real_diagonal_source_det_positivity_and_log_readout_lemma_note_2026-06-08`
@@ -5325,35 +5354,6 @@ Cauchy–Schwarz gives |Σ_{k≥1}(λ_k/M_T)^n⟨0|A|k⟩⟨k|B|0⟩| ≤ (λ_1/
 
 Auditor's repair target (canonical class + action):
 scope_too_broad: require T to be strictly positive/invertible or define the logarithm and thermal state on the kernel explicitly, and keep the result labeled as a formal transfer-insertion bound unless a physical local-correlator identification is supplied.
-
-Goal: close the chain so a re-audit of this same note can land
-audited_clean at retained-grade. Use the physics-loop skill to iterate.
-Do not over-prescribe approach — explore the framework, let the skill
-drive.
-```
-
-
-### `poisson_self_gravity_loop_v3_note`
-
-**Note:** [docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md](../POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md)  |  **Descendants:** 783  |  **Class:** C
-
-```
-Use the physics-loop skill to close the conditional audit on docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md.
-
-Current audit state:
-- audit_status: audited_conditional
-- claim_type: bounded_theorem
-- load_bearing_step_class: C
-- claim_scope: Restricted finite-harness claim that nine nonzero-coupling rows show small matched-null shifts, miss the stated tolerance after six iterations, and therefore constitute a weak control rather than a self-gravity mechanism.
-
-Auditor's verdict_rationale:
-Issue: the live computation supports the printed finite rows, but N1/N7 leave stronger iteration, lattice-limit, alternative-dynamics, and alternative-observable routes untested, so the strongest steelman is unresolved. Why this blocks: N2 shows that small response and failure to meet tolerance are independent limitations; N3 exposes the kernel, gain, relaxation, cutoff, and readout as load-bearing model choices; N4 supplies no retained one-hop residual witness. N5 lacks per-element, per-site, per-mode, per-block, and lattice-wide live checks for the negative rhetoric, while N6 candidates do not derive the chosen dynamics and N8's similar self-gravity records are contextual rather than proof for this runner. Repair target and claim boundary until fixed: retain only the nine computed shifts and six-step residuals, derive or explicitly condition the model/readout choices, and do not infer general nonconvergence or mechanism exclusion.
-
-Auditor-quoted load-bearing step:
-Small centroid and phase-ramp shifts appear at nonzero coupling, but the matched-null loop does not converge cleanly enough to promote the tested family to a self-gravity mechanism.
-
-Auditor's repair target (canonical class + action):
-scope_too_broad: replace the mechanism and nonconvergence conclusions with a table-only finite-run statement of the nine shifts and six-step residuals, refresh the stale Born figures, and add a dated boundary line in this note disavowing general convergence or mechanism claims.
 
 Goal: close the chain so a re-audit of this same note can land
 audited_clean at retained-grade. Use the physics-loop skill to iterate.

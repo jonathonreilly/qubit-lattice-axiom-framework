@@ -73,7 +73,7 @@ bank of intrinsic threshold-volume lifts:
    eigenvalue of the common-shifted positive comparison window.
 2. The minimum `tau_b,min = min_i tau_b(i) = 0.148036252277635...` is
    unique and belongs to the preferred recovered lift `0`.
-3. It lies strictly inside the previously certified stabilization
+3. It lies strictly inside the supplied stabilization
    window `(tau_star, tau_zero(next))` with strict margins
    `tau_b,min - tau_star = 0.016398674056082 > 0` and
    `tau_zero(next) - tau_b,min = 0.123604890448858 > 0`.
@@ -216,7 +216,7 @@ cycle evaluated.
 ### §3.1 Note-hash caveat (honest reporting)
 
 The current parent note-hash
-(`437c7445df083c750787babacc5186e15bf248b06e3d7ea86bd036a53b4ee9f9`)
+(`db498385817c5ecc34d2ecf5779c1b07c9c48f4a0822e7533428ddd2f0735105`)
 differs from `previous_audits[1].archived_for_note_hash`
 (`27974cf3d96605b26780884d27790446e927cdb5282711864c3e1b895b8cd745`).
 This difference reflects a 2026-05-25 expansion of the parent prose and a
@@ -283,8 +283,9 @@ independent blocks, each checked by an explicit `record(...)` call.
 Every load-bearing arithmetic check is performed against (a) the file
 contents on disk (for hash invariance), (b) the parent runner's
 exit-code and PASS/FAIL count (for substance reproduction), and (c)
-the JSON ledger row at `docs/audit/data/audit_ledger.json` (for
-ledger-state invariants).
+the canonical sharded ledger row at
+`docs/audit/data/ledger/dm/dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21.json`
+(for ledger-state invariants).
 
 The runner is hermetic: it imports only the standard library
 (`hashlib`, `json`, `pathlib`, `re`, `subprocess`, `sys`, `time`).
@@ -318,40 +319,29 @@ Block plan (one check per `record(...)` call):
   algebraic fact #4).
 - Block §H3.7: parent runner stdout reports the PART 4
   open-gate-not-promoted PASS line (load-bearing scope discipline).
-- Block §H4.1: ledger row exists for
+- Block §H4.1: the canonical sharded ledger row exists for
   `dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21`.
 - Block §H4.2: ledger row generated audit status is `unaudited`.
 - Block §H4.3: ledger row generated effective status is `unaudited`.
 - Block §H4.4: ledger row `effective_status_reason` is
   `awaiting_audit`.
 - Block §H4.5: ledger row `previous_audits` is non-empty.
-- Block §H4.6: there exists a prior audit on this row with
-  clean audit status and `invalidation_reason` matching
-  `^criticality_increased:` (the soft-reset target).
-- Block §H4.7: that criticality-bumped prior clean snapshot has its
-  `audit_state_snapshot.criticality` field equal
-  to `leaf` (the pre-bump bucket).
-- Block §H4.8: there exists a prior clean snapshot on
-  this row with `claim_type == "open_gate"` (the audit-decided
-  current claim type).
-- Block §H4.9: that `open_gate` clean snapshot reports
-  cross-confirmation `status == "confirmed"`.
-- Block §H4.10: that `open_gate` clean snapshot has
-  `runner_check_breakdown.total_pass == 11` (matches the live
-  runner re-run from Block §H3.2).
-- Block §H4.11: ledger row `claim_type == "open_gate"`
+- Block §H4.6: there exists a prior clean snapshot with
+  `invalidation_reason` matching `^criticality_increased:` and
+  `audit_state_snapshot.criticality == "leaf"`.
+- Block §H4.7: there exists a prior clean snapshot with
+  `claim_type == "open_gate"`, cross-confirmation
+  `status == "confirmed"`, and
+  `runner_check_breakdown.total_pass == 11`.
+- Block §H4.8: ledger row `claim_type == "open_gate"`
   (current audit-decided type preserved).
-- Block §H4.12: ledger row `runner_path` points at the parent
-  runner.
-- Block §H4.13: ledger row `note_path` points at the parent note.
-- Block §H4.14: ledger row `deps` is non-empty and includes both
+- Block §H4.9: ledger row `runner_path` and `note_path` point at the
+  parent runner and note.
+- Block §H4.10: ledger row `deps` includes both
   declared upstream dependencies
   (`dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization_note_2026-04-18`
   and
   `dm_selector_threshold_stabilization_support_theorem_note_2026-04-21`).
-- Block §H4.15: most-recent prior clean snapshot
-  (the 2026-05-05 cross-confirmed cycle) has the runner hash
-  recorded in §3 (S1) — pins the load-bearing runner identity.
 
 Total: 22 checks across four blocks (2 + 3 + 7 + 10). The exact
 PASS/FAIL count is printed at runtime and recorded in the SHA-pinned
@@ -433,8 +423,7 @@ be examined separately as later independent audit handling reaches it.
   - [`DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md`](DM_NEUTRINO_SOURCE_SURFACE_ATOMIC_WITNESS_VOLUME_SELECTOR_NONREALIZATION_NOTE_2026-04-18.md)
   - [`DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md`](DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md)
 - Archived clean snapshots on the parent row:
-  `docs/audit/data/audit_ledger.json` row
-  `dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21`,
+  `docs/audit/data/ledger/dm/dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21.json`,
   `previous_audits[0]` (bounded-theorem-class clean snapshot, audit
   date 2026-05-02, by
   `claude-opus-4.7-1m:open-gates-2026-05-02-c1-04`, archived

@@ -10,9 +10,10 @@ field evaluated there has unique minimizer lift `0`.
 **Quantifiers/domain:** Every `i` in the five-entry recovered bank and every
 competitor `j > 0` in that same bank.
 
-**Allowed premises:** The recovered-bank triples and exact piecewise
-threshold-volume formula already named by the parent note; the previously
-certified stabilization endpoints; elementary monotonicity of `log(1+x)`.
+**Allowed premises:** The supplied-bank triples and exact piecewise
+threshold-volume formula already named by the parent note; the supplied
+stabilization endpoints; elementary monotonicity of `log(1+x)`. The bank
+identity and endpoint authority remain open upstream dependencies.
 
 **Forbidden weakenings:** Sampling only part of the bank, replacing strict
 inequalities with rounded ties, or assuming lift `0` wins because it is called

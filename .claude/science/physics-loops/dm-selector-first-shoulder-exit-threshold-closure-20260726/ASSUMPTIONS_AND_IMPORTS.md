@@ -7,9 +7,9 @@ foundation content.
 
 | Item | Role in claim | Current class | Source surface | Load-bearing? | Needed for target status? | Retirement path | Disposition |
 |---|---|---|---|---|---|---|---|
-| Five-lift recovered bank and inverse-eigenvalue triples | Finite domain and numerical inputs | computed lattice input | DM atomic witness-volume nonrealization note and runner | yes | yes | upstream independent audit | named dependency |
+| Five-lift recovered bank and inverse-eigenvalue triples | Supplied finite domain and numerical inputs | hard-coded bank with authority inherited from an upstream open support surface | DM atomic witness-volume nonrealization note and runner | yes | yes | independently derive and audit the bank identity | named open dependency |
 | Exact piecewise `V_tau` formula | Converts breakpoint to selector values | support-only on current generated audit surface | same nonrealization note and runner | yes | yes | upstream independent audit | named dependency |
-| `tau_star`, `tau_zero(next)` | Defines stabilization window | support-only on current generated audit surface | threshold-stabilization note and runner | yes | yes | upstream independent audit | named dependency |
+| `tau_star`, `tau_zero(next)` | Defines stabilization window | supplied endpoints from an upstream open support surface | threshold-stabilization note and runner | yes | yes | upstream independent audit | named open dependency |
 | Strict monotonicity of `log(1+x)` for `x>-1` | Transfers ordering of `b_i` to `tau_b(i)` | standard mathematical fact | derivative `1/(1+x)>0` | yes | yes | none needed | discharged in note |
 | Label “preferred lift 0” | Names the bank entry | non-derivation context | selector support module | no | no | not applicable | not used by argmin calculation |
 

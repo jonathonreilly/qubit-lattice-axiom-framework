@@ -23,7 +23,8 @@ Then on the recovered bank:
 
 1. the minimum of `tau_b(i)` is unique;
 2. it belongs to the preferred recovered lift `0`;
-3. it lies inside the previously certified stabilization window;
+3. it lies inside the stabilization window supplied by the linked support
+   note;
 4. evaluating the exact threshold-volume field at this breakpoint already
    makes the preferred recovered lift the unique minimizer.
 
@@ -34,7 +35,7 @@ candidate inside that interval.
 This note does not assert a physical threshold law. Its closed claim is the
 algebraic open-gate statement: on the recovered bank, the first middle-branch
 breakpoint of the exact threshold-volume family is unique, belongs to lift `0`,
-lies in the previously certified stabilization window, and selects lift `0`
+lies in the supplied stabilization window, and selects lift `0`
 when the exact field is evaluated there.
 
 ## Relation to the earlier selector results
@@ -47,7 +48,7 @@ proved:
 
 - the canonical full-family witness-volume field `V_tau(H)` is exact and
   intrinsic;
-- but the current exact bank does not force one unique threshold, since
+- but the supplied five-entry bank does not force one unique threshold, since
   `tau = 0.13` chooses recovered lift `1` and `tau = 0.14` chooses lift `0`.
 
 That reduced the missing datum to an intrinsic threshold law.
@@ -143,7 +144,7 @@ numerically
 0.131637578221552 < 0.148036252277635 < 0.271641142726493.
 ```
 
-So it lies strictly inside the previously certified stabilization window.
+So it lies strictly inside the supplied stabilization window.
 The strict margins are:
 
 ```text
@@ -213,10 +214,12 @@ already named upstream surfaces:
 - the stabilization endpoints `tau_star` and `tau_zero(next)` from
   [`DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md`](DM_SELECTOR_THRESHOLD_STABILIZATION_SUPPORT_THEOREM_NOTE_2026-04-21.md).
 
-No observed threshold, fitted selector, or physical threshold law is used.
-The word “preferred” labels recovered-bank lift `0`; it is not fed to the
-minimization. The runner evaluates all five lifts and then computes the
-minimizer.
+These linked surfaces are explicit upstream hypotheses, not authority supplied
+by this certificate: in particular, this note does not independently derive
+the identity or provenance of the hard-coded five-entry bank. No new observed
+threshold, fitted selector, or physical threshold law is introduced. The word
+“preferred” labels supplied-bank lift `0`; it is not fed to the minimization.
+The runner evaluates all five entries and then computes the minimizer.
 
 First, for every bank entry `b_i > -1`,
 
@@ -236,7 +239,7 @@ i     b_i-b_0             tau_b(i)-tau_b(0)
 ```
 
 Every entry is strictly positive, so the minimum is unique and occurs at lift
-`0`. Second, direct subtraction from the imported stabilization endpoints
+`0`. Second, direct subtraction from the supplied stabilization endpoints
 gives
 
 ```text
@@ -263,12 +266,13 @@ The first two positive columns prove `g_j < c < b_j`, so the middle piece of
 V_tau_b,min(H_0) < V_tau_b,min(H_j)  for every j > 0.
 ```
 
-Therefore the earliest middle-branch breakpoint is uniquely lift `0`, lies in
-the stabilization window, and makes lift `0` the unique minimizer. The
-smallest strict margins in the three load-bearing comparisons are respectively
+Therefore, conditional on the named bank, piecewise field, and window
+endpoints, the earliest middle-branch breakpoint is uniquely lift `0`, lies in
+the stabilization window, and makes lift `0` the unique minimizer. The smallest
+strict margins in the three load-bearing comparisons are respectively
 `0.012498478202817`, `0.016398674056082`, and `0.146091270049196`; the paired
-runner recomputes them from the recovered-bank inputs rather than reading the
-displayed decimals.
+runner recomputes them from the supplied bank rather than reading the displayed
+decimals.
 
 ## Consequence
 

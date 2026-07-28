@@ -27,5 +27,19 @@
   this repair.
 
 Final local disposition: `pass` for independent audit at `claim_type=open_gate`.
-Review was performed locally because the active policy did not authorize
-subagent fanout.
+The combined reviewer pass covered every applicable lens in this isolated PR
+worker; no intra-PR fanout was used under the shared-pool budget.
+
+## 2026-07-28 review-loop confirmation
+
+- Fixed the companion runner's dependency on the ignored materialized ledger
+  by reading and identity-checking the canonical target shard directly.
+- Fixed the unreachable companion section headings and reconciled the note's
+  H4 checklist with the ten implemented checks.
+- Reproduced the repaired companion from a clean source surface at
+  `22 PASS / 0 FAIL`, then regenerated a cache pinned to the repaired runner.
+- Reclassified the hard-coded bank and stabilization endpoints as supplied
+  inputs from named open upstream rows. The proof obligation is `CONDITIONAL`
+  on those inputs; the physical selector remains `OPEN`.
+- Replaced stale PR-lifecycle wording with review-loop-owned integration
+  language. No audit verdict or generated authority surface was added.

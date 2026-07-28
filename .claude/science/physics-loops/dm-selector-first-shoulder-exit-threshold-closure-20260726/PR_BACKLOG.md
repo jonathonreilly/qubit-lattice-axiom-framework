@@ -1,5 +1,5 @@
 # PR backlog
 
-No PR was opened. The user authorized local source repair, not an external push
-or pull-request action. The current task branch contains the complete scoped
-change for later repository-native integration.
+The source repair entered the existing science-fix integration path. The
+physics loop does not grant its own landing authority: review-loop owns the
+source review, direct landing, close, and independent-audit handoff.

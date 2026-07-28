@@ -38,7 +38,7 @@ Block plan (one check per `record(...)` call):
   Block H1 (parent-note presence + canonical hash, 2 checks):
     H1.1 parent note exists at canonical path
     H1.2 parent note content sha256 equals the current canonical hash
-         `437c7445df083c750787babacc5186e15bf248b06e3d7ea86bd036a53b4ee9f9`
+         `db498385817c5ecc34d2ecf5779c1b07c9c48f4a0822e7533428ddd2f0735105`
          (acknowledges the 2026-05-25 prose-side expansion and the
          2026-07-26 derivation-certificate repair; see companion §3.1)
 
@@ -66,7 +66,7 @@ Block plan (one check per `record(...)` call):
          open-gate-not-promoted PASS line
 
   Block H4 (ledger-state criticality-bump invariants, 10 checks):
-    H4.1 ledger row exists for the parent claim_id
+    H4.1 canonical sharded ledger row exists for the parent claim_id
     H4.2 ledger row generated audit status is `unaudited`
     H4.3 ledger row generated effective status is `unaudited`
     H4.4 ledger row `effective_status_reason` is `awaiting_audit`
@@ -134,12 +134,14 @@ PARENT_NOTE_REL = (
 PARENT_RUNNER_REL = (
     "scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py"
 )
-LEDGER_REL = "docs/audit/data/audit_ledger.json"
 ROW_ID = "dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21"
+LEDGER_REL = (
+    f"docs/audit/data/ledger/{ROW_ID[:2]}/{ROW_ID}.json"
+)
 CLEAN_STATUS = "audited_" + "clean"
 
 EXPECTED_NOTE_SHA256 = (
-    "437c7445df083c750787babacc5186e15bf248b06e3d7ea86bd036a53b4ee9f9"
+    "db498385817c5ecc34d2ecf5779c1b07c9c48f4a0822e7533428ddd2f0735105"
 )
 EXPECTED_RUNNER_SHA256 = (
     "08c7ae1063e4b211cf34086b6c94614358c4dd7ce9b5b0e4bc0155b474f18b86"
@@ -201,12 +203,6 @@ def record(check_name: str, ok: bool, detail: str = "") -> None:
 def header(title: str) -> None:
     log("")
     log("=" * 72)
-
-
-def audit_status_detail(status: str | None) -> str:
-    if status == CLEAN_STATUS:
-        return "clean-status"
-    return status or "<missing>"
     log(title)
     log("=" * 72)
 
@@ -371,14 +367,10 @@ def _load_ledger_row() -> dict | None:
     if not ledger_path.is_file():
         return None
     try:
-        ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+        row = json.loads(ledger_path.read_text(encoding="utf-8"))
     except Exception:  # noqa: BLE001
         return None
-    rows = ledger.get("rows")
-    if not isinstance(rows, dict):
-        return None
-    row = rows.get(ROW_ID)
-    if not isinstance(row, dict):
+    if not isinstance(row, dict) or row.get("claim_id") != ROW_ID:
         return None
     return row
 
@@ -391,9 +383,9 @@ def block_h4() -> None:
     row = _load_ledger_row()
 
     record(
-        f"H4.1 ledger row exists for `{ROW_ID}`",
+        f"H4.1 canonical sharded ledger row exists for `{ROW_ID}`",
         row is not None,
-        f"ledger={LEDGER_REL}",
+        f"ledger shard={LEDGER_REL}",
     )
 
     if row is None:
@@ -560,7 +552,7 @@ def main() -> int:
     log(f"Parent ledger row: {ROW_ID}")
     log(f"Parent note path : {PARENT_NOTE_REL}")
     log(f"Parent runner    : {PARENT_RUNNER_REL}")
-    log(f"Ledger snapshot  : {LEDGER_REL}")
+    log(f"Ledger shard     : {LEDGER_REL}")
     log("Repo root        : <repo-root>")
     log("")
     log("NOTE: This companion does NOT assert the open gate has closed.")

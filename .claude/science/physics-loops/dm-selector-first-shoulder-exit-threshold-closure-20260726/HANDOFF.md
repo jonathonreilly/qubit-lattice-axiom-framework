@@ -27,7 +27,9 @@ failure was introduced by this block.
 - recovered-bank and threshold-volume upstream surface;
 - stabilization-window upstream surface.
 
-No new axiom, primitive, observation, fit, or literature input was introduced.
+No new axiom, primitive, observed threshold, fitted selector, or literature
+input was introduced. The hard-coded bank and stabilization endpoints remain
+explicit open upstream dependencies rather than being upgraded by this block.
 
 ## Exact remaining action
 

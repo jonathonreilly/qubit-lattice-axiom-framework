@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_dm_selector_first_shoulder_exit_threshold_support_criticality_hygiene_2026_06_04.py
-runner_sha256: 795d29396a2801cc0cc953bf21c978939c9ae63487937e1fb47535a0059408a3
+runner_sha256: f34e380df3324505ded37c88a5b4deff36537a2bd3f8b7678bd1598707a94bc7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.01
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 ========================================================================
@@ -14,7 +14,7 @@ Companion source note:
 Parent ledger row: dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21
 Parent note path : docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md
 Parent runner    : scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py
-Ledger snapshot  : docs/audit/data/audit_ledger.json
+Ledger shard     : docs/audit/data/ledger/dm/dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21.json
 Repo root        : <repo-root>
 
 NOTE: This companion does NOT assert the open gate has closed.
@@ -23,14 +23,20 @@ The parent's explicit disavowal of tau_phys = tau_b,min is preserved.
 
 
 ========================================================================
+Block H1: parent-note presence + canonical hash
+========================================================================
   PASS H1.1 parent note exists at canonical path :: path=docs/DM_SELECTOR_FIRST_SHOULDER_EXIT_THRESHOLD_SUPPORT_NOTE_2026-04-21.md
-  PASS H1.2 parent note content sha256 matches current canonical hash :: observed=437c7445df083c750787babacc5186e15bf248b06e3d7ea86bd036a53b4ee9f9, expected=437c7445df083c750787babacc5186e15bf248b06e3d7ea86bd036a53b4ee9f9
+  PASS H1.2 parent note content sha256 matches current canonical hash :: observed=db498385817c5ecc34d2ecf5779c1b07c9c48f4a0822e7533428ddd2f0735105, expected=db498385817c5ecc34d2ecf5779c1b07c9c48f4a0822e7533428ddd2f0735105
 
+========================================================================
+Block H2: parent-runner hygiene (presence + previous_audits[1] runner-hash invariance + importability)
 ========================================================================
   PASS H2.1 parent runner exists at canonical path :: path=scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py
   PASS H2.2 parent runner content sha256 matches previous_audits[1].audit_state_snapshot.runner_hash :: observed=08c7ae1063e4b211cf34086b6c94614358c4dd7ce9b5b0e4bc0155b474f18b86, expected=08c7ae1063e4b211cf34086b6c94614358c4dd7ce9b5b0e4bc0155b474f18b86
   PASS H2.3 parent runner is compile-only importable :: py_compile.compile succeeded
 
+========================================================================
+Block H3: parent-runner substance reproduction (exit code + SUMMARY + load-bearing PART 1-4 PASS lines)
 ========================================================================
   exec: <python> scripts/frontier_dm_selector_first_shoulder_exit_threshold_support_2026_04_21.py
   PASS H3.1 parent runner exits with status 0 :: returncode=0; stderr_tail=''
@@ -42,7 +48,9 @@ The parent's explicit disavowal of tau_phys = tau_b,min is preserved.
   PASS H3.7 parent runner stdout reports PASS line: PART 4 open-gate-not-promoted :: fragment='This theorem narrows the positive selector burden further without promoting closure'
 
 ========================================================================
-  PASS H4.1 ledger row exists for `dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21` :: ledger=docs/audit/data/audit_ledger.json
+Block H4: ledger-state criticality-bump invariants (post-soft-reset shape; open_gate scope preserved)
+========================================================================
+  PASS H4.1 canonical sharded ledger row exists for `dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21` :: ledger shard=docs/audit/data/ledger/dm/dm_selector_first_shoulder_exit_threshold_support_note_2026-04-21.json
   PASS H4.2 ledger row generated audit status is `unaudited` :: observed='unaudited'
   PASS H4.3 ledger row generated effective status is `unaudited` :: observed='unaudited'
   PASS H4.4 ledger row effective_status_reason is `awaiting_audit` :: observed='awaiting_audit'
@@ -54,7 +62,8 @@ The parent's explicit disavowal of tau_phys = tau_b,min is preserved.
   PASS H4.10 ledger row deps includes both declared upstream rows (nonrealization and stabilization) :: observed deps=['dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization_note_2026-04-18', 'dm_selector_threshold_stabilization_support_theorem_note_2026-04-21']; expected to include all of ['dm_neutrino_source_surface_atomic_witness_volume_selector_nonrealization_note_2026-04-18', 'dm_selector_threshold_stabilization_support_theorem_note_2026-04-21']
 
 ------------------------------------------------------------------------
-FINAL TALLY: 22 PASS / 0 FAIL  (elapsed 1.01 s)
+FINAL TALLY: 22 PASS / 0 FAIL  (elapsed 0.31 s)
 ------------------------------------------------------------------------
 
 ----- stderr -----
+

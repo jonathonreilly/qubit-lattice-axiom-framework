@@ -17,10 +17,12 @@ bare_retained_allowed: false
 
 ## Dependency classes
 
-- Recovered-bank inputs and `V_tau`: named upstream computed/support surface.
-- Stabilization endpoints: named upstream support surface.
+- Recovered-bank inputs and `V_tau`: named upstream open support surface; the
+  hard-coded bank identity is not derived or upgraded here.
+- Stabilization endpoints: named upstream open support surface.
 - Monotonicity of `log1p`: discharged elementary mathematics.
-- Observed or fitted target values: none.
+- New observed threshold or fitted selector values: none. The supplied bank's
+  existing provenance is inherited as an open dependency.
 
 ## Candidate-proof audit
 

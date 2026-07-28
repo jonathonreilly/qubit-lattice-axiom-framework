@@ -25,11 +25,10 @@ open_imports:
 no_go_routes: []
 trace_gate_classification: direct_blocker_closure
 review_findings: pass
-pr_status: not_requested
-lock_mode: branch-local supervisor lock (released)
+pr_status: review_loop_integration_owned
+lock_mode: isolated review worker (released)
 lock_note: >-
-  Global automation lock was unavailable because its guard path is outside
-  this worktree's permitted filesystem surface.
+  No repository-wide automation lock was held by this isolated source repair.
 next_exact_action: Submit the open-gate source note to independent re-audit.
 stop_condition: Scoped algebraic closure verified and locally reviewed.
 actual_current_surface_status: exact-support

@@ -1,6 +1,6 @@
 {
- "edge_count": 15181,
- "node_count": 4562,
+ "edge_count": 15193,
+ "node_count": 4563,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10333,6 +10333,10 @@
   "physical_m2_spatial_ack_cycle612_interval_bridge_cycle718_bounded_theorem_note_2026-07-26": {
    "deps_hash": "98dd6f304988",
    "out_degree": 8
+  },
+  "physical_operational_source_response_readout_chain_cycle700_note_2026-07-25": {
+   "deps_hash": "7dc7df7e6543",
+   "out_degree": 12
   },
   "physical_pair_kernel_minimal_position_extension_cycle698_note_2026-07-25": {
    "deps_hash": "32ac84e8f2ad",

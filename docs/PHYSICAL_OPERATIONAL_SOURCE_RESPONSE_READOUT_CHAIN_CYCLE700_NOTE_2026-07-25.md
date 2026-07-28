@@ -2,7 +2,7 @@
 
 Date: 2026-07-25
 
-Claim type: bounded_theorem plus executed-harness rows
+Claim type: bounded_theorem
 
 Authority: none. Audit: unset. Constitutional effect: none. This cycle edits no axiom, foundation, Qualification, primitive, registry, policy, queue, audit-status, or PR-control surface. No new axiom or primitive is proposed or adopted.
 
@@ -117,8 +117,8 @@ and deletion changes the lift total to `0`.
 | full DEC edge carrier | 24 of 24, `E0_full = 572` | dropping the z-axis edges cuts it to 8 of 24 |
 | depleted DEC edge carrier | 8 of 24, `E0_dep = 384` | the surviving 8 are exactly the z-axis stabilizer |
 | DEC reference pairing | value `E_REF = 42` | none: no invariance is claimed, see the withdrawal above |
-| five-tetrahedron complex | stabilizer 12, energy-equality set 12, coincident | exact score `1057`; the Kuhn complex separates at 6 |
-| Kuhn complex | stabilizer 6, energy-equality set 6, coincident | exact score `3703/3`; the five-tetrahedron complex separates at 12 |
+| five-tetrahedron complex with the supplied vertex field | stabilizer 12, energy-equality set 12, coincident for this field | exact score `1057`; the Kuhn complex separates at 6 |
+| Kuhn complex with the supplied vertex field | stabilizer 6, energy-equality set 6, coincident for this field | exact score `3703/3`; the five-tetrahedron complex separates at 12 |
 | signed five-tetrahedron edge directions | 24 of 24 | triangulation count remains 12 |
 | scalar six-neighbour carrier | 24 of 24 | anisotropic spread `0.05650461860052066` |
 
@@ -137,7 +137,7 @@ This converts the Cycle-696 receipt's bare
 `achievable_covariance_scope = 6` into a named obstruction and cross-checks the
 receipt's `"kuhn_cube_stabilizer_order": 6`.
 
-> For the standard Kuhn complex, a report of 6 of 24 is its exact full-complex stabilizer, not a numerical shortfall from 24.
+> For the standard Kuhn complex, a report of 6 of 24 is its exact full-complex stabilizer, not a numerical shortfall from 24. The equality of the energy-score set to that stabilizer is established only for the supplied field `u(v) = (4 v0 + 2 v1 + v2)^2`; it is not field-independent.
 
 > This theorem does not quantify over larger cells, tetrahedra spanning multiple unit cubes, non-unit-periodic global triangulations, or enriched vertex sets.
 
@@ -158,6 +158,12 @@ here and carry no covariance claim of their own.
 The cited resource is the
 [Cycle-572 bounded theorem](FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md).
 
+The imported Cycle-696 compiler is load-bearing executable support for the
+response and lawful-domain rows. Its paired note is under the audit-excluded
+`docs/work_history/` surface, so this cycle does not treat Cycle 696 as
+retained-grade authority; independent audit and dependency closure remain
+pending.
+
 ## Route C — the executed experiment
 
 ### Ladder and zero-refit prediction
@@ -173,13 +179,15 @@ split quadrature gives `-3.9132331854898643`.
 
 > The prediction has zero fitted parameters: the integer charges are read from the executed source, the Green function is evaluated from the Bessel representation, and the readout ratio is dimensionless, so the supplied source scale cancels and is therefore not tested by this row.
 
-The Green evaluator also produces `K4_axis = 2/5`, derives the in-run
-coefficient `1/(16*pi)`, and gives the axis sequence
+The Green evaluator also produces `K4_axis = 2/5`, evaluates the supplied
+coefficient `(5/(32*pi)) K4_axis = 1/(16*pi)` from the
+[leading lattice-correction note](GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md),
+and gives the axis sequence
 `[0.021985800935773472, 0.020922081579336727, 0.02031327472048794, 0.02012429974455543]`,
-whose Richardson gate passes. The `r^5` anisotropy result and the heat-kernel
-`1/(4*pi*r)` result are unaudited on main at `bb25b48d32`;
-the Maradudin import note is `audited_conditional`; the lattice-Green
-certificate runner has no ledger row.
+whose Richardson gate passes. The `1/r^3` cubic-anisotropy coefficient and the
+heat-kernel `1/(4*pi*r)` result have not been independently audited at review
+time; the Maradudin import note is linked as their normalization source; the
+lattice-Green certificate runner has no ledger row.
 
 ### SUPPLIED CONTROL FIXTURE — neutral dipole
 
@@ -207,9 +215,10 @@ At `L = 19`, the range-mutated readout is `-4.0411929130059585`, the static
 nearest-neighbour readout is `-3.9169789686578382`, and their separation is
 `0.12421394434812028`. Using the executed split prediction gives a residual
 `0.003745783167973915` and separation ratio `33.161007665936864`; the
-order-of-magnitude falsifier passes. That residual is the re-derived value
+registered finite-range mutation discriminator passes. That residual is the re-derived value
 described in the header, not the superseded probe pin `0.003527`, and the
-falsifier passes against either.
+discriminator passes against either. This is a comparison between two supplied
+model laws, not an empirical falsification of the nearest-neighbour law.
 
 ## The Cycle-696 row, unrepaired, and the lawful domain
 
@@ -233,24 +242,26 @@ Along the lawful ray, the landed open action functional has
 The quadratic/linear relative gap is `6.7335860338863246e-15`. The derivative's
 cubic-remainder halving ratios are
 `[4.108829315471547, 4.043199039322248, 4.0192785181748585]`, while its minimum
-on the registered window is `0.5497026561038232`. Thus no lawful stationary
-point exists on that ray: structurally, `u Q u < 0` while `F' > 0`.
+over the ten registered sample points is `0.5497026561038232`. Thus `F' > 0`
+at every sampled point. This finite scan does not exclude a stationary point
+between samples; continuous stationary-point exclusion on the lawful interval
+remains open.
 
 ## Evidence-ceiling tally
 
 | campaign contract item | status | runner pointer |
 |---|---|---|
-| operational relational output | SATISFIED | A1–A8; the A9 draw pins are re-derived at review, its ratio rows are untouched |
+| operational relational output | SATISFIED | A1–A8; the A9 draw pins are re-derived from the recorded recipe, its ratio rows are untouched |
 | explicit source action with distinct source identity | SATISFIED | B1–B3 |
 | real-space all-24 carrier | PARTIAL (two-carrier split) | B5–B6: prediction carrier all-24; coframe carrier exactly D3; the energy scalars are re-pinned to a stated convention and one reference row is withdrawn |
 | no-clip lawful domain with a mapped boundary | SATISFIED | C5–C7 |
 | exact reversibility with conservation, deletion, sign, scale, and range mutations | PARTIAL | C4–C4b; no Stinespring or unitary dilation of the open-system readout channel is constructed |
 | held-size separation and scaling window | SATISFIED | C1–C4 |
 | existing prediction surface without refit | SATISFIED | C1–C3 |
-| explicit falsifier for the law choice | SATISFIED | C4b; the falsifier passes against both the re-derived residual and the superseded probe pin |
+| finite-range mutation discriminator | SATISFIED | C4b; the supplied mutation separates from the nearest-neighbour prediction by more than ten times either registered residual |
 | supplied / derived / open inventories | SATISFIED | inventories below |
 
-This harness removes the named absence rows; the remaining law-level gaps are listed below.
+This harness executes the bounded rows above; the remaining law-level gaps are listed below.
 
 ## Supplied / derived / open inventories
 
@@ -262,9 +273,24 @@ SUPPLIED:
 - the source `Z`-lift convention;
 - the source scale `SRC_SCALE` (untested by the ratio rows);
 - the coupling sign convention;
-- the DEC Dirichlet boundary convention;
+- the DEC periodic axis-edge counting and z-edge depletion convention;
+- the lexicographic detector-record sites and ranks `(1, 2, 3, 4)`;
 - the piecewise-linear interpolation mean rule;
-- the Cycle-696 response normalization `RESPONSE_AMPLITUDE`.
+- the nonlinear vertex field `u(v) = (4 v0 + 2 v1 + v2)^2`;
+- the neutral-dipole control and scalar detector sites;
+- the dynamics protocol `Q_COUPLING = 0.7`, `DT = 0.01`, ramp ladder
+  `(20, 40, 80, 160)`, hold time `10`, and box-size ladder `(9, 13, 19)`;
+- the anisotropic-control weight `1.7` and face-mutation weight `0.1`;
+- the registered tolerance and acceptance bands, geometry-amplitude ladders,
+  ray grid, and finite-difference steps;
+- the Cycle-696 response normalization `RESPONSE_AMPLITUDE`;
+- the unaudited asymptotic coefficient `(5/(32*pi)) K4` used by the axis
+  reproduction row.
+
+`SRC_SCALE` and `Q_COUPLING` are insensitive nuisance scales for the
+dimensionless linear-response ratios. The remaining numerical fixtures are
+load-bearing for the registered harness rows and controls; none is promoted to
+a framework-derived value by this execution.
 
 DERIVED / EXECUTED:
 
@@ -272,31 +298,35 @@ DERIVED / EXECUTED:
 - the 24 and 576 covariance counts;
 - the identification of the six-frame scope as the body-diagonal stabilizer D3;
 - the mod-17 telescope;
-- the stencil and asymptotic Green identities, including the in-run derivation of the axis coefficient `1/(16*pi)`;
+- the stencil identities and the in-run reproduction of the supplied axis coefficient `1/(16*pi)`;
 - the no-refit ratio agreement;
 - the adiabatic order;
 - exact reversal;
 - the boundary values `s_pd` and `s_len`;
-- the measured cubic-remainder scaling of the landed open action and the absence of a lawful stationary point on the ray.
+- the measured cubic-remainder scaling of the landed open action and positive derivatives at all ten registered ray samples.
 
 OPEN:
 
 - derivation of any kernel constant or its sign;
 - derivation of the detector association and the reference pair;
 - the response normalization law, including the Cycle-696 row's supplied sign and scale;
+- audit-visible ratification of the load-bearing Cycle-696 compiler support;
 - a dynamical law for record formation that drives the source;
 - the bridge from the Regge second-variation carrier to the DEC carrier: two carriers, one source, no identification claimed;
+- continuous exclusion of a stationary point between the registered derivative samples;
 - an independent covariance test for the source-reference pairing. The row that
   previously stood there was an identity in disguise and is withdrawn above, so
   the pairing's frame behaviour is currently untested rather than confirmed.
 
-## The single next falsifying experiment
+## The single next discriminating experiment
 
 Generalize the range-mutation row: replace the supplied nearest-neighbour law
 with any competing finite-range law and compare the double-relational ratio
 against the Bessel-Green prediction. The executed separation is
 `0.12421394434812028`; a competing law that matched every ratio row at every
-box size would falsify the nearest-neighbour law choice.
+box size would show that this ratio suite does not identify the
+nearest-neighbour law. Empirical law falsification would additionally require
+an observed target and an uncertainty model, neither of which is supplied here.
 
 ## Citations
 
@@ -309,6 +339,7 @@ box size would falsify the nearest-neighbour law choice.
 - [Cycle 699 content pair-kernel census](PHYSICAL_CONTENT_PAIR_KERNEL_CHANNEL_CENSUS_CYCLE699_NOTE_2026-07-25.md)
 - [Cycle 572 finite-source insertion algebra](FINITE_SOURCE_INSERTION_ALGEBRA_CARRIER_LABEL_SUPPORT_CYCLE572_BOUNDED_THEOREM_NOTE_2026-07-22.md)
 - [Cycle 576 finite Regge diagnostics](FINITE_REGGE_PLAQUETTE_SCATTERING_DIAGNOSTICS_CYCLE576_BOUNDED_THEOREM_NOTE_2026-07-22.md)
+- [Leading lattice-correction cubic anisotropy](GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md)
 - [Maradudin lattice-Green import](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
 - [Cycle 681 executed field-update response](work_history/repo/review_feedback/PHYSICAL_SAME_COUPLING_EXECUTED_FIELD_UPDATE_RESPONSE_TOURNAMENT_NOTE_2026-07-23.md)
 

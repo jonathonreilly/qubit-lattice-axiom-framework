@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Cycle 700: executed source -> response -> relational-readout chain.
 
-The harness is deliberately import-safe.  It imports the landed sibling runners,
-executes their machinery, and emits its bounded transcript only from ``main``.
+The harness is deliberately import-safe. It imports the landed sibling runners,
+executes their machinery, and emits a bounded transcript when invoked.
 """
 
 from __future__ import annotations
@@ -44,6 +44,10 @@ HOLD_T = 10.0
 L_DYN = 9
 L_STATIC_LADDER = (9, 13, 19)
 GEO_AMP_LADDER = (0.10, 0.05, 0.025, 0.0125, 0.00625, 0.003125)
+ANISOTROPIC_AXIS_WEIGHT = 1.7
+FACE_MUTATION_WEIGHT = 0.1
+RECORD_RANK_SITES = ((0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 1, 1))
+VERTEX_FIELD_WEIGHTS = (4, 2, 1)
 
 CGRID = ((1, 1), (3, -2), (7, 5), (-4, 3), (1000003, 999999))
 S1 = {(0, 0, 0), (1, 0, 0), (0, 1, 0)}
@@ -286,8 +290,7 @@ def edge_energy(field, axes=(0, 1, 2)):
 def carrier_probe_from_records(integer_source):
     """Add lexicographic detector-record ranks to the executed integer source."""
     field = np.asarray(integer_source, dtype=np.int64).reshape((3, 3, 3)).copy()
-    records = ((0, 0, 0), (0, 0, 1), (0, 1, 1), (1, 1, 1))
-    for rank, site in enumerate(records, 1):
+    for rank, site in enumerate(RECORD_RANK_SITES, 1):
         field[site] += rank
     return field
 
@@ -326,7 +329,10 @@ def complex_energy_rows(c690, c695):
         return [aug[i][3] for i in range(3)]
 
     def value(v):
-        label = 4 * Fraction(v[0]) + 2 * Fraction(v[1]) + Fraction(v[2])
+        label = sum(
+            Fraction(weight) * Fraction(coordinate)
+            for weight, coordinate in zip(VERTEX_FIELD_WEIGHTS, v)
+        )
         return label * label
 
     def fem_score(complex_):
@@ -757,8 +763,8 @@ def main() -> int:
     # on the vertex field u(v) = (4*v0 + 2*v1 + v2)**2, so the exact scores are
     # this cycle's own constants and supersede the probe values 473/3 and
     # 542/3. The discriminating content is the coincidence of the
-    # energy-equality set with the triangulation stabilizer, which is a
-    # property of the complex and not of the field choice.
+    # energy-equality set with the triangulation stabilizer for this supplied
+    # vertex field. A different field can have a larger equality set.
     check("b5_fivetet_energy_stab",
           len(five_stab) == 12 and five_eq == list(five_stab),
           f"stab {len(five_stab)}; eq {len(five_eq)}; coincide "
@@ -797,7 +803,9 @@ def main() -> int:
           R_scalar)
     check("b5_scalar_all24", scalar_inv < 1e-12, scalar_inv)
 
-    lap_z, _ = build_laplacian(9, weights=(1.0, 1.0, 1.7))
+    lap_z, _ = build_laplacian(
+        9, weights=(1.0, 1.0, ANISOTROPIC_AXIS_WEIGHT)
+    )
     phi_z = splu(lap_z).solve(q9)
     z_values = [
         detector_ratio(phi_z, 9, tuple(rotate_site(x, f, 9) for x in scalar_sites))
@@ -934,7 +942,7 @@ def main() -> int:
     check("c3_delta_mutation_rejector", mutated_delta >= STENCIL_TOL, mutated_delta)
     k4_axis = sum(Fraction(x) ** 4 for x in (1, 0, 0)) - Fraction(3, 5)
     axis_coeff = float(Fraction(5, 32) * k4_axis) / math.pi
-    check("c3_axis_coeff_derived",
+    check("c3_axis_coeff_reproduced",
           k4_axis == Fraction(2, 5)
           and abs(axis_coeff - 1.0 / (16.0 * math.pi)) < 1e-15,
           (k4_axis, axis_coeff))
@@ -996,7 +1004,7 @@ def main() -> int:
     emit(f"REPORT c4_scale_identity={scale_identity:.3e}")
 
     lap19, face19 = build_laplacian(19, face_mutation=True)
-    mut19 = lap19 + 0.1 * face19
+    mut19 = lap19 + FACE_MUTATION_WEIGHT * face19
     q19 = frozen_source(19, c696.SRC_SCALE)
     R_static19 = detector_ratio(splu(lap19).solve(q19), 19)
     R_mut = detector_ratio(splu(csc_matrix(mut19)).solve(q19), 19)
@@ -1014,7 +1022,7 @@ def main() -> int:
     # srca_relerr[-1] * |R_pred| = 0.0037457832 to 8.3e-11.
     check("c4b_static_residual_pin", abs(staticerr - 0.0037457832) < 1e-6,
           (staticerr, 0.0037457832))
-    check("c4b_range_falsifier", range_sep > 10.0 * staticerr, range_ratio)
+    check("c4b_range_discriminator", range_sep > 10.0 * staticerr, range_ratio)
 
     eps3 = res3["eps"]
     mc3 = c696.metric_and_coframe(
@@ -1214,7 +1222,7 @@ def main() -> int:
                        0.25, 0.50, 0.75, 1.0, 1.10)
     Fprime_grid = [Fprime(a * t_lin) for a in ray_multipliers]
     Fprime_min = min(Fprime_grid)
-    check("c7_no_stationary_on_ray", Fprime_min > 0, Fprime_grid)
+    check("c7_sampled_derivative_positive", Fprime_min > 0, Fprime_grid)
     ray_lengths = [
         c696.min_perturbed_length(3, a * t_lin * u, model3["index"])
         for a in ray_multipliers
@@ -1262,7 +1270,7 @@ def main() -> int:
             "s_pd": s_pd, "s_len": s_len_exact, "s_star": s_star,
             "s_big_mpl": s_big_mpl, "t_lin": t_lin,
             "t_quad": t_quad, "uQu": uQu, "ubs": ubs,
-            "D_ratios": D_ratios, "Fprime_min": Fprime_min,
+            "D_ratios": D_ratios, "Fprime_sample_min": Fprime_min,
             "pd_first_failures": first_pd_failures,
             "quad_rel_gap": quad_rel_gap,
         },

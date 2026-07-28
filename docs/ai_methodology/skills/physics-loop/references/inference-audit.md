@@ -58,6 +58,9 @@ restatement of one in an Answer/Summary/discussion section.
   `<br>` and begin **each entry** with its own tag. The tag is the load-bearing
   part: it is the distinction whose absence caused the first cycle run under
   this audit to pass the audit and still be rejected.
+  Identify the exact theorem, including composite names such as
+  Kato–Rellich or Rellich–Kondrachov. A bare surname is ambiguous and is routed
+  to manual identification rather than assigned a guessed hypothesis list.
   Not the conclusion. The linter's keyword check catches outright omission but
   **cannot** distinguish a hypothesis from a conclusion; this column is the only
   thing that does. A cited theorem whose hypotheses you cannot state is a
@@ -69,8 +72,10 @@ restatement of one in an Answer/Summary/discussion section.
   the `shown:` clause must itself record necessity-strength evidence: a checked
   converse or equivalence, uniqueness, impossibility, or an exact negative
   existence result. Repeating the necessity word only in `claimed:` does not
-  pass `DIRECTION`; the reviewer still checks whether the recorded evidence is
-  true.
+  pass `DIRECTION`, nor does writing that a converse *could not* be established.
+  Separate the clauses with `; claimed:` (or `<br>claimed:`); a comma does not
+  establish an evidence boundary. The reviewer still checks whether the
+  recorded evidence is true.
 - **Falsifier** — a concrete state of the world that would make the claim
   false. If you cannot name one, the claim is true by construction and is not a
   result.
@@ -79,10 +84,10 @@ restatement of one in an Answer/Summary/discussion section.
 
 | check | catches | limitation |
 |---|---|---|
-| `SLICE` | a check row iterating a narrowed domain (`for g in hill[:1]`), leaving the dropped elements untested | iteration position only; a display truncation is ignored |
-| `CLONE` | two functions with identical bodies modulo names, then "verified" to agree | exact structural clones only |
-| `DIRECTION` | a necessity word in a claim whose matching ledger row has no necessity-strength `shown:` clause | claim positions only — title, `**Theorem`, Answer/Summary/discussion sections; the check verifies an explicit evidence record, while the reviewer judges whether that record is true |
-| `HYPOTHESIS` | a named external theorem invoked with its hypotheses absent nearby | keyword proximity; **does not** catch hypothesis/conclusion confusion |
+| `SLICE` | a check row iterating a narrowed domain (`for g in hill[:1]`, `values[::2]`), leaving dropped elements untested | iteration position only; display truncation, unit-stride copies, pure reversal, and verified adjacent-pair idioms are ignored |
+| `CLONE` | two functions with identical bodies modulo local names, then "verified" to agree | exact structural clones only; free names and outer-evaluated defaults, decorators, and annotations retain their semantics |
+| `DIRECTION` | a necessity word in a claim whose modality-matched ledger row has no affirmative necessity-strength `shown:` clause | claim positions only — title, `**Theorem`, Answer/Summary/discussion sections; the check enforces separate clauses and modality-preserving claim binding, while the reviewer judges whether the evidence is true |
+| `HYPOTHESIS` | an explicitly identified external theorem invoked with its own hypotheses absent nearby, or an ambiguous bare surname | exact composite identities before shorter names; keyword proximity still **does not** catch hypothesis/conclusion confusion |
 | `LEDGER` | a missing ledger, or any empty cell | presence and completeness, not honesty |
 | `TAG` | a hypothesis not marked `[supplied]` or `[satisfied]` | cannot tell whether your tag is honest |
 | `HEADLINE` | the `**thesis**` row has a `[supplied]` hypothesis while the **title** carries no qualifier | title only; supplied hypotheses on separate secondary claims do not demote an independently closed thesis |

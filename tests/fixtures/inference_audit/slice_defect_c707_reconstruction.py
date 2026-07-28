@@ -27,3 +27,13 @@ def zipped_slice_control():
     truncated_ok = all(a <= b for a, b in zip(xs, xs[:1]))
     adjacent_ok = all(a <= b for a, b in zip(xs, xs[1:]))
     check("zip truncation versus adjacent pairs", truncated_ok and adjacent_ok)
+
+
+def stepped_slice_control():
+    values = [0, 1, 2, 3, 4, 5]
+    even_positions_ok = all(value >= 0 for value in values[::2])
+    reversed_full_domain_ok = all(value >= 0 for value in values[::-1])
+    check(
+        "stepped narrowing versus full-domain reversal",
+        even_positions_ok and reversed_full_domain_ok,
+    )

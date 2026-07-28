@@ -6,9 +6,11 @@
     "only": "CLONE",
     "expect": [
       "CLONE",
+      "CLONE",
+      "CLONE",
       "CLONE"
     ],
-    "why": "The historical multi-statement clone and an exact one-statement clone must fire; the same fixture contains a free-global semantic non-clone that must stay silent."
+    "why": "The historical multi-statement, one-statement, same-default, and same-closure clones must fire; distinct free globals, defaults, and closure globals must stay silent."
   },
   {
     "id": "c707-slice",
@@ -17,9 +19,10 @@
     "only": "SLICE",
     "expect": [
       "SLICE",
+      "SLICE",
       "SLICE"
     ],
-    "why": "The historical hill[:1] defect and zip(xs, xs[:1]) must fire; the adjacent-pair idiom zip(xs, xs[1:]) must stay silent."
+    "why": "The historical hill[:1] defect, zip(xs, xs[:1]), and values[::2] must fire; adjacent pairs and a pure reversal must stay silent."
   },
   {
     "id": "c707-note",
@@ -139,6 +142,62 @@
     "why": "Necessity language in the Markdown title is a claim position."
   },
   {
+    "id": "direction-claimed-leakage",
+    "runner": null,
+    "note_name": "direction-claimed-leakage.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | local branch exhibit | [satisfied] one exhibited branch | shown: the mechanism permits an integer power, claimed: the response requires it | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION",
+      "LEDGER"
+    ],
+    "why": "A comma cannot let the claimed clause leak into shown evidence or replace the canonical field delimiter."
+  },
+  {
+    "id": "direction-negated-converse",
+    "runner": null,
+    "note_name": "direction-negated-converse.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | finite scan | [satisfied] sampled family | shown: the finite scan cannot establish a converse; claimed: the response requires an integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "A statement that no converse was established is not affirmative necessity-strength evidence."
+  },
+  {
+    "id": "direction-modal-decoy",
+    "runner": null,
+    "note_name": "direction-modal-decoy.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response permits integer power | sampled scan | [satisfied] sampled family | shown: one sampled response is unique; claimed: the response permits an integer power | a response outside the sample |"
+    ],
+    "expect": [
+      "DIRECTION",
+      "THESIS"
+    ],
+    "why": "Fuzzy word overlap must not bind a requires title to a permits thesis or borrow an unrelated uniqueness token."
+  },
+  {
     "id": "mixed-hypothesis-tags",
     "runner": null,
     "note_name": "mixed-hypothesis-tags.md",
@@ -231,11 +290,59 @@
       "# Theorem Namesakes",
       "",
       "Skolem-Noether identifies inner automorphisms of a matrix algebra.",
+      "Skolem - Noether and Skolem–Noether are the same namesake.",
+      "Skolem — Noether is another typography variant.",
       "The matrix-algebra Burnside theorem concerns irreducible algebras."
     ],
     "only": "HYPOTHESIS",
     "expect": [],
-    "why": "Skolem-Noether and matrix-algebra Burnside must not inherit variational-Noether or orbit-counting hypotheses."
+    "why": "All supported Skolem-Noether typography and matrix-algebra Burnside must stay outside the variational-Noether and orbit-counting schemas."
+  },
+  {
+    "id": "composite-theorems-clean",
+    "runner": null,
+    "note_name": "composite-theorems-clean.md",
+    "note_lines": [
+      "# Composite Theorems",
+      "",
+      "Kato-Rellich, Kato–Rellich, and Kato — Rellich apply because the base is self-adjoint and the perturbation is bounded.",
+      "Rellich-Kondrachov, Rellich–Kondrachov, and Rellich — Kondrachov give a compact embedding on a bounded domain."
+    ],
+    "only": "HYPOTHESIS",
+    "expect": [],
+    "why": "Composite identities and their supported hyphen typography must select their own nearby hypothesis schemas."
+  },
+  {
+    "id": "composite-theorem-missing",
+    "runner": null,
+    "note_name": "composite-theorem-missing.md",
+    "note_lines": [
+      "# Composite Theorem Missing Inputs",
+      "",
+      "Kato-Rellich proves the conclusion.",
+      "Rellich-Kondrachov proves the second conclusion."
+    ],
+    "only": "HYPOTHESIS",
+    "expect": [
+      "HYPOTHESIS",
+      "HYPOTHESIS"
+    ],
+    "why": "Explicit composite names still fail when their own hypotheses are absent."
+  },
+  {
+    "id": "ambiguous-theorem-surname",
+    "runner": null,
+    "note_name": "ambiguous-theorem-surname.md",
+    "note_lines": [
+      "# Ambiguous Theorem",
+      "",
+      "By Rellich, the conclusion follows."
+    ],
+    "only": "HYPOTHESIS",
+    "expect": [
+      "HYPOTHESIS"
+    ],
+    "why": "A bare surname is routed to exact-theorem identification instead of being assigned a guessed hypothesis schema."
   },
   {
     "id": "burnside-orbit-missing",

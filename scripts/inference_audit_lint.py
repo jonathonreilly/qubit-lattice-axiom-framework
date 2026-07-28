@@ -32,16 +32,17 @@ DIRECTION   a necessity/forcing word in a claim whose matching ledger row has
             primitive SUPPLIES no dimensionless content and claimed it
             SELECTS zero.)
 
-HYPOTHESIS  a named external theorem invoked without its hypotheses stated
-            nearby. (cycle 707 invoked Rellich without its analyticity
+HYPOTHESIS  an explicitly identified external theorem invoked without its
+            hypotheses stated nearby, or a bare surname that needs manual
+            identification. (cycle 707 invoked Rellich without its analyticity
             hypothesis, then called the conclusion unconditional.)
 
 LEDGER      the note must carry the exact six-column claim-ledger schema with
-            one row per claim and no empty cells. The columns are the ones that would have caught the
-            remaining defects: `Support` empty catches an imported premise
-            presented as framework content (cycle 705's `conf`); `Falsifier`
-            empty catches a statement true by construction (cycle 701's
-            symbol-disjointness).
+            one row per claim and no empty cells. The columns are the ones that
+            would have caught the remaining defects: `Support` empty catches
+            an imported premise presented as framework content (cycle 705's
+            `conf`); `Falsifier` empty catches a statement true by construction
+            (cycle 701's symbol-disjointness).
 
 Exit code 1 if any check fires.
 """
@@ -65,19 +66,53 @@ NECESSITY = re.compile(
     re.I,
 )
 
-# External results whose hypotheses are routinely dropped when cited.  Match
-# theorem identities, not surname substrings: "Noether" is not
-# "Skolem--Noether", and the orbit-counting Burnside lemma is not Burnside's
-# irreducible-matrix-algebra theorem.
+# External results whose hypotheses are routinely dropped when cited. Match
+# explicit theorem identities, longest/composite names first. Bare surnames
+# are routed to manual identification below rather than guessed.
+THEOREM_DASH = r"\s*[-\N{EN DASH}\N{EM DASH}]\s*"
 NAMED_THEOREMS = (
-    ("rellich", re.compile(r"\brellich(?:'s)?(?:\s+theorem)?\b", re.I),
-     ("analytic", "self-adjoint")),
-    ("kato", re.compile(r"\bkato(?:'s)?(?:\s+theorem)?\b", re.I),
-     ("analytic", "self-adjoint")),
-    ("gleason", re.compile(r"\bgleason(?:'s)?(?:\s+theorem)?\b", re.I),
-     ("dimension", "frame")),
-    ("busch", re.compile(r"\bbusch(?:'s)?(?:\s+theorem)?\b", re.I),
-     ("effect", "frame")),
+    (
+        "kato-rellich",
+        re.compile(
+            rf"\bkato{THEOREM_DASH}rellich(?:'s)?(?:\s+theorem)?\b",
+            re.I,
+        ),
+        ("bounded", "self-adjoint"),
+    ),
+    (
+        "rellich-kondrachov",
+        re.compile(
+            rf"\brellich{THEOREM_DASH}kondrachov(?:'s)?(?:\s+theorem)?\b",
+            re.I,
+        ),
+        ("bounded domain", "compact"),
+    ),
+    (
+        "rellich analytic perturbation theorem",
+        re.compile(
+            r"\brellich(?:'s)?\s+(?:analytic\s+perturbation\s+)?theorem\b",
+            re.I,
+        ),
+        ("analytic", "self-adjoint"),
+    ),
+    (
+        "kato analytic perturbation theorem",
+        re.compile(
+            r"\bkato(?:'s)?\s+analytic\s+perturbation\s+theorem\b",
+            re.I,
+        ),
+        ("analytic", "self-adjoint"),
+    ),
+    (
+        "gleason theorem",
+        re.compile(r"\bgleason(?:'s)?\s+theorem\b", re.I),
+        ("dimension", "frame"),
+    ),
+    (
+        "busch theorem",
+        re.compile(r"\bbusch(?:'s)?\s+theorem\b", re.I),
+        ("effect", "frame"),
+    ),
     (
         "burnside orbit-counting lemma",
         re.compile(
@@ -89,31 +124,45 @@ NAMED_THEOREMS = (
     ),
     (
         "hellmann-feynman",
-        re.compile(r"\bhellmann(?:[-\N{EN DASH}\N{EM DASH} ]feynman)?\b", re.I),
+        re.compile(rf"\bhellmann{THEOREM_DASH}feynman\b", re.I),
         ("eigenvector", "normalized"),
     ),
     (
         "orbit-stabilizer",
-        re.compile(r"\borbit[-\N{EN DASH}\N{EM DASH} ]stabilizer\b", re.I),
+        re.compile(rf"\borbit{THEOREM_DASH}stabilizer\b", re.I),
         ("finite", "group action"),
     ),
     (
         "variational noether",
         re.compile(
-            r"(?<![-\N{EN DASH}\N{EM DASH}])\bnoether(?:'s)?\s+"
-            r"(?:theorem|identity)\b",
+            r"\bnoether(?:'s)?\s+(?:theorem|identity)\b",
             re.I,
         ),
         ("continuous", "symmetry"),
     ),
     (
         "rayleigh-ritz",
-        re.compile(r"\brayleigh(?:[-\N{EN DASH}\N{EM DASH} ]ritz)?\b", re.I),
+        re.compile(rf"\brayleigh{THEOREM_DASH}ritz\b", re.I),
         ("self-adjoint",),
     ),
 )
 
-SLICE_RE = re.compile(r"\[\s*:\s*-?\d+\s*\]|\[\s*-?\d+\s*:\s*\]|\bislice\(|\.head\(")
+THEOREM_NAMESAKE_EXCLUSIONS = (
+    re.compile(
+        rf"\bskolem{THEOREM_DASH}noether(?:'s)?(?:\s+theorem)?\b",
+        re.I,
+    ),
+    re.compile(
+        r"\bmatrix[- ]algebra\s+burnside(?:'s)?\s+theorem\b",
+        re.I,
+    ),
+)
+AMBIGUOUS_THEOREM_SURNAME = re.compile(
+    r"\b(rellich|kato|gleason|busch|burnside|hellmann|noether|rayleigh)\b",
+    re.I,
+)
+HYPOTHESIS_WINDOW = 800
+
 JUSTIFY_RE = re.compile(r"#.*\b(justif|because|why|deliberat|intentional|see )", re.I)
 
 
@@ -147,12 +196,34 @@ class InlineSource:
 # ---------------------------------------------------------------------------
 
 
+def _int_literal(node: ast.AST | None) -> int | None:
+    if isinstance(node, ast.Constant) and isinstance(node.value, int):
+        return node.value
+    if (
+        isinstance(node, ast.UnaryOp)
+        and isinstance(node.op, (ast.USub, ast.UAdd))
+        and isinstance(node.operand, ast.Constant)
+        and isinstance(node.operand.value, int)
+    ):
+        sign = -1 if isinstance(node.op, ast.USub) else 1
+        return sign * node.operand.value
+    return None
+
+
 def _is_narrowing_slice(node: ast.AST) -> bool:
-    """A subscript that drops elements: x[:n], x[n:], but not x[:] or a display."""
+    """Whether an iteration-position slice can drop domain elements.
+
+    An unbounded unit-stride copy and a pure reversal retain the full domain.
+    Bounds, non-unit strides, and dynamic strides can all omit elements.
+    """
     if not isinstance(node, ast.Subscript) or not isinstance(node.slice, ast.Slice):
         return False
     sl = node.slice
-    return (sl.lower is not None or sl.upper is not None) and sl.step is None
+    if sl.lower is not None or sl.upper is not None:
+        return True
+    if sl.step is None:
+        return False
+    return _int_literal(sl.step) not in (1, -1)
 
 
 def check_slice(runner: Path) -> list[Finding]:
@@ -186,20 +257,11 @@ def check_slice(runner: Path) -> list[Finding]:
         # `zip(xs, xs[:1])` silently truncated a check and still passed.
         adjacent_pair_slices = set()
 
-        def int_value(node):
-            if isinstance(node, ast.Constant) and isinstance(node.value, int):
-                return node.value
-            if (isinstance(node, ast.UnaryOp) and isinstance(node.op, ast.USub)
-                    and isinstance(node.operand, ast.Constant)
-                    and isinstance(node.operand.value, int)):
-                return -node.operand.value
-            return None
-
         def is_tail_from_one(node):
             return (
                 isinstance(node, ast.Subscript)
                 and isinstance(node.slice, ast.Slice)
-                and int_value(node.slice.lower) == 1
+                and _int_literal(node.slice.lower) == 1
                 and node.slice.upper is None
                 and node.slice.step is None
             )
@@ -209,7 +271,7 @@ def check_slice(runner: Path) -> list[Finding]:
                 isinstance(node, ast.Subscript)
                 and isinstance(node.slice, ast.Slice)
                 and node.slice.lower is None
-                and int_value(node.slice.upper) == -1
+                and _int_literal(node.slice.upper) == -1
                 and node.slice.step is None
             )
 
@@ -281,15 +343,18 @@ def _normalize_body(fn: ast.FunctionDef | ast.AsyncFunctionDef) -> str:
 
     class BindingCollector(ast.NodeVisitor):
         def visit_FunctionDef(self, node):  # noqa: N802
+            add(node.name)
             return
 
         def visit_AsyncFunctionDef(self, node):  # noqa: N802
+            add(node.name)
             return
 
         def visit_Lambda(self, node):  # noqa: N802
             return
 
         def visit_ClassDef(self, node):  # noqa: N802
+            add(node.name)
             return
 
         def visit_Name(self, node):  # noqa: N802
@@ -328,15 +393,48 @@ def _normalize_body(fn: ast.FunctionDef | ast.AsyncFunctionDef) -> str:
                 )
             return node
 
+        def visit_FunctionDef(self, node):  # noqa: N802
+            if node.name in mapping:
+                node.name = mapping[node.name]
+            return self.generic_visit(node)
+
+        def visit_AsyncFunctionDef(self, node):  # noqa: N802
+            if node.name in mapping:
+                node.name = mapping[node.name]
+            return self.generic_visit(node)
+
+        def visit_ClassDef(self, node):  # noqa: N802
+            if node.name in mapping:
+                node.name = mapping[node.name]
+            return self.generic_visit(node)
+
         def visit_arg(self, node):  # noqa: N802
             if node.arg in mapping:
                 node.arg = mapping[node.arg]
             return self.generic_visit(node)
 
     fn_copy.name = "_function"
-    normalized = LocalAlphaNormalizer().visit(fn_copy)
-    ast.fix_missing_locations(normalized)
-    return ast.dump(normalized, include_attributes=False)
+    for arg in [
+        *fn_copy.args.posonlyargs,
+        *fn_copy.args.args,
+        *fn_copy.args.kwonlyargs,
+    ]:
+        if arg.arg in mapping:
+            arg.arg = mapping[arg.arg]
+    if fn_copy.args.vararg and fn_copy.args.vararg.arg in mapping:
+        fn_copy.args.vararg.arg = mapping[fn_copy.args.vararg.arg]
+    if fn_copy.args.kwarg and fn_copy.args.kwarg.arg in mapping:
+        fn_copy.args.kwarg.arg = mapping[fn_copy.args.kwarg.arg]
+
+    # Defaults, decorators, return annotations, and parameter annotations are
+    # evaluated outside the function-local scope. Do not rewrite them as local
+    # bindings. The body is the only root field transformed; nested definitions
+    # inside it still see outer-local renames where Python actually closes over
+    # those names.
+    normalizer = LocalAlphaNormalizer()
+    fn_copy.body = [normalizer.visit(statement) for statement in fn_copy.body]
+    ast.fix_missing_locations(fn_copy)
+    return ast.dump(fn_copy, include_attributes=False)
 
 
 def check_clone(runner: Path) -> list[Finding]:
@@ -417,31 +515,79 @@ def _claim_words(text: str) -> list[str]:
     return re.findall(r"[a-z0-9]+", cleaned.lower())
 
 
-def _claim_text_matches(left: str, right: str) -> bool:
+CLAIM_MODALITIES = (
+    ("permits", re.compile(r"\b(permits?|permitted|allows?|allowed|enables?)\b", re.I)),
+    ("requires", re.compile(r"\b(requires?|required|necessary|must|only if)\b", re.I)),
+    ("forces", re.compile(r"\b(forces?|forced)\b", re.I)),
+    (
+        "negative",
+        re.compile(
+            r"\b(cannot|does not exist|no [^.;]{0,80} exists|"
+            r"unreachable|impossible)\b",
+            re.I,
+        ),
+    ),
+    ("unique", re.compile(r"\b(unique|uniquely|uniqueness)\b", re.I)),
+    ("selects", re.compile(r"\b(selects?|selected)\b", re.I)),
+)
+
+
+def _claim_modality(text: str) -> frozenset[str]:
+    return frozenset(
+        name for name, pattern in CLAIM_MODALITIES if pattern.search(text)
+    )
+
+
+def _claim_text_matches(
+    left: str,
+    right: str,
+    *,
+    allow_coverage: bool = False,
+) -> bool:
     a = " ".join(_claim_words(left))
     b = " ".join(_claim_words(right))
     if not a or not b:
         return False
-    if a in b or b in a:
-        return True
-    aset, bset = set(a.split()), set(b.split())
-    shorter = min(len(aset), len(bset))
-    if shorter == 0:
+    left_modality = _claim_modality(left)
+    if left_modality and left_modality != _claim_modality(right):
         return False
-    required = min(3, shorter)
-    return len(aset & bset) >= required and len(aset & bset) / shorter >= 0.8
+    return a == b or (allow_coverage and (a in b or b in a))
 
 
 DIRECTION_SUPPORT = re.compile(
-    r"\b(requires?|forced?|necessary|must|cannot|does not exist|"
+    r"\b(requires?|forced?|necessary|must|does not exist|"
     r"no [^;]{0,80} exists|unreachable|impossible|unique(?:ly)?|selects?|"
-    r"if and only if|iff|equivalent|converse)\b",
+    r"uniqueness|if and only if|iff|equivalent|"
+    r"converse (?:holds|is (?:shown|proved|checked|verified))|"
+    r"cannot (?:exist|occur|hold|satisfy|equal|"
+    r"be (?:reached|satisfied|realized|constructed|nonzero|invertible)))\b",
     re.I,
 )
-SHOWN_CLAUSE = re.compile(
-    r"\bshown\s*:\s*(.*?)(?=(?:;|<br\s*/?>)\s*claimed\s*:|$)",
+DIRECTION_DENIAL = re.compile(
+    r"\b(?:cannot|could not|does not|did not|fails? to|failed to|"
+    r"has not|have not|was not|were not)\s+"
+    r"(?:\w+\s+){0,3}(?:establish|show|prove|check|verify|demonstrate|"
+    r"derive|infer|conclude|justify|certify)\b|"
+    r"\bno\s+(?:(?:checked|established|proved|verified)\s+)?"
+    r"(?:converse|equivalence|uniqueness|impossibility|necessity)\b",
     re.I,
 )
+SHOWN_CLAIMED = re.compile(
+    r"^\s*shown\s*:\s*(?P<shown>.+?)\s*"
+    r"(?:;|<br\s*/?>)\s*claimed\s*:\s*(?P<claimed>.+?)\s*$",
+    re.I | re.S,
+)
+
+
+def _split_shown_claimed(cell: str) -> tuple[str, str] | None:
+    match = SHOWN_CLAIMED.fullmatch(cell)
+    if not match:
+        return None
+    shown = match.group("shown").strip()
+    claimed = match.group("claimed").strip()
+    if not shown or not claimed:
+        return None
+    return shown, claimed
 
 
 def check_direction(note: Path, ledger: str) -> list[Finding]:
@@ -459,8 +605,14 @@ def check_direction(note: Path, ledger: str) -> list[Finding]:
         matching = [cells for cells in rows if _claim_text_matches(sent, cells[1])]
         supported = False
         for cells in matching:
-            shown_match = SHOWN_CLAUSE.search(cells[4])
-            if shown_match and DIRECTION_SUPPORT.search(shown_match.group(1)):
+            parsed = _split_shown_claimed(cells[4])
+            if not parsed:
+                continue
+            shown, _claimed = parsed
+            if (
+                not DIRECTION_DENIAL.search(shown)
+                and DIRECTION_SUPPORT.search(shown)
+            ):
                 supported = True
                 break
         if supported:
@@ -468,8 +620,9 @@ def check_direction(note: Path, ledger: str) -> list[Finding]:
         reason = (
             "no matching claim-ledger row"
             if not matching
-            else "the matching row's `shown:` clause records no converse, "
-                 "equivalence, uniqueness, impossibility, or other necessity-strength evidence"
+            else "the matching row has no canonical, affirmative `shown:` "
+                 "record of a converse, equivalence, uniqueness, impossibility, "
+                 "or other necessity-strength evidence"
         )
         out.append(
             Finding(
@@ -482,13 +635,32 @@ def check_direction(note: Path, ledger: str) -> list[Finding]:
 
 
 def check_hypothesis(note: Path) -> list[Finding]:
-    """A named theorem must have its hypotheses within 400 chars of the mention."""
+    """An explicitly identified theorem needs its hypotheses nearby.
+
+    Composite names and known namesakes reserve their full spans before
+    shorter identities are considered. A bare surname receives a manual-
+    identification finding instead of being assigned a guessed theorem.
+    """
     out: list[Finding] = []
     text = note.read_text()
     low = text.lower()
+    occupied: list[tuple[int, int]] = []
+
+    def overlaps(span: tuple[int, int]) -> bool:
+        return any(span[0] < end and start < span[1] for start, end in occupied)
+
+    for pattern in THEOREM_NAMESAKE_EXCLUSIONS:
+        occupied.extend(match.span() for match in pattern.finditer(text))
+
     for name, pattern, hyps in NAMED_THEOREMS:
         for m in pattern.finditer(text):
-            window = low[max(0, m.start() - 400) : m.start() + 400]
+            if overlaps(m.span()):
+                continue
+            occupied.append(m.span())
+            window = low[
+                max(0, m.start() - HYPOTHESIS_WINDOW)
+                : m.start() + HYPOTHESIS_WINDOW
+            ]
             missing = [h for h in hyps if h not in window]
             if missing:
                 line = text[: m.start()].count("\n") + 1
@@ -499,6 +671,20 @@ def check_hypothesis(note: Path) -> list[Finding]:
                         f"invokes `{name}` without stating hypotheses {missing} nearby",
                     )
                 )
+    for match in AMBIGUOUS_THEOREM_SURNAME.finditer(text):
+        if overlaps(match.span()):
+            continue
+        occupied.append(match.span())
+        line = text[: match.start()].count("\n") + 1
+        out.append(
+            Finding(
+                "HYPOTHESIS",
+                f"{note.name}:{line}",
+                f"mentions ambiguous bare surname `{match.group(0)}`; identify "
+                "the exact theorem (including a composite name when applicable) "
+                "and state its hypotheses for manual review",
+            )
+        )
     return out
 
 
@@ -633,6 +819,17 @@ def check_ledger(note: Path) -> tuple[list[Finding], str]:
                         f"an empty Falsifier means it is true by construction",
                     )
                 )
+        if not _split_shown_claimed(cells[4]):
+            out.append(
+                Finding(
+                    "LEDGER",
+                    f"{note.name}:{lineno}",
+                    "the `Shown vs claimed` cell must contain non-empty "
+                    "`shown: ...; claimed: ...` clauses (or use `<br>` as the "
+                    "delimiter); a comma does not separate the evidence from "
+                    "the claim",
+                )
+            )
     return out, "\n".join(ledger_text)
 
 
@@ -763,7 +960,7 @@ def check_thesis(note: Path, ledger: str) -> list[Finding]:
             )
         )
         return out
-    if not _claim_text_matches(title, thesis[0][1]):
+    if not _claim_text_matches(title, thesis[0][1], allow_coverage=True):
         out.append(
             Finding(
                 "THESIS",

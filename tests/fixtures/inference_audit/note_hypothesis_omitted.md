@@ -5,5 +5,6 @@ does catch.
 
 ## Answer
 
-**Theorem.** By Rellich, the eigenvalue response has integer leading power.
+**Theorem.** By the Rellich analytic perturbation theorem, the eigenvalue
+response has integer leading power.
 Nothing further is assumed.

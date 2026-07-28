@@ -1,6 +1,6 @@
 {
  "edge_count": 15172,
- "node_count": 4559,
+ "node_count": 4560,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10833,6 +10833,10 @@
   "poisson_finite_volume_window_and_biharmonic_offset_bounded_theorem_note_2026-07-27": {
    "deps_hash": "4aaaab65f162",
    "out_degree": 2
+  },
+  "poisson_self_consistent_well_depth_finite_volume_bounded_theorem_note_2026-07-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "poisson_self_field_note": {
    "deps_hash": "519215e3f103",

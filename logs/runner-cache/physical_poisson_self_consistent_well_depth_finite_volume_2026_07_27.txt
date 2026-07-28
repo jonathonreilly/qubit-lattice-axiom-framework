@@ -1,0 +1,89 @@
+==============================================================================
+FINITE-VOLUME SELF-CONSISTENT LOCALIZATION AND
+ABSOLUTE-WELL-DEPTH MODEL COMPARISONS
+==============================================================================
+
+P0  provenance
+  [PASS] P0: the imported parent module matches its committed blob, so every row below is measured against the tree as landed: frontier_self_consistent_field_equation.py 49c4c97c96a9
+
+R0  source-sign normalization
+  [PASS] R0: all four operators produce V <= 0 everywhere on the interior
+
+R3/R4  Poisson -- extent and well depth against the box
+      g= 20.0 N= 12  rms=  3.0595  depth=  0.4392  iters= 64
+      g= 20.0 N= 20  rms=  4.6727  depth=  0.3277  iters= 84
+      g= 20.0 N= 28  rms=  5.4886  depth=  0.3129  iters=110
+      g= 20.0 N= 36  rms=  5.6833  depth=  0.3267  iters=123
+      g= 20.0 N= 44  rms=  5.7047  depth=  0.3407  iters=125
+      g= 20.0 N= 52  rms=  5.7063  depth=  0.3508  iters=126
+      g= 50.0 N= 12  rms=  1.9051  depth=  2.2108  iters=164
+      g= 50.0 N= 16  rms=  1.9367  depth=  2.3560  iters=176
+      g= 50.0 N= 20  rms=  1.9377  depth=  2.4540  iters=177
+      g= 50.0 N= 24  rms=  1.9377  depth=  2.5180  iters=178
+      g= 50.0 N= 32  rms=  1.9376  depth=  2.5964  iters=179
+      g= 50.0 N= 40  rms=  1.9376  depth=  2.6425  iters=180
+      g= 50.0 N= 48  rms=  1.9376  depth=  2.6729  iters=180
+  [PASS] R3: the finite-size extent increments fall by more than two orders of magnitude and end below 1e-3 -- g=20: 3.0595 -> 5.7063, relative step 3.45e-01 -> 2.71e-04; g=50: 1.9051 -> 1.9376, relative step 1.63e-02 -> 7.60e-07; no infinite-volume limit is claimed
+  [PASS] R4: for g=50 the full finite-size depth sequence prefers a+c/M (a=2.7945, rss 5.21e-04) over a+b*M (rss 2.31e-02); g=20 is explicitly inconclusive because its full sequence prefers a+c/M (a=0.2957, rss 3.84e-03 vs 8.28e-03) but its last four sizes prefer the linear model (4.19e-06 vs 1.56e-05); no limit is inferred
+
+R5  biharmonic -- finite-volume extent and depth trends
+      N= 12  rms=  2.8397  depth=  0.7874  iters= 59
+      N= 16  rms=  2.9127  depth=  1.3393  iters= 65
+      N= 20  rms=  2.8062  depth=  1.9519  iters= 64
+      N= 24  rms=  2.7410  depth=  2.5637  iters= 63
+      N= 28  rms=  2.7003  depth=  3.1740  iters= 62
+      N= 32  rms=  2.6725  depth=  3.7835  iters= 62
+  [PASS] R5: the extent stays in the narrow range 2.6725-2.9127 over the tested boxes, while the absolute depth runs 0.7874 -> 3.7835 and fits a + b*M with b = 0.1507 per interior site (linear rss 1.61e-03 beats a+c/M rss 6.72e-01); this is a finite-range model comparison, not a proof of divergence
+
+R6/R7  a PRESCRIBED unit source of fixed extent -- kernel only
+      Dirichlet     poisson:   0.04598   0.05137   0.05355   0.05473
+      Dirichlet  biharmonic:   0.10792   0.22717   0.34791   0.46910
+      Dirichlet    screened:   0.03107   0.03126   0.03126   0.03126
+      Dirichlet       local:   0.04364   0.04364   0.04364   0.04364
+  [PASS] R6: with self-consistency removed entirely, the same split appears: biharmonic's peak |phi| runs 0.1079 -> 0.4691 and is fit by the linear family, while poisson (0.0460 -> 0.0547), screened (0.0311 -> 0.0313) and local (0.0436 -> 0.0436) are fit by a+c/M over these sizes -- the linear trend does not require the nonlinear fixed point
+      torus         poisson:   0.04476   0.04935   0.05167   0.05401   0.05518   0.05635
+      torus      biharmonic:   0.11228   0.19456   0.27812   0.44654   0.61560   0.95439
+      torus        screened:   0.03030   0.03097   0.03114   0.03122   0.03124   0.03125
+  [PASS] R7: on a boundary-free torus with the zero mode removed the same holds -- biharmonic 0.1123 -> 0.9544, linear in N (b = 0.0105); poisson 0.0448 -> 0.0564, preferring a+c/N with fitted a=0.0587; the observed biharmonic growth is therefore not specific to the Dirichlet wall
+
+R8/R9  the other two members of the parent note's family
+      local    g=100 N= 12  rms=  0.0245  depth=  99.9399
+      local    g=100 N= 16  rms=  0.0245  depth=  99.9399
+      local    g=100 N= 20  rms=  0.0245  depth=  99.9399
+      local    g=100 N= 24  rms=  5.9968  depth=   0.1904
+      local    g=100 N= 28  rms=  7.5743  depth=   0.0778
+  [PASS] R8: the identical V=0-start protocol is discontinuous across the finite-size sweep: the converged extent jumps 0.0245 -> 7.5743; this sampled sweep does not exhibit a smooth local-operator continuation, without proving fixed-N bistability
+      screened g=100 N= 12  rms=  0.1633  depth=  20.6868
+      screened g=100 N= 16  rms=  0.1633  depth=  20.7044
+      screened g=100 N= 20  rms=  0.1633  depth=  20.7063
+      screened g=100 N= 24  rms=  0.1633  depth=  20.7065
+      screened g=100 N= 28  rms=  0.1633  depth=  20.7065
+  [PASS] R9: over the tested boxes screened Poisson has extent 0.1633 (spread 1.1e-05), depth 20.6868 -> 20.7065, and the depth sequence prefers a+c/M with fitted a=20.7219; the finite well-depth diagnostic does not single out unscreened Poisson
+
+R10/R11/R12  matched point-source kernel, same operator, same boundary condition, window [4,10]
+      poisson    N= 25 M= 23  rms= 1.8575  site offset=0.0000  median ratio=  1.00013  scatter=1.03e-03  residual=1.94e-09
+      poisson    N= 33 M= 31  rms= 1.8575  site offset=0.0000  median ratio=  1.00008  scatter=9.03e-04  residual=1.93e-09
+      poisson    N= 41 M= 39  rms= 1.8575  site offset=0.0000  median ratio=  1.00007  scatter=8.42e-04  residual=1.99e-09
+      poisson    N= 49 M= 47  rms= 1.8575  site offset=0.0000  median ratio=  1.00006  scatter=8.07e-04  residual=1.91e-09
+  [PASS] R10: over the tested exterior window, the self-consistent Poisson field's median ratio to the matched point-source field of the same operator lies in 1.00006-1.00013 across N=25..49 (maximum deviation 1.33e-04); this finite localization check uses the already chosen field solver and is not the parent transfer propagator's susceptibility
+      parity control -- the same comparison with the centroid between sites instead of on one:
+      poisson    N= 24 M= 22 (even)  site offset=0.8660  median=  1.01389  scatter=1.29e-01  residual=1.96e-09
+      poisson    N= 25 M= 23 (odd )  site offset=0.0000  median=  1.00013  scatter=1.03e-03  residual=1.94e-09
+      poisson    N= 32 M= 30 (even)  site offset=0.8660  median=  1.01228  scatter=1.09e-01  residual=1.93e-09
+      poisson    N= 33 M= 31 (odd )  site offset=0.0000  median=  1.00008  scatter=9.03e-04  residual=1.93e-09
+  [PASS] R11: the even-width residual is strongly reduced when the comparison point source is aligned with the centroid: moving it from half a spacing off in each axis (offset 0.8660) to exactly on a site (offset 0.0000) shrinks the mean absolute deviation by a factor 203 at N=24 vs 25 and 212 at N=32 vs 33, and the median ratio moves 1.01389 -> 1.00013 and 1.01228 -> 1.00008
+  [PASS] R12: the same matched comparison for the other two operators that have an extended field: biharmonic 0.95287-0.97743; screened 1.00111-1.00111 (scored only as a broad 0.90-1.05 localization check on converged fixed points; it is not the operator discriminator)
+
+R14  reference the potential to a fixed radius instead of to the well bottom
+          poisson  C_N:   0.44796   0.44802   0.44803   depth:   2.5180   2.5964   2.6425
+       biharmonic  C_N:   1.15613   1.34469   1.45532   depth:   2.5637   3.7835   5.0018
+         screened  C_N:   0.18568   0.18544   0.18543   depth:  20.7065  20.7065  20.7065
+  [PASS] R14: the observable choice matters: across the same boxes the biharmonic shell contrast C_N over the fixed window runs 1.15613 -> 1.45532 and is fit by the bounded family, while its well depth runs 2.5637 -> 5.0018 and prefers the linear model; the finite-volume separation is about absolute well depth under the Dirichlet-zero reference, not the shell contrast (poisson C_N 0.44796 -> 0.44803, screened 0.18568 -> 0.18543)
+
+THESIS
+  [PASS] T: On the supplied four-operator family and Dirichlet lattice, with the source sign normalized so no operator is handed a repulsive well, the tested finite-volume sequences produce converged self-consistent states. At the scored couplings, Poisson g=50 and screened Poisson prefer a+c/M for absolute well depth, biharmonic prefers a+b*M, and the local V=0-start sweep is discontinuous. These are finite-range model preferences under an explicit potential reference, not proofs of limits, physical binding energies, operator uniqueness, or the parent susceptibility bridge.
+
+==============================================================================
+SUMMARY: SELF-CONSISTENT WELL DEPTH PASS=14 FAIL=0
+elapsed 419.2s
+==============================================================================

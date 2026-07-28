@@ -136,3 +136,54 @@ Why the scores changed:
 - Ceiling unchanged at 94 for gravity: moves only when the acceptance-
   harness set (input ports + frozen expected outputs + independent
   adversary) lands — in progress as the D5 track.
+
+
+---
+
+# Refresh 3 (2026-07-28 ~11:30, post Cycles 727 + support PRs; PRs #5697-#5705 open)
+
+| TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |
+|---|---|---|---|---|
+| Operational quantum / Records | 95% | 98% (up 1) | 66% | 99% |
+| Causal time | 76% | 80% | 45% | 99% |
+| Inertia / matter | 95% | 98% | 86% | 99% |
+| Gravity / source / resources | 70% | 50% (up 1) | 29% | 97% (up 3) |
+| Born probability / realized history | 84% | 64% | 35% | 99% |
+
+Why the scores changed:
+- GRAVITY CEILING up 3 — the first ceiling movement of the campaign: the
+  source acceptance harness set exists (PR #5704) with true input ports
+  where the landed contracts allow them, frozen expected-output records,
+  SHA pins with DRIFT refusal, ACCEPT/REJECT/DRIFT verdicts using only
+  the landed tolerances, and an independent adversary that already
+  demonstrated its teeth (it caught in-process mutation of a landed
+  module's counters; the harness now isolates that surface via
+  subprocess). Remaining to 99: review ratification plus an input port
+  for the unit-weight surface (the absent full-Fock Cycle-320
+  construction).
+- Operational bridge up 1 and gravity bridge up 1: Cycle 727 (PR #5705)
+  retired the implicit reference-to-companion switch with exact
+  per-family per-parity signed pullbacks (up to 1,198 generators/box),
+  both anchor sets unchanged, and two obstructions frozen as literal
+  tables (sector exponent pairs 48/47..180/179; marker censuses with
+  zero correspondences) — C_num's ambiguity is now two named, numbered
+  gaps with a certified naming correction.
+- V_s factorization-object API landed as support (PR #5703), digest-bound
+  to the landed tableau on three shapes — the V_s-restriction compiler
+  route is now unblocked as future work.
+
+Six-wall deltas: C_num — switch language retired; the sector-summed
+companion channel is the single named route to a full-sector isometry.
+C_source — acceptance infrastructure delivered; scores move only via
+constructions that pass the harnesses.
+
+Breakthrough log additions: (11) the cross-code pullback certificate with
+its frozen obstruction pair; (12) the acceptance-harness adversary
+catching a real discipline violation pre-ship (subprocess isolation fix);
+(13) checker-forced freeze-then-verify and stdout-cap discipline on
+Cycle 727 (three honest worker failures, all diagnosed and repaired
+without weakening any check).
+
+Open PR ledger: #5697-#5705 (nine campaign PRs) awaiting owner-operated
+review/audit. Next: D3 (BKSF holonomy compression, Cycle 728) — the last
+shaped decision not yet executed.

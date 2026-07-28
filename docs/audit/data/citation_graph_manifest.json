@@ -1,6 +1,6 @@
 {
- "edge_count": 15163,
- "node_count": 4554,
+ "edge_count": 15164,
+ "node_count": 4555,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15376,6 +15376,10 @@
   },
   "wave_static_single_source_compare_note": {
    "deps_hash": "be47c45645ac",
+   "out_degree": 1
+  },
+  "wavefront_controller_m2_compiler_cycle726_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "10fd3f3be6d6",
    "out_degree": 1
   },
   "weak_coupling_retention_note_2026-04-11": {

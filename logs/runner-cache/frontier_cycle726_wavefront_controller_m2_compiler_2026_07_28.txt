@@ -1,13 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28.py
-runner_sha256: b5a552f1b947aad1ea9599029e5054005bf2cab61fff7eb47e69c0be608e48ba
+runner_sha256: eb0bd4922e089cacdf1492cbab17fc64f80ddccd666164e94f8c4f3e9fc277ed
 input_fingerprint_sha256: c2965612a0ce236459c8538b3e5b4bc2a3ce433ce73fef03cb3926e0cadeb34b
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 292.41
+elapsed_sec: 355.85
 status: ok
 ----- stdout -----
-PASS A_exhaustive_lawful_equivalence_13_17 :: True
+PASS A_supplied_table_row_semantics_13_17 :: True
 PASS B_identity_refusal_off_code_and_spectators :: True
 PASS C_table_coverage_and_active_deletions :: True
 PASS D_ownership_phase_and_order :: True
@@ -2121,7 +2121,7 @@ COVERAGE_CENSUS 19/19 {"ack_return": 4, "ack_source_cleanup": 4, "down_bad_alloc
   "audit": "unset",
   "authority": "none",
   "checks": {
-    "A_exhaustive_lawful_equivalence_13_17": true,
+    "A_supplied_table_row_semantics_13_17": true,
     "B_identity_refusal_off_code_and_spectators": true,
     "C_table_coverage_and_active_deletions": true,
     "D_ownership_phase_and_order": true,
@@ -2129,8 +2129,10 @@ COVERAGE_CENSUS 19/19 {"ack_return": 4, "ack_source_cleanup": 4, "down_bad_alloc
     "F_existing_surfaces_unchanged": true,
     "G_fresh_controller_physical_layer": true
   },
-  "claim_boundary": "Bounded conditional compilation of the D7-supplied one-shot DOWN/ACK controller into literal reversible M2 structure.  The result removes runtime Python semantic selection but does not derive the transition law, topology, ROM, clean resources, controller genesis, time, Record, Born content, source content, or any gravity/resource law.  Ordinals are circuit structure, not time.",
+  "claim_boundary": "Bounded conditional compilation of the supplied one-shot DOWN/ACK action-request controller into literal reversible M2 structure.  The emitted request word contains no runtime Python semantic selection.  It is not yet wired to execute the separately checked physical macro words, so end-to-end runtime-host removal and full-word equivalence remain open.  The result also does not derive the transition law, topology, ROM, clean resources, controller genesis, time, Record, Born content, source content, or any gravity/resource law.  Ordinals are circuit structure, not time.",
   "claim_type": "bounded_theorem",
+  "component_inventory_boundary": "These are separate validation inventories, not summands of an integrated executable controller-plus-macros word.",
+  "controller_driven_macro_execution_integrated": false,
   "controller_genesis_supplied": true,
   "cycle": 726,
   "declared_inputs": [
@@ -2139,13 +2141,14 @@ COVERAGE_CENSUS 19/19 {"ack_return": 4, "ack_source_cleanup": 4, "down_bad_alloc
     "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py"
   ],
   "derived": [
-    "finite literal DOWN-to-boundary and ACK-to-source controller word",
-    "no runtime Python source scan, semantic branch, application loop, or edge-order selection",
-    "reversible predicate-select into clean enable, phase-gated action, and exact clean enable transfer",
-    "Cycle-723 classical macro lifts and D7 Fredkin spectator rerouting for the H/T decoded word",
+    "finite literal DOWN-to-boundary and ACK-to-source action-request controller word",
+    "no runtime Python source scan, semantic branch, application loop, or edge-order selection inside that emitted request word",
+    "reversible predicate-select into clean enable, phase-gated request-port toggle, and exact clean enable transfer",
+    "separate classical macro lifts and supplied Fredkin spectator rerouting for the H/T decoded word",
     "row-complete equivalence/identity/coverage/deletion/ownership/inverse certificates",
     "fresh collision-free routed controller layer with 13/17 scaling and cubic covariance"
   ],
+  "end_to_end_runtime_host_selection_removed": false,
   "macro_gating": {
     "H_T_decoded_spectator_rerouting": {
       "blank_macro_fixed_residual": 2.2263907214770273e-16,
@@ -2157,7 +2160,7 @@ COVERAGE_CENSUS 19/19 {"ack_return": 4, "ack_source_cleanup": 4, "down_bad_alloc
       "enabled_equivalence_residual": 5.973275390517415e-15,
       "enabled_spectator_population": 0,
       "exact_inverse_residual": 1.1673782005256508e-14,
-      "path": "D7 enable-latched Fredkin spectator rerouting (CN;TOF;CN)",
+      "path": "supplied enable-latched Fredkin spectator rerouting (CN;TOF;CN)",
       "spectator_Fredkin_count_each_side": 15,
       "wrapper_gates": 602
     },
@@ -2242,15 +2245,33 @@ COVERAGE_CENSUS 19/19 {"ack_return": 4, "ack_source_cleanup": 4, "down_bad_alloc
     }
   },
   "pass": true,
-  "report_sha256": "95b20274f2d9c86977428bf2db109b1032329bf9a14c4425840d97f785e352ae",
-  "runtime_python_semantic_selection_removed": true,
-  "runtime_seconds": 291.93817933399987,
+  "report_sha256": "810189eda7853d9e207142443ad26ad03d4844424b0e35bc527da25fc39beaf7",
+  "runtime_python_selection_absent_from_controller_request_word": true,
+  "runtime_seconds": 355.23512458300684,
+  "separate_component_inventory": {
+    "13": {
+      "controller_request_word_expanded_M2_primitives": 271071,
+      "controller_request_word_literal_gates": 27695,
+      "existing_cycle718_physical_word_primitives": 25181,
+      "separate_carrier_return_expanded_primitives": 16977,
+      "separate_decoded_spectator_wrapper_gates": 602,
+      "separate_relay_core_expanded_primitives": 51974
+    },
+    "17": {
+      "controller_request_word_expanded_M2_primitives": 361123,
+      "controller_request_word_literal_gates": 36883,
+      "existing_cycle718_physical_word_primitives": 30797,
+      "separate_carrier_return_expanded_primitives": 16977,
+      "separate_decoded_spectator_wrapper_gates": 602,
+      "separate_relay_core_expanded_primitives": 51974
+    }
+  },
   "status": "bounded_conditional_construction",
   "supplied": [
-    "D7 IDLE/DOWN/ACK two-M2 phase encoding and one-hot source-DOWN genesis",
-    "D7 explicit transition-table convention and unconditional path-end DOWN-to-ACK boundary",
-    "D7 phase-gated local shift semantics and fixed 13/17 topology parameters",
-    "D7 six-bit structural bank-index ROM contents",
+    "IDLE/DOWN/ACK two-M2 phase encoding and one-hot source-DOWN genesis",
+    "explicit transition-table convention and unconditional path-end DOWN-to-ACK boundary",
+    "phase-gated local shift semantics and fixed 13/17 topology parameters",
+    "six-bit structural bank-index ROM contents",
     "clean controller selectors, enable latches, work, spectator blanks, and phase rails",
     "Cycle-713 decoder/source word and clean BINDER/ACTUAL/ADMISS/LAW, head/rotor/identity/work genesis",
     "six A/B loops, blank transient route sites, pending/HOLD genesis, and finite pre-wrap blank/no-return sector",
@@ -2692,27 +2713,7 @@ COVERAGE_CENSUS 19/19 {"ack_return": 4, "ack_source_cleanup": 4, "down_bad_alloc
     }
   ],
   "transition_table_supplied": true,
-  "wavefront_controller_compiled_to_m2": true,
-  "word_counts": {
-    "13": {
-      "decoded_spectator_wrapper_gates": 602,
-      "existing_C_three_phase_expanded": 16977,
-      "existing_P_physical_word": 25181,
-      "existing_T_classical_expanded": 51974,
-      "expanded_controller_M2": 271071,
-      "literal_controller_word": 27695,
-      "total_composed_count": 393500
-    },
-    "17": {
-      "decoded_spectator_wrapper_gates": 602,
-      "existing_C_three_phase_expanded": 16977,
-      "existing_P_physical_word": 30797,
-      "existing_T_classical_expanded": 51974,
-      "expanded_controller_M2": 361123,
-      "literal_controller_word": 36883,
-      "total_composed_count": 498356
-    }
-  }
+  "wavefront_action_request_controller_compiled_to_m2": true
 }
 
 ----- stderr -----

@@ -1,55 +1,54 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28.txt": "d9e9f9fa54d59f689af809dc92416ac373876a37e44b4519723ad43f79c00cd0",
-      "frontier_cycle726_wavefront_independent_check_2026_07_28.txt": "f1a39e1d6041c8940c9fc25f9f8dd5855fcb1421dd874ab3250deb122afd37ab"
+      "frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28.txt": "8e88da5295a5ef3d0023ace6e07a7afb106a803be1778f87975bfec38cf4460f",
+      "frontier_cycle726_wavefront_independent_check_2026_07_28.txt": "5fe0464e8039d45ae931dd40f0145cd8ea88df5e0e2bafa33694219f789d3f54"
     },
     "note": {
       "path": "docs/WAVEFRONT_CONTROLLER_M2_COMPILER_CYCLE726_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "67fef4b56d2ad7d1ab84994aab6a4bfc3d2936bca390bf99a9f96d140a91c293"
+      "sha256": "c7a365f23691c3cfa367c4f71427e504ed91f0f523355aad0ddda9c44119c902"
     },
     "runners": {
-      "frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28.py": "b5a552f1b947aad1ea9599029e5054005bf2cab61fff7eb47e69c0be608e48ba",
-      "frontier_cycle726_wavefront_independent_check_2026_07_28.py": "04dc322cb3290331c9f7e9e7bca6994192ce7561d4030eaeb9696dbf0f3f59aa"
+      "frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28.py": "eb0bd4922e089cacdf1492cbab17fc64f80ddccd666164e94f8c4f3e9fc277ed",
+      "frontier_cycle726_wavefront_independent_check_2026_07_28.py": "481b4b370ece9d78061d0ed71f96c21d5391814ce73ecab3897930ca63a2805f"
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
-    "axiom_pressure": false,
+    "controller_driven_macro_execution_integrated": false,
     "controller_genesis_supplied": true,
-    "fixed_supplies": "campaign-declared controller conventions (phase encoding, transition table, genesis/boundary, phase-gated shift, spectator blanks), structural ROM, clean controller ancillas/latches/blanks and DOWN/ACK rails, plus every Cycle-718 declared supply",
-    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
-    "not_derived": "the transition law itself (occurrence/admission content), autonomous preparation of controller resources, renewal, fault repair, boundary-free geometry, physical time/rate, Record, Born, or source content",
-    "positive_scope": "one literal routed M2 controller word replacing all runtime Python semantic selection on the Cycle-718 spatial-ACK surface, with exhaustive lawful equivalence, complete transition-table coverage, ownership conservation, exact inverse, spectator-rerouting gating of H/T words, unchanged landed certificate reruns, and a fresh placement/routing/covariance layer",
-    "runtime_python_semantic_selection_removed": true,
-    "transition_table_supplied": true,
-    "wavefront_controller_compiled_to_m2": true
+    "end_to_end_runtime_host_selection_removed": false,
+    "fixed_supplies": "phase encoding, transition table, genesis/boundary convention, phase-gated shift convention, spectator bank, structural ROM, clean controller resources, and the linked landed spatial-ACK supplies",
+    "not_derived": "integrated controller-driven macro execution, end-to-end physical-word equivalence, the transition law itself, autonomous preparation of controller resources, renewal, fault repair, boundary-free geometry, physical time/rate, Record, Born, or source content",
+    "positive_scope": "one literal routed M2 action-request controller word for the supplied DOWN/ACK table, with exact row-stage semantics, complete table coverage, ownership conservation, exact inverse, and separately checked classical-control and spectator-rerouting gadgets",
+    "runtime_python_selection_absent_from_controller_request_word": true,
+    "transition_table_supplied": true
   },
   "checks": {
     "independent_named_checks_failed": 0,
     "independent_named_checks_passed": 5,
-    "primary_named_checks_passed": 7
+    "primary_inherited_surface_checks_passed": 11,
+    "primary_top_level_checks_passed": 7
   },
   "claim_type": "bounded_theorem",
   "cycle": 726,
   "date": "2026-07-28",
   "result": {
-    "composed_totals": [
-      393500,
-      498356
-    ],
-    "controller_gates_len13": 27695,
-    "controller_gates_len17": 36883,
-    "expanded_m2_primitives": [
+    "component_inventory_is_not_an_integrated_composition": true,
+    "controller_expanded_m2_primitives": [
       271071,
       361123
     ],
+    "controller_literal_gates": [
+      27695,
+      36883
+    ],
     "gating_paths": {
-      "classical_families": "extra-control lift",
-      "h_t_decoded_word": "enable-latched Fredkin spectator rerouting"
+      "classical_families": "separate extra-control lift",
+      "h_t_decoded_word": "separate enable-latched Fredkin spectator rerouting"
     },
     "transition_rows_covered": "19/19"
   },
-  "status": "CYCLE726_WAVEFRONT_CONTROLLER_M2_COMPILER_PASS"
+  "status": "WAVEFRONT_ACTION_REQUEST_CONTROLLER_CORE_PASS"
 }

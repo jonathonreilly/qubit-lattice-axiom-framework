@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-"""Cycle-726 supplied-table DOWN/ACK controller compiled to literal M2.
+"""Cycle-726 supplied-table DOWN/ACK request controller compiled to literal M2.
 
 This bounded runner adds a reversible control plane to the already-emitted
 Cycle-718 commit/shield/shift, handoff/relay, carrier-return, and cleanup
 words.  Python is used only once, as a compiler which statically unrolls a
 finite supplied topology and ROM.  The resulting runtime object is a tuple of
 literal reversible gates: predicates are evaluated coherently, the unique
-phase owner is moved through a clean enable latch, the selected macro port is
-gated, and the enable is transferred into the next phase rail.
+phase owner is moved through a clean enable latch, the selected macro-request
+port is toggled, and the enable is transferred into the next phase rail.
 
-The transition ROM and controller genesis are conventions supplied by D7.
+The transition ROM and controller genesis are explicit supplied conventions.
 Circuit ordinals are structure, not physical time.  This runner does not
 derive the transition law, clean resources, topology, Record/Born content,
-source content, or a physical-time interpretation.
+source content, a physical-time interpretation, or the end-to-end wiring from
+request ports into the separately checked physical macro words.
 """
 from __future__ import annotations
 
@@ -99,7 +100,7 @@ class TransitionRow:
     site_role: str = "any"
 
 
-# D7 supplies this ROM.  The order is also the explicit decision priority:
+# This supplied ROM's order is also the explicit decision priority:
 # boundary, wrap, exhaustion, pre-wrap, empty, endpoint/law/allocator/link
 # refusal, retained pending, dirty destination/rail, and successful commit.
 # The patterns are disjoint on the declared code.  Unlisted bit strings are
@@ -997,7 +998,7 @@ def decoded_spectator_certificate() -> dict[str, object]:
         if basis & spectator_mask
     )
     return {
-        "path": "D7 enable-latched Fredkin spectator rerouting (CN;TOF;CN)",
+        "path": "supplied enable-latched Fredkin spectator rerouting (CN;TOF;CN)",
         "decoded_imported_gates": len(decoded),
         "decoded_operand_wires": len(used),
         "spectator_Fredkin_count_each_side": len(used),
@@ -1380,24 +1381,34 @@ def main() -> int:
 
     existing = existing_surfaces_certificate()
 
-    controller_counts = {
+    component_inventory = {
         length: {
-            "literal_controller_word": inverse[length]["literal_controller_gates"],
-            "expanded_controller_M2": inverse[length]["expanded_M2_primitives"],
-            "existing_P_physical_word": existing["P_routes"][length]["word"][
+            "controller_request_word_literal_gates": inverse[length][
+                "literal_controller_gates"
+            ],
+            "controller_request_word_expanded_M2_primitives": inverse[length][
+                "expanded_M2_primitives"
+            ],
+            "existing_cycle718_physical_word_primitives": existing["P_routes"][
+                length
+            ]["word"][
                 "total_physical_primitives"
             ],
-            "existing_T_classical_expanded": len(A.expanded(T.classical_word())),
-            "existing_C_three_phase_expanded": len(A.expanded(C.three_phase_word())),
-            "decoded_spectator_wrapper_gates": spectator["wrapper_gates"],
+            "separate_relay_core_expanded_primitives": len(
+                A.expanded(T.classical_word())
+            ),
+            "separate_carrier_return_expanded_primitives": len(
+                A.expanded(C.three_phase_word())
+            ),
+            "separate_decoded_spectator_wrapper_gates": spectator[
+                "wrapper_gates"
+            ],
         }
         for length in FIXTURE_LENGTHS
     }
-    for counts in controller_counts.values():
-        counts["total_composed_count"] = sum(counts.values())
 
     checks = {
-        "A_exhaustive_lawful_equivalence_13_17": all(
+        "A_supplied_table_row_semantics_13_17": all(
             report["state_level_failures"] == 0
             and report["declared_lawful_rows"] == len(TRANSITION_TABLE)
             for report in transition_equivalence.values()
@@ -1463,8 +1474,10 @@ def main() -> int:
         "declared_inputs": DECLARED_INPUT_PATHS,
         "checks": checks,
         "pass": passed,
-        "wavefront_controller_compiled_to_m2": passed,
-        "runtime_python_semantic_selection_removed": passed,
+        "wavefront_action_request_controller_compiled_to_m2": passed,
+        "runtime_python_selection_absent_from_controller_request_word": passed,
+        "controller_driven_macro_execution_integrated": False,
+        "end_to_end_runtime_host_selection_removed": False,
         "transition_table_supplied": True,
         "controller_genesis_supplied": True,
         "transition_table": [
@@ -1502,33 +1515,40 @@ def main() -> int:
         "F_existing_surfaces": existing,
         "G_controller_physical": controller_physical,
         "G_support_scaling": physical_support,
-        "word_counts": controller_counts,
+        "separate_component_inventory": component_inventory,
+        "component_inventory_boundary": (
+            "These are separate validation inventories, not summands of an "
+            "integrated executable controller-plus-macros word."
+        ),
         "runtime_seconds": runtime,
         "supplied": [
-            "D7 IDLE/DOWN/ACK two-M2 phase encoding and one-hot source-DOWN genesis",
-            "D7 explicit transition-table convention and unconditional path-end DOWN-to-ACK boundary",
-            "D7 phase-gated local shift semantics and fixed 13/17 topology parameters",
-            "D7 six-bit structural bank-index ROM contents",
+            "IDLE/DOWN/ACK two-M2 phase encoding and one-hot source-DOWN genesis",
+            "explicit transition-table convention and unconditional path-end DOWN-to-ACK boundary",
+            "phase-gated local shift semantics and fixed 13/17 topology parameters",
+            "six-bit structural bank-index ROM contents",
             "clean controller selectors, enable latches, work, spectator blanks, and phase rails",
             "Cycle-713 decoder/source word and clean BINDER/ACTUAL/ADMISS/LAW, head/rotor/identity/work genesis",
             "six A/B loops, blank transient route sites, pending/HOLD genesis, and finite pre-wrap blank/no-return sector",
             "clean downstream banks/link tubes, one-hot allocator token, and structural prefix supply",
         ],
         "derived": [
-            "finite literal DOWN-to-boundary and ACK-to-source controller word",
-            "no runtime Python source scan, semantic branch, application loop, or edge-order selection",
-            "reversible predicate-select into clean enable, phase-gated action, and exact clean enable transfer",
-            "Cycle-723 classical macro lifts and D7 Fredkin spectator rerouting for the H/T decoded word",
+            "finite literal DOWN-to-boundary and ACK-to-source action-request controller word",
+            "no runtime Python source scan, semantic branch, application loop, or edge-order selection inside that emitted request word",
+            "reversible predicate-select into clean enable, phase-gated request-port toggle, and exact clean enable transfer",
+            "separate classical macro lifts and supplied Fredkin spectator rerouting for the H/T decoded word",
             "row-complete equivalence/identity/coverage/deletion/ownership/inverse certificates",
             "fresh collision-free routed controller layer with 13/17 scaling and cubic covariance",
         ],
         "claim_boundary": (
-            "Bounded conditional compilation of the D7-supplied one-shot DOWN/ACK "
-            "controller into literal reversible M2 structure.  The result removes "
-            "runtime Python semantic selection but does not derive the transition "
-            "law, topology, ROM, clean resources, controller genesis, time, Record, "
-            "Born content, source content, or any gravity/resource law.  Ordinals "
-            "are circuit structure, not time."
+            "Bounded conditional compilation of the supplied one-shot DOWN/ACK "
+            "action-request controller into literal reversible M2 structure.  The "
+            "emitted request word contains no runtime Python semantic selection.  "
+            "It is not yet wired to execute the separately checked physical macro "
+            "words, so end-to-end runtime-host removal and full-word equivalence "
+            "remain open.  The result also does not derive the transition law, "
+            "topology, ROM, clean resources, controller genesis, time, Record, Born "
+            "content, source content, or any gravity/resource law.  Ordinals are "
+            "circuit structure, not time."
         ),
     }
     report["report_sha256"] = sha256(

@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Independent checker for the Cycle-726 supplied-table wavefront compiler.
+"""Independent checker for the Cycle-726 supplied-table request compiler.
 
 The Cycle-726 primary is never imported.  Its transition ROM, phase encoding,
 gating declarations, constants, and compiler structure are read only as AST
 data.  All transition replay and Fredkin/sandwich semantics below are
-independent implementations.
+independent implementations.  The checker does not claim an integrated
+controller-plus-physical-macros word: the primary emits action-request ports,
+and end-to-end request consumption remains open.
 """
 from __future__ import annotations
 
@@ -833,6 +835,7 @@ def blank_predicates(length: int) -> list[dict[str, int]]:
 def controller_replay(
     extraction: dict[str, object],
 ) -> dict[str, object]:
+    """Replay the supplied table specification, not a physical macro composition."""
     rows = tuple(extraction["transition_rows"])
     layout = fixture_13_layout()
     length = int(layout["length"])
@@ -973,6 +976,7 @@ def controller_replay(
         "boundary_DOWN_to_ACK_conversion": boundary_conversion_seen,
         "final_owner": owner_location(down, ack),
         "trace": trace,
+        "physical_macro_execution_integrated": False,
     }
 
 
@@ -1303,7 +1307,7 @@ def main() -> int:
         sandwich_and_fredkin_semantics,
     )
     replay = run_certificate(
-        "controller_replay",
+        "supplied_table_semantic_replay",
         lambda: controller_replay(table),
     )
     surfaces = run_certificate(
@@ -1331,6 +1335,13 @@ def main() -> int:
         "audit_input_paths": AUDIT_INPUT_PATHS,
         "declared_input_paths": DECLARED_INPUT_PATHS,
         "primary_read_as_data_only": True,
+        "claim_boundary": (
+            "Checks the supplied table, request-controller compiler structure, "
+            "and separate gating gadgets. It does not certify an integrated "
+            "controller-plus-physical-macros executable word."
+        ),
+        "controller_driven_macro_execution_integrated": False,
+        "end_to_end_runtime_host_selection_removed": False,
         "top_level_blocklist": sorted(TOP_LEVEL_BLOCKLIST),
         "blocked_primary_imports_present": blocked_present,
         "checks": CHECKS,

@@ -1,4 +1,4 @@
-# Cycle 726: the wavefront DOWN/ACK controller compiled to literal physical M2
+# Wavefront DOWN/ACK action-request controller compiled to literal M2
 
 Date: 2026-07-28
 
@@ -18,119 +18,137 @@ Independent check:
 
 - [`frontier_cycle726_wavefront_independent_check_2026_07_28.py`](../scripts/frontier_cycle726_wavefront_independent_check_2026_07_28.py)
 
+Load-bearing landed surface:
+
+- [physical-M2 spatial ACK and interval bridge](PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+  supplies the existing physical commit, shield, decoded, shift, relay,
+  handoff, return, and cleanup words reused here.
+
 Constitutional effect: none. This package changes no axiom, foundation,
 Qualification, primitive, registry, policy, queue, audit result, or audit
 status.
 
-All phases, stations, and application counts are circuit structure. None
-is called physical time, duration, rate, or energy.
+All phases, stations, and application counts are circuit structure. None is
+called physical time, duration, rate, or energy.
 
-## Result up front
+## Question
 
-The Cycle-718 spatial-ACK surface already emitted physical
-commit/shield/shift/relay/handoff/return words, but the DOWN/ACK
-controller — which decides, per site and step, which of those words fires
-— remained Python control flow. This cycle compiles that controller into
-one literal, routed M2 gate word, under the campaign's declared
-conventions (two-bit IDLE/DOWN/ACK phase rails with one-hot ownership;
-the complete local transition table supplied as an explicit ROM-style
-transcription of the existing decision structure; source-owns-DOWN
-genesis; boundary DOWN-to-ACK conversion; phase-gated local shift):
+Given a supplied finite path, a supplied local transition table, clean
+controller resources, and the landed physical macro words, can the table's
+DOWN/ACK phase transfer and macro-request decisions be emitted as one fixed
+literal reversible gate tuple rather than evaluated by runtime Python control
+flow inside the request controller?
 
-- controller word: 27,695 literal gates on the length-13 fixture and
-  36,883 on length 17; composed with the existing physical words the
-  totals are 271,071 / 361,123 expanded M2 primitives and 393,500 /
-  498,356 routed compositions; **no Python state branch, source scan,
-  application loop, or edge-order selection remains in the runtime map**
-  — Python persists only as a fixed-unrolling compiler from the supplied
-  topology/program parameters;
-- enable latches are reversible compute/uncompute cascades over the
-  declared predicate bits; classical macros are gated by the
-  extra-control lift (the Cycle-723 pattern); the H/T-bearing imported
-  decoded word is gated by **spectator rerouting** — enable-latched
-  Fredkin operand swaps to clean supplied blanks — so every added
-  controller gate stays in the classical reversible family and no
-  controlled-unitary decomposition is invented;
-- exhaustive lawful equivalence: on every declared lawful phase/input row
-  of the transition table, the compiled controller plus physical words
-  reproduce the existing fixed-word behavior exactly; identity/refusal
-  holds on every non-enabled and off-code row, with spectator blanks
-  untouched-then-returned; transition-table coverage is complete (19/19
-  rows exercised, four hits per row across the A/B legs) with active
-  deletion witnesses per branch family (latch-compute, Fredkin, and
-  phase-update deletions each detected);
-- exactly one DOWN-or-ACK owner exists at every application boundary on
-  lawful rows; no early source cleanup and no shift/commit before the
-  authorized phase; the full composed word has an exact arbitrary-state
-  inverse with all controller work, latches, and blanks returned clean;
-- the complete set of existing Cycle-718 surfaces reruns unchanged
-  (structured-commit, pending-shield, shift-semantic and routed-layout at
-  13/17, active covariance with 24 frames and 576 products, the clean-
-  domain acceptance invocations, the relay/carrier domain and deletion
-  certificates); the controller's own fresh physical layer certifies
-  placement, nearest-neighbor routing with returned work, support
-  scaling, and covariance of the extended layout.
+## Result
 
-## The honest trade
+Yes, for the action-request controller alone.
 
-The compiled controller removes runtime host scheduling and Python
-semantic selection — the operational-autonomy blocker named by the lane
-rubric. It does NOT derive the transition law: the table is a declared
-supplied convention whose fidelity to the prior semantics is what the
-exhaustive equivalence certificate proves. Newly supplied: the phase
-rails, latch/blank ancillas, and DOWN/ACK genesis, all clean; the
-transition table and ROM contents; the topology/program parameters. The
-wavefront genesis, clean resources, and every inherited Cycle-718 supply
-remain exactly as declared there.
+The supplied convention uses two-bit IDLE/DOWN/ACK phase rails with one-hot
+ownership, a 19-row priority table, source-DOWN genesis, boundary DOWN-to-ACK
+conversion, and phase-gated local shift requests. The compiler emits a fixed
+reversible word that evaluates those predicates, transfers the phase owner,
+and toggles the declared macro-request ports:
+
+- length 13: 27,695 literal controller gates and 271,071 expanded M2
+  primitives;
+- length 17: 36,883 literal controller gates and 361,123 expanded M2
+  primitives;
+- every declared table row has the expected request-port and phase-owner
+  image on both fixtures; IDLE, local phase code `11`, and a nonmatching
+  address remain fixed under the tested row stage;
+- 19/19 rows are exercised, with four recorded hits per row across the two
+  lawful-row and two identity fixtures;
+- latch-compute, enable-Fredkin, and phase-update gate deletions are all
+  detected;
+- exactly one DOWN-or-ACK owner remains at every stage boundary on the
+  declared full-path fixture, with no early cleanup request and no shift or
+  commit request before the DOWN phase;
+- the request word is exactly reversible on arbitrary bit assignments, and
+  clean selectors, enable latches, and controller work return clean.
+
+The emitted request word contains no runtime state executor, dynamic source
+scan, state-dependent application loop, or runtime edge-order selection.
+Python is used as a finite unrolling compiler for the supplied topology and
+table.
+
+## Separate gating lemmas
+
+The runner also checks two reusable gadgets separately from the request word:
+
+- X/CNOT/Toffoli macro words admit the extra-control lift used by the existing
+  classical macro families;
+- the H/T-bearing decoded word admits enable-latched Fredkin spectator
+  rerouting. When enabled, the data experience the decoded word and the clean
+  spectators return. When disabled, the data are unchanged while the decoded
+  word acts on the supplied spectator bank, which returns to its clean state.
+  No direct controlled-unitary decomposition is introduced.
+
+The independent checker reads the primary source only as AST data. It
+reconstructs the supplied table, replays all 19 transition rows, checks the
+request sequence and one-hot ownership, verifies the latch sandwich, and
+checks the Fredkin wrapper on 1,216 dense basis/operator cases. It also
+confirms that the emitted request-controller path contains only static
+unrolling logic.
+
+## Integration boundary
+
+This package does not yet connect the action-request ports to executions of
+the physical shield, decoded, commit, relay, shift, return, or cleanup words.
+The macro-control lifts and spectator wrapper are verified as separate
+gadgets, and the existing landed words are rerun unchanged, but no single
+controller-plus-macros executable word is constructed or routed here.
+
+Accordingly, the separate component counts are inventories, not summands of a
+composed gate word. End-to-end equivalence to a controller-driven physical
+execution and removal of all runtime host selection remain open.
 
 ## Supplied / derived / open
 
 ### Supplied
 
-- the campaign-declared controller conventions (phase encoding,
-  transition table, genesis/boundary, phase-gated shift, spectator
-  blanks) and the structural bank-index ROM;
-- clean controller ancillas, latches, blanks, and DOWN/ACK rails;
-- every supply the Cycle-718 files already declare (decoder/source words,
-  law/admission bits, clean banks/tubes, one-hot allocator token, fixed
-  edge order, finite topology).
+- the phase encoding, priority table, genesis/boundary convention,
+  phase-gated shift convention, spectator bank, and structural bank-index
+  ROM;
+- clean controller ancillas, latches, spectators, and DOWN/ACK rails;
+- every supply declared by the linked landed spatial-ACK surface, including
+  decoder/source words, law/admission bits, clean banks and link tubes, a
+  one-hot allocator token, fixed edge order, and finite topology.
 
 ### Derived
 
-- one literal routed M2 controller word replacing all runtime Python
-  semantic selection, with fixed-unrolling compilation only;
-- exhaustive lawful equivalence to the prior fixed word, complete
-  transition-table coverage, per-branch deletion witnesses, ownership
-  conservation, and exact inverse with clean returns;
-- gating of H/T-bearing words entirely within the classical reversible
-  family via enable-latched Fredkin spectator rerouting;
-- unchanged reruns of the full landed Cycle-718 certificate set and a
-  fresh placement/routing/covariance layer for the extended layout.
+- one fixed literal routed M2 action-request word for the supplied table;
+- exact row-stage semantics, table coverage, active gate-deletion witnesses,
+  ownership conservation, and exact inverse with clean controller work;
+- absence of runtime semantic branching inside the emitted request word;
+- separate classical extra-control and decoded-word spectator-rerouting
+  gadgets;
+- unchanged reruns of the landed spatial-ACK certificates and a standalone
+  placement/routing/covariance check for the request-controller layout.
 
 ### Open
 
-- derivation of the transition law itself (occurrence/admission content);
-- autonomous preparation of the phase rails, latches, blanks, and
+- wiring each request port to the corresponding gated physical macro and
+  constructing one integrated executable word;
+- end-to-end equivalence between that future integrated word and the intended
+  supplied transition semantics;
+- derivation of the transition law itself;
+- autonomous preparation of the phase rails, latches, spectators, and
   wavefront genesis;
-- renewal, fault repair, boundary-free geometry, and every inherited
-  Cycle-718/719 open item at its original scope;
-- physical time/rate, permanent Record, Born, and source content
-  (untouched).
+- renewal, fault repair, boundary-free geometry, and the inherited open items
+  at their original scope;
+- physical time or rate, permanent Record, Born, and source content.
 
-## Negative-claim discipline
+## Negative-claim boundary
 
-No new negative claim ships. Every "not derived" statement restates a
-supplied convention or an inherited open item at its original scope; the
-deletion witnesses are sensitivity demonstrations.
+The only negative structural statement proved here is scoped to the emitted
+request-controller tuple: it contains no runtime state branch, source scan,
+state-dependent application loop, or edge-order selection. This does not
+extend to the absent controller-driven macro composition. Deletion witnesses
+are sensitivity checks, not no-go results.
 
-## Verdict and next experiment
+## Verdict
 
-The last named piece of runtime host mediation on this surface is gone at
-bounded resolution: the wavefront controller is a literal gate word,
-equivalence-certified against the law it transcribes, with the
-H/T-gating problem solved inside the classical family by spectator
-rerouting. The named next steps: the TP reference-to-companion code
-switch (the C_num open item), autonomous preparation of the newly
-supplied controller resources, and the acceptance-harness program on the
-source lane. Occurrence, time, Record, Born, and source content remain
-exactly as inherited.
+The supplied DOWN/ACK table has a literal reversible M2 action-request
+compiler with exact phase-transfer semantics and separately checked macro
+gating gadgets. Full physical macro integration and end-to-end runtime-host
+removal remain open.

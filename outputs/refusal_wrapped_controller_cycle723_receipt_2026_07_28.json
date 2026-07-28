@@ -1,16 +1,16 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle723_refusal_wrap_independent_check_2026_07_28.txt": "55fe583fd19709d443efd1cf7d54f36d22c082e7f98767e2f3c78f59261cfde9",
-      "frontier_cycle723_refusal_wrapped_controller_2026_07_28.txt": "97be165ce414dd46e3691c64cb3d56b4972520fe874bc2575cae90cecfadcbc3"
+      "frontier_cycle723_refusal_wrap_independent_check_2026_07_28.txt": "62230d0f657b3dde2120403a096437339b031c7bbf3a4d6b31d9eaaf5dfc45b2",
+      "frontier_cycle723_refusal_wrapped_controller_2026_07_28.txt": "168451ef8e793b498029de54b99d05a3752d946125fff388469868dd4d7ed964"
     },
     "note": {
       "path": "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "d9a416bc01986fef9f1a5936deda70a80a0e397cc972d643a79bf927c032fce8"
+      "sha256": "0af9bba1c2a515ccd7a4260273265fa9252464b23a618fbf7a1a40da8514e91c"
     },
     "runners": {
-      "frontier_cycle723_refusal_wrap_independent_check_2026_07_28.py": "698bb659408a78be22d8e30060ccc8bd0ed4363bc06ac7bfdd8a43b35ef0e3f2",
-      "frontier_cycle723_refusal_wrapped_controller_2026_07_28.py": "3baf5bc5d88d948e62ce035dd3ad96c74fd6f480341a87cef29f4fc782f8e872"
+      "frontier_cycle723_refusal_wrap_independent_check_2026_07_28.py": "44cf2ab18132b5937effb4f24f6dda96113a33a6f114b9560c7a64d252d30ca1",
+      "frontier_cycle723_refusal_wrapped_controller_2026_07_28.py": "31f6f8e2cc9a23a5dd4e6b009c0a8aa15e371a93fbde31a43e3b4038fefced74"
     }
   },
   "audit": "unset",
@@ -18,13 +18,11 @@
   "boundary": {
     "axiom_pressure": false,
     "clean_syndrome_scratch_genesis_supplied": true,
-    "fixed_supplies": "Cycle-719 controller inventory unchanged (one token, ring, program content/order, clean data genesis) plus NEW clean per-station syndrome and scratch genesis",
-    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
-    "not_derived": "unique-token or clean-ancilla genesis, autonomous edge schedule, boundary-free geometry, renewal, occurrence, physical time, Record, Born, source/gravity meaning",
-    "positive_scope": "a reversible refusal wrap of every controlled data macro of the padded 130-station two-rail controller: lawful behavior unchanged, dirty B/work rails refused at every macro with visible dirt, deletions active, physical layer and compiled orbit re-certified",
-    "refusal_wrapped_every_controlled_macro": false,
-    "unique_token_still_supplied": true,
-    "w1_closed": false
+    "fixed_supplies": "The parent recurrent-controller inventory is unchanged (one token, oriented ring, program content/order, and clean data genesis), with clean per-station syndrome and scratch genesis added.",
+    "positive_scope": "A reversible refusal wrap of every controlled data macro of the padded 130-station two-rail controller: lawful behavior unchanged, dirty B/work rails refused at every macro with visible dirt, deletions active, and physical-layer and compiled-orbit checks passing.",
+    "refusal_wrapped_every_controlled_macro": true,
+    "scope": "The bounded theorem concerns the declared finite reversible controller under the fixed supplied inventory; downstream physical interpretation is outside its claim.",
+    "unique_token_supplied": true
   },
   "checks": {
     "independent_named_checks_failed": 0,
@@ -32,14 +30,15 @@
     "primary_named_checks_passed": 8
   },
   "claim_type": "bounded_theorem",
-  "cycle": 723,
   "date": "2026-07-28",
   "result": {
     "deletion_controls": {
       "compute_gate_deletion_data_mismatches": 33,
       "uncompute_gate_deletion_retained_syndromes": 1
     },
+    "dirty_refusal_active_output_cases": 5,
     "dirty_refusal_cases": 182,
+    "dirty_refusal_fixture_inactive_cases": 177,
     "dirty_refusal_mismatches": 0,
     "nonidentity_stations_wrapped": 91,
     "physical_primitives_12_banks": 1419186,
@@ -47,5 +46,5 @@
     "unwrapped_H_gates": 61562,
     "wrapped_H_gates": 95850
   },
-  "status": "CYCLE723_REFUSAL_WRAPPED_CONTROLLER_PASS"
+  "status": "REFUSAL_WRAPPED_CONTROLLER_PASS"
 }

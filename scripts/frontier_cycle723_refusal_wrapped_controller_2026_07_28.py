@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 723: refusal-wrap every controlled macro of the Cycle-719 controller.
+"""Refusal-wrap every controlled macro of the recurrent two-rail controller.
 
 The wrapper samples the station-local B/work inputs into a clean OR syndrome,
 uses a negative syndrome guard on every data gate, and uncomputes the syndrome.
@@ -23,6 +23,7 @@ NOTE_PATH = "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
     "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
     "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
@@ -331,7 +332,7 @@ def apply_semantic_int(value, word):
 
 
 def held_word_certificate(bank_count, program, word, layout):
-    """Literal-word rebuild of the held Cycle-719 event certificate."""
+    """Literal-word rebuild of the held recurrent-controller certificate."""
     fast = fast_classical_word(word)
     inverse = tuple(reversed(fast))
     banks, links = B.chain_genesis(bank_count)
@@ -633,6 +634,58 @@ def sector_controls_certificate():
     def returns(row):
         return sum(row.values())
 
+    token_cases = (
+        ("lawful", (0,)),
+        ("zero", ()),
+        ("adjacent", (0, 1)),
+        ("distant", (0, len(R719.PROGRAM) // 2)),
+        ("offset", (1,)),
+    )
+    word, layout, _blocks = wrapped_controller_build(
+        R719.PROGRAM, DATA_WIDTH
+    )
+    source_rows = tuple(
+        (
+            label,
+            token_positions,
+            basis,
+            controller_full_input(
+                basis, layout, a=token_positions
+            ),
+        )
+        for label, token_positions in token_cases
+        for basis in sorted(matter)
+    )
+    literal_outputs = apply_literal_bitplanes(
+        tuple(row[3] for row in source_rows),
+        word,
+        layout["full_width"],
+        len(R719.PROGRAM),
+    )
+    literal_host_failures = literal_register_failures = 0
+    for (
+        _label,
+        token_positions,
+        basis,
+        _source,
+    ), output in zip(source_rows, literal_outputs):
+        observed = controller_rows(output, layout)
+        host = wrapped_host_orbit(
+            int_to_tuple(basis),
+            R719.PROGRAM,
+            token_positions=token_positions,
+        )
+        literal_host_failures += (
+            observed["data"] != tuple_to_int(host["data"])
+        )
+        literal_register_failures += (
+            observed["A"] != host["A"]
+            or observed["B"] != host["B"]
+            or observed["work"] != host["work"]
+            or observed["syndrome"] != host["syndrome"]
+            or observed["scratch"] != host["scratch"]
+        )
+
     return {
         "lawful_token_return_failures": returns(lawful_row),
         "lawful_inverse_residual": R719.state_residual(restored, matter),
@@ -651,6 +704,9 @@ def sector_controls_certificate():
         "adjacent_two_token_return_failures": returns(adjacent_row),
         "distant_two_token_return_failures": returns(distant_row),
         "offset_token_return_failures": returns(offset_row),
+        "literal_compiled_sector_branches": len(source_rows),
+        "literal_compiled_host_failures": literal_host_failures,
+        "literal_compiled_register_failures": literal_register_failures,
     }
 
 
@@ -715,53 +771,75 @@ def per_macro_refusal_certificate():
         active_macro.append(updated != trajectory)
         trajectory = updated
 
+    case_rows = tuple(
+        (
+            station,
+            dirt_kind,
+            controller_full_input(
+                tuple_to_int(initial),
+                layout,
+                a=(0,),
+                b=(station,) if dirt_kind == "B" else (),
+                work=(station,) if dirt_kind == "work" else (),
+            ),
+        )
+        for station, row in enumerate(program)
+        if K.mapped_macro(row)
+        for dirt_kind in ("B", "work")
+    )
+    literal_outputs = apply_literal_bitplanes(
+        tuple(row[2] for row in case_rows),
+        word,
+        layout["full_width"],
+        len(program),
+    )
+
     tested = dirt_survival = auxiliary = prediction = active_failures = 0
+    token_return_failures = 0
     changed_outputs = active_refusal_cases = 0
     coincidental_matches = []
     expected_inactive_matches = 0
     coincidence_rows = {}
-    for station, row in enumerate(program):
-        if not K.mapped_macro(row):
-            continue
-        for dirt_kind in ("B", "work"):
-            observed = wrapped_host_orbit(
-                initial,
-                program,
-                b_positions=(station,) if dirt_kind == "B" else (),
-                work_positions=(station,) if dirt_kind == "work" else (),
-            )
-            expected, coincidences = independent_dirty_prediction(
-                initial, program, station, dirt_kind
-            )
-            tested += 1
-            expected_b = tuple(
-                int(index == station and dirt_kind == "B")
-                for index in range(len(program))
-            )
-            expected_work = tuple(
-                int(index == station and dirt_kind == "work")
-                for index in range(len(program))
-            )
-            dirt_survival += observed["B"] != expected_b
-            dirt_survival += observed["work"] != expected_work
-            auxiliary += (
-                any(observed["syndrome"]) or any(observed["scratch"])
-            )
-            prediction += observed["data"] != expected
-            changed = observed["data"] != lawful_data
-            changed_outputs += changed
-            active_refused = any(active_macro[index] for index in coincidences)
-            active_refusal_cases += active_refused
-            if active_refused and not changed:
-                active_failures += 1
-                coincidental_matches.append({
-                    "station": station,
-                    "dirt_kind": dirt_kind,
-                    "coincidences": coincidences,
-                })
-            if not active_refused and not changed:
-                expected_inactive_matches += 1
-            coincidence_rows[f"{station}:{dirt_kind}"] = coincidences
+    for (station, dirt_kind, _source), output in zip(
+        case_rows, literal_outputs
+    ):
+        observed = controller_rows(output, layout)
+        expected, coincidences = independent_dirty_prediction(
+            initial, program, station, dirt_kind
+        )
+        tested += 1
+        expected_b = tuple(
+            int(index == station and dirt_kind == "B")
+            for index in range(len(program))
+        )
+        expected_work = tuple(
+            int(index == station and dirt_kind == "work")
+            for index in range(len(program))
+        )
+        token_return_failures += (
+            observed["A"]
+            != (1,) + (0,) * (len(program) - 1)
+        )
+        dirt_survival += observed["B"] != expected_b
+        dirt_survival += observed["work"] != expected_work
+        auxiliary += (
+            any(observed["syndrome"]) or any(observed["scratch"])
+        )
+        prediction += observed["data"] != tuple_to_int(expected)
+        changed = observed["data"] != tuple_to_int(lawful_data)
+        changed_outputs += changed
+        active_refused = any(active_macro[index] for index in coincidences)
+        active_refusal_cases += active_refused
+        if active_refused and not changed:
+            active_failures += 1
+            coincidental_matches.append({
+                "station": station,
+                "dirt_kind": dirt_kind,
+                "coincidences": coincidences,
+            })
+        if not active_refused and not changed:
+            expected_inactive_matches += 1
+        coincidence_rows[f"{station}:{dirt_kind}"] = coincidences
     inverse = station_inverse_certificate(program, blocks, word)
     return {
         "program_stations": len(program),
@@ -769,6 +847,9 @@ def per_macro_refusal_certificate():
             bool(K.mapped_macro(row)) for row in program
         ),
         "dirt_cases_tested": tested,
+        "literal_compiled_cases_tested": len(literal_outputs),
+        "literal_observation_used": True,
+        "token_return_failures": token_return_failures,
         "dirt_survival_failures": dirt_survival,
         "syndrome_scratch_return_failures": auxiliary,
         "prediction_mismatch_census": prediction,
@@ -1109,7 +1190,7 @@ def compiled_wrapped_orbit_certificate():
         for label, row in variants.items()
     }
     return {
-        "Cycle713_origin0_branches": len(source_bases),
+        "physical_endpoint_instrument_origin0_branches": len(source_bases),
         "semantic_gates_per_H": len(word),
         "H_applications_per_orbit": len(program),
         "semantic_gate_applications_per_branch":
@@ -1151,10 +1232,10 @@ def inherited_anchors_certificate():
         "contact_stage_residual",
     )
     return {
-        "Cycle713_runner_expected_sha256":
+        "physical_endpoint_instrument_runner_expected_sha256":
             R719.CYCLE713_RUNNER_PIN_SHA256,
-        "Cycle713_runner_observed_sha256": observed_pin,
-        "Cycle713_pin_match":
+        "physical_endpoint_instrument_runner_observed_sha256": observed_pin,
+        "physical_endpoint_instrument_pin_match":
             observed_pin == R719.CYCLE713_RUNNER_PIN_SHA256,
         "instrument": {
             "columns": instrument["columns"],
@@ -1223,6 +1304,9 @@ def main():
             "distant_two_token_residual_from_lawful"
         ] > 1e-3
         and sectors["offset_token_residual_from_lawful"] > 1e-3
+        and sectors["literal_compiled_sector_branches"] == 30
+        and sectors["literal_compiled_host_failures"] == 0
+        and sectors["literal_compiled_register_failures"] == 0
         and all(
             sectors[key] == 0
             for key in (
@@ -1239,6 +1323,10 @@ def main():
         refusal["nonidentity_stations_tested"] == 91
         and refusal["dirt_cases_tested"]
         == 2 * refusal["nonidentity_stations_tested"]
+        and refusal["literal_compiled_cases_tested"]
+        == refusal["dirt_cases_tested"]
+        and refusal["literal_observation_used"]
+        and refusal["token_return_failures"] == 0
         and refusal["dirt_survival_failures"] == 0
         and refusal["syndrome_scratch_return_failures"] == 0
         and refusal["prediction_mismatch_census"] == 0
@@ -1264,7 +1352,7 @@ def main():
     )
     check(
         "G_compiled_wrapped_orbit",
-        compiled["Cycle713_origin0_branches"] == 6
+        compiled["physical_endpoint_instrument_origin0_branches"] == 6
         and compiled["H_applications_per_orbit"] == len(R719.PROGRAM)
         and compiled["compiled_host_equality_failures"] == 0
         and compiled["compiled_inverse_failures"] == 0
@@ -1288,7 +1376,7 @@ def main():
     )
     check(
         "H_inherited_anchors",
-        inherited["Cycle713_pin_match"]
+        inherited["physical_endpoint_instrument_pin_match"]
         and inherited["instrument"]["columns"] == 4096
         and inherited["instrument"][
             "maximum_EG_instrument_residual"
@@ -1305,7 +1393,7 @@ def main():
     )
 
     elapsed = time.perf_counter() - started
-    bg_pass = all(checks[key] for key in (
+    construction_pass = all(checks[key] for key in (
         "B_lawful_behavior_unchanged_wrapped",
         "C_sector_controls_preserved",
         "D_exhaustive_per_macro_refusal",
@@ -1363,23 +1451,25 @@ def main():
                 padded_physical["total_declared_M2"],
         },
         "claim_boundary": {
-            "refusal_wrapped_every_controlled_macro": bg_pass,
+            "refusal_wrapped_every_controlled_macro": construction_pass,
             "clean_syndrome_scratch_genesis_supplied": True,
-            "unique_token_still_supplied": True,
-            "w1_closed": False,
+            "unique_token_supplied": True,
             "trade": (
-                "The wrap retires the unchecked clean-B/work assertion at "
-                "every controlled macro: dirty B/work is locally refused "
-                "and remains visible. It adds clean per-station syndrome "
-                "and two-bit scratch-pool genesis to the supplied inventory."
+                "Every controlled macro now checks local B/work dirt, "
+                "suppresses its data action when dirt is present, and leaves "
+                "the dirt visible. The construction adds clean per-station "
+                "syndrome and two-bit scratch-pool genesis to its supplied "
+                "inventory."
             ),
-            "still_supplied": (
+            "supplied_conditions": (
                 "The unique token, oriented ring geometry, program content, "
-                "and clean data genesis remain supplied."
+                "clean data genesis, and clean refusal ancillas are supplied."
             ),
-            "excluded_claims": (
-                "No autonomy, genesis, W2, temporal-ordinal, occurrence, "
-                "Record, Born, or source-content claim is made."
+            "scope": (
+                "This bounded theorem concerns the declared finite "
+                "controller construction and its reversible circuit "
+                "semantics; downstream physical interpretation is outside "
+                "its claim."
             ),
             "ordinal_scope": (
                 "Controller ordinals are circuit structure, not time."

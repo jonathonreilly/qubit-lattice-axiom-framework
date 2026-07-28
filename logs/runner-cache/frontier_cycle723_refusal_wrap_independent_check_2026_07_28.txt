@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle723_refusal_wrap_independent_check_2026_07_28.py
-runner_sha256: 698bb659408a78be22d8e30060ccc8bd0ed4363bc06ac7bfdd8a43b35ef0e3f2
-input_fingerprint_sha256: ff756aacac34a102246654367d40c65cea9e488a7d07efcfb4ccc48918fa40e4
+runner_sha256: 44cf2ab18132b5937effb4f24f6dda96113a33a6f114b9560c7a64d252d30ca1
+input_fingerprint_sha256: 6eddfc54eef9078383d269415a0870bd4df566df851894304c5ae551b4d806b9
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 3.22
+elapsed_sec: 3.68
 status: ok
 ----- stdout -----
 PASS sandwich_semantics
@@ -16,6 +16,7 @@ PASS count_consistency
   "audit_input_paths": [
     "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
     "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md"
   ],
   "audit_timeout_seconds": 900,
@@ -77,6 +78,7 @@ PASS count_consistency
       "AUDIT_INPUT_PATHS_literal_value": [
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
         "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+        "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
         "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md"
       ],
       "all_three_gate_kinds_NOT_syndrome_guarded": true,
@@ -195,6 +197,7 @@ PASS count_consistency
         "AUDIT_INPUT_PATHS_literal_value": [
           "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
           "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+          "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
           "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md"
         ],
         "all_three_gate_kinds_NOT_syndrome_guarded": true,
@@ -261,14 +264,14 @@ PASS count_consistency
       "pass": true
     }
   ],
-  "report_sha256": "9ce9b961a81f274c99a3c897ca0ad49d8644934636f4b51c8d549c386962061f",
-  "runtime_seconds": 2.793579957993643,
+  "report_sha256": "c9d46888a9e981954800e5fefa119dab597eb91c71e59b6c0ddb9ce70fc5bb4b",
+  "runtime_seconds": 3.178366125008324,
   "status": "PASS",
   "top_level_blocklist": [
     "frontier_cycle723_refusal_wrapped_controller_2026_07_28"
   ]
 }
-CYCLE723_REFUSAL_WRAP_INDEPENDENT_CHECK_PASS
+REFUSAL_WRAPPED_CONTROLLER_INDEPENDENT_CHECK_PASS
 
 ----- stderr -----
 

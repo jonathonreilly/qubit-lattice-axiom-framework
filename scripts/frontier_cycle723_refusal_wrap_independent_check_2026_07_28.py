@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Independent bounded checker for the Cycle-723 refusal wrapper.
+"""Independent bounded checker for the recurrent-controller refusal wrapper.
 
-The Cycle-723 primary is never imported.  It is read only as source text for
+The primary runner is never imported. It is read only as source text for
 the narrowly scoped AST discipline checks below.  All classical gate and
 refusal-sandwich semantics in this file are independent reconstructions.
 """
@@ -14,6 +14,7 @@ NOTE_PATH = (
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
     "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
@@ -43,11 +44,11 @@ import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
 
 _BLOCKED_AFTER_IMPORTS = sorted(TOP_LEVEL_BLOCKLIST & set(sys.modules))
 assert not _BLOCKED_AFTER_IMPORTS, (
-    f"Cycle-723 primary imported transitively: {_BLOCKED_AFTER_IMPORTS}"
+    f"Primary refusal runner imported transitively: {_BLOCKED_AFTER_IMPORTS}"
 )
 
 SCRATCH_PER_STATION = 2
-# Cross-checks the Cycle-723 primary's reported wrapped H-word size of 95,850.
+# Cross-checks the primary runner's reported wrapped H-word size of 95,850.
 EXPECTED_WRAPPED_130_WORD_SIZE = 95_850
 CHECKS: list[dict[str, object]] = []
 
@@ -978,9 +979,9 @@ def main() -> int:
     ).encode()).hexdigest()
     print(json.dumps(report, indent=2, sort_keys=True))
     print(
-        "CYCLE723_REFUSAL_WRAP_INDEPENDENT_CHECK_PASS"
+        "REFUSAL_WRAPPED_CONTROLLER_INDEPENDENT_CHECK_PASS"
         if passing
-        else "CYCLE723_REFUSAL_WRAP_INDEPENDENT_CHECK_FAIL"
+        else "REFUSAL_WRAPPED_CONTROLLER_INDEPENDENT_CHECK_FAIL"
     )
     return 0 if passing else 1
 

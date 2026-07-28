@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py
-runner_sha256: 3baf5bc5d88d948e62ce035dd3ad96c74fd6f480341a87cef29f4fc782f8e872
-input_fingerprint_sha256: 406144e7c08decfbb21263a9f1353d51f6c9085b0152c1ea1cec3a7db3a95d1e
+runner_sha256: 31f6f8e2cc9a23a5dd4e6b009c0a8aa15e371a93fbde31a43e3b4038fefced74
+input_fingerprint_sha256: 0f2f1a286da7a5b15649f0680d6ece1c7a126c760e16ea8f351d2bea7d99fb22
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 134.76
+elapsed_sec: 197.28
 status: ok
 ----- stdout -----
 PASS A_unwrapped_regression_anchor :: True
@@ -29,16 +29,14 @@ PASS H_inherited_anchors :: True
   },
   "claim_boundary": {
     "clean_syndrome_scratch_genesis_supplied": true,
-    "excluded_claims": "No autonomy, genesis, W2, temporal-ordinal, occurrence, Record, Born, or source-content claim is made.",
     "ordinal_scope": "Controller ordinals are circuit structure, not time.",
     "refusal_wrapped_every_controlled_macro": true,
-    "still_supplied": "The unique token, oriented ring geometry, program content, and clean data genesis remain supplied.",
-    "trade": "The wrap retires the unchecked clean-B/work assertion at every controlled macro: dirty B/work is locally refused and remains visible. It adds clean per-station syndrome and two-bit scratch-pool genesis to the supplied inventory.",
-    "unique_token_still_supplied": true,
-    "w1_closed": false
+    "scope": "This bounded theorem concerns the declared finite controller construction and its reversible circuit semantics; downstream physical interpretation is outside its claim.",
+    "supplied_conditions": "The unique token, oriented ring geometry, program content, clean data genesis, and clean refusal ancillas are supplied.",
+    "trade": "Every controlled macro now checks local B/work dirt, suppresses its data action when dirt is present, and leaves the dirt visible. The construction adds clean per-station syndrome and two-bit scratch-pool genesis to its supplied inventory.",
+    "unique_token_supplied": true
   },
   "compiled_wrapped_orbit": {
-    "Cycle713_origin0_branches": 6,
     "H_applications_per_orbit": 130,
     "compiled_host_equality_failures": 0,
     "compiled_inverse_failures": 0,
@@ -52,6 +50,7 @@ PASS H_inherited_anchors :: True
     },
     "forward_semantic_gate_applications_tested": 74763000,
     "inverse_semantic_gate_applications_tested": 74763000,
+    "physical_endpoint_instrument_origin0_branches": 6,
     "rows": [
       {
         "A0_return": true,
@@ -108,6 +107,9 @@ PASS H_inherited_anchors :: True
     "lawful_inverse_residual": 0.0,
     "lawful_inverse_token_failures": 0,
     "lawful_token_return_failures": 0,
+    "literal_compiled_host_failures": 0,
+    "literal_compiled_register_failures": 0,
+    "literal_compiled_sector_branches": 30,
     "offset_token_residual_from_lawful": 0.48693948205126425,
     "offset_token_return_failures": 0,
     "zero_token_data_residual_from_unallocated_matter": 0.0,
@@ -137,9 +139,6 @@ PASS H_inherited_anchors :: True
     "station": 0
   },
   "inherited_anchors": {
-    "Cycle713_pin_match": true,
-    "Cycle713_runner_expected_sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",
-    "Cycle713_runner_observed_sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",
     "instrument": {
       "columns": 4096,
       "delete_OR_Toffoli_maximum_residual": 1.4142135623730951,
@@ -160,7 +159,10 @@ PASS H_inherited_anchors :: True
       "single_FSWAP_falsifier_residual": 5.656854249492381
     },
     "matter_falsifier_active": true,
-    "matter_residual_failures": 0
+    "matter_residual_failures": 0,
+    "physical_endpoint_instrument_pin_match": true,
+    "physical_endpoint_instrument_runner_expected_sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",
+    "physical_endpoint_instrument_runner_observed_sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f"
   },
   "lawful_wrapped": {
     "cases": [
@@ -804,6 +806,8 @@ PASS H_inherited_anchors :: True
     "dirt_survival_failures": 0,
     "expected_inactive_matches": 177,
     "legacy_work_reused_as_refusal_scratch": false,
+    "literal_compiled_cases_tested": 182,
+    "literal_observation_used": true,
     "nonidentity_stations_tested": 91,
     "prediction_mismatch_census": 0,
     "program_stations": 130,
@@ -811,6 +815,7 @@ PASS H_inherited_anchors :: True
     "station_block_inverse_failures": 0,
     "station_block_inverse_rows": 455,
     "syndrome_scratch_return_failures": 0,
+    "token_return_failures": 0,
     "wrapped_word_sha256": "8e57534049cbd474c30fe1ed26ce4da04e388d362394096de5990f386f327681"
   },
   "physical": {
@@ -955,8 +960,8 @@ PASS H_inherited_anchors :: True
     "semantic_gates": 95850,
     "total_declared_M2": 6596
   },
-  "report_sha256": "297ac3080bca41df9869d014865ded2c41004a1fb1b032bb5abbb0dfce70f325",
-  "runtime_seconds": 134.22045895800693,
+  "report_sha256": "859e8441287985c5532871f5b071e8a1bac63a8486509da2f1501bfe32be85c2",
+  "runtime_seconds": 196.52232154199737,
   "unwrapped_regression_anchor": {
     "all_counters_zero": true,
     "counter_mismatches": 0,

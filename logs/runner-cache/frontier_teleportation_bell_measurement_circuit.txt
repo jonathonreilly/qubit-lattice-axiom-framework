@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_bell_measurement_circuit.py
 runner_sha256: 63deecbe1fb947f593e7e7808ae45010991d70b8a54815baffd528abed0029ac
-input_fingerprint_sha256: 7fe85500ab7f483438c08e0f7d0597f4943747054c1d42232c602fb166ab1814
+input_fingerprint_sha256: c44c8d9363773de2647afd3bb24aae38026612a58de70518ea4b88d9c21e9192
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.14
 status: ok
 ----- stdout -----
 TELEPORTATION BELL-MEASUREMENT CIRCUIT/DECOMPOSITION

@@ -1,0 +1,72 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle728_bksf_holonomy_compression_2026_07_28.txt": "deb14b2486a24fff853b0bc7f7bd94113f03241c4eb4b9b9b07c9ccaa2984827",
+      "frontier_cycle728_holonomy_independent_check_2026_07_28.txt": "b5860b62b35aa72c07a014429722b9d06dc71e422e0abda72bdc2375afcae7de"
+    },
+    "note": {
+      "path": "docs/BKSF_HOLONOMY_COMPRESSION_CYCLE728_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "dae7b7d13b06623dff34822de4e7a46906f6ea2ee109be377bea5e0e1e778c6a"
+    },
+    "runners": {
+      "frontier_cycle728_bksf_holonomy_compression_2026_07_28.py": "a8a60f0853994b3a6235702bd2db77a43e7419226257c6c64261053caf83170b",
+      "frontier_cycle728_holonomy_independent_check_2026_07_28.py": "82dbdb11213c74a9fd9ed21103a90e93b1f0e8e74d5709fca37dec4bef407a04"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "the mode-graph convention, clean reference chain, marked edge s*, and holonomy register h (per the campaign decision record and its amendment); the controller inventory unchanged",
+    "holonomy_bit_locally_derivable": false,
+    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
+    "not_derived": "enforcement integration of the charge rows into the refusal wrap, autonomous preparation of the reference chain or h, occurrence, time, Record, Born, or source content",
+    "original_chained_holonomy_refuted_as_coboundary": true,
+    "positive_scope": "the coboundary refutation of the original chained holonomy (frozen exhaustive censuses); the marked-edge twist telescope identity; the two-direction compression theorem (exhaustive per h-sector on ring 11; algebraic on 35/130); the marked-edge non-derivability witness with its radius-one window census; the frozen R-pullback law with token-parity-xor-h invariance",
+    "refs_are_new_supplied_clean_registers": true,
+    "w1_closed": false,
+    "w1_global_remainder_compressed_to_one_bit": true
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 32
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 728,
+  "date": "2026-07-28",
+  "result": {
+    "per_h_sector": {
+      "failures": 0,
+      "fixed_ref_matches": 2048,
+      "projected_states": 2097152
+    },
+    "refutation_censuses": {
+      "ring10_agreement": {
+        "0": 1024
+      },
+      "ring11_agreement": {
+        "1": 2048
+      }
+    },
+    "rings": [
+      11,
+      35,
+      130
+    ],
+    "witness_pair": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        6,
+        1
+      ]
+    ],
+    "witness_windows_indistinguishable": "9/9"
+  },
+  "status": "CYCLE728_BKSF_HOLONOMY_COMPRESSION_PASS"
+}

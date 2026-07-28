@@ -76,23 +76,59 @@ def normalized_determinant_core() -> None:
 def orientation_countermodel() -> None:
     print("\n2. EXACT MASS-SPECTRUM / MIXING COUNTERMODEL")
     theta = sp.symbols("theta", real=True)
-    u, c, t = sp.symbols("u c t", positive=True)
-    d, s, b = sp.symbols("d s b", positive=True)
     rot = sp.Matrix([
         [1, 0, 0],
         [0, sp.cos(theta), sp.sin(theta)],
         [0, -sp.sin(theta), sp.cos(theta)],
     ])
-    m_u = sp.diag(u, c, t)
-    d_diag = sp.diag(d, s, b)
-    m_d = sp.simplify(rot * d_diag * rot.T)
+    up_spectrum = (sp.Integer(1), sp.Integer(4), sp.Integer(9))
+    down_spectrum = (sp.Integer(2), sp.Integer(5), sp.Integer(11))
+    h_u = sp.diag(*up_spectrum)
+    h_d_diag = sp.diag(*down_spectrum)
+    h_d = sp.simplify(rot * h_d_diag * rot.T)
+    u_u = sp.eye(3)
+    u_d = rot
+    ckm = sp.simplify(u_u.T * u_d)
 
-    check("down trace is orientation-invariant", sp.simplify(sp.trace(m_d) - (d + s + b)) == 0)
-    check("down determinant is orientation-invariant", sp.simplify(m_d.det() - d * s * b) == 0)
-    check("down quadratic trace is orientation-invariant", sp.simplify(sp.trace(m_d * m_d) - (d**2 + s**2 + b**2)) == 0)
-    check("up spectrum stays fixed", m_u.det() == u * c * t)
-    check("relative 2-3 mixing varies as sin(theta)", rot[1, 2] == sp.sin(theta))
-    check("two fixed-spectrum models have different mixing", rot[1, 2].subs(theta, 0) == 0 and rot[1, 2].subs(theta, sp.pi / 6) == sp.Rational(1, 2))
+    check(
+        "supplied spectra are positive and nondegenerate",
+        all(value > 0 for value in up_spectrum + down_spectrum)
+        and len(set(up_spectrum)) == 3
+        and len(set(down_spectrum)) == 3,
+    )
+    check("up diagonalizer is unitary", u_u.T * u_u == sp.eye(3))
+    check(
+        "down diagonalizer is unitary",
+        sp.simplify(u_d.T * u_d) == sp.eye(3),
+    )
+    check(
+        "down diagonalizer recovers supplied spectrum",
+        sp.simplify(u_d.T * h_d * u_d) == h_d_diag,
+    )
+    check("CKM definition yields relative diagonalizer", ckm == rot)
+    check(
+        "down trace is orientation-invariant",
+        sp.simplify(sp.trace(h_d) - sum(down_spectrum)) == 0,
+    )
+    check(
+        "down determinant is orientation-invariant",
+        sp.simplify(h_d.det() - sp.prod(down_spectrum)) == 0,
+    )
+    check(
+        "down quadratic trace is orientation-invariant",
+        sp.simplify(
+            sp.trace(h_d * h_d)
+            - sum(value**2 for value in down_spectrum)
+        )
+        == 0,
+    )
+    check("up spectrum stays fixed", h_u.det() == sp.prod(up_spectrum))
+    check("relative 2-3 mixing varies as sin(theta)", ckm[1, 2] == sp.sin(theta))
+    check(
+        "two fixed-spectrum models have different mixing",
+        ckm[1, 2].subs(theta, 0) == 0
+        and ckm[1, 2].subs(theta, sp.pi / 6) == sp.Rational(1, 2),
+    )
 
 
 def scale_covariance() -> None:

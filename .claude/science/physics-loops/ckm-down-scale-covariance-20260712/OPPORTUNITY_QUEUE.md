@@ -2,7 +2,7 @@
 
 This is a single-target science block, not a multi-lane campaign.
 
-1. Land the exact normalized-determinant core and RG-covariance theorem in the
+1. Land the exact normalized-determinant core and RG-covariance boundary in the
    target note with its paired runner.
 2. If review finds the determinant construction too weakly separated from its
    physical interpretation, retain only the algebraic lemma and the two typed
@@ -12,7 +12,7 @@ This is a single-target science block, not a multi-lane campaign.
 4. Future independent block: derive or falsify the CKM normalized-determinant
    readout `|V_cb|=Delta_6(X_R)`.
 
-## Historical 2026-07-12 promotion value gate
+## Promotion value gate
 
 | Gate | Answer |
 |---|---|
@@ -24,12 +24,3 @@ This is a single-target science block, not a multi-lane campaign.
 
 All gates pass for a bounded theorem / narrow obstruction PR. No audit outcome
 is predicted.
-
-## 2026-07-27 repair disposition
-
-This cycle is a direct source repair to the current audit's `scope_too_broad`
-instruction, not a new retained-positive PR proposal. Its marginal algebraic
-addition is the explicit two-sided transport law; the decisive change is that
-the source no longer ships an exhaustive negative route-closure claim. No new
-PR is proposed from this elementary scope repair. Independent re-audit of the
-same row is the next action.

@@ -73,6 +73,9 @@ def main() -> int:
         "bounded support theorem",
         "abstract algebraic lemma",
         "shared multiplicative transport",
+        "exact two-sided law",
+        "if and only if `t_pred=t_obs`",
+        "neither a claim about every possible rg map",
         "one composite physical bridge",
         "comparator-only numerical illustration",
         "no global impossibility is claimed",
@@ -85,6 +88,8 @@ def main() -> int:
         "transport factor hard-coded to 1.14747",
         "threshold-local comparator is derived",
         "5/6 bridge is derived",
+        "the scale-convention-rescue route is closed on this domain",
+        "closes the scale-rescue interpretation",
     ]
     hits = [phrase for phrase in forbidden_live_phrases if phrase in flat]
     check("former numerical-match claim is absent", not hits, str(hits))
@@ -92,6 +97,12 @@ def main() -> int:
     check(
         "runner proves shared-transport deviation invariance",
         "shared transport preserves relative deviation" in runner,
+    )
+    check(
+        "runner proves the textbook CKM countermodel bridge",
+        "supplied spectra are positive and nondegenerate" in runner
+        and "down diagonalizer recovers supplied spectrum" in runner
+        and "CKM definition yields relative diagonalizer" in runner,
     )
     check(
         "runner separates exact and comparator pass classes",

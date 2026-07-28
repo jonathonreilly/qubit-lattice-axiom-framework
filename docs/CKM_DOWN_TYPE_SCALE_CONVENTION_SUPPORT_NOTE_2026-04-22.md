@@ -53,12 +53,19 @@ The exact proof uses only these explicit conditions:
 3. positive common-scale theory and observation ratios `R_pred` and
    `R_common`;
 4. a positive shared multiplicative transport `T` from the common surface to
-   the mixed/reference surface.
-5. for the Casimir comparison only, the standard fundamental-generator
+   the mixed/reference surface;
+5. for the fixed-spectrum countermodel only, supplied left-handed positive
+   Hermitian `3 x 3` mass-squared representatives `H_u` and `H_d` with simple
+   spectra, unitary diagonalizers `U_u` and `U_d`, and the standard textbook
+   CKM definition `V=U_u^dagger U_d`;
+6. for the Casimir comparison only, the standard fundamental-generator
    normalization `tr_F(T^a T^b)=T_F delta^(ab)` with `T_F=1/2`.
 
 No observed mass, fitted exponent, quoted coupling, or selected scale is a
 proof input. The numerical values in Section 6 are a post-theorem illustration.
+Condition 5 supplies only the textbook meaning of an admissible quark
+mass-pair counterexample; it is not a new framework axiom or a derivation of
+the physical mass operators.
 
 The [current framework axioms](MINIMAL_AXIOMS_2026-06-29.md) and approved
 primitives do not supply a quark-mass operator, a CKM normalized-determinant
@@ -126,15 +133,23 @@ down-quark mass data  --->  X_R = Q + (m_s/m_b) P,       (4.1)
 X_R                   --->  |V_cb| = Delta_6(X_R).       (4.2)
 ```
 
-The rank split alone cannot supply those maps. A direct counterexample fixes
-all up- and down-mass eigenvalues and varies only their relative eigenbasis:
+The rank split alone cannot supply those maps. Choose strictly positive,
+pairwise-distinct eigenvalues in each sector and define the admissible
+left-handed positive Hermitian representatives
 
 ```text
-M_u = diag(m_u,m_c,m_t),
-M_d(theta) = R_23(theta) diag(m_d,m_s,m_b) R_23(theta)^dagger.
+H_u = diag(h_u,h_c,h_t),
+H_d(theta) = R_23(theta) diag(h_d,h_s,h_b) R_23(theta)^dagger.
 ```
 
-Every spectral mass invariant is independent of `theta`, while
+They are diagonalized by `U_u=I` and `U_d=R_23(theta)`. Under the standard
+textbook definition
+
+```text
+V = U_u^dagger U_d = R_23(theta),
+```
+
+every spectral mass invariant is independent of `theta`, while
 
 ```text
 |V_cb| = |sin(theta)|
@@ -328,5 +343,5 @@ python3 scripts/frontier_ckm_down_type_scale_convention_support.py
 Expected final line:
 
 ```text
-SUMMARY: EXACT_PASS=29 COMPARATOR_PASS=6 FAIL=0
+SUMMARY: EXACT_PASS=34 COMPARATOR_PASS=6 FAIL=0
 ```

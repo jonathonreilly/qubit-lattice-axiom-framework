@@ -3,19 +3,23 @@
     "id": "c704-clone",
     "runner": "tests/fixtures/inference_audit/clone_defect_c704_reconstruction.py",
     "note": null,
+    "only": "CLONE",
     "expect": [
+      "CLONE",
       "CLONE"
     ],
-    "why": "Cycle 704 wrote the formation and migration gates with identical bodies, then verified they agreed over 2187 rules."
+    "why": "The historical multi-statement clone and an exact one-statement clone must fire; the same fixture contains a free-global semantic non-clone that must stay silent."
   },
   {
     "id": "c707-slice",
     "runner": "tests/fixtures/inference_audit/slice_defect_c707_reconstruction.py",
     "note": null,
+    "only": "SLICE",
     "expect": [
+      "SLICE",
       "SLICE"
     ],
-    "why": "Cycle 707 row G tested hill[:1], dropping the member that contradicted its own sign classification."
+    "why": "The historical hill[:1] defect and zip(xs, xs[:1]) must fire; the adjacent-pair idiom zip(xs, xs[1:]) must stay silent."
   },
   {
     "id": "c707-note",
@@ -23,42 +27,229 @@
     "note": "tests/fixtures/inference_audit/note_defects_c707_reconstruction.md",
     "expect": [
       "DIRECTION",
+      "DIRECTION",
+      "DIRECTION",
       "LEDGER"
     ],
-    "why": "Cycle 707 claimed 'forces ... unconditional' with the converse never established, and carried no claim ledger. Note HYPOTHESIS does NOT fire here: the note says the eigenvalues are 'analytic', so the keyword is present -- but that is the CONCLUSION, not the hypothesis that the family depends analytically on the coupling. That confusion is exactly the real defect and proximity cannot see it; only the ledger's Hypotheses column catches it."
+    "why": "Cycle 707 carried three configured claim-position necessity assertions with no ledger and invoked Rellich with conclusion keywords in place of the analytic-family hypothesis."
   },
   {
     "id": "hypothesis-omitted",
     "runner": null,
     "note": "tests/fixtures/inference_audit/note_hypothesis_omitted.md",
+    "only": "HYPOTHESIS",
     "expect": [
       "HYPOTHESIS"
     ],
-    "why": "Outright omission of a named theorem's hypotheses, which keyword proximity does catch."
+    "why": "Outright omission of a supported named theorem's hypotheses must fire."
   },
   {
     "id": "c708-headline",
     "runner": null,
     "note": "tests/fixtures/inference_audit/headline_defect_c708_reconstruction.md",
+    "only": "HEADLINE",
     "expect": [
       "HEADLINE"
     ],
-    "why": "Cycle 708 PASSED the first version of this audit and was still rejected: the author recorded the supplied operator-family hypothesis in the ledger and then titled the note 'and Covariance Repairs It Without New Input'. Reviewer: 'Listing the family in the Hypotheses column does not cure the headline claim.' The HEADLINE check is the second layer, derived from that failure."
+    "why": "The marked thesis rests on a supplied operator-family premise while the title claims a repair without new input."
   },
   {
     "id": "c709-thesis-missing",
     "runner": null,
     "note": "tests/fixtures/inference_audit/thesis_missing_c709_reconstruction.md",
+    "only": "THESIS",
     "expect": [
       "THESIS"
     ],
-    "why": "Cycle 709 passed the audit with a complete eight-row ledger that contained no row for its own headline claim. Reviewer: 'most importantly, the central route no-go has no ledger row or genuine falsifier.' Detecting claims in prose was tried and abandoned (an allowlist missed the thesis, a denylist flagged boilerplate); the author must now mark the thesis row explicitly."
+    "why": "A complete component ledger with no exact **thesis** marker must fail."
   },
   {
     "id": "negative-control",
     "runner": null,
     "note": "tests/fixtures/inference_audit/clean_note_negative_control.md",
     "expect": [],
-    "why": "A complete note must pass: a linter that fires on everything is worthless."
+    "why": "A complete note must produce exactly zero findings."
+  },
+  {
+    "id": "missing-input",
+    "runner": null,
+    "note": "tests/fixtures/inference_audit/does_not_exist.md",
+    "expect": [
+      "INPUT"
+    ],
+    "why": "A stale or misspelled requested path must never return clean."
+  },
+  {
+    "id": "malformed-ledger",
+    "runner": null,
+    "note_name": "malformed-ledger.md",
+    "note_lines": [
+      "# Incomplete Schema Demonstrates Passing",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses |",
+      "|---|---|---|---|",
+      "| C0 | **thesis** incomplete schema demonstrates passing | exact runner | [satisfied] finite construction |"
+    ],
+    "expect": [
+      "LEDGER"
+    ],
+    "why": "A four-column lookalike is not the canonical six-column ledger."
+  },
+  {
+    "id": "direction-reversal",
+    "runner": null,
+    "note_name": "direction-reversal.md",
+    "note_lines": [
+      "# Integer Power Response",
+      "",
+      "## Answer",
+      "",
+      "The response requires an integer power.",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** integer power response | exact response calculation | [satisfied] finite response family | shown: the response family is enumerated; claimed: the response is classified | a response outside the classification |",
+      "| C1 | the response requires an integer power | local branch exhibit | [satisfied] one exhibited branch | shown: the mechanism permits an integer power; claimed: the response requires it | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "A verbatim ledger row does not cure permits-to-requires reversal."
+  },
+  {
+    "id": "title-direction",
+    "runner": null,
+    "note_name": "title-direction.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | local branch exhibit | [satisfied] one exhibited branch | shown: the mechanism permits an integer power; claimed: the response requires it | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "Necessity language in the Markdown title is a claim position."
+  },
+  {
+    "id": "mixed-hypothesis-tags",
+    "runner": null,
+    "note_name": "mixed-hypothesis-tags.md",
+    "note_lines": [
+      "# Conditional Tagged Hypothesis Claim",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** conditional tagged hypothesis claim | exact runner | [satisfied] finite construction; analyticity of the family is supplied | shown: exact finite result; claimed: conditional result | a failed finite result |"
+    ],
+    "expect": [
+      "TAG"
+    ],
+    "why": "One tagged entry must not hide a second untagged supplied premise."
+  },
+  {
+    "id": "incidental-thesis-word",
+    "runner": null,
+    "note_name": "incidental-thesis-word.md",
+    "note_lines": [
+      "# Component Result",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | component result | thesis runner row A | [satisfied] finite construction | shown: component result; claimed: component result | a failed component |"
+    ],
+    "expect": [
+      "THESIS"
+    ],
+    "why": "The word thesis outside the Claim cell's exact marker cannot suppress THESIS."
+  },
+  {
+    "id": "secondary-supplied-clean",
+    "runner": null,
+    "note_name": "secondary-supplied-clean.md",
+    "note_lines": [
+      "# Closed Primary Result",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** closed primary result | exhaustive runner | [satisfied] finite exhaustive domain | shown: exhaustive closure; claimed: closed primary result | a missed domain point |",
+      "| C1 | conditional secondary corollary | conditional comparator | [supplied] boundary convention | shown: conditional comparator value; claimed: conditional corollary | a comparator mismatch |"
+    ],
+    "expect": [],
+    "why": "A supplied premise on a separate secondary claim must not demote an independently closed thesis headline."
+  },
+  {
+    "id": "short-thesis-clean",
+    "runner": null,
+    "note_name": "short-thesis-clean.md",
+    "note_lines": [
+      "# Gauss Law",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** Gauss law | exact divergence identity | [satisfied] finite boundary | shown: divergence identity; claimed: Gauss law | a nonzero unmatched flux |"
+    ],
+    "expect": [],
+    "why": "An exactly matching two-word title and thesis must pass without prose padding."
+  },
+  {
+    "id": "escaped-pipe-clean",
+    "runner": null,
+    "note_name": "escaped-pipe-clean.md",
+    "note_lines": [
+      "# Either Case Holds",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** either case holds when A \\| B | exact case split | [satisfied] exhaustive alternatives | shown: both alternatives checked; claimed: either case holds | a third alternative |"
+    ],
+    "expect": [],
+    "why": "An escaped literal pipe inside a cell must not corrupt the six-column parse."
+  },
+  {
+    "id": "theorem-namesakes-clean",
+    "runner": null,
+    "note_name": "theorem-namesakes-clean.md",
+    "note_lines": [
+      "# Theorem Namesakes",
+      "",
+      "Skolem-Noether identifies inner automorphisms of a matrix algebra.",
+      "The matrix-algebra Burnside theorem concerns irreducible algebras."
+    ],
+    "only": "HYPOTHESIS",
+    "expect": [],
+    "why": "Skolem-Noether and matrix-algebra Burnside must not inherit variational-Noether or orbit-counting hypotheses."
+  },
+  {
+    "id": "burnside-orbit-missing",
+    "runner": null,
+    "note_name": "burnside-orbit-missing.md",
+    "note_lines": [
+      "# Orbit Count",
+      "",
+      "By Burnside's lemma, the count is twelve."
+    ],
+    "only": "HYPOTHESIS",
+    "expect": [
+      "HYPOTHESIS"
+    ],
+    "why": "The explicitly identified orbit-counting lemma still requires its finite-group and orbit hypotheses."
   }
 ]

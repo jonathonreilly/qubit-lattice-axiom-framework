@@ -54,17 +54,23 @@ restatement of one in an Answer/Summary/discussion section.
   is an import, and belongs in `ASSUMPTIONS_AND_IMPORTS.md` with a class.
 - **Hypotheses** — every hypothesis of every named result cited, written out,
   each tagged **`[supplied]`** (assumed and unforced) or **`[satisfied]`** (met
-  by construction). The tag is the load-bearing part: it is the distinction
-  whose absence caused the first cycle run under this audit to pass the audit
-  and still be rejected.
+  by construction). Separate multiple hypothesis entries with a semicolon or
+  `<br>` and begin **each entry** with its own tag. The tag is the load-bearing
+  part: it is the distinction whose absence caused the first cycle run under
+  this audit to pass the audit and still be rejected.
   Not the conclusion. The linter's keyword check catches outright omission but
   **cannot** distinguish a hypothesis from a conclusion; this column is the only
   thing that does. A cited theorem whose hypotheses you cannot state is a
   theorem you are not entitled to use.
 - **Shown vs claimed** — what the evidence establishes, then what the sentence
-  asserts, as two clauses. This column exists because "X permits Y" and "Y
-  requires X" are different statements and the second does not follow from the
-  first.
+  asserts, as explicit `shown:` and `claimed:` clauses. This column exists
+  because "X permits Y" and "Y requires X" are different statements and the
+  second does not follow from the first. When the claim uses necessity language,
+  the `shown:` clause must itself record necessity-strength evidence: a checked
+  converse or equivalence, uniqueness, impossibility, or an exact negative
+  existence result. Repeating the necessity word only in `claimed:` does not
+  pass `DIRECTION`; the reviewer still checks whether the recorded evidence is
+  true.
 - **Falsifier** — a concrete state of the world that would make the claim
   false. If you cannot name one, the claim is true by construction and is not a
   result.
@@ -75,12 +81,12 @@ restatement of one in an Answer/Summary/discussion section.
 |---|---|---|
 | `SLICE` | a check row iterating a narrowed domain (`for g in hill[:1]`), leaving the dropped elements untested | iteration position only; a display truncation is ignored |
 | `CLONE` | two functions with identical bodies modulo names, then "verified" to agree | exact structural clones only |
-| `DIRECTION` | a necessity word in claim position with no converse recorded in the ledger | claim positions only — title, `**Theorem`, Answer/Summary sections — since flagging proof internals was too noisy to run |
+| `DIRECTION` | a necessity word in a claim whose matching ledger row has no necessity-strength `shown:` clause | claim positions only — title, `**Theorem`, Answer/Summary/discussion sections; the check verifies an explicit evidence record, while the reviewer judges whether that record is true |
 | `HYPOTHESIS` | a named external theorem invoked with its hypotheses absent nearby | keyword proximity; **does not** catch hypothesis/conclusion confusion |
 | `LEDGER` | a missing ledger, or any empty cell | presence and completeness, not honesty |
 | `TAG` | a hypothesis not marked `[supplied]` or `[satisfied]` | cannot tell whether your tag is honest |
-| `HEADLINE` | any `[supplied]` row while the **title** carries no qualifier | title only; a body that overclaims is the reviewer's job |
-| `THESIS` | no ledger row marked `**thesis**`, or a title the thesis row does not cover | cannot tell whether the row you marked is really your headline claim |
+| `HEADLINE` | the `**thesis**` row has a `[supplied]` hypothesis while the **title** carries no qualifier | title only; supplied hypotheses on separate secondary claims do not demote an independently closed thesis |
+| `THESIS` | not exactly one Claim cell marked `**thesis**`, or a title the marked row does not cover | uses normalized, length-aware title/claim matching; cannot tell whether the row you marked is substantively the headline claim |
 
 The linter is a filter, not a judge. Its self-test
 (`--selftest tests/fixtures/inference_audit/selftest_cases.json`) asserts it
@@ -110,7 +116,9 @@ the note *"…and Covariance Repairs It Without New Input"*. The reviewer's word
 > claim. The inference audit is therefore syntactically complete but not
 > substantively discriminating."
 
-`TAG` and `HEADLINE` are the second layer, added in response.
+`TAG` and `HEADLINE` are the second layer, added in response. `HEADLINE`
+follows the explicitly marked thesis row; a supplied premise on an unrelated
+secondary claim does not force the whole title to become conditional.
 
 The **next** cycle (709) then passed *both* layers and was rejected again, this
 time because its complete eight-row ledger contained no row for its own thesis:
@@ -118,7 +126,8 @@ time because its complete eight-row ledger contained no row for its own thesis:
 > "most importantly, the central route no-go has no ledger row or genuine
 > falsifier."
 
-`THESIS` is the third layer. Two mechanical designs were tried and abandoned
+`THESIS` is the third layer. Exactly one Claim cell carries the literal
+`**thesis**` marker. Two mechanical designs were tried and abandoned
 first — an allowlist of claim-bearing section headings missed the thesis
 (it sat under "Why the route as posed cannot close"), and inverting to a
 denylist flagged metadata and boilerplate in a clean note. Both fail the same
@@ -129,8 +138,9 @@ other claim. The lesson
 generalizes: **a mechanical check makes a defect visible; it does not make you
 honest about it** — and each layer has been defeated by the next cycle finding
 a place the check does not look. Expect that to continue; add the layer rather
-than re-resolving to be careful. If a row is `[supplied]`, the title must say so — the reader
-of a title is exactly the person who will not read the ledger.
+than re-resolving to be careful. If the thesis row is `[supplied]`, the title
+must say so — the reader of a title is exactly the person who will not read the
+ledger.
 
 ## What this does not do
 

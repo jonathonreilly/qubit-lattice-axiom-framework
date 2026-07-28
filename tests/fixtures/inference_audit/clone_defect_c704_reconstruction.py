@@ -39,3 +39,23 @@ def m2_gates_agree():
 
 def _fixtures():
     return [(0, set(), {0: 1}) for _ in range(3)]
+
+
+def one_line_form(rule):
+    return rule[0] != 0
+
+
+def one_line_migrate(rule):
+    return rule[0] != 0
+
+
+LOW_LIMIT = 0
+HIGH_LIMIT = 100
+
+
+def below_low_limit(value):
+    return value < LOW_LIMIT
+
+
+def below_high_limit(value):
+    return value < HIGH_LIMIT

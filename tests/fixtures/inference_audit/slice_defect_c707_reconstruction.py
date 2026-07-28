@@ -20,3 +20,10 @@ def g_valley_sign_control():
     valleys_ok = all(gprime0(g) < 0 for g in valley)
     hills_ok = all(gprime0(g) > 0 for g in hill[:1])
     check("G sign control: valley g'(0)<0, hill g'(0)>0", valleys_ok and hills_ok)
+
+
+def zipped_slice_control():
+    xs = [1, 2, 3, 4]
+    truncated_ok = all(a <= b for a, b in zip(xs, xs[:1]))
+    adjacent_ok = all(a <= b for a, b in zip(xs, xs[1:]))
+    check("zip truncation versus adjacent pairs", truncated_ok and adjacent_ok)

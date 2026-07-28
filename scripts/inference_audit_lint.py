@@ -25,7 +25,8 @@ CLONE       two functions with identical bodies modulo names, then "verified"
             to agree. (cycle 704: `can_form` and `can_migrate_into` written
             with the same body and scanned over 2187 rules.)
 
-DIRECTION   a necessity/forcing word in the note with no recorded converse.
+DIRECTION   a necessity/forcing word in a claim whose matching ledger row has
+            no necessity-strength evidence in its `shown:` clause.
             (cycle 707 row F showed non-self-adjointness PERMITS a half-power
             and claimed half-powers REQUIRE it; cycle 702 showed the scale
             primitive SUPPLIES no dimensionless content and claimed it
@@ -35,8 +36,8 @@ HYPOTHESIS  a named external theorem invoked without its hypotheses stated
             nearby. (cycle 707 invoked Rellich without its analyticity
             hypothesis, then called the conclusion unconditional.)
 
-LEDGER      the note must carry a claim ledger with one row per claim and no
-            empty cells. The columns are the ones that would have caught the
+LEDGER      the note must carry the exact six-column claim-ledger schema with
+            one row per claim and no empty cells. The columns are the ones that would have caught the
             remaining defects: `Support` empty catches an imported premise
             presented as framework content (cycle 705's `conf`); `Falsifier`
             empty catches a statement true by construction (cycle 701's
@@ -49,9 +50,12 @@ from __future__ import annotations
 
 import argparse
 import ast
+import copy
 import json
 import re
 import sys
+from collections import Counter
+from dataclasses import dataclass
 from pathlib import Path
 
 # Modal words that assert a direction stronger than "exhibited".
@@ -61,18 +65,53 @@ NECESSITY = re.compile(
     re.I,
 )
 
-# External results whose hypotheses are routinely dropped when cited.
-NAMED_THEOREMS = {
-    "rellich": ["analytic", "self-adjoint"],
-    "kato": ["analytic", "self-adjoint"],
-    "gleason": ["dimension", "frame"],
-    "busch": ["effect", "frame"],
-    "burnside": ["finite group", "orbit"],
-    "hellmann": ["eigenvector", "normalized"],
-    "orbit-stabilizer": ["finite", "group action"],
-    "noether": ["continuous", "symmetry"],
-    "rayleigh": ["self-adjoint"],
-}
+# External results whose hypotheses are routinely dropped when cited.  Match
+# theorem identities, not surname substrings: "Noether" is not
+# "Skolem--Noether", and the orbit-counting Burnside lemma is not Burnside's
+# irreducible-matrix-algebra theorem.
+NAMED_THEOREMS = (
+    ("rellich", re.compile(r"\brellich(?:'s)?(?:\s+theorem)?\b", re.I),
+     ("analytic", "self-adjoint")),
+    ("kato", re.compile(r"\bkato(?:'s)?(?:\s+theorem)?\b", re.I),
+     ("analytic", "self-adjoint")),
+    ("gleason", re.compile(r"\bgleason(?:'s)?(?:\s+theorem)?\b", re.I),
+     ("dimension", "frame")),
+    ("busch", re.compile(r"\bbusch(?:'s)?(?:\s+theorem)?\b", re.I),
+     ("effect", "frame")),
+    (
+        "burnside orbit-counting lemma",
+        re.compile(
+            r"\bburnside(?:'s)?\s+(?:lemma|orbit[- ]counting"
+            r"(?:\s+(?:lemma|theorem))?)\b",
+            re.I,
+        ),
+        ("finite group", "orbit"),
+    ),
+    (
+        "hellmann-feynman",
+        re.compile(r"\bhellmann(?:[-\N{EN DASH}\N{EM DASH} ]feynman)?\b", re.I),
+        ("eigenvector", "normalized"),
+    ),
+    (
+        "orbit-stabilizer",
+        re.compile(r"\borbit[-\N{EN DASH}\N{EM DASH} ]stabilizer\b", re.I),
+        ("finite", "group action"),
+    ),
+    (
+        "variational noether",
+        re.compile(
+            r"(?<![-\N{EN DASH}\N{EM DASH}])\bnoether(?:'s)?\s+"
+            r"(?:theorem|identity)\b",
+            re.I,
+        ),
+        ("continuous", "symmetry"),
+    ),
+    (
+        "rayleigh-ritz",
+        re.compile(r"\brayleigh(?:[-\N{EN DASH}\N{EM DASH} ]ritz)?\b", re.I),
+        ("self-adjoint",),
+    ),
+)
 
 SLICE_RE = re.compile(r"\[\s*:\s*-?\d+\s*\]|\[\s*-?\d+\s*:\s*\]|\bislice\(|\.head\(")
 JUSTIFY_RE = re.compile(r"#.*\b(justif|because|why|deliberat|intentional|see )", re.I)
@@ -84,6 +123,23 @@ class Finding:
 
     def __str__(self) -> str:
         return f"[{self.check}] {self.where}: {self.detail}"
+
+
+@dataclass(frozen=True)
+class InlineSource:
+    """Path-like source used by deterministic, file-free self-test cases."""
+
+    name: str
+    text: str
+
+    def read_text(self) -> str:
+        return self.text
+
+    def exists(self) -> bool:
+        return True
+
+    def __str__(self) -> str:
+        return self.name
 
 
 # ---------------------------------------------------------------------------
@@ -125,21 +181,55 @@ def check_slice(runner: Path) -> list[Finding]:
                 iterables.append(node.iter)
             elif isinstance(node, (ast.ListComp, ast.SetComp, ast.GeneratorExp, ast.DictComp)):
                 iterables.extend(g.iter for g in node.generators)
-        # `zip(xs, xs[1:])` is the adjacent-pairs idiom, not a domain restriction:
-        # it pairs consecutive elements and tests every pair. Flagging it made the
-        # check fire on a ubiquitous pattern, and a check that cries wolf on
-        # idiomatic code gets ignored -- which is worse than not having it.
+        # Exempt only verified adjacent-pair idioms.  The earlier implementation
+        # exempted every sliced argument whose base also appeared unsliced, so
+        # `zip(xs, xs[:1])` silently truncated a check and still passed.
         adjacent_pair_slices = set()
+
+        def int_value(node):
+            if isinstance(node, ast.Constant) and isinstance(node.value, int):
+                return node.value
+            if (isinstance(node, ast.UnaryOp) and isinstance(node.op, ast.USub)
+                    and isinstance(node.operand, ast.Constant)
+                    and isinstance(node.operand.value, int)):
+                return -node.operand.value
+            return None
+
+        def is_tail_from_one(node):
+            return (
+                isinstance(node, ast.Subscript)
+                and isinstance(node.slice, ast.Slice)
+                and int_value(node.slice.lower) == 1
+                and node.slice.upper is None
+                and node.slice.step is None
+            )
+
+        def is_drop_last(node):
+            return (
+                isinstance(node, ast.Subscript)
+                and isinstance(node.slice, ast.Slice)
+                and node.slice.lower is None
+                and int_value(node.slice.upper) == -1
+                and node.slice.step is None
+            )
+
         for it in iterables:
             for call in ast.walk(it):
                 if (isinstance(call, ast.Call) and isinstance(call.func, ast.Name)
                         and call.func.id == "zip" and len(call.args) >= 2):
-                    bases = {ast.dump(a) for a in call.args
-                             if not isinstance(a, ast.Subscript)}
-                    for a in call.args:
-                        if (isinstance(a, ast.Subscript)
-                                and ast.dump(a.value) in bases):
-                            adjacent_pair_slices.add(id(a))
+                    unsliced = {
+                        ast.dump(a) for a in call.args
+                        if not isinstance(a, ast.Subscript)
+                    }
+                    tails = [a for a in call.args if is_tail_from_one(a)]
+                    drops = [a for a in call.args if is_drop_last(a)]
+                    for tail in tails:
+                        base = ast.dump(tail.value)
+                        if base in unsliced:
+                            adjacent_pair_slices.add(id(tail))
+                        for drop in drops:
+                            if ast.dump(drop.value) == base:
+                                adjacent_pair_slices.update((id(tail), id(drop)))
 
         for it in iterables:
             for sub in ast.walk(it):
@@ -162,19 +252,91 @@ def check_slice(runner: Path) -> list[Finding]:
     return out
 
 
-def _normalize_body(fn: ast.FunctionDef) -> str:
-    """Dump a function body with all identifiers erased, so clones collide."""
-    class Anon(ast.NodeTransformer):
+def _normalize_body(fn: ast.FunctionDef | ast.AsyncFunctionDef) -> str:
+    """Alpha-normalize local bindings while preserving semantic free names."""
+
+    fn_copy = copy.deepcopy(fn)
+    if (
+        fn_copy.body
+        and isinstance(fn_copy.body[0], ast.Expr)
+        and isinstance(fn_copy.body[0].value, ast.Constant)
+        and isinstance(fn_copy.body[0].value.value, str)
+    ):
+        fn_copy.body = fn_copy.body[1:]
+
+    ordered: list[str] = []
+    global_or_nonlocal: set[str] = set()
+
+    def add(name: str | None) -> None:
+        if name and name not in ordered:
+            ordered.append(name)
+
+    args = fn_copy.args
+    for arg in [*args.posonlyargs, *args.args, *args.kwonlyargs]:
+        add(arg.arg)
+    if args.vararg:
+        add(args.vararg.arg)
+    if args.kwarg:
+        add(args.kwarg.arg)
+
+    class BindingCollector(ast.NodeVisitor):
+        def visit_FunctionDef(self, node):  # noqa: N802
+            return
+
+        def visit_AsyncFunctionDef(self, node):  # noqa: N802
+            return
+
+        def visit_Lambda(self, node):  # noqa: N802
+            return
+
+        def visit_ClassDef(self, node):  # noqa: N802
+            return
+
         def visit_Name(self, node):  # noqa: N802
-            return ast.copy_location(ast.Name(id="_", ctx=node.ctx), node)
+            if isinstance(node.ctx, ast.Store):
+                add(node.id)
+
+        def visit_Import(self, node):  # noqa: N802
+            for alias in node.names:
+                add(alias.asname or alias.name.split(".", 1)[0])
+
+        def visit_ImportFrom(self, node):  # noqa: N802
+            for alias in node.names:
+                add(alias.asname or alias.name)
+
+        def visit_ExceptHandler(self, node):  # noqa: N802
+            add(node.name)
+            self.generic_visit(node)
+
+        def visit_Global(self, node):  # noqa: N802
+            global_or_nonlocal.update(node.names)
+
+        def visit_Nonlocal(self, node):  # noqa: N802
+            global_or_nonlocal.update(node.names)
+
+    collector = BindingCollector()
+    for statement in fn_copy.body:
+        collector.visit(statement)
+    ordered = [name for name in ordered if name not in global_or_nonlocal]
+    mapping = {name: f"_local_{i}" for i, name in enumerate(ordered)}
+
+    class LocalAlphaNormalizer(ast.NodeTransformer):
+        def visit_Name(self, node):  # noqa: N802
+            if node.id in mapping:
+                return ast.copy_location(
+                    ast.Name(id=mapping[node.id], ctx=node.ctx), node
+                )
+            return node
 
         def visit_arg(self, node):  # noqa: N802
-            return ast.copy_location(ast.arg(arg="_", annotation=None), node)
+            if node.arg in mapping:
+                node.arg = mapping[node.arg]
+            return self.generic_visit(node)
 
-    body = ast.Module(body=[ast.copy_location(s, s) for s in fn.body], type_ignores=[])
-    stripped = [s for s in body.body if not (isinstance(s, ast.Expr) and isinstance(s.value, ast.Constant) and isinstance(s.value.value, str))]
-    body = ast.Module(body=stripped, type_ignores=[])
-    return ast.dump(Anon().visit(body))
+    fn_copy.name = "_function"
+    normalized = LocalAlphaNormalizer().visit(fn_copy)
+    ast.fix_missing_locations(normalized)
+    return ast.dump(normalized, include_attributes=False)
 
 
 def check_clone(runner: Path) -> list[Finding]:
@@ -185,8 +347,8 @@ def check_clone(runner: Path) -> list[Finding]:
     except SyntaxError:
         return out
     seen: dict[str, str] = {}
-    for node in ast.walk(tree):
-        if isinstance(node, ast.FunctionDef) and len(node.body) > 1:
+    for node in tree.body:
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
             key = _normalize_body(node)
             if key in seen and seen[key] != node.name:
                 out.append(
@@ -219,7 +381,7 @@ def _sentences(text: str) -> list[tuple[int, str]]:
 
 
 CLAIM_SECTION = re.compile(
-    r"^#{1,3}\s*(answer|claim|result|summary|consequence|why|"
+    r"^#{1,3}\s*(answer|claim|result|summary|discussion|consequence|why|"
     r"what this (shows|establishes)|the no.go|obstruction|"
     r"cannot close|does not close)",
     re.I,
@@ -240,50 +402,80 @@ def _claim_positions(text: str) -> set[int]:
     out: set[int] = set()
     in_claim = False
     for i, line in enumerate(lines, 1):
+        if i == 1:
+            out.add(i)
         if ANY_HEADING.match(line):
             in_claim = bool(CLAIM_SECTION.match(line))
             continue
-        if i == 1 or in_claim or "**Theorem" in line:
+        if in_claim or "**Theorem" in line:
             out.add(i)
     return out
 
 
+def _claim_words(text: str) -> list[str]:
+    cleaned = re.sub(r"\*\*\s*thesis\s*\*\*", " ", text, flags=re.I)
+    return re.findall(r"[a-z0-9]+", cleaned.lower())
+
+
+def _claim_text_matches(left: str, right: str) -> bool:
+    a = " ".join(_claim_words(left))
+    b = " ".join(_claim_words(right))
+    if not a or not b:
+        return False
+    if a in b or b in a:
+        return True
+    aset, bset = set(a.split()), set(b.split())
+    shorter = min(len(aset), len(bset))
+    if shorter == 0:
+        return False
+    required = min(3, shorter)
+    return len(aset & bset) >= required and len(aset & bset) / shorter >= 0.8
+
+
+DIRECTION_SUPPORT = re.compile(
+    r"\b(requires?|forced?|necessary|must|cannot|does not exist|"
+    r"no [^;]{0,80} exists|unreachable|impossible|unique(?:ly)?|selects?|"
+    r"if and only if|iff|equivalent|converse)\b",
+    re.I,
+)
+SHOWN_CLAUSE = re.compile(
+    r"\bshown\s*:\s*(.*?)(?=(?:;|<br\s*/?>)\s*claimed\s*:|$)",
+    re.I,
+)
+
+
 def check_direction(note: Path, ledger: str) -> list[Finding]:
-    """Necessity claims must have their converse recorded in the ledger."""
+    """Necessity claims need a matching row whose shown clause supports it."""
     out: list[Finding] = []
     text = note.read_text()
     claim_lines = _claim_positions(text)
+    rows = list(_ledger_rows(ledger))
     for lineno, sent in _sentences(text):
         if lineno not in claim_lines:
             continue
         m = NECESSITY.search(sent)
         if not m:
             continue
-        # a converse must be recorded somewhere in the ledger for this sentence
-        # Coverage is content-word overlap against the ledger ROWS, not a
-        # prefix match. A prefix match is brittle whenever a sentence opens
-        # with an inline formula ("`G_0 = H^{-1}` does not exist and ...");
-        # the first six tokens are then punctuation debris and can never be
-        # found. Overlap asks the question that matters: does some ledger row
-        # actually talk about this claim?
-        def content(t: str) -> set:
-            words = re.sub(r"[^a-z0-9 ]", " ", t.lower()).split()
-            return {w for w in words if len(w) > 3}
-
-        sent_words = content(sent)
-        covered = False
-        for row in ledger.splitlines():
-            if len(sent_words & content(row)) >= 4:
-                covered = True
+        matching = [cells for cells in rows if _claim_text_matches(sent, cells[1])]
+        supported = False
+        for cells in matching:
+            shown_match = SHOWN_CLAUSE.search(cells[4])
+            if shown_match and DIRECTION_SUPPORT.search(shown_match.group(1)):
+                supported = True
                 break
-        if covered:
+        if supported:
             continue
+        reason = (
+            "no matching claim-ledger row"
+            if not matching
+            else "the matching row's `shown:` clause records no converse, "
+                 "equivalence, uniqueness, impossibility, or other necessity-strength evidence"
+        )
         out.append(
             Finding(
                 "DIRECTION",
                 f"{note.name}:{lineno}",
-                f'asserts "{m.group(0)}" but no claim-ledger row covers '
-                f"it: \"{sent[:70]}...\"",
+                f'asserts "{m.group(0)}" but {reason}: \"{sent[:70]}...\"',
             )
         )
     return out
@@ -294,8 +486,8 @@ def check_hypothesis(note: Path) -> list[Finding]:
     out: list[Finding] = []
     text = note.read_text()
     low = text.lower()
-    for name, hyps in NAMED_THEOREMS.items():
-        for m in re.finditer(re.escape(name), low):
+    for name, pattern, hyps in NAMED_THEOREMS:
+        for m in pattern.finditer(text):
             window = low[max(0, m.start() - 400) : m.start() + 400]
             missing = [h for h in hyps if h not in window]
             if missing:
@@ -310,14 +502,67 @@ def check_hypothesis(note: Path) -> list[Finding]:
     return out
 
 
-LEDGER_HEADER = re.compile(r"\|\s*ID\s*\|\s*Claim\s*\|\s*Support\s*\|", re.I)
+LEDGER_HEADERS = (
+    "id",
+    "claim",
+    "support",
+    "hypotheses",
+    "shown vs claimed",
+    "falsifier",
+)
+
+
+def _split_markdown_row(line: str) -> list[str]:
+    """Split a Markdown table row on unescaped pipes."""
+
+    stripped = line.strip()
+    if stripped.startswith("|"):
+        stripped = stripped[1:]
+    if stripped.endswith("|") and not stripped.endswith(r"\|"):
+        stripped = stripped[:-1]
+    cells: list[str] = []
+    buf: list[str] = []
+    escaped = False
+    for char in stripped:
+        if escaped:
+            buf.append(char)
+            escaped = False
+        elif char == "\\":
+            escaped = True
+        elif char == "|":
+            cells.append("".join(buf).strip())
+            buf = []
+        else:
+            buf.append(char)
+    if escaped:
+        buf.append("\\")
+    cells.append("".join(buf).strip())
+    return cells
+
+
+def _is_separator_row(cells: list[str]) -> bool:
+    return bool(cells) and all(
+        re.fullmatch(r":?-{3,}:?", cell.replace(" ", "")) for cell in cells
+    )
 
 
 def check_ledger(note: Path) -> tuple[list[Finding], str]:
     """The note must carry a complete claim ledger."""
     text = note.read_text()
     out: list[Finding] = []
-    if not LEDGER_HEADER.search(text):
+    lines = text.splitlines()
+    header_at = None
+    header_cells: list[str] = []
+    for index, line in enumerate(lines):
+        if not line.strip().startswith("|"):
+            continue
+        cells = _split_markdown_row(line)
+        lowered = tuple(cell.lower() for cell in cells)
+        if lowered[:3] == LEDGER_HEADERS[:3]:
+            header_at = index
+            header_cells = cells
+            break
+    if header_at is None:
         return (
             [
                 Finding(
@@ -329,18 +574,51 @@ def check_ledger(note: Path) -> tuple[list[Finding], str]:
             ],
             "",
         )
-    rows, in_tbl, ledger_text = [], False, []
-    for i, line in enumerate(text.splitlines(), 1):
-        if LEDGER_HEADER.search(line):
-            in_tbl = True
-            continue
-        if in_tbl:
-            if not line.strip().startswith("|"):
-                break
+    if tuple(cell.lower() for cell in header_cells) != LEDGER_HEADERS:
+        out.append(
+            Finding(
+                "LEDGER",
+                f"{note.name}:{header_at + 1}",
+                "malformed claim-ledger header; expected exactly "
+                "`| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |`",
+            )
+        )
+        return out, ""
+
+    rows: list[tuple[int, list[str]]] = []
+    ledger_text: list[str] = []
+    separator_seen = False
+    for index in range(header_at + 1, len(lines)):
+        line = lines[index]
+        if not line.strip().startswith("|"):
+            break
+        cells = _split_markdown_row(line)
+        if _is_separator_row(cells):
             ledger_text.append(line)
-            if set(line.replace("|", "").strip()) <= set("-: "):
-                continue
-            rows.append((i, [c.strip() for c in line.strip().strip("|").split("|")]))
+            separator_seen = True
+            if len(cells) != len(LEDGER_HEADERS):
+                out.append(
+                    Finding(
+                        "LEDGER",
+                        f"{note.name}:{index + 1}",
+                        "claim-ledger separator does not have exactly six cells",
+                    )
+                )
+            continue
+        ledger_text.append(line)
+        if len(cells) != len(LEDGER_HEADERS):
+            out.append(
+                Finding(
+                    "LEDGER",
+                    f"{note.name}:{index + 1}",
+                    f"claim-ledger row has {len(cells)} cells; exactly six are required "
+                    "and literal pipes inside cells must be escaped as `\\|`",
+                )
+            )
+            continue
+        rows.append((index + 1, cells))
+    if not separator_seen:
+        out.append(Finding("LEDGER", note.name, "claim ledger has no separator row"))
     if not rows:
         out.append(Finding("LEDGER", note.name, "claim ledger has no rows"))
     for lineno, cells in rows:
@@ -366,20 +644,31 @@ QUALIFIER = re.compile(
 )
 SUPPLIED_TAG = re.compile(r"\[supplied\]", re.I)
 SATISFIED_TAG = re.compile(r"\[satisfied\]", re.I)
+THESIS_MARKER = re.compile(r"\*\*\s*thesis\s*\*\*", re.I)
+TAGGED_HYPOTHESIS = re.compile(
+    r"^(?:\*\*)?\[(supplied|satisfied)\](?:\*\*)?(?:\s|$)",
+    re.I,
+)
 
 
 def _ledger_rows(ledger: str):
     for row in ledger.splitlines():
-        if set(row.replace("|", "").strip()) <= set("-: "):
+        cells = _split_markdown_row(row)
+        if _is_separator_row(cells):
             continue
-        cells = [c.strip() for c in row.strip().strip("|").split("|")]
-        if len(cells) >= 4:
+        if len(cells) == len(LEDGER_HEADERS):
             yield cells
 
 
+def _thesis_rows(ledger: str) -> list[list[str]]:
+    return [
+        cells for cells in _ledger_rows(ledger)
+        if THESIS_MARKER.search(cells[1])
+    ]
+
+
 def check_headline(note: Path) -> list[Finding]:
-    """A claim resting on a SUPPLIED hypothesis may not appear unqualified in
-    the title.
+    """A thesis resting on a SUPPLIED hypothesis needs a qualified title.
 
     This check exists because the first cycle run under the inference audit
     passed the audit and was still rejected for exactly the failure the audit
@@ -406,7 +695,10 @@ def check_headline(note: Path) -> list[Finding]:
     title = lines[0] if lines else ""
 
     _, ledger = check_ledger(note)
-    supplied = [c[0] for c in _ledger_rows(ledger) if SUPPLIED_TAG.search(c[3])]
+    supplied = [
+        cells[0] for cells in _thesis_rows(ledger)
+        if SUPPLIED_TAG.search(cells[3])
+    ]
     if not supplied:
         return out
     if QUALIFIER.search(title):
@@ -415,7 +707,7 @@ def check_headline(note: Path) -> list[Finding]:
         Finding(
             "HEADLINE",
             f"{note.name}:1",
-            f"rows {supplied} rest on [supplied] hypotheses, but the title carries no "
+            f"thesis rows {supplied} rest on [supplied] hypotheses, but the title carries no "
             f"qualifier. A title that advertises an achievement while a load-bearing "
             f"row is unforced overstates the result -- qualify the title or move the "
             f"claim out of it",
@@ -449,7 +741,7 @@ def check_thesis(note: Path, ledger: str) -> list[Finding]:
     title = text.splitlines()[0] if text else ""
 
     rows = list(_ledger_rows(ledger))
-    thesis = [c for c in rows if re.search(r"\bthesis\b", " ".join(c), re.I)]
+    thesis = [cells for cells in rows if THESIS_MARKER.search(cells[1])]
     if not thesis:
         out.append(
             Finding(
@@ -461,12 +753,17 @@ def check_thesis(note: Path, ledger: str) -> list[Finding]:
             )
         )
         return out
-
-    def content(t: str) -> set:
-        return {w for w in re.sub(r"[^a-z0-9 ]", " ", t.lower()).split() if len(w) > 4}
-
-    tw = content(title)
-    if not any(len(tw & content(c[1])) >= 3 for c in thesis):
+    if len(thesis) > 1:
+        out.append(
+            Finding(
+                "THESIS",
+                f"{note.name}",
+                f"claim ledger has {len(thesis)} `**thesis**` rows; exactly one "
+                "headline claim is required",
+            )
+        )
+        return out
+    if not _claim_text_matches(title, thesis[0][1]):
         out.append(
             Finding(
                 "THESIS",
@@ -487,12 +784,23 @@ def check_hypothesis_tags(note: Path) -> list[Finding]:
         hyp = cells[3]
         if hyp.lower() in TRIVIAL_HYP or len(hyp) < 8:
             continue
-        if not (SUPPLIED_TAG.search(hyp) or SATISFIED_TAG.search(hyp)):
+        entries = [
+            entry.strip()
+            for entry in re.split(r"\s*(?:;|<br\s*/?>)\s*", hyp, flags=re.I)
+            if entry.strip()
+        ]
+        untagged = [
+            entry for entry in entries
+            if entry.lower() not in TRIVIAL_HYP
+            and not TAGGED_HYPOTHESIS.match(entry)
+        ]
+        if untagged:
             out.append(
                 Finding(
                     "TAG",
                     f"{note.name}",
-                    f"row `{cells[0]}` hypothesis is untagged; mark each as "
+                    f"row `{cells[0]}` has untagged hypothesis entries "
+                    f"{untagged}; mark each as "
                     f"`[supplied]` (assumed, unforced) or `[satisfied]` (met by "
                     f"construction) -- the distinction is what the headline check needs",
                 )
@@ -506,21 +814,72 @@ TRIVIAL_HYP = {"", "-", "none", "n/a", "none needed"}
 # ---------------------------------------------------------------------------
 
 
-def run(runner: Path | None, note: Path | None) -> list[Finding]:
+def run(runner: Path | InlineSource | None, note: Path | InlineSource | None) -> list[Finding]:
     findings: list[Finding] = []
     ledger = ""
-    if note and note.exists():
-        led_findings, ledger = check_ledger(note)
-        findings += led_findings
-        findings += check_hypothesis(note)
-        findings += check_direction(note, ledger)
-        findings += check_headline(note)
-        findings += check_hypothesis_tags(note)
-        findings += check_thesis(note, ledger)
-    if runner and runner.exists():
-        findings += check_slice(runner)
-        findings += check_clone(runner)
+    if note:
+        if not note.exists():
+            findings.append(Finding("INPUT", str(note), "note does not exist"))
+        else:
+            led_findings, ledger = check_ledger(note)
+            findings += led_findings
+            findings += check_hypothesis(note)
+            findings += check_direction(note, ledger)
+            findings += check_headline(note)
+            findings += check_hypothesis_tags(note)
+            findings += check_thesis(note, ledger)
+    if runner:
+        if not runner.exists():
+            findings.append(Finding("INPUT", str(runner), "runner does not exist"))
+        else:
+            findings += check_slice(runner)
+            findings += check_clone(runner)
     return findings
+
+
+def _case_source(case: dict, kind: str) -> Path | InlineSource | None:
+    text_key = f"{kind}_text"
+    lines_key = f"{kind}_lines"
+    if text_key in case or lines_key in case:
+        text = (
+            case[text_key]
+            if text_key in case
+            else "\n".join(case[lines_key]) + "\n"
+        )
+        return InlineSource(
+            case.get(f"{kind}_name", f"{case['id']}-{kind}"),
+            text,
+        )
+    value = case.get(kind)
+    return Path(value) if value else None
+
+
+def _run_selftest_case(
+    case: dict,
+    runner: Path | InlineSource | None,
+    note: Path | InlineSource | None,
+) -> list[Finding]:
+    only = case.get("only")
+    if not only:
+        return run(runner, note)
+    if only == "HYPOTHESIS" and note and note.exists():
+        return check_hypothesis(note)
+    if only == "HEADLINE" and note and note.exists():
+        return check_headline(note)
+    if only == "THESIS" and note and note.exists():
+        _, ledger = check_ledger(note)
+        return check_thesis(note, ledger)
+    if only == "SLICE" and runner and runner.exists():
+        return check_slice(runner)
+    if only == "CLONE" and runner and runner.exists():
+        return check_clone(runner)
+    return [
+        Finding(
+            "SELFTEST",
+            case["id"],
+            f"unsupported or unavailable focused check `{only}`",
+        )
+    ]
 
 
 def selftest(cases_path: Path) -> int:
@@ -530,15 +889,20 @@ def selftest(cases_path: Path) -> int:
     print("Inference-audit linter self-test against shipped defects")
     print("=" * 74)
     for case in cases:
-        runner = Path(case["runner"]) if case.get("runner") else None
-        note = Path(case["note"]) if case.get("note") else None
-        want = set(case["expect"])
-        got = {f.check for f in run(runner, note)}
-        ok = want <= got
+        runner = _case_source(case, "runner")
+        note = _case_source(case, "note")
+        want = Counter(case["expect"])
+        got = Counter(
+            finding.check for finding in _run_selftest_case(case, runner, note)
+        )
+        ok = want == got
         status = "PASS" if ok else "FAIL"
         if not ok:
             failures += 1
-        print(f"[{status}] {case['id']:<24} expect {sorted(want)}  got {sorted(got)}")
+        print(
+            f"[{status}] {case['id']:<24} "
+            f"expect {dict(sorted(want.items()))}  got {dict(sorted(got.items()))}"
+        )
         print(f"        {case['why']}")
     print("=" * 74)
     print(f"{len(cases) - failures} PASS / {failures} FAIL")
@@ -553,7 +917,16 @@ def main() -> int:
     args = ap.parse_args()
 
     if args.selftest:
+        if args.runner or args.note:
+            ap.error("--selftest cannot be combined with --runner or --note")
+        if not args.selftest.is_file():
+            ap.error(f"self-test case file is not a readable regular file: {args.selftest}")
         return selftest(args.selftest)
+    if not (args.runner or args.note):
+        ap.error("provide --note and/or --runner, or use --selftest")
+    for label, path in (("runner", args.runner), ("note", args.note)):
+        if path and not path.is_file():
+            ap.error(f"{label} is not a readable regular file: {path}")
 
     findings = run(args.runner, args.note)
     for f in findings:

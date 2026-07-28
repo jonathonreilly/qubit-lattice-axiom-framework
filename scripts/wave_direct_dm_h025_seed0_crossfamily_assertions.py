@@ -27,6 +27,8 @@ import wave_direct_dm_h025_fam2_seed0_control_batch as fam2_source
 AUDIT_TIMEOUT_SEC = 60
 AUDIT_INPUT_PATHS = (
     "docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md",
+    "docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md",
+    "docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
     "scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py",
     "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py",
     "logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt",
@@ -36,6 +38,9 @@ ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md"
 SELECTED_STRENGTH = 0.004
 EXPECTED_STRENGTHS = {0.0, 0.002, 0.004, 0.008}
+SIX_DECIMAL_HALF_UNIT = 0.5e-6
+TWO_DECIMAL_PERCENT_HALF_UNIT = 0.005
+FLOAT_EPSILON = 1e-12
 
 
 HEADER_RE = re.compile(
@@ -56,6 +61,7 @@ SPREAD_RE = re.compile(r"\|delta_hist/s\| spread\s*=\s*(?P<value>[-+0-9.]+)%")
 @dataclass(frozen=True)
 class SourceSpec:
     family: str
+    source_note_path: str
     runner_path: str
     log_path: str
     runner_sha256: str
@@ -65,6 +71,7 @@ class SourceSpec:
 SOURCES = (
     SourceSpec(
         family="Fam1",
+        source_note_path="docs/WAVE_DIRECT_DM_H025_FAM1_SEED0_CONTROL_NOTE.md",
         runner_path="scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py",
         log_path="logs/2026-04-08-wave-direct-dm-h025-control-fam1-seed0.txt",
         runner_sha256="ad4671d0c347b6ec9c6c7602e83e262986425306bf7b6018893f653bf3f7b183",
@@ -72,6 +79,7 @@ SOURCES = (
     ),
     SourceSpec(
         family="Fam2",
+        source_note_path="docs/WAVE_DIRECT_DM_H025_FAM2_SEED0_CONTROL_NOTE.md",
         runner_path="scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py",
         log_path="logs/2026-04-08-wave-direct-dm-h025-control-fam2-seed0.txt",
         runner_sha256="06127f24dfc9a2efd0e86c1e7a921e10e423e7bbb083d973ca7d10902dbeb22d",
@@ -102,8 +110,8 @@ def check_claim_surface() -> None:
         "**Claim type:** bounded_theorem",
         "bounded finite cross-note proposition",
         "exact SHA-pinned",
-        "direct evidence artifacts",
-        "Independent re-audit is required",
+        "source computation and SHA-256",
+        "Independent re-audit must",
         "SHA_PINNED_TWO_ROW_CONDITIONAL_NUMERICAL_PROPOSITION",
         "does not inherit a retained verdict",
     )
@@ -116,9 +124,26 @@ def check_claim_surface() -> None:
         and "WAVE_DIRECT_DM_H025_SEED0_CLAIM_TYPE=META" not in note,
         "source note retained stale meta classification",
     )
+    for spec in SOURCES:
+        required_packet_markers = (
+            Path(spec.source_note_path).name,
+            spec.runner_path,
+            spec.log_path,
+            spec.runner_sha256,
+            spec.log_sha256,
+        )
+        require(
+            all(marker in note for marker in required_packet_markers),
+            f"{spec.family}: source note does not display the runner/log pins "
+            "and authority link used by the certificate",
+        )
 
 
 def check_source_packet(spec: SourceSpec) -> None:
+    require(
+        (ROOT / spec.source_note_path).is_file(),
+        f"{spec.family}: source authority note is missing",
+    )
     require((ROOT / spec.runner_path).is_file(), f"{spec.family}: source runner is missing")
     require((ROOT / spec.log_path).is_file(), f"{spec.family}: frozen log is missing")
     runner_sha = hashlib.sha256((ROOT / spec.runner_path).read_bytes()).hexdigest()
@@ -142,6 +167,63 @@ def check_source_packet(spec: SourceSpec) -> None:
     require(
         set(module.STRENGTHS) == EXPECTED_STRENGTHS,
         f"{spec.family}: source module strength ladder drifted",
+    )
+
+
+def check_display_identities(
+    family: str, strength: float, row: dict[str, float]
+) -> None:
+    early = row["dM(early)"]
+    late = row["dM(late)"]
+    delta = row["delta_hist"]
+    ratio_percent = row["R_hist"]
+
+    if strength == 0.0:
+        require(
+            all(value == 0.0 for value in (early, late, delta, ratio_percent)),
+            f"{family}: displayed S=0 identity is not exact",
+        )
+        return
+
+    displayed_delta = early - late
+    delta_tolerance = 3.0 * SIX_DECIMAL_HALF_UNIT + FLOAT_EPSILON
+    require(
+        abs(delta - displayed_delta) <= delta_tolerance,
+        f"{family}: D=dM(early)-dM(late) fails at S={strength}",
+    )
+
+    scaled = row["delta_hist/s"]
+    scaled_tolerance = (
+        SIX_DECIMAL_HALF_UNIT / strength
+        + SIX_DECIMAL_HALF_UNIT
+        + FLOAT_EPSILON
+    )
+    require(
+        abs(scaled - delta / strength) <= scaled_tolerance,
+        f"{family}: Q=D/S fails at S={strength}",
+    )
+
+    denominator = max(abs(early), abs(late))
+    denominator_floor = denominator - SIX_DECIMAL_HALF_UNIT
+    require(
+        denominator_floor > 0.0,
+        f"{family}: R denominator is unresolved at S={strength}",
+    )
+    displayed_ratio_percent = delta / denominator * 100.0
+    ratio_tolerance = (
+        100.0
+        * (
+            SIX_DECIMAL_HALF_UNIT / denominator_floor
+            + abs(delta)
+            * SIX_DECIMAL_HALF_UNIT
+            / (denominator_floor * denominator_floor)
+        )
+        + TWO_DECIMAL_PERCENT_HALF_UNIT
+        + FLOAT_EPSILON
+    )
+    require(
+        abs(ratio_percent - displayed_ratio_percent) <= ratio_tolerance,
+        f"{family}: R=D/max(|dM|) fails at S={strength}",
     )
 
 
@@ -197,6 +279,7 @@ def parse_log(spec: SourceSpec) -> dict[str, object]:
         if strength > 0:
             needed.add("delta_hist/s")
         require(needed.issubset(row), f"{spec.family}: incomplete row at S={strength}")
+        check_display_identities(spec.family, strength, row)
 
     null_delta = rows[0.0]["delta_hist"]
     require(
@@ -253,10 +336,10 @@ def main() -> int:
         )
     print("WAVE_DIRECT_DM_H025_SEED0_SHARED_SIGN=negative")
     print("WAVE_DIRECT_DM_H025_SEED0_COMMON_ORDERING=Fam2_deeper_than_Fam1_at_strength_0.004")
+    print("WAVE_DIRECT_DM_H025_SEED0_DISPLAY_IDENTITIES_CHECKED=TRUE")
     print("WAVE_DIRECT_DM_H025_SEED0_CONFIGURED_LADDER_CHECKS=TRUE")
-    print("WAVE_DIRECT_DM_H025_SEED0_PORTABILITY_LAW=FALSE")
-    print("WAVE_DIRECT_DM_H025_STABLE_AMPLITUDE_LAW=FALSE")
-    print("RESIDUAL_SCOPE=fam3_family_wide_portability_and_structural_magnitude_law_not_claimed")
+    print("WAVE_DIRECT_DM_H025_SEED0_SCOPE=EXACT_TWO_SHA_PINNED_SEED0_H025_LADDERS")
+    print("WAVE_DIRECT_DM_H025_SEED0_INDEPENDENT_REAUDIT_REQUIRED=TRUE")
     return 0
 
 

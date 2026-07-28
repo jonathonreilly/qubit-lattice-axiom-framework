@@ -43,18 +43,3 @@ Disposition: pass.
   remained.
 - Generated audit, queue, and effective-status outputs were restored from
   `origin/main` and are not branch changes.
-
-## Iteration 3
-
-Disposition: pending focused review.
-
-- Prior-art result: the bounded theorem is already landed; cycle 2 is a
-  reproducibility repair, not a new derivation claim.
-- Discovered defect: the primary runner crashes on current main because the
-  monolithic audit-ledger cache is no longer tracked.
-- Applied repair: remove mutable audit-grade reads, import both self-contained
-  source runners for packet inclusion, declare all note/runner/log inputs for
-  cache fingerprinting, and narrow `weak-field control` to exact configured
-  ladder checks.
-- Pre-review checks: primary runner, paired output equality, cache freshness,
-  Python compilation, and static helper discovery pass.

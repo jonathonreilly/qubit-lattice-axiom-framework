@@ -1,13 +1,10 @@
 # Goal
 
-Keep `wave_direct_dm_h025_seed0_crossfamily_note` as the honest finite
-implication it already supports, while repairing its current evidence chain:
-the short certificate must run on the tracked sharded-ledger repository,
-include both source-runner bodies in the restricted packet, and consume only
-the exact SHA-pinned transcripts rather than mutable audit-status fields.
+Convert `wave_direct_dm_h025_seed0_crossfamily_note` from a hard-coded
+class-G numerical-match presentation into the honest finite implication it
+already supports: a class-A inequality closure over two independently
+retained-grade control inputs, with class-B verification of those inputs.
 
-Success means the note directly registers both source runners and transcripts,
-the runner verifies their identities and configured coordinates, and the
-conclusion remains limited to sign, selected-row ordering, and finite ladder
-checks. No physical-control, amplitude-law, or portability interpretation is
-part of the target.
+Success means the source note registers exactly those two physics dependencies,
+the runner checks their audit status and provenance, and the conclusion remains
+limited to sign, selected-row ordering, and inherited weak-field controls.

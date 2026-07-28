@@ -1,6 +1,6 @@
 {
- "edge_count": 15197,
- "node_count": 4566,
+ "edge_count": 15200,
+ "node_count": 4567,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -9987,8 +9987,12 @@
    "out_degree": 5
   },
   "oh_schur_boundary_action_note": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "5a94355f1c1f",
+   "out_degree": 1
+  },
+  "oh_schur_independent_boundary_source_bridge_theorem_note_2026-07-25": {
+   "deps_hash": "4bbf0bd6a07c",
+   "out_degree": 2
   },
   "oh_seven_site_star_shell_leverage_positive_theorem_note_2026-06-10": {
    "deps_hash": "5b15e3387983",

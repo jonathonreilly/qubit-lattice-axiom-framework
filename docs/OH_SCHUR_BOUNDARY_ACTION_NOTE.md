@@ -2,7 +2,10 @@
 
 **Date:** 2026-04-13
 **Script:** `scripts/frontier_oh_schur_boundary_action.py`
+**Type:** positive_theorem
 **Status:** Exact microscopic shell-boundary action on current strong-field source classes
+**Status authority:** independent audit lane only. Source-note status prose is
+not an audit verdict or effective-status authority.
 
 ## Purpose
 
@@ -102,6 +105,11 @@ This note still does **not** close:
    bridge
 2. fully general non-`O_h` strong-field closure
 3. fully general nonlinear GR
+
+**2026-07-28 downstream hygiene (PR #5632):** Added the finite-box, fixed-`R`
+microscopic-action source construction and source-before-trace checks in
+[`OH_SCHUR_INDEPENDENT_BOUNDARY_SOURCE_BRIDGE_THEOREM_NOTE_2026-07-25.md`](OH_SCHUR_INDEPENDENT_BOUNDARY_SOURCE_BRIDGE_THEOREM_NOTE_2026-07-25.md),
+limited to that note's declared scalar source-action and normalization inputs.
 
 ## Updated gravity target
 

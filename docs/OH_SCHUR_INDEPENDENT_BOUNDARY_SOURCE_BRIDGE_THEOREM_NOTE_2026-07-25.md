@@ -1,7 +1,22 @@
 # Independent boundary source from the microscopic source: the Schur bridge theorem
 
 **Date:** 2026-07-25
-**Runner:** `scripts/frontier_oh_schur_independent_boundary_source_bridge.py`
+**Type:** bounded_theorem
+**Status authority:** independent audit lane only. This source proposes a
+bounded claim and assigns no audit verdict or effective status.
+**Runner:**
+[`scripts/frontier_oh_schur_independent_boundary_source_bridge.py`](../scripts/frontier_oh_schur_independent_boundary_source_bridge.py)
+**Runner cache:**
+[`logs/runner-cache/frontier_oh_schur_independent_boundary_source_bridge.txt`](../logs/runner-cache/frontier_oh_schur_independent_boundary_source_bridge.txt)
+
+**Claim boundary:** exact finite-dimensional block-Schur algebra for a symmetric
+positive-definite scalar lattice action with a nonempty, nonvacuous `(I,t,b)`
+partition and `A_Ib=A_bI=0`; numerical application to the zero-Dirichlet
+6-NN scalar lattice at `R=4`, sizes `13,15,17`, and to two supplied
+size-15 microscopic source actions. The finite box, boundary condition,
+cutoff, source-action parameters, and local-class amplitude normalization are
+inputs. No continuum, infinite-volume, tensorial, metric, framework-derived
+matter-source, or audit-grade claim is made.
 
 ## Purpose
 
@@ -12,9 +27,12 @@ and shows that the shell trace of the microscopically sourced field is the uniqu
 stationary point of a quadratic boundary action driven by it. The construction takes
 `rho` as its only field input: it does not read the target trace, does not build a
 harmonic extension of it, and is not assembled from the object it predicts. The trace it
-yields is therefore compared against one from a separate factorisation and solve of the
-same full lattice system: for four independently prescribed sources at three box sizes,
-and for two exactly specified field classes built by
+yields is compared against one from a separate factorisation and solve of the same full
+lattice system for four independently prescribed sources at three box sizes. For the two
+exactly specified size-15 field classes, the stronger source/action check constructs
+`A = H_0 - P W P^T` and the bare source `eta = P m` before any shell trace is read,
+eliminates the action blocks, and compares the prediction against both a separate full
+action solve and the existing class builders in
 `scripts/frontier_same_source_metric_ansatz_scan.py` and
 `scripts/frontier_coarse_grained_exterior_law.py` at size 15.
 
@@ -26,7 +44,10 @@ with zero Dirichlet data on the outer faces. Fix `R = 4` and partition the `n` s
 using the exterior classification of `scripts/frontier_discrete_dtn_shell_kernel.py`:
 `b` = exterior sites (radius `> R`) all six of whose neighbours are also exterior;
 `t` = exterior sites with at least one non-exterior neighbour, the shell; `I` =
-everything else, the strictly interior region (radius `<= R`).
+everything else, the strictly interior region (radius `<= R`). The theorem below is
+conditional on all three blocks being nonempty and on both `t-I` and `t-b` couplings
+being nonvacuous. The runner verifies those admissibility conditions at sizes
+`13,15,17`; it does not claim every integer `size` is admissible.
 
 **Separation lemma.** No site of `I` is 6-NN adjacent to a site of `b`: if a `b` site had
 a neighbour in `I`, that neighbour would be non-exterior, so the site would have been
@@ -55,6 +76,39 @@ j_micro :=  rho_t - H_tI H_II^{-1} rho_I - H_tb H_bb^{-1} rho_b
 both are invertible and `S`, the two-sided Schur complement of `H_0` onto `t`, is itself
 symmetric positive definite. The right-hand side is a functional of `rho` and `H_0` only.
 
+### Microscopic-action specialization for the two supplied classes
+
+The two named source classes are not checked by defining `rho := H_0 phi` after a class
+field has been returned. Each instead supplies a finite-support microscopic action
+
+```
+A phi = eta,       A := H_0 - P W P^T,       eta := P m,
+```
+
+where the seven-site support of `P` is contained in `I`. Thus `A_Ib=A_bI=0`, and the
+same block elimination gives, before any target trace is read,
+
+```
+S_A f = j_A
+S_A  := A_tt - A_tI A_II^{-1} A_It - A_tb A_bb^{-1} A_bt
+j_A  := eta_t - A_tI A_II^{-1} eta_I - A_tb A_bb^{-1} eta_b.
+```
+
+For these two supplied actions `eta` is supported strictly in `I`, so
+`j_A = -A_tI A_II^{-1} eta_I`; the displayed three-term form is retained because it is
+the general action identity. The runner assembles `A`, `eta`, `S_A`, and `j_A` from the
+source-class `W/m` data, verifies the support and separation conditions, and finds
+symmetry residuals below `1e-9` and positive smallest eigenvalues for both `A` and
+`S_A`. Only after constructing and solving the boundary equation does it read `f_true`
+from the existing class builder. A separate full factorisation of `A phi = eta` gives a
+second cross-check.
+
+The exact local `O_h` class also carries the supplied amplitude convention
+`max(phi|support)=0.35`. Its source scale is computed from `H_0`, `W`, and `m` before the
+shell trace is read; that normalization is an explicit input, not a derived physical
+amplitude. The finite-rank class takes the bare masses returned by its source-action
+setup without an additional amplitude normalization.
+
 ## Corollary (honest stationarity)
 
 Because `S` is symmetric positive definite, `f` is the unique minimiser of
@@ -69,6 +123,8 @@ orthogonal to `f` reproduces `f` exactly, and stays symmetric positive definite,
 `eps`. Measured at size 13 on the random-in-`I` source, `eps = 1e+04` leaves the
 reconstruction error at `8.7e-15` while moving `S` by `1.5e+02` in largest absolute entry.
 What pins `S` here is the derivation and rows 2-3, not the reconstruction gate.
+The same convexity argument applies to each supplied microscopic action with
+`(S,j_micro)` replaced by `(S_A,j_A)`.
 
 ## Relation to the exterior-only operator
 
@@ -81,9 +137,11 @@ max-absolute-entry convention its legend states, and an off-line computation put
 induced infinity norm of the same matrix at `3.000000e+00`, half that diagonal. Both are
 identical at all three sizes because the inner region and its adjacent shell layer do not
 change with the box. Pairing `j_micro` with `Lambda_R` misses the true trace by `2.4e-01`
-to `5.1e-01` relative on the four prescribed sources, and by `7.2e-01` on both exact
-classes, so the independent source must be paired with `S` unless the interior Schur term
-annihilates the configuration at hand.
+to `5.1e-01` relative on the four prescribed sources, and by `7.188782e-01` and
+`7.356984e-01` on the two exact classes, so the independent source must be paired
+with the matching two-sided operator unless the interior Schur term annihilates the
+configuration at hand. That operator is `S` for the prescribed-`rho` checks and `S_A`
+for the two supplied microscopic actions.
 
 ## Why the previous construction's gradient equation was an identity
 
@@ -94,7 +152,7 @@ into the exterior bulk, and reading the trace flux `(H_0 u_f)|_t`. For such an e
 with the strictly interior region held at zero,
 `(H_0 u_g)|_t = H_tt g - H_tb H_bb^{-1} H_bt g = Lambda_R g` identically, for *any* trace
 vector `g`, physical or not. The runner exhibits this with a random `g`: the residual is
-`8.9e-15` at size 13 and comparable at 15 and 17, against `||Lambda_R g||_inf` about
+at most `8.9e-15` across sizes 13, 15, and 17, against `||Lambda_R g||_inf` about
 `1.8e+01`. A residual that vanishes for an arbitrary trace vector cannot distinguish the
 physical trace from any other, so that gradient equation was an algebraic identity of the
 construction rather than a stationarity result. The two sources also differ as objects.
@@ -104,8 +162,10 @@ Their difference is exactly the interior Schur term applied to the trace,
 term, and no gate here can detect a source reconstructed from the trace — that property
 is established by inspecting which arguments the construction reads, not by a number.
 Relative to `j_micro` the difference runs `1.9e-01` to `5.8e-01` on the four prescribed
-sources and about `2.8e+00` on both exact classes, the latter because those classes are
-sourced strictly inside `I` (below).
+sources. For the two supplied actions the corresponding identity is
+`j_taut(f) - j_A = A_tI A_II^{-1} A_It f`; its relative size is
+`2.776957e+00` and `3.073866e+00`, respectively. Those classes are sourced strictly
+inside `I` (below).
 
 ## Numerical verification
 
@@ -115,32 +175,35 @@ Seed `20260725`, `cutoff_radius = 4.0`, sizes `13, 15, 17`, runtime about 4 s. S
 | # | Check | size 13 | size 15 | size 17 |
 |---|-------|---------|---------|---------|
 | 1 | `nnz(H_Ib)`, `nnz(H_bI)`; block sum vs `n`; `t_box` | `0`, `0`; `1331`=`1331`; `602` | `0`, `0`; `2197`=`2197`; `866` | `0`, `0`; `3375`=`3375`; `1178` |
-| 2 | `\|\|S - S^T\|\|_inf` ; `lambda_min(S)` | `4.440892e-16` ; `6.049261875e-01` | `4.440892e-16` ; `5.507655684e-01` | `5.551115e-16` ; `5.118567811e-01` |
+| 2 | `\|\|S - S^T\|\|_inf` ; `lambda_min(S)` | `4.440892e-16` ; `6.049261875e-01` | `4.440892e-16` ; `5.507655684e-01` | `6.661338e-16` ; `5.118567811e-01` |
 | 3 | `\|\|S - (Lambda_R - H_tI H_II^-1 H_It)\|\|_inf` ; `\|\|S - S_joint\|\|_inf` | `0.000000e+00` ; `8.881784e-16` | `8.881784e-16` ; `8.881784e-16` | `8.881784e-16` ; `8.881784e-16` |
-| 4a | reconstruction rel. error, point source at centre | `1.107992e-14` | `1.396884e-14` | `1.113781e-14` |
-| 4b | reconstruction rel. error, random source in `I` | `6.409667e-15` | `9.426632e-15` | `7.600553e-15` |
-| 4c | reconstruction rel. error, random source in `b` | `3.470925e-15` | `5.767796e-15` | `6.530465e-15` |
-| 4d | reconstruction rel. error, random source on `I`,`t`,`b` | `3.954689e-15` | `6.854863e-15` | `7.043622e-15` |
-| 4e | reconstruction rel. error, exact local `O_h` class (`xchk` `1.454791e-15`) | — | `1.280216e-14` | — |
-| 4f | reconstruction rel. error, exact finite-rank class (`xchk` `1.224906e-15`) | — | `1.378019e-14` | — |
+| 4a | reconstruction rel. error, point source at centre | `1.085380e-14` | `1.433644e-14` | `1.129923e-14` |
+| 4b | reconstruction rel. error, random source in `I` | `6.336830e-15` | `9.830631e-15` | `7.858199e-15` |
+| 4c | reconstruction rel. error, random source in `b` | `3.470925e-15` | `5.767796e-15` | `6.874173e-15` |
+| 4d | reconstruction rel. error, random source on `I`,`t`,`b` | `3.827119e-15` | `6.854863e-15` | `6.865302e-15` |
+| 4e | microscopic-action reconstruction, exact local `O_h` class (full-action `xchk` `2.909582e-15`) | — | `1.585722e-14` | — |
+| 4f | microscopic-action reconstruction, exact finite-rank class (full-action `xchk` `7.655663e-16`) | — | `1.699557e-14` | — |
 | 5a | rejector: drop `-H_tb H_bb^-1 rho_b` | `4.175394e-01` | `5.717319e-01` | `5.032162e-01` |
 | 5b | rejector: drop `-H_tI H_II^-1 rho_I` | `2.661020e-01` | `2.472237e-01` | `3.123370e-01` |
 | 5c | rejector: drop `rho_t` | `1.013921e+00` | `6.526345e-01` | `7.329871e-01` |
 | 6a | rejector: `Lambda_R^-1 j_micro` vs true trace | `2.387521e-01` | `5.113928e-01` | `3.528884e-01` |
-| 6b | same, exact local `O_h` class | — | `7.180982e-01` | — |
-| 6c | same, exact finite-rank class | — | `7.151571e-01` | — |
-| 7a | `\|\|Lambda_R g - (H_0 u_g)\|_t\|\|_inf`, random `g` | `8.881784e-15` | `7.105427e-15` | `8.881784e-15` |
+| 6b | same, exact local `O_h` action class | — | `7.188782e-01` | — |
+| 6c | same, exact finite-rank action class | — | `7.356984e-01` | — |
+| 7a | `\|\|Lambda_R g - (H_0 u_g)\|_t\|\|_inf`, random `g` | `7.105427e-15` | `7.105427e-15` | `8.881784e-15` |
 | 7b | rel. `\|\|j_taut(f) - j_micro\|\|_inf` | `1.901801e-01` | `5.832805e-01` | `3.987182e-01` |
-| 7c | same, exact local `O_h` class | — | `2.765731e+00` | — |
-| 7d | same, exact finite-rank class | — | `2.754925e+00` | — |
-| 8a | perturbed source: prediction vs full solve | `3.827607e-15` | `6.339742e-15` | `6.150760e-15` |
+| 7c | action-interior term, exact local `O_h` class | — | `2.776957e+00` | — |
+| 7d | action-interior term, exact finite-rank class | — | `3.073866e+00` | — |
+| 8a | perturbed source: prediction vs full solve | `3.955194e-15` | `6.254070e-15` | `6.061619e-15` |
 | 8b | perturbed source: rel. motion of the trace | `5.776783e-04` | `4.167462e-04` | `4.542326e-04` |
 
 Gate directions: row 1 requires the two cross blocks to be empty and both eliminations
 non-vacuous; row 2 requires `||S - S^T||_inf` below `1e-9` and `lambda_min(S)` strictly
-positive; rows 3, 4a–4f, 7a and 8a require small numbers (tolerance `1e-9`); rows 5a–5c,
-6a–6c, 7b–7d and 8b require *large* ones (`> 1e-3` for the rejectors, `> 1e-6` for the
-motion row), so the reconstruction gate cannot pass vacuously. Full run:
+positive. Rows 4e–4f additionally require the source support to lie in `I`, exact
+`A_Ib=A_bI=0`, exact absence of bare-source support on `t,b`, and positive smallest
+eigenvalues of `A` and `S_A`; their symmetry residuals must be below `1e-9`.
+Rows 3, 4a–4f, 7a and 8a require small residuals (tolerance `1e-9`); rows 5a–5c,
+6a–6c, 7b–7d and 8b require *large* ones (`> 1e-3` for the rejectors, `> 1e-6`
+for the motion row), so the reconstruction gate cannot pass vacuously. Full run:
 `TOTAL: PASS=51 FAIL=0` over 21 named gates — fifteen at each of the three sizes, six at
 size 15 only. The runner prints each gate statement once, with its tolerance, under a
 `GATES` legend preceded by a preamble factoring out the shared definitions. That legend
@@ -164,27 +227,41 @@ tolerance, so the gate discriminates against a diagonal perturbation of this siz
 `186` of the `782` shell sites for these sources, so a probe perturbing an entry of
 `j_micro` relative to its own magnitude is undefined on the remaining `596`.
 
-**What the two exact classes do and do not exercise.** Both classes are sourced strictly
-inside `I`: the runner reports `rho_t` and `rho_b` at the `1e-16` level in rows 4e and 4f,
-against a `rho_I` of order `1e+00`. That pair of numbers, not the `xchk` self-guard, is
-what ties each class's field to this operator's site indexing — `xchk` re-solves
-`H_0 x = rho` for the same `rho` the class produced and would return the same vector under
-any flattening convention, so it guards the factorisation and the provenance of `f_true`,
-not the ordering. Even that discriminator is degenerate against one specific confusion:
-both classes are `O_h`-symmetric, so C-order and Fortran-order flattening produce the
-identical vector and the two conventions cannot be told apart here — harmlessly, since
-they agree. On these classes `j_micro` reduces to its single interior term
-`-H_tI H_II^{-1} rho_I`; the `rho_t` and `-H_tb H_bb^{-1} rho_b` terms sit at roundoff
-rather than merely being small. Two consequences, stated rather than hidden. First, the
-two classes test the interior elimination channel only; the full three-term structure of
-`j_micro` is exercised by rows 4a–4d and 5a–5c, whose sources are supported on `I`, on
-`b`, and across all three blocks. Second, a 5a- or 5c-style rejector applied to these
-classes would be vacuous by construction: dropping a term already at roundoff leaves
-`j_micro` unchanged to that order, so such a rejector would return the row-4e/4f error
-itself, of order `1e-14` and far below the `1e-3` floor a rejector must clear. That is why
-rows 5a–5c are not extended to them. The rejector that would move here is the 5b form,
-dropping the interior term, which collapses `j_micro` to roundoff and drives the error to
-`1` — a statement about the classes, not a discriminating test of the theorem.
+**What the two exact classes do and do not exercise.** Both bare sources `eta=P m` are
+supported exactly inside `I`; rows 4e and 4f report `eta_t=eta_b=0`, not merely
+roundoff-small values. Their `xchk` values compare an independent full factorisation of
+`A phi=eta` against the field returned by the existing class builder. This guards the
+action/source assembly, the class-parameter copy, and the provenance of `f_true`.
+Both fields are `O_h`-symmetric, so C-order and Fortran-order flattening still produce
+the identical vector; those conventions cannot be discriminated on these two fields,
+harmlessly because they agree. On the classes, `j_A` reduces to its single interior
+term `-A_tI A_II^{-1} eta_I`. Two consequences are stated rather than hidden. First,
+the classes test the microscopic-action interior elimination channel only; the full
+three-term structure of the prescribed-source `j_micro` is exercised by rows 4a–4d
+and 5a–5c, whose sources are supported on `I`, on `b`, and across all three blocks.
+Second, a 5a- or 5c-style dropped-term rejector on the classes would be vacuous because
+the corresponding bare-source terms vanish exactly. Rows 6b–6c instead use
+`Lambda_R` in place of `S_A` and miss the traces by order one, while rows 7c–7d measure
+the nonzero action-interior correction directly.
+
+## Source and input inventory
+
+- **Zero-input structural result:** the block elimination, separation implication,
+  Schur positive-definiteness implication, and strict-convexity corollary are finite
+  linear algebra once the displayed hypotheses are supplied.
+- **Explicit boundary and convention inputs:** the finite zero-Dirichlet box, the
+  6-NN scalar negative Laplacian, `R=4`, the `(I,t,b)` classification, and the
+  C-order site flattening.
+- **Supplied computed-lattice inputs:** the exact local `O_h` and finite-rank
+  seven-site `W/m` source-action data. The
+  [`ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md`](ONE_PARAMETER_REDUCED_SHELL_LAW_HELPERS_UMBRELLA_NOTE_2026-04-13.md)
+  link is used only as the one-hop registry for the local-class builder, and
+  [`FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md`](FINITE_RANK_GRAVITY_RESIDUAL_HELPER_NOTE_2026-04-14.md)
+  supplies the finite-rank `H_0-PWP^T` / Woodbury source-action construction.
+- **Explicit normalization input:** the local class's `max(phi|support)=0.35`
+  amplitude convention. It is not selected or physically derived here.
+- **Absent imports:** no observational comparator, fitted experimental datum, or
+  literature constant enters this theorem.
 
 ## What this does not yet supply
 
@@ -195,9 +272,10 @@ dropping the interior term, which collapses `j_micro` to roundoff and drives the
    (`86.36%`) at size 17. The fraction grows with the box, so `t` is dominated by box
    artefact rather than by shell, increasingly so at larger sizes. The runner reports this
    count as `t_box` in row 1.
-2. `rho` is given data. Nothing here derives it from a variational principle for the
-   matter sector, so the boundary source is independent of the trace but still downstream
-   of an unmodelled source.
+2. In rows 4a–4d, `rho` is given data. In rows 4e–4f, `A`, `W`, and the bare `m`
+   are supplied source-action data. Nothing here derives either input family from a
+   framework matter-sector variational principle, so the boundary source is independent
+   of the target trace but remains downstream of a supplied scalar source model.
 3. The field is a single scalar on a cubic lattice; no tensorial or metric structure is
    carried. Three box sizes at one cutoff radius are covered, with no scaling law in `R`
    or `size` for `S` or for the interior Schur term.
@@ -213,7 +291,7 @@ dropping the interior term, which collapses `j_micro` to roundoff and drives the
 - **A derived matter source.** Couple `j_micro` to a `rho` produced by a variational
   matter sector rather than prescribed, making the chain from action to shell trace
   derived on the source side too; the axiom surface is
-  [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md).
+  `MINIMAL_AXIOMS_2026-06-29.md` (future-work context, not a dependency of this theorem).
 - **The tensorial lift.** Repeat the three-block elimination for a multi-component field,
   where `H_II` and `H_bb` acquire internal indices, and ask whether the separation lemma
   and the positive definiteness of `S` survive.

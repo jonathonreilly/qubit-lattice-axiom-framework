@@ -35,19 +35,23 @@ box with 6-NN negative Laplacian H_0:
 
   6. Stationarity is rerun on the two source classes named by the audited row -- the
      exact local O_h class and the exact finite-rank class -- at size 15, the only
-     size at which those builders are defined. Each class supplies its own field phi;
-     rho = H_0 phi is then the microscopic source of that field, j_micro is built from
-     that rho alone, and S^-1 j_micro is compared against phi|_t taken from the class.
+     size at which those builders are defined. For each class, the microscopic action
+         A phi = eta,     A = H_0 - P W P^T,     eta = P m
+     is assembled from the supplied support operator W and bare source m before any
+     boundary trace is read. Eliminating I and b from A gives S_A f = j_A(eta).
+     S_A^-1 j_A is then compared against phi|_t from the class's existing builder and
+     against a separate full solve of A phi = eta.
 
 The gates below are of two kinds. The rejectors are designed to fail if the implemented
 object were wrong; the below-tolerance gates are exact algebraic identities of the
 three-block elimination and therefore gate the implementation rather than the physics.
-The reference trace f_true comes from a separate splu factorisation and solve of the
-same H_0 -- a second elimination of the same discretisation, not a second
-discretisation. No gate here can detect a j reconstructed from the target trace, since
-j_micro = S f_true identically; trace-independence is a property of which arguments the
-construction reads -- independent_boundary_source takes rho and the operator blocks,
-never a trace -- and is established by inspection of the source, not by a number.
+For the prescribed-rho checks, the reference trace f_true comes from a separate splu
+factorisation and solve of the same H_0 -- a second elimination of the same
+discretisation, not a second discretisation. For the two named classes, the bare-source
+action route and the existing field builders are distinct code paths. No numerical gate
+alone can detect a source reconstructed from a target trace; trace-independence is a
+property of which arguments the construction reads and is established by inspection of
+the source, with the full-action and existing-builder comparisons guarding consistency.
 """
 
 from __future__ import annotations
@@ -60,7 +64,7 @@ from _frontier_loader import load_frontier
 
 import numpy as np
 import scipy.sparse as sparse
-from scipy.sparse.linalg import spsolve, splu
+from scipy.sparse.linalg import eigsh, spsolve, splu
 
 
 SEED = 20260725
@@ -95,12 +99,21 @@ def record(gid: str, gate: str, ok: bool, detail: str) -> None:
 
 
 finite_rank = load_frontier("finite_rank_metric", "frontier_finite_rank_gravity_residual.py")
-dtn = load_frontier("dtn_shell", "frontier_discrete_dtn_shell_kernel.py")
 # The two source classes named by the row this runner supports. Their modules may print
 # at import; only the import is silenced, and exceptions still propagate.
 with contextlib.redirect_stdout(io.StringIO()):
     same_source = load_frontier("same_source_metric", "frontier_same_source_metric_ansatz_scan.py")
     coarse = load_frontier("coarse_grained", "frontier_coarse_grained_exterior_law.py")
+
+
+# Dynamic Python imports are mutable repository inputs to the cached result. Keeping
+# this literal list complete makes helper changes invalidate the source-pinned cache.
+AUDIT_INPUT_PATHS = (
+    "scripts/_frontier_loader.py",
+    "scripts/frontier_finite_rank_gravity_residual.py",
+    "scripts/frontier_same_source_metric_ansatz_scan.py",
+    "scripts/frontier_coarse_grained_exterior_law.py",
+)
 
 
 def rel_inf(a: np.ndarray, b: np.ndarray) -> float:
@@ -135,8 +148,54 @@ class Blocks:
     Lambda_R: np.ndarray
 
 
+@dataclass
+class MicroscopicActionClass:
+    """A supplied source class written before any boundary trace is solved."""
+
+    label: str
+    A: sparse.csr_matrix
+    eta: np.ndarray
+    support: np.ndarray
+    normalization: str
+
+
+def exterior_sets(size: int, cutoff_radius: float) -> tuple[np.ndarray, np.ndarray]:
+    """Spell out the parent DtN runner's exterior classification locally."""
+    center = (size - 1) / 2.0
+    i, j, k = np.mgrid[0:size, 0:size, 0:size]
+    radii = np.sqrt((i - center) ** 2 + (j - center) ** 2 + (k - center) ** 2)
+    ext_full = np.zeros((size, size, size), dtype=bool)
+    ext_full[1:-1, 1:-1, 1:-1] = (
+        radii[1:-1, 1:-1, 1:-1] > cutoff_radius + 1e-12
+    )
+
+    interior = size - 2
+    trace: list[int] = []
+    bulk: list[int] = []
+    neighbours = (
+        (1, 0, 0),
+        (-1, 0, 0),
+        (0, 1, 0),
+        (0, -1, 0),
+        (0, 0, 1),
+        (0, 0, -1),
+    )
+    for ii in range(1, size - 1):
+        for jj in range(1, size - 1):
+            for kk in range(1, size - 1):
+                if not ext_full[ii, jj, kk]:
+                    continue
+                is_trace = any(
+                    not ext_full[ii + di, jj + dj, kk + dk]
+                    for di, dj, dk in neighbours
+                )
+                idx = finite_rank.flat_idx(ii - 1, jj - 1, kk - 1, interior)
+                (trace if is_trace else bulk).append(idx)
+    return np.asarray(trace, dtype=int), np.asarray(bulk, dtype=int)
+
+
 def build_blocks(size: int, cutoff_radius: float) -> Blocks:
-    trace_idx, bulk_idx = dtn.exterior_sets(size, cutoff_radius)
+    trace_idx, bulk_idx = exterior_sets(size, cutoff_radius)
     H0, interior = finite_rank.build_neg_laplacian_sparse(size)
     n = interior ** 3
     idx_I = np.setdiff1d(np.arange(n), np.concatenate([trace_idx, bulk_idx]))
@@ -273,30 +332,162 @@ def build_sources(blk: Blocks) -> dict[str, np.ndarray]:
     }
 
 
-def audited_row_source_classes(blk: Blocks) -> dict[str, tuple[np.ndarray, np.ndarray]]:
-    """The two source classes named by the audited row, at their native size 15.
+def support_interaction(
+    n: int, support: np.ndarray, W: np.ndarray
+) -> sparse.csr_matrix:
+    """Embed the supplied support operator W as P W P^T without a dense n x n P."""
+    support = np.asarray(support, dtype=int)
+    rows = np.repeat(support, support.size)
+    cols = np.tile(support, support.size)
+    out = sparse.csr_matrix((W.reshape(-1), (rows, cols)), shape=(n, n))
+    out.eliminate_zeros()
+    return out
 
-    Returns label -> (rho, f_true_class). The field `phi` is built by the class's own
-    script; `rho := H_0 phi` is therefore the microscopic source of that field, and
-    `f_true_class := phi|_t` is ground truth taken from the class, not from any solve
-    performed here. Empty at sizes other than CLASS_SIZE, where the builders are not
-    defined.
+
+def embed_support_source(n: int, support: np.ndarray, m: np.ndarray) -> np.ndarray:
+    """Embed the supplied bare source m as eta = P m."""
+    eta = np.zeros(n, dtype=float)
+    eta[np.asarray(support, dtype=int)] = np.asarray(m, dtype=float)
+    return eta
+
+
+def trace_from_grid(phi_grid: np.ndarray, blk: Blocks) -> np.ndarray:
+    """Read the class builder's interior field in the common flat-site convention."""
+    phi_flat = np.ascontiguousarray(phi_grid[1:-1, 1:-1, 1:-1]).reshape(-1)
+    if phi_flat.shape != (blk.n,):
+        raise RuntimeError("source-class grid does not match the size-15 lattice")
+    return phi_flat[blk.idx_t]
+
+
+def audited_row_action_classes(
+    blk: Blocks,
+) -> dict[str, tuple[MicroscopicActionClass, np.ndarray]]:
+    """Construct the audited row's two microscopic actions before reading a trace.
+
+    The existing class builders are used only for the final reference traces. The
+    matrices A and bare sources eta below are assembled directly from the source-class
+    action data. In particular, neither eta nor the action Schur source is obtained by
+    applying H_0 to a returned target field.
     """
     if blk.size != CLASS_SIZE:
         return {}
 
-    with contextlib.redirect_stdout(io.StringIO()):
-        grids = {
-            "exact local O_h class": same_source.build_best_phi_grid(),
-            "exact finite-rank class": coarse.build_finite_rank_phi_grid(),
-        }
+    # Exact local O_h class. These are the supplied class parameters in
+    # same_source.build_best_phi_grid; the final equality against that builder is a
+    # stale-parameter guard. Its amplitude convention max(phi|support)=0.35 is an
+    # explicit normalization input. Computing that scalar uses only H_0, W and m,
+    # before any shell trace is read.
+    centre = blk.interior // 2
+    support_oh = np.array(
+        [
+            finite_rank.flat_idx(
+                centre + int(v[0]),
+                centre + int(v[1]),
+                centre + int(v[2]),
+                blk.interior,
+            )
+            for v in same_source.SUPPORT_COORDS
+        ],
+        dtype=int,
+    )
+    W_oh = same_source.build_commutant_operator(
+        0.0698, 0.0499, -0.0070, 0.0642, 0.1056
+    )
+    m_oh = same_source.build_invariant_source(0.8247, 0.2271)
+    support_rhs = np.zeros((blk.n, support_oh.size), dtype=float)
+    support_rhs[support_oh, np.arange(support_oh.size)] = 1.0
+    G0P_oh = blk.lu_H0.solve(support_rhs)
+    GS_oh = G0P_oh[support_oh, :]
+    q_eff_oh = np.linalg.solve(np.eye(support_oh.size) - W_oh @ GS_oh, m_oh)
+    phi_unscaled_oh = G0P_oh @ q_eff_oh
+    scale_oh = 0.35 / float(np.max(phi_unscaled_oh[support_oh]))
+    eta_oh = embed_support_source(blk.n, support_oh, scale_oh * m_oh)
+    A_oh = blk.H0 - support_interaction(blk.n, support_oh, W_oh)
 
-    classes: dict[str, tuple[np.ndarray, np.ndarray]] = {}
-    for label, phi_grid in grids.items():
-        # Exact inverse of how both builders write the grid; the xchk gate verifies it.
-        phi_flat = np.ascontiguousarray(phi_grid[1:-1, 1:-1, 1:-1]).reshape(-1)
-        classes[label] = (blk.H0 @ phi_flat, phi_flat[blk.idx_t])
-    return classes
+    # Broader finite-rank class. finite_rank_setup exposes the action data directly;
+    # the imported full-field builder below follows a separate full-matrix solve.
+    (
+        class_size,
+        H0_fr,
+        interior_fr,
+        support_fr_raw,
+        _G0P_fr,
+        _GS_fr,
+        W_fr,
+        m_fr,
+    ) = finite_rank.finite_rank_setup()
+    if class_size != blk.size or interior_fr != blk.interior:
+        raise RuntimeError("finite-rank source class is not on the size-15 lattice")
+    H0_delta = H0_fr - blk.H0
+    H0_delta.eliminate_zeros()
+    if H0_delta.nnz:
+        raise RuntimeError("finite-rank source class uses a different H_0")
+    support_fr = np.asarray(support_fr_raw, dtype=int)
+    eta_fr = embed_support_source(blk.n, support_fr, m_fr)
+    A_fr = blk.H0 - support_interaction(blk.n, support_fr, W_fr)
+
+    with contextlib.redirect_stdout(io.StringIO()):
+        f_oh = trace_from_grid(same_source.build_best_phi_grid(), blk)
+        f_fr = trace_from_grid(coarse.build_finite_rank_phi_grid(), blk)
+
+    return {
+        "exact local O_h class": (
+            MicroscopicActionClass(
+                label="exact local O_h class",
+                A=A_oh.tocsr(),
+                eta=eta_oh,
+                support=support_oh,
+                normalization=f"max(phi|support)=0.35; source scale={scale_oh:.9e}",
+            ),
+            f_oh,
+        ),
+        "exact finite-rank class": (
+            MicroscopicActionClass(
+                label="exact finite-rank class",
+                A=A_fr.tocsr(),
+                eta=eta_fr,
+                support=support_fr,
+                normalization="bare source masses supplied by finite_rank_setup",
+            ),
+            f_fr,
+        ),
+    }
+
+
+def action_boundary_equation(
+    action: MicroscopicActionClass, blk: Blocks
+) -> tuple[np.ndarray, np.ndarray, float, float, np.ndarray]:
+    """Eliminate I and b from A phi = eta and return S_A, j_A and crosschecks."""
+    A = action.A
+    A_tt = A[blk.idx_t][:, blk.idx_t].toarray()
+    A_tI = A[blk.idx_t][:, blk.idx_I].toarray()
+    A_It = A[blk.idx_I][:, blk.idx_t].toarray()
+    A_tb = A[blk.idx_t][:, blk.idx_b].toarray()
+    A_bt = A[blk.idx_b][:, blk.idx_t].toarray()
+    lu_AII = splu(A[blk.idx_I][:, blk.idx_I].tocsc())
+    lu_Abb = splu(A[blk.idx_b][:, blk.idx_b].tocsc())
+    S_A = (
+        A_tt
+        - A_tI @ lu_AII.solve(A_It)
+        - A_tb @ lu_Abb.solve(A_bt)
+    )
+    j_A = (
+        action.eta[blk.idx_t]
+        - A_tI @ lu_AII.solve(action.eta[blk.idx_I])
+        - A_tb @ lu_Abb.solve(action.eta[blk.idx_b])
+    )
+    min_eig_A = float(
+        eigsh(
+            0.5 * (A + A.T),
+            k=1,
+            which="SA",
+            v0=np.ones(blk.n, dtype=float),
+            return_eigenvectors=False,
+        )[0]
+    )
+    min_eig_S = float(np.min(np.linalg.eigvalsh(0.5 * (S_A + S_A.T))))
+    f_full = splu(A.tocsc()).solve(action.eta)[blk.idx_t]
+    return S_A, j_A, min_eig_A, min_eig_S, f_full
 
 
 def run_size(size: int) -> None:
@@ -384,33 +575,66 @@ def run_size(size: int) -> None:
             f"err={err:.6e} f_inf={float(np.max(np.abs(f_true))):.6e}",
         )
 
-    # ---- checks 4e/4f: stationarity rerun on the row's own source classes ----
+    # ---- checks 4e/4f: stationarity from the row's microscopic actions --------
     # Size CLASS_SIZE only; empty elsewhere, where the class builders are undefined.
     class_data: list[tuple[str, np.ndarray, np.ndarray]] = []
-    for gid, (label, (rho_c, f_true_c)) in zip("ef", audited_row_source_classes(blk).items()):
-        j_class = independent_boundary_source(rho_c, blk)
-        f_pred_c = np.linalg.solve(blk.S, j_class)
-        err = rel_inf(f_pred_c, f_true_c)
-        xchk = rel_inf(true_trace_from_full_solve(rho_c, blk), f_true_c)
-        rho_t = float(np.max(np.abs(rho_c[blk.idx_t])))
-        rho_b = float(np.max(np.abs(rho_c[blk.idx_b])))
-        class_data.append((label, j_class, f_true_c))
+    for gid, (label, (action, f_true_class)) in zip(
+        "ef", audited_row_action_classes(blk).items()
+    ):
+        S_A, j_A, min_eig_A, min_eig_S_A, f_full_A = action_boundary_equation(action, blk)
+        f_pred_c = np.linalg.solve(S_A, j_A)
+        err = rel_inf(f_pred_c, f_true_class)
+        xchk = rel_inf(f_full_A, f_true_class)
+        A_asym = action.A - action.A.T
+        sym_A = (
+            float(np.max(np.abs(A_asym.data)))
+            if A_asym.nnz
+            else 0.0
+        )
+        sym_S_A = float(np.max(np.abs(S_A - S_A.T)))
+        support_in_I = np.setdiff1d(action.support, blk.idx_I).size == 0
+        sep_nnz = int(
+            action.A[blk.idx_I][:, blk.idx_b].nnz
+            + action.A[blk.idx_b][:, blk.idx_I].nnz
+        )
+        eta_t = float(np.max(np.abs(action.eta[blk.idx_t])))
+        eta_b = float(np.max(np.abs(action.eta[blk.idx_b])))
+        class_data.append((label, j_A, f_true_class))
         gate_e = (
-            f"stationarity rerun on the {label}, size {CLASS_SIZE} only: err < {RECON_TOL:.0e} "
-            f"vs f_true = phi|_t from the class, self-guard xchk < {RECON_TOL:.0e} "
-            "(full solve of rho = H_0 phi)"
+            f"microscopic-action stationarity on the {label}, size {CLASS_SIZE} only: "
+            "A = H_0 - P W P^T and eta = P m are assembled before any trace; "
+            f"support subset I, separation exact, sym(A), sym(S_A) < {RECON_TOL:.0e}, "
+            "lambda_min(A), lambda_min(S_A)>0, "
+            f"err < {RECON_TOL:.0e} vs f_true from the existing class builder, "
+            f"full-action xchk < {RECON_TOL:.0e}"
         )
         gate_f = (
-            f"same on the {label}, size {CLASS_SIZE} only: "
-            f"err < {RECON_TOL:.0e}, xchk < {RECON_TOL:.0e}"
+            f"same microscopic-action construction on the {label}, size {CLASS_SIZE} only: "
+            f"support subset I, separation exact, A and S_A positive, err < {RECON_TOL:.0e}, "
+            f"full-action xchk < {RECON_TOL:.0e}"
         )
         record(
             f"4{gid}",
             gate_e if gid == "e" else gate_f,
-            err < RECON_TOL and xchk < RECON_TOL,
             (
-                f"err={err:.6e} xchk={xchk:.6e} rho_t={rho_t:.6e} rho_b={rho_b:.6e} "
-                f"f_inf={float(np.max(np.abs(f_true_c))):.6e}"
+                err < RECON_TOL
+                and xchk < RECON_TOL
+                and support_in_I
+                and sep_nnz == 0
+                and eta_t == 0.0
+                and eta_b == 0.0
+                and sym_A < RECON_TOL
+                and sym_S_A < RECON_TOL
+                and min_eig_A > 0.0
+                and min_eig_S_A > 0.0
+            ),
+            (
+                f"err={err:.6e} xchk={xchk:.6e} support_in_I={support_in_I} "
+                f"sep_nnz={sep_nnz} eta_t={eta_t:.1e} eta_b={eta_b:.1e} "
+                f"sym_A={sym_A:.1e} sym_SA={sym_S_A:.1e} "
+                f"lambda_min_A={min_eig_A:.9e} lambda_min_SA={min_eig_S_A:.9e} "
+                f"f_inf={float(np.max(np.abs(f_true_class))):.6e}; "
+                f"{action.normalization}"
             ),
         )
 
@@ -486,7 +710,8 @@ def run_size(size: int) -> None:
         rel_c = rel_inf(harmonic_extension_trace_flux(f_true_c, blk), j_class)
         record(
             f"7{gid}",
-            f"same on the {label}, size {CLASS_SIZE} only: rel > {REJECT_TOL:.0e}",
+            f"same action-interior correction on the {label}, size {CLASS_SIZE} only: "
+            f"rel > {REJECT_TOL:.0e}",
             rel_c > REJECT_TOL,
             f"rel={rel_c:.6e}",
         )
@@ -531,10 +756,10 @@ def main() -> int:
         "induced norm. Below tolerance: 2, 3, 4a-4f, 7a, 8a -- exact algebraic identities of the\n"
         "three-block elimination, gating the implementation, not the physics. Above a floor:\n"
         "5a-5c, 6a-6c, 7b-7d, 8b -- these with gate 1 carry the contingent content. No gate can\n"
-        "detect a j reconstructed from the target trace, since j_micro = S f_true identically;\n"
-        "trace-independence is a property of which arguments the construction reads\n"
-        "(independent_boundary_source takes rho and the operator blocks, never a trace),\n"
-        "established by inspection of the source, not by a number.\n"
+        "by itself detect a source reconstructed from the target trace. Source independence is\n"
+        "a property of which arguments the construction reads: 4a-4d use prescribed rho;\n"
+        "4e-4f assemble A and eta from W/m before reading the class-builder trace. This is\n"
+        "established by source inspection; full/action and builder comparisons guard consistency.\n"
         "GATES (once per size unless the gate text says otherwise)"
     )
     for gid, gate in GATES.items():

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
-runner: scripts/frontier_cycle721_tournament_independent_adversary_2026_07_28.py
-runner_sha256: 0e0ae439a38248ab01808768c692a396a28440b1400f44274864bd38b6e49a25
-input_fingerprint_sha256: 5323e1963fb049f2ac069474281e53aa3bac5d0c9e1d3e38455a8e2cb39bfed5
+runner: scripts/frontier_companion_bank_input_package_independent_adversary_2026_07_28.py
+runner_sha256: 8460623417c934d171c31ce5595151c601e88560410664e53c6a1993a4c5521b
+input_fingerprint_sha256: e548cff4410bfdfc554e216cc0d0817d1035267714190d98e94230db3c13485f
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 6.36
+elapsed_sec: 12.90
 status: ok
 ----- stdout -----
 PASS exchange_port_certificate
@@ -154,15 +154,11 @@ PASS fixture_certificate
     },
     "exchange_port": {
       "CNOT_primitives": 18,
-      "F1_docstring_range": [
+      "all_affected_dictionary_exchange_failures": 0,
+      "bell_character_docstring_range": [
         72,
         144
       ],
-      "F2_derived_six_qubit_range": [
-        72,
-        78
-      ],
-      "all_affected_dictionary_exchange_failures": 0,
       "cell_parity_image_failures": false,
       "convention_evidence_pass": true,
       "dense_integer_Pauli_selftest": {
@@ -176,6 +172,10 @@ PASS fixture_certificate
         "mismatches": 0,
         "signed_weight_1_or_2_rows": 144
       },
+      "even_exchange_port_derived_six_qubit_range": [
+        72,
+        78
+      ],
       "forward_dictionary_exchange_failures": 0,
       "joint_parity_invariance_failures": false,
       "odd_bank_detection_failures": 0,
@@ -283,36 +283,36 @@ PASS fixture_certificate
     }
   ],
   "declared_conventions": {
-    "F1_declares_H_CP_H": true,
-    "F1_declares_bank_q_2q": true,
-    "F1_declares_code_0_q": true,
-    "F1_declares_fixed_X_and_character_Z": true,
-    "F2_declares_colocation": true,
-    "F2_declares_one_six_mode_live_bank": true,
-    "F3_declares_literal_slot_walk": true,
-    "F3_declares_stage_components": true,
-    "derivation": "F1 states its q-wide mirror range literally.  F2 declares one six-mode bank, and the code register ends at q, so its separate bank occupies the next six registers [q,q+6).",
-    "derived_F1_range_formula": "[q,2q)",
-    "derived_F2_range_formula": "[q,q+6)",
+    "bell_character_declares_H_CP_H": true,
+    "bell_character_declares_bank_q_2q": true,
+    "bell_character_declares_code_0_q": true,
+    "bell_character_declares_fixed_X_and_character_Z": true,
+    "derivation": "bell_character states its q-wide mirror range literally.  even_exchange_port declares one six-mode bank, and the code register ends at q, so its separate bank occupies the next six registers [q,q+6).",
+    "derived_bell_character_range_formula": "[q,2q)",
+    "derived_even_exchange_port_range_formula": "[q,q+6)",
     "docstring_sha256": {
-      "frontier_cycle721_car_bell_input_m2_compiler_2026_07_28": "1ce48f171c3f75a88dbcc867f96c91a31540326babe61b3a285352f04558afcb",
-      "frontier_cycle721_collision_free_epoch_composition_2026_07_28": "eaebb011e258f4676315c66c9b82edb81da5a2c634d9feb1d60269b96dd66e89",
-      "frontier_cycle721_encoded_input_clifford_port_2026_07_28": "a695906be935baed77d5a86fedf445de137f1c58e6138db24270494f82f7a4c7"
-    }
+      "frontier_companion_bank_bell_character_dilation_2026_07_28": "d546ad4874b2b307f91b90cd4062df5dc04da6622d3d3527fc1d1f6bbc546908",
+      "frontier_companion_bank_epoch_liveness_2026_07_28": "53577cd0fec0b7ef618c6884e6fb83be25c378074bdd2138259d23128022ab7e",
+      "frontier_companion_bank_even_exchange_port_2026_07_28": "1d9b2b0cb3d7025490e49439495a8b625bc8fdbc219739b98ce3dd20278f33c8"
+    },
+    "epoch_liveness_declares_literal_slot_walk": true,
+    "epoch_liveness_declares_stage_components": false,
+    "even_exchange_port_declares_colocation": true,
+    "even_exchange_port_declares_one_six_mode_live_bank": true
   },
-  "report_sha256": "c4d1b32d12358e287e81fdc0436f584b96ed60b51fddce651d6597222a302be6",
-  "runtime_seconds": 6.248188417004712,
+  "report_sha256": "96f227b703c50c25e8c1a29163066b4301eed9aa0fbeefba41195de20e2e9aad",
+  "runtime_seconds": 12.584497415999067,
   "status": "PASS",
   "top_level_blocklist": [
-    "frontier_cycle721_car_bell_input_m2_compiler_2026_07_28",
-    "frontier_cycle721_collision_free_epoch_composition_2026_07_28",
-    "frontier_cycle721_encoded_input_clifford_port_2026_07_28"
+    "frontier_companion_bank_bell_character_dilation_2026_07_28",
+    "frontier_companion_bank_epoch_liveness_2026_07_28",
+    "frontier_companion_bank_even_exchange_port_2026_07_28"
   ],
   "wording_corrections": [
-    "The epoch runner's description of its alternate port as the F2 leg needs a namespace qualifier: standalone F2 declares one six-qubit bank [q,q+6), whereas the epoch embeds a port-indexed six-qubit sub-block inside the q-wide F1 bank [q,2q).  These register conventions coincide only for port index zero."
+    "The epoch runner's description of its alternate port as the even_exchange_port leg needs a namespace qualifier: standalone even_exchange_port declares one six-qubit bank [q,q+6), whereas the epoch embeds a port-indexed six-qubit sub-block inside the q-wide bell_character bank [q,2q).  These register conventions coincide only for port index zero."
   ]
 }
-CYCLE721_TOURNAMENT_INDEPENDENT_ADVERSARY_PASS
+COMPANION_BANK_INPUT_PACKAGE_INDEPENDENT_ADVERSARY_PASS
 
 ----- stderr -----
 

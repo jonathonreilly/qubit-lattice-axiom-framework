@@ -1,18 +1,18 @@
 ===== runner cache v1 =====
-runner: scripts/frontier_cycle721_collision_free_epoch_composition_2026_07_28.py
-runner_sha256: 046d013dbaef721ceaddf02ba81b3852967745bf2e5aa597fc19e2ee69653166
-input_fingerprint_sha256: 3d1d30093855677ff9d5ce3ff8360294000a4622a0b596949615aa40a9db0463
+runner: scripts/frontier_companion_bank_epoch_liveness_2026_07_28.py
+runner_sha256: 7216ff9668cec195e315922503fdd5f33384849c40fbe751f14241c043bb6151
+input_fingerprint_sha256: 7a994b3df764c9de22bc28b8538a14b67810866643681864e94c33405d949270
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 83.29
+elapsed_sec: 134.71
 status: ok
 ----- stdout -----
 PASS both input-leg variants have zero slot-walk liveness, collision, and returned-route failures on every held liveness box
-PASS the exhaustive signed generator family has exact staged-versus-flattened A/B/C tableau action with the unchanged certified G tail on 1x1x1 and 2x2x2
+PASS the exhaustive signed generator family has exact staged-versus-flattened pump/input/correction tableau action on 1x1x1 and 2x2x2
 PASS the imported 3x2x2 recurrent one-step conjunction and 2x2x2 orientation/interleave/deletion gates remain exact
 PASS the three mass/contact and five Cycle-230 fixture residuals remain below 4e-10
 PASS both schedule variants transport over 24 frames x 8 parities with identical schedule-key and per-family census multisets and zero four-field coframe failures
-PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleave, and duplicate-owner controls are all detected
+PASS deleted handoff, deleted return word, hostile input-before-pump interleave, and duplicate-owner controls are all detected
 {
   "audit": "unset",
   "authority": "none",
@@ -5056,7 +5056,7 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
       "pass": true
     },
     {
-      "label": "the exhaustive signed generator family has exact staged-versus-flattened A/B/C tableau action with the unchanged certified G tail on 1x1x1 and 2x2x2",
+      "label": "the exhaustive signed generator family has exact staged-versus-flattened pump/input/correction tableau action on 1x1x1 and 2x2x2",
       "pass": true
     },
     {
@@ -5072,12 +5072,14 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
       "pass": true
     },
     {
-      "label": "deleted handoff, deleted return word, hostile Stage-B-before-pump interleave, and duplicate-owner controls are all detected",
+      "label": "deleted handoff, deleted return word, hostile input-before-pump interleave, and duplicate-owner controls are all detected",
       "pass": true
     }
   ],
-  "claim_boundary": "This proves one supplied collision-free finite epoch on the held site maps. The supplied sector/genesis inventory is unchanged. Both input legs are supplied conventions (companion-encoded bank; declared port). No renewal, multi-source composition, or autonomy is claimed. Circuit ordinals are structure, not time. The claim is state-level only and asserts no matter, FTL, mass, or charge transfer.",
-  "collision_free_joint_epoch_composed": true,
+  "claim_boundary": "This proves a collision-free register-liveness schedule for one supplied finite epoch on the held site maps, exact algebra for the pump/input/correction prefix, and a separate regression of the imported recurrent tail. It does not prove their end-to-end composite channel or logical intertwiner. The supplied sector/genesis inventory and both input-leg conventions are unchanged. No renewal, multi-source composition, autonomy, or physical time interpretation is claimed.",
+  "collision_free_epoch_liveness_verified": true,
+  "collision_free_joint_epoch_composed": false,
+  "composite_channel_or_intertwiner_verified": false,
   "controls": {
     "all_four_detected": true,
     "delete_handoff": {
@@ -5641,277 +5643,7 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
       "alternate_port"
     ]
   },
-  "derived": "literal global register enumeration; exact slot-by-slot clean/live/retained ownership; explicit producer-consumer handoffs; returned-route checks; signed Clifford prefix tableaux; transported schedule-key/census multisets; imported recurrent and fixture regression certificates",
-  "end_to_end": {
-    "1x1x1": {
-      "alternate_port": {
-        "F1_stage_action": {
-          "not_applicable": 0
-        },
-        "F2_stage_action": {
-          "exported_PORT_part1": {
-            "cells": 1,
-            "census": {
-              "diameter": 0,
-              "primitive_count": 18,
-              "route_transitions": 0,
-              "support_cells": 1
-            },
-            "forward_11_even_CAR_failures": 0,
-            "forward_port_onsite_dictionary_exchange_failures": 0,
-            "gate_pass": true,
-            "generation": {
-              "declared_11_generator_missing_failures": 0,
-              "declared_11_generator_multiplicity_failures": 0,
-              "onsite_physical_target_identity_failures": 0
-            },
-            "incident_seam_exchange_failures": 0,
-            "nonincident_seam_invariance_failures": 0,
-            "other_cell_onsite_invariance_failures": 0,
-            "parity": {
-              "cell_parity_image_failures": false,
-              "odd_bank_detection_failures": 0,
-              "odd_matter_image_detection_failures": 0,
-              "total_joint_parity_invariance_failures": false
-            },
-            "port_cell": [
-              0,
-              0,
-              0
-            ],
-            "port_cell_index": 0,
-            "port_onsite_dictionary_exchange_failures": 0,
-            "port_onsite_dictionary_rows": 36,
-            "reverse_11_even_CAR_failures": 0,
-            "shape": [
-              1,
-              1,
-              1
-            ]
-          },
-          "failure_fields": {
-            "dictionary_exchange_failures": 0,
-            "forward_11_even_CAR_failures": 0,
-            "generation": 0,
-            "other_cell_or_seam_failures": 0,
-            "parity_failures": 0,
-            "reverse_11_even_CAR_failures": 0
-          }
-        },
-        "G_action_basis": "unchanged imported non-Clifford recurrent tail, certified on generator coordinates by R.recurrent_box_certificate; the A/B/C prefix is exact signed Clifford tableau algebra",
-        "G_routed_word_identity_failures": 0,
-        "G_routed_word_sha256": "f5d78085de93368ca1c32f06d317738f0272f6d5bef3ed305818d5a01d63f6f0",
-        "failing_generators": [],
-        "generator_family_census": {
-          "cell_bank_parity": 1,
-          "cell_code_parity": 1,
-          "cell_joint_parity": 1,
-          "direct_graph": 11,
-          "pump_ancilla_X": 11,
-          "pump_ancilla_Z": 11,
-          "pump_graph": 11,
-          "pump_measured": 11
-        },
-        "generators_exhausted": 58,
-        "pass": true,
-        "phase_included": true,
-        "pump_stage_action": {
-          "dilation_X_failures": 0,
-          "dilation_Z_character_failures": 0,
-          "private_dual_predecessor_failures": 0,
-          "private_dual_self_failures": 0
-        },
-        "shape": [
-          1,
-          1,
-          1
-        ],
-        "stage_A_B_C_tableau_gates": 62,
-        "stage_action_failure_total": 0,
-        "stagewise_vs_flattened_tableau_failures": 0,
-        "variant": "alternate_port"
-      },
-      "primary": {
-        "F1_stage_action": {
-          "F1_exported_X_failures": 0,
-          "F1_exported_Z_character_failures": 0,
-          "F1_exported_other_measured_row_failures": 0
-        },
-        "F2_stage_action": {
-          "not_applicable": 0
-        },
-        "G_action_basis": "unchanged imported non-Clifford recurrent tail, certified on generator coordinates by R.recurrent_box_certificate; the A/B/C prefix is exact signed Clifford tableau algebra",
-        "G_routed_word_identity_failures": 0,
-        "G_routed_word_sha256": "f5d78085de93368ca1c32f06d317738f0272f6d5bef3ed305818d5a01d63f6f0",
-        "failing_generators": [],
-        "generator_family_census": {
-          "Bell_ancilla_X": 11,
-          "Bell_ancilla_Z": 11,
-          "Bell_measured": 11,
-          "cell_bank_parity": 1,
-          "cell_code_parity": 1,
-          "cell_joint_parity": 1,
-          "direct_graph": 11,
-          "pump_ancilla_X": 11,
-          "pump_ancilla_Z": 11,
-          "pump_graph": 11,
-          "pump_measured": 11
-        },
-        "generators_exhausted": 91,
-        "pass": true,
-        "phase_included": true,
-        "pump_stage_action": {
-          "dilation_X_failures": 0,
-          "dilation_Z_character_failures": 0,
-          "private_dual_predecessor_failures": 0,
-          "private_dual_self_failures": 0
-        },
-        "shape": [
-          1,
-          1,
-          1
-        ],
-        "stage_A_B_C_tableau_gates": 109,
-        "stage_action_failure_total": 0,
-        "stagewise_vs_flattened_tableau_failures": 0,
-        "variant": "primary"
-      }
-    },
-    "2x2x2": {
-      "alternate_port": {
-        "F1_stage_action": {
-          "not_applicable": 0
-        },
-        "F2_stage_action": {
-          "exported_PORT_part1": {
-            "cells": 8,
-            "census": {
-              "diameter": 0,
-              "primitive_count": 18,
-              "route_transitions": 0,
-              "support_cells": 1
-            },
-            "forward_11_even_CAR_failures": 0,
-            "forward_port_onsite_dictionary_exchange_failures": 0,
-            "gate_pass": true,
-            "generation": {
-              "declared_11_generator_missing_failures": 0,
-              "declared_11_generator_multiplicity_failures": 0,
-              "onsite_physical_target_identity_failures": 0
-            },
-            "incident_seam_exchange_failures": 0,
-            "nonincident_seam_invariance_failures": 0,
-            "other_cell_onsite_invariance_failures": 0,
-            "parity": {
-              "cell_parity_image_failures": false,
-              "odd_bank_detection_failures": 0,
-              "odd_matter_image_detection_failures": 0,
-              "total_joint_parity_invariance_failures": false
-            },
-            "port_cell": [
-              0,
-              0,
-              0
-            ],
-            "port_cell_index": 0,
-            "port_onsite_dictionary_exchange_failures": 0,
-            "port_onsite_dictionary_rows": 36,
-            "reverse_11_even_CAR_failures": 0,
-            "shape": [
-              2,
-              2,
-              2
-            ]
-          },
-          "failure_fields": {
-            "dictionary_exchange_failures": 0,
-            "forward_11_even_CAR_failures": 0,
-            "generation": 0,
-            "other_cell_or_seam_failures": 0,
-            "parity_failures": 0,
-            "reverse_11_even_CAR_failures": 0
-          }
-        },
-        "G_action_basis": "unchanged imported non-Clifford recurrent tail, certified on generator coordinates by R.recurrent_box_certificate; the A/B/C prefix is exact signed Clifford tableau algebra",
-        "G_routed_word_identity_failures": 0,
-        "G_routed_word_sha256": "9e9edd9c3bc5da1258135b723ef447f105e8017e972b22b8d22f911b04e1dfbf",
-        "failing_generators": [],
-        "generator_family_census": {
-          "cell_bank_parity": 8,
-          "cell_code_parity": 8,
-          "cell_joint_parity": 8,
-          "direct_graph": 100,
-          "pump_ancilla_X": 100,
-          "pump_ancilla_Z": 100,
-          "pump_graph": 100,
-          "pump_measured": 100
-        },
-        "generators_exhausted": 524,
-        "pass": true,
-        "phase_included": true,
-        "pump_stage_action": {
-          "dilation_X_failures": 0,
-          "dilation_Z_character_failures": 0,
-          "private_dual_predecessor_failures": 0,
-          "private_dual_self_failures": 0
-        },
-        "shape": [
-          2,
-          2,
-          2
-        ],
-        "stage_A_B_C_tableau_gates": 418,
-        "stage_action_failure_total": 0,
-        "stagewise_vs_flattened_tableau_failures": 0,
-        "variant": "alternate_port"
-      },
-      "primary": {
-        "F1_stage_action": {
-          "F1_exported_X_failures": 0,
-          "F1_exported_Z_character_failures": 0,
-          "F1_exported_other_measured_row_failures": 0
-        },
-        "F2_stage_action": {
-          "not_applicable": 0
-        },
-        "G_action_basis": "unchanged imported non-Clifford recurrent tail, certified on generator coordinates by R.recurrent_box_certificate; the A/B/C prefix is exact signed Clifford tableau algebra",
-        "G_routed_word_identity_failures": 0,
-        "G_routed_word_sha256": "9e9edd9c3bc5da1258135b723ef447f105e8017e972b22b8d22f911b04e1dfbf",
-        "failing_generators": [],
-        "generator_family_census": {
-          "Bell_ancilla_X": 100,
-          "Bell_ancilla_Z": 100,
-          "Bell_measured": 100,
-          "cell_bank_parity": 8,
-          "cell_code_parity": 8,
-          "cell_joint_parity": 8,
-          "direct_graph": 100,
-          "pump_ancilla_X": 100,
-          "pump_ancilla_Z": 100,
-          "pump_graph": 100,
-          "pump_measured": 100
-        },
-        "generators_exhausted": 824,
-        "pass": true,
-        "phase_included": true,
-        "pump_stage_action": {
-          "dilation_X_failures": 0,
-          "dilation_Z_character_failures": 0,
-          "private_dual_predecessor_failures": 0,
-          "private_dual_self_failures": 0
-        },
-        "shape": [
-          2,
-          2,
-          2
-        ],
-        "stage_A_B_C_tableau_gates": 1220,
-        "stage_action_failure_total": 0,
-        "stagewise_vs_flattened_tableau_failures": 0,
-        "variant": "primary"
-      }
-    }
-  },
+  "derived": "literal global register enumeration; exact slot-by-slot clean/live/retained ownership; explicit producer-consumer handoffs; returned-route checks; signed Clifford prefix tableaux; transported schedule-key/census multisets; imported recurrent and fixture regression certificates, with no inferred composite-channel equality between those separate checks",
   "fixtures": {
     "cycle230_residuals": {
       "FSWAP_matrix_residual": 0.0,
@@ -5929,22 +5661,22 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
     "tolerance": 4e-10
   },
   "namespace": {
-    "allocation_rule": "code [0,q), F1 companion-encoded bank [q,2q), canonically enumerated routed-only G coordinate sites, then all retained ancilla/syndrome/purifier/coframe/rail allocations",
+    "allocation_rule": "code [0,q), Bell-character companion bank [q,2q), canonically enumerated routed-only G coordinate sites, then all retained ancilla/syndrome/purifier/coframe/rail allocations",
     "by_box": {
       "1x1x1": {
-        "F1_original_auxiliary_start": 18,
         "G_auxiliary_allocation_offset_above_2q": 16,
-        "G_overlap_with_unshifted_F1_auxiliary_space": true,
+        "G_overlap_with_unshifted_bell_character_auxiliary_space": true,
         "G_routed_only_site_count": 16,
         "G_touched_register_count": 25,
         "G_touched_register_max": 33,
         "G_touched_register_min": 0,
         "actual_auxiliary_start": 34,
+        "bell_character_original_auxiliary_start": 18,
         "cells": 1,
         "explicit_register_table": {
           "Bell_measurement_ancillae": {
             "count": 11,
-            "description": "retained F1 Bell outcomes",
+            "description": "retained bell_character Bell outcomes",
             "start": 34,
             "stop": 45
           },
@@ -5962,7 +5694,7 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
           },
           "companion_encoded_bank": {
             "count": 9,
-            "description": "F1 mirror convention [q,2q); F2 uses the declared port cell's six-mode matter sub-block",
+            "description": "bell_character mirror convention [q,2q); even_exchange_port uses the declared port cell's six-mode matter sub-block",
             "start": 9,
             "stop": 18
           },
@@ -6017,19 +5749,19 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
         ]
       },
       "2x2x2": {
-        "F1_original_auxiliary_start": 144,
         "G_auxiliary_allocation_offset_above_2q": 472,
-        "G_overlap_with_unshifted_F1_auxiliary_space": true,
+        "G_overlap_with_unshifted_bell_character_auxiliary_space": true,
         "G_routed_only_site_count": 472,
         "G_touched_register_count": 544,
         "G_touched_register_max": 615,
         "G_touched_register_min": 0,
         "actual_auxiliary_start": 616,
+        "bell_character_original_auxiliary_start": 144,
         "cells": 8,
         "explicit_register_table": {
           "Bell_measurement_ancillae": {
             "count": 100,
-            "description": "retained F1 Bell outcomes",
+            "description": "retained bell_character Bell outcomes",
             "start": 616,
             "stop": 716
           },
@@ -6047,7 +5779,7 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
           },
           "companion_encoded_bank": {
             "count": 72,
-            "description": "F1 mirror convention [q,2q); F2 uses the declared port cell's six-mode matter sub-block",
+            "description": "bell_character mirror convention [q,2q); even_exchange_port uses the declared port cell's six-mode matter sub-block",
             "start": 72,
             "stop": 144
           },
@@ -6102,19 +5834,19 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
         ]
       },
       "3x2x2": {
-        "F1_original_auxiliary_start": 216,
         "G_auxiliary_allocation_offset_above_2q": 722,
-        "G_overlap_with_unshifted_F1_auxiliary_space": true,
+        "G_overlap_with_unshifted_bell_character_auxiliary_space": true,
         "G_routed_only_site_count": 722,
         "G_touched_register_count": 830,
         "G_touched_register_max": 937,
         "G_touched_register_min": 0,
         "actual_auxiliary_start": 938,
+        "bell_character_original_auxiliary_start": 216,
         "cells": 12,
         "explicit_register_table": {
           "Bell_measurement_ancillae": {
             "count": 152,
-            "description": "retained F1 Bell outcomes",
+            "description": "retained bell_character Bell outcomes",
             "start": 938,
             "stop": 1090
           },
@@ -6132,7 +5864,7 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
           },
           "companion_encoded_bank": {
             "count": 108,
-            "description": "F1 mirror convention [q,2q); F2 uses the declared port cell's six-mode matter sub-block",
+            "description": "bell_character mirror convention [q,2q); even_exchange_port uses the declared port cell's six-mode matter sub-block",
             "start": 108,
             "stop": 216
           },
@@ -6187,19 +5919,19 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
         ]
       },
       "5x3x2": {
-        "F1_original_auxiliary_start": 540,
         "G_auxiliary_allocation_offset_above_2q": 1868,
-        "G_overlap_with_unshifted_F1_auxiliary_space": true,
+        "G_overlap_with_unshifted_bell_character_auxiliary_space": true,
         "G_routed_only_site_count": 1868,
         "G_touched_register_count": 2138,
         "G_touched_register_max": 2407,
         "G_touched_register_min": 0,
         "actual_auxiliary_start": 2408,
+        "bell_character_original_auxiliary_start": 540,
         "cells": 30,
         "explicit_register_table": {
           "Bell_measurement_ancillae": {
             "count": 389,
-            "description": "retained F1 Bell outcomes",
+            "description": "retained bell_character Bell outcomes",
             "start": 2408,
             "stop": 2797
           },
@@ -6217,7 +5949,7 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
           },
           "companion_encoded_bank": {
             "count": 270,
-            "description": "F1 mirror convention [q,2q); F2 uses the declared port cell's six-mode matter sub-block",
+            "description": "bell_character mirror convention [q,2q); even_exchange_port uses the declared port cell's six-mode matter sub-block",
             "start": 270,
             "stop": 540
           },
@@ -6277,7 +6009,7 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
       "sites"
     ]
   },
-  "open": "renewal or repeated-source composition; autonomous genesis, sector choice, root choice, port choice, or program choice; fault-tolerant realization; any continuum/time interpretation",
+  "open": "renewal or repeated-source composition; autonomous genesis, sector choice, root choice, port choice, or program choice; a computed end-to-end channel/intertwiner including the recurrent tail; fault-tolerant realization; any continuum/time interpretation",
   "recurrent_integrity": {
     "one_step_exact_conjunction_recomputed": true,
     "one_step_power_row_exact": true,
@@ -6428,9 +6160,279 @@ PASS deleted handoff, deleted return word, hostile Stage-B-before-pump interleav
       "within_edge_noncommuting_pairs": 48
     }
   },
-  "runtime_seconds": 82.8298772920025,
+  "runtime_seconds": 133.80901329100016,
+  "staged_prefix": {
+    "1x1x1": {
+      "alternate_port": {
+        "G_action_basis": "unchanged imported non-Clifford recurrent tail, checked only by the separate R.recurrent_box_certificate regression; the A/B/C prefix is exact signed Clifford tableau algebra",
+        "G_routed_word_digest_present": true,
+        "G_routed_word_sha256": "f5d78085de93368ca1c32f06d317738f0272f6d5bef3ed305818d5a01d63f6f0",
+        "bell_character_stage_action": {
+          "not_applicable": 0
+        },
+        "even_exchange_port_stage_action": {
+          "exported_PORT_part1": {
+            "cells": 1,
+            "census": {
+              "diameter": 0,
+              "primitive_count": 18,
+              "route_transitions": 0,
+              "support_cells": 1
+            },
+            "forward_11_even_CAR_failures": 0,
+            "forward_port_onsite_dictionary_exchange_failures": 0,
+            "gate_pass": true,
+            "generation": {
+              "declared_11_generator_missing_failures": 0,
+              "declared_11_generator_multiplicity_failures": 0,
+              "onsite_physical_target_identity_failures": 0
+            },
+            "incident_seam_exchange_failures": 0,
+            "nonincident_seam_invariance_failures": 0,
+            "other_cell_onsite_invariance_failures": 0,
+            "parity": {
+              "cell_parity_image_failures": false,
+              "odd_bank_detection_failures": 0,
+              "odd_matter_image_detection_failures": 0,
+              "total_joint_parity_invariance_failures": false
+            },
+            "port_cell": [
+              0,
+              0,
+              0
+            ],
+            "port_cell_index": 0,
+            "port_onsite_dictionary_exchange_failures": 0,
+            "port_onsite_dictionary_rows": 36,
+            "reverse_11_even_CAR_failures": 0,
+            "shape": [
+              1,
+              1,
+              1
+            ]
+          },
+          "failure_fields": {
+            "dictionary_exchange_failures": 0,
+            "forward_11_even_CAR_failures": 0,
+            "generation": 0,
+            "other_cell_or_seam_failures": 0,
+            "parity_failures": 0,
+            "reverse_11_even_CAR_failures": 0
+          }
+        },
+        "failing_generators": [],
+        "generator_family_census": {
+          "cell_bank_parity": 1,
+          "cell_code_parity": 1,
+          "cell_joint_parity": 1,
+          "direct_graph": 11,
+          "pump_ancilla_X": 11,
+          "pump_ancilla_Z": 11,
+          "pump_graph": 11,
+          "pump_measured": 11
+        },
+        "generators_exhausted": 58,
+        "pass": true,
+        "phase_included": true,
+        "pump_stage_action": {
+          "dilation_X_failures": 0,
+          "dilation_Z_character_failures": 0,
+          "private_dual_predecessor_failures": 0,
+          "private_dual_self_failures": 0
+        },
+        "shape": [
+          1,
+          1,
+          1
+        ],
+        "stage_A_B_C_tableau_gates": 62,
+        "stage_action_failure_total": 0,
+        "stagewise_vs_flattened_tableau_failures": 0,
+        "variant": "alternate_port"
+      },
+      "primary": {
+        "G_action_basis": "unchanged imported non-Clifford recurrent tail, checked only by the separate R.recurrent_box_certificate regression; the A/B/C prefix is exact signed Clifford tableau algebra",
+        "G_routed_word_digest_present": true,
+        "G_routed_word_sha256": "f5d78085de93368ca1c32f06d317738f0272f6d5bef3ed305818d5a01d63f6f0",
+        "bell_character_stage_action": {
+          "bell_character_exported_X_failures": 0,
+          "bell_character_exported_Z_character_failures": 0,
+          "bell_character_exported_other_measured_row_failures": 0
+        },
+        "even_exchange_port_stage_action": {
+          "not_applicable": 0
+        },
+        "failing_generators": [],
+        "generator_family_census": {
+          "Bell_ancilla_X": 11,
+          "Bell_ancilla_Z": 11,
+          "Bell_measured": 11,
+          "cell_bank_parity": 1,
+          "cell_code_parity": 1,
+          "cell_joint_parity": 1,
+          "direct_graph": 11,
+          "pump_ancilla_X": 11,
+          "pump_ancilla_Z": 11,
+          "pump_graph": 11,
+          "pump_measured": 11
+        },
+        "generators_exhausted": 91,
+        "pass": true,
+        "phase_included": true,
+        "pump_stage_action": {
+          "dilation_X_failures": 0,
+          "dilation_Z_character_failures": 0,
+          "private_dual_predecessor_failures": 0,
+          "private_dual_self_failures": 0
+        },
+        "shape": [
+          1,
+          1,
+          1
+        ],
+        "stage_A_B_C_tableau_gates": 109,
+        "stage_action_failure_total": 0,
+        "stagewise_vs_flattened_tableau_failures": 0,
+        "variant": "primary"
+      }
+    },
+    "2x2x2": {
+      "alternate_port": {
+        "G_action_basis": "unchanged imported non-Clifford recurrent tail, checked only by the separate R.recurrent_box_certificate regression; the A/B/C prefix is exact signed Clifford tableau algebra",
+        "G_routed_word_digest_present": true,
+        "G_routed_word_sha256": "9e9edd9c3bc5da1258135b723ef447f105e8017e972b22b8d22f911b04e1dfbf",
+        "bell_character_stage_action": {
+          "not_applicable": 0
+        },
+        "even_exchange_port_stage_action": {
+          "exported_PORT_part1": {
+            "cells": 8,
+            "census": {
+              "diameter": 0,
+              "primitive_count": 18,
+              "route_transitions": 0,
+              "support_cells": 1
+            },
+            "forward_11_even_CAR_failures": 0,
+            "forward_port_onsite_dictionary_exchange_failures": 0,
+            "gate_pass": true,
+            "generation": {
+              "declared_11_generator_missing_failures": 0,
+              "declared_11_generator_multiplicity_failures": 0,
+              "onsite_physical_target_identity_failures": 0
+            },
+            "incident_seam_exchange_failures": 0,
+            "nonincident_seam_invariance_failures": 0,
+            "other_cell_onsite_invariance_failures": 0,
+            "parity": {
+              "cell_parity_image_failures": false,
+              "odd_bank_detection_failures": 0,
+              "odd_matter_image_detection_failures": 0,
+              "total_joint_parity_invariance_failures": false
+            },
+            "port_cell": [
+              0,
+              0,
+              0
+            ],
+            "port_cell_index": 0,
+            "port_onsite_dictionary_exchange_failures": 0,
+            "port_onsite_dictionary_rows": 36,
+            "reverse_11_even_CAR_failures": 0,
+            "shape": [
+              2,
+              2,
+              2
+            ]
+          },
+          "failure_fields": {
+            "dictionary_exchange_failures": 0,
+            "forward_11_even_CAR_failures": 0,
+            "generation": 0,
+            "other_cell_or_seam_failures": 0,
+            "parity_failures": 0,
+            "reverse_11_even_CAR_failures": 0
+          }
+        },
+        "failing_generators": [],
+        "generator_family_census": {
+          "cell_bank_parity": 8,
+          "cell_code_parity": 8,
+          "cell_joint_parity": 8,
+          "direct_graph": 100,
+          "pump_ancilla_X": 100,
+          "pump_ancilla_Z": 100,
+          "pump_graph": 100,
+          "pump_measured": 100
+        },
+        "generators_exhausted": 524,
+        "pass": true,
+        "phase_included": true,
+        "pump_stage_action": {
+          "dilation_X_failures": 0,
+          "dilation_Z_character_failures": 0,
+          "private_dual_predecessor_failures": 0,
+          "private_dual_self_failures": 0
+        },
+        "shape": [
+          2,
+          2,
+          2
+        ],
+        "stage_A_B_C_tableau_gates": 418,
+        "stage_action_failure_total": 0,
+        "stagewise_vs_flattened_tableau_failures": 0,
+        "variant": "alternate_port"
+      },
+      "primary": {
+        "G_action_basis": "unchanged imported non-Clifford recurrent tail, checked only by the separate R.recurrent_box_certificate regression; the A/B/C prefix is exact signed Clifford tableau algebra",
+        "G_routed_word_digest_present": true,
+        "G_routed_word_sha256": "9e9edd9c3bc5da1258135b723ef447f105e8017e972b22b8d22f911b04e1dfbf",
+        "bell_character_stage_action": {
+          "bell_character_exported_X_failures": 0,
+          "bell_character_exported_Z_character_failures": 0,
+          "bell_character_exported_other_measured_row_failures": 0
+        },
+        "even_exchange_port_stage_action": {
+          "not_applicable": 0
+        },
+        "failing_generators": [],
+        "generator_family_census": {
+          "Bell_ancilla_X": 100,
+          "Bell_ancilla_Z": 100,
+          "Bell_measured": 100,
+          "cell_bank_parity": 8,
+          "cell_code_parity": 8,
+          "cell_joint_parity": 8,
+          "direct_graph": 100,
+          "pump_ancilla_X": 100,
+          "pump_ancilla_Z": 100,
+          "pump_graph": 100,
+          "pump_measured": 100
+        },
+        "generators_exhausted": 824,
+        "pass": true,
+        "phase_included": true,
+        "pump_stage_action": {
+          "dilation_X_failures": 0,
+          "dilation_Z_character_failures": 0,
+          "private_dual_predecessor_failures": 0,
+          "private_dual_self_failures": 0
+        },
+        "shape": [
+          2,
+          2,
+          2
+        ],
+        "stage_A_B_C_tableau_gates": 1220,
+        "stage_action_failure_total": 0,
+        "stagewise_vs_flattened_tableau_failures": 0,
+        "variant": "primary"
+      }
+    }
+  },
   "status": "PASS",
-  "supplied": "one-time finite epoch; fixed sector and genesis inventory; clean initial banks; declared root/router and program content; the primary companion-encoded F1 bank and alternate declared F2 port are both supplied input conventions"
+  "supplied": "one-time finite epoch; fixed sector and genesis inventory; clean initial banks; declared root/router and program content; the companion-encoded Bell-character bank and alternate declared even-exchange port are both supplied input conventions"
 }
 
 ----- stderr -----

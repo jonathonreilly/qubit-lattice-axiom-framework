@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
-runner: scripts/frontier_cycle721_encoded_input_clifford_port_2026_07_28.py
-runner_sha256: 980c74c1b623c13061f554c29f5569c5cccbc67072cf84e33f4a3432e4204cde
-input_fingerprint_sha256: 9e0460c9d12952ba3b848a57c30a24516b0eaefaaa6bdda6de5194752e43ed0c
+runner: scripts/frontier_companion_bank_even_exchange_port_2026_07_28.py
+runner_sha256: 07494e49272675cb752bbcd274f8e375bbb76d24cee0b0de5763cbf3c6a39ed7
+input_fingerprint_sha256: 3964d00a776881c8be598df31fa9e175516abccf560f055614de5562ae1b1121
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 21.40
+elapsed_sec: 41.16
 status: ok
 ----- stdout -----
 PASS dense exact Clifford tableau self-test has zero mismatches
@@ -875,10 +875,10 @@ PASS a wrong-port word leaves the declared port rows unmapped
     "coframe-origin seeded transport: this bank/dictionary surface touches no coframe registers, so the eight-origin channel covariance stays with the epoch-level composition",
     "autonomous selection of the port cell: the lexicographic-minimum default is a supplied chart convention (covariance evaluates the transported port)"
   ],
-  "runtime_seconds": 20.91364504199737,
-  "status": "cycle721-direct-local-encoded-input-clifford-port-pass",
+  "runtime_seconds": 40.332895541985636,
+  "status": "companion-bank-even-exchange-port-pass",
   "supplied": [
-    "the Cycle-720 companion/center operator dictionary and sector inventory",
+    "the predecessor companion/center operator dictionary and sector inventory",
     "one clean six-qubit live-input bank co-located at the declared port",
     "the total-parity label and companion center-sector representative"
   ]

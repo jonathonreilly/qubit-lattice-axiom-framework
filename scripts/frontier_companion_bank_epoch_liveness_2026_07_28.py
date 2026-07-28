@@ -1,30 +1,33 @@
 #!/usr/bin/env python3
-"""Cycle-721 collision-free composition of one supplied finite epoch.
+"""Companion-bank collision-free liveness schedule for one supplied epoch.
 
-The runner composes the Cycle-720 tree/plaquette Choi pump, either the F1
-compiled Bell-measurement leg or the F2 direct port leg, the retained Bell
-correction bank when present, and the unchanged routed recurrent word.  Its
-resource proof is a literal slot walk.  Static support disjointness is never
-used as a substitute for the clean/live/retained state machine.
+The runner schedules the predecessor tree/plaquette Choi pump, either the
+companion-bank Bell-character leg or the direct exchange-port leg, the
+retained Bell correction bank when present, and the unchanged routed recurrent
+word.  Its resource proof is a literal slot walk.  Static support disjointness
+is never used as a substitute for the clean/live/retained state machine.
+The exact A/B/C prefix tableau is checked separately from the imported
+recurrent-update certificate; no end-to-end composite channel equality is
+claimed.
 """
 
 from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = (
-    "docs/CAR_BELL_INPUT_PHYSICAL_M2_COMPILER_CYCLE721_BOUNDED_THEOREM_"
-    "NOTE_2026-07-28.md"
+    "docs/COMPANION_BANK_BELL_CHARACTER_DILATION_EXCHANGE_PORT_AND_"
+    "EPOCH_LIVENESS_BOUNDED_THEOREM_NOTE_2026-07-28.md"
 )
 AUDIT_INPUT_PATHS = (
-    "scripts/frontier_cycle721_car_bell_input_m2_compiler_2026_07_28.py",
-    "scripts/frontier_cycle721_encoded_input_clifford_port_2026_07_28.py",
+    "scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py",
+    "scripts/frontier_companion_bank_even_exchange_port_2026_07_28.py",
     "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py",
     "scripts/frontier_cycle720_companion_recurrent_overlap_update_2026_07_27.py",
     "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py",
     "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py",
     "scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py",
     "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py",
-    "docs/CAR_BELL_INPUT_PHYSICAL_M2_COMPILER_CYCLE721_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/COMPANION_BANK_BELL_CHARACTER_DILATION_EXCHANGE_PORT_AND_EPOCH_LIVENESS_BOUNDED_THEOREM_NOTE_2026-07-28.md",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
@@ -38,8 +41,8 @@ from typing import Iterable
 
 import numpy as np
 
-import frontier_cycle721_car_bell_input_m2_compiler_2026_07_28 as EBM
-import frontier_cycle721_encoded_input_clifford_port_2026_07_28 as PORT
+import frontier_companion_bank_bell_character_dilation_2026_07_28 as EBM
+import frontier_companion_bank_even_exchange_port_2026_07_28 as PORT
 import frontier_cycle720_companion_subsystem_m2_update_2026_07_27 as U
 import frontier_cycle720_companion_recurrent_overlap_update_2026_07_27 as R
 
@@ -180,7 +183,7 @@ def relocated_f1_gates(
     for gate in gates:
         if gate[0] == "H":
             if gate[1] != old_ancilla:
-                raise ValueError("F1 H gate does not use its declared ancilla")
+                raise ValueError("bell_character H gate does not use its declared ancilla")
             output.append(PORT.Gate("H", new_ancilla))
         elif gate[0] == "CP":
             control = new_ancilla if gate[1] == old_ancilla else gate[1]
@@ -192,7 +195,7 @@ def relocated_f1_gates(
                 )
             )
         else:
-            raise ValueError(f"unknown F1 gate {gate!r}")
+            raise ValueError(f"unknown bell_character gate {gate!r}")
     return tuple(output)
 
 
@@ -232,7 +235,7 @@ def build_namespace(
         for site in getattr(instruction, "sites")
     }
     extra_sites = tuple(sorted(touched_sites - set(placed_site_to_qubit)))
-    # The F1 convention [q,2q) is immutable.  Routed-only G sites therefore
+    # The bell_character convention [q,2q) is immutable.  Routed-only G sites therefore
     # begin after that bank, and all genuinely auxiliary allocations are
     # shifted above the discovered G maximum.
     g_site_to_register = dict(placed_site_to_qubit)
@@ -310,14 +313,14 @@ def register_table(namespace: Namespace) -> dict[str, object]:
     descriptions = {
         "code": "physical matter 6N followed by companion 3N",
         "companion_encoded_bank": (
-            "F1 mirror convention [q,2q); F2 uses the declared port cell's "
+            "bell_character mirror convention [q,2q); even_exchange_port uses the declared port cell's "
             "six-mode matter sub-block"
         ),
         "G_routed_only_sites": (
             "coordinate sites touched by routed G but absent from "
             "U.placement sites_by_qubit"
         ),
-        "Bell_measurement_ancillae": "retained F1 Bell outcomes",
+        "Bell_measurement_ancillae": "retained bell_character Bell outcomes",
         "pump_syndrome_bank": "retained pump row outcomes",
         "pump_Bell_purifiers": "one local purifier per q+matter Choi-system M2",
         "retained_coframe_gauge": "unchanged three-M2-per-cell coframe surface",
@@ -402,7 +405,7 @@ def build_epoch(
         "D": [],
     }
 
-    # Local Bell-pair inventory and the supplied companion part of the F1 bank.
+    # Local Bell-pair inventory and the supplied companion part of the bell_character bank.
     purifier_base = namespace.ranges["pump_Bell_purifiers"][0]
     init_words = []
     system_registers = tuple(range(q)) + tuple(range(q, q + matter))
@@ -598,7 +601,7 @@ def build_epoch(
                 bank_port_base + mode, code_port_base + mode
             ))
         if len(port_gates) != 18:
-            raise AssertionError("F2 port word must contain exactly 18 CNOTs")
+            raise AssertionError("even_exchange_port port word must contain exactly 18 CNOTs")
         for index, gate in enumerate(port_gates):
             slots.append(Slot("B", [WordUse(
                 f"B:port_CNOT:{index}",
@@ -1001,9 +1004,9 @@ def f1_stage_action_failures(bundle: EpochBundle) -> dict[str, int]:
             if other["index"] != word["index"]
         )
     return {
-        "F1_exported_X_failures": x_failures,
-        "F1_exported_Z_character_failures": z_failures,
-        "F1_exported_other_measured_row_failures": other_row_failures,
+        "bell_character_exported_X_failures": x_failures,
+        "bell_character_exported_Z_character_failures": z_failures,
+        "bell_character_exported_other_measured_row_failures": other_row_failures,
     }
 
 
@@ -1035,7 +1038,7 @@ def f2_stage_action_failures(bundle: EpochBundle) -> dict[str, object]:
     }
 
 
-def end_to_end_algebra(bundle: EpochBundle) -> dict[str, object]:
+def staged_prefix_algebra(bundle: EpochBundle) -> dict[str, object]:
     generators = algebra_generators(bundle)
     stages = ("A", "B", "C")
     flattened = tuple(
@@ -1074,15 +1077,15 @@ def end_to_end_algebra(bundle: EpochBundle) -> dict[str, object]:
         "stagewise_vs_flattened_tableau_failures": len(mismatches),
         "failing_generators": tuple(mismatches[:20]),
         "pump_stage_action": pump_failures,
-        "F1_stage_action": f1_failures,
-        "F2_stage_action": f2_failures,
+        "bell_character_stage_action": f1_failures,
+        "even_exchange_port_stage_action": f2_failures,
         "stage_action_failure_total": stage_failure_total,
         "G_routed_word_sha256": g_digest,
-        "G_routed_word_identity_failures": 0,
+        "G_routed_word_digest_present": bool(g_digest),
         "G_action_basis": (
-            "unchanged imported non-Clifford recurrent tail, certified on "
-            "generator coordinates by R.recurrent_box_certificate; the "
-            "A/B/C prefix is exact signed Clifford tableau algebra"
+            "unchanged imported non-Clifford recurrent tail, checked only by "
+            "the separate R.recurrent_box_certificate regression; the A/B/C "
+            "prefix is exact signed Clifford tableau algebra"
         ),
         "pass": (
             not mismatches
@@ -1666,11 +1669,11 @@ def namespace_report(bundle: EpochBundle) -> dict[str, object]:
         "G_auxiliary_allocation_offset_above_2q": (
             namespace.g_auxiliary_offset
         ),
-        "F1_original_auxiliary_start": 2 * namespace.q,
+        "bell_character_original_auxiliary_start": 2 * namespace.q,
         "actual_auxiliary_start": namespace.ranges[
             "Bell_measurement_ancillae"
         ][0],
-        "G_overlap_with_unshifted_F1_auxiliary_space": (
+        "G_overlap_with_unshifted_bell_character_auxiliary_space": (
             namespace.g_auxiliary_offset > 0
         ),
         "instruction_schema_discovered_at_runtime": (
@@ -1692,10 +1695,10 @@ def main() -> None:
         atlas,
         recurrent_override=one_primary.recurrent,
     )
-    end_to_end = {
+    staged_prefix = {
         "1x1x1": {
-            "primary": end_to_end_algebra(one_primary),
-            "alternate_port": end_to_end_algebra(one_alternate),
+            "primary": staged_prefix_algebra(one_primary),
+            "alternate_port": staged_prefix_algebra(one_alternate),
         }
     }
 
@@ -1711,8 +1714,8 @@ def main() -> None:
         "primary": source_primary,
         "alternate_port": source_alternate,
     }
-    end_to_end["2x2x2"] = {
-        variant: end_to_end_algebra(source_bundles[variant])
+    staged_prefix["2x2x2"] = {
+        variant: staged_prefix_algebra(source_bundles[variant])
         for variant in variants
     }
 
@@ -1771,7 +1774,7 @@ def main() -> None:
         for variant in variants
     )
     algebra_gate = all(
-        end_to_end[shape][variant]["pass"]
+        staged_prefix[shape][variant]["pass"]
         for shape in ("1x1x1", "2x2x2")
         for variant in variants
     )
@@ -1791,7 +1794,7 @@ def main() -> None:
         liveness_gate,
     )
     check(
-        "the exhaustive signed generator family has exact staged-versus-flattened A/B/C tableau action with the unchanged certified G tail on 1x1x1 and 2x2x2",
+        "the exhaustive signed generator family has exact staged-versus-flattened pump/input/correction tableau action on 1x1x1 and 2x2x2",
         algebra_gate,
     )
     check(
@@ -1807,7 +1810,7 @@ def main() -> None:
         covariance_gate,
     )
     check(
-        "deleted handoff, deleted return word, hostile Stage-B-before-pump interleave, and duplicate-owner controls are all detected",
+        "deleted handoff, deleted return word, hostile input-before-pump interleave, and duplicate-owner controls are all detected",
         controls_gate,
     )
 
@@ -1819,14 +1822,14 @@ def main() -> None:
         "namespace": {
             "by_box": namespace_by_box,
             "allocation_rule": (
-                "code [0,q), F1 companion-encoded bank [q,2q), canonically "
+                "code [0,q), Bell-character companion bank [q,2q), canonically "
                 "enumerated routed-only G coordinate sites, then all retained "
                 "ancilla/syndrome/purifier/coframe/rail allocations"
             ),
             "instruction_fields_printed_and_used": ("kind", "sites"),
         },
         "boxes": boxes,
-        "end_to_end": end_to_end,
+        "staged_prefix": staged_prefix,
         "recurrent_integrity": recurrent_integrity,
         "fixtures": fixtures,
         "covariance": covariance,
@@ -1836,30 +1839,33 @@ def main() -> None:
             "clean/live/retained ownership; explicit producer-consumer "
             "handoffs; returned-route checks; signed Clifford prefix "
             "tableaux; transported schedule-key/census multisets; imported "
-            "recurrent and fixture regression certificates"
+            "recurrent and fixture regression certificates, with no inferred "
+            "composite-channel equality between those separate checks"
         ),
         "supplied": (
             "one-time finite epoch; fixed sector and genesis inventory; "
             "clean initial banks; declared root/router and program content; "
-            "the primary companion-encoded F1 bank and alternate declared "
-            "F2 port are both supplied input conventions"
+            "the companion-encoded Bell-character bank and alternate declared "
+            "even-exchange port are both supplied input conventions"
         ),
         "open": (
             "renewal or repeated-source composition; autonomous genesis, "
             "sector choice, root choice, port choice, or program choice; "
-            "fault-tolerant realization; any continuum/time interpretation"
+            "a computed end-to-end channel/intertwiner including the recurrent "
+            "tail; fault-tolerant realization; any continuum/time interpretation"
         ),
         "claim_boundary": (
-            "This proves one supplied collision-free finite epoch on the "
-            "held site maps. The supplied sector/genesis inventory is "
-            "unchanged. Both input legs are supplied conventions "
-            "(companion-encoded bank; declared port). No renewal, "
-            "multi-source composition, or autonomy is claimed. Circuit "
-            "ordinals are structure, not time. The claim is state-level "
-            "only and asserts no matter, FTL, mass, or charge transfer."
+            "This proves a collision-free register-liveness schedule for one "
+            "supplied finite epoch on the held site maps, exact algebra for "
+            "the pump/input/correction prefix, and a separate regression of "
+            "the imported recurrent tail. It does not prove their end-to-end "
+            "composite channel or logical intertwiner. The supplied "
+            "sector/genesis inventory and both input-leg conventions are "
+            "unchanged. No renewal, multi-source composition, autonomy, or "
+            "physical time interpretation is claimed."
         ),
         "runtime_seconds": runtime_seconds,
-        "collision_free_joint_epoch_composed": bool(
+        "collision_free_epoch_liveness_verified": bool(
             liveness_gate
             and algebra_gate
             and recurrent_gate
@@ -1867,6 +1873,8 @@ def main() -> None:
             and covariance_gate
             and controls_gate
         ),
+        "composite_channel_or_intertwiner_verified": False,
+        "collision_free_joint_epoch_composed": False,
         "authority": "none",
         "audit": "unset",
     }

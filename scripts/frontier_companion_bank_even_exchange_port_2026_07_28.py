@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle-721 direct local encoded-input Clifford port.
+"""Companion-bank direct local even-exchange port certificate.
 
 This runner deliberately does not reconstruct the transient mixed-gauge V_s
 tableau.  It tests the direct dictionary-level coupling: a six-mode live input
@@ -12,8 +12,8 @@ from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = (
-    "docs/CAR_BELL_INPUT_PHYSICAL_M2_COMPILER_CYCLE721_BOUNDED_"
-    "THEOREM_NOTE_2026-07-28.md"
+    "docs/COMPANION_BANK_BELL_CHARACTER_DILATION_EXCHANGE_PORT_AND_"
+    "EPOCH_LIVENESS_BOUNDED_THEOREM_NOTE_2026-07-28.md"
 )
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py",
@@ -21,7 +21,7 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py",
     "scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py",
     "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py",
-    "docs/CAR_BELL_INPUT_PHYSICAL_M2_COMPILER_CYCLE721_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/COMPANION_BANK_BELL_CHARACTER_DILATION_EXCHANGE_PORT_AND_EPOCH_LIVENESS_BOUNDED_THEOREM_NOTE_2026-07-28.md",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
@@ -1478,9 +1478,9 @@ def main() -> None:
     passing = all(item["pass"] for item in checks)
     report = {
         "status": (
-            "cycle721-direct-local-encoded-input-clifford-port-pass"
+            "companion-bank-even-exchange-port-pass"
             if passing
-            else "cycle721-direct-local-encoded-input-clifford-port-incomplete"
+            else "companion-bank-even-exchange-port-incomplete"
         ),
         "checks": checks,
         "dense_selftest": dense,
@@ -1499,7 +1499,7 @@ def main() -> None:
             "primitive is co-located at the declared port cell",
         ),
         "supplied": (
-            "the Cycle-720 companion/center operator dictionary and sector inventory",
+            "the predecessor companion/center operator dictionary and sector inventory",
             "one clean six-qubit live-input bank co-located at the declared port",
             "the total-parity label and companion center-sector representative",
         ),

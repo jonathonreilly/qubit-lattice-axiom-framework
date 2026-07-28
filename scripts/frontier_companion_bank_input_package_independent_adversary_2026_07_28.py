@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Cycle-721 independent adversary for the input-port/epoch tournament.
+"""Independent adversary for the companion-bank input package.
 
-The three Cycle-721 runners under review are read only as specification data
-and are never imported.  This checker independently rebuilds their declared
-F1 companion-bank row family, the F2 six-qubit exchange port, transported seam
-classes, private duals, and one finite A/B/C/D epoch.  It has authority none
-and audit unset.
+The three primary runners are read only as specification data and are never
+imported.  This checker independently rebuilds the companion-bank row family,
+the six-qubit exchange port, transported seam classes, private duals, and one
+finite A/B/C/D liveness schedule.  It has authority none and audit unset.  It
+does not promote the separate route census into a route-expanded circuit or
+the staged prefix checks into a composite-channel identity.
 """
 
 from __future__ import annotations
@@ -30,22 +31,22 @@ import numpy as np
 
 AUDIT_TIMEOUT_SEC = 900
 PRIMARY_SPEC_PATHS = (
-    "scripts/frontier_cycle721_car_bell_input_m2_compiler_2026_07_28.py",
-    "scripts/frontier_cycle721_encoded_input_clifford_port_2026_07_28.py",
-    "scripts/frontier_cycle721_collision_free_epoch_composition_2026_07_28.py",
+    "scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py",
+    "scripts/frontier_companion_bank_even_exchange_port_2026_07_28.py",
+    "scripts/frontier_companion_bank_epoch_liveness_2026_07_28.py",
 )
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle720_companion_three_route_independent_adversary_2026_07_27.py",
-    "scripts/frontier_cycle721_car_bell_input_m2_compiler_2026_07_28.py",
-    "scripts/frontier_cycle721_encoded_input_clifford_port_2026_07_28.py",
-    "scripts/frontier_cycle721_collision_free_epoch_composition_2026_07_28.py",
+    "scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py",
+    "scripts/frontier_companion_bank_even_exchange_port_2026_07_28.py",
+    "scripts/frontier_companion_bank_epoch_liveness_2026_07_28.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
 TOP_LEVEL_BLOCKLIST = {
-    "frontier_cycle721_car_bell_input_m2_compiler_2026_07_28",
-    "frontier_cycle721_encoded_input_clifford_port_2026_07_28",
-    "frontier_cycle721_collision_free_epoch_composition_2026_07_28",
+    "frontier_companion_bank_bell_character_dilation_2026_07_28",
+    "frontier_companion_bank_even_exchange_port_2026_07_28",
+    "frontier_companion_bank_epoch_liveness_2026_07_28",
 }
 TOL = 4.0e-10
 
@@ -79,7 +80,7 @@ def load_dependencies(source_root: Path) -> None:
     forbidden = sorted(TOP_LEVEL_BLOCKLIST & set(sys.modules))
     if forbidden:
         raise AssertionError(
-            f"Cycle-721 primary imported transitively: {forbidden}"
+            f"companion-bank primary imported transitively: {forbidden}"
         )
 
 
@@ -98,22 +99,22 @@ def declared_conventions(source_root: Path) -> dict[str, object]:
     f3 = docstrings[Path(PRIMARY_SPEC_PATHS[2]).stem]
     return {
         "docstring_sha256": digests,
-        "F1_declares_code_0_q": "``[0, q)``" in f1,
-        "F1_declares_bank_q_2q": "``[q, 2q)``" in f1,
-        "F1_declares_H_CP_H": (
+        "bell_character_declares_code_0_q": "``[0, q)``" in f1,
+        "bell_character_declares_bank_q_2q": "``[q, 2q)``" in f1,
+        "bell_character_declares_H_CP_H": (
             "``H(a); controlled local Pauli letters; H(a)``" in f1
         ),
-        "F1_declares_fixed_X_and_character_Z": (
+        "bell_character_declares_fixed_X_and_character_Z": (
             "``X(a)`` is fixed" in f1
             and "``Z(a)`` is transported" in f1
         ),
-        "F2_declares_one_six_mode_live_bank": (
+        "even_exchange_port_declares_one_six_mode_live_bank": (
             "a six-mode live input\nbank" in f2
             or "six-mode live input bank" in f2
         ),
-        "F2_declares_colocation": "co-located" in f2,
-        "F3_declares_literal_slot_walk": "literal slot walk" in f3,
-        "F3_declares_stage_components": all(
+        "even_exchange_port_declares_colocation": "co-located" in f2,
+        "epoch_liveness_declares_literal_slot_walk": "literal slot walk" in f3,
+        "epoch_liveness_declares_stage_components": all(
             token in f3
             for token in (
                 "tree/plaquette Choi pump",
@@ -121,10 +122,10 @@ def declared_conventions(source_root: Path) -> dict[str, object]:
                 "routed recurrent word",
             )
         ),
-        "derived_F1_range_formula": "[q,2q)",
-        "derived_F2_range_formula": "[q,q+6)",
+        "derived_bell_character_range_formula": "[q,2q)",
+        "derived_even_exchange_port_range_formula": "[q,q+6)",
         "derivation": (
-            "F1 states its q-wide mirror range literally.  F2 declares one "
+            "bell_character states its q-wide mirror range literally.  even_exchange_port declares one "
             "six-mode bank, and the code register ends at q, so its separate "
             "bank occupies the next six registers [q,q+6)."
         ),
@@ -531,13 +532,13 @@ def exchange_port_certificate(
     return {
         "shape": (2, 2, 2),
         "q": q,
-        "F1_docstring_range": (q, 2 * q),
-        "F2_derived_six_qubit_range": (q, q + 6),
+        "bell_character_docstring_range": (q, 2 * q),
+        "even_exchange_port_derived_six_qubit_range": (q, q + 6),
         "convention_evidence_pass": all((
-            conventions["F1_declares_code_0_q"],
-            conventions["F1_declares_bank_q_2q"],
-            conventions["F2_declares_one_six_mode_live_bank"],
-            conventions["F2_declares_colocation"],
+            conventions["bell_character_declares_code_0_q"],
+            conventions["bell_character_declares_bank_q_2q"],
+            conventions["even_exchange_port_declares_one_six_mode_live_bank"],
+            conventions["even_exchange_port_declares_colocation"],
         )),
         "six_SWAP_blocks": len(word) // 3,
         "CNOT_primitives": len(word),
@@ -1596,8 +1597,8 @@ def fixture_certificate(
         "EB_module_present_after_dense_rebuild": eb_module in sys.modules,
         "two_mode_fixed_sector_Kraus": kraus,
         "docstring_fixed_sector_inventory_evidence": (
-            conventions["F1_declares_fixed_X_and_character_Z"]
-            and conventions["F2_declares_one_six_mode_live_bank"]
+            conventions["bell_character_declares_fixed_X_and_character_Z"]
+            and conventions["even_exchange_port_declares_one_six_mode_live_bank"]
         ),
     }
 
@@ -1725,10 +1726,10 @@ def main() -> None:
 
     wording_corrections = [
         (
-            "The epoch runner's description of its alternate port as the F2 "
-            "leg needs a namespace qualifier: standalone F2 declares one "
+            "The epoch runner's description of its alternate port as the even_exchange_port "
+            "leg needs a namespace qualifier: standalone even_exchange_port declares one "
             "six-qubit bank [q,q+6), whereas the epoch embeds a port-indexed "
-            "six-qubit sub-block inside the q-wide F1 bank [q,2q).  These "
+            "six-qubit sub-block inside the q-wide bell_character bank [q,2q).  These "
             "register conventions coincide only for port index zero."
         )
     ]
@@ -1762,9 +1763,9 @@ def main() -> None:
         args.output.write_text(payload + "\n")
     print(payload)
     print(
-        "CYCLE721_TOURNAMENT_INDEPENDENT_ADVERSARY_PASS"
+        "COMPANION_BANK_INPUT_PACKAGE_INDEPENDENT_ADVERSARY_PASS"
         if passing
-        else "CYCLE721_TOURNAMENT_INDEPENDENT_ADVERSARY_FAIL"
+        else "COMPANION_BANK_INPUT_PACKAGE_INDEPENDENT_ADVERSARY_INCOMPLETE"
     )
     if not passing:
         raise SystemExit(1)

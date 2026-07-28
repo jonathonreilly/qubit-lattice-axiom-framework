@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle-721 literal physical-M2 compiler for the even-CAR Bell input rows.
+"""Companion-bank Bell-character dilation and route-census certificate.
 
 For a fixture with ``N`` cells and ``q = 9N``:
 
@@ -15,18 +15,20 @@ following ``N``      one returned mobile-route rail per cell
 The Cycle-720 graph row's coarse-input half is dropped entirely.  Each
 measured character is the graph row restricted to physical bits times the
 same full physical-representation row on the companion-encoded input bank.
-Row order is exactly ``P.direct_graph_basis`` order.  A measurement word is
-literally ``H(a); controlled local Pauli letters; H(a)`` with its route
-returned and its syndrome ancilla retained.  In this conjugation direction
-``X(a)`` is fixed while ``Z(a)`` is transported to ``Z(a) * R_i``.  Thus,
-with the supplied clean ancilla, the retained Z readout is the ``R_i``
-character; fixed ``X(a)`` means there is no conjugate leakage.
+Row order is exactly ``P.direct_graph_basis`` order.  The abstract tableau
+word is ``H(a); controlled local Pauli letters; H(a)``.  In this conjugation
+direction ``X(a)`` is fixed while ``Z(a)`` is transported to
+``Z(a) * R_i``.  Thus, with the supplied clean ancilla, the retained Z
+readout is the ``R_i`` character; fixed ``X(a)`` means there is no conjugate
+leakage.
 
-This is instruction-level compilation on the declared site map and supplied
-sector/genesis inventory.  It does not claim a collision-free joint epoch
-with the pump and recurrent G.  Ordinals are circuit structure, not time.
-The result is state-level coupling only: no matter, FTL, mass, or charge
-transfer is asserted.
+The returned-route object is a separate support-and-return census.  Its links
+are not inserted as SWAPs or other transport gates into the tableau word, so
+this runner does not certify a route-expanded nearest-neighbour measurement
+circuit.  It also does not claim a collision-free joint epoch with the pump
+and recurrent update.  Ordinals are circuit structure, not time.  The result
+is state-level algebra only: no matter, FTL, mass, or charge transfer is
+asserted.
 """
 
 from __future__ import annotations
@@ -49,11 +51,11 @@ import frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27 as EB
 
 AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = (
-    "docs/CAR_BELL_INPUT_PHYSICAL_M2_COMPILER_CYCLE721_"
-    "BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    "docs/COMPANION_BANK_BELL_CHARACTER_DILATION_EXCHANGE_PORT_AND_"
+    "EPOCH_LIVENESS_BOUNDED_THEOREM_NOTE_2026-07-28.md"
 )
 AUDIT_INPUT_PATHS = (
-    "docs/CAR_BELL_INPUT_PHYSICAL_M2_COMPILER_CYCLE721_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/COMPANION_BANK_BELL_CHARACTER_DILATION_EXCHANGE_PORT_AND_EPOCH_LIVENESS_BOUNDED_THEOREM_NOTE_2026-07-28.md",
     "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py",
     "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py",
     "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py",
@@ -1619,7 +1621,7 @@ def main() -> None:
         branch_gate,
     )
     check(
-        "every compiled word and frozen private dual obeys the two-cell diameter-one gate with returned routes",
+        "every tableau word and frozen private dual has at most two-cell diameter-one support, and every separately certified route returns",
         support_gate,
     )
     check(
@@ -1643,7 +1645,7 @@ def main() -> None:
         controls_gate,
     )
 
-    input_compiled = (
+    dilation_and_route_census_verified = (
         row_family_gate
         and dilation_gate
         and support_gate
@@ -1691,7 +1693,7 @@ def main() -> None:
         "fixture_preservation": preservation,
         "runtime_seconds": runtime_seconds,
         "derived": (
-            "literal instruction data, exact integer-Pauli conjugation, "
+            "abstract tableau instruction data, exact integer-Pauli conjugation, "
             "companion-bank joint-rank and abelian censuses, returned-route/"
             "support census, private-dual branch replay, conflict coloring, "
             "and covariant signed/binary family-multiset diagnostics"
@@ -1705,20 +1707,24 @@ def main() -> None:
             "is not used"
         ),
         "open": (
-            "autonomous sector/genesis law; collision-free joint epoch with "
-            "pump and recurrent G; downstream time/source/Record/Born "
-            "acceptance; any failed literal dilation, layer-constancy, or "
-            "transport gate reported by this companion-encoded-bank run"
+            "a route-expanded nearest-neighbour measurement circuit with "
+            "gate/route agreement; autonomous sector/genesis law; a composite "
+            "channel joining pump, input leg, corrections, and recurrent "
+            "update; downstream time/source/Record/Born acceptance"
         ),
         "claim_boundary": (
-            "instruction-level companion-encoded input-bank compilation on "
-            "the declared site map with supplied sector/genesis inventory; "
-            "the collision-free joint epoch with pump + recurrent G is not "
-            "claimed here; ordinals are circuit structure, not time; "
-            "state-level coupling only, with no matter/FTL/mass/charge "
-            "transfer"
+            "exact companion-bank Bell-character tableau dilation plus a "
+            "separate support and returned-route census on the declared site "
+            "map with supplied sector/genesis inventory; route operations are "
+            "not compiled into the tableau word, so no route-expanded "
+            "nearest-neighbour measurement circuit or joint composite channel "
+            "is claimed; ordinals are structure, not time"
         ),
-        "input_Bell_measurement_physical_M2_compiled": input_compiled,
+        "bell_character_dilation_and_route_census_verified": (
+            dilation_and_route_census_verified
+        ),
+        "input_Bell_measurement_physical_M2_compiled": False,
+        "route_expanded_nearest_neighbour_measurement_compiled": False,
         "authority": "none",
         "audit": "unset",
     }

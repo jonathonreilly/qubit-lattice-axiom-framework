@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
-runner: scripts/frontier_cycle721_car_bell_input_m2_compiler_2026_07_28.py
-runner_sha256: 434b643dfa4265b38aed5d6da6aa818e56ad9b4e34e7467489f6dace26ab2252
-input_fingerprint_sha256: 188d850f2dad8fb4e19a486422c6a8e8794088506f9f91e3c7af52ca6337c476
+runner: scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py
+runner_sha256: 102f8bc31e60fd4a452a1cfab176129f922665e10b564f0421dc26ffb11ee152
+input_fingerprint_sha256: ec65eddef638014a73044ad157952dbcbd79488c53935c315c79018a62deb438
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 236.10
+elapsed_sec: 324.41
 status: ok
 ----- stdout -----
 PASS exhaustive dense 8x8 Clifford conjugation self-test has zero mismatches
 PASS every direct-basis row on the five-box ladder compiles to an abelian Hermitian live-bank character with unchanged rank
 PASS literal H-controlled-Pauli-H words fix retained X, transport retained Z to Z times R_i, and leave all other measured and graph rows invariant
 PASS one-hot duality, kernel even sums, deletion signs, exhaustive one-cell branches, and deterministic held-box samples replay exactly
-PASS every compiled word and frozen private dual obeys the two-cell diameter-one gate with returned routes
+PASS every tableau word and frozen private dual has at most two-cell diameter-one support, and every separately certified route returns
 PASS measurement coloring equals three onsite layers plus one seam layer per maximum cell degree; correction coloring is constant from 3x2x2 (ceilings 12 and 24)
 PASS post-compilation two- and three-mode CPTP residuals and Cycle-720 critical fixture fields are unchanged
 PASS reused 24-frame and 576-product covariance surfaces retain zero named failures
@@ -20,6 +20,7 @@ PASS private-dual deletion, deleting the final return link breaks the forward re
 {
   "audit": "unset",
   "authority": "none",
+  "bell_character_dilation_and_route_census_verified": true,
   "boxes": [
     {
       "Hadamard_primitives": 22,
@@ -886,7 +887,7 @@ PASS private-dual deletion, deleting the final return link breaks the forward re
       "pass": true
     },
     {
-      "label": "every compiled word and frozen private dual obeys the two-cell diameter-one gate with returned routes",
+      "label": "every tableau word and frozen private dual has at most two-cell diameter-one support, and every separately certified route returns",
       "pass": true
     },
     {
@@ -910,7 +911,7 @@ PASS private-dual deletion, deleting the final return link breaks the forward re
       "pass": true
     }
   ],
-  "claim_boundary": "instruction-level companion-encoded input-bank compilation on the declared site map with supplied sector/genesis inventory; the collision-free joint epoch with pump + recurrent G is not claimed here; ordinals are circuit structure, not time; state-level coupling only, with no matter/FTL/mass/charge transfer",
+  "claim_boundary": "exact companion-bank Bell-character tableau dilation plus a separate support and returned-route census on the declared site map with supplied sector/genesis inventory; route operations are not compiled into the tableau word, so no route-expanded nearest-neighbour measurement circuit or joint composite channel is claimed; ordinals are structure, not time",
   "compiled_schedule_transport": {
     "contexts": 384,
     "edge_forward_orientation_classes": 3072,
@@ -1166,7 +1167,7 @@ PASS private-dual deletion, deleting the final return link breaks the forward re
     "target_Paulis_exhausted": 16,
     "three_qubit_Paulis_exhausted": 64
   },
-  "derived": "literal instruction data, exact integer-Pauli conjugation, companion-bank joint-rank and abelian censuses, returned-route/support census, private-dual branch replay, conflict coloring, and covariant signed/binary family-multiset diagnostics",
+  "derived": "abstract tableau instruction data, exact integer-Pauli conjugation, companion-bank joint-rank and abelian censuses, returned-route/support census, private-dual branch replay, conflict coloring, and covariant signed/binary family-multiset diagnostics",
   "exact_CPTP_controls": [
     {
       "Bell_basis_orthonormality_residual": 4.440892098500626e-16,
@@ -1222,7 +1223,7 @@ PASS private-dual deletion, deleting the final return link breaks the forward re
     "stabilizer_row_product_failures": 0,
     "tree_plaquette_schedule_product_failures": 0
   },
-  "input_Bell_measurement_physical_M2_compiled": true,
+  "input_Bell_measurement_physical_M2_compiled": false,
   "layer_counts": {
     "correction_by_box": [
       6,
@@ -1311,8 +1312,9 @@ PASS private-dual deletion, deleting the final return link breaks the forward re
       9
     ]
   },
-  "open": "autonomous sector/genesis law; collision-free joint epoch with pump and recurrent G; downstream time/source/Record/Born acceptance; any failed literal dilation, layer-constancy, or transport gate reported by this companion-encoded-bank run",
-  "runtime_seconds": 235.67410062499403,
+  "open": "a route-expanded nearest-neighbour measurement circuit with gate/route agreement; autonomous sector/genesis law; a composite channel joining pump, input leg, corrections, and recurrent update; downstream time/source/Record/Born acceptance",
+  "route_expanded_nearest_neighbour_measurement_compiled": false,
+  "runtime_seconds": 323.5890389589913,
   "status": "PASS",
   "supplied": "fixed parity/center sector; one-time Choi genesis inventory; mixed gauge reference; clean retained syndrome and mobile-rail banks; frozen private-dual atlas; finite boxes; the live input is presented in the code's own companion representation (companion-encoded input bank); a bare global-JW input register is not used"
 }

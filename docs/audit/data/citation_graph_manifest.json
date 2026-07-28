@@ -2418,6 +2418,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "companion_bank_bell_character_dilation_exchange_port_and_epoch_liveness_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "759285fc1e81",
+   "out_degree": 1
+  },
   "complete_prediction_chain_2026_04_15": {
    "deps_hash": "ed7953444551",
    "out_degree": 14

@@ -1,0 +1,279 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle724_token_row_independent_check_2026_07_28.py
+runner_sha256: af408eaa0655771a0a4f8be23752c515ce57c6987ed978c3205fc2bb3780d026
+input_fingerprint_sha256: 5504eceddd045f76337b7388e6d0bc8dc5bc6142a0d7e7f137f04414b4944978
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 8.67
+status: ok
+----- stdout -----
+PASS sandwich_semantics
+PASS boundary_certificate
+PASS inverse_certificate
+PASS primary_source_discipline
+{
+  "audit": "unset",
+  "audit_input_paths": [
+    "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle723_refusal_wrap_independent_check_2026_07_28.py",
+    "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+  ],
+  "audit_timeout_seconds": 900,
+  "authority": "none",
+  "blocked_primary_imports_present": [],
+  "certificates": {
+    "boundary_certificate": {
+      "adjacent_events_exact": true,
+      "adjacent_observed_refusals": 22,
+      "adjacent_positions": [
+        0,
+        1
+      ],
+      "adjacent_predicted_refusals": 22,
+      "adjacent_register_return": true,
+      "arithmetic_witness": {
+        "adjacent_output_data_int": 3473762677119485862707129550260637235599376885885754249742113597013140137050176,
+        "distant_input_output_xor_int": 2076269706306651686534277064466366464,
+        "distant_output_data_int": 3473762677119485862707129550260637235599377551148789249554392078127827137855552,
+        "distant_unwrapped_output_data_int": 3473762677119485862707129550260637235599377551148789249554392078127827137855552,
+        "input_data_int": 3473762677119485862707129550260637235599376885885754249742113597013140137050176
+      },
+      "distant_equals_own_unwrapped_hostile_prediction": true,
+      "distant_local_rows_evaluated": 22,
+      "distant_local_rows_passed": 22,
+      "distant_observed_refusals": 0,
+      "distant_position_P_over_2": 5,
+      "distant_positions": [
+        0,
+        5
+      ],
+      "distant_register_return": true,
+      "pass": true,
+      "program_stations_P": 11
+    },
+    "inverse_certificate": {
+      "basis_rows": 32,
+      "forward_H_applications": 11,
+      "full_data_width": 5815,
+      "full_register_width": 5925,
+      "inverse_H_applications": 11,
+      "inverse_construction": "tuple(reversed(word))",
+      "pass": true,
+      "reduced_basis_data_wires": [
+        1,
+        6,
+        40,
+        41,
+        42
+      ],
+      "reduced_basis_width": 5,
+      "reduction_label": "exhaustive five-macro-touched-data-wire basis, with one clean A0 token and every other controller/auxiliary bit clean, embedded in the full 5925-wire register",
+      "restoration_failures": 0
+    },
+    "primary_source_discipline": {
+      "AUDIT_INPUT_PATHS_literal_error": null,
+      "AUDIT_INPUT_PATHS_literal_tuple": true,
+      "AUDIT_INPUT_PATHS_literal_value": [
+        "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+        "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+      ],
+      "NOT_syndrome_X_count": 2,
+      "OR_block_gate_order": [
+        "cn",
+        "cn",
+        "tof"
+      ],
+      "OR_block_is_CN_CN_TOF": true,
+      "OR_blocks_per_forward_compute_per_station": 5,
+      "OR_blocks_per_reversed_uncompute_per_station": 5,
+      "OR_compute_and_reversed_uncompute_per_station": true,
+      "attribute_injections_onto_K_or_F723": [],
+      "blocked_primary_imports_present": [],
+      "compute_assignment_count": 1,
+      "gates_per_OR_block": 3,
+      "harness_subclassing_of_K_or_F723": [],
+      "local_compute_seed_plus_cascade_loop": true,
+      "pass": true,
+      "per_station_sandwich_call_count": 1,
+      "primary_read_as_data_only": true,
+      "reversed_compute_uncompute_count": 1
+    },
+    "sandwich_semantics": {
+      "H_word_gates": 10740,
+      "MCX_direct_vs_clean_ladder": {
+        "failures": 0,
+        "rows": 48,
+        "scratch_return_failures": 0
+      },
+      "banks": 2,
+      "census_size": 66,
+      "census_station_rows": 11,
+      "data_width": 5815,
+      "dirt_kinds_per_station": 6,
+      "full_register_width": 5925,
+      "identity_substituted_prediction_mismatches": 0,
+      "lawful_all_registers_return": true,
+      "lawful_refusal_events": [],
+      "lawful_wrapped_equals_own_unwrapped_host": true,
+      "literal_vs_prediction_refusal_event_mismatches": 0,
+      "local_OR_truth_table": {
+        "failures": 0,
+        "reverse_restoration_failures": 0,
+        "rows": 64
+      },
+      "nonidentity_stations": 11,
+      "observed_refusals": 594,
+      "pass": true,
+      "predicted_refusals": 594,
+      "program_stations": 11,
+      "rail_register_prediction_mismatches": 0,
+      "syndrome_scratch_return_failures": 0,
+      "target_row_refusal_failures": 0,
+      "target_rows_refused_and_witnessed": 66
+    }
+  },
+  "check_summary": {
+    "passing": 4,
+    "total": 4
+  },
+  "checks": [
+    {
+      "detail": {
+        "H_word_gates": 10740,
+        "MCX_direct_vs_clean_ladder": {
+          "failures": 0,
+          "rows": 48,
+          "scratch_return_failures": 0
+        },
+        "banks": 2,
+        "census_size": 66,
+        "census_station_rows": 11,
+        "data_width": 5815,
+        "dirt_kinds_per_station": 6,
+        "full_register_width": 5925,
+        "identity_substituted_prediction_mismatches": 0,
+        "lawful_all_registers_return": true,
+        "lawful_refusal_events": [],
+        "lawful_wrapped_equals_own_unwrapped_host": true,
+        "literal_vs_prediction_refusal_event_mismatches": 0,
+        "local_OR_truth_table": {
+          "failures": 0,
+          "reverse_restoration_failures": 0,
+          "rows": 64
+        },
+        "nonidentity_stations": 11,
+        "observed_refusals": 594,
+        "pass": true,
+        "predicted_refusals": 594,
+        "program_stations": 11,
+        "rail_register_prediction_mismatches": 0,
+        "syndrome_scratch_return_failures": 0,
+        "target_row_refusal_failures": 0,
+        "target_rows_refused_and_witnessed": 66
+      },
+      "label": "sandwich_semantics",
+      "pass": true
+    },
+    {
+      "detail": {
+        "adjacent_events_exact": true,
+        "adjacent_observed_refusals": 22,
+        "adjacent_positions": [
+          0,
+          1
+        ],
+        "adjacent_predicted_refusals": 22,
+        "adjacent_register_return": true,
+        "arithmetic_witness": {
+          "adjacent_output_data_int": 3473762677119485862707129550260637235599376885885754249742113597013140137050176,
+          "distant_input_output_xor_int": 2076269706306651686534277064466366464,
+          "distant_output_data_int": 3473762677119485862707129550260637235599377551148789249554392078127827137855552,
+          "distant_unwrapped_output_data_int": 3473762677119485862707129550260637235599377551148789249554392078127827137855552,
+          "input_data_int": 3473762677119485862707129550260637235599376885885754249742113597013140137050176
+        },
+        "distant_equals_own_unwrapped_hostile_prediction": true,
+        "distant_local_rows_evaluated": 22,
+        "distant_local_rows_passed": 22,
+        "distant_observed_refusals": 0,
+        "distant_position_P_over_2": 5,
+        "distant_positions": [
+          0,
+          5
+        ],
+        "distant_register_return": true,
+        "pass": true,
+        "program_stations_P": 11
+      },
+      "label": "boundary_certificate",
+      "pass": true
+    },
+    {
+      "detail": {
+        "basis_rows": 32,
+        "forward_H_applications": 11,
+        "full_data_width": 5815,
+        "full_register_width": 5925,
+        "inverse_H_applications": 11,
+        "inverse_construction": "tuple(reversed(word))",
+        "pass": true,
+        "reduced_basis_data_wires": [
+          1,
+          6,
+          40,
+          41,
+          42
+        ],
+        "reduced_basis_width": 5,
+        "reduction_label": "exhaustive five-macro-touched-data-wire basis, with one clean A0 token and every other controller/auxiliary bit clean, embedded in the full 5925-wire register",
+        "restoration_failures": 0
+      },
+      "label": "inverse_certificate",
+      "pass": true
+    },
+    {
+      "detail": {
+        "AUDIT_INPUT_PATHS_literal_error": null,
+        "AUDIT_INPUT_PATHS_literal_tuple": true,
+        "AUDIT_INPUT_PATHS_literal_value": [
+          "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+          "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+          "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+        ],
+        "NOT_syndrome_X_count": 2,
+        "OR_block_gate_order": [
+          "cn",
+          "cn",
+          "tof"
+        ],
+        "OR_block_is_CN_CN_TOF": true,
+        "OR_blocks_per_forward_compute_per_station": 5,
+        "OR_blocks_per_reversed_uncompute_per_station": 5,
+        "OR_compute_and_reversed_uncompute_per_station": true,
+        "attribute_injections_onto_K_or_F723": [],
+        "blocked_primary_imports_present": [],
+        "compute_assignment_count": 1,
+        "gates_per_OR_block": 3,
+        "harness_subclassing_of_K_or_F723": [],
+        "local_compute_seed_plus_cascade_loop": true,
+        "pass": true,
+        "per_station_sandwich_call_count": 1,
+        "primary_read_as_data_only": true,
+        "reversed_compute_uncompute_count": 1
+      },
+      "label": "primary_source_discipline",
+      "pass": true
+    }
+  ],
+  "report_sha256": "6f8ebd3e88b08679ee2548f1e5dfdbbb656e63bd5c039aa1e02276a430184ae1",
+  "runtime_seconds": 8.249417708997498,
+  "status": "PASS",
+  "top_level_blocklist": [
+    "frontier_cycle724_local_token_row_enforcement_2026_07_28"
+  ]
+}
+CYCLE724_TOKEN_ROW_INDEPENDENT_CHECK_PASS
+
+----- stderr -----
+

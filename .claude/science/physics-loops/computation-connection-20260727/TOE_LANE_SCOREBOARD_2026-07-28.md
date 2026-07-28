@@ -187,3 +187,48 @@ without weakening any check).
 Open PR ledger: #5697-#5705 (nine campaign PRs) awaiting owner-operated
 review/audit. Next: D3 (BKSF holonomy compression, Cycle 728) — the last
 shaped decision not yet executed.
+
+
+---
+
+# Refresh 4 (2026-07-28 ~13:15) — ALL FIVE LANES NOW EPOCH-FED; PRs #5697-#5707
+
+| TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |
+|---|---|---|---|---|
+| Operational quantum / Records | 95% | 98% | 68% (up 2) | 99% |
+| Causal time | 76% | 80% | 45% | 99% |
+| Inertia / matter | 95% | 98% | 86% | 99% |
+| Gravity / source / resources | 70% | 50% | 29% | 97% |
+| Born probability / realized history | 84% | 67% (up 3) | 35% | 99% |
+
+Milestone: with Cycle 729, every TOE lane has now been fed from the
+composed epoch at its landed acceptance surface's lawful input contract —
+time (722), source (725), Born (729), with the operational and matter
+surfaces certified by the epoch itself (721). The axioms-to-lanes
+connective tissue exists end-to-end at bounded resolution; what remains
+is enforcement/genesis (autonomy columns) and the forcing-class cores.
+
+Why the scores changed:
+- Born bridge up 3 (first movement ever): the landed Cycle-317 forcing
+  surface byte-pinned and replayed unchanged; two census-derived feeds
+  accepted at its lawful ports under declared zero-refit conventions;
+  exact integer bindings; and the frozen no-census-weight-receiver
+  inventory — w(E) requires the occurrence/Record/sampling/calibration
+  bridge, now recorded as the lane's precise missing piece (a
+  forcing-class item per the D6 ledger).
+- Operational autonomy up 2: W1's global token-sector remainder is
+  compressed to ONE declared marked-edge holonomy bit (Cycle 728), with
+  the campaign's own first holonomy convention refuted in-package as a
+  coboundary (frozen exhaustive censuses) — the honest-self-correction
+  pattern working as designed. Enforcement integration of the charge
+  rows remains the next leg; genesis untouched.
+
+Breakthrough log additions: (14) the coboundary refutation + marked-edge
+twist compression theorem (exhaustive over 4,194,304 rail states per
+sector; 9/9-window non-derivability witness); (15) the Born-lane feed +
+frozen no-weight-receiver port inventory; (16) the all-lanes-fed
+milestone.
+
+Open PR ledger: #5697-#5707 (eleven campaign PRs: seven cycle blocks
+721-729 on two stacks + four independent, plus two support packages)
+awaiting owner-operated review/audit.

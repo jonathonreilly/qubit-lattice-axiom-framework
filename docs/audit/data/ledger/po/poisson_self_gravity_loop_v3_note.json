@@ -1,29 +1,44 @@
 {
-  "audit_date": null,
+  "audit_date": "2026-07-28T02:01:45.392549+00:00",
   "audit_invocation_history": [
     "090db4a789284baeb77970b90d0c60ef",
-    "674e8d5e541545fc8e80950f02beaed5"
+    "674e8d5e541545fc8e80950f02beaed5",
+    "d687084d3b894567bb2ff49435571a15"
   ],
-  "audit_invocation_id": "674e8d5e541545fc8e80950f02beaed5",
-  "audit_state_snapshot": null,
-  "audit_status": "audit_in_progress",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
-  "blocker": "cross_confirmation_disagreement",
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "audit_invocation_id": "d687084d3b894567bb2ff49435571a15",
+  "audit_state_snapshot": {
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/minimal_source_driven_field_probe.py": "16768d58d878f744a7092dca878fd2cb66f6bae8a73ada64ef3fd7e785208457"
+    },
+    "load_bearing_score": 11.615,
+    "runner_hash": "6c41b40d866645d27aafa3c0049c4129c14d2741137d4b092efa2d58c1b853df",
+    "transitive_descendants": 783
+  },
+  "audit_status": "audited_clean",
+  "auditor": "codex-judicial-1-20260728-f506b6c9",
+  "auditor_confidence": "judicial",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
+  "blocker": null,
+  "chain_closes": true,
+  "chain_closure_explanation": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The authenticated pre-audit scope is exactly the finite-harness statement ratified by the first auditor. The supplied code constructs the lattice, performs the nonzero-coupling iterative sweep, and produces the nine tabulated nonzero shifts with 0/9 rows converged after six iterations. That bounded computational claim makes no mechanism-level exclusion, so untested alternative iteration, relaxation, lattice-limit, or readout routes do not prevent closure and do not trigger negative-assertion classes for the ratified tuple.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260728-f506b6c9\", \"judge\": 1, \"rationale\": \"The authenticated pre-audit scope is exactly the finite-harness statement ratified by the first auditor. The supplied code constructs the lattice, performs the nonzero-coupling iterative sweep, and produces the nine tabulated nonzero shifts with 0/9 rows converged after six iterations. That bounded computational claim makes no mechanism-level exclusion, so untested alternative iteration, relaxation, lattice-limit, or readout routes do not prevent closure and do not trigger negative-assertion classes for the ratified tuple.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-2-20260728-65468e64\", \"judge\": 2, \"rationale\": \"The authenticated pre-audit scope is exactly the first auditor's finite-harness scope. The runner source genuinely computes the nine nonzero-coupling rows, and stdout confirms their tabulated shifts and 0/9 convergence within six iterations; neither a mechanism-level exclusion nor robustness under altered iteration counts, relaxation, lattice scale, or observables is part of that ratified scope.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-3-20260728-69b97a71\", \"judge\": 3, \"rationale\": \"The authenticated pre-audit scope is character-for-character the first auditor\\u2019s scope. The runner genuinely computes all nine nonzero-coupling rows, including their centroid and phase shifts and their failure to satisfy the stated tolerance within six iterations. The note explicitly excludes the epsilon=0 same-machinery reduction and the stronger mechanism-level theorem from binding scope, so neither the mechanism-level extrapolation nor the stale nonbinding Born figures defeat this bounded finite-harness claim.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-4-20260728-6dfd3a03\", \"judge\": 4, \"rationale\": \"The authenticated pre-audit scope exactly matches the first position and is limited to the computed finite-harness observations. The supplied runner genuinely computes the nine nonzero-coupling rows, reproduces their nonzero centroid and phase shifts, and reports 0/9 convergence within six iterations; it does not merely print expected constants. Mechanism-level exclusion and robustness under altered iteration count, relaxation, lattice scale, or readout are outside that ratified scope.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-5-20260728-c6c3e1ba\", \"judge\": 5, \"rationale\": \"The runner genuinely computes the nine nonzero-coupling shifts and shows that none meets the stated convergence tolerance within six iterations. Those facts do not establish the note\\u2019s further inference that the family is merely a weak control rather than a possible self-gravity mechanism, because relevant convergence and alternative-route tests remain unperformed. The conservative audited_conditional tuple is therefore correct.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Restricted finite-harness claim that nine nonzero-coupling rows show small matched-null shifts, miss the stated tolerance after six iterations, and therefore constitute a weak control rather than a self-gravity mechanism.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"no_go_result\", \"stretch_attempt_negative\"]]}]",
   "claim_id": "poisson_self_gravity_loop_v3_note",
   "claim_scope": "On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-28T01:56:21.164989+00:00",
-  "claim_type_provenance": "audited_pending_cross_confirmation",
+  "claim_type_last_reviewed": "2026-07-28T02:01:45.392549+00:00",
+  "claim_type_provenance": "judicial_review",
   "criticality": "critical",
   "cross_confirmation": {
+    "agreement_schema": "audit_tuple_v2",
     "first_audit": {
       "audit_date": "2026-07-28T01:56:21.164989+00:00",
       "audit_invocation_id": "090db4a789284baeb77970b90d0c60ef",
@@ -52,6 +67,154 @@
       "verdict": "audited_clean",
       "verdict_rationale": "Within the explicitly narrowed scope, the runner genuinely computes the nine finite-harness results, and the sweep values and convergence outcomes agree with the note. The epsilon=0 same-machinery reduction and any stronger self-gravity theorem are not ratified by this verdict. The stale representative Born and centroid figures are outside the binding scope and therefore do not break this restricted chain."
     },
+    "judicial_panel_record_v1": {
+      "cid": "poisson_self_gravity_loop_v3_note",
+      "disagreement_fingerprint": {
+        "claim_id": "poisson_self_gravity_loop_v3_note",
+        "first_audit_invocation_id": "090db4a789284baeb77970b90d0c60ef",
+        "note_hash": "da5b483741130bdccdb04b4753f00d7f8d50fd96f6c9a0fb896ffb2367cc2bef",
+        "schema": "judicial_disagreement_fingerprint_v1",
+        "seat_summaries_sha256": "963952ad21b85ca9dc533360c76037645c7baf6a510df9047594c96fd52b4e1f",
+        "second_audit_invocation_id": "674e8d5e541545fc8e80950f02beaed5"
+      },
+      "failures": [],
+      "invocation_id": "d687084d3b894567bb2ff49435571a15",
+      "majority_count": 4,
+      "panel": 1,
+      "result": "majority_candidate",
+      "schema": "judicial_panel_record_v1",
+      "tally": [
+        {
+          "count": 4,
+          "tuple": [
+            "first",
+            "audited_clean",
+            "bounded_theorem",
+            "On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.",
+            "C",
+            null,
+            []
+          ]
+        },
+        {
+          "count": 1,
+          "tuple": [
+            "second",
+            "audited_conditional",
+            "bounded_theorem",
+            "Restricted finite-harness claim that nine nonzero-coupling rows show small matched-null shifts, miss the stated tolerance after six iterations, and therefore constitute a weak control rather than a self-gravity mechanism.",
+            "C",
+            null,
+            [
+              "bounded_with_named_walls",
+              "conditional_wall_rationale",
+              "derived_no_go_boundary",
+              "no_go_result",
+              "stretch_attempt_negative"
+            ]
+          ]
+        }
+      ],
+      "votes": [
+        {
+          "auditor": "codex-judicial-1-20260728-f506b6c9",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 1,
+          "judgment_rationale": "The authenticated pre-audit scope is exactly the finite-harness statement ratified by the first auditor. The supplied code constructs the lattice, performs the nonzero-coupling iterative sweep, and produces the nine tabulated nonzero shifts with 0/9 rows converged after six iterations. That bounded computational claim makes no mechanism-level exclusion, so untested alternative iteration, relaxation, lattice-limit, or readout routes do not prevent closure and do not trigger negative-assertion classes for the ratified tuple.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Re-audit if the exact epsilon=0 same-machinery reduction or a mechanism-level exclusion is restored to binding scope; also reconcile the nonbinding Born-audit figures with current stdout.",
+          "ratified_claim_scope": "On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The nonzero-coupling branch shows small matched-null centroid and phase-ramp shifts, but none of its nine rows converges under the stated tolerance within six iterations.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "The second position broadened the authenticated finite-harness scope by adding the mechanism-level inference that the rows therefore constitute a weak control rather than a self-gravity mechanism, then treated untested routes against that broader inference as blockers. Those routes are irrelevant to the exact bounded claim supplied for audit.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-2-20260728-65468e64",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 2,
+          "judgment_rationale": "The authenticated pre-audit scope is exactly the first auditor's finite-harness scope. The runner source genuinely computes the nine nonzero-coupling rows, and stdout confirms their tabulated shifts and 0/9 convergence within six iterations; neither a mechanism-level exclusion nor robustness under altered iteration counts, relaxation, lattice scale, or observables is part of that ratified scope.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Re-audit if the exact epsilon=0 same-machinery reduction or a mechanism-level exclusion is restored to binding scope; also reconcile the nonbinding Born-audit figures with current stdout.",
+          "ratified_claim_scope": "On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The nonzero-coupling branch shows small matched-null centroid and phase-ramp shifts, but none of its nine rows converges under the stated tolerance within six iterations.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "The second auditor replaced the authenticated finite-harness scope with a broader mechanism-level inference and then required tests of additional iterations, relaxation, lattice refinement, and alternate readouts. Those requirements address an explicitly unratified extrapolation, not the scoped computed observation.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-3-20260728-69b97a71",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 3,
+          "judgment_rationale": "The authenticated pre-audit scope is character-for-character the first auditor\u2019s scope. The runner genuinely computes all nine nonzero-coupling rows, including their centroid and phase shifts and their failure to satisfy the stated tolerance within six iterations. The note explicitly excludes the epsilon=0 same-machinery reduction and the stronger mechanism-level theorem from binding scope, so neither the mechanism-level extrapolation nor the stale nonbinding Born figures defeat this bounded finite-harness claim.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Re-audit if the exact epsilon=0 same-machinery reduction or a mechanism-level exclusion is restored to binding scope; also reconcile the nonbinding Born-audit figures with current stdout.",
+          "ratified_claim_scope": "On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The nonzero-coupling branch shows small matched-null centroid and phase-ramp shifts, but none of its nine rows converges under the stated tolerance within six iterations.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "The second auditor substituted a broader mechanism-level inference\u2014\u201cweak control rather than a self-gravity mechanism\u201d\u2014for the authenticated binding scope, then downgraded the claim because routes relevant only to that excluded inference were untested.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-4-20260728-6dfd3a03",
+          "first_auditor_error": "none",
+          "hybrid_resolution_note": null,
+          "judge": 4,
+          "judgment_rationale": "The authenticated pre-audit scope exactly matches the first position and is limited to the computed finite-harness observations. The supplied runner genuinely computes the nine nonzero-coupling rows, reproduces their nonzero centroid and phase shifts, and reports 0/9 convergence within six iterations; it does not merely print expected constants. Mechanism-level exclusion and robustness under altered iteration count, relaxation, lattice scale, or readout are outside that ratified scope.",
+          "negative_assertion_classes": [],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "Re-audit if the exact epsilon=0 same-machinery reduction or a mechanism-level exclusion is restored to binding scope; also reconcile the nonbinding Born-audit figures with current stdout.",
+          "ratified_claim_scope": "On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "The nonzero-coupling branch shows small matched-null centroid and phase-ramp shifts, but none of its nine rows converges under the stated tolerance within six iterations.",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_clean",
+          "second_auditor_error": "The second position broadened the authenticated finite-harness scope into a mechanism-level exclusion and then treated untested robustness routes as defects. Those routes matter only for the broader conclusion, not for the supplied scope's directly computed nine-row observations.",
+          "sided_with": "first"
+        },
+        {
+          "auditor": "codex-judicial-5-20260728-c6c3e1ba",
+          "first_auditor_error": "The first position narrowed away the note\u2019s explicit mechanism-level negative inference and therefore incorrectly declared no negative-assertion classes; the finite sweep establishes six-iteration nonconvergence, not robustness against additional iterations, altered relaxation, lattice refinement, or alternate readouts.",
+          "hybrid_resolution_note": null,
+          "judge": 5,
+          "judgment_rationale": "The runner genuinely computes the nine nonzero-coupling shifts and shows that none meets the stated convergence tolerance within six iterations. Those facts do not establish the note\u2019s further inference that the family is merely a weak control rather than a possible self-gravity mechanism, because relevant convergence and alternative-route tests remain unperformed. The conservative audited_conditional tuple is therefore correct.",
+          "negative_assertion_classes": [
+            "bounded_with_named_walls",
+            "conditional_wall_rationale",
+            "derived_no_go_boundary",
+            "no_go_result",
+            "stretch_attempt_negative"
+          ],
+          "no_go_discipline": null,
+          "notes_for_re_audit_if_any": "scope_too_broad: restrict the binding claim to the computed small shifts and failure to meet tolerance after six iterations; add a dated downstream-hygiene line to this note's own boundary removing the mechanism-level inference unless convergence robustness and alternative-route tests are supplied.",
+          "ratified_claim_scope": "Restricted finite-harness claim that nine nonzero-coupling rows show small matched-null shifts, miss the stated tolerance after six iterations, and therefore constitute a weak control rather than a self-gravity mechanism.",
+          "ratified_claim_type": "bounded_theorem",
+          "ratified_decoration_parent_claim_id": null,
+          "ratified_load_bearing_step": "but the shift is not large enough, and the nonlinear loop is not converged enough, to promote this to a new exact-lattice self-gravity mechanism",
+          "ratified_load_bearing_step_class": "C",
+          "ratified_verdict": "audited_conditional",
+          "second_auditor_error": "none",
+          "sided_with": "second"
+        }
+      ]
+    },
+    "mode": "judicial_panel_majority",
     "second_audit": {
       "audit_date": "2026-07-28T01:56:21.170669+00:00",
       "audit_invocation_id": "674e8d5e541545fc8e80950f02beaed5",
@@ -86,26 +249,45 @@
       "verdict": "audited_conditional",
       "verdict_rationale": "The supplied source genuinely computes the finite sweep, so the small shifts and six-iteration tolerance misses are supported. The further conclusion that this makes the family merely a weak control rather than a possible self-gravity mechanism does not follow from that bounded run. N1/N2/N5/N7 leave untested iteration-count, relaxation, normalization, lattice-limit, and alternate-observable routes, so the strongest steelman remains unresolved. N3 identifies the note's explicit scope admissions, N4 supplies no prior residual witness, and N6/N8 contain no applicable retained authority that closes the extrapolation."
     },
-    "status": "disagreement"
+    "status": "third_confirmed_first",
+    "third_audit": {
+      "audit_date": "2026-07-28T02:01:45.392549+00:00",
+      "audit_invocation_id": "d687084d3b894567bb2ff49435571a15",
+      "auditor": "codex-judicial-1-20260728-f506b6c9",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "claim_scope": "On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.",
+      "claim_type": "bounded_theorem",
+      "first_auditor_error": "none",
+      "independence": "judicial_review",
+      "judgment_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The authenticated pre-audit scope is exactly the finite-harness statement ratified by the first auditor. The supplied code constructs the lattice, performs the nonzero-coupling iterative sweep, and produces the nine tabulated nonzero shifts with 0/9 rows converged after six iterations. That bounded computational claim makes no mechanism-level exclusion, so untested alternative iteration, relaxation, lattice-limit, or readout routes do not prevent closure and do not trigger negative-assertion classes for the ratified tuple.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260728-f506b6c9\", \"judge\": 1, \"rationale\": \"The authenticated pre-audit scope is exactly the finite-harness statement ratified by the first auditor. The supplied code constructs the lattice, performs the nonzero-coupling iterative sweep, and produces the nine tabulated nonzero shifts with 0/9 rows converged after six iterations. That bounded computational claim makes no mechanism-level exclusion, so untested alternative iteration, relaxation, lattice-limit, or readout routes do not prevent closure and do not trigger negative-assertion classes for the ratified tuple.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-2-20260728-65468e64\", \"judge\": 2, \"rationale\": \"The authenticated pre-audit scope is exactly the first auditor's finite-harness scope. The runner source genuinely computes the nine nonzero-coupling rows, and stdout confirms their tabulated shifts and 0/9 convergence within six iterations; neither a mechanism-level exclusion nor robustness under altered iteration counts, relaxation, lattice scale, or observables is part of that ratified scope.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-3-20260728-69b97a71\", \"judge\": 3, \"rationale\": \"The authenticated pre-audit scope is character-for-character the first auditor\\u2019s scope. The runner genuinely computes all nine nonzero-coupling rows, including their centroid and phase shifts and their failure to satisfy the stated tolerance within six iterations. The note explicitly excludes the epsilon=0 same-machinery reduction and the stronger mechanism-level theorem from binding scope, so neither the mechanism-level extrapolation nor the stale nonbinding Born figures defeat this bounded finite-harness claim.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-4-20260728-6dfd3a03\", \"judge\": 4, \"rationale\": \"The authenticated pre-audit scope exactly matches the first position and is limited to the computed finite-harness observations. The supplied runner genuinely computes the nine nonzero-coupling rows, reproduces their nonzero centroid and phase shifts, and reports 0/9 convergence within six iterations; it does not merely print expected constants. Mechanism-level exclusion and robustness under altered iteration count, relaxation, lattice scale, or readout are outside that ratified scope.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-5-20260728-c6c3e1ba\", \"judge\": 5, \"rationale\": \"The runner genuinely computes the nine nonzero-coupling shifts and shows that none meets the stated convergence tolerance within six iterations. Those facts do not establish the note\\u2019s further inference that the family is merely a weak control rather than a possible self-gravity mechanism, because relevant convergence and alternative-route tests remain unperformed. The conservative audited_conditional tuple is therefore correct.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Restricted finite-harness claim that nine nonzero-coupling rows show small matched-null shifts, miss the stated tolerance after six iterations, and therefore constitute a weak control rather than a self-gravity mechanism.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"no_go_result\", \"stretch_attempt_negative\"]]}]",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [],
+      "second_auditor_error": "The second position broadened the authenticated finite-harness scope by adding the mechanism-level inference that the rows therefore constitute a weak control rather than a self-gravity mechanism, then treated untested routes against that broader inference as blockers. Those routes are irrelevant to the exact bounded claim supplied for audit.",
+      "sided_with": "first",
+      "verdict": "audited_clean"
+    }
   },
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 4,
-  "effective_status": "audit_in_progress",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
   "helper_runner_paths": [
     "scripts/minimal_source_driven_field_probe.py"
   ],
-  "independence": null,
-  "intrinsic_status": "audit_in_progress",
+  "independence": "judicial_review",
+  "intrinsic_status": "retained_bounded",
   "load_bearing_score": 11.615,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The nonzero-coupling branch shows small matched-null centroid and phase-ramp shifts, but none of its nine rows converges under the stated tolerance within six iterations.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "da5b483741130bdccdb04b4753f00d7f8d50fd96f6c9a0fb896ffb2367cc2bef",
   "note_path": "docs/POISSON_SELF_GRAVITY_LOOP_V3_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Re-audit if the exact epsilon=0 same-machinery reduction or a mechanism-level exclusion is restored to binding scope; also reconcile the nonbinding Born-audit figures with current stdout.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-context",
   "previous_audits": [
@@ -581,5 +763,5 @@
   "runner_path": "scripts/poisson_self_gravity_loop_v3.py",
   "title": "Poisson Self-Gravity Loop V3 Note \u2014 Nonzero-Coupling Falsifier (Binding)",
   "transitive_descendants": 783,
-  "verdict_rationale": null
+  "verdict_rationale": "Five-judge panel majority (4/5 matching full tuples) resolved the cross-confirmation disagreement. Representative rationale: The authenticated pre-audit scope is exactly the finite-harness statement ratified by the first auditor. The supplied code constructs the lattice, performs the nonzero-coupling iterative sweep, and produces the nine tabulated nonzero shifts with 0/9 rows converged after six iterations. That bounded computational claim makes no mechanism-level exclusion, so untested alternative iteration, relaxation, lattice-limit, or readout routes do not prevent closure and do not trigger negative-assertion classes for the ratified tuple.\n[panel breakdown] [{\"auditor\": \"codex-judicial-1-20260728-f506b6c9\", \"judge\": 1, \"rationale\": \"The authenticated pre-audit scope is exactly the finite-harness statement ratified by the first auditor. The supplied code constructs the lattice, performs the nonzero-coupling iterative sweep, and produces the nine tabulated nonzero shifts with 0/9 rows converged after six iterations. That bounded computational claim makes no mechanism-level exclusion, so untested alternative iteration, relaxation, lattice-limit, or readout routes do not prevent closure and do not trigger negative-assertion classes for the ratified tuple.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-2-20260728-65468e64\", \"judge\": 2, \"rationale\": \"The authenticated pre-audit scope is exactly the first auditor's finite-harness scope. The runner source genuinely computes the nine nonzero-coupling rows, and stdout confirms their tabulated shifts and 0/9 convergence within six iterations; neither a mechanism-level exclusion nor robustness under altered iteration counts, relaxation, lattice scale, or observables is part of that ratified scope.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-3-20260728-69b97a71\", \"judge\": 3, \"rationale\": \"The authenticated pre-audit scope is character-for-character the first auditor\\u2019s scope. The runner genuinely computes all nine nonzero-coupling rows, including their centroid and phase shifts and their failure to satisfy the stated tolerance within six iterations. The note explicitly excludes the epsilon=0 same-machinery reduction and the stronger mechanism-level theorem from binding scope, so neither the mechanism-level extrapolation nor the stale nonbinding Born figures defeat this bounded finite-harness claim.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-4-20260728-6dfd3a03\", \"judge\": 4, \"rationale\": \"The authenticated pre-audit scope exactly matches the first position and is limited to the computed finite-harness observations. The supplied runner genuinely computes the nine nonzero-coupling rows, reproduces their nonzero centroid and phase shifts, and reports 0/9 convergence within six iterations; it does not merely print expected constants. Mechanism-level exclusion and robustness under altered iteration count, relaxation, lattice scale, or readout are outside that ratified scope.\", \"tuple\": [\"first\", \"audited_clean\", \"bounded_theorem\", \"On the supplied h=0.25, W=3, L=6 finite harness, the nine rows with epsilon in {0.05, 0.20, 0.50} and source strength in {0.002, 0.004, 0.008} have the tabulated nonzero centroid and phase shifts and 0/9 convergence after six iterations.\", \"C\", null, []]}, {\"auditor\": \"codex-judicial-5-20260728-c6c3e1ba\", \"judge\": 5, \"rationale\": \"The runner genuinely computes the nine nonzero-coupling shifts and shows that none meets the stated convergence tolerance within six iterations. Those facts do not establish the note\\u2019s further inference that the family is merely a weak control rather than a possible self-gravity mechanism, because relevant convergence and alternative-route tests remain unperformed. The conservative audited_conditional tuple is therefore correct.\", \"tuple\": [\"second\", \"audited_conditional\", \"bounded_theorem\", \"Restricted finite-harness claim that nine nonzero-coupling rows show small matched-null shifts, miss the stated tolerance after six iterations, and therefore constitute a weak control rather than a self-gravity mechanism.\", \"C\", null, [\"bounded_with_named_walls\", \"conditional_wall_rationale\", \"derived_no_go_boundary\", \"no_go_result\", \"stretch_attempt_negative\"]]}]"
 }

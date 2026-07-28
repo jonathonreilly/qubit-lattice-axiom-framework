@@ -1932,10 +1932,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "poisson_self_gravity_loop_v3_note",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "poisson_self_gravity_mechanism_note",
           "effective_status": "unaudited"
         },
@@ -2740,7 +2736,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 628
+      "uncertified_count": 627
     }
   ],
   "schema": "lane_certification_v2"

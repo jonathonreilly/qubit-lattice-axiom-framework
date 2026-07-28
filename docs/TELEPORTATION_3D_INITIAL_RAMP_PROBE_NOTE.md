@@ -149,7 +149,7 @@ the 3D target ground state.
 
 | case | target overlap | diabatic loss | energy excess | best Bell | best-frame fidelity | negativity |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| null | `1.000000` | `0` | `0` | `0.500000` (`Phi+` / `Psi+` exact tie) | `0.666667` | `0.000000` |
+| null | `1.000000` | `0` | `8.881784e-16` | `0.500000` (`Phi+` / `Psi+` exact tie) | `0.666667` | `0.000000` |
 | Poisson `G=1000` | `0.999954` | `4.578600e-05` | `0.002244` | `0.997444` (`Psi+`) | `0.998296` | `0.497451` |
 
 The Poisson finite-time final state had native site-pair support:

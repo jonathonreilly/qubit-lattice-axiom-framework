@@ -315,7 +315,10 @@ def bipartition_from_tensor(
         raise ValueError(f"{label}: zero Schmidt weight")
     weights = weights / total
     weights = np.where(weights > tolerance, weights, 0.0)
-    weights = weights / float(np.sum(weights))
+    retained_total = float(np.sum(weights))
+    if retained_total <= 0.0:
+        raise ValueError(f"{label}: entropy tolerance removed every Schmidt weight")
+    weights = weights / retained_total
     purity = float(np.sum(weights * weights))
     return BipartitionDiagnostics(
         label=label,
@@ -948,7 +951,7 @@ def parse_args() -> argparse.Namespace:
         "--entropy-tolerance",
         type=float,
         default=1e-12,
-        help="Schmidt-weight tolerance for numerical rank",
+        help="Schmidt-weight tolerance in (0, 1) for numerical rank",
     )
     parser.add_argument(
         "--support-threshold",
@@ -1006,8 +1009,8 @@ def validate_args(args: argparse.Namespace) -> None:
         raise ValueError("--steps must be positive")
     if args.degeneracy_tolerance <= 0.0:
         raise ValueError("--degeneracy-tolerance must be positive")
-    if args.entropy_tolerance <= 0.0:
-        raise ValueError("--entropy-tolerance must be positive")
+    if not (0.0 < args.entropy_tolerance < 1.0):
+        raise ValueError("--entropy-tolerance must be in (0, 1)")
     if args.support_threshold < 0.0:
         raise ValueError("--support-threshold must be nonnegative")
     if args.gap_threshold < 0.0:
@@ -1146,6 +1149,7 @@ def main() -> int:
     print(f"  resource-candidate checks passed: {'YES' if target_candidate else 'NO'}")
     print(f"  preparation verdict: {verdict}")
     closure_checks = {
+        "G=0 uniqueness/product/separability": initial.verdict != "negative",
         "G=0 Bell tie disclosed": frozenset(initial.resource.best_bell_labels)
         == frozenset(("Phi+", "Psi+")),
         "G=0 native-basis delocalization": abs(initial.supports[1].participation_fraction - 1.0)

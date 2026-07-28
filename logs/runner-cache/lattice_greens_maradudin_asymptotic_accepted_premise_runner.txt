@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py
-runner_sha256: 0e7cfb619db9ba8aab6382983bfdd36f1e960f538137e1498416179899d9d0a8
+runner_sha256: b6f0e98f4942c5f3c1a7c2031cf10bf5185b11c214062c3772248d5e1cd0a3a6
+input_fingerprint_sha256: 142360eb5f65e9e553aa5e010640590fabcce6bb1ecb6aaaab5dc2b71de289a8
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 CUBIC-LATTICE GREEN ASYMPTOTIC FRAMEWORK-NATIVE REROUTE

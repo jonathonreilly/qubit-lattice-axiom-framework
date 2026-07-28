@@ -1,5 +1,5 @@
 {
- "edge_count": 15182,
+ "edge_count": 15181,
  "node_count": 4562,
  "nodes": {
   "3d_correction_master_note": {
@@ -5859,8 +5859,8 @@
    "out_degree": 3
   },
   "gauge_wilson_isotropy_boundary_note_2026-05-04": {
-   "deps_hash": "07b9805a48f3",
-   "out_degree": 3
+   "deps_hash": "586931b6ddf4",
+   "out_degree": 2
   },
   "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07": {
    "deps_hash": "e3b0c44298fc",

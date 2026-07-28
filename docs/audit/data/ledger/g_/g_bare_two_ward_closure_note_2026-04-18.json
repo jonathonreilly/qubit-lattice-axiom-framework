@@ -41,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "4e3be1a58ddc3a71d2000c8eaa363d79c4aca218666f45d2a5d58e2c88b733e3",
+  "note_hash": "3dc221157b1a8e832c2d98579e13407f62def3723e78dea02f49f3936def601f",
   "note_path": "docs/G_BARE_TWO_WARD_CLOSURE_NOTE_2026-04-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -201,7 +201,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "relabel_date": "2026-05-06T17:45:26.976868+00:00",
   "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
   "runner_check_breakdown": {

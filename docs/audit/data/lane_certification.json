@@ -1933,7 +1933,7 @@
         },
         {
           "claim_id": "poisson_self_gravity_loop_v3_note",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "poisson_self_gravity_mechanism_note",

@@ -15,10 +15,10 @@
   "claim_id": "wilson_test_mass_continuum_note_2026-04-11",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -37,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "b5b1f3de8dda5d070d33d8eeccafa213caaf5d1e070cef289ecdb126f4d4bcee",
+  "note_hash": "aff1e1ba98a380dd19dbd05504efa4f94c18a615f6a3a30d54fb6ae1e0601534",
   "note_path": "docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -278,7 +278,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -286,7 +286,7 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": null,
+  "runner_path": "scripts/wilson_test_mass_continuum_certificate.py",
   "title": "Wilson Test-Mass / Finite-L Distance-Law Companion",
   "transitive_descendants": 11,
   "verdict_rationale": null

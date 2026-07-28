@@ -46,7 +46,8 @@
     "scripts/frontier_tensor_support_center_excess_law.py",
     "scripts/frontier_tensor_universal_kernel.py",
     "scripts/frontier_tensorial_einstein_regge_completion.py",
-    "scripts/frontier_universal_shell_profile.py"
+    "scripts/frontier_universal_shell_profile.py",
+    "scripts/n5_resolution_certificate.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",

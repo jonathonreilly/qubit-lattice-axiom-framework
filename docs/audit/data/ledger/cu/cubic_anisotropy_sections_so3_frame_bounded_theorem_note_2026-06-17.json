@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "b4d70c8d6dafb3f7be876f684232906c41a99c04216b97db1af70abbb7436180",
+  "note_hash": "ae833e9388583e5248c51f2dc3ddf56b3edcebfe8b663ea8ccb8741671d37b62",
   "note_path": "docs/CUBIC_ANISOTROPY_SECTIONS_SO3_FRAME_BOUNDED_THEOREM_NOTE_2026-06-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -168,7 +168,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

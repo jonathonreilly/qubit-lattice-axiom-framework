@@ -15,10 +15,10 @@
   "claim_id": "h0125_scalable_scout_note",
   "claim_scope": null,
   "claim_type": "no_go",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "no_go",
+  "claim_type_author_hint_raw": "no_go",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,7 +26,10 @@
   "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/lattice_3d_l2_numpy_h0125_only.py",
+    "scripts/numpy_replay_bootstrap.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 5.255,
@@ -34,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "dd851d03f85d9435f0aa0f3d526ae432c1f5bc988a9714fc2e9509de428c8653",
+  "note_hash": "ca43732b6dc462fe1e32df102cd6d754def8ddab73c26976a44cc1307ac9ef88",
   "note_path": "docs/H0125_SCALABLE_SCOUT_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -208,7 +211,7 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": null,
+  "runner_path": "scripts/h0125_scalable_scout.py",
   "title": "H=0.125 Scalable Scout Note",
   "transitive_descendants": 26,
   "verdict_rationale": null

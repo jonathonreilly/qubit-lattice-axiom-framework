@@ -37,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c53f0e9a862253fa719705cf1adf4efb04548fd0ccd5d2da73f70f85f398d91e",
+  "note_hash": "6b478d855d29451a5b55bed7c5059baa39c21e1d262c54680c01748e7bc892d6",
   "note_path": "docs/KUBO_CONTINUUM_LIMIT_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

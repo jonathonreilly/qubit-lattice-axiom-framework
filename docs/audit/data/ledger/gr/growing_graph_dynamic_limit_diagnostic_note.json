@@ -28,7 +28,8 @@
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/generative_causal_dag_interference.py",
-    "scripts/growing_graph_decoherence.py"
+    "scripts/growing_graph_decoherence.py",
+    "scripts/n5_resolution_certificate.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",

@@ -2289,7 +2289,9 @@
       "generated_order": 13,
       "group_id": "claude_only_clean_needs_non_claude_confirmation",
       "group_order": 4,
-      "helper_runner_paths": [],
+      "helper_runner_paths": [
+        "scripts/n5_resolution_certificate.py"
+      ],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_CONNES_NC_SPECTRAL_NARROW_NOTE_2026-05-21.md",
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_connes_nc_spectral.py",
@@ -2329,7 +2331,9 @@
       "generated_order": 14,
       "group_id": "claude_only_clean_needs_non_claude_confirmation",
       "group_order": 4,
-      "helper_runner_paths": [],
+      "helper_runner_paths": [
+        "scripts/n5_resolution_certificate.py"
+      ],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_JONES_INDEX_SUBFACTOR_NARROW_NOTE_2026-05-21.md",
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_jones_index_subfactor.py",
@@ -2369,7 +2373,9 @@
       "generated_order": 15,
       "group_id": "claude_only_clean_needs_non_claude_confirmation",
       "group_order": 4,
-      "helper_runner_paths": [],
+      "helper_runner_paths": [
+        "scripts/n5_resolution_certificate.py"
+      ],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/OBSERVABLE_PRINCIPLE_P1_BRIDGE_STRUCTURAL_REFRAMING_NARROW_NOTE_2026-05-21.md",
       "runner_path": "scripts/frontier_observable_principle_p1_bridge_structural_reframing.py",
@@ -2580,7 +2586,9 @@
       "generated_order": 6,
       "group_id": "r1_per_site_dim_two_consumers",
       "group_order": 2,
-      "helper_runner_paths": [],
+      "helper_runner_paths": [
+        "scripts/n5_resolution_certificate.py"
+      ],
       "must_not_use_manifest_as_evidence": true,
       "note_path": "docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md",
       "runner_path": "scripts/no_per_site_bosonic_ccr_check.py",

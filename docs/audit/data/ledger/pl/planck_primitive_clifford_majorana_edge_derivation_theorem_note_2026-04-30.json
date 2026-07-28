@@ -27,7 +27,8 @@
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
-    "scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py"
+    "scripts/frontier_planck_primitive_clifford_majorana_edge_derivation.py",
+    "scripts/n5_resolution_certificate.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",

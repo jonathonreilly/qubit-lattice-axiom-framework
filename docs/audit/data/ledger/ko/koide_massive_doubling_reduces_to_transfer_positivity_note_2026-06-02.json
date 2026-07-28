@@ -46,7 +46,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "47d777c16d9adb59b8ad25c34ded68509e58c0c8f46c7b0a4d2e46498606c8e7",
+  "note_hash": "8873e78b837583dfc9e9f4ca96ea835216118a443baf5359c3c21ed5138d4f10",
   "note_path": "docs/KOIDE_MASSIVE_DOUBLING_REDUCES_TO_TRANSFER_POSITIVITY_NOTE_2026-06-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

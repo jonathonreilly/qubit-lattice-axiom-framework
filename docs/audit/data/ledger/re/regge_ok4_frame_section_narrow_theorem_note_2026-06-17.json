@@ -39,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "de2601a36b7580db8b948a3952e3484ee22e9abf0b7b9c26895f313064decd0f",
+  "note_hash": "f861279c2f2485f0663c8bef591fa0f755dc4a030d7dc22dc18eada55896dd35",
   "note_path": "docs/REGGE_OK4_FRAME_SECTION_NARROW_THEOREM_NOTE_2026-06-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -176,7 +176,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

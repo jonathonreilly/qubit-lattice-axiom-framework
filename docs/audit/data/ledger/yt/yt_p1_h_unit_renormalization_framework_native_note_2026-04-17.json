@@ -41,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "6abdd70354f760060d7dfc78168d3227860656d3aef021f25cd1294161ef05cd",
+  "note_hash": "9a7195c39a8d5832f48d3006b6cf14e610bef9de442240399b166de6d7e07e9c",
   "note_path": "docs/YT_P1_H_UNIT_RENORMALIZATION_FRAMEWORK_NATIVE_NOTE_2026-04-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -342,7 +342,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

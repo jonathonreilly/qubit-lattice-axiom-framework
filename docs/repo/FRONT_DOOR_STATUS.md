@@ -31,17 +31,17 @@ Owner-approval history for axioms and primitives:
 
 | Metric | Value |
 |---|---:|
-| Ledger rows | 3894 |
-| Applied audit verdicts | 942 |
+| Ledger rows | 3896 |
+| Applied audit verdicts | 941 |
 | Retained-grade rows, including boxed decorations | 498 |
 | Retained positive theorems | 118 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 351 |
 | Boxed decorations under retained parents | 29 |
 | Open gates | 3 |
-| Unaudited rows | 2594 |
+| Unaudited rows | 2597 |
 | Retained-pending-chain rows | 10 |
-| Audited conditional rows | 310 |
+| Audited conditional rows | 309 |
 | Audited renaming rows | 35 |
 | Audited numerical-match rows | 11 |
 | Citation cycles detected | 58 |
@@ -54,13 +54,13 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2981 |
-| Ready rows | 549 |
+| Total pending rows | 2983 |
+| Ready rows | 550 |
 | Cycle-break targets | 59 |
 | Critical pending | 635 |
-| High pending | 366 |
-| Medium pending | 827 |
-| Leaf pending | 1153 |
+| High pending | 367 |
+| Medium pending | 826 |
+| Leaf pending | 1155 |
 
 Next ready rows by queue order:
 
@@ -106,7 +106,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 30 |
 | Live conditional/failed rows that would park | 0 |
-| Live rows fail-open (legacy/unversioned snapshot) | 41 |
+| Live rows fail-open (legacy/unversioned snapshot) | 40 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
 | Lane rows removed since prior pass | 0 |
@@ -321,15 +321,15 @@ Source: [`docs/publication/ci3_z3/PUBLICATION_AUDIT_DIVERGENCE.md`](../publicati
 
 | Metric | Value |
 |---|---:|
-| Citation-graph nodes | 4552 |
+| Citation-graph nodes | 4554 |
 | Critical nodes | 755 |
-| High nodes | 446 |
-| Medium nodes | 1162 |
-| Leaf nodes | 2189 |
+| High nodes | 448 |
+| Medium nodes | 1160 |
+| Leaf nodes | 2191 |
 
 Top load-bearing rows by graph score:
 
-- `minimal_axioms` - critical; 2157 descendants; score 277.075
+- `minimal_axioms` - critical; 2158 descendants; score 277.576
 - `graph_first_su3_integration_note` - critical; 1678 descendants; score 64.213
 - `three_generation_observable_theorem_note` - critical; 1285 descendants; score 62.329
 - `observable_principle_from_axiom_note` - critical; 1124 descendants; score 61.636

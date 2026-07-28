@@ -26,7 +26,7 @@
     "physical_m2_endpoint_instrument_cycle704_cycle612_bridge_cycle713_bounded_theorem_note_2026-07-26",
     "physical_m2_full34_fixed_packet_composition_cycle714_bounded_theorem_note_2026-07-26"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -67,7 +67,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.585,
+  "load_bearing_score": 3.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -88,6 +88,6 @@
   },
   "runner_path": "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
   "title": "Cycle 715 recurrent directional packet bank \u2014 bounded theorem note",
-  "transitive_descendants": 2,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

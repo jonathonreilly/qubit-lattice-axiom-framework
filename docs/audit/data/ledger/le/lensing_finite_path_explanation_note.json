@@ -28,7 +28,8 @@
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/kubo_continuum_limit.py",
-    "scripts/lensing_long_path_test.py"
+    "scripts/lensing_long_path_test.py",
+    "scripts/n5_resolution_certificate.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",

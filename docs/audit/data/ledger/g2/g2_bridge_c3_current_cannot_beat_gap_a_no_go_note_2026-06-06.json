@@ -42,7 +42,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "282b8978e4f65c5a891ecbd36962481b3d0e682ff56fed31621ad489e926c3c9",
+  "note_hash": "40a434cd4f00e33898ef16fc1f3f4d0b40be22b0d58f3de0ecb6f9f25be4dc8d",
   "note_path": "docs/G2_BRIDGE_C3_CURRENT_CANNOT_BEAT_GAP_A_NO_GO_NOTE_2026-06-06.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -345,7 +345,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

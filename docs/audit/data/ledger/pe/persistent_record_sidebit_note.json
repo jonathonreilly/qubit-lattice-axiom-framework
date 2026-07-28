@@ -37,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e606d5225e03186d70738cd15f7c20c6a90c8bb67219a555c469f30a44b91e6b",
+  "note_hash": "6379c519f5d7ccbd87dca725d29f9453ce55cf94cbb66478d9d0eb5da4e03fa3",
   "note_path": "docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -231,7 +231,7 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": null,
+  "runner_path": "scripts/persistent_record_sidebit_certificate.py",
   "title": "Persistent Record Side-Bit Note",
   "transitive_descendants": 0,
   "verdict_rationale": null

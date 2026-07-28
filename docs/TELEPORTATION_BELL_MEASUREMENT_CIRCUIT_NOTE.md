@@ -1,6 +1,7 @@
 # Teleportation Bell-Measurement Circuit Note
 
 **Date:** 2026-04-25
+**Claim type:** `open_gate`
 **Status:** planning / ideal logical taste-measurement decomposition
 **Runner:** `scripts/frontier_teleportation_bell_measurement_circuit.py`
 

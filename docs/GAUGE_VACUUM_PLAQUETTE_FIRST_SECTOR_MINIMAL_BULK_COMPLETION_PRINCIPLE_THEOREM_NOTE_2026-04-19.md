@@ -131,11 +131,12 @@ a consequence of coefficient order for an arbitrary transfer map.
 
 ## Dependency closure
 
-No theorem is imported from an upstream prose note.  The proof above is a
-finite-dimensional conditional algebra theorem for the packet and matrices
-constructed by the primary runner.  The runner obtains those numerical
-objects through in-tree Python functions and directly verifies every
-hypothesis used here:
+The proof above is a finite-dimensional conditional algebra theorem for the
+packet and matrices constructed by the primary runner.  It does not import a
+universal minimality conclusion from upstream prose.  The concrete packet and
+local-factor inputs do come through the linked in-tree helper chain, so those
+sources remain explicit audit-graph dependencies.  The runner directly
+verifies every hypothesis used by the new arbitrary-tail step:
 
 - the retained packet is finite, normalized, nonnegative, and
   conjugation-symmetric;
@@ -144,15 +145,14 @@ hypothesis used here:
 - every diagonal entry of `D_loc` is strictly positive;
 - every tail-orbit generator produces a nonzero PSD congruence increment.
 
-The provenance notes for the retained packet and finite factorized model
-remain useful context, but their scientific conclusions are not premises
-of this bounded algebra theorem:
+The source notes for the retained packet and finite factorized model are:
 
 - [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_TRUNCATED_ENVIRONMENT_PACKET_NOTE_2026-04-19.md)
 - [GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md](GAUGE_VACUUM_PLAQUETTE_FIRST_SECTOR_ZERO_EXTENSION_FACTORIZED_CLASS_THEOREM_NOTE_2026-04-19.md)
 
 Their audit status is owned by the independent audit lane; this note does
-not promote either row.
+not promote either row, and its own retained-grade propagation remains
+conditional on the audit graph.
 
 ## Verification
 

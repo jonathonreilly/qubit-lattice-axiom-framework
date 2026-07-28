@@ -149,9 +149,35 @@ def transfer(multiplier: np.ndarray, d_local: np.ndarray, rho: np.ndarray) -> np
     return multiplier @ d_local @ np.diag(np.asarray(rho, dtype=float)) @ multiplier
 
 
-def psd_with_scale(matrix: np.ndarray) -> bool:
-    scale = max(1.0, float(np.linalg.norm(matrix, ord=2)))
-    return float(np.min(np.linalg.eigvalsh(matrix))) >= -1.0e-12 * scale
+def congruence_gram_certificate(
+    multiplier: np.ndarray,
+    d_local: np.ndarray,
+    delta: np.ndarray,
+) -> tuple[bool, float, float]:
+    """Certify the PSD increment through its explicit Gram factor.
+
+    An absolute eigenvalue tolerance is not reliable here: the highest-weight
+    orbit increments can be many orders of magnitude below one.  The identity
+
+        M D_loc diag(delta) M = B.T @ B,
+        B = sqrt(D_loc diag(delta)) @ M,
+
+    is scale-free and is the same certificate used by the analytic proof.
+    """
+    diagonal = np.diag(d_local) * np.asarray(delta, dtype=float)
+    if float(np.min(diagonal)) < 0.0 or not np.any(diagonal > 0.0):
+        return False, float("inf"), 0.0
+    factor = np.sqrt(diagonal)[:, None] * multiplier
+    gram = factor.T @ factor
+    increment = transfer(multiplier, d_local, delta)
+    scale = max(
+        float(np.linalg.norm(increment)),
+        float(np.linalg.norm(gram)),
+        float(np.finfo(float).tiny),
+    )
+    relative_error = float(np.linalg.norm(increment - gram)) / scale
+    gram_norm = float(np.linalg.norm(gram))
+    return relative_error <= 1.0e-12 and gram_norm > 0.0, relative_error, gram_norm
 
 
 def main() -> int:
@@ -171,7 +197,6 @@ def main() -> int:
     expected_cover[tail_indices] = 1.0
     actual_cover = np.sum([generator for _orbit, generator in generators], axis=0)
 
-    t0 = transfer(multiplier, d_local, rho0)
     rho_a = add_tail(rho0, index, {(2, 0): 0.05, (0, 2): 0.05})
     rho_b = add_tail(rho0, index, {(2, 1): 0.03, (1, 2): 0.03, (2, 2): 0.02})
 
@@ -255,17 +280,23 @@ def main() -> int:
         f"symmetry_error={multiplier_symmetry_error:.3e}, sigma_min={multiplier_smin:.3e}, d_min={d_min:.3e}",
     )
 
+    increment_certificates = [
+        congruence_gram_certificate(multiplier, d_local, generator)
+        for _orbit, generator in generators
+    ]
     increments = [
-        multiplier @ d_local @ np.diag(generator) @ multiplier
+        transfer(multiplier, d_local, generator)
         for _orbit, generator in generators
     ]
     min_increment_eigenvalue = min(float(np.min(np.linalg.eigvalsh(increment))) for increment in increments)
-    min_increment_norm = min(float(np.linalg.norm(increment)) for increment in increments)
+    max_gram_relative_error = max(result[1] for result in increment_certificates)
+    min_increment_norm = min(result[2] for result in increment_certificates)
     check(
-        "Every tail-orbit generator has a nonzero PSD congruence increment; nonnegative sums prove arbitrary-tail Loewner monotonicity",
-        all(psd_with_scale(increment) for increment in increments)
-        and all(float(np.linalg.norm(increment)) > 0.0 for increment in increments),
-        f"min_eigenvalue={min_increment_eigenvalue:.3e}, min_nonzero_norm={min_increment_norm:.3e}",
+        "Every tail-orbit increment has a nonzero Gram factor; nonnegative sums prove arbitrary-tail Loewner monotonicity",
+        all(result[0] for result in increment_certificates),
+        f"max_relative_gram_error={max_gram_relative_error:.3e}, "
+        f"min_nonzero_norm={min_increment_norm:.3e}, "
+        f"diagnostic_min_eigenvalue={min_increment_eigenvalue:.3e}",
     )
 
     generator_metrics = [
@@ -288,14 +319,16 @@ def main() -> int:
     mb = tail_metrics(rho_b, rho0, weights, index)
     increment_a = transfer(multiplier, d_local, rho_a - rho0)
     increment_b = transfer(multiplier, d_local, rho_b - rho0)
+    certificate_a = congruence_gram_certificate(multiplier, d_local, rho_a - rho0)
+    certificate_b = congruence_gram_certificate(multiplier, d_local, rho_b - rho0)
     check(
         "Legacy tails A and B agree with the universal coefficient, functional, and PSD conclusions (regression only)",
         np.all(rho_a >= rho0)
         and np.all(rho_b >= rho0)
         and ma["tail_mass"] > 0.0
         and mb["tail_mass"] > 0.0
-        and psd_with_scale(increment_a)
-        and psd_with_scale(increment_b)
+        and certificate_a[0]
+        and certificate_b[0]
         and float(np.linalg.norm(increment_a)) > 0.0
         and float(np.linalg.norm(increment_b)) > 0.0,
         f"massA={ma['tail_mass']:.3e}, massB={mb['tail_mass']:.3e}",

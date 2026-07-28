@@ -786,7 +786,9 @@
     "abfd82d89d 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
     "bdbfd89e3b 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
     "e2a79c44ec 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
-    "eea94cdfc0 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py"
+    "eea94cdfc0 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
+    "PR5686/sha256:40fe5eda1e10939516e245bcaf0a88afea94c404bb08417f14bdc280df55518f 2026-07-28 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py",
+    "PR5686/sha256:b5690e23867f6de4b56e0608554d88906d31d79a2aef05ceefbf162beb21c407 2026-07-28 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py"
    ],
    "effective_status": "audited_conditional",
    "helper_runner_sha256_at_baseline": {
@@ -820,8 +822,8 @@
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py": "4b4f2e60183c76184013d9d5371e6dbb77b033b5d5380834c423e8014bc253ff",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_least_distortion_selector_theorem_2026_04_20.py": "2f736f609f227752f8f30b0c22f28f2b6ba833ee6733ef0268ffbb7c2448f0cc",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_reduced_packet_complex_givens_selector_theorem_2026_04_20.py": "c16fe3d4ea43b2c2218afb1862169795f929ea72d64ae0ff1185e7940bdd7f63",
-    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py": "9af6d48aad3dd89a8f3d51168d04d86bd1c857c1bae7c84f3d95aa59fcce9f2d",
-    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": "0cd4dd2cd40a18d52651737a7d8837f59acfd465136b525b13ea1f9e8f6eb4cf",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py": "40fe5eda1e10939516e245bcaf0a88afea94c404bb08417f14bdc280df55518f",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": "b5690e23867f6de4b56e0608554d88906d31d79a2aef05ceefbf162beb21c407",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py": "7fcdfa92751f29eb682de885a11a1d2fffcfea46f896241cbf2a7504ea320c9b",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py": "a722569fafb7443841fd0f927508dbea97ac4d56282e1e590fa627b349e106f2",
     "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
@@ -873,7 +875,9 @@
     "d2d28cf7a9 2026-06-13 scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
     "e2a79c44ec 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
     "eea94cdfc0 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
-    "f74b448156 2026-06-17 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py"
+    "f74b448156 2026-06-17 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py",
+    "PR5686/sha256:40fe5eda1e10939516e245bcaf0a88afea94c404bb08417f14bdc280df55518f 2026-07-28 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py",
+    "PR5686/sha256:b5690e23867f6de4b56e0608554d88906d31d79a2aef05ceefbf162beb21c407 2026-07-28 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py"
    ],
    "effective_status": "retained_bounded",
    "helper_runner_sha256_at_baseline": {
@@ -905,8 +909,8 @@
     "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py": "9f8a4b93731a23370861ec9f07f06ea8fc4f5cdcd926cdd24cdf8e382beb3695",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_exact_solve_doublet_theorem_2026_04_20.py": "93ccd8a0bbd4fc2cc2d1978d0a61c9bc10b93a48b418b2352f3a6ca1eb730a2a",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_helper_2026_04_19.py": "4b4f2e60183c76184013d9d5371e6dbb77b033b5d5380834c423e8014bc253ff",
-    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py": "9af6d48aad3dd89a8f3d51168d04d86bd1c857c1bae7c84f3d95aa59fcce9f2d",
-    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": "0cd4dd2cd40a18d52651737a7d8837f59acfd465136b525b13ea1f9e8f6eb4cf",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py": "40fe5eda1e10939516e245bcaf0a88afea94c404bb08417f14bdc280df55518f",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": "b5690e23867f6de4b56e0608554d88906d31d79a2aef05ceefbf162beb21c407",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py": "7fcdfa92751f29eb682de885a11a1d2fffcfea46f896241cbf2a7504ea320c9b",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py": "a722569fafb7443841fd0f927508dbea97ac4d56282e1e590fa627b349e106f2",
     "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",
@@ -940,7 +944,9 @@
     "abfd82d89d 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
     "bdbfd89e3b 2026-07-18 scripts/frontier_gauge_vacuum_plaquette_spatial_environment_character_measure.py",
     "e2a79c44ec 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
-    "eea94cdfc0 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py"
+    "eea94cdfc0 2026-07-16 scripts/frontier_dm_leptogenesis_ne_projected_source_law_derivation.py",
+    "PR5686/sha256:40fe5eda1e10939516e245bcaf0a88afea94c404bb08417f14bdc280df55518f 2026-07-28 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py",
+    "PR5686/sha256:b5690e23867f6de4b56e0608554d88906d31d79a2aef05ceefbf162beb21c407 2026-07-28 scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py"
    ],
    "effective_status": "audited_renaming",
    "helper_runner_sha256_at_baseline": {
@@ -970,8 +976,8 @@
     "scripts/frontier_dm_neutrino_source_surface_intrinsic_slot_theorem.py": "4694e84fb6e82dc704f2c39e4a7e70016850feb2becfd9a89128672da5445c70",
     "scripts/frontier_dm_neutrino_source_surface_shift_quotient_bundle_theorem.py": "3467693b9aadc4f1a06b41424442a4701a6c02c97603267be4ff0874c437f765",
     "scripts/frontier_dm_neutrino_source_surface_z3_doublet_block_point_selection_theorem.py": "9f8a4b93731a23370861ec9f07f06ea8fc4f5cdcd926cdd24cdf8e382beb3695",
-    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py": "9af6d48aad3dd89a8f3d51168d04d86bd1c857c1bae7c84f3d95aa59fcce9f2d",
-    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": "0cd4dd2cd40a18d52651737a7d8837f59acfd465136b525b13ea1f9e8f6eb4cf",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_packet_theorem_2026_04_19.py": "40fe5eda1e10939516e245bcaf0a88afea94c404bb08417f14bdc280df55518f",
+    "scripts/frontier_gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_2026_04_19.py": "b5690e23867f6de4b56e0608554d88906d31d79a2aef05ceefbf162beb21c407",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py": "7fcdfa92751f29eb682de885a11a1d2fffcfea46f896241cbf2a7504ea320c9b",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_2026_04_19.py": "a722569fafb7443841fd0f927508dbea97ac4d56282e1e590fa627b349e106f2",
     "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py": "4fab2895211d366f83ad08d0563bf9c635c16ec2f7cccfa37eca277194724265",

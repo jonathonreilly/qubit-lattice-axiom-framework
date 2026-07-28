@@ -1,50 +1,73 @@
 ===== runner cache v1 =====
 runner: scripts/lattice_nn_high_precision_raw_certificate.py
-runner_sha256: 64f12abea5444b92565e12828a5bd0e35e9dad5a5e5290cb7893c865c7b0eea5
+runner_sha256: 744d01c9398a7de3848856c270f900a6ddea8b2298e4abe708bd4b6d257a3c98
+input_fingerprint_sha256: a9eb527d777ff377cefa221b060091ccfd507d3f019d9b333199a8268858d2f9
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 30.05
+elapsed_sec: 36.64
 status: ok
 ----- stdout -----
 ===============================================================================================
-RAW-KERNEL HIGH-PRECISION CERTIFICATE AT h = 0.125
-  arbitrary-precision raw NN kernel (mpmath dps = 30)
+MIXED-PRECISION RAW-KERNEL CERTIFICATE AT h = 0.125
+  float64 geometry/phases; mpmath amplitude accumulation (dps = 30)
   physical: W=20.0, L=40.0, k=5.0, field_strength=0.0005, mass at y=8.0
+  environment: Python=3.12.8 implementation=CPython mpmath=1.3.0 system=Darwin machine=arm64 float_mant_dig=53
 ===============================================================================================
 
 --- 1. RAW-KERNEL h = 0.25 SANITY CHECK ---
-    (must reproduce the float64 raw row from scripts/lattice_nn_continuum.py)
+    (live comparisons; no rounded or hard-coded targets)
     nl = 161, nodes = 25921
-    gravity:  raw_mpmath = +0.077415    cached_float64 = +0.077415
-    MI:       raw_mpmath = 0.9470    cached_float64 = 0.9470
-    1-pur:    raw_mpmath = 0.4989    cached_float64 = 0.4989
-    d_TV:     raw_mpmath = 0.9878    cached_float64 = 0.9878
-    SANITY: PASS  (elapsed 5.7s)
+    canonical raw comparator:
+    gravity: raw=7.74152004170323992688799e-2  comparator=7.74152004170353125189763e-2  abs_diff=2.913e-15
+    k=0    : raw=0.0  comparator=0.0  abs_diff=0.000e+00
+    MI     : raw=9.46953681895287980676116e-1  comparator=9.46953681895287724401555e-1  abs_diff=2.563e-16
+    purity : raw=5.01053049834712128723502e-1  comparator=5.01053049834712327381681e-1  abs_diff=1.987e-16
+    d_TV   : raw=9.87819700922304627559767e-1  comparator=9.87819700922304644308269e-1  abs_diff=1.675e-17
+    Born   : raw=4.79047450615023546875306e-31  comparator=3.63734059321510600663215e-16  abs_diff=3.637e-16
+    deterministic-rescale comparator:
+    gravity: raw=7.74152004170323992688799e-2  comparator=7.74152004170355068080056e-2  abs_diff=3.108e-15
+    k=0    : raw=0.0  comparator=0.0  abs_diff=0.000e+00
+    MI     : raw=9.46953681895287980676116e-1  comparator=9.4695368189528794644616e-1  abs_diff=3.423e-17
+    purity : raw=5.01053049834712128723502e-1  comparator=5.01053049834712105337076e-1  abs_diff=2.339e-17
+    d_TV   : raw=9.87819700922304627559767e-1  comparator=9.87819700922304644308269e-1  abs_diff=1.675e-17
+    Born   : raw=4.79047450615023546875306e-31  comparator=3.95251429184330053467843e-16  abs_diff=3.953e-16
+    SANITY: PASS  (elapsed 4.3s)
 
 --- 2. RAW-KERNEL h = 0.125 CERTIFICATE (gate target) ---
-    (this is the row the float64 raw lane could not evaluate)
+    (live comparison; no rounded or hard-coded targets)
     nl = 321, nodes = 103041
-    gravity:  raw_mpmath = +0.034466    cached_det_rescale = +0.034466
-    MI:       raw_mpmath = 0.9972    cached_det_rescale = 0.9972
-    1-pur:    raw_mpmath = 0.5000    cached_det_rescale = 0.5000
-    d_TV:     raw_mpmath = 0.9996    cached_det_rescale = 0.9996
-    Born:     raw_mpmath = 5.483e-31    cached_det_rescale = 7.860e-16
-    Born-clean (< 1e-10): YES
-    STEP-SCALE INVARIANCE AT h = 0.125: PASS  (elapsed 24.2s)
+    gravity: raw=3.44658632356807706405957e-2  comparator=3.44658632356811545083275e-2  abs_diff=3.839e-16
+    k=0    : raw=0.0  comparator=0.0  abs_diff=0.000e+00
+    MI     : raw=9.97190194714790828611629e-1  comparator=9.97190194714790978380847e-1  abs_diff=1.498e-16
+    purity : raw=5.00005664009480683657072e-1  comparator=5.00005664009480432774524e-1  abs_diff=2.509e-16
+    d_TV   : raw=9.99587635205019284504241e-1  comparator=9.9958763520501925370354e-1  abs_diff=3.080e-17
+    Born   : raw=5.48340895401153988423037e-31  comparator=5.63436630226487148826411e-16  abs_diff=5.634e-16
+    raw Born diagnostic (< 1e-10):      YES
+    rescaled Born diagnostic (< 1e-10): YES
+    LIVE ALL-OBSERVABLE COMPARISON (abs tol 1e-12): PASS  (elapsed 16.4s)
+
+--- 3. RAW-KERNEL PRECISION-STABILITY CHECK ---
+    dps=30 versus dps=40; predeclared abs tol=1e-24
+    gravity: abs_diff=1.793e-30
+    gk0    : abs_diff=0.000e+00
+    MI     : abs_diff=2.656e-31
+    pur_cl : abs_diff=4.226e-30
+    dtv    : abs_diff=1.882e-31
+    born   : abs_diff=5.483e-31
+    PRECISION STABILITY: PASS  (elapsed 15.8s)
 
 --- VERDICT ---
-    raw-kernel h = 0.25  reproducibility:    PASS
-    raw-kernel h = 0.125 successful run:     PASS  (mpmath at dps=30)
-    raw-kernel h = 0.125 Born-clean:         YES
-    step-scale invariance at h = 0.125:      PASS
+    raw-kernel h = 0.25 canonical regression: PASS
+    raw-kernel h = 0.125 successful run:      PASS  (mpmath at dps=30)
+    raw-kernel h = 0.125 Born diagnostic:     YES
+    live all-observable comparison:           PASS
+    dps precision-stability guard:            PASS
 
-    POSITIVE CERTIFICATE: the raw NN kernel at h = 0.125 is
-    numerically evaluable in arbitrary precision, the observables
-    extend the Born-clean refinement trend through h = 0.125, and
-    they match the deterministic-rescale lane within machine
-    precision (which directly verifies the step-scale invariance
-    theorem at the gate spacing where the float64 raw lane could
-    not previously be evaluated).
+    BOUNDED CERTIFICATE: in the recorded numerical environment,
+    the supplied raw NN protocol at h = 0.125 completes and its
+    live deterministic-rescale comparator agrees on all six
+    returned quantities within the predeclared 1e-12 threshold.
+    This is not a universal rescale or cross-platform theorem.
 
     RUNNER STATUS: PASS
 

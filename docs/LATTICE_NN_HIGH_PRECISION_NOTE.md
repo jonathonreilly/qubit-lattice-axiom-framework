@@ -1,379 +1,283 @@
 # Lattice NN High-Precision Note
 
-**Date:** 2026-04-03 (closure addendum 2026-05-07; audit-scope split
-2026-05-08; raw-kernel certificate 2026-05-16)
-**Type:** positive_theorem
-**Claim type:** positive_theorem
-**Primary runner:** [`scripts/lattice_nn_high_precision_raw_certificate.py`](../scripts/lattice_nn_high_precision_raw_certificate.py)
-(arbitrary-precision raw-kernel certificate that delivers the raw NN
-`h = 0.125` Born-clean row directly)
-**Support runner:** [`scripts/lattice_nn_high_precision_closure.py`](../scripts/lattice_nn_high_precision_closure.py)
-(step-scale invariance theorem and float64 overflow bound on a small
-NN lattice)
-**Status:** the narrow gate ("does the raw NN kernel extend the
-Born-clean refinement trend one more step to `h = 0.125` without any
-rescaling trick, keeping the same raw kernel and the same observables")
-is closed positively. The raw kernel is evaluated directly at
-`h = 0.125` in arbitrary precision (mpmath at `dps = 30`), the full
-observable row is Born-clean, and it agrees with the float64
-deterministic-rescale row within machine precision on every framework
-observable. Audit verdict and effective status are set only by the
-independent audit lane.
+**Date:** 2026-04-03 (mixed-precision certificate 2026-05-16; bounded
+live-comparator repair 2026-07-28)
+**Type:** bounded_theorem
+**Primary runner:**
+[`scripts/lattice_nn_high_precision_raw_certificate.py`](../scripts/lattice_nn_high_precision_raw_certificate.py)
+**Canonical raw runner:**
+[`scripts/lattice_nn_continuum.py`](../scripts/lattice_nn_continuum.py)
+**Comparator runner:**
+[`scripts/lattice_nn_deterministic_rescale.py`](../scripts/lattice_nn_deterministic_rescale.py)
+**Status:** protocol-specific bounded numerical certificate for one supplied
+finite harness at exactly `h = 0.125`; independent audit is required.
 
-## Audit scope
+## Scoped claim
 
-This note has passed through two previous audit rounds:
+For the finite nearest-neighbor harness and parameters specified below, the
+mixed-precision raw-kernel implementation completes at `h = 0.125` and returns
+the full implemented observable row. In particular, its Born residual is
+below the declared `10^-10` threshold.
 
-1. **2026-05-03 audit** (`audited_conditional`, verdict
-   `scope_too_broad`). Repair target: "split the clean overflow plus
-   detector-layer invariance core from the broader all-observables
-   canonical-equivalence statement, or add a full theorem/runner that
-   proves every deterministic-rescale observable matches the raw kernel
-   and verifies equality from current cache data."
-2. **2026-05-10 audit** (`audited_failed`, on the post-split note).
-   Chain-closure rationale: "the small-lattice normalized-probability and
-   centroid invariance check closes for exactly those observables. The
-   overflow conclusion does not close because the runner proves only an
-   upper bound exceeding float64 range; that is not a lower-bound proof
-   or completed raw-run certificate that the actual propagation must
-   overflow." Repair target: "actual raw-run certificate or a rigorous
-   lower-bound/interval overflow proof."
+The primary runner also recomputes the deterministic-rescale row live, in the
+same process and without rounded or hard-coded target values. At `h = 0.125`,
+all six returned quantities—gravity, the `k = 0` control, mutual information,
+classical purity, total-variation distance, and Born residual—agree within the
+predeclared absolute protocol threshold `10^-12` in the recorded numerical
+environment. Both Born residuals separately satisfy the declared `10^-10`
+diagnostic threshold.
 
-The author then honestly demoted the note to `open_gate` rather than
-shoring up the failed bounded read with weaker arguments.
+This is a bounded pointwise numerical certificate for the supplied protocol
+and recorded environment. The comparison threshold is an acceptance criterion
+for these two implementations, not a forward-error or cross-platform accuracy
+bound. The certificate is not an exact or all-spacings step-scale-invariance
+theorem, an `h -> 0` continuum theorem, or a derivation of the harness, kernel,
+parameter choices, observables, or Born rule from the framework axioms.
 
-**2026-05-16 update.** The auditor's alternative repair target — "an
-actual raw-run certificate" — has been delivered by
-[`scripts/lattice_nn_high_precision_raw_certificate.py`](../scripts/lattice_nn_high_precision_raw_certificate.py),
-which evaluates the raw NN kernel at `h = 0.125` directly in
-arbitrary-precision arithmetic (mpmath at `dps = 30`). The runner
-returns the full framework observable row at `h = 0.125`, Born-clean,
-matching the float64 deterministic-rescale lane on every observable to
-within machine precision. The narrow gate is therefore closed
-positively, not merely bounded:
+## The gate that is closed
 
-- **Positive source core (Section 4):** the raw NN kernel is
-  numerically evaluable at `h = 0.125` and produces the Born-clean
-  observable row `gravity = +0.034466, MI = 0.9972, 1 - pur = 0.5000,
-  d_TV = 0.9996, Born ~ 5.5e-31`. This is the row the float64 raw lane
-  could not previously produce. It is identical (within machine
-  precision) to the deterministic-rescale row at the same spacing.
-- **Support core (Sections 1, 2):** the step-scale invariance
-  theorem and the float64 overflow bound on a small NN lattice, as
-  before. Section 4 elevates the cross-check from "verified only on the
-  float64-clean window `h = 1.0, 0.5, 0.25`" to "verified at the gate
-  spacing `h = 0.125` itself".
+The load-bearing open-gate statement was:
 
-The previously-conditional broader statement — that the
-deterministic-rescale lane is observable-equivalent to the
-raw-kernel-no-rescale row across all framework observables at
-`h = 0.125` — is now directly checked at the spacing `h = 0.125`, because
-the raw-kernel row at `h = 0.125` is now directly available and matches
-the deterministic-rescale row bit-equal to machine precision. The
-"Conditional extension" section below is kept as historical record
-of the previously-weaker statement; the per-observable equality at
-`h = 0.125` is now demonstrated in Section 4 rather than only argued
-structurally.
+> The `h = 0.125` continuation did not complete in a practical runtime window
+> and did not produce a retained numerical result.
 
-This note records the narrow high-precision follow-up to the raw
-nearest-neighbor lattice refinement result.
+That statement accurately described the original 2026-04-03 attempt. It is
+not a no-go theorem. The current primary runner closes the computational
+noncompletion gate by executing the same implemented per-edge raw kernel with
+a wider-range amplitude accumulator and returning a checked `h = 0.125` row.
+No rescale factor is inserted into this raw propagation.
 
-## Goal
+The source note does not set audit status or grade. Its `bounded_theorem`
+classification records the supplied numerical conditions; the independent
+audit lane decides whether the claim is accepted.
 
-The question was intentionally narrow:
+## Supplied finite harness
 
-- does the raw nearest-neighbor lattice refinement trend extend one more step
-  to `h = 0.125`
-- without any rescaling trick
-- while keeping the same raw kernel and the same observables
+The computation reuses the nearest-neighbor family from
+[`scripts/lattice_nn_continuum.py`](../scripts/lattice_nn_continuum.py):
 
-## Setup
+- physical width `W = 20`
+- physical length `L = 40`
+- spacing `h = 0.125`
+- `321` layers and `103041` nodes
+- three forward edges per interior node
+- `k = 5`
+- angular-weight coefficient `beta = 0.8`
+- field strength `5e-4`
+- radial softener `0.1` in the supplied `1 / (r + 0.1)` mass field
+- slit position `y = 3`
+- mass location `y = 8`
+- `8` detector bins
+- decoherence-overlay coefficient `lambda = 10`
+- the same slit-width and three-slit construction rules as the existing NN
+  runners
 
-The high-precision continuation re-used the raw nearest-neighbor family from:
+These are the supplied claim surface. This note does not derive them from
+`A_min`, and it does not use an observed target value or fitted selector as a
+load-bearing input.
 
-- [`scripts/lattice_nn_continuum.py`](../scripts/lattice_nn_continuum.py)
+## Mixed-precision raw propagation
 
-The continuation script was:
+The raw per-edge factor is unchanged from the canonical implementation,
+
+```text
+exp(i k act) w / L.
+```
+
+The implementation is deliberately described as mixed precision:
+
+- lattice geometry, field values, `act`, and the per-edge phase are evaluated
+  in float64, as in the canonical raw runner
+- amplitude accumulation uses `mpmath.mpc` at `dps = 30`
+- no per-step rescale, layer normalization, observable-dependent correction,
+  or data-dependent schedule is applied
+
+Thus the certificate concerns the specified implemented kernel. It does not
+claim exact-real evaluation of its geometry or phases.
+
+## Live comparator and assertions
+
+The earlier certificate compared the raw row with rounded constants copied
+from a cache. That was inadequate for an all-observable equivalence claim:
+the targets were low precision, the `k = 0` control and Born residual were not
+part of the combined assertion, and the prior common-scalar argument had not
+been shown to cover the implemented mixed-depth purity construction.
+
+The repaired runner imports `measure_full` from both the canonical raw runner
+and
+[`scripts/lattice_nn_deterministic_rescale.py`](../scripts/lattice_nn_deterministic_rescale.py)
+and recomputes its comparator rows live. At `h = 0.25`, the mixed-precision row
+must agree with both the canonical raw row and the deterministic-rescale row.
+At the gate spacing `h = 0.125`, it applies:
+
+```text
+for q in {gravity, gk0, MI, pur_cl, dtv, born}:
+    abs(raw[q] - rescaled[q]) <= 1e-12
+
+raw[born]      < 1e-10
+rescaled[born] < 1e-10
+```
+
+It then recomputes the raw `h = 0.125` row at `dps = 40`; every returned
+quantity must agree with the primary `dps = 30` row within the separately
+predeclared `10^-24` precision-stability threshold. This guard is eight orders
+tighter than the raw/rescaled protocol threshold. The Born value is expected
+to move with the mpmath cancellation floor, but its absolute change must still
+pass that guard.
+
+Every quantity and every guard participates in the exit-code decision. The
+comparisons use unrounded returned values; formatting occurs only after the
+differences have been computed. The primary runner declares both the canonical
+raw and deterministic-rescale sources in `AUDIT_INPUT_PATHS`, so the
+content-pinned cache becomes stale if any of those sources changes. Its output
+also records Python, mpmath, operating-system, machine, and float-mantissa
+provenance. The environment record bounds the cached statement; it does not
+claim portability to an untested environment.
+
+## `h = 0.125` result
+
+The 2026-07-28 verification run returned:
+
+| quantity | mixed-precision raw | live deterministic rescale | absolute difference |
+|---|---:|---:|---:|
+| gravity | `3.44658632356807706405957e-02` | `3.44658632356811545083275e-02` | `3.839e-16` |
+| `k = 0` control | `0.0` | `0.0` | `0.0` |
+| MI | `9.97190194714790828611629e-01` | `9.97190194714790978380847e-01` | `1.498e-16` |
+| classical purity | `5.00005664009480683657072e-01` | `5.00005664009480432774524e-01` | `2.509e-16` |
+| `d_TV` | `9.99587635205019284504241e-01` | `9.99587635205019253703540e-01` | `3.080e-17` |
+| Born residual | `5.48340895401153988423037e-31` | `5.63436630226487148826411e-16` | `5.634e-16` |
+
+The maximum raw/rescaled difference is below `10^-12`, and both Born residuals
+are below the declared `10^-10` diagnostic threshold. The runner exits zero
+only when the canonical and rescaled `h = 0.25` regressions, the live
+`h = 0.125` all-observable check, and the `dps = 30` versus `dps = 40`
+precision-stability check all pass. In the cached precision check, the largest
+non-Born absolute change was `4.226e-30`; the Born cancellation-floor change
+was `5.483e-31`.
+
+## Derivation chain
+
+1. The original high-precision attempt did not finish, so it supplied no
+   `h = 0.125` row and correctly left an open computational gate.
+2. The current runner keeps the raw per-edge kernel and does not insert the
+   deterministic rescale used by the comparator lane.
+3. Replacing only the amplitude accumulator with `mpmath.mpc` supplies enough
+   exponent range for the finite propagation to terminate at `h = 0.125`.
+4. The runner computes all six observables from that completed raw
+   propagation, including the Born residual.
+5. At `h = 0.25`, it independently invokes the canonical raw and
+   deterministic-rescale implementations as live regressions.
+6. At `h = 0.125`, it invokes the deterministic-rescale implementation in the
+   same process and compares the unrounded rows observable by observable.
+7. A separate `dps = 40` raw recomputation checks stability of the primary
+   `dps = 30` row.
+8. The live assertions pass with maximum raw/rescaled discrepancy below the
+   `10^-12` protocol threshold; each Born residual also passes the `10^-10`
+   diagnostic threshold.
+9. Therefore the historical noncompletion gate is closed for this specified
+   finite numerical surface and recorded environment.
+
+The conclusion follows from an executed finite computation and its explicit
+assertions. It does not rely on the unestablished broader premise that every
+observable is a homogeneous same-depth amplitude ratio.
+
+## Exact scope boundaries
+
+The certificate does **not** establish:
+
+- a universal exact step-scale-invariance theorem
+- exact equality of raw and rescaled rows
+- an exact-real or all-mpmath evaluation of geometry and phases
+- an unavoidable float64-overflow theorem
+- a continuation at spacings finer than `h = 0.125`
+- convergence as `h -> 0`
+- a continuum field theory, renormalization law, or physical fixed point
+- a derivation of the supplied dynamics or observable definitions from
+  `A_min`
+
+The commonly quoted loose scale estimate should use the `320` transitions
+between `321` layers: `24^320`, of order `10^442`. It is only an upper-bound
+warning about potential dynamic range. An upper bound above float64 range is
+not a lower-bound proof that every implementation must overflow. The observed
+failure of the historical float64 run and the timeout of the original
+high-precision attempt are implementation outcomes, not physics no-go claims.
+
+## Comparator scope boundary
+
+A deterministic factor applied once per propagation layer gives a common
+factor at a fixed detector layer. Normalized detector probabilities and
+fixed-layer centroids therefore have an exact cancellation argument on that
+narrow surface.
+
+The implemented classical-purity overlay instead bins and sums amplitudes from
+a range of intermediate depths before constructing its decoherence factor.
+The existing fixed-layer common-scalar argument has not been shown to cover
+that functional. This note makes no negative theorem about whether some other
+exact identity exists; depth-resolved conjugacies and alternate exact
+identities remain open.
+
+The bounded statement supported here is only that, for the single supplied
+`h = 0.125` protocol and recorded environment, the two live implementations
+numerically agree within the declared acceptance threshold on every returned
+quantity.
+
+## Sibling-consumer sweep
+
+A 2026-07-28 source sweep found historical consumers that still describe a
+universal step-scale-invariance theorem: the rescaled continuum-identification,
+operator-Cauchy, RG-gravity, reconciliation, and fanout notes, plus their
+paired runners. Their current audit rows are all `unaudited`. This bounded note
+does not supply the universal premise used by those historical descriptions,
+and this repair does not ratify them. They require separate source-side review
+before that premise can be reused. The old high-precision closure runner is
+therefore not cited below as support for this certificate.
+
+## Historical audit trail
+
+- **2026-05-03:** the original timed-out attempt was correctly classified as
+  a clean `open_gate`; no positive extension was promoted.
+- **2026-05-07 to 2026-05-10:** an overflow estimate and a limited
+  fixed-layer cancellation check did not justify the broader canonical
+  equivalence claim.
+- **2026-05-16:** the mixed-precision runner completed the raw propagation and
+  supplied the positive numerical core, but its comparator assertions used
+  rounded hard-coded targets and its prose retained the overbroad exact
+  invariance claim.
+- **2026-07-25:** re-audit rejected that broader claim and requested a live
+  full-value comparator including `k = 0`, Born, and mixed-depth purity, or a
+  narrower claim.
+- **2026-07-28 repair:** the runner performs the requested live
+  all-observable comparison, pins the canonical raw source, records its
+  environment, and adds canonical-regression and precision-stability guards.
+  This note narrows the result to a protocol-specific bounded certificate.
+
+## Reproduction
+
+Run:
+
+```bash
+python3 scripts/lattice_nn_high_precision_raw_certificate.py
+```
+
+The checked cache is:
+
+- [`logs/runner-cache/lattice_nn_high_precision_raw_certificate.txt`](../logs/runner-cache/lattice_nn_high_precision_raw_certificate.txt)
+
+Supporting historical artifacts are:
 
 - [`scripts/lattice_nn_high_precision.py`](../scripts/lattice_nn_high_precision.py)
+  — the original noncompleted attempt
+- [`logs/runner-cache/lattice_nn_deterministic_rescale.txt`](../logs/runner-cache/lattice_nn_deterministic_rescale.txt)
+  — historical standalone comparator cache; the primary certificate no longer
+  reads values from it
 
-The run was executed with arbitrary-precision arithmetic in a temporary local
-virtual environment.
+## Re-audit target
 
-## Outcome (historical: 2026-04-03 attempt)
-
-The first `h = 0.125` continuation, using
-[`scripts/lattice_nn_high_precision.py`](../scripts/lattice_nn_high_precision.py)
-with `dps = 120` and the full per-edge `mp.atan2` / `mp.sqrt` /
-`mp.exp` calls, did **not** complete in a practical runtime window.
-
-This was the source of the original open status:
-
-- the raw high-precision kernel was computationally expensive at this
-  spacing
-- the run did not fail because of a known physics inconsistency in the
-  code path
-- but it also did **not** produce a completed numerical result for
-  `h = 0.125`
-
-So the evidence as of 2026-04-03 was:
-
-- `h = 0.25` was the last Born-clean raw refinement point
-- the `h = 0.125` high-precision continuation was open
-- the blocking issue was runtime cost, not a promoted physics conclusion
-
-## Resolution (2026-05-16 raw-kernel certificate)
-
-The auditor's repair target for the failed bounded read was "a faster
-exact-arithmetic implementation" or "a more selective observable check
-at `h = 0.125`". A faster mpmath implementation is now provided by
-[`scripts/lattice_nn_high_precision_raw_certificate.py`](../scripts/lattice_nn_high_precision_raw_certificate.py).
-It evaluates the full raw NN observable row at `h = 0.125` in about 28
-seconds (well inside the standard 120 s runner-cache budget).
-
-Two compounding speedups over the original 2026-04-03 attempt make this
-practical:
-
-1. `dps = 30` rather than `dps = 120`. The dynamic-range issue
-   (overflow ~ `10^443`) is an exponent-range problem, not a
-   significant-digit problem, so dropping mantissa precision by an order
-   of magnitude removes most per-operation cost while still pinning
-   observables to many more digits than the float64 deterministic-rescale
-   lane.
-2. Per-edge phase `act = dl - ret` is evaluated in float64 (it is a
-   smooth, O(1) quantity whose float64 value is correct to ~15 digits),
-   then promoted to mpmath only for the accumulator multiplication.
-   This keeps the bulk of per-edge cost in float64. It is mathematically
-   the raw kernel: there is no schedule, no observable inspection, no
-   data-dependent correction.
-
-What the runner now establishes (cached output:
-[`logs/runner-cache/lattice_nn_high_precision_raw_certificate.txt`](../logs/runner-cache/lattice_nn_high_precision_raw_certificate.txt)):
-
-- raw NN kernel at `h = 0.25` reproduces the float64 row from
-  `scripts/lattice_nn_continuum.py` to printed precision (sanity check)
-- raw NN kernel at `h = 0.125` evaluates successfully and produces the
-  Born-clean row `gravity = +0.034466, MI = 0.9972, 1 - pur = 0.5000,
-  d_TV = 0.9996, Born ~ 5.5e-31`
-- this raw row agrees with the deterministic-rescale row from
-  [`logs/runner-cache/lattice_nn_deterministic_rescale.txt`](../logs/runner-cache/lattice_nn_deterministic_rescale.txt)
-  on every framework observable to printed precision, which directly
-  verifies the step-scale invariance theorem (Section 1) at the gate
-  spacing where the float64 raw lane could not previously be evaluated
-
-## Safe conclusion (2026-05-16)
-
-The correct project-level wording is now:
-
-- the raw nearest-neighbor lattice shows a Born-clean refinement trend
-  through `h = 0.125` (one step beyond the previously closed `h = 0.25`)
-- this is established by a direct mpmath evaluation of the raw kernel at
-  `h = 0.125`, with no rescaling trick, returning the same observables
-  as the existing framework runners
-- the deterministic-rescale lane is now confirmed to be the
-  observable-equivalent float64-clean image of the raw kernel at
-  `h = 0.125`, not merely a separately-stable variant
-- the result is finite-window evidence for one more refinement step. It
-  is not a completed continuum theorem; that question (`h -> 0`) remains
-  open and is treated in the lattice-continuum and lattice-fanout notes
-
-## Next step
-
-The gate this note names is closed. Further refinement (`h = 0.0625` or
-finer) would require either a still faster raw implementation (the
-current one is `O(nl * npl)` and scales by 4x per halving of `h`) or
-the deterministic-rescale lane (which already supplies cached rows at
-`h = 0.0625`). Neither is required for this note's scoped claim.
-
-## Closure addendum (2026-05-07)
-
-The narrow gate is bounded by recognizing two structural facts.
-
-### 1. Step-scale invariance theorem
-
-Multiplying every per-edge accumulation in the raw NN propagation by a
-deterministic factor `step_scale` that depends only on geometry (spacing and
-fixed nearest-neighbor fan-out) leaves every framework observable exactly
-invariant. The reason is that every observable used in the NN runners is the
-ratio of two amplitude polynomials of the same total degree:
-
-- gravity centroid `(y_m - y_f)` — each `y` is normalized by its own
-  detector-row total probability
-- mutual information `MI` — built from probabilities normalized by the
-  total bin probability
-- classical purity `pur_cl` — built from the trace-normalized density
-  matrix
-- total-variation distance `d_TV` — built from probabilities normalized
-  by the per-arm detector totals
-- Born residual `|I3| / P` — explicit ratio of two same-degree
-  polynomials
-
-A scalar prefactor `step_scale^(2 * (nl - 1))` therefore cancels exactly in
-every observable. The closure runner verifies this on a small NN lattice:
-
-- normalized-probability max abs diff between raw kernel and a rescaled
-  propagation at `step_scale = 0.3`: `8.327e-17`
-- centroid max abs diff: `1.044e-16`
-- total-probability ratio matches `step_scale^(2*(nl-1))` exactly to
-  float64 precision
-
-### 2. Raw-kernel `h = 0.125` overflow bound
-
-For the raw NN kernel with no rescale at `h = 0.125`:
-
-- layers traversed `nl = floor(40 / 0.125) + 1 = 321`
-- per-edge amplitude factor bounded by `3 / h = 24`
-- cumulative amplitude scale upper bound: `24^321`
-- `log10(24^321) ~ 443`
-- `log10(float64 max) ~ 308`
-- overflow margin: ~`10^135`
-
-The overflow at `h = 0.125` reported by `lattice_nn_continuum.py` is therefore
-a numerical-format limit, not a physics gate.
-
-### 3. Closure artifacts (support core)
-
-- closure (support) runner:
-  [`scripts/lattice_nn_high_precision_closure.py`](../scripts/lattice_nn_high_precision_closure.py)
-- closure runner cache:
-  [`logs/runner-cache/lattice_nn_high_precision_closure.txt`](../logs/runner-cache/lattice_nn_high_precision_closure.txt)
-
-### 4. Raw-kernel `h = 0.125` certificate (positive source core; 2026-05-16)
-
-Section 1 establishes the step-scale invariance theorem on a small
-lattice and Section 2 establishes the float64 overflow bound. Together
-they bounded the gate, but the 2026-05-10 audit correctly noted that
-the float64 overflow conclusion is an upper-bound argument, not a
-completed raw-run certificate, and demoted the bounded-theorem framing
-to `audited_failed`. The honest follow-up demotion to `open_gate`
-removed the failed bounded read but did not replace it with a positive
-result.
-
-This section closes the gate positively by **executing the raw NN
-kernel directly at `h = 0.125`** in arbitrary precision.
-
-- primary runner:
-  [`scripts/lattice_nn_high_precision_raw_certificate.py`](../scripts/lattice_nn_high_precision_raw_certificate.py)
-- runner cache:
-  [`logs/runner-cache/lattice_nn_high_precision_raw_certificate.txt`](../logs/runner-cache/lattice_nn_high_precision_raw_certificate.txt)
-
-The runner uses the identical 3-edge NN geometry and identical per-edge
-kernel `ea = exp(1j * k * act) * w / L` as `lattice_nn_continuum.py`,
-but stores amplitudes in mpmath complex numbers (`dps = 30`) so the
-`10^443`-order amplitude scale at `h = 0.125` does not overflow. The
-per-edge phase `act = dl - ret` is evaluated in float64 (it is a smooth
-O(1) quantity whose float64 value is correct to ~15 digits) and then
-promoted to mpmath for the accumulator multiplication, keeping the run
-time inside the 120 s cache budget.
-
-Cached results:
-
-| h     | gravity   | k=0   | MI     | 1 - pur | d_TV   | Born      |
-|-------|-----------|-------|--------|---------|--------|-----------|
-| 0.25  | +0.077415 | 0.000 | 0.9470 | 0.4989  | 0.9878 | 4.8e-31   |
-| 0.125 | +0.034466 | 0.000 | 0.9972 | 0.5000  | 0.9996 | 5.5e-31   |
-
-The `h = 0.25` row reproduces the float64 raw row from
-`scripts/lattice_nn_continuum.py` to the displayed precision (sanity
-check). The `h = 0.125` row matches the deterministic-rescale row at
-the same spacing from
-`logs/runner-cache/lattice_nn_deterministic_rescale.txt` on every
-framework observable to the displayed precision (direct verification of
-the step-scale invariance theorem at the gate spacing). Born stays
-machine-clean (~`5.5e-31`) at `h = 0.125`, confirming the Born-clean
-refinement trend through one more step.
-
-### Positive source read (core)
-
-The positive source statement is now:
-
-- the raw NN kernel at `h = 0.125` is **numerically evaluable** in
-  arbitrary precision and produces the Born-clean observable row above
-  (Section 4); this is the row the float64 raw lane could not previously
-  produce
-- the raw `h = 0.125` row **matches** the deterministic-rescale
-  `h = 0.125` row on every framework observable to printed precision,
-  which directly verifies the step-scale invariance theorem (Section 1)
-  at the gate spacing
-- the float64 overflow at `h = 0.125` (Section 2) is therefore a
-  numerical-format limit only; the underlying raw kernel is finite and
-  well-defined and the observables agree with the deterministic-rescale
-  lane bit-equal to printed precision
-
-The narrow gate ("does the raw kernel without rescaling extend to
-`h = 0.125`") is now closed positively: yes, by direct mpmath
-evaluation. Do not overstate this as a finished continuum theory. The
-continuum question (`h -> 0`) itself remains open; this closure
-resolves only the narrow `h = 0.125` existence question that names
-this gate.
-
-## Previously-conditional extension (now directly checked by Section 4)
-
-The following statements were originally part of the 2026-05-07 closure
-addendum, flagged `scope_too_broad` by the 2026-05-08 audit, demoted to
-a conditional extension, and then their bounded-theorem framing was
-flagged `audited_failed` by the 2026-05-10 audit for being upper-bound
-arguments rather than completed raw-run certificates. Section 4's
-direct raw-kernel mpmath evaluation at `h = 0.125` now supplies the
-missing certificate, so these subsections are supported at the
-spacing `h = 0.125` (the gate target) by the bit-equal cross-check
-between the raw mpmath row and the deterministic-rescale row.
-
-They are kept in their original conditional wording below as
-historical record of the previously-weaker statement.
-
-### Deterministic-rescale lane fits float64 (previously conditional)
-
-The deterministic rescale `step_scale = h / sqrt(3)` cancels the per-edge
-`1 / h` factor:
-
-- per-edge upper bound: `(3 / h) * (h / sqrt(3)) = sqrt(3) ~ 1.732`
-- amplitude scale upper bound: `sqrt(3)^321 ~ 10^77`
-- well inside float64
-
-The deterministic-rescale runner
-[`scripts/lattice_nn_deterministic_rescale.py`](../scripts/lattice_nn_deterministic_rescale.py)
-already supplies a Born-clean row at `h = 0.125` (and `h = 0.0625`) on the
-same raw NN geometry. The cached output reproduces the canonical raw-kernel
-observable values bit-equal at `h = 1.0, 0.5, 0.25` (only Born residual
-differs in the last decimal due to float roundoff order). The bit-equal
-cross-check at `h = 0.125` is now also direct (Section 4).
-
-### Broader support statement (previously conditional, now directly checked at h = 0.125 by Section 4)
-
-By the step-scale invariance theorem (Section 1), the deterministic-rescale
-runner's `h = 0.125` row should be observable-equivalent to the
-raw-kernel-no-rescale row. By the overflow bound (Section 2), the
-raw-kernel-no-rescale row cannot be evaluated in float64 at `h = 0.125`
-because the amplitudes exceed the representable range by ~135 orders of
-magnitude. By the previous subsection, the deterministic-rescale lane
-evaluates the same observables inside float64.
-
-Section 4 now directly evaluates the raw kernel at `h = 0.125` in
-arbitrary precision and shows that:
-
-- canonical Born-clean `h = 0.125` observable values exist on the
-  deterministic-rescale lane (cached)
-- those values are observable-equivalent to the raw-kernel-no-rescale
-  values to printed precision on every framework observable (Section 4
-  certificate)
-- the raw-kernel-no-rescale path is unevaluable at `h = 0.125` in
-  float64 by structural overflow (Section 2), so the only role of a
-  float64 raw run was cosmetic numerical format; the raw kernel itself
-  is finite and well-defined and matches the deterministic-rescale lane
-
-The previous conditional caveat — that the closure runner verifies
-invariance only on normalized probabilities and centroid for a small
-NN lattice — is now supplemented by the Section 4 certificate, which
-verifies equality at `h = 0.125` on every framework observable directly,
-not by structural argument from the same-degree-ratio property alone.
-
-### Cache pointers
-
-- raw-kernel `h = 0.125` certificate cache (primary):
-  [`logs/runner-cache/lattice_nn_high_precision_raw_certificate.txt`](../logs/runner-cache/lattice_nn_high_precision_raw_certificate.txt)
-- deterministic-rescale cache used for the cross-check:
-  [`logs/runner-cache/lattice_nn_deterministic_rescale.txt`](../logs/runner-cache/lattice_nn_deterministic_rescale.txt)
-- closure runner cache (step-scale invariance theorem on a small
-  lattice, kept as support):
-  [`logs/runner-cache/lattice_nn_high_precision_closure.txt`](../logs/runner-cache/lattice_nn_high_precision_closure.txt)
+Audit only this bounded computational statement: in the cache-recorded
+environment, the supplied mixed-precision raw NN implementation completes at
+`h = 0.125`, returns the displayed row below the declared Born diagnostic
+threshold, passes the `dps = 30` versus `dps = 40` stability guard, and agrees
+pointwise with a live deterministic-rescale run on all six implemented
+quantities within the predeclared absolute protocol threshold `10^-12`. Do not
+audit or infer a universal exact rescale theorem, a cross-platform error bound,
+or an `h -> 0` continuum claim from this note.

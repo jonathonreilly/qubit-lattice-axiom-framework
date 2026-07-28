@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
 """
-On the 36-state NMAX=5 box, the plaquette stack does not force Perron/Jacobi data.
+On the 36-state NMAX=5 box, the supplied finite class does not determine
+Perron/Jacobi data.
 
-This is the sharpened obstruction theorem after mixed-kernel locality, stated on
-a finite truncation only: the normalized mixed-kernel local Wilson marked-link
-factor is explicit, but residual source-sector environment data are still not
-fixed, so the beta=6 Perron moments and Jacobi coefficients remain open on that
-box.
+This is a finite-box existence witness in the supplied-diagonal factorization
+class. A stipulated fourth-power diagonal packet and two supplied positive
+swap-symmetric residual packets give different Perron moments and Jacobi data
+for the same recurrence matrix. The fourth-power packet is not identified here
+as a physical local Wilson factor.
 
 The NMAX=5 box is NOT invariant under the character recurrence (Part 2), so the
 box statement does not by itself give the untruncated statement. Part 3 reports
-a cutoff-sensitivity diagnostic and Part 4 reduces the untruncated lift to a
-single analytic gate; neither establishes the untruncated result, which stays
-open together with the physical Wilson compression.
+a cutoff-sensitivity diagnostic and Part 4 evaluates a finite-box perturbative
+response while naming the two separate gates left untruncated. Neither
+establishes the untruncated result, which stays open together with the physical
+Wilson compression.
 """
 
 from __future__ import annotations
@@ -175,8 +177,8 @@ def build_box(nmax: int) -> dict[str, np.ndarray]:
         "jmat": jmat,
         "swap": conjugation_swap_matrix(weights, index),
         "multiplier": multiplier,
-        "d_local": np.diag(local**4),
-        "local": local,
+        "d_packet": np.diag(local**4),
+        "packet_coeffs": local,
         "r_a": np.diag([np.exp(-0.34 * (p + q) - 0.04 * ((p - q) ** 2)) for p, q in weights]),
         "r_b": np.diag([np.exp(-0.25 * (p + q) - 0.11 * ((p - q) ** 2)) for p, q in weights]),
         "size": len(weights),
@@ -185,9 +187,9 @@ def build_box(nmax: int) -> dict[str, np.ndarray]:
 
 def moment_gaps(box: dict[str, np.ndarray]) -> tuple[float, float]:
     """First two Perron-moment gaps between the R_A and R_B witnesses on one box."""
-    mult, d_local = box["multiplier"], box["d_local"]
-    _, psi_a = dominant_eigenpair(mult @ d_local @ box["r_a"] @ mult)
-    _, psi_b = dominant_eigenpair(mult @ d_local @ box["r_b"] @ mult)
+    mult, d_packet = box["multiplier"], box["d_packet"]
+    _, psi_a = dominant_eigenpair(mult @ d_packet @ box["r_a"] @ mult)
+    _, psi_b = dominant_eigenpair(mult @ d_packet @ box["r_b"] @ mult)
     m_a = moments(box["jmat"], psi_a, 2)
     m_b = moments(box["jmat"], psi_b, 2)
     return abs(m_a[1] - m_b[1]), abs(m_a[2] - m_b[2])
@@ -201,9 +203,9 @@ def perron_moment_derivative(box: dict[str, np.ndarray]) -> tuple[float, float, 
     psi'(0) = R_red V psi_0 with V = M D R_B M, hence m1'(0) = 2 <psi'(0), J psi_0>.
     Returns (lam0, absolute gap, relative gap, m1'(0)).
     """
-    mult, d_local, jmat = box["multiplier"], box["d_local"], box["jmat"]
-    t_0 = mult @ d_local @ box["r_a"] @ mult
-    v_dir = mult @ d_local @ box["r_b"] @ mult
+    mult, d_packet, jmat = box["multiplier"], box["d_packet"], box["jmat"]
+    t_0 = mult @ d_packet @ box["r_a"] @ mult
+    v_dir = mult @ d_packet @ box["r_b"] @ mult
     vals, vecs = np.linalg.eigh(t_0)
     i0 = int(np.argmax(vals))
     lam0 = float(vals[i0])
@@ -221,8 +223,8 @@ def perron_moment_derivative(box: dict[str, np.ndarray]) -> tuple[float, float, 
 
 def perron_moment_at(box: dict[str, np.ndarray], eps: float) -> float:
     """First Perron moment of the ray member R(eps) = R_A + eps R_B."""
-    mult, d_local = box["multiplier"], box["d_local"]
-    _, psi = dominant_eigenpair(mult @ d_local @ (box["r_a"] + eps * box["r_b"]) @ mult)
+    mult, d_packet = box["multiplier"], box["d_packet"]
+    _, psi = dominant_eigenpair(mult @ d_packet @ (box["r_a"] + eps * box["r_b"]) @ mult)
     return float(psi @ (box["jmat"] @ psi))
 
 
@@ -236,11 +238,11 @@ def main() -> int:
         [wilson_character_coefficient(p, q) / (dim_su3(p, q) * c00) for p, q in weights],
         dtype=float,
     )
-    d_local = np.diag(local**4)
+    d_packet = np.diag(local**4)
     r_a = np.diag([np.exp(-0.34 * (p + q) - 0.04 * ((p - q) ** 2)) for p, q in weights])
     r_b = np.diag([np.exp(-0.25 * (p + q) - 0.11 * ((p - q) ** 2)) for p, q in weights])
-    d_a = d_local @ r_a
-    d_b = d_local @ r_b
+    d_a = d_packet @ r_a
+    d_b = d_packet @ r_b
     t_a = multiplier @ d_a @ multiplier
     t_b = multiplier @ d_b @ multiplier
 
@@ -259,9 +261,11 @@ def main() -> int:
 
     sym_a = float(np.max(np.abs(swap @ r_a - r_a @ swap)))
     sym_b = float(np.max(np.abs(swap @ r_b - r_b @ swap)))
-    local_sym = float(np.max(np.abs(swap @ d_local - d_local @ swap)))
+    packet_sym = float(np.max(np.abs(swap @ d_packet - d_packet @ swap)))
     inv_a = float(np.linalg.norm(swap @ psi_a - psi_a))
     inv_b = float(np.linalg.norm(swap @ psi_b - psi_b))
+    inv_a_rendered = 0.0 if inv_a < 1.0e-12 else inv_a
+    inv_b_rendered = 0.0 if inv_b < 1.0e-12 else inv_b
     min_entry_a = float(np.min(t_a))
     min_entry_b = float(np.min(t_b))
     floor_a = float(np.min(psi_a))
@@ -272,10 +276,10 @@ def main() -> int:
     print("box only. The untruncated source sector and the physical Wilson compression")
     print("stay open; Parts 3 and 4 are diagnostics toward that lift, not the lift.")
     print()
-    print("Part 1: two admissible residual environment operators on the NMAX=5 box")
+    print("Part 1: two supplied residual packets on the NMAX=5 box")
     print(f"  box size            = {(NMAX + 1)} x {(NMAX + 1)} = {len(weights)} states")
     print(f"  tau                 = {TAU:.1f}")
-    print(f"  local-factor sym err= {local_sym:.3e}")
+    print(f"  packet symmetry err = {packet_sym:.3e}")
     print(f"  R_A / R_B sym err   = {sym_a:.3e} / {sym_b:.3e}")
     print(f"  T_A min / floor     = {min_entry_a:.6e} / {floor_a:.6e}")
     print(f"  T_B min / floor     = {min_entry_b:.6e} / {floor_b:.6e}")
@@ -289,27 +293,27 @@ def main() -> int:
     print(f"  |beta1^A-beta1^B|   = {diff_beta1:.6e}")
 
     check(
-        "the exact local Wilson marked-link factor is explicit and conjugation-symmetric",
-        local_sym < 1.0e-12 and float(np.min(local)) > 0.0,
-        detail=f"min local eigenvalue={float(np.min(local)):.3e}",
+        "the stipulated finite fourth-power packet is positive and conjugation-symmetric",
+        packet_sym < 1.0e-12 and float(np.min(local)) > 0.0,
+        detail=f"min packet coefficient={float(np.min(local)):.3e}",
     )
     check(
-        "the sharpened class still admits multiple positive conjugation-symmetric residual source-sector environment operators",
+        "the supplied class contains multiple positive conjugation-symmetric residual packets",
         sym_a < 1.0e-12 and sym_b < 1.0e-12 and min_entry_a > 0.0 and min_entry_b > 0.0,
         detail=f"min entries=({min_entry_a:.3e}, {min_entry_b:.3e})",
     )
     check(
-        "each admissible environment-dressed generator has its own unique strictly positive Perron state",
+        "each supplied-class generator has its own unique strictly positive Perron state",
         floor_a > 1.0e-8 and floor_b > 1.0e-8 and lam_a > 0.0 and lam_b > 0.0,
         detail=f"Perron floors=({floor_a:.3e}, {floor_b:.3e})",
     )
     check(
-        "distinct admissible residual source-sector environment operators can induce different Perron moments for the same explicit source operator",
+        "the two supplied residual packets induce different Perron moments for the same J_box",
         diff_m1 > 1.0e-4 and diff_m2 > 1.0e-4,
         detail=f"moment gaps=(m1:{diff_m1:.3e}, m2:{diff_m2:.3e})",
     )
     check(
-        "the symmetry-reduced Jacobi coefficients are therefore not yet forced even after the local factor is stripped off",
+        "the typed supplied-diagonal inputs therefore do not force unique Jacobi coefficients",
         diff_alpha0 > 1.0e-4 and diff_beta1 > 1.0e-4,
         detail=f"Jacobi gaps=(alpha0:{diff_alpha0:.3e}, beta1:{diff_beta1:.3e})",
     )
@@ -317,17 +321,17 @@ def main() -> int:
     check(
         "both Perron states remain fixed by the conjugation symmetry",
         inv_a < 1.0e-10 and inv_b < 1.0e-10,
-        detail=f"invariance errors=({inv_a:.3e}, {inv_b:.3e})",
+        detail=f"invariance errors=({inv_a_rendered:.3e}, {inv_b_rendered:.3e})",
         bucket="SUPPORT",
     )
     check(
-        "the same explicit plaquette-source operator J is used in both witnesses",
+        "the same explicit recurrence matrix J_box is used in both witnesses",
         float(np.max(np.abs(jmat - jmat.T))) < 1.0e-15 and float(np.max(np.abs(swap @ jmat - jmat @ swap))) < 1.0e-12,
-        detail="same self-adjoint conjugation-symmetric J in both cases",
+        detail="same self-adjoint conjugation-symmetric J_box in both cases",
         bucket="SUPPORT",
     )
     check(
-        "the obstruction is not infinitesimal on the sampled factorized source sector",
+        "the finite-box witness separation is not at floating-point noise scale",
         diff_m1 > 1.0e-4 and diff_alpha0 > 1.0e-4,
         detail=f"representative gaps=(m1:{diff_m1:.3e}, alpha0:{diff_alpha0:.3e})",
         bucket="SUPPORT",
@@ -349,7 +353,7 @@ def main() -> int:
     witness_box = {
         "jmat": jmat,
         "multiplier": multiplier,
-        "d_local": d_local,
+        "d_packet": d_packet,
         "r_a": r_a,
         "r_b": r_b,
         "size": len(weights),
@@ -371,7 +375,7 @@ def main() -> int:
     )
 
     print()
-    print("Part 4: the untruncated lift reduces to one named analytic gate")
+    print("Part 4: finite-box perturbative response; two gates remain untruncated")
     lam0, gap_abs, gap_rel, dm1 = perron_moment_derivative(witness_box)
     print(f"  lam0 / spectral gap = {lam0:.9e} / {gap_abs:.6e} (relative {gap_rel:.6e})")
     print(f"  closed-form dm1/deps at eps=0        = {dm1:.12f}")
@@ -395,10 +399,11 @@ def main() -> int:
         abs(dm1) > 1.0e-6 and all(3.6 < r < 4.4 for r in ratios),
         detail=f"dm1/deps={dm1:.9e}, convergence ratios={[round(r, 3) for r in ratios]} (a wrong derivative plateaus instead)",
     )
-    print("  => if the untruncated T_0 has a simple isolated top eigenvalue, the same")
-    print("     first-order argument gives untruncated non-uniqueness. That gate needs")
-    print("     essential-spectrum control on the character coefficients and is NOT")
-    print("     supplied here, so the untruncated statement remains open.")
+    print("  => the untruncated route still needs BOTH (1) bounded self-adjoint")
+    print("     operators with a simple isolated top eigenvalue and (2) a proof that")
+    print("     the full-sector moment response is nonzero. The finite-box derivative")
+    print("     proves neither gate after cutoff removal, so the untruncated statement")
+    print("     remains open.")
 
     print()
     print("Part 5: five-resolution decomposition of the A/B difference (NMAX=5)")
@@ -415,12 +420,14 @@ def main() -> int:
     print(f"  per_element  max|T_A-T_B|            = {res_per_element:.6e}")
     print(f"  per_site     weights with |dpsi|>1e-6= {res_per_site}/{len(weights)}")
     print(f"  per_mode     J-modes with |coef|>1e-6= {res_per_mode}/{len(weights)}")
-    print(f"  per_block    ||sym|| / ||antisym||   = {res_sym:.6e} / {res_asym:.3e}")
+    res_asym_rendered = 0.0 if res_asym < 1.0e-12 else res_asym
+    print(f"  per_block    ||sym|| / ||antisym||   = {res_sym:.6e} / {res_asym_rendered:.3e}")
     print(f"  lattice_wide |m1 gap| / |m2 gap|     = {diff_m1:.6e} / {diff_m2:.6e}")
     check(
-        "the difference is resolved at every resolution and lives entirely in the conjugation-symmetric block",
+        "the finite-box A/B difference is visible in every reported diagnostic and lies in the conjugation-symmetric block",
         res_per_element > 1.0e-6 and res_per_site > 1 and res_per_mode > 1 and res_asym < 1.0e-12 < res_sym,
-        detail=f"antisymmetric part {res_asym:.3e} is machine zero against symmetric part {res_sym:.6e}",
+        detail=f"antisymmetric part {res_asym_rendered:.3e} is machine zero against symmetric part {res_sym:.6e}",
+        bucket="SUPPORT",
     )
 
     print()

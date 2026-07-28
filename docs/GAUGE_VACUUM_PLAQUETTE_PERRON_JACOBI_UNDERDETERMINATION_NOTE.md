@@ -1,90 +1,97 @@
 # Gauge-Vacuum Plaquette Perron/Jacobi Underdetermination
 
 **Date:** 2026-04-17
-**Status:** support - exact obstruction theorem on the 36-state `NMAX = 5`
-dominant-weight box inside a supplied-diagonal factorized source-sector class;
-the untruncated source sector, the physical Wilson compression, and explicit
-`beta = 6` Perron / Jacobi data are still not forced
+**Type:** positive_theorem
+**Claim scope:** deterministic finite-box existence witness. On the 36-state
+`NMAX = 5` dominant-weight box, one explicitly computed positive diagonal
+packet and two explicitly supplied positive swap-symmetric residual packets
+give different Perron moments and Jacobi data for the same `J_box`.
+**Status authority:** independent audit lane only. This note does not set or
+predict an audit verdict or effective status.
+**Status:** support - finite-box witness inside the supplied-diagonal
+factorization class; the untruncated source sector, the physical Wilson
+compression, and explicit physical `beta = 6` Perron / Jacobi data remain open
 **Script:** `scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py`
 
 ## Question
 
-Do the exact plaquette theorems now on `main` already force the symmetry-reduced
-Jacobi coefficients, or equivalently the Perron moments of the explicit source
-operator `J`, at the framework point `beta = 6`?
+Within the finite
+[supplied-diagonal source-sector factorization theorem](GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md),
+do the typed inputs alone determine the symmetry-reduced Jacobi coefficients,
+or equivalently the Perron moments of `J_box`, at the supplied value
+`beta = 6`?
 
 ## Answer
 
-No.
+No, on the stated finite box.
 
-The live stack now closes:
+The linked retained theorem supplies the finite recurrence `J_box`, the
+multiplier `M = exp(3 J_box)`, and the algebraic class
+`T = M D M` for a separately supplied positive swap-symmetric diagonal `D`.
+It does not select that diagonal.
 
-- the explicit source operator `J`,
-- the exact transfer-operator / character-recurrence realization,
-- the exact Perron-state reduction,
-- the conjugation-symmetry reduction of the Perron state,
-- and the conditional source-sector matrix-element law
-  `T_src(6) = exp(3 J) D_6 exp(3 J)` after a positive
-  character-diagonal `D_6` is supplied.
-
-On the 36-state `NMAX = 5` dominant-weight box, those facts do **not** yet
-determine the explicit `beta = 6` Perron moments or Jacobi coefficients there.
-
-The obstruction can be sharpened inside a smaller supplied model class. Supply
-both a strictly positive diagonal local packet `D_6^loc` and a strictly
-positive diagonal swap-symmetric packet `R`, and set `D_6=D_6^loc R`. Even
-inside this restricted class, distinct supplied `R` packets can induce
-different Perron moments and therefore different Jacobi data for the same
-explicit source operator `J`.
+This note fixes one explicit finite fourth-power packet `D_6^packet`, supplies
+two positive swap-symmetric packets `R_A` and `R_B`, and sets
+`D = D_6^packet R`. The two resulting matrices have different Perron moments
+and Jacobi data. Thus those typed finite inputs do not select a unique Perron
+moment sequence at `beta = 6`.
 
 **Scope.** Every theorem below is proved on the finite `NMAX = 5` box the runner
-constructs - the 36 dominant weights with `p, q <= 5`. That box is not invariant
-under the character recurrence, so the box statement does not by itself give the
-untruncated statement; see the boundary and gate sections below.
+constructs—the 36 dominant weights with `p, q <= 5`. The result is the
+positive existence witness just stated, together with its negative consequence
+for the typed finite inputs. That box is not invariant under the character
+recurrence, so the witness does not by itself give the untruncated statement;
+see the boundary and gate sections below.
 
-This sharpening is not a physical mixed-kernel theorem. For the Wilson problem,
-the marked/non-marked compression and the character diagonality of the stripped
-two-slice residual are prior independent open walls.
+The fourth-power packet is a stipulated/computed finite matrix. It is not
+identified here as a physical local Wilson factor. The marked/non-marked
+compression, residual diagonality, and physical realizability of the supplied
+packets are outside this claim.
 
-So on that box the current exact stack still does **not** force the explicit
-framework-point Jacobi coefficients.
+So on that box the supplied-diagonal inputs do **not** force the explicit
+symmetry-reduced Jacobi coefficients at `beta = 6`.
 
 ## Setup
 
-Let `J` be the explicit self-adjoint plaquette source operator on the
-source-cyclic class-function sector already closed in the transfer-operator /
-character-recurrence theorem, and let `J_box` be its compression to the 36
-dominant weights with `p, q <= 5`. Every statement below is about `J_box`; that
-is exactly the matrix the runner builds.
+Let `J_box := J_5` be the explicit real six-neighbor recurrence from the linked
+finite factorization theorem, on the 36 dominant weights with `p, q <= 5`.
+Every theorem below is about this finite matrix.
 
 Let `S` be the exact conjugation-symmetry involution `(p,q) <-> (q,p)` on the
 dominant-weight basis.
 
-From the conditional source-sector matrix-element factorization theorem,
-every member of the supplied-diagonal `beta = 6` model class has the form
+The linked finite factorization theorem gives the supplied-diagonal
+`beta = 6` class
 
-`T_src(6) = M D_6 M`,
+`T = M D M`,
 
 with
 
-`M = exp(3 J)`,
+`M = exp(3 J_box)`,
 
 with:
 
 - `M = M^* > 0`,
-- `D_6` diagonal in the character basis,
-- `D_6 > 0`,
-- `S D_6 = D_6 S`.
+- `D` diagonal in the character basis,
+- `D > 0`,
+- `S D = D S`.
 
-For the supplied subclass used by this obstruction, choose an explicit
-strictly positive diagonal packet
+For this witness, the runner evaluates the stipulated finite coefficient
+formula
 
-`D_6^loc chi_(p,q) = a_(p,q)(6)^4 chi_(p,q)`.
+`a_(p,q)(6) = c_(p,q)(6) / (d_(p,q) c_(0,0)(6))`
 
-Then separately supply a strictly positive diagonal swap-symmetric `R` and
-study
+by the Bessel-determinant mode sum with `MODE_MAX = 80`, and constructs the
+strictly positive diagonal finite packet
 
-`T = M D_6^loc R M`,
+`D_6^packet chi_(p,q) = a_(p,q)(6)^4 chi_(p,q)`.
+
+The fourth power is part of this explicit finite witness. It is not a theorem
+identifying the matrix with a physical local factor.
+
+Separately supply a strictly positive diagonal swap-symmetric `R` and study
+
+`T = M D_6^packet R M`,
 
 with:
 
@@ -92,68 +99,75 @@ with:
 - `R > 0`,
 - `S R = R S`.
 
-This factorization is a definition of the obstruction class. It does not assert
-that the physical Wilson mixed kernel compresses to `D_6^loc`, or that its
-stripped residual is diagonal.
+The runner uses the two explicit packets
 
-Every such supplied-class `T`, compressed to the `NMAX = 5` box, satisfies the
-same structural boundary:
+`(R_A)_(p,q) = exp[-0.34(p+q) - 0.04(p-q)^2]`,
 
-- positivity-improving,
-- one simple strictly positive Perron state,
-- Perron-state symmetry reduction under `S`.
+`(R_B)_(p,q) = exp[-0.25(p+q) - 0.11(p-q)^2]`.
 
-## Theorem 1 (36-state `NMAX = 5` box): the current exact factorized class does not determine a unique residual source-sector environment operator
+This is a definition of the finite witness class. It does not assert that the
+physical Wilson mixed kernel compresses to `D_6^packet`, that its stripped
+residual is diagonal, or that either residual packet is physically realized.
 
-Choose two distinct positive conjugation-symmetric residual source-sector
-environment operators
+The finite recurrence graph is connected, so `M` has strictly positive matrix
+entries. Every such supplied-class `T` therefore has the following properties:
+
+- it is positivity-improving;
+- it has one simple strictly positive Perron state;
+- its Perron state lies in the symmetric sector of `S`.
+
+## Theorem 1 (36-state `NMAX = 5` box): the supplied class contains distinct positive swap-symmetric residual packets
+
+The packets
 
 `R_A != R_B`
 
-on the same explicit source sector, both restricted to the `NMAX = 5` box.
+are distinct, strictly positive, diagonal, and swap-symmetric on the same
+finite source sector.
 
 Then
 
-`T_A = M D_6^loc R_A M`,
-`T_B = M D_6^loc R_B M`
+`T_A = M D_6^packet R_A M`,
+`T_B = M D_6^packet R_B M`
 
 are both positivity-improving self-adjoint transfer operators with unique
 strictly positive Perron states `psi_A`, `psi_B`.
 
 Both lie inside the supplied factorized model class defined above.
 
-## Theorem 2 (36-state `NMAX = 5` box): distinct admissible residual source-sector environment operators can induce distinct Perron moments for the same source operator
+## Theorem 2 (36-state `NMAX = 5` box): the two explicit residual packets induce distinct Perron moments for the same recurrence matrix
 
-For the same explicit plaquette source operator `J`, define the Perron moments
+For the same `J_box`, define the Perron moments
 
-`m_n^(A) = <psi_A, J^n psi_A>`,
-`m_n^(B) = <psi_B, J^n psi_B>`.
+`m_n^(A) = <psi_A, J_box^n psi_A>`,
+`m_n^(B) = <psi_B, J_box^n psi_B>`.
 
 Because `psi_A` and `psi_B` need not coincide, these moment sequences need not
 coincide either.
 
-The runner exhibits, on the `NMAX = 5` box, two explicit admissible positive
-residual source-sector environment operators with
+The runner exhibits two distinct admissible inputs within the supplied finite
+class and distinct Perron moments, including
 
 `m_1^(A) != m_1^(B)`
 
 and higher moments differing as well.
 
-Therefore, on the 36-state `NMAX = 5` box, the current exact plaquette operator
-stack does **not** determine a unique Perron moment sequence at `beta = 6`.
+Therefore, on the 36-state `NMAX = 5` box, the typed supplied-diagonal inputs
+do **not** determine a unique Perron moment sequence at `beta = 6`.
 
 ## Corollary 1 (36-state `NMAX = 5` box): the symmetry-reduced Jacobi coefficients are not yet forced
 
 By the spectral theorem and orthogonal-polynomial construction, the Jacobi
 coefficients are uniquely determined by the Perron moments of `J_box`.
 
-So if two admissible transfer generators on the current structural boundary
-produce different Perron moments, they also produce different Jacobi data.
+The runner directly finds different `alpha_0` and `beta_1`; in particular,
+`alpha_0 = m_1`, so the first moment difference already separates the two
+Jacobi packets.
 
 Therefore:
 
-> on the 36-state `NMAX = 5` box, the current exact plaquette operator stack
-> does not yet force the explicit
+> on the 36-state `NMAX = 5` box, the typed supplied-diagonal inputs do not
+> force the explicit
 > symmetry-reduced Jacobi coefficients at `beta = 6`.
 
 ## Boundary: the box statement does not lift by restriction
@@ -171,12 +185,14 @@ a cutoff-sensitivity diagnostic on the sampled boxes only: it shows the two
 witnesses are not an artifact of one particular truncation, and it bounds
 nothing about the untruncated sector.
 
-## The untruncated lift reduces to one named analytic gate
+## A perturbative untruncated route leaves two analytic gates
 
-Write `R(eps) = R_A + eps R_B`. Each ray member is diagonal, swap-symmetric and
-strictly positive, hence admissible in the supplied class. Then
+Write `R(eps) = R_A + eps R_B`. In a neighborhood of `eps = 0` (in
+particular, for the runner's sampled window `|eps| <= 0.01`), each finite-box
+ray member is diagonal, swap-symmetric, and strictly positive. Then
 
-`T(eps) = T_0 + eps V`, with `T_0 = M D_6^loc R_A M` and `V = M D_6^loc R_B M`,
+`T(eps) = T_0 + eps V`, with
+`T_0 = M D_6^packet R_A M` and `V = M D_6^packet R_B M`,
 
 and `V = V^* >= 0`. Suppose the top eigenvalue `lam_0` of `T_0` is **simple and
 isolated**. Then the Perron state is differentiable at `eps = 0` with
@@ -186,59 +202,62 @@ isolated**. Then the Perron state is differentiable at `eps = 0` with
 where `R_red` is the reduced resolvent of `T_0` on `psi_0^perp`, and the first
 Perron moment obeys
 
-`m_1'(0) = 2 <R_red V psi_0, J psi_0>`.
+`m_1'(0) = 2 <R_red V psi_0, J_box psi_0>`.
 
 On the `NMAX = 5` box the runner evaluates this closed form as
 `m_1'(0) = 4.424199803e-04`, nonzero, and confirms it against a central-
-difference derivative whose error falls by `4.000x` per halving of `eps` - the
+difference derivative whose error falls by `4.000x` per halving of `eps`—the
 second-order rate a wrong derivative would not reproduce. The box `T_0` has a
-simple top eigenvalue with relative spectral gap `9.768599e-01`, and the ray
-stays strictly positive over the sampled window.
+simple top eigenvalue with relative spectral gap `9.768599e-01`, and the finite
+ray stays strictly positive over the sampled window.
 
-The whole untruncated statement therefore reduces to a single named gate:
+The same formula is available on the untruncated sector only after two
+separate obligations close:
 
-> **Gate (not supplied here).** On the full untruncated character sector, `T_0`
-> and `V` are bounded self-adjoint operators and the top eigenvalue of `T_0` is
-> simple and isolated from the rest of the spectrum.
+1. **Operator/spectral gate (not supplied here).** On the full untruncated
+   character sector, `T_0` and `V` are bounded self-adjoint operators and the
+   top eigenvalue of `T_0` is simple and isolated from the rest of the
+   spectrum.
+2. **Response gate (not supplied here).** The resulting full-sector response
+   is nonconstant; for the displayed first-order route it is enough to prove
+   `2 <R_red V psi_0, J psi_0> != 0`.
 
-Granting that gate, the identical first-order argument gives untruncated
-non-uniqueness. The gate needs essential-spectrum control on the large-`(p,q)`
-character coefficients, which the current stack does not supply. Until it is
-proved, the untruncated conclusion stands open.
+The finite-box value does not prove the response gate after removing the
+cutoff. Essential-spectrum control addresses the first gate but does not by
+itself imply the second. Granting both gates would give untruncated
+non-uniqueness along this ray; until then, that conclusion remains open.
 
 ## What this closes
 
-- exact proof, on the 36-state `NMAX = 5` box, that explicit source-operator
-  realization plus Perron reduction still do **not** force a unique
-  framework-point Perron measure on that box, even inside a supplied strictly
-  positive diagonal `D_6^loc R` subclass
-- exact proof, on the same box, that the symmetry-reduced Jacobi coefficients
-  are still open on the current stack
-- exact reduction of the untruncated lift to the single named simple-isolated
-  top-eigenvalue gate above, with the first-order derivative that gate would
-  activate computed in closed form and verified to second order
-- exact clarification of what new theorem object is actually needed next:
-  first the untruncated spectral gate, then the physical mixed-kernel
-  compression/diagonality identification, then the explicit resulting
-  source-sector operator or an equivalent exact Perron eigenvector construction
+- a deterministic witness, on the 36-state `NMAX = 5` box, that one explicit
+  positive `D_6^packet` and two supplied positive swap-symmetric residual
+  packets produce different Perron moments and Jacobi data for the same
+  `J_box`
+- the exact finite-matrix identities that make both transfer matrices
+  self-adjoint, positive definite, swap-commuting, and positivity-improving
+- a finite-box perturbative response formula whose independently reproduced
+  value is nonzero and whose central-difference error converges at second order
+- an honest reduction of this particular untruncated perturbative route to
+  the separate operator/spectral and nonconstant-response gates above
 
 ## What this does not close
 
 - the untruncated source-sector statement: non-uniqueness off the `NMAX = 5` box
   is not proved here
-- the simple-isolated top-eigenvalue gate for the untruncated `T_0`
-- explicit Jacobi coefficients at `beta = 6`
-- explicit Perron moments at `beta = 6`
-- physical Wilson mixed-kernel compression or residual diagonality
+- the operator/spectral or response gate for the untruncated `T_0`
+- explicit physical or untruncated Jacobi coefficients at `beta = 6`
+- explicit physical or untruncated Perron moments at `beta = 6`
+- physical Wilson mixed-kernel compression, residual diagonality, or physical
+  realizability of either residual packet
 - analytic closure of canonical `P(6)`
 - repo-wide repinning of the canonical plaquette
 
 **Downstream hygiene (2026-07-25).** Every theorem in this note is stated on the
 36-state `NMAX = 5` dominant-weight box. Full-sector non-uniqueness and physical
-Wilson non-uniqueness remain **open** until the untruncated simple-isolated
-top-eigenvalue gate above is proved. Downstream work must cite this note for the
-box statement only, and must not read it as an untruncated or physical-Wilson
-result.
+Wilson non-uniqueness remain **open** until both untruncated gates and the
+separate physical-class identification are proved. Downstream work must cite
+this note for the supplied-class finite-box witness only, and must not read it
+as an untruncated or physical-Wilson result.
 
 ## Commands run
 
@@ -248,4 +267,4 @@ python3 scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination
 
 Expected summary:
 
-- `THEOREM PASS=8 SUPPORT=5 FAIL=0`
+- `THEOREM PASS=7 SUPPORT=6 FAIL=0`

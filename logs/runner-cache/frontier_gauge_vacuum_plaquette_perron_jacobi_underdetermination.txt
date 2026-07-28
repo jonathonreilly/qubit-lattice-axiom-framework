@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py
-runner_sha256: 4aa253eb118c002e80786138549b772bb46f78d5572c94c7a45d5b18e0228aba
+runner_sha256: a94dd7345a7a0e36034acaa89bcf13d3a4db16b588f6db145fa84abda65066e3
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 0.44
 status: ok
 ----- stdout -----
 GAUGE-VACUUM PLAQUETTE PERRON/JACOBI UNDERDETERMINATION
@@ -11,10 +11,10 @@ SCOPE: every theorem below is stated on the 36-state NMAX=5 dominant-weight
 box only. The untruncated source sector and the physical Wilson compression
 stay open; Parts 3 and 4 are diagnostics toward that lift, not the lift.
 
-Part 1: two admissible residual environment operators on the NMAX=5 box
+Part 1: two supplied residual packets on the NMAX=5 box
   box size            = 6 x 6 = 36 states
   tau                 = 6.0
-  local-factor sym err= 2.711e-19
+  packet symmetry err = 2.711e-19
   R_A / R_B sym err   = 0.000e+00 / 0.000e+00
   T_A min / floor     = 2.841569e-13 / 1.112664e-07
   T_B min / floor     = 3.102387e-13 / 1.125147e-07
@@ -26,21 +26,21 @@ Part 1: two admissible residual environment operators on the NMAX=5 box
   beta1^A,  beta1^B   = 0.249293822375, 0.249179602536
   |alpha0^A-alpha0^B| = 4.418915e-04
   |beta1^A-beta1^B|   = 1.142198e-04
-  [PASS] [THEOREM] the exact local Wilson marked-link factor is explicit and conjugation-symmetric
-         min local eigenvalue=5.450e-07
-  [PASS] [THEOREM] the sharpened class still admits multiple positive conjugation-symmetric residual source-sector environment operators
+  [PASS] [THEOREM] the stipulated finite fourth-power packet is positive and conjugation-symmetric
+         min packet coefficient=5.450e-07
+  [PASS] [THEOREM] the supplied class contains multiple positive conjugation-symmetric residual packets
          min entries=(2.842e-13, 3.102e-13)
-  [PASS] [THEOREM] each admissible environment-dressed generator has its own unique strictly positive Perron state
+  [PASS] [THEOREM] each supplied-class generator has its own unique strictly positive Perron state
          Perron floors=(1.113e-07, 1.125e-07)
-  [PASS] [THEOREM] distinct admissible residual source-sector environment operators can induce different Perron moments for the same explicit source operator
+  [PASS] [THEOREM] the two supplied residual packets induce different Perron moments for the same J_box
          moment gaps=(m1:4.419e-04, m2:3.351e-04)
-  [PASS] [THEOREM] the symmetry-reduced Jacobi coefficients are therefore not yet forced even after the local factor is stripped off
+  [PASS] [THEOREM] the typed supplied-diagonal inputs therefore do not force unique Jacobi coefficients
          Jacobi gaps=(alpha0:4.419e-04, beta1:1.142e-04)
   [PASS] [SUPPORT] both Perron states remain fixed by the conjugation symmetry
-         invariance errors=(2.265e-16, 2.251e-16)
-  [PASS] [SUPPORT] the same explicit plaquette-source operator J is used in both witnesses
-         same self-adjoint conjugation-symmetric J in both cases
-  [PASS] [SUPPORT] the obstruction is not infinitesimal on the sampled factorized source sector
+         invariance errors=(0.000e+00, 0.000e+00)
+  [PASS] [SUPPORT] the same explicit recurrence matrix J_box is used in both witnesses
+         same self-adjoint conjugation-symmetric J_box in both cases
+  [PASS] [SUPPORT] the finite-box witness separation is not at floating-point noise scale
          representative gaps=(m1:4.419e-04, alpha0:4.419e-04)
 
 Part 2: the NMAX=5 box is NOT recurrence-invariant (why no automatic lift)
@@ -58,7 +58,7 @@ Part 3: cutoff-sensitivity DIAGNOSTIC (bounds nothing untruncated)
   [PASS] [SUPPORT] the moment gap stays bounded away from zero across every sampled cutoff (the witnesses are not a single-box artifact)
          min sampled gap=4.394768e-04; this bounds only the sampled boxes, never the untruncated sector
 
-Part 4: the untruncated lift reduces to one named analytic gate
+Part 4: finite-box perturbative response; two gates remain untruncated
   lam0 / spectral gap = 3.691358903e+00 / 3.605940e+00 (relative 9.768599e-01)
   closed-form dm1/deps at eps=0        = 0.000442419980
   [PASS] [SUPPORT] on the NMAX=5 box the top eigenvalue is simple and isolated and the ray R(eps)=R_A+eps R_B stays strictly positive over the sampled window
@@ -69,21 +69,22 @@ Part 4: the untruncated lift reduces to one named analytic gate
     eps=0.00250 fd=0.000442422752 err=2.772e-09 ratio=4.000
   [PASS] [THEOREM] the first Perron moment varies at first order along the admissible ray, with the closed-form derivative confirmed to second order
          dm1/deps=4.424199803e-04, convergence ratios=[4.0, 4.0] (a wrong derivative plateaus instead)
-  => if the untruncated T_0 has a simple isolated top eigenvalue, the same
-     first-order argument gives untruncated non-uniqueness. That gate needs
-     essential-spectrum control on the character coefficients and is NOT
-     supplied here, so the untruncated statement remains open.
+  => the untruncated route still needs BOTH (1) bounded self-adjoint
+     operators with a simple isolated top eigenvalue and (2) a proof that
+     the full-sector moment response is nonzero. The finite-box derivative
+     proves neither gate after cutoff removal, so the untruncated statement
+     remains open.
 
 Part 5: five-resolution decomposition of the A/B difference (NMAX=5)
   per_element  max|T_A-T_B|            = 1.942257e-03
   per_site     weights with |dpsi|>1e-6= 26/36
   per_mode     J-modes with |coef|>1e-6= 21/36
-  per_block    ||sym|| / ||antisym||   = 8.868008e-04 / 4.100e-17
+  per_block    ||sym|| / ||antisym||   = 8.868008e-04 / 0.000e+00
   lattice_wide |m1 gap| / |m2 gap|     = 4.418915e-04 / 3.350642e-04
-  [PASS] [THEOREM] the difference is resolved at every resolution and lives entirely in the conjugation-symmetric block
-         antisymmetric part 4.100e-17 is machine zero against symmetric part 8.868008e-04
+  [PASS] [SUPPORT] the finite-box A/B difference is visible in every reported diagnostic and lies in the conjugation-symmetric block
+         antisymmetric part 0.000e+00 is machine zero against symmetric part 8.868008e-04
 
-SUMMARY: THEOREM PASS=8 SUPPORT=5 FAIL=0
+SUMMARY: THEOREM PASS=7 SUPPORT=6 FAIL=0
 
 ----- stderr -----
 

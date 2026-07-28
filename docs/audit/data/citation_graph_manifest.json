@@ -1,5 +1,5 @@
 {
- "edge_count": 15200,
+ "edge_count": 15201,
  "node_count": 4567,
  "nodes": {
   "3d_correction_master_note": {
@@ -5655,8 +5655,8 @@
    "out_degree": 0
   },
   "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "d111576172f6",
+   "out_degree": 1
   },
   "gauge_vacuum_plaquette_perron_reduction_theorem_note": {
    "deps_hash": "df043884ff9b",

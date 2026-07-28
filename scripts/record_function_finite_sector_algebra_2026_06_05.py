@@ -27,13 +27,21 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 NOTE_REL = "docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md"
 
-# Direct retained authorities for the generation specialization: the
-# C3-equivariant spectrum (A) and the Fourier-coordinate / Koide identity (B).
 AUTHORITY_A = "KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md"
 AUTHORITY_B = "CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md"
 AUTHORITIES = (AUTHORITY_A, AUTHORITY_B)
 
-RETAINED_GRADE = {"retained", "retained_bounded", "retained_no_go"}
+# The runner reads these mutable repository inputs. The cache fingerprint must
+# move whenever the note, an authority, or its pipeline-derived status moves.
+AUDIT_INPUT_PATHS = (
+    "docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md",
+    "docs/KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md",
+    "docs/CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md",
+    "docs/audit/data/ledger/ko/koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19.json",
+    "docs/audit/data/ledger/ch/charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11.json",
+)
+
+DEPENDENCY_ELIGIBLE_STATUSES = {"retained", "retained_bounded", "retained_no_go"}
 
 
 def ledger_shard(note_basename: str) -> Path:
@@ -158,19 +166,19 @@ def main() -> int:
           "for any supplied p in (0,1), choose d=p*u/(1-p)")
 
     # -------------------------------------------------------------------------
-    # 4. Generation dial coordinates from a two-sector record function.
+    # 4. Conditional abstract C3 coordinates from a two-sector record function.
     # -------------------------------------------------------------------------
     singlet_readout = a2
     doublet_readout = 2 * b2
-    generation_ratio = sp.simplify(b2 / a2)
+    c3_ratio = sp.simplify(b2 / a2)
     sector_ratio = sp.simplify(doublet_readout / singlet_readout)
     s_from_sector_ratio = sp.log(sector_ratio) / ln2
 
-    check("R4.1 generation sector ratio is doublet/singlet = 2r",
-          sp.simplify(sector_ratio - 2 * generation_ratio) == 0,
+    check("R4.1 conditional two-block ratio is doublet/singlet = 2r",
+          sp.simplify(sector_ratio - 2 * c3_ratio) == 0,
           f"sector_ratio={sector_ratio}")
     check("R4.2 dial coordinate is log2(doublet/singlet)",
-          sp.simplify(s_from_sector_ratio - sp.log(2 * generation_ratio) / ln2) == 0)
+          sp.simplify(s_from_sector_ratio - sp.log(2 * c3_ratio) / ln2) == 0)
 
     lambdas = [
         alpha + 2 * beta * sp.cos(theta + 2 * sp.pi * j / 3)
@@ -182,29 +190,36 @@ def main() -> int:
     q_from_r = sp.Rational(1, 3) + sp.Rational(2, 3) * r
     q_from_blocks = sp.simplify((singlet_readout + doublet_readout) / (3 * singlet_readout))
 
-    check("R4.3 C3/KCPT square-root readout power sums define Q",
+    check("R4.3 real C3 coordinate power sums define Q",
           sp.simplify(sum_lambda - 3 * alpha) == 0
           and sp.simplify(sum_lambda_sq - (3 * alpha ** 2 + 6 * beta ** 2)) == 0,
           f"S1={sum_lambda}; S2={sum_lambda_sq}")
     check("R4.4 Q = S2/S1^2 derives Q(r)=1/3+2r/3 before endpoint substitution",
           sp.simplify(q_power_sum.subs(beta, sp.sqrt(r) * alpha) - q_from_r) == 0,
           f"Q={q_power_sum}")
-    check("R4.5 two-block powers give the same generation Q coordinate",
-          sp.simplify(q_from_blocks - (sp.Rational(1, 3) + sp.Rational(2, 3) * generation_ratio)) == 0,
+    check("R4.5 two-block powers give the same abstract C3 Q coordinate",
+          sp.simplify(q_from_blocks - (sp.Rational(1, 3) + sp.Rational(2, 3) * c3_ratio)) == 0,
           f"Q_blocks={q_from_blocks}")
 
     rho_sector = rho
     r_from_rho = rho_sector / 2
     q_from_rho = sp.simplify(q_from_r.subs(r, r_from_rho))
     s_from_rho = sp.log(rho_sector) / ln2
-    check("R4.6 sector balance rho=1 gives s=0, r=1/2, Q=2/3",
+    check("R4.6 two-block balance rho=1 gives s=0, r=1/2, Q=2/3",
           sp.simplify(s_from_rho.subs(rho, 1)) == 0
           and sp.simplify(r_from_rho.subs(rho, 1) - sp.Rational(1, 2)) == 0
           and sp.simplify(q_from_rho.subs(rho, 1) - sp.Rational(2, 3)) == 0)
-    check("R4.7 real-mode balance rho=2 gives s=1, r=1, Q=1",
+    z0, z1, z2 = sp.symbols("z0 z1 z2", positive=True)
+    positive_triple_gap = sp.expand((z0 + z1 + z2) ** 2 - (z0 ** 2 + z1 ** 2 + z2 ** 2))
+    closure_q = sp.simplify(((3 * alpha) ** 2 + 0 + 0) / (3 * alpha) ** 2)
+    check("R4.7 rho=2 gives formal Q=1, only a nonnegative-closure endpoint",
           sp.simplify(s_from_rho.subs(rho, 2) - 1) == 0
           and sp.simplify(r_from_rho.subs(rho, 2) - 1) == 0
-          and sp.simplify(q_from_rho.subs(rho, 2) - 1) == 0)
+          and sp.simplify(q_from_rho.subs(rho, 2) - 1) == 0
+          and sp.simplify(closure_q - 1) == 0
+          and positive_triple_gap == 2 * (z0 * z1 + z0 * z2 + z1 * z2)
+          and positive_triple_gap.is_positive,
+          "strictly positive triples have S1^2-S2>0 and therefore Q<1")
 
     arbitrary_two = sp.Matrix([u, rho * u])
     arbitrary_total = (sp.Matrix([[1, 1]]) * arbitrary_two)[0]
@@ -222,16 +237,28 @@ def main() -> int:
           sp.simplify(born_claim.lhs - born_claim.rhs) != 0,
           "normalization is an extra coordinate choice, not a new Record axiom")
 
-    dynamic_update = sp.Matrix([u, d])
-    check("R5.2 finite additivity imposes no autonomous update law on the readout vector",
-          dynamic_update.free_symbols == {u, d},
-          "the vector is unchanged until an external dynamics map is supplied")
+    supplied_state = sp.Matrix([1, 2])
+    identity_update = sp.eye(2) * supplied_state
+    swap_update = sp.Matrix([[0, 1], [1, 0]]) * supplied_state
+    update_additivity = all(
+        readout(indicator(mask_a | mask_b, 2), updated)
+        == readout(indicator(mask_a, 2), updated)
+        + readout(indicator(mask_b, 2), updated)
+        for updated in (identity_update, swap_update)
+        for mask_a in range(4)
+        for mask_b in range(4)
+        if not mask_a & mask_b
+    )
+    check("R5.2 finite additivity does not select an autonomous update law",
+          identity_update != swap_update and update_additivity,
+          "distinct identity and swap updates preserve the same additive readout rule")
 
     # -------------------------------------------------------------------------
-    # 6. The generation two-block power assignment and the C3/K-real readout
-    # form are not supplied here: they are the isotypic split and the Fourier
-    # coordinate identity carried by two directly cited retained authorities.
-    # This section re-derives both exactly and rejects the wrong split.
+    # 6. Two authority notes establish the abstract Fourier algebra used by the
+    # conditional specialization. They do not supply its physical carrier,
+    # generation interpretation, Record-to-power identification, K/CPT
+    # context, or registered-mass readout. R6.3 is only a live
+    # pipeline-compatibility guard; it is not evidence for semantic scope.
     # -------------------------------------------------------------------------
     a_s = sp.Symbol("a_s", real=True, nonzero=True)
     xs, ys = sp.symbols("x_s y_s", real=True)
@@ -255,9 +282,9 @@ def main() -> int:
         shard = ledger_shard(name)
         grades[name] = (json.loads(shard.read_text(encoding="utf-8")).get("effective_status")
                         if shard.is_file() else None)
-    check("R6.3 each authority's sharded ledger row is retained-grade",
-          all(g in RETAINED_GRADE for g in grades.values()),
-          f"read from shards: {sorted(grades.values(), key=str)}")
+    check("R6.3 live sharded ledger statuses remain dependency-eligible",
+          all(g in DEPENDENCY_ELIGIBLE_STATUSES for g in grades.values()),
+          f"pipeline compatibility only; read from shards: {sorted(grades.values(), key=str)}")
 
     # Authority A's spectrum, built from its own definition -- nothing here is
     # computed from the target it is compared against.
@@ -273,7 +300,7 @@ def main() -> int:
     b_pol = Rs * sp.cos(ts) + sp.I * Rs * sp.sin(ts)
     lam_pol = [sp.expand_complex(sp.expand(
         a_s + b_pol * om ** j + sp.conjugate(b_pol) * om ** (-j))) for j in range(3)]
-    check("R6.5 lambda_k = a + 2|b| cos(theta + 2 pi k/3) with |b|=R, theta=arg(b)",
+    check("R6.5 lambda_k has polar form for R>=0, with phase arbitrary at R=0",
           all(sp.simplify(sp.expand_trig(sp.expand(
               lam_pol[j] - (a_s + 2 * Rs * sp.cos(ts + 2 * sp.pi * j / 3))))) == 0
               for j in range(3))
@@ -312,14 +339,21 @@ def main() -> int:
           sp.simplify(q_iso - (sp.Rational(1, 3) + sp.Rational(2, 3) * r_iso)) == 0,
           f"Q={q_iso}")
 
-    # Discriminating rejector: drop the factor 2 in the doublet power and the
-    # power-sum identity must FAIL. The check passes only on rejection.
+    # Discriminating rejector: dropping the factor 2 does not give the same
+    # polynomial identity, but it necessarily coincides at the boundary b=0.
     wrong_doublet = mod_b_sq
     wrong_residual = sp.simplify(S2 - 3 * (singlet_power + wrong_doublet))
     wrong_q = sp.simplify(q_iso - (sp.Rational(1, 3) + sp.Rational(2, 3) * r_iso / 2))
-    check("R6.10 REJECTOR: doublet=|b|^2 fails the power-sum and Q identities",
-          wrong_residual != 0 and wrong_q != 0,
-          f"residual={wrong_residual} (nonzero => gate discriminates)")
+    nonzero_witness = {a_s: 1, xs: 1, ys: 0}
+    zero_boundary = {xs: 0, ys: 0}
+    check("R6.10 REJECTOR: wrong split is nonidentical and degenerates at b=0",
+          sp.simplify(wrong_residual - 3 * mod_b_sq) == 0
+          and sp.simplify(wrong_q - mod_b_sq / (3 * a_s ** 2)) == 0
+          and wrong_residual.subs(nonzero_witness) == 3
+          and wrong_q.subs(nonzero_witness) == sp.Rational(1, 3)
+          and wrong_residual.subs(zero_boundary) == 0
+          and wrong_q.subs(zero_boundary) == 0,
+          f"residual={wrong_residual}; b!=0 witness rejects, b=0 coincides")
 
     print(f"\nSCORECARD PASS={PASS} FAIL={FAIL}")
     print("FINDING: Record supplies finite additive readout-vector algebra;")

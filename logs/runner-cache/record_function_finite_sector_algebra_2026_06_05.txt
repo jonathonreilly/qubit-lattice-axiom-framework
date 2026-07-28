@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/record_function_finite_sector_algebra_2026_06_05.py
 runner_sha256: cd69cf2741221e3442d509fac42e3f5170b4e21eff4ca98354e421c3752654cf
-input_fingerprint_sha256: f346bb2a4f42b5f9c164f484581e087bc1544d7a27af3a6d38509fb498c94dc8
+input_fingerprint_sha256: 2fd016d1d4b863f202262ee13b66a6ebc21d47389fd7a2016f8b70adeea54d66
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.93
+elapsed_sec: 0.63
 status: ok
 ----- stdout -----
 [PASS] R1.1 finite additivity holds for every ordered disjoint pair of 4 supplied records

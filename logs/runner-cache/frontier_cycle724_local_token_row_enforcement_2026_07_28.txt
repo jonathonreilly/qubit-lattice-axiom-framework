@@ -1,0 +1,522 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py
+runner_sha256: fe9b8932a651b32779ad0a9a8f238f1006292571ce255a0c61922c8bc34b3a11
+input_fingerprint_sha256: c0b05a37c9e796ecb1105268ad66692d923479383ec2dfdac87938d8139b2380
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 44.95
+status: ok
+----- stdout -----
+PASS INPUT_declared_paths_exist :: True
+PASS A_Cycle723_regression_anchor :: True
+PASS B_lawful_unchanged_extended_wrap :: True
+PASS B0_lawful_radius1_neighbors_clear_at_Q :: True
+PASS C_sector_controls_local_resolution_boundary :: True
+PASS D_exhaustive_radius1_census :: True
+PASS E_deletion_controls :: True
+PASS F_physical_layer :: True
+PASS G_compiled_extended_orbit :: True
+PASS H_inherited_anchors :: True
+{
+  "Cycle723_regression_anchor": {
+    "count_match": true,
+    "digest_match": true,
+    "expected_semantic_gates": 95850,
+    "expected_sha256": "8e57534049cbd474c30fe1ed26ce4da04e388d362394096de5990f386f327681",
+    "held_2": {
+      "banks": 2,
+      "controller_semantic_gates": 10476,
+      "controller_word_sha256": "cfee473b172c392f93bd1f19b26a45c0d94699b461c543217b840e7ef073803c",
+      "fixed_word_failures": 0,
+      "inverse_failures": 0,
+      "logical_failures": 0,
+      "postimage_failures": 0,
+      "program_stations": 11,
+      "token_return_failures": 0
+    },
+    "held_2_all_counters_zero": true,
+    "observed_semantic_gates": 95850,
+    "observed_sha256": "8e57534049cbd474c30fe1ed26ce4da04e388d362394096de5990f386f327681",
+    "repeat_match": true,
+    "repeat_sha256": "8e57534049cbd474c30fe1ed26ce4da04e388d362394096de5990f386f327681"
+  },
+  "adjacent_collisions_refused": true,
+  "audit_timeout_seconds": 900,
+  "checks": {
+    "A_Cycle723_regression_anchor": true,
+    "B0_lawful_radius1_neighbors_clear_at_Q": true,
+    "B_lawful_unchanged_extended_wrap": true,
+    "C_sector_controls_local_resolution_boundary": true,
+    "D_exhaustive_radius1_census": true,
+    "E_deletion_controls": true,
+    "F_physical_layer": true,
+    "G_compiled_extended_orbit": true,
+    "H_inherited_anchors": true,
+    "INPUT_declared_paths_exist": true
+  },
+  "circuit_structure": {
+    "controller_bits_per_station": 10,
+    "cycle723_to_cycle724_added_gates_expected": 2184,
+    "cycle723_to_cycle724_added_gates_observed": 2184,
+    "full_width": 7115,
+    "new_or_scratch_bits_per_station": 4,
+    "nonidentity_stations": 91,
+    "or_gates_per_compute": 15,
+    "or_gates_per_sandwich": 30,
+    "q_A_B_work_target_failures": 0,
+    "semantic_gates": 98034,
+    "word_sha256": "d3b156b6e106d72b591aaad56c164421a4e84336f8faf8c39d5c04952f5caa04"
+  },
+  "claim_boundary": {
+    "adjacent_collisions_refused": true,
+    "clean_syndrome_scratch_genesis_supplied": true,
+    "distant_second_token_locally_invisible": true,
+    "excluded_claims": "The result is only a bounded circuit-structure certificate.",
+    "gauss_bksf_boundary": "A Gauss/BKSF charge-row mapping requires new supplied mode-graph data and is not attempted.",
+    "global_one_token_still_supplied": true,
+    "local_token_row_radius": 1,
+    "ordinal_scope": "Controller ordinals are circuit structure, not time.",
+    "refusal_wrapped_every_controlled_macro": true,
+    "scope_authority_quote": "A bounded-radius check on an arbitrarily long ring cannot infer sum_s(A_s+B_s)=1; distant multi-token sectors pass the local row, so global existence and exactly-one remain SUPPLIED.",
+    "still_supplied": "Global token existence and exactly-one, the oriented program ring, program content, and clean data/controller genesis remain supplied.",
+    "trade": "The radius-one row locally refuses same-station B/work dirt and neighboring A/B dirt while adding four clean OR-cascade bits per station to the supplied inventory.",
+    "unique_token_still_supplied": true,
+    "w1_closed": false
+  },
+  "compiled_extended_orbit": {
+    "Cycle713_origin0_branches": 6,
+    "H_applications_per_orbit": 130,
+    "compiled_host_equality_failures": 0,
+    "compiled_inverse_failures": 0,
+    "controller_H_word_sha256": "d3b156b6e106d72b591aaad56c164421a4e84336f8faf8c39d5c04952f5caa04",
+    "controller_register_return_failures": 0,
+    "forward_semantic_gate_applications_tested": 76466520,
+    "forward_shared_with_radius1_census": true,
+    "inverse_semantic_gate_applications_tested": 76466520,
+    "rows": [
+      {
+        "A0_return": true,
+        "all_other_registers_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 0
+      },
+      {
+        "A0_return": true,
+        "all_other_registers_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 2
+      },
+      {
+        "A0_return": true,
+        "all_other_registers_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 3
+      },
+      {
+        "A0_return": true,
+        "all_other_registers_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 4
+      },
+      {
+        "A0_return": true,
+        "all_other_registers_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 5
+      },
+      {
+        "A0_return": true,
+        "all_other_registers_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 6
+      }
+    ],
+    "semantic_gate_applications_per_branch": 12744420,
+    "semantic_gates_per_H": 98034
+  },
+  "controller_sectors": {
+    "adjacent_both_macros_suppressed": true,
+    "adjacent_dirt_tokens_visible_at_return": true,
+    "adjacent_expected_refusals_per_branch": 182,
+    "adjacent_identity_prediction_residual": 0.0,
+    "adjacent_observed_refusals_per_branch": [
+      182,
+      182,
+      182,
+      182,
+      182,
+      182
+    ],
+    "adjacent_prediction_refusals_per_branch": [
+      182,
+      182,
+      182,
+      182,
+      182,
+      182
+    ],
+    "adjacent_unallocated_residual": 0.0,
+    "distant_equals_unwrapped_hostile_residual": 0.0,
+    "distant_local_refusals_per_branch": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "distant_position": 65,
+    "distant_second_token_locally_invisible": true,
+    "distant_tokens_visible_at_return": true,
+    "distant_unwrapped_register_return": true,
+    "lawful_inverse_register_return": true,
+    "lawful_inverse_residual": 0.0,
+    "lawful_register_return": true,
+    "offset_equals_unwrapped_residual": 0.0,
+    "offset_residual_from_lawful": 0.48693948205126425,
+    "offset_token_return": true,
+    "zero_token_equals_unwrapped_residual": 0.0,
+    "zero_token_return": true,
+    "zero_token_unchanged_residual": 0.0
+  },
+  "deletion_controls": {
+    "correct_auxiliary_return": true,
+    "correct_station_refused": true,
+    "deleted_compute_data_bit_mismatch_census": 3,
+    "deleted_compute_gate": [
+      1,
+      5945,
+      6595
+    ],
+    "deleted_compute_refusal_failure_detected": true,
+    "deleted_uncompute_gate": [
+      1,
+      6598,
+      6205
+    ],
+    "deleted_uncompute_retained_syndrome_detected": true,
+    "deleted_uncompute_syndrome_weight": 1,
+    "deleted_uncompute_total_auxiliary_weight": 1,
+    "station": 0
+  },
+  "distant_second_token_locally_invisible": true,
+  "global_one_token_still_supplied": true,
+  "inherited_anchors": {
+    "Cycle713_pin_match": true,
+    "Cycle713_runner_expected_sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",
+    "Cycle713_runner_observed_sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",
+    "contact_residuals": {
+      "contact_stage_residual": 0.0,
+      "onsite_64_state_contact_residual": 2.149937642474629e-15
+    },
+    "mass_residual": 0.0,
+    "matter": {
+      "FSWAP_matrix_residual": 0.0,
+      "coin_QR_residual": 1.3496230663401984e-15,
+      "coin_matrix_residual": 1.952777839357751e-16,
+      "coin_stage_residual": 6.243831416688722e-15,
+      "contact_stage_residual": 0.0,
+      "internal_depth_two_stream_residual": 0.0,
+      "mass_residual": 0.0,
+      "onsite_64_state_contact_residual": 2.149937642474629e-15,
+      "reverse_stage_residual": 0.0,
+      "seam_stage_residual": 0.0,
+      "single_FSWAP_falsifier_residual": 5.656854249492381
+    },
+    "matter_falsifier_active": true,
+    "matter_residual_failures": 0
+  },
+  "input_manifest": {
+    "all_exist": true,
+    "paths": {
+      "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md": true,
+      "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py": true,
+      "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py": true
+    },
+    "pure_literal_tuple": true
+  },
+  "lawful_extended_wrap": {
+    "cases": [
+      {
+        "A0_return": true,
+        "B_return": true,
+        "banks": 2,
+        "data_allocator_match": true,
+        "forward_shared_with_radius1_census": false,
+        "label": "unpadded_2",
+        "lawful_q_neighbor_check": {
+          "q_time_active_nonidentity_rows": 11,
+          "radius1_neighbor_bits_set_at_q_time": 0
+        },
+        "literal_reverse_exact": true,
+        "mcx_scratch_return": true,
+        "nonidentity_stations": 11,
+        "or_scratch_return": true,
+        "semantic_gates": 10740,
+        "stations": 11,
+        "syndrome_return": true,
+        "word_sha256": "66c8147bc1d87d5e2aabdf4a1d1529d3511196790bd16ea433b081841e0559f9",
+        "work_return": true,
+        "wrapped_blocks": 11
+      },
+      {
+        "A0_return": true,
+        "B_return": true,
+        "banks": 5,
+        "data_allocator_match": true,
+        "forward_shared_with_radius1_census": false,
+        "label": "unpadded_5",
+        "lawful_q_neighbor_check": {
+          "q_time_active_nonidentity_rows": 35,
+          "radius1_neighbor_bits_set_at_q_time": 0
+        },
+        "literal_reverse_exact": true,
+        "mcx_scratch_return": true,
+        "nonidentity_stations": 35,
+        "or_scratch_return": true,
+        "semantic_gates": 36858,
+        "stations": 35,
+        "syndrome_return": true,
+        "word_sha256": "54d681c3720e98ebf87545b14dd78ad3168391bea788ef4dadc27dfbbb1be9ee",
+        "work_return": true,
+        "wrapped_blocks": 35
+      },
+      {
+        "A0_return": true,
+        "B_return": true,
+        "banks": 12,
+        "data_allocator_match": true,
+        "forward_shared_with_radius1_census": false,
+        "label": "unpadded_12",
+        "lawful_q_neighbor_check": {
+          "q_time_active_nonidentity_rows": 91,
+          "radius1_neighbor_bits_set_at_q_time": 0
+        },
+        "literal_reverse_exact": true,
+        "mcx_scratch_return": true,
+        "nonidentity_stations": 91,
+        "or_scratch_return": true,
+        "semantic_gates": 97800,
+        "stations": 91,
+        "syndrome_return": true,
+        "word_sha256": "2f92272c95c0d1b734bc3c3722993beb4519e6a80dd30976569cabb0848cd8f5",
+        "work_return": true,
+        "wrapped_blocks": 91
+      },
+      {
+        "A0_return": true,
+        "B_return": true,
+        "banks": 12,
+        "data_allocator_match": true,
+        "forward_shared_with_radius1_census": true,
+        "label": "padded_130",
+        "lawful_q_neighbor_check": {
+          "q_time_active_nonidentity_rows": 91,
+          "radius1_neighbor_bits_set_at_q_time": 0
+        },
+        "literal_reverse_exact": true,
+        "mcx_scratch_return": true,
+        "nonidentity_stations": 91,
+        "or_scratch_return": true,
+        "semantic_gates": 98034,
+        "stations": 130,
+        "syndrome_return": true,
+        "word_sha256": "d3b156b6e106d72b591aaad56c164421a4e84336f8faf8c39d5c04952f5caa04",
+        "work_return": true,
+        "wrapped_blocks": 91
+      }
+    ],
+    "failure_census": 0,
+    "lawful_radius1_neighbor_failures": 0
+  },
+  "local_token_row_radius": 1,
+  "pass": true,
+  "physical": {
+    "banks": {
+      "2": {
+        "A_B_work_M2": 33,
+        "banks": 2,
+        "controller_M2": 110,
+        "controller_semantic_gates": 10740,
+        "controller_word_sha256": "66c8147bc1d87d5e2aabdf4a1d1529d3511196790bd16ea433b081841e0559f9",
+        "coordinate_failures": 0,
+        "forward": {
+          "delete_first_route_swap_detected": 48144,
+          "maximum_route_distance": 31,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 93910,
+          "operand_order_failures": 0,
+          "physical_primitives": 156788,
+          "route_blueprint_sha256": "2b1834e920927f9d375c60a7fc0af1841d91f24139dc29f47e6ffe8be1835356",
+          "route_return_failures": 0,
+          "routed_NN_gates": 1199764,
+          "touched_M2": 1691,
+          "two_M2_primitives": 62878
+        },
+        "frame_product_failures": 0,
+        "inverse": {
+          "delete_first_route_swap_detected": 48144,
+          "maximum_route_distance": 31,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 93910,
+          "operand_order_failures": 0,
+          "physical_primitives": 156788,
+          "route_blueprint_sha256": "4db2415f617bd9d3127a65d3ec4c051c2057abe81632262391d1e03dfc0a8c10",
+          "route_return_failures": 0,
+          "routed_NN_gates": 1199764,
+          "touched_M2": 1691,
+          "two_M2_primitives": 62878
+        },
+        "mcx_scratch_M2": 22,
+        "nonidentity_stations": 11,
+        "or_cascade_scratch_M2": 44,
+        "ordered_frame_products": 576,
+        "placement_collisions": 0,
+        "proper_cubic_frames": 24,
+        "rail_cycle_NN_failures": 0,
+        "stations": 11,
+        "syndrome_M2": 11,
+        "total_declared_M2": 5926,
+        "translation_failures": 0
+      },
+      "5": {
+        "A_B_work_M2": 135,
+        "banks": 5,
+        "controller_M2": 450,
+        "controller_semantic_gates": 36918,
+        "controller_word_sha256": "0b883a851bda75faaf4c38a4d1f6eb78972efee7562445cbdd3490e402469cc8",
+        "coordinate_failures": 0,
+        "forward": {
+          "delete_first_route_swap_detected": 165990,
+          "maximum_route_distance": 48,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 322972,
+          "operand_order_failures": 0,
+          "physical_primitives": 539210,
+          "route_blueprint_sha256": "3497424dcb86f3540a9145c530a1ef01ffd5fcabde191823e63e9becf380b0b1",
+          "route_return_failures": 0,
+          "routed_NN_gates": 5027610,
+          "touched_M2": 5813,
+          "two_M2_primitives": 216238
+        },
+        "frame_product_failures": 0,
+        "inverse": {
+          "delete_first_route_swap_detected": 165990,
+          "maximum_route_distance": 48,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 322972,
+          "operand_order_failures": 0,
+          "physical_primitives": 539210,
+          "route_blueprint_sha256": "b401f170efe30382b9373638033d358f2e7cffdb67432a122aca63a5422f1328",
+          "route_return_failures": 0,
+          "routed_NN_gates": 5027610,
+          "touched_M2": 5813,
+          "two_M2_primitives": 216238
+        },
+        "mcx_scratch_M2": 90,
+        "nonidentity_stations": 35,
+        "or_cascade_scratch_M2": 180,
+        "ordered_frame_products": 576,
+        "placement_collisions": 0,
+        "proper_cubic_frames": 24,
+        "rail_cycle_NN_failures": 0,
+        "stations": 45,
+        "syndrome_M2": 45,
+        "total_declared_M2": 6266,
+        "translation_failures": 0
+      },
+      "12": {
+        "A_B_work_M2": 390,
+        "banks": 12,
+        "controller_M2": 1300,
+        "controller_semantic_gates": 98034,
+        "controller_word_sha256": "d3b156b6e106d72b591aaad56c164421a4e84336f8faf8c39d5c04952f5caa04",
+        "coordinate_failures": 0,
+        "forward": {
+          "delete_first_route_swap_detected": 440964,
+          "maximum_route_distance": 48,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 857450,
+          "operand_order_failures": 0,
+          "physical_primitives": 1431562,
+          "route_blueprint_sha256": "f83b2a51400f268a0d98c3a331c3601a01d30f48bb1033e845fb24d5d01d37dd",
+          "route_return_failures": 0,
+          "routed_NN_gates": 18020978,
+          "touched_M2": 20402,
+          "two_M2_primitives": 574112
+        },
+        "frame_product_failures": 0,
+        "inverse": {
+          "delete_first_route_swap_detected": 440964,
+          "maximum_route_distance": 48,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 857450,
+          "operand_order_failures": 0,
+          "physical_primitives": 1431562,
+          "route_blueprint_sha256": "1f033ad107fd1440a27b4aa7f373918c135eea26b085ec170a00f5e95cbd8e98",
+          "route_return_failures": 0,
+          "routed_NN_gates": 18020978,
+          "touched_M2": 20402,
+          "two_M2_primitives": 574112
+        },
+        "mcx_scratch_M2": 260,
+        "nonidentity_stations": 91,
+        "or_cascade_scratch_M2": 520,
+        "ordered_frame_products": 576,
+        "placement_collisions": 0,
+        "proper_cubic_frames": 24,
+        "rail_cycle_NN_failures": 0,
+        "stations": 130,
+        "syndrome_M2": 130,
+        "total_declared_M2": 7116,
+        "translation_failures": 0
+      }
+    },
+    "failure_census": 0
+  },
+  "physical_12_bank_summary": {
+    "controller_M2": 1300,
+    "forward_physical_primitives": 1431562,
+    "forward_route_sha256": "f83b2a51400f268a0d98c3a331c3601a01d30f48bb1033e845fb24d5d01d37dd",
+    "forward_routed_NN_gates": 18020978,
+    "inverse_physical_primitives": 1431562,
+    "inverse_route_sha256": "1f033ad107fd1440a27b4aa7f373918c135eea26b085ec170a00f5e95cbd8e98",
+    "inverse_routed_NN_gates": 18020978,
+    "or_cascade_scratch_M2": 520,
+    "semantic_gates": 98034,
+    "total_declared_M2": 7116
+  },
+  "radius1_census": {
+    "census_size": 546,
+    "dirt_kinds_per_station": 6,
+    "dirt_survival_failures": 0,
+    "literal_branches_compiled": 546,
+    "nonidentity_stations": 91,
+    "observed_host_refusals": 1221,
+    "predicted_refusals": 1221,
+    "prediction_mismatch_census": 0,
+    "refusal_event_mismatches": 0,
+    "syndrome_scratch_return_failures": 0,
+    "target_station_refusal_mismatches": 0
+  },
+  "report_sha256": "09ec99dd7d61cd8bab4d3a0a1c3cc3e97878ca40849b51f6cac2592fef3ad775",
+  "runtime_seconds": 44.38697854200291,
+  "science_checks_pass": true,
+  "supplied_inventory": "One source controller token; zero B/work/syndrome rows; two clean MCX scratch bits and four clean OR-cascade intermediate bits per station; oriented program ring and clean data genesis.",
+  "w1_closed": false,
+  "word_size_comparison": {
+    "Cycle723_semantic_gates": 95850,
+    "Cycle724_semantic_gates": 98034,
+    "Cycle724_to_Cycle723_ratio": 1.0227856025039124,
+    "added_semantic_gates": 2184
+  }
+}
+
+----- stderr -----
+

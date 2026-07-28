@@ -151,10 +151,11 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
-    # Current paired certificates launch these children with subprocess rather
-    # than importing them. Register their load-bearing source chain explicitly
-    # so the restricted packet contains the code whose stdout the certificate
-    # parses.
+    # Current paired certificates launch their load-bearing children with
+    # subprocess rather than importing them. The Wilson note also names its
+    # same-convention systematic sweep on the audited runner surface. Register
+    # those claim-scoped source chains explicitly so the restricted packet
+    # contains every runner source the notes ask the auditor to inspect.
     "persistent_record_sidebit_note": [
         "scripts/persistent_record_overlap_kernel.py",
         "scripts/persistent_record_matched_compare.py",

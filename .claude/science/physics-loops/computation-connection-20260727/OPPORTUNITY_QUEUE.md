@@ -17,3 +17,13 @@ Refresh required at every block closure and before any campaign stop.
 Refreshed at block01 closure (~00:45 local 2026-07-28).
 
 Campaign stopped clean 2026-07-28 ~05:40 with the dispositions above; see STATE.yaml checkpoint_0540_final.
+
+## Re-ranked under DECISIONS_2026-07-28_OWNER_SIGNOFF.md (owner-gated items UNBLOCKED)
+
+| rank | opportunity | decision basis | status |
+|---|---|---|---|
+| 1 | Cycle 725: coherent source-lift tournament (routes S1 tensor-lift / S2 unit-weight / S3 typed-bridge; byte-pinned harnesses; C_source firewall) | D1 | ACTIVE |
+| 2 | Cycle 726: wavefront (DOWN/ACK) controller literal-M2 compilation | previous lane owner retasking item; rubric-named autonomy blocker | queued |
+| 3 | Cycle 727: TP reference-to-companion code switch (C_num named open) | previous lane owner retasking item | queued |
+| 4 | V_s factorization-object API module + V_s-restriction compiler cycle | D2 | queued |
+| 5 | BKSF holonomy compression (W1 global remainder -> one declared ring-holonomy bit) | D3 | queued |

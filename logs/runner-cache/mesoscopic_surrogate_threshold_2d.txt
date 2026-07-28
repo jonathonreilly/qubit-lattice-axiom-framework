@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/mesoscopic_surrogate_threshold_2d.py
-runner_sha256: ce264eb91fe3d94235a87032df1c1c73558dbc8cc57e6dc20850c8da1da0015b
+runner_sha256: f45b76f23b097a55e292be1b870010dde1a6d04e93916bde1e279d771599dfa8
+input_fingerprint_sha256: d83314a57330870efbe5eabcd9f694496f4f767e309adf864d415e49f3c9f777
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.31
+elapsed_sec: 1.88
 status: ok
 ----- stdout -----
 ====================================================================================================
@@ -51,10 +52,11 @@ AUDIT CHECKS
   [PASS C] frozen_topN_support_list_scanned: scanned topN=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16, 20, 25, 32, 40, 49, 64, 81]
   [PASS C] all_scanned_topN_stable: stable_topNs=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16, 20, 25, 32, 40, 49, 64, 81]
   [PASS C] stage_ratio_relative_error_within_one_percent: max_rel_err=0.0066069 <= 0.01 at topN=12
-  [PASS C] support_carry_floor: min_carry=1 >= 0.99
+  [PASS C] support_carry_floor: min_carry=0.999999997764 >= 0.99 at topN=5
+  [PASS C] detector_support_saturation_disclosed: detector_bins=49, requested_rows=19, distinct_source_profiles=17; topN=49,64,81 share the saturated profile
   [PASS C] smallest_listed_topN_satisfies_stability_gates: smallest listed passing topN=1
 
-SUMMARY: PASS=5 FAIL=0
+SUMMARY: PASS=6 FAIL=0
 
 ----- stderr -----
 

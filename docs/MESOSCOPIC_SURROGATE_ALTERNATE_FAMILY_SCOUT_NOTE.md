@@ -1,6 +1,6 @@
 # Mesoscopic Surrogate Alternate-Family Scout Note
 
-**Date:** 2026-04-04  
+**Date:** 2026-04-04 (2D dependency scope narrowed 2026-07-28)
 **Status:** meta/support planning index over bounded evidence markers
 **Type:** meta
 **Claim type:** meta
@@ -26,7 +26,12 @@ with repair: *"missing_bridge_theorem: Add an explicit registered ranking/priori
 Supplying the named retained authority/bridge is substantive new work, out of
 scope for this repair. This revision takes the **split path**:
 
-- **Load-bearing (in scope):** The runner verifies that the cited upstream notes (`MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE`, `MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE`, `SAME_FAMILY_3D_CLOSURE_NOTE`) contain the expected frozen-evidence markers ruling out `h=0.5` and 2D threshold lanes; these negative results are bounded and cache-backed.
+- **Load-bearing (in scope):** The runner verifies selected frozen-evidence
+  markers in the cited upstream notes. For
+  `MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE`, that marker is only that all 19
+  requested `topN` rows pass two programmed gates for one
+  source-identity-pinned implementation; it is not a negative family-level
+  threshold result.
 - **NON-load-bearing (split off / admitted):** The positive planning conclusion — that the retained 3D `h=0.25` family is the next candidate worth trying — is not derived from a registered objective ranking criterion over the cited retained rows; that priority ordering is an editorial judgment, not a computed or retained-authority-backed result, and is admitted as a non-load-bearing planning input.
 
 No new axiom, import, or retained bridge is introduced. The runner-verified
@@ -48,10 +53,12 @@ The current mesoscopic-surrogate lane already freezes three useful facts:
   - the only numerical winners are degenerate point-like cases
   - once the family is meaningfully localized, `topN` remains the least-bad
     mesoscopic control
-- the retained 2D support-threshold scan also does **not** show a sharp
-  collapse
-  - every scanned `topN` from `1` to `81` stayed stable
-  - shrinking support is not the lever there
+- the fixed 2D support-list computation reports that all 19 requested `topN`
+  rows pass its two programmed stability gates
+  - the 19 requests contain 17 distinct normalized source profiles because
+    `topN=49`, `64`, and `81` saturate the same 49-bin profile
+  - this result does not identify a retained 2D framework family, cover
+    unlisted supports, or establish the absence of a threshold
 - the retained 3D `h=0.25` family is already the strongest bounded ordered
   family for the asymptotic bridge
   - same-family closure exists
@@ -71,7 +78,7 @@ Why this family:
 - it has the best retained continuum-like resolution among the mesoscopic
   ordered-lattice families
 - the `h = 0.5` frontier is already closed as a degenerate-point-source lane
-- the 2D lane is already closed as a no-threshold lane
+- the 2D fixture does not close a 2D family-level threshold question
 
 ## Planning recommendation
 
@@ -107,7 +114,8 @@ So the extra check reinforces the same planning recommendation:
 The honest recommendation is:
 
 - do **not** keep sweeping the 3D `h=0.5` frontier
-- do **not** keep hunting a 2D threshold
+- do **not** use the fixed 2D computation as authority to close a 2D
+  family-level threshold question
 - if a more localized source object is still worth trying, the retained 3D
   `h=0.25` family is the next non-load-bearing planning candidate
 
@@ -118,7 +126,7 @@ lane should be frozen as a bounded negative result.
 
 - [MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md](MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md) — retained 3D `h=0.5` localization frontier whose negative result motivates this scout.
 - [MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md](MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md) — companion sweep evidence.
-- [MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md](MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md) — retained 2D support-threshold scan.
+- [MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md](MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md) — implementation-specific finite evaluation of 19 requested support rows.
 - [SAME_FAMILY_3D_CLOSURE_NOTE.md](SAME_FAMILY_3D_CLOSURE_NOTE.md) — retained 3D family closure backing the scout's family-level reasoning.
 - [VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md](VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md) — asymptotic-regime bridge consulted as part of the alternate-family scan.
 - [PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md](PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md) — readiness gate for the persistent inertial-response family this note evaluates as a candidate target.

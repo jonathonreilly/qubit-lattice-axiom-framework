@@ -1,6 +1,6 @@
 # Mesoscopic Surrogate Annular / Tapered Sweep Note
 
-**Date:** 2026-04-04  
+**Date:** 2026-04-04 (2D dependency scope narrowed 2026-07-28)
 **Status:** bounded localization sweep on the 3D mesoscopic surrogate family
 
 ## Artifact chain
@@ -93,8 +93,9 @@ This note should be read with:
 Together, these notes say:
 
 - broad mesoscopic source surrogates are real
-- support shrinkage alone does not produce a sharp threshold on the retained 2D
-  or 3D families
+- the fixed 2D threshold fixture reports that all 19 requested support rows
+  pass its two programmed gates; it supplies no retained-family or unlisted-row
+  threshold conclusion
 - more structured localized shapes still do not beat the broad `topN` control
   when point-like collapse is excluded
 

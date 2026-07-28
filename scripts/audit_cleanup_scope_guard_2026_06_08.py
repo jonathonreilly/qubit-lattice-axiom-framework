@@ -11,6 +11,12 @@ NEWTON = ROOT / "docs" / "NEWTONIAN_DISTANCE_LAW_CONFIRMED.md"
 GATE_B = ROOT / "docs" / "GATE_B_DYNAMICS_NOTE.md"
 MESO = ROOT / "docs" / "MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md"
 ORDERED = ROOT / "docs" / "lanes" / "ordered-lattice" / "README.md"
+AUDIT_INPUT_PATHS = (
+    "docs/NEWTONIAN_DISTANCE_LAW_CONFIRMED.md",
+    "docs/GATE_B_DYNAMICS_NOTE.md",
+    "docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md",
+    "docs/lanes/ordered-lattice/README.md",
+)
 
 PASS = 0
 FAIL = 0
@@ -52,7 +58,8 @@ def main() -> int:
     check("mesoscopic scout is meta/support index", "meta/support planning index" in meso)
     check(
         "mesoscopic scout denies theorem-grade target selection",
-        "must not be used as a" in meso and "bounded theorem for target selection" in meso,
+        "must not be used as theorem-grade" in meso
+        and "target-selection authority" in meso,
     )
     check("mesoscopic scout preserves ranking residual", "registered objective ranking criterion" in meso)
 

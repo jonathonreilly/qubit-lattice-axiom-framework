@@ -1,21 +1,22 @@
 ===== runner cache v1 =====
 runner: scripts/mesoscopic_surrogate_alternate_family_scout.py
-runner_sha256: c3bb48b0d57ae74d9d02a73c8256b945a99924bb993455c8074c5a43fcb737ba
+runner_sha256: 9ba636aaf2f7fffc5103c72ccf71c05324884ebe62006b6f572518fed96229ff
+input_fingerprint_sha256: 199f7008b02ad944e15252429be360962baf2a4f1e97b26e88d0cee7ad0699f4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ============================================================================================
 MESOSCOPIC SURROGATE ALTERNATE-FAMILY SCOUT
-  Purpose: verify frozen negative-evidence markers and record the
+  Purpose: verify frozen scope/evidence markers and record the
            non-load-bearing planning candidate for any later localized
            source-object attempt.
 ============================================================================================
 
 Frozen evidence check
   h=0.5 frontier closed? yes
-  2D threshold closed? yes
+  2D finite-row result present? yes
   3D h=0.25 same-family closure present? no
   3D h=0.25 asymptotic bridge present? yes
   Persistent-mass readiness still open? no
@@ -24,21 +25,21 @@ Planning ordering (non-load-bearing)
 1. 3D ordered-lattice h=0.5 localization frontier [closed]
    why: The frozen frontier note says the only winners are degenerate point-like cases, and topN remains the least-bad mesoscopic control once the family is meaningfully localized.
    next: Do not keep sweeping this family for a sharp localization win.
-2. 2D ordered-lattice support-threshold control [closed]
-   why: The frozen threshold note says every scanned topN from 1 to 81 stayed stable, so there is no sharp support threshold to exploit.
-   next: Do not keep hunting a 2D support threshold.
+2. Fixed 2D support-list computation [finite_rows_pass]
+   why: The threshold note reports that all 19 requested topN rows pass two programmed gates for one source-identity-pinned implementation.
+   next: Do not extrapolate this finite fixture to a retained family or to unlisted support values.
 3. Retained 3D h=0.25 ordered-lattice family [planning_candidate]
    why: The same-family 3D closure and asymptotic bridge are already frozen at h=0.25, with stronger near-Newtonian behavior and a cleaner retained continuum read than h=0.5.
    next: If we try a more localized source object at all, this bounded family remains a planning candidate: use non-degenerate shapes with an explicit support/capture floor.
 
 Planning recommendation
-  The already-bounded family worth one more planning attempt is the retained 3D h=0.25 ordered-lattice family. The retained 3D h=0.5 family is already closed as a degenerate-point-source frontier, and the 2D family is closed as 'no sharp threshold'.
+  The already-bounded family worth one more planning attempt is the retained 3D h=0.25 ordered-lattice family. The retained 3D h=0.5 family is already closed as a degenerate-point-source frontier. The fixed 2D computation supplies no family-level threshold conclusion.
   If we do proceed, the next attempt should use only non-degenerate localized shapes (annular windows, tapered ellipsoids, or compact Gaussians) with a minimum support/capture floor.
   If that family still cannot beat the broad topN control, the localization lane is probably done and should be frozen as a bounded negative result.
 
 Useful frozen context
   - 3D h=0.5 localization frontier: only degenerate point-like winners; topN remains least-bad.
-  - 2D threshold control: no sharp support threshold across topN=1..81.
+  - Fixed 2D computation: all 19 requested topN rows pass its two programmed gates.
   - 3D h=0.25 ordered-lattice family: already has same-family closure and the strongest retained asymptotic bridge.
 
 Scope scorecard
@@ -46,8 +47,9 @@ PASS source note is a meta/support planning index
 PASS source note says no theorem-grade target selection
 PASS source note marks priority as editorial judgment
 PASS source note marks planning input as non-load-bearing
+PASS source note preserves the 2D finite-only boundary
 PASS runner output has non-load-bearing planning label
-SUMMARY: PASS=5 FAIL=0
+SUMMARY: PASS=6 FAIL=0
 
 ----- stderr -----
 

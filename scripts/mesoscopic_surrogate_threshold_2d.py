@@ -57,6 +57,10 @@ from scripts.mesoscopic_surrogate_two_stage_2d import (  # noqa: E402
 TOPN_VALUES = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 16, 20, 25, 32, 40, 49, 64, 81)
 STABILITY_REL_ERR = 0.01
 STABILITY_CARRY = 0.99
+AUDIT_INPUT_PATHS = (
+    "scripts/mesoscopic_surrogate_two_stage_2d.py",
+    "scripts/lattice_2d_continuum_distance.py",
+)
 
 
 def pass_check(label: str, condition: bool, detail: str) -> int:
@@ -103,8 +107,10 @@ def main() -> None:
 
     stable_topns = []
     rows = []
+    source_profile_signatures = []
     for topn in TOPN_VALUES:
         src1, cap1 = topn_compress(free_profile, topn)
+        source_profile_signatures.append(tuple(sorted(src1.items())))
         stage1 = stage_metrics(pos, adj, n, nl, nmap, det, blocked, free_profile, src1, probe_init, FIELD_STRENGTH)
         src2, cap2 = topn_compress(stage1["dist_profile"], topn)
         stage2 = stage_metrics(pos, adj, n, nl, nmap, det, blocked, free_profile, src2, probe_init, FIELD_STRENGTH)
@@ -144,8 +150,11 @@ def main() -> None:
     print("  - No framework-family identification or extrapolation is part of the result.")
 
     min_carry = min(row["carry"] for row in rows)
+    min_carry_row = min(rows, key=lambda row: row["carry"])
     max_ratio_rel_err = max(row["ratio_rel_err"] for row in rows)
     worst_ratio_row = max(rows, key=lambda row: row["ratio_rel_err"])
+    distinct_source_profiles = len(set(source_profile_signatures))
+    saturated_tail_equal = len(set(source_profile_signatures[-3:])) == 1
     pass_count = 0
     print()
     print("AUDIT CHECKS")
@@ -170,7 +179,19 @@ def main() -> None:
     pass_count += pass_check(
         "support_carry_floor",
         min_carry >= STABILITY_CARRY,
-        f"min_carry={min_carry:.6g} >= {STABILITY_CARRY:.6g}",
+        (
+            f"min_carry={min_carry:.12g} >= {STABILITY_CARRY:.6g} "
+            f"at topN={min_carry_row['topn']}"
+        ),
+    )
+    pass_count += pass_check(
+        "detector_support_saturation_disclosed",
+        len(det) == 49 and distinct_source_profiles == 17 and saturated_tail_equal,
+        (
+            f"detector_bins={len(det)}, requested_rows={len(TOPN_VALUES)}, "
+            f"distinct_source_profiles={distinct_source_profiles}; "
+            "topN=49,64,81 share the saturated profile"
+        ),
     )
     pass_count += pass_check(
         "smallest_listed_topN_satisfies_stability_gates",

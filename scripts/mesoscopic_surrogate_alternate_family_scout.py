@@ -8,7 +8,9 @@ notes for the mesoscopic-surrogate lane and records one narrow planning context:
     planning candidate for a more localized source object?
 
 The scout is looking for a family where localization might matter more than on
-the retained 3D h=0.5 family, without re-running a large parameter sweep.
+the retained 3D h=0.5 family, without re-running a large parameter sweep. The
+2D threshold fixture contributes only its explicitly listed finite-row result,
+not a family-level negative conclusion.
 
 The answer is a planning recommendation, not an objective ranking theorem or a
 new physics claim.
@@ -21,6 +23,15 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
+AUDIT_INPUT_PATHS = (
+    "docs/MESOSCOPIC_SURROGATE_LOCALIZATION_FRONTIER_NOTE.md",
+    "docs/MESOSCOPIC_SURROGATE_LOCALIZATION_SWEEP_NOTE.md",
+    "docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md",
+    "docs/SAME_FAMILY_3D_CLOSURE_NOTE.md",
+    "docs/VALLEY_LINEAR_ASYMPTOTIC_BRIDGE_NOTE.md",
+    "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md",
+    "docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md",
+)
 PASS = 0
 FAIL = 0
 
@@ -69,10 +80,16 @@ def main() -> None:
             next_step="Do not keep sweeping this family for a sharp localization win.",
         ),
         FamilyRead(
-            name="2D ordered-lattice support-threshold control",
-            status="closed",
-            why="The frozen threshold note says every scanned topN from 1 to 81 stayed stable, so there is no sharp support threshold to exploit.",
-            next_step="Do not keep hunting a 2D support threshold.",
+            name="Fixed 2D support-list computation",
+            status="finite_rows_pass",
+            why=(
+                "The threshold note reports that all 19 requested topN rows pass "
+                "two programmed gates for one source-identity-pinned implementation."
+            ),
+            next_step=(
+                "Do not extrapolate this finite fixture to a retained family or "
+                "to unlisted support values."
+            ),
         ),
         FamilyRead(
             name="Retained 3D h=0.25 ordered-lattice family",
@@ -90,14 +107,18 @@ def main() -> None:
 
     print("=" * 92)
     print("MESOSCOPIC SURROGATE ALTERNATE-FAMILY SCOUT")
-    print("  Purpose: verify frozen negative-evidence markers and record the")
+    print("  Purpose: verify frozen scope/evidence markers and record the")
     print("           non-load-bearing planning candidate for any later localized")
     print("           source-object attempt.")
     print("=" * 92)
     print()
     print("Frozen evidence check")
     print(f"  h=0.5 frontier closed? {'yes' if 'degenerate point-like localizations' in sweep_3d else 'no'}")
-    print(f"  2D threshold closed? {'yes' if 'every scanned' in threshold_2d and 'stayed stable' in threshold_2d else 'no'}")
+    threshold_finite_marker = (
+        "all 19 rows satisfy both stability gates" in threshold_2d
+        and "implementation-specific finite claim" in threshold_2d
+    )
+    print(f"  2D finite-row result present? {'yes' if threshold_finite_marker else 'no'}")
     print(f"  3D h=0.25 same-family closure present? {'yes' if 'h=0.25, w=10, l=12' in same_family_3d else 'no'}")
     print(f"  3D h=0.25 asymptotic bridge present? {'yes' if 'z>=5: -1.00' in asymptotic else 'no'}")
     print(f"  Persistent-mass readiness still open? {'yes' if 'not yet' in readiness else 'no'}")
@@ -112,7 +133,8 @@ def main() -> None:
     print(
         "  The already-bounded family worth one more planning attempt is the retained 3D h=0.25 "
         "ordered-lattice family. The retained 3D h=0.5 family is already closed as a "
-        "degenerate-point-source frontier, and the 2D family is closed as 'no sharp threshold'."
+        "degenerate-point-source frontier. The fixed 2D computation supplies no family-level "
+        "threshold conclusion."
     )
     print(
         "  If we do proceed, the next attempt should use only non-degenerate localized shapes "
@@ -128,7 +150,7 @@ def main() -> None:
         "  - 3D h=0.5 localization frontier: only degenerate point-like winners; topN remains least-bad."
     )
     print(
-        "  - 2D threshold control: no sharp support threshold across topN=1..81."
+        "  - Fixed 2D computation: all 19 requested topN rows pass its two programmed gates."
     )
     print(
         "  - 3D h=0.25 ordered-lattice family: already has same-family closure and the strongest retained asymptotic bridge."
@@ -136,14 +158,19 @@ def main() -> None:
     print()
     print("Scope scorecard")
     note = read_text("docs/MESOSCOPIC_SURROGATE_ALTERNATE_FAMILY_SCOUT_NOTE.md")
-    note_flat = " ".join(note.split())
+    note_flat = " ".join(note.lower().split())
     report("source note is a meta/support planning index", "meta/support planning index" in note)
     report("source note says no theorem-grade target selection", "must not be used as theorem-grade target-selection authority" in note_flat)
     report("source note marks priority as editorial judgment", "editorial judgment" in note)
     report("source note marks planning input as non-load-bearing", "non-load-bearing planning input" in note)
     report(
+        "source note preserves the 2D finite-only boundary",
+        "2d fixture does not close a 2d family-level threshold question" in note_flat,
+    )
+    report(
         "runner output has non-load-bearing planning label",
-        any(fam.status == "planning_candidate" for fam in families)
+        threshold_finite_marker
+        and any(fam.status == "planning_candidate" for fam in families)
         and "non-load-bearing planning input" in note,
     )
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")

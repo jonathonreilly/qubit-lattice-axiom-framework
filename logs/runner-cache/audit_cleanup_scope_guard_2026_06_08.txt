@@ -1,6 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/audit_cleanup_scope_guard_2026_06_08.py
-runner_sha256: 24a27c7e292cb637eca3ce2fedd050e9677bf4d032d060beb34c6bf1dda10a9b
+runner_sha256: b292a2222491732677a4c8292c87e31a337487ad177ed04aa9ac4af031cf8fab
+input_fingerprint_sha256: d59b5ce4f5109ecddc57c1487a078bd9263a3a6146d516606a8871f2ca5e1970
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.02

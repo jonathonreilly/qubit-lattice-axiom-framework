@@ -188,3 +188,23 @@ imported words uses SPECTATOR REROUTING — enable-latched Fredkin
 every added controller gate stays in the classical reversible family; a
 direct controlled-unitary decomposition is permitted only if the landed
 gate algebra provides it natively.
+
+## D3-AMENDED (2026-07-28 ~12:00) — marked-edge twist holonomy
+
+The original D3 charge-row convention declared the holonomy as the XOR of
+consecutive reference agreements around the ring. The Cycle-728 draft's
+exhaustive enumeration REFUTED that formula as a degree of freedom: on a
+closed ring every reference bit appears in exactly two rows, so the
+chained-agreement sum is a coboundary — identically a size-parity
+constant (census: one value across all 2^N reference states; frozen in
+the runner). Chained-difference holonomies on closed rings are always
+trivial. AMENDMENT (superseding the original holonomy formula only; the
+mode graph, ref chain, and local rows stand): declare ONE holonomy
+register h at a single marked edge s* entering exactly one row,
+L_{s*} = A ⊕ B ⊕ ref_{s*} ⊕ ref_{s*+1} ⊕ h. Then the telescope gives
+XOR of all rows = token parity ⊕ h, the compression theorem holds in
+both directions (all rows satisfied ⟺ token parity = h), and
+non-derivability is the sharp marked-edge statement: h is invisible to
+every bounded-radius window excluding s*. The refuted formula and its
+census remain frozen in the Cycle-728 package as the honest
+self-correction record.

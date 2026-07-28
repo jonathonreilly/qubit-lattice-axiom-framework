@@ -1,6 +1,6 @@
 {
- "edge_count": 15168,
- "node_count": 4558,
+ "edge_count": 15172,
+ "node_count": 4559,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -8760,6 +8760,10 @@
   },
   "local_seam_signed_clifford_physical_m2_compiler_cycle709_bounded_theorem_note_2026-07-26": {
    "deps_hash": "4a5e2b7df738",
+   "out_degree": 4
+  },
+  "local_token_row_enforcement_cycle724_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "c8adae60b92d",
    "out_degree": 4
   },
   "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {

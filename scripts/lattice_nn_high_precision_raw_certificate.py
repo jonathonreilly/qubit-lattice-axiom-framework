@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Raw-kernel high-precision certificate at h = 0.125.
+"""Mixed-precision raw-kernel certificate at h = 0.125.
 
 This runner answers the literal narrow gate question from
 `docs/LATTICE_NN_HIGH_PRECISION_NOTE.md` directly:
@@ -9,24 +9,22 @@ This runner answers the literal narrow gate question from
     the same raw kernel and the same observables?
 
 It does so by re-executing the raw NN kernel from
-`scripts/lattice_nn_continuum.py` exactly as written — same per-edge
-factor `exp(1j * k * act) * w / L`, same observables — but in
-arbitrary-precision arithmetic via mpmath so the float64 overflow at
-h = 0.125 is removed and the actual raw row can be computed.
+`scripts/lattice_nn_continuum.py` with the same per-edge factor
+`exp(1j * k * act) * w / L` and the same observables. Geometry and
+per-edge phases retain the canonical float64 evaluation; amplitude
+accumulation uses mpmath so the large dynamic range at h = 0.125 does
+not overflow.
 
-The arbitrary-precision step does NOT alter the kernel. It only widens
-the numerical dynamic range, so it is not "a rescaling trick" in the
-sense the gate rules out: there is no schedule, no observable
-inspection, no data-dependent correction. The per-edge accumulation is
-exactly the raw kernel.
+The mpmath accumulator does not rescale the kernel: there is no schedule,
+observable inspection, or data-dependent correction. This is a specified
+mixed-precision computation, not a claim of exact-real arithmetic.
 
 What this runner establishes:
 
   1. RAW-KERNEL h = 0.125 IS NUMERICALLY EVALUABLE
-     The full propagation succeeds at h = 0.125 with mpmath at modest
-     precision (dps = 30), so the float64 overflow reported by
-     `lattice_nn_continuum.py` is purely a numerical-format limit. The
-     raw kernel itself is finite and well-defined at h = 0.125.
+     The full propagation succeeds at h = 0.125 with mpmath amplitude
+     accumulation at dps = 30. This closes the historical noncompletion
+     gate for the specified mixed-precision implementation.
 
   2. THE FULL RAW OBSERVABLE ROW AT h = 0.125
      Gravity centroid, k = 0 centroid, MI, classical purity,
@@ -36,42 +34,67 @@ What this runner establishes:
      machine-clean, confirming the Born-clean refinement trend extends
      one more step.
 
-  3. STEP-SCALE INVARIANCE CROSS-CHECK
-     The raw row is compared bit-equal (within machine precision) to
-     the deterministic-rescale row already cached at
-     `logs/runner-cache/lattice_nn_deterministic_rescale.txt`. This
-     cross-checks the step-scale invariance theorem from
-     `lattice_nn_high_precision_closure.py` (Sec. 1 of the note) at the
-     gate spacing, where the float64 raw lane could not previously be
-     evaluated.
+  3. LIVE ALL-OBSERVABLE COMPARATOR
+     The deterministic-rescale row is recomputed in the same process,
+     without rounded or hard-coded targets. Gravity, k = 0, MI, purity,
+     d_TV, and Born are all asserted with an explicit absolute tolerance;
+     both Born residuals must also satisfy the declared diagnostic threshold.
+     This is a pointwise numerical comparison at h = 0.125 in the recorded
+     numerical environment, not a universal exact step-scale-invariance
+     theorem or a cross-platform forward-error theorem.
+
+  4. PRECISION AND CANONICAL-IMPLEMENTATION GUARDS
+     At h = 0.25 the mixed-precision row is checked against both the canonical
+     raw implementation and the deterministic-rescale implementation. At
+     h = 0.125 the raw row is recomputed at dps = 40 and must agree with the
+     dps = 30 row within 1e-24 on every returned quantity. The latter threshold
+     is declared before either row is computed and is eight orders tighter
+     than the separate 1e-12 raw/rescaled protocol-acceptance threshold.
 
 PERFORMANCE NOTE
    The runner uses mpmath at `dps = 30` because: (a) the dynamic range
-   issue is exponent, not mantissa — overflow at 10^443 needs an
+   issue is exponent, not mantissa — the loose order-10^442 scale warning
+   for 320 transitions needs an
    exponent field, not 100+ decimal digits; (b) modest precision is
-   sufficient to pin observables to >1e-6 absolute, which is plenty for
-   bit-equal cross-comparison against the float64 deterministic-rescale
-   row. To keep run time inside the cache budget, the kernel is
-   structured so the bulk of per-edge work uses float64 for the phase
-   `act = dl - ret` and only the amplitude multiplications are mpmath.
-   This is mathematically the raw kernel; the float64 phase computation
-   only saves time on a smooth quantity whose float64 value is already
-   correct to ~15 digits.
+   independently checked against dps = 40. The 1e-12 comparator threshold is
+   a predeclared acceptance bound for the two implemented rows, not an
+   accuracy claim for either row. To keep run time inside the cache budget,
+   the kernel is structured so the bulk of per-edge work uses float64 for the
+   phase `act = dl - ret` and only the amplitude multiplications are mpmath.
+   This preserves the phase evaluation of the canonical float64 runner and
+   changes only the accumulator's dynamic range.
 """
 
 from __future__ import annotations
 
 import math
 import os
+import platform
 import sys
 import time
 from collections import defaultdict
+
+AUDIT_INPUT_PATHS = (
+    "scripts/lattice_nn_continuum.py",
+    "scripts/lattice_nn_deterministic_rescale.py",
+)
 
 try:
     import mpmath as mp
 except ImportError:  # pragma: no cover
     raise SystemExit(
         "mpmath is required. Install it (pip install mpmath) and rerun."
+    )
+
+try:
+    from scripts.lattice_nn_continuum import measure_full as measure_canonical
+    from scripts.lattice_nn_deterministic_rescale import (
+        measure_full as measure_rescaled,
+    )
+except ImportError:  # Direct execution from scripts/.
+    from lattice_nn_continuum import measure_full as measure_canonical
+    from lattice_nn_deterministic_rescale import (
+        measure_full as measure_rescaled,
     )
 
 
@@ -84,6 +107,12 @@ PHYS_W = 20.0
 PHYS_L = 40.0
 SLIT_Y = 3.0
 MASS_Y = 8.0
+OBS_ABS_TOL = mp.mpf("1e-12")
+BORN_CLEAN_TOL = mp.mpf("1e-10")
+PRIMARY_DPS = 30
+PRECISION_CHECK_DPS = 40
+PRECISION_ABS_TOL = mp.mpf("1e-24")
+OBSERVABLE_KEYS = ("gravity", "gk0", "MI", "pur_cl", "dtv", "born")
 
 
 def _generate_nn_lattice(spacing: float):
@@ -401,135 +430,166 @@ def measure_raw_kernel(spacing: float):
     }
 
 
-# Cached deterministic-rescale row at h = 0.125, copied verbatim from
-# logs/runner-cache/lattice_nn_deterministic_rescale.txt for the
-# step-scale invariance cross-check.
-DET_RESCALE_H0125 = {
-    "gravity": +0.034466,
-    "gk0":      0.0,
-    "MI":       0.9972,
-    "1-pur":    0.5000,
-    "d_TV":     0.9996,
-    "born_oom": 7.86e-16,  # last column at h = 0.125 in the cache
-}
-
-# Cached deterministic-rescale row at h = 0.25 (already verified
-# bit-equal with the raw kernel in float64 by the continuum runner).
-DET_RESCALE_H025 = {
-    "gravity": +0.077415,
-    "gk0":      0.0,
-    "MI":       0.9470,
-    "1-pur":    0.4989,
-    "d_TV":     0.9878,
-}
+def _live_comparison(raw, rescaled):
+    """Compare every returned observable without rounding either row."""
+    diffs = {
+        key: abs(mp.mpf(raw[key]) - mp.mpf(rescaled[key]))
+        for key in OBSERVABLE_KEYS
+    }
+    finite = all(
+        mp.isfinite(mp.mpf(row[key]))
+        for row in (raw, rescaled)
+        for key in OBSERVABLE_KEYS
+    )
+    each_observable_ok = finite and all(
+        diff <= OBS_ABS_TOL for diff in diffs.values()
+    )
+    raw_born_ok = mp.mpf(raw["born"]) < BORN_CLEAN_TOL
+    rescaled_born_ok = mp.mpf(rescaled["born"]) < BORN_CLEAN_TOL
+    return diffs, each_observable_ok and raw_born_ok and rescaled_born_ok
 
 
-def _round_signed(x, digits):
-    """Round a signed mp number to `digits` decimal places as a float."""
-    return round(float(x), digits)
+def _print_comparison(raw, comparator, diffs):
+    """Print full-value live comparisons used by the exit-code assertions."""
+    labels = {
+        "gravity": "gravity",
+        "gk0": "k=0",
+        "MI": "MI",
+        "pur_cl": "purity",
+        "dtv": "d_TV",
+        "born": "Born",
+    }
+    for key in OBSERVABLE_KEYS:
+        raw_value = mp.nstr(mp.mpf(raw[key]), 24, min_fixed=0, max_fixed=0)
+        comparator_value = mp.nstr(
+            mp.mpf(comparator[key]), 24, min_fixed=0, max_fixed=0
+        )
+        print(
+            f"    {labels[key]:7s}: raw={raw_value}  "
+            f"comparator={comparator_value}  "
+            f"abs_diff={float(diffs[key]):.3e}"
+        )
 
 
 def main():
-    mp.mp.dps = 30
+    mp.mp.dps = PRIMARY_DPS
 
     print("=" * 95)
-    print("RAW-KERNEL HIGH-PRECISION CERTIFICATE AT h = 0.125")
-    print(f"  arbitrary-precision raw NN kernel (mpmath dps = {mp.mp.dps})")
+    print("MIXED-PRECISION RAW-KERNEL CERTIFICATE AT h = 0.125")
+    print(f"  float64 geometry/phases; mpmath amplitude accumulation "
+          f"(dps = {mp.mp.dps})")
     print(f"  physical: W={PHYS_W}, L={PHYS_L}, k={K_PHYS}, "
           "field_strength=0.0005, mass at y=8.0")
+    print(
+        "  environment: "
+        f"Python={platform.python_version()} "
+        f"implementation={platform.python_implementation()} "
+        f"mpmath={mp.__version__} "
+        f"system={platform.system()} "
+        f"machine={platform.machine()} "
+        f"float_mant_dig={sys.float_info.mant_dig}"
+    )
     print("=" * 95)
     print()
 
-    # h = 0.25 sanity check (must agree with the float64 continuum runner).
+    # h = 0.25 sanity checks against the canonical raw implementation and
+    # a live deterministic-rescale run.
     print("--- 1. RAW-KERNEL h = 0.25 SANITY CHECK ---")
-    print("    (must reproduce the float64 raw row from "
-          "scripts/lattice_nn_continuum.py)")
+    print("    (live comparisons; no rounded or hard-coded targets)")
     t0 = time.time()
     r25 = measure_raw_kernel(0.25)
+    c25 = measure_canonical(0.25)
+    d25 = measure_rescaled(0.25)
     elapsed_25 = time.time() - t0
-    if r25 is None:
+    if r25 is None or c25 is None or d25 is None:
         print("    FAIL: measurement returned None")
         sys.exit(1)
-    g_25 = _round_signed(r25["gravity"], 6)
-    mi_25 = _round_signed(r25["MI"], 4)
-    omp_25 = _round_signed(mp.mpf(1) - r25["pur_cl"], 4)
-    dtv_25 = _round_signed(r25["dtv"], 4)
+    diffs_25_canonical, canonical_ok = _live_comparison(r25, c25)
+    diffs_25_rescaled, rescaled_25_ok = _live_comparison(r25, d25)
+    sanity_ok = canonical_ok and rescaled_25_ok
     print(f"    nl = {r25['nl']}, nodes = {r25['n']}")
-    print(f"    gravity:  raw_mpmath = {g_25:+.6f}    "
-          f"cached_float64 = {DET_RESCALE_H025['gravity']:+.6f}")
-    print(f"    MI:       raw_mpmath = {mi_25:.4f}    "
-          f"cached_float64 = {DET_RESCALE_H025['MI']:.4f}")
-    print(f"    1-pur:    raw_mpmath = {omp_25:.4f}    "
-          f"cached_float64 = {DET_RESCALE_H025['1-pur']:.4f}")
-    print(f"    d_TV:     raw_mpmath = {dtv_25:.4f}    "
-          f"cached_float64 = {DET_RESCALE_H025['d_TV']:.4f}")
-    sanity_ok = (
-        abs(g_25 - DET_RESCALE_H025["gravity"]) <= 5e-5
-        and abs(mi_25 - DET_RESCALE_H025["MI"]) <= 5e-3
-        and abs(omp_25 - DET_RESCALE_H025["1-pur"]) <= 5e-3
-        and abs(dtv_25 - DET_RESCALE_H025["d_TV"]) <= 5e-3
-    )
+    print("    canonical raw comparator:")
+    _print_comparison(r25, c25, diffs_25_canonical)
+    print("    deterministic-rescale comparator:")
+    _print_comparison(r25, d25, diffs_25_rescaled)
     print(f"    SANITY: {'PASS' if sanity_ok else 'FAIL'}  "
           f"(elapsed {elapsed_25:.1f}s)")
     print()
 
     # h = 0.125: the gate target.
     print("--- 2. RAW-KERNEL h = 0.125 CERTIFICATE (gate target) ---")
-    print("    (this is the row the float64 raw lane could not evaluate)")
+    print("    (live comparison; no rounded or hard-coded targets)")
     t0 = time.time()
     r125 = measure_raw_kernel(0.125)
+    d125 = measure_rescaled(0.125)
     elapsed_125 = time.time() - t0
-    if r125 is None:
+    if r125 is None or d125 is None:
         print("    FAIL: measurement returned None")
         sys.exit(1)
-    g_125 = _round_signed(r125["gravity"], 6)
-    mi_125 = _round_signed(r125["MI"], 4)
-    omp_125 = _round_signed(mp.mpf(1) - r125["pur_cl"], 4)
-    dtv_125 = _round_signed(r125["dtv"], 4)
-    born_125_mp = r125["born"]
+    diffs_125, comparison_ok = _live_comparison(r125, d125)
     print(f"    nl = {r125['nl']}, nodes = {r125['n']}")
-    print(f"    gravity:  raw_mpmath = {g_125:+.6f}    "
-          f"cached_det_rescale = {DET_RESCALE_H0125['gravity']:+.6f}")
-    print(f"    MI:       raw_mpmath = {mi_125:.4f}    "
-          f"cached_det_rescale = {DET_RESCALE_H0125['MI']:.4f}")
-    print(f"    1-pur:    raw_mpmath = {omp_125:.4f}    "
-          f"cached_det_rescale = {DET_RESCALE_H0125['1-pur']:.4f}")
-    print(f"    d_TV:     raw_mpmath = {dtv_125:.4f}    "
-          f"cached_det_rescale = {DET_RESCALE_H0125['d_TV']:.4f}")
-    print(f"    Born:     raw_mpmath = {float(born_125_mp):.3e}    "
-          f"cached_det_rescale = {DET_RESCALE_H0125['born_oom']:.3e}")
-    born_ok = float(born_125_mp) < 1e-10
-    print(f"    Born-clean (< 1e-10): {'YES' if born_ok else 'NO'}")
-    invariance_ok = (
-        abs(g_125 - DET_RESCALE_H0125["gravity"]) <= 5e-5
-        and abs(mi_125 - DET_RESCALE_H0125["MI"]) <= 5e-3
-        and abs(omp_125 - DET_RESCALE_H0125["1-pur"]) <= 5e-3
-        and abs(dtv_125 - DET_RESCALE_H0125["d_TV"]) <= 5e-3
-    )
-    print(f"    STEP-SCALE INVARIANCE AT h = 0.125: "
-          f"{'PASS' if invariance_ok else 'FAIL'}  "
+    _print_comparison(r125, d125, diffs_125)
+    raw_born_ok = mp.mpf(r125["born"]) < BORN_CLEAN_TOL
+    rescaled_born_ok = mp.mpf(d125["born"]) < BORN_CLEAN_TOL
+    print(f"    raw Born diagnostic (< 1e-10):      "
+          f"{'YES' if raw_born_ok else 'NO'}")
+    print(f"    rescaled Born diagnostic (< 1e-10): "
+          f"{'YES' if rescaled_born_ok else 'NO'}")
+    print(f"    LIVE ALL-OBSERVABLE COMPARISON (abs tol 1e-12): "
+          f"{'PASS' if comparison_ok else 'FAIL'}  "
           f"(elapsed {elapsed_125:.1f}s)")
     print()
 
-    print("--- VERDICT ---")
-    print(f"    raw-kernel h = 0.25  reproducibility:    "
-          f"{'PASS' if sanity_ok else 'FAIL'}")
-    print(f"    raw-kernel h = 0.125 successful run:     PASS  "
-          f"(mpmath at dps={mp.mp.dps})")
-    print(f"    raw-kernel h = 0.125 Born-clean:         "
-          f"{'YES' if born_ok else 'NO'}")
-    print(f"    step-scale invariance at h = 0.125:      "
-          f"{'PASS' if invariance_ok else 'FAIL'}")
+    print("--- 3. RAW-KERNEL PRECISION-STABILITY CHECK ---")
+    t0 = time.time()
+    with mp.workdps(PRECISION_CHECK_DPS):
+        r125_hi = measure_raw_kernel(0.125)
+        if r125_hi is None:
+            print("    FAIL: higher-precision measurement returned None")
+            sys.exit(1)
+        precision_diffs = {
+            key: abs(mp.mpf(r125[key]) - mp.mpf(r125_hi[key]))
+            for key in OBSERVABLE_KEYS
+        }
+        precision_ok = all(
+            mp.isfinite(mp.mpf(r125_hi[key]))
+            and precision_diffs[key] <= PRECISION_ABS_TOL
+            for key in OBSERVABLE_KEYS
+        )
+    elapsed_precision = time.time() - t0
+    print(
+        f"    dps={PRIMARY_DPS} versus dps={PRECISION_CHECK_DPS}; "
+        f"predeclared abs tol={float(PRECISION_ABS_TOL):.0e}"
+    )
+    for key in OBSERVABLE_KEYS:
+        print(f"    {key:7s}: abs_diff={float(precision_diffs[key]):.3e}")
+    print(
+        f"    PRECISION STABILITY: {'PASS' if precision_ok else 'FAIL'}  "
+        f"(elapsed {elapsed_precision:.1f}s)"
+    )
     print()
-    print("    POSITIVE CERTIFICATE: the raw NN kernel at h = 0.125 is")
-    print("    numerically evaluable in arbitrary precision, the observables")
-    print("    extend the Born-clean refinement trend through h = 0.125, and")
-    print("    they match the deterministic-rescale lane within machine")
-    print("    precision (which directly verifies the step-scale invariance")
-    print("    theorem at the gate spacing where the float64 raw lane could")
-    print("    not previously be evaluated).")
 
-    overall = sanity_ok and born_ok and invariance_ok
+    overall = sanity_ok and comparison_ok and precision_ok
+    print("--- VERDICT ---")
+    print(f"    raw-kernel h = 0.25 canonical regression: "
+          f"{'PASS' if sanity_ok else 'FAIL'}")
+    print(f"    raw-kernel h = 0.125 successful run:      PASS  "
+          f"(mpmath at dps={mp.mp.dps})")
+    print(f"    raw-kernel h = 0.125 Born diagnostic:     "
+          f"{'YES' if raw_born_ok else 'NO'}")
+    print(f"    live all-observable comparison:           "
+          f"{'PASS' if comparison_ok else 'FAIL'}")
+    print(f"    dps precision-stability guard:            "
+          f"{'PASS' if precision_ok else 'FAIL'}")
+    print()
+    if overall:
+        print("    BOUNDED CERTIFICATE: in the recorded numerical environment,")
+        print("    the supplied raw NN protocol at h = 0.125 completes and its")
+        print("    live deterministic-rescale comparator agrees on all six")
+        print("    returned quantities within the predeclared 1e-12 threshold.")
+        print("    This is not a universal rescale or cross-platform theorem.")
+    else:
+        print("    CERTIFICATE NOT ESTABLISHED: at least one decisive guard failed.")
     print()
     print(f"    RUNNER STATUS: {'PASS' if overall else 'FAIL'}")
     sys.exit(0 if overall else 1)

@@ -1,79 +1,52 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_dirac_bridge_theorem.py
-runner_sha256: 935047e59dddad9cc2651c19bc11beb80fa914b139bff0fda66243901d016126
+runner_sha256: 017d18bde0eaf66a07f53946fcf2cdce6347ad905267e751f96cb53c39cfc263
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.96
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
-NEUTRINO DIRAC BRIDGE THEOREM: M(phi)=sum_i phi_i Gamma_i, gamma_5=G_0G_1G_2G_3, Xi_5=G_1G_2G_3G_0
+DM-NEUTRINO BRIDGE ALGEBRA: exact conditional finite-matrix certificate
 
-== A exact symbolic certificate, arbitrary real phi_1, phi_2, phi_3 ==
-  [PASS] A1 Gamma_mu Hermitian and Gamma_mu^2 = I, mu=0..3  (8 exact identities)
-  [PASS] A2 {Gamma_mu, Gamma_nu} = 2 delta_munu I  (all 16 ordered pairs, exact)
-  [PASS] A3 gamma_5 Hermitian, gamma_5^2 = I, tr gamma_5 = 0  (exact)
-  [PASS] A4 M(phi) = M(phi)^dagger identically in phi  (no condition on phi)
-  [PASS] A5 M(phi)^2 = |phi|^2 I identically in phi  (expand -> zero matrix)
-  [PASS] A6 {M(phi), gamma_5} = 0 identically in phi  (expand -> zero matrix)
-  [PASS] A7 P_L M P_L = P_R M P_R = 0 identically in phi  (both chiral-diagonal blocks vanish)
-  [PASS] A8 M(e_i) = Gamma_i for i=1,2,3  (exact substitution)
+== Exact displayed Clifford algebra ==
+  [PASS] displayed generators are Hermitian involutions  (eight exact identities)
+  [PASS] all ordered Clifford anticommutators have the required value  (sixteen ordered pairs)
+  [PASS] constructed grading is a Hermitian traceless involution
+  [PASS] real-coefficient M(phi) is Hermitian  (phi_1, phi_2, phi_3 are explicitly declared real)
+  [PASS] M(phi)^2 equals the coefficient norm squared times identity
+  [PASS] M(phi) anticommutes with the constructed grading
+  [PASS] both grading-diagonal blocks of M(phi) vanish
+  [PASS] axis substitution M(e_i) returns the corresponding generator
 
-== B wrong-value rejectors: each must fail for a wrong object ==
-  [PASS] B1 M^2 = 2|phi|^2 I is identically false  (residual -|phi|^2 I)
-  [PASS] B2 Gamma_3 -> Xi_5 breaks {M, gamma_5} = 0  (residual 2 phi_3 Xi_5 gamma_5)
-  [PASS] B3 i Gamma_1 fails Hermiticity  ((iG_1)^dag = -iG_1)
-  [PASS] B4 dropping the phi_3 term breaks M^2 = |phi|^2 I  (residual -phi_3^2 I)
+== Wrong-object rejectors ==
+  [PASS] a doubled coefficient norm is rejected
+  [PASS] replacing G_3 by Xi_5 breaks grading oddness
+  [PASS] an imaginary coefficient makes i G_1 non-Hermitian
+  [PASS] dropping the phi_3 term breaks the stated square
 
-== C Xi_5 boundary from the exact Clifford reordering identity ==
-  [PASS] C1 Xi_5 = -gamma_5 exactly  (all 256 entries; sign (-1)^3)
-  [PASS] C2 every ordering of G_0..G_3 gives +/- gamma_5  (24 orderings, 12 plus / 12 minus)
-  [PASS] C3 Xi_5 is chiral diagonal  (both chiral off-diagonal blocks vanish)
-  [PASS] C4 Gamma_1 is chiral off-diagonal  (rank(P_R G_1 P_L) = 8)
+== Bare Xi_5 grading classification and explicit boundary ==
+  [PASS] Xi_5 equals minus the constructed grading  (sign from three generator transpositions)
+  [PASS] all generator orderings equal plus or minus the grading  (24 orderings: 12 plus and 12 minus)
+  [PASS] bare Xi_5 has zero grading-off-diagonal blocks
+  [PASS] G_1 has zero grading-diagonal blocks and full cross-block rank  (rank(P_R G_1 P_L) = 8)
+  [PASS] the exact squared Frobenius block weights are separated  (LL/LR/RL/RR: Xi_5 8/0/0/8; G_1 0/8/8/0)
+  [PASS] one-direction and full off-diagonal norms are distinguished  (norms are sqrt(8) and 4)
+  [PASS] the composite i G_1 Xi_5 is a Hermitian grading-odd involution  (explicitly prevents a bare-Xi_5 no-go overreach)
 
-== D selector, axis operators, and the T_1 return order ==
-  [PASS] D1 V_sel(e_i) = 0 for i=1,2,3 and positive off axis  (V(1,1,0)=32, V(1,1,1)=96)
-  [PASS] D2 normalized-simplex minima are the axis vertices  (3 minima, step 0.05)
-  [PASS] D3 numeric spot check of A4-A7 at 5 sample phi  (max residual 0.0e+00)
-  [PASS] D4 no one-hop return on T_1  (P_T1 G_1 P_T1 = 0 on the 6-dim block)
-  [PASS] D5 second order closes on T_1 through O_0 + T_2  (restricted block = I_6)
-  [PASS] D6 O_3 does not enter the first closed T_1 return  (identical restricted blocks)
+== Separate four-dimensional representation replay ==
+  [PASS] the separate representation obeys the same Clifford relations
+  [PASS] the separate representation repeats Xi_5 and grading census  (eight even products commute; eight odd products anticommute)
 
-== E packet: N1-N8 no-go discipline for the Xi_5 exclusion ==
-  [PASS] E1 N1 route rescale_normalization  (mech=rescale Xi_5; try=c in 2,1/2,-3; out=BLOCKED LR=0 for every c)
-  [PASS] E2 N1 route sign_and_orientation  (mech=reorder the volume product; try=all 24 orderings; out=BLOCKED each is +/- gamma_5)
-  [PASS] E3 N1 route linear_combination  (mech=mix a G_1 + b Xi_5; try=symbolic a,b; out=BLOCKED LR block is b-free)
-  [PASS] E4 N1 route unitary_conjugation  (mech=conjugate by U with [U,gamma_5]=0; try=seed 20260415; out=BLOCKED LR=5.6e-15)
-  [PASS] E5 N1 route projector_surgery  (mech=extract the odd part by projector sandwiching; try=exact; out=BLOCKED odd part is 0)
-  [PASS] E6 N1 route taste_dressing  (mech=dress with gamma_5; try=gamma_5 Xi_5 and gamma_5 G_1; out=BLOCKED -I and anti-Hermitian)
-  [PASS] E7 N2 wall chirality_grading_of_the_even_subalgebra  (8 even subsets commute, 8 odd subsets anticommute with gamma_5)
-  [PASS] E8 N3 hidden-wall scan in the standard 4x4 Cl(4) realization  (exact sympy: Xi_5 = -gamma_5 there too, grading 8/8)
-  [PASS] E9 N5 per_element  (nonzero chiral off-diag entries: Xi_5 0, Gamma_1 16 (one per row))
-  [PASS] E10 N5 per_site  (local LR weight at each of 8 sites: Xi_5 0, Gamma_1 1)
-  [PASS] E11 N5 per_mode  (gamma_5 eigenmodes: Xi_5 preserves 16/16, Gamma_1 flips 16/16)
-  [PASS] E12 N5 per_block  (block LL/LR/RL/RR: Xi_5 8/0/0/8, Gamma_1 0/8/8/0)
-  [PASS] E13 N5 lattice_wide  (total LR Frobenius norm: Xi_5 0.0, Gamma_1 2*sqrt(2)=2.828)
-N4 residual: physical_identification_of_the_constructed_chirality_operator, matched to
-  the note section 'Out of scope (admitted-context to this note)' items 3 and 4.
-N5 phrase (single line, copied from the note): Xi_5 equals minus gamma_5 in the displayed representation, so it is chiral diagonal and cannot be a chiral off-diagonal Dirac Yukawa surface
-N5 resolution_classes_checked: per_element, per_site, per_mode, per_block, lattice_wide
-N6 partial_closure approved_primitive:minimal_axioms, scale_reference_primitive,
-  kinetic_isotropy_primitive, realized_state_primitive -- addressed; none supplies or
-  modifies the Cl(4) operator packet, so none reaches the E7 grading wall.
-N6 partial_closure owner_governed:staggered_dirac_realization_gate_note_2026-05-03,
-  convention_reframe:g_bare_rigidity_theorem_note, convention_reframe:hypercharge_
-  identification_note -- addressed; the gate supplies no above-C3 taste, Dirac or
-  chirality content, and a dimensionless matrix identity is untouched by either reframe.
-N7 steelman route taste_dressing: argument = the E6 line above; resolution = the E6 out=
-  clause together with the E7 grading wall.
-N8 cross_cycle_echo: 4 own prior audits (all retired), 6 dm_neutrino_weak_vector_theorem
-  audits (not applicable), 1 owner_governed retirement, plus physics_loop_no_go_ledger
-  entries -- none echoes an exact finite Clifford reordering identity.
-Boundary: sections A and E7 make the algebraic authority internal -- the packet is
-  certified from {Gamma_mu, Gamma_nu} = 2 delta_munu I alone. What stays admitted is the
-  physical identification of these operators with emergent 3+1 lattice chirality, the
-  V_sel selector form, and the weak-axis branch convention, not the algebra.
+== Exact finite bit-basis return ==
+  [PASS] the T_1 bit-basis block has no one-step self-return
+  [PASS] the two-step return through O_0 plus T_2 is identity
+  [PASS] adding O_3 does not change the first closed return
 
-RESULT: 35 PASS, 0 FAIL
+BOUNDARY: no selector, physical carrier, Yukawa/action, chirality-
+  realization, generation, weak-axis, or normalization claim is made.
+BOUNDARY: no negative route-exhaustion or composite-carrier no-go is made.
+
+RESULT: 24 PASS, 0 FAIL
 
 ----- stderr -----
 

@@ -96,7 +96,7 @@ dynamics. It is not yet a probability calculus.
 For a two-sector record function
 
 ```text
-v = (u, d),     u+d != 0,
+v = (u, d),     u+d != 0,     u != 0,
 ```
 
 the normalized coordinates
@@ -111,8 +111,9 @@ sum to one and are invariant under global readout scaling. The raw ratio
 rho = d/u
 ```
 
-is also scale-invariant. These are structural readout coordinates. Calling
-them probabilities requires a separate normalization/Born gate.
+is also scale-invariant under a nonzero global scale. These are structural
+readout coordinates. Calling them probabilities requires a separate
+normalization/Born gate.
 
 Finite additivity leaves the normalized coordinate arbitrary: for any supplied
 `p` in `(0,1)`, choosing
@@ -123,13 +124,23 @@ d = p u / (1-p)
 
 gives `d/(u+d)=p`. Thus Record alone cannot select a value.
 
-## Generation-dial specialization
+## Conditional abstract `C3` two-block coordinate
 
-For the generation two-sector readout, the two sectors are the `C3` isotypic
-components of the real `C3`-equivariant readout triple. That triple is not
-posited here. The retained
+This specialization is conditional. Supply:
+
+1. a real `C3` spectrum `lambda` obtained from an abstract
+   Hermitian-circulant element `H(a,b)`; and
+2. an identification of two scalar record coordinates with one third of the
+   trivial and doublet Fourier-projection powers of that spectrum.
+
+Neither supplied input follows from Record. In particular, this note does not
+select a physical carrier, identify the coordinates with generations, supply
+a `K`/CPT readout context, or construct a registered-mass functional.
+
+The
 [Abstract Hermitian-Circulant Fourier Invariant Theorem](KOIDE_KAPPA_SPECTRUM_OPERATOR_BRIDGE_THEOREM_NOTE_2026-04-19.md)
-supplies it exactly: with `C` the cyclic shift, `omega = exp(2 pi i/3)`, and
+establishes the first algebraic input: with `C` the cyclic shift,
+`omega = exp(2 pi i/3)`, and
 `f_k = (1, omega^k, omega^(2k))^T/sqrt(3)` satisfying `C f_k = omega^k f_k`,
 
 ```text
@@ -147,15 +158,15 @@ sectors as
 |<f_1, lambda>|^2 + |<f_2, lambda>|^2 = 6|b|^2.
 ```
 
-Dividing out the common factor `3`, the sector powers are therefore not a
-supplied assignment but the isotypic split itself:
+Under supplied input 2, dividing out the common factor `3` defines the two
+record coordinates:
 
 ```text
 singlet readout = a^2,
 doublet readout = 2|b|^2.
 ```
 
-With
+For `a != 0`, define
 
 ```text
 r = |b|^2/a^2,
@@ -168,33 +179,26 @@ we have
 rho = 2r.
 ```
 
-The exact dial coordinate is therefore
+When also `b != 0`, `rho>0` and the logarithmic dial coordinate is
 
 ```text
 s = log2(rho) = log2(2r).
 ```
 
-For the named `Q` endpoint entries, the finite generation readout packet uses
-the standard three-slot Koide structural coordinate on that same
-`C3`/`K`-real generation readout:
+At `b=0`, `rho=0`; the logarithmic dial is absent and `arg(b)` has no defined
+phase. For `b != 0`, write `theta = arg(b)`. The real spectrum then has the
+equivalent character form
+
+```text
+lambda_k = a + 2|b| cos(theta + 2 pi k/3),     k=0,1,2.
+```
+
+For `a != 0`, so that `sum_k lambda_k = 3a != 0`, define the structural
+three-slot coordinate
 
 ```text
 Q = (sum_k lambda_k^2) / (sum_k lambda_k)^2.
 ```
-
-Here the `K`/CPT-real `C3`-equivariant square-root readout has the finite
-character form
-
-```text
-lambda_k = a + 2|b| cos(theta + 2 pi k/3),     k=0,1,2,
-```
-
-with `theta = arg(b)`. Neither this coordinate form nor the identity
-`Q = 1/3 + (2/3)r` derived below is assumed here. The retained
-[Registered Positive Mass Triple: Exact C3 Fourier Coordinates and Koide Identity](CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md)
-proves both for **any** positive real triple with `z_j = sqrt(m_j)`, obtaining
-`z_j = a + 2|c| cos(phi + 2 pi j/3)` and `Q = 1/3 + 2r/3` with `r = |c|^2/a^2`;
-that note's `c` is this note's `b`, and its `phi` is this note's `theta`.
 
 The `C3` character sums give, exactly,
 
@@ -203,7 +207,7 @@ sum_k lambda_k     = 3a,
 sum_k lambda_k^2   = 3a^2 + 6|b|^2.
 ```
 
-Therefore this packet derives the displayed generation-coordinate formula
+Therefore this packet derives the displayed abstract coordinate formula
 before substituting endpoints:
 
 ```text
@@ -216,23 +220,37 @@ Equivalently, in the two-block record-function notation above,
 Q = (singlet readout + doublet readout)/(3 singlet readout).
 ```
 
-This is a structural coordinate on the supplied generation readout, not a
-probability, dynamics, occupancy selector, or measured-mass assertion.
+The
+[Registered Positive Mass Triple: Exact C3 Fourier Coordinates and Koide Identity](CHARGED_LEPTON_REGISTERED_MASS_DFT_COORDINATE_THEOREM_NOTE_2026-07-11.md)
+independently establishes the same Fourier reconstruction and `Q` identity
+when a strictly positive real triple `z_j = sqrt(m_j)` is already supplied.
+In that domain `a>0`, and its phase is defined only when its nontrivial Fourier
+coefficient is nonzero. That theorem does not construct the physical
+registered-mass readout or supply the Record-to-power identification assumed
+here.
 
-The two retained authorities cited above supply the real `C3`-equivariant
-spectrum and the coordinate identity used here; naming that reality condition
-`K`/CPT-real is the standing readout-context pin carried elsewhere in the
-framework, and is not re-derived here.
+This is therefore an abstract structural coordinate under two explicit
+inputs, not a probability, dynamics, occupancy selector, generation
+assignment, or measured-mass assertion.
 
 The named endpoints are:
 
 ```text
-rho=1 -> s=0 -> r=1/2 -> Q=2/3
-rho=2 -> s=1 -> r=1   -> Q=1
+rho=1 -> s=0 -> r=1/2 -> Q=2/3    (interior coordinate)
+rho=2 -> s=1 -> r=1   -> Q=1      (formal real-spectrum endpoint)
 ```
 
-The runner verifies these identities exactly and verifies that `rho` remains a
-free readout ratio until a weighting or dynamics gate is supplied.
+The `Q=1` value is not attained by a strictly positive triple because
+
+```text
+(sum_k lambda_k)^2 - sum_k lambda_k^2
+  = 2 sum_(i<j) lambda_i lambda_j > 0.
+```
+
+It is a nonnegative-closure value, for example at a permutation of
+`(3a,0,0)`, or a formal value of the unrestricted real-spectrum algebra. The
+runner verifies the identities and domains exactly and verifies that `rho`
+remains a free readout ratio until a weighting or dynamics gate is supplied.
 
 ## What this unlocks
 
@@ -261,21 +279,23 @@ The runner verifies:
 - associative composition of coarse-grainings;
 - scale invariance of normalized coordinates and ratios;
 - arbitrariness of two-sector normalized coordinates under Record alone;
-- generation specialization `rho=2r`, `s=log2(rho)`, and the two named
-  endpoints;
-- the finite `C3`/`K`-real power-sum definition of the generation `Q`
-  coordinate, deriving `Q = 1/3 + (2/3)r` before endpoint substitution;
+- the conditional abstract `C3` specialization `rho=2r`,
+  `s=log2(rho)`, and the domains and status of the two named endpoints;
+- the finite real-`C3` power-sum definition of `Q`, deriving
+  `Q = 1/3 + (2/3)r` before endpoint substitution;
 - that both cited authority notes exist, that this note links to each of them,
-  and that each one's sharded ledger row carries a retained effective status
-  read from the shard file;
+  and that each one's live sharded ledger row remains dependency-eligible as a
+  pipeline compatibility check, not a proof of semantic scope;
 - exactly, from `lambda_k = a + b omega^k + conjugate(b) omega^(-k)`: reality
   of every `lambda_k`, the equivalent character form
   `a + 2|b| cos(theta + 2 pi k/3)`, orthonormality of the `f_k`, the isotypic
   power split `3a^2 : 6|b|^2`, the power sums `3a` and `3a^2 + 6|b|^2`, their
   agreement with `3 (singlet + doublet)`, and `Q = 1/3 + (2/3)r`;
 - a discriminating rejector: the alternative assignment `doublet = |b|^2`
-  fails to reproduce `sum_k lambda_k^2`, so the power-split gate is not
-  tautological.
+  is not the same polynomial identity for nonzero `b`, while both assignments
+  correctly coincide at the degenerate boundary `b=0`;
+- two distinct supplied update maps preserve finite additivity, so Record does
+  not select dynamics.
 
 ## Net
 

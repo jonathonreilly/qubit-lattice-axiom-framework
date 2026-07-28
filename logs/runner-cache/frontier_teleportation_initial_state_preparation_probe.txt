@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_initial_state_preparation_probe.py
-runner_sha256: ef05b9ffc8dfbbf8a7c9dfb1c216b2839584bcfe53c5d9b44bb5764493df1995
+runner_sha256: 934b756bec438e6f775a51b6a1d7c0c8db9542fc5db71321ef4db5c86823c152
+input_fingerprint_sha256: 3bfd186d3845d2572be7e9406d9eee66b797cbbaff627cc91624806dfd5af2ad
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 TELEPORTATION INITIAL-STATE PREPARATION PROBE
@@ -22,8 +23,8 @@ Case: 1d_null_initial
   traced logical resource at G=0: Phi+=0.500000, Bell*=0.500000 (Phi+), CHSH=2.000000, negativity=0.000000, purity=1.000000
   separability diagnostics:
     partition                                  S(bits)     purity  max weight   rank_eff rank_num
-    species A | species B                   7.854128e-28   1.000000    1.000000   1.000000        1
-    logical pair | environment pair         1.115915e-27   1.000000    1.000000   1.000000        1
+    species A | species B                   8.683959e-28   1.000000    1.000000   1.000000        1
+    logical pair | environment pair         1.018878e-27   1.000000    1.000000   1.000000        1
     single H1 logical | single H1 environment 1.211120e-28   1.000000    1.000000   1.000000        1
   native site-basis support:
     state                                            dim  support         PR     PR/dim   max prob  Hsite(bits)
@@ -49,8 +50,8 @@ Case: 2d_null_initial
   traced logical resource at G=0: Phi+=0.500000, Bell*=0.500000 (Phi+), CHSH=2.000000, negativity=0.000000, purity=1.000000
   separability diagnostics:
     partition                                  S(bits)     purity  max weight   rank_eff rank_num
-    species A | species B                   2.081948e-29   1.000000    1.000000   1.000000        1
-    logical pair | environment pair         2.237988e-29   1.000000    1.000000   1.000000        1
+    species A | species B                   1.363281e-29   1.000000    1.000000   1.000000        1
+    logical pair | environment pair         5.443895e-29   1.000000    1.000000   1.000000        1
     single H1 logical | single H1 environment 2.071897e-29   1.000000    1.000000   1.000000        1
   native site-basis support:
     state                                            dim  support         PR     PR/dim   max prob  Hsite(bits)
@@ -58,8 +59,8 @@ Case: 2d_null_initial
     two-species G=0 ground in native site pairs      256      256 256.000000   1.000000   0.003906     8.000000
   simple candidate comparison:
     candidate                              E-E0    |<g|c>|2     PR/dim       S_AB      S_L|E     Bell*       neg
-    H1 ground tensor product                  0    1.000000   1.000000 7.089792e-31 6.594612e-29  0.500000  0.000000
-    uniform site product                      0    1.000000   1.000000 1.150353e-30 6.592044e-29  0.500000  0.000000
+    H1 ground tensor product       -8.881784e-16    1.000000   1.000000 7.089792e-31 6.594612e-29  0.500000  0.000000
+    uniform site product           -8.881784e-16    1.000000   1.000000 1.150353e-30 6.592044e-29  0.500000  0.000000
     localized |0>_A |0>_B              8.000000    0.003906   0.003906          0          0  0.500000  0.000000
     localized separated sites          8.000000    0.003906   0.003906          0          0  0.500000  0.000000
     single-env logical |+> product     6.000000    0.015625   0.015625          0          0  0.500000  0.000000

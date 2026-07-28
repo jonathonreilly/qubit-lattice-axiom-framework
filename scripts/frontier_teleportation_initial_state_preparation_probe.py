@@ -38,6 +38,10 @@ from frontier_teleportation_resource_from_poisson import (  # noqa: E402
     two_qubit_chsh,
 )
 
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_bell_inequality.py",
+    "scripts/frontier_teleportation_resource_from_poisson.py",
+)
 
 DEFAULT_CASES = (
     AuditCase("1d_null_initial", dim=1, side=8, mass=0.0, G=0.0),

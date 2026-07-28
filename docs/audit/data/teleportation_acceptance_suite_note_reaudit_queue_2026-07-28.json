@@ -1,0 +1,40 @@
+{
+  "allowed_context_paths": [
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md",
+    "scripts/frontier_teleportation_acceptance_suite_note_sync_check.py",
+    "scripts/frontier_teleportation_acceptance_suite.py",
+    "logs/runner-cache/frontier_teleportation_acceptance_suite_note_sync_check.txt"
+  ],
+  "forbidden_context": [
+    "this dispatcher manifest as evidence",
+    "PR discussion as evidence",
+    "prior assistant discussion",
+    "prior audit rationales as evidence",
+    "publication-facing status summaries as evidence",
+    "generated audit queue output as evidence"
+  ],
+  "generated_date": "2026-07-28",
+  "groups": [
+    {
+      "blocked_by_group_ids": [],
+      "group_id": "teleportation_acceptance_suite_note_fresh_context",
+      "order": 1,
+      "targets": [
+        {
+          "audit_question": "Fresh-context re-audit: do the current meta note, its synchronization guard, the live default and strict list surfaces, and the input-fingerprinted runner cache establish that the note accurately documents the 12-row default and 24-row strict acceptance-harness inventories while preserving the stated bounded-telemetry boundary and making no claim about the child probes' physics?",
+          "claim_id": "teleportation_acceptance_suite_note",
+          "current_audit_status": "unaudited",
+          "current_claim_type": "meta",
+          "current_effective_status": "meta",
+          "note_path": "docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md"
+        }
+      ]
+    }
+  ],
+  "must_not_apply_ledger_changes_from_this_file": true,
+  "schema": "promotion_reaudit_queue.v1",
+  "status": "dispatcher_only_not_audit_verdict"
+}

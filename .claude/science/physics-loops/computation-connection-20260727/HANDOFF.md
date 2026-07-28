@@ -113,3 +113,28 @@ codex gpt-5.6-sol at xhigh (owner-directed this session). Extraction
 deliverables and worker specs are in this pack and the session scratchpad.
 Review-loop and audit lanes are owner-operated; this block hands off at the
 PR surface.
+
+## Block04 (Cycle 724) — radius-1 local token row and the W1 split
+
+Delivered stacked on block03 (PR #5700): the refusal sandwich extended to
+a radius-one local token row (98,034-gate H; 546-case census zero
+mismatches; adjacent collisions refused; distant-token sector exhibited
+passing all local rows — global one-token existence/uniqueness is not
+locally derivable at bounded radius and remains supplied; w1_closed
+false). Independent checker 4/4 with digit-exact boundary witnesses.
+
+## Campaign final handoff (2026-07-28 ~05:40)
+
+Four PRs await owner-operated review: #5697 (Cycle 721 tournament, base
+main), #5698 (Cycle 722 epoch-fed harness, stacked on #5697), #5699
+(Cycle 723 refusal wrap, base main), #5700 (Cycle 724 token row, stacked
+on #5699). Highest-value next moves, all deliberately NOT taken this
+campaign and queued with reasons: (1) the controller-to-BKSF mode-graph
+convention for a Gauss-style charge row — a new supplied convention the
+owner should shape; (2) the public factorization-object API (new module)
+for the V_s-restriction compiler — API design the owner should shape;
+(3) the source-lift tournament definition — target contract recorded
+above; adopt or amend before any attempt; (4) raw-Bell coset diagnostic —
+small, below the churn bar tonight. The unrepaired repo automation lock
+path (/Users/jonreilly) is still broken on this machine and worth an
+owner fix.

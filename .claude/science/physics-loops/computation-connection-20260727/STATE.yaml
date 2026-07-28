@@ -174,3 +174,28 @@ next_action: >
   physics-loop/computation-connection-block03-20260728 from origin/main;
   commit; push; PR. Campaign stop ~09:37.
 stop_condition: runtime exhaustion ~2026-07-28T09:37 local, or global queue exhaustion per skill
+
+checkpoint_0540_final: >
+  BLOCK03 CLOSED (PR #5699, independent, base main) and BLOCK04 CLOSED
+  (PR #5700, stacked on block03): Cycle 723 refusal-wrapped controller
+  (A-H + 4/4; 95,850-gate wrapped H; 182-case dirty-rail census zero
+  mismatches; honest trade recorded) and Cycle 724 radius-1 local token
+  row (10/10 + 4/4; 98,034-gate extended H; 546-case census zero
+  mismatches; adjacent collisions refused; the distant-token sector
+  exhibited passing every local row — the exact W1 local/global split;
+  w1_closed false). CAMPAIGN STOP (authorized): four blocks / four PRs
+  (#5697 base main; #5698 stacked on 01; #5699 base main; #5700 stacked
+  on 03) in one family — the cluster-cap evaluator and the queue
+  dispositions below justify BACKLOG for every remaining candidate:
+  Gauss/BKSF charge-row mapping and V_s factorization-object API are
+  owner-gated new supplied conventions/API design; the source-lift
+  tournament definition is meta-only (target contract already in
+  HANDOFF); the raw-Bell coset diagnostic is below the churn bar with
+  four unreviewed PRs open. Runtime used ~8h of 12h; stop is
+  queue-state-based, not runtime exhaustion.
+campaign_final_status: stopped_clean_with_pr_backlog_and_owner_gated_queue
+resume_hint: >
+  To resume: read this STATE, HANDOFF.md, and OPPORTUNITY_QUEUE.md on
+  this branch (block02 lineage carries the pack); science lineages:
+  block01<-block02 stack and block03<-block04 stack. Await owner review
+  of PRs #5697-#5700 before opening further PRs in this family.

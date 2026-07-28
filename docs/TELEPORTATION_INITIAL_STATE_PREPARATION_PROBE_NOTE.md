@@ -174,12 +174,12 @@ zero, purities are `1`, and numerical Schmidt rank is `1`.
 
 | case | partition | entropy bits | purity | max Schmidt weight | numerical rank |
 | --- | --- | ---: | ---: | ---: | ---: |
-| `1d_null_initial` | species A / species B | `7.854128e-28` | `1.000000` | `1.000000` | `1` |
-| `1d_null_initial` | logical pair / environment pair | `1.115915e-27` | `1.000000` | `1.000000` | `1` |
-| `1d_null_initial` | single `H1` logical / environment | `1.211120e-28` | `1.000000` | `1.000000` | `1` |
-| `2d_null_initial` | species A / species B | `2.081948e-29` | `1.000000` | `1.000000` | `1` |
-| `2d_null_initial` | logical pair / environment pair | `2.237988e-29` | `1.000000` | `1.000000` | `1` |
-| `2d_null_initial` | single `H1` logical / environment | `2.071897e-29` | `1.000000` | `1.000000` | `1` |
+| `1d_null_initial` | species A / species B | `0` | `1.000000` | `1.000000` | `1` |
+| `1d_null_initial` | logical pair / environment pair | `0` | `1.000000` | `1.000000` | `1` |
+| `1d_null_initial` | single `H1` logical / environment | `0` | `1.000000` | `1.000000` | `1` |
+| `2d_null_initial` | species A / species B | `0` | `1.000000` | `1.000000` | `1` |
+| `2d_null_initial` | logical pair / environment pair | `0` | `1.000000` | `1.000000` | `1` |
+| `2d_null_initial` | single `H1` logical / environment | `0` | `1.000000` | `1.000000` | `1` |
 
 The traced logical resource at `G=0` is not an entangled teleportation
 resource. It has Bell overlap `0.5`, CHSH `2.0`, and negativity `0.0` in both
@@ -209,12 +209,12 @@ The only exact candidate is the delocalized `H1` ground-state tensor product.
 
 | case | candidate | energy excess `E-E0` | ground fidelity | `PR/dim` | logical/env entropy | Bell overlap | negativity |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| `1d_null_initial` | `H1` ground tensor product | `1.332268e-15` | `1.000000` | `1.000000` | `2.527436e-28` | `0.500000` | `0.000000` |
-| `1d_null_initial` | uniform site product | `8.881784e-16` | `1.000000` | `1.000000` | `3.622957e-30` | `0.500000` | `0.000000` |
+| `1d_null_initial` | `H1` ground tensor product | `0` | `1.000000` | `1.000000` | `0` | `0.500000` | `0.000000` |
+| `1d_null_initial` | uniform site product | `0` | `1.000000` | `1.000000` | `0` | `0.500000` | `0.000000` |
 | `1d_null_initial` | localized `|0>_A |0>_B` | `4.000000` | `0.015625` | `0.015625` | `0` | `0.500000` | `0.000000` |
 | `1d_null_initial` | single-env logical `|+>` product | `2.000000` | `0.062500` | `0.062500` | `0` | `0.500000` | `0.000000` |
-| `2d_null_initial` | `H1` ground tensor product | `0` | `1.000000` | `1.000000` | `6.594612e-29` | `0.500000` | `0.000000` |
-| `2d_null_initial` | uniform site product | `0` | `1.000000` | `1.000000` | `6.592044e-29` | `0.500000` | `0.000000` |
+| `2d_null_initial` | `H1` ground tensor product | `0` | `1.000000` | `1.000000` | `0` | `0.500000` | `0.000000` |
+| `2d_null_initial` | uniform site product | `0` | `1.000000` | `1.000000` | `0` | `0.500000` | `0.000000` |
 | `2d_null_initial` | localized `|0>_A |0>_B` | `8.000000` | `0.003906` | `0.003906` | `0` | `0.500000` | `0.000000` |
 | `2d_null_initial` | single-env logical `|+>` product | `6.000000` | `0.015625` | `0.015625` | `0` | `0.500000` | `0.000000` |
 

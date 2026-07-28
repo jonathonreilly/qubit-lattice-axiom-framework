@@ -139,7 +139,7 @@ class CaseDiagnostics:
 def fmt_float(value: float) -> str:
     if math.isinf(value):
         return "inf"
-    if value == 0.0:
+    if abs(value) <= 1e-12:
         return "0"
     if abs(value) < 1e-3 or abs(value) >= 1e4:
         return f"{value:.6e}"

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_initial_state_preparation_probe.py
-runner_sha256: 934b756bec438e6f775a51b6a1d7c0c8db9542fc5db71321ef4db5c86823c152
+runner_sha256: 89159996bea7538d225de810ad6d66d6aae4329f2656170dae1f8bf7ba3d0b06
 input_fingerprint_sha256: 3bfd186d3845d2572be7e9406d9eee66b797cbbaff627cc91624806dfd5af2ad
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.20
 status: ok
 ----- stdout -----
 TELEPORTATION INITIAL-STATE PREPARATION PROBE
@@ -23,17 +23,17 @@ Case: 1d_null_initial
   traced logical resource at G=0: Phi+=0.500000, Bell*=0.500000 (Phi+), CHSH=2.000000, negativity=0.000000, purity=1.000000
   separability diagnostics:
     partition                                  S(bits)     purity  max weight   rank_eff rank_num
-    species A | species B                   8.683959e-28   1.000000    1.000000   1.000000        1
-    logical pair | environment pair         1.018878e-27   1.000000    1.000000   1.000000        1
-    single H1 logical | single H1 environment 1.211120e-28   1.000000    1.000000   1.000000        1
+    species A | species B                            0   1.000000    1.000000   1.000000        1
+    logical pair | environment pair                  0   1.000000    1.000000   1.000000        1
+    single H1 logical | single H1 environment          0   1.000000    1.000000   1.000000        1
   native site-basis support:
     state                                            dim  support         PR     PR/dim   max prob  Hsite(bits)
     single H1 ground in native sites                   8        8   8.000000   1.000000   0.125000     3.000000
     two-species G=0 ground in native site pairs       64       64  64.000000   1.000000   0.015625     6.000000
   simple candidate comparison:
     candidate                              E-E0    |<g|c>|2     PR/dim       S_AB      S_L|E     Bell*       neg
-    H1 ground tensor product       1.332268e-15    1.000000   1.000000 1.567415e-30 2.527436e-28  0.500000  0.000000
-    uniform site product           8.881784e-16    1.000000   1.000000 5.067005e-31 3.622957e-30  0.500000  0.000000
+    H1 ground tensor product                  0    1.000000   1.000000          0          0  0.500000  0.000000
+    uniform site product                      0    1.000000   1.000000          0          0  0.500000  0.000000
     localized |0>_A |0>_B              4.000000    0.015625   0.015625          0          0  0.500000  0.000000
     localized separated sites          4.000000    0.015625   0.015625          0          0  0.500000  0.000000
     single-env logical |+> product     2.000000    0.062500   0.062500          0          0  0.500000  0.000000
@@ -50,17 +50,17 @@ Case: 2d_null_initial
   traced logical resource at G=0: Phi+=0.500000, Bell*=0.500000 (Phi+), CHSH=2.000000, negativity=0.000000, purity=1.000000
   separability diagnostics:
     partition                                  S(bits)     purity  max weight   rank_eff rank_num
-    species A | species B                   1.363281e-29   1.000000    1.000000   1.000000        1
-    logical pair | environment pair         5.443895e-29   1.000000    1.000000   1.000000        1
-    single H1 logical | single H1 environment 2.071897e-29   1.000000    1.000000   1.000000        1
+    species A | species B                            0   1.000000    1.000000   1.000000        1
+    logical pair | environment pair                  0   1.000000    1.000000   1.000000        1
+    single H1 logical | single H1 environment          0   1.000000    1.000000   1.000000        1
   native site-basis support:
     state                                            dim  support         PR     PR/dim   max prob  Hsite(bits)
     single H1 ground in native sites                  16       16  16.000000   1.000000   0.062500     4.000000
     two-species G=0 ground in native site pairs      256      256 256.000000   1.000000   0.003906     8.000000
   simple candidate comparison:
     candidate                              E-E0    |<g|c>|2     PR/dim       S_AB      S_L|E     Bell*       neg
-    H1 ground tensor product       -8.881784e-16    1.000000   1.000000 7.089792e-31 6.594612e-29  0.500000  0.000000
-    uniform site product           -8.881784e-16    1.000000   1.000000 1.150353e-30 6.592044e-29  0.500000  0.000000
+    H1 ground tensor product                  0    1.000000   1.000000          0          0  0.500000  0.000000
+    uniform site product                      0    1.000000   1.000000          0          0  0.500000  0.000000
     localized |0>_A |0>_B              8.000000    0.003906   0.003906          0          0  0.500000  0.000000
     localized separated sites          8.000000    0.003906   0.003906          0          0  0.500000  0.000000
     single-env logical |+> product     6.000000    0.015625   0.015625          0          0  0.500000  0.000000

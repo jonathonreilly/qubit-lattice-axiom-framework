@@ -138,8 +138,39 @@ checkpoint_0125: >
   unchanged verbatim. Prior-art sweep at origin/main ab163961a9: no
   epoch-fed harness exists (EventChain consumers = the known 704/718/719
   lineage only). Draft worker launched (sol xhigh).
+checkpoint_0230: >
+  BLOCK02 CLOSED. Cycle-722 primary 7/7 + independent checker 6/6, both
+  supervisor-rerun verified; note + receipt + content-pinned caches;
+  committed 70ff3a8720; PR #5698 OPEN, stacked on block01 PR #5697.
+  Queue rank-2 closed. BLOCK03 OPEN = Cycle 723: the Cycle-719 W1 leg —
+  wrap the exact five-M2 refusal primitive (34 primitives, 60 routed
+  gates, 16/16 truth rows) around every controlled data macro of the
+  two-rail controller (H = RQ, 130 stations), so dirty B/work sectors are
+  locally refused at each macro instead of supplied clean. Target:
+  lawful held orbits (2/5/12) unchanged; per-macro dirty injections
+  refused exhaustively; deletions/hostile controls; routes + 24/576
+  coordinate covariance; fixtures unchanged. This narrows W1 without
+  claiming genesis (no unique-token or clean-syndrome preparation).
+  Controller lineage runners live on the 719 surface (K = two_rail core);
+  grounding extraction dispatched.
+checkpoint_0300: >
+  Block03 design locked from EXTRACT_719_CONTROLLER.md: per-station
+  reversible refusal sandwich (compute B|work into synd_s; X-guard; lift
+  every X/CNOT/TOF with an extra synd control; unguard; uncompute — valid
+  because B/work are station-invariant inside Q), fresh clean scratch pool
+  (dirty-work trap honored), honest trade recorded (retires the unchecked
+  clean-B/work assertion per macro; adds clean synd/scratch genesis to
+  the supplied inventory; unique token still supplied; w1_closed false).
+  Certificates A-H specced (unwrapped regression anchor; lawful-unchanged
+  2/5/12 + padded; sector controls; EXHAUSTIVE per-macro dirty refusal
+  with independent semantic prediction; deletions; physical layer with
+  extended sites; compiled wrapped orbit on six branches; inherited
+  anchors). Draft worker launched (sol xhigh). Block03 lands as an
+  INDEPENDENT PR based on main (touches only the 719 surface).
 next_action: >
-  On F4 worker completion: supervisor review + rerun; then small
-  independent checker; CYCLE722 note + receipt + caches; lint; commit;
-  push; stacked PR (base block01). Campaign runtime remaining ~8h.
+  On F5 completion: supervisor review + rerun (watch AUDIT_TIMEOUT_SEC vs
+  measured runtime; raise the constant if the wrapped orbit needs it);
+  small checker; CYCLE723 note; receipt; caches; lint; branch
+  physics-loop/computation-connection-block03-20260728 from origin/main;
+  commit; push; PR. Campaign stop ~09:37.
 stop_condition: runtime exhaustion ~2026-07-28T09:37 local, or global queue exhaustion per skill

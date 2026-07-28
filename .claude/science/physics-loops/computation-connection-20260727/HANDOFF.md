@@ -93,6 +93,19 @@ target contract for the block that defines it:
   constructive leg with its own N-gate discipline; otherwise the block
   ships as a definition-only meta artifact, honestly labeled.
 
+## Block03 (Cycle 723) — refusal-wrapped controller
+
+Delivered as an INDEPENDENT PR based on main (touches only the Cycle-719
+surface): `frontier_cycle723_refusal_wrapped_controller_2026_07_28.py`
+(A-H certificates) + `frontier_cycle723_refusal_wrap_independent_check_2026_07_28.py`
+(4/4) + `docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md`.
+Every controlled macro of the padded 130-station controller wrapped in the
+reversible refusal sandwich; lawful behavior unchanged; 182-case dirty-rail
+census with zero mismatches; honest trade: clean per-station
+syndrome/scratch genesis newly supplied; w1_closed false. Next W1 half:
+the locally checked token/charge row (local Gauss route, queue rank
+below).
+
 ## Session/worker provenance
 
 Supervisor: physics-loop session under the workhorse split; workers:

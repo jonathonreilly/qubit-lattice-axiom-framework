@@ -113,6 +113,33 @@ movement), so the gate is answered for the PR record:
   the structural distinction is the producer surface (compiled input +
   epoch), checked against fresh origin/main.
 
+## Block03 (Cycle 723) supervisor review log
+
+- Grounding: EXTRACT_719_CONTROLLER.md (bounded extraction of the two-rail
+  core + refusal primitive + rerun surfaces + coupling traps), used to lock
+  the reversible per-station sandwich design (compute B|work; X-guard;
+  NOT-syndrome control on every lifted gate; unguard; uncompute — valid
+  because B/work are station-invariant inside Q; fresh scratch pool honors
+  the dirty-work trap).
+- F5 draft: first-delivery PASS (A-H certificates), supervisor rerun
+  verified (exit 0); supervisor reviewed refusing_controlled_macro and the
+  wrapped/unwrapped builders line-by-line (every macro gate guarded; R1/R2
+  and program rows untouched; work_s/B_s invariance preserved).
+- Independent checker: 4/4 PASS, supervisor rerun verified — first-
+  principles simulator + own sandwich implementation agree exhaustively on
+  the 2-bank program (22/22 dirt cases), inverse restores 32/32 basis
+  states, source discipline verified by AST, and the 95,850-gate word size
+  reproduced by independent arithmetic (728+12,306+2,796+79,240+780).
+- V1-V5: V1 closes the Cycle-719 N6 "strongest next closure" and executes
+  the refusal half of its N7 steelman terminal test (quoted in the note);
+  V2 sweep: no wrapped-controller artifact exists on origin/main (the 719
+  runner's own report records non-integration); V3 no (companion-code
+  controller construction, not standard machinery); V4 yes (exhaustive
+  182-case refusal census with independent predictions + honest
+  supplied-inventory trade); V5 no (the Cycle-719 diagnostic guards one
+  sample X at one station; this wraps all 91 stations with a different,
+  reversible sandwich and re-certifies the full surface).
+
 ## Review-loop disposition
 
 Owner-operated lane (standing rule 2026-06-11): this block prepares the PR

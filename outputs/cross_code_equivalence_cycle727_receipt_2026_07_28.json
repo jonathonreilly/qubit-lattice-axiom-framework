@@ -1,0 +1,96 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle727_cross_code_equivalence_2026_07_28.txt": "ddb00d502cdb932b6cf5d3e7c07b901af35231880f48ca8d3067177e219d5414",
+      "frontier_cycle727_cross_code_independent_check_2026_07_28.txt": "825236c7496b31dcac6e3bf2377ebc29d6591350eff98a5d0579e854e96ab700"
+    },
+    "note": {
+      "path": "docs/CROSS_CODE_EQUIVALENCE_CYCLE727_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "8d549fcb6f82925b7e98da34e1090e0b701edea4bb78b35349f83841b43eb882"
+    },
+    "runners": {
+      "frontier_cycle727_cross_code_equivalence_2026_07_28.py": "be33f69aee2ad61868bf0a5a0423a461ad23c547161ad9b106154248b3cec2c4",
+      "frontier_cycle727_cross_code_independent_check_2026_07_28.py": "8b6fb78bb7808428747dcb6f71f386efd478ccdd9a0440e0737b3b0275702766"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "cross_code_pullbacks_exact": true,
+    "fixed_supplies": "the frozen common dictionary (labels, oriented edges, endpoint convention, signed generator lists, total-parity convention); both landed surfaces at their own supplies",
+    "full_sector_isometry_exists": false,
+    "marker_to_coframe_correspondence_exists": false,
+    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
+    "not_derived": "a sector-summed or direct-sum companion channel, any marker-to-companion structural map, autonomous genesis/enforcement, bounded physical common-E preparation, the global tiled channel tensor, or any time/Record/Born/source content",
+    "one_reference_m2_fixture_exists_in_C": false,
+    "positive_scope": "exact per-family per-parity signed Heisenberg pullbacks between the CellEdgeGauge/EulerMarkerGauge surface and the companion surface on the regression boxes, with both anchor sets rerun unchanged and the two obstruction censuses frozen as literal tables (sector exponent pairs; marker counts)",
+    "sector_summed_companion_channel_constructed": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 13,
+    "primary_named_checks_passed": 34
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 727,
+  "date": "2026-07-28",
+  "result": {
+    "anchor_reruns": {
+      "common_e": "7/7",
+      "companion_choi": "5/5"
+    },
+    "companion_class_correspondences": 0,
+    "marker_censuses_vefc": [
+      [
+        8,
+        12,
+        6,
+        1
+      ],
+      [
+        12,
+        20,
+        11,
+        2
+      ],
+      [
+        18,
+        33,
+        20,
+        4
+      ],
+      [
+        30,
+        59,
+        38,
+        8
+      ]
+    ],
+    "pullback_generators_by_box": [
+      312,
+      472,
+      714,
+      1198
+    ],
+    "sector_exponent_pairs": [
+      [
+        48,
+        47
+      ],
+      [
+        72,
+        71
+      ],
+      [
+        108,
+        107
+      ],
+      [
+        180,
+        179
+      ]
+    ]
+  },
+  "status": "CYCLE727_CROSS_CODE_EQUIVALENCE_PASS"
+}

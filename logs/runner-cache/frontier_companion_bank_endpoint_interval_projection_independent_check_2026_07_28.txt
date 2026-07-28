@@ -1,0 +1,1805 @@
+===== runner cache v1 =====
+runner: scripts/frontier_companion_bank_endpoint_interval_projection_independent_check_2026_07_28.py
+runner_sha256: 1dfb95c90db06712b37b7fb4318880060ecd47f27114db45fdffe22b97279a47
+input_fingerprint_sha256: 82c2b616b14229c6070b35bc0ca0472fcea30f36e03acd94b6fd57be6ea581e1
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 6.31
+status: ok
+----- stdout -----
+PASS packet_map_extraction
+PASS independent_parent_field_certificates
+PASS independent_interval_certificate
+PASS unchanged_612_certificate
+PASS sha_pin_certificate
+PASS fault_certificate
+PASS primary_source_discipline
+{
+  "audit": "unset",
+  "authority": "none",
+  "blocked_primary_imports_present": [],
+  "certificates": {
+    "faults": {
+      "actuality_flip": {
+        "identity": 11,
+        "incomplete": true,
+        "independent_quadruple": {
+          "interval(11,2)": null,
+          "interval(11,23)": null,
+          "interval(2,11)": null,
+          "interval(2,23)": 20
+        },
+        "independent_status": "refused_supplied",
+        "landed_quadruple": {
+          "interval(11,2)": null,
+          "interval(11,23)": null,
+          "interval(2,11)": null,
+          "interval(2,23)": 20
+        },
+        "landed_status": "refused_supplied",
+        "pass": true
+      },
+      "hostile_order": {
+        "23_before_11": true,
+        "differs_from_frozen": true,
+        "identity_sequence": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          23,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          11
+        ],
+        "independent_quadruple": {
+          "interval(11,2)": -21,
+          "interval(11,23)": -12,
+          "interval(2,11)": 21,
+          "interval(2,23)": 9
+        },
+        "landed_quadruple": {
+          "interval(11,2)": -21,
+          "interval(11,23)": -12,
+          "interval(2,11)": 21,
+          "interval(2,23)": 9
+        },
+        "pass": true
+      },
+      "pass": true,
+      "twenty_fifth_admission": {
+        "identity": 24,
+        "independent_status": "exhausted",
+        "landed_status": "exhausted",
+        "pass": true
+      }
+    },
+    "independent_interval": {
+      "admission_by_admission_agreement": true,
+      "admission_comparisons": [
+        {
+          "identity": 0,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 1,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 2,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 3,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 4,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 5,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 6,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 7,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 8,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 9,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 10,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 11,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 12,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 13,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 14,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 15,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 16,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 17,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 18,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 19,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 20,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 21,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 22,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        },
+        {
+          "identity": 23,
+          "independent_status": "admitted",
+          "landed_status": "admitted",
+          "new_cell_equal": true,
+          "status_equal": true
+        }
+      ],
+      "grammar": "ADMIT = opportunity AND freshness AND actuality AND admissibility AND law_domain; opportunity = certificate AND binder",
+      "independent_quadruple": {
+        "interval(11,2)": -9,
+        "interval(11,23)": 12,
+        "interval(2,11)": 9,
+        "interval(2,23)": 21
+      },
+      "interval_rule": "16*sum(carries_after_start_through_end)+end_rotor-start_rotor",
+      "landed_cycle610_quadruple": {
+        "interval(11,2)": -9,
+        "interval(11,23)": 12,
+        "interval(2,11)": 9,
+        "interval(2,23)": 21
+      },
+      "pass": true,
+      "rotor_rule": "rotor=(previous_rotor+1)%16; carry=int(rotor==0)",
+      "rotor_seed": 14
+    },
+    "packet_map_extraction": {
+      "declared_register_roles": [
+        {
+          "field": "certificate",
+          "origin_stage": "B",
+          "register_expression": "endpoint_registers[0]",
+          "register_roles": [
+            "Bell_measurement_ancilla_0",
+            "declared_port_parity_0"
+          ]
+        },
+        {
+          "field": "binder",
+          "origin_stage": "B",
+          "register_expression": "endpoint_registers[1]",
+          "register_roles": [
+            "Bell_measurement_ancilla_1",
+            "declared_port_parity_1"
+          ]
+        },
+        {
+          "field": "actuality",
+          "origin_stage": "A",
+          "register_expression": "pump_registers[0]",
+          "register_roles": [
+            "pump_syndrome_0"
+          ]
+        },
+        {
+          "field": "admissibility",
+          "origin_stage": "A",
+          "register_expression": "pump_registers[1]",
+          "register_roles": [
+            "pump_syndrome_1"
+          ]
+        },
+        {
+          "field": "law_domain",
+          "origin_stage": "A",
+          "register_expression": "pump_registers[2]",
+          "register_roles": [
+            "pump_syndrome_2"
+          ]
+        }
+      ],
+      "identities_strictly_ascending": true,
+      "identity_positions": {
+        "2": 2,
+        "11": 11,
+        "23": 23
+      },
+      "identity_sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "opportunities": 24,
+      "pass": true,
+      "required_identities_present": true,
+      "table_sha256": "849dd3fc3c87bfc57e933b9ff68d7c414d957629f0edbe93875d22ef3ae15ee3"
+    },
+    "parent_field_certificates": {
+      "boxes": {
+        "2x2x2": {
+          "alternate_port": {
+            "endpoint_predicate": {
+              "kind": "static absence-of-port-parity-failure predicate",
+              "parity_failures": 0
+            },
+            "parent_walk": {
+              "collisions": 0,
+              "handoffs_consumed": 184,
+              "handoffs_declared": 184,
+              "slots": 17547,
+              "violations": 0
+            },
+            "pass": true,
+            "pump_predicate": "three static private-dual/row pairings",
+            "selected_register_traces": [
+              {
+                "final_owner": {
+                  "family": "port_CNOT",
+                  "mode": "write",
+                  "retained_after": true,
+                  "role": "data",
+                  "slot": 227,
+                  "stage": "B",
+                  "word": "B:port_CNOT:2"
+                },
+                "origin_stage": "B",
+                "origin_word": "B:port_CNOT:2",
+                "origin_write_count": 3,
+                "pass": true,
+                "register": 72,
+                "trace_length": 6
+              },
+              {
+                "final_owner": {
+                  "family": "port_CNOT",
+                  "mode": "write",
+                  "retained_after": true,
+                  "role": "data",
+                  "slot": 230,
+                  "stage": "B",
+                  "word": "B:port_CNOT:5"
+                },
+                "origin_stage": "B",
+                "origin_word": "B:port_CNOT:5",
+                "origin_write_count": 3,
+                "pass": true,
+                "register": 73,
+                "trace_length": 10
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 2,
+                  "stage": "A",
+                  "word": "A:pump_correction:0"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:0",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 716,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 4,
+                  "stage": "A",
+                  "word": "A:pump_correction:1"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:1",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 717,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 6,
+                  "stage": "A",
+                  "word": "A:pump_correction:2"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:2",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 718,
+                "trace_length": 2
+              }
+            ],
+            "value_semantics": "static algebraic predicates, not simulated register-state values",
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "primary": {
+            "endpoint_predicate": {
+              "kind": "static private-dual/row pairing",
+              "range_size": 100
+            },
+            "parent_walk": {
+              "collisions": 0,
+              "handoffs_consumed": 504,
+              "handoffs_declared": 504,
+              "slots": 17650,
+              "violations": 0
+            },
+            "pass": true,
+            "pump_predicate": "three static private-dual/row pairings",
+            "selected_register_traces": [
+              {
+                "final_owner": {
+                  "family": "Bell_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "ancilla",
+                  "slot": 234,
+                  "stage": "C",
+                  "word": "C:Bell_correction:0"
+                },
+                "origin_stage": "B",
+                "origin_word": "B:bell_measure:0",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 616,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "Bell_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "ancilla",
+                  "slot": 250,
+                  "stage": "C",
+                  "word": "C:Bell_correction:1"
+                },
+                "origin_stage": "B",
+                "origin_word": "B:bell_measure:1",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 617,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 2,
+                  "stage": "A",
+                  "word": "A:pump_correction:0"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:0",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 716,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 4,
+                  "stage": "A",
+                  "word": "A:pump_correction:1"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:1",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 717,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 6,
+                  "stage": "A",
+                  "word": "A:pump_correction:2"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:2",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 718,
+                "trace_length": 2
+              }
+            ],
+            "value_semantics": "static algebraic predicates, not simulated register-state values",
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "3x2x2": {
+          "alternate_port": {
+            "endpoint_predicate": {
+              "kind": "static absence-of-port-parity-failure predicate",
+              "parity_failures": 0
+            },
+            "parent_walk": {
+              "collisions": 0,
+              "handoffs_consumed": 272,
+              "handoffs_declared": 272,
+              "slots": 27303,
+              "violations": 0
+            },
+            "pass": true,
+            "pump_predicate": "three static private-dual/row pairings",
+            "selected_register_traces": [
+              {
+                "final_owner": {
+                  "family": "port_CNOT",
+                  "mode": "write",
+                  "retained_after": true,
+                  "role": "data",
+                  "slot": 347,
+                  "stage": "B",
+                  "word": "B:port_CNOT:2"
+                },
+                "origin_stage": "B",
+                "origin_word": "B:port_CNOT:2",
+                "origin_write_count": 3,
+                "pass": true,
+                "register": 108,
+                "trace_length": 6
+              },
+              {
+                "final_owner": {
+                  "family": "port_CNOT",
+                  "mode": "write",
+                  "retained_after": true,
+                  "role": "data",
+                  "slot": 350,
+                  "stage": "B",
+                  "word": "B:port_CNOT:5"
+                },
+                "origin_stage": "B",
+                "origin_word": "B:port_CNOT:5",
+                "origin_write_count": 3,
+                "pass": true,
+                "register": 109,
+                "trace_length": 10
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 2,
+                  "stage": "A",
+                  "word": "A:pump_correction:0"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:0",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 1090,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 4,
+                  "stage": "A",
+                  "word": "A:pump_correction:1"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:1",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 1091,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 6,
+                  "stage": "A",
+                  "word": "A:pump_correction:2"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:2",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 1092,
+                "trace_length": 2
+              }
+            ],
+            "value_semantics": "static algebraic predicates, not simulated register-state values",
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "primary": {
+            "endpoint_predicate": {
+              "kind": "static private-dual/row pairing",
+              "range_size": 152
+            },
+            "parent_walk": {
+              "collisions": 0,
+              "handoffs_consumed": 760,
+              "handoffs_declared": 760,
+              "slots": 27468,
+              "violations": 0
+            },
+            "pass": true,
+            "pump_predicate": "three static private-dual/row pairings",
+            "selected_register_traces": [
+              {
+                "final_owner": {
+                  "family": "Bell_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "ancilla",
+                  "slot": 356,
+                  "stage": "C",
+                  "word": "C:Bell_correction:0"
+                },
+                "origin_stage": "B",
+                "origin_word": "B:bell_measure:0",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 938,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "Bell_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "ancilla",
+                  "slot": 380,
+                  "stage": "C",
+                  "word": "C:Bell_correction:1"
+                },
+                "origin_stage": "B",
+                "origin_word": "B:bell_measure:1",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 939,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 2,
+                  "stage": "A",
+                  "word": "A:pump_correction:0"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:0",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 1090,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 4,
+                  "stage": "A",
+                  "word": "A:pump_correction:1"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:1",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 1091,
+                "trace_length": 2
+              },
+              {
+                "final_owner": {
+                  "family": "pump_onsite_Z_private_dual",
+                  "mode": "read",
+                  "retained_after": true,
+                  "role": "syndrome",
+                  "slot": 6,
+                  "stage": "A",
+                  "word": "A:pump_correction:2"
+                },
+                "origin_stage": "A",
+                "origin_word": "A:pump_measure:2",
+                "origin_write_count": 1,
+                "pass": true,
+                "register": 1092,
+                "trace_length": 2
+              }
+            ],
+            "value_semantics": "static algebraic predicates, not simulated register-state values",
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "pass": true,
+      "primary_runner_imported": false,
+      "register_state_readout_evaluated": false
+    },
+    "primary_source_discipline": {
+      "AUDIT_INPUT_PATHS_literal_error": null,
+      "AUDIT_INPUT_PATHS_literal_tuple": true,
+      "AUDIT_INPUT_PATHS_literal_value": [
+        "scripts/frontier_companion_bank_epoch_liveness_2026_07_28.py",
+        "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+        "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+        "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+        "scripts/frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py",
+        "docs/COMPANION_BANK_BELL_CHARACTER_DILATION_EXCHANGE_PORT_AND_EPOCH_LIVENESS_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/COMPANION_BANK_LIVENESS_SCHEDULE_ENDPOINT_INTERVAL_PACKET_PROJECTION_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+      ],
+      "attribute_assignments_onto_imported_harnesses": [],
+      "blocked_primary_imports_present": [],
+      "forbidden_class_definitions": [],
+      "imported_harness_aliases": [
+        "C704",
+        "EPOCH"
+      ],
+      "pass": true
+    },
+    "sha_pins": {
+      "expected_C704_pins": {
+        "Cycle610": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+        "Cycle612": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b"
+      },
+      "module_paths": {
+        "Cycle610": "/private/tmp/review-pr5698.ex5jAm/scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+        "Cycle612": "/private/tmp/review-pr5698.ex5jAm/scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py"
+      },
+      "module_paths_equal": true,
+      "observed_sha256": {
+        "Cycle610": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+        "Cycle612": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b"
+      },
+      "pass": true,
+      "paths": {
+        "Cycle610": "/private/tmp/review-pr5698.ex5jAm/scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+        "Cycle612": "/private/tmp/review-pr5698.ex5jAm/scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py"
+      },
+      "pins_equal": true
+    },
+    "unchanged_612": {
+      "JointOrder_class_module_equal": true,
+      "expected_six_frozen_outcomes": {
+        "consistent_acyclic": true,
+        "consistent_statuses": [
+          "admitted",
+          "admitted"
+        ],
+        "forced_cycle_detected": true,
+        "inverted_first": "admitted",
+        "inverted_refusal": "refused_inverted",
+        "no_endpoint_status": "no_opportunity"
+      },
+      "observed": {
+        "JointOrder_class_module": "physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22",
+        "consistent_acyclic": true,
+        "consistent_statuses": [
+          "admitted",
+          "admitted"
+        ],
+        "edge_qubit_opportunities": [
+          1,
+          1
+        ],
+        "forced_cycle_detected": true,
+        "inverted_first": "admitted",
+        "inverted_refusal": "refused_inverted",
+        "no_endpoint_status": "no_opportunity"
+      },
+      "pass": true,
+      "six_frozen_outcomes_equal": true
+    }
+  },
+  "checks": [
+    {
+      "detail": {
+        "declared_register_roles": [
+          {
+            "field": "certificate",
+            "origin_stage": "B",
+            "register_expression": "endpoint_registers[0]",
+            "register_roles": [
+              "Bell_measurement_ancilla_0",
+              "declared_port_parity_0"
+            ]
+          },
+          {
+            "field": "binder",
+            "origin_stage": "B",
+            "register_expression": "endpoint_registers[1]",
+            "register_roles": [
+              "Bell_measurement_ancilla_1",
+              "declared_port_parity_1"
+            ]
+          },
+          {
+            "field": "actuality",
+            "origin_stage": "A",
+            "register_expression": "pump_registers[0]",
+            "register_roles": [
+              "pump_syndrome_0"
+            ]
+          },
+          {
+            "field": "admissibility",
+            "origin_stage": "A",
+            "register_expression": "pump_registers[1]",
+            "register_roles": [
+              "pump_syndrome_1"
+            ]
+          },
+          {
+            "field": "law_domain",
+            "origin_stage": "A",
+            "register_expression": "pump_registers[2]",
+            "register_roles": [
+              "pump_syndrome_2"
+            ]
+          }
+        ],
+        "identities_strictly_ascending": true,
+        "identity_positions": {
+          "2": 2,
+          "11": 11,
+          "23": 23
+        },
+        "identity_sequence": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "opportunities": 24,
+        "pass": true,
+        "required_identities_present": true,
+        "table_sha256": "849dd3fc3c87bfc57e933b9ff68d7c414d957629f0edbe93875d22ef3ae15ee3"
+      },
+      "label": "packet_map_extraction",
+      "pass": true
+    },
+    {
+      "detail": {
+        "boxes": {
+          "2x2x2": {
+            "alternate_port": {
+              "endpoint_predicate": {
+                "kind": "static absence-of-port-parity-failure predicate",
+                "parity_failures": 0
+              },
+              "parent_walk": {
+                "collisions": 0,
+                "handoffs_consumed": 184,
+                "handoffs_declared": 184,
+                "slots": 17547,
+                "violations": 0
+              },
+              "pass": true,
+              "pump_predicate": "three static private-dual/row pairings",
+              "selected_register_traces": [
+                {
+                  "final_owner": {
+                    "family": "port_CNOT",
+                    "mode": "write",
+                    "retained_after": true,
+                    "role": "data",
+                    "slot": 227,
+                    "stage": "B",
+                    "word": "B:port_CNOT:2"
+                  },
+                  "origin_stage": "B",
+                  "origin_word": "B:port_CNOT:2",
+                  "origin_write_count": 3,
+                  "pass": true,
+                  "register": 72,
+                  "trace_length": 6
+                },
+                {
+                  "final_owner": {
+                    "family": "port_CNOT",
+                    "mode": "write",
+                    "retained_after": true,
+                    "role": "data",
+                    "slot": 230,
+                    "stage": "B",
+                    "word": "B:port_CNOT:5"
+                  },
+                  "origin_stage": "B",
+                  "origin_word": "B:port_CNOT:5",
+                  "origin_write_count": 3,
+                  "pass": true,
+                  "register": 73,
+                  "trace_length": 10
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 2,
+                    "stage": "A",
+                    "word": "A:pump_correction:0"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:0",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 716,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 4,
+                    "stage": "A",
+                    "word": "A:pump_correction:1"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:1",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 717,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 6,
+                    "stage": "A",
+                    "word": "A:pump_correction:2"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:2",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 718,
+                  "trace_length": 2
+                }
+              ],
+              "value_semantics": "static algebraic predicates, not simulated register-state values",
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            "primary": {
+              "endpoint_predicate": {
+                "kind": "static private-dual/row pairing",
+                "range_size": 100
+              },
+              "parent_walk": {
+                "collisions": 0,
+                "handoffs_consumed": 504,
+                "handoffs_declared": 504,
+                "slots": 17650,
+                "violations": 0
+              },
+              "pass": true,
+              "pump_predicate": "three static private-dual/row pairings",
+              "selected_register_traces": [
+                {
+                  "final_owner": {
+                    "family": "Bell_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "ancilla",
+                    "slot": 234,
+                    "stage": "C",
+                    "word": "C:Bell_correction:0"
+                  },
+                  "origin_stage": "B",
+                  "origin_word": "B:bell_measure:0",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 616,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "Bell_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "ancilla",
+                    "slot": 250,
+                    "stage": "C",
+                    "word": "C:Bell_correction:1"
+                  },
+                  "origin_stage": "B",
+                  "origin_word": "B:bell_measure:1",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 617,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 2,
+                    "stage": "A",
+                    "word": "A:pump_correction:0"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:0",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 716,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 4,
+                    "stage": "A",
+                    "word": "A:pump_correction:1"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:1",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 717,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 6,
+                    "stage": "A",
+                    "word": "A:pump_correction:2"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:2",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 718,
+                  "trace_length": 2
+                }
+              ],
+              "value_semantics": "static algebraic predicates, not simulated register-state values",
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          },
+          "3x2x2": {
+            "alternate_port": {
+              "endpoint_predicate": {
+                "kind": "static absence-of-port-parity-failure predicate",
+                "parity_failures": 0
+              },
+              "parent_walk": {
+                "collisions": 0,
+                "handoffs_consumed": 272,
+                "handoffs_declared": 272,
+                "slots": 27303,
+                "violations": 0
+              },
+              "pass": true,
+              "pump_predicate": "three static private-dual/row pairings",
+              "selected_register_traces": [
+                {
+                  "final_owner": {
+                    "family": "port_CNOT",
+                    "mode": "write",
+                    "retained_after": true,
+                    "role": "data",
+                    "slot": 347,
+                    "stage": "B",
+                    "word": "B:port_CNOT:2"
+                  },
+                  "origin_stage": "B",
+                  "origin_word": "B:port_CNOT:2",
+                  "origin_write_count": 3,
+                  "pass": true,
+                  "register": 108,
+                  "trace_length": 6
+                },
+                {
+                  "final_owner": {
+                    "family": "port_CNOT",
+                    "mode": "write",
+                    "retained_after": true,
+                    "role": "data",
+                    "slot": 350,
+                    "stage": "B",
+                    "word": "B:port_CNOT:5"
+                  },
+                  "origin_stage": "B",
+                  "origin_word": "B:port_CNOT:5",
+                  "origin_write_count": 3,
+                  "pass": true,
+                  "register": 109,
+                  "trace_length": 10
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 2,
+                    "stage": "A",
+                    "word": "A:pump_correction:0"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:0",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 1090,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 4,
+                    "stage": "A",
+                    "word": "A:pump_correction:1"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:1",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 1091,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 6,
+                    "stage": "A",
+                    "word": "A:pump_correction:2"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:2",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 1092,
+                  "trace_length": 2
+                }
+              ],
+              "value_semantics": "static algebraic predicates, not simulated register-state values",
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            },
+            "primary": {
+              "endpoint_predicate": {
+                "kind": "static private-dual/row pairing",
+                "range_size": 152
+              },
+              "parent_walk": {
+                "collisions": 0,
+                "handoffs_consumed": 760,
+                "handoffs_declared": 760,
+                "slots": 27468,
+                "violations": 0
+              },
+              "pass": true,
+              "pump_predicate": "three static private-dual/row pairings",
+              "selected_register_traces": [
+                {
+                  "final_owner": {
+                    "family": "Bell_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "ancilla",
+                    "slot": 356,
+                    "stage": "C",
+                    "word": "C:Bell_correction:0"
+                  },
+                  "origin_stage": "B",
+                  "origin_word": "B:bell_measure:0",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 938,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "Bell_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "ancilla",
+                    "slot": 380,
+                    "stage": "C",
+                    "word": "C:Bell_correction:1"
+                  },
+                  "origin_stage": "B",
+                  "origin_word": "B:bell_measure:1",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 939,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 2,
+                    "stage": "A",
+                    "word": "A:pump_correction:0"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:0",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 1090,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 4,
+                    "stage": "A",
+                    "word": "A:pump_correction:1"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:1",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 1091,
+                  "trace_length": 2
+                },
+                {
+                  "final_owner": {
+                    "family": "pump_onsite_Z_private_dual",
+                    "mode": "read",
+                    "retained_after": true,
+                    "role": "syndrome",
+                    "slot": 6,
+                    "stage": "A",
+                    "word": "A:pump_correction:2"
+                  },
+                  "origin_stage": "A",
+                  "origin_word": "A:pump_measure:2",
+                  "origin_write_count": 1,
+                  "pass": true,
+                  "register": 1092,
+                  "trace_length": 2
+                }
+              ],
+              "value_semantics": "static algebraic predicates, not simulated register-state values",
+              "values": [
+                1,
+                1,
+                1,
+                1,
+                1
+              ]
+            }
+          }
+        },
+        "pass": true,
+        "primary_runner_imported": false,
+        "register_state_readout_evaluated": false
+      },
+      "label": "independent_parent_field_certificates",
+      "pass": true
+    },
+    {
+      "detail": {
+        "admission_by_admission_agreement": true,
+        "admission_comparisons": [
+          {
+            "identity": 0,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 1,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 2,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 3,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 4,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 5,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 6,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 7,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 8,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 9,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 10,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 11,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 12,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 13,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 14,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 15,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 16,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 17,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 18,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 19,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 20,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 21,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 22,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          },
+          {
+            "identity": 23,
+            "independent_status": "admitted",
+            "landed_status": "admitted",
+            "new_cell_equal": true,
+            "status_equal": true
+          }
+        ],
+        "grammar": "ADMIT = opportunity AND freshness AND actuality AND admissibility AND law_domain; opportunity = certificate AND binder",
+        "independent_quadruple": {
+          "interval(11,2)": -9,
+          "interval(11,23)": 12,
+          "interval(2,11)": 9,
+          "interval(2,23)": 21
+        },
+        "interval_rule": "16*sum(carries_after_start_through_end)+end_rotor-start_rotor",
+        "landed_cycle610_quadruple": {
+          "interval(11,2)": -9,
+          "interval(11,23)": 12,
+          "interval(2,11)": 9,
+          "interval(2,23)": 21
+        },
+        "pass": true,
+        "rotor_rule": "rotor=(previous_rotor+1)%16; carry=int(rotor==0)",
+        "rotor_seed": 14
+      },
+      "label": "independent_interval_certificate",
+      "pass": true
+    },
+    {
+      "detail": {
+        "JointOrder_class_module_equal": true,
+        "expected_six_frozen_outcomes": {
+          "consistent_acyclic": true,
+          "consistent_statuses": [
+            "admitted",
+            "admitted"
+          ],
+          "forced_cycle_detected": true,
+          "inverted_first": "admitted",
+          "inverted_refusal": "refused_inverted",
+          "no_endpoint_status": "no_opportunity"
+        },
+        "observed": {
+          "JointOrder_class_module": "physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22",
+          "consistent_acyclic": true,
+          "consistent_statuses": [
+            "admitted",
+            "admitted"
+          ],
+          "edge_qubit_opportunities": [
+            1,
+            1
+          ],
+          "forced_cycle_detected": true,
+          "inverted_first": "admitted",
+          "inverted_refusal": "refused_inverted",
+          "no_endpoint_status": "no_opportunity"
+        },
+        "pass": true,
+        "six_frozen_outcomes_equal": true
+      },
+      "label": "unchanged_612_certificate",
+      "pass": true
+    },
+    {
+      "detail": {
+        "expected_C704_pins": {
+          "Cycle610": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+          "Cycle612": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b"
+        },
+        "module_paths": {
+          "Cycle610": "/private/tmp/review-pr5698.ex5jAm/scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+          "Cycle612": "/private/tmp/review-pr5698.ex5jAm/scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py"
+        },
+        "module_paths_equal": true,
+        "observed_sha256": {
+          "Cycle610": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+          "Cycle612": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b"
+        },
+        "pass": true,
+        "paths": {
+          "Cycle610": "/private/tmp/review-pr5698.ex5jAm/scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+          "Cycle612": "/private/tmp/review-pr5698.ex5jAm/scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py"
+        },
+        "pins_equal": true
+      },
+      "label": "sha_pin_certificate",
+      "pass": true
+    },
+    {
+      "detail": {
+        "actuality_flip": {
+          "identity": 11,
+          "incomplete": true,
+          "independent_quadruple": {
+            "interval(11,2)": null,
+            "interval(11,23)": null,
+            "interval(2,11)": null,
+            "interval(2,23)": 20
+          },
+          "independent_status": "refused_supplied",
+          "landed_quadruple": {
+            "interval(11,2)": null,
+            "interval(11,23)": null,
+            "interval(2,11)": null,
+            "interval(2,23)": 20
+          },
+          "landed_status": "refused_supplied",
+          "pass": true
+        },
+        "hostile_order": {
+          "23_before_11": true,
+          "differs_from_frozen": true,
+          "identity_sequence": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            23,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            11
+          ],
+          "independent_quadruple": {
+            "interval(11,2)": -21,
+            "interval(11,23)": -12,
+            "interval(2,11)": 21,
+            "interval(2,23)": 9
+          },
+          "landed_quadruple": {
+            "interval(11,2)": -21,
+            "interval(11,23)": -12,
+            "interval(2,11)": 21,
+            "interval(2,23)": 9
+          },
+          "pass": true
+        },
+        "pass": true,
+        "twenty_fifth_admission": {
+          "identity": 24,
+          "independent_status": "exhausted",
+          "landed_status": "exhausted",
+          "pass": true
+        }
+      },
+      "label": "fault_certificate",
+      "pass": true
+    },
+    {
+      "detail": {
+        "AUDIT_INPUT_PATHS_literal_error": null,
+        "AUDIT_INPUT_PATHS_literal_tuple": true,
+        "AUDIT_INPUT_PATHS_literal_value": [
+          "scripts/frontier_companion_bank_epoch_liveness_2026_07_28.py",
+          "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+          "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+          "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+          "scripts/frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py",
+          "docs/COMPANION_BANK_BELL_CHARACTER_DILATION_EXCHANGE_PORT_AND_EPOCH_LIVENESS_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+          "docs/COMPANION_BANK_LIVENESS_SCHEDULE_ENDPOINT_INTERVAL_PACKET_PROJECTION_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+        ],
+        "attribute_assignments_onto_imported_harnesses": [],
+        "blocked_primary_imports_present": [],
+        "forbidden_class_definitions": [],
+        "imported_harness_aliases": [
+          "C704",
+          "EPOCH"
+        ],
+        "pass": true
+      },
+      "label": "primary_source_discipline",
+      "pass": true
+    }
+  ],
+  "claim_boundary": {
+    "cycle612_packet_feed_evaluated": false,
+    "register_state_readout_evaluated": false,
+    "reversible_packet_encoder_evaluated": false,
+    "static_field_predicates_recomputed": true
+  },
+  "report_sha256": "bf5b9eb25d609e351922530baa2f6d951b412cb393eaf522131dda55bd8a5a32",
+  "runtime_seconds": 5.789839208999183,
+  "status": "PASS",
+  "top_level_blocklist": [
+    "frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28"
+  ]
+}
+COMPANION_BANK_ENDPOINT_INTERVAL_PROJECTION_INDEPENDENT_CHECK_PASS
+
+----- stderr -----
+

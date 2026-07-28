@@ -1,0 +1,2485 @@
+===== runner cache v1 =====
+runner: scripts/frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py
+runner_sha256: b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0
+input_fingerprint_sha256: ca7d97212dd880de1e2d89da1b668c96703af4efabcca1f693940ed0cfa07c9f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 97.90
+status: ok
+----- stdout -----
+PASS both variants have collision-free extended Stage-E schedules with every E handoff consumed on 2x2x2 and 3x2x2 :: {'2x2x2': {'primary': {'collisions': 0, 'violations': 0, 'E_handoffs': 120}, 'alternate_port': {'collisions': 0, 'violations': 0, 'E_handoffs': 120}}, '3x2x2': {'primary': {'collisions': 0, 'violations': 0, 'E_handoffs': 120}, 'alternate_port': {'collisions': 0, 'violations': 0, 'E_handoffs': 120}}}
+PASS every declared unit-valued packet opportunity is admitted by unchanged Cycle610 with independent rotor/carry arithmetic and the frozen interval quadruple :: {'2x2x2': {'primary': {'interval(2,11)': 9, 'interval(11,23)': 12, 'interval(2,23)': 21, 'interval(11,2)': -9}, 'alternate_port': {'interval(2,11)': 9, 'interval(11,23)': 12, 'interval(2,23)': 21, 'interval(11,2)': -9}}, '3x2x2': {'primary': {'interval(2,11)': 9, 'interval(11,23)': 12, 'interval(2,23)': 21, 'interval(11,2)': -9}, 'alternate_port': {'interval(2,11)': 9, 'interval(11,23)': 12, 'interval(2,23)': 21, 'interval(11,2)': -9}}}
+PASS the independent unchanged Cycle612 regression returns its six frozen causal-order outcomes and landed class module :: {'edge_qubit_opportunities': (1, 1), 'consistent_statuses': ('admitted', 'admitted'), 'consistent_acyclic': True, 'inverted_first': 'admitted', 'inverted_refusal': 'refused_inverted', 'forced_cycle_detected': True, 'no_endpoint_status': 'no_opportunity', 'JointOrder_class_module': 'physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22'}
+PASS the on-disk Cycle610 and Cycle612 harnesses equal C704's SHA pins :: {'Cycle610': '36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac', 'Cycle612': '6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b'}
+PASS deleted handoff, flipped actuality, 25th admission, hostile order, and module-identity tripwire controls are all detected :: {'deleted_E_handoff': True, 'actuality_flip': True, 'twenty_fifth_admission': True, 'hostile_order': True, 'module_identity_tripwire': True}
+PASS Stage-E geometry-free key multisets are invariant over 24 proper cubic frames x 8 translation parities for both variants :: {'contexts': 192, 'failures': {'primary': 0, 'alternate_port': 0}}
+{
+  "audit": "unset",
+  "authority": "none",
+  "bounded_liveness_packet_projection": true,
+  "boxes": {
+    "2x2x2": {
+      "alternate_port": {
+        "E_handoffs_declared_and_consumed": 120,
+        "base_slots": 17547,
+        "collision_count": 0,
+        "extended_slots": 17571,
+        "extended_words": 17714,
+        "final_state_census": {
+          "retained": 868
+        },
+        "handoffs_consumed": 304,
+        "handoffs_declared": 304,
+        "lawful": true,
+        "packet_register_start": 968,
+        "packet_register_stop": 992,
+        "register_touches": 35934,
+        "registers_seen": 868,
+        "shape": [
+          2,
+          2,
+          2
+        ],
+        "static_field_certificates_and_liveness_traces_clean": true,
+        "variant": "alternate_port",
+        "violation_count": 0
+      },
+      "primary": {
+        "E_handoffs_declared_and_consumed": 120,
+        "base_slots": 17650,
+        "collision_count": 0,
+        "extended_slots": 17674,
+        "extended_words": 17920,
+        "final_state_census": {
+          "retained": 968
+        },
+        "handoffs_consumed": 624,
+        "handoffs_declared": 624,
+        "lawful": true,
+        "packet_register_start": 968,
+        "packet_register_stop": 992,
+        "register_touches": 37026,
+        "registers_seen": 968,
+        "shape": [
+          2,
+          2,
+          2
+        ],
+        "static_field_certificates_and_liveness_traces_clean": true,
+        "variant": "primary",
+        "violation_count": 0
+      }
+    },
+    "3x2x2": {
+      "alternate_port": {
+        "E_handoffs_declared_and_consumed": 120,
+        "base_slots": 27303,
+        "collision_count": 0,
+        "extended_slots": 27327,
+        "extended_words": 27542,
+        "final_state_census": {
+          "retained": 1306
+        },
+        "handoffs_consumed": 392,
+        "handoffs_declared": 392,
+        "lawful": true,
+        "packet_register_start": 1470,
+        "packet_register_stop": 1494,
+        "register_touches": 55824,
+        "registers_seen": 1306,
+        "shape": [
+          3,
+          2,
+          2
+        ],
+        "static_field_certificates_and_liveness_traces_clean": true,
+        "variant": "alternate_port",
+        "violation_count": 0
+      },
+      "primary": {
+        "E_handoffs_declared_and_consumed": 120,
+        "base_slots": 27468,
+        "collision_count": 0,
+        "extended_slots": 27492,
+        "extended_words": 27868,
+        "final_state_census": {
+          "retained": 1458
+        },
+        "handoffs_consumed": 880,
+        "handoffs_declared": 880,
+        "lawful": true,
+        "packet_register_start": 1470,
+        "packet_register_stop": 1494,
+        "register_touches": 57524,
+        "registers_seen": 1458,
+        "shape": [
+          3,
+          2,
+          2
+        ],
+        "static_field_certificates_and_liveness_traces_clean": true,
+        "variant": "primary",
+        "violation_count": 0
+      }
+    }
+  },
+  "checks": [
+    {
+      "detail": {
+        "2x2x2": {
+          "alternate_port": {
+            "E_handoffs": 120,
+            "collisions": 0,
+            "violations": 0
+          },
+          "primary": {
+            "E_handoffs": 120,
+            "collisions": 0,
+            "violations": 0
+          }
+        },
+        "3x2x2": {
+          "alternate_port": {
+            "E_handoffs": 120,
+            "collisions": 0,
+            "violations": 0
+          },
+          "primary": {
+            "E_handoffs": 120,
+            "collisions": 0,
+            "violations": 0
+          }
+        }
+      },
+      "label": "both variants have collision-free extended Stage-E schedules with every E handoff consumed on 2x2x2 and 3x2x2",
+      "pass": true
+    },
+    {
+      "detail": {
+        "2x2x2": {
+          "alternate_port": {
+            "interval(11,2)": -9,
+            "interval(11,23)": 12,
+            "interval(2,11)": 9,
+            "interval(2,23)": 21
+          },
+          "primary": {
+            "interval(11,2)": -9,
+            "interval(11,23)": 12,
+            "interval(2,11)": 9,
+            "interval(2,23)": 21
+          }
+        },
+        "3x2x2": {
+          "alternate_port": {
+            "interval(11,2)": -9,
+            "interval(11,23)": 12,
+            "interval(2,11)": 9,
+            "interval(2,23)": 21
+          },
+          "primary": {
+            "interval(11,2)": -9,
+            "interval(11,23)": 12,
+            "interval(2,11)": 9,
+            "interval(2,23)": 21
+          }
+        }
+      },
+      "label": "every declared unit-valued packet opportunity is admitted by unchanged Cycle610 with independent rotor/carry arithmetic and the frozen interval quadruple",
+      "pass": true
+    },
+    {
+      "detail": {
+        "JointOrder_class_module": "physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22",
+        "consistent_acyclic": true,
+        "consistent_statuses": [
+          "admitted",
+          "admitted"
+        ],
+        "edge_qubit_opportunities": [
+          1,
+          1
+        ],
+        "forced_cycle_detected": true,
+        "inverted_first": "admitted",
+        "inverted_refusal": "refused_inverted",
+        "no_endpoint_status": "no_opportunity"
+      },
+      "label": "the independent unchanged Cycle612 regression returns its six frozen causal-order outcomes and landed class module",
+      "pass": true
+    },
+    {
+      "detail": {
+        "Cycle610": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+        "Cycle612": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b"
+      },
+      "label": "the on-disk Cycle610 and Cycle612 harnesses equal C704's SHA pins",
+      "pass": true
+    },
+    {
+      "detail": {
+        "actuality_flip": true,
+        "deleted_E_handoff": true,
+        "hostile_order": true,
+        "module_identity_tripwire": true,
+        "twenty_fifth_admission": true
+      },
+      "label": "deleted handoff, flipped actuality, 25th admission, hostile order, and module-identity tripwire controls are all detected",
+      "pass": true
+    },
+    {
+      "detail": {
+        "contexts": 192,
+        "failures": {
+          "alternate_port": 0,
+          "primary": 0
+        }
+      },
+      "label": "Stage-E geometry-free key multisets are invariant over 24 proper cubic frames x 8 translation parities for both variants",
+      "pass": true
+    }
+  ],
+  "claim_boundary": [
+    "The register-to-field association and the packet identities are supplied. Field values are separately computed static certificate predicates; no register-state readout or reversible packet encoder is evaluated.",
+    "Decoded intervals are circuit data; nothing here is physical time, duration, rate, or cadence.",
+    "The parent result is a collision-free liveness schedule, not a composite channel. Appending Stage-E access words does not change that boundary.",
+    "Cycle612 receives no packet-table input here. Its six frozen outcomes are an independent byte-pinned regression only."
+  ],
+  "composite_channel_or_intertwiner_verified": false,
+  "controls": {
+    "actuality_flip": {
+      "detected": true,
+      "frozen_quadruple_complete": false,
+      "identity": 11,
+      "interval_degradation": {
+        "interval(11,2)": null,
+        "interval(11,23)": null,
+        "interval(2,11)": null,
+        "interval(2,23)": 20
+      },
+      "position_zero_based": 11,
+      "status": "refused_supplied"
+    },
+    "deleted_E_handoff": {
+      "deleted_handoff": [
+        "A:pump_correction:0",
+        "E:packet_projection:0",
+        716
+      ],
+      "detected": true,
+      "named_violation": "handoff_read_without_edge:slot=17650:register=716:A:pump_correction:0->E:packet_projection:0",
+      "violation_count": 1
+    },
+    "hostile_order": {
+      "detected": true,
+      "identity_sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        23,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        11
+      ],
+      "intervals": {
+        "interval(11,2)": -21,
+        "interval(11,23)": -12,
+        "interval(2,11)": 21,
+        "interval(2,23)": 9
+      },
+      "joint_order_outcomes": {
+        "JointOrder_class_module": "physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22",
+        "consistent_acyclic": true,
+        "consistent_statuses": [
+          "admitted",
+          "admitted"
+        ],
+        "edge_qubit_opportunities": [
+          1,
+          1
+        ],
+        "forced_cycle_detected": true,
+        "inverted_first": "admitted",
+        "inverted_refusal": "refused_inverted",
+        "no_endpoint_status": "no_opportunity"
+      },
+      "joint_order_unchanged": true,
+      "statuses": [
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted",
+        "admitted"
+      ]
+    },
+    "module_identity_tripwire": {
+      "EventChain_class_module": "physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22",
+      "JointOrder_class_module": "physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22",
+      "detected": true,
+      "forbidden_class_definitions": [],
+      "imported_module_attribute_assignments": [],
+      "setattr_calls_on_imports": []
+    },
+    "twenty_fifth_admission": {
+      "detected": true,
+      "identity": 24,
+      "status": "exhausted"
+    }
+  },
+  "covariance": {
+    "contexts": 192,
+    "first_failures": {},
+    "pass": true,
+    "proper_cubic_frames": 24,
+    "translation_parities": 8,
+    "transported_port_failures": 0,
+    "transported_root_failures": 0,
+    "variants": {
+      "alternate_port": {
+        "E_key_multiset_failures": 0,
+        "source_E_key_count": 24,
+        "source_E_key_digest": "8854983196e4f3e0cdc952024f548aba4e271e764a82b3da075db62d2a08caa2"
+      },
+      "primary": {
+        "E_key_multiset_failures": 0,
+        "source_E_key_count": 24,
+        "source_E_key_digest": "1183ab8825585b9dd4a97cd5657e3666a15f0ceeba389e5c0f37eb0168922576"
+      }
+    }
+  },
+  "cycle612_packet_feed_verified": false,
+  "derived": [
+    "literal Stage-E access words and one fresh retained packet register per opportunity",
+    "extended clean/live/retained liveness walks and explicit handoff consumption",
+    "five static algebraic certificate predicates associated with liveness-traced registers",
+    "unchanged Cycle610 admission, rotor/carry recomputation, predecessor checks, and interval projection under the supplied values",
+    "Stage-E key covariance over the transported epoch"
+  ],
+  "harness_modified": false,
+  "interval_projection": {
+    "by_box_variant": {
+      "2x2x2": {
+        "alternate_port": {
+          "all_admitted": true,
+          "first_rotor": 15,
+          "intervals": {
+            "interval(11,2)": -9,
+            "interval(11,23)": 12,
+            "interval(2,11)": 9,
+            "interval(2,23)": 21
+          },
+          "predecessor_failures": 0,
+          "rotor_failures": 0,
+          "rotor_seed": 14
+        },
+        "primary": {
+          "all_admitted": true,
+          "first_rotor": 15,
+          "intervals": {
+            "interval(11,2)": -9,
+            "interval(11,23)": 12,
+            "interval(2,11)": 9,
+            "interval(2,23)": 21
+          },
+          "predecessor_failures": 0,
+          "rotor_failures": 0,
+          "rotor_seed": 14
+        }
+      },
+      "3x2x2": {
+        "alternate_port": {
+          "all_admitted": true,
+          "first_rotor": 15,
+          "intervals": {
+            "interval(11,2)": -9,
+            "interval(11,23)": 12,
+            "interval(2,11)": 9,
+            "interval(2,23)": 21
+          },
+          "predecessor_failures": 0,
+          "rotor_failures": 0,
+          "rotor_seed": 14
+        },
+        "primary": {
+          "all_admitted": true,
+          "first_rotor": 15,
+          "intervals": {
+            "interval(11,2)": -9,
+            "interval(11,23)": 12,
+            "interval(2,11)": 9,
+            "interval(2,23)": 21
+          },
+          "predecessor_failures": 0,
+          "rotor_failures": 0,
+          "rotor_seed": 14
+        }
+      }
+    },
+    "frozen": {
+      "interval(11,2)": -9,
+      "interval(11,23)": 12,
+      "interval(2,11)": 9,
+      "interval(2,23)": 21
+    }
+  },
+  "not_tested": [
+    "register-state readout or a reversible packet encoder",
+    "dynamics-derived occurrence, admission, law-domain, or identity selection",
+    "physical time, duration, rate, cadence, Record permanence, or empirical unit",
+    "a packet-driven Cycle612 causal-order construction"
+  ],
+  "packet_map": {
+    "convention": "Supplied projection convention: zero-based opportunities use ascending identities 0..23 and orientation +1. Five static algebraic certificate predicates are associated with two Stage-B registers and three Stage-A pump-syndrome registers. The association does not evaluate register-state values.",
+    "declared_identity_positions_zero_based": {
+      "11": 11,
+      "2": 2,
+      "23": 23
+    },
+    "identity_sequence": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "variants": {
+      "alternate_port": {
+        "field_register_declarations": [
+          {
+            "field": "certificate",
+            "liveness_witness": {
+              "origin_family": "port_CNOT",
+              "origin_role": "data",
+              "origin_slot": 227,
+              "origin_stage": "B",
+              "origin_word": "B:port_CNOT:2",
+              "owner_family": "port_CNOT",
+              "owner_mode": "write",
+              "owner_role": "data",
+              "owner_slot": 227,
+              "owner_stage": "B",
+              "owner_word": "B:port_CNOT:2",
+              "register": 72,
+              "retained_after_owner": true,
+              "valid": true
+            },
+            "predicate_certificate": {
+              "kind": "static absence-of-port-parity-failure predicate",
+              "parity_failures": 0,
+              "values": [
+                1,
+                1
+              ]
+            },
+            "register": 72,
+            "register_role": "declared_port_parity_0",
+            "value": 1,
+            "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+          },
+          {
+            "field": "binder",
+            "liveness_witness": {
+              "origin_family": "port_CNOT",
+              "origin_role": "data",
+              "origin_slot": 230,
+              "origin_stage": "B",
+              "origin_word": "B:port_CNOT:5",
+              "owner_family": "port_CNOT",
+              "owner_mode": "write",
+              "owner_role": "data",
+              "owner_slot": 230,
+              "owner_stage": "B",
+              "owner_word": "B:port_CNOT:5",
+              "register": 73,
+              "retained_after_owner": true,
+              "valid": true
+            },
+            "predicate_certificate": {
+              "kind": "static absence-of-port-parity-failure predicate",
+              "parity_failures": 0,
+              "values": [
+                1,
+                1
+              ]
+            },
+            "register": 73,
+            "register_role": "declared_port_parity_1",
+            "value": 1,
+            "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+          },
+          {
+            "field": "actuality",
+            "liveness_witness": {
+              "origin_family": "pump_onsite_Z_measure",
+              "origin_role": "syndrome",
+              "origin_slot": 1,
+              "origin_stage": "A",
+              "origin_word": "A:pump_measure:0",
+              "owner_family": "pump_onsite_Z_private_dual",
+              "owner_mode": "read",
+              "owner_role": "syndrome",
+              "owner_slot": 2,
+              "owner_stage": "A",
+              "owner_word": "A:pump_correction:0",
+              "register": 716,
+              "retained_after_owner": true,
+              "valid": true
+            },
+            "predicate_certificate": {
+              "kind": "static pump private-dual/row pairing",
+              "pump_row_index": 0,
+              "value": 1
+            },
+            "register": 716,
+            "register_role": "pump_syndrome_0",
+            "value": 1,
+            "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+          },
+          {
+            "field": "admissibility",
+            "liveness_witness": {
+              "origin_family": "pump_onsite_Z_measure",
+              "origin_role": "syndrome",
+              "origin_slot": 3,
+              "origin_stage": "A",
+              "origin_word": "A:pump_measure:1",
+              "owner_family": "pump_onsite_Z_private_dual",
+              "owner_mode": "read",
+              "owner_role": "syndrome",
+              "owner_slot": 4,
+              "owner_stage": "A",
+              "owner_word": "A:pump_correction:1",
+              "register": 717,
+              "retained_after_owner": true,
+              "valid": true
+            },
+            "predicate_certificate": {
+              "kind": "static pump private-dual/row pairing",
+              "pump_row_index": 1,
+              "value": 1
+            },
+            "register": 717,
+            "register_role": "pump_syndrome_1",
+            "value": 1,
+            "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+          },
+          {
+            "field": "law_domain",
+            "liveness_witness": {
+              "origin_family": "pump_onsite_Z_measure",
+              "origin_role": "syndrome",
+              "origin_slot": 5,
+              "origin_stage": "A",
+              "origin_word": "A:pump_measure:2",
+              "owner_family": "pump_onsite_Z_private_dual",
+              "owner_mode": "read",
+              "owner_role": "syndrome",
+              "owner_slot": 6,
+              "owner_stage": "A",
+              "owner_word": "A:pump_correction:2",
+              "register": 718,
+              "retained_after_owner": true,
+              "valid": true
+            },
+            "predicate_certificate": {
+              "kind": "static pump private-dual/row pairing",
+              "pump_row_index": 2,
+              "value": 1
+            },
+            "register": 718,
+            "register_role": "pump_syndrome_2",
+            "value": 1,
+            "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+          }
+        ],
+        "table": [
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 0,
+            "orientation": 1,
+            "packet_record_register": 968,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:0",
+            "tick_identity": 0
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 1,
+            "orientation": 1,
+            "packet_record_register": 969,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:1",
+            "tick_identity": 1
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 2,
+            "orientation": 1,
+            "packet_record_register": 970,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:2",
+            "tick_identity": 2
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 3,
+            "orientation": 1,
+            "packet_record_register": 971,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:3",
+            "tick_identity": 3
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 4,
+            "orientation": 1,
+            "packet_record_register": 972,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:4",
+            "tick_identity": 4
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 5,
+            "orientation": 1,
+            "packet_record_register": 973,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:5",
+            "tick_identity": 5
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 6,
+            "orientation": 1,
+            "packet_record_register": 974,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:6",
+            "tick_identity": 6
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 7,
+            "orientation": 1,
+            "packet_record_register": 975,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:7",
+            "tick_identity": 7
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 8,
+            "orientation": 1,
+            "packet_record_register": 976,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:8",
+            "tick_identity": 8
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 9,
+            "orientation": 1,
+            "packet_record_register": 977,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:9",
+            "tick_identity": 9
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 10,
+            "orientation": 1,
+            "packet_record_register": 978,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:10",
+            "tick_identity": 10
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 11,
+            "orientation": 1,
+            "packet_record_register": 979,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:11",
+            "tick_identity": 11
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 12,
+            "orientation": 1,
+            "packet_record_register": 980,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:12",
+            "tick_identity": 12
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 13,
+            "orientation": 1,
+            "packet_record_register": 981,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:13",
+            "tick_identity": 13
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 14,
+            "orientation": 1,
+            "packet_record_register": 982,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:14",
+            "tick_identity": 14
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 15,
+            "orientation": 1,
+            "packet_record_register": 983,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:15",
+            "tick_identity": 15
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 16,
+            "orientation": 1,
+            "packet_record_register": 984,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:16",
+            "tick_identity": 16
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 17,
+            "orientation": 1,
+            "packet_record_register": 985,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:17",
+            "tick_identity": 17
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 18,
+            "orientation": 1,
+            "packet_record_register": 986,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:18",
+            "tick_identity": 18
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 19,
+            "orientation": 1,
+            "packet_record_register": 987,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:19",
+            "tick_identity": 19
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 20,
+            "orientation": 1,
+            "packet_record_register": 988,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:20",
+            "tick_identity": 20
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 21,
+            "orientation": 1,
+            "packet_record_register": 989,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:21",
+            "tick_identity": 21
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 22,
+            "orientation": 1,
+            "packet_record_register": 990,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:22",
+            "tick_identity": 22
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 23,
+            "orientation": 1,
+            "packet_record_register": 991,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 73,
+                "register_role": "declared_port_parity_1"
+              },
+              "certificate": {
+                "register": 72,
+                "register_role": "declared_port_parity_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:23",
+            "tick_identity": 23
+          }
+        ]
+      },
+      "primary": {
+        "field_register_declarations": [
+          {
+            "field": "certificate",
+            "liveness_witness": {
+              "origin_family": "Bell_onsite_Z_measure",
+              "origin_role": "ancilla",
+              "origin_slot": 225,
+              "origin_stage": "B",
+              "origin_word": "B:bell_measure:0",
+              "owner_family": "Bell_onsite_Z_private_dual",
+              "owner_mode": "read",
+              "owner_role": "ancilla",
+              "owner_slot": 234,
+              "owner_stage": "C",
+              "owner_word": "C:Bell_correction:0",
+              "register": 616,
+              "retained_after_owner": true,
+              "valid": true
+            },
+            "predicate_certificate": {
+              "kind": "static private-dual/row pairing",
+              "values": [
+                1,
+                1
+              ]
+            },
+            "register": 616,
+            "register_role": "Bell_measurement_ancilla_0",
+            "value": 1,
+            "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+          },
+          {
+            "field": "binder",
+            "liveness_witness": {
+              "origin_family": "Bell_onsite_Z_measure",
+              "origin_role": "ancilla",
+              "origin_slot": 225,
+              "origin_stage": "B",
+              "origin_word": "B:bell_measure:1",
+              "owner_family": "Bell_onsite_Z_private_dual",
+              "owner_mode": "read",
+              "owner_role": "ancilla",
+              "owner_slot": 250,
+              "owner_stage": "C",
+              "owner_word": "C:Bell_correction:1",
+              "register": 617,
+              "retained_after_owner": true,
+              "valid": true
+            },
+            "predicate_certificate": {
+              "kind": "static private-dual/row pairing",
+              "values": [
+                1,
+                1
+              ]
+            },
+            "register": 617,
+            "register_role": "Bell_measurement_ancilla_1",
+            "value": 1,
+            "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+          },
+          {
+            "field": "actuality",
+            "liveness_witness": {
+              "origin_family": "pump_onsite_Z_measure",
+              "origin_role": "syndrome",
+              "origin_slot": 1,
+              "origin_stage": "A",
+              "origin_word": "A:pump_measure:0",
+              "owner_family": "pump_onsite_Z_private_dual",
+              "owner_mode": "read",
+              "owner_role": "syndrome",
+              "owner_slot": 2,
+              "owner_stage": "A",
+              "owner_word": "A:pump_correction:0",
+              "register": 716,
+              "retained_after_owner": true,
+              "valid": true
+            },
+            "predicate_certificate": {
+              "kind": "static pump private-dual/row pairing",
+              "pump_row_index": 0,
+              "value": 1
+            },
+            "register": 716,
+            "register_role": "pump_syndrome_0",
+            "value": 1,
+            "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+          },
+          {
+            "field": "admissibility",
+            "liveness_witness": {
+              "origin_family": "pump_onsite_Z_measure",
+              "origin_role": "syndrome",
+              "origin_slot": 3,
+              "origin_stage": "A",
+              "origin_word": "A:pump_measure:1",
+              "owner_family": "pump_onsite_Z_private_dual",
+              "owner_mode": "read",
+              "owner_role": "syndrome",
+              "owner_slot": 4,
+              "owner_stage": "A",
+              "owner_word": "A:pump_correction:1",
+              "register": 717,
+              "retained_after_owner": true,
+              "valid": true
+            },
+            "predicate_certificate": {
+              "kind": "static pump private-dual/row pairing",
+              "pump_row_index": 1,
+              "value": 1
+            },
+            "register": 717,
+            "register_role": "pump_syndrome_1",
+            "value": 1,
+            "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+          },
+          {
+            "field": "law_domain",
+            "liveness_witness": {
+              "origin_family": "pump_onsite_Z_measure",
+              "origin_role": "syndrome",
+              "origin_slot": 5,
+              "origin_stage": "A",
+              "origin_word": "A:pump_measure:2",
+              "owner_family": "pump_onsite_Z_private_dual",
+              "owner_mode": "read",
+              "owner_role": "syndrome",
+              "owner_slot": 6,
+              "owner_stage": "A",
+              "owner_word": "A:pump_correction:2",
+              "register": 718,
+              "retained_after_owner": true,
+              "valid": true
+            },
+            "predicate_certificate": {
+              "kind": "static pump private-dual/row pairing",
+              "pump_row_index": 2,
+              "value": 1
+            },
+            "register": 718,
+            "register_role": "pump_syndrome_2",
+            "value": 1,
+            "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+          }
+        ],
+        "table": [
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 0,
+            "orientation": 1,
+            "packet_record_register": 968,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:0",
+            "tick_identity": 0
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 1,
+            "orientation": 1,
+            "packet_record_register": 969,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:1",
+            "tick_identity": 1
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 2,
+            "orientation": 1,
+            "packet_record_register": 970,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:2",
+            "tick_identity": 2
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 3,
+            "orientation": 1,
+            "packet_record_register": 971,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:3",
+            "tick_identity": 3
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 4,
+            "orientation": 1,
+            "packet_record_register": 972,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:4",
+            "tick_identity": 4
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 5,
+            "orientation": 1,
+            "packet_record_register": 973,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:5",
+            "tick_identity": 5
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 6,
+            "orientation": 1,
+            "packet_record_register": 974,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:6",
+            "tick_identity": 6
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 7,
+            "orientation": 1,
+            "packet_record_register": 975,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:7",
+            "tick_identity": 7
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 8,
+            "orientation": 1,
+            "packet_record_register": 976,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:8",
+            "tick_identity": 8
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 9,
+            "orientation": 1,
+            "packet_record_register": 977,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:9",
+            "tick_identity": 9
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 10,
+            "orientation": 1,
+            "packet_record_register": 978,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:10",
+            "tick_identity": 10
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 11,
+            "orientation": 1,
+            "packet_record_register": 979,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:11",
+            "tick_identity": 11
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 12,
+            "orientation": 1,
+            "packet_record_register": 980,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:12",
+            "tick_identity": 12
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 13,
+            "orientation": 1,
+            "packet_record_register": 981,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:13",
+            "tick_identity": 13
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 14,
+            "orientation": 1,
+            "packet_record_register": 982,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:14",
+            "tick_identity": 14
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 15,
+            "orientation": 1,
+            "packet_record_register": 983,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:15",
+            "tick_identity": 15
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 16,
+            "orientation": 1,
+            "packet_record_register": 984,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:16",
+            "tick_identity": 16
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 17,
+            "orientation": 1,
+            "packet_record_register": 985,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:17",
+            "tick_identity": 17
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 18,
+            "orientation": 1,
+            "packet_record_register": 986,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:18",
+            "tick_identity": 18
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 19,
+            "orientation": 1,
+            "packet_record_register": 987,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:19",
+            "tick_identity": 19
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 20,
+            "orientation": 1,
+            "packet_record_register": 988,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:20",
+            "tick_identity": 20
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 21,
+            "orientation": 1,
+            "packet_record_register": 989,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:21",
+            "tick_identity": 21
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 22,
+            "orientation": 1,
+            "packet_record_register": 990,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:22",
+            "tick_identity": 22
+          },
+          {
+            "actuality": 1,
+            "admissibility": 1,
+            "binder": 1,
+            "certificate": 1,
+            "law_domain": 1,
+            "opportunity_position_zero_based": 23,
+            "orientation": 1,
+            "packet_record_register": 991,
+            "source_registers": {
+              "actuality": {
+                "register": 716,
+                "register_role": "pump_syndrome_0"
+              },
+              "admissibility": {
+                "register": 717,
+                "register_role": "pump_syndrome_1"
+              },
+              "binder": {
+                "register": 617,
+                "register_role": "Bell_measurement_ancilla_1"
+              },
+              "certificate": {
+                "register": 616,
+                "register_role": "Bell_measurement_ancilla_0"
+              },
+              "law_domain": {
+                "register": 718,
+                "register_role": "pump_syndrome_2"
+              }
+            },
+            "stage_e_word": "E:packet_projection:23",
+            "tick_identity": 23
+          }
+        ]
+      }
+    }
+  },
+  "physical_time_identified": false,
+  "register_state_readout_verified": false,
+  "reversible_packet_encoder_verified": false,
+  "runtime_seconds": 97.40021879099368,
+  "sha_pins": {
+    "Cycle610": {
+      "expected_from_C704": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+      "observed": "36fcb1655bbdcd758b69ea1e273821e5c820f738eb63199570c8f36c7e294bac",
+      "pass": true,
+      "path": "/private/tmp/review-pr5698.ex5jAm/scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py"
+    },
+    "Cycle612": {
+      "expected_from_C704": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b",
+      "observed": "6365d5aed1e70fb9b427ee6fb987879027cc30c818856a992b3fbf9d057e0c1b",
+      "pass": true,
+      "path": "/private/tmp/review-pr5698.ex5jAm/scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py"
+    },
+    "pass": true
+  },
+  "status": "PASS",
+  "supplied": [
+    "ascending identity sequence 0..23 with identities 2, 11, and 23 at zero-based positions 2, 11, and 23",
+    "orientation +1, the register-to-field association, and the use of static certificate predicates as packet values",
+    "the endpoint opportunity, occurrence/admission/domain interpretation, finite bank, liveness-schedule root, port, and input variant"
+  ],
+  "unchanged_Cycle612": {
+    "JointOrder_class_module": "physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22",
+    "consistent_acyclic": true,
+    "consistent_statuses": [
+      "admitted",
+      "admitted"
+    ],
+    "edge_qubit_opportunities": [
+      1,
+      1
+    ],
+    "forced_cycle_detected": true,
+    "inverted_first": "admitted",
+    "inverted_refusal": "refused_inverted",
+    "no_endpoint_status": "no_opportunity"
+  },
+  "variants": [
+    "primary",
+    "alternate_port"
+  ]
+}
+
+----- stderr -----
+

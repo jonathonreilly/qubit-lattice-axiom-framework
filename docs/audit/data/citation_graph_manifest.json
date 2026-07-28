@@ -1,6 +1,6 @@
 {
- "edge_count": 15172,
- "node_count": 4560,
+ "edge_count": 15173,
+ "node_count": 4561,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2420,6 +2420,10 @@
   },
   "companion_bank_bell_character_dilation_exchange_port_and_epoch_liveness_bounded_theorem_note_2026-07-28": {
    "deps_hash": "759285fc1e81",
+   "out_degree": 1
+  },
+  "companion_bank_liveness_schedule_endpoint_interval_packet_projection_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "a2d4308e117e",
    "out_degree": 1
   },
   "complete_prediction_chain_2026_04_15": {

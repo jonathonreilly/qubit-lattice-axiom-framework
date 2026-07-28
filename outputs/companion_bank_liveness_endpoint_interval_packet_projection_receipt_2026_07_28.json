@@ -1,0 +1,63 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_companion_bank_endpoint_interval_projection_independent_check_2026_07_28.txt": "603a513751304fc484fb9afd8782f2d91c81853eecf09c297cc574baf9189fd3",
+      "frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.txt": "ac86f33e7b40d26fa0002c43fcffb822b8c460581f50795355484bdea918ff27"
+    },
+    "note": {
+      "path": "docs/COMPANION_BANK_LIVENESS_SCHEDULE_ENDPOINT_INTERVAL_PACKET_PROJECTION_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "e882ac936309a2b79e111eda2dae23a48eb748d7125c8055165cf7c9332e41d9"
+    },
+    "runners": {
+      "frontier_companion_bank_endpoint_interval_projection_independent_check_2026_07_28.py": "1dfb95c90db06712b37b7fb4318880060ecd47f27114db45fdffe22b97279a47",
+      "frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py": "b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "composite_channel_or_intertwiner_verified": false,
+    "cycle612_packet_feed_verified": false,
+    "fixed_supplies": "the landed companion-bank finite-schedule conventions plus ascending identities, orientation, register-to-field association, and static certificate predicates used as packet values",
+    "harness_modified": false,
+    "not_tested": "register-state readout, reversible packet encoding, dynamics-derived occurrence/admission/identity selection, physical time or units, and packet-driven causal order",
+    "physical_time_identified": false,
+    "positive_scope": "a collision-free Stage-E liveness extension and conditional unchanged EventChain interval projection on four held box/variant combinations",
+    "register_state_readout_verified": false,
+    "reversible_packet_encoder_verified": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_failed": 0,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "bounded_theorem",
+  "date": "2026-07-28",
+  "dependencies": {
+    "load_bearing_note": "docs/COMPANION_BANK_BELL_CHARACTER_DILATION_EXCHANGE_PORT_AND_EPOCH_LIVENESS_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "load_bearing_note_audit": "unset",
+    "load_bearing_note_authority": "none"
+  },
+  "result": {
+    "boxes": [
+      "2x2x2",
+      "3x2x2"
+    ],
+    "covariance_contexts": 192,
+    "interval_quadruple": {
+      "interval(11,2)": -9,
+      "interval(11,23)": 12,
+      "interval(2,11)": 9,
+      "interval(2,23)": 21
+    },
+    "stage_e_handoffs_per_variant": 120,
+    "static_field_predicates_per_variant": 5,
+    "unchanged_joint_order_regression_outcomes": 6,
+    "variants": [
+      "bell-character",
+      "even-exchange"
+    ]
+  },
+  "status": "COMPANION_BANK_LIVENESS_ENDPOINT_INTERVAL_PACKET_PROJECTION_PASS"
+}

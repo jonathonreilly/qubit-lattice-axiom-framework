@@ -1,5 +1,5 @@
 {
- "edge_count": 15173,
+ "edge_count": 15175,
  "node_count": 4561,
  "nodes": {
   "3d_correction_master_note": {
@@ -14191,8 +14191,8 @@
    "out_degree": 0
   },
   "teleportation_bell_measurement_circuit_note": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "439fde6d4fa9",
+   "out_degree": 2
   },
   "teleportation_causal_channel_note": {
    "deps_hash": "e3b0c44298fc",

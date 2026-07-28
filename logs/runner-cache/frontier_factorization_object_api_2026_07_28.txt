@@ -1,0 +1,158 @@
+===== runner cache v1 =====
+runner: scripts/frontier_factorization_object_api_2026_07_28.py
+runner_sha256: 93ae31d08bf019d194f95f7fd873a38a5b819db42e313db743ad2f8509d2130f
+input_fingerprint_sha256: 89ea19601bfff5f2cd8cff117f7a5b5d611aad738b128b634e914520375953a7
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 8.51
+status: ok
+----- stdout -----
+check() PASS (2, 2, 2) digest equals landed Cycle-720 digest
+check() PASS (2, 2, 2) dimensions and counts equal the landed report
+check() PASS (2, 2, 2) dictionary coordinates replay every signed row
+check() PASS (2, 2, 2) frozen dataclass rejects field assignment
+check() PASS (2, 2, 2) two independent builds are row-wise identical
+check() PASS (3, 2, 2) digest equals landed Cycle-720 digest
+check() PASS (3, 2, 2) dimensions and counts equal the landed report
+check() PASS (3, 2, 2) dictionary coordinates replay every signed row
+check() PASS (3, 2, 2) frozen dataclass rejects field assignment
+check() PASS (3, 2, 2) two independent builds are row-wise identical
+check() PASS (3, 3, 2) digest equals landed Cycle-720 digest
+check() PASS (3, 3, 2) dimensions and counts equal the landed report
+check() PASS (3, 3, 2) dictionary coordinates replay every signed row
+check() PASS (3, 3, 2) frozen dataclass rejects field assignment
+check() PASS (3, 3, 2) two independent builds are row-wise identical
+check() PASS scope is support-only: no new physics or landed claim; the V_s-restriction compiler remains open
+{
+  "audit": "unset",
+  "authority": "none",
+  "checks": [
+    {
+      "label": "(2, 2, 2) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) frozen dataclass rejects field assignment",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) two independent builds are row-wise identical",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) frozen dataclass rejects field assignment",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) two independent builds are row-wise identical",
+      "pass": true
+    },
+    {
+      "label": "(3, 3, 2) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(3, 3, 2) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(3, 3, 2) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(3, 3, 2) frozen dataclass rejects field assignment",
+      "pass": true
+    },
+    {
+      "label": "(3, 3, 2) two independent builds are row-wise identical",
+      "pass": true
+    },
+    {
+      "label": "scope is support-only: no new physics or landed claim; the V_s-restriction compiler remains open",
+      "pass": true
+    }
+  ],
+  "claim_ceiling": "exact_support",
+  "pass": true,
+  "runtime_sec": 7.924828,
+  "scope": {
+    "changes_landed_claim": false,
+    "consumer_V_s_restriction_compiler": "open",
+    "derives_new_physics": false,
+    "role": "support infrastructure"
+  },
+  "shapes": [
+    {
+      "center_count": 6,
+      "dictionary_rows": 336,
+      "digest": "e83b7b242297a8e613073dc1984a17ee07d632708676f4ff786c9bca943fcd0b",
+      "gauge_count": 19,
+      "logical_count": 47,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 72,
+      "runtime_sec": 0.837014,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
+      "center_count": 10,
+      "dictionary_rows": 512,
+      "digest": "10ec1180a23dd781c406fca7a9a6f0b2d5bf75da74fd1712849904bdc2197a47",
+      "gauge_count": 27,
+      "logical_count": 71,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 108,
+      "runtime_sec": 1.95813,
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
+      "center_count": 17,
+      "dictionary_rows": 780,
+      "digest": "5850eff1c1053f6290f97da45eeefe4b3116bc3adc95fd2a4c269b380b58389b",
+      "gauge_count": 38,
+      "logical_count": 107,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 162,
+      "runtime_sec": 5.129654,
+      "shape": [
+        3,
+        3,
+        2
+      ],
+      "target_coordinate_failures": 0
+    }
+  ],
+  "status": "PASS"
+}
+
+----- stderr -----
+

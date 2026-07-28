@@ -11,7 +11,7 @@ Programmatic checks:
   - The parent note exists at the expected path.
   - CITED deps (>=1 hit, classification deferred to audit-lane judgment based on context).
   - NOT-CITED deps (0 hits, programmatically certain).
-  - The findings note's own counts table matches the measured classification.
+  - The findings note's exact dependency lists and counts match the measurement.
 """
 
 from __future__ import annotations

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py
-runner_sha256: 431c92592261c937e612b75f330124ab0b936d0ad04c563ccea832ff0c7afee8
+runner_sha256: 2723fb48f87d7b3cae0c845a3b1d79c56813afcc771e5034e97f01dd8caef820
 input_fingerprint_sha256: 083b113d3ed1cfb0a5371d29e82975686fc19a1b214668001a64a287363e9bdf
 timeout_sec: 180
 exit_code: 0

@@ -1,0 +1,58 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.txt": "cd37c7efb32b81c7144118912841c936c796d341113ea02f835d1338dfc49845",
+      "frontier_cycle722_harness_feed_independent_check_2026_07_28.txt": "3eebc8e65d75040fdb097f659fb4ff0c3bcfcb5cd04a8ac6f708ee1a1fe3c685"
+    },
+    "note": {
+      "path": "docs/EPOCH_FED_ENDPOINT_INTERVAL_HARNESS_CYCLE722_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "c333c0f05f5b283632f39d79c659f47bfea30029dcba03be24f82cf417866971"
+    },
+    "runners": {
+      "frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py": "5f20146eace2a0b61e5f1aa26f19cc432c8ec5bf737621470e81efecaa763775",
+      "frontier_cycle722_harness_feed_independent_check_2026_07_28.py": "0998af78a43d9b8f6e56534ddad8e7ec3a79e92352545c7430e1107d7d889765"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "autonomous_packet_map": false,
+    "axiom_pressure": false,
+    "epoch_fed_interval_harness": true,
+    "fixed_supplies": "block01 inventory unchanged plus the declared packet map (identity sequence and register-to-admission-bit assignment)",
+    "harness_modified": false,
+    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
+    "not_derived": "autonomous packet map, occurrence rule, admission law, physical time/rate, source-lift tournament (undefined forward reference, unattempted), Record, Born, source/gravity meaning",
+    "physical_time_identified": false,
+    "positive_scope": "the composed epoch drives the unchanged, byte-pinned Cycle-610/612 endpoint/interval and causal-order harness through liveness-walked stage-E slots with bundle-witnessed admission bits, for both input legs, on finite open boxes",
+    "source_lift_attempted": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 7
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 722,
+  "date": "2026-07-28",
+  "result": {
+    "boxes": [
+      "2x2x2",
+      "3x2x2"
+    ],
+    "covariance_contexts": 192,
+    "interval_quadruple": {
+      "d_11_2": -9,
+      "d_11_23": 12,
+      "d_2_11": 9,
+      "d_2_23": 21
+    },
+    "stage_e_handoffs_per_variant": 120,
+    "unchanged_cycle612_outcomes": 6,
+    "variants": [
+      "compiled-bell-primary",
+      "exchange-port-alternate"
+    ]
+  },
+  "status": "CYCLE722_EPOCH_FED_ENDPOINT_INTERVAL_HARNESS_PASS"
+}

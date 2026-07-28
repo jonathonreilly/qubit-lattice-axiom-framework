@@ -36,3 +36,22 @@ design-history statements are supplied conventions rather than negative
 claims, and cites the Cycle-720 raw-Bell diagnostic only at its original
 scope. The `V_s`-restriction route is `UNTESTED/OPEN` with a named reopen
 condition; it is package inventory, not a no-go.
+
+---
+
+# Block02 addendum (Cycle 722)
+
+```yaml
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: partially_closes
+conditional_surface_status: >
+  conditional on the block01 inventory plus one new supplied convention:
+  the packet map (identity sequence + register-to-admission-bit
+  assignment). The harness itself is consumed unchanged and byte-pinned.
+negative_assertion_classes: []   # the source-lift "undefined" statement is
+                                 # a recorded repo-inventory fact, not a no-go
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+```

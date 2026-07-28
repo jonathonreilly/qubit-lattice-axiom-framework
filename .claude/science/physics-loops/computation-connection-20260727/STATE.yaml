@@ -98,10 +98,48 @@ checkpoint_0010: >
   filled; CLAIM_STATUS_CERTIFICATE + REVIEW_HISTORY (incl. V1-V5 record)
   written; receipt builder staged. Independent adversary checker drafting
   (sol xhigh, blocklists the three 721 primaries).
+checkpoint_0105: >
+  BLOCK01 CLOSED. Independent adversary 6/6 (supervisor-rerun verified);
+  wording correction adopted; note finalized; vocab lint clean; all four
+  caches content-pinned via runner_cache.execute_and_write_cache (AUDIT_
+  INPUT_PATHS literal-tuple fix applied to all four runners first — the
+  parser requires ast.literal_eval-able tuples); receipt written
+  (outputs/car_bell_input_epoch_tournament_cycle721_receipt_2026_07_28.json,
+  checks 10/22/6 + independent 6/0); committed 6f7d59b9d1 (28 files,
+  18,084 insertions — runners, caches, note, receipt, loop pack); pushed;
+  PR #5697 OPEN (base main). Review-loop/audit lanes are owner-operated —
+  handed off at the PR surface. OPPORTUNITY_QUEUE refreshed: block02 =
+  Cycle 722 (feed the unchanged Cycle-612 endpoint/interval harness +
+  coherent source-lift tournament through the composed epoch toward the
+  repo-side response/prediction chain).
+block02_plan: >
+  Branch physics-loop/computation-connection-block02-20260728 STACKED on
+  block01 (imports cycle-721 runners). Grounding reads: Cycle-612 causal
+  order note, Cycle-610 relational duration note, Cycle-718 spatial-ACK
+  interval bridge, Cycle-719 controller interfaces, and the definition of
+  the "coherent source-lift tournament" named in the Cycle-720 verdict.
+  Then target contract, prior-art sweep at fresh origin/main, specs,
+  workhorse drafting as in block01.
+checkpoint_0125: >
+  Block02 OPEN on stacked branch
+  physics-loop/computation-connection-block02-20260728 (base = block01
+  tip). Grounding complete: Cycle-612 harness = JointOrder class +
+  C704.joint_order_controls() (six frozen outcomes, module-identity
+  tripwire, C610/C612 SHA pins); intervals {9,12,21,-9} come from
+  C610.EventChain.interval (16*carries + rotor_delta) on identities
+  (2,11,23); the certified feed path is packet projections -> EventCell ->
+  fresh EventChain only; "coherent source-lift tournament" is an UNDEFINED
+  forward reference (no landed note defines it — verified repo-wide) and
+  "response/prediction chain" has no operational definition (nearest
+  binding statements: Cycle-719 W7 + C_source firewall). Cycle-722 scope
+  locked: epoch-fed harness feed as stage-E liveness-walked slots with a
+  declared supplied packet map; source-lift handled as an honest
+  undefined-reference section + handoff target contract; C_source
+  unchanged verbatim. Prior-art sweep at origin/main ab163961a9: no
+  epoch-fed harness exists (EventChain consumers = the known 704/718/719
+  lineage only). Draft worker launched (sol xhigh).
 next_action: >
-  On checker completion: supervisor review + rerun; fill note checker
-  section + verdict; refresh runner caches via
-  runner_cache.execute_and_write_cache for the four runners; run receipt
-  builder; vocab lint; commit; push; open PR block01; then refresh
-  OPPORTUNITY_QUEUE and continue the campaign.
+  On F4 worker completion: supervisor review + rerun; then small
+  independent checker; CYCLE722 note + receipt + caches; lint; commit;
+  push; stacked PR (base block01). Campaign runtime remaining ~8h.
 stop_condition: runtime exhaustion ~2026-07-28T09:37 local, or global queue exhaustion per skill

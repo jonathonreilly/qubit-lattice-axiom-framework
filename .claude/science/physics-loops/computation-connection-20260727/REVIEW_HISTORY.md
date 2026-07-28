@@ -70,6 +70,49 @@ movement), so the gate is answered for the PR record:
   site-map composition (classified nonmatching in the sweep). origin/main
   re-checked at 2f2f4878ca.
 
+## Block02 (Cycle 722) supervisor review log
+
+- Grounding agent verified the Cycle-610/612 harness interfaces from the
+  primary sources (JointOrder call shapes; C704.joint_order_controls as
+  the canonical consumer; interval arithmetic 16*carries + rotor_delta on
+  identities (2,11,23); SHA pins; the projection-only feed rule; the
+  Cycle-718 hostile-control boundary), and established that "coherent
+  source-lift tournament" has NO landed definition (repo-wide sweep) —
+  block02 scoped accordingly (feed leg only; source-lift handled as an
+  undefined forward reference with a handoff target contract).
+- F4 draft: PASS first delivery; supervisor reviewed the packet-sources
+  construction (admission bits computed from the bundle's own algebra —
+  symplectic dual/row pairings, F2 parity certificate — with slot-traced
+  retained-register witnesses; the supplied convention is the register
+  assignment, not the values) and the stage-E slot/handoff/walk reuse.
+  Supervisor rerun: 7/7 PASS, exit 0.
+- Independent checker: ast-extracts the packet map as data (no import of
+  the primary; blocklist enforced), reimplements grammar/rotor/carry/
+  interval arithmetic from first principles, agrees exactly with the
+  imported EventChain, re-verifies the six 612 outcomes, SHA pins, fault
+  behavior, and the primary's source discipline. 6/6 PASS; supervisor
+  rerun verified.
+
+## Block02 Promotion Value Gate (V1-V5)
+
+- V1: closes the first leg of the quoted Cycle-720 gate sentence ("the
+  unchanged Cycle-612 endpoint/interval harness ... feed") at bounded
+  resolution, from the composed epoch of Cycle 721.
+- V2: no epoch-fed harness exists on origin/main (sweep at ab163961a9
+  recorded in STATE: the only EventChain consumers are the 704/718/719
+  lineage, none epoch-driven); new content = the certified producer path
+  (epoch retained registers -> witnessed projections -> unchanged
+  decoder) as liveness-walked slots.
+- V3: no — the content is the constructed feed on the certified epoch,
+  not standard machinery the audit lane could assemble.
+- V4: yes — byte-pinned "unchanged" discipline plus bundle-witnessed
+  admission bits is a non-trivial bridge; the harness outputs are frozen
+  values reproduced through a genuinely new producer.
+- V5: no — closest prior art is the Cycle-719 bank core, whose packets
+  come from its own controller banks, not from the companion-code epoch;
+  the structural distinction is the producer surface (compiled input +
+  epoch), checked against fresh origin/main.
+
 ## Review-loop disposition
 
 Owner-operated lane (standing rule 2026-06-11): this block prepares the PR

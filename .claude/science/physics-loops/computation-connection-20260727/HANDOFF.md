@@ -60,6 +60,39 @@ Independent audit required before any effective status.
 4. A public immutable factorization-object API (new module, not an edit of
    landed Cycle-720 files) to open the V_s-restriction compiler.
 
+## Block02 (Cycle 722) — epoch-fed harness
+
+Delivered on the stacked branch
+`physics-loop/computation-connection-block02-20260728`:
+`frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py`
+(7/7) + `frontier_cycle722_harness_feed_independent_check_2026_07_28.py`
+(6/6) + `docs/EPOCH_FED_ENDPOINT_INTERVAL_HARNESS_CYCLE722_BOUNDED_THEOREM_NOTE_2026-07-28.md`.
+The composed epoch drives the UNCHANGED Cycle-610/612 harness (byte-pinned;
+module tripwire) through a declared packet map with bundle-witnessed
+admission bits, as liveness-walked stage-E slots, both input legs, frozen
+quadruple {9,12,21,-9} and the six causal-order outcomes exact.
+
+## Source-lift tournament — target contract for a future block (NOT attempted)
+
+The phrase "coherent source-lift tournament" (Cycle-720 verdict) has no
+landed definition (repo-wide sweep recorded in STATE.yaml). Proposed
+target contract for the block that defines it:
+
+- Target: lift a declared retained-work/packet census of the composed
+  epoch into a source-shaped object confronting, at their ORIGINAL scopes,
+  the landed candidates: SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT
+  (T_g(Y) = chi_eta(Y) T_plus, finite conditional, scalar-only
+  no-overclaim), the Cycle-294 three-route synthesis (not one combined
+  law; no importable physics API), Cycle-317 Born-forcing surface, and
+  the OPEN/UNTESTED Cycle-320/322 unit-weight auxiliary source lift.
+- Forbidden weakenings: any energy/stress/resource-source selection,
+  reciprocal response, sign/scale law, or gravity identification
+  (C_source firewall verbatim); any refit of fixtures; promotion of any
+  inherited residual past its original resolution (Cycle-719 N4 pattern).
+- Completion witness: a route-set definition + at least one bounded
+  constructive leg with its own N-gate discipline; otherwise the block
+  ships as a definition-only meta artifact, honestly labeled.
+
 ## Session/worker provenance
 
 Supervisor: physics-loop session under the workhorse split; workers:

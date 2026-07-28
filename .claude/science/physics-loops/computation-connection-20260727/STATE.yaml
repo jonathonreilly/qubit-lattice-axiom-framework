@@ -199,3 +199,21 @@ resume_hint: >
   this branch (block02 lineage carries the pack); science lineages:
   block01<-block02 stack and block03<-block04 stack. Await owner review
   of PRs #5697-#5700 before opening further PRs in this family.
+
+checkpoint_0615_ownership: >
+  OWNER re-tasked in-session: lane ownership transferred to this
+  supervisor; shaping decisions D1-D5 adopted under in-session owner
+  signoff (see DECISIONS_2026-07-28_OWNER_SIGNOFF.md); runtime EXTENDED
+  24 hours from ~2026-07-28T06:10 local (new stop ~2026-07-29T06:10).
+  PR #5692 confirmed CLOSED-landed. Parallel tracks in flight:
+  A = Cycle 725 CSLT (source-surfaces extraction running);
+  B = Cycle 726 wavefront controller compilation (extraction running);
+  D = factorization-object API module (draft running).
+  C = gravity-ceiling harness program (starts on track-A extract; shares
+  grounding). Sequencing: reviews staged as workers return; one PR per
+  coherent block; scoreboard refresh at each close.
+next_action: >
+  As each worker returns: supervisor review + rerun; spec/draft next
+  stage per track; PRs stacked or independent per imports. Track order
+  for notes/PRs: 725 (CSLT), 726 (wavefront), V_s API support PR,
+  ceiling-harness PR(s), 727 (TP switch), BKSF holonomy (D3).

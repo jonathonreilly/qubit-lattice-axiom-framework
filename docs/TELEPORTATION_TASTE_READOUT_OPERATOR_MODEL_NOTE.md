@@ -249,8 +249,8 @@ The case-by-case factorization audit documented above has bounded algebraic
 support from T1 + T2 + T4 in the companion closure note: RALA(a) is the full
 *-subalgebra of all single-site operators of the form
 `O_logical (x) I_env`, and native sublattice parity Z is in RALA iff dim = 1.
-Only T1, T2, and T4 are dependencies here; uniqueness among proper
-subalgebras and T3/T5-T8 are not load-bearing for this note.
+Only T1, T2, and T4 are dependencies here. No uniqueness statement about
+proper subalgebras is used, and T3/T5-T8 are not load-bearing for this note.
 
 See [`TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md`](TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md)
 (runner `scripts/frontier_teleportation_retained_axis_operator_algebra_closure.py`)
@@ -261,12 +261,13 @@ dynamical preparation, heralded branch protocol) remains open.
 
 ## Downstream Boundary Alignment (2026-06-13)
 
-This runner now fails unless the audited downstream teleportation boundary
-stack is present. The alignment directly ties this operator-factorization
-artifact to the retained-axis operator-algebra closure and apparatus-dynamics
-boundary, and indirectly to the causal-channel, measurement-record,
-resource-generation, resource-fidelity, cross-encoding, three-register,
-no-signaling, 3D-operator, and conclusion-boundary anchors.
+The runner validates that the tracked downstream boundary shards are present
+and reports their current pipeline-derived states as observations. Only the
+retained-axis operator-algebra closure is a load-bearing dependency and must be
+retained-grade; terminal non-clean states on the other downstream rows are not
+treated as scientific support or converted into PASS results. The
+conclusion-boundary note's state-teleportation-only, no-transfer, and
+nature-grade-hold phrases remain explicit pass/fail guards.
 
 The result remains a finite operator audit, not a detector model. It preserves
 the useful negative result for raw native parity in 2D/3D and the bounded

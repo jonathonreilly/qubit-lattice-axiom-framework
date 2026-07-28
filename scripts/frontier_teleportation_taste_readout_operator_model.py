@@ -51,31 +51,26 @@ AUDIT_INPUT_PATHS = (
     "docs/audit/data/ledger/te/teleportation_conclusion_boundary_note.json",
 )
 
-RETAINED_STATUS_PAIRS = {
-    ("retained_bounded", "audited_clean"),
-    ("retained", "audited_clean"),
+BOUNDARY_CLAIM_IDS = (
+    "teleportation_causal_channel_note",
+    "teleportation_measurement_record_note",
+    "teleportation_apparatus_dynamics_closure_note",
+    "teleportation_dynamical_resource_generation_note",
+    "teleportation_resource_fidelity_note",
+    "teleportation_retained_axis_operator_algebra_closure_note",
+    "teleportation_cross_encoding_maps_note",
+    "teleportation_three_register_cross_encoding_note",
+    "teleportation_no_signaling_audit",
+    "teleportation_3d_operator_consistent_end_to_end_note",
+    "teleportation_conclusion_boundary_note",
+)
+LOAD_BEARING_DEPENDENCY_IDS = {
+    "teleportation_retained_axis_operator_algebra_closure_note",
 }
-BOUNDARY_STATUS_PAIRS = {
-    "teleportation_causal_channel_note": RETAINED_STATUS_PAIRS,
-    "teleportation_measurement_record_note": RETAINED_STATUS_PAIRS
-    | {("audited_conditional", "audited_conditional")},
-    "teleportation_apparatus_dynamics_closure_note": RETAINED_STATUS_PAIRS
-    | {
-        ("audited_conditional", "audited_conditional"),
-        ("audited_failed", "audited_failed"),
-    },
-    "teleportation_dynamical_resource_generation_note": RETAINED_STATUS_PAIRS,
-    "teleportation_resource_fidelity_note": RETAINED_STATUS_PAIRS
-    | {("audited_conditional", "audited_conditional")},
-    "teleportation_retained_axis_operator_algebra_closure_note": RETAINED_STATUS_PAIRS,
-    "teleportation_cross_encoding_maps_note": RETAINED_STATUS_PAIRS
-    | {("audited_conditional", "audited_conditional")},
-    "teleportation_three_register_cross_encoding_note": RETAINED_STATUS_PAIRS
-    | {("audited_conditional", "audited_conditional")},
-    "teleportation_no_signaling_audit": RETAINED_STATUS_PAIRS,
-    "teleportation_3d_operator_consistent_end_to_end_note": RETAINED_STATUS_PAIRS,
-    "teleportation_conclusion_boundary_note": RETAINED_STATUS_PAIRS
-    | {("audited_renaming", "audited_renaming")},
+RETAINED_EFFECTIVE_STATUSES = {
+    "retained",
+    "retained_bounded",
+    "retained_no_go",
 }
 
 
@@ -99,10 +94,10 @@ def _boundary_rows(root: Path) -> dict[str, dict[str, object]]:
             continue
         row = json.loads((root / relative).read_text(encoding="utf-8"))
         claim_id = row.get("claim_id")
-        if not isinstance(claim_id, str) or claim_id not in BOUNDARY_STATUS_PAIRS:
+        if not isinstance(claim_id, str) or claim_id not in BOUNDARY_CLAIM_IDS:
             raise ValueError(f"unexpected teleportation boundary ledger shard: {relative}")
         rows[claim_id] = row
-    missing = sorted(set(BOUNDARY_STATUS_PAIRS) - set(rows))
+    missing = sorted(set(BOUNDARY_CLAIM_IDS) - set(rows))
     if missing:
         raise ValueError(f"missing teleportation boundary ledger shards: {missing}")
     return rows
@@ -112,20 +107,30 @@ def _compact(text: str) -> str:
     return " ".join(text.split())
 
 
+def is_retained_grade(row: dict[str, object]) -> bool:
+    return row.get("effective_status") in RETAINED_EFFECTIVE_STATUSES
+
+
 def teleportation_boundary_check_results(
     root: Path, prefix: str = "downstream teleportation boundary"
-) -> list[tuple[str, bool, str]]:
+) -> list[tuple[str, bool | None, str]]:
     rows = _boundary_rows(root)
-    out: list[tuple[str, bool, str]] = []
+    out: list[tuple[str, bool | None, str]] = []
 
-    for row_id, allowed_pairs in BOUNDARY_STATUS_PAIRS.items():
+    for row_id in BOUNDARY_CLAIM_IDS:
         row = rows[row_id]
         effective = row.get("effective_status")
         audit = row.get("audit_status")
+        if row_id in LOAD_BEARING_DEPENDENCY_IDS:
+            label = f"{prefix}: {row_id} is retained-grade"
+            passed: bool | None = is_retained_grade(row)
+        else:
+            label = f"{prefix}: {row_id} status is observed, not used as support"
+            passed = None
         out.append(
             (
-                f"{prefix}: {row_id} has a scope-compatible audited status",
-                (effective, audit) in allowed_pairs,
+                label,
+                passed,
                 f"effective={effective}, audit={audit}",
             )
         )
@@ -161,14 +166,16 @@ def teleportation_boundary_check_results(
     return out
 
 
-def print_boundary_results(results: list[tuple[str, bool, str]]) -> bool:
+def print_boundary_results(results: list[tuple[str, bool | None, str]]) -> bool:
     ok = True
     print()
     print("Downstream boundary checks:")
     for label, passed, detail in results:
-        ok = ok and passed
+        if passed is not None:
+            ok = ok and passed
+        status = "OBSERVE" if passed is None else ("PASS" if passed else "FAIL")
         print(
-            f"  {label}: {'PASS' if passed else 'FAIL'}"
+            f"  {label}: {status}"
             + (f" ({detail})" if detail else "")
         )
     return ok

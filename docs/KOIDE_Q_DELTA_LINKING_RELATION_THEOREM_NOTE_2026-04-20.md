@@ -148,14 +148,14 @@ Thus the formal identity is tied to the pair `(2/d, 2/d^2)`, not to an arbitrary
 The audit lane named two repair routes for this row: derive `Q_d` or
 `Delta_d` from retained premises, or attach the algebra as a corollary to a
 retained parent with independent content. This section takes the second
-route. The first route is not attempted here: under the framework's measure
-discipline the block-weight setting that makes the spectral ratio equal
-`2/3` is a registered per-sector pattern (a dial setting, alongside the
-other sectors' settings), so forcing it from the premises available in this
-row would overreach. That scoping is about this row, not about the setting:
-a future derivation of the registered pattern itself is not excluded here,
-and would arrive through new record-side science rather than through this
-formal row.
+route. The first route is not attempted here. The formal definitions and
+corollary in this row contain no selector for the block-weight setting that
+makes the spectral ratio equal `2/3`, so claiming that selection from this
+row would overreach. That boundary applies only to this row: it neither
+excludes nor requires a future selector theorem. A separately supported
+physical mechanism — whether from matter-action/measure, record or KMS
+dynamics, or another route — could derive this or another value; this formal
+row supplies no such mechanism.
 
 ### Cited parent authority (one hop)
 

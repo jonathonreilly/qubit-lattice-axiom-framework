@@ -171,12 +171,16 @@ No new axiom, measured mass input, or audit verdict is introduced here.
 
 ## Next Useful Path
 
-One open route is a native selector theorem: records, KMS/modular structure, or
-matter-action dynamics that select both the signed/Hermitian readout and the
-`r = 1/2` modulus. Such a theorem is a permitted result rather than a
-requirement on this packet: per
-`FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md`, the special
-values of `r` are distinguished points of one family, carrying different
-sectors, not one value the framework must select. A theorem selecting the
+One open route is a native selector theorem from record dynamics, KMS/modular
+structure, matter-action dynamics, or another independently supported physical
+mechanism. Such a theorem could select both the signed/Hermitian readout and
+the `r = 1/2` modulus, but this packet does not assume that it must. The
+stationary-point note
+[`FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md`](FLAVOR_R_HALF_IS_A_STATIONARY_POINT_NOT_FORCED_2026-06-02.md)
+establishes only that `r = 1/2` is distinguished by the supplied two-sector
+functional; it does not assign any algebraic point to a physical sector. The
+special values of `r` remain distinct algebraic points of one family, and the
+physical sector/lane assignment remains open. This packet neither derives nor
+forbids a future selector for `r = 1/2`. A theorem selecting the
 dimension/trace reading instead would point the packet to `r = 1`/`Q = 1`, not
 to the charged-lepton Koide value.

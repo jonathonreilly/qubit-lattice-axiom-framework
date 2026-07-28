@@ -150,3 +150,41 @@ local. Tracks in flight: A = Cycle 725 CSLT (grounding); B = Cycle 726
 wavefront compilation (grounding); D = factorization-object API (drafting).
 The ceiling program (track C) starts when the CSLT source-surface extract
 lands (shared grounding).
+
+## D6 — Autonomy ledger (forcing classification) adopted
+
+To make "we may need to adjust the axioms" monitored rather than a
+surprise: every supplied-inventory item now carries a classification in a
+new pack file `AUTONOMY_LEDGER.md` — {mechanically-retirable (an
+enforcement/compilation route exists), forcing-required (needs a
+derivation/forcing theorem, route named), suspected-independent (repeated
+forcing attempts failed; candidate minimal missing content)}. Movement
+between classes requires an executed attempt, and any item reaching
+suspected-independent triggers the repo's established characterize-the-
+minimal-missing-content pattern (owner governance, never campaign-level
+axiom changes).
+
+## D7 — Wavefront (DOWN/ACK) controller conventions (Cycle 726 supplies)
+
+Per the extraction's NEW-SUPPLY list, adopted as declared supplied data:
+(1) phase encoding: two M2 per site (down, ack); IDLE=(0,0), DOWN=(1,0),
+ACK=(0,1); one-hot wavefront ownership; no epoch bit (one-shot wavefront
+per supplied one-time epoch). (2) The complete local transition/output
+table is supplied as an explicit ROM-style table that is the literal
+transcription of the existing Python decision structure (cases: commit,
+pending/refusal, empty event, dirty/unlawful destination, exhaustion,
+boundary, pre-wrap/wrap); its fidelity is certified by exhaustive
+equivalence of the compiled controller against the existing fixed word on
+every lawful row — the table is convention, the equivalence is theorem.
+(3) Wavefront genesis: the source site owns DOWN initially (supplied
+clean); boundary: path end converts DOWN to ACK unconditionally.
+(4) Shift is a phase-gated local action, not a global clocked layer.
+(5) Topology/length are fixed compiler parameters (the 13/17 fixtures).
+(6) The six-bit structural bank-index ROM stays a declared supply.
+(7) Clean controller ancillas and DOWN/ACK rail genesis: supplied clean
+(stated in the trade, as in Cycles 723/724). Macro gating of H/T-bearing
+imported words uses SPECTATOR REROUTING — enable-latched Fredkin
+(CN;TOF;CN) operand swaps to clean supplied blanks when disabled — so
+every added controller gate stays in the classical reversible family; a
+direct controlled-unitary decomposition is permitted only if the landed
+gate algebra provides it natively.

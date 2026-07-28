@@ -13,6 +13,81 @@
     "why": "The historical multi-statement, one-statement, same-default, and same-closure clones must fire; distinct free globals, defaults, and closure globals must stay silent."
   },
   {
+    "id": "clone-comprehension-free-global",
+    "runner_name": "clone-comprehension-free-global.py",
+    "runner_lines": [
+      "x = 0",
+      "y = 100",
+      "",
+      "def inspect_x(values):",
+      "    return ([x for x in values], x)",
+      "",
+      "def inspect_y(items):",
+      "    return ([y for y in items], y)"
+    ],
+    "note": null,
+    "only": "CLONE",
+    "expect": [],
+    "why": "Python 3 comprehension targets do not leak; the trailing x and y loads are distinct free globals."
+  },
+  {
+    "id": "clone-comprehension-alpha",
+    "runner_name": "clone-comprehension-alpha.py",
+    "runner_lines": [
+      "def squares(values):",
+      "    return [item * item for item in values]",
+      "",
+      "def square_copy(items):",
+      "    return [value * value for value in items]"
+    ],
+    "note": null,
+    "only": "CLONE",
+    "expect": [
+      "CLONE"
+    ],
+    "why": "Equivalent comprehension-local bindings must alpha-normalize in their own scope."
+  },
+  {
+    "id": "clone-lambda-walrus-alpha",
+    "runner_name": "clone-lambda-walrus-alpha.py",
+    "runner_lines": [
+      "def make_left(offset):",
+      "    return lambda value: ((captured := value + offset), captured * 2)",
+      "",
+      "def make_right(base):",
+      "    return lambda item: ((result := item + base), result * 2)"
+    ],
+    "note": null,
+    "only": "CLONE",
+    "expect": [
+      "CLONE"
+    ],
+    "why": "Lambda arguments and named-expression locals belong to the lambda scope while the outer parameter remains captured."
+  },
+  {
+    "id": "clone-match-binding-alpha",
+    "runner_name": "clone-match-binding-alpha.py",
+    "runner_lines": [
+      "def extract_left(payload):",
+      "    match payload:",
+      "        case {'value': captured}:",
+      "            return captured",
+      "    return None",
+      "",
+      "def extract_right(record):",
+      "    match record:",
+      "        case {'value': result}:",
+      "            return result",
+      "    return None"
+    ],
+    "note": null,
+    "only": "CLONE",
+    "expect": [
+      "CLONE"
+    ],
+    "why": "Structural-pattern string bindings are function locals and must alpha-normalize with their uses."
+  },
+  {
     "id": "c707-slice",
     "runner": "tests/fixtures/inference_audit/slice_defect_c707_reconstruction.py",
     "note": null,
@@ -356,6 +431,152 @@
     "why": "An exact same-claim shorthand remains valid when the shown clause is affirmative."
   },
   {
+    "id": "direction-operator-claim-reversal",
+    "runner": null,
+    "note_name": "direction-operator-claim-reversal.md",
+    "note_lines": [
+      "# Response Requires x < y",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires x > y | exact construction | [satisfied] exhaustive family | shown: the exhaustive construction proves the converse; claimed: response requires x > y | x equals y |"
+    ],
+    "expect": [
+      "DIRECTION",
+      "THESIS"
+    ],
+    "why": "Exact claim matching must preserve mathematical comparison operators in both the direction and thesis gates."
+  },
+  {
+    "id": "direction-operator-claimed-reversal",
+    "runner": null,
+    "note_name": "direction-operator-claimed-reversal.md",
+    "note_lines": [
+      "# Response Requires x < y",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires x < y | exact construction | [satisfied] exhaustive family | shown: the exhaustive construction proves the converse; claimed: response requires x > y | x equals y |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "A parsed claimed clause with the opposite mathematical relation cannot certify the Claim cell."
+  },
+  {
+    "id": "direction-operator-exponent",
+    "runner": null,
+    "note_name": "direction-operator-exponent.md",
+    "note_lines": [
+      "# Response Requires x**2 < y",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires x2 < y | exact construction | [satisfied] exhaustive family | shown: the exhaustive construction proves the converse; claimed: response requires x2 < y | x equals y |"
+    ],
+    "expect": [
+      "DIRECTION",
+      "THESIS"
+    ],
+    "why": "Python exponent syntax is semantic claim content, not a Markdown emphasis delimiter."
+  },
+  {
+    "id": "direction-false-that",
+    "runner": null,
+    "note_name": "direction-false-that.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | proof discussion | [satisfied] finite family | shown: it is false that the proof establishes uniqueness; claimed: response requires integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "A false-that construction reverses the apparent affirmative proof verb."
+  },
+  {
+    "id": "direction-neither-nor",
+    "runner": null,
+    "note_name": "direction-neither-nor.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | proof discussion | [satisfied] finite family | shown: neither the construction nor the check proves uniqueness; claimed: response requires integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "Neither-nor evidence is negative even when it contains an affirmative proof token."
+  },
+  {
+    "id": "direction-insufficient-evidence",
+    "runner": null,
+    "note_name": "direction-insufficient-evidence.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | finite scan | [satisfied] sampled family | shown: the insufficient evidence nevertheless proves uniqueness; claimed: response requires integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "An explicit insufficiency cannot be repaired by a later affirmative keyword."
+  },
+  {
+    "id": "direction-printed-quotation",
+    "runner": null,
+    "note_name": "direction-printed-quotation.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | appendix | [satisfied] quoted appendix | shown: the appendix prints the quotation “the construction proves uniqueness”; claimed: response requires integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "Printing a quoted assertion does not establish its content."
+  },
+  {
+    "id": "direction-discussed-proof",
+    "runner": null,
+    "note_name": "direction-discussed-proof.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | appendix | [satisfied] discussion | shown: the appendix discusses how the construction proves uniqueness; claimed: response requires integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "Meta-discussion of a proof statement is not itself affirmative evidence."
+  },
+  {
     "id": "mixed-hypothesis-tags",
     "runner": null,
     "note_name": "mixed-hypothesis-tags.md",
@@ -530,6 +751,78 @@
       "HYPOTHESIS"
     ],
     "why": "An explicit matrix-Burnside identity still fails when irreducibility is omitted."
+  },
+  {
+    "id": "burnside-orbit-ordinary-clean",
+    "runner": null,
+    "note_name": "burnside-orbit-ordinary-clean.md",
+    "note_lines": [
+      "# Orbit Counting",
+      "",
+      "Burnside's theorem on finite-group orbits applies because a finite group acts on the orbit set.",
+      "",
+      "Burnside's theorem for orbit counting also applies to this finite group action and its orbits."
+    ],
+    "only": "HYPOTHESIS",
+    "expect": [],
+    "why": "Ordinary theorem-first orbit wording must select the orbit-counting schema rather than the matrix schema."
+  },
+  {
+    "id": "burnside-local-shorthand-missing",
+    "runner": null,
+    "note_name": "burnside-local-shorthand-missing.md",
+    "note_lines": [
+      "# Separate Burnside Contexts",
+      "",
+      "Burnside's theorem on irreducible matrix algebras applies to an irreducible subalgebra of M_n(C).",
+      "",
+      "In a separate counting problem, Burnside gives the orbit count."
+    ],
+    "only": "HYPOTHESIS",
+    "expect": [
+      "HYPOTHESIS"
+    ],
+    "why": "A matrix identity in one paragraph cannot globally authorize orbit shorthand that omits the finite-group hypothesis."
+  },
+  {
+    "id": "burnside-conflicting-identity",
+    "runner": null,
+    "note_name": "burnside-conflicting-identity.md",
+    "note_lines": [
+      "# Conflicting Burnside Identity",
+      "",
+      "Burnside's theorem on irreducible matrix algebras and finite-group orbits gives the result."
+    ],
+    "only": "HYPOTHESIS",
+    "expect": [
+      "HYPOTHESIS"
+    ],
+    "why": "One invocation cannot silently combine the matrix-algebra and orbit-counting Burnside identities."
+  },
+  {
+    "id": "kato-rellich-distant-decoy",
+    "runner": null,
+    "note_name": "kato-rellich-distant-decoy.md",
+    "note_lines": [
+      "# Distant Hypothesis Decoy",
+      "",
+      "Kato-Rellich gives the conclusion.",
+      "",
+      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+      "",
+      "An unrelated operator elsewhere is bounded and self-adjoint."
+    ],
+    "only": "HYPOTHESIS",
+    "expect": [
+      "HYPOTHESIS"
+    ],
+    "why": "Hypothesis keywords outside the 800-character identity window cannot satisfy an invocation."
   },
   {
     "id": "burnside-orbit-missing",

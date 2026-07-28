@@ -118,7 +118,9 @@ NAMED_THEOREMS = (
         re.compile(
             r"\b(?:"
             r"burnside(?:'s)?\s+(?:classical\s+)?theorem"
-            r"(?:\s+(?:on|for)\s+[^.;\n]{0,100}\bmatrix\s+algebras?)?"
+            r"\s+(?:on|for)\s+[^.;\n]{0,100}\bmatrix[- ]"
+            r"(?:algebras?|semigroups?)"
+            r"|burnside(?:'s)?\s+matrix[- ]algebra\s+theorem"
             r"|matrix[- ]algebra\s+burnside(?:'s)?\s+theorem"
             r")\b",
             re.I,
@@ -129,7 +131,9 @@ NAMED_THEOREMS = (
         "burnside orbit-counting lemma",
         re.compile(
             r"\bburnside(?:'s)?\s+(?:lemma|orbit[- ]counting"
-            r"(?:\s+(?:lemma|theorem))?)\b",
+            r"(?:\s+(?:lemma|theorem))?|"
+            r"theorem\s+(?:on|for)\s+[^.;\n]{0,100}"
+            r"(?:finite[- ]group\s+orbits?|orbit[- ]counting))\b",
             re.I,
         ),
         ("finite group", "orbit"),
@@ -334,12 +338,13 @@ def _argument_bindings(args: ast.arguments) -> list[ast.arg]:
 class _ScopeBindingCollector(ast.NodeVisitor):
     """Collect bindings in one lexical scope without descending into children."""
 
-    def __init__(self, args: ast.arguments):
+    def __init__(self, args: ast.arguments | None):
         self.ordered: list[str] = []
         self.globals: set[str] = set()
         self.nonlocals: set[str] = set()
-        for arg in _argument_bindings(args):
-            self.add(arg.arg)
+        if args:
+            for arg in _argument_bindings(args):
+                self.add(arg.arg)
 
     def add(self, name: str | None) -> None:
         if name and name not in self.ordered:
@@ -379,6 +384,45 @@ class _ScopeBindingCollector(ast.NodeVisitor):
     def visit_Nonlocal(self, node):  # noqa: N802
         self.nonlocals.update(node.names)
 
+    def _visit_comprehension(self, node: ast.AST) -> None:
+        """Visit expressions but not comprehension-local iteration targets."""
+
+        generators = node.generators
+        for generator in generators:
+            self.visit(generator.iter)
+            for condition in generator.ifs:
+                self.visit(condition)
+        if isinstance(node, ast.DictComp):
+            self.visit(node.key)
+            self.visit(node.value)
+        else:
+            self.visit(node.elt)
+
+    def visit_ListComp(self, node):  # noqa: N802
+        self._visit_comprehension(node)
+
+    def visit_SetComp(self, node):  # noqa: N802
+        self._visit_comprehension(node)
+
+    def visit_GeneratorExp(self, node):  # noqa: N802
+        self._visit_comprehension(node)
+
+    def visit_DictComp(self, node):  # noqa: N802
+        self._visit_comprehension(node)
+
+    def visit_MatchAs(self, node):  # noqa: N802
+        self.add(node.name)
+        if node.pattern:
+            self.visit(node.pattern)
+
+    def visit_MatchStar(self, node):  # noqa: N802
+        self.add(node.name)
+
+    def visit_MatchMapping(self, node):  # noqa: N802
+        self.add(node.rest)
+        for pattern in node.patterns:
+            self.visit(pattern)
+
 
 class _LexicalAlphaNormalizer(ast.NodeTransformer):
     """Alpha-normalize each function scope while retaining genuine free names."""
@@ -398,7 +442,7 @@ class _LexicalAlphaNormalizer(ast.NodeTransformer):
     def _scope_for(
         self,
         args: ast.arguments,
-        body: list[ast.stmt],
+        body: list[ast.AST],
     ) -> tuple[dict[str, str], set[str]]:
         collector = _ScopeBindingCollector(args)
         for statement in body:
@@ -412,6 +456,21 @@ class _LexicalAlphaNormalizer(ast.NodeTransformer):
             for index, name in enumerate(ordered)
         }
         return mapping, collector.globals
+
+    def _comprehension_scope(
+        self,
+        generators: list[ast.comprehension],
+    ) -> tuple[dict[str, str], set[str]]:
+        collector = _ScopeBindingCollector(None)
+        for generator in generators:
+            collector.visit(generator.target)
+        scope_number = self.next_scope
+        self.next_scope += 1
+        mapping = {
+            name: f"_scope_{scope_number}_{index}"
+            for index, name in enumerate(collector.ordered)
+        }
+        return mapping, set()
 
     def _visit_outer_arguments(self, args: ast.arguments) -> None:
         for arg in _argument_bindings(args):
@@ -475,7 +534,7 @@ class _LexicalAlphaNormalizer(ast.NodeTransformer):
 
     def visit_Lambda(self, node):  # noqa: N802
         self._visit_outer_arguments(node.args)
-        mapping, global_names = self._scope_for(node.args, [])
+        mapping, global_names = self._scope_for(node.args, [node.body])
         self.scopes.append((mapping, global_names))
         self._rename_argument_bindings(node.args, mapping)
         node.body = self.visit(node.body)
@@ -483,14 +542,57 @@ class _LexicalAlphaNormalizer(ast.NodeTransformer):
         return node
 
     def visit_ClassDef(self, node):  # noqa: N802
+        # A class body uses a dynamic namespace rather than a function closure.
+        # Preserve it exactly so class-local names cannot be mistaken for
+        # enclosing-function locals; only definition-time outer expressions
+        # and the class's binding in the enclosing scope are normalized.
         node.name = self._resolve(node.name)
         node.decorator_list = [
             self.visit(decorator) for decorator in node.decorator_list
         ]
         node.bases = [self.visit(base) for base in node.bases]
         node.keywords = [self.visit(keyword) for keyword in node.keywords]
-        node.body = [self.visit(statement) for statement in node.body]
         return node
+
+    def _visit_comprehension(self, node: ast.AST):
+        generators = node.generators
+        if not generators:
+            return node
+
+        # Python evaluates the outermost iterable in the surrounding scope.
+        generators[0].iter = self.visit(generators[0].iter)
+        mapping, global_names = self._comprehension_scope(generators)
+        self.scopes.append((mapping, global_names))
+
+        generators[0].target = self.visit(generators[0].target)
+        generators[0].ifs = [
+            self.visit(condition) for condition in generators[0].ifs
+        ]
+        for generator in generators[1:]:
+            generator.iter = self.visit(generator.iter)
+            generator.target = self.visit(generator.target)
+            generator.ifs = [
+                self.visit(condition) for condition in generator.ifs
+            ]
+        if isinstance(node, ast.DictComp):
+            node.key = self.visit(node.key)
+            node.value = self.visit(node.value)
+        else:
+            node.elt = self.visit(node.elt)
+        self.scopes.pop()
+        return node
+
+    def visit_ListComp(self, node):  # noqa: N802
+        return self._visit_comprehension(node)
+
+    def visit_SetComp(self, node):  # noqa: N802
+        return self._visit_comprehension(node)
+
+    def visit_GeneratorExp(self, node):  # noqa: N802
+        return self._visit_comprehension(node)
+
+    def visit_DictComp(self, node):  # noqa: N802
+        return self._visit_comprehension(node)
 
     def visit_Name(self, node):  # noqa: N802
         resolved = self._resolve(node.id)
@@ -506,6 +608,25 @@ class _LexicalAlphaNormalizer(ast.NodeTransformer):
         if node.name:
             node.name = self._resolve(node.name)
         return self.generic_visit(node)
+
+    def visit_MatchAs(self, node):  # noqa: N802
+        if node.name:
+            node.name = self._resolve(node.name)
+        if node.pattern:
+            node.pattern = self.visit(node.pattern)
+        return node
+
+    def visit_MatchStar(self, node):  # noqa: N802
+        if node.name:
+            node.name = self._resolve(node.name)
+        return node
+
+    def visit_MatchMapping(self, node):  # noqa: N802
+        if node.rest:
+            node.rest = self._resolve(node.rest)
+        node.keys = [self.visit(key) for key in node.keys]
+        node.patterns = [self.visit(pattern) for pattern in node.patterns]
+        return node
 
     def visit_Import(self, node):  # noqa: N802
         for alias in node.names:
@@ -607,9 +728,20 @@ def _claim_positions(text: str) -> set[int]:
     return out
 
 
-def _claim_words(text: str) -> list[str]:
+def _claim_tokens(text: str) -> tuple[str, ...]:
+    """Normalize Markdown presentation while preserving mathematical syntax."""
+
     cleaned = re.sub(r"\*\*\s*thesis\s*\*\*", " ", text, flags=re.I)
-    return re.findall(r"[a-z0-9]+", cleaned.lower())
+    cleaned = re.sub(r"^\s*#{1,6}\s*", "", cleaned)
+    cleaned = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", cleaned)
+    cleaned = re.sub(r"<br\s*/?>", " ", cleaned, flags=re.I)
+    cleaned = cleaned.strip()
+    for marker in ("**", "`"):
+        if cleaned.startswith(marker) and cleaned.endswith(marker):
+            cleaned = cleaned[len(marker) : -len(marker)].strip()
+    cleaned = re.sub(r"\\([\\`*_[\]{}()#+.!|<>-])", r"\1", cleaned)
+    # Non-word tokens are retained individually, so x < y cannot equal x > y.
+    return tuple(re.findall(r"\w+|[^\w\s]", cleaned.casefold()))
 
 
 CLAIM_MODALITIES = (
@@ -641,14 +773,26 @@ def _claim_text_matches(
     *,
     allow_coverage: bool = False,
 ) -> bool:
-    a = " ".join(_claim_words(left))
-    b = " ".join(_claim_words(right))
+    a = _claim_tokens(left)
+    b = _claim_tokens(right)
     if not a or not b:
         return False
     left_modality = _claim_modality(left)
     if left_modality and left_modality != _claim_modality(right):
         return False
-    return a == b or (allow_coverage and (a in b or b in a))
+    if a == b:
+        return True
+    if not allow_coverage:
+        return False
+
+    def contains(haystack: tuple[str, ...], needle: tuple[str, ...]) -> bool:
+        width = len(needle)
+        return any(
+            haystack[index : index + width] == needle
+            for index in range(len(haystack) - width + 1)
+        )
+
+    return contains(a, b) or contains(b, a)
 
 
 DIRECTION_META_OR_DENIAL = re.compile(
@@ -662,9 +806,11 @@ DIRECTION_META_OR_DENIAL = re.compile(
     r"\bno\s+(?:(?:checked|established|proved|verified)\s+)?"
     r"(?:converse|equivalence|uniqueness|impossibility|necessity)\b|"
     r"\b(?:there\s+is\s+)?no\s+(?:\w+\s+){0,3}"
-    r"(?:evidence|proof|support|verification|demonstration)\b|"
+    r"(?:evidence|proof|support|verification|demonstration|argument|"
+    r"derivation|calculation|analysis)\b|"
     r"\b(?:lacks?|lacking|without)\s+(?:\w+\s+){0,3}"
-    r"(?:evidence|proof|support|verification|demonstration)\b|"
+    r"(?:evidence|proof|support|verification|demonstration|argument|"
+    r"derivation|calculation|analysis)\b|"
     r"\b(?:proves?|proved|shows?|shown|establishes?|established|"
     r"verifies?|verified|checks?|checked|demonstrates?|demonstrated|"
     r"derives?|derived|confirms?|confirmed)\b[^.;]{0,80}"
@@ -697,6 +843,32 @@ DIRECTION_AFFIRMATIVE = re.compile(
     r"be (?:reached|satisfied|realized|constructed|nonzero|invertible)))\b",
     re.I,
 )
+DIRECTION_AUTHORIZED_NEGATIVE = re.compile(
+    r"\bdoes\s+not\s+exist\b|"
+    r"\bno\s+[^.;]{0,80}\s+exists\b|"
+    r"\bcannot\s+(?:exist|occur|hold|satisfy|equal|"
+    r"be\s+(?:reached|satisfied|realized|constructed|nonzero|invertible))\b",
+    re.I,
+)
+DIRECTION_UNSUPPORTED_POLARITY = re.compile(
+    r"\b(?:false|neither|nor|insufficient|inconclusive|unproven|"
+    r"undemonstrated|unsupported|unknown|unclear|uncertain|allegedly|"
+    r"purportedly|perhaps|possibly|probably|apparently|hardly|scarcely|"
+    r"barely|doubtful|may|might|could|would|seems?|appears?|suggests?)\b|"
+    r"\b(?:absence|failure)\s+of\b|"
+    r"\bnon[- ](?:unique(?:ly|ness)?|equivalent|equivalence|necessary|"
+    r"necessity)\b|"
+    r"\b(?:prints?|discusses?|describes?|quotes?|repeats?|restates?|"
+    r"mentions?|records?|reports?|asks?|examines?|considers?|"
+    r"investigates?|questions?|contains?|reproduces?|summarizes?|"
+    r"paraphrases?|cites?|transcribes?|lists?|displays?|presents?)\b|"
+    r"\b(?:says?|writes?|reads?|notes?|supposes?|assumes?|hypothesizes?|"
+    r"conjectures?|postulates?)\b|"
+    r"\b(?:disproves?|refutes?|contradicts?|denies?)\b|"
+    r"\baccording\s+to\b|"
+    r"\b(?:not|no|never|without|lacks?|lacking)\b",
+    re.I,
+)
 SHOWN_CLAIMED = re.compile(
     r"^\s*shown\s*:\s*(?P<shown>.+?)\s*"
     r"(?:;|<br\s*/?>)\s*claimed\s*:\s*(?P<claimed>.+?)\s*$",
@@ -716,16 +888,32 @@ def _split_shown_claimed(cell: str) -> tuple[str, str] | None:
 
 
 def _claimed_clause_matches(claimed: str, claim: str) -> bool:
-    normalized = " ".join(_claim_words(claimed))
-    if normalized in {"same", "the same", "same claim", "the same claim"}:
+    normalized = _claim_tokens(claimed)
+    if normalized in {
+        ("same",),
+        ("the", "same"),
+        ("same", "claim"),
+        ("the", "same", "claim"),
+    }:
         return True
     return _claim_text_matches(claimed, claim)
 
 
 def _direction_evidence_is_affirmative(shown: str) -> bool:
-    if re.search(r"\bclaimed\s*:", shown, re.I) or "?" in shown:
+    if (
+        re.search(r"\bclaimed\s*:", shown, re.I)
+        or "?" in shown
+        or re.search(r'["“”‘’`]', shown)
+        or re.search(r"(?<!\w)'[^']+'(?!\w)", shown)
+    ):
         return False
     if DIRECTION_META_OR_DENIAL.search(shown):
+        return False
+    polarity_text = DIRECTION_AUTHORIZED_NEGATIVE.sub(
+        " established-impossibility ",
+        shown,
+    )
+    if DIRECTION_UNSUPPORTED_POLARITY.search(polarity_text):
         return False
     return bool(DIRECTION_AFFIRMATIVE.search(shown))
 
@@ -780,18 +968,60 @@ HYPOTHESIS_PATTERNS = {
         r"\bbounded(?:\s+[\w-]+){0,3}\s+domain\b",
         re.I,
     ),
-    "irreducible": re.compile(r"\birreducib(?:le|ly|ility)\b", re.I),
+    "irreducible": re.compile(
+        r"\birreducib(?:le|ly|ility)\b|"
+        r"\bno\s+(?:(?:proper|nonzero)\s+){1,2}subspace\b"
+        r"[^.;\n]{0,100}\binvariant\b",
+        re.I,
+    ),
     "matrix algebra": re.compile(
         r"\bmatrix[- ]algebras?\b|"
         r"\bm\s*_?\s*(?:\d+|n)\s*\(\s*c\s*\)",
         re.I,
     ),
+    "finite group": re.compile(r"\bfinite[- ]groups?\b", re.I),
 }
 
 
 def _hypothesis_present(label: str, text: str) -> bool:
     pattern = HYPOTHESIS_PATTERNS.get(label)
     return bool(pattern.search(text)) if pattern else label in text
+
+
+def _paragraph_containing(text: str, start: int, end: int) -> str:
+    left = text.rfind("\n\n", 0, start)
+    right = text.find("\n\n", end)
+    return text[left + 2 if left >= 0 else 0 : right if right >= 0 else len(text)]
+
+
+BURNSIDE_MATRIX_CONTEXT = re.compile(
+    r"\bmatrix[- ](?:algebras?|semigroups?|units?)\b|"
+    r"\bm\s*_?\s*(?:\d+|n)\s*\(\s*c\s*\)",
+    re.I,
+)
+BURNSIDE_ORBIT_CONTEXT = re.compile(
+    r"\borbits?\b|\borbit[- ]counting\b|\bgroup\s+action\b",
+    re.I,
+)
+
+
+def _burnside_shorthand_schema(
+    paragraph: str,
+) -> tuple[str, tuple[str, ...]] | None:
+    matrix = bool(BURNSIDE_MATRIX_CONTEXT.search(paragraph)) or bool(
+        re.search(r"\bsubalgebra\b", paragraph, re.I)
+        and re.search(
+            r"\birreducib(?:le|ly|ility)\b|\brank[- ]one\b",
+            paragraph,
+            re.I,
+        )
+    )
+    orbit = bool(BURNSIDE_ORBIT_CONTEXT.search(paragraph))
+    if matrix == orbit:
+        return None
+    if matrix:
+        return "burnside matrix-algebra theorem", ("irreducible", "matrix algebra")
+    return "burnside orbit-counting lemma", ("finite group", "orbit")
 
 
 def check_hypothesis(note: Path) -> list[Finding]:
@@ -805,7 +1035,6 @@ def check_hypothesis(note: Path) -> list[Finding]:
     text = note.read_text()
     low = text.lower()
     occupied: list[tuple[int, int]] = []
-    resolved_surnames: set[str] = set()
 
     def overlaps(span: tuple[int, int]) -> bool:
         return any(span[0] < end and start < span[1] for start, end in occupied)
@@ -813,20 +1042,40 @@ def check_hypothesis(note: Path) -> list[Finding]:
     for pattern in THEOREM_NAMESAKE_EXCLUSIONS:
         occupied.extend(match.span() for match in pattern.finditer(text))
 
+    for line_number, line_text in enumerate(text.splitlines(), 1):
+        burnside_match = re.search(r"\bburnside\b", line_text, re.I)
+        if (
+            burnside_match
+            and BURNSIDE_MATRIX_CONTEXT.search(line_text)
+            and BURNSIDE_ORBIT_CONTEXT.search(line_text)
+        ):
+            line_start = sum(
+                len(line) + 1 for line in text.splitlines()[: line_number - 1]
+            )
+            span = (
+                line_start + burnside_match.start(),
+                line_start + burnside_match.end(),
+            )
+            occupied.append(span)
+            out.append(
+                Finding(
+                    "HYPOTHESIS",
+                    f"{note.name}:{line_number}",
+                    "conflates matrix-algebra and orbit-counting Burnside "
+                    "identities on one line; name each result separately",
+                )
+            )
+
     for name, pattern, hyps in NAMED_THEOREMS:
         for m in pattern.finditer(text):
             if overlaps(m.span()):
                 continue
             occupied.append(m.span())
-            if "burnside" in name:
-                resolved_surnames.add("burnside")
             window = low[
                 max(0, m.start() - HYPOTHESIS_WINDOW)
                 : m.start() + HYPOTHESIS_WINDOW
             ]
             missing = [h for h in hyps if not _hypothesis_present(h, window)]
-            if missing and all(_hypothesis_present(h, low) for h in hyps):
-                missing = []
             if missing:
                 line = text[: m.start()].count("\n") + 1
                 out.append(
@@ -839,10 +1088,47 @@ def check_hypothesis(note: Path) -> list[Finding]:
     for match in AMBIGUOUS_THEOREM_SURNAME.finditer(text):
         if overlaps(match.span()):
             continue
-        if match.group(1).lower() in resolved_surnames:
-            continue
         occupied.append(match.span())
         line = text[: match.start()].count("\n") + 1
+        line_start = text.rfind("\n", 0, match.start()) + 1
+        line_end = text.find("\n", match.end())
+        line_text = text[line_start : line_end if line_end >= 0 else len(text)]
+        if re.match(r"^\s*#{1,6}\s", line_text):
+            continue
+        if match.group(1).lower() == "burnside":
+            suffix = text[match.end() : match.end() + 12]
+            if re.match(r"-(?:type|style|related)\b", suffix, re.I):
+                continue
+            paragraph = _paragraph_containing(text, *match.span())
+            schema = _burnside_shorthand_schema(paragraph)
+            if schema:
+                name, hyps = schema
+                local_context = paragraph
+                paragraph_start = text.rfind("\n\n", 0, match.start()) + 2
+                for label in re.findall(r"\(T\d+\)", paragraph):
+                    prior = text.rfind(
+                        label,
+                        max(0, match.start() - HYPOTHESIS_WINDOW),
+                        paragraph_start,
+                    )
+                    if prior >= 0:
+                        local_context = text[prior:paragraph_start] + paragraph
+                        break
+                missing = [
+                    h
+                    for h in hyps
+                    if not _hypothesis_present(h, local_context.lower())
+                ]
+                if missing:
+                    out.append(
+                        Finding(
+                            "HYPOTHESIS",
+                            f"{note.name}:{line}",
+                            f"uses local shorthand for `{name}` without stating "
+                            f"hypotheses {missing} in the same paragraph",
+                        )
+                    )
+                continue
         out.append(
             Finding(
                 "HYPOTHESIS",

@@ -112,3 +112,41 @@ retention.
 4. **V_s factorization-object API module** (D2), then the V_s-restriction
    compiler cycle.
 5. **BKSF holonomy compression** (D3).
+
+## D5 — Lane ownership taken; gravity evidence-ceiling program (owner-authorized 2026-07-28)
+
+Ownership: this campaign supervisor now owns the TOE-connection lane and
+its rubric check-ins. Path: the previous owner's remaining retasking is
+adopted where it stands (wavefront controller compilation; TP
+reference-to-companion switch) and extended with a CEILING track the
+owner authorized explicitly ("workers in parallel that could raise the
+gravity ceiling to 99%").
+
+Why gravity's ceiling is 94%: the lane's acceptance surfaces are weaker
+than time's. Time has decisive frozen-output decoders (Cycle-610/612:
+interval quadruple, causal-order outcomes) that any feed can consume
+byte-pinned and unchanged. Gravity/source has a scalar-only-conditional
+tensor lift, a contract verifier with no importable physics API
+(Cycle 294, "not one combined law"), and an OPEN/UNTESTED unit-weight
+lift — nothing with frozen expected outputs a downstream feed can be
+decisively tested against.
+
+The ceiling program (support/meta ceiling; ZERO new physics claims;
+C_source firewall verbatim): build the source-lane analog of the
+Cycle-610/612 harness —
+1. a recoil/reciprocity acceptance harness: frozen expected outputs on
+   declared fixtures of the landed two-cell two-source recoil surface;
+2. a response-locking/Ward acceptance harness: a NEW wrapper module with
+   an explicit input port that reruns the landed tensor-lift checks
+   unchanged and pins their outputs as frozen expected values;
+3. a typed-bridge acceptance harness: Cycle-294's contract rows
+   formalized as a frozen pinned contract table;
+4. an independent adversary for the harness set itself.
+Completion raises the CEILING (what is decisively testable), not the
+score; source scores move only when constructions pass these harnesses.
+
+Runtime: owner extended the campaign by 24 hours from ~2026-07-28T06:10
+local. Tracks in flight: A = Cycle 725 CSLT (grounding); B = Cycle 726
+wavefront compilation (grounding); D = factorization-object API (drafting).
+The ceiling program (track C) starts when the CSLT source-surface extract
+lands (shared grounding).

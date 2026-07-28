@@ -1,33 +1,33 @@
 #!/usr/bin/env python3
-"""Exact support-side A1 center-excess law plus bounded tensor consequence.
-
-This runner advances the post-blindness gravity route on the microscopic
-support block rather than the shell side.
+"""Exact center-excess law in the totally symmetric cubic support sector.
 
 Exact content:
-  1. On the seven-site star support, the exact A1 support block at fixed total
-     charge retains one scalar datum after charge normalization:
+  1. For the size-15 zero-Dirichlet unit negative lattice Laplacian, the
+     seven-site totally symmetric cubic star-support sector (shorthand A1) at
+     fixed total charge carries the scalar datum
          delta_A1 = (phi_support(center) - phi_support(arm_mean)) / Q.
-  2. For the canonical Q=1 projective A1 family
+  2. For the canonical Q=1 family
          q_A1(r) = (e0 + r s) / (1 + sqrt(6) r),
      that exact datum is
          delta_A1(r) = 1 / (6 (1 + sqrt(6) r)).
   3. That closed form holds for every r >= 0, not only at sampled r: the map
      q -> G_S q is linear and every family member carries total charge Q=1, so
      delta_A1 is the corresponding combination of its two endpoint values
-     1/6 and 0. The runner checks the linearity directly and sweeps r densely.
+     1/6 and 0. The runner checks the linearity directly and samples 201
+     log-spaced diagnostic points.
 
 Bounded content (conditional on the current chosen tensor observable):
   4. The tensor coefficients gamma_E, gamma_T are central finite differences,
      with step EPS = 0.005, of the eta floor returned by tensor_metrics in
-     frontier_tensor_boundary_drive_two_channel.py, normalized by anchor_per_Q
-     from frontier_one_parameter_reduced_shell_law.py. An affine law in
-     delta_A1 is fitted from the two A1 endpoint backgrounds, not derived.
+     frontier_tensor_boundary_drive_two_channel.py, divided by the actual
+     anisotropic anchor anchor_per_Q * Q(q) from
+     frontier_one_parameter_reduced_shell_law.py. An affine law in delta_A1 is
+     fitted from the two endpoint backgrounds, not derived.
   5. That fitted law is evaluated at exactly eight backgrounds: the six
-     canonical A1 samples r = 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, the exact local
-     O_h A1 baseline, and the finite-rank A1 baseline. The reported ~1e-8 and
-     few-e-6 error levels are observed maxima over those eight points only,
-     and are not claimed at any other background or for any other observable.
+     canonical samples r = 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, the exact local O_h
+     totally symmetric baseline, and the finite-rank totally symmetric
+     baseline. The reported ~1e-8 and few-e-6 error levels are observed maxima
+     over those eight points only and are not claimed elsewhere.
 """
 
 from __future__ import annotations
@@ -39,6 +39,14 @@ from __future__ import annotations
 # ceiling is too tight under concurrency contention; see
 # `docs/audit/RUNNER_CACHE_POLICY.md`.
 AUDIT_TIMEOUT_SEC = 1800
+
+AUDIT_INPUT_PATHS = (
+    "docs/TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md",
+    "scripts/frontier_same_source_metric_ansatz_scan.py",
+    "scripts/frontier_finite_rank_gravity_residual.py",
+    "scripts/frontier_tensor_boundary_drive_two_channel.py",
+    "scripts/frontier_one_parameter_reduced_shell_law.py",
+)
 
 from dataclasses import dataclass
 from _frontier_loader import load_frontier
@@ -98,6 +106,8 @@ def support_potential(q: np.ndarray) -> np.ndarray:
 def support_delta(q: np.ndarray) -> float:
     vals = support_potential(q)
     q_total = float(np.sum(q))
+    if q_total == 0.0:
+        raise ValueError("support_delta requires Q(q) != 0")
     return float(vals[0] / q_total - np.mean(vals[1:]) / q_total)
 
 
@@ -109,7 +119,12 @@ def gamma_pair(q: np.ndarray, ex: np.ndarray, t1x: np.ndarray) -> tuple[float, f
     beta_e = float((eta_floor(q + EPS * ex) - eta_floor(q - EPS * ex)) / (2.0 * EPS))
     beta_t = float((eta_floor(q + EPS * t1x) - eta_floor(q - EPS * t1x)) / (2.0 * EPS))
     red = shell.reduced_data(phi_from_q(q))
-    a_aniso = float(red["anchor_per_Q"]) * float(np.sum(q))
+    q_total = float(np.sum(q))
+    if q_total == 0.0:
+        raise ValueError("gamma_pair requires Q(q) != 0")
+    a_aniso = float(red["anchor_per_Q"]) * q_total
+    if a_aniso == 0.0:
+        raise ValueError("gamma_pair requires a nonzero anisotropic anchor")
     return beta_e / a_aniso, beta_t / a_aniso
 
 
@@ -130,7 +145,10 @@ def a1_baseline(q_eff: np.ndarray, basis: np.ndarray) -> np.ndarray:
 
 
 def main() -> int:
-    print("Support-side A1 center-excess law for the tensor frontier")
+    print(
+        "Support-side center-excess law in the totally symmetric cubic "
+        "star-support sector (A1)"
+    )
     print("=" * 78)
 
     basis = same.build_adapted_basis()
@@ -146,22 +164,27 @@ def main() -> int:
     vals_s = support_potential(s_unit)
     arm_diff = float(np.max(np.abs(vals_e0[1:] - vals_s[1:])))
     center_excess_diff = float(abs((vals_e0[0] - vals_s[0]) - (1.0 / 6.0)))
+    green_identity_err = float(np.max(np.abs(vals_s - (vals_e0 - e0 / 6.0))))
 
-    print("Unit-charge A1 endpoint support potentials:")
+    print("Unit-charge totally symmetric endpoint support potentials:")
     print(f"  e0      = {np.array2string(vals_e0, precision=12, floatmode='fixed')}")
     print(f"  s/sqrt6 = {np.array2string(vals_s, precision=12, floatmode='fixed')}")
     print(f"  max arm-site difference = {arm_diff:.3e}")
     print(f"  center-excess residual from 1/6 = {center_excess_diff:.3e}")
+    print(f"  Green endpoint identity residual = {green_identity_err:.3e}")
 
     record(
-        "the two unit-charge A1 basis backgrounds induce the same arm-site support potential",
+        "the two unit-charge totally symmetric backgrounds induce the same arm-site support potential",
         arm_diff < 1e-12,
         f"max arm-site difference = {arm_diff:.3e}",
     )
     record(
-        "the exact surviving A1 support datum is the center-excess scalar, with endpoint size 1/6",
-        center_excess_diff < 1e-12,
-        f"center-excess residual from 1/6 = {center_excess_diff:.3e}",
+        "the finite-Dirichlet Green identity gives endpoint center excess 1/6 exactly",
+        center_excess_diff < 1e-12 and green_identity_err < 1e-12,
+        (
+            f"center-excess residual={center_excess_diff:.3e}, "
+            f"Green identity residual={green_identity_err:.3e}"
+        ),
     )
 
     max_delta_formula_err = 0.0
@@ -176,7 +199,7 @@ def main() -> int:
         )
 
     record(
-        "on the canonical Q=1 projective A1 family, the exact support-side scalar is delta_A1(r)=1/(6(1+sqrt(6)r))",
+        "on the canonical Q=1 totally symmetric family, the exact support-side scalar is delta_A1(r)=1/(6(1+sqrt(6)r))",
         max_delta_formula_err < 1e-12,
         f"max formula error = {max_delta_formula_err:.3e}",
     )
@@ -195,7 +218,7 @@ def main() -> int:
     print(f"  gamma_E(shell)  = {gamma_s[0]:+.12e}")
     print(f"  gamma_T(center) = {gamma_e0[1]:+.12e}")
     print(f"  gamma_T(shell)  = {gamma_s[1]:+.12e}")
-    print("\nAffine support law from exact A1 endpoints:")
+    print("\nAffine support law from exact totally symmetric endpoints:")
     print(f"  gamma_E(delta) = {intercept_e:+.12e} + ({slope_e:+.12e}) delta")
     print(f"  gamma_T(delta) = {intercept_t:+.12e} + ({slope_t:+.12e}) delta")
 
@@ -233,7 +256,7 @@ def main() -> int:
         )
 
     record(
-        "the current bright tensor coefficients are nearly affine in the exact support-side center-excess scalar on the canonical A1 family",
+        "the chosen tensor coefficients are nearly affine in the center-excess scalar at the six canonical samples",
         max_canonical_err_e < 1e-8 and max_canonical_err_t < 2e-8,
         (
             f"max canonical affine-law errors: "
@@ -242,7 +265,7 @@ def main() -> int:
         status="BOUNDED",
     )
     record(
-        "the same support-side affine law tracks the exact local O_h and finite-rank A1 baselines",
+        "the same fitted function tracks the exact local O_h and finite-rank totally symmetric baselines",
         max_family_err_e < 5e-6 and max_family_err_t < 5e-6,
         (
             f"max audited-family affine-law errors: "
@@ -289,7 +312,7 @@ def main() -> int:
         max_wrong_law_err = max(max_wrong_law_err, abs(delta - wrong_law))
 
     record(
-        "delta_A1(r)=1/(6(1+sqrt(6)r)) holds on a dense continuous sweep, not only at the six canonical samples",
+        "the exact formula agrees with a 201-point log-spaced numerical sweep",
         max_sweep_formula_err < 1e-12,
         f"max error {max_sweep_formula_err:.3e} over {len(r_sweep)} r values in [0, 1e3]",
     )
@@ -326,11 +349,15 @@ def main() -> int:
         "r = 0.25, 0.5, 0.75, 1.0, 1.5, 2.0",
         "exact local O_h",
         "finite-rank",
+        "size-15",
+        "zero Dirichlet",
         "tensor_metrics",
-        "scripts/frontier_tensor_boundary_drive_two_channel.py",
+        "QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md",
         "anchor_per_Q",
-        "scripts/frontier_one_parameter_reduced_shell_law.py",
+        "anchor_per_Q * Q(q)",
+        "ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md",
         "EPS = 0.005",
+        "**Type:** bounded_theorem",
         "## Downstream hygiene (2026-07-25)",
     )
     forbidden_scope = (
@@ -356,36 +383,40 @@ def main() -> int:
         ),
     )
 
-    sibling_pins = (
+    sibling_science_pins = (
         "phi_support(center) - phi_support(arm_mean) = 1/6",
         "delta_A1(r) = 1 / (6 (1 + sqrt(6) r))",
         "delta_A1(q) =",
-        "survives the shell-blindness theorem",
-        "exact tensor endpoint coefficients",
         "center excess",
         "1/6",
     )
-    missing_pins = [tok for tok in sibling_pins if tok not in note_text]
+    compatibility_token = "survives the shell-blindness theorem"
+    compatibility_disclaimer = "inert parser fixture"
+    missing_pins = [tok for tok in sibling_science_pins if tok not in note_text]
     record(
-        "every note string that sibling runners read out of this note is still present",
-        not missing_pins,
-        f"{len(sibling_pins) - len(missing_pins)}/{len(sibling_pins)} pinned strings present; missing = {missing_pins}",
+        "known sibling science strings remain present and the legacy parser token is explicitly inert",
+        not missing_pins
+        and compatibility_token in note_text
+        and compatibility_disclaimer in note_text,
+        (
+            f"{len(sibling_science_pins) - len(missing_pins)}/"
+            f"{len(sibling_science_pins)} science strings present; "
+            f"missing={missing_pins}; compatibility token is parser-only"
+        ),
     )
 
     print("\nVerdict:")
     print(
-        "The shell-blindness pivot can now be sharpened again. After fixing total "
-        "charge, the exact A1 support block retains one microscopic scalar datum, "
-        "the support center-excess delta_A1, and that datum obeys the closed form "
-        "1/(6(1+sqrt(6)r)) on the whole canonical family, by linearity of q -> G_S q "
-        "at fixed total charge. The tensor-side statement is narrower and stays "
-        "conditional: for the current chosen tensor observable (the eta floor of "
-        "tensor_metrics, normalized by anchor_per_Q, differenced with EPS=0.005), the "
-        "bright coefficients are numerically compatible with an endpoint-fitted affine "
-        "law in delta_A1 at the six canonical samples and the two named baselines "
-        "actually tested, and nowhere else. So the remaining exact gravity theorem is "
-        "the derivation of the exact tensor endpoint coefficients at the two A1 "
-        "support endpoints and the exact tensor observable they belong to."
+        "For the stated size-15 finite-Dirichlet operator, the totally symmetric "
+        "cubic star-support sector retains the center-excess scalar delta_A1 at "
+        "fixed nonzero charge, and linearity gives "
+        "delta_A1(r)=1/(6(1+sqrt(6)r)) for every r>=0 in the canonical Q=1 family. "
+        "The tensor-side statement is separate, sampled, and conditional: for the "
+        "chosen nonspectral eta envelope, divided by anchor_per_Q * Q(q) and "
+        "differenced with EPS=0.005, the coefficients are numerically compatible "
+        "with an endpoint-fitted affine function only at the six canonical samples "
+        "and two named baselines tested. Deriving the tensor observable and endpoint "
+        "coefficients remains open."
     )
 
     print("\n" + "=" * 78)

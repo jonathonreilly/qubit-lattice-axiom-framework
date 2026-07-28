@@ -1,5 +1,5 @@
 {
- "edge_count": 15067,
+ "edge_count": 15069,
  "node_count": 4510,
  "nodes": {
   "3d_correction_master_note": {
@@ -14279,8 +14279,8 @@
    "out_degree": 1
   },
   "tensor_support_center_excess_law_note": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "3c28e99ac305",
+   "out_degree": 2
   },
   "tensorial_einstein_regge_completion_probe_helper_note_2026-04-14": {
    "deps_hash": "b31407e7cb28",

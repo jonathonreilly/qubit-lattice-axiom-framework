@@ -1,16 +1,16 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle724_local_token_row_enforcement_2026_07_28.txt": "a586fd567f8e19e011b43c2dad085811d6f64d3d192ffa41c4be6684cece0402",
-      "frontier_cycle724_token_row_independent_check_2026_07_28.txt": "7677029998584d558b1ad854b6b74168cc0fcd8c30b1332d94947bd4b503be0a"
+      "frontier_cycle724_local_token_row_enforcement_2026_07_28.txt": "35376f391e8b9e96e0d0d593e043cee92c27705d9a7384bbbede5dda816801e9",
+      "frontier_cycle724_token_row_independent_check_2026_07_28.txt": "7b948c30a7ae211143a10a32069cc784156b1747e9ae86583474653f20bdb608"
     },
     "note": {
       "path": "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "001197a6b59bfa221cb229f49d914348c980f9f57ba78e325a31b090ff015d00"
+      "sha256": "ae9dcc50aa143e38f550f19eda5bfdc80865236bf3a54131e28fd79e4e491fdc"
     },
     "runners": {
-      "frontier_cycle724_local_token_row_enforcement_2026_07_28.py": "fe9b8932a651b32779ad0a9a8f238f1006292571ce255a0c61922c8bc34b3a11",
-      "frontier_cycle724_token_row_independent_check_2026_07_28.py": "af408eaa0655771a0a4f8be23752c515ce57c6987ed978c3205fc2bb3780d026"
+      "frontier_cycle724_local_token_row_enforcement_2026_07_28.py": "23d38b1f03fe8d7ae9970446791ca60c7b8843279a7685ee082fc48eff2529da",
+      "frontier_cycle724_token_row_independent_check_2026_07_28.py": "102e8a5a10849c1d4d9b292dc7427b78edeac93f2e2a8006822def4e02702b75"
     }
   },
   "audit": "unset",
@@ -18,13 +18,13 @@
   "boundary": {
     "axiom_pressure": false,
     "clean_syndrome_scratch_genesis_supplied": true,
-    "fixed_supplies": "Cycle-719 controller inventory unchanged (one token, ring, program content/order, clean data genesis) plus NEW clean per-station syndrome and scratch genesis",
-    "local_token_row_radius_1_enforced": true,
-    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
+    "fixed_supplies": "Cycle-719 controller inventory unchanged (one token, ring, program content/order, clean data genesis), Cycle-723 zero B/work/syndrome rows and two clean MCX scratch bits per station, plus four new clean OR-cascade bits per station",
     "not_derived": "unique-token or clean-ancilla genesis, autonomous edge schedule, boundary-free geometry, renewal, occurrence, physical time, Record, Born, source/gravity meaning",
-    "positive_scope": "a reversible refusal wrap of every controlled data macro of the padded 130-station two-rail controller: lawful behavior unchanged, dirty B/work rails refused at every macro with visible dirt, deletions active, physical layer and compiled orbit re-certified",
+    "positive_scope": "a reversible six-input radius-one refusal guard around every nonidentity controlled data macro of the padded 130-station two-rail controller: lawful behavior unchanged; local B/work and neighboring A/B dirt suppress the guarded macro while remaining visible; exact auxiliary return, active deletions, physical layer, and compiled orbit re-certified",
+    "radius_1_refusal_guard_applied": true,
     "refusal_wrapped_every_controlled_macro": true,
     "unique_token_still_supplied": true,
+    "universal_locality_no_go_claimed": false,
     "w1_closed": false
   },
   "checks": {
@@ -38,7 +38,7 @@
   "result": {
     "adjacent_two_token_refused": true,
     "census_mismatches": 0,
-    "distant_second_token_locally_invisible": true,
+    "distant_two_token_sector_passes_this_radius1_guard": true,
     "extended_H_gates": 98034,
     "global_one_token_still_supplied": true,
     "local_token_row_radius": 1,
@@ -46,5 +46,5 @@
     "w1_closed": false,
     "wrapped_H_gates_cycle723": 95850
   },
-  "status": "CYCLE724_LOCAL_TOKEN_ROW_ENFORCEMENT_PASS"
+  "status": "CYCLE724_RADIUS1_REFUSAL_GUARD_PASS"
 }

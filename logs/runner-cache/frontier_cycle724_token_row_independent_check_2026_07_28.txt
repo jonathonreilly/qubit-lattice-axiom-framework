@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle724_token_row_independent_check_2026_07_28.py
-runner_sha256: af408eaa0655771a0a4f8be23752c515ce57c6987ed978c3205fc2bb3780d026
-input_fingerprint_sha256: 5504eceddd045f76337b7388e6d0bc8dc5bc6142a0d7e7f137f04414b4944978
+runner_sha256: 102e8a5a10849c1d4d9b292dc7427b78edeac93f2e2a8006822def4e02702b75
+input_fingerprint_sha256: 1f560e3f90cae7ce230f87eba460341f7a95480f39898ac518e614020bdbfefc
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 8.67
+elapsed_sec: 10.04
 status: ok
 ----- stdout -----
 PASS sandwich_semantics
@@ -16,7 +16,6 @@ PASS primary_source_discipline
   "audit_input_paths": [
     "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "scripts/frontier_cycle723_refusal_wrap_independent_check_2026_07_28.py",
     "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md"
   ],
   "audit_timeout_seconds": 900,
@@ -266,8 +265,8 @@ PASS primary_source_discipline
       "pass": true
     }
   ],
-  "report_sha256": "6f8ebd3e88b08679ee2548f1e5dfdbbb656e63bd5c039aa1e02276a430184ae1",
-  "runtime_seconds": 8.249417708997498,
+  "report_sha256": "d57a1e928c82b0619a393c14e210ba3ac93650d05f72c01b56be711e75cd3659",
+  "runtime_seconds": 9.501476000004914,
   "status": "PASS",
   "top_level_blocklist": [
     "frontier_cycle724_local_token_row_enforcement_2026_07_28"

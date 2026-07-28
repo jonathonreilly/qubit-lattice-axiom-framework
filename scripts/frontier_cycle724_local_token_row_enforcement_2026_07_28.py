@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 724: radius-one local token-row enforcement.
+"""Cycle 724: radius-one local token-row refusal guard.
 
 Each nonidentity Cycle-723 station now computes a reversible six-input local
 dirty row,
@@ -758,34 +758,82 @@ def sector_controls_certificate():
 
 def census_case_rows(program):
     rows = []
+    stations = len(program)
     for station, program_row in enumerate(program):
         if not K.mapped_macro(program_row):
             continue
-        left = (station - 1) % len(program)
-        right = (station + 1) % len(program)
-        for dirt_kind, a_extra, b_extra, work_extra in (
-            ("A_left", (left,), (), ()),
-            ("B_left", (), (left,), ()),
-            ("A_right", (right,), (), ()),
-            ("B_right", (), (right,), ()),
-            ("B_self", (), (station,), ()),
-            ("work_self", (), (), (station,)),
+        left = (station - 1) % stations
+        right = (station + 1) % stations
+        for (
+            dirt_kind,
+            initial_a_extra,
+            initial_b,
+            initial_work,
+            q_a_extra,
+            q_b,
+            q_work,
+        ) in (
+            ("A_left", (stations - 1,), (), (), (left,), (), ()),
+            (
+                "B_left",
+                (),
+                ((2 * station - 1) % stations,),
+                (),
+                (),
+                (left,),
+                (),
+            ),
+            ("A_right", (1,), (), (), (right,), (), ()),
+            (
+                "B_right",
+                (),
+                ((2 * station + 1) % stations,),
+                (),
+                (),
+                (right,),
+                (),
+            ),
+            (
+                "B_self",
+                (),
+                ((2 * station) % stations,),
+                (),
+                (),
+                (station,),
+                (),
+            ),
+            (
+                "work_self",
+                (),
+                (),
+                (station,),
+                (),
+                (),
+                (station,),
+            ),
         ):
             rows.append({
                 "station": station,
+                "target_step": station,
                 "dirt_kind": dirt_kind,
-                "a": tuple(sorted(set((0,) + a_extra))),
-                "b": b_extra,
-                "work": work_extra,
+                "a": tuple(sorted(set((0,) + initial_a_extra))),
+                "b": initial_b,
+                "work": initial_work,
+                "q_a": tuple(sorted((station,) + q_a_extra)),
+                "q_b": q_b,
+                "q_work": q_work,
             })
     return tuple(rows)
 
 
 def radius1_census_certificate():
     program = R719.PROGRAM
-    word, layout, _blocks, _q_stop = extended_controller_build(
+    word, layout, blocks, _q_stop = extended_controller_build(
         program, DATA_WIDTH
     )
+    blocks_by_station = {
+        row["station"]: row for row in blocks if row["nonidentity"]
+    }
     banks, links = B.chain_genesis(BANKS)
     initial = M.prepare_endpoint(M.pack_state(banks, links), (1, 0))
     initial_value = F723.tuple_to_int(initial)
@@ -834,6 +882,10 @@ def radius1_census_certificate():
     prediction_mismatches = dirt_survival_failures = 0
     auxiliary_return_failures = event_mismatches = 0
     target_station_event_mismatches = 0
+    target_station_refusal_failures = 0
+    target_station_refusals_witnessed = 0
+    literal_target_syndrome_failures = 0
+    literal_local_identity_failures = 0
     predicted_refusals = observed_host_refusals = 0
     for case, observed_value in zip(cases, observed_values):
         prediction = identity_substituted_prediction(
@@ -870,6 +922,7 @@ def radius1_census_certificate():
         auxiliary_return_failures += any(observed["or_scratch"])
         event_mismatches += host["refused"] != prediction["refused"]
         target = case["station"]
+        target_event = (case["target_step"], target)
         host_target = tuple(
             event for event in host["refused"] if event[1] == target
         )
@@ -879,6 +932,35 @@ def radius1_census_certificate():
             if event[1] == target
         )
         target_station_event_mismatches += host_target != predicted_target
+        target_station_refusals_witnessed += (
+            target_event in host["refused"]
+        )
+        target_station_refusal_failures += (
+            target_event not in host["refused"]
+        )
+        target_station_refusal_failures += (
+            target_event not in prediction["refused"]
+        )
+        block = blocks_by_station[target]
+        local_source = controller_full_input(
+            initial_value,
+            layout,
+            a=case["q_a"],
+            b=case["q_b"],
+            work=case["q_work"],
+        )
+        computed = F723.apply_semantic_int(
+            local_source,
+            word[block["compute_start"]:block["compute_stop"]],
+        )
+        literal_target_syndrome_failures += not controller_rows(
+            computed, layout
+        )["syndrome"][target]
+        local_output = F723.apply_semantic_int(
+            local_source,
+            word[block["start"]:block["stop"]],
+        )
+        literal_local_identity_failures += local_output != local_source
         predicted_refusals += len(prediction["refused"])
         observed_host_refusals += len(host["refused"])
     return {
@@ -894,6 +976,14 @@ def radius1_census_certificate():
         "refusal_event_mismatches": event_mismatches,
         "target_station_refusal_mismatches":
             target_station_event_mismatches,
+        "target_station_refusals_witnessed":
+            target_station_refusals_witnessed,
+        "target_station_refusal_failures":
+            target_station_refusal_failures,
+        "literal_target_syndrome_failures":
+            literal_target_syndrome_failures,
+        "literal_local_identity_failures":
+            literal_local_identity_failures,
         "predicted_refusals": predicted_refusals,
         "observed_host_refusals": observed_host_refusals,
     }
@@ -1414,7 +1504,7 @@ def main():
         checks,
     )
     check(
-        "C_sector_controls_local_resolution_boundary",
+        "C_sector_controls_radius1_examples",
         sectors["lawful_inverse_residual"] < TOL
         and sectors["lawful_register_return"]
         and sectors["lawful_inverse_register_return"]
@@ -1449,6 +1539,11 @@ def main():
         and census["syndrome_scratch_return_failures"] == 0
         and census["refusal_event_mismatches"] == 0
         and census["target_station_refusal_mismatches"] == 0
+        and census["target_station_refusals_witnessed"]
+        == census["census_size"]
+        and census["target_station_refusal_failures"] == 0
+        and census["literal_target_syndrome_failures"] == 0
+        and census["literal_local_identity_failures"] == 0
         and census["predicted_refusals"]
         == census["observed_host_refusals"],
         checks,
@@ -1501,13 +1596,14 @@ def main():
         if not key.startswith("INPUT_")
     }
     adjacent_refused = sectors["adjacent_both_macros_suppressed"]
-    distant_invisible = sectors[
+    distant_passes_guard = sectors[
         "distant_second_token_locally_invisible"
     ]
     claim_boundary = {
         "local_token_row_radius": 1,
         "adjacent_collisions_refused": adjacent_refused,
-        "distant_second_token_locally_invisible": distant_invisible,
+        "distant_two_token_sector_passes_this_radius1_guard":
+            distant_passes_guard,
         "global_one_token_still_supplied": True,
         "w1_closed": False,
         "refusal_wrapped_every_controlled_macro":
@@ -1524,14 +1620,20 @@ def main():
             "ring, program content, and clean data/controller genesis remain "
             "supplied."
         ),
-        "scope_authority_quote": (
-            "A bounded-radius check on an arbitrarily long ring cannot infer "
-            "sum_s(A_s+B_s)=1; distant multi-token sectors pass the local "
-            "row, so global existence and exactly-one remain SUPPLIED."
+        "tested_boundary": (
+            "On the declared P=130 ring, the two-token sector at positions "
+            "(0, 65) passes this specific six-input radius-one guard and "
+            "matches its own unwrapped prediction. This construction "
+            "therefore does not discharge the supplied global one-token "
+            "condition."
         ),
-        "gauss_bksf_boundary": (
-            "A Gauss/BKSF charge-row mapping requires new supplied "
-            "mode-graph data and is not attempted."
+        "unclaimed_negative_scope": (
+            "No theorem about every finite-radius check, every local "
+            "charge construction, or arbitrary ring length is claimed."
+        ),
+        "gauss_bksf_route": (
+            "A Gauss/BKSF charge-row mapping is not assessed by this runner "
+            "and remains a live alternative construction."
         ),
         "ordinal_scope": (
             "Controller ordinals are circuit structure, not time."
@@ -1548,7 +1650,8 @@ def main():
         "audit_timeout_seconds": AUDIT_TIMEOUT_SEC,
         "local_token_row_radius": 1,
         "adjacent_collisions_refused": adjacent_refused,
-        "distant_second_token_locally_invisible": distant_invisible,
+        "distant_two_token_sector_passes_this_radius1_guard":
+            distant_passes_guard,
         "global_one_token_still_supplied": True,
         "w1_closed": False,
         "input_manifest": manifest,

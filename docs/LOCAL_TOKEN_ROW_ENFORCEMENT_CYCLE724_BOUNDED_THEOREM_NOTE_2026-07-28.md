@@ -1,4 +1,4 @@
-# Cycle 724: local token-row enforcement at radius one, and the exact local/global split of W1
+# Cycle 724: radius-one refusal guard for the supplied token row
 
 Date: 2026-07-28
 
@@ -27,110 +27,148 @@ called physical time, duration, rate, or energy.
 
 ## Result up front
 
-Cycle 723 wrapped every controlled macro of the two-rail controller in a
-reversible dirty-rail refusal. Cycle 724 extends that sandwich to a **local
-token row at radius one** and, in the same package, exhibits exactly where
-bounded local enforcement ends:
+[Cycle 723](REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+wrapped every controlled macro of the
+[recurrent two-rail controller](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+in a reversible dirty-rail refusal. Cycle 724 extends that sandwich with one
+specific radius-one refusal guard:
 
-- per station, the refusal syndrome becomes the reversible OR of
-  `B_s`, `work_s`, and the four radius-one neighbor occupancies
-  `A_(s-1), B_(s-1), A_(s+1), B_(s+1)` (an OR-cascade into fresh clean
-  scratch, uncomputed exactly; all rail bits are invariant inside Q, so
-  the sandwich remains an exact inverse pair). The extended `H` word has
-  98,034 gates (against 95,850 wrapped, 61,562 unwrapped);
-- **lawful behavior is unchanged**: on the lawful one-token trajectory no
-  radius-one neighbor bit is ever set at Q-time (verified as its own
-  sub-check), so held 2/5/12 and padded 130-station orbits, inverses,
-  rail returns, and the Cycle-723 regression anchor (gate count and
-  digest reproduced) all hold;
-- **adjacent collisions are now refused locally**: the adjacent two-token
-  sector (positions `(0,1)`) has both stations' macros suppressed on the
-  collision steps, with the output equal to an independent
-  identity-substituted prediction and all dirt visible at return;
-- the exhaustive radius-one census — every nonidentity station, each
-  neighbor dirt bit plus the `B_s`/`work_s` regression cases, 546 cases —
-  shows zero prediction, survival, auxiliary-return, or refusal-event
-  mismatches;
-- **the local/global split is exhibited, not hidden**: the distant
-  two-token sector (positions `(0, P//2)`) passes every local row and
-  reproduces the unwrapped hostile prediction exactly. A bounded local
-  check on an arbitrarily long ring cannot infer `sum(A+B) = 1`: distant
-  multi-token sectors are locally invisible, and "at least one token"
-  is equally global. This certificate PASSES by demonstrating the
-  limitation;
-- deletion controls (OR-cascade gate; uncompute gate) are active; the
-  extended physical layer, 24 frames, 576 products, translations, the
-  compiled extended orbit on all six Cycle-713 branches, and the
-  inherited pin/residual anchors all re-certify.
+- per station, the refusal syndrome becomes the reversible OR of `B_s`,
+  `work_s`, and the four radius-one neighbor occupancies `A_(s-1)`,
+  `B_(s-1)`, `A_(s+1)`, and `B_(s+1)`. The OR cascade uses four fresh clean
+  scratch bits, and the computation is uncomputed exactly. All rail inputs
+  remain invariant inside the controlled-data block. The extended `H` word
+  has 98,034 gates, compared with 95,850 for Cycle 723 and 61,562 before the
+  refusal wraps;
+- on the supplied lawful one-token trajectory, no named radius-one dirty
+  input is set at Q-time. The held 2/5/12-bank cases and the padded
+  130-station orbit preserve their exact data action, rail return, auxiliary
+  return, and inverse, while reproducing the Cycle-723 gate-count and digest
+  anchor;
+- in the adjacent two-token sector at positions `(0, 1)`, each controlled
+  data macro encountered by either token is suppressed. The output equals an
+  independently constructed identity-substituted prediction, and both tokens
+  remain visible at return;
+- the padded-program census contains six cases for every one of the 91
+  nonidentity stations, for 546 cases total. Each dirty input is transported
+  to the named target row at its Q-time. Every case witnesses the target
+  syndrome in the literal station block, the suppressed block is exactly
+  identity on its full input, and the full literal orbit agrees with the
+  independent identity-substituted prediction with exact rail and auxiliary
+  return;
+- on the declared 130-station ring, the two-token sector at positions
+  `(0, 65)` passes this specific radius-one guard and equals its own unwrapped
+  hostile-sector prediction. This finite example shows that the guard added
+  here does not discharge the separately supplied global one-token
+  condition. It is not a theorem about every finite-radius constraint or
+  arbitrary ring length; and
+- deletion controls for one OR-compute gate and one uncompute gate are
+  active. The structural physical layer, 24 proper-cubic frames, 576 frame
+  products, translations, the compiled extended orbit on all six
+  [physical endpoint-instrument](PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+  branches, and the inherited pin/residual anchors re-certify.
 
-## The claim, at its exact resolution
+## Exact conditional claim
 
-The Cycle-719 steelman's terminal test — "combine a locally checked
-charge/token row with that refusal around every actual controller macro" —
-is now executed **at its locally executable resolution**: dirty rails
-(Cycle 723) and radius-one occupancy collisions (this cycle) are refused
-at every macro, reversibly, with lawful behavior byte-equivalent at the
-certificate surface. What remains is exactly the global remainder: the
-one-token sector's global existence and uniqueness are not locally
-derivable on the ring and stay **supplied**. A Gauss-style charge row in
-the Cycle-703 BKSF sense would require a new supplied mode-graph mapping
-for the controller M2s and is not attempted. `w1_closed: false`.
+Given the unchanged Cycle-719 controller inventory, the Cycle-723 clean
+syndrome and MCX-scratch inputs, and four additional clean OR-cascade bits per
+station, every nonidentity controlled data macro is guarded by the six named
+radius-one inputs. A dirty input suppresses that macro and is left visible in
+its original rail or work register; the syndrome and both scratch families
+return clean. The lawful supplied trajectory is unchanged.
+
+This is a bounded circuit construction, not autonomous sector preparation.
+It does not enforce every radius-one constraint, remove the supplied global
+one-token condition, or establish that another local, topological, boundary,
+preparation, or multiscale construction cannot remove that supply.
+`w1_closed: false`.
 
 ## Supplied / derived / open
 
 ### Supplied
 
-- the Cycle-719 controller inventory unchanged (one global token at
-  source, ring geometry, program content/order, clean data genesis);
-- the Cycle-723 clean syndrome/scratch genesis, extended by the
-  OR-cascade scratch bits of this cycle;
-- the global one-token condition itself (existence and uniqueness beyond
-  radius one).
+- the Cycle-719 controller inventory: one source token, oriented ring
+  geometry, program content and order, and clean data/controller genesis;
+- the Cycle-723 zero `B`, `work`, and syndrome rows and two clean MCX scratch
+  bits per station;
+- four new clean OR-cascade intermediate bits per station; and
+- the global one-token existence and uniqueness condition.
 
 ### Derived
 
-- the radius-one local token row folded into the total refusal wrap, with
-  lawful behavior unchanged (held and padded, forward and inverse) and
-  the Cycle-723 anchor reproduced;
-- local refusal of adjacent-collision sectors with independent
-  identity-substituted predictions (546-case census, zero mismatches);
-- the exhibited local-resolution boundary: distant second tokens pass
-  every local row and match the unwrapped hostile prediction;
-- active deletion controls; re-certified physical layer, covariance
-  surfaces, compiled orbit, and inherited anchors.
+- the six-input radius-one refusal guard around every nonidentity controlled
+  data macro, with exact OR uncomputation;
+- unchanged lawful behavior in the held and padded cases, forward and inverse;
+- exact adjacent-collision refusal against an independent
+  identity-substituted prediction;
+- a target-row-complete 546-case padded census with literal syndrome and local
+  identity witnesses;
+- the finite `(0, 65)` two-token example that passes this particular guard;
+  and
+- active deletion controls plus the re-certified structural physical,
+  covariance, compiled-orbit, and inherited-anchor surfaces.
 
 ### Open
 
-- global one-token existence/uniqueness (supplied; a local exact-one ring
-  counter does not exist at bounded radius — this cycle's boundary
-  certificate is the witness);
-- the Gauss/BKSF charge-row route (requires new supplied mode-graph
-  data);
-- autonomous preparation/genesis of any register, and every inherited
-  Cycle-719 open item (`W2`-`W7`) at its original scope;
+- global one-token existence and uniqueness remain supplied because this
+  construction does not derive them, not because their derivation by every
+  other route has been ruled out;
+- the
+  [local-Gauss/BKSF route](work_history/repo/review_feedback/CYCLE703_LOCAL_GAUSS_REFERENCE_ADVERSARIAL_NOTE_2026-07-25.md),
+  including its controller mode-graph mapping and physical preparation, is
+  not assessed here and remains a live alternative;
+- autonomous register preparation/genesis and every inherited Cycle-719 open
+  item at its original scope; and
 - occurrence, physical time, permanent Record, Born weighting, and
   source/gravity meaning.
 
-## Negative-claim discipline
+## No-go discipline gate
 
-No new negative claim ships. The statement that a bounded local check
-cannot infer the global token count is exhibited constructively (the
-distant-token sector passes and matches its prediction) and scoped to
-bounded-radius checks on the ring; it is a resolution boundary of this
-package's construction, recorded with its witness, not a route
-impossibility theorem. Everything else restates supplied conventions or
-inherited open items at their original scopes.
+Gate disposition: **PASS after narrowing**. The original universal
+bounded-radius wording failed the negative-claim stress test and was removed.
+Only the positive finite guard result above ships.
+
+- **N1 — alternative routes:** at least five distinct routes remain live and
+  untested here: a local-Gauss/topological charge sector; a supplied boundary
+  marker with local propagation; a preparation or admission dynamics that
+  selects one token; a hierarchical or multiscale constraint; and a carried
+  counter/accumulator compiled into the controller program. Their existence
+  blocks a universal route-impossibility conclusion.
+- **N2 — wall independence:** this note uses one explicit global one-token
+  supply and does not inflate it into multiple independent walls.
+- **N3 — hidden conditions:** a universal locality theorem would require
+  additional hypotheses about a uniform fixed-radius predicate, arbitrary
+  ring size, boundary conditions, and admissible auxiliary state. None is
+  silently assumed; that theorem is not claimed.
+- **N4 — residual matching:** no prior no-go is used as a witness against the
+  global one-token residual. Cycle 703 is cited only as a live alternative.
+- **N5 — rhetoric resolution:** the tests cover literal station blocks and
+  the complete declared program at radius one, with finite boundary examples
+  at 11 stations in the independent checker and 130 stations in the primary
+  runner. They do not cover all radii, all local encodings, or a
+  lattice-wide impossibility.
+- **N6 — partial-closure paths:** the Cycle-703 local-Gauss route, explicit
+  boundary conventions, and preparation/admission dynamics are not excluded
+  and need not be classified as new axioms.
+- **N7 — steelman:** a locally checked topological charge sector or a
+  physical preparation mechanism could select a unique controller
+  excitation while preserving the present reversible refusal word. This
+  package tests neither terminal obligation, so it cannot foreclose them.
+- **N8 — cross-cycle echo:** the Cycle-719 source note records several nearby
+  supplied interfaces retired by later bounded mechanisms and explicitly
+  rejects impossibility or axiom-pressure promotion. The same history
+  requires the present boundary to remain construction-specific.
 
 ## Verdict and next experiment
 
-W1's enforcement content is now split exactly: everything locally
-checkable at radius one is enforced at every macro (dirty rails, adjacent
-collisions), reversibly and with lawful behavior unchanged; everything
-beyond radius one about the token sector is global and remains supplied,
-with the boundary witnessed in-package. The next constructive legs, in
-queue order: the Gauss/BKSF charge-row mapping as an explicitly supplied
-mode-graph convention (which would move the global remainder into a
-declared local-charge surface); the source-lift tournament definition
-recorded in the campaign handoff; and the public factorization-object API
-for the `V_s`-restriction compiler. Renewal, boundary-free geometry, and
-genesis remain open exactly as inherited.
+The six named dirty inputs now guard every nonidentity controlled data macro
+on the declared controller programs, reversibly and with the supplied lawful
+behavior unchanged. W1 remains open because the global one-token condition is
+still an input. The finite distant-token witness explains only why this
+radius-one guard does not close W1.
+
+The next constructive legs are the live local-Gauss/BKSF mapping, a
+preparation/admission route for the token sector, the source-lift tournament
+definition recorded in the campaign handoff, and the public
+factorization-object API for the restriction compiler. Renewal,
+boundary-free geometry, and genesis remain open as inherited.

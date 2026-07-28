@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent bounded checker for the Cycle-724 local token row.
+"""Independent bounded checker for the Cycle-724 radius-one refusal guard.
 
 The Cycle-724 primary is never imported.  It is read only as source text for
 the narrowly scoped AST discipline checks below.  Gate semantics, the local
@@ -13,7 +13,6 @@ NOTE_PATH = "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "scripts/frontier_cycle723_refusal_wrap_independent_check_2026_07_28.py",
     "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS

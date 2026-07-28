@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py
-runner_sha256: fe9b8932a651b32779ad0a9a8f238f1006292571ce255a0c61922c8bc34b3a11
-input_fingerprint_sha256: c0b05a37c9e796ecb1105268ad66692d923479383ec2dfdac87938d8139b2380
+runner_sha256: 23d38b1f03fe8d7ae9970446791ca60c7b8843279a7685ee082fc48eff2529da
+input_fingerprint_sha256: c3963892709b197103d9863e786ba1135a51258e0a5637c3274d5bb59edb7026
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 44.95
+elapsed_sec: 48.12
 status: ok
 ----- stdout -----
 PASS INPUT_declared_paths_exist :: True
 PASS A_Cycle723_regression_anchor :: True
 PASS B_lawful_unchanged_extended_wrap :: True
 PASS B0_lawful_radius1_neighbors_clear_at_Q :: True
-PASS C_sector_controls_local_resolution_boundary :: True
+PASS C_sector_controls_radius1_examples :: True
 PASS D_exhaustive_radius1_census :: True
 PASS E_deletion_controls :: True
 PASS F_physical_layer :: True
@@ -46,7 +46,7 @@ PASS H_inherited_anchors :: True
     "A_Cycle723_regression_anchor": true,
     "B0_lawful_radius1_neighbors_clear_at_Q": true,
     "B_lawful_unchanged_extended_wrap": true,
-    "C_sector_controls_local_resolution_boundary": true,
+    "C_sector_controls_radius1_examples": true,
     "D_exhaustive_radius1_census": true,
     "E_deletion_controls": true,
     "F_physical_layer": true,
@@ -70,16 +70,17 @@ PASS H_inherited_anchors :: True
   "claim_boundary": {
     "adjacent_collisions_refused": true,
     "clean_syndrome_scratch_genesis_supplied": true,
-    "distant_second_token_locally_invisible": true,
+    "distant_two_token_sector_passes_this_radius1_guard": true,
     "excluded_claims": "The result is only a bounded circuit-structure certificate.",
-    "gauss_bksf_boundary": "A Gauss/BKSF charge-row mapping requires new supplied mode-graph data and is not attempted.",
+    "gauss_bksf_route": "A Gauss/BKSF charge-row mapping is not assessed by this runner and remains a live alternative construction.",
     "global_one_token_still_supplied": true,
     "local_token_row_radius": 1,
     "ordinal_scope": "Controller ordinals are circuit structure, not time.",
     "refusal_wrapped_every_controlled_macro": true,
-    "scope_authority_quote": "A bounded-radius check on an arbitrarily long ring cannot infer sum_s(A_s+B_s)=1; distant multi-token sectors pass the local row, so global existence and exactly-one remain SUPPLIED.",
     "still_supplied": "Global token existence and exactly-one, the oriented program ring, program content, and clean data/controller genesis remain supplied.",
+    "tested_boundary": "On the declared P=130 ring, the two-token sector at positions (0, 65) passes this specific six-input radius-one guard and matches its own unwrapped prediction. This construction therefore does not discharge the supplied global one-token condition.",
     "trade": "The radius-one row locally refuses same-station B/work dirt and neighboring A/B dirt while adding four clean OR-cascade bits per station to the supplied inventory.",
+    "unclaimed_negative_scope": "No theorem about every finite-radius check, every local charge construction, or arbitrary ring length is claimed.",
     "unique_token_still_supplied": true,
     "w1_closed": false
   },
@@ -205,7 +206,7 @@ PASS H_inherited_anchors :: True
     "deleted_uncompute_total_auxiliary_weight": 1,
     "station": 0
   },
-  "distant_second_token_locally_invisible": true,
+  "distant_two_token_sector_passes_this_radius1_guard": true,
   "global_one_token_still_supplied": true,
   "inherited_anchors": {
     "Cycle713_pin_match": true,
@@ -497,16 +498,20 @@ PASS H_inherited_anchors :: True
     "dirt_kinds_per_station": 6,
     "dirt_survival_failures": 0,
     "literal_branches_compiled": 546,
+    "literal_local_identity_failures": 0,
+    "literal_target_syndrome_failures": 0,
     "nonidentity_stations": 91,
-    "observed_host_refusals": 1221,
-    "predicted_refusals": 1221,
+    "observed_host_refusals": 33948,
+    "predicted_refusals": 33948,
     "prediction_mismatch_census": 0,
     "refusal_event_mismatches": 0,
     "syndrome_scratch_return_failures": 0,
-    "target_station_refusal_mismatches": 0
+    "target_station_refusal_failures": 0,
+    "target_station_refusal_mismatches": 0,
+    "target_station_refusals_witnessed": 546
   },
-  "report_sha256": "09ec99dd7d61cd8bab4d3a0a1c3cc3e97878ca40849b51f6cac2592fef3ad775",
-  "runtime_seconds": 44.38697854200291,
+  "report_sha256": "848381d5850c9ad90ece8e8557a0453a28b1d2788361eb212d74083503838003",
+  "runtime_seconds": 47.52067133299715,
   "science_checks_pass": true,
   "supplied_inventory": "One source controller token; zero B/work/syndrome rows; two clean MCX scratch bits and four clean OR-cascade intermediate bits per station; oriented program ring and clean data genesis.",
   "w1_closed": false,

@@ -76,6 +76,12 @@ The runner checks:
 8. Bob's pre-delivery local state is input-independent and equals `I/2` to
    numerical precision.
 
+The first four probe density matrices span the one-qubit operator space.
+Because the reduced-state and unconditioned Bell-branch maps are linear in the
+input density matrix, the runner checks this rank explicitly before treating
+the finite probe calculation as input-independent. The fifth probe is a
+redundant non-axis control.
+
 ## First Run
 
 Commands:
@@ -135,6 +141,7 @@ Correction and record controls:
 
 Bob pre-message input-independence:
   probe states: 5
+  operator-space rank of first four probe densities: 4 / 4
   max Bob trace distance to I/2 before Alice measurement: 2.220e-16
   max Bob trace distance to I/2 after Alice measurement before delivery: 3.331e-16
   max pairwise pre-delivery Bob-state distance across inputs: 1.388e-16

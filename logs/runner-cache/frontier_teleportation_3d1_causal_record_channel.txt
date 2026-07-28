@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_3d1_causal_record_channel.py
-runner_sha256: ce4b0f306729c8ccce4b823c20581d8ee38f10bbff4dc38bfaf64171fac2293d
+runner_sha256: 1fe79230f8444220b3dcf5514dac1233794604745414832119f0553356dc9c21
 input_fingerprint_sha256: 1b325c01805d8c2cec4091103e8fd2ac96bbebfb314e359b57a0122f986dc8be
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.27
 status: ok
 ----- stdout -----
 TELEPORTATION 3D+1 CAUSAL BELL-RECORD CHANNEL
@@ -47,6 +47,7 @@ Correction and record controls:
 
 Bob pre-message input-independence:
   probe states: 5
+  operator-space rank of first four probe densities: 4 / 4
   max Bob trace distance to I/2 before Alice measurement: 2.220e-16
   max Bob trace distance to I/2 after Alice measurement before delivery: 3.331e-16
   max pairwise pre-delivery Bob-state distance across inputs: 1.388e-16

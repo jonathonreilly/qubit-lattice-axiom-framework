@@ -442,13 +442,19 @@ def worldline_text(worldline: tuple[SpacetimeEvent, ...]) -> str:
 
 def run_bob_pre_delivery_input_independence() -> dict[str, object]:
     half_identity = 0.5 * I2
+    probes = no_signaling_probe_states()
+    probe_operator_rank = int(
+        np.linalg.matrix_rank(
+            np.stack([density(state).reshape(-1) for state in probes[:4]])
+        )
+    )
     reference_before_delivery: np.ndarray | None = None
     max_before_measurement_distance = 0.0
     max_before_delivery_distance = 0.0
     max_pairwise_before_delivery_distance = 0.0
     max_bell_probability_error = 0.0
 
-    for input_state in no_signaling_probe_states():
+    for input_state in probes:
         three_register_state = prepare_three_register_state(input_state)
         rho_before_measurement = bob_reduced_from_three_register_state(
             three_register_state
@@ -482,7 +488,8 @@ def run_bob_pre_delivery_input_independence() -> dict[str, object]:
             )
 
     return {
-        "probe_count": len(no_signaling_probe_states()),
+        "probe_count": len(probes),
+        "probe_operator_rank": probe_operator_rank,
         "max_before_measurement_distance": max_before_measurement_distance,
         "max_before_delivery_distance": max_before_delivery_distance,
         "max_pairwise_before_delivery_distance": max_pairwise_before_delivery_distance,
@@ -743,6 +750,10 @@ def print_summary(
     print("Bob pre-message input-independence:")
     print(f"  probe states: {no_signal['probe_count']}")
     print(
+        "  operator-space rank of first four probe densities: "
+        f"{no_signal['probe_operator_rank']} / 4"
+    )
+    print(
         "  max Bob trace distance to I/2 before Alice measurement: "
         f"{no_signal['max_before_measurement_distance']:.3e}"
     )
@@ -786,7 +797,8 @@ def print_summary(
             and channel["delayed_delivered_late"]
         ),
         "Bob pre-delivery input-independence": bool(
-            no_signal["max_before_measurement_distance"] < tolerance
+            no_signal["probe_operator_rank"] == 4
+            and no_signal["max_before_measurement_distance"] < tolerance
             and no_signal["max_before_delivery_distance"] < tolerance
             and no_signal["max_pairwise_before_delivery_distance"] < tolerance
             and no_signal["max_bell_probability_error"] < tolerance

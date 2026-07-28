@@ -4327,6 +4327,72 @@ class CampaignContractTest(unittest.TestCase):
                 selected = audit_loop.first_ready_forensic_claim({"quarantined"})
         self.assertEqual(selected, "next_canary")
 
+    def test_forensic_mechanics_circuit_uses_distinct_claims(self):
+        def record(claim_id: str, detail: str) -> dict:
+            return {
+                "claim_id": claim_id,
+                "reason": batch.SCHEMA_QUARANTINE_RESULT,
+                "failures": [{"detail": detail}],
+            }
+
+        locator_detail = (
+            "N3 hit 1 evidence_locator must contain at least 12 normalized "
+            "characters; preserved_run_log=forensic.jsonl"
+        )
+        records = [
+            record("claim_a", locator_detail),
+            record("claim_a", locator_detail),
+            record("claim_b", locator_detail),
+        ]
+        self.assertIsNone(audit_loop.forensic_mechanics_circuit(records))
+        records.append(record("claim_c", locator_detail))
+        self.assertEqual(
+            audit_loop.forensic_mechanics_circuit(records),
+            ("EVIDENCE_LOCATOR_MIN_LENGTH", 3),
+        )
+
+    def test_open_forensic_mechanics_circuit_spends_no_new_seat(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            campaign = Path(tmp)
+            args = _args()
+            args.campaign_workdir = campaign
+            args.campaign_quarantine_file = (
+                campaign / "campaign-row-exclusions.jsonl"
+            )
+            report = [
+                {
+                    "cid": claim_id,
+                    "pass": 1,
+                    "result": "validation_failed",
+                    "detail": (
+                        "N7.argument and N7.resolution must each contain at "
+                        "least 80 normalized characters; "
+                        "preserved_run_log=forensic.jsonl"
+                    ),
+                }
+                for claim_id in ("claim_a", "claim_b", "claim_c")
+            ]
+            batch.persist_campaign_quarantine(
+                args.campaign_quarantine_file,
+                {"claim_a", "claim_b", "claim_c"},
+                report,
+            )
+            with mock.patch.object(
+                audit_loop,
+                "first_ready_forensic_claim",
+            ) as selector, mock.patch.object(
+                audit_loop,
+                "run_command",
+            ) as run_command:
+                rc = audit_loop.run_forensic_canary(args)
+        self.assertEqual(rc, 0)
+        selector.assert_not_called()
+        run_command.assert_not_called()
+        self.assertEqual(
+            audit_loop.PROGRESS["canary_state"],
+            "mechanics_circuit_open:N7_MIN_LENGTH:3",
+        )
+
     def test_forensic_schema_failure_is_quarantined_and_returns_success(self):
         with tempfile.TemporaryDirectory() as tmp:
             campaign = Path(tmp)

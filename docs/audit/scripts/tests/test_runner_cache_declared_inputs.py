@@ -100,6 +100,27 @@ class DeclaredInputFreshnessTest(unittest.TestCase):
         self.assertIsNone(header["input_fingerprint_sha256"])
         self.assertEqual(rc.cache_status(self.runner), "fresh")
 
+    def test_identity_fresh_timeout_cache_is_not_execution_usable(self) -> None:
+        rc.write_cache(
+            self.runner,
+            dict(self.result, status="timeout", exit_code=None),
+        )
+        self.assertEqual(rc.cache_identity_status(self.runner), "fresh")
+        self.assertEqual(rc.cache_status(self.runner), "execution_timeout")
+        self.assertIsNone(rc.cache_excerpt_for_audit(self.runner))
+
+    def test_identity_fresh_nonzero_cache_is_not_execution_usable(self) -> None:
+        rc.write_cache(
+            self.runner,
+            dict(self.result, status="ok", exit_code=7),
+        )
+        self.assertEqual(rc.cache_identity_status(self.runner), "fresh")
+        self.assertEqual(
+            rc.cache_status(self.runner),
+            "execution_nonzero_exit",
+        )
+        self.assertIsNone(rc.cache_excerpt_for_audit(self.runner))
+
     def test_invalid_or_missing_declared_input_cannot_be_cached(self) -> None:
         (self.root / self.runner).write_text(
             "AUDIT_INPUT_PATHS = ('docs/missing.md',)\n",

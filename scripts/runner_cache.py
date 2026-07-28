@@ -26,10 +26,12 @@ Format (no timestamps anywhere — gate-clean):
     ----- stderr -----
     <stderr, capped at 50KB tail>
 
-The audit runner reads from this cache; the pre-commit hook and diff-scoped
-CLI can select a cache when either its runner or one of its declared inputs
-changes. Refresh binds the output to identities captured before execution and
-refuses to write if the runner or any declared input moves during execution.
+The audit runner uses this cache for readiness and non-authoritative
+diagnostics; authority-bearing prompts re-execute the runner. The pre-commit
+hook and diff-scoped CLI can select a cache when either its runner or one of
+its declared inputs changes. Refresh binds the output to identities captured
+before execution and refuses to write if the runner or any declared input
+moves during execution.
 """
 from __future__ import annotations
 
@@ -393,8 +395,8 @@ def load_cache(runner_path: str | Path) -> tuple[Path, dict | None, str | None]:
     return p, parse_cache_header(body), body
 
 
-def cache_status(runner_path: str | Path) -> str:
-    """Return a cache freshness classification.
+def cache_identity_status(runner_path: str | Path) -> str:
+    """Return a cache identity-freshness classification.
 
     Values are ``fresh``, ``missing``, ``corrupt``, ``sha_mismatch``, or
     ``input_mismatch``. ``fresh`` means the runner SHA matches and, when the
@@ -421,10 +423,38 @@ def cache_status(runner_path: str | Path) -> str:
     return "fresh"
 
 
+def cache_status(runner_path: str | Path) -> str:
+    """Return whether a cache is both identity-fresh and execution-usable.
+
+    Identity freshness and execution success are separate facts. Timeout,
+    error, and nonzero-exit caches remain useful incident artifacts, but they
+    must not satisfy audit readiness checks or be returned as evidence.
+    """
+    identity_status = cache_identity_status(runner_path)
+    if identity_status != "fresh":
+        return identity_status
+    p = REPO_ROOT / runner_path
+    if not p.exists():
+        return "fresh"
+    _cache_p, header, _body = load_cache(runner_path)
+    if not header:
+        return "corrupt"
+    status = header.get("status")
+    exit_code = header.get("exit_code")
+    if status == "timeout":
+        return "execution_timeout"
+    if status != "ok":
+        return "execution_error"
+    if exit_code != "0":
+        return "execution_nonzero_exit"
+    return "fresh"
+
+
 def stale_runners(runner_paths: Iterable[str]) -> list[tuple[str, str]]:
     """Return [(runner_path, reason)] for caches that need refreshing.
     Reason is one of 'missing' | 'corrupt' | 'sha_mismatch' |
-    'input_mismatch'.
+    'input_mismatch' | 'execution_timeout' | 'execution_error' |
+    'execution_nonzero_exit'.
     Runners absent from disk are excluded — orphan cache cleanup is a
     separate concern.
     """

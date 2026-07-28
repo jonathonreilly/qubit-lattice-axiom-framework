@@ -2898,6 +2898,77 @@ class VerificationHeadingRunnerCaptureTest(unittest.TestCase):
         self.assertIsNotNone(m.RUNNER_VERIFICATION_SECTION_RE.search("## Verification\n"))
 
 
+class PairedCertificateExplicitPacketHelperTest(unittest.TestCase):
+    CASES = (
+        (
+            "persistent_record_sidebit_note",
+            "docs/PERSISTENT_RECORD_SIDEBIT_NOTE.md",
+            "scripts/persistent_record_sidebit_certificate.py",
+            [
+                "scripts/persistent_record_overlap_kernel.py",
+                "scripts/persistent_record_matched_compare.py",
+                "scripts/density_matrix_analysis.py",
+                "scripts/entangling_env_decoherence.py",
+                "scripts/generative_causal_dag_interference.py",
+                "scripts/graph_memory_scar_decoherence.py",
+            ],
+        ),
+        (
+            "wilson_test_mass_continuum_note_2026-04-11",
+            "docs/WILSON_TEST_MASS_CONTINUUM_NOTE_2026-04-11.md",
+            "scripts/wilson_test_mass_continuum_certificate.py",
+            [
+                "scripts/frontier_test_mass_limit.py",
+                "scripts/frontier_perturbative_mass_law.py",
+                "scripts/frontier_continuum_limit.py",
+                "scripts/frontier_newton_systematic.py",
+            ],
+        ),
+    )
+
+    def test_both_packet_dependency_consumers_preserve_current_main_certificates(self):
+        citation_graph = _import("build_citation_graph")
+        packet_deps = _import_repo_script("audit_packet_script_deps.py")
+        for claim_id, _note, primary, expected in self.CASES:
+            with self.subTest(claim_id=claim_id):
+                self.assertEqual(
+                    citation_graph.helper_runner_paths_for_claim(
+                        claim_id, primary
+                    ),
+                    expected,
+                )
+                self.assertEqual(
+                    packet_deps.helper_runner_paths_for_claim(
+                        claim_id, Path(primary).stem
+                    ),
+                    expected,
+                )
+                control = f"{claim_id}-unregistered-control"
+                self.assertEqual(
+                    citation_graph.helper_runner_paths_for_claim(
+                        control, primary
+                    ),
+                    [],
+                )
+                self.assertEqual(
+                    packet_deps.helper_runner_paths_for_claim(
+                        control, Path(primary).stem
+                    ),
+                    [],
+                )
+
+    def test_citation_graph_rows_use_current_certificates_and_helpers(self):
+        citation_graph = _import("build_citation_graph")
+        notes = [PROJECT_ROOT / note for _cid, note, _primary, _helpers in self.CASES]
+        with mock.patch.object(citation_graph, "discover_notes", return_value=notes):
+            graph = citation_graph.build_graph()
+        for claim_id, _note, primary, expected in self.CASES:
+            with self.subTest(claim_id=claim_id):
+                row = graph["nodes"][claim_id]
+                self.assertEqual(row["runner_path"], primary)
+                self.assertEqual(row["helper_runner_paths"], expected)
+
+
 class StaggeredExplicitPacketHelperTest(unittest.TestCase):
     CLAIM_ID = "staggered_fermion_card_2026-04-11"
     PRIMARY = "scripts/frontier_staggered_17card_finite_scope_repair.py"
@@ -5829,6 +5900,69 @@ class ComputeReauditCandidatesTest(unittest.TestCase):
             self.assertTrue(
                 m.current_deps_are_ratified({"deps": ["retained_dep"]}, rows)
             )
+
+    def test_stdout_transport_requeues_only_rows_freed_by_new_budget(self):
+        m = _import("compute_reaudit_candidates")
+        audit_runner = _import_codex_audit_runner()
+        self.assertEqual(
+            m.RUNNER_STDOUT_CHAR_LIMIT,
+            audit_runner.RUNNER_STDOUT_CHAR_LIMIT,
+        )
+        base = {
+            "claim_type": "bounded_theorem",
+            "audit_status": "audited_conditional",
+            "criticality": "leaf",
+            "deps": [],
+            "runner_path": "scripts/fixture.py",
+            "notes_for_re_audit_if_any": (
+                "runner_artifact_issue: provide complete unclipped stdout "
+                "and re-audit the same scope."
+            ),
+        }
+        rows = {
+            "freed": dict(base),
+            "still_clipped": dict(base),
+            "not_transport": {
+                **base,
+                "notes_for_re_audit_if_any": (
+                    "missing_bridge_theorem: derive the unresolved bridge."
+                ),
+            },
+        }
+
+        def stdout_chars(path):
+            return {
+                "scripts/fixture.py": 7_500,
+            }.get(path)
+
+        with mock.patch.object(
+            m, "cached_runner_stdout_chars", side_effect=stdout_chars
+        ):
+            payload = m.build_payload({"freed": rows["freed"]})
+        self.assertEqual(
+            [
+                entry["claim_id"]
+                for entry in payload["runner_stdout_transport_candidates"]
+            ],
+            ["freed"],
+        )
+        self.assertEqual(
+            payload["runner_stdout_transport_candidates"][0][
+                "candidate_reason"
+            ],
+            "runner_stdout_transport_unclipped_by_head_tail_v2",
+        )
+
+        with mock.patch.object(
+            m, "cached_runner_stdout_chars", return_value=20_001
+        ):
+            payload = m.build_payload(
+                {
+                    "still_clipped": rows["still_clipped"],
+                    "not_transport": rows["not_transport"],
+                }
+            )
+        self.assertEqual(payload["runner_stdout_transport_candidates"], [])
 
 
 class NoGoDisciplineGateTest(unittest.TestCase):
@@ -10194,6 +10328,52 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                 "scripts/real_helper.py",
             )
 
+    def test_live_runner_stdout_uses_named_head_tail_budget(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            scripts = root / "scripts"
+            scripts.mkdir(parents=True)
+            runner_path = scripts / "runner.py"
+            runner_path.write_text("print('fixture')\n", encoding="utf-8")
+            m.REPO_ROOT = root
+            head = "HEADER exit_code=0 status=ok SHAS\n"
+            middle = "M" * m.RUNNER_STDOUT_CHAR_LIMIT
+            tail = "\nTOTAL: PASS=48 FAIL=0\n"
+            result = subprocess.CompletedProcess(
+                args=[], returncode=0, stdout=head + middle + tail, stderr=""
+            )
+            with mock.patch.object(m, "_run_repo_runner", return_value=result):
+                primary = m.get_runner_stdout("scripts/runner.py", 1)
+                independent, authenticated = m.get_independent_runner_stdout(
+                    "scripts/runner.py", 1
+                )
+        for clipped in (primary, independent):
+            self.assertIn(head, clipped)
+            self.assertIn(tail, clipped)
+            self.assertIn("... [packet-clipped ", clipped)
+            self.assertNotIn(middle, clipped)
+        self.assertIn("runner stdout", primary)
+        self.assertIn("independent runner stdout", independent)
+        self.assertTrue(authenticated)
+        self.assertEqual(m.RUNNER_STDOUT_CHAR_LIMIT, 20_000)
+
+    def test_live_runner_stdout_under_budget_is_unchanged(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            scripts = root / "scripts"
+            scripts.mkdir(parents=True)
+            runner_path = scripts / "runner.py"
+            runner_path.write_text("print('fixture')\n", encoding="utf-8")
+            m.REPO_ROOT = root
+            result = subprocess.CompletedProcess(
+                args=[], returncode=0, stdout="HEADER\nTOTAL: PASS=1 FAIL=0\n", stderr=""
+            )
+            with mock.patch.object(m, "_run_repo_runner", return_value=result):
+                stdout = m.get_runner_stdout("scripts/runner.py", 1)
+        self.assertEqual(stdout, result.stdout)
+
     def test_clipped_independent_stdout_blocks_clean_verdict(self):
         m = _import_codex_audit_runner()
         manifest = {
@@ -12211,6 +12391,45 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         )
         self.assertEqual(cross_labeled["occurrence_group_id"], "b4db14624baf74e0")
 
+    def test_authenticated_occurrence_metadata_binds_unique_short_locator(self):
+        m = _import_codex_audit_runner()
+        group = {
+            "phrase": "axiom",
+            "occurrence_group_id": "3ec574c76f47c467",
+            "occurrence_count": 1,
+            "occurrence_locator_sha256": "9" * 64,
+            "evidence_locator": "the exact axiom occurrence locator",
+        }
+        manifest = {
+            "docs/SOURCE.md": {
+                "roles": ["source"],
+                "text": "the exact axiom occurrence locator",
+                "full_phrase_groups": [group],
+            }
+        }
+        hit = {
+            "phrase": "axiom",
+            "occurrence_group_id": "bad",
+            "occurrence_count": 99,
+            "occurrence_locator_sha256": "8" * 64,
+            "classification": "non_load_bearing",
+            "rationale": "The classification remains auditor-owned and unchanged.",
+            "evidence_path": "docs/SOURCE.md",
+            "evidence_locator": "axiom",
+        }
+        blob = {
+            "verdict": "audited_conditional",
+            "no_go_discipline": {
+                "N3_hidden_wall_scan": {"hits": [hit]},
+            },
+        }
+        changes = m.bind_authenticated_occurrence_metadata(blob, manifest)
+        self.assertEqual(len(changes), 4)
+        for field in m.AUTHENTICATED_OCCURRENCE_FIELDS:
+            self.assertEqual(hit[field], group[field])
+        self.assertEqual(hit["classification"], "non_load_bearing")
+        self.assertEqual(blob["verdict"], "audited_conditional")
+
     def test_authenticated_n6_candidate_locator_binds_unique_candidate_id_only(self):
         m = _import_codex_audit_runner()
         path = "audit-packet://partial-closure-index/test_no_go"
@@ -12504,6 +12723,7 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             "N7.resolution is not evidenced at resolution_evidence_path",
             "N7.argument must name the steelmanned route mechanism",
             "N7.argument must name the steelmanned route attempt",
+            "N7.argument and N7.resolution must each contain at least 80 normalized characters",
         ):
             n7_code = m.fresh_schema_retry_code(n7_error)
             self.assertEqual(
@@ -12516,6 +12736,20 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             self.assertIn("route mechanism and attempt verbatim", n7_prompt)
             self.assertIn("names an evidenced N2 wall", n7_prompt)
             self.assertNotIn(n7_error, n7_prompt)
+        locator_error = (
+            "N3 hit 1 evidence_locator must contain at least 12 normalized characters"
+        )
+        locator_code = m.fresh_schema_retry_code(locator_error)
+        self.assertEqual(
+            locator_code,
+            "EVIDENCE_LOCATOR_VERBATIM_LENGTH_MISMATCH",
+        )
+        locator_prompt = m.render_fresh_schema_retry_prompt(
+            "ORIGINAL RESTRICTED PACKET", locator_code, 1,
+        )
+        self.assertIn("contiguous 12+ normalized-character substring", locator_prompt)
+        self.assertIn("12+ normalized-character", locator_prompt)
+        self.assertNotIn("hit 1", locator_prompt)
         n4_errors = [
             "N4 witness 1.witness_residual_id must be non-empty",
             "N4 witness 1.claim_residual_id must be a stable residual:<id>",

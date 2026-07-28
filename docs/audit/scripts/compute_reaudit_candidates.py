@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Produce re-audit candidates unblocked by newly ratified dependencies.
+"""Produce re-audit candidates unblocked by dependency or runner repair.
 
 This detector is intentionally separate from invalidation. A dependency
 getting weaker invalidates an audit; a dependency getting stronger can make a
@@ -8,9 +8,9 @@ previously conditional scoped claim worth a fresh clean-context re-audit.
 Candidate policy:
   1. claim is a theorem/no-go/open-gate row, not metadata or decoration;
   2. claim has a terminal non-clean audit verdict;
-  3. every current one-hop dependency is retained-grade, metadata, or an
-     accepted premise;
-  4. at least one audit-time dependency status was not retained-grade but is now.
+  3. either a dependency strengthened, the registered runner moved after a
+     runner-artifact audit, or a prior stdout-clipping blocker now fits the
+     repaired transport budget.
 
 Writes:
   - data/reaudit_candidates.json
@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -29,6 +30,11 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = REPO_ROOT / "docs" / "audit" / "data"
 LEDGER_PATH = DATA_DIR / "audit_ledger.json"
 CANDIDATES_JSON = DATA_DIR / "reaudit_candidates.json"
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+import runner_cache  # noqa: E402
+
+LEGACY_RUNNER_STDOUT_CHAR_LIMIT = 6_000
+RUNNER_STDOUT_CHAR_LIMIT = 20_000
 
 
 def runner_hash(runner_path: str | None) -> str | None:
@@ -38,6 +44,48 @@ def runner_hash(runner_path: str | None) -> str | None:
     if not p.exists():
         return None
     return hashlib.sha256(p.read_bytes()).hexdigest()
+
+
+def cached_runner_stdout_chars(runner_path: str | None) -> int | None:
+    """Measure only a usable, identity-fresh cache's stdout section."""
+    if not runner_path or runner_cache.cache_status(runner_path) != "fresh":
+        return None
+    _path, _header, body = runner_cache.load_cache(runner_path)
+    if not body or "----- stdout -----" not in body:
+        return None
+    stdout = body.split("----- stdout -----", 1)[1]
+    stdout = stdout.split("----- stderr -----", 1)[0]
+    return len(stdout.strip("\n"))
+
+
+def stdout_transport_reaudit_candidate(row: dict) -> tuple[bool, int | None]:
+    """Identify rows freed specifically by the 6k -> 20k stdout transport."""
+    if row.get("audit_status") != "audited_conditional":
+        return False, None
+    notes = str(row.get("notes_for_re_audit_if_any") or "")
+    head = (
+        notes.strip().split(":", 1)[0].strip().split()[0].lower()
+        if notes.strip()
+        else ""
+    )
+    lower = notes.lower()
+    if head != "runner_artifact_issue" or not any(
+        marker in lower
+        for marker in (
+            "unclipped",
+            "unabridged",
+            "complete stdout",
+            "complete primary",
+            "full certificate",
+        )
+    ):
+        return False, None
+    stdout_chars = cached_runner_stdout_chars(row.get("runner_path"))
+    return (
+        stdout_chars is not None
+        and LEGACY_RUNNER_STDOUT_CHAR_LIMIT < stdout_chars <= RUNNER_STDOUT_CHAR_LIMIT,
+        stdout_chars,
+    )
 
 CRITICALITY_RANK = {"critical": 3, "high": 2, "medium": 1, "leaf": 0}
 RATIFIED_DEP_STATUSES = {"retained", "retained_no_go", "retained_bounded"}
@@ -170,6 +218,7 @@ def build_payload(rows: dict[str, dict]) -> dict:
     """Return the canonical cache payload from current authoritative inputs."""
     candidates: list[dict] = []
     runner_drift_candidates: list[dict] = []
+    runner_stdout_transport_candidates: list[dict] = []
     for cid, row in rows.items():
         if row.get("claim_type") not in ELIGIBLE_CLAIM_TYPES:
             continue
@@ -205,27 +254,51 @@ def build_payload(rows: dict[str, dict]) -> dict:
                     entry["current_runner_hash"] = cur_runner_hash
                     runner_drift_candidates.append(entry)
 
+            transport_freed, stdout_chars = stdout_transport_reaudit_candidate(row)
+            if transport_freed:
+                entry = candidate_entry(cid, row, rows, [])
+                entry["candidate_reason"] = (
+                    "runner_stdout_transport_unclipped_by_head_tail_v2"
+                )
+                entry["cached_runner_stdout_chars"] = stdout_chars
+                entry["legacy_runner_stdout_char_limit"] = (
+                    LEGACY_RUNNER_STDOUT_CHAR_LIMIT
+                )
+                entry["current_runner_stdout_char_limit"] = (
+                    RUNNER_STDOUT_CHAR_LIMIT
+                )
+                runner_stdout_transport_candidates.append(entry)
+
     candidates.sort(key=sort_key)
     for idx, entry in enumerate(candidates, 1):
         entry["generated_order"] = idx
     runner_drift_candidates.sort(key=sort_key)
     for idx, entry in enumerate(runner_drift_candidates, 1):
         entry["generated_order"] = idx
+    runner_stdout_transport_candidates.sort(key=sort_key)
+    for idx, entry in enumerate(runner_stdout_transport_candidates, 1):
+        entry["generated_order"] = idx
 
     return {
-        "policy": "reaudit_unblocked_v2_dep_or_runner_drift",
+        "policy": "reaudit_unblocked_v3_dep_runner_or_stdout_transport",
         "policy_summary": (
             "Non-clean audited theorem/no-go/open-gate claims surfaced under "
-            "either of two policies: (a) all current one-hop deps are "
+            "one of three policies: (a) all current one-hop deps are "
             "retained-grade and at least one was non-retained at audit time; "
             "(b) the audit cited runner_artifact_issue and the runner file "
-            "hash has changed since the audit_state_snapshot was taken."
+            "hash has changed since the audit_state_snapshot was taken; or "
+            "(c) the audit requested complete runner stdout and a usable "
+            "source-bound cache falls above the legacy 6k limit but within "
+            "the current 20k head+tail transport budget."
         ),
         "eligible_claim_types": sorted(ELIGIBLE_CLAIM_TYPES),
         "eligible_audit_statuses": sorted(ELIGIBLE_AUDIT_STATUSES),
         "ratified_dependency_statuses": sorted(RATIFIED_DEP_STATUSES),
         "total_candidates": len(candidates),
         "total_runner_drift_candidates": len(runner_drift_candidates),
+        "total_runner_stdout_transport_candidates": len(
+            runner_stdout_transport_candidates
+        ),
         "by_criticality": {
             criticality: sum(1 for c in candidates if c["criticality"] == criticality)
             for criticality in ("critical", "high", "medium", "leaf")
@@ -236,6 +309,9 @@ def build_payload(rows: dict[str, dict]) -> dict:
         },
         "candidates": candidates,
         "runner_drift_candidates": runner_drift_candidates,
+        "runner_stdout_transport_candidates": (
+            runner_stdout_transport_candidates
+        ),
     }
 
 
@@ -253,6 +329,10 @@ def main() -> int:
     print(f"  by criticality: {output['by_criticality']}")
     print(f"  runner drift candidates: {output['total_runner_drift_candidates']}")
     print(f"  by criticality (runner drift): {output['by_criticality_runner_drift']}")
+    print(
+        "  runner stdout transport candidates: "
+        f"{output['total_runner_stdout_transport_candidates']}"
+    )
     candidates = output["candidates"]
     if candidates:
         print("  top dep-ratified candidates:")
@@ -272,6 +352,18 @@ def main() -> int:
                 f"{entry['generated_order']}. {entry['claim_id']} "
                 f"({entry['criticality']}, runner drifted "
                 f"{entry['snap_runner_hash'][:8]}->{entry['current_runner_hash'][:8]})"
+            )
+    stdout_transport_candidates = output[
+        "runner_stdout_transport_candidates"
+    ]
+    if stdout_transport_candidates:
+        print("  top runner-stdout transport candidates:")
+        for entry in stdout_transport_candidates[:5]:
+            print(
+                "    "
+                f"{entry['generated_order']}. {entry['claim_id']} "
+                f"({entry['criticality']}, "
+                f"{entry['cached_runner_stdout_chars']} stdout chars)"
             )
     return 0
 

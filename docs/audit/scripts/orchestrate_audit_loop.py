@@ -68,6 +68,7 @@ _STOP_HEARTBEAT = threading.Event()
 _DRAIN_LOCK_HANDLE: TextIO | None = None
 DEFAULT_SERVICE_RETRY_INITIAL_SECONDS = 60
 DEFAULT_SERVICE_RETRY_MAX_SECONDS = 15 * 60
+FORENSIC_MECHANICS_CIRCUIT_THRESHOLD = 3
 
 
 class RuntimeLimitReached(Exception):
@@ -126,6 +127,60 @@ def campaign_exclusion_keys(path: Path | None) -> set[tuple[str, str]]:
 
 def campaign_exclusion_count(reason: str) -> int:
     return campaign_exclusion_counts()[reason]
+
+
+def forensic_schema_failure_signature(detail: str) -> str | None:
+    """Normalize known control-plane schema defects without verdict content."""
+    if "evidence_locator must contain at least 12 normalized characters" in detail:
+        return "EVIDENCE_LOCATOR_MIN_LENGTH"
+    if (
+        "N7.argument and N7.resolution must each contain at least 80 "
+        "normalized characters"
+    ) in detail:
+        return "N7_MIN_LENGTH"
+    if (
+        detail.startswith("N1 route ")
+        and ".route_class=" in detail
+        and "is not supported by its evidenced" in detail
+    ):
+        return "N1_ROUTE_CLASS_MARKER_MISMATCH"
+    if (
+        detail.startswith("N5 statement ")
+        and "tested resolution is not evidenced at resolution_evidence_path"
+        in detail
+    ):
+        return "N5_TESTED_RESOLUTION_VERBATIM_MISMATCH"
+    return None
+
+
+def forensic_mechanics_circuit(
+    records: list[dict],
+    threshold: int = FORENSIC_MECHANICS_CIRCUIT_THRESHOLD,
+) -> tuple[str, int] | None:
+    """Open after one known schema defect hits enough distinct claims."""
+    claims_by_signature: dict[str, set[str]] = {}
+    for record in records:
+        if record.get("reason") != batch.SCHEMA_QUARANTINE_RESULT:
+            continue
+        claim_id = record.get("claim_id")
+        if not isinstance(claim_id, str) or not claim_id:
+            continue
+        for failure in record.get("failures") or []:
+            if not isinstance(failure, dict):
+                continue
+            signature = forensic_schema_failure_signature(
+                str(failure.get("detail") or "")
+            )
+            if signature is not None:
+                claims_by_signature.setdefault(signature, set()).add(claim_id)
+    eligible = [
+        (signature, len(claim_ids))
+        for signature, claim_ids in claims_by_signature.items()
+        if len(claim_ids) >= threshold
+    ]
+    if not eligible:
+        return None
+    return sorted(eligible, key=lambda item: (-item[1], item[0]))[0]
 
 
 def schema_quarantine_count() -> int:
@@ -728,12 +783,29 @@ def run_forensic_canary(
     PROGRESS["last_canary_terminal_phase"] = None
     PROGRESS["last_canary_source"] = None
     try:
-        excluded = batch.load_campaign_quarantine(
+        exclusion_records = batch.load_campaign_exclusion_records(
             args.campaign_quarantine_file
         )
     except (OSError, ValueError) as exc:
         emit(f"invalid campaign state before forensic canary: {exc}")
         return 2
+    circuit = forensic_mechanics_circuit(exclusion_records)
+    if circuit is not None:
+        signature, count = circuit
+        PROGRESS["canary_state"] = (
+            f"mechanics_circuit_open:{signature}:{count}"
+        )
+        emit(
+            "forensic mechanics circuit open; refusing to spend another "
+            "independent seat on the repeated control-plane defect: "
+            f"signature={signature} distinct_claims={count} "
+            f"threshold={FORENSIC_MECHANICS_CIRCUIT_THRESHOLD}"
+        )
+        return 0
+    excluded = {
+        record["claim_id"]
+        for record in exclusion_records
+    }
     excluded.update(extra_excluded or set())
     try:
         claim_id = first_ready_forensic_claim(

@@ -151,6 +151,24 @@ HEADING_RE = re.compile(r"^#{1,6}\s+", re.MULTILINE)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)(?:#[^)]*)?\)")
 
 EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
+    # Current paired certificates launch these children with subprocess rather
+    # than importing them. Register their load-bearing source chain explicitly
+    # so the restricted packet contains the code whose stdout the certificate
+    # parses.
+    "persistent_record_sidebit_note": [
+        "scripts/persistent_record_overlap_kernel.py",
+        "scripts/persistent_record_matched_compare.py",
+        "scripts/density_matrix_analysis.py",
+        "scripts/entangling_env_decoherence.py",
+        "scripts/generative_causal_dag_interference.py",
+        "scripts/graph_memory_scar_decoherence.py",
+    ],
+    "wilson_test_mass_continuum_note_2026-04-11": [
+        "scripts/frontier_test_mass_limit.py",
+        "scripts/frontier_perturbative_mass_law.py",
+        "scripts/frontier_continuum_limit.py",
+        "scripts/frontier_newton_systematic.py",
+    ],
     # This theorem note's N7 steelman is the faithful-but-reducible direct sum
     # of the two complexified simple-sector modules.  The independent helper is
     # not imported by the primary stress runner, so expose it only to this row.

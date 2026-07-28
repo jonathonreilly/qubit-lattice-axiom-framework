@@ -10,7 +10,7 @@ This is intentionally narrow:
   - one compact exact lattice family at h = 0.25
   - one source-resolved Green-like kernel
   - one self-consistency update from source-cluster amplitudes
-  - one comparison against the instantaneous 1/r comparator
+  - one comparison against the instantaneous softened s/(rho+0.1) comparator
   - one reduction check: zero source must recover free propagation exactly
 """
 
@@ -78,7 +78,7 @@ def _source_resolved_green_field(
     source_nodes: list[int],
     weights: list[float],
 ) -> list[list[float]]:
-    """Source-resolved Green-like field with cluster weights."""
+    """Evaluate exp[-mu(rho+eps)]/(rho+eps) with cluster weights."""
     if not source_nodes:
         return [[0.0 for _ in range(lat.npl)] for _ in range(lat.nl)]
 
@@ -90,8 +90,16 @@ def _source_resolved_green_field(
             x, y, z = lat.pos[ls + i]
             val = 0.0
             for w, (mx, my, mz) in zip(weights, source_pos):
-                r = math.sqrt((x - mx) ** 2 + (y - my) ** 2 + (z - mz) ** 2) + GREEN_EPS
-                val += w * source_strength * math.exp(-GREEN_MU * r) / r
+                rho = math.sqrt(
+                    (x - mx) ** 2 + (y - my) ** 2 + (z - mz) ** 2
+                )
+                softened_radius = rho + GREEN_EPS
+                val += (
+                    w
+                    * source_strength
+                    * math.exp(-GREEN_MU * softened_radius)
+                    / softened_radius
+                )
             field[layer][i] = val
     return field
 
@@ -118,9 +126,9 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--calibrated-gain",
         type=float,
-        default=FROZEN_CALIBRATED_GAIN,
+        required=True,
         help=(
-            "externally declared field-normalization input "
+            "required field-normalization input "
             f"(frozen value: {FROZEN_CALIBRATED_GAIN:.16g})"
         ),
     )
@@ -141,10 +149,13 @@ def main() -> int:
     print("=" * 84)
     print("SOURCE-RESOLVED EXACT GREEN SELF-CONSISTENT")
     print("  compact exact h=0.25 refinement family, one self-consistency update")
-    print("  comparison: self-consistent field vs instantaneous 1/r field")
+    print("  comparison: one-update field vs softened s/(rho+0.1) field")
     print("=" * 84)
     print(f"h={H}, W={PW}, L={NL_PHYS}, source_cluster={len(source_nodes)} nodes")
-    print(f"field kernel: exp(-mu r)/(r+eps), mu={GREEN_MU}, eps={GREEN_EPS}")
+    print(
+        "field kernel: exp(-mu*(rho+eps))/(rho+eps), "
+        f"mu={GREEN_MU}, eps={GREEN_EPS}"
+    )
     print(f"source strengths: {m.SOURCE_STRENGTHS}")
     print(f"target max |f|: {FIELD_TARGET_MAX}")
     print(f"declared calibrated gain input: {args.calibrated_gain:.12e}")
@@ -210,8 +221,16 @@ def main() -> int:
 
     print()
     print("SAFE READ")
-    print(f"  instantaneous F~M exponent: {inst_alpha:.2f}" if inst_alpha is not None else "  instantaneous F~M exponent: n/a")
-    print(f"  self-consistent Green F~M exponent: {green_alpha:.2f}" if green_alpha is not None else "  self-consistent Green F~M exponent: n/a")
+    print(
+        f"  instantaneous Delta z~s exponent: {inst_alpha:.2f}"
+        if inst_alpha is not None
+        else "  instantaneous Delta z~s exponent: n/a"
+    )
+    print(
+        f"  one-update Green Delta z~s exponent: {green_alpha:.2f}"
+        if green_alpha is not None
+        else "  one-update Green Delta z~s exponent: n/a"
+    )
     print(f"  TOWARD rows: {toward}/{len(green_vals)}")
     print(f"  mean |green/inst| ratio: {mean_ratio:.3f}")
     print("  this is a refinement-positive pocket, not yet a self-consistent")

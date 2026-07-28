@@ -1,6 +1,7 @@
 # Source-Resolved Exact Green Self-Consistent Pocket
 
 **Date:** 2026-04-05  
+**Type:** bounded_theorem
 **Status:** bounded self-consistent refinement-positive on the compact exact
 lattice with explicit assertion wrapper
 
@@ -19,6 +20,7 @@ self-consistent dynamics, continuum transfer, or physical amplitude.
 Promotion beyond numerical-match support requires deriving the calibration
 gain and field normalization from retained dynamics, and replacing the single
 update pocket with a theorem-grade self-consistent dynamics result.
+The assertion and provenance hardening below does not satisfy that open target.
 
 ## Artifact chain
 
@@ -34,16 +36,16 @@ python3 scripts/source_resolved_exact_green_self_consistent.py \
 
 ## Question
 
-Does the exact-lattice Green pocket survive a minimal self-consistency update,
-where the source-cluster weights are reweighted from the propagated wave once,
-while preserving the weak-field gravity lane?
+Does the exact-lattice Green pocket preserve its positive-centroid-shift
+diagnostic after one source-cluster reweighting from the propagated wave?
 
 This note is intentionally narrow:
 
 - one compact exact lattice family at `h = 0.25`
 - one source-resolved Green-like kernel
 - one self-consistency update from source-cluster amplitudes
-- one comparison against the instantaneous `1/r` field
+- one comparison against the instantaneous softened
+  `s / (rho + 0.1)` field
 - one reduction check: zero source must recover free propagation exactly
 
 ## Frozen result
@@ -53,7 +55,8 @@ The frozen pocket uses:
 - exact lattice with `h = 0.25`, `W = 3`, `L = 6`
 - fixed cross5 source cluster clipped at the boundary, leaving 4 in-bounds source nodes
 - source strengths `s = 0.001, 0.002, 0.004, 0.008`
-- kernel `exp(-mu r) / (r + eps)` with `mu = 0.08`, `eps = 0.5`
+- kernel `exp[-mu (rho + eps)] / (rho + eps)`, where `rho` is the
+  Euclidean source-point distance, with `mu = 0.08`, `eps = 0.5`
 - calibration gain input `1.757890330808e+00`
 - one self-consistency update from the propagated source-cluster amplitudes
 
@@ -61,7 +64,7 @@ The calibration gain is part of the frozen setup.  It is chosen to set the
 base-field cap at the strongest source row and is not evidence of an
 independently derived physical amplitude.
 
-## Closed finite-run chain
+## Frozen finite-run contract
 
 For this note, “self-consistent” means exactly one source-weight update.  If
 `g` denotes the declared calibrated gain input, the initial uniform weights
@@ -69,8 +72,12 @@ are `w_j^(0) = 1/4` on the four in-bounds source nodes and the field used by
 the runner is
 
 ```text
-f_g^(q)(x; s) = g s sum_j w_j^(q) exp(-mu r_j(x)) / (r_j(x) + eps).
+f_g^(q)(x; s)
+  = g s sum_j w_j^(q)
+      exp[-mu (rho_j(x) + eps)] / (rho_j(x) + eps),
 ```
+
+where `rho_j(x)` is the Euclidean distance from `x` to source node `j`.
 
 The runner propagates once in `f_g^(0)`, forms
 
@@ -83,10 +90,22 @@ centroid minus the centroid from propagation in the identically zero field.
 Thus the frozen claim is conditional on the declared tuple
 
 ```text
-(h, W, L, cluster, strengths, mu, eps, g, update_count)
-= (0.25, 3, 6, clipped-cross5, (0.001, 0.002, 0.004, 0.008),
-   0.08, 0.5, 1.7578903308081324, 1).
+(h, W, L, cluster, source_z, strengths, mu, eps, g, update_count,
+ K, beta, transverse_offset_cutoff, comparator_eps)
+= (0.25, 3, 6, clipped-cross5, 3, (0.001, 0.002, 0.004, 0.008),
+   0.08, 0.5, 1.7578903308081324, 1, 5, 0.8, 3, 0.1).
 ```
+
+Here `K`, `beta`, and the transverse-offset cutoff enter the selected
+propagator imported by the runner.  For a step of length `ell` and angular
+offset `theta`, that propagator contributes the selected factor
+
+```text
+exp[i K ell (1 - f_bar)] exp(-beta theta^2) / ell^2,
+```
+
+where `f_bar` is the endpoint-averaged field.  These are explicit numerical
+model inputs, not framework-derived values.
 
 The four load-bearing gates are explicit and cause a nonzero process exit on
 failure:
@@ -117,8 +136,8 @@ Frozen readout:
 
 Fitted exponents:
 
-- instantaneous `F~M`: `1.00`
-- self-consistent Green `F~M`: `1.00`
+- instantaneous `Delta z ~ s`: `1.00`
+- one-update Green `Delta z ~ s`: `1.00`
 
 Note: `max |f|` scales linearly with source strength `s`.  The calibrated
 *pre-update base field* reaches `2.0e-02` at `s = 0.008`; after the declared
@@ -141,9 +160,10 @@ RESIDUAL_SCOPE=fully_converged_self_consistent_field_theory_and_uncalibrated_amp
 The strongest bounded statement is:
 
 - exact zero-source reduction survives
-- the self-consistent Green field keeps the weak-field `TOWARD` sign on the
-  compact `h = 0.25` family
-- the mass-scaling class stays essentially linear
+- the one-update Green field keeps the defined positive-centroid-shift
+  `TOWARD` sign on the compact `h = 0.25` family
+- the selected centroid response stays essentially linear in source parameter
+  `s`
 - the dynamic field remains nontrivial relative to the chosen instantaneous
   comparator, with mean `|green/inst| = 1.330`
 - the runner asserts zero-source exactness, the calibrated-gain input
@@ -162,8 +182,10 @@ theory.
   is a bounded refinement update rather than a symmetry-clean family proof
 - the `|green/inst|` amplitude ratio is comparator- and calibration-dependent,
   so it should not be promoted as a standalone physical observable
-- the calibrated gain is admitted as a setup input rather than derived from
-  retained dynamics
+- the calibrated gain is an explicit setup/normalization input rather than
+  derived from retained dynamics
+- no retained bridge identifies `s` as physical mass, `Delta z` as force, or
+  this selected propagator/kernel as weak-field gravity
 - still, it is the smallest exact-lattice refinement of the Green pocket that
   preserves the hard gates cleanly
 
@@ -172,7 +194,7 @@ theory.
 Treat this as a bounded calibrated pocket only:
 
 - exact zero-source reduction survives
-- weak-field sign survives
-- `F~M` stays at `1.00`
+- the defined positive-centroid-shift sign survives
+- `Delta z ~ s` stays at `1.00`
 - the pocket survives a self-consistency update on the exact refinement family
-- this is the best current exact-lattice propagating-field refinement lead
+- this is a bounded selected-model propagating-field refinement lead

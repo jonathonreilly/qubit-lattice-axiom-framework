@@ -59,6 +59,8 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_2026_04_19.py",
     "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
     "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+    "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
 )
 
 
@@ -217,9 +219,11 @@ def main() -> int:
         "scripts/frontier_gauge_vacuum_plaquette_first_sector_completed_triple_current_transfer_family_boundary_2026_04_19.py",
         "scripts/frontier_gauge_vacuum_plaquette_first_sector_rank_one_transfer_realization_2026_04_19.py",
         "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_environment_evaluator_route_2026_04_17.py",
+        "scripts/frontier_gauge_vacuum_plaquette_first_three_sample_local_wilson_retained_positive_cone_obstruction_2026_04_17.py",
+        "scripts/frontier_gauge_vacuum_plaquette_retained_class_sampling_inversion_2026_04_17.py",
     }
     check(
-        "dependency manifest pins the source note and all mutable helper-runner premises",
+        "dependency manifest pins the source note and complete five-helper import closure",
         set(AUDIT_INPUT_PATHS) == expected_audit_inputs
         and all(os.path.isfile(os.path.join(ROOT, path)) for path in AUDIT_INPUT_PATHS),
         f"declared inputs={len(AUDIT_INPUT_PATHS)}",

@@ -34,13 +34,13 @@ neither stronger claim ships here.
 
 ### N1 — five distinct attacks on the finite numerical no-go
 
-| Attack route | Canonical route class | Marker | Concrete falsifier | Why it fails on the claimed surface |
-|---|---|---|---|---|
-| Direct counterexample search over parameter tuples | `numerical_or_finite_case` | `ATTEMPTED` | Find one of the stated Cartesian tuples whose returned gap is non-finite or at most `10^-6`. | The primary runner performs the finite numerical scan over all `6 x 6 x 5 x 8 = 1440` unique tuples; the minimum is `7.791551... x 10^-3`. |
-| Optimal-scalar escape | `algebraic_rearrangement` | `ATTEMPTED` | Show by algebra or direct solution that a different scalar `c` makes a sampled witness realize the target. | `gap_at` uses the least-squares identity `c_best=(Zhat·Zmin)/(Zhat·Zhat)`, and the runner checks the algebraic projection identity `Zhat·(c_best Zhat-Zmin)=0` at every tuple to `10^-12`. |
-| Grid-boundary definition escape | `boundary_or_initial_condition` | `ATTEMPTED` | Show that a listed boundary endpoint, Cartesian combination, or grid point was skipped or duplicated. | The runner checks the four boundary-endpoint pairs, total cardinality, and uniqueness of the complete Cartesian product before accepting the result. |
-| Target-readout drift escape | `alternate_observable_or_readout` | `ATTEMPTED` | Show that the sweep used an alternate target readout rather than the completed triple printed in this note. | The target readout is rebuilt by `completed_sector_data()` and checked componentwise against the listed triple to `10^-12`; the companion runner independently checks the same upstream reconstruction. |
-| Dependency/provenance escape | `dependency_or_registry_reclassification` | `ATTEMPTED` | Show that an undeclared mutable premise or stale runner output supplied the reported minimum. | The runner checks its dependency manifest names the note and all three helper runners; the cache fingerprint covers those premises, while `min_gap`/`min_pt` are selected from freshly computed gaps before regression comparison. |
+| Attack route | Marker | Concrete falsifier | Why it fails on the claimed surface |
+|---|---|---|---|
+| Direct counterexample search over parameter tuples | `ATTEMPTED` | Find one of the stated Cartesian tuples whose returned gap is non-finite or at most `10^-6`. | The primary runner performs the finite numerical scan over all `6 x 6 x 5 x 8 = 1440` unique tuples; the minimum is `7.791551... x 10^-3`. |
+| Optimal-scalar escape | `ATTEMPTED` | Show by algebra or direct solution that a different scalar `c` makes a sampled witness realize the target. | `gap_at` uses the least-squares identity `c_best=(Zhat·Zmin)/(Zhat·Zhat)`, and the runner checks the algebraic projection identity `Zhat·(c_best Zhat-Zmin)=0` at every tuple to `10^-12`. |
+| Grid-boundary definition escape | `ATTEMPTED` | Show that a listed boundary endpoint, Cartesian combination, or grid point was skipped or duplicated. | The runner checks the four boundary-endpoint pairs, total cardinality, and uniqueness of the complete Cartesian product before accepting the result. |
+| Target-readout drift escape | `ATTEMPTED` | Show that the sweep used an alternate target readout rather than the completed triple printed in this note. | The target readout is rebuilt by `completed_sector_data()` and checked componentwise against the listed triple to `10^-12`; the companion runner repeats the check against the same upstream reconstruction. |
+| Dependency/provenance escape | `ATTEMPTED` | Show that an undeclared mutable premise or stale runner output supplied the reported minimum. | The runner checks its dependency manifest names the note and the complete five-helper import closure; the cache fingerprint covers those premises, while `min_gap`/`min_pt` are selected from freshly computed gaps before regression comparison. |
 
 These routes differ in primary object and terminal falsifier: evaluated tuple,
 scalar projection, domain enumeration, target vector, and execution provenance.
@@ -63,8 +63,7 @@ standard`, `the framework provides`, `bridge context`, `background`,
 `naturally`, `obviously`, `standard QFT`, `registered`, and `canonical`.
 There is no load-bearing hit. Uses of "box" describe only the bounds from
 which the explicit grids are generated. Uses of "continuous" occur only in
-scope exclusions. "Canonical" labels the audit gate's route-class column and
-is non-load-bearing. No hidden condition is promoted to a wall.
+scope exclusions. No hidden condition is promoted to a wall.
 
 ### N4 — residual matching
 

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/gauge_vacuum_completed_triple_dense_box_certificate_2026_05_03.py
-runner_sha256: b36362699a92f0b43da941ebc10448d3ef4366be0571eecaef4d22bae5b68005
-input_fingerprint_sha256: 8b70c4e244867a069997f310b1de990949cd2ea20415df8cec6ae250c7be6729
+runner_sha256: cf24d95f392b813b2f383034c4656a20707358b2d697498770e8e18c4dd5e3f1
+input_fingerprint_sha256: 4c8522fab3f6e9173e54d1a0bc8f2a843fb5aa1b4a6f979ea21dd844988ca3fc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.20
+elapsed_sec: 7.19
 status: ok
 ----- stdout -----
 ================================================================================
@@ -23,11 +23,11 @@ status: ok
 
 --- Dense 6x6x5x8 = 1440 grid sweep ---
   swept 1440 grid points in 0.2 s
-  minimum runner-evaluated gap = 7.791551199075e-03
+  minimum runner-evaluated gap = 7.791551199188e-03
   median gap                  = 2.039034e-01
   max gap                     = 2.856130e-01
   minimum / numerical-zero threshold = 7791.551
-  max optimal-scalar projection residual = 4.996e-16
+  max optimal-scalar projection residual = 4.129e-16
   argmin grid point:
     tau_transfer = 1.0000e-04
     tau_boundary = 4.0000
@@ -36,10 +36,10 @@ status: ok
 
   [PASS] finite numerical grid contract has exactly 1440 unique Cartesian points and the stated boundary endpoints  (count=1440, unique=1440)
   [PASS] completed-sector target readout consumed by the sweep matches the note's listed triple  (max target drift=1.973e-13)
-  [PASS] gap_at satisfies the algebraic optimal-scalar projection identity at every grid point  (max |zhat·(c_best zhat-Z_min)|=4.996e-16)
-  [PASS] dependency manifest pins the source note and all mutable helper-runner premises  (declared inputs=4)
-  [PASS] all 1440 runner-evaluated gaps are finite and above the numerical-zero threshold  (min gap=7.791551199075e-03, threshold=1.0e-06)
-  [PASS] computed sampled argmin and minimum reproduce the finite-grid regression pins  (argmin=(0.0001, 4.0, 1e-08, 0.3214285714285714), min gap=7.791551199075e-03)
+  [PASS] gap_at satisfies the algebraic optimal-scalar projection identity at every grid point  (max |zhat·(c_best zhat-Z_min)|=4.129e-16)
+  [PASS] dependency manifest pins the source note and complete five-helper import closure  (declared inputs=6)
+  [PASS] all 1440 runner-evaluated gaps are finite and above the numerical-zero threshold  (min gap=7.791551199188e-03, threshold=1.0e-06)
+  [PASS] computed sampled argmin and minimum reproduce the finite-grid regression pins  (argmin=(0.0001, 4.0, 1e-08, 0.3214285714285714), min gap=7.791551199188e-03)
 
  Honest scope of this certificate:
    - On the explicit 1440-point Cartesian grid, every float64 gap_at

@@ -94,13 +94,19 @@ the unique positive order-parameter ratio is
 v(L) / v_ref = (A_ref / A(L))^(1/4).
 ```
 
-Uniqueness on the positive branch is not assumed. The map `v -> A v^4` is
-strictly increasing on `v > 0`, hence injective there, so a positive density
-fixes exactly one positive coordinate; on all of `R` the same map is even, so
-positivity of `v` is what selects the branch rather than a convention.
+Uniqueness on the positive branch is not assumed. For `0 < x < y` and `A > 0`,
 
-The fourth root at a general endpoint pair is irrational, so the paired runner
-closes the solve two independent ways. First, an exact rational witness whose
+```text
+A(y^4 - x^4) = A(y - x)(y + x)(y^2 + x^2) > 0.
+```
+
+Thus the map `v -> A v^4` is strictly increasing on `v > 0`, hence injective
+there, so a positive density fixes exactly one positive coordinate; on all of
+`R` the same map is even, so positivity of `v` is what selects the branch
+rather than a convention.
+
+The fourth root at the `7/8` hierarchy endpoint pair is irrational, so the
+paired runner closes the solve two independent ways. First, an exact rational witness whose
 coefficient ratio is a perfect fourth power: `A_ref = 16`, `A_L = 81`, and
 `v_ref = 1` give `v_L = 2/3` with `16 * 1^4 = 81 * (2/3)^4 = 16` and
 `(v_L/v_ref)^4 = 16/81 = A_ref/A_L`, all exact in rational arithmetic. Second,
@@ -191,7 +197,7 @@ drift apart silently.
 
 | Section | Surface | Checks |
 |---|---|---|
-| S1 order-parameter coordinate | `q = 2 H^dagger H = v^2` over a rational grid; exact `rho_* = A v^4 > 0` over an `(A, v)` grid; strict monotonicity on `v > 0`; exact fourth-root recovery of the coordinate; the even-branch control | 5 |
+| S1 order-parameter coordinate | `q = 2 H^dagger H = v^2` over a rational grid; exact `rho_* = A v^4 > 0` over an `(A, v)` grid; the positive strict-monotonicity factorization; exact fourth-root recovery of the coordinate; the even-branch control | 5 |
 | S2 fixed-density fourth-root law | endpoint ratio `7/8` independent of `u_0^2`; the exact rational fourth-power witness; the real endpoint solve to machine precision; the two negative controls measured in the density equation | 4 |
 | S3 formal scalar-readout compatibility | `rho = 1` across couplings and coordinates; `(MW2(L)/MW2(ref))^2 = A_ref/A(L)` computed exactly; independence from `(g, gY)` | 3 |
 | S4 source firewalls | bounded-support status fields; the load-bearing markdown links; the stated open residuals; the parent-note citation | 4 |

@@ -36,6 +36,11 @@ NOTE_PATH = (
 )
 PARENT_NOTE_PATH = ROOT / "docs" / "HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md"
 
+AUDIT_INPUT_PATHS = (
+    "docs/HIERARCHY_EW_ORDER_PARAMETER_D4_DENSITY_READOUT_BRIDGE_BOUNDED_SUPPORT_NOTE_2026-06-18.md",
+    "docs/HIERARCHY_DIMENSIONAL_COMPRESSION_NOTE.md",
+)
+
 SECTION_ORDER = ("S1", "S2", "S3", "S4", "S5")
 SECTION_TITLES = {
     "S1": "order-parameter coordinate",
@@ -166,14 +171,19 @@ def main() -> int:
         f"{len(a_grid)}x{len(v_grid)} pairs; sample rho_*={rho}, A v^4={coeff * v**4}",
     )
 
-    rising = all(
-        quartic_density(coeff, v_grid[i]) < quartic_density(coeff, v_grid[i + 1])
+    monotonic_factorization_ok = all(
+        coeff * (v_grid[i + 1] ** 4 - v_grid[i] ** 4)
+        == coeff
+        * (v_grid[i + 1] - v_grid[i])
+        * (v_grid[i + 1] + v_grid[i])
+        * (v_grid[i + 1] ** 2 + v_grid[i] ** 2)
+        > 0
         for i in range(len(v_grid) - 1)
     )
     check(
-        "v -> A v^4 is strictly increasing on v > 0, hence injective there",
-        rising,
-        f"rho_* rises {quartic_density(coeff, v_grid[0])} -> {quartic_density(coeff, v_grid[-1])}",
+        "the strict-monotonicity factorization is positive for A>0 and 0<x<y",
+        monotonic_factorization_ok,
+        f"A(y^4-x^4)=A(y-x)(y+x)(y^2+x^2)>0 on {len(v_grid) - 1} exact rational pairs",
     )
 
     recovered = positive_fourth_root(rho / coeff)

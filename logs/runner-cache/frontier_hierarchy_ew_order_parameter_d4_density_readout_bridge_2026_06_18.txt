@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_ew_order_parameter_d4_density_readout_bridge_2026_06_18.py
-runner_sha256: 7a76c4a57e7039796c17b5327e80c6f63e56ffb1e22b85faf4af15e557be2ba2
+runner_sha256: 737b69a09537d32fe382e1104d6fdc76e304ad90c46358e454a9dc608349b61a
+input_fingerprint_sha256: 81e4a6bec6f0c940f5d1253c92875bcd00d902426791140067b4c1490b38bbef
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 Hierarchy EW order-parameter D=4 density readout bridge
@@ -14,8 +15,8 @@ S1 order-parameter coordinate
          7 values of v; sample v=3/2: q=9/4, v^2=9/4
   [PASS] positive quartic density is exactly rho_* = A v^4 > 0, over an (A, v) grid
          5x7 pairs; sample rho_*=567/176, A v^4=567/176
-  [PASS] v -> A v^4 is strictly increasing on v > 0, hence injective there
-         rho_* rises 7/2816 -> 45927/176
+  [PASS] the strict-monotonicity factorization is positive for A>0 and 0<x<y
+         A(y^4-x^4)=A(y-x)(y+x)(y^2+x^2)>0 on 6 exact rational pairs
   [PASS] the unique positive coordinate is recovered exactly as the fourth root of rho_*/A
          root(rho_*/A)=3/2, v=3/2; recovery exact on all 35 pairs
   [PASS] positivity of v is load-bearing: v -> A v^4 is NOT injective on all of R

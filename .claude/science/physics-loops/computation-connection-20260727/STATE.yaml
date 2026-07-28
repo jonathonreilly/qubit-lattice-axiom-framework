@@ -1,0 +1,107 @@
+loop: computation-connection-20260727
+goal: >
+  Continue the computation-connection campaign (axioms upward to repo-side
+  science) from landed Cycle 720. Block 01 target: Cycle 721 three-route
+  literal physical-input and epoch-integration tournament declared in
+  docs/RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md
+  (Verdict and next experiment section).
+mode: campaign
+runtime: 12h
+started: "2026-07-27T21:37:28-04:00"
+target_stop: "2026-07-28T09:37:00-04:00"
+checkpoint_interval: 30m
+target_status: best-honest-status
+skill_freshness: >
+  docs/ai_methodology/skills/physics-loop/SKILL.md read at origin/main
+  9ce38a06db4a; origin/main advanced to 2f2f4878ca during preflight; delta
+  re-checked before execution.
+block: "01"
+branch: physics-loop/computation-connection-block01-20260727
+base_commit: 2f2f4878ca8676d963e80b33e697e76825614de0
+lock: >
+  repo automation_lock.py UNAVAILABLE on this machine (Permission denied:
+  /Users/jonreilly -- lock path points at a different user home). Running
+  under branch-local supervisor lock in an independent session worktree per
+  long-running-execution.md preflight step 7. Concurrent owner automation
+  observed and non-overlapping: cl3-* worktrees (frontier certificates, N5
+  certificates), wf_* locked review worktrees (PRs 5606/5610/5694), poisson
+  PRs 5693/5695. No open PR or branch touches Cycle 721 or the
+  recurrent-companion lane.
+active_route: cycle721-three-route-physical-input-epoch-tournament
+cycle: 721
+approach_families: see APPROACH_REGISTRY.md
+strongest_unresolved_obligation: >
+  literal physical-M2 circuit for the input-side even-CAR Bell measurements
+  composing collision-free with Choi preparation, correction banks, and
+  recurrent G on one site map (Cycle 720 note, Open list, items 1-2).
+hard_residual: same as strongest_unresolved_obligation
+files_touched:
+  - .claude/science/physics-loops/computation-connection-20260727/ (pack: STATE/GOAL/SUPERVISOR_LOCK/ROUTE_PORTFOLIO/NO_GO_LEDGER/ASSUMPTIONS_AND_IMPORTS/APPROACH_REGISTRY/TRACE_GATE/OPPORTUNITY_QUEUE/SPEC_F1/SPEC_F2/SPEC_F3)
+open_imports: none (see ASSUMPTIONS_AND_IMPORTS.md — zero external imports; prior cycles pinned as bounded authority)
+no_go_routes: see NO_GO_LEDGER.md
+trace_class: direct_blocker_closure (targets quoted Cycle-720 open items)
+review_findings: none yet
+pr_status: none yet
+checkpoint_2150: >
+  Grounding + prior-art sweep complete at origin/main 2f2f4878ca (targets
+  OPEN; sweep recorded in ROUTE_PORTFOLIO.md). Ledgers + three route specs
+  written. Extraction workers A/B/C completed; deliverables
+  EXTRACT_BELL_SURFACE.md + EXTRACT_SITEMAP_RECURRENT.md +
+  EXTRACT_GEOMETRY_FACTORIZATION.md verified by supervisor spot-checks
+  (B source lines 84-233 match extract A; adversary blocklist pattern
+  confirmed; runner_cache mechanics mapped; landed even-CAR runner
+  re-executed clean in this worktree, exit 0, PASS).
+checkpoint_2205: >
+  Key design facts locked: (1) pump already carries the ancilla-dilation
+  measurement pattern (H; controlled-row on returned NN route; H; retained
+  syndrome bank) — F1 extends it to the doubled Bell rows with a live-input
+  bank at [q, q+m) and one ancilla per row; (2) factorization module
+  discards V_s (no public tableau API) — F2 redesigned as one-cell
+  even-exchange port (support 1 cell) + transvection-synthesized
+  seam-extended coupling (gate-critical census) + F.phase_fixed_factorization
+  regression anchor + coordinate-row locality census; V_s-restriction
+  compilation stays UNTESTED/OPEN (reopen condition: a new-module
+  factorization-object API in a future cycle); (3) onsite even-CAR is
+  represented identically (physical == target) — only seams are nontrivial;
+  (4) no collision machinery exists anywhere — F3 must define schedule keys
+  over global register IDs + slot-walk liveness (Cycle-54 caution).
+  F1 draft worker (car_bell_input_m2_compiler) and F2 draft worker
+  (encoded_input_clifford_port) launched in background under the workhorse
+  split. F3 spec waits for F1's interface; independent checker after.
+checkpoint_2250: >
+  F2 (encoded_input_clifford_port) COMPLETE: all 22 checks PASS, exit 0,
+  supervisor-verified rerun. Findings: (a) the even-exchange port is exact
+  on the full 36-row port dictionary; (b) the seam-extended coupling
+  synthesized PORT-LOCAL (support 1 cell, diameter 0 — beats the <=2/<=1
+  gate; the companion representation leaves nothing cross-cell to correct);
+  (c) covariance holds as dictionary-family multisets + seam orientation
+  classes over 24 frames x 8 parities (the 11-generator adjacent-pair basis
+  is a JW-path chart, NOT frame-covariant — layer-1 lesson recorded);
+  (d) V_s-restriction compilation stays UNTESTED/OPEN (no public
+  factorization-object API; reopen condition named). Supervisor reviewed
+  the full algebra core line-by-line (phase conventions re-derived) and the
+  covariance rewrite. F1 first draft honestly FAILED for diagnosed reasons:
+  spec-side dilation-direction error (H-CP-H fixes X_a, maps Z_a -> Z_a R);
+  bare-JW input bank dragged global strings (16 cells / diameter 7) —
+  physics fix: companion-encoded input bank; covariance chart-family fix;
+  route-tuple semantics. F1 revision worker running (sol xhigh, per owner
+  directive this session). F3 spec written, launches after F1.
+checkpoint_0010: >
+  F1 COMPLETE (10/10 PASS; companion-encoded bank; dilation identities
+  corrected; layer law "3 + max cell degree" certified with interior
+  saturation via added (4,4,4); gate met on all six boxes to 995 rows;
+  supervisor rerun + core review done). F3 COMPLETE (6/6 PASS both input
+  legs; site-addressed G instructions introspected and mapped;
+  Cycle-54-compliant liveness walk clean at 76k slots/159k touches;
+  supervisor rerun + namespace/walk review done; audit header added by
+  supervisor post-hoc, syntax checked). Note drafted with F1/F2/F3 sections
+  filled; CLAIM_STATUS_CERTIFICATE + REVIEW_HISTORY (incl. V1-V5 record)
+  written; receipt builder staged. Independent adversary checker drafting
+  (sol xhigh, blocklists the three 721 primaries).
+next_action: >
+  On checker completion: supervisor review + rerun; fill note checker
+  section + verdict; refresh runner caches via
+  runner_cache.execute_and_write_cache for the four runners; run receipt
+  builder; vocab lint; commit; push; open PR block01; then refresh
+  OPPORTUNITY_QUEUE and continue the campaign.
+stop_condition: runtime exhaustion ~2026-07-28T09:37 local, or global queue exhaustion per skill

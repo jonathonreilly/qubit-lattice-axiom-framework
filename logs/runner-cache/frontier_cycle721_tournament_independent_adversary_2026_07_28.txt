@@ -1,0 +1,318 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle721_tournament_independent_adversary_2026_07_28.py
+runner_sha256: 0e0ae439a38248ab01808768c692a396a28440b1400f44274864bd38b6e49a25
+input_fingerprint_sha256: 5323e1963fb049f2ac069474281e53aa3bac5d0c9e1d3e38455a8e2cb39bfed5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 6.36
+status: ok
+----- stdout -----
+PASS exchange_port_certificate
+PASS dilation_certificate
+PASS atlas_correction_certificate
+PASS seam_class_certificate
+PASS epoch_liveness_certificate
+PASS fixture_certificate
+{
+  "audit": "unset",
+  "authority": "none",
+  "blocked_primary_imports_present": [],
+  "certificates": {
+    "atlas_correction": {
+      "atlas_entries": 100,
+      "graph_rank": 100,
+      "graph_rows": 100,
+      "graph_width": 120,
+      "maximum_private_dual_support_cells": 1,
+      "one_cell_support_failures": 0,
+      "one_hot_duality_failures": 0,
+      "rows_without_one_cell_solution": 0,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "solve_contradictions": 0
+    },
+    "dilation": {
+      "compiled_commutator_failures": 0,
+      "compiled_rank": 100,
+      "dilation_X_invariance_failures": 0,
+      "dilation_Z_character_failures": 0,
+      "graph_rank": 100,
+      "maximum_compiled_support_cells": 2,
+      "maximum_compiled_support_diameter": 1,
+      "per_row_support_census": [
+        {
+          "rows": 88,
+          "support_cells": 1,
+          "support_diameter": 0
+        },
+        {
+          "rows": 12,
+          "support_cells": 2,
+          "support_diameter": 1
+        }
+      ],
+      "physical_restriction_tag_rebuild_failures": 0,
+      "rows": 100,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "support_gate_failures": 0
+    },
+    "epoch_liveness": {
+      "A_B_C_route_failures": {
+        "forward": 0,
+        "inverse": 0
+      },
+      "axis_order": [
+        2,
+        1,
+        0
+      ],
+      "correction_layer_order_failures": 0,
+      "correction_layers": 10,
+      "coupling_graph_tag_order_failures": 0,
+      "coupling_physical_restriction_failures": 0,
+      "coupling_rows": 100,
+      "dropped_handoff_control": {
+        "deleted_edge": [
+          "B:coupling:0",
+          "C:correction:0",
+          616
+        ],
+        "named_missing_handoff_detected": true,
+        "violation_count": 1
+      },
+      "duplicated_owner_control": {
+        "collision_count": 3,
+        "duplicated_word": "B:coupling:0",
+        "named_collision_detected": true,
+        "slot": 201
+      },
+      "lawful_walk": {
+        "collision_count": 0,
+        "handoffs_consumed": 35842,
+        "handoffs_declared": 35842,
+        "ownership_or_handoff_violation_count": 0,
+        "register_touches": 36666,
+        "registers_seen": 824,
+        "slots_walked": 17705,
+        "violations": [],
+        "words_walked": 17705
+      },
+      "namespace": {
+        "Bell_ancillae": [
+          616,
+          716
+        ],
+        "G_routed_only_sites": [
+          144,
+          616
+        ],
+        "code": [
+          0,
+          72
+        ],
+        "companion_encoded_bank": [
+          72,
+          144
+        ],
+        "pump_syndromes": [
+          716,
+          816
+        ],
+        "route_rails": [
+          816,
+          824
+        ],
+        "total_registers": 824
+      },
+      "pump_fill_rows": 5,
+      "pump_onsite_rows": 88,
+      "pump_rows": 100,
+      "pump_tree_rows": 7,
+      "recurrent_logical_update_factors": 280,
+      "recurrent_non_NN_failures": 0,
+      "recurrent_placement_collisions": 0,
+      "recurrent_route_return_failures": 0,
+      "recurrent_routed_primitives": 17304,
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "stage_order_failures": 0
+    },
+    "exchange_port": {
+      "CNOT_primitives": 18,
+      "F1_docstring_range": [
+        72,
+        144
+      ],
+      "F2_derived_six_qubit_range": [
+        72,
+        78
+      ],
+      "all_affected_dictionary_exchange_failures": 0,
+      "cell_parity_image_failures": false,
+      "convention_evidence_pass": true,
+      "dense_integer_Pauli_selftest": {
+        "CNOT_instances": 6,
+        "CZ_instances": 3,
+        "H_instances": 3,
+        "comparisons": 8208,
+        "controlled_Pauli_instances": 45,
+        "gate_instances": 57,
+        "maximum_dense_residual": 2.220446049250313e-16,
+        "mismatches": 0,
+        "signed_weight_1_or_2_rows": 144
+      },
+      "forward_dictionary_exchange_failures": 0,
+      "joint_parity_invariance_failures": false,
+      "odd_bank_detection_failures": 0,
+      "odd_image_detection_failures": 0,
+      "port_dictionary_rows": 36,
+      "q": 72,
+      "reverse_dictionary_exchange_failures": 0,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "six_SWAP_blocks": 6,
+      "support_cells": 1,
+      "support_diameter": 0,
+      "unaffected_dictionary_invariance_failures": 0
+    },
+    "fixture": {
+      "EB_module_present_after_dense_rebuild": false,
+      "EB_module_present_before_dense_rebuild": false,
+      "cycle230_residuals": {
+        "FSWAP_matrix_residual": 0.0,
+        "coin_matrix_residual": 1.952777839357751e-16,
+        "internal_depth_two_stream_residual": 0.0,
+        "mass_residual": 0.0,
+        "onsite_64_state_contact_residual": 2.149937642474629e-15
+      },
+      "docstring_fixed_sector_inventory_evidence": true,
+      "mass_contact_residuals": {
+        "contact_double_occupation_phase_residual": 0.0,
+        "contact_vacuum_and_one_particle_residual": 0.0,
+        "one_particle_mass_residual": 5.551115123125783e-17
+      },
+      "maximum_inherited_residual": 2.149937642474629e-15,
+      "two_mode_fixed_sector_Kraus": {
+        "Bell_basis_orthonormality_residual": 4.440892098500626e-16,
+        "construction": "four Kraus maps derived by contracting an input/resource Bell basis against a dense Bell pair, corrected by the independently selected logical Pauli, then embedded in each two-mode parity sector",
+        "corrected_Kraus_completeness_residual": 6.280369834735101e-16,
+        "corrected_branch_identity_residual": 1.1102230246251565e-16,
+        "fixed_parity_sector_dimension": 2,
+        "maximum_residual": 6.280369834735101e-16,
+        "outcomes_per_sector": 4,
+        "physical_modes": 2,
+        "sectors": {
+          "even": {
+            "Kraus_operators": 4,
+            "completeness_residual": 6.280369834735101e-16,
+            "sector_dimension": 2,
+            "sector_leakage_residual": 0.0
+          },
+          "odd": {
+            "Kraus_operators": 4,
+            "completeness_residual": 6.280369834735101e-16,
+            "sector_dimension": 2,
+            "sector_leakage_residual": 0.0
+          }
+        },
+        "uncorrected_Kraus_completeness_residual": 6.280369834735101e-16
+      }
+    },
+    "seam_class": {
+      "contexts": 192,
+      "double_class_failures": 0,
+      "first_failure": null,
+      "forward_class_count": 1152,
+      "missing_edge_failures": 0,
+      "proper_cubic_frames": 24,
+      "reversed_class_count": 1152,
+      "reversed_surface": "fixture.physical_terms after explicit endpoint/mode reordering",
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "translation_parities": 8,
+      "transport_surface": "Q.affine_cells plus Q.physical_images",
+      "transported_quadruples": 2304,
+      "zero_class_failures": 0
+    }
+  },
+  "checks": [
+    {
+      "label": "exchange_port_certificate",
+      "pass": true
+    },
+    {
+      "label": "dilation_certificate",
+      "pass": true
+    },
+    {
+      "label": "atlas_correction_certificate",
+      "pass": true
+    },
+    {
+      "label": "seam_class_certificate",
+      "pass": true
+    },
+    {
+      "label": "epoch_liveness_certificate",
+      "pass": true
+    },
+    {
+      "label": "fixture_certificate",
+      "pass": true
+    }
+  ],
+  "declared_conventions": {
+    "F1_declares_H_CP_H": true,
+    "F1_declares_bank_q_2q": true,
+    "F1_declares_code_0_q": true,
+    "F1_declares_fixed_X_and_character_Z": true,
+    "F2_declares_colocation": true,
+    "F2_declares_one_six_mode_live_bank": true,
+    "F3_declares_literal_slot_walk": true,
+    "F3_declares_stage_components": true,
+    "derivation": "F1 states its q-wide mirror range literally.  F2 declares one six-mode bank, and the code register ends at q, so its separate bank occupies the next six registers [q,q+6).",
+    "derived_F1_range_formula": "[q,2q)",
+    "derived_F2_range_formula": "[q,q+6)",
+    "docstring_sha256": {
+      "frontier_cycle721_car_bell_input_m2_compiler_2026_07_28": "1ce48f171c3f75a88dbcc867f96c91a31540326babe61b3a285352f04558afcb",
+      "frontier_cycle721_collision_free_epoch_composition_2026_07_28": "eaebb011e258f4676315c66c9b82edb81da5a2c634d9feb1d60269b96dd66e89",
+      "frontier_cycle721_encoded_input_clifford_port_2026_07_28": "a695906be935baed77d5a86fedf445de137f1c58e6138db24270494f82f7a4c7"
+    }
+  },
+  "report_sha256": "c4d1b32d12358e287e81fdc0436f584b96ed60b51fddce651d6597222a302be6",
+  "runtime_seconds": 6.248188417004712,
+  "status": "PASS",
+  "top_level_blocklist": [
+    "frontier_cycle721_car_bell_input_m2_compiler_2026_07_28",
+    "frontier_cycle721_collision_free_epoch_composition_2026_07_28",
+    "frontier_cycle721_encoded_input_clifford_port_2026_07_28"
+  ],
+  "wording_corrections": [
+    "The epoch runner's description of its alternate port as the F2 leg needs a namespace qualifier: standalone F2 declares one six-qubit bank [q,q+6), whereas the epoch embeds a port-indexed six-qubit sub-block inside the q-wide F1 bank [q,2q).  These register conventions coincide only for port index zero."
+  ]
+}
+CYCLE721_TOURNAMENT_INDEPENDENT_ADVERSARY_PASS
+
+----- stderr -----
+

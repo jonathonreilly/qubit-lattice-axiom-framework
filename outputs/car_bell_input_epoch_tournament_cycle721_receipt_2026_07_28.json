@@ -1,0 +1,118 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle721_car_bell_input_m2_compiler_2026_07_28.txt": "41f3665f0da45196d6256bd3e7a51dad31d6d0fe4c5f34c83c329b9f5126bac5",
+      "frontier_cycle721_collision_free_epoch_composition_2026_07_28.txt": "c12dc7287168e74a27dc8d3217ad666f6378ba514805a617079543bf26a0ca62",
+      "frontier_cycle721_encoded_input_clifford_port_2026_07_28.txt": "29b364bc8217cd2d8524e4e73a44ad41f820ded60513e947447ce55f34bea323",
+      "frontier_cycle721_tournament_independent_adversary_2026_07_28.txt": "d39b699a2fec85698fa98a9c4a5518ad5e3f27837b2d5672ef145573568093d2"
+    },
+    "note": {
+      "path": "docs/CAR_BELL_INPUT_PHYSICAL_M2_COMPILER_CYCLE721_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "5f4f389c3f16c0ca7adfbae43d2aabd04880e638c8de5284e07f4b80170e67be"
+    },
+    "runners": {
+      "frontier_cycle721_car_bell_input_m2_compiler_2026_07_28.py": "434b643dfa4265b38aed5d6da6aa818e56ad9b4e34e7467489f6dace26ab2252",
+      "frontier_cycle721_collision_free_epoch_composition_2026_07_28.py": "046d013dbaef721ceaddf02ba81b3852967745bf2e5aa597fc19e2ee69653166",
+      "frontier_cycle721_encoded_input_clifford_port_2026_07_28.py": "980c74c1b623c13061f554c29f5569c5cccbc67072cf84e33f4a3432e4204cde",
+      "frontier_cycle721_tournament_independent_adversary_2026_07_28.py": "0e0ae439a38248ab01808768c692a396a28440b1400f44274864bd38b6e49a25"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "collision_free_joint_epoch_composed": true,
+    "encoded_input_clifford_v_s_restriction_compiled": false,
+    "even_car_input_bell_measurement_physical_M2_compiled": true,
+    "fixed_supplies": "parity/center sector, mixed gauge reference, uniform coframe sector, finite boundary/root/router, clean preparation and input banks, one-time epoch, fixed local schedules, Cycle219/Cycle230 parameters, companion-encoded input bank and declared-port chart conventions",
+    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
+    "not_derived": "autonomous sector/genesis/enforcement, boundary-free or periodic recurrence, renewal/multi-source composition, V_s-restriction input compiler, time/rate, source/gravity law, Record, Born/history, or prediction bridge",
+    "positive_scope": "literal physical-M2 input-Bell measurement words meeting the two-cell/diameter-one gate, a one-cell reversible even-exchange input port with port-local seam coupling, and a collision-free four-stage epoch composition with verified register-liveness on finite open boxes"
+  },
+  "checks": {
+    "f1_named_checks_passed": 10,
+    "f2_named_checks_passed": 22,
+    "f3_named_checks_passed": 6,
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 721,
+  "date": "2026-07-28",
+  "result": {
+    "boxes_f1": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ],
+      [
+        3,
+        2,
+        2
+      ],
+      [
+        5,
+        3,
+        2
+      ],
+      [
+        4,
+        4,
+        4
+      ],
+      [
+        5,
+        5,
+        3
+      ]
+    ],
+    "correction_layers_by_box": [
+      6,
+      10,
+      11,
+      11,
+      11,
+      11
+    ],
+    "edge_orientation_classes_forward_reversed": [
+      3072,
+      3072
+    ],
+    "epoch_covariance_contexts": 192,
+    "epoch_variants": [
+      "compiled-bell-primary",
+      "exchange-port-alternate"
+    ],
+    "max_compiled_word_support_cells": 2,
+    "max_compiled_word_support_diameter": 1,
+    "max_private_dual_support_cells": 1,
+    "measurement_layer_law": "3 + maximum cell degree",
+    "measurement_layers_by_box": [
+      3,
+      6,
+      7,
+      8,
+      9,
+      9
+    ],
+    "port_word_primitives": 18,
+    "rows_by_box": [
+      11,
+      100,
+      152,
+      389,
+      848,
+      995
+    ],
+    "seam_coupling_support_cells": 1,
+    "seam_coupling_support_diameter": 0,
+    "transport_contexts": 384
+  },
+  "status": "CYCLE721_INPUT_COMPILER_PORT_AND_EPOCH_TOURNAMENT_PASS"
+}

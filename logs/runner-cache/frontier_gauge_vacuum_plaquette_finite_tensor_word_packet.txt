@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py
-runner_sha256: 326a7c582379e63bb29ee222538f5e77fe7a63b9ec4dd479fc2425b0d3b14bea
+runner_sha256: 9ee93f7e5fe74cf582faeb0b28ae5f3131d87b78825289a6189eaa744f854eff
+input_fingerprint_sha256: 6b0d74822cbf0dc27cb8c8009303d5e44c3c2d1a638324eff4e66eb4efd1c5e7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py

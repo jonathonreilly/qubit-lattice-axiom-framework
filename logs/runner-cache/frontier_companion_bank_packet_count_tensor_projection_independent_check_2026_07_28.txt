@@ -1,0 +1,270 @@
+===== runner cache v1 =====
+runner: scripts/frontier_companion_bank_packet_count_tensor_projection_independent_check_2026_07_28.py
+runner_sha256: a6c6ea16efa95cc7f7ea6a891efa1a60f046828b4b300bda7a5ba9fc93f928a2
+input_fingerprint_sha256: 340c6de11804f4f7ede42045212b3f58ef065e3af32fc4928ab3a1a2bb84850e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 5.92
+status: ok
+----- stdout -----
+PASS the checker blocks the primary module and allows only the two declared science imports :: {"primary_imported": false, "primary_in_sys_modules": false, "unexpected_science_imports": []}
+PASS the independently imported landed dependencies equal current HEAD bytes :: {"scripts/frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py": "b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0", "scripts/signed_gravity_oriented_tensor_source_lift.py": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31"}
+PASS an independent slot walk reconstructs both clean 24-row declaration surfaces :: {"alternate_port": {"reads": {"actuality": 24, "admissibility": 24, "binder": 24, "certificate": 24, "law_domain": 24}, "stages": {"A": 225, "B": 18, "C": 0, "D": 17304, "E": 24}}, "primary": {"reads": {"actuality": 24, "admissibility": 24, "binder": 24, "certificate": 24, "law_domain": 24}, "stages": {"A": 225, "B": 9, "C": 112, "D": 17304, "E": 24}}}
+PASS both parsed projection tables assign each tensor coordinate exactly once :: {"fixture_rows": 10, "frozen_stage_vector": [225, 9, 112, 17304, 24, 225, 18, 0, 17304, 24], "stage_rows": 10}
+PASS raw reconstruction gives the exact homogeneous fixture vector and nullspace residual :: {"residual_norm": 2.4420869033412487e-14, "scale": 24}
+PASS raw reconstruction gives the frozen nonproportional stage vector outside the constraint nullspace :: {"constraint_residual_norm": 19195.11316756038, "least_squares_scale": -59.19786094967317, "nonproportional_residual": 24473.660007974104, "vector": [225.0, 9.0, 112.0, 17304.0, 24.0, 225.0, 18.0, 0.0, 17304.0, 24.0]}
+PASS the independent altered-coordinate control changes the raw residual :: {"altered_residual_norm": 542.5560657566525, "original_residual_norm": 2.4420869033412487e-14}
+{
+  "boundary": "Finite algebra under supplied projections and the generic S1 matrix only; no register-state, physical source, source law, Ward identity, composite channel, or no-go claim is derived.",
+  "checks": [
+    {
+      "detail": {
+        "primary_imported": false,
+        "primary_in_sys_modules": false,
+        "unexpected_science_imports": []
+      },
+      "label": "the checker blocks the primary module and allows only the two declared science imports",
+      "pass": true
+    },
+    {
+      "detail": {
+        "scripts/frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py": "b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0",
+        "scripts/signed_gravity_oriented_tensor_source_lift.py": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31"
+      },
+      "label": "the independently imported landed dependencies equal current HEAD bytes",
+      "pass": true
+    },
+    {
+      "detail": {
+        "alternate_port": {
+          "reads": {
+            "actuality": 24,
+            "admissibility": 24,
+            "binder": 24,
+            "certificate": 24,
+            "law_domain": 24
+          },
+          "stages": {
+            "A": 225,
+            "B": 18,
+            "C": 0,
+            "D": 17304,
+            "E": 24
+          }
+        },
+        "primary": {
+          "reads": {
+            "actuality": 24,
+            "admissibility": 24,
+            "binder": 24,
+            "certificate": 24,
+            "law_domain": 24
+          },
+          "stages": {
+            "A": 225,
+            "B": 9,
+            "C": 112,
+            "D": 17304,
+            "E": 24
+          }
+        }
+      },
+      "label": "an independent slot walk reconstructs both clean 24-row declaration surfaces",
+      "pass": true
+    },
+    {
+      "detail": {
+        "fixture_rows": 10,
+        "frozen_stage_vector": [
+          225,
+          9,
+          112,
+          17304,
+          24,
+          225,
+          18,
+          0,
+          17304,
+          24
+        ],
+        "stage_rows": 10
+      },
+      "label": "both parsed projection tables assign each tensor coordinate exactly once",
+      "pass": true
+    },
+    {
+      "detail": {
+        "residual_norm": 2.4420869033412487e-14,
+        "scale": 24
+      },
+      "label": "raw reconstruction gives the exact homogeneous fixture vector and nullspace residual",
+      "pass": true
+    },
+    {
+      "detail": {
+        "constraint_residual_norm": 19195.11316756038,
+        "least_squares_scale": -59.19786094967317,
+        "nonproportional_residual": 24473.660007974104,
+        "vector": [
+          225.0,
+          9.0,
+          112.0,
+          17304.0,
+          24.0,
+          225.0,
+          18.0,
+          0.0,
+          17304.0,
+          24.0
+        ]
+      },
+      "label": "raw reconstruction gives the frozen nonproportional stage vector outside the constraint nullspace",
+      "pass": true
+    },
+    {
+      "detail": {
+        "altered_residual_norm": 542.5560657566525,
+        "original_residual_norm": 2.4420869033412487e-14
+      },
+      "label": "the independent altered-coordinate control changes the raw residual",
+      "pass": true
+    }
+  ],
+  "dependency_byte_pins": {
+    "pass": true,
+    "scripts/frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py": {
+      "HEAD_sha256": "b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0",
+      "observed_sha256": "b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0",
+      "pass": true
+    },
+    "scripts/signed_gravity_oriented_tensor_source_lift.py": {
+      "HEAD_sha256": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31",
+      "observed_sha256": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31",
+      "pass": true
+    }
+  },
+  "independent_counts": {
+    "alternate_port": {
+      "collision_count": 0,
+      "declared_packet_rows": 24,
+      "declared_read_counts": {
+        "actuality": 24,
+        "admissibility": 24,
+        "binder": 24,
+        "certificate": 24,
+        "law_domain": 24
+      },
+      "lawful": true,
+      "source_boundaries": {
+        "actuality": {
+          "liveness_witness_valid": true,
+          "static_predicate_value": 1
+        },
+        "admissibility": {
+          "liveness_witness_valid": true,
+          "static_predicate_value": 1
+        },
+        "binder": {
+          "liveness_witness_valid": true,
+          "static_predicate_value": 1
+        },
+        "certificate": {
+          "liveness_witness_valid": true,
+          "static_predicate_value": 1
+        },
+        "law_domain": {
+          "liveness_witness_valid": true,
+          "static_predicate_value": 1
+        }
+      },
+      "sources_clean": true,
+      "stage_slot_counts": {
+        "A": 225,
+        "B": 18,
+        "C": 0,
+        "D": 17304,
+        "E": 24
+      },
+      "violation_count": 0
+    },
+    "primary": {
+      "collision_count": 0,
+      "declared_packet_rows": 24,
+      "declared_read_counts": {
+        "actuality": 24,
+        "admissibility": 24,
+        "binder": 24,
+        "certificate": 24,
+        "law_domain": 24
+      },
+      "lawful": true,
+      "source_boundaries": {
+        "actuality": {
+          "liveness_witness_valid": true,
+          "static_predicate_value": 1
+        },
+        "admissibility": {
+          "liveness_witness_valid": true,
+          "static_predicate_value": 1
+        },
+        "binder": {
+          "liveness_witness_valid": true,
+          "static_predicate_value": 1
+        },
+        "certificate": {
+          "liveness_witness_valid": true,
+          "static_predicate_value": 1
+        },
+        "law_domain": {
+          "liveness_witness_valid": true,
+          "static_predicate_value": 1
+        }
+      },
+      "sources_clean": true,
+      "stage_slot_counts": {
+        "A": 225,
+        "B": 9,
+        "C": 112,
+        "D": 17304,
+        "E": 24
+      },
+      "violation_count": 0
+    }
+  },
+  "primary_contract_sha256": "71aa06d2b991e1d5cb9aeaedcc57bfd636f668acc3b11f6f4e312325fcf26847",
+  "raw_reconstruction": {
+    "fixture_constraint_residual_norm": 2.4420869033412487e-14,
+    "fixture_vector": [
+      22.94603275562001,
+      5.004747709738101,
+      -2.7260395264152715,
+      -15.459522305985885,
+      19.302588290385657,
+      -12.946888676178023,
+      -15.774281229146602,
+      -11.262575850979188,
+      15.059939956172183,
+      -7.494110980836346
+    ],
+    "stage_constraint_residual_norm": 19195.11316756038,
+    "stage_nonproportional_residual_norm": 24473.660007974104,
+    "stage_vector": [
+      225.0,
+      9.0,
+      112.0,
+      17304.0,
+      24.0,
+      225.0,
+      18.0,
+      0.0,
+      17304.0,
+      24.0
+    ]
+  },
+  "runtime_seconds": 5.332841749986983,
+  "status": "PASS"
+}
+FINAL_TAG: COMPANION_BANK_PACKET_COUNT_TENSOR_PROJECTION_INDEPENDENT_PASS
+
+----- stderr -----
+

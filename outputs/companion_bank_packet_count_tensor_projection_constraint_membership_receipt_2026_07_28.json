@@ -1,0 +1,62 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_companion_bank_packet_count_tensor_projection_constraint_membership_2026_07_28.txt": "3c714e77606c44f3d5c0dc657f5637552511cf4498cdaec54a28244376abcf5a",
+      "frontier_companion_bank_packet_count_tensor_projection_independent_check_2026_07_28.txt": "6dbc3d65a002513f01dbf0ba6fdf4e3577ed89d72341c2af3f56ed8d0a6fda2a"
+    },
+    "note": {
+      "path": "docs/COMPANION_BANK_PACKET_COUNT_TENSOR_PROJECTION_CONSTRAINT_MEMBERSHIP_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "88e9c25ba85b0cfdf402f1ff3c03e9a6ec3fa5b19e4e44da59acf1262a51bb4d"
+    },
+    "runners": {
+      "frontier_companion_bank_packet_count_tensor_projection_constraint_membership_2026_07_28.py": "71aa06d2b991e1d5cb9aeaedcc57bfd636f668acc3b11f6f4e312325fcf26847",
+      "frontier_companion_bank_packet_count_tensor_projection_independent_check_2026_07_28.py": "a6c6ea16efa95cc7f7ea6a891efa1a60f046828b4b300bda7a5ba9fc93f928a2"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "composite_channel_verified": false,
+    "constraint_dependency_audit_status": "unaudited",
+    "fixed_supplies": "the landed packet schedule, two explicit count-to-coordinate assignment tables, the deterministic S1 fixture and its generic 4x10 matrix, and tolerance 1e-9",
+    "joint_order_packet_feed_verified": false,
+    "no_go_claimed": false,
+    "not_derived": "register-state values; a reversible encoder; a physical tensor source, source law, Ward identity, gravity identification, or Born content; selection or classification of packet projections",
+    "physical_source_character_derived": false,
+    "positive_scope": "a finite two-vector constraint-membership comparison under two supplied projections",
+    "register_state_readout_verified": false,
+    "source_law_selected": false,
+    "ward_identity_derived": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_failed": 0,
+    "primary_named_checks_passed": 10
+  },
+  "claim_type": "bounded_theorem",
+  "date": "2026-07-28",
+  "result": {
+    "altered_coordinate_residual_norm": 542.5560657566525,
+    "declared_stage_e_read_count_per_role_variant": 24,
+    "fixture_scaled_exact_multiple": 24,
+    "fixture_scaled_residual_norm": 2.4420869033412487e-14,
+    "nature_retention_disposition": "bounded_support",
+    "stage_slot_constraint_member": false,
+    "stage_slot_residual_norm": 19195.11316756038,
+    "stage_slot_vector": [
+      225,
+      9,
+      112,
+      17304,
+      24,
+      225,
+      18,
+      0,
+      17304,
+      24
+    ]
+  },
+  "status": "COMPANION_BANK_PACKET_COUNT_TENSOR_PROJECTION_FINITE_COMPARISON_PASS"
+}

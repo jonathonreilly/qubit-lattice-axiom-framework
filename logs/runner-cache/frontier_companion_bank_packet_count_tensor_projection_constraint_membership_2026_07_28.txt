@@ -1,0 +1,629 @@
+===== runner cache v1 =====
+runner: scripts/frontier_companion_bank_packet_count_tensor_projection_constraint_membership_2026_07_28.py
+runner_sha256: 71aa06d2b991e1d5cb9aeaedcc57bfd636f668acc3b11f6f4e312325fcf26847
+input_fingerprint_sha256: 502dc61ddeafbe456ccf1b09134244ff29656bef705e6a4365e0c32501faa2f2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 6.29
+status: ok
+----- stdout -----
+PASS the two imported dependency modules equal their current HEAD bytes :: {"scripts/frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py": "b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0", "scripts/signed_gravity_oriented_tensor_source_lift.py": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31"}
+PASS both held parent extensions preserve static-predicate and liveness boundaries :: {"alternate_port": {"lawful": true, "sources_clean": true, "walk": {"collision_count": 0, "handoffs_consumed": 304, "handoffs_declared": 304, "slots_walked": 17571, "violation_count": 0}}, "primary": {"lawful": true, "sources_clean": true, "walk": {"collision_count": 0, "handoffs_consumed": 624, "handoffs_declared": 624, "slots_walked": 17674, "violation_count": 0}}}
+PASS each supplied packet role has exactly 24 declared Stage-E reads in each variant :: {"alternate_port": {"actuality": 24, "admissibility": 24, "binder": 24, "certificate": 24, "law_domain": 24}, "primary": {"actuality": 24, "admissibility": 24, "binder": 24, "certificate": 24, "law_domain": 24}}
+PASS the first supplied projection is exactly 24 times the S1 canonical fixture :: {"scale": 24, "vector_sha256": "7a04a84d1b3c1005bcfae8b5d2cbe801051b706e39023a309c4945b8f8bbf90b"}
+PASS the fixture-scaled vector is numerically in the supplied S1 constraint nullspace :: {"constraint_sha256": "8b04d8301c5bb7710908e1f5f37d2886dc257719b129cd7d5f16faaf21f5d5e9", "constraint_shape": [4, 10], "in_numeric_nullspace": true, "residual_norms": {"+1": 2.4420869033412487e-14, "-1": 2.4420869033412487e-14, "0": 0.0}, "tolerance": 1e-09}
+PASS the second supplied projection reproduces the ten frozen extended-schedule slot counts :: {"assignment_rows": 10, "vector": [225.0, 9.0, 112.0, 17304.0, 24.0, 225.0, 18.0, 0.0, 17304.0, 24.0]}
+PASS the stage-slot vector is not a scalar multiple of the S1 canonical fixture :: {"coordinate_ratio_max": 27576.20556314334, "coordinate_ratio_min": -26863.443241011304, "coordinate_ratio_spread": 54439.64880415464, "least_squares_scale": -59.19786094967317, "numerically_nonproportional": true, "relative_residual": 0.9999898585643564, "residual_norm": 24473.660007974104}
+PASS the stage-slot vector is outside the supplied S1 constraint nullspace at the frozen tolerance :: {"constraint_sha256": "8b04d8301c5bb7710908e1f5f37d2886dc257719b129cd7d5f16faaf21f5d5e9", "constraint_shape": [4, 10], "in_numeric_nullspace": false, "residual_norms": {"+1": 19195.11316756038, "-1": 19195.11316756038, "0": 0.0}, "tolerance": 1e-09}
+PASS orientation sign changes preserve each residual norm and orientation zero annihilates each vector :: {"fixture": {"+1": 2.4420869033412487e-14, "-1": 2.4420869033412487e-14, "0": 0.0}, "stage_slot": {"+1": 19195.11316756038, "-1": 19195.11316756038, "0": 0.0}}
+PASS an altered fixture-scaled coordinate is detected by the raw constraint residual :: {"alteration": "replace coordinate 0 of the fixture-scaled vector with the primary Stage-A slot count", "altered_residual_norm": 542.5560657566525, "altered_vector_certificate": {"dtype": "<f8", "sha256": "1372683ed193ab2abdc60586c56b5e3eff54ca32144d9f4b5e59c2361fa1a693", "shape": [10]}, "detected": true, "original_residual_norm": 2.4420869033412487e-14}
+{
+  "audit": "unset",
+  "authority": "none",
+  "boundary_flags": {
+    "composite_channel_verified": false,
+    "joint_order_packet_feed_verified": false,
+    "no_go_claimed": false,
+    "physical_source_character_derived": false,
+    "register_state_readout_verified": false,
+    "reversible_packet_encoder_verified": false,
+    "source_law_selected": false,
+    "ward_identity_derived": false
+  },
+  "checks": [
+    {
+      "detail": {
+        "scripts/frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py": "b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0",
+        "scripts/signed_gravity_oriented_tensor_source_lift.py": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31"
+      },
+      "label": "the two imported dependency modules equal their current HEAD bytes",
+      "pass": true
+    },
+    {
+      "detail": {
+        "alternate_port": {
+          "lawful": true,
+          "sources_clean": true,
+          "walk": {
+            "collision_count": 0,
+            "handoffs_consumed": 304,
+            "handoffs_declared": 304,
+            "slots_walked": 17571,
+            "violation_count": 0
+          }
+        },
+        "primary": {
+          "lawful": true,
+          "sources_clean": true,
+          "walk": {
+            "collision_count": 0,
+            "handoffs_consumed": 624,
+            "handoffs_declared": 624,
+            "slots_walked": 17674,
+            "violation_count": 0
+          }
+        }
+      },
+      "label": "both held parent extensions preserve static-predicate and liveness boundaries",
+      "pass": true
+    },
+    {
+      "detail": {
+        "alternate_port": {
+          "actuality": 24,
+          "admissibility": 24,
+          "binder": 24,
+          "certificate": 24,
+          "law_domain": 24
+        },
+        "primary": {
+          "actuality": 24,
+          "admissibility": 24,
+          "binder": 24,
+          "certificate": 24,
+          "law_domain": 24
+        }
+      },
+      "label": "each supplied packet role has exactly 24 declared Stage-E reads in each variant",
+      "pass": true
+    },
+    {
+      "detail": {
+        "scale": 24,
+        "vector_sha256": "7a04a84d1b3c1005bcfae8b5d2cbe801051b706e39023a309c4945b8f8bbf90b"
+      },
+      "label": "the first supplied projection is exactly 24 times the S1 canonical fixture",
+      "pass": true
+    },
+    {
+      "detail": {
+        "constraint_sha256": "8b04d8301c5bb7710908e1f5f37d2886dc257719b129cd7d5f16faaf21f5d5e9",
+        "constraint_shape": [
+          4,
+          10
+        ],
+        "in_numeric_nullspace": true,
+        "residual_norms": {
+          "+1": 2.4420869033412487e-14,
+          "-1": 2.4420869033412487e-14,
+          "0": 0.0
+        },
+        "tolerance": 1e-09
+      },
+      "label": "the fixture-scaled vector is numerically in the supplied S1 constraint nullspace",
+      "pass": true
+    },
+    {
+      "detail": {
+        "assignment_rows": 10,
+        "vector": [
+          225.0,
+          9.0,
+          112.0,
+          17304.0,
+          24.0,
+          225.0,
+          18.0,
+          0.0,
+          17304.0,
+          24.0
+        ]
+      },
+      "label": "the second supplied projection reproduces the ten frozen extended-schedule slot counts",
+      "pass": true
+    },
+    {
+      "detail": {
+        "coordinate_ratio_max": 27576.20556314334,
+        "coordinate_ratio_min": -26863.443241011304,
+        "coordinate_ratio_spread": 54439.64880415464,
+        "least_squares_scale": -59.19786094967317,
+        "numerically_nonproportional": true,
+        "relative_residual": 0.9999898585643564,
+        "residual_norm": 24473.660007974104
+      },
+      "label": "the stage-slot vector is not a scalar multiple of the S1 canonical fixture",
+      "pass": true
+    },
+    {
+      "detail": {
+        "constraint_sha256": "8b04d8301c5bb7710908e1f5f37d2886dc257719b129cd7d5f16faaf21f5d5e9",
+        "constraint_shape": [
+          4,
+          10
+        ],
+        "in_numeric_nullspace": false,
+        "residual_norms": {
+          "+1": 19195.11316756038,
+          "-1": 19195.11316756038,
+          "0": 0.0
+        },
+        "tolerance": 1e-09
+      },
+      "label": "the stage-slot vector is outside the supplied S1 constraint nullspace at the frozen tolerance",
+      "pass": true
+    },
+    {
+      "detail": {
+        "fixture": {
+          "+1": 2.4420869033412487e-14,
+          "-1": 2.4420869033412487e-14,
+          "0": 0.0
+        },
+        "stage_slot": {
+          "+1": 19195.11316756038,
+          "-1": 19195.11316756038,
+          "0": 0.0
+        }
+      },
+      "label": "orientation sign changes preserve each residual norm and orientation zero annihilates each vector",
+      "pass": true
+    },
+    {
+      "detail": {
+        "alteration": "replace coordinate 0 of the fixture-scaled vector with the primary Stage-A slot count",
+        "altered_residual_norm": 542.5560657566525,
+        "altered_vector_certificate": {
+          "dtype": "<f8",
+          "sha256": "1372683ed193ab2abdc60586c56b5e3eff54ca32144d9f4b5e59c2361fa1a693",
+          "shape": [
+            10
+          ]
+        },
+        "detected": true,
+        "original_residual_norm": 2.4420869033412487e-14
+      },
+      "label": "an altered fixture-scaled coordinate is detected by the raw constraint residual",
+      "pass": true
+    }
+  ],
+  "claim_type": "bounded_theorem",
+  "constraint_origin": "The deterministic generic 4x10 matrix returned by S1.tensor_source_with_constraints(); it is imported as a supplied fixture and is not derived here from a Ward identity.",
+  "control": {
+    "alteration": "replace coordinate 0 of the fixture-scaled vector with the primary Stage-A slot count",
+    "altered_residual_norm": 542.5560657566525,
+    "altered_vector_certificate": {
+      "dtype": "<f8",
+      "sha256": "1372683ed193ab2abdc60586c56b5e3eff54ca32144d9f4b5e59c2361fa1a693",
+      "shape": [
+        10
+      ]
+    },
+    "detected": true,
+    "original_residual_norm": 2.4420869033412487e-14
+  },
+  "dependency_byte_pins": {
+    "pass": true,
+    "scripts/frontier_companion_bank_liveness_endpoint_interval_packet_projection_2026_07_28.py": {
+      "HEAD_sha256": "b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0",
+      "git_show_returncode": 0,
+      "observed_sha256": "b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0",
+      "pass": true
+    },
+    "scripts/signed_gravity_oriented_tensor_source_lift.py": {
+      "HEAD_sha256": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31",
+      "git_show_returncode": 0,
+      "observed_sha256": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31",
+      "pass": true
+    }
+  },
+  "derived": [
+    "literal Stage-E declared-read counts and extended-schedule slot counts",
+    "the two vectors under the two explicit coordinate assignments",
+    "raw finite residual norms against the supplied S1 matrix"
+  ],
+  "not_tested": [
+    "register-state readout or a reversible packet encoder",
+    "a composite channel or packet feed to JointOrder",
+    "a physical tensor source, source law, Ward identity, gravity identification, or Born content",
+    "selection or classification of physically admissible packet projections"
+  ],
+  "parent_packet_schedule_views": {
+    "alternate_port": {
+      "declared_packet_rows": 24,
+      "declared_stage_e_read_counts": {
+        "actuality": 24,
+        "admissibility": 24,
+        "binder": 24,
+        "certificate": 24,
+        "law_domain": 24
+      },
+      "extension_lawful": true,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "sources": {
+        "actuality": {
+          "liveness_witness_valid": true,
+          "register": 716,
+          "register_role": "pump_syndrome_0",
+          "static_predicate_value": 1,
+          "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+        },
+        "admissibility": {
+          "liveness_witness_valid": true,
+          "register": 717,
+          "register_role": "pump_syndrome_1",
+          "static_predicate_value": 1,
+          "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+        },
+        "binder": {
+          "liveness_witness_valid": true,
+          "register": 73,
+          "register_role": "declared_port_parity_1",
+          "static_predicate_value": 1,
+          "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+        },
+        "certificate": {
+          "liveness_witness_valid": true,
+          "register": 72,
+          "register_role": "declared_port_parity_0",
+          "static_predicate_value": 1,
+          "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+        },
+        "law_domain": {
+          "liveness_witness_valid": true,
+          "register": 718,
+          "register_role": "pump_syndrome_2",
+          "static_predicate_value": 1,
+          "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+        }
+      },
+      "sources_clean": true,
+      "stage_slot_counts": {
+        "A": 225,
+        "B": 18,
+        "C": 0,
+        "D": 17304,
+        "E": 24
+      },
+      "walk": {
+        "collision_count": 0,
+        "handoffs_consumed": 304,
+        "handoffs_declared": 304,
+        "slots_walked": 17571,
+        "violation_count": 0
+      }
+    },
+    "primary": {
+      "declared_packet_rows": 24,
+      "declared_stage_e_read_counts": {
+        "actuality": 24,
+        "admissibility": 24,
+        "binder": 24,
+        "certificate": 24,
+        "law_domain": 24
+      },
+      "extension_lawful": true,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "sources": {
+        "actuality": {
+          "liveness_witness_valid": true,
+          "register": 716,
+          "register_role": "pump_syndrome_0",
+          "static_predicate_value": 1,
+          "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+        },
+        "admissibility": {
+          "liveness_witness_valid": true,
+          "register": 717,
+          "register_role": "pump_syndrome_1",
+          "static_predicate_value": 1,
+          "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+        },
+        "binder": {
+          "liveness_witness_valid": true,
+          "register": 617,
+          "register_role": "Bell_measurement_ancilla_1",
+          "static_predicate_value": 1,
+          "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+        },
+        "certificate": {
+          "liveness_witness_valid": true,
+          "register": 616,
+          "register_role": "Bell_measurement_ancilla_0",
+          "static_predicate_value": 1,
+          "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+        },
+        "law_domain": {
+          "liveness_witness_valid": true,
+          "register": 718,
+          "register_role": "pump_syndrome_2",
+          "static_predicate_value": 1,
+          "value_semantics": "static algebraic certificate predicate; no register-state readout is evaluated"
+        }
+      },
+      "sources_clean": true,
+      "stage_slot_counts": {
+        "A": 225,
+        "B": 9,
+        "C": 112,
+        "D": 17304,
+        "E": 24
+      },
+      "walk": {
+        "collision_count": 0,
+        "handoffs_consumed": 624,
+        "handoffs_declared": 624,
+        "slots_walked": 17674,
+        "violation_count": 0
+      }
+    }
+  },
+  "projections": {
+    "fixture_scaled": {
+      "assignment_table": [
+        {
+          "canonical_fixture_coefficient": 0.9560846981508337,
+          "declared_read_count": 24,
+          "packet_field": "certificate",
+          "projected_coordinate": 22.94603275562001,
+          "slot": 0,
+          "variant": "primary"
+        },
+        {
+          "canonical_fixture_coefficient": 0.20853115457242088,
+          "declared_read_count": 24,
+          "packet_field": "binder",
+          "projected_coordinate": 5.004747709738101,
+          "slot": 1,
+          "variant": "primary"
+        },
+        {
+          "canonical_fixture_coefficient": -0.11358498026730297,
+          "declared_read_count": 24,
+          "packet_field": "actuality",
+          "projected_coordinate": -2.7260395264152715,
+          "slot": 2,
+          "variant": "primary"
+        },
+        {
+          "canonical_fixture_coefficient": -0.6441467627494118,
+          "declared_read_count": 24,
+          "packet_field": "admissibility",
+          "projected_coordinate": -15.459522305985885,
+          "slot": 3,
+          "variant": "primary"
+        },
+        {
+          "canonical_fixture_coefficient": 0.8042745120994024,
+          "declared_read_count": 24,
+          "packet_field": "law_domain",
+          "projected_coordinate": 19.302588290385657,
+          "slot": 4,
+          "variant": "primary"
+        },
+        {
+          "canonical_fixture_coefficient": -0.539453694840751,
+          "declared_read_count": 24,
+          "packet_field": "certificate",
+          "projected_coordinate": -12.946888676178023,
+          "slot": 5,
+          "variant": "alternate_port"
+        },
+        {
+          "canonical_fixture_coefficient": -0.6572617178811084,
+          "declared_read_count": 24,
+          "packet_field": "binder",
+          "projected_coordinate": -15.774281229146602,
+          "slot": 6,
+          "variant": "alternate_port"
+        },
+        {
+          "canonical_fixture_coefficient": -0.4692739937907995,
+          "declared_read_count": 24,
+          "packet_field": "actuality",
+          "projected_coordinate": -11.262575850979188,
+          "slot": 7,
+          "variant": "alternate_port"
+        },
+        {
+          "canonical_fixture_coefficient": 0.6274974981738409,
+          "declared_read_count": 24,
+          "packet_field": "admissibility",
+          "projected_coordinate": 15.059939956172183,
+          "slot": 8,
+          "variant": "alternate_port"
+        },
+        {
+          "canonical_fixture_coefficient": -0.31225462420151445,
+          "declared_read_count": 24,
+          "packet_field": "law_domain",
+          "projected_coordinate": -7.494110980836346,
+          "slot": 9,
+          "variant": "alternate_port"
+        }
+      ],
+      "constraint": {
+        "constraint_sha256": "8b04d8301c5bb7710908e1f5f37d2886dc257719b129cd7d5f16faaf21f5d5e9",
+        "constraint_shape": [
+          4,
+          10
+        ],
+        "in_numeric_nullspace": true,
+        "residual_norms": {
+          "+1": 2.4420869033412487e-14,
+          "-1": 2.4420869033412487e-14,
+          "0": 0.0
+        },
+        "tolerance": 1e-09
+      },
+      "convention": "Each declared Stage-E role-read count multiplies the matching coordinate of S1's canonical fixture.",
+      "exact_scalar_multiple": true,
+      "vector": [
+        22.94603275562001,
+        5.004747709738101,
+        -2.7260395264152715,
+        -15.459522305985885,
+        19.302588290385657,
+        -12.946888676178023,
+        -15.774281229146602,
+        -11.262575850979188,
+        15.059939956172183,
+        -7.494110980836346
+      ],
+      "vector_certificate": {
+        "dtype": "<f8",
+        "sha256": "7a04a84d1b3c1005bcfae8b5d2cbe801051b706e39023a309c4945b8f8bbf90b",
+        "shape": [
+          10
+        ]
+      }
+    },
+    "stage_slot_count": {
+      "assignment_table": [
+        {
+          "projected_coordinate": 225.0,
+          "slot": 0,
+          "slot_count": 225,
+          "stage": "A",
+          "variant": "primary"
+        },
+        {
+          "projected_coordinate": 9.0,
+          "slot": 1,
+          "slot_count": 9,
+          "stage": "B",
+          "variant": "primary"
+        },
+        {
+          "projected_coordinate": 112.0,
+          "slot": 2,
+          "slot_count": 112,
+          "stage": "C",
+          "variant": "primary"
+        },
+        {
+          "projected_coordinate": 17304.0,
+          "slot": 3,
+          "slot_count": 17304,
+          "stage": "D",
+          "variant": "primary"
+        },
+        {
+          "projected_coordinate": 24.0,
+          "slot": 4,
+          "slot_count": 24,
+          "stage": "E",
+          "variant": "primary"
+        },
+        {
+          "projected_coordinate": 225.0,
+          "slot": 5,
+          "slot_count": 225,
+          "stage": "A",
+          "variant": "alternate_port"
+        },
+        {
+          "projected_coordinate": 18.0,
+          "slot": 6,
+          "slot_count": 18,
+          "stage": "B",
+          "variant": "alternate_port"
+        },
+        {
+          "projected_coordinate": 0.0,
+          "slot": 7,
+          "slot_count": 0,
+          "stage": "C",
+          "variant": "alternate_port"
+        },
+        {
+          "projected_coordinate": 17304.0,
+          "slot": 8,
+          "slot_count": 17304,
+          "stage": "D",
+          "variant": "alternate_port"
+        },
+        {
+          "projected_coordinate": 24.0,
+          "slot": 9,
+          "slot_count": 24,
+          "stage": "E",
+          "variant": "alternate_port"
+        }
+      ],
+      "constraint": {
+        "constraint_sha256": "8b04d8301c5bb7710908e1f5f37d2886dc257719b129cd7d5f16faaf21f5d5e9",
+        "constraint_shape": [
+          4,
+          10
+        ],
+        "in_numeric_nullspace": false,
+        "residual_norms": {
+          "+1": 19195.11316756038,
+          "-1": 19195.11316756038,
+          "0": 0.0
+        },
+        "tolerance": 1e-09
+      },
+      "convention": "The ten primary/alternate Stage-A..E slot counts are assigned in listed order to the ten S1 coordinates.",
+      "nonproportionality": {
+        "coordinate_ratio_max": 27576.20556314334,
+        "coordinate_ratio_min": -26863.443241011304,
+        "coordinate_ratio_spread": 54439.64880415464,
+        "least_squares_scale": -59.19786094967317,
+        "numerically_nonproportional": true,
+        "relative_residual": 0.9999898585643564,
+        "residual_norm": 24473.660007974104
+      },
+      "vector": [
+        225.0,
+        9.0,
+        112.0,
+        17304.0,
+        24.0,
+        225.0,
+        18.0,
+        0.0,
+        17304.0,
+        24.0
+      ],
+      "vector_certificate": {
+        "dtype": "<f8",
+        "sha256": "8f14e58520a9281d0b2fc6f2d8be092765c73b0157083efd369ea98c36889d53",
+        "shape": [
+          10
+        ]
+      }
+    }
+  },
+  "retention_disposition": "bounded_support",
+  "runtime_seconds": 5.7616414169897325,
+  "status": "PASS",
+  "supplied": [
+    "the landed packet schedule and its static-predicate/liveness conventions",
+    "both count-to-coordinate assignment tables",
+    "the S1 deterministic fixture, generic constraint matrix, and numerical tolerance"
+  ]
+}
+FINAL_TAG: COMPANION_BANK_PACKET_COUNT_TENSOR_PROJECTION_FINITE_COMPARISON
+
+----- stderr -----
+

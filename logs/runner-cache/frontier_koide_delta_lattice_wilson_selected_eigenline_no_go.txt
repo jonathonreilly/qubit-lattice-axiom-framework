@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py
-runner_sha256: 267f07a68b7aad056021d9162bac59acc104ae2f13d90320be96dd2fa18cc2b3
+runner_sha256: 935c76738489320673fccdbdfd2831db0e1015d88d6f204c54b106f020d0e59a
 input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.71
 status: ok
 ----- stdout -----
 
@@ -93,6 +93,7 @@ VERDICT: the D,U-generated unital star algebra contains no rank-one selector on 
 KOIDE_DELTA_D_U_JOINT_ALGEBRA_RANK_ONE_SELECTOR_NO_GO=TRUE
 D_U_JOINT_ALGEBRA_CONTAINS_RANK_ONE_SELECTOR=FALSE
 D_U_JOINT_ALGEBRA_CLOSES_RANK_ONE_SELECTION=FALSE
+DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_CLOSES_DELTA=FALSE
 RESIDUAL_EIGENLINE=rank_two_zeta_zero_mode_sector_not_split_by_D_U_generated_algebra
 CLAIM_SCOPE=finite_periodic_L3_r1_unital_star_algebra_generated_by_D_and_U_only
 FULL_WILSON_CLIFFORD_SELECTOR_NO_GO_CLAIMED=FALSE

@@ -21,6 +21,27 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
+AUDIT_TIMEOUT_SEC = 210
+AUDIT_INPUT_PATHS = (
+    "docs/KOIDE_A1_RADIAN_BRIDGE_IRREDUCIBILITY_AUDIT_NOTE_2026-04-24.md",
+    "docs/KOIDE_DELTA_LATTICE_WILSON_SELECTED_EIGENLINE_NO_GO_NOTE_2026-04-24.md",
+    "docs/KOIDE_DELTA_MARKED_RELATIVE_COBORDISM_NO_GO_NOTE_2026-04-24.md",
+    "docs/KOIDE_DIMENSIONLESS_NOTE_2026-04-24.md",
+    "docs/KOIDE_Q_DELTA_READOUT_RETENTION_SPLIT_NO_GO_NOTE_2026-04-24.md",
+    "docs/KOIDE_Q_DELTA_RESIDUAL_COHOMOLOGY_OBSTRUCTION_NO_GO_NOTE_2026-04-24.md",
+    "docs/HIERARCHY_BOSONIC_BILINEAR_SELECTOR_NOTE.md",
+    "docs/OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md",
+    "docs/audit/data/ledger/ko/koide_dimensionless_note_2026-04-24.json",
+    "docs/audit/scripts/ledger_io.py",
+    "scripts/frontier_koide_a1_radian_bridge_irreducibility_audit.py",
+    "scripts/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py",
+    "scripts/frontier_koide_delta_marked_relative_cobordism_no_go.py",
+    "scripts/frontier_koide_dimensionless_objection_closure_review.py",
+    "scripts/frontier_koide_q_delta_readout_retention_split_no_go.py",
+    "scripts/frontier_koide_q_delta_residual_cohomology_obstruction_no_go.py",
+    "scripts/n5_resolution_certificate.py",
+)
+
 DOC_GLOBS = [
     "docs/KOIDE_Q_*NO_GO_NOTE_2026-04-24.md",
     "docs/KOIDE_DELTA_*NO_GO_NOTE_2026-04-24.md",
@@ -659,7 +680,7 @@ def main(argv: list[str] | None = None) -> int:
     print("=" * 88)
     print(f"PASSED: {PASS_COUNT}/{PASS_COUNT + FAIL_COUNT}")
     print()
-    print("KOIDE_HOSTILE_REVIEW_GUARD_PASSED=" + ("TRUE" if FAIL_COUNT == 0 else "FALSE"))
+    print("KOIDE_REVIEW_GUARD_PASSED=" + ("TRUE" if FAIL_COUNT == 0 else "FALSE"))
     print("HOSTILE_REVIEW_GUARD_CLOSES_Q=FALSE")
     print("HOSTILE_REVIEW_GUARD_CLOSES_DELTA=FALSE")
     print("RESIDUAL_SCALAR=not_applicable_review_guard")

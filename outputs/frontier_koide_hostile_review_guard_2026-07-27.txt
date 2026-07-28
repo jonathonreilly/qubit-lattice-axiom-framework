@@ -50,7 +50,7 @@ Summary
 ========================================================================================
 PASSED: 8/8
 
-KOIDE_HOSTILE_REVIEW_GUARD_PASSED=TRUE
+KOIDE_REVIEW_GUARD_PASSED=TRUE
 HOSTILE_REVIEW_GUARD_CLOSES_Q=FALSE
 HOSTILE_REVIEW_GUARD_CLOSES_DELTA=FALSE
 RESIDUAL_SCALAR=not_applicable_review_guard

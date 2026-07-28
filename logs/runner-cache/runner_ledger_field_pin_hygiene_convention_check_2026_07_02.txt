@@ -1,22 +1,26 @@
 ===== runner cache v1 =====
 runner: scripts/runner_ledger_field_pin_hygiene_convention_check_2026_07_02.py
-runner_sha256: 1128a6baa1853ef1969add9a93db8d3f54c8ad463984f30443a1ac6a8918524c
+runner_sha256: 561cf7a033442860b8b4ea53a1d6b450c70e3063ee5f2305a2dafe160cdad75f
+input_fingerprint_sha256: 73b23b8394bb81f6d6c6460c3b1fc0f096da562cd96f4b90293d05966aa7bf9b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.03
+elapsed_sec: 0.88
 status: ok
 ----- stdout -----
 runner ledger-field pin hygiene convention check (2026-07-02)
 [NOTE] PASS: note contains: **Type:** meta
 [NOTE] PASS: note contains: **Claim type:** meta
-[NOTE] PASS: note contains: does not
-[NOTE] PASS: note contains: Convention adoption is audit-decided
+[NOTE] PASS: note contains: metadata proposal only
+[NOTE] PASS: note contains: does not set or predict an audit outcome
+[NOTE] PASS: note contains: independent audit lane determines whether the convention is adopted
 [NOTE] PASS: note contains: (H1) No equality pins on audit-authored field content
 [NOTE] PASS: note contains: (H2) Status freshness checks use the retained-grade membership set
 [NOTE] PASS: note contains: (H3) Report-only ledger reads are unrestricted
 [NOTE] PASS: note contains: (H4) Ledger-census snapshots need a maintenance pattern
 [NOTE] PASS: note contains: Sets, promotes, or changes **no** row's effective status
-[NOTE] PASS: note contains: a question to the owner
+[NOTE] PASS: note contains: Neither a question to the owner nor landing this note adopts the convention
+[NOTE] PASS: note contains: cache fingerprint binds this note and every named C1/C2/EX source
+[NOTE] PASS: note contains: census count is deliberately contextual rather than load-bearing
 [C1] PASS: frontier_thales_right_angle_narrow.py  (pins)
 [C1] PASS: frontier_half_plane_chart_equivalence_narrow.py  (pins)
 [C1] PASS: frontier_ckm_magnitudes_structural_counts_narrow.py  (pins)
@@ -27,13 +31,24 @@ runner ledger-field pin hygiene convention check (2026-07-02)
 [C1] PASS: audit_companion_dm_neutrino_z3_circulant_nogo_exact.py  (pins)
 [C1] PASS: audit_companion_g_bare_forced_by_ward_rep_b_record_axiom_invariance_2026_06_04.py  (pins)
   C1 states: {'pins': 9}
-[C2] PASS: extensivity runner state + named in note  (exact-state pins, as named in 2026-07-02)
+[C2] PASS: extensivity runner state + named in note  (narrowed (report-only or retained-grade membership))
 [EX] PASS: lh_doublet companion uses the retained-grade membership set
 [EX] PASS: staggered substep-1 check is in a state the note records  (no ledger read (repaired 2026-07-16))
 [EX] PASS: dirac_weyl companion carries the realigned retained-grade set
-  census: 79 ledger-reading scripts with equality-pin patterns; 9 carry the load_bearing_step_class field pin (context, not pinned)
+[CTL] PASS: cache fingerprint covers the note and every named source exactly once
+[CTL] PASS: C1 reversed/single-quoted legacy pin is detected
+[CTL] PASS: C1 report-only narrowed state is accepted
+[CTL] PASS: C1 comment-only placeholder is rejected
+[CTL] PASS: C1 exact-inequality variant is rejected
+[CTL] PASS: C2 single-quoted legacy pair is detected
+[CTL] PASS: C2 report-only narrowed state is accepted
+[CTL] PASS: C2 retained-grade membership state is accepted
+[CTL] PASS: C2 unhandled placeholder is rejected
+[CTL] PASS: C2 other exact status comparison is rejected
+[CTL] PASS: C2 comment-only placeholder is rejected
+  census: 112 ledger-reading scripts with equality-pin patterns; 11 carry the load_bearing_step_class field pin (context, not pinned)
 [CEN] PASS: every named instance accounted for (in census, or narrowed on disk)
-TOTAL: PASS=24 FAIL=0
+TOTAL: PASS=38 FAIL=0
 
 ----- stderr -----
 

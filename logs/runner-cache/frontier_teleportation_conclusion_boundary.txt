@@ -1,31 +1,30 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_conclusion_boundary.py
-runner_sha256: a0857df34c49e49de47dc212a83f302e76e344a2bb71dca9d1b22356b5a170f0
+runner_sha256: a77d7ad749eabd56f32bec137ee43376004959253bf131d34e3658c116b34b00
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 TELEPORTATION CONCLUSION BOUNDARY
-Status: exact current-packet non-entailment; explicit nature-grade HOLD
-Claim boundary: ordinary quantum state teleportation only; no matter, mass, charge, energy, object, or faster-than-light transport is claimed
-Countermodel warning: side 14 and no-device witnesses are logical, not physical predictions
+Status: conditional finite-premise support; the physical open gate is unchanged
+Claim boundary: finite combinatorics and requirement-envelope arithmetic only
 
-selector conclusion: bare_candidates=64, without_orientation=2, without_action=8, without_no_dwell=4, final_selector_count=1, bare_unique=False, terminal_decision=derive a selector from a stronger theorem, retain the three clauses as explicit extra principles, or do not promote
-scaling conclusion: certified_sides=4,6,8,10,12, gap_floor=0.390/L^2, bell_floor=0.999702, min_margin=2.750e-05, countermodel_side=14, matches_rows=True, violates_universal_bound=True, finite_entails_all_even=False, terminal_decision=prove an all-even-side operator inequality or keep resource genesis at finite-certificate status
-hardware conclusion: record_length=8, d_min=5, correctable=2, slot_threshold=2.622e-03, area_budget=0.050937, controller_margin=2.215, detector_word_bound=7.498e-131, detector_log10_overlap=-655.141, no_device_model_preserves_requirements=True, requirements_entail_measurement=False, terminal_decision=supply fabricated/noise/material evidence or keep hardware closure as a requirement envelope
-lane conclusion: evidence_packet_checked=True, current_packet_entails_unconditional_closure=False, planning_closed=True, unconditional_closed=False, promote_to_nature_grade=False, boundary_status=planning boundary proved; nature-grade closure HOLD
+selector calculation: bare_candidates=64, without_orientation=2, without_action=8, without_no_dwell=4, final_selector_count=1, physical_completeness=not tested
+scaling calculation: certified_sides=4,6,8,10,12, gap_floor=0.390/L^2, bell_floor=0.999702, min_margin=2.750e-05, scope=supplied_rows_only
+hardware calculation: record_length=8, d_min=5, correctable=2, slot_threshold=2.622377982e-03, area_budget=0.05093742461, controller_margin=2.214670635, detector_word_bound=7.498e-131, detector_log10_overlap=-655.141, device_evidence=not tested
 
 Acceptance gates:
-  selector non-entailment is established by exhaustive enumeration: PASS
-  finite scaling rows admit an explicit all-even countermodel: PASS
-  requirement inequalities admit an explicit no-device countermodel: PASS
-  planning closes while nature-grade closure remains HOLD: PASS
-  claim boundary stays state-only and not FTL: PASS
+  defined candidate product is enumerated exhaustively: PASS
+  defined selector filters have the stated residual counts: PASS
+  five supplied resource rows satisfy the finite checks: PASS
+  controller envelope arithmetic is internally consistent: PASS
+  detector envelope arithmetic is internally consistent: PASS
 
 Limitations:
-  The theorem is current-packet non-entailment, not a global no-go.
-  A stronger selector theorem, an all-even scaling proof, or device
-  evidence can retire the corresponding witness.
+  The supplied selector family is not proved physically complete.
+  No all-even continuation or fabricated-device evidence is tested.
+  The live audit repair target remains open.
 
 ----- stderr -----
+

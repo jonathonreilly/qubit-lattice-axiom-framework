@@ -1,5 +1,5 @@
 {
- "edge_count": 15177,
+ "edge_count": 15179,
  "node_count": 4562,
  "nodes": {
   "3d_correction_master_note": {
@@ -14203,8 +14203,8 @@
    "out_degree": 0
   },
   "teleportation_conclusion_boundary_note": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "b5d294dcd426",
+   "out_degree": 2
   },
   "teleportation_cross_encoding_maps_note": {
    "deps_hash": "e3b0c44298fc",

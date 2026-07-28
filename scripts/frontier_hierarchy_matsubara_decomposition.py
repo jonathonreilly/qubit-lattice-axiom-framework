@@ -320,7 +320,8 @@ def part0c_temporal_spectrum():
     flat = [Lt for Lt in SPECTRUM_LT
             if all(sp.simplify(sp.sin(sp.Rational(2 * n + 1, Lt) * sp.pi) ** 2 - 1) == 0
                    for n in range(Lt))]
-    check("Lt = 2 is the only APBC extent whose temporal modes all have sin^2 omega = 1",
+    check("finite exact regression: within Lt = 2..16, only Lt = 2 has "
+          "sin^2 omega = 1 for every temporal mode",
           flat == [2],
           f"exact over Lt = {SPECTRUM_LT[0]}..{SPECTRUM_LT[-1]}; maximal-gap extents = {flat}")
 

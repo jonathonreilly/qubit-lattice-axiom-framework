@@ -1,7 +1,12 @@
 # Hierarchy Matsubara Decomposition Note
 
 **Date:** 2026-04-13  
+**Type:** positive_theorem
 **Script:** `scripts/frontier_hierarchy_matsubara_decomposition.py`
+
+Throughout, `L_t` is an integer with `L_t >= 2`, `u_0 > 0`, and `m` is real.
+Here `D` denotes the massless hopping operator, so `D + m` abbreviates
+`D + m Id`.
 
 ## Question
 
@@ -27,16 +32,18 @@ the exponent `4` is derived, not observed.
 ### Step 1 — the operator splits as space (x) time
 
 Writing the site index as `a * L_t + t`, with `a` running over the 8 spatial
-sites of the `L_s = 2` block, the staggered operator is exactly
+sites of the `L_s = 2` block, every spatial hop preserves `t` and every
+temporal hop preserves `a`. Direct substitution in the site-space stencil
+therefore gives, for every `L_t` in the stated domain,
 
 `D(m) = m Id + u_0 (B (x) Id_t) + u_0 (eta_4 (x) S)`
 
 where `B` is the 8x8 sum of the three spatial staggered hops,
 `eta_4 = diag((-1)^(x_1+x_2+x_3))` is the fourth staggered sign, and `S` is the
-`L_t x L_t` antisymmetric temporal hop. `B` and `eta_4` are read out of the
-assembled matrix rather than posited; they come out identical for
-`L_t = 2,3,4,5,6,8`, and substituting `Id_8` for `eta_4` fails to reproduce the
-matrix.
+`L_t x L_t` antisymmetric temporal hop. As a finite regression check on this
+general stencil argument, the runner reads `B` and `eta_4` back out of the
+assembled matrices at `L_t = 2,3,4,5,6,8`; they are identical at every checked
+extent, and substituting `Id_8` for `eta_4` fails to reproduce the matrix.
 
 ### Step 2 — the two-site antiperiodic ring is an operator identity
 
@@ -68,8 +75,10 @@ full cycle, whose antiperiodic wrap contributes one factor `-1`, so
 
 `charpoly(T) = lam^(L_t) + 1`
 
-at every `L_t` (checked symbolically for `L_t = 2..16`). That polynomial is
-squarefree, so `T` is diagonalizable with `L_t` simple eigenvalues
+at every `L_t`. The runner checks the identity symbolically for
+`L_t = 2..16` as a finite regression; the cofactor argument is the
+general-`L_t` proof. That polynomial is squarefree, so `T` is diagonalizable
+with `L_t` simple eigenvalues
 `z_n = exp(i omega_n)`, `omega_n = (2n+1) pi / L_t`, and on the eigenvector
 `v(z) = [1, z, ..., z^(L_t - 1)]`
 
@@ -153,9 +162,11 @@ That is a much better problem.
 ## UV endpoint picture
 
 `L_t = 2` is the unique APBC endpoint where every temporal mode has
-`sin^2 omega = 1`: the mode closest to zero sits at `omega_0 = pi / L_t`, which
-reaches `pi/2` only at `L_t = 2`, so every larger extent carries at least one
-mode with `sin^2 omega < 1`. This is checked exactly over `L_t = 2..16`.
+`sin^2 omega = 1`. For every integer `L_t >= 2`, the `n = 0` mode obeys
+`0 < omega_0 = pi / L_t <= pi/2`; hence `sin^2 omega_0 = 1` if and only if
+`L_t = 2`. Every larger extent therefore carries at least one mode with
+`sin^2 omega < 1`. The runner's exact scan over `L_t = 2..16` is a finite
+regression of this analytic argument.
 
 So the one-block hierarchy route is the **maximal temporal-gap endpoint** of
 the exact Matsubara family, not an arbitrary guess.

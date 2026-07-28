@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_matsubara_decomposition.py
-runner_sha256: cd61ae9b946cf2df08d63bcf9fe98db79956cf64115be230d05133fd4f07c1cf
+runner_sha256: 4d74f94f203d9e73591f31ce2b7b64efaf0a191cb23dd1e1273a2298c4bc827e
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 3.85
@@ -35,7 +35,7 @@ PART 0: GENERAL-L_t DERIVATION FROM THE MATRIX
   [PASS] S_ext v(z) == ((z-1/z)/2) v(z) on the T_ext eigenvector v(z) = [1,z,..,z^(Lt-1)]
          residues reduced mod z^Lt + 1 vanish for every Lt; z^Lt = -1 closes the ring
   [PASS] (z - 1/z)/2 == i*sin(omega) at z = exp(i*omega), so S -> i sin(omega)
-  [PASS] Lt = 2 is the only APBC extent whose temporal modes all have sin^2 omega = 1
+  [PASS] finite exact regression: within Lt = 2..16, only Lt = 2 has sin^2 omega = 1 for every temporal mode
          exact over Lt = 2..16; maximal-gap extents = [2]
 0D symbolic multiplicity-four theorem in (theta, u0, m): one computation, every Lt
   [PASS] K(theta)^2 == -u0^2*(3 + sin^2 theta)*Id_8 and trace K(theta) == 0
@@ -75,4 +75,3 @@ PART 3: UV ENDPOINT INTERPRETATION
 SCORECARD: 26 pass, 0 fail out of 26
 
 ----- stderr -----
-

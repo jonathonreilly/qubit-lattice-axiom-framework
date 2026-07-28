@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/frontier_source_acceptance_harness_independent_check_2026_07_28.py
+runner_sha256: 94114b133716e53a1c30d3965c5ae54db0eee533b757f4dd1fa2d3903ba15a81
+input_fingerprint_sha256: 2906670a1dca77d244d8d207f3b02f4c229e5812f9636fc9bfe69070b9fdabd7
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 74.99
+status: ok
+----- stdout -----
+PASS frozen_extraction :: {"corrupted_vector_length": 10, "frozen_record_digests": {"recoil": "94b104901e26e1bfd7f7324023282b49a04677308ccb4e7ca78578b7ee74f1c8", "tensor_lift": "3188d62f1b3d970f44423bb4ce80b29d2281ddf4842c556ebe295c1f91eabfdb"}, "pins": {"recoil": {"actual": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75", "expected": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75", "verified": true}, "tensor_lift": {"actual": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31", "expected": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31", "verified": true}}, "tensor_verdict_logic_digest": "d5edfba891c2c0a5e4691bae4d189368e1fd68995221855b04de3c1efb894218", "thresholds": {"block_floor": 0.05, "block_nonnegative": 0.0, "carrier_shear": 0.05, "carrier_shift": 0.05, "chi_shear": 0.0, "chi_shift": 0.0, "field_flip": 1e-10, "field_null": 1e-10, "positive_self": 0.0, "scalar_complement": 1e-10, "twist_residual": 1e-10, "ward_max": 1e-10, "ward_null": 1e-10}}
+PASS independent_expected :: {"recoil_exceptions": [], "recoil_fieldwise_equal": true, "recoil_labels": 20, "recoil_outcome_digest": "94b104901e26e1bfd7f7324023282b49a04677308ccb4e7ca78578b7ee74f1c8", "tensor_fieldwise_equal": true, "tensor_outcome_digest": "3188d62f1b3d970f44423bb4ce80b29d2281ddf4842c556ebe295c1f91eabfdb"}
+PASS verdict_semantics :: {"corrupted_flipped_checks": ["orientation_twist", "response_locking", "free_tensor_carrier"], "harness_corrupted_flipped_checks": ["orientation_twist", "response_locking", "free_tensor_carrier"], "vectors": {"canonical": {"expected": "ACCEPT", "frozen_logic": "ACCEPT", "independent": "ACCEPT"}, "corrupted": {"expected": "REJECT", "frozen_logic": "REJECT", "independent": "REJECT"}, "wrong_pin": {"expected": "DRIFT", "frozen_logic": "DRIFT", "independent": "DRIFT"}}}
+PASS discipline :: {"harness_audit_tuple_literal": ["scripts/signed_gravity_oriented_tensor_source_lift.py", "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py", "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py"], "harness_thresholds": [0.0, 1e-10, 0.05], "landed_S1_thresholds": [0.0, 1e-10, 0.05], "landed_module_attribute_writes": [], "new_tolerances": []}
+{
+  "checks": {
+    "fail": 0,
+    "pass": 4
+  },
+  "digest_agreement": {
+    "recoil": true,
+    "tensor_lift": true
+  },
+  "discipline": {
+    "audit_tuple": [
+      "scripts/signed_gravity_oriented_tensor_source_lift.py",
+      "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
+      "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py"
+    ],
+    "module_writes": [],
+    "new_tolerances": []
+  },
+  "frozen_record_digests": {
+    "recoil": "94b104901e26e1bfd7f7324023282b49a04677308ccb4e7ca78578b7ee74f1c8",
+    "tensor_lift": "3188d62f1b3d970f44423bb4ce80b29d2281ddf4842c556ebe295c1f91eabfdb"
+  },
+  "runtime_seconds": 74.296355,
+  "verdict_agreement": true
+}
+SUMMARY PASS=4 FAIL=0 RUNTIME=74.296s
+
+----- stderr -----
+

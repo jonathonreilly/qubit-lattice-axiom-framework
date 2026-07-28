@@ -1,6 +1,6 @@
 {
- "edge_count": 15163,
- "node_count": 4554,
+ "edge_count": 15165,
+ "node_count": 4555,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10821,6 +10821,10 @@
   "poisson_exhaustive_uniqueness_note": {
    "deps_hash": "e8d01675fe44",
    "out_degree": 3
+  },
+  "poisson_finite_volume_window_and_biharmonic_offset_bounded_theorem_note_2026-07-27": {
+   "deps_hash": "4aaaab65f162",
+   "out_degree": 2
   },
   "poisson_self_field_note": {
    "deps_hash": "519215e3f103",

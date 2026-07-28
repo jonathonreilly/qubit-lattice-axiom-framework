@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_complexification_exclusion_stress_2026_07_13.py
-runner_sha256: 38e35f8379316f60c401b389d19db125e8060b5779339e43c80b786fe0905eb4
+runner_sha256: bf57914a41b5f01aad02ec4020185136e6d08c37fc06b31400d1b8fc405fef1a
+input_fingerprint_sha256: c8abf46236b7c00611a5e59a841517c65e163daf39c2be8c85f1a105f1e47996
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.13
+elapsed_sec: 1.68
 status: ok
 ----- stdout -----
 Dedicated exact exclusion stress runner
@@ -82,10 +83,10 @@ mechanism_class 1: route_id=central_split route_class=algebraic_rearrangement me
 mechanism_class 2: route_id=module_carriers route_class=alternate_carrier_or_sector mechanism=classify every minimal left ideal in both central sectors; attempt=test alternate irreducible modules or carrier dimensions within either M2(C) block; outcome=E2 finds one 2-dimensional simple-module class per sector; honesty_marker=ATTEMPTED disposition=CLOSED
 mechanism_class 3: route_id=scalar_finite_scan route_class=numerical_or_finite_case mechanism=compute the exact scalar polynomial solve, unit-ideal Groebner basis, and finite square-law scan; attempt=search every one-dimensional scalar candidate for a Clifford character; outcome=E3 finds no solution and exhibits the exact contradiction; honesty_marker=ATTEMPTED disposition=CLOSED
 mechanism_class 4: route_id=faithfulness_boundary route_class=boundary_or_initial_condition mechanism=compute kernels on the full complexification and at the real-algebra restriction boundary; attempt=test whether the faithfulness wording hides an alternate full-complexification representation; outcome=E4 computes the opposite summand kernels and faithful real restrictions; honesty_marker=ATTEMPTED disposition=CLOSED
-mechanism_class 5: route_id=finite_lattice_tensor route_class=lattice_scale_or_limit mechanism=restrict finite-region tensor-algebra characters sitewise and construct the two-site tensor modules; attempt=test whether multiple lattice sites evade the one-site exclusions or change the tensor-power simple-module dimensions; outcome=EL closes the site-character route for every finite N and constructs and exhausts all N=2 blocks; honesty_marker=ATTEMPTED disposition=CLOSED
+mechanism_class 5: route_id=finite_lattice_tensor route_class=lattice_scale_or_limit mechanism=restrict finite-region tensor-algebra characters sitewise and construct the two-site tensor modules; attempt=test whether multiple lattice sites evade the one-site exclusions or change the tensor-power simple-module dimensions; outcome=EL proves all finite N by tensor induction and exhausts the N=2 blocks constructively; honesty_marker=ATTEMPTED disposition=CLOSED
 
 === N5 RESOLUTION SWEEP (per authenticated negative statement) ===
-Each negative statement below is swept over the five canonical resolution classes; every class is executed against a computed certificate above, including the lattice-wide tensor extension. Lines are stable for byte-for-byte citation.
+Each negative statement below is swept over the five canonical resolution classes; every class is backed by an exact certificate above, including the lattice-wide tensor induction. Lines are stable for byte-for-byte citation.
 NEGATIVE STATEMENT 1: no faithful one-dimensional complex representation of Cl(3,0) exists
 per_element: [EXECUTED] each generator pair (x_i, x_j), i != j, already forces the contradiction x_i x_j = -x_j x_i with commuting scalars; the scalar Clifford system has no solution element-by-element
 per_site: [EXECUTED] Cl(3,0) is the one-site real algebra; the full scalar system over one site was solved exhaustively and is inconsistent
@@ -98,7 +99,7 @@ per_element: [EXECUTED] central idempotent actions on any simple module were sol
 per_site: [EXECUTED] at the single site, the minimal-left-ideal decomposition exhausts all simple quotients and each has dimension 2
 per_mode: [EXECUTED] every irreducible module (mode) is a quotient of its active regular summand and computes to dimension exactly 2
 per_block: [EXECUTED] each 4-dimensional simple block decomposes into two copies of the same 2-dimensional simple module; no other dimension occurs
-lattice_wide: [EXECUTED] at N=1 every faithful irreducible has dimension 2, while for every finite N>=2 the real algebra dimension 8^N exceeds the real endomorphism dimension 2*4^N by ratio 2^(N-1), so no irreducible tensor-power module can be faithful; at N=2 all four real map ranks 32 and kernel dimensions 32 were computed explicitly
+lattice_wide: [EXECUTED] at N=1 faithful irreducibles have dimension 2; for N>=2 a matrix-unit induction gives full real image rank 2*4^N < 8^N, so no tensor-power simple is faithful; N=2 ranks 32 and kernels 32 were computed explicitly
 [PASS] 61 N5.2
 
 === TOTAL ===

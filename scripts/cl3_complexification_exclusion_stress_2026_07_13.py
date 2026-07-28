@@ -21,6 +21,10 @@ import itertools
 import sys
 from typing import Dict, List, Sequence, Tuple
 
+AUDIT_INPUT_PATHS = (
+    "scripts/cl3_complexification_lattice_exclusion_helper_2026_07_26.py",
+)
+
 from cl3_complexification_lattice_exclusion_helper_2026_07_26 import (
     run_lattice_extension,
 )
@@ -755,6 +759,10 @@ def main() -> int:
         check=check,
         section=section,
         dimension=DIM,
+        one_site_split_certified=e1_certificate,
+        one_site_simple_modules_certified=e2_certificate,
+        one_site_scalar_excluded=e3_certificate,
+        one_site_real_surjectivity_certified=e4_certificate,
         representation_images=representation_images,
         pauli=pauli,
         matrix_equal=matrix_equal,
@@ -803,8 +811,8 @@ def main() -> int:
         "tensor-algebra characters sitewise and construct the two-site tensor "
         "modules; attempt=test whether multiple lattice sites evade the one-site "
         "exclusions or change the tensor-power simple-module dimensions; "
-        "outcome=EL closes the site-character route for every finite N and "
-        "constructs and exhausts all N=2 blocks; "
+        "outcome=EL proves all finite N by tensor induction and exhausts the "
+        "N=2 blocks constructively; "
         "honesty_marker=ATTEMPTED disposition=CLOSED"
     )
 
@@ -812,8 +820,8 @@ def main() -> int:
     section("N5 RESOLUTION SWEEP (per authenticated negative statement)")
     print(
         "Each negative statement below is swept over the five canonical "
-        "resolution classes; every class is executed against a computed "
-        "certificate above, including the lattice-wide tensor extension. "
+        "resolution classes; every class is backed by an exact certificate "
+        "above, including the lattice-wide tensor induction. "
         "Lines are stable for byte-for-byte citation."
     )
     e3_executed = e3_certificate
@@ -871,12 +879,10 @@ def main() -> int:
                     "occurs"
                 ), e2_executed),
                 ("lattice_wide", True, (
-                    "at N=1 every faithful irreducible has dimension 2, while for "
-                    "every finite N>=2 the real algebra dimension 8^N exceeds the "
-                    "real endomorphism dimension 2*4^N by ratio 2^(N-1), so no "
-                    "irreducible tensor-power module can be faithful; at N=2 all "
-                    "four real map ranks 32 and kernel dimensions 32 were computed "
-                    "explicitly"
+                    "at N=1 faithful irreducibles have dimension 2; for N>=2 a "
+                    "matrix-unit induction gives full real image rank 2*4^N < "
+                    "8^N, so no tensor-power simple is faithful; N=2 ranks 32 "
+                    "and kernels 32 were computed explicitly"
                 ), el2_certificate),
             ],
         ),

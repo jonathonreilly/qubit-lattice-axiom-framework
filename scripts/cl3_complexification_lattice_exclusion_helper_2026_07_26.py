@@ -20,6 +20,10 @@ def run_lattice_extension(
     check: Callable[[str, object, str], bool],
     section: Callable[[str], None],
     dimension: int,
+    one_site_split_certified: bool,
+    one_site_simple_modules_certified: bool,
+    one_site_scalar_excluded: bool,
+    one_site_real_surjectivity_certified: bool,
     representation_images: Callable[[int, Sequence[Matrix]], list[Matrix]],
     pauli: Sequence[Matrix],
     matrix_equal: Callable[[Matrix, Matrix], bool],
@@ -54,7 +58,12 @@ def run_lattice_extension(
             f"unknowns={3 * n_sites}, equations={len(joint_system)}, "
             f"solutions={len(joint_solutions)}",
         )
-    el1_certificate = lattice_scalar_ok
+    # For every nonempty finite N, a unital scalar character on the tensor
+    # algebra restricts along a -> 1 tensor ... tensor a tensor ... tensor 1
+    # to a unital one-site character.  The primary E3 certificate excludes
+    # that restriction.  The N=2,3 solves above are exact finite-case checks,
+    # not the premise for the general statement.
+    el1_certificate = one_site_scalar_excluded and lattice_scalar_ok
 
     two_site_modules_ok = True
     site_irreps = {
@@ -165,12 +174,48 @@ def run_lattice_extension(
             )
 
     expected_character_pairs = {(1, 1), (1, -1), (-1, 1), (-1, -1)}
+    # Exact analytic certificate for every finite N, rather than an
+    # extrapolation from the N=2 computation above.
+    #
+    # Base: primary E1/E2 establishes
+    #   A_C = M_2(C) (+) M_2(C)
+    # and the unique 2-dimensional simple module in each block.
+    #
+    # Step: distribute tensor product over the two new summands and use the
+    # matrix-unit isomorphism
+    #   E_ab tensor E_cd -> E_(2a+c),(2b+d).
+    # Multiplication is preserved because, for c,d in {0,1},
+    #   2b+d = 2a'+c' iff b=a' and d=c'.
+    # Thus 2^N copies of M_(2^N)(C) become 2^(N+1) copies of
+    # M_(2^(N+1))(C).  Artin-Wedderburn then exhausts the simple modules.
+    # Restriction to any fixed site leaves a tensor factor of dimension
+    # 2^(N-1), hence exactly that many copies of its 2-dimensional site
+    # module.
+    #
+    # Real-image surjectivity is also constructive.  Primary E4 establishes
+    # that each one-site real image is all M_2(C) over R, so it contains
+    # preimages of E_ab and i E_ab.  Tensoring real matrix-unit preimages
+    # gives every E_(a-vector),(b-vector); inserting i at one chosen site
+    # gives every i E_(a-vector),(b-vector).  These are the
+    # 2 * (2^N)^2 real basis vectors of M_(2^N)(C).  The real image therefore
+    # has rank 2 * 4^N, and rank-nullity forces a kernel for N >= 2.
     finite_n = symbols("finite_N", integer=True, positive=True)
+    block_count = 2**finite_n
+    block_size = 2**finite_n
+    tensor_step_block_count = (
+        simplify(2 * block_count - 2 ** (finite_n + 1)) == 0
+    )
+    tensor_step_block_size = (
+        simplify(2 * block_size - 2 ** (finite_n + 1)) == 0
+    )
     finite_region_dimension_identity = (
-        simplify(
-            (2**finite_n) * (2**finite_n) ** 2 - dimension**finite_n
-        )
-        == 0
+        simplify(block_count * block_size**2 - dimension**finite_n) == 0
+    )
+    site_multiplicity_identity = (
+        simplify(2 * 2 ** (finite_n - 1) - block_size) == 0
+    )
+    real_image_rank_identity = (
+        simplify(2 * block_size**2 - 2 * 4**finite_n) == 0
     )
     finite_n_ge_two_offset = symbols(
         "finite_N_minus_one", integer=True, positive=True
@@ -183,12 +228,22 @@ def run_lattice_extension(
         )
         == 0
     )
+    finite_region_classification_certificate = (
+        one_site_split_certified
+        and one_site_simple_modules_certified
+        and one_site_real_surjectivity_certified
+        and tensor_step_block_count
+        and tensor_step_block_size
+        and finite_region_dimension_identity
+        and site_multiplicity_identity
+        and real_image_rank_identity
+        and finite_region_nonfaithfulness_ratio
+    )
     dimension_exhausts = (
         two_site_modules_ok
         and central_character_pairs == expected_character_pairs
         and total_square == dimension**2
-        and finite_region_dimension_identity
-        and finite_region_nonfaithfulness_ratio
+        and finite_region_classification_certificate
     )
     check(
         "EL.exhaustion: four modules exhaust the 64-dimensional algebra",

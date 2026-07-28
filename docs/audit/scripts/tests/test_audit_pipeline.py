@@ -3193,6 +3193,10 @@ class Cl3ComplexificationIndependentN7HelperTest(unittest.TestCase):
         "scripts/"
         "cl3_complexification_lattice_exclusion_helper_2026_07_26.py"
     )
+    CACHE = (
+        "logs/runner-cache/"
+        "cl3_complexification_exclusion_stress_2026_07_13.txt"
+    )
 
     def test_packet_consumers_include_imported_and_claim_scoped_helpers(self):
         citation_graph = _import("build_citation_graph")
@@ -3231,41 +3235,146 @@ class Cl3ComplexificationIndependentN7HelperTest(unittest.TestCase):
             [self.LATTICE_HELPER],
         )
 
-    def test_development_packet_hash_binds_source_and_authenticates_live_stdout(self):
+    def test_primary_cache_is_bound_to_the_lattice_helper(self):
+        runner_cache = _import_repo_script("runner_cache.py")
+        self.assertEqual(
+            runner_cache.declared_input_paths(self.PRIMARY),
+            (self.LATTICE_HELPER,),
+        )
+        self.assertEqual(runner_cache.cache_status(self.PRIMARY), "fresh")
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            for relative_path in (
+                self.PRIMARY,
+                self.LATTICE_HELPER,
+                self.CACHE,
+            ):
+                destination = root / relative_path
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                destination.write_bytes(
+                    (PROJECT_ROOT / relative_path).read_bytes()
+                )
+
+            cache_dir = root / "logs" / "runner-cache"
+            with mock.patch.multiple(
+                runner_cache,
+                REPO_ROOT=root,
+                CACHE_DIR=cache_dir,
+                LIVE_LOG_DIR=cache_dir / ".in-progress",
+            ):
+                self.assertEqual(
+                    runner_cache.cache_status(self.PRIMARY),
+                    "fresh",
+                )
+                helper_path = root / self.LATTICE_HELPER
+                helper_path.write_bytes(
+                    helper_path.read_bytes() + b"\n# helper-only drift\n"
+                )
+                self.assertEqual(
+                    runner_cache.cache_status(self.PRIMARY),
+                    "input_mismatch",
+                )
+                self.assertIsNone(
+                    runner_cache.cache_excerpt_for_audit(self.PRIMARY)
+                )
+
+    def test_development_packet_is_complete_and_hash_bound(self):
         runner = _import_codex_audit_runner()
+        apply_audit = _import("apply_audit")
         row = {
             "claim_id": self.CLAIM_ID,
             "note_path": self.NOTE,
             "runner_path": self.PRIMARY,
-            "helper_runner_paths": [self.HELPER],
+            "helper_runner_paths": [self.LATTICE_HELPER, self.HELPER],
             "deps": [],
             "claim_type": "positive_theorem",
+            "criticality": "critical",
+            "audit_status": "audited_conditional",
+            "negative_assertion_classes": ["derived_no_go_boundary"],
         }
+        primary_run = subprocess.run(
+            [sys.executable, str(PROJECT_ROOT / self.PRIMARY)],
+            cwd=PROJECT_ROOT,
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=120,
+        )
+        self.assertEqual(
+            primary_run.returncode,
+            0,
+            primary_run.stdout + primary_run.stderr,
+        )
         manifest: dict[str, dict] = {}
         with (
             mock.patch.dict(os.environ, {"AUDIT_FORENSIC_MODE": ""}),
             mock.patch.object(
                 runner,
                 "get_runner_stdout",
-                return_value="PRIMARY_STDOUT",
+                return_value=primary_run.stdout,
             ),
         ):
             prompt = runner.render_prompt(
                 row,
                 {self.CLAIM_ID: row},
-                "{{HELPER_RUNNER_SOURCES}}\n{{NO_GO_EVIDENCE_MANIFEST}}",
+                "{{RUNNER_SOURCE}}\n{{HELPER_RUNNER_SOURCES}}\n"
+                "{{RUNNER_STDOUT}}\n{{NO_GO_EVIDENCE_MANIFEST}}",
                 runner_timeout_sec=20,
                 use_cache=False,
                 evidence_manifest_out=manifest,
             )
 
-        helper_sha256 = hashlib.sha256(
-            (PROJECT_ROOT / self.HELPER).read_bytes()
-        ).hexdigest()
+        primary_source = (PROJECT_ROOT / self.PRIMARY).read_text(
+            encoding="utf-8"
+        )
+        lattice_source = (PROJECT_ROOT / self.LATTICE_HELPER).read_text(
+            encoding="utf-8"
+        )
+        self.assertEqual(manifest[self.PRIMARY]["text"], primary_source)
+        self.assertIn(
+            lattice_source,
+            manifest[self.LATTICE_HELPER]["text"],
+        )
+        self.assertIn(primary_source, prompt)
+        self.assertIn(lattice_source, prompt)
+
+        helper_hashes = {
+            helper_path: hashlib.sha256(
+                (PROJECT_ROOT / helper_path).read_bytes()
+            ).hexdigest()
+            for helper_path in (self.LATTICE_HELPER, self.HELPER)
+        }
         self.assertEqual(
-            manifest[self.HELPER]["full_content_sha256"], helper_sha256
+            manifest[self.LATTICE_HELPER]["full_content_sha256"],
+            helper_hashes[self.LATTICE_HELPER],
+        )
+        self.assertEqual(
+            manifest[self.HELPER]["full_content_sha256"],
+            helper_hashes[self.HELPER],
+        )
+        self.assertEqual(
+            manifest[self.LATTICE_HELPER]["roles"],
+            ["helper"],
         )
         self.assertEqual(manifest[self.HELPER]["roles"], ["helper"])
+        stdout_path = f"audit-packet://runner-stdout/{self.CLAIM_ID}"
+        self.assertEqual(
+            manifest[stdout_path]["text"],
+            primary_run.stdout,
+        )
+        self.assertEqual(manifest[stdout_path]["roles"], ["runner_stdout"])
+        for certificate in (
+            "E2.TOTAL",
+            "E3.TOTAL",
+            "E4.TOTAL",
+            "TOTAL: PASS=62 FAIL=0",
+        ):
+            self.assertIn(certificate, primary_run.stdout)
+            self.assertIn(certificate, prompt)
+        for marker in runner.CLIPPED_EVIDENCE_MARKERS:
+            self.assertNotIn(marker, prompt)
+
         independent_path = (
             runner.no_go_discipline_gate.independent_runner_stdout_evidence_path(
                 self.CLAIM_ID, self.HELPER
@@ -3284,7 +3393,17 @@ class Cl3ComplexificationIndependentN7HelperTest(unittest.TestCase):
         ):
             self.assertIn(certificate, manifest[independent_path]["text"])
             self.assertIn(certificate, prompt)
-        self.assertIn(helper_sha256, prompt)
+        for helper_sha256 in helper_hashes.values():
+            self.assertIn(helper_sha256, prompt)
+
+        snapshot = apply_audit.snapshot_audit_state(
+            row,
+            {self.CLAIM_ID: row},
+        )
+        self.assertEqual(
+            snapshot["helper_runner_hashes"],
+            helper_hashes,
+        )
 
     def test_forensic_positive_packet_cannot_self_certify_with_target_helper(self):
         runner = _import_codex_audit_runner()

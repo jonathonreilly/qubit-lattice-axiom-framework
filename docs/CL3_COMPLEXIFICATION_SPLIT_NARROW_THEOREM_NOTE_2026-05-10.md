@@ -278,7 +278,44 @@ packet's transitive-helper graph. Both files fit individually within the audit
 packet's source limit, and the complete live stdout fits within its stdout
 limit, so neither surface requires head/tail clipping.
 
-The recorded output is `TOTAL: PASS=62 FAIL=0`, including the finite-region lattice-wide tensor extension: a one-dimensional complex character on any nonempty finite real `N`-site tensor algebra `Cl(3,0)^{⊗_R N}` would restrict to a forbidden one-site scalar character; and, defining `A_C := Cl(3,0) ⊗_R C`, the computed `A_C ≅ M_2(C) ⊕ M_2(C)` split gives `A_C^{⊗_C N} ≅ ⨁_{s∈{±}^N} M_{2^N}(C)`, so every finite-region simple module has dimension `2^N` and restricts at one site as `2^{N-1}` copies of its 2-dimensional site module. For `N ≥ 2`, those irreducible modules are nonfaithful on the real tensor algebra: its real dimension `8^N` exceeds the real dimension `2·4^N` of the complex endomorphism algebra by the factor `2^{N-1}`. The runner solves the `N=2` and `N=3` scalar systems explicitly and, at `N=2`, constructs all four modules, solves their scalar commutants, verifies their distinct pairs of central characters, explicitly decomposes their site restrictions, computes real map rank `32` and kernel dimension `32` for each, and exhausts the `64`-dimensional algebra by the Artin-Wedderburn count `4 × 16 = 64`. This finite-region algebra statement is restricted to abstract finite tensor powers; infinite quasi-local completions and physical lattice Hilbert-space realizations remain outside its scope. The output also records five labeled distinct exclusion mechanism classes and the N5 resolution sweep in which every canonical class (`per_element`, `per_site`, `per_mode`, `per_block`, `lattice_wide`) is executed against a computed certificate.
+The recorded output is `TOTAL: PASS=62 FAIL=0`, including the finite-region
+lattice-wide tensor extension. A one-dimensional complex character on any
+nonempty finite real `N`-site tensor algebra `Cl(3,0)^{⊗_R N}` would restrict
+along any unital one-site inclusion to the forbidden one-site scalar
+character.
+
+For the simple-module statement, define
+`A_C := Cl(3,0) ⊗_R C`. The general finite-`N` step is an exact induction,
+not an extrapolation from the explicitly computed cases. E1 and E2 give the
+base `A_C ≅ M_2(C) ⊕ M_2(C)`. Distributing tensor product over that direct
+sum and using the matrix-unit isomorphism
+`M_m(C) ⊗_C M_2(C) ≅ M_{2m}(C)` takes `2^N` copies of
+`M_{2^N}(C)` to `2^{N+1}` copies of `M_{2^{N+1}}(C)`. Hence
+`A_C^{⊗_C N} ≅ ⨁_{s∈{±}^N} M_{2^N}(C)`, and Artin-Wedderburn exhausts its
+simple modules. Restricting a tensor-product simple module at a fixed site
+leaves a `2^{N-1}`-dimensional spectator factor, so it is exactly
+`2^{N-1}` copies of the two-dimensional site module.
+
+E4 establishes that each one-site real image is all of `M_2(C)` over
+`R`. Choose real-algebra preimages of every matrix unit `E_ab` and of
+`i E_ab`. Their tensor products produce every matrix unit of
+`M_{2^N}(C)`; inserting the imaginary preimage at one site produces every
+imaginary matrix unit. Thus the real image has rank `2·4^N`. For `N ≥ 2`,
+the real domain dimension `8^N` exceeds that rank by the factor
+`2^{N-1}`, so each finite-region irreducible module has nonzero kernel on
+the real tensor algebra.
+
+As explicit controls, the runner solves the `N=2` and `N=3` scalar systems
+and, at `N=2`, constructs all four modules, solves their scalar commutants,
+verifies their central-character pairs, decomposes their site restrictions,
+computes real rank `32` and kernel dimension `32` for each, and exhausts the
+`64`-dimensional algebra by `4 × 16 = 64`. This statement is restricted to
+abstract finite tensor powers; infinite quasi-local completions and physical
+lattice Hilbert-space realizations remain outside its scope. The output also
+records five distinct exclusion mechanisms and the N5 resolution sweep,
+where every canonical resolution class (`per_element`, `per_site`,
+`per_mode`, `per_block`, `lattice_wide`) is backed by the corresponding
+computed or exact analytic certificate.
 
 | Claim surface | Runner | Exact verification |
 |---|---|---|

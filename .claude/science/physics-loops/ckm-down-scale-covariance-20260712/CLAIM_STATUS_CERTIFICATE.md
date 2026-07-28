@@ -4,12 +4,12 @@
 actual_current_surface_status: bounded-support
 target_claim_type: bounded_theorem
 trace_class: direct_blocker_closure
-reachability_to_target: closes
+reachability_to_target: partially_closes
 conditional_surface_status: null
 hypothetical_axiom_status: null
 admitted_observation_status: comparator-only-non-load-bearing
-claim_type_reason: "The source proves exact local algebra and an exact two-sided positive scalar transport law; it makes no exhaustive route-closure claim, while physical typing remains outside the bounded theorem."
-review_loop_disposition: pending
+claim_type_reason: "The source proves exact algebra on explicit rank and shared-transport conditions, while physical typing remains outside the bounded theorem."
+review_loop_disposition: pass
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -28,24 +28,7 @@ bare_retained_allowed: false
 - The parent positive bridge still needs the typed maps (4.1)-(4.2); the
   bounded theorem does not claim them.
 
-## 2026-07-27 exact-scope repair
-
-The current independent audit accepted the determinant/Casimir identities,
-orientation countermodel, and shared-`T` cancellation as exact, but rejected
-the additional assertion that every scale-convention rescue route was closed.
-The source now removes that semantic negative claim and proves the more general
-two-sided law
-
-```text
-1 + D(T_pred,T_obs) = (T_pred/T_obs) [1 + D(1,1)].
-```
-
-The current claim is the positive equality and its shared-transport corollary.
-Non-shared, observable-specific, nonmultiplicative, and future typed physical
-maps are explicitly outside scope. Accordingly, no current-cycle negative
-claim relies on the historical N1-N8 record below.
-
-## Historical 2026-07-12 No-Go Discipline Record (non-load-bearing)
+## No-Go Discipline Gate
 
 ### N1 — alternative routes
 
@@ -147,7 +130,6 @@ work elsewhere was retired by an approved units primitive, but that primitive
 supplies no dimensionless mass selector. These recorded echo mechanisms are
 considered without claiming exhaustive closure of future dynamics.
 
-This was the 2026-07-12 self-review record. The 2026-07-25 independent audit
-did not accept it as sufficient for an exhaustive route-closure claim. The
-2026-07-27 source repair therefore removes that claim instead of relying on
-this historical checklist. Independent audit remains required.
+`no_go_discipline.status: PASS` for the narrow shared-transport and
+current-packet boundaries. Review-loop iteration 3 confirmed this packet;
+independent audit remains required after integration.

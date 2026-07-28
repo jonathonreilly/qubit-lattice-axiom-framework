@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_down_type_scale_convention_support.py
-runner_sha256: 9cac9f549dc8cac373c4b61a1663da97379e411915c6368831b902af4ed96df1
+runner_sha256: 3d922cc99109cbd5426f66c50d24b422a5446519c8bcd5bb49d9c0423acfaf38
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.39
 status: ok
 ----- stdout -----
 CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SHARED-TRANSPORT COVARIANCE
@@ -25,6 +25,11 @@ CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SHARED-TRANSPORT COVARIANCE
 [EXACT_PASS] C_F-T_F at N_c=3 is 5/6
 
 2. EXACT MASS-SPECTRUM / MIXING COUNTERMODEL
+[EXACT_PASS] supplied spectra are positive and nondegenerate
+[EXACT_PASS] up diagonalizer is unitary
+[EXACT_PASS] down diagonalizer is unitary
+[EXACT_PASS] down diagonalizer recovers supplied spectrum
+[EXACT_PASS] CKM definition yields relative diagonalizer
 [EXACT_PASS] down trace is orientation-invariant
 [EXACT_PASS] down determinant is orientation-invariant
 [EXACT_PASS] down quadratic trace is orientation-invariant
@@ -55,7 +60,7 @@ CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SHARED-TRANSPORT COVARIANCE
 [COMPARATOR_PASS] one-loop factor differs from observed-mass transport
              one_loop=1.162557620, observed=1.153086420
 
-SUMMARY: EXACT_PASS=29 COMPARATOR_PASS=6 FAIL=0
+SUMMARY: EXACT_PASS=34 COMPARATOR_PASS=6 FAIL=0
 
 ----- stderr -----
 

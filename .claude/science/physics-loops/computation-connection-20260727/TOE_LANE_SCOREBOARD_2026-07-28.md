@@ -97,3 +97,42 @@ coherent source-lift tournament (D1); Cycle 726 = wavefront (DOWN/ACK)
 controller literal-M2 compilation; Cycle 727 = TP reference-to-companion
 switch; then the V_s factorization-object API (D2) and BKSF holonomy
 compression (D3). Review of PRs #5697-#5700 remains the owner lane.
+
+
+---
+
+# Refresh 2 (2026-07-28 ~09:30, post Cycles 725-726; PRs #5697-#5702 open)
+
+| TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |
+|---|---|---|---|---|
+| Operational quantum / Records | 95% | 97% | 66% (up 4) | 99% |
+| Causal time | 76% | 80% | 45% | 99% |
+| Inertia / matter | 95% | 98% | 86% | 99% |
+| Gravity / source / resources | 70% | 49% (up 4) | 29% | 94% |
+| Born probability / realized history | 84% | 64% | 35% | 99% |
+
+Why the scores changed:
+- Operational autonomy up 4: the wavefront DOWN/ACK controller — the
+  rubric's own named blocker — is compiled to one literal routed M2 word
+  (Cycle 726): runtime Python semantic selection removed; exhaustive
+  lawful equivalence to the prior fixed word; H/T gating solved in the
+  classical family via enable-latched Fredkin spectator rerouting. The
+  transition law itself remains a supplied convention; genesis resources
+  remain supplied; Record permanence/admission still missing — hence well
+  short of closure.
+- Gravity/source bridge up 4: the composed epoch's census now lawfully
+  enters the landed tensor-lift surface as a true parameterized feed
+  (full check set unchanged, gates preserved), with byte-pinned reruns
+  and exact integer bindings for the Cycle-322/294 surfaces (Cycle 725).
+  Autonomy unchanged: the census schema/reductions are new declared
+  supplies.
+- New breakthrough-log entries: (8) the Ward projection-selectivity
+  finding — a genuinely nonuniform stage-resolved census projection
+  passes projector/twist/locking but FAILS the Ward constraint (frozen,
+  1.9e4), so which computational census data can source is already a
+  nontrivial selection; (9) the two no-input-port findings (S2/S3) that
+  ground the evidence-ceiling harness program; (10) the compiled
+  wavefront controller with spectator-rerouting gating.
+- Ceiling unchanged at 94 for gravity: moves only when the acceptance-
+  harness set (input ports + frozen expected outputs + independent
+  adversary) lands — in progress as the D5 track.

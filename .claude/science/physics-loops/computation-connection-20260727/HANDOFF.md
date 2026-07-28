@@ -138,3 +138,17 @@ above; adopt or amend before any attempt; (4) raw-Bell coset diagnostic —
 small, below the churn bar tonight. The unrepaired repo automation lock
 path (/Users/jonreilly) is still broken on this machine and worth an
 owner fix.
+
+## Blocks 05-06 (Cycles 725-726) — delivered under ownership + D-decisions
+
+Block05 PR #5701 (stacked on #5698): the coherent source-lift tournament
+executed per D1 — S1 true feed passes the landed check set with gates
+preserved; role-uniform limitation stated and strengthened by the
+stage-resolved projection with its frozen Ward failure (projection
+selectivity); S2/S3 byte-pinned reruns + integer bindings + no-input-port
+findings. Block06 PR #5702 (independent, base main): the wavefront
+DOWN/ACK controller compiled to literal M2 per D7 (27,695/36,883 gates;
+19/19 table coverage; Fredkin spectator rerouting; landed Cycle-718
+certificate set unchanged). Both with independent checkers, pinned
+caches, receipts. Open PR ledger: #5697, #5698, #5699, #5700, #5701,
+#5702.

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_carrier_momentum_type_from_translation_2026_06_15.py
-runner_sha256: 0ab1e787b20d3be27417f4f3c6bd3fd805b35417031152537f3c919c2a955522
+runner_sha256: b7adbd6223dce24a49c4ffa01363da9172d6fd1b6ae56151ece4ed1d49623f0d
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.41
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 Finite translation-character profiles and projectors
@@ -19,26 +19,25 @@ Finite translation-character profiles and projectors
   [PASS] A10 the full projector expectation matrix is Kronecker delta  (hw1_matrix=[[1, 0, 0], [0, 1, 0], [0, 0, 1]])
 FULL PROJECTOR EXPECTATION MATRIX: [[1, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 0, 1]]
 DISCIPLINE PACKET (current-cycle live evidence for N1-N8)
-  N2 wall: position-diagonality in the site basis. A route crosses it only by separating the eight character labels with a position-diagonal observable.
-  [PASS] A11 N1 route R1 diagonal_polynomial_algebra  (mechanism: products and powers of position-diagonal site operators; attempt: expectation of diag(u)*diag(v)*diag(x) with independent symbolic weights in all eight characters; outcome: BLOCKED, equals (1/8) sum_n u_n v_n x_n for every k)
-  [PASS] A12 N1 route R2 offdiagonal_translation_observable  (mechanism: off-diagonal translation observable in the site basis; attempt: expectation of T_x, T_y and T_z in all eight characters; outcome: REACHED label separation, the eight triples ((-1)^k_x,(-1)^k_y,(-1)^k_z) are distinct, but every diagonal entry of every T_mu is zero)
-  [PASS] A13 N1 route R3 mixed_state_convex_combination  (mechanism: state-side convex mixture of characters; attempt: tr(rho O) for rho = sum_k p_k P_k with eight free symbolic p_k; outcome: BLOCKED, equals (sum_k p_k) (1/8) sum_n w_n, so it depends on rho only through its trace)
-  [PASS] A14 N1 route R4 eigenbasis_degeneracy_rigidity  (mechanism: joint-eigenbasis degeneracy; attempt: simultaneous eigenspace dimensions for the three generators and for the two-generator subgroup {T_x,T_y}; outcome: BLOCKED at three generators, every joint dimension is 1 so the profile is basis-independent, while the subgroup gives dimension 2 and admits the non-uniform profile (1/4,0,1/4,0,1/4,0,1/4,0))
-  [PASS] A15 N1 route R5 lattice_extent_variation  (mechanism: lattice extent variation; attempt: rebuild every Z_L^3 translation character for L = 2, 3, 4, test every position profile, test the symbolic-weight expectation for a probe character, and require a single-site indicator to be rejected at each extent; outcome: BLOCKED at every extent, the profile is uniform 1/L^3 and the expectation is (1/L^3) sum_n w_n, so the blindness is not an L=2 artifact)
-  N5 rhetoric audit; resolution_classes_checked = [per_element, per_site, per_mode, per_block, lattice_wide]
-  N5 statement S1 phrase: "The formulas here assign no physical carrier, observable, or readout role to either basis."
-  [PASS] A16 N5 resolution class per_element  (per_element: every single-site operator |n><n| has expectation exactly 1/8 in every character, so no individual site element separates the eight labels)
-  [PASS] A17 N5 resolution class per_site  (per_site: the site-resolved position profile of every character is exactly (1/8,...,1/8), so no site-resolved readout separates the eight labels)
-  [PASS] A18 N5 resolution class per_mode  (per_mode: the symbolic diagonal expectation takes one and the same value across all eight character modes, so no mode-resolved readout separates them)
-  [PASS] A19 N5 resolution class per_block  (per_block: the supplied K_1 block average, its five-character complement average, and the whole-cell average of the diagonal expectation are equal)
-  [PASS] A20 N5 resolution class lattice_wide  (lattice_wide: d<psi_k,O psi_k>/dw_n = 1/8 for every character k and every site n, so the expectation depends on the weights through sum_n w_n alone)
-  [PASS] A21 the audited note carries the N5 statement phrase  (note=FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md)
-  N3 hidden-wall scan: no check assumes the finite character-sum identity; every equality is evaluated from the explicit site-basis permutation and character matrices.
-  N4 residual: the residual not settled here is whether T_mu is a physical observable, which belongs to a separate authority surface.
-  N6 partial closure: character-label separation is reached by R2 on the indexed basis "T_mu psi_k = (-1)^(k_mu) psi_k"; it stops at the N2 wall because every T_mu has zero diagonal in the site basis.
-  N7 steelman R2 resolution: every diagonal entry of T_x, T_y and T_z is zero, so the separating observable is not position-diagonal and the N2 wall is untouched.
-  N8 cross-cycle echo: this runner emits current-cycle evidence only; cross-cycle comparison is orchestrator-owned and is not asserted here.
-TOTAL: PASS=21 FAIL=0
+  N2 wall=position-diagonal linear operator on the supplied finite-cell site basis; walls=[position-diagonal linear operator on the supplied finite-cell site basis]; collapsed_wall_set=[position-diagonal linear operator on the supplied finite-cell site basis]; pairwise_checks=[] because the scoped result has one wall; unresolved=[]
+  [PASS] A11 N1 route route_diagonal_operator_algebra  (route_class=algebraic_rearrangement; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=diagonal operator algebra under products; attempt=evaluate diag(u)diag(v)diag(x) with independent symbolic weights in all eight characters; outcome=the value is (1/8)sum_n u_n v_n x_n for every label, so this algebraic route does not separate them)
+  [PASS] A12 N1 route route_translation_observable  (route_class=alternate_observable_or_readout; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=translation observable outside the diagonal operator class; attempt=evaluate T_x,T_y,T_z expectations in all eight characters; outcome=the eight eigenvalue triples separate the labels, but every T_mu has zero site-basis diagonal and therefore leaves the scoped class)
+  [PASS] A13 N1 route route_projector_state_mixture  (route_class=boundary_or_initial_condition; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=state-side linear projector mixture (normalized nonnegative mixtures are a special case); attempt=evaluate tr[(sum_k p_k P_k)O] for eight free symbolic p_k; outcome=the value is (sum_k p_k)(1/8)sum_n w_n, so the state route adds no label separation)
+  [PASS] A14 N1 route route_generator_subset_degeneracy  (route_class=symmetry_or_representation; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=character representation degeneracy after changing the generator subset; attempt=compare joint eigenspace dimensions for {T_x,T_y,T_z} and subgroup {T_x,T_y}; outcome=the full group has only one-dimensional joint spaces, while the subgroup admits the displayed nonuniform witness and therefore changes a theorem hypothesis)
+  [PASS] A15 N1 route route_periodic_extent_variation  (route_class=lattice_scale_or_limit; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=finite lattice extent variation; attempt=rebuild every Z_L^3 character for L=2,3,4 and test all profiles plus a symbolic diagonal probe; outcome=each tested finite lattice has profile 1/L^3 and expectation (1/L^3)sum_n w_n; other extents are outside this claim)
+  N5 rhetoric audit; resolution_classes_checked=[per_element, per_site, per_mode, per_block, lattice_wide]; untested_resolutions=[]
+  N5 statement S1 phrase: "Within the supplied finite cell, a position-diagonal linear operator cannot separate the eight character labels by expectation value."
+  [PASS] A16 N5 resolution class per_element  (per_element: every matrix unit |n><n| has expectation 1/8 in every character, so each element has the same value for all eight labels)
+  [PASS] A17 N5 resolution class per_site  (per_site: every complete site profile is exactly (1/8,...,1/8), so the eight labels have identical site-resolved diagonal data)
+  [PASS] A18 N5 resolution class per_mode  (per_mode: the arbitrary symbolic diagonal expectation is (1/8)sum_n w_n for each of all eight character modes)
+  [PASS] A19 N5 resolution class per_block  (per_block: all 256 site-subset diagonal projectors have expectation |B|/8 in every character, exhausting the blocks of the supplied cell)
+  [PASS] A20 N5 resolution class lattice_wide  (lattice_wide: summing all eight site projectors gives I_8 and expectation 1 in every character on the entire supplied periodic cell; no larger-cell or infinite-lattice assertion is tested)
+  N3 hidden-wall scan: explicit scoped definitions are the finite cell, full character family, linear expectation, diagonal operator class, and supplied K_1; none is an unlisted wall, axiom, or physical bridge.
+  N4 residual matching: no prior residual witness is cited and no N1 route is marked RULED OUT BY PRIOR; witnesses=[]; unresolved=[]
+  N6 partial-closure handoff: the orchestrator must disposition every indexed primitive, gate, convention, and scope reframe against position-diagonal linear operator on the supplied finite-cell site basis. This runner establishes only the finite algebra, makes no new-axiom claim, and leaves the physical observable/readout bridge as a separate obligation.
+  N7 steelman route_translation_observable: if the physical observable algebra contains T_x,T_y,T_z, their joint signatures separate all labels. The note supplies the distinct resolution surface for the scoped N2 wall.
+  N8 cross-cycle echo: dynamic candidate comparison, universe count, digest, retirement state, and applicability are orchestrator-owned; this runner makes no static corpus-exhaustion claim.
+TOTAL: PASS=20 FAIL=0
 
 ----- stderr -----
 

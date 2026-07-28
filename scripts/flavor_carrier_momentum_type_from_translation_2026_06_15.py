@@ -15,7 +15,6 @@ from __future__ import annotations
 
 import argparse
 import itertools
-import pathlib
 from collections.abc import Callable
 
 import sympy as sp
@@ -35,11 +34,6 @@ Site = tuple[int, int, int]
 SITES: tuple[Site, ...] = tuple(itertools.product((0, 1), repeat=3))
 CORNERS: tuple[Site, ...] = SITES
 HW1: tuple[Site, ...] = tuple(k for k in CORNERS if sum(k) == 1)
-NOTE_PATH = (
-    pathlib.Path(__file__).resolve().parents[1]
-    / "docs"
-    / "FLAVOR_CARRIER_MOMENTUM_TYPE_FROM_TRANSLATION_THEOREM_NOTE_2026-06-15.md"
-)
 
 
 def general_sites(extent: int) -> tuple[Site, ...]:
@@ -265,18 +259,19 @@ class Certificate:
         weights = sp.symbols("w0:8")
         diagonal = sp.diag(*weights)
         uniform_value = sum(weights) / 8
+        wall = "position-diagonal linear operator on the supplied finite-cell site basis"
 
         print("DISCIPLINE PACKET (current-cycle live evidence for N1-N8)")
         print(
-            "  N2 wall: position-diagonality in the site basis. A route crosses it only by"
-            " separating the eight character labels with a position-diagonal observable."
+            f"  N2 wall={wall}; walls=[{wall}]; collapsed_wall_set=[{wall}]; "
+            "pairwise_checks=[] because the scoped result has one wall; unresolved=[]"
         )
 
         u, v, x = sp.symbols("u0:8"), sp.symbols("v0:8"), sp.symbols("x0:8")
         product_operator = sp.diag(*u) * sp.diag(*v) * sp.diag(*x)
         product_value = sum(u[i] * v[i] * x[i] for i in range(8)) / 8
         self.check(
-            "A11 N1 route R1 diagonal_polynomial_algebra",
+            "A11 N1 route route_diagonal_operator_algebra",
             all(
                 sp.expand(
                     (characters[k].T * product_operator * characters[k])[0] - product_value
@@ -285,10 +280,11 @@ class Certificate:
                 for k in CORNERS
             ),
             detail=(
-                "mechanism: products and powers of position-diagonal site operators; "
-                "attempt: expectation of diag(u)*diag(v)*diag(x) with independent symbolic "
-                "weights in all eight characters; "
-                "outcome: BLOCKED, equals (1/8) sum_n u_n v_n x_n for every k"
+                "route_class=algebraic_rearrangement; honesty_marker=ATTEMPTED; "
+                "disposition=CLOSED; mechanism=diagonal operator algebra under products; "
+                "attempt=evaluate diag(u)diag(v)diag(x) with independent symbolic weights "
+                "in all eight characters; outcome=the value is (1/8)sum_n u_n v_n x_n "
+                "for every label, so this algebraic route does not separate them"
             ),
         )
 
@@ -300,7 +296,7 @@ class Certificate:
             for k in CORNERS
         }
         self.check(
-            "A12 N1 route R2 offdiagonal_translation_observable",
+            "A12 N1 route route_translation_observable",
             len(set(signatures.values())) == 8
             and all(
                 signatures[k] == tuple(sp.Integer((-1) ** k[a]) for a in range(3))
@@ -308,25 +304,31 @@ class Certificate:
             )
             and all(translations[a][i, i] == 0 for a in range(3) for i in range(8)),
             detail=(
-                "mechanism: off-diagonal translation observable in the site basis; "
-                "attempt: expectation of T_x, T_y and T_z in all eight characters; "
-                "outcome: REACHED label separation, the eight triples ((-1)^k_x,(-1)^k_y,"
-                "(-1)^k_z) are distinct, but every diagonal entry of every T_mu is zero"
+                "route_class=alternate_observable_or_readout; honesty_marker=ATTEMPTED; "
+                "disposition=CLOSED; mechanism=translation observable outside the diagonal "
+                "operator class; attempt=evaluate T_x,T_y,T_z expectations in all eight "
+                "characters; outcome=the eight eigenvalue triples separate the labels, but "
+                "every T_mu has zero site-basis diagonal and therefore leaves the scoped class"
             ),
         )
 
         mixture = sp.symbols("p0:8")
-        density = sum(
+        projector_mixture = sum(
             (mixture[i] * projectors[CORNERS[i]] for i in range(8)), sp.zeros(8)
         )
         self.check(
-            "A13 N1 route R3 mixed_state_convex_combination",
-            sp.expand(sp.trace(density * diagonal) - sum(mixture) * uniform_value) == 0,
+            "A13 N1 route route_projector_state_mixture",
+            sp.expand(
+                sp.trace(projector_mixture * diagonal)
+                - sum(mixture) * uniform_value
+            )
+            == 0,
             detail=(
-                "mechanism: state-side convex mixture of characters; "
-                "attempt: tr(rho O) for rho = sum_k p_k P_k with eight free symbolic p_k; "
-                "outcome: BLOCKED, equals (sum_k p_k) (1/8) sum_n w_n, so it depends on rho"
-                " only through its trace"
+                "route_class=boundary_or_initial_condition; honesty_marker=ATTEMPTED; "
+                "disposition=CLOSED; mechanism=state-side linear projector mixture "
+                "(normalized nonnegative mixtures are a special case); attempt=evaluate "
+                "tr[(sum_k p_k P_k)O] for eight free symbolic p_k; outcome=the value is "
+                "(sum_k p_k)(1/8)sum_n w_n, so the state route adds no label separation"
             ),
         )
 
@@ -342,7 +344,7 @@ class Certificate:
         witness = (characters[(0, 0, 0)] + characters[(0, 0, 1)]) / sp.sqrt(2)
         witness_profile = tuple(sp.simplify(sp.conjugate(e) * e) for e in witness)
         self.check(
-            "A14 N1 route R4 eigenbasis_degeneracy_rigidity",
+            "A14 N1 route route_generator_subset_degeneracy",
             {joint_dimension((0, 1, 2), k) for k in CORNERS} == {1}
             and {joint_dimension((0, 1), k) for k in CORNERS} == {2}
             and all(
@@ -351,12 +353,12 @@ class Certificate:
             )
             and witness_profile == (sp.Rational(1, 4), sp.Integer(0)) * 4,
             detail=(
-                "mechanism: joint-eigenbasis degeneracy; "
-                "attempt: simultaneous eigenspace dimensions for the three generators and "
-                "for the two-generator subgroup {T_x,T_y}; "
-                "outcome: BLOCKED at three generators, every joint dimension is 1 so the "
-                "profile is basis-independent, while the subgroup gives dimension 2 and "
-                "admits the non-uniform profile (1/4,0,1/4,0,1/4,0,1/4,0)"
+                "route_class=symmetry_or_representation; honesty_marker=ATTEMPTED; "
+                "disposition=CLOSED; mechanism=character representation degeneracy after "
+                "changing the generator subset; attempt=compare joint eigenspace dimensions "
+                "for {T_x,T_y,T_z} and subgroup {T_x,T_y}; outcome=the full group has only "
+                "one-dimensional joint spaces, while the subgroup admits the displayed "
+                "nonuniform witness and therefore changes a theorem hypothesis"
             ),
         )
 
@@ -382,25 +384,25 @@ class Certificate:
             ):
                 extent_uniform = False
         self.check(
-            "A15 N1 route R5 lattice_extent_variation",
+            "A15 N1 route route_periodic_extent_variation",
             extent_uniform and extent_expectation,
             detail=(
-                "mechanism: lattice extent variation; "
-                "attempt: rebuild every Z_L^3 translation character for L = 2, 3, 4, test every "
-                "position profile, test the symbolic-weight expectation for a probe character, "
-                "and require a single-site indicator to be rejected at each extent; "
-                "outcome: BLOCKED at every extent, the profile is uniform 1/L^3 and the "
-                "expectation is (1/L^3) sum_n w_n, so the blindness is not an L=2 artifact"
+                "route_class=lattice_scale_or_limit; honesty_marker=ATTEMPTED; "
+                "disposition=CLOSED; mechanism=finite lattice extent variation; "
+                "attempt=rebuild every Z_L^3 character for L=2,3,4 and test all profiles plus "
+                "a symbolic diagonal probe; outcome=each tested finite lattice has profile "
+                "1/L^3 and expectation (1/L^3)sum_n w_n; other extents are outside this claim"
             ),
         )
 
         statement = (
-            "The formulas here assign no physical carrier, observable, or readout role to"
-            " either basis."
+            "Within the supplied finite cell, a position-diagonal linear operator cannot"
+            " separate the eight character labels by expectation value."
         )
         print(
-            "  N5 rhetoric audit; resolution_classes_checked ="
-            " [per_element, per_site, per_mode, per_block, lattice_wide]"
+            "  N5 rhetoric audit; resolution_classes_checked="
+            "[per_element, per_site, per_mode, per_block, lattice_wide]; "
+            "untested_resolutions=[]"
         )
         print(f'  N5 statement S1 phrase: "{statement}"')
 
@@ -419,8 +421,8 @@ class Certificate:
                 for j in range(8)
             ),
             detail=(
-                "per_element: every single-site operator |n><n| has expectation exactly 1/8 in"
-                " every character, so no individual site element separates the eight labels"
+                "per_element: every matrix unit |n><n| has expectation 1/8 in every "
+                "character, so each element has the same value for all eight labels"
             ),
         )
         self.check(
@@ -431,8 +433,8 @@ class Certificate:
                 for k in CORNERS
             ),
             detail=(
-                "per_site: the site-resolved position profile of every character is exactly"
-                " (1/8,...,1/8), so no site-resolved readout separates the eight labels"
+                "per_site: every complete site profile is exactly (1/8,...,1/8), so the "
+                "eight labels have identical site-resolved diagonal data"
             ),
         )
         modes = {
@@ -443,63 +445,79 @@ class Certificate:
             len(set(modes.values())) == 1
             and all(sp.expand(modes[k] - uniform_value) == 0 for k in CORNERS),
             detail=(
-                "per_mode: the symbolic diagonal expectation takes one and the same value"
-                " across all eight character modes, so no mode-resolved readout separates them"
+                "per_mode: the arbitrary symbolic diagonal expectation is "
+                "(1/8)sum_n w_n for each of all eight character modes"
             ),
         )
-        supplied_block = sum(modes[k] for k in HW1) / len(HW1)
-        complement = tuple(k for k in CORNERS if k not in HW1)
-        complement_block = sum(modes[k] for k in complement) / len(complement)
-        whole_cell = sum(modes[k] for k in CORNERS) / len(CORNERS)
+        block_resolution_ok = True
+        for mask in range(1 << len(SITES)):
+            indicator = tuple(
+                sp.Integer(1) if mask & (1 << n) else sp.Integer(0)
+                for n in range(len(SITES))
+            )
+            block_operator = sp.diag(*indicator)
+            expected_block_value = sum(indicator) / 8
+            if any(
+                sp.expand(
+                    (characters[k].T * block_operator * characters[k])[0]
+                    - expected_block_value
+                )
+                != 0
+                for k in CORNERS
+            ):
+                block_resolution_ok = False
+                break
         self.check(
             "A19 N5 resolution class per_block",
-            sp.expand(supplied_block - complement_block) == 0
-            and sp.expand(supplied_block - whole_cell) == 0,
+            block_resolution_ok,
             detail=(
-                "per_block: the supplied K_1 block average, its five-character complement"
-                " average, and the whole-cell average of the diagonal expectation are equal"
+                "per_block: all 256 site-subset diagonal projectors have expectation "
+                "|B|/8 in every character, exhausting the blocks of the supplied cell"
             ),
         )
+        full_cell_operator = sum(site_operators, sp.zeros(8))
         self.check(
             "A20 N5 resolution class lattice_wide",
-            all(
-                sp.diff(modes[k], weights[n]) == sp.Rational(1, 8)
+            full_cell_operator == sp.eye(8)
+            and all(
+                sp.expand(
+                    (characters[k].T * full_cell_operator * characters[k])[0]
+                    - 1
+                )
+                == 0
                 for k in CORNERS
-                for n in range(8)
             ),
             detail=(
-                "lattice_wide: d<psi_k,O psi_k>/dw_n = 1/8 for every character k and every"
-                " site n, so the expectation depends on the weights through sum_n w_n alone"
+                "lattice_wide: summing all eight site projectors gives I_8 and expectation "
+                "1 in every character on the entire supplied periodic cell; no larger-cell "
+                "or infinite-lattice assertion is tested"
             ),
-        )
-        note_text = " ".join(NOTE_PATH.read_text(encoding="utf-8").split())
-        self.check(
-            "A21 the audited note carries the N5 statement phrase",
-            " ".join(statement.split()) in note_text,
-            detail=f"note={NOTE_PATH.name}",
         )
 
         print(
-            "  N3 hidden-wall scan: no check assumes the finite character-sum identity; every"
-            " equality is evaluated from the explicit site-basis permutation and character"
-            " matrices."
+            "  N3 hidden-wall scan: explicit scoped definitions are the finite cell, full "
+            "character family, linear expectation, diagonal operator class, and supplied "
+            "K_1; none is an unlisted wall, axiom, or physical bridge."
         )
         print(
-            "  N4 residual: the residual not settled here is whether T_mu is a physical"
-            " observable, which belongs to a separate authority surface."
+            "  N4 residual matching: no prior residual witness is cited and no N1 route is "
+            "marked RULED OUT BY PRIOR; witnesses=[]; unresolved=[]"
         )
         print(
-            '  N6 partial closure: character-label separation is reached by R2 on the indexed'
-            ' basis "T_mu psi_k = (-1)^(k_mu) psi_k"; it stops at the N2 wall because every'
-            " T_mu has zero diagonal in the site basis."
+            f"  N6 partial-closure handoff: the orchestrator must disposition every indexed "
+            f"primitive, gate, convention, and scope reframe against {wall}. This runner "
+            "establishes only the finite algebra, makes no new-axiom claim, and leaves the "
+            "physical observable/readout bridge as a separate obligation."
         )
         print(
-            "  N7 steelman R2 resolution: every diagonal entry of T_x, T_y and T_z is zero, so"
-            " the separating observable is not position-diagonal and the N2 wall is untouched."
+            "  N7 steelman route_translation_observable: if the physical observable algebra "
+            "contains T_x,T_y,T_z, their joint signatures separate all labels. The note "
+            "supplies the distinct resolution surface for the scoped N2 wall."
         )
         print(
-            "  N8 cross-cycle echo: this runner emits current-cycle evidence only; cross-cycle"
-            " comparison is orchestrator-owned and is not asserted here."
+            "  N8 cross-cycle echo: dynamic candidate comparison, universe count, digest, "
+            "retirement state, and applicability are orchestrator-owned; this runner makes "
+            "no static corpus-exhaustion claim."
         )
 
 

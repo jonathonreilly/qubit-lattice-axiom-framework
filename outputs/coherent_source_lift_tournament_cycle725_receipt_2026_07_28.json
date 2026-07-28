@@ -1,0 +1,54 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle725_coherent_source_lift_tournament_2026_07_28.txt": "bb22ad03f8b1a140116af1bc38e60047f40fe8deeca4ccd97a77c548eebf94d5",
+      "frontier_cycle725_cslt_independent_check_2026_07_28.txt": "4e784f4cd62474ee3c3aa7bd2211fd3d6ea7aa8e8d7551a5a5c0412b8dafc3fa"
+    },
+    "note": {
+      "path": "docs/COHERENT_SOURCE_LIFT_TOURNAMENT_CYCLE725_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "02f8a8625907c2d79c8fd54edd361cadfd8e20d3504c42238b61a311ef1efd56"
+    },
+    "runners": {
+      "frontier_cycle725_coherent_source_lift_tournament_2026_07_28.py": "74b7f098ed45ed2767a4bcb426e79912f2528997e39d4ba67784dc453afa2319",
+      "frontier_cycle725_cslt_independent_check_2026_07_28.py": "e9610cc56033ad9e54fb21e63131900ee9229f91ca21eab4370359f40df85bed"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "cslt_completion_witness": true,
+    "fixed_supplies": "Cycle-721/722 inventory unchanged plus the declared census schema and the two reduction conventions (role-uniform; stage-resolved); landed source surfaces at their own scopes",
+    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
+    "not_derived": "any energy/stress/resource law, reciprocal response, sign/scale law, gravity identification, or Born content; S2/S3 input ports and frozen-output acceptance harnesses; the full-Fock Cycle-320 construction; the classification of Ward-lawful census projections",
+    "positive_scope": "the epoch census is a lawful input to the landed tensor-lift surface under a declared projection (full check set, gates preserved); byte-pinned unchanged reruns and exact integer bindings for the Cycle-322 and Cycle-294 surfaces; the frozen Ward projection-selectivity disposition; named no-input-port findings",
+    "s1_true_feed": true,
+    "s2_input_port_exists": false,
+    "s3_input_port_exists": false,
+    "source_law_selected": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 14
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 725,
+  "date": "2026-07-28",
+  "result": {
+    "cslt_completion_witness": true,
+    "harness_sha_pins": 5,
+    "landed_harness_pass_lines": [
+      7,
+      20,
+      5
+    ],
+    "s1_lawful_census_role_uniform": true,
+    "s1_stage_resolved_ward_failure_frozen": true,
+    "s1_true_feed": true,
+    "s2_input_port_exists": false,
+    "s3_input_port_exists": false,
+    "source_law_selected": false
+  },
+  "status": "CYCLE725_COHERENT_SOURCE_LIFT_TOURNAMENT_PASS"
+}

@@ -1,0 +1,2052 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle725_cslt_independent_check_2026_07_28.py
+runner_sha256: e9610cc56033ad9e54fb21e63131900ee9229f91ca21eab4370359f40df85bed
+input_fingerprint_sha256: e362951978f47e3d58fc70d3e67e65951d3975fadd3394a95d586073c577f608
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 100.81
+status: ok
+----- stdout -----
+PASS schema_extraction
+PASS census_recomputation
+PASS sha_pin_certificate
+PASS harness_rerun_certificate
+PASS primary_source_discipline
+{
+  "audit": "unset",
+  "audit_input_paths": [
+    "scripts/frontier_cycle725_coherent_source_lift_tournament_2026_07_28.py",
+    "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py"
+  ],
+  "audit_timeout_seconds": 900,
+  "authority": "none",
+  "blocked_primary_imports_present": [],
+  "certificates": {
+    "census_recomputation": {
+      "admissions_by_variant": {
+        "alternate_port": 24,
+        "primary": 24
+      },
+      "all_role_counts_equal_24": true,
+      "blocked_primary_imports_present": [],
+      "builds_per_variant": 1,
+      "canonical_source_fresh_process": {
+        "pass": true,
+        "returncode": 0,
+        "source": [
+          0.9560846981508337,
+          0.20853115457242088,
+          -0.11358498026730297,
+          -0.6441467627494118,
+          0.8042745120994024,
+          -0.539453694840751,
+          -0.6572617178811084,
+          -0.4692739937907995,
+          0.6274974981738409,
+          -0.31225462420151445
+        ],
+        "stderr_tail": [],
+        "tol": 1e-10
+      },
+      "expected_stage_resolved_vector": [
+        225,
+        9,
+        112,
+        17304,
+        24,
+        225,
+        18,
+        0,
+        17304,
+        24
+      ],
+      "lawful": {
+        "alternate_port": true,
+        "primary": true
+      },
+      "numerically_nonproportional": true,
+      "pass": true,
+      "ratio_max": 1149.0085651309723,
+      "ratio_min": -1119.3101350421375,
+      "ratio_spread": 2268.31870017311,
+      "required_ratio_spread_strictly_above": 1000.0,
+      "retained_witnesses": {
+        "alternate_port": {
+          "actuality": true,
+          "admissibility": true,
+          "binder": true,
+          "certificate": true,
+          "law_domain": true
+        },
+        "primary": {
+          "actuality": true,
+          "admissibility": true,
+          "binder": true,
+          "certificate": true,
+          "law_domain": true
+        }
+      },
+      "role_counts": {
+        "alternate_port": {
+          "actuality": 24,
+          "admissibility": 24,
+          "binder": 24,
+          "certificate": 24,
+          "law_domain": 24
+        },
+        "primary": {
+          "actuality": 24,
+          "admissibility": 24,
+          "binder": 24,
+          "certificate": 24,
+          "law_domain": 24
+        }
+      },
+      "role_reduction_rows": [
+        {
+          "block": "lapse",
+          "canonical_fixture_coefficient": 0.9560846981508337,
+          "canonical_slot": 0,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][0]",
+          "observed_integer_count": 24,
+          "packet_role": "certificate",
+          "real_contribution": 22.94603275562001,
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_fixture_coefficient": 0.20853115457242088,
+          "canonical_slot": 1,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][1]",
+          "observed_integer_count": 24,
+          "packet_role": "binder",
+          "real_contribution": 5.004747709738101,
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_fixture_coefficient": -0.11358498026730297,
+          "canonical_slot": 2,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][2]",
+          "observed_integer_count": 24,
+          "packet_role": "actuality",
+          "real_contribution": -2.7260395264152715,
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_fixture_coefficient": -0.6441467627494118,
+          "canonical_slot": 3,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][3]",
+          "observed_integer_count": 24,
+          "packet_role": "admissibility",
+          "real_contribution": -15.459522305985885,
+          "variant": "primary"
+        },
+        {
+          "block": "trace",
+          "canonical_fixture_coefficient": 0.8042745120994024,
+          "canonical_slot": 4,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][4]",
+          "observed_integer_count": 24,
+          "packet_role": "law_domain",
+          "real_contribution": 19.302588290385657,
+          "variant": "primary"
+        },
+        {
+          "block": "shear",
+          "canonical_fixture_coefficient": -0.539453694840751,
+          "canonical_slot": 5,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][5]",
+          "observed_integer_count": 24,
+          "packet_role": "certificate",
+          "real_contribution": -12.946888676178023,
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_fixture_coefficient": -0.6572617178811084,
+          "canonical_slot": 6,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][6]",
+          "observed_integer_count": 24,
+          "packet_role": "binder",
+          "real_contribution": -15.774281229146602,
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_fixture_coefficient": -0.4692739937907995,
+          "canonical_slot": 7,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][7]",
+          "observed_integer_count": 24,
+          "packet_role": "actuality",
+          "real_contribution": -11.262575850979188,
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_fixture_coefficient": 0.6274974981738409,
+          "canonical_slot": 8,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][8]",
+          "observed_integer_count": 24,
+          "packet_role": "admissibility",
+          "real_contribution": 15.059939956172183,
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_fixture_coefficient": -0.31225462420151445,
+          "canonical_slot": 9,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][9]",
+          "observed_integer_count": 24,
+          "packet_role": "law_domain",
+          "real_contribution": -7.494110980836346,
+          "variant": "alternate_port"
+        }
+      ],
+      "role_uniform_reduced_vector": [
+        22.94603275562001,
+        5.004747709738101,
+        -2.7260395264152715,
+        -15.459522305985885,
+        19.302588290385657,
+        -12.946888676178023,
+        -15.774281229146602,
+        -11.262575850979188,
+        15.059939956172183,
+        -7.494110980836346
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "stage_accounting_exact": true,
+      "stage_reduction_rows": [
+        {
+          "block": "lapse",
+          "canonical_slot": 0,
+          "coefficient": 1.0,
+          "observed_integer_count": 225,
+          "real_contribution": 225.0,
+          "stage": "A",
+          "stage_statistic": "slot_count",
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_slot": 1,
+          "coefficient": 1.0,
+          "observed_integer_count": 9,
+          "real_contribution": 9.0,
+          "stage": "B",
+          "stage_statistic": "slot_count",
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_slot": 2,
+          "coefficient": 1.0,
+          "observed_integer_count": 112,
+          "real_contribution": 112.0,
+          "stage": "C",
+          "stage_statistic": "slot_count",
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_slot": 3,
+          "coefficient": 1.0,
+          "observed_integer_count": 17304,
+          "real_contribution": 17304.0,
+          "stage": "D",
+          "stage_statistic": "slot_count",
+          "variant": "primary"
+        },
+        {
+          "block": "trace",
+          "canonical_slot": 4,
+          "coefficient": 1.0,
+          "observed_integer_count": 24,
+          "real_contribution": 24.0,
+          "stage": "E",
+          "stage_statistic": "slot_count",
+          "variant": "primary"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 5,
+          "coefficient": 1.0,
+          "observed_integer_count": 225,
+          "real_contribution": 225.0,
+          "stage": "A",
+          "stage_statistic": "slot_count",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 6,
+          "coefficient": 1.0,
+          "observed_integer_count": 18,
+          "real_contribution": 18.0,
+          "stage": "B",
+          "stage_statistic": "slot_count",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 7,
+          "coefficient": 1.0,
+          "declared_zero_reason": "alternate_port has no Stage-C slots",
+          "observed_integer_count": 0,
+          "real_contribution": 0.0,
+          "stage": "C",
+          "stage_statistic": "slot_count",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 8,
+          "coefficient": 1.0,
+          "observed_integer_count": 17304,
+          "real_contribution": 17304.0,
+          "stage": "D",
+          "stage_statistic": "slot_count",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 9,
+          "coefficient": 1.0,
+          "observed_integer_count": 24,
+          "real_contribution": 24.0,
+          "stage": "E",
+          "stage_statistic": "slot_count",
+          "variant": "alternate_port"
+        }
+      ],
+      "stage_resolved_statistics": {
+        "alternate_port": {
+          "handoff_total_matches_walk": true,
+          "register_touch_total_matches_walk": true,
+          "stages": {
+            "A": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 100,
+              "read_touch_count": 100,
+              "register_touch_count": 1490,
+              "retain_after_declaration_count": 472,
+              "slot_count": 225,
+              "word_count": 368,
+              "write_touch_count": 1390
+            },
+            "B": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 12,
+              "read_touch_count": 0,
+              "register_touch_count": 36,
+              "retain_after_declaration_count": 12,
+              "slot_count": 18,
+              "word_count": 18,
+              "write_touch_count": 36
+            },
+            "C": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 0,
+              "read_touch_count": 0,
+              "register_touch_count": 0,
+              "retain_after_declaration_count": 0,
+              "slot_count": 0,
+              "word_count": 0,
+              "write_touch_count": 0
+            },
+            "D": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 72,
+              "read_touch_count": 0,
+              "register_touch_count": 34264,
+              "retain_after_declaration_count": 544,
+              "slot_count": 17304,
+              "word_count": 17304,
+              "write_touch_count": 34264
+            },
+            "E": {
+              "admitted_packet_word_count": 24,
+              "declared_handoff_count": 120,
+              "read_touch_count": 120,
+              "register_touch_count": 144,
+              "retain_after_declaration_count": 144,
+              "slot_count": 24,
+              "word_count": 24,
+              "write_touch_count": 24
+            }
+          },
+          "totals": {
+            "admitted_packet_word_count": 24,
+            "declared_handoff_count": 304,
+            "read_touch_count": 220,
+            "register_touch_count": 35934,
+            "retain_after_declaration_count": 1172,
+            "slot_count": 17571,
+            "word_count": 17714,
+            "write_touch_count": 35714
+          },
+          "walk_handoffs_declared": 304,
+          "walk_register_touches": 35934
+        },
+        "primary": {
+          "handoff_total_matches_walk": true,
+          "register_touch_total_matches_walk": true,
+          "stages": {
+            "A": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 100,
+              "read_touch_count": 100,
+              "register_touch_count": 1490,
+              "retain_after_declaration_count": 472,
+              "slot_count": 225,
+              "word_count": 368,
+              "write_touch_count": 1390
+            },
+            "B": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 152,
+              "read_touch_count": 0,
+              "register_touch_count": 668,
+              "retain_after_declaration_count": 252,
+              "slot_count": 9,
+              "word_count": 112,
+              "write_touch_count": 668
+            },
+            "C": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 180,
+              "read_touch_count": 100,
+              "register_touch_count": 460,
+              "retain_after_declaration_count": 180,
+              "slot_count": 112,
+              "word_count": 112,
+              "write_touch_count": 360
+            },
+            "D": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 72,
+              "read_touch_count": 0,
+              "register_touch_count": 34264,
+              "retain_after_declaration_count": 544,
+              "slot_count": 17304,
+              "word_count": 17304,
+              "write_touch_count": 34264
+            },
+            "E": {
+              "admitted_packet_word_count": 24,
+              "declared_handoff_count": 120,
+              "read_touch_count": 120,
+              "register_touch_count": 144,
+              "retain_after_declaration_count": 144,
+              "slot_count": 24,
+              "word_count": 24,
+              "write_touch_count": 24
+            }
+          },
+          "totals": {
+            "admitted_packet_word_count": 24,
+            "declared_handoff_count": 624,
+            "read_touch_count": 320,
+            "register_touch_count": 37026,
+            "retain_after_declaration_count": 1592,
+            "slot_count": 17674,
+            "word_count": 17920,
+            "write_touch_count": 36706
+          },
+          "walk_handoffs_declared": 624,
+          "walk_register_touches": 37026
+        }
+      },
+      "stage_resolved_vector": [
+        225.0,
+        9.0,
+        112.0,
+        17304.0,
+        24.0,
+        225.0,
+        18.0,
+        0.0,
+        17304.0,
+        24.0
+      ],
+      "stage_statistics_nonuniform": true,
+      "stage_to_role_uniform_slot_ratios": [
+        9.805616613394415,
+        1.7982924458885403,
+        -41.08524433146406,
+        -1119.3101350421375,
+        1.2433565716134585,
+        -17.378692721286374,
+        -1.1410979516924595,
+        -0.0,
+        1149.0085651309723,
+        -3.202514622664634
+      ]
+    },
+    "harness_rerun_certificate": {
+      "expected_pass_counts": [
+        7,
+        20,
+        5
+      ],
+      "harnesses": [
+        {
+          "execution": "fresh subprocess of the landed main with no arguments",
+          "expected_pass_line_count": 7,
+          "fail_lines": [],
+          "observed_fail_line_count": 0,
+          "observed_pass_line_count": 7,
+          "pass": true,
+          "path": "scripts/signed_gravity_oriented_tensor_source_lift.py",
+          "required_marker": "FINAL_TAG: SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_FINITE_CONDITIONAL",
+          "required_marker_found": true,
+          "returncode": 0,
+          "runtime_seconds": 0.06430416699731722,
+          "stderr_tail": [],
+          "stdout_sha256": "62cad5c712ca48cf8a0eb3ae709579125f320f0cde02f793192b769bbd68464c",
+          "summary_lines": [
+            "SUMMARY: PASS=7 FAIL=0",
+            "FINAL_TAG: SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_FINITE_CONDITIONAL"
+          ],
+          "timed_out": false
+        },
+        {
+          "execution": "fresh subprocess of the landed main with no arguments",
+          "expected_pass_line_count": 20,
+          "fail_lines": [],
+          "observed_fail_line_count": 0,
+          "observed_pass_line_count": 20,
+          "pass": true,
+          "path": "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
+          "required_marker": "RESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED",
+          "required_marker_found": true,
+          "returncode": 0,
+          "runtime_seconds": 45.93582466698717,
+          "stderr_tail": [],
+          "stdout_sha256": "2e43dea1bd208384a4de3d6bb730500c3acd0adfed3a6e27c82bf10ab74823a9",
+          "summary_lines": [
+            "SUMMARY {'pass': 20, 'fail': 0}",
+            "RESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED"
+          ],
+          "timed_out": false
+        },
+        {
+          "execution": "fresh subprocess of the landed main with no arguments",
+          "expected_pass_line_count": 5,
+          "fail_lines": [],
+          "observed_fail_line_count": 0,
+          "observed_pass_line_count": 5,
+          "pass": true,
+          "path": "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py",
+          "required_marker": null,
+          "required_marker_found": true,
+          "returncode": 0,
+          "runtime_seconds": 49.00040704201092,
+          "stderr_tail": [],
+          "stdout_sha256": "831bfc1ac79b02f8b585329c2c3966d8ca64a01be72f8a6a9209a61f1bb15afd",
+          "summary_lines": [],
+          "timed_out": false
+        }
+      ],
+      "observed_fail_counts": [
+        0,
+        0,
+        0
+      ],
+      "observed_pass_counts": [
+        7,
+        20,
+        5
+      ],
+      "pass": true,
+      "runtime_seconds": 95.00053587599541
+    },
+    "primary_source_discipline": {
+      "attribute_assignments_onto_imported_S_modules": [],
+      "blocked_primary_imports_present": [],
+      "frozen_Ward_failure": {
+        "contains_two_1p9e4_scale_residuals": true,
+        "exact_expected_values": "residuals(+,-,0)=['1.9e+04', '1.9e+04', '0.0e+00']",
+        "exact_number_strings": [
+          "1.9e+04",
+          "1.9e+04",
+          "0.0e+00"
+        ],
+        "expected_pass": false,
+        "numeric_values": [
+          19000.0,
+          19000.0,
+          0.0
+        ]
+      },
+      "imported_S_module_aliases": [
+        "S1",
+        "S2"
+      ],
+      "optimizer_calls": [],
+      "pass": true,
+      "primary_read_as_data_only": true,
+      "reduction_functions": {
+        "reduce_census_to_tensor": {
+          "arithmetic_operators": [
+            "Add",
+            "Mult"
+          ],
+          "calls": [
+            "float",
+            "int",
+            "np.zeros",
+            "range",
+            "rows.append",
+            "str",
+            "tuple",
+            "zip"
+          ],
+          "division_power_or_matrix_operations": [],
+          "line": 554,
+          "pure_declared_arithmetic": true,
+          "unexpected_calls": []
+        },
+        "reduce_stage_resolved_census": {
+          "arithmetic_operators": [
+            "Mult"
+          ],
+          "calls": [
+            "float",
+            "int",
+            "np.zeros",
+            "rows.append",
+            "str"
+          ],
+          "division_power_or_matrix_operations": [],
+          "line": 586,
+          "pure_declared_arithmetic": true,
+          "unexpected_calls": []
+        }
+      },
+      "reductions_are_pure_arithmetic": true,
+      "zero_refit_declarations": [
+        {
+          "fitted_parameters": 0,
+          "line": 1051,
+          "normalization_applied": false,
+          "optimizer_calls": 0
+        },
+        {
+          "fitted_parameters": 0,
+          "line": 1231,
+          "normalization_applied": false,
+          "optimizer_calls": 0
+        }
+      ],
+      "zero_refit_declarations_valid": true
+    },
+    "schema_extraction": {
+      "blocked_primary_imports_present": [],
+      "census_schema_table": [
+        {
+          "dtype": "str",
+          "field": "variant",
+          "meaning": "Cycle-722 input leg: primary or alternate_port"
+        },
+        {
+          "dtype": "tuple[int,int,int]",
+          "field": "shape",
+          "meaning": "fixed epoch box (2,2,2)"
+        },
+        {
+          "dtype": "int",
+          "field": "role_stats.<packet_field>.retained_register",
+          "meaning": "Cycle-722 register supplying the named Stage-E packet field"
+        },
+        {
+          "dtype": "bool",
+          "field": "role_stats.<packet_field>.retained_witness_valid",
+          "meaning": "Cycle-722 origin/last-owner retain-after witness"
+        },
+        {
+          "dtype": "int",
+          "field": "role_stats.<packet_field>.total_register_touches",
+          "meaning": "all scheduled reads/writes of that retained register"
+        },
+        {
+          "dtype": "int",
+          "field": "role_stats.<packet_field>.admitted_stage_e_read_touches",
+          "meaning": "admitted Stage-E packet words reading that role/register"
+        },
+        {
+          "dtype": "list[{tick_identity:int,status:str,admitted:bool}]",
+          "field": "stage_e_admissions",
+          "meaning": "unchanged Cycle-610 admission result for every Stage-E packet"
+        },
+        {
+          "dtype": "dict[str,int]",
+          "field": "walk",
+          "meaning": "Cycle-722 collision/liveness/touch census totals"
+        }
+      ],
+      "census_schema_valid": true,
+      "checker_AUDIT_INPUT_PATHS": [
+        "scripts/frontier_cycle725_coherent_source_lift_tournament_2026_07_28.py",
+        "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py"
+      ],
+      "frozen_disposition_valid": true,
+      "frozen_stage_resolved_disposition": [
+        {
+          "check": "projector_algebra",
+          "expected_pass": true,
+          "expected_values": "ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}",
+          "explanation": "Canonical projector ranks do not depend on source scale.",
+          "kind": "source-independent projector identity"
+        },
+        {
+          "check": "orientation_twist",
+          "expected_pass": true,
+          "expected_values": "block_norms={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, flip_resid=0.0e+00",
+          "explanation": "The twist residual is homogeneous and every canonical block is occupied above the landed threshold.",
+          "kind": "scale-covariant after block occupancy"
+        },
+        {
+          "check": "ward_constraint",
+          "expected_pass": false,
+          "expected_values": "residuals(+,-,0)=['1.9e+04', '1.9e+04', '0.0e+00']",
+          "explanation": "The declared stage-count vector is not in the frozen canonical Ward nullspace; orientation zero still annihilates it.",
+          "kind": "constraint-membership"
+        },
+        {
+          "check": "response_locking",
+          "expected_pass": true,
+          "expected_values": "field_flip=0.0e+00, null=0.0e+00, pair_signs={(1, 1): 1.0, (1, -1): -1.0, (-1, 1): -1.0, (-1, -1): 1.0}",
+          "explanation": "The universal block response and orientation signs are linear identities for this nonuniform source.",
+          "kind": "scale-covariant linear response"
+        },
+        {
+          "check": "scalar_only_no_overclaim",
+          "expected_pass": true,
+          "expected_values": "complement_norm=0.0e+00",
+          "explanation": "This landed gate constructs its own scalar fixture.",
+          "kind": "source-independent fixed scalar fixture"
+        },
+        {
+          "check": "free_tensor_carrier",
+          "expected_pass": true,
+          "expected_values": "tensor_source_blocks={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}",
+          "explanation": "The stage-count source has nonzero shift and shear carriers; the fixed chi-only comparator does not.",
+          "kind": "block-occupancy membership"
+        },
+        {
+          "check": "no_claim",
+          "expected_pass": true,
+          "expected_values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False",
+          "explanation": "This landed gate has no source input.",
+          "kind": "source-independent claim firewall"
+        }
+      ],
+      "harness_declarations": [
+        {
+          "line": 1093,
+          "marker": "FINAL_TAG: SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_FINITE_CONDITIONAL",
+          "path": "scripts/signed_gravity_oriented_tensor_source_lift.py"
+        },
+        {
+          "line": 1108,
+          "marker": "RESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED",
+          "path": "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py"
+        },
+        {
+          "line": 1140,
+          "marker": null,
+          "path": "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py"
+        }
+      ],
+      "harness_declarations_valid": true,
+      "landed_pin_details": {
+        "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py": {
+          "returncode": 0,
+          "stderr_tail": []
+        },
+        "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py": {
+          "returncode": 0,
+          "stderr_tail": []
+        },
+        "scripts/signed_gravity_oriented_tensor_source_lift.py": {
+          "returncode": 0,
+          "stderr_tail": []
+        },
+        "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py": {
+          "returncode": 0,
+          "stderr_tail": []
+        },
+        "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": {
+          "returncode": 0,
+          "stderr_tail": []
+        }
+      },
+      "landed_sha256_pins": {
+        "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py": "5f20146eace2a0b61e5f1aa26f19cc432c8ec5bf737621470e81efecaa763775",
+        "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py": "834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59",
+        "scripts/signed_gravity_oriented_tensor_source_lift.py": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31",
+        "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+        "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706"
+      },
+      "literal_errors": {},
+      "pass": true,
+      "primary_AUDIT_INPUT_PATHS": [
+        "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py",
+        "scripts/signed_gravity_oriented_tensor_source_lift.py",
+        "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
+        "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py",
+        "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py"
+      ],
+      "primary_AUDIT_INPUT_PATHS_literal_tuple": true,
+      "primary_HEAD_pinning_convention_valid": true,
+      "primary_read_as_data_only": true,
+      "role_uniform_reduction": [
+        {
+          "block": "lapse",
+          "canonical_slot": 0,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][0]",
+          "packet_role": "certificate",
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_slot": 1,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][1]",
+          "packet_role": "binder",
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_slot": 2,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][2]",
+          "packet_role": "actuality",
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_slot": 3,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][3]",
+          "packet_role": "admissibility",
+          "variant": "primary"
+        },
+        {
+          "block": "trace",
+          "canonical_slot": 4,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][4]",
+          "packet_role": "law_domain",
+          "variant": "primary"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 5,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][5]",
+          "packet_role": "certificate",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 6,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][6]",
+          "packet_role": "binder",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 7,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][7]",
+          "packet_role": "actuality",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 8,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][8]",
+          "packet_role": "admissibility",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 9,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][9]",
+          "packet_role": "law_domain",
+          "variant": "alternate_port"
+        }
+      ],
+      "role_uniform_reduction_valid": true,
+      "stage_resolved_reduction": [
+        {
+          "block": "lapse",
+          "canonical_slot": 0,
+          "coefficient": 1.0,
+          "stage": "A",
+          "stage_statistic": "slot_count",
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_slot": 1,
+          "coefficient": 1.0,
+          "stage": "B",
+          "stage_statistic": "slot_count",
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_slot": 2,
+          "coefficient": 1.0,
+          "stage": "C",
+          "stage_statistic": "slot_count",
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_slot": 3,
+          "coefficient": 1.0,
+          "stage": "D",
+          "stage_statistic": "slot_count",
+          "variant": "primary"
+        },
+        {
+          "block": "trace",
+          "canonical_slot": 4,
+          "coefficient": 1.0,
+          "stage": "E",
+          "stage_statistic": "slot_count",
+          "variant": "primary"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 5,
+          "coefficient": 1.0,
+          "stage": "A",
+          "stage_statistic": "slot_count",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 6,
+          "coefficient": 1.0,
+          "stage": "B",
+          "stage_statistic": "slot_count",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 7,
+          "coefficient": 1.0,
+          "declared_zero_reason": "alternate_port has no Stage-C slots",
+          "stage": "C",
+          "stage_statistic": "slot_count",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 8,
+          "coefficient": 1.0,
+          "stage": "D",
+          "stage_statistic": "slot_count",
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_slot": 9,
+          "coefficient": 1.0,
+          "stage": "E",
+          "stage_statistic": "slot_count",
+          "variant": "alternate_port"
+        }
+      ],
+      "stage_resolved_reduction_valid": true
+    },
+    "sha_pin_certificate": {
+      "expected_pin_count": 5,
+      "matched_pin_count": 5,
+      "pass": true,
+      "pins": {
+        "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py": {
+          "observed_sha256": "5f20146eace2a0b61e5f1aa26f19cc432c8ec5bf737621470e81efecaa763775",
+          "pass": true,
+          "primary_landed_HEAD_sha256": "5f20146eace2a0b61e5f1aa26f19cc432c8ec5bf737621470e81efecaa763775"
+        },
+        "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py": {
+          "observed_sha256": "834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59",
+          "pass": true,
+          "primary_landed_HEAD_sha256": "834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59"
+        },
+        "scripts/signed_gravity_oriented_tensor_source_lift.py": {
+          "observed_sha256": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31",
+          "pass": true,
+          "primary_landed_HEAD_sha256": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31"
+        },
+        "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py": {
+          "observed_sha256": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+          "pass": true,
+          "primary_landed_HEAD_sha256": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75"
+        },
+        "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": {
+          "observed_sha256": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
+          "pass": true,
+          "primary_landed_HEAD_sha256": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706"
+        }
+      }
+    }
+  },
+  "check_summary": {
+    "passing": 5,
+    "total": 5
+  },
+  "checks": [
+    {
+      "detail": {
+        "blocked_primary_imports_present": [],
+        "census_schema_table": [
+          {
+            "dtype": "str",
+            "field": "variant",
+            "meaning": "Cycle-722 input leg: primary or alternate_port"
+          },
+          {
+            "dtype": "tuple[int,int,int]",
+            "field": "shape",
+            "meaning": "fixed epoch box (2,2,2)"
+          },
+          {
+            "dtype": "int",
+            "field": "role_stats.<packet_field>.retained_register",
+            "meaning": "Cycle-722 register supplying the named Stage-E packet field"
+          },
+          {
+            "dtype": "bool",
+            "field": "role_stats.<packet_field>.retained_witness_valid",
+            "meaning": "Cycle-722 origin/last-owner retain-after witness"
+          },
+          {
+            "dtype": "int",
+            "field": "role_stats.<packet_field>.total_register_touches",
+            "meaning": "all scheduled reads/writes of that retained register"
+          },
+          {
+            "dtype": "int",
+            "field": "role_stats.<packet_field>.admitted_stage_e_read_touches",
+            "meaning": "admitted Stage-E packet words reading that role/register"
+          },
+          {
+            "dtype": "list[{tick_identity:int,status:str,admitted:bool}]",
+            "field": "stage_e_admissions",
+            "meaning": "unchanged Cycle-610 admission result for every Stage-E packet"
+          },
+          {
+            "dtype": "dict[str,int]",
+            "field": "walk",
+            "meaning": "Cycle-722 collision/liveness/touch census totals"
+          }
+        ],
+        "census_schema_valid": true,
+        "checker_AUDIT_INPUT_PATHS": [
+          "scripts/frontier_cycle725_coherent_source_lift_tournament_2026_07_28.py",
+          "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py"
+        ],
+        "frozen_disposition_valid": true,
+        "frozen_stage_resolved_disposition": [
+          {
+            "check": "projector_algebra",
+            "expected_pass": true,
+            "expected_values": "ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}",
+            "explanation": "Canonical projector ranks do not depend on source scale.",
+            "kind": "source-independent projector identity"
+          },
+          {
+            "check": "orientation_twist",
+            "expected_pass": true,
+            "expected_values": "block_norms={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, flip_resid=0.0e+00",
+            "explanation": "The twist residual is homogeneous and every canonical block is occupied above the landed threshold.",
+            "kind": "scale-covariant after block occupancy"
+          },
+          {
+            "check": "ward_constraint",
+            "expected_pass": false,
+            "expected_values": "residuals(+,-,0)=['1.9e+04', '1.9e+04', '0.0e+00']",
+            "explanation": "The declared stage-count vector is not in the frozen canonical Ward nullspace; orientation zero still annihilates it.",
+            "kind": "constraint-membership"
+          },
+          {
+            "check": "response_locking",
+            "expected_pass": true,
+            "expected_values": "field_flip=0.0e+00, null=0.0e+00, pair_signs={(1, 1): 1.0, (1, -1): -1.0, (-1, 1): -1.0, (-1, -1): 1.0}",
+            "explanation": "The universal block response and orientation signs are linear identities for this nonuniform source.",
+            "kind": "scale-covariant linear response"
+          },
+          {
+            "check": "scalar_only_no_overclaim",
+            "expected_pass": true,
+            "expected_values": "complement_norm=0.0e+00",
+            "explanation": "This landed gate constructs its own scalar fixture.",
+            "kind": "source-independent fixed scalar fixture"
+          },
+          {
+            "check": "free_tensor_carrier",
+            "expected_pass": true,
+            "expected_values": "tensor_source_blocks={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}",
+            "explanation": "The stage-count source has nonzero shift and shear carriers; the fixed chi-only comparator does not.",
+            "kind": "block-occupancy membership"
+          },
+          {
+            "check": "no_claim",
+            "expected_pass": true,
+            "expected_values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False",
+            "explanation": "This landed gate has no source input.",
+            "kind": "source-independent claim firewall"
+          }
+        ],
+        "harness_declarations": [
+          {
+            "line": 1093,
+            "marker": "FINAL_TAG: SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_FINITE_CONDITIONAL",
+            "path": "scripts/signed_gravity_oriented_tensor_source_lift.py"
+          },
+          {
+            "line": 1108,
+            "marker": "RESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED",
+            "path": "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py"
+          },
+          {
+            "line": 1140,
+            "marker": null,
+            "path": "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py"
+          }
+        ],
+        "harness_declarations_valid": true,
+        "landed_pin_details": {
+          "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py": {
+            "returncode": 0,
+            "stderr_tail": []
+          },
+          "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py": {
+            "returncode": 0,
+            "stderr_tail": []
+          },
+          "scripts/signed_gravity_oriented_tensor_source_lift.py": {
+            "returncode": 0,
+            "stderr_tail": []
+          },
+          "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py": {
+            "returncode": 0,
+            "stderr_tail": []
+          },
+          "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": {
+            "returncode": 0,
+            "stderr_tail": []
+          }
+        },
+        "landed_sha256_pins": {
+          "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py": "5f20146eace2a0b61e5f1aa26f19cc432c8ec5bf737621470e81efecaa763775",
+          "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py": "834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59",
+          "scripts/signed_gravity_oriented_tensor_source_lift.py": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31",
+          "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+          "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706"
+        },
+        "literal_errors": {},
+        "pass": true,
+        "primary_AUDIT_INPUT_PATHS": [
+          "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py",
+          "scripts/signed_gravity_oriented_tensor_source_lift.py",
+          "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
+          "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py",
+          "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py"
+        ],
+        "primary_AUDIT_INPUT_PATHS_literal_tuple": true,
+        "primary_HEAD_pinning_convention_valid": true,
+        "primary_read_as_data_only": true,
+        "role_uniform_reduction": [
+          {
+            "block": "lapse",
+            "canonical_slot": 0,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][0]",
+            "packet_role": "certificate",
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_slot": 1,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][1]",
+            "packet_role": "binder",
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_slot": 2,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][2]",
+            "packet_role": "actuality",
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_slot": 3,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][3]",
+            "packet_role": "admissibility",
+            "variant": "primary"
+          },
+          {
+            "block": "trace",
+            "canonical_slot": 4,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][4]",
+            "packet_role": "law_domain",
+            "variant": "primary"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 5,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][5]",
+            "packet_role": "certificate",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 6,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][6]",
+            "packet_role": "binder",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 7,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][7]",
+            "packet_role": "actuality",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 8,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][8]",
+            "packet_role": "admissibility",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 9,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][9]",
+            "packet_role": "law_domain",
+            "variant": "alternate_port"
+          }
+        ],
+        "role_uniform_reduction_valid": true,
+        "stage_resolved_reduction": [
+          {
+            "block": "lapse",
+            "canonical_slot": 0,
+            "coefficient": 1.0,
+            "stage": "A",
+            "stage_statistic": "slot_count",
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_slot": 1,
+            "coefficient": 1.0,
+            "stage": "B",
+            "stage_statistic": "slot_count",
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_slot": 2,
+            "coefficient": 1.0,
+            "stage": "C",
+            "stage_statistic": "slot_count",
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_slot": 3,
+            "coefficient": 1.0,
+            "stage": "D",
+            "stage_statistic": "slot_count",
+            "variant": "primary"
+          },
+          {
+            "block": "trace",
+            "canonical_slot": 4,
+            "coefficient": 1.0,
+            "stage": "E",
+            "stage_statistic": "slot_count",
+            "variant": "primary"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 5,
+            "coefficient": 1.0,
+            "stage": "A",
+            "stage_statistic": "slot_count",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 6,
+            "coefficient": 1.0,
+            "stage": "B",
+            "stage_statistic": "slot_count",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 7,
+            "coefficient": 1.0,
+            "declared_zero_reason": "alternate_port has no Stage-C slots",
+            "stage": "C",
+            "stage_statistic": "slot_count",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 8,
+            "coefficient": 1.0,
+            "stage": "D",
+            "stage_statistic": "slot_count",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 9,
+            "coefficient": 1.0,
+            "stage": "E",
+            "stage_statistic": "slot_count",
+            "variant": "alternate_port"
+          }
+        ],
+        "stage_resolved_reduction_valid": true
+      },
+      "label": "schema_extraction",
+      "pass": true
+    },
+    {
+      "detail": {
+        "admissions_by_variant": {
+          "alternate_port": 24,
+          "primary": 24
+        },
+        "all_role_counts_equal_24": true,
+        "blocked_primary_imports_present": [],
+        "builds_per_variant": 1,
+        "canonical_source_fresh_process": {
+          "pass": true,
+          "returncode": 0,
+          "source": [
+            0.9560846981508337,
+            0.20853115457242088,
+            -0.11358498026730297,
+            -0.6441467627494118,
+            0.8042745120994024,
+            -0.539453694840751,
+            -0.6572617178811084,
+            -0.4692739937907995,
+            0.6274974981738409,
+            -0.31225462420151445
+          ],
+          "stderr_tail": [],
+          "tol": 1e-10
+        },
+        "expected_stage_resolved_vector": [
+          225,
+          9,
+          112,
+          17304,
+          24,
+          225,
+          18,
+          0,
+          17304,
+          24
+        ],
+        "lawful": {
+          "alternate_port": true,
+          "primary": true
+        },
+        "numerically_nonproportional": true,
+        "pass": true,
+        "ratio_max": 1149.0085651309723,
+        "ratio_min": -1119.3101350421375,
+        "ratio_spread": 2268.31870017311,
+        "required_ratio_spread_strictly_above": 1000.0,
+        "retained_witnesses": {
+          "alternate_port": {
+            "actuality": true,
+            "admissibility": true,
+            "binder": true,
+            "certificate": true,
+            "law_domain": true
+          },
+          "primary": {
+            "actuality": true,
+            "admissibility": true,
+            "binder": true,
+            "certificate": true,
+            "law_domain": true
+          }
+        },
+        "role_counts": {
+          "alternate_port": {
+            "actuality": 24,
+            "admissibility": 24,
+            "binder": 24,
+            "certificate": 24,
+            "law_domain": 24
+          },
+          "primary": {
+            "actuality": 24,
+            "admissibility": 24,
+            "binder": 24,
+            "certificate": 24,
+            "law_domain": 24
+          }
+        },
+        "role_reduction_rows": [
+          {
+            "block": "lapse",
+            "canonical_fixture_coefficient": 0.9560846981508337,
+            "canonical_slot": 0,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][0]",
+            "observed_integer_count": 24,
+            "packet_role": "certificate",
+            "real_contribution": 22.94603275562001,
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_fixture_coefficient": 0.20853115457242088,
+            "canonical_slot": 1,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][1]",
+            "observed_integer_count": 24,
+            "packet_role": "binder",
+            "real_contribution": 5.004747709738101,
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_fixture_coefficient": -0.11358498026730297,
+            "canonical_slot": 2,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][2]",
+            "observed_integer_count": 24,
+            "packet_role": "actuality",
+            "real_contribution": -2.7260395264152715,
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_fixture_coefficient": -0.6441467627494118,
+            "canonical_slot": 3,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][3]",
+            "observed_integer_count": 24,
+            "packet_role": "admissibility",
+            "real_contribution": -15.459522305985885,
+            "variant": "primary"
+          },
+          {
+            "block": "trace",
+            "canonical_fixture_coefficient": 0.8042745120994024,
+            "canonical_slot": 4,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][4]",
+            "observed_integer_count": 24,
+            "packet_role": "law_domain",
+            "real_contribution": 19.302588290385657,
+            "variant": "primary"
+          },
+          {
+            "block": "shear",
+            "canonical_fixture_coefficient": -0.539453694840751,
+            "canonical_slot": 5,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][5]",
+            "observed_integer_count": 24,
+            "packet_role": "certificate",
+            "real_contribution": -12.946888676178023,
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_fixture_coefficient": -0.6572617178811084,
+            "canonical_slot": 6,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][6]",
+            "observed_integer_count": 24,
+            "packet_role": "binder",
+            "real_contribution": -15.774281229146602,
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_fixture_coefficient": -0.4692739937907995,
+            "canonical_slot": 7,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][7]",
+            "observed_integer_count": 24,
+            "packet_role": "actuality",
+            "real_contribution": -11.262575850979188,
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_fixture_coefficient": 0.6274974981738409,
+            "canonical_slot": 8,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][8]",
+            "observed_integer_count": 24,
+            "packet_role": "admissibility",
+            "real_contribution": 15.059939956172183,
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_fixture_coefficient": -0.31225462420151445,
+            "canonical_slot": 9,
+            "census_field": "admitted_stage_e_read_touches",
+            "coefficient": "S1.tensor_source_with_constraints()[0][9]",
+            "observed_integer_count": 24,
+            "packet_role": "law_domain",
+            "real_contribution": -7.494110980836346,
+            "variant": "alternate_port"
+          }
+        ],
+        "role_uniform_reduced_vector": [
+          22.94603275562001,
+          5.004747709738101,
+          -2.7260395264152715,
+          -15.459522305985885,
+          19.302588290385657,
+          -12.946888676178023,
+          -15.774281229146602,
+          -11.262575850979188,
+          15.059939956172183,
+          -7.494110980836346
+        ],
+        "shape": [
+          2,
+          2,
+          2
+        ],
+        "stage_accounting_exact": true,
+        "stage_reduction_rows": [
+          {
+            "block": "lapse",
+            "canonical_slot": 0,
+            "coefficient": 1.0,
+            "observed_integer_count": 225,
+            "real_contribution": 225.0,
+            "stage": "A",
+            "stage_statistic": "slot_count",
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_slot": 1,
+            "coefficient": 1.0,
+            "observed_integer_count": 9,
+            "real_contribution": 9.0,
+            "stage": "B",
+            "stage_statistic": "slot_count",
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_slot": 2,
+            "coefficient": 1.0,
+            "observed_integer_count": 112,
+            "real_contribution": 112.0,
+            "stage": "C",
+            "stage_statistic": "slot_count",
+            "variant": "primary"
+          },
+          {
+            "block": "shift",
+            "canonical_slot": 3,
+            "coefficient": 1.0,
+            "observed_integer_count": 17304,
+            "real_contribution": 17304.0,
+            "stage": "D",
+            "stage_statistic": "slot_count",
+            "variant": "primary"
+          },
+          {
+            "block": "trace",
+            "canonical_slot": 4,
+            "coefficient": 1.0,
+            "observed_integer_count": 24,
+            "real_contribution": 24.0,
+            "stage": "E",
+            "stage_statistic": "slot_count",
+            "variant": "primary"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 5,
+            "coefficient": 1.0,
+            "observed_integer_count": 225,
+            "real_contribution": 225.0,
+            "stage": "A",
+            "stage_statistic": "slot_count",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 6,
+            "coefficient": 1.0,
+            "observed_integer_count": 18,
+            "real_contribution": 18.0,
+            "stage": "B",
+            "stage_statistic": "slot_count",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 7,
+            "coefficient": 1.0,
+            "declared_zero_reason": "alternate_port has no Stage-C slots",
+            "observed_integer_count": 0,
+            "real_contribution": 0.0,
+            "stage": "C",
+            "stage_statistic": "slot_count",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 8,
+            "coefficient": 1.0,
+            "observed_integer_count": 17304,
+            "real_contribution": 17304.0,
+            "stage": "D",
+            "stage_statistic": "slot_count",
+            "variant": "alternate_port"
+          },
+          {
+            "block": "shear",
+            "canonical_slot": 9,
+            "coefficient": 1.0,
+            "observed_integer_count": 24,
+            "real_contribution": 24.0,
+            "stage": "E",
+            "stage_statistic": "slot_count",
+            "variant": "alternate_port"
+          }
+        ],
+        "stage_resolved_statistics": {
+          "alternate_port": {
+            "handoff_total_matches_walk": true,
+            "register_touch_total_matches_walk": true,
+            "stages": {
+              "A": {
+                "admitted_packet_word_count": 0,
+                "declared_handoff_count": 100,
+                "read_touch_count": 100,
+                "register_touch_count": 1490,
+                "retain_after_declaration_count": 472,
+                "slot_count": 225,
+                "word_count": 368,
+                "write_touch_count": 1390
+              },
+              "B": {
+                "admitted_packet_word_count": 0,
+                "declared_handoff_count": 12,
+                "read_touch_count": 0,
+                "register_touch_count": 36,
+                "retain_after_declaration_count": 12,
+                "slot_count": 18,
+                "word_count": 18,
+                "write_touch_count": 36
+              },
+              "C": {
+                "admitted_packet_word_count": 0,
+                "declared_handoff_count": 0,
+                "read_touch_count": 0,
+                "register_touch_count": 0,
+                "retain_after_declaration_count": 0,
+                "slot_count": 0,
+                "word_count": 0,
+                "write_touch_count": 0
+              },
+              "D": {
+                "admitted_packet_word_count": 0,
+                "declared_handoff_count": 72,
+                "read_touch_count": 0,
+                "register_touch_count": 34264,
+                "retain_after_declaration_count": 544,
+                "slot_count": 17304,
+                "word_count": 17304,
+                "write_touch_count": 34264
+              },
+              "E": {
+                "admitted_packet_word_count": 24,
+                "declared_handoff_count": 120,
+                "read_touch_count": 120,
+                "register_touch_count": 144,
+                "retain_after_declaration_count": 144,
+                "slot_count": 24,
+                "word_count": 24,
+                "write_touch_count": 24
+              }
+            },
+            "totals": {
+              "admitted_packet_word_count": 24,
+              "declared_handoff_count": 304,
+              "read_touch_count": 220,
+              "register_touch_count": 35934,
+              "retain_after_declaration_count": 1172,
+              "slot_count": 17571,
+              "word_count": 17714,
+              "write_touch_count": 35714
+            },
+            "walk_handoffs_declared": 304,
+            "walk_register_touches": 35934
+          },
+          "primary": {
+            "handoff_total_matches_walk": true,
+            "register_touch_total_matches_walk": true,
+            "stages": {
+              "A": {
+                "admitted_packet_word_count": 0,
+                "declared_handoff_count": 100,
+                "read_touch_count": 100,
+                "register_touch_count": 1490,
+                "retain_after_declaration_count": 472,
+                "slot_count": 225,
+                "word_count": 368,
+                "write_touch_count": 1390
+              },
+              "B": {
+                "admitted_packet_word_count": 0,
+                "declared_handoff_count": 152,
+                "read_touch_count": 0,
+                "register_touch_count": 668,
+                "retain_after_declaration_count": 252,
+                "slot_count": 9,
+                "word_count": 112,
+                "write_touch_count": 668
+              },
+              "C": {
+                "admitted_packet_word_count": 0,
+                "declared_handoff_count": 180,
+                "read_touch_count": 100,
+                "register_touch_count": 460,
+                "retain_after_declaration_count": 180,
+                "slot_count": 112,
+                "word_count": 112,
+                "write_touch_count": 360
+              },
+              "D": {
+                "admitted_packet_word_count": 0,
+                "declared_handoff_count": 72,
+                "read_touch_count": 0,
+                "register_touch_count": 34264,
+                "retain_after_declaration_count": 544,
+                "slot_count": 17304,
+                "word_count": 17304,
+                "write_touch_count": 34264
+              },
+              "E": {
+                "admitted_packet_word_count": 24,
+                "declared_handoff_count": 120,
+                "read_touch_count": 120,
+                "register_touch_count": 144,
+                "retain_after_declaration_count": 144,
+                "slot_count": 24,
+                "word_count": 24,
+                "write_touch_count": 24
+              }
+            },
+            "totals": {
+              "admitted_packet_word_count": 24,
+              "declared_handoff_count": 624,
+              "read_touch_count": 320,
+              "register_touch_count": 37026,
+              "retain_after_declaration_count": 1592,
+              "slot_count": 17674,
+              "word_count": 17920,
+              "write_touch_count": 36706
+            },
+            "walk_handoffs_declared": 624,
+            "walk_register_touches": 37026
+          }
+        },
+        "stage_resolved_vector": [
+          225.0,
+          9.0,
+          112.0,
+          17304.0,
+          24.0,
+          225.0,
+          18.0,
+          0.0,
+          17304.0,
+          24.0
+        ],
+        "stage_statistics_nonuniform": true,
+        "stage_to_role_uniform_slot_ratios": [
+          9.805616613394415,
+          1.7982924458885403,
+          -41.08524433146406,
+          -1119.3101350421375,
+          1.2433565716134585,
+          -17.378692721286374,
+          -1.1410979516924595,
+          -0.0,
+          1149.0085651309723,
+          -3.202514622664634
+        ]
+      },
+      "label": "census_recomputation",
+      "pass": true
+    },
+    {
+      "detail": {
+        "expected_pin_count": 5,
+        "matched_pin_count": 5,
+        "pass": true,
+        "pins": {
+          "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py": {
+            "observed_sha256": "5f20146eace2a0b61e5f1aa26f19cc432c8ec5bf737621470e81efecaa763775",
+            "pass": true,
+            "primary_landed_HEAD_sha256": "5f20146eace2a0b61e5f1aa26f19cc432c8ec5bf737621470e81efecaa763775"
+          },
+          "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py": {
+            "observed_sha256": "834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59",
+            "pass": true,
+            "primary_landed_HEAD_sha256": "834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59"
+          },
+          "scripts/signed_gravity_oriented_tensor_source_lift.py": {
+            "observed_sha256": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31",
+            "pass": true,
+            "primary_landed_HEAD_sha256": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31"
+          },
+          "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py": {
+            "observed_sha256": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+            "pass": true,
+            "primary_landed_HEAD_sha256": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75"
+          },
+          "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": {
+            "observed_sha256": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
+            "pass": true,
+            "primary_landed_HEAD_sha256": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706"
+          }
+        }
+      },
+      "label": "sha_pin_certificate",
+      "pass": true
+    },
+    {
+      "detail": {
+        "expected_pass_counts": [
+          7,
+          20,
+          5
+        ],
+        "harnesses": [
+          {
+            "execution": "fresh subprocess of the landed main with no arguments",
+            "expected_pass_line_count": 7,
+            "fail_lines": [],
+            "observed_fail_line_count": 0,
+            "observed_pass_line_count": 7,
+            "pass": true,
+            "path": "scripts/signed_gravity_oriented_tensor_source_lift.py",
+            "required_marker": "FINAL_TAG: SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_FINITE_CONDITIONAL",
+            "required_marker_found": true,
+            "returncode": 0,
+            "runtime_seconds": 0.06430416699731722,
+            "stderr_tail": [],
+            "stdout_sha256": "62cad5c712ca48cf8a0eb3ae709579125f320f0cde02f793192b769bbd68464c",
+            "summary_lines": [
+              "SUMMARY: PASS=7 FAIL=0",
+              "FINAL_TAG: SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_FINITE_CONDITIONAL"
+            ],
+            "timed_out": false
+          },
+          {
+            "execution": "fresh subprocess of the landed main with no arguments",
+            "expected_pass_line_count": 20,
+            "fail_lines": [],
+            "observed_fail_line_count": 0,
+            "observed_pass_line_count": 20,
+            "pass": true,
+            "path": "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
+            "required_marker": "RESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED",
+            "required_marker_found": true,
+            "returncode": 0,
+            "runtime_seconds": 45.93582466698717,
+            "stderr_tail": [],
+            "stdout_sha256": "2e43dea1bd208384a4de3d6bb730500c3acd0adfed3a6e27c82bf10ab74823a9",
+            "summary_lines": [
+              "SUMMARY {'pass': 20, 'fail': 0}",
+              "RESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED"
+            ],
+            "timed_out": false
+          },
+          {
+            "execution": "fresh subprocess of the landed main with no arguments",
+            "expected_pass_line_count": 5,
+            "fail_lines": [],
+            "observed_fail_line_count": 0,
+            "observed_pass_line_count": 5,
+            "pass": true,
+            "path": "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py",
+            "required_marker": null,
+            "required_marker_found": true,
+            "returncode": 0,
+            "runtime_seconds": 49.00040704201092,
+            "stderr_tail": [],
+            "stdout_sha256": "831bfc1ac79b02f8b585329c2c3966d8ca64a01be72f8a6a9209a61f1bb15afd",
+            "summary_lines": [],
+            "timed_out": false
+          }
+        ],
+        "observed_fail_counts": [
+          0,
+          0,
+          0
+        ],
+        "observed_pass_counts": [
+          7,
+          20,
+          5
+        ],
+        "pass": true,
+        "runtime_seconds": 95.00053587599541
+      },
+      "label": "harness_rerun_certificate",
+      "pass": true
+    },
+    {
+      "detail": {
+        "attribute_assignments_onto_imported_S_modules": [],
+        "blocked_primary_imports_present": [],
+        "frozen_Ward_failure": {
+          "contains_two_1p9e4_scale_residuals": true,
+          "exact_expected_values": "residuals(+,-,0)=['1.9e+04', '1.9e+04', '0.0e+00']",
+          "exact_number_strings": [
+            "1.9e+04",
+            "1.9e+04",
+            "0.0e+00"
+          ],
+          "expected_pass": false,
+          "numeric_values": [
+            19000.0,
+            19000.0,
+            0.0
+          ]
+        },
+        "imported_S_module_aliases": [
+          "S1",
+          "S2"
+        ],
+        "optimizer_calls": [],
+        "pass": true,
+        "primary_read_as_data_only": true,
+        "reduction_functions": {
+          "reduce_census_to_tensor": {
+            "arithmetic_operators": [
+              "Add",
+              "Mult"
+            ],
+            "calls": [
+              "float",
+              "int",
+              "np.zeros",
+              "range",
+              "rows.append",
+              "str",
+              "tuple",
+              "zip"
+            ],
+            "division_power_or_matrix_operations": [],
+            "line": 554,
+            "pure_declared_arithmetic": true,
+            "unexpected_calls": []
+          },
+          "reduce_stage_resolved_census": {
+            "arithmetic_operators": [
+              "Mult"
+            ],
+            "calls": [
+              "float",
+              "int",
+              "np.zeros",
+              "rows.append",
+              "str"
+            ],
+            "division_power_or_matrix_operations": [],
+            "line": 586,
+            "pure_declared_arithmetic": true,
+            "unexpected_calls": []
+          }
+        },
+        "reductions_are_pure_arithmetic": true,
+        "zero_refit_declarations": [
+          {
+            "fitted_parameters": 0,
+            "line": 1051,
+            "normalization_applied": false,
+            "optimizer_calls": 0
+          },
+          {
+            "fitted_parameters": 0,
+            "line": 1231,
+            "normalization_applied": false,
+            "optimizer_calls": 0
+          }
+        ],
+        "zero_refit_declarations_valid": true
+      },
+      "label": "primary_source_discipline",
+      "pass": true
+    }
+  ],
+  "report_sha256": "b908a5ae04142d941c2c78b9a0d0c59cfa325976dc8342eaf85878a5a1f203b3",
+  "runtime_seconds": 100.378698540997,
+  "status": "PASS",
+  "top_level_blocklist": [
+    "frontier_cycle725_coherent_source_lift_tournament_2026_07_28"
+  ]
+}
+CYCLE725_CSLT_INDEPENDENT_CHECK_PASS
+
+----- stderr -----
+

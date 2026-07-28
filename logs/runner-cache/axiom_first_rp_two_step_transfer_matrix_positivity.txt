@@ -1,14 +1,14 @@
 ===== runner cache v1 =====
 runner: scripts/axiom_first_rp_two_step_transfer_matrix_positivity.py
-runner_sha256: 7ee84f82936ec4f1cfbe0b2af60997c8c89ad56e1ebc060968058f1d03aabee7
+runner_sha256: faa76bf00fe250f9dd5f8058db2f0bae8deb1903adff53de927e8a88f68ece31
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
-2-STEP BLOCKED STAGGERED-KS TRANSFER MATRIX POSITIVITY (free case, R1+R2+C7)
+FREE STAGGERED TWO-STEP RECURRENCE + CONDITIONAL FOCK CONSTRUCTION
 Free staggered fermions, 1+1d, m=0.5. eta_0=1, eta_1(t)=(-1)^t. Single-step
-transfer alternates T_even/T_odd; physical object T_hat^2 = T_odd T_even.
+classical recurrence alternates T_even/T_odd; C7 tests its action covariance.
 
 C1  DISPERSION ANCHOR: 2-step decaying eigenvalue == e^{-2E(p)}, E(p) = arcsinh(sqrt(m^2+sin^2 p))
     p= 0.000: decay-mode=+0.38196601+2e-32j  e^-2E=0.38196601  |res|=1.11e-16
@@ -19,8 +19,8 @@ C1  DISPERSION ANCHOR: 2-step decaying eigenvalue == e^{-2E(p)}, E(p) = arcsinh(
     sweep max residual=6.104e-16, max|Im|=2.597e-16, min eig=7.912e-13 (>0 required throughout)
     C1 = PASS
 
-C2  SINGLE-STEP NON-POSITIVITY: complex when sin(p)!=0; negative mode when sin(p)=0
-    => single-step T_hat NOT a positive operator (consistent with the no-go)
+C2  ONE-STEP RECURRENCE NON-POSITIVITY: complex when sin(p)!=0; negative mode at sin(p)=0
+    => the specified classical recurrence carrier is not positive
     p= 0.393: eig(T_even) = [-1.5657-0.5622j, +0.5657-0.2031j]
     p= 0.785: eig(T_even) = [-1.4436-1.0818j, +0.4436-0.3324j]
     p= 1.178: eig(T_even) = [-1.3372-1.4756j, +0.3372-0.3721j]
@@ -29,11 +29,12 @@ C2  SINGLE-STEP NON-POSITIVITY: complex when sin(p)!=0; negative mode when sin(p
     |Im eig(T_even/T_odd)| for sin(p)!=0 in [0.5622, 1.6248]  (min must exceed 1e-3)
     C2 = PASS
 
-C3  TWO-STEP POSITIVITY: T_hat^2 = Gamma(t1^(2)) positive Hermitian, t1^(2)(p) = e^{-2E(p)} from C1
+C3  CONDITIONAL TWO-STEP POSITIVITY: Gamma(t1^(2)) is positive Hermitian
+    when t1^(2)(p) = e^{-2E(p)} is supplied as the Fock kernel
     L_s in (2,3,4,6), dim 4..64, worst case: min eig=1.264282e-04 (>0) max=1.000000 Herm-err=0.0e+00 ||T_hat^2 - B^dag B||=5.6e-17 max|Im(kernel)|=1.7e-16
     C3 = PASS  (positive Hermitian, exact B^dag B, all L_s)
 
-C4  R2 CROSS-CHECK: operator-picture 2-step OS Gram G(F_I,F_J) = <vac| F_I^dag T_hat^2 F_J |vac>,
+C4  CONDITIONAL FOCK-GRAM CROSS-CHECK: G(F_I,F_J) = <vac| F_I^dag T_hat^2 F_J |vac>,
     Hermitian and PSD iff T_hat^2>=0 (contrast: single-step naive Lagrangian Gram min eig = -0.80)
     L_s in (3,4), dimFock 8..16 #obs 16..27, worst case: ||G-G^dag||=0.0e+00  Gram min eig=+0.000000e+00 max=1.000000  PSD=YES
     C4 = PASS  (Hermitian PSD where single-step was -0.80)
@@ -43,43 +44,42 @@ C5  SECOND-QUANTIZATION FUNCTOR (in-repo): Gamma(t1^(2)) built from its defining
     L_s in (2,3,4,6), worst case: intertwiner err=3.5e-18  vac-fix err=0.0e+00  H off-diag=0.0e+00  ||Gamma - exp(-2 a_tau H_hat)||=2.8e-17
     C5 = PASS  (functor relation Gamma=B^dag B verified in-repo)
 
-C6  DECAYING-CHANNEL BRIDGE: spectral projector of action-derived T_odd T_even selects
-    the forward contraction kernel; finite exterior/Gamma image is positive = B^dag B
+C6  CONDITIONAL DECAYING-CHANNEL BRIDGE: spectral projector isolates lambda_-
+    its conditional exterior/Gamma image is positive = B^dag B
     L_s in (2,3,4,6): lambda_dec in [1.458980e-01, 3.819660e-01] (<=1), lambda_grow in [2.618034e+00, 6.854102e+00] (>=1), min eig Gamma=1.264282e-04
     worst case: proj idem=6.1e-16, T2P-lambdaP=3.4e-15, split=9.2e-33, orth=6.1e-16, |Im|=1.7e-16, Gamma tensor=3.5e-18, BdagB=5.6e-17
-    C6 = PASS  (decaying spectral channel derives the Fock kernel)
+    C6 = PASS  (conditional exterior image of the decaying channel)
 
 C7  TWO-SLICE BEREZIN CONSTRUCTION: int prod dchibar dchi e^{-chibar D chi},
-    odd slices eliminated; the decaying kernel is MEASURED, not selected
-    (a) engine: anticomm=True  int dtheta theta=1.0  int dtheta 1=0:True  max|Berezin - det D|=5.0e-15 (n<=4)
-    (b) Nt=6,8: |const - det(E_odd)|=7.9e-17  max|D_eff - (A - B E^-1 C)|=3.1e-16
+    odd slices eliminated; the half-line covariance ratio selects the decaying root
+    (a) engine: anticomm=True  int dtheta theta=1.0  int dtheta 1=0:True  max|Berezin - det D|=7.9e-15 (n<=4)
+    (b) Nt=6,8: |const - det(E_odd)|=1.2e-16  max|D_eff - (A - B E^-1 C)|=2.2e-16
         one-step hop ANTIsym |D[0,1]+D[1,0]|=0.0e+00  ->  two-step hop SYM |D_eff[0,1]-D_eff[1,0]|=0.0e+00
-    (c) a/b=+4.6600657142  tr(T_odd T_even)=+4.6600657142  |diff|=7.0e-16 => chain roots ARE lambda_+-
+    (c) a/b=+4.6600657142  tr(T_odd T_even)=+4.6600657142  |diff|=9.1e-16 => chain roots ARE lambda_+-
     (d) residue: max|G2/G1 - lambda_-| M=8 7.0e-03 -> M=32 6.5e-13; min|G2/G1 - lambda_+|=2.236 rejected
         max|G_00 - 1/(b(lam_+ - lam_-))|=7.6e-14   wrong-root min|G_00 - R_wrong|=1.416 rejected
-    (e) CAR metric max|{a_i,a_j^dag}-delta|=0.0e+00  max|{a_i,a_j}|=0.0e+00; coherent-state norm
-        det D == det(E_odd) b^M lam_+^M (1+lam_-^M)^2, M=2..6 relerr<=4.0e-15; growing root relerr>=46.0 rejected
-    (f) measured kappa(p) == t1^(2)(p) over the BZ: max|diff|=6.5e-13, kappa in [1.458980e-01, 3.819660e-01]
-        reflected Toeplitz Gram kappa^{|i-j|}: min eig(decaying)=+0.469001 > 0, min eig(growing)=-18.037160 < 0
+    (e) conditional JW CAR sanity: max|{a_i,a_j^dag}-delta|=0.0e+00  max|{a_i,a_j}|=0.0e+00
+        determinant root forms: decaying relerr<=4.0e-15, consistently swapped relerr<=9.1e-15, root-symmetry err<=5.1e-15
+    (f) covariance kappa(p) == lambda_-(p) over the BZ: max|diff|=6.5e-13, kappa in [1.458980e-01, 3.819660e-01]
+        conditional unit-residue Toeplitz Gram: min eig(decaying)=+0.469001 > 0, min eig(growing)=-18.037160 < 0
         -log(lam_-)/2=+0.48121183 >= 0 vs -log(lam_+)/2=-0.48121183 < 0 (growing branch not bounded below)
-    C7 = PASS  (kernel MEASURED; growing root rejected 4 ways)
+    C7 = PASS  (Berezin elimination and covariance support)
 
 SUMMARY
   C1 dispersion anchor   : PASS  (m=0.5 residual 2.94e-16; sweep max 6.10e-16, min eig(T_hat^2)>0 over m in [0.05,5.0])
-  C2 single-step non-PSD : PASS  (min |Im eig| for sin(p)!=0 0.562; sin(p)=0 negative mode YES)
-  C3 2-step positivity   : PASS  (T_hat^2 positive Hermitian = B^dag B)
-  C4 R2 OS Gram PSD      : PASS  (2-step OS Gram Hermitian PSD)
+  C2 recurrence non-PSD  : PASS  (min |Im eig| for sin(p)!=0 0.562; sin(p)=0 negative mode YES)
+  C3 conditional Gamma   : PASS  (positive Hermitian = B^dag B)
+  C4 conditional Gram    : PASS  (constructed Fock Gram PSD)
   C5 functor identity    : PASS  (Gamma=B^dag B verified in-repo)
-  C6 decaying bridge     : PASS  (spectral projector -> Fock kernel)
-  C7 Berezin two-slice   : PASS  (measured kernel, residue, CAR, reflected Gram)
+  C6 conditional bridge  : PASS  (spectral channel -> exterior image)
+  C7 Berezin two-slice   : PASS  (action elimination + covariance)
 
 PASS=7 FAIL=0
-  PASS -- the free staggered 2-step blocked transfer matrix T_hat^2 is
-  POSITIVE HERMITIAN: T_hat^2 = B^dag B with the one-particle kernel
-  MEASURED by the two-slice Berezin construction (C7), so
-  H_hat = -log(T_hat^2)/(2 a_tau) >= 0, while the single-step T_hat stays
-  non-positive. Continuum OS reconstruction and the interacting gauge
-  case remain out of scope.
+  PASS -- all scoped algebraic and finite-matrix checks pass.
+  The Berezin elimination fixes the half-line covariance decay ratio, and
+  Gamma(lambda_-) is positive Hermitian = B^dag B conditionally.
+  The action-to-physical-CAR/OS transfer identification remains open; C7
+  does not derive that metric, reflection map, or coherent-state normalization.
 
 ----- stderr -----
 

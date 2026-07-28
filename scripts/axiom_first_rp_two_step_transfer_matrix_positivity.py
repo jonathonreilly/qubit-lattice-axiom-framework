@@ -1,61 +1,21 @@
 #!/usr/bin/env python3
-"""In-repo construction + proof: the 2-step blocked staggered-KS transfer
-matrix T_hat^2 is positive Hermitian (free case explicit), from first
-principles, NOT by literature citation.
+"""Free staggered two-step recurrence and conditional Fock construction.
 
-Load-bearing positive exhibit for the 2-step blocked formulation of
-docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md, and the
-*positive* companion to the single-step no-go runner
-scripts/axiom_first_rp_spin_basis_single_step_psd_failure.py (spin-basis
-single-step Lagrangian Gram non-PSD, min eig -0.80). That no-go is intact and
-correct; THIS runner addresses the SEPARATE 2-step blocked surface. Free
-staggered fermions, 1+1d, U=1, eta_1(t)=(-1)^t: the spatial phase alternates
-with the time slice, so the single-step transfer alternates T_even/T_odd and
-the physical object is T_hat^2 = T_odd . T_even. Nothing is admitted. The
-derivation is written out in the paired note (Steps 1-4 and Step 3b); the
-gates C1-C7 below are named in that note's Scorecard and printed by the run.
+For free U=1 staggered fermions in 1+1d, C1-C6 verify the classical recurrence
+spectrum and the positivity of ``Gamma(diag(e^{-2E(p)}))`` once that decaying
+channel is supplied as the one-particle kernel.  C2 concerns only the specified
+one-step classical recurrence carrier, not a derived physical one-step
+operator.
 
-R1 -- explicit transfer matrix (note Steps 1-4; gates C1,C2,C3,C5). T2cl has
-eigenvalues e^{+-2E(p)}, E(p) = arcsinh(sqrt(m^2 + sin^2 p)) -- the EXACT free
-staggered 1+1d dispersion, so the construction is faithful to the action (C1).
-spec(T_even), spec(T_odd) are complex off sin(p)=0 and carry a NEGATIVE
-eigenvalue at it, so the single-step transfer operator is NOT positive (C2).
-The many-body operator is the second quantization Gamma(t1), BUILT AND VERIFIED
-IN-REPO from its defining intertwiner Gamma(K) a_p^dag = lambda_p a_p^dag
-Gamma(K) (C5), not asserted. With t1^(2)(p) = e^{-2E(p)} MEASURED by C7 rather
-than selected by fiat,
-
-  T_hat^2 = Gamma(t1^(2)) = tensor_p diag(1, e^{-2E(p)})
-          = exp(-2 a_tau H_hat), H_hat = sum_p E(p) a_p^dag a_p >= 0,
-  T_hat^2 = B^dag B,  B = tensor_p diag(1, e^{-E(p)}),
-
-so T_hat^2 is POSITIVE HERMITIAN and H_hat = -log(T_hat^2)/(2 a_tau) is
-self-adjoint and bounded below by 0 -- 2-step reflection positivity.
-
-R2 -- cross-check (note Cross-check; gate C4). The OS reflected correlator
-G(F_I,F_J) = <vac| F_I^dag T_hat^2 F_J |vac>, built explicitly on Fock space,
-is Hermitian and PSD -- DIRECT CONTRAST to the single-step naive Lagrangian
-Gram (min eig -0.80). R1 and R2 agree.
-
-C7 -- two-slice Berezin construction (note Step 3b). R1/R2 TAKE the decaying
-monodromy root as the kernel; C7 DERIVES it from the Grassmann integral itself,
-with a from-scratch exterior engine (theta_i theta_j = -theta_j theta_i,
-int dtheta theta = 1, int dtheta 1 = 0 -- nothing else). Eliminating the ODD
-slices from exp(-chibar D chi) leaves residue det(E_odd) and
-D_eff = a . 1 - b (S + S^-1), a = alpha_e + 1/(2 alpha_o), b = 1/(4 alpha_o):
-the ANTIsymmetric one-step hop becomes a SYMMETRIC two-step hop -- the derived
-reason two steps can be positive when one is not -- and a/b = tr(T_odd T_even)
-exactly, so the chain's roots ARE lambda_+-. WHICH root is the transfer kernel
-is then MEASURED, not chosen, and the growing root is rejected four independent
-ways: half-line propagator ratio and residue, CAR metric, coherent-state
-normalization predictively across M, and the reflected Toeplitz Gram. Its
-generator -log(lambda_+)/2 is not bounded below. Full derivation: note Step 3b.
-
-Gauge-case reduction target (NOT re-derived here, recorded in the note): this
-runner's fermion-sector 2-step positivity times the separate det-positivity and
-gauge-half Cauchy-Schwarz source rows. Full U-integrated RP is not claimed.
-This runner verifies the free-case numerics and records only downstream
-gauge-case context; independent audit owns any status verdict.
+C7 performs an explicit Berezin elimination of the odd time slices.  It proves
+that the eliminated action and the classical monodromy have the same reciprocal
+characteristic roots and that the large-half-line covariance ratio selects the
+decaying root.  It also verifies that the finite determinant normalization is
+root-symmetric.  The Jordan-Wigner CAR and Toeplitz-Gram checks are conditional
+checks of the constructed Fock representation; they do not derive the
+action-to-CAR metric, reflection map, or coherent-state transfer normalization.
+That physical identification remains an explicit proof obligation in the
+paired note.  Independent audit owns every status verdict.
 """
 from __future__ import annotations
 
@@ -92,9 +52,8 @@ def classical_2step(p: float, m: float) -> np.ndarray:
     return classical_step(p, m, 1) @ classical_step(p, m, 0)
 
 
-def single_particle_2step_kernel(p: float, m: float) -> complex:
-    """Physical (decaying-mode) eigenvalue of the action's 2-step classical
-    matrix -- the single-particle 2-step transfer kernel t1^(2)(p)."""
+def decaying_2step_channel(p: float, m: float) -> complex:
+    """Decaying eigenvalue of the action's two-step classical recurrence."""
     ev = np.linalg.eigvals(classical_2step(p, m))
     return ev[int(np.argmin(np.abs(ev)))]
 
@@ -119,7 +78,7 @@ def check_dispersion_anchor(m: float, n_bz: int = 16):
 
 
 def check_single_step_nonpositive(m: float, n_bz: int = 16):
-    """C2: single-step T_even/T_odd are never positive.
+    """C2: the specified one-step recurrence carriers are not positive.
 
     For sin(p) != 0 the spectra are complex. For the exceptional real-spectrum
     modes sin(p)=0, one eigenvalue is negative, so positivity still fails.
@@ -153,14 +112,14 @@ def check_single_step_nonpositive(m: float, n_bz: int = 16):
 
 
 def build_manybody_T2(Ls: int, m: float):
-    """C3: many-body 2-step transfer T_hat^2 = Gamma(t1^(2)) built from the
-    ACTION-DERIVED single-particle kernel, plus its B^dag B factorization.
+    """C3: conditional many-body construction Gamma(t1^(2)) from the decaying
+    recurrence channel, plus its B^dag B factorization.
 
     T_hat^2 = tensor_p diag(1, t1^(2)(p)),  t1^(2)(p) = e^{-2E(p)} (from P1).
     B       = tensor_p diag(1, sqrt(t1^(2)(p))) = tensor_p diag(1, e^{-E(p)}).
     """
     ps = [2.0 * math.pi * k / Ls for k in range(Ls)]
-    kernels = [single_particle_2step_kernel(p, m) for p in ps]
+    kernels = [decaying_2step_channel(p, m) for p in ps]
     max_imag = max(abs(t.imag) for t in kernels)
     # proven real-positive => take real part
     T2 = np.array([[1.0]], dtype=complex)
@@ -205,8 +164,8 @@ def check_dispersion_mass_sweep(masses=MASS_SWEEP, ls_set=(2, 3, 4, 6)):
 
 def spectral_decaying_projection(p: float, m: float) -> dict[str, float]:
     """Spectral projector split of the action-derived T_odd T_even into its
-    reciprocal e^{-2E}/e^{+2E} channels. WHICH channel is the physical transfer
-    kernel is not decided here -- C7 measures it from the Berezin integral.
+    reciprocal e^{-2E}/e^{+2E} channels. Which channel is the physical transfer
+    kernel is not decided here; C7 derives only the action-covariance ratio.
     """
     t2 = classical_2step(p, m)
     ev = np.linalg.eigvals(t2)
@@ -339,7 +298,7 @@ def check_second_quantization_functor(Ls: int, m: float):
     }
 
 
-# R2 cross-check: 2-step OS Gram in the operator/transfer-matrix picture
+# R2 conditional cross-check: Fock Gram in the proposed operator picture
 
 def jw_annihilation(mode: int, Ls: int) -> np.ndarray:
     """Jordan-Wigner annihilation operator a_mode on 2^{L_s} Fock space."""
@@ -361,7 +320,7 @@ def jw_annihilation(mode: int, Ls: int) -> np.ndarray:
 
 
 def r2_os_gram(Ls: int, m: float):
-    """C4: operator-picture 2-step OS Gram G(F_I,F_J)=<vac|F_I^dag T_hat^2 F_J|vac>.
+    """C4: conditional Fock Gram G(F_I,F_J)=<vac|F_I^dag T_hat^2 F_J|vac>.
 
     H_hat = sum_p E(p) a_p^dag a_p is diagonal in the occupation basis, so
     T_hat^2 = exp(-2 H_hat) is computed exactly via the diagonal entries
@@ -511,8 +470,7 @@ def monodromy_roots(p: float, m: float):
 
 
 def check_berezin_construction(m: float) -> dict:
-    """C7 (note Step 3b): two-slice Berezin integration with the transfer kernel
-    MEASURED from the eliminated-chain propagator, not selected from the roots."""
+    """C7: two-slice Berezin elimination and half-line covariance support."""
     out: dict = {}
 
     # (a) engine self-tests: anticommutation and Berezin Gaussian == det.
@@ -563,7 +521,7 @@ def check_berezin_construction(m: float) -> dict:
     out.update(elim_residue_err=res_e, elim_schur_err=sch_e, one_step_antisym=anti1,
                two_step_sym=sym2, a_over_b=ab.real, tr_2step=tr2.real, ab_err=ab_e)
 
-    # (d) the residue: MEASURE the kernel as the half-line propagator ratio.
+    # (d) Measure the half-line action-covariance decay ratio and residue.
     dev8 = dev32 = res_err = 0.0
     grow_gap = res_wrong = math.inf
     for p in C7_MOMENTA:
@@ -582,7 +540,9 @@ def check_berezin_construction(m: float) -> dict:
     out.update(dev8=dev8, dev32=dev32, grow_gap=grow_gap, res_err=res_err,
                res_wrong=res_wrong)
 
-    # (e) CAR metric on this runner's own JW operators.
+    # (e) Internal CAR sanity check for the conditional JW/Fock construction.
+    # These operators are not extracted from D_eff and do not derive the
+    # action-to-CAR metric.
     car_dag = car_aa = 0.0
     for ls in (2, 3, 4):
         aops = [jw_annihilation(k, ls) for k in range(ls)]
@@ -595,24 +555,29 @@ def check_berezin_construction(m: float) -> dict:
                              float(np.max(np.abs(aops[i] @ aops[j] + aops[j] @ aops[i]))))
     out.update(car_dag=car_dag, car_aa=car_aa)
 
-    # (e2) coherent-state normalization, predictive across M: the antiperiodic Fock
-    # trace Tr Gamma(K)^M = 1 + K^M, squared for the doubler pair.
+    # (e2) Root-factorized determinant identity.  Since lam_d*lam_g=1, a
+    # consistent exchange of roots also exchanges the exponential prefactor;
+    # the normalization is exactly root-symmetric and cannot select a branch.
     norm_err = 0.0
-    norm_wrong = math.inf
+    norm_swap_err = 0.0
+    norm_sym_err = 0.0
     for p in C7_MOMENTA:
         lam_d, lam_g = monodromy_roots(p, m)
         a_o = m - 1j * math.sin(p)          # det(E_odd) = a_o^M
         b = 1.0 / (4.0 * a_o)               # the same b eliminated_chain() produces
-        pref0 = a_o * b * lam_g             # per-M factor of det(E_odd) b^M lam_+^M
         for mh in (2, 3, 4, 5, 6):
             dfull = np.linalg.det(staggered_time_form(p, m, 2 * mh))
-            pref = pref0 ** mh
-            norm_err = max(norm_err, abs(dfull - pref * (1.0 + lam_d ** mh) ** 2) / abs(dfull))
-            norm_wrong = min(norm_wrong,
-                             abs(dfull - pref * (1.0 + lam_g ** mh) ** 2) / abs(dfull))
-    out.update(norm_err=norm_err, norm_wrong=norm_wrong)
+            decay_form = (a_o * b * lam_g) ** mh * (1.0 + lam_d ** mh) ** 2
+            swapped_form = (a_o * b * lam_d) ** mh * (1.0 + lam_g ** mh) ** 2
+            scale = abs(dfull)
+            norm_err = max(norm_err, abs(dfull - decay_form) / scale)
+            norm_swap_err = max(norm_swap_err, abs(dfull - swapped_form) / scale)
+            norm_sym_err = max(norm_sym_err, abs(decay_form - swapped_form) / scale)
+    out.update(norm_err=norm_err, norm_swap_err=norm_swap_err,
+               norm_sym_err=norm_sym_err)
 
-    # (f) the identification, the reflected Toeplitz Gram, and boundedness below.
+    # (f) Covariance-ratio identification plus consequences of conditionally
+    # inserting either scalar root into a unit-residue Toeplitz/Fock ansatz.
     ident = 0.0
     kaps = []
     for j in range(9):
@@ -621,7 +586,7 @@ def check_berezin_construction(m: float) -> dict:
         G = np.linalg.inv(D)
         kap = G[0, 2] / G[0, 1]
         kaps.append(kap.real)
-        ident = max(ident, abs(kap - single_particle_2step_kernel(p, m)))
+        ident = max(ident, abs(kap - decaying_2step_channel(p, m)))
     gram_dec = gen_dec = math.inf
     gram_gro = gen_gro = -math.inf
     for p in C7_MOMENTA:
@@ -650,9 +615,9 @@ def _lo(rs, k):
 
 
 def main() -> int:
-    print("2-STEP BLOCKED STAGGERED-KS TRANSFER MATRIX POSITIVITY (free case, R1+R2+C7)")
+    print("FREE STAGGERED TWO-STEP RECURRENCE + CONDITIONAL FOCK CONSTRUCTION")
     print(f"Free staggered fermions, 1+1d, m={MASS}. eta_0=1, eta_1(t)=(-1)^t. Single-step")
-    print("transfer alternates T_even/T_odd; physical object T_hat^2 = T_odd T_even.")
+    print("classical recurrence alternates T_even/T_odd; C7 tests its action covariance.")
     print()
 
     passes = 0
@@ -683,8 +648,8 @@ def main() -> int:
     print()
 
     # ---- C2: single-step non-positivity ----
-    print("C2  SINGLE-STEP NON-POSITIVITY: complex when sin(p)!=0; negative mode when sin(p)=0")
-    print("    => single-step T_hat NOT a positive operator (consistent with the no-go)")
+    print("C2  ONE-STEP RECURRENCE NON-POSITIVITY: complex when sin(p)!=0; negative mode at sin(p)=0")
+    print("    => the specified classical recurrence carrier is not positive")
     complex_min_imag, complex_worst_imag, exceptional_ok, exceptional_rows, examples = check_single_step_nonpositive(MASS)
     for p, ev in examples:
         print(f"    p={p:6.3f}: eig(T_even) = "
@@ -702,8 +667,8 @@ def main() -> int:
     print()
 
     # ---- C3: 2-step positivity + B^dag B ----
-    print("C3  TWO-STEP POSITIVITY: T_hat^2 = Gamma(t1^(2)) positive Hermitian, "
-          "t1^(2)(p) = e^{-2E(p)} from C1")
+    print("C3  CONDITIONAL TWO-STEP POSITIVITY: Gamma(t1^(2)) is positive Hermitian")
+    print("    when t1^(2)(p) = e^{-2E(p)} is supplied as the Fock kernel")
     c3 = True
     rs3 = []
     for Ls in (2, 3, 4, 6):
@@ -722,7 +687,7 @@ def main() -> int:
     print()
 
     # ---- C4: R2 OS Gram cross-check ----
-    print("C4  R2 CROSS-CHECK: operator-picture 2-step OS Gram "
+    print("C4  CONDITIONAL FOCK-GRAM CROSS-CHECK: "
           "G(F_I,F_J) = <vac| F_I^dag T_hat^2 F_J |vac>,")
     print("    Hermitian and PSD iff T_hat^2>=0 (contrast: single-step naive Lagrangian "
           "Gram min eig = -0.80)")
@@ -766,8 +731,8 @@ def main() -> int:
     print()
 
     # ---- C6: decaying-channel spectral projector + exterior/Gamma bridge ----
-    print("C6  DECAYING-CHANNEL BRIDGE: spectral projector of action-derived T_odd T_even selects")
-    print("    the forward contraction kernel; finite exterior/Gamma image is positive = B^dag B")
+    print("C6  CONDITIONAL DECAYING-CHANNEL BRIDGE: spectral projector isolates lambda_-")
+    print("    its conditional exterior/Gamma image is positive = B^dag B")
     c6 = True
     rs6 = []
     for Ls in (2, 3, 4, 6):
@@ -799,14 +764,14 @@ def main() -> int:
           f"|Im|={max(_hi(rs6,'max_dec_imag'), _hi(rs6,'max_grow_imag')):.1e}, "
           f"Gamma tensor={_hi(rs6,'gamma_tensor_err'):.1e}, "
           f"BdagB={_hi(rs6,'gamma_bdagb_err'):.1e}")
-    print(f"    C6 = {'PASS' if c6 else 'FAIL'}  (decaying spectral channel derives the Fock kernel)")
+    print(f"    C6 = {'PASS' if c6 else 'FAIL'}  (conditional exterior image of the decaying channel)")
     passes += int(c6)
     fails += int(not c6)
     print()
 
-    # ---- C7: explicit two-slice Berezin construction (kernel MEASURED) ----
+    # ---- C7: explicit two-slice Berezin elimination and covariance support ----
     print("C7  TWO-SLICE BEREZIN CONSTRUCTION: int prod dchibar dchi e^{-chibar D chi},")
-    print("    odd slices eliminated; the decaying kernel is MEASURED, not selected")
+    print("    odd slices eliminated; the half-line covariance ratio selects the decaying root")
     r7 = check_berezin_construction(MASS)
     print(f"    (a) engine: anticomm={r7['anti_ok']}  int dtheta theta={r7['int_theta']:.1f}  "
           f"int dtheta 1=0:{r7['int_one_empty']}  max|Berezin - det D|={r7['det_err']:.1e} (n<=4)")
@@ -820,13 +785,14 @@ def main() -> int:
           f"min|G2/G1 - lambda_+|={r7['grow_gap']:.3f} rejected")
     print(f"        max|G_00 - 1/(b(lam_+ - lam_-))|={r7['res_err']:.1e}   "
           f"wrong-root min|G_00 - R_wrong|={r7['res_wrong']:.3f} rejected")
-    print(f"    (e) CAR metric max|{{a_i,a_j^dag}}-delta|={r7['car_dag']:.1e}  "
-          f"max|{{a_i,a_j}}|={r7['car_aa']:.1e}; coherent-state norm")
-    print(f"        det D == det(E_odd) b^M lam_+^M (1+lam_-^M)^2, M=2..6 relerr<={r7['norm_err']:.1e}; "
-          f"growing root relerr>={r7['norm_wrong']:.1f} rejected")
-    print(f"    (f) measured kappa(p) == t1^(2)(p) over the BZ: max|diff|={r7['ident']:.1e}, "
+    print(f"    (e) conditional JW CAR sanity: max|{{a_i,a_j^dag}}-delta|={r7['car_dag']:.1e}  "
+          f"max|{{a_i,a_j}}|={r7['car_aa']:.1e}")
+    print(f"        determinant root forms: decaying relerr<={r7['norm_err']:.1e}, "
+          f"consistently swapped relerr<={r7['norm_swap_err']:.1e}, "
+          f"root-symmetry err<={r7['norm_sym_err']:.1e}")
+    print(f"    (f) covariance kappa(p) == lambda_-(p) over the BZ: max|diff|={r7['ident']:.1e}, "
           f"kappa in [{r7['kap_lo']:.6e}, {r7['kap_hi']:.6e}]")
-    print(f"        reflected Toeplitz Gram kappa^{{|i-j|}}: min eig(decaying)={r7['gram_dec']:+.6f} > 0, "
+    print(f"        conditional unit-residue Toeplitz Gram: min eig(decaying)={r7['gram_dec']:+.6f} > 0, "
           f"min eig(growing)={r7['gram_gro']:+.6f} < 0")
     print(f"        -log(lam_-)/2={r7['gen_dec']:+.8f} >= 0 vs -log(lam_+)/2={r7['gen_gro']:+.8f} < 0 "
           "(growing branch not bounded below)")
@@ -843,12 +809,13 @@ def main() -> int:
         and r7["grow_gap"] > 1.0
         and r7["res_err"] < 1e-10 and r7["res_wrong"] > 1.0
         and r7["car_dag"] < 1e-12 and r7["car_aa"] < 1e-12
-        and r7["norm_err"] < 1e-12 and r7["norm_wrong"] > 1.0
+        and r7["norm_err"] < 1e-12
+        and r7["norm_swap_err"] < 1e-12 and r7["norm_sym_err"] < 1e-12
         and r7["ident"] < 1e-10
         and r7["gram_dec"] > 0.0 and r7["gram_gro"] < 0.0
         and r7["gen_dec"] >= 0.0 and r7["gen_gro"] < 0.0
     )
-    print(f"    C7 = {'PASS' if c7 else 'FAIL'}  (kernel MEASURED; growing root rejected 4 ways)")
+    print(f"    C7 = {'PASS' if c7 else 'FAIL'}  (Berezin elimination and covariance support)")
     passes += int(c7)
     fails += int(not c7)
     print()
@@ -858,24 +825,23 @@ def main() -> int:
     print(f"  C1 dispersion anchor   : {'PASS' if c1 else 'FAIL'}"
           f"  (m={MASS} residual {max_res:.2e}; sweep max {sweep_max_res:.2e}, "
           f"min eig(T_hat^2)>0 over m in [0.05,5.0])")
-    print(f"  C2 single-step non-PSD : {'PASS' if c2 else 'FAIL'}"
+    print(f"  C2 recurrence non-PSD  : {'PASS' if c2 else 'FAIL'}"
           f"  (min |Im eig| for sin(p)!=0 {complex_min_imag:.3f}; "
           f"sin(p)=0 negative mode {'YES' if exceptional_ok else 'NO'})")
-    print(f"  C3 2-step positivity   : {'PASS' if c3 else 'FAIL'}  (T_hat^2 positive Hermitian = B^dag B)")
-    print(f"  C4 R2 OS Gram PSD      : {'PASS' if c4 else 'FAIL'}  (2-step OS Gram Hermitian PSD)")
+    print(f"  C3 conditional Gamma   : {'PASS' if c3 else 'FAIL'}  (positive Hermitian = B^dag B)")
+    print(f"  C4 conditional Gram    : {'PASS' if c4 else 'FAIL'}  (constructed Fock Gram PSD)")
     print(f"  C5 functor identity    : {'PASS' if c5 else 'FAIL'}  (Gamma=B^dag B verified in-repo)")
-    print(f"  C6 decaying bridge     : {'PASS' if c6 else 'FAIL'}  (spectral projector -> Fock kernel)")
-    print(f"  C7 Berezin two-slice   : {'PASS' if c7 else 'FAIL'}  (measured kernel, residue, CAR, reflected Gram)")
+    print(f"  C6 conditional bridge  : {'PASS' if c6 else 'FAIL'}  (spectral channel -> exterior image)")
+    print(f"  C7 Berezin two-slice   : {'PASS' if c7 else 'FAIL'}  (action elimination + covariance)")
     print()
     all_ok = (fails == 0)
     print(f"PASS={passes} FAIL={fails}")
     if all_ok:
-        print("  PASS -- the free staggered 2-step blocked transfer matrix T_hat^2 is")
-        print("  POSITIVE HERMITIAN: T_hat^2 = B^dag B with the one-particle kernel")
-        print("  MEASURED by the two-slice Berezin construction (C7), so")
-        print("  H_hat = -log(T_hat^2)/(2 a_tau) >= 0, while the single-step T_hat stays")
-        print("  non-positive. Continuum OS reconstruction and the interacting gauge")
-        print("  case remain out of scope.")
+        print("  PASS -- all scoped algebraic and finite-matrix checks pass.")
+        print("  The Berezin elimination fixes the half-line covariance decay ratio, and")
+        print("  Gamma(lambda_-) is positive Hermitian = B^dag B conditionally.")
+        print("  The action-to-physical-CAR/OS transfer identification remains open; C7")
+        print("  does not derive that metric, reflection map, or coherent-state normalization.")
     else:
         print("  FAIL -- the 2-step positivity construction did not close on the free case.")
         print("  Do NOT force positivity; report the honest wall and run the no-go gate.")

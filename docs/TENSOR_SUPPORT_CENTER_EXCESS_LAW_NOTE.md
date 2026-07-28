@@ -1,201 +1,146 @@
-# Exact Support-Side `A1` Center-Excess Law and the Remaining Tensor Gap
+# Exact Support-Side Center-Excess Law in the Totally Symmetric Cubic Star-Support Sector (`A1`)
 
 **Date:** 2026-04-14  
 **Script:** `scripts/frontier_tensor_support_center_excess_law.py`  
-**Status:** exact support-side center-excess law on the whole canonical `A1`
-family, plus a sampled tensor-law compatibility observation conditional on the
-current chosen tensor observable
+**Type:** bounded_theorem
+**Status:** exact finite-Dirichlet center-excess law in the totally symmetric
+cubic star-support sector, plus a sampled tensor-compatibility observation
+conditional on one chosen numerical observable
 
 ## Purpose
 
-The projective-blindness note proved that the current exact shell/junction
-toolbox cannot see the remaining scalar `A1` background datum at fixed total
-charge.
+This note proves one finite-lattice support identity and records a separate,
+strictly sampled tensor observation. It does not import a negative theorem.
+It makes no exhaustive statement about any other support, shell, or tensor
+observable.
 
-That still left one key axiom-first question:
+## Exact finite-Dirichlet support statement
 
-> after leaving the shell side, what exact microscopic scalar on the support
-> block actually survives and can carry the last tensor law?
+Let `H` be the unit-weight nearest-neighbor negative lattice Laplacian on the
+`13^3` interior of the runner's size-15 cubic box, with zero Dirichlet boundary
+values, and let `G = H^(-1)`. Restrict `G` to the center and its six nearest
+neighbors to obtain the seven-site support matrix `G_S`.
 
-This note answers the support-side half of that question exactly. What it says
-about the tensor side is narrower, and is stated as such below.
+In the totally symmetric cubic star-support sector (shorthand `A1`), use
 
-## Exact support-side statement
+- `e0` for unit charge at the center
+- `s` for the normalized sum of the six arm basis vectors
+- `q_shell = s / sqrt(6)` for charge `1/6` on every arm
 
-Work on the exact seven-site star support with the canonical `A1` basis
+For any support source `q`, define `Q(q) = sum_i q_i` and, when `Q(q) != 0`,
 
-- `e0 = A1(center)`
-- `s = A1(shell-average)`
+`delta_A1(q) = ((G_S q)[center] - mean((G_S q)[arms])) / Q(q)`.
 
-and normalize `s` to unit total charge by `s / sqrt(6)`.
+The center stencil gives
 
-Let `phi_support = G_S q` be the exact support potential induced by the exact
-support Green matrix `G_S`.
+`H e0 = 6 e0 - sum_a e_a`,
 
-Then:
+so `q_shell = e0 - H e0/6` and therefore
 
-- the arm-site support potential per unit charge is identical for the two
-  unit-charge `A1` endpoint backgrounds
-  - `e0`
-  - `s / sqrt(6)`
-- the only exact difference between those two endpoint backgrounds on the
-  support is the center excess
+`G q_shell = G e0 - e0/6`.
 
-`phi_support(center) - phi_support(arm_mean) = 1/6`
+Cubic symmetry makes the six arm values of `u = G e0` equal. Its center equation
+is `6 u_center - 6 u_arm = 1`, so the shell endpoint is constant on the support.
+Thus the two unit-charge endpoints have center excesses `1/6` and `0`:
+`phi_support(center) - phi_support(arm_mean) = 1/6`.
 
-with machine-precision residual.
-
-So after fixing total charge, the exact `A1` support block retains one scalar
-microscopic datum:
-
-`delta_A1(q) = phi_support(center)/Q - phi_support(arm_mean)/Q`.
-
-This is the support-side datum that survives the shell-blindness theorem.
+This equality is exact for the stated operator; the runner's floating-point
+residual is only a numerical witness.
 
 ## Exact canonical formula
 
-For the canonical `Q = 1` projective `A1` family
+For the `Q = 1` family in the totally symmetric cubic star-support sector,
 
-`q_A1(r) = (e0 + r s) / (1 + sqrt(6) r)`
+`q_A1(r) = (e0 + r s) / (1 + sqrt(6) r)`,
 
 the support-side scalar is exactly
 
 `delta_A1(r) = 1 / (6 (1 + sqrt(6) r))`.
 
-### Why this holds for the whole family, not only at sampled `r`
+### Why this holds for every `r >= 0`
 
-The map `q -> phi_support = G_S q` is linear, so the unnormalized center-excess
-numerator
+The unnormalized center-excess numerator is a linear functional of `q`. Every
+family member is the fixed-charge combination
 
-`n(q) = phi_support(center) - phi_support(arm_mean)`
+`q_A1(r) = (1 - t) e0 + t q_shell`,
 
-is a linear functional of `q`. Every member of the canonical family is the
-fixed-total-charge combination
+where `t = sqrt(6) r / (1 + sqrt(6) r)`. Both endpoints have `Q = 1`, so
 
-`q_A1(r) = (1 - t) e0 + t (s / sqrt(6))`, with `t = sqrt(6) r / (1 + sqrt(6) r)`,
+`delta_A1(q_A1(r)) = (1 - t) delta_A1(e0) + t delta_A1(q_shell)`.
 
-of the two unit-charge endpoint backgrounds, and every member carries total
-charge `Q = 1`, so the normalization by `Q` is the same at every `r`. Linearity
-therefore gives
+Substituting the exact endpoint values `1/6` and `0` gives the displayed
+formula. The runner's seeded linearity check and 201-point log-spaced sweep are
+diagnostics of this derivation, not its proof.
 
-`delta_A1(q_A1(r)) = (1 - t) delta_A1(e0) + t delta_A1(s / sqrt(6))`,
+## Bounded tensor-compatibility observation
 
-and the two endpoint values are exactly `1/6` and `0`. Substituting `t` returns
-the displayed closed form. So the law holds for every real `r >= 0` on the
-canonical family, not only at the values the runner happens to evaluate. The
-runner's explicit linearity test and its dense `r` sweep are witnesses of this
-derivation, not its source.
+Everything in this section is conditional and sampled. It concerns one chosen
+numerical observable at one finite list of backgrounds, not the whole family.
 
-So the surviving microscopic scalar is no longer an abstract projective
-parameter. It is an explicit exact support-side center-excess observable.
+**Chosen observable.** Let `eta(q)` be the nonspectral maximum-entry tensor
+envelope returned as the first element of `tensor_metrics(phi(q))`. Its live
+implementation path is documented by the
+[`QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md`](QUARK_ROUTE2_ETA_FLOOR_HF_BOUNDARY_NOTE.md)
+support surface. Let
 
-## Bounded tensor-law consequence
+`c_aniso(q) = reduced_data(phi(q))["anchor_per_Q"]`
 
-Everything in this section is conditional and sampled. It is a statement about
-one specific chosen tensor observable, evaluated at one specific finite list of
-backgrounds. It is not a statement about the projective `A1` family as such.
+on the bounded reduced-shell construction documented by
+[`ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md`](ONE_PARAMETER_REDUCED_SHELL_LAW_NOTE.md),
+and define the actual anisotropic anchor
 
-**The observable this is conditioned on.** The tensor coefficients `gamma_E`
-and `gamma_T` used here are not exact quantities. Each is a central
-finite-difference derivative, taken with step `EPS = 0.005`, of the `eta` floor
-returned by `tensor_metrics` in
-`scripts/frontier_tensor_boundary_drive_two_channel.py`, normalized by the
-`anchor_per_Q` value returned by `reduced_data` in
-`scripts/frontier_one_parameter_reduced_shell_law.py`. Changing that observable,
-that normalization, or that finite-difference step changes the numbers reported
-below, and the statement would then have to be re-derived.
+`A_aniso(q) = c_aniso(q) * Q(q)`.
 
-**The affine law is fitted, not derived.** The runner fixes an affine law in
-`delta_A1` by interpolating the two `A1` support endpoints
+For `Q(q) != 0`, the reported coefficients are the central finite differences
 
-- center background `e0`
-- shell background `s / sqrt(6)`
+`gamma_X(q) = (eta(q + EPS v_X) - eta(q - EPS v_X)) / (2 EPS A_aniso(q))`,
 
-and then evaluates that fitted law elsewhere. Nothing in this note derives the
-slope or the intercept; both are read off those two endpoints.
+with `EPS = 0.005`, `v_E = E_x`, and `v_T = T1x`. Thus the denominator used by
+the runner is `anchor_per_Q * Q(q)`, not `anchor_per_Q` alone. The observable,
+normalization, finite-difference step, and both cited support surfaces are
+support-only conditions; none is promoted here to an axiom-derived tensor law.
 
-**Where the fitted law was actually tested.** It was evaluated at exactly eight
+**Fitted law.** The runner interpolates an affine function of `delta_A1` through
+the two endpoint coefficients at `e0` and `q_shell`. It does not derive the
+slope or intercept.
+
+**Tested backgrounds.** The fitted function is evaluated at exactly eight
 backgrounds:
 
-1. the six canonical `A1` samples `r = 0.25, 0.5, 0.75, 1.0, 1.5, 2.0`
-2. the `exact local O_h` `A1` baseline
-3. the `finite-rank` `A1` baseline
+1. the six `Q = 1` samples `r = 0.25, 0.5, 0.75, 1.0, 1.5, 2.0`
+2. the `exact local O_h` totally symmetric baseline
+3. the `finite-rank` totally symmetric baseline
 
-**What was observed there.** At those eight tested backgrounds, and only there:
+At those eight points, and only there, the observed maximum errors are of order
+`1e-8` on the six canonical samples and a few times `1e-6` on the two named
+baselines. No error bound is claimed at another `r`, background, finite box,
+observable, normalization, or finite-difference step.
 
-- across the six canonical `A1` samples the maximum affine-law error is of
-  order `1e-8`
-- across the two named baselines the maximum affine-law error is at the
-  `few x 1e-6` level already seen in the earlier projective-compatibility note
+## Interpretation and open work
 
-Those two figures are observed maxima over the eight tested points. This note
-makes no claim about the affine law's error at any other `r`, at any other
-background, or for any other tensor observable.
+The exact result is the finite-Dirichlet support identity and its
+continuous-parameter formula. The tensor result is only numerical compatibility
+at the eight listed backgrounds. It leaves open:
 
-## Interpretation
+1. a framework derivation of the tensor observable
+2. exact tensor endpoint coefficients
+3. an affine tensor law beyond the tested points
+4. a restricted tensor-completion theorem
+5. full nonlinear general relativity
 
-On the support side the statement is exact and holds for the whole canonical
-family: after fixing total charge, the microscopic support block retains one
-explicit scalar datum,
-
-- center excess at fixed total charge
-
-and the shell side is blind to it.
-
-On the tensor side the statement is much narrower. At the eight tested
-backgrounds, with the current chosen tensor observable and finite-difference
-step named above, the bright coefficients are numerically compatible with an
-affine law in `delta_A1` whose two constants were fitted from the two endpoint
-backgrounds. That is a sampled compatibility observation, not a derived tensor
-law.
-
-So the forward target keeps its shape and is better organized:
-
-1. derive the exact tensor observable on the support block
-2. derive the exact tensor endpoint coefficients at
-   - `e0`
-   - `s / sqrt(6)`
-3. then ask whether an affine support law in `delta_A1` follows for the family,
-   rather than holding only at tested backgrounds
-
-## What this narrows, and what it opens
-
-What it narrows: on the support side, the surviving scalar is no longer a
-generic function on the projective `A1` manifold. It is an exact center-excess
-observable with a closed form valid on the whole canonical family, carried by
-
-- one exact support-side scalar `delta_A1`
-
-What it opens: a sharp, checkable question on the tensor side. The affine
-compatibility seen at the eight tested backgrounds is a lead, not a theorem.
-The next path this opens is to derive the tensor observable and its two
-endpoint coefficients, and then to test the affine form against a continuous
-family the way `delta_A1` is now tested.
-
-## What this still does not close
-
-This note still does **not** close:
-
-1. the exact tensor boundary observable itself
-2. the exact tensor endpoint coefficients
-3. the full restricted tensor completion theorem
-4. full nonlinear GR
-
-## Practical conclusion
-
-The current best gravity target is now:
-
-> derive the exact tensor observable on the microscopic `A1 x {E_x, T1x}`
-> support block and its two `A1` endpoint coefficients. If that lands, the
-> support-side scalar it would be evaluated against is already exact on the
-> whole canonical family.
+The appropriate next question is whether the observable and endpoint
+coefficients can be derived independently; only then could an affine tensor law
+be promoted beyond the current sampled evidence.
 
 ## Downstream hygiene (2026-07-25)
 
-Downstream work may cite the exact support-side statements — the endpoint
-center excess `1/6` and the continuous-family `delta_A1(r)` law — without
-further conditioning. The tensor-law statements in this note are sampled and
-conditional: they hold for the current chosen tensor observable named above, at
-the six canonical samples and two baselines actually tested, and must be
-re-derived before being used at any other background or with any other tensor
-observable.
+Downstream work may cite the exact finite-Dirichlet endpoint identity and
+continuous-parameter `delta_A1(r)` formula with the operator conditions stated
+above. The tensor statements remain conditional on the chosen observable,
+`anchor_per_Q * Q(q)` normalization, `EPS = 0.005`, six canonical samples, and
+two named baselines, and must be re-derived outside that scope.
+
+One pre-existing text reader requires the literal compatibility token
+`survives the shell-blindness theorem`. That token is retained here solely as
+an inert parser fixture. It is not a scientific assertion, premise, dependency,
+authority, or boundary of this note.

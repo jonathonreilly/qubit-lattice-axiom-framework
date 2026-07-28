@@ -27,8 +27,8 @@ strongly window- and offset-dependent:
    from `2.329` to `1.126` as `N` grows from `32` to `192`, while
    `4 pi r G(r)` at `r=10` increases from `0.190` to `0.855`.
 2. On the same finite-volume operator, the scaling window
-   `r=N/16,...,N/4` instead gives a stable exponent near `1.66`; its outer-edge
-   normalization is near `0.327`, not `1`.
+   `r=max(3,floor(N/16)),...,floor(N/4)` instead gives a stable exponent near
+   `1.66`; its outer-edge normalization is near `0.327`, not `1`.
 3. The parent construction's raw exponent estimator uses the scaling window
    `r=2,...,N/2-3`. On its own Dirichlet Poisson and biharmonic matrices, for
    `N=16,20,24,32,40`, that estimator assigns the biharmonic profile a score
@@ -53,7 +53,7 @@ compare the full operator family in the parent note.
 | Dirichlet inverse | the parent runner's interior sparse matrix |
 | source for Green-function rows | unit point source |
 | fixed window | integer radii `4,...,10` |
-| scaling window | integer radii `N/16,...,N/4` |
+| scaling window | integer radii `max(3,floor(N/16)),...,floor(N/4)` |
 | periodic sizes | `N=32,48,64,96,128,192` |
 | Dirichlet sizes | `N=16,20,24,32,40` |
 

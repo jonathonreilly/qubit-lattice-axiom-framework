@@ -439,8 +439,10 @@ def main() -> int:
             "the executed finite Wilson Dirac element is Hermitian and the order-three translation element is unitary",
         ),
         per_site=(
-            exact_k0_ok and exact_momentum_ok,
-            "all three periodic L=3 lattice sites are included in the exact zero-mode and momentum-character construction",
+            D.shape == (4 * 3**3, 4 * 3**3)
+            and exact_k0_ok
+            and exact_momentum_ok,
+            "no per-site selector claim is made; the exact Fourier construction covers all 27 sites of the periodic L=3 cubical lattice",
         ),
         per_mode=(
             joint_scalar_ok and rotated_joint_ok,

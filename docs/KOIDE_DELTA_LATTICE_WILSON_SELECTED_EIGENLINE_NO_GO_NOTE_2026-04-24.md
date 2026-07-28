@@ -134,10 +134,20 @@ D psi(a,b) = 0,
 U psi(a,b) = zeta psi(a,b).
 ```
 
-The runner samples a real one-parameter slice of this `CP^1` family. It also
-extends a nontrivial `U(2)` rotation on `M_zeta` by the identity on its
-orthogonal complement. The resulting unitary commutes with both `D` and `U`
-while moving rank-one projectors inside `M_zeta`.
+The runner samples a real one-parameter slice of this `CP^1` family. More
+generally, let `B : C^2 -> H` be the isometry with columns
+`(psi_0, psi_1)`. For every `V in U(2)`, define
+
+```text
+R_V = I + B (V - I_2) B^dagger.
+```
+
+The space `M_zeta` is a joint reducing eigenspace of the Hermitian `D` and
+unitary `U`. Therefore `R_V` acts as `V` on `M_zeta`, as the identity on its
+orthogonal complement, and commutes with both `D` and `U`. Since `U(2)` acts
+transitively on the lines in `C^2`, no line in `M_zeta` is invariant under the
+full stabilizer. The runner instantiates one nontrivial `V` as a numerical
+cross-check.
 
 Here `canonical from the pair (D,U)` means equivariant under the full unitary
 stabilizer of that pair, or, more narrowly, constructed as an element of
@@ -207,7 +217,7 @@ obligation.  All were tested in the current source/runner pair.
 |---|---|---|---|
 | Exact finite multiplicity | Make `M_zeta` one-dimensional, so its identity is already a rank-one selector. | The [exact finite multiplicity check](#exact-finite-multiplicity-check) proves that only the constant momentum block is in `ker(D)` and that the exact `zeta` projector on that block has rank two. | `ATTEMPTED` |
 | Algebraic functional calculus | Construct a polynomial, star-polynomial, or norm-limit in `D` and `U` whose restriction is non-scalar. | The [joint-algebra obstruction](#joint-algebra-obstruction) gives `D|M_zeta=0` and `U|M_zeta=zeta I_2`; the restriction homomorphism therefore sends the finite-dimensional `C*`-algebra `C*(D,U)` into `C I_2`. | `ATTEMPTED` |
-| Stabilizer-equivariant selection | Define a rank-one line from `(D,U)` without requiring the projector itself to be written as an algebra element. | The displayed nontrivial `U(2)` action on `M_zeta`, extended by the identity, commutes with both generators and moves every candidate line.  No stabilizer-equivariant line exists. | `ATTEMPTED` |
+| Stabilizer-equivariant selection | Define a rank-one line from `(D,U)` without requiring the projector itself to be written as an algebra element. | The exact family `R_V = I + B(V-I_2)B^dagger`, `V in U(2)`, lies in the stabilizer and acts transitively on the candidate lines. The runner checks one nontrivial member. No full-stabilizer-equivariant line exists. | `ATTEMPTED` |
 | Numerical or basis ordering | Use the first eigenvector returned by diagonalization, a phase convention, or a basis label as the selector. | Runner check `D.1` rotates the reported basis while preserving all joint `D,U` data.  Ordering and phase conventions therefore do not define a canonical line. | `ATTEMPTED` |
 | Clifford-algebra enlargement | Use the volume element `Gamma=-i gamma_1 gamma_2 gamma_3` to split the doublet. | This route succeeds for the full Wilson/Clifford data: `Gamma|M_zeta` has eigenvalues `-1,+1`.  It does not attack the scoped theorem because `Gamma` is outside `A_DU`, as its non-scalar restriction proves.  This counter-route forced the present scope firewall. | `ATTEMPTED` |
 

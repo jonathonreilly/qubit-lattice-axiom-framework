@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py
-runner_sha256: 7c07906babf38af8e5f3b607f94f6b2ab1ff90e870cdbd7ae06ea7383ef5c9f2
+runner_sha256: 267f07a68b7aad056021d9162bac59acc104ae2f13d90320be96dd2fa18cc2b3
 input_fingerprint_sha256: bfbf8ac5e31a6e11d88cc2c32c803cab0e7014f1abdae42f1b874b6345d383eb
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
 
@@ -84,7 +84,7 @@ PASSED: 15/15
   [PASS] E.1 the D,U-generated unital star algebra contains no rank-one selector on M_zeta
   [PASS] E.2 the full Wilson/Clifford construction is explicitly outside the no-go
 per_element: PASS | the executed finite Wilson Dirac element is Hermitian and the order-three translation element is unitary
-per_site: PASS | all three periodic L=3 lattice sites are included in the exact zero-mode and momentum-character construction
+per_site: PASS | no per-site selector claim is made; the exact Fourier construction covers all 27 sites of the periodic L=3 cubical lattice
 per_mode: PASS | both zeta-sector eigenline modes remain degenerate under D and U, including after a nontrivial basis rotation
 per_block: PASS | every D,U-generated block restricts to a scalar on the rank-two sector, while the displayed rank-one split is outside that algebra
 lattice_wide: PASS | the complete finite periodic L=3 lattice and its D,U algebra were executed; a Clifford-volume counter-route is explicitly outside the no-go scope

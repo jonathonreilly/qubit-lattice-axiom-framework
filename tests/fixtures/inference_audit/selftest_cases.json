@@ -198,6 +198,164 @@
     "why": "Fuzzy word overlap must not bind a requires title to a permits thesis or borrow an unrelated uniqueness token."
   },
   {
+    "id": "direction-embedded-claimed",
+    "runner": null,
+    "note_name": "direction-embedded-claimed.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | quoted report | [satisfied] finite report | shown: the report quotes claimed: the response requires integer power; claimed: response requires integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "A claimed label embedded inside shown evidence cannot let a claim quote certify itself."
+  },
+  {
+    "id": "direction-unbound-claimed",
+    "runner": null,
+    "note_name": "direction-unbound-claimed.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | exact construction | [satisfied] exhaustive family | shown: the exact construction proves that the response requires integer power; claimed: response permits integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "The parsed claimed clause must bind exactly and modality-preservingly to the Claim cell."
+  },
+  {
+    "id": "direction-postposed-denial",
+    "runner": null,
+    "note_name": "direction-postposed-denial.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | finite scan | [satisfied] sampled family | shown: uniqueness is not established by the finite scan; claimed: response requires integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "A postposed denial of uniqueness is not affirmative evidence."
+  },
+  {
+    "id": "direction-whether-question",
+    "runner": null,
+    "note_name": "direction-whether-question.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | finite scan | [satisfied] sampled family | shown: the finite scan tests whether uniqueness holds; claimed: response requires integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "Testing whether a strong property holds does not establish that property."
+  },
+  {
+    "id": "direction-no-evidence",
+    "runner": null,
+    "note_name": "direction-no-evidence.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | finite scan | [satisfied] sampled family | shown: there is no evidence that uniqueness holds; claimed: response requires integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "An explicit lack of evidence cannot satisfy the direction gate."
+  },
+  {
+    "id": "direction-meta-iff",
+    "runner": null,
+    "note_name": "direction-meta-iff.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | quoted report | [satisfied] finite report | shown: the complete report merely mentions an iff condition; claimed: response requires integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "A meta-level mention of an equivalence token is not affirmative evidence."
+  },
+  {
+    "id": "direction-same-decoy",
+    "runner": null,
+    "note_name": "direction-same-decoy.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | exact construction | [satisfied] exhaustive family | shown: the exact construction proves the converse; claimed: the same permits integer power | a noninteger response |"
+    ],
+    "expect": [
+      "DIRECTION"
+    ],
+    "why": "The shorthand for the same claim must be the complete claimed clause, not a prefix that hides a weaker modality."
+  },
+  {
+    "id": "direction-proved-converse-clean",
+    "runner": null,
+    "note_name": "direction-proved-converse-clean.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | exact construction | [satisfied] exhaustive family | shown: the exhaustive construction proves the converse<br>claimed: response requires integer power | a noninteger response |"
+    ],
+    "expect": [],
+    "why": "A canonical claimed binding with an affirmatively proved converse is a clean positive control."
+  },
+  {
+    "id": "direction-proved-converse-same-clean",
+    "runner": null,
+    "note_name": "direction-proved-converse-same-clean.md",
+    "note_lines": [
+      "# Response Requires Integer Power",
+      "",
+      "## Claim ledger",
+      "",
+      "| ID | Claim | Support | Hypotheses | Shown vs claimed | Falsifier |",
+      "|---|---|---|---|---|---|",
+      "| C0 | **thesis** response requires integer power | exact construction | [satisfied] exhaustive family | shown: the exhaustive construction proves the converse; claimed: the same claim | a noninteger response |"
+    ],
+    "expect": [],
+    "why": "An exact same-claim shorthand remains valid when the shown clause is affirmative."
+  },
+  {
     "id": "mixed-hypothesis-tags",
     "runner": null,
     "note_name": "mixed-hypothesis-tags.md",
@@ -306,7 +464,7 @@
       "# Composite Theorems",
       "",
       "Kato-Rellich, Kato–Rellich, and Kato — Rellich apply because the base is self-adjoint and the perturbation is bounded.",
-      "Rellich-Kondrachov, Rellich–Kondrachov, and Rellich — Kondrachov give a compact embedding on a bounded domain."
+      "Rellich-Kondrachov, Rellich–Kondrachov, and Rellich — Kondrachov give a compact embedding on a bounded Lipschitz domain."
     ],
     "only": "HYPOTHESIS",
     "expect": [],
@@ -343,6 +501,35 @@
       "HYPOTHESIS"
     ],
     "why": "A bare surname is routed to exact-theorem identification instead of being assigned a guessed hypothesis schema."
+  },
+  {
+    "id": "matrix-burnside-ordinary-clean",
+    "runner": null,
+    "note_name": "matrix-burnside-ordinary-clean.md",
+    "note_lines": [
+      "# Matrix Burnside",
+      "",
+      "Burnside's theorem on irreducible matrix algebras applies to an associative complex matrix algebra acting irreducibly and containing a rank-one element.",
+      "This Burnside corollary therefore gives the full matrix algebra."
+    ],
+    "only": "HYPOTHESIS",
+    "expect": [],
+    "why": "Ordinary theorem-first word order must identify matrix Burnside and resolve later shorthand mentions."
+  },
+  {
+    "id": "matrix-burnside-missing",
+    "runner": null,
+    "note_name": "matrix-burnside-missing.md",
+    "note_lines": [
+      "# Matrix Burnside Missing Inputs",
+      "",
+      "Burnside's theorem on matrix algebras gives the conclusion."
+    ],
+    "only": "HYPOTHESIS",
+    "expect": [
+      "HYPOTHESIS"
+    ],
+    "why": "An explicit matrix-Burnside identity still fails when irreducibility is omitted."
   },
   {
     "id": "burnside-orbit-missing",

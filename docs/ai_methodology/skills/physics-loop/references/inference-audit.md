@@ -61,6 +61,9 @@ restatement of one in an Answer/Summary/discussion section.
   Identify the exact theorem, including composite names such as
   Kato–Rellich or Rellich–Kondrachov. A bare surname is ambiguous and is routed
   to manual identification rather than assigned a guessed hypothesis list.
+  Ordinary identity word orders such as “Burnside's theorem on irreducible
+  matrix algebras” are supported; hypothesis wording may include standard
+  refinements such as a bounded Lipschitz domain.
   Not the conclusion. The linter's keyword check catches outright omission but
   **cannot** distinguish a hypothesis from a conclusion; this column is the only
   thing that does. A cited theorem whose hypotheses you cannot state is a
@@ -74,8 +77,11 @@ restatement of one in an Answer/Summary/discussion section.
   existence result. Repeating the necessity word only in `claimed:` does not
   pass `DIRECTION`, nor does writing that a converse *could not* be established.
   Separate the clauses with `; claimed:` (or `<br>claimed:`); a comma does not
-  establish an evidence boundary. The reviewer still checks whether the
-  recorded evidence is true.
+  establish an evidence boundary, and no second `claimed:` label may appear
+  inside `shown:`. The parsed `claimed:` clause must match the Claim cell
+  exactly (or say “the same”) with the same modality. Questions, quotations,
+  and lack-of-evidence or negated-proof prose are not affirmative evidence.
+  The reviewer still checks whether the recorded evidence is true.
 - **Falsifier** — a concrete state of the world that would make the claim
   false. If you cannot name one, the claim is true by construction and is not a
   result.
@@ -85,8 +91,8 @@ restatement of one in an Answer/Summary/discussion section.
 | check | catches | limitation |
 |---|---|---|
 | `SLICE` | a check row iterating a narrowed domain (`for g in hill[:1]`, `values[::2]`), leaving dropped elements untested | iteration position only; display truncation, unit-stride copies, pure reversal, and verified adjacent-pair idioms are ignored |
-| `CLONE` | two functions with identical bodies modulo local names, then "verified" to agree | exact structural clones only; free names and outer-evaluated defaults, decorators, and annotations retain their semantics |
-| `DIRECTION` | a necessity word in a claim whose modality-matched ledger row has no affirmative necessity-strength `shown:` clause | claim positions only — title, `**Theorem`, Answer/Summary/discussion sections; the check enforces separate clauses and modality-preserving claim binding, while the reviewer judges whether the evidence is true |
+| `CLONE` | two functions with identical bodies modulo local names, then "verified" to agree | each nested lexical scope is alpha-normalized independently; captured outer locals follow their enclosing binding, while free names and outer-evaluated defaults, decorators, and annotations retain their semantics |
+| `DIRECTION` | a necessity word in a claim whose modality-matched ledger row has no affirmative necessity-strength `shown:` clause | claim positions only — title, `**Theorem`, Answer/Summary/discussion sections; the check enforces separate clauses, exact `claimed:` binding, and affirmative evidence syntax, while the reviewer judges whether the evidence is true |
 | `HYPOTHESIS` | an explicitly identified external theorem invoked with its own hypotheses absent nearby, or an ambiguous bare surname | exact composite identities before shorter names; keyword proximity still **does not** catch hypothesis/conclusion confusion |
 | `LEDGER` | a missing ledger, or any empty cell | presence and completeness, not honesty |
 | `TAG` | a hypothesis not marked `[supplied]` or `[satisfied]` | cannot tell whether your tag is honest |

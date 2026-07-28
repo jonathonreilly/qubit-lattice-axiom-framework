@@ -114,6 +114,18 @@ NAMED_THEOREMS = (
         ("effect", "frame"),
     ),
     (
+        "burnside matrix-algebra theorem",
+        re.compile(
+            r"\b(?:"
+            r"burnside(?:'s)?\s+(?:classical\s+)?theorem"
+            r"(?:\s+(?:on|for)\s+[^.;\n]{0,100}\bmatrix\s+algebras?)?"
+            r"|matrix[- ]algebra\s+burnside(?:'s)?\s+theorem"
+            r")\b",
+            re.I,
+        ),
+        ("irreducible", "matrix algebra"),
+    ),
+    (
         "burnside orbit-counting lemma",
         re.compile(
             r"\bburnside(?:'s)?\s+(?:lemma|orbit[- ]counting"
@@ -150,10 +162,6 @@ NAMED_THEOREMS = (
 THEOREM_NAMESAKE_EXCLUSIONS = (
     re.compile(
         rf"\bskolem{THEOREM_DASH}noether(?:'s)?(?:\s+theorem)?\b",
-        re.I,
-    ),
-    re.compile(
-        r"\bmatrix[- ]algebra\s+burnside(?:'s)?\s+theorem\b",
         re.I,
     ),
 )
@@ -314,127 +322,216 @@ def check_slice(runner: Path) -> list[Finding]:
     return out
 
 
+def _argument_bindings(args: ast.arguments) -> list[ast.arg]:
+    out = [*args.posonlyargs, *args.args, *args.kwonlyargs]
+    if args.vararg:
+        out.append(args.vararg)
+    if args.kwarg:
+        out.append(args.kwarg)
+    return out
+
+
+class _ScopeBindingCollector(ast.NodeVisitor):
+    """Collect bindings in one lexical scope without descending into children."""
+
+    def __init__(self, args: ast.arguments):
+        self.ordered: list[str] = []
+        self.globals: set[str] = set()
+        self.nonlocals: set[str] = set()
+        for arg in _argument_bindings(args):
+            self.add(arg.arg)
+
+    def add(self, name: str | None) -> None:
+        if name and name not in self.ordered:
+            self.ordered.append(name)
+
+    def visit_FunctionDef(self, node):  # noqa: N802
+        self.add(node.name)
+
+    def visit_AsyncFunctionDef(self, node):  # noqa: N802
+        self.add(node.name)
+
+    def visit_Lambda(self, node):  # noqa: N802
+        return
+
+    def visit_ClassDef(self, node):  # noqa: N802
+        self.add(node.name)
+
+    def visit_Name(self, node):  # noqa: N802
+        if isinstance(node.ctx, ast.Store):
+            self.add(node.id)
+
+    def visit_Import(self, node):  # noqa: N802
+        for alias in node.names:
+            self.add(alias.asname or alias.name.split(".", 1)[0])
+
+    def visit_ImportFrom(self, node):  # noqa: N802
+        for alias in node.names:
+            self.add(alias.asname or alias.name)
+
+    def visit_ExceptHandler(self, node):  # noqa: N802
+        self.add(node.name)
+        self.generic_visit(node)
+
+    def visit_Global(self, node):  # noqa: N802
+        self.globals.update(node.names)
+
+    def visit_Nonlocal(self, node):  # noqa: N802
+        self.nonlocals.update(node.names)
+
+
+class _LexicalAlphaNormalizer(ast.NodeTransformer):
+    """Alpha-normalize each function scope while retaining genuine free names."""
+
+    def __init__(self):
+        self.scopes: list[tuple[dict[str, str], set[str]]] = []
+        self.next_scope = 0
+
+    def _resolve(self, name: str) -> str:
+        for mapping, global_names in reversed(self.scopes):
+            if name in global_names:
+                return name
+            if name in mapping:
+                return mapping[name]
+        return name
+
+    def _scope_for(
+        self,
+        args: ast.arguments,
+        body: list[ast.stmt],
+    ) -> tuple[dict[str, str], set[str]]:
+        collector = _ScopeBindingCollector(args)
+        for statement in body:
+            collector.visit(statement)
+        scope_number = self.next_scope
+        self.next_scope += 1
+        excluded = collector.globals | collector.nonlocals
+        ordered = [name for name in collector.ordered if name not in excluded]
+        mapping = {
+            name: f"_scope_{scope_number}_{index}"
+            for index, name in enumerate(ordered)
+        }
+        return mapping, collector.globals
+
+    def _visit_outer_arguments(self, args: ast.arguments) -> None:
+        for arg in _argument_bindings(args):
+            if arg.annotation:
+                arg.annotation = self.visit(arg.annotation)
+        args.defaults = [self.visit(default) for default in args.defaults]
+        args.kw_defaults = [
+            self.visit(default) if default else None
+            for default in args.kw_defaults
+        ]
+
+    @staticmethod
+    def _rename_argument_bindings(
+        args: ast.arguments,
+        mapping: dict[str, str],
+    ) -> None:
+        for arg in _argument_bindings(args):
+            if arg.arg in mapping:
+                arg.arg = mapping[arg.arg]
+
+    def _normalize_function(
+        self,
+        node: ast.FunctionDef | ast.AsyncFunctionDef,
+        *,
+        root: bool,
+    ):
+        original_name = node.name
+        if (
+            node.body
+            and isinstance(node.body[0], ast.Expr)
+            and isinstance(node.body[0].value, ast.Constant)
+            and isinstance(node.body[0].value.value, str)
+        ):
+            node.body = node.body[1:]
+
+        # Definition-time expressions execute in the surrounding scope.
+        node.decorator_list = [
+            self.visit(decorator) for decorator in node.decorator_list
+        ]
+        self._visit_outer_arguments(node.args)
+        if node.returns:
+            node.returns = self.visit(node.returns)
+        if hasattr(node, "type_params"):
+            node.type_params = [
+                self.visit(type_param) for type_param in node.type_params
+            ]
+
+        mapping, global_names = self._scope_for(node.args, node.body)
+        node.name = "_function" if root else self._resolve(original_name)
+        self.scopes.append((mapping, global_names))
+        self._rename_argument_bindings(node.args, mapping)
+        node.body = [self.visit(statement) for statement in node.body]
+        self.scopes.pop()
+        return node
+
+    def visit_FunctionDef(self, node):  # noqa: N802
+        return self._normalize_function(node, root=False)
+
+    def visit_AsyncFunctionDef(self, node):  # noqa: N802
+        return self._normalize_function(node, root=False)
+
+    def visit_Lambda(self, node):  # noqa: N802
+        self._visit_outer_arguments(node.args)
+        mapping, global_names = self._scope_for(node.args, [])
+        self.scopes.append((mapping, global_names))
+        self._rename_argument_bindings(node.args, mapping)
+        node.body = self.visit(node.body)
+        self.scopes.pop()
+        return node
+
+    def visit_ClassDef(self, node):  # noqa: N802
+        node.name = self._resolve(node.name)
+        node.decorator_list = [
+            self.visit(decorator) for decorator in node.decorator_list
+        ]
+        node.bases = [self.visit(base) for base in node.bases]
+        node.keywords = [self.visit(keyword) for keyword in node.keywords]
+        node.body = [self.visit(statement) for statement in node.body]
+        return node
+
+    def visit_Name(self, node):  # noqa: N802
+        resolved = self._resolve(node.id)
+        if resolved == node.id:
+            return node
+        return ast.copy_location(ast.Name(id=resolved, ctx=node.ctx), node)
+
+    def visit_Nonlocal(self, node):  # noqa: N802
+        node.names = [self._resolve(name) for name in node.names]
+        return node
+
+    def visit_ExceptHandler(self, node):  # noqa: N802
+        if node.name:
+            node.name = self._resolve(node.name)
+        return self.generic_visit(node)
+
+    def visit_Import(self, node):  # noqa: N802
+        for alias in node.names:
+            binding = alias.asname or alias.name.split(".", 1)[0]
+            resolved = self._resolve(binding)
+            if resolved != binding:
+                alias.asname = resolved
+        return node
+
+    def visit_ImportFrom(self, node):  # noqa: N802
+        for alias in node.names:
+            binding = alias.asname or alias.name
+            resolved = self._resolve(binding)
+            if resolved != binding:
+                alias.asname = resolved
+        return node
+
+
 def _normalize_body(fn: ast.FunctionDef | ast.AsyncFunctionDef) -> str:
-    """Alpha-normalize local bindings while preserving semantic free names."""
+    """Alpha-normalize nested lexical scopes and preserve semantic free names."""
 
     fn_copy = copy.deepcopy(fn)
-    if (
-        fn_copy.body
-        and isinstance(fn_copy.body[0], ast.Expr)
-        and isinstance(fn_copy.body[0].value, ast.Constant)
-        and isinstance(fn_copy.body[0].value.value, str)
-    ):
-        fn_copy.body = fn_copy.body[1:]
-
-    ordered: list[str] = []
-    global_or_nonlocal: set[str] = set()
-
-    def add(name: str | None) -> None:
-        if name and name not in ordered:
-            ordered.append(name)
-
-    args = fn_copy.args
-    for arg in [*args.posonlyargs, *args.args, *args.kwonlyargs]:
-        add(arg.arg)
-    if args.vararg:
-        add(args.vararg.arg)
-    if args.kwarg:
-        add(args.kwarg.arg)
-
-    class BindingCollector(ast.NodeVisitor):
-        def visit_FunctionDef(self, node):  # noqa: N802
-            add(node.name)
-            return
-
-        def visit_AsyncFunctionDef(self, node):  # noqa: N802
-            add(node.name)
-            return
-
-        def visit_Lambda(self, node):  # noqa: N802
-            return
-
-        def visit_ClassDef(self, node):  # noqa: N802
-            add(node.name)
-            return
-
-        def visit_Name(self, node):  # noqa: N802
-            if isinstance(node.ctx, ast.Store):
-                add(node.id)
-
-        def visit_Import(self, node):  # noqa: N802
-            for alias in node.names:
-                add(alias.asname or alias.name.split(".", 1)[0])
-
-        def visit_ImportFrom(self, node):  # noqa: N802
-            for alias in node.names:
-                add(alias.asname or alias.name)
-
-        def visit_ExceptHandler(self, node):  # noqa: N802
-            add(node.name)
-            self.generic_visit(node)
-
-        def visit_Global(self, node):  # noqa: N802
-            global_or_nonlocal.update(node.names)
-
-        def visit_Nonlocal(self, node):  # noqa: N802
-            global_or_nonlocal.update(node.names)
-
-    collector = BindingCollector()
-    for statement in fn_copy.body:
-        collector.visit(statement)
-    ordered = [name for name in ordered if name not in global_or_nonlocal]
-    mapping = {name: f"_local_{i}" for i, name in enumerate(ordered)}
-
-    class LocalAlphaNormalizer(ast.NodeTransformer):
-        def visit_Name(self, node):  # noqa: N802
-            if node.id in mapping:
-                return ast.copy_location(
-                    ast.Name(id=mapping[node.id], ctx=node.ctx), node
-                )
-            return node
-
-        def visit_FunctionDef(self, node):  # noqa: N802
-            if node.name in mapping:
-                node.name = mapping[node.name]
-            return self.generic_visit(node)
-
-        def visit_AsyncFunctionDef(self, node):  # noqa: N802
-            if node.name in mapping:
-                node.name = mapping[node.name]
-            return self.generic_visit(node)
-
-        def visit_ClassDef(self, node):  # noqa: N802
-            if node.name in mapping:
-                node.name = mapping[node.name]
-            return self.generic_visit(node)
-
-        def visit_arg(self, node):  # noqa: N802
-            if node.arg in mapping:
-                node.arg = mapping[node.arg]
-            return self.generic_visit(node)
-
-    fn_copy.name = "_function"
-    for arg in [
-        *fn_copy.args.posonlyargs,
-        *fn_copy.args.args,
-        *fn_copy.args.kwonlyargs,
-    ]:
-        if arg.arg in mapping:
-            arg.arg = mapping[arg.arg]
-    if fn_copy.args.vararg and fn_copy.args.vararg.arg in mapping:
-        fn_copy.args.vararg.arg = mapping[fn_copy.args.vararg.arg]
-    if fn_copy.args.kwarg and fn_copy.args.kwarg.arg in mapping:
-        fn_copy.args.kwarg.arg = mapping[fn_copy.args.kwarg.arg]
-
-    # Defaults, decorators, return annotations, and parameter annotations are
-    # evaluated outside the function-local scope. Do not rewrite them as local
-    # bindings. The body is the only root field transformed; nested definitions
-    # inside it still see outer-local renames where Python actually closes over
-    # those names.
-    normalizer = LocalAlphaNormalizer()
-    fn_copy.body = [normalizer.visit(statement) for statement in fn_copy.body]
-    ast.fix_missing_locations(fn_copy)
-    return ast.dump(fn_copy, include_attributes=False)
+    normalizer = _LexicalAlphaNormalizer()
+    normalized = normalizer._normalize_function(fn_copy, root=True)
+    ast.fix_missing_locations(normalized)
+    return ast.dump(normalized, include_attributes=False)
 
 
 def check_clone(runner: Path) -> list[Finding]:
@@ -554,22 +651,50 @@ def _claim_text_matches(
     return a == b or (allow_coverage and (a in b or b in a))
 
 
-DIRECTION_SUPPORT = re.compile(
-    r"\b(requires?|forced?|necessary|must|does not exist|"
-    r"no [^;]{0,80} exists|unreachable|impossible|unique(?:ly)?|selects?|"
-    r"uniqueness|if and only if|iff|equivalent|"
-    r"converse (?:holds|is (?:shown|proved|checked|verified))|"
-    r"cannot (?:exist|occur|hold|satisfy|equal|"
-    r"be (?:reached|satisfied|realized|constructed|nonzero|invertible)))\b",
-    re.I,
-)
-DIRECTION_DENIAL = re.compile(
+DIRECTION_META_OR_DENIAL = re.compile(
     r"\b(?:cannot|could not|does not|did not|fails? to|failed to|"
     r"has not|have not|was not|were not)\s+"
     r"(?:\w+\s+){0,3}(?:establish|show|prove|check|verify|demonstrate|"
     r"derive|infer|conclude|justify|certify)\b|"
+    r"\b(?:not|never)\s+(?:\w+\s+){0,5}"
+    r"(?:established|shown|proved|checked|verified|demonstrated|derived|"
+    r"inferred|justified|certified)\b|"
     r"\bno\s+(?:(?:checked|established|proved|verified)\s+)?"
-    r"(?:converse|equivalence|uniqueness|impossibility|necessity)\b",
+    r"(?:converse|equivalence|uniqueness|impossibility|necessity)\b|"
+    r"\b(?:there\s+is\s+)?no\s+(?:\w+\s+){0,3}"
+    r"(?:evidence|proof|support|verification|demonstration)\b|"
+    r"\b(?:lacks?|lacking|without)\s+(?:\w+\s+){0,3}"
+    r"(?:evidence|proof|support|verification|demonstration)\b|"
+    r"\b(?:proves?|proved|shows?|shown|establishes?|established|"
+    r"verifies?|verified|checks?|checked|demonstrates?|demonstrated|"
+    r"derives?|derived|confirms?|confirmed)\b[^.;]{0,80}"
+    r"\b(?:no|not)\s+(?:\w+\s+){0,3}"
+    r"(?:converse|equivalence|necessity|unique(?:ness)?|impossibility)\b|"
+    r"\b(?:tests?|asks?|examines?|considers?|investigates?|questions?|"
+    r"quotes?|repeats?|restates?|mentions?|records?|reports?|asserts?|states?)\b"
+    r"[^.;]{0,100}\b(?:whether|if|claimed|required|forced|necessary|must|"
+    r"converse|equivalence|iff|unique(?:ly)?|uniqueness|impossible|"
+    r"impossibility)\b",
+    re.I,
+)
+DIRECTION_AFFIRMATIVE = re.compile(
+    r"\b(?:if and only if|iff|equivalent(?:\s+to)?)\b|"
+    r"\b(?:proves?|proved|shows?|shown|establishes?|established|"
+    r"verifies?|verified|checks?|checked|demonstrates?|demonstrated|"
+    r"derives?|derived|confirms?|confirmed)\b"
+    r"[^.;]{0,120}\b(?:requires?|forced?|necessary|necessity|must|"
+    r"converse|equivalence|unique(?:ly)?|uniqueness|impossible|"
+    r"impossibility|does not exist|no [^.;]{0,40} exists|selects?)\b|"
+    r"\b(?:converse|equivalence|necessity|impossibility|uniqueness)\b"
+    r"[^.;]{0,80}\b(?:holds?|is|was|has been)\s+"
+    r"(?:proved|shown|established|verified|checked|demonstrated|derived)\b|"
+    r"\b(?:exact|exhaustive|complete)\b[^.;]{0,120}"
+    r"\b(?:requires?|forced?|necessary|must|unique(?:ly)?|uniqueness|"
+    r"impossible|does not exist|selects?)\b|"
+    r"\b(?:exactly one|does not exist|"
+    r"no [^.;]{0,80} exists|unreachable|impossible|"
+    r"cannot (?:exist|occur|hold|satisfy|equal|"
+    r"be (?:reached|satisfied|realized|constructed|nonzero|invertible)))\b",
     re.I,
 )
 SHOWN_CLAIMED = re.compile(
@@ -590,6 +715,21 @@ def _split_shown_claimed(cell: str) -> tuple[str, str] | None:
     return shown, claimed
 
 
+def _claimed_clause_matches(claimed: str, claim: str) -> bool:
+    normalized = " ".join(_claim_words(claimed))
+    if normalized in {"same", "the same", "same claim", "the same claim"}:
+        return True
+    return _claim_text_matches(claimed, claim)
+
+
+def _direction_evidence_is_affirmative(shown: str) -> bool:
+    if re.search(r"\bclaimed\s*:", shown, re.I) or "?" in shown:
+        return False
+    if DIRECTION_META_OR_DENIAL.search(shown):
+        return False
+    return bool(DIRECTION_AFFIRMATIVE.search(shown))
+
+
 def check_direction(note: Path, ledger: str) -> list[Finding]:
     """Necessity claims need a matching row whose shown clause supports it."""
     out: list[Finding] = []
@@ -608,10 +748,10 @@ def check_direction(note: Path, ledger: str) -> list[Finding]:
             parsed = _split_shown_claimed(cells[4])
             if not parsed:
                 continue
-            shown, _claimed = parsed
+            shown, claimed = parsed
             if (
-                not DIRECTION_DENIAL.search(shown)
-                and DIRECTION_SUPPORT.search(shown)
+                _claimed_clause_matches(claimed, cells[1])
+                and _direction_evidence_is_affirmative(shown)
             ):
                 supported = True
                 break
@@ -622,7 +762,8 @@ def check_direction(note: Path, ledger: str) -> list[Finding]:
             if not matching
             else "the matching row has no canonical, affirmative `shown:` "
                  "record of a converse, equivalence, uniqueness, impossibility, "
-                 "or other necessity-strength evidence"
+                 "or other necessity-strength evidence whose `claimed:` clause "
+                 "binds exactly to the Claim cell"
         )
         out.append(
             Finding(
@@ -632,6 +773,25 @@ def check_direction(note: Path, ledger: str) -> list[Finding]:
             )
         )
     return out
+
+
+HYPOTHESIS_PATTERNS = {
+    "bounded domain": re.compile(
+        r"\bbounded(?:\s+[\w-]+){0,3}\s+domain\b",
+        re.I,
+    ),
+    "irreducible": re.compile(r"\birreducib(?:le|ly|ility)\b", re.I),
+    "matrix algebra": re.compile(
+        r"\bmatrix[- ]algebras?\b|"
+        r"\bm\s*_?\s*(?:\d+|n)\s*\(\s*c\s*\)",
+        re.I,
+    ),
+}
+
+
+def _hypothesis_present(label: str, text: str) -> bool:
+    pattern = HYPOTHESIS_PATTERNS.get(label)
+    return bool(pattern.search(text)) if pattern else label in text
 
 
 def check_hypothesis(note: Path) -> list[Finding]:
@@ -645,6 +805,7 @@ def check_hypothesis(note: Path) -> list[Finding]:
     text = note.read_text()
     low = text.lower()
     occupied: list[tuple[int, int]] = []
+    resolved_surnames: set[str] = set()
 
     def overlaps(span: tuple[int, int]) -> bool:
         return any(span[0] < end and start < span[1] for start, end in occupied)
@@ -657,11 +818,15 @@ def check_hypothesis(note: Path) -> list[Finding]:
             if overlaps(m.span()):
                 continue
             occupied.append(m.span())
+            if "burnside" in name:
+                resolved_surnames.add("burnside")
             window = low[
                 max(0, m.start() - HYPOTHESIS_WINDOW)
                 : m.start() + HYPOTHESIS_WINDOW
             ]
-            missing = [h for h in hyps if h not in window]
+            missing = [h for h in hyps if not _hypothesis_present(h, window)]
+            if missing and all(_hypothesis_present(h, low) for h in hyps):
+                missing = []
             if missing:
                 line = text[: m.start()].count("\n") + 1
                 out.append(
@@ -673,6 +838,8 @@ def check_hypothesis(note: Path) -> list[Finding]:
                 )
     for match in AMBIGUOUS_THEOREM_SURNAME.finditer(text):
         if overlaps(match.span()):
+            continue
+        if match.group(1).lower() in resolved_surnames:
             continue
         occupied.append(match.span())
         line = text[: match.start()].count("\n") + 1

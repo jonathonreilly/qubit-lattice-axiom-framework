@@ -73,22 +73,22 @@ def default_high_limit(limit=HIGH_LIMIT):
     return 50 < limit
 
 
-def make_low_predicate():
+def make_low_predicate(limit=LOW_LIMIT):
     def predicate(value):
-        return value < LOW_LIMIT
+        return value < limit
 
     return predicate
 
 
-def make_low_predicate_copy():
-    def candidate(value):
-        return value < LOW_LIMIT
+def make_low_predicate_copy(bound=LOW_LIMIT):
+    def candidate(item):
+        return item < bound
 
     return candidate
 
 
-def make_high_predicate():
+def make_high_predicate(limit=HIGH_LIMIT):
     def predicate(value):
-        return value < HIGH_LIMIT
+        return value < limit
 
     return predicate

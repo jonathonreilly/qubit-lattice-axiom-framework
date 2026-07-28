@@ -1,6 +1,6 @@
 {
  "edge_count": 15163,
- "node_count": 4554,
+ "node_count": 4555,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10821,6 +10821,10 @@
   "poisson_exhaustive_uniqueness_note": {
    "deps_hash": "e8d01675fe44",
    "out_degree": 3
+  },
+  "poisson_self_consistent_well_depth_finite_volume_bounded_theorem_note_2026-07-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "poisson_self_field_note": {
    "deps_hash": "519215e3f103",

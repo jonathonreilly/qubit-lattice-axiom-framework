@@ -1,15 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/kcpt_d2_commutant_closed_form_lifts_lattice_size_independence_2026_07_25.py
-runner_sha256: 45813246c7490265ad69450430979d24773bfeb88c04c8f68ab64a2504e08b6a
+runner_sha256: 134bdf4428d53e4c51f76cf9e69db849681f55c088befc41ab67b2bf637ab39b
 input_fingerprint_sha256: 02d98592d4c2ad1e5896610eec57bd83e45aa9061d2135ca56d0b54679fe3442
-timeout_sec: 300
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 62.24
+elapsed_sec: 43.70
 status: ok
 ----- stdout -----
 KCPT Unit 28 -- closed-form lifts and lattice-size independence
 D2, support structures and the reference enumeration come from scripts/kcpt_d2_graded_signed_permutation_commutant_characterization_2026_07_25.py
 constructive L = (4, 6, 8, 10, 12); exhaustive-enumeration anchor L = (4, 6, 8, 10)
+  PASS  SCOPE_L2_DEGENERATE    L=2 forward/backward neighbours coincide, D2 cancels to zero, and lift uniqueness is excluded
 
 [L = 4]
   PASS  G1_TRANSLIFT_L4        closed-form zeta_nu lift commutes with D2 on all 64^2 entries: 3/3
@@ -96,7 +97,7 @@ constructive L = (4, 6, 8, 10, 12); exhaustive-enumeration anchor L = (4, 6, 8, 
   PASS  XL_DICHOTOMY           2-torsion dichotomy holds at every L: q trivial for L=0 mod 4, q=-I on exactly 4 points for L=2 mod 4
 
 ========================================================================
-TOTAL: PASS=64 FAIL=0
+TOTAL: PASS=65 FAIL=0
 
 ----- stderr -----
 

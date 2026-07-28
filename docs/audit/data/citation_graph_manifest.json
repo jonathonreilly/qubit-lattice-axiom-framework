@@ -1,6 +1,6 @@
 {
- "edge_count": 15201,
- "node_count": 4567,
+ "edge_count": 15203,
+ "node_count": 4568,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -7013,6 +7013,10 @@
   "kcpt_cp_completion_under_extended_group_bounded_theorem_note_2026-07-20": {
    "deps_hash": "f2454b007e3d",
    "out_degree": 3
+  },
+  "kcpt_d2_commutant_closed_form_lifts_and_lattice_size_independence_bounded_theorem_note_2026-07-25": {
+   "deps_hash": "07ebc1943d0d",
+   "out_degree": 1
   },
   "kcpt_d2_commutant_double_cover_bicommutant_structure_bounded_theorem_note_2026-07-25": {
    "deps_hash": "07ebc1943d0d",

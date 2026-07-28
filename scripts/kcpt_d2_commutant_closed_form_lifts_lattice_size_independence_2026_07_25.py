@@ -6,20 +6,22 @@ Closed-form lifts for Comm(D2), and how far the group law survives growing L.
 Every prior unit in this lane read the structure of the signed-permutation
 commutant Comm(D2) off an EXHAUSTIVE enumeration, which capped the lane at
 L in {4, 6}.  This runner takes the enumeration off the critical path: the
-translation lifts and the point-group lifts are written down in CLOSED FORM
-from the staggered phases, and the enumeration is then used only as an
-independent anchor where it is still affordable.
+translation sign fields are written down in CLOSED FORM from the staggered
+phases, while the point-group permutations are built from scratch and their
+sign fields are obtained constructively by BFS at five tested sizes.  The
+enumeration is then used only as an independent anchor where it is affordable.
 
   T1  closed-form translation lift.  t_nu = (x -> x + e_nu, zeta_nu) with
-      zeta_nu(x) = (-1)^{sum_{mu > nu} x_mu} lies in Comm(D2) for every even L;
-      the sign solution with s(0) = +1 is unique, so exactly two lifts +-t_nu.
+      zeta_nu(x) = (-1)^{sum_{mu > nu} x_mu} lies in Comm(D2) for every even
+      L >= 4; the sign solution with s(0) = +1 is unique, so exactly two lifts
+      +-t_nu.  L = 2 is excluded because D2 cancels to zero there.
   T2  analytic commutator.  [t_a, t_b] = (-1)^{1 - delta_ab} I, whose
       bimultiplicative extension is beta(s,t) = (-1)^{(sum s)(sum t) - s.t}.
   T3  order and 2-torsion.  (t_nu)^k has sign field zeta_nu^k, order exactly L,
       (t_nu)^L = +I; q((L/2) v) = (-1)^{(L/2)^2 sum_{i<j} v_i v_j}.
   T4  constructive point-group lifts.  All 48 B_3 matrices lift, two lifts each.
   T5  size independence, exactly where it is exact.  96N constructed elements
-      at every even L tested; equality with Comm(D2) is anchored by the
+      at each tested L; equality with Comm(D2) is anchored by the
       exhaustive enumeration at L in {4, 6, 8, 10} only, and is a LOWER BOUND
       at L = 12.
 
@@ -77,7 +79,7 @@ L_ALL = (4, 6, 8, 10, 12)
 L_ENUM = (4, 6, 8, 10)
 L_CLOSURE = (4, 6)
 
-# Independent anchors for the enumerated census.
+# Regression anchors for the enumerated census.
 #   ANCHOR_LIFT_PER_COSET : liftable automorphisms per translation coset.
 #   ANCHOR_SUPPORT_STAB   : |Stab_0| inside the SUPPORT-GRAPH automorphism group.
 # These are two different objects.  They agree for L >= 6, and they do NOT agree
@@ -86,7 +88,9 @@ L_CLOSURE = (4, 6)
 # the ones pinned in the landed Unit 25 module's own XREF table and gated there
 # (L = 4: nStab = 720, nAut = 46080, nLift = 3072; L = 6: nStab = 48,
 # nAut = nLift = 10368).  The L = 8 and L = 10 values are this unit's own
-# measurement, and they follow the same census law as L = 6.
+# measurements.  Independence comes from comparing the exact enumerator with
+# the separate construction, not from treating these regression constants as
+# external anchors.
 ANCHOR_LIFT_PER_COSET = 48
 ANCHOR_SUPPORT_STAB = {4: 720, 6: 48, 8: 48, 10: 48}
 ANCHOR_SUPPORT_AUT = {4: 46080, 6: 10368, 8: 24576, 10: 48000}
@@ -550,6 +554,16 @@ def main():
           "_2026_07_25.py")
     print("constructive L = {}; exhaustive-enumeration anchor L = {}"
           .format(L_ALL, L_ENUM))
+
+    l2 = u25.build_lattice(2)
+    l2_sup = u25.support_structures(l2["D2"])
+    gate(
+        "SCOPE_L2_DEGENERATE",
+        np.count_nonzero(l2["D2"]) == 0 and not l2_sup["connected"],
+        "L=2 forward/backward neighbours coincide, D2 cancels to zero, "
+        "and lift uniqueness is excluded",
+    )
+    del l2, l2_sup
 
     rows = []
     for L in L_ALL:

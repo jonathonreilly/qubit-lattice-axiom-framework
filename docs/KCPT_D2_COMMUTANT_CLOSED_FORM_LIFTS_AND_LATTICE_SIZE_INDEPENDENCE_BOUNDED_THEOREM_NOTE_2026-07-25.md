@@ -24,10 +24,13 @@ registry id: `kcpt_d2_commutant_closed_form_lifts_lattice_size_independence`
   `96N` elements generate.
 - **Scope limits:** r-neutral. No physical, continuum, thermodynamic, flavour or
   generation-counting claim is made; every quantity is an exact invariant of a finite
-  even-`L` construction. `L` even is required throughout for `zeta_nu` to be well defined
-  on `Z_L`. The equality `|Comm(D2)| = 96N` is established where the exhaustive
-  enumeration was actually run (L ∈ {4, 6, 8, 10}); at L = 12 the construction yields the
-  lower bound `|Comm(D2)| ≥ 96N` and nothing stronger.
+  even-`L` construction. The general translation statements require even `L ≥ 4`.
+  Odd `L` is excluded because `zeta_nu` is not well defined on `Z_L`; `L = 2` is also
+  excluded because the forward and backward neighbours coincide, the two contributions
+  to `D2` cancel, the support graph is disconnected, and the claimed lift uniqueness is
+  false. The equality `|Comm(D2)| = 96N` is established where the exhaustive enumeration
+  was actually run (L ∈ {4, 6, 8, 10}); at L = 12 the construction yields the lower bound
+  `|Comm(D2)| ≥ 96N` and nothing stronger.
 
 ## 1. Objects and setup
 
@@ -44,10 +47,11 @@ registry id: `kcpt_d2_commutant_closed_form_lifts_lattice_size_independence`
   exact integer arithmetic on those arrays; no floating tolerance enters anywhere.
 - Every prior unit in this lane read the structure of `Comm(D2)` off an EXHAUSTIVE
   enumeration of the group, which is what capped the lane at L ∈ {4, 6}. This unit takes
-  that enumeration off the critical path: the translation lifts and the point-group lifts
-  are written down in closed form from the staggered phases, and the enumeration
-  (`enumerate_commutant`) is called only as an independent anchor at the sizes where it
-  still fits the memory budget.
+  that enumeration off the critical path: the translation sign fields are written down in
+  closed form from the staggered phases; the point-group permutations are built from
+  scratch and their sign fields are obtained constructively by BFS at the five tested
+  sizes. The enumeration (`enumerate_commutant`) is called only as an independent anchor
+  at the sizes where it still fits the memory budget.
 - The reference hyperoctahedral group `B₃` (order 48) is built independently inside this
   runner as the 48 signed 3×3 permutation matrices (`itertools.permutations` of the three
   axes times the eight sign patterns), so every point-group claim is checked against a
@@ -58,15 +62,15 @@ registry id: `kcpt_d2_commutant_closed_form_lifts_lattice_size_independence`
   commutator pairing `beta` from the ENUMERATED group at L ∈ {4, 6} — measuring it, then
   matching it uniquely against the 512 bimultiplicative candidates — and from `beta` it
   DERIVED the 2-torsion form `q` by an argument this unit reuses unchanged. This unit
-  derives `beta` itself from the staggered phases, so the chain no longer passes through
-  an enumeration at any point, and the same `q` argument then runs at L ∈ {8, 10, 12}
-  where no enumeration is available. The increment is `beta`'s provenance and the
-  resulting reach, not a first derivation of `q`.
+  derives `beta` itself from the staggered phases, so the derivation no longer consumes an
+  enumeration, and the same `q` argument then runs at L ∈ {8, 10, 12} without using the
+  enumeration as an input. The increment is `beta`'s provenance and the resulting reach,
+  not a first derivation of `q`.
 
 ## 2. Theorem claims
 
 **T1 (closed-form translation lift; gates G1_TRANSLIFT_L\*, G2_UNIQUE_L\*, G5A_FLIP_L\*,
-G5B_MASK_L\*).** For every even `L` and each `nu ∈ {0,1,2}` the signed permutation
+G5B_MASK_L\*).** For every even `L ≥ 4` and each `nu ∈ {0,1,2}` the signed permutation
 `t_nu = (x ↦ x + e_nu, zeta_nu)` with
 
     zeta_nu(x) = (-1)^{ Σ_{mu > nu} x_mu }
@@ -110,7 +114,7 @@ that fails commutation: 21/21 at every `L`, while the correct mask commutes 3/3.
 mask `{mu : mu > nu}` is singled out by the computation, not by fiat.
 
 **T2 (analytic commutator form; gates G4_BETA_L\*, G4X_LIFTPROD_L4, G4X_LIFTPROD_L6).**
-For all `a, b`,
+Within the same even-`L ≥ 4` scope, for all `a, b`,
 
     [t_a, t_b] = (-1)^{1 - delta_ab} · I,
 
@@ -142,9 +146,9 @@ closed formula on all 64 pairs of `F_2³` classes at every `L`, and at L ∈ {4,
 additionally checks the extension against commutators of actual lift PRODUCTS for all
 8 × 8 class representatives (64/64 central, 64/64 matching).
 
-**T3 (order and 2-torsion; gates G6_ORDER_Q_L\*, XL_DICHOTOMY).** `(t_nu)^k` has sign
-field `zeta_nu^k`, so `t_nu` has order exactly `L` and `(t_nu)^L = +I`. On the 2-torsion
-points of `T`,
+**T3 (order and 2-torsion; gates G6_ORDER_Q_L\*, XL_DICHOTOMY).** Within the even-`L ≥ 4`
+scope, `(t_nu)^k` has sign field `zeta_nu^k`, so `t_nu` has order exactly `L` and
+`(t_nu)^L = +I`. On the 2-torsion points of `T`,
 
     q((L/2) v) = (-1)^{ (L/2)² Σ_{i<j} v_i v_j },      v ∈ {0,1}³,
 
@@ -197,8 +201,8 @@ directly by counting the enumerated elements over each constructed permutation p
 the enumerated key set).
 
 *Why T4 is size-quantified and T1–T3 are not.* T1 exhibits a closed-form sign field and
-verifies the edge condition symbolically for all even `L`; T2 and T3 follow from T1 by
-algebra with no size dependence. T4 has no counterpart closed form here: the
+verifies the edge condition symbolically for all even `L ≥ 4`; T2 and T3 follow from T1
+by algebra with no size dependence inside that scope. T4 has no counterpart closed form here: the
 cycle-consistency question is settled by the runner at five sizes rather than by an
 argument. The route to closing that is visible and is recorded in section 6 — the same
 edge condition used for T1, with the translation `p_nu` replaced by `x ↦ Ax`, is a linear
@@ -237,7 +241,9 @@ L ∈ {4, 6, 8, 10, 12}. Both halves of the size statement, stated separately:
   to be the affine maps — the L = 4 row below is a lattice where that stronger statement
   is FALSE (46080 automorphisms against 3072 affine maps) and yet `|Comm(D2)| = 96N` holds
   exactly, because the non-affine automorphisms fail to lift. The same applies to every
-  larger even `L`.
+  unenumerated size in principle: equality requires controlling the liftable
+  automorphisms, not the whole support-graph automorphism group. This unit makes the
+  lower-bound claim only at L = 12.
 
 ## 3. Evidence — measured values
 
@@ -270,9 +276,9 @@ permutations, so `48N` distinct fingerprints (3072, 10368, 24576, 48000, 82944 m
 give `96N` distinct group elements once the two central signs are included. No injectivity
 is assumed of the fingerprint map.
 
-All 64 gates pass with zero failures; the paired runner
+All 65 gates pass with zero failures; the paired runner
 `scripts/kcpt_d2_commutant_closed_form_lifts_lattice_size_independence_2026_07_25.py`
-prints `TOTAL: PASS=64 FAIL=0`. The runner deliberately emits no wall-clock or
+prints `TOTAL: PASS=65 FAIL=0`. The runner deliberately emits no wall-clock or
 resident-memory figures: those are machine- and load-dependent, and printing them would
 make the cached output differ on every regeneration. Cost is instead reported here as a
 bound — on the machine used for this unit the full run stayed under two minutes and under
@@ -290,7 +296,8 @@ lower-triangular in the coordinates, and that single structural fact is enough t
 generators down. A translation by `e_nu` disturbs `eta_mu` exactly when `nu < mu`, so the
 compensating sign field must flip across the `mu`-edges with `mu > nu` and no others — that
 is `zeta_nu(x) = (-1)^{Σ_{mu > nu} x_mu}`, a closed form with no `L`-dependence at all
-beyond the parity of `L`. The whole extension class follows from the same triangularity:
+beyond the parity of `L` within the nondegenerate even-`L ≥ 4` scope. The whole extension
+class follows from the same triangularity:
 the commutator `[t_a, t_b] = (-1)^{[a>b]+[b>a]} I` is `-1` off the diagonal because exactly
 one of the two orderings flips, and the 2-torsion form `q = (-1)^{(L/2)² Σ_{i<j} v_i v_j}`
 is trivial or not according to the parity of `L/2` alone. The point group needs no new
@@ -300,22 +307,24 @@ determinant-1 shear that is not a signed permutation fails immediately.
 
 The pay-off is that `96N` becomes a construction rather than a census. At L ∈ {4, 6, 8, 10}
 the exhaustive enumeration is still run and still agrees — including key-set equality at
-L ∈ {4, 6}, where the closure of the 52 closed-form generators is literally the same set of
+L ∈ {4, 6}, where the closure of the 52 constructed generators is literally the same set of
 elements the enumerator produces. At L = 12 the enumeration is not affordable and the
 honest statement is a lower bound: the construction exhibits `165888` elements and does not
 prove there are no others. The gap between the two halves is a single missing ingredient —
 that the LIFTABLE support-graph automorphisms are exactly the `48N` affine maps at general
-even `L`. The L = 4 row of the table is the reason that ingredient has to be stated in that
-liftability form rather than as a statement about the automorphism group: there the support
-graph carries `46080` automorphisms, far more than the `3072` affine ones, and equality
-still holds — because only the affine ones lift.
+even `L ≥ 4`. The L = 4 row of the table is the reason that ingredient has to be stated in
+that liftability form rather than as a statement about the automorphism group: there the
+support graph carries `46080` automorphisms, far more than the `3072` affine ones, and
+equality still holds — because only the affine ones lift.
 
 ## 5. Dependencies
 
 - [KCPT D2 graded signed-permutation commutant characterization (L=4 and L=6) (bounded theorem)](KCPT_D2_GRADED_SIGNED_PERMUTATION_COMMUTANT_CHARACTERIZATION_BOUNDED_THEOREM_NOTE_2026-07-25.md)
-- [KCPT D2 commutant double cover and bicommutant structure (L=4 and L=6) (bounded theorem)](KCPT_D2_COMMUTANT_DOUBLE_COVER_BICOMMUTANT_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-25.md)
 
-Context (not a dependency edge): the preceding restriction-localization unit,
+Context only (not dependency edges): the double-cover/bicommutant unit
+`KCPT_D2_COMMUTANT_DOUBLE_COVER_BICOMMUTANT_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-07-25`
+is not consumed here; the exactly-two kernel is re-proved from connected-support-graph
+sign propagation. The preceding restriction-localization unit,
 `KCPT_D2_COMMUTANT_EXTENSION_TRANSLATION_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-25`,
 already carries both closed forms — it measured `beta` on the enumerated group at
 L ∈ {4, 6} and matched it uniquely among the 512 bimultiplicative candidates, then derived
@@ -326,8 +335,9 @@ derived input, which is what lets both run at L ∈ {8, 10, 12}.
 ## 6. Next paths this opens
 
 - **Prove that the liftable support-graph automorphisms are exactly the `48N` affine maps
-  at general even `L`.** That is the one missing ingredient that would upgrade T5's lower
-  bound `|Comm(D2)| ≥ 96N` to equality at every even `L`, with no enumeration anywhere.
+  at general even `L ≥ 4`.** That is the one missing ingredient that would upgrade T5's
+  lower bound `|Comm(D2)| ≥ 96N` to equality at every even `L ≥ 4`, once T4 is also made
+  general in that scope, with no enumeration anywhere.
   L = 4 fixes the shape such a proof must have: the support-graph automorphism group there
   is `46080`, strictly larger than the `3072` affine maps, and equality nevertheless holds.
   So the proof must NOT go through "there are no extra automorphisms" — the extra
@@ -338,25 +348,31 @@ derived input, which is what lets both run at L ∈ {8, 10, 12}.
   edge condition of T1 with the translation replaced by `x ↦ Ax` is a linear system over
   `F₂` in the unknown sign field; a closed-form solution for all 48 `A ∈ B₃`, together
   with the cycle-holonomy condition, would replace T4's five-size verification with a
-  derivation and remove the last size quantifier from the construction side.
+  derivation and remove the last size quantifier from the construction side for even
+  `L ≥ 4`.
 - **Odd `L`.** `zeta_nu` is not well defined on `Z_L` for odd `L`, so the closed form as
   written does not apply. What replaces the translation lift on an odd torus — and whether
   the group order law survives in any form — is untouched here.
-- **Carry the closed-form generators into the bicommutant computations.** The double-cover
-  and bicommutant work in this lane consumed the enumerated group. With generators in
-  closed form, the extension class, the derived subgroup, the endomorphism algebra and the
-  eigenspace/character block become computable at sizes the enumeration cannot reach, which
-  is the natural way to test which of those structures are `L`-stable in form.
+- **Carry the constructed generators into the bicommutant computations.** The double-cover
+  and bicommutant work in this lane consumed the enumerated group. With the translation
+  generators in closed form and point-group generators constructed explicitly, the
+  extension class, the derived subgroup, the endomorphism algebra and the
+  eigenspace/character block become computable at sizes the enumeration cannot reach,
+  which is the natural way to test which of those structures are `L`-stable in form.
 
 ## Boundary
 
 - The equality `|Comm(D2)| = 96N` is exhaustively established only at L ∈ {4, 6, 8, 10},
-  where the enumeration was actually run. At L = 12 and at every larger even `L` the
-  construction of T1 and T4 gives only the LOWER BOUND `|Comm(D2)| ≥ 96N`. Equality at
-  those sizes is not claimed here; it would need the support-graph automorphism group to be
-  exactly the affine maps at that `L`.
-- `L` even is required throughout, because `zeta_nu(x) = (-1)^{Σ_{mu > nu} x_mu}` is well
-  defined on `Z_L` only when `L` is even. Odd `L` is outside the scope of this unit.
+  where the enumeration was actually run. At L = 12 the tested construction of T1 and T4
+  gives only the LOWER BOUND `|Comm(D2)| ≥ 96N`; equality there would require the LIFTABLE
+  support-graph automorphisms, not the entire support-graph automorphism group, to be
+  exactly the `48N` affine maps. This unit makes no T4 or `96N` construction claim at
+  larger even sizes.
+- The general T1–T3 statements require even `L ≥ 4`.
+  `zeta_nu(x) = (-1)^{Σ_{mu > nu} x_mu}` is not well defined on `Z_L` for odd `L`.
+  At L = 2 the forward and backward neighbours coincide, their `D2` contributions cancel
+  to zero, the support graph is disconnected, and arbitrary sign dressings commute; L = 2
+  is therefore explicitly excluded from the lift-uniqueness claim.
 - This unit adds no physics identification. It is a statement about the symmetry group of a
   finite staggered operator `D2` — nothing about `r`, generations, flavour, the continuum
   limit, or any physical observable is claimed, and the statement is r-neutral.
@@ -374,16 +390,15 @@ derived input, which is what lets both run at L ∈ {8, 10, 12}.
   ones) rather than conflating them.
 - The `q = -I` dichotomy is verified at five sizes covering both residues mod 4
   (L = 4, 8, 12 for `L ≡ 0`; L = 6, 10 for `L ≡ 2`); it is derived from T2 and T3 for all
-  even `L`, and the five sizes are confirmations of that derivation, not its basis.
+  even `L ≥ 4`, and the five sizes are confirmations of that derivation, not its basis.
 - The single-site sign-flip rejector is exhaustive over all `N` sites only at L ∈ {4, 6}; at
   L ∈ {8, 10, 12} it runs on a deterministic stride-`N//32` subset of 32 sites per `nu`
   (no randomness). A sign dressing that differed from `zeta_nu` only at sites outside that
   subset would not be caught by that particular gate at those sizes — though it would be
   caught by the full `N²` commutation check of G1 and by the propagation-equality check of
   G2, both of which are exhaustive at every `L`.
-- The two dependency rows are landed on main; their anchors (`D2`, the support structures,
-  the commutant enumerator, the `96N` census law) are consumed here as landed module
-  values.
+- The sole dependency row is landed on main; its `D2`, support structures, commutant
+  enumerator, and `96N` census anchors are consumed here as landed module values.
 
 ## Honest-auditor read
 
@@ -427,7 +442,7 @@ derived input, which is what lets both run at L ∈ {8, 10, 12}.
   to lift. The open ingredient is therefore a liftability obstruction, not an automorphism
   census.
 - Residual softness a reader should weigh, in two distinct places. (i) T1–T3 are derived for
-  all even `L`; T4 is not — its cycle-consistency question is settled by the runner at
+  all even `L ≥ 4`; T4 is not — its cycle-consistency question is settled by the runner at
   L ∈ {4, 6, 8, 10, 12} and by no argument, so the construction of `96N` elements is a
   five-size statement, not a general-`L` one. (ii) Even granting the construction at a given
   `L`, the step from "the construction gives `96N` elements" to "`Comm(D2)` has exactly `96N`

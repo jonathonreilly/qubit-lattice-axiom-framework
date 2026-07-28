@@ -1,0 +1,2719 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28.py
+runner_sha256: b5a552f1b947aad1ea9599029e5054005bf2cab61fff7eb47e69c0be608e48ba
+input_fingerprint_sha256: c2965612a0ce236459c8538b3e5b4bc2a3ce433ce73fef03cb3926e0cadeb34b
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 292.41
+status: ok
+----- stdout -----
+PASS A_exhaustive_lawful_equivalence_13_17 :: True
+PASS B_identity_refusal_off_code_and_spectators :: True
+PASS C_table_coverage_and_active_deletions :: True
+PASS D_ownership_phase_and_order :: True
+PASS E_exact_inverse_and_clean_work :: True
+PASS F_existing_surfaces_unchanged :: True
+PASS G_fresh_controller_physical_layer :: True
+PASS F.P.structured_commit_certificate :: True
+PASS F.P.pending_shield_certificate :: True
+PASS F.P.shift_semantic_certificate_13_17 :: True
+PASS F.P.routed_layout_certificate_13_17 :: True
+PASS F.P.route_support_scaling :: True
+PASS F.P.active_covariance :: True
+PASS F.P.S.clean_domain_certificate_13_17 :: True
+PASS F.T.domain_certificate :: True
+PASS F.T.deletion_certificate :: True
+PASS F.C.certificate :: True
+PASS F.C.persistent_chain_certificate :: True
+COVERAGE_CENSUS 19/19 {"ack_return": 4, "ack_source_cleanup": 4, "down_bad_allocator": 4, "down_bad_endpoint": 4, "down_bad_interface": 4, "down_bad_law0": 4, "down_bad_law1": 4, "down_bad_law2": 4, "down_bad_law3": 4, "down_boundary": 4, "down_commit": 4, "down_dirty_destination": 4, "down_dirty_link": 4, "down_dirty_rail": 4, "down_empty_event": 4, "down_exhaustion": 4, "down_pending_refusal": 4, "down_prewrap": 4, "down_wrap": 4}
+{
+  "A_transition_equivalence": {
+    "13": {
+      "declared_lawful_rows": 19,
+      "length": 13,
+      "rows": {
+        "ack_return": {
+          "case_class": "ACK propagation",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "return"
+          ],
+          "failed": false,
+          "next_action": "propagate_ack",
+          "ownership": 1,
+          "phase": "ACK",
+          "state_equal": true
+        },
+        "ack_source_cleanup": {
+          "case_class": "source cleanup",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "source_cleanup"
+          ],
+          "failed": false,
+          "next_action": "hold_ack",
+          "ownership": 1,
+          "phase": "ACK",
+          "state_equal": true
+        },
+        "down_bad_allocator": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_endpoint": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_interface": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_law0": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_law1": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_law2": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_law3": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_boundary": {
+          "case_class": "boundary",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [],
+          "failed": false,
+          "next_action": "convert_ack",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_commit": {
+          "case_class": "commit",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_dirty_destination": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_dirty_link": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_dirty_rail": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_empty_event": {
+          "case_class": "empty event",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "decoded",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_exhaustion": {
+          "case_class": "exhaustion",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal"
+          ],
+          "failed": false,
+          "next_action": "convert_ack",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_pending_refusal": {
+          "case_class": "pending/refusal",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "shield",
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_prewrap": {
+          "case_class": "pre-wrap/wrap",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_wrap": {
+          "case_class": "pre-wrap/wrap",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal"
+          ],
+          "failed": false,
+          "next_action": "convert_ack",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        }
+      },
+      "state_level_failures": 0
+    },
+    "17": {
+      "declared_lawful_rows": 19,
+      "length": 17,
+      "rows": {
+        "ack_return": {
+          "case_class": "ACK propagation",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "return"
+          ],
+          "failed": false,
+          "next_action": "propagate_ack",
+          "ownership": 1,
+          "phase": "ACK",
+          "state_equal": true
+        },
+        "ack_source_cleanup": {
+          "case_class": "source cleanup",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "source_cleanup"
+          ],
+          "failed": false,
+          "next_action": "hold_ack",
+          "ownership": 1,
+          "phase": "ACK",
+          "state_equal": true
+        },
+        "down_bad_allocator": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_endpoint": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_interface": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_law0": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_law1": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_law2": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_bad_law3": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_boundary": {
+          "case_class": "boundary",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [],
+          "failed": false,
+          "next_action": "convert_ack",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_commit": {
+          "case_class": "commit",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_dirty_destination": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_dirty_link": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_dirty_rail": {
+          "case_class": "dirty/unlawful destination",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_empty_event": {
+          "case_class": "empty event",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "decoded",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_exhaustion": {
+          "case_class": "exhaustion",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal"
+          ],
+          "failed": false,
+          "next_action": "convert_ack",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_pending_refusal": {
+          "case_class": "pending/refusal",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "shield",
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_prewrap": {
+          "case_class": "pre-wrap/wrap",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "shift"
+          ],
+          "failed": false,
+          "next_action": "advance_down",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        },
+        "down_wrap": {
+          "case_class": "pre-wrap/wrap",
+          "clean_selector_enable_work": true,
+          "enabled_macros": [
+            "pending_refusal"
+          ],
+          "failed": false,
+          "next_action": "convert_ack",
+          "ownership": 1,
+          "phase": "DOWN",
+          "state_equal": true
+        }
+      },
+      "state_level_failures": 0
+    }
+  },
+  "B_identity_refusal": {
+    "13": {
+      "declared_non_enabled_IDLE_failures": 0,
+      "declared_phase_off_code_11_failures": 0,
+      "declared_unmatched_address_failures": 0,
+      "rows": 19
+    },
+    "17": {
+      "declared_non_enabled_IDLE_failures": 0,
+      "declared_phase_off_code_11_failures": 0,
+      "declared_unmatched_address_failures": 0,
+      "rows": 19
+    }
+  },
+  "C_active_deletions": {
+    "active_deletion_hamming": {
+      "delete_enable_Fredkin": 7,
+      "delete_latch_compute_gate": 8,
+      "delete_phase_update_gate": 2
+    },
+    "all_detected": true
+  },
+  "C_coverage_census": {
+    "covered_rows": 19,
+    "declared_rows": 19,
+    "rows": {
+      "ack_return": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "ACK propagation",
+        "total_hits": 4
+      },
+      "ack_source_cleanup": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "source cleanup",
+        "total_hits": 4
+      },
+      "down_bad_allocator": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "dirty/unlawful destination",
+        "total_hits": 4
+      },
+      "down_bad_endpoint": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "dirty/unlawful destination",
+        "total_hits": 4
+      },
+      "down_bad_interface": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "dirty/unlawful destination",
+        "total_hits": 4
+      },
+      "down_bad_law0": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "dirty/unlawful destination",
+        "total_hits": 4
+      },
+      "down_bad_law1": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "dirty/unlawful destination",
+        "total_hits": 4
+      },
+      "down_bad_law2": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "dirty/unlawful destination",
+        "total_hits": 4
+      },
+      "down_bad_law3": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "dirty/unlawful destination",
+        "total_hits": 4
+      },
+      "down_boundary": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "boundary",
+        "total_hits": 4
+      },
+      "down_commit": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "commit",
+        "total_hits": 4
+      },
+      "down_dirty_destination": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "dirty/unlawful destination",
+        "total_hits": 4
+      },
+      "down_dirty_link": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "dirty/unlawful destination",
+        "total_hits": 4
+      },
+      "down_dirty_rail": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "dirty/unlawful destination",
+        "total_hits": 4
+      },
+      "down_empty_event": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "empty event",
+        "total_hits": 4
+      },
+      "down_exhaustion": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "exhaustion",
+        "total_hits": 4
+      },
+      "down_pending_refusal": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "pending/refusal",
+        "total_hits": 4
+      },
+      "down_prewrap": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "pre-wrap/wrap",
+        "total_hits": 4
+      },
+      "down_wrap": {
+        "A_lawful_hits": 2,
+        "B_identity_off_code_hits": 2,
+        "case_class": "pre-wrap/wrap",
+        "total_hits": 4
+      }
+    }
+  },
+  "D_ownership_and_order": {
+    "13": {
+      "ACK_returned_to_source": true,
+      "action_events": [
+        [
+          "DOWN",
+          0,
+          "shield"
+        ],
+        [
+          "DOWN",
+          0,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          0,
+          "commit"
+        ],
+        [
+          "DOWN",
+          0,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          0,
+          "shift"
+        ],
+        [
+          "DOWN",
+          1,
+          "shield"
+        ],
+        [
+          "DOWN",
+          1,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          1,
+          "commit"
+        ],
+        [
+          "DOWN",
+          1,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          1,
+          "shift"
+        ],
+        [
+          "DOWN",
+          2,
+          "shield"
+        ],
+        [
+          "DOWN",
+          2,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          2,
+          "commit"
+        ],
+        [
+          "DOWN",
+          2,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          2,
+          "shift"
+        ],
+        [
+          "DOWN",
+          3,
+          "shield"
+        ],
+        [
+          "DOWN",
+          3,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          3,
+          "commit"
+        ],
+        [
+          "DOWN",
+          3,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          3,
+          "shift"
+        ],
+        [
+          "DOWN",
+          4,
+          "shield"
+        ],
+        [
+          "DOWN",
+          4,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          4,
+          "commit"
+        ],
+        [
+          "DOWN",
+          4,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          4,
+          "shift"
+        ],
+        [
+          "DOWN",
+          5,
+          "shield"
+        ],
+        [
+          "DOWN",
+          5,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          5,
+          "commit"
+        ],
+        [
+          "DOWN",
+          5,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          5,
+          "shift"
+        ],
+        [
+          "DOWN",
+          6,
+          "shield"
+        ],
+        [
+          "DOWN",
+          6,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          6,
+          "commit"
+        ],
+        [
+          "DOWN",
+          6,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          6,
+          "shift"
+        ],
+        [
+          "DOWN",
+          7,
+          "shield"
+        ],
+        [
+          "DOWN",
+          7,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          7,
+          "commit"
+        ],
+        [
+          "DOWN",
+          7,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          7,
+          "shift"
+        ],
+        [
+          "DOWN",
+          8,
+          "shield"
+        ],
+        [
+          "DOWN",
+          8,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          8,
+          "commit"
+        ],
+        [
+          "DOWN",
+          8,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          8,
+          "shift"
+        ],
+        [
+          "DOWN",
+          9,
+          "shield"
+        ],
+        [
+          "DOWN",
+          9,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          9,
+          "commit"
+        ],
+        [
+          "DOWN",
+          9,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          9,
+          "shift"
+        ],
+        [
+          "DOWN",
+          10,
+          "shield"
+        ],
+        [
+          "DOWN",
+          10,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          10,
+          "commit"
+        ],
+        [
+          "DOWN",
+          10,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          10,
+          "shift"
+        ],
+        [
+          "DOWN",
+          11,
+          "shield"
+        ],
+        [
+          "DOWN",
+          11,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          11,
+          "commit"
+        ],
+        [
+          "DOWN",
+          11,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          11,
+          "shift"
+        ],
+        [
+          "ACK",
+          12,
+          "return"
+        ],
+        [
+          "ACK",
+          11,
+          "return"
+        ],
+        [
+          "ACK",
+          10,
+          "return"
+        ],
+        [
+          "ACK",
+          9,
+          "return"
+        ],
+        [
+          "ACK",
+          8,
+          "return"
+        ],
+        [
+          "ACK",
+          7,
+          "return"
+        ],
+        [
+          "ACK",
+          6,
+          "return"
+        ],
+        [
+          "ACK",
+          5,
+          "return"
+        ],
+        [
+          "ACK",
+          4,
+          "return"
+        ],
+        [
+          "ACK",
+          3,
+          "return"
+        ],
+        [
+          "ACK",
+          2,
+          "return"
+        ],
+        [
+          "ACK",
+          1,
+          "return"
+        ],
+        [
+          "ACK",
+          0,
+          "source_cleanup"
+        ]
+      ],
+      "controller_work_clean": true,
+      "early_source_cleanup_failures": 0,
+      "final_owner": {
+        "ack": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "down": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "length": 13,
+      "ownership_failures": 0,
+      "stage_boundaries": 220,
+      "unauthorized_shift_or_commit_failures": 0
+    },
+    "17": {
+      "ACK_returned_to_source": true,
+      "action_events": [
+        [
+          "DOWN",
+          0,
+          "shield"
+        ],
+        [
+          "DOWN",
+          0,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          0,
+          "commit"
+        ],
+        [
+          "DOWN",
+          0,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          0,
+          "shift"
+        ],
+        [
+          "DOWN",
+          1,
+          "shield"
+        ],
+        [
+          "DOWN",
+          1,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          1,
+          "commit"
+        ],
+        [
+          "DOWN",
+          1,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          1,
+          "shift"
+        ],
+        [
+          "DOWN",
+          2,
+          "shield"
+        ],
+        [
+          "DOWN",
+          2,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          2,
+          "commit"
+        ],
+        [
+          "DOWN",
+          2,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          2,
+          "shift"
+        ],
+        [
+          "DOWN",
+          3,
+          "shield"
+        ],
+        [
+          "DOWN",
+          3,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          3,
+          "commit"
+        ],
+        [
+          "DOWN",
+          3,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          3,
+          "shift"
+        ],
+        [
+          "DOWN",
+          4,
+          "shield"
+        ],
+        [
+          "DOWN",
+          4,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          4,
+          "commit"
+        ],
+        [
+          "DOWN",
+          4,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          4,
+          "shift"
+        ],
+        [
+          "DOWN",
+          5,
+          "shield"
+        ],
+        [
+          "DOWN",
+          5,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          5,
+          "commit"
+        ],
+        [
+          "DOWN",
+          5,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          5,
+          "shift"
+        ],
+        [
+          "DOWN",
+          6,
+          "shield"
+        ],
+        [
+          "DOWN",
+          6,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          6,
+          "commit"
+        ],
+        [
+          "DOWN",
+          6,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          6,
+          "shift"
+        ],
+        [
+          "DOWN",
+          7,
+          "shield"
+        ],
+        [
+          "DOWN",
+          7,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          7,
+          "commit"
+        ],
+        [
+          "DOWN",
+          7,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          7,
+          "shift"
+        ],
+        [
+          "DOWN",
+          8,
+          "shield"
+        ],
+        [
+          "DOWN",
+          8,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          8,
+          "commit"
+        ],
+        [
+          "DOWN",
+          8,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          8,
+          "shift"
+        ],
+        [
+          "DOWN",
+          9,
+          "shield"
+        ],
+        [
+          "DOWN",
+          9,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          9,
+          "commit"
+        ],
+        [
+          "DOWN",
+          9,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          9,
+          "shift"
+        ],
+        [
+          "DOWN",
+          10,
+          "shield"
+        ],
+        [
+          "DOWN",
+          10,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          10,
+          "commit"
+        ],
+        [
+          "DOWN",
+          10,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          10,
+          "shift"
+        ],
+        [
+          "DOWN",
+          11,
+          "shield"
+        ],
+        [
+          "DOWN",
+          11,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          11,
+          "commit"
+        ],
+        [
+          "DOWN",
+          11,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          11,
+          "shift"
+        ],
+        [
+          "DOWN",
+          12,
+          "shield"
+        ],
+        [
+          "DOWN",
+          12,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          12,
+          "commit"
+        ],
+        [
+          "DOWN",
+          12,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          12,
+          "shift"
+        ],
+        [
+          "DOWN",
+          13,
+          "shield"
+        ],
+        [
+          "DOWN",
+          13,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          13,
+          "commit"
+        ],
+        [
+          "DOWN",
+          13,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          13,
+          "shift"
+        ],
+        [
+          "DOWN",
+          14,
+          "shield"
+        ],
+        [
+          "DOWN",
+          14,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          14,
+          "commit"
+        ],
+        [
+          "DOWN",
+          14,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          14,
+          "shift"
+        ],
+        [
+          "DOWN",
+          15,
+          "shield"
+        ],
+        [
+          "DOWN",
+          15,
+          "decoded"
+        ],
+        [
+          "DOWN",
+          15,
+          "commit"
+        ],
+        [
+          "DOWN",
+          15,
+          "handoff_relay"
+        ],
+        [
+          "DOWN",
+          15,
+          "shift"
+        ],
+        [
+          "ACK",
+          16,
+          "return"
+        ],
+        [
+          "ACK",
+          15,
+          "return"
+        ],
+        [
+          "ACK",
+          14,
+          "return"
+        ],
+        [
+          "ACK",
+          13,
+          "return"
+        ],
+        [
+          "ACK",
+          12,
+          "return"
+        ],
+        [
+          "ACK",
+          11,
+          "return"
+        ],
+        [
+          "ACK",
+          10,
+          "return"
+        ],
+        [
+          "ACK",
+          9,
+          "return"
+        ],
+        [
+          "ACK",
+          8,
+          "return"
+        ],
+        [
+          "ACK",
+          7,
+          "return"
+        ],
+        [
+          "ACK",
+          6,
+          "return"
+        ],
+        [
+          "ACK",
+          5,
+          "return"
+        ],
+        [
+          "ACK",
+          4,
+          "return"
+        ],
+        [
+          "ACK",
+          3,
+          "return"
+        ],
+        [
+          "ACK",
+          2,
+          "return"
+        ],
+        [
+          "ACK",
+          1,
+          "return"
+        ],
+        [
+          "ACK",
+          0,
+          "source_cleanup"
+        ]
+      ],
+      "controller_work_clean": true,
+      "early_source_cleanup_failures": 0,
+      "final_owner": {
+        "ack": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "down": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "length": 17,
+      "ownership_failures": 0,
+      "stage_boundaries": 292,
+      "unauthorized_shift_or_commit_failures": 0
+    }
+  },
+  "E_inverse_and_clean": {
+    "13": {
+      "arbitrary_state_rows": 12,
+      "exact_arbitrary_inverse_failures": 0,
+      "expanded_M2_primitives": 271071,
+      "length": 13,
+      "literal_controller_gates": 27695,
+      "returned_controller_work_population": 0
+    },
+    "17": {
+      "arbitrary_state_rows": 12,
+      "exact_arbitrary_inverse_failures": 0,
+      "expanded_M2_primitives": 361123,
+      "length": 17,
+      "literal_controller_gates": 36883,
+      "returned_controller_work_population": 0
+    }
+  },
+  "F_existing_surfaces": {
+    "C_certificate": {
+      "boundary": "Positive bounded carrier-return and persistent-link semantic chain only.  It does not compose the Cycle-713 source inverse, physically place/route the link chain, supply backpressure, or close an autonomous recurrent physical-M2 compiler.",
+      "carrier_return_deletion_basis_residual": 1.4142135623730951,
+      "derived": [
+        "retained local transfer predicate across one packet append",
+        "allocator token/head/rotor advances while endpoint carrier returns to source",
+        "returned-clean link latch and link work",
+        "exact reverse-word inverse on all 32 tested source rows",
+        "persistent-link semantic fills through 12 banks with hosted source cleanup",
+        "forward/reverse boundary-order independence on the declared one-token code"
+      ],
+      "failures": 0,
+      "gate_counts": {
+        "carrier_return": 12,
+        "forward_transfer": 45,
+        "packet_and_prefix": 548,
+        "post_latch": 577,
+        "pre_latch": 703,
+        "total_semantic": 1885
+      },
+      "maximum_inverse_basis_residual": 0.0,
+      "maximum_returned_work_population": 0,
+      "maximum_state_basis_residual": 0.0,
+      "open": [
+        "literal composition with the Cycle-713 source extractor and its inverse",
+        "literal M2 placement/routing of the persistent per-link reverse pass",
+        "safe backpressure/refusal when the downstream bank is occupied or unlawful",
+        "autonomous event admission, genesis/enforcement, and finite exhaustion behavior",
+        "active proper-cubic carrier action and same-E recurrent physical update"
+      ],
+      "pass": true,
+      "persistent_chain": {
+        "edge_permutations": 6,
+        "forward_reverse_order_comparisons": 864,
+        "held_failures": 0,
+        "held_rows": [
+          {
+            "banks": 2,
+            "events": 4,
+            "issues": []
+          },
+          {
+            "banks": 5,
+            "events": 10,
+            "issues": []
+          },
+          {
+            "banks": 12,
+            "events": 24,
+            "issues": []
+          }
+        ],
+        "host_source_cleanup_still_supplied": true,
+        "mixed_failures": 0,
+        "mixed_sequences": 729,
+        "order_failures": 0,
+        "order_fill_phases": 8,
+        "persistent_aux_bits_per_link": 191
+      },
+      "report_sha256": "c1ebbc1066aa8dc44fb0a13be27238a4b62cee5d8ff5b42829e49f157b9f565d",
+      "rows": 32,
+      "supplied": [
+        "Route-A two-cell bank and safe admitted packet body",
+        "full source bank, blank destination bank, and clean 190-bit link work",
+        "one-hot allocator token and complete BINDER/ACTUAL/ADMISS/LAW inputs",
+        "one endpoint direction carrier and fixed handoff/packet/return order",
+        "six-bit structural destination-bank ROM prefix",
+        "host carrier injection and host source cleanup in the semantic chain"
+      ]
+    },
+    "C_persistent_chain": {
+      "edge_permutations": 6,
+      "forward_reverse_order_comparisons": 864,
+      "held_failures": 0,
+      "held_rows": [
+        {
+          "banks": 2,
+          "events": 4,
+          "issues": []
+        },
+        {
+          "banks": 5,
+          "events": 10,
+          "issues": []
+        },
+        {
+          "banks": 12,
+          "events": 24,
+          "issues": []
+        }
+      ],
+      "host_source_cleanup_still_supplied": true,
+      "mixed_failures": 0,
+      "mixed_sequences": 729,
+      "order_failures": 0,
+      "order_fill_phases": 8,
+      "persistent_aux_bits_per_link": 191
+    },
+    "P_S_clean_domain": {
+      "13": {
+        "applications": {
+          "1": {
+            "applications": 1,
+            "maximum_bad_packet_or_auxiliary_weight": 0.0,
+            "maximum_intertwiner_residual": 0.0,
+            "maximum_norm_residual": 1.1102230246251565e-15,
+            "maximum_particle_number_leakage": 0.0,
+            "maximum_sparse_support": 36,
+            "sources_N_le_2": 79
+          },
+          "2": {
+            "applications": 2,
+            "maximum_bad_packet_or_auxiliary_weight": 0.0,
+            "maximum_intertwiner_residual": 0.0,
+            "maximum_norm_residual": 1.5543122344752192e-15,
+            "maximum_particle_number_leakage": 0.0,
+            "maximum_sparse_support": 38,
+            "sources_N_le_2": 79
+          },
+          "4": {
+            "applications": 4,
+            "maximum_bad_packet_or_auxiliary_weight": 0.0,
+            "maximum_intertwiner_residual": 6.074003643852178e-16,
+            "maximum_norm_residual": 4.218847493575595e-15,
+            "maximum_particle_number_leakage": 0.0,
+            "maximum_sparse_support": 342,
+            "sources_N_le_2": 79
+          }
+        },
+        "coin_QR_residual": 1.3496230663401984e-15,
+        "decoded_Cycle713_gates": 92,
+        "held_rail_length": 13
+      },
+      "17": {
+        "applications": {
+          "1": {
+            "applications": 1,
+            "maximum_bad_packet_or_auxiliary_weight": 0.0,
+            "maximum_intertwiner_residual": 0.0,
+            "maximum_norm_residual": 1.1102230246251565e-15,
+            "maximum_particle_number_leakage": 0.0,
+            "maximum_sparse_support": 36,
+            "sources_N_le_2": 79
+          },
+          "2": {
+            "applications": 2,
+            "maximum_bad_packet_or_auxiliary_weight": 0.0,
+            "maximum_intertwiner_residual": 0.0,
+            "maximum_norm_residual": 1.5543122344752192e-15,
+            "maximum_particle_number_leakage": 0.0,
+            "maximum_sparse_support": 38,
+            "sources_N_le_2": 79
+          },
+          "4": {
+            "applications": 4,
+            "maximum_bad_packet_or_auxiliary_weight": 0.0,
+            "maximum_intertwiner_residual": 6.074003643852178e-16,
+            "maximum_norm_residual": 4.218847493575595e-15,
+            "maximum_particle_number_leakage": 0.0,
+            "maximum_sparse_support": 342,
+            "sources_N_le_2": 79
+          }
+        },
+        "coin_QR_residual": 1.3496230663401984e-15,
+        "decoded_Cycle713_gates": 92,
+        "held_rail_length": 17
+      }
+    },
+    "P_pending_shield": {
+      "all_4096_matter_basis_rows": 4096,
+      "all_shield_deletions_detected": true,
+      "clean_HOLD_M2": 12,
+      "deletion_residuals": {
+        "omit_both_shields": 1.8216678303966878,
+        "omit_post_shield": 1.414213562373095,
+        "omit_pre_shield": 1.414213562373095
+      },
+      "maximum_pending_shield_residual": 2.2263907214770273e-16,
+      "persistent_pending_M2": 1,
+      "shield_failures": 0,
+      "vacuum_fixed_point_residual": 2.2263907214770273e-16
+    },
+    "P_routes": {
+      "13": {
+        "covariance": {
+          "active_endpoint_direction_failures": 0,
+          "active_rows_per_frame": 4096,
+          "direction_product_failures": 0,
+          "instruction_coordinate_failures": 0,
+          "ordered_frame_products": 576,
+          "proper_cubic_frames": 24,
+          "routed_NN_frame_failures": 0,
+          "translation_failures": 0,
+          "translations_checked": [
+            [
+              7,
+              -5,
+              11
+            ],
+            [
+              -13,
+              2,
+              -4
+            ]
+          ]
+        },
+        "held_length": 13,
+        "placement": {
+          "assigned_M2": 6199,
+          "controller_M2": 73,
+          "placement_collisions": 0,
+          "rail_M2": 6084,
+          "rail_period_M2_per_direction": 1014,
+          "source_collisions": 0
+        },
+        "route": {
+          "blank_route_work_M2": 7556,
+          "maximum_route_distance": 116,
+          "non_NN_failures": 0,
+          "operand_order_failures": 0,
+          "route_deletion_detected_macros": 2526,
+          "route_return_failures": 0,
+          "routed_nearest_neighbor_gates": 190279,
+          "routed_word_sha256": "41d73ae14be7206ef5eaaacc3c4c77d49ec5344785b6d07b5ca0d5142e85691f",
+          "touched_M2": 13755
+        },
+        "word": {
+          "coin_QR_residual": 1.3496230663401984e-15,
+          "decoded_Cycle713_gates": 92,
+          "decoded_Cycle713_primitives": 92,
+          "pending_shield_post_primitives": 204,
+          "pending_shield_pre_primitives": 204,
+          "shift_non_NN_failures_before_route": 0,
+          "source_decode_prefix_primitives": 654,
+          "source_suffix_primitives": 654,
+          "structured_commit_primitives": 5121,
+          "total_physical_primitives": 25181,
+          "two_layer_shift_CNOTs": 18252
+        }
+      },
+      "17": {
+        "covariance": {
+          "active_endpoint_direction_failures": 0,
+          "active_rows_per_frame": 4096,
+          "direction_product_failures": 0,
+          "instruction_coordinate_failures": 0,
+          "ordered_frame_products": 576,
+          "proper_cubic_frames": 24,
+          "routed_NN_frame_failures": 0,
+          "translation_failures": 0,
+          "translations_checked": [
+            [
+              7,
+              -5,
+              11
+            ],
+            [
+              -13,
+              2,
+              -4
+            ]
+          ]
+        },
+        "held_length": 17,
+        "placement": {
+          "assigned_M2": 8071,
+          "controller_M2": 73,
+          "placement_collisions": 0,
+          "rail_M2": 7956,
+          "rail_period_M2_per_direction": 1326,
+          "source_collisions": 0
+        },
+        "route": {
+          "blank_route_work_M2": 7556,
+          "maximum_route_distance": 116,
+          "non_NN_failures": 0,
+          "operand_order_failures": 0,
+          "route_deletion_detected_macros": 2526,
+          "route_return_failures": 0,
+          "routed_nearest_neighbor_gates": 195895,
+          "routed_word_sha256": "ee15050f3a2fe9eada5eda17e1b5694fd4e144a38e4cf18ed8970013d4c59f07",
+          "touched_M2": 15627
+        },
+        "word": {
+          "coin_QR_residual": 1.3496230663401984e-15,
+          "decoded_Cycle713_gates": 92,
+          "decoded_Cycle713_primitives": 92,
+          "pending_shield_post_primitives": 204,
+          "pending_shield_pre_primitives": 204,
+          "shift_non_NN_failures_before_route": 0,
+          "source_decode_prefix_primitives": 654,
+          "source_suffix_primitives": 654,
+          "structured_commit_primitives": 5121,
+          "total_physical_primitives": 30797,
+          "two_layer_shift_CNOTs": 23868
+        }
+      }
+    },
+    "P_shifts": {
+      "13": {
+        "M2_per_bundle": 39,
+        "inverse_failures": 0,
+        "length": 13,
+        "prewrap_updates_checked": 4,
+        "rail_families": 6,
+        "shift_failures": 0,
+        "two_layer_swap_instances": 6084,
+        "wrap_reached": false
+      },
+      "17": {
+        "M2_per_bundle": 39,
+        "inverse_failures": 0,
+        "length": 17,
+        "prewrap_updates_checked": 4,
+        "rail_families": 6,
+        "shift_failures": 0,
+        "two_layer_swap_instances": 7956,
+        "wrap_reached": false
+      }
+    },
+    "P_structured_commit": {
+      "abstract_X_CNOT_Toffoli_gates": 557,
+      "abstract_registers": 310,
+      "all_deletions_detected": true,
+      "arbitrary_inverse_failures": 0,
+      "arbitrary_inverse_rows": 64,
+      "controller_failures": 0,
+      "deletion_hamming": {
+        "append_ACK": 37,
+        "carry": 1,
+        "cleanup_echo": 1,
+        "complete_blank_NEW": 26,
+        "delta": 2,
+        "endpoint_cleanup": 1,
+        "fresh_transfer": 19,
+        "frontier": 2,
+        "handshakes": 19,
+        "pending_latch": 2,
+        "retry_echo": 2,
+        "start_handshake": 19
+      },
+      "dirty_and_unlawful_refusal_failures": 0,
+      "exact_inverse_failures": 0,
+      "expanded_one_two_M2_primitives": 5121,
+      "full_34_raw_payload_failures": 0,
+      "one_decoded_event_failures": 0,
+      "orientation_head_rotor_identity_pending_cases": 256,
+      "packet_failures": 0,
+      "pending_latch_failures": 0,
+      "pending_latch_rows": 4,
+      "transient_or_work_failures": 0
+    },
+    "P_support_scaling": {
+      "assigned_M2_slope": 468,
+      "physical_word_slope": 1404,
+      "routing_overhead_13": 165098,
+      "routing_overhead_17": 165098,
+      "touched_M2_slope": 468
+    },
+    "T_deletions": {
+      "edge0_relay_first_swap": 1.2138230622357071,
+      "edge1_handoff_token": 1.0597397774626018,
+      "source_pointer_cleanup": 1.3981181454925433
+    },
+    "T_domains": {
+      "2": {
+        "applications": 2,
+        "maximum_bad_history_or_auxiliary_probability_weight": 0.0,
+        "maximum_norm_residual": 1.5543122344752192e-15,
+        "maximum_particle_number_leakage": 0.0,
+        "maximum_sparse_support": 38,
+        "sources_N_le_2": 79
+      },
+      "4": {
+        "applications": 4,
+        "maximum_bad_history_or_auxiliary_probability_weight": 0.0,
+        "maximum_norm_residual": 2.6645352591003757e-15,
+        "maximum_particle_number_leakage": 0.0,
+        "maximum_sparse_support": 172,
+        "sources_N_le_2": 79
+      }
+    },
+    "checks": {
+      "C.certificate": true,
+      "C.persistent_chain_certificate": true,
+      "P.S.clean_domain_certificate_13_17": true,
+      "P.active_covariance": true,
+      "P.pending_shield_certificate": true,
+      "P.route_support_scaling": true,
+      "P.routed_layout_certificate_13_17": true,
+      "P.shift_semantic_certificate_13_17": true,
+      "P.structured_commit_certificate": true,
+      "T.deletion_certificate": true,
+      "T.domain_certificate": true
+    },
+    "pass": true
+  },
+  "G_controller_physical": {
+    "13": {
+      "blank_route_work_M2": 0,
+      "controller_assigned_M2": 780,
+      "controller_existing_layout_collisions": 0,
+      "controller_expanded_primitives": 271071,
+      "controller_literal_gates": 27695,
+      "covariance": {
+        "frame_product_failures": 0,
+        "instruction_coordinate_failures": 0,
+        "ordered_frame_products": 576,
+        "proper_cubic_frames": 24,
+        "routed_NN_frame_failures": 0,
+        "translation_failures": 0,
+        "translations": [
+          [
+            7,
+            -5,
+            11
+          ],
+          [
+            -13,
+            2,
+            -4
+          ]
+        ]
+      },
+      "length": 13,
+      "maximum_route_distance": 86,
+      "non_NN_failures": 0,
+      "operand_order_failures": 0,
+      "pre_route_non_NN_gates": 73191,
+      "route_deletion_detected_macros": 73191,
+      "route_return_failures": 0,
+      "routed_nearest_neighbor_gates": 4279629,
+      "routed_sha256": "0f4f877784fdebf83054ff5c5f6a423f4a9c4b28d20080547821ec63862cceda"
+    },
+    "17": {
+      "blank_route_work_M2": 0,
+      "controller_assigned_M2": 1020,
+      "controller_existing_layout_collisions": 0,
+      "controller_expanded_primitives": 361123,
+      "controller_literal_gates": 36883,
+      "covariance": {
+        "frame_product_failures": 0,
+        "instruction_coordinate_failures": 0,
+        "ordered_frame_products": 576,
+        "proper_cubic_frames": 24,
+        "routed_NN_frame_failures": 0,
+        "translation_failures": 0,
+        "translations": [
+          [
+            7,
+            -5,
+            11
+          ],
+          [
+            -13,
+            2,
+            -4
+          ]
+        ]
+      },
+      "length": 17,
+      "maximum_route_distance": 86,
+      "non_NN_failures": 0,
+      "operand_order_failures": 0,
+      "pre_route_non_NN_gates": 97491,
+      "route_deletion_detected_macros": 97491,
+      "route_return_failures": 0,
+      "routed_nearest_neighbor_gates": 5702545,
+      "routed_sha256": "4773a59afa43c70603848c19c9ddacc99c6f3a4978b3cf1909472f41c8d0572e"
+    }
+  },
+  "G_support_scaling": {
+    "assigned_M2_slope": 60,
+    "expanded_primitive_slope": 22513,
+    "routed_gate_slope": 355729
+  },
+  "audit": "unset",
+  "authority": "none",
+  "checks": {
+    "A_exhaustive_lawful_equivalence_13_17": true,
+    "B_identity_refusal_off_code_and_spectators": true,
+    "C_table_coverage_and_active_deletions": true,
+    "D_ownership_phase_and_order": true,
+    "E_exact_inverse_and_clean_work": true,
+    "F_existing_surfaces_unchanged": true,
+    "G_fresh_controller_physical_layer": true
+  },
+  "claim_boundary": "Bounded conditional compilation of the D7-supplied one-shot DOWN/ACK controller into literal reversible M2 structure.  The result removes runtime Python semantic selection but does not derive the transition law, topology, ROM, clean resources, controller genesis, time, Record, Born content, source content, or any gravity/resource law.  Ordinals are circuit structure, not time.",
+  "claim_type": "bounded_theorem",
+  "controller_genesis_supplied": true,
+  "cycle": 726,
+  "declared_inputs": [
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py"
+  ],
+  "derived": [
+    "finite literal DOWN-to-boundary and ACK-to-source controller word",
+    "no runtime Python source scan, semantic branch, application loop, or edge-order selection",
+    "reversible predicate-select into clean enable, phase-gated action, and exact clean enable transfer",
+    "Cycle-723 classical macro lifts and D7 Fredkin spectator rerouting for the H/T decoded word",
+    "row-complete equivalence/identity/coverage/deletion/ownership/inverse certificates",
+    "fresh collision-free routed controller layer with 13/17 scaling and cubic covariance"
+  ],
+  "macro_gating": {
+    "H_T_decoded_spectator_rerouting": {
+      "blank_macro_fixed_residual": 2.2263907214770273e-16,
+      "decoded_imported_gates": 92,
+      "decoded_operand_wires": 15,
+      "direct_controlled_unitary_used": false,
+      "disabled_identity_residual": 4.997441426491515e-15,
+      "disabled_spectator_population": 0,
+      "enabled_equivalence_residual": 5.973275390517415e-15,
+      "enabled_spectator_population": 0,
+      "exact_inverse_residual": 1.1673782005256508e-14,
+      "path": "D7 enable-latched Fredkin spectator rerouting (CN;TOF;CN)",
+      "spectator_Fredkin_count_each_side": 15,
+      "wrapper_gates": 602
+    },
+    "classical_lift": {
+      "cases": {
+        "commit": {
+          "disabled_identity": true,
+          "enable_preserved": true,
+          "enabled_state_equal": true,
+          "family": "commit",
+          "lifted_gates": 1209,
+          "new_work_clean": true,
+          "source_gates": 557
+        },
+        "handoff": {
+          "disabled_identity": true,
+          "enable_preserved": true,
+          "enabled_state_equal": true,
+          "family": "handoff",
+          "lifted_gates": 1508,
+          "new_work_clean": true,
+          "source_gates": 748
+        },
+        "relay": {
+          "disabled_identity": true,
+          "enable_preserved": true,
+          "enabled_state_equal": true,
+          "family": "relay",
+          "lifted_gates": 775,
+          "new_work_clean": true,
+          "source_gates": 381
+        },
+        "return": {
+          "disabled_identity": true,
+          "enable_preserved": true,
+          "enabled_state_equal": true,
+          "family": "return",
+          "lifted_gates": 1215,
+          "new_work_clean": true,
+          "source_gates": 589
+        },
+        "shield": {
+          "disabled_identity": true,
+          "enable_preserved": true,
+          "enabled_state_equal": true,
+          "family": "shield",
+          "lifted_gates": 5,
+          "new_work_clean": true,
+          "source_gates": 3
+        },
+        "shift": {
+          "disabled_identity": true,
+          "enable_preserved": true,
+          "enabled_state_equal": true,
+          "family": "shift",
+          "lifted_gates": 117,
+          "new_work_clean": true,
+          "source_gates": 117
+        },
+        "source_cleanup": {
+          "disabled_identity": true,
+          "enable_preserved": true,
+          "enabled_state_equal": true,
+          "family": "source_cleanup",
+          "lifted_gates": 11,
+          "new_work_clean": true,
+          "source_gates": 7
+        }
+      },
+      "failures": 0,
+      "path": "Cycle-723 extra-control classical lift"
+    },
+    "paths_by_family": {
+      "commit": "classical extra-control lift",
+      "decoded_H_T_word": "enable-latched Fredkin spectator rerouting",
+      "handoff_relay": "classical extra-control lift",
+      "pending_refusal": "classical extra-control lift",
+      "return": "classical extra-control lift",
+      "shield": "classical extra-control lift",
+      "shift": "classical extra-control lift",
+      "source_cleanup": "classical extra-control lift"
+    }
+  },
+  "pass": true,
+  "report_sha256": "95b20274f2d9c86977428bf2db109b1032329bf9a14c4425840d97f785e352ae",
+  "runtime_python_semantic_selection_removed": true,
+  "runtime_seconds": 291.93817933399987,
+  "status": "bounded_conditional_construction",
+  "supplied": [
+    "D7 IDLE/DOWN/ACK two-M2 phase encoding and one-hot source-DOWN genesis",
+    "D7 explicit transition-table convention and unconditional path-end DOWN-to-ACK boundary",
+    "D7 phase-gated local shift semantics and fixed 13/17 topology parameters",
+    "D7 six-bit structural bank-index ROM contents",
+    "clean controller selectors, enable latches, work, spectator blanks, and phase rails",
+    "Cycle-713 decoder/source word and clean BINDER/ACTUAL/ADMISS/LAW, head/rotor/identity/work genesis",
+    "six A/B loops, blank transient route sites, pending/HOLD genesis, and finite pre-wrap blank/no-return sector",
+    "clean downstream banks/link tubes, one-hot allocator token, and structural prefix supply"
+  ],
+  "transition_table": [
+    {
+      "case_class": "boundary",
+      "enable_latches": [],
+      "name": "down_boundary",
+      "next_phase_action": "convert_ack",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "boundary": 1
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "pre-wrap/wrap",
+      "enable_latches": [
+        "pending_refusal"
+      ],
+      "name": "down_wrap",
+      "next_phase_action": "convert_ack",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "boundary": 0,
+        "wrap": 1
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "exhaustion",
+      "enable_latches": [
+        "pending_refusal"
+      ],
+      "name": "down_exhaustion",
+      "next_phase_action": "convert_ack",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "boundary": 0,
+        "exhausted": 1,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "pre-wrap/wrap",
+      "enable_latches": [
+        "shift"
+      ],
+      "name": "down_prewrap",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "boundary": 0,
+        "exhausted": 0,
+        "prewrap": 1,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "empty event",
+      "enable_latches": [
+        "decoded",
+        "shift"
+      ],
+      "name": "down_empty_event",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "boundary": 0,
+        "exhausted": 0,
+        "pointer": 0,
+        "prewrap": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "dirty/unlawful destination",
+      "enable_latches": [
+        "pending_refusal",
+        "shift"
+      ],
+      "name": "down_bad_endpoint",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "boundary": 0,
+        "endpoint": 0,
+        "exhausted": 0,
+        "pointer": 1,
+        "prewrap": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "dirty/unlawful destination",
+      "enable_latches": [
+        "pending_refusal",
+        "shift"
+      ],
+      "name": "down_bad_law0",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "boundary": 0,
+        "endpoint": 1,
+        "exhausted": 0,
+        "law0": 0,
+        "pointer": 1,
+        "prewrap": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "dirty/unlawful destination",
+      "enable_latches": [
+        "pending_refusal",
+        "shift"
+      ],
+      "name": "down_bad_law1",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "boundary": 0,
+        "endpoint": 1,
+        "exhausted": 0,
+        "law0": 1,
+        "law1": 0,
+        "pointer": 1,
+        "prewrap": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "dirty/unlawful destination",
+      "enable_latches": [
+        "pending_refusal",
+        "shift"
+      ],
+      "name": "down_bad_law2",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "boundary": 0,
+        "endpoint": 1,
+        "exhausted": 0,
+        "law0": 1,
+        "law1": 1,
+        "law2": 0,
+        "pointer": 1,
+        "prewrap": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "dirty/unlawful destination",
+      "enable_latches": [
+        "pending_refusal",
+        "shift"
+      ],
+      "name": "down_bad_law3",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "boundary": 0,
+        "endpoint": 1,
+        "exhausted": 0,
+        "law0": 1,
+        "law1": 1,
+        "law2": 1,
+        "law3": 0,
+        "pointer": 1,
+        "prewrap": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "dirty/unlawful destination",
+      "enable_latches": [
+        "pending_refusal",
+        "shift"
+      ],
+      "name": "down_bad_allocator",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "allocator_TOKEN": 0,
+        "boundary": 0,
+        "endpoint": 1,
+        "exhausted": 0,
+        "law0": 1,
+        "law1": 1,
+        "law2": 1,
+        "law3": 1,
+        "pointer": 1,
+        "prewrap": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "dirty/unlawful destination",
+      "enable_latches": [
+        "pending_refusal",
+        "shift"
+      ],
+      "name": "down_bad_interface",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "allocator_FRESH": 1,
+        "allocator_HEAD": 1,
+        "allocator_ROTOR": 1,
+        "allocator_TOKEN": 1,
+        "allocator_interface": 0,
+        "allocator_valid": 1,
+        "boundary": 0,
+        "endpoint": 1,
+        "exhausted": 0,
+        "law0": 1,
+        "law1": 1,
+        "law2": 1,
+        "law3": 1,
+        "pointer": 1,
+        "prewrap": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "dirty/unlawful destination",
+      "enable_latches": [
+        "pending_refusal",
+        "shift"
+      ],
+      "name": "down_dirty_link",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "allocator_FRESH": 1,
+        "allocator_HEAD": 1,
+        "allocator_ROTOR": 1,
+        "allocator_TOKEN": 1,
+        "allocator_interface": 1,
+        "allocator_valid": 1,
+        "boundary": 0,
+        "endpoint": 1,
+        "exhausted": 0,
+        "law0": 1,
+        "law1": 1,
+        "law2": 1,
+        "law3": 1,
+        "link_latch_clean": 0,
+        "pointer": 1,
+        "prewrap": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "pending/refusal",
+      "enable_latches": [
+        "shield",
+        "decoded",
+        "pending_refusal",
+        "shift"
+      ],
+      "name": "down_pending_refusal",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "allocator_FRESH": 1,
+        "allocator_HEAD": 1,
+        "allocator_ROTOR": 1,
+        "allocator_TOKEN": 1,
+        "allocator_interface": 1,
+        "allocator_valid": 1,
+        "boundary": 0,
+        "endpoint": 1,
+        "exhausted": 0,
+        "law0": 1,
+        "law1": 1,
+        "law2": 1,
+        "law3": 1,
+        "link_latch_clean": 1,
+        "link_work_clean": 1,
+        "pending": 1,
+        "pointer": 1,
+        "prewrap": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "dirty/unlawful destination",
+      "enable_latches": [
+        "decoded",
+        "pending_refusal",
+        "shift"
+      ],
+      "name": "down_dirty_destination",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "allocator_FRESH": 1,
+        "allocator_HEAD": 1,
+        "allocator_ROTOR": 1,
+        "allocator_TOKEN": 1,
+        "allocator_interface": 1,
+        "allocator_valid": 1,
+        "boundary": 0,
+        "destination_blank": 0,
+        "endpoint": 1,
+        "exhausted": 0,
+        "law0": 1,
+        "law1": 1,
+        "law2": 1,
+        "law3": 1,
+        "link_latch_clean": 1,
+        "link_work_clean": 1,
+        "pending": 0,
+        "pointer": 1,
+        "prewrap": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "dirty/unlawful destination",
+      "enable_latches": [
+        "decoded",
+        "pending_refusal",
+        "shift"
+      ],
+      "name": "down_dirty_rail",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "allocator_FRESH": 1,
+        "allocator_HEAD": 1,
+        "allocator_ROTOR": 1,
+        "allocator_TOKEN": 1,
+        "allocator_interface": 1,
+        "allocator_valid": 1,
+        "boundary": 0,
+        "destination_blank": 1,
+        "endpoint": 1,
+        "exhausted": 0,
+        "law0": 1,
+        "law1": 1,
+        "law2": 1,
+        "law3": 1,
+        "link_latch_clean": 1,
+        "link_work_clean": 1,
+        "pending": 0,
+        "pointer": 1,
+        "prewrap": 0,
+        "rail_start": 1,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "commit",
+      "enable_latches": [
+        "shield",
+        "decoded",
+        "commit",
+        "handoff_relay",
+        "shift"
+      ],
+      "name": "down_commit",
+      "next_phase_action": "advance_down",
+      "phase": "DOWN",
+      "predicate_pattern": {
+        "allocator_FRESH": 1,
+        "allocator_HEAD": 1,
+        "allocator_ROTOR": 1,
+        "allocator_TOKEN": 1,
+        "allocator_interface": 1,
+        "allocator_valid": 1,
+        "boundary": 0,
+        "destination_blank": 1,
+        "endpoint": 1,
+        "exhausted": 0,
+        "law0": 1,
+        "law1": 1,
+        "law2": 1,
+        "law3": 1,
+        "link_latch_clean": 1,
+        "link_work_clean": 1,
+        "pending": 0,
+        "pointer": 1,
+        "prewrap": 0,
+        "rail_cleanup": 0,
+        "rail_start": 0,
+        "rail_valid": 0,
+        "retry_echo": 0,
+        "wrap": 0
+      },
+      "site_role": "any"
+    },
+    {
+      "case_class": "ACK propagation",
+      "enable_latches": [
+        "return"
+      ],
+      "name": "ack_return",
+      "next_phase_action": "propagate_ack",
+      "phase": "ACK",
+      "predicate_pattern": {
+        "link_latch_clean": 1,
+        "link_work_clean": 1
+      },
+      "site_role": "interior_or_boundary"
+    },
+    {
+      "case_class": "source cleanup",
+      "enable_latches": [
+        "source_cleanup"
+      ],
+      "name": "ack_source_cleanup",
+      "next_phase_action": "hold_ack",
+      "phase": "ACK",
+      "predicate_pattern": {
+        "link_latch_clean": 1,
+        "link_work_clean": 1
+      },
+      "site_role": "source"
+    }
+  ],
+  "transition_table_supplied": true,
+  "wavefront_controller_compiled_to_m2": true,
+  "word_counts": {
+    "13": {
+      "decoded_spectator_wrapper_gates": 602,
+      "existing_C_three_phase_expanded": 16977,
+      "existing_P_physical_word": 25181,
+      "existing_T_classical_expanded": 51974,
+      "expanded_controller_M2": 271071,
+      "literal_controller_word": 27695,
+      "total_composed_count": 393500
+    },
+    "17": {
+      "decoded_spectator_wrapper_gates": 602,
+      "existing_C_three_phase_expanded": 16977,
+      "existing_P_physical_word": 30797,
+      "existing_T_classical_expanded": 51974,
+      "expanded_controller_M2": 361123,
+      "literal_controller_word": 36883,
+      "total_composed_count": 498356
+    }
+  }
+}
+
+----- stderr -----
+

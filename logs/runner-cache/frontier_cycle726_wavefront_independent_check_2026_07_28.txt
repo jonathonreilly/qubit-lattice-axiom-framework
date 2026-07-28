@@ -1,0 +1,5906 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle726_wavefront_independent_check_2026_07_28.py
+runner_sha256: 04dc322cb3290331c9f7e9e7bca6994192ce7561d4030eaeb9696dbf0f3f59aa
+input_fingerprint_sha256: dabce3c88c2fd0e3f43b015359979d6ebbfd0f254279d825cadab3d9261e3806
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 15.60
+status: ok
+----- stdout -----
+PASS table_extraction
+PASS sandwich_and_fredkin_semantics
+PASS controller_replay
+PASS unchanged_surface_spot
+PASS primary_source_discipline
+{
+  "audit": "unset",
+  "audit_input_paths": [
+    "scripts/frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py"
+  ],
+  "audit_timeout_seconds": 900,
+  "authority": "none",
+  "blocked_primary_imports_present": [],
+  "certificates": {
+    "controller_replay": {
+      "boundary_DOWN_to_ACK_conversion": true,
+      "declared_lawful_phase_input_rows": 19,
+      "final_owner": [
+        "ACK",
+        0
+      ],
+      "fixture": {
+        "assigned_M2": 6199,
+        "entry_point": "P.physical_layout(13)",
+        "length": 13,
+        "placement_collisions": 0,
+        "rail_M2": 6084,
+        "source_collisions": 0,
+        "valid": true
+      },
+      "full_action_events": 73,
+      "full_family_sites": {
+        "commit": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "decoded": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "handoff_relay": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "pending_refusal": [],
+        "return": [
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "shield": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "shift": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "source_cleanup": [
+          0
+        ]
+      },
+      "full_ownership_failures": 0,
+      "full_replay_steps": 26,
+      "full_row_sequence": [
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_boundary",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_source_cleanup"
+      ],
+      "full_row_sequence_expected": [
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_commit",
+        "down_boundary",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_return",
+        "ack_source_cleanup"
+      ],
+      "isolated_action_events": 38,
+      "isolated_family_sites": {
+        "commit": [
+          0
+        ],
+        "decoded": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "handoff_relay": [
+          0
+        ],
+        "pending_refusal": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "return": [
+          12
+        ],
+        "shield": [
+          0,
+          0
+        ],
+        "shift": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "source_cleanup": [
+          0
+        ]
+      },
+      "isolated_ownership_failures": 0,
+      "isolated_rows": {
+        "ack_return": {
+          "declared_case_class": "ACK propagation",
+          "expected_macros": [
+            "return"
+          ],
+          "expected_owner_after": [
+            "ACK",
+            11
+          ],
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            11
+          ],
+          "owner_before": [
+            "ACK",
+            12
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "row_output_equal": true,
+          "site": 12
+        },
+        "ack_source_cleanup": {
+          "declared_case_class": "source cleanup",
+          "expected_macros": [
+            "source_cleanup"
+          ],
+          "expected_owner_after": [
+            "ACK",
+            0
+          ],
+          "macros": [
+            "source_cleanup"
+          ],
+          "next_action": "hold_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            0
+          ],
+          "owner_before": [
+            "ACK",
+            0
+          ],
+          "phase": "ACK",
+          "row": "ack_source_cleanup",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_bad_allocator": {
+          "declared_case_class": "dirty/unlawful destination",
+          "expected_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_bad_allocator",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_bad_endpoint": {
+          "declared_case_class": "dirty/unlawful destination",
+          "expected_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_bad_endpoint",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_bad_interface": {
+          "declared_case_class": "dirty/unlawful destination",
+          "expected_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_bad_interface",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_bad_law0": {
+          "declared_case_class": "dirty/unlawful destination",
+          "expected_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_bad_law0",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_bad_law1": {
+          "declared_case_class": "dirty/unlawful destination",
+          "expected_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_bad_law1",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_bad_law2": {
+          "declared_case_class": "dirty/unlawful destination",
+          "expected_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_bad_law2",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_bad_law3": {
+          "declared_case_class": "dirty/unlawful destination",
+          "expected_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_bad_law3",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_boundary": {
+          "declared_case_class": "boundary",
+          "expected_macros": [],
+          "expected_owner_after": [
+            "ACK",
+            12
+          ],
+          "macros": [],
+          "next_action": "convert_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            12
+          ],
+          "owner_before": [
+            "DOWN",
+            12
+          ],
+          "phase": "DOWN",
+          "row": "down_boundary",
+          "row_output_equal": true,
+          "site": 12
+        },
+        "down_commit": {
+          "declared_case_class": "commit",
+          "expected_macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_dirty_destination": {
+          "declared_case_class": "dirty/unlawful destination",
+          "expected_macros": [
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_dirty_destination",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_dirty_link": {
+          "declared_case_class": "dirty/unlawful destination",
+          "expected_macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "pending_refusal",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_dirty_link",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_dirty_rail": {
+          "declared_case_class": "dirty/unlawful destination",
+          "expected_macros": [
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_dirty_rail",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_empty_event": {
+          "declared_case_class": "empty event",
+          "expected_macros": [
+            "decoded",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "decoded",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_empty_event",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_exhaustion": {
+          "declared_case_class": "exhaustion",
+          "expected_macros": [
+            "pending_refusal"
+          ],
+          "expected_owner_after": [
+            "ACK",
+            0
+          ],
+          "macros": [
+            "pending_refusal"
+          ],
+          "next_action": "convert_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            0
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_exhaustion",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_pending_refusal": {
+          "declared_case_class": "pending/refusal",
+          "expected_macros": [
+            "shield",
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "shield",
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_pending_refusal",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_prewrap": {
+          "declared_case_class": "pre-wrap/wrap",
+          "expected_macros": [
+            "shift"
+          ],
+          "expected_owner_after": [
+            "DOWN",
+            1
+          ],
+          "macros": [
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_prewrap",
+          "row_output_equal": true,
+          "site": 0
+        },
+        "down_wrap": {
+          "declared_case_class": "pre-wrap/wrap",
+          "expected_macros": [
+            "pending_refusal"
+          ],
+          "expected_owner_after": [
+            "ACK",
+            0
+          ],
+          "macros": [
+            "pending_refusal"
+          ],
+          "next_action": "convert_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            0
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_wrap",
+          "row_output_equal": true,
+          "site": 0
+        }
+      },
+      "pass": true,
+      "row_output_failures": 0,
+      "row_output_matches": 19,
+      "trace": [
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            1
+          ],
+          "owner_before": [
+            "DOWN",
+            0
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 0
+        },
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            2
+          ],
+          "owner_before": [
+            "DOWN",
+            1
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 1
+        },
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            3
+          ],
+          "owner_before": [
+            "DOWN",
+            2
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 2
+        },
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            4
+          ],
+          "owner_before": [
+            "DOWN",
+            3
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 3
+        },
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            5
+          ],
+          "owner_before": [
+            "DOWN",
+            4
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 4
+        },
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            6
+          ],
+          "owner_before": [
+            "DOWN",
+            5
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 5
+        },
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            7
+          ],
+          "owner_before": [
+            "DOWN",
+            6
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 6
+        },
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            8
+          ],
+          "owner_before": [
+            "DOWN",
+            7
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 7
+        },
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            9
+          ],
+          "owner_before": [
+            "DOWN",
+            8
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 8
+        },
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            10
+          ],
+          "owner_before": [
+            "DOWN",
+            9
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 9
+        },
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            11
+          ],
+          "owner_before": [
+            "DOWN",
+            10
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 10
+        },
+        {
+          "macros": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "next_action": "advance_down",
+          "one_hot_after": true,
+          "owner_after": [
+            "DOWN",
+            12
+          ],
+          "owner_before": [
+            "DOWN",
+            11
+          ],
+          "phase": "DOWN",
+          "row": "down_commit",
+          "site": 11
+        },
+        {
+          "macros": [],
+          "next_action": "convert_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            12
+          ],
+          "owner_before": [
+            "DOWN",
+            12
+          ],
+          "phase": "DOWN",
+          "row": "down_boundary",
+          "site": 12
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            11
+          ],
+          "owner_before": [
+            "ACK",
+            12
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 12
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            10
+          ],
+          "owner_before": [
+            "ACK",
+            11
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 11
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            9
+          ],
+          "owner_before": [
+            "ACK",
+            10
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 10
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            8
+          ],
+          "owner_before": [
+            "ACK",
+            9
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 9
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            7
+          ],
+          "owner_before": [
+            "ACK",
+            8
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 8
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            6
+          ],
+          "owner_before": [
+            "ACK",
+            7
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 7
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            5
+          ],
+          "owner_before": [
+            "ACK",
+            6
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 6
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            4
+          ],
+          "owner_before": [
+            "ACK",
+            5
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 5
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            3
+          ],
+          "owner_before": [
+            "ACK",
+            4
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 4
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            2
+          ],
+          "owner_before": [
+            "ACK",
+            3
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 3
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            1
+          ],
+          "owner_before": [
+            "ACK",
+            2
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 2
+        },
+        {
+          "macros": [
+            "return"
+          ],
+          "next_action": "propagate_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            0
+          ],
+          "owner_before": [
+            "ACK",
+            1
+          ],
+          "phase": "ACK",
+          "row": "ack_return",
+          "site": 1
+        },
+        {
+          "macros": [
+            "source_cleanup"
+          ],
+          "next_action": "hold_ack",
+          "one_hot_after": true,
+          "owner_after": [
+            "ACK",
+            0
+          ],
+          "owner_before": [
+            "ACK",
+            0
+          ],
+          "phase": "ACK",
+          "row": "ack_source_cleanup",
+          "site": 0
+        }
+      ]
+    },
+    "primary_source_discipline": {
+      "attribute_assignments_onto_P_T_C": [],
+      "blocked_primary_imports_present": [],
+      "branch_predicate_count": 26,
+      "branch_predicates_checked": [
+        {
+          "condition": "not controls",
+          "function": "_and_toggle",
+          "line": 349,
+          "non_static_names": [],
+          "referenced_names": [
+            "controls"
+          ]
+        },
+        {
+          "condition": "len(controls) == 1",
+          "function": "_and_toggle",
+          "line": 351,
+          "non_static_names": [],
+          "referenced_names": [
+            "controls",
+            "len"
+          ]
+        },
+        {
+          "condition": "len(controls) == 2",
+          "function": "_and_toggle",
+          "line": 353,
+          "non_static_names": [],
+          "referenced_names": [
+            "controls",
+            "len"
+          ]
+        },
+        {
+          "condition": "len(work) < needed",
+          "function": "_and_toggle",
+          "line": 356,
+          "non_static_names": [],
+          "referenced_names": [
+            "len",
+            "needed",
+            "work"
+          ]
+        },
+        {
+          "condition": "row.site_role == 'source'",
+          "function": "_row_applies_at",
+          "line": 433,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "row.site_role == 'interior_or_boundary'",
+          "function": "_row_applies_at",
+          "line": 435,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "row.next_action == 'advance_down'",
+          "function": "_row_applies_at",
+          "line": 437,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "row.next_action == 'hold_ack'",
+          "function": "_row_phase_update_predicate",
+          "line": 417,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "value",
+          "function": "_row_phase_update_predicate",
+          "line": 415,
+          "non_static_names": [],
+          "referenced_names": [
+            "value"
+          ]
+        },
+        {
+          "condition": "not value",
+          "function": "_row_phase_update_predicate",
+          "line": 416,
+          "non_static_names": [],
+          "referenced_names": [
+            "value"
+          ]
+        },
+        {
+          "condition": "row.phase == 'DOWN'",
+          "function": "_row_phase_update_predicate",
+          "line": 425,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "row.phase == 'DOWN'",
+          "function": "_row_predicate",
+          "line": 399,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "row.phase == 'ACK'",
+          "function": "_row_predicate",
+          "line": 401,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "value",
+          "function": "_row_predicate",
+          "line": 395,
+          "non_static_names": [],
+          "referenced_names": [
+            "value"
+          ]
+        },
+        {
+          "condition": "not value",
+          "function": "_row_predicate",
+          "line": 396,
+          "non_static_names": [],
+          "referenced_names": [
+            "value"
+          ]
+        },
+        {
+          "condition": "not _row_applies_at(row, site, layout.length)",
+          "function": "_row_stage_word",
+          "line": 448,
+          "non_static_names": [],
+          "referenced_names": [
+            "_row_applies_at",
+            "layout",
+            "row",
+            "site"
+          ]
+        },
+        {
+          "condition": "row.next_action == 'advance_down'",
+          "function": "_row_stage_word",
+          "line": 460,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "row.phase == 'DOWN'",
+          "function": "_row_stage_word",
+          "line": 451,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "site + 1 >= layout.length",
+          "function": "_row_stage_word",
+          "line": 461,
+          "non_static_names": [],
+          "referenced_names": [
+            "layout",
+            "site"
+          ]
+        },
+        {
+          "condition": "row.next_action == 'convert_ack'",
+          "function": "_row_stage_word",
+          "line": 466,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "row.next_action == 'propagate_ack'",
+          "function": "_row_stage_word",
+          "line": 468,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "row.next_action == 'hold_ack'",
+          "function": "_row_stage_word",
+          "line": 470,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "_row_applies_at(row, site, layout.length)",
+          "function": "wavefront_controller_stages",
+          "line": 509,
+          "non_static_names": [],
+          "referenced_names": [
+            "_row_applies_at",
+            "layout",
+            "row",
+            "site"
+          ]
+        },
+        {
+          "condition": "_row_applies_at(row, site, layout.length)",
+          "function": "wavefront_controller_stages",
+          "line": 515,
+          "non_static_names": [],
+          "referenced_names": [
+            "_row_applies_at",
+            "layout",
+            "row",
+            "site"
+          ]
+        },
+        {
+          "condition": "row.phase == 'DOWN'",
+          "function": "wavefront_controller_stages",
+          "line": 505,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        },
+        {
+          "condition": "row.phase == 'ACK'",
+          "function": "wavefront_controller_stages",
+          "line": 506,
+          "non_static_names": [],
+          "referenced_names": [
+            "row"
+          ]
+        }
+      ],
+      "branch_references_to_nonstatic_or_runtime_names": [],
+      "compiler_entry": "wavefront_controller_word",
+      "fixed_generator_flattening_and_unrolling": true,
+      "fixed_unrolling_loop_iterators": [
+        {
+          "function": "_and_toggle",
+          "iterator": "enumerate(controls[2:-1], start=1)",
+          "line": 359
+        },
+        {
+          "function": "_controlled_predicate",
+          "iterator": "negatives",
+          "line": 371
+        },
+        {
+          "function": "_row_phase_update_predicate",
+          "iterator": "row.pattern",
+          "line": 415
+        },
+        {
+          "function": "_row_phase_update_predicate",
+          "iterator": "row.pattern",
+          "line": 416
+        },
+        {
+          "function": "_row_predicate",
+          "iterator": "row.pattern",
+          "line": 395
+        },
+        {
+          "function": "_row_predicate",
+          "iterator": "row.pattern",
+          "line": 396
+        },
+        {
+          "function": "_row_stage_word",
+          "iterator": "row.enables",
+          "line": 458
+        },
+        {
+          "function": "wavefront_controller_stages",
+          "iterator": "range(layout.length)",
+          "line": 507
+        },
+        {
+          "function": "wavefront_controller_stages",
+          "iterator": "reversed(range(layout.length))",
+          "line": 513
+        },
+        {
+          "function": "wavefront_controller_stages",
+          "iterator": "down_rows",
+          "line": 508
+        },
+        {
+          "function": "wavefront_controller_stages",
+          "iterator": "ack_rows",
+          "line": 514
+        },
+        {
+          "function": "wavefront_controller_stages",
+          "iterator": "transition_table",
+          "line": 505
+        },
+        {
+          "function": "wavefront_controller_stages",
+          "iterator": "transition_table",
+          "line": 506
+        },
+        {
+          "function": "wavefront_controller_word",
+          "iterator": "wavefront_controller_stages(layout, transition_table)",
+          "line": 529
+        },
+        {
+          "function": "wavefront_controller_word",
+          "iterator": "stage",
+          "line": 532
+        }
+      ],
+      "imported_P_T_C_aliases": [
+        "C",
+        "P",
+        "T"
+      ],
+      "pass": true,
+      "primary_read_as_data_only": true,
+      "runtime_map_functions_checked": [
+        "_and_toggle",
+        "_controlled_predicate",
+        "_row_applies_at",
+        "_row_phase_update_predicate",
+        "_row_predicate",
+        "_row_stage_word",
+        "wavefront_controller_stages",
+        "wavefront_controller_word"
+      ],
+      "runtime_state_executor_calls_in_compiler_path": [],
+      "while_loops_in_compiler_path": []
+    },
+    "sandwich_and_fredkin_semantics": {
+      "arbitrary_two_qubit_U_justification": "the 16 unsigned two-qubit Pauli tensors span all 4x4 operators, and the wrapper equality is linear in U",
+      "clean_latch_genesis_and_destination_assumed": true,
+      "enable_latch_sandwich_failures": 0,
+      "enable_latch_sandwich_rows": 32,
+      "identity_failures": 0,
+      "maximum_identity_residual": 0.0,
+      "pass": true,
+      "qubit_sizes": {
+        "3": {
+          "all_basis_states": 8,
+          "failures": 0,
+          "identity_cases": 64,
+          "maximum_residual": 0.0,
+          "operand_width": 1,
+          "signed_Pauli_macros": 8
+        },
+        "4": {
+          "all_basis_states": 16,
+          "failures": 0,
+          "identity_cases": 128,
+          "maximum_residual": 0.0,
+          "operand_width": 1,
+          "signed_Pauli_macros": 8
+        },
+        "5": {
+          "all_basis_states": 32,
+          "failures": 0,
+          "identity_cases": 1024,
+          "maximum_residual": 0.0,
+          "operand_width": 2,
+          "signed_Pauli_macros": 32
+        }
+      },
+      "signed_Pauli_identity_cases": 1216,
+      "simulator": "independent dense state-vector simulator with explicit CNOT-Toffoli-CNOT Fredkin words",
+      "unsigned_two_qubit_Pauli_operator_span_rank": 16
+    },
+    "table_extraction": {
+      "blocked_primary_imports_present": [],
+      "case_classes": [
+        "ACK propagation",
+        "boundary",
+        "commit",
+        "dirty/unlawful destination",
+        "empty event",
+        "exhaustion",
+        "pending/refusal",
+        "pre-wrap/wrap",
+        "source cleanup"
+      ],
+      "gating_paths_by_family": {
+        "commit": "classical extra-control lift",
+        "decoded_H_T_word": "enable-latched Fredkin spectator rerouting",
+        "handoff_relay": "classical extra-control lift",
+        "pending_refusal": "classical extra-control lift",
+        "return": "classical extra-control lift",
+        "shield": "classical extra-control lift",
+        "shift": "classical extra-control lift",
+        "source_cleanup": "classical extra-control lift"
+      },
+      "gating_paths_valid": true,
+      "pass": true,
+      "phase_encoding": {
+        "ACK": [
+          0,
+          1
+        ],
+        "DOWN": [
+          1,
+          0
+        ],
+        "IDLE": [
+          0,
+          0
+        ]
+      },
+      "phase_encoding_valid": true,
+      "pinned_constants": {
+        "AUDIT_TIMEOUT_SEC": 900,
+        "FIXTURE_LENGTHS": [
+          13,
+          17
+        ],
+        "MACRO_FAMILIES": [
+          "shield",
+          "decoded",
+          "commit",
+          "pending_refusal",
+          "handoff_relay",
+          "shift",
+          "return",
+          "source_cleanup"
+        ],
+        "NOTE_PATH": "docs/WAVEFRONT_CONTROLLER_M2_COMPILER_CYCLE726_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "PREDICATE_FIELDS": [
+          "pointer",
+          "endpoint",
+          "law0",
+          "law1",
+          "law2",
+          "law3",
+          "allocator_TOKEN",
+          "allocator_FRESH",
+          "allocator_HEAD",
+          "allocator_ROTOR",
+          "allocator_valid",
+          "allocator_interface",
+          "destination_blank",
+          "link_latch_clean",
+          "link_work_clean",
+          "pending",
+          "rail_start",
+          "rail_valid",
+          "rail_cleanup",
+          "retry_echo",
+          "exhausted",
+          "boundary",
+          "prewrap",
+          "wrap"
+        ]
+      },
+      "pinned_constants_valid": true,
+      "primary_AUDIT_INPUT_PATHS": [
+        "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+        "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+        "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py"
+      ],
+      "primary_AUDIT_tuple_literal_valid": true,
+      "primary_read_as_data_only": true,
+      "required_D7_case_classes": [
+        "boundary",
+        "commit",
+        "dirty/unlawful destination",
+        "empty event",
+        "exhaustion",
+        "pending/refusal",
+        "pre-wrap/wrap"
+      ],
+      "required_D7_case_classes_present": true,
+      "row_count": 19,
+      "row_names": [
+        "down_boundary",
+        "down_wrap",
+        "down_exhaustion",
+        "down_prewrap",
+        "down_empty_event",
+        "down_bad_endpoint",
+        "down_bad_law0",
+        "down_bad_law1",
+        "down_bad_law2",
+        "down_bad_law3",
+        "down_bad_allocator",
+        "down_bad_interface",
+        "down_dirty_link",
+        "down_pending_refusal",
+        "down_dirty_destination",
+        "down_dirty_rail",
+        "down_commit",
+        "ack_return",
+        "ack_source_cleanup"
+      ],
+      "table_sha256": "1adf939cd4bafd8a431bce72f963981521e950ccc63e9962f83afc6de9bae7ac",
+      "table_well_formed": true,
+      "transition_rows": [
+        {
+          "case_class": "boundary",
+          "enables": [],
+          "name": "down_boundary",
+          "next_action": "convert_ack",
+          "pattern": [
+            [
+              "boundary",
+              1
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 109
+        },
+        {
+          "case_class": "pre-wrap/wrap",
+          "enables": [
+            "pending_refusal"
+          ],
+          "name": "down_wrap",
+          "next_action": "convert_ack",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              1
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 114
+        },
+        {
+          "case_class": "exhaustion",
+          "enables": [
+            "pending_refusal"
+          ],
+          "name": "down_exhaustion",
+          "next_action": "convert_ack",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              1
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 119
+        },
+        {
+          "case_class": "pre-wrap/wrap",
+          "enables": [
+            "shift"
+          ],
+          "name": "down_prewrap",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              1
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 124
+        },
+        {
+          "case_class": "empty event",
+          "enables": [
+            "decoded",
+            "shift"
+          ],
+          "name": "down_empty_event",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              0
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 132
+        },
+        {
+          "case_class": "dirty/unlawful destination",
+          "enables": [
+            "pending_refusal",
+            "shift"
+          ],
+          "name": "down_bad_endpoint",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              0
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 140
+        },
+        {
+          "case_class": "dirty/unlawful destination",
+          "enables": [
+            "pending_refusal",
+            "shift"
+          ],
+          "name": "down_bad_law0",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              1
+            ],
+            [
+              "law0",
+              0
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 148
+        },
+        {
+          "case_class": "dirty/unlawful destination",
+          "enables": [
+            "pending_refusal",
+            "shift"
+          ],
+          "name": "down_bad_law1",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              1
+            ],
+            [
+              "law0",
+              1
+            ],
+            [
+              "law1",
+              0
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 157
+        },
+        {
+          "case_class": "dirty/unlawful destination",
+          "enables": [
+            "pending_refusal",
+            "shift"
+          ],
+          "name": "down_bad_law2",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              1
+            ],
+            [
+              "law0",
+              1
+            ],
+            [
+              "law1",
+              1
+            ],
+            [
+              "law2",
+              0
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 166
+        },
+        {
+          "case_class": "dirty/unlawful destination",
+          "enables": [
+            "pending_refusal",
+            "shift"
+          ],
+          "name": "down_bad_law3",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              1
+            ],
+            [
+              "law0",
+              1
+            ],
+            [
+              "law1",
+              1
+            ],
+            [
+              "law2",
+              1
+            ],
+            [
+              "law3",
+              0
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 175
+        },
+        {
+          "case_class": "dirty/unlawful destination",
+          "enables": [
+            "pending_refusal",
+            "shift"
+          ],
+          "name": "down_bad_allocator",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              1
+            ],
+            [
+              "law0",
+              1
+            ],
+            [
+              "law1",
+              1
+            ],
+            [
+              "law2",
+              1
+            ],
+            [
+              "law3",
+              1
+            ],
+            [
+              "allocator_TOKEN",
+              0
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 184
+        },
+        {
+          "case_class": "dirty/unlawful destination",
+          "enables": [
+            "pending_refusal",
+            "shift"
+          ],
+          "name": "down_bad_interface",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              1
+            ],
+            [
+              "law0",
+              1
+            ],
+            [
+              "law1",
+              1
+            ],
+            [
+              "law2",
+              1
+            ],
+            [
+              "law3",
+              1
+            ],
+            [
+              "allocator_TOKEN",
+              1
+            ],
+            [
+              "allocator_FRESH",
+              1
+            ],
+            [
+              "allocator_HEAD",
+              1
+            ],
+            [
+              "allocator_ROTOR",
+              1
+            ],
+            [
+              "allocator_valid",
+              1
+            ],
+            [
+              "allocator_interface",
+              0
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 194
+        },
+        {
+          "case_class": "dirty/unlawful destination",
+          "enables": [
+            "pending_refusal",
+            "shift"
+          ],
+          "name": "down_dirty_link",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              1
+            ],
+            [
+              "law0",
+              1
+            ],
+            [
+              "law1",
+              1
+            ],
+            [
+              "law2",
+              1
+            ],
+            [
+              "law3",
+              1
+            ],
+            [
+              "allocator_TOKEN",
+              1
+            ],
+            [
+              "allocator_FRESH",
+              1
+            ],
+            [
+              "allocator_HEAD",
+              1
+            ],
+            [
+              "allocator_ROTOR",
+              1
+            ],
+            [
+              "allocator_valid",
+              1
+            ],
+            [
+              "allocator_interface",
+              1
+            ],
+            [
+              "link_latch_clean",
+              0
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 206
+        },
+        {
+          "case_class": "pending/refusal",
+          "enables": [
+            "shield",
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "name": "down_pending_refusal",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              1
+            ],
+            [
+              "law0",
+              1
+            ],
+            [
+              "law1",
+              1
+            ],
+            [
+              "law2",
+              1
+            ],
+            [
+              "law3",
+              1
+            ],
+            [
+              "allocator_TOKEN",
+              1
+            ],
+            [
+              "allocator_FRESH",
+              1
+            ],
+            [
+              "allocator_HEAD",
+              1
+            ],
+            [
+              "allocator_ROTOR",
+              1
+            ],
+            [
+              "allocator_valid",
+              1
+            ],
+            [
+              "allocator_interface",
+              1
+            ],
+            [
+              "link_latch_clean",
+              1
+            ],
+            [
+              "link_work_clean",
+              1
+            ],
+            [
+              "pending",
+              1
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 219
+        },
+        {
+          "case_class": "dirty/unlawful destination",
+          "enables": [
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "name": "down_dirty_destination",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              1
+            ],
+            [
+              "law0",
+              1
+            ],
+            [
+              "law1",
+              1
+            ],
+            [
+              "law2",
+              1
+            ],
+            [
+              "law3",
+              1
+            ],
+            [
+              "allocator_TOKEN",
+              1
+            ],
+            [
+              "allocator_FRESH",
+              1
+            ],
+            [
+              "allocator_HEAD",
+              1
+            ],
+            [
+              "allocator_ROTOR",
+              1
+            ],
+            [
+              "allocator_valid",
+              1
+            ],
+            [
+              "allocator_interface",
+              1
+            ],
+            [
+              "link_latch_clean",
+              1
+            ],
+            [
+              "link_work_clean",
+              1
+            ],
+            [
+              "pending",
+              0
+            ],
+            [
+              "destination_blank",
+              0
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 234
+        },
+        {
+          "case_class": "dirty/unlawful destination",
+          "enables": [
+            "decoded",
+            "pending_refusal",
+            "shift"
+          ],
+          "name": "down_dirty_rail",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              1
+            ],
+            [
+              "law0",
+              1
+            ],
+            [
+              "law1",
+              1
+            ],
+            [
+              "law2",
+              1
+            ],
+            [
+              "law3",
+              1
+            ],
+            [
+              "allocator_TOKEN",
+              1
+            ],
+            [
+              "allocator_FRESH",
+              1
+            ],
+            [
+              "allocator_HEAD",
+              1
+            ],
+            [
+              "allocator_ROTOR",
+              1
+            ],
+            [
+              "allocator_valid",
+              1
+            ],
+            [
+              "allocator_interface",
+              1
+            ],
+            [
+              "link_latch_clean",
+              1
+            ],
+            [
+              "link_work_clean",
+              1
+            ],
+            [
+              "pending",
+              0
+            ],
+            [
+              "destination_blank",
+              1
+            ],
+            [
+              "rail_start",
+              1
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 248
+        },
+        {
+          "case_class": "commit",
+          "enables": [
+            "shield",
+            "decoded",
+            "commit",
+            "handoff_relay",
+            "shift"
+          ],
+          "name": "down_commit",
+          "next_action": "advance_down",
+          "pattern": [
+            [
+              "boundary",
+              0
+            ],
+            [
+              "wrap",
+              0
+            ],
+            [
+              "exhausted",
+              0
+            ],
+            [
+              "prewrap",
+              0
+            ],
+            [
+              "pointer",
+              1
+            ],
+            [
+              "endpoint",
+              1
+            ],
+            [
+              "law0",
+              1
+            ],
+            [
+              "law1",
+              1
+            ],
+            [
+              "law2",
+              1
+            ],
+            [
+              "law3",
+              1
+            ],
+            [
+              "allocator_TOKEN",
+              1
+            ],
+            [
+              "allocator_FRESH",
+              1
+            ],
+            [
+              "allocator_HEAD",
+              1
+            ],
+            [
+              "allocator_ROTOR",
+              1
+            ],
+            [
+              "allocator_valid",
+              1
+            ],
+            [
+              "allocator_interface",
+              1
+            ],
+            [
+              "destination_blank",
+              1
+            ],
+            [
+              "link_latch_clean",
+              1
+            ],
+            [
+              "link_work_clean",
+              1
+            ],
+            [
+              "pending",
+              0
+            ],
+            [
+              "rail_start",
+              0
+            ],
+            [
+              "rail_valid",
+              0
+            ],
+            [
+              "rail_cleanup",
+              0
+            ],
+            [
+              "retry_echo",
+              0
+            ]
+          ],
+          "phase": "DOWN",
+          "site_role": "any",
+          "source_line": 263
+        },
+        {
+          "case_class": "ACK propagation",
+          "enables": [
+            "return"
+          ],
+          "name": "ack_return",
+          "next_action": "propagate_ack",
+          "pattern": [
+            [
+              "link_latch_clean",
+              1
+            ],
+            [
+              "link_work_clean",
+              1
+            ]
+          ],
+          "phase": "ACK",
+          "site_role": "interior_or_boundary",
+          "source_line": 280
+        },
+        {
+          "case_class": "source cleanup",
+          "enables": [
+            "source_cleanup"
+          ],
+          "name": "ack_source_cleanup",
+          "next_action": "hold_ack",
+          "pattern": [
+            [
+              "link_latch_clean",
+              1
+            ],
+            [
+              "link_work_clean",
+              1
+            ]
+          ],
+          "phase": "ACK",
+          "site_role": "source",
+          "source_line": 285
+        }
+      ]
+    },
+    "unchanged_surface_spot": {
+      "active_covariance": {
+        "active_endpoint_direction_failures": 0,
+        "active_rows_per_frame": 4096,
+        "direction_product_failures": 0,
+        "instruction_coordinate_failures": 0,
+        "ordered_frame_products": 576,
+        "proper_cubic_frames": 24,
+        "routed_NN_frame_failures": 0,
+        "translation_failures": 0,
+        "translations_checked": [
+          [
+            7,
+            -5,
+            11
+          ],
+          [
+            -13,
+            2,
+            -4
+          ]
+        ]
+      },
+      "active_covariance_own_criteria": {
+        "active_endpoint_direction_failures": true,
+        "direction_product_failures": true,
+        "instruction_coordinate_failures": true,
+        "ordered_frame_products": true,
+        "proper_cubic_frames": true,
+        "routed_NN_frame_failures": true,
+        "translation_failures": true
+      },
+      "calls": [
+        "P.structured_commit_certificate()",
+        "P.active_covariance(layout, word, routed)"
+      ],
+      "pass": true,
+      "route_for_covariance": {
+        "non_NN_failures": 0,
+        "operand_order_failures": 0,
+        "route_return_failures": 0,
+        "routed_gates": 190279
+      },
+      "structured_commit": {
+        "abstract_X_CNOT_Toffoli_gates": 557,
+        "abstract_registers": 310,
+        "all_deletions_detected": true,
+        "arbitrary_inverse_failures": 0,
+        "arbitrary_inverse_rows": 64,
+        "controller_failures": 0,
+        "deletion_hamming": {
+          "append_ACK": 37,
+          "carry": 1,
+          "cleanup_echo": 1,
+          "complete_blank_NEW": 26,
+          "delta": 2,
+          "endpoint_cleanup": 1,
+          "fresh_transfer": 19,
+          "frontier": 2,
+          "handshakes": 19,
+          "pending_latch": 2,
+          "retry_echo": 2,
+          "start_handshake": 19
+        },
+        "dirty_and_unlawful_refusal_failures": 0,
+        "exact_inverse_failures": 0,
+        "expanded_one_two_M2_primitives": 5121,
+        "full_34_raw_payload_failures": 0,
+        "one_decoded_event_failures": 0,
+        "orientation_head_rotor_identity_pending_cases": 256,
+        "packet_failures": 0,
+        "pending_latch_failures": 0,
+        "pending_latch_rows": 4,
+        "transient_or_work_failures": 0
+      },
+      "structured_commit_own_criteria": {
+        "all_deletions_detected": true,
+        "arbitrary_inverse_failures": true,
+        "controller_failures": true,
+        "dirty_and_unlawful_refusal_failures": true,
+        "exact_inverse_failures": true,
+        "full_34_raw_payload_failures": true,
+        "one_decoded_event_failures": true,
+        "packet_failures": true,
+        "pending_latch_failures": true,
+        "transient_or_work_failures": true
+      }
+    }
+  },
+  "check_summary": {
+    "passing": 5,
+    "total": 5
+  },
+  "checks": [
+    {
+      "detail": {
+        "blocked_primary_imports_present": [],
+        "case_classes": [
+          "ACK propagation",
+          "boundary",
+          "commit",
+          "dirty/unlawful destination",
+          "empty event",
+          "exhaustion",
+          "pending/refusal",
+          "pre-wrap/wrap",
+          "source cleanup"
+        ],
+        "gating_paths_by_family": {
+          "commit": "classical extra-control lift",
+          "decoded_H_T_word": "enable-latched Fredkin spectator rerouting",
+          "handoff_relay": "classical extra-control lift",
+          "pending_refusal": "classical extra-control lift",
+          "return": "classical extra-control lift",
+          "shield": "classical extra-control lift",
+          "shift": "classical extra-control lift",
+          "source_cleanup": "classical extra-control lift"
+        },
+        "gating_paths_valid": true,
+        "pass": true,
+        "phase_encoding": {
+          "ACK": [
+            0,
+            1
+          ],
+          "DOWN": [
+            1,
+            0
+          ],
+          "IDLE": [
+            0,
+            0
+          ]
+        },
+        "phase_encoding_valid": true,
+        "pinned_constants": {
+          "AUDIT_TIMEOUT_SEC": 900,
+          "FIXTURE_LENGTHS": [
+            13,
+            17
+          ],
+          "MACRO_FAMILIES": [
+            "shield",
+            "decoded",
+            "commit",
+            "pending_refusal",
+            "handoff_relay",
+            "shift",
+            "return",
+            "source_cleanup"
+          ],
+          "NOTE_PATH": "docs/WAVEFRONT_CONTROLLER_M2_COMPILER_CYCLE726_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+          "PREDICATE_FIELDS": [
+            "pointer",
+            "endpoint",
+            "law0",
+            "law1",
+            "law2",
+            "law3",
+            "allocator_TOKEN",
+            "allocator_FRESH",
+            "allocator_HEAD",
+            "allocator_ROTOR",
+            "allocator_valid",
+            "allocator_interface",
+            "destination_blank",
+            "link_latch_clean",
+            "link_work_clean",
+            "pending",
+            "rail_start",
+            "rail_valid",
+            "rail_cleanup",
+            "retry_echo",
+            "exhausted",
+            "boundary",
+            "prewrap",
+            "wrap"
+          ]
+        },
+        "pinned_constants_valid": true,
+        "primary_AUDIT_INPUT_PATHS": [
+          "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+          "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+          "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py"
+        ],
+        "primary_AUDIT_tuple_literal_valid": true,
+        "primary_read_as_data_only": true,
+        "required_D7_case_classes": [
+          "boundary",
+          "commit",
+          "dirty/unlawful destination",
+          "empty event",
+          "exhaustion",
+          "pending/refusal",
+          "pre-wrap/wrap"
+        ],
+        "required_D7_case_classes_present": true,
+        "row_count": 19,
+        "row_names": [
+          "down_boundary",
+          "down_wrap",
+          "down_exhaustion",
+          "down_prewrap",
+          "down_empty_event",
+          "down_bad_endpoint",
+          "down_bad_law0",
+          "down_bad_law1",
+          "down_bad_law2",
+          "down_bad_law3",
+          "down_bad_allocator",
+          "down_bad_interface",
+          "down_dirty_link",
+          "down_pending_refusal",
+          "down_dirty_destination",
+          "down_dirty_rail",
+          "down_commit",
+          "ack_return",
+          "ack_source_cleanup"
+        ],
+        "table_sha256": "1adf939cd4bafd8a431bce72f963981521e950ccc63e9962f83afc6de9bae7ac",
+        "table_well_formed": true,
+        "transition_rows": [
+          {
+            "case_class": "boundary",
+            "enables": [],
+            "name": "down_boundary",
+            "next_action": "convert_ack",
+            "pattern": [
+              [
+                "boundary",
+                1
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 109
+          },
+          {
+            "case_class": "pre-wrap/wrap",
+            "enables": [
+              "pending_refusal"
+            ],
+            "name": "down_wrap",
+            "next_action": "convert_ack",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                1
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 114
+          },
+          {
+            "case_class": "exhaustion",
+            "enables": [
+              "pending_refusal"
+            ],
+            "name": "down_exhaustion",
+            "next_action": "convert_ack",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                1
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 119
+          },
+          {
+            "case_class": "pre-wrap/wrap",
+            "enables": [
+              "shift"
+            ],
+            "name": "down_prewrap",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                1
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 124
+          },
+          {
+            "case_class": "empty event",
+            "enables": [
+              "decoded",
+              "shift"
+            ],
+            "name": "down_empty_event",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                0
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 132
+          },
+          {
+            "case_class": "dirty/unlawful destination",
+            "enables": [
+              "pending_refusal",
+              "shift"
+            ],
+            "name": "down_bad_endpoint",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                0
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 140
+          },
+          {
+            "case_class": "dirty/unlawful destination",
+            "enables": [
+              "pending_refusal",
+              "shift"
+            ],
+            "name": "down_bad_law0",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                1
+              ],
+              [
+                "law0",
+                0
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 148
+          },
+          {
+            "case_class": "dirty/unlawful destination",
+            "enables": [
+              "pending_refusal",
+              "shift"
+            ],
+            "name": "down_bad_law1",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                1
+              ],
+              [
+                "law0",
+                1
+              ],
+              [
+                "law1",
+                0
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 157
+          },
+          {
+            "case_class": "dirty/unlawful destination",
+            "enables": [
+              "pending_refusal",
+              "shift"
+            ],
+            "name": "down_bad_law2",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                1
+              ],
+              [
+                "law0",
+                1
+              ],
+              [
+                "law1",
+                1
+              ],
+              [
+                "law2",
+                0
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 166
+          },
+          {
+            "case_class": "dirty/unlawful destination",
+            "enables": [
+              "pending_refusal",
+              "shift"
+            ],
+            "name": "down_bad_law3",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                1
+              ],
+              [
+                "law0",
+                1
+              ],
+              [
+                "law1",
+                1
+              ],
+              [
+                "law2",
+                1
+              ],
+              [
+                "law3",
+                0
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 175
+          },
+          {
+            "case_class": "dirty/unlawful destination",
+            "enables": [
+              "pending_refusal",
+              "shift"
+            ],
+            "name": "down_bad_allocator",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                1
+              ],
+              [
+                "law0",
+                1
+              ],
+              [
+                "law1",
+                1
+              ],
+              [
+                "law2",
+                1
+              ],
+              [
+                "law3",
+                1
+              ],
+              [
+                "allocator_TOKEN",
+                0
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 184
+          },
+          {
+            "case_class": "dirty/unlawful destination",
+            "enables": [
+              "pending_refusal",
+              "shift"
+            ],
+            "name": "down_bad_interface",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                1
+              ],
+              [
+                "law0",
+                1
+              ],
+              [
+                "law1",
+                1
+              ],
+              [
+                "law2",
+                1
+              ],
+              [
+                "law3",
+                1
+              ],
+              [
+                "allocator_TOKEN",
+                1
+              ],
+              [
+                "allocator_FRESH",
+                1
+              ],
+              [
+                "allocator_HEAD",
+                1
+              ],
+              [
+                "allocator_ROTOR",
+                1
+              ],
+              [
+                "allocator_valid",
+                1
+              ],
+              [
+                "allocator_interface",
+                0
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 194
+          },
+          {
+            "case_class": "dirty/unlawful destination",
+            "enables": [
+              "pending_refusal",
+              "shift"
+            ],
+            "name": "down_dirty_link",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                1
+              ],
+              [
+                "law0",
+                1
+              ],
+              [
+                "law1",
+                1
+              ],
+              [
+                "law2",
+                1
+              ],
+              [
+                "law3",
+                1
+              ],
+              [
+                "allocator_TOKEN",
+                1
+              ],
+              [
+                "allocator_FRESH",
+                1
+              ],
+              [
+                "allocator_HEAD",
+                1
+              ],
+              [
+                "allocator_ROTOR",
+                1
+              ],
+              [
+                "allocator_valid",
+                1
+              ],
+              [
+                "allocator_interface",
+                1
+              ],
+              [
+                "link_latch_clean",
+                0
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 206
+          },
+          {
+            "case_class": "pending/refusal",
+            "enables": [
+              "shield",
+              "decoded",
+              "pending_refusal",
+              "shift"
+            ],
+            "name": "down_pending_refusal",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                1
+              ],
+              [
+                "law0",
+                1
+              ],
+              [
+                "law1",
+                1
+              ],
+              [
+                "law2",
+                1
+              ],
+              [
+                "law3",
+                1
+              ],
+              [
+                "allocator_TOKEN",
+                1
+              ],
+              [
+                "allocator_FRESH",
+                1
+              ],
+              [
+                "allocator_HEAD",
+                1
+              ],
+              [
+                "allocator_ROTOR",
+                1
+              ],
+              [
+                "allocator_valid",
+                1
+              ],
+              [
+                "allocator_interface",
+                1
+              ],
+              [
+                "link_latch_clean",
+                1
+              ],
+              [
+                "link_work_clean",
+                1
+              ],
+              [
+                "pending",
+                1
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 219
+          },
+          {
+            "case_class": "dirty/unlawful destination",
+            "enables": [
+              "decoded",
+              "pending_refusal",
+              "shift"
+            ],
+            "name": "down_dirty_destination",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                1
+              ],
+              [
+                "law0",
+                1
+              ],
+              [
+                "law1",
+                1
+              ],
+              [
+                "law2",
+                1
+              ],
+              [
+                "law3",
+                1
+              ],
+              [
+                "allocator_TOKEN",
+                1
+              ],
+              [
+                "allocator_FRESH",
+                1
+              ],
+              [
+                "allocator_HEAD",
+                1
+              ],
+              [
+                "allocator_ROTOR",
+                1
+              ],
+              [
+                "allocator_valid",
+                1
+              ],
+              [
+                "allocator_interface",
+                1
+              ],
+              [
+                "link_latch_clean",
+                1
+              ],
+              [
+                "link_work_clean",
+                1
+              ],
+              [
+                "pending",
+                0
+              ],
+              [
+                "destination_blank",
+                0
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 234
+          },
+          {
+            "case_class": "dirty/unlawful destination",
+            "enables": [
+              "decoded",
+              "pending_refusal",
+              "shift"
+            ],
+            "name": "down_dirty_rail",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                1
+              ],
+              [
+                "law0",
+                1
+              ],
+              [
+                "law1",
+                1
+              ],
+              [
+                "law2",
+                1
+              ],
+              [
+                "law3",
+                1
+              ],
+              [
+                "allocator_TOKEN",
+                1
+              ],
+              [
+                "allocator_FRESH",
+                1
+              ],
+              [
+                "allocator_HEAD",
+                1
+              ],
+              [
+                "allocator_ROTOR",
+                1
+              ],
+              [
+                "allocator_valid",
+                1
+              ],
+              [
+                "allocator_interface",
+                1
+              ],
+              [
+                "link_latch_clean",
+                1
+              ],
+              [
+                "link_work_clean",
+                1
+              ],
+              [
+                "pending",
+                0
+              ],
+              [
+                "destination_blank",
+                1
+              ],
+              [
+                "rail_start",
+                1
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 248
+          },
+          {
+            "case_class": "commit",
+            "enables": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "name": "down_commit",
+            "next_action": "advance_down",
+            "pattern": [
+              [
+                "boundary",
+                0
+              ],
+              [
+                "wrap",
+                0
+              ],
+              [
+                "exhausted",
+                0
+              ],
+              [
+                "prewrap",
+                0
+              ],
+              [
+                "pointer",
+                1
+              ],
+              [
+                "endpoint",
+                1
+              ],
+              [
+                "law0",
+                1
+              ],
+              [
+                "law1",
+                1
+              ],
+              [
+                "law2",
+                1
+              ],
+              [
+                "law3",
+                1
+              ],
+              [
+                "allocator_TOKEN",
+                1
+              ],
+              [
+                "allocator_FRESH",
+                1
+              ],
+              [
+                "allocator_HEAD",
+                1
+              ],
+              [
+                "allocator_ROTOR",
+                1
+              ],
+              [
+                "allocator_valid",
+                1
+              ],
+              [
+                "allocator_interface",
+                1
+              ],
+              [
+                "destination_blank",
+                1
+              ],
+              [
+                "link_latch_clean",
+                1
+              ],
+              [
+                "link_work_clean",
+                1
+              ],
+              [
+                "pending",
+                0
+              ],
+              [
+                "rail_start",
+                0
+              ],
+              [
+                "rail_valid",
+                0
+              ],
+              [
+                "rail_cleanup",
+                0
+              ],
+              [
+                "retry_echo",
+                0
+              ]
+            ],
+            "phase": "DOWN",
+            "site_role": "any",
+            "source_line": 263
+          },
+          {
+            "case_class": "ACK propagation",
+            "enables": [
+              "return"
+            ],
+            "name": "ack_return",
+            "next_action": "propagate_ack",
+            "pattern": [
+              [
+                "link_latch_clean",
+                1
+              ],
+              [
+                "link_work_clean",
+                1
+              ]
+            ],
+            "phase": "ACK",
+            "site_role": "interior_or_boundary",
+            "source_line": 280
+          },
+          {
+            "case_class": "source cleanup",
+            "enables": [
+              "source_cleanup"
+            ],
+            "name": "ack_source_cleanup",
+            "next_action": "hold_ack",
+            "pattern": [
+              [
+                "link_latch_clean",
+                1
+              ],
+              [
+                "link_work_clean",
+                1
+              ]
+            ],
+            "phase": "ACK",
+            "site_role": "source",
+            "source_line": 285
+          }
+        ]
+      },
+      "label": "table_extraction",
+      "pass": true
+    },
+    {
+      "detail": {
+        "arbitrary_two_qubit_U_justification": "the 16 unsigned two-qubit Pauli tensors span all 4x4 operators, and the wrapper equality is linear in U",
+        "clean_latch_genesis_and_destination_assumed": true,
+        "enable_latch_sandwich_failures": 0,
+        "enable_latch_sandwich_rows": 32,
+        "identity_failures": 0,
+        "maximum_identity_residual": 0.0,
+        "pass": true,
+        "qubit_sizes": {
+          "3": {
+            "all_basis_states": 8,
+            "failures": 0,
+            "identity_cases": 64,
+            "maximum_residual": 0.0,
+            "operand_width": 1,
+            "signed_Pauli_macros": 8
+          },
+          "4": {
+            "all_basis_states": 16,
+            "failures": 0,
+            "identity_cases": 128,
+            "maximum_residual": 0.0,
+            "operand_width": 1,
+            "signed_Pauli_macros": 8
+          },
+          "5": {
+            "all_basis_states": 32,
+            "failures": 0,
+            "identity_cases": 1024,
+            "maximum_residual": 0.0,
+            "operand_width": 2,
+            "signed_Pauli_macros": 32
+          }
+        },
+        "signed_Pauli_identity_cases": 1216,
+        "simulator": "independent dense state-vector simulator with explicit CNOT-Toffoli-CNOT Fredkin words",
+        "unsigned_two_qubit_Pauli_operator_span_rank": 16
+      },
+      "label": "sandwich_and_fredkin_semantics",
+      "pass": true
+    },
+    {
+      "detail": {
+        "boundary_DOWN_to_ACK_conversion": true,
+        "declared_lawful_phase_input_rows": 19,
+        "final_owner": [
+          "ACK",
+          0
+        ],
+        "fixture": {
+          "assigned_M2": 6199,
+          "entry_point": "P.physical_layout(13)",
+          "length": 13,
+          "placement_collisions": 0,
+          "rail_M2": 6084,
+          "source_collisions": 0,
+          "valid": true
+        },
+        "full_action_events": 73,
+        "full_family_sites": {
+          "commit": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "decoded": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "handoff_relay": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "pending_refusal": [],
+          "return": [
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "shield": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "shift": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "source_cleanup": [
+            0
+          ]
+        },
+        "full_ownership_failures": 0,
+        "full_replay_steps": 26,
+        "full_row_sequence": [
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_boundary",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_source_cleanup"
+        ],
+        "full_row_sequence_expected": [
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_commit",
+          "down_boundary",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_return",
+          "ack_source_cleanup"
+        ],
+        "isolated_action_events": 38,
+        "isolated_family_sites": {
+          "commit": [
+            0
+          ],
+          "decoded": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "handoff_relay": [
+            0
+          ],
+          "pending_refusal": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "return": [
+            12
+          ],
+          "shield": [
+            0,
+            0
+          ],
+          "shift": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source_cleanup": [
+            0
+          ]
+        },
+        "isolated_ownership_failures": 0,
+        "isolated_rows": {
+          "ack_return": {
+            "declared_case_class": "ACK propagation",
+            "expected_macros": [
+              "return"
+            ],
+            "expected_owner_after": [
+              "ACK",
+              11
+            ],
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              11
+            ],
+            "owner_before": [
+              "ACK",
+              12
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "row_output_equal": true,
+            "site": 12
+          },
+          "ack_source_cleanup": {
+            "declared_case_class": "source cleanup",
+            "expected_macros": [
+              "source_cleanup"
+            ],
+            "expected_owner_after": [
+              "ACK",
+              0
+            ],
+            "macros": [
+              "source_cleanup"
+            ],
+            "next_action": "hold_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              0
+            ],
+            "owner_before": [
+              "ACK",
+              0
+            ],
+            "phase": "ACK",
+            "row": "ack_source_cleanup",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_bad_allocator": {
+            "declared_case_class": "dirty/unlawful destination",
+            "expected_macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_bad_allocator",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_bad_endpoint": {
+            "declared_case_class": "dirty/unlawful destination",
+            "expected_macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_bad_endpoint",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_bad_interface": {
+            "declared_case_class": "dirty/unlawful destination",
+            "expected_macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_bad_interface",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_bad_law0": {
+            "declared_case_class": "dirty/unlawful destination",
+            "expected_macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_bad_law0",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_bad_law1": {
+            "declared_case_class": "dirty/unlawful destination",
+            "expected_macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_bad_law1",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_bad_law2": {
+            "declared_case_class": "dirty/unlawful destination",
+            "expected_macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_bad_law2",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_bad_law3": {
+            "declared_case_class": "dirty/unlawful destination",
+            "expected_macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_bad_law3",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_boundary": {
+            "declared_case_class": "boundary",
+            "expected_macros": [],
+            "expected_owner_after": [
+              "ACK",
+              12
+            ],
+            "macros": [],
+            "next_action": "convert_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              12
+            ],
+            "owner_before": [
+              "DOWN",
+              12
+            ],
+            "phase": "DOWN",
+            "row": "down_boundary",
+            "row_output_equal": true,
+            "site": 12
+          },
+          "down_commit": {
+            "declared_case_class": "commit",
+            "expected_macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_dirty_destination": {
+            "declared_case_class": "dirty/unlawful destination",
+            "expected_macros": [
+              "decoded",
+              "pending_refusal",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "decoded",
+              "pending_refusal",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_dirty_destination",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_dirty_link": {
+            "declared_case_class": "dirty/unlawful destination",
+            "expected_macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "pending_refusal",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_dirty_link",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_dirty_rail": {
+            "declared_case_class": "dirty/unlawful destination",
+            "expected_macros": [
+              "decoded",
+              "pending_refusal",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "decoded",
+              "pending_refusal",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_dirty_rail",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_empty_event": {
+            "declared_case_class": "empty event",
+            "expected_macros": [
+              "decoded",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "decoded",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_empty_event",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_exhaustion": {
+            "declared_case_class": "exhaustion",
+            "expected_macros": [
+              "pending_refusal"
+            ],
+            "expected_owner_after": [
+              "ACK",
+              0
+            ],
+            "macros": [
+              "pending_refusal"
+            ],
+            "next_action": "convert_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              0
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_exhaustion",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_pending_refusal": {
+            "declared_case_class": "pending/refusal",
+            "expected_macros": [
+              "shield",
+              "decoded",
+              "pending_refusal",
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "shield",
+              "decoded",
+              "pending_refusal",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_pending_refusal",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_prewrap": {
+            "declared_case_class": "pre-wrap/wrap",
+            "expected_macros": [
+              "shift"
+            ],
+            "expected_owner_after": [
+              "DOWN",
+              1
+            ],
+            "macros": [
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_prewrap",
+            "row_output_equal": true,
+            "site": 0
+          },
+          "down_wrap": {
+            "declared_case_class": "pre-wrap/wrap",
+            "expected_macros": [
+              "pending_refusal"
+            ],
+            "expected_owner_after": [
+              "ACK",
+              0
+            ],
+            "macros": [
+              "pending_refusal"
+            ],
+            "next_action": "convert_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              0
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_wrap",
+            "row_output_equal": true,
+            "site": 0
+          }
+        },
+        "pass": true,
+        "row_output_failures": 0,
+        "row_output_matches": 19,
+        "trace": [
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              1
+            ],
+            "owner_before": [
+              "DOWN",
+              0
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 0
+          },
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              2
+            ],
+            "owner_before": [
+              "DOWN",
+              1
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 1
+          },
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              3
+            ],
+            "owner_before": [
+              "DOWN",
+              2
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 2
+          },
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              4
+            ],
+            "owner_before": [
+              "DOWN",
+              3
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 3
+          },
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              5
+            ],
+            "owner_before": [
+              "DOWN",
+              4
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 4
+          },
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              6
+            ],
+            "owner_before": [
+              "DOWN",
+              5
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 5
+          },
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              7
+            ],
+            "owner_before": [
+              "DOWN",
+              6
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 6
+          },
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              8
+            ],
+            "owner_before": [
+              "DOWN",
+              7
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 7
+          },
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              9
+            ],
+            "owner_before": [
+              "DOWN",
+              8
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 8
+          },
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              10
+            ],
+            "owner_before": [
+              "DOWN",
+              9
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 9
+          },
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              11
+            ],
+            "owner_before": [
+              "DOWN",
+              10
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 10
+          },
+          {
+            "macros": [
+              "shield",
+              "decoded",
+              "commit",
+              "handoff_relay",
+              "shift"
+            ],
+            "next_action": "advance_down",
+            "one_hot_after": true,
+            "owner_after": [
+              "DOWN",
+              12
+            ],
+            "owner_before": [
+              "DOWN",
+              11
+            ],
+            "phase": "DOWN",
+            "row": "down_commit",
+            "site": 11
+          },
+          {
+            "macros": [],
+            "next_action": "convert_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              12
+            ],
+            "owner_before": [
+              "DOWN",
+              12
+            ],
+            "phase": "DOWN",
+            "row": "down_boundary",
+            "site": 12
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              11
+            ],
+            "owner_before": [
+              "ACK",
+              12
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 12
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              10
+            ],
+            "owner_before": [
+              "ACK",
+              11
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 11
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              9
+            ],
+            "owner_before": [
+              "ACK",
+              10
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 10
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              8
+            ],
+            "owner_before": [
+              "ACK",
+              9
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 9
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              7
+            ],
+            "owner_before": [
+              "ACK",
+              8
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 8
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              6
+            ],
+            "owner_before": [
+              "ACK",
+              7
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 7
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              5
+            ],
+            "owner_before": [
+              "ACK",
+              6
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 6
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              4
+            ],
+            "owner_before": [
+              "ACK",
+              5
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 5
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              3
+            ],
+            "owner_before": [
+              "ACK",
+              4
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 4
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              2
+            ],
+            "owner_before": [
+              "ACK",
+              3
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 3
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              1
+            ],
+            "owner_before": [
+              "ACK",
+              2
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 2
+          },
+          {
+            "macros": [
+              "return"
+            ],
+            "next_action": "propagate_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              0
+            ],
+            "owner_before": [
+              "ACK",
+              1
+            ],
+            "phase": "ACK",
+            "row": "ack_return",
+            "site": 1
+          },
+          {
+            "macros": [
+              "source_cleanup"
+            ],
+            "next_action": "hold_ack",
+            "one_hot_after": true,
+            "owner_after": [
+              "ACK",
+              0
+            ],
+            "owner_before": [
+              "ACK",
+              0
+            ],
+            "phase": "ACK",
+            "row": "ack_source_cleanup",
+            "site": 0
+          }
+        ]
+      },
+      "label": "controller_replay",
+      "pass": true
+    },
+    {
+      "detail": {
+        "active_covariance": {
+          "active_endpoint_direction_failures": 0,
+          "active_rows_per_frame": 4096,
+          "direction_product_failures": 0,
+          "instruction_coordinate_failures": 0,
+          "ordered_frame_products": 576,
+          "proper_cubic_frames": 24,
+          "routed_NN_frame_failures": 0,
+          "translation_failures": 0,
+          "translations_checked": [
+            [
+              7,
+              -5,
+              11
+            ],
+            [
+              -13,
+              2,
+              -4
+            ]
+          ]
+        },
+        "active_covariance_own_criteria": {
+          "active_endpoint_direction_failures": true,
+          "direction_product_failures": true,
+          "instruction_coordinate_failures": true,
+          "ordered_frame_products": true,
+          "proper_cubic_frames": true,
+          "routed_NN_frame_failures": true,
+          "translation_failures": true
+        },
+        "calls": [
+          "P.structured_commit_certificate()",
+          "P.active_covariance(layout, word, routed)"
+        ],
+        "pass": true,
+        "route_for_covariance": {
+          "non_NN_failures": 0,
+          "operand_order_failures": 0,
+          "route_return_failures": 0,
+          "routed_gates": 190279
+        },
+        "structured_commit": {
+          "abstract_X_CNOT_Toffoli_gates": 557,
+          "abstract_registers": 310,
+          "all_deletions_detected": true,
+          "arbitrary_inverse_failures": 0,
+          "arbitrary_inverse_rows": 64,
+          "controller_failures": 0,
+          "deletion_hamming": {
+            "append_ACK": 37,
+            "carry": 1,
+            "cleanup_echo": 1,
+            "complete_blank_NEW": 26,
+            "delta": 2,
+            "endpoint_cleanup": 1,
+            "fresh_transfer": 19,
+            "frontier": 2,
+            "handshakes": 19,
+            "pending_latch": 2,
+            "retry_echo": 2,
+            "start_handshake": 19
+          },
+          "dirty_and_unlawful_refusal_failures": 0,
+          "exact_inverse_failures": 0,
+          "expanded_one_two_M2_primitives": 5121,
+          "full_34_raw_payload_failures": 0,
+          "one_decoded_event_failures": 0,
+          "orientation_head_rotor_identity_pending_cases": 256,
+          "packet_failures": 0,
+          "pending_latch_failures": 0,
+          "pending_latch_rows": 4,
+          "transient_or_work_failures": 0
+        },
+        "structured_commit_own_criteria": {
+          "all_deletions_detected": true,
+          "arbitrary_inverse_failures": true,
+          "controller_failures": true,
+          "dirty_and_unlawful_refusal_failures": true,
+          "exact_inverse_failures": true,
+          "full_34_raw_payload_failures": true,
+          "one_decoded_event_failures": true,
+          "packet_failures": true,
+          "pending_latch_failures": true,
+          "transient_or_work_failures": true
+        }
+      },
+      "label": "unchanged_surface_spot",
+      "pass": true
+    },
+    {
+      "detail": {
+        "attribute_assignments_onto_P_T_C": [],
+        "blocked_primary_imports_present": [],
+        "branch_predicate_count": 26,
+        "branch_predicates_checked": [
+          {
+            "condition": "not controls",
+            "function": "_and_toggle",
+            "line": 349,
+            "non_static_names": [],
+            "referenced_names": [
+              "controls"
+            ]
+          },
+          {
+            "condition": "len(controls) == 1",
+            "function": "_and_toggle",
+            "line": 351,
+            "non_static_names": [],
+            "referenced_names": [
+              "controls",
+              "len"
+            ]
+          },
+          {
+            "condition": "len(controls) == 2",
+            "function": "_and_toggle",
+            "line": 353,
+            "non_static_names": [],
+            "referenced_names": [
+              "controls",
+              "len"
+            ]
+          },
+          {
+            "condition": "len(work) < needed",
+            "function": "_and_toggle",
+            "line": 356,
+            "non_static_names": [],
+            "referenced_names": [
+              "len",
+              "needed",
+              "work"
+            ]
+          },
+          {
+            "condition": "row.site_role == 'source'",
+            "function": "_row_applies_at",
+            "line": 433,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "row.site_role == 'interior_or_boundary'",
+            "function": "_row_applies_at",
+            "line": 435,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "row.next_action == 'advance_down'",
+            "function": "_row_applies_at",
+            "line": 437,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "row.next_action == 'hold_ack'",
+            "function": "_row_phase_update_predicate",
+            "line": 417,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "value",
+            "function": "_row_phase_update_predicate",
+            "line": 415,
+            "non_static_names": [],
+            "referenced_names": [
+              "value"
+            ]
+          },
+          {
+            "condition": "not value",
+            "function": "_row_phase_update_predicate",
+            "line": 416,
+            "non_static_names": [],
+            "referenced_names": [
+              "value"
+            ]
+          },
+          {
+            "condition": "row.phase == 'DOWN'",
+            "function": "_row_phase_update_predicate",
+            "line": 425,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "row.phase == 'DOWN'",
+            "function": "_row_predicate",
+            "line": 399,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "row.phase == 'ACK'",
+            "function": "_row_predicate",
+            "line": 401,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "value",
+            "function": "_row_predicate",
+            "line": 395,
+            "non_static_names": [],
+            "referenced_names": [
+              "value"
+            ]
+          },
+          {
+            "condition": "not value",
+            "function": "_row_predicate",
+            "line": 396,
+            "non_static_names": [],
+            "referenced_names": [
+              "value"
+            ]
+          },
+          {
+            "condition": "not _row_applies_at(row, site, layout.length)",
+            "function": "_row_stage_word",
+            "line": 448,
+            "non_static_names": [],
+            "referenced_names": [
+              "_row_applies_at",
+              "layout",
+              "row",
+              "site"
+            ]
+          },
+          {
+            "condition": "row.next_action == 'advance_down'",
+            "function": "_row_stage_word",
+            "line": 460,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "row.phase == 'DOWN'",
+            "function": "_row_stage_word",
+            "line": 451,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "site + 1 >= layout.length",
+            "function": "_row_stage_word",
+            "line": 461,
+            "non_static_names": [],
+            "referenced_names": [
+              "layout",
+              "site"
+            ]
+          },
+          {
+            "condition": "row.next_action == 'convert_ack'",
+            "function": "_row_stage_word",
+            "line": 466,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "row.next_action == 'propagate_ack'",
+            "function": "_row_stage_word",
+            "line": 468,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "row.next_action == 'hold_ack'",
+            "function": "_row_stage_word",
+            "line": 470,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "_row_applies_at(row, site, layout.length)",
+            "function": "wavefront_controller_stages",
+            "line": 509,
+            "non_static_names": [],
+            "referenced_names": [
+              "_row_applies_at",
+              "layout",
+              "row",
+              "site"
+            ]
+          },
+          {
+            "condition": "_row_applies_at(row, site, layout.length)",
+            "function": "wavefront_controller_stages",
+            "line": 515,
+            "non_static_names": [],
+            "referenced_names": [
+              "_row_applies_at",
+              "layout",
+              "row",
+              "site"
+            ]
+          },
+          {
+            "condition": "row.phase == 'DOWN'",
+            "function": "wavefront_controller_stages",
+            "line": 505,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          },
+          {
+            "condition": "row.phase == 'ACK'",
+            "function": "wavefront_controller_stages",
+            "line": 506,
+            "non_static_names": [],
+            "referenced_names": [
+              "row"
+            ]
+          }
+        ],
+        "branch_references_to_nonstatic_or_runtime_names": [],
+        "compiler_entry": "wavefront_controller_word",
+        "fixed_generator_flattening_and_unrolling": true,
+        "fixed_unrolling_loop_iterators": [
+          {
+            "function": "_and_toggle",
+            "iterator": "enumerate(controls[2:-1], start=1)",
+            "line": 359
+          },
+          {
+            "function": "_controlled_predicate",
+            "iterator": "negatives",
+            "line": 371
+          },
+          {
+            "function": "_row_phase_update_predicate",
+            "iterator": "row.pattern",
+            "line": 415
+          },
+          {
+            "function": "_row_phase_update_predicate",
+            "iterator": "row.pattern",
+            "line": 416
+          },
+          {
+            "function": "_row_predicate",
+            "iterator": "row.pattern",
+            "line": 395
+          },
+          {
+            "function": "_row_predicate",
+            "iterator": "row.pattern",
+            "line": 396
+          },
+          {
+            "function": "_row_stage_word",
+            "iterator": "row.enables",
+            "line": 458
+          },
+          {
+            "function": "wavefront_controller_stages",
+            "iterator": "range(layout.length)",
+            "line": 507
+          },
+          {
+            "function": "wavefront_controller_stages",
+            "iterator": "reversed(range(layout.length))",
+            "line": 513
+          },
+          {
+            "function": "wavefront_controller_stages",
+            "iterator": "down_rows",
+            "line": 508
+          },
+          {
+            "function": "wavefront_controller_stages",
+            "iterator": "ack_rows",
+            "line": 514
+          },
+          {
+            "function": "wavefront_controller_stages",
+            "iterator": "transition_table",
+            "line": 505
+          },
+          {
+            "function": "wavefront_controller_stages",
+            "iterator": "transition_table",
+            "line": 506
+          },
+          {
+            "function": "wavefront_controller_word",
+            "iterator": "wavefront_controller_stages(layout, transition_table)",
+            "line": 529
+          },
+          {
+            "function": "wavefront_controller_word",
+            "iterator": "stage",
+            "line": 532
+          }
+        ],
+        "imported_P_T_C_aliases": [
+          "C",
+          "P",
+          "T"
+        ],
+        "pass": true,
+        "primary_read_as_data_only": true,
+        "runtime_map_functions_checked": [
+          "_and_toggle",
+          "_controlled_predicate",
+          "_row_applies_at",
+          "_row_phase_update_predicate",
+          "_row_predicate",
+          "_row_stage_word",
+          "wavefront_controller_stages",
+          "wavefront_controller_word"
+        ],
+        "runtime_state_executor_calls_in_compiler_path": [],
+        "while_loops_in_compiler_path": []
+      },
+      "label": "primary_source_discipline",
+      "pass": true
+    }
+  ],
+  "cycle": 726,
+  "declared_input_paths": [
+    "scripts/frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py"
+  ],
+  "note_path": "docs/WAVEFRONT_CONTROLLER_M2_COMPILER_CYCLE726_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+  "primary_read_as_data_only": true,
+  "report_sha256": "1269f450c71e392a71fd965496032ef23b35b5676224571eab687835c680b0a6",
+  "runtime_seconds": 15.046723457999178,
+  "status": "PASS",
+  "top_level_blocklist": [
+    "frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28"
+  ]
+}
+CHECK_SUMMARY 5/5
+TABLE 1adf939cd4bafd8a431bce72f963981521e950ccc63e9962f83afc6de9bae7ac ROWS 19
+FREDKIN_IDENTITY_CENSUS 1216 FAILURES 0
+REPLAY_CENSUS 19/19 FULL_STEPS 26 ACTION_EVENTS 73
+RUNTIME_SECONDS 15.046723
+CYCLE726_WAVEFRONT_INDEPENDENT_CHECK_PASS
+
+----- stderr -----
+

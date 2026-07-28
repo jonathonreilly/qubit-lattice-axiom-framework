@@ -1,0 +1,274 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle723_refusal_wrap_independent_check_2026_07_28.py
+runner_sha256: 698bb659408a78be22d8e30060ccc8bd0ed4363bc06ac7bfdd8a43b35ef0e3f2
+input_fingerprint_sha256: ff756aacac34a102246654367d40c65cea9e488a7d07efcfb4ccc48918fa40e4
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.22
+status: ok
+----- stdout -----
+PASS sandwich_semantics
+PASS inverse_certificate
+PASS primary_source_discipline
+PASS count_consistency
+{
+  "audit": "unset",
+  "audit_input_paths": [
+    "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+  ],
+  "audit_timeout_seconds": 900,
+  "authority": "none",
+  "blocked_primary_imports_present": [],
+  "certificates": {
+    "count_consistency": {
+      "MCX_expansion_sizes": {
+        "four_controls": 5,
+        "three_controls": 3
+      },
+      "expected_primary_report_cross_check": 95850,
+      "formula": "728 + 12306 + 2796 + 79240 + 780 = 95850",
+      "identity_stations": 39,
+      "lifted_CNOT_subtotal": 2796,
+      "lifted_TOF_subtotal": 79240,
+      "lifted_X_subtotal": 12306,
+      "nonidentity_stations": 91,
+      "pass": true,
+      "program_gate_census": {
+        "CNOT": 932,
+        "TOF": 15848,
+        "X": 12306
+      },
+      "program_row_gate_total": 29086,
+      "rail_gates": 780,
+      "rail_swaps": 260,
+      "rebuilt_wrapped_word_size": 95850,
+      "sandwich_shell": {
+        "gates_per_nonidentity_station": 8,
+        "subtotal": 728
+      },
+      "stations": 130,
+      "track_sites": 260,
+      "unknown_gate_kinds": []
+    },
+    "inverse_certificate": {
+      "basis_rows": 32,
+      "basis_scope": "exhaustive 32 states on five macro-touched data wires through the full H^11 two-bank orbit, embedded in the full 5881-wire wrapped register",
+      "forward_H_applications": 11,
+      "full_data_width": 5815,
+      "full_register_width": 5881,
+      "inverse_construction": "tuple(reversed(wrapped_word))",
+      "inverse_reversed_H_applications": 11,
+      "pass": true,
+      "reduced_data_width": 5,
+      "restoration_failures": 0,
+      "sampled_active_data_wires": [
+        1,
+        6,
+        40,
+        41,
+        42
+      ]
+    },
+    "primary_source_discipline": {
+      "AUDIT_INPUT_PATHS_literal_error": null,
+      "AUDIT_INPUT_PATHS_literal_tuple": true,
+      "AUDIT_INPUT_PATHS_literal_value": [
+        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+        "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+        "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+      ],
+      "all_three_gate_kinds_NOT_syndrome_guarded": true,
+      "attribute_assignments_onto_K_or_R719": [],
+      "blocked_primary_imports_present": [],
+      "forbidden_class_definitions": [],
+      "pass": true,
+      "refusing_controlled_macro_lift_branches": {
+        "CNOT": {
+          "NOT_syndrome_control_present": true,
+          "branch_present": true,
+          "expected_control_count": 3,
+          "lift_call": "mcx"
+        },
+        "TOF": {
+          "NOT_syndrome_control_present": true,
+          "branch_present": true,
+          "expected_control_count": 4,
+          "lift_call": "mcx"
+        },
+        "X": {
+          "NOT_syndrome_control_present": true,
+          "branch_present": true,
+          "expected_control_count": 2,
+          "lift_call": "tof"
+        }
+      }
+    },
+    "sandwich_semantics": {
+      "MCX_direct_vs_clean_ladder": {
+        "failures": 0,
+        "rows": 48,
+        "scratch_return_failures": 0
+      },
+      "banks": 2,
+      "data_width": 5815,
+      "dirt_cases_tested": 22,
+      "dirt_survival_failures": 0,
+      "identity_substituted_prediction_mismatches": 0,
+      "lawful_all_registers_return": true,
+      "lawful_wrapped_unwrapped_host_data_equal": true,
+      "nonidentity_stations": 11,
+      "pass": true,
+      "program_stations": 11,
+      "rail_prediction_mismatches": 0,
+      "refusal_event_census_failures": 0,
+      "refusal_events_predicted": 22,
+      "syndrome_OR_truth_table": {
+        "failures": 0,
+        "rows": 4
+      },
+      "syndrome_scratch_return_failures": 0,
+      "unwrapped_H_gates": 6668,
+      "wrapped_H_gates": 10476
+    }
+  },
+  "checks": [
+    {
+      "detail": {
+        "MCX_direct_vs_clean_ladder": {
+          "failures": 0,
+          "rows": 48,
+          "scratch_return_failures": 0
+        },
+        "banks": 2,
+        "data_width": 5815,
+        "dirt_cases_tested": 22,
+        "dirt_survival_failures": 0,
+        "identity_substituted_prediction_mismatches": 0,
+        "lawful_all_registers_return": true,
+        "lawful_wrapped_unwrapped_host_data_equal": true,
+        "nonidentity_stations": 11,
+        "pass": true,
+        "program_stations": 11,
+        "rail_prediction_mismatches": 0,
+        "refusal_event_census_failures": 0,
+        "refusal_events_predicted": 22,
+        "syndrome_OR_truth_table": {
+          "failures": 0,
+          "rows": 4
+        },
+        "syndrome_scratch_return_failures": 0,
+        "unwrapped_H_gates": 6668,
+        "wrapped_H_gates": 10476
+      },
+      "label": "sandwich_semantics",
+      "pass": true
+    },
+    {
+      "detail": {
+        "basis_rows": 32,
+        "basis_scope": "exhaustive 32 states on five macro-touched data wires through the full H^11 two-bank orbit, embedded in the full 5881-wire wrapped register",
+        "forward_H_applications": 11,
+        "full_data_width": 5815,
+        "full_register_width": 5881,
+        "inverse_construction": "tuple(reversed(wrapped_word))",
+        "inverse_reversed_H_applications": 11,
+        "pass": true,
+        "reduced_data_width": 5,
+        "restoration_failures": 0,
+        "sampled_active_data_wires": [
+          1,
+          6,
+          40,
+          41,
+          42
+        ]
+      },
+      "label": "inverse_certificate",
+      "pass": true
+    },
+    {
+      "detail": {
+        "AUDIT_INPUT_PATHS_literal_error": null,
+        "AUDIT_INPUT_PATHS_literal_tuple": true,
+        "AUDIT_INPUT_PATHS_literal_value": [
+          "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+          "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+          "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+        ],
+        "all_three_gate_kinds_NOT_syndrome_guarded": true,
+        "attribute_assignments_onto_K_or_R719": [],
+        "blocked_primary_imports_present": [],
+        "forbidden_class_definitions": [],
+        "pass": true,
+        "refusing_controlled_macro_lift_branches": {
+          "CNOT": {
+            "NOT_syndrome_control_present": true,
+            "branch_present": true,
+            "expected_control_count": 3,
+            "lift_call": "mcx"
+          },
+          "TOF": {
+            "NOT_syndrome_control_present": true,
+            "branch_present": true,
+            "expected_control_count": 4,
+            "lift_call": "mcx"
+          },
+          "X": {
+            "NOT_syndrome_control_present": true,
+            "branch_present": true,
+            "expected_control_count": 2,
+            "lift_call": "tof"
+          }
+        }
+      },
+      "label": "primary_source_discipline",
+      "pass": true
+    },
+    {
+      "detail": {
+        "MCX_expansion_sizes": {
+          "four_controls": 5,
+          "three_controls": 3
+        },
+        "expected_primary_report_cross_check": 95850,
+        "formula": "728 + 12306 + 2796 + 79240 + 780 = 95850",
+        "identity_stations": 39,
+        "lifted_CNOT_subtotal": 2796,
+        "lifted_TOF_subtotal": 79240,
+        "lifted_X_subtotal": 12306,
+        "nonidentity_stations": 91,
+        "pass": true,
+        "program_gate_census": {
+          "CNOT": 932,
+          "TOF": 15848,
+          "X": 12306
+        },
+        "program_row_gate_total": 29086,
+        "rail_gates": 780,
+        "rail_swaps": 260,
+        "rebuilt_wrapped_word_size": 95850,
+        "sandwich_shell": {
+          "gates_per_nonidentity_station": 8,
+          "subtotal": 728
+        },
+        "stations": 130,
+        "track_sites": 260,
+        "unknown_gate_kinds": []
+      },
+      "label": "count_consistency",
+      "pass": true
+    }
+  ],
+  "report_sha256": "9ce9b961a81f274c99a3c897ca0ad49d8644934636f4b51c8d549c386962061f",
+  "runtime_seconds": 2.793579957993643,
+  "status": "PASS",
+  "top_level_blocklist": [
+    "frontier_cycle723_refusal_wrapped_controller_2026_07_28"
+  ]
+}
+CYCLE723_REFUSAL_WRAP_INDEPENDENT_CHECK_PASS
+
+----- stderr -----
+

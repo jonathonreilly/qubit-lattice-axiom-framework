@@ -1,0 +1,1042 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py
+runner_sha256: 3baf5bc5d88d948e62ce035dd3ad96c74fd6f480341a87cef29f4fc782f8e872
+input_fingerprint_sha256: 406144e7c08decfbb21263a9f1353d51f6c9085b0152c1ea1cec3a7db3a95d1e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 134.76
+status: ok
+----- stdout -----
+PASS A_unwrapped_regression_anchor :: True
+PASS B_lawful_behavior_unchanged_wrapped :: True
+PASS C_sector_controls_preserved :: True
+PASS D_exhaustive_per_macro_refusal :: True
+PASS E_deletion_controls :: True
+PASS F_physical_layer :: True
+PASS G_compiled_wrapped_orbit :: True
+PASS H_inherited_anchors :: True
+{
+  "audit_timeout_seconds": 900,
+  "checks": {
+    "A_unwrapped_regression_anchor": true,
+    "B_lawful_behavior_unchanged_wrapped": true,
+    "C_sector_controls_preserved": true,
+    "D_exhaustive_per_macro_refusal": true,
+    "E_deletion_controls": true,
+    "F_physical_layer": true,
+    "G_compiled_wrapped_orbit": true,
+    "H_inherited_anchors": true
+  },
+  "claim_boundary": {
+    "clean_syndrome_scratch_genesis_supplied": true,
+    "excluded_claims": "No autonomy, genesis, W2, temporal-ordinal, occurrence, Record, Born, or source-content claim is made.",
+    "ordinal_scope": "Controller ordinals are circuit structure, not time.",
+    "refusal_wrapped_every_controlled_macro": true,
+    "still_supplied": "The unique token, oriented ring geometry, program content, and clean data genesis remain supplied.",
+    "trade": "The wrap retires the unchecked clean-B/work assertion at every controlled macro: dirty B/work is locally refused and remains visible. It adds clean per-station syndrome and two-bit scratch-pool genesis to the supplied inventory.",
+    "unique_token_still_supplied": true,
+    "w1_closed": false
+  },
+  "compiled_wrapped_orbit": {
+    "Cycle713_origin0_branches": 6,
+    "H_applications_per_orbit": 130,
+    "compiled_host_equality_failures": 0,
+    "compiled_inverse_failures": 0,
+    "controller_H_word_sha256": "8e57534049cbd474c30fe1ed26ce4da04e388d362394096de5990f386f327681",
+    "controller_register_return_failures": 0,
+    "deleted_finalizer_suffix_pointer_dirty": true,
+    "deletion_data_bit_differences": {
+      "finalizer": 3,
+      "packet": 35,
+      "source": 33
+    },
+    "forward_semantic_gate_applications_tested": 74763000,
+    "inverse_semantic_gate_applications_tested": 74763000,
+    "rows": [
+      {
+        "A0_return": true,
+        "B_work_syndrome_scratch_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 0
+      },
+      {
+        "A0_return": true,
+        "B_work_syndrome_scratch_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 2
+      },
+      {
+        "A0_return": true,
+        "B_work_syndrome_scratch_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 3
+      },
+      {
+        "A0_return": true,
+        "B_work_syndrome_scratch_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 4
+      },
+      {
+        "A0_return": true,
+        "B_work_syndrome_scratch_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 5
+      },
+      {
+        "A0_return": true,
+        "B_work_syndrome_scratch_return": true,
+        "compiled_equals_host": true,
+        "inverse_exact": true,
+        "source_matter_mode": 6
+      }
+    ],
+    "semantic_gate_applications_per_branch": 12460500,
+    "semantic_gates_per_H": 95850,
+    "suffix_decoded_domain_failures": 0
+  },
+  "controller_sectors": {
+    "adjacent_two_token_residual_from_lawful": 0.48693948205126425,
+    "adjacent_two_token_return_failures": 0,
+    "distant_two_token_residual_from_lawful": 0.48693948205126425,
+    "distant_two_token_return_failures": 0,
+    "lawful_inverse_residual": 0.0,
+    "lawful_inverse_token_failures": 0,
+    "lawful_token_return_failures": 0,
+    "offset_token_residual_from_lawful": 0.48693948205126425,
+    "offset_token_return_failures": 0,
+    "zero_token_data_residual_from_unallocated_matter": 0.0,
+    "zero_token_residual_from_lawful": 0.48693948205126425,
+    "zero_token_return_failures": 0
+  },
+  "deletion_controls": {
+    "deleted_compute_data_bit_mismatch_census": 33,
+    "deleted_compute_gate": [
+      1,
+      5945,
+      6205
+    ],
+    "deleted_compute_prediction_mismatch": true,
+    "deleted_uncompute_gate": [
+      1,
+      5945,
+      6205
+    ],
+    "deleted_uncompute_syndrome_return_failure": true,
+    "deleted_uncompute_syndrome_weight": 1,
+    "dirt_kind": "B",
+    "ring_coincidences": [
+      0,
+      65
+    ],
+    "station": 0
+  },
+  "inherited_anchors": {
+    "Cycle713_pin_match": true,
+    "Cycle713_runner_expected_sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",
+    "Cycle713_runner_observed_sha256": "b61f98d0b44c1496883e8ab2ae1db065772ed053c77b6661a0153086acfd0e2f",
+    "instrument": {
+      "columns": 4096,
+      "delete_OR_Toffoli_maximum_residual": 1.4142135623730951,
+      "delete_left_prewrite_maximum_residual": 1.414213562373096,
+      "maximum_EG_instrument_residual": 8.121767085755588e-16
+    },
+    "matter": {
+      "FSWAP_matrix_residual": 0.0,
+      "coin_QR_residual": 1.3496230663401984e-15,
+      "coin_matrix_residual": 1.952777839357751e-16,
+      "coin_stage_residual": 6.243831416688722e-15,
+      "contact_stage_residual": 0.0,
+      "internal_depth_two_stream_residual": 0.0,
+      "mass_residual": 0.0,
+      "onsite_64_state_contact_residual": 2.149937642474629e-15,
+      "reverse_stage_residual": 0.0,
+      "seam_stage_residual": 0.0,
+      "single_FSWAP_falsifier_residual": 5.656854249492381
+    },
+    "matter_falsifier_active": true,
+    "matter_residual_failures": 0
+  },
+  "lawful_wrapped": {
+    "cases": [
+      {
+        "A0_return": true,
+        "B_return": true,
+        "banks": 2,
+        "data_allocator_match": true,
+        "label": "unpadded_2",
+        "literal_reverse_exact": true,
+        "nonidentity_stations": 11,
+        "scratch_return": true,
+        "semantic_gates": 10476,
+        "stations": 11,
+        "syndrome_return": true,
+        "word_sha256": "cfee473b172c392f93bd1f19b26a45c0d94699b461c543217b840e7ef073803c",
+        "work_return": true,
+        "wrapped_blocks": 11
+      },
+      {
+        "A0_return": true,
+        "B_return": true,
+        "banks": 5,
+        "data_allocator_match": true,
+        "label": "unpadded_5",
+        "literal_reverse_exact": true,
+        "nonidentity_stations": 35,
+        "scratch_return": true,
+        "semantic_gates": 36018,
+        "stations": 35,
+        "syndrome_return": true,
+        "word_sha256": "2a87458f6cfeaf984a2f81bcf3dbd8ffce09eec7634222fc3e9fb875a5e17fdb",
+        "work_return": true,
+        "wrapped_blocks": 35
+      },
+      {
+        "A0_return": true,
+        "B_return": true,
+        "banks": 12,
+        "data_allocator_match": true,
+        "label": "unpadded_12",
+        "literal_reverse_exact": true,
+        "nonidentity_stations": 91,
+        "scratch_return": true,
+        "semantic_gates": 95616,
+        "stations": 91,
+        "syndrome_return": true,
+        "word_sha256": "b084a17fa95f97fdd6e860e437e99e65e0444e991dfa056778d3f6e57eda98df",
+        "work_return": true,
+        "wrapped_blocks": 91
+      },
+      {
+        "A0_return": true,
+        "B_return": true,
+        "banks": 12,
+        "data_allocator_match": true,
+        "label": "padded_130",
+        "literal_reverse_exact": true,
+        "nonidentity_stations": 91,
+        "scratch_return": true,
+        "semantic_gates": 95850,
+        "stations": 130,
+        "syndrome_return": true,
+        "word_sha256": "8e57534049cbd474c30fe1ed26ce4da04e388d362394096de5990f386f327681",
+        "work_return": true,
+        "wrapped_blocks": 91
+      }
+    ],
+    "failure_census": 0
+  },
+  "mcx_scratch_derivation": {
+    "attempts": {
+      "3": [
+        [
+          0,
+          false,
+          0
+        ],
+        [
+          1,
+          true,
+          3
+        ],
+        [
+          2,
+          true,
+          3
+        ],
+        [
+          3,
+          true,
+          3
+        ]
+      ],
+      "4": [
+        [
+          0,
+          false,
+          0
+        ],
+        [
+          1,
+          false,
+          0
+        ],
+        [
+          2,
+          true,
+          5
+        ],
+        [
+          3,
+          true,
+          5
+        ],
+        [
+          4,
+          true,
+          5
+        ]
+      ]
+    },
+    "largest_lift_controls": 4,
+    "minimum_by_controls": {
+      "3": 1,
+      "4": 2
+    },
+    "scratch_per_station": 2
+  },
+  "pass": true,
+  "per_macro_refusal": {
+    "active_refusal_cases": 5,
+    "active_refusal_output_match_failures": 0,
+    "changed_output_cases": 5,
+    "coincidences": {
+      "0:B": [
+        0,
+        65
+      ],
+      "0:work": [
+        0
+      ],
+      "102:B": [
+        51,
+        116
+      ],
+      "102:work": [
+        102
+      ],
+      "103:B": [],
+      "103:work": [
+        103
+      ],
+      "104:B": [
+        52,
+        117
+      ],
+      "104:work": [
+        104
+      ],
+      "107:B": [],
+      "107:work": [
+        107
+      ],
+      "108:B": [
+        54,
+        119
+      ],
+      "108:work": [
+        108
+      ],
+      "109:B": [],
+      "109:work": [
+        109
+      ],
+      "10:B": [
+        5,
+        70
+      ],
+      "10:work": [
+        10
+      ],
+      "112:B": [
+        56,
+        121
+      ],
+      "112:work": [
+        112
+      ],
+      "113:B": [],
+      "113:work": [
+        113
+      ],
+      "114:B": [
+        57,
+        122
+      ],
+      "114:work": [
+        114
+      ],
+      "117:B": [],
+      "117:work": [
+        117
+      ],
+      "118:B": [
+        59,
+        124
+      ],
+      "118:work": [
+        118
+      ],
+      "119:B": [],
+      "119:work": [
+        119
+      ],
+      "11:B": [],
+      "11:work": [
+        11
+      ],
+      "122:B": [
+        61,
+        126
+      ],
+      "122:work": [
+        122
+      ],
+      "123:B": [],
+      "123:work": [
+        123
+      ],
+      "124:B": [
+        62,
+        127
+      ],
+      "124:work": [
+        124
+      ],
+      "125:B": [],
+      "125:work": [
+        125
+      ],
+      "12:B": [
+        6,
+        71
+      ],
+      "12:work": [
+        12
+      ],
+      "13:B": [],
+      "13:work": [
+        13
+      ],
+      "14:B": [
+        7,
+        72
+      ],
+      "14:work": [
+        14
+      ],
+      "15:B": [],
+      "15:work": [
+        15
+      ],
+      "16:B": [
+        8,
+        73
+      ],
+      "16:work": [
+        16
+      ],
+      "17:B": [],
+      "17:work": [
+        17
+      ],
+      "18:B": [
+        9,
+        74
+      ],
+      "18:work": [
+        18
+      ],
+      "19:B": [],
+      "19:work": [
+        19
+      ],
+      "1:B": [],
+      "1:work": [
+        1
+      ],
+      "20:B": [
+        10,
+        75
+      ],
+      "20:work": [
+        20
+      ],
+      "21:B": [],
+      "21:work": [
+        21
+      ],
+      "22:B": [
+        11,
+        76
+      ],
+      "22:work": [
+        22
+      ],
+      "23:B": [],
+      "23:work": [
+        23
+      ],
+      "24:B": [
+        12,
+        77
+      ],
+      "24:work": [
+        24
+      ],
+      "25:B": [],
+      "25:work": [
+        25
+      ],
+      "26:B": [
+        13,
+        78
+      ],
+      "26:work": [
+        26
+      ],
+      "27:B": [],
+      "27:work": [
+        27
+      ],
+      "28:B": [
+        14,
+        79
+      ],
+      "28:work": [
+        28
+      ],
+      "29:B": [],
+      "29:work": [
+        29
+      ],
+      "2:B": [
+        1,
+        66
+      ],
+      "2:work": [
+        2
+      ],
+      "30:B": [
+        15,
+        80
+      ],
+      "30:work": [
+        30
+      ],
+      "31:B": [],
+      "31:work": [
+        31
+      ],
+      "32:B": [
+        16,
+        81
+      ],
+      "32:work": [
+        32
+      ],
+      "33:B": [],
+      "33:work": [
+        33
+      ],
+      "34:B": [
+        17,
+        82
+      ],
+      "34:work": [
+        34
+      ],
+      "35:B": [],
+      "35:work": [
+        35
+      ],
+      "36:B": [
+        18,
+        83
+      ],
+      "36:work": [
+        36
+      ],
+      "37:B": [],
+      "37:work": [
+        37
+      ],
+      "38:B": [
+        19,
+        84
+      ],
+      "38:work": [
+        38
+      ],
+      "39:B": [],
+      "39:work": [
+        39
+      ],
+      "3:B": [],
+      "3:work": [
+        3
+      ],
+      "40:B": [
+        20,
+        85
+      ],
+      "40:work": [
+        40
+      ],
+      "41:B": [],
+      "41:work": [
+        41
+      ],
+      "42:B": [
+        21,
+        86
+      ],
+      "42:work": [
+        42
+      ],
+      "43:B": [],
+      "43:work": [
+        43
+      ],
+      "44:B": [
+        22,
+        87
+      ],
+      "44:work": [
+        44
+      ],
+      "45:B": [],
+      "45:work": [
+        45
+      ],
+      "46:B": [
+        23,
+        88
+      ],
+      "46:work": [
+        46
+      ],
+      "47:B": [],
+      "47:work": [
+        47
+      ],
+      "48:B": [
+        24,
+        89
+      ],
+      "48:work": [
+        48
+      ],
+      "49:B": [],
+      "49:work": [
+        49
+      ],
+      "4:B": [
+        2,
+        67
+      ],
+      "4:work": [
+        4
+      ],
+      "50:B": [
+        25,
+        90
+      ],
+      "50:work": [
+        50
+      ],
+      "51:B": [],
+      "51:work": [
+        51
+      ],
+      "52:B": [
+        26,
+        91
+      ],
+      "52:work": [
+        52
+      ],
+      "53:B": [],
+      "53:work": [
+        53
+      ],
+      "54:B": [
+        27,
+        92
+      ],
+      "54:work": [
+        54
+      ],
+      "55:B": [],
+      "55:work": [
+        55
+      ],
+      "56:B": [
+        28,
+        93
+      ],
+      "56:work": [
+        56
+      ],
+      "5:B": [],
+      "5:work": [
+        5
+      ],
+      "6:B": [
+        3,
+        68
+      ],
+      "6:work": [
+        6
+      ],
+      "72:B": [
+        36,
+        101
+      ],
+      "72:work": [
+        72
+      ],
+      "73:B": [],
+      "73:work": [
+        73
+      ],
+      "74:B": [
+        37,
+        102
+      ],
+      "74:work": [
+        74
+      ],
+      "77:B": [],
+      "77:work": [
+        77
+      ],
+      "78:B": [
+        39,
+        104
+      ],
+      "78:work": [
+        78
+      ],
+      "79:B": [],
+      "79:work": [
+        79
+      ],
+      "7:B": [],
+      "7:work": [
+        7
+      ],
+      "82:B": [
+        41,
+        106
+      ],
+      "82:work": [
+        82
+      ],
+      "83:B": [],
+      "83:work": [
+        83
+      ],
+      "84:B": [
+        42,
+        107
+      ],
+      "84:work": [
+        84
+      ],
+      "87:B": [],
+      "87:work": [
+        87
+      ],
+      "88:B": [
+        44,
+        109
+      ],
+      "88:work": [
+        88
+      ],
+      "89:B": [],
+      "89:work": [
+        89
+      ],
+      "8:B": [
+        4,
+        69
+      ],
+      "8:work": [
+        8
+      ],
+      "92:B": [
+        46,
+        111
+      ],
+      "92:work": [
+        92
+      ],
+      "93:B": [],
+      "93:work": [
+        93
+      ],
+      "94:B": [
+        47,
+        112
+      ],
+      "94:work": [
+        94
+      ],
+      "97:B": [],
+      "97:work": [
+        97
+      ],
+      "98:B": [
+        49,
+        114
+      ],
+      "98:work": [
+        98
+      ],
+      "99:B": [],
+      "99:work": [
+        99
+      ],
+      "9:B": [],
+      "9:work": [
+        9
+      ]
+    },
+    "coincidental_matches": [],
+    "dirt_cases_tested": 182,
+    "dirt_survival_failures": 0,
+    "expected_inactive_matches": 177,
+    "legacy_work_reused_as_refusal_scratch": false,
+    "nonidentity_stations_tested": 91,
+    "prediction_mismatch_census": 0,
+    "program_stations": 130,
+    "scratch_per_station": 2,
+    "station_block_inverse_failures": 0,
+    "station_block_inverse_rows": 455,
+    "syndrome_scratch_return_failures": 0,
+    "wrapped_word_sha256": "8e57534049cbd474c30fe1ed26ce4da04e388d362394096de5990f386f327681"
+  },
+  "physical": {
+    "banks": {
+      "2": {
+        "banks": 2,
+        "controller_M2": 66,
+        "controller_semantic_gates": 10476,
+        "controller_word_sha256": "cfee473b172c392f93bd1f19b26a45c0d94699b461c543217b840e7ef073803c",
+        "coordinate_failures": 0,
+        "forward": {
+          "delete_first_route_swap_detected": 47572,
+          "maximum_route_distance": 31,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 93118,
+          "operand_order_failures": 0,
+          "physical_primitives": 155292,
+          "route_blueprint_sha256": "50e0f789876c400c34963916e5305a38e56ad01f02a472fd2d097171160caa54",
+          "route_return_failures": 0,
+          "routed_NN_gates": 1190612,
+          "touched_M2": 1583,
+          "two_M2_primitives": 62174
+        },
+        "frame_product_failures": 0,
+        "inverse": {
+          "delete_first_route_swap_detected": 47572,
+          "maximum_route_distance": 31,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 93118,
+          "operand_order_failures": 0,
+          "physical_primitives": 155292,
+          "route_blueprint_sha256": "7464135e14487e996045cbab4dff6e8606f9f4d08b90c6138cc72409bc9b05c9",
+          "route_return_failures": 0,
+          "routed_NN_gates": 1190612,
+          "touched_M2": 1583,
+          "two_M2_primitives": 62174
+        },
+        "nonidentity_stations": 11,
+        "ordered_frame_products": 576,
+        "placement_collisions": 0,
+        "proper_cubic_frames": 24,
+        "rail_cycle_NN_failures": 0,
+        "stations": 11,
+        "total_declared_M2": 5882,
+        "translation_failures": 0
+      },
+      "5": {
+        "banks": 5,
+        "controller_M2": 270,
+        "controller_semantic_gates": 36078,
+        "controller_word_sha256": "15ae817c974b989d5ddc964972c534eca9f80c2046582dffd21d98c862f92e06",
+        "coordinate_failures": 0,
+        "forward": {
+          "delete_first_route_swap_detected": 164170,
+          "maximum_route_distance": 48,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 320452,
+          "operand_order_failures": 0,
+          "physical_primitives": 534450,
+          "route_blueprint_sha256": "aa38d627d4af3d72fc662dcd469dc6541a7c648782dcfd5631aaf29acb539049",
+          "route_return_failures": 0,
+          "routed_NN_gates": 4998490,
+          "touched_M2": 5475,
+          "two_M2_primitives": 213998
+        },
+        "frame_product_failures": 0,
+        "inverse": {
+          "delete_first_route_swap_detected": 164170,
+          "maximum_route_distance": 48,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 320452,
+          "operand_order_failures": 0,
+          "physical_primitives": 534450,
+          "route_blueprint_sha256": "c95659b51c9f41ac73765d1e8b8c38f3f4b21254a7747c69c42a4e1d9f630e8e",
+          "route_return_failures": 0,
+          "routed_NN_gates": 4998490,
+          "touched_M2": 5475,
+          "two_M2_primitives": 213998
+        },
+        "nonidentity_stations": 35,
+        "ordered_frame_products": 576,
+        "placement_collisions": 0,
+        "proper_cubic_frames": 24,
+        "rail_cycle_NN_failures": 0,
+        "stations": 45,
+        "total_declared_M2": 6086,
+        "translation_failures": 0
+      },
+      "12": {
+        "banks": 12,
+        "controller_M2": 780,
+        "controller_semantic_gates": 95850,
+        "controller_word_sha256": "8e57534049cbd474c30fe1ed26ce4da04e388d362394096de5990f386f327681",
+        "coordinate_failures": 0,
+        "forward": {
+          "delete_first_route_swap_detected": 436232,
+          "maximum_route_distance": 48,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 850898,
+          "operand_order_failures": 0,
+          "physical_primitives": 1419186,
+          "route_blueprint_sha256": "39ac88cc74b49c147ec1a63de0762098e8a478d513594a5e8a71aaf49cafa737",
+          "route_return_failures": 0,
+          "routed_NN_gates": 17945266,
+          "touched_M2": 19462,
+          "two_M2_primitives": 568288
+        },
+        "frame_product_failures": 0,
+        "inverse": {
+          "delete_first_route_swap_detected": 436232,
+          "maximum_route_distance": 48,
+          "non_NN_failures": 0,
+          "one_M2_primitives": 850898,
+          "operand_order_failures": 0,
+          "physical_primitives": 1419186,
+          "route_blueprint_sha256": "21364ec6a4d9fdbbb00d80cf136272818f863d3dd7d5c8a6b20a0fb884552d37",
+          "route_return_failures": 0,
+          "routed_NN_gates": 17945266,
+          "touched_M2": 19462,
+          "two_M2_primitives": 568288
+        },
+        "nonidentity_stations": 91,
+        "ordered_frame_products": 576,
+        "placement_collisions": 0,
+        "proper_cubic_frames": 24,
+        "rail_cycle_NN_failures": 0,
+        "stations": 130,
+        "total_declared_M2": 6596,
+        "translation_failures": 0
+      }
+    },
+    "failure_census": 0
+  },
+  "physical_12_bank_summary": {
+    "controller_M2": 780,
+    "forward_physical_primitives": 1419186,
+    "forward_route_sha256": "39ac88cc74b49c147ec1a63de0762098e8a478d513594a5e8a71aaf49cafa737",
+    "forward_routed_NN_gates": 17945266,
+    "inverse_physical_primitives": 1419186,
+    "inverse_route_sha256": "21364ec6a4d9fdbbb00d80cf136272818f863d3dd7d5c8a6b20a0fb884552d37",
+    "inverse_routed_NN_gates": 17945266,
+    "semantic_gates": 95850,
+    "total_declared_M2": 6596
+  },
+  "report_sha256": "297ac3080bca41df9869d014865ded2c41004a1fb1b032bb5abbb0dfce70f325",
+  "runtime_seconds": 134.22045895800693,
+  "unwrapped_regression_anchor": {
+    "all_counters_zero": true,
+    "counter_mismatches": 0,
+    "digest_failures": 0,
+    "held": {
+      "2": {
+        "imported_word_sha256": "c708d605367c03bffaa2b7b04b3a8d58b462306711da72e883261f27c16e9694",
+        "observed": {
+          "banks": 2,
+          "controller_semantic_gates": 6668,
+          "controller_word_sha256": "c708d605367c03bffaa2b7b04b3a8d58b462306711da72e883261f27c16e9694",
+          "fixed_word_failures": 0,
+          "inverse_failures": 0,
+          "logical_failures": 0,
+          "postimage_failures": 0,
+          "program_stations": 11,
+          "token_return_failures": 0
+        },
+        "reference": {
+          "fixed_word_failures": 0,
+          "inverse_failures": 0,
+          "logical_failures": 0,
+          "postimage_failures": 0,
+          "token_return_failures": 0
+        }
+      },
+      "5": {
+        "imported_word_sha256": "b3192c7b64087a5f662e1145aba449c6f9f217ab20f0b28b462fe9f298fd9b16",
+        "observed": {
+          "banks": 5,
+          "controller_semantic_gates": 23066,
+          "controller_word_sha256": "b3192c7b64087a5f662e1145aba449c6f9f217ab20f0b28b462fe9f298fd9b16",
+          "fixed_word_failures": 0,
+          "inverse_failures": 0,
+          "logical_failures": 0,
+          "postimage_failures": 0,
+          "program_stations": 35,
+          "token_return_failures": 0
+        },
+        "reference": {
+          "fixed_word_failures": 0,
+          "inverse_failures": 0,
+          "logical_failures": 0,
+          "postimage_failures": 0,
+          "token_return_failures": 0
+        }
+      },
+      "12": {
+        "imported_word_sha256": "2f88bd1cb742ec942c403fe8e80a29f28a628234e48f5a7517d3fa9eae17d221",
+        "observed": {
+          "banks": 12,
+          "controller_semantic_gates": 61328,
+          "controller_word_sha256": "2f88bd1cb742ec942c403fe8e80a29f28a628234e48f5a7517d3fa9eae17d221",
+          "fixed_word_failures": 0,
+          "inverse_failures": 0,
+          "logical_failures": 0,
+          "postimage_failures": 0,
+          "program_stations": 91,
+          "token_return_failures": 0
+        },
+        "reference": {
+          "fixed_word_failures": 0,
+          "inverse_failures": 0,
+          "logical_failures": 0,
+          "postimage_failures": 0,
+          "token_return_failures": 0
+        }
+      }
+    },
+    "padded_130_digest_match": true,
+    "padded_130_semantic_gates": 61562,
+    "padded_130_sha256": "e2f3bbdb81db1c242721b7cdbc4b1c3caec51da30f99842d8d8e888c9204ce87"
+  },
+  "word_size_comparison": {
+    "added_semantic_gates": 34288,
+    "unwrapped_semantic_gates": 61562,
+    "wrapped_semantic_gates": 95850,
+    "wrapped_to_unwrapped_ratio": 1.5569669601377474
+  }
+}
+
+----- stderr -----
+

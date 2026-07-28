@@ -1,0 +1,51 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle723_refusal_wrap_independent_check_2026_07_28.txt": "55fe583fd19709d443efd1cf7d54f36d22c082e7f98767e2f3c78f59261cfde9",
+      "frontier_cycle723_refusal_wrapped_controller_2026_07_28.txt": "97be165ce414dd46e3691c64cb3d56b4972520fe874bc2575cae90cecfadcbc3"
+    },
+    "note": {
+      "path": "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "d9a416bc01986fef9f1a5936deda70a80a0e397cc972d643a79bf927c032fce8"
+    },
+    "runners": {
+      "frontier_cycle723_refusal_wrap_independent_check_2026_07_28.py": "698bb659408a78be22d8e30060ccc8bd0ed4363bc06ac7bfdd8a43b35ef0e3f2",
+      "frontier_cycle723_refusal_wrapped_controller_2026_07_28.py": "3baf5bc5d88d948e62ce035dd3ad96c74fd6f480341a87cef29f4fc782f8e872"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "clean_syndrome_scratch_genesis_supplied": true,
+    "fixed_supplies": "Cycle-719 controller inventory unchanged (one token, ring, program content/order, clean data genesis) plus NEW clean per-station syndrome and scratch genesis",
+    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
+    "not_derived": "unique-token or clean-ancilla genesis, autonomous edge schedule, boundary-free geometry, renewal, occurrence, physical time, Record, Born, source/gravity meaning",
+    "positive_scope": "a reversible refusal wrap of every controlled data macro of the padded 130-station two-rail controller: lawful behavior unchanged, dirty B/work rails refused at every macro with visible dirt, deletions active, physical layer and compiled orbit re-certified",
+    "refusal_wrapped_every_controlled_macro": false,
+    "unique_token_still_supplied": true,
+    "w1_closed": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 4,
+    "primary_named_checks_passed": 8
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 723,
+  "date": "2026-07-28",
+  "result": {
+    "deletion_controls": {
+      "compute_gate_deletion_data_mismatches": 33,
+      "uncompute_gate_deletion_retained_syndromes": 1
+    },
+    "dirty_refusal_cases": 182,
+    "dirty_refusal_mismatches": 0,
+    "nonidentity_stations_wrapped": 91,
+    "physical_primitives_12_banks": 1419186,
+    "routed_nn_gates_12_banks": 17945266,
+    "unwrapped_H_gates": 61562,
+    "wrapped_H_gates": 95850
+  },
+  "status": "CYCLE723_REFUSAL_WRAPPED_CONTROLLER_PASS"
+}

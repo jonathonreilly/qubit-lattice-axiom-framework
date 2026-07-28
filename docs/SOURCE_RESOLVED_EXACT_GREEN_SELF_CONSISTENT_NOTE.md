@@ -27,12 +27,18 @@ The assertion and provenance hardening below does not satisfy that open target.
 - [`scripts/source_resolved_exact_green_self_consistent.py`](../scripts/source_resolved_exact_green_self_consistent.py)
 - [`outputs/source_resolved_exact_green_self_consistent_assertions_2026-05-06.txt`](../outputs/source_resolved_exact_green_self_consistent_assertions_2026-05-06.txt)
 
-Reproduce the frozen assertion run with the gain supplied on the command line:
+Reproduce the frozen assertion run with the gain supplied visibly on the
+command line:
 
 ```bash
 python3 scripts/source_resolved_exact_green_self_consistent.py \
   --calibrated-gain 1.7578903308081324
 ```
+
+The repository audit harness invokes paired runners without command-line
+arguments.  On that canonical path this runner selects the same frozen gain as
+its default.  The option above is an explicit reproduction override, not a
+separate derived value; any different value fails the frozen-gain gate.
 
 ## Question
 
@@ -57,7 +63,7 @@ The frozen pocket uses:
 - source strengths `s = 0.001, 0.002, 0.004, 0.008`
 - kernel `exp[-mu (rho + eps)] / (rho + eps)`, where `rho` is the
   Euclidean source-point distance, with `mu = 0.08`, `eps = 0.5`
-- calibration gain input `1.757890330808e+00`
+- frozen calibration gain input/default `1.757890330808e+00`
 - one self-consistency update from the propagated source-cluster amplitudes
 
 The calibration gain is part of the frozen setup.  It is chosen to set the
@@ -67,9 +73,10 @@ independently derived physical amplitude.
 ## Frozen finite-run contract
 
 For this note, “self-consistent” means exactly one source-weight update.  If
-`g` denotes the declared calibrated gain input, the initial uniform weights
-are `w_j^(0) = 1/4` on the four in-bounds source nodes and the field used by
-the runner is
+`g` denotes the selected calibrated gain (the frozen no-argument default or
+the equal explicit override), the initial uniform weights are
+`w_j^(0) = 1/4` on the four in-bounds source nodes and the field used by the
+runner is
 
 ```text
 f_g^(q)(x; s)
@@ -117,7 +124,8 @@ failure:
    relative to the launch centroid; all four frozen source rows must pass.
 3. The log-log fits must obey `|alpha - 1| <= 5e-3`.  The unrounded runner
    values are `alpha_inst = 1.000645` and `alpha_green = 1.001886`.
-4. The declared gain must equal the frozen gain input and reproduce the
+4. The selected gain—whether supplied by the canonical no-argument default or
+   by explicit override—must equal the frozen gain input and reproduce the
    pre-update base-field cap.  This is a configuration/provenance check, not
    an independent amplitude prediction.
 

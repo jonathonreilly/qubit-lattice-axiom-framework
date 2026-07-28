@@ -126,9 +126,10 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--calibrated-gain",
         type=float,
-        required=True,
+        default=FROZEN_CALIBRATED_GAIN,
         help=(
-            "required field-normalization input "
+            "optional explicit reproduction override; the canonical "
+            "no-argument audit run uses the frozen field-normalization input "
             f"(frozen value: {FROZEN_CALIBRATED_GAIN:.16g})"
         ),
     )
@@ -158,7 +159,7 @@ def main() -> int:
     )
     print(f"source strengths: {m.SOURCE_STRENGTHS}")
     print(f"target max |f|: {FIELD_TARGET_MAX}")
-    print(f"declared calibrated gain input: {args.calibrated_gain:.12e}")
+    print(f"selected calibrated gain input: {args.calibrated_gain:.12e}")
     print("calibration boundary: gain is a frozen input, not an independent amplitude prediction")
     print()
 
@@ -245,11 +246,11 @@ def main() -> int:
         f"zero_delta={zero_delta:+.12e}; tolerance={ZERO_SOURCE_TOL:.1e}",
     )
     record(
-        "declared calibrated gain matches the frozen input and base-field cap",
+        "selected calibrated gain matches the frozen input and base-field cap",
         abs(gain - FROZEN_CALIBRATED_GAIN) <= GAIN_INPUT_TOL
         and abs(gain * ref_max - FIELD_TARGET_MAX) <= TABLE_ABS_TOL,
         (
-            f"declared_gain={gain:.12e}; frozen_gain={FROZEN_CALIBRATED_GAIN:.12e}; "
+            f"selected_gain={gain:.12e}; frozen_gain={FROZEN_CALIBRATED_GAIN:.12e}; "
             f"base_cap={gain * ref_max:.12e}; target={FIELD_TARGET_MAX:.12e}; "
             "the cap is calibration provenance, not amplitude evidence"
         ),

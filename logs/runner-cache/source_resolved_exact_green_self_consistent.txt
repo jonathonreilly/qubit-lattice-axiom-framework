@@ -1,21 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/source_resolved_exact_green_self_consistent.py
-runner_sha256: 673cbaad5caf3ca02d1ad077c2642d3d01de6d57227589bf1b65f0ef898c6fff
+runner_sha256: d42cb99b8982fe5617f015e4b6f2ad8eca7970be05d6780dce4aa236e9309186
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 26.60
+elapsed_sec: 17.22
 status: ok
 ----- stdout -----
 ====================================================================================
 SOURCE-RESOLVED EXACT GREEN SELF-CONSISTENT
   compact exact h=0.25 refinement family, one self-consistency update
-  comparison: self-consistent field vs instantaneous 1/r field
+  comparison: one-update field vs softened s/(rho+0.1) field
 ====================================================================================
 h=0.25, W=3, L=6, source_cluster=4 nodes
-field kernel: exp(-mu r)/(r+eps), mu=0.08, eps=0.5
+field kernel: exp(-mu*(rho+eps))/(rho+eps), mu=0.08, eps=0.5
 source strengths: (0.001, 0.002, 0.004, 0.008)
 target max |f|: 0.02
-calibrated gain input: 1.757890330808e+00
+selected calibrated gain input: 1.757890330808e+00
 calibration boundary: gain is a frozen input, not an independent amplitude prediction
 
 REDUCTION CHECK
@@ -31,8 +31,8 @@ REDUCTION CHECK
   0.0080 +1.129975e-02 +1.505023e-02       1.332 1.999447e-02
 
 SAFE READ
-  instantaneous F~M exponent: 1.00
-  self-consistent Green F~M exponent: 1.00
+  instantaneous Delta z~s exponent: 1.00
+  one-update Green Delta z~s exponent: 1.00
   TOWARD rows: 4/4
   mean |green/inst| ratio: 1.330
   this is a refinement-positive pocket, not yet a self-consistent
@@ -42,8 +42,8 @@ ASSERTION SUMMARY
 ------------------------------------------------------------------------------------
 [PASS] zero-source exactness is preserved
        zero_delta=+0.000000000000e+00; tolerance=1.0e-12
-[PASS] calibrated gain is the frozen input that sets the base-field cap
-       gain=1.757890330808e+00; base_cap=2.000000000000e-02; target=2.000000000000e-02
+[PASS] selected calibrated gain matches the frozen input and base-field cap
+       selected_gain=1.757890330808e+00; frozen_gain=1.757890330808e+00; base_cap=2.000000000000e-02; target=2.000000000000e-02; the cap is calibration provenance, not amplitude evidence
 [PASS] self-consistent Green deflection has TOWARD sign in every source row
        toward=4/4; green_deltas=['+1.873799e-03', '+3.749686e-03', '+7.507807e-03', '+1.505023e-02']
 [PASS] instantaneous comparator remains linear in source strength

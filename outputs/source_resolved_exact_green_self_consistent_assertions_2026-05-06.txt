@@ -7,7 +7,7 @@ h=0.25, W=3, L=6, source_cluster=4 nodes
 field kernel: exp(-mu*(rho+eps))/(rho+eps), mu=0.08, eps=0.5
 source strengths: (0.001, 0.002, 0.004, 0.008)
 target max |f|: 0.02
-declared calibrated gain input: 1.757890330808e+00
+selected calibrated gain input: 1.757890330808e+00
 calibration boundary: gain is a frozen input, not an independent amplitude prediction
 
 REDUCTION CHECK
@@ -34,8 +34,8 @@ ASSERTION SUMMARY
 ------------------------------------------------------------------------------------
 [PASS] zero-source exactness is preserved
        zero_delta=+0.000000000000e+00; tolerance=1.0e-12
-[PASS] declared calibrated gain matches the frozen input and base-field cap
-       declared_gain=1.757890330808e+00; frozen_gain=1.757890330808e+00; base_cap=2.000000000000e-02; target=2.000000000000e-02; the cap is calibration provenance, not amplitude evidence
+[PASS] selected calibrated gain matches the frozen input and base-field cap
+       selected_gain=1.757890330808e+00; frozen_gain=1.757890330808e+00; base_cap=2.000000000000e-02; target=2.000000000000e-02; the cap is calibration provenance, not amplitude evidence
 [PASS] self-consistent Green deflection has TOWARD sign in every source row
        toward=4/4; green_deltas=['+1.873799e-03', '+3.749686e-03', '+7.507807e-03', '+1.505023e-02']
 [PASS] instantaneous comparator remains linear in source strength

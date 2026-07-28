@@ -14,14 +14,9 @@ audit_required_before_effective_retained: true
 bare_retained_allowed: false
 open_imports: []
 review_loop_disposition: "PASS WITH BOUNDED CLAIMS"
-current_pipeline_state_before_independent_reaudit: "audited_conditional"
 ```
 
 The source repair closes the sampled-completeness gap only for the stated
 finite ideal logical encoding surface. No retained or promoted verdict is
 authored here. Independent review is complete; independent audit remains
 required, and the physical teleportation lane remains outside this claim.
-The second block changes only source organization, cache binding, and report
-length. The validation pipeline re-seeded the changed row as `unaudited` and
-queued it for independent review; those generated outputs were then removed
-from this source branch.

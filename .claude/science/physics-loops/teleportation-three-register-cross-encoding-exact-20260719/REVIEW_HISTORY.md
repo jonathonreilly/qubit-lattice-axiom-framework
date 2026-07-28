@@ -33,20 +33,3 @@
 - Delivery verification: ready PR #5539 is open with base `main`, exact base
   commit `81ef8341b11de9c9f984bd75dbac5605297221fa`, and clean merge state at
   creation.
-- Second block review: all 53 original class/function definitions remain; 51
-  are AST-identical and only `print_map_summary` / `print_summary` change.
-  Independent count and matrix-unit checks reproduce 131 encodings, 890633
-  triples, the Bell branches, corrections, and Pauli twirl.
-- Source/output evidence sizes are primary `23517`, helper `39527`, live stdout
-  `5514`, and complete cache `5884` characters. Helper discovery and cache
-  input fingerprinting pass; the rendered restricted packet contains no
-  clipping marker.
-- Full validation pipeline exited zero, inferred the helper, reset the changed
-  row to `unaudited`, and placed it in the audit queue. All pipeline-generated
-  authority/status changes were removed afterward. Strict audit lint reports
-  no errors; the target's note-hash drift is the expected non-retained re-audit
-  notice.
-- Combined Code/Runner review: `PASS`, no findings. Combined physics claim,
-  proof obligation, imports, Nature retention, and labeling review:
-  `PASS WITH BOUNDED CLAIMS`, no findings. No-Go Discipline was not triggered
-  by the changed text because the repair adds no negative claim.

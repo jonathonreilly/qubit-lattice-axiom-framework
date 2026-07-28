@@ -23,13 +23,5 @@ review tightened the Bell-projector justification and physical-claim boundary,
 then returned a clean bounded-claim disposition; independent audit remains
 required.
 
-The second repair block addresses the later packet-completeness finding. The
-scientific implementation is split without mathematical drift into a primary
-runner and one cache-pinned core helper. Complete sources and complete live and
-cached output now render inside the packet limits, and the rendered manifest
-has no clipping marker. The full pipeline confirms the helper dependency and
-re-queues the changed bounded claim; generated audit outputs are not carried by
-this branch.
-
-Next exact action: land this source-only repair, then route the changed claim
-through the repository's independent audit process.
+Next exact action: land the reviewed PR, then route the changed claim through
+the repository's independent audit process.

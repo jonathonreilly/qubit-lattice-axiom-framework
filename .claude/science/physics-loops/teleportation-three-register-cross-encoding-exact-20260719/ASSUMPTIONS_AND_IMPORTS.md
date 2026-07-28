@@ -13,10 +13,7 @@ claim domain.
 | Standard two-dimensional Bell algebra | Supplies projectors, branch maps, corrections, and twirl | zero-input structural | source-note derivation plus independent logical certificate | yes | yes | operator-basis derivation and executable check | closed |
 | The 1609 sampled triple trials | Telemetry and negative controls | support-only | runner trial layer | no for theorem completeness | no | keep separate from exact certificate | kept only as bounded telemetry |
 | Binary floating-point representation of `1/sqrt(2)` | Executable roundoff source | insensitive nuisance | NumPy logical certificate | no | no | exact displayed contraction | residual `1.110e-16`, below `1e-12` |
-| Restricted-packet source/output limits | Presentation constraint only | audit tooling boundary | `scripts/codex_audit_runner.py` | no for theorem truth; yes for independent visibility | yes for this repair | split source and compact redundant report prose | primary `23517`, helper `39527`, live stdout `5514`, cache `5884` characters |
 
 Open imports: none inside the finite ideal logical claim. Physical preparation,
 measurement apparatus, durable records, Hamiltonian transport, noise, and
 matter/energy transfer are outside the claim rather than hidden imports.
-The source/output size limits constrain artifact delivery only and supply no
-physics premise.

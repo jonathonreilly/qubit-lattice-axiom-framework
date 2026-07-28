@@ -1,15 +1,18 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py
-runner_sha256: 77f25819e63a27ca8e97ba89b9510cfee935eaf5f1d4833661159e5800036cf8
+runner_sha256: 431c92592261c937e612b75f330124ab0b936d0ad04c563ccea832ff0c7afee8
+input_fingerprint_sha256: 083b113d3ed1cfb0a5371d29e82975686fc19a1b214668001a64a287363e9bdf
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ==============================================================================
-AUDIT-PREP VERIFIER — koide_q_delta_linking_relation_theorem_note_2026-04-20
+DEPENDENCY-CLASSIFICATION VERIFIER — Koide Q-delta linking relation
 ==============================================================================
   [PASS] [A] Parent note exists  (KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md, 10613 bytes)
+  [PASS] [A] At least one dependency remains classified  (count = 1)
+  [PASS] [A] Runner dependency lists are unique and disjoint  (entries = 1, unique = 1)
 
 PART 1 — CITED deps (expect: >=1 hit each):
 
@@ -18,13 +21,15 @@ PART 2 — NOT-CITED deps (expect: 0 hits each):
 
 PART 3 — findings note agrees with the measured classification:
   [PASS] [A] Findings note exists  (KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md)
-  [PASS] [A]   NOT-CITED row matches this runner's NOT_CITED_DEPS  (note = 1, runner = 1)
-  [PASS] [A]   CITED rows match this runner's CITED_DEPS  (note = 0, runner = 0)
+  [PASS] [A]   classification sections are readable
+  [PASS] [A]   counts table is readable
+  [PASS] [A]   NOT-CITED identities and row count match NOT_CITED_DEPS  (note = ['scalar_selector_remaining_open_imports_2026-04-20'], runner = ['scalar_selector_remaining_open_imports_2026-04-20'], row = 1)
+  [PASS] [A]   CITED identities and row counts match CITED_DEPS  (note = [], runner = [], rows = 0)
   [PASS] [A]   total row matches the classified dep count  (note = 1, runner = 1)
 
 ==============================================================================
-SUMMARY: 6 PASS / 0 FAIL
-Class-A pattern hits: 6
+SUMMARY: 10 PASS / 0 FAIL
+Class-A pattern hits: 10
 ==============================================================================
 
 VERIFIED

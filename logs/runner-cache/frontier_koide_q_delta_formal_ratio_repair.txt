@@ -3,7 +3,7 @@ runner: scripts/frontier_koide_q_delta_formal_ratio_repair.py
 runner_sha256: c49966f809d3a17a18221f39e8a5222147e105db3355e262c7246279c6ef061d
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 1.43
+elapsed_sec: 0.82
 status: ok
 ----- stdout -----
 Koide Q-delta formal ratio repair
@@ -98,8 +98,8 @@ Direct citation firewall
   [PASS] docs/publication/ci3_z3/DERIVATION_ATLAS.md:387 citation avoids forbidden authority language
   [PASS] scripts/frontier_koide_q_delta_linking_relation.py:5 citation is explicitly formal/open/contextual
   [PASS] scripts/frontier_koide_q_delta_linking_relation.py:5 citation avoids forbidden authority language
-  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:30 citation is explicitly formal/open/contextual
-  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:30 citation avoids forbidden authority language
+  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:26 citation is explicitly formal/open/contextual
+  [PASS] scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py:26 citation avoids forbidden authority language
   [PASS] at least one direct citation was scanned (citations=32)
 
 ========================================================================================

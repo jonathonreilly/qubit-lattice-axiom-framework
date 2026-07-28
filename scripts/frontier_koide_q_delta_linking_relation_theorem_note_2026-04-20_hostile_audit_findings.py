@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Audit-prep verifier for koide_q_delta_linking_relation_theorem_note_2026-04-20.
+"""Dependency-classification verifier for the Koide Q-delta linking-relation note.
 
 Re-measures the co-cycle dep classification published in the findings note
 docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md.
@@ -20,21 +20,24 @@ import re
 import sys
 from pathlib import Path
 
+# The parent input is a context only grep target; this runner consumes none of
+# its scientific claims. The second input is the metadata note being checked.
+AUDIT_INPUT_PATHS = (
+    "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md",
+    "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md",
+)
+
 PASS_COUNT = 0
 FAIL_COUNT = 0
 CLASS_A_HITS = 0
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-# The parent is cited here as a grep target only: this runner measures which dep names
-# appear in its text and consumes none of its claims. Context only, not load-bearing.
-PARENT_PATH = REPO_ROOT / "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md"
-FINDINGS_PATH = (
-    REPO_ROOT
-    / "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md"
-)
+# The first declared input is a grep target only: this runner measures which dep
+# names appear in it and consumes none of its claims. Context only, not load-bearing.
+PARENT_PATH = REPO_ROOT / AUDIT_INPUT_PATHS[0]
+FINDINGS_PATH = REPO_ROOT / AUDIT_INPUT_PATHS[1]
 
-CITED_DEPS = [
-]
+CITED_DEPS: list[str] = []
 
 # Reclassified from CITED on 2026-07-26. The parent's "Audit dependency repair links"
 # section — where this dep was carried as a backticked see-also, itself a citation-graph
@@ -67,19 +70,44 @@ def grep_count(content: str, needle: str) -> int:
     return len(re.findall(re.escape(needle), content, re.IGNORECASE))
 
 
-def table_count(findings: str, label: str) -> int | None:
-    """Read one row of the findings note's section-2 counts table."""
+def numbered_section(findings: str, number: int) -> str | None:
+    """Return one numbered H2 section body without consuming the next H2."""
     m = re.search(
-        rf"^\|\s*\**{re.escape(label)}\**\s*\|\s*\**(\d+)\**\s*\|",
+        rf"^##\s+{number}\.[^\n]*\n(?P<body>.*?)(?=^##\s+\d+\.|\Z)",
         findings,
+        re.MULTILINE | re.DOTALL,
+    )
+    return m.group("body") if m else None
+
+
+def table_count(counts_section: str, label: str) -> int | None:
+    """Read one row of the section-2 counts table."""
+    values = re.findall(
+        rf"^\|\s*\**{re.escape(label)}\**\s*\|\s*\**(\d+)\**\s*\|",
+        counts_section,
         re.MULTILINE | re.IGNORECASE,
     )
-    return int(m.group(1)) if m else None
+    return int(values[0]) if len(values) == 1 else None
+
+
+def listed_deps(section: str) -> list[str]:
+    """Read dependency identities from bullets or the first column of a table."""
+    deps: list[str] = []
+    patterns = (
+        re.compile(r"^\s*-\s+`([^`]+)`(?:\s|$)"),
+        re.compile(r"^\s*\|\s*`([^`]+)`\s*\|"),
+    )
+    for line in section.splitlines():
+        for pattern in patterns:
+            if m := pattern.match(line):
+                deps.append(m.group(1))
+                break
+    return deps
 
 
 def main() -> int:
     print("=" * 78)
-    print("AUDIT-PREP VERIFIER — koide_q_delta_linking_relation_theorem_note_2026-04-20")
+    print("DEPENDENCY-CLASSIFICATION VERIFIER — Koide Q-delta linking relation")
     print("=" * 78)
 
     if not PARENT_PATH.exists():
@@ -88,6 +116,17 @@ def main() -> int:
 
     content = PARENT_PATH.read_text(encoding="utf-8")
     check("Parent note exists", True, f"{PARENT_PATH.name}, {len(content)} bytes")
+    classified_deps = [*CITED_DEPS, *NOT_CITED_DEPS]
+    check(
+        "At least one dependency remains classified",
+        bool(classified_deps),
+        f"count = {len(classified_deps)}",
+    )
+    check(
+        "Runner dependency lists are unique and disjoint",
+        len(classified_deps) == len(set(classified_deps)),
+        f"entries = {len(classified_deps)}, unique = {len(set(classified_deps))}",
+    )
     print()
 
     print(f"PART 1 — CITED deps (expect: >=1 hit each):")
@@ -116,32 +155,48 @@ def main() -> int:
     else:
         findings = FINDINGS_PATH.read_text(encoding="utf-8")
         check("Findings note exists", True, FINDINGS_PATH.name)
-        cited_rows = [
-            "CITED-INFORMATIONAL",
-            "CITED-LOAD-BEARING",
-            "CITED-JUDGMENT-NEEDED",
-        ]
-        counts = {lbl: table_count(findings, lbl) for lbl in ["NOT-CITED", *cited_rows, "total"]}
-        missing = [lbl for lbl, n in counts.items() if n is None]
-        if missing:
-            check("  counts table is readable", False, f"unparsed rows: {missing}")
+        sections = {number: numbered_section(findings, number) for number in (2, 3, 4)}
+        missing_sections = [number for number, body in sections.items() if body is None]
+        if missing_sections:
+            check(
+                "  classification sections are readable",
+                False,
+                f"missing sections: {missing_sections}",
+            )
         else:
-            cited_total = sum(counts[lbl] for lbl in cited_rows)
-            check(
-                "  NOT-CITED row matches this runner's NOT_CITED_DEPS",
-                counts["NOT-CITED"] == len(NOT_CITED_DEPS),
-                f"note = {counts['NOT-CITED']}, runner = {len(NOT_CITED_DEPS)}",
-            )
-            check(
-                "  CITED rows match this runner's CITED_DEPS",
-                cited_total == len(CITED_DEPS),
-                f"note = {cited_total}, runner = {len(CITED_DEPS)}",
-            )
-            check(
-                "  total row matches the classified dep count",
-                counts["total"] == len(CITED_DEPS) + len(NOT_CITED_DEPS),
-                f"note = {counts['total']}, runner = {len(CITED_DEPS) + len(NOT_CITED_DEPS)}",
-            )
+            check("  classification sections are readable", True)
+            cited_rows = [
+                "CITED-INFORMATIONAL",
+                "CITED-LOAD-BEARING",
+                "CITED-JUDGMENT-NEEDED",
+            ]
+            labels = ["NOT-CITED", *cited_rows, "total"]
+            counts = {label: table_count(sections[2], label) for label in labels}
+            missing = [label for label, count in counts.items() if count is None]
+            if missing:
+                check("  counts table is readable", False, f"unparsed rows: {missing}")
+            else:
+                check("  counts table is readable", True)
+                note_not_cited = listed_deps(sections[4])
+                note_cited = listed_deps(sections[3])
+                cited_total = sum(counts[label] for label in cited_rows)
+                check(
+                    "  NOT-CITED identities and row count match NOT_CITED_DEPS",
+                    note_not_cited == NOT_CITED_DEPS
+                    and counts["NOT-CITED"] == len(NOT_CITED_DEPS),
+                    f"note = {note_not_cited}, runner = {NOT_CITED_DEPS}, "
+                    f"row = {counts['NOT-CITED']}",
+                )
+                check(
+                    "  CITED identities and row counts match CITED_DEPS",
+                    note_cited == CITED_DEPS and cited_total == len(CITED_DEPS),
+                    f"note = {note_cited}, runner = {CITED_DEPS}, rows = {cited_total}",
+                )
+                check(
+                    "  total row matches the classified dep count",
+                    counts["total"] == len(classified_deps),
+                    f"note = {counts['total']}, runner = {len(classified_deps)}",
+                )
 
     print()
     print("=" * 78)

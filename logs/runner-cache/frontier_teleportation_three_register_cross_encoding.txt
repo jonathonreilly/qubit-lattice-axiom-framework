@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_three_register_cross_encoding.py
 runner_sha256: cfa417f66f80961e520bf3356ff6b1a1ea26b910d54679ffb03435cb40f83eb2
-input_fingerprint_sha256: 7e922397d2c7bc227d888ceee23d28e89ed994bfc95ac52f3a8faad9993ec64b
+input_fingerprint_sha256: 85b54b135592223a5bf42b2a3c73a12fd00c59121fe465a9a5eb4f9c5cd239ac
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 3.91
+elapsed_sec: 3.06
 status: ok
 ----- stdout -----
 THREE-REGISTER CROSS-ENCODING TASTE-QUBIT TELEPORTATION CERTIFICATE

@@ -1049,5 +1049,3 @@ def classify_bob_fixed_failure(b_encoding: Encoding) -> str:
     if b_encoding.fixed_x_leakage > 0.0:
         return "bob_fixed_pairhop_x_leaks_out_of_encoding"
     return "bob_fixed_pairhop_x_not_usable"
-
-

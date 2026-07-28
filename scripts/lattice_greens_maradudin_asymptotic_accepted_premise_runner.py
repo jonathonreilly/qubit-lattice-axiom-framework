@@ -37,6 +37,13 @@ CLAIM_ID = (
 RUNNER_REL = (
     "scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py"
 )
+AUDIT_INPUT_PATHS = (
+    "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md",
+    "docs/LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md",
+    "docs/MINIMAL_AXIOMS_2026-06-05.md",
+    "logs/runner-cache/lattice_greens_z3_asymptotic_normalization_certificate.txt",
+    "scripts/lattice_greens_z3_asymptotic_normalization_certificate.py",
+)
 NOTE_PATH = (
     ROOT
     / "docs/LATTICE_GREENS_MARADUDIN_ASYMPTOTIC_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-27.md"

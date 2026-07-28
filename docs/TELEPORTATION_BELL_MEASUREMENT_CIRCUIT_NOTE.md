@@ -211,10 +211,10 @@ one-hop suppliers:
 
 The paired runner reads the canonical sharded audit rows for those suppliers
 and checks their retained status before accepting the decomposition. It also
-checks the audited
-[teleportation conclusion boundary](TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md),
-which keeps the lane limited to ordinary quantum state teleportation and holds
-nature-grade physical implementation open. Thus the dependency chain closes
-for the stated ideal logical claim only; encoded-resource preparation,
-physical gates or parity meters, detector dynamics, and durable record
-formation remain explicitly outside this note's claim scope.
+checks the non-load-bearing planning context in
+`TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md`, whose audited boundary keeps the
+lane limited to ordinary quantum state teleportation and holds nature-grade
+physical implementation open. Thus the dependency chain closes for the stated
+ideal logical claim only; encoded-resource preparation, physical gates or
+parity meters, detector dynamics, and durable record formation remain
+explicitly outside this note's claim scope.

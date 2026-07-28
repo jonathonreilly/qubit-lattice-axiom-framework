@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_bell_measurement_circuit.py
 runner_sha256: 63deecbe1fb947f593e7e7808ae45010991d70b8a54815baffd528abed0029ac
-input_fingerprint_sha256: 06e3e079090dd64fbfa42c6fcf6ab88b1b58054ff7eb65e29487c9400fa6c838
+input_fingerprint_sha256: 7fe85500ab7f483438c08e0f7d0597f4943747054c1d42232c602fb166ab1814
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.14
+elapsed_sec: 0.09
 status: ok
 ----- stdout -----
 TELEPORTATION BELL-MEASUREMENT CIRCUIT/DECOMPOSITION
@@ -77,7 +77,7 @@ Downstream boundary checks:
   Bell-measurement dependency boundary: conclusion boundary has audited scope support: PASS (teleportation_conclusion_boundary_note: effective=audited_renaming, audit=audited_renaming)
   Bell-measurement dependency boundary: source cites retained-axis Bell-resource/gate/parity/readout supplier: PASS (TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md)
   Bell-measurement dependency boundary: source cites retained classical record-handling supplier: PASS (TELEPORTATION_CAUSAL_CHANNEL_NOTE.md)
-  Bell-measurement dependency boundary: source cites audited conclusion boundary: PASS (TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md)
+  Bell-measurement dependency boundary: source names non-load-bearing conclusion boundary context: PASS (TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md)
   Bell-measurement dependency boundary: lane remains state-teleportation only with no-transfer boundary: PASS (checked conclusion boundary note)
   Bell-measurement dependency boundary: finite planning support is not nature-grade closure: PASS (planning closure and nature-grade hold are distinct)
 

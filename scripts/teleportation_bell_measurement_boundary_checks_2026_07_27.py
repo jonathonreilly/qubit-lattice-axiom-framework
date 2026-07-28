@@ -38,11 +38,9 @@ DEPENDENCY_LINKS: tuple[tuple[str, str], ...] = (
         "retained classical record-handling supplier",
         "TELEPORTATION_CAUSAL_CHANNEL_NOTE.md",
     ),
-    (
-        "audited conclusion boundary",
-        "TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md",
-    ),
 )
+
+CONCLUSION_BOUNDARY_CONTEXT = "TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md"
 
 
 def _rows(root: Path, row_ids: set[str]) -> dict[str, dict[str, object]]:
@@ -107,6 +105,13 @@ def bell_measurement_boundary_check_results(
                 target,
             )
         )
+    out.append(
+        (
+            f"{prefix}: source names non-load-bearing conclusion boundary context",
+            f"`{CONCLUSION_BOUNDARY_CONTEXT}`" in source,
+            CONCLUSION_BOUNDARY_CONTEXT,
+        )
+    )
 
     conclusion = _compact(
         (root / "docs" / "TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md").read_text(

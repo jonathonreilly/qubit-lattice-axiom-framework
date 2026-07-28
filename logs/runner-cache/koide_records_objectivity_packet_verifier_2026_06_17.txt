@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/koide_records_objectivity_packet_verifier_2026_06_17.py
-runner_sha256: e815df75dbfe194fb9fa66d25f1fd6aa66eab4cb65a86122aa0082fa348c8056
+runner_sha256: 97aad0bad600a3f662e5b560c992d11ba899b0f342e68ab8f4cdf74924f176ef
+input_fingerprint_sha256: e5ffdf94526e16f2406788c31f156f2c49e693af0344b2ac60709a719c375e81
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 Koide records/objectivity restricted packet verifier
@@ -44,7 +45,7 @@ PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31
 PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt records runner path -- runner=scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py
 PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt exits zero -- exit_code=0
 PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt status ok -- status=ok
-PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt sha matches source -- cache=e11ed7daaeec049add53092b512500a30bd019168031fdf944546779bacecaac, live=e11ed7daaeec049add53092b512500a30bd019168031fdf944546779bacecaac
+PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt sha matches source -- cache=a6203ccc497c1d390cd175d70d027d693183c88833514d2c5a0bdc05fa81f7b8, live=a6203ccc497c1d390cd175d70d027d693183c88833514d2c5a0bdc05fa81f7b8
 PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt contains '17/17 checks passed'
 PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt contains 'THE HONEST RESULT: Q=2/3 is a CONDITIONAL, not a forced theorem.'
 PASS logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt contains 'Both hypotheses (i)+(ii) remain explicit inputs'
@@ -71,8 +72,8 @@ PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt exi
 PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt records runner path -- runner=scripts/frontier_koide_frobenius_isotype_split_uniqueness.py
 PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt exits zero -- exit_code=0
 PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt status ok -- status=ok
-PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt sha matches source -- cache=193c9bbb4999181cc7b4e5a43f24142e1a2266f773765cac498b8bb2f1880d02, live=193c9bbb4999181cc7b4e5a43f24142e1a2266f773765cac498b8bb2f1880d02
-PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt contains 'PASS=24 FAIL=0'
+PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt sha matches source -- cache=e9dc3b7793894491e90e638f9aa795a33d181cdca4b6538aa41689fe3c2a1a08, live=e9dc3b7793894491e90e638f9aa795a33d181cdca4b6538aa41689fe3c2a1a08
+PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt contains 'PASS=31 FAIL=0'
 PASS logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt contains 'do not force the Frobenius normalization'
 PASS scripts/frontier_pre_record_reference_state_tracial_derivation.py exists
 PASS logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt exists

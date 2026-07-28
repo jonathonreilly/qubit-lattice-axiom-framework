@@ -18,6 +18,25 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+AUDIT_INPUT_PATHS = (
+    "docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md",
+    "docs/KOIDE_Q23_BLOCK_WEIGHT_FRONTIER_BOUNDED_NOTE_2026-05-29.md",
+    "docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md",
+    "docs/KOIDE_READOUT_LANE_DEMARCATION_NOTE_2026-05-30.md",
+    "docs/PRE_RECORD_REFERENCE_STATE_TRACIAL_DERIVATION_NOTE_2026-05-20.md",
+    "scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py",
+    "scripts/koide_q23_block_weight_frontier_2026_05_29.py",
+    "scripts/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.py",
+    "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py",
+    "scripts/frontier_pre_record_reference_state_tracial_derivation.py",
+    "scripts/frontier_koide_circulant_q_two_thirds_algebraic_narrow.py",
+    "logs/runner-cache/frontier_koide_records_objectivity_conditional_2026_05_31.txt",
+    "logs/runner-cache/koide_q23_block_weight_frontier_2026_05_29.txt",
+    "logs/runner-cache/frontier_koide_kappa_block_total_frobenius_algebraic_narrow.txt",
+    "logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt",
+    "logs/runner-cache/frontier_pre_record_reference_state_tracial_derivation.txt",
+    "logs/runner-cache/frontier_koide_circulant_q_two_thirds_algebraic_narrow.txt",
+)
 PASS = 0
 FAIL = 0
 
@@ -192,7 +211,7 @@ def main() -> int:
             "selection-principle authority",
         ],
         FROBENIUS_RUNNER: [
-            "PASS=24 FAIL=0",
+            "PASS=31 FAIL=0",
             "do not force the Frobenius normalization",
         ],
         PRE_RECORD_RUNNER: [

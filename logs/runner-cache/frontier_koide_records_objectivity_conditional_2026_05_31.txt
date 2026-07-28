@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py
-runner_sha256: e11ed7daaeec049add53092b512500a30bd019168031fdf944546779bacecaac
+runner_sha256: a6203ccc497c1d390cd175d70d027d693183c88833514d2c5a0bdc05fa81f7b8
+input_fingerprint_sha256: 3f48dc535c0f744fa8b8d6a3067d9848a958c5b6c0a2a8781be5c1c5b4b9bcb5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.77
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
 

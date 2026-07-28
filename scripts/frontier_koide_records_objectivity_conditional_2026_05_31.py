@@ -58,6 +58,9 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parent.parent
 NOTE_PATH = ROOT / "docs" / "KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md"
+AUDIT_INPUT_PATHS = (
+    "docs/KOIDE_RECORDS_OBJECTIVITY_CONDITIONAL_NOTE_2026-05-31.md",
+)
 
 PASSES: list[tuple[str, bool, str]] = []
 

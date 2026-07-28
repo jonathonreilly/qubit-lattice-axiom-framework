@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/flavor_lane_panel_reduces_to_doublet_mode_count_2026_05_31.py
-runner_sha256: 5df375745569dbbb94ad71eef0b3f34dd9ffad3e6501729b2b0852242f56adc3
+runner_sha256: 959dc13bb1de0979e641990294c53bda188a71ee50311476a7c0e2a03c052d3b
+input_fingerprint_sha256: a70fa0c309d4399bb3307b60b7efc243c0ab1cc0a1674a7bd72999d37f6ea53a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.82
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 [PASS] DEP1 target note links Frobenius isotype no-go note
@@ -14,12 +15,12 @@ status: ok
        restricted packet can locate both source runners
 [PASS] DEP4 target note links both dependency caches
        restricted packet can locate both cached outputs
-[PASS] DEP5 Frobenius dependency is current retained_no_go in ledger
-       status=audited_clean/retained_no_go
-[PASS] DEP6 action-normalization dependency is current retained_no_go in ledger
-       status=audited_clean/retained_no_go
+[PASS] DEP5 Frobenius dependency is typed no_go in the current ledger
+       type=no_go; status=unaudited/unaudited (grade remains audit-owned)
+[PASS] DEP6 action-normalization dependency is typed no_go in the current ledger
+       type=no_go; status=unaudited/unaudited (grade remains audit-owned)
 [PASS] DEP7 Frobenius source/cached certificate is present
-       Frobenius runner cache carries PASS=24 FAIL=0
+       Frobenius runner cache carries PASS=31 FAIL=0
 [PASS] DEP8 action-normalization source/cached certificate is present
        action-normalization cache is present and records the narrowed no-go
 [PASS] DEP9 dependency runner modules expose their checked primitives

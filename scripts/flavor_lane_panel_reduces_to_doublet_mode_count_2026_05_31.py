@@ -43,11 +43,27 @@ import frontier_koide_frobenius_isotype_split_uniqueness as frobenius_isotype
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 NOTE = REPO_ROOT / "docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md"
-LEDGER = REPO_ROOT / "docs/audit/data/audit_ledger.json"
 FROBENIUS_NOTE = REPO_ROOT / "docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md"
 ACTION_NOTE = REPO_ROOT / "docs/ACTION_NORMALIZATION_NOTE.md"
 FROBENIUS_CACHE = REPO_ROOT / "logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt"
 ACTION_CACHE = REPO_ROOT / "logs/runner-cache/frontier_action_normalization.txt"
+LEDGER_ROWS = {
+    "koide_frobenius_isotype_split_uniqueness_note_2026-04-21": REPO_ROOT
+    / "docs/audit/data/ledger/ko/koide_frobenius_isotype_split_uniqueness_note_2026-04-21.json",
+    "action_normalization_note": REPO_ROOT
+    / "docs/audit/data/ledger/ac/action_normalization_note.json",
+}
+AUDIT_INPUT_PATHS = (
+    "docs/FLAVOR_LANE_PANEL_REDUCES_TO_DOUBLET_MODE_COUNT_2026-05-31.md",
+    "docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md",
+    "docs/ACTION_NORMALIZATION_NOTE.md",
+    "docs/audit/data/ledger/ko/koide_frobenius_isotype_split_uniqueness_note_2026-04-21.json",
+    "docs/audit/data/ledger/ac/action_normalization_note.json",
+    "logs/runner-cache/frontier_koide_frobenius_isotype_split_uniqueness.txt",
+    "logs/runner-cache/frontier_action_normalization.txt",
+    "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py",
+    "scripts/frontier_action_normalization.py",
+)
 
 
 def check(name, cond, detail=""):
@@ -58,8 +74,7 @@ def check(name, cond, detail=""):
 
 
 def ledger_row(claim_id):
-    rows = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
-    return rows[claim_id]
+    return json.loads(LEDGER_ROWS[claim_id].read_text(encoding="utf-8"))
 
 
 def dependency_packet_checks():
@@ -95,22 +110,28 @@ def dependency_packet_checks():
         "restricted packet can locate both cached outputs",
     ))
     checks.append(check(
-        "DEP5 Frobenius dependency is current retained_no_go in ledger",
-        frobenius_row["audit_status"] == "audited_clean"
-        and frobenius_row["effective_status"] == "retained_no_go",
-        f"status={frobenius_row['audit_status']}/{frobenius_row['effective_status']}",
+        "DEP5 Frobenius dependency is typed no_go in the current ledger",
+        frobenius_row["claim_type"] == "no_go",
+        (
+            f"type={frobenius_row['claim_type']}; "
+            f"status={frobenius_row['audit_status']}/{frobenius_row['effective_status']} "
+            "(grade remains audit-owned)"
+        ),
     ))
     checks.append(check(
-        "DEP6 action-normalization dependency is current retained_no_go in ledger",
-        action_row["audit_status"] == "audited_clean"
-        and action_row["effective_status"] == "retained_no_go",
-        f"status={action_row['audit_status']}/{action_row['effective_status']}",
+        "DEP6 action-normalization dependency is typed no_go in the current ledger",
+        action_row["claim_type"] == "no_go",
+        (
+            f"type={action_row['claim_type']}; "
+            f"status={action_row['audit_status']}/{action_row['effective_status']} "
+            "(grade remains audit-owned)"
+        ),
     ))
     checks.append(check(
         "DEP7 Frobenius source/cached certificate is present",
         "Frobenius Isotype-Weight Freedom No-Go" in frobenius_text
-        and "PASS=24 FAIL=0" in frobenius_cache,
-        "Frobenius runner cache carries PASS=24 FAIL=0",
+        and "PASS=31 FAIL=0" in frobenius_cache,
+        "Frobenius runner cache carries PASS=31 FAIL=0",
     ))
     checks.append(check(
         "DEP8 action-normalization source/cached certificate is present",

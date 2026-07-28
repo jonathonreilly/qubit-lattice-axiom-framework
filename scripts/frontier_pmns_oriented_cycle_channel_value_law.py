@@ -27,6 +27,9 @@ ROOT = Path(__file__).resolve().parents[1]
 CLAIM_ID = "pmns_oriented_cycle_channel_value_law_note"
 RUNNER_PATH = "scripts/frontier_pmns_oriented_cycle_channel_value_law.py"
 NOTE_PATH = ROOT / "docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md"
+AUDIT_INPUT_PATHS = (
+    "docs/PMNS_ORIENTED_CYCLE_CHANNEL_VALUE_LAW_NOTE.md",
+)
 
 PASS_COUNT = 0
 FAIL_COUNT = 0

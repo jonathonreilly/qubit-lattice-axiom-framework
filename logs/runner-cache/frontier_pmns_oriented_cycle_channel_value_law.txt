@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_pmns_oriented_cycle_channel_value_law.py
-runner_sha256: 1f20a838a2ca3f6afb6bc93c5e308f64514d1c0a099b22b62ef190b32d829f15
-timeout_sec: 300
+runner_sha256: 5a4c932c7b4112d20f04f1bfc66d9e703291c50ad885bba7bfd5dce4104e5765
+input_fingerprint_sha256: 54078af8e7ddcb2960c53a689a1a0c3c328f953131130229d358349fe55bb4bb
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.20
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 == ORIENTED-CYCLE COORDINATE-EXTRACTION LEMMA

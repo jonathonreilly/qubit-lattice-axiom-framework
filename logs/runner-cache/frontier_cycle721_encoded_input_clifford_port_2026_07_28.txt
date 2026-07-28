@@ -1,0 +1,888 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle721_encoded_input_clifford_port_2026_07_28.py
+runner_sha256: 980c74c1b623c13061f554c29f5569c5cccbc67072cf84e33f4a3432e4204cde
+input_fingerprint_sha256: 9e0460c9d12952ba3b848a57c30a24516b0eaefaaa6bdda6de5194752e43ed0c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 21.40
+status: ok
+----- stdout -----
+PASS dense exact Clifford tableau self-test has zero mismatches
+PASS union-safe and bare constructors agree on cells edges and qubits for 2x2x2
+PASS (1, 1, 1) Part 1 dictionary and exchange images are exact
+PASS (1, 1, 1) Part 1 parity and bounded gate census pass
+PASS (1, 1, 1) Part 2 seam images noninvolved rows parity and routing are exact
+PASS (1, 1, 1) Part 2 named support gate passes
+PASS (2, 2, 2) Part 1 dictionary and exchange images are exact
+PASS (2, 2, 2) Part 1 parity and bounded gate census pass
+PASS (2, 2, 2) Part 2 seam images noninvolved rows parity and routing are exact
+PASS (2, 2, 2) Part 2 named support gate passes
+PASS (3, 2, 2) Part 1 dictionary and exchange images are exact
+PASS (3, 2, 2) Part 1 parity and bounded gate census pass
+PASS (3, 2, 2) Part 2 seam images noninvolved rows parity and routing are exact
+PASS (3, 2, 2) Part 2 named support gate passes
+PASS (5, 3, 2) optional Part 1 and census pass
+PASS mixed-gauge factorization anchors regress with exact coordinates
+PASS 24 frames x 8 translation parities have exact dictionary-family and seam-class covariance
+PASS deleting one CNOT produces a nonzero conjugation mismatch
+PASS flipping the middle CNOT of one SWAP block produces a nonzero mismatch
+PASS appending one stray primitive to the seam word is detected
+PASS an unlawful odd input is detected by joint parity
+PASS a wrong-port word leaves the declared port rows unmapped
+{
+  "audit": "unset",
+  "authority": "none",
+  "boxes": {
+    "1x1x1": {
+      "part1": {
+        "cells": 1,
+        "census": {
+          "diameter": 0,
+          "primitive_count": 18,
+          "route_transitions": 0,
+          "support_cells": 1
+        },
+        "forward_11_even_CAR_failures": 0,
+        "forward_port_onsite_dictionary_exchange_failures": 0,
+        "gate_pass": true,
+        "generation": {
+          "declared_11_generator_missing_failures": 0,
+          "declared_11_generator_multiplicity_failures": 0,
+          "onsite_physical_target_identity_failures": 0
+        },
+        "incident_seam_exchange_failures": 0,
+        "nonincident_seam_invariance_failures": 0,
+        "other_cell_onsite_invariance_failures": 0,
+        "parity": {
+          "cell_parity_image_failures": false,
+          "odd_bank_detection_failures": 0,
+          "odd_matter_image_detection_failures": 0,
+          "total_joint_parity_invariance_failures": false
+        },
+        "port_cell": [
+          0,
+          0,
+          0
+        ],
+        "port_cell_index": 0,
+        "port_onsite_dictionary_exchange_failures": 0,
+        "port_onsite_dictionary_rows": 36,
+        "reverse_11_even_CAR_failures": 0,
+        "shape": [
+          1,
+          1,
+          1
+        ]
+      },
+      "part2": {
+        "all_four_seam_images_exact": true,
+        "all_noninvolved_dictionary_rows_invariant": true,
+        "all_parity_bookkeeping_exact": true,
+        "all_routes_returned": true,
+        "axes": {},
+        "gate_pass": true,
+        "port_cell_index": 0,
+        "tested_axes": 0
+      },
+      "shape": [
+        1,
+        1,
+        1
+      ]
+    },
+    "2x2x2": {
+      "part1": {
+        "cells": 8,
+        "census": {
+          "diameter": 0,
+          "primitive_count": 18,
+          "route_transitions": 0,
+          "support_cells": 1
+        },
+        "forward_11_even_CAR_failures": 0,
+        "forward_port_onsite_dictionary_exchange_failures": 0,
+        "gate_pass": true,
+        "generation": {
+          "declared_11_generator_missing_failures": 0,
+          "declared_11_generator_multiplicity_failures": 0,
+          "onsite_physical_target_identity_failures": 0
+        },
+        "incident_seam_exchange_failures": 0,
+        "nonincident_seam_invariance_failures": 0,
+        "other_cell_onsite_invariance_failures": 0,
+        "parity": {
+          "cell_parity_image_failures": false,
+          "odd_bank_detection_failures": 0,
+          "odd_matter_image_detection_failures": 0,
+          "total_joint_parity_invariance_failures": false
+        },
+        "port_cell": [
+          0,
+          0,
+          0
+        ],
+        "port_cell_index": 0,
+        "port_onsite_dictionary_exchange_failures": 0,
+        "port_onsite_dictionary_rows": 36,
+        "reverse_11_even_CAR_failures": 0,
+        "shape": [
+          2,
+          2,
+          2
+        ]
+      },
+      "part2": {
+        "all_four_seam_images_exact": true,
+        "all_noninvolved_dictionary_rows_invariant": true,
+        "all_parity_bookkeeping_exact": true,
+        "all_routes_returned": true,
+        "axes": {
+          "0": {
+            "axis": 0,
+            "census": {
+              "diameter": 0,
+              "primitive_count": 18,
+              "route_transitions": 0,
+              "support_cells": 1
+            },
+            "edge": 0,
+            "explicit_bank_Majorana_source_construction_failures": 0,
+            "four_seam_image_failures": 0,
+            "gate_pass": true,
+            "noninvolved_dictionary_invariance_failures": 0,
+            "noninvolved_dictionary_rows": 290,
+            "other_endpoint_cell_index": 4,
+            "parity": {
+              "cell_parity_image_failures": false,
+              "odd_bank_detection_failures": 0,
+              "odd_matter_image_detection_failures": 0,
+              "total_joint_parity_invariance_failures": false
+            },
+            "routing": {
+              "forward_failures": 0,
+              "inverse_failures": 0,
+              "needed_noncolocated_primitive": false,
+              "returned_route": []
+            },
+            "synthesis": {
+              "augmented_signed_pairs": 5,
+              "final_pair_failures": 0,
+              "method": "greedy elementary symplectic CNOT transvections with parity completion",
+              "score_trace": [
+                {
+                  "mode": 1,
+                  "remaining_score": 14
+                },
+                {
+                  "mode": 0,
+                  "remaining_score": 8
+                },
+                {
+                  "mode": 2,
+                  "remaining_score": 6
+                },
+                {
+                  "mode": 3,
+                  "remaining_score": 4
+                },
+                {
+                  "mode": 4,
+                  "remaining_score": 2
+                },
+                {
+                  "mode": 5,
+                  "remaining_score": 0
+                }
+              ]
+            }
+          },
+          "1": {
+            "axis": 1,
+            "census": {
+              "diameter": 0,
+              "primitive_count": 18,
+              "route_transitions": 0,
+              "support_cells": 1
+            },
+            "edge": 1,
+            "explicit_bank_Majorana_source_construction_failures": 0,
+            "four_seam_image_failures": 0,
+            "gate_pass": true,
+            "noninvolved_dictionary_invariance_failures": 0,
+            "noninvolved_dictionary_rows": 290,
+            "other_endpoint_cell_index": 2,
+            "parity": {
+              "cell_parity_image_failures": false,
+              "odd_bank_detection_failures": 0,
+              "odd_matter_image_detection_failures": 0,
+              "total_joint_parity_invariance_failures": false
+            },
+            "routing": {
+              "forward_failures": 0,
+              "inverse_failures": 0,
+              "needed_noncolocated_primitive": false,
+              "returned_route": []
+            },
+            "synthesis": {
+              "augmented_signed_pairs": 5,
+              "final_pair_failures": 0,
+              "method": "greedy elementary symplectic CNOT transvections with parity completion",
+              "score_trace": [
+                {
+                  "mode": 3,
+                  "remaining_score": 22
+                },
+                {
+                  "mode": 0,
+                  "remaining_score": 16
+                },
+                {
+                  "mode": 1,
+                  "remaining_score": 10
+                },
+                {
+                  "mode": 2,
+                  "remaining_score": 4
+                },
+                {
+                  "mode": 4,
+                  "remaining_score": 2
+                },
+                {
+                  "mode": 5,
+                  "remaining_score": 0
+                }
+              ]
+            }
+          },
+          "2": {
+            "axis": 2,
+            "census": {
+              "diameter": 0,
+              "primitive_count": 18,
+              "route_transitions": 0,
+              "support_cells": 1
+            },
+            "edge": 2,
+            "explicit_bank_Majorana_source_construction_failures": 0,
+            "four_seam_image_failures": 0,
+            "gate_pass": true,
+            "noninvolved_dictionary_invariance_failures": 0,
+            "noninvolved_dictionary_rows": 290,
+            "other_endpoint_cell_index": 1,
+            "parity": {
+              "cell_parity_image_failures": false,
+              "odd_bank_detection_failures": 0,
+              "odd_matter_image_detection_failures": 0,
+              "total_joint_parity_invariance_failures": false
+            },
+            "routing": {
+              "forward_failures": 0,
+              "inverse_failures": 0,
+              "needed_noncolocated_primitive": false,
+              "returned_route": []
+            },
+            "synthesis": {
+              "augmented_signed_pairs": 5,
+              "final_pair_failures": 0,
+              "method": "greedy elementary symplectic CNOT transvections with parity completion",
+              "score_trace": [
+                {
+                  "mode": 5,
+                  "remaining_score": 30
+                },
+                {
+                  "mode": 0,
+                  "remaining_score": 24
+                },
+                {
+                  "mode": 1,
+                  "remaining_score": 18
+                },
+                {
+                  "mode": 2,
+                  "remaining_score": 12
+                },
+                {
+                  "mode": 3,
+                  "remaining_score": 6
+                },
+                {
+                  "mode": 4,
+                  "remaining_score": 0
+                }
+              ]
+            }
+          }
+        },
+        "gate_pass": true,
+        "port_cell_index": 0,
+        "tested_axes": 3
+      },
+      "shape": [
+        2,
+        2,
+        2
+      ]
+    },
+    "3x2x2": {
+      "part1": {
+        "cells": 12,
+        "census": {
+          "diameter": 0,
+          "primitive_count": 18,
+          "route_transitions": 0,
+          "support_cells": 1
+        },
+        "forward_11_even_CAR_failures": 0,
+        "forward_port_onsite_dictionary_exchange_failures": 0,
+        "gate_pass": true,
+        "generation": {
+          "declared_11_generator_missing_failures": 0,
+          "declared_11_generator_multiplicity_failures": 0,
+          "onsite_physical_target_identity_failures": 0
+        },
+        "incident_seam_exchange_failures": 0,
+        "nonincident_seam_invariance_failures": 0,
+        "other_cell_onsite_invariance_failures": 0,
+        "parity": {
+          "cell_parity_image_failures": false,
+          "odd_bank_detection_failures": 0,
+          "odd_matter_image_detection_failures": 0,
+          "total_joint_parity_invariance_failures": false
+        },
+        "port_cell": [
+          0,
+          0,
+          0
+        ],
+        "port_cell_index": 0,
+        "port_onsite_dictionary_exchange_failures": 0,
+        "port_onsite_dictionary_rows": 36,
+        "reverse_11_even_CAR_failures": 0,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      "part2": {
+        "all_four_seam_images_exact": true,
+        "all_noninvolved_dictionary_rows_invariant": true,
+        "all_parity_bookkeeping_exact": true,
+        "all_routes_returned": true,
+        "axes": {
+          "0": {
+            "axis": 0,
+            "census": {
+              "diameter": 0,
+              "primitive_count": 18,
+              "route_transitions": 0,
+              "support_cells": 1
+            },
+            "edge": 0,
+            "explicit_bank_Majorana_source_construction_failures": 0,
+            "four_seam_image_failures": 0,
+            "gate_pass": true,
+            "noninvolved_dictionary_invariance_failures": 0,
+            "noninvolved_dictionary_rows": 466,
+            "other_endpoint_cell_index": 4,
+            "parity": {
+              "cell_parity_image_failures": false,
+              "odd_bank_detection_failures": 0,
+              "odd_matter_image_detection_failures": 0,
+              "total_joint_parity_invariance_failures": false
+            },
+            "routing": {
+              "forward_failures": 0,
+              "inverse_failures": 0,
+              "needed_noncolocated_primitive": false,
+              "returned_route": []
+            },
+            "synthesis": {
+              "augmented_signed_pairs": 5,
+              "final_pair_failures": 0,
+              "method": "greedy elementary symplectic CNOT transvections with parity completion",
+              "score_trace": [
+                {
+                  "mode": 1,
+                  "remaining_score": 14
+                },
+                {
+                  "mode": 0,
+                  "remaining_score": 8
+                },
+                {
+                  "mode": 2,
+                  "remaining_score": 6
+                },
+                {
+                  "mode": 3,
+                  "remaining_score": 4
+                },
+                {
+                  "mode": 4,
+                  "remaining_score": 2
+                },
+                {
+                  "mode": 5,
+                  "remaining_score": 0
+                }
+              ]
+            }
+          },
+          "1": {
+            "axis": 1,
+            "census": {
+              "diameter": 0,
+              "primitive_count": 18,
+              "route_transitions": 0,
+              "support_cells": 1
+            },
+            "edge": 1,
+            "explicit_bank_Majorana_source_construction_failures": 0,
+            "four_seam_image_failures": 0,
+            "gate_pass": true,
+            "noninvolved_dictionary_invariance_failures": 0,
+            "noninvolved_dictionary_rows": 466,
+            "other_endpoint_cell_index": 2,
+            "parity": {
+              "cell_parity_image_failures": false,
+              "odd_bank_detection_failures": 0,
+              "odd_matter_image_detection_failures": 0,
+              "total_joint_parity_invariance_failures": false
+            },
+            "routing": {
+              "forward_failures": 0,
+              "inverse_failures": 0,
+              "needed_noncolocated_primitive": false,
+              "returned_route": []
+            },
+            "synthesis": {
+              "augmented_signed_pairs": 5,
+              "final_pair_failures": 0,
+              "method": "greedy elementary symplectic CNOT transvections with parity completion",
+              "score_trace": [
+                {
+                  "mode": 3,
+                  "remaining_score": 22
+                },
+                {
+                  "mode": 0,
+                  "remaining_score": 16
+                },
+                {
+                  "mode": 1,
+                  "remaining_score": 10
+                },
+                {
+                  "mode": 2,
+                  "remaining_score": 4
+                },
+                {
+                  "mode": 4,
+                  "remaining_score": 2
+                },
+                {
+                  "mode": 5,
+                  "remaining_score": 0
+                }
+              ]
+            }
+          },
+          "2": {
+            "axis": 2,
+            "census": {
+              "diameter": 0,
+              "primitive_count": 18,
+              "route_transitions": 0,
+              "support_cells": 1
+            },
+            "edge": 2,
+            "explicit_bank_Majorana_source_construction_failures": 0,
+            "four_seam_image_failures": 0,
+            "gate_pass": true,
+            "noninvolved_dictionary_invariance_failures": 0,
+            "noninvolved_dictionary_rows": 466,
+            "other_endpoint_cell_index": 1,
+            "parity": {
+              "cell_parity_image_failures": false,
+              "odd_bank_detection_failures": 0,
+              "odd_matter_image_detection_failures": 0,
+              "total_joint_parity_invariance_failures": false
+            },
+            "routing": {
+              "forward_failures": 0,
+              "inverse_failures": 0,
+              "needed_noncolocated_primitive": false,
+              "returned_route": []
+            },
+            "synthesis": {
+              "augmented_signed_pairs": 5,
+              "final_pair_failures": 0,
+              "method": "greedy elementary symplectic CNOT transvections with parity completion",
+              "score_trace": [
+                {
+                  "mode": 5,
+                  "remaining_score": 30
+                },
+                {
+                  "mode": 0,
+                  "remaining_score": 24
+                },
+                {
+                  "mode": 1,
+                  "remaining_score": 18
+                },
+                {
+                  "mode": 2,
+                  "remaining_score": 12
+                },
+                {
+                  "mode": 3,
+                  "remaining_score": 6
+                },
+                {
+                  "mode": 4,
+                  "remaining_score": 0
+                }
+              ]
+            }
+          }
+        },
+        "gate_pass": true,
+        "port_cell_index": 0,
+        "tested_axes": 3
+      },
+      "shape": [
+        3,
+        2,
+        2
+      ]
+    },
+    "5x3x2": {
+      "part1": {
+        "cells": 30,
+        "census": {
+          "diameter": 0,
+          "primitive_count": 18,
+          "route_transitions": 0,
+          "support_cells": 1
+        },
+        "forward_11_even_CAR_failures": 0,
+        "forward_port_onsite_dictionary_exchange_failures": 0,
+        "gate_pass": true,
+        "generation": {
+          "declared_11_generator_missing_failures": 0,
+          "declared_11_generator_multiplicity_failures": 0,
+          "onsite_physical_target_identity_failures": 0
+        },
+        "incident_seam_exchange_failures": 0,
+        "nonincident_seam_invariance_failures": 0,
+        "other_cell_onsite_invariance_failures": 0,
+        "parity": {
+          "cell_parity_image_failures": false,
+          "odd_bank_detection_failures": 0,
+          "odd_matter_image_detection_failures": 0,
+          "total_joint_parity_invariance_failures": false
+        },
+        "port_cell": [
+          0,
+          0,
+          0
+        ],
+        "port_cell_index": 0,
+        "port_onsite_dictionary_exchange_failures": 0,
+        "port_onsite_dictionary_rows": 36,
+        "reverse_11_even_CAR_failures": 0,
+        "shape": [
+          5,
+          3,
+          2
+        ]
+      },
+      "part2": {
+        "reason": "task limits 5x3x2 to Part 1 plus census",
+        "skipped": true
+      },
+      "shape": [
+        5,
+        3,
+        2
+      ]
+    }
+  },
+  "checks": [
+    {
+      "label": "dense exact Clifford tableau self-test has zero mismatches",
+      "pass": true
+    },
+    {
+      "label": "union-safe and bare constructors agree on cells edges and qubits for 2x2x2",
+      "pass": true
+    },
+    {
+      "label": "(1, 1, 1) Part 1 dictionary and exchange images are exact",
+      "pass": true
+    },
+    {
+      "label": "(1, 1, 1) Part 1 parity and bounded gate census pass",
+      "pass": true
+    },
+    {
+      "label": "(1, 1, 1) Part 2 seam images noninvolved rows parity and routing are exact",
+      "pass": true
+    },
+    {
+      "label": "(1, 1, 1) Part 2 named support gate passes",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) Part 1 dictionary and exchange images are exact",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) Part 1 parity and bounded gate census pass",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) Part 2 seam images noninvolved rows parity and routing are exact",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) Part 2 named support gate passes",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) Part 1 dictionary and exchange images are exact",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) Part 1 parity and bounded gate census pass",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) Part 2 seam images noninvolved rows parity and routing are exact",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) Part 2 named support gate passes",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) optional Part 1 and census pass",
+      "pass": true
+    },
+    {
+      "label": "mixed-gauge factorization anchors regress with exact coordinates",
+      "pass": true
+    },
+    {
+      "label": "24 frames x 8 translation parities have exact dictionary-family and seam-class covariance",
+      "pass": true
+    },
+    {
+      "label": "deleting one CNOT produces a nonzero conjugation mismatch",
+      "pass": true
+    },
+    {
+      "label": "flipping the middle CNOT of one SWAP block produces a nonzero mismatch",
+      "pass": true
+    },
+    {
+      "label": "appending one stray primitive to the seam word is detected",
+      "pass": true
+    },
+    {
+      "label": "an unlawful odd input is detected by joint parity",
+      "pass": true
+    },
+    {
+      "label": "a wrong-port word leaves the declared port rows unmapped",
+      "pass": true
+    }
+  ],
+  "claim_boundary": "This is a reversible even-exchange port plus seam-extended coupling on the declared companion/center code with supplied sector inventory. It is not the gauge-mixed logical injection E_s, which remains the Bell/Choi route. The factorization locality values are a coordinate-row census only: no V_s restriction is compiled. There is no autonomy or genesis claim. Circuit ordinals describe structure, not time. This is state-level coupling only, with no matter, FTL, mass, or charge transfer.",
+  "controls": {
+    "delete_one_CNOT_mismatch_count": 1,
+    "hostile_middle_CNOT_flip_mismatch_count": 2,
+    "palindromic_literal_reverse_mismatch_count": 0,
+    "palindromic_reverse_note": "the standard three-CNOT SWAP is palindromic, so literal gate-order reversal is the identical Clifford; reported as an informational identity, not a control",
+    "seam_word_palindromic": false,
+    "stray_seam_primitive_mismatch_count": 2,
+    "stray_seam_primitive_not_found": false,
+    "stray_seam_primitive_pair": [
+      0,
+      1
+    ],
+    "unlawful_odd_input_detection_failures": 0,
+    "wrong_port_mismatch_count": 11
+  },
+  "covariance": {
+    "2x2x2": {
+      "binary_port_dictionary_multiset_failures": 0,
+      "binary_seam_multiset_failures": 0,
+      "census_vector_failures": 0,
+      "contexts": 192,
+      "distinct_relocated_port_coordinates": 8,
+      "failures": 0,
+      "frame_action": "Q.physical_images exact signed generator transport",
+      "frames": 24,
+      "lexicographic_min_port_not_transported_contexts": 168,
+      "port_rule": "rebuilt at the transported image of the source port; the lexicographic-minimum default is a supplied chart convention and is not frame-covariant",
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "signed_port_dictionary_multiset_failures": 0,
+      "signed_seam_image_class_failures": 0,
+      "translation_parities": 8
+    },
+    "3x2x2": {
+      "binary_port_dictionary_multiset_failures": 0,
+      "binary_seam_multiset_failures": 0,
+      "census_vector_failures": 0,
+      "contexts": 192,
+      "distinct_relocated_port_coordinates": 8,
+      "failures": 0,
+      "frame_action": "Q.physical_images exact signed generator transport",
+      "frames": 24,
+      "lexicographic_min_port_not_transported_contexts": 168,
+      "port_rule": "rebuilt at the transported image of the source port; the lexicographic-minimum default is a supplied chart convention and is not frame-covariant",
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "signed_port_dictionary_multiset_failures": 0,
+      "signed_seam_image_class_failures": 0,
+      "translation_parities": 8
+    }
+  },
+  "dense_selftest": {
+    "comparisons": 8208,
+    "gates": 57,
+    "maximum_residual": 2.220446049250313e-16,
+    "mismatches": 0,
+    "pauli_rows": 144
+  },
+  "derived": [
+    "six co-located three-CNOT SWAP blocks exchange the declared live even-CAR bank with the full 36-row port-cell onsite dictionary family exactly",
+    "the same parity-complete local word maps bank-ended incident seam bilinears back to the supplied physical seam rows",
+    "all route counts are zero because every synthesized two-M2 primitive is co-located at the declared port cell"
+  ],
+  "direct_encoded_input_clifford_attempted": true,
+  "encoded_input_clifford_v_s_restriction_compiled": false,
+  "factorization_anchor": {
+    "all_regressions_pass": true,
+    "boxes": {
+      "2x2x2": {
+        "coordinate_failure_fields": {
+          "canonical_tableau_pairing_failures": 0,
+          "even_sector_phase_failures": 0,
+          "gauge_coordinate_failures_for_every_physical_generator": 0,
+          "logical_coordinate_failures": 0,
+          "odd_sector_phase_failures": 0,
+          "parity_coordinate_failures": 0,
+          "phase_contradictions": 0,
+          "phase_parity_failures": 0
+        },
+        "coordinate_failures": 0,
+        "dimension_identity": true,
+        "factorwise_full_word_intertwiner_exact": true,
+        "finite_box_mixed_gauge_CPTP_E_constructed": true,
+        "locality": {
+          "canonical_tableau_bounded_R2": false,
+          "full_center_rank": 6,
+          "local_R2_center_rank_plus_supplied_parity": 6,
+          "locally_generated_center_ranks": {
+            "0": 0,
+            "1": 0,
+            "2": 5
+          },
+          "maximum_canonical_encoder_row_diameter": 3,
+          "maximum_canonical_encoder_row_weight": 66,
+          "maximum_center_dual_row_diameter": 3,
+          "maximum_gauge_Bell_coordinate_row_diameter": 3,
+          "maximum_logical_coordinate_row_diameter": 3
+        },
+        "shape": [
+          2,
+          2,
+          2
+        ],
+        "tableau_digest": "e83b7b242297a8e613073dc1984a17ee07d632708676f4ff786c9bca943fcd0b"
+      },
+      "3x2x2": {
+        "coordinate_failure_fields": {
+          "canonical_tableau_pairing_failures": 0,
+          "even_sector_phase_failures": 0,
+          "gauge_coordinate_failures_for_every_physical_generator": 0,
+          "logical_coordinate_failures": 0,
+          "odd_sector_phase_failures": 0,
+          "parity_coordinate_failures": 0,
+          "phase_contradictions": 0,
+          "phase_parity_failures": 0
+        },
+        "coordinate_failures": 0,
+        "dimension_identity": true,
+        "factorwise_full_word_intertwiner_exact": true,
+        "finite_box_mixed_gauge_CPTP_E_constructed": true,
+        "locality": {
+          "canonical_tableau_bounded_R2": false,
+          "full_center_rank": 10,
+          "local_R2_center_rank_plus_supplied_parity": 10,
+          "locally_generated_center_ranks": {
+            "0": 0,
+            "1": 0,
+            "2": 9
+          },
+          "maximum_canonical_encoder_row_diameter": 4,
+          "maximum_canonical_encoder_row_weight": 104,
+          "maximum_center_dual_row_diameter": 4,
+          "maximum_gauge_Bell_coordinate_row_diameter": 4,
+          "maximum_logical_coordinate_row_diameter": 4
+        },
+        "shape": [
+          3,
+          2,
+          2
+        ],
+        "tableau_digest": "10ec1180a23dd781c406fca7a9a6f0b2d5bf75da74fd1712849904bdc2197a47"
+      }
+    },
+    "census_role": "reported measured ceiling for a future literal V_s-restriction word; no route is compiled from the digest or locality metrics",
+    "literal_v_s_restriction_compiled": false,
+    "v_s_coordinate_rows_returned": false
+  },
+  "fixture_constructor_equivalence": {
+    "cells_identical": true,
+    "edges_identical": true,
+    "matter_qubits_identical": true,
+    "qubits_identical": true,
+    "shape": [
+      2,
+      2,
+      2
+    ],
+    "used_constructor": "O.arbitrary_fixture(Q.shape_cells(shape))"
+  },
+  "open": [
+    "a public immutable V_s tableau/coordinate API and literal restriction compiler",
+    "the Bell/Choi gauge-mixed logical injection E_s",
+    "fault-tolerant preparation, decoding, and autonomous sector repair",
+    "coframe-origin seeded transport: this bank/dictionary surface touches no coframe registers, so the eight-origin channel covariance stays with the epoch-level composition",
+    "autonomous selection of the port cell: the lexicographic-minimum default is a supplied chart convention (covariance evaluates the transported port)"
+  ],
+  "runtime_seconds": 20.91364504199737,
+  "status": "cycle721-direct-local-encoded-input-clifford-port-pass",
+  "supplied": [
+    "the Cycle-720 companion/center operator dictionary and sector inventory",
+    "one clean six-qubit live-input bank co-located at the declared port",
+    "the total-parity label and companion center-sector representative"
+  ]
+}
+
+----- stderr -----
+

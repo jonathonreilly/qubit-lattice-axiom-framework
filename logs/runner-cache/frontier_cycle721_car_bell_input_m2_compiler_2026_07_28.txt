@@ -1,0 +1,1321 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle721_car_bell_input_m2_compiler_2026_07_28.py
+runner_sha256: 434b643dfa4265b38aed5d6da6aa818e56ad9b4e34e7467489f6dace26ab2252
+input_fingerprint_sha256: 188d850f2dad8fb4e19a486422c6a8e8794088506f9f91e3c7af52ca6337c476
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 236.10
+status: ok
+----- stdout -----
+PASS exhaustive dense 8x8 Clifford conjugation self-test has zero mismatches
+PASS every direct-basis row on the five-box ladder compiles to an abelian Hermitian live-bank character with unchanged rank
+PASS literal H-controlled-Pauli-H words fix retained X, transport retained Z to Z times R_i, and leave all other measured and graph rows invariant
+PASS one-hot duality, kernel even sums, deletion signs, exhaustive one-cell branches, and deterministic held-box samples replay exactly
+PASS every compiled word and frozen private dual obeys the two-cell diameter-one gate with returned routes
+PASS measurement coloring equals three onsite layers plus one seam layer per maximum cell degree; correction coloring is constant from 3x2x2 (ceilings 12 and 24)
+PASS post-compilation two- and three-mode CPTP residuals and Cycle-720 critical fixture fields are unchanged
+PASS reused 24-frame and 576-product covariance surfaces retain zero named failures
+PASS compiled row families and census vectors transport over 24 frames by 8 translation parities with only fixture-derived edge orientation classes
+PASS private-dual deletion, deleting the final return link breaks the forward returned-route walk, first-link deletion, hostile ancilla pairing, and odd-row controls are detected
+{
+  "audit": "unset",
+  "authority": "none",
+  "boxes": [
+    {
+      "Hadamard_primitives": 22,
+      "branch_character_entry_failures": 0,
+      "branch_enumeration": "exhaustive even-X Pauli basis",
+      "branch_private_dual_replay_failures": 0,
+      "branch_target_relation_even_sum_failures": 0,
+      "cells": 1,
+      "coarse_input_binary_replacement_failures": 0,
+      "companion_encoded_live_input_M2": 9,
+      "compiled_character_binary_failures": 0,
+      "compiled_character_phase_failures": 0,
+      "compiled_measured_row_rank": 11,
+      "compiled_primitive_count": 54,
+      "compiled_row_commutator_failures": 0,
+      "compiled_row_hermiticity_failures": 0,
+      "controlled_Pauli_primitives": 32,
+      "delete_matching_private_dual_index": 5,
+      "delete_matching_private_dual_sign_residual": 1,
+      "dilation_X_invariance_failures": 0,
+      "dilation_Z_character_failures": 0,
+      "dilation_graph_row_invariance_failures": 0,
+      "dilation_other_measured_row_invariance_failures": 0,
+      "direct_graph_basis_rank": 11,
+      "edges": 0,
+      "expected_connected_even_algebra_rank": 11,
+      "expected_direct_graph_family_rank": 11,
+      "failing_compiled_word_support_rows": [],
+      "lawful_even_characters_tested": 2048,
+      "maximum_compiled_word_support_cells": 1,
+      "maximum_compiled_word_support_diameter": 0,
+      "maximum_private_dual_support_cells": 1,
+      "maximum_private_dual_support_diameter": 0,
+      "measurement_conflict_layers": 3,
+      "measurement_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 18,
+          "vertices": 6
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 15,
+          "vertices": 3
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 10,
+          "vertices": 2
+        }
+      ],
+      "physical_correction_conflict_layers": 6,
+      "physical_correction_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 6,
+          "vertices": 6
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 5,
+          "vertices": 1
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 4,
+          "vertices": 1
+        },
+        {
+          "layer": 3,
+          "touched_qubits": 3,
+          "vertices": 1
+        },
+        {
+          "layer": 4,
+          "touched_qubits": 2,
+          "vertices": 1
+        },
+        {
+          "layer": 5,
+          "touched_qubits": 1,
+          "vertices": 1
+        }
+      ],
+      "physical_output_M2": 9,
+      "physical_private_dual_support_failures": 0,
+      "physical_private_dual_syndrome_failures": 0,
+      "physical_tag_rebuild_failures": 0,
+      "precanonical_phase_erasure_rows": 0,
+      "rail_move_primitives": 0,
+      "route_forward_failures": 0,
+      "route_inverse_failures": 0,
+      "route_transitions": 0,
+      "rows": 11,
+      "shape": [
+        1,
+        1,
+        1
+      ],
+      "target_even_algebra_rank": 11,
+      "target_relation_rows": 0
+    },
+    {
+      "Hadamard_primitives": 200,
+      "branch_character_entry_failures": 0,
+      "branch_enumeration": "deterministic_even_samples",
+      "branch_private_dual_replay_failures": 0,
+      "branch_target_relation_even_sum_failures": 0,
+      "cells": 8,
+      "coarse_input_binary_replacement_failures": 0,
+      "companion_encoded_live_input_M2": 72,
+      "compiled_character_binary_failures": 0,
+      "compiled_character_phase_failures": 0,
+      "compiled_measured_row_rank": 100,
+      "compiled_primitive_count": 744,
+      "compiled_row_commutator_failures": 0,
+      "compiled_row_hermiticity_failures": 0,
+      "controlled_Pauli_primitives": 520,
+      "delete_matching_private_dual_index": 50,
+      "delete_matching_private_dual_sign_residual": 1,
+      "dilation_X_invariance_failures": 0,
+      "dilation_Z_character_failures": 0,
+      "dilation_graph_row_invariance_failures": 0,
+      "dilation_other_measured_row_invariance_failures": 0,
+      "direct_graph_basis_rank": 100,
+      "edges": 12,
+      "expected_connected_even_algebra_rank": 95,
+      "expected_direct_graph_family_rank": 100,
+      "failing_compiled_word_support_rows": [],
+      "lawful_even_characters_tested": 161,
+      "maximum_compiled_word_support_cells": 2,
+      "maximum_compiled_word_support_diameter": 1,
+      "maximum_private_dual_support_cells": 1,
+      "maximum_private_dual_support_diameter": 0,
+      "measurement_conflict_layers": 6,
+      "measurement_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 144,
+          "vertices": 48
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 120,
+          "vertices": 24
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 80,
+          "vertices": 16
+        },
+        {
+          "layer": 3,
+          "touched_qubits": 52,
+          "vertices": 4
+        },
+        {
+          "layer": 4,
+          "touched_qubits": 100,
+          "vertices": 4
+        },
+        {
+          "layer": 5,
+          "touched_qubits": 148,
+          "vertices": 4
+        }
+      ],
+      "physical_correction_conflict_layers": 10,
+      "physical_correction_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 40,
+          "vertices": 16
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 32,
+          "vertices": 16
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 24,
+          "vertices": 8
+        },
+        {
+          "layer": 3,
+          "touched_qubits": 20,
+          "vertices": 12
+        },
+        {
+          "layer": 4,
+          "touched_qubits": 16,
+          "vertices": 8
+        },
+        {
+          "layer": 5,
+          "touched_qubits": 60,
+          "vertices": 8
+        },
+        {
+          "layer": 6,
+          "touched_qubits": 48,
+          "vertices": 8
+        },
+        {
+          "layer": 7,
+          "touched_qubits": 36,
+          "vertices": 8
+        },
+        {
+          "layer": 8,
+          "touched_qubits": 24,
+          "vertices": 8
+        },
+        {
+          "layer": 9,
+          "touched_qubits": 12,
+          "vertices": 8
+        }
+      ],
+      "physical_output_M2": 72,
+      "physical_private_dual_support_failures": 0,
+      "physical_private_dual_syndrome_failures": 0,
+      "physical_tag_rebuild_failures": 0,
+      "precanonical_phase_erasure_rows": 0,
+      "rail_move_primitives": 24,
+      "route_forward_failures": 0,
+      "route_inverse_failures": 0,
+      "route_transitions": 24,
+      "rows": 100,
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "target_even_algebra_rank": 95,
+      "target_relation_rows": 5
+    },
+    {
+      "Hadamard_primitives": 304,
+      "branch_character_entry_failures": 0,
+      "branch_enumeration": "deterministic_even_samples",
+      "branch_private_dual_replay_failures": 0,
+      "branch_target_relation_even_sum_failures": 0,
+      "cells": 12,
+      "coarse_input_binary_replacement_failures": 0,
+      "companion_encoded_live_input_M2": 108,
+      "compiled_character_binary_failures": 0,
+      "compiled_character_phase_failures": 0,
+      "compiled_measured_row_rank": 152,
+      "compiled_primitive_count": 1144,
+      "compiled_row_commutator_failures": 0,
+      "compiled_row_hermiticity_failures": 0,
+      "controlled_Pauli_primitives": 800,
+      "delete_matching_private_dual_index": 76,
+      "delete_matching_private_dual_sign_residual": 1,
+      "dilation_X_invariance_failures": 0,
+      "dilation_Z_character_failures": 0,
+      "dilation_graph_row_invariance_failures": 0,
+      "dilation_other_measured_row_invariance_failures": 0,
+      "direct_graph_basis_rank": 152,
+      "edges": 20,
+      "expected_connected_even_algebra_rank": 143,
+      "expected_direct_graph_family_rank": 152,
+      "failing_compiled_word_support_rows": [],
+      "lawful_even_characters_tested": 209,
+      "maximum_compiled_word_support_cells": 2,
+      "maximum_compiled_word_support_diameter": 1,
+      "maximum_private_dual_support_cells": 1,
+      "maximum_private_dual_support_diameter": 0,
+      "measurement_conflict_layers": 7,
+      "measurement_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 216,
+          "vertices": 72
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 180,
+          "vertices": 36
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 120,
+          "vertices": 24
+        },
+        {
+          "layer": 3,
+          "touched_qubits": 102,
+          "vertices": 6
+        },
+        {
+          "layer": 4,
+          "touched_qubits": 102,
+          "vertices": 6
+        },
+        {
+          "layer": 5,
+          "touched_qubits": 198,
+          "vertices": 6
+        },
+        {
+          "layer": 6,
+          "touched_qubits": 74,
+          "vertices": 2
+        }
+      ],
+      "physical_correction_conflict_layers": 11,
+      "physical_correction_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 60,
+          "vertices": 24
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 46,
+          "vertices": 22
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 36,
+          "vertices": 12
+        },
+        {
+          "layer": 3,
+          "touched_qubits": 30,
+          "vertices": 18
+        },
+        {
+          "layer": 4,
+          "touched_qubits": 24,
+          "vertices": 12
+        },
+        {
+          "layer": 5,
+          "touched_qubits": 86,
+          "vertices": 14
+        },
+        {
+          "layer": 6,
+          "touched_qubits": 72,
+          "vertices": 12
+        },
+        {
+          "layer": 7,
+          "touched_qubits": 54,
+          "vertices": 12
+        },
+        {
+          "layer": 8,
+          "touched_qubits": 36,
+          "vertices": 12
+        },
+        {
+          "layer": 9,
+          "touched_qubits": 22,
+          "vertices": 12
+        },
+        {
+          "layer": 10,
+          "touched_qubits": 6,
+          "vertices": 2
+        }
+      ],
+      "physical_output_M2": 108,
+      "physical_private_dual_support_failures": 0,
+      "physical_private_dual_syndrome_failures": 0,
+      "physical_tag_rebuild_failures": 0,
+      "precanonical_phase_erasure_rows": 0,
+      "rail_move_primitives": 40,
+      "route_forward_failures": 0,
+      "route_inverse_failures": 0,
+      "route_transitions": 40,
+      "rows": 152,
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "target_even_algebra_rank": 143,
+      "target_relation_rows": 9
+    },
+    {
+      "Hadamard_primitives": 778,
+      "branch_character_entry_failures": 0,
+      "branch_enumeration": "deterministic_even_samples",
+      "branch_private_dual_replay_failures": 0,
+      "branch_target_relation_even_sum_failures": 0,
+      "cells": 30,
+      "coarse_input_binary_replacement_failures": 0,
+      "companion_encoded_live_input_M2": 270,
+      "compiled_character_binary_failures": 0,
+      "compiled_character_phase_failures": 0,
+      "compiled_measured_row_rank": 389,
+      "compiled_primitive_count": 3046,
+      "compiled_row_commutator_failures": 0,
+      "compiled_row_hermiticity_failures": 0,
+      "controlled_Pauli_primitives": 2150,
+      "delete_matching_private_dual_index": 194,
+      "delete_matching_private_dual_sign_residual": 1,
+      "dilation_X_invariance_failures": 0,
+      "dilation_Z_character_failures": 0,
+      "dilation_graph_row_invariance_failures": 0,
+      "dilation_other_measured_row_invariance_failures": 0,
+      "direct_graph_basis_rank": 389,
+      "edges": 59,
+      "expected_connected_even_algebra_rank": 359,
+      "expected_direct_graph_family_rank": 389,
+      "failing_compiled_word_support_rows": [],
+      "lawful_even_characters_tested": 425,
+      "maximum_compiled_word_support_cells": 2,
+      "maximum_compiled_word_support_diameter": 1,
+      "maximum_private_dual_support_cells": 1,
+      "maximum_private_dual_support_diameter": 0,
+      "measurement_conflict_layers": 8,
+      "measurement_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 540,
+          "vertices": 180
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 450,
+          "vertices": 90
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 300,
+          "vertices": 60
+        },
+        {
+          "layer": 3,
+          "touched_qubits": 243,
+          "vertices": 15
+        },
+        {
+          "layer": 4,
+          "touched_qubits": 243,
+          "vertices": 15
+        },
+        {
+          "layer": 5,
+          "touched_qubits": 435,
+          "vertices": 15
+        },
+        {
+          "layer": 6,
+          "touched_qubits": 335,
+          "vertices": 11
+        },
+        {
+          "layer": 7,
+          "touched_qubits": 111,
+          "vertices": 3
+        }
+      ],
+      "physical_correction_conflict_layers": 11,
+      "physical_correction_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 150,
+          "vertices": 60
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 111,
+          "vertices": 51
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 90,
+          "vertices": 30
+        },
+        {
+          "layer": 3,
+          "touched_qubits": 70,
+          "vertices": 40
+        },
+        {
+          "layer": 4,
+          "touched_qubits": 60,
+          "vertices": 30
+        },
+        {
+          "layer": 5,
+          "touched_qubits": 216,
+          "vertices": 42
+        },
+        {
+          "layer": 6,
+          "touched_qubits": 180,
+          "vertices": 30
+        },
+        {
+          "layer": 7,
+          "touched_qubits": 135,
+          "vertices": 35
+        },
+        {
+          "layer": 8,
+          "touched_qubits": 90,
+          "vertices": 30
+        },
+        {
+          "layer": 9,
+          "touched_qubits": 65,
+          "vertices": 30
+        },
+        {
+          "layer": 10,
+          "touched_qubits": 31,
+          "vertices": 11
+        }
+      ],
+      "physical_output_M2": 270,
+      "physical_private_dual_support_failures": 0,
+      "physical_private_dual_syndrome_failures": 0,
+      "physical_tag_rebuild_failures": 0,
+      "precanonical_phase_erasure_rows": 0,
+      "rail_move_primitives": 118,
+      "route_forward_failures": 0,
+      "route_inverse_failures": 0,
+      "route_transitions": 118,
+      "rows": 389,
+      "shape": [
+        5,
+        3,
+        2
+      ],
+      "target_even_algebra_rank": 359,
+      "target_relation_rows": 30
+    },
+    {
+      "Hadamard_primitives": 1696,
+      "branch_character_entry_failures": 0,
+      "branch_enumeration": "deterministic_even_samples",
+      "branch_private_dual_replay_failures": 0,
+      "branch_target_relation_even_sum_failures": 0,
+      "cells": 64,
+      "coarse_input_binary_replacement_failures": 0,
+      "companion_encoded_live_input_M2": 576,
+      "compiled_character_binary_failures": 0,
+      "compiled_character_phase_failures": 0,
+      "compiled_measured_row_rank": 848,
+      "compiled_primitive_count": 7200,
+      "compiled_row_commutator_failures": 0,
+      "compiled_row_hermiticity_failures": 0,
+      "controlled_Pauli_primitives": 5216,
+      "delete_matching_private_dual_index": 424,
+      "delete_matching_private_dual_sign_residual": 1,
+      "dilation_X_invariance_failures": 0,
+      "dilation_Z_character_failures": 0,
+      "dilation_graph_row_invariance_failures": 0,
+      "dilation_other_measured_row_invariance_failures": 0,
+      "direct_graph_basis_rank": 848,
+      "edges": 144,
+      "expected_connected_even_algebra_rank": 767,
+      "expected_direct_graph_family_rank": 848,
+      "failing_compiled_word_support_rows": [],
+      "lawful_even_characters_tested": 833,
+      "maximum_compiled_word_support_cells": 2,
+      "maximum_compiled_word_support_diameter": 1,
+      "maximum_private_dual_support_cells": 1,
+      "maximum_private_dual_support_diameter": 0,
+      "measurement_conflict_layers": 9,
+      "measurement_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 1152,
+          "vertices": 384
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 960,
+          "vertices": 192
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 640,
+          "vertices": 128
+        },
+        {
+          "layer": 3,
+          "touched_qubits": 416,
+          "vertices": 32
+        },
+        {
+          "layer": 4,
+          "touched_qubits": 608,
+          "vertices": 32
+        },
+        {
+          "layer": 5,
+          "touched_qubits": 896,
+          "vertices": 32
+        },
+        {
+          "layer": 6,
+          "touched_qubits": 940,
+          "vertices": 28
+        },
+        {
+          "layer": 7,
+          "touched_qubits": 592,
+          "vertices": 16
+        },
+        {
+          "layer": 8,
+          "touched_qubits": 148,
+          "vertices": 4
+        }
+      ],
+      "physical_correction_conflict_layers": 11,
+      "physical_correction_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 320,
+          "vertices": 128
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 224,
+          "vertices": 96
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 192,
+          "vertices": 64
+        },
+        {
+          "layer": 3,
+          "touched_qubits": 144,
+          "vertices": 80
+        },
+        {
+          "layer": 4,
+          "touched_qubits": 128,
+          "vertices": 64
+        },
+        {
+          "layer": 5,
+          "touched_qubits": 476,
+          "vertices": 92
+        },
+        {
+          "layer": 6,
+          "touched_qubits": 384,
+          "vertices": 64
+        },
+        {
+          "layer": 7,
+          "touched_qubits": 296,
+          "vertices": 88
+        },
+        {
+          "layer": 8,
+          "touched_qubits": 192,
+          "vertices": 64
+        },
+        {
+          "layer": 9,
+          "touched_qubits": 132,
+          "vertices": 64
+        },
+        {
+          "layer": 10,
+          "touched_qubits": 104,
+          "vertices": 44
+        }
+      ],
+      "physical_output_M2": 576,
+      "physical_private_dual_support_failures": 0,
+      "physical_private_dual_syndrome_failures": 0,
+      "physical_tag_rebuild_failures": 0,
+      "precanonical_phase_erasure_rows": 0,
+      "rail_move_primitives": 288,
+      "route_forward_failures": 0,
+      "route_inverse_failures": 0,
+      "route_transitions": 288,
+      "rows": 848,
+      "shape": [
+        4,
+        4,
+        4
+      ],
+      "target_even_algebra_rank": 767,
+      "target_relation_rows": 81
+    },
+    {
+      "Hadamard_primitives": 1990,
+      "branch_character_entry_failures": 0,
+      "branch_enumeration": "deterministic_even_samples",
+      "branch_private_dual_replay_failures": 0,
+      "branch_target_relation_even_sum_failures": 0,
+      "cells": 75,
+      "coarse_input_binary_replacement_failures": 0,
+      "companion_encoded_live_input_M2": 675,
+      "compiled_character_binary_failures": 0,
+      "compiled_character_phase_failures": 0,
+      "compiled_measured_row_rank": 995,
+      "compiled_primitive_count": 8350,
+      "compiled_row_commutator_failures": 0,
+      "compiled_row_hermiticity_failures": 0,
+      "controlled_Pauli_primitives": 6020,
+      "delete_matching_private_dual_index": 497,
+      "delete_matching_private_dual_sign_residual": 1,
+      "dilation_X_invariance_failures": 0,
+      "dilation_Z_character_failures": 0,
+      "dilation_graph_row_invariance_failures": 0,
+      "dilation_other_measured_row_invariance_failures": 0,
+      "direct_graph_basis_rank": 995,
+      "edges": 170,
+      "expected_connected_even_algebra_rank": 899,
+      "expected_direct_graph_family_rank": 995,
+      "failing_compiled_word_support_rows": [],
+      "lawful_even_characters_tested": 965,
+      "maximum_compiled_word_support_cells": 2,
+      "maximum_compiled_word_support_diameter": 1,
+      "maximum_private_dual_support_cells": 1,
+      "maximum_private_dual_support_diameter": 0,
+      "measurement_conflict_layers": 9,
+      "measurement_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 1350,
+          "vertices": 450
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 1125,
+          "vertices": 225
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 750,
+          "vertices": 150
+        },
+        {
+          "layer": 3,
+          "touched_qubits": 577,
+          "vertices": 37
+        },
+        {
+          "layer": 4,
+          "touched_qubits": 577,
+          "vertices": 37
+        },
+        {
+          "layer": 5,
+          "touched_qubits": 935,
+          "vertices": 35
+        },
+        {
+          "layer": 6,
+          "touched_qubits": 931,
+          "vertices": 31
+        },
+        {
+          "layer": 7,
+          "touched_qubits": 777,
+          "vertices": 21
+        },
+        {
+          "layer": 8,
+          "touched_qubits": 333,
+          "vertices": 9
+        }
+      ],
+      "physical_correction_conflict_layers": 11,
+      "physical_correction_layer_census": [
+        {
+          "layer": 0,
+          "touched_qubits": 375,
+          "vertices": 150
+        },
+        {
+          "layer": 1,
+          "touched_qubits": 265,
+          "vertices": 115
+        },
+        {
+          "layer": 2,
+          "touched_qubits": 225,
+          "vertices": 75
+        },
+        {
+          "layer": 3,
+          "touched_qubits": 165,
+          "vertices": 90
+        },
+        {
+          "layer": 4,
+          "touched_qubits": 150,
+          "vertices": 75
+        },
+        {
+          "layer": 5,
+          "touched_qubits": 561,
+          "vertices": 114
+        },
+        {
+          "layer": 6,
+          "touched_qubits": 450,
+          "vertices": 75
+        },
+        {
+          "layer": 7,
+          "touched_qubits": 345,
+          "vertices": 105
+        },
+        {
+          "layer": 8,
+          "touched_qubits": 225,
+          "vertices": 75
+        },
+        {
+          "layer": 9,
+          "touched_qubits": 161,
+          "vertices": 75
+        },
+        {
+          "layer": 10,
+          "touched_qubits": 118,
+          "vertices": 46
+        }
+      ],
+      "physical_output_M2": 675,
+      "physical_private_dual_support_failures": 0,
+      "physical_private_dual_syndrome_failures": 0,
+      "physical_tag_rebuild_failures": 0,
+      "precanonical_phase_erasure_rows": 0,
+      "rail_move_primitives": 340,
+      "route_forward_failures": 0,
+      "route_inverse_failures": 0,
+      "route_transitions": 340,
+      "rows": 995,
+      "shape": [
+        5,
+        5,
+        3
+      ],
+      "target_even_algebra_rank": 899,
+      "target_relation_rows": 96
+    }
+  ],
+  "checks": [
+    {
+      "label": "exhaustive dense 8x8 Clifford conjugation self-test has zero mismatches",
+      "pass": true
+    },
+    {
+      "label": "every direct-basis row on the five-box ladder compiles to an abelian Hermitian live-bank character with unchanged rank",
+      "pass": true
+    },
+    {
+      "label": "literal H-controlled-Pauli-H words fix retained X, transport retained Z to Z times R_i, and leave all other measured and graph rows invariant",
+      "pass": true
+    },
+    {
+      "label": "one-hot duality, kernel even sums, deletion signs, exhaustive one-cell branches, and deterministic held-box samples replay exactly",
+      "pass": true
+    },
+    {
+      "label": "every compiled word and frozen private dual obeys the two-cell diameter-one gate with returned routes",
+      "pass": true
+    },
+    {
+      "label": "measurement coloring equals three onsite layers plus one seam layer per maximum cell degree; correction coloring is constant from 3x2x2 (ceilings 12 and 24)",
+      "pass": true
+    },
+    {
+      "label": "post-compilation two- and three-mode CPTP residuals and Cycle-720 critical fixture fields are unchanged",
+      "pass": true
+    },
+    {
+      "label": "reused 24-frame and 576-product covariance surfaces retain zero named failures",
+      "pass": true
+    },
+    {
+      "label": "compiled row families and census vectors transport over 24 frames by 8 translation parities with only fixture-derived edge orientation classes",
+      "pass": true
+    },
+    {
+      "label": "private-dual deletion, deleting the final return link breaks the forward returned-route walk, first-link deletion, hostile ancilla pairing, and odd-row controls are detected",
+      "pass": true
+    }
+  ],
+  "claim_boundary": "instruction-level companion-encoded input-bank compilation on the declared site map with supplied sector/genesis inventory; the collision-free joint epoch with pump + recurrent G is not claimed here; ordinals are circuit structure, not time; state-level coupling only, with no matter/FTL/mass/charge transfer",
+  "compiled_schedule_transport": {
+    "contexts": 384,
+    "edge_forward_orientation_classes": 3072,
+    "edge_orientation_binary_class_failures": 0,
+    "edge_orientation_signed_class_failures": 0,
+    "edge_reversed_orientation_classes": 3072,
+    "family_binary_multiset_failures": {
+      "edge": 0,
+      "onsite_XX": 0,
+      "onsite_Z": 0
+    },
+    "family_census_vector_invariance_failures": {
+      "edge": 0,
+      "onsite_XX": 0,
+      "onsite_Z": 0
+    },
+    "family_signed_multiset_failures": {
+      "edge": 0,
+      "onsite_XX": 0,
+      "onsite_Z": 0
+    },
+    "proper_cubic_frames": 24,
+    "shapes": [
+      {
+        "contexts": 192,
+        "edge_forward_orientation_classes": 1152,
+        "edge_orientation_binary_class_failures": 0,
+        "edge_orientation_signed_class_failures": 0,
+        "edge_reversed_orientation_classes": 1152,
+        "family_binary_multiset_failures": {
+          "edge": 0,
+          "onsite_XX": 0,
+          "onsite_Z": 0
+        },
+        "family_census_vector_invariance_failures": {
+          "edge": 0,
+          "onsite_XX": 0,
+          "onsite_Z": 0
+        },
+        "family_signed_multiset_failures": {
+          "edge": 0,
+          "onsite_XX": 0,
+          "onsite_Z": 0
+        },
+        "proper_cubic_frames": 24,
+        "shape": [
+          2,
+          2,
+          2
+        ],
+        "source_family_census_vectors": {
+          "edge": [
+            {
+              "rows": 4,
+              "vector": [
+                2,
+                1,
+                14,
+                2
+              ]
+            },
+            {
+              "rows": 4,
+              "vector": [
+                2,
+                1,
+                26,
+                2
+              ]
+            },
+            {
+              "rows": 4,
+              "vector": [
+                2,
+                1,
+                38,
+                2
+              ]
+            }
+          ],
+          "onsite_XX": [
+            {
+              "rows": 40,
+              "vector": [
+                1,
+                0,
+                6,
+                0
+              ]
+            }
+          ],
+          "onsite_Z": [
+            {
+              "rows": 48,
+              "vector": [
+                1,
+                0,
+                4,
+                0
+              ]
+            }
+          ]
+        },
+        "translation_parities": 8
+      },
+      {
+        "contexts": 192,
+        "edge_forward_orientation_classes": 1920,
+        "edge_orientation_binary_class_failures": 0,
+        "edge_orientation_signed_class_failures": 0,
+        "edge_reversed_orientation_classes": 1920,
+        "family_binary_multiset_failures": {
+          "edge": 0,
+          "onsite_XX": 0,
+          "onsite_Z": 0
+        },
+        "family_census_vector_invariance_failures": {
+          "edge": 0,
+          "onsite_XX": 0,
+          "onsite_Z": 0
+        },
+        "family_signed_multiset_failures": {
+          "edge": 0,
+          "onsite_XX": 0,
+          "onsite_Z": 0
+        },
+        "proper_cubic_frames": 24,
+        "shape": [
+          3,
+          2,
+          2
+        ],
+        "source_family_census_vectors": {
+          "edge": [
+            {
+              "rows": 8,
+              "vector": [
+                2,
+                1,
+                14,
+                2
+              ]
+            },
+            {
+              "rows": 6,
+              "vector": [
+                2,
+                1,
+                26,
+                2
+              ]
+            },
+            {
+              "rows": 6,
+              "vector": [
+                2,
+                1,
+                38,
+                2
+              ]
+            }
+          ],
+          "onsite_XX": [
+            {
+              "rows": 60,
+              "vector": [
+                1,
+                0,
+                6,
+                0
+              ]
+            }
+          ],
+          "onsite_Z": [
+            {
+              "rows": 72,
+              "vector": [
+                1,
+                0,
+                4,
+                0
+              ]
+            }
+          ]
+        },
+        "translation_parities": 8
+      }
+    ],
+    "translation_parities": 8
+  },
+  "controls": {
+    "delete_private_dual_detection_failures": 0,
+    "delete_private_dual_sign_residuals": {
+      "(1, 1, 1)": 1,
+      "(2, 2, 2)": 1,
+      "(3, 2, 2)": 1,
+      "(4, 4, 4)": 1,
+      "(5, 3, 2)": 1,
+      "(5, 5, 3)": 1
+    },
+    "deleted_final_route_link_failures": [
+      1,
+      0
+    ],
+    "deleted_first_route_link_failures": [
+      1,
+      1
+    ],
+    "doubled_row_span_rank": 11,
+    "hostile_ancilla_swap_dilation_identity_failures": true,
+    "hostile_same_layer_word_indices": [
+      0,
+      1
+    ],
+    "odd_augmented_span_rank": 12,
+    "odd_bank_character_parity_symplectic": 1,
+    "unlawful_odd_input_detection_failures": 0
+  },
+  "covariance": {
+    "Bell_reference_conjugate_chart_failures": 0,
+    "actively_transformed_private_corrections": 19200,
+    "actively_transformed_returned_routes": 19200,
+    "actively_transformed_stabilizer_rows": 19200,
+    "atlas_key_inverse_transport_failures": 0,
+    "finite_coframe_atlas_orbit_keys": 864,
+    "finite_coframe_correction_word_orbit": 1128,
+    "frame_origin_contexts": 192,
+    "geometric_route_words_changed_by_JW_chart_gauge": 2032,
+    "orbit_digest": "f8d56c31d79ca26cc51aa5a492e9288e9f4dd48681acb5be02046dcd016aeab4",
+    "oriented_factor_2_or_3_edge_row_failures": 0,
+    "private_correction_support_failures": 0,
+    "private_correction_syndrome_failures": 0,
+    "proper_cubic_frames": 24,
+    "retained_coframe_origin_sectors": 8,
+    "reversed_edge_rows": 1152,
+    "route_gauge_boundary": "the actual transformed signed Pauli row is routed afresh by the same deterministic NN returned-route compiler; a bare geometric image of the source JW route is only a chart gauge",
+    "route_locality_support_or_return_failures": 0,
+    "schedule_key_inverse_transport_failures": 0,
+    "shape": [
+      2,
+      2,
+      2
+    ],
+    "signed_projector_failures": 0,
+    "syndrome_register_bijection_failures": 0
+  },
+  "dense_selftest": {
+    "Hadamard_conjugation_tests": 64,
+    "Pauli_pair_sandwich_tests": 1024,
+    "controlled_Pauli_primitive_tests": 384,
+    "dense_selftest_mismatches": 0,
+    "maximum_dense_residual": 1.262432884528343e-15,
+    "target_Paulis_exhausted": 16,
+    "three_qubit_Paulis_exhausted": 64
+  },
+  "derived": "literal instruction data, exact integer-Pauli conjugation, companion-bank joint-rank and abelian censuses, returned-route/support census, private-dual branch replay, conflict coloring, and covariant signed/binary family-multiset diagnostics",
+  "exact_CPTP_controls": [
+    {
+      "Bell_basis_orthonormality_residual": 4.440892098500626e-16,
+      "Bell_outcomes": 4,
+      "Kraus_completeness_residual": 6.280369834735101e-16,
+      "corrected_branch_identity_residual": 1.5700924586837752e-16,
+      "expected_even_rank": 3,
+      "expected_outcomes": 4,
+      "fixed_sector_dimension": 2,
+      "generator_rank": 3,
+      "modes": 2
+    },
+    {
+      "Bell_basis_orthonormality_residual": 0.0,
+      "Bell_outcomes": 16,
+      "Kraus_completeness_residual": 0.0,
+      "corrected_branch_identity_residual": 0.0,
+      "expected_even_rank": 5,
+      "expected_outcomes": 16,
+      "fixed_sector_dimension": 4,
+      "generator_rank": 5,
+      "modes": 3
+    }
+  ],
+  "fixture_preservation": {
+    "all_three_residuals_below_1e-12": true,
+    "critical_box_field_change_failures": 0,
+    "critical_box_fields_compared": [
+      "target_even_algebra_rank",
+      "expected_connected_even_algebra_rank",
+      "doubled_Bell_row_rank",
+      "doubled_Bell_row_commutator_failures",
+      "CAR_measurement_support_cell_failures",
+      "CAR_edge_nearest_neighbor_failures",
+      "physical_private_dual_syndrome_failures",
+      "physical_private_dual_support_failures",
+      "maximum_private_dual_support_cells",
+      "maximum_private_dual_support_diameter",
+      "branch_private_dual_character_failures",
+      "branch_character_entry_failures",
+      "branch_target_relation_character_failures"
+    ],
+    "exact_certificate_change_failures": 0,
+    "maximum_exact_CPTP_residual": 6.280369834735101e-16
+  },
+  "frame_products": {
+    "atlas_key_product_failures": 0,
+    "coframe_origin_blocks": 4608,
+    "ordered_frame_products": 576,
+    "private_correction_word_product_failures": 0,
+    "returned_route_product_failures": 0,
+    "signed_Choi_tableau_image_product_failures": 0,
+    "stabilizer_row_product_failures": 0,
+    "tree_plaquette_schedule_product_failures": 0
+  },
+  "input_Bell_measurement_physical_M2_compiled": true,
+  "layer_counts": {
+    "correction_by_box": [
+      6,
+      10,
+      11,
+      11,
+      11,
+      11
+    ],
+    "correction_constant_from_3x2x2": true,
+    "law_statement": "measurement conflict layers = 3 onsite layers (Z/XX path coloring) + 1 seam layer per unit of maximum cell degree (greedy first-fit attains the Koenig edge-coloring bound of the bipartite box graph in the emitted edge order); correction layers saturate at their one-cell constant from 3x2x2 on",
+    "layer_law": [
+      {
+        "expected_measurement_layers_3_plus_degree": 3,
+        "maximum_cell_degree": 0,
+        "measurement_conflict_layers": 3,
+        "physical_correction_conflict_layers": 6,
+        "shape": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "expected_measurement_layers_3_plus_degree": 6,
+        "maximum_cell_degree": 3,
+        "measurement_conflict_layers": 6,
+        "physical_correction_conflict_layers": 10,
+        "shape": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "expected_measurement_layers_3_plus_degree": 7,
+        "maximum_cell_degree": 4,
+        "measurement_conflict_layers": 7,
+        "physical_correction_conflict_layers": 11,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "expected_measurement_layers_3_plus_degree": 8,
+        "maximum_cell_degree": 5,
+        "measurement_conflict_layers": 8,
+        "physical_correction_conflict_layers": 11,
+        "shape": [
+          5,
+          3,
+          2
+        ]
+      },
+      {
+        "expected_measurement_layers_3_plus_degree": 9,
+        "maximum_cell_degree": 6,
+        "measurement_conflict_layers": 9,
+        "physical_correction_conflict_layers": 11,
+        "shape": [
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "expected_measurement_layers_3_plus_degree": 9,
+        "maximum_cell_degree": 6,
+        "measurement_conflict_layers": 9,
+        "physical_correction_conflict_layers": 11,
+        "shape": [
+          5,
+          5,
+          3
+        ]
+      }
+    ],
+    "measurement_by_box": [
+      3,
+      6,
+      7,
+      8,
+      9,
+      9
+    ]
+  },
+  "open": "autonomous sector/genesis law; collision-free joint epoch with pump and recurrent G; downstream time/source/Record/Born acceptance; any failed literal dilation, layer-constancy, or transport gate reported by this companion-encoded-bank run",
+  "runtime_seconds": 235.67410062499403,
+  "status": "PASS",
+  "supplied": "fixed parity/center sector; one-time Choi genesis inventory; mixed gauge reference; clean retained syndrome and mobile-rail banks; frozen private-dual atlas; finite boxes; the live input is presented in the code's own companion representation (companion-encoded input bank); a bare global-JW input register is not used"
+}
+
+----- stderr -----
+

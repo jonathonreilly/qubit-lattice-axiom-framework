@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
-"""Cycle 711 - run the continuum extrapolation that self_consistency_forces_poisson_note
-invokes in its own caveat but never performed, for every operator rather than for
-Poisson alone.
-
-Parent row: docs/audit/data/ledger/se/self_consistency_forces_poisson_note.json
-  criticality: critical, deps: [] (root), direct_in_degree: 17,
-  transitive_descendants: 727, load_bearing_score: 18.092.
+"""Bounded diagnostics for the finite-size ``beta`` caveat in
+``SELF_CONSISTENCY_FORCES_POISSON_NOTE.md``.
 
 The parent note's first caveat reads:
 
@@ -14,23 +9,22 @@ The parent note's first caveat reads:
    demonstrates beta -> 1.0 in the continuum limit via extrapolation from larger
    lattices (up to 96^3)."
 
-That caveat is the sole defence of the parent note's Bounded Claim 1 against the
-observation that its measured exponent is 1.28 rather than the Newtonian 1.0.
-Cycle 710 (PR #5656) showed the note's two operator discriminators are empty and
-declared this extrapolation the highest-value open follow-up, because the note
-ran its continuum argument for Poisson alone and never for the rivals.
-
-This runner performs it. The field operator is fixed across the self-consistent
-iterations and only the right-hand side changes, so each operator is factorized
-once per lattice size with splu and reused, which is what makes N = 48 reachable.
+This runner checks the exact parent implementation rather than accepting that
+citation as a continuum bridge. It reports two selected finite-data fits,
+verifies convergence, proves the propagator's uniform x-layer marginal on the
+computed fixed points, and checks that the cited script studies a different
+observable in a prescribed field.
 
 Scope: the tested 3D Dirichlet cubic-lattice transfer-propagator construction of
 the parent runner at the parent note's parameters (k = 5.0, G = 0.5, sigma = 2.0,
 mixing = 0.3, tol = 1e-4, max_iter = 30), at the lattice sizes stated per row.
+No infinite-volume limit, exhaustive extrapolation result, or
+operator-selection theorem is claimed.
 """
 
 from __future__ import annotations
 
+import hashlib
 import math
 import sys
 from pathlib import Path
@@ -49,6 +43,9 @@ SIGMA = 2.0
 MIXING = 0.3
 TOL = 1e-4
 MAX_ITER = 30
+EXPECTED_PARENT_RUNNER_SHA256 = (
+    "9714bfc547816059745b009ddba47db626444270e34e00aae08319cd2b5d1da2"
+)
 
 # N = 12 is excluded: check_field_physics fits radii 2..N//2-3, which is fewer
 # than the three points its own mask requires, so it returns beta = nan.
@@ -88,11 +85,12 @@ def matrix_solver(N: int, which: str):
 
 
 def local_solver(N: int):
-    return lambda rho_full: G_COUPLING * rho_full
+    del N
+    return lambda rho_full: rho_full
 
 
 def fundamental_sign(N, solve):
-    """Per-operator source sign, as established in cycle 710 R10."""
+    """Choose the source sign so every point-source response uses one convention."""
     d = np.zeros((N, N, N))
     d[(N // 2, N // 2, N // 2)] = 1.0
     return float(np.sign(solve(d)[(N // 2, N // 2, N // 2)]))
@@ -105,13 +103,33 @@ def converge(N, solve, eps):
         rho = F.propagate_wavepacket_fast(N, phi, K_WAVE, src, sigma=SIGMA)
         pn = solve(eps * G_COUPLING * rho)
         if not np.all(np.isfinite(pn)):
-            return None
+            return {
+                "converged": False,
+                "iterations": it + 1,
+                "residual": float("inf"),
+                "phi": phi,
+                "rho": rho,
+            }
         pm = (1 - MIXING) * phi + MIXING * pn
         res = float(np.max(np.abs(pm - phi)))
         phi = pm
         if res < TOL and it > 0:
-            return phi
-    return phi
+            return {
+                "converged": True,
+                "iterations": it + 1,
+                "residual": res,
+                "phi": phi,
+                "rho": F.propagate_wavepacket_fast(
+                    N, phi, K_WAVE, src, sigma=SIGMA
+                ),
+            }
+    return {
+        "converged": False,
+        "iterations": MAX_ITER,
+        "residual": res,
+        "phi": phi,
+        "rho": F.propagate_wavepacket_fast(N, phi, K_WAVE, src, sigma=SIGMA),
+    }
 
 
 def extrapolate(Ns, vals, order):
@@ -135,22 +153,49 @@ def extrapolate(Ns, vals, order):
 OPS = {"poisson": "poisson", "biharmonic": "biharmonic", "local": None}
 
 print(__doc__)
+parent_runner = REPO_ROOT / "scripts" / "frontier_self_consistent_field_equation.py"
+observed_parent_hash = hashlib.sha256(parent_runner.read_bytes()).hexdigest()
+check(
+    "P0  the imported parent runner matches the reviewed source bytes",
+    observed_parent_hash == EXPECTED_PARENT_RUNNER_SHA256,
+    f"observed={observed_parent_hash}\nexpected={EXPECTED_PARENT_RUNNER_SHA256}",
+)
+
 print("=" * 78)
-print("PART A - the extrapolation the parent note's caveat invokes")
+print("PART A - finite-data fits named by the parent caveat")
 print("=" * 78)
 
 measured: dict[str, list[tuple[int, float, float]]] = {}
+states: dict[str, dict[int, dict[str, object]]] = {}
 for name, which in OPS.items():
     rows = []
+    states[name] = {}
     for N in SIZES:
         solve = local_solver(N) if which is None else matrix_solver(N, which)
         eps = fundamental_sign(N, solve)
-        phi = converge(N, solve, eps)
-        if phi is None:
-            continue
-        p = F.check_field_physics(N, phi, (N // 2, N // 2, N // 2))
+        state = converge(N, solve, eps)
+        states[name][N] = state
+        p = F.check_field_physics(
+            N, state["phi"], (N // 2, N // 2, N // 2)
+        )
         rows.append((N, float(p["beta"]), float(p["beta_r2"])))
     measured[name] = rows
+
+convergence_failures = [
+    f"{name}/N={N}: iterations={state['iterations']}, "
+    f"residual={state['residual']:.3e}"
+    for name, by_size in states.items()
+    for N, state in by_size.items()
+    if not state["converged"]
+]
+check(
+    "P1  every field used by the finite-size tables reaches the declared "
+    "fixed-point tolerance",
+    not convergence_failures,
+    "all 21 runs converged"
+    if not convergence_failures
+    else "\n".join(convergence_failures),
+)
 
 print("measured beta and power-law fit quality:")
 for name, rows in measured.items():
@@ -168,18 +213,18 @@ for name, rows in measured.items():
 p1, e1 = ext["poisson"][1]
 p2, e2 = ext["poisson"][2]
 check(
-    "S1  Poisson's self-consistent beta does NOT extrapolate to the Newtonian "
-    "target 1.0",
-    abs(p1 - 1.0) > 0.05 and abs(p2 - 1.0) > 0.05,
+    "S1  the two selected fits of Poisson's finite beta table both have "
+    "intercepts above 1.1",
+    p1 > 1.1 and p2 > 1.1,
     f"beta at the largest size N=48: {measured['poisson'][-1][1]:.4f}\n"
     f"extrapolation beta = b_inf + c/N        : b_inf = {p1:.4f} +/- {e1:.4f}\n"
     f"extrapolation beta = b_inf + c/N + d/N^2: b_inf = {p2:.4f} +/- {e2:.4f}\n"
     f"target asserted by the parent note's caveat: 1.0\n"
-    "neither extrapolation family lands near 1.0. Over the doubling from N=24 to\n"
-    f"N=48 beta moves only "
-    f"{measured['poisson'][2][1] - measured['poisson'][-1][1]:+.4f}.\n"
-    "falsifier: either family landing within 0.05 of 1.0, which would support the\n"
-    "parent note's caveat.",
+    "these selected finite-data models do not reproduce 1.0. Over the doubling\n"
+    f"from N=24 to N=48 beta changes by "
+    f"{measured['poisson'][-1][1] - measured['poisson'][2][1]:+.4f}.\n"
+    "This is a statement about two declared models, not an exhaustive continuum\n"
+    "extrapolation.",
 )
 
 # --- S2 ---------------------------------------------------------------------
@@ -187,15 +232,13 @@ bih = measured["biharmonic"]
 dev = [abs(b - 1.0) for _, b, _ in bih]
 mono_away = all(dev[i] < dev[i + 1] for i in range(len(dev) - 1))
 check(
-    "S2  the biharmonic rival's exponent moves monotonically AWAY from 1.0 as "
-    "the lattice grows",
+    "S2  across the tested sizes the biharmonic exponent moves monotonically "
+    "farther from 1.0",
     mono_away,
     "\n".join(f"    N={N:3d}  beta={b:.4f}  abs(beta-1)={abs(b-1.0):.4f}"
               for N, b, _ in bih) + "\n"
-    "so the biharmonic advantage that cycle 710 measured at N=20 and N=24 is a\n"
-    "finite-size effect that dissolves as the lattice grows.\n"
-    "falsifier: a monotone approach to 1.0, which would make the rival genuinely\n"
-    "better in the continuum.",
+    "the finite-grid gap to 1.0 grows across this table. No asymptotic ranking is\n"
+    "inferred from that monotone finite trend.",
 )
 
 # --- S3 ---------------------------------------------------------------------
@@ -207,8 +250,8 @@ Ns = [r[0] for r in bih]
 fam1 = extrapolate(Ns, dev_p, 1)[0] - extrapolate(Ns, dev_b, 1)[0]
 fam2 = extrapolate(Ns, dev_p, 2)[0] - extrapolate(Ns, dev_b, 2)[0]
 check(
-    "S3  the continuum ranking is INDETERMINATE: the two extrapolation families "
-    "disagree on which operator ends up closer to 1.0",
+    "S3  the two selected extrapolation families do not determine one "
+    "Poisson-versus-biharmonic ranking",
     (fam1 > 0) != (fam2 > 0),
     "gap = abs(beta_poisson - 1) - abs(beta_biharmonic - 1), positive means "
     "biharmonic is closer:\n"
@@ -217,11 +260,8 @@ check(
     f"({'biharmonic' if fam1 > 0 else 'poisson'} closer)\n"
     f"extrapolated gap, family b_inf + c/N + d/N^2: {fam2:+.4f}  "
     f"({'biharmonic' if fam2 > 0 else 'poisson'} closer)\n"
-    "the two families disagree on the SIGN, so this evidence does not determine a\n"
-    "continuum ranking either way. This independently confirms cycle 710 R16,\n"
-    "which refused to claim any rival is the better operator.\n"
-    "falsifier: both families agreeing on the sign, which would determine the\n"
-    "ranking and make one of the two readings correct.",
+    "the two selected families disagree on the sign, so these fits do not\n"
+    "determine a ranking. No claim is made about untested fit families.",
 )
 
 # --- S4 ---------------------------------------------------------------------
@@ -231,70 +271,97 @@ for name in ("poisson", "biharmonic"):
     degrade[name] = (r2s[0], r2s[-1],
                      all(r2s[i] > r2s[i + 1] for i in range(len(r2s) - 1)))
 check(
-    "S4  the power-law fit quality degrades monotonically with lattice size for "
-    "both operators, so the fitted exponent means less at larger N, not more",
+    "S4  the single-power-law fit R^2 decreases monotonically with lattice size "
+    "for both matrix operators",
     all(v[2] for v in degrade.values()),
     "\n".join(f"    {n:11s} fit R^2: {a:.4f} at N=16 -> {b:.4f} at N=48  "
               f"(monotonically decreasing: {m})" for n, (a, b, m) in degrade.items())
-    + "\nthe parent note's caveat assumes larger lattices give a cleaner reading of\n"
-      "the same power law. The fit gets worse instead, for both operators.\n"
-      "falsifier: R^2 improving with N, which would support extrapolating the "
-      "exponent.",
+    + "\nAcross this finite table a single power law explains less of the logged\n"
+      "profile variance as N grows. This does not itself select an asymptotic\n"
+      "model.",
 )
 
 print()
 print("=" * 78)
-print("PART B - why: the source is scale-locked to the box")
+print("PART B - exact layer normalization and the fitted window")
 print("=" * 78)
 
 src_rows = []
 for N in SIZES:
     s = (N // 2, N // 2, N // 2)
-    rho = F.propagate_wavepacket_fast(N, np.zeros((N, N, N)), K_WAVE, s, sigma=SIGMA)
+    rho = states["poisson"][N]["rho"]
     g = np.mgrid[0:N, 0:N, 0:N].astype(float)
     rad = np.sqrt((g[0] - s[0]) ** 2 + (g[1] - s[1]) ** 2 + (g[2] - s[2]) ** 2)
+    layer_mass = rho.sum(axis=(1, 2))
+    layer_error = float(np.max(np.abs(layer_mass - 1.0 / N)))
+    x_rms = float(
+        np.sqrt(np.sum(layer_mass * (np.arange(N, dtype=float) - s[0]) ** 2))
+    )
+    expected_x_rms = math.sqrt((N * N + 2.0) / 12.0)
     rms = float(np.sqrt((rho * rad ** 2).sum() / rho.sum()))
     r_fit_max = N // 2 - 3
     enclosed = float(rho[rad <= r_fit_max].sum() / rho.sum())
-    src_rows.append((N, float(rho.sum()), rms, rms / N, r_fit_max, enclosed))
+    src_rows.append(
+        (
+            N,
+            float(rho.sum()),
+            layer_error,
+            x_rms,
+            expected_x_rms,
+            rms,
+            rms / N,
+            r_fit_max,
+            enclosed,
+        )
+    )
 
 # --- S5 ---------------------------------------------------------------------
-ratios = [r[3] for r in src_rows]
 check(
-    "S5  the source never localizes: total mass is pinned to 1 and its RMS "
-    "radius is a fixed fraction of the box",
-    all(abs(m - 1.0) < 1e-12 for _, m, _, _, _, _ in src_rows)
-    and (max(ratios) - min(ratios)) < 0.05,
-    "\n".join(f"    N={N:3d}  total mass={m:.9f}  RMS radius={rms:7.3f}  "
-              f"RMS/N={ratio:.4f}" for N, m, rms, ratio, _, _ in src_rows) + "\n"
-    f"RMS/N stays within [{min(ratios):.4f}, {max(ratios):.4f}]\n"
-    "the parent propagator normalizes total density to 1 and every layer to "
-    "exactly\n1/N (cycle 710 R7), so the self-consistent source is a box-filling\n"
-    "distribution rather than a localized mass. There is therefore no limit in "
-    "which\nit becomes a point source and a 1/r far field could appear.\n"
-    "falsifier: the RMS radius saturating at a fixed value as N grows, which "
-    "would\nmake the source a fixed physical object and the extrapolation "
-    "meaningful.",
+    "S5  every converged Poisson density has the parent propagator's exact "
+    "uniform x-layer marginal",
+    all(
+        abs(m - 1.0) < 1e-12
+        and layer_error < 1e-12
+        and abs(x_rms - expected_x_rms) < 1e-10
+        for N, m, layer_error, x_rms, expected_x_rms, rms, ratio, rf, e
+        in src_rows
+    ),
+    "\n".join(
+        f"    N={N:3d}  max|layer mass-1/N|={layer_error:.2e}  "
+        f"x-RMS={x_rms:7.3f}  expected={expected_x_rms:7.3f}  "
+        f"full RMS/N={ratio:.4f}"
+        for N, m, layer_error, x_rms, expected_x_rms, rms, ratio, rf, e
+        in src_rows
+    )
+    + "\nThe code normalizes each propagated x-layer before normalizing the full\n"
+      "density. Hence the x marginal is exactly 1/N and\n"
+      "x-RMS=sqrt((N^2+2)/12) for the even sizes used here. The source in this\n"
+      "specific propagator therefore spans the box in x; this is not a claim\n"
+      "about a differently normalized or fixed localized source.",
 )
 
 # --- S6 ---------------------------------------------------------------------
-encl = [r[5] for r in src_rows]
+encl = [r[8] for r in src_rows]
 check(
-    "S6  the beta fit window lies inside the source, and the enclosed mass "
-    "fraction INCREASES with lattice size",
-    all(encl[i] < encl[i + 1] for i in range(len(encl) - 1)) and encl[-1] > 0.8,
-    "\n".join(f"    N={N:3d}  max fit radius={rf:3d}  source RMS={rms:7.3f}  "
-              f"mass enclosed within the fit window={e:.4f}"
-              for N, _, rms, _, rf, e in src_rows) + "\n"
-    "check_field_physics fits radii 2..N//2-3 (its lines 387 and 405). A 1/r far\n"
-    "field can only be read outside the source, but the fraction of source mass\n"
-    f"inside the fit window rises from {encl[0]:.4f} at N=16 to {encl[-1]:.4f} "
-    f"at N=48.\n"
-    "so enlarging the lattice moves this diagnostic FURTHER from a far-field\n"
-    "measurement, which inverts the parent note's caveat, and it explains S4:\n"
-    "the profile inside a spreading cloud is progressively less power-law-like.\n"
-    "falsifier: the enclosed fraction decreasing with N, which would mean larger\n"
-    "lattices do approach a far-field reading.",
+    "S6  the parent beta fit is not source-exterior-only on the converged "
+    "Poisson densities",
+    all(
+        1.0 - e >= 5.0 / N - 1e-12
+        for N, m, layer_error, x_rms, expected_x_rms, rms, ratio, rf, e
+        in src_rows
+    ),
+    "\n".join(
+        f"    N={N:3d}  max fit radius={rf:3d}  source RMS={rms:7.3f}  "
+        f"mass outside outer fit radius={1.0-e:.4f}  "
+        f"exact layer lower bound={5.0/N:.4f}"
+        for N, m, layer_error, x_rms, expected_x_rms, rms, ratio, rf, e
+        in src_rows
+    )
+    + "\ncheck_field_physics fits every axis radius 2..N//2-3. Because the x-layer\n"
+      "marginal is exactly 1/N, the five layers with |x-N/2| greater than the\n"
+      "outer fit radius put at least 5/N of the source outside the entire fit\n"
+      "window. This diagnostic is therefore not source-exterior-only; no claim\n"
+      "is made that the field has no exterior.",
 )
 
 print()
@@ -311,7 +378,10 @@ touches_self_consistent = "self_consistent" in text
 check(
     "S7  the script the caveat cites measures ray deflection in a PRESCRIBED "
     "f = s/r field, not the self-consistent field's decay exponent",
-    measures_deflection and prescribed_source and not touches_self_consistent,
+    measures_deflection
+    and prescribed_source
+    and not touches_self_consistent
+    and "check_field_physics" not in text,
     f"file: scripts/{cited.name}\n"
     f"  contains 'deflection delta(b) ~ 1/b^alpha' : {measures_deflection}\n"
     f"  contains 'point source f = s/r'            : {prescribed_source}\n"
@@ -320,24 +390,19 @@ check(
     "for\nNewtonian gravity', and its analytic cross-check is for a prescribed "
     "point-source\nfield f = s/r. Those are a different observable and a "
     "different field from the\nself-consistent beta the caveat is defending, and "
-    "the script never touches the\nself-consistent construction.\n"
-    "falsifier: the script fitting the self-consistent field's beta, which would\n"
-    "make the caveat's citation apposite.",
+    "the script never touches the\nself-consistent construction. A separate "
+    "bridge could compare the two\nobservables, but the cited script is not such "
+    "a bridge.",
 )
 
 # --- S8 ---------------------------------------------------------------------
 loc = measured["local"]
-l1 = extrapolate([r[0] for r in loc], [r[1] for r in loc], 1)[0]
-l2 = extrapolate([r[0] for r in loc], [r[1] for r in loc], 2)[0]
 check(
-    "S8  the 'local' operator diverges under the same scaling, so its exclusion "
-    "does not depend on any of the above",
-    l1 > 20.0 and l2 > 20.0,
-    "\n".join(f"    N={N:3d}  beta={b:9.4f}" for N, b, _ in loc) + "\n"
-    f"extrapolated b_inf: {l1:.2f} (1/N family), {l2:.2f} (1/N + 1/N^2 family)\n"
-    "cycle 710 found 'local' excluded on the decay exponent alone rather than by "
-    "the\nsign convention. That conclusion survives this scaling analysis.\n"
-    "falsifier: a finite extrapolated exponent near 1.0.",
+    "S8  the local-operator finite beta values stay far from 1.0 on every "
+    "tested size",
+    all(abs(b - 1.0) > 4.0 for _, b, _ in loc),
+    "\n".join(f"    N={N:3d}  beta={b:9.4f}" for N, b, _ in loc)
+    + "\nNo extrapolation or divergence claim is made for this sequence.",
 )
 
 print()

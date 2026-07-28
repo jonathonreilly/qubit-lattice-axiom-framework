@@ -1,5 +1,6 @@
 # Self-Consistency Preference for Poisson Field Equation
 
+**Type:** bounded_theorem
 **Status:** bounded - bounded or caveated result note
 ## Status: review hold; bounded operator-preference result
 
@@ -36,7 +37,8 @@ Self-consistent iteration (propagate -> measure rho -> solve Poisson -> repeat)
 converges in ~10 iterations with mixing alpha=0.3. The converged field is:
 - Attractive (phi > 0 near source)
 - Monotonically decaying
-- Approximately 1/r^beta with beta ~ 1.28 (finite-size effect; see caveat)
+- Approximately `1/r^beta` with raw finite-grid `beta ~ 1.28` (no continuum
+  interpretation is established; see caveat)
 
 ### Test 2: Alternative Field Equations Underperform
 
@@ -88,10 +90,21 @@ the `1/r` Newtonian target. Mass terms push the decay toward Yukawa behavior.
 
 ## Caveats
 
-- **Finite-size beta**: The measured beta ~ 1.28 exceeds the target 1.0 due
-  to Dirichlet BC on small lattices (N=20). The distance-law closure script
-  demonstrates beta -> 1.0 in the continuum limit via extrapolation from
-  larger lattices (up to 96^3).
+- **Finite-grid beta**: The measured `beta ~ 1.28` is a raw fit on the
+  declared small Dirichlet grids; this note does not establish that its
+  difference from `1.0` is a finite-size effect. The previously cited
+  distance-law script computes ray deflection in a prescribed `f=s/r` field,
+  not this self-consistent beta. The bounded companion runner
+  [`physical_poisson_self_consistent_beta_caveat_bounded_diagnostic_2026_07_26.py`](../scripts/physical_poisson_self_consistent_beta_caveat_bounded_diagnostic_2026_07_26.py)
+  finds that two selected finite-data fits give intercepts `1.2747` and
+  `1.1578`, while the parent propagator's per-layer normalization gives every
+  computed density a uniform x-layer marginal `1/N`. A localized-source,
+  source-exterior diagnostic or a bridge between the two observables remains
+  open.
+
+  Source-side repair record (2026-07-28, PR #5662): the unsupported continuum
+  sentence was withdrawn and the beta statement narrowed to the finite
+  numerical protocol; no audit grade or full parent-row closure is asserted.
 
 - **Lattice-level result**: This demonstration is on an ordered cubic lattice.
   Extension to grown/random graphs requires separate verification.

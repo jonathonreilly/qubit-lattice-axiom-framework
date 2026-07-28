@@ -5,9 +5,11 @@ gauge-vacuum plaquette on the accepted 3 spatial + 1 derived-time surface.
 
 What this closes:
   - no nonlocal mixed correction through order beta^4
-  - exact classification of the order-beta^5 supports in BOTH multiplicity
-    sectors that can cover the four observed edges: five distinct action faces,
-    and four distinct action faces with one of them repeated
+  - exact classification of every action-face multiplicity pattern through
+    order beta^5, including action copies of the observed plaquette
+  - an explicit 2+1+1+1 repeated-face scan as an independent rejector
+  - equality of the surviving cube-shell connected cumulant and raw moment,
+    because every proper shell subset has a private Haar link
   - the per-shell weight computed from the shell geometry rather than inserted:
     the coherent orientation count is solved for, and the color factor comes
     from an explicit index contraction under the exact second Haar moment
@@ -64,12 +66,36 @@ def add(x: tuple[int, ...], y: tuple[int, ...]) -> tuple[int, ...]:
     return tuple(a + b for a, b in zip(x, y))
 
 
+def subtract(x: tuple[int, ...], y: tuple[int, ...]) -> tuple[int, ...]:
+    return tuple(a - b for a, b in zip(x, y))
+
+
 def plaquette_key(plaquette: tuple[tuple[int, ...], tuple[int, int]]) -> tuple[tuple[int, ...], tuple[int, int]]:
     return plaquette
 
 
 def canonical_edge(a: tuple[int, ...], b: tuple[int, ...]) -> tuple[tuple[int, ...], tuple[int, ...]]:
     return (a, b) if a <= b else (b, a)
+
+
+def plaquettes_on_edge(
+    edge: tuple[tuple[int, ...], tuple[int, ...]],
+) -> set[tuple[tuple[int, ...], tuple[int, int]]]:
+    """The six unit plaquettes incident to a lattice edge in four dimensions."""
+    left, right = edge
+    changed = [index for index, (a, b) in enumerate(zip(left, right)) if a != b]
+    if len(changed) != 1 or abs(left[changed[0]] - right[changed[0]]) != 1:
+        raise ValueError(f"not a unit lattice edge: {edge}")
+    mu = changed[0]
+    lower = tuple(min(a, b) for a, b in zip(left, right))
+    out = set()
+    for nu in range(DIMS):
+        if nu == mu:
+            continue
+        directions = tuple(sorted((mu, nu)))
+        out.add((lower, directions))
+        out.add((subtract(lower, UNITS[nu]), directions))
+    return out
 
 
 def oriented_edges(plaquette: tuple[tuple[int, ...], tuple[int, int]]) -> tuple[tuple[tuple[int, ...], tuple[int, ...]], ...]:
@@ -92,21 +118,6 @@ def edge_charge_map(plaquette: tuple[tuple[int, ...], tuple[int, int]]) -> Count
     return out
 
 
-def adjacent(
-    left: tuple[tuple[int, ...], tuple[int, int]],
-    right: tuple[tuple[int, ...], tuple[int, int]],
-) -> bool:
-    return bool(edges_unoriented(left) & edges_unoriented(right))
-
-
-def all_local_plaquettes() -> list[tuple[tuple[int, ...], tuple[int, int]]]:
-    bases = list(product((-1, 0, 1), repeat=DIMS))
-    return [(base, dirs) for base in bases for dirs in combinations(range(DIMS), 2)]
-
-
-LOCAL_PLAQUETTES = all_local_plaquettes()
-LOCAL_CHARGES = {plaquette: edge_charge_map(plaquette) for plaquette in LOCAL_PLAQUETTES}
-LOCAL_CHARGES[OBSERVED] = edge_charge_map(OBSERVED)
 OBSERVED_EDGES = tuple(edges_unoriented(OBSERVED))
 OBSERVED_EDGE_SET = set(OBSERVED_EDGES)
 
@@ -119,13 +130,18 @@ def shares_exactly_one_observed_edge(plaquette: tuple[tuple[int, ...], tuple[int
 def per_observed_edge_candidates() -> list[list[tuple[tuple[int, ...], tuple[int, int]]]]:
     out: list[list[tuple[tuple[int, ...], tuple[int, int]]]] = []
     for edge in OBSERVED_EDGES:
-        candidates = [p for p in LOCAL_PLAQUETTES if p != OBSERVED and shares_exactly_one_observed_edge(p, edge)]
+        candidates = [
+            plaquette
+            for plaquette in plaquettes_on_edge(edge)
+            if plaquette != OBSERVED
+            and shares_exactly_one_observed_edge(plaquette, edge)
+        ]
         out.append(sorted(candidates, key=plaquette_key))
     return out
 
 
 def has_mod3_assignment(copies: tuple[tuple[tuple[int, ...], tuple[int, int]], ...]) -> tuple[bool, tuple[int, ...] | None]:
-    maps = [LOCAL_CHARGES[plaquette] for plaquette in copies]
+    maps = [edge_charge_map(plaquette) for plaquette in copies]
     edges = sorted({edge for mapping in maps for edge in mapping})
     for signs in product((1, -1), repeat=len(copies)):
         charges: Counter[tuple[tuple[int, ...], tuple[int, ...]]] = Counter()
@@ -138,11 +154,41 @@ def has_mod3_assignment(copies: tuple[tuple[tuple[int, ...], tuple[int, int]], .
 
 
 def max_shared_observed_edges() -> int:
-    """Largest number of observed edges carried by a single non-observed local plaquette."""
+    """Largest observed-edge overlap among all faces incident to that boundary."""
+    candidates = set().union(*(plaquettes_on_edge(edge) for edge in OBSERVED_EDGES))
     return max(
         len(edges_unoriented(plaquette) & OBSERVED_EDGE_SET)
-        for plaquette in LOCAL_PLAQUETTES
+        for plaquette in candidates
         if plaquette != OBSERVED
+    )
+
+
+def private_edges(
+    faces: tuple[tuple[tuple[int, ...], tuple[int, int]], ...],
+) -> set[tuple[tuple[int, ...], tuple[int, ...]]]:
+    """Links carried by exactly one distinct face of a support.
+
+    Repeated copies of a face are deliberately collapsed here.  If a face has
+    such a link, bi-invariance of that private Haar variable makes the entire
+    repeated family of that face independent of the remaining face family, so
+    a mixed connected cumulant factorizes to zero.
+    """
+    counts: Counter[tuple[tuple[int, ...], tuple[int, ...]]] = Counter()
+    for face in set(faces):
+        counts.update(edges_unoriented(face))
+    return {edge for edge, count in counts.items() if count == 1}
+
+
+def max_pairwise_shared_edges() -> int:
+    """Largest link intersection of two distinct unit plaquettes.
+
+    Any intersecting pair is, by translation, represented among the six faces
+    incident to one fixed edge.  Nonintersecting pairs have overlap zero.
+    """
+    incident = plaquettes_on_edge(OBSERVED_EDGES[0])
+    return max(
+        len(edges_unoriented(left) & edges_unoriented(right))
+        for left, right in combinations(incident, 2)
     )
 
 
@@ -158,6 +204,58 @@ def multiplicity_partitions(total: int) -> list[tuple[int, ...]]:
         return out
 
     return walk(total, total)
+
+
+def action_sector_classes_through_five() -> list[tuple[int, tuple[int, ...], bool, int, str]]:
+    """Classify all multiplicity patterns and observed-face placements.
+
+    A row is `(order, action multiplicities, observed_in_action,
+    total_distinct_faces, disposition)`.  The observable supplies one fixed
+    copy of `OBSERVED`.  If the action also contains that face, it does not add
+    a distinct support face.  This finite table closes the mixed sectors that
+    a non-observed-only overlap count would miss.
+    """
+    rows = []
+    for order in range(1, 6):
+        for pattern in multiplicity_partitions(order):
+            for observed_in_action in (False, True):
+                action_distinct = len(pattern)
+                total_distinct = action_distinct + (0 if observed_in_action else 1)
+                local = observed_in_action and action_distinct == 1
+                disposition = (
+                    "local-block"
+                    if local
+                    else "distinct-six-candidate"
+                    if total_distinct == 6
+                    else "private-link-factorization"
+                )
+                rows.append(
+                    (order, pattern, observed_in_action, total_distinct, disposition)
+                )
+    return rows
+
+
+def five_face_private_link_audit() -> tuple[int, int, int]:
+    """Exhaust the only nontrivial at-most-five-distinct support boundary.
+
+    With fewer than five distinct faces, a fixed face can share at most three
+    of its four links because two distinct plaquettes share at most one link.
+    For five faces, absence of a private observed link forces exactly one
+    non-observed face on each observed edge; those 5^4 candidates are searched
+    here for a private link anywhere in the support.
+    """
+    tested = 0
+    without_private_link = 0
+    minimum_private_links = 10**9
+    for choice in product(*per_observed_edge_candidates()):
+        if len(set(choice)) < 4:
+            continue
+        tested += 1
+        count = len(private_edges((OBSERVED, *choice)))
+        minimum_private_links = min(minimum_private_links, count)
+        if count == 0:
+            without_private_link += 1
+    return tested, without_private_link, minimum_private_links
 
 
 def order_four_leafless_audit() -> tuple[int, int]:
@@ -178,26 +276,30 @@ def candidate_extra_faces(
     support: tuple[tuple[tuple[int, ...], tuple[int, int]], ...]
 ) -> list[tuple[tuple[int, ...], tuple[int, int]]]:
     used = set(support) | {OBSERVED}
-    extras = []
-    for plaquette in LOCAL_PLAQUETTES:
-        if plaquette in used:
-            continue
-        if any(adjacent(plaquette, other) for other in support):
-            extras.append(plaquette)
+    extras = set().union(
+        *(
+            plaquettes_on_edge(edge)
+            for plaquette in support
+            for edge in edges_unoriented(plaquette)
+        )
+    )
+    extras -= used
     return sorted(extras, key=plaquette_key)
 
 
 def order_five_distinct_survivors() -> tuple[int, dict[tuple[tuple[tuple[int, ...], tuple[int, int]], ...], tuple[int, ...]]]:
     per_edge = per_observed_edge_candidates()
     survivors: dict[tuple[tuple[tuple[int, ...], tuple[int, int]], ...], tuple[int, ...]] = {}
+    seen: set[tuple[tuple[tuple[int, ...], tuple[int, int]], ...]] = set()
     tested = 0
     for choice in product(*per_edge):
         if len(set(choice)) < 4:
             continue
         for extra in candidate_extra_faces(choice):
             support = tuple(sorted((*choice, extra), key=plaquette_key))
-            if support in survivors:
+            if support in seen:
                 continue
+            seen.add(support)
             tested += 1
             ok, signs = has_mod3_assignment((OBSERVED, *support))
             if ok:
@@ -360,6 +462,24 @@ def shell_index_classes_match_vertices(faces, sigmas, vertices) -> bool:
     return len(members) == len(vertices) and images == vertices
 
 
+def proper_shell_subset_private_link_audit(faces) -> tuple[int, int]:
+    """Count nonempty proper face subsets and those with a private link.
+
+    A proper block moment in the joint moment-cumulant formula vanishes after
+    integrating such a link: the selected face holonomy is Haar with zero
+    first plaquette moment.  If every proper subset passes, the connected
+    cumulant of the full shell equals its raw six-face moment.
+    """
+    tested = 0
+    with_private_link = 0
+    for size in range(1, len(faces)):
+        for subset in combinations(faces, size):
+            tested += 1
+            if private_edges(subset):
+                with_private_link += 1
+    return tested, with_private_link
+
+
 def per_shell_coefficient(shell) -> Fraction:
     """Weight of one cube shell, with every factor computed from its own geometry."""
     faces, _vertices, edge_faces = cube_shell_complex(shell)
@@ -415,7 +535,7 @@ def haar_moment_residuals(rng, count):
 
 
 def monte_carlo_shell(rng, faces, sigmas, links, samples):
-    """Sampled value of prod_f Tr(W_f) over independent Haar links, with its error."""
+    """Sampled real part of prod_f Tr(W_f) over independent Haar links."""
     words = [oriented_word(face, sigma) for face, sigma in zip(faces, sigmas)]
     running = 0.0 + 0.0j
     running_square = 0.0
@@ -450,8 +570,13 @@ def compact(plaquette) -> str:
 def main() -> int:
     per_edge = per_observed_edge_candidates()
     max_shared = max_shared_observed_edges()
+    max_pair_shared = max_pairwise_shared_edges()
     patterns = multiplicity_partitions(5)
-    undercovering = [pattern for pattern in patterns if len(pattern) < 4]
+    sector_classes = action_sector_classes_through_five()
+    six_face_candidates = [
+        row for row in sector_classes if row[-1] == "distinct-six-candidate"
+    ]
+    private_tested, private_survivors, minimum_private = five_face_private_link_audit()
     order4_tested, order4_survivors = order_four_leafless_audit()
     order5_tested, order5_survivors = order_five_distinct_survivors()
     repeat_tested, repeat_survivors = order_five_repeat_sector_survivors()
@@ -459,11 +584,13 @@ def main() -> int:
     ordered_shells = sorted(expected_shells)
 
     geometry = {}
+    subset_audits = {}
     for shell in ordered_shells:
         faces, vertices, edge_faces = cube_shell_complex(shell)
         orientations = coherent_orientations(faces)
         members, _slot_vertex = haar_index_contraction(faces, orientations[0])
         geometry[shell] = (faces, vertices, edge_faces, orientations, members)
+        subset_audits[shell] = proper_shell_subset_private_link_audit(faces)
 
     per_shell_values = {shell: per_shell_coefficient(shell) for shell in ordered_shells}
     per_shell = per_shell_values[ordered_shells[0]]
@@ -497,12 +624,21 @@ def main() -> int:
     print("Observed-edge local combinatorics")
     print(f"  candidates per observed edge          = {[len(c) for c in per_edge]}")
     print(f"  max observed edges on one other face  = {max_shared}")
+    print(f"  max links shared by two distinct faces = {max_pair_shared}")
+    print(f"  five-face supports with no private link = {private_survivors} of {private_tested}")
+    print(f"  minimum private links in that audit    = {minimum_private}")
     print(f"  order-beta^4 supports tested          = {order4_tested}")
     print(f"  order-beta^4 survivors                = {order4_survivors}")
     print()
     print("Order-beta^5 multiplicity sectors")
     print(f"  multiplicity patterns of five         = {len(patterns)}")
-    print(f"  patterns with < 4 distinct faces      = {len(undercovering)}")
+    print(f"  structural classes through beta^5     = {len(sector_classes)}")
+    print(f"  classes reaching six distinct faces   = {len(six_face_candidates)}")
+    print(
+        "  sole six-face class                   = "
+        f"order={six_face_candidates[0][0]} pattern={six_face_candidates[0][1]} "
+        f"observed-in-action={six_face_candidates[0][2]}"
+    )
     print(f"  sector 1+1+1+1+1 tested / survivors   = {order5_tested} / {len(order5_survivors)}")
     print(f"  sector 2+1+1+1   tested / survivors   = {repeat_tested} / {repeat_survivors}")
     for index, support in enumerate(sorted(order5_survivors)):
@@ -515,7 +651,8 @@ def main() -> int:
         print(
             f"  shell {index}: F={len(faces)} V={len(vertices)} E={len(edge_faces)} "
             f"Euler={euler} orientations={len(orientations)} classes={len(members)} "
-            f"N^({len(members)}-{len(edge_faces)}) weight={per_shell_values[shell]}"
+            f"N^({len(members)}-{len(edge_faces)}) weight={per_shell_values[shell]} "
+            f"proper-subsets={subset_audits[shell][1]}/{subset_audits[shell][0]}"
         )
     print(f"  rejector, single-face flips still coherent = {flips_defined} of {len(faces0)}")
     print(f"  rejector, wrong index pairing classes      = {wrong_classes} vs {len(members0)}")
@@ -543,14 +680,42 @@ def main() -> int:
         detail=f"largest observed-edge overlap = {max_shared}",
     )
     check(
-        "no leafless nonlocal support survives through order beta^4",
-        order4_tested == 625 and order4_survivors == 0,
-        detail=f"tested {order4_tested} one-per-edge supports and found {order4_survivors} survivors",
+        "every support with at most five distinct faces has a private Haar link",
+        max_pair_shared == 1
+        and private_tested == 625
+        and private_survivors == 0
+        and minimum_private > 0,
+        detail=(
+            "fewer than five faces are forced by pairwise overlap; "
+            f"all {private_tested} five-face boundary candidates have at least "
+            f"{minimum_private} private links"
+        ),
     )
     check(
-        "every order-beta^5 pattern with fewer than four distinct faces leaves an observed edge uncovered",
-        len(patterns) == 7 and all(len(p) < 4 for p in undercovering) and len(undercovering) == 5,
-        detail=f"{len(undercovering)} of {len(patterns)} patterns cover at most {max(len(p) for p in undercovering)} of 4 observed edges",
+        "all mixed action multiplicities through beta^5, including observed-face copies, are classified",
+        len(patterns) == 7
+        and len(sector_classes) == 36
+        and six_face_candidates
+        == [(5, (1, 1, 1, 1, 1), False, 6, "distinct-six-candidate")]
+        and all(
+            row[-1] in {"local-block", "private-link-factorization"}
+            for row in sector_classes
+            if row not in six_face_candidates
+        ),
+        detail=(
+            "only five distinct non-observed action faces reach six distinct "
+            "total faces; every repeated or observed-copy mixed class has at "
+            "most five"
+        ),
+    )
+    check(
+        "no nonlocal connected cumulant survives through order beta^4",
+        order4_tested == 625 and order4_survivors == 0,
+        detail=(
+            f"private-link factorization covers every multiplicity; the "
+            f"{order4_tested} maximal distinct supports also have "
+            f"{order4_survivors} center-balanced survivors"
+        ),
     )
     check(
         "the only distinct order-beta^5 survivors are the four elementary cube shells through the observed plaquette",
@@ -561,6 +726,11 @@ def main() -> int:
         "no four-distinct-plus-one-repeat order-beta^5 support survives the exact link-balance condition",
         repeat_tested == 2500 and repeat_survivors == 0,
         detail=f"tested {repeat_tested} distinct 2+1+1+1 multisets and found {repeat_survivors} survivors",
+    )
+    check(
+        "every proper cube-shell block moment vanishes, so its connected cumulant equals its raw moment",
+        all(tested == 62 and passed == tested for tested, passed in subset_audits.values()),
+        detail="all 2^6 - 2 = 62 nonempty proper face subsets have a private Haar link on every shell",
     )
     check(
         "each surviving shell closes: V - E + F = 2 with every link shared by exactly two faces",

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py
-runner_sha256: 11c90e379aca3a9b9532b06f841d0cd9d43a9a251ee036dad8a9929fafa6221d
+runner_sha256: f7ed20d42c622ae32a2106fcc41162e4e475a92027fcc272b4db4310df1e3b83
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 33.21
+elapsed_sec: 25.89
 status: ok
 ----- stdout -----
 ==============================================================================
@@ -13,13 +13,18 @@ GAUGE-VACUUM PLAQUETTE MIXED-CUMULANT AUDIT
 Observed-edge local combinatorics
   candidates per observed edge          = [5, 5, 5, 5]
   max observed edges on one other face  = 1
+  max links shared by two distinct faces = 1
+  five-face supports with no private link = 0 of 625
+  minimum private links in that audit    = 4
   order-beta^4 supports tested          = 625
   order-beta^4 survivors                = 0
 
 Order-beta^5 multiplicity sectors
   multiplicity patterns of five         = 7
-  patterns with < 4 distinct faces      = 5
-  sector 1+1+1+1+1 tested / survivors   = 37176 / 4
+  structural classes through beta^5     = 36
+  classes reaching six distinct faces   = 1
+  sole six-face class                   = order=5 pattern=(1, 1, 1, 1, 1) observed-in-action=False
+  sector 1+1+1+1+1 tested / survivors   = 34676 / 4
   sector 2+1+1+1   tested / survivors   = 2500 / 0
   shell 0 = +0+0-1+0:01 +0+0-1+0:02 +0+0-1+0:12 +0+1-1+0:02 +1+0-1+0:12
   shell 1 = +0+0+0-1:01 +0+0+0-1:03 +0+0+0-1:13 +0+1+0-1:03 +1+0+0-1:13
@@ -27,10 +32,10 @@ Order-beta^5 multiplicity sectors
   shell 3 = +0+0+0+0:03 +0+0+0+0:13 +0+0+0+1:01 +0+1+0+0:03 +1+0+0+0:13
 
 Cube-shell Haar contraction from the shell geometry
-  shell 0: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568
-  shell 1: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568
-  shell 2: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568
-  shell 3: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568
+  shell 0: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568 proper-subsets=62/62
+  shell 1: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568 proper-subsets=62/62
+  shell 2: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568 proper-subsets=62/62
+  shell 3: F=6 V=8 E=12 Euler=2 orientations=2 classes=8 N^(8-12) weight=1/1889568 proper-subsets=62/62
   rejector, single-face flips still coherent = 0 of 6
   rejector, wrong index pairing classes      = 4 vs 8
 
@@ -49,14 +54,18 @@ First nonlinear coefficient
          candidate counts = [5, 5, 5, 5]
   [PASS] [THEOREM] no distinct non-observed local plaquette carries more than one observed edge
          largest observed-edge overlap = 1
-  [PASS] [THEOREM] no leafless nonlocal support survives through order beta^4
-         tested 625 one-per-edge supports and found 0 survivors
-  [PASS] [THEOREM] every order-beta^5 pattern with fewer than four distinct faces leaves an observed edge uncovered
-         5 of 7 patterns cover at most 3 of 4 observed edges
+  [PASS] [THEOREM] every support with at most five distinct faces has a private Haar link
+         fewer than five faces are forced by pairwise overlap; all 625 five-face boundary candidates have at least 4 private links
+  [PASS] [THEOREM] all mixed action multiplicities through beta^5, including observed-face copies, are classified
+         only five distinct non-observed action faces reach six distinct total faces; every repeated or observed-copy mixed class has at most five
+  [PASS] [THEOREM] no nonlocal connected cumulant survives through order beta^4
+         private-link factorization covers every multiplicity; the 625 maximal distinct supports also have 0 center-balanced survivors
   [PASS] [THEOREM] the only distinct order-beta^5 survivors are the four elementary cube shells through the observed plaquette
-         tested 37176 supports and found 4 survivors
+         tested 34676 supports and found 4 survivors
   [PASS] [THEOREM] no four-distinct-plus-one-repeat order-beta^5 support survives the exact link-balance condition
          tested 2500 distinct 2+1+1+1 multisets and found 0 survivors
+  [PASS] [THEOREM] every proper cube-shell block moment vanishes, so its connected cumulant equals its raw moment
+         all 2^6 - 2 = 62 nonempty proper face subsets have a private Haar link on every shell
   [PASS] [THEOREM] each surviving shell closes: V - E + F = 2 with every link shared by exactly two faces
          F=6 V=8 E=12 on every shell
   [PASS] [THEOREM] exactly two global face orientations traverse every shared link once in each direction
@@ -78,7 +87,7 @@ First nonlinear coefficient
   [PASS] [SUPPORT] independent Haar sampling reproduces 1/81 for the coherent shell and rejects 1/27, 1/243 and 0
          coherent +0.011606+-0.000913, flipped +0.000429+-0.001127
 
-SUMMARY: THEOREM PASS=14 SUPPORT=2 FAIL=0
+SUMMARY: THEOREM PASS=16 SUPPORT=2 FAIL=0
 ==============================================================================
 
 ----- stderr -----

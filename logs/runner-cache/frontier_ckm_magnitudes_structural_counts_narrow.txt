@@ -1,6 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_magnitudes_structural_counts_narrow.py
-runner_sha256: 663d017352c453e6f409f23d389fc79edc8a5e65dfe6d641dc4816e10652f73a
+runner_sha256: 89d87f46601705af1dee5fad67f94678f2f7dca6a51a81588ff3c2e19a2b81fb
+input_fingerprint_sha256: 388ed2c4b57b506fe689d8ce7fed9c5ffdccbdd44abce38c37a8f845818e7fde
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.33

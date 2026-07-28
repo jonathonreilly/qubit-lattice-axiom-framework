@@ -50,6 +50,11 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parent.parent
 
+AUDIT_INPUT_PATHS = (
+    "docs/audit/data/ledger/ck/"
+    "ckm_magnitudes_structural_counts_theorem_note_2026-04-25.json",
+)
+
 PASS = 0
 FAIL = 0
 
@@ -234,8 +239,7 @@ section("Part 9: parent row context (report-only, no pin)")
 # rewrites it at re-audit, so pinning it goes stale by construction. It reads
 # None today, which made the pin stale wherever the file was readable at all.
 PARENT_ID = "ckm_magnitudes_structural_counts_theorem_note_2026-04-25"
-SHARD = (ROOT / "docs" / "audit" / "data" / "ledger"
-         / PARENT_ID[:2] / f"{PARENT_ID}.json")
+SHARD = ROOT / AUDIT_INPUT_PATHS[0]
 print("\n  Parent row context (report-only, not asserted):")
 try:
     parent = json.loads(SHARD.read_text())

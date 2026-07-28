@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Independent shared-randomness steelman for the causal-bound theorem.
+"""Independent shared-map steelman for the causal-bound theorem.
 
 This helper deliberately does not import the primary certificate.  It builds a
-time-dependent family of Boolean local maps on a three-vertex chain directly,
-uses each seed-selected map schedule in both histories, and checks the claimed
-forward-reachability containment after every tick.
+universal adversarial transition closure for Boolean local maps on a
+three-vertex chain.  At each tick it permits every output pair compatible with
+one shared local truth table, so the resulting state-pair set overapproximates
+every time-dependent shared-map schedule without sampling schedules.
 """
 
 from __future__ import annotations
@@ -14,43 +15,44 @@ from itertools import product
 
 
 State = tuple[bool, bool, bool]
-SCHEDULE_COUNT = 256
+StatePair = tuple[State, State]
 HORIZON = 3
 WALL = "outside-reachability influence under shared extensional R-local updates"
+PREDECESSOR_LISTS = ((0,), (0, 1), (1, 2))
 
 
 @dataclass(frozen=True)
 class SteelmanEvidence:
-    schedules_checked: int
     initial_pairs_checked: int
-    tick_assertions: int
+    tick_state_pairs_checked: int
+    successor_pairs_generated: int
     resolved: bool
 
 
-def truth_table_output(mask: int, inputs: tuple[bool, ...]) -> bool:
-    index = sum(int(bit) << position for position, bit in enumerate(inputs))
-    return bool(mask & (1 << index))
+def possible_shared_outputs(
+    left_inputs: tuple[bool, ...],
+    right_inputs: tuple[bool, ...],
+) -> tuple[tuple[bool, bool], ...]:
+    """All output pairs allowed by one truth table on the two input tuples."""
+    if left_inputs == right_inputs:
+        return ((False, False), (True, True))
+    return tuple(product((False, True), repeat=2))
 
 
-def schedule_mask(seed: int, tick: int, vertex: int, arity: int) -> int:
-    """Return a deterministic tick-dependent table selected by ``seed``."""
-    mixed = (
-        seed * 1103515245
-        + (tick + 1) * 12345
-        + (vertex + 1) * 2654435761
-    ) & 0xFFFFFFFF
-    return mixed % (1 << (1 << arity))
-
-
-def update(state: State, seed: int, tick: int) -> State:
-    predecessor_lists = ((0,), (0, 1), (1, 2))
-    return tuple(
-        truth_table_output(
-            schedule_mask(seed, tick, vertex, len(predecessors)),
-            tuple(state[u] for u in predecessors),
+def adversarial_successors(left_state: State, right_state: State) -> set[StatePair]:
+    """Enumerate all next pairs under arbitrary shared local truth tables."""
+    output_options = []
+    for predecessors in PREDECESSOR_LISTS:
+        left_inputs = tuple(left_state[source] for source in predecessors)
+        right_inputs = tuple(right_state[source] for source in predecessors)
+        output_options.append(possible_shared_outputs(left_inputs, right_inputs))
+    return {
+        (
+            tuple(outputs[0] for outputs in per_vertex),  # type: ignore[misc]
+            tuple(outputs[1] for outputs in per_vertex),  # type: ignore[misc]
         )
-        for vertex, predecessors in enumerate(predecessor_lists)
-    )  # type: ignore[return-value]
+        for per_vertex in product(*output_options)
+    }
 
 
 def cumulative_reachability(sources: frozenset[int]) -> list[set[int]]:
@@ -68,26 +70,26 @@ def cumulative_reachability(sources: frozenset[int]) -> list[set[int]]:
 
 
 def compute_steelman_evidence() -> SteelmanEvidence:
-    """Test changing realized maps without changing them between histories."""
+    """Exhaust every pair transition allowed by pathwise-shared local maps."""
     configurations = tuple(product((False, True), repeat=3))
     initial_pairs = 0
-    tick_assertions = 0
+    tick_state_pairs = 0
+    successor_pairs = 0
     resolved = True
-    for seed in range(SCHEDULE_COUNT):
-        for left_initial in configurations:
-            for right_initial in configurations:
-                initial_pairs += 1
-                sources = frozenset(
-                    vertex
-                    for vertex, (left, right) in enumerate(
-                        zip(left_initial, right_initial)
-                    )
-                    if left != right
+    for left_initial in configurations:
+        for right_initial in configurations:
+            initial_pairs += 1
+            sources = frozenset(
+                vertex
+                for vertex, (left, right) in enumerate(
+                    zip(left_initial, right_initial)
                 )
-                reachable = cumulative_reachability(sources)
-                left_state = left_initial
-                right_state = right_initial
-                for tick in range(HORIZON + 1):
+                if left != right
+            )
+            reachable = cumulative_reachability(sources)
+            state_pairs: set[StatePair] = {(left_initial, right_initial)}
+            for tick in range(HORIZON + 1):
+                for left_state, right_state in state_pairs:
                     differences = {
                         vertex
                         for vertex, (left, right) in enumerate(
@@ -95,17 +97,21 @@ def compute_steelman_evidence() -> SteelmanEvidence:
                         )
                         if left != right
                     }
-                    tick_assertions += 1
+                    tick_state_pairs += 1
                     resolved = resolved and differences <= reachable[tick]
-                    if tick < HORIZON:
-                        # The same seed and tick select the same realized local
-                        # maps pathwise in both histories.
-                        left_state = update(left_state, seed, tick)
-                        right_state = update(right_state, seed, tick)
+                if tick < HORIZON:
+                    next_pairs: set[StatePair] = set()
+                    for left_state, right_state in state_pairs:
+                        successors = adversarial_successors(
+                            left_state, right_state
+                        )
+                        successor_pairs += len(successors)
+                        next_pairs.update(successors)
+                    state_pairs = next_pairs
     return SteelmanEvidence(
-        schedules_checked=SCHEDULE_COUNT,
         initial_pairs_checked=initial_pairs,
-        tick_assertions=tick_assertions,
+        tick_state_pairs_checked=tick_state_pairs,
+        successor_pairs_generated=successor_pairs,
         resolved=resolved,
     )
 
@@ -113,11 +119,13 @@ def compute_steelman_evidence() -> SteelmanEvidence:
 def steelman_resolution_line(evidence: SteelmanEvidence) -> str:
     return (
         f"N7_STEELMAN_RESOLUTION {WALL} wall resolved independently: "
-        f"{evidence.schedules_checked} deterministic seed schedules vary every "
-        "local truth table by tick while remaining shared across the two "
-        f"histories, and all {evidence.tick_assertions} tick comparisons obey "
-        "D_t subset C_t(S); changing shared randomness cannot create an exterior "
-        "difference."
+        "an exhaustive adversarial Boolean transition closure covered "
+        f"{evidence.initial_pairs_checked} initial pairs, "
+        f"{evidence.tick_state_pairs_checked} reachable state-pair checks, and "
+        f"{evidence.successor_pairs_generated} locally shared-map successor "
+        "choices; equal predecessor tuples were restricted to equal outputs, "
+        "different tuples allowed all four output pairs, and every resulting "
+        "state pair obeyed D_t subset C_t(S)."
     )
 
 
@@ -126,10 +134,10 @@ def main() -> int:
     status = "PASS" if evidence.resolved else "FAIL"
     print("NN CAUSAL BOUND N7 -- INDEPENDENT TIME-DEPENDENT MAP MODE")
     print(
-        f"[{status}] shared schedule steelman: "
-        f"schedules={evidence.schedules_checked} "
+        f"[{status}] universal shared-map steelman: "
         f"initial_pairs={evidence.initial_pairs_checked} "
-        f"tick_assertions={evidence.tick_assertions}"
+        f"tick_state_pairs={evidence.tick_state_pairs_checked} "
+        f"successor_pairs={evidence.successor_pairs_generated}"
     )
     if evidence.resolved:
         print(steelman_resolution_line(evidence))

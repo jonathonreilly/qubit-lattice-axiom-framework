@@ -10,16 +10,17 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from itertools import product
-from typing import Iterable
+from typing import TYPE_CHECKING, Iterable
 
-from lattice_nn_topological_causal_bound_n7_independent_check import (
-    SCHEDULE_COUNT,
-    compute_steelman_evidence,
-)
+if TYPE_CHECKING:
+    # Static audit-packet registration only.  The primary calculation neither
+    # executes nor imports the independent N7 implementation at runtime.
+    import lattice_nn_topological_causal_bound_n7_independent_check as _n7_helper
 
 
 Vertex = int
 Edge = tuple[Vertex, Vertex]
+PRIMARY_SCHEDULE_COUNT = 256
 N2_WALL = "outside-reachability influence under shared extensional R-local updates"
 
 
@@ -395,6 +396,108 @@ def check_heterogeneous_mode_provenance(horizon: int = 4) -> tuple[int, int]:
     return len(modes), checks
 
 
+def primary_schedule_mask(seed: int, tick: int, vertex: int, arity: int) -> int:
+    """Select a deterministic local truth table for the primary N1 probe."""
+    mixed = (
+        seed * 1664525
+        + (tick + 1) * 1013904223
+        + (vertex + 1) * 2246822519
+    ) & 0xFFFFFFFF
+    return mixed % (1 << (1 << arity))
+
+
+def check_time_varying_shared_schedule_samples(
+    horizon: int = 3,
+) -> tuple[int, int, int, int]:
+    """Probe time-varying pathwise-shared maps in the primary implementation."""
+    predecessor_lists = ((0,), (0, 1), (1, 2))
+    edges = tuple(
+        (source, vertex)
+        for vertex, predecessor_vertices in enumerate(predecessor_lists)
+        for source in predecessor_vertices
+    )
+    succ = successors(3, edges)
+    configurations = tuple(product((False, True), repeat=3))
+    table_coverage = {
+        (tick, vertex): set()
+        for tick in range(horizon)
+        for vertex in range(3)
+    }
+    initial_pairs = 0
+    tick_assertions = 0
+
+    def update(state: tuple[bool, ...], seed: int, tick: int) -> tuple[bool, ...]:
+        masks = tuple(
+            primary_schedule_mask(
+                seed, tick, vertex, len(predecessor_vertices)
+            )
+            for vertex, predecessor_vertices in enumerate(predecessor_lists)
+        )
+        for vertex, mask in enumerate(masks):
+            table_coverage[(tick, vertex)].add(mask)
+        return tuple(
+            truth_table_output(
+                mask, tuple(state[source] for source in predecessor_vertices)
+            )
+            for mask, predecessor_vertices in zip(masks, predecessor_lists)
+        )
+
+    for seed in range(PRIMARY_SCHEDULE_COUNT):
+        for left_initial in configurations:
+            for right_initial in configurations:
+                initial_pairs += 1
+                sources = frozenset(
+                    vertex
+                    for vertex, (left, right) in enumerate(
+                        zip(left_initial, right_initial)
+                    )
+                    if left != right
+                )
+                reachable = forward_reachability(succ, sources, horizon)
+                left_state = left_initial
+                right_state = right_initial
+                for tick in range(horizon + 1):
+                    differences = {
+                        vertex
+                        for vertex, (left, right) in enumerate(
+                            zip(left_state, right_state)
+                        )
+                        if left != right
+                    }
+                    require(
+                        differences <= reachable[tick],
+                        seed,
+                        left_initial,
+                        right_initial,
+                        tick,
+                        sorted(differences),
+                        sorted(reachable[tick]),
+                    )
+                    tick_assertions += 1
+                    if tick < horizon:
+                        left_state = update(left_state, seed, tick)
+                        right_state = update(right_state, seed, tick)
+
+    coverage_checks = 0
+    for (tick, vertex), observed_masks in table_coverage.items():
+        arity = len(predecessor_lists[vertex])
+        expected_masks = set(range(1 << (1 << arity)))
+        require(
+            observed_masks == expected_masks,
+            tick,
+            vertex,
+            sorted(observed_masks),
+            sorted(expected_masks),
+        )
+        coverage_checks += 1
+    return (
+        PRIMARY_SCHEDULE_COUNT,
+        initial_pairs,
+        tick_assertions,
+        coverage_checks,
+    )
+
+
 def emit_current_cycle_no_go_evidence(
     *,
     realized_cases: int,
@@ -405,12 +508,11 @@ def emit_current_cycle_no_go_evidence(
     mode_count: int,
     mode_assertions: int,
     history_checks: int,
+    schedule_count: int,
+    schedule_initial_pairs: int,
+    schedule_tick_assertions: int,
 ) -> None:
     """Emit N1/N2/N5/N7 evidence only after every live calculation passes."""
-    steelman = compute_steelman_evidence()
-    require(steelman.resolved, steelman)
-    require(steelman.schedules_checked == SCHEDULE_COUNT, steelman)
-
     print()
     print("NO-GO DISCIPLINE CURRENT-CYCLE EVIDENCE")
     print(
@@ -449,8 +551,8 @@ def emit_current_cycle_no_go_evidence(
         "N1_ROUTE route_id=time-varying-shared-random; "
         "route_class=dynamical_or_effective_action; honesty_marker=ATTEMPTED; "
         "disposition=CLOSED; mechanism=dynamical time-dependent shared-random map schedule; "
-        f"attempt=enumerate {SCHEDULE_COUNT} seed-selected local truth-table schedules on a three-vertex chain and compare every initial-history pair through three ticks; "
-        "outcome=no exterior difference appears when each time-dependent seed schedule is shared pathwise"
+        f"attempt=probe {schedule_count} seed-selected local truth-table schedules on a three-vertex chain across {schedule_initial_pairs} initial-history comparisons and three ticks; "
+        f"outcome=all {schedule_tick_assertions} sampled tick comparisons stay inside reachability when each time-dependent schedule is shared pathwise"
     )
 
     print(
@@ -484,8 +586,8 @@ def emit_current_cycle_no_go_evidence(
 
     print(
         "N7_STEELMAN_ARGUMENT mechanism=dynamical time-dependent shared-random map schedule; "
-        f"attempt=enumerate {SCHEDULE_COUNT} seed-selected local truth-table schedules on a three-vertex chain and compare every initial-history pair through three ticks; "
-        "argument=the strongest attack is that changing realized maps across ticks could let common external randomness reactivate a vanished difference outside the apparent cone, so an independently implemented schedule calculation must close that route."
+        f"attempt=probe {schedule_count} seed-selected local truth-table schedules on a three-vertex chain across {schedule_initial_pairs} initial-history comparisons and three ticks; "
+        "argument=the strongest attack is that changing realized maps across ticks could let common external randomness reactivate a vanished difference outside the apparent cone, so an independently implemented exhaustive adversarial transition calculation must close that route."
     )
 
 
@@ -561,6 +663,12 @@ def main() -> None:
         check_exhaustive_three_vertex_relations()
     )
     mode_count, mode_assertions = check_heterogeneous_mode_provenance()
+    (
+        schedule_count,
+        schedule_initial_pairs,
+        schedule_tick_assertions,
+        schedule_coverage_checks,
+    ) = check_time_varying_shared_schedule_samples()
     print("NN topological causal-bound certificate")
     print("claim: finite graph/DAG forward reachability for source sets")
     print()
@@ -583,6 +691,12 @@ def main() -> None:
     print(
         "PASS heterogeneous_mode_provenance: "
         f"modes={mode_count} horizon=4 assertions={mode_assertions}"
+    )
+    print(
+        "PASS time_varying_shared_schedule_samples: "
+        f"schedules={schedule_count} initial_pairs={schedule_initial_pairs} "
+        f"tick_assertions={schedule_tick_assertions} "
+        f"local_table_coverage_checks={schedule_coverage_checks}"
     )
 
     for case in cases:
@@ -611,6 +725,9 @@ def main() -> None:
         mode_count=mode_count,
         mode_assertions=mode_assertions,
         history_checks=history_checks,
+        schedule_count=schedule_count,
+        schedule_initial_pairs=schedule_initial_pairs,
+        schedule_tick_assertions=schedule_tick_assertions,
     )
     print("NON-CLAIMS:")
     print("  - no emergent relativity check")

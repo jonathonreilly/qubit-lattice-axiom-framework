@@ -1,131 +1,166 @@
-# Self-Consistency Preference for Poisson Field Equation
+# Finite-Grid Self-Consistency Checks for the Poisson Field Equation
 
 **Type:** bounded_theorem
-**Status:** bounded - bounded or caveated result note
-## Status: review hold; bounded operator-preference result
+
+**Scope:** Finite fixed-point convergence and screened-family comparisons for
+the declared three-dimensional Dirichlet cubic-lattice protocol.
+
+**Audit status:** This source note does not assign an audit verdict or effective
+status.
 
 ## Context
 
-A key reviewer objection is that the framework may be dressing up Poisson
-input as emergence. This note documents a narrower result: on the tested
-nearest-neighbor cubic lattice, unscreened Poisson is the best-supported
-member of the audited operator family and the only one in that sweep that
-stays near the Newtonian target.
+This note tests a supplied family of field solvers in the density/field
+fixed-point loop implemented by
+[`frontier_self_consistent_field_equation.py`](../scripts/frontier_self_consistent_field_equation.py).
+It previously treated a shared source sign and an integrated susceptibility
+correlation as evidence that Poisson was preferred over a broad operator
+family. The conditional audit and the finite diagnostic below show that those
+two comparisons do not support that broad preference.
 
-## The Self-Consistency Argument
+The safe result is narrower: Poisson converges on the declared finite protocol,
+and unscreened Poisson is closest to the target beta within the tested
+screened-Poisson subfamily. No continuum operator selection or uniqueness
+claim is made.
 
-If we demand that the gravitational field phi is sourced by the density
-rho = |psi|^2 of the propagator that evolves IN that field, then:
+## Supplied fixed-point protocol
 
-1. The propagator uses action S = L(1-phi) with nearest-neighbor hops.
-2. The density rho = |psi|^2 sources the field via some operator: L phi = -G rho.
-3. Self-consistency requires the fixed point: phi_* such that
-   L phi_* = -G |psi(phi_*)|^2.
-4. On a graph with nearest-neighbor coupling, the propagator's Green's
-   function IS the inverse of the graph Laplacian.
-5. Therefore the inverse graph Laplacian is a natural candidate for a
-   self-consistent field operator on this surface.
+The runner uses:
 
-## Numerical Evidence
+- a 3D cubic lattice with Dirichlet boundaries;
+- wave number `k=5.0`, source width `sigma=2.0`, and coupling `G=0.5`;
+- fixed-point mixing `0.3`, tolerance `1e-4`, and at most `30` iterations; and
+- the runner's finite-grid `check_field_physics` beta estimator and one-axis
+  monotonicity diagnostic.
 
-Script: `scripts/frontier_self_consistent_field_equation.py`
-Lattice: 3D cubic, N=20 and N=24, Dirichlet BC.
+The field equation is supplied to the loop. Convergence of that loop tests
+compatibility with the numerical propagation protocol; it does not derive the
+operator from the framework axioms.
 
-### Test 1: Poisson Converges
+## Numerical evidence
 
-Self-consistent iteration (propagate -> measure rho -> solve Poisson -> repeat)
-converges in ~10 iterations with mixing alpha=0.3. The converged field is:
-- Attractive (phi > 0 near source)
-- Monotonically decaying
-- Approximately `1/r^beta` with raw finite-grid `beta ~ 1.28` (no continuum
-  interpretation is established; see caveat)
+### 1. Poisson fixed-point convergence
 
-### Test 2: Alternative Field Equations Underperform
+At `N=20` and `N=24`, the Poisson iteration converges in approximately ten
+iterations. Its field has the selected well sign, passes the runner's one-axis
+monotonicity check, and has raw finite-grid beta near `1.28`.
 
-| Equation | Converged? | Attractive? | beta | Physical? |
-|----------|-----------|-------------|------|-----------|
-| Poisson (nabla^2 phi = rho) | Yes (10 iter) | YES | 1.28 | YES |
-| Biharmonic (nabla^4 phi = rho) | Yes (22 iter) | NO | 0.87 | NO |
-| 1/r^2 kernel | No (20 iter) | NO | 1.03 | NO |
-| Local (phi = G*rho) | Yes (7 iter) | NO | 8.64 | NO |
-| Random PD kernel | Yes (2 iter) | NO | 4.19 | NO |
+The beta is a measurement of this finite estimator. It has no established
+continuum interpretation. The separate downstream study
+`docs/POISSON_SELF_CONSISTENT_BETA_CAVEAT_BOUNDED_DIAGNOSTIC_NOTE_2026-07-26.md`
+records finite-fit behavior but is not used here as an upstream authority.
 
-Among the non-screened alternatives tested here, Poisson is the only one that
-produces an attractive well with a near-Newtonian decay. That is a meaningful
-discriminator, but it is not a proof that all other local operators fail.
+### 2. Deterministic alternatives after source-sign normalization
 
-### Test 3: Susceptibility Matches Poisson Green's Function
+The Poisson solver's response to a positive source has the opposite sign from
+the tested biharmonic, local, and inverse-square-kernel solvers. A shared
+negative source therefore makes the old cross-operator attractiveness column
+convention-dependent.
 
-The propagator's integrated density response to localized field perturbations
-at distance r correlates with the Poisson Green's function profile:
-- Shape correlation: 0.93 (strong match)
-- This confirms that the propagator's own structure selects the inverse
-  Laplacian as its natural response kernel.
+The bounded diagnostic
+[`POISSON_RESPONSE_KERNEL_AND_SIGN_NORMALIZATION_FINITE_GRID_BOUNDED_NOTE_2026-07-26.md`](POISSON_RESPONSE_KERNEL_AND_SIGN_NORMALIZATION_FINITE_GRID_BOUNDED_NOTE_2026-07-26.md)
+applies the coupling once and normalizes the source sign per deterministic
+operator. All four iterations converge, have the selected sign throughout the
+tested interior, and pass the parent runner's one-axis monotonicity diagnostic:
 
-### Test 4: Screened Poisson Sweep
+| rank by `abs(beta-1)` | operator | `beta`, N=20 | `beta`, N=24 |
+|---:|---|---:|---:|
+| 1 | biharmonic | `0.8762` | `0.8669` |
+| 2 | inverse-square kernel | `1.2120` | `1.2420` |
+| 3 | Poisson | `1.2799` | `1.2861` |
+| 4 | local | `8.6371` | `12.2852` |
 
-Among operators (nabla^2 - mu^2) phi = rho:
-- mu^2 = 0 (pure Poisson): beta = 1.28 (closest to 1.0)
-- mu^2 = 0.1: beta = 1.72
-- mu^2 = 1.0: beta = 3.55
-- mu^2 = 2.0: beta = 4.49
+This finite table does not rank Poisson first under the supplied beta
+diagnostic. It also does not establish that a rival is physically preferred:
+the estimator, grids, operator family, and boundary conditions are supplied,
+and no continuum ordering is derived. The random positive-definite control
+from the original runner has not been included in the sign-normalized
+comparison.
 
-Within the screened-Poisson family, all tested `mu^2` values remain
-self-consistent and attractive, but only the unscreened case stays close to
-the `1/r` Newtonian target. Mass terms push the decay toward Yukawa behavior.
+### 3. Integrated susceptibility and matched point response
 
-## Bounded Claims
+The original integrated susceptibility statistic has Pearson correlation
+`0.920038` with the finite Poisson Green profile over seven radii at `N=20`.
+The two fitted slopes are nevertheless `-2.2420` and `-1.5666`, and their
+pointwise ratio varies by a factor `10.7`.
 
-1. On this 3D cubic lattice with nearest-neighbor coupling, unscreened
-   Poisson is the best-supported operator in the tested family and the only
-   tested one that stays close to the Newtonian target.
+More directly, the bounded diagnostic compares forward finite-difference
+density-response columns with inverse-Laplacian columns at the same
+perturbation sites. At three `N=10` sites and step `h=1e-3`, the response
+columns are sign-indefinite, the Green columns are single-signed, and their
+best-scalar residuals are `0.9987 .. 0.9996`.
 
-2. Among the tested alternatives, unscreened Poisson is preferred over
-   biharmonic, local, random-kernel, and screened variants when the target is
-   an attractive monotone field with near-`1/r` decay.
+These finite observations withdraw the former statement that the density
+susceptibility confirms an inverse-Laplacian response kernel. They do not rule
+out a different Laplacian-related statement about the amplitude propagator.
 
-3. The propagator's density susceptibility profile correlates (`r = 0.93`)
-   with the Poisson Green's function, providing supportive evidence that the
-   inverse Laplacian is a natural response kernel on this surface.
+### 4. Screened-Poisson subfamily
 
-## Caveats
+Within the supplied family
 
-- **Finite-grid beta**: The measured `beta ~ 1.28` is a raw fit on the
-  declared small Dirichlet grids; this note does not establish that its
-  difference from `1.0` is a finite-size effect. The previously cited
-  distance-law script computes ray deflection in a prescribed `f=s/r` field,
-  not this self-consistent beta. The bounded companion runner
-  [`physical_poisson_self_consistent_beta_caveat_bounded_diagnostic_2026_07_26.py`](../scripts/physical_poisson_self_consistent_beta_caveat_bounded_diagnostic_2026_07_26.py)
-  finds that two selected finite-data fits give intercepts `1.2747` and
-  `1.1578`, while the parent propagator's per-layer normalization gives every
-  computed density a uniform x-layer marginal `1/N`. A localized-source,
-  source-exterior diagnostic or a bridge between the two observables remains
-  open.
+```text
+(Laplacian - mu^2 I) phi = source,
+```
 
-  Source-side repair record (2026-07-28, PR #5662): the unsupported continuum
-  sentence was withdrawn and the beta statement narrowed to the finite
-  numerical protocol; no audit grade or full parent-row closure is asserted.
+the original runner reports:
 
-- **Lattice-level result**: This demonstration is on an ordered cubic lattice.
-  Extension to grown/random graphs requires separate verification.
+| `mu^2` | raw finite-grid beta |
+|---:|---:|
+| `0.0` | `1.28` |
+| `0.1` | `1.72` |
+| `1.0` | `3.55` |
+| `2.0` | `4.49` |
 
-- **Linear response regime**: The susceptibility test uses small perturbations
-  (delta_phi = 0.1). Nonlinear regime behavior is not tested.
+These matrices have the same definiteness convention, so the cross-operator
+source-sign defect does not affect this within-family comparison. On the
+declared finite estimator, the unscreened member is closest to `beta=1` among
+the displayed screened cases.
 
-- **This is not a uniqueness theorem**: the code tests a finite operator
-  family, not the full space of local or nonlocal kernels.
+## Bounded claims
 
-## Significance for the Paper
+1. The supplied Poisson density/field iteration converges at `N=20` and `N=24`
+   under the declared parameters and produces the reported finite-grid
+   diagnostics.
+2. Within the displayed screened-Poisson subfamily, `mu^2=0` is closest to
+   `beta=1` under the runner's finite-grid estimator.
+3. The broad deterministic-operator preference formerly stated here is not
+   supported by the shared-sign attractiveness column or by the integrated
+   susceptibility correlation.
+4. The point-to-point density-response diagnostic does not establish that the
+   measured finite-difference kernel is proportional to the inverse graph
+   Laplacian at the sampled sites.
 
-This result narrows the circularity objection but does not eliminate it
-completely. The safe read is:
+## Explicit limits
 
-1. the propagator has nearest-neighbor coupling and a susceptibility profile
-   close to the Poisson Green's function
-2. unscreened Poisson is preferred over the tested alternatives when the goal
-   is an attractive near-Newtonian self-consistent fixed point
-3. this is strong review-grade evidence for Poisson preference on this surface,
-   not a proof that Poisson is uniquely forced in full generality
+- The field operators, source sign convention, boundary conditions, beta
+  estimator, and fixed-point protocol are supplied numerical choices.
+- The normalized deterministic comparison does not include the random-kernel
+  control.
+- The monotonicity flag is a short one-axis diagnostic, not a proof of global
+  radial monotonicity.
+- The point-response result uses three sites, `N=10`, and a forward
+  finite-difference step `h=1e-3`.
+- The beta values do not establish a continuum ranking.
+- The finite operator family is not an exhaustive space of local or nonlocal
+  kernels.
+- No framework axiom or registered primitive selects Poisson in this note.
 
-That makes this a review-tier answer to the “just Poisson dressed up” critique,
-but not yet a `main`-ready uniqueness claim.
+## Source-side repair records
+
+- **2026-07-28, PR #5662:** withdrew the unsupported claim that the raw
+  `beta≈1.28` is known to approach `1.0`, linked the finite-size beta
+  diagnostic, and left the continuum interpretation open.
+- **2026-07-28, PR #5656:** linked the matched point-response and
+  source-sign-normalization diagnostic, replaced the broad operator-preference
+  prose with the finite scope above, corrected the paired runner's summary
+  strings without changing its computations, and preserved only the Poisson
+  convergence and screened-family results. This source-side change is intended
+  to requeue the terminal conditional row for independent audit; it does not
+  author or apply an audit grade.
+
+## Reproduction
+
+```bash
+python3 scripts/frontier_self_consistent_field_equation.py
+python3 scripts/physical_poisson_response_kernel_sign_indefinite_cycle710_2026_07_26.py
+```

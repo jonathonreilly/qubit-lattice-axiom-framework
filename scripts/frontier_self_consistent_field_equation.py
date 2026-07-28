@@ -1,21 +1,17 @@
 #!/usr/bin/env python3
-"""Self-consistency forces Poisson: the field equation is NOT an input.
+"""Finite-grid self-consistency diagnostics for supplied field solvers.
 
-A skeptical reviewer says: "you put in Poisson, you got 1/r^2 -- that's input,
-not emergence." This script demonstrates that Poisson is the UNIQUE self-consistent
-field equation for a nearest-neighbor path-sum propagator on a cubic lattice.
-
-The argument:
-  If we demand that phi is sourced by rho = |psi|^2 of the propagator that
-  evolves IN that field, then the field equation is determined by the propagator's
-  Green's function. On a graph with nearest-neighbor coupling, that Green's
-  function IS the inverse Laplacian. Self-consistency forces Poisson.
+The script iterates a density/field fixed point for Poisson and several
+supplied alternatives on finite Dirichlet cubic lattices. The operator,
+source-sign convention, boundary conditions, and diagnostics are inputs.
+Convergence tests compatibility with this numerical protocol; it does not
+derive or uniquely select a field equation.
 
 Tests:
   1. Self-consistent iteration with Poisson -- converges
-  2. Self-consistent iteration with WRONG field equations -- diverges or unphysical
-  3. Propagator susceptibility matches Poisson Green's function
-  4. Uniqueness: only graph Laplacian gives self-consistent convergence
+  2. Fixed-sign iterations with supplied alternative field equations
+  3. Integrated susceptibility and finite Poisson Green profiles
+  4. A finite screened-Poisson parameter sweep
 
 PStack experiment: self-consistent-field-equation
 """
@@ -451,10 +447,10 @@ def compute_susceptibility_profile(N: int, k: float,
     This gives the propagator's integrated susceptibility as a function of
     distance from the source.
 
-    The key insight: the propagator uses action S = L*(1-f). A field perturbation
-    at site r_p modifies the phase of paths passing through r_p. The density
-    response depends on HOW MANY paths go through r_p and how sensitive they are.
-    On a nearest-neighbor lattice, this response kernel is the inverse Laplacian.
+    The propagator uses action S = L*(1-f). A field perturbation at site r_p
+    modifies the phase of paths passing through r_p, and this statistic records
+    the resulting total-variation density reshaping. No point-to-point
+    inverse-Laplacian identity is assumed.
     """
     sx, sy, sz = source_pos
 
@@ -512,12 +508,11 @@ def main():
     t_start = time.time()
 
     print("=" * 80)
-    print("SELF-CONSISTENCY FORCES POISSON FIELD EQUATION")
+    print("FINITE-GRID FIELD-EQUATION SELF-CONSISTENCY DIAGNOSTIC")
     print("=" * 80)
     print()
-    print("Hypothesis: The field equation is NOT a free choice. Self-consistency")
-    print("of the propagator (rho = |psi|^2 sources phi, psi evolves in phi)")
-    print("FORCES Poisson (nabla^2 phi = -G rho) as the unique local field equation.")
+    print("Question: which supplied field solvers converge in the declared")
+    print("density/field fixed-point protocol, and what finite diagnostics result?")
     print()
 
     N = 20
@@ -567,10 +562,10 @@ def main():
     print()
 
     # ===================================================================
-    # TEST 2: Self-consistent iteration with WRONG field equations
+    # TEST 2: Self-consistent iteration with alternative field equations
     # ===================================================================
     print("=" * 80)
-    print("TEST 2: WRONG FIELD EQUATIONS")
+    print("TEST 2: SUPPLIED ALTERNATIVE FIELD EQUATIONS")
     print("=" * 80)
     print()
 
@@ -599,7 +594,7 @@ def main():
     print()
 
     # 2b: Inverse-distance-squared kernel (1/r^2 instead of 1/r)
-    print("--- 2b: 1/r^2 kernel (wrong Green's function) ---")
+    print("--- 2b: 1/r^2 kernel (alternative Green profile) ---")
     # This is slow for large N, so use smaller grid
     N_small = 14
     mid_s = N_small // 2
@@ -712,9 +707,9 @@ def main():
     print("TEST 3: PROPAGATOR SUSCEPTIBILITY vs POISSON GREEN'S FUNCTION")
     print("=" * 80)
     print()
-    print("The propagator's integrated density response to localized field")
-    print("perturbations at distance r should fall off like the Poisson Green's")
-    print("function G(r) ~ 1/r if the propagator 'wants' Poisson.")
+    print("Compare the propagator's integrated absolute density reshaping after")
+    print("localized field perturbations with an integrated finite Poisson")
+    print("Green profile. This is not a matched point-to-point kernel test.")
     print()
 
     N_susc = 18
@@ -767,14 +762,14 @@ def main():
     print()
 
     # ===================================================================
-    # TEST 4: Uniqueness - sweep over operator families
+    # TEST 4: Screened-Poisson sweep
     # ===================================================================
     print("=" * 80)
-    print("TEST 4: UNIQUENESS -- OPERATOR SWEEP")
+    print("TEST 4: SCREENED-POISSON PARAMETER SWEEP")
     print("=" * 80)
     print()
-    print("Among local operators L*phi = rho on the graph, only the graph")
-    print("Laplacian gives self-consistent convergence with correct physics.")
+    print("Compare unscreened and screened members under one shared sign")
+    print("convention and the runner's finite-grid beta estimator.")
     print()
 
     # Test modified Laplacians: L = nabla^2 + alpha * I (screened Poisson)
@@ -825,9 +820,8 @@ def main():
               f"{last_res:>12.4e}  {beta_str:>8s}  {attr:>10s}")
 
     print()
-    print("Note: mu^2 = 0 is pure Poisson. As mu^2 increases, the Green's function")
-    print("changes from 1/r (Coulomb) to exp(-mu*r)/r (Yukawa). Only mu^2 = 0 gives")
-    print("the correct beta = 1.0 for Newtonian gravity.")
+    print("Note: mu^2 = 0 is pure Poisson. On this displayed finite sweep,")
+    print("positive mu^2 moves the fitted beta farther from the supplied target 1.0.")
     print()
 
     # ===================================================================
@@ -857,10 +851,10 @@ def main():
     print()
 
     # ===================================================================
-    # VERDICT
+    # BOUNDED SUMMARY
     # ===================================================================
     print("=" * 80)
-    print("VERDICT")
+    print("BOUNDED SUMMARY")
     print("=" * 80)
     print()
 
@@ -890,87 +884,52 @@ def main():
         print(f"    -> attractive={phys_r['attractive']}, beta={phys_r['beta']:.3f}")
     print()
 
-    # Susceptibility verdict
+    # Susceptibility summary
     print(f"Propagator susceptibility vs Poisson Green's function:")
     if not math.isnan(corr_3d):
         print(f"  3D correlation: {corr_3d:.4f}")
-        if corr_3d > 0.9:
-            print("  -> STRONG match: propagator's own structure demands Poisson")
-        elif corr_3d > 0.7:
-            print("  -> MODERATE match: suggestive but not conclusive")
-        else:
-            print("  -> WEAK match: propagator structure differs from Poisson")
+        print("  This integrated monotone-profile correlation is reported as a")
+        print("  finite statistic, not as a matched response-kernel identity.")
     print()
 
-    # Final assessment
-    all_wrong_unphysical = True
-    for name, res in wrong_results.items():
-        if res['converged']:
-            N_used = N if name != 'inv_r2' else N_small
-            sp = source_pos if name != 'inv_r2' else source_small
-            phys = check_field_physics(N_used, res['phi'], sp)
-            if phys['attractive'] and phys['monotonic'] and abs(phys['beta'] - 1.0) < 0.3:
-                all_wrong_unphysical = False
-    screened_has_attractive = any(
-        sweep['attractive'] for sweep in screened_sweep_results.values()
-    )
-
     print("ASSESSMENT:")
-    if poisson_ok and all_wrong_unphysical and not screened_has_attractive:
-        print("  Poisson converges and produces correct physics (attractive, 1/r, monotonic).")
-        print("  All tested alternatives either fail to converge or produce unphysical fields.")
-        print("  The propagator's susceptibility correlates with the Poisson Green's function.")
-        print()
-        print("  CONCLUSION: Self-consistency of the path-sum propagator strongly favors")
-        print("  Poisson as the field equation. It is not a free input but is determined")
-        print("  by the nearest-neighbor structure of the lattice propagator.")
-    elif poisson_ok:
-        print("  Poisson converges with the best near-Newtonian physics in this tested family.")
-        print("  Some alternatives also converge, and screened Poisson remains attractive")
-        print("  while drifting away from the Newtonian target.")
-        print("  Self-consistency PREFERS unscreened Poisson on this surface but does not")
-        print("  uniquely force it at this lattice size.")
+    if poisson_ok:
+        print("  Poisson converges on the displayed finite protocol.")
+        print("  The fixed-sign cross-operator attractiveness column is not a")
+        print("  preference test because the supplied solvers have different")
+        print("  fundamental-solution signs.")
+        print("  The screened-family sweep remains a same-sign finite comparison.")
     else:
         print("  WARNING: Poisson iteration did not converge. The self-consistency")
-        print("  argument requires further investigation.")
+        print("  protocol requires further investigation.")
 
     dt = time.time() - t_start
     print(f"\nTotal runtime: {dt:.0f}s ({dt/60:.1f} min)")
 
     # ===================================================================
-    # SAFE CLAIMS
+    # BOUNDED OUTPUT CLAIMS
     # ===================================================================
     print()
     print("=" * 80)
-    print("SAFE CLAIMS")
+    print("BOUNDED OUTPUT CLAIMS")
     print("=" * 80)
     print()
     print("1. Self-consistent iteration phi <- solve(rho=|psi(phi)|^2) converges")
     print("   for the Poisson field equation on a 3D cubic lattice (N=20,24).")
     print()
-    print("2. Among tested alternatives (biharmonic, local, 1/r^2 kernel, random"),
-    print("   kernel), Poisson is the only field equation producing convergent")
-    print("   self-consistent solutions with physically correct properties")
-    print("   (attractive field, 1/r decay, monotonic profile).")
+    print("2. The displayed alternative-solver iterations are reproducible outputs")
+    print("   under one shared source sign; their cross-operator attractiveness")
+    print("   labels do not establish an operator preference.")
     print()
-    print("3. The propagator's linear susceptibility (density response to a")
-    print("   delta-function field perturbation) correlates with the Poisson")
-    print("   Green's function, suggesting the propagator's own structure")
-    print("   selects the inverse Laplacian as its natural response kernel.")
+    print("3. The integrated absolute density-reshaping statistic has the reported")
+    print("   finite correlation with an integrated Poisson Green profile. This")
+    print("   is not a matched point-to-point response-kernel identity.")
     print()
-    print("4. Screened Poisson (nabla^2 - mu^2)phi = rho deviates from beta=1.0")
-    print("   for mu^2 > 0, confirming that the UNSCREENED Laplacian is preferred.")
+    print("4. In the displayed screened-Poisson sweep, positive mu^2 moves the")
+    print("   finite-grid beta farther from 1.0 than the unscreened member.")
     print()
-    print("BOUNDED CLAIM: On a 3D cubic lattice with nearest-neighbor coupling,")
-    print("self-consistency of the path-sum propagator selects the graph Laplacian")
-    print("as the unique local field operator, forcing the Poisson equation.")
-    print("This is a lattice-level result; continuum universality requires separate")
-    print("demonstration via the continuum limit.")
-    print()
-    print("CLASSIFIED AUDIT PASS LINES")
-    print("PASS (C): Poisson self-consistent iteration converged on N=20 and N=24 with attractive monotone fields.")
-    print("PASS (C): Tested non-screened alternatives completed; Poisson is the only tested case with convergent attractive near-Newtonian output.")
-    print("PASS (C): Screened-Poisson sweep completed; positive mu^2 cases drift away from the beta=1 target on the tested grid.")
+    print("No continuum ranking, broad operator preference, or uniqueness theorem")
+    print("is claimed by this runner.")
 
 
 if __name__ == "__main__":

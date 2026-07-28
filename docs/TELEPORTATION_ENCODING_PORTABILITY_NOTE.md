@@ -247,22 +247,24 @@ preparation) remains open.
 ## Downstream Boundary Alignment (2026-06-13)
 
 The runner now requires every downstream teleportation boundary anchor to be
-graph-visible with a recorded audit verdict before this finite portability
-artifact can report success. It records each anchor's current status without
-treating downstream scientific results as premises of the finite operator
-calculation. The direct consumers are the retained-axis operator-algebra
-closure, cross-encoding maps, three-register cross-encoding, no-signaling,
-3D-operator, and conclusion boundary anchors; the portability helper also records
-the measurement, resource, and causal-channel anchors needed by the full
-planning stack.
+graph-visible with a terminal recorded audit verdict before this finite
+portability artifact can report success. It records each anchor's current
+status without treating downstream scientific results as premises of the
+finite operator calculation. A helper `PASS` means only that the terminal
+status record is present; it does not promote a terminal non-clean status or
+turn that row into scientific support. The direct consumers are the
+retained-axis operator-algebra closure, cross-encoding maps, three-register
+cross-encoding, no-signaling, 3D-operator, and conclusion boundary anchors;
+the portability helper also records the measurement, resource, and
+causal-channel anchors needed by the full planning stack.
 
 The portability helper reads those statuses from the tracked sharded audit ledger
 through `docs/audit/scripts/ledger_io.py`. Therefore the boundary check works
 in an isolated checkout without requiring the ignored monolithic
 `docs/audit/data/audit_ledger.json` compatibility cache to be materialized.
 
-This alignment keeps the result bounded. It supports finite even-side encoding
-portability and operator targeting on the audited state-teleportation surface,
-but it still does not derive odd-side behavior, a physical apparatus,
-resource-preparation dynamics, durable records, matter transport, or
-nature-grade closure.
+This alignment keeps the result bounded. It preserves the finite even-side
+encoding-portability and operator-targeting result while recording the
+downstream boundary statuses as they stand. It still does not derive odd-side
+behavior, a physical apparatus, resource-preparation dynamics, durable
+records, matter transport, or nature-grade closure.

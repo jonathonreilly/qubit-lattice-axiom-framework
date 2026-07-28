@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_teleportation_encoding_portability.py
 runner_sha256: 3ee66c21d908816e18e73061feed7854b2cf0e33b6b5a454f1b320f04ec00080
-input_fingerprint_sha256: 07b305c6440a9bbf13fab31d561eaed4f497fb8978e5177b46d1c85d4cb3353f
+input_fingerprint_sha256: 11c11e1891f7e921d8f608817117a42f44acb08033ce75a2c9cfbbcada64da06
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 2.51
+elapsed_sec: 2.02
 status: ok
 ----- stdout -----
 TASTE-QUBIT ENCODING PORTABILITY AUDIT
@@ -95,19 +95,19 @@ Claim boundary:
   transfer, mass transfer, or faster-than-light signaling.
 
 Downstream boundary checks:
-  downstream teleportation boundary: teleportation_causal_channel_note has a recorded audited boundary status: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_measurement_record_note has a recorded audited boundary status: PASS (effective=audited_conditional, audit=audited_conditional)
-  downstream teleportation boundary: teleportation_apparatus_dynamics_closure_note has a recorded audited boundary status: PASS (effective=audited_failed, audit=audited_failed)
-  downstream teleportation boundary: teleportation_dynamical_resource_generation_note has a recorded audited boundary status: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_resource_fidelity_note has a recorded audited boundary status: PASS (effective=audited_conditional, audit=audited_conditional)
-  downstream teleportation boundary: teleportation_retained_axis_operator_algebra_closure_note has a recorded audited boundary status: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_cross_encoding_maps_note has a recorded audited boundary status: PASS (effective=audited_conditional, audit=audited_conditional)
-  downstream teleportation boundary: teleportation_three_register_cross_encoding_note has a recorded audited boundary status: PASS (effective=audited_conditional, audit=audited_conditional)
-  downstream teleportation boundary: teleportation_no_signaling_audit has a recorded audited boundary status: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_3d_operator_consistent_end_to_end_note has a recorded audited boundary status: PASS (effective=retained_bounded, audit=audited_clean)
-  downstream teleportation boundary: teleportation_conclusion_boundary_note has a recorded audited boundary status: PASS (effective=audited_renaming, audit=audited_renaming)
+  downstream teleportation boundary: teleportation_causal_channel_note has a recorded audited boundary status: PASS (record-only, not scientific support; effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_measurement_record_note has a recorded audited boundary status: PASS (record-only, not scientific support; effective=audited_conditional, audit=audited_conditional)
+  downstream teleportation boundary: teleportation_apparatus_dynamics_closure_note has a recorded audited boundary status: PASS (record-only, not scientific support; effective=audited_failed, audit=audited_failed)
+  downstream teleportation boundary: teleportation_dynamical_resource_generation_note has a recorded audited boundary status: PASS (record-only, not scientific support; effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_resource_fidelity_note has a recorded audited boundary status: PASS (record-only, not scientific support; effective=audited_conditional, audit=audited_conditional)
+  downstream teleportation boundary: teleportation_retained_axis_operator_algebra_closure_note has a recorded audited boundary status: PASS (record-only, not scientific support; effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_cross_encoding_maps_note has a recorded audited boundary status: PASS (record-only, not scientific support; effective=audited_conditional, audit=audited_conditional)
+  downstream teleportation boundary: teleportation_three_register_cross_encoding_note has a recorded audited boundary status: PASS (record-only, not scientific support; effective=audited_conditional, audit=audited_conditional)
+  downstream teleportation boundary: teleportation_no_signaling_audit has a recorded audited boundary status: PASS (record-only, not scientific support; effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_3d_operator_consistent_end_to_end_note has a recorded audited boundary status: PASS (record-only, not scientific support; effective=retained_bounded, audit=audited_clean)
+  downstream teleportation boundary: teleportation_conclusion_boundary_note has a recorded audited boundary status: PASS (record-only, not scientific support; effective=audited_renaming, audit=audited_renaming)
   downstream teleportation boundary: lane remains state-teleportation only with no-transfer boundary: PASS (checked conclusion boundary note)
-  downstream teleportation boundary: finite planning support is not nature-grade closure: PASS (planning closure and nature-grade hold are distinct)
+  downstream teleportation boundary: conclusion row remains an open finite-premise planning gate: PASS (open-gate status and non-closure boundary checked)
 
 ----- stderr -----
 

@@ -21,10 +21,12 @@ ANCHORS = (
     "teleportation_conclusion_boundary_note",
 )
 
-AUDITED_STATUSES = {
+TERMINAL_AUDIT_STATUSES = {
     "audited_clean",
     "audited_conditional",
+    "audited_decoration",
     "audited_failed",
+    "audited_numerical_match",
     "audited_renaming",
 }
 
@@ -75,8 +77,10 @@ def teleportation_boundary_check_results(
             (
                 f"{prefix}: {row_id} has a recorded audited boundary status",
                 row.get("claim_id") == row_id
-                and audit in AUDITED_STATUSES
-                and isinstance(effective, str),
+                and audit in TERMINAL_AUDIT_STATUSES
+                and isinstance(effective, str)
+                and bool(effective),
+                f"record-only, not scientific support; "
                 f"effective={effective}, audit={audit}",
             )
         )
@@ -92,10 +96,8 @@ def teleportation_boundary_check_results(
             all(
                 phrase in conclusion
                 for phrase in [
-                    "ordinary quantum state teleportation only",
+                    "ordinary quantum state teleportation planning only",
                     "No matter, mass, charge, energy, object, or faster-than-light transport is claimed.",
-                    "unconditional_closed = False",
-                    "nature-grade closure HOLD",
                 ]
             ),
             "checked conclusion boundary note",
@@ -103,10 +105,17 @@ def teleportation_boundary_check_results(
     )
     out.append(
         (
-            f"{prefix}: finite planning support is not nature-grade closure",
-            "planning_closed = True" in conclusion
-            and "promote_to_nature_grade = False" in conclusion,
-            "planning closure and nature-grade hold are distinct",
+            f"{prefix}: conclusion row remains an open finite-premise planning gate",
+            all(
+                phrase in conclusion
+                for phrase in [
+                    "**Type:** open_gate",
+                    "**Status:** open main gate; finite-premise arithmetic support only",
+                    "This revision does not claim to close the row's live repair target.",
+                    "It is not a teleportation theorem, a negative theorem, or closure of the open gate.",
+                ]
+            ),
+            "open-gate status and non-closure boundary checked",
         )
     )
     return out

@@ -37,6 +37,11 @@ from fractions import Fraction
 from pathlib import Path
 
 AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = (
+    "docs/HIERARCHY_JOINT_RIEMANN_DIRICHLET_DIMENSIONAL_FOURTH_ROOT_NARROW_THEOREM_NOTE_2026-05-10.md",
+    "docs/audit/data/premise_decision_history.json",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+)
 
 try:
     import sympy as sp
@@ -855,7 +860,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    print(f"mode={args.mode};A-C exact,D exponent-only")
+    print(f"mode={args.mode};eta/zeta exact;dimensional exponent only")
     print("TAGS: " + " ".join(f"{v}={k}" for k, v in EVIDENCE_TAGS.items()))
 
     if args.mode in ("normal", "all"):

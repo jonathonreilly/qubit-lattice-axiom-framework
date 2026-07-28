@@ -1,12 +1,13 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow.py
-runner_sha256: 112c2cb5303bef7977a8f781d983380d090606d6da2d72c969bbd14b8983191d
+runner_sha256: 7d7525c5c1455c41ed05652f6ea98d9eb88a7c4248b32557cd2b62efa45d5709
+input_fingerprint_sha256: 80092d59a84d0b435097194acf1b3c53a3b63e420882227bd7452d1142cefb41
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.61
+elapsed_sec: 0.67
 status: ok
 ----- stdout -----
-mode=all;A-C exact,D exponent-only
+mode=all;eta/zeta exact;dimensional exponent only
 TAGS: thm=theorem cond=conditional num=numerical bnd=boundary hyg=hygiene
 NORMAL
 [PASS][A][thm] exact real domain of the eta/zeta base is 0 < 1-2^(1-s) < 1 for s>1  (positive domain=Interval.open(1, oo); below-one domain=Reals; g(2)=1/sqrt(2); s=4 base -> 7/8)

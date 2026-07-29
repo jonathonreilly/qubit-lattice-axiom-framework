@@ -39,7 +39,7 @@ Owner-approval history for axioms and primitives:
 | Retained bounded rows | 355 |
 | Boxed decorations under retained parents | 29 |
 | Open gates | 3 |
-| Unaudited rows | 2653 |
+| Unaudited rows | 2652 |
 | Retained-pending-chain rows | 11 |
 | Audited conditional rows | 265 |
 | Audited renaming rows | 33 |
@@ -70,7 +70,7 @@ Next ready rows by queue order:
 - [`clifford_volume_chirality_even_dimension_narrow_theorem_note_2026-05-10`](../../docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md) - critical; unaudited
 - [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; unaudited
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
-- [`staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; unaudited
+- [`staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; audit_in_progress
 - [`s3_boundary_link_theorem_note`](../../docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md) - critical; unaudited
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and

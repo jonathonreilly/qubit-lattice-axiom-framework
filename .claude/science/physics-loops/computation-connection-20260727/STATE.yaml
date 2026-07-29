@@ -239,3 +239,18 @@ queue_after_728:
   - "charge-row integration into the refusal wrap (post-728 enforcement
     leg)"
   - "autonomy/forcing legs per the D6 autonomy ledger (genesis, W2)"
+
+checkpoint_1330_pacing_correction: >
+  OWNER flagged a pause after refresh 4 — correct: the queue was named
+  but not dispatched. STANDING RULE from now to campaign stop
+  (~2026-07-29T11:40): never end a working stretch with an empty worker
+  queue while runtime remains; at least one draft/checker/extraction is
+  in flight at all times. Relaunched immediately: Cycle 730 (charge-row
+  enforcement integration; block10 branch = block04 + cherry-picked
+  block08 so both module sets are importable; PR will base on block04
+  and note the carried 08 commit) and the full-Fock Cycle-320
+  construction attempt (honest worked-failure permitted with frozen
+  obstruction; completes the gravity ceiling if achieved). Queue after:
+  sector-summed companion channel; Ward-lawful projection
+  classification; Born acceptance harness; autonomy/forcing ledger
+  items.

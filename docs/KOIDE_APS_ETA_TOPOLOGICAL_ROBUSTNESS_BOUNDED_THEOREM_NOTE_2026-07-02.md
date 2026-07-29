@@ -158,4 +158,11 @@ exactly where the Tier-A registry says it is.
 python3 scripts/frontier_koide_aps_topological_robustness.py
 ```
 
-Expected: `Summary: PASS=41, FAIL=0` (re-verified 2026-07-02 on `origin/main`).
+Expected: `Summary: PASS=41, FAIL=0`.
+
+**Restricted-packet transport record (2026-07-29):** the packet builder now
+preserves the complete SHA-verified cached stdout for the primary runner and
+the byte-complete one-hop block-by-block authority above. The scoped regression
+test is `docs/audit/scripts/tests/test_koide_aps_eta_packet_repair.py`. This is
+an evidence-transport repair only; it changes neither the bounded claim,
+premises P1--P3, nor the exclusions in §Boundary.

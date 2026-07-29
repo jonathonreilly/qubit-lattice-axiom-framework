@@ -90,7 +90,7 @@
       "cached_runner_stdout_chars": 11155,
       "candidate_reason": "runner_stdout_transport_unclipped_by_head_tail_v2",
       "claim_id": "klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26",
-      "claim_scope": "The visible core finite-group theorem that, for integers d >= 2, (Z_2)^d is isomorphic to V_4 x V_4 iff d = 4, excluding any physical Brillouin-zone realization or spacetime-dimension selection.",
+      "claim_scope": "The visible core finite-group theorem that, for integers d >= 2, (Z_2)^d is isomorphic to V_4 x V_4 iff d = 4, excluding physical Brillouin-zone realization or spacetime-dimension selection; clipped source material was not fully audited.",
       "claim_type": "positive_theorem",
       "criticality": "leaf",
       "criticality_rank": 0,

@@ -1,0 +1,60 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle760_scaled_derived_comparison_2026_07_28.txt": "6ec0daca346e26ae562a0c3fe2575802d432d97aa7927925366a516fdc6bd1c8",
+      "frontier_cycle760_scaled_independent_check_2026_07_28.txt": "325ccc0bca7ce2f18047abc44fdb5e7cf2dde94ef092fbe4785444691a1b5e52"
+    },
+    "note": {
+      "path": "docs/SCALED_DERIVED_COMPARISON_CYCLE760_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "4680926ddda0c335e20e227cd33ec5cf69b7fce2e39840ef7dad5e158f8198fc"
+    },
+    "runners": {
+      "frontier_cycle760_scaled_derived_comparison_2026_07_28.py": "357109dd3cda5f57ae87c05f2e79d1218f9840e3163cf0127eb57dcd84914972",
+      "frontier_cycle760_scaled_independent_check_2026_07_28.py": "902d05aef332d0d8a35466c14c4cd99f4dce4d71411d056932680745ae98b758"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "born_disagreements": [
+      2,
+      3,
+      3,
+      3
+    ],
+    "born_law_selected": false,
+    "census": [
+      845,
+      878,
+      855
+    ],
+    "family": "2,578 derived k=1 epochs (44/350/2,184 by bank); mapping convention unchanged (supplied)",
+    "fixed_supplies": "the mapping convention; everything the 750/757/758 packages declare",
+    "named_next": "derived families over symmetry-broken apparatus preparations",
+    "not_derived": "any weight/Born content; the mapping; ensemble constructions",
+    "positive_scope": "the 68x-scaled family, census, both comparison tables, split stability \u2014 all independently recounted",
+    "split_total_variation": "95/1289",
+    "three_live_readings": [
+      "mapping not the physical bridge",
+      "symmetric ensembles run uniform; Born needs symmetry-broken apparatus ensembles (the open W6 mechanism)",
+      "occurrence statistics genuinely not Born at this scope"
+    ],
+    "uniform_disagreements": [
+      0,
+      0,
+      2,
+      3
+    ],
+    "weight_claim_made": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 760,
+  "date": "2026-07-29",
+  "status": "CYCLE760_SCALED_COMPARISON_NEAR_UNIFORM_PASS"
+}

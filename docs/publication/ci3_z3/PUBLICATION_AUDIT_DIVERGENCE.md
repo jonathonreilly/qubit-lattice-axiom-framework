@@ -17,10 +17,10 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 229 |
+| critical | `unaudited` | 228 |
 | high | `unaudited` | 165 |
 | medium | `unaudited` | 110 |
-| critical | `audited_conditional` | 11 |
+| critical | `audited_conditional` | 12 |
 | medium | `audited_conditional` | 8 |
 | ? | `unresolved` | 4 |
 | high | `audited_conditional` | 4 |
@@ -28,7 +28,6 @@ publication tables phrase it.
 | critical | `audited_failed` | 2 |
 | high | `audited_failed` | 2 |
 | high | `audited_renaming` | 2 |
-| critical | `audit_in_progress` | 1 |
 | critical | `audited_numerical_match` | 1 |
 | critical | `audited_renaming` | 1 |
 | critical | `retained_pending_chain` | 1 |
@@ -36,7 +35,7 @@ publication tables phrase it.
 | medium | `audited_numerical_match` | 1 |
 | medium | `audited_renaming` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 548
+**Total non-retained-grade rows in publication tables:** 547
 
 ## Per-row breakdown
 
@@ -76,7 +75,6 @@ publication tables phrase it.
 | critical | `dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_exact_h_source_surface_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15` | `audit_in_progress` | `audit_in_progress` | DERIVATION_ATLAS.md |
 | critical | `dm_neutrino_positive_polar_h_cp_theorem_note_2026-04-15` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_source_amplitude_theorem_note_2026-04-15` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
 | critical | `dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem_note_2026-04-16` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, RESULTS_INDEX.md |
@@ -111,7 +109,7 @@ publication tables phrase it.
 | critical | `g_bare_two_ward_same_1pi_pinning_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | critical | `gauge_vacuum_plaquette_constant_lift_obstruction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_local_environment_factorization_theorem_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
-| critical | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
+| critical | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_perron_jacobi_underdetermination_note` | `audited_failed` | `audited_failed` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_residual_environment_identification_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |

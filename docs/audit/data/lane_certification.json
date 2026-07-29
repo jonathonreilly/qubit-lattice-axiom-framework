@@ -696,10 +696,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "dm_neutrino_odd_mixed_bridge_extension_note_2026-04-15",
           "effective_status": "unaudited"
         },
@@ -997,7 +993,7 @@
         },
         {
           "claim_id": "gauge_multiplaquette_character_gluing_emergent_integer_sector_record_context_and_action_pairing_residual_bounded_theorem_note_2026-07-02",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "gauge_os_step1_wilson_plaquette_decomposition_theta_invariance_reflection_hermiticity_narrow_theorem_note_2026-06-02",
@@ -1021,7 +1017,7 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
@@ -1029,7 +1025,7 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_mixed_cumulant_audit_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note",
@@ -1061,7 +1057,7 @@
         },
         {
           "claim_id": "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "gbare_wilson_action_internal_proof_walk_bounded_note_2026-05-08",
@@ -2257,7 +2253,7 @@
         },
         {
           "claim_id": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",
@@ -2486,7 +2482,7 @@
         },
         {
           "claim_id": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "wolfenstein_lambda_a_structural_identities_theorem_note_2026-04-24",
@@ -2744,7 +2740,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 629
+      "uncertified_count": 628
     }
   ],
   "schema": "lane_certification_v2"

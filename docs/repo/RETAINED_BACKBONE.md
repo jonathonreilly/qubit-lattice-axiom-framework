@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 124 |
+| Retained positive rows | 125 |
 | Retained bounded rows | 356 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 31 |
 
-## Retained positive rows (124)
+## Retained positive rows (125)
 
 Sorted by load-bearing graph score (descending).
 
@@ -61,6 +61,7 @@ Sorted by load-bearing graph score (descending).
 - [`wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07`](../../docs/WILSON_SMALL_A_MATCHING_BETA_GBARE_NARROW_THEOREM_NOTE_2026-06-07.md) — score 12.841; audited 2026-07-24T01:07:58.872062+00:00
 - [`koide_gamma_orbit_selector_bridge_note_2026-04-18`](../../docs/KOIDE_GAMMA_ORBIT_SELECTOR_BRIDGE_NOTE_2026-04-18.md) — score 12.833; audited 2026-05-10T14:37:33.189790+00:00
 - [`i3_zero_exact_theorem_note`](../../docs/I3_ZERO_EXACT_THEOREM_NOTE.md) — score 12.180; audited 2026-05-03T12:43:10.800116+00:00
+- [`dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`](../../docs/DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md) — score 12.165; audited 2026-07-29T20:48:31.179543+00:00
 - [`beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`](../../docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md) — score 12.040; audited 2026-06-06T16:26:01.015460+00:00
 - [`sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06`](../../docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md) — score 12.026; audited 2026-06-13T22:42:56.743023+00:00
 - [`gauge_vacuum_plaquette_framework_point_underdetermination_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md) — score 11.725; audited 2026-07-22T18:13:23.636281+00:00

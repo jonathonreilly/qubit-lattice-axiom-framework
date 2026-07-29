@@ -1,42 +1,88 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-29T20:33:41.672752+00:00",
+  "audit_invocation_history": [
+    "460e10a19c0e446bb2532194f3a052d5"
+  ],
+  "audit_invocation_id": "460e10a19c0e446bb2532194f3a052d5",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 6,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 12.19,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "6b2ac42f1d11a1ddbaca181ae159da1e8cff403320c1d5bde713dee2ee3cdeba",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "6b2ac42f1d11a1ddbaca181ae159da1e8cff403320c1d5bde713dee2ee3cdeba",
+    "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 825
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260729-f88aeb60",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The algebraic reduction closes on the supplied alpha>0 matrix surface, but the audit chain lacks the live route and resolution evidence required by the mandatory N1-N8 clean-verdict gate.",
   "claim_id": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-  "claim_scope": null,
+  "claim_scope": "Finite-dimensional determinant positivity for the supplied balanced eps-block matrix surface with square K and supplied Wilson/mass diagonal alpha I, alpha>0; no framework derivation of that Wilson surface is audited or claimed.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint_after_invalidation",
+  "claim_type_last_reviewed": "2026-07-29T20:33:41.672752+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 5,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 12.19,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Unitary block conjugation reduces M to two-by-two blocks B_i whose determinants are alpha^2 + sigma_i^2, so their product is positive for alpha>0.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "ce0ab768f13eddc3ba9ec5a2048ecbcb50de64b263f4543c7b9a67337b15fb0f",
   "note_path": "docs/STAGGERED_WILSON_DET_POSITIVITY_BRIDGE_THEOREM_NOTE_2026-05-05.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "runner_artifact_issue: add a live adversarial runner surface evidencing at least five distinct N1 route classes and the required per-element, per-site, per-mode, per-block, and lattice-wide resolution checks, then re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -513,14 +559,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 26,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 26
   },
   "runner_path": "scripts/frontier_staggered_wilson_det_positivity_bridge_2026_05_05.py",
   "title": "Staggered + Wilson Supplied-Surface Determinant Positivity",
   "transitive_descendants": 825,
-  "verdict_rationale": null
+  "verdict_rationale": "The SVD/block-diagonal argument correctly proves the determinant formula and strict positivity on the explicitly scoped alpha>0 surface. The runner genuinely computes the matrix structure and numerical factorisation, with 26 algebraic checks passing and no mismatches. An audited_clean verdict nevertheless cannot ship because the supplied execution evidence cannot support the packet-mandated N1-N8 clean-verdict stress test."
 }

@@ -1,0 +1,61 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle757_calibration_independent_check_2026_07_28.txt": "c7974136e8854a34e8a56248ac2aee307951eed1440a8591bcfdec2b5704dc70",
+      "frontier_cycle757_derived_occurrence_calibration_2026_07_28.txt": "6aa84373dc44ab214fb010db4b84a5549d3973ad22dca773ed9e113788e6e860"
+    },
+    "note": {
+      "path": "docs/DERIVED_OCCURRENCE_CALIBRATION_CYCLE757_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "5534d59025610582e34ebcfe35ae7fcc39b8c719966ec0eeb6a4e94ae42c8d16"
+    },
+    "runners": {
+      "frontier_cycle757_calibration_independent_check_2026_07_28.py": "fe44551ff898c3e0a34ab61d785197323286e03889974e5cfc5cd3c7e4c2ece5",
+      "frontier_cycle757_derived_occurrence_calibration_2026_07_28.py": "a652e7ed2b5087bd8524b5f3cf6b34aa4c73d0182c9c4a9d812140beb4e48070"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "born_law_selected": false,
+    "first_derived_occurrence_comparison": true,
+    "fixed_supplies": "the outcome-class mapping convention (declared, printed); the frozen 748 tolerance ladder; everything the Cycle-317/744/750 packages declare",
+    "mapping_convention_supplied": true,
+    "not_derived": "any weight or Born content; the mapping convention; convergence (small-sample ceiling stated loudly)",
+    "positive_scope": "the derived run family (the 750 selector's own output over 38 epochs); exact census (13,13,12) and simplex (13/38,13/38,6/19); the frozen comparison table vs Tr(sigma E)=(0.360,0.212,0.428): E0 A/A/D/D, E1 D/D/D/D, E2 D/D/D/D down the tolerance ladder \u2014 as data; reversal-control census (12,13,13) detected; firewalls clean",
+    "sample_size_bound": "38 epochs",
+    "weight_claim_made": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 757,
+  "date": "2026-07-29",
+  "result": {
+    "derived_census": [
+      13,
+      13,
+      12
+    ],
+    "simplex": [
+      "13/38",
+      "13/38",
+      "6/19"
+    ],
+    "supplied_weights": [
+      0.360024,
+      0.211942,
+      0.428035
+    ],
+    "verdicts": {
+      "0.001": "DDD",
+      "0.002": "DDD",
+      "0.02": "ADD",
+      "0.06": "ADD"
+    }
+  },
+  "status": "CYCLE757_FIRST_DERIVED_OCCURRENCE_COMPARISON_PASS"
+}

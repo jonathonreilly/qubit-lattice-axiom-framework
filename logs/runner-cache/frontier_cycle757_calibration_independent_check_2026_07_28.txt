@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle757_calibration_independent_check_2026_07_28.py
+runner_sha256: fe44551ff898c3e0a34ab61d785197323286e03889974e5cfc5cd3c7e4c2ece5
+input_fingerprint_sha256: 6f212a589979df4b5235c2d3f452ae423e34bc5056e5c1cb63937f43145d7945
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 36.75
+status: ok
+----- stdout -----
+PASS extraction :: {"audit_tuple_literal_eval":true,"boundary":{"mapping_convention_supplied":true,"sample_size_bound":38,"weight_claim_made":false},"comparator_hex":["0x1.70aa1d46ad8b4p-2","0x1.b20e697317e2bp-3","0x1.b64eadffc6837p-2"],"counts":[13,13,12],"epochs":38,"mapping_status":"SUPPLY","simplex":["13/38","13/38","6/19"],"verdict_table":[[0.06,["A","D","D"]],[0.02,["A","D","D"]],[0.002,["D","D","D"]],[0.001,["D","D","D"]]]}
+PASS census_recount :: {"counts":[13,13,12],"epochs":38,"fixture_counts":{"2":4,"5":10,"12":24},"port_recount_matches":true,"selector_singletons":38,"simplex":["13/38","13/38","6/19"]}
+PASS comparison_recount :: {"b317_anchor_passes":4,"comparator_hex":["0x1.70aa1d46ad8b4p-2","0x1.b20e697317e2bp-3","0x1.b64eadffc6837p-2"],"disagreement_counts":[2,2,3,3],"residual_hex":["-0x1.25945b277a630p-6","0x1.0a9345b553e77p-3","-0x1.cbc174a0c9364p-4"],"table":[[0.06,["A","D","D"]],[0.02,["A","D","D"]],[0.002,["D","D","D"]],[0.001,["D","D","D"]]]}
+PASS control_recount :: {"control_counts":[12,13,13],"derived_counts":[13,13,12],"detected":true,"permutation":"selected_alternative -> alternative_count - 1 - selected_alternative","permutation_cases":38}
+PASS firewall_recount :: {"ast_directions":["scripts/frontier_cycle757_derived_occurrence_calibration_2026_07_28.py","frontier_cycle757_calibration_independent_check_2026_07_28.py"],"ceiling_verbatim":true,"checker_scan":{"attribute_writes":[],"file_writes":[],"imported_setattrs":[],"promotion_targets":[]},"claim_flags":{"checker":{"asymptotic_convergence_claimed":[false],"weight_claim_made":[false,false]},"primary":{"asymptotic_convergence_claimed":[false],"born_law_selected":[false],"simplex_promoted_to_weight":[false],"weight_claim_made":[false,false]}},"comparator_to_selector_calls":[],"primary_import_blocked":true,"primary_scan":{"attribute_writes":[],"file_writes":[],"imported_setattrs":[],"promotion_targets":[]},"selector_to_comparator_reads":[],"weight_writes":false}
+BOUNDARY HONEST CEILING :: 38 epochs is a SMALL sample; this is a coarse finite comparison, not convergence. No weight claim either way until the derived family is large AND the outcome-class mapping is derived.
+PASS read_only_inputs :: {"stable_files":4}
+PASS bounded_runtime :: {"note_path":"docs/DERIVED_OCCURRENCE_CALIBRATION_CYCLE757_BOUNDED_THEOREM_NOTE_2026-07-28.md","note_required":false,"runtime_seconds":36.2722,"timeout_seconds":1800}
+CENSUS {"counts":[13,13,12],"epochs":38,"simplex":["13/38","13/38","6/19"]}
+TABLE [[0.06,["A","D","D"]],[0.02,["A","D","D"]],[0.002,["D","D","D"]],[0.001,["D","D","D"]]]
+CONTROL {"counts":[12,13,13],"detected":true,"permutation":"selected_alternative -> alternative_count - 1 - selected_alternative"}
+RUNTIME_SEC 36.272200
+CERTIFICATE {"boundary":{"asymptotic_convergence_claimed":false,"mapping_convention_supplied":true,"sample_size_bound":38,"weight_claim_made":false},"control":{"counts":[12,13,13],"detected":true,"permutation":"selected_alternative -> alternative_count - 1 - selected_alternative"},"derived_census":{"counts":[13,13,12],"epochs":38,"simplex":["13/38","13/38","6/19"]},"fail":0,"firewall":{"ceiling_verbatim":true,"primary_import_blocked":true,"weight_writes":false},"pass":7,"result":"PASS","runtime_seconds":36.2722,"verdict_table":[[0.06,["A","D","D"]],[0.02,["A","D","D"]],[0.002,["D","D","D"]],[0.001,["D","D","D"]]]}
+SUMMARY PASS 7 FAIL 0
+
+----- stderr -----
+

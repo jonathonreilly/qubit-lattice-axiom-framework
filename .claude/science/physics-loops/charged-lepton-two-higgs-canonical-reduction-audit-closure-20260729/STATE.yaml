@@ -1,0 +1,29 @@
+loop: charged-lepton-two-higgs-canonical-reduction-audit-closure-20260729
+mode: run
+target: retained
+runtime: 15m
+current_goal: "Close the runner-artifact conditional audit on the supplied two-offset canonical-reduction theorem."
+ledger_status_before_block: audited_conditional
+actual_current_surface_status: candidate-retained-grade
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+target_claim_type: positive_theorem
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+cycle_count: 2
+block_count: 1
+active_route: independent_plain_integer_certificate
+hard_residual: null
+files_touched:
+  - docs/CHARGED_LEPTON_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md
+  - scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py
+  - logs/runner-cache/frontier_charged_lepton_two_higgs_canonical_reduction.txt
+open_imports: []
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+reachability_to_target: closes
+review_disposition: pass
+pr_status: outer_integrator_owned
+next_exact_action: "Independently re-audit the changed note, runner, and complete SHA-pinned cache."
+stop_condition: "The complete runner output, independent certificate, focused validation, and local review all pass."

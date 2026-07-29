@@ -217,6 +217,53 @@ integer/rational rank, Smith form, and both nullspaces of (6), construct the
 global normal form, and exhaust all `64` support patterns together with
 hostile controls for invalid supports.
 
+The runner also carries an implementation-independent certificate for the
+load-bearing quotient and boundary claims. It does not call SymPy for this
+second route. Fraction-free Bareiss determinants and gcds of all minors give
+the determinantal divisors
+
+```text
+    (Delta_0,Delta_1,...,Delta_5) = (1,1,1,1,1,1),
+```
+
+so the independently recovered rank is `5` and the nonzero Smith factors are
+all units. Independently invert the displayed unit `5×5` minor by its integer
+adjugate, embed its negative inverse into a `6×6` gauge matrix `G`, and set the
+remaining gauge coordinate to zero. With
+
+```text
+    w = (-1,-1,-1,+1,+1,+1),
+```
+
+plain integer multiplication verifies
+
+```text
+    I + M G = e_6 w^T,       w^T M = 0,       gcd(w_1,...,w_6)=1.  (12)
+```
+
+Thus the same computation independently gives the global normal form: the
+first five coefficient phases vanish and the sixth is the primitive circle
+coordinate `delta=w^T(theta)`. This is an identity over `Z`, hence it descends
+on the full phase torus rather than only on its tangent space.
+
+The independent support census iterates the bit masks `0,...,63`. Its exact
+summary is
+
+| active edges `k` | masks | incidence ranks | cycle ranks | top nonzero determinantal divisor |
+|---:|---:|---:|---:|---:|
+| 0 | 1 | 0 | 0 | 1 |
+| 1 | 6 | 1 | 0 | 1 |
+| 2 | 15 | 2 | 0 | 1 |
+| 3 | 20 | 3 | 0 | 1 |
+| 4 | 15 | 4 | 0 | 1 |
+| 5 | 6 | 5 | 0 | 1 |
+| 6 | 1 | 5 | 1 | 1 |
+
+Consequently every one of the `63` proper masks is independently certified
+as a saturated forest and only the full mask has a cycle phase. The cached
+runner artifact records the complete source-SHA-pinned stdout for all `59`
+passing checks; no head/tail excerpt is the claimed execution evidence.
+
 No repository science source is a premise of this theorem. In particular,
 the current framework axioms and approved primitives are not asserted to
 supply:

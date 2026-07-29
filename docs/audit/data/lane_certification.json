@@ -85,7 +85,7 @@
         },
         {
           "claim_id": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_failed"
         },
         {
           "claim_id": "three_generation_observable_count_corollary_note_2026-05-03",
@@ -2241,7 +2241,7 @@
         },
         {
           "claim_id": "staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_failed"
         },
         {
           "claim_id": "staggered_dirac_substep3_species_reduction_bridge_narrow_theorem_note_2026-05-16",

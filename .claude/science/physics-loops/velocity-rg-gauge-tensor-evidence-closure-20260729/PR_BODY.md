@@ -19,7 +19,7 @@ pole-speed, or RG-coefficient bridge.
 - Standalone independent live/cache: `PASS=7 FAIL=0`; it fingerprints the
   primary source but has no runtime/cache dependency, so concurrent stale-cache
   refresh is deterministic.
-- Source `29795 < 30000`, primary/helper source below `40000`, and all packet
+- Source `29822 < 30000`, primary/helper source below `40000`, and all packet
   roles contain no clipping marker.
 - Vocabulary lint, Python compilation, cache freshness, `git diff --check`,
   strict audit lint, full pipeline rehearsal, and repo invariants pass.

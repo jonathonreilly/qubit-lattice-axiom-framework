@@ -118,3 +118,12 @@ Notes:
   theorem upgraded to unconditional-within-capacity. Class:
   direct_blocker_closure with frozen corrections. PR #5720 (+
   cross-comment on #5719).
+
+## Cycle 740 (block20) — table-parameterized mapper
+- Target moved: the 739 capacity residual -> a supplied integer; the
+  sector theorem table-uniform. Class: direct_blocker_closure. PR
+  #5721.
+
+## Cycle 741 (block21) — physical bank renewal (IN FLIGHT)
+- Target: W4's last named component (renewal = reuse); vacuity or
+  obstruction freezing allowed. Class: direct_blocker_closure attempt.

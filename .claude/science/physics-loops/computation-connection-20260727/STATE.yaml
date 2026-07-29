@@ -355,3 +355,18 @@ checkpoint_0450_block19_landed_theorem_arc_closed: >
   #5706-#5720. LESSON: theorem conditions must be checked against the
   implemented predicate's AST, not restated from memory — the v1
   honest-FAIL caught a statement error that review would have flagged.
+
+checkpoint_0555_block20_landed: >
+  #5721 open (Cycle 740, stacked on #5720): capacity is now a
+  parameter. Table law derived FROM the frozen tables
+  (BANK_BASE(i)=41+131i; LINK_BASE(i,C)=41+131C+382i — the C-coupling
+  explains the joint cap); checker re-solved the law independently
+  from raw values; byte-exact equivalence b=1..12; extension b=13..16
+  clean (444/444 rows; stations 57-64 recovered); b=13 orbit spot
+  family zero violations; sector theorem transfers TABLE-UNIFORMLY
+  (one supplied convention: the law as intended geometry, anchored to
+  K). W4's remaining named content = PHYSICAL RENEWAL (reuse, not
+  capacity). IN FLIGHT: Cycle 741 physical bank renewal (block21) —
+  exhaustion characterized from K's own semantics; vacuity finding or
+  frozen obstruction allowed. Sixteen campaign PRs: #5706-#5721.
+  Scoreboard refresh 7 posted to owner at checkpoint_0450 window.

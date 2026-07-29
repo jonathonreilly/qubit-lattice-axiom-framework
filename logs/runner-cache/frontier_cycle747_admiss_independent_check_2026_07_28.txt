@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle747_admiss_independent_check_2026_07_28.py
+runner_sha256: 6712a288899520770adc717bbb917938e85298fef42e31d97ad6b38308c82398
+input_fingerprint_sha256: e1897464a74e7894317c0dbac551fc1a0ba01b43af7ad269cf4387a193937bb8
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.23
+status: ok
+----- stdout -----
+PASS extraction :: {"audit_tuple": ["scripts/physical_transition_occurrence_close_tournament_cycle332_2026_07_18.py", "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"], "boundary": {"actual_derived": false, "actual_selector_absent_recorded": true, "admiss_derived_conditional": true, "admiss_derived_unconditional": false, "flags_down": ["LAW", "ADMISS"], "flags_standing": ["ACTUAL", "BINDER"], "supplies": {"ACTUAL": "supplied", "BINDER": "supplied"}, "w3_closed": false}, "census": {"deletions": 10, "lawful": 1016, "lawful_by_length": {"3": 508, "6": 508}, "violating": 18}, "conditions": ["word projections", "boundary preparation", "fixed comparator", "matcher/readiness semantics"], "predicate_calls": ["O332.boundary_certificate", "O332.c326.run_local_close", "O332.transition_witness", "int", "o332_verdict_tuple"], "primary_executed": false}
+PASS predicate_recount :: {"categories": {"anti_splice_match": 2, "deleted_certificate_stage_0": 2, "deleted_certificate_stage_1": 2, "deleted_certificate_stage_2": 2, "deleted_certificate_stage_3": 2, "deleted_certificate_stage_4": 2, "h_only_false_boundary": 2, "readiness_alone": 2, "spliced_boundary": 2}, "deletions": 10, "lawful": 1016, "lawful_mismatches": 0, "violating": 18, "violating_mismatches": 0}
+PASS adapter_recount :: {"baseline_admitted": 1016, "derived_admitted": 1016, "failure_differing_inputs": ["admissibility"], "failure_flipped_by_ADMISS_alone": true, "failure_statuses": ["admitted", "refused_supplied"], "lawful_byte_equal": true, "lawful_bytes": 109382, "lawful_sha256": "26b1c532ec4415f688ea870adcf2b420e095e8bedb41d14bcf6855061ab7c5a1"}
+PASS conditions_audit :: {"conditional_not_absolute": true, "conditions": {"boundary preparation": {"located": true, "source": "supplied_or_open: two boundary registers and their preparation"}, "fixed comparator": {"located": true, "source": "supplied_or_open: fixed transition/comparator programs"}, "matcher/readiness semantics": {"located": true, "source": "Cycle-329 route_outputs plus supplied clock matcher/calibration"}, "word projections": {"located": true, "source": "compile_transition_program: build_code -> build_event_sidecar -> stream_mapping", "status": "imported fixed Cycle-314 convention"}}, "supplied_or_open_count": 7}
+PASS independence_probe :: {"K_references": [], "admit_calls": [], "allowed_event_fields": ["occurrence_data", "pre_state"], "feedback_names": [], "independent": true, "observed_event_fields": ["occurrence_data"]}
+PASS discipline :: {"blocked_modules_loaded": [], "blocklist": ["scripts/frontier_cycle747_admiss_verdict_binding_2026_07_28.py"], "input_digests_unchanged": true, "pycache_writes_disabled": true, "scope": {"derived": ["LAW", "ADMISS"], "language": "two flags derived, two supplied; w3 open", "supplied": ["ACTUAL", "BINDER"], "w3_open": true}}
+PASS runtime :: {"AUDIT_TIMEOUT_SEC": 900, "runtime_sec": 0.77811}
+SUMMARY_JSON {"all_pass":true,"conditions_conditional":true,"fail":0,"independent":true,"pass":7,"recounts":{"categories":{"anti_splice_match":2,"deleted_certificate_stage_0":2,"deleted_certificate_stage_1":2,"deleted_certificate_stage_2":2,"deleted_certificate_stage_3":2,"deleted_certificate_stage_4":2,"h_only_false_boundary":2,"readiness_alone":2,"spliced_boundary":2},"deletions":10,"lawful":1016,"lawful_mismatches":0,"violating":18,"violating_mismatches":0},"runtime_sec":0.77811,"scope":"two flags derived, two supplied; w3 open"}
+
+----- stderr -----
+

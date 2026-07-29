@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-25T16:53:30.272086+00:00",
+  "audit_date": "2026-07-29T15:38:33.817043+00:00",
   "audit_invocation_history": [
-    "2e4a960cbabc4382bc1f9e5a0e8f92dd"
+    "2e4a960cbabc4382bc1f9e5a0e8f92dd",
+    "553843f7fd0a4e34a4d8d96c50c644c3"
   ],
-  "audit_invocation_id": "2e4a960cbabc4382bc1f9e5a0e8f92dd",
+  "audit_invocation_id": "553843f7fd0a4e34a4d8d96c50c644c3",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 1,
@@ -30,7 +31,7 @@
       "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -49,20 +50,20 @@
     "transitive_descendants": 0
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-0e4bc2e2",
+  "auditor": "codex-audit-batch-A-20260729-78507200",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "Under the stated H1/H3/H4 premises and rho>=0, the algebraic chain closes: the non-negative Neumann expansion proves M^{-1}>=0 and hence Phi>=0. Clean ratification is nevertheless barred because the supplied current-cycle runner stdout is clipped across load-bearing checks.",
+  "chain_closes": false,
+  "chain_closure_explanation": "The Stieltjes step closes independently by the discrete minimum principle: a negative minimum of x with (L+mu^2 I)x>=0 would give a negative component when mu^2>0. The full source-to-Phi chain remains conditional on the unproved screened-Poisson bridge H1.",
   "claim_id": "staggered_fermion_card_h2_positive_source_phi_positivity_narrow_theorem_note_2026-05-17",
-  "claim_scope": "Conditional finite-graph linear-algebra theorem: for a finite simple undirected graph with mu^2>0, G>0, and the screened-Poisson equation assumed, non-negative rho implies non-negative Phi via the Stieltjes positivity of (L+mu^2 I)^{-1}.",
+  "claim_scope": "For a finite simple undirected graph, assuming mu^2>0, G>0, and (L+mu^2 I)Phi=G rho, non-negative rho implies non-negative Phi; on a connected graph, nonzero rho gives strictly positive Phi.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-25T16:53:30.272086+00:00",
+  "claim_type_last_reviewed": "2026-07-29T15:38:33.817043+00:00",
   "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
@@ -72,19 +73,17 @@
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Writing M=sI-B with B entrywise non-negative and rho(B)<s gives the convergent Neumann expansion M^{-1}=(1/s) sum_{k>=0}(B/s)^k, so M^{-1} is entrywise non-negative.",
+  "load_bearing_step": "With B=sI-M>=0 and rho(B)<s, M^{-1}=(1/s) sum_{k>=0}(B/s)^k is entrywise non-negative.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
+  "negative_assertion_classes": [],
   "note_hash": "4fb4fbd532aebf04ecc133b3bbb3571c8c13dcc8dd9e365c32e53508ee093469",
   "note_path": "docs/STAGGERED_FERMION_CARD_H2_POSITIVE_SOURCE_PHI_POSITIVITY_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: provide complete, unclipped current-cycle stdout for all 47 companion checks, especially the symbolic Stieltjes and inverse-positivity blocks.",
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply and directly cite a retained derivation of H1, then re-audit the source-to-Phi chain.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -171,5 +170,5 @@
   "runner_path": "scripts/audit_companion_staggered_h2_positive_source_phi_positivity_narrow_exact_2026_05_17.py",
   "title": "Staggered Fermion Card H2 \u2014 Positive Source \u21d2 Positive \u03a6 \u2014 Narrow Theorem (Stieltjes / non-singular M-matrix)",
   "transitive_descendants": 0,
-  "verdict_rationale": "The source gives a correct algebraic proof that L+mu^2 I is a nonsingular M-matrix and therefore maps non-negative sources to non-negative Phi under the stated bridge premise. The full runner source genuinely computes the advertised checks, but the restricted packet clips the current-cycle stdout across load-bearing evidence, so the binding preflight forbids audited_clean. The note also establishes derived negative boundaries: allowing signed rho can produce negative Phi, while mu^2=0 destroys the claimed invertibility."
+  "verdict_rationale": "Issue: The Stieltjes/Neumann argument correctly proves inverse positivity, but the conclusion for Phi imports the screened-Poisson bridge H1 without deriving or citing retained authority for it. Why this blocks: The physical positive-source-to-potential chain therefore does not close from the restricted packet, despite the exact linear-algebra subtheorem. Repair target: Supply a retained theorem deriving H1 with the stated sign conventions and add it as a direct dependency. Claim boundary until fixed: Conditional on H1, G>0, and mu^2>0, the finite-graph positivity implication is exact."
 }

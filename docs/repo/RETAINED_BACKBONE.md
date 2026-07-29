@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 121 |
+| Retained positive rows | 122 |
 | Retained bounded rows | 355 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
-## Retained positive rows (121)
+## Retained positive rows (122)
 
 Sorted by load-bearing graph score (descending).
 
@@ -45,6 +45,7 @@ Sorted by load-bearing graph score (descending).
 - [`gauge_scalar_temporal_completion_theorem_note`](../../docs/GAUGE_SCALAR_TEMPORAL_COMPLETION_THEOREM_NOTE.md) — score 17.757; audited 2026-05-23T13:36:42.061961+00:00
 - [`koide_dweh_cyclic_compression_note_2026-04-18`](../../docs/KOIDE_DWEH_CYCLIC_COMPRESSION_NOTE_2026-04-18.md) — score 16.551; audited 2026-05-05T09:49:41.642799+00:00
 - [`naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10`](../../docs/NAIVE_LATTICE_FERMION_TWO_POWER_D_SPECIES_COUNT_NARROW_THEOREM_NOTE_2026-05-10.md) — score 16.230; audited 2026-05-22T16:13:26.228372+00:00
+- [`hierarchy_matsubara_decomposition_note`](../../docs/HIERARCHY_MATSUBARA_DECOMPOSITION_NOTE.md) — score 15.856; audited 2026-07-29T17:00:09.721823+00:00
 - [`taste_scalar_isotropy_theorem_note`](../../docs/TASTE_SCALAR_ISOTROPY_THEOREM_NOTE.md) — score 15.747; audited 2026-05-05T09:07:06.655756+00:00
 - [`staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP4_AC_LAMBDA_SIMULTANEOUS_DIAGONALIZATION_BRIDGE_NARROW_THEOREM_NOTE_2026-05-17.md) — score 15.337; audited 2026-07-21T00:11:34.230442+00:00
 - [`reflection_positivity_gauge_half_cauchy_schwarz_narrow_theorem_note_2026-05-10`](../../docs/REFLECTION_POSITIVITY_GAUGE_HALF_CAUCHY_SCHWARZ_NARROW_THEOREM_NOTE_2026-05-10.md) — score 15.243; audited 2026-05-29T01:07:36.331883+00:00

@@ -1,0 +1,37 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle761_b6_anchor_independent_check_2026_07_28.txt": "9e2993f0c1a5013f2823e8ae7b5d47ed2b7fb06900c7a97b655835dbfb13f587",
+      "frontier_cycle761_b6_exhaustive_anchor_2026_07_28.txt": "4bf8eeb98b7bf693cdf0e08ac719d6defed599bd233a57fd91a46bc195c7c40f"
+    },
+    "note": {
+      "path": "docs/B6_EXHAUSTIVE_ANCHOR_CYCLE761_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "6a69e25e46b109ddeaeb446977de82bc88ce7e93708ffa9efdae37a7ec80182f"
+    },
+    "runners": {
+      "frontier_cycle761_b6_anchor_independent_check_2026_07_28.py": "3200ce698a37a94c9eb115656811dca8b8a48f01a0f4bff32bdbfb7f4e973fb1",
+      "frontier_cycle761_b6_exhaustive_anchor_2026_07_28.py": "d6ec8ca6c6f924263c3a3a132de861d16fdb0d2755c0ec2c2cdf2c8876da34ac"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "coverage": "k<=11 exhaustive (402,580,148 configs; 17,310,946,364 station-steps; zero violations; swept twice); k=12..21 counted-not-swept (566,742,881)",
+    "fixed_supplies": "everything the Cycle-737/739/740 packages declare per family member",
+    "i2_identity_evidenced_at_b6": true,
+    "no_full_sweep_claim": true,
+    "not_derived": "the k>=12 strata sweep; b>=7; the general-b statement unchanged",
+    "positive_scope": "streamed L(43)=969,323,029 census (recurrence-matched independently); the double-swept k<=11 anchor; 43/43 rows; 43/43 near-miss",
+    "sixth_anchor": "b=6, n=43, C=6"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 8,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 761,
+  "date": "2026-07-29",
+  "status": "CYCLE761_B6_BOUNDED_ANCHOR_PASS"
+}

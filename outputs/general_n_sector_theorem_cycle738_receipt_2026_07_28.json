@@ -1,0 +1,61 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle738_general_n_sector_theorem_2026_07_28.txt": "0f291f529e9059bf82d88361ad465ca483996322188c15c8f87e4363ab4a9664",
+      "frontier_cycle738_theorem_independent_check_2026_07_28.txt": "cf9190a96207f2e6670075747222cc3779bc7e0e7eda38bb5c2b4858ef768743"
+    },
+    "note": {
+      "path": "docs/GENERAL_N_SECTOR_THEOREM_CYCLE738_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "780e945bc9f4346dd0e8c6b6ba75f5b1e606de243afbd35f0ebb7c0a9691927b"
+    },
+    "runners": {
+      "frontier_cycle738_general_n_sector_theorem_2026_07_28.py": "f5854e2e383f9c0eef73684ca73c08ec8c6a23720189d162f422bcb067daa890",
+      "frontier_cycle738_theorem_independent_check_2026_07_28.py": "76859a33d4129f814eb09029e5d13e91a51ab581308cd111f5574e03143e6a73"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "the two named identities for b >= 5; the ownership-predicate formalization (the campaign's, not K's); everything the Cycle-737 package supplies per family member",
+    "general_n_sector_theorem": "conditional_on_named_identities",
+    "identities_anchor_verified": "b = 1..4 (frozen Cycle-737 exhaustions)",
+    "not_derived": "the two identities beyond b = 4; W4 renewal; adjacent-pair control; no time/Record/Born/source content",
+    "positive_scope": "machine-checked structural lemmas over symbolic n = 8b - 5: uniform +1 shift (L1), modular distance conservation (L2), invariant locality (L3, with the honest K-defines-no-predicate scope fact), window transport (L4), n-step closure with register-return algebra (L5); anchor consistency at b = 1..4 (L6); complete concrete-constant enumeration (L7) reducing the general theorem's gap to the two identities",
+    "residual_identity_list": [
+      "I_ownership_local_formula: for every b>=1 and station s, the intended ownership predicate at occupied s equals not(A[s-1] or A[s+1] or B[s] or work[s]); K itself defines no ownership predicate",
+      "I_macro_clean_work_uniformity: for every b>=1 and every row emitted by K.interleaved_program(b), the controlled mapped macro leaves its A control unchanged, addresses only data plus its own work bit, and maps clean work=0 back to 0"
+    ],
+    "upgrade_blocker_located": "the external b-dependent finalizer/mapper (source_finalizer_word(b)) prevents a purely structural discharge; named by the independent checker"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 17,
+    "primary_named_checks_passed": 11
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 738,
+  "date": "2026-07-29",
+  "result": {
+    "anchor_rings": [
+      3,
+      11,
+      19,
+      27
+    ],
+    "checker_rederived_lemmas_independently": true,
+    "checker_upgrade_finding": "external b-dependent finalizer/mapper blocks structural upgrade",
+    "lemmas": [
+      "L1_shift",
+      "L2_distance",
+      "L3_locality",
+      "L4_transport",
+      "L5_closure",
+      "L6_anchors",
+      "L7_honesty"
+    ],
+    "residual_identities": 2,
+    "theorem_status": "conditional_on_named_identities"
+  },
+  "status": "CYCLE738_GENERAL_N_SECTOR_THEOREM_CONDITIONAL_PASS"
+}

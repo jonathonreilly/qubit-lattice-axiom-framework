@@ -1,0 +1,62 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle732_genesis_independent_check_2026_07_28.txt": "6f0ac5e5a09416745927423bb0ddb91d5e73b48301697e22568033c886e61f07",
+      "frontier_cycle732_genesis_word_self_verification_2026_07_28.txt": "da0c159391b6b2e79865965477add7d467684a4b09661400f2f2dc3ea4c0502e"
+    },
+    "note": {
+      "path": "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "fed45b8b6cd1b187179b2aba032535027d1f1d8f333fd3b2a323fa470b896010"
+    },
+    "runners": {
+      "frontier_cycle732_genesis_independent_check_2026_07_28.py": "afa522139fd87500b9aa9911b4f6f44ab501a2ab1d7287f3b8d124507c406284",
+      "frontier_cycle732_genesis_word_self_verification_2026_07_28.py": "b08a41c26d75e164580b295ef79bd796127483841dee145f08094babdbb7bad2"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "the all-blank M2 state on the declared ring-11 register layout; the selected literal genesis-word gate ordering (a convention); the ring-11/two-bank oriented program and physical layout convention; the unchanged Cycle-731 expected_count=1 certificate word and pins",
+    "genesis_state_now_derived_output": true,
+    "genesis_word_selection_supplied": true,
+    "not_derived": "the genesis word selection itself (deriving the preparation convention from occurrence/Record structure remains open); uniform ring families beyond the held fixtures; no time/Record/Born/source content",
+    "one_token_inventory_separately_declared": false,
+    "positive_scope": "a 27-gate literal genesis word (1 X + 26 CN, fixed unrolling, no data-dependent branch) preparing the lawful configuration bit-exactly from all-blanks; the composed 123,293-gate self-verifying word (certificate accepts genesis output; exact reverse; clean returns); exhaustive single-gate deletion sweep 27/27 refused with zero output-neutral deletions; 23/23 output bit-flips refused in exact Cycle-731 theorem agreement; in-package rerun of the full 8,388,608-case theorem with the same frozen outcome sha",
+    "w1_remaining_gap": "genesis word selection (convention), not inventory declaration",
+    "word_correctness_machine_enforced": true
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 732,
+  "date": "2026-07-28",
+  "result": {
+    "bitflip_census": {
+      "refused": 23,
+      "theorem_agreement": "exact",
+      "total": 23
+    },
+    "composed_semantic_gates": 123293,
+    "composed_word_sha256": "23ad4b292a23095afdffd7337059a4276cf87d2c00a0670f63c4a1269e02194d",
+    "cycle731_anchor_rerun": {
+      "cases": 8388608,
+      "outcome_table_sha_match": true
+    },
+    "deletion_sweep": {
+      "output_neutral": 0,
+      "refused": 27,
+      "total": 27
+    },
+    "genesis_word_gates": {
+      "CN": 26,
+      "X": 1,
+      "total": 27
+    },
+    "size_arithmetic": "27 + 112912 + 10354 = 123293"
+  },
+  "status": "CYCLE732_GENESIS_WORD_SELF_VERIFICATION_PASS"
+}

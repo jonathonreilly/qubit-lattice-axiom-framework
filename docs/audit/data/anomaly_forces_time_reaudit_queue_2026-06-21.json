@@ -2,11 +2,7 @@
   "allowed_context_paths": [
     "docs/audit/README.md",
     "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-    "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
-    "docs/ANOMALY_FORCES_TIME_BRIDGE_PREMISE_MANIFEST_RECHECK_NOTE_2026-06-17.md",
-    "docs/ANOMALY_FORCES_TIME_THEOREM.md",
-    "docs/ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_OPEN_GATE_NOTE_2026-06-17.md"
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md"
   ],
   "forbidden_context": [
     "this dispatcher manifest as evidence",

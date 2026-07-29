@@ -68,6 +68,20 @@ DEFAULT_READY_STATUSES = {
     "meta",
 }
 
+# Dispatcher sidecars may select a target, but they may not widen the
+# restricted audit packet arbitrarily.  Keep this process-only allowlist beside
+# the producer so both queue generation and queue consumption use one policy.
+DISPATCH_ALLOWED_PROCESS_PATHS = frozenset({
+    "docs/audit/README.md",
+    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
+    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+    "docs/audit/data/derivation_obligations.json",
+    "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+})
+
 # Resolution reasons recorded on entries in `resolved_targets`.
 RESOLUTION_REASON_FRESH_CONTEXT = "same_status_fresh_context_reaudit_after_manifest"
 RESOLUTION_REASON_BOUNDED_TERMINAL = "bounded_terminal_after_reaudit"
@@ -75,6 +89,63 @@ RESOLUTION_REASON_BOUNDED_TERMINAL = "bounded_terminal_after_reaudit"
 
 def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def validate_allowed_context_paths(
+    allowed_context_paths,
+    *,
+    claim_id: str,
+    row: dict,
+    rows: dict[str, dict],
+) -> list[str]:
+    """Validate a dispatch manifest's restricted-context declaration.
+
+    The normal packet builder already owns the selected note, its one-hop
+    dependency notes, primary/helper runners, registered premise sources, and
+    standard audit methodology.  A sidecar may enumerate only those surfaces;
+    it cannot inject unrelated science or cached transcripts.  This function
+    is intentionally shared by the producer and consumer so a sidecar that
+    would stop the drainer instead fails during pipeline generation.
+    """
+    if not isinstance(allowed_context_paths, list) or not all(
+        isinstance(path, str) and path for path in allowed_context_paths
+    ):
+        raise ValueError(
+            f"dispatch target {claim_id} has malformed allowed_context_paths"
+        )
+
+    permitted_paths = set(DISPATCH_ALLOWED_PROCESS_PATHS)
+    permitted_paths.update(filter(None, (
+        row.get("note_path"),
+        row.get("runner_path"),
+    )))
+    permitted_paths.update(row.get("helper_runner_paths") or [])
+    for dep_id in row.get("deps") or []:
+        dep_path = (rows.get(dep_id) or {}).get("note_path")
+        if dep_path:
+            permitted_paths.add(dep_path)
+
+    unexpected_paths = set(allowed_context_paths) - permitted_paths
+    if unexpected_paths:
+        try:
+            premise_registry = load_json(DATA_DIR / "axiom_premise_nodes.json")
+        except (OSError, json.JSONDecodeError) as exc:
+            raise ValueError(
+                "cannot validate dispatch allowed_context_paths"
+            ) from exc
+        permitted_paths.update(
+            str(node.get("current_path"))
+            for node in (premise_registry.get("nodes") or {}).values()
+            if node.get("current_path")
+        )
+        unexpected_paths = set(allowed_context_paths) - permitted_paths
+
+    if unexpected_paths:
+        raise ValueError(
+            f"dispatch target {claim_id} requests nonstandard context paths: "
+            + ", ".join(sorted(unexpected_paths))
+        )
+    return list(allowed_context_paths)
 
 
 def source_sidecars() -> list[Path]:
@@ -178,7 +249,17 @@ def normalize_promotion_manifest(
 
     Returns (live, resolved_or_invalid, retired, resolved_targets).
     """
-    allowed_context = list(manifest.get("allowed_context_paths") or [])
+    allowed_context = manifest.get("allowed_context_paths")
+    if allowed_context is None:
+        allowed_context = []
+    if not isinstance(allowed_context, list) or not all(
+        isinstance(context_path, str) and context_path
+        for context_path in allowed_context
+    ):
+        raise ValueError(
+            f"{path.relative_to(REPO_ROOT)} has malformed allowed_context_paths"
+        )
+    allowed_context = list(allowed_context)
     forbidden_context = list(manifest.get("forbidden_context") or [])
     manifest_date = manifest.get("generated_date")
     live: list[dict] = []
@@ -283,6 +364,17 @@ def normalize_promotion_manifest(
                 base["resolution_manifest_date"] = manifest_date
                 resolved_targets.append(base)
                 continue
+            try:
+                base["allowed_context_paths"] = validate_allowed_context_paths(
+                    allowed_context,
+                    claim_id=cid,
+                    row=row,
+                    rows=rows,
+                )
+            except ValueError as exc:
+                raise ValueError(
+                    f"{path.relative_to(REPO_ROOT)}: {exc}"
+                ) from exc
             base["state"] = "live"
             dep_blockers = row_dep_blockers(row, rows)
             base["ready"] = group_ready and not dep_blockers

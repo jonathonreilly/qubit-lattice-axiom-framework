@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 123 |
-| Retained bounded rows | 355 |
+| Retained bounded rows | 356 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 31 |
 
@@ -149,7 +149,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (355)
+## Retained bounded rows (356)
 
 Sorted by load-bearing graph score (descending).
 
@@ -407,6 +407,7 @@ Sorted by load-bearing graph score (descending).
 - [`dirac_weak_coupling_note`](../../docs/DIRAC_WEAK_COUPLING_NOTE.md) — score 0.000; audited 2026-07-12T04:44:06.866893+00:00
 - [`dispersion_high_p_tiebreaker_note`](../../docs/DISPERSION_HIGH_P_TIEBREAKER_NOTE.md) — score 0.000; audited 2026-05-19T15:09:37.483218+00:00
 - [`dm_leptogenesis_pmns_analytic_stationary_classification_theorem_note_2026-04-16`](../../docs/DM_LEPTOGENESIS_PMNS_ANALYTIC_STATIONARY_CLASSIFICATION_THEOREM_NOTE_2026-04-16.md) — score 0.000; audited 2026-07-25T17:46:37.036973+00:00
+- [`dm_neutrino_codd_bosonic_normalization_narrow_theorem_note_2026-05-17`](../../docs/DM_NEUTRINO_CODD_BOSONIC_NORMALIZATION_NARROW_THEOREM_NOTE_2026-05-17.md) — score 0.000; audited 2026-07-29T18:50:23.117648+00:00
 - [`edge_deletion_boundary_note`](../../docs/EDGE_DELETION_BOUNDARY_NOTE.md) — score 0.000; audited 2026-05-24T17:57:33.280265+00:00
 - [`eigenvalue_anderson_phase_note_2026-04-11`](../../docs/EIGENVALUE_ANDERSON_PHASE_NOTE_2026-04-11.md) — score 0.000; audited 2026-04-30T19:25:04.070817+00:00
 - [`em_gravity_coexistence_2x2_note`](../../docs/EM_GRAVITY_COEXISTENCE_2X2_NOTE.md) — score 0.000; audited 2026-05-10T19:52:44.968818+00:00

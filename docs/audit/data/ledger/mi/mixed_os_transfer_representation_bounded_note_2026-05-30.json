@@ -1,10 +1,11 @@
 {
-  "audit_date": "2026-07-29T14:46:09.796145+00:00",
+  "audit_date": "2026-07-29T18:48:31.338443+00:00",
   "audit_invocation_history": [
     "d8d20d6d7b8a416d961c864e9bc9e485",
-    "094219a5a1214117984423d7e5dbb59c"
+    "094219a5a1214117984423d7e5dbb59c",
+    "c5ebaafcd7a1430795933df4d619dc1e"
   ],
-  "audit_invocation_id": "094219a5a1214117984423d7e5dbb59c",
+  "audit_invocation_id": "c5ebaafcd7a1430795933df4d619dc1e",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 1,
@@ -50,20 +51,20 @@
     "transitive_descendants": 0
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260729-d8b54c9a",
+  "auditor": "codex-audit-batch-A-20260729-c369e179",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The restricted packet clips the primary runner inside the load-bearing fixed-background/per-configuration implementation. The complete six-check chain therefore cannot be verified from source rather than stdout.",
+  "chain_closure_explanation": "The runner reports six passing checks, but its load-bearing source is clipped and the visible code declares BLOCK_MEASURE=2.0 before comparison. The restricted packet therefore cannot verify the complete computation or independently derived normalization.",
   "claim_id": "mixed_os_transfer_representation_bounded_note_2026-05-30",
   "claim_scope": "Finite-carrier numerical comparison on the explicit runner carriers at m=0.5 and declared c_block=2: Berezin block-metric eigenvalues versus operator two-step transfer eigenvalues, plus the listed single-step indefiniteness control.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-29T14:46:09.796145+00:00",
+  "claim_type_last_reviewed": "2026-07-29T18:48:31.338443+00:00",
   "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
@@ -76,7 +77,7 @@
   "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "For fixed U, the reflected Berezin block metric has one positive eigenvalue per spatial mode equal to c_block \u00b7 e^{-2E_j(U)}, with c_block=2.",
+  "load_bearing_step": "On the explicit finite carriers, the reflected Berezin block metric has one positive eigenvalue per mode equal to c_block\u00b7e^{-2E_j}, with c_block=2, while the single-step reflected metric is indefinite.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
@@ -86,7 +87,7 @@
   ],
   "note_hash": "082f96aca007f178ea5311b424d3a1dbdf9ffa09498155f9b3f6a45f64d9a634",
   "note_path": "docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the complete unclipped primary runner in the restricted packet and re-audit all six checks, especially the hidden fixed-background and Fock-block construction.",
+  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete exact source of scripts/mixed_os_transfer_representation_2026-05-30.py and independently verify that c_block=2 is extracted from the computed Gram rather than merely supplied before comparison.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -147,5 +148,5 @@
   "runner_path": "scripts/mixed_os_transfer_representation_2026-05-30.py",
   "title": "Fermion-Sector OS Transfer Representation on the 2-Step Blocked Staggered Surface \u2014 Bounded Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: the restricted packet clips the primary runner inside the load-bearing fixed-background/per-configuration path, so its reported PASS output cannot be checked against the complete implementation. Why this blocks: the finite-carrier comparison may be correct, but the packet does not expose enough source to verify every claimed carrier and computation. Repair target: rerender the complete primary runner and repeat the source-level audit of all six checks. Claim boundary until fixed: the reported m=0.5 matches and single-step indefiniteness remain runner-output evidence only; the latter is a derived no-go boundary, not an audited two-step representation theorem."
+  "verdict_rationale": "Issue: the primary runner\u2019s load-bearing source is clipped, so the dual Berezin/operator construction and all six reported PASS checks cannot be fully inspected; the visible code also declares BLOCK_MEASURE=2.0 before testing it. Why this blocks: completed stdout cannot substitute for source verification, so the equality and normalization are not independently auditable from this restricted packet. Repair target: provide the complete runner and demonstrate the normalization by extracting the ratio from the computed Gram. Claim boundary until fixed: the packet supports reported finite-carrier numerical agreement and the asserted single-step no-go control, not an audited representation theorem or independently fixed normalization."
 }

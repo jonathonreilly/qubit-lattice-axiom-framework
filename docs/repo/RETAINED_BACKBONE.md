@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 119 |
+| Retained positive rows | 120 |
 | Retained bounded rows | 352 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
-## Retained positive rows (119)
+## Retained positive rows (120)
 
 Sorted by load-bearing graph score (descending).
 
@@ -112,6 +112,7 @@ Sorted by load-bearing graph score (descending).
 - [`bougerol_lacroix_oseledets_met_external_narrow_theorem_note_2026-05-10`](../../docs/BOUGEROL_LACROIX_OSELEDETS_MET_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md) — score 3.500; audited 2026-05-11T01:38:50.674491+00:00
 - [`connes_kreimer_birkhoff_factorization_external_narrow_theorem_note_2026-05-10`](../../docs/CONNES_KREIMER_BIRKHOFF_FACTORIZATION_EXTERNAL_NARROW_THEOREM_NOTE_2026-05-10.md) — score 3.500; audited 2026-05-10T23:32:19.027006+00:00
 - [`gauge_vacuum_plaquette_spatial_environment_tensor_transfer_one_word_packet_narrow_theorem_note_2026-05-10`](../../docs/GAUGE_VACUUM_PLAQUETTE_SPATIAL_ENVIRONMENT_TENSOR_TRANSFER_ONE_WORD_PACKET_NARROW_THEOREM_NOTE_2026-05-10.md) — score 3.500; audited 2026-05-11T16:54:42.296723+00:00
+- [`cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10`](../../docs/CUBIC_ORBIT_REYNOLDS_PROJECTOR_NARROW_THEOREM_NOTE_2026-05-10.md) — score 3.000; audited 2026-07-29T13:46:28.692730+00:00
 - [`asymmetry_persistence_mass_scaling_note`](../../docs/ASYMMETRY_PERSISTENCE_MASS_SCALING_NOTE.md) — score 2.585; audited 2026-05-17T21:05:43.083600+00:00
 - [`post_record_directed_certificate_examples_2026-06-06`](../../docs/POST_RECORD_DIRECTED_CERTIFICATE_EXAMPLES_2026-06-06.md) — score 2.585; audited 2026-07-25T08:52:20.045785+00:00
 - [`generation_dial_local_stability_grammar_2026-06-05`](../../docs/GENERATION_DIAL_LOCAL_STABILITY_GRAMMAR_2026-06-05.md) — score 2.085; audited 2026-07-11T23:26:40.409989+00:00

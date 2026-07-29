@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle751_binder_formation_attempt_2026_07_28.txt": "9a1cb532f99d30073e6b7df3ec6f55a4b6effd4d79042fde983ed74cfcd82e3c",
+      "frontier_cycle751_binder_independent_check_2026_07_28.txt": "5bb9433aac08dc70dbcc4b417274dd340203b90e203ba734cc28e276164b9bb5"
+    },
+    "note": {
+      "path": "docs/BINDER_FORMATION_ATTEMPT_CYCLE751_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "9df7e9a23c4131bc3db7d6998aa13c5d3601f7dd33e794ad7c0e038cc4809bfc"
+    },
+    "runners": {
+      "frontier_cycle751_binder_formation_attempt_2026_07_28.py": "090c0bf08ba6af1d2801ba22333b263cb4971d2a83b791a8f372b686dc83a4b7",
+      "frontier_cycle751_binder_independent_check_2026_07_28.py": "380c36b6dcac370580ff5a93656c127015af9968abcfa90ed3ac10fe6d943f0d"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "actual_status_at_ship": "derived in Cycle 750 (companion PR); composition pending",
+    "axiom_pressure": false,
+    "binder_derived_at_fixture_scope": true,
+    "condition": "the declared site correspondence (Cycle-742 embedding lineage)",
+    "fixed_supplies": "the declared site correspondence; everything the Cycle-719/693 packages declare",
+    "not_derived": "the composed four-flag acceptance (the W3 capstone); scope beyond the fixture families",
+    "positive_scope": "BINDER as the delta-touch association computed from the controller's own step semantics; 220,970 locality comparisons zero disagreements; 829 writes -> 829 unique bindings (zero orphans/phantoms/duplicates); the no-lawful-pure-transport finding (checker-probed adversarially); adapter byte-exact with the empty-delta no_opportunity control",
+    "w3_closed": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 751,
+  "date": "2026-07-29",
+  "result": {
+    "bindings": "829/829 unique",
+    "locality_comparisons": 220970,
+    "transport_probe": "no lawful empty-delta acceptance event (adversarial)",
+    "w3_ledger": {
+      "ACTUAL": "derived (Cycle 750)",
+      "ADMISS": "derived-conditional",
+      "BINDER": "derived (this cycle)",
+      "LAW": "derived"
+    }
+  },
+  "status": "CYCLE751_BINDER_FORMATION_PASS"
+}

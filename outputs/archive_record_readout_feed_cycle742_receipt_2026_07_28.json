@@ -1,0 +1,47 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle742_archive_record_readout_feed_2026_07_28.txt": "45ca8cb85e7a677fbd675225e3d056abba92aa48b59eb1826411261b4fbf3760",
+      "frontier_cycle742_readout_feed_independent_check_2026_07_28.txt": "f0616ebbb03cf765531e3d5fbd02bdb524b8e2cf296bfdfdeea7775ff3efee81"
+    },
+    "note": {
+      "path": "docs/ARCHIVE_RECORD_READOUT_FEED_CYCLE742_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "916d90c6fb6c5f6c98f6159c8da1f205b1c1cb26f9a0aee20da33958012359af"
+    },
+    "runners": {
+      "frontier_cycle742_archive_record_readout_feed_2026_07_28.py": "f4bb5c7a56b140ba4e69f05958f13ba1a3c02b5b6b352e8d48139e410f587233",
+      "frontier_cycle742_readout_feed_independent_check_2026_07_28.py": "a6ad6565d97d95bacfdce4fdf67203b8b1ff76d352579b09706d43959c444a33"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "embedding_convention_supplied": true,
+    "fixed_supplies": "the bit-to-M2 embedding convention (909 sitewise Records; (3D site, (Fraction(bit),0,0,0)); zero fitted parameters); everything the Cycle-693 and Cycle-741 packages declare",
+    "junction_feed_achieved": true,
+    "not_derived": "Record permanence; the write-once locking mechanism; aggregate payload/image Records (packing + provenance); no Born/source content",
+    "positive_scope": "schema round-trip (embed -> extract -> byte-identical archive, 909/909); the unchanged Cycle-693 readout carrier reproducing all four archived payloads byte-exactly across all three Cycle-741 generations (12/12); sha-pinned surface anchor; corruption, empty, and no-write isolation controls",
+    "record_permanence_claimed": false,
+    "w5_named_gap": "a derived write-once Record locking/persistence mechanism (the probe extract enumerates its obligations); permanence must be derived, never premised"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 742,
+  "date": "2026-07-29",
+  "result": {
+    "controls": [
+      "corruption detected",
+      "empty reads empty",
+      "no-write isolation"
+    ],
+    "embedding": "909 sitewise Records; (3D site, (Fraction(bit),0,0,0))",
+    "r693_anchor_sha_unchanged": true,
+    "readout_reproduction": "12/12 payload comparisons across 3 generations"
+  },
+  "status": "CYCLE742_ARCHIVE_RECORD_READOUT_FEED_PASS"
+}

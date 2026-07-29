@@ -1,7 +1,0 @@
-{
-  "owner": "physics-science",
-  "purpose": "Wilson mu2 distance-sweep audit artifact repair",
-  "scope": "dedicated science-fix worktree",
-  "status": "active",
-  "note": "Repository-wide automation lock is unavailable because its canonical lock path is outside the writable sandbox."
-}

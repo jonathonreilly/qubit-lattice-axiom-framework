@@ -4,4 +4,4 @@ target_blocker_text: "runner_artifact_issue: supply complete SHA-pinned primary 
 source_of_blocker_text: audit_ledger
 reachability_to_target: closes
 artifact_role: runner_certificate
-next_trace_action: "refresh both caches, verify no clipping marker, and rerun the audit pipeline without committing generated audit authority files"
+next_trace_action: "independent audit after exact live/cache and full-pipeline verification; do not self-apply a verdict"

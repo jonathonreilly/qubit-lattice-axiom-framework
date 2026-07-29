@@ -4,8 +4,8 @@
 |---|---|---|---|---|---|---|---|
 | Open 3D Wilson lattice and displayed numerical parameters | Defines the sampled model | admitted finite-model specification | primary/helper runner source | yes | yes | keep explicit; bounded theorem only | declared |
 | Shared-minus-self centroid observable | Defines the sampled mutual channel | admitted observable definition | runner source | yes | yes | alternate observables remain outside scope | declared |
-| Five-value distance grid | Defines the finite calibration | computed lattice input | sweep runner/cache | yes | yes | complete SHA-pinned cache | pending |
-| Both-masses pass thresholds | Defines only a finite diagnostic, not a theorem of nature | admitted diagnostic convention | both-masses runner | no for the positive sweep; yes for the diagnostic wording | only if diagnostic retained | print criteria and nonpass explicitly | pending |
+| Five-value distance grid | Defines the finite calibration | computed lattice input | sweep runner/cache | yes | yes | complete SHA-pinned cache | verified |
+| Both-masses pass thresholds | Defines only a finite diagnostic, not a theorem of nature | admitted diagnostic convention | both-masses runner | no for the positive sweep; yes for the diagnostic wording | only if diagnostic retained | print criteria and nonpass explicitly | verified and narrowly scoped |
 | Registered framework primitives | No role in this finite computation | not applicable | primitive-registry check | no | no | none | not invoked |
 
 ## Counterfactual pass

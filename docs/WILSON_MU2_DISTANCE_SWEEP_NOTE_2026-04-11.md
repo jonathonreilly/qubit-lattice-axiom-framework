@@ -141,13 +141,16 @@ The complete `4 x 4` output gives:
 | `P_B^mut/M_A` over the grid | `CV=37.501%` | both CVs `<15%` | nonpass |
 | signed-balance proxy `|P_A^mut-P_B^mut|/(|P_A^mut|+|P_B^mut|)` | `0/16` pass; mean and max imbalance `100%` | mean `<10%`, max `<25%` | nonpass |
 
-Because the two displayed inward-oriented proxy values have opposite raw
-coordinate directions, the signed construction subtracts their magnitudes.
-Its finite nonpass says nothing by itself about conservation of a physical
+With inward motion defined as positive separately for each body, every sampled
+row gives `P_A^mut < 0` but `P_B^mut > 0`. Converting the B proxy back to a
+signed x-coordinate and adding it to A is therefore equivalent here to
+`P_A^mut-P_B^mut`, whose magnitude equals the denominator and produces the
+displayed `100%` imbalance. This exposes a one-sided coordinate response of
+this proxy; it says nothing by itself about conservation of a physical
 momentum operator. Consequently this sampled centroid proxy does not establish
-full Newton closure. That sentence reports failure to satisfy the runner's displayed
-finite criteria; it does not prove that another observable or another surface
-cannot close them.
+full Newton closure. That sentence reports failure to satisfy the runner's
+displayed finite criteria; it does not prove that another observable or
+another surface cannot close them.
 
 ## Negative-claim boundary
 

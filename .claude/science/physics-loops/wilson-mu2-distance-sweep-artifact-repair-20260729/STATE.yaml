@@ -1,16 +1,21 @@
 slug: wilson-mu2-distance-sweep-artifact-repair-20260729
 date: 2026-07-29
 branch: claude/science-fix/wilson_mu2_distance_sweep_note_2026-04-11-cc43b062
-status: executing
+status: review
 target: audited_clean re-audit readiness for the bounded Wilson mu2 distance sweep
 target_claim_type: bounded_theorem
 cycle_count: 1
 active_route: compact complete primary stdout plus recovered both-masses finite-nonpass runner
-strongest_unresolved_obligation: complete unclipped SHA-pinned stdout for both executable surfaces
-files_touched: []
+strongest_unresolved_obligation: independent audit verdict on the repaired bounded packet
+files_touched:
+  - docs/WILSON_MU2_DISTANCE_SWEEP_NOTE_2026-04-11.md
+  - scripts/frontier_wilson_mu2_distance_sweep.py
+  - scripts/frontier_newton_both_masses.py
+  - logs/runner-cache/frontier_wilson_mu2_distance_sweep.txt
+  - logs/runner-cache/frontier_newton_both_masses.txt
 open_imports: []
 trace_gate: direct_blocker_closure
-review_disposition: pending
-lock_status: branch-local supervisor lock active; repository-wide lock unavailable outside sandbox
-next_exact_action: patch runners and source note, then refresh both caches
+review_disposition: PASS WITH BOUNDED CLAIMS; independent audit required
+lock_status: released; stale branch-local lock removed during hardening
+next_exact_action: run independent audit on the repaired bounded row
 stop_condition: target artifact package verified and review disposition recorded

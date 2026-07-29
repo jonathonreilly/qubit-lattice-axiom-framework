@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 121 |
-| Retained bounded rows | 354 |
+| Retained bounded rows | 355 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
@@ -147,7 +147,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (354)
+## Retained bounded rows (355)
 
 Sorted by load-bearing graph score (descending).
 
@@ -495,6 +495,7 @@ Sorted by load-bearing graph score (descending).
 - [`teleportation_3d_operator_consistent_end_to_end_note`](../../docs/TELEPORTATION_3D_OPERATOR_CONSISTENT_END_TO_END_NOTE.md) — score 0.000; audited 2026-05-03T00:38:39.276138+00:00
 - [`teleportation_3d_resource_probe_note`](../../docs/TELEPORTATION_3D_RESOURCE_PROBE_NOTE.md) — score 0.000; audited 2026-05-11T18:15:52.623664+00:00
 - [`teleportation_adiabatic_time_evolution_note`](../../docs/TELEPORTATION_ADIABATIC_TIME_EVOLUTION_NOTE.md) — score 0.000; audited 2026-05-03T00:57:30.408260+00:00
+- [`three_generation_local_algebra_narrow_theorem_note_2026-05-10`](../../docs/THREE_GENERATION_LOCAL_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-29T14:42:27.707087+00:00
 - [`two_field_retarded_family_closure_note_2026-04-10`](../../docs/TWO_FIELD_RETARDED_FAMILY_CLOSURE_NOTE_2026-04-10.md) — score 0.000; audited 2026-05-02T01:27:57.312564+00:00
 - [`two_field_retarded_probe_note_2026-04-10`](../../docs/TWO_FIELD_RETARDED_PROBE_NOTE_2026-04-10.md) — score 0.000; audited 2026-05-02T01:29:08.604974+00:00
 - [`unification_basin_failure_note`](../../docs/UNIFICATION_BASIN_FAILURE_NOTE.md) — score 0.000; audited 2026-06-08T21:24:29.645877+00:00

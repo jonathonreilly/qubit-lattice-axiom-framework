@@ -1132,10 +1132,6 @@
           "effective_status": "audited_conditional"
         },
         {
-          "claim_id": "hierarchy_matsubara_decomposition_note",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
           "effective_status": "unaudited"
         },
@@ -2764,7 +2760,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 634
+      "uncertified_count": 633
     }
   ],
   "schema": "lane_certification_v2"

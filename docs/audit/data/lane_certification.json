@@ -1101,7 +1101,7 @@
         },
         {
           "claim_id": "hierarchy_effective_potential_endpoint_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",

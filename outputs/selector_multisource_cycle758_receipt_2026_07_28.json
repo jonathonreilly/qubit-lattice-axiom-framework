@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle758_multisource_independent_check_2026_07_28.txt": "17b29549a5cba026cab9a8efde05bc29dd6a066bb25c98292c43ac15349d2e04",
+      "frontier_cycle758_selector_multisource_2026_07_28.txt": "734da4d8a77da4e74991b02c3148f26d597f490c3d63371a4a6d26eb0521982c"
+    },
+    "note": {
+      "path": "docs/SELECTOR_MULTISOURCE_CYCLE758_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "d8bd6bd29147c07f7be39fa7625a24b076ca4db25cf196152e179e58e9bf1e1f"
+    },
+    "runners": {
+      "frontier_cycle758_multisource_independent_check_2026_07_28.py": "003a857f0199231cb830560082661f8901c26ed777a80de6b4ac141cc47baf9a",
+      "frontier_cycle758_selector_multisource_2026_07_28.py": "8be433f74cb337c322bcb1e2f46007244d708a41c946cb83b7ccd61004176241"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "everything the Cycle-736/750 packages declare",
+    "k2_over_exclusion_mechanism": "the clean_postimage law vetoes the residual state lawful two-source updates leave (composition/rail/inverse all pass first)",
+    "k3_tie": "exact three-way tie [(0,2,4),(0,2,9),(0,7,9)]; discriminator-free (bounded search)",
+    "named_route": "a multi-source-aware postimage law, or recognition of two-source residual state as physical content",
+    "not_derived": "multi-source actuality; k=3,4 full strata",
+    "outcome": "PARTIAL_EXTENSION",
+    "positive_scope": "k=0,1,2,5 exhausted + translation-complete k=3,4 samples (89 configs); k=1 unique survivor everywhere; k=2 zero survivors over all 44 configs with the veto mechanism named from traces (checker independent); the exact k=3 tie verified; 27 covariance-membership failures censused",
+    "selector_scope": "single-source epochs exactly (k=1 extends; the 750/754 scope statements proven exact)"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 8,
+    "primary_named_checks_passed": 10
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 758,
+  "date": "2026-07-29",
+  "result": {
+    "k1": "unique everywhere",
+    "k2": "0 survivors / 44 configs",
+    "k3_sample": "[3,0,0,1] incl. exact tie",
+    "mechanism": "clean_postimage veto"
+  },
+  "status": "CYCLE758_SELECTOR_BOUNDARY_PASS"
+}

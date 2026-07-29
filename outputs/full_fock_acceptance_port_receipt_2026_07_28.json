@@ -1,0 +1,49 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_full_fock_acceptance_port_2026_07_28.txt": "53f18c91704b7778e008a18ae3fc0126b08e6c79eee25f42b8d375fcc03801ba",
+      "frontier_full_fock_port_independent_check_2026_07_28.txt": "ebd29306185491915b371f52c18bee51ccf253653b87688e16e0d960f88b69e9"
+    },
+    "note": {
+      "path": "docs/FULL_FOCK_ACCEPTANCE_PORT_SUPPORT_NOTE_2026-07-28.md",
+      "sha256": "1de07f5371c7d3ae70dc012d8a299f347cf6ad8eeb20aea6ebbe974e0f5c05e2"
+    },
+    "runners": {
+      "frontier_full_fock_acceptance_port_2026_07_28.py": "cdca4805568b023b7c7fef14e0639faff76c77b2922c5ae5a88cc64e88f32294",
+      "frontier_full_fock_port_independent_check_2026_07_28.py": "1c84428ae587fe1ea2a8835380641d30fdec53bf192d2b74c09d153d3eae892e"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "c_source_firewall_verbatim": true,
+    "fixed_supplies": "three lawful probe feeds and three malformation witnesses (declared data with frozen expectations; zero fitted parameters); the port feed schema; everything the full-Fock package and landed Cycle-320/322 surfaces declare supplied",
+    "gravity_or_source_physics_moved": false,
+    "not_derived": "any source law, response law, or gravity content; the port certifies surface behavior only",
+    "positive_scope": "standing ACCEPT/REJECT/DRIFT verdicts over the full-Fock surface: byte pin; subprocess-isolated self-run (8/8); three frozen-value ACCEPT probes (anchor weight, channel counts 0/6/24, recoil triple); three REJECT witnesses with honest labels; one-byte DRIFT demonstration on a sandbox copy; live-comparator adversary self-test; C_source firewall AST audit"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 4,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "meta",
+  "cycle_lineage": [
+    320,
+    322
+  ],
+  "date": "2026-07-28",
+  "result": {
+    "accept_probes": "3/3 frozen-value matches",
+    "adversary_self_test": "wrong quarantined expectation caught",
+    "drift_demo": "one-byte sandbox mutation detected; real module sha unchanged",
+    "label_honesty_confirmed_by_checker": true,
+    "reject_witnesses": {
+      "port_schema": 2,
+      "surface": 1
+    },
+    "self_run": "8/8"
+  },
+  "status": "FULL_FOCK_ACCEPTANCE_PORT_PASS"
+}

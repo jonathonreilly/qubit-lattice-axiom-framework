@@ -1116,10 +1116,6 @@
           "effective_status": "audited_conditional"
         },
         {
-          "claim_id": "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "higgs_channel_effective_ntaste_boundary_bounded_note_2026-05-08",
           "effective_status": "unaudited"
         },
@@ -2732,7 +2728,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 626
+      "uncertified_count": 625
     }
   ],
   "schema": "lane_certification_v2"

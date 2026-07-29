@@ -37,6 +37,10 @@ NOTE_PATH = (
     / "docs"
     / "DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md"
 )
+AUDIT_INPUT_PATHS = (
+    "docs/DM_NEUTRINO_ODD_CIRCULANT_Z2_SLOT_THEOREM_NOTE_2026-04-15.md",
+)
+SECTION_RULE = "=" * 72
 
 PASS_COUNT = 0
 FAIL_COUNT = 0
@@ -294,9 +298,9 @@ def raw_coordinate_is_basis_invariant(matrix: Matrix, unitary: Matrix) -> bool:
 
 
 def part1_full_hermitian_commutant() -> None:
-    print("\n" + "=" * 92)
+    print("\n" + SECTION_RULE)
     print("PART 1: EXACT FULL HERMITIAN COMMUTANT")
-    print("=" * 92)
+    print(SECTION_RULE)
 
     valid, constraint_rank, nullity, basis_rank = validate_commutant_basis()
     check(
@@ -321,9 +325,9 @@ def part1_full_hermitian_commutant() -> None:
 
 
 def part2_gram_extraction_and_parity() -> None:
-    print("\n" + "=" * 92)
+    print("\n" + SECTION_RULE)
     print("PART 2: EXACT GRAM MATRIX, EXTRACTION, AND PARITY REPRESENTATION")
-    print("=" * 92)
+    print(SECTION_RULE)
 
     d, c_even, c_odd = symbols("d c_even c_odd", real=True)
     symbolic_matrix = matrix_from_coefficients(d, c_even, c_odd)
@@ -356,9 +360,9 @@ def part2_gram_extraction_and_parity() -> None:
 
 
 def part3_signed_and_zero_extraction_cases() -> None:
-    print("\n" + "=" * 92)
+    print("\n" + SECTION_RULE)
     print("PART 3: EXACT SIGNED AND ZERO COEFFICIENT CASES")
-    print("=" * 92)
+    print(SECTION_RULE)
 
     for index, (d, c_even, c_odd) in enumerate(SIGNED_ZERO_SAMPLES):
         matrix = raw_hermitian_circulant(d, c_even, c_odd)
@@ -380,9 +384,9 @@ def part3_signed_and_zero_extraction_cases() -> None:
 
 
 def part4_exact_coordinate_polynomial() -> None:
-    print("\n" + "=" * 92)
+    print("\n" + SECTION_RULE)
     print("PART 4: EXACT COORDINATE POLYNOMIAL")
-    print("=" * 92)
+    print(SECTION_RULE)
 
     d, c_even, c_odd = symbols("d c_even c_odd", real=True)
     symbolic_matrix = matrix_from_coefficients(d, c_even, c_odd)
@@ -410,9 +414,9 @@ def part4_exact_coordinate_polynomial() -> None:
 
 
 def part5_exact_basis_transformation() -> None:
-    print("\n" + "=" * 92)
+    print("\n" + SECTION_RULE)
     print("PART 5: EXACT SIMULTANEOUS BASIS TRANSFORMATION")
-    print("=" * 92)
+    print(SECTION_RULE)
 
     unitary = exact_basis_change()
     d, c_even, c_odd = symbols("d c_even c_odd", real=True)
@@ -452,9 +456,9 @@ def part5_exact_basis_transformation() -> None:
 
 
 def part6_theorem_surface_consistency() -> None:
-    print("\n" + "=" * 92)
+    print("\n" + SECTION_RULE)
     print("PART 6: POSITIVE THEOREM-SURFACE CONSISTENCY")
-    print("=" * 92)
+    print(SECTION_RULE)
 
     note = NOTE_PATH.read_text(encoding="utf-8")
     required = (
@@ -512,9 +516,9 @@ def part6_theorem_surface_consistency() -> None:
 
 
 def part7_hostile_mutations() -> None:
-    print("\n" + "=" * 92)
+    print("\n" + SECTION_RULE)
     print("PART 7: HOSTILE MUTATIONS THROUGH LOAD-BEARING VALIDATORS")
-    print("=" * 92)
+    print(SECTION_RULE)
 
     noncirculant_hermitian = Matrix.diag(1, 2, 3)
     mutation_check(
@@ -549,9 +553,9 @@ def part7_hostile_mutations() -> None:
 
 
 def main() -> int:
-    print("=" * 92)
+    print(SECTION_RULE)
     print("SUPPLIED 3x3 HERMITIAN-CIRCULANT / P23 EVEN-ODD ALGEBRA THEOREM")
-    print("=" * 92)
+    print(SECTION_RULE)
     print()
     print("Typed surface:")
     print("  input  = displayed finite matrices, basis, indices, and trace pairing")
@@ -565,9 +569,9 @@ def main() -> int:
     part6_theorem_surface_consistency()
     part7_hostile_mutations()
 
-    print("\n" + "=" * 92)
+    print("\n" + SECTION_RULE)
     print("RESULT")
-    print("=" * 92)
+    print(SECTION_RULE)
     print("  Positive finite-matrix theorem:")
     print("    - the Hermitian commutant is exactly three-real-dimensional")
     print("    - its parity multiplicities are exactly two even and one odd")

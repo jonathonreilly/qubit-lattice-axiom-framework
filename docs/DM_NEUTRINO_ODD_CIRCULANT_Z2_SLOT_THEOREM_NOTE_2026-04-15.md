@@ -11,6 +11,13 @@
 **Runner cache:**
 [`logs/runner-cache/frontier_dm_neutrino_odd_circulant_z2_slot_theorem.txt`](../logs/runner-cache/frontier_dm_neutrino_odd_circulant_z2_slot_theorem.txt)
 
+**Re-audit certificate:** the canonical cache header pins runner SHA-256
+`f0b4cf68aef149efa7528d885017cfc8c754e0cb018ef72443a4e19521926cb9`
+and a fingerprint of this declared note input. Its unabridged stdout section is
+below the legacy `6,000`-character packet limit, includes all 37 named checks,
+and terminates with `MUTATION KILLS=6/6` and
+`PASS=37 FAIL=0`.
+
 ## Question
 
 For the supplied cyclic shift `S` and exchange matrix `P_23`, what is the exact

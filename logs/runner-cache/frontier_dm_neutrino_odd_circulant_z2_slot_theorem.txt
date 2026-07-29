@@ -1,39 +1,40 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_neutrino_odd_circulant_z2_slot_theorem.py
-runner_sha256: 4e3622ac6b11d4350fa7f37bb1e055357ce70983fd5ea7a424fb59798ce6352a
+runner_sha256: f0b4cf68aef149efa7528d885017cfc8c754e0cb018ef72443a4e19521926cb9
+input_fingerprint_sha256: 2f8964e53cd3dad0cb229e4097e0c3ee09f8475cba98d64e9413b6a6874a768a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.57
+elapsed_sec: 0.72
 status: ok
 ----- stdout -----
-============================================================================================
+========================================================================
 SUPPLIED 3x3 HERMITIAN-CIRCULANT / P23 EVEN-ODD ALGEBRA THEOREM
-============================================================================================
+========================================================================
 
 Typed surface:
   input  = displayed finite matrices, basis, indices, and trace pairing
   output = exact commutant, extraction, parity, and coordinate identity
 
-============================================================================================
+========================================================================
 PART 1: EXACT FULL HERMITIAN COMMUTANT
-============================================================================================
+========================================================================
   [PASS] The supplied cyclic shift convention is exact
   [PASS] Independent nine-real-coordinate constraints have rank six  (rank=6, nullity=3)
   [PASS] I, S+S^2, and i(S-S^2) are independent Hermitian commutant elements  (basis rank=3)
   [PASS] The displayed basis spans the full Hermitian commutant  (commutant dimension=3, basis rank=3)
 
-============================================================================================
+========================================================================
 PART 2: EXACT GRAM MATRIX, EXTRACTION, AND PARITY REPRESENTATION
-============================================================================================
+========================================================================
   [PASS] P23 exchanges S and S^2
   [PASS] The Hilbert-Schmidt Gram matrix is diag(3,6,6)  (G=Matrix([[3, 0, 0], [0, 6, 0], [0, 0, 6]]))
   [PASS] Hilbert-Schmidt extraction recovers the symbolic coefficient triple
   [PASS] The independently extracted parity representation is diag(+1,+1,-1)  (R=Matrix([[1, 0, 0], [0, 1, 0], [0, 0, -1]]))
   [PASS] The exact parity multiplicities are two even and one odd  (multiplicities=(2, 1))
 
-============================================================================================
+========================================================================
 PART 3: EXACT SIGNED AND ZERO COEFFICIENT CASES
-============================================================================================
+========================================================================
   [PASS] Case 0: extraction and reconstruction recover all coefficients  (expected=(5/2, 5/4, 3/4), extracted=(5/2, 5/4, 3/4))
   [PASS] Case 1: extraction and reconstruction recover all coefficients  (expected=(-1, -2, 3), extracted=(-1, -2, 3))
   [PASS] Case 2: extraction and reconstruction recover all coefficients  (expected=(0, 9/2, -1/2), extracted=(0, 9/2, -1/2))
@@ -42,9 +43,9 @@ PART 3: EXACT SIGNED AND ZERO COEFFICIENT CASES
   [PASS] Case 5: extraction and reconstruction recover all coefficients  (expected=(0, 0, 0), extracted=(0, 0, 0))
   [PASS] The supplied entry convention has K_01 = c_even + i c_odd  (K_01=3/2 - I/4, K_02=3/2 + I/4)
 
-============================================================================================
+========================================================================
 PART 4: EXACT COORDINATE POLYNOMIAL
-============================================================================================
+========================================================================
   [PASS] Actual symbolic entry multiplication gives 2 c_even c_odd  (A_01=2*c_even*c_odd)
   [PASS] P23 changes the exact coordinate polynomial by one minus sign  (A_01(PKP)=-2*c_even*c_odd)
   [PASS] Case 0: actual matrix multiplication matches the coordinate identity  (coefficients=(5/2, 5/4, 3/4))
@@ -54,24 +55,24 @@ PART 4: EXACT COORDINATE POLYNOMIAL
   [PASS] Case 4: actual matrix multiplication matches the coordinate identity  (coefficients=(7, -3/2, 0))
   [PASS] Case 5: actual matrix multiplication matches the coordinate identity  (coefficients=(0, 0, 0))
 
-============================================================================================
+========================================================================
 PART 5: EXACT SIMULTANEOUS BASIS TRANSFORMATION
-============================================================================================
+========================================================================
   [PASS] The chosen basis transformation is exactly unitary
   [PASS] Simultaneous conjugation preserves the symbolic coefficient triple
   [PASS] Simultaneous conjugation preserves parity multiplicities
   [PASS] The raw 01-entry polynomial changes under this basis transformation  (original=-14/25, transformed=0)
 
-============================================================================================
+========================================================================
 PART 6: POSITIVE THEOREM-SURFACE CONSISTENCY
-============================================================================================
+========================================================================
   [PASS] The note declares every finite-matrix input and theorem output  (missing count=0)
   [PASS] The theorem surface contains only its positive finite-matrix content  (stale-term count=0)
   [PASS] Exit policy maps every positive failure count to a nonzero exit
 
-============================================================================================
+========================================================================
 PART 7: HOSTILE MUTATIONS THROUGH LOAD-BEARING VALIDATORS
-============================================================================================
+========================================================================
   [PASS] Hostile mutation killed: noncirculant Hermitian member
   [PASS] Hostile mutation killed: wrong even/odd parity assignment
   [PASS] Hostile mutation killed: reversed overall sign in the coordinate identity
@@ -79,9 +80,9 @@ PART 7: HOSTILE MUTATIONS THROUGH LOAD-BEARING VALIDATORS
   [PASS] Hostile mutation killed: altered coefficient-extraction denominator
   [PASS] Hostile mutation killed: reversed cyclic-shift convention
 
-============================================================================================
+========================================================================
 RESULT
-============================================================================================
+========================================================================
   Positive finite-matrix theorem:
     - the Hermitian commutant is exactly three-real-dimensional
     - its parity multiplicities are exactly two even and one odd

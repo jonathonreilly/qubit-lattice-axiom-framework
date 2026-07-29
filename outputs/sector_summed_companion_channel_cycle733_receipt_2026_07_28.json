@@ -1,0 +1,56 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle733_sector_sum_independent_check_2026_07_28.txt": "28e9d1d12d0771174a7207e04fc66d614074404dcc02320404937bbc53ffaa6e",
+      "frontier_cycle733_sector_summed_companion_channel_2026_07_28.txt": "bce764f63d6e445a309496536a463d86109d4781b98525558bbb7faace6e8cd6"
+    },
+    "note": {
+      "path": "docs/SECTOR_SUMMED_COMPANION_CHANNEL_CYCLE733_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "b2df792daf99b5889f79dc1e88f8566e9746e010cae6aa0443687f4c4b7f8578"
+    },
+    "runners": {
+      "frontier_cycle733_sector_sum_independent_check_2026_07_28.py": "e3124529a3a5cd943156f04a5ddfc7275acadb2fc29ab23de5db92ac0bc8431c",
+      "frontier_cycle733_sector_summed_companion_channel_2026_07_28.py": "e2431e968ca6f12c3efead8bc0725f98f4a0bf0a2c5fd8a6cdfc68b0562f5d35"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "the printed outer direct-sum sector ordering (even before odd; within-sector coordinates unchanged), plus everything the landed Cycle-720 geometry/gauge modules and the Cycle-727 exactness surface declare",
+    "frozen_obstruction": null,
+    "full_sector_isometry_achieved": true,
+    "not_derived": "any marker-to-coframe correspondence (Cycle 727's second frozen obstruction stands); the global tiled channel tensor; bounded physical common-E preparation; no occurrence/time/Record/Born/source content",
+    "per_sector_exactness_unchanged": true,
+    "positive_scope": "the direct-sum channel V = V+ (+) V- over even/odd parity sectors (2^47 each; summed domain 2^48); exact V(dagger)V = I via structural projector algebra; all 624 intertwining and 1,248 representation off-diagonal blocks exactly zero at generator level (312 generators); 936 cross-sector diagnostics with exact norm preservation; zero fitted constants",
+    "second_cycle727_obstruction_untouched": true
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 7
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 733,
+  "date": "2026-07-28",
+  "result": {
+    "cross_sector_tests": "936/936",
+    "frozen_obstruction": null,
+    "generators": 312,
+    "intertwining_off_diagonal_blocks": {
+      "exhausted": 624,
+      "nonzero": 0
+    },
+    "isometry_residual": "exact_zero",
+    "representation_off_diagonal_blocks": {
+      "exhausted": 1248,
+      "nonzero": 0
+    },
+    "sector_dimensions": {
+      "direct_sum_exponent": 48,
+      "even_exponent": 47,
+      "odd_exponent": 47
+    }
+  },
+  "status": "CYCLE733_SECTOR_SUMMED_FULL_SECTOR_ISOMETRY_PASS"
+}

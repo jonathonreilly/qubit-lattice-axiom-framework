@@ -1574,9 +1574,9 @@ def main() -> int:
                 seat_timeout_seconds=args.seat_timeout_sec,
             )
         except batch.CleanupIntegrityError as exc:
-            print(
-                "GLOBAL cleanup integrity failure; no later panel may launch: "
-                f"{exc}"
+            batch.cleanup_integrity_diagnostic(
+                "GLOBAL cleanup integrity failure; no later panel may launch",
+                exc,
             )
             return batch.CLEANUP_INTEGRITY_EXIT_CODE
         report.append(result)

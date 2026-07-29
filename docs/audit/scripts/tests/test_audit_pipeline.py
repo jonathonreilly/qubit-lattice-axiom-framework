@@ -15837,6 +15837,13 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
             "row-a": self._row("row-a"),
             "row-b": self._row("row-b"),
         }
+        diagnostic_failures = []
+
+        def fail_cleanup_diagnostic(*args, **_kwargs):
+            if args and str(args[0]).startswith("GLOBAL cleanup integrity"):
+                diagnostic_failures.append(str(args[0]))
+                raise OSError("stdout unavailable")
+
         with tempfile.TemporaryDirectory() as tmp:
             workdir = Path(tmp) / "panel"
             with mock.patch.dict(
@@ -15866,10 +15873,14 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
                 side_effect=m.batch.CleanupIntegrityError(
                     "group still present"
                 ),
-            ) as run_panel:
+            ) as run_panel, mock.patch(
+                "builtins.print",
+                side_effect=fail_cleanup_diagnostic,
+            ):
                 rc = m.main()
 
         self.assertEqual(rc, m.batch.CLEANUP_INTEGRITY_EXIT_CODE)
+        self.assertEqual(len(diagnostic_failures), 1)
         run_panel.assert_called_once()
 
     def test_contract_invalid_vote_runs_fresh_full_panel(self):

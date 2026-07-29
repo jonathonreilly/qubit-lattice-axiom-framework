@@ -1037,6 +1037,38 @@ def terminate_read_only_seats(jobs: list[dict]) -> None:
         )
 
 
+def close_worker_logs(jobs: list[dict]) -> list[str]:
+    """Close every worker log handle and return, rather than raise, failures."""
+    failures: list[str] = []
+    for job in jobs:
+        try:
+            handle = job.get("log_handle")
+            if handle is not None and not handle.closed:
+                handle.close()
+        except BaseException as exc:
+            try:
+                detail = str(exc)
+            except BaseException:
+                detail = "<unprintable close failure>"
+            try:
+                claim = str(job.get("cid", "<unknown>"))
+            except BaseException:
+                claim = "<unprintable claim id>"
+            failures.append(f"{claim}: {type(exc).__name__}: {detail}")
+    return failures
+
+
+def cleanup_integrity_diagnostic(
+    message: str, error: BaseException | None = None
+) -> None:
+    """Best-effort diagnostic that cannot replace the cleanup-integrity result."""
+    try:
+        suffix = f": {error}" if error is not None else ""
+        print(message + suffix)
+    except BaseException:
+        pass
+
+
 def wait_workers(
     jobs: list[dict],
     stall_minutes: int = 45,
@@ -1207,9 +1239,21 @@ def wait_workers(
         raise
     finally:
         PROGRESS["jobs"] = None
-        for job in jobs:
-            if not job["log_handle"].closed:
-                job["log_handle"].close()
+        active_error = sys.exc_info()[1]
+        log_close_failures = close_worker_logs(jobs)
+        if log_close_failures:
+            detail = (
+                "worker log cleanup also failed after every handle was "
+                f"attempted: {'; '.join(log_close_failures)}"
+            )
+            if isinstance(active_error, CleanupIntegrityError):
+                raise CleanupIntegrityError(
+                    f"{active_error}; {detail}"
+                ) from active_error
+            if active_error is None:
+                raise OSError(detail)
+            if hasattr(active_error, "add_note"):
+                active_error.add_note(detail)
 
 
 def terminate_workers(jobs: list[dict]) -> None:
@@ -3241,9 +3285,10 @@ def main() -> int:
             if drain_lock is not None:
                 drain_lock.close()
         except BaseException as exc:
-            print(
+            cleanup_integrity_diagnostic(
                 "GLOBAL cleanup integrity failure while closing the drain "
-                f"lock; process exit will release it: {exc}"
+                "lock; process exit will release it",
+                exc,
             )
         finally:
             drain_lock = None
@@ -3537,9 +3582,9 @@ def main() -> int:
                 wall_timeout_seconds=args.seat_timeout_sec,
             )
         except CleanupIntegrityError as exc:
-            print(
-                "GLOBAL cleanup integrity failure; no later seat may launch: "
-                f"{exc}"
+            cleanup_integrity_diagnostic(
+                "GLOBAL cleanup integrity failure; no later seat may launch",
+                exc,
             )
             try:
                 if report:
@@ -3551,9 +3596,10 @@ def main() -> int:
                         encoding="utf-8",
                     )
             except BaseException as report_error:
-                print(
+                cleanup_integrity_diagnostic(
                     "GLOBAL cleanup integrity report could not be preserved; "
-                    f"retaining the dedicated hard-stop result: {report_error}"
+                    "retaining the dedicated hard-stop result",
+                    report_error,
                 )
             finally:
                 return finish_cleanup_integrity()

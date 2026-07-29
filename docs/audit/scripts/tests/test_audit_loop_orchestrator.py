@@ -711,6 +711,13 @@ class BatchExitSemanticsTest(unittest.TestCase):
             report.append({"cid": "completed", "result": "audited_clean"})
             return True, set(), set(), []
 
+        diagnostic_failures = []
+
+        def fail_cleanup_diagnostics(*args, **_kwargs):
+            if args and str(args[0]).startswith("GLOBAL cleanup integrity"):
+                diagnostic_failures.append(str(args[0]))
+                raise OSError("stdout unavailable")
+
         with tempfile.TemporaryDirectory() as tmp:
             workdir = Path(tmp) / "batch"
             with mock.patch.dict(
@@ -765,10 +772,14 @@ class BatchExitSemanticsTest(unittest.TestCase):
                 Path,
                 "write_text",
                 side_effect=OSError("report unavailable"),
+            ), mock.patch(
+                "builtins.print",
+                side_effect=fail_cleanup_diagnostics,
             ):
                 rc = batch.main()
 
         self.assertEqual(rc, batch.CLEANUP_INTEGRITY_EXIT_CODE)
+        self.assertGreaterEqual(len(diagnostic_failures), 3)
         lock.close.assert_called_once_with()
 
     def test_judicial_handoff_is_resumable(self):
@@ -2595,6 +2606,13 @@ class ClaimTransactionTest(unittest.TestCase):
             slow = job("slow")
             slow["process_group"] = float("inf")
             slow_other = job("slow-other")
+            slow["log_handle"].close()
+            slow_other["log_handle"].close()
+            failing_log = mock.Mock(closed=False)
+            failing_log.close.side_effect = OSError("slow log close failed")
+            later_log = mock.Mock(closed=False)
+            slow["log_handle"] = failing_log
+            slow_other["log_handle"] = later_log
             callback_started = threading.Event()
             cleanup_attempted = threading.Event()
             safe_to_finish = threading.Event()
@@ -2642,7 +2660,7 @@ class ClaimTransactionTest(unittest.TestCase):
                 with self.assertRaisesRegex(
                     batch.CleanupIntegrityError,
                     "no valid recorded process group",
-                ):
+                ) as raised:
                     batch.wait_workers(
                         [ready_a, ready_b, slow, slow_other],
                         on_claim_ready=callback,
@@ -2651,12 +2669,14 @@ class ClaimTransactionTest(unittest.TestCase):
 
         self.assertEqual(callbacks, ["ready-a"])
         self.assertEqual(cancellation_seen, [False])
-        self.assertTrue(
-            all(
-                job["log_handle"].closed
-                for job in (ready_a, ready_b, slow, slow_other)
-            )
+        self.assertIn(
+            "worker log cleanup also failed after every handle was attempted",
+            str(raised.exception),
         )
+        self.assertTrue(ready_a["log_handle"].closed)
+        self.assertTrue(ready_b["log_handle"].closed)
+        failing_log.close.assert_called_once_with()
+        later_log.close.assert_called_once_with()
 
     def test_wait_workers_callback_failure_terminates_remaining_seats(self):
         class FakeProc:
@@ -3636,8 +3656,15 @@ class AutomaticPanelResumeTest(unittest.TestCase):
             labels.append(label)
             return batch.CLEANUP_INTEGRITY_EXIT_CODE
 
-        with mock.patch.object(audit_loop, "git_head", return_value="h0"), \
-             mock.patch.object(audit_loop, "run_command", side_effect=fake_run):
+        with mock.patch.object(
+            audit_loop, "git_head", return_value="h0"
+        ), mock.patch.object(
+            audit_loop, "run_command", side_effect=fake_run
+        ), mock.patch.object(
+            audit_loop,
+            "emit",
+            side_effect=OSError("stdout unavailable"),
+        ):
             rc, progressed = audit_loop.drain_lane("lane_a", args)
 
         self.assertEqual(rc, batch.CLEANUP_INTEGRITY_EXIT_CODE)
@@ -3654,8 +3681,15 @@ class AutomaticPanelResumeTest(unittest.TestCase):
                 return 1
             return batch.CLEANUP_INTEGRITY_EXIT_CODE
 
-        with mock.patch.object(audit_loop, "git_head", return_value="h0"), \
-             mock.patch.object(audit_loop, "run_command", side_effect=fake_run):
+        with mock.patch.object(
+            audit_loop, "git_head", return_value="h0"
+        ), mock.patch.object(
+            audit_loop, "run_command", side_effect=fake_run
+        ), mock.patch.object(
+            audit_loop,
+            "emit",
+            side_effect=OSError("stdout unavailable"),
+        ):
             rc, progressed = audit_loop.drain_lane("lane_a", args)
 
         self.assertEqual(rc, batch.CLEANUP_INTEGRITY_EXIT_CODE)
@@ -5274,6 +5308,117 @@ class CampaignContractTest(unittest.TestCase):
             )
         self.assertEqual(rc, 2)
         run_panel.assert_not_called()
+
+    def test_parent_finalizers_preserve_cleanup_exit_from_every_child_route(self):
+        routes = (
+            ("opening_panel", False),
+            ("dispatch_source", False),
+            ("mandatory_panel", True),
+            ("forensic", False),
+        )
+        for route, scoped_lane in routes:
+            with self.subTest(route=route), tempfile.TemporaryDirectory() as tmp:
+                lock = mock.Mock()
+                lock.close.side_effect = OSError("parent lock close failed")
+                final_summary_attempted = False
+
+                def emit(message):
+                    nonlocal final_summary_attempted
+                    if message == "forced-final-summary":
+                        final_summary_attempted = True
+                        raise OSError("stdout unavailable")
+
+                panel_calls = 0
+
+                def run_panel(_args, _label, **_kwargs):
+                    nonlocal panel_calls
+                    panel_calls += 1
+                    if route == "opening_panel":
+                        return batch.CLEANUP_INTEGRITY_EXIT_CODE
+                    return 0
+
+                drain_calls = 0
+
+                def drain_lane(_lane, _args, source=None):
+                    nonlocal drain_calls
+                    drain_calls += 1
+                    if route == "dispatch_source" and source == "dispatch":
+                        return batch.CLEANUP_INTEGRITY_EXIT_CODE, False
+                    if route == "mandatory_panel" and source is None:
+                        return batch.CLEANUP_INTEGRITY_EXIT_CODE, False
+                    return 0, False
+
+                argv = [
+                    "--campaign-workdir",
+                    tmp,
+                    "--worker-id",
+                    "worker-finalizer-test",
+                ]
+                if scoped_lane:
+                    argv.extend(["--lane", "lane_a"])
+
+                with mock.patch.object(
+                    audit_loop, "validate_requested_lanes"
+                ), mock.patch.object(
+                    batch, "load_campaign_exclusion_records", return_value=[]
+                ), mock.patch.object(
+                    batch, "load_campaign_selection_skip_records", return_value=[]
+                ), mock.patch.object(
+                    batch, "acquire_exclusive_drain_lock", return_value=lock
+                ), mock.patch.object(
+                    batch, "clean_main_error", return_value=None
+                ), mock.patch.object(
+                    batch, "sync_origin_main", return_value=(True, "same")
+                ), mock.patch.object(
+                    audit_loop, "audit_status_snapshot", return_value={}
+                ), mock.patch.object(
+                    audit_loop, "heartbeat", return_value=None
+                ), mock.patch.object(
+                    audit_loop, "git_head", return_value="same"
+                ), mock.patch.object(
+                    audit_loop,
+                    "blocking_lanes",
+                    return_value=[("lane_a", 1)] if scoped_lane else [],
+                ), mock.patch.object(
+                    audit_loop,
+                    "campaign_exclusion_counts",
+                    return_value=batch.Counter(),
+                ), mock.patch.object(
+                    audit_loop, "run_panel", side_effect=run_panel
+                ), mock.patch.object(
+                    audit_loop, "drain_lane", side_effect=drain_lane
+                ), mock.patch.object(
+                    audit_loop,
+                    "drain_forensic_sequence",
+                    return_value=(
+                        batch.CLEANUP_INTEGRITY_EXIT_CODE,
+                        False,
+                    ),
+                ) as forensic, mock.patch.object(
+                    audit_loop, "summary_line", return_value="forced-final-summary"
+                ), mock.patch.object(
+                    audit_loop, "emit", side_effect=emit
+                ), mock.patch(
+                    "builtins.print"
+                ) as print_mock:
+                    rc = audit_loop.main(argv)
+
+                self.assertEqual(rc, batch.CLEANUP_INTEGRITY_EXIT_CODE)
+                self.assertTrue(final_summary_attempted)
+                lock.close.assert_called_once_with()
+                self.assertTrue(print_mock.called)
+                warning = str(print_mock.call_args.args[0])
+                self.assertIn("forced final summary failed", warning)
+                self.assertIn("parent drain-lock close failed", warning)
+                if route == "opening_panel":
+                    self.assertEqual(panel_calls, 1)
+                    self.assertEqual(drain_calls, 0)
+                elif route == "dispatch_source":
+                    self.assertEqual(drain_calls, 1)
+                elif route == "mandatory_panel":
+                    self.assertEqual(drain_calls, 1)
+                else:
+                    forensic.assert_called_once()
 
     def test_default_worker_runs_complete_flow_with_generated_identity(self):
         generated = mock.Mock(hex="0123456789abcdef")

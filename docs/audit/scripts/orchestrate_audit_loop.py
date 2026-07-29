@@ -80,6 +80,23 @@ def emit(message: str) -> None:
     print(f"[{now}] {message}", flush=True)
 
 
+def finalization_failure(label: str, exc: BaseException) -> str:
+    """Render secondary finalizer context without risking another exception."""
+    try:
+        detail = str(exc)
+    except BaseException:
+        detail = "<unprintable finalization failure>"
+    return f"{label}: {type(exc).__name__}: {detail}"
+
+
+def emit_preserving_primary_result(message: str) -> None:
+    """Best-effort status output for an already-determined campaign result."""
+    try:
+        emit(message)
+    except BaseException:
+        pass
+
+
 def ready_row_count() -> int | None:
     try:
         payload = json.loads(QUEUE.read_text(encoding="utf-8"))
@@ -536,7 +553,7 @@ def drain_lane(
             batch_command(lane, args, source=source),
         )
         if batch_rc == batch.CLEANUP_INTEGRITY_EXIT_CODE:
-            emit(
+            emit_preserving_primary_result(
                 "GLOBAL cleanup integrity failure in development batch; "
                 "skipping the post-batch panel sweep and stopping the campaign"
             )
@@ -558,7 +575,7 @@ def drain_lane(
                 return batch_rc, made_progress
             raise
         if panel_rc == batch.CLEANUP_INTEGRITY_EXIT_CODE:
-            emit(
+            emit_preserving_primary_result(
                 "GLOBAL cleanup integrity failure in the mandatory panel "
                 "sweep; preserving the dedicated campaign hard stop"
             )
@@ -1347,10 +1364,32 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     finally:
         _STOP_HEARTBEAT.set()
-        emit(summary_line(final=True))
-        if _DRAIN_LOCK_HANDLE is not None:
-            _DRAIN_LOCK_HANDLE.close()
+        finalization_failures: list[str] = []
+        try:
+            emit(summary_line(final=True))
+        except BaseException as exc:
+            finalization_failures.append(
+                finalization_failure("forced final summary failed", exc)
+            )
+        try:
+            if _DRAIN_LOCK_HANDLE is not None:
+                _DRAIN_LOCK_HANDLE.close()
+        except BaseException as exc:
+            finalization_failures.append(
+                finalization_failure("parent drain-lock close failed", exc)
+            )
+        finally:
             _DRAIN_LOCK_HANDLE = None
+        if finalization_failures:
+            try:
+                print(
+                    "audit-loop finalization warning; preserving the primary "
+                    "campaign result: " + "; ".join(finalization_failures),
+                    file=sys.stderr,
+                    flush=True,
+                )
+            except BaseException:
+                pass
 
 
 if __name__ == "__main__":

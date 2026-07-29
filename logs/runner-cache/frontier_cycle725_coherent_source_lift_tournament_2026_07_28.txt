@@ -1,0 +1,2534 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle725_coherent_source_lift_tournament_2026_07_28.py
+runner_sha256: 74b7f098ed45ed2767a4bcb426e79912f2528997e39d4ba67784dc453afa2319
+input_fingerprint_sha256: 451d11584db5b39fd9513dee84ec99f006e44aea642882558c2c4c201c7abf0b
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 99.02
+status: ok
+----- stdout -----
+PASS all five consumed harness/module files equal their landed HEAD bytes :: {"scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py": "5f20146eace2a0b61e5f1aa26f19cc432c8ec5bf737621470e81efecaa763775", "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py": "834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59", "scripts/signed_gravity_oriented_tensor_source_lift.py": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31", "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75", "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706"}
+PASS both (2,2,2) input legs are built once and expose a lawful retained-role/admission census :: {"alternate_port": {"admissions": 24, "role_counts": {"actuality": 24, "admissibility": 24, "binder": 24, "certificate": 24, "law_domain": 24}, "walk": {"collision_count": 0, "handoffs_consumed": 304, "handoffs_declared": 304, "register_touches": 35934, "registers_seen": 868, "violation_count": 0}}, "primary": {"admissions": 24, "role_counts": {"actuality": 24, "admissibility": 24, "binder": 24, "certificate": 24, "law_domain": 24}, "walk": {"collision_count": 0, "handoffs_consumed": 624, "handoffs_declared": 624, "register_touches": 37026, "registers_seen": 968, "violation_count": 0}}}
+PASS the declared real count-to-length-10 reduction passes the full landed S1 check set unchanged :: {"free_tensor_carrier": {"pass": true, "values": "tensor_source_blocks={'lapse': 22.946, 'shift': 16.477, 'trace': 19.303, 'shear': 28.745}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}"}, "no_claim": {"pass": true, "values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False"}, "orientation_twist": {"pass": true, "values": "block_norms={'lapse': 22.946, 'shift': 16.477, 'trace': 19.303, 'shear': 28.745}, flip_resid=0.0e+00"}, "projector_algebra": {"pass": true, "values": "ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}"}, "response_locking": {"pass": true, "values": "field_flip=0.0e+00, null=0.0e+00, pair_signs={(1, 1): 1.0, (1, -1): -1.0, (-1, 1): -1.0, (-1, -1): 1.0}"}, "scalar_only_no_overclaim": {"pass": true, "values": "complement_norm=0.0e+00"}, "ward_constraint": {"pass": true, "values": "residuals(+,-,0)=['2.4e-14', '2.4e-14', '0.0e+00']"}}
+PASS S1 scalar-only, ordinary-carrier, and no-claim gates remain preserved on their landed fixtures :: {"free_tensor_carrier": {"pass": true, "values": "tensor_source_blocks={'lapse': 22.946, 'shift': 16.477, 'trace': 19.303, 'shear': 28.745}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}"}, "no_claim": {"pass": true, "values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False"}, "scalar_only_no_overclaim": {"pass": true, "values": "complement_norm=0.0e+00"}}
+PASS the stage-resolved S1 feed is nonuniform, nonproportional, zero-refit, and reproduces its frozen landed-check disposition :: {"disposition": [{"check": "projector_algebra", "pass": true, "values": "ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}"}, {"check": "orientation_twist", "pass": true, "values": "block_norms={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, flip_resid=0.0e+00"}, {"check": "ward_constraint", "pass": false, "values": "residuals(+,-,0)=['1.9e+04', '1.9e+04', '0.0e+00']"}, {"check": "response_locking", "pass": true, "values": "field_flip=0.0e+00, null=0.0e+00, pair_signs={(1, 1): 1.0, (1, -1): -1.0, (-1, 1): -1.0, (-1, -1): 1.0}"}, {"check": "scalar_only_no_overclaim", "pass": true, "values": "complement_norm=0.0e+00"}, {"check": "free_tensor_carrier", "pass": true, "values": "tensor_source_blocks={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}"}, {"check": "no_claim", "pass": true, "values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False"}], "frozen_disposition_match": true, "numerically_nonproportional": true, "ratio_spread": 54439.64880415464, "source": [225.0, 9.0, 112.0, 17304.0, 24.0, 225.0, 18.0, 0.0, 17304.0, 24.0], "stage_accounting_exact": true, "stage_statistics_nonuniform": true}
+PASS the byte-pinned S1 main reruns unchanged as the landed-harness anchor :: {"fail_lines": 0, "pass_lines": 7, "returncode": 0, "summary": ["SUMMARY: PASS=7 FAIL=0", "FINAL_TAG: SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_FINITE_CONDITIONAL"]}
+PASS the byte-pinned S2 Cycle-322 harness reruns unchanged :: {"fail_lines": 0, "pass_lines": 20, "returncode": 0, "summary": ["SUMMARY {'pass': 20, 'fail': 0}", "RESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED"]}
+PASS the separate S2 binding matches only exact integer fixture counts :: [{"census_value": 2, "equal": true, "harness_fixture_value": 2, "integer_invariant": "endpoint_cell_count"}, {"census_value": [6, 6], "equal": true, "harness_fixture_value": [6, 6], "integer_invariant": "per_cell_unit_weight_event_counts"}, {"census_value": 12, "equal": true, "harness_fixture_value": 12, "integer_invariant": "unit_weight_total"}, {"census_value": 6, "equal": true, "harness_fixture_value": 6, "integer_invariant": "reciprocity_symmetric_pair_count"}]
+PASS S2 honestly records no census input port and the absent full-Fock auxiliary-source construction :: {"module_language": "full-Fock Cycle-320 unit-weight auxiliary sources", "no_amplitudes_invented": true, "s2_input_port_exists": false}
+PASS the byte-pinned S3 Cycle-294 contract verifier reruns unchanged in a subprocess :: {"fail_lines": 0, "pass_lines": 5, "returncode": 0, "summary": []}
+PASS the separate S3 typed event-count table matches its declared integer binding :: {"route_count": {"census_value": 3, "contract_fixture_value": 3, "equal": true, "integer_invariant": "typed_route_count"}, "rows": [{"equal": true, "event_type": "route_A", "expected_count": 16, "observed_count": 16, "tick_identity_mod_3": 0}, {"equal": true, "event_type": "route_B", "expected_count": 16, "observed_count": 16, "tick_identity_mod_3": 1}, {"equal": true, "event_type": "route_C", "expected_count": 16, "observed_count": 16, "tick_identity_mod_3": 2}]}
+PASS corrupted S1 slot, permuted schema, and altered S2/S3 census counts are all detected :: {"corrupted_s1_failed_checks": ["orientation_twist", "ward_constraint"], "permuted_s1_failed_checks": ["ward_constraint"], "s2_altered_count": true, "s3_altered_count": true, "schema_outcome_changed": true}
+PASS the census schema and S1 reduction are supplied conventions with zero refit and no normalization :: {"canonical_source_fixture_certificate": {"dtype": "<f8", "sha256": "2c2181ec3ac070ea88f8bba514b5bd62458b1360681c27bc1255daefcc2c3b68", "shape": [10]}, "fitted_parameters": 0, "normalization_applied": false, "optimizer_calls": 0, "reduction_rule": "real admitted-role count multiplied directly by the corresponding landed S1 canonical fixture component", "supplied_convention": true, "ward_constraint_certificate": {"dtype": "<f8", "sha256": "8b04d8301c5bb7710908e1f5f37d2886dc257719b129cd7d5f16faaf21f5d5e9", "shape": [4, 10]}, "ward_constraint_provenance": "unchanged second return value of S1.tensor_source_with_constraints()"}
+PASS D1 honest keys, C_source firewall, completion witness, and not-one-combined-law finding hold :: {"cslt_completion_witness": true, "full_Fock_Cycle320_module_language": "full-Fock Cycle-320 unit-weight auxiliary sources", "full_Fock_Cycle320_required_and_absent": true, "not_one_combined_law_preserved": true, "s1_lawful_census_role_uniform": true, "s1_true_feed": true, "s2_input_port_exists": false, "s3_input_port_exists": false, "source_law_selected": false}
+{
+  "CENSUS_TO_TENSOR_REDUCTION": [
+    {
+      "block": "lapse",
+      "canonical_slot": 0,
+      "census_field": "admitted_stage_e_read_touches",
+      "coefficient": "S1.tensor_source_with_constraints()[0][0]",
+      "packet_role": "certificate",
+      "variant": "primary"
+    },
+    {
+      "block": "shift",
+      "canonical_slot": 1,
+      "census_field": "admitted_stage_e_read_touches",
+      "coefficient": "S1.tensor_source_with_constraints()[0][1]",
+      "packet_role": "binder",
+      "variant": "primary"
+    },
+    {
+      "block": "shift",
+      "canonical_slot": 2,
+      "census_field": "admitted_stage_e_read_touches",
+      "coefficient": "S1.tensor_source_with_constraints()[0][2]",
+      "packet_role": "actuality",
+      "variant": "primary"
+    },
+    {
+      "block": "shift",
+      "canonical_slot": 3,
+      "census_field": "admitted_stage_e_read_touches",
+      "coefficient": "S1.tensor_source_with_constraints()[0][3]",
+      "packet_role": "admissibility",
+      "variant": "primary"
+    },
+    {
+      "block": "trace",
+      "canonical_slot": 4,
+      "census_field": "admitted_stage_e_read_touches",
+      "coefficient": "S1.tensor_source_with_constraints()[0][4]",
+      "packet_role": "law_domain",
+      "variant": "primary"
+    },
+    {
+      "block": "shear",
+      "canonical_slot": 5,
+      "census_field": "admitted_stage_e_read_touches",
+      "coefficient": "S1.tensor_source_with_constraints()[0][5]",
+      "packet_role": "certificate",
+      "variant": "alternate_port"
+    },
+    {
+      "block": "shear",
+      "canonical_slot": 6,
+      "census_field": "admitted_stage_e_read_touches",
+      "coefficient": "S1.tensor_source_with_constraints()[0][6]",
+      "packet_role": "binder",
+      "variant": "alternate_port"
+    },
+    {
+      "block": "shear",
+      "canonical_slot": 7,
+      "census_field": "admitted_stage_e_read_touches",
+      "coefficient": "S1.tensor_source_with_constraints()[0][7]",
+      "packet_role": "actuality",
+      "variant": "alternate_port"
+    },
+    {
+      "block": "shear",
+      "canonical_slot": 8,
+      "census_field": "admitted_stage_e_read_touches",
+      "coefficient": "S1.tensor_source_with_constraints()[0][8]",
+      "packet_role": "admissibility",
+      "variant": "alternate_port"
+    },
+    {
+      "block": "shear",
+      "canonical_slot": 9,
+      "census_field": "admitted_stage_e_read_touches",
+      "coefficient": "S1.tensor_source_with_constraints()[0][9]",
+      "packet_role": "law_domain",
+      "variant": "alternate_port"
+    }
+  ],
+  "audit": "unset",
+  "authority": "none",
+  "byte_pins": {
+    "pass": true,
+    "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py": {
+      "git_show_returncode": 0,
+      "landed_HEAD_sha256": "5f20146eace2a0b61e5f1aa26f19cc432c8ec5bf737621470e81efecaa763775",
+      "observed_sha256": "5f20146eace2a0b61e5f1aa26f19cc432c8ec5bf737621470e81efecaa763775",
+      "pass": true
+    },
+    "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py": {
+      "git_show_returncode": 0,
+      "landed_HEAD_sha256": "834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59",
+      "observed_sha256": "834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59",
+      "pass": true
+    },
+    "scripts/signed_gravity_oriented_tensor_source_lift.py": {
+      "git_show_returncode": 0,
+      "landed_HEAD_sha256": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31",
+      "observed_sha256": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31",
+      "pass": true
+    },
+    "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py": {
+      "git_show_returncode": 0,
+      "landed_HEAD_sha256": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+      "observed_sha256": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+      "pass": true
+    },
+    "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": {
+      "git_show_returncode": 0,
+      "landed_HEAD_sha256": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
+      "observed_sha256": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
+      "pass": true
+    }
+  },
+  "census_schema_table": [
+    {
+      "dtype": "str",
+      "field": "variant",
+      "meaning": "Cycle-722 input leg: primary or alternate_port"
+    },
+    {
+      "dtype": "tuple[int,int,int]",
+      "field": "shape",
+      "meaning": "fixed epoch box (2,2,2)"
+    },
+    {
+      "dtype": "int",
+      "field": "role_stats.<packet_field>.retained_register",
+      "meaning": "Cycle-722 register supplying the named Stage-E packet field"
+    },
+    {
+      "dtype": "bool",
+      "field": "role_stats.<packet_field>.retained_witness_valid",
+      "meaning": "Cycle-722 origin/last-owner retain-after witness"
+    },
+    {
+      "dtype": "int",
+      "field": "role_stats.<packet_field>.total_register_touches",
+      "meaning": "all scheduled reads/writes of that retained register"
+    },
+    {
+      "dtype": "int",
+      "field": "role_stats.<packet_field>.admitted_stage_e_read_touches",
+      "meaning": "admitted Stage-E packet words reading that role/register"
+    },
+    {
+      "dtype": "list[{tick_identity:int,status:str,admitted:bool}]",
+      "field": "stage_e_admissions",
+      "meaning": "unchanged Cycle-610 admission result for every Stage-E packet"
+    },
+    {
+      "dtype": "dict[str,int]",
+      "field": "walk",
+      "meaning": "Cycle-722 collision/liveness/touch census totals"
+    }
+  ],
+  "checks": [
+    {
+      "detail": {
+        "scripts/frontier_cycle722_epoch_fed_endpoint_interval_harness_2026_07_28.py": "5f20146eace2a0b61e5f1aa26f19cc432c8ec5bf737621470e81efecaa763775",
+        "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py": "834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59",
+        "scripts/signed_gravity_oriented_tensor_source_lift.py": "33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31",
+        "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+        "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706"
+      },
+      "label": "all five consumed harness/module files equal their landed HEAD bytes",
+      "pass": true
+    },
+    {
+      "detail": {
+        "alternate_port": {
+          "admissions": 24,
+          "role_counts": {
+            "actuality": 24,
+            "admissibility": 24,
+            "binder": 24,
+            "certificate": 24,
+            "law_domain": 24
+          },
+          "walk": {
+            "collision_count": 0,
+            "handoffs_consumed": 304,
+            "handoffs_declared": 304,
+            "register_touches": 35934,
+            "registers_seen": 868,
+            "violation_count": 0
+          }
+        },
+        "primary": {
+          "admissions": 24,
+          "role_counts": {
+            "actuality": 24,
+            "admissibility": 24,
+            "binder": 24,
+            "certificate": 24,
+            "law_domain": 24
+          },
+          "walk": {
+            "collision_count": 0,
+            "handoffs_consumed": 624,
+            "handoffs_declared": 624,
+            "register_touches": 37026,
+            "registers_seen": 968,
+            "violation_count": 0
+          }
+        }
+      },
+      "label": "both (2,2,2) input legs are built once and expose a lawful retained-role/admission census",
+      "pass": true
+    },
+    {
+      "detail": {
+        "free_tensor_carrier": {
+          "pass": true,
+          "values": "tensor_source_blocks={'lapse': 22.946, 'shift': 16.477, 'trace': 19.303, 'shear': 28.745}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}"
+        },
+        "no_claim": {
+          "pass": true,
+          "values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False"
+        },
+        "orientation_twist": {
+          "pass": true,
+          "values": "block_norms={'lapse': 22.946, 'shift': 16.477, 'trace': 19.303, 'shear': 28.745}, flip_resid=0.0e+00"
+        },
+        "projector_algebra": {
+          "pass": true,
+          "values": "ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}"
+        },
+        "response_locking": {
+          "pass": true,
+          "values": "field_flip=0.0e+00, null=0.0e+00, pair_signs={(1, 1): 1.0, (1, -1): -1.0, (-1, 1): -1.0, (-1, -1): 1.0}"
+        },
+        "scalar_only_no_overclaim": {
+          "pass": true,
+          "values": "complement_norm=0.0e+00"
+        },
+        "ward_constraint": {
+          "pass": true,
+          "values": "residuals(+,-,0)=['2.4e-14', '2.4e-14', '0.0e+00']"
+        }
+      },
+      "label": "the declared real count-to-length-10 reduction passes the full landed S1 check set unchanged",
+      "pass": true
+    },
+    {
+      "detail": {
+        "free_tensor_carrier": {
+          "pass": true,
+          "values": "tensor_source_blocks={'lapse': 22.946, 'shift': 16.477, 'trace': 19.303, 'shear': 28.745}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}"
+        },
+        "no_claim": {
+          "pass": true,
+          "values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False"
+        },
+        "scalar_only_no_overclaim": {
+          "pass": true,
+          "values": "complement_norm=0.0e+00"
+        }
+      },
+      "label": "S1 scalar-only, ordinary-carrier, and no-claim gates remain preserved on their landed fixtures",
+      "pass": true
+    },
+    {
+      "detail": {
+        "disposition": [
+          {
+            "check": "projector_algebra",
+            "pass": true,
+            "values": "ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}"
+          },
+          {
+            "check": "orientation_twist",
+            "pass": true,
+            "values": "block_norms={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, flip_resid=0.0e+00"
+          },
+          {
+            "check": "ward_constraint",
+            "pass": false,
+            "values": "residuals(+,-,0)=['1.9e+04', '1.9e+04', '0.0e+00']"
+          },
+          {
+            "check": "response_locking",
+            "pass": true,
+            "values": "field_flip=0.0e+00, null=0.0e+00, pair_signs={(1, 1): 1.0, (1, -1): -1.0, (-1, 1): -1.0, (-1, -1): 1.0}"
+          },
+          {
+            "check": "scalar_only_no_overclaim",
+            "pass": true,
+            "values": "complement_norm=0.0e+00"
+          },
+          {
+            "check": "free_tensor_carrier",
+            "pass": true,
+            "values": "tensor_source_blocks={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}"
+          },
+          {
+            "check": "no_claim",
+            "pass": true,
+            "values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False"
+          }
+        ],
+        "frozen_disposition_match": true,
+        "numerically_nonproportional": true,
+        "ratio_spread": 54439.64880415464,
+        "source": [
+          225.0,
+          9.0,
+          112.0,
+          17304.0,
+          24.0,
+          225.0,
+          18.0,
+          0.0,
+          17304.0,
+          24.0
+        ],
+        "stage_accounting_exact": true,
+        "stage_statistics_nonuniform": true
+      },
+      "label": "the stage-resolved S1 feed is nonuniform, nonproportional, zero-refit, and reproduces its frozen landed-check disposition",
+      "pass": true
+    },
+    {
+      "detail": {
+        "fail_lines": 0,
+        "pass_lines": 7,
+        "returncode": 0,
+        "summary": [
+          "SUMMARY: PASS=7 FAIL=0",
+          "FINAL_TAG: SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_FINITE_CONDITIONAL"
+        ]
+      },
+      "label": "the byte-pinned S1 main reruns unchanged as the landed-harness anchor",
+      "pass": true
+    },
+    {
+      "detail": {
+        "fail_lines": 0,
+        "pass_lines": 20,
+        "returncode": 0,
+        "summary": [
+          "SUMMARY {'pass': 20, 'fail': 0}",
+          "RESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED"
+        ]
+      },
+      "label": "the byte-pinned S2 Cycle-322 harness reruns unchanged",
+      "pass": true
+    },
+    {
+      "detail": [
+        {
+          "census_value": 2,
+          "equal": true,
+          "harness_fixture_value": 2,
+          "integer_invariant": "endpoint_cell_count"
+        },
+        {
+          "census_value": [
+            6,
+            6
+          ],
+          "equal": true,
+          "harness_fixture_value": [
+            6,
+            6
+          ],
+          "integer_invariant": "per_cell_unit_weight_event_counts"
+        },
+        {
+          "census_value": 12,
+          "equal": true,
+          "harness_fixture_value": 12,
+          "integer_invariant": "unit_weight_total"
+        },
+        {
+          "census_value": 6,
+          "equal": true,
+          "harness_fixture_value": 6,
+          "integer_invariant": "reciprocity_symmetric_pair_count"
+        }
+      ],
+      "label": "the separate S2 binding matches only exact integer fixture counts",
+      "pass": true
+    },
+    {
+      "detail": {
+        "module_language": "full-Fock Cycle-320 unit-weight auxiliary sources",
+        "no_amplitudes_invented": true,
+        "s2_input_port_exists": false
+      },
+      "label": "S2 honestly records no census input port and the absent full-Fock auxiliary-source construction",
+      "pass": true
+    },
+    {
+      "detail": {
+        "fail_lines": 0,
+        "pass_lines": 5,
+        "returncode": 0,
+        "summary": []
+      },
+      "label": "the byte-pinned S3 Cycle-294 contract verifier reruns unchanged in a subprocess",
+      "pass": true
+    },
+    {
+      "detail": {
+        "route_count": {
+          "census_value": 3,
+          "contract_fixture_value": 3,
+          "equal": true,
+          "integer_invariant": "typed_route_count"
+        },
+        "rows": [
+          {
+            "equal": true,
+            "event_type": "route_A",
+            "expected_count": 16,
+            "observed_count": 16,
+            "tick_identity_mod_3": 0
+          },
+          {
+            "equal": true,
+            "event_type": "route_B",
+            "expected_count": 16,
+            "observed_count": 16,
+            "tick_identity_mod_3": 1
+          },
+          {
+            "equal": true,
+            "event_type": "route_C",
+            "expected_count": 16,
+            "observed_count": 16,
+            "tick_identity_mod_3": 2
+          }
+        ]
+      },
+      "label": "the separate S3 typed event-count table matches its declared integer binding",
+      "pass": true
+    },
+    {
+      "detail": {
+        "corrupted_s1_failed_checks": [
+          "orientation_twist",
+          "ward_constraint"
+        ],
+        "permuted_s1_failed_checks": [
+          "ward_constraint"
+        ],
+        "s2_altered_count": true,
+        "s3_altered_count": true,
+        "schema_outcome_changed": true
+      },
+      "label": "corrupted S1 slot, permuted schema, and altered S2/S3 census counts are all detected",
+      "pass": true
+    },
+    {
+      "detail": {
+        "canonical_source_fixture_certificate": {
+          "dtype": "<f8",
+          "sha256": "2c2181ec3ac070ea88f8bba514b5bd62458b1360681c27bc1255daefcc2c3b68",
+          "shape": [
+            10
+          ]
+        },
+        "fitted_parameters": 0,
+        "normalization_applied": false,
+        "optimizer_calls": 0,
+        "reduction_rule": "real admitted-role count multiplied directly by the corresponding landed S1 canonical fixture component",
+        "supplied_convention": true,
+        "ward_constraint_certificate": {
+          "dtype": "<f8",
+          "sha256": "8b04d8301c5bb7710908e1f5f37d2886dc257719b129cd7d5f16faaf21f5d5e9",
+          "shape": [
+            4,
+            10
+          ]
+        },
+        "ward_constraint_provenance": "unchanged second return value of S1.tensor_source_with_constraints()"
+      },
+      "label": "the census schema and S1 reduction are supplied conventions with zero refit and no normalization",
+      "pass": true
+    },
+    {
+      "detail": {
+        "cslt_completion_witness": true,
+        "full_Fock_Cycle320_module_language": "full-Fock Cycle-320 unit-weight auxiliary sources",
+        "full_Fock_Cycle320_required_and_absent": true,
+        "not_one_combined_law_preserved": true,
+        "s1_lawful_census_role_uniform": true,
+        "s1_true_feed": true,
+        "s2_input_port_exists": false,
+        "s3_input_port_exists": false,
+        "source_law_selected": false
+      },
+      "label": "D1 honest keys, C_source firewall, completion witness, and not-one-combined-law finding hold",
+      "pass": true
+    }
+  ],
+  "claim_boundary": [
+    "a PASS certifies only that the epoch census is a lawful input to the existing bounded source surfaces; no energy/stress/resource law, reciprocal response, sign/scale law, or gravity identification is selected; Born untouched.",
+    "S1 consumes a supplied count reduction; S2 and S3 retain separate count bindings because their certificate functions accept no census.",
+    "The original lawful S1 role census is uniform at 24 and only homogeneously rescales the canonical fixture; the stage-resolved zero-refit feed supplies a nonuniform strengthening with a frozen landed-check disposition.",
+    "No census count is promoted to amplitude, phase, energy, stress, resource, reciprocal response, sign/scale law, gravity, or Born data."
+  ],
+  "claim_ceiling": "bounded_theorem",
+  "controls": {
+    "corrupted_s1_census_slot": {
+      "baseline": 24,
+      "corrupted": 0,
+      "detected": true,
+      "failed_checks": [
+        "orientation_twist",
+        "ward_constraint"
+      ],
+      "slot": "primary.certificate.admitted_stage_e_read_touches"
+    },
+    "permuted_s1_reduction_schema": {
+      "baseline_source_sha256": "7a04a84d1b3c1005bcfae8b5d2cbe801051b706e39023a309c4945b8f8bbf90b",
+      "detected": true,
+      "failed_checks": [
+        "ward_constraint"
+      ],
+      "outcome_changed": true,
+      "permutation": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "permuted_source_sha256": "2451ad975adb93a6464a8c1d726baeabede3a20be8a16ba7c25d6394aa999e3e",
+      "reduction_rows": [
+        {
+          "block": "lapse",
+          "canonical_fixture_coefficient": 0.9560846981508337,
+          "canonical_slot": 0,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][0]",
+          "observed_integer_count": 24,
+          "packet_role": "certificate",
+          "real_contribution": 22.94603275562001,
+          "target_slot_used": 1,
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_fixture_coefficient": 0.20853115457242088,
+          "canonical_slot": 1,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][1]",
+          "observed_integer_count": 24,
+          "packet_role": "binder",
+          "real_contribution": 5.004747709738101,
+          "target_slot_used": 0,
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_fixture_coefficient": -0.11358498026730297,
+          "canonical_slot": 2,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][2]",
+          "observed_integer_count": 24,
+          "packet_role": "actuality",
+          "real_contribution": -2.7260395264152715,
+          "target_slot_used": 2,
+          "variant": "primary"
+        },
+        {
+          "block": "shift",
+          "canonical_fixture_coefficient": -0.6441467627494118,
+          "canonical_slot": 3,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][3]",
+          "observed_integer_count": 24,
+          "packet_role": "admissibility",
+          "real_contribution": -15.459522305985885,
+          "target_slot_used": 3,
+          "variant": "primary"
+        },
+        {
+          "block": "trace",
+          "canonical_fixture_coefficient": 0.8042745120994024,
+          "canonical_slot": 4,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][4]",
+          "observed_integer_count": 24,
+          "packet_role": "law_domain",
+          "real_contribution": 19.302588290385657,
+          "target_slot_used": 4,
+          "variant": "primary"
+        },
+        {
+          "block": "shear",
+          "canonical_fixture_coefficient": -0.539453694840751,
+          "canonical_slot": 5,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][5]",
+          "observed_integer_count": 24,
+          "packet_role": "certificate",
+          "real_contribution": -12.946888676178023,
+          "target_slot_used": 5,
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_fixture_coefficient": -0.6572617178811084,
+          "canonical_slot": 6,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][6]",
+          "observed_integer_count": 24,
+          "packet_role": "binder",
+          "real_contribution": -15.774281229146602,
+          "target_slot_used": 6,
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_fixture_coefficient": -0.4692739937907995,
+          "canonical_slot": 7,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][7]",
+          "observed_integer_count": 24,
+          "packet_role": "actuality",
+          "real_contribution": -11.262575850979188,
+          "target_slot_used": 7,
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_fixture_coefficient": 0.6274974981738409,
+          "canonical_slot": 8,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][8]",
+          "observed_integer_count": 24,
+          "packet_role": "admissibility",
+          "real_contribution": 15.059939956172183,
+          "target_slot_used": 8,
+          "variant": "alternate_port"
+        },
+        {
+          "block": "shear",
+          "canonical_fixture_coefficient": -0.31225462420151445,
+          "canonical_slot": 9,
+          "census_field": "admitted_stage_e_read_touches",
+          "coefficient": "S1.tensor_source_with_constraints()[0][9]",
+          "observed_integer_count": 24,
+          "packet_role": "law_domain",
+          "real_contribution": -7.494110980836346,
+          "target_slot_used": 9,
+          "variant": "alternate_port"
+        }
+      ]
+    },
+    "s2_altered_count": {
+      "binding_pass_after_alteration": false,
+      "comparison_table": [
+        {
+          "census_value": 2,
+          "equal": true,
+          "harness_fixture_value": 2,
+          "integer_invariant": "endpoint_cell_count"
+        },
+        {
+          "census_value": [
+            5,
+            6
+          ],
+          "equal": false,
+          "harness_fixture_value": [
+            6,
+            6
+          ],
+          "integer_invariant": "per_cell_unit_weight_event_counts"
+        },
+        {
+          "census_value": 11,
+          "equal": false,
+          "harness_fixture_value": 12,
+          "integer_invariant": "unit_weight_total"
+        },
+        {
+          "census_value": 5,
+          "equal": false,
+          "harness_fixture_value": 6,
+          "integer_invariant": "reciprocity_symmetric_pair_count"
+        }
+      ],
+      "detected": true,
+      "removed_primary_tick_identities": [
+        0,
+        6,
+        12,
+        18
+      ]
+    },
+    "s3_altered_count": {
+      "binding_pass_after_alteration": false,
+      "comparison_table": [
+        {
+          "equal": false,
+          "event_type": "route_A",
+          "expected_count": 16,
+          "observed_count": 15,
+          "tick_identity_mod_3": 0
+        },
+        {
+          "equal": true,
+          "event_type": "route_B",
+          "expected_count": 16,
+          "observed_count": 16,
+          "tick_identity_mod_3": 1
+        },
+        {
+          "equal": true,
+          "event_type": "route_C",
+          "expected_count": 16,
+          "observed_count": 16,
+          "tick_identity_mod_3": 2
+        }
+      ],
+      "detected": true,
+      "removed_primary_tick_identity": 0
+    }
+  },
+  "epoch_census": {
+    "builds_per_variant": 1,
+    "shape": [
+      2,
+      2,
+      2
+    ],
+    "variants": {
+      "alternate_port": {
+        "all_stage_e_packets_admitted": true,
+        "lawful": true,
+        "role_stats": {
+          "actuality": {
+            "admitted_stage_e_read_touches": 24,
+            "read_touches": 25,
+            "register_role": "pump_syndrome_0",
+            "retained_register": 716,
+            "retained_witness_valid": true,
+            "total_register_touches": 26,
+            "write_touches": 1
+          },
+          "admissibility": {
+            "admitted_stage_e_read_touches": 24,
+            "read_touches": 25,
+            "register_role": "pump_syndrome_1",
+            "retained_register": 717,
+            "retained_witness_valid": true,
+            "total_register_touches": 26,
+            "write_touches": 1
+          },
+          "binder": {
+            "admitted_stage_e_read_touches": 24,
+            "read_touches": 24,
+            "register_role": "declared_port_parity_1",
+            "retained_register": 73,
+            "retained_witness_valid": true,
+            "total_register_touches": 34,
+            "write_touches": 10
+          },
+          "certificate": {
+            "admitted_stage_e_read_touches": 24,
+            "read_touches": 24,
+            "register_role": "declared_port_parity_0",
+            "retained_register": 72,
+            "retained_witness_valid": true,
+            "total_register_touches": 30,
+            "write_touches": 6
+          },
+          "law_domain": {
+            "admitted_stage_e_read_touches": 24,
+            "read_touches": 25,
+            "register_role": "pump_syndrome_2",
+            "retained_register": 718,
+            "retained_witness_valid": true,
+            "total_register_touches": 26,
+            "write_touches": 1
+          }
+        },
+        "shape": [
+          2,
+          2,
+          2
+        ],
+        "stage_e_admissions": [
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 0
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 1
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 2
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 3
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 4
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 5
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 6
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 7
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 8
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 9
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 10
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 11
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 12
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 13
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 14
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 15
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 16
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 17
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 18
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 19
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 20
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 21
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 22
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 23
+          }
+        ],
+        "stage_e_admitted_count": 24,
+        "stage_e_packet_count": 24,
+        "stage_resolved": {
+          "convention": "Statistics are literal counts over the already-built epoch slots. declared_handoff_count assigns an executed access to its receiving stage when that register was retained by the preceding owner; its variant total must reproduce walk.handoffs_declared.",
+          "handoff_total_matches_walk": true,
+          "register_touch_total_matches_walk": true,
+          "stages": {
+            "A": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 100,
+              "read_touch_count": 100,
+              "register_touch_count": 1490,
+              "retain_after_declaration_count": 472,
+              "slot_count": 225,
+              "word_count": 368,
+              "write_touch_count": 1390
+            },
+            "B": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 12,
+              "read_touch_count": 0,
+              "register_touch_count": 36,
+              "retain_after_declaration_count": 12,
+              "slot_count": 18,
+              "word_count": 18,
+              "write_touch_count": 36
+            },
+            "C": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 0,
+              "read_touch_count": 0,
+              "register_touch_count": 0,
+              "retain_after_declaration_count": 0,
+              "slot_count": 0,
+              "word_count": 0,
+              "write_touch_count": 0
+            },
+            "D": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 72,
+              "read_touch_count": 0,
+              "register_touch_count": 34264,
+              "retain_after_declaration_count": 544,
+              "slot_count": 17304,
+              "word_count": 17304,
+              "write_touch_count": 34264
+            },
+            "E": {
+              "admitted_packet_word_count": 24,
+              "declared_handoff_count": 120,
+              "read_touch_count": 120,
+              "register_touch_count": 144,
+              "retain_after_declaration_count": 144,
+              "slot_count": 24,
+              "word_count": 24,
+              "write_touch_count": 24
+            }
+          },
+          "totals": {
+            "admitted_packet_word_count": 24,
+            "declared_handoff_count": 304,
+            "read_touch_count": 220,
+            "register_touch_count": 35934,
+            "retain_after_declaration_count": 1172,
+            "slot_count": 17571,
+            "word_count": 17714,
+            "write_touch_count": 35714
+          },
+          "walk_handoffs_declared": 304
+        },
+        "variant": "alternate_port",
+        "walk": {
+          "collision_count": 0,
+          "handoffs_consumed": 304,
+          "handoffs_declared": 304,
+          "register_touches": 35934,
+          "registers_seen": 868,
+          "violation_count": 0
+        }
+      },
+      "primary": {
+        "all_stage_e_packets_admitted": true,
+        "lawful": true,
+        "role_stats": {
+          "actuality": {
+            "admitted_stage_e_read_touches": 24,
+            "read_touches": 25,
+            "register_role": "pump_syndrome_0",
+            "retained_register": 716,
+            "retained_witness_valid": true,
+            "total_register_touches": 26,
+            "write_touches": 1
+          },
+          "admissibility": {
+            "admitted_stage_e_read_touches": 24,
+            "read_touches": 25,
+            "register_role": "pump_syndrome_1",
+            "retained_register": 717,
+            "retained_witness_valid": true,
+            "total_register_touches": 26,
+            "write_touches": 1
+          },
+          "binder": {
+            "admitted_stage_e_read_touches": 24,
+            "read_touches": 25,
+            "register_role": "Bell_measurement_ancilla_1",
+            "retained_register": 617,
+            "retained_witness_valid": true,
+            "total_register_touches": 26,
+            "write_touches": 1
+          },
+          "certificate": {
+            "admitted_stage_e_read_touches": 24,
+            "read_touches": 25,
+            "register_role": "Bell_measurement_ancilla_0",
+            "retained_register": 616,
+            "retained_witness_valid": true,
+            "total_register_touches": 26,
+            "write_touches": 1
+          },
+          "law_domain": {
+            "admitted_stage_e_read_touches": 24,
+            "read_touches": 25,
+            "register_role": "pump_syndrome_2",
+            "retained_register": 718,
+            "retained_witness_valid": true,
+            "total_register_touches": 26,
+            "write_touches": 1
+          }
+        },
+        "shape": [
+          2,
+          2,
+          2
+        ],
+        "stage_e_admissions": [
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 0
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 1
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 2
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 3
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 4
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 5
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 6
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 7
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 8
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 9
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 10
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 11
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 12
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 13
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 14
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 15
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 16
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 17
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 18
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 19
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 20
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 21
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 22
+          },
+          {
+            "admitted": true,
+            "packet_fields": {
+              "actuality": 1,
+              "admissibility": 1,
+              "binder": 1,
+              "certificate": 1,
+              "law_domain": 1
+            },
+            "status": "admitted",
+            "tick_identity": 23
+          }
+        ],
+        "stage_e_admitted_count": 24,
+        "stage_e_packet_count": 24,
+        "stage_resolved": {
+          "convention": "Statistics are literal counts over the already-built epoch slots. declared_handoff_count assigns an executed access to its receiving stage when that register was retained by the preceding owner; its variant total must reproduce walk.handoffs_declared.",
+          "handoff_total_matches_walk": true,
+          "register_touch_total_matches_walk": true,
+          "stages": {
+            "A": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 100,
+              "read_touch_count": 100,
+              "register_touch_count": 1490,
+              "retain_after_declaration_count": 472,
+              "slot_count": 225,
+              "word_count": 368,
+              "write_touch_count": 1390
+            },
+            "B": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 152,
+              "read_touch_count": 0,
+              "register_touch_count": 668,
+              "retain_after_declaration_count": 252,
+              "slot_count": 9,
+              "word_count": 112,
+              "write_touch_count": 668
+            },
+            "C": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 180,
+              "read_touch_count": 100,
+              "register_touch_count": 460,
+              "retain_after_declaration_count": 180,
+              "slot_count": 112,
+              "word_count": 112,
+              "write_touch_count": 360
+            },
+            "D": {
+              "admitted_packet_word_count": 0,
+              "declared_handoff_count": 72,
+              "read_touch_count": 0,
+              "register_touch_count": 34264,
+              "retain_after_declaration_count": 544,
+              "slot_count": 17304,
+              "word_count": 17304,
+              "write_touch_count": 34264
+            },
+            "E": {
+              "admitted_packet_word_count": 24,
+              "declared_handoff_count": 120,
+              "read_touch_count": 120,
+              "register_touch_count": 144,
+              "retain_after_declaration_count": 144,
+              "slot_count": 24,
+              "word_count": 24,
+              "write_touch_count": 24
+            }
+          },
+          "totals": {
+            "admitted_packet_word_count": 24,
+            "declared_handoff_count": 624,
+            "read_touch_count": 320,
+            "register_touch_count": 37026,
+            "retain_after_declaration_count": 1592,
+            "slot_count": 17674,
+            "word_count": 17920,
+            "write_touch_count": 36706
+          },
+          "walk_handoffs_declared": 624
+        },
+        "variant": "primary",
+        "walk": {
+          "collision_count": 0,
+          "handoffs_consumed": 624,
+          "handoffs_declared": 624,
+          "register_touches": 37026,
+          "registers_seen": 968,
+          "violation_count": 0
+        }
+      }
+    }
+  },
+  "findings": {
+    "cslt_completion_witness": true,
+    "full_Fock_Cycle320_module_language": "full-Fock Cycle-320 unit-weight auxiliary sources",
+    "full_Fock_Cycle320_required_and_absent": true,
+    "not_one_combined_law_preserved": true,
+    "s1_lawful_census_role_uniform": true,
+    "s1_true_feed": true,
+    "s2_input_port_exists": false,
+    "s3_input_port_exists": false,
+    "source_law_selected": false
+  },
+  "runtime_seconds": 98.57187579100719,
+  "s1": {
+    "canonical_ward_constraint": {
+      "dtype": "<f8",
+      "sha256": "8b04d8301c5bb7710908e1f5f37d2886dc257719b129cd7d5f16faaf21f5d5e9",
+      "shape": [
+        4,
+        10
+      ]
+    },
+    "gates_preserved": true,
+    "reduction_table": [
+      {
+        "block": "lapse",
+        "canonical_fixture_coefficient": 0.9560846981508337,
+        "canonical_slot": 0,
+        "census_field": "admitted_stage_e_read_touches",
+        "coefficient": "S1.tensor_source_with_constraints()[0][0]",
+        "observed_integer_count": 24,
+        "packet_role": "certificate",
+        "real_contribution": 22.94603275562001,
+        "target_slot_used": 0,
+        "variant": "primary"
+      },
+      {
+        "block": "shift",
+        "canonical_fixture_coefficient": 0.20853115457242088,
+        "canonical_slot": 1,
+        "census_field": "admitted_stage_e_read_touches",
+        "coefficient": "S1.tensor_source_with_constraints()[0][1]",
+        "observed_integer_count": 24,
+        "packet_role": "binder",
+        "real_contribution": 5.004747709738101,
+        "target_slot_used": 1,
+        "variant": "primary"
+      },
+      {
+        "block": "shift",
+        "canonical_fixture_coefficient": -0.11358498026730297,
+        "canonical_slot": 2,
+        "census_field": "admitted_stage_e_read_touches",
+        "coefficient": "S1.tensor_source_with_constraints()[0][2]",
+        "observed_integer_count": 24,
+        "packet_role": "actuality",
+        "real_contribution": -2.7260395264152715,
+        "target_slot_used": 2,
+        "variant": "primary"
+      },
+      {
+        "block": "shift",
+        "canonical_fixture_coefficient": -0.6441467627494118,
+        "canonical_slot": 3,
+        "census_field": "admitted_stage_e_read_touches",
+        "coefficient": "S1.tensor_source_with_constraints()[0][3]",
+        "observed_integer_count": 24,
+        "packet_role": "admissibility",
+        "real_contribution": -15.459522305985885,
+        "target_slot_used": 3,
+        "variant": "primary"
+      },
+      {
+        "block": "trace",
+        "canonical_fixture_coefficient": 0.8042745120994024,
+        "canonical_slot": 4,
+        "census_field": "admitted_stage_e_read_touches",
+        "coefficient": "S1.tensor_source_with_constraints()[0][4]",
+        "observed_integer_count": 24,
+        "packet_role": "law_domain",
+        "real_contribution": 19.302588290385657,
+        "target_slot_used": 4,
+        "variant": "primary"
+      },
+      {
+        "block": "shear",
+        "canonical_fixture_coefficient": -0.539453694840751,
+        "canonical_slot": 5,
+        "census_field": "admitted_stage_e_read_touches",
+        "coefficient": "S1.tensor_source_with_constraints()[0][5]",
+        "observed_integer_count": 24,
+        "packet_role": "certificate",
+        "real_contribution": -12.946888676178023,
+        "target_slot_used": 5,
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_fixture_coefficient": -0.6572617178811084,
+        "canonical_slot": 6,
+        "census_field": "admitted_stage_e_read_touches",
+        "coefficient": "S1.tensor_source_with_constraints()[0][6]",
+        "observed_integer_count": 24,
+        "packet_role": "binder",
+        "real_contribution": -15.774281229146602,
+        "target_slot_used": 6,
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_fixture_coefficient": -0.4692739937907995,
+        "canonical_slot": 7,
+        "census_field": "admitted_stage_e_read_touches",
+        "coefficient": "S1.tensor_source_with_constraints()[0][7]",
+        "observed_integer_count": 24,
+        "packet_role": "actuality",
+        "real_contribution": -11.262575850979188,
+        "target_slot_used": 7,
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_fixture_coefficient": 0.6274974981738409,
+        "canonical_slot": 8,
+        "census_field": "admitted_stage_e_read_touches",
+        "coefficient": "S1.tensor_source_with_constraints()[0][8]",
+        "observed_integer_count": 24,
+        "packet_role": "admissibility",
+        "real_contribution": 15.059939956172183,
+        "target_slot_used": 8,
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_fixture_coefficient": -0.31225462420151445,
+        "canonical_slot": 9,
+        "census_field": "admitted_stage_e_read_touches",
+        "coefficient": "S1.tensor_source_with_constraints()[0][9]",
+        "observed_integer_count": 24,
+        "packet_role": "law_domain",
+        "real_contribution": -7.494110980836346,
+        "target_slot_used": 9,
+        "variant": "alternate_port"
+      }
+    ],
+    "true_parameterized_feed": {
+      "block_norms": {
+        "lapse": 22.94603275562001,
+        "shear": 28.744720912981858,
+        "shift": 16.476517261453715,
+        "trace": 19.302588290385657
+      },
+      "checks": {
+        "free_tensor_carrier": {
+          "pass": true,
+          "values": "tensor_source_blocks={'lapse': 22.946, 'shift': 16.477, 'trace': 19.303, 'shear': 28.745}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}"
+        },
+        "no_claim": {
+          "pass": true,
+          "values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False"
+        },
+        "orientation_twist": {
+          "pass": true,
+          "values": "block_norms={'lapse': 22.946, 'shift': 16.477, 'trace': 19.303, 'shear': 28.745}, flip_resid=0.0e+00"
+        },
+        "projector_algebra": {
+          "pass": true,
+          "values": "ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}"
+        },
+        "response_locking": {
+          "pass": true,
+          "values": "field_flip=0.0e+00, null=0.0e+00, pair_signs={(1, 1): 1.0, (1, -1): -1.0, (-1, 1): -1.0, (-1, -1): 1.0}"
+        },
+        "scalar_only_no_overclaim": {
+          "pass": true,
+          "values": "complement_norm=0.0e+00"
+        },
+        "ward_constraint": {
+          "pass": true,
+          "values": "residuals(+,-,0)=['2.4e-14', '2.4e-14', '0.0e+00']"
+        }
+      },
+      "pass": true,
+      "source": [
+        22.94603275562001,
+        5.004747709738101,
+        -2.7260395264152715,
+        -15.459522305985885,
+        19.302588290385657,
+        -12.946888676178023,
+        -15.774281229146602,
+        -11.262575850979188,
+        15.059939956172183,
+        -7.494110980836346
+      ],
+      "source_certificate": {
+        "dtype": "<f8",
+        "sha256": "7a04a84d1b3c1005bcfae8b5d2cbe801051b706e39023a309c4945b8f8bbf90b",
+        "shape": [
+          10
+        ]
+      }
+    },
+    "unchanged_main_anchor": {
+      "execution": "fresh subprocess of the landed script; no arguments or edits",
+      "fail_line_count": 0,
+      "fail_lines": [],
+      "pass": true,
+      "pass_line_count": 7,
+      "path": "scripts/signed_gravity_oriented_tensor_source_lift.py",
+      "required_marker": "FINAL_TAG: SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_FINITE_CONDITIONAL",
+      "required_marker_found": true,
+      "returncode": 0,
+      "runtime_seconds": 0.06283170799724758,
+      "stderr_tail": [],
+      "stdout_sha256": "62cad5c712ca48cf8a0eb3ae709579125f320f0cde02f793192b769bbd68464c",
+      "summary_lines": [
+        "SUMMARY: PASS=7 FAIL=0",
+        "FINAL_TAG: SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_FINITE_CONDITIONAL"
+      ],
+      "timed_out": false
+    }
+  },
+  "s1_stage_resolved_feed": {
+    "census_convention": {
+      "alternate_port": "Statistics are literal counts over the already-built epoch slots. declared_handoff_count assigns an executed access to its receiving stage when that register was retained by the preceding owner; its variant total must reproduce walk.handoffs_declared.",
+      "primary": "Statistics are literal counts over the already-built epoch slots. declared_handoff_count assigns an executed access to its receiving stage when that register was retained by the preceding owner; its variant total must reproduce walk.handoffs_declared."
+    },
+    "census_table": [
+      {
+        "admitted_packet_word_count": 0,
+        "declared_handoff_count": 100,
+        "read_touch_count": 100,
+        "register_touch_count": 1490,
+        "retain_after_declaration_count": 472,
+        "slot_count": 225,
+        "stage": "A",
+        "variant": "primary",
+        "word_count": 368,
+        "write_touch_count": 1390
+      },
+      {
+        "admitted_packet_word_count": 0,
+        "declared_handoff_count": 152,
+        "read_touch_count": 0,
+        "register_touch_count": 668,
+        "retain_after_declaration_count": 252,
+        "slot_count": 9,
+        "stage": "B",
+        "variant": "primary",
+        "word_count": 112,
+        "write_touch_count": 668
+      },
+      {
+        "admitted_packet_word_count": 0,
+        "declared_handoff_count": 180,
+        "read_touch_count": 100,
+        "register_touch_count": 460,
+        "retain_after_declaration_count": 180,
+        "slot_count": 112,
+        "stage": "C",
+        "variant": "primary",
+        "word_count": 112,
+        "write_touch_count": 360
+      },
+      {
+        "admitted_packet_word_count": 0,
+        "declared_handoff_count": 72,
+        "read_touch_count": 0,
+        "register_touch_count": 34264,
+        "retain_after_declaration_count": 544,
+        "slot_count": 17304,
+        "stage": "D",
+        "variant": "primary",
+        "word_count": 17304,
+        "write_touch_count": 34264
+      },
+      {
+        "admitted_packet_word_count": 24,
+        "declared_handoff_count": 120,
+        "read_touch_count": 120,
+        "register_touch_count": 144,
+        "retain_after_declaration_count": 144,
+        "slot_count": 24,
+        "stage": "E",
+        "variant": "primary",
+        "word_count": 24,
+        "write_touch_count": 24
+      },
+      {
+        "admitted_packet_word_count": 0,
+        "declared_handoff_count": 100,
+        "read_touch_count": 100,
+        "register_touch_count": 1490,
+        "retain_after_declaration_count": 472,
+        "slot_count": 225,
+        "stage": "A",
+        "variant": "alternate_port",
+        "word_count": 368,
+        "write_touch_count": 1390
+      },
+      {
+        "admitted_packet_word_count": 0,
+        "declared_handoff_count": 12,
+        "read_touch_count": 0,
+        "register_touch_count": 36,
+        "retain_after_declaration_count": 12,
+        "slot_count": 18,
+        "stage": "B",
+        "variant": "alternate_port",
+        "word_count": 18,
+        "write_touch_count": 36
+      },
+      {
+        "admitted_packet_word_count": 0,
+        "declared_handoff_count": 0,
+        "read_touch_count": 0,
+        "register_touch_count": 0,
+        "retain_after_declaration_count": 0,
+        "slot_count": 0,
+        "stage": "C",
+        "variant": "alternate_port",
+        "word_count": 0,
+        "write_touch_count": 0
+      },
+      {
+        "admitted_packet_word_count": 0,
+        "declared_handoff_count": 72,
+        "read_touch_count": 0,
+        "register_touch_count": 34264,
+        "retain_after_declaration_count": 544,
+        "slot_count": 17304,
+        "stage": "D",
+        "variant": "alternate_port",
+        "word_count": 17304,
+        "write_touch_count": 34264
+      },
+      {
+        "admitted_packet_word_count": 24,
+        "declared_handoff_count": 120,
+        "read_touch_count": 120,
+        "register_touch_count": 144,
+        "retain_after_declaration_count": 144,
+        "slot_count": 24,
+        "stage": "E",
+        "variant": "alternate_port",
+        "word_count": 24,
+        "write_touch_count": 24
+      }
+    ],
+    "certificate_pass": true,
+    "declared_assignment": [
+      {
+        "block": "lapse",
+        "canonical_slot": 0,
+        "coefficient": 1.0,
+        "stage": "A",
+        "stage_statistic": "slot_count",
+        "variant": "primary"
+      },
+      {
+        "block": "shift",
+        "canonical_slot": 1,
+        "coefficient": 1.0,
+        "stage": "B",
+        "stage_statistic": "slot_count",
+        "variant": "primary"
+      },
+      {
+        "block": "shift",
+        "canonical_slot": 2,
+        "coefficient": 1.0,
+        "stage": "C",
+        "stage_statistic": "slot_count",
+        "variant": "primary"
+      },
+      {
+        "block": "shift",
+        "canonical_slot": 3,
+        "coefficient": 1.0,
+        "stage": "D",
+        "stage_statistic": "slot_count",
+        "variant": "primary"
+      },
+      {
+        "block": "trace",
+        "canonical_slot": 4,
+        "coefficient": 1.0,
+        "stage": "E",
+        "stage_statistic": "slot_count",
+        "variant": "primary"
+      },
+      {
+        "block": "shear",
+        "canonical_slot": 5,
+        "coefficient": 1.0,
+        "stage": "A",
+        "stage_statistic": "slot_count",
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_slot": 6,
+        "coefficient": 1.0,
+        "stage": "B",
+        "stage_statistic": "slot_count",
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_slot": 7,
+        "coefficient": 1.0,
+        "declared_zero_reason": "alternate_port has no Stage-C slots",
+        "stage": "C",
+        "stage_statistic": "slot_count",
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_slot": 8,
+        "coefficient": 1.0,
+        "stage": "D",
+        "stage_statistic": "slot_count",
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_slot": 9,
+        "coefficient": 1.0,
+        "stage": "E",
+        "stage_statistic": "slot_count",
+        "variant": "alternate_port"
+      }
+    ],
+    "frozen_disposition_exact_match": true,
+    "interpretation": "The nonuniform stage-count source passes the source-independent and scale-covariant landed checks plus carrier occupancy, but fails the Ward constraint-membership check because the supplied stage vector is not in the frozen canonical nullspace.",
+    "landed_check_feed": {
+      "block_norms": {
+        "lapse": 225.0,
+        "shear": 17305.488753571797,
+        "shift": 17304.364796200985,
+        "trace": 24.0
+      },
+      "checks": {
+        "free_tensor_carrier": {
+          "pass": true,
+          "values": "tensor_source_blocks={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}"
+        },
+        "no_claim": {
+          "pass": true,
+          "values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False"
+        },
+        "orientation_twist": {
+          "pass": true,
+          "values": "block_norms={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, flip_resid=0.0e+00"
+        },
+        "projector_algebra": {
+          "pass": true,
+          "values": "ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}"
+        },
+        "response_locking": {
+          "pass": true,
+          "values": "field_flip=0.0e+00, null=0.0e+00, pair_signs={(1, 1): 1.0, (1, -1): -1.0, (-1, 1): -1.0, (-1, -1): 1.0}"
+        },
+        "scalar_only_no_overclaim": {
+          "pass": true,
+          "values": "complement_norm=0.0e+00"
+        },
+        "ward_constraint": {
+          "pass": false,
+          "values": "residuals(+,-,0)=['1.9e+04', '1.9e+04', '0.0e+00']"
+        }
+      },
+      "pass": false,
+      "source": [
+        225.0,
+        9.0,
+        112.0,
+        17304.0,
+        24.0,
+        225.0,
+        18.0,
+        0.0,
+        17304.0,
+        24.0
+      ],
+      "source_certificate": {
+        "dtype": "<f8",
+        "sha256": "8f14e58520a9281d0b2fc6f2d8be092765c73b0157083efd369ea98c36889d53",
+        "shape": [
+          10
+        ]
+      }
+    },
+    "nonproportionality": {
+      "comparison": "stage_resolved_source / canonical_fixture_source",
+      "fixture_nonzero_slot_count": 10,
+      "least_squares_scale": -59.19786094967317,
+      "nonproportional_residual": 24473.660007974104,
+      "numerically_nonproportional": true,
+      "ratio_max": 27576.20556314334,
+      "ratio_min": -26863.443241011304,
+      "ratio_spread": 54439.64880415464,
+      "relative_nonproportional_residual": 0.9999898585643564,
+      "slot_ratios": [
+        235.33479872146597,
+        43.15901870132497,
+        -986.0458639551374,
+        -26863.443241011304,
+        29.840557718723005,
+        -417.08862531087294,
+        -27.386350840619027,
+        -0.0,
+        27576.20556314334,
+        -76.8603509439512
+      ]
+    },
+    "original_lawful_role_counts": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "per_check_disposition": [
+      {
+        "check": "projector_algebra",
+        "exact_frozen_match": true,
+        "expected_pass": true,
+        "expected_values": "ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}",
+        "explanation": "Canonical projector ranks do not depend on source scale.",
+        "kind": "source-independent projector identity",
+        "observed": {
+          "pass": true,
+          "values": "ranks={'lapse': 1, 'shift': 3, 'trace': 1, 'shear': 5}"
+        }
+      },
+      {
+        "check": "orientation_twist",
+        "exact_frozen_match": true,
+        "expected_pass": true,
+        "expected_values": "block_norms={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, flip_resid=0.0e+00",
+        "explanation": "The twist residual is homogeneous and every canonical block is occupied above the landed threshold.",
+        "kind": "scale-covariant after block occupancy",
+        "observed": {
+          "pass": true,
+          "values": "block_norms={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, flip_resid=0.0e+00"
+        }
+      },
+      {
+        "check": "ward_constraint",
+        "exact_frozen_match": true,
+        "expected_pass": false,
+        "expected_values": "residuals(+,-,0)=['1.9e+04', '1.9e+04', '0.0e+00']",
+        "explanation": "The declared stage-count vector is not in the frozen canonical Ward nullspace; orientation zero still annihilates it.",
+        "kind": "constraint-membership",
+        "observed": {
+          "pass": false,
+          "values": "residuals(+,-,0)=['1.9e+04', '1.9e+04', '0.0e+00']"
+        }
+      },
+      {
+        "check": "response_locking",
+        "exact_frozen_match": true,
+        "expected_pass": true,
+        "expected_values": "field_flip=0.0e+00, null=0.0e+00, pair_signs={(1, 1): 1.0, (1, -1): -1.0, (-1, 1): -1.0, (-1, -1): 1.0}",
+        "explanation": "The universal block response and orientation signs are linear identities for this nonuniform source.",
+        "kind": "scale-covariant linear response",
+        "observed": {
+          "pass": true,
+          "values": "field_flip=0.0e+00, null=0.0e+00, pair_signs={(1, 1): 1.0, (1, -1): -1.0, (-1, 1): -1.0, (-1, -1): 1.0}"
+        }
+      },
+      {
+        "check": "scalar_only_no_overclaim",
+        "exact_frozen_match": true,
+        "expected_pass": true,
+        "expected_values": "complement_norm=0.0e+00",
+        "explanation": "This landed gate constructs its own scalar fixture.",
+        "kind": "source-independent fixed scalar fixture",
+        "observed": {
+          "pass": true,
+          "values": "complement_norm=0.0e+00"
+        }
+      },
+      {
+        "check": "free_tensor_carrier",
+        "exact_frozen_match": true,
+        "expected_pass": true,
+        "expected_values": "tensor_source_blocks={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}",
+        "explanation": "The stage-count source has nonzero shift and shear carriers; the fixed chi-only comparator does not.",
+        "kind": "block-occupancy membership",
+        "observed": {
+          "pass": true,
+          "values": "tensor_source_blocks={'lapse': 225.0, 'shift': 17304.365, 'trace': 24.0, 'shear': 17305.489}, chi_only_blocks={'lapse': 1.0, 'shift': 0.0, 'trace': 0.5, 'shear': 0.0}"
+        }
+      },
+      {
+        "check": "no_claim",
+        "exact_frozen_match": true,
+        "expected_pass": true,
+        "expected_values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False",
+        "explanation": "This landed gate has no source input.",
+        "kind": "source-independent claim firewall",
+        "observed": {
+          "pass": true,
+          "values": "negative_inertial_mass=False, shielding=False, propulsion=False, reactionless_force=False, physical_signed_gravity_prediction=False"
+        }
+      }
+    ],
+    "reduction_table": [
+      {
+        "block": "lapse",
+        "canonical_slot": 0,
+        "coefficient": 1.0,
+        "observed_integer_count": 225,
+        "real_contribution": 225.0,
+        "stage": "A",
+        "stage_statistic": "slot_count",
+        "variant": "primary"
+      },
+      {
+        "block": "shift",
+        "canonical_slot": 1,
+        "coefficient": 1.0,
+        "observed_integer_count": 9,
+        "real_contribution": 9.0,
+        "stage": "B",
+        "stage_statistic": "slot_count",
+        "variant": "primary"
+      },
+      {
+        "block": "shift",
+        "canonical_slot": 2,
+        "coefficient": 1.0,
+        "observed_integer_count": 112,
+        "real_contribution": 112.0,
+        "stage": "C",
+        "stage_statistic": "slot_count",
+        "variant": "primary"
+      },
+      {
+        "block": "shift",
+        "canonical_slot": 3,
+        "coefficient": 1.0,
+        "observed_integer_count": 17304,
+        "real_contribution": 17304.0,
+        "stage": "D",
+        "stage_statistic": "slot_count",
+        "variant": "primary"
+      },
+      {
+        "block": "trace",
+        "canonical_slot": 4,
+        "coefficient": 1.0,
+        "observed_integer_count": 24,
+        "real_contribution": 24.0,
+        "stage": "E",
+        "stage_statistic": "slot_count",
+        "variant": "primary"
+      },
+      {
+        "block": "shear",
+        "canonical_slot": 5,
+        "coefficient": 1.0,
+        "observed_integer_count": 225,
+        "real_contribution": 225.0,
+        "stage": "A",
+        "stage_statistic": "slot_count",
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_slot": 6,
+        "coefficient": 1.0,
+        "observed_integer_count": 18,
+        "real_contribution": 18.0,
+        "stage": "B",
+        "stage_statistic": "slot_count",
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_slot": 7,
+        "coefficient": 1.0,
+        "declared_zero_reason": "alternate_port has no Stage-C slots",
+        "observed_integer_count": 0,
+        "real_contribution": 0.0,
+        "stage": "C",
+        "stage_statistic": "slot_count",
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_slot": 8,
+        "coefficient": 1.0,
+        "observed_integer_count": 17304,
+        "real_contribution": 17304.0,
+        "stage": "D",
+        "stage_statistic": "slot_count",
+        "variant": "alternate_port"
+      },
+      {
+        "block": "shear",
+        "canonical_slot": 9,
+        "coefficient": 1.0,
+        "observed_integer_count": 24,
+        "real_contribution": 24.0,
+        "stage": "E",
+        "stage_statistic": "slot_count",
+        "variant": "alternate_port"
+      }
+    ],
+    "s1_lawful_census_role_uniform": true,
+    "stage_accounting_exact": true,
+    "stage_statistics_nonuniform": true,
+    "zero_refit": {
+      "coefficient_convention": "declared unit weight for every assigned slot",
+      "fitted_parameters": 0,
+      "fixture_coefficient_applied": false,
+      "normalization_applied": false,
+      "optimizer_calls": 0,
+      "supplied_convention": true
+    }
+  },
+  "s2": {
+    "count_binding": {
+      "comparison_table": [
+        {
+          "census_value": 2,
+          "equal": true,
+          "harness_fixture_value": 2,
+          "integer_invariant": "endpoint_cell_count"
+        },
+        {
+          "census_value": [
+            6,
+            6
+          ],
+          "equal": true,
+          "harness_fixture_value": [
+            6,
+            6
+          ],
+          "integer_invariant": "per_cell_unit_weight_event_counts"
+        },
+        {
+          "census_value": 12,
+          "equal": true,
+          "harness_fixture_value": 12,
+          "integer_invariant": "unit_weight_total"
+        },
+        {
+          "census_value": 6,
+          "equal": true,
+          "harness_fixture_value": 6,
+          "integer_invariant": "reciprocity_symmetric_pair_count"
+        }
+      ],
+      "convention": "Each input leg names one endpoint cell; admitted tick identity modulo six names only an occupied direction bin. Each occupied bin carries integer weight one. Multiplicity supplies no amplitude or phase.",
+      "fixture": {
+        "endpoint_cell_count": 2,
+        "per_cell_unit_weight_event_counts": [
+          6,
+          6
+        ],
+        "reciprocity_symmetric_pair_count": 6,
+        "unit_weight_total": 12
+      },
+      "observed": {
+        "endpoint_cell_count": 2,
+        "per_cell_unit_weight_event_counts": [
+          6,
+          6
+        ],
+        "reciprocity_symmetric_pair_count": 6,
+        "unit_weight_total": 12
+      },
+      "pass": true
+    },
+    "finding": "The certificate functions accept no census; a full-Fock Cycle-320 lift needs the absent full-Fock auxiliary-source construction.",
+    "module_language": "full-Fock Cycle-320 unit-weight auxiliary sources",
+    "new_physics_claim": false,
+    "s2_input_port_exists": false,
+    "unchanged_harness_anchor": {
+      "execution": "fresh subprocess of the landed script; no arguments or edits",
+      "fail_line_count": 0,
+      "fail_lines": [],
+      "pass": true,
+      "pass_line_count": 20,
+      "path": "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
+      "required_marker": "RESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED",
+      "required_marker_found": true,
+      "returncode": 0,
+      "runtime_seconds": 45.39095479200478,
+      "stderr_tail": [],
+      "stdout_sha256": "f0b5234721c09aace8b21e6fcd4d081ba85f81f5c13b72a151bba4ad755dc781",
+      "summary_lines": [
+        "SUMMARY {'pass': 20, 'fail': 0}",
+        "RESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED"
+      ],
+      "timed_out": false
+    }
+  },
+  "s3": {
+    "count_binding": {
+      "comparison_table": [
+        {
+          "equal": true,
+          "event_type": "route_A",
+          "expected_count": 16,
+          "observed_count": 16,
+          "tick_identity_mod_3": 0
+        },
+        {
+          "equal": true,
+          "event_type": "route_B",
+          "expected_count": 16,
+          "observed_count": 16,
+          "tick_identity_mod_3": 1
+        },
+        {
+          "equal": true,
+          "event_type": "route_C",
+          "expected_count": 16,
+          "observed_count": 16,
+          "tick_identity_mod_3": 2
+        }
+      ],
+      "convention": "Admitted tick identity modulo three supplies a typed count row A/B/C. The rows remain separate and are not spliced into a combined law.",
+      "declared_binding_table": [
+        {
+          "event_type": "route_A",
+          "expected_count": 16,
+          "tick_identity_mod_3": 0
+        },
+        {
+          "event_type": "route_B",
+          "expected_count": 16,
+          "tick_identity_mod_3": 1
+        },
+        {
+          "event_type": "route_C",
+          "expected_count": 16,
+          "tick_identity_mod_3": 2
+        }
+      ],
+      "pass": true,
+      "per_variant_counts": {
+        "alternate_port": {
+          "route_A": 8,
+          "route_B": 8,
+          "route_C": 8
+        },
+        "primary": {
+          "route_A": 8,
+          "route_B": 8,
+          "route_C": 8
+        }
+      },
+      "route_count_comparison": {
+        "census_value": 3,
+        "contract_fixture_value": 3,
+        "equal": true,
+        "integer_invariant": "typed_route_count"
+      }
+    },
+    "not_one_combined_law_preserved": true,
+    "s3_input_port_exists": false,
+    "unchanged_contract_verifier_anchor": {
+      "execution": "fresh subprocess of the landed script; no arguments or edits",
+      "fail_line_count": 0,
+      "fail_lines": [],
+      "pass": true,
+      "pass_line_count": 5,
+      "path": "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py",
+      "required_marker": null,
+      "required_marker_found": true,
+      "returncode": 0,
+      "runtime_seconds": 47.96585566698923,
+      "stderr_tail": [],
+      "stdout_sha256": "831bfc1ac79b02f8b585329c2c3966d8ca64a01be72f8a6a9209a61f1bb15afd",
+      "summary_lines": [],
+      "timed_out": false
+    }
+  },
+  "status": "PASS",
+  "zero_refit": {
+    "canonical_source_fixture_certificate": {
+      "dtype": "<f8",
+      "sha256": "2c2181ec3ac070ea88f8bba514b5bd62458b1360681c27bc1255daefcc2c3b68",
+      "shape": [
+        10
+      ]
+    },
+    "fitted_parameters": 0,
+    "normalization_applied": false,
+    "optimizer_calls": 0,
+    "reduction_rule": "real admitted-role count multiplied directly by the corresponding landed S1 canonical fixture component",
+    "supplied_convention": true,
+    "ward_constraint_certificate": {
+      "dtype": "<f8",
+      "sha256": "8b04d8301c5bb7710908e1f5f37d2886dc257719b129cd7d5f16faaf21f5d5e9",
+      "shape": [
+        4,
+        10
+      ]
+    },
+    "ward_constraint_provenance": "unchanged second return value of S1.tensor_source_with_constraints()"
+  }
+}
+
+----- stderr -----
+

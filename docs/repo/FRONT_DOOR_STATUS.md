@@ -32,7 +32,7 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3910 |
-| Applied audit verdicts | 909 |
+| Applied audit verdicts | 908 |
 | Retained-grade rows, including boxed decorations | 509 |
 | Retained positive theorems | 123 |
 | Retained no-go rows | 0 |
@@ -41,7 +41,7 @@ Owner-approval history for axioms and primitives:
 | Open gates | 3 |
 | Unaudited rows | 2642 |
 | Retained-pending-chain rows | 11 |
-| Audited conditional rows | 271 |
+| Audited conditional rows | 270 |
 | Audited renaming rows | 33 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 58 |
@@ -85,15 +85,15 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | critical | `unaudited` | 233 |
 | high | `unaudited` | 165 |
 | medium | `unaudited` | 110 |
-| critical | `audited_conditional` | 10 |
+| critical | `audited_conditional` | 9 |
 | medium | `audited_conditional` | 8 |
 | ? | `unresolved` | 4 |
 | high | `audited_conditional` | 4 |
 | medium | `audited_failed` | 4 |
 | high | `audited_failed` | 2 |
 | high | `audited_renaming` | 2 |
+| critical | `audit_in_progress` | 1 |
 | critical | `audited_failed` | 1 |
-| critical | `audited_numerical_match` | 1 |
 
 ## Dispatch Shadow Report (no dispatch effect)
 

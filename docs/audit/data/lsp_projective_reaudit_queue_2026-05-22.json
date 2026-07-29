@@ -3,9 +3,7 @@
     "docs/audit/README.md",
     "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
     "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-    "docs/MINIMAL_AXIOMS_2026-05-20.md",
-    "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
   ],
   "forbidden_context": [
     "this dispatcher manifest as evidence",

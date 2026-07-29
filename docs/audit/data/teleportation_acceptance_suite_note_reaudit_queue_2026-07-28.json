@@ -5,8 +5,7 @@
     "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
     "docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md",
     "scripts/frontier_teleportation_acceptance_suite_note_sync_check.py",
-    "scripts/frontier_teleportation_acceptance_suite.py",
-    "logs/runner-cache/frontier_teleportation_acceptance_suite_note_sync_check.txt"
+    "scripts/frontier_teleportation_acceptance_suite.py"
   ],
   "forbidden_context": [
     "this dispatcher manifest as evidence",

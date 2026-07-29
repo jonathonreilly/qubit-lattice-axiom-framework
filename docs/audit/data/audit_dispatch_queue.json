@@ -13,9 +13,7 @@
         "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
         "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
         "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
-        "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py",
-        "logs/runner-cache/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.txt",
-        "logs/runner-cache/cl3_pauli_irrep_uniqueness_n1_complete_certificate_2026-07-25.txt"
+        "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
       ],
       "audit_question": "Fresh-context re-audit: do the current source note, exact primary runner, independent faithful-direct-sum control, and complete N1-N8 certificate establish the stated finite-dimensional Cl(3,0) algebra/module classification, real-versus-complex faithfulness boundary, and conditional unitary refinement without any proof, scope, or negative-claim discipline gap?",
       "blocked_by_group_ids": [],
@@ -61,8 +59,7 @@
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
         "docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md",
         "scripts/frontier_teleportation_acceptance_suite_note_sync_check.py",
-        "scripts/frontier_teleportation_acceptance_suite.py",
-        "logs/runner-cache/frontier_teleportation_acceptance_suite_note_sync_check.txt"
+        "scripts/frontier_teleportation_acceptance_suite.py"
       ],
       "audit_question": "Fresh-context re-audit: do the current meta note, its synchronization guard, the live default and strict list surfaces, and the input-fingerprinted runner cache establish that the note accurately documents the 12-row default and 24-row strict acceptance-harness inventories while preserving the stated bounded-telemetry boundary and making no claim about the child probes' physics?",
       "blocked_by_group_ids": [],
@@ -104,11 +101,7 @@
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
-        "docs/ANOMALY_FORCES_TIME_BRIDGE_PREMISE_MANIFEST_RECHECK_NOTE_2026-06-17.md",
-        "docs/ANOMALY_FORCES_TIME_THEOREM.md",
-        "docs/ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_OPEN_GATE_NOTE_2026-06-17.md"
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md"
       ],
       "audit_question": "Fresh-context re-audit target: under the current dependency-edge repair and premise manifest, does the anomaly-forces-time ABJ bridge validate as a bounded_theorem over explicit premises P-ABJ, P-HY, P-COMP, and P-REC without crediting native_gauge_closure for hypercharge, abelian values, or matter completion?",
       "blocked_by_group_ids": [],
@@ -203,9 +196,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "Under the ratified k=1 qubit-per-site clause now on the canonical axiom surface, does the U4 closure row qualify as audited_decoration under cl3_complexification_split (as the prior audit verdict explicitly named), or does it require a different category?",
       "blocked_by_group_ids": [],
@@ -248,11 +239,9 @@
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md",
-        "docs/UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md"
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md"
       ],
-      "audit_question": "Fresh-context review target: does UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md supply the route-exhaustion gate requested for UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md without overclaiming absolute GR impossibility or demoting positive A1/Casimir/Regge/spin-2 routes?",
+      "audit_question": "Fresh-context review target: does UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md itself, using only its ledger-owned source/dependency/runner packet, justify its bounded scope without overclaiming absolute GR impossibility or demoting positive A1/Casimir/Regge/spin-2 routes?",
       "blocked_by_group_ids": [],
       "claim_id": "universal_gr_polarization_frame_bundle_blocker_note",
       "deps": [
@@ -295,9 +284,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "With LSP-projective ratified for ideal unrefined projective measurements, does the conditional K_P=P bridge become clean scoped support, or does an upstream dependency/status issue still block it?",
       "blocked_by_group_ids": [],
@@ -342,9 +329,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "With the k=1 qubit-per-site clause ratified on the axiom surface, does the substep-1 U4 conditional sub-claim (k=1 implies dim_C H_x = 2) close under the qubit-per-site reading, or does another blocker remain?",
       "blocked_by_group_ids": [],
@@ -388,9 +373,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "With the k=1 qubit-per-site clause ratified on the axiom surface and the substep-1 dependency chain routed through the retained cl3_complexification_split parent, does the Jordan-Wigner substep-1 bridge close under the qubit-per-site reading, or does another blocker remain?",
       "blocked_by_group_ids": [],
@@ -432,11 +415,7 @@
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/ANOMALY_FORCES_TIME_ABJ_INCONSISTENCY_ACCEPTED_PREMISE_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
-        "docs/ANOMALY_FORCES_TIME_BRIDGE_PREMISE_MANIFEST_RECHECK_NOTE_2026-06-17.md",
-        "docs/ANOMALY_FORCES_TIME_THEOREM.md",
-        "docs/ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_OPEN_GATE_NOTE_2026-06-17.md"
+        "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md"
       ],
       "audit_question": "Fresh-context audit target after the bridge resolves: does ANOMALY_FORCES_TIME_THEOREM.md close only the d_t odd/parity result under its explicit bridge and retained dependencies, while leaving the d_t = 1 single-generator cap to the emergent-dynamics open gate?",
       "blocked_by_group_ids": [
@@ -487,9 +466,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "After the direct L\u00fcders/projective rows are resolved, does the Born derivation still have remaining blockers, or is the projective-measurement part of the chain now closed?",
       "blocked_by_group_ids": [
@@ -1412,9 +1389,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "Does the parent L\u00fcders sequential-composition row close for the ideal unrefined sharp-projective scope under the ratified LSP-projective rule, or does another blocker remain?",
       "blocked_by_group_ids": [],
@@ -2526,9 +2501,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "With the k=1 qubit-per-site clause ratified on the axiom surface and the substep-1 dependency chain routed through the retained cl3_complexification_split parent, does the Grassmann-forcing substep-1 bridge close under the qubit-per-site reading, or does another blocker remain?",
       "blocked_by_group_ids": [],
@@ -2571,9 +2544,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "Under the k=1 qubit-per-site axiom-content reading plus the retained axiom_first_cl3_per_site_uniqueness chain, does the per-site Hilbert dim-two theorem close cleanly, or does the missing physical-Hilbert bridge remain?",
       "blocked_by_group_ids": [],
@@ -2613,9 +2584,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-bosonic-CCR trace obstruction close (finite-dim trace + dim_C H_x = 2 forces no CCR rep), or does another blocker remain?",
       "blocked_by_group_ids": [],
@@ -2657,9 +2626,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the no-per-site-chirality result close, or does the missing physical-Hilbert-to-Pauli bridge remain?",
       "blocked_by_group_ids": [],
@@ -2700,9 +2667,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the Pauli group order theorem close on the bounded per-site scope, or does another blocker remain?",
       "blocked_by_group_ids": [],
@@ -2742,9 +2707,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the Q-integer-spectrum result close on the bounded per-site scope, or does the staggered-Dirac/Grassmann bridge admission remain load-bearing?",
       "blocked_by_group_ids": [],
@@ -2784,9 +2747,7 @@
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
         "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-        "docs/MINIMAL_AXIOMS_2026-05-20.md",
-        "docs/QUBIT_AXIOM_HARDENING_NOTE_2026-05-20.md"
+        "docs/audit/ALGEBRAIC_DECORATION_POLICY.md"
       ],
       "audit_question": "Under the k=1 qubit-per-site reading plus retained per-site-uniqueness, does the per-site su(2) spin-half identification close, or does the missing physical-Hilbert bridge remain?",
       "blocked_by_group_ids": [],

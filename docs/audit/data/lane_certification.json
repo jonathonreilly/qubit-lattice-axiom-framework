@@ -1056,10 +1056,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
-          "effective_status": "audit_in_progress"
-        },
-        {
           "claim_id": "gbare_wilson_action_internal_proof_walk_bounded_note_2026-05-08",
           "effective_status": "unaudited"
         },
@@ -2740,7 +2736,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 628
+      "uncertified_count": 627
     }
   ],
   "schema": "lane_certification_v2"

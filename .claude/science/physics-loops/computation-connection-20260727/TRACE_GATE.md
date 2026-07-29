@@ -55,3 +55,27 @@ Notes:
 - Target moved: gravity/source lane named absent lift (Cycle-322
   sharpest next test). Construction achieved at n_max=2; no obstruction.
 - Class: direct_blocker_closure (support). PR #5708.
+
+## Cycle 733 (block13) — sector-summed companion channel
+- Target moved: Cycle-727 frozen obstruction one (per-sector-only
+  channel); the note's named "only route" executed. Full-sector
+  isometry achieved. Class: direct_blocker_closure. PR #5712.
+
+## Support — Born acceptance harness + full-Fock acceptance port
+- Target moved: evidence-ceiling program completion on Born and source
+  lanes (instruments with frozen expectations + DRIFT arming). Class:
+  direct_blocker_closure (support). PRs #5711, #5714.
+
+## Cycle 734 (block14) — paired-excitation genesis (W2 leg)
+- Target moved: W2 source-boundary component — SPLIT: preparation
+  retired (positive theorem); adjacent-pair control frozen as
+  ownership_uniqueness_at_adjacent_Q_sites with reproduced witness.
+  Executes the N1-live paired-excitation family; NOT a no-go
+  reopening. Class: direct_blocker_closure + frozen obstruction. PR
+  #5715.
+
+## Cycle 735 (block15) — separated-pair lawful control (IN FLIGHT)
+- Target: the 734 invariant's own untested domain (distance >= 2);
+  constant-distance observation makes the lawful two-source sector
+  plausible; W4 separated multi-source composition language if
+  positive. Class: direct_blocker_closure attempt.

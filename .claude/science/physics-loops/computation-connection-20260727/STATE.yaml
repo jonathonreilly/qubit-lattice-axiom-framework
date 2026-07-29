@@ -273,3 +273,24 @@ checkpoint_2220_blocks10_11_landed_and_landing_protocol: >
   regeneration there (protocol in HANDOFF); (3) 725's PR closed with
   files ABSENT from main — closed-not-landed, flagged to owner in
   HANDOFF. IN FLIGHT: Born acceptance harness draft (WT3, main-based).
+
+checkpoint_0030_blocks13_14_supports_landed: >
+  Shipped since checkpoint_2220: #5711 (Born acceptance harness, base
+  main), #5712 (Cycle 733 sector-summed full-sector isometry, stacked
+  on #5705), #5713 (Cycle 732 genesis word self-verification, stacked
+  on #5710), #5714 (full-Fock acceptance port, stacked on #5704
+  carrying #5708), #5715 (Cycle 734 paired-excitation genesis, stacked
+  on #5713). RESULTS: full-sector isometry ACHIEVED (V=V+ (+) V-, exact,
+  1,872 off-diagonal blocks zero, frozen obstruction null); genesis
+  word 27 gates with composed self-verification (inventory no longer
+  separately declared; W1 gap narrowed to word SELECTION); Born + port
+  instruments complete the evidence-ceiling program on Born and source
+  lanes; Cycle 734 split W2's source-boundary component — preparation
+  retired (position-free 3-gate template, 121/121 covariance), control
+  FROZEN at ownership_uniqueness_at_adjacent_Q_sites (step 0, stations
+  0/1, single-token specific, checker-reproduced from K directly).
+  KEY OBSERVATION for 735: lawful update advances all tokens +1/step —
+  constant pairwise ring distance — separated tokens can never become
+  adjacent; the lawful two-source sector may be open. IN FLIGHT: Cycle
+  735 separated-pair lawful control (block15, WT2). Ten campaign PRs
+  open: #5706-#5715.

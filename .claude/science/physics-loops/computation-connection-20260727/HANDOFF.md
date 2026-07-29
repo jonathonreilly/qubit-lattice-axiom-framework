@@ -183,3 +183,32 @@ origin/block07 or wait for landing); Ward-lawful census projection
 classification (cites 725 — see owner flag above); autonomy/forcing
 ledger legs (genesis derivation is now ALSO the named W1 remaining gap,
 so the genesis leg serves two walls at once).
+
+## 2026-07-29 ~00:35 — five more PRs; W2 split; ceiling program complete
+
+OPEN campaign PRs now: #5706, #5707, #5708, #5709 (carries #5706),
+#5710, #5711, #5712, #5713, #5714 (carries #5708), #5715. Stacks:
+09 on 02 (#5707); 10<-11<-12<-14<-(15 in flight) mainbase chain
+(#5709->#5710->#5713->#5715); 13 on 07 (#5712); port on
+source-harness branch (#5714). Carried-commit PRs reduce on rebase
+when their parents land.
+
+Evidence-ceiling program COMPLETE at infrastructure level: source set
+(#5704) + full-Fock port (#5714) + Born harness (#5711); every
+construction surface the gravity/source program relies on is
+drift-armed.
+
+W2 status after Cycle 734: source-boundary component SPLIT —
+preparation retired (translation-covariant template), control frozen
+at ownership_uniqueness_at_adjacent_Q_sites (adjacent pairs only;
+single-token specific; checker-reproduced). Cycle 735 (in flight)
+tests the invariant's own untested domain: separated pairs at
+constant ring distance. If positive: bounded two-source composition
+(W4 language) at ring-11 scope.
+
+Queue after 735: Ward-lawful census projection classification (STILL
+blocked on the 725 owner flag above); autonomy-ledger reclassification
+pass (mechanically-retirable items after 732/734 movement); genesis
+word SELECTION derivation (the narrowed W1 gap — needs an
+occurrence/Record forcing mechanism, likely a next-campaign theorem
+target); scoreboard refresh 6 due with next major landing.

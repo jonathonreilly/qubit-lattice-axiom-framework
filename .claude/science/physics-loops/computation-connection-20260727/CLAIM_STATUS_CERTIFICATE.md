@@ -77,3 +77,23 @@ retained; NOT promoted; independent audit required.
 Claim: bounded conditional construction (n_max=2, declared embedding).
 No source law, response law, or gravity content selected (C_source
 firewall verbatim). NOT retained; independent audit required.
+
+## Block 13 — Cycle 733 sector-summed companion channel
+Claim: bounded_theorem, branch-local until independently audited.
+Narrowest honest status: exact full-sector isometry on the tested boxes
+with one supplied ordering convention; second Cycle-727 obstruction
+untouched. NOT retained; independent audit required.
+
+## Supports — Born acceptance harness; full-Fock acceptance port
+Claim: meta (acceptance infrastructure), branch-local. No physics
+movement claimed on either lane. NOT retained; independent audit
+required.
+
+## Block 14 — Cycle 734 paired-excitation genesis
+Claim: bounded_theorem, branch-local until independently audited.
+Narrowest honest status: boundary-free PREPARATION at ring-11 scope
+(position-free template, exact covariance, count-2 enforcement);
+adjacent-pair CONTROL not achieved — frozen obstruction
+ownership_uniqueness_at_adjacent_Q_sites with reproduced witness;
+separated pairs untested in that package. NOT retained; independent
+audit required.

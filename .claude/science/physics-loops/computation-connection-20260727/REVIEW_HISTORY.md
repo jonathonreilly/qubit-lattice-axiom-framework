@@ -177,3 +177,20 @@ and hands off; the review loop is not run from this session.
   replay). PASS. V3: truncation + embedding declared supplied; C_source
   firewall verbatim. PASS. V4: no drift. PASS. V5: stated; PR #5708.
   PASS.
+
+## Blocks 13/14 + supports — V1-V5 (author-side records)
+- Block 13 (Cycle 733): V1 obstruction-one discharged by named route;
+  V2 exact isometry + generator-level exhaustion + independent
+  projector recount; V3 one supplied ordering convention, second
+  obstruction untouched; V4 no drift; V5 stated (PR #5712). ALL PASS.
+- Born harness + full-Fock port (supports): V1 ceiling instruments
+  landed; V2 6/6+5/5 and 6/6+4/4 with label-honesty checks; V3
+  data-only feeds, firewalls verbatim; V4 claim_type meta; V5 stated
+  (PRs #5711, #5714). ALL PASS.
+- Block 14 (Cycle 734): V1 W2 source-boundary SPLIT (preparation
+  positive, control frozen); V2 121/121 covariance + exact sector
+  recount + checker reproduced obstruction FROM K DIRECTLY; V3
+  boundary keys verbatim (retired-for-preparation true; lawful false);
+  V4 no drift; V5 stated (PR #5715). ALL PASS. N-gate note: no new
+  negative claim beyond the frozen census — N1 family narrowed, not
+  closed; discipline recorded in the note.

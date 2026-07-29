@@ -1,0 +1,53 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle749_response_comparison_harness_2026_07_28.txt": "ee9141362712c38cb812e3473326a8feb11fccc2c094c594878514ecb7290050",
+      "frontier_cycle749_response_harness_independent_check_2026_07_28.txt": "702bd513179db758f6e09762309b006840e90387410e2795d5e4c4d0d93464f0"
+    },
+    "note": {
+      "path": "docs/RESPONSE_COMPARISON_HARNESS_CYCLE749_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "0267ee6663f85fad9e8e5ea3e9828e8225033ebee97063a72a4ad9a7e82a94df"
+    },
+    "runners": {
+      "frontier_cycle749_response_comparison_harness_2026_07_28.py": "ab9b852236f73ec4aecad9287e07a4029309159d956a1cb3043f9238342d6807",
+      "frontier_cycle749_response_harness_independent_check_2026_07_28.py": "8ade6a8a5478c65cf74120e5a2f28e521eb9a55db9f4ddfaf1d98b487c6b6edb"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "the candidate kernel schema (declared; Fraction coefficients; zero fitted defaults); the built-in demonstration kernels (data); everything the landed Cycle-320/322 surfaces declare",
+    "harness_is_instrument_only": true,
+    "not_derived": "any response law or gravity content (C_source verbatim); the no-refit prediction attachment",
+    "positive_scope": "criteria frozen from the landed surfaces' own runs (exact recoil (-2d,+d,+d); zero flux balance; reciprocal transfer at held L=6); the ACCEPT/REJECT/DRIFT verdict machinery with per-criterion attribution; three built-in candidate demonstrations verdicting correctly; the checker's own fourth (magnitude-doubled) candidate REJECTed with correctly named criteria (the instrument generalizes); adversary self-test; firewall audits",
+    "remaining_w7_components": [
+      "field/metric response law",
+      "no-refit prediction attachment"
+    ],
+    "response_law_selected": false,
+    "w7_closed": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 15,
+    "primary_named_checks_passed": 19
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 749,
+  "date": "2026-07-29",
+  "result": {
+    "builtin_verdicts": {
+      "identity": "ACCEPT",
+      "perturbed": "DRIFT",
+      "sign_flipped": "REJECT"
+    },
+    "checker_fourth_candidate": "magnitude-doubled -> REJECT via reciprocal_transfer_values + recoil_ledger",
+    "criteria": [
+      "recoil (-2d,+d,+d)",
+      "zero flux balance",
+      "reciprocal transfer at held L=6"
+    ]
+  },
+  "status": "CYCLE749_RESPONSE_COMPARISON_HARNESS_PASS"
+}

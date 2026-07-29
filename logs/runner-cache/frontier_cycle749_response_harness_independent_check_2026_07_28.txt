@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle749_response_harness_independent_check_2026_07_28.py
+runner_sha256: 8ade6a8a5478c65cf74120e5a2f28e521eb9a55db9f4ddfaf1d98b487c6b6edb
+input_fingerprint_sha256: 024715529a6161205c384f69fedb8746f5e64ef132b3e46337691b46b751624c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 147.34
+status: ok
+----- stdout -----
+PASS 1 extraction recounts the literal AUDIT tuple :: ('scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py', 'scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py')
+PASS 1 extraction recounts recoil, balance, and held reciprocal criteria :: {'recoil_coefficients': (-2, 1, 1), 'zero_flux_balance': 0, 'reciprocal_transfer': {'held_L': 6, 'held_symbol': 'S322.HELD_SIZE', 'off_diagonal_minimum': Fraction(3, 5000), 'sizes_symbol': 'S322.SIZES'}}
+PASS 1 extraction recounts all three frozen verdicts :: {'identity_pullback': 'ACCEPT', 'sign_flipped': 'REJECT', 'coefficient_drift': 'DRIFT'}
+PASS 1 extraction recounts the open boundary keys :: {'harness_is_instrument_only': True, 'response_law_selected': False, 'w7_closed': False, 'remaining_w7_components': ['field/metric response law', 'no-refit prediction attachment']}
+PASS 2 criteria recount obtains an all-PASS S322 own run :: {'exit': 0, 'runtime_sec': 45.622}
+PASS 2 criteria recount obtains an all-PASS U320 own run :: {'exit': 0, 'runtime_sec': 2.179}
+PASS 2 criteria recount independently derives (-2d,+d,+d) and zero balance :: {'directions': 6, 'own_run_rows': 6}
+PASS 2 criteria recount independently derives reciprocal transfer at held L=6 :: {'held_L': 6, 'minimum_transfer': 0.0006446410419510052}
+PASS 2 independent frozen criteria have byte and value agreement with the harness :: {'byte_agreement': True, 'own_sha256': 'ee4f940003ae2dcdcf1fd6b780363c9ded12a6f4f7e4335842d2f714f539f578', 'primary_sha256': 'ee4f940003ae2dcdcf1fd6b780363c9ded12a6f4f7e4335842d2f714f539f578'}
+PASS 3 candidate recount independently reproduces ACCEPT/REJECT/DRIFT :: {'identity_pullback': 'ACCEPT', 'sign_flipped': 'REJECT', 'coefficient_drift': 'DRIFT'}
+PASS 3 fourth magnitude-doubled candidate is rejected by named criteria :: {'failed_criteria': ['reciprocal_transfer_values', 'recoil_ledger'], 'verdict': 'REJECT'}
+PASS 4 wrong-expectation adversary is caught independently and by the harness :: {'failed_criteria': ['recoil_ledger'], 'largest_residual': 4, 'verdict': 'REJECT'}
+PASS 5 firewall recount finds data-only candidates and zero landed writes :: {'candidate_count': 3, 'file_writes': 0, 'landed_writes': 0, 'prohibitions_only': True}
+PASS 6 discipline keeps the primary blocklisted and imports only S322/U320 anchors :: {'blocklist_clean': True, 'header_clean': True}
+PASS 6 boundary language and false closure keys remain verbatim :: {'response_law_selected': False, 'w7_closed': False}
+{"adversary":{"failed_criteria":["recoil_ledger"],"verdict":"REJECT"},"audit_input_paths":["scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py","scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py"],"boundary":{"response_law_selected":false,"w7_closed":false},"candidate_verdicts":{"coefficient_drift":"DRIFT","identity_pullback":"ACCEPT","sign_flipped":"REJECT"},"discipline":{"blocklist_clean":true,"boundary_verbatim":true,"header_clean":true},"fail":0,"firewall":{"candidates_are_data":true,"file_writes":0,"landed_writes":0,"prohibitions_only":true},"fourth_candidate":{"failed_criteria":["reciprocal_transfer_values","recoil_ledger"],"name":"magnitude_doubled","verdict":"REJECT"},"note_path":"docs/RESPONSE_COMPARISON_HARNESS_CYCLE749_BOUNDED_THEOREM_NOTE_2026-07-28.md","pass":15,"runtime_sec":147.017893}
+
+----- stderr -----
+

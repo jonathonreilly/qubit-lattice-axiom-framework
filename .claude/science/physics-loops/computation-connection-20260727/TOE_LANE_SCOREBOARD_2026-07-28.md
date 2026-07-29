@@ -301,3 +301,39 @@ drift-armed).
 - Cycle 735 (#5716): separated pairs lawful; two-source composition;
   the lawful domain boundary is exactly the frozen adjacency wall.
   First W4 movement.
+
+## Refresh 8 — CAMPAIGN CLOSE (2026-07-29 ~09:00)
+
+| Lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |
+|---|---|---|---|---|
+| Operations | 95 | 98 | 75 | 99 |
+| Time | 76 | 80 | 45 | 99 |
+| Matter | 97 | 99 | 92 | 99 |
+| Gravity | 74 | 50 | 29 | 99 |
+| Born | 84 | 67 | 35 | 99 |
+
+Movers since refresh 7: Operations autonomy 73->75 (capacity a
+parameter; renewal in-word; the controller's operating envelope no
+longer ends at a table); Matter autonomy 91->92 (W4 complete at scope;
+the archive feed closes the loop from matter history to the Record
+carrier).
+
+### Final breakthrough log (refresh 7 -> close)
+- Cycle 740 (#5721): capacity = a parameter (table law derived;
+  theorem table-uniform).
+- Cycle 741 (#5722): W4 renewal at fixture scope (orbit-2 vacuity
+  frozen; 3 generations; archive = proto-Record).
+- Cycle 742 (#5723): the junction fed — archive read out through the
+  landed Record carrier byte-exactly; permanence NOT claimed; the
+  derived write-once locking mechanism = the named W5 opening.
+
+### Campaign totals (2026-07-27T21:37 -> 2026-07-29 close)
+22 blocks; Cycles 721-742 + four support packages; 23 PRs
+(#5697-#5723); every cycle: primary + independent adversarial checker
++ note + pinned caches + receipt; zero unaudited claims; all
+review/audit owner-lane handoffs stated. Walls moved: W1 (complete at
+ring scope; gap = genesis-word selection derivation), W2 (geometry
+bank-counted; boundary split: preparation retired / adjacency wall
+frozen), W4 (complete at fixture scope), W5 (fed; locking mechanism
+named). Frozen refutations kept honest: D3 chained-agreement, CSLT
+stage-resolved Ward, 738's two conditions, orbit-2 vacuity.

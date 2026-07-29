@@ -384,3 +384,17 @@ checkpoint_0655_block21_landed_w4_complete_at_scope: >
   IN FLIGHT: W5-junction extraction probe (EXTRACT_W5_JUNCTION.md;
   go/no-go for a Cycle-742 junction runner in the remaining window).
   Seventeen campaign PRs: #5706-#5722.
+
+checkpoint_0910_campaign_close: >
+  CAMPAIGN CLOSE. Cycle 742 shipped (#5723): the archive read out
+  through the landed Cycle-693 Record carrier byte-exactly across all
+  3 renewal generations (12/12); record_permanence_claimed FALSE
+  verbatim; the derived write-once locking mechanism = the named W5
+  opening. Totals: 22 blocks, Cycles 721-742 + 4 supports, 23 PRs
+  #5697-#5723, every one with independent checker + pinned caches +
+  receipt. Scoreboard refresh 8 (final) in the scoreboard file; full
+  close handoff in HANDOFF.md (owner decisions: 725 disposition,
+  automation_lock, time-lane target; next-campaign queue ranked with
+  the W5 locking mechanism first). Session memory written
+  (session_2026_07_29_computation_connection_725_741.md). No worker in
+  flight; the always-in-flight rule ends with the campaign window.

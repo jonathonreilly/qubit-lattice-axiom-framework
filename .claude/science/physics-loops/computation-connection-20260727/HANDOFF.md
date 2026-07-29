@@ -212,3 +212,60 @@ pass (mechanically-retirable items after 732/734 movement); genesis
 word SELECTION derivation (the narrowed W1 gap — needs an
 occurrence/Record forcing mechanism, likely a next-campaign theorem
 target); scoreboard refresh 6 due with next major landing.
+
+## 2026-07-29 ~09:05 — CAMPAIGN CLOSE HANDOFF
+
+Campaign complete: 22 blocks, Cycles 721-742 + 4 supports, 23 PRs
+(#5697-#5723). All PRs carry primary + independent checker + note +
+pinned caches + receipt; independent audit still required on every one;
+review-loop and audit-loop are owner lanes.
+
+### Open PRs by stack (review order suggestion)
+- Mainbase chain (review in order): #5709 (730; carries #5706) ->
+  #5710 (731) -> #5713 (732) -> #5715 (734) -> #5716 (735) -> #5717
+  (736) -> #5718 (737) -> #5719 (738) -> #5720 (739; CORRECTS #5719 —
+  read together) -> #5721 (740) -> #5722 (741) -> #5723 (742).
+- Independent: #5706 (728), #5707 (729, stacked on block02 #5698
+  lineage), #5711 (Born harness), #5712 (733, stacked on #5705),
+  #5708 (full-Fock), #5714 (port; carries #5708).
+- Carried-commit PRs reduce on rebase when parents land.
+
+### OWNER DECISIONS NEEDED
+1. Block05/Cycle 725 (CSLT): PR closed but files ABSENT from main —
+   closed-not-landed by the content-on-main test. #5705 (727) and the
+   Ward-classification queue item cite its surfaces. Confirm intended
+   disposition.
+2. automation_lock.py points at /Users/jonreilly (broken on this
+   machine); campaign ran under branch-local supervisor lock
+   throughout.
+3. Time lane (76/80/45/99) had no named queue item this campaign; its
+   next movement needs either an owner-named target or the W3
+   (BINDER/ACTUAL/ADMISS/LAW) program — a new mechanism.
+
+### NEXT-CAMPAIGN QUEUE (ranked)
+1. W5 locking mechanism: a DERIVED write-once Record
+   locking/persistence construction (EXTRACT_W5_JUNCTION.md enumerates
+   obligations; permanence must never be premised). The sharpest
+   opening — 742's feed made it concrete.
+2. Genesis-word SELECTION derivation (the narrowed W1 gap):
+   occurrence/Record forcing of the preparation convention.
+3. Adjacent-pair controller mechanism (the frozen 734 wall — either a
+   modified controller lawful at adjacency, or a no-go with a new
+   premise).
+4. Archive hierarchy / unbounded renewal (the finite-archive bound of
+   741; connects to item 1).
+5. Ward-lawful census projection classification (blocked on owner
+   decision 1).
+6. b>=5 exhaustive anchors if review wants enumerar evidence beyond
+   the structural transfer (737 checker's bit-plane evaluator makes
+   b=5 feasible).
+
+### Standing protocols proven this campaign (keep)
+- Landing-shape: build every landing PR in a worktree from
+  origin/main; rerun + re-cache there (owner rewrites held anchors;
+  runner_cache changed mid-campaign).
+- One worktree per concurrent worker; branch pinned for the worker's
+  lifetime.
+- Theorem conditions extracted from implemented AST, never restated
+  (the 739 six-term lesson).
+- Always-in-flight worker rule until campaign stop.

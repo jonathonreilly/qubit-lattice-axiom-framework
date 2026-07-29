@@ -1,0 +1,62 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle763_ensembles_independent_check_2026_07_28.txt": "024782795ebc6906f9a96f4b78662589e6f6437f4f3f7ad5f9cdf3441ddf53ff",
+      "frontier_cycle763_symmetry_broken_ensembles_2026_07_28.txt": "afb9113fec15c1e1ea5334bead31b8e0a918afec94f5610dd984f1e9af2cae72"
+    },
+    "note": {
+      "path": "docs/SYMMETRY_BROKEN_ENSEMBLES_CYCLE763_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "22d2f9c1f0943bd3a4fd1894c3fb3f5f32aa25bdf3926522053756956b0b219e"
+    },
+    "runners": {
+      "frontier_cycle763_ensembles_independent_check_2026_07_28.py": "dade6d070f32a4ac96c1dbe01d88a8100c1212267d130a3e4931d87a9e14c7bd",
+      "frontier_cycle763_symmetry_broken_ensembles_2026_07_28.py": "d2205d1ed26f3aa1ea531502470fb6fcc91bffec3b94fb6781e9154442eb5724"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "born_law_selected": false,
+    "direction_table_L1": {
+      "E0": {
+        "born": 0.800997,
+        "uniform": 0.558214
+      },
+      "E1": {
+        "born": 0.549992,
+        "uniform": 0.739394
+      },
+      "E2": {
+        "born": 0.838916,
+        "uniform": 0.815323
+      },
+      "pooled": {
+        "born": 0.312397,
+        "uniform": 0.299465
+      }
+    },
+    "first_born_ward_signal": "stratum E1 (closer to Born than to uniform)",
+    "fixed_supplies": "the mapping + seeding conventions; everything the 317/750/758/760 packages declare",
+    "named_next": "the DERIVED per-effect mapping from the same landed apparatus structure",
+    "not_derived": "any weight/Born content; the mapping",
+    "positive_scope": "the seeded strata + censuses + quantitative direction tables + both controls, all independently recounted",
+    "seeding": "deterministic from B317's own splits (0.17,0.29,0.54)->(17,29,54); zero new constants (checker AST-audited)",
+    "strata_censuses": {
+      "E0": "(13,128,68)/209",
+      "E1": "(97,1,232)/330",
+      "E2": "(432,146,5)/583",
+      "pooled": "(542,275,305)/1122"
+    },
+    "weight_claim_made": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 8,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 763,
+  "date": "2026-07-29",
+  "status": "CYCLE763_DISCRIMINATOR_MIXED_DIRECTIONS_PASS"
+}

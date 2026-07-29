@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_born_acceptance_harness_2026_07_28.py
+runner_sha256: 592427c3c7efed2c06f23a3c95157c1c1c958a7a9b606567f33421d53acbecf2
+input_fingerprint_sha256: 55169b59ca200c86622faee4f114080f747216ac7a499cddc914362a9a934e26
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 5.57
+status: ok
+----- stdout -----
+PASS A. byte pins and landed self-runs reproduce frozen counts, markers, and outputs :: {'bridge': {'verdict': 'ACCEPT', 'counts': [15, 0], 'output_match': True}, 'release': {'verdict': 'ACCEPT', 'counts': [14, 0], 'output_match': True}}
+PASS B. all lawful declared-domain probes ACCEPT with frozen-value matches :: {'axis_plus_x': {'verdict': 'ACCEPT', 'frozen_match': True}, 'axis_minus_x': {'verdict': 'ACCEPT', 'frozen_match': True}, 'axis_plus_y': {'verdict': 'ACCEPT', 'frozen_match': True}, 'axis_plus_z': {'verdict': 'ACCEPT', 'frozen_match': True}}
+PASS C. all malformed witnesses REJECT with frozen refusal signatures and zero landed-module writes :: {'witnesses': {'wrong_arity': {'verdict': 'REJECT', 'frozen_match': True, 'enforcement': 'landed_surface'}, 'non_normalized': {'verdict': 'REJECT', 'frozen_match': True, 'enforcement': 'landed_surface'}, 'out_of_domain_value': {'verdict': 'REJECT', 'frozen_match': True, 'enforcement': 'landed_surface'}, 'boolean_type_violation': {'verdict': 'REJECT', 'frozen_match': True, 'enforcement': 'harness_schema'}}, 'isolation': True, 'attribute_writes': []}
+PASS D. one-byte sandbox mutation is DRIFT while the real bridge remains byte-pinned :: {'verdict': 'DRIFT', 'one_byte_changed': True, 'sandbox_sha256': 'a0563d78dd30078335e766c580e4846ea4d170e8170189828c3ac7e9c9363420', 'expected_sha256': 'e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10', 'real_before': 'e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10', 'real_after': 'e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10', 'real_unchanged': True}
+PASS E. quarantined wrong frozen expectation is caught by the live comparator :: {'feed_match': True, 'origin_match': True, 'status_match': True, 'matrix_match': False, 'summary_match': True, 'signature_match': True, 'frozen_match': False}
+PASS F. AST firewall finds data-only feeds and no synthesis identifiers or literal-fed surface calls :: {'firewall_ok': True, 'forbidden_code_identifiers': [], 'surface_call_count': 1, 'surface_call_is_payload_data_only': True, 'literal_tables': {'FROZEN_LAWFUL_PROBES': True, 'FROZEN_REJECT_WITNESSES': True, 'QUARANTINED_WRONG_EXPECTATION': True}}
+CENSUS axis_plus_x verdict=ACCEPT frozen_match=True
+CENSUS axis_minus_x verdict=ACCEPT frozen_match=True
+CENSUS axis_plus_y verdict=ACCEPT frozen_match=True
+CENSUS axis_plus_z verdict=ACCEPT frozen_match=True
+CENSUS wrong_arity verdict=REJECT frozen_match=True
+CENSUS non_normalized verdict=REJECT frozen_match=True
+CENSUS out_of_domain_value verdict=REJECT frozen_match=True
+CENSUS boolean_type_violation verdict=REJECT frozen_match=True
+{"adversary_self_test":{"caught":true,"wrong_matrix_match":false},"checks":{"fail":0,"pass":6},"drift_demo":{"expected_sha256":"e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10","one_byte_changed":true,"real_after":"e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10","real_before":"e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10","real_unchanged":true,"sandbox_sha256":"a0563d78dd30078335e766c580e4846ea4d170e8170189828c3ac7e9c9363420","verdict":"DRIFT"},"firewall":{"feeds_are_supplied_apparatus_data":true,"new_physics_claimed":false,"selects_born_law":false,"selects_probability_content":false,"selects_weight_map":false,"structural_ast_pass":true},"probe_census":[{"frozen_match":true,"probe_id":"axis_plus_x","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"axis_minus_x","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"axis_plus_y","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"axis_plus_z","verdict":"ACCEPT"},{"frozen_match":true,"probe_id":"wrong_arity","verdict":"REJECT"},{"frozen_match":true,"probe_id":"non_normalized","verdict":"REJECT"},{"frozen_match":true,"probe_id":"out_of_domain_value","verdict":"REJECT"},{"frozen_match":true,"probe_id":"boolean_type_violation","verdict":"REJECT"}],"runtime_seconds":5.473974,"self_runs":[{"count_match":true,"executed":true,"marker_match":true,"name":"bridge","observed_counts":[15,0],"output_match":true,"pin_match":true,"returncode":0,"stderr_bytes":0,"stderr_sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","stdout_bytes":8408,"stdout_sha256":"c5e35923c1e3fbfb94db745b58d0e8d12e3d65d79c0a7af08d95c6c8ea29f0dc","verdict":"ACCEPT"},{"count_match":true,"executed":true,"marker_match":true,"name":"release","observed_counts":[14,0],"output_match":true,"pin_match":true,"returncode":0,"stderr_bytes":0,"stderr_sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","stdout_bytes":6303,"stdout_sha256":"ba143794a2fc400c9992dfbac5f80df59e23aee62869dd3b25211fa539a12240","verdict":"ACCEPT"}]}
+
+----- stderr -----
+

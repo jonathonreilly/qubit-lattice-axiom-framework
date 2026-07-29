@@ -1,24 +1,82 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-29T20:35:58.314094+00:00",
+  "audit_invocation_history": [
+    "54493e6b89af4d69a6ecb6c92728171c",
+    "16944c7167614ceeb4389ff76033d03c"
+  ],
+  "audit_invocation_id": "16944c7167614ceeb4389ff76033d03c",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "Exact temporal-gauge factorization of the one-step mixed Wilson kernel into independent spatial-link convolution factors, with Peter-Weyl per-link eigenvalues and marked/non-marked compression for fixed tensor-product irrep sectors.",
+      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "The finite-truncation SU(3) character-convolution identity and its coefficient-uniqueness, positivity, self-adjointness, and conjugation-symmetry consequences for an abstract normalized sequence, excluding any Wilson-environment identification."
+    },
+    "dep_claim_type": {
+      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "positive_theorem",
+      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10": "retained",
+      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10",
+      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 14.058,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "df8b075198deb08a69b5ce42e9386baae875374f303eb747e4689093f0584fa3",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "df8b075198deb08a69b5ce42e9386baae875374f303eb747e4689093f0584fa3",
+    "runner_path": "scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 753
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260729-4acdf0ee",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The representation-ring proof of c_lambda(beta) >= 0 is exact, but the full chain cannot be certified because both retained one-hop authority texts are clipped. Verification of the convolution-diagonalization and temporal-gauge factorization inputs therefore remains unresolved.",
   "claim_id": "wilson_su3_gauge_transfer_kernel_positivity_bounded_note_2026-05-30",
-  "claim_scope": null,
+  "claim_scope": "Audited only the gauge-sector SU(3) Wilson one-link weight w(U)=exp((beta/3) Re Tr U): its character coefficients are non-negative for beta >= 0, equivalently the single-link gauge convolution kernel is PSD.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-29T20:35:58.314094+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +85,20 @@
     "gauge_temporal_gauge_mixed_kernel_spatial_link_factorization_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 9,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 14.058,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Equation (13) expresses c_lambda(beta) as a convergent sum of non-negative terms (beta/(2N_c))^n m_lambda^(n)/n!, hence c_lambda(beta) >= 0 for every irrep and beta >= 0.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "095d6aeaeb8a71e20e29e98c8e7423e41526288ff0678b467e05cc9953fb3635",
   "note_path": "docs/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: rebuild the restricted packet with the complete un-clipped text of both retained one-hop authorities, then rerun the independent audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -237,14 +296,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 6,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 6
   },
   "runner_path": "scripts/wilson_su3_gauge_transfer_kernel_positivity_2026-05-30.py",
   "title": "Wilson SU(3) Temporal-Gauge Transfer-Kernel Positivity (Bounded)",
   "transitive_descendants": 753,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the restricted packet clips both retained one-hop authorities, preventing independent review of their complete convolution-diagonalization and temporal-gauge factorization proofs. Why this blocks: the binding packet preflight forbids audited_clean, and the missing authority verification is comparable to the kernel-equivalence portion of the scoped claim rather than a cosmetic lemma. Repair target: render both cited authorities in full and repeat the fresh-context audit. Claim boundary until fixed: the self-contained non-negative character-series argument and all six runner checks are internally consistent, but the whole cited dependency chain is not cleanly auditable from this packet."
 }

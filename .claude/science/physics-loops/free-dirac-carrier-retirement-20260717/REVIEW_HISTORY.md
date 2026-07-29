@@ -179,4 +179,7 @@ Claim-boundary, import, and Nature-retention review remain bounded: no premise,
 formula, dependency edge, negative claim, or scientific scope changed. The
 repair closes the named runner-artifact obstruction and exposes the already
 existing derivation for independent checking. It does not predict or apply the
-fresh audit verdict. No-Go Discipline is therefore not triggered.
+fresh audit verdict. Because the target is nevertheless a bounded theorem with
+named exclusions, the source packet now records a full N1-N8 stress-test. That
+check identifies five collapsed walls, six mechanism-distinct attack routes,
+and a live full-reconstruction steelman without making a no-go claim.

@@ -79,6 +79,12 @@ packet now carries the full pole/residue, projector, carrier, and finite
 Jordan-Wigner/hole-relabelling Sections 2–5 without a load-bearing clipping
 marker. The authority and target runners still pass `11/11` and `8/8`.
 
+Because the target is bounded with named exclusions, the claim certificate now
+applies No-Go Discipline N1-N8 even though cycle 2 changes only transport. It
+collapses the boundary to five independent walls, tests six mechanism-distinct
+routes, and records the strongest full-reconstruction steelman. No broader
+negative claim is shipped.
+
 Repo-native review disposition is `pass`. A clean-clone full pipeline also
 proved the target source-hash change resets it to `unaudited` and queues it for
 fresh review. No audit-owned status or generated publication surface is changed

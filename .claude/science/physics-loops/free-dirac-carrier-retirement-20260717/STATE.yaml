@@ -49,6 +49,8 @@ stronger_claim_exclusions:
   - physical global CAR/statistics selection
   - single-taste selection
   - OS/Wightman reconstruction
+  - common-core identification for the displayed unbounded generators
+no_go_discipline_status: pass_for_bounded_scope_only
 no_go_routes:
   - globally raising all authority packet limits
   - duplicating Sections 2–5 into the target note

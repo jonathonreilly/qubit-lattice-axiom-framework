@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Koide Q = 2/3 bridge - single surviving primitive collapse
+Koide Q = 2/3 bridge - finite listed-expression comparison
 
 Purpose:
   sharpen the remaining Q = 2/3 bridge on the charged-lepton Koide lane.
@@ -9,13 +9,12 @@ Current package status on origin/main:
   - the block-total Frobenius / AM-GM stack proves where the admitted
     functional is extremized;
   - several April 22 support runners add axiom-native reformulations;
-  - the remaining open step is still physical identification, not arithmetic.
+  - physical identification is outside this runner's algebraic scope.
 
 This runner proves a conditional algebraic theorem: under the explicit
 carrier, sign, representation-dimension, and Yukawa-normalization premises
-printed below, the surviving arithmetic / representation-theoretic faces of
-the Q bridge are not independent candidate values. They collapse to a single
-scalar primitive:
+printed below, four explicitly listed arithmetic / representation-theoretic
+expressions share one scalar value:
 
     P_Q := |b|^2 / a^2 = 1/2
 
@@ -31,8 +30,8 @@ on the C_3-equivariant Hermitian carrier, with the exact consequence chain
 
 Honest status:
   this does NOT derive the printed carrier/face premises and does NOT close the
-  physical/source-law bridge. It narrows that bridge to one surviving primitive
-  rather than several unrelated arithmetic options.
+  physical/source-law bridge. It makes no exhaustiveness claim about unlisted
+  arithmetic constructions or physical bridge routes.
 """
 
 from __future__ import annotations
@@ -62,11 +61,11 @@ def section(title: str) -> None:
 
 
 def main() -> int:
-    section("Koide Q-bridge single-primitive collapse")
+    section("Koide Q-bridge finite listed-expression comparison")
     print()
     print("This runner does not claim physical closure.")
-    print("It proves that the surviving arithmetic/representation-theoretic faces")
-    print("of the Q bridge reduce to one scalar primitive P_Q = |b|^2 / a^2 = 1/2.")
+    print("It proves that four explicitly listed arithmetic/representation-theoretic")
+    print("expressions share the scalar value P_Q = |b|^2 / a^2 = 1/2.")
 
     # r0 > 0 is the nondegenerate positive branch needed for a = r0/3 > 0.
     # r1 and r2 remain unrestricted real coordinates.
@@ -211,7 +210,7 @@ def main() -> int:
         f"= {casimir_diff} / {casimir_sum} = {normalized_casimir_ratio}",
     )
 
-    section("Part E - single surviving primitive")
+    section("Part E - finite listed-face comparison")
     collapse_values = {
         "|b|^2/a^2": primitive_ratio,
         "dim(spinor)/dim(Cl^+(3))": dim_ratio,
@@ -221,18 +220,18 @@ def main() -> int:
     all_half = all(value == sp.Rational(1, 2) for value in collapse_values.values())
 
     record(
-        "E.1 surviving Q-bridge arithmetic faces collapse to P_Q = 1/2",
+        "E.1 the four listed Q-bridge expressions share P_Q = 1/2",
         all_half and q_at_sqrt2 == sp.Rational(2, 3) and kappa == 2,
         "\n".join(f"{name} = {value}" for name, value in collapse_values.items()),
     )
 
-    section("Part F - audit boundary (not a PASS assertion)")
+    section("Part F - scope exclusions (not impossibility claims)")
     print("The exact arithmetic consequences above are conditional on H1-H5.")
     print("In particular, the dimension counts and PDG-normalized Yukawa labels")
     print("are explicit premises rather than outputs of this runner.")
     print()
-    print("This runner verifies an algebraic/representation-theoretic collapse")
-    print("of the surviving Q-bridge faces to one scalar primitive P_Q = 1/2.")
+    print("This runner verifies a finite algebraic comparison of exactly four")
+    print("listed expressions, all equal to P_Q = 1/2 under H1-H5.")
     print()
     print("It does NOT derive from retained physics:")
     print("  (1) that the physical selector lives on the admitted normalized")
@@ -241,8 +240,8 @@ def main() -> int:
     print("  (3) the readout from Y = I_2 through kappa = 2 to physical")
     print("      Q = 2/3 on the charged-lepton lane.")
     print()
-    print("These are physical-identification questions, not leaves of the")
-    print("conditional algebraic theorem checked here.")
+    print("These topics are outside the conditional algebraic theorem checked here.")
+    print("No claim is made that unlisted routes are exhausted or cannot succeed.")
 
     section("SUMMARY")
     n_pass = sum(1 for _, ok, _ in PASSES if ok)
@@ -254,13 +253,12 @@ def main() -> int:
 
     print()
     if n_pass == n_total:
-        print("VERDICT: the Koide Q bridge has one surviving primitive candidate")
-        print("on the admitted normalized second-order reduced carrier.")
+        print("VERDICT: under H1-H5, the four listed expressions share the value")
+        print("P_Q = 1/2 and the H1-H3 consequence chain gives Q = 2/3.")
         print()
-        print("What remains open is the physical/source-law identification of that")
-        print("primitive on the charged-lepton carrier, not an unresolved arithmetic")
-        print("competition among several distinct candidate values. Audit verdict")
-        print("and effective status remain the independent audit lane's authority.")
+        print("Physical/source-law identification and exhaustiveness over other")
+        print("routes are outside scope. Audit verdict and effective status remain")
+        print("the independent audit lane's authority.")
         return 0
 
     print("VERDICT: verification has FAILs.")

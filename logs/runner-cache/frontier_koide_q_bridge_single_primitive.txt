@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_bridge_single_primitive.py
-runner_sha256: a1180930149e3de003958ceafbe7134f947352993fd9fae61ef1149f4eccd464
+runner_sha256: 0188c791ec3236777cb69fcbc5a2c824a291c5880f746b37fd2824046576058c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.52
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
 
 ========================================================================================
-Koide Q-bridge single-primitive collapse
+Koide Q-bridge finite listed-expression comparison
 ========================================================================================
 
 This runner does not claim physical closure.
-It proves that the surviving arithmetic/representation-theoretic faces
-of the Q bridge reduce to one scalar primitive P_Q = |b|^2 / a^2 = 1/2.
+It proves that four explicitly listed arithmetic/representation-theoretic
+expressions share the scalar value P_Q = |b|^2 / a^2 = 1/2.
 
 ========================================================================================
 Premise ledger - conditional theorem domain
@@ -71,23 +71,23 @@ Part D - representation-theoretic faces hit the same scalar
        [T(T+1)-Y^2] / [T(T+1)+Y^2] = 1/2 / 1 = 1/2
 
 ========================================================================================
-Part E - single surviving primitive
+Part E - finite listed-face comparison
 ========================================================================================
-[PASS] E.1 surviving Q-bridge arithmetic faces collapse to P_Q = 1/2
+[PASS] E.1 the four listed Q-bridge expressions share P_Q = 1/2
        |b|^2/a^2 = 1/2
        dim(spinor)/dim(Cl^+(3)) = 1/2
        T(T+1)-Y^2 = 1/2
        [T(T+1)-Y^2]/[T(T+1)+Y^2] = 1/2
 
 ========================================================================================
-Part F - audit boundary (not a PASS assertion)
+Part F - scope exclusions (not impossibility claims)
 ========================================================================================
 The exact arithmetic consequences above are conditional on H1-H5.
 In particular, the dimension counts and PDG-normalized Yukawa labels
 are explicit premises rather than outputs of this runner.
 
-This runner verifies an algebraic/representation-theoretic collapse
-of the surviving Q-bridge faces to one scalar primitive P_Q = 1/2.
+This runner verifies a finite algebraic comparison of exactly four
+listed expressions, all equal to P_Q = 1/2 under H1-H5.
 
 It does NOT derive from retained physics:
   (1) that the physical selector lives on the admitted normalized
@@ -96,8 +96,8 @@ It does NOT derive from retained physics:
   (3) the readout from Y = I_2 through kappa = 2 to physical
       Q = 2/3 on the charged-lepton lane.
 
-These are physical-identification questions, not leaves of the
-conditional algebraic theorem checked here.
+These topics are outside the conditional algebraic theorem checked here.
+No claim is made that unlisted routes are exhausted or cannot succeed.
 
 ========================================================================================
 SUMMARY
@@ -115,15 +115,14 @@ PASSED: 13/13
   [PASS] D.1 dim(spinor) / dim(Cl^+(3)) = 1/2
   [PASS] D.2 charged-lepton Yukawa Casimir difference T(T+1) - Y^2 = 1/2
   [PASS] D.3 normalized Yukawa Casimir ratio is 1/2
-  [PASS] E.1 surviving Q-bridge arithmetic faces collapse to P_Q = 1/2
+  [PASS] E.1 the four listed Q-bridge expressions share P_Q = 1/2
 
-VERDICT: the Koide Q bridge has one surviving primitive candidate
-on the admitted normalized second-order reduced carrier.
+VERDICT: under H1-H5, the four listed expressions share the value
+P_Q = 1/2 and the H1-H3 consequence chain gives Q = 2/3.
 
-What remains open is the physical/source-law identification of that
-primitive on the charged-lepton carrier, not an unresolved arithmetic
-competition among several distinct candidate values. Audit verdict
-and effective status remain the independent audit lane's authority.
+Physical/source-law identification and exhaustiveness over other
+routes are outside scope. Audit verdict and effective status remain
+the independent audit lane's authority.
 
 ----- stderr -----
 

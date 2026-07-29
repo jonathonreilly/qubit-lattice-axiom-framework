@@ -18,11 +18,10 @@ The current Koide package already has strong executable support for
 > why must the physical charged-lepton packet extremize the admitted
 > block-total Frobenius functional on the accepted framework surface?
 
-After the April 22 support additions, the practical question is no longer
-"which arithmetic candidate should we try next?" It is:
+This note asks the following finite algebraic question:
 
-> do the surviving candidate faces of the `Q` bridge actually collapse to one
-> primitive, so that only one physical-identification problem remains?
+> under their stated premises, do the four displayed `Q`-bridge expressions
+> evaluate to one common scalar?
 
 ## Exact premise ledger
 
@@ -67,7 +66,7 @@ equal cyclic block power
 ```
 
 Under premises 4-5, the runner separately verifies that the three displayed
-representation/Yukawa support faces evaluate to the same scalar value:
+representation/Yukawa expressions evaluate to the same scalar value:
 
 ```text
 dim(spinor) / dim(Cl^+(3)) = 1/2,
@@ -78,21 +77,22 @@ T(T+1) - Y^2 = 1/2,
 These numerical coincidences do not derive premises 4-5 and do not identify a
 physical source law.
 
-## What is actually sharpened
+## Exact finite comparison
 
-This note does **not** close the physical/source-law bridge. It sharpens the
-target:
+The theorem compares exactly the following four expressions:
 
-- the `Q = 2/3` bridge is no longer best read as a family of unrelated
-  candidate arithmetic laws;
-- the surviving support routes all point to the same primitive scalar `1/2`;
-- the remaining open work is therefore the **physical identification** of that
-  primitive on the charged-lepton carrier.
+```text
+|b|^2/a^2,
+dim(spinor)/dim(Cl^+(3)),
+T(T+1)-Y^2,
+[T(T+1)-Y^2]/[T(T+1)+Y^2].
+```
 
-The remaining scientific burden is therefore to derive why the physical packet
-realizes `P_Q = 1/2`. Registering that value as a new framework primitive is
-not a physics-loop closure path; it would require a separate owner-governance
-decision and is not proposed here.
+Under premises 1-5, each is `1/2`; premises 1-3 also give the displayed
+consequence chain through `Q=2/3`. This is not an exhaustiveness claim about
+other arithmetic constructions or physical bridge routes. A theorem selecting
+these premises for a physical charged-lepton packet is outside this note and
+is neither proved impossible nor assessed here.
 
 ## Proof sketch
 
@@ -179,9 +179,9 @@ T(T+1) - Y^2 = 1/2,
 ```
 
 The runner now asserts all three displayed faces, including the normalized
-Casimir ratio omitted by the earlier artifact. These values do not create new
-independent bridge values; conditional on the stated face assignments, they
-coincide with the primitive `P_Q = 1/2`.
+Casimir ratio omitted by the earlier artifact. Conditional on the stated face
+assignments, they coincide with `P_Q = 1/2`. No conclusion about unlisted
+support constructions follows.
 
 ## What this does not claim
 
@@ -195,10 +195,10 @@ coincide with the primitive `P_Q = 1/2`.
 
 ## Bottom line
 
-The `Q = 2/3` bridge is now best read as a **single-primitive problem**:
+For the explicitly stipulated algebraic packet, the four listed expressions
+share the common scalar value
 
-> identify physically why the charged-lepton packet realizes
 > `P_Q = |b|^2 / a^2 = 1/2`.
 
-That is materially sharper than carrying several apparently different
-arithmetic candidates at once.
+This theorem does not claim that the list is exhaustive or select the premises
+physically.

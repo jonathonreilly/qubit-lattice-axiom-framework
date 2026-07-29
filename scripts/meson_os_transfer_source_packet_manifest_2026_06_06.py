@@ -20,10 +20,13 @@ REQUIRED_SOURCE_FRAGMENTS = [
     "def block_fwd_propagator_berezin(",
     "def block_fwd_propagator_operator(",
     "def block_metric_spacetime_eigs(",
+    "def full_grassmann_packet(",
     "def meson_op_on_vacuum_norm(",
     "def meson_correlator_full_berezin(",
     "def meson_correlator_from_propagator(",
     "def u_averaged_meson(",
+    "def u_averaged_full_berezin(",
+    "def normalized_gauge_weights(",
     "def gauge_transform_links(",
     "K1  VACUUM-ANNIHILATION HANDLED",
     "K2  PER-MODE-FACTORIZED BEREZIN BREAKS",
@@ -33,14 +36,18 @@ REQUIRED_SOURCE_FRAGMENTS = [
 ]
 
 REQUIRED_CACHE_SNIPPETS = [
-    "SCORECARD PASS=64 FAIL=0",
-    "P0      : det-weighted avg Berezin == operator meson",
-    "P1      : per-config Berezin(4-ferm) == operator meson",
+    "SCORECARD PASS=116 FAIL=0",
+    "P0      : SAME-M det-weighted Wick-minor avg == operator",
+    "P1      : per-config SAME-M Wick minor == operator loop",
+    "SAME-M  : independently recovered C_BLOCK-2",
+    "SIGN    : wrong reflection physical max eig",
+    "Pdet    : det phase residual / min log|det|",
     "K1 VAC  : ||F|Omega>||",
     "K2 BREAK: per-mode-factorized Berezin gap",
     "K3 DIFF : flat(no-det) vs det-weighted gap",
     "K4 CTRL : single-step block-metric min eig",
     "K5 GAUGE: ||<Theta(F)F> invariance|| under g",
+    "K5 GAUGE: SAME-M Wick-minor invariance under g",
 ]
 
 

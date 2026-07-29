@@ -21,7 +21,7 @@
       "ok": true
     },
     {
-      "detail": "bytes=47163",
+      "detail": "bytes=59245",
       "name": "source_full_length",
       "ok": true
     },
@@ -38,6 +38,11 @@
     {
       "detail": "def block_metric_spacetime_eigs(",
       "name": "source_contains:def block_metric_spacetime_eigs(",
+      "ok": true
+    },
+    {
+      "detail": "def full_grassmann_packet(",
+      "name": "source_contains:def full_grassmann_packet(",
       "ok": true
     },
     {
@@ -58,6 +63,16 @@
     {
       "detail": "def u_averaged_meson(",
       "name": "source_contains:def u_averaged_meson(",
+      "ok": true
+    },
+    {
+      "detail": "def u_averaged_full_berezin(",
+      "name": "source_contains:def u_averaged_full_berezin(",
+      "ok": true
+    },
+    {
+      "detail": "def normalized_gauge_weights(",
+      "name": "source_contains:def normalized_gauge_weights(",
       "ok": true
     },
     {
@@ -96,7 +111,7 @@
       "ok": true
     },
     {
-      "detail": "ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5 == ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5",
+      "detail": "3fae975401ab9fdabd330edfc36a1d0a4c691da02e840b64abb1135113dc7884 == 3fae975401ab9fdabd330edfc36a1d0a4c691da02e840b64abb1135113dc7884",
       "name": "cache_sha_fresh",
       "ok": true
     },
@@ -111,18 +126,33 @@
       "ok": true
     },
     {
-      "detail": "SCORECARD PASS=64 FAIL=0",
-      "name": "cache_contains:SCORECARD PASS=64 FAIL=0",
+      "detail": "SCORECARD PASS=116 FAIL=0",
+      "name": "cache_contains:SCORECARD PASS=116 FAIL=0",
       "ok": true
     },
     {
-      "detail": "P0      : det-weighted avg Berezin == operator meson",
-      "name": "cache_contains:P0      : det-weighted avg Berezin == operator meson",
+      "detail": "P0      : SAME-M det-weighted Wick-minor avg == operator",
+      "name": "cache_contains:P0      : SAME-M det-weighted Wick-minor avg == operator",
       "ok": true
     },
     {
-      "detail": "P1      : per-config Berezin(4-ferm) == operator meson",
-      "name": "cache_contains:P1      : per-config Berezin(4-ferm) == operator meson",
+      "detail": "P1      : per-config SAME-M Wick minor == operator loop",
+      "name": "cache_contains:P1      : per-config SAME-M Wick minor == operator loop",
+      "ok": true
+    },
+    {
+      "detail": "SAME-M  : independently recovered C_BLOCK-2",
+      "name": "cache_contains:SAME-M  : independently recovered C_BLOCK-2",
+      "ok": true
+    },
+    {
+      "detail": "SIGN    : wrong reflection physical max eig",
+      "name": "cache_contains:SIGN    : wrong reflection physical max eig",
+      "ok": true
+    },
+    {
+      "detail": "Pdet    : det phase residual / min log|det|",
+      "name": "cache_contains:Pdet    : det phase residual / min log|det|",
       "ok": true
     },
     {
@@ -149,11 +179,16 @@
       "detail": "K5 GAUGE: ||<Theta(F)F> invariance|| under g",
       "name": "cache_contains:K5 GAUGE: ||<Theta(F)F> invariance|| under g",
       "ok": true
+    },
+    {
+      "detail": "K5 GAUGE: SAME-M Wick-minor invariance under g",
+      "name": "cache_contains:K5 GAUGE: SAME-M Wick-minor invariance under g",
+      "ok": true
     }
   ],
   "claim_id": "meson_gauge_invariant_os_transfer_representation_bounded_note_2026-05-30",
   "fail_count": 0,
-  "pass_count": 30,
+  "pass_count": 37,
   "paths": {
     "primary_runner": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py",
     "primary_runner_cache": "logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt"

@@ -8,18 +8,18 @@ runner-backed source content; downstream effective status is not set here.
 **Primary runner:** [`scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py`](../scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py)
 **Cached runner output:** [`logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt`](../logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt)
 **Source packet verifier:** [`scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py`](../scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py)
-(SUMMARY: MESON OS SOURCE PACKET PASS=30 FAIL=0)
+(SUMMARY: MESON OS SOURCE PACKET PASS=37 FAIL=0)
 **Source packet verifier cache:** [`logs/runner-cache/meson_os_transfer_source_packet_manifest_2026_06_06.txt`](../logs/runner-cache/meson_os_transfer_source_packet_manifest_2026_06_06.txt)
 **Source packet verifier JSON:** [`outputs/meson_os_transfer_source_packet_manifest_2026_06_06.json`](../outputs/meson_os_transfer_source_packet_manifest_2026_06_06.json)
 **Source role:** finite-carrier *representation* theorem for the **gauge-invariant,
 number-conserving meson** observable of the 2-step blocked staggered transfer matrix.
 On explicit finite **3+1** carriers it records the equality between the runner's
 det-weighted finite Haar-sample/quadrature average of the time-reflected Berezin
-**meson two-point correlator** `<Theta(F) F>` (a connected 4-fermion correlator) and
+**meson two-point correlator** `<Theta(F_L) F_L>` (a connected 4-fermion correlator) and
 the matching operator-side transfer-matrix meson two-point (the particle-hole
 connected quark-line loop). It **handles, rather than dodges, the vacuum-annihilation
 obstruction** that the base note left open: `Ohat_meson|Omega> = 0`, yet
-`<Theta(F) F>` is nonzero and equals the operator connected quark-line loop. This note
+`<Theta(F_L) F_L>` is nonzero and equals the operator connected quark-line loop. This note
 does **not** establish the continuum / OS-reconstruction (Wightman) limit, Euclidean
 rotational (Lorentz) restoration, the compact-group Wilson-boundary positivity (H1),
 or a full interacting-RP closure; and it does not close the per-config fermion 2-step
@@ -30,19 +30,26 @@ rung (a separate unresolved row).
 This note establishes, on explicit finite **3+1** carriers (3 spatial + 1 temporal;
 the transfer matrix runs in the time direction, the spatial lattice is the regulator)
 and the runner's finite Haar samples/quadratures, the **gauge-invariant,
-number-conserving meson representation equality** for a basis of meson bilinears
+number-conserving meson representation equality** for a basis of OS-block meson
+representatives
 
 ```text
-   F = chibar(x) U(x,y) chi(y)        (one creation chibar + one annihilation chi),
+   F_L(U) = bar(chi)_+ L_U(V) chi_+,
+   L_U(V) = W_b(U) V(U) W_a(U)^dag,
+   V_(x,a),(y,c)(U) = U(x,y)_ac .
 ```
 
-the gauge-invariant Wilson-line-transported staggered meson observable. The two sides
+Here `V` labels the Wilson-line meson `Fhat_V=c^dag V c` on the operator one-particle
+space. `F_L` is its raw two-slice Berezin representative. The claim is for this
+OS-block projected representative, **not** for inserting `V` on one unprojected raw
+time slice. The isometries `W_a,W_b` are fixed from the one-field cross kernels before
+and independently of `V`, and the same pair is used for every observable. The two sides
 are computed by **separate kernel-build paths**:
 
 ```text
-   <Theta(F) F>_Berezin,Q
-       = (1/Z_Q) sum_{U in Q} w_U det(M[U]) <Theta(F) F>^ferm_U
-       = G_operator,Q(F,F) ,
+   <Theta(F_L) F_L>_Berezin,Q
+       = (1/Z_Q) sum_{U in Q} w_U det(M[U]) <Theta(F_L) F_L>^ferm_U
+       = G_operator,Q(V,V) ,
    Z_Q = sum_{U in Q} w_U det(M[U]),  w_U = exp(-S_G[U]).
 ```
 
@@ -50,14 +57,15 @@ Here `Q` is the runner's finite U(1) quadrature or fixed SU(3) Haar sample, not 
 exact full Haar integral.
 
 - **Berezin** — a genuine many-field Grassmann/Wick construction. At each fixed gauge
-  background `U`, `<Theta(F) F>^ferm_U` is the connected four-field contraction of the
-  time-reflected meson bilinear pair. The runner reconstructs the forward 2-step block
-  propagator `G_f` from the Grassmann temporal-chain block metric per spatial-hop mode,
-  rotates it to the position-color basis by the hop eigenbasis, and then evaluates the
-  explicit four-index connected loop. A separate full-spacetime `M[U]^{-1}` block-metric
-  spectrum check verifies the same block eigenvalues. The `U`-average is the det-weighted
-  finite Haar-sample/quadrature average `(1/Z_Q) sum_{U in Q} e^{-S_G[U]} det(M[U]) (...)`
-  with `det(M[U])` **actually applied**.
+  background `U`, `<Theta(F_L) F_L>^ferm_U` is the connected part of the explicit
+  four-field `2 x 2` covariance minor of one full-spacetime `M[U]^{-1}`. The same
+  `Lt=28` matrix supplies `det(M[U])`. Its two cross-reflection blocks independently
+  determine the particle and hole temporal isometries; the runner checks their sign,
+  normalization, eigenvectors, orthogonality, spatial-mode decoupling, and intertwining
+  with the operator kernel before lifting the meson into the two-slice field space. The
+  `U`-average is the det-weighted finite Haar-sample/quadrature average
+  `(1/Z_Q) sum_{U in Q} e^{-S_G[U]} det(M[U]) (...)`, evaluated with stable `slogdet`
+  weights from that same `M[U]`.
 - **Operator** — the transfer-matrix meson two-point. The forward 2-step block
   propagator is built **independently** from the fermion-Fock transfer matrix,
   `G_f^op = C_BLOCK · Q diag(e^{-2 E_j}) Q^dag`, equivalently
@@ -78,81 +86,90 @@ exact full Haar integral.
 The two paths share **only the lattice action** (the spatial-hop spectrum
 `{lambda_j(U), E_j(U)}` and the hop-eigenbasis `Q`, properties of `S[U]`, not of either
 Hilbert-space construction) — the same independence boundary the base note used. The
-Berezin-side block kernel is built by Grassmann temporal-chain inversions and independently
-checked against a full-spacetime `M[U]^{-1}` block-metric spectrum; the operator side
-builds the same kernel from the fermion-Fock one-body transfer matrix `e^{-2 Hhat[U]}`.
-The agreement is therefore **not tautological**.
+Berezin side builds and inverts the full finite Grassmann matrix, extracts both temporal
+isometries from its cross-reflection eigenvectors, and evaluates covariance minors. The
+operator side builds `G_f` from the fermion-Fock one-body transfer matrix
+`e^{-2 Hhat[U]}`. The direct minor never calls the reduced operator trace.
 
-The equality holds to a worst `|Berezin − operator|` of `5.1e-12` over the
+The equality holds to a worst `|Berezin − operator|` of `5.14e-12` over the
 gauge-invariant meson basis on the finite 3+1 carriers (well inside the `1e-9` assertion
 gate). This is the **lattice / transfer-matrix** representation, exhibited on a finite
 carrier and **illustrating** the cited general transfer-matrix meson-spectroscopy
 construction; **no continuum claim is made either way**.
 
-## 2026-06-06 Source Packet Exposure Repair
+## 2026-07-29 Same-Matrix Four-Field Repair
 
-The current audit blocker asks for the complete primary runner source
-or a source-hash-pinned runner artifact so the Berezin/operator kernel-build
-functions and determinant-weighted averaging path can be audited. The source
-packet verifier above checks that:
+The prior packet still mixed two finite measures: `det_M_finite(..., nt=1)` supplied an
+`Lt=2` determinant, while the reflected block kernel came from an `nt=14`, `Lt=28`
+chain. Moreover, the old `meson_correlator_full_berezin` expanded the reduced trace
+after constructing a two-point kernel; it did not evaluate a four-field minor of the
+matrix supplying the determinant. This repair removes both gaps.
 
-- the primary runner and cache are linked from this note;
-- the primary runner is complete and contains the Berezin block-kernel,
-  operator block-kernel, full-spacetime `M^{-1}` spectrum check,
-  vacuum-annihilation control, four-fermion Berezin correlator,
-  operator meson correlator, determinant-weighted average, and gauge-transform
-  functions;
-- the runner cache is SHA-fresh, successful, and contains the scorecard plus
-  the P0/P1 and K1-K5 controls.
-
-This does not set an audit verdict or widen the finite-carrier scope.
-
-Current source-packet output:
+For each fixed gauge background, the runner now builds exactly one
 
 ```text
-SUMMARY: MESON OS SOURCE PACKET PASS=30 FAIL=0
+M_U = M_KS[U] + m I,       Lt = 2 NT_BULK = 28,
+S_U = M_U^{-1},            det weight = det(M_U).
 ```
 
-## Why the naive single-matrix-element vanishes, and how the obstruction is handled
+Let `+` denote block slices `(0,1)` and `-` their ordered OS images `(-1,-2)`. Define
+the raw cross blocks `A=S_U[+,-]` and `C=S_U[-,+]`. In the spatial-hop eigenbasis they
+split, to numerical precision, into rank-one `2 x 2` temporal blocks. The positive
+temporal eigenvectors of `A` and `-C` give independently extracted isometries `W_a`
+and `W_b`. The runner checks
 
-The base note `MIXED_ENTANGLED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md`
-on main scoped its mixed observable to a **single-creation** transported
-bilinear `F = sum_b W_b(U) chibar_b` (`Ohat|Omega>` a one-particle state) and explicitly
-left the number-conserving four-fermion `chibar(x) U(x,y) chi(y)` **open**, flagging that
-it annihilates the OS vacuum (`chi(y)|Omega> = 0`), a genuine convention obstruction.
+```text
+W_a^dag W_a = W_b^dag W_b = I,
+W_a^dag A W_a = G_f^op,
+-W_b^dag C W_b = G_f^op,
+A W_a = W_a G_f^op,
+C W_b = -W_b G_f^op,
+eig_phys(A) = eig_phys(-C) = 2 exp(-2 E).
+```
 
-This note handles that obstruction rather than dodging it. The meson operator on Fock
-space is the number-conserving one-body operator `Ohat_meson = sum_{ab} V_ab c_a^dag c_b`
-(with `V_{(x,a),(y,c)} = U(x,y)_{ac}`). Then **`Ohat_meson|Omega> = 0`** (every
-annihilation `c_b` kills the empty Fock vacuum) — the runner verifies this **exactly**
-(`||F|Omega>|| = 0`, computed by genuine Jordan-Wigner occupation-number action, not
-assumed). The naive single matrix element `<Omega| Ohat_meson^dag T Ohat_meson |Omega>`
-is therefore trivially zero.
+Thus the `C_BLOCK=2` normalization and both particle/hole eigenvector identifications
+are recovered from the same full matrix, rather than assumed inside the meson
+contraction. For a position-color meson matrix `V`, the claimed Grassmann observable is
+`F_L=bar(chi)_+ L_U(V) chi_+`, with `L_U(V)=W_b V W_a^dag`. The isometries are obtained
+once per background, before `V` is supplied, so this is a common block-field
+identification rather than an observable-by-observable fit. The full normalized
+four-field Gaussian integral is evaluated
+as the explicit Wick minor
 
-The **correct OS object is the meson two-point correlator** `<Theta(F) F>`, a connected
-4-fermion correlator. By OS positivity
-`<Theta(F) F>_connected = Tr[V^dag G_f V G_f] = sum_{j,k} |(Q^dag V Q)_{jk}|^2 (C_BLOCK e^{-2 E_j})(C_BLOCK e^{-2 E_k}) >= 0`
--- the free connected quark-antiquark one-loop, both legs forward-propagating after the
-OS reflection sends the `chibar` leg to the image half. (It is **not** a vacuum sum
-`sum_n |<n| Ohat_meson |0>|^2`, which vanishes since `Ohat_meson|0> = 0`.) The runner confirms
-`<Theta(F) F>` is **nonzero** (minimum over the meson basis `0.06`–`0.87` depending on
-carrier) and equals the operator connected quark-line loop `Tc = Tr[V^dag G_f V G_f]`. This
-is the standard lattice meson spectroscopy via the transfer matrix (Lüscher 1977;
-Osterwalder–Seiler 1978; Montvay–Münster Ch. 3; Smit §6).
+```text
+sum_{p,q,k,l} conj(L_I[p,q]) L_J[k,l]
+  det [[ S_U[-p,-q], S_U[-p,+k] ],
+       [ S_U[+l,-q], S_U[+l,+k] ]].
+```
 
-The OS sign is load-bearing: with the staggered `gamma_0`-type reflection
-`Theta(chi) = -bar(chi)` (the convention fixed by reflection = adjoint, not a free
-parameter), the full meson correlator `<Theta(F) F>` is positive over the meson basis
-**and** over random meson `V`; the opposite sign gives negative values. The runner
-reports the averaged meson Gram as positive-semidefinite and the connected loop as
-`>= 0` for any `V`.
+Subtracting the first (disconnected) determinant term leaves the connected correlator
+
+```text
+-sum_{p,q,k,l} conj(L_I[p,q]) L_J[k,l]
+    C[p,k] A[l,q],
+```
+
+which is compared independently with `Tr[V_I^dag G_f^op V_J G_f^op]`. An explicit
+permutation implementation of Wick's theorem is separately checked against the `2 x 2`
+minor ordering. The correct one-field reflection `Theta(chi)=-bar(chi)` makes `A` and
+`-C` positive on their physical subspaces; reversing it makes the entire physical
+one-field spectrum negative. A meson bilinear contains two reflected fields, so its
+global sign alone cannot choose this convention; the one-field block check does.
+
+The same `slogdet(M_U)` weights both the direct-minor and operator averages. Across the
+listed carriers the worst fixed-background direct-minor/operator residual is
+`5.14e-12`, the worst determinant-weighted average residual is `5.39e-14`, the worst
+particle/hole eigenvector-intertwining residual is `3.13e-12`, and all determinant
+phase residuals are below `3.5e-15`.
 
 ## Scope (honest — what is delivered vs open)
 
-- **Number-conserving meson observable — delivered (finite carrier).** The
-  gauge-invariant, number-conserving meson bilinear `F = chibar(x) U(x,y) chi(y)` is the
-  observable here. The vacuum-annihilation obstruction is handled (control **K1**):
-  `Ohat_meson|Omega> = 0` exactly, yet the meson two-point `<Theta(F) F>` is nonzero and
+- **Number-conserving meson block representative — delivered (finite carrier).** The
+  observable is `F_L=bar(chi)_+ W_b V W_a^dag chi_+`, the 2-step representative of the
+  gauge-invariant operator `Fhat_V=c^dag V c` with Wilson-line matrix `V`. A raw
+  single-slice `bar(chi)_0 V chi_0` equality is outside the claim. The
+  vacuum-annihilation obstruction is handled (control **K1**):
+  `Ohat_meson|Omega> = 0` exactly, yet the meson two-point `<Theta(F_L) F_L>` is nonzero and
   equals the operator particle-hole connected quark-line loop. This addresses the scope
   limitation the base note left open on the finite carrier.
 - **Multi-spatial-dimensional SU(3) — delivered (finite carrier).** The meson equality is
@@ -177,19 +194,19 @@ The runner reports, for every carrier:
 
 - **K1 — vacuum-annihilation handled (decisive).** `Ohat_meson|Omega> = 0` exactly
   (`||F|Omega>|| = 0`, via genuine Jordan-Wigner occupation action) **and** the meson
-  two-point `<Theta(F) F>` is nonetheless **NONZERO** (min over the meson basis `0.06`–`0.87`)
+  two-point `<Theta(F_L) F_L>` is nonetheless **NONZERO** (min over the meson basis `0.06`–`0.87`)
   and equals the operator particle-hole connected quark-line loop. Proves the obstruction is
   handled, not papered over.
 - **K2 — per-mode-factorized Berezin BREAKS.** On a mode-mixing carrier (non-uniform
   links lifting the spatial-mode degeneracy), replacing the genuine (non-diagonal)
   forward block propagator `G_f` by its per-mode-diagonal restriction (the prior-vacuity
   object) **breaks** the meson equality: worst `|G_ber_permode − G_op|` is **large**
-  (`0.73` for SU(3) 2×2×1, `0.22` for U(1) 2×2×1). On the *degenerate* minimal carrier the
+  (`0.46` for SU(3) 2×2×1, `0.27` for U(1) 2×2×1). On the *degenerate* minimal carrier the
   reconstructed propagator is diagonal and the per-mode object does **not** differ (gap
   `~5.3e-14`) — the explicit demonstration that the prior vacuity is the degenerate /
   mode-diagonal regime.
-- **K3 — det-weight.** Replacing the theorem's det-weighted `U`-average by a flat
-  `U`-average changes the target value (gap `0.04`–`0.06`). This proves the determinant
+- **K3 — det-weight.** Replacing the theorem's same-`M` det-weighted `U`-average by a flat
+  `U`-average changes the target value (gap `0.13`–`0.34`). This proves the determinant
   weight is load-bearing for the stated measure; it is not a claim that the two code paths
   would disagree if both were intentionally evaluated with the same flat measure.
 - **K4 — single-step.** The single-step (no 2-step blocking) reflected metric is
@@ -197,12 +214,14 @@ The runner reports, for every carrier:
   tested construction), so it cannot equal the positive operator sandwich used by this
   representation. This is a negative control for the runner, not a repo-wide
   impossibility theorem.
-- **K5 — gauge invariance.** `F = chibar(x) U(x,y) chi(y)` is invariant under SU(3)/U(1)
-  gauge transforms at the endpoints (a genuine color singlet): under
+- **K5 — gauge invariance.** The Wilson-line matrix `V(U)` is covariant under SU(3)/U(1)
+  endpoint transformations, and the cross-kernel isometries transform with the same
+  one-particle action. Consequently `F_L` is a color singlet. Under
   `chi(y) -> g_y chi(y)`, `chibar(x) -> chibar(x) g_x^dag`,
   `U(x,y) -> g_x U(x,y) g_y^dag`, `F` is unchanged. The runner verifies (a) the
   Wilson-line covariance `g_x U(x,y) g_y^dag = U_g(x,y)` to `~1e-16`, and (b) the meson
-  two-point `<Theta(F) F>` is invariant under random gauge transforms to `~1e-15`.
+  direct-minor two-point `<Theta(F_L) F_L>` is invariant under random gauge transforms
+  to `~1e-15`.
 
 Positive results: the per-config Berezin = operator meson instance holds to `~1e-12`
 (**P1**); the det-weighted finite-sample average to `~1e-12` (**P0**); the forward block
@@ -213,34 +232,26 @@ block metric spectrum (a single `(Lt · N_s · N_c)`-dimensional matrix inverse,
 independent Berezin build) — all agreeing to `~1e-12`; and `det(M[U]) > 0` over the whole
 `U`-quadrature.
 
-### Worst residuals (deterministic, single-seed; `SCORECARD PASS=64 FAIL=0`)
+### Worst residuals (deterministic, single-seed; `SCORECARD PASS=116 FAIL=0`)
 
 | Carrier (spatial × N_c) | Object | worst residual / value |
 |---|---|---|
-| SU(3) 2×2×1 (4 sites, 12 modes) | **det-weighted finite-sample avg** Berezin == operator meson (the headline; multi-dim SU(3)) | `6.2e-13` |
-| SU(3) 2×2×1 | per-config Berezin (4-ferm) == operator meson | `2.6e-12` |
-| SU(3) 2×2×1 | **K1** `\|\|F\|Omega>\|\|` (vacuum annihilation; must be `0`) / min `<Theta(F)F>` (must be `>0`) | `0.0` / `0.41` |
+| SU(3) 2×2×1 (4 sites, 12 modes) | **same-M det-weighted finite-sample avg** direct Wick minor == operator meson (the headline; multi-dim SU(3)) | `5.39e-14` |
+| SU(3) 2×2×1 | per-config same-M Berezin minor (4-ferm) == operator meson | `2.65e-12` |
+| SU(3) 2×2×1 | **K1** `\|\|Fhat_V\|Omega>\|\|` / min `<Theta(F_L)F_L>` | `0.0` / `0.41` |
 | SU(3) 2×2×1 | full-spacetime `M^{-1}` block spectrum vs operator `e^{-2E}` | `2.6e-12` |
-| SU(3) 2×2×1 | **K2** per-mode gap / **K3** flat-vs-det gap / **K4** single-step min eig / **K5** gauge inv | `0.73` / `0.06` / `-0.55` / `1.0e-15` |
-| SU(3) 2×1×1 (2 sites, 6 modes) | det-weighted finite-sample avg Berezin == operator meson | `2.4e-12` |
-| SU(3) 2×1×1 | per-config Berezin (4-ferm) == operator meson | `5.1e-12` |
-| U(1) 2×2×1 (4 sites, 4 modes) | det-weighted finite-sample avg Berezin == operator meson | `2.8e-14` |
-| U(1) 2×2×1 | **K1** min `<Theta(F)F>` (nonzero) / **K2** per-mode gap (mixing) | `0.06` / `0.22` |
-| U(1) 2×1×1 (minimal; DEGENERATE) | det-weighted avg Berezin == operator meson | `5.3e-14` |
-| U(1) 2×1×1 (minimal) | **K2** per-mode gap (degenerate ⇒ no mixing ⇒ no break) | `5.3e-14` |
+| SU(3) 2×2×1 | same-M eigvec / explicit-Wick-vs-minor / det-phase / direct-minor gauge inv | `1.37e-12` / `1.11e-16` / `3.23e-15` / `1.78e-15` |
+| SU(3) 2×2×1 | **K2** per-mode gap / **K3** flat-vs-det gap / **K4** single-step min eig / **K5** gauge inv | `0.46` / `0.15` / `-0.55` / `1.78e-15` |
+| SU(3) 2×1×1 (2 sites, 6 modes) | same-M det-weighted finite-sample avg direct minor == operator meson | `8.37e-16` |
+| SU(3) 2×1×1 | per-config same-M Berezin minor (4-ferm) == operator meson | `5.14e-12` |
+| U(1) 2×2×1 (4 sites, 4 modes) | same-M det-weighted finite-sample avg direct minor == operator meson | `1.78e-15` |
+| U(1) 2×2×1 | **K1** min `<Theta(F_L)F_L>` / **K2** per-mode gap (mixing) | `0.06` / `0.27` |
+| U(1) 2×1×1 (minimal; DEGENERATE) | same-M det-weighted avg direct minor == operator meson | `8.35e-17` |
+| U(1) 2×1×1 (minimal) | **K2** per-mode gap (degenerate ⇒ no mixing ⇒ no break) | `1.11e-16` |
 
-The worst `|Berezin − operator|` over the gauge-invariant meson basis is `5.1e-12`
+The worst `|Berezin − operator|` over the gauge-invariant meson basis is `5.14e-12`
 (SU(3) 2×1×1 per-config). The exact worst residuals and control gaps are printed by the
 runner.
-
-**On the minimal degenerate carrier.** The U(1) 2×1×1 (2-site, 1-color) carrier has
-*degenerate* spatial modes, so the reconstructed forward block propagator collapses to a
-multiple of the identity (off-diagonal `0`) — exactly the prior-note vacuity regime. There
-the per-mode-factorized object does **not** differ from the genuine one (K2 gap `~5.3e-14`):
-this is reported as the explicit demonstration that the prior vacuity is precisely the
-*degenerate / mode-diagonal* regime. The decisive K2 break is carried by the **mixing**
-carriers — U(1) 2×2×1 and the SU(3) carriers — where the non-uniform links lift the
-degeneracy and the reconstructed propagator is genuinely non-diagonal.
 
 ## What is cited (standard methodology) vs derived (in-repo)
 
@@ -264,15 +275,16 @@ the transfer matrix is cited.
 **Derived in-repo** — the load-bearing new finite-carrier content:
 
 - the explicit dual computation that the **det-weighted finite-sample/quadrature**
-  reflected Berezin **meson two-point correlator** `<Theta(F) F>` of the gauge-invariant,
-  **number-conserving** meson bilinear `F = chibar(x) U(x,y) chi(y)` **equals** the
+  reflected Berezin correlator `<Theta(F_L) F_L>` of the OS-block representative
+  `L_U(V)=W_b V W_a^dag` for the gauge-invariant, **number-conserving** Wilson-line
+  meson operator `Fhat_V=c^dag V c` **equals** the
   operator transfer-matrix meson two-point (the particle-hole connected quark-line loop) on a
   finite 3+1 carrier, with the staggered `eta_1(t) = (-1)^t` 2-step bookkeeping under
-  `theta(t, x_vec) = (-1 - t, x_vec)`, via separate Berezin block-kernel and Fock
-  transfer-kernel builds feeding the same connected loop, with `det(M[U])` **actually
+  `theta(t, x_vec) = (-1 - t, x_vec)`, via a direct same-`M` four-field covariance minor
+  and an independent Fock transfer-kernel loop, with that same `det(M[U])` **actually
   applied** to the `U`-average;
 - the **correct handling of the vacuum-annihilation obstruction**: `Ohat_meson|Omega> = 0`
-  (verified exactly) yet `<Theta(F) F>` nonzero and equal to the connected quark-line loop;
+  (verified exactly) yet `<Theta(F_L) F_L>` nonzero and equal to the connected quark-line loop;
 - the five controls K1–K5 establishing the test is non-vacuous and the observable is a
   genuine gauge singlet (vacuum-annihilation handled; per-mode-factorized **breaks**;
   flat no-det differs from the det-weighted target; single-step indefiniteness control
@@ -296,15 +308,16 @@ the temporal-link reflection `theta(t, x_vec) = (-1 - t, x_vec)` and staggered p
 `eta_0 = 1`, `eta_mu(n) = (-1)^{n_0 + ... + n_{mu-1}}`:
 
 **Representation theorem, gauge-invariant meson sector (finite carrier).** For the basis
-of gauge-invariant, number-conserving meson bilinears `F = chibar(x) U(x,y) chi(y)`
-(Wilson-line transported staggered mesons) on the 2-step block, the **det-weighted finite
+of gauge-invariant Wilson-line matrices `V(U)`, let
+`F_L=bar(chi)_+ W_b(U)V(U)W_a(U)^dag chi_+` be the common 2-step block-field
+representative of `Fhat_V=c^dag V c`. For this representative, the **det-weighted finite
 Haar-sample/quadrature** reflected Berezin **meson two-point correlator** equals the
 matching operator-side transfer-matrix meson two-point,
 
 ```text
-   (1/Z_Q) sum_{U in Q} e^{-S_G[U]} det(M[U]) <Theta(F) F>^ferm_U
-       = G_operator,Q(F,F) ,
-   <Theta(F) F>^ferm connected  =  Tr[ V^dag G_f V G_f ]
+   (1/Z_Q) sum_{U in Q} e^{-S_G[U]} det(M[U]) <Theta(F_L) F_L>^ferm_U
+       = G_operator,Q(V,V) ,
+   <Theta(F_L) F_L>^ferm connected  =  Tr[ V^dag G_f V G_f ]
                                 =  sum_{j,k} |(Q^dag V Q)_{jk}|^2 (C_BLOCK e^{-2 E_j})(C_BLOCK e^{-2 E_k})  >= 0 ,
 ```
 
@@ -315,10 +328,11 @@ second-quantized one-body staggered Hamiltonian in the position-color basis, and
 `V_{(x,a),(y,c)} = U(x,y)_{ac}` is the meson one-body matrix (a genuine color singlet).
 Although `Ohat_meson|Omega> = 0`, the connected meson two-point is the manifestly-positive
 Gram `|| G_f^{1/2} V G_f^{1/2} ||_F^2` = the particle-hole connected quark-line loop. The
-runner verifies this on explicit carriers (`Lt = 2*14` bulk slices for the block-metric
-decay; `N_c = 1` on the `2 x 2 x 1` sheet and the minimal `2 x 1 x 1`, and `N_c = 3` on
-both the `2 x 2 x 1` sheet and the `2 x 1 x 1` carrier; `m = 0.5`), per configuration and
-on the det-weighted finite-sample/quadrature average, to `~1e-12`.
+runner verifies this on explicit carriers (`Lt = 2*14 = 28` slices for the single matrix
+supplying both determinant and minor; `N_c = 1` on the `2 x 2 x 1` sheet and the minimal
+`2 x 1 x 1`, and `N_c = 3` on both the `2 x 2 x 1` sheet and the `2 x 1 x 1` carrier;
+`m = 0.5`), per configuration and on the det-weighted finite-sample/quadrature average,
+to `~1e-12`.
 
 This meson equality is the gauge-invariant, number-conserving instance of the
 Lüscher/Osterwalder–Seiler transfer-matrix meson-spectroscopy **representation** theorem
@@ -353,12 +367,14 @@ Source-surface bounded theorem. The new load-bearing content is the explicit **d
 computation** in the **gauge-invariant, number-conserving meson** sector — the det-weighted
 finite-sample/quadrature reflected Berezin meson two-point correlator versus the matching
 operator transfer-matrix meson two-point (the free connected quark-line loop
-`Tr[V^dag G_f V G_f]`), computed by separate code paths and asserted equal (worst `5.1e-12`,
-gate `1e-9`) on finite 3+1 carriers. For the meson observable the two paths feed the
-identical connected contraction `Tr[V^dag G_f V G_f]`; the load-bearing **independent**
-content is the forward block-propagator identity `G_f^Berezin == G_f^operator`, verified
-three independent ways (per-mode temporal-chain `M^{-1}`, Fock `e^{-2 Hhat}`, and a
-full-spacetime `M[U]^{-1}` block-metric spectrum), from which the meson equality follows — together with the correct vacuum-annihilation handling and the five controls
+`Tr[V^dag G_f V G_f]`), computed by separate code paths and asserted equal (worst
+`5.14e-12`, gate `1e-9`) on finite 3+1 carriers. The Berezin path evaluates the connected
+part of the explicit `2 x 2` Wick minor after lifting `V` with two temporal isometries
+extracted from the full inverse; it does not call the reduced trace. The same full
+`M[U]` supplies the determinant weight. The load-bearing independent content includes
+the sign, normalization, spectrum, and eigenvector-intertwining checks that identify both
+cross kernels with `G_f^operator`, followed by the direct four-field minor comparison —
+together with the correct vacuum-annihilation handling and the five controls
 (vacuum-annihilation handled; per-mode-factorized **breaks**; flat no-det differs from
 the det-weighted target; single-step indefiniteness control fires; gauge invariance
 verified). The general form of the equality is the
@@ -375,7 +391,7 @@ What this can support after independent review:
 
 - the interacting reflection-positivity program can cite this note for the finite-carrier
   **gauge-invariant, number-conserving meson** representation equality (det-weighted,
-  connected four-field contraction through the runner's Berezin block kernel,
+  connected same-matrix four-field Wick minor,
   finite-sample/quadrature averaged, vacuum-annihilation handled) in the 2-step blocked
   staggered transfer matrix, as one ingredient of the
   conditional bridge — with the continuum reconstruction, the Wilson-boundary (H1)
@@ -407,34 +423,6 @@ a **genuinely load-bearing** upstream dependency here.
   `det(M_KS + m I) >= m^n > 0` config-by-config. It is the gauge-measure weight that this
   note's det-weighted `U`-average **actually applies**, so it is a load-bearing dependency.
 
-## Citation-graph note
-
-The following are context / sibling rows whose construction this note restates
-self-contained, not upstream load-bearing premises; following the existing RP notes'
-citation-graph convention they are written as plain-text backtick filenames so the
-citation-graph builder does not parse them as upstream dependency edges:
-
-- `MIXED_ENTANGLED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md` — the on-main
-  base note that established the det-weighted Berezin = operator equality for a
-  Wilson-line-transported **single-creation** bilinear, and explicitly left the
-  **number-conserving** four-fermion `chibar U chi` observable (and genuine
-  multi-spatial-dimensional SU(3)) **open**; this note addresses both finite-carrier steps
-  for the meson observable, handling the vacuum-annihilation obstruction.
-- `MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md` — the prior fermion-sector
-  note on main.
-- `RP_MIXED_OBSERVABLE_SINGLE_TRANSFER_MATRIX_NARROW_THEOREM_NOTE_2026-05-29.md` — the prior
-  **assembly** lemma (`T_full = W^dag W` once posited).
-- `AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md` — the 2-step blocked
-  free-case construction this note's representation equality reuses.
-- `RP_P2_GAUGE_EXTENSION_AND_REALIZATION_RESIDUAL_NOTE_2026-05-28.md` — the fixed-background
-  per-configuration positivity (anti-Hermitian-hop modal reduction) reused here for the
-  per-config fermion sector.
-- The Wilson temporal-gauge transfer-kernel positivity (H1) is developed on the separate
-  not-yet-merged branch `claude/wilson-su3-gauge-transfer-kernel-positivity-2026-05-30`; it
-  is named here in plain text only and is context, not an on-main dependency edge.
-- `MINIMAL_AXIOMS_2026-06-04.md` — Lattice + Quantum + Record baseline surface, named as
-  setup context only.
-
 ## Validation
 
 Primary runner:
@@ -445,25 +433,32 @@ verifies, with `numpy` linear algebra on finite 3+1 carriers (single-seed determ
   per mode with `C_BLOCK = 2` a priori (worst `~1e-12`), confirmed three independent ways —
   per-mode temporal-chain block metric (`M^{-1}`), operator Fock `e^{-2 Hhat}`, and the
   full-spacetime `M[U]^{-1}` block-metric spectrum;
+- **P_same-M:** one `Lt=28` matrix supplies `slogdet(M)` and the raw inverse used in the
+  four-field minor; its particle/hole cross blocks are Hermitian, mode-block-diagonal,
+  have normalization `2 exp(-2E)`, and intertwine with the operator kernel through two
+  orthonormal temporal isometries. The explicit permutation Wick sum agrees with the
+  `2 x 2` covariance determinant to `1.7e-16`, and the wrong one-field reflection sign
+  makes the physical cross-kernel spectra negative;
 - **K1 — vacuum-annihilation handled:** `||Ohat_meson|Omega>|| = 0` exactly (genuine
-  Jordan-Wigner occupation action) **and** the meson two-point `<Theta(F) F>` is nonzero
+  Jordan-Wigner occupation action) **and** the meson two-point `<Theta(F_L) F_L>` is nonzero
   (min over basis `0.06`–`0.87`) and equals the operator connected quark-line loop;
-- **P1 — per-config genuine meson dual:** Berezin connected four-field loop through the
-  Grassmann block kernel == operator (Fock `e^{-2 Hhat}` block loop) for the
-  gauge-invariant meson basis, worst `~1e-12`;
+- **P1 — per-config genuine meson dual:** the connected part of the direct same-`M`
+  four-field Wick minor == operator (Fock `e^{-2 Hhat}` block loop) for the
+  gauge-invariant meson basis, worst `5.14e-12`;
 - **P0 — det-weighted finite-sample/quadrature dual (the headline):** the det-weighted
-  finite `U`-average of the reflected meson two-point equals the operator meson two-point,
-  worst `6.2e-13` (gate `1e-9`);
+  finite `U`-average of the direct minor equals the operator meson two-point, with the
+  same `Lt=28` determinant on both sides, worst `5.39e-14` (gate `1e-9`);
 - **Ppos — OS positivity:** the averaged meson Gram is positive-semidefinite and the
   connected loop `>= 0` over random meson `V`;
-- **Pdet:** `det(M[U]) > 0` over the whole `U`-quadrature;
+- **Pdet:** the same-`M` determinant has positive phase over the whole `U`-quadrature
+  (worst phase residual `3.5e-15`);
 - **herm:** the averaged meson Gram is Hermitian to `~1e-17` (cited reflection = adjoint
   property);
 - **K2 — per-mode-factorized Berezin BREAKS** the meson equality on the mixing carriers
-  (gap `0.73` SU(3) 2×2×1, `0.22` U(1) 2×2×1); on the degenerate minimal carrier it
-  consistently does not break (gap `~5.3e-14`, the prior-vacuity regime);
+  (gap `0.46` SU(3) 2×2×1, `0.27` U(1) 2×2×1); on the degenerate minimal carrier it
+  consistently does not break (gap `~1.1e-16`, the prior-vacuity regime);
 - **K3 — flat (no-det) `U`-average differs from the det-weighted target** (gap
-  `0.04`–`0.06`);
+  `0.13`–`0.34`);
 - **K4 — single-step block-metric is indefinite** (min eig `< 0`);
 - **K5 — gauge invariance:** the Wilson-line covariance `g_x U g_y^dag = U_g` to `~1e-16`
   and the meson two-point invariance under random gauge transforms to `~1e-15`.
@@ -474,27 +469,4 @@ Reproduction:
 python3 scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
 ```
 
-Expected scorecard: `SCORECARD PASS=64 FAIL=0`.
-
-## 2026-06-06 Source Packet Re-audit Repair
-
-This repair responds to the artifact-completeness blocker asking for the
-complete primary runner source, or a source-hash-pinned runner artifact. It
-does not promote this row or change the bounded source-surface claim boundary;
-independent audit owns any ledger/status movement.
-
-The restricted packet now exposes:
-
-- [`scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py`](../scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py)
-- [`logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt`](../logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt)
-- [`scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py`](../scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py)
-- [`logs/runner-cache/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.txt`](../logs/runner-cache/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.txt)
-- [`outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json`](../outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json)
-
-The manifest checks that the note names the primary runner/cache, that the
-source is complete and contains the load-bearing functions
-`block_metric_per_mode`, `block_fwd_propagator_berezin`,
-`block_metric_spacetime_eigs`, `meson_correlator_full_berezin`, and
-`u_averaged_meson`, and that the cache header is SHA-fresh against the current
-runner source. It also checks the cached scorecard snippets for `P_block`, `P1`,
-`P0`, `K2`, `K5`, and `SCORECARD PASS=64 FAIL=0`.
+Expected scorecard: `SCORECARD PASS=116 FAIL=0`.

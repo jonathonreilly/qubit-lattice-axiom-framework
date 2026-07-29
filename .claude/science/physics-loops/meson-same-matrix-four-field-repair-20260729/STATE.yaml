@@ -1,0 +1,37 @@
+loop_slug: meson-same-matrix-four-field-repair-20260729
+mode: run
+target_status: candidate-retained-grade bounded_theorem pending independent audit
+current_cycle: 1
+science_block: block01
+branch: claude/science-fix/meson_gauge_invariant_os_transfer_representation_bounded_not-8b83308a
+base_commit: 518fc8d67a5c3452b5d3fff94a9e553d119e2b88
+skill_freshness: "origin fetch unavailable because managed worktree cannot write shared FETCH_HEAD; complete local physics-loop skill used"
+lock_status: "clean dedicated science-fix worktree; shared lock skipped because no concurrent writer is present"
+active_route: full_spacetime_same_matrix_wick_minor
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: "finite listed-carrier theorem with explicit finite quadratures/samples and no observational target input"
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+strongest_result: "one Lt=28 M[U] supplies both slogdet weight and an explicit connected four-field Wick minor agreeing with the independent operator loop"
+strongest_residual: "fixed-background same-M minor/operator residual 5.14e-12; weighted-average residual 5.39e-14"
+open_imports: []
+files_touched:
+  - docs/MESON_GAUGE_INVARIANT_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
+  - scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
+  - scripts/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.py
+  - scripts/meson_os_transfer_source_packet_manifest_2026_06_06.py
+  - logs/runner-cache/meson_gauge_invariant_os_transfer_representation_2026-05-30.txt
+  - logs/runner-cache/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.txt
+  - logs/runner-cache/meson_os_transfer_source_packet_manifest_2026_06_06.txt
+  - outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json
+  - outputs/meson_os_transfer_source_packet_manifest_2026_06_06.json
+review_disposition: pending
+pr_status: "not attempted; managed worktree Git metadata is outside writable roots"
+next_exact_action: "run repository review-loop, address findings, then complete the certificate and handoff"
+stop_condition: "requested single audit repair is verified and review-loop passes"

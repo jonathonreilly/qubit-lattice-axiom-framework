@@ -10,7 +10,7 @@
     "manifest_json": "outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json"
   },
   "summary": {
-    "pass": 29,
+    "pass": 36,
     "fail": 0
   },
   "results": [
@@ -57,7 +57,7 @@
     {
       "name": "source_full_length:primary_runner",
       "pass": true,
-      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py has 47163 bytes"
+      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py has 59245 bytes"
     },
     {
       "name": "source_contains:primary_runner:def block_metric_per_mode",
@@ -75,14 +75,29 @@
       "detail": "def block_metric_spacetime_eigs present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
     },
     {
+      "name": "source_contains:primary_runner:def full_grassmann_packet",
+      "pass": true,
+      "detail": "def full_grassmann_packet present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
       "name": "source_contains:primary_runner:def meson_correlator_full_berezin",
       "pass": true,
       "detail": "def meson_correlator_full_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
     },
     {
+      "name": "source_contains:primary_runner:def normalized_gauge_weights",
+      "pass": true,
+      "detail": "def normalized_gauge_weights present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
       "name": "source_contains:primary_runner:def u_averaged_meson",
       "pass": true,
       "detail": "def u_averaged_meson present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "source_contains:primary_runner:def u_averaged_full_berezin",
+      "pass": true,
+      "detail": "def u_averaged_full_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
     },
     {
       "name": "source_contains:primary_runner:det(M[U]) is ACTUALLY applied",
@@ -102,7 +117,7 @@
     {
       "name": "cache_sha_fresh:primary_cache",
       "pass": true,
-      "detail": "cache sha ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5 current sha ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5"
+      "detail": "cache sha 3fae975401ab9fdabd330edfc36a1d0a4c691da02e840b64abb1135113dc7884 current sha 3fae975401ab9fdabd330edfc36a1d0a4c691da02e840b64abb1135113dc7884"
     },
     {
       "name": "cache_exit_ok:primary_cache",
@@ -120,19 +135,39 @@
       "detail": "P_block : Gf Berezin(M^-1) vs operator(e^-2H)"
     },
     {
-      "name": "cache_contains:primary_cache:P1      : per-config Berezin(4-ferm) == operator meson",
+      "name": "cache_contains:primary_cache:SAME-M  : independently recovered C_BLOCK-2",
       "pass": true,
-      "detail": "P1      : per-config Berezin(4-ferm) == operator meson"
+      "detail": "SAME-M  : independently recovered C_BLOCK-2"
     },
     {
-      "name": "cache_contains:primary_cache:P0      : det-weighted avg Berezin == operator meson",
+      "name": "cache_contains:primary_cache:SIGN    : wrong reflection physical max eig",
       "pass": true,
-      "detail": "P0      : det-weighted avg Berezin == operator meson"
+      "detail": "SIGN    : wrong reflection physical max eig"
+    },
+    {
+      "name": "cache_contains:primary_cache:P1      : per-config SAME-M Wick minor == operator loop",
+      "pass": true,
+      "detail": "P1      : per-config SAME-M Wick minor == operator loop"
+    },
+    {
+      "name": "cache_contains:primary_cache:P0      : SAME-M det-weighted Wick-minor avg == operator",
+      "pass": true,
+      "detail": "P0      : SAME-M det-weighted Wick-minor avg == operator"
+    },
+    {
+      "name": "cache_contains:primary_cache:Pdet    : det phase residual / min log|det|",
+      "pass": true,
+      "detail": "Pdet    : det phase residual / min log|det|"
     },
     {
       "name": "cache_contains:primary_cache:K2 BREAK: per-mode-factorized Berezin gap",
       "pass": true,
       "detail": "K2 BREAK: per-mode-factorized Berezin gap"
+    },
+    {
+      "name": "cache_contains:primary_cache:K5 GAUGE: SAME-M Wick-minor invariance under g",
+      "pass": true,
+      "detail": "K5 GAUGE: SAME-M Wick-minor invariance under g"
     },
     {
       "name": "cache_contains:primary_cache:K5 GAUGE: Wilson-line covariance residual",
@@ -145,9 +180,9 @@
       "detail": "This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator"
     },
     {
-      "name": "cache_contains:primary_cache:SCORECARD PASS=64 FAIL=0",
+      "name": "cache_contains:primary_cache:SCORECARD PASS=116 FAIL=0",
       "pass": true,
-      "detail": "SCORECARD PASS=64 FAIL=0"
+      "detail": "SCORECARD PASS=116 FAIL=0"
     },
     {
       "name": "note_has_source_packet_reaudit_section",

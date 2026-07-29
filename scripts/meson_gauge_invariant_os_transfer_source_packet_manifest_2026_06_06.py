@@ -34,8 +34,11 @@ REQUIRED_SOURCE_FRAGMENTS = [
     "def block_metric_per_mode",
     "def block_fwd_propagator_berezin",
     "def block_metric_spacetime_eigs",
+    "def full_grassmann_packet",
     "def meson_correlator_full_berezin",
+    "def normalized_gauge_weights",
     "def u_averaged_meson",
+    "def u_averaged_full_berezin",
     "det(M[U]) is ACTUALLY applied",
     "print(f\"SCORECARD PASS={npass} FAIL={nfail}\")",
 ]
@@ -43,12 +46,16 @@ REQUIRED_SOURCE_FRAGMENTS = [
 EXPECTED_CACHE_SNIPPETS = [
     "status: ok",
     "P_block : Gf Berezin(M^-1) vs operator(e^-2H)",
-    "P1      : per-config Berezin(4-ferm) == operator meson",
-    "P0      : det-weighted avg Berezin == operator meson",
+    "SAME-M  : independently recovered C_BLOCK-2",
+    "SIGN    : wrong reflection physical max eig",
+    "P1      : per-config SAME-M Wick minor == operator loop",
+    "P0      : SAME-M det-weighted Wick-minor avg == operator",
+    "Pdet    : det phase residual / min log|det|",
     "K2 BREAK: per-mode-factorized Berezin gap",
+    "K5 GAUGE: SAME-M Wick-minor invariance under g",
     "K5 GAUGE: Wilson-line covariance residual",
     "This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator",
-    "SCORECARD PASS=64 FAIL=0",
+    "SCORECARD PASS=116 FAIL=0",
 ]
 
 

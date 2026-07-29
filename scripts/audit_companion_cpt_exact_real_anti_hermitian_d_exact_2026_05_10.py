@@ -19,21 +19,21 @@ verification:
 
   (a) builds two distinct concrete instances:
       (i)  a small 2x2 abstract anti-Hermitian real D with explicit C, P, T;
-      (ii) a constructed 4-dim instance whose D, C, P satisfy all three
-           premises (cleanly demonstrating the algebra; not a literal Cl(3)
-           lattice replica, see parent runner for that);
+      (ii) a four-dimensional bipartite mirror-chain witness whose D, C, P
+           satisfy all three premises (not a cubic Cl(3) lattice model);
   (b) verifies (1), (2), (3) as premise identities at exact sympy
       precision on each instance;
   (c) derives (C1) Theta D Theta^{-1} = D from (1), (2), (3) by exact
       symbolic substitution;
   (d) verifies the Hermitian-lift commutator [Theta_H, H] = 0 with
       Theta_H = P K;
-  (e) verifies the conditional C3 square check on the chosen instances,
-      where the extra C,P commutation/anticommutation algebra is explicit;
-  (f) verifies the counterfactual: a generic anti-Hermitian operator
+  (e) verifies the counterfactual: a generic anti-Hermitian operator
       with a non-real component does NOT satisfy (3), so the theorem's
       premise chain is unavailable even if a special example happens to
       remain composite-invariant.
+
+Theta-square claims and inversion-convention signs are intentionally absent;
+they belong to the separate C3 theorem and runner.
 
 Companion role: not a new claim row; provides audit-friendly evidence
 that the narrow theorem's load-bearing algebraic substitution holds at
@@ -42,7 +42,6 @@ this companion; their derivation on the specific staggered framework
 is the parent cpt_exact_note's responsibility.
 """
 
-from pathlib import Path
 import sys
 
 try:
@@ -51,11 +50,8 @@ try:
     from sympy import (
         Matrix,
         I as sym_I,
-        Rational,
         Symbol,
         eye,
-        simplify,
-        symbols,
         zeros,
     )
 except ImportError:
@@ -150,19 +146,13 @@ def main() -> int:
     D_abs = Matrix([[0, a], [-a, 0]])
 
     # Conjugation operators on this 2-dim space:
-    # C = [[0, 1], [1, 0]] = sigma_x (real, involutory, off-diagonal).
-    # This C satisfies CDC = -D because conjugating an off-diagonal
-    # antisymmetric matrix by sigma_x flips the off-diagonals.
-    # (sigma_x [[0,a],[-a,0]] sigma_x = [[0,-a],[a,0]] = -D.)
-    C_abs = Matrix([[0, 1], [1, 0]])
+    # C = diag(1, -1) = sigma_z is real, diagonal, and involutory.
+    # Conjugating D by sigma_z flips both off-diagonal entries.
+    C_abs = Matrix([[1, 0], [0, -1]])
 
-    # P = sigma_x as well, for premise (2). Same algebraic effect.
-    # Using two different "implementations" so that CP is nontrivial.
-    # We need C, P real involutions with CDC = -D and PDP = -D.
-    # For independence: take P = [[0, 1], [1, 0]] but with sign convention.
-    # Use P = diag(1, -1) = sigma_z.  sigma_z [[0,a],[-a,0]] sigma_z = ?
-    # sigma_z D sigma_z = [[0, -a],[a, 0]] = -D. Yes.
-    P_abs = Matrix([[1, 0], [0, -1]])
+    # P = sigma_x is a real involutory permutation. It also reverses the
+    # orientation of the antisymmetric two-site block, so P D P = -D.
+    P_abs = Matrix([[0, 1], [1, 0]])
 
     # T = complex conjugation (acts on matrices by conjugate_matrix; on
     # vectors by entrywise complex conjugation).
@@ -306,37 +296,11 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 5: conditional C3 square check on instance (i)")
+    section("Part 5: instance (ii) — four-dimensional bipartite mirror chain")
     # =========================================================================
-    # Theta = C P T. On vectors: Theta v = C P (v^*). Theta^2 v = C P (Theta v)^*
-    # = C P (C P v^*)^* = C P C^* P^* v = C P C P v (real C, P).
-    # = (CP)^2 v
-    # The note's conditional corollary says Theta^2 = s I with s in
-    # {+1, -1} only after the extra C,P commutation or anticommutation
-    # algebra is supplied.
-    CP = C_abs * P_abs
-    Theta_squared = CP * CP
-    # Instance (i) uses C = sigma_x, P = sigma_z. These satisfy {C, P} = 0.
-    # So we expect (CP)^2 = -I, i.e. s = -1.
-    CP_anticommutator = C_abs * P_abs + P_abs * C_abs
-    check(
-        "(C3.0a) instance (i): {C, P} == 0 (anticommute)",
-        matrix_eq(CP_anticommutator, zeros(2, 2)),
-        detail="C = sigma_x, P = sigma_z anticommute",
-    )
-    check(
-        "(C3) instance (i): Theta^2 == -I (scalar; s = -1 since {C,P} = 0)",
-        matrix_eq(Theta_squared, -eye(2)),
-        detail=f"(CP)^2 = {Theta_squared.tolist()}",
-    )
-
-    # =========================================================================
-    section("Part 6: framework-shaped instance (ii) — bipartite anti-Hermitian D")
-    # =========================================================================
-    # Construct a 4-dim instance with two-site bipartite structure that
-    # closes all three premises cleanly. The structure mimics the algebraic
-    # essence of staggered Cl(3) (a sublattice grading with anti-Hermitian
-    # nearest-neighbor hopping), at a tractable size.
+    # Construct a four-dimensional premise witness with two-site bipartite
+    # structure. It demonstrates the abstract algebra and is not presented as
+    # a cubic Cl(3) lattice construction.
     #
     # Sites x in {0, 1, 2, 3} with sublattice parity epsilon(x) = (-1)^x.
     # Pair the sites symmetrically: 0 <-> 1, 2 <-> 3, with real anti-symmetric
@@ -385,7 +349,7 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 7: premise identities on framework-shaped instance (ii)")
+    section("Part 6: premise identities on mirror-chain instance (ii)")
     # =========================================================================
 
     lhs1_lat = C_lat * D_lat * C_lat
@@ -412,7 +376,7 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 8: (C1) Theta D Theta^{-1} == D on framework instance (ii)")
+    section("Part 7: (C1) Theta D Theta^{-1} == D on instance (ii)")
     # =========================================================================
     D_lat_star = conjugate_matrix(D_lat)
     Theta_D_lat = C_lat * P_lat * D_lat_star * P_lat * C_lat
@@ -422,7 +386,7 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 9: (C2) [Theta_H, H] = 0 on framework instance (ii)")
+    section("Part 8: (C2) [Theta_H, H] = 0 on instance (ii)")
     # =========================================================================
     H_lat = sym_I * D_lat
     check(
@@ -437,27 +401,7 @@ def main() -> int:
     )
 
     # =========================================================================
-    section("Part 10: conditional C3 square check on framework instance (ii)")
-    # =========================================================================
-    # On instance (ii): C = diag((-1)^x), P = mirror inversion. [C, P] on
-    # site x: C P sends x -> L-1-x with eps(x), P C sends x -> L-1-x with
-    # eps(L-1-x). For L = 4: eps(0) = +1, eps(3) = -1; so C P |0> = +1 |3>,
-    # P C |0> = -1 |3>. These differ in sign => anticommute on some sites.
-    # In general (CP)^2 is still a diagonal matrix with entries (+/- 1)^2 = 1.
-    # Check directly.
-    CP_lat = C_lat * P_lat
-    Theta_sq_lat = CP_lat * CP_lat
-    # (CP)^2 may equal I or -I depending on (C, P) structure. Verify scalar.
-    is_scalar_plus = matrix_eq(Theta_sq_lat, eye(L))
-    is_scalar_minus = matrix_eq(Theta_sq_lat, -eye(L))
-    check(
-        "(C3) instance (ii): (CP)^2 == +I or -I (scalar)",
-        is_scalar_plus or is_scalar_minus,
-        detail=f"(CP)^2 = scalar; +I={is_scalar_plus}, -I={is_scalar_minus}",
-    )
-
-    # =========================================================================
-    section("Part 11: counterfactual probe — non-real D breaks (3)")
+    section("Part 9: counterfactual probe — non-real D fails premise (3)")
     # =========================================================================
     # If D has complex (not purely real) entries, premise (3) T D T = D fails.
     # Concretely: add an i*Hermitian piece to D so D' is still anti-Hermitian
@@ -467,10 +411,11 @@ def main() -> int:
 
     # Build D' = D + i Z with Z real symmetric. Then D'^dagger = D^T - i Z = -D - i Z
     # = -(D + i Z) = -D'. So D' is anti-Hermitian. But entries are complex.
-    # Pick Z = sigma_x (real-symmetric, but NOT preserving CDC = -D or PDP = -D
-    # because sigma_x anticommutes with sigma_z but commutes with sigma_x;
-    # so on this Z the C, P actions give different signs and the composite
-    # invariance fails).
+    # Pick Z = sigma_x (real-symmetric, but not preserving PDP = -D because
+    # it commutes with P = sigma_x). The individual premise fails even though
+    # this particular composite remains invariant by cancellation, so the
+    # example also checks that the theorem is stated only in the forward
+    # direction.
     Z = Matrix([[0, 1], [1, 0]])  # sigma_x: real symmetric, off-diagonal
     b = Symbol("b", real=True, positive=True)
     D_cf = D_abs + sym_I * b * Z
@@ -487,21 +432,19 @@ def main() -> int:
         detail="counterfactual confirms D-real is load-bearing for (3)",
     )
 
-    # The crucial counterfactual: with C = sigma_x, P = sigma_z and
-    # Z = sigma_x, we have C Z C = sigma_x sigma_x sigma_x = sigma_x = Z
-    # (not -Z), so premise (1) for D' is C D' C = -D + i b C Z C = -D + i b Z,
-    # which is NOT -D' = -D - i b Z. So premise (1) is broken for D'.
-    lhs1_cf = C_abs * D_cf * C_abs
-    rhs1_cf = -D_cf
+    # With C = sigma_z, P = sigma_x and Z = sigma_x, P Z P = Z rather than
+    # -Z. Thus premise (2) is broken for D'.
+    lhs2_cf = P_abs * D_cf * P_abs
+    rhs2_cf = -D_cf
     check(
-        "(cf.2a) D_cf breaks premise (1): C D' C != -D'",
-        matrix_neq(lhs1_cf, rhs1_cf),
-        detail="non-real D breaks (1) when iZ-piece commutes (rather than anticommutes) with C",
+        "(cf.2a) D_cf breaks premise (2): P D' P != -D'",
+        matrix_neq(lhs2_cf, rhs2_cf),
+        detail="the iZ piece commutes with P rather than changing sign",
     )
 
-    # Note: even when (1) and (3) fail individually for D_cf, the composite
+    # Note: even when (2) and (3) fail individually for D_cf, the composite
     # Theta D' Theta^{-1} may *still* equal D' by accidental cancellation
-    # (the i-piece flip from (3) failing can be reabsorbed by (1) failing in
+    # (the i-piece flip from (3) failing can be reabsorbed by (2) failing in
     # a compensating direction). This is itself a known CPT-theorem feature
     # (the composite can survive individual-premise failures via cancellation),
     # so we do NOT claim "premise failure => composite failure". The claim of
@@ -511,9 +454,8 @@ def main() -> int:
     Theta_D_cf = C_abs * P_abs * D_cf_star * P_abs * C_abs
     is_composite_invariant = matrix_eq(Theta_D_cf, D_cf)
     check(
-        "(cf.2b) note: composite Theta D' Theta^{-1} == D' even though (1) fails for D'",
-        # We just record the observation; this is NOT a 'fail premise => break composite' claim.
-        True,
+        "(cf.2b) composite Theta D' Theta^{-1} == D' even though (2) fails for D'",
+        is_composite_invariant,
         detail=(
             f"composite_invariant_on_D_cf={is_composite_invariant} "
             "— illustrating that premise failure does not strictly imply composite failure"
@@ -525,12 +467,12 @@ def main() -> int:
     # =========================================================================
     print("  Verified at exact sympy precision:")
     print("    Premise identities (1), (2), (3) on abstract 2x2 instance (i)")
-    print("    Premise identities (1), (2), (3) on bipartite L=4 instance (ii)")
+    print("    Premise identities (1), (2), (3) on a 4D mirror-chain instance (ii)")
     print("    (C1) Theta D Theta^{-1} = D on both instances")
     print("    Step-by-step substitution chain matches proof in note")
     print("    (C2) Hermitian-lift commutator [Theta_H, H] = 0 on both instances")
-    print("    Conditional C3 square checks close on both instances with explicit C,P algebra")
-    print("    Counterfactual: non-real D breaks premise (3); composite invariance is not inferable from the theorem")
+    print("    No C3 or Theta-square claim is evaluated in this C1-C2 runner")
+    print("    Counterfactual: non-real D fails premise (3); no converse claim is made")
 
     print()
     print("=" * 88)

@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-21T16:12:12.024012+00:00",
+  "audit_date": "2026-07-29T13:23:43.692054+00:00",
   "audit_invocation_history": [
-    "7b7d0df86d7142ad9eb74e20ef7fd9fc"
+    "7b7d0df86d7142ad9eb74e20ef7fd9fc",
+    "6f9ed4ab6f6943309f9e799b2cbbe7ba"
   ],
-  "audit_invocation_id": "7b7d0df86d7142ad9eb74e20ef7fd9fc",
+  "audit_invocation_id": "6f9ed4ab6f6943309f9e799b2cbbe7ba",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 0,
@@ -27,12 +28,12 @@
     "helper_runner_hashes": {
       "scripts/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.py": "d113fddd6935a1a5b67ed317e0fe6f511c8a7134e68a478e58ecb41e08c7e137"
     },
-    "load_bearing_score": 14.706,
+    "load_bearing_score": 14.735,
     "policy_versions": {
-      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -55,23 +56,23 @@
     "runner_path": "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
     "runner_present": true,
     "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 834
+    "transitive_descendants": 851
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260721-79692212",
+  "auditor": "codex-audit-batch-A-20260729-a870f0ca",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": true,
-  "chain_closure_explanation": "The representation-ring expansion, uniform absolute convergence, positive-kernel feature decomposition, and normalized integrated Gram factorization close the bounded theorem directly. No external authority or fitted input is load-bearing.",
+  "chain_closes": false,
+  "chain_closure_explanation": "The source presents an acyclic exact proof, but the restricted packet clips the primary runner inside load-bearing routines, so independent artifact verification is incomplete. The complete SHA-bound runner source is required to close the audit chain.",
   "claim_id": "axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05",
   "claim_scope": "Finite-volume two-slice pure-gauge SU(N) Wilson reflection positivity for \u03b2\u22650 and bounded measurable plus-slice observables on the explicit temporal-gauge carrier.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-21T16:12:12.024012+00:00",
+  "claim_type_last_reviewed": "2026-07-29T13:23:43.692054+00:00",
   "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
@@ -83,17 +84,19 @@
   "helper_runner_paths": [
     "scripts/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.py"
   ],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 14.735,
-  "load_bearing_step": "The exponential character expansion has coefficients c_\u03bb(\u03b1)=sum_(n\u22650)(\u03b1/2)^n M_(\u03bb,n)/n!\u22650 because every tensor-product multiplicity M_(\u03bb,n) is a nonnegative integer.",
+  "load_bearing_step": "The expansion exp[\u03b1 Re \u03c7_R(g)] = \u03a3_\u03bb c_\u03bb(\u03b1)\u03c7_\u03bb(g), with c_\u03bb(\u03b1) = \u03a3_(n\u22650)(\u03b1/2)^n M_(\u03bb,n)/n! \u2265 0, yields a positive plane kernel and hence the integrated reflected Gram.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
+  "negative_assertion_classes": [
+    "bounded_with_named_walls"
+  ],
   "note_hash": "5b7331b4fe23e626b03c6d1b13f0add2adf243df8806a357a404d8ca78e64238",
   "note_path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the complete primary normal-mode stdout together with the independent helper stdout, preserving the live N1-N8 lines and locators, then repeat the clean-verdict audit.",
+  "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the restricted packet with the complete SHA-bound source of scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py, then independently recheck every load-bearing formula and executable assertion.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -459,12 +462,12 @@
   "runner_check_breakdown": {
     "A": 7,
     "B": 0,
-    "C": 27,
+    "C": 26,
     "D": 0,
     "total_pass": 34
   },
   "runner_path": "scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
   "title": "Reflection positivity \u2014 finite-volume `SU(N)` Wilson temporal-gauge bridge by a direct representation-ring proof",
   "transitive_descendants": 851,
-  "verdict_rationale": "The mathematical chain presented in the source closes on its stated finite two-slice pure-gauge scope, and the available runner record reports 34 passes with no failures. However, the rendered live stdout is clipped before its N1-N3 evidence and supplies no live independent-helper stdout, so the mandatory authenticated N1-N8 packet for an audited_clean verdict cannot be constructed from this restricted packet. This is an audit-artifact completeness limitation rather than a substantive defect in the theorem."
+  "verdict_rationale": "Issue: the primary runner source is explicitly clipped in the restricted packet, so its load-bearing implementations of the all-order coefficient/majorant checks and integrated G = W diag(\u03ba) W\u2020 checks cannot be audited against the reported stdout. Why this blocks: the self-contained note and completed stdout make the theorem plausible, but uninspectable load-bearing runner code cannot supply independent closure. Repair target: rerender the packet with the complete SHA-bound primary-runner source and recheck the \u03b2/(2N) normalization, tensor-multiplicity coefficient formula, convergence interchange, and integrated feature factorization. Claim boundary until fixed: only the finite open two-slice pure-gauge SU(N), \u03b2\u22650, bounded-observable theorem is under review; the named multi-slice, fermionic, continuum/thermodynamic, and global-gauge-fixing walls remain scope exclusions rather than no-go results."
 }

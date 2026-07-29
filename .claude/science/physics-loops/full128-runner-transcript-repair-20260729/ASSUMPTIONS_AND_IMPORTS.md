@@ -15,9 +15,10 @@ realized-state primitive is used by the transcript repair.
 
 | Assumption | What if it is wrong? | Concrete alternative | Direction it opens | Feasibility | Score |
 |---|---|---|---|---|---|
-| The old verbose stdout must be transported whole | Only the load-bearing check and terminal census need detailed passing payloads | compact successful secondary checks while retaining all failures | closes the named packet defect without changing science | live | 3 |
+| The old stdout needs a new representation | The unchanged 16,222-character cache already fits the current 20,000-character allowance | add source drift and rerender the live runner | closes the named packet defect without changing runner semantics | selected | 3 |
 | The packet budget should absorb arbitrary verbose output | Increase the global stdout budget | repo-wide transport-policy change | could close this row but expands packet cost for every row | live but inferior | 1 |
 | A new helper is required | The primary runner itself can emit the audit slice | keep one source-bound execution surface | avoids helper selection and authentication ambiguity | live | 3 |
 
-The selected counterfactual is primary-transcript compaction.
-
+The selected counterfactual is a dated source-hash rerender of the unchanged,
+already transport-safe primary runner.  Transcript compaction was explored but
+is absent from the final diff.

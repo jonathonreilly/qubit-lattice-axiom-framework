@@ -20,12 +20,11 @@ premises; the open target is its authenticated execution transport.
 
 | Route | Type | Trace | Score | Disposition |
 |---|---|---|---:|---|
-| rerender the unchanged packet under the current 20k budget | exact runner | direct blocker closure | 2 | nondurable: no source drift reliably requeues the stuck row |
+| dated source-hash rerender under the current 20k budget | exact runner | direct blocker closure | 3 | selected: source drift reliably requeues the complete live stdout |
 | enlarge packet stdout globally | tooling | direct blocker closure | 1 | rejected as unnecessary repo-wide churn |
-| compact the primary runner's default transcript | exact runner | direct blocker closure | 3 | selected |
+| compact the primary runner's default transcript | exact runner | direct blocker closure | 2 | explored but unnecessary; absent from final diff |
 | add a separate audit-slice helper | tooling | direct blocker closure | 2 | rejected: adds authentication and selection surface |
 
-The selected route changes only stdout presentation.  Passing secondary checks
-emit labels, the complete all-128 check retains its diagnostic mapping, and
-every failure retains full diagnostics.
-
+The selected route changes only the note hash and source-bound cache
+fingerprints.  The primary runner is unchanged: its complete 13-line stdout,
+all-128 diagnostic, full summary, and result already fit the current packet.

@@ -4,5 +4,4 @@ target_blocker_text: "Re-render the restricted packet with complete byte-authent
 source_of_blocker_text: audit_ledger
 reachability_to_target: closes
 artifact_role: runner_certificate
-next_trace_action: "Independent audit reruns the changed primary runner and judges the source-bound 2,881-character transcript."
-
+next_trace_action: "Independent audit reruns the unchanged primary runner and judges the complete source-bound stdout under the current 20,000-character allowance."

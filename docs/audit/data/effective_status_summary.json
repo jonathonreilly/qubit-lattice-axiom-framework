@@ -1,11 +1,11 @@
 {
   "claim_type_counts": {
     "bounded_theorem": 2192,
-    "decoration": 45,
+    "decoration": 47,
     "meta": 364,
     "no_go": 439,
     "open_gate": 207,
-    "positive_theorem": 663
+    "positive_theorem": 661
   },
   "cycle_examples": [
     [
@@ -80,7 +80,7 @@
   ],
   "cycles_detected": 58,
   "effective_status_counts": {
-    "audit_in_progress": 3,
+    "audit_in_progress": 2,
     "audited_conditional": 278,
     "audited_failed": 74,
     "audited_numerical_match": 10,
@@ -96,6 +96,8 @@
     "decoration_under_graph_first_su3_integration_note": 8,
     "decoration_under_hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": 1,
     "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10": 1,
+    "decoration_under_hierarchy_matsubara_decomposition_note": 1,
+    "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": 1,
     "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": 1,
     "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 2,
     "decoration_under_koide_dweh_cyclic_compression_note_2026-04-18": 1,
@@ -111,7 +113,7 @@
     "retained": 126,
     "retained_bounded": 356,
     "retained_pending_chain": 11,
-    "unaudited": 2629
+    "unaudited": 2628
   },
   "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [

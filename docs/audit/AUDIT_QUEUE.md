@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 2985
-**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 550
+**Total pending:** 2984
+**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 551
 
 By criticality:
-- `critical`: 636
+- `critical`: 635
 - `high`: 367
 - `medium`: 825
 - `leaf`: 1157

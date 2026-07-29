@@ -19,7 +19,7 @@ file per claim), summarized in
 | Retained positive rows | 126 |
 | Retained bounded rows | 356 |
 | Retained no-go rows | 0 |
-| Boxed decorations under retained parents | 31 |
+| Boxed decorations under retained parents | 32 |
 
 ## Retained positive rows (126)
 
@@ -517,12 +517,13 @@ Sorted by load-bearing graph score (descending).
 
 - none at present
 
-## Boxed decorations under retained parents (31)
+## Boxed decorations under retained parents (32)
 
 - [`left_handed_charge_matching_note`](../../docs/LEFT_HANDED_CHARGE_MATCHING_NOTE.md) — score 29.109; audited 2026-05-24T20:35:17.186937+00:00; under `graph_first_su3_integration_note`
 - [`ew_current_fierz_channel_decomposition_note_2026-05-01`](../../docs/EW_CURRENT_FIERZ_CHANNEL_DECOMPOSITION_NOTE_2026-05-01.md) — score 22.756; audited 2026-05-23T14:25:12.301143+00:00; under `graph_first_su3_integration_note`
 - [`gauge_vacuum_plaquette_susceptibility_flow_theorem_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_SUSCEPTIBILITY_FLOW_THEOREM_NOTE.md) — score 15.785; audited 2026-07-22T18:23:13.482301+00:00; under `gauge_vacuum_plaquette_reduction_existence_theorem_note`
 - [`yukawa_color_projection_theorem`](../../docs/YUKAWA_COLOR_PROJECTION_THEOREM.md) — score 15.395; audited 2026-05-25T10:18:49.309520+00:00; under `graph_first_su3_integration_note`
+- [`hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02`](../../docs/HIERARCHY_MATSUBARA_DETERMINANT_NARROW_THEOREM_NOTE_2026-05-02.md) — score 15.079; audited 2026-07-29T21:15:54.994932+00:00; under `hierarchy_matsubara_decomposition_note`
 - [`koide_aps_block_by_block_forcing_note_2026-04-21`](../../docs/KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md) — score 14.055; audited 2026-07-19T20:19:41.817771+00:00; under `koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`
 - [`canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16`](../../docs/CANONICAL_PLAQUETTE_ALPHA_LM_VALUE_CERTIFICATE_BOUNDED_NOTE_2026-06-16.md) — score 13.820; audited 2026-07-18T03:30:46.114644+00:00; under `plaquette_self_consistency_note`
 - [`newton_law_derived_note`](../../docs/NEWTON_LAW_DERIVED_NOTE.md) — score 13.629; audited 2026-07-12T18:58:38.545638+00:00; under `lattice_greens_function_maradudin_textbook_import_note_2026-05-18`

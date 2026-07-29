@@ -110,7 +110,7 @@
       "third_pass_overturn_rate": 0.52,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
       "total_audits": 285,
-      "verdict_changed_after_re_audit": 795,
+      "verdict_changed_after_re_audit": 794,
       "verdict_counts": {
         "audited_clean": 256,
         "audited_conditional": 4,
@@ -157,10 +157,10 @@
       "third_pass_overturn_rate": 0.5,
       "third_pass_overturn_rate_caveat": "Selection-biased: third auditor only runs on disputed cases. Expected value for a competent auditor is ~0.5. See script docstring.",
       "total_audits": 520,
-      "verdict_changed_after_re_audit": 189,
+      "verdict_changed_after_re_audit": 188,
       "verdict_counts": {
-        "audited_clean": 127,
-        "audited_conditional": 264,
+        "audited_clean": 128,
+        "audited_conditional": 263,
         "audited_decoration": 28,
         "audited_failed": 71,
         "audited_numerical_match": 7,

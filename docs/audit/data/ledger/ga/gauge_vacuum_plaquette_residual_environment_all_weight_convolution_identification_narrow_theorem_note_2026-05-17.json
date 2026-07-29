@@ -1,24 +1,78 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-29T19:47:28.969862+00:00",
+  "audit_invocation_history": [
+    "fab81ce8c27449799ae5b80433bfdc63",
+    "591a22ba1a0a4bb09c1718e4dbd55f18"
+  ],
+  "audit_invocation_id": "591a22ba1a0a4bb09c1718e4dbd55f18",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 4,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "The finite-truncation SU(3) character-convolution identity and its coefficient-uniqueness, positivity, self-adjointness, and conjugation-symmetry consequences for an abstract normalized sequence, excluding any Wilson-environment identification."
+    },
+    "dep_claim_type": {
+      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 13.235,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "cc6e100cd1f00b9dbd1830ff3010235dac0f619ffcd397db6b67369ce09f595b",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "cc6e100cd1f00b9dbd1830ff3010235dac0f619ffcd397db6b67369ce09f595b",
+    "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 851
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260729-4f21802b",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The per-weight quotient and normalization identities close, but the formal convolution step rests on a retained authority whose load-bearing proof is clipped from the restricted packet, so the full proof obligation cannot be independently completed.",
   "claim_id": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
-  "claim_scope": null,
+  "claim_scope": "Conditional finite-window quotient and formal central-convolution packaging for explicitly supplied nonnegative swap-symmetric diagonal coefficient families, including the trivial-channel normalization distinction and excluding any Wilson residual identification.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-29T19:47:28.969862+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +80,22 @@
     "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10"
   ],
   "direct_in_degree": 7,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 13.235,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For each weight in the finite window, the cited Schur/Peter-Weyl convolution theorem is applied to z_(p,q)=lambda r_(p,q), yielding R_beta[r] chi_(p,q)=(1/lambda)C_(Z_beta^(N)) chi_(p,q).",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "d147d6af316c99dd28f9c454128239decf33bb5348af86f06a73af774363ee2e",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_RESIDUAL_ENVIRONMENT_ALL_WEIGHT_CONVOLUTION_IDENTIFICATION_NARROW_THEOREM_NOTE_2026-05-17.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: regenerate the restricted packet with the complete unclipped one-hop convolution authority, then rerun the fresh-context proof audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -772,14 +829,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 33,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 33
   },
   "runner_path": "scripts/audit_companion_gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification.py",
   "title": "Gauge-Vacuum Plaquette Supplied-D Residual Quotient and Formal Convolution Packaging",
   "transitive_descendants": 851,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the restricted packet clips the retained convolution authority before its complete load-bearing proof, while the runner constructs the convolution-side diagonal matrix from the asserted coefficient dictionary. Why this blocks: the quotient identity closes as elementary diagonal algebra, but the formal convolution conclusion cannot receive an independent clean audit from the rendered evidence. Repair target: rebuild the packet with the complete authority and recheck the Schur-convolution action outside the runner\u2019s construction path. Claim boundary until fixed: the supplied quotient algebra, normalization distinction, and narrow off-diagonal counterexample remain supported, but neither clean formal-packaging closure nor any Wilson identification is ratified."
 }

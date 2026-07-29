@@ -1037,7 +1037,7 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_residual_environment_all_weight_convolution_identification_narrow_theorem_note_2026-05-17",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_residual_environment_identification_theorem_note",
@@ -1045,7 +1045,7 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
@@ -1057,10 +1057,6 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_tensor_transfer_perron_solve_note",
-          "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
           "effective_status": "unaudited"
         },
         {
@@ -2748,7 +2744,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 630
+      "uncertified_count": 629
     }
   ],
   "schema": "lane_certification_v2"

@@ -7,13 +7,13 @@ this finite-matrix claim, and no primitive is reclassified as an import or wall.
 | Item | Role in claim | Current class | Source surface | Load-bearing? | Needed for target status? | Retirement path | Disposition |
 |---|---|---|---|---:|---:|---|---|
 | Finite staggered `M_KS[U]+mI` | common Grassmann measure | computed lattice input | primary runner | yes | yes | exact runner/log | computed directly |
-| `Theta(chi)=-bar(chi)` and two-step block | reflection convention | literature theorem / explicit convention | cited OS/STW/Palumbo methodology | yes | yes | one-field sign falsifier | explicit and tested |
+| `Theta(chi)=-bar(chi)` and two-step block | finite reflection convention | explicit runner convention | primary runner | yes | yes | one-field sign falsifier | explicit and tested |
 | `C_BLOCK=2` | temporal normalization | computed lattice input | same-`M` cross-block eigenvalues | yes | yes | same-matrix eigenvalue ratio | retired as an assumption |
 | Hop eigenbasis `Q` | spatial-mode identification | computed lattice input | finite anti-Hermitian hop | yes | yes | eigensystem residual | computed directly |
-| `NT_BULK=14`, open temporal ends | finite carrier boundary | admitted normalization | primary runner | yes, for listed carrier | yes | rerun other extents for wider claim | bounded to stated carrier |
-| `m=0.5` | finite test parameter | admitted normalization | primary runner | yes, for listed carrier | yes | parameter-family theorem for wider scope | bounded to stated carrier |
-| Finite U(1)/SU(3) samples | gauge averaging domain | admitted normalization | primary runner | yes | yes | exact/full Haar theorem for wider scope | finite sample/quadrature only |
-| Positive determinant | positive gauge weight | retained support | `STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md` | yes | yes | already supplied upstream | consumed narrowly |
+| `NT_BULK=14`, open temporal ends | finite carrier boundary | explicit finite-domain parameter | primary runner | yes, for listed carrier | yes | rerun other extents for wider claim | bounded to stated carrier |
+| `m=0.5` | finite test parameter | explicit finite-domain parameter | primary runner | yes, for listed carrier | yes | parameter-family theorem for wider scope | bounded to stated carrier |
+| Finite U(1)/SU(3) samples | gauge averaging domain | explicit finite-domain set | primary runner | yes | yes | exact/full Haar theorem for wider scope | finite sample/quadrature only |
+| Positive determinant | positive finite weight | linked support; grade is audit-owned | `STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md` | yes | yes | recomputed phase and magnitude in runner | consumed narrowly |
 | Continuum/Wightman/Lorentz reconstruction | outside claim | support-only | none | no | no | separate lane | excluded |
 
 ## Counterfactual pass

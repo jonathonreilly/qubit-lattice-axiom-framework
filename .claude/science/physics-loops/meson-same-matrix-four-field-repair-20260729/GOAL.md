@@ -3,9 +3,9 @@
 ## Exact target contract
 
 **Target statement.** On each finite carrier and gauge configuration listed in the
-meson note, compute the connected reflected four-field Berezin/Wick meson correlator
+meson note, compute the connected four-field Berezin/Wick minor
 from the same finite staggered matrix whose determinant weights the gauge average, and
-show that it agrees with the independently built fermion-Fock operator loop both at
+show that it agrees with the independently evaluated analytic trace kernel both at
 fixed background and after the determinant-weighted finite average.
 
 **Quantifiers/domain.** The four deterministic U(1)/SU(3) carriers, samples, and
@@ -13,8 +13,8 @@ quadratures in the primary runner; `m=0.5`, `NT_BULK=14`, open finite temporal c
 and the note's Wilson-line meson basis.
 
 **Allowed premises.** The displayed finite staggered action, ordinary finite Gaussian
-Grassmann integration/Wick determinants, the cited OS reflection convention and
-two-step transfer interpretation, and the retained staggered determinant-positivity
+Grassmann integration/Wick determinants, the explicit reflection convention and
+two-step finite kernel, and the linked staggered determinant-positivity
 dependency.
 
 **Forbidden weakenings.** Reusing an `Lt=2` determinant with an `Lt=28` kernel;
@@ -30,4 +30,4 @@ plus a source note that displays the explicit `2 x 2` Wick minor and its connect
 subtraction.
 
 **Non-closures.** Propagator-only agreement, same-loop consistency, a flat gauge
-average, or a new no-go/demotion statement do not close this target.
+average, or an unsupported operator-Hilbert-space interpretation do not close this target.

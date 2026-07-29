@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py
-runner_sha256: 3fae975401ab9fdabd330edfc36a1d0a4c691da02e840b64abb1135113dc7884
+runner_sha256: e9ddec10b14cd4ca4e51738be74821e86416b6210beb065d8e04025dc8463bc3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.00
+elapsed_sec: 1.33
 status: ok
 ----- stdout -----
 ==============================================================================
-GAUGE-INVARIANT NUMBER-CONSERVING MESON OS TRANSFER REPRESENTATION (3+1 carrier)
+GAUGE-INVARIANT MESON SAME-M WICK-MINOR / TRACE-KERNEL IDENTITY (finite 3+1 carrier)
 ==============================================================================
 Meson observable: F = chibar(x) U(x,y) chi(y)  (number-conserving, gauge singlet).
 F|Omega> = 0 (vacuum annihilation); the OS object is the meson 2-pt <Theta(F)F>,
-a connected 4-fermion correlator = particle-hole intermediate-state sum >= 0.
+a connected 4-fermion minor compared with an analytic positive trace kernel.
 mass=0.5  c_block=2.0 (a-priori)  beta=0.9  NT_bulk=14
 
 ==============================================================================
@@ -19,8 +19,8 @@ CARRIER: U(1)  2x2x1 spatial sheet (4 sites, 4 modes)   [Lt=2 block; transfer ru
 ==============================================================================
   spatial 2x2x1, N_c=1, n_modes=4, U-quadrature K=16
   P_block : block pos eig vs C_BLOCK e^-2E       worst = 2.55e-15
-  P_block : Gf Berezin(M^-1) vs operator(e^-2H)  worst = 2.37e-13
-  P_block : full-spacetime M^-1 block spectrum vs operator worst = 5.55e-15
+  P_block : Gf Berezin(M^-1) vs analytic 2e^-2E kernel worst = 2.37e-13
+  P_block : full-spacetime M^-1 spectrum vs trace kernel worst = 5.55e-15
   SAME-M  : cross-block Hermiticity residual     = 1.91e-16
   SAME-M  : spatial-mode off-block residual      = 2.51e-16
   SAME-M  : particle/hole spectrum vs 2e^-2E     = 2.58e-13
@@ -31,9 +31,9 @@ CARRIER: U(1)  2x2x1 spatial sheet (4 sites, 4 modes)   [Lt=2 block; transfer ru
   SIGN    : wrong reflection physical max eig    = -0.1684  (must be <0)
   K1 VAC  : ||F|Omega>|| (MUST be ~0)            = 0.00e+00
   K1 VAC  : min meson <Theta(F)F> (MUST be >0)   = 0.0638
-  P1      : per-config SAME-M Wick minor == operator loop worst = 3.12e-13
+  P1      : per-config SAME-M Wick minor == trace kernel worst = 3.12e-13
   P1      : full minor - disconnected == crossed term    = 5.55e-17
-  P0      : SAME-M det-weighted Wick-minor avg == operator worst = 1.78e-15
+  P0      : SAME-M det-weighted Wick-minor avg == trace kernel worst = 1.78e-15
   P0      : averaged minor decomposition residual        = 5.55e-17
   SAME-M  : direct minor vs reduced Berezin kernel avg    = 1.25e-16
   Ppos    : averaged meson Gram min eig (MUST >=0) = 0.0341
@@ -54,8 +54,8 @@ CARRIER: SU(3) 2x2x1 spatial sheet (4 sites, 12 modes)   [Lt=2 block; transfer r
 ==============================================================================
   spatial 2x2x1, N_c=3, n_modes=12, U-quadrature K=6
   P_block : block pos eig vs C_BLOCK e^-2E       worst = 2.61e-12
-  P_block : Gf Berezin(M^-1) vs operator(e^-2H)  worst = 1.37e-12
-  P_block : full-spacetime M^-1 block spectrum vs operator worst = 2.61e-12
+  P_block : Gf Berezin(M^-1) vs analytic 2e^-2E kernel worst = 1.37e-12
+  P_block : full-spacetime M^-1 spectrum vs trace kernel worst = 2.61e-12
   SAME-M  : cross-block Hermiticity residual     = 3.84e-16
   SAME-M  : spatial-mode off-block residual      = 5.13e-16
   SAME-M  : particle/hole spectrum vs 2e^-2E     = 2.61e-12
@@ -66,9 +66,9 @@ CARRIER: SU(3) 2x2x1 spatial sheet (4 sites, 12 modes)   [Lt=2 block; transfer r
   SIGN    : wrong reflection physical max eig    = -0.1446  (must be <0)
   K1 VAC  : ||F|Omega>|| (MUST be ~0)            = 0.00e+00
   K1 VAC  : min meson <Theta(F)F> (MUST be >0)   = 0.4092
-  P1      : per-config SAME-M Wick minor == operator loop worst = 2.65e-12
+  P1      : per-config SAME-M Wick minor == trace kernel worst = 2.65e-12
   P1      : full minor - disconnected == crossed term    = 3.33e-16
-  P0      : SAME-M det-weighted Wick-minor avg == operator worst = 5.39e-14
+  P0      : SAME-M det-weighted Wick-minor avg == trace kernel worst = 5.39e-14
   P0      : averaged minor decomposition residual        = 3.33e-16
   SAME-M  : direct minor vs reduced Berezin kernel avg    = 3.33e-16
   Ppos    : averaged meson Gram min eig (MUST >=0) = 0.2710
@@ -89,8 +89,8 @@ CARRIER: SU(3) 2x1x1 spatial (2 sites, 6 modes)   [Lt=2 block; transfer runs in 
 ==============================================================================
   spatial 2x1x1, N_c=3, n_modes=6, U-quadrature K=8
   P_block : block pos eig vs C_BLOCK e^-2E       worst = 2.34e-12
-  P_block : Gf Berezin(M^-1) vs operator(e^-2H)  worst = 3.13e-12
-  P_block : full-spacetime M^-1 block spectrum vs operator worst = 2.34e-12
+  P_block : Gf Berezin(M^-1) vs analytic 2e^-2E kernel worst = 3.13e-12
+  P_block : full-spacetime M^-1 spectrum vs trace kernel worst = 2.34e-12
   SAME-M  : cross-block Hermiticity residual     = 2.53e-16
   SAME-M  : spatial-mode off-block residual      = 2.79e-16
   SAME-M  : particle/hole spectrum vs 2e^-2E     = 3.36e-12
@@ -101,9 +101,9 @@ CARRIER: SU(3) 2x1x1 spatial (2 sites, 6 modes)   [Lt=2 block; transfer runs in 
   SIGN    : wrong reflection physical max eig    = -0.2975  (must be <0)
   K1 VAC  : ||F|Omega>|| (MUST be ~0)            = 0.00e+00
   K1 VAC  : min meson <Theta(F)F> (MUST be >0)   = 0.8723
-  P1      : per-config SAME-M Wick minor == operator loop worst = 5.14e-12
+  P1      : per-config SAME-M Wick minor == trace kernel worst = 5.14e-12
   P1      : full minor - disconnected == crossed term    = 2.22e-16
-  P0      : SAME-M det-weighted Wick-minor avg == operator worst = 8.37e-16
+  P0      : SAME-M det-weighted Wick-minor avg == trace kernel worst = 8.37e-16
   P0      : averaged minor decomposition residual        = 2.22e-16
   SAME-M  : direct minor vs reduced Berezin kernel avg    = 7.80e-16
   Ppos    : averaged meson Gram min eig (MUST >=0) = 0.4363
@@ -124,8 +124,8 @@ CARRIER: U(1)  2x1x1 spatial (2 sites, minimal, degenerate)   [Lt=2 block; trans
 ==============================================================================
   spatial 2x1x1, N_c=1, n_modes=2, U-quadrature K=16
   P_block : block pos eig vs C_BLOCK e^-2E       worst = 7.66e-13
-  P_block : Gf Berezin(M^-1) vs operator(e^-2H)  worst = 7.66e-13
-  P_block : full-spacetime M^-1 block spectrum vs operator worst = 7.66e-13
+  P_block : Gf Berezin(M^-1) vs analytic 2e^-2E kernel worst = 7.66e-13
+  P_block : full-spacetime M^-1 spectrum vs trace kernel worst = 7.66e-13
   SAME-M  : cross-block Hermiticity residual     = 1.67e-16
   SAME-M  : spatial-mode off-block residual      = 1.79e-16
   SAME-M  : particle/hole spectrum vs 2e^-2E     = 7.67e-13
@@ -136,9 +136,9 @@ CARRIER: U(1)  2x1x1 spatial (2 sites, minimal, degenerate)   [Lt=2 block; trans
   SIGN    : wrong reflection physical max eig    = -0.2973  (must be <0)
   K1 VAC  : ||F|Omega>|| (MUST be ~0)            = 0.00e+00
   K1 VAC  : min meson <Theta(F)F> (MUST be >0)   = 0.5242
-  P1      : per-config SAME-M Wick minor == operator loop worst = 1.11e-12
+  P1      : per-config SAME-M Wick minor == trace kernel worst = 1.11e-12
   P1      : full minor - disconnected == crossed term    = 1.11e-16
-  P0      : SAME-M det-weighted Wick-minor avg == operator worst = 8.35e-17
+  P0      : SAME-M det-weighted Wick-minor avg == trace kernel worst = 8.35e-17
   P0      : averaged minor decomposition residual        = 1.11e-16
   SAME-M  : direct minor vs reduced Berezin kernel avg    = 4.21e-17
   Ppos    : averaged meson Gram min eig (MUST >=0) = 0.0893
@@ -158,8 +158,8 @@ CARRIER: U(1)  2x1x1 spatial (2 sites, minimal, degenerate)   [Lt=2 block; trans
 SUMMARY OF CHECKS
 ==============================================================================
   [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): P_block eig  (2.55351295663786e-15)
-  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): P_block Gf Berezin==operator  (2.3714363805993344e-13)
-  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): P_block full-spacetime M^-1 spectrum==operator  (5.551115123125783e-15)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): P_block Gf Berezin==trace kernel  (2.3714363805993344e-13)
+  [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): P_block full-spacetime M^-1 spectrum==trace kernel  (5.551115123125783e-15)
   [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): SAME-M cross blocks Hermitian  (1.906130862100926e-16)
   [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): SAME-M spatial modes decouple  (2.5133742693021536e-16)
   [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): SAME-M particle/hole spectrum  (2.581268532253489e-13)
@@ -187,8 +187,8 @@ SUMMARY OF CHECKS
   [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): K5 SAME-M gauge-invariant minor  (1.9736244101964245e-16)
   [PASS] U(1)  2x2x1 spatial sheet (4 sites, 4 modes): K5 Wilson-line covariance  (1.1102230246251565e-16)
   [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): P_block eig  (2.6141311337823936e-12)
-  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): P_block Gf Berezin==operator  (1.3712364577145308e-12)
-  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): P_block full-spacetime M^-1 spectrum==operator  (2.614020111479931e-12)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): P_block Gf Berezin==trace kernel  (1.3712364577145308e-12)
+  [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): P_block full-spacetime M^-1 spectrum==trace kernel  (2.614020111479931e-12)
   [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): SAME-M cross blocks Hermitian  (3.8367218739107634e-16)
   [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): SAME-M spatial modes decouple  (5.134898698599272e-16)
   [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): SAME-M particle/hole spectrum  (2.614908289899631e-12)
@@ -216,8 +216,8 @@ SUMMARY OF CHECKS
   [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): K5 SAME-M gauge-invariant minor  (1.7792285538777568e-15)
   [PASS] SU(3) 2x2x1 spatial sheet (4 sites, 12 modes): K5 Wilson-line covariance  (2.220446049250313e-16)
   [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P_block eig  (2.34123831432953e-12)
-  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P_block Gf Berezin==operator  (3.129607684116335e-12)
-  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P_block full-spacetime M^-1 spectrum==operator  (2.3415713812369177e-12)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P_block Gf Berezin==trace kernel  (3.129607684116335e-12)
+  [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): P_block full-spacetime M^-1 spectrum==trace kernel  (2.3415713812369177e-12)
   [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): SAME-M cross blocks Hermitian  (2.532458630424097e-16)
   [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): SAME-M spatial modes decouple  (2.7894008272968645e-16)
   [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): SAME-M particle/hole spectrum  (3.3634206531019117e-12)
@@ -245,8 +245,8 @@ SUMMARY OF CHECKS
   [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): K5 SAME-M gauge-invariant minor  (4.500261889206786e-16)
   [PASS] SU(3) 2x1x1 spatial (2 sites, 6 modes): K5 Wilson-line covariance  (1.5700924586837752e-16)
   [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): P_block eig  (7.66275931596283e-13)
-  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): P_block Gf Berezin==operator  (7.663869538987456e-13)
-  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): P_block full-spacetime M^-1 spectrum==operator  (7.663869538987456e-13)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): P_block Gf Berezin==trace kernel  (7.663869538987456e-13)
+  [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): P_block full-spacetime M^-1 spectrum==trace kernel  (7.663869538987456e-13)
   [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): SAME-M cross blocks Hermitian  (1.6653346839239e-16)
   [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): SAME-M spatial modes decouple  (1.7867651802561113e-16)
   [PASS] U(1)  2x1x1 spatial (2 sites, minimal, degenerate): SAME-M particle/hole spectrum  (7.667200208061331e-13)
@@ -277,17 +277,17 @@ SUMMARY OF CHECKS
 ==============================================================================
 SCOPE
 ==============================================================================
-This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator
+This verifies the gauge-invariant meson SAME-M Wick-minor==trace-kernel
 equality on a FINITE 3+1 carrier (transfer matrix in time; spatial lattice the
 regulator), ILLUSTRATING the cited transfer-matrix meson-spectroscopy
 construction (Luescher 1977; Osterwalder-Seiler 1978; Montvay-Munster Ch.3;
 Smit Sec.6).  The vacuum-annihilation obstruction (F|Omega>=0) is handled, NOT
-dodged: the OS object is the meson 2-pt <Theta(F)F>, a connected 4-fermion
-correlator = connected quark-line loop, NONZERO and OS-positive.
+dodged algebraically: the tested object is a connected 4-fermion minor
+equal to Tr(V^dag G V G), which is NONZERO and positive as a matrix Gram.
 NO continuum claim either way (the continuum step -- transfer-matrix -> Wightman
 reconstruction + spatial-continuum/Lorentz restoration -- is OUT OF SCOPE; the
 framework is 3+1).  The per-config fermion 2-step rung, the Wilson-boundary (H1)
-positivity, and any interacting-RP closure remain open.
+positivity, an operator-Hilbert-space meson bridge, and interacting RP remain open.
 
 SCORECARD PASS=116 FAIL=0
 

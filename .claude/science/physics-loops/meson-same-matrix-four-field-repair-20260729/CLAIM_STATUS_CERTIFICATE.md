@@ -1,7 +1,7 @@
 # Claim-status certificate
 
 ```yaml
-actual_current_surface_status: candidate-retained-grade
+actual_current_surface_status: bounded_theorem_candidate
 target_claim_type: bounded_theorem
 trace_class: direct_blocker_closure
 reachability_to_target: closes
@@ -18,9 +18,10 @@ bare_retained_allowed: false
   calculation.
 - The finite carrier, mass, temporal extent, and gauge sample/quadrature remain explicit
   scope boundaries rather than hidden universal claims.
-- The retained determinant-positivity dependency is consumed narrowly; its determinant
+- The linked determinant-positivity dependency is consumed narrowly; its determinant
   is now the exact matrix determinant used by the four-field measure.
 - The direct-blocker trace is complete in `TRACE_GATE.md`.
 - Independent audit is still required before the repository may treat this proposal as
   retained-grade.
-- Review-loop disposition is pending and must be `pass` before block closure.
+- Review-loop found and removed an unsupported operator-correlator interpretation.
+- Focused confirmation review returned `PASS WITH BOUNDED CLAIMS`.

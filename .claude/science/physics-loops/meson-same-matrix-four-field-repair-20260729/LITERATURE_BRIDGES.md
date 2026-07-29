@@ -1,8 +1,9 @@
 # Literature bridges
 
-No new literature search or imported value was used. The source note retains its
-existing narrow methodology citations to Luescher, Osterwalder--Seiler,
-Sharatchandra--Thun--Weisz, Palumbo, Montvay--Muenster, and Smit for the transfer/OS
-interpretation. The repaired finite-matrix equality, determinant weighting, temporal
-isometries, and Wick-minor checks are computed in repository artifacts rather than
-imported from those references.
+No literature authority or imported value is load-bearing for the narrowed finite
+matrix identity. The determinant, covariance blocks, temporal isometries, explicit
+Wick minor, and analytic trace kernel are all computed in repository artifacts.
+
+The former transfer-matrix operator/OS interpretation was not established by the
+finite calculation and has been removed. A genuine quark-antiquark or appropriate
+nonempty-vacuum operator construction remains separate work.

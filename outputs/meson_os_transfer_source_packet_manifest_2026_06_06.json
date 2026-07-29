@@ -21,7 +21,7 @@
       "ok": true
     },
     {
-      "detail": "bytes=59245",
+      "detail": "bytes=35432",
       "name": "source_full_length",
       "ok": true
     },
@@ -31,8 +31,8 @@
       "ok": true
     },
     {
-      "detail": "def block_fwd_propagator_operator(",
-      "name": "source_contains:def block_fwd_propagator_operator(",
+      "detail": "def block_fwd_trace_kernel(",
+      "name": "source_contains:def block_fwd_trace_kernel(",
       "ok": true
     },
     {
@@ -56,8 +56,8 @@
       "ok": true
     },
     {
-      "detail": "def meson_correlator_from_propagator(",
-      "name": "source_contains:def meson_correlator_from_propagator(",
+      "detail": "def meson_trace_kernel(",
+      "name": "source_contains:def meson_trace_kernel(",
       "ok": true
     },
     {
@@ -81,28 +81,28 @@
       "ok": true
     },
     {
-      "detail": "K1  VACUUM-ANNIHILATION HANDLED",
-      "name": "source_contains:K1  VACUUM-ANNIHILATION HANDLED",
+      "detail": "K1 VAC  : ||F|Omega>||",
+      "name": "source_contains:K1 VAC  : ||F|Omega>||",
       "ok": true
     },
     {
-      "detail": "K2  PER-MODE-FACTORIZED BEREZIN BREAKS",
-      "name": "source_contains:K2  PER-MODE-FACTORIZED BEREZIN BREAKS",
+      "detail": "K2 BREAK: per-mode-factorized Berezin gap",
+      "name": "source_contains:K2 BREAK: per-mode-factorized Berezin gap",
       "ok": true
     },
     {
-      "detail": "K3  det-WEIGHT control",
-      "name": "source_contains:K3  det-WEIGHT control",
+      "detail": "K3 DIFF : flat(no-det) vs det-weighted gap",
+      "name": "source_contains:K3 DIFF : flat(no-det) vs det-weighted gap",
       "ok": true
     },
     {
-      "detail": "K4  SINGLE-STEP control",
-      "name": "source_contains:K4  SINGLE-STEP control",
+      "detail": "K4 CTRL : single-step block-metric min eig",
+      "name": "source_contains:K4 CTRL : single-step block-metric min eig",
       "ok": true
     },
     {
-      "detail": "K5  GAUGE INVARIANCE",
-      "name": "source_contains:K5  GAUGE INVARIANCE",
+      "detail": "K5 GAUGE: SAME-M Wick-minor invariance under g",
+      "name": "source_contains:K5 GAUGE: SAME-M Wick-minor invariance under g",
       "ok": true
     },
     {
@@ -111,7 +111,7 @@
       "ok": true
     },
     {
-      "detail": "3fae975401ab9fdabd330edfc36a1d0a4c691da02e840b64abb1135113dc7884 == 3fae975401ab9fdabd330edfc36a1d0a4c691da02e840b64abb1135113dc7884",
+      "detail": "e9ddec10b14cd4ca4e51738be74821e86416b6210beb065d8e04025dc8463bc3 == e9ddec10b14cd4ca4e51738be74821e86416b6210beb065d8e04025dc8463bc3",
       "name": "cache_sha_fresh",
       "ok": true
     },
@@ -131,13 +131,13 @@
       "ok": true
     },
     {
-      "detail": "P0      : SAME-M det-weighted Wick-minor avg == operator",
-      "name": "cache_contains:P0      : SAME-M det-weighted Wick-minor avg == operator",
+      "detail": "P0      : SAME-M det-weighted Wick-minor avg == trace kernel",
+      "name": "cache_contains:P0      : SAME-M det-weighted Wick-minor avg == trace kernel",
       "ok": true
     },
     {
-      "detail": "P1      : per-config SAME-M Wick minor == operator loop",
-      "name": "cache_contains:P1      : per-config SAME-M Wick minor == operator loop",
+      "detail": "P1      : per-config SAME-M Wick minor == trace kernel",
+      "name": "cache_contains:P1      : per-config SAME-M Wick minor == trace kernel",
       "ok": true
     },
     {

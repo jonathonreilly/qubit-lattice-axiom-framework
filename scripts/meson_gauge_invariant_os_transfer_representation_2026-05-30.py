@@ -165,7 +165,7 @@ def block_fwd_propagator_berezin(carrier, links):
     kap = np.array([np.linalg.eigvalsh(block_metric_per_mode(lam[j]))[-1]
                     for j in range(len(E))])
     return Q @ np.diag(kap) @ Q.conj().T
-def block_fwd_propagator_operator(carrier, links):
+def block_fwd_trace_kernel(carrier, links):
     E, Q, lam = carrier.modes(links)
     return C_BLOCK * (Q @ np.diag(np.exp(-2.0 * E)) @ Q.conj().T)
 def block_metric_spacetime_eigs(carrier, links, nt=NT_BULK):
@@ -232,7 +232,7 @@ def full_grassmann_packet(carrier, links, nt=NT_BULK):
             )
     Wa = slice_to_mode @ Wa_mode @ Q.conj().T
     Wb = slice_to_mode @ Wb_mode @ Q.conj().T
-    Gop = block_fwd_propagator_operator(carrier, links)
+    Gop = block_fwd_trace_kernel(carrier, links)
     expected = C_BLOCK * np.exp(-2.0 * E)
     wick_minor_resid = 0.0
     probe = sorted({0, min(1, 2 * nmode - 1), 2 * nmode - 1})
@@ -375,7 +375,7 @@ def gauge_transform_links(carrier, links, g):
         fwd = tuple(fwd)
         new[(mu, site)] = g[site] @ U @ g[fwd].conj().T
     return new
-def meson_correlator_from_propagator(V, Gf):
+def meson_trace_kernel(V, Gf):
     return np.trace(V.conj().T @ Gf @ V @ Gf)
 def meson_correlator_full_berezin(carrier, links, V_left, V_right=None, packet=None,
                                    return_decomposition=False):
@@ -501,7 +501,7 @@ def run_carrier(dims, group, K, label):
     worst_gf = 0.0
     for links in sample:
         gb = block_fwd_propagator_berezin(carrier, links)
-        go = block_fwd_propagator_operator(carrier, links)
+        go = block_fwd_trace_kernel(carrier, links)
         worst_gf = max(worst_gf, float(np.max(np.abs(gb - go))))
     r['Gf_berezin_vs_operator'] = worst_gf
     worst_st = 0.0
@@ -513,12 +513,12 @@ def run_carrier(dims, group, K, label):
         worst_st = max(worst_st, float(np.max(np.abs(np.sort(st_dedup) - op_eigs))))
     r['Gf_spacetime_vs_operator'] = worst_st
     Vs0 = meson_observables(carrier, sample[0])
-    Gf0_op = block_fwd_propagator_operator(carrier, sample[0])
+    Gf0_op = block_fwd_trace_kernel(carrier, sample[0])
     worst_vac = 0.0
     min_diag_corr = math.inf
     for V in Vs0:
         worst_vac = max(worst_vac, meson_op_on_vacuum_norm(carrier, V))
-        corr = meson_correlator_from_propagator(V, Gf0_op).real
+        corr = meson_trace_kernel(V, Gf0_op).real
         min_diag_corr = min(min_diag_corr, corr)
     r['vac_annih_norm'] = worst_vac           # MUST be ~0
     r['meson_corr_min_diag'] = min_diag_corr  # MUST be > 0 (nonzero & positive)
@@ -526,12 +526,12 @@ def run_carrier(dims, group, K, label):
     worst_decomposition = 0.0
     for links, packet in zip(sample, packets):
         Vloc = meson_observables(carrier, links)
-        Gf_op = block_fwd_propagator_operator(carrier, links)
+        Gf_op = block_fwd_trace_kernel(carrier, links)
         for V in Vloc:
             ber, full_minor, disconnected, crossed = meson_correlator_full_berezin(
                 carrier, links, V, packet=packet, return_decomposition=True
             )
-            op = meson_correlator_from_propagator(V, Gf_op)          # operator loop
+            op = meson_trace_kernel(V, Gf_op)          # analytic trace kernel
             worst_pc = max(worst_pc, abs(ber - op))
             worst_decomposition = max(
                 worst_decomposition,
@@ -540,7 +540,7 @@ def run_carrier(dims, group, K, label):
             )
     r['per_config'] = worst_pc
     r['sameM_minor_decomposition'] = worst_decomposition
-    Cop = u_averaged_meson(carrier, sample, block_fwd_propagator_operator,
+    Cop = u_averaged_meson(carrier, sample, block_fwd_trace_kernel,
                            Vs0, packets, use_det=True)
     Cber, avg_decomposition = u_averaged_full_berezin(carrier, sample, packets, Vs0)
     r['avg_genuine'] = float(np.max(np.abs(Cber - Cop)))
@@ -555,14 +555,14 @@ def run_carrier(dims, group, K, label):
     for _ in range(200):
         Vr = (RNG.standard_normal((carrier.nmode, carrier.nmode))
               + 1j * RNG.standard_normal((carrier.nmode, carrier.nmode)))
-        min_rand = min(min_rand, meson_correlator_from_propagator(Vr, Gf0_op).real)
+        min_rand = min(min_rand, meson_trace_kernel(Vr, Gf0_op).real)
     r['pos_random_min'] = min_rand  # connected loop >= 0 for ANY meson V
     Cber_pm = u_averaged_meson(carrier, sample, block_fwd_propagator_permode,
                                Vs0, packets, use_det=True)
     r['K2_permode_gap'] = float(np.max(np.abs(Cber_pm - Cop)))
     Gr0 = block_fwd_propagator_berezin(carrier, sample[0])
     r['recon_offdiag'] = float(np.max(np.abs(Gr0 - np.diag(np.diag(Gr0)))))
-    Cop_flat = u_averaged_meson(carrier, sample, block_fwd_propagator_operator,
+    Cop_flat = u_averaged_meson(carrier, sample, block_fwd_trace_kernel,
                                 Vs0, packets, use_det=False)
     r['K3_flatdet_gap'] = float(np.max(np.abs(Cber - Cop_flat)))
     min_eig_single = math.inf
@@ -576,14 +576,14 @@ def run_carrier(dims, group, K, label):
     links_g = gauge_transform_links(carrier, sample[0], g)
     Vs_before = meson_observables(carrier, sample[0])
     Vs_after = meson_observables(carrier, links_g)
-    Gf_before = block_fwd_propagator_operator(carrier, sample[0])
-    Gf_after = block_fwd_propagator_operator(carrier, links_g)
+    Gf_before = block_fwd_trace_kernel(carrier, sample[0])
+    Gf_after = block_fwd_trace_kernel(carrier, links_g)
     packet_g = full_grassmann_packet(carrier, links_g)
     worst_gauge = 0.0
     worst_gauge_sameM = 0.0
     for Vb, Va in zip(Vs_before, Vs_after):
-        cb = meson_correlator_from_propagator(Vb, Gf_before)
-        ca = meson_correlator_from_propagator(Va, Gf_after)
+        cb = meson_trace_kernel(Vb, Gf_before)
+        ca = meson_trace_kernel(Va, Gf_after)
         worst_gauge = max(worst_gauge, abs(cb - ca))
         cb_sameM = meson_correlator_full_berezin(
             carrier, sample[0], Vb, packet=packets[0]
@@ -606,10 +606,10 @@ def run_carrier(dims, group, K, label):
     r['gram_herm'] = float(np.max(np.abs(Cop - Cop.conj().T)))
     return r, carrier
 def main() -> int:
-    banner("GAUGE-INVARIANT NUMBER-CONSERVING MESON OS TRANSFER REPRESENTATION (3+1 carrier)")
+    banner("GAUGE-INVARIANT MESON SAME-M WICK-MINOR / TRACE-KERNEL IDENTITY (finite 3+1 carrier)")
     print("Meson observable: F = chibar(x) U(x,y) chi(y)  (number-conserving, gauge singlet).")
     print("F|Omega> = 0 (vacuum annihilation); the OS object is the meson 2-pt <Theta(F)F>,")
-    print("a connected 4-fermion correlator = particle-hole intermediate-state sum >= 0.")
+    print("a connected 4-fermion minor compared with an analytic positive trace kernel.")
     print(f"mass={MASS}  c_block={C_BLOCK} (a-priori)  beta={BETA}  NT_bulk={NT_BULK}")
     print()
     checks = []
@@ -625,8 +625,8 @@ def main() -> int:
         Ls = "x".join(str(d) for d in dims)
         print(f"  spatial {Ls}, N_c={carrier.nc}, n_modes={carrier.nmode}, U-quadrature K={K}")
         print(f"  P_block : block pos eig vs C_BLOCK e^-2E       worst = {r['block_eig_vs_e2E']:.2e}")
-        print(f"  P_block : Gf Berezin(M^-1) vs operator(e^-2H)  worst = {r['Gf_berezin_vs_operator']:.2e}")
-        print(f"  P_block : full-spacetime M^-1 block spectrum vs operator worst = {r['Gf_spacetime_vs_operator']:.2e}")
+        print(f"  P_block : Gf Berezin(M^-1) vs analytic 2e^-2E kernel worst = {r['Gf_berezin_vs_operator']:.2e}")
+        print(f"  P_block : full-spacetime M^-1 spectrum vs trace kernel worst = {r['Gf_spacetime_vs_operator']:.2e}")
         print(f"  SAME-M  : cross-block Hermiticity residual     = {r['sameM_cross_herm']:.2e}")
         print(f"  SAME-M  : spatial-mode off-block residual      = {r['sameM_mode_offdiag']:.2e}")
         print(f"  SAME-M  : particle/hole spectrum vs 2e^-2E     = {r['sameM_spectrum_resid']:.2e}")
@@ -637,9 +637,9 @@ def main() -> int:
         print(f"  SIGN    : wrong reflection physical max eig    = {r['sameM_wrong_reflection_max_eig']:.4f}  (must be <0)")
         print(f"  K1 VAC  : ||F|Omega>|| (MUST be ~0)            = {r['vac_annih_norm']:.2e}")
         print(f"  K1 VAC  : min meson <Theta(F)F> (MUST be >0)   = {r['meson_corr_min_diag']:.4f}")
-        print(f"  P1      : per-config SAME-M Wick minor == operator loop worst = {r['per_config']:.2e}")
+        print(f"  P1      : per-config SAME-M Wick minor == trace kernel worst = {r['per_config']:.2e}")
         print(f"  P1      : full minor - disconnected == crossed term    = {r['sameM_minor_decomposition']:.2e}")
-        print(f"  P0      : SAME-M det-weighted Wick-minor avg == operator worst = {r['avg_genuine']:.2e}")
+        print(f"  P0      : SAME-M det-weighted Wick-minor avg == trace kernel worst = {r['avg_genuine']:.2e}")
         print(f"  P0      : averaged minor decomposition residual        = {r['sameM_avg_decomposition']:.2e}")
         print(f"  SAME-M  : direct minor vs reduced Berezin kernel avg    = {r['sameM_minor_vs_reduced']:.2e}")
         print(f"  Ppos    : averaged meson Gram min eig (MUST >=0) = {r['avg_min_eig']:.4f}")
@@ -661,8 +661,8 @@ def main() -> int:
         print(f"  K5 GAUGE: Wilson-line covariance residual      = {r['K5_wilson_covariance']:.2e}  (must be ~0)")
         print()
         checks.append((f"{label}: P_block eig", r['block_eig_vs_e2E'] < 1e-9, r['block_eig_vs_e2E']))
-        checks.append((f"{label}: P_block Gf Berezin==operator", r['Gf_berezin_vs_operator'] < 1e-9, r['Gf_berezin_vs_operator']))
-        checks.append((f"{label}: P_block full-spacetime M^-1 spectrum==operator", r['Gf_spacetime_vs_operator'] < 1e-9, r['Gf_spacetime_vs_operator']))
+        checks.append((f"{label}: P_block Gf Berezin==trace kernel", r['Gf_berezin_vs_operator'] < 1e-9, r['Gf_berezin_vs_operator']))
+        checks.append((f"{label}: P_block full-spacetime M^-1 spectrum==trace kernel", r['Gf_spacetime_vs_operator'] < 1e-9, r['Gf_spacetime_vs_operator']))
         checks.append((f"{label}: SAME-M cross blocks Hermitian", r['sameM_cross_herm'] < 1e-9, r['sameM_cross_herm']))
         checks.append((f"{label}: SAME-M spatial modes decouple", r['sameM_mode_offdiag'] < 1e-9, r['sameM_mode_offdiag']))
         checks.append((f"{label}: SAME-M particle/hole spectrum", r['sameM_spectrum_resid'] < 1e-9, r['sameM_spectrum_resid']))
@@ -703,17 +703,17 @@ def main() -> int:
         print(f"  [{tag}] {name}  ({detail})")
     print()
     banner("SCOPE")
-    print("This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator")
+    print("This verifies the gauge-invariant meson SAME-M Wick-minor==trace-kernel")
     print("equality on a FINITE 3+1 carrier (transfer matrix in time; spatial lattice the")
     print("regulator), ILLUSTRATING the cited transfer-matrix meson-spectroscopy")
     print("construction (Luescher 1977; Osterwalder-Seiler 1978; Montvay-Munster Ch.3;")
     print("Smit Sec.6).  The vacuum-annihilation obstruction (F|Omega>=0) is handled, NOT")
-    print("dodged: the OS object is the meson 2-pt <Theta(F)F>, a connected 4-fermion")
-    print("correlator = connected quark-line loop, NONZERO and OS-positive.")
+    print("dodged algebraically: the tested object is a connected 4-fermion minor")
+    print("equal to Tr(V^dag G V G), which is NONZERO and positive as a matrix Gram.")
     print("NO continuum claim either way (the continuum step -- transfer-matrix -> Wightman")
     print("reconstruction + spatial-continuum/Lorentz restoration -- is OUT OF SCOPE; the")
     print("framework is 3+1).  The per-config fermion 2-step rung, the Wilson-boundary (H1)")
-    print("positivity, and any interacting-RP closure remain open.")
+    print("positivity, an operator-Hilbert-space meson bridge, and interacting RP remain open.")
     print()
     print(f"SCORECARD PASS={npass} FAIL={nfail}")
     return 0 if nfail == 0 else 1

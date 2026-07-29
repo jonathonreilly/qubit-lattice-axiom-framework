@@ -5,7 +5,9 @@
 Block 01 directly repairs the audited artifact gap. One `Lt=28` Grassmann matrix per
 gauge background now supplies the determinant, inverse, temporal isometries, and
 four-field Wick minor. The direct fixed-background and determinant-weighted results
-agree with the independent operator construction within the stated gates.
+agree with the independently evaluated analytic trace kernel within the stated gates.
+The first review rejected the stronger operator-correlator interpretation, which has
+been removed; an operator-Hilbert-space bridge remains separate work.
 
 ## Imports retired/exposed
 
@@ -17,11 +19,10 @@ agree with the independent operator construction within the stated gates.
 
 ## Review and delivery
 
-Review-loop disposition is pending. Independent audit remains required. Git commit,
-push, and PR creation are not yet attempted because this managed worktree exposes the
-shared Git metadata outside writable roots.
+PR #5770 is open. Review-loop iteration 1 found the operator-semantic gap and stale
+packet state; the branch was narrowed and repaired. Independent audit remains required.
 
 ## Exact next action
 
-Run review-loop on the note, runner, caches, and manifests; fix every blocking finding;
-then set the local disposition to `pass` or demote honestly.
+Run focused confirmation on the narrowed note, runner, caches, and manifests; then
+push the reviewed branch without merging PR #5770.

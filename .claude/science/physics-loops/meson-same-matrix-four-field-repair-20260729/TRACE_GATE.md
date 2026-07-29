@@ -11,5 +11,6 @@ next_trace_action: "independent audit should re-run the primary runner and inspe
 The repaired runner forms `M`, `M^{-1}`, and `slogdet(M)` once per gauge background;
 extracts both raw cross-reflection blocks and their temporal eigenvectors; evaluates the
 full `2 x 2` Wick determinant minus its disconnected term; and compares it with the
-independent Fock loop before and after the same determinant weights. This is the exact
+independently evaluated analytic trace kernel before and after the same determinant
+weights. This is the exact
 artifact named by the blocker, not upstream support or frontier-only work.

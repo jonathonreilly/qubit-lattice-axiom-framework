@@ -316,3 +316,24 @@ checkpoint_0150_block16_landed: >
   checks). Twelve campaign PRs open: #5706-#5717. IN FLIGHT: Cycle 737
   ring-family uniformity (block17) — the L(n) sector theorem across
   admissible ring sizes, or the frozen n-dependence census.
+
+checkpoint_0335_blocks17_18_landed: >
+  #5718 (Cycle 737) + #5719 (Cycle 738) open. RESULTS: (737) the ring
+  is NOT free — K's arithmetic forces n = 8b-5 (admissible 3/11/19/27;
+  station-kind decomposition verified; n=5 fails divisibility); sector
+  theorem family-uniform with Lucas censuses 4/199/9,349/439,204 and
+  zero violations over up to 11.86M orbit steps; checker 18/18 with
+  own bit-plane evaluator (300M distance checks at n=27, 2.1s — far
+  faster than the primary; efficient bit arithmetic pattern worth
+  reusing). (738) general-n sector theorem = machine-checked
+  structural lemmas L1-L5 + anchors; L7 honesty audit reduces the gap
+  to TWO named identities (I_ownership_local_formula = the campaign's
+  own formalization, K defines no predicate; and
+  I_macro_clean_work_uniformity); checker 17/17 rederived lemmas
+  independently and LOCATED the upgrade blocker
+  (source_finalizer_word(b) external b-dependence). Status
+  conditional_on_named_identities — no overclaim. IN FLIGHT: Cycle 739
+  identity-discharge (I1 reclassification as definition; I2
+  row-emission induction; b=1..6 direct evidence). W2 ledger movement:
+  "finite oriented program geometry" is now bank-counted (one integer)
+  within the admissible family. Fourteen campaign PRs: #5706-#5719.

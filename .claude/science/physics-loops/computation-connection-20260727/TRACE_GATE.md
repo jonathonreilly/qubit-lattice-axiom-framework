@@ -97,3 +97,17 @@ Notes:
 - Target: 736's named open (rings beyond 11); tests claimed fixed
   unrolling from geometry across n; honest n-dependence census
   allowed. Class: direct_blocker_closure attempt.
+
+## Cycle 737 (block17) — ring-family uniformity
+- Target moved: 736's rings-beyond-11 open item + W2 geometry supply
+  (now derived: n = 8b-5). Class: direct_blocker_closure. PR #5718.
+
+## Cycle 738 (block18) — general-n sector theorem (structural)
+- Target moved: 737's general-n conjecture -> conditional theorem
+  (machine-checked lemmas; gap = two named identities). Class:
+  direct_blocker_closure (theorem-grade with honest conditions). PR
+  #5719.
+
+## Cycle 739 (block19) — identity discharge (IN FLIGHT)
+- Target: the two named identities; upgrade-or-freeze. Class:
+  direct_blocker_closure attempt.

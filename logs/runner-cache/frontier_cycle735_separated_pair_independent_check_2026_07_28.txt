@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle735_separated_pair_independent_check_2026_07_28.py
+runner_sha256: 50fe1fd02370723c8420cb3c5793392b753305ffafa4f77eb40603d657889079
+input_fingerprint_sha256: 1d1f243121e2c1cc66120e5ca002443ffcf47c854c33bc6320a68254ccb452dc
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.77
+status: ok
+----- stdout -----
+PASS extraction
+PASS template_recount
+PASS invariant_orbit_recount
+PASS adjacency_boundary_recount
+PASS count2_spotcheck
+PASS discipline
+6/6 certificates PASS
+SUMMARY_JSON {"AUDIT_INPUT_PATHS":["scripts/frontier_cycle735_separated_pair_lawful_control_2026_07_28.py","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"],"NOTE_PATH":"docs/SEPARATED_PAIR_LAWFUL_CONTROL_CYCLE735_BOUNDED_THEOREM_NOTE_2026-07-28.md","audit_timeout_seconds":900,"boundary":{"lawful_distance_domain":[2,3,4,5],"scope_language":{"geometry":"ring-11 only","renewal":"W4 renewal untouched","sources":"two sources only"},"separated_pair_lawful_control":true,"two_source_composition_ring11":true},"certificates":{"adjacency_boundary_recount":{"distance":1,"failures":[],"frozen_Cycle734_wall":"ownership_uniqueness_at_adjacent_Q_sites","neighbor_A_reasons":22,"pass":true,"positions":11,"step":0,"violations":22},"count2_spotcheck":{"count_1_and_3_witnesses":{"1":{"A_count":1,"B_count":0,"accepted":false,"count_ok":false,"h":1,"parity_ok":true},"3":{"A_count":3,"B_count":0,"accepted":false,"count_ok":false,"h":1,"parity_ok":true}},"expected_count":2,"pass":true,"sample_failures":[],"sample_family_cases":12,"source_frozen_witness_domain":[0,1,3,4]},"discipline":{"AUDIT_INPUT_PATHS_pure_literal_value":["scripts/frontier_cycle735_separated_pair_lawful_control_2026_07_28.py","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"],"K_attribute_surface_unchanged":true,"K_attribute_writes":0,"blocklisted_primary_imports":[],"frozen_tables_literal":true,"pass":true,"runtime_below_timeout":true,"scope_language":{"geometry":"ring-11 only","renewal":"W4 renewal untouched","sources":"two sources only"}},"extraction":{"AUDIT_literal_eval":true,"W4_statement":"bounded separated multi-source composition on the held fixture: two sources move at ring-11 scope with supplies declared; W4's renewal component is untouched","adjacent_control_distance":1,"boundary":{"lawful_distance_domain":[2,3,4,5],"separated_pair_lawful_control":true,"two_source_composition_ring11":true},"boundary_bindings_exact":true,"census":{"adjacency_step0_violations":22,"invariant_violations":0,"occupied_checks":968,"orbits":44,"separated_pairs":44,"station_checks":5324,"steps":484,"translation_identities":484},"convention":"positive-shortest representative d=2..5; d and 11-d are the same unordered separation after endpoint exchange","distances":[2,3,4,5],"expected_count":2,"pass":true,"ring_stations":11,"source_AUDIT_INPUT_PATHS":["scripts/frontier_cycle734_paired_excitation_genesis_2026_07_28.py","scripts/frontier_cycle731_token_count_certificate_2026_07_28.py","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"],"template_AST_exact":true},"invariant_orbit_recount":{"census":{"invariant_violations":0,"occupied_checks":968,"orbits":44,"station_checks":5324,"steps":484},"closure_failures":0,"composition_failures":0,"direct_step_disagreements":0,"distance_failures":0,"failures":[],"pass":true,"trace_failures":0,"unique_pairs":44},"template_recount":{"bit_exact_cases":44,"failures":[],"own_simulator":"integer XOR bitmask","pass":true,"translation_identities":484}},"checks":{"adjacency_boundary_recount":true,"count2_spotcheck":true,"discipline":true,"extraction":true,"invariant_orbit_recount":true,"template_recount":true},"checks_passed":6,"checks_total":6,"frozen_census":{"adjacency_step0_violations":22,"invariant_violations":0,"occupied_checks":968,"orbits":44,"separated_pairs":44,"station_checks":5324,"steps":484,"translation_identities":484},"pass":true,"runtime_seconds":0.345935,"stdout_bytes":3726,"stdout_limit_bytes":153600}
+CYCLE735_SEPARATED_PAIR_INDEPENDENT_CHECK_PASS
+
+----- stderr -----
+

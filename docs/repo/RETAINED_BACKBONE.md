@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 118 |
+| Retained positive rows | 119 |
 | Retained bounded rows | 352 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
-## Retained positive rows (118)
+## Retained positive rows (119)
 
 Sorted by load-bearing graph score (descending).
 
@@ -61,6 +61,7 @@ Sorted by load-bearing graph score (descending).
 - [`beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10`](../../docs/BETA_GBARE_RESCALING_ABSTRACT_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md) — score 12.040; audited 2026-06-06T16:26:01.015460+00:00
 - [`sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06`](../../docs/SHARP_RECORD_FISHER_TANGENT_SPACE_NARROW_THEOREM_NOTE_2026-06-06.md) — score 12.026; audited 2026-06-13T22:42:56.743023+00:00
 - [`gauge_vacuum_plaquette_framework_point_underdetermination_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_FRAMEWORK_POINT_UNDERDETERMINATION_NOTE.md) — score 11.725; audited 2026-07-22T18:13:23.636281+00:00
+- [`cl3_to_cl31_spinor_extension_narrow_theorem_note_2026-05-27`](../../docs/CL3_TO_CL31_SPINOR_EXTENSION_NARROW_THEOREM_NOTE_2026-05-27.md) — score 11.670; audited 2026-07-29T13:36:54.974903+00:00
 - [`three_generation_observable_m3c_burnside_narrow_theorem_note_2026-05-10`](../../docs/THREE_GENERATION_OBSERVABLE_M3C_BURNSIDE_NARROW_THEOREM_NOTE_2026-05-10.md) — score 11.658; audited 2026-07-12T19:21:35.332691+00:00
 - [`universal_gr_supermetric_normal_form_note`](../../docs/UNIVERSAL_GR_SUPERMETRIC_NORMAL_FORM_NOTE.md) — score 11.585; audited 2026-05-07T01:31:04.953494+00:00
 - [`hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10`](../../docs/HIERARCHY_DIMENSIONAL_FOURTH_ROOT_COMPRESSION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 11.539; audited 2026-07-22T19:33:03.631121+00:00

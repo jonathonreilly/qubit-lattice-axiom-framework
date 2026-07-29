@@ -81,7 +81,7 @@
   "cycles_detected": 58,
   "effective_status_counts": {
     "audit_in_progress": 2,
-    "audited_conditional": 274,
+    "audited_conditional": 273,
     "audited_failed": 70,
     "audited_numerical_match": 10,
     "audited_renaming": 33,
@@ -107,7 +107,7 @@
     "decoration_under_wilson_small_a_matching_beta_gbare_narrow_theorem_note_2026-06-07": 1,
     "meta": 356,
     "open_gate": 3,
-    "retained": 118,
+    "retained": 119,
     "retained_bounded": 352,
     "retained_pending_chain": 10,
     "unaudited": 2653

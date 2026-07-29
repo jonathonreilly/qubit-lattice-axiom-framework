@@ -1060,10 +1060,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
           "effective_status": "unaudited"
         },
@@ -2748,7 +2744,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 630
+      "uncertified_count": 629
     }
   ],
   "schema": "lane_certification_v2"

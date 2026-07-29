@@ -17,7 +17,7 @@ publication tables phrase it.
 
 | criticality | effective_status | count |
 |---|---|---:|
-| critical | `unaudited` | 232 |
+| critical | `unaudited` | 231 |
 | high | `unaudited` | 165 |
 | medium | `unaudited` | 110 |
 | critical | `audited_conditional` | 10 |
@@ -36,7 +36,7 @@ publication tables phrase it.
 | medium | `audited_numerical_match` | 1 |
 | medium | `audited_renaming` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 549
+**Total non-retained-grade rows in publication tables:** 548
 
 ## Per-row breakdown
 
@@ -117,7 +117,6 @@ publication tables phrase it.
 | critical | `gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | critical | `gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| critical | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
 | critical | `gravity_clean_derivation_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | critical | `gravity_full_self_consistency_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md |
 | critical | `hierarchy_bosonic_bilinear_selector_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md, USABLE_DERIVED_VALUES_INDEX.md |

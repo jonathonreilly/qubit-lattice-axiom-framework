@@ -57,7 +57,7 @@ These dispatch targets have been re-audited after their manifest's `generated_da
 | # | state | claim_id | current |
 |---:|---|---|---|
 | 1 | resolved_or_superseded | `native_gauge_closure_note` | positive_theorem / audited_clean / retained |
-| 2 | resolved_or_superseded | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem / unaudited / unaudited |
+| 2 | resolved_or_superseded | `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note` | positive_theorem / audited_clean / retained |
 | 3 | resolved_or_superseded | `gauge_scalar_temporal_completion_theorem_note` | positive_theorem / audited_clean / retained |
 | 4 | resolved_or_superseded | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | positive_theorem / unaudited / unaudited |
 | 5 | resolved_or_superseded | `scalar_3plus1_temporal_ratio_note` | positive_theorem / audited_clean / retained |

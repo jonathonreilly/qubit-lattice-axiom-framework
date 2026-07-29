@@ -1,0 +1,37 @@
+loop_slug: lh-traceless-eigenvalue-ratio-stdout-repair-20260729
+mode: run
+target_status: best-honest-status
+current_goal: >-
+  Supply complete, source-bound, unclipped current-cycle runner evidence for
+  the existing LH traceless projective-ratio theorem without changing its scope.
+branch: claude/science-fix/lh_traceless_eigenvalue_ratio_narrow_theorem_note_2026-05-10-76e8f43a
+base_commit_inspected: a1e2bc70615fd8d09edd8dca3287ec054e0e9a4a
+cycle: 1
+active_route: source-bound complete runner transcript
+approach_family_coverage:
+  - direct symbolic rearrangement
+  - exact nullspace certificate
+strongest_unresolved_proof_obligation: null
+hard_residual: null
+files_touched:
+  - docs/LH_TRACELESS_EIGENVALUE_RATIO_NARROW_THEOREM_NOTE_2026-05-10.md
+  - scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py
+  - logs/runner-cache/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.txt
+  - .claude/science/physics-loops/lh-traceless-eigenvalue-ratio-stdout-repair-20260729/
+open_imports: []
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_findings: pass
+pr_status: review_loop_integration_owned
+commit_status: unavailable_in_managed_worktree
+remote_science_branch: null
+lock_mode: branch-local cooperative lock
+lock_note: >-
+  The shared lock path was unavailable in the managed workspace; a task-local
+  lock was acquired under /tmp for this isolated repair.
+next_exact_action: Submit the same claim scope to independent re-audit.
+stop_condition: Complete current-cycle stdout is source-bound, unclipped, and locally reviewed.
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: positive_theorem
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

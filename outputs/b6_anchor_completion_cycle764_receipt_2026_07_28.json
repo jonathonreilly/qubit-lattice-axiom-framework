@@ -1,0 +1,49 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle764_b6_anchor_completion_2026_07_28.txt": "7b6bf567d9e511f238020c301058ea0ab1bebb73fba45bc930f7a6ea0c455a1f",
+      "frontier_cycle764_completion_independent_check_2026_07_28.txt": "c777131c2ccae8ca0f9417b6fd095974498acd4a7069787bd313f79e941c4d9f"
+    },
+    "note": {
+      "path": "docs/B6_ANCHOR_COMPLETION_CYCLE764_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "267297b7a484c2e111e62984bdd7cc8ac46afabf1301556324190a76b068e993"
+    },
+    "runners": {
+      "frontier_cycle764_b6_anchor_completion_2026_07_28.py": "005c699206171bedb4a74a984b8dbf7f1231941602b8647dfd9f170e87e61dff",
+      "frontier_cycle764_completion_independent_check_2026_07_28.py": "75e5daff1bb4fba35b729120ed7e7084cbaa888eb1acf295aab345c8a6989430"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "completion": "disjoint strata union = L(43) = 969,323,029 (set-level + arithmetic, independently verified)",
+    "fixed_supplies": "everything the Cycle-737/739/740 packages declare per family member",
+    "not_derived": "b>=7 rings; the general-b structural statement unchanged",
+    "positive_scope": "the k=12..21 residual sweep (566,742,881 configs; 24,369,943,883 steps; zero violations; primary ~50M steps/s, checker replay 1.47B steps/s); 860 near-miss controls; the completion partition audit",
+    "sixth_ring_complete": true,
+    "total_steps_n43": 41680890247
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 10,
+    "primary_named_checks_passed": 8
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 764,
+  "date": "2026-07-29",
+  "result": {
+    "n43_configs": 969323029,
+    "n43_steps": 41680890247,
+    "ring_family_complete": [
+      3,
+      11,
+      19,
+      27,
+      35,
+      43
+    ],
+    "violations": 0
+  },
+  "status": "CYCLE764_SIXTH_RING_COMPLETE_PASS"
+}

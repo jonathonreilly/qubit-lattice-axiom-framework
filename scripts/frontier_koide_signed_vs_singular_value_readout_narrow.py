@@ -55,6 +55,11 @@ only; this runner does not set or predict an audit outcome.
 
 import sys
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = (
+    "docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md",
+)
+
 try:
     import sympy as sp
     from sympy import (

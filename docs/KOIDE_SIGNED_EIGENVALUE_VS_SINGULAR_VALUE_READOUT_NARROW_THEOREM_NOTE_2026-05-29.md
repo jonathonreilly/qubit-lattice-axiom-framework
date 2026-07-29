@@ -436,6 +436,11 @@ verifies, at exact sympy precision (cached at
    (`a > 0`, `|b| > 0`, `θ` real); `2/3` is comparator-only; `r = 1/2` is a
    hypothesis (Part 9).
 
+The runner declares this note through `AUDIT_INPUT_PATHS`; its canonical
+transcript is usable only when both the runner source and this note match the
+recorded content identities. No-argument execution emits the complete
+`30 PASS / 0 FAIL` transcript without clipping.
+
 ## Cross-references
 
 - `koide_circulant_q_two_thirds_algebraic_narrow_theorem_note_2026-05-10`

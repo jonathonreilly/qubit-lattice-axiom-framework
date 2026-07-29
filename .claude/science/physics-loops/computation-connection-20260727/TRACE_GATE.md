@@ -111,3 +111,10 @@ Notes:
 ## Cycle 739 (block19) — identity discharge (IN FLIGHT)
 - Target: the two named identities; upgrade-or-freeze. Class:
   direct_blocker_closure attempt.
+
+## Cycle 739 (block19) — identity discharge (v1 honest-FAIL -> v2 amended)
+- Target moved: the two 738 conditions — both REFUTED as stated and
+  corrected in-package (six-term predicate; b<=12 capacity domain);
+  theorem upgraded to unconditional-within-capacity. Class:
+  direct_blocker_closure with frozen corrections. PR #5720 (+
+  cross-comment on #5719).

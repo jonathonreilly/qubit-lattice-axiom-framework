@@ -337,3 +337,21 @@ checkpoint_0335_blocks17_18_landed: >
   row-emission induction; b=1..6 direct evidence). W2 ledger movement:
   "finite oriented program geometry" is now bank-counted (one integer)
   within the admissible family. Fourteen campaign PRs: #5706-#5719.
+
+checkpoint_0450_block19_landed_theorem_arc_closed: >
+  #5720 open (Cycle 739, stacked on #5719, CORRECTS it; cross-comment
+  posted on #5719). The discharge attempt REFUTED both Cycle-738
+  conditions as stated — v1 ran honest-FAIL (9/11 exit 1), then the
+  amended package froze both corrections: I1's real predicate is
+  SIX-term (neighbor-B terms; 2/2 call sites; the 738 statement was
+  too simple); I2's all-b scope ends at the mapper's finite placement
+  tables (BANK_BASES 12 / LINK_BASES 11; 8-row b=13 IndexError census;
+  finalizer EXONERATED — bank-count arg never loaded). Amended
+  transport re-verified; all 564 emitted rows b=1..12 clean. FINAL:
+  unconditional_for_admissible_b_le_12_with_amended_predicate (rings
+  to n=91); beyond b=12 = table enlargement (construction, not
+  conjecture). Checker 6/6 all-own recounts. THEOREM ARC (736->739)
+  CLOSED at the machinery's true edge. Fifteen campaign PRs:
+  #5706-#5720. LESSON: theorem conditions must be checked against the
+  implemented predicate's AST, not restated from memory — the v1
+  honest-FAIL caught a statement error that review would have flagged.

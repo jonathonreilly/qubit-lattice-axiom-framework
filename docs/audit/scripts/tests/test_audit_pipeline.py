@@ -15835,11 +15835,23 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         m = _import("orchestrate_judicial_panel")
         row = self._row()
 
-        class UnrenderableCleanupError(m.batch.CleanupIntegrityError):
+        class NameHostileMeta(type):
+            def __getattribute__(cls, name):
+                if name == "__name__":
+                    raise RuntimeError("type-name rendering failed")
+                return super().__getattribute__(name)
+
+        class UnrenderableCleanupError(
+            m.batch.CleanupIntegrityError,
+            metaclass=NameHostileMeta,
+        ):
             def __str__(self):
                 raise OSError("primary rendering failed")
 
-        class UnrenderableSecondaryError(RuntimeError):
+        class UnrenderableSecondaryError(
+            RuntimeError,
+            metaclass=NameHostileMeta,
+        ):
             def __str__(self):
                 raise OSError("secondary rendering failed")
 

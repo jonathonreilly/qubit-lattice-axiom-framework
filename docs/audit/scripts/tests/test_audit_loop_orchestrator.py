@@ -2354,35 +2354,69 @@ class ClaimTransactionTest(unittest.TestCase):
         proc.wait.assert_not_called()
 
     def test_cleanup_exception_rendering_is_typed_and_exhaustive(self):
-        class UnrenderableSignalError(OSError):
-            def __str__(self):
-                raise RuntimeError("signal rendering failed")
+        class NameHostileMeta(type):
+            def __getattribute__(cls, name):
+                if name == "__name__":
+                    raise RuntimeError("type-name rendering failed")
+                return super().__getattribute__(name)
 
-        class UnrenderableCleanupError(batch.CleanupIntegrityError):
+        class FormatHostileText(str):
+            def __format__(self, _format_spec):
+                raise RuntimeError("exception formatting failed")
+
+        class FormatHostileSignalError(OSError):
+            def __str__(self):
+                return FormatHostileText("signal rendering failed")
+
+        class DescriptorHostileMeta(type):
+            @property
+            def __name__(cls):
+                raise RuntimeError("type-name descriptor failed")
+
+        class UnrenderableCleanupError(
+            batch.CleanupIntegrityError,
+            metaclass=NameHostileMeta,
+        ):
             def __str__(self):
                 raise OSError("cleanup rendering failed")
+
+        class FullyUnrenderableCleanupError(
+            batch.CleanupIntegrityError,
+            metaclass=DescriptorHostileMeta,
+        ):
+            def __str__(self):
+                raise OSError("cleanup rendering failed")
+
+        rendered = batch.safe_exception_text(FormatHostileSignalError())
+        self.assertIs(type(rendered), str)
+        self.assertEqual(rendered, "signal rendering failed")
+        self.assertEqual(
+            batch.safe_exception_text(UnrenderableCleanupError()),
+            "<unprintable UnrenderableCleanupError>",
+        )
+        self.assertEqual(
+            batch.safe_exception_text(FullyUnrenderableCleanupError()),
+            "<unprintable BaseException>",
+        )
 
         proc = mock.Mock(pid=4444)
         with mock.patch.object(
             batch.os,
             "killpg",
-            side_effect=UnrenderableSignalError(),
+            side_effect=FormatHostileSignalError(),
         ):
             with self.assertRaises(batch.CleanupIntegrityError) as raised:
                 batch.terminate_read_only_seat(
                     {"proc": proc, "process_group": 4444}
                 )
-        self.assertIn(
-            "<unprintable UnrenderableSignalError>",
-            str(raised.exception),
-        )
+        self.assertIn("signal rendering failed", str(raised.exception))
         proc.wait.assert_not_called()
 
-        jobs = [{"cid": "first"}, {"cid": "second"}]
+        jobs = [{"cid": "first"}, {"cid": "second"}, {"cid": "third"}]
         with mock.patch.object(
             batch,
             "terminate_read_only_seat",
-            side_effect=[UnrenderableCleanupError(), None],
+            side_effect=[UnrenderableCleanupError(), None, None],
         ) as terminate:
             with self.assertRaises(batch.CleanupIntegrityError) as raised:
                 batch.terminate_read_only_seats(jobs)
@@ -2440,6 +2474,49 @@ class ClaimTransactionTest(unittest.TestCase):
         )
         self.assertIn("worker log cleanup also failed", str(raised.exception))
         failing_log.close.assert_called_once_with()
+
+    def test_worker_log_error_rendering_is_total_and_exhaustive(self):
+        class NameHostileMeta(type):
+            def __getattribute__(cls, name):
+                if name == "__name__":
+                    raise RuntimeError("type-name rendering failed")
+                return super().__getattribute__(name)
+
+        class UnrenderableLogError(OSError, metaclass=NameHostileMeta):
+            def __str__(self):
+                raise RuntimeError("log error rendering failed")
+
+        class FormatHostileClaim(str):
+            def __str__(self):
+                return self
+
+            def __format__(self, _format_spec):
+                raise RuntimeError("claim formatting failed")
+
+        first_log = mock.Mock(closed=False)
+        first_log.close.side_effect = UnrenderableLogError()
+        second_log = mock.Mock(closed=False)
+        second_log.close.side_effect = OSError("second log close failed")
+
+        failures = batch.close_worker_logs(
+            [
+                {
+                    "cid": FormatHostileClaim("first"),
+                    "log_handle": first_log,
+                },
+                {"cid": "second", "log_handle": second_log},
+            ]
+        )
+
+        first_log.close.assert_called_once_with()
+        second_log.close.assert_called_once_with()
+        self.assertEqual(len(failures), 2)
+        self.assertIn(
+            "first: UnrenderableLogError: "
+            "<unprintable UnrenderableLogError>",
+            failures[0],
+        )
+        self.assertIn("second log close failed", failures[1])
 
     def test_worker_teardown_bounds_leader_reap(self):
         proc = mock.Mock(pid=4444)
@@ -5445,6 +5522,16 @@ class CampaignContractTest(unittest.TestCase):
         run_panel.assert_not_called()
 
     def test_parent_finalizers_preserve_cleanup_exit_from_every_child_route(self):
+        class NameHostileMeta(type):
+            def __getattribute__(cls, name):
+                if name == "__name__":
+                    raise RuntimeError("type-name rendering failed")
+                return super().__getattribute__(name)
+
+        class UnrenderableFinalizerError(OSError, metaclass=NameHostileMeta):
+            def __str__(self):
+                raise RuntimeError("finalizer rendering failed")
+
         routes = (
             ("opening_panel", False),
             ("dispatch_source", False),
@@ -5454,14 +5541,14 @@ class CampaignContractTest(unittest.TestCase):
         for route, scoped_lane in routes:
             with self.subTest(route=route), tempfile.TemporaryDirectory() as tmp:
                 lock = mock.Mock()
-                lock.close.side_effect = OSError("parent lock close failed")
+                lock.close.side_effect = UnrenderableFinalizerError()
                 final_summary_attempted = False
 
                 def emit(message):
                     nonlocal final_summary_attempted
                     if message == "forced-final-summary":
                         final_summary_attempted = True
-                        raise OSError("stdout unavailable")
+                        raise UnrenderableFinalizerError()
 
                 panel_calls = 0
 
@@ -5545,6 +5632,10 @@ class CampaignContractTest(unittest.TestCase):
                 warning = str(print_mock.call_args.args[0])
                 self.assertIn("forced final summary failed", warning)
                 self.assertIn("parent drain-lock close failed", warning)
+                self.assertIn(
+                    "<unprintable UnrenderableFinalizerError>",
+                    warning,
+                )
                 if route == "opening_panel":
                     self.assertEqual(panel_calls, 1)
                     self.assertEqual(drain_calls, 0)

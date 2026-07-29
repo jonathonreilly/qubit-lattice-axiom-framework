@@ -82,11 +82,10 @@ def emit(message: str) -> None:
 
 def finalization_failure(label: str, exc: BaseException) -> str:
     """Render secondary finalizer context without risking another exception."""
-    try:
-        detail = str(exc)
-    except BaseException:
-        detail = "<unprintable finalization failure>"
-    return f"{label}: {type(exc).__name__}: {detail}"
+    return (
+        f"{label}: {batch.safe_exception_type_name(exc)}: "
+        f"{batch.safe_exception_text(exc)}"
+    )
 
 
 def emit_preserving_primary_result(message: str) -> None:

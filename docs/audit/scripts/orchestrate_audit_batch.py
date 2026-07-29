@@ -203,12 +203,21 @@ class CleanupIntegrityError(RuntimeError):
     """An owned read-only seat group could not be proven absent."""
 
 
-def safe_exception_text(exc: BaseException) -> str:
-    """Render exception context without letting ``__str__`` alter control flow."""
+def safe_exception_type_name(exc: BaseException) -> str:
+    """Return an exact built-in string without trusting exception metadata."""
     try:
-        return str(exc)
+        name = type.__getattribute__(type(exc), "__name__")
+        return str.__str__(name)
     except BaseException:
-        return f"<unprintable {type(exc).__name__}>"
+        return "BaseException"
+
+
+def safe_exception_text(exc: BaseException) -> str:
+    """Render exception context as an exact string without altering control flow."""
+    try:
+        return str.__str__(str(exc))
+    except BaseException:
+        return "<unprintable " + safe_exception_type_name(exc) + ">"
 
 
 def _repo_identity() -> str:
@@ -1056,10 +1065,12 @@ def close_worker_logs(jobs: list[dict]) -> list[str]:
         except BaseException as exc:
             detail = safe_exception_text(exc)
             try:
-                claim = str(job.get("cid", "<unknown>"))
+                claim = str.__str__(str(job.get("cid", "<unknown>")))
             except BaseException:
                 claim = "<unprintable claim id>"
-            failures.append(f"{claim}: {type(exc).__name__}: {detail}")
+            failures.append(
+                f"{claim}: {safe_exception_type_name(exc)}: {detail}"
+            )
     return failures
 
 

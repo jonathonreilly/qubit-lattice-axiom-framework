@@ -1,0 +1,71 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle734_paired_excitation_genesis_2026_07_28.txt": "ddd7a78ec2655a5041c29f3c7aad71c814dfc2dace52eea2efa78b9fedd8a031",
+      "frontier_cycle734_paired_excitation_independent_check_2026_07_28.txt": "a258128c108b256cc8d67bcb0bcdccfe080db75b86b55f3683e6ed549e19ddc1"
+    },
+    "note": {
+      "path": "docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "c0828362f63a85e8222d86a1adf05c4eb452e4f453460613cd457f7db86a1d24"
+    },
+    "runners": {
+      "frontier_cycle734_paired_excitation_genesis_2026_07_28.py": "53d823a25abe7920f5af8bbb401acb064e3f64f5ea8bd3e01eca334f1cfe0cd6",
+      "frontier_cycle734_paired_excitation_independent_check_2026_07_28.py": "6dff58249c39685729125b3e9421de4ac6a2245ddd976bf03dd1b3046f94133f"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "controller_two_token_lawful": false,
+    "fixed_supplies": "the all-blank Cycle-731 ring-11 register with clean auxiliaries; the external application-position parameter (not a distinguished site); the expected_count=2 comparison parameter; the finite oriented ring geometry; program content/order on the held two-bank fixture; passive ring-translation relabeling; the held data genesis and direction for the controller probe",
+    "frozen_obstruction": "ownership_uniqueness_at_adjacent_Q_sites",
+    "not_derived": "multi-token control (the adjacency wall is frozen, not solved); W2's other components; separated-pair (distance >= 2) behavior is untested here; no time/Record/Born/source content",
+    "positive_scope": "a position-free 3-gate pair-creation template with bit-exact outputs at all 11 ring positions; exact translation covariance (121/121 conjugation identities); count-2 enforcement through the unchanged parameterized Cycle-731 constructor (all 11 pairs accepted; 0/1/3/4-count witnesses refused; exact h=0 sector recount, 55 = C(11,2) full-law passes, zero iff exceptions); 33/33 deletion controls; the frozen adjacency obstruction with minimal witness, every-step violation trace, single-token specificity control, and frozen bare-transport observation",
+    "source_boundary_retired_for_preparation": true,
+    "w2_remaining_components": [
+      "finite oriented geometry",
+      "program content/order",
+      "passive-only covariance"
+    ]
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 734,
+  "date": "2026-07-28",
+  "result": {
+    "count2_controller": {
+      "api": "count_certified_controller_build(..., expected_count=2)",
+      "semantic_gates": 11206
+    },
+    "deletion_controls": "33/33 detected and refused",
+    "frozen_obstruction": {
+      "first_stations": [
+        0,
+        1
+      ],
+      "first_step": 0,
+      "invariant": "an occupied A station requires own B/work and both neighboring A/B rails blank at the Q boundary",
+      "name": "ownership_uniqueness_at_adjacent_Q_sites",
+      "reproduced_by_checker_from_K_directly": true,
+      "single_token_control_violations": 0
+    },
+    "pair_word_gates": {
+      "X": 3,
+      "total": 3
+    },
+    "sector_recount": {
+      "cases": 2048,
+      "count2_pass": 55,
+      "even_parity_pass": 1024,
+      "full_pass": 55,
+      "iff_exceptions": 0
+    },
+    "translation_covariance_identities": "121/121"
+  },
+  "status": "CYCLE734_PAIRED_EXCITATION_GENESIS_PASS_WITH_FROZEN_OBSTRUCTION"
+}

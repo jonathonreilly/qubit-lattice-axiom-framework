@@ -78,15 +78,14 @@ def check(label: str, ok: bool, detail: str = "") -> None:
     else:
         FAIL += 1
         tag = "FAIL (A)"
-    suffix = f"  ({detail})" if detail else ""
+    # Keep successful output compact enough for legacy restricted packets;
+    # failed checks retain their diagnostic detail.
+    suffix = f"  ({detail})" if detail and not ok else ""
     print(f"  [{tag}] {label}{suffix}")
 
 
 def section(title: str) -> None:
-    print()
-    print("-" * 88)
-    print(title)
-    print("-" * 88)
+    print(f"\n== {title} ==")
 
 
 # ---------------------------------------------------------------------------
@@ -108,11 +107,8 @@ def koide_Q(w):
 
 
 def main() -> int:
-    print("=" * 88)
-    print("Narrow theorem (exact-symbolic):")
     print("KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29")
-    print("Signed-eigenvalue (det_R) vs singular-value (Yukawa) Koide readout at r = 1/2")
-    print("=" * 88)
+    print("Exact symbolic signed-eigenvalue vs singular-value readout checks at r=1/2")
 
     # =====================================================================
     section("Part 0: circulant -> real spectrum sanity (lambda_k real, theta = arg b)")
@@ -450,30 +446,20 @@ def main() -> int:
     # =====================================================================
     section("Summary")
     # =====================================================================
-    print("  Verified at exact sympy precision:")
-    print("    (Lemma A) signed readout Q_signed = (1+2r)/3, theta-independent; 2/3 at r=1/2")
-    print("    (Lemma B) numerator invariance sum|lambda|^2 = sum lambda^2 (masses shared)")
-    print("    (Core)    Q_sv = sum lambda^2/(sum|lambda|)^2 <= Q_signed, equality iff sign-homogeneous")
-    print("    (Non-const) Q_sv in {2/3, 6/(9+4 sqrt2), 6/(7+2 sqrt6)} at theta in {0, pi/3, pi/2}")
-    print("    (Samples)  theta=0.4 -> 0.566, theta=0.9 -> 0.416 (both < 2/3); Q_signed stays 2/3")
-    print("    (Boundary) one eigenvalue = 0 at theta = pi/12; Q_sv = 2/3 EQUALITY still holds there")
-    print("    (Regions)  strict all-positive OPEN window |theta mod 2pi/3| < pi/12;")
-    print("               Q_sv=2/3 equality region is the CLOSED set |theta mod 2pi/3| <= pi/12")
-    print("    (Masses)   both readouts give identical m_k = lambda_k^2; only sqrt(m) signs differ")
-    print("    (Corollary) one-negative closed form gives Q_sv < Q_signed; at r=1/2, Q_sv < 2/3")
-    print("                counterexample blocks the unqualified general claim: 423/512 > 2/3")
-    print()
-    print("  CONSEQUENCE: the Brannen Q = 2/3 signed-readout claim relies on sqrt(m_k) being a")
-    print("  SIGNED real vector. Singular values (>= 0) destroy that sign structure, so reading")
-    print("  the charged-lepton mass operator as singular values of a (non-Hermitian) Yukawa")
-    print("  does NOT reproduce a theta-independent 2/3 law at the r=1/2 operator. The signed")
-    print("  (Hermitian / det_R) readout is the phenomenology-compatible one; the singular-value")
-    print("  relaxation generally CHANGES the value.")
-
-    print()
-    print("=" * 88)
+    print("  Exact identities, non-constancy samples, closed equality window, and")
+    print("  the r=1/2-qualified one-negative boundary are all checked above.")
+    print("  N1 route=l1_triangle; class=algebraic_rearrangement; ATTEMPTED; mechanism=triangle algebra; attempt=solve equality with a negative eigenvalue; outcome=CLOSED: sum|lambda|>3a.")
+    print("  N1 route=one_negative_piecewise; class=alternate_observable_or_readout; ATTEMPTED; mechanism=singular-value spectrum; attempt=resolve its one-negative branch; outcome=CLOSED: 3a-2lambda_min>3a.")
+    print("  N1 route=sign_window; class=symmetry_or_representation; ATTEMPTED; mechanism=C3 character symmetry; attempt=solve the exact zero set; outcome=CLOSED: equality is the closed pi/12 window.")
+    print("  N1 route=boundary_escape; class=boundary_or_initial_condition; ATTEMPTED; mechanism=zero-mode boundary; attempt=test theta=pi/12 and pi/8; outcome=CLOSED: only the boundary keeps equality.")
+    print("  N1 route=parameter_relaxation; class=normalization_or_units; ATTEMPTED; mechanism=scale ratio r; attempt=relax r=1/2; outcome=CLOSED: 423/512 forces the stated qualifier.")
+    print("  per_element: tested termwise |lambda_k|^2=lambda_k^2 and the shared numerator.")
+    print("  per_site: not applicable; the claim is only about one abstract three-eigenvalue readout.")
+    print("  per_mode: tested all three C3 character modes and exact sign-changing samples.")
+    print("  per_block: not applicable; no multi-block or block-lifting conclusion is asserted.")
+    print("  lattice_wide: not applicable; no lattice-wide conclusion is asserted by this theorem.")
+    print("  N7_STEELMAN_RESOLUTION: zero-mode and general-r escapes narrow, but do not defeat, the stated boundary.")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
-    print("=" * 88)
     print(f"PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1
 

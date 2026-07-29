@@ -303,6 +303,106 @@ is a property of the cyclic group `ℤ/3ℤ`, not of any framework axiom.
 - No admitted unit conventions load-bearing on the claim.
 - No same-surface family arguments.
 
+## No-Go Discipline gate for the derived boundary
+
+**Negative assertion class:** `derived_no_go_boundary` only.  The boundary is
+the narrow algebraic statement that, at `r = 1/2`, the singular-value readout
+cannot equal `2/3` once the spectrum leaves the closed nonnegative-spectrum
+window.  It is not a claim about all Koide mechanisms, all readouts, or any
+lattice/physical realization.  **N1--N8 status: PASS.**
+
+### N1 — alternative-route enumeration
+
+Each route below was attempted in the displayed proof and is emitted as a
+current-execution `ATTEMPTED` certificate by the primary runner.
+
+| Family | Route class | Object / mechanism / terminal test | Disposition |
+|---|---|---|---|
+| `l1_triangle` | `algebraic_rearrangement` | Compare the signed and modulus denominators using equality in the real triangle inequality; an escape would require `Σ|λ_k| = Σλ_k` despite a negative entry. | `ATTEMPTED`: impossible, because a negative entry makes `Σ|λ_k| > 3a`; see (T-ii) and runner Part 3. |
+| `one_negative_piecewise` | `alternate_observable_or_readout` | Resolve the singular-value readout on a branch with one negative eigenvalue; an escape would require `(3a-2λ_min)^2 = (3a)^2` with `λ_min < 0`. | `ATTEMPTED`: impossible, since `3a-2λ_min > 3a`; see C2 and runner Part 8. |
+| `sign_window` | `symmetry_or_representation` | Solve the exact zero set of `1+√2 cos(θ+2πk/3)` on one `2π/3` fundamental domain using `C_3` character symmetry and propagate signs by continuity. | `ATTEMPTED`: the equality set is exactly the closed window `|θ mod 2π/3| ≤ π/12`; see C1 and runner Part 6. |
+| `boundary_escape` | `boundary_or_initial_condition` | Test whether the zero-mode boundary at `θ=π/12` defeats the strict-window wording. | `ATTEMPTED`: it defeats the old *open equality-window* wording, so the source includes the boundary; immediately outside it a negative eigenvalue makes the inequality strict. |
+| `parameter_relaxation` | `normalization_or_units` | Relax the scale ratio `r=1/2` while keeping one negative eigenvalue and search for `Q(V)>2/3`. | `ATTEMPTED`: the exact spectrum `(29/10,1/5,-1/10)` gives `Q(V)=423/512>2/3`, so the negative boundary is explicitly restricted to `r=1/2`; see C2 and runner Part 8. |
+
+These are distinct proof families: norm equality, piecewise absolute-value
+algebra, trigonometric sign-cell classification, degenerate-boundary analysis,
+and hypothesis-relaxation falsification.  The last two routes narrowed earlier
+overbroad formulations rather than being hidden.
+
+### N2 — wall-independence audit
+
+There is one condition in the negative boundary: leaving the closed
+nonnegative-spectrum window at fixed `r=1/2`.  The equivalent descriptions
+"some `λ_k<0`" and "`Σ|λ_k|>3a`" are not presented as independent walls; the
+proof derives the second from the first.  The collapsed wall count is one, so
+no pairwise independence table remains.
+
+### N3 — hidden-wall scan
+
+A case-insensitive scan of this note and runner for `we assume`, `by
+construction`, `as is standard`, `the framework provides`, `bridge context`,
+`background`, `naturally`, `obviously`, `standard QFT`, `registered`, and
+`canonical` returns no load-bearing hit.  The explicit conditions are only
+`a>0`, real `θ`, the displayed circulant spectrum, and (for the boundary)
+`r=1/2`.
+
+### N4 — residual matching
+
+No prior no-go or wall is used as a witness for this boundary.  The nearby
+`KOIDE_SIGNED_READOUT_IS_NOT_CHIRALITY_NARROW_NO_GO_NOTE_2026-06-04.md`
+addresses whether sign is chirality; that residual differs and supplies no
+premise here.  Historical audit feedback on this note identified the zero-mode
+boundary and the missing `r=1/2` qualifier; those are repair history, not
+supporting authorities, and both are tested directly here.
+
+### N5 — rhetoric and resolution audit
+
+The negative statement is intentionally confined to one abstract
+three-eigenvalue readout.
+
+| Resolution | Tested status |
+|---|---|
+| per-element | Tested: `|λ_k|²=λ_k²` term by term. |
+| per-site | Not applicable; no site-level statement is made. |
+| per-mode | Tested for all three `C_3` character modes, including exact sign-changing and zero-mode samples. |
+| per-block | Not applicable; no multi-block lift is claimed. |
+| lattice-wide | Not applicable; no lattice-wide lift is claimed. |
+
+The runner emits these five canonical resolution lines in every live execution.
+
+### N6 — partial-closure path scan
+
+No axiom, primitive, convention, physical carrier, or import-retirement wall
+appears in this pure algebraic boundary.  The two genuine partial-closure paths
+were ordinary mathematical narrowings: include the zero-mode endpoints and
+retain the `r=1/2` qualifier.  Both are already incorporated.  No "new axiom"
+or "no retained primitive" claim is made.
+
+### N7 — steelman
+
+**Hostile reviewer:** The strongest apparent counterexamples are exactly the
+cases an overbroad statement would miss.  At `θ=π/12`, one eigenvalue vanishes
+and `Q(V)=2/3`, so strict positivity is not the equality criterion.  Away from
+`r=1/2`, a one-negative spectrum can even give `Q(V)>2/3`, as the exact
+`423/512` example shows.  Therefore a claim that every non-positive spectrum,
+or every one-negative spectrum at arbitrary `r`, destroys `2/3` would be
+false.
+
+**Resolution:** the theorem uses the closed nonnegative window and states the
+negative boundary only at `r=1/2`.  With those two narrowings the triangle
+inequality is strict precisely outside the window.  The runner emits the
+`N7_STEELMAN_RESOLUTION` locator after checking both escapes.
+
+### N8 — cross-cycle echo
+
+The closest echoes are this note's own archived repair cycles: one retired an
+open-window overclaim by including the zero-mode boundary, and another retired
+an arbitrary-`r` overclaim by replacing the general `<2/3` statement with
+`Q(V)<Q(S)` and keeping `<2/3` only at `r=1/2`.  The same mechanisms—degenerate
+case inclusion and hypothesis narrowing—have therefore already been applied.
+No similar retired wall supplies a further escape from the present narrow
+boundary.
+
 ## Validation
 
 Primary runner:

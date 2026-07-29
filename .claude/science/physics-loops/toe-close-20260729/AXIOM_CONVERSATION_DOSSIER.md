@@ -75,6 +75,29 @@ currently provide." Single-source actuality remains a theorem (750/754);
 the boundary between them is the exact edge the axioms currently draw.
 The promotion verdict belongs to the owner's lanes.
 
+## 1c. Final update — the Born arc's ending and the completed anchors
+
+The campaign's last five cycles finished the experimental arcs:
+
+- **The anchor family is complete through b = 6**: rings 3/11/19/27/35/43
+  all fully exhausted (n = 43 at 41.68 billion station-steps across four
+  independent sweeps; the fastest checker evaluator reached 1.47 billion
+  steps/s). PRs #5746, #5758, #5760.
+- **The Born arc closed honestly** (PRs #5747, #5756, #5763, #5765):
+  derived occurrence statistics exist and respond to apparatus structure
+  (symmetric ensembles run uniform; seeded strata swing hard); a
+  per-effect mapping DERIVED constant-free from the landed apparatus
+  structure aligns Born-closer-than-uniform at every scope — and the
+  checker's 216-assignment mapping-freedom attack ranks that derivation
+  median (123-128/216; 18/216 all-scope aligners). ALIGNED under mapping
+  freedom = weak evidence, shipped as the headline. The bar for any
+  future mapping derivation: win its family, not merely align. The
+  weight-claim boundary held throughout.
+- **Multi-source actuality** remains the campaign's one
+  SUSPECTED-INDEPENDENT proposal (section 1b), now beside a Born lane
+  whose remaining question is one well-posed derivation with a
+  quantitative bar.
+
 ## 2. The wall table
 
 | Wall | Final evidence class | Exact artifact chain | Verbatim one-sentence missing content, if a final gap |

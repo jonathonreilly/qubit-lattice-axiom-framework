@@ -60,6 +60,21 @@ files were read. The wall rows outside W3 were therefore filled by the
 supervisor directly from the session-verified receipts, marked
 *(supervisor-filled)* in place.
 
+## 1b. Late-campaign update — the first suspected-independent proposal
+
+After the dossier's first assembly, Track A completed the forcing chain
+on multi-source actuality: four precise failures across three premise
+families (Cycle 758 extension / 759 quotient / 762 content / 762-checker
+asymptotics; PRs #5748, #5751, #5753), every census frozen and
+independently recounted. The campaign's D6 proposal — the first of its
+kind after two campaigns and zero prior suspected-independent entries:
+promote *multi-source objective occurrence* to SUSPECTED-INDEPENDENT
+with the sentence: "For epochs where two or more sources run, an
+objective occurrence rule requires content the four axioms do not
+currently provide." Single-source actuality remains a theorem (750/754);
+the boundary between them is the exact edge the axioms currently draw.
+The promotion verdict belongs to the owner's lanes.
+
 ## 2. The wall table
 
 | Wall | Final evidence class | Exact artifact chain | Verbatim one-sentence missing content, if a final gap |

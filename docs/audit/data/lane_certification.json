@@ -1045,7 +1045,7 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_spatial_environment_character_measure_theorem_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",

@@ -127,3 +127,13 @@ Notes:
 ## Cycle 741 (block21) — physical bank renewal (IN FLIGHT)
 - Target: W4's last named component (renewal = reuse); vacuity or
   obstruction freezing allowed. Class: direct_blocker_closure attempt.
+
+## Cycle 741 (block21) — physical bank renewal
+- Target moved: W4's last named component; renewal at fixture scope
+  with the vacuity finding frozen and the finite-archive bound stated.
+  Class: direct_blocker_closure. PR #5722.
+
+## W5-junction probe (IN FLIGHT)
+- Target: feasibility census for the archive->Record-readout hand-off
+  (Cycle-693 surface); go/no-go artifact, frontier_discovery if no
+  route. Class: extraction.

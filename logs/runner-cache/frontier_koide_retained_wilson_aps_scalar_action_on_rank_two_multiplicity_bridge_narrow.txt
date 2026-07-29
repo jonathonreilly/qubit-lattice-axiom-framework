@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow.py
-runner_sha256: 952cfff792df8bb99564cc912c0cbd7b2cd813523d860efaed026c5af120cad7
-timeout_sec: 120
+runner_sha256: 18ae0e9c56e587f212e799382337f9e3330c58c260e915c360f73d2513e239ce
+input_fingerprint_sha256: a14364560b78e677e9535ac4e4d28d2b3ec2b8baacda9d48e58b39c7eac0c4d5
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ========================================================================================

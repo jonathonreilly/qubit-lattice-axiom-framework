@@ -47,6 +47,13 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# The primary runner executes this mutable repository source through importlib.
+# Pin it into the canonical cache fingerprint as well as exposing it to the
+# restricted audit packet's static helper discovery.
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py",
+)
+
 # Import the sibling runner's construction without executing its main().
 SIBLING_PATH = ROOT / "scripts" / "frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py"
 _spec = importlib.util.spec_from_file_location(

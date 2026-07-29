@@ -17,7 +17,7 @@ file per claim), summarized in
 | Metric | Value |
 |---|---:|
 | Retained positive rows | 121 |
-| Retained bounded rows | 352 |
+| Retained bounded rows | 353 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
@@ -147,7 +147,7 @@ Sorted by load-bearing graph score (descending).
 - [`tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20`](../../docs/TOMITA_TENSOR_TRACE_ON_FINITE_DIM_MATRIX_NARROW_THEOREM_NOTE_2026-05-20.md) — score 0.000; audited 2026-07-25T15:03:52.540528+00:00
 - [`wolfenstein_lambda_a_product_cancellation_narrow_theorem_note_2026-05-10`](../../docs/WOLFENSTEIN_LAMBDA_A_PRODUCT_CANCELLATION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 0.000; audited 2026-07-25T18:05:21.029457+00:00
 
-## Retained bounded rows (352)
+## Retained bounded rows (353)
 
 Sorted by load-bearing graph score (descending).
 
@@ -371,6 +371,7 @@ Sorted by load-bearing graph score (descending).
 - [`uv_gauge_to_yukawa_bridge_sc_vs_pert_note`](../../docs/UV_GAUGE_TO_YUKAWA_BRIDGE_SC_VS_PERT_NOTE.md) — score 1.500; audited 2026-07-25T16:41:05.145409+00:00
 - [`wave_direct_dm_family_scout_note`](../../docs/WAVE_DIRECT_DM_FAMILY_SCOUT_NOTE.md) — score 1.500; audited 2026-05-11T16:07:56.114228+00:00
 - [`wave_direct_dm_h025_feasibility_note`](../../docs/WAVE_DIRECT_DM_H025_FEASIBILITY_NOTE.md) — score 1.500; audited 2026-05-29T06:33:39.112533+00:00
+- [`yt_connected_source_augmentation_ideal_selector_narrow_theorem_note_2026-05-26`](../../docs/YT_CONNECTED_SOURCE_AUGMENTATION_IDEAL_SELECTOR_NARROW_THEOREM_NOTE_2026-05-26.md) — score 1.500; audited 2026-07-29T14:02:23.936124+00:00
 - [`action_geometry_bridge_note`](../../docs/ACTION_GEOMETRY_BRIDGE_NOTE.md) — score 0.000; audited 2026-05-10T18:19:21.300333+00:00
 - [`action_uniqueness_audit_2026-04-11`](../../docs/ACTION_UNIQUENESS_AUDIT_2026-04-11.md) — score 0.000; audited 2026-07-12T03:31:59.196797+00:00
 - [`alternative_coupled_field_probe_note`](../../docs/ALTERNATIVE_COUPLED_FIELD_PROBE_NOTE.md) — score 0.000; audited 2026-05-19T15:00:19.695379+00:00

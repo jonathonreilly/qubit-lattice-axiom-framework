@@ -3,6 +3,7 @@
 **Date:** 2026-05-02
 **Type:** positive_theorem (proposed; audit-lane to ratify)
 **Primary runner:** `scripts/frontier_schur_covariance_inheritance_narrow.py`
+**Runner cache:** `logs/runner-cache/frontier_schur_covariance_inheritance_narrow.txt`
 
 ## Claim scope (proposed)
 
@@ -69,18 +70,26 @@ abstract block matrix relations.
 PYTHONPATH=scripts python3 scripts/frontier_schur_covariance_inheritance_narrow.py
 ```
 
-Verifies, at exact rational precision via `sympy.Rational`:
+Verifies with SymPy exact integer/rational matrix arithmetic:
 
 1. The lemma holds on the canonical 3+1 split with `V_1 = ℂ³`, `W = ℂ¹`,
-   `U_1 = C₃[111]` cycle, `U_W = ±1` (any choice).
-2. The lemma holds on a 3+3 split with `V_1 = V_W = ℂ³`, both `U_1` and
-   `U_W` independent C₃ actions.
-3. The lemma fails (as expected) when `U` is not block-diagonal (control
-   negative test).
-4. The lemma fails (as expected) when `M` is not group-covariant (control
-   negative test).
-5. Multiple random C₃-covariant test matrices: covariance inheritance
-   verified at exact precision.
+   `U_1 = C₃[111]`, for both `U_W = +1` and `U_W = -1`. In the sign case,
+   covariance forces `B = 0` because `-1` is not in the spectrum of `C₃`;
+   the runner checks this edge case explicitly.
+2. The lemma holds on a 3+3 split with `V_1 = V_W = ℂ³` and the distinct
+   actions `U_1 = C₃`, `U_W = C₃²`, using a nonzero orbit-averaged
+   intertwiner `B`.
+3. Twelve deterministic seeded random 3+3 fixtures, covering all four pairs
+   `U_1, U_W ∈ {C₃, C₃²}`. Each fixture constructs exact invariant
+   Hermitian `A,D`, an exact nonzero intertwiner `B`, and checks Hermiticity,
+   `det(D) ≠ 0`, covariance of `D⁻¹`, and both full and Schur covariance
+   without floating-point tolerances.
+4. Premise-rejection controls verify that a mixing (non-block-diagonal)
+   unitary lies outside the theorem's scope and that a deliberately
+   non-covariant `M` has a non-covariant Schur complement in the test fixture.
+5. The retained-authority guard reads the canonical tracked sharded ledger
+   row directly, so it runs in an audit packet without the untracked
+   monolithic `audit_ledger.json` cache.
 
 ## Audit-lane disposition (proposed)
 

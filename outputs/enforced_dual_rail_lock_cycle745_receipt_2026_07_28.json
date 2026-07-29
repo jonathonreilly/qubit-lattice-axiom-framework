@@ -1,0 +1,57 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle745_enforced_dual_rail_lock_2026_07_28.txt": "c861595bd13692a6db12657c3562dd3c6af92d41a4cdb5de27f60a1cb5245718",
+      "frontier_cycle745_lock_independent_check_2026_07_28.txt": "c470fa27f762e35fda769b46ea2f706760ff2138b7edbf193a2a0bd79af8a900"
+    },
+    "note": {
+      "path": "docs/ENFORCED_DUAL_RAIL_LOCK_CYCLE745_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "5e705b6a51e813b043279c4f42a83c52c644ffeaa8f918d78fb6b9c4e931177d"
+    },
+    "runners": {
+      "frontier_cycle745_enforced_dual_rail_lock_2026_07_28.py": "d8c1651eb8cdd25a797881b55b81234a5816407418ef415491ecef41672bd708",
+      "frontier_cycle745_lock_independent_check_2026_07_28.py": "bcfba7d8ea394cc8d4f98407c2e4899e08e411a77f2dc12eeff2495b8c3fcde4"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "alphabet_scope": [
+      "IDLE",
+      "READ",
+      "WRITE[0]",
+      "WRITE[1]"
+    ],
+    "axiom_pressure": false,
+    "fixed_supplies": "the seven-rail encoding, initial clean sector, macro domain (the declared alphabet), the C_source firewall, and readout conventions (the route portfolio's supplied list, verbatim)",
+    "mechanism_level_write_once_derived": true,
+    "not_derived": "axiom-level Record permanence; out-of-alphabet operations; the W5 junction's full closure (multi-cell archive integration is the named next cycle)",
+    "positive_scope": "first-write locking in the same 8-gate reversible word; the clean-refusal overwrite law; exhaustive one-cell verification (128 reversible states; 2/2 first accepted; 4/4 + 8/8 refused; locked bytes byte-invariant); machine-checked inductive closure (base 2/2, step 8/8) with the checker's adversarial 680-composition length-4 sweep finding zero alterations; 8/8 deletion controls",
+    "record_permanence_claimed": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 745,
+  "date": "2026-07-29",
+  "result": {
+    "deletion_controls": "8/8",
+    "induction": {
+      "adversarial_compositions_len4": 680,
+      "alterations": 0,
+      "base": "2/2",
+      "step": "8/8"
+    },
+    "rails": 7,
+    "refusal_censuses": {
+      "second": "4/4",
+      "third": "8/8"
+    },
+    "reversible_states": "128/128",
+    "write_word_gates": 8
+  },
+  "status": "CYCLE745_ENFORCED_DUAL_RAIL_LOCK_PASS"
+}

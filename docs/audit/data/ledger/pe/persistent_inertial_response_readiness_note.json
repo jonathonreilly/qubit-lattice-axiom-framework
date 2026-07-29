@@ -43,7 +43,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "247bed71acf23a0c840541255ecdc1fcbfa5ea82c07a14b5c7c0383ceb780575",
+  "note_hash": "d02164e752fdeede4f8e4dc9788d59b112cd923c7a3d054daec973c59dc2ef12",
   "note_path": "docs/PERSISTENT_INERTIAL_RESPONSE_READINESS_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

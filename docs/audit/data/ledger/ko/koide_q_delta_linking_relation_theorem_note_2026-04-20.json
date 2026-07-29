@@ -31,12 +31,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.516,
+  "load_bearing_score": 14.522,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8d6d1434eb41e2f52f0777ad210605acc1ba8bca0793ce39d1610d9b5f9535d4",
+  "note_hash": "e8458ce4746b4a90c36ef0441208951558bd4715be221fd1dc1e09b6adbfa55b",
   "note_path": "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -419,6 +419,6 @@
   },
   "runner_path": "scripts/frontier_koide_q_delta_formal_ratio_repair.py",
   "title": "Koide Q-Delta Formal Ratio Identity",
-  "transitive_descendants": 731,
+  "transitive_descendants": 734,
   "verdict_rationale": null
 }

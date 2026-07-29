@@ -1,99 +1,47 @@
 {
-  "audit_date": "2026-07-25T05:20:31.754650+00:00",
-  "audit_invocation_history": [
-    "94e41b35c65a49b1b77bab3cd1d10d4a"
-  ],
-  "audit_invocation_id": "94e41b35c65a49b1b77bab3cd1d10d4a",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_teleportation_bell_measurement_circuit.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/teleportation_boundary_checks_2026_06_13.py": "095f958d84c2549e235defe174553aad674ee84086d2e00f2a0eed2cab6f0392"
-    },
-    "load_bearing_score": 2.585,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_teleportation_bell_measurement_circuit.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "a1a34efce476c6919b200c8d7ec950794a8e229ae9c59d5149b1aacfc163bc8b",
-        "cache_status": "ok"
-      },
-      "scripts/teleportation_boundary_checks_2026_06_13.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "a1a34efce476c6919b200c8d7ec950794a8e229ae9c59d5149b1aacfc163bc8b",
-    "runner_path": "scripts/frontier_teleportation_bell_measurement_circuit.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 2
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-19d612a7",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The algebraic projector/circuit identity closes on the supplied ideal matrices. The chain to a native measurement artifact does not close because the gates or parity measurements, readout, Bell resource, and record handling are supplied, while the runner's downstream-boundary helper cannot execute without its ledger input.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "teleportation_bell_measurement_circuit_note",
-  "claim_scope": "On the explicitly supplied ideal encoded two-qubit logical surface, the Bell projectors equal both the commuting ZZ/XX stabilizer projectors and the pullback of CNOT(A\u2192R), H(A), and computational-Z readout; no physical implementation is derived.",
+  "claim_scope": null,
   "claim_type": "open_gate",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-25T05:20:31.754650+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "`open_gate`",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [],
-  "direct_in_degree": 2,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
-  "helper_runner_paths": [
-    "scripts/teleportation_boundary_checks_2026_06_13.py"
+  "deps": [
+    "teleportation_retained_axis_operator_algebra_closure_note",
+    "teleportation_causal_channel_note"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "direct_in_degree": 2,
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/teleportation_bell_measurement_boundary_checks_2026_07_27.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 2.585,
-  "load_bearing_step": "Therefore the pulled-back computational-basis measurement projectors equal the same P_zx projectors above.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
-  "note_hash": "7a6c92d2cd4786b1dc26344c114a3da9e672ead3e9ed3d45f9745d890ff5a908",
+  "note_hash": "0003f7d7df0045485abec45e28078f49b861943e0a8d2307d337ab9146f8fd93",
   "note_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
-  "notes_for_re_audit_if_any": "missing_dependency_edge: add explicit one-hop retained-grade citations for the ideal Bell-resource, gate/parity-measurement, computational-readout, and record-handling suppliers, package the ledger and conclusion-boundary inputs required by the helper, and re-audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh",
   "previous_audits": [
@@ -1440,19 +1388,111 @@
         "total_pass": 19
       },
       "verdict_rationale": "The primary runner genuinely constructs the finite operators and verifies the stabilizer, Heisenberg-pullback, correction, and no-signaling identities rather than merely printing expected constants. Its boundary helper is bookkeeping and does not supply the Bell-circuit identity. However, the mandatory no-go-discipline stress test leaves several physically distinct implementation routes open or untested, so the open physical-implementation boundary cannot receive an audited-clean verdict."
+    },
+    {
+      "archived_at": "2026-07-29T08:19:02.863365+00:00",
+      "archived_for_note_hash": "7a6c92d2cd4786b1dc26344c114a3da9e672ead3e9ed3d45f9745d890ff5a908",
+      "audit_date": "2026-07-25T05:20:31.754650+00:00",
+      "audit_invocation_history": [
+        "94e41b35c65a49b1b77bab3cd1d10d4a"
+      ],
+      "audit_invocation_id": "94e41b35c65a49b1b77bab3cd1d10d4a",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 1,
+            "C": 5,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_teleportation_bell_measurement_circuit.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/teleportation_boundary_checks_2026_06_13.py": "095f958d84c2549e235defe174553aad674ee84086d2e00f2a0eed2cab6f0392"
+        },
+        "load_bearing_score": 2.585,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_teleportation_bell_measurement_circuit.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "a1a34efce476c6919b200c8d7ec950794a8e229ae9c59d5149b1aacfc163bc8b",
+            "cache_status": "ok"
+          },
+          "scripts/teleportation_boundary_checks_2026_06_13.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          }
+        },
+        "runner_hash": "a1a34efce476c6919b200c8d7ec950794a8e229ae9c59d5149b1aacfc163bc8b",
+        "runner_path": "scripts/frontier_teleportation_bell_measurement_circuit.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 2
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-19d612a7",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The algebraic projector/circuit identity closes on the supplied ideal matrices. The chain to a native measurement artifact does not close because the gates or parity measurements, readout, Bell resource, and record handling are supplied, while the runner's downstream-boundary helper cannot execute without its ledger input.",
+      "claim_scope": "On the explicitly supplied ideal encoded two-qubit logical surface, the Bell projectors equal both the commuting ZZ/XX stabilizer projectors and the pullback of CNOT(A\u2192R), H(A), and computational-Z readout; no physical implementation is derived.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-25T05:20:31.754650+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Therefore the pulled-back computational-basis measurement projectors equal the same P_zx projectors above.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add explicit one-hop retained-grade citations for the ideal Bell-resource, gate/parity-measurement, computational-readout, and record-handling suppliers, package the ledger and conclusion-boundary inputs required by the helper, and re-audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 6,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 6
+      },
+      "verdict_rationale": "An independent 4\u00d74 calculation confirms the stabilizer coefficient 1/4, Bell-bit convention, CNOT-H projector pullback, and Pauli correction mapping to floating-point precision. These are algebraic checks over explicitly defined ideal matrices, not a class-C derivation from the accepted framework premises. The native implementation still imports the encoded Bell resource, logical gates or parity measurements, computational readout, and record handling. Although all six printed core acceptance gates pass, the cross-note boundary helper terminates before executing because audit_ledger.json is absent, so downstream dependency closure is not established."
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 6,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 6
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_teleportation_bell_measurement_circuit.py",
   "title": "Teleportation Bell-Measurement Circuit Note",
   "transitive_descendants": 2,
-  "verdict_rationale": "An independent 4\u00d74 calculation confirms the stabilizer coefficient 1/4, Bell-bit convention, CNOT-H projector pullback, and Pauli correction mapping to floating-point precision. These are algebraic checks over explicitly defined ideal matrices, not a class-C derivation from the accepted framework premises. The native implementation still imports the encoded Bell resource, logical gates or parity measurements, computational readout, and record handling. Although all six printed core acceptance gates pass, the cross-note boundary helper terminates before executing because audit_ledger.json is absent, so downstream dependency closure is not established."
+  "verdict_rationale": null
 }

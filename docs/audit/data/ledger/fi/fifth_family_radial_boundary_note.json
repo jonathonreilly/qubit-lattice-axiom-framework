@@ -45,7 +45,7 @@
   ],
   "independence": "cross_family",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 7.024,
+  "load_bearing_score": 7.039,
   "load_bearing_step": "At drift=0.20, seed=0, the radial-shell row has exact zero/neutral controls but flips sign orientation with plus < 0, minus > 0, and a negative first-order orientation slope.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -447,6 +447,6 @@
   },
   "runner_path": "scripts/FIFTH_FAMILY_RADIAL_FAILURE_AUDIT.py",
   "title": "Fifth Family Radial Boundary Note",
-  "transitive_descendants": 91,
+  "transitive_descendants": 92,
   "verdict_rationale": "The primary runner is not print-only and does not hard-code the contested values; it computes the finite row from the supplied framework operators and asserts the local boundary signs. The helper certificate no longer depends on stdout substring replay: it imports the source-level certificate computation, checks exact zero/neutral cancellations, and computes the negative variational slope with finite plus/minus signs matching. The result is clean only at the bounded row/window stated in the note; the note correctly excludes a wider basin or corrected positive-orientation variant."
 }

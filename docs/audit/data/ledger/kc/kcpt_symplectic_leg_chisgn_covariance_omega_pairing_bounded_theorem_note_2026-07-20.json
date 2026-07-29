@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.459,
+  "load_bearing_score": 4.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/kcpt_symplectic_leg_chisgn_covariance_omega_pairing_2026_07_20.py",
   "title": "KCPT symplectic-leg \u03c7_sgn-covariance: the Unit-10 form \u03c9 = \u2212J_full is sign-covariant under H = \u27e8G_amb, S_eps\u27e9, sorting the six-constituent CP-completion into two symplectic classes and canonically pairing the chiral backbone 12\u207a \u2194 12\u207b",
-  "transitive_descendants": 10,
+  "transitive_descendants": 11,
   "verdict_rationale": null
 }

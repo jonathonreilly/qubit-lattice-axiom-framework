@@ -84,7 +84,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_failed",
-  "load_bearing_score": 6.307,
+  "load_bearing_score": 6.407,
   "load_bearing_step": "At small k, the metric-sector quadratic form satisfies Q_h(k) = c \u00b7 Q_EH(k) + O(k\u2074) with the single constant c = \u22121/2 in all three tested lattice directions, claimed as exact O(k\u00b2) isotropy.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -162,6 +162,6 @@
   },
   "runner_path": "scripts/frontier_cubic_coxeter_regge_second_variation_3d_2026_06_09.py",
   "title": "The Second Variation of the Regge Action on the Retained Cubic-Coxeter Complex Equals the Linearized Einstein-Hilbert Second Variation at Leading Order \u2014 Exactly, Isotropically, with Derived Normalization",
-  "transitive_descendants": 13,
+  "transitive_descendants": 14,
   "verdict_rationale": "The runner source genuinely constructs the Regge Hessian and continuum comparator from the supplied geometry, so the load-bearing calculation is class C rather than a renaming or imported match. However, R6 evaluates only k = 10^-3 in three directions and accepts numerical residuals, which cannot establish the claimed exact leading coefficient, the O(k\u2074) remainder, or isotropy over all directions; that missing limiting/angular argument is target-equivalent to the main theorem. The k=0 calculation does support the narrower derived boundary that the single non-metric complement there has nonzero quadratic weight, but not a broader lattice-wide exclusion. Packet clipping independently forbids an audited-clean result."
 }

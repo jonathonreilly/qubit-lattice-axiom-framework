@@ -25,13 +25,13 @@
   "deps": [
     "physical_proper_cubic_covariance_ceiling_cycle690_note_2026-07-24"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/physical_direction_set_vs_triangulation_covariance_cycle695_2026_07_25.py",
   "title": "Direction-set covariance and triangulation covariance are different invariants \u2014 Cycle 695",
-  "transitive_descendants": 0,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

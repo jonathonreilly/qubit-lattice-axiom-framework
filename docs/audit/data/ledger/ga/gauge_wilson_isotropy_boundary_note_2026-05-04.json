@@ -24,8 +24,7 @@
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms",
-    "gauge_scalar_temporal_completion_theorem_note",
-    "gauge_vacuum_plaquette_constant_lift_obstruction_note"
+    "gauge_scalar_temporal_completion_theorem_note"
   ],
   "direct_in_degree": 4,
   "effective_status": "unaudited",
@@ -38,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "bd8806d2fa6347177dc0bd586ce930528cb8512c33d5e0cd32f53aefca516732",
+  "note_hash": "9f3b5dcee7afc68ecda4936824230b68556b9784202f753ff51703be8bcbec2d",
   "note_path": "docs/GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

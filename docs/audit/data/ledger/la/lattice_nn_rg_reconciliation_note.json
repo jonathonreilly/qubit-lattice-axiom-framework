@@ -31,7 +31,10 @@
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/lattice_nn_continuum.py",
+    "scripts/lattice_nn_deterministic_rescale.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,

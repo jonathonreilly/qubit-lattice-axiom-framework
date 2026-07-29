@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_failed",
-  "load_bearing_score": 5.17,
+  "load_bearing_score": 5.322,
   "load_bearing_step": "Pure gauge modes h_{mu nu} = k_mu xi_nu + k_nu xi_mu are zero modes of G_lin.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1457,6 +1457,6 @@
   },
   "runner_path": "scripts/r3_regge_linearization_lambda1_healthy_graviton_2026_06_08.py",
   "title": "R3 Target Operator: Linearized Einstein Tensor Lambda-One Algebra",
-  "transitive_descendants": 8,
+  "transitive_descendants": 9,
   "verdict_rationale": "The runner correctly evaluates the hard-coded G_lin formula for one fixed spacelike momentum, 500 random gauge samples, one TT sample, and one conformal sample, so its four finite algebra and guardrail checks pass. The source nevertheless states without restriction that pure gauge modes are zero modes, while the runner is neither exhaustive nor accompanied by a symbolic identity covering arbitrary momentum, gauge vectors, and degenerate cases. This missing lemma is target-equivalent to R3a, so finite sampling cannot close the stated bounded theorem."
 }

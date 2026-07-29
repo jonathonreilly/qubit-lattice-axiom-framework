@@ -29,7 +29,14 @@
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/persistent_record_overlap_kernel.py",
+    "scripts/persistent_record_matched_compare.py",
+    "scripts/density_matrix_analysis.py",
+    "scripts/entangling_env_decoherence.py",
+    "scripts/generative_causal_dag_interference.py",
+    "scripts/graph_memory_scar_decoherence.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,

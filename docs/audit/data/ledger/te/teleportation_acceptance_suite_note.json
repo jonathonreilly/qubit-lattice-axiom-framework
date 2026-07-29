@@ -36,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "36766f9393d3c0a3bd73d1864e343fb4862c5997b6508df298667e20c8b144d6",
+  "note_hash": "08afdec1434d7c86c4fe27c2e4c7ed1328f6ee3edda66271fbe83431bc879dcb",
   "note_path": "docs/TELEPORTATION_ACCEPTANCE_SUITE_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -54,7 +54,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.549,
+  "load_bearing_score": 10.555,
   "load_bearing_step": "Pairwise elementwise commutation makes \u03a6 a unital *-homomorphism from the tensor product, simplicity makes its kernel zero, and finite type-I representation theory then gives H \u2245 \u2102^(2\u207f) \u2297 \u2102\u1d50.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1451,6 +1451,6 @@
   },
   "runner_path": "scripts/frontier_qubit_lattice_joint_presentation_tensor_substrate_2026_07_09.py",
   "title": "Qubit-Lattice Joint Presentation Tensor Substrate Bridge (Narrow)",
-  "transitive_descendants": 748,
+  "transitive_descendants": 751,
   "verdict_rationale": "The matrix-algebra, representation, dimension, and projection-span arguments are correct once J1 and J2 are granted, but those premises are neither derived nor accepted by the supplied registry. The completed 39/40 runner supports the conditional mathematics; its A4 failure comes from expecting Qualification wording that does not match the current cited authority. For N1-N8, the two named premises are independent, explicitly disclosed rather than hidden, have no matching prior residual that closes them, survive rhetoric and partial-closure scans, remain unresolved under the strongest conditional steelman, and receive no applicable closure from the supplied cross-cycle index."
 }

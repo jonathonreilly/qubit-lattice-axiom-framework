@@ -21,10 +21,10 @@
   "claim_type_author_hint_raw": null,
   "claim_type_last_reviewed": "2026-05-03T01:08:05.925263+00:00",
   "claim_type_provenance": "audited",
-  "criticality": "leaf",
+  "criticality": "medium",
   "decoration_parent_claim_id": null,
   "deps": [],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "retained_bounded",
   "effective_status_reason": "self",
   "helper_runner_paths": [
@@ -32,7 +32,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 3.085,
   "load_bearing_step": "No high-fidelity Bell-resource window appears in this bounded product-state scan at the 0.90 Bell-overlap threshold, while interacting cases open only useful low-fidelity windows after fixed Bell-frame alignment.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/frontier_teleportation_dynamical_resource_generation.py",
   "title": "Dynamic Poisson Resource Generation From Product States",
-  "transitive_descendants": 0,
+  "transitive_descendants": 5,
   "verdict_rationale": "The scoped result is a bounded finite/model computation, not a no-go theorem and not merely an open obligation. The live output supports the note's numerical boundary: interacting cases exceed the useful Bell-overlap threshold but remain far below the 0.90 high-fidelity threshold, with null and no-signaling diagnostics passing. No hidden carrier, matter-transfer, FTL, or protocol-readout claim is needed for the bounded statement."
 }

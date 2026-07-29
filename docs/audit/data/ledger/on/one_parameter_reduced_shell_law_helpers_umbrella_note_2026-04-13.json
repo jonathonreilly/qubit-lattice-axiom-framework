@@ -19,14 +19,14 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "medium",
+  "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "coarse_grained_exterior_law_helper_note_2026-04-14",
     "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -39,7 +39,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.539,
+  "load_bearing_score": 11.77,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -377,7 +377,7 @@
   },
   "runner_path": "scripts/frontier_one_parameter_reduced_shell_law.py",
   "title": "One-Parameter Reduced Shell Law Helpers \u2014 Umbrella Wrapper",
-  "transitive_descendants": 92,
+  "transitive_descendants": 1234,
   "unattributed_audit_provenance": [
     {
       "auditor_model": "gpt-5.5",

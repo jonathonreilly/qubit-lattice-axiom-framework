@@ -1,99 +1,44 @@
 {
-  "audit_date": "2026-07-25T05:17:23.143452+00:00",
-  "audit_invocation_history": [
-    "4cccfa745f60473f8010e960ec95d51c"
-  ],
-  "audit_invocation_id": "4cccfa745f60473f8010e960ec95d51c",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 2,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/teleportation_boundary_checks_2026_06_13.py": "095f958d84c2549e235defe174553aad674ee84086d2e00f2a0eed2cab6f0392"
-    },
-    "load_bearing_score": 4.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_teleportation_3d1_causal_record_channel.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "129f179e8a0e4ddca87c52aa0f3e15eb2793602f506f5ea5990fcd90c8ce9fdb",
-        "cache_status": "ok"
-      },
-      "scripts/teleportation_boundary_checks_2026_06_13.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "129f179e8a0e4ddca87c52aa0f3e15eb2793602f506f5ea5990fcd90c8ce9fdb",
-    "runner_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 7
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-0b650cde",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The eight core finite-model gates are computed and pass, but the runner exits before completing its required downstream boundary verification because docs/audit/data/audit_ledger.json is absent from the runner checkout.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "teleportation_3d1_causal_record_channel_note",
-  "claim_scope": "Finite planning-scope computation for an explicit classical Bell-record channel on the specified discrete 3D+1 lattice, conditional on supplied Bell bits and an assumed ordinary teleportation resource.",
+  "claim_scope": null,
   "claim_type": "open_gate",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-25T05:17:23.143452+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_author_hint": "open_gate",
+  "claim_type_author_hint_raw": "open_gate",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 2,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/teleportation_boundary_checks_2026_06_13.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 4.0,
-  "load_bearing_step": "The runner instantiates the 3D+1 channel and three-register qubit algebra to compute causal exactly-once delivery, unit corrected fidelity, and Bob's input-independent pre-delivery state.",
-  "load_bearing_step_class": "C",
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 4.17,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
-  "note_hash": "711989afcb47c97310b40b64e934006f7267074a634ee2e1e032c1c6fea2f6d7",
+  "note_hash": "db5e4b7957ba28fd0eb7d09d13e60b0e2fb97b79d3cbd92cc04c38d5ee816bac",
   "note_path": "docs/TELEPORTATION_3D1_CAUSAL_RECORD_CHANNEL_NOTE.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: rerun the primary runner in a checkout containing docs/audit/data/audit_ledger.json and docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md, then refresh the recorded First Run output.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -1462,19 +1407,111 @@
         "total_pass": 21
       },
       "verdict_rationale": "The eight primary acceptance gates are genuine finite computations over the implemented lattice channel and qubit operators. The thirteen helper results are cross-note status and boundary checks, but they do not supply the primary channel computation. The note consistently limits its conclusion to a planning model with supplied Bell bits and resource, so its explicit omissions are boundaries rather than unacknowledged derivation claims."
+    },
+    {
+      "archived_at": "2026-07-29T08:18:56.690742+00:00",
+      "archived_for_note_hash": "711989afcb47c97310b40b64e934006f7267074a634ee2e1e032c1c6fea2f6d7",
+      "audit_date": "2026-07-25T05:17:23.143452+00:00",
+      "audit_invocation_history": [
+        "4cccfa745f60473f8010e960ec95d51c"
+      ],
+      "audit_invocation_id": "4cccfa745f60473f8010e960ec95d51c",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 2,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/teleportation_boundary_checks_2026_06_13.py": "095f958d84c2549e235defe174553aad674ee84086d2e00f2a0eed2cab6f0392"
+        },
+        "load_bearing_score": 4.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_teleportation_3d1_causal_record_channel.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "129f179e8a0e4ddca87c52aa0f3e15eb2793602f506f5ea5990fcd90c8ce9fdb",
+            "cache_status": "ok"
+          },
+          "scripts/teleportation_boundary_checks_2026_06_13.py": {
+            "cache_exit_code": null,
+            "cache_freshness": "missing",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": null,
+            "cache_status": null
+          }
+        },
+        "runner_hash": "129f179e8a0e4ddca87c52aa0f3e15eb2793602f506f5ea5990fcd90c8ce9fdb",
+        "runner_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 7
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-0b650cde",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The eight core finite-model gates are computed and pass, but the runner exits before completing its required downstream boundary verification because docs/audit/data/audit_ledger.json is absent from the runner checkout.",
+      "claim_scope": "Finite planning-scope computation for an explicit classical Bell-record channel on the specified discrete 3D+1 lattice, conditional on supplied Bell bits and an assumed ordinary teleportation resource.",
+      "claim_type": "open_gate",
+      "claim_type_last_reviewed": "2026-07-25T05:17:23.143452+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The runner instantiates the 3D+1 channel and three-register qubit algebra to compute causal exactly-once delivery, unit corrected fidelity, and Bob's input-independent pre-delivery state.",
+      "load_bearing_step_class": "C",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: rerun the primary runner in a checkout containing docs/audit/data/audit_ledger.json and docs/TELEPORTATION_CONCLUSION_BOUNDARY_NOTE.md, then refresh the recorded First Run output.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "The supplied source genuinely computes all eight core acceptance gates rather than merely printing constants, and those gates pass in the captured stdout. However, the completed run terminates with FileNotFoundError before the source-mandated downstream boundary guard can execute. The Bell bits, Bell resource, and idealized measurement/correction setup also remain explicit inputs, consistent with the bounded open-gate scope rather than unconditional physical closure."
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 8,
+    "C": 0,
     "D": 0,
-    "total_pass": 8
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_teleportation_3d1_causal_record_channel.py",
   "title": "Teleportation 3D+1 Causal Bell-Record Channel Note",
-  "transitive_descendants": 7,
-  "verdict_rationale": "The supplied source genuinely computes all eight core acceptance gates rather than merely printing constants, and those gates pass in the captured stdout. However, the completed run terminates with FileNotFoundError before the source-mandated downstream boundary guard can execute. The Bell bits, Bell resource, and idealized measurement/correction setup also remain explicit inputs, consistent with the bounded open-gate scope rather than unconditional physical closure."
+  "transitive_descendants": 8,
+  "verdict_rationale": null
 }

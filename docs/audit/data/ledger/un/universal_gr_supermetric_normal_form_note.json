@@ -62,7 +62,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 11.57,
+  "load_bearing_score": 11.585,
   "load_bearing_step": "For symmetric perturbations h,k on D=diag(a,b,b,b), B_D(h,k)=D^2W[0](h,k)=-Tr(D^-1 h D^-1 k), and in the canonical lapse/shift/trace/shear basis this has weights diag(-a^-2, -(ab)^-1 x3, -b^-2 x6).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -214,6 +214,6 @@
   },
   "runner_path": "scripts/frontier_universal_gr_supermetric_normal_form.py",
   "title": "Universal GR Supermetric Normal Form on `PL S^3 x R`",
-  "transitive_descendants": 189,
+  "transitive_descendants": 191,
   "verdict_rationale": "The load-bearing step is a closed matrix-calculus identity over explicitly stated local inputs, and the note's claim boundary excludes the unproved physical selection and dynamical gluing steps. The runner source directly differentiates the symbolic log determinant for general symmetric h,k, checks the canonical Gram matrix symbolically, and numerically replays the same algebra; it does not hard-code an external comparator or tune a scale. Residual risk is only scope leakage by downstream users: this clean verdict covers the local Hessian normal form, not the route-wide scalar-generator selection premise or full GR/Regge dynamics."
 }

@@ -1,59 +1,45 @@
 {
-  "audit_date": "2026-07-16T03:14:44.376189+00:00",
-  "audit_invocation_history": [
-    "dcf096b317ef49ff975ff076da67942f"
-  ],
-  "audit_invocation_id": "dcf096b317ef49ff975ff076da67942f",
-  "audit_state_snapshot": {
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 12.978,
-    "runner_hash": "7571026e628811b51dabd4986c54006aa3617a0323944ebea8a948960fba1355",
-    "transitive_descendants": 712
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-record_function_finite_s-112",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The general finite-record algebra follows from the accepted Record additivity premise. The generation specialization remains conditional because its sector-power assignment and C3/K-real readout form are supplied without a retained or accepted direct authority.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "record_function_finite_sector_algebra_2026-06-05",
-  "claim_scope": "Finite additive record-sector vectors, incidence-matrix coarse-graining, scale-invariant coordinates, and the stated generation identities conditional on the supplied two-block and C3 definitions.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-16T03:14:44.376189+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
-  "deps": [],
+  "deps": [
+    "koide_kappa_spectrum_operator_bridge_theorem_note_2026-04-19",
+    "charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11"
+  ],
   "direct_in_degree": 7,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 13.022,
-  "load_bearing_step": "Finite additivity gives I(A) = chi_A \u00b7 v, while the supplied two-block and C3 definitions algebraically give rho = 2r and Q = 1/3 + (2/3)r.",
-  "load_bearing_step_class": "A",
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 13.027,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
-  "no_go_discipline": null,
-  "note_hash": "7f0252d5fc4891ca161add061ae6afafbe417b0c86ce2621d66c9fc5802c1362",
+  "note_hash": "8e0dcfc856bede72a6684fc443dd6cd4a4e8bf05c3cb2e774acb25e602c87a4b",
   "note_path": "docs/RECORD_FUNCTION_FINITE_SECTOR_ALGEBRA_2026-06-05.md",
-  "notes_for_re_audit_if_any": "missing_dependency_edge: add direct retained or accepted authorities for the generation two-block power assignment and C3/K-real readout definition, then rerun the audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -4949,10 +4935,63 @@
         "total_pass": 21
       },
       "verdict_rationale": "The runner genuinely performs 21 symbolic or exhaustive finite class-A checks and supports the finite-additivity, incidence-composition, scale-invariance, and displayed conditional identities. However, the generation-sector powers and C3/K-real lambda form are supplied without a direct retained or accepted authority, while the accepted Record premise supplies only finite scalar additivity. The asserted negative boundary is narrow: the arbitrary-ratio family supports absence of value selection, and finite additivity contains no update-law premise, but these checks do not certify a broader no-go. For N1-N8, only these narrow mechanisms are evidenced, the two walls are distinct, no prior residual witness is invoked, rhetoric-resolution testing is not exhaustive, indexed alternatives do not supply the missing generation bridge, and the strongest steelman\u2014adding retained weighting, dynamics, or generation-readout authority\u2014remains outside the packet."
+    },
+    {
+      "archived_at": "2026-07-29T08:18:46.069461+00:00",
+      "archived_for_note_hash": "7f0252d5fc4891ca161add061ae6afafbe417b0c86ce2621d66c9fc5802c1362",
+      "audit_date": "2026-07-16T03:14:44.376189+00:00",
+      "audit_invocation_history": [
+        "dcf096b317ef49ff975ff076da67942f"
+      ],
+      "audit_invocation_id": "dcf096b317ef49ff975ff076da67942f",
+      "audit_state_snapshot": {
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 12.978,
+        "runner_hash": "7571026e628811b51dabd4986c54006aa3617a0323944ebea8a948960fba1355",
+        "transitive_descendants": 712
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-loop-12h-20260715-681e057e3a814efd90aa6b726225cb3d-record_function_finite_s-112",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The general finite-record algebra follows from the accepted Record additivity premise. The generation specialization remains conditional because its sector-power assignment and C3/K-real readout form are supplied without a retained or accepted direct authority.",
+      "claim_scope": "Finite additive record-sector vectors, incidence-matrix coarse-graining, scale-invariant coordinates, and the stated generation identities conditional on the supplied two-block and C3 definitions.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-16T03:14:44.376189+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Finite additivity gives I(A) = chi_A \u00b7 v, while the supplied two-block and C3 definitions algebraically give rho = 2r and Q = 1/3 + (2/3)r.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: add direct retained or accepted authorities for the generation two-block power assignment and C3/K-real readout definition, then rerun the audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 21,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "The runner genuinely performs 21 symbolic or exhaustive finite class-A checks and supports the finite-additivity, incidence-composition, scale-invariance, and displayed conditional identities. However, the generation-sector powers and C3/K-real lambda form are supplied without a direct retained or accepted authority, while the accepted Record premise supplies only finite scalar additivity. The asserted negative boundary is narrow: the arbitrary-ratio family supports absence of value selection, and finite additivity contains no update-law premise, but these checks do not certify a broader no-go. For N1-N8, only these narrow mechanisms are evidenced, the two walls are distinct, no prior residual witness is invoked, rhetoric-resolution testing is not exhaustive, indexed alternatives do not supply the missing generation bridge, and the strongest steelman\u2014adding retained weighting, dynamics, or generation-readout authority\u2014remains outside the packet."
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "restoration_history": [
     {
       "archived_at": "2026-07-16T03:14:59.865436+00:00",
@@ -4963,14 +5002,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 21,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 21
+    "total_pass": 0
   },
   "runner_path": "scripts/record_function_finite_sector_algebra_2026_06_05.py",
   "title": "Record Function Finite Sector Algebra",
-  "transitive_descendants": 734,
-  "verdict_rationale": "The runner genuinely performs 21 symbolic or exhaustive finite class-A checks and supports the finite-additivity, incidence-composition, scale-invariance, and displayed conditional identities. However, the generation-sector powers and C3/K-real lambda form are supplied without a direct retained or accepted authority, while the accepted Record premise supplies only finite scalar additivity. The asserted negative boundary is narrow: the arbitrary-ratio family supports absence of value selection, and finite additivity contains no update-law premise, but these checks do not certify a broader no-go. For N1-N8, only these narrow mechanisms are evidenced, the two walls are distinct, no prior residual witness is invoked, rhetoric-resolution testing is not exhaustive, indexed alternatives do not supply the missing generation bridge, and the strongest steelman\u2014adding retained weighting, dynamics, or generation-readout authority\u2014remains outside the packet."
+  "transitive_descendants": 737,
+  "verdict_rationale": null
 }

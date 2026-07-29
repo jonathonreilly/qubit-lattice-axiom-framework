@@ -1,5 +1,5 @@
 {
- "as_of_date": "2026-07-28",
+ "as_of_date": "2026-07-29",
  "lane_ids": [
   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
   "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr",
@@ -354,6 +354,7 @@
   "nonlinear_born_gravity_note",
   "observable_principle_from_axiom_note",
   "observable_principle_t1d_determinant_readout_independence_no_go_note_2026-06-16",
+  "oh_schur_boundary_action_note",
   "oh_static_constraint_lift_note",
   "omega_lambda_derivation_note",
   "omega_lambda_matter_bridge_theorem_note_2026-04-22",

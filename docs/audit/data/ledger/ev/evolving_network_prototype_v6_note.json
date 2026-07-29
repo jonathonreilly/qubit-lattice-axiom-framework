@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 7.658,
+  "load_bearing_score": 7.672,
   "load_bearing_step": "The four frozen rows produce TOWARD counts of 33/36, 24/36, 24/36, and 24/36, with positive mean deltas and local F~M near one.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -234,6 +234,6 @@
   },
   "runner_path": "scripts/evolving_network_prototype_v6.py",
   "title": "Evolving Network Prototype V6 Note",
-  "transitive_descendants": 100,
+  "transitive_descendants": 101,
   "verdict_rationale": "The source table agrees with the completed runner, and the code computes rather than merely prints the reported values. However, the numerical result is conditional on an uncited phenomenological dynamics and readout package that is not supplied by the axioms in this restricted packet. The named Gate B wall is supported only for this finite tested matrix: the mixed rows establish nonclosure of that tested sweep, not a general no-go over alternative dynamics, observables, scales, boundaries, or parameter choices; no broader route exclusion is warranted."
 }

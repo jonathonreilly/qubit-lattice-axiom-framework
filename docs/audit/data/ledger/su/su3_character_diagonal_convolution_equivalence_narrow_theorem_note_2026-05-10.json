@@ -1,89 +1,42 @@
 {
-  "audit_date": "2026-07-24T00:18:58.058443+00:00",
-  "audit_invocation_history": [
-    "02dc5f6f4f8f4f17b026867f7e2920b8",
-    "4616baa116d4469088eafdd964de072c"
-  ],
-  "audit_invocation_id": "4616baa116d4469088eafdd964de072c",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 2,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 23.27,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "cb80613c581f7a42c446bc3a0670dac14dd7ca2fa5fb70d7de6febdd0ccf4890",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "cb80613c581f7a42c446bc3a0670dac14dd7ca2fa5fb70d7de6febdd0ccf4890",
-    "runner_path": "scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 872
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260724-26dcc876",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The displayed algebraic proof closes from Schur orthogonality, but the restricted packet clips the load-bearing runner stdout and therefore does not authenticate the complete 24-check execution record.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
-  "claim_scope": "The finite-truncation SU(3) character-convolution identity and its coefficient-uniqueness, positivity, self-adjointness, and conjugation-symmetry consequences for an abstract normalized sequence, excluding any Wilson-environment identification.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-24T00:18:58.058443+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 27,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 23.288,
-  "load_bearing_step": "Substituting the Schur contraction into the finite sum cancels d_mu and gives C_Z chi_mu(V) = rho_mu chi_mu(V).",
-  "load_bearing_step_class": "A",
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 23.293,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "a7368f7ed443ad289acfd40cdf9f70bd1e0432833af37650b90ed5af939e6e7a",
   "note_path": "docs/SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the complete, unclipped stdout for the primary runner and re-audit the same restricted packet.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1407,19 +1360,103 @@
         "total_pass": 24
       },
       "verdict_rationale": "The scoped mathematical theorem is correct, and the supplied runner performs genuine class-A symbolic and numerical checks rather than merely printing expected results. However, the mandatory clean-verdict discipline packet cannot be certified from the restricted evidence: the authenticated N5 rhetoric occurrences lack the required five resolution-prefixed current-cycle stdout lines and an independently evidenced N7 resolution. This is a certification-artifact condition, not a substantive defect in the SU(3) proof."
+    },
+    {
+      "archived_at": "2026-07-29T08:20:51.382042+00:00",
+      "audit_date": "2026-07-24T00:18:58.058443+00:00",
+      "audit_invocation_history": [
+        "02dc5f6f4f8f4f17b026867f7e2920b8",
+        "4616baa116d4469088eafdd964de072c"
+      ],
+      "audit_invocation_id": "4616baa116d4469088eafdd964de072c",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 2,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 5,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 23.27,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "cb80613c581f7a42c446bc3a0670dac14dd7ca2fa5fb70d7de6febdd0ccf4890",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "cb80613c581f7a42c446bc3a0670dac14dd7ca2fa5fb70d7de6febdd0ccf4890",
+        "runner_path": "scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 872
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260724-26dcc876",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed algebraic proof closes from Schur orthogonality, but the restricted packet clips the load-bearing runner stdout and therefore does not authenticate the complete 24-check execution record.",
+      "claim_scope": "The finite-truncation SU(3) character-convolution identity and its coefficient-uniqueness, positivity, self-adjointness, and conjugation-symmetry consequences for an abstract normalized sequence, excluding any Wilson-environment identification.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-24T00:18:58.058443+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "runner_hash_changed:cb80613c->082f1470",
+      "load_bearing_step": "Substituting the Schur contraction into the finite sum cancels d_mu and gives C_Z chi_mu(V) = rho_mu chi_mu(V).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the complete, unclipped stdout for the primary runner and re-audit the same restricted packet.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 24,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 24
+      },
+      "verdict_rationale": "The source presents a genuine class-A algebraic contraction on the stated finite character basis, and the visible runner excerpt reports exact dimension cancellation, uniqueness, positivity, symmetry, hostile controls, and independent numerical support. However, the binding packet preflight identifies clipped load-bearing evidence, so the complete execution certificate cannot be verified and audited_clean is forbidden. The Wilson-environment identification is explicitly outside the audited theorem as a division-of-labor boundary, not asserted as a no-go result."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 24,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 24
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_su3_character_diagonal_convolution_equivalence_narrow.py",
   "title": "SU(3) Character Diagonal Convolution Equivalence Narrow Theorem",
-  "transitive_descendants": 883,
-  "verdict_rationale": "The source presents a genuine class-A algebraic contraction on the stated finite character basis, and the visible runner excerpt reports exact dimension cancellation, uniqueness, positivity, symmetry, hostile controls, and independent numerical support. However, the binding packet preflight identifies clipped load-bearing evidence, so the complete execution certificate cannot be verified and audited_clean is forbidden. The Wilson-environment identification is explicitly outside the audited theorem as a division-of-labor boundary, not asserted as a no-go result."
+  "transitive_descendants": 886,
+  "verdict_rationale": null
 }

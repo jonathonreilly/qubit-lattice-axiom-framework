@@ -29,12 +29,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 24.57,
+  "load_bearing_score": 24.576,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "a32f4d4a2ba4a1cc9a4e732483e2c46915ea62b07717891542b5f5d0f4b12286",
+  "note_hash": "7c0dcd85d7054f61d0d20cc0e5badc0114d1eaffeab5668c40be36437d1295c9",
   "note_path": "docs/KOIDE_FROBENIUS_ISOTYPE_SPLIT_UNIQUENESS_NOTE_2026-04-21.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -4891,7 +4891,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -4901,6 +4901,6 @@
   },
   "runner_path": "scripts/frontier_koide_frobenius_isotype_split_uniqueness.py",
   "title": "Koide Frobenius Isotype-Weight Freedom No-Go",
-  "transitive_descendants": 759,
+  "transitive_descendants": 762,
   "verdict_rationale": null
 }

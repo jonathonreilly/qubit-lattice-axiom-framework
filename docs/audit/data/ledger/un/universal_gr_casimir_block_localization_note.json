@@ -1,88 +1,42 @@
 {
-  "audit_date": "2026-07-25T06:29:23.814671+00:00",
-  "audit_invocation_history": [
-    "dc7d00f94b6e477fb19018bcbcda545c"
-  ],
-  "audit_invocation_id": "dc7d00f94b6e477fb19018bcbcda545c",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 10,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/frontier_universal_gr_casimir_block_localization.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 7.085,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_universal_gr_casimir_block_localization.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "5f4a8545b623e294b886754017fbe9b3e666a26fc474b215daf6fc738f2a322e",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "5f4a8545b623e294b886754017fbe9b3e666a26fc474b215daf6fc738f2a322e",
-    "runner_path": "scripts/frontier_universal_gr_casimir_block_localization.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 47
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-5476d748",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The exact representation-level algebra closes, but the packet supplies no bridge from the stipulated spatial SO(3) representation to a Universal-GR carrier and no SO(3)-intrinsic distinction between the two trivial lapse/trace summands.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "universal_gr_casimir_block_localization_note",
-  "claim_scope": "An exact canonical lapse/shift/trace/shear block localization for the Universal-GR route from the stipulated spatial SO(3) action.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-25T06:29:23.814671+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 3,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 7.085,
-  "load_bearing_step": "The displayed generators satisfy G_x^2 + G_y^2 + G_z^2 = diag(-2,-2,-2,-6,-6,-6,-6,-6), yielding the two complement projectors by Lagrange interpolation.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
-  "note_hash": "200f4bfa882a5bd65ff48966b7c5c997e796e8b77b685314343596e410459222",
+  "note_hash": "5f8e171ce51b546eaf8822459b6e6bc49e81521bbab09c3b7874bc4a38d31d36",
   "note_path": "docs/UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_NOTE.md",
-  "notes_for_re_audit_if_any": "scope_too_broad: narrow the registered claim to the neutral stipulated representation theorem, or add the missing Universal-GR carrier and lapse/trace selection theorem; also add a dated downstream-hygiene line to this note's own boundary limiting downstream citations to the neutral decomposition.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -214,19 +168,102 @@
         "total_pass": 0
       },
       "verdict_rationale": "The note asserts the projector, complement representation, Casimir spectrum, and physical block labels, but the restricted packet provides no upstream inputs or runner source/output to verify those assertions. The load-bearing step functions as an introduced classification/definition within the note rather than a derivation from provided axioms or retained inputs. Because no actual computation or algebraic closure is present, the claimed positive theorem is not audited clean."
+    },
+    {
+      "archived_at": "2026-07-29T08:19:19.857260+00:00",
+      "archived_for_note_hash": "200f4bfa882a5bd65ff48966b7c5c997e796e8b77b685314343596e410459222",
+      "audit_date": "2026-07-25T06:29:23.814671+00:00",
+      "audit_invocation_history": [
+        "dc7d00f94b6e477fb19018bcbcda545c"
+      ],
+      "audit_invocation_id": "dc7d00f94b6e477fb19018bcbcda545c",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 10,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/frontier_universal_gr_casimir_block_localization.py"
+        },
+        "criticality": "medium",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 7.085,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_universal_gr_casimir_block_localization.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "5f4a8545b623e294b886754017fbe9b3e666a26fc474b215daf6fc738f2a322e",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "5f4a8545b623e294b886754017fbe9b3e666a26fc474b215daf6fc738f2a322e",
+        "runner_path": "scripts/frontier_universal_gr_casimir_block_localization.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 47
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-5476d748",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The exact representation-level algebra closes, but the packet supplies no bridge from the stipulated spatial SO(3) representation to a Universal-GR carrier and no SO(3)-intrinsic distinction between the two trivial lapse/trace summands.",
+      "claim_scope": "An exact canonical lapse/shift/trace/shear block localization for the Universal-GR route from the stipulated spatial SO(3) action.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-25T06:29:23.814671+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "The displayed generators satisfy G_x^2 + G_y^2 + G_z^2 = diag(-2,-2,-2,-6,-6,-6,-6,-6), yielding the two complement projectors by Lagrange interpolation.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "scope_too_broad: narrow the registered claim to the neutral stipulated representation theorem, or add the missing Universal-GR carrier and lapse/trace selection theorem; also add a dated downstream-hygiene line to this note's own boundary limiting downstream citations to the neutral decomposition.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 8
+      },
+      "verdict_rationale": "Issue: the packet proves only the neutral representation-level 1+3+1+5 decomposition relative to a stipulated temporal line; it expressly withholds a Universal-GR or Hessian identification and acknowledges that SO(3) alone cannot distinguish lapse from trace. Why this blocks: the Casimir spectrum canonically separates only the j=1 and j=2 complement, while the lapse/trace refinement and physical carrier remain stipulated. Repair target: provide a retained carrier-and-selection bridge or narrow the registered scope to the neutral theorem. Claim boundary until fixed: T1-T8 are exact algebraic identities for the displayed basis and action, without a physical Universal-GR localization conclusion."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 8,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 8
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_universal_gr_casimir_block_localization.py",
   "title": "Spatial `SO(3)` Casimir Decomposition on `Sym^2(R^4)`",
   "transitive_descendants": 47,
-  "verdict_rationale": "Issue: the packet proves only the neutral representation-level 1+3+1+5 decomposition relative to a stipulated temporal line; it expressly withholds a Universal-GR or Hessian identification and acknowledges that SO(3) alone cannot distinguish lapse from trace. Why this blocks: the Casimir spectrum canonically separates only the j=1 and j=2 complement, while the lapse/trace refinement and physical carrier remain stipulated. Repair target: provide a retained carrier-and-selection bridge or narrow the registered scope to the neutral theorem. Claim boundary until fixed: T1-T8 are exact algebraic identities for the displayed basis and action, without a physical Universal-GR localization conclusion."
+  "verdict_rationale": null
 }

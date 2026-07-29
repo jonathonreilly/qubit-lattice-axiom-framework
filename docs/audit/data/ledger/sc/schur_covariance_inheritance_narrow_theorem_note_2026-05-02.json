@@ -84,7 +84,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 6.544,
+  "load_bearing_score": 6.566,
   "load_bearing_step": "U_1 B U_W\u2020=B and U_W D\u207b\u00b9U_W\u2020=D\u207b\u00b9 imply U_1(A\u2212BD\u207b\u00b9B\u2020)U_1\u2020=A\u2212BD\u207b\u00b9B\u2020.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -228,6 +228,6 @@
   },
   "runner_path": "scripts/frontier_schur_covariance_inheritance_narrow.py",
   "title": "Schur Complement Covariance Inheritance \u2014 Narrow Theorem",
-  "transitive_descendants": 65,
+  "transitive_descendants": 66,
   "verdict_rationale": "The theorem itself is a genuine class-A identity and closes from its stated hypotheses without a physical bridge. Clean ratification is withheld because the executable evidence drifts from the source: the runner tests only U_W=+1, uses one matched C\u2083 action in the 3+3 example, contains no random-matrix suite, and exits before the authority-status check because the ledger file is absent. This is a runner/source artifact defect, not a timeout or a counterexample to the theorem."
 }

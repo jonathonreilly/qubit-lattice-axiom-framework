@@ -1,90 +1,44 @@
 {
-  "audit_date": "2026-07-25T15:55:37.462864+00:00",
-  "audit_invocation_history": [
-    "7a15fab8d7aa4f15a710c755adec06bd"
-  ],
-  "audit_invocation_id": "7a15fab8d7aa4f15a710c755adec06bd",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_teleportation_three_register_cross_encoding.py"
-    },
-    "criticality": "leaf",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_teleportation_three_register_cross_encoding.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "b21a419a5173dd8e48f4827d70ee1ec3766a6510f6cd260d5fd15e2104741c62",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "b21a419a5173dd8e48f4827d70ee1ec3766a6510f6cd260d5fd15e2104741c62",
-    "runner_path": "scripts/frontier_teleportation_three_register_cross_encoding.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 0
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-f95d83a2",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The Bell contraction and correction identity closes algebraically, but the restricted packet clips the load-bearing runner source and stdout, so the exhaustive encoding certificate, factorized coverage, and controls cannot be independently verified.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "teleportation_three_register_cross_encoding_note",
-  "claim_scope": "For dimensions 1, 2, 3 and side lengths 2 and 4, the encoded logical teleportation identity and the runner-reported 131-encoding, 890633-triple factorized coverage with 1609-triple control telemetry.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T15:55:37.462864+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
-  "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
+  "helper_runner_paths": [
+    "scripts/frontier_teleportation_three_register_cross_encoding_core.py"
+  ],
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Conjugating the two-dimensional teleportation identity by the three encoding isometries makes every valid ordered A/R/B encoding triple obey the same corrected Bell-branch identity.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
-  "note_hash": "bc348e4fcb05646c6fd0502d34f60c646846577865b35ccd66efd9f338165e78",
+  "note_hash": "65de6e02292d129dbcf60b71323fdf30384f30dff12916a68c3d076e30437a8f",
   "note_path": "docs/TELEPORTATION_THREE_REGISTER_CROSS_ENCODING_NOTE.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: re-render the complete primary runner source and complete stdout or cached certificate so the 131-encoding exhaustiveness, channel-basis tests, factorized coverage, and control paths can be independently checked.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -169,19 +123,104 @@
         "total_pass": 7
       },
       "verdict_rationale": "The load-bearing derivation is an algebraic identity on explicitly defined two-dimensional logical supports, and the runner output reports exact projector resolution/idempotence/orthogonality, all Bell outcomes, corrected-state fidelity, no-message Bob input independence, and the negative-control boundaries within tolerance. The 1609-triple default cap limits the telemetry counts, but the note does not use the capped survey as the theorem boundary; the theorem boundary is the conjugated teleportation identity for runner-valid encodings on the stated surface. No physical resource-preparation, measurement-apparatus, noise, Hamiltonian, or matter-transport bridge is being imported into the scoped claim."
+    },
+    {
+      "archived_at": "2026-07-29T08:19:15.427032+00:00",
+      "archived_for_note_hash": "bc348e4fcb05646c6fd0502d34f60c646846577865b35ccd66efd9f338165e78",
+      "audit_date": "2026-07-25T15:55:37.462864+00:00",
+      "audit_invocation_history": [
+        "7a15fab8d7aa4f15a710c755adec06bd"
+      ],
+      "audit_invocation_id": "7a15fab8d7aa4f15a710c755adec06bd",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 5,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_teleportation_three_register_cross_encoding.py"
+        },
+        "criticality": "leaf",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 0.0,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_teleportation_three_register_cross_encoding.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "b21a419a5173dd8e48f4827d70ee1ec3766a6510f6cd260d5fd15e2104741c62",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "b21a419a5173dd8e48f4827d70ee1ec3766a6510f6cd260d5fd15e2104741c62",
+        "runner_path": "scripts/frontier_teleportation_three_register_cross_encoding.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 0
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-A-20260725-f95d83a2",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The Bell contraction and correction identity closes algebraically, but the restricted packet clips the load-bearing runner source and stdout, so the exhaustive encoding certificate, factorized coverage, and controls cannot be independently verified.",
+      "claim_scope": "For dimensions 1, 2, 3 and side lengths 2 and 4, the encoded logical teleportation identity and the runner-reported 131-encoding, 890633-triple factorized coverage with 1609-triple control telemetry.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-25T15:55:37.462864+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "cross_family",
+      "load_bearing_step": "Conjugating the two-dimensional teleportation identity by the three encoding isometries makes every valid ordered A/R/B encoding triple obey the same corrected Bell-branch identity.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: re-render the complete primary runner source and complete stdout or cached certificate so the 131-encoding exhaustiveness, channel-basis tests, factorized coverage, and control paths can be independently checked.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 5,
+        "B": 0,
+        "C": 9,
+        "D": 0,
+        "total_pass": 14
+      },
+      "verdict_rationale": "Issue: the packet clips the central load-bearing portions of both the runner source and its stdout. Why this blocks: although the standard Bell contraction, correction, and Pauli-twirl algebra independently check out, the claimed exhaustive 131-encoding certificate, 890633-triple factorization, and negative-control implementations cannot be audited from the rendered code. Repair target: provide complete source and execution evidence for the structural-certificate, operator-basis channel, coverage, and control routines. Claim boundary until fixed: the encoded two-dimensional teleportation identity is algebraically supported, while the exhaustive finite coverage and derived omission boundaries remain runner-reported rather than independently source-verified."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 5,
+    "A": 0,
     "B": 0,
-    "C": 9,
+    "C": 0,
     "D": 0,
-    "total_pass": 14
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_teleportation_three_register_cross_encoding.py",
   "title": "Teleportation Three-Register Cross-Encoding Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: the packet clips the central load-bearing portions of both the runner source and its stdout. Why this blocks: although the standard Bell contraction, correction, and Pauli-twirl algebra independently check out, the claimed exhaustive 131-encoding certificate, 890633-triple factorization, and negative-control implementations cannot be audited from the rendered code. Repair target: provide complete source and execution evidence for the structural-certificate, operator-basis channel, coverage, and control routines. Claim boundary until fixed: the encoded two-dimensional teleportation identity is algebraically supported, while the exhaustive finite coverage and derived omission boundaries remain runner-reported rather than independently source-verified."
+  "verdict_rationale": null
 }

@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 18.304,
+  "load_bearing_score": 18.313,
   "load_bearing_step": "Under D'=S^TDS, h'=S^ThS, and k'=S^TkS, the bilinear satisfies B_{D'}(h',k')=B_D(h,k).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1488,6 +1488,6 @@
   },
   "runner_path": null,
   "title": "Universal GR Lorentzian Global Atlas Closure on `PL S^3 x R` (load-bearing claim narrowed to class-A trace identity, 2026-05-17)",
-  "transitive_descendants": 157,
+  "transitive_descendants": 158,
   "verdict_rationale": "The scoped claim is an exact algebraic identity: direct substitution of the inverse-congruence formula reduces the transformed trace to a similarity transform of D^-1hD^-1k. The trace is unchanged, with no cited authority, tuned input, or atlas-level hypothesis needed for this narrowed statement. The absent runner is immaterial because the complete finite-dimensional proof is independently checkable from the note."
 }

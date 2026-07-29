@@ -51,7 +51,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18",
-  "load_bearing_score": 13.609,
+  "load_bearing_score": 13.629,
   "load_bearing_step": "Differentiating phi(r) = M/(4 pi r) gives d phi/dr = -M/(4 pi r^2), hence |grad phi| = M/(4 pi r^2).",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -439,6 +439,6 @@
   },
   "runner_path": "scripts/newton_law_potential_kernel_scope_check.py",
   "title": "Newton Potential-Kernel Algebra Packet on Z^3",
-  "transitive_descendants": 68,
+  "transitive_descendants": 69,
   "verdict_rationale": "The runner genuinely verifies the symbolic derivative, scope restrictions, and live retained-grade dependency edge. The result contains no first-principles computation or external comparison and reduces to one retained-bounded Green-kernel parent plus elementary calculus. It therefore qualifies as an algebraic decoration rather than a separate bounded theorem or Newton force-law derivation."
 }

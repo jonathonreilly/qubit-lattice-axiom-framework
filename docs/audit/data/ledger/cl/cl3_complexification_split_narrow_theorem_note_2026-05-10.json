@@ -1,102 +1,45 @@
 {
-  "audit_date": "2026-07-25T02:21:20.187786+00:00",
-  "audit_invocation_history": [
-    "fae0aa3066694a90b71724588f64b07e",
-    "35656bea83c54af481f2b6ef6ae99b73"
-  ],
-  "audit_invocation_id": "35656bea83c54af481f2b6ef6ae99b73",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 6,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "A",
-      "exists": true,
-      "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {
-      "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f"
-    },
-    "load_bearing_score": 25.291,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/cl3_complexification_exclusion_stress_2026_07_13.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "2c480ed92e1dd9dcd929cf0650143a6e527160c946b2148e2a9627522ec39221",
-        "cache_status": "ok"
-      },
-      "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "2c480ed92e1dd9dcd929cf0650143a6e527160c946b2148e2a9627522ec39221",
-    "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 1771
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260725-e9887b82",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The written algebraic argument appears internally coherent, but the restricted packet explicitly marks the load-bearing runner stdout and source as clipped. The exhaustive module-classification and faithfulness checks therefore cannot be authenticated from the supplied evidence.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "cl3_complexification_split_narrow_theorem_note_2026-05-10",
-  "claim_scope": "Pure abstract-algebra audit of (K1)-(K4).",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-25T02:21:20.187786+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 29,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
+    "scripts/cl3_complexification_lattice_exclusion_helper_2026_07_26.py",
     "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
   ],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 25.298,
-  "load_bearing_step": "The central-idempotent split gives two M_2(C) summands, so Artin-Wedderburn forces every irreducible complex module to have dimension 2, with faithful restrictions to the real algebra Cl(3,0).",
-  "load_bearing_step_class": "A",
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 25.307,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
-  "note_hash": "a1dbc3f515f982cc72a369c46457e5c0a0f5ad812a0a4718c216da92ac9addaa",
+  "note_hash": "9ff1d1e601337fb0209c8bfe6a9bc059ad1b004ff53f8221b2d97f3d41a42d51",
   "note_path": "docs/CL3_COMPLEXIFICATION_SPLIT_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with complete, untruncated primary-runner source and stdout, especially the E2-E4 classification and faithfulness checks, then repeat the independent audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -4718,6 +4661,101 @@
         "total_pass": 62
       },
       "verdict_rationale": "Issue: the K3 idempotence display contains the malformed expression `(1 - 2 i \u03c9 + 1)/(2\u00b2 \u00b7 )`, although the following equality and runner use the correct denominator 4. Why this blocks: a clean math audit must certify every displayed formula; the negative-assertion judgment otherwise passes N1-N8, with five distinct live routes closing the single faithfulness boundary, no hidden import or prior-witness mismatch, all five resolution classes executed, the faithful-direct-sum steelman resolved by reducibility, and no applicable supplied partial-closure or cross-cycle candidate. Repair target: replace the malformed denominator with `4` and independently rerun the K1-K4 formula audit and 62 exact assertions. Claim boundary until fixed: the abstract split and dimension conclusions remain runner-supported, but the source note is not clean as written."
+    },
+    {
+      "archived_at": "2026-07-29T08:18:01.907557+00:00",
+      "archived_for_note_hash": "a1dbc3f515f982cc72a369c46457e5c0a0f5ad812a0a4718c216da92ac9addaa",
+      "audit_date": "2026-07-25T02:21:20.187786+00:00",
+      "audit_invocation_history": [
+        "fae0aa3066694a90b71724588f64b07e",
+        "35656bea83c54af481f2b6ef6ae99b73"
+      ],
+      "audit_invocation_id": "35656bea83c54af481f2b6ef6ae99b73",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 6,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "A",
+          "exists": true,
+          "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {
+          "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f"
+        },
+        "load_bearing_score": 25.291,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/cl3_complexification_exclusion_stress_2026_07_13.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "2c480ed92e1dd9dcd929cf0650143a6e527160c946b2148e2a9627522ec39221",
+            "cache_status": "ok"
+          },
+          "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "e5350cc6e8f15bf4e0fae2782d0ea78a13330ea1b9732c666fa62bb3a5625f4f",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "2c480ed92e1dd9dcd929cf0650143a6e527160c946b2148e2a9627522ec39221",
+        "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 1771
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260725-e9887b82",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The written algebraic argument appears internally coherent, but the restricted packet explicitly marks the load-bearing runner stdout and source as clipped. The exhaustive module-classification and faithfulness checks therefore cannot be authenticated from the supplied evidence.",
+      "claim_scope": "Pure abstract-algebra audit of (K1)-(K4).",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-25T02:21:20.187786+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "The central-idempotent split gives two M_2(C) summands, so Artin-Wedderburn forces every irreducible complex module to have dimension 2, with faithful restrictions to the real algebra Cl(3,0).",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with complete, untruncated primary-runner source and stdout, especially the E2-E4 classification and faithfulness checks, then repeat the independent audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 62,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 62
+      },
+      "verdict_rationale": "Issue: the packet clips the primary runner source and stdout that allegedly exhaust the irreducible-module dimensions and faithfulness boundary. Why this blocks: the visible PASS total cannot establish that all 62 checks genuinely compute the claimed exhaustive result. Repair target: provide complete untruncated E2-E4 source and matching stdout for independent inspection. Claim boundary until fixed: the displayed K1-K4 derivation is plausible standard algebra, but its runner-backed exhaustive negative assertions are not audit-authenticated."
     }
   ],
   "prose_corrections": [],
@@ -4732,14 +4770,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 62,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 62
+    "total_pass": 0
   },
   "runner_path": "scripts/cl3_complexification_exclusion_stress_2026_07_13.py",
   "title": "Cl(3) Complexification Split Narrow Theorem",
-  "transitive_descendants": 1779,
-  "verdict_rationale": "Issue: the packet clips the primary runner source and stdout that allegedly exhaust the irreducible-module dimensions and faithfulness boundary. Why this blocks: the visible PASS total cannot establish that all 62 checks genuinely compute the claimed exhaustive result. Repair target: provide complete untruncated E2-E4 source and matching stdout for independent inspection. Claim boundary until fixed: the displayed K1-K4 derivation is plausible standard algebra, but its runner-backed exhaustive negative assertions are not audit-authenticated."
+  "transitive_descendants": 1791,
+  "verdict_rationale": null
 }

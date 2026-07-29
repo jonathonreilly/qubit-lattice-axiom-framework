@@ -56,7 +56,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained",
-  "load_bearing_score": 7.5,
+  "load_bearing_score": 7.522,
   "load_bearing_step": "The same ordered-lattice machinery can support an electrostatic-like scalar sign law in which like charges repel, unlike charges attract, null superpositions cancel, dipoles flip sign, response scales linearly, and screening attenuates.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -184,6 +184,6 @@
   },
   "runner_path": "scripts/electrostatics_card.py",
   "title": "Electrostatics Card Note",
-  "transitive_descendants": 63,
+  "transitive_descendants": 64,
   "verdict_rationale": "The provided source code performs an internal numerical computation over the lattice machinery and derives the sign antisymmetry, null cancellation, dipole flip, charge-scaling exponent, and screening attenuation values shown in stdout. The reported numbers are not hard-coded expected outputs, and no external comparator or cross-note value is imported. The clean verdict applies only to the narrow scalar sign-coupled construction as stated, not to any broader electromagnetic theory."
 }

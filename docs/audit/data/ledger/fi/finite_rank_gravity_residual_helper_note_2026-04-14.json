@@ -27,7 +27,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": "2026-06-18T03:05:58.140636+00:00",
   "claim_type_provenance": "audited",
-  "criticality": "medium",
+  "criticality": "critical",
   "cross_confirmation": {
     "first_audit": {
       "audit_date": "2026-05-22T23:38:50.350337+00:00",
@@ -57,13 +57,13 @@
   },
   "decoration_parent_claim_id": null,
   "deps": [],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "retained_bounded",
   "effective_status_reason": "self",
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 7.6,
+  "load_bearing_score": 11.773,
   "load_bearing_step": "The exact Woodbury/Dyson identity gives G_W P = G_0 P (I - W G_S)^(-1), hence q_eff = (I - W G_S)^(-1)m and phi = G_0 P q_eff.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -84,6 +84,6 @@
   },
   "runner_path": "scripts/frontier_finite_rank_gravity_residual.py",
   "title": "Finite-Rank Gravity Residual Helper Module",
-  "transitive_descendants": 96,
+  "transitive_descendants": 1236,
   "verdict_rationale": "The load-bearing step is a standard algebraic finite-rank resolvent identity over the stated inputs, and the note explicitly bounds away from deriving the support structure or full gravity theorem. The primary runner independently builds the lattice Laplacian, support projector, finite-rank W, and verifies the exact identities to numerical precision, with additional bounded diagnostic residual tests. The current runner residual values differ from the prose's quoted historical residual, so a second auditor should treat that quote as a non-load-bearing stale verification detail rather than part of the theorem closure."
 }

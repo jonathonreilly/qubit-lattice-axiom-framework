@@ -74,19 +74,19 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": "2026-07-25T20:55:30.373172+00:00",
   "claim_type_provenance": "audited",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 2.085,
+  "load_bearing_score": 3.0,
   "load_bearing_step": "For every finite record collection S, I(S) = sum_{r in S} f(c(r)), with f uniquely fixed on O_real by singleton evaluation.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -111,6 +111,6 @@
   },
   "runner_path": "scripts/physical_record_readout_carrier_three_way_split_cycle693_2026_07_25.py",
   "title": "Record fixes additive readout form, not a finite complex event algebra \u2014 Cycle 693",
-  "transitive_descendants": 2,
+  "transitive_descendants": 3,
   "verdict_rationale": "Issue: The additive factorization and exhibited infinite-content/product countermodels check algebraically, but the bounded negative scope is not N1\u2013N8-complete: N1 has fewer than five distinct attack routes, N2 does not independently stress-test the three residual structures, N3 does not fully disposition the negative/primitive language, and N4 supplies no residual-witness match. Why this blocks: N5 lacks all five resolution-class tests, N6 does not test indexed partial-closure candidates against each wall, N7 provides no live strongest-steelman line with an independent resolution, and N8 provides no applicability dispositions for indexed cross-cycle echoes. Repair target: extend the current runner and packet with distinct route-specific attacks, rhetoric-resolution evidence, wall-independence and hidden-premise scans, and partial-closure/cross-cycle dispositions, then rerun the structured gate. Claim boundary until fixed: Record's (D)+(A)+(Z) clauses prove finite singleton-weight factorization for supplied G and O_real, while the broader three-way non-entailment boundary remains conditional."
 }

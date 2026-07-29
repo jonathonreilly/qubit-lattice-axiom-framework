@@ -41,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "26dbc2f9de127874cab584970aa55de41cdb76083a94a330f627069b320d104f",
+  "note_hash": "576560813fd958a9ab66a6999b013f03073f34e4d569a0b0612a7a066dd72aba",
   "note_path": "docs/MESOSCOPIC_SURROGATE_ANNULAR_TAPERED_SWEEP_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -155,7 +155,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

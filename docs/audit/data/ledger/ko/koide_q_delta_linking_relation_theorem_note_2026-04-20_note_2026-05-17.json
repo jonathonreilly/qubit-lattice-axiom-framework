@@ -34,7 +34,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "48c68516115e2ab24c4b6b3157c907c59f85c73aec600876cf1d4ffc6aaa4b0c",
+  "note_hash": "188a11a6f6fa5d7761db4edd34f64ed28c97ecc0d3a2903760fd63cbdc8608e5",
   "note_path": "docs/KOIDE_Q_DELTA_LINKING_RELATION_THEOREM_NOTE_2026-04-20_NOTE_2026-05-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -48,8 +48,8 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": "scripts/frontier_koide_q_delta_linking_relation_theorem_note_2026-04-20_hostile_audit_findings.py",
-  "title": "koide q delta linking relation theorem note (2026-04-20 \u2014 Hostile Audit Findings",
+  "runner_path": null,
+  "title": "Koide Q-delta linking-relation dependency classification (2026-05-17)",
   "transitive_descendants": 0,
   "verdict_rationale": null
 }

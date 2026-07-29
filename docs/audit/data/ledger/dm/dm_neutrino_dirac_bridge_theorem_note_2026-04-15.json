@@ -1,91 +1,42 @@
 {
-  "audit_date": "2026-07-21T17:36:14.663056+00:00",
-  "audit_invocation_history": [
-    "f8deb446ab4644f6ae59237152fbddf4"
-  ],
-  "audit_invocation_id": "f8deb446ab4644f6ae59237152fbddf4",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 4,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 18.293,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "276c724b2cfb7f97f93911e15011b9d7c9b4209e89aeedb5453e33a3343e4b84",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "276c724b2cfb7f97f93911e15011b9d7c9b4209e89aeedb5453e33a3343e4b84",
-    "runner_path": "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 886
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260721-340265f1",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The displayed representation supports the stated algebraic conclusions, but the primary runner does not check Hermiticity and tests the phi-dependent identities at only five vectors rather than supplying the claimed universal exact certificate. The admitted M(phi) family and chirality convention also have no cited authority in the packet.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "dm_neutrino_dirac_bridge_theorem_note_2026-04-15",
-  "claim_scope": "Conditional finite C^16 Clifford algebra for real phi in the displayed representation: Hermiticity, M(phi)^2=|phi|^2 I, chiral off-diagonal blocks, axis identities, and Xi_5 exclusion, without upstream Higgs-family, selector, chirality, weak-axis, or normalization derivations.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-21T17:36:14.663056+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 17,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 18.312,
-  "load_bearing_step": "`{M(phi), gamma_5} = 0`; therefore `P_L M(phi) P_L = P_R M(phi) P_R = 0`, so `M(phi)` is purely chiral off-diagonal.",
-  "load_bearing_step_class": "A",
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 18.317,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
-  "no_go_discipline": null,
-  "note_hash": "80c3831d8b7dff0731d24eee8a96cd51f1c24d7e87dcfa2a60b89c166c5a0e3d",
+  "note_hash": "0406a6c1c7a7d5543064d3648477fc74bbe4b48ffb501ef5b34115c913d6b01d",
   "note_path": "docs/DM_NEUTRINO_DIRAC_BRIDGE_THEOREM_NOTE_2026-04-15.md",
-  "notes_for_re_audit_if_any": "missing_dependency_edge: cite the authority notes for the admitted M(phi) family and gamma_5 convention and add an exhaustive symbolic Hermiticity and Clifford-identity certificate for arbitrary real phi.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1758,6 +1709,91 @@
         "total_pass": 28
       },
       "verdict_rationale": "For the displayed matrices and real phi, the anticommutation and Xi_5 commutation/block conclusions are algebraically sound, and all 28 reported checks are class-A identity checks. However, the runner neither checks Hermiticity nor proves the identities for arbitrary phi, and the referenced exact companion is not supplied. The source also treats the M(phi) family and gamma_5 convention as admitted upstream inputs while providing no one-hop authority. For the asserted Xi_5 negative boundary, N1/N7 contain one direct finite-matrix route, N2/N3 expose the admitted provenance, N4 has no prior witness, N5 lacks an all-resolution execution, and the N6/N8 indexes do not repair those omissions."
+    },
+    {
+      "archived_at": "2026-07-29T08:18:04.415149+00:00",
+      "archived_for_note_hash": "80c3831d8b7dff0731d24eee8a96cd51f1c24d7e87dcfa2a60b89c166c5a0e3d",
+      "audit_date": "2026-07-21T17:36:14.663056+00:00",
+      "audit_invocation_history": [
+        "f8deb446ab4644f6ae59237152fbddf4"
+      ],
+      "audit_invocation_id": "f8deb446ab4644f6ae59237152fbddf4",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 0,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 4,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 18.293,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "c7fcaca394bf2438a6e64b84f8b26130d485232c1f5416ee74ceb76832e88656",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "276c724b2cfb7f97f93911e15011b9d7c9b4209e89aeedb5453e33a3343e4b84",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "276c724b2cfb7f97f93911e15011b9d7c9b4209e89aeedb5453e33a3343e4b84",
+        "runner_path": "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 886
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260721-340265f1",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed representation supports the stated algebraic conclusions, but the primary runner does not check Hermiticity and tests the phi-dependent identities at only five vectors rather than supplying the claimed universal exact certificate. The admitted M(phi) family and chirality convention also have no cited authority in the packet.",
+      "claim_scope": "Conditional finite C^16 Clifford algebra for real phi in the displayed representation: Hermiticity, M(phi)^2=|phi|^2 I, chiral off-diagonal blocks, axis identities, and Xi_5 exclusion, without upstream Higgs-family, selector, chirality, weak-axis, or normalization derivations.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-21T17:36:14.663056+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "load_bearing_step": "`{M(phi), gamma_5} = 0`; therefore `P_L M(phi) P_L = P_R M(phi) P_R = 0`, so `M(phi)` is purely chiral off-diagonal.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [
+        "derived_no_go_boundary"
+      ],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "missing_dependency_edge: cite the authority notes for the admitted M(phi) family and gamma_5 convention and add an exhaustive symbolic Hermiticity and Clifford-identity certificate for arbitrary real phi.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 28,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 28
+      },
+      "verdict_rationale": "For the displayed matrices and real phi, the anticommutation and Xi_5 commutation/block conclusions are algebraically sound, and all 28 reported checks are class-A identity checks. However, the runner neither checks Hermiticity nor proves the identities for arbitrary phi, and the referenced exact companion is not supplied. The source also treats the M(phi) family and gamma_5 convention as admitted upstream inputs while providing no one-hop authority. For the asserted Xi_5 negative boundary, N1/N7 contain one direct finite-matrix route, N2/N3 expose the admitted provenance, N4 has no prior witness, N5 lacks an all-resolution execution, and the N6/N8 indexes do not repair those omissions."
     }
   ],
   "prose_corrections": [],
@@ -1772,14 +1808,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 28,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 28
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_dm_neutrino_dirac_bridge_theorem.py",
-  "title": "DM Neutrino Dirac Bridge Theorem Note",
-  "transitive_descendants": 898,
-  "verdict_rationale": "For the displayed matrices and real phi, the anticommutation and Xi_5 commutation/block conclusions are algebraically sound, and all 28 reported checks are class-A identity checks. However, the runner neither checks Hermiticity nor proves the identities for arbitrary phi, and the referenced exact companion is not supplied. The source also treats the M(phi) family and gamma_5 convention as admitted upstream inputs while providing no one-hop authority. For the asserted Xi_5 negative boundary, N1/N7 contain one direct finite-matrix route, N2/N3 expose the admitted provenance, N4 has no prior witness, N5 lacks an all-resolution execution, and the N6/N8 indexes do not repair those omissions."
+  "title": "DM Neutrino Dirac Bridge Algebra Note",
+  "transitive_descendants": 901,
+  "verdict_rationale": null
 }

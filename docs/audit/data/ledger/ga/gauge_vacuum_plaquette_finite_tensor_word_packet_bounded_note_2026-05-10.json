@@ -1,78 +1,24 @@
 {
-  "audit_date": "2026-07-22T18:23:13.462123+00:00",
-  "audit_invocation_history": [
-    "fe500f0fdb08474587f16c898fb3af81",
-    "14d89d5737ca4b4fac0eb35076ac6ccd"
-  ],
-  "audit_invocation_id": "14d89d5737ca4b4fac0eb35076ac6ccd",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 3,
-        "C": 16,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Float64 finite-box evaluation at x=2 and 0<=p,q<=4 of the stipulated SU(3) Haar character integrals and normalized rho values, including the disclosed cross-route and refinement checks, without a physical Wilson-environment or plaquette identification."
-    },
-    "dep_claim_type": {
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
-    },
-    "deps": [
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 23.75,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "9985025d743e2ed898bfecf5f8440c8b0a206e7b538352b6cb97429d530c6a0d",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "9985025d743e2ed898bfecf5f8440c8b0a206e7b538352b6cb97429d530c6a0d",
-    "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 860
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260722-9a8b726f",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The finite algebra is coherent and the visible output reports P1\u2013P3 passes, but the packet explicitly declares that the load-bearing stdout is clipped. Therefore the evidence chain cannot be certified clean in this audit.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
-  "claim_scope": "One finite NMAX=4, MODE_MAX=80, beta=6 tensor_word matrix built from truncated Wilson coefficients and SU(3) fusion multiplicities satisfies P1\u2013P3 at double precision.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-22T18:23:13.462123+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -80,20 +26,19 @@
     "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
   ],
   "direct_in_degree": 28,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 23.768,
-  "load_bearing_step": "Construct tensor_word := diag_c \u00b7 (N_f + N_fbar) \u00b7 diag_c \u00b7 (N_f + N_fbar)^T \u00b7 diag_c and directly verify P1\u2013P3 on the 25-state box.",
-  "load_bearing_step_class": "A",
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 23.773,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "9097a5652b0ec1ba06627fb0cddedafdacca63f8cb5c81b61736acff1d6af95e",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with complete SHA-bound primary-runner stdout, then re-audit the same finite scope.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -174,19 +119,111 @@
         "total_pass": 76
       },
       "verdict_rationale": "The runner source genuinely constructs the finite coefficient vector from the Schur-Weyl Bessel determinant, builds the SU(3) fundamental and anti-fundamental fusion matrices, forms tensor_word, and checks P1-P3 directly. The one-hop Wilson coefficient authority is marked retained_bounded, and the remaining fusion multiplicity input is explicitly admitted as bounded textbook input on the finite box. The note's boundaries exclude the open parent matrix-element identity and untruncated transfer construction, so no broader claim is imported."
+    },
+    {
+      "archived_at": "2026-07-29T08:20:45.420096+00:00",
+      "audit_date": "2026-07-22T18:23:13.462123+00:00",
+      "audit_invocation_history": [
+        "fe500f0fdb08474587f16c898fb3af81",
+        "14d89d5737ca4b4fac0eb35076ac6ccd"
+      ],
+      "audit_invocation_id": "14d89d5737ca4b4fac0eb35076ac6ccd",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 3,
+            "C": 16,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Float64 finite-box evaluation at x=2 and 0<=p,q<=4 of the stipulated SU(3) Haar character integrals and normalized rho values, including the disclosed cross-route and refinement checks, without a physical Wilson-environment or plaquette identification."
+        },
+        "dep_claim_type": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
+        },
+        "dep_effective_status": {
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
+        },
+        "deps": [
+          "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
+        ],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 23.75,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "9985025d743e2ed898bfecf5f8440c8b0a206e7b538352b6cb97429d530c6a0d",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "9985025d743e2ed898bfecf5f8440c8b0a206e7b538352b6cb97429d530c6a0d",
+        "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 860
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260722-9a8b726f",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The finite algebra is coherent and the visible output reports P1\u2013P3 passes, but the packet explicitly declares that the load-bearing stdout is clipped. Therefore the evidence chain cannot be certified clean in this audit.",
+      "claim_scope": "One finite NMAX=4, MODE_MAX=80, beta=6 tensor_word matrix built from truncated Wilson coefficients and SU(3) fusion multiplicities satisfies P1\u2013P3 at double precision.",
+      "claim_type": "bounded_theorem",
+      "claim_type_last_reviewed": "2026-07-22T18:23:13.462123+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "runner_hash_changed:9985025d->9ee93f7e",
+      "load_bearing_step": "Construct tensor_word := diag_c \u00b7 (N_f + N_fbar) \u00b7 diag_c \u00b7 (N_f + N_fbar)^T \u00b7 diag_c and directly verify P1\u2013P3 on the 25-state box.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with complete SHA-bound primary-runner stdout, then re-audit the same finite scope.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 74,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "total_pass": 74
+      },
+      "verdict_rationale": "Issue: the packet preflight marks the runner stdout as clipped in load-bearing evidence, so the complete execution certificate is unavailable. Why this matters: the visible P1\u2013P3 passes and full source support the finite result, but they cannot establish an exact source-to-stdout binding sufficient for a clean audit. Repair target: regenerate the restricted packet with complete SHA-bound stdout, or supply an independent complete calculation of construction (3) and P1\u2013P3. Claim boundary until fixed: treat P1\u2013P3 for this single finite matrix as conditionally supported, with no parent or untruncated implication."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 74,
+    "A": 0,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 74
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py",
   "title": "Gauge-Vacuum Plaquette Finite Tensor-Word Packet \u2014 Bounded Note",
-  "transitive_descendants": 871,
-  "verdict_rationale": "Issue: the packet preflight marks the runner stdout as clipped in load-bearing evidence, so the complete execution certificate is unavailable. Why this matters: the visible P1\u2013P3 passes and full source support the finite result, but they cannot establish an exact source-to-stdout binding sufficient for a clean audit. Repair target: regenerate the restricted packet with complete SHA-bound stdout, or supply an independent complete calculation of construction (3) and P1\u2013P3. Claim boundary until fixed: treat P1\u2013P3 for this single finite matrix as conditionally supported, with no parent or untruncated implication."
+  "transitive_descendants": 874,
+  "verdict_rationale": null
 }

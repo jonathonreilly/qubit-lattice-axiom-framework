@@ -1,89 +1,42 @@
 {
-  "audit_date": "2026-07-22T18:49:06.525348+00:00",
-  "audit_invocation_history": [
-    "2322d99d05ed4156aea61bb87b71cf10",
-    "a7243df27c9746a681c1b17cedb6e5a6"
-  ],
-  "audit_invocation_id": "a7243df27c9746a681c1b17cedb6e5a6",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": true,
-      "dominant_class": "B",
-      "exists": true,
-      "runner_path": "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 9.992,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "3015a7eeb7fbba47a0222374d0a2f0579c485c9eed629208fe946441d64a07d0",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "3015a7eeb7fbba47a0222374d0a2f0579c485c9eed629208fe946441d64a07d0",
-    "runner_path": "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 719
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260722-3269db17",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The written algebra is coherent, but the restricted packet clips the load-bearing runner stdout before Parts 1\u20133, so the independent executable certificate cannot be fully verified from the rendered evidence.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_note_2026-06-07",
-  "claim_scope": "For beta>0, all SU(3) Wilson character coefficients and normalized convolution eigenvalues are positive, and arbitrary all-weight scalar sequences act diagonally on finite-character tests through stabilized finite Haar convolutions.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-22T18:49:06.525348+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 1,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 10.014,
-  "load_bearing_step": "The explicit highest-weight vector gives m_(p,q)(p+q)>=1, making the nonnegative coefficient series strictly positive for beta>0, while Schur orthogonality yields the diagonal stabilized finite-test convolution action.",
-  "load_bearing_step_class": "A",
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 10.02,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "9f5ac4c3864eb4061572bcc07a4a5805a69b78fd14fe7e91efcbfca36824f24d",
   "note_path": "docs/GAUGE_WILSON_SU3_ALL_WEIGHT_POSITIVE_COEFFICIENT_FORMAL_BRIDGE_NOTE_2026-06-07.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the complete SHA-pinned runner stdout, including Parts 1\u20133 and all 50 labeled checks, then re-audit against the unchanged source and runner hashes.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1344,19 +1297,103 @@
         "total_pass": 38
       },
       "verdict_rationale": "The positivity conclusion is mathematically plausible, but its decisive representation-theoretic occurrence is asserted rather than derived from the restricted packet. The runner hard-codes the consequence of that assertion and therefore does not independently test the contested multiplicity claim. The formal convolution portion is principally a coefficientwise definition supplemented by an unproved Schur/Peter-Weyl normalization rule."
+    },
+    {
+      "archived_at": "2026-07-29T08:20:45.528664+00:00",
+      "audit_date": "2026-07-22T18:49:06.525348+00:00",
+      "audit_invocation_history": [
+        "2322d99d05ed4156aea61bb87b71cf10",
+        "a7243df27c9746a681c1b17cedb6e5a6"
+      ],
+      "audit_invocation_id": "a7243df27c9746a681c1b17cedb6e5a6",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "decoration_candidate": true,
+          "dominant_class": "B",
+          "exists": true,
+          "runner_path": "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 9.992,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "3015a7eeb7fbba47a0222374d0a2f0579c485c9eed629208fe946441d64a07d0",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "3015a7eeb7fbba47a0222374d0a2f0579c485c9eed629208fe946441d64a07d0",
+        "runner_path": "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 719
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260722-3269db17",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The written algebra is coherent, but the restricted packet clips the load-bearing runner stdout before Parts 1\u20133, so the independent executable certificate cannot be fully verified from the rendered evidence.",
+      "claim_scope": "For beta>0, all SU(3) Wilson character coefficients and normalized convolution eigenvalues are positive, and arbitrary all-weight scalar sequences act diagonally on finite-character tests through stabilized finite Haar convolutions.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-22T18:49:06.525348+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "runner_hash_changed:3015a7ee->97269001",
+      "load_bearing_step": "The explicit highest-weight vector gives m_(p,q)(p+q)>=1, making the nonnegative coefficient series strictly positive for beta>0, while Schur orthogonality yields the diagonal stabilized finite-test convolution action.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the complete SHA-pinned runner stdout, including Parts 1\u20133 and all 50 labeled checks, then re-audit against the unchanged source and runner hashes.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 39,
+        "B": 11,
+        "C": 0,
+        "D": 0,
+        "total_pass": 50
+      },
+      "verdict_rationale": "Issue: the note's exact SU(3) argument is internally coherent, but the restricted runner stdout is clipped before the load-bearing Pieri-occurrence and independent-decomposition evidence, so the advertised 50-pass certificate is not fully inspectable. Why this blocks: the packet preflight forbids a clean verdict even though the included runner source shows a plausible exact implementation and the displayed convolution checks pass. Repair target: rerender the complete SHA-pinned stdout, including Parts 1\u20133 and every labeled check, then repeat the restricted audit. Claim boundary until fixed: the two statements remain supported by the written algebra, but retained-grade executable cross-verification is conditional on complete evidence rendering."
     }
   ],
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 39,
-    "B": 11,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 50
+    "total_pass": 0
   },
   "runner_path": "scripts/audit_companion_gauge_wilson_su3_all_weight_positive_coefficient_formal_bridge_2026_06_07.py",
   "title": "Gauge Wilson SU(3) All-Weight Positive-Coefficient Formal Bridge",
-  "transitive_descendants": 730,
-  "verdict_rationale": "Issue: the note's exact SU(3) argument is internally coherent, but the restricted runner stdout is clipped before the load-bearing Pieri-occurrence and independent-decomposition evidence, so the advertised 50-pass certificate is not fully inspectable. Why this blocks: the packet preflight forbids a clean verdict even though the included runner source shows a plausible exact implementation and the displayed convolution checks pass. Repair target: rerender the complete SHA-pinned stdout, including Parts 1\u20133 and every labeled check, then repeat the restricted audit. Claim boundary until fixed: the two statements remain supported by the written algebra, but retained-grade executable cross-verification is conditional on complete evidence rendering."
+  "transitive_descendants": 733,
+  "verdict_rationale": null
 }

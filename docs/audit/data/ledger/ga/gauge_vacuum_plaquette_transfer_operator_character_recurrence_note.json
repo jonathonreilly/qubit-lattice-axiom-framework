@@ -1,89 +1,42 @@
 {
-  "audit_date": "2026-07-22T18:49:06.513166+00:00",
-  "audit_invocation_history": [
-    "8c1624b66f6a43619bb7fa49c1c4aebb",
-    "10c493e8a03d483f967c4e10a3710b58"
-  ],
-  "audit_invocation_id": "10c493e8a03d483f967c4e10a3710b58",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 50,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {},
-    "dep_claim_type": {},
-    "dep_effective_status": {},
-    "deps": [],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 26.33,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "e4da7117aca2f942c8dd862c9e2fd5827f6c235cffca6eb45ec42ffad156690b",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "e4da7117aca2f942c8dd862c9e2fd5827f6c235cffca6eb45ec42ffad156690b",
-    "runner_path": "scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 909
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-B-20260722-01615e54",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The displayed algebra is internally coherent, but the binding preflight identifies the authenticated runner evidence as clipped and load-bearing. Complete SHA-pinned runner stdout is required before the chain can close.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
-  "claim_scope": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and spatial/mixed source formulas, plus the SU(3) six-neighbor recurrence on the supplied gauge carrier.",
+  "claim_scope": null,
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-22T18:49:06.513166+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 33,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "fresh_context",
-  "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 26.347,
-  "load_bearing_step": "The nonnegative character expansion of w_beta makes C_beta and Q_beta positive, so T_beta = (Q_beta^(1/2) M_beta)^* (Q_beta^(1/2) M_beta) is positive.",
-  "load_bearing_step_class": "A",
+  "independence": null,
+  "intrinsic_status": "unaudited",
+  "load_bearing_score": 26.352,
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "4f9661cbd486b814a2c4ac2d8b04c4171eb80dc9d87444f2d91d1dc2b041e1a5",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_TRANSFER_OPERATOR_CHARACTER_RECURRENCE_NOTE.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: re-render the complete SHA-pinned primary-runner stdout, including all 21 checks and the summary, then rerun the restricted audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -1587,6 +1540,90 @@
         "total_pass": 21
       },
       "verdict_rationale": "The runner genuinely computes its 21 reported checks, but explicitly labels all of them support and supplies only one finite S3 multiplication-fit counterexample for the contested negative boundary. That counterexample cannot establish the stated general SU(N) nonrepresentability, although it does support the two-slice source grammar. Under N1-N8, there is no exhaustive alternative-route test, independent wall analysis, hidden-premise and rhetoric resolution audit, matched residual witness, complete partial-closure and cross-cycle disposition, or independently resolved steelman for that negative assertion."
+    },
+    {
+      "archived_at": "2026-07-29T08:20:45.528470+00:00",
+      "audit_date": "2026-07-22T18:49:06.513166+00:00",
+      "audit_invocation_history": [
+        "8c1624b66f6a43619bb7fa49c1c4aebb",
+        "10c493e8a03d483f967c4e10a3710b58"
+      ],
+      "audit_invocation_id": "10c493e8a03d483f967c4e10a3710b58",
+      "audit_state_snapshot": {
+        "artifact_classifier_state": {
+          "assert_count": 1,
+          "counts": {
+            "A": 0,
+            "B": 0,
+            "C": 50,
+            "D": 0
+          },
+          "decoration_candidate": false,
+          "dominant_class": "C",
+          "exists": true,
+          "runner_path": "scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py"
+        },
+        "criticality": "critical",
+        "dep_axiom_premise_note_hash": {},
+        "dep_claim_scope": {},
+        "dep_claim_type": {},
+        "dep_effective_status": {},
+        "deps": [],
+        "helper_runner_hashes": {},
+        "load_bearing_score": 26.33,
+        "policy_versions": {
+          "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+          "audit_tuple_agreement_schema": "audit_tuple_v2",
+          "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+          "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+        },
+        "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+        "runner_cache_state": {
+          "scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py": {
+            "cache_exit_code": "0",
+            "cache_freshness": "fresh",
+            "cache_input_fingerprint_sha256": null,
+            "cache_runner_sha256": "e4da7117aca2f942c8dd862c9e2fd5827f6c235cffca6eb45ec42ffad156690b",
+            "cache_status": "ok"
+          }
+        },
+        "runner_hash": "e4da7117aca2f942c8dd862c9e2fd5827f6c235cffca6eb45ec42ffad156690b",
+        "runner_path": "scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py",
+        "runner_present": true,
+        "schema": "blocker_fingerprint_v1",
+        "transitive_descendants": 909
+      },
+      "audit_status": "audited_conditional",
+      "auditor": "codex-audit-batch-B-20260722-01615e54",
+      "auditor_confidence": "high",
+      "auditor_family": "codex-gpt-5.6",
+      "auditor_model": "gpt-5.6-sol",
+      "auditor_reasoning_effort": "xhigh",
+      "blocker": null,
+      "chain_closes": false,
+      "chain_closure_explanation": "The displayed algebra is internally coherent, but the binding preflight identifies the authenticated runner evidence as clipped and load-bearing. Complete SHA-pinned runner stdout is required before the chain can close.",
+      "claim_scope": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and spatial/mixed source formulas, plus the SU(3) six-neighbor recurrence on the supplied gauge carrier.",
+      "claim_type": "positive_theorem",
+      "claim_type_last_reviewed": "2026-07-22T18:49:06.513166+00:00",
+      "claim_type_provenance": "audited",
+      "cross_confirmation": null,
+      "decoration_parent_claim_id": null,
+      "independence": "fresh_context",
+      "invalidation_reason": "runner_hash_changed:e4da7117->77fa08f6",
+      "load_bearing_step": "The nonnegative character expansion of w_beta makes C_beta and Q_beta positive, so T_beta = (Q_beta^(1/2) M_beta)^* (Q_beta^(1/2) M_beta) is positive.",
+      "load_bearing_step_class": "A",
+      "negative_assertion_classes": [],
+      "no_go_discipline": null,
+      "notes_for_re_audit_if_any": "runner_artifact_issue: re-render the complete SHA-pinned primary-runner stdout, including all 21 checks and the summary, then rerun the restricted audit.",
+      "open_dependency_paths": [],
+      "runner_check_breakdown": {
+        "A": 8,
+        "B": 0,
+        "C": 13,
+        "D": 0,
+        "total_pass": 21
+      },
+      "verdict_rationale": "Issue: the restricted packet authenticates only a clipped runner-stdout block for the load-bearing transfer and source verification. Why this blocks: although the representation-ring positivity argument and displayed operator factorization are internally consistent, the binding preflight forbids a clean verdict without complete execution evidence. Repair target: render the full SHA-pinned primary-runner stdout and repeat the independent formula audit. Claim boundary until fixed: the stated finite-volume positivity, trace, insertion, and recurrence results remain conditional; mixed-source one-slice nonrepresentability is not ratified."
     }
   ],
   "prose_corrections": [],
@@ -1601,14 +1638,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 8,
+    "A": 0,
     "B": 0,
-    "C": 13,
+    "C": 0,
     "D": 0,
-    "total_pass": 21
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_transfer_operator_character_recurrence.py",
   "title": "Gauge-Vacuum Wilson Transfer / Character-Recurrence Theorem",
-  "transitive_descendants": 920,
-  "verdict_rationale": "Issue: the restricted packet authenticates only a clipped runner-stdout block for the load-bearing transfer and source verification. Why this blocks: although the representation-ring positivity argument and displayed operator factorization are internally consistent, the binding preflight forbids a clean verdict without complete execution evidence. Repair target: render the full SHA-pinned primary-runner stdout and repeat the independent formula audit. Claim boundary until fixed: the stated finite-volume positivity, trace, insertion, and recurrence results remain conditional; mixed-source one-slice nonrepresentability is not ratified."
+  "transitive_descendants": 923,
+  "verdict_rationale": null
 }

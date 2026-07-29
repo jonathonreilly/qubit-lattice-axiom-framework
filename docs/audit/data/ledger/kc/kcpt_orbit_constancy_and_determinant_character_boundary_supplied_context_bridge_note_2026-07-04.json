@@ -54,7 +54,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 12.533,
+  "load_bearing_score": 12.544,
   "load_bearing_step": "The homomorphic phase functional is odd, while T1 orbit constancy makes it K-even, so evenness and oddness together force it to vanish identically.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -320,6 +320,6 @@
   },
   "runner_path": "scripts/frontier_kcpt_orbit_constancy_determinant_character_boundary_bridge_2026_07_04.py",
   "title": "K/CPT Orbit Constancy And Determinant-Character Boundary Supplied-Context Bridge",
-  "transitive_descendants": 130,
+  "transitive_descendants": 131,
   "verdict_rationale": "Issue: ORBIT-INDEXING and the R-valued determinant-character/log-character homomorphism are introduced as supplied context, but neither is a cited accepted or retained authority in this packet. Why this blocks: the runner correctly verifies the elementary implication and its negative controls, but it does not derive either supplied premise from Record. Repair target: wire retained one-hop authorities establishing those premises and include them in a fresh restricted audit packet. Claim boundary until fixed: conditional on those premises, Record content-determination gives orbit constancy and even-plus-odd algebra annihilates the homomorphic phase functional while allowing log-modulus data."
 }

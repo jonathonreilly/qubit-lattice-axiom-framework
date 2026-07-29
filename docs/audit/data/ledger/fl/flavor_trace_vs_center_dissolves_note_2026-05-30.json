@@ -23,7 +23,8 @@
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
-    "flavor_native_action_predicts_q1_2026-06-02"
+    "flavor_native_action_predicts_q1_2026-06-02",
+    "flavor_r_half_is_a_stationary_point_not_forced_2026-06-02"
   ],
   "direct_in_degree": 2,
   "effective_status": "unaudited",
@@ -36,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "131f20e657058699396c155e0da0bc51ff8d126a4feab795bcb575a592603382",
+  "note_hash": "d09c685077826a15849945ec0a7898999acd22447e80cd26ecac0640bd454581",
   "note_path": "docs/FLAVOR_TRACE_VS_CENTER_DISSOLVES_NOTE_2026-05-30.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

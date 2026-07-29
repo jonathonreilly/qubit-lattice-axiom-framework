@@ -80,13 +80,13 @@
   },
   "decoration_parent_claim_id": null,
   "deps": [],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "retained_bounded",
   "effective_status_reason": "self",
   "helper_runner_paths": [],
   "independence": "judicial_review",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 7.7,
+  "load_bearing_score": 8.307,
   "load_bearing_step": "The tested DAG family shows that the better-performing action switches from spent-delay to valley-linear as graph geometry becomes more regular.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "retained_bounded",
@@ -149,6 +149,6 @@
   },
   "runner_path": "scripts/action_regularity_crossover.py",
   "title": "Action Crossover: Spent-delay \u2192 Valley-linear with Regularity",
-  "transitive_descendants": 12,
+  "transitive_descendants": 13,
   "verdict_rationale": "The included runner source performs an actual deterministic sweep: it generates the DAGs, propagates both action formulas, counts TOWARD outcomes, and prints values matching the note. The affirmative claim is explicitly bounded to the tested DAG slice and disclaims a universal bridge theorem or closed action derivation. Under that narrowed scope, the open axiom-level interpretation is not load-bearing, so the finite computational replay closes."
 }

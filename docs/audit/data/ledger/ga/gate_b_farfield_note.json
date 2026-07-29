@@ -42,7 +42,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 14.598,
+  "load_bearing_score": 14.609,
   "load_bearing_step": "Under the declared runner ingredients and far-field rows, the harness returns a clean bounded numerical far-field signature on the tested generated geometries.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -1735,6 +1735,6 @@
   },
   "runner_path": "scripts/gate_b_farfield_harness.py",
   "title": "Gate B Far-Field Bounded Harness Certificate",
-  "transitive_descendants": 136,
+  "transitive_descendants": 137,
   "verdict_rationale": "The source code performs a substantive finite numerical simulation, and its control flow supports the rendered stdout. However, the load-bearing computation begins from runner-defined dynamical and readout ingredients that are neither accepted premises nor derived by a cited retained authority. The note accurately confines itself to a runner-only certificate and does not establish a physical Gate B or gravity theorem."
 }

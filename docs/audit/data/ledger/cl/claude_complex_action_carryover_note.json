@@ -56,7 +56,7 @@
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 6.977,
+  "load_bearing_score": 7.0,
   "load_bearing_step": "Exact-lattice replay at h = 0.5, W = 6, L = 30, s = 0.1, z_src = 3 gives gamma=0 reduction, machine-clean Born ratios, and a TOWARD->AWAY crossover between gamma=0.05 and 0.10.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
@@ -182,6 +182,6 @@
   },
   "runner_path": "scripts/exact_lattice_complex_action_carryover.py",
   "title": "Claude Complex-Action Carryover Note",
-  "transitive_descendants": 62,
+  "transitive_descendants": 63,
   "verdict_rationale": "The runner performs an actual bounded numerical computation for the specified exact-lattice setup and produces the gamma=0 reduction, near-machine-zero Born ratios, and TOWARD-to-AWAY crossover. No cited upstream authority is required in the restricted packet, and the note explicitly avoids broader geometry-generic or continuum claims. The only caveat is that the note's Born-test numeric entries do not exactly match the current cached runner stdout, so those specific frozen values should be refreshed even though the audited narrow conclusion still follows."
 }

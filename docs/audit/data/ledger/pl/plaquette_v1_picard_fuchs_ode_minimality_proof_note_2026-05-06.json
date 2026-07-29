@@ -52,7 +52,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 13.14,
+  "load_bearing_score": 13.146,
   "load_bearing_step": "Using the Bessel-determinant Taylor coefficients through depth 40, exact residual and rank calculations establish certificates [A]-[E] in the stated finite windows.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -466,6 +466,6 @@
   },
   "runner_path": "scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py",
   "title": "Plaquette V=1 Picard-Fuchs ODE: Finite-Window Certificate Note",
-  "transitive_descendants": 797,
+  "transitive_descendants": 800,
   "verdict_rationale": "The runner genuinely constructs exact rational Taylor coefficients and performs all five advertised residual, recurrence, rank, uniqueness, and kernel-dimension checks rather than merely printing expected results. For N1/N2/N5/N7, the negative exclusion has one bounded matrix-rank route and no independent wall set; the skipped cell, higher degrees, and all-order extension remain untested, and no per-site, per-mode, per-block, or lattice-wide resolution evidence supports a broader reading. For N3/N4, the load-bearing unclosed premise is the Bars integral-to-series identity, while no prior residual witness is invoked. For N6/N8, the indexed framework primitives and unrelated open gates do not supply that identity, and the Picard-Fuchs finite-window cross-cycle echo supports only the same narrowed scope."
 }

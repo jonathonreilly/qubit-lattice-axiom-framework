@@ -256,7 +256,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "a2b8dd603005f2e46bc9ac47779960d00d53a0f2b848f39609ae86da49eb6ee5",
+  "note_hash": "b850ab7ce2bdba3c31a9206a910e0236ce63552408317e1dc4c6d02377ae912c",
   "note_path": "docs/publication/ci3_z3/PUBLICATION_MATRIX.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

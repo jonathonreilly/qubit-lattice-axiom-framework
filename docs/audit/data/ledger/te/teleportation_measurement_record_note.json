@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 4.322,
+  "load_bearing_score": 4.459,
   "load_bearing_step": "After premeasurement into the inaccessible record register, tracing out A, R, and M leaves Bob's reduced density matrix equal to I/2 and input-independent across the sampled states.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1369,6 +1369,6 @@
   },
   "runner_path": "scripts/frontier_teleportation_measurement_record.py",
   "title": "Teleportation Bell-Measurement Record Note",
-  "transitive_descendants": 9,
+  "transitive_descendants": 10,
   "verdict_rationale": "The runner genuinely computes all five reported checks, and its source supports the rendered stdout, but the checks are class-A algebra and finite random-state tests inside a stipulated ideal teleportation model. The orthogonal record basis, Bell resource, projective measurement, and conditioning rule are imported premises rather than consequences of the accepted framework surface. The note states this boundary honestly, so the ideal model is supported while the native measurement-record derivation remains conditional."
 }

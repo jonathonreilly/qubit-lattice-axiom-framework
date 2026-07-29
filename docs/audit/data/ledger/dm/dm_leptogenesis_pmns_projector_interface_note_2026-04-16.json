@@ -102,7 +102,7 @@
   "helper_runner_paths": [],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",
-  "load_bearing_score": 18.592,
+  "load_bearing_score": 18.598,
   "load_bearing_step": "For simple spectra with ascending-eigenvalue labels, any two ordered unitary diagonalizers differ only by diagonal phase matrices, so |U_e^dagger U_nu|^2 is intrinsic to the supplied Hermitian pair.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -5324,6 +5324,6 @@
   },
   "runner_path": "scripts/frontier_dm_leptogenesis_pmns_projector_interface.py",
   "title": "DM Leptogenesis PMNS Projector Interface",
-  "transitive_descendants": 771,
+  "transitive_descendants": 774,
   "verdict_rationale": "The claim is an exact finite-dimensional algebraic theorem on a supplied pair, with the physical carrier, column selection, and transport interpretation explicitly excluded. A manual derivation independently verifies unitarity, both stochastic normalizations, rephasing invariance, ordered simple-spectrum uniqueness, and the degeneracy boundary; the runner supplies consistent finite examples without serving as the proof. Positive-definiteness is stronger than necessary but introduces no defect."
 }

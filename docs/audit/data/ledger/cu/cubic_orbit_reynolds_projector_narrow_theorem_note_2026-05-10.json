@@ -74,7 +74,7 @@
   "helper_runner_paths": [],
   "independence": "cross_family",
   "intrinsic_status": "audited_conditional",
-  "load_bearing_score": 2.585,
+  "load_bearing_score": 3.0,
   "load_bearing_step": "Averaging Q(g\u00b7k)=g\u00b7Qk=Qk over D_4 gives Q(Pk)=Qk, while Q acts identically on V_sym, hence Pk=Qk for every k and Q=P.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
@@ -1288,6 +1288,6 @@
   },
   "runner_path": "scripts/frontier_cubic_orbit_reynolds_projector_narrow.py",
   "title": "Cubic-Orbit Reynolds Projector Narrow Positive Theorem",
-  "transitive_descendants": 2,
+  "transitive_descendants": 3,
   "verdict_rationale": "Issue: The packet explicitly marks the load-bearing runner stdout as clipped, so the complete 143-check execution record is unavailable even though the included proof and runner source support the identities. Why this blocks: The binding packet-completeness preflight forbids audited_clean when load-bearing evidence is clipped. Repair target: Supply an unclipped SHA-pinned stdout or certificate for the included runner, including Part G's Reynolds identity and uniqueness checks, then rerun the restricted audit. Claim boundary until fixed: The source presents a coherent finite-set Reynolds-operator proof, but this audit can ratify it only conditionally pending complete runner evidence."
 }

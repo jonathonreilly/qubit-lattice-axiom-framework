@@ -29,7 +29,10 @@
   "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/wave_direct_dm_h025_fam1_seed0_control_batch.py",
+    "scripts/wave_direct_dm_h025_fam2_seed0_control_batch.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 4.0,
@@ -37,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "b3c5e23ae8306b70bc90615d06765b19f8d0cc6a703dadabf686b7ecd459e5f5",
+  "note_hash": "6331c19ac68c44a9aa28a4ef6190caedc0c722676aa16a8dc0ed018e246fc38a",
   "note_path": "docs/WAVE_DIRECT_DM_H025_SEED0_CROSSFAMILY_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

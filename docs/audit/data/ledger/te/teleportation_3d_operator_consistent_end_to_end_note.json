@@ -34,8 +34,7 @@
     "scripts/frontier_teleportation_operator_consistent_end_to_end.py",
     "scripts/frontier_teleportation_resource_fidelity.py",
     "scripts/frontier_teleportation_resource_from_poisson.py",
-    "scripts/frontier_teleportation_taste_readout_operator_model.py",
-    "scripts/teleportation_boundary_checks_2026_06_13.py"
+    "scripts/frontier_teleportation_taste_readout_operator_model.py"
   ],
   "independence": "fresh_context",
   "intrinsic_status": "retained_bounded",

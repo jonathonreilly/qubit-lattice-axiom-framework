@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.585,
+  "load_bearing_score": 3.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/kcpt_ind12_separator_reach_quantized_census_minimal_unlock_2026_07_25.py",
   "title": "KCPT \u2014 ind12 Separator Reach: a Numerically Resolved Census over 768 Ambient Single-Element Extensions and a 28-Dimensional Central Extension (Bounded Theorem)",
-  "transitive_descendants": 5,
+  "transitive_descendants": 6,
   "verdict_rationale": null
 }

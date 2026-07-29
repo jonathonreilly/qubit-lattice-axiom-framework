@@ -1,7 +1,7 @@
 slug: wilson-mu2-distance-sweep-artifact-repair-20260729
 date: 2026-07-29
 branch: claude/science-fix/wilson_mu2_distance_sweep_note_2026-04-11-cc43b062
-status: review
+status: ready_for_independent_audit
 target: audited_clean re-audit readiness for the bounded Wilson mu2 distance sweep
 target_claim_type: bounded_theorem
 cycle_count: 1

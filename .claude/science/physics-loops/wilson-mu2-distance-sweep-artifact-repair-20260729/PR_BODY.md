@@ -34,6 +34,8 @@ nonpass.
 - Primary live/cache: distance `PASS=6 FAIL=0`, embedded finite diagnostic
   `PASS=9 FAIL=0`.
 - Standalone diagnostic live/cache: `PASS=9 FAIL=0`.
+- Restricted audit prompt: 193038 characters with `transport_bound=false`;
+  complete runner stdout remains visible.
 - Python compilation, cache freshness, vocabulary lint, `git diff --check`,
   strict audit lint, full audit-preparation pipeline, restricted-packet
   no-clipping checks, and repository invariants pass.

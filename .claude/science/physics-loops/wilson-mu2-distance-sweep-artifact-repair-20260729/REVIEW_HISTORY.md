@@ -13,4 +13,9 @@
   N8 identifies the staggered partner-force readout change as a concrete
   cross-cycle escape mechanism. Disposition: PASS WITH BOUNDED CLAIMS for the
   finite calibration and finite diagnostic nonpass only.
-- Full pipeline and strict audit lint: pending final post-merge run.
+- Full post-merge pipeline and strict audit lint: PASS. Repository invariants
+  report `PASS` with the one intentional parent-edge removal acknowledged in
+  the citation-graph manifest.
+- Restricted-packet dry run: PASS at 193038 characters with
+  `transport_bound=false`; the isolated primary live execution passed and the
+  complete cache bodies remain below the 6000-character excerpt ceiling.

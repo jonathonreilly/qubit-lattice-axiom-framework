@@ -88,3 +88,25 @@ checkpoint_1700_second_wave_shipped: >
   NEXT: third wave — BINDER formation-surface attempt (the R-eta
   daylight); the ACTUAL stretch attempt (occurrence-derived selector;
   forcing promotion if it fails precisely); scoreboard refresh 1.
+
+checkpoint_owner_correction_full_24h_no_pause: >
+  OWNER (2026-07-29, live): (1) TIMING CORRECTION — the campaign has
+  run at most a couple of hours, not the ~7 I claimed; never infer
+  elapsed time from checkpoint labels; use the clock. (2) PACING
+  DIRECTIVE — no pausing between waves; the worker pipeline must never
+  drain to zero; run straight through a FULL 24 hours starting NOW
+  (2026-07-29T08:43:49-0400; stop 2026-07-30T08:43:49-0400).
+  Standing rule restored and hardened: at least one draft/checker/
+  extraction worker in flight at every moment until the stop time;
+  when any worker returns, verify -> checker -> ship AND immediately
+  launch the next queued item before doing ship mechanics. THIRD WAVE
+  (launching now, all four worktrees): (A4) the ACTUAL stretch attempt
+  — occurrence-derived selector from the 335 surface + epoch
+  structure; precise failure => forcing promotion with the pre-written
+  minimal-content sentence; (A3) the BINDER formation-surface attempt
+  in the R-eta no-go's daylight; (E1) the adjacency-wall controller
+  mechanism (frozen 734 invariant — lawful adjacent-pair control or a
+  new-premise no-go); (E2) genesis-word SELECTION derivation (W1
+  final gap). Queue behind: W2 content/order + passive-covariance
+  components; the composed three-flag acceptance adapter; b>=5 anchor;
+  autonomy-ledger reclassification pass.

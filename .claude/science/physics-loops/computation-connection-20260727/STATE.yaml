@@ -294,3 +294,13 @@ checkpoint_0030_blocks13_14_supports_landed: >
   adjacent; the lawful two-source sector may be open. IN FLIGHT: Cycle
   735 separated-pair lawful control (block15, WT2). Ten campaign PRs
   open: #5706-#5715.
+
+checkpoint_0110_block15_landed_w4_first_movement: >
+  #5716 open (Cycle 735, stacked on #5715): separated pairs LAWFUL —
+  distance domain [2,5] exhausted with zero invariant violations (44
+  orbits, 5,324 station checks, exact closure, constant distance);
+  d=1 control reproduces the frozen 734 wall exactly (22 step-0
+  violations) — the lawful boundary IS adjacency. Bounded separated
+  two-source composition = first W4 movement. Checker 6/6 with own
+  K-direct orbit reruns. Eleven campaign PRs open: #5706-#5716.
+  Scoreboard refresh 6 posted to owner with this checkpoint.

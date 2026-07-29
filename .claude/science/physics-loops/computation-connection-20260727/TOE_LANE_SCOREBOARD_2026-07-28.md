@@ -270,3 +270,34 @@ block, RERUN primary + checker there against owner-landed dependencies,
 regenerate caches with main's runner_cache, rebuild the receipt, then
 push and open the PR. Original-lineage branches stay as pack history;
 the landing branch is the review surface.
+
+## Refresh 6 (2026-07-29 ~01:10)
+
+| Lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |
+|---|---|---|---|---|
+| Operations | 95 | 98 | 70 | 99 |
+| Time | 76 | 80 | 45 | 99 |
+| Matter | 96 | 99 | 90 | 99 |
+| Gravity | 74 | 50 | 29 | 99 |
+| Born | 84 | 67 | 35 | 99 |
+
+Movers since refresh 5: Matter repo-side 95->96 (full-sector isometry,
+#5712) and autonomy 88->90 (genesis self-verification #5713 removed the
+separately-declared inventory; boundary-free preparation #5715);
+Operations autonomy 68->70 (two-source composition under the unchanged
+controller, #5716); Gravity ceiling 97->99 (acceptance instruments now
+cover every construction surface: #5704 + #5714 port + full-Fock #5708
+drift-armed).
+
+### Breakthrough log additions
+- Cycle 732 (#5713): genesis word self-verification — inventory no
+  longer separately declared; W1 gap narrowed to word selection.
+- Cycle 733 (#5712): full-sector isometry achieved (frozen obstruction
+  null).
+- Born harness (#5711) + full-Fock port (#5714): evidence-ceiling
+  program complete at infrastructure level.
+- Cycle 734 (#5715): W2 source-boundary SPLIT — preparation retired;
+  adjacency wall frozen with checker-reproduced witness.
+- Cycle 735 (#5716): separated pairs lawful; two-source composition;
+  the lawful domain boundary is exactly the frozen adjacency wall.
+  First W4 movement.

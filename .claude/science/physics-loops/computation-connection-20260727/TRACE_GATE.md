@@ -79,3 +79,10 @@ Notes:
   constant-distance observation makes the lawful two-source sector
   plausible; W4 separated multi-source composition language if
   positive. Class: direct_blocker_closure attempt.
+
+## Cycle 735 (block15) — separated-pair lawful control
+- Target moved: the 734 invariant's untested domain; W4
+  separated-multi-source first movement (bounded, ring-11, two
+  sources). Class: direct_blocker_closure. PR #5716. Checker 6/6
+  (K-direct orbit reruns). frozen_obstruction null; adjacency boundary
+  reproduced exactly.

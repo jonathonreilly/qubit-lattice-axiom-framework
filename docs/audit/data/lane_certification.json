@@ -349,7 +349,7 @@
         },
         {
           "claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",

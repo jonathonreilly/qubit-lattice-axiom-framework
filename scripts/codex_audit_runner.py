@@ -77,15 +77,6 @@ APPLY_AUDIT_SCRIPT = AUDIT_DIR / "scripts" / "apply_audit.py"
 PIPELINE_SCRIPT = AUDIT_DIR / "scripts" / "run_pipeline.sh"
 ISOLATED_BASE = Path("/tmp/codex-audit-isolated")
 LOG_DIR = REPO_ROOT / "logs" / "codex-audit-runs"
-DISPATCH_ALLOWED_PROCESS_PATHS = {
-    "docs/audit/README.md",
-    "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-    "docs/audit/ALGEBRAIC_DECORATION_POLICY.md",
-    "docs/audit/data/axiom_premise_nodes.json",
-    "docs/audit/data/derivation_obligations.json",
-}
-
 # These fields are NOT controlled by the LLM; we set them on the runner side.
 # The runner selects the best available full Codex model at xhigh and records
 # the exact model/family. The numeric floor is stable while newer frontier
@@ -999,41 +990,18 @@ def load_dispatch_targets(
         row["source_json_path"] = entry.get("source_json_path")
         row["source_schema"] = entry.get("source_schema")
         row["queue_reason"] = "targeted_dispatch"
-        allowed_context_paths = entry.get("allowed_context_paths") or []
-        if not isinstance(allowed_context_paths, list) or not all(
-            isinstance(path, str) and path for path in allowed_context_paths
-        ):
-            raise ValueError(f"dispatch target {cid} has malformed allowed_context_paths")
-        permitted_paths = set(DISPATCH_ALLOWED_PROCESS_PATHS)
-        permitted_paths.update(filter(None, (
-            ledger_row.get("note_path"),
-            ledger_row.get("runner_path"),
-        )))
-        permitted_paths.update(ledger_row.get("helper_runner_paths") or [])
-        for dep_id in ledger_row.get("deps") or []:
-            dep_path = (ledger_rows.get(dep_id) or {}).get("note_path")
-            if dep_path:
-                permitted_paths.add(dep_path)
-        try:
-            premise_registry = json.loads(
-                (AUDIT_DIR / "data" / "axiom_premise_nodes.json").read_text(
-                    encoding="utf-8"
-                )
+        row["allowed_context_paths"] = (
+            compute_audit_dispatch_queue.validate_allowed_context_paths(
+                (
+                    entry["allowed_context_paths"]
+                    if entry.get("allowed_context_paths") is not None
+                    else []
+                ),
+                claim_id=cid,
+                row=ledger_row,
+                rows=ledger_rows,
             )
-        except (OSError, json.JSONDecodeError) as exc:
-            raise ValueError("cannot validate dispatch allowed_context_paths") from exc
-        permitted_paths.update(
-            str(node.get("current_path"))
-            for node in (premise_registry.get("nodes") or {}).values()
-            if node.get("current_path")
         )
-        unexpected_paths = sorted(set(allowed_context_paths) - permitted_paths)
-        if unexpected_paths:
-            raise ValueError(
-                f"dispatch target {cid} requests nonstandard context paths: "
-                + ", ".join(unexpected_paths)
-            )
-        row["allowed_context_paths"] = list(allowed_context_paths)
         normalized.append(row)
         seen_ids.add(cid)
     return normalized

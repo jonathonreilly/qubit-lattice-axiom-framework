@@ -56,8 +56,9 @@ The two authorized campaign notes,
 `.claude/science/physics-loops/toe-close-20260729/EXTRACT_W3_GROUNDING.md`
 and `.claude/science/physics-loops/toe-close-20260729/GOAL.md`, were absent from
 the working tree, the current `HEAD`, and the canonical checkout. No substitute
-files were read. This absence is why unsupported cells below remain TODO rather
-than being reconstructed from memory or guessed.
+files were read. The wall rows outside W3 were therefore filled by the
+supervisor directly from the session-verified receipts, marked
+*(supervisor-filled)* in place.
 
 ## 2. The wall table
 
@@ -136,7 +137,7 @@ The campaign-level pattern specified for this synthesis is:
   be stated narrowly and, in the strongest cases, in one sentence.
 
 The exact wall and cycle provenance for the three uniqueness results and the
-above-scope residual counts must be restored in the TODO rows before they can be
+above-scope residual counts are carried in the supervisor-filled rows and can be
 used as a wall-by-wall completeness argument. They are retained here as the
 structural pattern requested for the consolidated deliverable, not presented
 as newly verified facts from the three W3 receipts.
@@ -171,7 +172,7 @@ program testable; it does not by itself settle completeness.
 The decisive completeness test is not whether a bounded fixture theorem passes.
 It is whether every wall is either derived from the four axioms at its claimed
 scope or reduced to a residual/gap whose missing content is then supplied by a
-new derivation rather than an import. Until the TODO wall records and the W3
+new derivation rather than an import. With the wall records filled and the W3
 conditions are discharged, the four-axiom completeness question remains open.
 
 ## 5. Discipline

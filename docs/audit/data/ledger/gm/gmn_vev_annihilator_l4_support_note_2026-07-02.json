@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-25T20:16:39.036383+00:00",
+  "audit_date": "2026-07-29T14:49:51.114207+00:00",
   "audit_invocation_history": [
-    "d6e72b88ef6a42cbbfbdbfe5a6c787e4"
+    "d6e72b88ef6a42cbbfbdbfe5a6c787e4",
+    "517a5605461a40c5a79be28484b94c24"
   ],
-  "audit_invocation_id": "d6e72b88ef6a42cbbfbdbfe5a6c787e4",
+  "audit_invocation_id": "517a5605461a40c5a79be28484b94c24",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 6,
@@ -30,7 +31,7 @@
       "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -49,20 +50,20 @@
     "transitive_descendants": 0
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-3f61903a",
+  "auditor": "codex-audit-batch-A-20260729-9574b1c1",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "Direct substitution independently gives -a/2+b=0 and hence b/a=1/2, but the supplied runner aborts before PART 9 and its load-bearing source is clipped, so executable verification does not close.",
+  "chain_closure_explanation": "The displayed finite-dimensional algebra supports the stated coefficient ratio, but the supplied runner exits during its preliminary source-marker check before executing PART 9. Because the packet also declares the load-bearing runner source clipped, the evidentiary chain cannot receive a clean grade in this audit.",
   "claim_id": "gmn_vev_annihilator_l4_support_note_2026-07-02",
-  "claim_scope": "Finite two-dimensional stabilizer algebra for supplied T_3, Y_H=+1, and lower-component vev v_0, yielding a one-dimensional annihilator with b/a=1/2.",
+  "claim_scope": "Given T_3 = diag(+1/2,-1/2), scalar Higgs hypercharge Y_H = +1, and lower-component vev v_0 = (0,1)^T, audit the bounded claim that the annihilator in span{T_3,Y} is one-dimensional with b/a = +1/2, hence Q = T_3 + Y/2 up to normalization.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T20:16:39.036383+00:00",
+  "claim_type_last_reviewed": "2026-07-29T14:49:51.114207+00:00",
   "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
@@ -72,17 +73,17 @@
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Inside span{T_3,Y}, the condition (a T_3+b Y)v_0=0 has a one-dimensional solution space and fixes b/a=+1/2.",
+  "load_bearing_step": "The condition (a T_3 + b Y)v_0 = 0 has a one-dimensional solution space with b/a = +1/2.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "negative_assertion_classes": [],
   "note_hash": "467a8176bd41abee7993379069915ad387fcace427b9983519b21c4f26f61626",
   "note_path": "docs/GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: provide the unclipped PART 9 runner source and a completed isolated PART 9 certificate after separating it from the failing parent-note boundary firewall.",
+  "notes_for_re_audit_if_any": "runner_artifact_issue: repair the preliminary source-marker check or provide a standalone PART 9 runner, then supply complete unclipped runner source and successful stdout for re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -169,5 +170,5 @@
   "runner_path": "scripts/frontier_hypercharge_identification.py",
   "title": "GMN Vev-Annihilator L4 Support Lemma",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: the restricted packet clips the load-bearing runner source, and the supplied execution exits before PART 9 because the parent-note boundary firewall fails. Why this blocks: although direct substitution independently yields -a/2+b=0 and a one-dimensional annihilator, the five asserted executable checks were not run and the full implementation path cannot be inspected. Repair target: supply the unclipped PART 9 source and a completed isolated PART 9 run or sliced certificate. Claim boundary until fixed: the exact hand-derived stabilizer result is supported on the stated supplied inputs, but it cannot receive clean executable audit authority from this packet."
+  "verdict_rationale": "On the supplied matrices, the load-bearing result is a direct algebraic consequence: the lower component gives -a/2+b=0, while the coefficient map has rank one and therefore a one-dimensional nullspace. However, the actual runner terminates before PART 9 because its preliminary parent-note marker check fails, so none of the five claimed L4 checks executes in the rendered stdout. The packet's binding completeness preflight also identifies clipped load-bearing evidence and forbids audited_clean, making a runner-artifact conditional verdict appropriate."
 }

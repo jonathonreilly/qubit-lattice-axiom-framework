@@ -298,7 +298,7 @@
       "cached_runner_stdout_chars": 18735,
       "candidate_reason": "runner_stdout_transport_unclipped_by_head_tail_v2",
       "claim_id": "gmn_vev_annihilator_l4_support_note_2026-07-02",
-      "claim_scope": "Finite two-dimensional stabilizer algebra for supplied T_3, Y_H=+1, and lower-component vev v_0, yielding a one-dimensional annihilator with b/a=1/2.",
+      "claim_scope": "Given T_3 = diag(+1/2,-1/2), scalar Higgs hypercharge Y_H = +1, and lower-component vev v_0 = (0,1)^T, audit the bounded claim that the annihilator in span{T_3,Y} is one-dimensional with b/a = +1/2, hence Q = T_3 + Y/2 up to normalization.",
       "claim_type": "bounded_theorem",
       "criticality": "leaf",
       "criticality_rank": 0,

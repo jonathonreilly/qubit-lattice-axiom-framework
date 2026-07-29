@@ -158,34 +158,9 @@
       "reraudit_after_claim_ids": [],
       "runner_path": "scripts/frontier_hypercharge_identification.py",
       "transitive_descendants": 0
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
-      "cached_runner_stdout_chars": 7016,
-      "candidate_reason": "runner_stdout_transport_unclipped_by_head_tail_v2",
-      "claim_id": "mixed_os_transfer_representation_bounded_note_2026-05-30",
-      "claim_scope": "Finite-carrier numerical comparison on the explicit runner carriers at m=0.5 and declared c_block=2: Berezin block-metric eigenvalues versus operator two-step transfer eigenvalues, plus the listed single-step indefiniteness control.",
-      "claim_type": "bounded_theorem",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "current_dep_effective_status": {},
-      "current_runner_stdout_char_limit": 20000,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "generated_order": 6,
-      "improved_dependencies": [],
-      "legacy_runner_stdout_char_limit": 6000,
-      "load_bearing_score": 0.0,
-      "note_hash": "082f96aca007f178ea5311b424d3a1dbdf9ffa09498155f9b3f6a45f64d9a634",
-      "note_path": "docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
-      "reraudit_after_claim_ids": [],
-      "runner_path": "scripts/mixed_os_transfer_representation_2026-05-30.py",
-      "transitive_descendants": 0
     }
   ],
   "total_candidates": 0,
   "total_runner_drift_candidates": 0,
-  "total_runner_stdout_transport_candidates": 6
+  "total_runner_stdout_transport_candidates": 5
 }

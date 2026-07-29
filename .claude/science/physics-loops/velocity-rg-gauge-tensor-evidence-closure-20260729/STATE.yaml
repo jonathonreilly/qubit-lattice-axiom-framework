@@ -1,0 +1,28 @@
+loop: velocity-rg-gauge-tensor-evidence-closure-20260729
+mode: run
+target_status: candidate-retained-grade bounded_theorem packet for independent re-audit
+actual_current_surface_status: bounded-support
+conditional_surface_status: prior audited_conditional archived by source drift; independent re-audit pending
+target_claim_type: bounded_theorem
+branch: claude/science-fix/velocity_rg_gauge_tensor_wti_xi_affine_drag_exact_support_no-6a58fc6a
+base_commit: 2e6ea5a75e380dd410d8a42e7d50ba531f8d74e2
+cycle: 1
+active_route: compact-primary-transcript-plus-independent-scalar-trace-recheck
+strongest_unresolved_obligation: independent audit verdict
+hard_residual: null
+files_touched:
+  - docs/VELOCITY_RG_GAUGE_TENSOR_WTI_XI_AFFINE_DRAG_EXACT_SUPPORT_NOTE_2026-07-17.md
+  - scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py
+  - scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py
+  - logs/runner-cache/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.txt
+  - logs/runner-cache/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.txt
+open_imports: []
+no_go_routes: []
+trace_classification: direct_blocker_closure
+reachability_to_target: closes
+review_disposition: pass
+pr_status: backlog_due_to_managed-worktree_git_and_network_permissions
+lock_mode: dedicated_worktree; shared external lock unavailable
+lock_note: shared automation lock failed with EPERM at the external repository lock path
+next_exact_action: submit the changed bounded note for independent re-audit
+stop_condition: achieved; review pass plus deterministic checks and pipeline rehearsal green

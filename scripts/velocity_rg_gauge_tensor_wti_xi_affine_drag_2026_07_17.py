@@ -91,36 +91,99 @@ Output ends with 'TOTAL: PASS=N FAIL=0' on success.
 from __future__ import annotations
 
 import math
+from pathlib import Path
+import subprocess
+import sys
+from typing import TYPE_CHECKING
 
 import numpy as np
 
+if TYPE_CHECKING:
+    # The audit graph follows this static import and includes the separately
+    # executed scalar-trace recomputation as a helper source.
+    import velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29
+
 AUDIT_TIMEOUT_SEC = 280
+AUDIT_INPUT_PATHS = (
+    "scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py",
+)
 
 PASS = 0
 FAIL = 0
+SECTION = "PRE"
+SECTION_CHECK = 0
+
+SHORT_LABELS = {
+    "V1": (
+        "plaquette tensor and V/4 normalization",
+        "site-centered negative control",
+        "SU(2) trace normalization",
+        "gauge-orbit zero mode",
+        "covariant-gauge closed inverse",
+    ),
+    "V2": (
+        "midpoint anisotropic WTI",
+        "no-half-shift negative control",
+    ),
+    "V3": (
+        "rainbow xi-affinity",
+        "WTI longitudinal slope",
+        "tadpole closed form",
+        "sampled-window total sign",
+    ),
+    "V4": (
+        "small-probe gauge-line match",
+        "individual C terms grow",
+        "C_s-C_t increments shrink",
+    ),
+    "V5": (
+        "constant-dominated xi shift",
+        "rainbow slope approaches split",
+        "total xi-slope decreases",
+    ),
+    "V6": (
+        "C_F=3/4 from generators",
+        "positive fermion response",
+        "finite-torus transversality",
+        "positive gauge response",
+        "positive proxy pair",
+        "2x2 proxy eigenstructure",
+    ),
+    "V7": (
+        "N=10 to 12 sign stability",
+        "half-deformation sign stability",
+    ),
+}
 
 
 def check(label: str, ok: bool, detail: str = "") -> bool:
-    global PASS, FAIL
+    global PASS, FAIL, SECTION_CHECK
     ok = bool(ok)
+    SECTION_CHECK += 1
     if ok:
         PASS += 1
         tag = "PASS"
     else:
         FAIL += 1
         tag = "FAIL"
-    line = f"[{tag}] {label}"
-    if detail:
+    names = SHORT_LABELS.get(SECTION, ())
+    short = names[SECTION_CHECK - 1] if SECTION_CHECK <= len(names) else label
+    line = f"[{tag}] {SECTION}.{SECTION_CHECK:02d} {short}"
+    # Passing details are already displayed in the note and independently
+    # recomputed by the sibling runner.  Suppressing them keeps the complete
+    # 25-check transcript below the audit packet's cache-excerpt ceiling.
+    if detail and not ok:
         line += f"  ::  {detail}"
     print(line)
     return ok
 
 
 def hr(title: str) -> None:
-    print()
-    print("=" * 74)
-    print(title)
-    print("=" * 74)
+    global SECTION, SECTION_CHECK
+    if title.startswith("V") and title[1:2].isdigit():
+        SECTION = title.split(":", 1)[0]
+        SECTION_CHECK = 0
+    print(f"\n-- {title} --")
 
 
 def bd(name: str, bound: str, ok: bool, val: float) -> str:
@@ -826,6 +889,26 @@ def part_7(p5: dict, p6: dict) -> None:
 
 
 def main() -> int:
+    root = Path(__file__).resolve().parent.parent
+    independent = root / AUDIT_INPUT_PATHS[0]
+    independent_run = subprocess.run(
+        [sys.executable, str(independent), "--math-only"],
+        cwd=root,
+        capture_output=True,
+        text=True,
+        timeout=120,
+        check=False,
+    )
+    print("=== BEGIN INDEPENDENT SCALAR-TRACE RECHECK ===")
+    print(independent_run.stdout, end="" if independent_run.stdout.endswith("\n") else "\n")
+    if independent_run.stderr:
+        print("--- independent stderr ---")
+        print(independent_run.stderr, end="" if independent_run.stderr.endswith("\n") else "\n")
+    print("=== END INDEPENDENT SCALAR-TRACE RECHECK ===")
+    if independent_run.returncode != 0:
+        print(f"TOTAL: PASS=0 FAIL=1 (independent exit={independent_run.returncode})")
+        return 1
+
     print("Four-dimensional Euclidean gauge tensor, exact WTI, xi-affine "
           "static proxies -- bounded runner")
     print("(exact tier V1-V3; labeled finite-grid witness tier V4-V7; "

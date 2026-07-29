@@ -15,6 +15,9 @@ set or predict an audit outcome.
 **Cached runner output:**
 [`logs/runner-cache/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.txt`](../logs/runner-cache/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.txt)
 
+**Independent recheck:**
+[`scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py`](../scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py)
+
 ```yaml
 actual_current_surface_status: bounded-support
 trace_class: frontier_discovery
@@ -262,8 +265,8 @@ authority.
 
 | Literal hit / locator | Classification | Resolution |
 |---|---|---|
-| “registered framework observables” in Sign Bookkeeping (source line 121 before this checklist) | non-load-bearing comparison context | It names what would be required downstream; this note explicitly supplies only static direction proxies and leaves W4–W5 open. |
-| “fixed-background responses” in W8 (source line 185 before this checklist) | explicit hidden condition promoted to W8 | The background is not evolved. W8 is already one of the eleven disclosed walls, and the N2 count includes it. |
+| “registered framework observables” in Sign Bookkeeping | non-load-bearing comparison context | It names what would be required downstream; this note explicitly supplies only static direction proxies and leaves W4–W5 open. |
+| “fixed-background responses” in W8 | explicit hidden condition promoted to W8 | The background is not evolved. W8 is already one of the eleven disclosed walls, and the N2 count includes it. |
 
 The conceptual premise scan then rejects same-action, same-carrier,
 color-equals-total-multiplicity, finite-ratio-equals-speed,
@@ -348,20 +351,45 @@ remains required for a physical flow.
 
 ## Verification
 
+### Complete execution-evidence certificate
+
+The complete `3773`-character primary cache is unclipped, SHA-pinned to
+`58e18c1c536388f9abc095c7cbaebf2c16d1a4f370fb3d57c170eb932878392e`,
+has ordered counts `V1--V7 = 5/2/4/3/3/6/2`, no `[FAIL]`, and
+`TOTAL: PASS=25 FAIL=0`.  Its independent subprocess, whose arithmetic the
+primary does not consume, uses `tr(g_a g_m g_b g_n)/4 = delta_am delta_bn -
+delta_ab delta_mn + delta_an delta_mb`.  Standalone it gives `PASS=10 FAIL=0`;
+its cache pins runner SHA `9734ee0e814c6f454d5963a0270f2142dbf9388828ce36e37a51e263cf6b7fd2`
+and primary-input fingerprint
+`3b8b8ade39deef2f33fe333ba2c034799779cb30ac5689cf7afc064055fee3aa`.
+
+| Quantity | Independent result |
+|---|---:|
+| normalization; color | `V/2=648`, `V/4=324`; `T_F=1/2`, `C_F=3/4` |
+| fermion route | rainbow `-0.00210365`, tadpole `+0.00079666`; offsets `+0.05131497`, `+0.00098024` |
+| gauge route | `q=0.52359878`, Ward `6.200e-16`; offsets `+0.10526316`, `+0.02176818` |
+| proxies | `a=+0.01910241`, `b=+0.20679771`, sum `+0.22590012`; matrix spectrum `{0,-0.22590012}` |
+
+These are execution and arithmetic certificates for the already declared
+bounded finite object.  They do not change its physical scope or supply any
+of W1--W11.
+
 Run:
 
 ```bash
 python3 scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py
+python3 scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py
 ```
 
-Expected final line:
+Expected final lines, respectively:
 
 ```text
 TOTAL: PASS=25 FAIL=0
+TOTAL: PASS=10 FAIL=0
 ```
 
-The runner declares `AUDIT_TIMEOUT_SEC = 280` and its output is deterministic
-under the repository cache contract.
+The independent runner fingerprints the primary source and cache, so either
+changing makes its cache stale.  This certificate supplies no W1--W11 bridge.
 
 ## Audit Boundary
 

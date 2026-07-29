@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle756_b5_anchor_independent_check_2026_07_28.txt": "520bcfa0ea04aa943703b5d1a9bf6e9822c2a861e5943c3c4e90e7ea17068b91",
+      "frontier_cycle756_b5_exhaustive_anchor_2026_07_28.txt": "fa0e171a0e93517e89d7d3af13574a52676ab8b15ed2bfdcd72c8cdc770d4a52"
+    },
+    "note": {
+      "path": "docs/B5_EXHAUSTIVE_ANCHOR_CYCLE756_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "095a02d0d9dd71a65f9f89fb739cdb0fe1bf992c50e4aabdba1aef2bffcd3585"
+    },
+    "runners": {
+      "frontier_cycle756_b5_anchor_independent_check_2026_07_28.py": "05bb53c849c272f77ae996ea05ca839900100d3396bbd848a463597db97933f9",
+      "frontier_cycle756_b5_exhaustive_anchor_2026_07_28.py": "27e9c69b34854c23b1f829004f6d8c5538db9ae2050771e8a2a278fc89196a58"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fifth_anchor": "b=5, n=35",
+    "fixed_supplies": "everything the Cycle-737/739/740 packages declare (family membership; the table law as intended geometry; per-ring program/genesis)",
+    "i2_identity_evidenced_at_b5": true,
+    "not_derived": "b>=6 anchors; the general-b statement remains the structural theorem with its named conditions",
+    "positive_scope": "census L(35)=20,633,239 with all 18 strata matching the Lucas recurrence (checker independent); all 35 rows clean-work (direct b=5 identity evidence); the FULL 722,163,365-step orbit sweep with zero violations (both primary and checker swept exhaustively with independent bit-plane evaluators); 70/70 near-miss controls"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 8,
+    "primary_named_checks_passed": 10
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 756,
+  "date": "2026-07-29",
+  "result": {
+    "census": 20633239,
+    "near_miss": "70/70",
+    "orbit_steps": 722163365,
+    "rows": {
+      "bank": 5,
+      "cross": 4,
+      "endpoints": 2,
+      "handoff": 8,
+      "relay": 16
+    },
+    "violations": 0
+  },
+  "status": "CYCLE756_B5_EXHAUSTIVE_ANCHOR_PASS"
+}

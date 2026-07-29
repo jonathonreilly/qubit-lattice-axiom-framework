@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle756_b5_anchor_independent_check_2026_07_28.py
+runner_sha256: 05bb53c849c272f77ae996ea05ca839900100d3396bbd848a463597db97933f9
+input_fingerprint_sha256: 84c9069062115928af9708265964e74d061688d9f30988623b1f695b60165eb1
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 56.88
+status: ok
+----- stdout -----
+orbit progress k=0 configs=1/1
+orbit progress k=1 configs=35/35
+orbit progress k=2 configs=560/560
+orbit progress k=3 configs=5425/5425
+orbit progress k=4 configs=35525/35525
+orbit progress k=5 configs=166257/166257
+orbit progress k=6 configs=573300/573300
+orbit progress k=7 configs=1480050/1480050
+orbit progress k=8 configs=2877875/2877875
+orbit progress k=9 configs=4206125/4206125
+orbit progress k=10 configs=4576264/4576264
+orbit progress k=11 configs=3640210/3640210
+orbit progress k=12 configs=2057510/2057510
+orbit progress k=13 configs=791350/791350
+orbit progress k=14 configs=193800/193800
+orbit progress k=15 configs=27132/27132
+orbit progress k=16 configs=1785/1785
+orbit progress k=17 configs=35/35
+PASS A_AST_extraction_frozen_censuses_and_literal_AUDIT :: True
+PASS B_streamed_C35_census_by_k_and_Lucas_20633239 :: True
+PASS C_all_b5_C5_rows_own_clean_work_and_kind_recount :: True
+PASS D_full_722163365_step_own_bitplane_orbit_zero_violations :: True
+PASS E_near_miss_70_of_70_at_predicted_stations :: True
+PASS F_blocklist_and_fifth_anchor_general_b_discipline :: True
+PASS TIMEOUT_runtime_under_1800_seconds :: True
+PASS OUTPUT_stdout_under_150KB :: True
+{"AUDIT_INPUT_PATHS":["scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py","scripts/frontier_cycle740_table_parameterized_mapper_2026_07_28.py"],"NOTE_PATH":"docs/B5_EXHAUSTIVE_ANCHOR_CYCLE756_BOUNDED_THEOREM_NOTE_2026-07-28.md","checks":{"A_AST_extraction_frozen_censuses_and_literal_AUDIT":true,"B_streamed_C35_census_by_k_and_Lucas_20633239":true,"C_all_b5_C5_rows_own_clean_work_and_kind_recount":true,"D_full_722163365_step_own_bitplane_orbit_zero_violations":true,"E_near_miss_70_of_70_at_predicted_stations":true,"F_blocklist_and_fifth_anchor_general_b_discipline":true,"OUTPUT_stdout_under_150KB":true,"TIMEOUT_runtime_under_1800_seconds":true},"checks_failed":0,"checks_passed":8,"errors":{},"pass":true,"reports":{"census_recount":{"adjacency_failures":0,"counts_by_k":[1,35,560,5425,35525,166257,573300,1480050,2877875,4206125,4576264,3640210,2057510,791350,193800,27132,1785,35],"exact":true,"lucas_recurrence_total":20633239,"popcount_failures":0,"recurrence_counts_by_k":[1,35,560,5425,35525,166257,573300,1480050,2877875,4206125,4576264,3640210,2057510,791350,193800,27132,1785,35],"streamed_total":20633239},"discipline":{"b1_through_b5_exhausted_language_anchored":true,"blocklist":["frontier_cycle756_b5_exhaustive_anchor_2026_07_28"],"blocklist_clean":true,"exact":true,"fifth_anchor_language_verbatim":true,"general_b_claim_unchanged":true},"extraction":{"L35":20633239,"anchor_bank_family":[1,2,3,4,5],"anchor_ring_family":[3,11,19,27,35],"audit_input_paths":["scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py","scripts/frontier_cycle740_table_parameterized_mapper_2026_07_28.py"],"audit_tuple_is_pure_literal":true,"bank_count":5,"bitplane_batch":65536,"capacity":5,"exact":true,"expected_controller_steps":722163365,"general_b_boundary":"This adds the fifth exhaustive anchor only.  It does not strengthen or otherwise change Cycle 740's conditional table-uniform general-b claim.","general_b_claim_changed":false,"near_miss_predicted_station_checks":70,"primary_imported":false,"row_kind_census":{"bank":5,"cross":4,"finalizer":1,"handoff":8,"relay":16,"source":1},"stations":35,"zero_violation_keys":["controller_structure_failures","translation_failure_config_steps","token_count_failure_config_steps","adjacency_failure_config_steps","adjacency_pair_incidences","ownership_failure_config_steps","ownership_violation_station_incidences","B_rail_failure_config_steps","work_failure_config_steps","distance_failure_config_steps","rail_closure_failures"],"zero_violation_target":0},"near_miss_recount":{"adjacent_pair_controls":35,"exact":true,"failed_controls":0,"observed_at_predicted_stations":70,"predicted_station_checks":70,"unexpected_station_checks":0},"orbit_recount":{"bitplane_batch":65536,"bitplane_batches":326,"distance_bitplane_pair_comparisons":6788950,"distance_pair_incidence_checks":31427974025,"evaluated_configurations":20633239,"exact":true,"exhaustive_controller_steps":722163365,"full_sweep":true,"generated_Q_evaluator_bytes":503029,"mapped_gate_configuration_applications":7871580678500,"mapped_gates_per_controller_step":10900,"occupied_station_invariant_checks":6986036575,"rail_swap_configuration_applications":50551435550,"streamed_counts_by_k":[1,35,560,5425,35525,166257,573300,1480050,2877875,4206125,4576264,3640210,2057510,791350,193800,27132,1785,35],"zero_violation_census":{"B_rail_failure_config_steps":0,"adjacency_failure_config_steps":0,"adjacency_pair_incidences":0,"controller_structure_failures":0,"distance_failure_config_steps":0,"ownership_failure_config_steps":0,"ownership_violation_station_incidences":0,"rail_closure_failures":0,"token_count_failure_config_steps":0,"translation_failure_config_steps":0,"work_failure_config_steps":0}},"rows_recount":{"capacity":5,"clean_row_failures":0,"clean_rows":35,"data_width":2224,"exact":true,"mapped_gates_evaluated":10900,"primitive_clean_truth":{"clean_truth_rows":28,"exact":true,"failures":0,"per_kind":{"CNOT":{"clean_truth_rows":8,"exact":true,"failures":0},"TOF":{"clean_truth_rows":16,"exact":true,"failures":0},"X":{"clean_truth_rows":4,"exact":true,"failures":0}}},"row_kind_census":{"bank":5,"cross":4,"finalizer":1,"handoff":8,"relay":16,"source":1},"rows":35,"semantic_gate_kind_census":{"CNOT":358,"TOF":5978,"X":4564}}},"runtime_seconds":56.425697,"terminal":"CYCLE756_B5_ANCHOR_INDEPENDENT_CHECK_ALL_PASS"}
+
+----- stderr -----
+

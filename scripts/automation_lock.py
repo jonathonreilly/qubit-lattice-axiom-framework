@@ -17,8 +17,9 @@ import sys
 from typing import Any
 
 
-DEFAULT_LOCK_PATH = "/Users/jonreilly/Projects/Physics/logs/physics_worker_lock.json"
-DEFAULT_META_LOCK_PATH = "/Users/jonreilly/Projects/Physics/logs/.physics_worker_lock.guard"
+_REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+DEFAULT_LOCK_PATH = str(_REPO_ROOT / "logs" / "physics_worker_lock.json")
+DEFAULT_META_LOCK_PATH = str(_REPO_ROOT / "logs" / ".physics_worker_lock.guard")
 DEFAULT_HOLDER_ENV = "CODEX_THREAD_ID"
 
 

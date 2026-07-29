@@ -32,11 +32,14 @@ explicit canonical six-cycle.
   proper edge subset, rejected by the exact union-find cycle rank for every
   mask; (2) rank below the active-edge count despite acyclicity, rejected by
   all exact minors; (3) a nonsaturated image and finite quotient remnant,
-  rejected by top determinantal divisor one for every mask; (4) a phase
-  surviving on a disconnected forest, rejected by `rank=k` on every proper
-  mask; (5) a local-rank result failing globally on the torus, rejected by the
-  unit Smith factors and exact integer gauge projection. Evidence: runner
-  section C and the source note's support table.
+  rejected by top determinantal divisor one for every mask; (4) failure of a
+  constructive phase removal on a disconnected forest, rejected by the exact
+  reverse leaf-peeling gauge for every proper mask; (5) a local-rank result
+  failing globally on the torus, rejected by the unit Smith factors and exact
+  integer gauge projection. These mechanisms respectively test graph
+  topology, rational linear rank, integer-lattice torsion, a direct orbit
+  construction, and compact-torus globalization. Evidence: runner section C
+  and the source note's support table.
 - N2 — there is one quantified boundary condition, “proper subset of the six
   canonical edges”; no independent wall count is asserted.
 - N3 — the proof's uses of “canonical,” “specified,” and “constructive” name

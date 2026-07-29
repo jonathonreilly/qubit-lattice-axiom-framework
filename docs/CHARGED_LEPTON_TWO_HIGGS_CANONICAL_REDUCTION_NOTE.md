@@ -261,7 +261,14 @@ summary is
 
 Consequently every one of the `63` proper masks is independently certified
 as a saturated forest and only the full mask has a cycle phase. The cached
-runner artifact records the complete source-SHA-pinned stdout for all `59`
+runner additionally gives a constructive global certificate independent of
+the rank count: repeatedly remove a leaf edge from each proper support, set
+one root phase per component to zero, and reverse the removal order. At each
+step the peeled vertex phase is chosen as minus the edge phase and the already
+fixed neighboring phase. This integer recursion cancels every active edge
+phase exactly and works modulo `2*pi`; the full six-edge support alone leaves
+a cyclic core. The cached runner artifact records the complete
+source-SHA-pinned stdout for all `60`
 passing checks; no head/tail excerpt is the claimed execution evidence.
 
 No repository science source is a premise of this theorem. In particular,

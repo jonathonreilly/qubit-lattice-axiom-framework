@@ -12,14 +12,17 @@ proper-support strata.
   support-count table.
 - The primary runner now independently computes rank five and Smith diagonal
   `(1,1,1,1,1,0)`, verifies the global projection
-  `I+MG=e_6(-1,-1,-1,1,1,1)`, and exhausts all `64` support masks.
-- The refreshed cache is `7680` bytes, contains complete stdout with
-  `PASS=59 FAIL=0`, exits zero, and is pinned to runner SHA-256
-  `9aa83952fc09061c79b3ddb2c133802edfed794fea64c53a3d981cd8e2f6e774`.
+  `I+MG=e_6(-1,-1,-1,1,1,1)`, exhausts all `64` support masks, and
+  constructively removes every phase on the `63` proper masks by reverse
+  leaf peeling.
+- The refreshed cache is `7979` characters, contains complete stdout with
+  `PASS=60 FAIL=0`, exits zero, and is pinned to runner SHA-256
+  `c75da032ddc002833b1357f7b53a66005085cf04488de29b78459ddb5f2727f0`.
 
 An external one-off reconstruction that did not import the changed runner
-recovered the same determinantal divisors, global projection, and support
-census. The intentional-failure probe failed closed with exit one.
+recovered the same rational ranks and constructive leaf-peeling certificate
+for all support masks. The intentional-failure probe failed closed with exit
+one.
 
 The full repository audit pipeline and strict lint passed. During that
 validation the changed claim was the unique matching ready queue entry with

@@ -15,7 +15,18 @@ different gauge section algorithmically. Plain multiplication then verifies
 
 Finding: 1. Fixed: 1.
 
-## Iteration 2 — local review-loop
+## Iteration 2 — mechanism-distinct no-go route
+
+The disconnected-forest attack initially reused the rational-rank mechanism,
+so it did not count as an independent N1 route. The runner now implements a
+direct orbit construction: peel each forest to one root per component, then
+reverse the order and assign integer vertex phases that cancel zero and every
+edge-phase basis vector. This covers every phase by linearity, works globally
+modulo `2*pi`, and leaves a cyclic core only for the full six-edge mask.
+
+Finding: 1. Fixed: 1.
+
+## Iteration 3 — local review-loop
 
 - Code / Runner: **PASS**. The primary SymPy route, plain-integer route,
   cache pin, CLI failure probe, and exact output summary agree.
@@ -40,14 +51,14 @@ Finding: 1. Fixed: 1.
 
 ## Validation evidence
 
-- Direct runner: `PASS=59 FAIL=0`.
-- Intentional-failure probe: exit `1`, `PASS=59 FAIL=1`.
-- Independent external reconstruction: Leibniz determinants plus rational
-  Gaussian inversion recovered determinantal divisors `(1,1,1,1,1,1)`, the
-  projection row `(-1,-1,-1,1,1,1)`, and support counts
-  `(1,6,15,20,15,6,1)` totaling `64`.
+- Direct runner: `PASS=60 FAIL=0`.
+- Intentional-failure probe: exit `1`, `PASS=60 FAIL=1`.
+- Independent external reconstruction: rational Gaussian elimination and a
+  separately implemented leaf-peeling algorithm recovered support ranks
+  `(0,1,2,3,4,5,5)` and removed every edge-phase basis vector on all `63`
+  proper masks.
 - Cache: fresh, exit `0`, complete stdout, pinned to runner SHA-256
-  `9aa83952fc09061c79b3ddb2c133802edfed794fea64c53a3d981cd8e2f6e774`.
+  `c75da032ddc002833b1357f7b53a66005085cf04488de29b78459ddb5f2727f0`.
 - Python compilation, vocabulary lint, strict audit lint, the repository audit
   pipeline, and `git diff --check`: pass.
 

@@ -259,6 +259,52 @@ def support_component_count(edges: tuple[tuple[int, int], ...]) -> int:
     return count
 
 
+def leaf_peeling_gauge(
+    edges: tuple[tuple[int, int], ...], phases: tuple[int, ...]
+) -> tuple[int, ...] | None:
+    """Construct vertex phases that kill every edge phase of a forest.
+
+    Return ``None`` precisely when leaf peeling leaves a cyclic core.  The
+    construction is plain integer arithmetic and therefore descends globally
+    to the phase torus, rather than proving only an infinitesimal rank count.
+    """
+
+    if len(edges) != len(phases):
+        raise ValueError("one phase is required for every active edge")
+
+    endpoints = tuple((left, 3 + right) for left, right in edges)
+    incident = {vertex: set() for vertex in range(6)}
+    for edge_index, (left, right) in enumerate(endpoints):
+        incident[left].add(edge_index)
+        incident[right].add(edge_index)
+
+    remaining = set(range(len(edges)))
+    peel_order: list[tuple[int, int, int]] = []
+    leaves = deque(vertex for vertex in range(6) if len(incident[vertex]) == 1)
+    while leaves:
+        leaf = leaves.popleft()
+        active = incident[leaf] & remaining
+        if len(active) != 1:
+            continue
+        edge_index = active.pop()
+        left, right = endpoints[edge_index]
+        neighbor = right if leaf == left else left
+        peel_order.append((leaf, neighbor, edge_index))
+        remaining.remove(edge_index)
+        incident[leaf].remove(edge_index)
+        incident[neighbor].remove(edge_index)
+        if len(incident[neighbor] & remaining) == 1:
+            leaves.append(neighbor)
+
+    if remaining:
+        return None
+
+    vertex_phases = [0] * 6
+    for leaf, neighbor, edge_index in reversed(peel_order):
+        vertex_phases[leaf] = -phases[edge_index] - vertex_phases[neighbor]
+    return tuple(vertex_phases)
+
+
 def is_permutation_matrix(matrix: sp.Matrix) -> bool:
     entries_are_binary = all(entry in (0, 1) for entry in matrix)
     row_sums = [sum(matrix.row(i)) for i in range(matrix.rows)]
@@ -541,6 +587,7 @@ def independent_integer_certificate() -> None:
 
     support_summaries: list[tuple[int, int, set[int], set[int], set[int]]] = []
     all_patterns_pass = True
+    leaf_peeling_pass = True
     for active_count in range(7):
         pattern_count = 0
         ranks: set[int] = set()
@@ -563,6 +610,27 @@ def independent_integer_certificate() -> None:
                 and cycle_rank == expected_cycle_rank
                 and support_divisors[-1] == 1
             )
+            if active_count < 6:
+                phase_probes = (tuple(0 for _ in range(active_count)),) + tuple(
+                    tuple(
+                        int(edge_index == basis_index)
+                        for edge_index in range(active_count)
+                    )
+                    for basis_index in range(active_count)
+                )
+                for probe_phases in phase_probes:
+                    peeling_gauge = leaf_peeling_gauge(edges, probe_phases)
+                    leaf_peeling_pass &= peeling_gauge is not None and all(
+                        probe_phases[edge_index]
+                        + peeling_gauge[left]
+                        + peeling_gauge[3 + right]
+                        == 0
+                        for edge_index, (left, right) in enumerate(edges)
+                    )
+            else:
+                leaf_peeling_pass &= leaf_peeling_gauge(
+                    edges, tuple(0 for _ in range(active_count))
+                ) is None
         support_summaries.append(
             (active_count, pattern_count, ranks, cycle_ranks, top_divisors)
         )
@@ -587,6 +655,16 @@ def independent_integer_certificate() -> None:
         detail=(
             "each of the 63 proper masks is a saturated forest with quotient "
             "(R_{>0})^k; only mask 63 has one cycle phase"
+        ),
+    )
+    check(
+        "constructive leaf peeling removes every proper-mask phase globally",
+        leaf_peeling_pass,
+        detail=(
+            "for each of 63 forests, reverse peeling constructs integer vertex "
+            "phases that cancel zero and every edge-phase basis vector exactly; "
+            "linearity covers all phases, while the full six-cycle alone leaves "
+            "a cyclic core"
         ),
     )
 

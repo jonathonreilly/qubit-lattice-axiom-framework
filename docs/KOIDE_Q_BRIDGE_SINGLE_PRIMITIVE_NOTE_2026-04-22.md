@@ -1,9 +1,14 @@
 # Koide `Q = 2/3` Bridge — Single-Primitive Narrowing
 
 **Date:** 2026-04-22  
+**Claim type:** positive theorem (conditional algebraic theorem)
+
 **Status:** exact support / bridge-target narrowing on the charged-lepton Koide
 lane  
 **Runner:** `scripts/frontier_koide_q_bridge_single_primitive.py`
+
+**Complete runner stdout:**
+[`logs/runner-cache/frontier_koide_q_bridge_single_primitive.txt`](../logs/runner-cache/frontier_koide_q_bridge_single_primitive.txt)
 
 ## Question
 
@@ -19,29 +24,50 @@ After the April 22 support additions, the practical question is no longer
 > do the surviving candidate faces of the `Q` bridge actually collapse to one
 > primitive, so that only one physical-identification problem remains?
 
+## Exact premise ledger
+
+This note proves a conditional algebraic theorem. Its load-bearing domain and
+carrier/face inputs are explicit:
+
+1. `r0 > 0` and `r1,r2` are real. Thus `a = r0/3 > 0`; the zero and
+   negative-`a` branches are excluded.
+2. The stipulated cyclic-carrier normalization is
+   `E_+ = r0^2/3`, `E_perp = (r1^2+r2^2)/6`, `a = r0/3`, and
+   `|b|^2 = (r1^2+r2^2)/36`.
+3. The stipulated Brannen envelope is
+   `sqrt(m_k) = v_0(1+c cos(delta+2 pi k/3))`, with the carrier match
+   `c = 2|b|/a` and `c > 0`.
+4. The dimension face uses the stated mixed-dimension convention
+   `dim_C(spinor)=2` and `dim_R(Cl^+(3))=4`.
+5. The Yukawa face is explicitly the PDG-normalized doublet convention
+   `T=1/2` and `|Y|=1/2`.
+
+Items 2-5 are theorem premises, not claimed first-principles outputs of this
+note. In particular, item 5 is a convention-fixed support face, not a claim
+that the framework selects a hypercharge convention or physically identifies
+the charged-lepton carrier.
+
 ## Main statement
 
-Yes. On the current charged-lepton carrier, the surviving arithmetic and
-representation-theoretic faces of the `Q` bridge collapse to one scalar
-primitive
+Under premises 1-3, equal cyclic block power implies that the scalar
 
 ```text
 P_Q := |b|^2 / a^2 = 1/2.
 ```
 
-Equivalently:
+On the stated positive, nondegenerate domain, the exact consequence chain is:
 
 ```text
 equal cyclic block power
 <=> real-irrep-block democracy
-<=> a^2 = 2 |b|^2
-<=> kappa = a^2 / |b|^2 = 2
-<=> Brannen c = sqrt(2)
-<=> Koide Q = 2/3.
+=> a^2 = 2 |b|^2
+=> kappa = a^2 / |b|^2 = 2
+=> Brannen c = sqrt(2)
+=> Koide Q = 2/3.
 ```
 
-The runner also verifies that three April 22 support faces land on the same
-primitive value:
+Under premises 4-5, the runner separately verifies that the three displayed
+representation/Yukawa support faces evaluate to the same scalar value:
 
 ```text
 dim(spinor) / dim(Cl^+(3)) = 1/2,
@@ -49,7 +75,8 @@ T(T+1) - Y^2 = 1/2,
 (T(T+1) - Y^2) / (T(T+1) + Y^2) = 1/2
 ```
 
-on the charged-lepton Yukawa participant route.
+These numerical coincidences do not derive premises 4-5 and do not identify a
+physical source law.
 
 ## What is actually sharpened
 
@@ -62,12 +89,10 @@ target:
 - the remaining open work is therefore the **physical identification** of that
   primitive on the charged-lepton carrier.
 
-So the current burden is:
-
-1. derive why the physical packet realizes `P_Q = 1/2`, or
-2. explicitly retain `P_Q = 1/2` as the missing primitive.
-
-Either route closes the `Q = 2/3` bridge.
+The remaining scientific burden is therefore to derive why the physical packet
+realizes `P_Q = 1/2`. Registering that value as a new framework primitive is
+not a physics-loop closure path; it would require a separate owner-governance
+decision and is not proposed here.
 
 ## Proof sketch
 
@@ -95,7 +120,7 @@ E_+ = E_perp
 
 ### 2. Real-irrep-block democracy
 
-Under the standard circulant coordinates
+Under premise 2
 
 ```text
 a = r0 / 3,
@@ -113,20 +138,28 @@ the same equality becomes
 
 ### 3. Brannen and Koide
 
-For the Brannen envelope
+Under premise 3, for the Brannen envelope
 
 ```text
 sqrt(m_k) = v_0 (1 + c cos(delta + 2 pi k / 3)),
 ```
 
-the carrier match gives
+the stipulated carrier match is
 
 ```text
 c = 2 |b| / a.
 ```
 
-Hence `|b|^2 / a^2 = 1/2` forces `c = sqrt(2)`, and the standard algebraic
-identity then gives
+Because `a>0`, `|b|^2 / a^2 = 1/2` forces `c = sqrt(2)`. The sign hypothesis
+is load-bearing: the same squared relation with `a<0` would give
+`c=-sqrt(2)`, not `+sqrt(2)`. Direct summation of the three envelope terms
+gives
+
+```text
+Q(c) = 1/3 + c^2/6,
+```
+
+so `c=sqrt(2)` gives
 
 ```text
 Q = 2/3
@@ -136,7 +169,7 @@ independently of `delta`.
 
 ### 4. April 22 support faces
 
-The new support batch adds several axiom-native reformulations. Three of them
+Under the explicit face conventions in premises 4-5, three support quantities
 hit the same scalar immediately:
 
 ```text
@@ -145,15 +178,18 @@ T(T+1) - Y^2 = 1/2,
 (T(T+1) - Y^2) / (T(T+1) + Y^2) = 1/2
 ```
 
-on the charged-lepton Yukawa participant route.
-
-These do not create new independent bridge values. They collapse onto the
-same primitive `P_Q = 1/2`.
+The runner now asserts all three displayed faces, including the normalized
+Casimir ratio omitted by the earlier artifact. These values do not create new
+independent bridge values; conditional on the stated face assignments, they
+coincide with the primitive `P_Q = 1/2`.
 
 ## What this does not claim
 
 - It does **not** prove that the physical charged-lepton packet must realize
   `P_Q = 1/2`.
+- It does **not** derive the cyclic-carrier normalization, Brannen carrier
+  match, mixed-dimension convention, or PDG-normalized Yukawa labels listed in
+  the premise ledger.
 - It does **not** close the Brannen-phase bridge behind `delta = 2/9`.
 - It does **not** promote the overall scale `v_0`.
 

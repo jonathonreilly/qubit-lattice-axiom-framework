@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_bridge_single_primitive.py
-runner_sha256: 42852238df4f169a4dfd05d31b35724339df148e96f4983e07d2bc4f7cb2d0e6
+runner_sha256: a1180930149e3de003958ceafbe7134f947352993fd9fae61ef1149f4eccd464
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 
@@ -16,12 +16,29 @@ It proves that the surviving arithmetic/representation-theoretic faces
 of the Q bridge reduce to one scalar primitive P_Q = |b|^2 / a^2 = 1/2.
 
 ========================================================================================
+Premise ledger - conditional theorem domain
+========================================================================================
+[PREMISE H1] r0 > 0 and r1,r2 are real; hence a = r0/3 > 0.
+[PREMISE H2] E_+ = r0^2/3, E_perp = (r1^2+r2^2)/6,
+             a = r0/3, and |b|^2 = (r1^2+r2^2)/36.
+[PREMISE H3] The Brannen carrier uses c = 2|b|/a and c > 0.
+[PREMISE H4] Dimension-face convention: dim_C(spinor)=2 and
+             dim_R(Cl^+(3))=4.
+[PREMISE H5] PDG-normalized Yukawa-doublet face: T=1/2 and |Y|=1/2.
+
+H2-H5 are stipulated carrier/face inputs, not outputs of this runner.
+The theorem derives their exact consequences and leaves physical
+carrier/source-law selection outside its claim.
+
+========================================================================================
 Part A - cyclic block power is exactly the Koide selector
 ========================================================================================
 [PASS] A.1 equal cyclic block power is equivalent to 2 r0^2 = r1^2 + r2^2
        6(E_+ - E_perp) = 2*r0**2 - r1**2 - r2**2
 [PASS] A.2 cyclic equal-block-power law maps exactly to 3 a^2 = 6 |b|^2
        with a = r0/3 and |b|^2 = (r1^2 + r2^2)/36
+[PASS] A.3 equal block power derives a^2 = 2 |b|^2
+       on 2 r0^2 = r1^2+r2^2: a^2 = r0**2/9, |b|^2 = r0**2/18
 
 ========================================================================================
 Part B - democracy collapses to one scalar primitive
@@ -31,12 +48,16 @@ Part B - democracy collapses to one scalar primitive
 [PASS] B.2 the same democracy law gives kappa = a^2 / |b|^2 = 2
        kappa = 2
 [PASS] B.3 the primitive ratio forces the Brannen prefactor c = sqrt(2)
-       c = sqrt(2)
+       c = 2|b|/a = sqrt(2), using a = r0/3 > 0
+[PASS] B.4 the a < 0 domain witness gives c = -sqrt(2), so a > 0 is load-bearing
+       a = -1, |b|^2 = 1/2 gives c = -sqrt(2)
 
 ========================================================================================
 Part C - Brannen prefactor and Koide ratio
 ========================================================================================
-[PASS] C.1 c = sqrt(2) gives Q = 2/3 identically in the phase delta
+[PASS] C.1 the Brannen envelope gives Q(c) = 1/3 + c^2/6 independently of delta
+       Q(c, delta) = c**2/6 + 1/3
+[PASS] C.2 c = sqrt(2) gives Q = 2/3 identically in the phase delta
        Q(c = sqrt(2)) = 2/3
 
 ========================================================================================
@@ -46,6 +67,8 @@ Part D - representation-theoretic faces hit the same scalar
        2 / 4 = 1/2
 [PASS] D.2 charged-lepton Yukawa Casimir difference T(T+1) - Y^2 = 1/2
        1/2 * 3/2 - (1/2)^2 = 1/2
+[PASS] D.3 normalized Yukawa Casimir ratio is 1/2
+       [T(T+1)-Y^2] / [T(T+1)+Y^2] = 1/2 / 1 = 1/2
 
 ========================================================================================
 Part E - single surviving primitive
@@ -54,34 +77,15 @@ Part E - single surviving primitive
        |b|^2/a^2 = 1/2
        dim(spinor)/dim(Cl^+(3)) = 1/2
        T(T+1)-Y^2 = 1/2
-[PASS] E.2 remaining bridge burden is physical identification, not arithmetic plurality
-       Adopting or deriving this one primitive closes Q = 2/3; the runner does
-       not prove why the physical charged-lepton packet must realize it.
+       [T(T+1)-Y^2]/[T(T+1)+Y^2] = 1/2
 
 ========================================================================================
-Part F - graph-bookkeeping: candidate upstream supplier chain
+Part F - audit boundary (not a PASS assertion)
 ========================================================================================
-This section does NOT promote audit_status.
-It records that the four candidate supplier notes named in the
-parent batch note's audit-conditional perimeter exist on disk in
-this branch, so the audit citation graph can track those edges.
+The exact arithmetic consequences above are conditional on H1-H5.
+In particular, the dimension counts and PDG-normalized Yukawa labels
+are explicit premises rather than outputs of this runner.
 
-Audit verdict and effective status are set by the independent
-audit lane only.
-[PASS] F.exists docs/OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md
-       graph-bookkeeping: supplier note present on disk; status set by audit lane only
-[PASS] F.exists docs/KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md
-       graph-bookkeeping: supplier note present on disk; status set by audit lane only
-[PASS] F.exists docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md
-       graph-bookkeeping: supplier note present on disk; status set by audit lane only
-[PASS] F.exists docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md
-       graph-bookkeeping: supplier note present on disk; status set by audit lane only
-[PASS] F.exists docs/KOIDE_Q_SECOND_ORDER_SUPPORT_BATCH_NOTE_2026-04-22.md
-       parent batch note present on disk
-
-========================================================================================
-Part G - audit-conditional perimeter (bounded scope statement)
-========================================================================================
 This runner verifies an algebraic/representation-theoretic collapse
 of the surviving Q-bridge faces to one scalar primitive P_Q = 1/2.
 
@@ -92,42 +96,34 @@ It does NOT derive from retained physics:
   (3) the readout from Y = I_2 through kappa = 2 to physical
       Q = 2/3 on the charged-lepton lane.
 
-These three items are the audit-named missing bridge for the
-parent batch row
-(koide_q_second_order_support_batch_note_2026-04-22).
-[PASS] G.1 audit-conditional perimeter is recorded in runner output
-       support batch only; physical-identification primitive remains open
+These are physical-identification questions, not leaves of the
+conditional algebraic theorem checked here.
 
 ========================================================================================
 SUMMARY
 ========================================================================================
-PASSED: 16/16
+PASSED: 13/13
   [PASS] A.1 equal cyclic block power is equivalent to 2 r0^2 = r1^2 + r2^2
   [PASS] A.2 cyclic equal-block-power law maps exactly to 3 a^2 = 6 |b|^2
+  [PASS] A.3 equal block power derives a^2 = 2 |b|^2
   [PASS] B.1 real-irrep-block democracy gives |b|^2 / a^2 = 1/2
   [PASS] B.2 the same democracy law gives kappa = a^2 / |b|^2 = 2
   [PASS] B.3 the primitive ratio forces the Brannen prefactor c = sqrt(2)
-  [PASS] C.1 c = sqrt(2) gives Q = 2/3 identically in the phase delta
+  [PASS] B.4 the a < 0 domain witness gives c = -sqrt(2), so a > 0 is load-bearing
+  [PASS] C.1 the Brannen envelope gives Q(c) = 1/3 + c^2/6 independently of delta
+  [PASS] C.2 c = sqrt(2) gives Q = 2/3 identically in the phase delta
   [PASS] D.1 dim(spinor) / dim(Cl^+(3)) = 1/2
   [PASS] D.2 charged-lepton Yukawa Casimir difference T(T+1) - Y^2 = 1/2
+  [PASS] D.3 normalized Yukawa Casimir ratio is 1/2
   [PASS] E.1 surviving Q-bridge arithmetic faces collapse to P_Q = 1/2
-  [PASS] E.2 remaining bridge burden is physical identification, not arithmetic plurality
-  [PASS] F.exists docs/OBSERVABLE_PRINCIPLE_REAL_D_BLOCK_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md
-  [PASS] F.exists docs/KOIDE_Q_OP_LOCALITY_SOURCE_DOMAIN_CLOSURE_THEOREM_NOTE_2026-04-29.md
-  [PASS] F.exists docs/KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md
-  [PASS] F.exists docs/KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md
-  [PASS] F.exists docs/KOIDE_Q_SECOND_ORDER_SUPPORT_BATCH_NOTE_2026-04-22.md
-  [PASS] G.1 audit-conditional perimeter is recorded in runner output
 
 VERDICT: the Koide Q bridge has one surviving primitive candidate
 on the admitted normalized second-order reduced carrier.
 
 What remains open is the physical/source-law identification of that
 primitive on the charged-lepton carrier, not an unresolved arithmetic
-competition among several distinct candidate values. The four
-candidate upstream supplier notes named in the parent batch note's
-audit-conditional perimeter exist on disk in this branch; their
-retention is set by the independent audit lane only.
+competition among several distinct candidate values. Audit verdict
+and effective status remain the independent audit lane's authority.
 
 ----- stderr -----
 

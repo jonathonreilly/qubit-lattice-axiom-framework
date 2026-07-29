@@ -1,0 +1,52 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_born_acceptance_harness_2026_07_28.txt": "8cb6d09060fa8df30df4a4a1870934006be87f0ebe332d86a6de748d2d0f29b0",
+      "frontier_born_acceptance_independent_check_2026_07_28.txt": "3b130930aaa0f8c9e6122149d6c1833d5dddc25ac0cf5f63cb34d009d003b1db"
+    },
+    "note": {
+      "path": "docs/BORN_ACCEPTANCE_HARNESS_SUPPORT_NOTE_2026-07-28.md",
+      "sha256": "4768acc9e2aa60aa8ccd1b8505e62cea6e04db66ae72c9db0b9a465734dc2074"
+    },
+    "runners": {
+      "frontier_born_acceptance_harness_2026_07_28.py": "592427c3c7efed2c06f23a3c95157c1c1c958a7a9b606567f33421d53acbecf2",
+      "frontier_born_acceptance_independent_check_2026_07_28.py": "5158497f43a3bd33134cec346ee8e064dad85f9d80ecbe7fcab7fd77b32588d8"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "born_law_selected": false,
+    "born_physics_moved": false,
+    "fixed_supplies": "four lawful probe feeds and four malformation witnesses (declared apparatus data with frozen expectations; zero fitted parameters); the harness feed schema; everything the landed Cycle-317 surface declares supplied",
+    "not_derived": "any Born/probability content, weight map, or occurrence/Record/calibration bridge; the harness certifies landed-machinery behavior only",
+    "positive_scope": "standing ACCEPT/REJECT/DRIFT verdicts over the landed Cycle-317 bridge+release: byte pins; subprocess-isolated self-runs (15/0, 14/0); four frozen-value ACCEPT probes; four REJECT witnesses (three landed-surface refusals, one honestly-labeled harness-schema refusal); one-byte DRIFT demonstration on a sandbox copy; live-comparator adversary self-test; AST firewall audit",
+    "weights_remain_supplied": true
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "meta",
+  "cycle_lineage": [
+    317
+  ],
+  "date": "2026-07-28",
+  "result": {
+    "accept_probes": "4/4 frozen-value matches",
+    "adversary_self_test": "wrong quarantined expectation caught",
+    "drift_demo": "one-byte sandbox mutation detected; real module sha unchanged",
+    "honest_label_confirmed_by_checker": true,
+    "reject_witnesses": {
+      "harness_schema": 1,
+      "landed_surface": 3
+    },
+    "self_runs": {
+      "bridge": "15/0",
+      "release": "14/0"
+    }
+  },
+  "status": "BORN_ACCEPTANCE_HARNESS_PASS"
+}

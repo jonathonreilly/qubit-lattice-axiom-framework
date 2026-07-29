@@ -25,3 +25,14 @@ The note must separate:
 No audit data, publication status, active queue, or missing-derivation prompt
 will be edited. Pipeline runs are validation-only in disposable worktrees and
 all generated outputs stay off the science branch.
+
+## Block 02 packet repair
+
+1. add one exact target-authority entry to `AUTHORITY_PER_NOTE_OVERRIDES`;
+2. add a focused regression covering exact scoping and the real rendered
+   packet/manifest;
+3. add a dated packet-readiness record to the stuck target row so its own note
+   hash makes the row requeue-able without authoring a verdict;
+4. update the durable loop state and trace certificate;
+5. run focused tests, syntax checks, vocabulary lint, and repo-native review;
+6. leave audit ledger, queue, prompt, and publication outputs unchanged.

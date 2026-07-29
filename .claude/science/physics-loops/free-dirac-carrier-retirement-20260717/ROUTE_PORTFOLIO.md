@@ -27,3 +27,23 @@ The route passes the dramatic-step gate only if it produces at least one of:
 
 Writing down standard boosts or the standard Dirac-sea relabelling without
 those steps is not a useful cycle.
+
+## Cycle 2 prior-art sweep and route selection
+
+Searched landed commit `b377240587dc9cb0640cb4424e4ea25261687e7a` with
+`rg` over packet/clipping terms, inspected `authority_note_limit` and
+`clip_packet_text` in `scripts/codex_audit_runner.py`, and reviewed commit
+`47cc52f33f` plus
+`docs/audit/scripts/tests/test_teleportation_taste_packet_repair.py`. The
+matched prior result is an exactly scoped per-edge authority-size override; it
+is a tooling precedent, not prior proof of this target's formulas. The target's
+current ledger row confirms that its sole dependency is the 20,118-character
+free-staggered authority and quotes the unclipped Sections 2–5 as the repair.
+
+| Route | Mechanism | Trace | Risk | Cycle-2 disposition |
+|---|---|---:|---:|---|
+| R8 | exactly scoped `(target, authority) -> 22,000` transport override plus real-prompt regression | 3 | -1 | selected |
+| R9 | raise `AUTHORITY_PER_NOTE_MAX` globally | 1 | -3 | rejected: widens every restricted packet without need |
+| R10 | copy Sections 2–5 into the target source note | 1 | -3 | rejected: duplicates authority custody and obscures the dependency edge |
+| R11 | rewrite or extend the existing pole/residue runner | 0 | -2 | rejected: the audit identified clipping, not missing formula code |
+| R12 | edit audit ledger/status outputs | 0 | -3 | forbidden: independent audit owns those surfaces |

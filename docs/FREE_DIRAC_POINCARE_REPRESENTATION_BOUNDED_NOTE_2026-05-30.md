@@ -166,9 +166,10 @@ The candidate one-hop source authority for the continuum carrier and finite
 given-CAR relabelling used by this packet is:
 
 - [FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md](FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md)
-  — derives the positive mass shell, `d^3p/(2E)` density, Dirac spectral
-  fibers, and four spectator taste copies from the finite-spacing retained
-  free-staggered pole and residue, then constructs the finite Jordan-Wigner CAR
+  — derives the positive mass shell, its Lorentz-invariant mass-shell density
+  `d^3p/(2E)`, Dirac spectral fibers, and four spectator taste copies from the
+  finite-spacing retained free-staggered pole and residue, then constructs the
+  finite Jordan-Wigner CAR
   carrier and exact negative-branch hole relabelling. It does not select the
   free-staggered action, a physical single taste, CAR statistics, or an
   OS/Wightman reconstruction. This source edit requests independent re-audit;
@@ -178,6 +179,14 @@ The present runner remains the explicit continuum algebra check on each of the
 four equivalent spin blocks supplied by that authority. Its Poincare/Wigner
 and bispinor calculations are methodology on the pole-derived carrier, not a
 separate derivation from the four axioms.
+
+**2026-07-29 restricted-packet transport repair.** The audit transport now
+assigns this exact target-authority edge enough room to include the authority's
+complete Sections 2–5. A focused regression renders the real restricted packet
+and checks byte-for-byte authority inclusion, the four requested section
+headings, and absence of load-bearing clipping markers. This is a packet
+readiness change only: no formula, dependency, claim boundary, or source-side
+status is changed, and the fresh formula audit remains independent-audit work.
 
 Non-graph mathematical infrastructure is limited to finite-dimensional
 Lie/Clifford calculus, the induced-representation construction on an already

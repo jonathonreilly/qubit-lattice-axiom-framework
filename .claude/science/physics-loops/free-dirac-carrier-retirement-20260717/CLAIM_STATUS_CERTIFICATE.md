@@ -1,46 +1,46 @@
 ---
-target_claim_id: free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17
+target_claim_id: free_dirac_poincare_representation_bounded_note_2026-05-30
 target_claim_type: bounded_theorem
-claim_type_reason: "Candidate implication from a retained finite free-staggered Clifford symbol and an approved kinetic-form primitive to a bounded continuum pole carrier and finite CAR relabelling."
-actual_current_surface_status: bounded-support
+claim_type_reason: "The target remains the existing bounded continuum free-Dirac/Poincare theorem; cycle 2 changes only its restricted-packet transport."
+actual_current_surface_status: conditional-support
 trace_class: direct_blocker_closure
 reachability_to_target: closes
-conditional_surface_status: null
+conditional_surface_status: audited_conditional
 hypothetical_axiom_status: null
 admitted_observation_status: null
 proposal_allowed: true
-proposal_allowed_reason: "V1-V5 and the focused repo-native review-loop pass; audit-compatibility validation is clean and no import remains open inside the bounded claim."
+proposal_allowed_reason: "Exactly scoped runner-artifact repair; no scientific or audit-status promotion is authored."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 review_loop_disposition: pass
 no_go_discipline_status: not_triggered
-no_go_discipline_reason: "The two discriminating controls perturb only the displayed constructions and make no route-foreclosing claim."
+no_go_discipline_reason: "No negative claim or named wall is introduced."
 ---
 
 # Claim Status Certificate
 
-The source proposal is bounded support on the retained finite free-sector
-surface. It has two one-hop dependencies: the registered kinetic-isotropy
-primitive and the `retained_bounded` ABJ finite Clifford core. The runner
-checks those classes before its scientific checks. The minimal-axiom memo and
-the finite Pauli-tensor parity theorem are boundary/comparison context, not
-graph dependencies: neither supplies the free action nor global CAR
-composition.
+Cycle 2 is a tooling repair. It does not add a theorem, premise, dependency,
+normalization, observation, or formula. The target remains
+`audited_conditional` unless and until the independent audit lane applies a new
+verdict from the regenerated packet.
 
-No import remains open for the *claimed bounded target*: the pole, residue,
-projectors, compact continuum carrier, and finite given-CAR relabelling are all
-derived or constructed. Stronger physical action selection, global composition
-selection, statistics selection, single-taste selection, OS reconstruction,
-and domain/exponentiation statements remain explicitly outside the claim.
+The repair directly addresses the quoted artifact issue: the authority's full
+Sections 2–5 become available for a fresh independent formula audit. The
+authority source and its existing 11-check runner remain unchanged. Stronger
+physical action selection, CAR/statistics selection, single-taste selection,
+OS/Wightman reconstruction, and generator-domain claims remain outside the
+target exactly as before.
 
-The temporal-coefficient and string-omission checks perturb only the displayed
-constructions and make no route-foreclosing claim. They are discriminating
-controls, not a no-go or a bounded-with-named-walls result; N1-N8 is therefore
-not triggered on this narrowed source surface.
+The promotion-value gate is not used to market this as a new science PR: no new
+derivation is claimed. The user's explicit task is the audit-transport repair,
+and external retained-status authority remains firewalled.
 
-The candidate is eligible for a bounded positive review PR because V1-V5,
-review-loop, and audit-compatibility validation pass. That eligibility is
-source-side only: no source artifact may claim retained-grade status until the
-independent audit lane acts.
-
-Independent audit would remain required even after a source-review pass.
+The repo-native review found and closed two transport-level issues. First, an
+audit-runner-only edit would not requeue the existing terminal conditional row;
+the target now carries a dated packet-readiness record, so its source hash
+honestly requests a fresh audit. Second, the pre-existing Wigner companion
+required the invariant mass-shell density to be named explicitly; that wording
+was reconciled without changing any formula or boundary. A disposable full
+pipeline then reset the target to `unaudited`, placed it in the audit queue, and
+completed with strict audit lint free of errors. This is queue readiness, not an
+authored scientific verdict.

@@ -69,3 +69,25 @@ is open and non-draft. It has not been merged. Independent repo-native review is
 the landing gate; on a final pass the PR may merge, after which independent audit
 of the new parent and subsequent re-audit of the target remain separate
 authority-side work.
+
+## Checkpoint 5 — cycle 2 packet repair ready for independent audit
+
+The later conditional audit identified transport clipping, not a missing
+source derivation. Cycle 2 adds an exact target-authority packet-size override
+and a regression over the real ledger, note, prompt, and evidence manifest. The
+packet now carries the full pole/residue, projector, carrier, and finite
+Jordan-Wigner/hole-relabelling Sections 2–5 without a load-bearing clipping
+marker. The authority and target runners still pass `11/11` and `8/8`.
+
+Repo-native review disposition is `pass`. A clean-clone full pipeline also
+proved the target source-hash change resets it to `unaudited` and queues it for
+fresh review. No audit-owned status or generated publication surface is changed
+in the source worktree, and no new verdict is asserted.
+
+## Exact resume action after cycle 2
+
+Run the independent audit on
+`free_dirac_poincare_representation_bounded_note_2026-05-30` using the newly
+unclipped restricted packet. Recheck the pole/residue normalization,
+projectors, induced carrier, and Jordan-Wigner/hole relabelling, then let the
+audit lane alone decide whether `audited_clean` is warranted.

@@ -146,3 +146,37 @@ the science worktree.
 
 Overall local review-loop disposition: `pass`. Independent audit remains
 required and no effective status is authored here.
+
+## Checkpoint 3 — cycle 2 restricted-packet transport repair
+
+Review disposition: `pass`.
+
+The scoped repair gives only the target-to-authority edge a 22,000-character
+authority budget. The default remains 10,000 characters, the prior unrelated
+override is unchanged, and the authority source itself is unchanged. The new
+regression renders the real target packet and proves that the manifest contains
+the authority byte-for-byte, includes all requested Sections 2–5, and carries
+no load-bearing clipping marker. The authority's independent formula runner
+passes `11/11`; the target runner passes `8/8`.
+
+The first review iteration found that changing only the packet builder would
+leave the terminal `audited_conditional` row outside ordinary source-hash
+requeueing. A dated packet-readiness record was therefore added to the target
+note. A sibling-pin sweep then exposed one exact wording guard in the Wigner
+companion; the existing invariant measure statement was reconciled to the
+expected `Lorentz-invariant mass-shell density` wording without changing the
+claim. The self-adjointness companion passes `21/21` and the Wigner companion
+passes `48/48`.
+
+The complete 18-stage audit pipeline passed in a disposable clean clone at
+`b377240587dc9cb0640cb4424e4ea25261687e7a`. Strict audit lint reported no
+errors. The regenerated ledger classified the target as `bounded_theorem` /
+`unaudited`, and the target was present in the audit queue. Generated audit,
+publication, and front-door files were confined to the disposable clone and
+were not copied into the source worktree.
+
+Claim-boundary, import, and Nature-retention review remain bounded: no premise,
+formula, dependency edge, negative claim, or scientific scope changed. The
+repair closes the named runner-artifact obstruction and exposes the already
+existing derivation for independent checking. It does not predict or apply the
+fresh audit verdict. No-Go Discipline is therefore not triggered.

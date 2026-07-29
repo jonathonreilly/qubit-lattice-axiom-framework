@@ -64,3 +64,13 @@ identities.
 - no claim of physical action selection, OS reconstruction, interacting
   Lorentz invariance, taste removal, or spin-statistics unless independently
   supplied.
+
+## Cycle 2 transport audit
+
+No physics premise or dependency changes in the packet repair. The registered
+primitive check still identifies only `kinetic_isotropy_primitive` as relevant
+to the upstream derivation, with exactly its declared `c_t=c_s` role. The
+current repair consumes only repository facts: the target has one cited
+authority, that authority is 20,118 characters, and the ordinary per-authority
+transport cap is 10,000 characters. The scoped 22,000-character allowance is
+tooling capacity, not a scientific premise or normalization.

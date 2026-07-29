@@ -1129,11 +1129,7 @@
         },
         {
           "claim_id": "hierarchy_joint_riemann_dirichlet_dimensional_fourth_root_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "hierarchy_matsubara_decomposition_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
@@ -2764,7 +2760,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 634
+      "uncertified_count": 633
     }
   ],
   "schema": "lane_certification_v2"

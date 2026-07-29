@@ -1,0 +1,25 @@
+loop_id: lattice-symmetry-unification-certificate-20260729
+status: packaged_for_review
+created: 2026-07-29
+target_claim_id: lattice_symmetry_unification_decision_note
+target_prior_audit_status: audited_conditional
+source_note: docs/LATTICE_SYMMETRY_UNIFICATION_DECISION_NOTE.md
+primary_runner: scripts/audit_companion_lattice_symmetry_unification_decision_certificate.py
+supporting_runner: scripts/lattice_symmetry_unification_decision.py
+runner_cache: logs/runner-cache/audit_companion_lattice_symmetry_unification_decision_certificate.txt
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+active_route: compact_sha_bound_certificate_with_independent_counts
+strongest_unresolved_proof_obligation: independent_reaudit_only
+open_imports: []
+files_touched:
+  - docs/LATTICE_SYMMETRY_UNIFICATION_DECISION_NOTE.md
+  - scripts/audit_companion_lattice_symmetry_unification_decision_certificate.py
+  - logs/runner-cache/audit_companion_lattice_symmetry_unification_decision_certificate.txt
+review_loop_disposition: pass
+review_loop_iterations: 2
+next_exact_action: independently_reaudit_the_same_bounded_theorem_scope
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

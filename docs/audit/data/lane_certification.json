@@ -349,7 +349,7 @@
         },
         {
           "claim_id": "axiom_first_rp_two_step_transfer_matrix_positivity_note_2026-05-28",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03",
@@ -2065,7 +2065,7 @@
         },
         {
           "claim_id": "s3_boundary_link_theorem_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "s3_general_r_derivation_note",
@@ -2327,10 +2327,6 @@
         {
           "claim_id": "su3_casimir_fundamental_theorem_note_2026-05-02",
           "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
-          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "su3_cube_full_rho_perron_2026-05-04",
@@ -2752,7 +2748,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 631
+      "uncertified_count": 630
     }
   ],
   "schema": "lane_certification_v2"

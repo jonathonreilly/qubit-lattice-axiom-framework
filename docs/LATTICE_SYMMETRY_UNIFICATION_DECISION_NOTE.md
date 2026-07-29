@@ -3,14 +3,20 @@
 **Date:** 2026-04-03  
 **Status:** bounded - bounded or caveated result note
 
+**Type:** bounded_theorem
+
 This note records the canonical decision test for whether the ordered lattice +
 explicit symmetry line can move from a same-family two-harness bridge to a true
 one-family retained architecture on the **standard field-strength slice**.
 
-Artifacts:
+**Primary runner:**
+[`scripts/audit_companion_lattice_symmetry_unification_decision_certificate.py`](../scripts/audit_companion_lattice_symmetry_unification_decision_certificate.py)
 
-- [`scripts/lattice_symmetry_unification_decision.py`](/Users/jonreilly/Projects/Physics/scripts/lattice_symmetry_unification_decision.py)
-- [`logs/2026-04-03-lattice-symmetry-unification-decision.txt`](/Users/jonreilly/Projects/Physics/logs/2026-04-03-lattice-symmetry-unification-decision.txt)
+Supporting artifacts:
+
+- [`logs/runner-cache/audit_companion_lattice_symmetry_unification_decision_certificate.txt`](../logs/runner-cache/audit_companion_lattice_symmetry_unification_decision_certificate.txt)
+- [`scripts/lattice_symmetry_unification_decision.py`](../scripts/lattice_symmetry_unification_decision.py)
+- [`logs/2026-04-03-lattice-symmetry-unification-decision.txt`](../logs/2026-04-03-lattice-symmetry-unification-decision.txt)
 
 ## Scope
 
@@ -40,6 +46,61 @@ A compact tradeoff map then varied:
 
 - slit geometry: `narrow_center`, `wide_center`, `wide_outer`
 - mass offset relative to the top slit: `-1, 0, +1`
+
+## Audit Certificate
+
+The compact audit companion recomputes the finite surface and emits a complete
+source-identity-pinned certificate without relying on the clipped full-runner
+excerpt. Its declared cache inputs bind both the primary runner and
+`scripts/lattice_mirror_hybrid.py`. The cached certificate contains:
+
+- all four canonical rows
+- all `4 x 11 = 44` signed barrier-distance values
+- all four no-barrier distance fits used by the retention predicate
+- all `4 x 3 x 3 = 36` tradeoff rows
+- the four final decision counts
+
+The companion also implements the retention conjunction a second time with
+literal documented thresholds and independently counts the raw gravity signs.
+It reports exact Cartesian coverage, `0/36` positive-gravity rows, `0/36`
+retained rows under both predicates, a strict maximum gravity of
+`-4.744643220520`, and `0/44` positive barrier-distance points. The current
+certificate ends with `SUMMARY|PASS=14|FAIL=0`.
+
+This certificate authenticates only the finite standard-strength decision
+surface stated above. It is not a blanket no-go for other field strengths or
+ordered-lattice architectures.
+
+## Finite Negative-Boundary Stress Test
+
+The negative statement is an exhaustive result on the stated finite contract,
+not an exclusion of untested routes.
+
+- **N1, alternative attacks:** the certificate tests five direct falsifiers:
+  a positive canonical row, a positive row from aperture retuning, a positive
+  row from mass-offset retuning, a positive barrier-distance point, and a
+  sign/retention counting disagreement. The first four are exhausted by the
+  printed rows and the fifth is checked by the second predicate.
+- **N2, wall independence:** absence of a retained row is downstream of the
+  failed positive-gravity conjunct. It is not counted as a second independent
+  wall. Beam depletion remains a diagnostic interpretation, not another
+  theorem wall.
+- **N3, hidden conditions:** `canonical` and `standard` name the explicit
+  geometry, offset, and strength in the finite contract. They do not stand for
+  an unlisted premise.
+- **N4, residual matching:** no prior no-go is used as evidence. The later
+  weak-field note has a different strength scope and is cited only as an
+  out-of-scope reopening.
+- **N5, rhetoric:** incompatibility is asserted only for whole-card outcomes
+  in the tested dense symmetry window, not per site, per mode, or for the
+  ordered-lattice family in general.
+- **N6, partial closure:** changing the field strength is a live route and is
+  not described as requiring a new axiom.
+- **N7, steelman:** the later weak-field positive pocket defeats any universal
+  interpretation of the beam-depletion diagnosis. That objection is accepted
+  and is why the conclusion stays on the standard-strength slice.
+- **N8, cross-cycle echo:** the field-strength sibling is the closest repaired
+  sign wall; its mechanism is already accounted for by the scope boundary.
 
 ## Canonical Sweep
 

@@ -1420,10 +1420,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "lattice_laplacian_shell_localization_identity_bounded_theorem_note_2026-06-16",
           "effective_status": "unaudited"
         },
@@ -2756,7 +2752,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 632
+      "uncertified_count": 631
     }
   ],
   "schema": "lane_certification_v2"

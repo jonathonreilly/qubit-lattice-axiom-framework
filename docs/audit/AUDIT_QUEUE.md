@@ -1,10 +1,10 @@
 # Audit Queue
 
-**Total pending:** 2991
-**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 545
+**Total pending:** 2990
+**Ready (all deps at retained-grade/metadata tiers or supplied axioms/approved primitives):** 544
 
 By criticality:
-- `critical`: 641
+- `critical`: 640
 - `high`: 367
 - `medium`: 825
 - `leaf`: 1158
@@ -63,8 +63,8 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 46 | `pmns_hw1_source_transfer_boundary_note` | bounded_theorem | non_terminal_conditional | critical | 777 | 12.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_pmns_hw1_source_transfer_boundary.py` |
 | 47 | `gravity_full_self_consistency_note` | bounded_theorem | non_terminal_conditional | critical | 776 | 14.10 | Y | fresh_context_or_stronger_with_cross_confirmation | - |
 | 48 | `koide_kappa_zd_action_circulant_character_decomposition_narrow_theorem_note_2026-06-05` | positive_theorem | non_terminal_failed | critical | 774 | 10.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/audit_companion_koide_kappa_zd_action_character_2026_06_05.py` |
-| 49 | `lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27` | bounded_theorem | unaudited | critical | 774 | 10.10 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_maradudin_asymptotic_accepted_premise_runner.py` |
-| 50 | `record_history_order_time_rate_firewall_2026-06-05` | no_go | unaudited | critical | 771 | 17.59 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_history_time_rate_firewall_2026_06_05.py` |
+| 49 | `record_history_order_time_rate_firewall_2026-06-05` | no_go | unaudited | critical | 771 | 17.59 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_record_history_time_rate_firewall_2026_06_05.py` |
+| 50 | `dm_leptogenesis_flavor_column_functional_theorem_note_2026-04-16` | bounded_theorem | non_terminal_conditional | critical | 771 | 13.09 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_dm_leptogenesis_flavor_column_functional_theorem.py` |
 
 ## Citation cycle break targets
 

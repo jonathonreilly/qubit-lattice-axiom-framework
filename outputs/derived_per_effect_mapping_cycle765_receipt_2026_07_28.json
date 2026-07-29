@@ -1,0 +1,40 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle765_derived_per_effect_mapping_2026_07_28.txt": "96d73bf3e69efda274257318f3777e83965ae36fbbcc50e81cf0eeca5dd88275",
+      "frontier_cycle765_mapping_independent_check_2026_07_28.txt": "13495ac71cc4a457e6c6b7682ed05d2b39cc25b38b134edd3dfe1cbc107fd309"
+    },
+    "note": {
+      "path": "docs/DERIVED_PER_EFFECT_MAPPING_CYCLE765_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "f61b1da1931f27c62cf940dca4f19fe50d6ff1ecba65c20fdd862b1362d61bec"
+    },
+    "runners": {
+      "frontier_cycle765_derived_per_effect_mapping_2026_07_28.py": "a80e055d5ebc58cb82be9f1cab4947b65551dabaa077d4fc80a1aca9c84e8f21",
+      "frontier_cycle765_mapping_independent_check_2026_07_28.py": "db9db23ca5edc8420c79db3a62766b86f86e28051c2fd7d3467f520b7a087874"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "alignment": "Born-TV < uniform-TV at all four scopes (0.184/0.275/0.313/0.278 vs 0.279/0.370/0.408/0.373)",
+    "axiom_pressure": false,
+    "born_law_selected": false,
+    "derivation_chain": "B317 coefficients -> ray branches (0,1,2) -> overlap order (E1,E2,E0) -> M_s(f)=order[(f-branch(s)) mod 3]; zero new constants",
+    "fixed_supplies": "the seeding convention; everything the 317/750/763 packages declare",
+    "mapping_freedom_attack": "derived assignment ranks 123-128/216 by pooled Born-TV (122 strictly better); 18/216 align at all scopes; ALIGNED = weak evidence",
+    "not_derived": "any weight/Born content; a distinguished mapping",
+    "outcome": "ALIGNED_BUT_WEAK_UNDER_MAPPING_FREEDOM",
+    "positive_scope": "the constant-free chain; censuses + direction tables; the full 216-rank census; controls \u2014 all independently recounted",
+    "the_bar_set": "a future derived mapping must rank top-tier in its family, not merely align",
+    "weight_claim_made": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 765,
+  "date": "2026-07-29",
+  "status": "CYCLE765_DERIVED_MAPPING_ALIGNED_WEAK_PASS"
+}

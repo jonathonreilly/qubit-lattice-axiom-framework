@@ -1,0 +1,59 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle741_physical_bank_renewal_2026_07_28.txt": "f6d7d1e804c0f4156feb504ffdf1438c882d06b2bf220a888389b49c0b4337f0",
+      "frontier_cycle741_renewal_independent_check_2026_07_28.txt": "acc76a0dd2c85e8fafc297885c515a1ddb51dc895dc7fad738ebfedffb5dc85f"
+    },
+    "note": {
+      "path": "docs/PHYSICAL_BANK_RENEWAL_CYCLE741_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "2b687d52e8d56fc7bf6ab3c715f3b3783fdfb40f10bc0bc1622ad265d2da29d5"
+    },
+    "runners": {
+      "frontier_cycle741_physical_bank_renewal_2026_07_28.py": "9365f7b8cd1a6e6a33473e11b8df01c14b3142d90173aba053c2c3983fb5b681",
+      "frontier_cycle741_renewal_independent_check_2026_07_28.py": "ebb9fe1edc81b8f41e4bb01656268c4e9c4612eaded6c6a3cbbd56572d00b5b0"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "archive_register_supplied": true,
+    "axiom_pressure": false,
+    "fixed_supplies": "the one declared archive register (909 M2 sites); everything the Cycle-719 controller core declares; the held 2-bank fixture, genesis, and program content",
+    "not_derived": "unbounded operation (the archive is finite; indefinite renewal needs archive hierarchy or a physical Record hand-off \u2014 the W4/W5 junction); larger fixtures/rings; adjacent-pair control; no time/Record/Born/source content",
+    "orbit2_vacuity_finding_frozen": true,
+    "positive_scope": "exhaustion characterized from the controller's own semantics (orbit-2 vacuity frozen; true horizon 4 packets; attempt-5 dirty-transient census); the 2,745-gate renewal word (2,727 CN + 18 X) with exact reverse, scratch returns, and NN routing (57,285 routed gates forward, returned work); three verified generations (4/4/4 fills, 3 renewals, 3 continuations, zero violations, archive byte-intact per generation); the no-fresh-supply audit",
+    "renewal_generations_verified": 3,
+    "unbounded_renewal_claimed": false,
+    "w4_renewal_achieved": true
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 741,
+  "date": "2026-07-29",
+  "result": {
+    "archive_m2_sites": 909,
+    "exhaustion_horizon_packets": 4,
+    "forward_routed_gates": 57285,
+    "generations": {
+      "continuations": 3,
+      "fills": [
+        4,
+        4,
+        4
+      ],
+      "renewals": 3,
+      "violations": 0
+    },
+    "orbit2_vacuity": "second orbit lawful and non-clobbering",
+    "renewal_word_gates": {
+      "CN": 2727,
+      "X": 18,
+      "total": 2745
+    }
+  },
+  "status": "CYCLE741_PHYSICAL_BANK_RENEWAL_PASS"
+}

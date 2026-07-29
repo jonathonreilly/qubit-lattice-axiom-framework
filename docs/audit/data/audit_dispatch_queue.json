@@ -508,9 +508,9 @@
       "state": "resolved_or_superseded"
     },
     {
-      "actual_audit_status": "audited_clean",
+      "actual_audit_status": "unaudited",
       "actual_claim_type": "positive_theorem",
-      "actual_effective_status": "retained",
+      "actual_effective_status": "unaudited",
       "allowed_context_paths": [
         "docs/audit/README.md",
         "docs/audit/FRESH_LOOK_REQUIREMENTS.md",

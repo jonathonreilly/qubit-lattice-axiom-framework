@@ -1,90 +1,24 @@
 {
-  "audit_date": "2026-07-29T22:14:13.215348+00:00",
-  "audit_invocation_history": [
-    "86c4031ea00c4c2eb986065b65222a30"
-  ],
-  "audit_invocation_id": "86c4031ea00c4c2eb986065b65222a30",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 0,
-      "counts": {
-        "A": 0,
-        "B": 1,
-        "C": 5,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_teleportation_bell_measurement_circuit.py"
-    },
-    "criticality": "medium",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "teleportation_causal_channel_note": "A narrow model harness shows that an explicit classical Bell-measurement record can be carried on a positive-latency directed lattice channel without deriving the record bits or enabling pre-delivery signaling.",
-      "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
-    },
-    "dep_claim_type": {
-      "teleportation_causal_channel_note": "bounded_theorem",
-      "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "teleportation_causal_channel_note": "retained_bounded",
-      "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
-    },
-    "deps": [
-      "teleportation_causal_channel_note",
-      "teleportation_retained_axis_operator_algebra_closure_note"
-    ],
-    "helper_runner_hashes": {
-      "scripts/teleportation_bell_measurement_boundary_checks_2026_07_27.py": "2bdb51d8acd4d8ff08fc03a827dfa43906adef6e651e44c55e27498990e9211e"
-    },
-    "load_bearing_score": 2.585,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_teleportation_bell_measurement_circuit.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "input_mismatch",
-        "cache_input_fingerprint_sha256": "c44c8d9363773de2647afd3bb24aae38026612a58de70518ea4b88d9c21e9192",
-        "cache_runner_sha256": "63deecbe1fb947f593e7e7808ae45010991d70b8a54815baffd528abed0029ac",
-        "cache_status": "ok"
-      },
-      "scripts/teleportation_bell_measurement_boundary_checks_2026_07_27.py": {
-        "cache_exit_code": null,
-        "cache_freshness": "missing",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": null,
-        "cache_status": null
-      }
-    },
-    "runner_hash": "63deecbe1fb947f593e7e7808ae45010991d70b8a54815baffd528abed0029ac",
-    "runner_path": "scripts/frontier_teleportation_bell_measurement_circuit.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 2
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260729-05259d10",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The explicit 4\u00d74 stabilizer/circuit identity is independently checkable, but the restricted packet clips a cited load-bearing retained-axis authority. The complete dependency chain therefore cannot be verified from the supplied evidence.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "teleportation_bell_measurement_circuit_note",
-  "claim_scope": "On the supplied ideal encoded logical two-qubit surface, audit the algebraic equality between the commuting ZZ/XX Bell projectors and the pullback of CNOT(A\u2192R), H(A), and computational-Z readout; no physical implementation is claimed.",
+  "claim_scope": null,
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
   "claim_type_author_hint_raw": "`open_gate`",
-  "claim_type_last_reviewed": "2026-07-29T22:14:13.215348+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -93,22 +27,21 @@
     "teleportation_causal_channel_note"
   ],
   "direct_in_degree": 2,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
     "scripts/teleportation_bell_measurement_boundary_checks_2026_07_27.py"
   ],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 2.585,
-  "load_bearing_step": "Pulling the final computational measurements back through CNOT(A\u2192R) followed by H(A) yields XX and ZZ, so the circuit measurement projectors equal the stated P_zx Bell projectors.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "0003f7d7df0045485abec45e28078f49b861943e0a8d2307d337ab9146f8fd93",
   "note_path": "docs/TELEPORTATION_BELL_MEASUREMENT_CIRCUIT_NOTE.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with the complete unclipped docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md authority, then rerun the fresh audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh",
   "previous_audits": [
@@ -1552,14 +1485,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 6,
-    "B": 7,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 13
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_teleportation_bell_measurement_circuit.py",
   "title": "Teleportation Bell-Measurement Circuit Note",
   "transitive_descendants": 2,
-  "verdict_rationale": "Issue: The packet clips docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md, which is cited as the load-bearing supplier for the encoded resource, logical algebra, Bell projectors, and computational-readout algebra. Why this blocks: the local matrix identities and six algebraic acceptance gates check out, but the retained upstream dependency cannot be audited completely from this restricted evidence. Repair target: rebuild the packet with the authority\u2019s full text and repeat the independent dependency and normalization checks. Claim boundary until fixed: only the displayed ideal two-qubit stabilizer/circuit equivalence is supported; retained-chain closure is conditional."
+  "verdict_rationale": null
 }

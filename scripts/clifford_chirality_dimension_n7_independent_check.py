@@ -17,6 +17,12 @@ from itertools import combinations
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = (
+    "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+    "scripts/frontier_clifford_chirality_dimension_narrow.py",
+)
+
 
 I2 = np.eye(2, dtype=complex)
 SIGMA_X = np.array([[0, 1], [1, 0]], dtype=complex)

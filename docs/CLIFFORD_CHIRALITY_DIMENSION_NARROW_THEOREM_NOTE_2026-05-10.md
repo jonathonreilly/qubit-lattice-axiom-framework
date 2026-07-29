@@ -213,6 +213,98 @@ No further axioms are consumed. No gates are admitted as load-bearing.
   field, action, or Grassmann CAR boundary structure).
 - No `g_bare = 1` derivation target consumed.
 
+## No-Go Discipline Gate (N1--N8; 2026-07-29)
+
+**Status: PASS for the internal-algebra statement only.** The negative clause
+is not a claim about every operator on a represented spinor space. It says
+exactly that the common anticommutant inside `Cl(p,q)` is zero when `p+q` is
+odd. The live ambient-carrier counter-route below is why that scope is
+load-bearing.
+
+### N1 -- alternative routes
+
+The primary runner executes six mechanism-normalized attacks. All are marked
+`ATTEMPTED`: (1) solve the full coefficient kernel rather than inspect only
+monomials; (2) test whether the zero kernel element can meet `M^2=I`; (3) use
+centrality and invertibility of the odd volume element; (4) search the generic
+subset-parity witness through odd `n <= 15`; (5) enlarge to an ambient matrix
+carrier; and (6) rephase arbitrary generator subsets to cover every signature
+through odd `n <= 5`. Routes 1--4 and 6 preserve the internal zero-kernel
+result. Route 5 succeeds, but its witness raises the faithful internal-span
+rank and is therefore outside `Cl(p,q)`.
+
+### N2 -- wall independence
+
+There is one collapsed residual, not an inflated list of walls:
+
+| candidate boundary | disposition |
+|---|---|
+| `M` lies in the internal Clifford algebra | load-bearing; removing it admits the independently constructed ambient witness |
+| anticommutation is simultaneous for every generator | part of the exact common-kernel predicate; weakening it to one generator admits internal witnesses |
+| `M^2=I` | downstream, not independent: the zero common kernel already excludes every square-one element |
+
+Thus the theorem reports the single exact common-kernel identity. It does not
+count square normalization as a second independent wall.
+
+### N3 -- hidden-condition scan
+
+The prescribed phrase scan finds only uses of `canonical` in the names
+"canonical anticommutation relations," "canonical N5 resolution lines," and
+"canonical transcripts." These are mathematical or artifact labels, not
+hidden physics inputs. The only framework-specific condition is the separately
+cited Lattice premise `d_s=3` used by (T3); it is not used by (T1)--(T2).
+
+### N4 -- residual matching
+
+| prior source | prior residual | present residual | use |
+|---|---|---|---|
+| `NO_PER_SITE_CHIRALITY_THEOREM_NOTE_2026-05-02.md` | no internal chirality operator in the one-site `Cl(3)` Pauli algebra | zero internal common anticommutant for arbitrary odd `Cl(p,q)` | exact only at the `n=3` specialization; context, not universal proof |
+| `CL3_FRAME_FREE_AMBIENT_CHIRAL_GRADING_NO_GO_NOTE_2026-06-02.md` | frame-free equivariant operations do not source a chosen grade-1 chiral map | internal odd-Clifford common kernel is zero | different residual; excluded from theorem support |
+
+No prior no-go is load-bearing. Dropping the nonmatching witness leaves the
+self-contained coefficient proof and changes no witness count required by the
+claim.
+
+### N5 -- rhetoric and resolution
+
+The primary transcript emits per-element, per-site, per-mode, per-block, and
+lattice-wide lines for every authenticated negative-phrase group. Only the
+per-element internal-algebra result is universal. The per-site `Cl(3)` check is
+a finite specialization; single-mode internal anticommuters and an external
+block-exchange anticommuter are explicit countercontrols; no lattice-wide
+nonexistence statement is made.
+
+### N6 -- partial-closure paths and primitives
+
+The primitive registry and its four approved sources were checked. The Lattice
+premise supplies only `d_s=3` for conditional statement (T3); no approved or
+proposed primitive is used to foreclose an operator route in (T2). Enlarging
+the carrier to an ambient matrix algebra closes the broader all-operators
+question without a new axiom, and this note keeps that path open rather than
+mislabeling it as impossible. A physical carrier-selection theorem would be a
+separate positive bridge.
+
+### N7 -- steelman
+
+A hostile reviewer should reject any claim that odd-dimensional represented
+spinors possess no chirality operator at all: restrict the standard even
+Clifford tower to its first odd generators and retain the omitted generator.
+That omitted square-one matrix anticommutes with every represented odd
+generator. The independent helper constructs it for `n=1,3,5` and verifies
+that adjoining it raises the faithful internal Clifford-span rank by one.
+This defeats the broad ambient claim but leaves the stated internal-algebra
+kernel theorem intact.
+
+### N8 -- cross-cycle echo
+
+The one-site chirality note above previously found the same internal/ambient
+scope boundary at `n=3`. The frame-free ambient note kept frame-breaking routes
+open, and `.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md`
+kept enlarged spinor-packet and representation-premise routes open. The
+mechanism that could retire those broader walls--carrier enlargement--is the
+successful N1/N7 counter-route here. It is explicitly preserved, so no prior
+route-retirement mechanism has been ignored.
+
 ## Out of scope
 
 - Forcing `d_t = 1` over `d_t in {3, 5, 7, ...}`. This is the scope of
@@ -301,6 +393,13 @@ verifies (PASS=32/0):
 
 The runner consumes only `numpy`. No fitted parameters, no observed
 values, no physical constants.
+
+Both evidence programs declare this note and their complementary execution
+surface through `AUDIT_INPUT_PATHS`. Their canonical transcripts are therefore
+usable only when the runner sources, this theorem note, and the independent N7
+surface match the recorded content fingerprints. No-argument execution emits
+the complete primary `32 PASS / 0 FAIL` transcript and the independent
+`3 PASS / 0 FAIL` transcript without clipping.
 
 ## Cross-references
 

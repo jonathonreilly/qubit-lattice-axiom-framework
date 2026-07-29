@@ -71,6 +71,12 @@ from typing import TYPE_CHECKING
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = (
+    "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
+    "scripts/clifford_chirality_dimension_n7_independent_check.py",
+)
+
 if TYPE_CHECKING:
     # Static audit-packet registration only. The independent N7 helper is run
     # by the audit orchestrator on its own authenticated stdout surface.

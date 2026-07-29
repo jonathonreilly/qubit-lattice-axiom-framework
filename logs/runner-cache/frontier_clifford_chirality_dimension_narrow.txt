@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_clifford_chirality_dimension_narrow.py
-runner_sha256: 0fcf04fd632a7c7166da66db1aac03096be839a97ea9a7af03082eecf3fa2fe9
+runner_sha256: abd955af8dfb5f5630ae468bd0635fbf72e93fc15ad70dec009753ea86209425
+input_fingerprint_sha256: 1285e20610cfcedf29ddca312d34126f86e481d27c51119e8593789f77a8d818
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 1.22
 status: ok
 ----- stdout -----
 
@@ -48,15 +49,64 @@ Part 4: n EVEN => gamma_5 := i^{n(n-1)/2} omega satisfies gamma_5^2=+I and {gamm
   [PASS (A)] n=6: {gamma_5, g_mu} = 0 for every mu
 
 ----------------------------------------------------------------------------------------
-Part 5: framework specialisation d_s = 3 (axiom A2) => d_t odd
+Part 5: conditional Cl(d_s,d_t) specialisation with Lattice d_s=3
 ----------------------------------------------------------------------------------------
-  [PASS (A)] d_s = 3 (axiom A2): chirality involution requires d_t odd  (allowed d_t = [1, 3, 5, 7]; forbidden d_t = [2, 4, 6])
+  [PASS (A)] conditional Cl(d_s,d_t) with Lattice d_s=3 requires d_t odd  (allowed d_t = [1, 3, 5, 7]; forbidden d_t = [2, 4, 6])
 
   Out-of-scope reminder: this narrow theorem only forces d_t to
   be ODD. The further restriction d_t = 1 is supplied by separate
   sister theorems (single-clock codimension-1 evolution theorem on
   the lattice or Craig--Weinstein / Tegmark on the continuum) and
   is NOT part of this narrow theorem's load-bearing scope.
+
+----------------------------------------------------------------------------------------
+Part 6: current-cycle N1/N5/N7 no-go-discipline evidence
+----------------------------------------------------------------------------------------
+  [PASS (A)] N1 live route coefficient-cancellation
+  [PASS (A)] N1 live route zero-square-normalization
+  [PASS (A)] N1 live route central-volume
+  [PASS (A)] N1 live route generic-parity-witness
+  [PASS (A)] N1 live route external-matrix-carrier
+  [PASS (A)] N1 live route signature-rephasing
+  [PASS (A)] N5 five-resolution controls are internally consistent
+  N1_ROUTE route_id=coefficient-cancellation; route_class=algebraic_rearrangement; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=arbitrary coefficient cancellation in the simultaneous anticommutator algebra; attempt=solve the stacked full coefficient kernel after certifying the 2^n monomial span is faithful; outcome=odd internal nullity is zero for n=1,3,5
+  N1_ROUTE route_id=zero-square-normalization; route_class=normalization_or_units; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=square normalization of the zero common-kernel element; attempt=test zero in every odd anticommutator and then test zero squared against identity; outcome=zero anticommutes but fails M^2=I
+  N1_ROUTE route_id=central-volume; route_class=symmetry_or_representation; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=central invertible odd volume representation; attempt=verify centrality and invertibility while an all-generator anticommuter crosses an odd product with negative sign; outcome=commuting and anticommuting with invertible omega forces M=0
+  N1_ROUTE route_id=generic-parity-witness; route_class=numerical_or_finite_case; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=finite-case escape from the arbitrary odd-dimensional parity law; attempt=exhaust every subset through n=15 using the generic in-set or out-of-set witness selector; outcome=43690 coefficients constrained by the parity-generic branch proof
+  N1_ROUTE route_id=external-matrix-carrier; route_class=alternate_carrier_or_sector; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=alternate ambient matrix carrier outside the internal Clifford span; attempt=search Pauli tensor words for an involution that anticommutes with every odd generator and raises the internal span rank; outcome=external witnesses found outside Cl(n), cases=[(1, 2, 3), (3, 8, 9), (5, 32, 33)]
+  N1_ROUTE route_id=signature-rephasing; route_class=convention_or_relabeling; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=signature convention change by independent generator rephasing; attempt=replace each selected positive generator by i times that generator and recompute relations, faithful span rank, and the full internal common kernel; outcome=all 42 signatures through odd n=5 retain zero nullity
+  N5_RESOLUTION group=volume_scalar_cannot per_element: the odd volume and all scalar multiples commute generator-by-generator; this elementwise statement was tested for n=1,3,5
+  N5_RESOLUTION group=volume_scalar_cannot per_site: the n=3 Pauli-site volume is scalar on each irreducible site sector; no physical site lift is inferred
+  N5_RESOLUTION group=volume_scalar_cannot per_mode: each generator mode was checked separately and the odd volume commutes, rather than anticommutes, with every one
+  N5_RESOLUTION group=volume_scalar_cannot per_block: the faithful odd carrier splits into volume eigenspace blocks on which the volume remains block-scalar
+  N5_RESOLUTION group=volume_scalar_cannot lattice_wide: no lattice operator is constructed, so the scalar-volume statement is not promoted to a lattice-wide realization claim
+  N5_RESOLUTION group=does_not_claim_scope per_element: the source exclusions are dependency guards and do not weaken the exact arbitrary-element kernel calculation
+  N5_RESOLUTION group=does_not_claim_scope per_site: no Standard-Model, anomaly, or temporal structure is imported at a physical site in the tested algebra
+  N5_RESOLUTION group=does_not_claim_scope per_mode: no fermion, gauge, or evolution mode is selected by the finite Clifford-element calculation
+  N5_RESOLUTION group=does_not_claim_scope per_block: no taste, sector, or transfer-matrix block is used to prove the internal algebra theorem
+  N5_RESOLUTION group=does_not_claim_scope lattice_wide: no lattice-wide dynamics or continuum limit is tested; those resolutions remain explicitly outside the claim
+  N5_RESOLUTION group=parent_closure_not_proposed per_element: the elementwise parity result supplies only the parent's chirality step and does not close its other algebraic inputs
+  N5_RESOLUTION group=parent_closure_not_proposed per_site: the one-site Clifford check does not supply anomaly content, a temporal count, or a physical realization bridge
+  N5_RESOLUTION group=parent_closure_not_proposed per_mode: no individual gauge or fermion mode closes the omitted parent steps in this runner
+  N5_RESOLUTION group=parent_closure_not_proposed per_block: no parent-chain block beyond the isolated chirality parity block is executed or certified here
+  N5_RESOLUTION group=parent_closure_not_proposed lattice_wide: the lattice-wide parent conclusion d_t=1 is not claimed; only conditional odd parity of d_t is enumerated
+  N5_RESOLUTION group=parity_impossible per_element: every internal coefficient has a nonzero odd-n witness constraint, so mixed even and odd degree requirements cannot survive elementwise
+  N5_RESOLUTION group=parity_impossible per_site: the three-Pauli one-site ambient common anticommutant has nullity 0, matching the n=3 internal boundary
+  N5_RESOLUTION group=parity_impossible per_mode: a single generator mode does have anticommuters, so the impossibility is explicitly simultaneous rather than per-mode
+  N5_RESOLUTION group=parity_impossible per_block: an external block-exchange anticommuter exists on a doubled carrier but the rank test places it outside the internal block algebra
+  N5_RESOLUTION group=parity_impossible lattice_wide: no lattice-wide impossibility is asserted because the contradiction concerns one finite Clifford algebra only
+  N5_RESOLUTION group=sister_no_go_crossref per_element: the sister result is a context-only cross-reference and is not used as evidence for the arbitrary-element kernel
+  N5_RESOLUTION group=sister_no_go_crossref per_site: the per-site Cl(3) specialization is recomputed directly here instead of inherited from the sister note
+  N5_RESOLUTION group=sister_no_go_crossref per_mode: the sister citation does not exclude independent physical mode constructions beyond the simultaneous Clifford-generator condition
+  N5_RESOLUTION group=sister_no_go_crossref per_block: the sister citation supplies no blockwise or reducible-carrier premise to the present proof
+  N5_RESOLUTION group=sister_no_go_crossref lattice_wide: the sister citation supplies no lattice-wide premise, and this runner makes no such negative inference from it
+  N5_RESOLUTION group=arbitrary_element_rule_out per_element: the full 2^n-coefficient system, not a monomial-only scan, tests every internal algebra element for n=1,3,5
+  N5_RESOLUTION group=arbitrary_element_rule_out per_site: the n=3 physical-site matrix control independently gives full ambient nullity 0
+  N5_RESOLUTION group=arbitrary_element_rule_out per_mode: the per-mode control finds a live single-generator anticommuter, narrowing the result to simultaneous anticommutation
+  N5_RESOLUTION group=arbitrary_element_rule_out per_block: the doubled-carrier block-exchange escape is live but external, so the no-go remains internal rather than block-universal
+  N5_RESOLUTION group=arbitrary_element_rule_out lattice_wide: tensor products across sites or a staggered lattice chirality are untested and explicitly outside this internal-algebra boundary
+  N7_STEELMAN_ARGUMENT mechanism=alternate ambient matrix carrier outside the internal Clifford span; attempt=search Pauli tensor words for an involution that anticommutes with every odd generator and raises the internal span rank; argument=a hostile reviewer can defeat any claim about all represented operators by doubling the odd carrier and adjoining the missing even-tower generator, so only a verified internal-span boundary can support the theorem.
+  N7_PRIMARY_DISPOSITION no nonzero M in Cl(n) satisfies (5) internal wall remains properly scoped after the ambient-carrier attack; the independent helper must reauthenticate the span-rank separation on a distinct execution surface.
 
 ----------------------------------------------------------------------------------------
 Narrow theorem summary
@@ -76,17 +126,17 @@ Narrow theorem summary
   CONCLUSION (chirality dichotomy):
     (a) n EVEN  =>  gamma_5 := i^{n(n-1)/2} omega satisfies
                     gamma_5^2 = +I and {gamma_5, g_mu} = 0 for every mu;
-                    a nontrivial Z_2 chirality grading EXISTS.
+                    the canonical Z_2 grading has an internal implementer.
 
-    (b) n ODD   =>  no element M of the Clifford algebra (acting on
-                    the irreducible 2^{(n-1)/2}-dim spinor rep) satisfies
+    (b) n ODD   =>  no element M of the internal Clifford algebra satisfies
                     M^2 = +I together with {M, g_mu} = 0 for every mu;
-                    no nontrivial Z_2 chirality grading EXISTS.
+                    the canonical grading has no internal implementer.
 
-  CONCLUSION (framework specialisation, with axiom A2: d_s = 3):
-    Existence of a chirality involution gamma_5 on the total Clifford
-    algebra Cl(d_s, d_t) requires d_s + d_t even; with d_s = 3 fixed,
-    this forces d_t to be ODD: d_t in {1, 3, 5, ...}.
+  CONCLUSION (conditional framework specialisation):
+    If the total algebra is Cl(d_s, d_t), existence of an internal
+    chirality involution requires d_s + d_t even. The accepted Lattice
+    premise fixes d_s = 3, so this condition forces d_t to be ODD:
+    d_t in {1, 3, 5, ...}.
 
   Audit-lane class:
     (A) -- pure Clifford-algebra fact verified by exact linear algebra
@@ -102,7 +152,7 @@ Narrow theorem summary
 
 
 ========================================================================================
-  TOTAL: PASS=25, FAIL=0
+  TOTAL: PASS=32, FAIL=0
 ========================================================================================
 
 ----- stderr -----

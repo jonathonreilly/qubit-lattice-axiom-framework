@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle762_residual_as_content_probe_2026_07_28.txt": "b9e1b0ae6fa5f3301c2ed54281d726ceafc71fe87082ebdf49dfd520cb7acbff",
+      "frontier_cycle762_residual_probe_independent_check_2026_07_28.txt": "7e4ed223d8aaa0439a55520942c8ea4861225bd7d7da3083290a0b47a5236997"
+    },
+    "note": {
+      "path": "docs/RESIDUAL_AS_CONTENT_PROBE_CYCLE762_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "762a4ffdc553c9377c5a62e56b2c8ac95ed030cd8071261e85824f53051a8cd2"
+    },
+    "runners": {
+      "frontier_cycle762_residual_as_content_probe_2026_07_28.py": "cb5f80cf5d0e169e01561bd9a8665fc8492036398bc0f3eeebe2e326497dbd0d",
+      "frontier_cycle762_residual_probe_independent_check_2026_07_28.py": "c8d43dc2c65b851554393c493d016f6341ba9eb8c3a35bb9f361d77a2f16c619"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "everything the Cycle-736/750/759 packages declare",
+    "forcing_chain_complete": "four precise failures, three premise families (758 extension; 759 quotient; 762 content; 762-checker delayed cleanliness), every census frozen",
+    "forcing_classification_proposal": "PROMOTE multi-source objective occurrence to SUSPECTED-INDEPENDENT; minimal-content sentence: for epochs where two or more sources run, an objective occurrence rule requires content the four axioms do not currently provide; PROPOSAL ONLY - owner lanes decide",
+    "not_derived": "multi-source actuality; horizons beyond T=64; the promotion decision",
+    "outcome": "NO_FAMILY_WIDE_RESIDUAL_CONTENT_LAW",
+    "positive_scope": "the four exhaustive probe censuses, independently recounted; the limit-cycle identifications",
+    "probes": {
+      "algebra": "XOR fails 588/625; coboundary-only cocycles",
+      "asymptotic_T64": "0 clean; 2 period-2 + 9 period-3 forever-nonzero cycles; 165 unresolved at horizon",
+      "conservation": "0/176 invariant; all weight-decreasing; 11 periodic<=16",
+      "sector": "16/28 classes split; 1,960 discordant pairs"
+    }
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 762,
+  "date": "2026-07-29",
+  "status": "CYCLE762_FORCING_CHAIN_COMPLETE_PASS"
+}

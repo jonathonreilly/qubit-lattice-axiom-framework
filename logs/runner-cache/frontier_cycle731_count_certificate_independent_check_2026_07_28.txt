@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle731_count_certificate_independent_check_2026_07_28.py
+runner_sha256: 2fd4f78c6599321dfd483b06ae5025a6569f51f4c95bcf8f91f0e549fd5ddd48
+input_fingerprint_sha256: ace45a23a2e4aa8f838763f648b5d4d7c2706a42998e65e2ad1c1c823f3946b6
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.45
+status: ok
+----- stdout -----
+PASS extraction :: anchors=True loops=True boundary=True
+PASS count_theorem_recount :: total=8388608 count_pass=45056 full_pass=22528 iff_exceptions=0 outcome_sha_match=True
+PASS witness_and_sweep_recount :: refused=55/55 witness_match=True refusal_sha_match=True
+PASS factorization_audit :: ref_h_touches=0 parity_differences=0/512 word_sizes={'Cycle730_semantic_gates': 99310, 'Cycle731_semantic_gates': 112912, 'added_semantic_gates': 13602}
+PASS discipline :: K_writes=0 blocklisted_imports=0 literal_failures=0
+SUMMARY 5/5 :: outcome_sha_match=True refusal_sha_match=True factorization=True
+CYCLE731_INDEPENDENT_CHECK_PASS runtime_seconds=1.992431
+
+----- stderr -----
+

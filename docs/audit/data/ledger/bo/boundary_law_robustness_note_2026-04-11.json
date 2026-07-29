@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-25T09:32:08.228184+00:00",
+  "audit_date": "2026-07-29T14:15:28.330806+00:00",
   "audit_invocation_history": [
-    "39656db055a440b594efc251007cdca4"
+    "39656db055a440b594efc251007cdca4",
+    "2f981c019df347799be68cbf134506f4"
   ],
-  "audit_invocation_id": "39656db055a440b594efc251007cdca4",
+  "audit_invocation_id": "2f981c019df347799be68cbf134506f4",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 0,
@@ -40,7 +41,7 @@
       "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -66,20 +67,20 @@
     "transitive_descendants": 2
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-b20c72da",
+  "auditor": "codex-audit-batch-A-20260729-3464684d",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The source code genuinely computes the stated finite-grid diagnostic rather than printing expected constants, and the visible stdout agrees with the note. However, the clipped runner evidence does not permit independent verification of every row underlying the 100/100 and 80/80 counts.",
+  "chain_closure_explanation": "The runner computes the reported fixed-envelope R\u00b2 values, but the chosen 2D staggered Hamiltonian, fixed parameters, Dirac-sea carrier, partitions, and R\u00b2 readout are not derived from the cited retained framework premises.",
   "claim_id": "boundary_law_robustness_note_2026-04-11",
   "claim_scope": "The bounded finite-run observation that the runner reports high entropy-versus-counted-boundary R\u00b2 on the fixed 2D periodic staggered-lattice envelope and the stated small partition cross-check.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem (only for the fixed-run numerical diagnostic",
-  "claim_type_last_reviewed": "2026-07-25T09:32:08.228184+00:00",
+  "claim_type_last_reviewed": "2026-07-29T14:15:28.330806+00:00",
   "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
@@ -93,17 +94,17 @@
   "helper_runner_paths": [
     "scripts/periodic_geometry.py"
   ],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 2.585,
-  "load_bearing_step": "On the fixed audit envelope, all 100 counted BFS-ball fits\u2014and all 80 fits with at least three radii\u2014satisfy R\u00b2 > 0.95, while the three stated partition families also report R\u00b2 > 0.95 at side 10 and G = 10.",
+  "load_bearing_step": "Every counted fit on the 100-configuration BFS-ball grid satisfies R\u00b2 > 0.95, and the 80-configuration three-or-more-radii subgrid also satisfies R\u00b2 > 0.95 in 80/80 configurations.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "negative_assertion_classes": [],
   "note_hash": "15e2d83fd993faffd37e8a886f34e7acb18a30408cfde35d2fa4a836772a0a20",
   "note_path": "docs/BOUNDARY_LAW_ROBUSTNESS_NOTE_2026-04-11.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: provide complete unclipped stdout, or a SHA-pinned certificate enumerating all 100 BFS-ball fits and the partition checks, then re-audit.",
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: To seek clean framework-level status, add a retained derivation supplying the chosen 2D staggered Hamiltonian, Dirac-sea carrier, fixed parameter surface, and R\u00b2 readout from accepted premises; otherwise retain the present runner-only scope.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -242,5 +243,5 @@
   "runner_path": "scripts/frontier_boundary_law_robustness.py",
   "title": "Boundary-Law Robustness Addendum",
   "transitive_descendants": 2,
-  "verdict_rationale": "The runner constructs the lattice, evolves the model, builds the Dirac-sea correlation matrix, computes entropies, and performs the regressions, so the load-bearing operation is a genuine numerical computation rather than a definition, renaming, or hard-coded match. The provided summary matches the scoped note, including separation of automatic two-point fits, but the packet explicitly identifies the load-bearing stdout as clipped; therefore audited_clean is forbidden until complete run evidence is supplied."
+  "verdict_rationale": "The primary and helper sources perform the lattice construction, evolution, correlation-matrix entropy calculation, and regressions; the supplied stdout agrees with the note\u2019s 100/100, 80/80, and partition summaries, with automatic two-point fits separated. No hard-coded expected output or calibrated external comparator appears. The observation nevertheless depends on selected model structure, parameters, carriers, partitions, and fit criterion that are not supplied by the retained premise chain, so it remains an honest fixed-envelope numerical conditional rather than a framework-baseline boundary-law theorem."
 }

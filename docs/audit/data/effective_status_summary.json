@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2195,
-    "decoration": 42,
+    "bounded_theorem": 2194,
+    "decoration": 43,
     "meta": 364,
     "no_go": 439,
     "open_gate": 207,
@@ -81,8 +81,8 @@
   "cycles_detected": 58,
   "effective_status_counts": {
     "audit_in_progress": 2,
-    "audited_conditional": 271,
-    "audited_failed": 70,
+    "audited_conditional": 268,
+    "audited_failed": 71,
     "audited_numerical_match": 10,
     "audited_renaming": 33,
     "decoration_under_abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": 1,
@@ -108,14 +108,15 @@
     "meta": 356,
     "open_gate": 3,
     "retained": 121,
-    "retained_bounded": 352,
-    "retained_pending_chain": 10,
+    "retained_bounded": 353,
+    "retained_pending_chain": 11,
     "unaudited": 2653
   },
-  "retained_pending_chain_count": 10,
+  "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [
     "ckm_atlas_closure_formula_algebra_narrow_theorem_note_2026-05-10",
     "cl3_taste_generation_theorem",
+    "decoherence_action_zero_field_per_link_phase_equality_narrow_theorem_note_2026-05-17",
     "electrostatics_grown_sign_law_source_field_linearity_parity_narrow_theorem_note_2026-05-17",
     "emergent_lorentz_velocity_rg_exchange_matrix_exact_support_note_2026-06-18",
     "formation_rate_law_class_reduction_bounded_note_2026-07-08",

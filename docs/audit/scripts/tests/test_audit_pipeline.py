@@ -15795,6 +15795,80 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         self.assertIsNone(vote)
         self.assertEqual(status, "wall_timeout_killed")
 
+    def test_panel_propagates_cleanup_integrity_failure(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, _prior,
+            _invocation_id, _manifest,
+        ):
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"judge-{judge_no}",
+            }
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "1" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch,
+            "wait_workers",
+            side_effect=m.batch.CleanupIntegrityError("group still present"),
+        ), mock.patch.object(
+            m.batch, "terminate_workers"
+        ) as terminate:
+            with self.assertRaisesRegex(
+                m.batch.CleanupIntegrityError,
+                "group still present",
+            ):
+                m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+
+        terminate.assert_called_once()
+
+    def test_panel_main_stops_after_cleanup_integrity_failure(self):
+        m = _import("orchestrate_judicial_panel")
+        rows = {
+            "row-a": self._row("row-a"),
+            "row-b": self._row("row-b"),
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            workdir = Path(tmp) / "panel"
+            with mock.patch.dict(
+                os.environ,
+                {"AUDIT_PANEL_WORKDIR": str(workdir)},
+            ), mock.patch.object(
+                sys, "argv", ["orchestrate_judicial_panel.py"]
+            ), mock.patch.object(
+                m.batch, "clean_main_error", return_value=None
+            ), mock.patch.object(
+                m, "workdir_guard_error", return_value=None
+            ), mock.patch.object(
+                m.batch, "acquire_exclusive_drain_lock", return_value=mock.Mock()
+            ), mock.patch.object(
+                m.batch, "load_rows", return_value=rows
+            ), mock.patch.object(
+                m, "panel_scope", return_value=set(rows)
+            ), mock.patch.object(
+                m,
+                "collect_panel_targets",
+                return_value=(list(rows.values()), []),
+            ), mock.patch.object(
+                m, "load_prior_panels", return_value=({}, None)
+            ), mock.patch.object(
+                m,
+                "run_panel",
+                side_effect=m.batch.CleanupIntegrityError(
+                    "group still present"
+                ),
+            ) as run_panel:
+                rc = m.main()
+
+        self.assertEqual(rc, m.batch.CLEANUP_INTEGRITY_EXIT_CODE)
+        run_panel.assert_called_once()
+
     def test_contract_invalid_vote_runs_fresh_full_panel(self):
         m = _import("orchestrate_judicial_panel")
         row = self._row()

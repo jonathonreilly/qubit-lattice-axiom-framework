@@ -693,6 +693,63 @@ def _args() -> argparse.Namespace:
 
 
 class BatchExitSemanticsTest(unittest.TestCase):
+    def test_batch_main_maps_cleanup_integrity_to_dedicated_exit(self):
+        row = {"claim_id": "row", "criticality": "ordinary"}
+        lock = mock.Mock()
+        with tempfile.TemporaryDirectory() as tmp:
+            workdir = Path(tmp) / "batch"
+            with mock.patch.dict(
+                os.environ,
+                {"AUDIT_BATCH_WORKDIR": str(workdir)},
+            ), mock.patch.object(
+                sys,
+                "argv",
+                [
+                    "orchestrate_audit_batch.py",
+                    "--all",
+                    "--max-workers",
+                    "1",
+                    "--rounds",
+                    "1",
+                ],
+            ), mock.patch.object(
+                batch,
+                "acquire_exclusive_drain_lock",
+                return_value=lock,
+            ), mock.patch.object(
+                batch, "clean_main_error", return_value=None
+            ), mock.patch.object(
+                batch, "load_campaign_quarantine", return_value=set()
+            ), mock.patch.object(
+                batch,
+                "load_campaign_selection_skip_records",
+                return_value=[],
+            ), mock.patch.object(
+                batch, "load_rows", return_value={"row": row}
+            ), mock.patch.object(
+                batch, "scope_for_args", return_value={"row"}
+            ), mock.patch.object(
+                batch, "compute_targets", return_value=([row], [])
+            ), mock.patch.object(
+                batch,
+                "launch_worker",
+                return_value={"cid": "row", "pass": 1},
+            ), mock.patch.object(
+                batch,
+                "wait_workers",
+                side_effect=batch.CleanupIntegrityError(
+                    "group still present"
+                ),
+            ), mock.patch.object(
+                batch, "maybe_progress_summary"
+            ), mock.patch.object(
+                batch, "start_progress_ticker"
+            ):
+                rc = batch.main()
+
+        self.assertEqual(rc, batch.CLEANUP_INTEGRITY_EXIT_CODE)
+        lock.close.assert_called_once_with()
+
     def test_judicial_handoff_is_resumable(self):
         report = [{"cid": "row", "result": "judicial_panel_required"}]
         self.assertFalse(batch.report_has_hard_blocker(report))
@@ -2117,6 +2174,7 @@ class ClaimTransactionTest(unittest.TestCase):
                 "row": {"claim_id": "noisy"},
                 "pass": 1,
                 "proc": FakeProc(),
+                "process_group": 4242,
                 "raw_output": root / "worker.out",
                 "log_path": log_path,
                 "log_handle": log_path.open("a", encoding="utf-8"),
@@ -2177,6 +2235,7 @@ class ClaimTransactionTest(unittest.TestCase):
                 "row": {"claim_id": "survivor"},
                 "pass": 1,
                 "proc": FakeProc(),
+                "process_group": 4343,
                 "raw_output": root / "worker.out",
                 "log_path": log_path,
                 "log_handle": log_path.open("w", encoding="utf-8"),
@@ -2199,7 +2258,7 @@ class ClaimTransactionTest(unittest.TestCase):
                 0,
             ), mock.patch.object(batch.os, "killpg") as killpg:
                 with self.assertRaisesRegex(
-                    RuntimeError,
+                    batch.CleanupIntegrityError,
                     "process-group cleanup could not be verified",
                 ):
                     batch.wait_workers(
@@ -2217,6 +2276,18 @@ class ClaimTransactionTest(unittest.TestCase):
                 mock.call(4343, 0),
             ],
         )
+
+    def test_worker_teardown_requires_recorded_group_identity(self):
+        proc = mock.Mock(pid=4444)
+        with mock.patch.object(batch.os, "killpg") as killpg:
+            with self.assertRaisesRegex(
+                batch.CleanupIntegrityError,
+                "no valid recorded process group",
+            ):
+                batch.terminate_read_only_seat({"proc": proc})
+
+        killpg.assert_not_called()
+        proc.wait.assert_not_called()
 
     def test_wait_workers_streams_complete_claim_before_slower_claim(self):
         class FakeProc:
@@ -2340,11 +2411,13 @@ class ClaimTransactionTest(unittest.TestCase):
                 log_path = root / f"{cid}.log"
                 log_handle = log_path.open("w", encoding="utf-8")
                 os.utime(log_path, (0.0, 0.0))
+                proc = FakeProc(done)
                 return {
                     "cid": cid,
                     "row": {"claim_id": cid},
                     "pass": 1,
-                    "proc": FakeProc(done),
+                    "proc": proc,
+                    "process_group": proc.pid + 1000,
                     "raw_output": root / f"{cid}.out",
                     "log_path": log_path,
                     "log_handle": log_handle,
@@ -2365,6 +2438,12 @@ class ClaimTransactionTest(unittest.TestCase):
                     self.assertTrue(release_callback.wait(timeout=2))
                 return True
 
+            def kill_and_verify(_pid, requested_signal):
+                if requested_signal == signal.SIGKILL:
+                    release_callback.set()
+                elif requested_signal == 0:
+                    raise ProcessLookupError
+
             with mock.patch.object(
                 batch.time, "monotonic", side_effect=[0.0, 120.0]
             ), mock.patch.object(
@@ -2380,7 +2459,7 @@ class ClaimTransactionTest(unittest.TestCase):
             ), mock.patch.object(
                 batch.os,
                 "killpg",
-                side_effect=lambda _pid, _signal: release_callback.set(),
+                side_effect=kill_and_verify,
             ) as killpg:
                 result = batch.wait_workers(
                     [ready, slow],
@@ -2390,7 +2469,113 @@ class ClaimTransactionTest(unittest.TestCase):
 
         self.assertTrue(result)
         self.assertTrue(slow["stalled"])
-        killpg.assert_called_once()
+        self.assertEqual(
+            killpg.call_args_list,
+            [
+                mock.call(slow["process_group"], signal.SIGKILL),
+                mock.call(slow["process_group"], 0),
+            ],
+        )
+
+    def test_cleanup_integrity_failure_drains_committer_without_cancelling_it(self):
+        class FakeProc:
+            next_pid = 5000
+
+            def __init__(self, done=False):
+                self.returncode = 0 if done else None
+                self.pid = FakeProc.next_pid
+                FakeProc.next_pid += 1
+
+            def poll(self):
+                return self.returncode
+
+            def wait(self):
+                if self.returncode is None:
+                    self.returncode = -9
+                return self.returncode
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+
+            def job(cid, done=False):
+                log_path = root / f"{cid}.log"
+                proc = FakeProc(done)
+                return {
+                    "cid": cid,
+                    "row": {"claim_id": cid},
+                    "pass": 1,
+                    "proc": proc,
+                    "process_group": proc.pid,
+                    "raw_output": root / f"{cid}.out",
+                    "log_path": log_path,
+                    "log_handle": log_path.open("w", encoding="utf-8"),
+                    "started": 0.0,
+                    "last_size": 0,
+                    "last_activity": (0, 0.0),
+                    "last_progress": 0.0,
+                    "stalled": False,
+                    "deadline_exceeded": False,
+                }
+
+            ready_a = job("ready-a", done=True)
+            ready_b = job("ready-b", done=True)
+            slow = job("slow")
+            callback_started = threading.Event()
+            cleanup_attempted = threading.Event()
+            safe_to_finish = threading.Event()
+            callbacks = []
+            cancellation_seen = []
+
+            def callback(claim_jobs):
+                callbacks.append(claim_jobs[0]["cid"])
+                callback_started.set()
+                self.assertTrue(cleanup_attempted.wait(timeout=2))
+                self.assertTrue(safe_to_finish.wait(timeout=2))
+                cancellation_seen.append(batch._command_cancelled())
+                return True
+
+            def fail_cleanup(_job):
+                cleanup_attempted.set()
+                raise batch.CleanupIntegrityError("group still present")
+
+            def terminate_pending(jobs):
+                safe_to_finish.set()
+                for pending_job in jobs:
+                    pending_job["returncode"] = pending_job["proc"].wait()
+
+            with mock.patch.object(
+                batch.time, "monotonic", side_effect=[0.0, 2.0]
+            ), mock.patch.object(
+                batch.time,
+                "sleep",
+                side_effect=lambda _seconds: callback_started.wait(timeout=2),
+            ), mock.patch.object(
+                batch,
+                "terminate_read_only_seat",
+                side_effect=fail_cleanup,
+            ), mock.patch.object(
+                batch,
+                "terminate_workers",
+                side_effect=terminate_pending,
+            ):
+                with self.assertRaisesRegex(
+                    batch.CleanupIntegrityError,
+                    "group still present",
+                ):
+                    batch.wait_workers(
+                        [ready_a, ready_b, slow],
+                        on_claim_ready=callback,
+                        wall_timeout_seconds=1,
+                    )
+
+        self.assertEqual(callbacks, ["ready-a"])
+        self.assertEqual(cancellation_seen, [False])
+        self.assertTrue(
+            all(
+                job["log_handle"].closed
+                for job in (ready_a, ready_b, slow)
+            )
+        )
 
     def test_wait_workers_callback_failure_terminates_remaining_seats(self):
         class FakeProc:
@@ -3361,6 +3546,22 @@ class AutomaticPanelResumeTest(unittest.TestCase):
             labels,
             ["batch-lane_a-cycle-1", "panel-after-lane_a-cycle-1"],
         )
+
+    def test_cleanup_integrity_failure_skips_post_batch_panel(self):
+        args = _args()
+        labels: list[str] = []
+
+        def fake_run(label, command, env=None):
+            labels.append(label)
+            return batch.CLEANUP_INTEGRITY_EXIT_CODE
+
+        with mock.patch.object(audit_loop, "git_head", return_value="h0"), \
+             mock.patch.object(audit_loop, "run_command", side_effect=fake_run):
+            rc, progressed = audit_loop.drain_lane("lane_a", args)
+
+        self.assertEqual(rc, batch.CLEANUP_INTEGRITY_EXIT_CODE)
+        self.assertFalse(progressed)
+        self.assertEqual(labels, ["batch-lane_a-cycle-1"])
 
     def test_transient_service_failure_panels_backs_off_and_retries(self):
         args = _args()

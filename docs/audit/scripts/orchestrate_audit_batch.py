@@ -119,6 +119,7 @@ INHERITED_DRAIN_LOCK_FD_ENV = "AUDIT_DRAIN_LOCK_FD"
 LANE_CERTIFICATION_PATH = "docs/audit/data/lane_certification.json"
 TRANSIENT_SERVICE_FAILURE_RESULT = "worker_transient_service_unavailable"
 TRANSIENT_SERVICE_EXIT_CODE = getattr(os, "EX_TEMPFAIL", 75)
+CLEANUP_INTEGRITY_EXIT_CODE = getattr(os, "EX_SOFTWARE", 70)
 WORKER_FAILURE_LOG_TAIL_BYTES = 256 * 1024
 WORKER_FAILURE_LOG_TAIL_LINES = 80
 TRANSIENT_SERVICE_MARKERS = (
@@ -195,6 +196,10 @@ NON_RETRYABLE_SERVICE_MARKERS = (
     "unclassified failure",
     "corrupt local configuration",
 )
+
+
+class CleanupIntegrityError(RuntimeError):
+    """An owned read-only seat group could not be proven absent."""
 
 
 def _repo_identity() -> str:
@@ -971,19 +976,42 @@ def start_progress_ticker() -> None:
 def terminate_read_only_seat(job: dict) -> None:
     """Kill one owned seat group and prove that the group has disappeared."""
     proc = job["proc"]
-    process_group = int(job.get("process_group", proc.pid))
+    try:
+        process_group = int(job["process_group"])
+        if process_group < 1:
+            raise ValueError
+    except (KeyError, TypeError, ValueError) as exc:
+        raise CleanupIntegrityError(
+            "read-only auditor has no valid recorded process group"
+        ) from exc
     try:
         os.killpg(process_group, signal.SIGKILL)
     except ProcessLookupError:
         pass
-    job["returncode"] = proc.wait()
+    except OSError as exc:
+        raise CleanupIntegrityError(
+            "read-only auditor process group could not be signaled: "
+            f"pgid={process_group}: {exc}"
+        ) from exc
+    try:
+        job["returncode"] = proc.wait()
+    except Exception as exc:
+        raise CleanupIntegrityError(
+            "read-only auditor leader could not be reaped: "
+            f"pgid={process_group}: {exc}"
+        ) from exc
     for _attempt in range(SEAT_GROUP_VERIFICATION_ATTEMPTS):
         try:
             os.killpg(process_group, 0)
         except ProcessLookupError:
             return
+        except OSError as exc:
+            raise CleanupIntegrityError(
+                "read-only auditor process-group absence could not be probed: "
+                f"pgid={process_group}: {exc}"
+            ) from exc
         time.sleep(SEAT_GROUP_VERIFICATION_INTERVAL_SECONDS)
-    raise RuntimeError(
+    raise CleanupIntegrityError(
         "read-only auditor process-group cleanup could not be verified: "
         f"pgid={process_group}"
     )
@@ -1096,11 +1124,7 @@ def wait_workers(
                     continue
                 if now - job["last_progress"] >= stall_seconds:
                     job["stalled"] = True
-                    try:
-                        os.killpg(job["proc"].pid, signal.SIGKILL)
-                    except ProcessLookupError:
-                        pass
-                    job["returncode"] = job["proc"].wait()
+                    terminate_read_only_seat(job)
                     if not job["log_handle"].closed:
                         job["log_handle"].close()
                     pending.remove(index)
@@ -1130,6 +1154,29 @@ def wait_workers(
                 raise commit_errors[0]
             return not commit_failed.is_set()
         return None
+    except CleanupIntegrityError as cleanup_error:
+        # An unverified seat group is a global integrity stop, but a seat
+        # deadline must never interrupt a generated-state transaction. Mark
+        # every queued claim as failed, terminate still-running seats, and let
+        # the one already-owned committer transaction reach its existing
+        # rollback/push-reconciliation boundary before propagating the error.
+        if committer is not None:
+            commit_failed.set()
+        pending_cleanup_error: BaseException | None = None
+        try:
+            terminate_workers([jobs[index] for index in pending])
+        except BaseException as exc:
+            pending_cleanup_error = exc
+        finally:
+            if committer is not None and committer.is_alive():
+                commit_queue.put(commit_stop)
+                committer.join()
+        if pending_cleanup_error is not None:
+            raise CleanupIntegrityError(
+                f"{cleanup_error}; cleanup of another pending seat also "
+                f"failed: {pending_cleanup_error}"
+            ) from pending_cleanup_error
+        raise
     except BaseException:
         terminate_workers([jobs[index] for index in pending])
         if committer is not None and committer.is_alive():
@@ -3447,12 +3494,27 @@ def main() -> int:
             )
             return ok
 
-        streamed = wait_workers(
-            jobs,
-            args.stall_minutes,
-            on_claim_ready=apply_ready_claim,
-            wall_timeout_seconds=args.seat_timeout_sec,
-        )
+        try:
+            streamed = wait_workers(
+                jobs,
+                args.stall_minutes,
+                on_claim_ready=apply_ready_claim,
+                wall_timeout_seconds=args.seat_timeout_sec,
+            )
+        except CleanupIntegrityError as exc:
+            print(
+                "GLOBAL cleanup integrity failure; no later seat may launch: "
+                f"{exc}"
+            )
+            if report:
+                (workdir / "report.jsonl").write_text(
+                    "".join(
+                        json.dumps(item, sort_keys=True) + "\n"
+                        for item in report
+                    ),
+                    encoding="utf-8",
+                )
+            return finish(CLEANUP_INTEGRITY_EXIT_CODE)
         if streamed is True:
             applied_ok = True
             round_science_handoffs = list(

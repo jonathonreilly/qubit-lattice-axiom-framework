@@ -966,6 +966,9 @@ def run_panel(
                     wall_timeout_seconds=seat_timeout_seconds,
                 )
                 worker_phase = "launch"
+        except batch.CleanupIntegrityError:
+            batch.terminate_workers(jobs)
+            raise
         except Exception as exc:
             batch.terminate_workers(jobs)
             return {
@@ -1545,17 +1548,24 @@ def main() -> int:
 
     report = []
     for row in targets:
-        result = run_panel(
-            row,
-            rows,
-            workdir,
-            args.stall_minutes,
-            args.runner_timeout_sec,
-            args.push_retries,
-            prior_by_claim.get(row["claim_id"], []),
-            max_workers=args.max_workers,
-            seat_timeout_seconds=args.seat_timeout_sec,
-        )
+        try:
+            result = run_panel(
+                row,
+                rows,
+                workdir,
+                args.stall_minutes,
+                args.runner_timeout_sec,
+                args.push_retries,
+                prior_by_claim.get(row["claim_id"], []),
+                max_workers=args.max_workers,
+                seat_timeout_seconds=args.seat_timeout_sec,
+            )
+        except batch.CleanupIntegrityError as exc:
+            print(
+                "GLOBAL cleanup integrity failure; no later panel may launch: "
+                f"{exc}"
+            )
+            return batch.CLEANUP_INTEGRITY_EXIT_CODE
         report.append(result)
         print(f"   {result['cid']}: {result['result']}")
         rows = batch.load_rows()

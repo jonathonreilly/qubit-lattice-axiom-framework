@@ -535,6 +535,12 @@ def drain_lane(
             f"batch-{label}-cycle-{cycle}",
             batch_command(lane, args, source=source),
         )
+        if batch_rc == batch.CLEANUP_INTEGRITY_EXIT_CODE:
+            emit(
+                "GLOBAL cleanup integrity failure in development batch; "
+                "skipping the post-batch panel sweep and stopping the campaign"
+            )
+            return batch_rc, made_progress
         # This is intentionally unconditional, including after a hard batch
         # result: another row in the same batch may already have recorded a
         # panel-eligible disagreement. Preserve the hard result only after the

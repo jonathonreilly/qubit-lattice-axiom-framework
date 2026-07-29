@@ -303,9 +303,14 @@ least every 15 minutes — never silence for a long run.
   File activity resets the inactivity timer, but both inactivity and absolute
   age are measured with a monotonic clock rather than wall-clock or file-mtime
   subtraction.
-  Expiry terminates the complete seat process group and is an operational
-  hard failure only; it supplies no scientific verdict. The deadline does not
-  interrupt the serialized apply/pipeline/lint/commit/push transaction.
+  Both inactivity and absolute-age expiry terminate and reap the complete
+  recorded seat process group and prove it absent. Failure to prove absence is
+  a global integrity stop:
+  launch no later seat or post-batch panel, let any already-owned serialized
+  transaction reach its rollback or push-reconciliation boundary, and then
+  abort. Expiry is operational only and supplies no scientific verdict. It
+  does not interrupt the serialized apply/pipeline/lint/commit/push
+  transaction.
   Every supervisor phase continues to emit the 15-minute progress summary.
   Do not leave a drain silently waiting past those bounds.
 - One full pipeline invocation must reach a generated-state fixed point.
@@ -387,9 +392,12 @@ failures. This boundary is fail-closed and does not weaken any audit gate.
   unknown worker exits remain hard stops.
 - **Global hard stop:** dirty or divergent source state, failed rollback,
   repository invariant failure, unclassifiable generated diff, corrupted
-  campaign state, unavailable required audit model, authentication failure
-  or authorization failure, or an applyability/policy defect that cannot be
-  scoped to one row. Preserve artifacts and stop before minting authority.
+  campaign state, failure to prove an expired seat process group absent,
+  unavailable required audit model, authentication failure or authorization
+  failure, or an applyability/policy defect that cannot be scoped to one row.
+  Preserve artifacts, finish any already-owned transaction at its existing
+  reconciliation boundary, and stop before launching another seat or minting
+  authority.
 - Treat the campaign exclusion JSONL as a closed operational schema. Reject
   blank records, duplicate JSON keys, unknown exclusion reasons, noncanonical
   claim ids, non-finite numbers, noncanonical UTC timestamps, missing or

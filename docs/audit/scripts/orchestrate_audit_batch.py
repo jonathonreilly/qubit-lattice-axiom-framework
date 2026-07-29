@@ -113,6 +113,8 @@ PACKET_COMPLETION_STALL_SECONDS = 20 * 60
 PACKET_COMPLETION_POLL_SECONDS = 15
 PACKET_COMPLETION_EXIT_GRACE_SECONDS = 10
 COMMAND_TERMINATION_GRACE_SECONDS = 5
+SEAT_GROUP_VERIFICATION_ATTEMPTS = 50
+SEAT_GROUP_VERIFICATION_INTERVAL_SECONDS = 0.1
 INHERITED_DRAIN_LOCK_FD_ENV = "AUDIT_DRAIN_LOCK_FD"
 LANE_CERTIFICATION_PATH = "docs/audit/data/lane_certification.json"
 TRANSIENT_SERVICE_FAILURE_RESULT = "worker_transient_service_unavailable"
@@ -870,12 +872,12 @@ def launch_worker(
         log_handle.close()
         raise
     now = time.monotonic()
-    now_wall = time.time()
     return {
         "cid": cid,
         "row": row,
         "pass": pass_no,
         "proc": proc,
+        "process_group": proc.pid,
         "raw_output": raw_output,
         "delivery": delivery,
         "log_path": log_path,
@@ -894,11 +896,12 @@ def launch_worker(
         "auditor": f"codex-audit-batch-{ident}",
         "independence": seat_independence(row, pass_no),
         "workdir": workdir,
+        "started": now,
         "last_size": 0,
         "last_activity": (0, 0.0),
         "last_progress": now,
-        "last_progress_wall": now_wall,
         "stalled": False,
+        "deadline_exceeded": False,
     }
 
 
@@ -965,10 +968,32 @@ def start_progress_ticker() -> None:
     threading.Thread(target=_loop, daemon=True, name="drain-progress").start()
 
 
+def terminate_read_only_seat(job: dict) -> None:
+    """Kill one owned seat group and prove that the group has disappeared."""
+    proc = job["proc"]
+    process_group = int(job.get("process_group", proc.pid))
+    try:
+        os.killpg(process_group, signal.SIGKILL)
+    except ProcessLookupError:
+        pass
+    job["returncode"] = proc.wait()
+    for _attempt in range(SEAT_GROUP_VERIFICATION_ATTEMPTS):
+        try:
+            os.killpg(process_group, 0)
+        except ProcessLookupError:
+            return
+        time.sleep(SEAT_GROUP_VERIFICATION_INTERVAL_SECONDS)
+    raise RuntimeError(
+        "read-only auditor process-group cleanup could not be verified: "
+        f"pgid={process_group}"
+    )
+
+
 def wait_workers(
     jobs: list[dict],
     stall_minutes: int = 45,
     on_claim_ready: Callable[[list[dict]], bool] | None = None,
+    wall_timeout_seconds: int | None = None,
 ) -> bool | None:
     """Monitor seats and optionally drain each complete claim immediately.
 
@@ -1027,11 +1052,10 @@ def wait_workers(
                 pending.clear()
                 break
             now = time.monotonic()
-            now_wall = time.time()
             for index in list(pending):
                 job = jobs[index]
                 job.setdefault("started", now)
-                job.setdefault("last_progress_wall", now_wall)
+                job.setdefault("last_progress", now)
                 job.setdefault("last_activity", (job.get("last_size", 0), 0.0))
                 output = job["raw_output"]
                 output_stat = output.stat() if output.exists() else None
@@ -1049,8 +1073,6 @@ def wait_workers(
                     job["last_activity"] = activity
                     job["last_size"] = size
                     job["last_progress"] = now
-                    if activity_mtime:
-                        job["last_progress_wall"] = activity_mtime
                 returncode = job["proc"].poll()
                 if returncode is not None:
                     job["returncode"] = returncode
@@ -1059,7 +1081,20 @@ def wait_workers(
                         job["log_handle"].close()
                     pending.remove(index)
                     continue
-                if now_wall - job["last_progress_wall"] >= stall_seconds:
+                if (
+                    wall_timeout_seconds is not None
+                    and now - job["started"] >= wall_timeout_seconds
+                ):
+                    # Auditor seats are read-only subprocess groups. Their
+                    # absolute deadline is independent of log activity and
+                    # never interrupts the serialized mutation transaction.
+                    job["deadline_exceeded"] = True
+                    terminate_read_only_seat(job)
+                    if not job["log_handle"].closed:
+                        job["log_handle"].close()
+                    pending.remove(index)
+                    continue
+                if now - job["last_progress"] >= stall_seconds:
                     job["stalled"] = True
                     try:
                         os.killpg(job["proc"].pid, signal.SIGKILL)
@@ -1390,6 +1425,8 @@ def retryable_worker_service_failure(job: dict) -> str | None:
 def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     cid = job["cid"]
     base = {"cid": cid, "pass": job["pass"]}
+    if job.get("deadline_exceeded"):
+        return None, {**base, "result": "wall_timeout_killed"}
     if job["stalled"]:
         return None, {**base, "result": "stall_killed"}
     raw_output = job["raw_output"]
@@ -3171,6 +3208,15 @@ def main() -> int:
     parser.add_argument("--max-workers", type=int, default=6)
     parser.add_argument("--rounds", type=int, default=6)
     parser.add_argument("--stall-minutes", type=int, default=45)
+    parser.add_argument(
+        "--seat-timeout-sec",
+        type=int,
+        default=2700,
+        help=(
+            "absolute wall-clock deadline for each read-only auditor seat; "
+            "unlike --stall-minutes, continuous output does not extend it"
+        ),
+    )
     parser.add_argument("--runner-timeout-sec", type=int, default=120)
     parser.add_argument("--push-retries", type=int, default=3)
     parser.add_argument(
@@ -3211,10 +3257,14 @@ def main() -> int:
         args.max_workers < 1
         or args.rounds < 1
         or args.stall_minutes < 1
+        or args.seat_timeout_sec < 1
         or args.runner_timeout_sec < 1
         or args.push_retries < 1
     ):
-        parser.error("worker, round, stall, runner-timeout, and retry limits must be positive")
+        parser.error(
+            "worker, round, stall, seat-timeout, runner-timeout, and retry "
+            "limits must be positive"
+        )
     if args.retarget_conditionals and not args.claims:
         parser.error("--retarget-conditionals requires an explicit --claims list")
     retarget = frozenset(
@@ -3378,7 +3428,9 @@ def main() -> int:
             break
         print(
             f"   launched {len(jobs)} detached workers; streaming complete "
-            f"claims to one committer (stall {args.stall_minutes}m)"
+            "claims to one committer "
+            f"(stall {args.stall_minutes}m; seat deadline "
+            f"{args.seat_timeout_sec}s)"
         )
         compute_skips: set[str] = set()
         schema_quarantines: set[str] = set()
@@ -3399,6 +3451,7 @@ def main() -> int:
             jobs,
             args.stall_minutes,
             on_claim_ready=apply_ready_claim,
+            wall_timeout_seconds=args.seat_timeout_sec,
         )
         if streamed is True:
             applied_ok = True

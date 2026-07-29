@@ -525,6 +525,7 @@ def launch_judge(
         "pass": judge_no,
         "judge": judge_no,
         "proc": proc,
+        "process_group": proc.pid,
         "raw_output": raw_output,
         "log_path": log_path,
         "log_handle": log_handle,
@@ -533,14 +534,18 @@ def launch_judge(
         "panel": panel_no,
         "invocation_id": invocation_id,
         "evidence_manifest": evidence_manifest,
+        "started": now,
         "last_size": 0,
         "last_progress": now,
         "stalled": False,
+        "deadline_exceeded": False,
         "returncode": None,
     }
 
 
 def collect_vote(job: dict) -> tuple[dict | None, str]:
+    if job.get("deadline_exceeded"):
+        return None, "wall_timeout_killed"
     if job["stalled"]:
         return None, "stall_killed"
     raw = job["raw_output"]
@@ -897,8 +902,16 @@ def run_panel(
     runner_timeout: int,
     retries: int,
     prior_panels: list[dict],
+    max_workers: int = PANEL_SIZE,
+    seat_timeout_seconds: int = 2700,
 ) -> dict:
     cid = row["claim_id"]
+    if max_workers < 1 or seat_timeout_seconds < 1:
+        return {
+            "cid": cid,
+            "result": "panel_runtime_invalid",
+            "detail": "worker and seat-timeout limits must be positive",
+        }
     context_error = seat_context_error(row)
     if context_error:
         return {"cid": cid, "result": "seat_context_blocked", "detail": context_error}
@@ -918,10 +931,15 @@ def run_panel(
         consecutive_contract_retries += 1
     while True:
         jobs = []
+        worker_phase = "launch"
         try:
-            for judge_no in range(1, PANEL_SIZE + 1):
-                jobs.append(
-                    launch_judge(
+            for wave_start in range(1, PANEL_SIZE + 1, max_workers):
+                wave = []
+                for judge_no in range(
+                    wave_start,
+                    min(PANEL_SIZE + 1, wave_start + max_workers),
+                ):
+                    job = launch_judge(
                         packet,
                         row,
                         judge_no,
@@ -931,12 +949,32 @@ def run_panel(
                         invocation_id,
                         evidence_manifest,
                     )
+                    jobs.append(job)
+                    wave.append(job)
+                print(
+                    f"   {cid}: launched judges "
+                    f"{wave_start}-{wave_start + len(wave) - 1} "
+                    f"for panel {panel_no}; waiting"
                 )
+                # Do not collect or expose any votes between waves. Every
+                # judge receives the same pre-panel packet and prior-panel
+                # history; waves only enforce the audit-seat ceiling.
+                worker_phase = "wait"
+                batch.wait_workers(
+                    wave,
+                    stall_minutes,
+                    wall_timeout_seconds=seat_timeout_seconds,
+                )
+                worker_phase = "launch"
         except Exception as exc:
             batch.terminate_workers(jobs)
             return {
                 "cid": cid,
-                "result": "panel_launch_blocked",
+                "result": (
+                    "panel_wait_blocked"
+                    if worker_phase == "wait"
+                    else "panel_launch_blocked"
+                ),
                 "detail": str(exc),
             }
         except BaseException:
@@ -949,17 +987,6 @@ def run_panel(
                 "cid": cid,
                 "result": "judge_identity_collision",
                 "detail": "panel judges did not receive five distinct identities",
-            }
-        print(
-            f"   {cid}: launched {len(jobs)} judges for panel {panel_no}; waiting"
-        )
-        try:
-            batch.wait_workers(jobs, stall_minutes)
-        except Exception as exc:
-            return {
-                "cid": cid,
-                "result": "panel_wait_blocked",
-                "detail": str(exc),
             }
         votes: list[dict] = []
         failures: list[str] = []
@@ -1353,8 +1380,15 @@ def load_prior_panels(
 
 
 def runtime_arg_error(args: argparse.Namespace) -> str | None:
-    for name in ("stall_minutes", "runner_timeout_sec", "push_retries"):
-        if getattr(args, name) <= 0:
+    defaults = {"max_workers": PANEL_SIZE, "seat_timeout_sec": 2700}
+    for name in (
+        "max_workers",
+        "stall_minutes",
+        "seat_timeout_sec",
+        "runner_timeout_sec",
+        "push_retries",
+    ):
+        if getattr(args, name, defaults.get(name)) <= 0:
             return f"--{name.replace('_', '-')} must be positive"
     return None
 
@@ -1390,7 +1424,25 @@ def main() -> int:
         default=[],
         help="path to a prior panel-<key>.json record to give the judges",
     )
+    parser.add_argument(
+        "--max-workers",
+        type=int,
+        default=PANEL_SIZE,
+        help=(
+            "concurrent judge-seat ceiling; all five distinct votes remain "
+            "mandatory and are scheduled in waves when this is below five"
+        ),
+    )
     parser.add_argument("--stall-minutes", type=int, default=45)
+    parser.add_argument(
+        "--seat-timeout-sec",
+        type=int,
+        default=2700,
+        help=(
+            "absolute wall-clock deadline for each read-only judge seat; "
+            "continuous output does not extend it"
+        ),
+    )
     parser.add_argument("--runner-timeout-sec", type=int, default=120)
     parser.add_argument("--push-retries", type=int, default=3)
     parser.add_argument("--dry-run", action="store_true")
@@ -1501,6 +1553,8 @@ def main() -> int:
             args.runner_timeout_sec,
             args.push_retries,
             prior_by_claim.get(row["claim_id"], []),
+            max_workers=args.max_workers,
+            seat_timeout_seconds=args.seat_timeout_sec,
         )
         report.append(result)
         print(f"   {result['cid']}: {result['result']}")

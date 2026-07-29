@@ -423,8 +423,12 @@ def panel_command(args: argparse.Namespace) -> list[str]:
     command = [
         sys.executable,
         str(PANEL),
+        "--max-workers",
+        str(args.max_workers),
         "--stall-minutes",
         str(args.stall_minutes),
+        "--seat-timeout-sec",
+        str(args.codex_timeout_sec),
         "--runner-timeout-sec",
         str(args.runner_timeout_sec),
         "--push-retries",
@@ -449,6 +453,8 @@ def batch_command(
         str(args.batch_rounds),
         "--stall-minutes",
         str(args.stall_minutes),
+        "--seat-timeout-sec",
+        str(args.codex_timeout_sec),
         "--runner-timeout-sec",
         str(args.runner_timeout_sec),
         "--push-retries",
@@ -1069,7 +1075,15 @@ def build_parser() -> argparse.ArgumentParser:
         description="Panel-aware end-to-end audit backlog drainer"
     )
     parser.add_argument("--lane", action="append", help="limit to a configured lane")
-    parser.add_argument("--max-workers", type=int, default=4)
+    parser.add_argument(
+        "--max-workers",
+        type=int,
+        default=4,
+        help=(
+            "concurrent primary-seat ceiling for development auditors and "
+            "judicial judges; panels run in bounded waves below five"
+        ),
+    )
     parser.add_argument(
         "--worker-id",
         default=os.environ.get("AUDIT_WORKER_ID", ""),

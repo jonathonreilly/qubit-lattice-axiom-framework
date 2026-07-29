@@ -297,8 +297,17 @@ least every 15 minutes — never silence for a long run.
 ## Drain Liveness And Generated-State Recovery
 
 - A quiet worker is bounded by the configured stall timer, and every
-  supervisor phase continues to emit the 15-minute progress summary. Do not
-  leave a drain silently waiting past those bounds.
+  read-only ordinary-auditor or judicial-judge seat is also bounded by the
+  absolute `--codex-timeout-sec` deadline propagated by the top-level
+  drainer. Continuous log output does not extend that absolute deadline.
+  File activity resets the inactivity timer, but both inactivity and absolute
+  age are measured with a monotonic clock rather than wall-clock or file-mtime
+  subtraction.
+  Expiry terminates the complete seat process group and is an operational
+  hard failure only; it supplies no scientific verdict. The deadline does not
+  interrupt the serialized apply/pipeline/lint/commit/push transaction.
+  Every supervisor phase continues to emit the 15-minute progress summary.
+  Do not leave a drain silently waiting past those bounds.
 - One full pipeline invocation must reach a generated-state fixed point.
   In a full run, `compute_load_bearing.py` first refreshes topology
   `criticality` from the newly built graph before the ledger seeder consumes
@@ -460,6 +469,15 @@ python3 docs/audit/scripts/orchestrate_audit_batch.py \
   reviewers, and judicial panels all draw on one pool. Keep the TOTAL
   concurrent codex processes across every lane at or under ~8-10, and
   coordinate before raising `--max-workers` while review campaigns run.
+  The top-level ceiling applies to judicial work too: a five-judge panel
+  still requires five distinct validator-clean votes, but schedules them in
+  bounded waves when `--max-workers` is below five. No vote from an earlier
+  wave enters the packet or context of a later wave.
+  Focused packet-completion helpers and separately authorized
+  `--dispatch-science-fixes` work are outside this primary-auditor/judge
+  ceiling; repair dispatch is default-off. Reserve shared-pool capacity for
+  those helpers and lower `--max-workers` before enabling dispatch. Do not
+  describe `--max-workers` as a global process limit.
   Measured 2026-07-17: ~18 concurrent processes collapsed lane throughput
   from 6-11 landed verdicts/hour to ~1 every 3 hours; a 4-6 seat drain in a
   quiet pool is the sweet spot.

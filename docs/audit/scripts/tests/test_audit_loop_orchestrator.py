@@ -2096,6 +2096,128 @@ class SchemaRecoveryTest(unittest.TestCase):
 
 
 class ClaimTransactionTest(unittest.TestCase):
+    def test_worker_absolute_deadline_beats_continuous_log_activity(self):
+        class FakeProc:
+            pid = 4242
+            returncode = None
+
+            def poll(self):
+                return self.returncode
+
+            def wait(self):
+                self.returncode = -9
+                return self.returncode
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            log_path = root / "worker.log"
+            log_path.write_text("continuous activity", encoding="utf-8")
+            job = {
+                "cid": "noisy",
+                "row": {"claim_id": "noisy"},
+                "pass": 1,
+                "proc": FakeProc(),
+                "raw_output": root / "worker.out",
+                "log_path": log_path,
+                "log_handle": log_path.open("a", encoding="utf-8"),
+                "started": 0.0,
+                "last_size": 0,
+                "last_activity": (0, 0.0),
+                "last_progress": 0.0,
+                "stalled": False,
+                "deadline_exceeded": False,
+            }
+            def kill_and_verify(_pid, requested_signal):
+                if requested_signal == 0:
+                    raise ProcessLookupError
+
+            with mock.patch.object(
+                batch.time, "monotonic", return_value=120.0
+            ), mock.patch.object(
+                batch.os, "killpg", side_effect=kill_and_verify
+            ) as killpg:
+                result = batch.wait_workers(
+                    [job],
+                    stall_minutes=45,
+                    wall_timeout_seconds=60,
+                )
+
+            _delivery, failure = batch.finalize_worker(job)
+
+        self.assertIsNone(result)
+        self.assertTrue(job["deadline_exceeded"])
+        self.assertFalse(job["stalled"])
+        self.assertEqual(failure["result"], "wall_timeout_killed")
+        self.assertTrue(job["log_handle"].closed)
+        self.assertEqual(
+            killpg.call_args_list,
+            [
+                mock.call(4242, signal.SIGKILL),
+                mock.call(4242, 0),
+            ],
+        )
+
+    def test_worker_deadline_hard_stops_when_group_cleanup_is_unverified(self):
+        class FakeProc:
+            pid = 4343
+            returncode = None
+
+            def poll(self):
+                return self.returncode
+
+            def wait(self):
+                self.returncode = -9
+                return self.returncode
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            log_path = root / "worker.log"
+            job = {
+                "cid": "survivor",
+                "row": {"claim_id": "survivor"},
+                "pass": 1,
+                "proc": FakeProc(),
+                "raw_output": root / "worker.out",
+                "log_path": log_path,
+                "log_handle": log_path.open("w", encoding="utf-8"),
+                "started": 0.0,
+                "last_size": 0,
+                "last_activity": (0, 0.0),
+                "last_progress": 0.0,
+                "stalled": False,
+                "deadline_exceeded": False,
+            }
+            with mock.patch.object(
+                batch.time, "monotonic", return_value=120.0
+            ), mock.patch.object(
+                batch,
+                "SEAT_GROUP_VERIFICATION_ATTEMPTS",
+                1,
+            ), mock.patch.object(
+                batch,
+                "SEAT_GROUP_VERIFICATION_INTERVAL_SECONDS",
+                0,
+            ), mock.patch.object(batch.os, "killpg") as killpg:
+                with self.assertRaisesRegex(
+                    RuntimeError,
+                    "process-group cleanup could not be verified",
+                ):
+                    batch.wait_workers(
+                        [job],
+                        stall_minutes=45,
+                        wall_timeout_seconds=60,
+                    )
+
+        self.assertTrue(job["deadline_exceeded"])
+        self.assertTrue(job["log_handle"].closed)
+        self.assertEqual(
+            killpg.call_args_list,
+            [
+                mock.call(4343, signal.SIGKILL),
+                mock.call(4343, 0),
+            ],
+        )
+
     def test_wait_workers_streams_complete_claim_before_slower_claim(self):
         class FakeProc:
             def __init__(self, polls):
@@ -2229,7 +2351,6 @@ class ClaimTransactionTest(unittest.TestCase):
                     "last_size": 0,
                     "last_activity": (0, 0.0),
                     "last_progress": 0.0,
-                    "last_progress_wall": 0.0,
                     "stalled": False,
                 }
 
@@ -2245,7 +2366,13 @@ class ClaimTransactionTest(unittest.TestCase):
                 return True
 
             with mock.patch.object(
-                batch.time, "time", side_effect=[0.0, 3600.0]
+                batch.time, "monotonic", side_effect=[0.0, 120.0]
+            ), mock.patch.object(
+                batch.time,
+                "time",
+                side_effect=AssertionError(
+                    "worker inactivity must not read the wall clock"
+                ),
             ), mock.patch.object(
                 batch.time,
                 "sleep",
@@ -5017,6 +5144,17 @@ class CampaignContractTest(unittest.TestCase):
         self.assertIn("worker-alpha", command)
         self.assertNotIn("worker-alpha", audit_loop.panel_command(args))
         self.assertNotIn("--dispatch-science-fixes", command)
+        for child_command in (command, audit_loop.panel_command(args)):
+            self.assertIn("--seat-timeout-sec", child_command)
+            timeout_index = child_command.index("--seat-timeout-sec")
+            self.assertEqual(
+                child_command[timeout_index + 1],
+                str(args.codex_timeout_sec),
+            )
+        panel = audit_loop.panel_command(args)
+        self.assertIn("--max-workers", panel)
+        worker_index = panel.index("--max-workers")
+        self.assertEqual(panel[worker_index + 1], str(args.max_workers))
 
         args.dispatch_science_fixes = True
         self.assertIn(

@@ -1941,7 +1941,7 @@
         },
         {
           "claim_id": "poisson_response_kernel_and_sign_normalization_finite_grid_bounded_note_2026-07-26",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "poisson_self_gravity_born_audit_note",

@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle748_convergence_independent_check_2026_07_28.py
+runner_sha256: ba54bc979abc56aadaf2e1bf6c9b63026d18f4007e3fe1e13e4ac6c2c7a271cf
+input_fingerprint_sha256: d60af7826f09bb3cc4443d96dc7300f961a6bb93d8db2ceb38e26b4b45a1fcb8
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+PASS extraction :: M=(8, 32, 128, 512) tol=(0.06, 0.02, 0.002, 0.001) table=('ADDD', 'AADD', 'AAAD', 'AAAA') boundary={'comparison_only': True, 'weight_claim_made': False, 'track_a_dependency_recorded': True} audit_literal=True
+PASS family_recount :: lengths=(512, 512) nested={'convergence': True, 'miscalibrated-control': True} typed={'convergence': True, 'miscalibrated-control': True}
+PASS table_recount :: table=('ADDD', 'AADD', 'AAAD', 'AAAA') counts=((8, (3, 2, 3)), (32, (11, 7, 14)), (128, (46, 27, 55)), (512, (184, 109, 219))) disagreements=((8, (0, 2, 3, 3)), (32, (0, 0, 3, 3)), (128, (0, 0, 0, 2)), (512, (0, 0, 0, 0))) non_increasing=True
+PASS control_recount :: divergent_pairs=16/16 disagreements=((3, 3, 3, 3), (3, 3, 3, 3), (3, 3, 3, 3), (3, 3, 3, 3)) residual=('0x1.47aaf15ca93a6p-1', '-0x1.b20e697317e2bp-3', '-0x1.b64eadffc6837p-2')
+PASS firewall_recount :: data_to_candidate=() candidate_to_data=() selection=() trace_calls=() verdicts=('agreement', 'disagreement') writes=0 reverse=False
+PASS discipline :: blocklist=('scripts/frontier_cycle748_calibration_convergence_comparison_2026_07_28.py',) imported_primary=False boundary_verbatim=True audit_header_literal=True
+SUMMARY PASS 6 FAIL 0 RESULT PASS runtime_sec=0.018223
+
+----- stderr -----
+

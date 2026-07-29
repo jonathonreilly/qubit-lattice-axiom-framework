@@ -1,0 +1,59 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle748_calibration_convergence_comparison_2026_07_28.txt": "d6896989bf098773cbc87a9442f71bb1729329f00b59bbc4260b5d736c2ce950",
+      "frontier_cycle748_convergence_independent_check_2026_07_28.txt": "3898aaf5f7e7d3a02d23c2bcdc931da7dfacc6be325e338134d230b24a27c19d"
+    },
+    "note": {
+      "path": "docs/CALIBRATION_CONVERGENCE_COMPARISON_CYCLE748_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "11d8d106590e0b674aed9fe394ac4075d911582336b708fa5f4d097eb9d0db45"
+    },
+    "runners": {
+      "frontier_cycle748_calibration_convergence_comparison_2026_07_28.py": "5c1b3b97d190d1e3d7bc9f1e06d401866b7faf10aa97de100656af40297607a2",
+      "frontier_cycle748_convergence_independent_check_2026_07_28.py": "ba54bc979abc56aadaf2e1bf6c9b63026d18f4007e3fe1e13e4ac6c2c7a271cf"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "born_law_selected": false,
+    "comparison_only": true,
+    "fixed_supplies": "the declared nested run families (8/32/128/512 typed rows) and the tolerance ladder (0.06/0.02/0.002/0.001); everything the Cycle-317/744 packages declare",
+    "not_derived": "any weight or Born content; the trace-law selection; occurrence-derived run families (the Track A dependency, recorded)",
+    "positive_scope": "exact Fraction simplexes per family through the 744 port; the frozen comparison table ADDD/AADD/AAAD/AAAA against the supplied w(E) with per-tolerance disagreement counts observed non-increasing (reported as data); the miscalibrated control diverging at all 16 size-tolerance pairs; firewall audits both directions",
+    "track_a_dependency_recorded": true,
+    "weight_claim_made": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 8
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 748,
+  "date": "2026-07-29",
+  "result": {
+    "aggregate_table": [
+      "ADDD",
+      "AADD",
+      "AAAD",
+      "AAAA"
+    ],
+    "control": "diverges at all 16 pairs",
+    "monotonicity": "disagreement counts observed non-increasing (data, not law)",
+    "size_ladder": [
+      8,
+      32,
+      128,
+      512
+    ],
+    "tolerance_ladder": [
+      0.06,
+      0.02,
+      0.002,
+      0.001
+    ]
+  },
+  "status": "CYCLE748_CALIBRATION_CONVERGENCE_COMPARISON_PASS"
+}

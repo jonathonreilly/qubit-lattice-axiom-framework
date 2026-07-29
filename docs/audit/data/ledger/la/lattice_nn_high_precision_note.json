@@ -1,45 +1,108 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-29T22:01:07.226895+00:00",
+  "audit_invocation_history": [
+    "487d6736dafe45eeb9e8141a077efa9e"
+  ],
+  "audit_invocation_id": "487d6736dafe45eeb9e8141a077efa9e",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 8
+      },
+      "decoration_candidate": false,
+      "dominant_class": "D",
+      "exists": true,
+      "runner_path": "scripts/lattice_nn_high_precision_raw_certificate.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/lattice_nn_continuum.py": "8bb1945e3644e7d45b1f110ffc7e7cd233035d8b7dddababb2c36d134c1586c7",
+      "scripts/lattice_nn_deterministic_rescale.py": "b958225c40bc8b6c917c0c1f530d87b17a6ad10b0ad257ecfd218e6f4361adda"
+    },
+    "load_bearing_score": 6.407,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/lattice_nn_continuum.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "8bb1945e3644e7d45b1f110ffc7e7cd233035d8b7dddababb2c36d134c1586c7",
+        "cache_status": "ok"
+      },
+      "scripts/lattice_nn_deterministic_rescale.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "b958225c40bc8b6c917c0c1f530d87b17a6ad10b0ad257ecfd218e6f4361adda",
+        "cache_status": "ok"
+      },
+      "scripts/lattice_nn_high_precision_raw_certificate.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "a9eb527d777ff377cefa221b060091ccfd507d3f019d9b333199a8268858d2f9",
+        "cache_runner_sha256": "744d01c9398a7de3848856c270f900a6ddea8b2298e4abe708bd4b6d257a3c98",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "744d01c9398a7de3848856c270f900a6ddea8b2298e4abe708bd4b6d257a3c98",
+    "runner_path": "scripts/lattice_nn_high_precision_raw_certificate.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 14
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260729-e7b3c87a",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The current runner computes the bounded certificate and passes its four decisive guard groups, but its stdout does not reproduce the note\u2019s displayed deterministic-rescale gravity, purity, and Born values or their differences. The exact displayed-row obligation therefore remains stale relative to the supplied runner evidence.",
   "claim_id": "lattice_nn_high_precision_note",
-  "claim_scope": null,
+  "claim_scope": "Whether the cache-recorded mixed-precision run at h = 0.125 returns the displayed six-quantity raw/comparator row, passes the dps = 30 versus dps = 40 stability guard, and satisfies the 10^-12 comparison and 10^-10 Born thresholds.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-29T22:01:07.226895+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 5,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/lattice_nn_continuum.py",
     "scripts/lattice_nn_deterministic_rescale.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 6.407,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "At h = 0.125, the executed raw implementation returns the displayed row, passes the dps = 30 versus dps = 40 stability guard, and agrees with the live deterministic-rescale implementation on all six quantities within 10^-12 while both Born residuals remain below 10^-10.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "7514af77fc1f2a00daf7ffb90c9423d674101edcef84dc3a8e879b6cc65f3c2f",
   "note_path": "docs/LATTICE_NN_HIGH_PRECISION_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Refresh the displayed h = 0.125 deterministic-rescale values and absolute differences from the SHA-pinned current runner output, then independently recheck the corrected table arithmetic.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-context",
   "previous_audits": [
@@ -383,12 +446,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 4,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 4
   },
   "runner_path": "scripts/lattice_nn_high_precision_raw_certificate.py",
   "title": "Lattice NN High-Precision Note",
   "transitive_descendants": 14,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the note displays deterministic-rescale gravity 3.44658632356811545083275e-02, purity 5.00005664009480432774524e-01, and Born residual 5.63436630226487148826411e-16, while the supplied current stdout returns 3.44658632356797806073345e-02, 5.00005664009479988685314e-01, and 7.86271044860376711861556e-16. Why this blocks: the scoped claim expressly includes reproduction of the displayed row, so passing the looser thresholds does not cure source-runner drift in the asserted numerical certificate. Repair target: regenerate the table and absolute differences from the content-pinned current runner and independently verify them. Claim boundary until fixed: the supplied stdout supports completion, precision stability, and threshold-level all-observable agreement in its recorded environment, but not the exact displayed comparator row as written."
 }

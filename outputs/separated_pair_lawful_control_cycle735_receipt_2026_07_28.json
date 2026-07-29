@@ -1,0 +1,66 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle735_separated_pair_independent_check_2026_07_28.txt": "cd053705849bce7bfd1a511bacab79ae33e01069b60eb6663296a566908ed2ca",
+      "frontier_cycle735_separated_pair_lawful_control_2026_07_28.txt": "6a86b66fbe163b5e91fd41e4b8c8be21fc65f39060397e5948d2ff5e2ed2349c"
+    },
+    "note": {
+      "path": "docs/SEPARATED_PAIR_LAWFUL_CONTROL_CYCLE735_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "ed817a7c63abf915b57f815334361b8e652b4dfc62c85c7d01a48dd05d392d5e"
+    },
+    "runners": {
+      "frontier_cycle735_separated_pair_independent_check_2026_07_28.py": "50fe1fd02370723c8420cb3c5793392b753305ffafa4f77eb40603d657889079",
+      "frontier_cycle735_separated_pair_lawful_control_2026_07_28.py": "2bfc05e703ab75663360361296fe3f816884faf5397ac04a3e55e277244e5ce7"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "adjacency_wall_respected_not_solved": true,
+    "axiom_pressure": false,
+    "fixed_supplies": "external application-position and separation parameters (neither a distinguished site); finite oriented ring-11 geometry; held two-bank program content and order; held direction data genesis with blank B/work and clean auxiliaries; h=0 lawful charge-reference rows and expected_count=2; Q-before-R controller layer order",
+    "lawful_distance_domain": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "not_derived": "three or more sources; rings beyond 11 as uniform families; W4 post-capacity renewal; adjacent-pair control (the Cycle-734 wall stands as the domain boundary); no time/Record/Born/source content",
+    "positive_scope": "distance-parameterized position-free templates (pure-X words, 4-7 gates) with bit-exact outputs at all 44 (position, d) cases and exact translation covariance (484 identities); count-2 acceptance across the domain; exhaustively invariant-checked lawful orbits (44 orbits, 484 steps, 5,324 station checks, zero violations, exact closure, constant pairwise distance) with K's own certificates rerun as passing baselines; the d=1 control reproducing the frozen Cycle-734 wall (22 step-0 violations) as the exact domain boundary",
+    "separated_pair_lawful_control": true,
+    "two_source_composition_ring11": true,
+    "w4_renewal_component_untouched": true
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 735,
+  "date": "2026-07-28",
+  "result": {
+    "adjacency_boundary_control": {
+      "d": 1,
+      "matches_frozen_cycle734_wall": true,
+      "step0_violations": 22
+    },
+    "composition_reference": "global_allocator_word(2) applied exactly twice",
+    "frozen_obstruction": null,
+    "orbit_census": {
+      "occupied_checks": 968,
+      "orbits": 44,
+      "station_checks": 5324,
+      "steps": 484,
+      "violations": 0
+    },
+    "template_word_sizes_by_distance": {
+      "2": 4,
+      "3": 5,
+      "4": 6,
+      "5": 7
+    },
+    "translation_covariance_identities": "484/484"
+  },
+  "status": "CYCLE735_SEPARATED_PAIR_LAWFUL_CONTROL_PASS"
+}

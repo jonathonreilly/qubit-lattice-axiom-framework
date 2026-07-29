@@ -17,8 +17,9 @@ This note checks one selected model surface:
   a cubic lattice;
 - a separately supplied spacing `a`;
 - a relativistic-dispersion interpretation of that symbol; and
-- for the numerical scale illustration only, the approved scale-reference
-  units primitive `a^{-1} = M_Pl`.
+- for the numerical scale illustration only, the approved
+  [scale-reference units primitive](SCALE_REFERENCE_PRIMITIVE_NOTE.md)
+  `a^{-1} = M_Pl`.
 
 The four axioms do not select that action or kinetic symbol and do not
 establish the charge conjugation, parity, time-reversal, carrier, or SME-sector
@@ -169,6 +170,112 @@ symbol: its `p_i^4` Taylor term, normalized `l=4` cubic-harmonic decomposition,
 and factor-of-three `[100]`/`[111]` angular ratio. It does not uniquely identify
 an underlying microscopic theory, distinguish this framework from all other
 models, or support a CPT or experimental-consistency verdict.
+
+## No-Go Discipline gate for the named boundary
+
+The boundary above is a statement about what this packet contains, not a
+theorem that physical Lorentz restoration, CPT, SME matching, or experimental
+comparison is impossible. The current `origin/main` No-Go Discipline gate was
+applied because this is a bounded theorem with named open conditions.
+
+### N1 — normalized alternative routes
+
+The route families below differ in primary object, load-bearing mechanism, and
+terminal obligation; they are not multiple descriptions of one approach.
+
+| family | attempted route and terminal obligation | current-cycle result |
+|---|---|---|
+| microscopic action selection | Derive the nearest-neighbor symbol from the four-axiom source and prove it is the physically selected kinetic action. | `ATTEMPTED`: the exhaustive premise source `docs/MINIMAL_AXIOMS_2026-06-29.md` explicitly supplies no source/action bridge, so the route is absent from this packet rather than ruled out. |
+| continuum/RG restoration | Embed the cubic regulator in an interacting flow and prove that all boost-breaking operators are irrelevant or attracted to a Lorentz-invariant surface. | `ATTEMPTED`: `docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md` grants only `c_t=c_s` and explicitly does not grant dynamics, radiative stability, or a Lorentz-closure theorem. |
+| carrier and OS reconstruction | Construct the physical Lorentzian carrier from a reflection-positive Euclidean theory and prove how the finite-lattice symbol enters its dispersion relation. | `ATTEMPTED`: neither the supplied symbol nor the units primitive contains that reconstruction; the terminal carrier theorem remains outside the declared inputs. |
+| SME response map | Match the computed cubic operator into a specified field/action sector and derive the corresponding SME coefficient tensor. | `ATTEMPTED`: the runner deliberately has no matter/gauge action or sector map, so its scalar momentum identity cannot authenticate that matching. |
+| operational comparison | Identify a record-readable probe, transport the sector response to it, and compare a predicted observable with data. | `ATTEMPTED`: the minimal premise source supplies no physical observable or measurement-response bridge, and the runner contains no experimental comparator. |
+| alternate kinetic stencil | Replace the nearest-neighbor Laplacian by an improved stencil that cancels the `O(a^2 p^4)` term and re-run the anisotropy calculation. | `ATTEMPTED`: this route succeeds as a counterexample to universality, because changing the supplied symbol can change the leading correction; it therefore enforces the present fixed-action scope. |
+
+The six families support only the narrow disposition: the four executed
+algebraic consequences close for the supplied symbol, while broader physical
+interpretations remain possible future routes.
+
+### N2 — wall independence and collapse
+
+The raw wording names action selection, carrier/continuum interpretation, and
+SME/experimental response. They are stages of one ordered physical
+identification chain, not three independent obstructions:
+
+| pair | first closes second? | second closes first? | disposition |
+|---|:---:|:---:|---|
+| action selection / carrier reconstruction | no | yes, a complete physical carrier theorem identifies the action it carries | collapse |
+| carrier reconstruction / SME-response map | no | yes, a complete response map includes its carrier/domain identification | collapse |
+| action selection / operational comparison | no | yes, a complete prediction-to-record comparison includes the selected model and response chain | collapse |
+
+The collapsed set is the single chain `W_phys`: select a complete action and
+carrier, reconstruct its physical domain, and derive a sector-to-record
+response. The approved scale-reference primitive is not part of `W_phys`; it
+chain-satisfies the units conversion and supplies no dimensionless dynamics.
+
+### N3 — hidden-condition scan
+
+The phrases `registered`, `standard`, and `canonical` occur on this surface.
+`registered scale-reference primitive` refers to the approved entry in
+`docs/audit/data/axiom_premise_nodes.json` and is units-only. `standard
+normalized` and `canonical expansion` declare conventions that the runner
+checks symbolically; they are not physics inputs. No hit for `we assume`, `by
+construction`, `as is standard`, `the framework provides`, `bridge context`,
+`background`, `naturally`, `obviously`, or `standard QFT` hides another
+load-bearing condition. The supplied symbol, spacing, and interpretation are
+already explicit at the top of the note.
+
+### N4 — residual matching
+
+No prior no-go, failed campaign, or wall is used as a witness for the fixed-
+action algebraic theorem. The minimal-axiom and primitive sources above are
+premise-boundary checks, not evidence that `W_phys` is impossible. Required
+witness count is therefore zero, and no nonmatching residual is imported.
+
+### N5 — rhetoric resolutions
+
+The runner tests a per-momentum symbol, the complete 48-element cubic group,
+the normalized angular block, and the full three-component finite symbol. It
+does not test a site-local matter action, a physical mode, an interacting
+field block, or a lattice-wide Lorentzian observable. Accordingly the note
+says only that those physical results are *not established by this packet*;
+it does not infer that they fail at any untested resolution.
+
+### N6 — partial-closure paths
+
+Three legitimate import-retirement paths remain open without silently adding
+a new axiom: (1) supply an explicit complete action, prove the bounded symbol
+theorem, then independently retire the action import; (2) prove an OS/carrier
+reconstruction for that action; and (3) prove a sector and record-response map.
+The approved kinetic-isotropy primitive can close only the structural
+`c_t=c_s` input, while the approved scale primitive closes only units. Neither
+is mislabeled as a wall or allowed to supply the remaining dynamics.
+
+### N7 — steelman
+
+A hostile reviewer can replace the nearest-neighbor operator by an
+`O(a^2)`-improved stencil whose Taylor coefficient cancels, then embed that
+action in a reflection-positive interacting theory with an RG-attractive
+Lorentz surface and an explicit SME response map. The actionable obligations
+are to prove selection of that complete action/carrier and to compute whether
+any cubic operator survives in the physical response. The kinetic-isotropy
+primitive explicitly leaves such downstream Lorentz theorems open. This route
+would defeat any universal claim of physical Lorentz violation, but it does
+not falsify the present algebra for the one supplied nearest-neighbor symbol.
+
+### N8 — cross-cycle echo
+
+Repository searches find the closest structural echoes in the staggered-
+kinetic and matter-action campaigns. One formerly open graining-ratio issue
+was retired by explicit approval of the kinetic-isotropy primitive, but that
+mechanism deliberately stopped short of dynamics and Lorentz closure. The
+same governance mechanism could approve another structural convention, while
+a retained action-selection or reconstruction theorem could retire `W_phys`.
+Both possibilities are preserved here; no cross-cycle wall is promoted to a
+universal no-go.
+
+**Gate disposition:** `PASS` for a fixed-action bounded theorem with the
+single named open chain `W_phys`; no physical impossibility claim ships.
 
 ## Relation to frontier_lorentz_violation.py
 

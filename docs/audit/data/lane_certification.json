@@ -1021,7 +1021,7 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
@@ -2257,7 +2257,7 @@
         },
         {
           "claim_id": "staggered_wilson_det_positivity_bridge_theorem_note_2026-05-05",
-          "effective_status": "audited_conditional"
+          "effective_status": "unaudited"
         },
         {
           "claim_id": "standard_model_hypercharge_uniqueness_theorem_note_2026-04-24",

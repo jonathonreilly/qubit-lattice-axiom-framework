@@ -1,77 +1,24 @@
 {
-  "audit_date": "2026-07-29T20:24:51.752664+00:00",
-  "audit_invocation_history": [
-    "982ecd7e700d4123bee04303bcccc0a5"
-  ],
-  "audit_invocation_id": "982ecd7e700d4123bee04303bcccc0a5",
-  "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 3,
-        "C": 17,
-        "D": 1
-      },
-      "decoration_candidate": false,
-      "dominant_class": "C",
-      "exists": true,
-      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py"
-    },
-    "criticality": "critical",
-    "dep_axiom_premise_note_hash": {},
-    "dep_claim_scope": {
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "Float64 finite-box evaluation at x=2 and 0<=p,q<=4 of the stipulated SU(3) Haar character integrals and normalized rho values, including the disclosed cross-route and refinement checks, without a physical Wilson-environment or plaquette identification."
-    },
-    "dep_claim_type": {
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "bounded_theorem"
-    },
-    "dep_effective_status": {
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09": "retained_bounded"
-    },
-    "deps": [
-      "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
-    ],
-    "helper_runner_hashes": {},
-    "load_bearing_score": 23.773,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": "6b0d74822cbf0dc27cb8c8009303d5e44c3c2d1a638324eff4e66eb4efd1c5e7",
-        "cache_runner_sha256": "9ee93f7e5fe74cf582faeb0b28ae5f3131d87b78825289a6189eaa744f854eff",
-        "cache_status": "ok"
-      }
-    },
-    "runner_hash": "9ee93f7e5fe74cf582faeb0b28ae5f3131d87b78825289a6189eaa744f854eff",
-    "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
-    "transitive_descendants": 874
-  },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260729-87b73335",
-  "auditor_confidence": "high",
-  "auditor_family": "codex-gpt-5.6",
-  "auditor_model": "gpt-5.6-sol",
-  "auditor_reasoning_effort": "xhigh",
+  "audit_date": null,
+  "audit_invocation_history": [],
+  "audit_invocation_id": null,
+  "audit_state_snapshot": null,
+  "audit_status": "unaudited",
+  "auditor": null,
+  "auditor_confidence": null,
+  "auditor_family": null,
+  "auditor_model": null,
+  "auditor_reasoning_effort": null,
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The executable x=2 algebra supports P1\u2013P3, but the runner docstring displays the construction using c_(p,q)(6), creating an unreconciled parameter-convention conflict with the note and authority. The claimed full-table companion-value match is also not directly asserted by the runner.",
+  "chain_closes": null,
+  "chain_closure_explanation": null,
   "claim_id": "gauge_vacuum_plaquette_finite_tensor_word_packet_bounded_note_2026-05-10",
-  "claim_scope": "For the 25-state NMAX=4 box with beta=6, x=2, and Bessel modes -80 through 80, the explicitly constructed tensor_word satisfies P1\u2013P3 at float64 precision.",
+  "claim_scope": null,
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-29T20:24:51.752664+00:00",
-  "claim_type_provenance": "audited",
+  "claim_type_last_reviewed": null,
+  "claim_type_provenance": "author_hint_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -79,20 +26,19 @@
     "gauge_vacuum_plaquette_rho_pq6_wilson_environment_bounded_note_2026-05-09"
   ],
   "direct_in_degree": 28,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "unaudited",
+  "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": null,
+  "intrinsic_status": "unaudited",
   "load_bearing_score": 23.773,
-  "load_bearing_step": "Construct tensor_word = diag_c \u00b7 (N_f + N_fbar) \u00b7 diag_c \u00b7 (N_f + N_fbar)^T \u00b7 diag_c and directly check P1\u2013P3.",
-  "load_bearing_step_class": "A",
+  "load_bearing_step": null,
+  "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
   "note_hash": "9097a5652b0ec1ba06627fb0cddedafdacca63f8cb5c81b61736acff1d6af95e",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_FINITE_TENSOR_WORD_PACKET_BOUNDED_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: Replace c_(p,q)(6) by c_(p,q)(2) in the runner's displayed construction, add an executable all-entry companion-table agreement check or narrow that statement, regenerate stdout, and re-audit.",
+  "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -270,14 +216,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 69,
-    "B": 5,
+    "A": 0,
+    "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 74
+    "total_pass": 0
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_finite_tensor_word_packet.py",
   "title": "Gauge-Vacuum Plaquette Finite Tensor-Word Packet \u2014 Bounded Note",
   "transitive_descendants": 874,
-  "verdict_rationale": "The matrix-product computation and independent algebra support nonnegativity, conjugation symmetry, and the boundary-column corollary at x=2. However, the runner's displayed construction uses the formula family c_(p,q)(6)/(d_(p,q)c_(0,0)(6)), while its code and the audited note use c_(p,q)(2)/(d_(p,q)c_(0,0)(2)); this source-runner convention drift prevents clean certification as written. The runner also recomputes the Bessel formula but does not directly assert the note's claimed full 25-value agreement with authenticated companion values."
+  "verdict_rationale": null
 }

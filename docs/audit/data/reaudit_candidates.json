@@ -87,35 +87,6 @@
     {
       "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
-      "cached_runner_stdout_chars": 7355,
-      "candidate_reason": "runner_stdout_transport_unclipped_by_head_tail_v2",
-      "claim_id": "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
-      "claim_scope": "For unit-spaced Z\u00b3 with the e^{ik\u00b7x} pairing, the dual torus represented by [-\u03c0,\u03c0]\u00b3 has normalized Haar measure d\u00b3k/(2\u03c0)\u00b3; the continuum occurrence of the same factor is only a convention-aligned comparison.",
-      "claim_type": "bounded_theorem",
-      "criticality": "medium",
-      "criticality_rank": 1,
-      "current_dep_effective_status": {
-        "minimal_axioms": "meta"
-      },
-      "current_runner_stdout_char_limit": 20000,
-      "deps": [
-        "minimal_axioms"
-      ],
-      "direct_in_degree": 3,
-      "effective_status": "audited_conditional",
-      "generated_order": 3,
-      "improved_dependencies": [],
-      "legacy_runner_stdout_char_limit": 6000,
-      "load_bearing_score": 5.748,
-      "note_hash": "905bdd9d430195ae221b044af92a7dca7fecbc696285b0eb31e3722463b503c4",
-      "note_path": "docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "reraudit_after_claim_ids": [],
-      "runner_path": "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py",
-      "transitive_descendants": 18
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
       "cached_runner_stdout_chars": 7386,
       "candidate_reason": "runner_stdout_transport_unclipped_by_head_tail_v2",
       "claim_id": "dm_neutrino_bosonic_normalization_observable_principle_bridge_narrow_theorem_note_2026-05-16",
@@ -128,7 +99,7 @@
       "deps": [],
       "direct_in_degree": 2,
       "effective_status": "audited_conditional",
-      "generated_order": 4,
+      "generated_order": 3,
       "improved_dependencies": [],
       "legacy_runner_stdout_char_limit": 6000,
       "load_bearing_score": 2.585,
@@ -153,7 +124,7 @@
       "deps": [],
       "direct_in_degree": 1,
       "effective_status": "audited_conditional",
-      "generated_order": 5,
+      "generated_order": 4,
       "improved_dependencies": [],
       "legacy_runner_stdout_char_limit": 6000,
       "load_bearing_score": 2.5,
@@ -178,7 +149,7 @@
       "deps": [],
       "direct_in_degree": 0,
       "effective_status": "audited_conditional",
-      "generated_order": 6,
+      "generated_order": 5,
       "improved_dependencies": [],
       "legacy_runner_stdout_char_limit": 6000,
       "load_bearing_score": 0.0,
@@ -203,7 +174,7 @@
       "deps": [],
       "direct_in_degree": 0,
       "effective_status": "audited_conditional",
-      "generated_order": 7,
+      "generated_order": 6,
       "improved_dependencies": [],
       "legacy_runner_stdout_char_limit": 6000,
       "load_bearing_score": 0.0,
@@ -228,7 +199,7 @@
       "deps": [],
       "direct_in_degree": 0,
       "effective_status": "audited_conditional",
-      "generated_order": 8,
+      "generated_order": 7,
       "improved_dependencies": [],
       "legacy_runner_stdout_char_limit": 6000,
       "load_bearing_score": 0.0,
@@ -241,5 +212,5 @@
   ],
   "total_candidates": 0,
   "total_runner_drift_candidates": 0,
-  "total_runner_stdout_transport_candidates": 8
+  "total_runner_stdout_transport_candidates": 7
 }

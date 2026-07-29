@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-25T19:52:52.036113+00:00",
+  "audit_date": "2026-07-29T15:30:56.235157+00:00",
   "audit_invocation_history": [
-    "a6adc3177c934bb09656b8bcc1efdae2"
+    "a6adc3177c934bb09656b8bcc1efdae2",
+    "56650f75eaf94fb68d368bf611dbae16"
   ],
-  "audit_invocation_id": "a6adc3177c934bb09656b8bcc1efdae2",
+  "audit_invocation_id": "56650f75eaf94fb68d368bf611dbae16",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 1,
@@ -30,7 +31,7 @@
       "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -49,20 +50,20 @@
     "transitive_descendants": 0
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-89f64432",
+  "auditor": "codex-audit-batch-A-20260729-72dfc523",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The source and included code support the finite branch-correction identity, but the runner stdout is explicitly clipped and omits the S0 live evidence for the deterministic-state, frozen-reference, and held-out Laurent-reconstruction gates. Complete packet-level closure therefore cannot be authenticated.",
+  "chain_closure_explanation": "The branch-correction identity closes for the runner-defined arrays, but the packet provides no axiom-derived or retained authority for the Hamiltonian, seeded K3-K6 state records, or determinant-polar readout.",
   "claim_id": "depth_branch_corrected_closed_form_bounded_theorem_note_2026-06-13",
   "claim_scope": "Finite L=3 K3-K6 supplied state records with tau=0.35 and the site-01 determinant-polar readout; no physical state-selection or all-L claim.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T19:52:52.036113+00:00",
+  "claim_type_last_reviewed": "2026-07-29T15:30:56.235157+00:00",
   "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
@@ -72,17 +73,17 @@
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "With J(theta)=round((u(theta)-Arg(exp(i u(theta))))/(2*pi)), the branch-corrected form is g(theta)=u(theta)-2*pi J(theta)-mean_theta[u(theta)-2*pi J(theta)].",
+  "load_bearing_step": "g(theta) = u(theta) - 2*pi J(theta) - mean_theta[u(theta) - 2*pi J(theta)], with J(theta) reducing the unwrapped root sum to the principal branch.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "negative_assertion_classes": [],
   "note_hash": "708f9c9d5e7ec26a8ee543e6b7d3b8a736566d8b0d968da2351b9a2fd8474a83",
   "note_path": "docs/DEPTH_BRANCH_CORRECTED_CLOSED_FORM_BOUNDED_THEOREM_NOTE_2026-06-13.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: provide complete unabridged stdout or a SHA-pinned complete runner certificate for scripts/frontier_depth_branch_corrected_closed_form_2026_06_13.py, including S0 through Summary, then re-audit.",
+  "notes_for_re_audit_if_any": "missing_dependency_edge: add a retained authority for the supplied Hamiltonian, state-record, and readout inputs, or add a dated downstream-hygiene line to this note's own boundary limiting downstream use to the runner-defined mathematical fixture.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1293,14 +1294,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 33,
+    "A": 49,
     "B": 0,
-    "C": 16,
+    "C": 0,
     "D": 0,
     "total_pass": 49
   },
   "runner_path": "scripts/frontier_depth_branch_corrected_closed_form_2026_06_13.py",
   "title": "Depth Branch-Corrected Laurent Roots for Four L = 3 Depth-Tail States",
   "transitive_descendants": 0,
-  "verdict_rationale": "The load-bearing principal-branch wrapping is a class-A algebraic identity applied to the root-derived phase, and the runner source performs the finite computation rather than merely printing the claimed values. However, the binding packet preflight identifies the supplied runner evidence as clipped and forbids audited_clean; the omitted S0 execution evidence prevents terminal authentication. This is a runner-artifact conditional, not evidence of a scientific mismatch."
+  "verdict_rationale": "The substantive runner recomputes the determinant phases, Laurent roots, winding, branch jumps, harmonic weights, and all four tails; its frozen references act as gates rather than construction inputs. However, the runner defines the lattice Hamiltonian, seeded state modes, tau, and site-01 determinant-polar readout as supplied inputs, with no one-hop authority deriving them from the framework baseline. The finite algebraic identity is therefore supported only under those inputs and does not establish physical state selection or an all-L law."
 }

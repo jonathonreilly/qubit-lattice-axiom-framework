@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-25T04:37:21.398813+00:00",
+  "audit_date": "2026-07-29T15:25:12.131007+00:00",
   "audit_invocation_history": [
-    "d9883f1a31aa4de7b39f70507b0e7f43"
+    "d9883f1a31aa4de7b39f70507b0e7f43",
+    "d266f811b4714e418b966f32bcb84293"
   ],
-  "audit_invocation_id": "d9883f1a31aa4de7b39f70507b0e7f43",
+  "audit_invocation_id": "d266f811b4714e418b966f32bcb84293",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 1,
@@ -30,7 +31,7 @@
       "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -49,20 +50,20 @@
     "transitive_descendants": 4
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-84deb419",
+  "auditor": "codex-audit-batch-A-20260729-0b1e1c36",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The displayed reduction to the quadratic is algebraically correct under the stated hypotheses. The full scoped evidence chain does not close because the authenticated stdout is clipped and the counterfactual runner test samples finite values rather than proving a complete rational parameterization.",
+  "chain_closure_explanation": "The exact algebra with (N) closes, including the two tuples, swap selection, and charge arithmetic. The full scope does not close because the note and runner do not prove the claimed rational one-parameter family for arbitrary rational y_4; the runner samples only three values, and the derived negative boundary lacks N1/N5 stress evidence.",
   "claim_id": "sm_hypercharge_uniqueness_algebraic_solution_enumeration_narrow_theorem_note_2026-05-10",
   "claim_scope": "Conditional exact-rational enumeration of (A1)-(A3) with y_4=0, the y_1>0 swap selection and charge arithmetic, plus the claimed rational one-parameter counterfactual without y_4=0.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T04:37:21.398813+00:00",
+  "claim_type_last_reviewed": "2026-07-29T15:25:12.131007+00:00",
   "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
@@ -72,10 +73,10 @@
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 4.322,
-  "load_bearing_step": "Using y_1+y_2=2/3 and y_1^3+y_2^3=56/27 gives y_1y_2=-8/9, so y_1 and y_2 are the roots of 9t^2-6t-8=0.",
+  "load_bearing_step": "From y_1+y_2=2/3 and y_1^3+y_2^3=56/27, derive y_1y_2=-8/9 and solve 9t^2-6t-8=0 to obtain the roots 4/3 and -2/3.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
@@ -84,7 +85,7 @@
   ],
   "note_hash": "153b20afe7ef86630dfbcf4758c5b8b7c441f2a62ab99e1f44095614f5c4ceae",
   "note_path": "docs/SM_HYPERCHARGE_UNIQUENESS_ALGEBRAIC_SOLUTION_ENUMERATION_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: provide unclipped SHA-bound stdout or an exact symbolic certificate covering exhaustive S_2 enumeration and the full rational counterfactual parameterization.",
+  "notes_for_re_audit_if_any": "scope_too_broad: either remove the counterfactual from this claim or add an exact all-parameter rational derivation and a current-cycle N1-N8 evidence surface, then re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1263,5 +1264,5 @@
   "runner_path": "scripts/audit_companion_sm_hypercharge_uniqueness_algebraic_solution_enumeration_exact.py",
   "title": "SM Hypercharge Uniqueness Algebraic Solution-Enumeration Narrow Theorem",
   "transitive_descendants": 4,
-  "verdict_rationale": "Issue: The displayed main-system algebra is consistent, but the authenticated runner stdout is explicitly clipped, and the counterfactual check samples only three y_4 values while asserting a full one-parameter rational family; that assertion is a derived_no_go_boundary for which N1-N8 are not ratified. Why this blocks: the binding packet preflight forbids audited_clean, and the incomplete artifact supplies no complete executable exhaustion certificate for every scoped assertion. Repair target: supply unclipped SHA-bound runner output or an exact symbolic certificate proving both S_2 exhaustion and a rational parameterization for all allowed y_4 after (N) is removed. Claim boundary until fixed: the shown identities support the two roots, the y_1>0 swap selection, and the stated charge arithmetic, while the full packet-level claim remains conditional."
+  "verdict_rationale": "Issue: The (N)-imposed enumeration and charge arithmetic are exact, but the artifact additionally asserts that dropping (N) yields a rational one-parameter family and destroys uniqueness; its runner verifies only three y_4 samples. Why this blocks: N1 and N5 fail because fewer than five distinct attacks and none of the five required rhetoric resolutions are evidenced; N2 has no multi-wall set, N3's convention and sector language is non-load-bearing, N4 has no cited residual witness, N6 makes no new-axiom claim, N7 leaves an added-selector steelman outside the three-equation system, and N8 supplies no addressed applicable echo. Repair target: supply an explicit arbitrary-rational-parameter proof and N1-N8-compliant execution evidence, or narrow the source scope to the clean (N)-imposed theorem. Claim boundary until fixed: (A1)-(A3) with y_4=0 give exactly the two listed tuples, y_1>0 selects the stated singleton, and the charge arithmetic follows."
 }

@@ -17,14 +17,15 @@ This note checks one selected model surface:
   a cubic lattice;
 - a separately supplied spacing `a`;
 - a relativistic-dispersion interpretation of that symbol; and
-- for the numerical scale illustration only, the external identification
-  `a = l_Planck`.
+- for the numerical scale illustration only, the approved scale-reference
+  units primitive `a^{-1} = M_Pl`.
 
-The four axioms do not select that action or kinetic symbol, do not identify
-the lattice spacing with the Planck length, and do not establish the charge
-conjugation, parity, time-reversal, carrier, or SME-sector assumptions needed
-for a physical CPT or phenomenology claim. The exact-CPT source previously
-used by this lane is not used by this theorem.
+The four axioms do not select that action or kinetic symbol and do not
+establish the charge conjugation, parity, time-reversal, carrier, or SME-sector
+assumptions needed for a physical CPT or phenomenology claim. The exact-CPT
+source previously used by this lane is not used by this theorem. The
+registered scale-reference primitive supplies a ruler only: it does not derive
+`a/l_P = 1` as physics or supply any dimensionless dynamics.
 
 ## Derivation chain
 
@@ -47,7 +48,7 @@ checks both the supplied nearest-neighbor kinetic symbol
     K_a(p) = sum_i (4/a^2) sin^2(p_i a / 2)
 
 and `sum_i n_i^4` on generic unequal components, axis/diagonal directions,
-near-zero components, and momenta near Brillouin-zone faces. Both are
+and momenta near Brillouin-zone faces. Both are
 invariant under all `48` actions. As a negative control, the proper rotation
 `R_z(pi/7)`, which is not a signed permutation and hence is outside `O_h`,
 changes `K_a(p)` for the fixed hostile momentum used by the runner while
@@ -73,27 +74,31 @@ Summing over i = 1,2,3 gives the modified dispersion relation
 The leading correction is a dimension-6 operator (p^4 with a^2 coefficient).
 No odd power appears in this particular Taylor series because the selected
 symbol is even in momentum. That algebraic fact does not establish parity or
-CPT for a complete matter action. Numerically, the `O(p^4)` expansion matches
-the exact selected symbol to < 0.02% for `pa < 0.5`, and the coefficient
-`a^2/12` is confirmed to six significant figures.
+CPT for a complete matter action. The runner asks Sympy for the series of the
+supplied sine symbol and asserts the exact coefficients `1`, `-a^2/12`, and
+`a^4/360`; a separate fixed numerical sample confirms that the `p^6`
+truncation residual is smaller than the `p^4` residual.
 
 ### Step 3 -- conditional Planck-scale illustration
 
-If one separately sets `a = l_Planck` and uses `a = 1/E_Planck` in natural
-units, then:
+Using the approved units reference `a^{-1} = M_Pl` and
+`1 GeV^{-1} = hbar c = 1.973269804 x 10^{-16} m`, one obtains
+`a = 8.1907451111 x 10^{-20} GeV^{-1}` and
+`1/a = 1.2208901467 x 10^19 GeV`. Therefore:
 
     |delta E^2| / E^2 ~ (1/12)(E / E_Planck)^2
 
-At `E = 1 GeV` this gives `5.6 x 10^{-40}`. This is a scale illustration for
-the supplied identification, not a framework prediction. The quadratic
-suppression follows from the selected even finite-difference symbol.
+At `E = 1 GeV` this gives `a^2/12 = 5.5906921229 x 10^{-40} GeV^{-2}`,
+or `5.6 x 10^{-40}` to two significant figures. This is a units illustration,
+not a framework prediction. The quadratic suppression follows from the
+selected even finite-difference symbol.
 
 ### Step 4 -- Angular structure: the cubic harmonic fingerprint
 
 The operator sum_i n_i^4 (for unit vector n) decomposes, in the basis of
 the STANDARD NORMALIZED real spherical harmonics Y_lm (orthonormal over
-the unit sphere, Condon-Shortley convention -- the same convention as
-scipy.special.sph_harm / sympy.Ynm used by the runner), as:
+the unit sphere, Condon-Shortley convention). The runner implements the
+corresponding closed normalized expression and exact sphere projection:
 
     sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4(theta, phi)
 
@@ -105,9 +110,9 @@ Convention note (normalization correction, 2026-05-29). With *normalized*
 Y_lm the coefficient on K_4 is 4*sqrt(pi)/15 ~= 0.4727, NOT 4/5. An earlier
 revision of this note wrote 4/5; that value is only correct for an
 unnormalized angular convention and is inconsistent with the normalized
-K_4 above and with the runner's sph_harm projection. The identity is fixed
-here to the normalized convention so that note and runner agree. The
-isotropic part 3/5, the factor-of-3 anisotropy, and the l = 0/2/6-free
+K_4 above and with the runner's exact normalized projection. The identity is
+fixed here to the normalized convention so that note and runner agree. The
+isotropic part 3/5, the factor-of-3 anisotropy, and the `l = 2,6`-free
 structure are unchanged by this correction; only the numerical weight on
 the l = 4 anisotropy operator is corrected.
 
@@ -121,31 +126,18 @@ projections are l = 0 and l = 4:
   K_4 are orthonormal, with coefficients 1, sqrt(5/14), sqrt(5/14)).
 - <f | K_4> / <K_4 | K_4> = 4*sqrt(pi)/15.
 
-Reconstructing f = 3/5 + (4*sqrt(pi)/15) K_4 and simplifying gives
-trigsimp(f - rhs) = 0 identically (exact symbolic zero). A numeric
-cross-check over 2x10^5 random directions gives max|LHS - RHS| =
-7.8x10^-16 for the corrected coefficient versus 2.8x10^-1 for the old 4/5
--- confirming 4*sqrt(pi)/15 and refuting 4/5 under the normalized
-convention. The runner reproduces both the symbolic and numeric checks.
+Reconstructing `f = 3/5 + (4*sqrt(pi)/15) K_4` and simplifying gives
+`trigsimp(f - rhs) = 0` identically. The runner independently integrates the
+closed normalized expression over the sphere and asserts
 
-Verified numerically:
-- Isotropic average < f_4 > = 3/5 (to 0.002% by angular integration;
-  unchanged by the coefficient correction)
-- Exact identity sum_i n_i^4 = 3/5 + (4*sqrt(pi)/15) K_4 holds pointwise
-  to max|LHS - RHS| = 7.8e-16 over 2x10^5 random directions (old 4/5
-  refuted at 2.8e-1)
-- Only l=4 spherical harmonics contribute (l=2 and l=6 projections < 0.1% of l=4)
-- Coefficient ratio |c_{44}/c_{40}| = sqrt(5/14) to 0.2% (the relative
-  l=4 structure is unaffected by the overall normalization correction)
-- Invariant under all 48 O_h elements
-- Factor-of-3 anisotropy: f_4 = 1 along axis, f_4 = 1/3 along body diagonal
-  (pure geometry; independent of the K_4 coefficient)
+- `<K_4 | K_4> = 12/7`;
+- `<f | K_4> = 16*sqrt(pi)/35`; and
+- `<f | K_4>/<K_4 | K_4> = 4*sqrt(pi)/15`.
 
-The uniqueness of the cubic harmonic at l=4 follows from representation
-theory: the trivial representation A_{1g} of O_h appears exactly once in
-the decomposition of the l=4 representation of SO(3).  The C_4 rotation
-constrains m mod 4 = 0, and the C_3 rotation about [111] fixes the
-relative coefficient to sqrt(5/14).
+It also evaluates the discarded `4/5` coefficient on the `[100]` axis and
+asserts a nonzero residual. The same executed certificate verifies invariance
+under all 48 O_h elements and the exact directional values `f_4([100]) = 1`
+and `f_4([111]) = 1/3`.
 
 ### Step 5 -- what the calculation does not establish
 
@@ -157,25 +149,18 @@ zero. Any such conclusion requires a separately specified complete action,
 symmetry operators, their domains, and an audit-clean proof.
 
 The physical selection bridge remains open: nothing here derives the supplied
-nearest-neighbor kinetic operator, a relativistic carrier interpretation, the
-spacing `a`, the illustrative identification `a = l_Planck`, a framework-
-native choice of this carrier/action, or an SME sector response map. The
+nearest-neighbor kinetic operator, a relativistic carrier interpretation, a
+framework-native choice of this carrier/action, or an SME sector response map.
+The registered scale-reference primitive supplies only the units ruler. The
 finite-group certificate therefore does not by itself establish physical
 Lorentz violation.
 
 ## Experimental status
 
-| Experiment | Quoted bound | Conditional value at `a = l_Planck` | Ratio | Role |
-|---|---|---|---|---|
-| Photon birefringence (GRB) | 10^{-32} GeV^{-2} | 5.6 x 10^{-40} GeV^{-2} | 5.6 x 10^{-8} | illustrative comparison only |
-| Fermi LAT dispersion | 2.5 x 10^{-22} GeV^{-2} | 5.6 x 10^{-40} GeV^{-2} | 2.2 x 10^{-18} | illustrative comparison only |
-| Hughes-Drever (electron) | 10^{-27} | 1.5 x 10^{-46} | 1.5 x 10^{-19} | illustrative comparison only |
-| Atomic clocks (proton) | 10^{-27} | 4.9 x 10^{-40} | 4.9 x 10^{-13} | illustrative comparison only |
-
-These rows are retained only as historical numerical diagnostics. The runner
-does not validate the quoted experimental inputs, the sector-by-sector SME
-matching, or the physical identification of the selected lattice excitation
-with the listed probes.
+No experimental-consistency claim is made. Comparator rows from earlier
+revisions are omitted because this packet supplies neither a sector-by-sector
+SME response map nor a physical identification of the selected lattice
+excitation with an experimental probe.
 
 ## Interpretation boundary
 
@@ -201,12 +186,24 @@ samples, and checks that `R_z(pi/7)` outside `O_h` changes the finite-`a`
 symbol. The group certificate and the existing cubic-harmonic identity are both
 load-bearing exit conditions, so either failure produces a nonzero exit.
 
+Restricted-packet repair (2026-07-29): the registered runner was reduced from
+an oversized historical phenomenology script to a compact, self-contained
+algebraic certificate. Its complete source is below the audit packet's
+40,000-character runner-source limit, and its exact current stdout is captured
+in the SHA-pinned runner cache linked above and is below the 20,000-character
+stdout limit. Four independent exit gates now explicitly assert the repair
+targets: the `-a^2/12` Taylor coefficient, the `4*sqrt(pi)/15` normalized
+projection, the `O_h` outside-group negative control, and the metre/GeV unit
+conversion. The final summary prints every gate and exits nonzero if any
+executed assertion fails.
+
 Audit fix (2026-05-02): a previous version of the runner used
 `(2/a^2) sin^2(pa/2)`, which is the half-normalized kinetic eigenvalue
 and is internally inconsistent with the printed Taylor expansion. The
 runner has been updated to the standard `(4/a^2)` form that matches
-this note's Step 2 and produces sub-microscopic residuals
-(`< 1.1e-6`) in the p^4 expansion check at `pa = 0.1256`.
+this note's Step 2. The compact certificate now extracts the three displayed
+coefficients exactly and separately verifies residual improvement through
+`p^6` at a fixed three-component momentum.
 
 Normalization correction (2026-05-29): a previous version of this note
 and runner wrote the cubic-harmonic decomposition with coefficient `4/5`
@@ -214,13 +211,10 @@ on `K_4 = Y_{40} + sqrt(5/14)(Y_{44} + Y_{4,-4})`. With the standard
 normalized real spherical harmonics `Y_lm` (the
 `scipy.special.sph_harm` / `sympy.Ynm` convention) the correct
 coefficient is `4*sqrt(pi)/15 ~= 0.4727` (see Step 4). The runner now
-carries this corrected identity and an explicit verification block
-(`verify_cubic_harmonic_identity()`): a numeric pointwise check over
-`2x10^5` random directions (`max|LHS - RHS| = 7.8e-16` for
-`4*sqrt(pi)/15`, the old `4/5` refuted at `2.8e-1`) plus, when `sympy`
-is importable, the symbolic `trigsimp(f - rhs) = 0` and the exact
-projection `<f|K_4>/<K_4|K_4> = 4*sqrt(pi)/15`. This is a normalization
-correction only: the dimension-6 classification, the parity-even /
+derives the symbolic `trigsimp(f - rhs) = 0`, the exact norm and overlap,
+and the projection `<f|K_4>/<K_4|K_4> = 4*sqrt(pi)/15` in one mandatory
+Sympy path; it separately refutes `4/5` at the `[100]` axis. This is a
+normalization correction only: the dimension-6 classification, the parity-even /
 no-odd-power conclusion, the `3/5` isotropic average, and the
 factor-of-3 `[100]`/`[111]` anisotropy are unchanged, because they
 follow from the dispersion Taylor structure and pure geometry, not from

@@ -557,6 +557,12 @@ def drain_lane(
             if batch_rc != 0:
                 return batch_rc, made_progress
             raise
+        if panel_rc == batch.CLEANUP_INTEGRITY_EXIT_CODE:
+            emit(
+                "GLOBAL cleanup integrity failure in the mandatory panel "
+                "sweep; preserving the dedicated campaign hard stop"
+            )
+            return panel_rc, made_progress
         if panel_rc != 0:
             if batch_rc not in {0, batch.TRANSIENT_SERVICE_EXIT_CODE}:
                 return batch_rc, made_progress

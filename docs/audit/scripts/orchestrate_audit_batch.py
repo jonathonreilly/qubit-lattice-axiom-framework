@@ -115,6 +115,7 @@ PACKET_COMPLETION_EXIT_GRACE_SECONDS = 10
 COMMAND_TERMINATION_GRACE_SECONDS = 5
 SEAT_GROUP_VERIFICATION_ATTEMPTS = 50
 SEAT_GROUP_VERIFICATION_INTERVAL_SECONDS = 0.1
+SEAT_LEADER_REAP_TIMEOUT_SECONDS = 5.0
 INHERITED_DRAIN_LOCK_FD_ENV = "AUDIT_DRAIN_LOCK_FD"
 LANE_CERTIFICATION_PATH = "docs/audit/data/lane_certification.json"
 TRANSIENT_SERVICE_FAILURE_RESULT = "worker_transient_service_unavailable"
@@ -976,25 +977,29 @@ def start_progress_ticker() -> None:
 def terminate_read_only_seat(job: dict) -> None:
     """Kill one owned seat group and prove that the group has disappeared."""
     proc = job["proc"]
-    try:
-        process_group = int(job["process_group"])
-        if process_group < 1:
-            raise ValueError
-    except (KeyError, TypeError, ValueError) as exc:
+    process_group = job.get("process_group")
+    if type(process_group) is not int or process_group < 1:
         raise CleanupIntegrityError(
             "read-only auditor has no valid recorded process group"
-        ) from exc
+        )
     try:
         os.killpg(process_group, signal.SIGKILL)
     except ProcessLookupError:
         pass
-    except OSError as exc:
+    except (OSError, OverflowError) as exc:
         raise CleanupIntegrityError(
             "read-only auditor process group could not be signaled: "
             f"pgid={process_group}: {exc}"
         ) from exc
     try:
-        job["returncode"] = proc.wait()
+        job["returncode"] = proc.wait(
+            timeout=SEAT_LEADER_REAP_TIMEOUT_SECONDS
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise CleanupIntegrityError(
+            "read-only auditor leader could not be reaped within the "
+            f"cleanup bound: pgid={process_group}"
+        ) from exc
     except Exception as exc:
         raise CleanupIntegrityError(
             "read-only auditor leader could not be reaped: "
@@ -1015,6 +1020,21 @@ def terminate_read_only_seat(job: dict) -> None:
         "read-only auditor process-group cleanup could not be verified: "
         f"pgid={process_group}"
     )
+
+
+def terminate_read_only_seats(jobs: list[dict]) -> None:
+    """Best-effort verified teardown of every still-owned read-only seat."""
+    failures: list[str] = []
+    for job in jobs:
+        try:
+            terminate_read_only_seat(job)
+        except BaseException as exc:
+            failures.append(str(exc))
+    if failures:
+        raise CleanupIntegrityError(
+            "one or more pending read-only seat groups could not be proven "
+            f"absent: {'; '.join(failures)}"
+        )
 
 
 def wait_workers(
@@ -1117,17 +1137,17 @@ def wait_workers(
                     # absolute deadline is independent of log activity and
                     # never interrupts the serialized mutation transaction.
                     job["deadline_exceeded"] = True
+                    pending.remove(index)
                     terminate_read_only_seat(job)
                     if not job["log_handle"].closed:
                         job["log_handle"].close()
-                    pending.remove(index)
                     continue
                 if now - job["last_progress"] >= stall_seconds:
                     job["stalled"] = True
+                    pending.remove(index)
                     terminate_read_only_seat(job)
                     if not job["log_handle"].closed:
                         job["log_handle"].close()
-                    pending.remove(index)
 
             if on_claim_ready is not None:
                 ready_claims = sorted({
@@ -1164,7 +1184,7 @@ def wait_workers(
             commit_failed.set()
         pending_cleanup_error: BaseException | None = None
         try:
-            terminate_workers([jobs[index] for index in pending])
+            terminate_read_only_seats([jobs[index] for index in pending])
         except BaseException as exc:
             pending_cleanup_error = exc
         finally:
@@ -3214,6 +3234,21 @@ def main() -> int:
             drain_lock = None
         return code
 
+    def finish_cleanup_integrity() -> int:
+        """Preserve the global-stop result even if lock release itself fails."""
+        nonlocal drain_lock
+        try:
+            if drain_lock is not None:
+                drain_lock.close()
+        except BaseException as exc:
+            print(
+                "GLOBAL cleanup integrity failure while closing the drain "
+                f"lock; process exit will release it: {exc}"
+            )
+        finally:
+            drain_lock = None
+        return CLEANUP_INTEGRITY_EXIT_CODE
+
     parser = argparse.ArgumentParser(description="Parallel development-tier audit drainer")
     scope_group = parser.add_mutually_exclusive_group(required=True)
     scope_group.add_argument("--lane", help="lane name from lane_certification_config.json")
@@ -3506,15 +3541,22 @@ def main() -> int:
                 "GLOBAL cleanup integrity failure; no later seat may launch: "
                 f"{exc}"
             )
-            if report:
-                (workdir / "report.jsonl").write_text(
-                    "".join(
-                        json.dumps(item, sort_keys=True) + "\n"
-                        for item in report
-                    ),
-                    encoding="utf-8",
+            try:
+                if report:
+                    (workdir / "report.jsonl").write_text(
+                        "".join(
+                            json.dumps(item, sort_keys=True) + "\n"
+                            for item in report
+                        ),
+                        encoding="utf-8",
+                    )
+            except BaseException as report_error:
+                print(
+                    "GLOBAL cleanup integrity report could not be preserved; "
+                    f"retaining the dedicated hard-stop result: {report_error}"
                 )
-            return finish(CLEANUP_INTEGRITY_EXIT_CODE)
+            finally:
+                return finish_cleanup_integrity()
         if streamed is True:
             applied_ok = True
             round_science_handoffs = list(

@@ -303,9 +303,9 @@ least every 15 minutes — never silence for a long run.
   File activity resets the inactivity timer, but both inactivity and absolute
   age are measured with a monotonic clock rather than wall-clock or file-mtime
   subtraction.
-  Both inactivity and absolute-age expiry terminate and reap the complete
-  recorded seat process group and prove it absent. Failure to prove absence is
-  a global integrity stop:
+  Both inactivity and absolute-age expiry terminate the complete recorded seat
+  process group, reap its leader within the bounded cleanup policy, and prove
+  the group absent. Failure to reap or prove absence is a global integrity stop:
   launch no later seat or post-batch panel, let any already-owned serialized
   transaction reach its rollback or push-reconciliation boundary, and then
   abort. Expiry is operational only and supplies no scientific verdict. It

@@ -966,8 +966,21 @@ def run_panel(
                     wall_timeout_seconds=seat_timeout_seconds,
                 )
                 worker_phase = "launch"
-        except batch.CleanupIntegrityError:
-            batch.terminate_workers(jobs)
+        except batch.CleanupIntegrityError as cleanup_error:
+            try:
+                batch.terminate_read_only_seats(
+                    [
+                        job
+                        for job in jobs
+                        if job.get("proc") is not None
+                        and job["proc"].poll() is None
+                    ]
+                )
+            except BaseException as secondary_error:
+                raise batch.CleanupIntegrityError(
+                    f"{cleanup_error}; judicial secondary seat cleanup "
+                    f"also failed: {secondary_error}"
+                ) from secondary_error
             raise
         except Exception as exc:
             batch.terminate_workers(jobs)

@@ -15818,11 +15818,14 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
             "wait_workers",
             side_effect=m.batch.CleanupIntegrityError("group still present"),
         ), mock.patch.object(
-            m.batch, "terminate_workers"
+            m.batch,
+            "terminate_read_only_seats",
+            side_effect=RuntimeError("secondary cleanup failed"),
         ) as terminate:
             with self.assertRaisesRegex(
                 m.batch.CleanupIntegrityError,
-                "group still present",
+                "group still present; judicial secondary seat cleanup "
+                "also failed: secondary cleanup failed",
             ):
                 m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
 

@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2194,
-    "decoration": 43,
+    "bounded_theorem": 2192,
+    "decoration": 45,
     "meta": 364,
     "no_go": 439,
     "open_gate": 207,
@@ -80,8 +80,8 @@
   ],
   "cycles_detected": 58,
   "effective_status_counts": {
-    "audit_in_progress": 4,
-    "audited_conditional": 268,
+    "audit_in_progress": 3,
+    "audited_conditional": 269,
     "audited_failed": 73,
     "audited_numerical_match": 10,
     "audited_renaming": 33,
@@ -94,12 +94,13 @@
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
     "decoration_under_gauge_vacuum_plaquette_reduction_existence_theorem_note": 1,
     "decoration_under_graph_first_su3_integration_note": 8,
+    "decoration_under_hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": 1,
     "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": 1,
     "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 2,
     "decoration_under_koide_dweh_cyclic_compression_note_2026-04-18": 1,
     "decoration_under_kraus_choi_representation_normalization_reconciled_narrow_theorem_note_2026-06-05": 1,
-    "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 1,
+    "decoration_under_lattice_greens_function_maradudin_textbook_import_note_2026-05-18": 2,
     "decoration_under_lh_doublet_traceless_abelian_eigenvalue_ratio_narrow_theorem_note_2026-05-02": 1,
     "decoration_under_linear_response_true_kubo_note": 1,
     "decoration_under_native_gauge_left_handed_abelian_surface_bounded_note_2026-05-23": 1,
@@ -110,7 +111,7 @@
     "retained": 122,
     "retained_bounded": 355,
     "retained_pending_chain": 11,
-    "unaudited": 2646
+    "unaudited": 2644
   },
   "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [

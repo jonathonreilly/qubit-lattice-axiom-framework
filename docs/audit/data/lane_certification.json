@@ -1116,10 +1116,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",
           "effective_status": "unaudited"
         },
@@ -1421,10 +1417,6 @@
         },
         {
           "claim_id": "l3a_v3_trace_surface_bounded_obstruction_note_2026-05-07_l3a",
-          "effective_status": "unaudited"
-        },
-        {
-          "claim_id": "lattice_greens_maradudin_asymptotic_accepted_premise_bridge_bounded_note_2026-05-27",
           "effective_status": "unaudited"
         },
         {
@@ -1865,7 +1857,7 @@
         },
         {
           "claim_id": "pmns_oriented_cycle_channel_value_law_note",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "pmns_oriented_cycle_reduced_channel_nonselection_note",
@@ -2760,7 +2752,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 633
+      "uncertified_count": 631
     }
   ],
   "schema": "lane_certification_v2"

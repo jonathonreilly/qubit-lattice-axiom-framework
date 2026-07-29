@@ -1865,7 +1865,7 @@
         },
         {
           "claim_id": "pmns_oriented_cycle_channel_value_law_note",
-          "effective_status": "audit_in_progress"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "pmns_oriented_cycle_reduced_channel_nonselection_note",

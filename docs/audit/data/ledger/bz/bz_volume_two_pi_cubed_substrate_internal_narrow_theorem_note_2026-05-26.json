@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-25T05:33:47.620015+00:00",
+  "audit_date": "2026-07-29T18:34:44.804720+00:00",
   "audit_invocation_history": [
-    "42188b2bbddd4fc6a5016fb1c949d7e2"
+    "42188b2bbddd4fc6a5016fb1c949d7e2",
+    "322c614246d34af1bf419021ae4d885b"
   ],
-  "audit_invocation_id": "42188b2bbddd4fc6a5016fb1c949d7e2",
+  "audit_invocation_id": "322c614246d34af1bf419021ae4d885b",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 0,
@@ -40,7 +41,7 @@
       "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -59,20 +60,20 @@
     "transitive_descendants": 18
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-bde8d03e",
+  "auditor": "codex-audit-batch-A-20260729-43b88e58",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The algebraic proof closes within the stated unit-spaced Z\u00b3 and e^{ik\u00b7x} coordinate convention, but the restricted evidence chain cannot be certified because the load-bearing runner stdout is clipped.",
+  "chain_closure_explanation": "The abstract dual torus and normalized Haar probability measure close, but the numerical coordinate volume requires the explicit angular coordinate k, equivalently the pairing e^{ik\u00b7n}. The runner initializes \u03c0 and 2\u03c0 and verifies their consequences rather than deriving that coordinate normalization from Z\u00b3.",
   "claim_id": "bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_note_2026-05-26",
-  "claim_scope": "For unit-spaced Z\u00b3 with the e^{ik\u00b7x} pairing, the dual torus represented by [-\u03c0,\u03c0]\u00b3 has normalized Haar measure d\u00b3k/(2\u03c0)\u00b3; the continuum occurrence of the same factor is only a convention-aligned comparison.",
+  "claim_scope": "Whether Z\u00b3 plus Pontryagin duality and Haar uniqueness alone fixes the coordinate factor (2\u03c0)\u00b3 and density d\u00b3k/(2\u03c0)\u00b3, with the continuum convention only downstream.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T05:33:47.620015+00:00",
+  "claim_type_last_reviewed": "2026-07-29T18:34:44.804720+00:00",
   "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
@@ -84,17 +85,17 @@
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 5.748,
-  "load_bearing_step": "Therefore \u03bc_Haar(dk) = d\u00b3k/(2\u03c0)\u00b3 on T\u00b3 written in [-\u03c0,\u03c0]\u00b3 coordinates.",
+  "load_bearing_step": "Representing the dual of Z\u00b3 as (R/2\u03c0Z)\u00b3 on [-\u03c0,\u03c0]\u00b3 gives normalized Haar measure d\u00b3k/(2\u03c0)\u00b3.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "negative_assertion_classes": [],
   "note_hash": "905bdd9d430195ae221b044af92a7dca7fecbc696285b0eb31e3722463b503c4",
   "note_path": "docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: provide complete, unclipped, invocation-bound runner stdout and re-audit all 55 asserted checks.",
+  "notes_for_re_audit_if_any": "scope_too_broad: narrow the theorem and title to state that the factor is fixed by Z\u00b3 together with the explicit e^{ik\u00b7n} angular-coordinate convention, then re-audit the revised note.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -365,8 +366,8 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 55,
-    "B": 0,
+    "A": 44,
+    "B": 11,
     "C": 0,
     "D": 0,
     "total_pass": 55
@@ -374,5 +375,5 @@
   "runner_path": "scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py",
   "title": "Brillouin-Zone Volume `(2\u03c0)\u00b3` on `Z\u00b3` is Substrate-Internal \u2014 Narrow Theorem",
   "transitive_descendants": 18,
-  "verdict_rationale": "Within the explicitly fixed e^{ik\u00b7x} coordinate convention, Pontryagin duality, product volume, and Haar normalization give d\u00b3k/(2\u03c0)\u00b3 correctly; the continuum comparison is not load-bearing. The factor is coordinate-convention dependent, so the audited scope must retain that convention. Because the packet marks the load-bearing runner stdout as clipped, audited_clean is forbidden until complete execution evidence is supplied."
+  "verdict_rationale": "Issue: the source treats the angular coordinate with period 2\u03c0 as fixed by the abstract Z\u00b3 substrate plus Pontryagin/Haar facts. Why this blocks: normalized Haar probability is intrinsic, but its density is d\u00b3k/(2\u03c0)\u00b3 only after choosing that coordinate; using \u03be=k/(2\u03c0) instead gives d\u00b3\u03be on a unit fundamental domain. Repair target: make the e^{ik\u00b7n} angular-coordinate convention an explicit premise and narrow the substrate-internal claim accordingly. Claim boundary until fixed: Z\u00b3 determines the compact dual torus and its normalized Haar probability measure, while the numerical coordinate factor remains convention-conditioned."
 }

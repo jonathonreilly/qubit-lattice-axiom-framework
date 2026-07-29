@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 122 |
+| Retained positive rows | 123 |
 | Retained bounded rows | 355 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 31 |
 
-## Retained positive rows (122)
+## Retained positive rows (123)
 
 Sorted by load-bearing graph score (descending).
 
@@ -35,6 +35,7 @@ Sorted by load-bearing graph score (descending).
 - [`alpha_lm_geometric_mean_identity_theorem_note_2026-04-24`](../../docs/ALPHA_LM_GEOMETRIC_MEAN_IDENTITY_THEOREM_NOTE_2026-04-24.md) — score 24.878; audited 2026-07-15T18:45:38.154373+00:00
 - [`koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05`](../../docs/KOIDE_APS_C3_FIXED_LOCUS_WEIGHTS_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md) — score 24.598; audited 2026-07-12T18:27:34Z
 - [`site_phase_cube_shift_intertwiner_note`](../../docs/SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) — score 24.025; audited 2026-05-02T15:37:57.008099+00:00
+- [`su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10`](../../docs/SU3_CHARACTER_DIAGONAL_CONVOLUTION_EQUIVALENCE_NARROW_THEOREM_NOTE_2026-05-10.md) — score 23.293; audited 2026-07-29T18:19:30.856016+00:00
 - [`staggered_only_det_positivity_case_a_note_2026-05-17`](../../docs/STAGGERED_ONLY_DET_POSITIVITY_CASE_A_NOTE_2026-05-17.md) — score 21.258; audited 2026-05-23T19:08:58.399053+00:00
 - [`gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note`](../../docs/GAUGE_VACUUM_PLAQUETTE_SOURCE_SECTOR_MATRIX_ELEMENT_FACTORIZATION_NOTE.md) — score 20.347; audited 2026-07-22T18:23:13.468991+00:00
 - [`z2_hw1_mass_matrix_parametrization_note`](../../docs/Z2_HW1_MASS_MATRIX_PARAMETRIZATION_NOTE.md) — score 20.032; audited 2026-07-20T22:41:42.856310+00:00

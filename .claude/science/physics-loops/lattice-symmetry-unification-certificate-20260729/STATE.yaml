@@ -20,6 +20,14 @@ files_touched:
   - logs/runner-cache/audit_companion_lattice_symmetry_unification_decision_certificate.txt
 review_loop_disposition: pass
 review_loop_iterations: 2
+no_go_discipline_status: pass_for_finite_enumerated_scope_only
+no_go_routes:
+  - direct finite evolution
+  - independent decision reconstruction
+  - field-strength continuation
+  - analytic spectral or matrix sign bound
+  - interval enclosure
+  - alternate architecture or aperture topology
 next_exact_action: independently_reaudit_the_same_bounded_theorem_scope
 audit_required_before_effective_retained: true
 bare_retained_allowed: false

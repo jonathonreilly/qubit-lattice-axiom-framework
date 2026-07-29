@@ -12,8 +12,9 @@ with all 36 tradeoff rows and all 44 barrier-distance points visible. The
 primary and independently implemented predicates both count `0/36` retained
 rows.
 
-The audit excerpt is 5,416 characters, below the 6,000-character clipping
-threshold. Graph/seed validation registers the compact certificate as the
+The cache file is 5,416 bytes and its complete stdout section is 5,033
+characters, below the 6,000-character clipping threshold. Graph/seed
+validation registers the compact certificate as the
 primary runner and the original decision runner plus lattice helper as helper
 runners. The pipeline requeued the target as ready on the ordinary audit
 queue; all generated audit outputs were removed from the branch afterward.
@@ -35,6 +36,12 @@ points with no positive value, and maximum tradeoff gravity `-4.74464322`.
 Review-loop disposition: `pass` after two iterations; three packaging
 findings fixed, none open.
 
+No-Go Discipline is `pass` for the finite enumerated boundary only. Six
+mechanism-normalized attacks are recorded; the weak-field sibling reopens the
+sign route and analytic, interval, and alternate-topology attacks remain open.
+No architecture-wide negative is shipped.
+
 ## Next action
 
 Submit this same bounded-theorem scope for independent re-audit.
+This campaign does not merge the PR.

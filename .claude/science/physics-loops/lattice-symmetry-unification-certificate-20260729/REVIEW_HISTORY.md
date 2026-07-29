@@ -17,7 +17,12 @@
 - Labeling convention: `NOT APPLICABLE`
 - Repo governance: `PASS`
 - Audit compatibility: `PASS`
-- Methodology skill: `SKIPPED` because no methodology file changed
+- Methodology: repo-native science-fix/review workflow and No-Go Discipline applied
 
 No unresolved review finding remains. The review does not assign an audit
 verdict.
+
+Independent cold review additionally corrected N1: aperture, offset, canonical,
+and barrier-point variants are one exhaustive-evolution mechanism rather than
+four routes. The final checklist has six mechanism-normalized attacks and
+preserves the successful weak-field reopening.

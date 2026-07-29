@@ -76,11 +76,17 @@ ordered-lattice architectures.
 The negative statement is an exhaustive result on the stated finite contract,
 not an exclusion of untested routes.
 
-- **N1, alternative attacks:** the certificate tests five direct falsifiers:
-  a positive canonical row, a positive row from aperture retuning, a positive
-  row from mass-offset retuning, a positive barrier-distance point, and a
-  sign/retention counting disagreement. The first four are exhausted by the
-  printed rows and the fifth is checked by the second predicate.
+- **N1, mechanism-distinct attacks:** (1) direct exhaustive evolution on the
+  finite `4 x 3 x 3` grid is `ATTEMPTED`; (2) an independent literal
+  implementation of the retention predicate and raw-sign count is
+  `ATTEMPTED`; (3) field-strength continuation is `ATTEMPTED` in the weak-field
+  sibling and reopens positive rows outside this slice; (4) an analytic
+  spectral/matrix sign bound is `UNTESTED AND OPEN`; (5) interval-arithmetic
+  enclosure of a continuous geometry/offset neighborhood is `UNTESTED AND
+  OPEN`; and (6) a different ordered-lattice architecture or aperture topology
+  is `UNTESTED AND OPEN`. Aperture choices, offsets, canonical rows, and the 44
+  barrier points are coverage inside route (1), not falsely counted as four
+  independent mechanisms.
 - **N2, wall independence:** absence of a retained row is downstream of the
   failed positive-gravity conjunct. It is not counted as a second independent
   wall. Beam depletion remains a diagnostic interpretation, not another
@@ -98,7 +104,11 @@ not an exclusion of untested routes.
   not described as requiring a new axiom.
 - **N7, steelman:** the later weak-field positive pocket defeats any universal
   interpretation of the beam-depletion diagnosis. That objection is accepted
-  and is why the conclusion stays on the standard-strength slice.
+  and is why the conclusion stays on the standard-strength slice. The cheapest
+  stronger certificate for this finite claim is an independent dynamics
+  implementation or interval enclosure reproducing the strict negative margin;
+  the cheapest broader challenge is a held field-strength continuation that
+  tracks where the sign changes.
 - **N8, cross-cycle echo:** the field-strength sibling is the closest repaired
   sign wall; its mechanism is already accounted for by the scope boundary.
 

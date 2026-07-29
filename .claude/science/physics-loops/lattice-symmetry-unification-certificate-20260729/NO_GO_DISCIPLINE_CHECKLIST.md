@@ -4,22 +4,29 @@ Gate result: `PASS` for the finite enumerated boundary only.
 
 ## N1 — Alternative attack routes
 
-All five falsifiers were `ATTEMPTED` in the certificate:
+Mechanism-normalized routes are:
 
-1. A canonical `max_dy` row has positive gravity — all four raw values are
-   printed and negative.
-2. An aperture retuning has positive gravity — all three geometries appear in
-   each `max_dy` block and all rows are negative.
-3. A nearby mass placement has positive gravity — offsets `-1, 0, +1` are
-   exhausted and all rows are negative.
-4. A canonical barrier-distance point has positive gravity — all 44 signed
-   values are printed and nonpositive.
-5. The final `0/36` result is a predicate/counting error — a literal second
-   retention implementation agrees row-by-row and exact Cartesian key coverage
-   is checked.
+1. **Direct finite evolution — `ATTEMPTED`.** The primary implementation
+   exhausts all 36 geometry/offset rows, four canonical rows, and 44 signed
+   barrier-distance points. Aperture and offset variants are coverage inside
+   this one computational mechanism.
+2. **Independent decision reconstruction — `ATTEMPTED`.** The companion
+   implements the documented conjunction a second time, counts raw signs
+   independently, and checks exact Cartesian-key coverage.
+3. **Field-strength continuation — `ATTEMPTED OUTSIDE THIS SLICE`.** The later
+   weak-field sibling produces a positive pocket. It is the decisive witness
+   that the finite result cannot become an architecture-wide negative.
+4. **Analytic spectral/matrix sign bound — `UNTESTED AND OPEN`.** A direct
+   inequality could certify or overturn the sampled sign without trusting the
+   simulation implementation.
+5. **Interval enclosure — `UNTESTED AND OPEN`.** Rigorous interval arithmetic
+   on a continuous neighborhood of the sampled geometry and mass parameters
+   could expose between-grid positive pockets.
+6. **Different architecture/topology — `UNTESTED AND OPEN`.** Another ordered-
+   lattice or aperture family could evade the finite candidate set.
 
-These exhaust falsifiers inside the stated finite contract; they do not close
-routes outside it.
+Only routes (1) and (2) close inside the exact contract. The open routes and
+the successful weak-field reopening forbid any broader negative.
 
 ## N2 — Wall independence
 
@@ -58,7 +65,10 @@ a new axiom or deny that route.
 The strongest objection is that weakening the field produces positive rows in
 the sibling sweep, so beam depletion cannot justify a universal
 ordered-lattice no-go. That objection is correct and already enforced by the
-claim boundary. It does not falsify any of the 36 standard-strength rows.
+claim boundary. It does not falsify any of the 36 standard-strength rows. The
+cheapest stronger finite artifact is an independent dynamics implementation
+or interval enclosure reproducing the strict margin; the cheapest broader
+challenge is a held field-strength continuation locating the sign crossing.
 
 ## N8 — Cross-cycle echo
 

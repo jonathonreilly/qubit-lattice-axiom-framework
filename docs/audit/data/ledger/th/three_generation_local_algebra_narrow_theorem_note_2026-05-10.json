@@ -1,23 +1,11 @@
 {
-  "audit_date": "2026-07-25T13:14:42.421390+00:00",
+  "audit_date": "2026-07-29T14:42:27.707087+00:00",
   "audit_invocation_history": [
-    "692252d972d849c7b6ff7809c34882a7"
+    "692252d972d849c7b6ff7809c34882a7",
+    "ef4a5f1c9da34bd9bc65d0d4c6a194d3"
   ],
-  "audit_invocation_id": "692252d972d849c7b6ff7809c34882a7",
+  "audit_invocation_id": "ef4a5f1c9da34bd9bc65d0d4c6a194d3",
   "audit_state_snapshot": {
-    "artifact_classifier_state": {
-      "assert_count": 1,
-      "counts": {
-        "A": 0,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      },
-      "decoration_candidate": false,
-      "dominant_class": null,
-      "exists": true,
-      "runner_path": "scripts/audit_companion_three_generation_local_algebra_exact_2026_05_10.py"
-    },
     "criticality": "leaf",
     "dep_axiom_premise_note_hash": {},
     "dep_claim_scope": {},
@@ -26,63 +14,44 @@
     "deps": [],
     "helper_runner_hashes": {},
     "load_bearing_score": 0.0,
-    "policy_versions": {
-      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
-      "audit_tuple_agreement_schema": "audit_tuple_v2",
-      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
-    },
-    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
-    "runner_cache_state": {
-      "scripts/audit_companion_three_generation_local_algebra_exact_2026_05_10.py": {
-        "cache_exit_code": "0",
-        "cache_freshness": "fresh",
-        "cache_input_fingerprint_sha256": null,
-        "cache_runner_sha256": "ba9d746f87292327c440bcc550abb72b4c37263689a036b258b1e44ea1142312",
-        "cache_status": "ok"
-      }
-    },
     "runner_hash": "ba9d746f87292327c440bcc550abb72b4c37263689a036b258b1e44ea1142312",
-    "runner_path": "scripts/audit_companion_three_generation_local_algebra_exact_2026_05_10.py",
-    "runner_present": true,
-    "schema": "blocker_fingerprint_v1",
     "transitive_descendants": 0
   },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-037981a9",
+  "audit_status": "audited_clean",
+  "auditor": "codex-audit-batch-A-20260729-fe1df3a9",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": false,
-  "chain_closure_explanation": "The elementary source proof is sound on its face, but the restricted audit chain is incomplete because the authenticated runner stdout is clipped before some load-bearing N1/N2 checks. An unclipped exact stdout certificate is needed for clean ratification.",
+  "chain_closes": true,
+  "chain_closure_explanation": "The product rule counts all binary tuples, choosing the positions of the ones gives each Hamming-weight count, and the disjoint weight partition yields the binomial sum. The d=3 conclusions and corollaries follow by exact specialization without any physical bridge.",
   "claim_id": "three_generation_local_algebra_narrow_theorem_note_2026-05-10",
   "claim_scope": "Elementary binomial counts for the abstract discrete hypercube {0,1}^d and the d=3 specialization 8 = 1 + 3 + 3 + 1, with no physical Brillouin-zone, Wilson-mass, rooting, M_3(C), or PDG bridge audited.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T13:14:42.421390+00:00",
+  "claim_type_last_reviewed": "2026-07-29T14:42:27.707087+00:00",
   "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
-  "effective_status_reason": "terminal_audit",
+  "effective_status": "retained_bounded",
+  "effective_status_reason": "self",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": "fresh_context",
+  "intrinsic_status": "retained_bounded",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "There are two choices for each of the d independent coordinates, giving 2^d tuples, while choosing the w coordinates equal to 1 gives binomial(d,w).",
+  "load_bearing_step": "Choosing which w of the d coordinates equal 1 gives binomial(d,w), and summing these disjoint weight classes counts all 2^d binary tuples.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "negative_assertion_classes": [],
   "note_hash": "a09a98139f24660119c856d8113b6dae23aa5adb4e7d6192371da4a3735a9e38",
   "note_path": "docs/THREE_GENERATION_LOCAL_ALGEBRA_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with an unclipped SHA-pinned runner stdout block covering every N1-N3 load-bearing check, then rerun the audit.",
+  "notes_for_re_audit_if_any": "",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -142,5 +111,5 @@
   "runner_path": "scripts/audit_companion_three_generation_local_algebra_exact_2026_05_10.py",
   "title": "Three-Generation Local Binomial Count Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": "The product-rule and subset-count derivation is elementary and mathematically correct, and the available summary reports 55 class-A passes with no failures. Clean ratification is nevertheless forbidden because the restricted packet clips load-bearing runner evidence, leaving the execution certificate incomplete. The note\u2019s physical exclusions and open-gap list are honest scope-routing statements rather than asserted negative results, so negative_assertion_classes is empty and no_go_discipline remains null."
+  "verdict_rationale": "The note supplies a complete elementary proof for every positive integer d; the d=3 result is a specialization, not a claimed derivation of physical spatial dimension. The runner independently performs 55 exact class-A checks by enumeration and symbolic binomial calculations, with no failed checks or imported calibrated inputs. References to unresolved physical identifications are explicit scope exclusions and are not load-bearing dependencies of this theorem."
 }

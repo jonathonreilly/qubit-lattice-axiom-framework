@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-25T07:58:25.975448+00:00",
+  "audit_date": "2026-07-29T14:28:38.591059+00:00",
   "audit_invocation_history": [
-    "029f0b8b304548138795227a9a48a4e7"
+    "029f0b8b304548138795227a9a48a4e7",
+    "9eb3b915632a467ca8a350dfc8992342"
   ],
-  "audit_invocation_id": "029f0b8b304548138795227a9a48a4e7",
+  "audit_invocation_id": "9eb3b915632a467ca8a350dfc8992342",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 0,
@@ -30,7 +31,7 @@
       "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -49,20 +50,20 @@
     "transitive_descendants": 45
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-d0283722",
+  "auditor": "codex-audit-batch-A-20260729-fbad4bf4",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The algebraic core closes only after assuming a nondegenerate positive a and the carrier/Yukawa inputs. The restricted packet neither establishes those inputs nor executes every advertised support face.",
+  "chain_closure_explanation": "The algebraic core closes only after stipulating the carrier formulas and positivity convention. The runner silently replaces a by sqrt(a^2), while the note's c=2|b|/a yields c=sgn(a)sqrt(2), not necessarily c=sqrt(2).",
   "claim_id": "koide_q_bridge_single_primitive_note_2026-04-22",
   "claim_scope": "The surviving arithmetic and representation/Yukawa faces on the stated charged-lepton carrier collapse to P_Q=1/2, implying kappa=2, c=sqrt(2), and Q=2/3, with physical source-law selection excluded.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": null,
   "claim_type_author_hint_raw": null,
-  "claim_type_last_reviewed": "2026-07-25T07:58:25.975448+00:00",
+  "claim_type_last_reviewed": "2026-07-29T14:28:38.591059+00:00",
   "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
@@ -72,17 +73,17 @@
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 6.524,
-  "load_bearing_step": "Under a=r0/3 and |b|^2=(r1^2+r2^2)/36, equal cyclic block power gives a^2=2|b|^2, hence P_Q=1/2 and c=sqrt(2) implies Q=2/3.",
+  "load_bearing_step": "a^2 = 2 |b|^2 <=> kappa = 2 <=> Brannen c = sqrt(2) <=> Koide Q = 2/3.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "negative_assertion_classes": [],
   "note_hash": "85b93e9464654d00b15c813285c484c22d096077f87dab3f488594f33c1628ab",
   "note_path": "docs/KOIDE_Q_BRIDGE_SINGLE_PRIMITIVE_NOTE_2026-04-22.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: add the missing normalized-Casimir assertion, state the nonzero/sign domain, and rerender complete unclipped stdout; wire a retained authority if the charged-lepton carrier/face assignment remains in scope.",
+  "notes_for_re_audit_if_any": "scope_too_broad: narrow the claim to algebra conditional on explicitly stipulated carrier formulas, or add the positivity domain and derivations or retained citations for the block normalizations, Brannen carrier match, and representation/Yukawa identifications, with executable assertions for every displayed face.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -283,14 +284,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 2,
-    "B": 3,
-    "C": 1,
-    "D": 2,
+    "A": 9,
+    "B": 5,
+    "C": 0,
+    "D": 0,
     "total_pass": 16
   },
   "runner_path": "scripts/frontier_koide_q_bridge_single_primitive.py",
   "title": "Koide `Q = 2/3` Bridge \u2014 Single-Primitive Narrowing",
   "transitive_descendants": 45,
-  "verdict_rationale": "Issue: The runner's symbolic algebra supports the equivalence after assuming equal block power and positive nonzero variables, but it sets a_sq=2*b_sq, hard-codes the dimension and Yukawa inputs, never asserts the displayed normalized Casimir ratio, and the supplied stdout is clipped before Part A. Why this blocks: the packet does not verify every advertised support face or establish the charged-lepton carrier/face assignments, while the implication to c=sqrt(2) additionally requires positive nonzero a. Repair target: state the nondegenerate sign/domain hypothesis, add an executable assertion for the normalized Casimir ratio, and supply complete stdout plus a retained derivation or explicit premise for the carrier/face inputs. Claim boundary until fixed: conditional on those inputs and a>0, the exact algebra from equal block power to P_Q=1/2, kappa=2, c=sqrt(2), and Q=2/3 is valid, while physical source-law identification remains outside the claim."
+  "verdict_rationale": "Issue: Independent algebra gives Q(c)=1/3+c^2/6 and confirms the omitted Casimir ratio equals 1/2, but P_Q=1/2 together with the stated c=2|b|/a gives c=sgn(a)sqrt(2); the runner instead assumes c>0 and replaces a by sqrt(a^2). Why this blocks: the runner also hard-codes the block-power formulas, carrier match, dimensions, and Yukawa labels rather than deriving or citing them, so numerical equality alone does not establish that they are faces of one carrier primitive. Repair target: state and justify the positivity domain and supply self-contained derivations or retained citations for those carrier identifications, while directly asserting the third support ratio and replacing narrative True checks. Claim boundary until fixed: the stipulated algebra through P_Q=1/2, kappa=2, and Q=2/3 is conditionally valid, while physical source-law selection remains excluded."
 }

@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-25T14:44:35.191295+00:00",
+  "audit_date": "2026-07-29T14:44:26.179824+00:00",
   "audit_invocation_history": [
-    "dafbb121a995472dbe8ac5e1bca6e152"
+    "dafbb121a995472dbe8ac5e1bca6e152",
+    "2333484c636e4a15bdc7e8d073cfc43b"
   ],
-  "audit_invocation_id": "dafbb121a995472dbe8ac5e1bca6e152",
+  "audit_invocation_id": "2333484c636e4a15bdc7e8d073cfc43b",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 1,
@@ -30,7 +31,7 @@
       "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -49,20 +50,20 @@
     "transitive_descendants": 0
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-9af54e4b",
+  "auditor": "codex-audit-batch-A-20260729-6bcdcdaa",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The algebraic proof is self-contained, but the audit chain does not close because the restricted runner stdout is clipped across load-bearing T1\u2013T4 evidence; the full exact-invocation output is required.",
+  "chain_closure_explanation": "Independent algebra gives p(t)/t^d = a_d + \u03a3_{k<d} a_k t^(k-d), which closes T1 and hence T2/T4. The full T1\u2013T4 row does not close for audit because T3's derived no-go boundary lacks mandatory N1\u2013N8 stress-test coverage.",
   "claim_id": "plaquette_hierarchy_polynomial_boundedness_narrow_theorem_note_2026-05-10",
-  "claim_scope": "Standalone real-polynomial claims T1\u2013T4: leading-term divergence, finite-limit-forces-constant, the distinct-endpoint obstruction, and bounded-on-[0,+infinity)-forces-constant, without physical plaquette inputs.",
+  "claim_scope": "Standalone real-polynomial claims T1, T2, and T4: leading-term divergence, finite-limit-forces-constant, and bounded-on-[0,+infinity)-forces-constant, without physical plaquette inputs.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-25T14:44:35.191295+00:00",
+  "claim_type_last_reviewed": "2026-07-29T14:44:26.179824+00:00",
   "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
@@ -72,20 +73,19 @@
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "For d >= 1, p(t)/t^d tends to a_d != 0 as t tends to +infinity, hence |p(t)| tends to +infinity.",
+  "load_bearing_step": "For d \u2265 1, p(t)/t^d tends to the nonzero leading coefficient a_d, so |p(t)| tends to infinity.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "negative_assertion_classes": [
-    "derived_no_go_boundary",
-    "no_go_result"
+    "derived_no_go_boundary"
   ],
   "note_hash": "02b50fdf0ab695f1022a17e0ee852a3ae2eaa7c8a2285aafaafc37482424a172",
   "note_path": "docs/PLAQUETTE_HIERARCHY_POLYNOMIAL_BOUNDEDNESS_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: provide the full unclipped stdout for the exact runner invocation and re-audit all 52 claimed class-A checks against the source and runner code.",
+  "notes_for_re_audit_if_any": "scope_too_broad \u2014 split T3 into a separately no-go-audited child or add five-route N1\u2013N8 evidence for T3 to this note and rerun the row.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -145,5 +145,5 @@
   "runner_path": "scripts/frontier_plaquette_hierarchy_polynomial_boundedness_narrow.py",
   "title": "Plaquette-Hierarchy Polynomial-Boundedness Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: The runner stdout is explicitly clipped at the packet's load-bearing evidence URI, so PASS=52 cannot be matched to every executed T1\u2013T4 check from the rendered evidence. Why this blocks: Although the note gives an elementary class-A leading-term argument, the restricted-packet completeness preflight forbids clean closure with incomplete runner evidence. Repair target: Render the full unclipped stdout for the exact runner invocation, preserving all 52 check lines, then repeat the independent formula audit. Claim boundary until fixed: The source presents a correct-looking polynomial argument, including a derived no-go boundary for distinct endpoint values, but this audit does not certify it clean from the supplied packet."
+  "verdict_rationale": "Issue: T3 asserts a derived no-go boundary, but the restricted packet evidences fewer than five distinct attack-route classes; N2 identifies no multi-wall set, N3 finds no hidden load-bearing admission, and N4 has no prior residual witness. Why this blocks: N5 lacks five-resolution rhetoric tests for the authenticated obstruction phrases, N6's indexed reframes do not certify the polynomial boundary, N7 lacks a separately evidenced steelman resolution, and N8 is not dispositioned for this exact boundary, so clean no-go cementing is forbidden even though manual division by t^d verifies T1, T2, and T4. Repair target: add a dedicated restricted no-go stress-test surface for T3 with at least five genuinely distinct routes, complete rhetoric-resolution checks, an independent steelman resolution, and cross-cycle dispositions. Claim boundary until fixed: retain only T1, T2, and T4 as the audited algebraic core, without promoting T3's distinct-endpoint obstruction."
 }

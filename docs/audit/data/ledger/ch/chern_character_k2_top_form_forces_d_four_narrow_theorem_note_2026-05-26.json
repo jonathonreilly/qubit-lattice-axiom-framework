@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-25T19:59:52.305097+00:00",
+  "audit_date": "2026-07-29T14:36:08.703334+00:00",
   "audit_invocation_history": [
-    "d649eeb2771a4699894014d7e1363bbb"
+    "d649eeb2771a4699894014d7e1363bbb",
+    "ec5134e1db4f43029077c0d6ff2503b8"
   ],
-  "audit_invocation_id": "d649eeb2771a4699894014d7e1363bbb",
+  "audit_invocation_id": "ec5134e1db4f43029077c0d6ff2503b8",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 0,
@@ -30,7 +31,7 @@
       "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -48,43 +49,41 @@
     "schema": "blocker_fingerprint_v1",
     "transitive_descendants": 0
   },
-  "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-5729f4e2",
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260729-c5a06507",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The mathematical identity closes by direct degree counting, but the auditable evidence chain cannot receive clean authority because the packet explicitly flags clipped load-bearing stdout.",
+  "chain_closure_explanation": "The core degree argument closes, but \u00a75.7's universal nonvanishing inference does not: dim \u039b\u2074(R^d)>0 does not imply F\u2227F\u22600 for arbitrary F, and the runner checks only a selected canonical F.",
   "claim_id": "chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26",
   "claim_scope": "Formal graded-algebra theorem that a nonzero Chern-character term ch_k(F) has top degree iff 2k=d, with k=2 giving d=4 and formal coefficient -1/(8 pi^2); no physical ABJ identification, instanton claim, or independence from the wedge-square witness is ratified.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-25T19:59:52.305097+00:00",
+  "claim_type_last_reviewed": "2026-07-29T14:36:08.703334+00:00",
   "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "audited_conditional",
+  "effective_status": "audited_failed",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
-  "intrinsic_status": "audited_conditional",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "Because F has form degree 2, tr(F^\u2227k) has degree 2k, so a nonzero ch_k(F) is top-degree iff 2k=d; setting k=2 gives d=4.",
+  "load_bearing_step": "Because F^\u2227k has degree 2k and scalar multiplication and trace preserve form degree, a nonzero ch_k(F) is top-degree exactly when 2k=d.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [
-    "derived_no_go_boundary"
-  ],
+  "negative_assertion_classes": [],
   "note_hash": "c3af25f7cbb39800919f95164c72dd2d55e1e6b739ecaa3ce2d5ef0e6a721900",
   "note_path": "docs/CHERN_CHARACTER_K2_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: supply complete invocation-bound runner stdout or a SHA-pinned full certificate, then re-audit the explicitly formal scope while preserving the exclusion of physical ABJ, instanton, and witness-independence claims.",
+  "notes_for_re_audit_if_any": "Recheck the corrected K7 nonvanishing quantifier and ensure the runner and source use identical quantifiers.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1290,5 +1289,5 @@
   "runner_path": "scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py",
   "title": "Chern-Character `k = 2` Term Top-Form Forces `d = 4` Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": "Issue: The exterior-degree identity and coefficient check directly, but the packet marks the load-bearing runner stdout as clipped, so the complete executed evidence cannot be verified; physical ABJ, instanton, and witness-independence language is outside the audited formal scope. Why this blocks: The binding preflight forbids clean authority from clipped evidence, although the restricted negative boundaries\u2014vanishing below degree four, sub-top above it, and absence of an even-degree top term at odd d\u2014follow algebraically and are not a broader no-go. Repair target: Supply complete invocation-bound runner stdout or a SHA-pinned full certificate, then re-audit the explicitly formal scope. Claim boundary until fixed: One may state only that a nonzero formal ch_k(F) is top-degree iff 2k=d, hence k=2 gives d=4 with coefficient -1/(8 pi^2) in equation (C)'s convention."
+  "verdict_rationale": "Issue: \u00a75.7 claims that for d\u22655, F\u2227F is nonzero because dim \u039b\u2074(R^d)>0, but F=0 or a decomposable 2-form has F\u2227F=0, and the runner tests only one canonical F. Why this blocks: the source is not clean as written even though the conditional degree statement for nonzero ch_k(F) and the formal coefficient are correct. Repair target: replace the universal nonvanishing claim with an existence statement or retain the explicit nonzero hypothesis, and make the runner assertion match that quantifier. Claim boundary until fixed: only the formal degree-and-coefficient theorem in claim_scope is supported; the physical ABJ identification, instanton normalization claim, and asserted independence from the wedge-square witness are not ratified."
 }

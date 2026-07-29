@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-25T12:57:08.414644+00:00",
+  "audit_date": "2026-07-29T14:46:09.796145+00:00",
   "audit_invocation_history": [
-    "d8d20d6d7b8a416d961c864e9bc9e485"
+    "d8d20d6d7b8a416d961c864e9bc9e485",
+    "094219a5a1214117984423d7e5dbb59c"
   ],
-  "audit_invocation_id": "d8d20d6d7b8a416d961c864e9bc9e485",
+  "audit_invocation_id": "094219a5a1214117984423d7e5dbb59c",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 1,
@@ -30,7 +31,7 @@
       "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -49,20 +50,20 @@
     "transitive_descendants": 0
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-4f52721a",
+  "auditor": "codex-audit-batch-A-20260729-d8b54c9a",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The restricted packet clips load-bearing runner source and stdout, preventing end-to-end verification of all six checks. Moreover, `BLOCK_MEASURE = 2.0` is preset before comparison, so the claimed independent derivation of `c_block = 2` is not demonstrated by the supplied runner.",
+  "chain_closure_explanation": "The restricted packet clips the primary runner inside the load-bearing fixed-background/per-configuration implementation. The complete six-check chain therefore cannot be verified from source rather than stdout.",
   "claim_id": "mixed_os_transfer_representation_bounded_note_2026-05-30",
   "claim_scope": "Finite-carrier numerical comparison on the explicit runner carriers at m=0.5 and declared c_block=2: Berezin block-metric eigenvalues versus operator two-step transfer eigenvalues, plus the listed single-step indefiniteness control.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": "2026-07-25T12:57:08.414644+00:00",
+  "claim_type_last_reviewed": "2026-07-29T14:46:09.796145+00:00",
   "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
@@ -72,19 +73,20 @@
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The time-reflected Berezin block metric computed by Wick contraction with M^{-1} has its positive eigenvalue equal to c_block\u00b7e^{-2E_j} from the independently constructed operator transfer on the explicit finite carriers.",
+  "load_bearing_step": "For fixed U, the reflected Berezin block metric has one positive eigenvalue per spatial mode equal to c_block \u00b7 e^{-2E_j(U)}, with c_block=2.",
   "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
   "negative_assertion_classes": [
-    "derived_no_go_boundary"
+    "derived_no_go_boundary",
+    "no_go_result"
   ],
   "note_hash": "082f96aca007f178ea5311b424d3a1dbdf9ffa09498155f9b3f6a45f64d9a634",
   "note_path": "docs/MIXED_OS_TRANSFER_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: regenerate the restricted packet with complete primary-runner source and stdout, and have the runner infer c_block from the independently computed eigenvalue ratio instead of presetting BLOCK_MEASURE=2.0.",
+  "notes_for_re_audit_if_any": "runner_artifact_issue: rerender the complete unclipped primary runner in the restricted packet and re-audit all six checks, especially the hidden fixed-background and Fock-block construction.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -145,5 +147,5 @@
   "runner_path": "scripts/mixed_os_transfer_representation_2026-05-30.py",
   "title": "Fermion-Sector OS Transfer Representation on the 2-Step Blocked Staggered Surface \u2014 Bounded Note",
   "transitive_descendants": 0,
-  "verdict_rationale": "The visible code performs a substantive Wick/matrix-versus-operator finite-carrier comparison, and the clipped stdout reports six passing checks, but packet completeness explicitly forbids a clean verdict. The preset `BLOCK_MEASURE=2.0` also leaves the advertised a priori normalization determination unverified. For N1\u2013N5, the negative assertion supports only the computed finite single-step indefiniteness boundary: alternative two-step or reflection-convention routes remain available, there is one scoped obstruction, no prior residual witness is used, and no broader no-go rhetoric is justified. For N6\u2013N8, no supplied premise, reframe, or cross-cycle echo expands that boundary, while the strongest steelman\u2014that another carrier/reflection restores positivity\u2014is acknowledged by the two-step result itself."
+  "verdict_rationale": "Issue: the restricted packet clips the primary runner inside the load-bearing fixed-background/per-configuration path, so its reported PASS output cannot be checked against the complete implementation. Why this blocks: the finite-carrier comparison may be correct, but the packet does not expose enough source to verify every claimed carrier and computation. Repair target: rerender the complete primary runner and repeat the source-level audit of all six checks. Claim boundary until fixed: the reported m=0.5 matches and single-step indefiniteness remain runner-output evidence only; the latter is a derived no-go boundary, not an audited two-step representation theorem."
 }

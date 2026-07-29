@@ -304,3 +304,15 @@ checkpoint_0110_block15_landed_w4_first_movement: >
   two-source composition = first W4 movement. Checker 6/6 with own
   K-direct orbit reruns. Eleven campaign PRs open: #5706-#5716.
   Scoreboard refresh 6 posted to owner with this checkpoint.
+
+checkpoint_0150_block16_landed: >
+  #5717 open (Cycle 736, stacked on #5716): the lawful multi-source
+  sector on ring-11 is EXACTLY the independent sets of C11 — census
+  199 = L(11) (enumeration = closed form, both primary and checker);
+  one config-parameterized template (first h=1 odd-sector states);
+  complete count-k grid (199/995); all 199 invariant-checked orbits
+  lawful; 8 near-miss controls at the frozen-wall stations. Checker
+  6/6 with own enumeration + K-direct orbit reruns (24,079 station
+  checks). Twelve campaign PRs open: #5706-#5717. IN FLIGHT: Cycle 737
+  ring-family uniformity (block17) — the L(n) sector theorem across
+  admissible ring sizes, or the frozen n-dependence census.

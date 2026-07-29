@@ -86,3 +86,14 @@ Notes:
   sources). Class: direct_blocker_closure. PR #5716. Checker 6/6
   (K-direct orbit reruns). frozen_obstruction null; adjacency boundary
   reproduced exactly.
+
+## Cycle 736 (block16) — pairwise-separated multi-source sector
+- Target moved: 735's k-generalization; the lawful sector fully
+  characterized on ring-11 (independent sets; Lucas census; both
+  parity sectors; complete enforcement grid). Class:
+  direct_blocker_closure. PR #5717.
+
+## Cycle 737 (block17) — ring-family uniformity (IN FLIGHT)
+- Target: 736's named open (rings beyond 11); tests claimed fixed
+  unrolling from geometry across n; honest n-dependence census
+  allowed. Class: direct_blocker_closure attempt.

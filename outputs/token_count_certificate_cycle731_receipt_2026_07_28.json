@@ -1,0 +1,64 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle731_count_certificate_independent_check_2026_07_28.txt": "84d61542e8dd4f6863d0f5318b5e4a97802d3980db64881c109acf9d373ec144",
+      "frontier_cycle731_token_count_certificate_2026_07_28.txt": "9830bf3350c65059f8151e3c200a48cd2282681448b5429628a87f0f0bd47e84"
+    },
+    "note": {
+      "path": "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "43e5eb627d5cb9747e1119ea94298cebea2fa357a1599d2d67091308435b8f1e"
+    },
+    "runners": {
+      "frontier_cycle731_count_certificate_independent_check_2026_07_28.py": "2fd4f78c6599321dfd483b06ae5025a6569f51f4c95bcf8f91f0e549fd5ddd48",
+      "frontier_cycle731_token_count_certificate_2026_07_28.py": "8ccdede27f154548ee2b1d193935fd36f40a030a9f25872f72ce5171bc568b9e"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "expected_count_is_declared_supply": true,
+    "fixed_supplies": "expected_count=1 (the declared one-source-token inventory line of Cycles 724/730); clean counter, increment/comparison scratch, and refusal-latch genesis; the static reference chain, h, ring orientation, program content, clean data genesis, and everything the Cycle-719 controller core declares",
+    "inventory_is_derived": false,
+    "not_derived": "the expected-count inventory itself (genesis); arbitrary ring sizes as a uniform theorem family; no time/Record/Born/source content is touched",
+    "positive_scope": "the traveling-counter word (112,912 semantic gates; exact reversibility; counter/scratch/refs/h return clean); refusal of the frozen matched-parity witness and all 55 two-token placements; the exhaustive ring-11 iff theorem (count AND parity) over 8,388,608 rail/h cases with frozen outcome tables; count-law/parity-law factorization (zero ref/h touches); deletion controls; routed 2-bank and 12-bank fixtures; byte-unchanged inherited anchors",
+    "w1_closed": true,
+    "w1_closed_scope": "bounded ring-11 enforcement only; no genesis or arbitrary-ring inventory derivation",
+    "w1_ring11_count_law_enforced": true
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 10
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 731,
+  "date": "2026-07-28",
+  "result": {
+    "added_semantic_gates": 13602,
+    "count_law_factors_from_parity_law": true,
+    "cycle730_anchor_semantic_gates": 99310,
+    "extended_word_semantic_gates": 112912,
+    "independent_outcome_table_sha_rebuilt_and_matched": true,
+    "outcome_table_sha256": "70c8565f054f8cff29acedf3f9a04585df280eec9395140ea7067130dab8b1ce",
+    "refusal_event_table_sha256": "73ad99cfa287b117673e877363c73b736926395b1dd0b24d2d97b2f453844efd",
+    "theorem_cases": {
+      "count_pass": 45056,
+      "full_pass": 22528,
+      "iff_exceptions": 0,
+      "total": 8388608
+    },
+    "two_token_placements_refused": "55/55",
+    "witness_refusal": {
+      "expected": 1,
+      "h": 0,
+      "observed": 2,
+      "reason": "count_mismatch",
+      "token_sites": [
+        0,
+        5
+      ]
+    }
+  },
+  "status": "CYCLE731_TOKEN_COUNT_CERTIFICATE_PASS"
+}

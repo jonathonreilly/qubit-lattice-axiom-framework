@@ -13,7 +13,7 @@ calibration. It does not claim a continuum/Newton theorem or a no-go.
 - Exact live stdout matches each fresh SHA-pinned cache byte-for-byte modulo
   terminal newlines. Primary/helper stdout sizes are 5268/5507 characters, so
   neither cache body is clipped by the 6000-character audit excerpt.
-- The source note is 7935 characters and both runners are below 16000.
+- The source note is 8160 characters and both runners are below 16000.
 
 ## Scientific boundary
 

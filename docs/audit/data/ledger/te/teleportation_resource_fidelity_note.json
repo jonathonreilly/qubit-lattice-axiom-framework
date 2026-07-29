@@ -1,24 +1,85 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-29T22:06:09.351821+00:00",
+  "audit_invocation_history": [
+    "33589b99e0a8426ea8b0da67b664a4c9"
+  ],
+  "audit_invocation_id": "33589b99e0a8426ea8b0da67b664a4c9",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 1,
+        "C": 5,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_teleportation_resource_fidelity.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "teleportation_causal_channel_note": "A narrow model harness shows that an explicit classical Bell-measurement record can be carried on a positive-latency directed lattice channel without deriving the record bits or enabling pre-delivery signaling.",
+      "teleportation_dynamical_resource_generation_note": "Default 1D N=8 exact-diagonalization product-state scans under H = H1 x I + I x H1 + G V_Poisson find useful but low-fidelity logical taste-qubit teleportation resources for interacting cases, no Bell-overlap >= 0.90 windows, non-useful G=0 controls, and input-independent Bob no-record states.",
+      "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+    },
+    "dep_claim_type": {
+      "teleportation_causal_channel_note": "bounded_theorem",
+      "teleportation_dynamical_resource_generation_note": "bounded_theorem",
+      "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "teleportation_causal_channel_note": "retained_bounded",
+      "teleportation_dynamical_resource_generation_note": "retained_bounded",
+      "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+    },
+    "deps": [
+      "teleportation_causal_channel_note",
+      "teleportation_dynamical_resource_generation_note",
+      "teleportation_retained_axis_operator_algebra_closure_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 3.322,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_teleportation_resource_fidelity.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "d9ca0c36744f9aa71687c58e8fcd1437471a39eefac4857d920096d3a60e10e9",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "d9ca0c36744f9aa71687c58e8fcd1437471a39eefac4857d920096d3a60e10e9",
+    "runner_path": "scripts/frontier_teleportation_resource_fidelity.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 4
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260729-a8ac7c96",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The local fixed-protocol formula is supported by Bell-character orthogonality and the runner\u2019s Choi construction, but the chain cannot be certified because the retained-axis operator-algebra authority is clipped at load-bearing evidence.",
   "claim_id": "teleportation_resource_fidelity_note",
-  "claim_scope": null,
+  "claim_scope": "For any supplied physical two-qubit resource density matrix rho_RB, ideal Bell measurement and classical record, and fixed Z^z X^x correction, F_avg=(1+2<Phi+|rho_RB|Phi+>)/3 and F_avg>2/3 exactly when <Phi+|rho_RB|Phi+>>1/2.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-29T22:06:09.351821+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -28,19 +89,22 @@
     "teleportation_causal_channel_note"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 3.322,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The character sum (1/4) sum_m phase(m,g) phase(m,h)^* = delta_(g,h) removes all Bell-basis coherences, making the corrected map a Pauli channel with identity-error probability <Phi+|rho_RB|Phi+>.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls"
+  ],
   "note_hash": "d25f6a88d349d0a7636cc67a6f9c5f39129297f2604ba1aa7433addc7c254935",
   "note_path": "docs/TELEPORTATION_RESOURCE_FIDELITY_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: regenerate the restricted packet with the complete docs/TELEPORTATION_RETAINED_AXIS_OPERATOR_ALGEBRA_CLOSURE_NOTE.md authority and rerun the independent dependency check.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -1452,14 +1516,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 6,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 6
   },
   "runner_path": "scripts/frontier_teleportation_resource_fidelity.py",
   "title": "Teleportation Resource-Fidelity Note",
   "transitive_descendants": 4,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the restricted packet clips load-bearing portions of the retained-axis operator-algebra authority supplying the ideal Bell projectors and Pauli corrections. Why this blocks: the local fidelity algebra and all six runner gates check out, but the cited interface cannot be independently verified from the rendered evidence. Repair target: provide the complete cited authority in a fresh restricted packet and re-audit its logical Bell-projector and correction support. Claim boundary until fixed: the fixed-protocol algebra remains supported, while the bounded negative content extends only to not deriving resource preparation, nonideal operations, arbitrary-frame optimization, field-theoretic communication, or matter, mass, charge, and energy transport."
 }

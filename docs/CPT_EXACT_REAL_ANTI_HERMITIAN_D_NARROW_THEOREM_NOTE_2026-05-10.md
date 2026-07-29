@@ -219,6 +219,11 @@ verifies, at exact sympy precision:
    fails premise (3), so the forward theorem is inapplicable. The
    runner makes no converse claim about composite invariance.
 
+The runner declares this note through `AUDIT_INPUT_PATHS`; its canonical
+transcript is usable only when both the runner source and this note match the
+recorded content identities. No-argument execution emits the complete
+`32 PASS / 0 FAIL` transcript without clipping.
+
 ## Cross-references
 
 - `cpt_exact_note` — parent broad note that supplies the premise

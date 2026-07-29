@@ -44,6 +44,11 @@ is the parent cpt_exact_note's responsibility.
 
 import sys
 
+AUDIT_TIMEOUT_SEC = 120
+AUDIT_INPUT_PATHS = (
+    "docs/CPT_EXACT_REAL_ANTI_HERMITIAN_D_NARROW_THEOREM_NOTE_2026-05-10.md",
+)
+
 try:
     import sympy
     import sympy as sp  # alias for audit classifier class-A pattern detection

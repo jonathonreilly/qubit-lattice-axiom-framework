@@ -1116,10 +1116,6 @@
           "effective_status": "unaudited"
         },
         {
-          "claim_id": "hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18",
-          "effective_status": "unaudited"
-        },
-        {
           "claim_id": "hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18",
           "effective_status": "unaudited"
         },
@@ -2760,7 +2756,7 @@
       "roots": [
         "strong_cp_theta_zero_note"
       ],
-      "uncertified_count": 633
+      "uncertified_count": 632
     }
   ],
   "schema": "lane_certification_v2"

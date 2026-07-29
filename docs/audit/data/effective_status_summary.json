@@ -1,7 +1,7 @@
 {
   "claim_type_counts": {
-    "bounded_theorem": 2194,
-    "decoration": 43,
+    "bounded_theorem": 2193,
+    "decoration": 44,
     "meta": 364,
     "no_go": 439,
     "open_gate": 207,
@@ -94,6 +94,7 @@
     "decoration_under_d3_truncation_commensuration_criterion_bounded_theorem_note_2026-06-12": 1,
     "decoration_under_gauge_vacuum_plaquette_reduction_existence_theorem_note": 1,
     "decoration_under_graph_first_su3_integration_note": 8,
+    "decoration_under_hierarchy_d4_density_scale_readout_bridge_bounded_theorem_note_2026-06-16": 1,
     "decoration_under_hierarchy_dimensional_fourth_root_compression_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05": 1,
     "decoration_under_koide_circulant_character_bridge_narrow_theorem_note_2026-05-09": 2,
@@ -110,7 +111,7 @@
     "retained": 122,
     "retained_bounded": 355,
     "retained_pending_chain": 11,
-    "unaudited": 2646
+    "unaudited": 2645
   },
   "retained_pending_chain_count": 11,
   "retained_pending_chain_examples": [

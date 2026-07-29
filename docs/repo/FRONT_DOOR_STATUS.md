@@ -32,14 +32,14 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3910 |
-| Applied audit verdicts | 904 |
-| Retained-grade rows, including boxed decorations | 506 |
+| Applied audit verdicts | 905 |
+| Retained-grade rows, including boxed decorations | 507 |
 | Retained positive theorems | 122 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 355 |
-| Boxed decorations under retained parents | 29 |
+| Boxed decorations under retained parents | 30 |
 | Open gates | 3 |
-| Unaudited rows | 2646 |
+| Unaudited rows | 2645 |
 | Retained-pending-chain rows | 11 |
 | Audited conditional rows | 269 |
 | Audited renaming rows | 33 |
@@ -54,10 +54,10 @@ Full audit-ratified row list: [`docs/repo/RETAINED_BACKBONE.md`](RETAINED_BACKBO
 
 | Metric | Value |
 |---|---:|
-| Total pending rows | 2992 |
+| Total pending rows | 2991 |
 | Ready rows | 545 |
 | Cycle-break targets | 59 |
-| Critical pending | 642 |
+| Critical pending | 641 |
 | High pending | 367 |
 | Medium pending | 825 |
 | Leaf pending | 1158 |
@@ -269,9 +269,9 @@ Non-lane rows deferred by the simulated interleave (positions lost; complete lis
 - `clifford_chirality_dimension_narrow_theorem_note_2026-05-10`: -6
 - `flavor_native_double_shift_corner_coupling_note_2026-05-30`: -6
 - `dm_leptogenesis_pmns_transport_selector_firewall_note_2026-06-17`: -6
-- `hierarchy_ew_order_parameter_d4_density_readout_bridge_bounded_support_note_2026-06-18`: -6
 - `strong_cp_rp_half_cannot_forbid_cp_odd_imaginary_no_go_note_2026-05-16`: -6
 - `lattice_nn_light_cone_note`: -6
+- `hierarchy_fixed_density_physical_selector_no_go_note_2026-06-18`: -6
 - `charged_lepton_registered_mass_dft_coordinate_theorem_note_2026-07-11`: -6
 - `record_function_finite_sector_algebra_2026-06-05`: -6
 - `staggered_chiral_symmetry_spectrum_theorem_note_2026-05-02`: -6

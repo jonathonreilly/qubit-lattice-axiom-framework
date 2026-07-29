@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 120 |
+| Retained positive rows | 121 |
 | Retained bounded rows | 352 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 29 |
 
-## Retained positive rows (120)
+## Retained positive rows (121)
 
 Sorted by load-bearing graph score (descending).
 
@@ -102,6 +102,7 @@ Sorted by load-bearing graph score (descending).
 - [`fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10`](../../docs/FERMION_PARITY_PAULI_TENSOR_INVOLUTION_NARROW_THEOREM_NOTE_2026-05-10.md) — score 5.307; audited 2026-05-11T01:53:59.618423+00:00
 - [`ckm_cp_phase_structural_identity_narrow_theorem_note_2026-05-10`](../../docs/CKM_CP_PHASE_STRUCTURAL_IDENTITY_NARROW_THEOREM_NOTE_2026-05-10.md) — score 5.087; audited 2026-07-25T06:01:42.665852+00:00
 - [`independent_generators_heldout_note`](../../docs/INDEPENDENT_GENERATORS_HELDOUT_NOTE.md) — score 4.822; audited 2026-04-26
+- [`massless_vector_polarization_count_from_lorentz_and_gauge_bounded_theorem_note_2026-05-28`](../../docs/MASSLESS_VECTOR_POLARIZATION_COUNT_FROM_LORENTZ_AND_GAUGE_BOUNDED_THEOREM_NOTE_2026-05-28.md) — score 4.748; audited 2026-07-29T13:53:16.823268+00:00
 - [`commensuration_unconditional_period_parity_lemma_narrow_theorem_note_2026-06-12`](../../docs/COMMENSURATION_UNCONDITIONAL_PERIOD_PARITY_LEMMA_NARROW_THEOREM_NOTE_2026-06-12.md) — score 4.500; audited 2026-06-18T09:32:23.725019+00:00
 - [`fixed_field_complex_grown_basin_v2_note`](../../docs/FIXED_FIELD_COMPLEX_GROWN_BASIN_V2_NOTE.md) — score 4.500; audited 2026-05-12T00:19:40.930522+00:00
 - [`fixed_field_family_unification_note`](../../docs/FIXED_FIELD_FAMILY_UNIFICATION_NOTE.md) — score 4.500; audited 2026-05-25T11:59:07.926240+00:00

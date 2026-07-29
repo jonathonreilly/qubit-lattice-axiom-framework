@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle732_genesis_independent_check_2026_07_28.py
+runner_sha256: afa522139fd87500b9aa9911b4f6f44ab501a2ab1d7287f3b8d124507c406284
+input_fingerprint_sha256: 3fba953128567ab2ba8128739bb33f3da065d263626a56cbdcb8b7650a0ca53c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.58
+status: ok
+----- stdout -----
+PASS extraction :: 27 gates (1 X + 26 CNOT), ring-11 boundary/configuration
+PASS genesis recount :: blank -> declared 27-one configuration, every register exact
+PASS deletion recount :: 27/27 refused, 0 output-neutral
+PASS bit-flip recount :: 23/23 refused, 23 frozen-verdict agreements
+PASS size arithmetic :: 27 + 112912 + 10354 = 123293
+PASS discipline :: AST-only primary, no blocklisted imports, no K writes
+SUMMARY 6/6 ALL_PASS runtime=0.160394s
+
+----- stderr -----
+

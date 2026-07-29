@@ -1,24 +1,87 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-29T21:29:32.329712+00:00",
+  "audit_invocation_history": [
+    "ba09b6d6bd264d2aa83b50357dc1297d",
+    "a1d010e8284c40e0a04dd4fc5455157d"
+  ],
+  "audit_invocation_id": "a1d010e8284c40e0a04dd4fc5455157d",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 5,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_hierarchy_effective_potential_endpoint.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16": "Algebraic specialization of the supplied determinant identity at L_s=2 to the conventionally defined per-matrix-entry log-determinant difference Delta f(L_t,m)=(1/(2L_t)) Sum_omega ln(1+m^2/[u_0^2(3+sin^2 omega)])."
+    },
+    "dep_claim_type": {
+      "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16": "decoration"
+    },
+    "dep_effective_status": {
+      "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16": "decoration_under_hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02"
+    },
+    "deps": [
+      "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16"
+    ],
+    "helper_runner_hashes": {
+      "scripts/canonical_plaquette_surface.py": "fd681ecbecda7ab5590b72199ee5bbb4393826f0f8e40ca66f8e2e6531646693"
+    },
+    "load_bearing_score": 14.035,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/canonical_plaquette_surface.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/frontier_hierarchy_effective_potential_endpoint.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "8faf455e096a8d4c57f8fcf7933f6674449a92c89248d34e41c6110d0e432a09",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "8faf455e096a8d4c57f8fcf7933f6674449a92c89248d34e41c6110d0e432a09",
+    "runner_path": "scripts/frontier_hierarchy_effective_potential_endpoint.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 741
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-B-20260729-9162214d",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The small-m expansion and endpoint sums close algebraically once the stated Matsubara formula is assumed, but the source-to-formula dependency cannot be independently checked because its cited authority is clipped across the load-bearing derivation. The runner encodes that formula and verifies its consequences; it does not replace the missing proof surface.",
   "claim_id": "hierarchy_effective_potential_endpoint_note",
-  "claim_scope": null,
+  "claim_scope": "Bounded algebraic extraction of the small-m coefficient, APBC endpoint sums, A_inf/A_2, and the formal dimension-4 endpoint factor from the stated Matsubara free-energy density formula, excluding any physical electroweak insertion theorem.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem \u2014 class-A algebraic",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-29T21:29:32.329712+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,21 +89,25 @@
     "hierarchy_matsubara_free_energy_density_narrow_theorem_note_2026-05-16"
   ],
   "direct_in_degree": 9,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/canonical_plaquette_surface.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 14.035,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The load-bearing step is `(retained-pending-re-audit Matsubara free-energy density formula from Bridge 1) \u21d2 (A_2, A_4, A_inf, C_inf^(4D)) algebraic identities`, evaluated mechanically by the runner.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale"
+  ],
   "note_hash": "7202d5a14638d601da928121b085827bf0b5fc4e5646bcf49910e5d5d9a44b90",
   "note_path": "docs/HIERARCHY_EFFECTIVE_POTENTIAL_ENDPOINT_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: rerender the restricted packet with the complete SHA-bound Bridge 1 authority, then independently recheck the determinant-log normalization 4/(8 L_t) = 1/(2 L_t); this is a packet-completeness defect not covered by the narrower dependency or runner-artifact classes.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -348,14 +415,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 5,
     "B": 0,
     "C": 0,
-    "D": 0,
-    "total_pass": 0
+    "D": 2,
+    "total_pass": 7
   },
   "runner_path": "scripts/frontier_hierarchy_effective_potential_endpoint.py",
   "title": "Hierarchy Effective-Potential Endpoint Note",
   "transitive_descendants": 741,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the supplied Bridge 1 authority is packet-clipped across its load-bearing derivation, so the imported Matsubara formula cannot be independently verified from this restricted packet, although its downstream sums check. Why this blocks: the bounded endpoint identities depend on precisely that formula, while the runner assumes it rather than deriving it. Repair target: supply the complete authority or a complete SHA-bound proof certificate and independently verify the determinant-log normalization yielding 1/(2 L_t). Claim boundary until fixed: conditional on the formula, A_2, A_4, A_inf, A_inf/A_2, and the formal fourth-root factor are algebraically correct, but the named physical det-to-v insertion wall and electroweak hierarchy closure remain outside scope."
 }

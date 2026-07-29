@@ -32,16 +32,16 @@ Owner-approval history for axioms and primitives:
 | Metric | Value |
 |---|---:|
 | Ledger rows | 3910 |
-| Applied audit verdicts | 907 |
+| Applied audit verdicts | 908 |
 | Retained-grade rows, including boxed decorations | 508 |
 | Retained positive theorems | 122 |
 | Retained no-go rows | 0 |
 | Retained bounded rows | 355 |
 | Boxed decorations under retained parents | 31 |
 | Open gates | 3 |
-| Unaudited rows | 2643 |
+| Unaudited rows | 2642 |
 | Retained-pending-chain rows | 11 |
-| Audited conditional rows | 270 |
+| Audited conditional rows | 271 |
 | Audited renaming rows | 33 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 58 |
@@ -71,7 +71,7 @@ Next ready rows by queue order:
 - [`abj_epsilon_index_square_block_no_go_note_2026-05-30`](../../docs/ABJ_EPSILON_INDEX_SQUARE_BLOCK_NO_GO_NOTE_2026-05-30.md) - critical; unaudited
 - [`abj_p_hy_retained_bounded_supplier_wiring_note_2026-06-18`](../../docs/ABJ_P_HY_RETAINED_BOUNDED_SUPPLIER_WIRING_NOTE_2026-06-18.md) - critical; non_terminal_conditional
 - [`staggered_dirac_substep3_bz_corner_hamming_orbit_narrow_theorem_note_2026-05-17`](../../docs/STAGGERED_DIRAC_SUBSTEP3_BZ_CORNER_HAMMING_ORBIT_NARROW_THEOREM_NOTE_2026-05-17.md) - critical; non_terminal_failed
-- [`s3_boundary_link_theorem_note`](../../docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md) - critical; unaudited
+- [`s3_boundary_link_theorem_note`](../../docs/S3_BOUNDARY_LINK_THEOREM_NOTE.md) - critical; non_terminal_conditional
 
 Source: [`docs/audit/AUDIT_QUEUE.md`](../audit/AUDIT_QUEUE.md) and
 the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
@@ -82,10 +82,10 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 
 | Criticality | Effective status | Count |
 |---|---|---:|
-| critical | `unaudited` | 234 |
+| critical | `unaudited` | 233 |
 | high | `unaudited` | 165 |
 | medium | `unaudited` | 110 |
-| critical | `audited_conditional` | 9 |
+| critical | `audited_conditional` | 10 |
 | medium | `audited_conditional` | 8 |
 | ? | `unresolved` | 4 |
 | high | `audited_conditional` | 4 |
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 30 |
-| Live conditional/failed rows that would park | 25 |
+| Live conditional/failed rows that would park | 26 |
 | Live rows fail-open (legacy/unversioned snapshot) | 31 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |

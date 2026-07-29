@@ -2065,7 +2065,7 @@
         },
         {
           "claim_id": "s3_boundary_link_theorem_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "s3_general_r_derivation_note",

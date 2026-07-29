@@ -1,0 +1,69 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle736_multisource_independent_check_2026_07_28.txt": "9d3a554d521ba84d430f176f64b7166425a5a15578d5cbd54a7a61b2d8a52ca2",
+      "frontier_cycle736_pairwise_separated_multisource_2026_07_28.txt": "41c7e22f2138d62233d9ef4ea1b3c81763e68abdf2b2593d6ac361fa0d70bd05"
+    },
+    "note": {
+      "path": "docs/PAIRWISE_SEPARATED_MULTISOURCE_CYCLE736_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "faa7133d856f42e6382671ec339bdbbc450ecbd432bc5ba12f23857c321c3a78"
+    },
+    "runners": {
+      "frontier_cycle736_multisource_independent_check_2026_07_28.py": "9704104e0a8186e1ca96cc90b387faad7b0022d2dbc5be82270b38009c6e5fdb",
+      "frontier_cycle736_pairwise_separated_multisource_2026_07_28.py": "50059ce4d4d6e5ce4503e66ccb098f6fe663ad9711b106b6b6c5c9cb7bcbd02f"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "adjacency_wall_respected_not_solved": true,
+    "axiom_pressure": false,
+    "fixed_supplies": "the configuration as an external parameter (no distinguished site); finite oriented ring-11 geometry; held program content and order; held data genesis with clean auxiliaries; lawful charge-reference rows with h = k mod 2 and expected_count = k; Q-before-R layer order",
+    "h1_odd_sector_exercised": true,
+    "k_source_composition_ring11": true,
+    "max_token_count_ring11": 5,
+    "not_derived": "rings beyond 11 as uniform families (census generalizes as L(n) but the theorem is ring-11 exhaustive); W4 post-capacity renewal; adjacent-pair control; no time/Record/Born/source content",
+    "pairwise_separated_sector_lawful": true,
+    "positive_scope": "the pairwise-separated sector = independent sets of C11 (census 1/11/44/77/55/11, total 199 = L(11), enumeration = closed form); one config-parameterized pure-X template preparing all 199 bit-exactly (first h=1 odd-sector multi-token states); 2,189-identity covariance census; the complete count-k enforcement grid (199 accepts, 995 cross-refusals); exhaustive invariant-checked lawful orbits over all 199 configs with exact closure and zero violations; 8 near-miss boundary controls at exactly the predicted stations",
+    "w4_renewal_component_untouched": true
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 10
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 736,
+  "date": "2026-07-28",
+  "result": {
+    "census_per_k": {
+      "0": 1,
+      "1": 11,
+      "2": 44,
+      "3": 77,
+      "4": 55,
+      "5": 11
+    },
+    "census_total_lucas": 199,
+    "covariance_identities": "2189/2189",
+    "enforcement_grid": {
+      "cross_refusals": 995,
+      "diagonal_accepts": 199
+    },
+    "frozen_obstruction": null,
+    "near_miss_controls": {
+      "configs": 8,
+      "per_adjacent_pair": 2,
+      "violations": 16
+    },
+    "orbit_census": {
+      "closures": 199,
+      "configs": 199,
+      "distance_checks_checker": 7865,
+      "occupied_checks_checker": 6655,
+      "station_checks_checker": 24079,
+      "violations": 0
+    }
+  },
+  "status": "CYCLE736_PAIRWISE_SEPARATED_MULTISOURCE_PASS"
+}

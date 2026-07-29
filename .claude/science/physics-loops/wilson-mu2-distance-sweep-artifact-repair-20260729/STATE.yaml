@@ -1,0 +1,16 @@
+slug: wilson-mu2-distance-sweep-artifact-repair-20260729
+date: 2026-07-29
+branch: claude/science-fix/wilson_mu2_distance_sweep_note_2026-04-11-cc43b062
+status: executing
+target: audited_clean re-audit readiness for the bounded Wilson mu2 distance sweep
+target_claim_type: bounded_theorem
+cycle_count: 1
+active_route: compact complete primary stdout plus recovered both-masses finite-nonpass runner
+strongest_unresolved_obligation: complete unclipped SHA-pinned stdout for both executable surfaces
+files_touched: []
+open_imports: []
+trace_gate: direct_blocker_closure
+review_disposition: pending
+lock_status: branch-local supervisor lock active; repository-wide lock unavailable outside sandbox
+next_exact_action: patch runners and source note, then refresh both caches
+stop_condition: target artifact package verified and review disposition recorded

@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_wilson_mu2_distance_sweep.py
-runner_sha256: cac50444e3d13a6e5e0a34bfc890f5f8288b20eb57dff8228a37327d6548d85b
-timeout_sec: 600
+runner_sha256: 3bf54d77aa1ec158d6efe5076a7c71e7bf463dd21db277d6217cd704988f6fe1
+input_fingerprint_sha256: 0fc0a93a3aecdc85aa199efd5b4ba60ec5fe7cc8afe7c03e48d16e971129ab5d
+timeout_sec: 1800
 exit_code: 0
-elapsed_sec: 252.80
+elapsed_sec: 174.03
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -13,88 +14,115 @@ Surface: sides=(11, 13, 15), G=5.0, separations=(3, 4, 5, 6)
 Packet width fixed at base SIGMA=1.0
 mu^2 sweep=(0.22, 0.05, 0.01, 0.005, 0.001)
 
---- mu^2=0.22 ---
-  side=11 d=3: a_mut=-0.566674 SNR=9.69 [ATTRACT] [CLEAN] dsep SH=-0.7543 SELF=+0.0237 FREE=-0.0283
-  side=11 d=4: a_mut=-0.247554 SNR=8.47 [ATTRACT] [CLEAN] dsep SH=-0.3114 SELF=+0.0316 FREE=-0.0298
-  side=11 d=5: a_mut=-0.113243 SNR=8.72 [ATTRACT] [CLEAN] dsep SH=-0.1412 SELF=+0.0072 FREE=-0.2111
-  side=11 d=6: a_mut=-0.056988 SNR=8.83 [ATTRACT] [CLEAN] dsep SH=-0.0448 SELF=+0.0303 FREE=-0.2340
-  side=13 d=3: a_mut=-0.567354 SNR=9.74 [ATTRACT] [CLEAN] dsep SH=-0.7705 SELF=+0.0105 FREE=-0.0025
-  side=13 d=4: a_mut=-0.246222 SNR=8.46 [ATTRACT] [CLEAN] dsep SH=-0.3298 SELF=+0.0129 FREE=-0.0026
-  side=13 d=5: a_mut=-0.114091 SNR=8.16 [ATTRACT] [CLEAN] dsep SH=-0.1340 SELF=+0.0235 FREE=-0.0283
-  side=13 d=6: a_mut=-0.056692 SNR=8.15 [ATTRACT] [CLEAN] dsep SH=-0.0480 SELF=+0.0303 FREE=-0.0298
-  side=15 d=3: a_mut=-0.567478 SNR=9.78 [ATTRACT] [CLEAN] dsep SH=-0.7778 SELF=+0.0035 FREE=-0.0002
-  side=15 d=4: a_mut=-0.245780 SNR=8.48 [ATTRACT] [CLEAN] dsep SH=-0.3381 SELF=+0.0043 FREE=-0.0002
-  side=15 d=5: a_mut=-0.113977 SNR=8.16 [ATTRACT] [CLEAN] dsep SH=-0.1478 SELF=+0.0106 FREE=-0.0025
-  side=15 d=6: a_mut=-0.056342 SNR=8.12 [ATTRACT] [CLEAN] dsep SH=-0.0655 SELF=+0.0127 FREE=-0.0026
-  fit: |a_mut| ~ d^-3.315  (R^2=0.9960, clean=12/12, 84.1s)
-
---- mu^2=0.05 ---
-  side=11 d=3: a_mut=-0.760193 SNR=8.21 [ATTRACT] [CLEAN] dsep SH=-0.9288 SELF=+0.0992 FREE=-0.0283
-  side=11 d=4: a_mut=-0.413043 SNR=6.54 [ATTRACT] [CLEAN] dsep SH=-0.4443 SELF=+0.1322 FREE=-0.0298
-  side=11 d=5: a_mut=-0.233585 SNR=6.47 [ATTRACT] [CLEAN] dsep SH=-0.1606 SELF=+0.1423 FREE=-0.2111
-  side=11 d=6: a_mut=-0.148537 SNR=6.75 [ATTRACT] [CLEAN] dsep SH=+0.0073 SELF=+0.2033 FREE=-0.2340
-  side=13 d=3: a_mut=-0.757645 SNR=8.55 [ATTRACT] [CLEAN] dsep SH=-0.9743 SELF=+0.0498 FREE=-0.0025
-  side=13 d=4: a_mut=-0.403663 SNR=6.62 [ATTRACT] [CLEAN] dsep SH=-0.5023 SELF=+0.0646 FREE=-0.0026
-  side=13 d=5: a_mut=-0.231081 SNR=6.13 [ATTRACT] [CLEAN] dsep SH=-0.2186 SELF=+0.1018 FREE=-0.0283
-  side=13 d=6: a_mut=-0.145062 SNR=6.14 [ATTRACT] [CLEAN] dsep SH=-0.0757 SELF=+0.1269 FREE=-0.0298
-  side=15 d=3: a_mut=-0.755939 SNR=8.74 [ATTRACT] [CLEAN] dsep SH=-0.9955 SELF=+0.0240 FREE=-0.0002
-  side=15 d=4: a_mut=-0.398873 SNR=6.68 [ATTRACT] [CLEAN] dsep SH=-0.5297 SELF=+0.0310 FREE=-0.0002
-  side=15 d=5: a_mut=-0.227491 SNR=6.20 [ATTRACT] [CLEAN] dsep SH=-0.2672 SELF=+0.0519 FREE=-0.0025
-  side=15 d=6: a_mut=-0.140855 SNR=6.14 [ATTRACT] [CLEAN] dsep SH=-0.1349 SELF=+0.0632 FREE=-0.0026
-  fit: |a_mut| ~ d^-2.392  (R^2=0.9978, clean=12/12, 63.6s)
-
---- mu^2=0.01 ---
-  side=11 d=3: a_mut=-0.839942 SNR=7.89 [ATTRACT] [CLEAN] dsep SH=-0.9693 SELF=+0.1555 FREE=-0.0283
-  side=11 d=4: a_mut=-0.502575 SNR=6.13 [ATTRACT] [CLEAN] dsep SH=-0.4896 SELF=+0.2109 FREE=-0.0298
-  side=11 d=5: a_mut=-0.309391 SNR=6.02 [ATTRACT] [CLEAN] dsep SH=-0.1774 SELF=+0.2208 FREE=-0.2111
-  side=11 d=6: a_mut=-0.214863 SNR=6.43 [ATTRACT] [CLEAN] dsep SH=+0.0212 SELF=+0.3043 FREE=-0.2340
-  side=13 d=3: a_mut=-0.835914 SNR=8.32 [ATTRACT] [CLEAN] dsep SH=-1.0268 SELF=+0.0911 FREE=-0.0025
-  side=13 d=4: a_mut=-0.488824 SNR=6.23 [ATTRACT] [CLEAN] dsep SH=-0.5649 SELF=+0.1208 FREE=-0.0026
-  side=13 d=5: a_mut=-0.306680 SNR=5.67 [ATTRACT] [CLEAN] dsep SH=-0.2544 SELF=+0.1687 FREE=-0.0283
-  side=13 d=6: a_mut=-0.213270 SNR=5.73 [ATTRACT] [CLEAN] dsep SH=-0.0889 SELF=+0.2093 FREE=-0.0298
-  side=15 d=3: a_mut=-0.832438 SNR=8.62 [ATTRACT] [CLEAN] dsep SH=-1.0554 SELF=+0.0534 FREE=-0.0002
-  side=15 d=4: a_mut=-0.480072 SNR=6.32 [ATTRACT] [CLEAN] dsep SH=-0.6033 SELF=+0.0707 FREE=-0.0002
-  side=15 d=5: a_mut=-0.300215 SNR=5.74 [ATTRACT] [CLEAN] dsep SH=-0.3188 SELF=+0.1011 FREE=-0.0025
-  side=15 d=6: a_mut=-0.206494 SNR=5.70 [ATTRACT] [CLEAN] dsep SH=-0.1679 SELF=+0.1232 FREE=-0.0026
-  fit: |a_mut| ~ d^-1.992  (R^2=0.9984, clean=12/12, 44.1s)
-
---- mu^2=0.005 ---
-  side=11 d=3: a_mut=-0.852256 SNR=7.85 [ATTRACT] [CLEAN] dsep SH=-0.9735 SELF=+0.1660 FREE=-0.0283
-  side=11 d=4: a_mut=-0.517841 SNR=6.08 [ATTRACT] [CLEAN] dsep SH=-0.4957 SELF=+0.2258 FREE=-0.0298
-  side=11 d=5: a_mut=-0.322874 SNR=5.97 [ATTRACT] [CLEAN] dsep SH=-0.1804 SELF=+0.2345 FREE=-0.2111
-  side=11 d=6: a_mut=-0.227107 SNR=6.40 [ATTRACT] [CLEAN] dsep SH=+0.0228 SELF=+0.3219 FREE=-0.2340
-  side=13 d=3: a_mut=-0.848331 SNR=8.28 [ATTRACT] [CLEAN] dsep SH=-1.0328 SELF=+0.1000 FREE=-0.0025
-  side=13 d=4: a_mut=-0.503906 SNR=6.18 [ATTRACT] [CLEAN] dsep SH=-0.5735 SELF=+0.1331 FREE=-0.0026
-  side=13 d=5: a_mut=-0.320845 SNR=5.61 [ATTRACT] [CLEAN] dsep SH=-0.2597 SELF=+0.1824 FREE=-0.0283
-  side=13 d=6: a_mut=-0.226797 SNR=5.68 [ATTRACT] [CLEAN] dsep SH=-0.0910 SELF=+0.2262 FREE=-0.0298
-  side=15 d=3: a_mut=-0.844742 SNR=8.60 [ATTRACT] [CLEAN] dsep SH=-1.0625 SELF=+0.0608 FREE=-0.0002
-  side=15 d=4: a_mut=-0.494767 SNR=6.27 [ATTRACT] [CLEAN] dsep SH=-0.6136 SELF=+0.0807 FREE=-0.0002
-  side=15 d=5: a_mut=-0.314301 SNR=5.68 [ATTRACT] [CLEAN] dsep SH=-0.3264 SELF=+0.1128 FREE=-0.0025
-  side=15 d=6: a_mut=-0.220136 SNR=5.65 [ATTRACT] [CLEAN] dsep SH=-0.1729 SELF=+0.1374 FREE=-0.0026
-  fit: |a_mut| ~ d^-1.927  (R^2=0.9985, clean=12/12, 31.2s)
-
---- mu^2=0.001 ---
-  side=11 d=3: a_mut=-0.862648 SNR=7.81 [ATTRACT] [CLEAN] dsep SH=-0.9765 SELF=+0.1752 FREE=-0.0283
-  side=11 d=4: a_mut=-0.531049 SNR=6.04 [ATTRACT] [CLEAN] dsep SH=-0.5007 SELF=+0.2389 FREE=-0.0298
-  side=11 d=5: a_mut=-0.334646 SNR=5.93 [ATTRACT] [CLEAN] dsep SH=-0.1831 SELF=+0.2465 FREE=-0.2111
-  side=11 d=6: a_mut=-0.237887 SNR=6.38 [ATTRACT] [CLEAN] dsep SH=+0.0240 SELF=+0.3372 FREE=-0.2340
-  side=13 d=3: a_mut=-0.858946 SNR=8.25 [ATTRACT] [CLEAN] dsep SH=-1.0373 SELF=+0.1082 FREE=-0.0025
-  side=13 d=4: a_mut=-0.517182 SNR=6.14 [ATTRACT] [CLEAN] dsep SH=-0.5804 SELF=+0.1445 FREE=-0.0026
-  side=13 d=5: a_mut=-0.333478 SNR=5.56 [ATTRACT] [CLEAN] dsep SH=-0.2641 SELF=+0.1949 FREE=-0.0283
-  side=13 d=6: a_mut=-0.239026 SNR=5.64 [ATTRACT] [CLEAN] dsep SH=-0.0927 SELF=+0.2415 FREE=-0.0298
-  side=15 d=3: a_mut=-0.855371 SNR=8.58 [ATTRACT] [CLEAN] dsep SH=-1.0679 SELF=+0.0678 FREE=-0.0002
-  side=15 d=4: a_mut=-0.507894 SNR=6.24 [ATTRACT] [CLEAN] dsep SH=-0.6220 SELF=+0.0904 FREE=-0.0002
-  side=15 d=5: a_mut=-0.327099 SNR=5.63 [ATTRACT] [CLEAN] dsep SH=-0.3326 SELF=+0.1239 FREE=-0.0025
-  side=15 d=6: a_mut=-0.232758 SNR=5.61 [ATTRACT] [CLEAN] dsep SH=-0.1771 SELF=+0.1510 FREE=-0.0026
-  fit: |a_mut| ~ d^-1.871  (R^2=0.9986, clean=12/12, 29.2s)
+row legend: r mu2 side d a_mut SNR signal quality; A=ATTRACT C=CLEAN
+r 0.22 11 3 -5.666737e-01 9.69 A C
+r 0.22 11 4 -2.475541e-01 8.47 A C
+r 0.22 11 5 -1.132431e-01 8.72 A C
+r 0.22 11 6 -5.698757e-02 8.83 A C
+r 0.22 13 3 -5.673538e-01 9.74 A C
+r 0.22 13 4 -2.462224e-01 8.46 A C
+r 0.22 13 5 -1.140906e-01 8.16 A C
+r 0.22 13 6 -5.669205e-02 8.15 A C
+r 0.22 15 3 -5.674784e-01 9.78 A C
+r 0.22 15 4 -2.457804e-01 8.48 A C
+r 0.22 15 5 -1.139768e-01 8.16 A C
+r 0.22 15 6 -5.634204e-02 8.12 A C
+mu^2=   0.22: alpha=-3.315 R^2=0.9960 attractive=12/12 clean=12/12 min_SNR=8.12
+r 0.05 11 3 -7.601928e-01 8.21 A C
+r 0.05 11 4 -4.130435e-01 6.54 A C
+r 0.05 11 5 -2.335849e-01 6.47 A C
+r 0.05 11 6 -1.485366e-01 6.75 A C
+r 0.05 13 3 -7.576446e-01 8.55 A C
+r 0.05 13 4 -4.036634e-01 6.62 A C
+r 0.05 13 5 -2.310815e-01 6.13 A C
+r 0.05 13 6 -1.450616e-01 6.14 A C
+r 0.05 15 3 -7.559390e-01 8.74 A C
+r 0.05 15 4 -3.988731e-01 6.68 A C
+r 0.05 15 5 -2.274906e-01 6.20 A C
+r 0.05 15 6 -1.408549e-01 6.14 A C
+mu^2=   0.05: alpha=-2.392 R^2=0.9978 attractive=12/12 clean=12/12 min_SNR=6.13
+r 0.01 11 3 -8.399419e-01 7.89 A C
+r 0.01 11 4 -5.025751e-01 6.13 A C
+r 0.01 11 5 -3.093915e-01 6.02 A C
+r 0.01 11 6 -2.148627e-01 6.43 A C
+r 0.01 13 3 -8.359135e-01 8.32 A C
+r 0.01 13 4 -4.888236e-01 6.23 A C
+r 0.01 13 5 -3.066800e-01 5.67 A C
+r 0.01 13 6 -2.132702e-01 5.73 A C
+r 0.01 15 3 -8.324376e-01 8.62 A C
+r 0.01 15 4 -4.800720e-01 6.32 A C
+r 0.01 15 5 -3.002152e-01 5.74 A C
+r 0.01 15 6 -2.064938e-01 5.70 A C
+mu^2=   0.01: alpha=-1.992 R^2=0.9984 attractive=12/12 clean=12/12 min_SNR=5.67
+r 0.005 11 3 -8.522562e-01 7.85 A C
+r 0.005 11 4 -5.178412e-01 6.08 A C
+r 0.005 11 5 -3.228736e-01 5.97 A C
+r 0.005 11 6 -2.271075e-01 6.40 A C
+r 0.005 13 3 -8.483306e-01 8.28 A C
+r 0.005 13 4 -5.039059e-01 6.18 A C
+r 0.005 13 5 -3.208452e-01 5.61 A C
+r 0.005 13 6 -2.267972e-01 5.68 A C
+r 0.005 15 3 -8.447418e-01 8.60 A C
+r 0.005 15 4 -4.947668e-01 6.27 A C
+r 0.005 15 5 -3.143008e-01 5.68 A C
+r 0.005 15 6 -2.201355e-01 5.65 A C
+mu^2=  0.005: alpha=-1.927 R^2=0.9985 attractive=12/12 clean=12/12 min_SNR=5.61
+r 0.001 11 3 -8.626478e-01 7.81 A C
+r 0.001 11 4 -5.310490e-01 6.04 A C
+r 0.001 11 5 -3.346456e-01 5.93 A C
+r 0.001 11 6 -2.378867e-01 6.38 A C
+r 0.001 13 3 -8.589459e-01 8.25 A C
+r 0.001 13 4 -5.171818e-01 6.14 A C
+r 0.001 13 5 -3.334780e-01 5.56 A C
+r 0.001 13 6 -2.390264e-01 5.64 A C
+r 0.001 15 3 -8.553714e-01 8.58 A C
+r 0.001 15 4 -5.078941e-01 6.24 A C
+r 0.001 15 5 -3.270991e-01 5.63 A C
+r 0.001 15 6 -2.327584e-01 5.61 A C
+mu^2=  0.001: alpha=-1.871 R^2=0.9986 attractive=12/12 clean=12/12 min_SNR=5.56
+============================================================================================
+EXECUTABLE CERTIFICATE
+============================================================================================
+[PASS] C1 five declared mu^2 fits are finite
+[PASS] C2 all 60 sampled rows are attractive
+[PASS] C3 all 60 sampled rows are clean
+[PASS] C4 fitted exponents soften strictly across the declared grid
+[PASS] C5 displayed exponents reproduce the source table
+[PASS] C6 displayed R^2 values reproduce the source table
+TOTAL: PASS=6 FAIL=0
 
 ============================================================================================
-SUMMARY
+SEPARATELY SCOPED BOTH-MASSES CENTROID CERTIFICATE
 ============================================================================================
-mu^2=   0.22: alpha=-3.315  R^2=0.9960  clean=12/12
-mu^2=   0.05: alpha=-2.392  R^2=0.9978  clean=12/12
-mu^2=   0.01: alpha=-1.992  R^2=0.9984  clean=12/12
-mu^2=  0.005: alpha=-1.927  R^2=0.9985  clean=12/12
-mu^2=  0.001: alpha=-1.871  R^2=0.9986  clean=12/12
+BOTH-MASSES FINITE CENTROID-PROXY DIAGNOSTIC
+surface: side=15 G=5 mu2=0.001 d=5 mass_parameters=[0.5, 1.0, 2.0, 3.0] early_indices=2..7
+proxy: P_A=M_A<dv_A>; P_B=M_B<-dv_B>; balance=P_A-P_B
+  fit: P_A^mut = -6.949523e-02 * M_B + -8.017698e-02   R^2=0.944530
+  fit: P_B^mut = +6.871958e-02 * M_A + +8.888282e-02   R^2=0.940033
+  P_A^mut / M_B: mean=-1.087258e-01, std=3.846885e-02, CV=35.382%
+  P_B^mut / M_A: mean=+1.138656e-01, std=4.270019e-02, CV=37.501%
+  row counts at the declared relative-imbalance thresholds: PASS=0 MARGINAL=0 NONPASS=16
+  mean relative imbalance = 100.000%
+  max  relative imbalance = 100.000%
+
+DECLARED FINITE CENTROID-PROXY CRITERIA
+  anchor linearity R^2>0.95 on both slices: NONPASS
+  normalized-grid CV<15% on both channels: NONPASS
+  balance mean<10% and max<25%: NONPASS
+  diagnostic outcome: this sampled centroid proxy does not establish full Newton closure
+  boundary: no alternate observable, parameter surface, or universal no-go was tested
+
+EXECUTABLE CERTIFICATE
+[PASS] B1 complete 4x4 mass grid
+[PASS] B2 both anchor fits are finite
+[PASS] B3 both normalization CVs are finite
+[PASS] B4 every displayed balance row was classified
+[PASS] B5 displayed anchor R^2 values reproduce the source table
+[PASS] B6 displayed normalization CVs reproduce the source table
+[PASS] B7 displayed balance counts reproduce the source table
+[PASS] B8 displayed balance mean/max reproduce the source table
+[PASS] B9 reported nonpass is exactly the declared finite diagnostic
+TOTAL: PASS=9 FAIL=0
+
 ----- stderr -----
 

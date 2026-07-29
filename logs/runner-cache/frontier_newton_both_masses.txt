@@ -1,0 +1,102 @@
+===== runner cache v1 =====
+runner: scripts/frontier_newton_both_masses.py
+runner_sha256: bcf8d594e021e9df08c1f65813e08d613b794840ae19806f670135e2cf238359
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 66.82
+status: ok
+----- stdout -----
+============================================================================================
+OPEN WILSON BOTH-MASSES FINITE CENTROID-PROXY TEST
+============================================================================================
+Lattice: 15^3 = 3375 sites, open BC
+Wilson: r=1.0, DT=0.08, sigma=1.0
+Gravity: G=5.0, mu2=0.001, REG=1e-06
+Separation d=5, positions A@x=5, B@x=10
+Mass-parameter grid: [0.5, 1.0, 2.0, 3.0]
+
+Observable (a declared centroid proxy, not a momentum operator):
+  P_A^mut = M_A * <v_A^shared - v_A^self>
+  P_B^mut = M_B * <v_B^self - v_B^shared>   (same inward-positive sign)
+  balance proxy uses signed values: P_A^mut - P_B^mut
+
+  M_A   M_B |      P_A^mut      P_B^mut |        a_A        a_B |     P_A+P_B      PA/MB      PB/MA
+---------------------------------------------------------------------------------------------------
+  0.5   0.5 | -7.700765e-02 +8.490118e-02 | +4.468706e-02 +5.429667e-03 |  -1.619e-01 -1.540e-01 +1.698e-01
+  0.5   1.0 | -1.340166e-01 +1.044186e-01 | +5.196815e-02 -1.350601e-02 |  -2.384e-01 -1.340e-01 +2.088e-01
+  0.5   2.0 | -1.969140e-01 +7.408735e-02 | +4.694912e-02 -3.926145e-03 |  -2.710e-01 -9.846e-02 +1.482e-01
+  0.5   3.0 | -2.254769e-01 +4.726069e-02 | +4.252686e-02 -8.139518e-04 |  -2.727e-01 -7.516e-02 +9.452e-02
+  1.0   0.5 | -9.682316e-02 +1.423406e-01 | +3.847003e-02 +1.827322e-03 |  -2.392e-01 -1.936e-01 +1.423e-01
+  1.0   1.0 | -1.629526e-01 +1.716736e-01 | +4.823179e-02 -1.854267e-02 |  -3.346e-01 -1.630e-01 +1.717e-01
+  1.0   2.0 | -2.378603e-01 +1.249820e-01 | +4.978641e-02 -5.503449e-03 |  -3.628e-01 -1.189e-01 +1.250e-01
+  1.0   3.0 | -2.747909e-01 +8.217399e-02 | +4.836799e-02 -1.205361e-03 |  -3.570e-01 -9.160e-02 +8.217e-02
+  2.0   0.5 | -7.035441e-02 +2.029332e-01 | +1.073488e-02 -6.522417e-03 |  -2.733e-01 -1.407e-01 +1.015e-01
+  2.0   1.0 | -1.201676e-01 +2.452397e-01 | +1.470109e-02 -2.308632e-02 |  -3.654e-01 -1.202e-01 +1.226e-01
+  2.0   2.0 | -1.826431e-01 +1.873728e-01 | +1.667060e-02 -6.830003e-03 |  -3.700e-01 -9.132e-02 +9.369e-02
+  2.0   3.0 | -2.180872e-01 +1.290372e-01 | +1.674204e-02 -1.586249e-03 |  -3.471e-01 -7.270e-02 +6.452e-02
+  3.0   0.5 | -4.552581e-02 +2.300047e-01 | +3.157488e-03 -1.103359e-02 |  -2.755e-01 -9.105e-02 +7.667e-02
+  3.0   1.0 | -7.976580e-02 +2.808767e-01 | +4.630326e-03 -2.524402e-02 |  -3.606e-01 -7.977e-02 +9.363e-02
+  3.0   2.0 | -1.264503e-01 +2.222267e-01 | +5.659686e-03 -7.460782e-03 |  -3.487e-01 -6.323e-02 +7.408e-02
+  3.0   3.0 | -1.557084e-01 +1.580495e-01 | +5.859534e-03 -1.794666e-03 |  -3.138e-01 -5.190e-02 +5.268e-02
+
+============================================================================================
+ANCHOR SLICE 1: P_A^mut vs M_B  (M_A = 1.0)
+============================================================================================
+  M_B=0.5: P_A^mut = -9.682316e-02
+  M_B=1.0: P_A^mut = -1.629526e-01
+  M_B=2.0: P_A^mut = -2.378603e-01
+  M_B=3.0: P_A^mut = -2.747909e-01
+  fit: P_A^mut = -6.949523e-02 * M_B + -8.017698e-02   R^2=0.944530
+
+============================================================================================
+ANCHOR SLICE 2: P_B^mut vs M_A  (M_B = 1.0)
+============================================================================================
+  M_A=0.5: P_B^mut = +1.044186e-01
+  M_A=1.0: P_B^mut = +1.716736e-01
+  M_A=2.0: P_B^mut = +2.452397e-01
+  M_A=3.0: P_B^mut = +2.808767e-01
+  fit: P_B^mut = +6.871958e-02 * M_A + +8.888282e-02   R^2=0.940033
+
+============================================================================================
+FULL-GRID NORMALIZATION CHECKS
+============================================================================================
+  P_A^mut / M_B: mean=-1.087258e-01, std=3.846885e-02, CV=35.382%
+  P_B^mut / M_A: mean=+1.138656e-01, std=4.270019e-02, CV=37.501%
+
+============================================================================================
+SIGNED-BALANCE PROXY CHECK
+============================================================================================
+  row counts at the declared relative-imbalance thresholds: PASS=0 MARGINAL=0 NONPASS=16
+  mean relative imbalance = 100.000%
+  max  relative imbalance = 100.000%
+
+============================================================================================
+SUMMARY
+============================================================================================
+1. Anchor slice P_A^mut vs M_B: R^2=0.944530
+2. Anchor slice P_B^mut vs M_A: R^2=0.940033
+3. Full-grid CV for P_A^mut/M_B: 35.382%
+4. Full-grid CV for P_B^mut/M_A: 37.501%
+5. Mean signed-balance-proxy imbalance: 100.000%
+
+DECLARED FINITE CENTROID-PROXY CRITERIA
+  anchor linearity R^2>0.95 on both slices: NONPASS
+  normalized-grid CV<15% on both channels: NONPASS
+  balance mean<10% and max<25%: NONPASS
+  diagnostic outcome: this sampled centroid proxy does not establish full Newton closure
+  boundary: no alternate observable, parameter surface, or universal no-go was tested
+
+EXECUTABLE CERTIFICATE
+[PASS] B1 complete 4x4 mass grid
+[PASS] B2 both anchor fits are finite
+[PASS] B3 both normalization CVs are finite
+[PASS] B4 every displayed balance row was classified
+[PASS] B5 displayed anchor R^2 values reproduce the source table
+[PASS] B6 displayed normalization CVs reproduce the source table
+[PASS] B7 displayed balance counts reproduce the source table
+[PASS] B8 displayed balance mean/max reproduce the source table
+[PASS] B9 reported nonpass is exactly the declared finite diagnostic
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

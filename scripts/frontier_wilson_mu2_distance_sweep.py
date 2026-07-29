@@ -5,7 +5,8 @@ Wilson open-lattice distance-law sweep versus screening mass.
 Goal:
   test whether the steep open-lattice Wilson distance exponent is primarily a
   screening-mass artifact by sweeping mu^2 while keeping the rest of the open
-  surface fixed.
+  surface fixed, then execute the separately scoped finite both-masses
+  centroid certificate cited by the companion note.
 
 Protocol:
   - open 3D Wilson lattice
@@ -24,13 +25,18 @@ from __future__ import annotations
 # `docs/audit/RUNNER_CACHE_POLICY.md`.
 AUDIT_TIMEOUT_SEC = 1800
 
-import time
 from dataclasses import dataclass
 
 import numpy as np
 
+import frontier_newton_both_masses as both_masses
 import frontier_wilson_two_body_open as base
 
+
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_newton_both_masses.py",
+    "scripts/frontier_wilson_two_body_open.py",
+)
 
 MU2_VALUES = (0.22, 0.05, 0.01, 0.005, 0.001)
 SIDES = (11, 13, 15)
@@ -44,7 +50,9 @@ class FitSummary:
     alpha: float
     r2: float
     n_clean: int
+    n_attractive: int
     n_total: int
+    min_snr: float
 
 
 def power_law_fit(xs, ys):
@@ -61,7 +69,6 @@ def power_law_fit(xs, ys):
 def collect_rows(mu2: float):
     rows = []
     for side in SIDES:
-        lat = base.OpenWilsonLattice(side)
         for d in DISTANCES:
             if d >= side - 2:
                 continue
@@ -79,21 +86,33 @@ def collect_rows(mu2: float):
                     "row": row,
                 }
             )
-            print(
-                f"  side={side:2d} d={d}: "
-                f"a_mut={row['a_mutual_early_mean']:+.6f} "
-                f"SNR={row['snr']:.2f} [{signal}] [{quality}] "
-                f"dsep SH={row['dsep_shared']:+.4f} SELF={row['dsep_self']:+.4f} FREE={row['dsep_free']:+.4f}"
-            )
     return rows
 
 
 def summarize_mu2(mu2: float, rows):
     clean = [(r["d"], r["amp"]) for r in rows if r["signal"] == "ATTRACT" and r["quality"] == "CLEAN"]
+    n_attractive = sum(r["signal"] == "ATTRACT" for r in rows)
+    min_snr = min(r["snr"] for r in rows)
     if len(clean) < 2:
-        return FitSummary(mu2=mu2, alpha=float("nan"), r2=float("nan"), n_clean=len(clean), n_total=len(rows))
+        return FitSummary(
+            mu2=mu2,
+            alpha=float("nan"),
+            r2=float("nan"),
+            n_clean=len(clean),
+            n_attractive=n_attractive,
+            n_total=len(rows),
+            min_snr=min_snr,
+        )
     alpha, _, r2 = power_law_fit([d for d, _ in clean], [amp for _, amp in clean])
-    return FitSummary(mu2=mu2, alpha=float(alpha), r2=float(r2), n_clean=len(clean), n_total=len(rows))
+    return FitSummary(
+        mu2=mu2,
+        alpha=float(alpha),
+        r2=float(r2),
+        n_clean=len(clean),
+        n_attractive=n_attractive,
+        n_total=len(rows),
+        min_snr=min_snr,
+    )
 
 
 def main():
@@ -106,37 +125,68 @@ def main():
     print()
 
     summaries: list[FitSummary] = []
+    print("row legend: r mu2 side d a_mut SNR signal quality; A=ATTRACT C=CLEAN")
     for mu2 in MU2_VALUES:
-        t0 = time.time()
-        print(f"--- mu^2={mu2} ---")
         rows = collect_rows(mu2)
+        for item in rows:
+            print(
+                f"r {mu2:g} {item['side']} {item['d']} "
+                f"{item['row']['a_mutual_early_mean']:+.6e} {item['snr']:.2f} "
+                f"{item['signal'][0]} {item['quality'][0]}"
+            )
         summary = summarize_mu2(mu2, rows)
         summaries.append(summary)
-        elapsed = time.time() - t0
         if np.isfinite(summary.alpha):
             print(
-                f"  fit: |a_mut| ~ d^{summary.alpha:.3f}  "
-                f"(R^2={summary.r2:.4f}, clean={summary.n_clean}/{summary.n_total}, "
-                f"{elapsed:.1f}s)"
+                f"mu^2={summary.mu2:>7g}: alpha={summary.alpha:+.3f} "
+                f"R^2={summary.r2:.4f} "
+                f"attractive={summary.n_attractive}/{summary.n_total} "
+                f"clean={summary.n_clean}/{summary.n_total} "
+                f"min_SNR={summary.min_snr:.2f}"
             )
         else:
             print(
                 f"  fit: insufficient clean attractive rows "
-                f"(clean={summary.n_clean}/{summary.n_total}, {elapsed:.1f}s)"
+                f"(clean={summary.n_clean}/{summary.n_total})"
             )
-        print()
 
     print("=" * 92)
-    print("SUMMARY")
+    print("EXECUTABLE CERTIFICATE")
     print("=" * 92)
-    for summary in summaries:
-        if np.isfinite(summary.alpha):
-            print(
-                f"mu^2={summary.mu2:>7g}: alpha={summary.alpha:+.3f}  "
-                f"R^2={summary.r2:.4f}  clean={summary.n_clean}/{summary.n_total}"
-            )
-        else:
-            print(f"mu^2={summary.mu2:>7g}: insufficient clean rows ({summary.n_clean}/{summary.n_total})")
+    expected_alpha = (-3.315, -2.392, -1.992, -1.927, -1.871)
+    expected_r2 = (0.9960, 0.9978, 0.9984, 0.9985, 0.9986)
+    checks = {
+        "C1 five declared mu^2 fits are finite": len(summaries) == 5
+        and all(np.isfinite(s.alpha) and np.isfinite(s.r2) for s in summaries),
+        "C2 all 60 sampled rows are attractive": all(
+            s.n_attractive == s.n_total == 12 for s in summaries
+        ),
+        "C3 all 60 sampled rows are clean": all(
+            s.n_clean == s.n_total == 12 for s in summaries
+        ),
+        "C4 fitted exponents soften strictly across the declared grid": all(
+            left.alpha < right.alpha for left, right in zip(summaries, summaries[1:])
+        ),
+        "C5 displayed exponents reproduce the source table": all(
+            round(s.alpha, 3) == target for s, target in zip(summaries, expected_alpha)
+        ),
+        "C6 displayed R^2 values reproduce the source table": all(
+            round(s.r2, 4) == target for s, target in zip(summaries, expected_r2)
+        ),
+    }
+    for label, passed in checks.items():
+        print(f"[{('PASS' if passed else 'FAIL')}] {label}")
+    n_pass = sum(checks.values())
+    n_fail = len(checks) - n_pass
+    print(f"TOTAL: PASS={n_pass} FAIL={n_fail}")
+    if n_fail:
+        raise SystemExit(1)
+
+    print()
+    print("=" * 92)
+    print("SEPARATELY SCOPED BOTH-MASSES CENTROID CERTIFICATE")
+    print("=" * 92)
+    both_masses.main(compact=True)
 
 
 if __name__ == "__main__":

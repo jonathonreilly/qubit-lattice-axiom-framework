@@ -1025,7 +1025,7 @@
         },
         {
           "claim_id": "gauge_vacuum_plaquette_local_environment_factorization_theorem_note",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "gauge_vacuum_plaquette_mixed_cumulant_audit_note",

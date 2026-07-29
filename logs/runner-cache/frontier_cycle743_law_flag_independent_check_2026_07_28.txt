@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle743_law_flag_independent_check_2026_07_28.py
+runner_sha256: 7e04e8f3a26d4c85ce592ad2b01b99c00e99075303a6a8c39f618030fde9da98
+input_fingerprint_sha256: 1bebbb2fe95a58a9c8281b4cddbfde5b4e60fc42cc069e62c285937163a6282d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 14.58
+status: ok
+----- stdout -----
+PASS A_extraction
+PASS B_predicate_recount
+PASS C_adapter_recount
+PASS D_independence_probe
+PASS E_discipline
+PASS OUTPUT_stdout_under_150KB
+{"AUDIT_INPUT_PATHS":["scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py","scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py","scripts/frontier_cycle731_token_count_certificate_2026_07_28.py"],"NOTE_PATH":"docs/LAW_FLAG_DERIVED_CYCLE743_BOUNDED_THEOREM_NOTE_2026-07-28.md","audit_timeout_seconds":900,"bounded":true,"certificates":{"A_extraction":{"adapter_delta_argument":"law_domain","audit_tuple_literal":true,"boundary_keys":{"actual_derived":false,"admiss_derived":false,"binder_derived":false,"law_flag_derived_at_fixture_scope":true,"w3_closed":false},"charge_violators":183,"count_violators":55,"declared_mismatches":0,"lawful_orbit_events":4,"lawful_q_time_rows":44,"pass":true,"predicate_composition_extracted":true},"B_predicate_recount":{"charge_mismatches":0,"charge_refusal_events":341,"charge_states":183,"count_literal_refusals":55,"count_mismatches":0,"count_states":55,"lawful_mismatches":0,"lawful_orbit_events":4,"lawful_q_time_rows":44,"pass":true,"total_states_recounted":242},"C_adapter_recount":{"controller_output_and_trace_equal":true,"hostile_cascade_refused":true,"hostile_constant_status":"admitted","hostile_derived_law_domain":0,"hostile_derived_status":"refused_supplied","lawful_events":4,"lawful_trace_byte_equal":true,"lawful_trace_sha256":"9cf1d293867d8097ca365fad17f3976b930e2d99674d59107f14629f66521f09","only_admit_argument_changed":"law_domain","pass":true},"D_independence_probe":{"acceptance_call_feedback":[],"genuinely_upstream_of_admit":true,"independent_dynamic_inputs":["A","B","h","program","refs"],"pass":true,"primary_dynamic_inputs":["A","B","h","program","refs"],"supplied_flag_inputs":[]},"E_discipline":{"blocklist_clean":true,"import_blocklist":["frontier_cycle743_law_flag_derived_2026_07_28"],"landed_write_attempts":0,"pass":true,"remaining_scope":"three flags remain supplied; w3 open","scope_statement":"This changes LAW's supply status AT THE HELD FIXTURE SCOPE only after this exact identification; it does NOT derive ADMISS; ACTUAL/BINDER remain supplied constants; W3 is NOT closed (three flags remain; the composed occurrence route is the named next mechanism).","w3_closed":false}},"checks":{"A_extraction":true,"B_predicate_recount":true,"C_adapter_recount":true,"D_independence_probe":true,"E_discipline":true,"OUTPUT_stdout_under_150KB":true},"checks_failed":0,"checks_passed":6,"pass":true,"runtime_seconds":14.05423,"terminal":"CYCLE743_LAW_FLAG_INDEPENDENT_CHECK_PASS"}
+
+----- stderr -----
+

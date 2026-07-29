@@ -1,0 +1,58 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle743_law_flag_derived_2026_07_28.txt": "180840910019bcf29ce8f043bc31295ff0f31ef4764cbb565d642c260fa7e3b9",
+      "frontier_cycle743_law_flag_independent_check_2026_07_28.txt": "8b42f6791a8bf6b73154494e6f96fa622bd15cabcab60bcbdb889d2ae92509f3"
+    },
+    "note": {
+      "path": "docs/LAW_FLAG_DERIVED_CYCLE743_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "61dd4553c68a1826d3ed6c8552bf8e020bcf0f43727c5b12315d23f79de32b4a"
+    },
+    "runners": {
+      "frontier_cycle743_law_flag_derived_2026_07_28.py": "f6ad1d7ace8e2aca46811868250cf0f0f863b4f2d9334f88ae0de45b7bebf3a1",
+      "frontier_cycle743_law_flag_independent_check_2026_07_28.py": "7e04e8f3a26d4c85ce592ad2b01b99c00e99075303a6a8c39f618030fde9da98"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "actual_derived": false,
+    "admiss_derived": false,
+    "axiom_pressure": false,
+    "binder_derived": false,
+    "fixed_supplies": "BINDER/ACTUAL/ADMISS (constant-1, unchanged); everything the Cycle-719/730/731 packages declare at their scopes",
+    "law_flag_derived_at_fixture_scope": true,
+    "next_mechanism": "composed epoch-occurrence interface (Cycle-332/335 surfaces; W1/W2 preconditions now met at scope)",
+    "not_derived": "ADMISS (the audited 719 evidence that controller-domain checks do not derive admission stands); ACTUAL; BINDER; W3 as a wall",
+    "positive_scope": "LAW_PREDICATE composed from the landed 730/731 enforcement machinery (no new constants); exhaustive identification on lawful (4/4 orbit events; 44/44 Q-time positions) and violating (183 + 55 frozen states) families with zero mismatches; the adapter byte-exact on lawful traces with the hostile case flipping admitted -> refused_supplied through the derived flag alone; structural upstream independence (pre-state only; no admit feedback); deletion control",
+    "w3_closed": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 743,
+  "date": "2026-07-29",
+  "result": {
+    "adapter": "lawful byte-exact; hostile admitted->refused_supplied via derived flag",
+    "flags_remaining_supplied": [
+      "BINDER",
+      "ACTUAL",
+      "ADMISS"
+    ],
+    "identification_lawful": {
+      "mismatches": 0,
+      "orbit_events": "4/4",
+      "q_time_positions": "44/44"
+    },
+    "identification_violating": {
+      "cycle730_states": 183,
+      "cycle731_states": 55,
+      "mismatches": 0
+    },
+    "independence": "pre-state only (A/B/refs/h/program); no admit feedback"
+  },
+  "status": "CYCLE743_LAW_FLAG_DERIVED_PASS"
+}

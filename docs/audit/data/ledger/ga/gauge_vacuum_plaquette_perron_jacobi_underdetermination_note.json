@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-29T19:59:15.909533+00:00",
+  "audit_invocation_history": [
+    "bcd667d1309c45e8824ee0800b7b5723"
+  ],
+  "audit_invocation_id": "bcd667d1309c45e8824ee0800b7b5723",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 17,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py"
+    },
+    "criticality": "critical",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "For every N>=0, real beta, and supplied nonnegative swap-symmetric character-diagonal sequence on B_N, T_beta=M_beta D_beta M_beta has the stated exact entries, positivity, symmetry, rank, kernel, spectral bounds, and definiteness characterization."
+    },
+    "dep_claim_type": {
+      "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note": "retained"
+    },
+    "deps": [
+      "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 12.75,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "a94dd7345a7a0e36034acaa89bcf13d3a4db16b588f6db145fa84abda65066e3",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "a94dd7345a7a0e36034acaa89bcf13d3a4db16b588f6db145fa84abda65066e3",
+    "runner_path": "scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 860
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-B-20260729-7638a5ee",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The numerical separations are computed, but exact membership in the swap-symmetric supplied-diagonal class does not close: the runner reports a nonzero packet symmetry error and accepts it only by tolerance.",
   "claim_id": "gauge_vacuum_plaquette_perron_jacobi_underdetermination_note",
-  "claim_scope": null,
+  "claim_scope": "On the 36-state NMAX=5 box, the stipulated MODE_MAX=80 packet and supplied R_A/R_B matrices were audited as exact swap-symmetric witnesses for distinct Perron moments and Jacobi data.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-29T19:59:15.909533+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,22 @@
     "gauge_vacuum_plaquette_source_sector_matrix_element_factorization_note"
   ],
   "direct_in_degree": 6,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "fresh_context",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 12.75,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The runner exhibits two admissible supplied diagonals for the same J_box whose Perron first moments and Jacobi coefficients differ.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "1f706524511f8874e00cbdf7f8a0d8ea23c308c1aafa44b9082c61d9aafce6c7",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_PERRON_JACOBI_UNDERDETERMINATION_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Recheck exact swap commutation and the moment/Jacobi gaps after defining an exactly symmetrized positive packet or supplying an exact symmetry proof and certified computation.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-current",
   "previous_audits": [
@@ -318,14 +374,14 @@
     }
   ],
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 4,
     "B": 0,
-    "C": 0,
+    "C": 9,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 13
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_perron_jacobi_underdetermination.py",
   "title": "Gauge-Vacuum Plaquette Perron/Jacobi Underdetermination",
   "transitive_descendants": 860,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the exact class-membership step is contradicted by the runner\u2019s `packet symmetry err = 2.711e-19`; its check replaces exact swap commutation with a `< 1.0e-12` tolerance. Why this blocks: multiplying R_A or R_B by that packet does not establish that either resulting diagonal, and hence either transfer matrix, belongs to the exact swap-symmetric class required by the theorem, so the finite underdetermination consequence is not certified as written. Repair target: construct an exactly symmetrized positive packet, or prove exact conjugation symmetry for the stated finite mode sum, then recompute and certify the Perron and Jacobi separations. Claim boundary until fixed: the current runner provides a numerically near-symmetric finite-box separation outside the claimed exact witness class."
 }

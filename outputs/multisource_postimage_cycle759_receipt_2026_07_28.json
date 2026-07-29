@@ -1,0 +1,45 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle759_multisource_postimage_law_2026_07_28.txt": "2327829ddbc9a3c7c76e93a44d867481a24ed7d6b729e405c1200aaeeb8e9f43",
+      "frontier_cycle759_postimage_independent_check_2026_07_28.txt": "332e7246dc30e225f4ffcf0214346ec3830c38223103e51df80ac0ad8a702a60"
+    },
+    "note": {
+      "path": "docs/MULTISOURCE_POSTIMAGE_LAW_CYCLE759_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "8e1cb892227cc8ea74e517a928ba07dfb587826a5a1678c5d34705448d021901"
+    },
+    "runners": {
+      "frontier_cycle759_multisource_postimage_law_2026_07_28.py": "59c92f46aec9249e6dd46c8a8423223ffaa8c1b54cdc8a33ee402373b19292f0",
+      "frontier_cycle759_postimage_independent_check_2026_07_28.py": "a4d1fea0b16e25c443142ed35a50b450294a92e9124e54efde800d4266e92bf5"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "everything the Cycle-736/750 packages declare",
+    "forcing_ledger": "multi-source actuality now carries two frozen attempt-censuses (758 over-exclusion; 759 non-uniform residual) + an empty structure probe \u2014 the campaign's strongest missing-content candidate, at two attempts down one route family; next premise family: residual-as-physical-content",
+    "no_quotient_by_fiat": true,
+    "not_derived": "multi-source actuality; any quotient law (refused without a uniform ownership block)",
+    "outcome": "RESIDUAL_NON_UNIFORM",
+    "positive_scope": "the exhaustive residual characterization; the gated law construction; the reduction proof; the frozen map + empty probe",
+    "residual_census": "176/176 lawful k=2 updates unclean; signatures 1/1/12/14 per epoch; 25 global",
+    "single_source_reduction_exact": "44/44",
+    "structure_probe": "empty \u2014 no nontrivial symmetry-reduced correlation; the 176-key geometry map frozen uncompressed"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 12
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 759,
+  "date": "2026-07-29",
+  "result": {
+    "clean": 0,
+    "correlation": "none found (bounded adversarial probe)",
+    "lawful_updates": 176,
+    "signatures_global": 25
+  },
+  "status": "CYCLE759_POSTIMAGE_ATTEMPT_RESIDUAL_NON_UNIFORM_PASS"
+}

@@ -191,8 +191,8 @@ true-inverse, counterterm, volume, or on-shell matching.
   coefficient required by the comparison chain.
 - **W10 — anomalous dimension:** derive the relevant fixed-point anomalous
   dimension.
-- **W11 — LV sufficiency:** complete the quantitative Lorentz-violation bound
-  comparison.
+- **W11 — LV map:** after W9--W10, derive the remaining scale/matching and
+  compare to quantitative bounds; it excludes W9--W10.
 
 Closing any one wall does not close the others. The complete independence
 record appears in N2 below.
@@ -239,9 +239,8 @@ seven counted attacks support only the bounded standalone surface.
 
 ### N2 — Wall independence
 
-For each pair, `N/N/I` means closing the left wall does not close the right,
-closing the right does not close the left, and no shared unresolved premise
-makes them duplicates.
+`N/N/I` means neither closure entails the other. W11 is only the post-W9--W10
+matching residual.
 
 | Left wall | Later-wall pairs, all `N/N/I` |
 |---|---|
@@ -353,15 +352,15 @@ remains required for a physical flow.
 
 ### Complete execution-evidence certificate
 
-The complete `3773`-character primary cache is unclipped, SHA-pinned to
-`58e18c1c536388f9abc095c7cbaebf2c16d1a4f370fb3d57c170eb932878392e`,
+The complete `3772`-character primary cache is unclipped, SHA-pinned to
+`3d3af2b179977877676f34eaf4f012d33c45417e308b55eafc0f78ceeafe3a15`,
 has ordered counts `V1--V7 = 5/2/4/3/3/6/2`, no `[FAIL]`, and
 `TOTAL: PASS=25 FAIL=0`.  Its independent subprocess, whose arithmetic the
 primary does not consume, uses `tr(g_a g_m g_b g_n)/4 = delta_am delta_bn -
-delta_ab delta_mn + delta_an delta_mb`.  Standalone it gives `PASS=10 FAIL=0`;
-its cache pins runner SHA `9734ee0e814c6f454d5963a0270f2142dbf9388828ce36e37a51e263cf6b7fd2`
+delta_ab delta_mn + delta_an delta_mb`.  Standalone it gives `PASS=7 FAIL=0`;
+its cache pins runner SHA `d524bfffed29c791db8049506f9547089077e60a03f33a206a626eb86f807ffc`
 and primary-input fingerprint
-`3b8b8ade39deef2f33fe333ba2c034799779cb30ac5689cf7afc064055fee3aa`.
+`1ba2a5747fe3a7b0e142152fc23a6cb51737af18a9fab9dfe6f1d8a06a2499f7`.
 
 | Quantity | Independent result |
 |---|---:|
@@ -385,11 +384,12 @@ Expected final lines, respectively:
 
 ```text
 TOTAL: PASS=25 FAIL=0
-TOTAL: PASS=10 FAIL=0
+TOTAL: PASS=7 FAIL=0
 ```
 
-The independent runner fingerprints the primary source and cache, so either
-changing makes its cache stale.  This certificate supplies no W1--W11 bridge.
+The helper fingerprints the primary source and never reads either cache, so
+concurrent canonical refresh is race-free. Audit infrastructure owns cache
+identity, completeness, and packet fit. This supplies no W1--W11 bridge.
 
 ## Audit Boundary
 

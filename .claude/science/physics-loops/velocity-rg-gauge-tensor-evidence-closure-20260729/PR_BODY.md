@@ -15,8 +15,10 @@ pole-speed, or RG-coefficient bridge.
 ## Checks
 
 - Primary live/cache: independent math `PASS=7 FAIL=0`, ordered V1--V7
-  `PASS=25 FAIL=0`; complete stdout `3773` characters.
-- Standalone independent live/cache: `PASS=10 FAIL=0`.
+  `PASS=25 FAIL=0`; complete cache `3772` characters (`3400` stdout characters).
+- Standalone independent live/cache: `PASS=7 FAIL=0`; it fingerprints the
+  primary source but has no runtime/cache dependency, so concurrent stale-cache
+  refresh is deterministic.
 - Source `29795 < 30000`, primary/helper source below `40000`, and all packet
   roles contain no clipping marker.
 - Vocabulary lint, Python compilation, cache freshness, `git diff --check`,

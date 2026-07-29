@@ -892,7 +892,7 @@ def main() -> int:
     root = Path(__file__).resolve().parent.parent
     independent = root / AUDIT_INPUT_PATHS[0]
     independent_run = subprocess.run(
-        [sys.executable, str(independent), "--math-only"],
+        [sys.executable, str(independent)],
         cwd=root,
         capture_output=True,
         text=True,

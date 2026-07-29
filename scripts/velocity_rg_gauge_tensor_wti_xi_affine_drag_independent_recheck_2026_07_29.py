@@ -8,9 +8,10 @@ gamma-trace identities,
   tr(g_a g_m g_b g_n) / 4
       = delta_am delta_bn - delta_ab delta_mn + delta_an delta_mb,
 
-rather than constructing the primary runner's 4 x 4 gamma matrices.  It also
-checks that the primary cache is a complete, SHA-pinned, sub-6000-character
-V1--V7 transcript so the audit packet can render every one of its 25 checks.
+rather than constructing the primary runner's 4 x 4 gamma matrices.  Cache
+identity, completeness, and packet-fit checks remain owned by the canonical
+audit infrastructure, so this helper has no runtime dependency on either
+runner cache and can be refreshed safely in parallel with the primary runner.
 
 The result remains only a bounded finite-grid static-response certificate on
 the declared periodic N^4 naive-Dirac SU(2) reconstruction.
@@ -18,25 +19,15 @@ the declared periodic N^4 naive-Dirac SU(2) reconstruction.
 
 from __future__ import annotations
 
-import hashlib
 import math
-import re
-import sys
 from fractions import Fraction
-from pathlib import Path
 
 import numpy as np
 
 AUDIT_TIMEOUT_SEC = 120
 AUDIT_INPUT_PATHS = (
     "scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py",
-    "logs/runner-cache/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.txt",
 )
-
-ROOT = Path(__file__).resolve().parent.parent
-PRIMARY = ROOT / AUDIT_INPUT_PATHS[0]
-PRIMARY_CACHE = ROOT / AUDIT_INPUT_PATHS[1]
-PRIMARY_SHA256 = "58e18c1c536388f9abc095c7cbaebf2c16d1a4f370fb3d57c170eb932878392e"
 
 PASS = 0
 FAIL = 0
@@ -137,37 +128,6 @@ def ward_residual(Pi: np.ndarray, q: np.ndarray) -> float:
     )
 
 
-def check_primary_certificate() -> None:
-    primary_sha = hashlib.sha256(PRIMARY.read_bytes()).hexdigest()
-    cache = PRIMARY_CACHE.read_text(encoding="utf-8")
-    cache_sha_match = re.search(r"^runner_sha256: ([0-9a-f]{64})$", cache, re.MULTILINE)
-    check(
-        "E1.primary-sha",
-        primary_sha == PRIMARY_SHA256
-        and cache_sha_match is not None
-        and cache_sha_match.group(1) == primary_sha,
-        f"primary/cache runner SHA-256 = {primary_sha}",
-    )
-
-    section_counts = {
-        section: len(re.findall(rf"^\[PASS\] {section}\.\d{{2}} ", cache, re.MULTILINE))
-        for section in ("V1", "V2", "V3", "V4", "V5", "V6", "V7")
-    }
-    check(
-        "E2.complete-stdout",
-        section_counts == {"V1": 5, "V2": 2, "V3": 4, "V4": 3, "V5": 3, "V6": 6, "V7": 2}
-        and len(re.findall(r"^\[PASS\] V[1-7]\.\d{2} ", cache, re.MULTILINE)) == 25
-        and "[FAIL]" not in cache
-        and "TOTAL: PASS=25 FAIL=0" in cache,
-        f"V1--V7 counts = {section_counts}; total PASS=25 FAIL=0",
-    )
-    check(
-        "E3.packet-fit",
-        len(cache) <= 6000 and "clipped" not in cache.lower(),
-        f"complete cache length = {len(cache)} chars <= 6000; no clipping marker",
-    )
-
-
 def check_normalizations() -> tuple[Fraction, Fraction]:
     # For a non-self-conjugate Fourier mode, sum_x cos^2(q.x+phi)=V/2.
     # The quadratic action contributes its separate 1/2, hence V/4.
@@ -181,7 +141,7 @@ def check_normalizations() -> tuple[Fraction, Fraction]:
     cosine_sums = [float(np.sum(np.cos(x @ q + q[mu] / 2.0) ** 2)) for mu in range(4)]
     v_over_4 = Fraction(n**4, 4)
     check(
-        "E4.real-mode-normalization",
+        "E1.real-mode-normalization",
         any((2 * qidx) % n != 0)
         and all(abs(s / 2.0 - float(v_over_4)) < 1.0e-10 for s in cosine_sums),
         f"sum cos^2=V/2={cosine_sums[0]:.0f}; action factor gives V/4={v_over_4}",
@@ -192,7 +152,7 @@ def check_normalizations() -> tuple[Fraction, Fraction]:
     trace_fundamental = Fraction(2, 4)
     casimir_fundamental = 3 * Fraction(1, 4)
     check(
-        "E5.su2-factors",
+        "E2.su2-factors",
         trace_fundamental == Fraction(1, 2)
         and casimir_fundamental == Fraction(3, 4),
         f"T_F=tr[(sigma_a/2)^2]={trace_fundamental}; C_F=sum_a sigma_a^2/4={casimir_fundamental}",
@@ -204,7 +164,7 @@ def check_normalizations() -> tuple[Fraction, Fraction]:
         np.abs(qhat(k) * np.cos(p - k / 2.0) - (np.sin(p) - np.sin(p - k)))
     )
     check(
-        "E6.midpoint-wti-factor",
+        "E3.midpoint-wti-factor",
         trig_residual < 1.0e-14,
         f"max scalar identity residual = {trig_residual:.3e}",
     )
@@ -219,7 +179,7 @@ def check_load_bearing_responses(C_F: Fraction, T_F: Fraction) -> None:
     dv_b_offset = math.sqrt((1.0 + eps / 2.0) / (1.0 - eps / 2.0)) - 1.0
     dv_f_response = -float(C_F) * total
     check(
-        "E7.fermion-response",
+        "E4.fermion-response",
         abs(tad_direct - tad_closed) < 1.0e-14
         and dv_f_response > 0.0
         and round(dv_b_offset, 5) == 0.05131
@@ -244,7 +204,7 @@ def check_load_bearing_responses(C_F: Fraction, T_F: Fraction) -> None:
     dv_b_response = (pi_transverse_s - pi_transverse_t) / 2.0
     dv_f_offset = velocities[1] / velocities[0] - 1.0
     check(
-        "E8.gauge-response",
+        "E5.gauge-response",
         max(ward_t, ward_s) < 1.0e-10
         and T_F == Fraction(1, 2)
         and dv_b_response > 0.0
@@ -265,7 +225,7 @@ def check_load_bearing_responses(C_F: Fraction, T_F: Fraction) -> None:
     determinant = a_proxy * b_proxy - a_proxy * b_proxy
     trace = -(a_proxy + b_proxy)
     check(
-        "E9.proxy-arithmetic",
+        "E6.proxy-arithmetic",
         a_proxy > 0.0
         and b_proxy > 0.0
         and round(a_proxy, 4) == 0.0191
@@ -274,7 +234,7 @@ def check_load_bearing_responses(C_F: Fraction, T_F: Fraction) -> None:
         f"a_proxy={a_proxy:+.8f}, b_proxy={b_proxy:+.8f}, a+b={contraction:+.8f}",
     )
     check(
-        "E10.proxy-matrix",
+        "E7.proxy-matrix",
         np.max(np.abs(row_sums)) == 0.0
         and determinant == 0.0
         and trace < 0.0,
@@ -285,9 +245,6 @@ def check_load_bearing_responses(C_F: Fraction, T_F: Fraction) -> None:
 def main() -> int:
     print("Independent scalar-trace and execution-evidence recheck (bounded finite object)")
     print("implementation rule: no import/call of the primary runner")
-    math_only = "--math-only" in sys.argv[1:]
-    if not math_only:
-        check_primary_certificate()
     C_F, T_F = check_normalizations()
     check_load_bearing_responses(C_F, T_F)
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

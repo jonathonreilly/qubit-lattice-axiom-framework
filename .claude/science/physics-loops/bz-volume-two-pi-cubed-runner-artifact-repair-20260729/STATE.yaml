@@ -14,15 +14,22 @@ review_disposition: pass
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 runtime_used: "~16m wall clock including repository-wide pipeline validation"
-remote_science_branch: null
+remote_science_branch: claude/science-fix/bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_not-28946fe6
 local_branch: claude/science-fix/bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_not-28946fe6
 lock_status: "isolated science-fix worktree; no additional repository-wide lock"
-skill_freshness: "origin/main fetch unavailable because the managed worktree cannot write parent FETCH_HEAD; local skill used"
+skill_freshness: "review worktree merge-forwarded from current origin/main before final validation"
 files_touched:
   - docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md
   - scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py
   - logs/runner-cache/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.txt
 open_imports: []
-no_go_routes: []
-next_exact_action: "Have the science-fix supervisor commit and open the source PR; after landing, run a fresh independent audit of the same claim id."
+no_go_discipline_status: pass_for_bounded_scope_only
+no_go_routes:
+  - Pontryagin dual and Haar normalization
+  - finite character sums
+  - exact product volume
+  - probability quadrature
+  - general reciprocal-lattice covolume
+  - regulated four-dimensional extension
+next_exact_action: "Preserve the open PR for review; after landing, run a fresh independent audit of the same claim id."
 stop_condition: "Requested single repair cycle completed; independent audit remains external."

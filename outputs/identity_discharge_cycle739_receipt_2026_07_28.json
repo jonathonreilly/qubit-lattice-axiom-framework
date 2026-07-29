@@ -1,0 +1,68 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle739_discharge_independent_check_2026_07_28.txt": "38dc6a160364a1d45cff2dd1b8c62eb0be8cdd8f7509262e9f6be7b6f8ce605b",
+      "frontier_cycle739_identity_discharge_2026_07_28.txt": "76bd8dfc6b8c334c1990f9dd5739d17a22cc34f87285852a566ed80f550ad7f1"
+    },
+    "note": {
+      "path": "docs/IDENTITY_DISCHARGE_CYCLE739_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "7643e7fd4dbbb52085c1c3e2ac64d4707afb3fc76bdbf9db295063f3293da149"
+    },
+    "runners": {
+      "frontier_cycle739_discharge_independent_check_2026_07_28.py": "93f1f583e8143d47e0d8d83479514e5c4ad40077895a26bea9450b1258913bdb",
+      "frontier_cycle739_identity_discharge_2026_07_28.py": "c4fe65ae06f77665379c5e96f4951fb9a73919a000d6e18004b9e244beb6b88e"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "b13_boundary_census": {
+      "bank[12]": 1,
+      "cross[11]": 1,
+      "handoff[11]": 2,
+      "relay[11]": 4
+    },
+    "finalizer_exonerated": "bank-count argument never loaded; identical 11-gate word for every b",
+    "fixed_supplies": "the amended six-term predicate as the definition under test (uniformly applied; K defines no ownership predicate); everything the Cycle-737/738 packages supply per family member",
+    "i1_amended_formula": "not(a[left] or a[right] or b[left] or b[station] or b[right] or work[station])",
+    "i1_v1_mismatch_frozen": true,
+    "i2_capacity_domain": [
+      1,
+      12
+    ],
+    "not_derived": "b > 12 (the landed placement tables end; extension is a new construction); W4 renewal; adjacent-pair control; no time/Record/Born/source content",
+    "positive_scope": "the six-term formula census (2/2 call sites exact, zero variants; v1 four-term mismatch frozen); amended L4 transport (A/B windows transport identically; B stays blank on lawful separated orbits \u2014 44-placement family); template uniformity 9/9; capacity characterization (BANK_BASES 12 / LINK_BASES 11) with the frozen 8-row b=13 IndexError census; exhaustive clean-work evaluation of all 564 emitted rows across b=1..12 with zero failures",
+    "theorem_status_after_discharge": "unconditional_for_admissible_b_le_12_with_amended_predicate"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 12
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 739,
+  "date": "2026-07-29",
+  "result": {
+    "b13_failures": 8,
+    "cycle738_corrections": 2,
+    "row_totals_b1_to_b12": [
+      3,
+      11,
+      19,
+      27,
+      35,
+      43,
+      51,
+      59,
+      67,
+      75,
+      83,
+      91
+    ],
+    "rows_total": 564,
+    "theorem_status": "unconditional_for_admissible_b_le_12_with_amended_predicate",
+    "transport_orbit_family": 44
+  },
+  "status": "CYCLE739_IDENTITY_DISCHARGE_PASS"
+}

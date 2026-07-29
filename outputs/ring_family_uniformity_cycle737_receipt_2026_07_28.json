@@ -1,0 +1,67 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle737_ring_family_independent_check_2026_07_28.txt": "1271ea0d17d0983c5eecf9cb235c5f3623092b8ca3e99a71279eaf544cb57f80",
+      "frontier_cycle737_ring_family_uniformity_2026_07_28.txt": "3c170781a6b04586bfebd7e311db7c85bd6f0e684491413e17459cd09991d00f"
+    },
+    "note": {
+      "path": "docs/RING_FAMILY_UNIFORMITY_CYCLE737_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "58a71995f41b7f28c0a41e67524220187aabe99e37b064c0b8703b883243df95"
+    },
+    "runners": {
+      "frontier_cycle737_ring_family_independent_check_2026_07_28.py": "117e889be2491b6d8cf3dfbc38544a19b746d426f9a9b6001f7258ef5f165222",
+      "frontier_cycle737_ring_family_uniformity_2026_07_28.py": "8d29a560f5502b71295686c9ab5bf26f07d70a03eb9ed9f592dae487c694faf5"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "admissibility_law": "n = 8b - 5 for positive integer bank count b",
+    "axiom_pressure": false,
+    "fixed_supplies": "the bank count b per family member; held program content and order per ring; held data genesis with clean auxiliaries; lawful charge-reference rows with h = k mod 2 and expected_count = k; Q-before-R layer order; the configuration as an external parameter",
+    "frozen_n_dependence": null,
+    "general_n_theorem_claimed": false,
+    "not_derived": "b >= 5 rings and an inductive general-n theorem (the family-uniform statement is four exhaustive theorems, not an induction); W4 renewal; adjacent-pair control; no time/Record/Born/source content",
+    "positive_scope": "the admissibility law n = 8b - 5 derived from the controller's own program/bank arithmetic (station-kind decomposition verified; n=5 fails the integer-bank divisibility requirement); per-n Lucas census equalities (4/199/9349/439204); template exactness and covariance per n; complete count-k enforcement grids; exhaustive invariant-checked lawful orbits at all four rings (12/2,189/177,631/11,858,508 steps, zero violations); near-miss boundary controls at every n",
+    "ring_family": [
+      3,
+      11,
+      19,
+      27
+    ],
+    "sector_theorem_uniform_over_family": true
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 18,
+    "primary_named_checks_passed": 26
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 737,
+  "date": "2026-07-29",
+  "result": {
+    "admissibility": "n = 8b - 5, b = 1..4; station kinds: source 1 + banks b + crosses (b-1) + forward 3(b-1) + reverse 3(b-1) + finalizer 1",
+    "census_totals": {
+      "11": 199,
+      "19": 9349,
+      "27": 439204,
+      "3": 4
+    },
+    "checker_distance_pair_checks_n27": 300275100,
+    "frozen_n_dependence": null,
+    "orbit_step_totals": {
+      "11": 2189,
+      "19": 177631,
+      "27": 11858508,
+      "3": 12
+    },
+    "ring_family": [
+      3,
+      11,
+      19,
+      27
+    ],
+    "violations_all_rings": 0
+  },
+  "status": "CYCLE737_RING_FAMILY_UNIFORMITY_PASS"
+}

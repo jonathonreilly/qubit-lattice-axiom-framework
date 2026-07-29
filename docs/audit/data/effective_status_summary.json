@@ -81,8 +81,8 @@
   "cycles_detected": 58,
   "effective_status_counts": {
     "audit_in_progress": 2,
-    "audited_conditional": 267,
-    "audited_failed": 71,
+    "audited_conditional": 266,
+    "audited_failed": 72,
     "audited_numerical_match": 10,
     "audited_renaming": 33,
     "decoration_under_abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": 1,

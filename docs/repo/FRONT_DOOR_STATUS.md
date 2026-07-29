@@ -41,7 +41,7 @@ Owner-approval history for axioms and primitives:
 | Open gates | 3 |
 | Unaudited rows | 2653 |
 | Retained-pending-chain rows | 11 |
-| Audited conditional rows | 267 |
+| Audited conditional rows | 266 |
 | Audited renaming rows | 33 |
 | Audited numerical-match rows | 10 |
 | Citation cycles detected | 58 |
@@ -105,7 +105,7 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 29 |
-| Live conditional/failed rows that would park | 7 |
+| Live conditional/failed rows that would park | 8 |
 | Live rows fail-open (legacy/unversioned snapshot) | 31 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |

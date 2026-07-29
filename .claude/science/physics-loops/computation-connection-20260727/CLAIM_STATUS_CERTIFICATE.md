@@ -55,3 +55,25 @@ negative_assertion_classes: []   # the source-lift "undefined" statement is
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
+
+## Block 10 — Cycle 730 charge-row enforcement
+Claim: bounded_theorem, branch-local until independently audited.
+Narrowest honest status: charge rows enforced at every macro on the
+declared fixtures; ring-11 parity law exact over all rail/h cases;
+matched-parity multi-token residual OPEN (frozen witness). Supplies:
+reference chain, h, cleanliness, one-source-token inventory, Cycle-719
+declarations. NOT retained; NOT promoted; independent audit required.
+
+## Block 11 — Cycle 731 traveling token-count certificate
+Claim: bounded_theorem, branch-local until independently audited.
+Narrowest honest status: token-count law enforced on ring-11 relative to
+the DECLARED expected-count supply; iff theorem (count AND parity) exact
+over all 8,388,608 rail/h cases; count law factors from parity law.
+w1_closed true AT BOUNDED RING-11 SCOPE ONLY — the general W1 wall
+(inventory/genesis derivation, uniform ring families) remains open. NOT
+retained; NOT promoted; independent audit required.
+
+## Support — full-Fock unit-weight source
+Claim: bounded conditional construction (n_max=2, declared embedding).
+No source law, response law, or gravity content selected (C_source
+firewall verbatim). NOT retained; independent audit required.

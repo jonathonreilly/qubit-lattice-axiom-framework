@@ -232,3 +232,41 @@ milestone.
 Open PR ledger: #5697-#5707 (eleven campaign PRs: seven cycle blocks
 721-729 on two stacks + four independent, plus two support packages)
 awaiting owner-operated review/audit.
+
+## Refresh 5 (2026-07-28 ~22:20)
+
+| Lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |
+|---|---|---|---|---|
+| Operations | 95 | 98 | 68 | 99 |
+| Time | 76 | 80 | 45 | 99 |
+| Matter | 95 | 99 | 88 | 99 |
+| Gravity | 74 | 50 | 29 | 97 |
+| Born | 84 | 67 | 35 | 99 |
+
+Movers since refresh 4: Matter bridge 98->99 and autonomy 86->88 (the
+count law is now enforced IN-WORD by the traveling certificate — the
+last externally-audited conservation check on the ring fixtures moved
+into the physical refusal cascade); Gravity repo-side 70->74 (the
+Cycle-322-named full-Fock lift constructed, #5708).
+
+### Breakthrough log additions
+- Cycle 730 (#5709): charge rows join the refusal cascade;
+  prediction-exact censuses; ring-11 parity law over 8,388,608 cases.
+- Cycle 731 (#5710): the traveling token-count certificate — the W1
+  matched-parity residual REFUSED (55/55 placements); count and parity
+  laws provably independent; w1_closed true at bounded ring-11 scope
+  (inventory remains a declared supply; genesis derivation is the
+  remaining W1 gap).
+- Full-Fock unit-weight source (#5708): constructed at n_max=2 with
+  0-ULP anchor agreement and exhaustive layer independence; no
+  obstruction — the gravity/source lane now has both the missing
+  construction and the missing test infrastructure.
+
+### Landing-shape protocol (standing)
+Owner lands cycles rewritten on main; anchors survived (verified).
+runner_cache.py changed on main. ALL landing PRs are now built in a
+dedicated landing worktree from origin/main: cherry-pick or copy the
+block, RERUN primary + checker there against owner-landed dependencies,
+regenerate caches with main's runner_cache, rebuild the receipt, then
+push and open the PR. Original-lineage branches stay as pack history;
+the landing branch is the review surface.

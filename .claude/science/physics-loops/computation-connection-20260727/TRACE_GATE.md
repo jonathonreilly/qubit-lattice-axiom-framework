@@ -32,3 +32,26 @@ Notes:
   supplied/open exactly as in Cycle 720.
 - Frontier-only framing ban honored: the artifact must not claim to close,
   promote, or retire any registered lane.
+
+## Cycle 730 (block10) — charge-row enforcement integration
+- Target moved: W1 enforcement leg — the Cycle-728 marked-edge holonomy
+  bit becomes a refusal law inside the Cycle-724 sandwich.
+- Class: direct_blocker_closure (post-728 enforcement leg named in
+  checkpoint_1330 queue). Not frontier_discovery.
+- Artifacts: primary 12/12; checker 5/5 (own exhaustive 8,388,608-case
+  recount); note; caches; receipt; PR #5709.
+
+## Cycle 731 (block11) — traveling token-count certificate
+- Target moved: W1 matched-parity residual (frozen in Cycle 730) — the
+  named-open nonlocal certificate, built as a traveling counter.
+- Class: direct_blocker_closure. Not frontier_discovery.
+- Artifacts: primary 10/10; checker 5/5 (frozen outcome-table sha
+  REBUILT independently and matched byte-exact); note; caches; receipt;
+  PR #5710 stacked on #5709. w1_closed true at bounded ring-11 scope
+  only; remaining gap = inventory/genesis derivation (stated verbatim
+  in claim boundary).
+
+## Full-Fock unit-weight source (support)
+- Target moved: gravity/source lane named absent lift (Cycle-322
+  sharpest next test). Construction achieved at n_max=2; no obstruction.
+- Class: direct_blocker_closure (support). PR #5708.

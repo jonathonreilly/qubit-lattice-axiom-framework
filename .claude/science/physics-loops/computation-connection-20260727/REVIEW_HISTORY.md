@@ -144,3 +144,36 @@ movement), so the gate is answered for the PR record:
 
 Owner-operated lane (standing rule 2026-06-11): this block prepares the PR
 and hands off; the review loop is not run from this session.
+
+## Block 10 (Cycle 730) — V1-V5 promotion value gate (author-side record)
+- V1 claim-state movement: W1 ledger line parity-sector ENFORCED (was:
+  witnessed/compressed). PASS.
+- V2 decisive artifact: prediction-exact 183-violation census; exhaustive
+  8,388,608-case iff theorem; independent checker with own simulator.
+  PASS.
+- V3 honest boundary: matched-parity residual FROZEN in-package;
+  w1_closed false; supplies enumerated. PASS.
+- V4 no vocabulary/authority drift: bounded_theorem, authority none,
+  audit unset; no new repo vocabulary. PASS.
+- V5 independent-audit handoff: stated in note + PR #5709. PASS.
+- Status ships as bounded_theorem (NOT proposed_retained); review-loop
+  and audit remain owner lanes.
+
+## Block 11 (Cycle 731) — V1-V5 promotion value gate (author-side record)
+- V1 claim-state movement: the named-open W1 nonlocal certificate
+  BUILT; matched-parity residual REFUSED (55/55). PASS.
+- V2 decisive artifact: exhaustive iff theorem with frozen outcome
+  tables; checker REBUILT the full outcome table independently, sha
+  matched byte-exact. PASS.
+- V3 honest boundary: w1_closed carries a verbatim bounded-scope key
+  (ring-11 only; inventory declared-not-derived; genesis open). PASS.
+- V4 no drift: bounded_theorem; no new vocabulary; expected_count reuses
+  the existing declared supply line. PASS.
+- V5 handoff: stated in note + PR #5710. PASS.
+
+## Full-Fock support — V1-V5 (author-side record)
+- V1: the Cycle-322-named absent lift constructed (n_max=2). PASS.
+- V2: 8/8 + independent 6/6 (0-ULP anchor recount; 20/20 pinned
+  replay). PASS. V3: truncation + embedding declared supplied; C_source
+  firewall verbatim. PASS. V4: no drift. PASS. V5: stated; PR #5708.
+  PASS.

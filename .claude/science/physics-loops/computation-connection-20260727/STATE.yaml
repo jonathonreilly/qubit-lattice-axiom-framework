@@ -254,3 +254,22 @@ checkpoint_1330_pacing_correction: >
   sector-summed companion channel; Ward-lawful projection
   classification; Born acceptance harness; autonomy/forcing ledger
   items.
+
+checkpoint_2220_blocks10_11_landed_and_landing_protocol: >
+  Cycle 730 (charge-row enforcement) and Cycle 731 (traveling token-count
+  certificate) both verified and shipped: PRs #5709 (block10-mainbase,
+  carries #5706 beneath) and #5710 (block11-mainbase, stacked on #5709).
+  Full-Fock support shipped as #5708. W1 arc complete at fixture scope:
+  witnessed (724) -> compressed (728) -> parity enforced (730) -> count
+  enforced (731); the frozen matched-parity witness and all 55 two-token
+  placements refused; count law factors from parity law; w1_closed TRUE
+  bounded ring-11 scope ONLY (inventory remains declared supply; genesis
+  derivation open). LESSONS: (1) BRANCH-RACE — never switch worktree
+  branches while a draft worker is mid-write; serialize or use separate
+  worktrees; (2) LANDING SHAPE — owner lands cycles REWRRITTEN on main
+  (723/724 confirmed; anchors 98,034/d3b156b6 HELD across rewrite);
+  runner_cache.py changed on main; all landing PRs now built in a
+  dedicated landing worktree from origin/main with reruns + cache
+  regeneration there (protocol in HANDOFF); (3) 725's PR closed with
+  files ABSENT from main — closed-not-landed, flagged to owner in
+  HANDOFF. IN FLIGHT: Born acceptance harness draft (WT3, main-based).

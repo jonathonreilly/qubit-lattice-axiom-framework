@@ -152,3 +152,34 @@ DOWN/ACK controller compiled to literal M2 per D7 (27,695/36,883 gates;
 certificate set unchanged). Both with independent checkers, pinned
 caches, receipts. Open PR ledger: #5697, #5698, #5699, #5700, #5701,
 #5702.
+
+## 2026-07-28 ~22:20 — blocks 10/11 + full-Fock shipped; owner flags
+
+OPEN PRs this stretch: #5708 (full-Fock support, base main), #5709
+(Cycle 730, base main, carries #5706 beneath — reduces to one commit if
+#5706 lands first), #5710 (Cycle 731, stacked on #5709).
+
+OWNER FLAG (needs a decision, not mine to make): block05 / Cycle 725
+(CSLT) — its PR is closed but the 725 files are ABSENT from origin/main
+(judged content-on-main per standing rule). Either it is queued for a
+later cherry-pick or it was dropped; if dropped, #5705 (Cycle 727) and
+the Ward-classification queue item both cite its surfaces. Please
+confirm intended disposition.
+
+Also carried from earlier: automation_lock.py points at /Users/jonreilly
+(broken on this machine); campaign runs under branch-local supervisor
+lock.
+
+Landing-shape protocol recorded in the scoreboard file (refresh 5) and
+STATE checkpoint_2220: landing worktree from origin/main, rerun +
+re-cache there, anchors verified across owner rewrites (723/724 held).
+
+IN FLIGHT at this checkpoint: Born acceptance harness draft worker
+(main-based, WT3) — the Born-lane evidence-ceiling program mirroring the
+gravity acceptance-harness set over the landed Cycle-317 surface.
+Queue after: sector-summed companion channel (NOTE: cites 727 surfaces —
+on block07 branch/#5705, not yet on main; build in a worktree from
+origin/block07 or wait for landing); Ward-lawful census projection
+classification (cites 725 — see owner flag above); autonomy/forcing
+ledger legs (genesis derivation is now ALSO the named W1 remaining gap,
+so the genesis leg serves two walls at once).

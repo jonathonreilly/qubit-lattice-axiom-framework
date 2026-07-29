@@ -8,9 +8,7 @@
     "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
     "docs/CL3_PAULI_IRREP_UNIQUENESS_NARROW_THEOREM_NOTE_2026-05-10.md",
     "scripts/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.py",
-    "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py",
-    "logs/runner-cache/audit_companion_cl3_pauli_irrep_uniqueness_exact_2026_05_10.txt",
-    "logs/runner-cache/cl3_pauli_irrep_uniqueness_n1_complete_certificate_2026-07-25.txt"
+    "scripts/cl3_pauli_irrep_faithful_direct_sum_n7_independent_2026_07_17.py"
   ],
   "forbidden_context": [
     "this dispatcher manifest as evidence",

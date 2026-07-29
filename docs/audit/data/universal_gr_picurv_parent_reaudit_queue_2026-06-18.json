@@ -2,9 +2,7 @@
   "allowed_context_paths": [
     "docs/audit/README.md",
     "docs/audit/FRESH_LOOK_REQUIREMENTS.md",
-    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md",
-    "docs/UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md",
-    "docs/UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md"
+    "docs/audit/AUDIT_AGENT_PROMPT_TEMPLATE.md"
   ],
   "forbidden_context": [
     "this dispatcher manifest as evidence",
@@ -21,7 +19,7 @@
       "order": 1,
       "targets": [
         {
-          "audit_question": "Fresh-context review target: does UNIVERSAL_GR_PICURV_ROUTE_EXHAUSTION_NO_GO_NOTE_2026-06-18.md supply the route-exhaustion gate requested for UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md without overclaiming absolute GR impossibility or demoting positive A1/Casimir/Regge/spin-2 routes?",
+          "audit_question": "Fresh-context review target: does UNIVERSAL_GR_POLARIZATION_FRAME_BUNDLE_BLOCKER_NOTE.md itself, using only its ledger-owned source/dependency/runner packet, justify its bounded scope without overclaiming absolute GR impossibility or demoting positive A1/Casimir/Regge/spin-2 routes?",
           "claim_id": "universal_gr_polarization_frame_bundle_blocker_note",
           "current_audit_status": "unaudited",
           "current_claim_type": "bounded_theorem",

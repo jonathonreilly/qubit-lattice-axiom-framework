@@ -411,6 +411,10 @@ def _import(module_name: str):
 def _import_codex_audit_runner():
     """Import the repo-root codex audit runner without changing sys.path."""
     sys.modules.pop("ledger_io", None)
+    # The runner imports the shared dispatch validator at module load.  Force
+    # that dependency fresh too so producer tests that redirect its DATA_DIR
+    # to a temporary fixture cannot leak the deleted fixture into runner tests.
+    sys.modules.pop("compute_audit_dispatch_queue", None)
     module_name = "codex_audit_runner_under_test"
     if module_name in sys.modules:
         del sys.modules[module_name]
@@ -11883,6 +11887,61 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
                     }
                 })
 
+    def test_dispatch_accepts_canonical_methodology_context(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "dispatch.json"
+            allowed = [
+                "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+                (
+                    "docs/ai_methodology/skills/physics-loop/references/"
+                    "proof-search-governance.md"
+                ),
+            ]
+            path.write_text(json.dumps({
+                "schema": "audit_dispatch_queue.v1",
+                "policy": "target_selection_only_not_audit_evidence",
+                "live": [{
+                    "claim_id": "ready",
+                    "ready": True,
+                    "allowed_context_paths": allowed,
+                }]
+            }), encoding="utf-8")
+            m.DISPATCH_QUEUE_PATH = path
+            rows = m.load_dispatch_targets({
+                "ready": {
+                    "claim_id": "ready",
+                    "note_path": "docs/READY.md",
+                    "deps": [],
+                }
+            })
+            self.assertEqual(rows[0]["allowed_context_paths"], allowed)
+
+    def test_dispatch_rejects_falsey_nonlist_allowed_context(self):
+        m = _import_codex_audit_runner()
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "dispatch.json"
+            path.write_text(json.dumps({
+                "schema": "audit_dispatch_queue.v1",
+                "policy": "target_selection_only_not_audit_evidence",
+                "live": [{
+                    "claim_id": "ready",
+                    "ready": True,
+                    "allowed_context_paths": "",
+                }]
+            }), encoding="utf-8")
+            m.DISPATCH_QUEUE_PATH = path
+            with self.assertRaisesRegex(
+                ValueError, "malformed allowed_context_paths"
+            ):
+                m.load_dispatch_targets({
+                    "ready": {
+                        "claim_id": "ready",
+                        "note_path": "docs/READY.md",
+                        "deps": [],
+                    }
+                })
+
     def test_canonical_dispatch_rejects_forged_live_entry(self):
         m = _import_codex_audit_runner()
         with tempfile.TemporaryDirectory() as tmp:
@@ -14225,6 +14284,85 @@ class ComputeAuditDispatchQueueTest(unittest.TestCase):
         return json.loads(
             (self.fx.data_dir / "audit_dispatch_queue.json").read_text(encoding="utf-8")
         )
+
+    def test_live_sidecar_context_is_validated_during_generation(self):
+        m = _import("compute_audit_dispatch_queue")
+        self._patch_dispatch_module(m)
+        rows = {
+            "row": self._row(
+                "row",
+                audit_status="unaudited",
+                claim_type="positive_theorem",
+                effective_status="unaudited",
+            ),
+        }
+        rows["row"]["note_path"] = "docs/ROW.md"
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+        (self.fx.data_dir / "axiom_premise_nodes.json").write_text(
+            json.dumps({"schema_version": 1, "nodes": {}}) + "\n",
+            encoding="utf-8",
+        )
+        manifest = self._basic_manifest(
+            generated_date="2026-07-29",
+            group_id="invalid_context",
+            targets=[{
+                "claim_id": "row",
+                "note_path": "docs/ROW.md",
+                "audit_question": "Audit row.",
+                "current_audit_status": "unaudited",
+                "current_claim_type": "positive_theorem",
+                "current_effective_status": "unaudited",
+            }],
+        )
+        manifest["allowed_context_paths"] = ["docs/UNRELATED_SCIENCE.md"]
+        self._write_sidecar("promotion_reaudit_queue_2026-07-29.json", manifest)
+
+        with self.assertRaisesRegex(
+            ValueError,
+            (
+                "promotion_reaudit_queue_2026-07-29.json: dispatch target row "
+                "requests nonstandard context paths: "
+                "docs/UNRELATED_SCIENCE.md"
+            ),
+        ):
+            m.main()
+
+    def test_live_sidecar_accepts_shared_methodology_context(self):
+        m = _import("compute_audit_dispatch_queue")
+        self._patch_dispatch_module(m)
+        rows = {
+            "row": self._row(
+                "row",
+                audit_status="unaudited",
+                claim_type="positive_theorem",
+                effective_status="unaudited",
+            ),
+        }
+        rows["row"]["note_path"] = "docs/ROW.md"
+        self.fx.write_ledger({"schema_version": 1, "rows": rows})
+        manifest = self._basic_manifest(
+            generated_date="2026-07-29",
+            group_id="methodology_context",
+            targets=[{
+                "claim_id": "row",
+                "note_path": "docs/ROW.md",
+                "audit_question": "Audit row.",
+                "current_audit_status": "unaudited",
+                "current_claim_type": "positive_theorem",
+                "current_effective_status": "unaudited",
+            }],
+        )
+        manifest["allowed_context_paths"] = [
+            "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+            (
+                "docs/ai_methodology/skills/physics-loop/references/"
+                "proof-search-governance.md"
+            ),
+        ]
+        self._write_sidecar("promotion_reaudit_queue_2026-07-29.json", manifest)
+
+        m.main()
+        self.assertEqual(self._read_output()["live_count"], 1)
 
     def test_same_status_fresh_context_reaudit_resolves_to_resolved_targets(self):
         """A row whose audit_date is on/after the manifest's generated_date

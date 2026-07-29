@@ -1,0 +1,51 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle746_locked_archive_2026_07_28.txt": "b8eed1bb4675d49c96cfbd76a2d6144da0b829b78716376fec0c1c6e215271ad",
+      "frontier_cycle746_locked_archive_independent_check_2026_07_28.txt": "fd3e6d4010b78609dfe1008bc737d16c4a145a8f5d4799d351bf5e1505ade0ec"
+    },
+    "note": {
+      "path": "docs/LOCKED_ARCHIVE_CYCLE746_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "148cab34684d5102be6f8f6f6474229f6b80219c15473326844bc20378c83e0b"
+    },
+    "runners": {
+      "frontier_cycle746_locked_archive_2026_07_28.py": "4346a9907f7a3eefcf7215d39b828475dd6919ff5366ce27a21c79d506413529",
+      "frontier_cycle746_locked_archive_independent_check_2026_07_28.py": "f4e2fb2ff65e75b780095f848e4925158590de6700b208eeb8a274fdac89c44c"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "the tiling convention (declared); everything the Cycle-741/742/745 packages declare at their scopes",
+    "locked_archive_derived": true,
+    "not_derived": "axiom-level Record permanence; out-of-alphabet operations; larger archives",
+    "positive_scope": "the 745 lock tiled over all 909 archive payload sites (6,363 M2 sites; per-cell same-word locking preserved; 2,424 tiled write gates per generation); exhaustive refusal censuses (1,818 overwrite + 2,727 renewal attempts, locked bytes invariant); the archive-level induction (909 base + 6,363 steps) with the checker's 399-composition adversarial sweep; 303/303 fresh first-writes accepted per generation (lock never blocks lawful archiving); byte-exact locked readout across all 3 generations",
+    "record_permanence_claimed": false,
+    "w5_residual": "axiom-level permanence semantics beyond the declared alphabet \u2014 the one-sentence question for the owner's axiom conversation"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 746,
+  "date": "2026-07-29",
+  "result": {
+    "fresh_accepts": "303/303 x 3 generations",
+    "induction": {
+      "alterations": 0,
+      "base": 909,
+      "checker_compositions_len3": 399,
+      "steps": 6363
+    },
+    "readout": "byte-exact all generations",
+    "refusal_censuses": {
+      "overwrite": 1818,
+      "renewal_attempts": 2727
+    },
+    "tiling": "909 x 7 = 6363 M2 sites"
+  },
+  "status": "CYCLE746_LOCKED_ARCHIVE_PASS"
+}

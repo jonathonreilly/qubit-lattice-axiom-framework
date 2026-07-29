@@ -1,0 +1,66 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle740_mapper_independent_check_2026_07_28.txt": "9671d41403b51644e21cb9c07dd82cc6203be2cdf9fcd9ef645ef01b1bc35e56",
+      "frontier_cycle740_table_parameterized_mapper_2026_07_28.txt": "094b5c538980633f747292e81cfa9278d3fa71fc20b8e2c4318bb56865137382"
+    },
+    "note": {
+      "path": "docs/TABLE_PARAMETERIZED_MAPPER_CYCLE740_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "37e484837d276e705d18cac88c009a9a1023e3f3ba82fbd022ef52e63bffdf5c"
+    },
+    "runners": {
+      "frontier_cycle740_mapper_independent_check_2026_07_28.py": "1da19e2dde2af1ce81641f0b6db4b3140b79fc9aadf6ababbca86e2626cd78d7",
+      "frontier_cycle740_table_parameterized_mapper_2026_07_28.py": "be1d0af8a7dae03b8eff414c1a88ec21fc04c3e92984569a15324b5da2c0fdd3"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "capacity_now_parameterized": true,
+    "fixed_supplies": "the derived table-generating law (BANK_BASE(i)=41+131i; LINK_BASE(i,C)=41+131C+382i) as the intended geometry \u2014 a convention anchored byte-exactly to the landed tables on b<=12; the capacity parameter C; everything the Cycle-737/738/739 packages supply",
+    "landed_files_untouched": true,
+    "not_derived": "exhaustive sector censuses beyond the four anchor rings (the transfer is structural, not enumerative); physical in-word renewal (W4's remaining named mechanism); adjacent-pair control; no time/Record/Born/source content",
+    "positive_scope": "the law re-solved independently from the frozen table values and byte-exact on both full tables; byte-exact equivalence sweep b=1..12 (programs + mapped words, per-b shas); clean extension b=13..16 at C=16 (444/444 rows; the eight stations 57-64 recovered with template verification); the b=13 orbit spot family (5 samples, 495 invariant boundaries, zero violations, exact closure and inverse); the table-uniform theorem transfer with the one supplied convention named",
+    "sector_theorem_table_uniform": true,
+    "table_law_supplied_anchored_to_K": true
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_passed": 10
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 740,
+  "date": "2026-07-29",
+  "result": {
+    "b13_orbit_spot": {
+      "invariant_boundaries": 495,
+      "samples": 5,
+      "violations": 0
+    },
+    "equivalence_sweep": "b=1..12 byte-identical (programs + mapped words)",
+    "extension_rows": {
+      "13": 99,
+      "14": 107,
+      "15": 115,
+      "16": 123,
+      "total": 444
+    },
+    "recovered_stations": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "table_law": {
+      "bank": "41+131*i",
+      "link": "41+131*C+382*i"
+    }
+  },
+  "status": "CYCLE740_TABLE_PARAMETERIZED_MAPPER_PASS"
+}

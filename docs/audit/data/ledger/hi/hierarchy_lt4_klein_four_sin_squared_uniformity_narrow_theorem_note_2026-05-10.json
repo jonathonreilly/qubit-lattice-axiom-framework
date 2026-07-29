@@ -1,9 +1,10 @@
 {
-  "audit_date": "2026-07-25T13:02:18.496745+00:00",
+  "audit_date": "2026-07-29T14:52:13.649298+00:00",
   "audit_invocation_history": [
-    "96d6feb028b14b1d8983a442274e5b61"
+    "96d6feb028b14b1d8983a442274e5b61",
+    "fa78023b6668436198a31c4c28bbfd8d"
   ],
-  "audit_invocation_id": "96d6feb028b14b1d8983a442274e5b61",
+  "audit_invocation_id": "fa78023b6668436198a31c4c28bbfd8d",
   "audit_state_snapshot": {
     "artifact_classifier_state": {
       "assert_count": 1,
@@ -30,7 +31,7 @@
       "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
       "audit_tuple_agreement_schema": "audit_tuple_v2",
       "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
-      "no_go_discipline_gate_sha256": "9202d3be302d41e74aff0e63705743102eed8998b60e898be2c76b7d37393698"
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
     },
     "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
     "runner_cache_state": {
@@ -49,20 +50,20 @@
     "transitive_descendants": 0
   },
   "audit_status": "audited_conditional",
-  "auditor": "codex-audit-batch-A-20260725-f8e2e6ff",
+  "auditor": "codex-audit-batch-A-20260729-efc0e339",
   "auditor_confidence": "high",
   "auditor_family": "codex-gpt-5.6",
   "auditor_model": "gpt-5.6-sol",
   "auditor_reasoning_effort": "xhigh",
   "blocker": null,
   "chain_closes": false,
-  "chain_closure_explanation": "The finite exact proof and disclosed runner source support the theorem, but the restricted runner stdout is clipped and omits the T1-T3 execution records. The evidence chain therefore cannot receive terminal clean closure from this packet.",
+  "chain_closure_explanation": "The presented class-A derivation and runner close the trigonometric and orbit claim, but the packet\u2019s mandatory clean-verdict no-go gate does not: the current runner lacks five distinct N1 route classes, the required N5 five-resolution evidence, and an independent N7 resolution surface.",
   "claim_id": "hierarchy_lt4_klein_four_sin_squared_uniformity_narrow_theorem_note_2026-05-10",
   "claim_scope": "For M(L_t)={(2n+1)pi/L_t : n=0,...,L_t-1}, sin^2 is uniform exactly at L_t in {2,4} among scanned even L_t in {2,4,6,8,10,12,14,16}; M(4) is one V_4 orbit with value 1/2, while M(6) splits into two differently weighted orbits.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": "2026-07-25T13:02:18.496745+00:00",
+  "claim_type_last_reviewed": "2026-07-29T14:52:13.649298+00:00",
   "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
@@ -72,17 +73,19 @@
   "effective_status": "audited_conditional",
   "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": "cross_family",
+  "independence": "fresh_context",
   "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": "The exact finite-set identities give {sin^2(omega): omega in M(4)}={1/2}, while each scanned L_t in {6,8,10,12,14,16} has at least two distinct weights.",
+  "load_bearing_step": "The exact values sin^2((2n+1)pi/L_t) are uniform for L_t=2,4 and contain at least two distinct values for each scanned L_t in {6,8,10,12,14,16}, with M(4) forming one V_4 orbit.",
   "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "negative_assertion_classes": [],
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "d72241d027cdb8ca3c57da4d573f345ec0a4e4d4c3563cb19b175f85bab8fc78",
   "note_path": "docs/HIERARCHY_LT4_KLEIN_FOUR_SIN_SQUARED_UNIFORMITY_NARROW_THEOREM_NOTE_2026-05-10.md",
-  "notes_for_re_audit_if_any": "runner_artifact_issue: provide complete, unclipped stdout showing T1-T10 and the final PASS=10, FAIL=0 result, then re-audit.",
+  "notes_for_re_audit_if_any": "runner_artifact_issue: add current-cycle evidence for at least five distinct N1 mechanism classes, all five required N5 resolution classes, and an independent N7 resolution surface, then re-run the audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -142,5 +145,5 @@
   "runner_path": "scripts/frontier_hierarchy_lt4_klein_four_sin_squared_uniformity_narrow.py",
   "title": "Hierarchy L_t=4 Klein-Four sin^2 Uniformity \u2014 Narrow Theorem",
   "transitive_descendants": 0,
-  "verdict_rationale": "The note supplies a correct finite trigonometric proof, and the disclosed runner source genuinely computes the exact symbolic values and V_4 orbit decomposition rather than merely printing expected results. No mathematical dependency or hidden physical premise is load-bearing. However, the packet explicitly identifies its load-bearing stdout as clipped, so the binding completeness preflight forbids audited_clean until complete execution evidence is supplied."
+  "verdict_rationale": "All ten runner checks genuinely compute exact symbolic identities and agree with the source, with no imported scientific dependency. N1 nevertheless lacks five evidenced mechanism classes; N2\u2019s finite non-uniformity boundary is directly witnessed, N3 reveals no load-bearing hidden admission, and N4 has no prior residual witness. N5 lacks the prescribed five-resolution live evidence, N6 contains no relevant closing candidate, and N7 lacks a distinct independent resolution surface. N8 presents an authenticated cross-cycle universe with no apparent applicable echo, but the mandatory clean-verdict gate remains incomplete, requiring a conditional runner-artifact verdict rather than audited_clean."
 }

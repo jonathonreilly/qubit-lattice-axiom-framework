@@ -978,8 +978,9 @@ def run_panel(
                 )
             except BaseException as secondary_error:
                 raise batch.CleanupIntegrityError(
-                    f"{cleanup_error}; judicial secondary seat cleanup "
-                    f"also failed: {secondary_error}"
+                    f"{batch.safe_exception_text(cleanup_error)}; judicial "
+                    "secondary seat cleanup also failed: "
+                    f"{batch.safe_exception_text(secondary_error)}"
                 ) from secondary_error
             raise
         except Exception as exc:

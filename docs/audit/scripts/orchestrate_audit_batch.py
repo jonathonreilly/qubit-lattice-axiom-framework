@@ -203,6 +203,14 @@ class CleanupIntegrityError(RuntimeError):
     """An owned read-only seat group could not be proven absent."""
 
 
+def safe_exception_text(exc: BaseException) -> str:
+    """Render exception context without letting ``__str__`` alter control flow."""
+    try:
+        return str(exc)
+    except BaseException:
+        return f"<unprintable {type(exc).__name__}>"
+
+
 def _repo_identity() -> str:
     """Canonical identity shared by every git worktree of one clone.
 
@@ -989,7 +997,7 @@ def terminate_read_only_seat(job: dict) -> None:
     except (OSError, OverflowError) as exc:
         raise CleanupIntegrityError(
             "read-only auditor process group could not be signaled: "
-            f"pgid={process_group}: {exc}"
+            f"pgid={process_group}: {safe_exception_text(exc)}"
         ) from exc
     try:
         job["returncode"] = proc.wait(
@@ -1003,7 +1011,7 @@ def terminate_read_only_seat(job: dict) -> None:
     except Exception as exc:
         raise CleanupIntegrityError(
             "read-only auditor leader could not be reaped: "
-            f"pgid={process_group}: {exc}"
+            f"pgid={process_group}: {safe_exception_text(exc)}"
         ) from exc
     for _attempt in range(SEAT_GROUP_VERIFICATION_ATTEMPTS):
         try:
@@ -1013,7 +1021,7 @@ def terminate_read_only_seat(job: dict) -> None:
         except OSError as exc:
             raise CleanupIntegrityError(
                 "read-only auditor process-group absence could not be probed: "
-                f"pgid={process_group}: {exc}"
+                f"pgid={process_group}: {safe_exception_text(exc)}"
             ) from exc
         time.sleep(SEAT_GROUP_VERIFICATION_INTERVAL_SECONDS)
     raise CleanupIntegrityError(
@@ -1029,7 +1037,7 @@ def terminate_read_only_seats(jobs: list[dict]) -> None:
         try:
             terminate_read_only_seat(job)
         except BaseException as exc:
-            failures.append(str(exc))
+            failures.append(safe_exception_text(exc))
     if failures:
         raise CleanupIntegrityError(
             "one or more pending read-only seat groups could not be proven "
@@ -1046,10 +1054,7 @@ def close_worker_logs(jobs: list[dict]) -> list[str]:
             if handle is not None and not handle.closed:
                 handle.close()
         except BaseException as exc:
-            try:
-                detail = str(exc)
-            except BaseException:
-                detail = "<unprintable close failure>"
+            detail = safe_exception_text(exc)
             try:
                 claim = str(job.get("cid", "<unknown>"))
             except BaseException:
@@ -1063,7 +1068,7 @@ def cleanup_integrity_diagnostic(
 ) -> None:
     """Best-effort diagnostic that cannot replace the cleanup-integrity result."""
     try:
-        suffix = f": {error}" if error is not None else ""
+        suffix = f": {safe_exception_text(error)}" if error is not None else ""
         print(message + suffix)
     except BaseException:
         pass
@@ -1225,8 +1230,9 @@ def wait_workers(
                 committer.join()
         if pending_cleanup_error is not None:
             raise CleanupIntegrityError(
-                f"{cleanup_error}; cleanup of another pending seat also "
-                f"failed: {pending_cleanup_error}"
+                f"{safe_exception_text(cleanup_error)}; cleanup of another "
+                "pending seat also failed: "
+                f"{safe_exception_text(pending_cleanup_error)}"
             ) from pending_cleanup_error
         raise
     except BaseException:
@@ -1248,12 +1254,15 @@ def wait_workers(
             )
             if isinstance(active_error, CleanupIntegrityError):
                 raise CleanupIntegrityError(
-                    f"{active_error}; {detail}"
+                    f"{safe_exception_text(active_error)}; {detail}"
                 ) from active_error
             if active_error is None:
                 raise OSError(detail)
             if hasattr(active_error, "add_note"):
-                active_error.add_note(detail)
+                try:
+                    active_error.add_note(detail)
+                except BaseException:
+                    pass
 
 
 def terminate_workers(jobs: list[dict]) -> None:

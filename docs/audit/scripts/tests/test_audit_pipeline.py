@@ -15831,6 +15831,57 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
 
         terminate.assert_called_once()
 
+    def test_panel_secondary_cleanup_rendering_stays_typed(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+
+        class UnrenderableCleanupError(m.batch.CleanupIntegrityError):
+            def __str__(self):
+                raise OSError("primary rendering failed")
+
+        class UnrenderableSecondaryError(RuntimeError):
+            def __str__(self):
+                raise OSError("secondary rendering failed")
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, _prior,
+            _invocation_id, _manifest,
+        ):
+            proc = mock.Mock()
+            proc.poll.return_value = None
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"judge-{judge_no}",
+                "proc": proc,
+            }
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "1" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch,
+            "wait_workers",
+            side_effect=UnrenderableCleanupError(),
+        ), mock.patch.object(
+            m.batch,
+            "terminate_read_only_seats",
+            side_effect=UnrenderableSecondaryError(),
+        ) as terminate:
+            with self.assertRaises(m.batch.CleanupIntegrityError) as raised:
+                m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+
+        self.assertIn(
+            "<unprintable UnrenderableCleanupError>",
+            str(raised.exception),
+        )
+        self.assertIn(
+            "<unprintable UnrenderableSecondaryError>",
+            str(raised.exception),
+        )
+        terminate.assert_called_once()
+
     def test_panel_main_stops_after_cleanup_integrity_failure(self):
         m = _import("orchestrate_judicial_panel")
         rows = {

@@ -373,7 +373,16 @@ def run_command(label: str, command: list[str], env: dict[str, str] | None = Non
         PROGRESS["canary_state"] = f"{state}:{label}"
     if proc.returncode != 0:
         PROGRESS["failures"].append(f"{label}:exit={proc.returncode}")
-    emit(f"END {label}: exit={proc.returncode} head={git_head()}")
+    try:
+        emit(f"END {label}: exit={proc.returncode} head={git_head()}")
+    except BaseException as exc:
+        if proc.returncode != batch.CLEANUP_INTEGRITY_EXIT_CODE:
+            raise
+        batch.cleanup_integrity_diagnostic(
+            "GLOBAL cleanup integrity child result retained after END "
+            "reporting failed",
+            exc,
+        )
     return proc.returncode
 
 
@@ -887,6 +896,12 @@ def run_forensic_canary(
     env = dict(os.environ)
     env["AUDIT_FORENSIC_MODE"] = "1"
     rc = run_command(f"forensic-canary-{claim_id}", command, env=env)
+    if rc == batch.CLEANUP_INTEGRITY_EXIT_CODE:
+        emit_preserving_primary_result(
+            "GLOBAL cleanup integrity failure in forensic canary; "
+            "skipping artifact parsing and service classification"
+        )
+        return rc
     try:
         terminal = forensic_canary_terminal_record(run_log, claim_id)
     except (OSError, ValueError) as exc:
@@ -1257,6 +1272,14 @@ def main(argv: list[str] | None = None) -> int:
     PROGRESS["last_canary_terminal_phase"] = None
     PROGRESS["last_canary_source"] = None
     forensic_attempted: set[str] = set()
+    cleanup_integrity_result = False
+
+    def campaign_result(code: int) -> int:
+        nonlocal cleanup_integrity_result
+        if code == batch.CLEANUP_INTEGRITY_EXIT_CODE:
+            cleanup_integrity_result = True
+        return code
+
     _STOP_HEARTBEAT.clear()
     thread = threading.Thread(target=heartbeat, daemon=True)
     thread.start()
@@ -1271,14 +1294,14 @@ def main(argv: list[str] | None = None) -> int:
             before = git_head()
             rc = run_panel(args, f"panel-pass-{pass_number}-opening")
             if rc != 0:
-                return rc
+                return campaign_result(rc)
             if not args.lane:
                 for source in ("dispatch", "reaudit"):
                     PROGRESS["lane"] = f"{source}-source"
                     emit(f"draining ready {source} source rows")
                     rc, _ = drain_lane(None, args, source=source)
                     if rc != 0:
-                        return rc
+                        return campaign_result(rc)
             try:
                 lanes = blocking_lanes(args.lane)
             except ValueError as exc:
@@ -1293,13 +1316,13 @@ def main(argv: list[str] | None = None) -> int:
                 emit(f"draining lane={lane} blockers_at_selection={count}")
                 rc, _ = drain_lane(lane, args)
                 if rc != 0:
-                    return rc
+                    return campaign_result(rc)
             if not args.lane:
                 PROGRESS["lane"] = "global-development"
                 emit("draining every remaining eligible development-tier row")
                 rc, _ = drain_lane(None, args)
                 if rc != 0:
-                    return rc
+                    return campaign_result(rc)
             if not args.dry_run:
                 synced, detail = batch.sync_origin_main()
                 if not synced:
@@ -1356,7 +1379,7 @@ def main(argv: list[str] | None = None) -> int:
                     forensic_attempted,
                 )
                 if rc != 0:
-                    return rc
+                    return campaign_result(rc)
                 if resume_development:
                     continue
                 return 0
@@ -1364,32 +1387,42 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     finally:
         _STOP_HEARTBEAT.set()
-        finalization_failures: list[str] = []
+        finalization_failures: list[tuple[str, BaseException]] = []
         try:
             emit(summary_line(final=True))
         except BaseException as exc:
-            finalization_failures.append(
-                finalization_failure("forced final summary failed", exc)
-            )
+            finalization_failures.append(("forced final summary failed", exc))
         try:
             if _DRAIN_LOCK_HANDLE is not None:
                 _DRAIN_LOCK_HANDLE.close()
         except BaseException as exc:
-            finalization_failures.append(
-                finalization_failure("parent drain-lock close failed", exc)
-            )
+            finalization_failures.append(("parent drain-lock close failed", exc))
         finally:
             _DRAIN_LOCK_HANDLE = None
         if finalization_failures:
-            try:
-                print(
-                    "audit-loop finalization warning; preserving the primary "
-                    "campaign result: " + "; ".join(finalization_failures),
-                    file=sys.stderr,
-                    flush=True,
-                )
-            except BaseException:
-                pass
+            rendered = [
+                finalization_failure(label, exc)
+                for label, exc in finalization_failures
+            ]
+            if cleanup_integrity_result:
+                try:
+                    print(
+                        "audit-loop finalization warning; preserving the "
+                        "cleanup-integrity campaign result: "
+                        + "; ".join(rendered),
+                        file=sys.stderr,
+                        flush=True,
+                    )
+                except BaseException:
+                    pass
+            else:
+                _primary_label, primary_error = finalization_failures[0]
+                for detail in rendered[1:]:
+                    try:
+                        primary_error.add_note(detail)
+                    except BaseException:
+                        pass
+                raise primary_error
 
 
 if __name__ == "__main__":

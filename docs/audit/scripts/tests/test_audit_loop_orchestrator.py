@@ -2353,6 +2353,94 @@ class ClaimTransactionTest(unittest.TestCase):
 
         proc.wait.assert_not_called()
 
+    def test_cleanup_exception_rendering_is_typed_and_exhaustive(self):
+        class UnrenderableSignalError(OSError):
+            def __str__(self):
+                raise RuntimeError("signal rendering failed")
+
+        class UnrenderableCleanupError(batch.CleanupIntegrityError):
+            def __str__(self):
+                raise OSError("cleanup rendering failed")
+
+        proc = mock.Mock(pid=4444)
+        with mock.patch.object(
+            batch.os,
+            "killpg",
+            side_effect=UnrenderableSignalError(),
+        ):
+            with self.assertRaises(batch.CleanupIntegrityError) as raised:
+                batch.terminate_read_only_seat(
+                    {"proc": proc, "process_group": 4444}
+                )
+        self.assertIn(
+            "<unprintable UnrenderableSignalError>",
+            str(raised.exception),
+        )
+        proc.wait.assert_not_called()
+
+        jobs = [{"cid": "first"}, {"cid": "second"}]
+        with mock.patch.object(
+            batch,
+            "terminate_read_only_seat",
+            side_effect=[UnrenderableCleanupError(), None],
+        ) as terminate:
+            with self.assertRaises(batch.CleanupIntegrityError) as raised:
+                batch.terminate_read_only_seats(jobs)
+
+        self.assertEqual(
+            terminate.call_args_list,
+            [mock.call(job) for job in jobs],
+        )
+        self.assertIn(
+            "<unprintable UnrenderableCleanupError>",
+            str(raised.exception),
+        )
+
+    def test_worker_log_finalizer_cannot_detype_unrenderable_cleanup(self):
+        class UnrenderableCleanupError(batch.CleanupIntegrityError):
+            def __str__(self):
+                raise OSError("cleanup rendering failed")
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            failing_log = mock.Mock(closed=False)
+            failing_log.close.side_effect = OSError("log close failed")
+            proc = mock.Mock(pid=4444, returncode=None)
+            proc.poll.return_value = None
+            job = {
+                "cid": "row",
+                "proc": proc,
+                "process_group": 4444,
+                "raw_output": root / "raw.txt",
+                "log_path": root / "log.txt",
+                "log_handle": failing_log,
+                "started": 0.0,
+                "last_size": 0,
+                "last_activity": (0, 0.0),
+                "last_progress": 0.0,
+            }
+            with mock.patch.object(
+                batch.time, "monotonic", return_value=2.0
+            ), mock.patch.object(
+                batch,
+                "terminate_read_only_seat",
+                side_effect=UnrenderableCleanupError(),
+            ), mock.patch.object(
+                batch, "terminate_read_only_seats"
+            ):
+                with self.assertRaises(batch.CleanupIntegrityError) as raised:
+                    batch.wait_workers(
+                        [job],
+                        wall_timeout_seconds=1,
+                    )
+
+        self.assertIn(
+            "<unprintable UnrenderableCleanupError>",
+            str(raised.exception),
+        )
+        self.assertIn("worker log cleanup also failed", str(raised.exception))
+        failing_log.close.assert_called_once_with()
+
     def test_worker_teardown_bounds_leader_reap(self):
         proc = mock.Mock(pid=4444)
         proc.wait.side_effect = subprocess.TimeoutExpired(
@@ -5231,6 +5319,53 @@ class CampaignContractTest(unittest.TestCase):
             self.assertEqual(rc, batch.TRANSIENT_SERVICE_EXIT_CODE)
             self.assertFalse(args.campaign_quarantine_file.exists())
 
+    def test_forensic_cleanup_exit_precedes_artifact_and_service_classification(
+        self,
+    ):
+        artifacts = (
+            "not-json\n",
+            json.dumps(
+                {
+                    "claim_id": "forensic_row",
+                    "phase": "codex_failed",
+                    "stderr": "HTTP 503 Service Unavailable",
+                }
+            )
+            + "\n",
+        )
+        for artifact in artifacts:
+            with (
+                self.subTest(artifact=artifact),
+                tempfile.TemporaryDirectory() as tmp,
+            ):
+                campaign = Path(tmp)
+                args = _args()
+                args.campaign_workdir = campaign
+                args.campaign_quarantine_file = (
+                    campaign / "campaign-row-exclusions.jsonl"
+                )
+
+                def fake_run(_label, command, env=None):
+                    log = Path(command[command.index("--run-log-path") + 1])
+                    log.write_text(artifact, encoding="utf-8")
+                    return batch.CLEANUP_INTEGRITY_EXIT_CODE
+
+                with mock.patch.object(
+                    audit_loop,
+                    "first_ready_forensic_claim",
+                    return_value="forensic_row",
+                ), mock.patch.object(
+                    audit_loop, "run_command", side_effect=fake_run
+                ), mock.patch.object(
+                    audit_loop,
+                    "emit",
+                    side_effect=OSError("stdout unavailable"),
+                ):
+                    rc = audit_loop.run_forensic_canary(args)
+
+                self.assertEqual(rc, batch.CLEANUP_INTEGRITY_EXIT_CODE)
+                self.assertFalse(args.campaign_quarantine_file.exists())
+
     def test_forensic_zero_exit_without_terminal_outcome_fails_closed(self):
         with tempfile.TemporaryDirectory() as tmp:
             campaign = Path(tmp)
@@ -5419,6 +5554,130 @@ class CampaignContractTest(unittest.TestCase):
                     self.assertEqual(drain_calls, 1)
                 else:
                     forensic.assert_called_once()
+
+    def test_child_cleanup_exit_precedes_end_reporting_failures(self):
+        original_progress = dict(audit_loop.PROGRESS)
+        try:
+            for failure in ("head", "emit"):
+                with self.subTest(failure=failure):
+                    def emit(message):
+                        if failure == "emit" and message.startswith("END "):
+                            raise OSError("stdout unavailable after child exit")
+
+                    def git_head():
+                        if failure == "head":
+                            raise OSError("HEAD unavailable after child exit")
+                        return "same"
+
+                    completed = mock.Mock(
+                        returncode=batch.CLEANUP_INTEGRITY_EXIT_CODE
+                    )
+                    with mock.patch.object(
+                        audit_loop.subprocess, "run", return_value=completed
+                    ), mock.patch.object(
+                        audit_loop, "git_head", side_effect=git_head
+                    ), mock.patch.object(
+                        audit_loop, "emit", side_effect=emit
+                    ), mock.patch.object(
+                        batch, "cleanup_integrity_diagnostic"
+                    ) as diagnostic:
+                        rc = audit_loop.run_command("panel-probe", ["child"])
+
+                    self.assertEqual(rc, batch.CLEANUP_INTEGRITY_EXIT_CODE)
+                    diagnostic.assert_called_once()
+        finally:
+            audit_loop.PROGRESS.clear()
+            audit_loop.PROGRESS.update(original_progress)
+
+    def test_child_end_reporting_failure_still_propagates_on_ordinary_result(self):
+        completed = mock.Mock(returncode=1)
+
+        def emit(message):
+            if message.startswith("END "):
+                raise OSError("stdout unavailable after ordinary child exit")
+
+        with mock.patch.object(
+            audit_loop.subprocess, "run", return_value=completed
+        ), mock.patch.object(
+            audit_loop, "git_head", return_value="same"
+        ), mock.patch.object(
+            audit_loop, "emit", side_effect=emit
+        ):
+            with self.assertRaisesRegex(
+                OSError,
+                "stdout unavailable after ordinary child exit",
+            ):
+                audit_loop.run_command("batch-probe", ["child"])
+
+    def test_parent_finalizers_propagate_ordinary_failure_after_exhaustive_close(
+        self,
+    ):
+        with tempfile.TemporaryDirectory() as tmp:
+            lock = mock.Mock()
+            lock.close.side_effect = OSError("ordinary lock close failed")
+            final_summary_attempted = False
+
+            def emit(message):
+                nonlocal final_summary_attempted
+                if message == "forced-final-summary":
+                    final_summary_attempted = True
+                    raise OSError("ordinary final summary failed")
+
+            with mock.patch.object(
+                audit_loop, "validate_requested_lanes"
+            ), mock.patch.object(
+                batch, "load_campaign_exclusion_records", return_value=[]
+            ), mock.patch.object(
+                batch, "load_campaign_selection_skip_records", return_value=[]
+            ), mock.patch.object(
+                batch, "acquire_exclusive_drain_lock", return_value=lock
+            ), mock.patch.object(
+                batch, "clean_main_error", return_value=None
+            ), mock.patch.object(
+                batch, "sync_origin_main", return_value=(True, "same")
+            ), mock.patch.object(
+                audit_loop, "audit_status_snapshot", return_value={}
+            ), mock.patch.object(
+                audit_loop, "heartbeat", return_value=None
+            ), mock.patch.object(
+                audit_loop, "git_head", return_value="same"
+            ), mock.patch.object(
+                audit_loop, "run_panel", return_value=0
+            ), mock.patch.object(
+                audit_loop, "drain_lane", return_value=(0, False)
+            ), mock.patch.object(
+                audit_loop, "blocking_lanes", return_value=[]
+            ), mock.patch.object(
+                audit_loop,
+                "campaign_exclusion_counts",
+                return_value=batch.Counter(),
+            ), mock.patch.object(
+                audit_loop, "summary_line", return_value="forced-final-summary"
+            ), mock.patch.object(
+                audit_loop, "emit", side_effect=emit
+            ):
+                with self.assertRaisesRegex(
+                    OSError,
+                    "ordinary final summary failed",
+                ) as raised:
+                    audit_loop.main(
+                        [
+                            "--campaign-workdir",
+                            tmp,
+                            "--worker-id",
+                            "ordinary-finalizer-test",
+                            "--skip-forensic-canary",
+                        ]
+                    )
+
+            self.assertTrue(final_summary_attempted)
+            lock.close.assert_called_once_with()
+            self.assertTrue(
+                any(
+                    "ordinary lock close failed" in note
+                    for note in getattr(raised.exception, "__notes__", [])
+                )
+            )
 
     def test_default_worker_runs_complete_flow_with_generated_identity(self):
         generated = mock.Mock(hex="0123456789abcdef")

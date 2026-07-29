@@ -15718,6 +15718,234 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
         )
         self.assertEqual(len(record["votes"]), 4)
 
+    def test_panel_honors_audit_seat_ceiling_in_waves(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, _prior,
+            _invocation_id, _manifest,
+        ):
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"judge-{judge_no}",
+            }
+
+        for ceiling, expected in (
+            (4, [(4, 90), (1, 90)]),
+            (5, [(5, 90)]),
+            (10, [(5, 90)]),
+        ):
+            with self.subTest(ceiling=ceiling):
+                wave_sizes = []
+
+                def fake_wait(jobs, _stall, **kwargs):
+                    wave_sizes.append(
+                        (len(jobs), kwargs["wall_timeout_seconds"])
+                    )
+
+                with mock.patch.object(
+                    m,
+                    "render_panel_packet",
+                    return_value=("packet", {}, "1" * 32),
+                ), mock.patch.object(
+                    m, "launch_judge", side_effect=fake_launch
+                ), mock.patch.object(
+                    m.batch, "wait_workers", side_effect=fake_wait
+                ), mock.patch.object(
+                    m, "collect_vote", return_value=(self._vote(), "ok")
+                ), mock.patch.object(
+                    m, "judicial_applyability_error", return_value=None
+                ), mock.patch.object(
+                    m,
+                    "apply_judgment",
+                    return_value=(
+                        True,
+                        {
+                            "cid": "row",
+                            "result": "audited_clean",
+                            "commit": "abc",
+                        },
+                    ),
+                ):
+                    result = m.run_panel(
+                        row,
+                        {"row": row},
+                        self.tmp,
+                        1,
+                        1,
+                        1,
+                        [],
+                        max_workers=ceiling,
+                        seat_timeout_seconds=90,
+                    )
+
+                self.assertEqual(result["result"], "audited_clean")
+                self.assertEqual(wave_sizes, expected)
+
+    def test_judicial_deadline_is_an_operational_failure(self):
+        m = _import("orchestrate_judicial_panel")
+        vote, status = m.collect_vote(
+            {
+                "deadline_exceeded": True,
+                "stalled": False,
+            }
+        )
+        self.assertIsNone(vote)
+        self.assertEqual(status, "wall_timeout_killed")
+
+    def test_panel_propagates_cleanup_integrity_failure(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, _prior,
+            _invocation_id, _manifest,
+        ):
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"judge-{judge_no}",
+            }
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "1" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch,
+            "wait_workers",
+            side_effect=m.batch.CleanupIntegrityError("group still present"),
+        ), mock.patch.object(
+            m.batch,
+            "terminate_read_only_seats",
+            side_effect=RuntimeError("secondary cleanup failed"),
+        ) as terminate:
+            with self.assertRaisesRegex(
+                m.batch.CleanupIntegrityError,
+                "group still present; judicial secondary seat cleanup "
+                "also failed: secondary cleanup failed",
+            ):
+                m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+
+        terminate.assert_called_once()
+
+    def test_panel_secondary_cleanup_rendering_stays_typed(self):
+        m = _import("orchestrate_judicial_panel")
+        row = self._row()
+
+        class NameHostileMeta(type):
+            def __getattribute__(cls, name):
+                if name == "__name__":
+                    raise RuntimeError("type-name rendering failed")
+                return super().__getattribute__(name)
+
+        class UnrenderableCleanupError(
+            m.batch.CleanupIntegrityError,
+            metaclass=NameHostileMeta,
+        ):
+            def __str__(self):
+                raise OSError("primary rendering failed")
+
+        class UnrenderableSecondaryError(
+            RuntimeError,
+            metaclass=NameHostileMeta,
+        ):
+            def __str__(self):
+                raise OSError("secondary rendering failed")
+
+        def fake_launch(
+            _packet, _row, judge_no, panel_no, _workdir, _prior,
+            _invocation_id, _manifest,
+        ):
+            proc = mock.Mock()
+            proc.poll.return_value = None
+            return {
+                "judge": judge_no,
+                "panel": panel_no,
+                "auditor": f"judge-{judge_no}",
+                "proc": proc,
+            }
+
+        with mock.patch.object(
+            m, "render_panel_packet", return_value=("packet", {}, "1" * 32)
+        ), mock.patch.object(
+            m, "launch_judge", side_effect=fake_launch
+        ), mock.patch.object(
+            m.batch,
+            "wait_workers",
+            side_effect=UnrenderableCleanupError(),
+        ), mock.patch.object(
+            m.batch,
+            "terminate_read_only_seats",
+            side_effect=UnrenderableSecondaryError(),
+        ) as terminate:
+            with self.assertRaises(m.batch.CleanupIntegrityError) as raised:
+                m.run_panel(row, {"row": row}, self.tmp, 1, 1, 1, [])
+
+        self.assertIn(
+            "<unprintable UnrenderableCleanupError>",
+            str(raised.exception),
+        )
+        self.assertIn(
+            "<unprintable UnrenderableSecondaryError>",
+            str(raised.exception),
+        )
+        terminate.assert_called_once()
+
+    def test_panel_main_stops_after_cleanup_integrity_failure(self):
+        m = _import("orchestrate_judicial_panel")
+        rows = {
+            "row-a": self._row("row-a"),
+            "row-b": self._row("row-b"),
+        }
+        diagnostic_failures = []
+
+        def fail_cleanup_diagnostic(*args, **_kwargs):
+            if args and str(args[0]).startswith("GLOBAL cleanup integrity"):
+                diagnostic_failures.append(str(args[0]))
+                raise OSError("stdout unavailable")
+
+        with tempfile.TemporaryDirectory() as tmp:
+            workdir = Path(tmp) / "panel"
+            with mock.patch.dict(
+                os.environ,
+                {"AUDIT_PANEL_WORKDIR": str(workdir)},
+            ), mock.patch.object(
+                sys, "argv", ["orchestrate_judicial_panel.py"]
+            ), mock.patch.object(
+                m.batch, "clean_main_error", return_value=None
+            ), mock.patch.object(
+                m, "workdir_guard_error", return_value=None
+            ), mock.patch.object(
+                m.batch, "acquire_exclusive_drain_lock", return_value=mock.Mock()
+            ), mock.patch.object(
+                m.batch, "load_rows", return_value=rows
+            ), mock.patch.object(
+                m, "panel_scope", return_value=set(rows)
+            ), mock.patch.object(
+                m,
+                "collect_panel_targets",
+                return_value=(list(rows.values()), []),
+            ), mock.patch.object(
+                m, "load_prior_panels", return_value=({}, None)
+            ), mock.patch.object(
+                m,
+                "run_panel",
+                side_effect=m.batch.CleanupIntegrityError(
+                    "group still present"
+                ),
+            ) as run_panel, mock.patch(
+                "builtins.print",
+                side_effect=fail_cleanup_diagnostic,
+            ):
+                rc = m.main()
+
+        self.assertEqual(rc, m.batch.CLEANUP_INTEGRITY_EXIT_CODE)
+        self.assertEqual(len(diagnostic_failures), 1)
+        run_panel.assert_called_once()
+
     def test_contract_invalid_vote_runs_fresh_full_panel(self):
         m = _import("orchestrate_judicial_panel")
         row = self._row()
@@ -15905,12 +16133,26 @@ class JudicialPanelOrchestratorTest(unittest.TestCase):
     def test_numeric_runtime_arguments_must_be_positive(self):
         m = _import("orchestrate_judicial_panel")
         valid = argparse.Namespace(
-            stall_minutes=1, runner_timeout_sec=1, push_retries=1
+            max_workers=1,
+            stall_minutes=1,
+            seat_timeout_sec=1,
+            runner_timeout_sec=1,
+            push_retries=1,
         )
         self.assertIsNone(m.runtime_arg_error(valid))
-        for field in ("stall_minutes", "runner_timeout_sec", "push_retries"):
+        for field in (
+            "max_workers",
+            "stall_minutes",
+            "seat_timeout_sec",
+            "runner_timeout_sec",
+            "push_retries",
+        ):
             invalid = argparse.Namespace(
-                stall_minutes=1, runner_timeout_sec=1, push_retries=1
+                max_workers=1,
+                stall_minutes=1,
+                seat_timeout_sec=1,
+                runner_timeout_sec=1,
+                push_retries=1,
             )
             setattr(invalid, field, 0)
             self.assertIn("must be positive", m.runtime_arg_error(invalid))

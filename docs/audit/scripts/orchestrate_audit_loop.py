@@ -80,6 +80,22 @@ def emit(message: str) -> None:
     print(f"[{now}] {message}", flush=True)
 
 
+def finalization_failure(label: str, exc: BaseException) -> str:
+    """Render secondary finalizer context without risking another exception."""
+    return (
+        f"{label}: {batch.safe_exception_type_name(exc)}: "
+        f"{batch.safe_exception_text(exc)}"
+    )
+
+
+def emit_preserving_primary_result(message: str) -> None:
+    """Best-effort status output for an already-determined campaign result."""
+    try:
+        emit(message)
+    except BaseException:
+        pass
+
+
 def ready_row_count() -> int | None:
     try:
         payload = json.loads(QUEUE.read_text(encoding="utf-8"))
@@ -356,7 +372,16 @@ def run_command(label: str, command: list[str], env: dict[str, str] | None = Non
         PROGRESS["canary_state"] = f"{state}:{label}"
     if proc.returncode != 0:
         PROGRESS["failures"].append(f"{label}:exit={proc.returncode}")
-    emit(f"END {label}: exit={proc.returncode} head={git_head()}")
+    try:
+        emit(f"END {label}: exit={proc.returncode} head={git_head()}")
+    except BaseException as exc:
+        if proc.returncode != batch.CLEANUP_INTEGRITY_EXIT_CODE:
+            raise
+        batch.cleanup_integrity_diagnostic(
+            "GLOBAL cleanup integrity child result retained after END "
+            "reporting failed",
+            exc,
+        )
     return proc.returncode
 
 
@@ -423,8 +448,12 @@ def panel_command(args: argparse.Namespace) -> list[str]:
     command = [
         sys.executable,
         str(PANEL),
+        "--max-workers",
+        str(args.max_workers),
         "--stall-minutes",
         str(args.stall_minutes),
+        "--seat-timeout-sec",
+        str(args.codex_timeout_sec),
         "--runner-timeout-sec",
         str(args.runner_timeout_sec),
         "--push-retries",
@@ -449,6 +478,8 @@ def batch_command(
         str(args.batch_rounds),
         "--stall-minutes",
         str(args.stall_minutes),
+        "--seat-timeout-sec",
+        str(args.codex_timeout_sec),
         "--runner-timeout-sec",
         str(args.runner_timeout_sec),
         "--push-retries",
@@ -529,6 +560,12 @@ def drain_lane(
             f"batch-{label}-cycle-{cycle}",
             batch_command(lane, args, source=source),
         )
+        if batch_rc == batch.CLEANUP_INTEGRITY_EXIT_CODE:
+            emit_preserving_primary_result(
+                "GLOBAL cleanup integrity failure in development batch; "
+                "skipping the post-batch panel sweep and stopping the campaign"
+            )
+            return batch_rc, made_progress
         # This is intentionally unconditional, including after a hard batch
         # result: another row in the same batch may already have recorded a
         # panel-eligible disagreement. Preserve the hard result only after the
@@ -545,6 +582,12 @@ def drain_lane(
             if batch_rc != 0:
                 return batch_rc, made_progress
             raise
+        if panel_rc == batch.CLEANUP_INTEGRITY_EXIT_CODE:
+            emit_preserving_primary_result(
+                "GLOBAL cleanup integrity failure in the mandatory panel "
+                "sweep; preserving the dedicated campaign hard stop"
+            )
+            return panel_rc, made_progress
         if panel_rc != 0:
             if batch_rc not in {0, batch.TRANSIENT_SERVICE_EXIT_CODE}:
                 return batch_rc, made_progress
@@ -852,6 +895,12 @@ def run_forensic_canary(
     env = dict(os.environ)
     env["AUDIT_FORENSIC_MODE"] = "1"
     rc = run_command(f"forensic-canary-{claim_id}", command, env=env)
+    if rc == batch.CLEANUP_INTEGRITY_EXIT_CODE:
+        emit_preserving_primary_result(
+            "GLOBAL cleanup integrity failure in forensic canary; "
+            "skipping artifact parsing and service classification"
+        )
+        return rc
     try:
         terminal = forensic_canary_terminal_record(run_log, claim_id)
     except (OSError, ValueError) as exc:
@@ -1069,7 +1118,15 @@ def build_parser() -> argparse.ArgumentParser:
         description="Panel-aware end-to-end audit backlog drainer"
     )
     parser.add_argument("--lane", action="append", help="limit to a configured lane")
-    parser.add_argument("--max-workers", type=int, default=4)
+    parser.add_argument(
+        "--max-workers",
+        type=int,
+        default=4,
+        help=(
+            "concurrent primary-seat ceiling for development auditors and "
+            "judicial judges; panels run in bounded waves below five"
+        ),
+    )
     parser.add_argument(
         "--worker-id",
         default=os.environ.get("AUDIT_WORKER_ID", ""),
@@ -1214,6 +1271,14 @@ def main(argv: list[str] | None = None) -> int:
     PROGRESS["last_canary_terminal_phase"] = None
     PROGRESS["last_canary_source"] = None
     forensic_attempted: set[str] = set()
+    cleanup_integrity_result = False
+
+    def campaign_result(code: int) -> int:
+        nonlocal cleanup_integrity_result
+        if code == batch.CLEANUP_INTEGRITY_EXIT_CODE:
+            cleanup_integrity_result = True
+        return code
+
     _STOP_HEARTBEAT.clear()
     thread = threading.Thread(target=heartbeat, daemon=True)
     thread.start()
@@ -1228,14 +1293,14 @@ def main(argv: list[str] | None = None) -> int:
             before = git_head()
             rc = run_panel(args, f"panel-pass-{pass_number}-opening")
             if rc != 0:
-                return rc
+                return campaign_result(rc)
             if not args.lane:
                 for source in ("dispatch", "reaudit"):
                     PROGRESS["lane"] = f"{source}-source"
                     emit(f"draining ready {source} source rows")
                     rc, _ = drain_lane(None, args, source=source)
                     if rc != 0:
-                        return rc
+                        return campaign_result(rc)
             try:
                 lanes = blocking_lanes(args.lane)
             except ValueError as exc:
@@ -1250,13 +1315,13 @@ def main(argv: list[str] | None = None) -> int:
                 emit(f"draining lane={lane} blockers_at_selection={count}")
                 rc, _ = drain_lane(lane, args)
                 if rc != 0:
-                    return rc
+                    return campaign_result(rc)
             if not args.lane:
                 PROGRESS["lane"] = "global-development"
                 emit("draining every remaining eligible development-tier row")
                 rc, _ = drain_lane(None, args)
                 if rc != 0:
-                    return rc
+                    return campaign_result(rc)
             if not args.dry_run:
                 synced, detail = batch.sync_origin_main()
                 if not synced:
@@ -1313,7 +1378,7 @@ def main(argv: list[str] | None = None) -> int:
                     forensic_attempted,
                 )
                 if rc != 0:
-                    return rc
+                    return campaign_result(rc)
                 if resume_development:
                     continue
                 return 0
@@ -1321,10 +1386,42 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     finally:
         _STOP_HEARTBEAT.set()
-        emit(summary_line(final=True))
-        if _DRAIN_LOCK_HANDLE is not None:
-            _DRAIN_LOCK_HANDLE.close()
+        finalization_failures: list[tuple[str, BaseException]] = []
+        try:
+            emit(summary_line(final=True))
+        except BaseException as exc:
+            finalization_failures.append(("forced final summary failed", exc))
+        try:
+            if _DRAIN_LOCK_HANDLE is not None:
+                _DRAIN_LOCK_HANDLE.close()
+        except BaseException as exc:
+            finalization_failures.append(("parent drain-lock close failed", exc))
+        finally:
             _DRAIN_LOCK_HANDLE = None
+        if finalization_failures:
+            rendered = [
+                finalization_failure(label, exc)
+                for label, exc in finalization_failures
+            ]
+            if cleanup_integrity_result:
+                try:
+                    print(
+                        "audit-loop finalization warning; preserving the "
+                        "cleanup-integrity campaign result: "
+                        + "; ".join(rendered),
+                        file=sys.stderr,
+                        flush=True,
+                    )
+                except BaseException:
+                    pass
+            else:
+                _primary_label, primary_error = finalization_failures[0]
+                for detail in rendered[1:]:
+                    try:
+                        primary_error.add_note(detail)
+                    except BaseException:
+                        pass
+                raise primary_error
 
 
 if __name__ == "__main__":

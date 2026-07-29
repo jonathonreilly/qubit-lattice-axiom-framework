@@ -113,10 +113,14 @@ PACKET_COMPLETION_STALL_SECONDS = 20 * 60
 PACKET_COMPLETION_POLL_SECONDS = 15
 PACKET_COMPLETION_EXIT_GRACE_SECONDS = 10
 COMMAND_TERMINATION_GRACE_SECONDS = 5
+SEAT_GROUP_VERIFICATION_ATTEMPTS = 50
+SEAT_GROUP_VERIFICATION_INTERVAL_SECONDS = 0.1
+SEAT_LEADER_REAP_TIMEOUT_SECONDS = 5.0
 INHERITED_DRAIN_LOCK_FD_ENV = "AUDIT_DRAIN_LOCK_FD"
 LANE_CERTIFICATION_PATH = "docs/audit/data/lane_certification.json"
 TRANSIENT_SERVICE_FAILURE_RESULT = "worker_transient_service_unavailable"
 TRANSIENT_SERVICE_EXIT_CODE = getattr(os, "EX_TEMPFAIL", 75)
+CLEANUP_INTEGRITY_EXIT_CODE = getattr(os, "EX_SOFTWARE", 70)
 WORKER_FAILURE_LOG_TAIL_BYTES = 256 * 1024
 WORKER_FAILURE_LOG_TAIL_LINES = 80
 TRANSIENT_SERVICE_MARKERS = (
@@ -193,6 +197,27 @@ NON_RETRYABLE_SERVICE_MARKERS = (
     "unclassified failure",
     "corrupt local configuration",
 )
+
+
+class CleanupIntegrityError(RuntimeError):
+    """An owned read-only seat group could not be proven absent."""
+
+
+def safe_exception_type_name(exc: BaseException) -> str:
+    """Return an exact built-in string without trusting exception metadata."""
+    try:
+        name = type.__getattribute__(type(exc), "__name__")
+        return str.__str__(name)
+    except BaseException:
+        return "BaseException"
+
+
+def safe_exception_text(exc: BaseException) -> str:
+    """Render exception context as an exact string without altering control flow."""
+    try:
+        return str.__str__(str(exc))
+    except BaseException:
+        return "<unprintable " + safe_exception_type_name(exc) + ">"
 
 
 def _repo_identity() -> str:
@@ -870,12 +895,12 @@ def launch_worker(
         log_handle.close()
         raise
     now = time.monotonic()
-    now_wall = time.time()
     return {
         "cid": cid,
         "row": row,
         "pass": pass_no,
         "proc": proc,
+        "process_group": proc.pid,
         "raw_output": raw_output,
         "delivery": delivery,
         "log_path": log_path,
@@ -894,11 +919,12 @@ def launch_worker(
         "auditor": f"codex-audit-batch-{ident}",
         "independence": seat_independence(row, pass_no),
         "workdir": workdir,
+        "started": now,
         "last_size": 0,
         "last_activity": (0, 0.0),
         "last_progress": now,
-        "last_progress_wall": now_wall,
         "stalled": False,
+        "deadline_exceeded": False,
     }
 
 
@@ -965,10 +991,105 @@ def start_progress_ticker() -> None:
     threading.Thread(target=_loop, daemon=True, name="drain-progress").start()
 
 
+def terminate_read_only_seat(job: dict) -> None:
+    """Kill one owned seat group and prove that the group has disappeared."""
+    proc = job["proc"]
+    process_group = job.get("process_group")
+    if type(process_group) is not int or process_group < 1:
+        raise CleanupIntegrityError(
+            "read-only auditor has no valid recorded process group"
+        )
+    try:
+        os.killpg(process_group, signal.SIGKILL)
+    except ProcessLookupError:
+        pass
+    except (OSError, OverflowError) as exc:
+        raise CleanupIntegrityError(
+            "read-only auditor process group could not be signaled: "
+            f"pgid={process_group}: {safe_exception_text(exc)}"
+        ) from exc
+    try:
+        job["returncode"] = proc.wait(
+            timeout=SEAT_LEADER_REAP_TIMEOUT_SECONDS
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise CleanupIntegrityError(
+            "read-only auditor leader could not be reaped within the "
+            f"cleanup bound: pgid={process_group}"
+        ) from exc
+    except Exception as exc:
+        raise CleanupIntegrityError(
+            "read-only auditor leader could not be reaped: "
+            f"pgid={process_group}: {safe_exception_text(exc)}"
+        ) from exc
+    for _attempt in range(SEAT_GROUP_VERIFICATION_ATTEMPTS):
+        try:
+            os.killpg(process_group, 0)
+        except ProcessLookupError:
+            return
+        except OSError as exc:
+            raise CleanupIntegrityError(
+                "read-only auditor process-group absence could not be probed: "
+                f"pgid={process_group}: {safe_exception_text(exc)}"
+            ) from exc
+        time.sleep(SEAT_GROUP_VERIFICATION_INTERVAL_SECONDS)
+    raise CleanupIntegrityError(
+        "read-only auditor process-group cleanup could not be verified: "
+        f"pgid={process_group}"
+    )
+
+
+def terminate_read_only_seats(jobs: list[dict]) -> None:
+    """Best-effort verified teardown of every still-owned read-only seat."""
+    failures: list[str] = []
+    for job in jobs:
+        try:
+            terminate_read_only_seat(job)
+        except BaseException as exc:
+            failures.append(safe_exception_text(exc))
+    if failures:
+        raise CleanupIntegrityError(
+            "one or more pending read-only seat groups could not be proven "
+            f"absent: {'; '.join(failures)}"
+        )
+
+
+def close_worker_logs(jobs: list[dict]) -> list[str]:
+    """Close every worker log handle and return, rather than raise, failures."""
+    failures: list[str] = []
+    for job in jobs:
+        try:
+            handle = job.get("log_handle")
+            if handle is not None and not handle.closed:
+                handle.close()
+        except BaseException as exc:
+            detail = safe_exception_text(exc)
+            try:
+                claim = str.__str__(str(job.get("cid", "<unknown>")))
+            except BaseException:
+                claim = "<unprintable claim id>"
+            failures.append(
+                f"{claim}: {safe_exception_type_name(exc)}: {detail}"
+            )
+    return failures
+
+
+def cleanup_integrity_diagnostic(
+    message: str, error: BaseException | None = None
+) -> None:
+    """Best-effort diagnostic that cannot replace the cleanup-integrity result."""
+    try:
+        suffix = f": {safe_exception_text(error)}" if error is not None else ""
+        print(message + suffix)
+    except BaseException:
+        pass
+
+
 def wait_workers(
     jobs: list[dict],
     stall_minutes: int = 45,
     on_claim_ready: Callable[[list[dict]], bool] | None = None,
+    wall_timeout_seconds: int | None = None,
 ) -> bool | None:
     """Monitor seats and optionally drain each complete claim immediately.
 
@@ -1027,11 +1148,10 @@ def wait_workers(
                 pending.clear()
                 break
             now = time.monotonic()
-            now_wall = time.time()
             for index in list(pending):
                 job = jobs[index]
                 job.setdefault("started", now)
-                job.setdefault("last_progress_wall", now_wall)
+                job.setdefault("last_progress", now)
                 job.setdefault("last_activity", (job.get("last_size", 0), 0.0))
                 output = job["raw_output"]
                 output_stat = output.stat() if output.exists() else None
@@ -1049,8 +1169,6 @@ def wait_workers(
                     job["last_activity"] = activity
                     job["last_size"] = size
                     job["last_progress"] = now
-                    if activity_mtime:
-                        job["last_progress_wall"] = activity_mtime
                 returncode = job["proc"].poll()
                 if returncode is not None:
                     job["returncode"] = returncode
@@ -1059,16 +1177,25 @@ def wait_workers(
                         job["log_handle"].close()
                     pending.remove(index)
                     continue
-                if now_wall - job["last_progress_wall"] >= stall_seconds:
-                    job["stalled"] = True
-                    try:
-                        os.killpg(job["proc"].pid, signal.SIGKILL)
-                    except ProcessLookupError:
-                        pass
-                    job["returncode"] = job["proc"].wait()
+                if (
+                    wall_timeout_seconds is not None
+                    and now - job["started"] >= wall_timeout_seconds
+                ):
+                    # Auditor seats are read-only subprocess groups. Their
+                    # absolute deadline is independent of log activity and
+                    # never interrupts the serialized mutation transaction.
+                    job["deadline_exceeded"] = True
+                    pending.remove(index)
+                    terminate_read_only_seat(job)
                     if not job["log_handle"].closed:
                         job["log_handle"].close()
+                    continue
+                if now - job["last_progress"] >= stall_seconds:
+                    job["stalled"] = True
                     pending.remove(index)
+                    terminate_read_only_seat(job)
+                    if not job["log_handle"].closed:
+                        job["log_handle"].close()
 
             if on_claim_ready is not None:
                 ready_claims = sorted({
@@ -1095,6 +1222,30 @@ def wait_workers(
                 raise commit_errors[0]
             return not commit_failed.is_set()
         return None
+    except CleanupIntegrityError as cleanup_error:
+        # An unverified seat group is a global integrity stop, but a seat
+        # deadline must never interrupt a generated-state transaction. Mark
+        # every queued claim as failed, terminate still-running seats, and let
+        # the one already-owned committer transaction reach its existing
+        # rollback/push-reconciliation boundary before propagating the error.
+        if committer is not None:
+            commit_failed.set()
+        pending_cleanup_error: BaseException | None = None
+        try:
+            terminate_read_only_seats([jobs[index] for index in pending])
+        except BaseException as exc:
+            pending_cleanup_error = exc
+        finally:
+            if committer is not None and committer.is_alive():
+                commit_queue.put(commit_stop)
+                committer.join()
+        if pending_cleanup_error is not None:
+            raise CleanupIntegrityError(
+                f"{safe_exception_text(cleanup_error)}; cleanup of another "
+                "pending seat also failed: "
+                f"{safe_exception_text(pending_cleanup_error)}"
+            ) from pending_cleanup_error
+        raise
     except BaseException:
         terminate_workers([jobs[index] for index in pending])
         if committer is not None and committer.is_alive():
@@ -1105,9 +1256,24 @@ def wait_workers(
         raise
     finally:
         PROGRESS["jobs"] = None
-        for job in jobs:
-            if not job["log_handle"].closed:
-                job["log_handle"].close()
+        active_error = sys.exc_info()[1]
+        log_close_failures = close_worker_logs(jobs)
+        if log_close_failures:
+            detail = (
+                "worker log cleanup also failed after every handle was "
+                f"attempted: {'; '.join(log_close_failures)}"
+            )
+            if isinstance(active_error, CleanupIntegrityError):
+                raise CleanupIntegrityError(
+                    f"{safe_exception_text(active_error)}; {detail}"
+                ) from active_error
+            if active_error is None:
+                raise OSError(detail)
+            if hasattr(active_error, "add_note"):
+                try:
+                    active_error.add_note(detail)
+                except BaseException:
+                    pass
 
 
 def terminate_workers(jobs: list[dict]) -> None:
@@ -1390,6 +1556,8 @@ def retryable_worker_service_failure(job: dict) -> str | None:
 def finalize_worker(job: dict) -> tuple[dict | None, dict]:
     cid = job["cid"]
     base = {"cid": cid, "pass": job["pass"]}
+    if job.get("deadline_exceeded"):
+        return None, {**base, "result": "wall_timeout_killed"}
     if job["stalled"]:
         return None, {**base, "result": "stall_killed"}
     raw_output = job["raw_output"]
@@ -3130,6 +3298,22 @@ def main() -> int:
             drain_lock = None
         return code
 
+    def finish_cleanup_integrity() -> int:
+        """Preserve the global-stop result even if lock release itself fails."""
+        nonlocal drain_lock
+        try:
+            if drain_lock is not None:
+                drain_lock.close()
+        except BaseException as exc:
+            cleanup_integrity_diagnostic(
+                "GLOBAL cleanup integrity failure while closing the drain "
+                "lock; process exit will release it",
+                exc,
+            )
+        finally:
+            drain_lock = None
+        return CLEANUP_INTEGRITY_EXIT_CODE
+
     parser = argparse.ArgumentParser(description="Parallel development-tier audit drainer")
     scope_group = parser.add_mutually_exclusive_group(required=True)
     scope_group.add_argument("--lane", help="lane name from lane_certification_config.json")
@@ -3171,6 +3355,15 @@ def main() -> int:
     parser.add_argument("--max-workers", type=int, default=6)
     parser.add_argument("--rounds", type=int, default=6)
     parser.add_argument("--stall-minutes", type=int, default=45)
+    parser.add_argument(
+        "--seat-timeout-sec",
+        type=int,
+        default=2700,
+        help=(
+            "absolute wall-clock deadline for each read-only auditor seat; "
+            "unlike --stall-minutes, continuous output does not extend it"
+        ),
+    )
     parser.add_argument("--runner-timeout-sec", type=int, default=120)
     parser.add_argument("--push-retries", type=int, default=3)
     parser.add_argument(
@@ -3211,10 +3404,14 @@ def main() -> int:
         args.max_workers < 1
         or args.rounds < 1
         or args.stall_minutes < 1
+        or args.seat_timeout_sec < 1
         or args.runner_timeout_sec < 1
         or args.push_retries < 1
     ):
-        parser.error("worker, round, stall, runner-timeout, and retry limits must be positive")
+        parser.error(
+            "worker, round, stall, seat-timeout, runner-timeout, and retry "
+            "limits must be positive"
+        )
     if args.retarget_conditionals and not args.claims:
         parser.error("--retarget-conditionals requires an explicit --claims list")
     retarget = frozenset(
@@ -3378,7 +3575,9 @@ def main() -> int:
             break
         print(
             f"   launched {len(jobs)} detached workers; streaming complete "
-            f"claims to one committer (stall {args.stall_minutes}m)"
+            "claims to one committer "
+            f"(stall {args.stall_minutes}m; seat deadline "
+            f"{args.seat_timeout_sec}s)"
         )
         compute_skips: set[str] = set()
         schema_quarantines: set[str] = set()
@@ -3395,11 +3594,35 @@ def main() -> int:
             )
             return ok
 
-        streamed = wait_workers(
-            jobs,
-            args.stall_minutes,
-            on_claim_ready=apply_ready_claim,
-        )
+        try:
+            streamed = wait_workers(
+                jobs,
+                args.stall_minutes,
+                on_claim_ready=apply_ready_claim,
+                wall_timeout_seconds=args.seat_timeout_sec,
+            )
+        except CleanupIntegrityError as exc:
+            cleanup_integrity_diagnostic(
+                "GLOBAL cleanup integrity failure; no later seat may launch",
+                exc,
+            )
+            try:
+                if report:
+                    (workdir / "report.jsonl").write_text(
+                        "".join(
+                            json.dumps(item, sort_keys=True) + "\n"
+                            for item in report
+                        ),
+                        encoding="utf-8",
+                    )
+            except BaseException as report_error:
+                cleanup_integrity_diagnostic(
+                    "GLOBAL cleanup integrity report could not be preserved; "
+                    "retaining the dedicated hard-stop result",
+                    report_error,
+                )
+            finally:
+                return finish_cleanup_integrity()
         if streamed is True:
             applied_ok = True
             round_science_handoffs = list(

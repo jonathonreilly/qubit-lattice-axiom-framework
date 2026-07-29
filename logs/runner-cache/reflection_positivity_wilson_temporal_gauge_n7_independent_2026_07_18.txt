@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.py
-runner_sha256: d113fddd6935a1a5b67ed317e0fe6f511c8a7134e68a478e58ecb41e08c7e137
+runner_sha256: f53c738002cade6a9cc7d86c3fc05b2246adf55dc04a8c8ee98a8075b4285e86
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.29
+elapsed_sec: 0.51
 status: ok
 ----- stdout -----
 ============================================================================================
@@ -52,6 +52,7 @@ Hostile controls and N7 resolutions
   N7_STEELMAN objection=finite SU(2)/SU(3) restrictions do not prove all SU(N); resolution=agreed, samples are support only (mins +2.755e-15, +1.578e-15); the universal theorem route additionally requires nonnegative tensor multiplicities, while this helper independently recomputes the symbolic beta/N normalization and exp(beta) majorant.
   N7_STEELMAN objection=negative coupling or linear reflection may fail; resolution=hostile mins SU2=-4.027e-01, SU3=-4.210e-01, wrong_reflection=-2.000e+00; theorem keeps beta>=0 and antilinear Theta.
   N7_STEELMAN objection=temporal gauge was not globally derived; resolution=not claimed: U0=identity is an explicit datum of the finite open two-slice carrier.
+  N7_STEELMAN_RESOLUTION route=finite-SU-N-restrictions-only; resolution=finite SU(2)/SU(3) restrictions remain numerical support only, while the source theorem closes universal SU(N) positivity with all-order nonnegative tensor multiplicities; this independent helper recomputes the beta/N normalization, exp(beta) majorant, real-Gram/Schur reconstruction, finite product and integrated Gram, and hostile sign/antilinearity boundaries; arbitrary_time_extent, fermion_sector, continuum_or_thermodynamic_limit, and global_temporal_gauge_fixing remain outside the finite two-slice pure-gauge carrier.
 
 --------------------------------------------------------------------------------------------
 Summary

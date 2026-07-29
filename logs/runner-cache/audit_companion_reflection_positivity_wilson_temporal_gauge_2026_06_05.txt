@@ -3,7 +3,7 @@ runner: scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026
 runner_sha256: c3584724ac42ff277f97e8746bcfbe957a35a9cc21e66f0fc081aa7c4fd3dc30
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 83.66
+elapsed_sec: 110.49
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -104,7 +104,7 @@ Part G: current-cycle N1-N8 bounded-theorem evidence
   N2_PAIR left=fermion_sector; right=continuum_or_thermodynamic_limit; left_unique_requirements=['Berezin_crossing_coefficient_matrix', 'Grassmann_generators']; right_unique_requirements=['limit_topology_and_convergence_proof', 'volume_uniform_estimate']
   N2_PAIR left=fermion_sector; right=global_temporal_gauge_fixing; left_unique_requirements=['Berezin_crossing_coefficient_matrix', 'Grassmann_generators']; right_unique_requirements=['gauge_orbit_representative_map', 'global_gauge_fixing_measure_identity']
   N2_PAIR left=continuum_or_thermodynamic_limit; right=global_temporal_gauge_fixing; left_unique_requirements=['limit_topology_and_convergence_proof', 'volume_uniform_estimate']; right_unique_requirements=['gauge_orbit_representative_map', 'global_gauge_fixing_measure_identity']
-  N2_DISPOSITION proved_objects=['bounded_gauge_observable_block', 'finite_gauge_link_configuration_space', 'nonnegative_tensor_multiplicities', 'open_two_slice_temporal_graph', 'positive_crossing_kernel']; missing_requirements={'arbitrary_time_extent': {'interior_time_reflection_factorization', 'third_time_slice'}, 'fermion_sector': {'Grassmann_generators', 'Berezin_crossing_coefficient_matrix'}, 'continuum_or_thermodynamic_limit': {'volume_uniform_estimate', 'limit_topology_and_convergence_proof'}, 'global_temporal_gauge_fixing': {'global_gauge_fixing_measure_identity', 'gauge_orbit_representative_map'}}; each broader wall requires objects absent from the bounded proof.
+  N2_DISPOSITION proved_objects=['bounded_gauge_observable_block', 'finite_gauge_link_configuration_space', 'nonnegative_tensor_multiplicities', 'open_two_slice_temporal_graph', 'positive_crossing_kernel']; missing_requirements={'arbitrary_time_extent': {'third_time_slice', 'interior_time_reflection_factorization'}, 'fermion_sector': {'Berezin_crossing_coefficient_matrix', 'Grassmann_generators'}, 'continuum_or_thermodynamic_limit': {'volume_uniform_estimate', 'limit_topology_and_convergence_proof'}, 'global_temporal_gauge_fixing': {'global_gauge_fixing_measure_identity', 'gauge_orbit_representative_map'}}; each broader wall requires objects absent from the bounded proof.
   [PASS] [BOUNDARY_EVIDENCE] G2 N2 each broader wall has independent missing proof objects  (boundaries=4, pairs=6)
   N3_DISPOSITION finite_volume_spatial_links=2; temporal_slices=(0, 1); temporal_periodicity_edges=0; beta_domain=[0,infinity); N_domain=integers>=2; temporal_gauge_identity_links=2; bounded_observable_sup_norm_max=1.0; gauge_field_records=4; non_gauge_field_records=0; configurations_per_slice=16; continuum_parameters=0; limit_operations=0
   [PASS] [BOUNDARY_EVIDENCE] G3 N3 hidden-wall carrier scan matches the exact bounded surface  (finite open two-slice pure-gauge temporal-gauge carrier with bounded observables)

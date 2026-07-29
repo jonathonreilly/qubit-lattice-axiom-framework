@@ -1,7 +1,7 @@
 # Reflection positivity — finite-volume `SU(N)` Wilson temporal-gauge bridge by a direct representation-ring proof
 
 **Date:** 2026-06-05
-**Repaired:** 2026-07-16
+**Repaired:** 2026-07-16; audit-packet evidence transport repaired 2026-07-29
 **Claim type:** bounded_theorem
 **Type:** bounded_theorem
 **Status authority:** independent audit lane only. This source note does not set,
@@ -357,6 +357,16 @@ and integrated Gram, checks the `beta/N` and factor-`1/2` normalization
 symbolically, and exercises negative-sign and wrong-reflection controls. Its
 matrix spectra are labelled numerical support; the normalization identities are
 labelled exact algebra.
+
+The helper's live stdout now emits the explicit
+`N7_STEELMAN_RESOLUTION` locator required by the audit-packet renderer. The
+renderer can therefore execute the registered helper independently and bind
+its zero-exit stdout to an authenticated `runner_stdout_independent` evidence
+path in the same restricted packet as the primary normal-mode stdout. The
+primary cache remains below the current `20,000`-character head-and-tail
+transport budget, so its live `N1_ROUTE`, `N2_PAIR`/`N2_DISPOSITION`,
+`N3_DISPOSITION`, `N4_CLAUSE`, five `N5_RESOLUTION`, `N6_DISPOSITION`,
+`N7_STEELMAN`, and `N8_DISPOSITION` locators remain visible together.
 
 Run all surfaces with:
 

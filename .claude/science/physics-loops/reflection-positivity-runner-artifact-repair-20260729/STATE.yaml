@@ -1,0 +1,29 @@
+loop_slug: reflection-positivity-runner-artifact-repair-20260729
+mode: run
+primary_target_claim_id: axiom_first_reflection_positivity_wilson_temporal_gauge_bridge_narrow_theorem_note_2026-06-05
+target_status: candidate-retained-grade
+actual_current_surface_status: bounded-support
+target_claim_type: bounded_theorem
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+started_at_utc: "2026-07-29T11:56:45Z"
+cycle_count: 1
+block_count: 1
+current_branch: claude/science-fix/axiom_first_reflection_positivity_wilson_temporal_gauge_brid-7d0db958
+base_ref: origin/main
+base_commit: a1e2bc70615fd8d09edd8dca3287ec054e0e9a4a
+lock_mode: task-local-supervisor-lock
+active_route: authenticated-helper-marker-and-unclipped-primary-stdout
+hard_residual: null
+files_touched:
+  - docs/AXIOM_FIRST_REFLECTION_POSITIVITY_WILSON_TEMPORAL_GAUGE_BRIDGE_NARROW_THEOREM_NOTE_2026-06-05.md
+  - scripts/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.py
+  - logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt
+  - logs/runner-cache/reflection_positivity_wilson_temporal_gauge_n7_independent_2026_07_18.txt
+open_imports: []
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+review_disposition: pass
+pr_status: forbidden_by_promotion_value_gate_v2_v3_v5
+next_exact_action: "Run a fresh independent audit of the unchanged bounded theorem using the authenticated primary and independent-helper stdout surfaces."
+stop_condition: "Achieved: authenticated live primary/helper packet verified, focused local review passed, and the pipeline requeued exactly the target claim."

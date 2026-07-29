@@ -29,6 +29,7 @@ import sympy
 
 AUDIT_TIMEOUT_SEC = 120
 TOL = 2.0e-10
+N7_RESOLUTION_MARKER = "N7_STEELMAN_RESOLUTION"
 
 COUNTS: Counter[str] = Counter()
 FAIL = 0
@@ -371,6 +372,16 @@ def run_independent_surface() -> int:
     print(
         "  N7_STEELMAN objection=temporal gauge was not globally derived; "
         "resolution=not claimed: U0=identity is an explicit datum of the finite open two-slice carrier."
+    )
+    print(
+        f"  {N7_RESOLUTION_MARKER} route=finite-SU-N-restrictions-only; "
+        "resolution=finite SU(2)/SU(3) restrictions remain numerical support only, "
+        "while the source theorem closes universal SU(N) positivity with all-order "
+        "nonnegative tensor multiplicities; this independent helper recomputes the "
+        "beta/N normalization, exp(beta) majorant, real-Gram/Schur reconstruction, "
+        "finite product and integrated Gram, and hostile sign/antilinearity boundaries; "
+        "arbitrary_time_extent, fermion_sector, continuum_or_thermodynamic_limit, and "
+        "global_temporal_gauge_fixing remain outside the finite two-slice pure-gauge carrier."
     )
 
     section("Summary")

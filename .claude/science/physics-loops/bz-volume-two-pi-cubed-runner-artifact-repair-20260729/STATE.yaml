@@ -1,0 +1,28 @@
+loop_slug: bz-volume-two-pi-cubed-runner-artifact-repair-20260729
+mode: run
+goal: "Close the clipped-runner-evidence repair target for the bounded BZ Haar-normalization theorem."
+target_status: best-honest-status
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: bounded_theorem
+cycle_count: 1
+block_count: 1
+active_route: compact-invocation-bound-runner-certificate
+strongest_unresolved_proof_obligation: null
+hard_residual: null
+trace_gate: direct_blocker_closure
+review_disposition: pass
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+runtime_used: "~16m wall clock including repository-wide pipeline validation"
+remote_science_branch: null
+local_branch: claude/science-fix/bz_volume_two_pi_cubed_substrate_internal_narrow_theorem_not-28946fe6
+lock_status: "isolated science-fix worktree; no additional repository-wide lock"
+skill_freshness: "origin/main fetch unavailable because the managed worktree cannot write parent FETCH_HEAD; local skill used"
+files_touched:
+  - docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md
+  - scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py
+  - logs/runner-cache/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.txt
+open_imports: []
+no_go_routes: []
+next_exact_action: "Have the science-fix supervisor commit and open the source PR; after landing, run a fresh independent audit of the same claim id."
+stop_condition: "Requested single repair cycle completed; independent audit remains external."

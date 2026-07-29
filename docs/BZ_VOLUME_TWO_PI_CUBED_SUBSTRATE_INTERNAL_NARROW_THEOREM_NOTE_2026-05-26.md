@@ -294,6 +294,12 @@ any independent audit result.
 
 ## Verification
 
+The runner declares this note in `AUDIT_INPUT_PATHS`, so the canonical
+runner-cache header binds an execution to both the runner SHA-256 and a
+fingerprint of this note. Its compact certificate retains one labelled output
+line for each of the 55 assertions and is kept below 6,000 characters, so the
+complete execution record fits the audit packet without clipping.
+
 Run:
 
 ```bash
@@ -303,7 +309,7 @@ PYTHONPATH=scripts python3 scripts/bz_volume_two_pi_cubed_substrate_internal_run
 Expected:
 
 ```text
-TOTAL: PASS=<N> FAIL=0
+TOTAL   : PASS = 55, FAIL = 0
 VERDICT: substrate-internal identification of (2π)³ on Z³: passes.
 ```
 

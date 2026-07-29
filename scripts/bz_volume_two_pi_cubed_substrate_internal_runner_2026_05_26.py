@@ -40,6 +40,11 @@ except ImportError as e:
     print(f"ERROR: numpy import failed: {e}")
     sys.exit(2)
 
+
+AUDIT_INPUT_PATHS = (
+    "docs/BZ_VOLUME_TWO_PI_CUBED_SUBSTRATE_INTERNAL_NARROW_THEOREM_NOTE_2026-05-26.md",
+)
+
 # ---------------------------------------------------------------------------
 # Bookkeeping
 # ---------------------------------------------------------------------------
@@ -84,9 +89,7 @@ TWO_PI = 2.0 * PI
 # Section 0: source-boundary firewall
 # ---------------------------------------------------------------------------
 
-print("=" * 78)
-print("Section 0: source-boundary firewall")
-print("=" * 78)
+print("SECTION 0 source-boundary firewall")
 
 required_source_phrases = {
     "z3 substrate": "`Z³` spatial substrate",
@@ -114,19 +117,17 @@ forbidden_source_phrases = [
     "](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md)",
     "](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)",
 ]
-for phrase in forbidden_source_phrases:
+for check_index, phrase in enumerate(forbidden_source_phrases, start=1):
     exact_assert(
         phrase not in SOURCE_TEXT,
-        f"(S-forbidden) source excludes stale/overpromoted phrase: {phrase}",
+        f"(S-forbidden-{check_index:02d}) stale/overpromoted phrase absent",
     )
 
 # ---------------------------------------------------------------------------
 # Section A: Pontryagin dual of Z -> T^1, Z^3 -> T^3
 # ---------------------------------------------------------------------------
 
-print("=" * 78)
-print("Section A: Pontryagin-dual structure for Z and Z^3 (T1, T2)")
-print("=" * 78)
+print("SECTION A Pontryagin-dual structure (T1, T2)")
 
 # (T1) Pontryagin dual of the discrete cyclic group Z is T^1 = R / 2 pi Z.
 # Characters of Z are parameterised by k in [-pi, pi] (modulo 2 pi).
@@ -151,7 +152,7 @@ for p in (1, 2, 3, 5, 7):
     s = char_partial_sum(k, N)
     exact_assert(
         abs(s) < 1e-10,
-        f"(T1) character sum_{{n=0..{N-1}}} e^{{i ({p}) 2pi n / {N}}} = 0 (Pontryagin char orth)",
+        f"(T1-char-p{p}) finite character sum vanishes",
     )
 
 # Test: k = 0 character gives sum = N (trivial character normalisation).
@@ -169,9 +170,11 @@ exact_assert(
 # of three 1D partial sums.
 
 # Confirm factorization for sampled k-triples.
-for ktrip in [(2 * PI / 16, 2 * PI / 32, 2 * PI / 8),
-              (2 * PI / 4, 2 * PI / 8, 2 * PI / 16),
-              (2 * PI / 7, 2 * PI / 11, 2 * PI / 13)]:
+for check_index, ktrip in enumerate([
+        (2 * PI / 16, 2 * PI / 32, 2 * PI / 8),
+        (2 * PI / 4, 2 * PI / 8, 2 * PI / 16),
+        (2 * PI / 7, 2 * PI / 11, 2 * PI / 13),
+], start=1):
     N = 32
     s_3d = 1.0
     for kk in ktrip:
@@ -185,7 +188,7 @@ for ktrip in [(2 * PI / 16, 2 * PI / 32, 2 * PI / 8),
                 direct += complex(math.cos(arg), math.sin(arg))
     bounded_assert(
         abs(s_3d - direct) < 1e-8,
-        f"(T2) joint Z^3-character factorizes: prod of 1D sums = direct 3D sum at k={ktrip}",
+        f"(T2-char-{check_index}) product/direct factorization",
         tol=f"err = {abs(s_3d - direct):.3e}",
     )
 
@@ -194,9 +197,7 @@ for ktrip in [(2 * PI / 16, 2 * PI / 32, 2 * PI / 8),
 # ---------------------------------------------------------------------------
 
 print()
-print("=" * 78)
-print("Section B: BZ Lebesgue volume (B4-1D, B4-2D, B4-3D)")
-print("=" * 78)
+print("SECTION B BZ Lebesgue volume (B4)")
 
 # Sympy exact computation.
 two_pi_sym = 2 * sp.pi
@@ -259,9 +260,7 @@ exact_assert(
 # ---------------------------------------------------------------------------
 
 print()
-print("=" * 78)
-print("Section C: Haar probability normalisation on T^3 (B5, B6, H)")
-print("=" * 78)
+print("SECTION C Haar probability normalisation (B5, B6, H)")
 
 # (B6) mu_Haar(dk) = d^3 k / (2 pi)^3 on T^3, with integral over [-pi, pi]^3 = 1.
 
@@ -310,9 +309,7 @@ for N in (16, 32, 64, 128):
 # ---------------------------------------------------------------------------
 
 print()
-print("=" * 78)
-print("Section D: Continuum-convention comparison of (2 pi)^3 (B7, T4)")
-print("=" * 78)
+print("SECTION D non-load-bearing continuum comparison (B7, T4)")
 
 # Substrate-internal (2 pi)^3 value (from Section B).
 two_pi_cubed_substrate = TWO_PI**3
@@ -346,9 +343,7 @@ exact_assert(
 # ---------------------------------------------------------------------------
 
 print()
-print("=" * 78)
-print("Section E: No continuum import in load-bearing chain (T5)")
-print("=" * 78)
+print("SECTION E no continuum import in load-bearing chain (T5)")
 
 # Load-bearing inputs:
 load_bearing_inputs = {
@@ -394,9 +389,7 @@ exact_assert(
 # ---------------------------------------------------------------------------
 
 print()
-print("=" * 78)
-print("Section F: Haar uniqueness on T^3 - translation invariance")
-print("=" * 78)
+print("SECTION F Haar translation invariance (B5)")
 
 # The Haar measure on a compact abelian group is the unique
 # translation-invariant probability measure. We verify translation
@@ -426,9 +419,7 @@ for shift in [(0.0, 0.0, 0.0), (0.3, -1.2, 2.7),
 # ---------------------------------------------------------------------------
 
 print()
-print("=" * 78)
-print("Section G: Sanity (2 pi)^3 fingerprint vs alternative constants")
-print("=" * 78)
+print("SECTION G (2 pi)^3 fingerprint")
 
 # Alternative misidentifications that the bridge does NOT make:
 alt_constants = {
@@ -458,9 +449,7 @@ exact_assert(
 # ---------------------------------------------------------------------------
 
 print()
-print("=" * 78)
-print("Summary")
-print("=" * 78)
+print("SUMMARY")
 print(f"EXACT   : PASS = {EXACT_PASS}, FAIL = {EXACT_FAIL}")
 print(f"BOUNDED : PASS = {BOUNDED_PASS}, FAIL = {BOUNDED_FAIL}")
 total_pass = EXACT_PASS + BOUNDED_PASS

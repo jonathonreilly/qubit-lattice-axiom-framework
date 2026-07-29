@@ -1,49 +1,44 @@
 ===== runner cache v1 =====
 runner: scripts/bz_volume_two_pi_cubed_substrate_internal_runner_2026_05_26.py
-runner_sha256: 92e391d4dd077cbfa66c5fa1ae71b232dc600324021a04f90a5a8996a43bb2b2
+runner_sha256: 7b71fe0f2e8d51a4bda606628429e2cbaf0f457b29480863fa7db626c7f769e1
+input_fingerprint_sha256: ad281c21034fd6ede1db1e8fac7efd7ef3b758203776971e37849eceaf38df92
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.57
 status: ok
 ----- stdout -----
-==============================================================================
-Section 0: source-boundary firewall
-==============================================================================
+SECTION 0 source-boundary firewall
   PASS [EXACT]  (S-required) source contains z3 substrate
   PASS [EXACT]  (S-required) source contains haar measure
   PASS [EXACT]  (S-required) source contains no continuum import
   PASS [EXACT]  (S-required) source contains current minimal axioms
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: MINIMAL_AXIOMS_2026-05-03
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: A1 (local algebra)
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: A2 (spatial substrate)
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: new admission
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: admission count
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: axiom class
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: retained-bounded
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: retained_bounded
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: audited_conditional
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: effective_status
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: Cl(3) connection normalization
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: Koide A1
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: ](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: ](HIERARCHY_ALPHA_LM_EXPONENT_SPECIES_COUNT_BRIDGE_REGULATOR_DEPENDENCE_NO_GO_NOTE_2026-05-10.md)
-  PASS [EXACT]  (S-forbidden) source excludes stale/overpromoted phrase: ](LATTICE_GREENS_FUNCTION_MARADUDIN_TEXTBOOK_IMPORT_NOTE_2026-05-18.md)
-==============================================================================
-Section A: Pontryagin-dual structure for Z and Z^3 (T1, T2)
-==============================================================================
-  PASS [EXACT]  (T1) character sum_{n=0..63} e^{i (1) 2pi n / 64} = 0 (Pontryagin char orth)
-  PASS [EXACT]  (T1) character sum_{n=0..63} e^{i (2) 2pi n / 64} = 0 (Pontryagin char orth)
-  PASS [EXACT]  (T1) character sum_{n=0..63} e^{i (3) 2pi n / 64} = 0 (Pontryagin char orth)
-  PASS [EXACT]  (T1) character sum_{n=0..63} e^{i (5) 2pi n / 64} = 0 (Pontryagin char orth)
-  PASS [EXACT]  (T1) character sum_{n=0..63} e^{i (7) 2pi n / 64} = 0 (Pontryagin char orth)
+  PASS [EXACT]  (S-forbidden-01) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-02) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-03) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-04) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-05) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-06) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-07) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-08) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-09) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-10) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-11) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-12) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-13) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-14) stale/overpromoted phrase absent
+  PASS [EXACT]  (S-forbidden-15) stale/overpromoted phrase absent
+SECTION A Pontryagin-dual structure (T1, T2)
+  PASS [EXACT]  (T1-char-p1) finite character sum vanishes
+  PASS [EXACT]  (T1-char-p2) finite character sum vanishes
+  PASS [EXACT]  (T1-char-p3) finite character sum vanishes
+  PASS [EXACT]  (T1-char-p5) finite character sum vanishes
+  PASS [EXACT]  (T1-char-p7) finite character sum vanishes
   PASS [EXACT]  (T1) trivial character (k=0) partial sum = N (normalisation)
-  PASS [BOUNDED] (T2) joint Z^3-character factorizes: prod of 1D sums = direct 3D sum at k=(0.39269908169872414, 0.19634954084936207, 0.7853981633974483) err = 3.341e-13
-  PASS [BOUNDED] (T2) joint Z^3-character factorizes: prod of 1D sums = direct 3D sum at k=(1.5707963267948966, 0.7853981633974483, 0.39269908169872414) err = 2.574e-13
-  PASS [BOUNDED] (T2) joint Z^3-character factorizes: prod of 1D sums = direct 3D sum at k=(0.8975979010256552, 0.5711986642890533, 0.483321946706122) err = 6.976e-13
+  PASS [BOUNDED] (T2-char-1) product/direct factorization err = 3.341e-13
+  PASS [BOUNDED] (T2-char-2) product/direct factorization err = 2.574e-13
+  PASS [BOUNDED] (T2-char-3) product/direct factorization err = 6.976e-13
 
-==============================================================================
-Section B: BZ Lebesgue volume (B4-1D, B4-2D, B4-3D)
-==============================================================================
+SECTION B BZ Lebesgue volume (B4)
   PASS [EXACT]  (B4-1D) sympy: vol([-pi, pi]) = 2 pi
   PASS [EXACT]  (B4-2D) sympy: vol([-pi, pi]^2) = (2 pi)^2 = 4 pi^2
   PASS [EXACT]  (B4-3D) sympy: vol([-pi, pi]^3) = (2 pi)^3 = 8 pi^3
@@ -53,9 +48,7 @@ Section B: BZ Lebesgue volume (B4-1D, B4-2D, B4-3D)
   PASS [EXACT]  (B4-2D) numerical (2 pi)^2 = 39.478417...
   PASS [EXACT]  (B4-3D) numerical (2 pi)^3 = 248.050213...
 
-==============================================================================
-Section C: Haar probability normalisation on T^3 (B5, B6, H)
-==============================================================================
+SECTION C Haar probability normalisation (B5, B6, H)
   PASS [EXACT]  (B6) sympy int_{T^3} d^3 k / (2 pi)^3 = 1 (Haar probability normalisation)
   PASS [EXACT]  (B6) sympy: 1 / (2 pi)^3 = 1 / (8 pi^3) algebraically
   PASS [BOUNDED] (H) Riemann-sum int of 1/(2 pi)^3 on [-pi, pi]^3 = 1 at N=16 err = 0.000e+00
@@ -63,38 +56,28 @@ Section C: Haar probability normalisation on T^3 (B5, B6, H)
   PASS [BOUNDED] (H) Riemann-sum int of 1/(2 pi)^3 on [-pi, pi]^3 = 1 at N=64 err = 0.000e+00
   PASS [BOUNDED] (H) Riemann-sum int of 1/(2 pi)^3 on [-pi, pi]^3 = 1 at N=128 err = 0.000e+00
 
-==============================================================================
-Section D: Continuum-convention comparison of (2 pi)^3 (B7, T4)
-==============================================================================
+SECTION D non-load-bearing continuum comparison (B7, T4)
   PASS [EXACT]  (T4) (2 pi)^3 from substrate Pontryagin/Haar numerically equals continuum 3D Fourier convention
   PASS [EXACT]  (T4) sympy: (2 pi)^3_{substrate} and (2 pi)^3_{continuum} use the same numeric constant
   PASS [EXACT]  (T4) sympy: substrate (2 pi)^3 = 8 pi^3 (no extra factors)
 
-==============================================================================
-Section E: No continuum import in load-bearing chain (T5)
-==============================================================================
+SECTION E no continuum import in load-bearing chain (T5)
   PASS [EXACT]  (T5/E1) no continuum 3D Fourier measure consumed as load-bearing input
   PASS [EXACT]  (T5/E2) no 4D loop measure d^4 k / (2 pi)^4 in load-bearing inputs
   PASS [EXACT]  (T5/E3) no Wick rotation Z^3 -> Z^4 in load-bearing inputs
   PASS [EXACT]  (T5/E4) load-bearing inputs enumerable (6 items)
 
-==============================================================================
-Section F: Haar uniqueness on T^3 - translation invariance
-==============================================================================
+SECTION F Haar translation invariance (B5)
   PASS [BOUNDED] (B5) Haar measure translation-invariant under shift (0.0, 0.0, 0.0) err = 0.000e+00
   PASS [BOUNDED] (B5) Haar measure translation-invariant under shift (0.3, -1.2, 2.7) err = 0.000e+00
   PASS [BOUNDED] (B5) Haar measure translation-invariant under shift (1.5707963267948966, -0.7853981633974483, 1.0471975511965976) err = 0.000e+00
   PASS [BOUNDED] (B5) Haar measure translation-invariant under shift (4.71238898038469, 2.199114857512855, -2.5132741228718345) err = 0.000e+00
 
-==============================================================================
-Section G: Sanity (2 pi)^3 fingerprint vs alternative constants
-==============================================================================
+SECTION G (2 pi)^3 fingerprint
   PASS [EXACT]  (G1) (2 pi)^3 uniquely matches BZ volume vs alternatives (sanity)
   PASS [EXACT]  (G2) (2 pi)^3 numerical fingerprint = 248.050213...
 
-==============================================================================
-Summary
-==============================================================================
+SUMMARY
 EXACT   : PASS = 44, FAIL = 0
 BOUNDED : PASS = 11, FAIL = 0
 TOTAL   : PASS = 55, FAIL = 0

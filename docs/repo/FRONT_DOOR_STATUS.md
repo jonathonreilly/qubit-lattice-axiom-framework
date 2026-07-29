@@ -108,12 +108,9 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Live conditional/failed rows that would park | 0 |
 | Live rows fail-open (legacy/unversioned snapshot) | 31 |
 | Lane rows already in actual ready top-10 | 3 |
-| Lane rows added since prior pass | 1 |
+| Lane rows added since prior pass | 0 |
 | Lane rows removed since prior pass | 0 |
 | Non-lane rows deferred by simulated interleave | 104 |
-
-Named lane membership churn since the prior pass:
-- added: `oh_schur_boundary_action_note`
 
 Admitted ids currently absent from lane candidates:
 - `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06`

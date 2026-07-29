@@ -1,0 +1,59 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle750_actual_independent_check_2026_07_28.txt": "3bb1fc56dea1c3fd5f3377b4eed77067ecb4b977b8d600e58688f5335a48512c",
+      "frontier_cycle750_actual_selector_stretch_2026_07_28.txt": "9622391057638715bd34cfd94ebc096a96ee32c70227693e91ce57d6654c290e"
+    },
+    "note": {
+      "path": "docs/ACTUAL_SELECTOR_STRETCH_CYCLE750_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "6dacefd5f2f92b431c6fcb239c024e16985ff1910a462d2e240f33234b28d784"
+    },
+    "runners": {
+      "frontier_cycle750_actual_independent_check_2026_07_28.py": "f2b8f8e33cde4724739689957e0dfe88c45c746fafb280deeb06b3f698de3d79",
+      "frontier_cycle750_actual_selector_stretch_2026_07_28.py": "a74c7e5bbc297c57d317af7fd85d0b9e01d078625f5d4689daf2ebbdbc1cee0a"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "actual_derived_at_fixture_scope": true,
+    "axiom_pressure": false,
+    "capstone_pending": "the composed four-flag adapter (Cycle 754)",
+    "failing_candidates_frozen": [
+      "recurrent intrinsic order",
+      "all-close 332 verdicts (508 survivors)"
+    ],
+    "fixed_supplies": "the source/orientation/genesis inventory the fixture families carry; the conditions inherited from the 747/751 bindings",
+    "not_derived": "the composed four-flag acceptance; scope beyond the fixture families; Record permanence, time, and every inherited item at original scopes",
+    "positive_scope": "three candidates tested exhaustively; the enforcement-lineage selector passes totality/invariance/identification over 38 epochs x 2,578 alternatives (exactly one survivor per epoch, matching the supplied selector everywhere); the checker's adversarial uniqueness attack found NO ties across 215 variants and 9,627 exclusion evaluations; invariance under 253 symmetry checks; the adapter binds ACTUAL to the unique-survivor predicate",
+    "selector": "the enforcement lineage (unique non-refused alternative per epoch)",
+    "w3_closed": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 8,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 750,
+  "date": "2026-07-29",
+  "result": {
+    "alternatives": 2578,
+    "epochs": 38,
+    "invariance_checks": {
+      "cubic_frame": 72,
+      "cyclic": 137,
+      "q_order": 38,
+      "translation": 6
+    },
+    "outcome": "A",
+    "physical_reading": "actuality is the enforcement lineage read forward: what happens is the one thing the derived laws do not refuse",
+    "survivors_per_epoch": 1,
+    "uniqueness_attack": {
+      "exclusion_evaluations": 9627,
+      "ties": 0,
+      "variants": 215
+    }
+  },
+  "status": "CYCLE750_ACTUAL_SELECTOR_DERIVED_PASS"
+}

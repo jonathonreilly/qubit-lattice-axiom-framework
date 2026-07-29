@@ -1,0 +1,28 @@
+schema: physics-loop-state-v1
+loop_slug: full128-runner-transcript-repair-20260729
+mode: run
+goal: close the authenticated-stdout artifact defect on the bounded full128 local M64 times seam-M2 intertwiner certificate
+target_status: best-honest-status
+cycle_count: 1
+block_count: 1
+active_route: compact-primary-runner-transcript
+approach_family_coverage:
+  - packet-rerender-only
+  - packet-budget-change
+  - primary-transcript-compaction
+  - separate-audit-slice
+strongest_unresolved_proof_obligation: none; the independent audit lane must judge the repaired packet
+hard_residual: none; the identified defect is transcript transport, not physics
+files_touched:
+  - docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md
+  - scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py
+  - logs/runner-cache/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.txt
+  - outputs/frontier_full128_local_m64_seam_m2_bare_frame_intertwiner_receipt_2026_07_24.json
+open_imports: []
+no_go_routes: []
+trace_gate_classification: direct_blocker_closure
+review_disposition: pending
+pr_status: backlog
+next_exact_action: complete review-loop, then send the changed note and runner to independent re-audit
+stop_condition: transport-safe current-cycle transcript verified and review-loop complete
+

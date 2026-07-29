@@ -7,8 +7,8 @@
   "package_scope": "bounded full local M64 tensor seam-M2 physical-site circuit/intertwiner with a static commuting-projector code and bare-coordinate code-space covariance",
   "note": {
     "path": "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
-    "bytes": 14703,
-    "sha256": "79e07213087f11e0fc387c5ff3920e63c3ad2b9aaac97437e4d772a3a9e5a095"
+    "bytes": 15338,
+    "sha256": "52e6fe20cd162921322e18e794621499674c965cac7260ab2813fbefc0d25750"
   },
   "source_dependency_closure": [
     {
@@ -49,8 +49,8 @@
       "tests_failed": 0,
       "terminal": "LOCAL_22_M2_CYCLE_CODE_NLE2_SEAM_PORT_INTERTWINER",
       "cache": "logs/runner-cache/frontier_full128_cycle_encoder_2026_07_24.txt",
-      "cache_sha256": "47a17da0fcd059b912293f8244f53a8195517f5023f162823e93fad295fe4213",
-      "input_fingerprint_sha256": "801141bd3012d3ca758118d8e4e04dec2d91c4ccbe389d8710b83fd99e01a690"
+      "cache_sha256": "39b7e2afab095e3bdf50b144339e6f635929808ad9eb0bb1648014328c2b6a4d",
+      "input_fingerprint_sha256": "da2cf3028dd59cabc001e62420ea439c45c1f7e1308a38e911dcffcd27abde06"
     },
     {
       "runner": "scripts/frontier_full128_25site_nn_supplied_schedule_2026_07_24.py",
@@ -58,8 +58,8 @@
       "tests_failed": 0,
       "terminal": "PASS",
       "cache": "logs/runner-cache/frontier_full128_25site_nn_supplied_schedule_2026_07_24.txt",
-      "cache_sha256": "027a6989e1cf49d3258f479763da47de3c479fa6bddefe683d60d66f164dd27c",
-      "input_fingerprint_sha256": "e6d575b0625ffb6aad618a58c567543ab66b26c89032c224a06dd53d15ce403f"
+      "cache_sha256": "0771f83fe6d565b222bf08b0903e7a917d70be7528ff727875fe702bbe87ea9c",
+      "input_fingerprint_sha256": "45e842eb617acf0ddcbc1b6362cf71ca4ab2df31dee2531a599fd3efbe72152e"
     },
     {
       "runner": "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
@@ -67,8 +67,8 @@
       "tests_failed": 0,
       "terminal": "FULL_M64_BARE_FRAME_PAIR_COCYCLE_CONTACT_CERTIFICATE",
       "cache": "logs/runner-cache/frontier_full128_bare_frame_pair_cocycle_2026_07_24.txt",
-      "cache_sha256": "0e0d2650a05410126646d8e125ee9228ef6556363c540a89f7237c003bdcf645",
-      "input_fingerprint_sha256": "801141bd3012d3ca758118d8e4e04dec2d91c4ccbe389d8710b83fd99e01a690"
+      "cache_sha256": "011025a2e8060d994ad1bfb5627c874738c51775f446c672fe5fa42078da13e9",
+      "input_fingerprint_sha256": "da2cf3028dd59cabc001e62420ea439c45c1f7e1308a38e911dcffcd27abde06"
     },
     {
       "runner": "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
@@ -76,8 +76,8 @@
       "tests_failed": 0,
       "terminal": "FULL128_CYCLE_COCYCLE_BARE_FRAME_INTERTWINER_CERTIFICATE",
       "cache": "logs/runner-cache/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.txt",
-      "cache_sha256": "c246735d5fbb1695d211dc497f267852a8695950852775707142d53334b77b19",
-      "input_fingerprint_sha256": "cdb170a1671df4665b05642e3d13c9ad12d7ea4f3ffb41fec738af7ee8189995"
+      "cache_sha256": "8301b8325026c161b4cdbf9ec84fe3d303810f6f51e573c0e5e157689520c186",
+      "input_fingerprint_sha256": "5f7ed53762d8da3c2a221c7359f7b55adc98082d430c3c72ebe63346a09e24a7"
     }
   ],
   "maximum_residuals": {

@@ -1865,7 +1865,7 @@
         },
         {
           "claim_id": "pmns_oriented_cycle_channel_value_law_note",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "pmns_oriented_cycle_reduced_channel_nonselection_note",
@@ -1941,7 +1941,7 @@
         },
         {
           "claim_id": "poisson_response_kernel_and_sign_normalization_finite_grid_bounded_note_2026-07-26",
-          "effective_status": "unaudited"
+          "effective_status": "audited_conditional"
         },
         {
           "claim_id": "poisson_self_gravity_born_audit_note",
@@ -2338,7 +2338,7 @@
         },
         {
           "claim_id": "su3_character_diagonal_convolution_equivalence_narrow_theorem_note_2026-05-10",
-          "effective_status": "unaudited"
+          "effective_status": "audit_in_progress"
         },
         {
           "claim_id": "su3_cube_full_rho_perron_2026-05-04",

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_literal_patchgraph_z3_m2_placement_controller_cycle707_2026_07_26.py
 runner_sha256: b91ed840aeededcad03f6557d4cba59bb49783f1b1d9e5feebd89d14e193aeb6
-input_fingerprint_sha256: 25fb1941fdfc95841ca218640238ef80823ff58f36e573d37a1ad6613fe0b2ea
+input_fingerprint_sha256: ed187d5c831ffa6602cc3f53675327aba5d1ad62858cf1c1945771a240fec96e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 9.84
+elapsed_sec: 12.39
 status: ok
 ----- stdout -----
 PASS note preserves the bounded claim and N1-N8 boundary :: ()

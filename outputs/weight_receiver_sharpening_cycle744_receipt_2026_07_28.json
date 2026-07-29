@@ -1,0 +1,52 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle744_receiver_independent_check_2026_07_28.txt": "5b10a0fbebb4aced11e77b7ff10ef4e3ab5c5a3554a56ba1a888556e3fe3c07c",
+      "frontier_cycle744_weight_receiver_sharpening_2026_07_28.txt": "5c20370027de2b83d3fb746719a70e51b3af506a78fafb036d76862a78b8450b"
+    },
+    "note": {
+      "path": "docs/WEIGHT_RECEIVER_SHARPENING_CYCLE744_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "21310f17c8eea0a1b3f75a14f2e83b4c22f0c3a922aa668a53b5b663d24eb208"
+    },
+    "runners": {
+      "frontier_cycle744_receiver_independent_check_2026_07_28.py": "565674b782767bc4f9e986a840193287dc2bda47f0db521dd358b85c71dfe521",
+      "frontier_cycle744_weight_receiver_sharpening_2026_07_28.py": "4ad45b9a7b271dc1c8a1e5c64478b853b0e5b555cb4aae87c57e2c7bb80f64b6"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "born_law_selected": false,
+    "fixed_supplies": "the declared apparatus data family and the port intake schema (zero fitted parameters); everything the landed Cycle-317 surfaces declare",
+    "next_mechanism": "repeated-apparatus calibration bridge",
+    "not_derived": "any Born/probability content or weight; the calibration bridge itself; orbit-occupancy scope interactions (deferred to Track A per the grounding extract)",
+    "port_is_comparator_only": true,
+    "positive_scope": "independent 20-signature census with per-port receiver-absence arguments (41 parameters audited by the checker); the frozen supplied w(E) form Tr(sigma E) with Bloch (0.21, -0.32, 0.41); the interface theorem (typed Records -> N counts + exposure/provenance -> N-simplex -> per-effect weights) with all eight one-component-drop breakages named and independently reproduced; the comparator-only port (6 agreements / 2 disagreements as data; 5 malformed refusals; firewall AST audits clean)",
+    "receiver_hole_interface_frozen": true,
+    "w6_closed": false
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 10
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 744,
+  "date": "2026-07-29",
+  "result": {
+    "frozen_weight": "Tr(sigma E); Bloch (0.21, -0.32, 0.41)",
+    "interface_theorem_drops": "8/8 named breakages reproduced",
+    "port_verdicts": {
+      "agreements": 6,
+      "disagreements": 2,
+      "refusals": 5
+    },
+    "signature_census": {
+      "bridge": 20,
+      "parameters_audited": 41,
+      "release": 11
+    }
+  },
+  "status": "CYCLE744_WEIGHT_RECEIVER_SHARPENING_PASS"
+}

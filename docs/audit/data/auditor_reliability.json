@@ -160,8 +160,8 @@
       "verdict_changed_after_re_audit": 189,
       "verdict_counts": {
         "audited_clean": 127,
-        "audited_conditional": 266,
-        "audited_decoration": 27,
+        "audited_conditional": 265,
+        "audited_decoration": 28,
         "audited_failed": 70,
         "audited_numerical_match": 7,
         "audited_renaming": 23

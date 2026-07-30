@@ -84,3 +84,16 @@ Queue correction: item 1 of the reordered queue loses its claimed
 axiom backing — the multi-source acceptance-law scope question is an
 ordinary open derivation (both readings live); item 2 (the weights
 derivation, W6) stands as stated.
+
+## SECOND CORRECTION — all interpretation gates purged (plain-reading principle)
+
+Owner directive: the axioms read plainly; no alternative
+interpretations are supported; do not block progress on unsupported
+readings. Owner item 2 (the W5 "permanence ruling") is CLOSED as
+never-needed: "records are permanent" is unconditional primitive
+content; 745/746 showed the dynamics respects it. The k=2
+acceptance-scope question is ordinary optional theorem work (no axiom
+question exists). NOTHING in the queue is blocked on interpretation;
+every open item is an ordinary derivation: weights (W6, with the
+family-winning bar), response law (W7), adjacency ordering (W2),
+occurrence rate/site distribution, b>=7 anchors.

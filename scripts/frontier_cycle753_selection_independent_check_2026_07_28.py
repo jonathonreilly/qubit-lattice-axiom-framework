@@ -563,14 +563,14 @@ def main() -> int:
 
         counts = independent_counts(len(EXPECTED_SUPPORT))
         check(
-            "F_exact_raw_count_two_independent_forms",
+            "F_exact_raw_count_recurrence_and_factorial_forms_agree",
             counts["raw_by_recurrence"]
             == counts["raw_by_factorials"]
             == EXPECTED_RAW_COUNT,
             counts["raw_by_recurrence"],
         )
         check(
-            "G_exact_class_count_two_independent_forms",
+            "G_exact_class_count_product_and_power_evaluations_agree",
             counts["class_by_product"]
             == counts["class_by_power"]
             == EXPECTED_CLASS_COUNT,

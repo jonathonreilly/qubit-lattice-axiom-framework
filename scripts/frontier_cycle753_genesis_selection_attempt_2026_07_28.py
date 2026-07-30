@@ -404,14 +404,14 @@ def main() -> int:
             theorem["minimum_length"],
         )
         check(
-            "G_raw_minimum_word_count_has_two_exact_derivations",
+            "G_raw_minimum_word_count_exact_arithmetic_forms_agree",
             theorem["raw_minimum_word_count"]
             == theorem["raw_word_count_crosscheck"]
             == factorial(EXPECTED_SUPPORT_SIZE) ** 2,
             theorem["raw_minimum_word_count"],
         )
         check(
-            "H_commutation_class_count_has_two_exact_derivations",
+            "H_commutation_class_count_exact_evaluations_agree",
             theorem["class_count"] == theorem["class_count_crosscheck"]
             == (EXPECTED_SUPPORT_SIZE + 1) ** (EXPECTED_SUPPORT_SIZE - 1),
             theorem["class_count"],

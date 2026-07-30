@@ -88,9 +88,10 @@ Cayley/Prüfer counting gives `28^(28-2) = 28^26`.
 The independent checker verifies the gate semantics and commutation relation,
 exhausts the complete word spaces through width four, exhausts a small Prüfer
 tree family, reconstructs the exact arithmetic, and requires a clean primary
-subprocess with an identical report. The small enumerations are implementation
-tests; the global result is the analytic proof above, not an exhaustive search
-through the 5,979-bit word space.
+subprocess with matching theorem counts, fixture hash, landed coordinate, and
+scope boundary. The small enumerations are implementation tests; the global
+result is the analytic proof above, not an exhaustive search through the
+5,979-bit word space.
 
 ## Scope boundary
 

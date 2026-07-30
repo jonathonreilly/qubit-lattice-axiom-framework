@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle784_full_strata_ties_2026_07_28.txt": "6907bf0d9246ea254f8402f4f476ce0d9736c2517fc92fa8e989f991fcfbd291",
+      "frontier_cycle784_strata_independent_check_2026_07_28.txt": "69f49cc0251a8e082f094244b031cde1770420619ed3f729829839a9f18f141c"
+    },
+    "note": {
+      "path": "docs/FULL_STRATA_TIES_CYCLE784_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "e94e4f7d98e81cab7167f35a01b222971381e800deaa858d13e8a0e538c6851d"
+    },
+    "runners": {
+      "frontier_cycle784_full_strata_ties_2026_07_28.py": "b532563da6aa8e84ae8aae2c4ad14c10a50d45d43c020ca2107fd48b79dc8a30",
+      "frontier_cycle784_strata_independent_check_2026_07_28.py": "110bd04fadfd201ef21b7e9b5382b1c15090fd6d0c198ec0cd5c565c532b4bed"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "decisiveness": "gate-count min/max decisive at 7/7 ties (the only total selector family); relay-min 5/7; handoff-max 1/7; the 3-to-1 split recurred once; six occupancy refusals",
+    "fixed_supplies": "the functional constructions (reimplemented, basis printed); everything 719/736/750/758 declare",
+    "k3": "77 configs -> 28 family-epochs (lawful complete C11 translation-orbit reduction, checker-verified battery-preserving): 3 unique / 7 exact ties / 18 zero-survivor; 5 covariance-failing families",
+    "k4": "55 configs -> 20 family-epochs: ALL zero-survivor; checker traced all 220 kills SOLELY to clean_postimage \u2014 the same veto as k=2 (758): the multi-source wall is one law in every censused stratum",
+    "leg3_effect": "feature selection gains a structural argument (totality on the complete catalog); the min/max mirror is the entire remaining freedom",
+    "not_derived": "actuality/probability/weights for any selection; the k=5 stratum; the veto's correction",
+    "outcome": "STRATA_COMPLETE_TIE_CATALOG_SEVEN",
+    "ties": "7 exact ties; frozen tie reproduced (769/1350/610 identity control)"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 784,
+  "date": "2026-07-30",
+  "result": {
+    "k3": "3/7/18 (+5 cov-fail)",
+    "k4": "20/20 zero-survivor (all clean_postimage)",
+    "ties": 7,
+    "total_selectors": "gate-count min/max only"
+  },
+  "status": "CYCLE784_FULL_STRATA_TIES_PASS"
+}

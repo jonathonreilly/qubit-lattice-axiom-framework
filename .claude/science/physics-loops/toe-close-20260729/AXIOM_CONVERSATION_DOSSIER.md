@@ -75,6 +75,28 @@ currently provide." Single-source actuality remains a theorem (750/754);
 the boundary between them is the exact edge the axioms currently draw.
 The promotion verdict belongs to the owner's lanes.
 
+## 1b-RESOLVED — owner interpretation ruling (2026-07-29)
+
+The suspected-independent proposal of section 1b is RESOLVED by owner
+ruling, not by new axiom text. Verbatim: "records form = possibilities
+resolve. No zero, they form. there is one per site. Its a subset of
+possiblity - possibilities could have probabiliity that differes."
+
+Fixed reading of the Record axiom: "Records form" is the resolution
+postulate itself — totality is asserted (no lawful situation resolves
+to nothing); one record per site is already explicit; a record is the
+resolved member of the possibility space; and WHICH possibility
+resolves is a probability question whose weights may differ per
+possibility and remain a derivation target (W6/Born).
+
+Dispositions: the #5753 evidence chain stands as constraints, its
+proposal reclassified from missing-content to two derivation targets —
+(a) the multi-source acceptance law must leave a non-empty admissible
+set (the k=2 all-refused behavior is a fixture theorem misapplied out
+of scope; the 759/762 censuses constrain the corrected law); (b) the
+resolution-weight derivation (W6), for which 763/765 supply the first
+data and the family-winning bar. No axiom text changes; A_min stands.
+
 ## 1c. Final update — the Born arc's ending and the completed anchors
 
 The campaign's last five cycles finished the experimental arcs:

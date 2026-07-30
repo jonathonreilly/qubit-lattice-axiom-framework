@@ -55,3 +55,20 @@ fixed-order refutation, the 750 uniqueness attack, the 765
 mapping-freedom attack — each changed a conclusion); empty
 AUDIT_INPUT_PATHS rejected (self-path one-element tuple); honest
 bounds over forced completeness (761/764); no-pause pipeline.
+
+## POST-CLOSE UPDATE — the owner ruling landed (2026-07-29)
+
+Owner item 1 (the promotion proposal) is RESOLVED by interpretation
+ruling — see the dossier section 1b-RESOLVED and STATE checkpoint. No
+axiom change; the Record axiom's "Records form" is the resolution
+postulate (totality + one-per-site + record⊂possibility + which =
+probability with possibly non-uniform weights, derivation open).
+
+Next-campaign queue REORDERED by the ruling:
+1. The multi-source acceptance law with non-empty admissible sets
+   (now axiom-backed: refusing everything contradicts the fixed
+   reading; the 759/762 censuses are its constraints).
+2. The resolution-weight derivation (W6) — the "which" question is
+   now formally the weights question; 763/765 data + the
+   family-winning bar.
+3. (unchanged) W7 response law; b>=7 anchors; W2 adjacency ordering.

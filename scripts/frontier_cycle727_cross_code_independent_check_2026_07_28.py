@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
-"""Independent bounded checker for the Cycle-727 cross-code claims.
+"""Partial independent census and seam spot check for Cycle 727.
 
-The Cycle-727 primary is parsed as data and is never imported.  All geometric,
-rank, marker, dimension, and signed seam recounts below are implemented here
-from the public Cycle-720 fixtures.
+This runner does not independently reconstruct all five fitted pullbacks. It
+AST-extracts frozen tables, independently recounts finite ranks and dictionary
+digests, and checks the complete seam family on one box.
 """
 
 from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 900
-NOTE_PATH = "docs/CROSS_CODE_EQUIVALENCE_CYCLE727_BOUNDED_THEOREM_NOTE_2026-07-28.md"
 AUDIT_INPUT_PATHS = (
+    "docs/CROSS_CODE_EQUIVALENCE_CYCLE727_BOUNDED_THEOREM_NOTE_2026-07-28.md",
     "scripts/frontier_cycle727_cross_code_equivalence_2026_07_28.py",
-    "scripts/frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27.py",
-    "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py",
+    "scripts/frontier_cycle727_cross_code_pullback_analysis_2026_07_28.py",
+    "scripts/frontier_cycle727_cross_code_pullback_core_2026_07_28.py",
+    "scripts/frontier_cycle727_finite_factorization_2026_07_28.py",
+    "scripts/frontier_cycle727_finite_fixtures_2026_07_28.py",
+    "scripts/frontier_cycle727_finite_pauli_tableau_2026_07_28.py",
 )
+DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
 import ast
 from dataclasses import dataclass
@@ -22,29 +26,22 @@ from hashlib import sha256
 from itertools import combinations
 import json
 from pathlib import Path
-import re
 import sys
 import time
-from typing import Any, Callable
 
-import frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27 as C
-import frontier_cycle720_cell_majorana_companion_geometry_2026_07_27 as M
+import frontier_cycle727_finite_fixtures_2026_07_28 as C
+import frontier_cycle727_finite_fixtures_2026_07_28 as M
 
-
+ROOT = Path(__file__).resolve().parents[1]
+PRIMARY_REL = "scripts/frontier_cycle727_cross_code_equivalence_2026_07_28.py"
+CORE_REL = "scripts/frontier_cycle727_cross_code_pullback_core_2026_07_28.py"
 PRIMARY_MODULE = "frontier_cycle727_cross_code_equivalence_2026_07_28"
-assert PRIMARY_MODULE not in sys.modules, (
-    "the blocklisted Cycle-727 primary was imported"
-)
-
+CORE_MODULE = "frontier_cycle727_cross_code_pullback_core_2026_07_28"
 SHAPES = ((2, 2, 2), (3, 2, 2), (3, 3, 2), (5, 3, 2))
 FAMILIES = ("free", "seam", "reverse", "contact", "coin")
-EXPECTED_PRIMARY_AUDIT = (
-    "scripts/frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27.py",
-    "scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py",
-    "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py",
+EXPECTED_PRIMARY_AUDIT = tuple(
+    path for path in AUDIT_INPUT_PATHS if path != PRIMARY_REL
 )
-HEX64 = re.compile(r"[0-9a-f]{64}")
-
 
 @dataclass(frozen=True)
 class Word:
@@ -63,350 +60,42 @@ class Word:
         )
 
 
+
 @dataclass(frozen=True)
 class FrozenExtraction:
-    tree: ast.Module
-    primary_audit: tuple[str, ...] | None
-    sector_pairs: dict[tuple[int, int, int], tuple[int, int]] | None
-    marker_censuses: dict[tuple[int, int, int], tuple[int, int, int, int]] | None
-    dictionary_digests: dict[tuple[int, int, int], str] | None
-    naming_correction: dict[str, object] | None
-    literal_sources: dict[str, str]
+    primary_tree: ast.Module
+    core_tree: ast.Module
+    primary_audit: tuple[str, ...]
+    sector_pairs: dict[tuple[int, int, int], tuple[int, int]]
+    dictionary_digests: dict[tuple[int, int, int], str]
+    supply_digests: dict[tuple[int, int, int], str]
 
-
-CHECKS: list[tuple[str, bool, object]] = []
-
+CHECKS: list[tuple[str, bool]] = []
 
 def check(label: str, condition: bool, detail: object = None) -> None:
     passed = bool(condition)
-    CHECKS.append((label, passed, detail))
-    print("PASS" if passed else "FAIL", label, "::", detail)
+    CHECKS.append((label, passed))
+    print("PASS" if passed else "FAIL", label, "::", "ok" if passed else detail)
 
-
-def json_shape_table(table: dict[tuple[int, int, int], object]) -> dict[str, object]:
-    return {"x".join(map(str, shape)): value for shape, value in table.items()}
-
-
-def shape_key(value: object) -> tuple[int, int, int] | None:
-    if (
-        isinstance(value, (tuple, list))
-        and len(value) == 3
-        and all(isinstance(item, int) and not isinstance(item, bool) for item in value)
-    ):
-        return tuple(value)  # type: ignore[return-value]
-    if isinstance(value, str):
-        numbers = tuple(int(item) for item in re.findall(r"\d+", value))
-        if len(numbers) == 3:
-            return numbers
-    return None
-
-
-def named_literal_assignments(
-    tree: ast.Module,
-) -> tuple[dict[str, object], dict[str, ast.AST]]:
-    values: dict[str, object] = {}
-    nodes: dict[str, ast.AST] = {}
-    for statement in tree.body:
-        if isinstance(statement, ast.Assign):
-            targets = statement.targets
-            value_node = statement.value
-        elif isinstance(statement, ast.AnnAssign):
-            targets = (statement.target,)
-            value_node = statement.value
-        else:
-            continue
-        if value_node is None:
-            continue
-        try:
-            value = ast.literal_eval(value_node)
-        except (ValueError, TypeError, SyntaxError, MemoryError, RecursionError):
-            continue
-        for target in targets:
-            if isinstance(target, ast.Name):
-                values[target.id] = value
-                nodes[target.id] = value_node
-    return values, nodes
-
-
-def nested_candidates(
-    name: str, value: object
-) -> tuple[tuple[str, object], ...]:
-    output = [(name, value)]
-    if isinstance(value, dict):
-        for key, child in value.items():
-            if isinstance(key, str):
-                output.extend(nested_candidates(f"{name}.{key}", child))
-    return tuple(output)
-
-
-def normalize_sector_pairs(
-    value: object,
-) -> dict[tuple[int, int, int], tuple[int, int]] | None:
-    output: dict[tuple[int, int, int], tuple[int, int]] = {}
-    if isinstance(value, dict):
-        for raw_shape, raw_pair in value.items():
-            shape = shape_key(raw_shape)
-            if (
-                shape is not None
-                and isinstance(raw_pair, (tuple, list))
-                and len(raw_pair) == 2
-                and all(isinstance(item, int) for item in raw_pair)
-            ):
-                output[shape] = (int(raw_pair[0]), int(raw_pair[1]))
-                continue
-            if isinstance(raw_pair, dict):
-                shape = shape or shape_key(raw_pair.get("shape"))
-                full = next((
-                    raw_pair.get(key) for key in (
-                        "full_exponent",
-                        "EulerMarkerGauge_full_sector_exponent",
-                        "reference_exponent",
-                    ) if key in raw_pair
-                ), None)
-                sector = next((
-                    raw_pair.get(key) for key in (
-                        "sector_exponent",
-                        "CompanionFixture_fixed_sector_logical_exponent",
-                        "companion_exponent",
-                    ) if key in raw_pair
-                ), None)
-                if shape is not None and isinstance(full, int) and isinstance(sector, int):
-                    output[shape] = (full, sector)
-        if set(output) == set(SHAPES):
-            return output
-    if isinstance(value, (tuple, list)):
-        if (
-            len(value) == len(SHAPES)
-            and all(
-                isinstance(row, (tuple, list))
-                and len(row) == 2
-                and all(isinstance(item, int) for item in row)
-                for row in value
-            )
-        ):
-            return {
-                shape: (int(row[0]), int(row[1]))
-                for shape, row in zip(SHAPES, value)
-            }
-        for row in value:
-            if isinstance(row, dict):
-                normalized = normalize_sector_pairs({
-                    tuple(row.get("shape", ())): row
-                })
-                if normalized:
-                    output.update(normalized)
-            elif (
-                isinstance(row, (tuple, list))
-                and len(row) == 3
-                and shape_key(row[0]) is not None
-                and isinstance(row[1], int)
-                and isinstance(row[2], int)
-            ):
-                output[shape_key(row[0])] = (row[1], row[2])  # type: ignore[index]
-        if set(output) == set(SHAPES):
-            return output
-    return None
-
-
-def marker_row(value: object) -> tuple[int, int, int, int] | None:
-    if (
-        isinstance(value, (tuple, list))
-        and len(value) == 4
-        and all(isinstance(item, int) for item in value)
-    ):
-        return tuple(int(item) for item in value)  # type: ignore[return-value]
-    if isinstance(value, dict):
-        aliases = (
-            ("vertex", "edge", "face", "cube"),
-            ("V", "E", "F", "C"),
-        )
-        for keys in aliases:
-            if all(key in value and isinstance(value[key], int) for key in keys):
-                return tuple(int(value[key]) for key in keys)  # type: ignore[return-value]
-        nested = value.get("Euler_marker_classes")
-        if nested is not None:
-            return marker_row(nested)
-    return None
-
-
-def normalize_marker_censuses(
-    value: object,
-) -> dict[tuple[int, int, int], tuple[int, int, int, int]] | None:
-    output: dict[tuple[int, int, int], tuple[int, int, int, int]] = {}
-    if isinstance(value, dict):
-        for raw_shape, raw_counts in value.items():
-            shape = shape_key(raw_shape)
-            if isinstance(raw_counts, dict):
-                shape = shape or shape_key(raw_counts.get("shape"))
-            counts = marker_row(raw_counts)
-            if shape is not None and counts is not None:
-                output[shape] = counts
-        if set(output) == set(SHAPES):
-            return output
-    if isinstance(value, (tuple, list)):
-        if len(value) == len(SHAPES) and all(marker_row(row) for row in value):
-            return {
-                shape: marker_row(row)  # type: ignore[dict-item]
-                for shape, row in zip(SHAPES, value)
-            }
-        for row in value:
-            if isinstance(row, dict):
-                shape = shape_key(row.get("shape"))
-                counts = marker_row(row)
-                if shape is not None and counts is not None:
-                    output[shape] = counts
-            elif (
-                isinstance(row, (tuple, list))
-                and len(row) == 2
-                and shape_key(row[0]) is not None
-                and marker_row(row[1]) is not None
-            ):
-                output[shape_key(row[0])] = marker_row(row[1])  # type: ignore[index, assignment]
-        if set(output) == set(SHAPES):
-            return output
-    return None
-
-
-def normalize_dictionary_digests(
-    value: object,
-) -> dict[tuple[int, int, int], str] | None:
-    output: dict[tuple[int, int, int], str] = {}
-    if isinstance(value, dict):
-        for raw_shape, raw_digest in value.items():
-            shape = shape_key(raw_shape)
-            if isinstance(raw_digest, dict):
-                shape = shape or shape_key(raw_digest.get("shape"))
-                raw_digest = raw_digest.get(
-                    "frozen_dictionary_digest",
-                    raw_digest.get("dictionary_digest"),
-                )
-            if (
-                shape is not None
-                and isinstance(raw_digest, str)
-                and HEX64.fullmatch(raw_digest)
-            ):
-                output[shape] = raw_digest
-        if set(output) == set(SHAPES):
-            return output
-    if (
-        isinstance(value, (tuple, list))
-        and len(value) == len(SHAPES)
-        and all(isinstance(item, str) and HEX64.fullmatch(item) for item in value)
-    ):
-        return dict(zip(SHAPES, value))
-    if isinstance(value, (tuple, list)):
-        for row in value:
-            if (
-                isinstance(row, (tuple, list))
-                and len(row) == 2
-                and shape_key(row[0]) is not None
-                and isinstance(row[1], str)
-                and HEX64.fullmatch(row[1])
-            ):
-                output[shape_key(row[0])] = row[1]  # type: ignore[index]
-        if set(output) == set(SHAPES):
-            return output
-    return None
-
-
-def find_literal_table(
-    literals: dict[str, object],
-    required_words: tuple[str, ...],
-    normalizer: Callable[[object], object | None],
-) -> tuple[object | None, str | None]:
-    for name, value in literals.items():
-        if "FROZEN" not in name.upper():
-            continue
-        for path, candidate in nested_candidates(name, value):
-            upper = path.upper()
-            if all(word in upper for word in required_words):
-                normalized = normalizer(candidate)
-                if normalized is not None:
-                    return normalized, path
-    return None, None
-
-
-def literal_dict_entry(tree: ast.Module, key_name: str) -> object | None:
-    matches = []
-    for node in ast.walk(tree):
-        if not isinstance(node, ast.Dict):
-            continue
-        for key, value in zip(node.keys, node.values):
-            try:
-                key_value = ast.literal_eval(key)
-            except (ValueError, TypeError, SyntaxError):
-                continue
-            if key_value != key_name:
-                continue
-            try:
-                matches.append(ast.literal_eval(value))
-            except (ValueError, TypeError, SyntaxError):
-                pass
-    return matches[-1] if matches else None
-
+def literal_assignment(tree: ast.Module, name: str) -> object:
+    for node in tree.body:
+        if isinstance(node, (ast.Assign, ast.AnnAssign)):
+            targets = node.targets if isinstance(node, ast.Assign) else (node.target,)
+            if any(isinstance(target, ast.Name) and target.id == name for target in targets):
+                return ast.literal_eval(node.value)
+    raise AssertionError(f"missing literal assignment {name}")
 
 def extraction() -> FrozenExtraction:
-    """Extract only literal primary data; never execute or import the primary."""
-    primary_path = Path(AUDIT_INPUT_PATHS[0])
-    source = primary_path.read_text(encoding="utf-8")
-    tree = ast.parse(source, filename=str(primary_path))
-    literals, _nodes = named_literal_assignments(tree)
-
-    raw_audit = literals.get("AUDIT_INPUT_PATHS")
-    primary_audit = (
-        tuple(raw_audit)
-        if isinstance(raw_audit, tuple)
-        and all(isinstance(item, str) for item in raw_audit)
-        else None
-    )
-    raw_sector, sector_source = find_literal_table(
-        literals, ("SECTOR", "EXPONENT"), normalize_sector_pairs
-    )
-    raw_markers, marker_source = find_literal_table(
-        literals, ("MARKER", "CENSUS"), normalize_marker_censuses
-    )
-    raw_digests, digest_source = find_literal_table(
-        literals, ("DICTIONARY", "DIGEST"), normalize_dictionary_digests
-    )
-
-    naming = None
-    naming_source = None
-    for name, value in literals.items():
-        if "NAMING" in name.upper() and "CORRECTION" in name.upper():
-            if isinstance(value, dict):
-                naming = value
-                naming_source = name
-                break
-    if naming is None:
-        exists = literal_dict_entry(
-            tree, "one_reference_m2_fixture_exists_in_C"
-        )
-        fixtures = literal_dict_entry(tree, "reference_fixture_names")
-        if exists is not None or fixtures is not None:
-            naming = {
-                "one_reference_m2_fixture_exists_in_C": exists,
-                "reference_fixture_names": fixtures,
-            }
-            naming_source = "literal report dictionary entries"
-
-    sources = {
-        key: value for key, value in {
-            "sector_pairs": sector_source,
-            "marker_censuses": marker_source,
-            "dictionary_digests": digest_source,
-            "naming_correction": naming_source,
-        }.items() if value is not None
-    }
+    primary_tree = ast.parse((ROOT / PRIMARY_REL).read_text())
+    core_tree = ast.parse((ROOT / CORE_REL).read_text())
     return FrozenExtraction(
-        tree=tree,
-        primary_audit=primary_audit,
-        sector_pairs=raw_sector,  # type: ignore[arg-type]
-        marker_censuses=raw_markers,  # type: ignore[arg-type]
-        dictionary_digests=raw_digests,  # type: ignore[arg-type]
-        naming_correction=naming,
-        literal_sources=sources,
+        primary_tree,
+        core_tree,
+        literal_assignment(primary_tree, "AUDIT_INPUT_PATHS"),
+        literal_assignment(core_tree, "FROZEN_SECTOR_EXPONENT_PAIRS"),
+        literal_assignment(core_tree, "FROZEN_DICTIONARY_DIGESTS"),
+        literal_assignment(core_tree, "FROZEN_SUPPLY_COUNT_DIGESTS"),
     )
-
 
 def own_mask(row: object, qubits: int) -> int:
     return int(getattr(row, "x")) | (int(getattr(row, "z")) << qubits)
@@ -471,115 +160,6 @@ def symplectic(left: int, right: int, qubits: int) -> int:
         (left_x & right_z).bit_count()
         + (left_z & right_x).bit_count()
     ) & 1
-
-
-def own_marker_census(
-    cells: tuple[tuple[int, int, int], ...],
-    edges: tuple[tuple[int, int, tuple[int, int, int], int, int, int], ...],
-) -> tuple[int, int, int, int]:
-    cell_set = set(cells)
-    faces = 0
-    cubes = 0
-    for cell in cells:
-        for first, second in combinations(range(3), 2):
-            required = []
-            for axes in ((first,), (second,), (first, second)):
-                target = list(cell)
-                for axis in axes:
-                    target[axis] += 1
-                required.append(tuple(target))
-            faces += all(target in cell_set for target in required)
-        cube_vertices = []
-        for mask in range(1, 8):
-            cube_vertices.append(tuple(
-                cell[axis] + ((mask >> axis) & 1) for axis in range(3)
-            ))
-        cubes += all(target in cell_set for target in cube_vertices)
-    return len(cells), len(edges), faces, cubes
-
-
-def naming_recount(
-    frozen: FrozenExtraction,
-) -> tuple[
-    dict[tuple[int, int, int], tuple[int, int, int, int]],
-    dict[tuple[int, int, int], dict[str, object]],
-]:
-    censuses = {}
-    registers = {}
-    fixture_agreement = True
-    accounting_agreement = True
-    for shape in SHAPES:
-        cell = C.CellEdgeGauge.build(shape)
-        euler = C.EulerMarkerGauge.build(shape)
-        census = own_marker_census(cell.cells, cell.edges)
-        fixture_counts = tuple(
-            sum(marker[0] == kind for marker in euler.marker_objects)
-            for kind in ("vertex", "edge", "face", "cube")
-        )
-        cell_registers = {
-            "matter": cell.matter_qubits,
-            "edge_gauge": len(cell.edges),
-        }
-        euler_registers = {
-            **cell_registers,
-            "vertex_marker": census[0],
-            "edge_marker": census[1],
-            "face_marker": census[2],
-            "cube_marker": census[3],
-        }
-        cell_accounted = sum(cell_registers.values())
-        euler_accounted = sum(euler_registers.values())
-        residual_cell = cell.qubits - cell_accounted
-        residual_euler = euler.qubits - euler_accounted
-        fixture_agreement &= fixture_counts == census
-        accounting_agreement &= residual_cell == 0 and residual_euler == 0
-        censuses[shape] = census
-        registers[shape] = {
-            "CellEdgeGauge": cell_registers,
-            "EulerMarkerGauge": euler_registers,
-            "unclassified_qubits": {
-                "CellEdgeGauge": residual_cell,
-                "EulerMarkerGauge": residual_euler,
-            },
-        }
-
-    no_reference_class = all(
-        residual == 0
-        for row in registers.values()
-        for residual in row["unclassified_qubits"].values()  # type: ignore[union-attr]
-    ) and all(
-        "reference" not in register_name.lower()
-        for row in registers.values()
-        for surface in ("CellEdgeGauge", "EulerMarkerGauge")
-        for register_name in row[surface]  # type: ignore[union-attr]
-    )
-    check(
-        "naming recount: C has only enumerated matter/edge/marker register classes",
-        fixture_agreement and accounting_agreement and no_reference_class,
-        registers,
-    )
-    expected_naming = {
-        "one_reference_m2_fixture_exists_in_C": False,
-        "reference_fixture_names": ("CellEdgeGauge", "EulerMarkerGauge"),
-    }
-    naming_ok = frozen.naming_correction is not None and all(
-        frozen.naming_correction.get(key) == value
-        for key, value in expected_naming.items()
-    )
-    check(
-        "naming correction is frozen as literal primary data",
-        naming_ok,
-        frozen.naming_correction,
-    )
-    check(
-        "independent [V,E,F,C] censuses agree with C marker objects and the frozen table",
-        fixture_agreement
-        and frozen.marker_censuses is not None
-        and censuses == frozen.marker_censuses,
-        {"recounted": censuses, "frozen": frozen.marker_censuses},
-    )
-    return censuses, registers
-
 
 def sector_exponent_recount(
     frozen: FrozenExtraction,
@@ -673,7 +253,7 @@ def sector_exponent_recount(
         {"recounted": pairs, "frozen": frozen.sector_pairs},
     )
     check(
-        "dimension obstruction: no full-register to fixed-sector isometry can cross the 2:1 dimension deficit",
+        "dimension lemma: full register is twice one fixed sector",
         all_dimensions,
         {
             shape: {
@@ -959,7 +539,6 @@ def pullback_spot() -> tuple[int, int]:
     )
     return size, len(mismatches)
 
-
 def assignment_roots(target: ast.AST) -> tuple[str, ...]:
     if isinstance(target, ast.Name):
         return (target.id,)
@@ -969,110 +548,65 @@ def assignment_roots(target: ast.AST) -> tuple[str, ...]:
             node = node.value
         return (node.id,) if isinstance(node, ast.Name) else ()
     if isinstance(target, (ast.Tuple, ast.List)):
-        return tuple(
-            root for child in target.elts for root in assignment_roots(child)
-        )
+        return tuple(root for child in target.elts for root in assignment_roots(child))
     if isinstance(target, ast.Subscript):
         return assignment_roots(target.value)
     return ()
 
-
 def discipline(frozen: FrozenExtraction) -> None:
     forbidden = []
-    for node in ast.walk(frozen.tree):
-        targets: tuple[ast.AST, ...] = ()
-        if isinstance(node, ast.Assign):
-            targets = tuple(node.targets)
-        elif isinstance(node, (ast.AnnAssign, ast.AugAssign, ast.NamedExpr)):
-            targets = (node.target,)
-        for target in targets:
-            roots = assignment_roots(target)
-            if any(root in ("C", "M") for root in roots):
-                forbidden.append((node.lineno, ast.unparse(target)))
-        if (
-            isinstance(node, ast.Call)
-            and isinstance(node.func, ast.Name)
-            and node.func.id == "setattr"
-            and node.args
-            and isinstance(node.args[0], ast.Name)
-            and node.args[0].id in ("C", "M")
-        ):
-            forbidden.append((node.lineno, ast.unparse(node)))
+    for tree in (frozen.primary_tree, frozen.core_tree):
+        for node in ast.walk(tree):
+            targets: tuple[ast.AST, ...] = ()
+            if isinstance(node, ast.Assign):
+                targets = tuple(node.targets)
+            elif isinstance(node, (ast.AnnAssign, ast.AugAssign, ast.NamedExpr)):
+                targets = (node.target,)
+            for target in targets:
+                if any(root in ("C", "M", "O") for root in assignment_roots(target)):
+                    forbidden.append((node.lineno, ast.unparse(target)))
+    check("discipline: primary/core do not mutate imported parent modules", not forbidden, forbidden)
     check(
-        "discipline: the primary assigns no attributes onto imported C or M",
-        not forbidden,
-        forbidden,
-    )
-    literal_tables = {
-        "sector_exponent_pairs": frozen.sector_pairs is not None,
-        "marker_censuses": frozen.marker_censuses is not None,
-        "dictionary_digests": frozen.dictionary_digests is not None,
-    }
-    check(
-        "discipline: primary obstruction findings and dictionary digests are literal frozen tables",
-        all(literal_tables.values()),
-        {
-            "tables": literal_tables,
-            "literal_sources": frozen.literal_sources,
-        },
+        "discipline: frozen sector/dictionary/supply tables are literal data",
+        bool(frozen.sector_pairs and frozen.dictionary_digests and frozen.supply_digests),
     )
 
+def shape_table(value: dict[tuple[int, int, int], object]) -> dict[str, object]:
+    return {"x".join(map(str, shape)): row for shape, row in value.items()}
 
 def main() -> None:
     started = time.monotonic()
-    assert PRIMARY_MODULE not in sys.modules, (
-        "the blocklisted Cycle-727 primary was imported before the audit"
-    )
+    assert PRIMARY_MODULE not in sys.modules and CORE_MODULE not in sys.modules
     frozen = extraction()
     check(
-        "extraction: the primary AUDIT_INPUT_PATHS is a literal tuple",
+        "extraction: primary literal input manifest is complete",
         frozen.primary_audit == EXPECTED_PRIMARY_AUDIT,
         frozen.primary_audit,
     )
     check(
-        "extraction: frozen obstruction/census/digest tables were AST-extracted as data",
-        (
-            frozen.sector_pairs is not None
-            and frozen.marker_censuses is not None
-            and frozen.dictionary_digests is not None
-        ),
-        frozen.literal_sources,
+        "blocklist: Cycle-727 primary/core were not imported",
+        PRIMARY_MODULE not in sys.modules and CORE_MODULE not in sys.modules,
     )
-    check(
-        "blocklist: the Cycle-727 primary is absent from sys.modules",
-        PRIMARY_MODULE not in sys.modules,
-        PRIMARY_MODULE,
-    )
-
-    censuses, _registers = naming_recount(frozen)
     exponent_pairs = sector_exponent_recount(frozen)
     dictionary_digests = dictionary_digest_recount(frozen)
     seam_size, seam_mismatches = pullback_spot()
     discipline(frozen)
-
-    assert PRIMARY_MODULE not in sys.modules, (
-        "the blocklisted Cycle-727 primary was imported during the audit"
-    )
-    runtime = time.monotonic() - started
-    passed = sum(result for _label, result, _detail in CHECKS)
-    total = len(CHECKS)
+    assert PRIMARY_MODULE not in sys.modules and CORE_MODULE not in sys.modules
+    passed = sum(result for _label, result in CHECKS)
     summary = {
-        "pass": passed == total,
+        "pass": passed == len(CHECKS),
+        "scope": "partial AST/census/digest/full-seam spot check; not a full independent pullback proof",
         "checks_passed": passed,
-        "checks_total": total,
-        "recounted_marker_censuses": json_shape_table(censuses),
-        "recounted_sector_exponent_pairs": json_shape_table(exponent_pairs),
-        "recounted_dictionary_digests": json_shape_table(dictionary_digests),
-        "seam_full_family_recount_size": seam_size,
-        "seam_mismatches": seam_mismatches,
-        "runtime_seconds": runtime,
-        "primary_imported": PRIMARY_MODULE in sys.modules,
+        "checks_total": len(CHECKS),
+        "sector_exponents": shape_table(exponent_pairs),
+        "dictionary_sha256": shape_table(dictionary_digests),
+        "seam_spot": {"shape": (2, 2, 2), "rows": seam_size, "mismatches": seam_mismatches},
+        "runtime_seconds": time.monotonic() - started,
     }
     print("FINAL_JSON")
-    print(json.dumps(summary, sort_keys=True, default=str))
-    if passed != total:
+    print(json.dumps(summary, sort_keys=True, separators=(",", ":")))
+    if passed != len(CHECKS):
         raise SystemExit(1)
-
 
 if __name__ == "__main__":
     main()

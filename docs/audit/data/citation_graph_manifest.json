@@ -1,6 +1,6 @@
 {
  "edge_count": 15163,
- "node_count": 4554,
+ "node_count": 4555,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2631,6 +2631,10 @@
    "out_degree": 0
   },
   "critical_exponents_topology_note_2026-04-10": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "cross_code_equivalence_cycle727_bounded_theorem_note_2026-07-28": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

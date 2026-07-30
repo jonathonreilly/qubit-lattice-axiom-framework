@@ -1,96 +1,95 @@
 {
+  "status": "CYCLE727_FINITE_BOX_SIGNED_PULLBACK_PASS",
+  "claim_type": "bounded_theorem",
   "artifacts": {
-    "caches": {
-      "frontier_cycle727_cross_code_equivalence_2026_07_28.txt": "ddb00d502cdb932b6cf5d3e7c07b901af35231880f48ca8d3067177e219d5414",
-      "frontier_cycle727_cross_code_independent_check_2026_07_28.txt": "825236c7496b31dcac6e3bf2377ebc29d6591350eff98a5d0579e854e96ab700"
-    },
-    "note": {
-      "path": "docs/CROSS_CODE_EQUIVALENCE_CYCLE727_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "8d549fcb6f82925b7e98da34e1090e0b701edea4bb78b35349f83841b43eb882"
-    },
-    "runners": {
-      "frontier_cycle727_cross_code_equivalence_2026_07_28.py": "be33f69aee2ad61868bf0a5a0423a461ad23c547161ad9b106154248b3cec2c4",
-      "frontier_cycle727_cross_code_independent_check_2026_07_28.py": "8b6fb78bb7808428747dcb6f71f386efd478ccdd9a0440e0737b3b0275702766"
+    "docs/CROSS_CODE_EQUIVALENCE_CYCLE727_BOUNDED_THEOREM_NOTE_2026-07-28.md": "c658f68950c71e369790c843cf177f1cd3037259d781e3164aad9b7d4188c2a2",
+    "scripts/frontier_cycle727_cross_code_equivalence_2026_07_28.py": "7696f47f761a92f297adc23b1640fd07a4263e96f54e46f2edb17b4e2136d3a8",
+    "scripts/frontier_cycle727_cross_code_independent_check_2026_07_28.py": "53b055cb07033c342b74003a7429c2284ca076b91ae8bf5db1c3af4c9b17fe85",
+    "scripts/frontier_cycle727_cross_code_pullback_core_2026_07_28.py": "a59d8f442ccdff9ab67a2afffe98d4a7ad2f556e6a0360bfbf0a8e9d4fdab76c",
+    "scripts/frontier_cycle727_cross_code_pullback_analysis_2026_07_28.py": "596ba1a3b9f2f5b2e7fd3b0ac7d1d6884a6c06ba2620e543674cee63324a1ed2",
+    "scripts/frontier_cycle727_finite_pauli_tableau_2026_07_28.py": "ad7667133a679e459d1c896dce04c1e4be2e06ca1644d62edbcc7e3090b8a59e",
+    "scripts/frontier_cycle727_finite_fixtures_2026_07_28.py": "20bf77931a43d8aeb771f11cc6979fe7e735ef766e738a4004189ef1e612c5dc",
+    "scripts/frontier_cycle727_finite_factorization_2026_07_28.py": "52fedc5d3df325e0a7012f1077c206287fa26a9115bc00dc92afa11cdacc3fa5",
+    "logs/runner-cache/frontier_cycle727_cross_code_equivalence_2026_07_28.txt": "99826ae5302b8fcc6d6130e05c2931e600226e2609902d2a6831812ba2099ee3",
+    "logs/runner-cache/frontier_cycle727_cross_code_independent_check_2026_07_28.txt": "da2172035bed133f26c939cad01fed394cac36b6523e64babd9cfb956de96b73"
+  },
+  "scope": {
+    "shapes": [
+      [2, 2, 2],
+      [3, 2, 2],
+      [3, 3, 2],
+      [5, 3, 2]
+    ],
+    "implementation": "self-contained finite Cycle-727 modules",
+    "orientation": "shape-specific fitted algebraic orientation",
+    "sectors": "separately supplied s=+1 and s=-1",
+    "generator_order": ["free", "seam", "reverse", "contact", "coin"],
+    "generator_count_formula": {
+      "free": "6N",
+      "seam": "E",
+      "reverse": "E",
+      "contact": "15N",
+      "coin": "15N",
+      "total": "36N+2E"
     }
   },
-  "audit": "unset",
-  "authority": "none",
-  "boundary": {
-    "axiom_pressure": false,
-    "cross_code_pullbacks_exact": true,
-    "fixed_supplies": "the frozen common dictionary (labels, oriented edges, endpoint convention, signed generator lists, total-parity convention); both landed surfaces at their own supplies",
-    "full_sector_isometry_exists": false,
-    "marker_to_coframe_correspondence_exists": false,
-    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
-    "not_derived": "a sector-summed or direct-sum companion channel, any marker-to-companion structural map, autonomous genesis/enforcement, bounded physical common-E preparation, the global tiled channel tensor, or any time/Record/Born/source content",
-    "one_reference_m2_fixture_exists_in_C": false,
-    "positive_scope": "exact per-family per-parity signed Heisenberg pullbacks between the CellEdgeGauge/EulerMarkerGauge surface and the companion surface on the regression boxes, with both anchor sets rerun unchanged and the two obstruction censuses frozen as literal tables (sector exponent pairs; marker counts)",
-    "sector_summed_companion_channel_constructed": false
-  },
   "checks": {
-    "independent_named_checks_failed": 0,
-    "independent_named_checks_passed": 13,
-    "primary_named_checks_passed": 34
-  },
-  "claim_type": "bounded_theorem",
-  "cycle": 727,
-  "date": "2026-07-28",
-  "result": {
-    "anchor_reruns": {
-      "common_e": "7/7",
-      "companion_choi": "5/5"
+    "primary": {
+      "passed": 31,
+      "failed": 0,
+      "stdout_bytes_less_than": 6000
     },
-    "companion_class_correspondences": 0,
-    "marker_censuses_vefc": [
-      [
-        8,
-        12,
-        6,
-        1
-      ],
-      [
-        12,
-        20,
-        11,
-        2
-      ],
-      [
-        18,
-        33,
-        20,
-        4
-      ],
-      [
-        30,
-        59,
-        38,
-        8
-      ]
-    ],
-    "pullback_generators_by_box": [
-      312,
-      472,
-      714,
-      1198
-    ],
-    "sector_exponent_pairs": [
-      [
-        48,
-        47
-      ],
-      [
-        72,
-        71
-      ],
-      [
-        108,
-        107
-      ],
-      [
-        180,
-        179
-      ]
-    ]
+    "partial_census_and_seam_spot_check": {
+      "passed": 9,
+      "failed": 0,
+      "stdout_bytes_less_than": 6000,
+      "scope": "not a full independent reconstruction of the headline pullback"
+    },
+    "source_files_below_audit_character_limit": true,
+    "runner_stdout_below_audit_character_limit": true,
+    "complete_declared_input_closure": true,
+    "citation_primary_runner_registered": true,
+    "citation_helper_count": 5,
+    "citation_authority_dependencies": 0,
+    "historical_implementation_identity": {
+      "shapes_compared": 4,
+      "fixture_operator_factorization_fields_exact": true
+    }
   },
-  "status": "CYCLE727_CROSS_CODE_EQUIVALENCE_PASS"
+  "result": {
+    "signed_pullbacks_exact": true,
+    "rank_phase_coordinate_certificates_exact": true,
+    "gauge_leakage_zero": true,
+    "explicit_supply_predicates_exact": true,
+    "locality_census_bounded": true,
+    "shape_rows": {
+      "2x2x2": 312,
+      "3x2x2": 472,
+      "3x3x2": 714,
+      "5x3x2": 1198
+    },
+    "Euler_and_single_fixed_sector_exponents": {
+      "2x2x2": [48, 47],
+      "3x2x2": [72, 71],
+      "3x3x2": [108, 107],
+      "5x3x2": [180, 179]
+    },
+    "single_fixed_sector_dimension_ratio": 2,
+    "two_sector_direct_sum_dimension_match": true
+  },
+  "controls": {
+    "sign_corruption_detected": true,
+    "dictionary_permutation_detected": true,
+    "supply_count_mutation_detected": true
+  },
+  "claim_boundary": {
+    "uniform_all_box_encoder": "open",
+    "bounded_physical_preparation": "open",
+    "coherent_both_sector_channel": "open",
+    "literal_input_compiler": "open",
+    "collision_free_controller_epoch": "open",
+    "marker_or_coframe_structural_map": "not addressed",
+    "broader_negative_promotion": "disallowed_by_failed_no_go_minimum",
+    "remaining_negative_content": "single_fixed_sector_dimension_lemma_only"
+  }
 }

@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Cycle 817: the general-b sector theorem over the named table class.
+"""Cycle 817: audit the proposed general-b sector theorem.
 
 This runner is stdlib-only.  The copied lineage modules are primary evidence,
 not executable dependencies: they are read as bytes/text, SHA-pinned, and
 parsed as inert AST.  No exhaustive orbit is rerun.
 
-The result uses the stronger of the two requested step forms.  Cycle 740's
-argument is uniform for every lawful pair (b, C), so it does not consume an
-induction hypothesis at b.  The b=3..10 evaluations below are mechanical
-regression instances of that uniform proof, not the proof's logical basis.
+The audit closes the affine-table/ring/index arithmetic, but deliberately does
+not promote Cycle 740's finite C=16 word check and prose transfer flags into an
+arbitrary-C proof.  Its exact terminal is therefore an honest general-b gap:
+P_LOCAL_WORD_CLASS and the Cycle-738 theorem transfer remain unproved for the
+whole condition class.  Finite b=3..10 probes are regression evidence only.
 """
 from __future__ import annotations
 
@@ -98,6 +99,51 @@ PROVENANCE = {
 SOURCE_WIDTH = 41
 BANK_WIDTH = 131
 LINK_WIDTH = 382
+
+# Independent literal regression oracles.  C=12 is the frozen Cycle-719 table
+# to which Cycle 740 says its affine rule is byte-exactly anchored.  C=3..10
+# are the concrete outputs of that rule needed by this task; the runner
+# compares its reimplementation with these values instead of regenerating its
+# own expected side inside the predicate.
+TABLE_ORACLES = {
+    3: ((41, 172, 303), (434, 816)),
+    4: ((41, 172, 303, 434), (565, 947, 1329)),
+    5: (
+        (41, 172, 303, 434, 565),
+        (696, 1078, 1460, 1842),
+    ),
+    6: (
+        (41, 172, 303, 434, 565, 696),
+        (827, 1209, 1591, 1973, 2355),
+    ),
+    7: (
+        (41, 172, 303, 434, 565, 696, 827),
+        (958, 1340, 1722, 2104, 2486, 2868),
+    ),
+    8: (
+        (41, 172, 303, 434, 565, 696, 827, 958),
+        (1089, 1471, 1853, 2235, 2617, 2999, 3381),
+    ),
+    9: (
+        (41, 172, 303, 434, 565, 696, 827, 958, 1089),
+        (1220, 1602, 1984, 2366, 2748, 3130, 3512, 3894),
+    ),
+    10: (
+        (41, 172, 303, 434, 565, 696, 827, 958, 1089, 1220),
+        (1351, 1733, 2115, 2497, 2879, 3261, 3643, 4025, 4407),
+    ),
+    12: (
+        (
+            41, 172, 303, 434, 565, 696, 827, 958, 1089, 1220, 1351,
+            1482,
+        ),
+        (
+            1613, 1995, 2377, 2759, 3141, 3523, 3905, 4287, 4669,
+            5051, 5433,
+        ),
+    ),
+}
+
 TEMPLATE_NAMES = (
     "source",
     "bank_packet",
@@ -190,19 +236,21 @@ NAMED_STRUCTURAL_CONDITIONS = (
 SECTOR_INPUT_HYPOTHESIS = {
     "name": "H_SECTOR_INPUT",
     "predicate": (
-        "A is a pairwise-separated configuration on the oriented ring; "
-        "h=k mod 2 and expected_count=k; B, work, and controller auxiliaries "
-        "are blank at the Q boundary; data/program genesis is clean"
+        "positive integer b and the non-padded program n=8b-5; a finite "
+        "oriented per-n ring with marked reference cut; the direction-(1,0) "
+        "endpoint and clean per-n K chain genesis; an external pairwise-"
+        "separated A configuration with h=k mod 2; blank B/work/controller "
+        "auxiliaries at the declared Q boundary; and expected_count=k on "
+        "every enforcement-grid row"
     ),
     "provenance": (
-        "Cycle737:229-342",
-        "Cycle737:1077-1084",
+        "Cycle737:1074-1084",
         "Cycle738:42-50",
         "Cycle740:1390-1395",
     ),
 }
 
-THEOREM = (
+TARGET_THEOREM = (
     "For every integer b>=3, every integer C>=b, and every placement table "
     "satisfying P_AFFINE_TABLE as the intended geometry, if "
     "P_NONPADDED_RING, P_LAWFUL_MAPPING, P_LOCAL_WORD_CLASS, and "
@@ -212,6 +260,25 @@ THEOREM = (
     "B/work/controller auxiliaries return clean.  The data register contains "
     "the lawful selected program output and is not asserted unchanged."
 )
+
+ANCHOR_CAPACITY = {3: 12, 4: 12, 5: 5, 6: 6, 7: 7}
+ANCHOR_SOURCE_SCOPE = {
+    3: "Cycle737 frozen C=12 anchor",
+    4: "Cycle737 frozen C=12 anchor",
+    5: (
+        "Cycle756 ALL_PASS admits honest_strata_bound; the pinned source "
+        "alone does not authenticate a full 20,633,239-configuration sweep"
+    ),
+    6: (
+        "Cycle764 joins a prior AST/result package without rerunning the "
+        "whole 969,323,029-configuration sweep"
+    ),
+    7: (
+        "Cycle779 ALL_PASS admits a budget-selected complete prefix; the "
+        "pinned source alone does not authenticate a full 45,537,549,124-"
+        "configuration sweep"
+    ),
+}
 
 ANCHOR_EVIDENCE = {
     3: {
@@ -445,6 +512,15 @@ def lineage_contract_certificate(
         "cycle739_740_amended_ownership_formula": I1_AMENDED_FORMULA,
         "nine_template_names": TEMPLATE_NAMES,
         "function_contracts": function_contracts,
+        "cycle740_finite_word_probe_capacity": assigned_literal(
+            cycle740, "EXTENSION_CAPACITY"
+        ),
+        "uniform_transfer_mechanically_established": False,
+        "uniform_transfer_gap": (
+            "Cycle740:635-718 checks mapped words only at C=16; "
+            "Cycle740:1334-1426 promotes six prose booleans into the "
+            "arbitrary-b transfer without reconstructing Cycle738's lemmas"
+        ),
         "exact": exact,
     }
 
@@ -482,7 +558,8 @@ def table_predicate(
     banks: tuple[int, ...],
     links: tuple[int, ...],
 ) -> dict[str, object]:
-    expected_banks, expected_links = generated_tables(capacity)
+    oracle = TABLE_ORACLES.get(capacity)
+    expected_banks, expected_links = oracle if oracle is not None else ((), ())
     intervals = [(0, SOURCE_WIDTH, "source")]
     intervals.extend(
         (base, base + BANK_WIDTH, f"bank[{index}]")
@@ -517,6 +594,7 @@ def table_predicate(
         "interval_count": len(intervals),
         "contiguous_partition": contiguous,
         "pairwise_disjoint_in_order": disjoint,
+        "literal_oracle_available": oracle is not None,
         "exact": exact,
     }
 
@@ -572,8 +650,34 @@ def ring_predicate(bank_count: int, rows: tuple[tuple[str, int], ...]) -> dict[
         "finalizer": 1,
     }
     stations = 8 * bank_count - 5
+    cursor = 0
+    grammar_failures: list[tuple[int, object, object]] = []
+
+    def consume(expected: tuple[str, int]) -> None:
+        nonlocal cursor
+        observed = rows[cursor] if cursor < len(rows) else None
+        if observed != expected:
+            grammar_failures.append((cursor, expected, observed))
+        cursor += 1
+
+    consume(("source", 0))
+    for bank in range(bank_count):
+        consume(("bank_packet", bank))
+        if bank > 0:
+            consume(("cross", bank - 1))
+        if bank < bank_count - 1:
+            consume(("handoff_forward", bank))
+            consume(("relay_latch", bank))
+            consume(("relay_swap", bank))
+    for edge in range(bank_count - 2, -1, -1):
+        consume(("relay_swap", edge))
+        consume(("relay_unlatch", edge))
+        consume(("handoff_return", edge))
+    consume(("finalizer", 0))
+    if cursor != len(rows):
+        grammar_failures.append((cursor, "end-of-program", len(rows)))
     exact = (
-        rows == program_rows(bank_count)
+        not grammar_failures
         and len(rows) == stations
         and counts == expected_counts
         and set(counts) == set(TEMPLATE_NAMES)
@@ -583,6 +687,7 @@ def ring_predicate(bank_count: int, rows: tuple[tuple[str, int], ...]) -> dict[
         "n": stations,
         "row_counts": counts,
         "expected_row_counts": expected_counts,
+        "grammar_failures": grammar_failures,
         "row_count_identity": (
             "1+b+(b-1)+3*(b-1)+3*(b-1)+1=8*b-5"
         ),
@@ -627,7 +732,6 @@ def mapping_predicate(
         and bank_bound
         and edge_bound
         and not failures
-        and local_word_class_exact
     )
     return {
         "b": bank_count,
@@ -637,7 +741,7 @@ def mapping_predicate(
         "bank_bound": "b-1<=C-1",
         "edge_bound": "b-2<=C-2",
         "mapping_failures": failures,
-        "local_word_class_exact_from_sha_pinned_lineage":
+        "local_word_class_mechanically_established":
             local_word_class_exact,
         "exact": exact,
     }
@@ -751,8 +855,10 @@ def certificate_a(
         },
         "what_does_not_change": (
             "source width 41; bank width 131; link width 382; nine local "
-            "templates; X/CNOT/TOF controlled-clean identities; translation, "
-            "distance, ownership-window, and closure algebra"
+            "template names.  The lineage claims that the X/CNOT/TOF "
+            "controlled-clean identities and translation/distance/ownership/"
+            "closure algebra are also b-independent, but Certificate C "
+            "records why that transfer is not mechanically established."
         ),
         "named_structural_conditions": NAMED_STRUCTURAL_CONDITIONS,
         "quantified_input_hypothesis": SECTOR_INPUT_HYPOTHESIS,
@@ -764,8 +870,9 @@ def certificate_a(
 def certificate_b(local_word_class_exact: bool) -> dict[str, object]:
     bases = {}
     for bank_count, evidence in ANCHOR_EVIDENCE.items():
+        capacity = ANCHOR_CAPACITY[bank_count]
         conditions = conditions_for_b(
-            bank_count, bank_count, local_word_class_exact
+            bank_count, capacity, local_word_class_exact
         )
         census_exact = (
             evidence["n"] == 8 * bank_count - 5
@@ -775,36 +882,63 @@ def certificate_b(local_word_class_exact: bool) -> dict[str, object]:
         )
         bases[bank_count] = {
             "conditions": conditions,
-            "mechanical_table_and_parameter_check": (
-                conditions["all_named_structural_conditions"]
+            "mechanically_verified_conditions": {
+                name: conditions["outcomes"][name]
+                for name in (
+                    "P_CAPACITY",
+                    "P_AFFINE_TABLE",
+                    "P_NONPADDED_RING",
+                    "P_LAWFUL_MAPPING",
+                )
+            },
+            "P_LOCAL_WORD_CLASS_status": (
+                "OPEN: the pinned lineage has only the finite C=16 word "
+                "probe, not an arbitrary-C symbolic proof"
             ),
             "census_arithmetic_exact": census_exact,
-            "exhaustive_confirmation_cited_not_rerun": (
-                f"Cycle {evidence['cycle']} commit {evidence['commit']}: "
+            "task_context_exhaustive_total_supplied_not_rerun": (
+                f"Cycle {evidence['cycle']} context / commit "
+                f"{evidence['commit']}: "
                 f"{evidence['configurations']} configurations, "
                 f"{evidence['station_steps']} station-steps, zero violations"
             ),
+            "pinned_runner_scope": ANCHOR_SOURCE_SCOPE[bank_count],
             "anchor_evidence_role": (
-                "optional confirmation of the theorem conclusion; not an "
-                "input to the uniform proof"
+                "support only; the source terminal marker is not treated as "
+                "mechanical authentication of a full sweep"
             ),
             "exact": (
-                conditions["all_named_structural_conditions"]
+                all(
+                    conditions["outcomes"][name]
+                    for name in (
+                        "P_CAPACITY",
+                        "P_AFFINE_TABLE",
+                        "P_NONPADDED_RING",
+                        "P_LAWFUL_MAPPING",
+                    )
+                )
+                and not conditions["outcomes"]["P_LOCAL_WORD_CLASS"]
                 and census_exact
             ),
         }
     return {
-        "claim": THEOREM,
+        "target_claim": TARGET_THEOREM,
         "free_n_warning": (
             "The landed Cycle-738 statement has no independent free ring "
             "size n: admissible n is derived as n=8*b-5."
         ),
         "base_cases": bases,
         "base_domain": [3, 7],
-        "all_base_conditions_hold": all(
-            row["exact"] for row in bases.values()
+        "all_base_arithmetic_table_ring_mapping_conditions_hold": all(
+            all(row["mechanically_verified_conditions"].values())
+            for row in bases.values()
         ),
-        "exact": all(row["exact"] for row in bases.values()),
+        "all_base_named_conditions_hold": False,
+        "base_condition_gap": "P_LOCAL_WORD_CLASS",
+        "exact": (
+            all(row["exact"] for row in bases.values())
+            and not local_word_class_exact
+        ),
     }
 
 
@@ -815,10 +949,15 @@ def certificate_c(local_word_class_exact: bool) -> dict[str, object]:
         )
         for bank_count in range(3, 11)
     }
+    row_count_terms = (1, 1, -1, 3, -3, 3, -3, 1)
+    # 1 + b + (b-1) + 3(b-1) + 3(b-1) + 1 = 8b-5.
+    row_coefficient = 1 + 1 + 3 + 3
+    row_constant = 1 - 1 - 3 - 3 + 1
     coefficient_identity = {
-        "row_count_left_coefficients_in_b": (8, -5),
-        "row_count_right_coefficients_in_b": (8, -5),
-        "exact": (8, -5) == (8, -5),
+        "emission_terms": row_count_terms,
+        "derived_coefficients_in_b": (row_coefficient, row_constant),
+        "target_coefficients_in_b": (8, -5),
+        "exact": (row_coefficient, row_constant) == (8, -5),
     }
     table_totality = {
         "bank_indices": (
@@ -829,33 +968,51 @@ def certificate_c(local_word_class_exact: bool) -> dict[str, object]:
         ),
         "table_lengths": "C banks and C-1 links",
         "proof_uses_induction_hypothesis_at_b": False,
-        "exact": True,
+        "exact": all(
+            report["outcomes"]["P_CAPACITY"]
+            and report["outcomes"]["P_AFFINE_TABLE"]
+            and report["outcomes"]["P_NONPADDED_RING"]
+            and report["outcomes"]["P_LAWFUL_MAPPING"]
+            for report in probes.values()
+        ),
     }
-    exact = (
-        local_word_class_exact
+    finite_probe_exact = all(
+        report["outcomes"]["P_CAPACITY"]
+        and report["outcomes"]["P_AFFINE_TABLE"]
+        and report["outcomes"]["P_NONPADDED_RING"]
+        and report["outcomes"]["P_LAWFUL_MAPPING"]
+        and not report["outcomes"]["P_LOCAL_WORD_CLASS"]
+        for report in probes.values()
+    )
+    gap_exact = (
+        not local_word_class_exact
         and coefficient_identity["exact"]
         and table_totality["exact"]
-        and all(
-            report["all_named_structural_conditions"]
-            for report in probes.values()
-        )
+        and finite_probe_exact
     )
     return {
         "step_form": (
-            "uniform proof over every b,C satisfying the named conditions; "
-            "no induction hypothesis is needed"
+            "NEITHER induction nor condition-class uniformity is proved"
         ),
-        "why_uniform": (
-            "b changes only loop bounds and legal table indices.  The nine "
-            "mapped word templates and the local controlled-clean proof have "
-            "no b.  The translation/distance/closure proof is symbolic in "
-            "n=8*b-5."
+        "closed_substep": (
+            "the affine table recurrence, n=8*b-5 row count, and bank/edge "
+            "index totality are symbolic in b,C"
+        ),
+        "exact_gap": (
+            "P_LOCAL_WORD_CLASS and the Cycle738 theorem-transfer implication "
+            "for arbitrary C. Cycle740 checks mapped words only at C=16 "
+            "(lines 635-718), then marks six inherited ingredients "
+            "b-independent in prose/booleans (lines 1334-1426); it does not "
+            "reconstruct the Cycle738 ownership/distance/closure lemmas over "
+            "the parameterized mapped program."
         ),
         "arbitrary_b_row_identity": coefficient_identity,
         "arbitrary_b_mapping_totality": table_totality,
         "b3_through_b10_regression_only": probes,
-        "proved_for_condition_class_not_from_finite_probe": True,
-        "exact": exact,
+        "finite_probe_exact": finite_probe_exact,
+        "theorem_step_proved": False,
+        "gap_identified_exactly": gap_exact,
+        "exact": gap_exact,
     }
 
 
@@ -868,26 +1025,36 @@ def certificate_d(local_word_class_exact: bool) -> dict[str, object]:
         rows[bank_count] = {
             "n": 8 * bank_count - 5,
             "conditions": conditions["outcomes"],
-            "all_conditions_hold": (
-                conditions["all_named_structural_conditions"]
+            "verified_arithmetic_conditions_hold": all(
+                conditions["outcomes"][name]
+                for name in (
+                    "P_CAPACITY",
+                    "P_AFFINE_TABLE",
+                    "P_NONPADDED_RING",
+                    "P_LAWFUL_MAPPING",
+                )
             ),
-            "corollary": (
-                f"the sector theorem at b={bank_count}, "
-                f"n={8 * bank_count - 5} follows for H_SECTOR_INPUT; "
-                "exhaustive orbit verification is optional confirmation"
+            "all_named_conditions_hold": False,
+            "corollary_status": (
+                f"OPEN: b={bank_count}, n={8 * bank_count - 5} satisfies "
+                "the affine/ring/index conditions, but the sector-theorem "
+                "corollary is not licensed until P_LOCAL_WORD_CLASS and the "
+                "arbitrary-C theorem transfer are proved"
             ),
         }
-    exact = all(row["all_conditions_hold"] for row in rows.values())
+    exact = all(
+        row["verified_arithmetic_conditions_hold"]
+        and not row["all_named_conditions_hold"]
+        for row in rows.values()
+    )
     return {
         "b8_b9_b10": rows,
         "status": (
-            "conditional-class corollaries proved; the intended-affine-"
-            "geometry supply is explicit, and exhaustive sweeps are not "
-            "frontier work"
+            "arithmetic/table prerequisites pass; theorem corollaries remain "
+            "open because Certificate C does not close"
         ),
         "beyond": (
-            "the same corollary holds for every b>=3 at any C>=b satisfying "
-            "the named table conditions"
+            "no beyond-b=7 sector-theorem corollary is claimed by this runner"
         ),
         "exact": exact,
     }
@@ -896,6 +1063,7 @@ def certificate_d(local_word_class_exact: bool) -> dict[str, object]:
 def control_certificate(
     source_inputs: dict[str, object],
     deterministic_core: object,
+    independently_rebuilt_core: object,
 ) -> dict[str, object]:
     self_source = (ROOT / SELF_PATH).read_text(encoding="utf-8")
     self_tree = ast.parse(self_source, filename=SELF_PATH)
@@ -923,8 +1091,9 @@ def control_certificate(
         name for name in calls if name.split(".")[-1] in BLOCKED_DYNAMIC_CALLS
     }
     blocklisted_imports = set(imported) & set(BLOCKLIST)
-    repeated = stable_json_bytes(deterministic_core)
-    determinism = repeated == stable_json_bytes(deterministic_core)
+    first_build = stable_json_bytes(deterministic_core)
+    second_build = stable_json_bytes(independently_rebuilt_core)
+    determinism = first_build == second_build
     exact = (
         DECLARED_INPUT_PATHS == AUDIT_INPUT_PATHS
         and all((ROOT / path).is_file() for path in AUDIT_INPUT_PATHS)
@@ -948,7 +1117,7 @@ def control_certificate(
         "nonstdlib_imports": sorted(set(imported) - allowed_imports),
         "primary_access": "bytes/text/AST only; no primary imported/executed",
         "deterministic_core_byte_identical_on_repeat": determinism,
-        "deterministic_core_sha256": sha256(repeated).hexdigest(),
+        "deterministic_core_sha256": sha256(first_build).hexdigest(),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "exact": exact,
@@ -958,25 +1127,29 @@ def control_certificate(
 def main() -> int:
     started = perf_counter()
     source_inputs, sources, trees = source_input_certificate()
-    check("E_source_commits_blobs_sha256_exact", source_inputs["exact"])
+    check("E_source_bytes_blobs_sha256_exact", source_inputs["exact"])
 
     contract = lineage_contract_certificate(sources, trees)
     check("A_actual_lineage_contract_extracted", contract["exact"])
 
+    # A SHA-exact source containing a theorem claim is not an execution or a
+    # proof of that claim.  The lineage audit above explicitly records that
+    # arbitrary-C local-word uniformity was not mechanically established.
     local_word_class_exact = bool(
-        source_inputs["exact"] and contract["exact"]
+        contract["uniform_transfer_mechanically_established"]
     )
     cert_a = certificate_a(contract)
     check("A_b_dependence_and_named_conditions", cert_a["exact"])
 
     cert_b = certificate_b(local_word_class_exact)
-    check("B_theorem_and_b3_through_b7_bases", cert_b["exact"])
+    check("B_base_outcomes_and_open_condition_exact", cert_b["exact"])
 
     cert_c = certificate_c(local_word_class_exact)
-    check("C_uniform_condition_class_proof", cert_c["exact"])
+    check("C_exact_general_b_gap_identified", cert_c["exact"])
 
     cert_d = certificate_d(local_word_class_exact)
-    check("D_b8_b9_b10_corollaries", cert_d["exact"])
+    check("D_b8_b9_b10_prerequisites_checked_corollaries_withheld",
+          cert_d["exact"])
 
     deterministic_core = {
         "source_inputs": source_inputs,
@@ -986,7 +1159,21 @@ def main() -> int:
         "certificate_C": cert_c,
         "certificate_D": cert_d,
     }
-    cert_e = control_certificate(source_inputs, deterministic_core)
+    repeat_contract = lineage_contract_certificate(sources, trees)
+    repeat_local_word_class_exact = bool(
+        repeat_contract["uniform_transfer_mechanically_established"]
+    )
+    independently_rebuilt_core = {
+        "source_inputs": source_inputs,
+        "lineage_contract": repeat_contract,
+        "certificate_A": certificate_a(repeat_contract),
+        "certificate_B": certificate_b(repeat_local_word_class_exact),
+        "certificate_C": certificate_c(repeat_local_word_class_exact),
+        "certificate_D": certificate_d(repeat_local_word_class_exact),
+    }
+    cert_e = control_certificate(
+        source_inputs, deterministic_core, independently_rebuilt_core
+    )
     check("E_controls", cert_e["exact"])
 
     elapsed = perf_counter() - started
@@ -995,7 +1182,8 @@ def main() -> int:
     report: dict[str, object] = {
         "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
         "BLOCKLIST": BLOCKLIST,
-        "theorem": THEOREM,
+        "target_theorem": TARGET_THEOREM,
+        "theorem_closed": False,
         "A_b_dependence_extraction": cert_a,
         "B_induction_formulation_and_bases": cert_b,
         "C_step": cert_c,
@@ -1006,11 +1194,12 @@ def main() -> int:
         "checks_failed": sum(not value for value in CHECKS.values()),
         "runtime_seconds": round(elapsed, 6),
     }
-    report["pass"] = all(CHECKS.values())
+    report["runner_exact"] = all(CHECKS.values())
+    report["pass"] = report["runner_exact"]
     report["terminal"] = (
-        "CYCLE817_GENERAL_B_SECTOR_THEOREM_ALL_PASS"
-        if report["pass"]
-        else "CYCLE817_GENERAL_B_SECTOR_THEOREM_HONEST_FAIL"
+        "CYCLE817_GENERAL_B_SECTOR_THEOREM_HONEST_GAP"
+        if report["runner_exact"]
+        else "CYCLE817_GENERAL_B_SECTOR_AUDIT_RUNNER_FAIL"
     )
     report["report_sha256"] = stable_digest(report)
 
@@ -1033,6 +1222,7 @@ def main() -> int:
         fallback = {
             "checks": dict(sorted(CHECKS.items())),
             "full_stdout_bytes": len(output_bytes),
+            "runner_exact": False,
             "pass": False,
             "reason": "stdout bound exceeded",
             "terminal": "CYCLE817_GENERAL_B_SECTOR_THEOREM_HONEST_FAIL",
@@ -1040,7 +1230,7 @@ def main() -> int:
         print(json.dumps(fallback, sort_keys=True, separators=(",", ":")))
         return 1
     sys.stdout.write(output)
-    return 0 if report["pass"] else 1
+    return 0 if report["runner_exact"] else 1
 
 
 if __name__ == "__main__":

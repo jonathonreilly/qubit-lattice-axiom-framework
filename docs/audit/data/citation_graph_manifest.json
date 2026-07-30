@@ -1,6 +1,6 @@
 {
- "edge_count": 15257,
- "node_count": 4588,
+ "edge_count": 15261,
+ "node_count": 4590,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -11117,6 +11117,14 @@
   "post_record_two_state_markov_stability_interface_2026-06-06": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "povm_observation_comparator_exact_arithmetic_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "8a6984f312ae",
+   "out_degree": 3
+  },
+  "povm_observation_comparator_input_convention_meta_note_2026-07-30": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "powers_uhf_tracial_uniqueness_on_qubit_lattice_narrow_theorem_note_2026-05-20": {
    "deps_hash": "c8eee4235fc9",

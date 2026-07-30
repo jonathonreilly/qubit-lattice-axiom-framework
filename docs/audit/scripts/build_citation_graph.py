@@ -253,6 +253,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "companion_bank_static_certificate_povm_conditional_bounded_theorem_note_2026-07-30": [
         "scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py",
     ],
+    # The exact-rational comparator theorem's checker deliberately imports
+    # neither the primary runner nor the pinned Cycle-317 source. Expose that
+    # separate matrix reconstruction beside the primary audit surface.
+    "povm_observation_comparator_exact_arithmetic_bounded_theorem_note_2026-07-30": [
+        "scripts/frontier_povm_observation_comparator_independent_check_2026_07_30.py",
+    ],
 }
 
 

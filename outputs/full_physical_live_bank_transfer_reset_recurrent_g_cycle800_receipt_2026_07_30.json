@@ -5,7 +5,8 @@
   "cycle": 800,
   "date": "2026-07-30",
   "dependency_pins": {
-    "base_commit": "bc4500f2945bfd637411bf946f968f357de1fe64",
+    "base_commit": "9ffa15e982622996baa7e3a4cab39115c2f11d17",
+    "science_snapshot_commit": "bc4500f2945bfd637411bf946f968f357de1fe64",
     "cycle720_note_sha256": "fb54e3476dcbf2a8becca1b93fa327bcefd5a17f06f55b2bebcbeea234993b9e",
     "cycle720_recurrent_runner_sha256": "3064da20e961cea6c4c07a8317028ac9657d6fdd0643bd938a770491e5fad1fc",
     "cycle789_note_sha256": "73dc4a31f43750443c8daa7f98516191ae6a81cbdb3bd4134b5202df2815f5e8",
@@ -29,15 +30,24 @@
       4
     ]
   },
+  "note_sha256": "3f4b3e0787bf435a20d677696c645807758f1d7a65e695db14467b3a463a6d30",
   "result": "Given supplied clean O, an already companion-encoded full physical L bank transfers exactly into the landed recurrent O coordinates by nine returned endpoint-SWAP routes per cell, preserving external entanglement and leaving L equal to the clean O input. The one-time initializer uses no I/EPR/Bell-syndrome bank and postcomposes with the actual recurrent physical G on two and held three cells. It is not erasure or repeated independent-input recycling; clean O genesis, raw six-mode-to-L encoding, coframe and program occurrence remain supplied.",
   "runner": {
-    "cache_sha256": "aa80e926025a21193c9c5be2435a416d605313d7dbe350b5d498a3919aa5f444",
+    "cache_sha256": "e5d4e4f0a9e9cc218e94ae763b00cd1fb44e38ccbb0f43360f609f5cf4912334",
     "coherent_word_isometry_residual": 4.732681091546602e-16,
     "direct_swap_isometry_residual": 0.0,
     "external_reference_entanglement_transfer_residual": 3.1569827355773645e-16,
-    "internal_report_sha256": "b61752d59cdbd62cc0a981b9fdff2a836a2c54533ad8b931881b7545c5915c09",
+    "internal_report_sha256": "e152717e469902d734e2726fad00b6b12afa1c7f2c3e926b752304e387b1f4aa",
+    "script_sha256": "8bd7001e2f5e544677e176537a8035a63583e3a2932e3d149ca24eb57068e168",
+    "status": "PASS"
+  },
+  "supplemental_runner": {
+    "cache_sha256": "955e72f3f5b6435213a0b48cf6f0ed8ea07128e31b7c7c84de9c89c0f500e2c3",
+    "input_fingerprint_sha256": "ef20cd1501be9ab1ca9187d1942cff856726e6f9f8c212679c2be657319e2bd7",
+    "internal_report_sha256": "c9433cfc4d881e40aec13511336755123ef54eb12849d4c57854a4215218c85d",
+    "load_bearing": false,
     "maximum_one_particle_mass_residual": 5.551115123125783e-17,
-    "script_sha256": "11c607288fc3ed13dfc32c06d67239d717c2d9438c9ff228b5cb95e8affb016d",
+    "script_sha256": "a35a50dd20e8ffc2c09dc989420612a0413ce3b1e1463ff24c825caf0b5ae41a",
     "status": "PASS"
   }
 }

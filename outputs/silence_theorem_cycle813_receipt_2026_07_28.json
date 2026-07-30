@@ -1,0 +1,33 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR13-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle813_silence_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 9
+    },
+    "logs/runner-cache/frontier_cycle813_silence_theorem_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 813,
+  "files": {
+    "docs/SILENCE_THEOREM_CYCLE813_BOUNDED_THEOREM_NOTE_2026-07-28.md": "cb11e1fafd42f3d5c9ddf15e53c6958a286cc8db2c5c3c0a5a84e3178d069717",
+    "logs/runner-cache/frontier_cycle813_silence_independent_check_2026_07_28.txt": "460c010ff68451274cb852fe9b06562a3d65a59d0fd9b561027a027b47186f82",
+    "logs/runner-cache/frontier_cycle813_silence_theorem_2026_07_28.txt": "0f689af9f8fe8996910a2a62790ead1e696c8d70891bc6f342da7060b1b61eff",
+    "scripts/frontier_cycle813_silence_independent_check_2026_07_28.py": "3ac8d0ae7c1636188722452240f57394f195ea49d766285699190dbc5047b66e",
+    "scripts/frontier_cycle813_silence_theorem_2026_07_28.py": "2cc32c3bf06d0e93bd594288509e3d6f54cbb50a7eeee023932316ae979e64f2"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "three proven conserved necessary invariants (unwritten-link vector/occupancy/parity); 6/6 identity controls",
+    "0/24 silent keys excluded \u2014 compatibility total; the silence is NOT a linear/quadratic conservation law"
+  ],
+  "verdicts": [
+    "SILENCE_UNEXPLAINED_AT_THIS_LEVEL",
+    "checker CONFIRMED; linear + degree<=2 GF(2) classes EXHAUSTED (533,409 monomials)"
+  ]
+}

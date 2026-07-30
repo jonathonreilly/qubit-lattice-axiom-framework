@@ -9085,11 +9085,16 @@ class NoGoDisciplineGateTest(unittest.TestCase):
 
     def test_n1_normalization_route_accepts_exact_w_unit_marker(self):
         m = _import("no_go_discipline_gate")
-        marker = m.ROUTE_CLASS_MARKERS["normalization_or_units"]
-        self.assertIsNotNone(marker.search("W_unit"))
+        self.assertTrue(
+            m.route_class_marker_matches("normalization_or_units", "W_unit")
+        )
         for non_marker in ("preW_unit", "W_unit_post", "W_unitary", "W__unit"):
             with self.subTest(non_marker=non_marker):
-                self.assertIsNone(marker.search(non_marker))
+                self.assertFalse(
+                    m.route_class_marker_matches(
+                        "normalization_or_units", non_marker
+                    )
+                )
         manifest = self._manifest()
         wall_line = (
             "N2 wall W_unit: beta-one and beta-two singleton laws share h "
@@ -9115,6 +9120,22 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         }
         self.assertIsNone(
             m.validate_no_go_discipline(audit, evidence_manifest=manifest)
+        )
+        near_marker_line = (
+            "N2 wall W_unitary: beta-one and beta-two singleton laws share h "
+            "but remain distinct"
+        )
+        manifest[stdout_path]["text"] += "\n" + near_marker_line
+        route.update({
+            "mechanism": near_marker_line,
+            "attempt": near_marker_line,
+            "outcome": near_marker_line,
+            "evidence_locator": near_marker_line,
+        })
+        _set_no_go_scan_coverage(packet, manifest)
+        self.assertIn(
+            "not supported by its evidenced",
+            m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
         )
 
     def test_occurrence_scans_and_resolution_classes_fail_closed(self):

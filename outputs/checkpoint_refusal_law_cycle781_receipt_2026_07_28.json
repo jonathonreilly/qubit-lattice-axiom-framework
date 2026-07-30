@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle781_checkpoint_independent_check_2026_07_28.txt": "095afa0f437dd08bd41484b11b12a07e92cde7de0a3cded169e6466c9b61491f",
+      "frontier_cycle781_checkpoint_refusal_law_2026_07_28.txt": "1952c541e14b45414b2e63dc718912d460192b8113b1ec208c56ac783e6bf312"
+    },
+    "note": {
+      "path": "docs/CHECKPOINT_REFUSAL_LAW_CYCLE781_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "a4da1b9e418534306caeb62be0884a3462692a91c5b0fed202252c913c2c5066"
+    },
+    "runners": {
+      "frontier_cycle781_checkpoint_independent_check_2026_07_28.py": "29709ff9163aa347ac7124d6dd48be06591d775354890218072221706ce20d94",
+      "frontier_cycle781_checkpoint_refusal_law_2026_07_28.py": "b1158250dcb1449f6abac4f6bb6a0a90f47511a8a0f587e85483f4b6f3624211"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "achievement": "checkpoint guard (pure X/CNOT/TOF: CNOT fan-out checkpoint, XOR-difference syndrome, compiled conditional restore) detects and rolls back ALL 744 prefix-6 dirty flips byte-exactly \u2014 syndrome completeness for the class that defeated 770/777",
+    "axiom_pressure": false,
+    "fixed_supplies": "the composition point and attack families (770/777); everything Cycle-693/719/745/769/770/777 declare",
+    "new_primitive": "law_requires_new_primitive true \u2014 a state component outside the reversible attack alphabet's reach, which IS the Record axiom's primitive permanence; support for axiom NECESSITY (the axiom does work nothing beneath it can), not an axiom gap",
+    "not_derived": "any permanence witness; the closed universal regress theorem; any axiom change",
+    "obstruction": "state-null attacks (edit region+checkpoint consistently) give zero syndrome; an editable checkpoint cannot identify restoration direction. Battery 14/26, 38/50, 38/81",
+    "outcome": "LAW_PARTIAL_REGRESS_CONFIRMED",
+    "regress": "checker: majority-3 improves to 69/81, defeated by a four-X null mutator CONSTRUCTED from the guard's own fan-out; refresh variant defeated by a two-X mutator; REGRESS_CONFIRMED under arbitrary M2 words (constructed mutators lie outside the declared 770/777 families). Scoped to the guards tested; the universal theorem is not claimed"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 8,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 781,
+  "date": "2026-07-30",
+  "result": {
+    "battery": "14/26, 38/50, 38/81; maj-3 69/81",
+    "detection": "744/744",
+    "outcome": "LAW_PARTIAL",
+    "regress": "CONFIRMED (mechanical mutators)",
+    "witness": false
+  },
+  "status": "CYCLE781_CHECKPOINT_REFUSAL_LAW_PASS"
+}

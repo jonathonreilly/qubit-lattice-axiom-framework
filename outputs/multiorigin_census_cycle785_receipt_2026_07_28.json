@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle785_multiorigin_census_2026_07_28.txt": "b204ed226bc05b3af9077c7eafb3e7d2d864f99f19da69d1797939763a4df82b",
+      "frontier_cycle785_multiorigin_independent_check_2026_07_28.txt": "6488d881890969bdbabe56651cb294d9da6aa992b64fd65bcda87a4f57bddc75"
+    },
+    "note": {
+      "path": "docs/MULTIORIGIN_CENSUS_CYCLE785_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "c02700b509f81f79d34a461bfb6af5a9d9c3c9f0a5cf077d50de5c916e8ebc22"
+    },
+    "runners": {
+      "frontier_cycle785_multiorigin_census_2026_07_28.py": "be29afa445d19a4f71c219249a82e70e26dc49bc6fee8645e94cf09a83a79a84",
+      "frontier_cycle785_multiorigin_independent_check_2026_07_28.py": "98070c898a162a5dd593f17b362795eb7a5e8f1f30c21cc06a7e658146ea2bbd"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "catalog": "controller syntax fixes exactly 12 one-hot origins x 6 branches = 72 (checker re-derived; the 12 unique post-MATTER states are shared supports, not duplicates)",
+    "census": "exactly ONE record-shaped branch per origin \u2014 mode 6 (origins 0-5), mode 1 (origins 6-11) \u2014 identical write pipeline 0 -> 1 -> 125 (decodable binder=valid=1 only after finalizer)",
+    "classification": "unidentified for every origin and globally under both dual readings (permanence rests on the axiom's primitive content per the 770/777/781 arc)",
+    "controls": "origin-0 byte-identity to the landed 769 census; 4 origins fully recounted (24/24 rows); determinism byte-identical",
+    "fixed_supplies": "the 769 operationalization verbatim; everything Cycle-693/719 declare",
+    "mechanism": "the mode flip is wired: MATTER_WORD selects pointer mode 6 vs 1 per origin group; PROGRAM[0] wires these to U_TO_V / V_TO_U (checker-traced)",
+    "not_derived": "any rate/site-distribution law; permanence witnessing; other controllers/charts",
+    "outcome": "ORIGIN_UNIFORM_FORMATION_GEOMETRY"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 785,
+  "date": "2026-07-30",
+  "result": {
+    "branches": 72,
+    "classification": "unidentified (both readings)",
+    "origins": 12,
+    "record_shaped": "1 per origin (mode 6 / mode 1 by group)"
+  },
+  "status": "CYCLE785_MULTIORIGIN_CENSUS_PASS"
+}

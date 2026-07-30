@@ -910,6 +910,20 @@ class BatchExitSemanticsTest(unittest.TestCase):
                 self.assertTrue(batch.report_has_hard_blocker(report))
                 self.assertEqual(batch.report_exit_code(report), 1)
 
+    def test_transport_quarantine_recovers_banked_critical_peer(self):
+        report = [
+            {"cid": "critical", "result": "prompt_transport_blocked"},
+            {
+                "cid": "critical",
+                "result": batch.PROMPT_TRANSPORT_QUARANTINE_RESULT,
+            },
+            {"cid": "critical", "result": "critical_peer_pending"},
+            {"cid": "critical", "result": "audited_clean"},
+        ]
+
+        self.assertFalse(batch.report_has_hard_blocker(report))
+        self.assertEqual(batch.report_exit_code(report), 0)
+
     def test_batch_quarantines_untransportable_claim_and_exits_cleanly(self):
         row = {
             "claim_id": "oversized",

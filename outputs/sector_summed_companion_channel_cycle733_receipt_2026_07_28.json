@@ -1,56 +1,68 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle733_sector_sum_independent_check_2026_07_28.txt": "28e9d1d12d0771174a7207e04fc66d614074404dcc02320404937bbc53ffaa6e",
-      "frontier_cycle733_sector_summed_companion_channel_2026_07_28.txt": "bce764f63d6e445a309496536a463d86109d4781b98525558bbb7faace6e8cd6"
+      "frontier_cycle733_sector_sum_independent_check_2026_07_28.txt": "ba56baf62d9f28cb1bb851834b09e1af1cfdcb6ab2e9767893ad17409a53fca8",
+      "frontier_cycle733_sector_summed_companion_channel_2026_07_28.txt": "05786973e324a241ca3da294e13ea8875a88b77ed4ab68a3f5e13038460835d0"
     },
     "note": {
       "path": "docs/SECTOR_SUMMED_COMPANION_CHANNEL_CYCLE733_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "b2df792daf99b5889f79dc1e88f8566e9746e010cae6aa0443687f4c4b7f8578"
+      "sha256": "fbc33c33c6a559293a02c5aeec8eec86be9a5efc899804186a399125cf7a2efb"
     },
     "runners": {
-      "frontier_cycle733_sector_sum_independent_check_2026_07_28.py": "e3124529a3a5cd943156f04a5ddfc7275acadb2fc29ab23de5db92ac0bc8431c",
-      "frontier_cycle733_sector_summed_companion_channel_2026_07_28.py": "e2431e968ca6f12c3efead8bc0725f98f4a0bf0a2c5fd8a6cdfc68b0562f5d35"
+      "frontier_cycle733_sector_sum_independent_check_2026_07_28.py": {
+        "input_fingerprint_sha256": "d897a7d9d2ef2b6f49d98148c9dd719c03e77101f12199fda9beb3c4140e337b",
+        "report_sha256": "1b4f5ed64879336423b7e819d6aaed8c5d488e531cfad5eca78201b430ae2c75",
+        "runner_sha256": "9d630808e90928e00c94a0c9939a871344b0c1215b7e4415eaaaa6f3f08ef92d"
+      },
+      "frontier_cycle733_sector_summed_companion_channel_2026_07_28.py": {
+        "input_fingerprint_sha256": "fe5f26618389d2c941352b53833d51a7c72098db9f43035bfde0952121e88563",
+        "report_sha256": "cdc9af8e669908eabafc939eb502f3cf3b43aaee7ffc652db3ff2bd95e3665e3",
+        "runner_sha256": "9f5bf7b9d3aa066be18b90f7fdd2967a3c1715e6991152849b0bbbfe56bf153f"
+      }
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
-    "axiom_pressure": false,
-    "fixed_supplies": "the printed outer direct-sum sector ordering (even before odd; within-sector coordinates unchanged), plus everything the landed Cycle-720 geometry/gauge modules and the Cycle-727 exactness surface declare",
-    "frozen_obstruction": null,
-    "full_sector_isometry_achieved": true,
-    "not_derived": "any marker-to-coframe correspondence (Cycle 727's second frozen obstruction stands); the global tiled channel tensor; bounded physical common-E preparation; no occurrence/time/Record/Born/source content",
-    "per_sector_exactness_unchanged": true,
-    "positive_scope": "the direct-sum channel V = V+ (+) V- over even/odd parity sectors (2^47 each; summed domain 2^48); exact V(dagger)V = I via structural projector algebra; all 624 intertwining and 1,248 representation off-diagonal blocks exactly zero at generator level (312 generators); 936 cross-sector diagnostics with exact norm preservation; zero fitted constants",
-    "second_cycle727_obstruction_untouched": true
+    "actual_sector_maps_constructed": false,
+    "coherent_channel_constructed": false,
+    "odd_sector_intertwiner_constructed": false,
+    "parent_open_gate_closed": false,
+    "physical_preparation_constructed": false,
+    "relative_sector_phase_selected": false,
+    "uniform_encoder_constructed": false
   },
   "checks": {
     "independent_named_checks_failed": 0,
-    "independent_named_checks_passed": 6,
-    "primary_named_checks_passed": 7
+    "independent_named_checks_passed": 8,
+    "independent_named_checks_total": 8,
+    "primary_named_checks_failed": 0,
+    "primary_named_checks_passed": 7,
+    "primary_named_checks_total": 7
   },
   "claim_type": "bounded_theorem",
   "cycle": 733,
   "date": "2026-07-28",
   "result": {
-    "cross_sector_tests": "936/936",
-    "frozen_obstruction": null,
-    "generators": 312,
-    "intertwining_off_diagonal_blocks": {
-      "exhausted": 624,
-      "nonzero": 0
+    "conditional_direct_sum_identity": true,
+    "dictionary_sha256": "dadb2087ae6604e877d8c406c056fb0d88ed31fceb772daf4093e685fed1797e",
+    "family_counts": {
+      "coin": 120,
+      "contact": 120,
+      "free": 48,
+      "reverse": 12,
+      "seam": 12
     },
-    "isometry_residual": "exact_zero",
-    "representation_off_diagonal_blocks": {
-      "exhausted": 1248,
-      "nonzero": 0
-    },
-    "sector_dimensions": {
-      "direct_sum_exponent": 48,
-      "even_exponent": 47,
-      "odd_exponent": 47
-    }
+    "finite_shape": [
+      2,
+      2,
+      2
+    ],
+    "generator_rows": 312,
+    "parity_failures": 0,
+    "parity_representatives_checked": 936,
+    "relative_phase_parameter": "arbitrary",
+    "state_space_exhaustion_claimed": false
   },
-  "status": "CYCLE733_SECTOR_SUMMED_FULL_SECTOR_ISOMETRY_PASS"
+  "status": "CYCLE733_FINITE_BOX_CONDITIONAL_DIRECT_SUM_LEMMA_PASS"
 }

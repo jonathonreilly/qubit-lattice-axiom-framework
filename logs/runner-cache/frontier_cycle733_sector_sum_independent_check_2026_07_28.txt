@@ -1,19 +1,23 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle733_sector_sum_independent_check_2026_07_28.py
-runner_sha256: e3124529a3a5cd943156f04a5ddfc7275acadb2fc29ab23de5db92ac0bc8431c
-input_fingerprint_sha256: 404a6f54716bea6ea7d4613829a24cd7cff876e71fe9bff56cbfc097b7f96787
+runner_sha256: 9d630808e90928e00c94a0c9939a871344b0c1215b7e4415eaaaa6f3f08ef92d
+input_fingerprint_sha256: d897a7d9d2ef2b6f49d98148c9dd719c03e77101f12199fda9beb3c4140e337b
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.45
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
-PASS extraction :: {"extracted":{"V_dagger_V_frobenius_norm_squared":0,"V_dagger_V_maximum_absolute_entry":0,"V_dagger_V_nonzero_blocks":0,"declared_cross_sector_tests":936,"direct_sum_dimension":281474976710656,"frozen_obstruction":null,"full_sector_isometry_achieved":true,"generator_rows":312,"intertwining_off_diagonal_blocks":624,"representation_off_diagonal_blocks":1248,"sector_even_dimension":140737488355328,"sector_odd_dimension":140737488355328},"ordering":"Cycle733 supplied outer direct-sum order: even(s=+1), odd(s=-1); all within-sector coordinates retain the landed factorization order"}
-PASS sector_projector_recount :: {"complementary":true,"direct_sum_dimension":281474976710656,"orthogonal":true,"sector_dimensions":[140737488355328,140737488355328]}
-PASS isometry_recount :: {"basis_sample_family":[{"V_s_action":["even",0],"V_s_dagger_action":["even",0],"basis_label":0,"exact":true,"sector":"even"},{"V_s_action":["even",1],"V_s_dagger_action":["even",1],"basis_label":1,"exact":true,"sector":"even"},{"V_s_action":["even",140737488355327],"V_s_dagger_action":["even",140737488355327],"basis_label":140737488355327,"exact":true,"sector":"even"},{"V_s_action":["odd",0],"V_s_dagger_action":["odd",0],"basis_label":0,"exact":true,"sector":"odd"},{"V_s_action":["odd",1],"V_s_dagger_action":["odd",1],"basis_label":1,"exact":true,"sector":"odd"},{"V_s_action":["odd",140737488355327],"V_s_dagger_action":["odd",140737488355327],"basis_label":140737488355327,"exact":true,"sector":"odd"}],"frozen_obstruction":null,"generator_rows":312,"residual":{"arithmetic":"exact_sparse_monomial_integer_algebra","frobenius_norm_squared":0,"maximum_absolute_entry":0,"nonzero_blocks":0}}
-PASS block_structure_recount :: {"intertwining_blocks":624,"nonzero":[0,0],"representation_blocks":1248}
-PASS cross_sector_recount :: {"declared_failures":0,"declared_tests":936,"independent_tests":624,"norm_failures":0}
-PASS discipline :: {"blocked_imports_found":[],"frozen_tables_literal_eval":{"AUDIT_INPUT_PATHS":true,"BLOCKLISTED_IMPORTS":true,"FROZEN_COUNTS":true,"FROZEN_DECLARED_DIAGNOSTICS":true,"FROZEN_PRIMARY_AUDIT_PATHS":true,"FROZEN_SECTOR_ORDER":true},"landed_attribute_writes":[]}
-SUMMARY_JSON {"V_dagger_V_residual":{"arithmetic":"exact_sparse_monomial_integer_algebra","frobenius_norm_squared":0,"maximum_absolute_entry":0,"nonzero_blocks":0},"checks_passed":6,"checks_total":6,"declared_cross_sector_tests":936,"direct_sum_dimension":281474976710656,"frozen_obstruction":null,"full_sector_isometry_achieved":true,"intertwining_off_diagonal_blocks":624,"pass":true,"representation_off_diagonal_blocks":1248,"runtime_seconds":0.055719,"sector_dimensions":[140737488355328,140737488355328],"status":"cycle733-sector-sum-independent-check-clean","within_audit_timeout":true}
+SCOPE independent current-fixture reconstruction; finite parity census; conditional block algebra only
+PASS current five-family dictionary independently reconstructed :: "ok"
+PASS all signed target/reference/companion phases retained :: "ok"
+PASS all 936 independently reconstructed representatives preserve parity :: "ok"
+PASS signed-phase corruption changes frozen dictionary :: "ok"
+PASS parity-flip corruption detected :: "ok"
+PASS conditional block-support algebra independently exact :: "ok"
+PASS missing premises and relative phase remain open :: "ok"
+PASS independent runner excludes primary import :: "ok"
+FINAL_JSON
+{"boundary":{"coherent_channel_constructed":false,"cycle727_analysis_imported":false,"primary_imported":false,"relative_phase_selected":false,"sector_maps_constructed":false},"conditional_algebra":{"bv_support":[["even","even"],["odd","odd"]],"conditional_identity_exact":true,"gram_support":[["even","even"],["odd","odd"]],"off_diagonal_mutation_detected":true,"relative_phase_selected":false,"sector_intertwining_premise_discharged_here":false,"sector_isometry_premise_discharged_here":false,"three_qubit_parity_flipping":32,"three_qubit_parity_preserving":32,"three_qubit_pauli_words":64,"toy_parity_split_exact":true,"va_support":[["even","even"],["odd","odd"]]},"controls":{"off_diagonal_mutation_detected":true,"parity_flip_detected":true,"signed_phase_corruption_detected":true},"dictionary_sha256":"dadb2087ae6604e877d8c406c056fb0d88ed31fceb772daf4093e685fed1797e","family_counts":{"coin":120,"contact":120,"free":48,"reverse":12,"seam":12},"generator_rows":312,"named_checks_passed":8,"named_checks_total":8,"parity_certificate":{"all_preserve_total_matter_parity":true,"failures":[],"representatives_tested":936},"pass":true,"report_sha256":"1b4f5ed64879336423b7e819d6aaed8c5d488e531cfad5eca78201b430ae2c75","runtime_seconds":0.004693040973506868,"shape":[2,2,2],"signed_relation_sha256":"c1bd52a612ccef8bdd082ad6f9e8f99e19ee20807c17841c57ee6f433c1a9bc1","status":"CYCLE733_INDEPENDENT_CONDITIONAL_LEMMA_PASS"}
 
 ----- stderr -----
 

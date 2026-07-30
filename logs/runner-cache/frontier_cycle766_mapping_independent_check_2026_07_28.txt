@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle766_mapping_independent_check_2026_07_28.py
+runner_sha256: 0f767f934ece5cd4f14acfba9e713928cad9faceb278da6e8dbe59a23297061b
+input_fingerprint_sha256: 2cccbfebc4453a163fe0848eb7009159cee3677367d0b6d33dc7f880839ea590
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 38.38
+status: ok
+----- stdout -----
+PASS extraction :: Cycle 766 primary parsed as blocklisted AST data only; both chains, AUDIT pure-literal tuple, rank/bar, and discipline claims extracted.
+PASS chains_recount (a) :: per-event mapping=((0, 1, 2), (1, 2, 0), (2, 0, 1)); events=1122; no-peeking AST audit clean.
+PASS chains_recount (b) :: assignment mapping=((0, 1, 2), (1, 2, 0), (2, 0, 1)); coincidence=True; unique-winner gaps=(14.545274157841916, 6.131118417031075, 16.85801666134389).
+PASS rank_recount :: candidate unique rank=(1, 1)/216; Cycle 765 rank=(123, 128).
+PASS per-scope :: E0 counts=(13, 128, 68) BornTV=0x1.9a1c50c983fb1p-2 uniformTV=0x1.1dce302dba971p-2 align=NO | E1 counts=(232, 97, 1) BornTV=0x1.b3344dce20805p-2 uniformTV=0x1.7a91d7a91d7a8p-2 align=NO | E2 counts=(146, 5, 432) BornTV=0x1.4078ace570601p-2 uniformTV=0x1.a172058fe18e2p-2 align=YES | pooled counts=(391, 230, 501) BornTV=0x1.2eeecb23145d0p-6 uniformTV=0x1.06d84ca9c106ep-3 align=YES.
+PASS overlap_selection_probe :: DEFUSED: chain (a), per-event and without per-stratum assignment maximization, alone yields the same assignment; its complete coincidence with chain (b) defuses chain (b)'s selection-like overlap-maximization risk at this fixture scope.
+PASS discipline :: IMPROVED: the pooled rank beats Cycle 765's 123--128 bar, but at least one scope fails Born-closer-than-uniform; this is not a family win. Bar unmodified; NO weight claim regardless of outcome.
+PASS runtime :: 37.898601s < 1800s; stdout <150KB; CYCLE766_MAPPING_INDEPENDENT_CHECK_CLEAN.
+
+----- stderr -----
+

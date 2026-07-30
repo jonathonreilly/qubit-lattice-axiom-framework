@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle766_family_winning_mapping_2026_07_28.txt": "dbc31bf150927a0368e0818729509834f82eb2902e487d532557591639309d70",
+      "frontier_cycle766_mapping_independent_check_2026_07_28.txt": "c7341d82e46639e9753a5e66914af8dfd4d7623aea0f88f4466430332f81bede"
+    },
+    "note": {
+      "path": "docs/FAMILY_WINNING_MAPPING_CYCLE766_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "6a9223b70a4303e2291e577a299484013e4f8639853af2b88b449d78c849b8c2"
+    },
+    "runners": {
+      "frontier_cycle766_family_winning_mapping_2026_07_28.py": "f315180920ad6321ee41a32763f4a2606267e2bf7220f6a52cd42ce5e5382d66",
+      "frontier_cycle766_mapping_independent_check_2026_07_28.py": "0f767f934ece5cd4f14acfba9e713928cad9faceb278da6e8dbe59a23297061b"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "bar": "family win = pooled AND every scope; NOT met; bar unmodified; NO weight claim in either direction",
+    "chains": "per-event chain (a) and stratum-maximal chain (b) coincide completely: assignment ((0,1,2),(1,2,0),(2,0,1))",
+    "fixed_supplies": "the 216-assignment family; frozen Born/uniform convention and supplied weights Tr(sigma E); everything Cycle-317/750/763/765 declare",
+    "not_derived": "the all-scope family win; the weight claim; E0/E1 resolution (scale vs mechanism undecided)",
+    "outcome": "IMPROVED_NOT_WIN",
+    "per_scope": "E2 aligns (0.3130 vs 0.4077); pooled aligns; E0 FAILS (0.4006 vs 0.2793); E1 FAILS (0.4250 vs 0.3697)",
+    "rank": "uniquely 1/216 pooled (Born TV 0.0185 vs uniform 0.1283; runner-up 0.0294); Cycle-765 baseline reproduced at 123-128",
+    "selection_risk": "defused: chain (a) alone, per-event, no assignment maximization, yields the winner"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 8,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 766,
+  "date": "2026-07-29",
+  "result": {
+    "assignment": "((0,1,2),(1,2,0),(2,0,1)) by both chains",
+    "pooled_rank": "1/216 unique",
+    "scopes_failing": "E0, E1",
+    "verdict": "IMPROVED not WIN"
+  },
+  "status": "CYCLE766_FAMILY_WINNING_MAPPING_PASS"
+}

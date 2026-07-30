@@ -1,6 +1,6 @@
 {
- "edge_count": 15213,
- "node_count": 4571,
+ "edge_count": 15214,
+ "node_count": 4572,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4461,6 +4461,10 @@
   "f_wedge_f_top_form_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "factorization_object_api_support_note_2026-07-28": {
+   "deps_hash": "759285fc1e81",
+   "out_degree": 1
   },
   "family_companion_compare_note": {
    "deps_hash": "d65483554fad",

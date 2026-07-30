@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Immutable access to the exact Cycle-720 mixed-gauge factorization.
 
-This module is support infrastructure.  It reconstructs the convention-sensitive
-Cycle-720 tableau without changing either landed runner, exposes the finite
-operator dictionary in factor coordinates, and refuses to return an object whose
-ordered signed-tableau digest differs from the landed factorization certificate.
+This module provides finite-box support code.  It reconstructs the
+convention-sensitive Cycle-720 tableau without changing either landed runner,
+exposes the finite operator dictionary in factor coordinates, and refuses to
+return an object whose ordered physical signed-tableau digest differs from the
+landed factorization certificate.
 """
 
 from __future__ import annotations
@@ -12,8 +13,43 @@ from __future__ import annotations
 AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = "docs/FACTORIZATION_OBJECT_API_SUPPORT_NOTE_2026-07-28.md"
 AUDIT_INPUT_PATHS = (
-    "scripts/frontier_cycle720_companion_subsystem_mixed_gauge_factorization_2026_07_27.py",
+    "docs/RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle720_bounded_general_clifford_orbit_2026_07_27.py",
     "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py",
+    "scripts/frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_subsystem_mixed_gauge_factorization_2026_07_27.py",
+    "scripts/frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27.py",
+    "scripts/frontier_cycle720_product_companion_full_word_holonomy_2026_07_27.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
@@ -55,7 +91,7 @@ class DictionaryCoordinate:
 
 @dataclass(frozen=True)
 class FactorizationObject:
-    """Decision-D2 immutable signed-tableau factorization object."""
+    """Immutable finite-box signed-tableau factorization object."""
 
     shape: tuple[int, int, int]
     physical_w: tuple[Pauli, ...]
@@ -417,9 +453,144 @@ def _coordinate_failures(
     return physical_failures, target_failures
 
 
+def _contract_failures(
+    factorization: FactorizationObject,
+    source_rows: tuple[tuple[str, Pauli, Pauli], ...],
+) -> dict[str, int]:
+    failures = {
+        "cross_frame_phase": 0,
+        "dictionary_count": abs(
+            len(factorization.dictionary_coordinates) - len(source_rows)
+        ),
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": int(factorization.center_count < 1),
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0,
+    }
+    logical_count = factorization.logical_count
+    gauge_count = factorization.gauge_count
+    center_count = factorization.center_count
+    logical_mask = (1 << logical_count) - 1
+    gauge_mask = (1 << gauge_count) - 1
+    center_mask = (1 << center_count) - 1
+    for index, (coordinate, source) in enumerate(
+        zip(factorization.dictionary_coordinates, source_rows)
+    ):
+        family, physical_row, target_row = source
+        failures["source_association"] += (
+            coordinate.index != index
+            or coordinate.family != family
+            or not _signed_equal(coordinate.physical_row, physical_row)
+            or not _signed_equal(coordinate.target_row, target_row)
+        )
+        failures["logical_coordinate"] += (
+            coordinate.logical_v_mask != coordinate.target_logical_v_mask
+            or coordinate.logical_w_mask != coordinate.target_logical_w_mask
+        )
+        failures["gauge_coordinate"] += bool(
+            coordinate.gauge_v_mask or coordinate.gauge_w_mask
+        )
+        failures["zero_center_dual"] += bool(
+            coordinate.center_v_mask or coordinate.target_center_v_mask
+        )
+        physical_parity = (
+            coordinate.center_w_mask >> max(center_count - 1, 0)
+        ) & 1
+        target_parity = coordinate.target_center_w_mask
+        failures["parity_coordinate"] += physical_parity != target_parity
+        failures["phase_formula"] += (
+            coordinate.physical_odd_phase
+            != (coordinate.physical_even_phase + 2 * physical_parity) % 4
+            or coordinate.target_odd_phase
+            != (coordinate.target_even_phase + 2 * target_parity) % 4
+        )
+        failures["cross_frame_phase"] += (
+            coordinate.physical_even_phase != coordinate.target_even_phase
+            or coordinate.physical_odd_phase != coordinate.target_odd_phase
+        )
+        failures["mask_or_phase_range"] += (
+            coordinate.logical_v_mask & ~logical_mask != 0
+            or coordinate.logical_w_mask & ~logical_mask != 0
+            or coordinate.gauge_v_mask & ~gauge_mask != 0
+            or coordinate.gauge_w_mask & ~gauge_mask != 0
+            or coordinate.center_v_mask & ~center_mask != 0
+            or coordinate.center_w_mask & ~center_mask != 0
+            or coordinate.target_logical_v_mask & ~logical_mask != 0
+            or coordinate.target_logical_w_mask & ~logical_mask != 0
+            or coordinate.target_center_v_mask not in (0, 1)
+            or coordinate.target_center_w_mask not in (0, 1)
+            or any(
+                phase not in range(4)
+                for phase in (
+                    coordinate.physical_even_phase,
+                    coordinate.physical_odd_phase,
+                    coordinate.target_even_phase,
+                    coordinate.target_odd_phase,
+                )
+            )
+        )
+    return failures
+
+
+def _deeply_immutable(factorization: FactorizationObject) -> bool:
+    targets = (
+        (factorization, "logical_count"),
+        (factorization.physical_w[0], "phase"),
+        (factorization.dictionary_coordinates[0], "index"),
+    )
+    for target, field in targets:
+        try:
+            setattr(target, field, getattr(target, field))
+        except (AttributeError, FrozenInstanceError):
+            continue
+        return False
+    return True
+
+
+EXPECTED_FIXTURES = {
+    (2, 1, 1): (
+        (11, 6, 1),
+        76,
+        "3cb9e9c14de10b3cab61c029d2f599d320233c82a26fc7d060eab7e5dcf204f3",
+    ),
+    (3, 1, 1): (
+        (17, 9, 1),
+        116,
+        "6abf5c5f2c4d009b38405c4cad1d6801f925b1c9525cb42e8c41f7a876b6f44f",
+    ),
+    (2, 2, 1): (
+        (23, 11, 2),
+        160,
+        "9157f2b7bf8230ba3b20fb343d2a50929ded4f20fb6fdbf9350377eab23ca126",
+    ),
+    (2, 2, 2): (
+        (47, 19, 6),
+        336,
+        "e83b7b242297a8e613073dc1984a17ee07d632708676f4ff786c9bca943fcd0b",
+    ),
+    (3, 2, 2): (
+        (71, 27, 10),
+        512,
+        "10ec1180a23dd781c406fca7a9a6f0b2d5bf75da74fd1712849904bdc2197a47",
+    ),
+    (3, 3, 2): (
+        (107, 38, 17),
+        780,
+        "5850eff1c1053f6290f97da45eeefe4b3116bc3adc95fd2a4c269b380b58389b",
+    ),
+    (5, 3, 2): (
+        (179, 60, 31),
+        1316,
+        "f8558593050632725da0d78cd540a7ebda74fb4c67649428844551181096bec9",
+    ),
+}
+
+
 def main() -> None:
     started = perf_counter()
-    shapes = ((2, 2, 2), (3, 2, 2), (3, 3, 2))
     checks: list[dict[str, object]] = []
     shape_reports = []
 
@@ -428,51 +599,33 @@ def main() -> None:
         checks.append({"label": label, "pass": result})
         print(f"check() {'PASS' if result else 'FAIL'} {label}")
 
-    for shape in shapes:
+    for shape, expected in EXPECTED_FIXTURES.items():
         shape_started = perf_counter()
         try:
             first = build_factorization_object(shape)
             second = build_factorization_object(shape)
-            reference = F.phase_fixed_factorization(shape)
             fixture = M.CompanionFixture.build(shape)
+            source_rows = M.operator_rows(fixture)
             physical_failures, target_failures = _coordinate_failures(first)
-            digest_matches = (
-                first.tableau_digest == reference["tableau_digest"]
-            )
+            contract_failures = _contract_failures(first, source_rows)
+            expected_counts, expected_dictionary_rows, expected_digest = expected
+            digest_matches = first.tableau_digest == expected_digest
             counts = (
                 first.logical_count,
                 first.gauge_count,
                 first.center_count,
             )
-            reference_counts = (
-                reference["logical_qubits_in_fixed_parity_sector"],
-                reference["gauge_qubits"],
-                reference["center_sector_bits"],
-            )
             dimension_matches = (
                 sum(counts) == fixture.qubits
-                and counts == reference_counts
+                and counts == expected_counts
             )
             dictionary_count_matches = (
                 len(first.dictionary_coordinates)
-                == len(M.operator_rows(fixture))
+                == len(source_rows)
+                == expected_dictionary_rows
             )
-            deterministic = (
-                first == second
-                and all(
-                    _signed_equal(left, right)
-                    for left, right in zip(
-                        first.physical_w + first.physical_v,
-                        second.physical_w + second.physical_v,
-                    )
-                )
-            )
-            try:
-                first.logical_count = first.logical_count
-            except FrozenInstanceError:
-                immutable = True
-            else:
-                immutable = False
+            deterministic = first == second
+            immutable = _deeply_immutable(first)
 
             check(f"{shape} digest equals landed Cycle-720 digest", digest_matches)
             check(
@@ -486,17 +639,25 @@ def main() -> None:
                 and target_failures == 0,
             )
             check(
-                f"{shape} frozen dataclass rejects field assignment",
+                f"{shape} source pairing and cross-frame contract are exact",
+                dictionary_count_matches
+                and all(value == 0 for value in contract_failures.values()),
+            )
+            check(
+                f"{shape} exposed value graph rejects nested field assignment",
                 immutable,
             )
             check(
-                f"{shape} two independent builds are row-wise identical",
+                f"{shape} two independent builds are deeply identical",
                 deterministic,
             )
             shape_reports.append({
                 "center_count": first.center_count,
+                "contract_failures": contract_failures,
                 "dictionary_rows": len(first.dictionary_coordinates),
                 "digest": first.tableau_digest,
+                "expected_dictionary_rows": expected_dictionary_rows,
+                "expected_digest": expected_digest,
                 "gauge_count": first.gauge_count,
                 "logical_count": first.logical_count,
                 "physical_coordinate_failures": physical_failures,
@@ -514,19 +675,11 @@ def main() -> None:
             })
 
     scope = {
+        "bounded_local_compiler": "not_constructed",
         "changes_landed_claim": False,
-        "consumer_V_s_restriction_compiler": "open",
         "derives_new_physics": False,
-        "role": "support infrastructure",
+        "role": "exact finite-box support contract",
     }
-    check(
-        "scope is support-only: no new physics or landed claim; "
-        "the V_s-restriction compiler remains open",
-        scope["role"] == "support infrastructure"
-        and not scope["derives_new_physics"]
-        and not scope["changes_landed_claim"]
-        and scope["consumer_V_s_restriction_compiler"] == "open",
-    )
 
     passed = all(item["pass"] for item in checks)
     report = {

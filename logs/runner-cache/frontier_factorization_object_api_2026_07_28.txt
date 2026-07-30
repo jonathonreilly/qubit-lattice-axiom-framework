@@ -1,32 +1,130 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_factorization_object_api_2026_07_28.py
-runner_sha256: 93ae31d08bf019d194f95f7fd873a38a5b819db42e313db743ad2f8509d2130f
-input_fingerprint_sha256: 89ea19601bfff5f2cd8cff117f7a5b5d611aad738b128b634e914520375953a7
+runner_sha256: a6fed8f34adbf36f82501fa827c756ce488d8b67e375e9ae28aa519cd727f0e7
+input_fingerprint_sha256: 5297f8164bb6df82ff9d007da3bcdd95c6fef51405979901ff80dcdd6a8add97
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 8.51
+elapsed_sec: 23.39
 status: ok
 ----- stdout -----
+check() PASS (2, 1, 1) digest equals landed Cycle-720 digest
+check() PASS (2, 1, 1) dimensions and counts equal the landed report
+check() PASS (2, 1, 1) dictionary coordinates replay every signed row
+check() PASS (2, 1, 1) source pairing and cross-frame contract are exact
+check() PASS (2, 1, 1) exposed value graph rejects nested field assignment
+check() PASS (2, 1, 1) two independent builds are deeply identical
+check() PASS (3, 1, 1) digest equals landed Cycle-720 digest
+check() PASS (3, 1, 1) dimensions and counts equal the landed report
+check() PASS (3, 1, 1) dictionary coordinates replay every signed row
+check() PASS (3, 1, 1) source pairing and cross-frame contract are exact
+check() PASS (3, 1, 1) exposed value graph rejects nested field assignment
+check() PASS (3, 1, 1) two independent builds are deeply identical
+check() PASS (2, 2, 1) digest equals landed Cycle-720 digest
+check() PASS (2, 2, 1) dimensions and counts equal the landed report
+check() PASS (2, 2, 1) dictionary coordinates replay every signed row
+check() PASS (2, 2, 1) source pairing and cross-frame contract are exact
+check() PASS (2, 2, 1) exposed value graph rejects nested field assignment
+check() PASS (2, 2, 1) two independent builds are deeply identical
 check() PASS (2, 2, 2) digest equals landed Cycle-720 digest
 check() PASS (2, 2, 2) dimensions and counts equal the landed report
 check() PASS (2, 2, 2) dictionary coordinates replay every signed row
-check() PASS (2, 2, 2) frozen dataclass rejects field assignment
-check() PASS (2, 2, 2) two independent builds are row-wise identical
+check() PASS (2, 2, 2) source pairing and cross-frame contract are exact
+check() PASS (2, 2, 2) exposed value graph rejects nested field assignment
+check() PASS (2, 2, 2) two independent builds are deeply identical
 check() PASS (3, 2, 2) digest equals landed Cycle-720 digest
 check() PASS (3, 2, 2) dimensions and counts equal the landed report
 check() PASS (3, 2, 2) dictionary coordinates replay every signed row
-check() PASS (3, 2, 2) frozen dataclass rejects field assignment
-check() PASS (3, 2, 2) two independent builds are row-wise identical
+check() PASS (3, 2, 2) source pairing and cross-frame contract are exact
+check() PASS (3, 2, 2) exposed value graph rejects nested field assignment
+check() PASS (3, 2, 2) two independent builds are deeply identical
 check() PASS (3, 3, 2) digest equals landed Cycle-720 digest
 check() PASS (3, 3, 2) dimensions and counts equal the landed report
 check() PASS (3, 3, 2) dictionary coordinates replay every signed row
-check() PASS (3, 3, 2) frozen dataclass rejects field assignment
-check() PASS (3, 3, 2) two independent builds are row-wise identical
-check() PASS scope is support-only: no new physics or landed claim; the V_s-restriction compiler remains open
+check() PASS (3, 3, 2) source pairing and cross-frame contract are exact
+check() PASS (3, 3, 2) exposed value graph rejects nested field assignment
+check() PASS (3, 3, 2) two independent builds are deeply identical
+check() PASS (5, 3, 2) digest equals landed Cycle-720 digest
+check() PASS (5, 3, 2) dimensions and counts equal the landed report
+check() PASS (5, 3, 2) dictionary coordinates replay every signed row
+check() PASS (5, 3, 2) source pairing and cross-frame contract are exact
+check() PASS (5, 3, 2) exposed value graph rejects nested field assignment
+check() PASS (5, 3, 2) two independent builds are deeply identical
 {
   "audit": "unset",
   "authority": "none",
   "checks": [
+    {
+      "label": "(2, 1, 1) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(2, 1, 1) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(2, 1, 1) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(2, 1, 1) source pairing and cross-frame contract are exact",
+      "pass": true
+    },
+    {
+      "label": "(2, 1, 1) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(2, 1, 1) two independent builds are deeply identical",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) source pairing and cross-frame contract are exact",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(3, 1, 1) two independent builds are deeply identical",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) source pairing and cross-frame contract are exact",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 1) two independent builds are deeply identical",
+      "pass": true
+    },
     {
       "label": "(2, 2, 2) digest equals landed Cycle-720 digest",
       "pass": true
@@ -40,11 +138,15 @@ check() PASS scope is support-only: no new physics or landed claim; the V_s-rest
       "pass": true
     },
     {
-      "label": "(2, 2, 2) frozen dataclass rejects field assignment",
+      "label": "(2, 2, 2) source pairing and cross-frame contract are exact",
       "pass": true
     },
     {
-      "label": "(2, 2, 2) two independent builds are row-wise identical",
+      "label": "(2, 2, 2) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(2, 2, 2) two independent builds are deeply identical",
       "pass": true
     },
     {
@@ -60,11 +162,15 @@ check() PASS scope is support-only: no new physics or landed claim; the V_s-rest
       "pass": true
     },
     {
-      "label": "(3, 2, 2) frozen dataclass rejects field assignment",
+      "label": "(3, 2, 2) source pairing and cross-frame contract are exact",
       "pass": true
     },
     {
-      "label": "(3, 2, 2) two independent builds are row-wise identical",
+      "label": "(3, 2, 2) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(3, 2, 2) two independent builds are deeply identical",
       "pass": true
     },
     {
@@ -80,37 +186,161 @@ check() PASS scope is support-only: no new physics or landed claim; the V_s-rest
       "pass": true
     },
     {
-      "label": "(3, 3, 2) frozen dataclass rejects field assignment",
+      "label": "(3, 3, 2) source pairing and cross-frame contract are exact",
       "pass": true
     },
     {
-      "label": "(3, 3, 2) two independent builds are row-wise identical",
+      "label": "(3, 3, 2) exposed value graph rejects nested field assignment",
       "pass": true
     },
     {
-      "label": "scope is support-only: no new physics or landed claim; the V_s-restriction compiler remains open",
+      "label": "(3, 3, 2) two independent builds are deeply identical",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) digest equals landed Cycle-720 digest",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) dimensions and counts equal the landed report",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) dictionary coordinates replay every signed row",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) source pairing and cross-frame contract are exact",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) exposed value graph rejects nested field assignment",
+      "pass": true
+    },
+    {
+      "label": "(5, 3, 2) two independent builds are deeply identical",
       "pass": true
     }
   ],
   "claim_ceiling": "exact_support",
   "pass": true,
-  "runtime_sec": 7.924828,
+  "runtime_sec": 22.940237,
   "scope": {
+    "bounded_local_compiler": "not_constructed",
     "changes_landed_claim": false,
-    "consumer_V_s_restriction_compiler": "open",
     "derives_new_physics": false,
-    "role": "support infrastructure"
+    "role": "exact finite-box support contract"
   },
   "shapes": [
     {
+      "center_count": 1,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
+      "dictionary_rows": 76,
+      "digest": "3cb9e9c14de10b3cab61c029d2f599d320233c82a26fc7d060eab7e5dcf204f3",
+      "expected_dictionary_rows": 76,
+      "expected_digest": "3cb9e9c14de10b3cab61c029d2f599d320233c82a26fc7d060eab7e5dcf204f3",
+      "gauge_count": 6,
+      "logical_count": 11,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 18,
+      "runtime_sec": 0.037002,
+      "shape": [
+        2,
+        1,
+        1
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
+      "center_count": 1,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
+      "dictionary_rows": 116,
+      "digest": "6abf5c5f2c4d009b38405c4cad1d6801f925b1c9525cb42e8c41f7a876b6f44f",
+      "expected_dictionary_rows": 116,
+      "expected_digest": "6abf5c5f2c4d009b38405c4cad1d6801f925b1c9525cb42e8c41f7a876b6f44f",
+      "gauge_count": 9,
+      "logical_count": 17,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 27,
+      "runtime_sec": 0.079347,
+      "shape": [
+        3,
+        1,
+        1
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
+      "center_count": 2,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
+      "dictionary_rows": 160,
+      "digest": "9157f2b7bf8230ba3b20fb343d2a50929ded4f20fb6fdbf9350377eab23ca126",
+      "expected_dictionary_rows": 160,
+      "expected_digest": "9157f2b7bf8230ba3b20fb343d2a50929ded4f20fb6fdbf9350377eab23ca126",
+      "gauge_count": 11,
+      "logical_count": 23,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 36,
+      "runtime_sec": 0.159583,
+      "shape": [
+        2,
+        2,
+        1
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
       "center_count": 6,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
       "dictionary_rows": 336,
       "digest": "e83b7b242297a8e613073dc1984a17ee07d632708676f4ff786c9bca943fcd0b",
+      "expected_dictionary_rows": 336,
+      "expected_digest": "e83b7b242297a8e613073dc1984a17ee07d632708676f4ff786c9bca943fcd0b",
       "gauge_count": 19,
       "logical_count": 47,
       "physical_coordinate_failures": 0,
       "physical_qubits": 72,
-      "runtime_sec": 0.837014,
+      "runtime_sec": 0.772959,
       "shape": [
         2,
         2,
@@ -120,13 +350,26 @@ check() PASS scope is support-only: no new physics or landed claim; the V_s-rest
     },
     {
       "center_count": 10,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
       "dictionary_rows": 512,
       "digest": "10ec1180a23dd781c406fca7a9a6f0b2d5bf75da74fd1712849904bdc2197a47",
+      "expected_dictionary_rows": 512,
+      "expected_digest": "10ec1180a23dd781c406fca7a9a6f0b2d5bf75da74fd1712849904bdc2197a47",
       "gauge_count": 27,
       "logical_count": 71,
       "physical_coordinate_failures": 0,
       "physical_qubits": 108,
-      "runtime_sec": 1.95813,
+      "runtime_sec": 1.779496,
       "shape": [
         3,
         2,
@@ -136,15 +379,57 @@ check() PASS scope is support-only: no new physics or landed claim; the V_s-rest
     },
     {
       "center_count": 17,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
       "dictionary_rows": 780,
       "digest": "5850eff1c1053f6290f97da45eeefe4b3116bc3adc95fd2a4c269b380b58389b",
+      "expected_dictionary_rows": 780,
+      "expected_digest": "5850eff1c1053f6290f97da45eeefe4b3116bc3adc95fd2a4c269b380b58389b",
       "gauge_count": 38,
       "logical_count": 107,
       "physical_coordinate_failures": 0,
       "physical_qubits": 162,
-      "runtime_sec": 5.129654,
+      "runtime_sec": 4.736132,
       "shape": [
         3,
+        3,
+        2
+      ],
+      "target_coordinate_failures": 0
+    },
+    {
+      "center_count": 31,
+      "contract_failures": {
+        "cross_frame_phase": 0,
+        "dictionary_count": 0,
+        "gauge_coordinate": 0,
+        "logical_coordinate": 0,
+        "mask_or_phase_range": 0,
+        "parity_coordinate": 0,
+        "phase_formula": 0,
+        "source_association": 0,
+        "zero_center_dual": 0
+      },
+      "dictionary_rows": 1316,
+      "digest": "f8558593050632725da0d78cd540a7ebda74fb4c67649428844551181096bec9",
+      "expected_dictionary_rows": 1316,
+      "expected_digest": "f8558593050632725da0d78cd540a7ebda74fb4c67649428844551181096bec9",
+      "gauge_count": 60,
+      "logical_count": 179,
+      "physical_coordinate_failures": 0,
+      "physical_qubits": 270,
+      "runtime_sec": 15.375673,
+      "shape": [
+        5,
         3,
         2
       ],

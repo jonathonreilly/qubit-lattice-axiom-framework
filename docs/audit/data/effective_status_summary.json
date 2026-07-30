@@ -84,7 +84,7 @@
     "audited_conditional": 296,
     "audited_failed": 76,
     "audited_numerical_match": 11,
-    "audited_renaming": 33,
+    "audited_renaming": 34,
     "decoration_under_abj_p_rec_spintaste_clifford_core_bridge_note_2026-06-18": 1,
     "decoration_under_alpha_s_tadpole_improvement_vertex_power_narrow_theorem_note_2026-05-10": 1,
     "decoration_under_beta_gbare_rescaling_abstract_identity_narrow_theorem_note_2026-05-10": 1,
@@ -113,7 +113,7 @@
     "retained": 126,
     "retained_bounded": 356,
     "retained_pending_chain": 12,
-    "unaudited": 2606
+    "unaudited": 2605
   },
   "retained_pending_chain_count": 12,
   "retained_pending_chain_examples": [

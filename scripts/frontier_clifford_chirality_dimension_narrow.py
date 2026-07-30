@@ -41,7 +41,8 @@ Verification proceeds in six parts:
                 Cl(0) = C, Cl(1) = C[sigma_1],
                 Cl(2k) = Cl(2k-2) tensor M_2(C),
                 Cl(2k+1) = Cl(2k) tensor C[sigma_3-extension].
-            Check {gamma_mu, gamma_nu} = 2 delta_{mu nu} I exactly.
+            Check {gamma_mu, gamma_nu} = 2 delta_{mu nu} I in a
+            deterministic finite matrix smoke test.
 
   Part 2 -- Compute omega = gamma_1 ... gamma_n and verify
                 omega gamma_mu = (-1)^(n-1) gamma_mu omega
@@ -52,8 +53,10 @@ Verification proceeds in six parts:
             is deliberately narrower than a claim about every matrix in
             the ambient endomorphism algebra.
 
-  Part 4 -- For n EVEN, exhibit gamma_5 := i^{n(n-1)/2} omega and verify
-            gamma_5^2 = +I and {gamma_5, gamma_mu} = 0 for every mu.
+  Part 4 -- For n EVEN and every finite signature choice, exhibit
+            gamma_5 := i^{n(n-1)/2+q} omega and verify gamma_5^2 = +I
+            and {gamma_5, gamma_mu} = 0 for every mu, where q counts
+            negative-square generators.
 
   Part 5 -- Conditionally take the total algebra as Cl(d_s, d_t), then
             specialise with the accepted Lattice premise d_s = 3. The
@@ -65,13 +68,18 @@ Verification proceeds in six parts:
 
 from __future__ import annotations
 
+import hashlib
+import json
+import re
 import sys
 from itertools import combinations, product
+from pathlib import Path
 from typing import TYPE_CHECKING
 
 import numpy as np
 
 AUDIT_TIMEOUT_SEC = 120
+NOTE_PATH = "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md"
 AUDIT_INPUT_PATHS = (
     "docs/CLIFFORD_CHIRALITY_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md",
     "scripts/clifford_chirality_dimension_n7_independent_check.py",
@@ -364,11 +372,15 @@ def find_external_pauli_anticommuter(gens):
 for n in (1, 3, 5):
     gens = build_cl_generators(n)
     sol_dim, basis_dim = solve_anticommute_in_clifford_algebra(gens)
+    represented_rank = flattened_span_rank(clifford_basis(gens)[0])
     # For n odd, no element of Cl(n) anticommutes with every generator.
     check(
         f"n={n} (odd): {{M in Cl(n) | {{M, g_mu}}=0 forall mu}} = {{0}} inside Cl(n)",
-        sol_dim == 0,
-        detail=f"sol_dim = {sol_dim} of 2^{n}={basis_dim} Clifford-basis dim",
+        represented_rank == basis_dim == 2**n and sol_dim == 0,
+        detail=(
+            f"numerical span rank = {represented_rank} = 2^{n}; "
+            f"sol_dim = {sol_dim}"
+        ),
     )
 
 # Sanity: in even dimension, gamma_5 = i^{n(n-1)/2} omega itself spans a
@@ -376,35 +388,55 @@ for n in (1, 3, 5):
 for n in (2, 4, 6):
     gens = build_cl_generators(n)
     sol_dim, basis_dim = solve_anticommute_in_clifford_algebra(gens)
+    represented_rank = flattened_span_rank(clifford_basis(gens)[0])
     check(
         f"n={n} (even): {{M in Cl(n) | {{M, g_mu}}=0 forall mu}} is exactly 1-dim (= span of gamma_5)",
-        sol_dim == 1,
-        detail=f"sol_dim = {sol_dim} of 2^{n}={basis_dim} Clifford-basis dim",
+        represented_rank == basis_dim == 2**n and sol_dim == 1,
+        detail=(
+            f"numerical span rank = {represented_rank} = 2^{n}; "
+            f"sol_dim = {sol_dim}"
+        ),
     )
 
 
 # ============================================================================
-section("Part 4: n EVEN => gamma_5 := i^{n(n-1)/2} omega satisfies gamma_5^2=+I and {gamma_5,g_mu}=0")
+section("Part 4: n EVEN => gamma_5 := i^{n(n-1)/2+q} omega for every signature")
 # ============================================================================
 for n in (2, 4, 6):
-    gens = build_cl_generators(n)
-    dim = gens[0].shape[0]
+    positive_gens = build_cl_generators(n)
+    dim = positive_gens[0].shape[0]
     eye = np.eye(dim, dtype=complex)
-    omega = gens[0].copy()
-    for mu in range(1, n):
-        omega = omega @ gens[mu]
-    phase = (1j) ** (n * (n - 1) // 2)
-    gamma5 = phase * omega
-    sq = gamma5 @ gamma5
-    ok_sq = np.allclose(sq, eye)
-    ok_ac = all(np.allclose(anticommutator(gamma5, gens[mu]), 0) for mu in range(n))
+    exponent_without_signature = n * (n - 1) // 2
+    ok_sq = True
+    ok_ac = True
+    signature_count = 0
+    for signature in product((1, -1), repeat=n):
+        gens = [
+            generator if eta == 1 else 1j * generator
+            for generator, eta in zip(positive_gens, signature)
+        ]
+        q = sum(eta == -1 for eta in signature)
+        omega = gens[0].copy()
+        for generator in gens[1:]:
+            omega = omega @ generator
+        expected_omega_square = (-1) ** (exponent_without_signature + q) * eye
+        gamma5 = (1j) ** (exponent_without_signature + q) * omega
+        ok_sq &= (
+            np.allclose(omega @ omega, expected_omega_square)
+            and np.allclose(gamma5 @ gamma5, eye)
+        )
+        ok_ac &= all(
+            np.allclose(anticommutator(gamma5, generator), 0)
+            for generator in gens
+        )
+        signature_count += 1
     check(
-        f"n={n}: gamma_5^2 = +I",
+        f"n={n}: omega^2=(-1)^(n(n-1)/2+q)I and gamma_5^2=+I",
         ok_sq,
-        detail=f"phase i^{n*(n-1)//2}",
+        detail=f"all {signature_count} signatures; phase i^(n(n-1)/2+q)",
     )
     check(
-        f"n={n}: {{gamma_5, g_mu}} = 0 for every mu",
+        f"n={n}: {{gamma_5, g_mu}} = 0 for every mu and signature",
         ok_ac,
     )
 
@@ -425,24 +457,20 @@ check(
     allowed_d_t == [1, 3, 5, 7] and forbidden_d_t == [2, 4, 6],
     detail=f"allowed d_t = {allowed_d_t}; forbidden d_t = {forbidden_d_t}",
 )
-# Out of scope: this narrow theorem does NOT force d_t = 1 from chirality
-# alone. The further restriction d_t = 1 is supplied by separate sister
-# theorems (e.g., AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM
-# or Craig--Weinstein / Tegmark continuum-PDE results) and is explicitly
-# out of scope here.
+# Selecting one value from the allowed odd set is outside this runner. The
+# axis-conditional sister note and the Craig--Weinstein/Tegmark literature are
+# orientation only; none is consumed as a load-bearing d_t=1 derivation here.
 print()
 print("  Out-of-scope reminder: this narrow theorem only forces d_t to")
-print("  be ODD. The further restriction d_t = 1 is supplied by separate")
-print("  sister theorems (single-clock codimension-1 evolution theorem on")
-print("  the lattice or Craig--Weinstein / Tegmark on the continuum) and")
-print("  is NOT part of this narrow theorem's load-bearing scope.")
+print("  be ODD. It supplies no selection of d_t = 1. The axis-conditional")
+print("  sister note and the Craig--Weinstein/Tegmark literature are")
+print("  non-load-bearing orientation only.")
 
 
 # ============================================================================
-section("Part 6: current-cycle N1/N5/N7 no-go-discipline evidence")
+section("Part 6: current-cycle N1/N5/N7 candidate evidence")
 # ============================================================================
-# N1 route 1: solve the full arbitrary-coefficient kernel and certify that the
-# represented Clifford monomials are independent, so cancellation is included.
+# N1 route 1: full arbitrary-coefficient kernel, including cancellation.
 coefficient_cancellation_ok = True
 for n in (1, 3, 5):
     gens = build_cl_generators(n)
@@ -452,8 +480,8 @@ for n in (1, 3, 5):
         flattened_span_rank(basis) == basis_dim == 2**n and sol_dim == 0
     )
 
-# N1 route 2: zero is the only odd-dimensional common-kernel element and is
-# explicitly rejected by the square-normalization condition.
+# Downstream normalization check. It consumes route 1 and is not counted as
+# an independent N1 family.
 zero_normalization_ok = True
 for n in (1, 3, 5):
     gens = build_cl_generators(n)
@@ -466,9 +494,7 @@ for n in (1, 3, 5):
         and sol_dim == 0
     )
 
-# N1 route 3: the odd volume is central and invertible. An element that
-# anticommutes through all odd n factors would also anticommute with omega;
-# centrality then forces it to vanish after multiplication by omega^{-1}.
+# N1 route 2: central invertible odd volume.
 central_volume_ok = True
 for n in (1, 3, 5):
     gens = build_cl_generators(n)
@@ -481,9 +507,8 @@ for n in (1, 3, 5):
         and (-1) ** n == -1
     )
 
-# N1 route 4: parity supplies a generic coefficient witness. For odd n, an
-# odd-cardinality subset is constrained by any mu in S; an even-cardinality
-# subset is constrained by a mu outside S, which must exist.
+# Finite parity enumeration of route 1. It is a subordinate smoke test rather
+# than an independent route.
 parity_witness_ok = True
 parity_witness_count = 0
 for n in range(1, 16, 2):
@@ -497,20 +522,80 @@ for n in range(1, 16, 2):
         parity_witness_ok &= (degree - delta) % 2 == 0
         parity_witness_count += 1
 
-# N1 route 5 and the N7 hostile route: a faithful reducible odd carrier does
-# contain an ambient anticommuter, but a rank test places it outside Cl(n).
+# N1 route 3 and N7: hostile alternate ambient carrier.
 external_carrier_ok = True
 external_carrier_cases = []
+external_by_n = {}
 for n in (1, 3, 5):
     gens = build_cl_generators(n)
     external, internal_rank, augmented_rank = find_external_pauli_anticommuter(gens)
     case_ok = external is not None and augmented_rank == internal_rank + 1
     external_carrier_ok &= case_ok
+    external_by_n[n] = external
     external_carrier_cases.append((n, internal_rank, augmented_rank))
 
-# N1 route 6: change every generator-square convention independently by
-# rephasing gamma_mu -> i gamma_mu. The Clifford-basis rank and odd common
-# kernel are invariant across all real signatures represented this way.
+# N1 route 4: extension by an anticommuting square-one generator. The
+# universal property would give a nonzero unital map Cl_{n+1}(C) -> Cl_n(C).
+# The even source algebra is simple, so the map would be injective, contrary
+# to 2^(n+1) > 2^n. The finite tower checks the associated dimension doubling.
+extension_dimension_ok = True
+extension_dimension_cases = []
+for n in (1, 3, 5):
+    gens = build_cl_generators(n)
+    basis, _, _ = clifford_basis(gens)
+    external = external_by_n[n]
+    if external is None:
+        extension_dimension_ok = False
+        extension_dimension_cases.append((n, 0, 0))
+        continue
+    internal_rank = flattened_span_rank(basis)
+    extended_rank = flattened_span_rank(
+        [*basis, *[external @ basis_element for basis_element in basis]]
+    )
+    extension_dimension_ok &= (
+        internal_rank == 2**n
+        and extended_rank == 2 ** (n + 1)
+        and extended_rank > internal_rank
+    )
+    extension_dimension_cases.append((n, internal_rank, extended_rank))
+
+# N1 route 5: global two-summand structure. The odd grade automorphism
+# exchanges the central volume idempotents, whereas inner automorphisms fix
+# the center pointwise. The faithful carriers test the nonzero idempotents and
+# their exchange by the external grade implementer.
+central_idempotent_ok = True
+central_idempotent_cases = []
+for n in (1, 3, 5):
+    gens = build_cl_generators(n)
+    external = external_by_n[n]
+    dim = gens[0].shape[0]
+    identity = np.eye(dim, dtype=complex)
+    omega = gens[0].copy()
+    for generator in gens[1:]:
+        omega = omega @ generator
+    normalized_volume = (1j) ** (n * (n - 1) // 2) * omega
+    idempotent_plus = (identity + normalized_volume) / 2
+    idempotent_minus = (identity - normalized_volume) / 2
+    basis, _, _ = clifford_basis(gens)
+    plus_rank = int(np.linalg.matrix_rank(idempotent_plus, tol=1e-10))
+    minus_rank = int(np.linalg.matrix_rank(idempotent_minus, tol=1e-10))
+    case_ok = (
+        external is not None
+        and np.allclose(external @ external, identity)
+        and np.allclose(normalized_volume @ normalized_volume, identity)
+        and all(
+            np.allclose(commutator(normalized_volume, basis_element), 0)
+            for basis_element in basis
+        )
+        and plus_rank > 0
+        and minus_rank > 0
+        and np.allclose(external @ idempotent_plus @ external, idempotent_minus)
+        and np.allclose(external @ idempotent_minus @ external, idempotent_plus)
+    )
+    central_idempotent_ok &= case_ok
+    central_idempotent_cases.append((n, plus_rank, minus_rank))
+
+# Signature rephasing is a convention robustness check subordinate to route 1.
 signature_rephase_ok = True
 signature_rephase_cases = 0
 for n in (1, 3, 5):
@@ -543,26 +628,158 @@ for n in (1, 3, 5):
 
 route_results = {
     "coefficient-cancellation": coefficient_cancellation_ok,
-    "zero-square-normalization": zero_normalization_ok,
     "central-volume": central_volume_ok,
-    "generic-parity-witness": parity_witness_ok,
     "external-matrix-carrier": external_carrier_ok,
-    "signature-rephasing": signature_rephase_ok,
+    "extension-dimension": extension_dimension_ok,
+    "central-idempotent-exchange": central_idempotent_ok,
 }
 for route_id, ok in route_results.items():
     check(f"N1 live route {route_id}", ok)
-
-# N5 controls separate the actual elementwise/common-kernel statement from
-# physical site, mode, block, or lattice lifts that the source does not claim.
-per_site_nullity = solve_ambient_anticommutant([sx, sy, sz])
-per_mode_has_anticommuter = np.allclose(anticommutator(sy, sx), 0)
-n5_controls_ok = (
-    coefficient_cancellation_ok
-    and per_site_nullity == 0
-    and per_mode_has_anticommuter
-    and external_carrier_ok
+check(
+    "N1 subordinate normalization/parity/signature checks",
+    zero_normalization_ok and parity_witness_ok and signature_rephase_ok,
+    detail=(
+        f"{parity_witness_count} subset cases; "
+        f"{signature_rephase_cases} odd-signature cases"
+    ),
 )
-check("N5 five-resolution controls are internally consistent", n5_controls_ok)
+
+
+N5_SCAN_PHRASES = (
+    "absent", "cannot", "does not", "fails", "impossible", "no nonzero",
+    "no-go", "obstruction", "requires a new axiom", "rule out",
+    "rules out", "structurally undecidable", "unavailable", "is not", "are not",
+)
+
+
+def normalized_text(value: str) -> str:
+    return re.sub(r"\s+", " ", value.strip().casefold())
+
+
+def current_n5_phrase_groups() -> list[dict[str, object]]:
+    """Generate current source phrase-group IDs and exact locators."""
+    lines = Path(NOTE_PATH).read_text(encoding="utf-8").splitlines()
+    grouped: dict[tuple[str, str], list[tuple[int, str]]] = {}
+    for phrase in N5_SCAN_PHRASES:
+        pattern = r"\b" + re.escape(phrase).replace(r"\ ", r"\s+") + r"\b"
+        occurrence_index = 0
+        for line_index, line in enumerate(lines):
+            for _match in re.finditer(pattern, line, re.IGNORECASE):
+                occurrence_index += 1
+                locator = line.strip()
+                if len(normalized_text(locator)) < 12:
+                    start = max(0, line_index - 1)
+                    stop = min(len(lines), line_index + 2)
+                    locator = " ".join(
+                        part.strip() for part in lines[start:stop] if part.strip()
+                    )
+                group_id = hashlib.sha256(
+                    normalized_text(locator).encode("utf-8")
+                ).hexdigest()[:16]
+                grouped.setdefault((normalized_text(phrase), group_id), []).append(
+                    (occurrence_index, locator)
+                )
+    result = []
+    for (phrase, group_id), items in sorted(grouped.items()):
+        ordered = sorted(items)
+        payload = json.dumps(ordered, ensure_ascii=False, separators=(",", ":"))
+        result.append(
+            {
+                "phrase": phrase,
+                "group_id": group_id,
+                "occurrence_count": len(ordered),
+                "locator_sha256": hashlib.sha256(payload.encode("utf-8")).hexdigest(),
+                "locator": ordered[0][1],
+            }
+        )
+    return result
+
+
+# N5 binds the one deliberately retained negative-boundary phrase to five
+# separately evaluated resolutions. Broader readings are actively falsified.
+phrase_groups = current_n5_phrase_groups()
+phrase_manifest_ok = (
+    len(phrase_groups) == 1
+    and phrase_groups[0]["phrase"] == "no nonzero"
+    and phrase_groups[0]["occurrence_count"] == 1
+)
+check(
+    "N5 source phrase manifest has one exact boundary group",
+    phrase_manifest_ok,
+    detail=f"groups={[(g['phrase'], g['group_id']) for g in phrase_groups]}",
+)
+
+per_site_nullity = solve_ambient_anticommutant([sx, sy, sz])
+per_mode_has_anticommuter = (
+    np.allclose(anticommutator(sy, sx), 0)
+    and np.allclose(sy @ sy, I2)
+)
+block_gens = build_cl_generators(3)
+block_external = external_by_n[3]
+per_block_countercontrol = False
+lattice_wide_countercontrol = False
+if block_external is not None:
+    block_identity = np.eye(block_gens[0].shape[0], dtype=complex)
+    per_block_countercontrol = (
+        np.allclose(block_external @ block_external, block_identity)
+        and all(
+            np.allclose(anticommutator(block_external, generator), 0)
+            for generator in block_gens
+        )
+        and flattened_span_rank(
+            [*clifford_basis(block_gens)[0], block_external]
+        ) == 2**3 + 1
+    )
+    lattice_generators = [np.kron(I2, generator) for generator in block_gens]
+    lattice_candidate = np.kron(I2, block_external)
+    lattice_identity = np.eye(lattice_candidate.shape[0], dtype=complex)
+    lattice_internal_basis = [
+        np.kron(I2, basis_element)
+        for basis_element in clifford_basis(block_gens)[0]
+    ]
+    lattice_wide_countercontrol = (
+        np.allclose(lattice_candidate @ lattice_candidate, lattice_identity)
+        and all(
+            np.allclose(anticommutator(lattice_candidate, generator), 0)
+            for generator in lattice_generators
+        )
+        and flattened_span_rank([*lattice_internal_basis, lattice_candidate])
+        == flattened_span_rank(lattice_internal_basis) + 1
+    )
+
+n5_controls = {
+    "per_element": (
+        coefficient_cancellation_ok,
+        "CLOSED_AT_CLAIMED_SCOPE",
+        "faithful internal coefficient kernels have nullity zero for odd n=1,3,5",
+    ),
+    "per_site": (
+        per_site_nullity == 0,
+        "FINITE_SPECIALIZATION_CLOSED",
+        f"one-site Pauli ambient common anticommutant has nullity {per_site_nullity}",
+    ),
+    "per_mode": (
+        per_mode_has_anticommuter,
+        "COUNTEREXAMPLE_TO_BROADER_READING",
+        "sigma_y is a square-one anticommuter for the single sigma_x mode",
+    ),
+    "per_block": (
+        per_block_countercontrol,
+        "COUNTEREXAMPLE_TO_BROADER_READING",
+        "the doubled faithful odd carrier has an external block anticommuter",
+    ),
+    "lattice_wide": (
+        lattice_wide_countercontrol,
+        "COUNTEREXAMPLE_TO_BROADER_READING",
+        "a two-site lift has an ambient anticommuter outside its internal span",
+    ),
+}
+for resolution_class, (ok, _disposition, description) in n5_controls.items():
+    check(f"N5 live {resolution_class} control", ok, detail=description)
+
+n5_controls_ok = phrase_manifest_ok and all(
+    result[0] for result in n5_controls.values()
+)
 
 if all(route_results.values()) and n5_controls_ok:
     print(
@@ -573,24 +790,11 @@ if all(route_results.values()) and n5_controls_ok:
         "outcome=odd internal nullity is zero for n=1,3,5"
     )
     print(
-        "  N1_ROUTE route_id=zero-square-normalization; route_class=normalization_or_units; "
-        "honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=square normalization of the "
-        "zero common-kernel element; attempt=test zero in every odd anticommutator and then "
-        "test zero squared against identity; outcome=zero anticommutes but fails M^2=I"
-    )
-    print(
         "  N1_ROUTE route_id=central-volume; route_class=symmetry_or_representation; "
         "honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=central invertible odd volume "
         "representation; attempt=verify centrality and invertibility while an all-generator "
         "anticommuter crosses an odd product with negative sign; outcome=commuting and "
         "anticommuting with invertible omega forces M=0"
-    )
-    print(
-        "  N1_ROUTE route_id=generic-parity-witness; route_class=numerical_or_finite_case; "
-        "honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=finite-case escape from the "
-        "arbitrary odd-dimensional parity law; attempt=exhaust every subset through n=15 "
-        "using the generic in-set or out-of-set witness selector; outcome="
-        f"{parity_witness_count} coefficients constrained by the parity-generic branch proof"
     )
     print(
         "  N1_ROUTE route_id=external-matrix-carrier; route_class=alternate_carrier_or_sector; "
@@ -600,68 +804,46 @@ if all(route_results.values()) and n5_controls_ok:
         f"rank; outcome=external witnesses found outside Cl(n), cases={external_carrier_cases}"
     )
     print(
-        "  N1_ROUTE route_id=signature-rephasing; route_class=convention_or_relabeling; "
-        "honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=signature convention "
-        "change by independent generator rephasing; attempt=replace each selected positive "
-        "generator by i times that generator and recompute relations, faithful span rank, "
-        "and the full internal common kernel; outcome="
-        f"all {signature_rephase_cases} signatures through odd n=5 retain zero nullity"
+        "  N1_ROUTE route_id=extension-dimension; route_class=numerical_or_finite_case; "
+        "honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=finite dimension-doubling "
+        "test of universal extension by an anticommuting square-one generator; "
+        "attempt=compare the faithful Cl_n span with the span after adjoining the candidate "
+        "and candidate-times-basis products; outcome="
+        f"ranks double from 2^n to 2^(n+1), cases={extension_dimension_cases}"
+    )
+    print(
+        "  N1_ROUTE route_id=central-idempotent-exchange; "
+        "route_class=topology_or_global_structure; honesty_marker=ATTEMPTED; "
+        "disposition=CLOSED; mechanism=global semisimple-algebra structure through two "
+        "nonzero central volume idempotents; attempt=test that the grade automorphism "
+        "exchanges the central summands while internal conjugation fixes the center; "
+        f"outcome=nonzero exchanged idempotents, cases={central_idempotent_cases}"
+    )
+    print(
+        "  N1_SUBCHECK zero-square-normalization is downstream of the zero kernel; "
+        f"generic-parity-witness covers {parity_witness_count} finite subset cases; "
+        f"signature-rephasing covers {signature_rephase_cases} convention cases; "
+        "none is counted as an independent N1 route"
     )
 
-    resolution_groups = {
-        "volume_scalar_cannot": (
-            "the odd volume and all scalar multiples commute generator-by-generator; this elementwise statement was tested for n=1,3,5",
-            "the n=3 Pauli-site volume is scalar on each irreducible site sector; no physical site lift is inferred",
-            "each generator mode was checked separately and the odd volume commutes, rather than anticommutes, with every one",
-            "the faithful odd carrier splits into volume eigenspace blocks on which the volume remains block-scalar",
-            "no lattice operator is constructed, so the scalar-volume statement is not promoted to a lattice-wide realization claim",
-        ),
-        "does_not_claim_scope": (
-            "the source exclusions are dependency guards and do not weaken the exact arbitrary-element kernel calculation",
-            "no Standard-Model, anomaly, or temporal structure is imported at a physical site in the tested algebra",
-            "no fermion, gauge, or evolution mode is selected by the finite Clifford-element calculation",
-            "no taste, sector, or transfer-matrix block is used to prove the internal algebra theorem",
-            "no lattice-wide dynamics or continuum limit is tested; those resolutions remain explicitly outside the claim",
-        ),
-        "parent_closure_not_proposed": (
-            "the elementwise parity result supplies only the parent's chirality step and does not close its other algebraic inputs",
-            "the one-site Clifford check does not supply anomaly content, a temporal count, or a physical realization bridge",
-            "no individual gauge or fermion mode closes the omitted parent steps in this runner",
-            "no parent-chain block beyond the isolated chirality parity block is executed or certified here",
-            "the lattice-wide parent conclusion d_t=1 is not claimed; only conditional odd parity of d_t is enumerated",
-        ),
-        "parity_impossible": (
-            "every internal coefficient has a nonzero odd-n witness constraint, so mixed even and odd degree requirements cannot survive elementwise",
-            f"the three-Pauli one-site ambient common anticommutant has nullity {per_site_nullity}, matching the n=3 internal boundary",
-            "a single generator mode does have anticommuters, so the impossibility is explicitly simultaneous rather than per-mode",
-            "an external block-exchange anticommuter exists on a doubled carrier but the rank test places it outside the internal block algebra",
-            "no lattice-wide impossibility is asserted because the contradiction concerns one finite Clifford algebra only",
-        ),
-        "sister_no_go_crossref": (
-            "the sister result is a context-only cross-reference and is not used as evidence for the arbitrary-element kernel",
-            "the per-site Cl(3) specialization is recomputed directly here instead of inherited from the sister note",
-            "the sister citation does not exclude independent physical mode constructions beyond the simultaneous Clifford-generator condition",
-            "the sister citation supplies no blockwise or reducible-carrier premise to the present proof",
-            "the sister citation supplies no lattice-wide premise, and this runner makes no such negative inference from it",
-        ),
-        "arbitrary_element_rule_out": (
-            "the full 2^n-coefficient system, not a monomial-only scan, tests every internal algebra element for n=1,3,5",
-            f"the n=3 physical-site matrix control independently gives full ambient nullity {per_site_nullity}",
-            "the per-mode control finds a live single-generator anticommuter, narrowing the result to simultaneous anticommutation",
-            "the doubled-carrier block-exchange escape is live but external, so the no-go remains internal rather than block-universal",
-            "tensor products across sites or a staggered lattice chirality are untested and explicitly outside this internal-algebra boundary",
-        ),
-    }
-    resolution_classes = (
-        "per_element",
-        "per_site",
-        "per_mode",
-        "per_block",
-        "lattice_wide",
-    )
-    for group_id, descriptions in resolution_groups.items():
-        for resolution_class, description in zip(resolution_classes, descriptions):
-            print(f"  N5_RESOLUTION group={group_id} {resolution_class}: {description}")
+    for group in phrase_groups:
+        locator = str(group["locator"]).replace(";", ",")
+        print(
+            "  N5_GROUP "
+            f"group_id={group['group_id']}; phrase={group['phrase']}; "
+            f"occurrence_count={group['occurrence_count']}; "
+            f"locator_sha256={group['locator_sha256']}; locator={locator}"
+        )
+        for resolution_class, (
+            _ok,
+            disposition,
+            description,
+        ) in n5_controls.items():
+            print(
+                "  N5_RESOLUTION "
+                f"group={group['group_id']} {resolution_class}: "
+                f"live_test=PASS; disposition={disposition}; {description}"
+            )
 
     print(
         "  N7_STEELMAN_ARGUMENT mechanism=alternate ambient matrix carrier outside the "
@@ -695,7 +877,8 @@ print(
     for every generator g_mu.
 
   CONCLUSION (chirality dichotomy):
-    (a) n EVEN  =>  gamma_5 := i^{n(n-1)/2} omega satisfies
+    (a) n EVEN  =>  if q generators have negative square, then
+                    gamma_5 := i^{n(n-1)/2+q} omega satisfies
                     gamma_5^2 = +I and {gamma_5, g_mu} = 0 for every mu;
                     the canonical Z_2 grading has an internal implementer.
 
@@ -710,8 +893,8 @@ print(
     d_t in {1, 3, 5, ...}.
 
   Audit-lane class:
-    (A) -- pure Clifford-algebra fact verified by exact linear algebra
-    on explicit generator constructions in every relevant dimension.
+    (A) -- pure Clifford-algebra fact with a symbolic proof and deterministic
+    numerical matrix smoke tests on n=1,...,6.
 
   Out of scope:
     -- gauge-anomaly arithmetic (Tr[Y], Tr[Y^3], etc.);

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_clifford_chirality_dimension_narrow.py
-runner_sha256: abd955af8dfb5f5630ae468bd0635fbf72e93fc15ad70dec009753ea86209425
-input_fingerprint_sha256: 1285e20610cfcedf29ddca312d34126f86e481d27c51119e8593789f77a8d818
+runner_sha256: 5d8cfe3a8dfa88d1ec78d7e97303878391584d7661bd8d6866bc950177b690cb
+input_fingerprint_sha256: 27846084cc4319791c073f784273d6081186ebaa8305b683cb7e85acc2fb2ff6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.22
+elapsed_sec: 1.01
 status: ok
 ----- stdout -----
 
@@ -31,22 +31,22 @@ Part 2: volume element identity omega g_mu = (-1)^(n-1) g_mu omega
 ----------------------------------------------------------------------------------------
 Part 3: n ODD => no element OF THE CLIFFORD ALGEBRA Cl(n) anticommutes
 ----------------------------------------------------------------------------------------
-  [PASS (A)] n=1 (odd): {M in Cl(n) | {M, g_mu}=0 forall mu} = {0} inside Cl(n)  (sol_dim = 0 of 2^1=2 Clifford-basis dim)
-  [PASS (A)] n=3 (odd): {M in Cl(n) | {M, g_mu}=0 forall mu} = {0} inside Cl(n)  (sol_dim = 0 of 2^3=8 Clifford-basis dim)
-  [PASS (A)] n=5 (odd): {M in Cl(n) | {M, g_mu}=0 forall mu} = {0} inside Cl(n)  (sol_dim = 0 of 2^5=32 Clifford-basis dim)
-  [PASS (A)] n=2 (even): {M in Cl(n) | {M, g_mu}=0 forall mu} is exactly 1-dim (= span of gamma_5)  (sol_dim = 1 of 2^2=4 Clifford-basis dim)
-  [PASS (A)] n=4 (even): {M in Cl(n) | {M, g_mu}=0 forall mu} is exactly 1-dim (= span of gamma_5)  (sol_dim = 1 of 2^4=16 Clifford-basis dim)
-  [PASS (A)] n=6 (even): {M in Cl(n) | {M, g_mu}=0 forall mu} is exactly 1-dim (= span of gamma_5)  (sol_dim = 1 of 2^6=64 Clifford-basis dim)
+  [PASS (A)] n=1 (odd): {M in Cl(n) | {M, g_mu}=0 forall mu} = {0} inside Cl(n)  (numerical span rank = 2 = 2^1; sol_dim = 0)
+  [PASS (A)] n=3 (odd): {M in Cl(n) | {M, g_mu}=0 forall mu} = {0} inside Cl(n)  (numerical span rank = 8 = 2^3; sol_dim = 0)
+  [PASS (A)] n=5 (odd): {M in Cl(n) | {M, g_mu}=0 forall mu} = {0} inside Cl(n)  (numerical span rank = 32 = 2^5; sol_dim = 0)
+  [PASS (A)] n=2 (even): {M in Cl(n) | {M, g_mu}=0 forall mu} is exactly 1-dim (= span of gamma_5)  (numerical span rank = 4 = 2^2; sol_dim = 1)
+  [PASS (A)] n=4 (even): {M in Cl(n) | {M, g_mu}=0 forall mu} is exactly 1-dim (= span of gamma_5)  (numerical span rank = 16 = 2^4; sol_dim = 1)
+  [PASS (A)] n=6 (even): {M in Cl(n) | {M, g_mu}=0 forall mu} is exactly 1-dim (= span of gamma_5)  (numerical span rank = 64 = 2^6; sol_dim = 1)
 
 ----------------------------------------------------------------------------------------
-Part 4: n EVEN => gamma_5 := i^{n(n-1)/2} omega satisfies gamma_5^2=+I and {gamma_5,g_mu}=0
+Part 4: n EVEN => gamma_5 := i^{n(n-1)/2+q} omega for every signature
 ----------------------------------------------------------------------------------------
-  [PASS (A)] n=2: gamma_5^2 = +I  (phase i^1)
-  [PASS (A)] n=2: {gamma_5, g_mu} = 0 for every mu
-  [PASS (A)] n=4: gamma_5^2 = +I  (phase i^6)
-  [PASS (A)] n=4: {gamma_5, g_mu} = 0 for every mu
-  [PASS (A)] n=6: gamma_5^2 = +I  (phase i^15)
-  [PASS (A)] n=6: {gamma_5, g_mu} = 0 for every mu
+  [PASS (A)] n=2: omega^2=(-1)^(n(n-1)/2+q)I and gamma_5^2=+I  (all 4 signatures; phase i^(n(n-1)/2+q))
+  [PASS (A)] n=2: {gamma_5, g_mu} = 0 for every mu and signature
+  [PASS (A)] n=4: omega^2=(-1)^(n(n-1)/2+q)I and gamma_5^2=+I  (all 16 signatures; phase i^(n(n-1)/2+q))
+  [PASS (A)] n=4: {gamma_5, g_mu} = 0 for every mu and signature
+  [PASS (A)] n=6: omega^2=(-1)^(n(n-1)/2+q)I and gamma_5^2=+I  (all 64 signatures; phase i^(n(n-1)/2+q))
+  [PASS (A)] n=6: {gamma_5, g_mu} = 0 for every mu and signature
 
 ----------------------------------------------------------------------------------------
 Part 5: conditional Cl(d_s,d_t) specialisation with Lattice d_s=3
@@ -54,57 +54,37 @@ Part 5: conditional Cl(d_s,d_t) specialisation with Lattice d_s=3
   [PASS (A)] conditional Cl(d_s,d_t) with Lattice d_s=3 requires d_t odd  (allowed d_t = [1, 3, 5, 7]; forbidden d_t = [2, 4, 6])
 
   Out-of-scope reminder: this narrow theorem only forces d_t to
-  be ODD. The further restriction d_t = 1 is supplied by separate
-  sister theorems (single-clock codimension-1 evolution theorem on
-  the lattice or Craig--Weinstein / Tegmark on the continuum) and
-  is NOT part of this narrow theorem's load-bearing scope.
+  be ODD. It supplies no selection of d_t = 1. The axis-conditional
+  sister note and the Craig--Weinstein/Tegmark literature are
+  non-load-bearing orientation only.
 
 ----------------------------------------------------------------------------------------
-Part 6: current-cycle N1/N5/N7 no-go-discipline evidence
+Part 6: current-cycle N1/N5/N7 candidate evidence
 ----------------------------------------------------------------------------------------
   [PASS (A)] N1 live route coefficient-cancellation
-  [PASS (A)] N1 live route zero-square-normalization
   [PASS (A)] N1 live route central-volume
-  [PASS (A)] N1 live route generic-parity-witness
   [PASS (A)] N1 live route external-matrix-carrier
-  [PASS (A)] N1 live route signature-rephasing
-  [PASS (A)] N5 five-resolution controls are internally consistent
+  [PASS (A)] N1 live route extension-dimension
+  [PASS (A)] N1 live route central-idempotent-exchange
+  [PASS (A)] N1 subordinate normalization/parity/signature checks  (43690 subset cases; 42 odd-signature cases)
+  [PASS (A)] N5 source phrase manifest has one exact boundary group  (groups=[('no nonzero', '2ef918182553b3f4')])
+  [PASS (A)] N5 live per_element control  (faithful internal coefficient kernels have nullity zero for odd n=1,3,5)
+  [PASS (A)] N5 live per_site control  (one-site Pauli ambient common anticommutant has nullity 0)
+  [PASS (A)] N5 live per_mode control  (sigma_y is a square-one anticommuter for the single sigma_x mode)
+  [PASS (A)] N5 live per_block control  (the doubled faithful odd carrier has an external block anticommuter)
+  [PASS (A)] N5 live lattice_wide control  (a two-site lift has an ambient anticommuter outside its internal span)
   N1_ROUTE route_id=coefficient-cancellation; route_class=algebraic_rearrangement; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=arbitrary coefficient cancellation in the simultaneous anticommutator algebra; attempt=solve the stacked full coefficient kernel after certifying the 2^n monomial span is faithful; outcome=odd internal nullity is zero for n=1,3,5
-  N1_ROUTE route_id=zero-square-normalization; route_class=normalization_or_units; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=square normalization of the zero common-kernel element; attempt=test zero in every odd anticommutator and then test zero squared against identity; outcome=zero anticommutes but fails M^2=I
   N1_ROUTE route_id=central-volume; route_class=symmetry_or_representation; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=central invertible odd volume representation; attempt=verify centrality and invertibility while an all-generator anticommuter crosses an odd product with negative sign; outcome=commuting and anticommuting with invertible omega forces M=0
-  N1_ROUTE route_id=generic-parity-witness; route_class=numerical_or_finite_case; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=finite-case escape from the arbitrary odd-dimensional parity law; attempt=exhaust every subset through n=15 using the generic in-set or out-of-set witness selector; outcome=43690 coefficients constrained by the parity-generic branch proof
   N1_ROUTE route_id=external-matrix-carrier; route_class=alternate_carrier_or_sector; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=alternate ambient matrix carrier outside the internal Clifford span; attempt=search Pauli tensor words for an involution that anticommutes with every odd generator and raises the internal span rank; outcome=external witnesses found outside Cl(n), cases=[(1, 2, 3), (3, 8, 9), (5, 32, 33)]
-  N1_ROUTE route_id=signature-rephasing; route_class=convention_or_relabeling; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=signature convention change by independent generator rephasing; attempt=replace each selected positive generator by i times that generator and recompute relations, faithful span rank, and the full internal common kernel; outcome=all 42 signatures through odd n=5 retain zero nullity
-  N5_RESOLUTION group=volume_scalar_cannot per_element: the odd volume and all scalar multiples commute generator-by-generator; this elementwise statement was tested for n=1,3,5
-  N5_RESOLUTION group=volume_scalar_cannot per_site: the n=3 Pauli-site volume is scalar on each irreducible site sector; no physical site lift is inferred
-  N5_RESOLUTION group=volume_scalar_cannot per_mode: each generator mode was checked separately and the odd volume commutes, rather than anticommutes, with every one
-  N5_RESOLUTION group=volume_scalar_cannot per_block: the faithful odd carrier splits into volume eigenspace blocks on which the volume remains block-scalar
-  N5_RESOLUTION group=volume_scalar_cannot lattice_wide: no lattice operator is constructed, so the scalar-volume statement is not promoted to a lattice-wide realization claim
-  N5_RESOLUTION group=does_not_claim_scope per_element: the source exclusions are dependency guards and do not weaken the exact arbitrary-element kernel calculation
-  N5_RESOLUTION group=does_not_claim_scope per_site: no Standard-Model, anomaly, or temporal structure is imported at a physical site in the tested algebra
-  N5_RESOLUTION group=does_not_claim_scope per_mode: no fermion, gauge, or evolution mode is selected by the finite Clifford-element calculation
-  N5_RESOLUTION group=does_not_claim_scope per_block: no taste, sector, or transfer-matrix block is used to prove the internal algebra theorem
-  N5_RESOLUTION group=does_not_claim_scope lattice_wide: no lattice-wide dynamics or continuum limit is tested; those resolutions remain explicitly outside the claim
-  N5_RESOLUTION group=parent_closure_not_proposed per_element: the elementwise parity result supplies only the parent's chirality step and does not close its other algebraic inputs
-  N5_RESOLUTION group=parent_closure_not_proposed per_site: the one-site Clifford check does not supply anomaly content, a temporal count, or a physical realization bridge
-  N5_RESOLUTION group=parent_closure_not_proposed per_mode: no individual gauge or fermion mode closes the omitted parent steps in this runner
-  N5_RESOLUTION group=parent_closure_not_proposed per_block: no parent-chain block beyond the isolated chirality parity block is executed or certified here
-  N5_RESOLUTION group=parent_closure_not_proposed lattice_wide: the lattice-wide parent conclusion d_t=1 is not claimed; only conditional odd parity of d_t is enumerated
-  N5_RESOLUTION group=parity_impossible per_element: every internal coefficient has a nonzero odd-n witness constraint, so mixed even and odd degree requirements cannot survive elementwise
-  N5_RESOLUTION group=parity_impossible per_site: the three-Pauli one-site ambient common anticommutant has nullity 0, matching the n=3 internal boundary
-  N5_RESOLUTION group=parity_impossible per_mode: a single generator mode does have anticommuters, so the impossibility is explicitly simultaneous rather than per-mode
-  N5_RESOLUTION group=parity_impossible per_block: an external block-exchange anticommuter exists on a doubled carrier but the rank test places it outside the internal block algebra
-  N5_RESOLUTION group=parity_impossible lattice_wide: no lattice-wide impossibility is asserted because the contradiction concerns one finite Clifford algebra only
-  N5_RESOLUTION group=sister_no_go_crossref per_element: the sister result is a context-only cross-reference and is not used as evidence for the arbitrary-element kernel
-  N5_RESOLUTION group=sister_no_go_crossref per_site: the per-site Cl(3) specialization is recomputed directly here instead of inherited from the sister note
-  N5_RESOLUTION group=sister_no_go_crossref per_mode: the sister citation does not exclude independent physical mode constructions beyond the simultaneous Clifford-generator condition
-  N5_RESOLUTION group=sister_no_go_crossref per_block: the sister citation supplies no blockwise or reducible-carrier premise to the present proof
-  N5_RESOLUTION group=sister_no_go_crossref lattice_wide: the sister citation supplies no lattice-wide premise, and this runner makes no such negative inference from it
-  N5_RESOLUTION group=arbitrary_element_rule_out per_element: the full 2^n-coefficient system, not a monomial-only scan, tests every internal algebra element for n=1,3,5
-  N5_RESOLUTION group=arbitrary_element_rule_out per_site: the n=3 physical-site matrix control independently gives full ambient nullity 0
-  N5_RESOLUTION group=arbitrary_element_rule_out per_mode: the per-mode control finds a live single-generator anticommuter, narrowing the result to simultaneous anticommutation
-  N5_RESOLUTION group=arbitrary_element_rule_out per_block: the doubled-carrier block-exchange escape is live but external, so the no-go remains internal rather than block-universal
-  N5_RESOLUTION group=arbitrary_element_rule_out lattice_wide: tensor products across sites or a staggered lattice chirality are untested and explicitly outside this internal-algebra boundary
+  N1_ROUTE route_id=extension-dimension; route_class=numerical_or_finite_case; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=finite dimension-doubling test of universal extension by an anticommuting square-one generator; attempt=compare the faithful Cl_n span with the span after adjoining the candidate and candidate-times-basis products; outcome=ranks double from 2^n to 2^(n+1), cases=[(1, 2, 4), (3, 8, 16), (5, 32, 64)]
+  N1_ROUTE route_id=central-idempotent-exchange; route_class=topology_or_global_structure; honesty_marker=ATTEMPTED; disposition=CLOSED; mechanism=global semisimple-algebra structure through two nonzero central volume idempotents; attempt=test that the grade automorphism exchanges the central summands while internal conjugation fixes the center; outcome=nonzero exchanged idempotents, cases=[(1, 1, 1), (3, 2, 2), (5, 4, 4)]
+  N1_SUBCHECK zero-square-normalization is downstream of the zero kernel; generic-parity-witness covers 43690 finite subset cases; signature-rephasing covers 42 convention cases; none is counted as an independent N1 route
+  N5_GROUP group_id=2ef918182553b3f4; phrase=no nonzero; occurrence_count=1; locator_sha256=6cb3dbc30a771dd91e2583a2a3e5e1fb0aefcfcd5edb20b9be7ef9ffbdffdc9a; locator=**Negative boundary under assessment:** no nonzero element of the internal
+  N5_RESOLUTION group=2ef918182553b3f4 per_element: live_test=PASS; disposition=CLOSED_AT_CLAIMED_SCOPE; faithful internal coefficient kernels have nullity zero for odd n=1,3,5
+  N5_RESOLUTION group=2ef918182553b3f4 per_site: live_test=PASS; disposition=FINITE_SPECIALIZATION_CLOSED; one-site Pauli ambient common anticommutant has nullity 0
+  N5_RESOLUTION group=2ef918182553b3f4 per_mode: live_test=PASS; disposition=COUNTEREXAMPLE_TO_BROADER_READING; sigma_y is a square-one anticommuter for the single sigma_x mode
+  N5_RESOLUTION group=2ef918182553b3f4 per_block: live_test=PASS; disposition=COUNTEREXAMPLE_TO_BROADER_READING; the doubled faithful odd carrier has an external block anticommuter
+  N5_RESOLUTION group=2ef918182553b3f4 lattice_wide: live_test=PASS; disposition=COUNTEREXAMPLE_TO_BROADER_READING; a two-site lift has an ambient anticommuter outside its internal span
   N7_STEELMAN_ARGUMENT mechanism=alternate ambient matrix carrier outside the internal Clifford span; attempt=search Pauli tensor words for an involution that anticommutes with every odd generator and raises the internal span rank; argument=a hostile reviewer can defeat any claim about all represented operators by doubling the odd carrier and adjoining the missing even-tower generator, so only a verified internal-span boundary can support the theorem.
   N7_PRIMARY_DISPOSITION no nonzero M in Cl(n) satisfies (5) internal wall remains properly scoped after the ambient-carrier attack; the independent helper must reauthenticate the span-rank separation on a distinct execution surface.
 
@@ -124,7 +104,8 @@ Narrow theorem summary
     for every generator g_mu.
 
   CONCLUSION (chirality dichotomy):
-    (a) n EVEN  =>  gamma_5 := i^{n(n-1)/2} omega satisfies
+    (a) n EVEN  =>  if q generators have negative square, then
+                    gamma_5 := i^{n(n-1)/2+q} omega satisfies
                     gamma_5^2 = +I and {gamma_5, g_mu} = 0 for every mu;
                     the canonical Z_2 grading has an internal implementer.
 
@@ -139,8 +120,8 @@ Narrow theorem summary
     d_t in {1, 3, 5, ...}.
 
   Audit-lane class:
-    (A) -- pure Clifford-algebra fact verified by exact linear algebra
-    on explicit generator constructions in every relevant dimension.
+    (A) -- pure Clifford-algebra fact with a symbolic proof and deterministic
+    numerical matrix smoke tests on n=1,...,6.
 
   Out of scope:
     -- gauge-anomaly arithmetic (Tr[Y], Tr[Y^3], etc.);
@@ -152,7 +133,7 @@ Narrow theorem summary
 
 
 ========================================================================================
-  TOTAL: PASS=32, FAIL=0
+  TOTAL: PASS=37, FAIL=0
 ========================================================================================
 
 ----- stderr -----

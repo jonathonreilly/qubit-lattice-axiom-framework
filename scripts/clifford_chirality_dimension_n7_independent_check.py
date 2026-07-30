@@ -6,9 +6,10 @@ instead builds a faithful odd-dimensional representation by restricting the
 standard even-dimensional Pauli-tensor tower.  The omitted final generator is
 the strongest hostile-reviewer counterexample: it is a square-normalized
 ambient matrix that anticommutes with every represented odd generator.  The
-rank test below verifies independently that this operator is outside the
-represented internal Clifford-algebra span, so it does not contradict the
-source theorem's internal-algebra boundary.
+deterministic numerical rank smoke test below checks independently that this
+operator is outside the represented internal Clifford-algebra span, so it
+does not contradict the source theorem's internal-algebra boundary. The
+symbolic proof remains in the source note.
 """
 
 from __future__ import annotations
@@ -67,6 +68,7 @@ def internal_basis(generators: list[np.ndarray]) -> list[np.ndarray]:
 
 
 def flattened_rank(matrices: list[np.ndarray]) -> int:
+    """Deterministic numerical SVD rank used only as a finite smoke test."""
     columns = np.column_stack([matrix.reshape(-1) for matrix in matrices])
     return int(np.linalg.matrix_rank(columns, tol=1e-10))
 
@@ -102,7 +104,8 @@ def main() -> int:
         failures += int(not ok)
         print(
             f"[{'PASS' if ok else 'FAIL'}] odd n={n}: dimension={dimension}, "
-            f"internal_rank={internal_rank}, augmented_rank={augmented_rank}, "
+            f"numerical_internal_rank={internal_rank}, "
+            f"numerical_augmented_rank={augmented_rank}, "
             f"external_square_I={square_ok}, external_anticommutes={anticommutation_ok}"
         )
 

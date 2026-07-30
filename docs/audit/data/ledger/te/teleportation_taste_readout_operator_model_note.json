@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-30T01:46:29.682867+00:00",
+  "audit_invocation_history": [
+    "84125748858e46e8867174617e667ee4"
+  ],
+  "audit_invocation_id": "84125748858e46e8867174617e667ee4",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 3,
+        "C": 7,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_teleportation_taste_readout_operator_model.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "Finite-grid algebraic closure of RALA(a) for dims 1,2,3, sides 2,4, all retained axes, including axis Pauli/Bell membership, native-Z and fixed-X membership conditions, base/fiber commutation, Pauli XOR composition, and ideal logical teleportation closure."
+    },
+    "dep_claim_type": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "bounded_theorem"
+    },
+    "dep_effective_status": {
+      "teleportation_retained_axis_operator_algebra_closure_note": "retained_bounded"
+    },
+    "deps": [
+      "teleportation_retained_axis_operator_algebra_closure_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 2.585,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_teleportation_taste_readout_operator_model.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "input_mismatch",
+        "cache_input_fingerprint_sha256": "cb76f42586de62d3fb77ff0102bdae67c72720c35c7dd443d3f4066da22c3757",
+        "cache_runner_sha256": "0502a3f44cf3f727009b23908138dd62b2b45bac9de02d2f253b927ef1938789",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "0502a3f44cf3f727009b23908138dd62b2b45bac9de02d2f253b927ef1938789",
+    "runner_path": "scripts/frontier_teleportation_taste_readout_operator_model.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 2
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260730-c4dad82e",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The block algebra closes locally, but the artifact does not close as submitted because its negative boundary lacks required N1/N5/N7/N8 evidence and the captured runner contradicts the claimed successful completion.",
   "claim_id": "teleportation_taste_readout_operator_model_note",
-  "claim_scope": null,
+  "claim_scope": "Finite KS cell/taste operator-factorization calculations for retained-axis Z/X and their projectors on d=1,2,3 and L=2,4 with the last taste bit retained; physical apparatus and noise are excluded, and the d>1 native-parity negative boundary is not ratified here.",
   "claim_type": "open_gate",
   "claim_type_author_hint": "open_gate",
   "claim_type_author_hint_raw": "open_gate",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-30T01:46:29.682867+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,22 @@
     "teleportation_retained_axis_operator_algebra_closure_note"
   ],
   "direct_in_degree": 2,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 2.585,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "For dim > 1, two environment sectors carry opposite logical blocks, so no single O_logical can equal both and Z_native cannot factor as O_logical tensor I_env.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "9a4e77c376292b66132381d4470158e92f8c069e3578205204c509d37b730105",
   "note_path": "docs/TELEPORTATION_TASTE_READOUT_OPERATOR_MODEL_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: add live N1 attack-route and N5 per-element/per-site/per-mode/per-block/lattice-wide checks, disposition the supplied cross-cycle echoes, reconcile the runner boundary guards, and add a dated downstream-hygiene line to this note's own boundary so its hash re-enters the audit queue.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -1653,13 +1709,13 @@
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
-    "B": 0,
-    "C": 0,
+    "B": 1,
+    "C": 90,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 91
   },
   "runner_path": "scripts/frontier_teleportation_taste_readout_operator_model.py",
   "title": "Teleportation Taste Readout/Operator Model",
   "transitive_descendants": 2,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the exact block-sign argument is sound, but the artifact asserts a derived d>1 negative boundary without a shippable N1-N8 stress test, and its captured runner exits 1 because two conclusion-boundary guards fail despite the note saying both commands completed successfully. Why this blocks: N1 does not evidence five distinct closed attack routes, N5 lacks all five required resolution checks, and N7/N8 are unresolved; N2 reduces to one spectator-sign wall, N3 reveals no additional load-bearing premise, N4 matches the authority's zero-projection/unit-residual result, and N6 leaves apparatus-blind and heralded alternatives open. Repair target: add live route- and resolution-specific checks, disposition the supplied cross-cycle echoes, and reconcile the runner boundary guards with the source. Claim boundary until fixed: the finite retained-axis factorization calculations may be reported, but the native-parity negative boundary is not independently ratified."
 }

@@ -1073,7 +1073,6 @@ def seam_certificate() -> tuple[
             repeated_template_groups
         ),
         "normalized_local_template_instance_mismatches": template_mismatches,
-        "finite_box_Astar_is_translation_invariant_local_law": False,
         "route_label_return_failures": route_returns,
         "deleted_return_SWAP_label_mismatches": deleted_route_mismatches,
         "forbidden_live_palette_route_hits": dict(forbidden_hits),
@@ -1479,10 +1478,17 @@ def main() -> None:
     check(
         "A* recomputation and normalized local templates are explicitly separated from program transport",
         covariance["recomputed_proper_frame_contexts"] == 24
+        and covariance["recomputed_proper_frame_exact_contexts"]
+            < covariance["recomputed_proper_frame_contexts"]
+        and covariance["recomputed_proper_frame_macro_mismatches"] > 0
+        and not covariance["Astar_recomputation_proper_cubic_covariant"]
         and covariance["recomputed_translation_contexts"] == 8
         and covariance["recomputed_translation_macro_mismatches"] == 0
         and covariance["normalized_local_template_groups"] > 0
-        and not seam["finite_box_Astar_is_translation_invariant_local_law"],
+        and covariance["normalized_local_template_instance_mismatches"] > 0
+        and not covariance[
+            "normalized_finite_box_atlas_is_local_translation_law"
+        ],
     )
     check(
         "the routed seam compiler avoids the actual Cycle789 non-O and Cycle821 carrier palettes and fits the landed padded word bound",

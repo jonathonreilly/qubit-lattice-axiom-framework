@@ -8,11 +8,25 @@ Audit: unset
 
 Status: bounded constructive probe, repaired fixed-type atlas, complete recurrent G dictionary
 
-Claim type: bounded_theorem candidate
+Claim type: bounded_theorem
 
 Runner:
 
 - [`frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30.py`](../scripts/frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30.py)
+
+Receipt:
+
+- [`routec_staggered_radius_one_parity_even_transport_cycle822_receipt_2026_07_30.json`](../outputs/routec_staggered_radius_one_parity_even_transport_cycle822_receipt_2026_07_30.json)
+
+Declared dependencies:
+
+- [Cycle 720](RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md)
+- [Cycle 734](PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- [Cycle 789](THREE_REGISTER_COMPANION_INPUT_CIRCUIT_CYCLE789_BOUNDED_THEOREM_NOTE_2026-07-30.md)
+- [Cycle 794](LITERAL_THREE_BANK_PREFIX_RECURRENT_G_ACTUAL_SHEAR_CYCLE794_BOUNDED_THEOREM_NOTE_2026-07-30.md)
+- [Cycle 821](LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md)
+- [Cycle 219 mass fixture](work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md)
+- [Cycle 230 contact fixture](work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md)
 
 Constitutional effect: none. This probe changes no axiom, foundation,
 Qualification, primitive, registry, policy, queue, audit result, or audit
@@ -134,6 +148,11 @@ The landed one-particle mass fixture is rerun: the coin eigen residual is
 `5.551115123125783e-17`. Vacuum/one-particle contact and double-occupation
 phase residuals are zero.
 
+This is preservation of a supplied numerical fixture, not a mass prediction
+or parameter-selection result. The rerun supplies the Cycle-219 species value
+`beta=-0.3` and normalization `c^2=1/3`, plus the Cycle-230 dimensionless
+contact coupling `g=0.37`; Cycle 822 derives none of those choices.
+
 ## Resource overhead against committed fixed-atlas Route C
 
 | shape | base -> complete primitives | increase | ratio | charged increase | neutral increase | persistent increase |
@@ -192,12 +211,15 @@ Other active controls are:
 
 ## Direct imports and Cycle 734 boundary
 
-The algorithm directly reuses Cycle 720 physical placement and recurrent
-factor rows; Cycle 789 O/I/L palette, private atlas, colours, and fixed
-stage/slot schedule; Cycle 794 exact factorwise recurrent composition; and
-Cycle 821 carrier placement, atomizer, pair rotations, and bounded seams.
+The algorithm directly reuses [Cycle 720](RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md)
+physical placement and recurrent factor rows; [Cycle 789](THREE_REGISTER_COMPANION_INPUT_CIRCUIT_CYCLE789_BOUNDED_THEOREM_NOTE_2026-07-30.md)
+O/I/L palette, private atlas, colours, and fixed stage/slot schedule;
+[Cycle 794](LITERAL_THREE_BANK_PREFIX_RECURRENT_G_ACTUAL_SHEAR_CYCLE794_BOUNDED_THEOREM_NOTE_2026-07-30.md)
+exact factorwise recurrent composition; and [Cycle 821](LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md)
+carrier placement, atomizer, pair rotations, and bounded seams.
 
-Current Cycle 734 is only a companion boundary, not a physical primitive.
+Current [Cycle 734](PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+is only a companion boundary, not a physical primitive.
 Its pair template remains externally positioned, logical, and
 non-nearest-neighbour. Route C neither imports it as carrier genesis nor
 treats its adjacent-guard observation as a transport obstruction.
@@ -209,6 +231,11 @@ treats its adjacent-guard observation as a transport obstruction.
 - the landed finite Cycle-720/789/794/821 code domain, O/I/L resource,
   carrier, clean definite syndrome controls, private atlas, chart, and finite
   boundary;
+- the complete global factor/type/program data used by the offline compiler
+  to build the finite atlas; no runtime global-parity query is used after the
+  circuit is emitted;
+- the Cycle-219 `beta=-0.3`, `c^2=1/3` mass fixture and Cycle-230 `g=0.37`
+  contact coupling;
 - one clean accumulator M2 per owner cell and clean returned route rails;
 - the fixed stage/colour/slot/ordinal program and transported proper-cubic
   coframe; and

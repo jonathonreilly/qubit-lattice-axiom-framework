@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Cycle 816 v2: domain-corrected forecast audit of Cycle 795.
+"""Cycle 816: first prospective test of the Cycle-795 separators.
 
 The Cycle-795 and Cycle-814 primaries are SHA-pinned text/AST references:
 they are never imported or executed.  The landed Cycle-719 core is the only
 executable science input.  This runner independently reconstructs the 795
-pair-domain feature table, 103 clean separator hypotheses, and 46 forecast
-vectors.  It adopts the independent checker's correction: the two Cycle-814
-k=4 resolutions are outside the Cycle-795 class domain and test none of the
-103 hypotheses.  The former v1 projection is retained only as an explicitly
-out-of-domain occupied-set-extension diagnostic.
+feature table, 103 clean separator hypotheses, and 46 forecast vectors, then
+tests the two Cycle-814 primary-certified period-4464 outcomes.
+
+Cycle 795 used an explicit UNSEEN forecast state.  In the universal-separator
+test requested here, only a CYCLE forecast is correct for a certified cycle;
+TRANSIENT and UNSEEN therefore both fail that key and kill the hypothesis.
 """
 from __future__ import annotations
 
@@ -93,10 +94,11 @@ import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
 
 RING_STATIONS = 11
 FIXTURE_BANKS = 2
-PAIR_FAMILY_SIZE = 176
-PAIR_OPEN_SIZE = 162
-EXTENSION_HIGHER_K_BASELINE_OPEN_SIZE = 24
-EXTENSION_HIGHER_K_REMAINING_OPEN_SIZE = 22
+FAMILY_SIZE = 176
+OLD_OPEN_SIZE = 162
+HIGHER_K_BASELINE_OPEN_SIZE = 24
+HIGHER_K_REMAINING_OPEN_SIZE = 22
+COMBINED_REMAINING_OPEN_SIZE = 184
 LANDED_CONSTANTS = (130, 11, 2, 5, 12, 288, 6, 3)
 EXPECTED_PRIMARY_TABLE_SHA256 = (
     "266dd5f0c36cb79eb88a143c303e31ef1f79b068d6131545962ee38f8d24e705"
@@ -139,10 +141,10 @@ RESOLVED_KEYS = (
     (4, (0, 2, 4, 8), 1),
 )
 RESOLVED_PERIOD = 4464
-DOMAIN_SCOPE_STATEMENT = (
-    "Cycle 795 defines its separator hypotheses only on Key = "
-    "tuple[int, tuple[int, int]] and forecasts only its 162 open pair keys; "
-    "both Cycle-814 k=4 resolutions are outside that domain"
+SCOPE_STATEMENT = (
+    "the two resolutions are primary-verified with the independent checker "
+    "still running at spec time; the kill census is conditional on those "
+    "certifications holding; the ship will narrate the checker's outcome"
 )
 
 Coordinate = tuple[str, str, int]
@@ -181,84 +183,6 @@ def literal_assignment(tree: ast.Module, name: str) -> object | None:
         return ast.literal_eval(matches[0])
     except (TypeError, ValueError):
         return None
-
-
-def assignment_node(tree: ast.Module, name: str) -> ast.Assign:
-    matches = [
-        node
-        for node in tree.body
-        if isinstance(node, ast.Assign)
-        and any(
-            isinstance(target, ast.Name) and target.id == name
-            for target in node.targets
-        )
-    ]
-    if len(matches) != 1:
-        raise AssertionError(("assignment", name, len(matches)))
-    return matches[0]
-
-
-def named_function(tree: ast.Module, name: str) -> ast.FunctionDef:
-    matches = [
-        node
-        for node in tree.body
-        if isinstance(node, ast.FunctionDef) and node.name == name
-    ]
-    if len(matches) != 1:
-        raise AssertionError(("function", name, len(matches)))
-    return matches[0]
-
-
-def returned_dict_literal(
-    function: ast.FunctionDef,
-    key: str,
-) -> object:
-    returns = [
-        node.value
-        for node in function.body
-        if isinstance(node, ast.Return)
-        and isinstance(node.value, ast.Dict)
-    ]
-    if len(returns) != 1:
-        raise AssertionError(("dict return", function.name, len(returns)))
-    mapping = {
-        ast.literal_eval(key_node): value_node
-        for key_node, value_node in zip(
-            returns[0].keys, returns[0].values
-        )
-        if key_node is not None
-    }
-    return ast.literal_eval(mapping[key])
-
-
-def has_pair_key_unpack(function: ast.FunctionDef) -> bool:
-    return any(
-        isinstance(node, ast.Assign)
-        and len(node.targets) == 1
-        and isinstance(node.targets[0], ast.Tuple)
-        and len(node.targets[0].elts) == 2
-        and isinstance(node.targets[0].elts[0], ast.Name)
-        and node.targets[0].elts[0].id == "epoch"
-        and isinstance(node.targets[0].elts[1], ast.Tuple)
-        and tuple(
-            item.id if isinstance(item, ast.Name) else None
-            for item in node.targets[0].elts[1].elts
-        ) == ("left", "right")
-        and isinstance(node.value, ast.Name)
-        and node.value.id == "key"
-        for node in ast.walk(function)
-    )
-
-
-def has_open_key_forecast_loop(function: ast.FunctionDef) -> bool:
-    return any(
-        isinstance(node, ast.For)
-        and isinstance(node.target, ast.Name)
-        and node.target.id == "key"
-        and isinstance(node.iter, ast.Name)
-        and node.iter.id == "open_keys"
-        for node in ast.walk(function)
-    )
 
 
 def function_names(tree: ast.Module) -> set[str]:
@@ -300,75 +224,6 @@ def source_certificate() -> dict[str, object]:
     primary795_names = function_names(trees[AUDIT_INPUT_PATHS[1]])
     checker795_names = function_names(trees[AUDIT_INPUT_PATHS[2]])
     primary814_names = function_names(trees[AUDIT_INPUT_PATHS[3]])
-    primary795_tree = trees[AUDIT_INPUT_PATHS[1]]
-    primary795_text = payloads[AUDIT_INPUT_PATHS[1]].decode("utf-8")
-    key_node = assignment_node(primary795_tree, "Key")
-    feature_table_795 = named_function(primary795_tree, "feature_table")
-    candidate_795 = named_function(primary795_tree, "candidate_result")
-    boundaries_795 = named_function(primary795_tree, "boundaries")
-    key_annotation = ast.unparse(key_node.value)
-    domain_evidence = {
-        "definition_path": AUDIT_INPUT_PATHS[1],
-        "defining_code": (
-            {
-                "line": key_node.lineno,
-                "symbol": "Key",
-                "snippet": ast.get_source_segment(
-                    primary795_text, key_node
-                ),
-            },
-            {
-                "line": feature_table_795.lineno,
-                "symbol": "feature_table",
-                "snippet":
-                    "dict[Key, tuple[int, ...]]; "
-                    "epoch, (left, right) = key",
-            },
-            {
-                "line": candidate_795.lineno,
-                "symbol": "candidate_result",
-                "snippet":
-                    "features: dict[Key, ...]; "
-                    "for key in open_keys: forecast implication",
-            },
-            {
-                "line": boundaries_795.lineno,
-                "symbol": "boundaries",
-                "snippet":
-                    "scope = FINITE_14_RESOLVED_KEY_DISCRIMINATION_CENSUS",
-            },
-        ),
-        "Key_annotation": key_annotation,
-        "feature_table_pair_unpack": has_pair_key_unpack(feature_table_795),
-        "candidate_forecasts_only_for_open_keys":
-            has_open_key_forecast_loop(candidate_795),
-        "family_size": literal_assignment(primary795_tree, "FAMILY_SIZE"),
-        "open_size": literal_assignment(primary795_tree, "OPEN_SIZE"),
-        "scope": returned_dict_literal(boundaries_795, "scope"),
-        "separator_status":
-            returned_dict_literal(boundaries_795, "separator_status"),
-        "forecast_status":
-            returned_dict_literal(boundaries_795, "forecast_status"),
-        "higher_k_definition_present": any(
-            isinstance(node, (ast.FunctionDef, ast.ClassDef))
-            and "higher" in node.name.lower()
-            for node in primary795_tree.body
-        ),
-    }
-    domain_evidence["pair_domain_exact"] = (
-        key_annotation == "tuple[int, tuple[int, int]]"
-        and domain_evidence["feature_table_pair_unpack"]
-        and domain_evidence["candidate_forecasts_only_for_open_keys"]
-        and domain_evidence["family_size"] == PAIR_FAMILY_SIZE
-        and domain_evidence["open_size"] == PAIR_OPEN_SIZE
-        and domain_evidence["scope"]
-        == "FINITE_14_RESOLVED_KEY_DISCRIMINATION_CENSUS"
-        and domain_evidence["separator_status"]
-        == "HYPOTHESIS_GENERATOR_NOT_A_LAW"
-        and domain_evidence["forecast_status"]
-        == "FEATURE_IMPLICATION_ONLY_NOT_A_CLAIM"
-        and not domain_evidence["higher_k_definition_present"]
-    )
     audit_literal = literal_assignment(self_tree, "AUDIT_INPUT_PATHS")
     silent_literal = literal_assignment(
         trees[AUDIT_INPUT_PATHS[3]],
@@ -417,7 +272,6 @@ def source_certificate() -> dict[str, object]:
         } <= primary814_names,
         "cycle814_silent_literal_exact":
             silent_literal == EXPECTED_SILENT_FAMILY_REPRESENTATIVES,
-        "cycle795_domain": domain_evidence,
     }
     result["pass"] = (
         result["AUDIT_INPUT_PATHS_literal"]
@@ -433,7 +287,6 @@ def source_certificate() -> dict[str, object]:
         and result["cycle795_checker_AST_basis"]
         and result["cycle814_primary_AST_basis"]
         and result["cycle814_silent_literal_exact"]
-        and domain_evidence["pair_domain_exact"]
     )
     return result
 
@@ -601,7 +454,6 @@ def build_initial_supports() -> dict[str, object]:
             pair_supports[(event, positions)] = residual_coordinates(after)
 
     higher_supports: dict[HigherKey, Support] = {}
-    higher_initial_states: dict[HigherKey, tuple[int, ...]] = {}
     for k, representatives in EXPECTED_SILENT_FAMILY_REPRESENTATIVES.items():
         for positions in representatives:
             for event, _direction, before in fixtures:
@@ -619,13 +471,10 @@ def build_initial_supports() -> dict[str, object]:
                 higher_supports[(k, positions, event)] = (
                     residual_coordinates(after)
                 )
-                higher_initial_states[(k, positions, event)] = after
     return {
-        "program": program,
         "fixtures": fixtures,
         "pair_supports": pair_supports,
         "higher_supports": higher_supports,
-        "higher_initial_states": higher_initial_states,
     }
 
 
@@ -795,11 +644,9 @@ def reconstruct_feature_tables() -> dict[str, object]:
             support_classes,
         )
     return {
-        "program": supports["program"],
         "pair_features": pair_features,
         "pair_rows": tuple(pair_rows),
         "higher_features": higher_features,
-        "higher_initial_states": supports["higher_initial_states"],
         "support_classes": support_classes,
     }
 

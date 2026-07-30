@@ -306,12 +306,6 @@ evidence. The `n_color = 1..64` sweep is explicitly regression support; the
 universal denominator proof is the exact two-way common-divisor and parity
 argument above.
 
-The runner declares this note in `AUDIT_INPUT_PATHS`, so its cached transcript
-is accepted only when both the runner source and this note match the recorded
-content identities. Its no-argument invocation executes `--mode all`; the
-complete transcript must fit the live runner-stdout transport without a
-packet-clipping marker before it is used for re-audit.
-
 ## Repair history
 
 - **2026-06-19:** added the explicit nonzero-pair hypothesis and zero-solution
@@ -319,5 +313,3 @@ packet-clipping marker before it is used for re-audit.
 - **2026-07-18:** restricted the clean claim to the homogeneous/projective
   implication, moved normalization/charge/denominator arithmetic to the dated
   convention boundary, and narrowed all three graph-direct consumers.
-- **2026-07-29:** bound the runner cache to this source note and refreshed the
-  complete default transcript for an unclipped current-cycle re-audit.

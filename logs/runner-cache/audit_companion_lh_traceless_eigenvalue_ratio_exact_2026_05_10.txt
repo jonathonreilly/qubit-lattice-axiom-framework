@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_lh_traceless_eigenvalue_ratio_exact_2026_05_10.py
 runner_sha256: edd9e27dc0e3e591e5822b4c6f7b2b4a5a2216361aeb36182800bac265a31aaa
-input_fingerprint_sha256: bd191eb8992648b5a3f1ebaae873af3017b2668f5f4ffdfd33e5b3ec10772225
+input_fingerprint_sha256: 1823944da5abf3e0c1228957c43e3bbe5d4368dbecc385175b5113e9ab728b16
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.31
+elapsed_sec: 0.26
 status: ok
 ----- stdout -----
 ================================================================================================

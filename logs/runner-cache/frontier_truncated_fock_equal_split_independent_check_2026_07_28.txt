@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_truncated_fock_equal_split_independent_check_2026_07_28.py
+runner_sha256: dd0f66f4b44008df5b38fe0d5908753caa3257f7528d868ad8705b1af39bcffc
+input_fingerprint_sha256: f15c52a07116fd4da3fb8b934c957260bbb637d80d23b9fc9c34ad14df31e260
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+TRUNCATED-FOCK CLEAN-ROOM INDEPENDENT CHECK
+primary_mode = literal AST data only; import blocklisted
+PASS the primary contract is explicit and data-only :: {'missing': (), 'forbidden_historical_imports': [], 'primary_imported': False, 'registered_checker_import': True}
+PASS the clean-room Jordan-Wigner operators satisfy CAR and preserve number :: {'car_residual': 0.0, 'generator_number_commutator': 0.0}
+PASS independent combinatorics gives the full layer sequence and truncated prefix :: {'mask_counts': (1, 6, 15, 20, 15, 6, 1), 'channel_counts': (0, 6, 24, 36, 24, 6, 0), 'sign_counts': [{-1: 0, 1: 0}, {-1: 0, 1: 6}, {-1: 0, 1: 24}, {-1: 0, 1: 36}, {-1: 0, 1: 24}, {-1: 0, 1: 6}, {-1: 0, 1: 0}]}
+PASS the equal split is not selected by conservation :: {'commutators_by_alpha': {'0.0': 0.0, '0.25': 0.0, '1.0': 0.0, '1.7': 0.0, '2.0': 0.0}, 'conclusion': 'only the sum is conserved'}
+PASS dense exponentiation reproduces the truncated layers and layer-1 anchor :: {'angle': 0.36272452333990823, 'analytic_weight': 0.12589921612871377, 'layers': [{'number': 0, 'active_channels': 0, 'weight_min': 0.0, 'weight_max': 0.0, 'off_layer': 0.0, 'transpose_residual': 0.0}, {'number': 1, 'active_channels': 6, 'weight_min': 0.12589921612871374, 'weight_max': 0.12589921612871377, 'off_layer': 0.0, 'transpose_residual': 1.9229626863835638e-16}, {'number': 2, 'active_channels': 24, 'weight_min': 0.12042616790869433, 'weight_max': 0.12042616790869437, 'off_layer': 0.0, 'transpose_residual': 3.449963341299892e-16}]}
+PASS the enumerated domain is the strict 6,776-column truncated slice :: {'local_truncated_masks': 22, 'truncated_columns': 6776, 'complete_columns': 57344}
+PASS reciprocity is correctly limited to transpose and real-bilinear symmetry :: {'transpose_residual': 3.9496876521487887e-16, 'real_bilinear_residual': 3.469446951953614e-18, 'generic_complex_bra_ket_residual': 0.042218213544842946}
+SUMMARY {'pass': 7, 'fail': 0, 'runtime_seconds': 0.11982}
+FINAL ALL_PASS
+
+----- stderr -----
+

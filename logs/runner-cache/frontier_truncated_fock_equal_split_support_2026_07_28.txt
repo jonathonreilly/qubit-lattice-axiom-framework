@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/frontier_truncated_fock_equal_split_support_2026_07_28.py
+runner_sha256: 05853a493ddc083ba3a4f63f7d41d80b97e7d6d9a2b57be83145407fd5f501d0
+input_fingerprint_sha256: febeeb7599a39279ed80fe067e90df36e5b925951f95e69350e09766cc11b915
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+TRUNCATED-FOCK EQUAL-SPLIT BOOKKEEPING SUPPORT
+supplied_scope = six ordered directional modes; canonical CAR reversal hop; n_left,n_right<=2; beta=-0.3; coupling=0.8; theta=0.8*3*tan(-beta/2); q-direction total weight 2d; equal component split (1,1)
+certified_domain = n_left,n_right<=2
+equal_split_status = supplied; not selected by conservation
+PASS the independent checker is registered as an audit packet helper :: clean-room-jordan-wigner
+PASS the analytic star vertex is unitary and number preserving :: {'generator_number_commutator': 0.0, 'vertex_number_commutator': 0.0}
+PASS conservation fixes only the component sum; the equal split remains supplied :: {'commutators_by_alpha': {'0.0': 0.0, '0.25': 0.0, '1.0': 0.0, '1.7': 0.0, '2.0': 0.0}, 'selected_alpha': None, 'supplied_alpha': 1.0}
+PASS the certified layers have the exact mask and channel counts :: [{'number': 0, 'mask_count': 1, 'dimension': 7, 'active_channels': 0, 'weight_min': 0.0, 'weight_max': 0.0, 'transpose_residual': 0.0, 'unitarity_residual': 0.0, 'maximum_off_layer_amplitude': 0.0}, {'number': 1, 'mask_count': 6, 'dimension': 42, 'active_channels': 6, 'weight_min': 0.12589921612871377, 'weight_max': 0.12589921612871377, 'transpose_residual': 0.0, 'unitarity_residual': 0.0, 'maximum_off_layer_amplitude': 0.0}, {'number': 2, 'mask_count': 15, 'dimension': 105, 'active_channels': 24, 'weight_min': 0.12042616790869441, 'weight_max': 0.12042616790869441, 'transpose_residual': 0.0, 'unitarity_residual': 2.0396099332657776e-16, 'maximum_off_layer_amplitude': 0.0}]
+PASS the supplied fixture reproduces the conditional layer-1 weight :: {'angle': 0.36272452333990823, 'analytic_weight': 0.12589921612871377, 'observed_range': (0.12589921612871377, 0.12589921612871377)}
+PASS the supplied equal split gives the exact conditional recoil ledger :: {'channels': 30, 'maximum_residual': 0.0, 'ledger': '(-2d,+d,+d)'}
+PASS the n_left,n_right<=2 slice is exhaustively number-layer independent :: {'columns': 6776, 'factorization': '2*7*22^2', 'failures': 0, 'maximum_cross_layer_amplitude': 0.0}
+PASS fixed-basis transpose symmetry supports real-bilinear reciprocity :: {'block_transpose_residual': 0.0, 'real_bilinear_swap_residual': 0.0}
+PASS a deliberate number-changing mutation is detected :: {'source_number': 2, 'target_number': 1, 'number_commutator_frobenius': 1.4142135623730951}
+PASS the certificate distinguishes the truncated slice from complete Fock space :: {'truncated_columns': 6776, 'complete_columns': 57344, 'complete_number_layers': (0, 1, 2, 3, 4, 5, 6)}
+FINAL_JSON {"audit_input_paths": ["scripts/frontier_truncated_fock_equal_split_independent_check_2026_07_28.py"], "certificate_failures": [], "claim_scope": "two-cell n_left,n_right<=2 conditional bookkeeping support", "equal_split": {"status": "supplied_not_derived", "weights": [1.0, 1.0]}, "full_fock_claim": false, "layer_rows": [{"active_channels": 0, "dimension": 7, "mask_count": 1, "maximum_off_layer_amplitude": 0.0, "number": 0, "transpose_residual": 0.0, "unitarity_residual": 0.0, "weight_max": 0.0, "weight_min": 0.0}, {"active_channels": 6, "dimension": 42, "mask_count": 6, "maximum_off_layer_amplitude": 0.0, "number": 1, "transpose_residual": 0.0, "unitarity_residual": 0.0, "weight_max": 0.12589921612871377, "weight_min": 0.12589921612871377}, {"active_channels": 24, "dimension": 105, "mask_count": 15, "maximum_off_layer_amplitude": 0.0, "number": 2, "transpose_residual": 0.0, "unitarity_residual": 2.0396099332657776e-16, "weight_max": 0.12042616790869441, "weight_min": 0.12042616790869441}], "note_path": "docs/TRUNCATED_FOCK_EQUAL_SPLIT_SUPPORT_NOTE_2026-07-28.md", "runtime_seconds": 0.099628, "summary": {"fail": 0, "pass": 10}, "support_certificate_passed": true}
+
+----- stderr -----
+

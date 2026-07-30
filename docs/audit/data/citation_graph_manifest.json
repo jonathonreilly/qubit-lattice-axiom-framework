@@ -1,6 +1,6 @@
 {
  "edge_count": 15225,
- "node_count": 4576,
+ "node_count": 4578,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14743,6 +14743,14 @@
    "out_degree": 1
   },
   "triple_stack_collapse_scaling_note": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "truncated_fock_component_naming_convention_2026-07-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "truncated_fock_equal_split_support_note_2026-07-28": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC19-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle816_first_forecast_test_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle816_forecast_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 816,
+  "files": {
+    "docs/FIRST_FORECAST_TEST_CYCLE816_BOUNDED_THEOREM_NOTE_2026-07-28.md": "98010451c09bb007e07526715b85d5f898cbd67a55ad4ff11d3b6659780bc819",
+    "logs/runner-cache/frontier_cycle816_first_forecast_test_2026_07_28.txt": "2e496c7ede65d79c7577b6be6b393488c78463cf00be0f2da3944d77f1f17f05",
+    "logs/runner-cache/frontier_cycle816_forecast_independent_check_2026_07_28.txt": "33913743dbf664304c85561c6e65c984976a419bac056ee5bc1fced3796bc578",
+    "scripts/frontier_cycle816_first_forecast_test_2026_07_28.py": "7ebbb40377a24b52d27350000e37e60593a30286e40b5ce2f50ba917d8a75a71",
+    "scripts/frontier_cycle816_forecast_independent_check_2026_07_28.py": "6781be1afffc9db58990c7fefea85f2457bd0ad908f6c3e1e73a1b1cfea00376"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "795 class defined ONLY on two-position (k=2) keys; both 814 keys out of domain",
+    "v1 out-of-domain tables retained as labeled diagnostics (0/8/95 under the naive extension)",
+    "first true tests await k=2 resolutions (Cycle 819 probes); no extended class in the landed corpus"
+  ],
+  "verdicts": [
+    "extinction_verdict RETRACTED_OUT_OF_DOMAIN (reversal fifteen; checker domain attack)",
+    "corrected census: 103 not tested / 0 killed / vectors 46->46",
+    "checker CYCLE816_FORECAST_INDEPENDENT_CHECK_CONFIRMED"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR15-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle818_census_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 28
+    },
+    "logs/runner-cache/frontier_cycle818_period_structure_census_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 818,
+  "files": {
+    "docs/DEEP_SILENCE_PROBE_CYCLE814_BOUNDED_THEOREM_NOTE_2026-07-28.md": "4be4a9e7aaf93ecd299d5b59dd06f4cd0fbcc250cf8108b7e3418fbb4ea8666c",
+    "docs/PERIOD_STRUCTURE_CYCLE818_BOUNDED_THEOREM_NOTE_2026-07-28.md": "a0a2ecb8d8ad01c1bcf0b8f6e4b23387cb845a1b26d68a155364b64313645f22",
+    "logs/runner-cache/frontier_cycle818_census_independent_check_2026_07_28.txt": "b1224658296c6ca785dad45372c892faf9350ce37c03653e8551c8207387c636",
+    "logs/runner-cache/frontier_cycle818_period_structure_census_2026_07_28.txt": "94bc32640518f097cb09060f9c378d26d73e263539573e3b8e75ed2aab1b857e",
+    "scripts/frontier_cycle818_census_independent_check_2026_07_28.py": "47fb3598286ccc25d88a9f1be4e2985c78818fc38bd666268bab855eda414dfb",
+    "scripts/frontier_cycle818_period_structure_census_2026_07_28.py": "918ae9d1f5b29a4cee437dac8af4bfb27ee0aceee3a7abd0c6bdaaa6fb10d24c"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "four checker laws (strict scope): period even iff positions contain 0; period>3 iff event!=3; max k2 period 288 < min k4 period 4464; (event, zero-membership) determine period; union refinement by stratum (5952 vs 4464 on (1,T))",
+    "the 814 note amended in this block (contributions stand: minimality, deep sweep, transient null); #5826 carries a reviewer comment",
+    "root cause: STATE summary compression error for 801; 813/814/816 framings inherited it \u2014 narrative-from-memory receipt"
+  ],
+  "verdicts": [
+    "strict 14-row census {2:2,3:9,288:1,4464:2}; gcd 1; lcm 8928",
+    "BASELINE CORRECTED: 801 had certified 6 higher-k cycles; family = 6 transients / 18 cycles / 184 open",
+    "checker CONFIRMED + four exact regularities found"
+  ]
+}

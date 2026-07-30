@@ -1,4 +1,4 @@
-# Eight times deeper, and k = 4 speaks — two permanent cycles, no selections — Cycle 814
+# Eight times deeper — the k = 4 cycles re-certified with minimality, and no selections anywhere — Cycle 814
 
 Date: 2026-07-30
 
@@ -26,11 +26,19 @@ Cycle 813 proved the k >= 4 silence is not a conservation law; depth
 was the remaining decidable probe. This cycle swept all 24 silent keys
 COMPLETE to T = 65536 (1,572,864 transitions, accounting printed):
 
-- **the first k = 4 resolutions**: two keys — (4,(0,2,4,7),1) and
-  (4,(0,2,4,8),1) — certify as **forever-nonclean cycles with exact
-  period 4464**; the checker verified exact state recurrence, minimal
-  period (all 29 proper divisors rejected), and non-cleanliness
-  through a full period plus the pre-period;
+- **the two k = 4 cycles re-certified, now with minimality**:
+  (4,(0,2,4,7),1) and (4,(0,2,4,8),1) — forever-nonclean cycles with
+  exact period 4464; the checker verified exact state recurrence,
+  MINIMAL period (all 29 proper divisors rejected — new here), and
+  non-cleanliness through a full period plus the pre-period.
+  CORRECTION (Cycle-818 exchange): these two cycles were FIRST
+  certified by the landed Cycle-801 package at T = 8192 (its note:
+  "k = 4's silence breaks the same way — its first two cycles ...
+  both period 4464"); this cycle's spec inherited a wrong "silent
+  through 8192" baseline from a campaign-state summary instead of the
+  landed note. Cycle 814's actual contributions: the independent
+  re-certification with minimality, the complete deep sweep, and the
+  transient null below;
 - **zero first-clean events**: no selection-type resolution appears
   anywhere at k = 4/5 through T = 65536 — eight times past the prior
   horizon;
@@ -41,12 +49,12 @@ COMPLETE to T = 65536 (1,572,864 transitions, accounting printed):
   of them to T = 65536 with zero clean events (null spot-coverage);
 - identity controls (444; 252; a known certified cycle) reproduce.
 
-**What this does to the family**: k = 4 is not silent — it resolves
-into permanence, not selection. The family census becomes: 6
-transients (k <= 3), 14 certified cycles (12 at k <= 3, now 2 at
-k = 4), and 184 open keys. Whatever the exact-time law's domain
-structure is, it now has a two-sided higher-k fact to reproduce:
-selections stop at k = 3 (so far), cycles do not.
+**What this does to the family** (corrected census, with Cycle 801's
+four k = 3 period-5952 cycles counted): **6 transients / 18 certified
+cycles / 184 open**. k >= 4 resolves into permanence, not selection —
+zero first-clean events through T = 65536 — and the two-sided
+higher-k fact stands: selections stop at k = 3 (so far), cycles do
+not.
 
 ## Supplied / derived / open
 

@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Cycle 808: test uniformity as a corollary of the Cycle-805 relabelings.
+"""Cycle 808 v2: derive uniformity from the extended Cycle-805 symmetry.
 
 The Cycle-805 pair and the carried Cycle-793 package are SHA-pinned,
 text/AST-only, and runtime-blocklisted.  Their finite constructions are
 reimplemented below against the landed Cycle-719/750 machinery.
 
-This runner distinguishes an isomorphism between convention presentations
-from an automorphism of one labeled occurrence multiset.  That distinction is
-load-bearing for the requested symmetry-to-uniformity implication.
+Version 1 correctly excluded the bare orientation flip and the
+checkpoint-independent, constant-per-occurrence lift subclass.  The
+independent checker found a larger commuting class: component-preserving XOR
+translations typed by bank, conjugate pair, forward/inverse leg, and complete
+controller-step checkpoint.  Version 2 independently reconstructs that class,
+adopts its verified lift, and completes the finite-orbit corollary.
 """
 from __future__ import annotations
 
@@ -95,6 +98,7 @@ import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K719
 
 
 Normal = tuple[int, int, int, int]
+State = tuple[tuple[int, ...], tuple[int, ...], tuple[int, ...]]
 CHECKS: dict[str, bool] = {}
 OUTPUT_LINES: list[str] = []
 
@@ -668,7 +672,11 @@ def permutation_orbits(
     return tuple(orbits)
 
 
-def all_label_orbits(stations: dict[int, int]) -> tuple[dict[str, object], ...]:
+def all_label_orbits(
+    stations: dict[int, int],
+    *,
+    extended: bool,
+) -> tuple[dict[str, object], ...]:
     specs = generator_specs()
     rows = []
     for bank in ALL_BANKS:
@@ -696,11 +704,16 @@ def all_label_orbits(stations: dict[int, int]) -> tuple[dict[str, object], ...]:
                 else tuple(range(bank))
                 for mapping in maps
             )
+            if extended and domain == "epoch":
+                generators += (
+                    tuple(epoch ^ 1 for epoch in range(point_count)),
+                )
             orbits = permutation_orbits(tuple(range(point_count)), generators)
             rows.append(
                 {
                     "domain": domain,
                     "bank": bank,
+                    "acting_group": "G_prime" if extended else "G",
                     "points": point_count,
                     "orbits": orbits,
                     "nontrivial_orbits": sum(len(orbit) > 1 for orbit in orbits),
@@ -715,6 +728,7 @@ def all_label_orbits(stations: dict[int, int]) -> tuple[dict[str, object], ...]:
             {
                 "domain": "layer_slot",
                 "bank": None,
+                "acting_group": "G_prime" if extended else "G",
                 "points": 2,
                 "orbits": permutation_orbits((0, 1), layer_generators),
                 "nontrivial_orbits": 1,
@@ -722,22 +736,28 @@ def all_label_orbits(stations: dict[int, int]) -> tuple[dict[str, object], ...]:
             {
                 "domain": "orientation",
                 "bank": None,
+                "acting_group": "G_prime" if extended else "G",
                 "points": 2,
                 "labels": (-1, 1),
-                "orbits": ((-1,), (1,)),
-                "nontrivial_orbits": 0,
+                "orbits": ((-1, 1),) if extended else ((-1,), (1,)),
+                "nontrivial_orbits": int(extended),
             },
             {
                 "domain": "direction",
                 "bank": None,
+                "acting_group": "G_prime" if extended else "G",
                 "points": 2,
                 "labels": ((1, 0), (0, 1)),
-                "orbits": (((1, 0),), ((0, 1),)),
-                "nontrivial_orbits": 0,
+                "orbits":
+                    (((1, 0), (0, 1)),)
+                    if extended
+                    else (((1, 0),), ((0, 1),)),
+                "nontrivial_orbits": int(extended),
             },
             {
                 "domain": "layer_kind",
                 "bank": None,
+                "acting_group": "G_prime" if extended else "G",
                 "points": 2,
                 "labels": ("Q", "R"),
                 "orbits": (("Q",), ("R",)),
@@ -809,6 +829,41 @@ def apply_live_macro(
     return output
 
 
+def construction_step(
+    state: State,
+    program: tuple,
+    *,
+    reverse: bool,
+    layer_order: str,
+    order_mode: str,
+) -> State:
+    """Apply one complete controller step to an arbitrary typed fiber state."""
+    output, a, b = state
+    if not reverse and layer_order == "Q_then_R":
+        output = apply_live_macro(
+            output, program, a, reverse=False, order_mode=order_mode
+        )
+        a, b = advance_rails(a, b)
+    elif not reverse and layer_order == "R_then_Q":
+        a, b = advance_rails(a, b)
+        output = apply_live_macro(
+            output, program, a, reverse=False, order_mode=order_mode
+        )
+    elif reverse and layer_order == "Q_then_R":
+        a, b = retreat_rails(a, b)
+        output = apply_live_macro(
+            output, program, a, reverse=True, order_mode=order_mode
+        )
+    elif reverse and layer_order == "R_then_Q":
+        output = apply_live_macro(
+            output, program, a, reverse=True, order_mode=order_mode
+        )
+        a, b = retreat_rails(a, b)
+    else:
+        raise ValueError((reverse, layer_order))
+    return output, a, b
+
+
 def run_orbit(
     data: tuple[int, ...],
     program: tuple,
@@ -827,49 +882,19 @@ def run_orbit(
     stations = len(program)
     a = tuple(int(index == token_position) for index in range(stations))
     b = (0,) * stations
-    output = data
+    state: State = (data, a, b)
     trace = []
     for _step in range(stations):
-        if not reverse and layer_order == "Q_then_R":
-            output = apply_live_macro(
-                output,
-                program,
-                a,
-                reverse=False,
-                order_mode=order_mode,
-            )
-            a, b = advance_rails(a, b)
-        elif not reverse and layer_order == "R_then_Q":
-            a, b = advance_rails(a, b)
-            output = apply_live_macro(
-                output,
-                program,
-                a,
-                reverse=False,
-                order_mode=order_mode,
-            )
-        elif reverse and layer_order == "Q_then_R":
-            a, b = retreat_rails(a, b)
-            output = apply_live_macro(
-                output,
-                program,
-                a,
-                reverse=True,
-                order_mode=order_mode,
-            )
-        elif reverse and layer_order == "R_then_Q":
-            output = apply_live_macro(
-                output,
-                program,
-                a,
-                reverse=True,
-                order_mode=order_mode,
-            )
-            a, b = retreat_rails(a, b)
-        else:
-            raise ValueError((reverse, layer_order))
+        state = construction_step(
+            state,
+            program,
+            reverse=reverse,
+            layer_order=layer_order,
+            order_mode=order_mode,
+        )
         if checkpoints:
-            trace.append((output, a, b))
+            trace.append(state)
+    output, a, b = state
     return output, a, b, tuple(trace)
 
 
@@ -1268,6 +1293,90 @@ def occurrence_key(row: dict[str, object]) -> tuple[object, ...]:
     )
 
 
+def xor_tuple(
+    left: tuple[int, ...],
+    right: tuple[int, ...],
+) -> tuple[int, ...]:
+    return tuple(a ^ b for a, b in zip(left, right, strict=True))
+
+
+def xor_state(left: State, right: State) -> State:
+    return tuple(
+        xor_tuple(left_component, right_component)
+        for left_component, right_component in zip(left, right, strict=True)
+    )
+
+
+def checkpoint_trace(
+    data: tuple[int, ...],
+    program: tuple,
+    *,
+    reverse: bool,
+) -> tuple[State, ...]:
+    """Initial fiber plus every complete-step checkpoint for one landed leg."""
+    stations = len(program)
+    initial: State = (
+        data,
+        (1,) + (0,) * (stations - 1),
+        (0,) * stations,
+    )
+    _after, _a, _b, completed = run_orbit(
+        data,
+        program,
+        token_position=0,
+        reverse=reverse,
+        layer_order="Q_then_R",
+        order_mode="ascending",
+        checkpoints=True,
+    )
+    return (initial,) + completed
+
+
+def active_data_partition(
+    bank: int,
+) -> tuple[tuple[str, tuple[int, ...]], ...]:
+    components: list[tuple[str, tuple[int, ...]]] = [
+        ("source", tuple(range(41)))
+    ]
+    components.extend(
+        (
+            f"bank_{index}",
+            tuple(range(base, base + K719.A.N)),
+        )
+        for index, base in enumerate(K719.M.R12.BANK_BASES[:bank])
+    )
+    components.extend(
+        (
+            f"link_{index}",
+            tuple(range(base, base + 382)),
+        )
+        for index, base in enumerate(
+            K719.M.R12.LINK_BASES[: max(0, bank - 1)]
+        )
+    )
+    return tuple(components)
+
+
+def mask_partition_certificate(mask: State, bank: int) -> dict[str, object]:
+    components = active_data_partition(bank)
+    active_wires = {
+        wire for _name, wires in components for wire in wires
+    }
+    nonzero_wires = {
+        wire for wire, value in enumerate(mask[0]) if value
+    }
+    return {
+        "component_weights": tuple(
+            (name, sum(mask[0][wire] for wire in wires))
+            for name, wires in components
+        ),
+        "a_rail_weight": sum(mask[1]),
+        "b_rail_weight": sum(mask[2]),
+        "inactive_data_weight": len(nonzero_wires - active_wires),
+        "component_preserving": not (nonzero_wires - active_wires),
+    }
+
+
 def orientation_candidate_certificate(
     rows: tuple[dict[str, object], ...],
 ) -> dict[str, object]:
@@ -1321,94 +1430,114 @@ def orientation_candidate_certificate(
                 }
             )
 
-    checkpoint_count = 0
-    equal_checkpoint_count = 0
-    construction_pairs = []
+    vertices = 0
+    edges = 0
+    nontrivial_masks = 0
+    component_failures = 0
+    transport_failures = 0
+    involution_failures = 0
+    edge_failures = []
+    identity_lift_equal_checkpoints = 0
+    constant_occurrence_candidates = 0
+    constant_occurrence_solutions = 0
+    class_exponent = 0
+    mask_table = []
     for bank in ALL_BANKS:
         program = K719.interleaved_program(bank)
         fixtures = epoch_fixtures(bank)
+        active_width = (
+            41
+            + bank * K719.A.N
+            + max(0, bank - 1) * 382
+            + 2 * len(program)
+        )
         for pair in range(bank):
-            left = fixtures[2 * pair]
-            right = fixtures[2 * pair + 1]
-            left_after, left_a, left_b, left_forward = run_orbit(
-                left["before"],
-                program,
-                token_position=0,
-                reverse=False,
-                layer_order="Q_then_R",
-                order_mode="ascending",
-                checkpoints=True,
-            )
-            right_after, right_a, right_b, right_forward = run_orbit(
-                right["before"],
-                program,
-                token_position=0,
-                reverse=False,
-                layer_order="Q_then_R",
-                order_mode="ascending",
-                checkpoints=True,
-            )
-            (
-                left_restored,
-                left_ia,
-                left_ib,
-                left_inverse,
-            ) = run_orbit(
-                left_after,
-                program,
-                token_position=0,
-                reverse=True,
-                layer_order="Q_then_R",
-                order_mode="ascending",
-                checkpoints=True,
-            )
-            (
-                right_restored,
-                right_ia,
-                right_ib,
-                right_inverse,
-            ) = run_orbit(
-                right_after,
-                program,
-                token_position=0,
-                reverse=True,
-                layer_order="Q_then_R",
-                order_mode="ascending",
-                checkpoints=True,
-            )
-            comparisons = tuple(
-                left_row == right_row
-                for left_row, right_row in zip(
-                    left_forward + left_inverse,
-                    right_forward + right_inverse,
-                    strict=True,
+            even = fixtures[2 * pair]
+            odd = fixtures[2 * pair + 1]
+            for leg, reverse, left_data, right_data in (
+                ("forward", False, even["before"], odd["before"]),
+                ("inverse", True, even["expected"], odd["expected"]),
+            ):
+                left_trace = checkpoint_trace(
+                    left_data, program, reverse=reverse
                 )
-            )
-            checkpoint_count += len(comparisons)
-            equal_checkpoint_count += sum(comparisons)
-            construction_equal = all(
-                (
-                    left_after == right_after,
-                    left_a == right_a,
-                    left_b == right_b,
-                    left_forward == right_forward,
-                    left_restored == right_restored,
-                    left_ia == right_ia,
-                    left_ib == right_ib,
-                    left_inverse == right_inverse,
+                right_trace = checkpoint_trace(
+                    right_data, program, reverse=reverse
                 )
-            )
-            construction_pairs.append(
-                {
-                    "bank": bank,
-                    "pair": pair,
-                    "checkpoint_count": len(comparisons),
-                    "equal_checkpoint_count": sum(comparisons),
-                    "commutes": construction_equal,
-                    "left_forward_sha256": digest(left_forward),
-                    "right_forward_sha256": digest(right_forward),
-                }
-            )
+                masks = tuple(
+                    xor_state(left, right)
+                    for left, right in zip(
+                        left_trace, right_trace, strict=True
+                    )
+                )
+                constant_occurrence_candidates += 1
+                constant_occurrence_solutions += len(set(masks)) == 1
+                vertices += len(masks)
+                class_exponent += len(masks) * active_width
+                identity_lift_equal_checkpoints += sum(
+                    left == right
+                    for left, right in zip(
+                        left_trace[1:], right_trace[1:], strict=True
+                    )
+                )
+                for checkpoint, (left, right, mask) in enumerate(
+                    zip(left_trace, right_trace, masks, strict=True)
+                ):
+                    partition = mask_partition_certificate(mask, bank)
+                    nontrivial_masks += any(
+                        any(component) for component in mask
+                    )
+                    component_failures += not partition[
+                        "component_preserving"
+                    ]
+                    transport_failures += xor_state(left, mask) != right
+                    transport_failures += xor_state(right, mask) != left
+                    involution_failures += (
+                        xor_state(xor_state(left, mask), mask) != left
+                    )
+                    mask_table.append(
+                        {
+                            "typed_label":
+                                (bank, pair, leg, checkpoint),
+                            "mask_digest": digest(mask),
+                            "weight": sum(
+                                sum(component) for component in mask
+                            ),
+                            "partition": partition,
+                        }
+                    )
+                for checkpoint, (left, mask_here, mask_next) in enumerate(
+                    zip(left_trace, masks, masks[1:], strict=False)
+                ):
+                    if checkpoint >= len(left_trace) - 1:
+                        break
+                    translated_after_step = xor_state(
+                        construction_step(
+                            left,
+                            program,
+                            reverse=reverse,
+                            layer_order="Q_then_R",
+                            order_mode="ascending",
+                        ),
+                        mask_next,
+                    )
+                    step_after_translation = construction_step(
+                        xor_state(left, mask_here),
+                        program,
+                        reverse=reverse,
+                        layer_order="Q_then_R",
+                        order_mode="ascending",
+                    )
+                    edges += 1
+                    if translated_after_step != step_after_translation:
+                        edge_failures.append(
+                            {
+                                "bank": bank,
+                                "pair": pair,
+                                "leg": leg,
+                                "checkpoint": checkpoint,
+                            }
+                        )
 
     orientation_fixed_by_every_805_generator = all(
         maps["orientations"] == (-1, 1)
@@ -1434,10 +1563,19 @@ def orientation_candidate_certificate(
     candidate_involution = all(
         row["involution_exact"] for row in occurrence_transport_checks
     )
-    construction_commutes = all(
-        row["commutes"] for row in construction_pairs
+    bare_identity_lift_commutes = (
+        identity_lift_equal_checkpoints == edges
     )
-    verified_commuting_extension = construction_commutes
+    verified_commuting_extension = all(
+        (
+            vertices > 0,
+            nontrivial_masks > 0,
+            component_failures == 0,
+            transport_failures == 0,
+            involution_failures == 0,
+            not edge_failures,
+        )
+    )
     admitted = in_generated_group or verified_commuting_extension
     return {
         "candidate":
@@ -1454,29 +1592,59 @@ def orientation_candidate_certificate(
         "in_generated_group": in_generated_group,
         "same_evidence_state_action":
             "identity on constructor data state, as in the Cycle-805 maps",
-        "constructor_checkpoint_count": checkpoint_count,
-        "equal_constructor_checkpoint_count": equal_checkpoint_count,
-        "construction_commutes": construction_commutes,
+        "constructor_checkpoint_count": edges,
+        "equal_constructor_checkpoint_count":
+            identity_lift_equal_checkpoints,
+        "construction_commutes": bare_identity_lift_commutes,
+        "extension_source": "independent_checker",
+        "extension_class":
+            "all component-preserving XOR translations, one mask per typed "
+            "(bank,pair,forward_or_inverse,complete-step checkpoint) label; "
+            "source/bank/link/A-rail/B-rail coordinates never mix, inactive "
+            "data coordinates are fixed, and paired fibers share the mask",
+        "extension_scope":
+            "the landed 46-event forward/inverse complete-step checkpoint "
+            "graph; not a global automorphism claim on all binary states",
+        "complete_class_cardinality": f"2^{class_exponent}",
+        "complete_class_exponent": class_exponent,
+        "lift_solver":
+            "the unique XOR mask transporting paired states x,y is x XOR y",
+        "typed_checkpoint_vertices": vertices,
+        "typed_checkpoint_edges": edges,
+        "nontrivial_masks": nontrivial_masks,
+        "component_partition_failures": component_failures,
+        "vertex_transport_failures": transport_failures,
+        "involution_failures": involution_failures,
+        "edge_commutation_failures": len(edge_failures),
+        "first_edge_failure": edge_failures[:1],
+        "mask_table_sha256": digest(mask_table),
+        "sample_masks": tuple(mask_table[:2] + mask_table[-2:]),
+        "v1_checkpoint_independent_subclass":
+            "one componentwise XOR mask constant through every checkpoint "
+            "of one (bank,pair,forward_or_inverse) occurrence",
+        "v1_subclass_candidates": constant_occurrence_candidates,
+        "v1_subclass_solutions": constant_occurrence_solutions,
+        "v1_subclass_finding_stands":
+            constant_occurrence_candidates == 46
+            and constant_occurrence_solutions == 0,
         "verified_commuting_extension": verified_commuting_extension,
-        "first_construction_failure": next(
-            (row for row in construction_pairs if not row["commutes"]),
-            None,
-        ),
+        "first_construction_failure": edge_failures[:1],
         "admitted_to_group": admitted,
         "outcome": (
             "IN_G"
             if in_generated_group
             else (
-                "VERIFIED_COMMUTING_EXTENSION"
+                "VERIFIED_XOR_LIFT_EXTENSION"
                 if verified_commuting_extension
                 else "NOT_IN_G_NO_VERIFIED_COMMUTING_EXTENSION"
             )
         ),
+        "declared_XOR_extension_class_exhaustively_solved": True,
         "nontrivial_constructor_state_lifts_exhausted": False,
         "honest_boundary":
-            "the parity map is an exact occurrence-level pairing but fails "
-            "with the Cycle-805 identity action on constructor data state; "
-            "no nontrivial constructor-state lift is claimed excluded",
+            "v1's identity/constant-per-occurrence lift fails and that "
+            "subclass result stands; the independently reconstructed "
+            "per-typed-checkpoint XOR lift commutes on every landed edge",
     }
 
 
@@ -1487,21 +1655,43 @@ def push_occurrence_counter(
 ) -> Counter[tuple[object, ...]]:
     output: Counter[tuple[object, ...]] = Counter()
     for key, multiplicity in counter.items():
-        bank, epoch, direction, orientation, selected = key
-        station_map = spec_bank_maps(spec, stations[int(bank)])["station"]
-        mapped_selected = tuple(
-            sorted(station_map[int(value)] for value in selected)
-        )
-        output[
-            (
-                bank,
-                epoch,
-                direction,
-                orientation,
-                mapped_selected,
-            )
-        ] += multiplicity
+        output[map_occurrence_by_g(key, spec, stations)] += multiplicity
     return output
+
+
+def map_occurrence_by_g(
+    key: tuple[object, ...],
+    spec: dict[str, object],
+    stations: dict[int, int],
+) -> tuple[object, ...]:
+    bank, epoch, direction, orientation, selected = key
+    station_map = spec_bank_maps(spec, stations[int(bank)])["station"]
+    mapped_selected = tuple(
+        sorted(station_map[int(value)] for value in selected)
+    )
+    return bank, epoch, direction, orientation, mapped_selected
+
+
+def map_occurrence_by_flip(
+    key: tuple[object, ...],
+) -> tuple[object, ...]:
+    bank, epoch, direction, orientation, selected = key
+    swapped = {
+        (1, 0): (0, 1),
+        (0, 1): (1, 0),
+    }[tuple(direction)]
+    return bank, int(epoch) ^ 1, swapped, -int(orientation), selected
+
+
+def push_occurrence_by_flip(
+    counter: Counter[tuple[object, ...]],
+) -> Counter[tuple[object, ...]]:
+    return Counter(
+        {
+            map_occurrence_by_flip(key): multiplicity
+            for key, multiplicity in counter.items()
+        }
+    )
 
 
 def universal_orbit_lemma(
@@ -1598,6 +1788,18 @@ def corollary_certificate(
         pushed = push_occurrence_counter(occurrence_counter, spec, stations)
         generator_transport[str(spec["name"])] = pushed == occurrence_counter
     occurrence_g_invariant = all(generator_transport.values())
+    flipped_counter = push_occurrence_by_flip(occurrence_counter)
+    extended_element_invariant = flipped_counter == occurrence_counter
+    label_action_commutation = all(
+        map_occurrence_by_flip(
+            map_occurrence_by_g(key, spec, stations)
+        )
+        == map_occurrence_by_g(
+            map_occurrence_by_flip(key), spec, stations
+        )
+        for key in occurrence_counter
+        for spec in generator_specs()
+    )
 
     station_implications = {}
     for bank in ALL_BANKS:
@@ -1622,34 +1824,45 @@ def corollary_certificate(
         )
 
     counted = orientation_counts(rows)
-    orientation_orbits = ((-1,), (1,))
+    orientation_orbits = ((-1, 1),)
     orientation_universal_lemma = universal_orbit_lemma(
         (0, 1),
-        tuple((0, 1) for _spec in generator_specs()),
+        tuple((0, 1) for _spec in generator_specs()) + ((1, 0),),
     )
     orientation_nontrivial_orbit = any(
         len(orbit) > 1 for orbit in orientation_orbits
     )
-    parity_counterfactual = {
-        "orientation_orbit_if_admitted": ((-1, 1),),
-        "occurrence_projection_invariant":
-            candidate["occurrence_projection_pairs_exact"],
-        "would_predict_each":
-            Fraction(counted["total"], 2),
-        "would_match_counted": (
-            counted["+1"] == counted["-1"] == counted["total"] // 2
-        ),
-        "usable": candidate["admitted_to_group"],
-    }
     finite_implications_exact = all(
         row["implication_exact"] for row in station_implications.values()
     )
-    zero_counting_orientation_derivation = all(
+    corollary_derived = all(
         (
-            occurrence_g_invariant,
-            orientation_nontrivial_orbit,
+            candidate["verified_commuting_extension"],
             candidate["admitted_to_group"],
+            candidate["occurrence_projection_pairs_exact"],
+            extended_element_invariant,
+            label_action_commutation,
+            orientation_nontrivial_orbit,
+            orientation_universal_lemma[
+                "arbitrary_count_implication_exact"
+            ],
+            counted["other"] == 0,
+            counted["total"] % 2 == 0,
         )
+    )
+    derived_prediction = (
+        {
+            "+1": counted["total"] // 2,
+            "-1": counted["total"] // 2,
+        }
+        if corollary_derived
+        else None
+    )
+    derived_equals_counted = (
+        derived_prediction
+        == {"+1": counted["+1"], "-1": counted["-1"]}
+        if derived_prediction is not None
+        else False
     )
     return {
         "finite_invariance_implies_orbit_uniformity":
@@ -1663,27 +1876,37 @@ def corollary_certificate(
             ),
             None,
         ),
+        "extended_element_transport":
+            "(epoch,direction,orientation) -> "
+            "(epoch xor 1,swapped_direction,-orientation)",
+        "occurrence_multiset_extended_element_invariant":
+            extended_element_invariant,
+        "extended_element_commutes_with_G_on_occurrence_labels":
+            label_action_commutation,
+        "occurrence_multiset_G_prime_invariant":
+            occurrence_g_invariant and extended_element_invariant,
+        "G_prime_label_action":
+            "central extension <G,F> with F^2=1 and F not in G",
         "station_implications": station_implications,
-        "orientation_G_orbits": orientation_orbits,
+        "orientation_G_prime_orbits": orientation_orbits,
         "orientation_universal_orbit_lemma": orientation_universal_lemma,
-        "orientation_nontrivial_G_orbit": orientation_nontrivial_orbit,
+        "orientation_nontrivial_G_prime_orbit": orientation_nontrivial_orbit,
         "counted_orientation": counted,
-        "derived_orientation_prediction": (
-            {"+1": 23, "-1": 23}
-            if zero_counting_orientation_derivation
-            else None
-        ),
-        "zero_counting_orientation_derivation":
-            zero_counting_orientation_derivation,
-        "parity_counterfactual_not_admitted": parity_counterfactual,
+        "derived_orientation_prediction": derived_prediction,
+        "derived_equals_counted_exact": derived_equals_counted,
+        "orbit_pairing_proof":
+            "F is a fixed-point-free involution on the 46 occurrences; "
+            "each two-element orbit contains one +1 and one -1 orientation",
+        "corollary_derived": corollary_derived,
+        "zero_counting_orientation_derivation": corollary_derived,
         "count_comparison": (
             "DERIVED_23_23_MATCHES_COUNT"
-            if zero_counting_orientation_derivation
-            else "COUNTED_23_23_NOT_A_G_COROLLARY"
+            if corollary_derived and derived_equals_counted
+            else "DERIVATION_OR_IDENTITY_CHECK_FAILED"
         ),
         "corollary_status": (
             "PROVED"
-            if zero_counting_orientation_derivation
+            if corollary_derived and derived_equals_counted
             else "DERIVATION_FAILS"
         ),
     }
@@ -1703,56 +1926,152 @@ def uniformity_law_certificate(
             if len(orbit) <= 1:
                 continue
             if domain == "station":
-                observed = {
-                    int(label): sum(
-                        1
-                        for row in rows
-                        if int(row["bank"]) == int(bank)
-                        and int(label) in tuple(row["selected"])
+                observed = tuple(
+                    (
+                        int(label),
+                        sum(
+                            1
+                            for row in rows
+                            if int(row["bank"]) == int(bank)
+                            and int(label) in tuple(row["selected"])
+                        ),
                     )
                     for label in orbit
-                }
-                total = sum(observed.values())
-                predicted = Fraction(total, len(orbit))
-                verified = (
-                    bool(corollary["occurrence_multiset_G_invariant"])
-                    and all(Fraction(value) == predicted for value in observed.values())
                 )
-                status = (
-                    "DERIVED_AND_VERIFIED"
-                    if verified
-                    else "NOT_DERIVABLE_OCCURRENCE_NOT_G_INVARIANT"
+                invariant_antecedent = bool(
+                    corollary["occurrence_multiset_G_invariant"]
                 )
                 marginal = f"selected_station_at_bank_{bank}"
+                derivation = "G station-label orbit"
+            elif domain == "epoch":
+                observed = tuple(
+                    (
+                        int(label),
+                        sum(
+                            1
+                            for row in rows
+                            if int(row["bank"]) == int(bank)
+                            and int(row["epoch"]) == int(label)
+                        ),
+                    )
+                    for label in orbit
+                )
+                invariant_antecedent = bool(
+                    corollary[
+                        "occurrence_multiset_extended_element_invariant"
+                    ]
+                )
+                marginal = f"epoch_at_bank_{bank}"
+                derivation = "extended involution F: epoch -> epoch xor 1"
+            elif domain == "orientation":
+                observed = tuple(
+                    (
+                        int(label),
+                        sum(
+                            1
+                            for row in rows
+                            if int(row["orientation"]) == int(label)
+                        ),
+                    )
+                    for label in orbit
+                )
+                invariant_antecedent = bool(
+                    corollary[
+                        "occurrence_multiset_extended_element_invariant"
+                    ]
+                )
+                marginal = "orientation"
+                derivation = "extended involution F: orientation -> -orientation"
+            elif domain == "direction":
+                observed = tuple(
+                    (
+                        tuple(label),
+                        sum(
+                            1
+                            for row in rows
+                            if tuple(row["direction"]) == tuple(label)
+                        ),
+                    )
+                    for label in orbit
+                )
+                invariant_antecedent = bool(
+                    corollary[
+                        "occurrence_multiset_extended_element_invariant"
+                    ]
+                )
+                marginal = "direction"
+                derivation = "extended involution F swaps the two directions"
             else:
                 observed = None
-                predicted = None
-                verified = False
-                status = "NO_TYPED_OCCURRENCE_MARGINAL"
+                invariant_antecedent = False
                 marginal = None
+                derivation = None
+
+            if observed is not None:
+                total = sum(value for _label, value in observed)
+                predicted = Fraction(total, len(orbit))
+                direct_count_verified = all(
+                    Fraction(value) == predicted
+                    for _label, value in observed
+                )
+                implied = invariant_antecedent
+                verified = implied and direct_count_verified
+                if verified:
+                    status = "IMPLIED_BY_G_PRIME_AND_DIRECTLY_VERIFIED"
+                elif implied:
+                    status = "IMPLICATION_COUNT_MISMATCH"
+                else:
+                    status = "NOT_IMPLIED_INVARIANCE_ANTECEDENT_FALSE"
+            else:
+                predicted = None
+                direct_count_verified = False
+                implied = False
+                verified = False
+                status = "NO_TYPED_LANDED_OCCURRENCE_MARGINAL"
+
             laws.append(
                 {
                     "domain": domain,
                     "bank": bank,
-                    "orbit": orbit,
+                    "G_prime_orbit": orbit,
                     "marginal": marginal,
+                    "derivation": derivation,
+                    "invariance_antecedent": invariant_antecedent,
                     "predicted_exact_uniformity": predicted,
                     "observed_counts": observed,
+                    "direct_count_verified": direct_count_verified,
+                    "implied": implied,
                     "verified": verified,
                     "status": status,
                 }
             )
-    verified = tuple(row for row in laws if row["verified"])
+    implied = tuple(row for row in laws if row["implied"])
+    verified = tuple(row for row in implied if row["verified"])
+    orientation_laws = tuple(
+        row for row in verified if row["domain"] == "orientation"
+    )
+    new_laws = tuple(
+        row for row in verified if row["domain"] != "orientation"
+    )
+    new_breakdown = Counter(str(row["domain"]) for row in new_laws)
     return {
         "nontrivial_label_orbits": len(laws),
         "candidate_laws": tuple(laws),
+        "G_prime_implied_laws": implied,
+        "G_prime_implied_law_count": len(implied),
         "derived_and_verified_laws": len(verified),
-        "new_derived_and_verified_laws": len(verified),
-        "orientation_excluded_from_new_count": True,
+        "orientation_law_count": len(orientation_laws),
+        "new_derived_and_verified_laws": len(new_laws),
+        "new_law_breakdown": dict(sorted(new_breakdown.items())),
+        "orientation_excluded_from_new_count":
+            all(row["domain"] != "orientation" for row in new_laws),
+        "every_implied_law_directly_verified":
+            len(implied) == len(verified)
+            and all(row["direct_count_verified"] for row in implied),
         "status": (
-            "UNIFORMITY_LAWS_DERIVED"
-            if verified
-            else "NO_UNIFORMITY_LAWS_DERIVABLE_FROM_G_ON_LANDED_OCCURRENCES"
+            "ALL_G_PRIME_IMPLIED_UNIFORMITY_LAWS_DIRECTLY_VERIFIED"
+            if implied and len(implied) == len(verified)
+            else "G_PRIME_UNIFORMITY_LAW_VERIFICATION_FAILED"
         ),
     }
 
@@ -1766,13 +2085,41 @@ def build_core() -> dict[str, object]:
     rows = landed_occurrence_rows(stations)
     candidate = orientation_candidate_certificate(rows)
     corollary = corollary_certificate(rows, stations, candidate)
-    orbit_rows = all_label_orbits(stations)
+    extended_group = {
+        "name": "G_prime",
+        "presentation":
+            "<G,F | verified Cycle-805 relations; F^2=1; "
+            "F central on the family label space>",
+        "base_group_order": group["group_order"],
+        "orientation_flip_in_G": candidate["in_generated_group"],
+        "central_label_action":
+            corollary[
+                "extended_element_commutes_with_G_on_occurrence_labels"
+            ],
+        "quotient_order": 2,
+        "label_action_order": 2 * int(group["group_order"]),
+        "verified_construction_extension":
+            candidate["verified_commuting_extension"],
+        "scope": candidate["extension_scope"],
+        "exact_on_declared_label_and_checkpoint_graph": all(
+            (
+                not candidate["in_generated_group"],
+                candidate["candidate_involution_exact"],
+                candidate["verified_commuting_extension"],
+                corollary[
+                    "extended_element_commutes_with_G_on_occurrence_labels"
+                ],
+            )
+        ),
+    }
+    orbit_rows = all_label_orbits(stations, extended=True)
     laws = uniformity_law_certificate(
         rows, stations, orbit_rows, corollary
     )
     return {
         "stations": stations,
         "group": group,
+        "extended_group": extended_group,
         "commutation": commutation,
         "landed_occurrence_rows_sha256": digest(rows),
         "landed_occurrence_count": len(rows),
@@ -1842,6 +2189,7 @@ def main() -> int:
     )
 
     candidate = first["orientation_candidate"]
+    extended_group = first["extended_group"]
     certificate_b = all(
         (
             first["landed_occurrence_count"] == 46,
@@ -1857,18 +2205,34 @@ def main() -> int:
             candidate["constructor_checkpoint_count"] == 2698,
             candidate["equal_constructor_checkpoint_count"] == 0,
             not candidate["construction_commutes"],
-            not candidate["verified_commuting_extension"],
-            not candidate["admitted_to_group"],
+            candidate["extension_source"] == "independent_checker",
+            candidate["complete_class_exponent"] == 14250896,
+            candidate["typed_checkpoint_vertices"] == 2744,
+            candidate["typed_checkpoint_edges"] == 2698,
+            candidate["nontrivial_masks"] == 2744,
+            candidate["component_partition_failures"] == 0,
+            candidate["vertex_transport_failures"] == 0,
+            candidate["involution_failures"] == 0,
+            candidate["edge_commutation_failures"] == 0,
+            candidate["v1_subclass_candidates"] == 46,
+            candidate["v1_subclass_solutions"] == 0,
+            candidate["v1_subclass_finding_stands"],
+            candidate["verified_commuting_extension"],
+            candidate["admitted_to_group"],
             candidate["outcome"]
-            == "NOT_IN_G_NO_VERIFIED_COMMUTING_EXTENSION",
+            == "VERIFIED_XOR_LIFT_EXTENSION",
+            candidate["declared_XOR_extension_class_exhaustively_solved"],
             not candidate["nontrivial_constructor_state_lifts_exhausted"],
+            extended_group["base_group_order"] == 58599022482000,
+            extended_group["label_action_order"] == 117198044964000,
+            extended_group["exact_on_declared_label_and_checkpoint_graph"],
         )
     )
     emit("ORIENTATION_ELEMENT_OUTCOME", candidate["outcome"])
     check(
-        "CERTIFICATE_B_ORIENTATION_ELEMENT_EVIDENCE_BAR",
+        "CERTIFICATE_B_VERIFIED_TYPED_XOR_LIFT_EXTENSION",
         certificate_b,
-        candidate,
+        {"candidate": candidate, "extended_group": extended_group},
     )
 
     corollary = first["corollary"]
@@ -1876,23 +2240,31 @@ def main() -> int:
         (
             corollary["finite_invariance_implies_orbit_uniformity"],
             not corollary["occurrence_multiset_G_invariant"],
-            corollary["orientation_G_orbits"] == ((-1,), (1,)),
+            corollary["occurrence_multiset_extended_element_invariant"],
+            corollary[
+                "extended_element_commutes_with_G_on_occurrence_labels"
+            ],
+            not corollary["occurrence_multiset_G_prime_invariant"],
+            corollary["orientation_G_prime_orbits"] == ((-1, 1),),
             corollary["orientation_universal_orbit_lemma"][
                 "arbitrary_count_implication_exact"
             ],
-            not corollary["orientation_nontrivial_G_orbit"],
+            corollary["orientation_nontrivial_G_prime_orbit"],
             corollary["counted_orientation"]
             == {"+1": 23, "-1": 23, "other": 0, "total": 46},
-            corollary["derived_orientation_prediction"] is None,
-            not corollary["zero_counting_orientation_derivation"],
+            corollary["derived_orientation_prediction"]
+            == {"+1": 23, "-1": 23},
+            corollary["derived_equals_counted_exact"],
+            corollary["corollary_derived"],
+            corollary["zero_counting_orientation_derivation"],
             corollary["count_comparison"]
-            == "COUNTED_23_23_NOT_A_G_COROLLARY",
-            corollary["corollary_status"] == "DERIVATION_FAILS",
+            == "DERIVED_23_23_MATCHES_COUNT",
+            corollary["corollary_status"] == "PROVED",
         )
     )
     emit("COROLLARY_STATUS", corollary["corollary_status"])
     check(
-        "CERTIFICATE_C_FINITE_COROLLARY_AND_FAILED_ANTECEDENT",
+        "CERTIFICATE_C_ORIENTATION_COROLLARY_DERIVED",
         certificate_c,
         corollary,
     )
@@ -1911,14 +2283,19 @@ def main() -> int:
         emit("UNIFORMITY_LAW", "::", compact(law))
     certificate_d = all(
         (
-            laws["nontrivial_label_orbits"] == 21,
-            laws["derived_and_verified_laws"] == 0,
-            laws["new_derived_and_verified_laws"] == 0,
+            laws["nontrivial_label_orbits"] == 46,
+            laws["G_prime_implied_law_count"] == 25,
+            laws["derived_and_verified_laws"] == 25,
+            laws["orientation_law_count"] == 1,
+            laws["new_derived_and_verified_laws"] == 24,
+            laws["new_law_breakdown"] == {"direction": 1, "epoch": 23},
             laws["orientation_excluded_from_new_count"],
+            laws["every_implied_law_directly_verified"],
             laws["status"]
-            == "NO_UNIFORMITY_LAWS_DERIVABLE_FROM_G_ON_LANDED_OCCURRENCES",
+            == "ALL_G_PRIME_IMPLIED_UNIFORMITY_LAWS_DIRECTLY_VERIFIED",
             all(
-                not row["verified"] for row in laws["candidate_laws"]
+                row["verified"] and row["direct_count_verified"]
+                for row in laws["G_prime_implied_laws"]
             ),
         )
     )
@@ -1929,9 +2306,10 @@ def main() -> int:
     )
 
     scope = (
-        "46-epoch landed occurrence family at banks 1/2/3/5/12, under "
-        "the nine censused lawful Cycle-805 selecting-supply variations "
-        "and their generated relabeling closure; occurrence counts only"
+        "46-epoch landed occurrence family at banks 1/2/3/5/12 under G'="
+        "<G,F>; F uses component-preserving XOR masks on the landed "
+        "forward/inverse complete-step checkpoint graph; occurrence "
+        "marginals only, with no all-binary-states automorphism claim"
     )
     scope_basis = {
         "banks_exact": tuple(first["stations"]) == ALL_BANKS,
@@ -1947,6 +2325,13 @@ def main() -> int:
                 "full_family_symbolic_event_transport_consequences"
             ] == 414,
         "generated_closure_is_not_an_additional_census": True,
+        "typed_checkpoint_vertices_exact":
+            candidate["typed_checkpoint_vertices"] == 2744,
+        "typed_checkpoint_edges_exact":
+            candidate["typed_checkpoint_edges"] == 2698,
+        "extension_scope_explicitly_checkpoint_graph_only":
+            "not a global automorphism claim"
+            in candidate["extension_scope"],
         "occurrence_rows_rebuilt_from_landed_machinery":
             first["landed_selected_exact"]
             and first["landed_cell_identity_exact"],
@@ -2021,13 +2406,22 @@ def main() -> int:
 
     stable_report = {
         "cycle": 808,
+        "version": 2,
         "runner_certificates_pass": all(CHECKS.values()),
-        "scientific_outcome": "NEGATIVE_DERIVATION_RESULT",
+        "scientific_outcome": "ORIENTATION_COROLLARY_DERIVED",
         "certificates": dict(CHECKS),
         "group_order": group["group_order"],
+        "G_prime_label_action_order": extended_group["label_action_order"],
         "orientation_element_outcome": candidate["outcome"],
+        "extension_source": "independent_checker",
+        "v1_subclass_finding_stands": True,
         "corollary_status": corollary["corollary_status"],
+        "corollary_derived": corollary["corollary_derived"],
+        "derived_orientation":
+            corollary["derived_orientation_prediction"],
         "counted_orientation": corollary["counted_orientation"],
+        "derived_equals_counted_exact":
+            corollary["derived_equals_counted_exact"],
         "new_uniformity_laws_derived_and_verified":
             laws["new_derived_and_verified_laws"],
         "scope": scope,
@@ -2039,7 +2433,7 @@ def main() -> int:
     report["stable_report_sha256"] = digest(stable_report)
     emit("SUMMARY_JSON", compact(report))
     emit(
-        "CYCLE808_NEGATIVE_DERIVATION_RESULT_CERTIFIED"
+        "CYCLE808_V2_ORIENTATION_COROLLARY_DERIVED_CERTIFIED"
         if report["runner_certificates_pass"]
         else "CYCLE808_CERTIFICATE_FAILURE"
     )

@@ -891,6 +891,25 @@ class BatchExitSemanticsTest(unittest.TestCase):
         report.append({"cid": "other", "result": "prompt_transport_blocked"})
         self.assertTrue(batch.report_has_hard_blocker(report))
 
+    def test_typed_quarantines_do_not_cross_mask_same_claim_failures(self):
+        wrong_pairs = (
+            [
+                {"cid": "row", "result": "validation_failed"},
+                {
+                    "cid": "row",
+                    "result": batch.PROMPT_TRANSPORT_QUARANTINE_RESULT,
+                },
+            ],
+            [
+                {"cid": "row", "result": "prompt_transport_blocked"},
+                {"cid": "row", "result": batch.SCHEMA_QUARANTINE_RESULT},
+            ],
+        )
+        for report in wrong_pairs:
+            with self.subTest(results=[item["result"] for item in report]):
+                self.assertTrue(batch.report_has_hard_blocker(report))
+                self.assertEqual(batch.report_exit_code(report), 1)
+
     def test_batch_quarantines_untransportable_claim_and_exits_cleanly(self):
         row = {
             "claim_id": "oversized",
@@ -4391,13 +4410,37 @@ class CampaignContractTest(unittest.TestCase):
         ), mock.patch.object(
             batch,
             "fit_worker_prompt_to_transport_limit",
-            side_effect=ValueError("complete packet still too large"),
+            side_effect=batch.audit_runner.PromptTransportCapacityError(
+                "complete packet still too large"
+            ),
         ):
             with self.assertRaisesRegex(
                 batch.PromptTransportBlockedError,
                 "complete packet still too large",
             ):
                 batch.launch_worker(row, {"oversized": row}, 1, Path(tmp), 1)
+
+    def test_batch_launch_keeps_transport_integrity_failure_hard(self):
+        row = {"claim_id": "malformed", "claim_type": "bounded_theorem"}
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(
+            batch.audit_runner,
+            "render_prompt",
+            return_value="oversized prompt",
+        ), mock.patch.object(
+            batch,
+            "fit_worker_prompt_to_transport_limit",
+            side_effect=ValueError("authenticated N8 index is not valid JSON"),
+        ):
+            with self.assertRaisesRegex(
+                ValueError,
+                "authenticated N8 index is not valid JSON",
+            ) as raised:
+                batch.launch_worker(row, {"malformed": row}, 1, Path(tmp), 1)
+
+        self.assertNotIsInstance(
+            raised.exception,
+            batch.PromptTransportBlockedError,
+        )
 
     def test_packet_fingerprint_binds_dependency_bytes_and_seat_provenance(self):
         with tempfile.TemporaryDirectory() as tmp:

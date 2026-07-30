@@ -902,7 +902,7 @@ def launch_worker(
             prompt,
             evidence_manifest,
         )
-    except ValueError as exc:
+    except audit_runner.PromptTransportCapacityError as exc:
         raise PromptTransportBlockedError(str(exc)) from exc
     if len(prompt) > audit_runner.CODEX_INPUT_CHAR_LIMIT:
         raise PromptTransportBlockedError(
@@ -3833,11 +3833,15 @@ def hard_blocking_report_items(report: list[dict]) -> list[dict]:
         | SCHEMA_RECOVERY_RESULTS
         | CAMPAIGN_EXCLUSION_RESULTS
     )
-    recovered = {
+    schema_recovered = {
         item.get("cid")
         for item in report
-        if item.get("result")
-        in SCHEMA_RECOVERY_RESULTS | {PROMPT_TRANSPORT_QUARANTINE_RESULT}
+        if item.get("result") in SCHEMA_RECOVERY_RESULTS
+    }
+    transport_quarantined = {
+        item.get("cid")
+        for item in report
+        if item.get("result") == PROMPT_TRANSPORT_QUARANTINE_RESULT
     }
     transaction_quarantined = {
         item.get("cid")
@@ -3849,9 +3853,8 @@ def hard_blocking_report_items(report: list[dict]) -> list[dict]:
         for item in report
         if item.get("result") == TRANSIENT_SERVICE_FAILURE_RESULT
     }
-    quarantine_companions = SCHEMA_INVALID_RESULTS | {
+    schema_quarantine_companions = SCHEMA_INVALID_RESULTS | {
         "critical_peer_pending",
-        "prompt_transport_blocked",
     }
     transient_companions = {
         "critical_peer_delivery_missing",
@@ -3862,8 +3865,12 @@ def hard_blocking_report_items(report: list[dict]) -> list[dict]:
         for item in report
         if item.get("result") not in accepted
         and not (
-            item.get("cid") in recovered
-            and item.get("result") in quarantine_companions
+            item.get("cid") in schema_recovered
+            and item.get("result") in schema_quarantine_companions
+        )
+        and not (
+            item.get("cid") in transport_quarantined
+            and item.get("result") == "prompt_transport_blocked"
         )
         and not (
             item.get("cid") in transaction_quarantined

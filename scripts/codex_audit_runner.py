@@ -141,6 +141,10 @@ CODEX_HARD_INPUT_CHAR_LIMIT = 1_048_576
 OUTPUT_INSTRUCTIONS_MARKER = "\n\n---\nOUTPUT INSTRUCTIONS (binding):"
 
 
+class PromptTransportCapacityError(ValueError):
+    """A valid complete packet cannot fit after its safe N8 reduction."""
+
+
 def _closed_schema(properties: dict[str, dict]) -> dict:
     return {
         "type": "object",
@@ -2188,7 +2192,7 @@ def fit_prompt_to_transport_limit(
             high = mid - 1
     if best is None:
         zero = render(0)
-        raise ValueError(
+        raise PromptTransportCapacityError(
             f"prompt remains {len(zero)} chars after removing rendered N8 "
             "candidates; source/runner packet must be repaired or split"
         )

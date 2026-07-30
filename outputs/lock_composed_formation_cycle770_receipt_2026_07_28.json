@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle770_lock_composed_formation_2026_07_28.txt": "d51c9f3cf7df5b22c2d6e0ce8fb24fc7bb0778570ca04aac538d34efc70e65d4",
+      "frontier_cycle770_lock_composed_independent_check_2026_07_28.txt": "6da69aa79561416040be08df1602b242a9b798b0145cebb7e49b2eecd247ef04"
+    },
+    "note": {
+      "path": "docs/LOCK_COMPOSED_FORMATION_CYCLE770_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "0a965c20a668699009964beb55dfdaca739cb19204613df68b6a42addcd5095f"
+    },
+    "runners": {
+      "frontier_cycle770_lock_composed_formation_2026_07_28.py": "9f886b8afb8ea4391bc1c17335bc91c6e9da4cdab6961d0a55d733509631c703",
+      "frontier_cycle770_lock_composed_independent_check_2026_07_28.py": "817604ccde2a28221267ac0158430954181d043eb749b2e411043dd8c8f94c2d"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "exchange": "v1 claimed the witness (full inverse refused at steps 4/128/129, EventCell survives) -> checker 26-attack hostile battery refuted it (5/26 refused; truncated reverse prefixes 6/7 mutate all 744 lock rails without refusal) -> v2 withdraws the witness, carries the battery in the primary, recomputes both classification readings to unidentified",
+    "fixed_supplies": "the composition point; everything Cycle-693/719/745/769 declare",
+    "not_derived": "any permanence witness; the permanence-witnessed census; the repair laws",
+    "outcome": "NO_PERMANENCE_WITNESS_ADVERSARIALLY_CORRECTED",
+    "partial_fact": "the composition does refuse the complete inverse word and simple foreign writes; modes 0-5 and fresh writes untouched; engagement exactly at finalizer decodability (checker trace-verified)",
+    "repair_target": "prefix-closed refusal (refuse every prefix of every un-writing word) or rail-guarded locking (the lock state protected by its own refusal law) \u2014 neither exists on the landed surface"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 770,
+  "date": "2026-07-30",
+  "result": {
+    "classifications": "unidentified / unidentified",
+    "mechanism": "truncated reverse prefixes mutate the lock rails without refusal",
+    "refused": "5/26",
+    "witness": false
+  },
+  "status": "CYCLE770_LOCK_COMPOSED_FORMATION_PASS"
+}

@@ -19,9 +19,9 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 110 |
+| medium | `unaudited` | 109 |
 | critical | `audited_conditional` | 14 |
-| medium | `audited_conditional` | 8 |
+| medium | `audited_conditional` | 9 |
 | high | `audited_conditional` | 5 |
 | ? | `unresolved` | 4 |
 | medium | `audited_failed` | 4 |
@@ -500,7 +500,7 @@ publication tables phrase it.
 | medium | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_3plus1_line_rho1_orientation_theorem_note_2026-04-20` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gauge_vacuum_plaquette_first_sector_minimal_bulk_completion_principle_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gauge_vacuum_plaquette_first_sector_zero_extension_factorized_class_theorem_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
+| medium | `gauge_vacuum_plaquette_perron_reduction_theorem_note` | `audited_conditional` | `audited_conditional` | DERIVATION_ATLAS.md, USABLE_DERIVED_VALUES_INDEX.md |
 | medium | `gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gellmann_completeness_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `gr_class_expansion_finite_rank_target_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

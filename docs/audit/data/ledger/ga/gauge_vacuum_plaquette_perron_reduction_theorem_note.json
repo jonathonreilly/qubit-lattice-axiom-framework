@@ -1,24 +1,77 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-30T01:55:50.443196+00:00",
+  "audit_invocation_history": [
+    "dff0820ac3e6499cbfbe7d77ac155b2b"
+  ],
+  "audit_invocation_id": "dff0820ac3e6499cbfbe7d77ac155b2b",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 2,
+        "C": 19,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and spatial/mixed source formulas, plus the SU(3) six-neighbor recurrence on the supplied gauge carrier."
+    },
+    "dep_claim_type": {
+      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained"
+    },
+    "deps": [
+      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 7.585,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "fe5173577579c8fe2b12409074d7d18e1a7913f614b11c5f4b189750901f5bda",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "fe5173577579c8fe2b12409074d7d18e1a7913f614b11c5f4b189750901f5bda",
+    "runner_path": "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 47
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260730-8337bf99",
+  "auditor_confidence": "medium",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The functional-analytic reduction is valid if the cited transfer theorem supplies the strictly positive continuous symmetric kernel and positive trace-class operator. That load-bearing authority is clipped in the restricted packet, so its full proof cannot be verified here.",
   "claim_id": "gauge_vacuum_plaquette_perron_reduction_theorem_note",
-  "claim_scope": null,
+  "claim_scope": "Finite-volume beta>0 Perron-state and Jacobi-data reduction for the Wilson transfer-operator plaquette problem, conditional on the retained transfer-operator/character-recurrence theorem; excluding explicit beta=6 data, infinite-volume control, and canonical P(6) closure.",
   "claim_type": "positive_theorem",
   "claim_type_author_hint": "positive_theorem",
   "claim_type_author_hint_raw": "positive_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-30T01:55:50.443196+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -26,19 +79,20 @@
     "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note"
   ],
   "direct_in_degree": 4,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 7.585,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "By positivity improvement and the compact self-adjoint Perron-Jentzsch theorem, the spectral radius is simple with a unique normalized strictly positive Perron vector, after which spectral decomposition gives the large-derived-time Perron-state limit.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "87b13badbc408e2d3587633ed87bdfef979ee3a7384ff1770d98979e1a03591c",
   "note_path": "docs/GAUGE_VACUUM_PLAQUETTE_PERRON_REDUCTION_THEOREM_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: rebuild the restricted packet with the complete, unclipped retained transfer-operator/character-recurrence authority and re-audit the imported strict-positivity, continuity, and trace-class premises.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-gpt-5",
   "previous_audits": [
@@ -262,14 +316,14 @@
   "relabel_date": "2026-05-06T17:45:26.976879+00:00",
   "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
+    "A": 8,
+    "B": 2,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 10
   },
   "runner_path": "scripts/frontier_gauge_vacuum_plaquette_perron_reduction_theorem.py",
   "title": "Gauge-Vacuum Plaquette Perron-State Reduction Theorem",
   "transitive_descendants": 47,
-  "verdict_rationale": null
+  "verdict_rationale": "The Perron-Jentzsch, spectral-limit, symmetry, and Jacobi deductions are standard and appear correct once the cited transfer operator has the asserted strict positivity, continuity, symmetry, and trace-class properties. The restricted packet clips the load-bearing authority, so the terminal upstream lemma cannot be checked in full; that lemma is stronger than the downstream reduction hypotheses and is explicitly imported rather than independently established here. The runner supplies ten proxy or text-consistency checks but deliberately does not construct the full Wilson transfer operator, so it cannot repair the clipped proof evidence."
 }

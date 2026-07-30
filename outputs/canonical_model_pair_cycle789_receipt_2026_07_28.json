@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle789_canonical_model_pair_2026_07_28.txt": "2a1faba7886fb49de3a8e25e10612625977868df5faf626c71f306daf083a534",
+      "frontier_cycle789_canonical_pair_independent_check_2026_07_28.txt": "83f516e9ade5b92b4db2984b7780649ed0782ff7333be59691d699874a46f3e9"
+    },
+    "note": {
+      "path": "docs/CANONICAL_MODEL_PAIR_CYCLE789_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "12f54b591a05729a07166902b4d5563eec780c6638258470395d36616e595a0b"
+    },
+    "runners": {
+      "frontier_cycle789_canonical_model_pair_2026_07_28.py": "b2f26d28360841afe694d8aef63fa657a7397377ec51f4e8ea8a8563d28308a1",
+      "frontier_cycle789_canonical_pair_independent_check_2026_07_28.py": "270f6bf0e4a2699072923f05f825727068f11c45ad99f6d1fa8d38c9b45abd2e"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "batteries": "29/29 BOTH models (checker recounted)",
+    "disagreement": "at ALL 7 ties; frozen tie: GCMIN (0,7,9) = 767's beta now derived, GCMAX (0,2,9)",
+    "fixed_supplies": "everything Cycle-719/736/750/758/767/784 declare",
+    "leakage": "bit-identical off-tie on all 103 claimed comparisons + the checker's 155 additional covariance probes",
+    "models": "GCMIN (gate-count-minimum at every tie) and GCMAX (maximum) \u2014 the only total covariant selector family on the complete 7-tie catalog; realization-invariant values (780)",
+    "not_derived": "any winner; actuality for either model",
+    "outcome": "LEG2_UPGRADED_CANONICAL_COMPLETIONS",
+    "theorem": "leg 2 at RETAINED scope witnessed by completions defined entirely from landed physical functionals, total on the complete tie catalog; leg 1 unchanged; leg 3 = the min/max mirror, now embodied as exactly these two models; axiom_update_triggered false"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 789,
+  "date": "2026-07-30",
+  "result": {
+    "batteries": "29/29 x2",
+    "frozen_tie": "GCMIN=(0,7,9), GCMAX=(0,2,9)",
+    "off_tie": "103+155 identical",
+    "ties": "disagree 7/7"
+  },
+  "status": "CYCLE789_CANONICAL_MODEL_PAIR_PASS"
+}

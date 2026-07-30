@@ -41,6 +41,11 @@ checkpoints:
       - "Cycle 778: no-refit attachment COMPLETE at fixture scope — 42/42 configurations (102 row variants) match the frozen kernel exactly; response_law_established stays false (scope); W7 fixture-scope package whole: instrument+kernel+verified prediction+structural additivity+attachment. Checker (family-completeness attack) in flight."
       - "LEG-3 REVERSAL (Cycle 775 checker): v1's NO_DISTINGUISHED_CANDIDATE refuted — v1's translation/reflection actions were UNLAWFUL (fixed-background); corrected lawful station relabeling (99/99) + extended 55-candidate family yields FOUR PHYSICAL candidates (relabeling-covariant, landed-quantity): gate-count-min -> (0,7,9); gate-count-max, relay-occupancy-min, handoff-occupancy-max -> (0,2,9). Physical family PLURAL and DISAGREEING (3-to-1; min/max mirrors unjustified). leg3 status: PHYSICAL_CANDIDATES_EXIST_JUSTIFICATION_OPEN. The landed 753 genesis-minimality theorem is the justification precedent to probe. v2 in flight (WT2)."
     queued: "779 b=7 anchor (WTFIX, in flight); composite-preparation scope extension (module identification needed — 721 lineage absent from origin/main under expected names)"
+  - at: "wave-4 ships"
+    prs:
+      - "#5783 blockR4 Cycle 778: no-refit attachment COMPLETE at fixture scope — checker completed the family (42->63: 15 quadruples + 6 quintuples all matched); v2 carries the full subset lattice, 63/63 exact (192 variants); response_law_established stays FALSE (scope); W7 fixture package whole (749+768+771+774+778)."
+      - "#5784 blockP3 Cycle 775: LEG-3 REVERSAL shipped — v1 actions unlawful; corrected relabeling (99/99); 55-candidate census: 9 BOOKKEEPING / 4 PHYSICAL / 39 NULL / 3 UNCLASSIFIED; the four physical candidates disagree 3-to-1 ((0,2,9) x3 vs (0,7,9) x1); leg3_status PHYSICAL_CANDIDATES_EXIST_JUSTIFICATION_OPEN."
+    in_flight: "780 justification probe (does 753 genesis-minimality transfer to tie selection? realization-invariance is the decisive datum); 777-checker (landed-inventory hunt); 779 b=7 anchor; composite-prep module-ID scout (WT3)"
 queue_next:
   - b=7 anchor (~20 min at the 1.47B steps/s evaluator idiom)
   - k=3/4 full strata; T>64 horizons

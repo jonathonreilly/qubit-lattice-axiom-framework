@@ -1,0 +1,41 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle783_functional_order_w2_2026_07_28.txt": "8da182c8807513278f070893886423c1d4c557ada1ca8c543a8a701c16bf3535",
+      "frontier_cycle783_order_independent_check_2026_07_28.txt": "8255545b3d0aaa792f2af492efc038eaecccaf10049b5394d4145b4bebe0c398"
+    },
+    "note": {
+      "path": "docs/FUNCTIONAL_ORDER_W2_CYCLE783_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "4a90309fd9cde5003c89c6bb00cfcffddf2120767d8916c1316893e6ba7d382b"
+    },
+    "runners": {
+      "frontier_cycle783_functional_order_w2_2026_07_28.py": "d773f3ce86d7c7f6fba9d49cddb2e9839f4dce26a30310b7b2bb5568418c94c1",
+      "frontier_cycle783_order_independent_check_2026_07_28.py": "e28fc9421d7a50befa08e930f7efe1835320627d8aa28fae4a1cdb161c359c64"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "baseline": "witness 1/11; 0/2,046 exhaustive fixed-order classes position-uniform (reproduced)",
+    "consequence": "the 752 wall now stands against every landed covariant functional order (18 candidates censused), not just fixed orders",
+    "fixed_supplies": "the functional definitions (reimplemented, basis printed); everything the 752 package declares",
+    "functionals": "gate-count asc/desc and occupancy asc/desc all 0/11; checker faithful mappings 0/11; fourteen alternative covariant candidates best 0/11; tie audit clean (no silent fallback; counterfactual fallback that could fake 1/11 correctly refused)",
+    "not_derived": "any W2 closure; any order source from premises not yet landed",
+    "outcome": "NO_ORDER"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 783,
+  "date": "2026-07-30",
+  "result": {
+    "baseline": "1/11 witness reproduced",
+    "battery": "0/11 all four orders; 14 alternatives 0/11",
+    "outcome": "NO_ORDER"
+  },
+  "status": "CYCLE783_FUNCTIONAL_ORDER_W2_PASS"
+}

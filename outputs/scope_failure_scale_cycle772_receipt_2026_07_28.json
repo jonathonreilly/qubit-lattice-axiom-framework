@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle772_scale_independent_check_2026_07_28.txt": "44d06b6d99a90e2881a1a02a78a0b4b67f5af773bf9137c2b3f8d3b503fa9300",
+      "frontier_cycle772_scope_failure_scale_2026_07_28.txt": "4757f367edb9fe798995744cf40eda32a958a8abff7586cd02fe3564b92b4413"
+    },
+    "note": {
+      "path": "docs/SCOPE_FAILURE_SCALE_CYCLE772_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "b9d09405bd306fbe533097bf0646c458b2274905f01239dcd1b23ebc1aa4ddd0"
+    },
+    "runners": {
+      "frontier_cycle772_scale_independent_check_2026_07_28.py": "a2ceb95745b3b105cda27e7984ec9847714f804db6883f6c6e001a1f06fa1a36",
+      "frontier_cycle772_scope_failure_scale_2026_07_28.py": "ca894caf6c89c7fd847dff4f548e1e03b7a54d5c282dc70203ec8af35b8498f8"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "correction": "the checker also caught the 766 prose rounding: E0 uniform TV = 175/627 = 0.2791 (not 0.2793) \u2014 fixed on this stack",
+    "exchange": "primary v1 MECHANISM_CONSISTENT -> checker duplicate-content refutation (285,192 raw events at 256x collapse to 3,342 distinct contents; distinct selector inputs exactly 38 at every rung; zero new selector invocations) -> v2 novelty-gated verdict CONTENT_DEGENERATE with the novelty-ignored reading preserved as data",
+    "fixed_supplies": "the frozen 766 assignment and conventions (text/AST comparator); the ladder; everything Cycle-317/750/763/766 declare",
+    "learned": "the landed 763 generator is content-bounded at this fixture scope (its selector input space IS the 38 fixture epochs); the E0/E1 sample-vs-mechanism question cannot be answered by laddering this generator",
+    "next": "genuinely new selector fixtures (a larger landed fixture family through the derived selector)",
+    "not_derived": "any sample-vs-mechanism verdict; the family win; the weight claim (untouched)",
+    "outcome": "CONTENT_DEGENERATE"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 772,
+  "date": "2026-07-29",
+  "result": {
+    "novelty": "38 selector inputs constant; content saturates at 3,342; raw 285,192",
+    "novelty_ignored_reading": "MECHANISM_CONSISTENT (printed as data)",
+    "verdict": "CONTENT_DEGENERATE"
+  },
+  "status": "CYCLE772_SCOPE_FAILURE_SCALE_PASS"
+}

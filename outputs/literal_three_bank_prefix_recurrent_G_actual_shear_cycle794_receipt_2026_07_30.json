@@ -1,0 +1,64 @@
+{
+  "cycle": 794,
+  "date": "2026-07-30",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "CYCLE794_LITERAL_PREFIX_RECURRENT_G_ACTUAL_SHEAR_PASS",
+  "checks": {
+    "prefix_recurrent_composition": 7,
+    "actual_generator_shear": 5,
+    "failed": 0
+  },
+  "result": {
+    "two_cell_program_primitives": 6590,
+    "held_three_cell_program_primitives": 10591,
+    "two_cell_program_sha256": "fe190a1b0c786151e52687e1a957bdc017feba0d374edae686476bae6697b144",
+    "held_three_cell_program_sha256": "892960688896eda60b79485288d5c794270df12e9d03d81934205cc454f5e350",
+    "two_cell_postcomposition_substitution_failures": 0,
+    "held_three_cell_postcomposition_substitution_failures": 0,
+    "actual_shear_frame_origin_contexts_per_fixture": 192,
+    "actual_shear_ordered_frame_product_origin_blocks": 4608,
+    "maximum_signed_shear_row_weight": 11,
+    "maximum_correction_repair_cells": 2,
+    "maximum_correction_repair_diameter": 1,
+    "explicit_M2_per_cell": 64,
+    "same_slot_signed_mismatches_two_cube": 15616,
+    "same_slot_signed_mismatches_overlap_box": 23616,
+    "actual_generator_shear_product_failures": 0,
+    "maximum_particle_sector_residual": 2.526252967680787e-15,
+    "one_particle_mass_residual": 5.551115123125783e-17
+  },
+  "boundary": {
+    "positive_scope": "literal returned O/I/L input prefix, actual routed Cycle-720 recurrent update, and independently rebuilt proper-cubic generator shear with bounded local repair on the declared supplied code domain",
+    "not_derived": "autonomous genesis, parity/coframe/domain enforcement, occurrence, renewal, physical time, source/gravity, permanent Record, Born/history, or a no-refit prediction bridge",
+    "raw_input_route": "independently positive as a one-shot local-factor tree decoder, but excluded here because its rooted station word and occurrence remain supplied and its control path grows with the finite box",
+    "constitutional_effect": "none",
+    "axiom_pressure": false
+  },
+  "artifacts": {
+    "note": {
+      "path": "docs/LITERAL_THREE_BANK_PREFIX_RECURRENT_G_ACTUAL_SHEAR_CYCLE794_BOUNDED_THEOREM_NOTE_2026-07-30.md",
+      "sha256": "33eda00e3cc1587d8a2f36ffff54ed0fc3c04b2c2a4d268f1250d1ba06343a09"
+    },
+    "runners": {
+      "scripts/frontier_cycle794_literal_three_bank_prefix_core_2026_07_30.py": "f6e820f7e4c4aaafbaa5751bd35989b97fe3b86c767bb724e783b67ee4197c6d",
+      "scripts/frontier_cycle794_literal_prefix_recurrent_G_substitution_2026_07_30.py": "1a5828c726cfca96c7a2240914a61f980a9406835821a44108a9061d7f6f1009",
+      "scripts/frontier_cycle794_actual_frame_shear_three_bank_schedule_2026_07_30.py": "f3be7d68a287d066ebbf3040d90edf5b4b86ff535cbf2edd42b4fbeb68426253"
+    },
+    "caches": {
+      "logs/runner-cache/frontier_cycle794_literal_prefix_recurrent_G_substitution_2026_07_30.txt": {
+        "sha256": "282e747b094801bc7e832bcf36968a31342690b7acee3baee3a6bd62f8b53217",
+        "input_fingerprint_sha256": "39c7e80aa66bcff744c235ac335306bff2ce31f86964a850f2b37f421725f53d",
+        "exit_code": 0,
+        "report_sha256": "ad404b738e4ac5490e85132f097d05f70b63f16fe5381faf25e70a45469bcb5f"
+      },
+      "logs/runner-cache/frontier_cycle794_actual_frame_shear_three_bank_schedule_2026_07_30.txt": {
+        "sha256": "f83cef586bf3918067af2e3c7084c8a17d595cc09484e4571b50dc226df9c729",
+        "input_fingerprint_sha256": "1d626f45f5fad6ec6e09fec9abdff78008e5cb795c2c30dcc33795547da0a82b",
+        "exit_code": 0,
+        "report_sha256": "35839ab4a48bf9cd5f24e952b15004fc48b5a3de08062a06b188d22bba705c49"
+      }
+    }
+  }
+}

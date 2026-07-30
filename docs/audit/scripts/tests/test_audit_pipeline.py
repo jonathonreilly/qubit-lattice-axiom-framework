@@ -25,6 +25,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import unicodedata
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -9085,10 +9086,37 @@ class NoGoDisciplineGateTest(unittest.TestCase):
 
     def test_n1_normalization_route_accepts_exact_w_unit_marker(self):
         m = _import("no_go_discipline_gate")
-        self.assertTrue(
-            m.route_class_marker_matches("normalization_or_units", "W_unit")
+        exact_marker_cases = (
+            "W_unit",
+            "W_units",
+            "frontier_W_units",
+            "frontier_W_unit_probe",
+            "route_W_unit",
+            "W_unit_route",
+            "RECORD_W_UNIT_2026-07-30.md",
         )
-        for non_marker in ("preW_unit", "W_unit_post", "W_unitary", "W__unit"):
+        for marker_case in exact_marker_cases:
+            with self.subTest(exact_marker_case=marker_case):
+                self.assertTrue(
+                    m.route_class_marker_matches(
+                        "normalization_or_units", marker_case
+                    )
+                )
+        unicode_decomposed = "W_unit\u0308"
+        unicode_precomposed = unicodedata.normalize("NFC", unicode_decomposed)
+        non_markers = (
+            "preW_unit",
+            "W_unit_post",
+            "W_unitary",
+            "W__unit",
+            "W_unitless",
+            "W_unitization",
+            "frontier_unitary_operator",
+            "frontier_X_unitary_operator",
+            unicode_decomposed,
+            unicode_precomposed,
+        )
+        for non_marker in non_markers:
             with self.subTest(non_marker=non_marker):
                 self.assertFalse(
                     m.route_class_marker_matches(
@@ -9136,6 +9164,25 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         self.assertIsNone(
             m.validate_no_go_discipline(audit, evidence_manifest=manifest)
         )
+        for marker_case in exact_marker_cases:
+            with self.subTest(full_validator_exact_marker_case=marker_case):
+                compound_marker_line = (
+                    f"N2 route {marker_case}: the exact unit marker remains "
+                    "evidenced"
+                )
+                manifest[stdout_path]["text"] += "\n" + compound_marker_line
+                route.update({
+                    "mechanism": compound_marker_line,
+                    "attempt": compound_marker_line,
+                    "outcome": compound_marker_line,
+                    "evidence_locator": compound_marker_line,
+                })
+                _set_no_go_scan_coverage(packet, manifest)
+                self.assertIsNone(
+                    m.validate_no_go_discipline(
+                        audit, evidence_manifest=manifest
+                    )
+                )
         near_marker_line = (
             "N2 wall W_unitary: beta-one and beta-two singleton laws share h "
             "but remain distinct"
@@ -9152,6 +9199,25 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "not supported by its evidenced",
             m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
         )
+        for non_marker in non_markers:
+            with self.subTest(full_validator_non_marker=non_marker):
+                compound_non_marker_line = (
+                    f"N2 route {non_marker}: the lookalike remains evidenced"
+                )
+                manifest[stdout_path]["text"] += "\n" + compound_non_marker_line
+                route.update({
+                    "mechanism": compound_non_marker_line,
+                    "attempt": compound_non_marker_line,
+                    "outcome": compound_non_marker_line,
+                    "evidence_locator": compound_non_marker_line,
+                })
+                _set_no_go_scan_coverage(packet, manifest)
+                self.assertIn(
+                    "not supported by its evidenced",
+                    m.validate_no_go_discipline(
+                        audit, evidence_manifest=manifest
+                    ) or "",
+                )
         for marker_case in independent_marker_cases:
             with self.subTest(full_validator_marker_case=marker_case):
                 compound_marker_line = (
@@ -9901,7 +9967,8 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             template_flat,
         )
         self.assertIn(
-            "normalization_or_units`: normalization, unit, `W_unit`, scale",
+            "normalization_or_units`: normalization, whole-token unit/units, "
+            "exact `W_unit`/`W_units`, scale",
             template_flat,
         )
         self.assertIn(

@@ -630,7 +630,7 @@ literal marker accepted for its `route_class`:
 - `symmetry_or_representation`: symmetry, invariant, representation, commutator, character, irrep, group;
 - `alternate_carrier_or_sector`: carrier(s), sector(s), module(s), space(s), irrep(s);
 - `boundary_or_initial_condition`: boundary, initial, background, state, pointwise;
-- `normalization_or_units`: normalization, unit, `W_unit`, scale, dimensionful;
+- `normalization_or_units`: normalization, whole-token unit/units, exact `W_unit`/`W_units`, scale, dimensionful;
 - `dynamical_or_effective_action`: dynamic, effective, action, evolution, equivariant family;
 - `lattice_scale_or_limit`: lattice, continuum, limit, finite-size, asymptotic, approximate;
 - `numerical_or_finite_case`: numeric, finite, sample, scan, compute;
@@ -649,7 +649,11 @@ distinct semantic roles.
 The validator treats `_` and `-` inside verbatim identifiers as lexical
 separators for this marker check. For example, `oriented_cubical_boundary` and
 `POST_RECORD_DYNAMICS` carry the documented `boundary` and `dynamic` markers;
-the quoted field must still occur verbatim at its cited evidence path.
+the quoted field must still occur verbatim at its cited evidence path. Exact
+`W_unit`/`W_units` markers may likewise occur inside underscore-delimited
+identifiers. The reserved lookalikes `preW_unit`, `W_unit_post`, `W_unitary`,
+and `W__unit` do not supply that marker by themselves; nor do `unitary`,
+`unitless`, or `unitization` satisfy the whole-token unit/units marker.
 
 When the gate is `FAIL`, list only the genuinely evidenced routes; fewer than
 five is valid and records the N1 failure. Do not fabricate extra routes merely

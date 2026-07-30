@@ -1,0 +1,43 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "claim_type": "bounded_theorem",
+  "cycle": 800,
+  "date": "2026-07-30",
+  "dependency_pins": {
+    "base_commit": "bc4500f2945bfd637411bf946f968f357de1fe64",
+    "cycle720_note_sha256": "fb54e3476dcbf2a8becca1b93fa327bcefd5a17f06f55b2bebcbeea234993b9e",
+    "cycle720_recurrent_runner_sha256": "3064da20e961cea6c4c07a8317028ac9657d6fdd0643bd938a770491e5fad1fc",
+    "cycle789_note_sha256": "73dc4a31f43750443c8daa7f98516191ae6a81cbdb3bd4134b5202df2815f5e8",
+    "cycle789_schedule_sha256": "3553ec8293d7cba935422ddccbc9e4b8dc9f4cd30c3ee6487f65f15c4ad2fe68"
+  },
+  "held_scope": {
+    "cells": 120,
+    "coframe_M2_per_cell": 3,
+    "expanded_CNOT_gates_per_cell": 435,
+    "fixed_local_slot_layers": 9,
+    "frame_origin_contexts": 192,
+    "maximum_route_distance": 14,
+    "minimum_deleted_return_label_failures": 2,
+    "ordered_frame_products": 576,
+    "padded_CNOT_microsteps": 729,
+    "persistent_OL_M2_per_cell": 18,
+    "route_support_M2_per_cell": 51,
+    "shape": [
+      6,
+      5,
+      4
+    ]
+  },
+  "result": "Given supplied clean O, an already companion-encoded full physical L bank transfers exactly into the landed recurrent O coordinates by nine returned endpoint-SWAP routes per cell, preserving external entanglement and leaving L equal to the clean O input. The one-time initializer uses no I/EPR/Bell-syndrome bank and postcomposes with the actual recurrent physical G on two and held three cells. It is not erasure or repeated independent-input recycling; clean O genesis, raw six-mode-to-L encoding, coframe and program occurrence remain supplied.",
+  "runner": {
+    "cache_sha256": "aa80e926025a21193c9c5be2435a416d605313d7dbe350b5d498a3919aa5f444",
+    "coherent_word_isometry_residual": 4.732681091546602e-16,
+    "direct_swap_isometry_residual": 0.0,
+    "external_reference_entanglement_transfer_residual": 3.1569827355773645e-16,
+    "internal_report_sha256": "b61752d59cdbd62cc0a981b9fdff2a836a2c54533ad8b931881b7545c5915c09",
+    "maximum_one_particle_mass_residual": 5.551115123125783e-17,
+    "script_sha256": "11c607288fc3ed13dfc32c06d67239d717c2d9438c9ff228b5cb95e8affb016d",
+    "status": "PASS"
+  }
+}

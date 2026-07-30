@@ -1,44 +1,101 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-30T05:51:13.752432+00:00",
+  "audit_invocation_history": [
+    "cce8b751dc0b40159c9fc841dfe21239"
+  ],
+  "audit_invocation_id": "cce8b751dc0b40159c9fc841dfe21239",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 0,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/frontier_teleportation_three_register_cross_encoding.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/frontier_teleportation_three_register_cross_encoding_core.py": "69210b296ba452a2096b35aff85add45c5da84f5f0354e67a5e4b36af20349ff"
+    },
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_teleportation_three_register_cross_encoding.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "85b54b135592223a5bf42b2a3c73a12fd00c59121fe465a9a5eb4f9c5cd239ac",
+        "cache_runner_sha256": "cfa417f66f80961e520bf3356ff6b1a1ea26b910d54679ffb03435cb40f83eb2",
+        "cache_status": "ok"
+      },
+      "scripts/frontier_teleportation_three_register_cross_encoding_core.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      }
+    },
+    "runner_hash": "cfa417f66f80961e520bf3356ff6b1a1ea26b910d54679ffb03435cb40f83eb2",
+    "runner_path": "scripts/frontier_teleportation_three_register_cross_encoding.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260730-7a1fab50",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Direct matrix contraction independently confirms the positive logical identity, Pauli-order signs, branch probability 1/4, correction, twirl, and factorized counts. The broader chain does not close because the asserted necessity boundaries are not subjected to the required alternative-route stress test, and the missing-A-to-R control skips rather than executes the mismatched-support cases.",
   "claim_id": "teleportation_three_register_cross_encoding_note",
-  "claim_scope": null,
+  "claim_scope": "For dimensions 1, 2, 3 and side lengths 2 and 4, the encoded logical teleportation identity, the 131-encoding and 890633-triple factorized coverage, and the necessity boundaries represented by the 1609-triple controls.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-30T05:51:13.752432+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/frontier_teleportation_three_register_cross_encoding_core.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The exact reason is the two-dimensional teleportation identity conjugated by the three encoding isometries, whose premises factor by register.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "derived_no_go_boundary"
+  ],
   "note_hash": "65de6e02292d129dbcf60b71323fdf30384f30dff12916a68c3d076e30437a8f",
   "note_path": "docs/TELEPORTATION_THREE_REGISTER_CROSS_ENCODING_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "scope_too_broad: narrow the note to the exact positive identity or add complete N1-N8 evidence for each asserted control boundary, including tests of direct cross-support Bell pairing and absorption of a nonidentity resource map into Bob's corrections.",
   "open_dependency_paths": [],
   "previous_auditor_family": "codex-fresh-agent",
   "previous_audits": [
@@ -213,14 +270,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 3,
     "B": 0,
-    "C": 0,
+    "C": 11,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 14
   },
   "runner_path": "scripts/frontier_teleportation_three_register_cross_encoding.py",
   "title": "Teleportation Three-Register Cross-Encoding Note",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: The exact positive identity closes, but the note also asserts derived necessity boundaries for omitted A-to-R pairing, fixed Bell/Bob X, and a nonidentity R-to-B map; N1 lacks five distinct attack-route classes, N2 wall independence is unproved, N3 exposes explicit convention/boundary language, N4 has no witness residual, N5 lacks five-resolution tests, N6 leaves basis/correction reframes open, N7 has an unresolved steelman, and N8 echoes are undispositioned. Why this blocks: the controls cannot certify those negative necessity claims, although an independent contraction confirms the positive branch map and correction. Repair target: supply complete N1-N8 stress evidence, including alternative pairing and correction conventions. Claim boundary until fixed: retain only the finite axis-adapted logical identity and factorized coverage; treat the control telemetry as diagnostic rather than a proved no-go boundary."
 }

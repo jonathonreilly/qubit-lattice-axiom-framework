@@ -221,6 +221,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "cycle332_receiver_success_cycle610_gate_adapter_bounded_theorem_note_2026-07-30": [
         "scripts/frontier_cycle747_receiver_success_gate_adapter_independent_check_2026_07_30.py",
     ],
+    # This checker's closed-form controller reconstruction deliberately imports
+    # no symbol from the primary and invokes it only through a subprocess.
+    # Expose the separate source to the restricted audit packet explicitly.
+    "binder_formation_attempt_cycle751_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle751_binder_independent_check_2026_07_28.py",
+    ],
     # Cycle 820's independent tuple/bit-vector reconstruction deliberately
     # imports neither the primary nor its new core. Keep it separate while
     # still exposing and hash-binding it in the restricted audit packet.

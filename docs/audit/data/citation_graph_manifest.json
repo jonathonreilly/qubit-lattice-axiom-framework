@@ -1,6 +1,6 @@
 {
- "edge_count": 15301,
- "node_count": 4600,
+ "edge_count": 15305,
+ "node_count": 4601,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1354,6 +1354,10 @@
    "deps_hash": "a2b1fdf02953",
    "out_degree": 3
   },
+  "binder_formation_attempt_cycle751_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "5ea489d20f21",
+   "out_degree": 3
+  },
   "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -1615,8 +1619,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "f2e66dc1aad0",
-   "out_degree": 327
+   "deps_hash": "79102daa794a",
+   "out_degree": 328
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",

@@ -1,6 +1,6 @@
 {
- "edge_count": 15305,
- "node_count": 4601,
+ "edge_count": 15338,
+ "node_count": 4606,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1619,8 +1619,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "79102daa794a",
-   "out_degree": 328
+   "deps_hash": "d2c5da278fe5",
+   "out_degree": 332
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -10426,6 +10426,10 @@
    "deps_hash": "98dd6f304988",
    "out_degree": 8
   },
+  "physical_m2_typed_radius_one_compiler_tournament_cycle822_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "4f426bcba0df",
+   "out_degree": 10
+  },
   "physical_operational_source_response_readout_chain_cycle700_note_2026-07-25": {
    "deps_hash": "7dc7df7e6543",
    "out_degree": 12
@@ -12645,6 +12649,22 @@
   "route2_readout_record_positivity_does_not_fix_rho_e_narrow_no_go_note_2026-06-08": {
    "deps_hash": "64eb2ba63e1c",
    "out_degree": 5
+  },
+  "route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "20e02c11a8d5",
+   "out_degree": 4
+  },
+  "route_a_radius_one_parity_even_compiler_cycle822_note_2026-07-30": {
+   "deps_hash": "cc6dda6c2c3f",
+   "out_degree": 5
+  },
+  "route_b_typed_spectator_radius_one_synthesis_cycle822_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "460a983da324",
+   "out_degree": 3
+  },
+  "routec_staggered_radius_one_parity_even_transport_cycle822_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "e8158400ce82",
+   "out_degree": 7
   },
   "rp_coupled_multislice_halfspace_gauge_staggered_os_gram_narrow_theorem_note_2026-07-11": {
    "deps_hash": "6dd0963e11c9",

@@ -297,6 +297,29 @@ def synchronous_word(
     return tuple(word)
 
 
+def compile_word(
+    word: tuple[object, ...],
+) -> tuple[tuple[int, int, int, int], ...]:
+    """Compile landed gates to a small bit-slice instruction tuple."""
+
+    rows = []
+    for gate in word:
+        if gate.kind == "X":
+            rows.append((0, gate.wires[0], 0, 0))
+        elif gate.kind == "CNOT":
+            rows.append((1, gate.wires[0], gate.wires[1], 0))
+        elif gate.kind == "TOF":
+            rows.append((
+                2,
+                gate.wires[0],
+                gate.wires[1],
+                gate.wires[2],
+            ))
+        else:
+            raise ValueError(("unsupported landed gate", gate))
+    return tuple(rows)
+
+
 def watched_registers() -> tuple[tuple[str, int], ...]:
     return (
         ("POINTER", K.A.POINTER),
@@ -357,6 +380,10 @@ def build_family() -> dict[str, object]:
     positions = separated_pairs()
     words = {
         positions0: synchronous_word(program, positions0)
+        for positions0 in positions
+    }
+    compiled_words = {
+        positions0: compile_word(words[positions0])
         for positions0 in positions
     }
     states: dict[Key, tuple[int, ...]] = {}
@@ -438,6 +465,7 @@ def build_family() -> dict[str, object]:
         "epochs": tuple(epochs),
         "positions": positions,
         "words": words,
+        "compiled_words": compiled_words,
         "states": states,
         "supports": supports,
         "summary": summary,
@@ -797,7 +825,7 @@ def state_token(state: tuple[int, ...]) -> int:
     """Compact lookup token; every hit is confirmed by exact state equality."""
 
     return int.from_bytes(
-        sha256(bytes(state)).digest()[:16], "big"
+        sha256(bytes(state)).digest()[:8], "big"
     )
 
 
@@ -810,6 +838,23 @@ def exact_state_at(
     for _step in range(update):
         state = K.A.apply_semantic(state, word)
     return state
+
+
+def find_exact_entry(
+    state0: tuple[int, ...],
+    word: tuple[object, ...],
+    repeated_state: tuple[int, ...],
+    token: int,
+    closure: int,
+) -> int | None:
+    """Scan the bounded prefix only after a token hit; compare exact states."""
+
+    candidate = state0
+    for entry in range(closure):
+        if state_token(candidate) == token and candidate == repeated_state:
+            return entry
+        candidate = K.A.apply_semantic(candidate, word)
+    return None
 
 
 def proper_divisors(value: int) -> tuple[int, ...]:
@@ -939,7 +984,7 @@ def initialise_records(
             "state0": state,
             "state": state,
             "current_support": support,
-            "seen_token_times": {state_token(state): 0},
+            "seen_tokens": {state_token(state)},
             "first_clean": 0 if not support else None,
             "cycle_start": None,
             "state_period": None,
@@ -972,55 +1017,164 @@ def advance_one_key(
         transitions += 1
         state = K.A.apply_semantic(record["state"], word)
         support = residual_support(state)
-        record["state"] = state
-        record["current_support"] = support
-        record["last_evolved"] = update
-        if not support:
-            record["first_clean"] = update
-            record["verification"] = verify_transient(
-                record["state0"], word, update, state
-            )
+        if observe_state(record, word, update, state, support):
             break
+    return transitions
 
-        token = state_token(state)
-        prior = record["seen_token_times"].get(token)
-        if prior is None:
-            record["seen_token_times"][token] = update
-            continue
-        candidate_times = (prior,) if isinstance(prior, int) else tuple(prior)
-        exact_entry = None
-        for entry in candidate_times:
-            candidate_state = exact_state_at(
-                record["state0"], word, entry
-            )
-            if candidate_state == state:
-                exact_entry = entry
-                break
-            record["token_collisions"] += 1
-        if exact_entry is None:
-            if isinstance(prior, int):
-                record["seen_token_times"][token] = [prior, update]
-            else:
-                prior.append(update)
-            continue
 
-        cycle_verification = verify_cycle(
-            record["state0"],
-            word,
-            exact_entry,
-            update,
-            state,
+def observe_state(
+    record: dict[str, object],
+    word: tuple[object, ...],
+    update: int,
+    state: tuple[int, ...],
+    support: Support,
+) -> bool:
+    record["state"] = state
+    record["current_support"] = support
+    record["last_evolved"] = update
+    if not support:
+        record["first_clean"] = update
+        record["verification"] = verify_transient(
+            record["state0"], word, update, state
         )
-        record["cycle_start"] = exact_entry
-        record["state_period"] = cycle_verification["state_period"]
-        record["residual_period"] = cycle_verification["residual_period"]
-        record["cycle_closure"] = update
-        record["cycle_nonzero"] = (
-            cycle_verification["all_cycle_phases_nonclean"]
+        return True
+
+    token = state_token(state)
+    if token not in record["seen_tokens"]:
+        record["seen_tokens"].add(token)
+        return False
+    exact_entry = find_exact_entry(
+        record["state0"], word, state, token, update
+    )
+    if exact_entry is None:
+        record["token_collisions"] += 1
+        return False
+
+    cycle_verification = verify_cycle(
+        record["state0"],
+        word,
+        exact_entry,
+        update,
+        state,
+    )
+    record["cycle_start"] = exact_entry
+    record["state_period"] = cycle_verification["state_period"]
+    record["residual_period"] = cycle_verification["residual_period"]
+    record["cycle_closure"] = update
+    record["cycle_nonzero"] = (
+        cycle_verification["all_cycle_phases_nonclean"]
+    )
+    record["verification"] = cycle_verification
+    record["exact_recurrence_confirmations"] += 1
+    return True
+
+
+def bit_slice(
+    states: tuple[tuple[int, ...], ...],
+) -> list[int]:
+    if not states:
+        return []
+    return [
+        sum(state[wire] << index for index, state in enumerate(states))
+        for wire in range(len(states[0]))
+    ]
+
+
+def un_slice(
+    columns: list[int],
+    index: int,
+) -> tuple[int, ...]:
+    return tuple((column >> index) & 1 for column in columns)
+
+
+def apply_compiled_bit_slice(
+    columns: list[int],
+    operations: tuple[tuple[int, int, int, int], ...],
+    width: int,
+) -> None:
+    mask = (1 << width) - 1
+    for kind, first, second, third in operations:
+        if kind == 0:
+            columns[first] ^= mask
+        elif kind == 1:
+            columns[second] ^= columns[first]
+        else:
+            columns[third] ^= columns[first] & columns[second]
+
+
+def bit_slice_equivalence_certificate(
+    family: dict[str, object],
+) -> dict[str, object]:
+    rows = []
+    for positions in family["positions"]:
+        keys = tuple((event, positions) for event in range(4))
+        states = tuple(family["states"][key] for key in keys)
+        columns = bit_slice(states)
+        apply_compiled_bit_slice(
+            columns, family["compiled_words"][positions], len(states)
         )
-        record["verification"] = cycle_verification
-        record["exact_recurrence_confirmations"] += 1
-        break
+        observed = tuple(
+            un_slice(columns, index) for index in range(len(states))
+        )
+        expected = tuple(
+            K.A.apply_semantic(state, family["words"][positions])
+            for state in states
+        )
+        rows.append({
+            "positions": positions,
+            "keys": len(keys),
+            "word_gates": len(family["words"][positions]),
+            "exact": observed == expected,
+            "observed_sha256": digest(tuple(
+                state_sha256(state) for state in observed
+            )),
+            "expected_sha256": digest(tuple(
+                state_sha256(state) for state in expected
+            )),
+        })
+    return {
+        "basis": (
+            "all 44 position-words, all four event states, one exact "
+            "landed step: bit-sliced X/CNOT/TOF equals scalar apply_semantic"
+        ),
+        "rows": tuple(rows),
+        "row_sha256": digest(tuple(rows)),
+        "pass": len(rows) == 44 and all(row["exact"] for row in rows),
+    }
+
+
+def advance_key_group(
+    records: dict[Key, dict[str, object]],
+    keys: tuple[Key, ...],
+    word: tuple[object, ...],
+    operations: tuple[tuple[int, int, int, int], ...],
+    end_update: int,
+) -> int:
+    active = list(keys)
+    if not active:
+        return 0
+    update = records[active[0]]["last_evolved"]
+    columns = bit_slice(tuple(records[key]["state"] for key in active))
+    transitions = 0
+    while active and update < end_update:
+        update += 1
+        apply_compiled_bit_slice(columns, operations, len(active))
+        next_active = []
+        for index, key in enumerate(active):
+            state = un_slice(columns, index)
+            support = residual_support(state)
+            transitions += 1
+            if not observe_state(
+                records[key], word, update, state, support
+            ):
+                next_active.append(key)
+        if len(next_active) != len(active):
+            active = next_active
+            columns = bit_slice(tuple(
+                records[key]["state"] for key in active
+            ))
+        else:
+            active = next_active
     return transitions
 
 
@@ -1110,6 +1264,10 @@ def public_snapshot(snapshot: dict[str, object]) -> dict[str, object]:
 def advance_population(
     records: dict[Key, dict[str, object]],
     words: dict[tuple[int, int], tuple[object, ...]],
+    compiled_words: dict[
+        tuple[int, int],
+        tuple[tuple[int, int, int, int], ...],
+    ],
     keys: tuple[Key, ...],
     start_horizon: int,
     end_horizon: int,
@@ -1129,9 +1287,22 @@ def advance_population(
                 record["last_evolved"],
                 start_horizon,
             ))
-        transitions += advance_one_key(
-            record, words[key[1]], end_horizon
+    grouped = {
+        positions: tuple(
+            key for key in active_before if key[1] == positions
         )
+        for positions in sorted({key[1] for key in active_before})
+    }
+    for positions, group in grouped.items():
+        transitions += advance_key_group(
+            records,
+            group,
+            words[positions],
+            compiled_words[positions],
+            end_horizon,
+        )
+    for key in active_before:
+        record = records[key]
         if terminal(record):
             resolved.append(key)
         else:
@@ -1363,28 +1534,42 @@ def replay_declared_slice(
     horizon: int,
     boundaries: tuple[int, ...],
 ) -> tuple[dict[str, object], ...]:
-    rows = []
+    row_by_key = {
+        key: {"key": key, "boundaries": []}
+        for key in keys
+    }
     boundary_set = set(boundaries)
-    for key in keys:
-        state = family["states"][key]
-        boundary_rows = []
+    for positions in sorted({key[1] for key in keys}):
+        group = tuple(key for key in keys if key[1] == positions)
+        columns = bit_slice(tuple(
+            family["states"][key] for key in group
+        ))
         for update in range(1, horizon + 1):
-            state = K.A.apply_semantic(state, family["words"][key[1]])
+            apply_compiled_bit_slice(
+                columns,
+                family["compiled_words"][positions],
+                len(group),
+            )
             if update in boundary_set:
-                support = residual_support(state)
-                boundary_rows.append({
-                    "horizon": update,
-                    "landed_clean": not support,
-                    "support_weight": len(support),
-                    "support_sha256": digest(canonical_support(support)),
-                    "state_sha256": state_sha256(state),
-                })
-        rows.append({
-            "key": key,
-            "boundaries": tuple(boundary_rows),
-            "final_state_sha256": state_sha256(state),
-        })
-    return tuple(rows)
+                for index, key in enumerate(group):
+                    state = un_slice(columns, index)
+                    support = residual_support(state)
+                    row_by_key[key]["boundaries"].append({
+                        "horizon": update,
+                        "landed_clean": not support,
+                        "support_weight": len(support),
+                        "support_sha256":
+                            digest(canonical_support(support)),
+                        "state_sha256": state_sha256(state),
+                    })
+        for index, key in enumerate(group):
+            row_by_key[key]["final_state_sha256"] = state_sha256(
+                un_slice(columns, index)
+            )
+    return tuple({
+        **row_by_key[key],
+        "boundaries": tuple(row_by_key[key]["boundaries"]),
+    } for key in keys)
 
 
 def primary_slice_rows(
@@ -1450,6 +1635,7 @@ def run() -> int:
 
     sources = source_certificate()
     family = build_family()
+    bit_slice_control = bit_slice_equivalence_certificate(family)
     feature_table = reconstruct_feature_table(family)
     separators = separator_reconstruction(feature_table)
     records = initialise_records(family)
@@ -1457,6 +1643,7 @@ def run() -> int:
     baseline_phase = advance_population(
         records,
         family["words"],
+        family["compiled_words"],
         tuple(sorted(records)),
         0,
         BASELINE_HORIZON,
@@ -1474,6 +1661,7 @@ def run() -> int:
         phase = advance_population(
             records,
             family["words"],
+            family["compiled_words"],
             tuple(snapshots[prior]["open_keys"]),
             prior,
             boundary,
@@ -1508,6 +1696,7 @@ def run() -> int:
 
     a_pass = (
         family["summary"]["pass"]
+        and bit_slice_control["pass"]
         and snapshot4096["transient_count"] == 2
         and snapshot4096["cycle_count"] == 12
         and snapshot4096["open_count"] == EXPECTED_OPEN_SIZE
@@ -1528,6 +1717,7 @@ def run() -> int:
     checks["A_DEEP_CONTINUATION_COMPLETE_BOUNDARIES"] = a_pass
     certificates["A_DEEP_CONTINUATION"] = {
         "baseline": "162 k=2 keys open through complete T=4096",
+        "bit_slice_scalar_equivalence": bit_slice_control,
         "budget_decision": budget,
         "horizon_reached": reached,
         "target_reached": reached == TARGET_HORIZON,
@@ -1667,15 +1857,34 @@ def run() -> int:
     certificates["D_IDENTITY_CONTROLS"] = {
         "transients": transient_verifications,
         "certified_cycle": identity_cycle_row,
-        "all_T4096_transient_facts": actual_transients,
-        "all_T4096_cycle_facts": actual_cycles,
+        "all_T4096_transient_facts": tuple(
+            {"key": key, "first_clean": moment}
+            for key, moment in sorted(actual_transients.items())
+        ),
+        "all_T4096_cycle_facts": tuple(
+            {
+                "key": key,
+                "state_period": periods[0],
+                "residual_period": periods[1],
+            }
+            for key, periods in sorted(actual_cycles.items())
+        ),
         "identity_statement":
             "first-clean moments 252 and 371 reproduce; exact minimal "
             "state-period-288/residual-period-6 cycle reproduces",
     }
 
     final_open = tuple(final_snapshot["open_keys"])
-    determinism_slice = final_open[:DETERMINISM_SLICE_SIZE]
+    determinism_slice_rows = []
+    for positions in sorted({key[1] for key in final_open}):
+        determinism_slice_rows.extend(
+            key for key in final_open if key[1] == positions
+        )
+        if len(determinism_slice_rows) >= DETERMINISM_SLICE_SIZE:
+            break
+    determinism_slice = tuple(
+        determinism_slice_rows[:DETERMINISM_SLICE_SIZE]
+    )
     primary_slice = primary_slice_rows(
         records, determinism_slice, reached_boundaries
     )

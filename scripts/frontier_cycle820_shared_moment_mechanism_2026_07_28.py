@@ -717,6 +717,21 @@ def expand_arithmetic_runs(
     return tuple(values)
 
 
+def encode_time_bitset(values: tuple[int, ...]) -> str:
+    encoded = 0
+    for value in values:
+        encoded |= 1 << value
+    return format(encoded, "x")
+
+
+def decode_time_bitset(encoded: str, limit: int) -> tuple[int, ...]:
+    bits = int(encoded, 16)
+    return tuple(
+        value for value in range(limit + 1)
+        if bits & (1 << value)
+    )
+
+
 def evolve_nine(
     family: dict[str, object],
 ) -> dict[str, object]:
@@ -789,14 +804,15 @@ def evolve_nine(
     coincidence_map = tuple({
         "shared_key_groups": partition,
         "time_count": len(times),
-        "times_AP_encoding": compress_arithmetic_runs(tuple(times)),
+        "times_bitset_hex": encode_time_bitset(tuple(times)),
+        "bitset_domain": (0, TRAJECTORY_END),
         "times_sha256": digest(tuple(times)),
     } for partition, times in sorted(
         exact_partitions.items(),
         key=lambda row: (-len(row[1]), row[0]),
     ))
     coincidence_exact = all(
-        expand_arithmetic_runs(row["times_AP_encoding"])
+        decode_time_bitset(row["times_bitset_hex"], TRAJECTORY_END)
         == tuple(exact_partitions[row["shared_key_groups"]])
         for row in coincidence_map
     )

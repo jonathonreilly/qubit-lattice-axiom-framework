@@ -628,7 +628,7 @@ literal marker accepted for its `route_class`:
 
 - `algebraic_rearrangement`: algebra, identity, rearrange, factor, cancel, solve;
 - `symmetry_or_representation`: symmetry, invariant, representation, commutator, character, irrep, group;
-- `alternate_carrier_or_sector`: carrier, sector, module, space, irrep;
+- `alternate_carrier_or_sector`: carrier(s), sector(s), module(s), space(s), irrep(s);
 - `boundary_or_initial_condition`: boundary, initial, background, state, pointwise;
 - `normalization_or_units`: normalization, unit, `W_unit`, scale, dimensionful;
 - `dynamical_or_effective_action`: dynamic, effective, action, evolution, equivariant family;
@@ -645,6 +645,11 @@ marker-bearing live section header as one of the three fields when that header
 genuinely names the same route. Do not duplicate `mechanism` into `attempt` or
 `outcome` unless the live stdout itself supplies the same text for those
 distinct semantic roles.
+
+The validator treats `_` and `-` inside verbatim identifiers as lexical
+separators for this marker check. For example, `oriented_cubical_boundary` and
+`POST_RECORD_DYNAMICS` carry the documented `boundary` and `dynamic` markers;
+the quoted field must still occur verbatim at its cited evidence path.
 
 When the gate is `FAIL`, list only the genuinely evidenced routes; fewer than
 five is valid and records the N1 failure. Do not fabricate extra routes merely

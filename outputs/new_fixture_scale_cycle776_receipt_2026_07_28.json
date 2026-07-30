@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle776_ceiling_independent_check_2026_07_28.txt": "510b4a6756c53fd8c6b2999100cb595b1eee183e2cd4657da219e6409976c034",
+      "frontier_cycle776_new_fixture_scale_2026_07_28.txt": "74e8c3d12a6a741b7046fbb654c1fadc58d25191112854f888343deaa7de038a"
+    },
+    "note": {
+      "path": "docs/NEW_FIXTURE_SCALE_CYCLE776_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "91805290897af42399484de7bdc79cb46a745b4f0f021cc828041caf3a3407cf"
+    },
+    "runners": {
+      "frontier_cycle776_ceiling_independent_check_2026_07_28.py": "49a3bddef6857c21e782a434b263e21cff713c5d3b7dfcf2f75fb36ff91736cc",
+      "frontier_cycle776_new_fixture_scale_2026_07_28.py": "8f350110ddf00b6467abc1bd73d8cd0a9917d3eaebe1cf1f52ce0c62df500572"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "ceiling": "the Cycle-750 constructor's lawful parameter space is bank counts (2,5,12) -> exactly (4,10,24) = 38 fixture epochs; checker enlargement hunt: 8 candidate degrees of freedom, 0 lawful; epoch count independently re-derived; frozen 766 baseline reproduced exactly",
+    "consequence": "the E0/E1 sample-vs-mechanism question is undecidable at the landed selector scope (no lawful new events by laddering (772) or constructor enlargement (776))",
+    "fixed_supplies": "the frozen 766 assignment and conventions; everything Cycle-317/750/763 declare",
+    "not_derived": "the selector-scope extension; any E0/E1 verdict; the family win; the weight claim",
+    "outcome": "FIXTURE_CEILING_COMPLETE_AT_LANDED_SCOPE",
+    "wall": "extending the derived occurrence selector's scope (larger banks/strata/charts) \u2014 a physics derivation in the W3/750 lineage, not an enumeration"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 776,
+  "date": "2026-07-30",
+  "result": {
+    "ceiling": "complete_at_landed_scope",
+    "consequence": "E0/E1 undecidable at landed scope",
+    "enlargements": "0 lawful / 8 examined",
+    "epochs": "(4,10,24)=38"
+  },
+  "status": "CYCLE776_NEW_FIXTURE_SCALE_PASS"
+}

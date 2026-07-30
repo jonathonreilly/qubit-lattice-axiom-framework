@@ -46,7 +46,7 @@ family. This cycle attacks that bar with two independent chains:
   Cycle-765 mapping reproduced at its 123–128 as the frozen baseline);
 - **the per-scope table, as data**: E2 (146, 5, 432) aligns
   Born-closer-than-uniform (0.3130 vs 0.4077); pooled aligns (0.0185 vs
-  0.1283); **E0 (13, 128, 68) fails** (0.4006 vs 0.2793) and
+  0.1283); **E0 (13, 128, 68) fails** (0.4006 vs 0.2791) and
   **E1 (232, 97, 1) fails** (0.4250 vs 0.3697).
 
 **The verdict against the standing bar: IMPROVED, not WIN.** The

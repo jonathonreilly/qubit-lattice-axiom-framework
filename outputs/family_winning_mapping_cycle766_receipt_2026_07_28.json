@@ -6,7 +6,7 @@
     },
     "note": {
       "path": "docs/FAMILY_WINNING_MAPPING_CYCLE766_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "6a9223b70a4303e2291e577a299484013e4f8639853af2b88b449d78c849b8c2"
+      "sha256": "c2ba401aec0a41aa96440df9a3f3613c9ad5abb2aa325e70d7dd9479fd04a4ee"
     },
     "runners": {
       "frontier_cycle766_family_winning_mapping_2026_07_28.py": "f315180920ad6321ee41a32763f4a2606267e2bf7220f6a52cd42ce5e5382d66",
@@ -22,7 +22,7 @@
     "fixed_supplies": "the 216-assignment family; frozen Born/uniform convention and supplied weights Tr(sigma E); everything Cycle-317/750/763/765 declare",
     "not_derived": "the all-scope family win; the weight claim; E0/E1 resolution (scale vs mechanism undecided)",
     "outcome": "IMPROVED_NOT_WIN",
-    "per_scope": "E2 aligns (0.3130 vs 0.4077); pooled aligns; E0 FAILS (0.4006 vs 0.2793); E1 FAILS (0.4250 vs 0.3697)",
+    "per_scope": "E2 aligns (0.3130 vs 0.4077); pooled aligns; E0 FAILS (0.4006 vs 0.2791); E1 FAILS (0.4250 vs 0.3697)",
     "rank": "uniquely 1/216 pooled (Born TV 0.0185 vs uniform 0.1283; runner-up 0.0294); Cycle-765 baseline reproduced at 123-128",
     "selection_risk": "defused: chain (a) alone, per-event, no assignment maximization, yields the winner"
   },

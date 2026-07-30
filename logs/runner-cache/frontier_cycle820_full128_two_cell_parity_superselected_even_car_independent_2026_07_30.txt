@@ -1,0 +1,378 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_independent_2026_07_30.py
+runner_sha256: 1669f11b6efc1a60c3a8d5f21a71775bcbaef0dba733204b4904ece84c0845fa
+input_fingerprint_sha256: 08d5d4e61eed86f38dcddb7aca1152ece6c68511d243356d8760ce56ce38ae48
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 26.17
+status: ok
+----- stdout -----
+{
+  "Choi_rank": 23,
+  "artifact": "frontier_cycle820_full128_two_cell_parity_superselected_even_car_independent_2026_07_30.py",
+  "artifact_sha256": "1669f11b6efc1a60c3a8d5f21a71775bcbaef0dba733204b4904ece84c0845fa",
+  "basis_rows": 23,
+  "cells": 2,
+  "checks": {
+    "all_13248_signed_products_close_in_all_origins": true,
+    "all_correction_and_sign_mutations_are_detected": true,
+    "all_frame_origin_rows_are_parity_even": true,
+    "correction_parity_exchange_import_is_exposed": true,
+    "landed_import_boundary": true,
+    "opposite_odd_extensions_have_identical_even_restriction": true,
+    "rank23_channel_and_private_duals_are_exact": true,
+    "two_cell_shape_and_rank23": true
+  },
+  "claim_verdict": "BOUNDED_TWO_CELL_PARITY_SUPERSELECTED_EVEN_CAR_INDEPENDENT_PASS__NO_ODD_CLOSURE_CLAIM",
+  "diagnostic_status": "PASS",
+  "edges": 1,
+  "implementation_route": "landed geometry/images converted immediately to local (phase,x,z) tuples; all subsequent arithmetic is independent",
+  "landed_inputs": [
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py",
+    "scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py"
+  ],
+  "matter_modes": 12,
+  "opposite_odd_extensions": {
+    "even_algebra_rank": 23,
+    "even_basis_restriction_mismatches": 0,
+    "interpretation": "the two opposite eigenvalue extensions agree on the complete rank-23 even algebra; this is a parity-superselection diagnostic, not an odd-frame closure or odd-cocycle claim",
+    "negative_extension_rank": 24,
+    "odd_extension_commutator_failures": 0,
+    "odd_representative_is_odd_on_each_half": [
+      1,
+      1
+    ],
+    "opposite_odd_phase_difference": 2,
+    "positive_extension_rank": 24
+  },
+  "parity_and_products": {
+    "binary_product_failures": 0,
+    "distinct_frame_origin_signed_images": 24,
+    "first_product_failure": null,
+    "frame_origin_contexts": 192,
+    "frame_origin_rows_checked": 4416,
+    "ordered_frame_products": 576,
+    "origin_expanded_binary_product_failures": 0,
+    "origin_expanded_signed_product_comparisons": 105984,
+    "origin_expanded_signed_product_failures": 0,
+    "origin_image_rank_failures": 0,
+    "origin_sectors": 8,
+    "physical_half_parity_even_failures": 0,
+    "proper_frames": 24,
+    "signed_product_comparisons": 13248,
+    "signed_product_failures": 0,
+    "target_half_parity_even_failures": 0
+  },
+  "physical_M2": 18,
+  "physical_rank": 23,
+  "rank23_channel_mutations": {
+    "Bell_sign_flips_tested": 552,
+    "baseline_binary_failures": 0,
+    "baseline_signed_failures": 0,
+    "correction_deletions_tested": 552,
+    "dual_one_hot_failures": 0,
+    "dual_rank_failures": 0,
+    "dual_solve_contradictions": 0,
+    "first_frame_parity_odd_correction_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "frames": 24,
+    "initial_commutator_failures": 0,
+    "minimum_detected_Bell_sign_failure": 2,
+    "minimum_detected_correction_failure": 2,
+    "parity_odd_correction_counts": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "per_frame": [
+      {
+        "correction_mutations": 23,
+        "frame": 0,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 1,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 2,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 3,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 4,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 5,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 6,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 7,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 8,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 9,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 10,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 11,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 12,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 13,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 14,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 15,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 16,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 17,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 18,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 19,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 20,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 21,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 22,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      },
+      {
+        "correction_mutations": 23,
+        "frame": 23,
+        "minimum_correction_failure": 2,
+        "minimum_sign_failure": 2,
+        "parity_even_correction_rows": 11,
+        "parity_odd_correction_rows": 12,
+        "physical_rank": 23,
+        "sign_mutations": 23
+      }
+    ],
+    "rank": 23,
+    "undetected_Bell_sign_flips": 0,
+    "undetected_correction_deletions": 0
+  },
+  "scope": "independent bounded two-cell parity-superselected even-CAR check; total parity value is not fixed; no odd closure claim",
+  "shape": [
+    2,
+    1,
+    1
+  ],
+  "target_even_algebra_rank": 23
+}
+
+----- stderr -----
+

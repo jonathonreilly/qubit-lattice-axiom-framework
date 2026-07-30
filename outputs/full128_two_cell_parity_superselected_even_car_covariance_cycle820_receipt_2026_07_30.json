@@ -1,0 +1,62 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "claim_type": "bounded_theorem",
+  "cycle": 820,
+  "date": "2026-07-30",
+  "dependency_pins": {
+    "base_commit": "67b83971dea63fa54dbd63fe5d3cc275acf09ad7",
+    "cycle655_encoder_sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
+    "cycle720_frame_cocycle_sha256": "808c4cc2bac321dbc55aa1195d0768e77ee54cf63432ed04b277cd0ceeb0993c",
+    "cycle789_channel_sha256": "2e2dd0a5edc502167fba6216e5ac5a4f76ac957e6da39cde6116c931d5f6734d",
+    "note_sha256": "569a7c7a646ae336166178448d2f6108165cc11e703cf546de2f21b4a6fde854"
+  },
+  "result": "On the supplied two-cell shape (2,1,1), the full128 seven-mode input representation embeds as a rank-13 parity-even source subalgebra into the landed 12-mode companion construction, whose parity-even observable algebra carries an exact rank-23 signed channel. All 24 proper-cubic frames, eight supplied origin sectors, and 576 ordered frame products close without choosing a total-parity value. The imported correction palette contains 11 parity-even and 12 parity-odd rows, so no gate-by-gate parity-conserving correction dilation is claimed. This is not a coherent cross-parity theorem, runtime frame selector, autonomous input-genesis theorem, or common prefix/Bell/recurrent-G executor.",
+  "scope": {
+    "even_observable_algebra_only": true,
+    "fixed_total_parity_value_required": false,
+    "origin_sectors": 8,
+    "ordered_frame_products": 576,
+    "proper_cubic_frames": 24,
+    "shape": [
+      2,
+      1,
+      1
+    ],
+    "source_even_rank": 13,
+    "tested_even_rank": 23
+  },
+  "primary": {
+    "cache_sha256": "188f7ff841348a60c370a856bdb7ec04724d33fb6723962fd66080f271141f68",
+    "core_sha256": "e8ad6c2c6c5a3eb1cbb36c4711a4b9a585ee4d564c0f89cb56d81604addfd2a0",
+    "frame_origin_graph_comparisons": 4416,
+    "parity_commutator_comparisons": 220800,
+    "parity_even_correction_rows": 11,
+    "parity_odd_correction_rows": 12,
+    "product_origin_graph_comparisons": 105984,
+    "script_sha256": "74334599a249a88a6ba60068c935fd3b0e60c1e62989c91406fca5d992a52c18",
+    "signed_Bell_product_comparisons": 13248,
+    "status": "PASS",
+    "total_failures": 0
+  },
+  "independent": {
+    "Bell_sign_flips_tested": 552,
+    "cache_sha256": "6107e2065e718dc29003c69f43f8e46edd89c706695c89b4040642e1d46aea8a",
+    "correction_deletions_tested": 552,
+    "minimum_detected_mutation_failure": 2,
+    "opposite_odd_even_restriction_mismatches": 0,
+    "parity_even_correction_rows_per_frame": 11,
+    "parity_odd_correction_rows_per_frame": 12,
+    "script_sha256": "1669f11b6efc1a60c3a8d5f21a71775bcbaef0dba733204b4904ece84c0845fa",
+    "status": "PASS",
+    "undetected_mutations": 0
+  },
+  "open": [
+    "autonomous genesis or local enforcement of parity superselection, coframe, local-center sector, encoded input, and clean ancillas",
+    "lattice-wide gluing beyond the supplied two-cell placement",
+    "one common-executor prefix/Bell/recurrent-update channel",
+    "gate-by-gate parity-conserving correction dilation and local genesis/reset of any parity-exchange carrier",
+    "coherent cross-parity extension",
+    "occurrence, renewal, fault repair, Record/Born, causal-duration, source/gravity, and prediction bridges"
+  ]
+}

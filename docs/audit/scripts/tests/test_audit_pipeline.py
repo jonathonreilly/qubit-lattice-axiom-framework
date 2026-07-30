@@ -3052,6 +3052,62 @@ class Cycle733ExplicitPacketHelperTest(unittest.TestCase):
         )
 
 
+class Cycle820ExplicitPacketHelperTest(unittest.TestCase):
+    CLAIM_ID = (
+        "full128_two_cell_parity_superselected_even_car_covariance_"
+        "cycle820_bounded_theorem_note_2026-07-30"
+    )
+    NOTE = (
+        "docs/FULL128_TWO_CELL_PARITY_SUPERSELECTED_EVEN_CAR_COVARIANCE_"
+        "CYCLE820_BOUNDED_THEOREM_NOTE_2026-07-30.md"
+    )
+    PRIMARY = (
+        "scripts/frontier_cycle820_full128_two_cell_parity_superselected_"
+        "even_car_covariance_2026_07_30.py"
+    )
+    HELPER = (
+        "scripts/frontier_cycle820_full128_two_cell_parity_superselected_"
+        "even_car_independent_2026_07_30.py"
+    )
+
+    def test_both_consumers_add_the_claim_scoped_independent_checker(self):
+        citation_graph = _import("build_citation_graph")
+        packet_deps = _import_repo_script("audit_packet_script_deps.py")
+
+        citation_helpers = citation_graph.helper_runner_paths_for_claim(
+            self.CLAIM_ID, self.PRIMARY
+        )
+        packet_helpers = packet_deps.helper_runner_paths_for_claim(
+            self.CLAIM_ID, Path(self.PRIMARY).stem
+        )
+        self.assertIn(self.HELPER, citation_helpers)
+        self.assertIn(self.HELPER, packet_helpers)
+
+        control = f"{self.CLAIM_ID}-unregistered-control"
+        self.assertNotIn(
+            self.HELPER,
+            citation_graph.helper_runner_paths_for_claim(control, self.PRIMARY),
+        )
+        self.assertNotIn(
+            self.HELPER,
+            packet_deps.helper_runner_paths_for_claim(
+                control, Path(self.PRIMARY).stem
+            ),
+        )
+
+    def test_citation_graph_row_contains_the_independent_checker(self):
+        citation_graph = _import("build_citation_graph")
+        note = PROJECT_ROOT / self.NOTE
+        with mock.patch.object(
+            citation_graph, "discover_notes", return_value=[note]
+        ):
+            graph = citation_graph.build_graph()
+
+        row = graph["nodes"][self.CLAIM_ID]
+        self.assertEqual(row["runner_path"], self.PRIMARY)
+        self.assertIn(self.HELPER, row["helper_runner_paths"])
+
+
 class StaggeredExplicitPacketHelperTest(unittest.TestCase):
     CLAIM_ID = "staggered_fermion_card_2026-04-11"
     PRIMARY = "scripts/frontier_staggered_17card_finite_scope_repair.py"

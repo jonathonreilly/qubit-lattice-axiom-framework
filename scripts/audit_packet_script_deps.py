@@ -69,6 +69,11 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "sector_summed_companion_channel_cycle733_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle733_sector_sum_independent_check_2026_07_28.py",
     ],
+    # Cycle 820 keeps its independent tuple/bit-vector reconstruction outside
+    # the primary import closure; include it claim-scoped in audit packets.
+    "full128_two_cell_parity_superselected_even_car_covariance_cycle820_bounded_theorem_note_2026-07-30": [
+        "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_independent_2026_07_30.py",
+    ],
     # This theorem note's N7 steelman is the faithful-but-reducible direct sum
     # of the two complexified simple-sector modules.  The independent helper is
     # not imported by the primary stress runner, so expose it only to this row.

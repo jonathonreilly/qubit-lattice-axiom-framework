@@ -358,6 +358,17 @@ symbolically, and exercises negative-sign and wrong-reflection controls. Its
 matrix spectra are labelled numerical support; the normalization identities are
 labelled exact algebra.
 
+The helper's live stdout now emits the explicit
+`N7_STEELMAN_RESOLUTION` locator required by the audit-packet renderer. The
+renderer can therefore execute the registered helper independently and bind
+its zero-exit stdout to an authenticated `runner_stdout_independent` evidence
+path. This is a bounded independent-helper evidence improvement only. The
+current audit blocker remains open: the restricted packet still clips the
+64,838-character primary source at the 40,000-character source limit. A clean
+verdict therefore still requires complete SHA-bound primary-source visibility
+and an independent recheck of the load-bearing normalization, tensor
+multiplicities, convergence interchange, and integrated feature factorization.
+
 Run all surfaces with:
 
 ```bash

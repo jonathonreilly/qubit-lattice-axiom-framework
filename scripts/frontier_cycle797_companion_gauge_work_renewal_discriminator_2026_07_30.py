@@ -32,6 +32,14 @@ import frontier_cycle789_three_register_even_car_channel_2026_07_30 as C789
 import frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30 as S789
 import frontier_cycle789_two_bank_input_collision_discriminator_2026_07_30 as D789
 
+# Canonical audit-packet closure: these load-bearing Cycle-797 modules are
+# separate cold runners, while this first-listed runner is their primary
+# attachment root.  The audit graph follows transitive imports from here.
+import frontier_cycle797_companion_axial_center_core_2026_07_30 as C797_CORE  # noqa: F401
+import frontier_cycle797_companion_center_local_pump_discriminator_2026_07_30 as C797_PUMP  # noqa: F401
+import frontier_cycle797_companion_priority_center_preparation_2026_07_30 as C797_PREP  # noqa: F401
+import frontier_cycle797_companion_reversible_center_syndrome_stinespring_2026_07_30 as C797_STINESPRING  # noqa: F401
+
 
 TOL = 1.0e-12
 

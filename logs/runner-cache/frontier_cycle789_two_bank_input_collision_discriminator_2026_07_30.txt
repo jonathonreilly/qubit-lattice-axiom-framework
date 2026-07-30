@@ -1,0 +1,13 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle789_two_bank_input_collision_discriminator_2026_07_30.py
+runner_sha256: 8dc7d7913284a720dbadf282dbcb5ea3320008de670813955d0adc49399c924b
+input_fingerprint_sha256: 5400185b5fc59ee08a08f519f18787ad18a5dc21a190f08e523fa097da5f64aa
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 7.85
+status: ok
+----- stdout -----
+SUMMARY_JSON {"audit": "unset", "authority": "none", "checks": {"claimed_live_bank_is_written_before_B": true, "exact_overlap_is_entire_claimed_live_bank": true, "existing_two_bank_is_not_identity_channel": true, "existing_two_bank_output_is_input_independent": true, "third_live_bank_repairs_dense_identity_channel": true}, "claim_boundary": "Route-specific semantic collision and constructive one-mode repair, not a no-go or, by itself, a full compiler.", "dense_one_mode_discriminator": {"existing_two-bank_identity_channel_residual": 0.7071067811865476, "existing_two-bank_output_pairwise_residual": 7.850462293418876e-17, "registers": "O,I,L,aZ,aX", "repaired_three-bank_identity_channel_residual": 7.771561172376096e-16, "tested_input_states": ["zero", "one", "plus", "plus_i"]}, "fixture": {"Choi_input_half_overlap": [9, 10, 11, 12, 13, 14], "cells": 1, "claimed_live_bank": [9, 18], "claimed_live_registers_not_written_by_A": [], "encoded_bank_supply_overlap": [15, 16, 17], "matter": 6, "overlap_equals_entire_claimed_live_bank": true, "q": 9, "stage_A_written_overlap": [9, 10, 11, 12, 13, 14, 15, 16, 17], "stage_A_written_overlap_count": 9}, "report_sha256": "9eb12464642f8fea1919c84a084d8a355d5d7bf0d8c9d8cc8542f473c4673219", "status": "PASS", "verdict": "The landed two-register epoch has no independent live-input register: stage A writes all of [q,2q) before B (Choi initialization on its matter part and encoded-bank supply on the rest). Its Bell-character leg is therefore a self-comparison of the Choi halves, not arbitrary input injection.  A third independent live bank repairs the one-mode character channel exactly; the separate fixed-schedule runner in this package tests the conditional 9N/cell construction."}
+
+----- stderr -----
+

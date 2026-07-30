@@ -1,0 +1,68 @@
+{
+  "cycle": 789,
+  "date": "2026-07-30",
+  "claim_type": "bounded_theorem",
+  "authority": "none",
+  "audit": "unset",
+  "status": "CYCLE789_THREE_REGISTER_COMPANION_INPUT_CIRCUIT_PASS",
+  "checks": {
+    "two_bank_discriminator": 5,
+    "three_register_channel": 5,
+    "fixed_schedule": 11,
+    "failed": 0
+  },
+  "result": {
+    "two_bank_output_pairwise_residual": 7.850462293418876e-17,
+    "two_bank_identity_channel_residual": 0.7071067811865476,
+    "three_bank_identity_channel_residual": 7.771561172376096e-16,
+    "held_character_ranks": [11, 100, 152, 389],
+    "explicit_M2_per_cell": 64,
+    "maximum_route_word_microsteps": 1981,
+    "padded_microstep_bound": 4096,
+    "proper_cubic_frames": 24,
+    "translation_origins": 8,
+    "ordered_frame_products": 576,
+    "hostile_reversal_full_signed_generator_mismatches": 64,
+    "hostile_reversal_output_generator_mismatches": 11,
+    "hostile_reversal_reduced_output_channel_mismatches": 0,
+    "inversion_CZ_repaired_full_signed_generator_mismatches": 0
+  },
+  "boundary": {
+    "positive_scope": "exact three-register even-CAR input channel and fixed returned-route physical-M2 schedule on a supplied companion-encoded live bank",
+    "route_specific_correction": "the predecessor two-register joint epoch writes every purported live-bank coordinate before its Bell leg",
+    "not_derived": "bare-M2 live-bank genesis, autonomous sector enforcement, one executed held pump/Bell/correction/recurrent-G channel, full frame-induced signed generator shear, physical time, source/gravity, Record, Born/history, or prediction bridge",
+    "constitutional_effect": "none",
+    "axiom_pressure": false
+  },
+  "artifacts": {
+    "note": {
+      "path": "docs/THREE_REGISTER_COMPANION_INPUT_CIRCUIT_CYCLE789_BOUNDED_THEOREM_NOTE_2026-07-30.md",
+      "sha256": "73dc4a31f43750443c8daa7f98516191ae6a81cbdb3bd4134b5202df2815f5e8"
+    },
+    "runners": {
+      "scripts/frontier_cycle789_two_bank_input_collision_discriminator_2026_07_30.py": "8dc7d7913284a720dbadf282dbcb5ea3320008de670813955d0adc49399c924b",
+      "scripts/frontier_cycle789_three_register_even_car_channel_2026_07_30.py": "2e2dd0a5edc502167fba6216e5ac5a4f76ac957e6da39cde6116c931d5f6734d",
+      "scripts/frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.py": "3553ec8293d7cba935422ddccbc9e4b8dc9f4cd30c3ee6487f65f15c4ad2fe68"
+    },
+    "caches": {
+      "logs/runner-cache/frontier_cycle789_two_bank_input_collision_discriminator_2026_07_30.txt": {
+        "sha256": "8f72e8ea55d381af8cf183152c96e77ef8e78a08d91ded9142c1f05490f6b419",
+        "input_fingerprint_sha256": "5400185b5fc59ee08a08f519f18787ad18a5dc21a190f08e523fa097da5f64aa",
+        "exit_code": 0,
+        "report_sha256": "9eb12464642f8fea1919c84a084d8a355d5d7bf0d8c9d8cc8542f473c4673219"
+      },
+      "logs/runner-cache/frontier_cycle789_three_register_even_car_channel_2026_07_30.txt": {
+        "sha256": "0219ba44986a9f7e6952c24228e55bffe2ed62556270015236beb9bb107bbbfb",
+        "input_fingerprint_sha256": "4d0508a5d64e457637c5cc10a951c7e25e11f229dca3c7620b00ca6f7f96858d",
+        "exit_code": 0,
+        "report_sha256": "be76e123afa8e6c2dd284d6a7c30b9910e160365e66591057ad7f015b22f1efa"
+      },
+      "logs/runner-cache/frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.txt": {
+        "sha256": "8ffde2b4e21129c2d553a64783c350b3358013b5d08486e884be183e071c2bb5",
+        "input_fingerprint_sha256": "b044954e1a7362562d3b0564f64339dea0a303bae77451be8ccf7558c02f1ea1",
+        "exit_code": 0,
+        "status": "PASS"
+      }
+    }
+  }
+}

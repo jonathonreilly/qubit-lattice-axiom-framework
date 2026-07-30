@@ -46,6 +46,13 @@ checkpoints:
       - "#5783 blockR4 Cycle 778: no-refit attachment COMPLETE at fixture scope — checker completed the family (42->63: 15 quadruples + 6 quintuples all matched); v2 carries the full subset lattice, 63/63 exact (192 variants); response_law_established stays FALSE (scope); W7 fixture package whole (749+768+771+774+778)."
       - "#5784 blockP3 Cycle 775: LEG-3 REVERSAL shipped — v1 actions unlawful; corrected relabeling (99/99); 55-candidate census: 9 BOOKKEEPING / 4 PHYSICAL / 39 NULL / 3 UNCLASSIFIED; the four physical candidates disagree 3-to-1 ((0,2,9) x3 vs (0,7,9) x1); leg3_status PHYSICAL_CANDIDATES_EXIST_JUSTIFICATION_OPEN."
     in_flight: "780 justification probe (does 753 genesis-minimality transfer to tie selection? realization-invariance is the decisive datum); 777-checker (landed-inventory hunt); 779 b=7 anchor; composite-prep module-ID scout (WT3)"
+  - at: "waves 5-6"
+    prs:
+      - "#5785 blockF3 Cycle 777: landed-law guard 38/50; GUARD_REQUIRES_NEW_LAW confirmed (100-surface hunt, 0 closures); missing law = syndrome-complete coverage + refusal-with-rollback."
+      - "#5786 blockR5 Cycle 782: Choi->LinkState bridge OBSTRUCTED at full depth (19 modules/347 signatures/0 paths); the missing decoder specified to a signature: decode_companion_choi_to_linkstate(...) -> U320.LinkState."
+      - "#5787 blockP4 Cycle 780: functionals proven realization-INVARIANT over 362,797,056 words per alternative ((769,1350,610) exact); 753 = length theorem, selects nothing; NO_BINDING_PRINCIPLE — leg 3 now has leg-1's epistemic shape (waits on physics, not search)."
+      - "#5788 blockF4 Cycle 781: checkpoint law — 744/744 prefix-6 detection+rollback (syndrome completeness ACHIEVED); battery 14/26,38/50,38/81; REGRESS CONFIRMED mechanically (majority-3 69/81 falls to a four-X null mutator derived from the guard's own fan-out; refresh falls to two-X). law_requires_new_primitive true = the Record axiom's primitive permanence shown LOAD-BEARING (three-cycle constructive demonstration 770/777/781: axiom NECESSITY, not gap)."
+    in_flight_now: "779-checker (fast-idiom ring extension); 783 (do the invariant functionals order W2's contested boundaries? cross-test vs the 752 battery); 784 (complete k=3/4 strata: every tie + functionals at every tie); 785 (multi-origin formation census, launching)"
 queue_next:
   - b=7 anchor (~20 min at the 1.47B steps/s evaluator idiom)
   - k=3/4 full strata; T>64 horizons

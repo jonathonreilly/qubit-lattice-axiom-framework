@@ -3870,7 +3870,8 @@ def hard_blocking_report_items(report: list[dict]) -> list[dict]:
         )
         and not (
             item.get("cid") in transport_quarantined
-            and item.get("result") == "prompt_transport_blocked"
+            and item.get("result")
+            in {"prompt_transport_blocked", "critical_peer_pending"}
         )
         and not (
             item.get("cid") in transaction_quarantined

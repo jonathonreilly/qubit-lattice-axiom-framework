@@ -9012,6 +9012,52 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                     )
                 )
 
+    def test_n1_normalization_route_rejects_touching_near_marker_pairs(self):
+        m = _import("no_go_discipline_gate")
+        near_markers = ("preW_unit", "W_unit_post", "W_unitary", "W__unit")
+        stdout_path = "audit-packet://runner-stdout/test_no_go"
+        for left in near_markers:
+            for right in near_markers:
+                marker_case = left + right
+                with self.subTest(marker_case=marker_case):
+                    self.assertFalse(
+                        m.route_class_marker_matches(
+                            "normalization_or_units", marker_case
+                        )
+                    )
+                    manifest = self._manifest()
+                    packet = _no_go_packet()
+                    route = packet["N1_alternative_routes"][4]
+                    compound_marker_line = (
+                        f"N2 route {marker_case}: the touching near-markers "
+                        "remain evidenced"
+                    )
+                    manifest[stdout_path]["text"] += (
+                        "\n" + compound_marker_line
+                    )
+                    route.update({
+                        "route_id": "unit_normalization",
+                        "route_class": "normalization_or_units",
+                        "mechanism": compound_marker_line,
+                        "attempt": compound_marker_line,
+                        "outcome": compound_marker_line,
+                        "evidence_path": stdout_path,
+                        "evidence_locator": compound_marker_line,
+                    })
+                    _set_no_go_scan_coverage(packet, manifest)
+                    audit = {
+                        "claim_type": "no_go",
+                        "verdict": "audited_clean",
+                        "chain_closes": True,
+                        "no_go_discipline": packet,
+                    }
+                    self.assertIn(
+                        "not supported by its evidenced",
+                        m.validate_no_go_discipline(
+                            audit, evidence_manifest=manifest
+                        ) or "",
+                    )
+
     def test_occurrence_scans_and_resolution_classes_fail_closed(self):
         m = _import("no_go_discipline_gate")
         manifest = self._manifest()

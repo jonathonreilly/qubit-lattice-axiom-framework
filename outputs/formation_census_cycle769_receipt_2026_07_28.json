@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle769_census_independent_check_2026_07_28.txt": "6c5ea59496a939bf67b12bc799b1d47a7576d9dabe2df2810f5fb2c8cedce76b",
+      "frontier_cycle769_formation_census_2026_07_28.txt": "709815277934ee5edb7c68534906aab104aee3c74b6803e8de3ba86f1aea668f"
+    },
+    "note": {
+      "path": "docs/FORMATION_CENSUS_CYCLE769_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "d4403404450f0ce4692128d31bd2f32e7e522fe32b1a9147d12e5387088af0c3"
+    },
+    "runners": {
+      "frontier_cycle769_census_independent_check_2026_07_28.py": "e3438d88f7ab1adf709527f4f5949e15bb2133b5e312a18cfb9ed78b1671ff3a",
+      "frontier_cycle769_formation_census_2026_07_28.py": "249a9f84eb3a89b2a261801e8e2bb15cc0ba1919a61ac6a8e4c731b3ecaedb32"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "census": "six origin-zero compiled Cycle-719 branches: modes 0,2,3,4,5 write nothing; mode 6 alone record-shaped (bank step 1, finalizer step 125, decoded binder=valid=1)",
+    "classification_rule": "unidentified = at least one row lacks both positive permanence and negative nonformation evidence",
+    "fixed_supplies": "six compiled branches, matter word, controller, clean genesis, candidate site (-8,-1,1), the positive-witness standard; everything Cycle-693/719 declare",
+    "lock_probe": "no authorized Cycle-745 lock export on this branch (status absent); mode-6 EventCell stands as next-cycle demonstration case",
+    "not_derived": "any rate law, weight, or probability; formation/nonformation for any branch",
+    "outcome": "CENSUS_CLASS_UNIDENTIFIED",
+    "witness_absence": "every detected write exactly un-written by the compiled inverse (local+global, all modes); the reversible surface supplies no permanence witness"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 11
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 769,
+  "date": "2026-07-29",
+  "result": {
+    "class": "unidentified",
+    "next": "compose the 745/746 lock",
+    "permanence_witnesses": 0,
+    "record_shaped": "mode 6 only (1/6)"
+  },
+  "status": "CYCLE769_FORMATION_CENSUS_PASS"
+}

@@ -1,0 +1,58 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "claim_type": "bounded_theorem",
+  "cycle": 797,
+  "date": "2026-07-30",
+  "gauge_work_runner": {
+    "cache_sha256": "beafddcb8c34f2c5a4c5db208cb418ec859b4918d720b106674e9f7838098a73",
+    "internal_report_sha256": "598b2c34e3dc838ea08412a6d43f2c9b82eb446c1837be58728e5b0f3b8e1fc9",
+    "maximum_one_mode_cleanup_residual": 6.675402828397881e-16,
+    "minimum_environment_ray_overlap": 0.9999999999999989,
+    "script_sha256": "b9477b2fdcba4f6316e70d553d1e4c9f5a4d2513f831b596ab0947ba84ca2db3",
+    "status": "PASS"
+  },
+  "held_scope": {
+    "cells": 30,
+    "center_move_rank": 30,
+    "logical_quotient_cross_rank": 136,
+    "nonparity_centers": 30,
+    "raw_cross_rank": 136,
+    "shape": [5, 3, 2],
+    "total_parity_supplied": true,
+    "whole_gauge_quotient_cross_rank": 0
+  },
+  "negative_boundary": "Only the three executed frozen pump policies are falsified. No recurrent-pump no-go, minimum, shared obstruction, or axiom pressure is claimed.",
+  "priority_center_preparation_runner": {
+    "cache_sha256": "e5ce29e6ae793acadea08d02e25822c48230e19b707737f712ea0da373cb06c4",
+    "core_sha256": "3bf26e9a75086bdbfe3b14c23507c097b44642f18d4b709805b9559ee3a06bb9",
+    "held_flux_tests": 4128,
+    "held_joint_measure_correct_cell_diameter": 6,
+    "held_joint_measure_correct_cells": 14,
+    "held_residual_failures": 0,
+    "internal_report_sha256": "84e2e2d1a905acc1ec009a442bc8eac1015b34ebe7a82e7785583cc3e3917a87",
+    "script_sha256": "783441416eba8d538f388bb8560fe2d4021324880dde5b7dff04b2f91927b36a",
+    "status": "PASS_BOUNDED_NONPOSTSELECTED_CENTER_PUMP__PRIORITY_FRAME_SUPPLIED"
+  },
+  "reversible_center_syndrome_runner": {
+    "cache_sha256": "bbd54b69981306cb3ebf90044aaa6304c1fc608aa5fb9ba065b4248c55acc0eb",
+    "dense_small_Stinespring_Gram_residual": 0.0,
+    "held_complete_macro_cell_diameter": 6,
+    "held_complete_macro_cells": 20,
+    "held_environment_map_rank": 30,
+    "held_physical_reset_failures": 0,
+    "held_syndrome_register_return_failures": 0,
+    "internal_report_sha256": "7ef9d1c9e249a85ae40781a8201d5d6f09e7de8d5bf1df1e03bfe924535a8cb2",
+    "script_sha256": "eff00636031176df9c2ac6c84442fbe79462e5fca04df9153f1c957fefae59eb",
+    "status": "PASS_EXECUTED_REVERSIBLE_CENTER_SYNDROME_STINESPRING__FRAME_FRONT_AND_NN_ROUTING_SUPPLIED"
+  },
+  "pump_discriminator_runner": {
+    "cache_sha256": "ff675233477eacfe4ff19bb70f87de7e37a89a2f3c2830c9eb4d2ec1b6b52a61",
+    "internal_report_sha256": "0552a99c9ad5c160a079b59b9e70656e75438cd9bd47cb4cb1f289e002c1d101",
+    "maximum_local_move_cell_diameter": 2,
+    "maximum_local_move_cells": 4,
+    "script_sha256": "8a44e417ffd4c2fde44b9d0e7e63178e3d8c658d07f8979f57913cf1bba433f3",
+    "status": "PASS_LOCAL_CONTROLLABILITY_AND_FROZEN_PUMP_DISCRIMINATOR"
+  },
+  "result": "Every tested Bell-work cross correlation is gauge-only, radius-one logical-preserving moves span every tested nonparity center syndrome, the one-mode work bank has an exact six-gate cleanup, and a bounded nonpostselected center preparation closes through an explicit reversible syndrome-register circuit with a supplied finite priority front. Literal nearest-neighbor routing and translation-compatible recurrent renewal remain open."
+}

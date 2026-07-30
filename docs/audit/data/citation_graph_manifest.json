@@ -1,6 +1,6 @@
 {
- "edge_count": 15225,
- "node_count": 4578,
+ "edge_count": 15228,
+ "node_count": 4579,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2433,6 +2433,10 @@
   "companion_bank_packet_count_tensor_projection_constraint_membership_bounded_theorem_note_2026-07-28": {
    "deps_hash": "dd6f38e4f3f5",
    "out_degree": 2
+  },
+  "companion_gauge_work_center_controllability_cycle797_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "27100503e5e0",
+   "out_degree": 3
   },
   "complete_prediction_chain_2026_04_15": {
    "deps_hash": "ed7953444551",

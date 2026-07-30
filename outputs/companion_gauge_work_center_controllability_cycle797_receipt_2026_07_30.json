@@ -9,7 +9,7 @@
     "internal_report_sha256": "8a987b2eed17d232ca9187a588d6e7b8e5c73aed2cb47cca870773212eed805f",
     "maximum_one_mode_cleanup_residual": 6.675402828397881e-16,
     "minimum_environment_ray_overlap": 0.9999999999999989,
-    "script_sha256": "52c1d38b1bfab444b2db65d591af5a5cfe06dda9d8ba2dfe6760271670dc124e",
+    "script_sha256": "fa544211ad900d2ffd5cbcdd6945d291ca6f9ecb9354146e2ba54156989f1b12",
     "status": "PASS"
   },
   "held_scope": {

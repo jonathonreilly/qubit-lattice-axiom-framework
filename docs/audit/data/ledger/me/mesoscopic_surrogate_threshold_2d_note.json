@@ -1,45 +1,108 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-30T01:44:48.101923+00:00",
+  "audit_invocation_history": [
+    "7f6e68e11d2b47bc947dbc1f65851f5e"
+  ],
+  "audit_invocation_id": "7f6e68e11d2b47bc947dbc1f65851f5e",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "decoration_candidate": false,
+      "dominant_class": null,
+      "exists": true,
+      "runner_path": "scripts/mesoscopic_surrogate_threshold_2d.py"
+    },
+    "criticality": "medium",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {},
+    "dep_claim_type": {},
+    "dep_effective_status": {},
+    "deps": [],
+    "helper_runner_hashes": {
+      "scripts/lattice_2d_continuum_distance.py": "f9609d333a0fac8dc9ce602fef406ffef8fb3cdd6accc3b0c3bdbb6905dd18b5",
+      "scripts/mesoscopic_surrogate_two_stage_2d.py": "68001c72715fe59dd4485a68ce30f08f4848445cf1fe48f6d64947d813650507"
+    },
+    "load_bearing_score": 6.5,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/lattice_2d_continuum_distance.py": {
+        "cache_exit_code": null,
+        "cache_freshness": "missing",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": null,
+        "cache_status": null
+      },
+      "scripts/mesoscopic_surrogate_threshold_2d.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": "d83314a57330870efbe5eabcd9f694496f4f767e309adf864d415e49f3c9f777",
+        "cache_runner_sha256": "f45b76f23b097a55e292be1b870010dde1a6d04e93916bde1e279d771599dfa8",
+        "cache_status": "ok"
+      },
+      "scripts/mesoscopic_surrogate_two_stage_2d.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "68001c72715fe59dd4485a68ce30f08f4848445cf1fe48f6d64947d813650507",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "f45b76f23b097a55e292be1b870010dde1a6d04e93916bde1e279d771599dfa8",
+    "runner_path": "scripts/mesoscopic_surrogate_threshold_2d.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 31
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260730-f59dbb33",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The runner and supplied helpers close the finite evaluation conditional on their explicit implementation choices. They do not derive the carrier, action, field, source, boundary, or readout choices from the framework baseline or an approved primitive.",
   "claim_id": "mesoscopic_surrogate_threshold_2d_note",
-  "claim_scope": null,
+  "claim_scope": "For the exact source-pinned 2D fixture and constants, all 19 listed topN rows\u2014representing 17 distinct normalized source profiles\u2014pass the programmed one-percent response-ratio and 0.99 source-carry gates.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-30T01:44:48.101923+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
   "direct_in_degree": 3,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [
     "scripts/lattice_2d_continuum_distance.py",
     "scripts/mesoscopic_surrogate_two_stage_2d.py"
   ],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 6.5,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Every listed topN row satisfies |r2-r1|/max(|r1|,1e-30) <= 0.01 and overlap(src1,src2) >= 0.99.",
+  "load_bearing_step_class": "C",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [],
   "note_hash": "1bbc80e60ff85a21b788032c782c2e6bbceb74b45e9824b238e7fd3a92761a3b",
   "note_path": "docs/MESOSCOPIC_SURROGATE_THRESHOLD_2D_NOTE.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "missing_bridge_theorem: supply a retained derivation or approved premise for the fixture's directed 2D carrier, propagation action, field regularization, source construction, boundary state, and detector normalization, then rerun the source-pinned computation.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -354,12 +417,12 @@
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
-    "C": 0,
+    "C": 6,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 6
   },
   "runner_path": "scripts/mesoscopic_surrogate_threshold_2d.py",
   "title": "Mesoscopic Surrogate Threshold 2D Note",
   "transitive_descendants": 31,
-  "verdict_rationale": null
+  "verdict_rationale": "The runner and helper sources genuinely compute every row, and the six assertion-backed checks agree with the supplied stdout; the contested outputs are not hard-coded. However, the note expressly states that its load-bearing grid, propagation, field, source, boundary, and normalization choices are not derived from the framework axioms or approved primitives. The exact finite result is therefore supported only conditionally on that implementation and cannot receive clean framework-baseline closure under the rubric."
 }

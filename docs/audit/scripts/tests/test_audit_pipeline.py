@@ -2973,6 +2973,85 @@ class PairedCertificateExplicitPacketHelperTest(unittest.TestCase):
                 self.assertEqual(row["helper_runner_paths"], expected)
 
 
+class Cycle733ExplicitPacketHelperTest(unittest.TestCase):
+    CLAIM_ID = (
+        "sector_summed_companion_channel_cycle733_"
+        "bounded_theorem_note_2026-07-28"
+    )
+    NOTE = (
+        "docs/SECTOR_SUMMED_COMPANION_CHANNEL_CYCLE733_"
+        "BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    )
+    PRIMARY = (
+        "scripts/frontier_cycle733_sector_summed_"
+        "companion_channel_2026_07_28.py"
+    )
+    HELPER = (
+        "scripts/frontier_cycle733_sector_sum_"
+        "independent_check_2026_07_28.py"
+    )
+    TRANSITIVE = [
+        "scripts/frontier_cycle727_cross_code_pullback_analysis_2026_07_28.py",
+        "scripts/frontier_cycle727_cross_code_pullback_core_2026_07_28.py",
+        "scripts/frontier_cycle727_finite_factorization_2026_07_28.py",
+        "scripts/frontier_cycle727_finite_fixtures_2026_07_28.py",
+        "scripts/frontier_cycle727_finite_pauli_tableau_2026_07_28.py",
+    ]
+    EXPECTED = [*TRANSITIVE, HELPER]
+
+    def test_both_consumers_add_only_the_claim_scoped_independent_helper(self):
+        citation_graph = _import("build_citation_graph")
+        packet_deps = _import_repo_script("audit_packet_script_deps.py")
+
+        self.assertEqual(
+            citation_graph.helper_runner_paths_for_claim(
+                self.CLAIM_ID, self.PRIMARY
+            ),
+            self.EXPECTED,
+        )
+        self.assertEqual(
+            packet_deps.helper_runner_paths_for_claim(
+                self.CLAIM_ID, Path(self.PRIMARY).stem
+            ),
+            self.EXPECTED,
+        )
+
+        control = f"{self.CLAIM_ID}-unregistered-control"
+        self.assertEqual(
+            citation_graph.helper_runner_paths_for_claim(
+                control, self.PRIMARY
+            ),
+            self.TRANSITIVE,
+        )
+        self.assertEqual(
+            packet_deps.helper_runner_paths_for_claim(
+                control, Path(self.PRIMARY).stem
+            ),
+            self.TRANSITIVE,
+        )
+
+    def test_citation_graph_row_contains_parent_and_independent_helper(self):
+        citation_graph = _import("build_citation_graph")
+        note = PROJECT_ROOT / self.NOTE
+        parent = (
+            PROJECT_ROOT
+            / "docs"
+            / "CROSS_CODE_EQUIVALENCE_CYCLE727_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+        )
+        with mock.patch.object(
+            citation_graph, "discover_notes", return_value=[note, parent]
+        ):
+            graph = citation_graph.build_graph()
+
+        row = graph["nodes"][self.CLAIM_ID]
+        self.assertEqual(row["runner_path"], self.PRIMARY)
+        self.assertEqual(row["helper_runner_paths"], self.EXPECTED)
+        self.assertEqual(
+            row["deps"],
+            ["cross_code_equivalence_cycle727_bounded_theorem_note_2026-07-28"],
+        )
+
+
 class StaggeredExplicitPacketHelperTest(unittest.TestCase):
     CLAIM_ID = "staggered_fermion_card_2026-04-11"
     PRIMARY = "scripts/frontier_staggered_17card_finite_scope_repair.py"

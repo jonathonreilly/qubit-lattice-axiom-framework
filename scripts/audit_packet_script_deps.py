@@ -64,6 +64,11 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/frontier_continuum_limit.py",
         "scripts/frontier_newton_systematic.py",
     ],
+    # Cycle 733's independent current-fixture reconstruction must remain
+    # separate from the primary while still entering the restricted packet.
+    "sector_summed_companion_channel_cycle733_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle733_sector_sum_independent_check_2026_07_28.py",
+    ],
     # This theorem note's N7 steelman is the faithful-but-reducible direct sum
     # of the two complexified simple-sector modules.  The independent helper is
     # not imported by the primary stress runner, so expose it only to this row.

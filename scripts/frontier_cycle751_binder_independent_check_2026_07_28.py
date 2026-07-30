@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Independent reconstruction of the finite Cycle-751 salvage theorem.
+"""Independent reconstruction of the finite net-endpoint-delta census and
+conditional Cycle-610 API adapter.
 
 The checker imports no symbol from the primary. It reconstructs the endpoints
 through the Cycle-719 closed-form allocator word, validates the Boolean adapter

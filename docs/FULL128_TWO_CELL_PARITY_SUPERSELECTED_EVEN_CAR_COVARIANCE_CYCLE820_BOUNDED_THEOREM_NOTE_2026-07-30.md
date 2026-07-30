@@ -164,11 +164,12 @@ shared-obstruction, or axiom-pressure claim is made.
 The primary executable detects all 23 correction deletions and all 23
 Bell-measurement sign flips. The independent checker detects all 552
 frame-resolved correction deletions and all 552 frame-resolved sign flips; its
-minimum bidirectional signed-span failure is two. Both runners also expose the
-same correction-parity census in every frame: 11 commuting and 12
-anticommuting rows. The independent checker verifies that two distinct odd
-extensions have identical restriction to the retained even algebra. That is a
-boundary diagnostic, not an odd-channel construction.
+minimum bidirectional signed-span failure is two. The primary exposes 11
+commuting and 12 anticommuting correction rows on the landed Cycle-789 palette;
+the independent checker reproduces the same census in all 24 frames. It also
+verifies that two distinct odd extensions have identical restriction to the
+retained even algebra. That is a boundary diagnostic, not an odd-channel
+construction.
 
 ## No-go discipline
 

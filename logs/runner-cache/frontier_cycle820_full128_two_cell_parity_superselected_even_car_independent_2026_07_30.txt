@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_independent_2026_07_30.py
 runner_sha256: 1669f11b6efc1a60c3a8d5f21a71775bcbaef0dba733204b4904ece84c0845fa
-input_fingerprint_sha256: 584bc0d3ef9f0b982ab30f326cf4051ab743f648083510910ead740a6500e366
+input_fingerprint_sha256: 08d5d4e61eed86f38dcddb7aca1152ece6c68511d243356d8760ce56ce38ae48
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 26.15
+elapsed_sec: 26.17
 status: ok
 ----- stdout -----
 {

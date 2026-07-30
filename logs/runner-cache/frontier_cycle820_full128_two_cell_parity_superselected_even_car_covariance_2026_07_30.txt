@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30.py
 runner_sha256: 74334599a249a88a6ba60068c935fd3b0e60c1e62989c91406fca5d992a52c18
-input_fingerprint_sha256: 8b5cb6d393d95fabbe3b51ec6707f40e176185010165f7ab41a84ff816cfc104
+input_fingerprint_sha256: 7bd71da35d8836b6d4963db3f2e24c2fa086d37ee9138e17890326a267c77478
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 16.87
+elapsed_sec: 16.63
 status: ok
 ----- stdout -----
 {
@@ -131,7 +131,7 @@ status: ok
     "sign_mutation_binary_failures": 0
   },
   "input_sha256": {
-    "docs/FULL128_TWO_CELL_PARITY_SUPERSELECTED_EVEN_CAR_COVARIANCE_CYCLE820_BOUNDED_THEOREM_NOTE_2026-07-30.md": "652f80e3b6c11567b8b4df487297c5443bfcfbc541eff9b5dce19a587ad6e1c7",
+    "docs/FULL128_TWO_CELL_PARITY_SUPERSELECTED_EVEN_CAR_COVARIANCE_CYCLE820_BOUNDED_THEOREM_NOTE_2026-07-30.md": "569a7c7a646ae336166178448d2f6108165cc11e703cf546de2f21b4a6fde854",
     "scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py": "102f8bc31e60fd4a452a1cfab176129f922665e10b564f0421dc26ffb11ee152",
     "scripts/frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py": "42ada20e51eaf48c14d9862ddce1467982af90874829ddac62ba75b424d45da5",
     "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py": "808c4cc2bac321dbc55aa1195d0768e77ee54cf63432ed04b277cd0ceeb0993c",

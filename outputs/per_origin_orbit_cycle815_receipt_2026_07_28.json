@@ -8,8 +8,10 @@
       "pass": 5
     },
     "logs/runner-cache/frontier_cycle815_per_origin_orbit_constraint_2026_07_28.txt": {
+      "certificate_lines": 5,
       "fail": 0,
-      "pass": 0
+      "format_note": "v2 primary emits CERTIFICATE_X blocks with JSON pass keys, not ^PASS lines",
+      "pass_true": 6
     }
   },
   "claim_type": "bounded_theorem",

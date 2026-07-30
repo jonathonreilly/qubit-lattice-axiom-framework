@@ -3,8 +3,10 @@
 **Date:** 2026-07-27
 **Status:** bounded support proposed for independent audit; not an audit verdict
 **Type:** bounded_theorem
-**Primary runner:** [`scripts/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.py`](../scripts/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.py)
-**Cached runner output:** [`logs/runner-cache/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.txt`](../logs/runner-cache/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.txt)
+**Primary runner:** [`scripts/physical_poisson_self_consistent_well_depth_certificate_2026_07_29.py`](../scripts/physical_poisson_self_consistent_well_depth_certificate_2026_07_29.py)
+**Underlying full runner:** [`scripts/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.py`](../scripts/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.py)
+**Completed full-run output:** [`logs/runner-cache/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.txt`](../logs/runner-cache/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.txt)
+**Cached certificate output:** [`logs/runner-cache/physical_poisson_self_consistent_well_depth_certificate_2026_07_29.txt`](../logs/runner-cache/physical_poisson_self_consistent_well_depth_certificate_2026_07_29.txt)
 
 Independent audit is required before the repository may assign retained grade.
 
@@ -209,9 +211,13 @@ in R14, and that test causes the narrowing recorded above.
 ## Verification
 
 ```bash
-python3 scripts/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.py
+python3 scripts/cached_runner_output.py scripts/physical_poisson_self_consistent_well_depth_certificate_2026_07_29.py
 ```
 
-The runner first verifies that the imported parent module matches its committed
-blob, then requires every scored fixed point and every thesis dependency to
-PASS.
+The certificate verifies that the completed `PASS=14 FAIL=0` full-run log was
+committed together with the byte-identical underlying runner, that the runner's
+repo-local helper module matches the reviewed blob and its function used through
+`F` has the same AST now as at that paired commit, and that a current
+deterministic `N=12` slice reproduces the logged result. It is a provenance and
+compute certificate, not a claim that the pathologically slow full sweep was
+rerun during every audit.

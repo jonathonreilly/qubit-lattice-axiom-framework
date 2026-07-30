@@ -1,0 +1,56 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "claim_type": "bounded_theorem",
+  "cycle": 820,
+  "date": "2026-07-30",
+  "dependency_pins": {
+    "base_commit": "171c05a22866ba45f2281e24a7b189ac9a4891e9",
+    "cycle655_encoder_sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
+    "cycle720_frame_cocycle_sha256": "808c4cc2bac321dbc55aa1195d0768e77ee54cf63432ed04b277cd0ceeb0993c",
+    "cycle789_channel_sha256": "2e2dd0a5edc502167fba6216e5ac5a4f76ac957e6da39cde6116c931d5f6734d",
+    "note_sha256": "4a1d477d43d0caa41b285a6695732216decb10a3a1e698b49433cf485e76d562"
+  },
+  "result": "On the supplied two-cell shape (2,1,1), the full128 seven-mode input representation and landed companion channel admit an exact rank-23 parity-superselected even-CAR signed channel. All 24 proper-cubic frames, eight supplied origin sectors, and 576 ordered frame products close without choosing a total-parity value. This is not a coherent cross-parity theorem, runtime frame selector, autonomous input-genesis theorem, or common prefix/Bell/recurrent-G executor.",
+  "scope": {
+    "even_observable_algebra_only": true,
+    "fixed_total_parity_value_required": false,
+    "origin_sectors": 8,
+    "ordered_frame_products": 576,
+    "proper_cubic_frames": 24,
+    "shape": [
+      2,
+      1,
+      1
+    ],
+    "tested_even_rank": 23
+  },
+  "primary": {
+    "cache_sha256": "925e0d30337f4c20aa7ea2f613e90012085e1692805fbdc198748ac3d6e9816d",
+    "core_sha256": "e8ad6c2c6c5a3eb1cbb36c4711a4b9a585ee4d564c0f89cb56d81604addfd2a0",
+    "frame_origin_graph_comparisons": 4416,
+    "parity_commutator_comparisons": 220800,
+    "product_origin_graph_comparisons": 105984,
+    "script_sha256": "f43cdfe556f0826b04ce1df4fcfaceef009ba7e1c3b9ca437cc6489bab3425d3",
+    "signed_Bell_product_comparisons": 13248,
+    "status": "PASS",
+    "total_failures": 0
+  },
+  "independent": {
+    "Bell_sign_flips_tested": 552,
+    "cache_sha256": "6166fe9c1cb57e11ad74e4ddc36e1acd8c3a880612ea4f32fe747f8178a4ee3e",
+    "correction_deletions_tested": 552,
+    "minimum_detected_mutation_failure": 2,
+    "opposite_odd_even_restriction_mismatches": 0,
+    "script_sha256": "62aeb59b2e0cb186d4c8a3e49bef6683dc2f82b2557eead35779edb60d56f247",
+    "status": "PASS",
+    "undetected_mutations": 0
+  },
+  "open": [
+    "autonomous genesis or local enforcement of parity superselection, coframe, local-center sector, encoded input, and clean ancillas",
+    "lattice-wide gluing beyond the supplied two-cell placement",
+    "one common-executor prefix/Bell/recurrent-update channel",
+    "coherent cross-parity extension",
+    "occurrence, renewal, fault repair, Record/Born, causal-duration, source/gravity, and prediction bridges"
+  ]
+}

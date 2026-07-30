@@ -145,12 +145,19 @@ POLICY_NEGATIVE_CLASSES = {
     "conditional_wall_rationale",
 }
 ROUTE_DISPOSITIONS = {"CLOSED", "OPEN", "UNTESTED"}
+W_UNIT_NEAR_MARKER_RE = re.compile(r"(?i)(?<!\w)\w*W_+unit\w*(?!\w)")
 
 
 def route_class_marker_matches(route_class: str, route_semantics: str) -> bool:
     """Match documented route markers across prose and identifier tokens."""
-    marker_text = re.sub(r"[_-]+", " ", route_semantics)
-    return bool(ROUTE_CLASS_MARKERS[route_class].search(marker_text))
+    marker = ROUTE_CLASS_MARKERS[route_class]
+    if marker.search(route_semantics):
+        return True
+    separator_text = route_semantics
+    if route_class == "normalization_or_units":
+        separator_text = W_UNIT_NEAR_MARKER_RE.sub(" ", separator_text)
+    marker_text = re.sub(r"[_-]+", " ", separator_text)
+    return bool(marker.search(marker_text))
 
 PATH_TRIGGER_RE = re.compile(
     r"(?:^|[\s/._-])(?:no[\s_-]?go|obstruction|firewall|negative[\s_-]?boundary|"

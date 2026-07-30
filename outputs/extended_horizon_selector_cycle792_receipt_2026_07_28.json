@@ -1,0 +1,47 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle792_extended_horizon_selector_2026_07_28.txt": "4bd5c7a16e0aa38f42cf17dce94a48f1ad0a16ec0cf5bc9577cae1acdead0d7b",
+      "frontier_cycle792_selection_independent_check_2026_07_28.txt": "db7cc6a3f25864a6719d64168b19fde1015cbe481535fff4ec8b282fdbdc2b58"
+    },
+    "note": {
+      "path": "docs/EXTENDED_HORIZON_SELECTOR_CYCLE792_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "1db22d19d6cce02b1ac749783ee0a02124f5423a7fc5b17bd173701ae2324e81"
+    },
+    "reference_copies": {
+      "scripts/frontier_cycle758_selector_multisource_2026_07_28.py": "8be433f74cb337c322bcb1e2f46007244d708a41c946cb83b7ccd61004176241"
+    },
+    "runners": {
+      "frontier_cycle792_extended_horizon_selector_2026_07_28.py": "7f7470b3d759c84ccc0c2c6559d62448340fb8a0b0915eb98d450635a72730df",
+      "frontier_cycle792_selection_independent_check_2026_07_28.py": "6808dfe2c0f8edaa0e6c213b5e285ff1352db9d78eb5de1b357c76521bf320b8"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fidelity": "battery reconstructed from the pinned 758 reference (blob 4e23e03e...); landed-horizon run reproduces all 44 zero-survivor verdicts",
+    "fixed_supplies": "the horizon extension (supplied, unlanded); everything Cycle-719/736/750/758/790 declare",
+    "meaning": "a horizon-extended acceptance law must be EXACT-TIME (fire at the vanishing moment or not at all) \u2014 the shape of the Record axiom's resolution phenomenon arising from the multi-source dynamics; deriving the exact-time law from framework primitives is the named target",
+    "not_derived": "the exact-time law; actuality (no completion preferred)",
+    "outcome": "SELECTED_ONE_TICK_WINDOW",
+    "selection": "with the clean_postimage horizon at t=252 (the single SUPPLIED change; AST audit found no second deviation), the epoch-3 (1,10) k=2 battery yields UNIQUE survivor ((1,10),); discontinuity t=251->0, t=252->1 (per-exclusion certificates both sides)",
+    "uniqueness": "all 176 rows checked at t=252: no other clean postimage, no other survivor",
+    "window": "checker persistence probe: the selection disappears at t=253 and stays absent through 256 \u2014 a ONE-TICK window; the residual touches zero at exactly one moment"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 792,
+  "date": "2026-07-30",
+  "result": {
+    "discontinuity": "251->0, 252->1",
+    "outcome": "SELECTED",
+    "survivor": "((1,10),) unique",
+    "window": "one tick (253-256 absent)"
+  },
+  "status": "CYCLE792_EXTENDED_HORIZON_SELECTOR_PASS"
+}

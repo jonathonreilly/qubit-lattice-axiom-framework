@@ -189,6 +189,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "token_count_certificate_cycle731_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle731_count_certificate_independent_check_2026_07_28.py",
     ],
+    # Cycle 747's finite-state checker reconstructs the complete receiver and
+    # admission tables without importing the primary or its repository
+    # modules. Expose that independent executable in the restricted packet.
+    "cycle332_receiver_success_cycle610_gate_adapter_bounded_theorem_note_2026-07-30": [
+        "scripts/frontier_cycle747_receiver_success_gate_adapter_independent_check_2026_07_30.py",
+    ],
     # Cycle 820's independent tuple/bit-vector reconstruction deliberately
     # imports neither the primary nor its new core. Keep it separate while
     # still exposing and hash-binding it in the restricted audit packet.

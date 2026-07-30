@@ -1,0 +1,30 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF13-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle811_mechanism_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle811_w2_mechanism_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 811,
+  "files": {
+    "docs/W2_MECHANISM_CYCLE811_BOUNDED_THEOREM_NOTE_2026-07-28.md": "675adf944289016a1e64348d264a15a25a4ad0a63113409b53b914060a481df3",
+    "logs/runner-cache/frontier_cycle811_mechanism_independent_check_2026_07_28.txt": "1b9231cb79df83d83f23ab7126fe9f722371115a495c5d25bf30cd08b27213c2",
+    "logs/runner-cache/frontier_cycle811_w2_mechanism_2026_07_28.txt": "f88a698b80eb830959f96fd71bf8c46cd290abfbeca768b7f3e194550e31dc9d",
+    "scripts/frontier_cycle811_mechanism_independent_check_2026_07_28.py": "6e7797062d1249aa1b815b44baa50f25470e25fda0ab338ae667c1ce1b030914",
+    "scripts/frontier_cycle811_w2_mechanism_2026_07_28.py": "71b152f32479b9249d7b0bcff60b452ba297a542aa5395f64327d0cf70762940"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "SOURCE_FINALIZER_PHASE_CLOSURE_CONFLICT (rule-derived, 20/20 traces)",
+    "necessary + existentially sufficient, NOT pathwise sufficient (failures localize to boundaries 0 and 10)",
+    "checker survives ruling"
+  ]
+}

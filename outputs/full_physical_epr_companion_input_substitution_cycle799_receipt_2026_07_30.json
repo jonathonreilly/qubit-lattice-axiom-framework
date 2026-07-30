@@ -1,0 +1,42 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "claim_type": "bounded_theorem",
+  "cycle": 799,
+  "date": "2026-07-30",
+  "dependency_pins": {
+    "base_commit": "91915cd485f05a676014e92024e9888e45bf3a03",
+    "cycle789_note_sha256": "73dc4a31f43750443c8daa7f98516191ae6a81cbdb3bd4134b5202df2815f5e8",
+    "cycle789_runner_sha256": "2e2dd0a5edc502167fba6216e5ac5a4f76ac957e6da39cde6116c931d5f6734d",
+    "cycle789_schedule_sha256": "3553ec8293d7cba935422ddccbc9e4b8dc9f4cd30c3ee6487f65f15c4ad2fe68",
+    "cycle794_core_sha256": "f6e820f7e4c4aaafbaa5751bd35989b97fe3b86c767bb724e783b67ee4197c6d",
+    "cycle794_note_sha256": "33eda00e3cc1587d8a2f36ffff54ed0fc3c04b2c2a4d268f1250d1ba06343a09",
+    "cycle794_runner_sha256": "1a5828c726cfca96c7a2240914a61f980a9406835821a44108a9061d7f6f1009"
+  },
+  "held_scope": {
+    "cells": 120,
+    "expanded_H_CNOT_gates_per_cell": 318,
+    "fixed_local_slot_layers": 9,
+    "frame_origin_contexts": 192,
+    "maximum_route_distance": 12,
+    "minimum_deleted_return_label_failures": 2,
+    "ordered_frame_products": 576,
+    "persistent_OI_M2_per_cell": 18,
+    "route_support_M2_per_cell": 39,
+    "shape": [
+      6,
+      5,
+      4
+    ]
+  },
+  "result": "Ordinary corresponding-site physical EPR pairs contain every signed paired-Pauli character required by the landed Cycle-789 companion input resource. The existing character transfer and Cycle-794 recurrent-G postcomposition therefore survive substitution. A nine-layer returned-NN preparation has constant 18 persistent M2, 39 route-support M2, and 318 H/CNOT gates per cell. Clean-bank genesis and epoch-to-epoch bank recycling remain open.",
+  "runner": {
+    "cache_sha256": "9487a3271dd89499572340839f560e8ba119447d2821fe6c0d03593f4182e771",
+    "internal_report_sha256": "4dec83ea7c2c86f37a63fa52f4014c354522a5dc9f2be136ace1929a6e058815",
+    "maximum_signed_conjugation_homomorphism_residual": 4.9076946705118025e-15,
+    "maximum_signed_local_pair_residual": 0.0,
+    "preparation_state_residual": 0.0,
+    "script_sha256": "19b277f684f95c6e477e72dea78051bb3a7ce3acb1b32b0983fcdf000466a680",
+    "status": "PASS"
+  }
+}

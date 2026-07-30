@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle790_horizon_extension_2026_07_28.txt": "2f428ebba168dc9f9e2602c43409ab7e80b24587f873d895ab54d6ebf26c8634",
+      "frontier_cycle790_horizon_independent_check_2026_07_28.txt": "bff0acbe8fd66debdde5ffb70cb4d57ddfd7b9779e364fe2697864482eeaad68"
+    },
+    "carried_modules": {
+      "scripts/frontier_cycle762_residual_as_content_probe_2026_07_28.py": "cb5f80cf5d0e169e01561bd9a8665fc8492036398bc0f3eeebe2e326497dbd0d",
+      "scripts/frontier_cycle762_residual_probe_independent_check_2026_07_28.py": "c8d43dc2c65b851554393c493d016f6341ba9eb8c3a35bb9f361d77a2f16c619"
+    },
+    "note": {
+      "path": "docs/HORIZON_EXTENSION_CYCLE790_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "c823eed5220b322493aede7689cf2dd7d0f8ac3fdcc5ee34be9b7f594a2b5859"
+    },
+    "runners": {
+      "frontier_cycle790_horizon_extension_2026_07_28.py": "bc1a47b591e4b308ef3e57ea7776a56223c76c0eca3867816d408f5021e86ac6",
+      "frontier_cycle790_horizon_independent_check_2026_07_28.py": "cacd49aadb9e9dcb71b26cc910df6a40d0ca592b904a882dea13fe5aacab14e4"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "anchor_note": "the anchor certificate accepts the 762 sources byte-exact from git lineage or pinned-identical disk copies (never imported); supervisor-patched after the disk-copy restoration and re-verified with the checker",
+    "axiom_pressure": false,
+    "censuses": "T64=0 (identity control exact), T128=0, T256=1; certified residual cycles period-2 (2 keys) + period-3 (9 keys) forever-nonzero; 164 keys open through 256 (10/10 spot checks)",
+    "event": "epoch 3, positions (1,10): nonclean at every t<252, clean first and exactly at t=252; the ONLY clean configuration through T=256 (checker re-swept)",
+    "fidelity": "the 762 machinery reimplemented (pair not importable here); checker verified against the LANDED test: all 176 T64 verdicts + 11,440 residual samples byte-exact",
+    "fixed_supplies": "everything Cycle-719/736/762 declare",
+    "meaning": "the 762 forever-nonzero extrapolation does not extend universally; the clean_postimage veto (sole killer of all 638 multi-source exclusions, 787) is horizon-relative for at least one configuration \u2014 the horizon-extended postimage law becomes the most evidenced route to multi-source actuality",
+    "not_derived": "the content-vs-dirt ruling (evidence on both sides now); horizons beyond 256; the horizon-extended law itself",
+    "outcome": "HORIZON_CLOSES"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 790,
+  "date": "2026-07-30",
+  "result": {
+    "clean": "T64=0, T128=0, T256=1 (t=252)",
+    "cycles": "2x p2 + 9x p3 certified",
+    "open": 164,
+    "outcome": "HORIZON_CLOSES"
+  },
+  "status": "CYCLE790_HORIZON_EXTENSION_PASS"
+}

@@ -1,0 +1,41 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle795_discriminator_census_2026_07_28.txt": "93538c8a7c439cd41ce226a37869a85479a7c7d719b4e0b52fd9192a5acb0a74",
+      "frontier_cycle795_discriminator_independent_check_2026_07_28.txt": "3164d37f083de6e196d8ce80a13b33f07339dc20334ec3efaace2718b544dba0"
+    },
+    "note": {
+      "path": "docs/DISCRIMINATOR_CENSUS_CYCLE795_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "c0f1dcd73cb3908fda3f4bd720f8d56a97e3e99e80df4b4d0df9340471435c71"
+    },
+    "runners": {
+      "frontier_cycle795_discriminator_census_2026_07_28.py": "6a52229e9ac3bf5ab45bd25a4088e354c759fc499b58462aa0c2401f89474e7f",
+      "frontier_cycle795_discriminator_independent_check_2026_07_28.py": "927c7c5d79e7c65702a2d7ac9b44f2731cbec0529ef0dee58e2ca2d2c8d5525b"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "census": "103 clean separators (+143 one-violation) between the 2 transients and 12 cycles over the landed feature table; best: direction_short_alignment x epoch_sum_parity",
+    "deliverable": "the forecast-vote table: all 162 open keys contested across the 103 separators (transient votes 0-99; 46 distinct forecast vectors) \u2014 every future resolution cuts the hypothesis family sharply",
+    "fixed_supplies": "the landed feature vocabulary; everything Cycle-719/736/762/790/791 declare",
+    "not_derived": "the actual discriminator; any open-key fate",
+    "null_test": "exhaustive over all 91 possible 2-vs-12 labelings: separator counts min 60 / median 88 / max 206; the true labeling's 103 sits at p~0.242 \u2014 SEPARATORS_UNINFORMATIVE_AT_THIS_SAMPLE (geometry, not signal)",
+    "outcome": "SEPARATORS_EXIST_BUT_UNINFORMATIVE"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 795,
+  "date": "2026-07-30",
+  "result": {
+    "forecast_vectors": 46,
+    "open_keys_contested": "162/162",
+    "separators": "103 clean (p~0.242 vs null \u2014 uninformative)"
+  },
+  "status": "CYCLE795_DISCRIMINATOR_CENSUS_PASS"
+}

@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle801_deep_scan_independent_check_2026_07_28.txt": "7592dedcdd15d6ffcaeda9a388cc9b7a0ab7dc4793bfea2556f291e01c5a500c",
+      "frontier_cycle801_silent_strata_deep_scan_2026_07_28.txt": "33c10abc491b78bd2e346263d70ccf77f9b82227a5dcfa8fbe86fa62e891bf3d"
+    },
+    "note": {
+      "path": "docs/SILENT_STRATA_DEEP_SCAN_CYCLE801_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "c620836a73ac5dc139cddaa8aa0750f2f1316393c8d36d1bdf8c78cf1019bce4"
+    },
+    "runners": {
+      "frontier_cycle801_deep_scan_independent_check_2026_07_28.py": "ab5c931aca1989ba93b10dbe6167419ba831f2ee8524a89869f86d9aa185add3",
+      "frontier_cycle801_silent_strata_deep_scan_2026_07_28.py": "55edc0cc8b3e51de3863819f10303d506e0652dbc031a1f2647c3a11e51cb115"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "the horizon bound; everything the underlying packages declare",
+    "hunt": "checker re-swept all 38 keys to 8192 with own evolution + landed test + own hashing: nothing missed, nothing spurious; 798 identity exact",
+    "k3": "four new certified cycles \u2014 the consecutive family (0,2,5..8), event 1, entry 0, ALL state period 5952 (bit-exact, forever-nonzero, independently certified); 10 open; zero new transients",
+    "k4": "first two cycles (0,2,4,7/8), event 1, entry 0, both period 4464; 18 open; no transients",
+    "k5": "fully open (4 keys)",
+    "not_derived": "the 194 open keys' fates; the early/late structure's law; content-vs-dirt",
+    "outcome": "SILENCE_BREAKS_IN_CYCLES",
+    "structure": "all six transients early (<=1385); cycles certify late (4464/5952) in consecutive-position families with stratum-identical periods \u2014 constraints the exact-time law inherits"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 10,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 801,
+  "date": "2026-07-30",
+  "result": {
+    "new_cycles": "4x p5952 (k=3) + 2x p4464 (k=4)",
+    "new_transients": 0,
+    "open": "10+18+4"
+  },
+  "status": "CYCLE801_SILENT_STRATA_DEEP_SCAN_PASS"
+}

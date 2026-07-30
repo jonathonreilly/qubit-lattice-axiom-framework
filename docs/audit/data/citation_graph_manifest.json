@@ -1,6 +1,6 @@
 {
- "edge_count": 15241,
- "node_count": 4584,
+ "edge_count": 15246,
+ "node_count": 4585,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1615,8 +1615,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "5bdc3f7ee8e5",
-   "out_degree": 319
+   "deps_hash": "98bbe1ca256a",
+   "out_degree": 320
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -5065,6 +5065,10 @@
   "full128_local_m64_seam_m2_bare_frame_intertwiner_bounded_theorem_note_2026-07-24": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "full128_two_cell_parity_superselected_even_car_covariance_cycle820_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "c1fe6ff9fab5",
+   "out_degree": 4
   },
   "full128_two_rail_fixed_law_compositional_induction_bounded_theorem_note_2026-07-24": {
    "deps_hash": "39bd4d637769",

@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/clifford_chirality_dimension_n7_independent_check.py
+runner_sha256: d6902d887a689efbde7208fd12807bd83e54b8585933ce4291cbb5cb857652bb
+input_fingerprint_sha256: 397a8f9f550b940b0de4ea224f782c2d7d042d012e34156f6b61fd495a25836c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+CLIFFORD CHIRALITY N7 -- INDEPENDENT EVEN-TOWER RESTRICTION
+[PASS] odd n=1: dimension=2, internal_rank=2, augmented_rank=3, external_square_I=True, external_anticommutes=True
+[PASS] odd n=3: dimension=4, internal_rank=8, augmented_rank=9, external_square_I=True, external_anticommutes=True
+[PASS] odd n=5: dimension=8, internal_rank=32, augmented_rank=33, external_square_I=True, external_anticommutes=True
+N7_STEELMAN_RESOLUTION no nonzero `M in Cl(n)` satisfies (5) internal wall resolved: an independently constructed square-normalized ambient matrix anticommutes with every odd generator, but adjoining it raises the faithful internal Clifford-span rank by one; the counterexample is therefore external to Cl(n), exactly as the theorem's scope requires.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

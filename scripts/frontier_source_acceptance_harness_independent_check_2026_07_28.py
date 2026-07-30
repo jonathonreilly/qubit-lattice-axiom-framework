@@ -347,8 +347,8 @@ EXPECTED_VERDICT_AST_SHA256 = {
     "typed_bridge": "3dd1f832da9c95694aeb3daf0fe65ad32277f8a7742e324ed95ff6ff9cc5791c",
 }
 EXPECTED_INPUT_PORT_AST_SHA256 = {
-    "tensor_lift": "05cef49eb0b12c0a9590481f5e6ab8cc155d484b80c326181d53542f7821544c",
-    "recoil": "8c56c5051758af57145d1ade9db7511467973265d47b09cccf7f29e17f46535e",
+    "tensor_lift": "418dec0df86bb0291cc4ee5250aa75e9bafd96544b4205d487494d7284ba152f",
+    "recoil": "f2be9ce8282e74a7d9cc91735b2e1482cda3abe915aa7e3d28e3586dcb044a7f",
 }
 
 

@@ -410,7 +410,7 @@ class TensorLiftAcceptance(_PinnedAcceptance):
             )
         try:
             source = np.asarray(source_values, dtype=float)
-        except (TypeError, ValueError, OverflowError) as exc:
+        except Exception as exc:
             return self._input_reject(
                 {
                     "reason": (
@@ -763,7 +763,7 @@ class RecoilReciprocityAcceptance(_PinnedAcceptance):
                 self.SOURCE_PATH, self.expected_sha256, self.actual_sha256
             )
         if (
-            not isinstance(fixture_selector, str)
+            type(fixture_selector) is not str
             or fixture_selector not in {"canonical", "swap_coin_fswap"}
         ):
             return self._operational_reject(
@@ -1100,6 +1100,11 @@ def main() -> int:
         canonical_source / canonical_source[0]
     ).tolist()
     mixed_boolean_source[0] = True
+
+    class ExplodingFloat(float):
+        def __float__(self) -> float:
+            raise RuntimeError("adversarial conversion")
+
     invalid_tensor_verdicts = {
         "boolean": tensor.verdict(
             tensor.accept(np.ones(10, dtype=bool))
@@ -1118,6 +1123,9 @@ def main() -> int:
         ),
         "wide_integer": tensor.verdict(
             tensor.accept([10**400] * 10)
+        ),
+        "exploding_real": tensor.verdict(
+            tensor.accept([ExplodingFloat(1.0)] * 10)
         ),
     }
     check(
@@ -1260,12 +1268,18 @@ def main() -> int:
         malformed_record_verdicts,
     )
 
+    class UnhashableString(str):
+        __hash__ = None
+
     malformed_selector_verdicts = {
         "list": recoil.verdict(recoil.accept([])),
         "dict": recoil.verdict(recoil.accept({})),
+        "unhashable_string_subclass": recoil.verdict(
+            recoil.accept(UnhashableString("canonical"))
+        ),
     }
     check(
-        "recoil rejects non-string selectors without raising",
+        "recoil rejects invalid selectors without raising",
         set(malformed_selector_verdicts.values()) == {"REJECT"},
         malformed_selector_verdicts,
     )

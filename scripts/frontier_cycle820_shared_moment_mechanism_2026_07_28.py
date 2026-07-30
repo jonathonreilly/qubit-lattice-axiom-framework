@@ -902,6 +902,52 @@ def apply_compiled_bit_slice(
             columns[third] ^= columns[first] & columns[second]
 
 
+def bit_slice_scalar_equivalence(
+    family: dict[str, object],
+) -> dict[str, object]:
+    rows = []
+    for positions in family["positions"]:
+        keys = tuple(
+            (event, positions) for event in range(2 * FIXTURE_BANKS)
+        )
+        initial = tuple(family["states"][key] for key in keys)
+        scalar = tuple(
+            K.A.apply_semantic(state, family["words"][positions])
+            for state in initial
+        )
+        columns = bit_slice(initial)
+        apply_compiled_bit_slice(
+            columns, family["compiled_words"][positions], len(keys)
+        )
+        sliced = tuple(
+            un_slice(columns, index) for index in range(len(keys))
+        )
+        rows.append({
+            "positions": positions,
+            "width": len(keys),
+            "exact_tuple_equal": scalar == sliced,
+            "scalar_sha256": digest(tuple(
+                state_sha256(state) for state in scalar
+            )),
+            "bit_slice_sha256": digest(tuple(
+                state_sha256(state) for state in sliced
+            )),
+        })
+    result = {
+        "scope":
+            "one exact update for all 44 position words and all four epochs",
+        "rows": tuple(rows),
+        "exact_match_count": sum(
+            row["exact_tuple_equal"] for row in rows
+        ),
+    }
+    result["pass"] = (
+        len(rows) == 44
+        and all(row["exact_tuple_equal"] for row in rows)
+    )
+    return result
+
+
 def population_state_at_entry(
     family: dict[str, object],
 ) -> dict[Key, tuple[int, ...]]:
@@ -951,10 +997,13 @@ def mechanism_candidates(
         )
     )
     annihilator_rows = []
+    annihilator_images = []
     for positions in family["positions"]:
         image, weights = five_step_image(
             common_state, family["words"][positions]
         )
+        if not residual_support(image):
+            annihilator_images.append(image)
         annihilator_rows.append({
             "positions": positions,
             "support_weights_t0_through_t5": weights,
@@ -984,6 +1033,21 @@ def mechanism_candidates(
         key for key in open_entry_class
         if key[1] in annihilator_positions
     )
+    open_clean_at_target = []
+    open_target_rows = []
+    for key in open_151:
+        image, weights = five_step_image(
+            population_at_entry[key], family["words"][key[1]]
+        )
+        clean = not residual_support(image)
+        if clean:
+            open_clean_at_target.append(key)
+        open_target_rows.append((
+            key,
+            weights,
+            clean,
+            state_sha256(image),
+        ))
 
     same_pair_counterexample = (1, NINE_KEYS[0][1])
     counter_image, counter_weights = five_step_image(
@@ -1009,7 +1073,9 @@ def mechanism_candidates(
             "last_shared_entry": MECHANISM_ENTRY,
             "entry_state_sha256": state_sha256(common_state),
             "fixed_lag": FIXED_LAG,
-            "lag_source": "landed held bank-count 5",
+            "arithmetic_lag_match":
+                "the exact lag equals landed held bank-count 5",
+            "causal_bridge_for_lag_value": "OPEN_NOT_DERIVED",
             "prediction_relation": "14739+5=14744",
             "prediction_machine_checked":
                 MECHANISM_ENTRY + FIXED_LAG == TARGET_MOMENT,
@@ -1037,8 +1103,11 @@ def mechanism_candidates(
                 "only a constant affine function survives"
             ),
         },
-        "C_period_clock_synchronization": {
+        "C_zero_entry_period_clock_selector": {
             "status": "FAILS",
+            "candidate_scope":
+                "absolute zero-phase synchronization; both new cycles have "
+                "exact entry zero, and no nonzero phase is claimed tested",
             "zero_phase_rows": period_rows,
             "period_2_partial_coincidence":
                 "HOLDS but selects every even time, not t=14744",
@@ -1068,10 +1137,24 @@ def mechanism_candidates(
             "nine_inside_class": all(
                 key[1] in annihilator_positions for key in NINE_KEYS
             ),
-            "all_annihilator_images_same": len({
-                row["image_sha256"] for row in annihilator_rows
-                if row["clean_at_5"]
-            }) == 1,
+            "all_annihilator_images_exact_tuple_equal": (
+                bool(annihilator_images)
+                and all(
+                    image == annihilator_images[0]
+                    for image in annihilator_images[1:]
+                )
+            ),
+            "common_clean_image_sha256":
+                state_sha256(annihilator_images[0])
+                if annihilator_images else None,
+            "nine_nonclean_at_entry_through_lag_4": all(
+                all(
+                    row["support_weights_t0_through_t5"][lag] > 0
+                    for lag in range(FIXED_LAG)
+                )
+                for row in annihilator_rows
+                if row["positions"] in {key[1] for key in NINE_KEYS}
+            ),
             "machine_checked_rows": tuple(annihilator_rows),
         },
         "E_common_singleton_last_defect": {
@@ -1097,18 +1180,25 @@ def mechanism_candidates(
         "resolved_key_count_encoded": len(RESOLVED_THROUGH_819),
         "open_key_count": len(open_151),
         "open_key_sha256": digest(open_151),
+        "classification_basis":
+            "the 25 resolved identities are context-supplied Cycle-819 "
+            "fixtures; Cycle 820 exactly evolves their 151-key complement",
         "family_keys_in_Sstar_at_t14739": family_entry_class,
         "family_Sstar_class_is_exactly_nine":
             family_entry_class == tuple(sorted(NINE_KEYS)),
         "open_151_in_Sstar_at_t14739": open_entry_class,
         "open_151_triggered_for_t14744": open_trigger_now,
-        "specific_prediction":
-            "zero of the 151 open keys is selected at t=14744 because "
-            "zero is in S* at t=14739",
-        "falsifiable_future_rule":
-            "for any of the 151, an exact entry into S* at time tau with "
-            "left_position>0 predicts clean support at tau+5; a nonclean "
-            "tau+5 image falsifies this mechanism",
+        "open_151_clean_at_t14744_by_direct_five_step_evolution":
+            tuple(open_clean_at_target),
+        "open_151_target_rows_sha256": digest(tuple(open_target_rows)),
+        "exact_current_result":
+            "direct evolution from t=14739 verifies that zero of the 151 "
+            "has clean support at t=14744",
+        "prospective_prediction":
+            "NONE: no concrete future key/time is predicted for the 151",
+        "conditional_transition_rule_not_a_forecast":
+            "an S* entry at tau with left_position>0 has an exact clean "
+            "five-step image; the origin or next occurrence of S* is open",
     }
     prediction["pass"] = (
         len(RESOLVED_THROUGH_819) == 25
@@ -1116,6 +1206,7 @@ def mechanism_candidates(
         and prediction["family_Sstar_class_is_exactly_nine"]
         and not open_entry_class
         and not open_trigger_now
+        and not open_clean_at_target
     )
     candidates_pass = (
         candidates[
@@ -1132,12 +1223,15 @@ def mechanism_candidates(
         ]["nine_inside_class"]
         and candidates[
             "D_state_Sstar_five_step_annihilator_class"
-        ]["all_annihilator_images_same"]
+        ]["all_annihilator_images_exact_tuple_equal"]
+        and candidates[
+            "D_state_Sstar_five_step_annihilator_class"
+        ]["nine_nonclean_at_entry_through_lag_4"]
         and candidates[
             "B_position_pair_alone_predicts_moment"
         ]["counterexample_clean_at_t14744"] is False
         and candidates[
-            "C_period_clock_synchronization"
+            "C_zero_entry_period_clock_selector"
         ]["nontrivial_period_greater_than_2_zero_phase_count"] == 0
         and candidates[
             "F_identical_transition_words"
@@ -1192,6 +1286,13 @@ def identity_controls(
             )
             for update in range(TARGET_MOMENT + 1, TRAJECTORY_END + 1)
         ),
+        "plus_1_through_plus_6_all_clean": all(
+            not target_window[update][0]
+            for update in range(TARGET_MOMENT + 1, TRAJECTORY_END + 1)
+        ),
+        "window_semantics":
+            "Cycle-819 checker requires the exact -1..+6 window to be "
+            "present; it does not require cleanliness to persist after t",
     }
     result = {
         "nine_key_identity": nine_identity,
@@ -1226,6 +1327,7 @@ def run() -> int:
     started = monotonic()
     sources = source_certificate()
     family = build_family()
+    bit_slice_equivalence = bit_slice_scalar_equivalence(family)
     arithmetic = arithmetic_certificate(family)
     trajectory = evolve_nine(family)
     population_at_entry = population_state_at_entry(family)
@@ -1235,6 +1337,10 @@ def run() -> int:
     identities = identity_controls(family, trajectory)
 
     replay = evolve_nine(family)
+    population_replay = population_state_at_entry(family)
+    population_deterministic = (
+        population_replay == population_at_entry
+    )
     deterministic = (
         replay["trajectory_sha256"] == trajectory["trajectory_sha256"]
         and replay["first_clean"] == trajectory["first_clean"]
@@ -1243,19 +1349,23 @@ def run() -> int:
         and replay["coincidence_map"] == trajectory["coincidence_map"]
         and replay["state_hashes_at_checkpoints"]
         == trajectory["state_hashes_at_checkpoints"]
+        and population_deterministic
     )
 
     verdict = {
-        "verdict": "MECHANISM_FOUND",
-        "named_mechanism":
+        "verdict": "STRUCTURE_FOUND_MECHANISM_OPEN",
+        "named_partial_structure":
             "EXACT_SSTAR_ENTRY_PLUS_LEFT_POSITIVE_FIVE_STEP_ANNIHILATOR",
         "statement":
             "exactly the nine keys enter the same 5815-bit state S* at "
             "t=14739; every landed separated-pair word with left>0 maps "
             "S* to one common clean state in exactly the landed lag 5, "
-            "therefore all nine select at 14744",
+            "which accounts for their final five-step synchronization",
+        "mechanism_open":
+            "the runner does not derive why exactly these nine first enter "
+            "S* at t=14739 or why lag 5 should be selected a priori",
         "arithmetic_center_relation_is_causal": False,
-        "prediction_for_151": prediction,
+        "context_151_exact_census_not_a_prospective_prediction": prediction,
     }
     verdict["pass"] = prediction["pass"]
 
@@ -1264,18 +1374,30 @@ def run() -> int:
         "A_ARITHMETIC_EXACT_CENSUS": arithmetic["pass"],
         "B_NINE_TRAJECTORIES_AND_COINCIDENCE_MAP": trajectory["pass"],
         "C_EXACT_MECHANISM_CANDIDATES": candidates["pass"],
-        "D_MECHANISM_FOUND_WITH_151_FALSIFIER": verdict["pass"],
+        "D_STRUCTURE_FOUND_MECHANISM_OPEN": verdict["pass"],
         "E_IDENTITY_14744_252_371": identities["pass"],
         "F_SHAS_BLOCKLIST_DETERMINISM_RUNTIME_STDOUT": False,
     }
     controls = {
         **sources,
         "family_reimplementation": family["summary"],
+        "bit_slice_scalar_equivalence": bit_slice_equivalence,
         "determinism_scope":
             "full nine-key t=0..14750 trajectory, nearest misses, "
-            "coincidence map, and checkpoint state hashes replayed",
+            "coincidence map, checkpoint state hashes, and full 176-key "
+            "t=14739 population replayed",
         "primary_trajectory_sha256": trajectory["trajectory_sha256"],
         "replay_trajectory_sha256": replay["trajectory_sha256"],
+        "primary_population_at_t14739_sha256": digest(tuple(
+            (key, state_sha256(population_at_entry[key]))
+            for key in sorted(population_at_entry)
+        )),
+        "replay_population_at_t14739_sha256": digest(tuple(
+            (key, state_sha256(population_replay[key]))
+            for key in sorted(population_replay)
+        )),
+        "population_deterministic_exact_tuple_equality":
+            population_deterministic,
         "deterministic": deterministic,
         "runtime_seconds": round(elapsed, 6),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
@@ -1290,6 +1412,7 @@ def run() -> int:
     controls_base = (
         sources["pass"]
         and family["summary"]["pass"]
+        and bit_slice_equivalence["pass"]
         and deterministic
         and elapsed < AUDIT_TIMEOUT_SEC
         and not controls["blocked_modules_loaded_at_end"]
@@ -1312,7 +1435,7 @@ def run() -> int:
         "target_moment": TARGET_MOMENT,
         "nine_key_count": len(NINE_KEYS),
         "verdict": verdict["verdict"],
-        "named_mechanism": verdict["named_mechanism"],
+        "named_partial_structure": verdict["named_partial_structure"],
         "runtime_seconds": round(elapsed, 6),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_bytes": 0,
@@ -1330,7 +1453,7 @@ def run() -> int:
         report["checks"] = dict(checks)
         report["pass"] = all(checks.values())
         report["terminal"] = (
-            "CYCLE820_MECHANISM_FOUND_EXACT_PASS"
+            "CYCLE820_STRUCTURE_FOUND_MECHANISM_OPEN_EXACT_PASS"
             if report["pass"]
             else "CYCLE820_SHARED_MOMENT_MECHANISM_HONEST_FAIL"
         )
@@ -1345,7 +1468,7 @@ def run() -> int:
         report["checks"] = dict(checks)
         report["pass"] = all(checks.values())
         report["terminal"] = (
-            "CYCLE820_MECHANISM_FOUND_EXACT_PASS"
+            "CYCLE820_STRUCTURE_FOUND_MECHANISM_OPEN_EXACT_PASS"
             if report["pass"]
             else "CYCLE820_SHARED_MOMENT_MECHANISM_HONEST_FAIL"
         )

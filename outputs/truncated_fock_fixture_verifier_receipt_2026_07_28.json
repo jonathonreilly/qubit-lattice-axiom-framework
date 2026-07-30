@@ -1,8 +1,8 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_truncated_fock_fixture_verifier_2026_07_28.txt": "449a15df79511555a1a9348ed5d8411d9168befc5a91c0aba23b6ba571b33299",
-      "frontier_truncated_fock_fixture_verifier_independent_check_2026_07_28.txt": "1def1e7ae1438c427dbac28fcfa11ccd8a9270d97ca94608294442aa51b24c84"
+      "frontier_truncated_fock_fixture_verifier_2026_07_28.txt": "11c0d6a283ce54778a415c4768e17d3623b23e599d0b839da3a873376635edca",
+      "frontier_truncated_fock_fixture_verifier_independent_check_2026_07_28.txt": "2b26b5d41e146e5ecca885de7396e7417be2627a526fc2d037088e6bdbc63633"
     },
     "note": {
       "path": "docs/TRUNCATED_FOCK_FIXTURE_VERIFIER_NOTE_2026-07-28.md",
@@ -10,7 +10,7 @@
     },
     "runners": {
       "frontier_truncated_fock_fixture_verifier_2026_07_28.py": "4c4c3d8d828937c453f459ab62a12232fc7ee245ef470a631a63c1693a99ea44",
-      "frontier_truncated_fock_fixture_verifier_independent_check_2026_07_28.py": "7dce0c2e90a847d7a2af536e685582047df205f8f491889ec569caf6d09df407"
+      "frontier_truncated_fock_fixture_verifier_independent_check_2026_07_28.py": "fdfc6a7b41cab911cd075b121e804a0f6fa60cd06c3f54f7310842c66b97f24a"
     }
   },
   "audit": "unset",

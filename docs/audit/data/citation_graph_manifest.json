@@ -1,6 +1,6 @@
 {
- "edge_count": 15233,
- "node_count": 4582,
+ "edge_count": 15236,
+ "node_count": 4583,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14769,6 +14769,10 @@
   "truncated_fock_equal_split_support_note_2026-07-28": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "truncated_fock_fixture_verifier_note_2026-07-28": {
+   "deps_hash": "62566d4b1294",
+   "out_degree": 3
   },
   "trysquared_proof_walk_lattice_independence_bounded_note_2026-05-08": {
    "deps_hash": "3f7cd343351a",

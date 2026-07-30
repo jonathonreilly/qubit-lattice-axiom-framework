@@ -14,6 +14,7 @@ import hashlib
 import itertools
 import json
 import math
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -63,9 +64,18 @@ def sha256(path: Path) -> str:
 
 
 def run_script(path: Path, args: tuple[str, ...] = (), stdin: str = "") -> dict[str, Any]:
+    environment = dict(os.environ)
+    scripts_path = str(ROOT / "scripts")
+    inherited_pythonpath = environment.get("PYTHONPATH", "")
+    environment["PYTHONPATH"] = (
+        scripts_path
+        if not inherited_pythonpath
+        else scripts_path + os.pathsep + inherited_pythonpath
+    )
     completed = subprocess.run(
         [sys.executable, str(path), *args],
         cwd=ROOT,
+        env=environment,
         input=stdin,
         text=True,
         capture_output=True,
@@ -287,16 +297,17 @@ def always_accept_mutation_is_caught(record: dict[str, Any]) -> dict[str, Any]:
         mutant = Path(directory) / VERIFIER_PATH.name
         mutant.write_text(ast.unparse(tree) + "\n", encoding="utf-8")
         matrix = classifier_matrix(mutant, record)
-    expected = {
+    expected_mutant = {
         "canonical": "ACCEPT",
-        "carrier_promotion": "REJECT",
-        "derived_equal_split": "REJECT",
-        "full_fock_promotion": "REJECT",
-        "pin_drift": "DRIFT",
-        "uncertified_layer": "REJECT",
+        "carrier_promotion": "ACCEPT",
+        "derived_equal_split": "ACCEPT",
+        "full_fock_promotion": "ACCEPT",
+        "pin_drift": "ACCEPT",
+        "uncertified_layer": "ACCEPT",
     }
     return {
-        "caught": matrix != expected,
+        "caught": matrix == expected_mutant,
+        "expected_mutant_matrix": expected_mutant,
         "mutant_matrix": matrix,
     }
 
@@ -419,7 +430,7 @@ def main() -> int:
 
     mutation = always_accept_mutation_is_caught(record or {})
     check(
-        "the checker fails closed against an always-accept classifier mutation",
+        "the checker executes and distinguishes an always-accept classifier mutation",
         mutation["caught"] is True,
         mutation,
     )

@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle782_bridge_independent_check_2026_07_28.txt": "921ef7cd6e8e793bdf3cec44b920de67733334d30662b6bf12fd9e88e0b1ea23",
+      "frontier_cycle782_choi_linkstate_bridge_2026_07_28.txt": "52f6856ebb9fba002432e3fdba04198930495821701bc58606496ab9f47656b1"
+    },
+    "note": {
+      "path": "docs/CHOI_LINKSTATE_BRIDGE_CYCLE782_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "8f8f0213dba2a2d07d1745da98eb24081826a8be8cf9a16edeb4d1c965c71cd2"
+    },
+    "runners": {
+      "frontier_cycle782_bridge_independent_check_2026_07_28.py": "b74c11fe9450d4eb12e7901d8230d24149c9d6349633b8092e78b5e011a2015c",
+      "frontier_cycle782_choi_linkstate_bridge_2026_07_28.py": "27ee20fff3dc1c846029bf8bee7602b926cb3a009301e9533c49cac4b4203089"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "attempts": "route (a) direct state-map fails structurally (tableau defines no six-channel amplitudes); route (b) observable-map cannot carry coherence; no U320 input produced, no cross-term claim",
+    "axiom_pressure": false,
+    "checker": "19 Cycle-720 modules, 347 interface signatures enumerated \u2014 zero composable paths; near-miss census names the single missing callable: decode_companion_choi_to_linkstate(...) -> U320.LinkState",
+    "consequence": "W7 scope extension is now a specified derivation target (the decoder), not a search",
+    "fixed_supplies": "everything Cycle-320/322/720 declare",
+    "not_derived": "the decoder (underivability NOT claimed); the composite test behind it",
+    "outcome": "OBSTRUCTED_DECODER_SPECIFIED",
+    "spaces": "Cycle-720 Choi/Pauli tableaux vs Cycle-320 LinkState/PhysicalState; shared cubic six-direction geometry only"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 782,
+  "date": "2026-07-30",
+  "result": {
+    "interfaces": "19 modules / 347 signatures / 0 paths",
+    "missing": "decode_companion_choi_to_linkstate(...) -> U320.LinkState",
+    "outcome": "OBSTRUCTED"
+  },
+  "status": "CYCLE782_CHOI_LINKSTATE_BRIDGE_PASS"
+}

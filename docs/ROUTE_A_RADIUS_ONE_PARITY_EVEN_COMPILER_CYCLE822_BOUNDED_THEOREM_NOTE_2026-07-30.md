@@ -1,5 +1,12 @@
 # Cycle 822 Route A: radius-one parity-even FSWAP and dual-rail compiler
 
+> **Superseded framework typing.** This first probe incorrectly treated every
+> routed/token coordinate as charged under product-Z parity. Cycle 821 protects
+> matter plus carrier only; companion, syndrome, token, and neutral-work modes
+> are neutral. Its 328-factor physical claim is therefore demoted. The exact
+> failure census and corrected fixed-atlas construction are in
+> `ROUTE_A_FIXED_TYPE_ATLAS_CORRECTION_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md`.
+
 **Type:** bounded_theorem
 
 **Authority:** none

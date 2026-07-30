@@ -213,8 +213,12 @@ def tracked_copy_status() -> dict[str, object]:
     actual_head = head.stdout.strip() if head.returncode == 0 else "ERROR"
     return {
         "actual_copy_commit": actual_head,
-        "expected_copy_commit": REFERENCE_COMMIT,
-        "commit_match": actual_head == REFERENCE_COMMIT,
+        "initial_copy_commit": REFERENCE_COMMIT,
+        "commit_match_informational": actual_head == REFERENCE_COMMIT,
+        "provenance_rule": (
+            "the sibling worktree HEAD may advance; the scientific anchors "
+            "are tracked status plus the seven exact SHA-256 values"
+        ),
         "tracked": tracked,
         "all_tracked": all(tracked.values()),
     }
@@ -254,6 +258,16 @@ def defining_code_audit(copies: dict[str, bytes]) -> dict[str, object]:
             AUDIT_INPUT_PATHS[4],
             "composition_row = add_response_rows(input_rows)",
             "Cycle-778's kernel prediction is additive over identity columns",
+        ),
+        (
+            AUDIT_INPUT_PATHS[5],
+            "return U320.LinkState({ORIGIN: vector}, {})",
+            "Cycle-803 identifies each W7 defining input with one C^6 column",
+        ),
+        (
+            AUDIT_INPUT_PATHS[5],
+            "it does not map Pauli bits to six ",
+            "Cycle-803 explicitly denies a tableau-to-LinkState amplitude map",
         ),
     )
     rows = []
@@ -296,7 +310,6 @@ def source_control_certificate() -> dict[str, object]:
         and shas_before == EXPECTED_SHA256
         and shas_after == EXPECTED_SHA256
         and shas_before == shas_after
-        and tracked["commit_match"]
         and tracked["all_tracked"]
         and defining["all_ast_parse"]
         and firewall_before["passed"]

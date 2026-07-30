@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle793_balance_independent_check_2026_07_28.txt": "bc83c031207a9dae6a5684b08f80eae76f02bcaa2f166625244419d11df2acc8",
+      "frontier_cycle793_enlarged_orientation_census_2026_07_28.txt": "1aa657a7c872410c9eae1e2cb7f25af11a6e75dc998584ff9693903f7de46420"
+    },
+    "note": {
+      "path": "docs/ENLARGED_ORIENTATION_CENSUS_CYCLE793_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "2d304da1ba3722972e9bc580dbc7ee2a327fba29403a24c6d1bbc96aed373da4"
+    },
+    "runners": {
+      "frontier_cycle793_balance_independent_check_2026_07_28.py": "4f96f4b862dce8d0221ff47c9f9b4e761d55ee5285cd6c8de984d22d70463399",
+      "frontier_cycle793_enlarged_orientation_census_2026_07_28.py": "aff8222437aac85443df6770cd11bef136b7698f6be0d4a65caa7771f1bf31c5"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "census": "46 events split 23/23; EVERY bank balances individually (1/1, 2/2, 3/3, 5/5, 12/12); landed 19/19 identity exact",
+    "fixed_supplies": "everything Cycle-719/750/786/788 declare",
+    "meaning": "the occurrence lane's first structural distribution law at the landed correspondence resolution: the orientation marginal is exactly uniform, provably; any future rate law inherits it as a free constraint",
+    "mechanism": "checker-found: the constructor produces parity-conjugate epoch pairs (2j -> 2j+1, mapped 1:1) \u2014 the balance is a theorem of the constructor at every bank size, not a statistic",
+    "not_derived": "the per-origin refinement; the rate/site-distribution law",
+    "outcome": "BALANCE_STRUCTURAL_23_23",
+    "supply_probe": "all 20 selecting-supply variation cases preserve every orientation (zero flips) \u2014 the balance datum does NOT inherit the 788 convention caveat"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 793,
+  "date": "2026-07-30",
+  "result": {
+    "mechanism": "parity-conjugate pairs",
+    "per_bank": "1/1, 2/2, 3/3, 5/5, 12/12",
+    "split": "23/23 (structural)",
+    "supply_independent": true
+  },
+  "status": "CYCLE793_ENLARGED_ORIENTATION_CENSUS_PASS"
+}

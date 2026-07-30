@@ -4614,6 +4614,10 @@
    "deps_hash": "469a8cc015b6",
    "out_degree": 2
   },
+  "fixed_target_x_cnot_preparation_count_cycle753_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "b57520e0b473",
+   "out_degree": 4
+  },
   "flagship_paper_contribution_statement_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -6001,6 +6005,10 @@
   "generation_weight_dial_structure_2026-06-05": {
    "deps_hash": "00712a62dd66",
    "out_degree": 4
+  },
+  "genesis_tree_prufer_rank_cycle753_meta_note_2026-07-28": {
+   "deps_hash": "9faa5871a715",
+   "out_degree": 1
   },
   "genesis_word_self_verification_cycle732_bounded_theorem_note_2026-07-28": {
    "deps_hash": "423f1f549b6b",

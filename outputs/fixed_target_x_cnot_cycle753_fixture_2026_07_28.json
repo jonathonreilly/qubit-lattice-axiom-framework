@@ -1,0 +1,80 @@
+{
+  "blank_state": 0,
+  "landed_word": [
+    {"kind": "X", "wires": [5815]},
+    {"kind": "CNOT", "wires": [5815, 6]},
+    {"kind": "CNOT", "wires": [6, 40]},
+    {"kind": "CNOT", "wires": [40, 109]},
+    {"kind": "CNOT", "wires": [109, 110]},
+    {"kind": "CNOT", "wires": [110, 111]},
+    {"kind": "CNOT", "wires": [111, 112]},
+    {"kind": "CNOT", "wires": [112, 113]},
+    {"kind": "CNOT", "wires": [113, 114]},
+    {"kind": "CNOT", "wires": [114, 116]},
+    {"kind": "CNOT", "wires": [116, 117]},
+    {"kind": "CNOT", "wires": [117, 118]},
+    {"kind": "CNOT", "wires": [118, 119]},
+    {"kind": "CNOT", "wires": [119, 126]},
+    {"kind": "CNOT", "wires": [126, 127]},
+    {"kind": "CNOT", "wires": [127, 128]},
+    {"kind": "CNOT", "wires": [128, 129]},
+    {"kind": "CNOT", "wires": [129, 257]},
+    {"kind": "CNOT", "wires": [257, 258]},
+    {"kind": "CNOT", "wires": [258, 259]},
+    {"kind": "CNOT", "wires": [259, 260]},
+    {"kind": "CNOT", "wires": [260, 5949]},
+    {"kind": "CNOT", "wires": [5949, 5951]},
+    {"kind": "CNOT", "wires": [5951, 5953]},
+    {"kind": "CNOT", "wires": [5953, 5955]},
+    {"kind": "CNOT", "wires": [5955, 5957]},
+    {"kind": "CNOT", "wires": [5957, 5969]}
+  ],
+  "provenance": {
+    "reviewed_cycle732_fix_commit": "cbd2f199261fa073c2d7db7a6b34db6fb9792566",
+    "source_note": {
+      "path": "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "e223029cdef9681f3d489caec3ff4d72534d02b85187a0aa0f6b1332c9f63985"
+    },
+    "source_runner": {
+      "path": "scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py",
+      "sha256": "d9770e8fee349f1dc8b7d0344ba5dca0a7a9768a072ff93644c65ad38894043d"
+    }
+  },
+  "register_width": 5979,
+  "schema": "cycle753_fixed_target_x_cnot_fixture_v1",
+  "supplied_model": {
+    "alphabet": "X(i) and ordered CNOT(control,target), control != target, at every register position",
+    "cost": "one unit per X or CNOT",
+    "equivalence": "adjacent swaps of semantically commuting gates",
+    "landing_rule": "the final bit string must equal the supplied target exactly"
+  },
+  "target_support": [
+    6,
+    40,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    116,
+    117,
+    118,
+    119,
+    126,
+    127,
+    128,
+    129,
+    257,
+    258,
+    259,
+    260,
+    5815,
+    5949,
+    5951,
+    5953,
+    5955,
+    5957,
+    5969
+  ]
+}

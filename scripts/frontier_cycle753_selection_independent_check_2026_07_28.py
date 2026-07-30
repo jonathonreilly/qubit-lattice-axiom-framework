@@ -1,95 +1,468 @@
 #!/usr/bin/env python3
-"""Cycle 753 independent adversarial selection/minimality checker.
+"""Independent checker for the Cycle 753 fixed-target X/CNOT theorem.
 
-The Cycle-753 primary is parsed as inert source text and is blocklisted from
-import.  All semantic checks and recounts below are independent
-implementations over the two declared predecessor modules.
+This checker does not import or parse the primary implementation.  It validates
+the supplied fixture, reconstructs the landed tree with separate code, checks
+the exact arithmetic, exhausts every word through width four, exhausts small
+Prüfer families, and then requires the primary to succeed as a subprocess.
 """
 from __future__ import annotations
 
-AUDIT_TIMEOUT_SEC = 900
-NOTE_PATH = "docs/GENESIS_SELECTION_ATTEMPT_CYCLE753_BOUNDED_THEOREM_NOTE_2026-07-28.md"
-AUDIT_INPUT_PATHS = (
-    "scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py",
-    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-)
-
-import ast
-from collections import defaultdict
 from hashlib import sha256
-from itertools import permutations, product
+import heapq
+from itertools import product
 import json
-from math import comb, factorial
+from math import factorial
 from pathlib import Path
+import subprocess
 import sys
 from time import perf_counter
 
 
-STARTED = perf_counter()
+AUDIT_TIMEOUT_SEC = 180
+REPO_ROOT = Path(__file__).resolve().parents[1]
+NOTE_PATH = (
+    "docs/FIXED_TARGET_X_CNOT_PREPARATION_COUNT_CYCLE753_"
+    "BOUNDED_THEOREM_NOTE_2026-07-28.md"
+)
+META_NOTE_PATH = (
+    "docs/GENESIS_TREE_PRUFER_RANK_CYCLE753_META_NOTE_2026-07-28.md"
+)
+FIXTURE_PATH = "outputs/fixed_target_x_cnot_cycle753_fixture_2026_07_28.json"
 PRIMARY_PATH = (
     "scripts/frontier_cycle753_genesis_selection_attempt_2026_07_28.py"
 )
-BLOCKLIST = (
-    "frontier_cycle753_genesis_selection_attempt_2026_07_28",
+PARENT_NOTE_PATH = (
+    "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_"
+    "BOUNDED_THEOREM_NOTE_2026-07-28.md"
 )
+PARENT_SOURCE_PATH = (
+    "scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py"
+)
+AUDIT_INPUT_PATHS = (
+    "docs/FIXED_TARGET_X_CNOT_PREPARATION_COUNT_CYCLE753_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/GENESIS_TREE_PRUFER_RANK_CYCLE753_META_NOTE_2026-07-28.md",
+    "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "outputs/fixed_target_x_cnot_cycle753_fixture_2026_07_28.json",
+    "scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py",
+    "scripts/frontier_cycle753_genesis_selection_attempt_2026_07_28.py",
+)
+DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
+
+EXPECTED_SCHEMA = "cycle753_fixed_target_x_cnot_fixture_v1"
+EXPECTED_SUPPORT = (
+    6, 40, 109, 110, 111, 112, 113, 114, 116, 117, 118, 119,
+    126, 127, 128, 129, 257, 258, 259, 260, 5815, 5949, 5951,
+    5953, 5955, 5957, 5969,
+)
+EXPECTED_CODE = (
+    21, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+    14, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26,
+)
+EXPECTED_RAW_COUNT = (
+    118567477908254066625631346005619254518349824000000000000
+)
+EXPECTED_CLASS_COUNT = 42277452950578284263485622772148731904
+EXPECTED_RANK = 31766083475554533889333676095260538518
 STDOUT_LIMIT_BYTES = 150 * 1024
-BRUTE_FORCE_OPERATION_BUDGET = 50_000_000
-EXPECTED_BOUND = 27
-EXPECTED_RING_STATIONS = 11
-EXPECTED_OUTCOME = "B_MULTIPLE_MINIMAL_CLASSES"
-EXPECTED_STATUS = (
-    "correct and minimum-length, but one of N inequivalent minimum classes"
-)
+
+Gate = tuple[str, tuple[int, ...]]
+Word = tuple[Gate, ...]
+
 CHECKS: dict[str, bool] = {}
 OUTPUT_LINES: list[str] = []
 
-IMPORT_ERROR: Exception | None = None
-try:
-    import frontier_cycle732_genesis_word_self_verification_2026_07_28 as G732
-    import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
-except Exception as error:  # Emit an honest bounded failure, not a traceback.
-    IMPORT_ERROR = error
-    G732 = None  # type: ignore[assignment]
-    K = None  # type: ignore[assignment]
 
-
-def check(label: str, condition: object) -> bool:
+def check(label: str, condition: object, detail: object = None) -> bool:
     if label in CHECKS:
         raise AssertionError(("duplicate check", label))
     passed = bool(condition)
     CHECKS[label] = passed
-    OUTPUT_LINES.append(f"{'PASS' if passed else 'FAIL'} {label} :: {passed}")
+    OUTPUT_LINES.append(
+        f"{'PASS' if passed else 'FAIL'} {label} :: "
+        f"{detail if detail is not None else passed}"
+    )
     return passed
 
 
+def file_sha256(relative: str) -> str:
+    return sha256((REPO_ROOT / relative).read_bytes()).hexdigest()
+
+
+def input_digest(
+    replacement: tuple[str, bytes] | None = None,
+) -> str:
+    digest = sha256()
+    for relative in AUDIT_INPUT_PATHS:
+        payload = (REPO_ROOT / relative).read_bytes()
+        if replacement is not None and replacement[0] == relative:
+            payload = replacement[1]
+        digest.update(relative.encode())
+        digest.update(b"\0")
+        digest.update(payload)
+        digest.update(b"\0")
+    return digest.hexdigest()
+
+
+def validate_fixture(raw: object) -> dict[str, object]:
+    if not isinstance(raw, dict) or set(raw) != {
+        "blank_state",
+        "landed_word",
+        "provenance",
+        "register_width",
+        "schema",
+        "supplied_model",
+        "target_support",
+    }:
+        raise ValueError("fixture top-level schema mismatch")
+    expected_model = {
+        "alphabet": (
+            "X(i) and ordered CNOT(control,target), control != target, "
+            "at every register position"
+        ),
+        "cost": "one unit per X or CNOT",
+        "equivalence": "adjacent swaps of semantically commuting gates",
+        "landing_rule": (
+            "the final bit string must equal the supplied target exactly"
+        ),
+    }
+    if (
+        raw["schema"] != EXPECTED_SCHEMA
+        or raw["blank_state"] != 0
+        or raw["register_width"] != 5979
+        or tuple(raw["target_support"]) != EXPECTED_SUPPORT
+        or raw["supplied_model"] != expected_model
+    ):
+        raise ValueError("fixture supplied theorem data mismatch")
+    word = raw["landed_word"]
+    if not isinstance(word, list) or len(word) != len(EXPECTED_SUPPORT):
+        raise ValueError("fixture landed-word length mismatch")
+    for record in word:
+        if not isinstance(record, dict) or set(record) != {"kind", "wires"}:
+            raise ValueError(("invalid gate record", record))
+        kind = record["kind"]
+        wires = record["wires"]
+        if not isinstance(wires, list):
+            raise ValueError(("invalid gate wires", record))
+        if kind == "X":
+            valid = len(wires) == 1
+        elif kind == "CNOT":
+            valid = len(wires) == 2 and wires[0] != wires[1]
+        else:
+            valid = False
+        if not (
+            valid
+            and all(
+                type(wire) is int and 0 <= wire < raw["register_width"]
+                for wire in wires
+            )
+        ):
+            raise ValueError(("gate outside supplied alphabet", record))
+    return raw
+
+
+def plain_word(fixture: dict[str, object]) -> Word:
+    return tuple(
+        (
+            str(record["kind"]),
+            tuple(int(wire) for wire in record["wires"]),
+        )
+        for record in fixture["landed_word"]
+    )
+
+
+def apply_gate(state: int, gate: Gate) -> int:
+    kind, wires = gate
+    if kind == "X":
+        return state ^ (1 << wires[0])
+    if kind == "CNOT":
+        control, target = wires
+        if (state >> control) & 1:
+            return state ^ (1 << target)
+        return state
+    raise ValueError(("gate outside checker alphabet", gate))
+
+
+def apply_word(state: int, word: Word) -> int:
+    for gate in word:
+        state = apply_gate(state, gate)
+    return state
+
+
+def gates_commute(left: Gate, right: Gate) -> bool:
+    left_kind, left_wires = left
+    right_kind, right_wires = right
+    if left_kind == right_kind == "X":
+        return True
+    if left_kind == "X" and right_kind == "CNOT":
+        return left_wires[0] != right_wires[0]
+    if left_kind == "CNOT" and right_kind == "X":
+        return right_wires[0] != left_wires[0]
+    if left_kind == right_kind == "CNOT":
+        left_control, left_target = left_wires
+        right_control, right_target = right_wires
+        return (
+            left_target != right_control
+            and right_target != left_control
+        )
+    raise ValueError((left, right))
+
+
+def alphabet(width: int) -> tuple[Gate, ...]:
+    return tuple(
+        [("X", (wire,)) for wire in range(width)]
+        + [
+            ("CNOT", (control, target))
+            for control in range(width)
+            for target in range(width)
+            if control != target
+        ]
+    )
+
+
+def semantic_commutation_truth(width: int) -> bool:
+    gates = alphabet(width)
+    for left in gates:
+        for right in gates:
+            actual = all(
+                apply_gate(apply_gate(state, left), right)
+                == apply_gate(apply_gate(state, right), left)
+                for state in range(1 << width)
+            )
+            if gates_commute(left, right) != actual:
+                return False
+    return True
+
+
+def successful_words(width: int, length: int) -> tuple[Word, ...]:
+    gates = alphabet(width)
+    target = (1 << width) - 1
+    return tuple(
+        tuple(gates[index] for index in indices)
+        for indices in product(range(len(gates)), repeat=length)
+        if apply_word(
+            0, tuple(gates[index] for index in indices)
+        ) == target
+    )
+
+
+def commutation_component_count(words: tuple[Word, ...]) -> int:
+    unseen = set(words)
+    components = 0
+    while unseen:
+        components += 1
+        stack = [unseen.pop()]
+        while stack:
+            word = stack.pop()
+            for index in range(len(word) - 1):
+                if not gates_commute(word[index], word[index + 1]):
+                    continue
+                moved = (
+                    word[:index]
+                    + (word[index + 1], word[index])
+                    + word[index + 2:]
+                )
+                if moved in unseen:
+                    unseen.remove(moved)
+                    stack.append(moved)
+    return components
+
+
+def exhaustive_small_words() -> dict[int, dict[str, object]]:
+    rows: dict[int, dict[str, object]] = {}
+    for width in range(1, 5):
+        counts = tuple(
+            len(successful_words(width, length))
+            for length in range(width + 1)
+        )
+        minimum_words = successful_words(width, width)
+        rows[width] = {
+            "success_counts_lengths_0_through_width": counts,
+            "minimum_word_count": len(minimum_words),
+            "commutation_class_count":
+                commutation_component_count(minimum_words),
+            "expected_minimum_word_count": factorial(width) ** 2,
+            "expected_commutation_class_count":
+                (width + 1) ** (width - 1),
+        }
+    return rows
+
+
+def encode_prufer(
+    edges: tuple[tuple[int, int], ...], vertex_count: int
+) -> tuple[int, ...]:
+    adjacency = [set() for _ in range(vertex_count)]
+    for left, right in edges:
+        adjacency[left].add(right)
+        adjacency[right].add(left)
+    leaves = [
+        vertex for vertex, neighbors in enumerate(adjacency)
+        if len(neighbors) == 1
+    ]
+    heapq.heapify(leaves)
+    code: list[int] = []
+    for _ in range(vertex_count - 2):
+        leaf = heapq.heappop(leaves)
+        parent = next(iter(adjacency[leaf]))
+        code.append(parent)
+        adjacency[parent].remove(leaf)
+        adjacency[leaf].clear()
+        if len(adjacency[parent]) == 1:
+            heapq.heappush(leaves, parent)
+    return tuple(code)
+
+
+def decode_prufer(
+    code: tuple[int, ...], vertex_count: int
+) -> tuple[tuple[int, int], ...]:
+    if len(code) != vertex_count - 2:
+        raise ValueError("Prüfer length mismatch")
+    degree = [1] * vertex_count
+    for vertex in code:
+        if not 0 <= vertex < vertex_count:
+            raise ValueError(("Prüfer digit", vertex))
+        degree[vertex] += 1
+    leaves = [
+        vertex for vertex, value in enumerate(degree) if value == 1
+    ]
+    heapq.heapify(leaves)
+    edges: list[tuple[int, int]] = []
+    for parent in code:
+        leaf = heapq.heappop(leaves)
+        edges.append((min(leaf, parent), max(leaf, parent)))
+        degree[leaf] -= 1
+        degree[parent] -= 1
+        if degree[parent] == 1:
+            heapq.heappush(leaves, parent)
+    remaining = [vertex for vertex, value in enumerate(degree) if value == 1]
+    if len(remaining) != 2:
+        raise ValueError(("Prüfer terminal leaves", remaining))
+    edges.append((min(remaining), max(remaining)))
+    return tuple(sorted(edges))
+
+
+def exhaustive_small_prufer() -> dict[int, dict[str, int | bool]]:
+    rows: dict[int, dict[str, int | bool]] = {}
+    for vertex_count in range(2, 7):
+        codes = tuple(
+            product(range(vertex_count), repeat=vertex_count - 2)
+        )
+        trees = {decode_prufer(tuple(code), vertex_count) for code in codes}
+        roundtrips = all(
+            encode_prufer(decode_prufer(tuple(code), vertex_count),
+                          vertex_count)
+            == tuple(code)
+            for code in codes
+        )
+        rows[vertex_count] = {
+            "code_count": len(codes),
+            "distinct_tree_count": len(trees),
+            "expected": vertex_count ** (vertex_count - 2),
+            "roundtrips": roundtrips,
+        }
+    return rows
+
+
+def landed_tree(
+    fixture: dict[str, object],
+) -> dict[str, object]:
+    support = tuple(int(wire) for wire in fixture["target_support"])
+    label = {wire: index + 1 for index, wire in enumerate(support)}
+    target = sum(1 << wire for wire in support)
+    state = 0
+    prepared: set[int] = set()
+    edges: list[tuple[int, int]] = []
+    weight_trace = [0]
+    for index, gate in enumerate(plain_word(fixture)):
+        kind, wires = gate
+        if kind == "X":
+            parent = 0
+            child = wires[0]
+        else:
+            control, child = wires
+            if control not in prepared:
+                raise ValueError(("unprepared CNOT control", index, control))
+            parent = label[control]
+        if child not in label or child in prepared:
+            raise ValueError(("invalid landed target step", index, child))
+        previous_weight = state.bit_count()
+        state = apply_gate(state, gate)
+        if state.bit_count() != previous_weight + 1:
+            raise ValueError(("nonmonotone landed step", index))
+        prepared.add(child)
+        edges.append((min(parent, label[child]), max(parent, label[child])))
+        weight_trace.append(state.bit_count())
+    canonical_edges = tuple(sorted(edges))
+    if state != target or tuple(sorted(prepared)) != support:
+        raise ValueError("landed word does not prepare supplied target")
+    code = encode_prufer(canonical_edges, len(support) + 1)
+    rank = 0
+    for digit in code:
+        rank = rank * (len(support) + 1) + digit
+    return {
+        "code": code,
+        "edges": canonical_edges,
+        "final_state": state,
+        "rank": rank,
+        "target": target,
+        "weight_trace": tuple(weight_trace),
+    }
+
+
+def independent_counts(support_size: int) -> dict[str, object]:
+    recurrence_factors = tuple(
+        (support_size - prepared) * (prepared + 1)
+        for prepared in range(support_size)
+    )
+    recurrence_count = 1
+    for factor in recurrence_factors:
+        recurrence_count *= factor
+    class_product = 1
+    for _ in range(support_size - 1):
+        class_product *= support_size + 1
+    return {
+        "minimum_length": support_size,
+        "raw_by_recurrence": recurrence_count,
+        "raw_by_factorials": factorial(support_size) ** 2,
+        "class_by_product": class_product,
+        "class_by_power": (support_size + 1) ** (support_size - 1),
+        "recurrence_factors": recurrence_factors,
+    }
+
+
+def run_primary() -> dict[str, object]:
+    completed = subprocess.run(
+        [sys.executable, str(REPO_ROOT / PRIMARY_PATH)],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        check=False,
+        text=True,
+        timeout=120,
+    )
+    lines = tuple(line for line in completed.stdout.splitlines() if line)
+    if completed.returncode != 0 or not lines:
+        raise RuntimeError(
+            {
+                "primary_returncode": completed.returncode,
+                "primary_stdout_tail": lines[-10:],
+                "primary_stderr_tail": completed.stderr.splitlines()[-10:],
+            }
+        )
+    report = json.loads(lines[-1])
+    if not isinstance(report, dict):
+        raise TypeError("primary terminal JSON is not an object")
+    return report
+
+
 def emit_report(report: dict[str, object]) -> int:
-    report["AUDIT_INPUT_PATHS"] = AUDIT_INPUT_PATHS
-    report["NOTE_PATH"] = NOTE_PATH
-    report["audit_timeout_seconds"] = AUDIT_TIMEOUT_SEC
-    report["blocklist"] = BLOCKLIST
-    report["runtime_seconds"] = round(perf_counter() - STARTED, 6)
-    preliminary = json.dumps(
-        report, sort_keys=True, separators=(",", ":"), default=str
-    )
-    check(
-        "OUTPUT_stdout_under_150KB",
-        len(preliminary.encode())
-        + len("\n".join(OUTPUT_LINES).encode())
-        + 4096
-        < STDOUT_LIMIT_BYTES,
-    )
-    check(
-        "OUTPUT_runtime_under_AUDIT_TIMEOUT",
-        float(report["runtime_seconds"]) < AUDIT_TIMEOUT_SEC,
-    )
     report["checks"] = dict(sorted(CHECKS.items()))
     report["checks_failed"] = sum(not value for value in CHECKS.values())
     report["checks_passed"] = sum(CHECKS.values())
     report["pass"] = all(CHECKS.values())
     report["terminal"] = (
-        "CYCLE753_SELECTION_INDEPENDENT_CHECK_PASS"
+        "CYCLE753_FIXED_TARGET_INDEPENDENT_CHECK_PASS"
         if report["pass"]
-        else "CYCLE753_SELECTION_INDEPENDENT_CHECK_HONEST_FAIL"
+        else "CYCLE753_FIXED_TARGET_INDEPENDENT_CHECK_FAIL"
     )
     report["report_sha256"] = sha256(
         json.dumps(report, sort_keys=True, default=str).encode()
@@ -104,1261 +477,239 @@ def emit_report(report: dict[str, object]) -> int:
     return 0 if report["pass"] else 1
 
 
-def module_assignment(tree: ast.AST, name: str) -> ast.AST:
-    for node in getattr(tree, "body", ()):
-        if isinstance(node, ast.Assign):
-            if any(
-                isinstance(target, ast.Name) and target.id == name
-                for target in node.targets
-            ):
-                return node.value
-        elif (
-            isinstance(node, ast.AnnAssign)
-            and isinstance(node.target, ast.Name)
-            and node.target.id == name
-        ):
-            return node.value
-    raise KeyError(("module assignment", name))
-
-
-def function_node(tree: ast.AST, name: str) -> ast.FunctionDef:
-    for node in getattr(tree, "body", ()):
-        if isinstance(node, ast.FunctionDef) and node.name == name:
-            return node
-    raise KeyError(("function", name))
-
-
-def local_assignment(scope: ast.AST, name: str) -> ast.AST:
-    for node in ast.walk(scope):
-        if isinstance(node, ast.Assign):
-            if any(
-                isinstance(target, ast.Name) and target.id == name
-                for target in node.targets
-            ):
-                return node.value
-        elif (
-            isinstance(node, ast.AnnAssign)
-            and isinstance(node.target, ast.Name)
-            and node.target.id == name
-        ):
-            return node.value
-    raise KeyError(("local assignment", name))
-
-
-def dict_nodes(node: ast.AST) -> dict[str, ast.AST]:
-    if not isinstance(node, ast.Dict):
-        raise TypeError(("expected dict", type(node).__name__))
-    output: dict[str, ast.AST] = {}
-    for key, value in zip(node.keys, node.values):
-        literal_key = ast.literal_eval(key)
-        if not isinstance(literal_key, str):
-            raise TypeError(("non-string dict key", literal_key))
-        output[literal_key] = value
-    return output
-
-
-def check_condition(scope: ast.AST, label: str) -> ast.AST:
-    for node in ast.walk(scope):
-        if (
-            isinstance(node, ast.Call)
-            and isinstance(node.func, ast.Name)
-            and node.func.id == "check"
-            and len(node.args) >= 2
-        ):
-            try:
-                candidate = ast.literal_eval(node.args[0])
-            except (ValueError, TypeError):
-                continue
-            if candidate == label:
-                return node.args[1]
-    raise KeyError(("check", label))
-
-
-def safe_arithmetic(node: ast.AST, names: dict[str, object]) -> object:
-    """Evaluate only a small arithmetic/literal AST vocabulary."""
-
-    if isinstance(node, ast.Constant):
-        return node.value
-    if isinstance(node, ast.Name):
-        if node.id not in names:
-            raise ValueError(("unknown safe name", node.id))
-        return names[node.id]
-    if isinstance(node, ast.Tuple):
-        return tuple(safe_arithmetic(item, names) for item in node.elts)
-    if isinstance(node, ast.List):
-        return [safe_arithmetic(item, names) for item in node.elts]
-    if isinstance(node, ast.UnaryOp) and isinstance(node.op, ast.USub):
-        return -int(safe_arithmetic(node.operand, names))
-    if isinstance(node, ast.BinOp):
-        left = safe_arithmetic(node.left, names)
-        right = safe_arithmetic(node.right, names)
-        operations = {
-            ast.Add: lambda: left + right,  # type: ignore[operator]
-            ast.Sub: lambda: left - right,  # type: ignore[operator]
-            ast.Mult: lambda: left * right,  # type: ignore[operator]
-            ast.FloorDiv: lambda: left // right,  # type: ignore[operator]
-            ast.Pow: lambda: left ** right,  # type: ignore[operator]
-        }
-        for kind, operation in operations.items():
-            if isinstance(node.op, kind):
-                return operation()
-        raise ValueError(("unsafe binary operator", type(node.op).__name__))
-    if isinstance(node, ast.Compare) and len(node.ops) == len(node.comparators) == 1:
-        left = safe_arithmetic(node.left, names)
-        right = safe_arithmetic(node.comparators[0], names)
-        if isinstance(node.ops[0], ast.Eq):
-            return left == right
-        if isinstance(node.ops[0], ast.NotEq):
-            return left != right
-        if isinstance(node.ops[0], ast.Lt):
-            return left < right  # type: ignore[operator]
-        if isinstance(node.ops[0], ast.LtE):
-            return left <= right  # type: ignore[operator]
-        raise ValueError(("unsafe comparison", type(node.ops[0]).__name__))
-    if isinstance(node, ast.IfExp):
-        branch = node.body if safe_arithmetic(node.test, names) else node.orelse
-        return safe_arithmetic(branch, names)
-    if (
-        isinstance(node, ast.Call)
-        and isinstance(node.func, ast.Name)
-        and node.func.id in {"factorial", "comb"}
-    ):
-        arguments = tuple(
-            int(safe_arithmetic(argument, names)) for argument in node.args
-        )
-        return (
-            factorial(*arguments)
-            if node.func.id == "factorial"
-            else comb(*arguments)
-        )
-    if isinstance(node, ast.JoinedStr):
-        pieces: list[str] = []
-        for item in node.values:
-            if isinstance(item, ast.Constant) and isinstance(item.value, str):
-                pieces.append(item.value)
-            elif isinstance(item, ast.FormattedValue):
-                pieces.append(str(safe_arithmetic(item.value, names)))
-            else:
-                raise ValueError(("unsafe f-string item", ast.dump(item)))
-        return "".join(pieces)
-    raise ValueError(("unsafe AST", type(node).__name__, ast.unparse(node)))
-
-
-def extraction() -> dict[str, object]:
-    """AST-only extraction of every Cycle-753 completeness claim."""
-
-    source = Path(PRIMARY_PATH).read_text(encoding="utf-8")
-    tree = ast.parse(source, filename=PRIMARY_PATH)
-    primary_audit_node = module_assignment(tree, "AUDIT_INPUT_PATHS")
-    primary_audit = ast.literal_eval(primary_audit_node)
-    search_limit = ast.literal_eval(module_assignment(tree, "SEARCH_LIMIT"))
-    ring_stations = ast.literal_eval(
-        module_assignment(tree, "RING_STATIONS")
-    )
-    main_node = function_node(tree, "main")
-
-    alphabet_nodes = dict_nodes(local_assignment(main_node, "alphabet"))
-    safe_nodes = dict_nodes(local_assignment(main_node, "safe_pruning"))
-    expected_safe_keys = (
-        "rule_1_weight_lower_bound",
-        "rule_1_machine_premises",
-        "rule_2_minimum_monotonicity",
-        "rule_2_landed_machine_check",
-        "rule_3_translation",
-        "rule_3_machine_check",
-        "rule_4_commutation",
-        "rule_4_complete_quotient",
-    )
-    justification_keys = (
-        "rule_1_weight_lower_bound",
-        "rule_2_minimum_monotonicity",
-        "rule_3_translation",
-        "rule_4_commutation",
-        "rule_4_complete_quotient",
-    )
-    justifications = {
-        key: ast.literal_eval(safe_nodes[key]) for key in justification_keys
-    }
-
-    exact_node = function_node(tree, "exact_census")
-    census_dict: dict[str, ast.AST] | None = None
-    for node in ast.walk(exact_node):
-        if (
-            isinstance(node, ast.Call)
-            and isinstance(node.func, ast.Attribute)
-            and node.func.attr == "append"
-            and node.args
-            and isinstance(node.args[0], ast.Dict)
-        ):
-            candidate = dict_nodes(node.args[0])
-            if "lawful_goal_words" in candidate:
-                census_dict = candidate
-                break
-    if census_dict is None:
-        raise AssertionError("exact_census row dictionary absent")
-    goal_words_node = local_assignment(exact_node, "goal_words")
-    goal_classes_node = local_assignment(exact_node, "goal_classes")
-
-    arithmetic_names: dict[str, object] = {
-        "target_weight": search_limit,
-        "RING_STATIONS": ring_stations,
-    }
-    per_target_node = local_assignment(main_node, "per_target_raw_words")
-    per_target = int(safe_arithmetic(per_target_node, arithmetic_names))
-    arithmetic_names["per_target_raw_words"] = per_target
-    orbit_node = local_assignment(main_node, "orbit_raw_words")
-    orbit_raw = int(safe_arithmetic(orbit_node, arithmetic_names))
-    arithmetic_names["orbit_raw_words"] = orbit_raw
-    class_node = local_assignment(main_node, "class_count")
-    class_count = int(safe_arithmetic(class_node, arithmetic_names))
-    arithmetic_names["class_count"] = class_count
-
-    primary_goal_words: list[int] = []
-    primary_goal_classes: list[int] = []
-    for length in range(search_limit + 1):
-        census_names = {
-            "length": length,
-            "targets": ring_stations,
-            "support_size": search_limit,
-        }
-        primary_goal_words.append(
-            int(
-                safe_arithmetic(
-                    goal_words_node, census_names
-                )
-            )
-        )
-        primary_goal_classes.append(
-            int(
-                safe_arithmetic(
-                    goal_classes_node, census_names
-                )
-            )
-        )
-
-    census_assertion = ast.unparse(
-        check_condition(
-            main_node, "C_exhaustive_census_each_length_through_L27"
-        )
-    )
-    boundary_nodes = dict_nodes(local_assignment(main_node, "boundary"))
-    outcome = safe_arithmetic(
-        local_assignment(main_node, "outcome"), arithmetic_names
-    )
-    arithmetic_names["outcome"] = outcome
-    status = safe_arithmetic(
-        boundary_nodes["Cycle732_word_status"], arithmetic_names
-    )
-    bound = safe_arithmetic(boundary_nodes["bound_L"], {
-        **arithmetic_names,
-        "SEARCH_LIMIT": search_limit,
-    })
-    minimum_proved = safe_arithmetic(
-        boundary_nodes["minimum_proved"], arithmetic_names
-    )
-    selection_derived = safe_arithmetic(
-        boundary_nodes["selection_derived_as_minimality"],
-        arithmetic_names,
-    )
-    selection_narrowed = safe_arithmetic(
-        boundary_nodes["selection_narrowed_to_frozen_census"],
-        arithmetic_names,
-    )
-    remaining_tuple = safe_arithmetic(
-        boundary_nodes["W1_remaining_supplies"], {
-            **arithmetic_names,
-            "remaining_supplies": safe_arithmetic(
-                local_assignment(main_node, "remaining_supplies"),
-                arithmetic_names,
-            ),
-        }
-    )
-    minimal_sentence = safe_arithmetic(
-        local_assignment(main_node, "minimal_content_sentence"),
-        arithmetic_names,
-    )
-
-    full_census_nodes = dict_nodes(
-        local_assignment(main_node, "full_minimal_census")
-    )
-    rank_statement = safe_arithmetic(
-        full_census_nodes["representation"], arithmetic_names
-    )
-    report_nodes = dict_nodes(local_assignment(main_node, "report"))
-    search_space_nodes = dict_nodes(report_nodes["search_space"])
-
-    literal_contract = (
-        isinstance(primary_audit, tuple)
-        and all(isinstance(path, str) for path in primary_audit)
-        and ast.dump(primary_audit_node)
-        == ast.dump(
-            ast.parse(repr(primary_audit), mode="eval").body
-        )
-    )
-    extracted_ok = (
-        literal_contract
-        and search_limit == EXPECTED_BOUND
-        and ring_stations == EXPECTED_RING_STATIONS
-        and tuple(safe_nodes) == expected_safe_keys
-        and tuple(alphabet_nodes)
-        == (
-            "full_width",
-            "X_placements",
-            "CNOT_ordered_distinct_placements",
-            "size",
-            "gate_kinds",
-        )
-        and tuple(search_space_nodes)
-        == (
-            "initial_state",
-            "alphabet",
-            "lawful_target_definition",
-            "lawful_target_count",
-            "lawful_target_weights",
-            "landed_target",
-            "landed_target_sha256",
-        )
-        and all(primary_goal_words[length] == 0 for length in range(27))
-        and primary_goal_words[27] == orbit_raw
-        and all(primary_goal_classes[length] == 0 for length in range(27))
-        and primary_goal_classes[27] == class_count
-        and "census[:-1]" in census_assertion
-        and "lawful_goal_words" in census_assertion
-        and "lawful_goal_classes" in census_assertion
-        and "== 0" in census_assertion
-        and outcome == EXPECTED_OUTCOME
-        and bound == EXPECTED_BOUND
-        and minimum_proved is True
-        and status == EXPECTED_STATUS
-        and selection_derived is False
-        and selection_narrowed is True
-        and isinstance(remaining_tuple, tuple)
-        and remaining_tuple[-1]
-        == f"one residual minimal-class rank in [0,{class_count - 1}]"
-    )
-    return {
-        "pass": extracted_ok,
-        "primary_source_sha256": sha256(source.encode()).hexdigest(),
-        "primary_AUDIT_INPUT_PATHS_literal": literal_contract,
-        "primary_AUDIT_INPUT_PATHS": primary_audit,
-        "search_limit": search_limit,
-        "ring_stations": ring_stations,
-        "search_space_keys": tuple(search_space_nodes),
-        "alphabet_definition": {
-            key: ast.unparse(value)
-            for key, value in alphabet_nodes.items()
-        },
-        "pruning_keys": tuple(safe_nodes),
-        "stated_safety_justifications": justifications,
-        "census_formulae": {
-            "unpruned_alphabet_words":
-                ast.unparse(census_dict["unpruned_alphabet_words"]),
-            "target_tagged_viable_prefix_words":
-                ast.unparse(
-                    census_dict["target_tagged_viable_prefix_words"]
-                ),
-            "translation_quotiented_commutation_prefix_classes":
-                ast.unparse(
-                    census_dict[
-                        "translation_quotiented_commutation_prefix_classes"
-                    ]
-                ),
-            "lawful_goal_words": ast.unparse(goal_words_node),
-            "lawful_goal_classes": ast.unparse(goal_classes_node),
-        },
-        "census_assertion": census_assertion,
-        "stated_zero_lawful_lengths": tuple(
-            length for length, count in enumerate(primary_goal_words)
-            if count == 0
-        ),
-        "stated_length_27_raw_count": primary_goal_words[27],
-        "stated_length_27_minimal_class_count":
-            primary_goal_classes[27],
-        "per_target_raw_formula": ast.unparse(per_target_node),
-        "orbit_raw_formula": ast.unparse(orbit_node),
-        "class_formula": ast.unparse(class_node),
-        "outcome": outcome,
-        "bound_L": bound,
-        "Cycle732_word_status": status,
-        "selection_derived_as_minimality": selection_derived,
-        "selection_narrowed_to_frozen_census": selection_narrowed,
-        "minimal_content_sentence": minimal_sentence,
-        "prufer_rank_census_statement": rank_statement,
-        "remaining_prufer_rank_convention": remaining_tuple[-1],
-    }
-
-
-def bits_to_int(bits: tuple[int, ...]) -> int:
-    return sum(int(bit) << wire for wire, bit in enumerate(bits))
-
-
-def int_to_bits(value: int, width: int) -> tuple[int, ...]:
-    return tuple((value >> wire) & 1 for wire in range(width))
-
-
-def apply_gate(state: int, kind: str, wires: tuple[int, ...]) -> int:
-    if kind == "X":
-        return state ^ (1 << wires[0])
-    if kind == "CNOT":
-        control, target = wires
-        return (
-            state ^ (1 << target)
-            if (state >> control) & 1
-            else state
-        )
-    raise ValueError(("outside X/CNOT alphabet", kind, wires))
-
-
-def apply_word(state: int, word: tuple[object, ...]) -> int:
-    for gate in word:
-        state = apply_gate(state, gate.kind, tuple(gate.wires))
-    return state
-
-
-def translation_wire_map(
-    layout: dict[str, int], shift: int
-) -> tuple[int, ...]:
-    """Independent station-block rotation on the actual Cycle-732 layout."""
-
-    stations = int(layout["stations"])
-    mapping = list(range(int(layout["full_width"])))
-    for name in (
-        "a_base",
-        "b_base",
-        "work_base",
-        "syndrome_base",
-        "ref_base",
-        "charge_base",
-    ):
-        base = int(layout[name])
-        for station in range(stations):
-            mapping[base + station] = (
-                base + (station + shift) % stations
-            )
-    block_rows = (
-        (
-            "scratch_base",
-            (
-                int(layout["or_scratch_base"])
-                - int(layout["scratch_base"])
-            )
-            // stations,
-        ),
-        (
-            "or_scratch_base",
-            (int(layout["ref_base"]) - int(layout["or_scratch_base"]))
-            // stations,
-        ),
-    )
-    for name, block_width in block_rows:
-        base = int(layout[name])
-        for station in range(stations):
-            moved = (station + shift) % stations
-            for slot in range(block_width):
-                mapping[base + station * block_width + slot] = (
-                    base + moved * block_width + slot
-                )
-    return tuple(mapping)
-
-
-def translate_value(value: int, mapping: tuple[int, ...]) -> int:
-    output = 0
-    while value:
-        low = value & -value
-        wire = low.bit_length() - 1
-        output |= 1 << mapping[wire]
-        value ^= low
-    return output
-
-
-def translate_word(
-    word: tuple[object, ...], mapping: tuple[int, ...]
-) -> tuple[tuple[str, tuple[int, ...]], ...]:
-    return tuple(
-        (gate.kind, tuple(mapping[wire] for wire in gate.wires))
-        for gate in word
-    )
-
-
-def apply_plain_word(
-    state: int, word: tuple[tuple[str, tuple[int, ...]], ...]
-) -> int:
-    for kind, wires in word:
-        state = apply_gate(state, kind, wires)
-    return state
-
-
-def gate_pair_commutes(
-    left: tuple[str, tuple[int, ...]],
-    right: tuple[str, tuple[int, ...]],
-) -> bool:
-    left_kind, left_wires = left
-    right_kind, right_wires = right
-    if left_kind == right_kind == "X":
-        return True
-    if left_kind == "X" and right_kind == "CNOT":
-        return left_wires[0] != right_wires[0]
-    if left_kind == "CNOT" and right_kind == "X":
-        return right_wires[0] != left_wires[0]
-    if left_kind == right_kind == "CNOT":
-        a, b = left_wires
-        c, d = right_wires
-        return b != c and d != a
-    raise ValueError((left, right))
-
-
-def k_semantics_and_commutation_truth() -> dict[str, object]:
-    width = 4
-    gates = tuple(
-        [("X", (wire,)) for wire in range(width)]
-        + [
-            ("CNOT", (control, target))
-            for control in range(width)
-            for target in range(width)
-            if control != target
-        ]
-    )
-    semantic_mismatches = 0
-    for kind, wires in gates:
-        gate = (
-            K.A.x(wires[0])
-            if kind == "X"
-            else K.A.cn(wires[0], wires[1])
-        )
-        for state in range(1 << width):
-            observed = bits_to_int(
-                tuple(K.A.apply_semantic(int_to_bits(state, width), (gate,)))
-            )
-            semantic_mismatches += observed != apply_gate(
-                state, kind, wires
-            )
-
-    commutation_mismatches = 0
-    commuting_pairs = 0
-    noncommuting_pairs = 0
-    for left in gates:
-        for right in gates:
-            semantic_commutes = all(
-                apply_plain_word(state, (left, right))
-                == apply_plain_word(state, (right, left))
-                for state in range(1 << width)
-            )
-            predicted = gate_pair_commutes(left, right)
-            commutation_mismatches += semantic_commutes != predicted
-            commuting_pairs += semantic_commutes
-            noncommuting_pairs += not semantic_commutes
-    return {
-        "test_width": width,
-        "single_gate_truth_rows": len(gates) * (1 << width),
-        "single_gate_semantic_mismatches": semantic_mismatches,
-        "ordered_gate_pairs": len(gates) ** 2,
-        "commuting_pairs": commuting_pairs,
-        "noncommuting_pairs": noncommuting_pairs,
-        "commutation_iff_mismatches": commutation_mismatches,
-        "pass":
-            semantic_mismatches == 0
-            and commutation_mismatches == 0
-            and noncommuting_pairs > 0,
-    }
-
-
-def weight_and_monotonicity_counterexample_search(
-    maximum_width: int = 4,
-) -> dict[str, object]:
-    rows: list[dict[str, object]] = []
-    delta_failures = 0
-    nonmonotone_goal_words = 0
-    total_goal_words = 0
-    for width in range(1, maximum_width + 1):
-        gates = tuple(
-            [("X", (wire,)) for wire in range(width)]
-            + [
-                ("CNOT", (control, target))
-                for control in range(width)
-                for target in range(width)
-                if control != target
-            ]
-        )
-        for state in range(1 << width):
-            for kind, wires in gates:
-                delta = (
-                    apply_gate(state, kind, wires).bit_count()
-                    - state.bit_count()
-                )
-                delta_failures += delta not in (-1, 0, 1)
-
-        target = (1 << width) - 1
-        width_goal_words = 0
-        width_bad_words = 0
-        for word_indices in product(range(len(gates)), repeat=width):
-            state = 0
-            trace = [0]
-            for index in word_indices:
-                kind, wires = gates[index]
-                state = apply_gate(state, kind, wires)
-                trace.append(state.bit_count())
-            if state == target:
-                width_goal_words += 1
-                if trace != list(range(width + 1)):
-                    width_bad_words += 1
-        expected = factorial(width) ** 2
-        rows.append(
-            {
-                "width_and_length": width,
-                "alphabet_size": len(gates),
-                "unpruned_words": len(gates) ** width,
-                "goal_words": width_goal_words,
-                "expected_monotone_words": expected,
-                "nonmonotone_goal_words": width_bad_words,
-            }
-        )
-        total_goal_words += width_goal_words
-        nonmonotone_goal_words += width_bad_words
-    return {
-        "maximum_width": maximum_width,
-        "rows": tuple(rows),
-        "weight_delta_failures": delta_failures,
-        "total_goal_words": total_goal_words,
-        "nonmonotone_goal_words": nonmonotone_goal_words,
-        "pass":
-            delta_failures == 0
-            and nonmonotone_goal_words == 0
-            and all(
-                row["goal_words"] == row["expected_monotone_words"]
-                for row in rows
-            ),
-    }
-
-
-def monotone_words(
-    support_size: int,
-) -> tuple[tuple[tuple[int, int], ...], ...]:
-    """All monotone words; parent 0 denotes X, other parents denote CNOT."""
-
-    words: list[tuple[tuple[int, int], ...]] = []
-    vertices = tuple(range(1, support_size + 1))
-    for order in permutations(vertices):
-        parent_options = tuple(
-            (0,) + order[:step] for step in range(support_size)
-        )
-        for parents in product(*parent_options):
-            words.append(tuple(zip(parents, order)))
-    return tuple(words)
-
-
-def abstract_gate(
-    edge: tuple[int, int]
-) -> tuple[str, tuple[int, ...]]:
-    parent, child = edge
-    return (
-        ("X", (child,))
-        if parent == 0
-        else ("CNOT", (parent, child))
-    )
-
-
-def tree_key(
-    word: tuple[tuple[int, int], ...]
-) -> tuple[tuple[int, int], ...]:
-    return tuple(
-        sorted((min(parent, child), max(parent, child))
-               for parent, child in word)
-    )
-
-
-def prufer_code_from_tree(
-    edges: tuple[tuple[int, int], ...], vertices: int
-) -> tuple[int, ...]:
-    adjacency = {vertex: set() for vertex in range(vertices)}
-    for left, right in edges:
-        adjacency[left].add(right)
-        adjacency[right].add(left)
-    code: list[int] = []
-    for _ in range(vertices - 2):
-        leaf = min(
-            vertex
-            for vertex, neighbors in adjacency.items()
-            if len(neighbors) == 1
-        )
-        neighbor = next(iter(adjacency[leaf]))
-        code.append(neighbor)
-        adjacency[neighbor].remove(leaf)
-        del adjacency[leaf]
-    return tuple(code)
-
-
-class DisjointSet:
-    def __init__(self, size: int) -> None:
-        self.parent = list(range(size))
-        self.rank = [0] * size
-
-    def find(self, item: int) -> int:
-        while self.parent[item] != item:
-            self.parent[item] = self.parent[self.parent[item]]
-            item = self.parent[item]
-        return item
-
-    def union(self, left: int, right: int) -> None:
-        left_root = self.find(left)
-        right_root = self.find(right)
-        if left_root == right_root:
-            return
-        if self.rank[left_root] < self.rank[right_root]:
-            left_root, right_root = right_root, left_root
-        self.parent[right_root] = left_root
-        if self.rank[left_root] == self.rank[right_root]:
-            self.rank[left_root] += 1
-
-
-def commutation_quotient_counterexample_search(
-    support_size: int = 5,
-) -> dict[str, object]:
-    words = monotone_words(support_size)
-    indices = {word: index for index, word in enumerate(words)}
-    dsu = DisjointSet(len(words))
-    unsafe_swap_failures = 0
-    for index, word in enumerate(words):
-        for position in range(len(word) - 1):
-            left = abstract_gate(word[position])
-            right = abstract_gate(word[position + 1])
-            if not gate_pair_commutes(left, right):
-                continue
-            swapped = (
-                word[:position]
-                + (word[position + 1], word[position])
-                + word[position + 2:]
-            )
-            other = indices.get(swapped)
-            if other is None:
-                unsafe_swap_failures += 1
-            else:
-                dsu.union(index, other)
-
-    component_trees: dict[int, set[tuple[tuple[int, int], ...]]] = (
-        defaultdict(set)
-    )
-    tree_sizes: dict[tuple[tuple[int, int], ...], int] = defaultdict(int)
-    for index, word in enumerate(words):
-        component_trees[dsu.find(index)].add(tree_key(word))
-        tree_sizes[tree_key(word)] += 1
-    tree_keys = tuple(tree_sizes)
-    codes = tuple(
-        prufer_code_from_tree(key, support_size + 1)
-        for key in tree_keys
-    )
-    expected_raw = factorial(support_size) ** 2
-    expected_classes = (support_size + 1) ** (support_size - 1)
-    return {
-        "support_size": support_size,
-        "raw_words_enumerated": len(words),
-        "expected_raw_words": expected_raw,
-        "commutation_components": len(component_trees),
-        "rooted_tree_keys": len(tree_keys),
-        "expected_prufer_classes": expected_classes,
-        "unsafe_commuting_swaps": unsafe_swap_failures,
-        "components_with_multiple_trees": sum(
-            len(keys) != 1 for keys in component_trees.values()
-        ),
-        "minimum_class_size": min(tree_sizes.values()),
-        "maximum_class_size": max(tree_sizes.values()),
-        "class_sizes_sum": sum(tree_sizes.values()),
-        "distinct_prufer_codes": len(set(codes)),
-        "prufer_code_length_failures": sum(
-            len(code) != support_size - 1 for code in codes
-        ),
-        "prufer_digit_failures": sum(
-            not all(0 <= digit <= support_size for digit in code)
-            for code in codes
-        ),
-        "pass":
-            len(words) == expected_raw
-            and len(component_trees) == expected_classes
-            and len(tree_keys) == expected_classes
-            and unsafe_swap_failures == 0
-            and all(len(keys) == 1 for keys in component_trees.values())
-            and sum(tree_sizes.values()) == expected_raw
-            and len(set(codes)) == expected_classes
-            and all(len(code) == support_size - 1 for code in codes)
-            and all(
-                all(0 <= digit <= support_size for digit in code)
-                for code in codes
-            ),
-    }
-
-
-def translation_certificate(
-    fixture: dict[str, object], word: tuple[object, ...]
-) -> dict[str, object]:
-    layout = fixture["layout"]
-    target = int(fixture["target"])
-    width = int(layout["full_width"])
-    stations = int(layout["stations"])
-    mappings = tuple(
-        translation_wire_map(layout, shift)
-        for shift in range(stations)
-    )
-    targets = tuple(
-        translate_value(target, mapping) for mapping in mappings
-    )
-    permutation_failures = sum(
-        tuple(sorted(mapping)) != tuple(range(width))
-        for mapping in mappings
-    )
-    identity_failures = sum(
-        mappings[0][wire] != wire for wire in range(width)
-    )
-    composition_failures = 0
-    for left in range(stations):
-        for right in range(stations):
-            combined = (left + right) % stations
-            composition_failures += any(
-                mappings[left][mappings[right][wire]]
-                != mappings[combined][wire]
-                for wire in range(width)
-            )
-    equivariance_failures = 0
-    for mapping, translated_target in zip(mappings, targets):
-        moved_word = translate_word(word, mapping)
-        equivariance_failures += (
-            apply_plain_word(0, moved_word) != translated_target
-        )
-    a_base = int(layout["a_base"])
-    a_rows = tuple(
-        tuple(
-            (translated >> (a_base + station)) & 1
-            for station in range(stations)
-        )
-        for translated in targets
-    )
-    return {
-        "stations": stations,
-        "full_width": width,
-        "mapping_permutation_failures": permutation_failures,
-        "identity_failures": identity_failures,
-        "group_composition_failures": composition_failures,
-        "target_orbit_size": len(set(targets)),
-        "target_weights": tuple(value.bit_count() for value in targets),
-        "unique_A_marker_each_target": all(sum(row) == 1 for row in a_rows),
-        "A_marker_rows": a_rows,
-        "translated_word_equivariance_failures": equivariance_failures,
-        "pass":
-            stations == EXPECTED_RING_STATIONS
-            and permutation_failures == 0
-            and identity_failures == 0
-            and composition_failures == 0
-            and len(set(targets)) == stations
-            and all(value.bit_count() == target.bit_count() for value in targets)
-            and all(sum(row) == 1 for row in a_rows)
-            and equivariance_failures == 0,
-    }
-
-
-def brute_force_unpruned_window(
-    width: int, lawful_targets: tuple[int, ...]
-) -> dict[str, object]:
-    """Literal full-alphabet word-tree enumeration with no safety pruning."""
-
-    alphabet_size = width ** 2
-    maximum_length = 0
-    while (
-        alphabet_size ** (maximum_length + 1)
-        <= BRUTE_FORCE_OPERATION_BUDGET
-    ):
-        maximum_length += 1
-    if maximum_length != 1:
-        raise AssertionError(
-            ("unexpected brute-force window", width, maximum_length)
-        )
-
-    target_set = set(lawful_targets)
-    goals = [int(0 in target_set)]
-    examined = 0
-    length_one_goals = 0
-    for wire in range(width):
-        output = apply_gate(0, "X", (wire,))
-        length_one_goals += output in target_set
-        examined += 1
-    for control in range(width):
-        for target in range(width):
-            if control == target:
-                continue
-            output = apply_gate(0, "CNOT", (control, target))
-            length_one_goals += output in target_set
-            examined += 1
-    goals.append(length_one_goals)
-    return {
-        "operation_budget": BRUTE_FORCE_OPERATION_BUDGET,
-        "alphabet_size": alphabet_size,
-        "largest_feasible_L_small": maximum_length,
-        "next_depth_word_count": alphabet_size ** (maximum_length + 1),
-        "word_counts_by_length": (1, examined),
-        "lawful_goal_counts_by_length": tuple(goals),
-        "expected_word_counts_by_length": (1, alphabet_size),
-        "pass":
-            examined == alphabet_size
-            and tuple(goals) == (0, 0)
-            and alphabet_size <= BRUTE_FORCE_OPERATION_BUDGET
-            and alphabet_size ** 2 > BRUTE_FORCE_OPERATION_BUDGET,
-    }
-
-
-def independent_pruned_recount(
-    support_size: int, translations: int
-) -> dict[str, object]:
-    """Independent recurrence; no Cycle-753 census helper is executed."""
-
-    prefix_per_target = 1
-    rows: list[dict[str, int]] = []
-    for length in range(support_size + 1):
-        if length:
-            prefix_per_target *= (
-                support_size - length + 1
-            ) * length
-        rows.append(
-            {
-                "length": length,
-                "target_tagged_viable_prefix_words":
-                    translations * prefix_per_target,
-                "lawful_goal_words": 0,
-                "lawful_goal_classes": 0,
-            }
-        )
-    per_target_raw = prefix_per_target
-    orbit_raw = translations * per_target_raw
-    class_count = 1
-    for _ in range(support_size - 1):
-        class_count *= support_size + 1
-    rows[-1]["lawful_goal_words"] = orbit_raw
-    rows[-1]["lawful_goal_classes"] = class_count
-
-    permutation_orders = 1
-    parent_choices = 1
-    for step in range(support_size):
-        permutation_orders *= support_size - step
-        parent_choices *= step + 1
-    return {
-        "rows": tuple(rows),
-        "zero_lawful_lengths": tuple(
-            row["length"] for row in rows[:-1]
-            if row["lawful_goal_words"] == 0
-            and row["lawful_goal_classes"] == 0
-        ),
-        "preparation_orders": permutation_orders,
-        "parent_choice_sequences": parent_choices,
-        "raw_minimal_words_per_exact_target": per_target_raw,
-        "translation_group_order": translations,
-        "translation_action_free": True,
-        "raw_minimal_words_across_translation_orbit": orbit_raw,
-        "commutation_classes_via_prufer": class_count,
-        "prufer_alphabet_size": support_size + 1,
-        "prufer_code_length": support_size - 1,
-        "rank_interval": (0, class_count - 1),
-        "pass":
-            tuple(row["length"] for row in rows)
-            == tuple(range(support_size + 1))
-            and tuple(
-                row["lawful_goal_words"] for row in rows[:-1]
-            )
-            == (0,) * support_size
-            and tuple(
-                row["lawful_goal_classes"] for row in rows[:-1]
-            )
-            == (0,) * support_size
-            and permutation_orders == factorial(support_size)
-            and parent_choices == factorial(support_size)
-            and per_target_raw
-            == permutation_orders * parent_choices
-            and orbit_raw == translations * per_target_raw
-            and class_count
-            == (support_size + 1) ** (support_size - 1),
-    }
-
-
-def landed_anchor(
-    fixture: dict[str, object],
-    word: tuple[object, ...],
-    class_count: int,
-) -> dict[str, object]:
-    target = int(fixture["target"])
-    width = int(fixture["layout"]["full_width"])
-    support = tuple(
-        wire for wire in range(width) if (target >> wire) & 1
-    )
-    labels = {wire: index + 1 for index, wire in enumerate(support)}
-    prepared: set[int] = set()
-    edges: list[tuple[int, int]] = []
-    weight_trace = [0]
-    subset_failures = 0
-    structure_failures = 0
-    state = 0
-    for gate in word:
-        kind = gate.kind
-        wires = tuple(gate.wires)
-        before_weight = state.bit_count()
-        if kind == "X" and len(wires) == 1:
-            wire = wires[0]
-            parent = 0
-        elif kind == "CNOT" and len(wires) == 2:
-            control, wire = wires
-            if control not in prepared:
-                structure_failures += 1
-            parent = labels.get(control, -1)
-        else:
-            structure_failures += 1
-            continue
-        if wire not in labels or wire in prepared or parent < 0:
-            structure_failures += 1
-        else:
-            edges.append((parent, labels[wire]))
-        prepared.add(wire)
-        state = apply_gate(state, kind, wires)
-        weight_trace.append(state.bit_count())
-        subset_failures += bool(state & ~target)
-        structure_failures += state.bit_count() != before_weight + 1
-
-    canonical_edges = tuple(
-        sorted((min(left, right), max(left, right))
-               for left, right in edges)
-    )
-    code = (
-        prufer_code_from_tree(canonical_edges, len(support) + 1)
-        if len(canonical_edges) == len(support)
-        else ()
-    )
-    rank = 0
-    for digit in code:
-        rank = rank * (len(support) + 1) + digit
-    k_observed = bits_to_int(
-        tuple(K.A.apply_semantic((0,) * width, word))
-    )
-    return {
-        "length": len(word),
-        "support_size": len(support),
-        "alphabet": tuple(sorted(set(gate.kind for gate in word))),
-        "own_zero_landing": state == target,
-        "K_zero_landing": k_observed == target,
-        "prepared_support_exact": prepared == set(support),
-        "rooted_tree_edges": len(canonical_edges),
-        "structure_failures": structure_failures,
-        "target_subset_failures": subset_failures,
-        "weight_trace": tuple(weight_trace),
-        "prufer_code": code,
-        "prufer_code_sha256": sha256(
-            json.dumps(code, separators=(",", ":")).encode()
-        ).hexdigest(),
-        "prufer_rank": rank,
-        "rank_interval": (0, class_count - 1),
-        "pass":
-            len(word) == len(support) == EXPECTED_BOUND
-            and set(gate.kind for gate in word) <= {"X", "CNOT"}
-            and state == k_observed == target
-            and prepared == set(support)
-            and len(canonical_edges) == len(support)
-            and structure_failures == 0
-            and subset_failures == 0
-            and weight_trace == list(range(len(support) + 1))
-            and len(code) == len(support) - 1
-            and all(0 <= digit <= len(support) for digit in code)
-            and 0 <= rank < class_count,
-    }
-
-
-def pruning_safety_reproof(
-    fixture: dict[str, object], word: tuple[object, ...]
-) -> dict[str, object]:
-    semantics = k_semantics_and_commutation_truth()
-    monotonicity = weight_and_monotonicity_counterexample_search()
-    translation = translation_certificate(fixture, word)
-    quotient = commutation_quotient_counterexample_search()
-    rule_verdicts = {
-        "rule_1_weight_lower_bound":
-            semantics["single_gate_semantic_mismatches"] == 0
-            and monotonicity["weight_delta_failures"] == 0,
-        "rule_2_minimum_monotonicity": monotonicity["pass"],
-        "rule_3_translation": translation["pass"],
-        "rule_4_commutation_and_prufer_quotient":
-            semantics["commutation_iff_mismatches"] == 0
-            and quotient["pass"],
-    }
-    return {
-        "rule_verdicts": rule_verdicts,
-        "rule_1_and_rule_4_actual_K_truth": semantics,
-        "rule_1_and_rule_2_unpruned_counterexample_search":
-            monotonicity,
-        "rule_3_actual_register_translation": translation,
-        "rule_4_small_exact_quotient_search": quotient,
-        "independent_arguments": {
-            "rule_1": (
-                "X and active CNOT toggle one bit; inactive CNOT toggles "
-                "none. Thus each gate raises Hamming weight by at most one."
-            ),
-            "rule_2": (
-                "A weight-27 endpoint after 27 gates saturates all 27 "
-                "per-gate upper bounds. Every step therefore adds a target "
-                "bit; any neutral, decreasing, repeated, inactive-control, "
-                "or outside-support step would force a later gain above one."
-            ),
-            "rule_3": (
-                "The independently rebuilt block map is a C11 permutation "
-                "action, preserves X/CNOT semantics, and has a free target "
-                "orbit certified by the unique rotating A marker."
-            ),
-            "rule_4": (
-                "The truth-table commutation iff is exact. A minimum word "
-                "chooses one parent among root plus earlier vertices for "
-                "each new target, hence a rooted tree; commuting swaps are "
-                "exactly swaps of incomparable preparation events. Prüfer "
-                "codes biject those trees with length-26 base-28 words."
-            ),
-        },
-        "pass": all(rule_verdicts.values()),
-    }
-
-
 def main() -> int:
-    if IMPORT_ERROR is not None:
-        check("INPUT_G732_and_K_imported", False)
-        return emit_report(
+    started = perf_counter()
+    report: dict[str, object] = {
+        "artifact_kind":
+            "independent_conditional_fixed_target_x_cnot_checker",
+        "audit_timeout_seconds": AUDIT_TIMEOUT_SEC,
+        "bounded": True,
+        "claim_type": "bounded_theorem",
+        "scientific_authority": "none",
+    }
+    try:
+        fixture_raw = json.loads((REPO_ROOT / FIXTURE_PATH).read_text())
+        fixture = validate_fixture(fixture_raw)
+        base_digest = input_digest()
+        mutated_fixture = json.loads(json.dumps(fixture))
+        mutated_fixture["target_support"][0] = (
+            mutated_fixture["target_support"][1]
+        )
+        mutation_rejected = False
+        try:
+            validate_fixture(mutated_fixture)
+        except ValueError:
+            mutation_rejected = True
+        mutated_bytes = (
+            json.dumps(mutated_fixture, sort_keys=True).encode()
+        )
+        mutated_digest = input_digest((FIXTURE_PATH, mutated_bytes))
+        check(
+            "A_literal_complete_input_packet_and_mutation_control",
+            len(AUDIT_INPUT_PATHS) == 6
+            and len(set(AUDIT_INPUT_PATHS)) == 6
+            and all((REPO_ROOT / path).is_file()
+                    for path in AUDIT_INPUT_PATHS)
+            and base_digest != mutated_digest
+            and mutation_rejected,
+            {"declared_count": len(AUDIT_INPUT_PATHS)},
+        )
+        provenance = fixture["provenance"]
+        parent_hashes = {
+            PARENT_NOTE_PATH: file_sha256(PARENT_NOTE_PATH),
+            PARENT_SOURCE_PATH: file_sha256(PARENT_SOURCE_PATH),
+        }
+        check(
+            "B_reviewed_parent_provenance_is_byte_pinned",
+            provenance == {
+                "reviewed_cycle732_fix_commit":
+                    "cbd2f199261fa073c2d7db7a6b34db6fb9792566",
+                "source_note": {
+                    "path": PARENT_NOTE_PATH,
+                    "sha256": parent_hashes[PARENT_NOTE_PATH],
+                },
+                "source_runner": {
+                    "path": PARENT_SOURCE_PATH,
+                    "sha256": parent_hashes[PARENT_SOURCE_PATH],
+                },
+            },
+            parent_hashes,
+        )
+
+        structure = landed_tree(fixture)
+        check(
+            "C_landed_word_independently_prepares_exact_target",
+            structure["weight_trace"]
+            == tuple(range(len(EXPECTED_SUPPORT) + 1))
+            and len(structure["edges"]) == len(EXPECTED_SUPPORT),
             {
-                "bounded": True,
-                "import_error_type": type(IMPORT_ERROR).__name__,
-                "import_error": str(IMPORT_ERROR),
-                "honest_boundary": (
-                    "The declared predecessors did not import; no "
-                    "minimality or selection conclusion was emitted."
-                ),
+                "edge_count": len(structure["edges"]),
+                "weight_trace": structure["weight_trace"],
+            },
+        )
+        check(
+            "D_landed_prufer_coordinate_matches_meta_convention",
+            structure["code"] == EXPECTED_CODE
+            and structure["rank"] == EXPECTED_RANK,
+            {"code": structure["code"], "rank": structure["rank"]},
+        )
+        all_x = tuple(("X", (wire,)) for wire in EXPECTED_SUPPORT)
+        check(
+            "E_explicit_nonuniqueness_control",
+            apply_word(0, all_x) == structure["target"]
+            and all_x != plain_word(fixture),
+            {"alternative_length": len(all_x)},
+        )
+
+        counts = independent_counts(len(EXPECTED_SUPPORT))
+        check(
+            "F_exact_raw_count_two_independent_forms",
+            counts["raw_by_recurrence"]
+            == counts["raw_by_factorials"]
+            == EXPECTED_RAW_COUNT,
+            counts["raw_by_recurrence"],
+        )
+        check(
+            "G_exact_class_count_two_independent_forms",
+            counts["class_by_product"]
+            == counts["class_by_power"]
+            == EXPECTED_CLASS_COUNT,
+            counts["class_by_product"],
+        )
+        check(
+            "H_semantic_commutation_predicate_truth_table",
+            semantic_commutation_truth(4),
+        )
+
+        small_words = exhaustive_small_words()
+        check(
+            "I_complete_word_spaces_through_width_four",
+            all(
+                row["success_counts_lengths_0_through_width"][:-1]
+                == (0,) * width
+                and row["minimum_word_count"]
+                == row["expected_minimum_word_count"]
+                and row["commutation_class_count"]
+                == row["expected_commutation_class_count"]
+                for width, row in small_words.items()
+            ),
+            small_words,
+        )
+        small_prufer = exhaustive_small_prufer()
+        check(
+            "J_complete_prufer_families_through_six_vertices",
+            all(
+                row["code_count"] == row["distinct_tree_count"]
+                == row["expected"]
+                and row["roundtrips"] is True
+                for row in small_prufer.values()
+            ),
+            small_prufer,
+        )
+
+        primary = run_primary()
+        primary_theorem = primary.get("theorem", {})
+        boundary = primary.get("claim_boundary", {})
+        check(
+            "K_primary_subprocess_passes_and_matches_independent_results",
+            primary.get("pass") is True
+            and primary.get("checks_failed") == 0
+            and primary_theorem.get("minimum_length")
+            == len(EXPECTED_SUPPORT)
+            and primary_theorem.get("raw_minimum_word_count")
+            == EXPECTED_RAW_COUNT
+            and primary_theorem.get("class_count")
+            == EXPECTED_CLASS_COUNT
+            and primary.get("landed_coordinate", {}).get("code")
+            == list(EXPECTED_CODE)
+            and primary.get("landed_coordinate", {}).get("rank")
+            == EXPECTED_RANK
+            and primary.get("fixture_sha256") == file_sha256(FIXTURE_PATH),
+            {
+                "primary_terminal": primary.get("terminal"),
+                "primary_report_sha256": primary.get("report_sha256"),
+            },
+        )
+        check(
+            "L_primary_scope_boundary_is_explicitly_narrow",
+            boundary == {
+                "analytic_not_exhaustive_search": True,
+                "autonomous_selection_claimed": False,
+                "axiom_consequence_claimed": False,
+                "fixed_target_conditional_theorem": True,
+                "physical_minimality_claimed": False,
+                "route_independent_no_go_claimed": False,
+                "translated_target_family_claimed": False,
+            },
+            boundary,
+        )
+
+        theorem_note = (REPO_ROOT / NOTE_PATH).read_text()
+        meta_note = (REPO_ROOT / META_NOTE_PATH).read_text()
+        check(
+            "M_note_labels_and_boundaries_are_machine_visible",
+            "Authority: none" in theorem_note
+            and "Claim type: bounded_theorem" in theorem_note
+            and "conditional logical-combinatorics statements"
+            in theorem_note
+            and "not a physical compilation" in theorem_note
+            and "Claim type: meta" in meta_note
+            and "rank is a coordinate" in meta_note
+            and "not a derived physical number" in meta_note,
+        )
+
+        runtime = perf_counter() - started
+        check(
+            "OUTPUT_runtime_under_AUDIT_TIMEOUT",
+            runtime < AUDIT_TIMEOUT_SEC,
+            round(runtime, 6),
+        )
+        report.update(
+            {
+                "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
+                "DECLARED_INPUT_PATHS": DECLARED_INPUT_PATHS,
+                "NOTE_PATH": NOTE_PATH,
+                "META_NOTE_PATH": META_NOTE_PATH,
+                "FIXTURE_PATH": FIXTURE_PATH,
+                "fixture_sha256": file_sha256(FIXTURE_PATH),
+                "input_manifest_sha256": base_digest,
+                "parent_provenance_sha256": parent_hashes,
+                "runtime_seconds": round(runtime, 6),
+                "independent_counts": counts,
+                "landed_coordinate": {
+                    "code": structure["code"],
+                    "rank": structure["rank"],
+                    "status": "meta coordinate only",
+                },
+                "small_word_exhaustion": small_words,
+                "small_prufer_exhaustion": small_prufer,
+                "primary_report_sha256": primary["report_sha256"],
+                "claim_boundary": {
+                    "fixed_target_conditional_theorem": True,
+                    "global_result_is_analytic": True,
+                    "translated_target_family_claimed": False,
+                    "physical_minimality_claimed": False,
+                    "autonomous_selection_claimed": False,
+                    "axiom_consequence_claimed": False,
+                    "unique_word_or_class_claimed": False,
+                    "route_independent_no_go_claimed": False,
+                },
             }
         )
-
-    report: dict[str, object] = {"bounded": True}
-    try:
-        blocklist_clean = all(
-            module not in sys.modules for module in BLOCKLIST
-        )
-        check("DISCIPLINE_Cycle753_primary_blocklisted", blocklist_clean)
-        check(
-            "INPUT_AUDIT_tuple_exact_and_literal",
-            AUDIT_INPUT_PATHS
-            == (
-                "scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py",
-                "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-            ),
-        )
-
-        extracted = extraction()
-        report["extraction"] = extracted
-        check("A_extraction_AST_only_complete", extracted["pass"])
-        check(
-            "DISCIPLINE_primary_still_not_imported_after_extraction",
-            all(module not in sys.modules for module in BLOCKLIST),
-        )
-
-        fixture = G732.declared_fixture()
-        layout = fixture["layout"]
-        target = int(fixture["target"])
-        word = G732.genesis_word(len(fixture["program"]), layout)
-        support_size = target.bit_count()
-
-        pruning = pruning_safety_reproof(fixture, word)
-        report["pruning_safety_reproof"] = pruning
-        check("B_pruning_safety_independently_reproved", pruning["pass"])
-
-        translation = pruning["rule_3_actual_register_translation"]
-        target_orbit = tuple(
-            translate_value(
-                target, translation_wire_map(layout, shift)
-            )
-            for shift in range(int(layout["stations"]))
-        )
-        brute = brute_force_unpruned_window(
-            int(layout["full_width"]), target_orbit
-        )
-        report["unpruned_brute_force_window"] = brute
-
-        recount = independent_pruned_recount(
-            support_size, int(layout["stations"])
-        )
-        report["minimality_recount"] = recount
-        brute_matches_pruned = (
-            brute["lawful_goal_counts_by_length"]
-            == tuple(
-                row["lawful_goal_words"]
-                for row in recount["rows"][
-                    : int(brute["largest_feasible_L_small"]) + 1
-                ]
-            )
-        )
-        check(
-            "B_unpruned_full_register_window_matches_pruned_census",
-            brute["pass"] and brute_matches_pruned,
-        )
-        check(
-            "C_minimality_recount_zero_0_26_and_exact_L27",
-            recount["pass"]
-            and recount["zero_lawful_lengths"] == tuple(range(27))
-            and recount["raw_minimal_words_across_translation_orbit"]
-            == extracted["stated_length_27_raw_count"]
-            and recount["commutation_classes_via_prufer"]
-            == extracted["stated_length_27_minimal_class_count"],
-        )
-
-        anchor = landed_anchor(
-            fixture,
-            word,
-            int(recount["commutation_classes_via_prufer"]),
-        )
-        report["anchor"] = anchor
-        check("D_G732_landed_word_in_minimal_class_family", anchor["pass"])
-
-        expected_residual = (
-            "one residual minimal-class rank in "
-            f"[0,{int(recount['commutation_classes_via_prufer']) - 1}]"
-        )
-        discipline = {
-            "blocklist_clean": all(
-                module not in sys.modules for module in BLOCKLIST
-            ),
-            "outcome_verbatim":
-                extracted["outcome"] == EXPECTED_OUTCOME,
-            "status_verbatim":
-                extracted["Cycle732_word_status"] == EXPECTED_STATUS,
-            "minimality_derived":
-                recount["zero_lawful_lengths"] == tuple(range(27))
-                and anchor["pass"],
-            "selection_not_eliminated":
-                int(recount["commutation_classes_via_prufer"]) > 1,
-            "selection_narrowed_not_derived":
-                extracted["selection_derived_as_minimality"] is False
-                and extracted["selection_narrowed_to_frozen_census"]
-                is True,
-            "prufer_rank_remaining_convention_verbatim":
-                extracted["remaining_prufer_rank_convention"]
-                == expected_residual,
-            "primary_never_imported":
-                all(module not in sys.modules for module in BLOCKLIST),
-        }
-        discipline["pass"] = all(discipline.values())
-        report["discipline"] = discipline
-        check(
-            "E_outcome_and_remaining_convention_discipline",
-            discipline["pass"],
-        )
-        report["honest_boundary"] = {
-            "bound_L": EXPECTED_BOUND,
-            "outcome": EXPECTED_OUTCOME,
-            "minimum_length_derived": True,
-            "selection_eliminated": False,
-            "selection_narrowed_to_class_rank_interval": True,
-            "remaining_convention": expected_residual,
-        }
     except Exception as error:
-        check("UNEXPECTED_checker_exception", False)
-        report["exception_type"] = type(error).__name__
-        report["exception"] = str(error)
-        report["honest_boundary"] = (
-            "The independent checker raised a caught exception; no clean "
-            "minimality or selection verdict was emitted."
+        check(
+            "UNEXPECTED_checker_exception",
+            False,
+            {"type": type(error).__name__, "message": str(error)},
         )
+        report["error_type"] = type(error).__name__
+        report["error"] = str(error)
+        report["runtime_seconds"] = round(perf_counter() - started, 6)
+    check(
+        "OUTPUT_stdout_under_150KB",
+        len(json.dumps(report, default=str).encode()) + 8192
+        < STDOUT_LIMIT_BYTES,
+    )
     return emit_report(report)
 
 

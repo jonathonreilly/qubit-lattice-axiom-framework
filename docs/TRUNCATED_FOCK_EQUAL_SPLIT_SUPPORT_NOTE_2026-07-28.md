@@ -82,7 +82,7 @@ of `alpha`; `(1,1)` remains a named supplied condition.
 
 The optional names `(F_d,A_d)` for the two components are kept on the
 non-authoritative meta surface
-`TRUNCATED_FOCK_COMPONENT_NAMING_CONVENTION_2026-07-28.md`. Those names are
+`TRUNCATED_FOCK_COMPONENT_NAMING_NOTE_2026-07-28.md`. Those names are
 not a theorem premise and do not assert distinct carrier degrees of freedom.
 
 ## Scope boundary

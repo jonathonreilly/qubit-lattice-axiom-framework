@@ -5,12 +5,12 @@
       "frontier_truncated_fock_equal_split_support_2026_07_28.txt": "401a6da1374d2035b54127c58c502347f6a3b3628086d873e41f3b4a5bd6f6cc"
     },
     "meta_convention": {
-      "path": "docs/TRUNCATED_FOCK_COMPONENT_NAMING_CONVENTION_2026-07-28.md",
+      "path": "docs/TRUNCATED_FOCK_COMPONENT_NAMING_NOTE_2026-07-28.md",
       "sha256": "4bdbb2f89f38cb0fe239f6f0454bcc34499fa55b28c5b479cfc1333df46a255c"
     },
     "note": {
       "path": "docs/TRUNCATED_FOCK_EQUAL_SPLIT_SUPPORT_NOTE_2026-07-28.md",
-      "sha256": "cdd98aff979f96b4642b12b67b836e15bfd347c3ed0bb0238da334da633ed106"
+      "sha256": "7a9d7e85924e978bd6724cc71953de8f549ff98eda0b4f795f3a4e858e9c6b71"
     },
     "runners": {
       "frontier_truncated_fock_equal_split_independent_check_2026_07_28.py": "dd0f66f4b44008df5b38fe0d5908753caa3257f7528d868ad8705b1af39bcffc",

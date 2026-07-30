@@ -1,0 +1,33 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC17-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle809_completeness_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 11
+    },
+    "logs/runner-cache/frontier_cycle809_convention_completeness_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 29
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 809,
+  "files": {
+    "docs/CONVENTION_COMPLETENESS_CYCLE809_BOUNDED_THEOREM_NOTE_2026-07-28.md": "95af6ac0a55a744cf7b872d3e391b4ea5b435118c025e851da2fa0955976c52d",
+    "logs/runner-cache/frontier_cycle809_completeness_independent_check_2026_07_28.txt": "50f116b97302c8780673c03a011769f17b7fd48a5548c25079814a758ed3811b",
+    "logs/runner-cache/frontier_cycle809_convention_completeness_2026_07_28.txt": "37d968d11756e161688e0950cabe70a0c1531fca274d9a20b22431cfcd7e6bb0",
+    "scripts/frontier_cycle809_completeness_independent_check_2026_07_28.py": "f33a3e3011724d4843ea435c9764048925bc7a3a526d99db384ec9293bd0846d",
+    "scripts/frontier_cycle809_convention_completeness_2026_07_28.py": "cce8420938b28b805811f4320ee54d7b8a58de0aeceebbd99f10c110338c90a3"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "26 conventions: AXIS-1 (cadence) 2; AXIS-2 (formation-site) 6; DETERMINED 12; RELABELING 6; RESIDUAL 0",
+    "checker: own inventory re-extraction no misses; 10 pairs + 1 triple joint variation no hidden freedom; axis independence witness reproduces"
+  ],
+  "verdicts": [
+    "TWO_AXES_COMPLETE",
+    "checker CONFIRMED (joint-variation attack: no hidden freedom)"
+  ]
+}

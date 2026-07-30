@@ -1,53 +1,140 @@
 #!/usr/bin/env python3
-"""Cycle 736: the pairwise-separated multi-source sector on ring 11.
+"""Cycle 736: static ring-11 templates and the Cycle-731 count prefix.
 
-Every independent A-mask of the cycle graph C11 is enumerated.  A pure-X
-template prepares its A rail, the canonical matching reference row, and
-h = k mod 2.  The canonical reference gauge has a fixed cut, so translation
-uses the corresponding reference normalization and h-controlled cut
-compensation.  In commuting-X normal form this gives an exact covariance
-identity in both parity sectors.
+This runner proves only a finite logical-register statement.  An externally
+supplied independent mask of C11 is written to the A rail together with the
+single-marked-edge canonical reference row and h = |A| mod 2.  The actual
+Cycle-731 count/comparator prefix is then evaluated for expected counts 0..5.
 
-All 199 independent configurations are then checked through a complete
-Cycle-719 controller orbit.  The claim is the bounded local-invariant and
-synchronous-composition theorem on the supplied ring-11 fixture, not an
-arbitrary-ring genesis or renewal theorem.  No theorem note is required at
-runtime.
+The fixed r_0 = 0 reference gauge is supplied.  Translation is reported both
+as literal passive wire translation and as the explicitly compensated
+canonical-gauge action.  No controller orbit, source composition, autonomous
+preparation, maximal domain, adjacency wall, or W4 result is claimed.
 """
 from __future__ import annotations
 
-import ast
 from hashlib import sha256
-import inspect
-from itertools import combinations
 import json
 from math import comb
+from pathlib import Path
 import sys
 from time import perf_counter
+from typing import Any
 
-import frontier_cycle735_separated_pair_lawful_control_2026_07_28 as S735
-import frontier_cycle731_token_count_certificate_2026_07_28 as C731
 import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
+import frontier_cycle731_token_count_certificate_2026_07_28 as C731
+import frontier_cycle735_separated_pair_lawful_control_2026_07_28 as S735
 
 
 AUDIT_TIMEOUT_SEC = 900
-NOTE_PATH = "docs/PAIRWISE_SEPARATED_MULTISOURCE_CYCLE736_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+NOTE_PATH = (
+    "docs/PAIRWISE_SEPARATED_MULTISOURCE_CYCLE736_"
+    "BOUNDED_THEOREM_NOTE_2026-07-28.md"
+)
+# This literal list binds the cache to the complete mutable closure consumed
+# through Cycle 731, plus the controlling Cycle 734/735 scope notes.
 AUDIT_INPUT_PATHS = (
-    "scripts/frontier_cycle735_separated_pair_lawful_control_2026_07_28.py",
-    "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
+    "docs/PAIRWISE_SEPARATED_MULTISOURCE_CYCLE736_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/SEPARATED_PAIR_LAWFUL_CONTROL_CYCLE735_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/BKSF_HOLONOMY_COMPRESSION_CYCLE728_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
+    "docs/work_history/repo/review_feedback/INFINITE_REVERSIBLE_RECORD_EXPORT_QCA_CYCLE11_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle612_interval_bridge_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+    "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
+    "scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
+    "scripts/frontier_cycle735_separated_pair_lawful_control_2026_07_28.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
+ROOT = Path(__file__).resolve().parents[1]
 RING_STATIONS = 11
 FIXTURE_BANKS = 2
 MAX_TOKEN_COUNT = 5
 EXPECTED_COUNTS_BY_K = (1, 11, 44, 77, 55, 11)
-EXPECTED_TOTAL_CONFIGURATIONS = 199
-EXPECTED_CYCLE735_PAIR_DIGEST_D2 = (
-    "8c53c8ce51e6e3461012db77122bef2f997ea65146c253d523b833a833dcca5b"
-)
+EXPECTED_TOTAL = 199
+EXPECTED_COVARIANCE = EXPECTED_TOTAL * RING_STATIONS
+EXPECTED_PASSIVE_COVARIANCE = 707
+EXPECTED_DISTRIBUTED_H_MISMATCHES = 99
 STDOUT_LIMIT_BYTES = 150 * 1024
+RING_MASK = (1 << RING_STATIONS) - 1
 
 CHECKS: dict[str, bool] = {}
 OUTPUT_LINES: list[str] = []
@@ -62,1409 +149,650 @@ def check(label: str, condition: bool) -> bool:
     return passed
 
 
-def digest_rows(rows: object) -> str:
+def digest_json(value: Any) -> str:
     return sha256(
-        json.dumps(
-            rows, sort_keys=True, separators=(",", ":"), default=str
-        ).encode()
+        json.dumps(value, sort_keys=True, separators=(",", ":")).encode()
     ).hexdigest()
 
 
-def tuple_to_mask(bits: tuple[int, ...]) -> int:
-    return sum(int(bit) << station for station, bit in enumerate(bits))
-
-
-def occupied_sites(bits: tuple[int, ...]) -> tuple[int, ...]:
-    return tuple(station for station, bit in enumerate(bits) if bit)
-
-
-def mask_to_config(mask: int, stations: int) -> tuple[int, ...]:
-    return tuple((mask >> station) & 1 for station in range(stations))
-
-
-def rotate_mask(mask: int, shift: int, stations: int) -> int:
-    full = (1 << stations) - 1
-    normalized = shift % stations
+def rotate_mask(mask: int, shift: int) -> int:
+    normalized = shift % RING_STATIONS
     if normalized == 0:
-        return mask & full
+        return mask & RING_MASK
     return (
-        ((mask << normalized) & full)
-        | (mask >> (stations - normalized))
+        ((mask << normalized) & RING_MASK)
+        | (mask >> (RING_STATIONS - normalized))
     )
 
 
-def rotate_config(
-    config: tuple[int, ...], shift: int
-) -> tuple[int, ...]:
-    stations = len(config)
+def independent_masks() -> tuple[int, ...]:
     return tuple(
-        config[(station - shift) % stations]
-        for station in range(stations)
-    )
-
-
-def adjacent_edges(
-    config: tuple[int, ...],
-) -> tuple[tuple[int, int], ...]:
-    stations = len(config)
-    return tuple(
-        (station, (station + 1) % stations)
-        for station in range(stations)
-        if config[station] and config[(station + 1) % stations]
-    )
-
-
-def pairwise_circular_distances(
-    sites: tuple[int, ...], stations: int
-) -> tuple[int, ...]:
-    return tuple(
-        sorted(
-            min((right - left) % stations, (left - right) % stations)
-            for left, right in combinations(sites, 2)
+        mask
+        for mask in range(1 << RING_STATIONS)
+        if not any(
+            ((mask >> station) & 1)
+            and ((mask >> ((station + 1) % RING_STATIONS)) & 1)
+            for station in range(RING_STATIONS)
         )
     )
 
 
-def is_pairwise_separated(config: tuple[int, ...]) -> bool:
-    return not adjacent_edges(config)
-
-
-def independent_cycle_closed_form(stations: int, count: int) -> int:
-    """Number n/(n-k) binomial(n-k,k), with the empty set included."""
-
+def closed_form_count(count: int) -> int:
     if count == 0:
         return 1
-    if count > stations // 2:
+    if count > RING_STATIONS // 2:
         return 0
-    numerator = stations * comb(stations - count, count)
-    denominator = stations - count
-    if numerator % denominator:
-        raise AssertionError(("nonintegral cycle count", stations, count))
-    return numerator // denominator
-
-
-def lucas_number(index: int) -> int:
-    if index == 0:
-        return 2
-    previous, current = 2, 1
-    for _ in range(2, index + 1):
-        previous, current = current, previous + current
-    return current
-
-
-def configuration_census() -> dict[str, object]:
-    configurations = tuple(
-        mask_to_config(mask, RING_STATIONS)
-        for mask in range(1 << RING_STATIONS)
-        if is_pairwise_separated(mask_to_config(mask, RING_STATIONS))
+    return (
+        RING_STATIONS
+        * comb(RING_STATIONS - count, count)
+        // (RING_STATIONS - count)
     )
-    direct_counts = tuple(
-        sum(sum(config) == count for config in configurations)
+
+
+def census_certificate(masks: tuple[int, ...]) -> dict[str, Any]:
+    counts = tuple(
+        sum(mask.bit_count() == count for mask in masks)
         for count in range(MAX_TOKEN_COUNT + 1)
     )
-    closed_form_counts = tuple(
-        independent_cycle_closed_form(RING_STATIONS, count)
-        for count in range(MAX_TOKEN_COUNT + 1)
+    formula = tuple(
+        closed_form_count(count) for count in range(MAX_TOKEN_COUNT + 1)
     )
-    masks = tuple(tuple_to_mask(config) for config in configurations)
-    maximum = max(map(sum, configurations))
-    lucas_total = lucas_number(RING_STATIONS)
     return {
-        "configurations": configurations,
-        "direct_counts_by_k": direct_counts,
-        "closed_form_counts_by_k": closed_form_counts,
-        "frozen_expected_counts_by_k": EXPECTED_COUNTS_BY_K,
-        "direct_total": len(configurations),
-        "closed_form_total": sum(closed_form_counts),
-        "lucas_recurrence_total_L11": lucas_total,
-        "frozen_expected_total": EXPECTED_TOTAL_CONFIGURATIONS,
-        "maximum_token_count": maximum,
-        "closed_form_derivation":
-            "|Ind_k(C_n)| = n/(n-k) * binomial(n-k,k)",
-        "lucas_derivation":
-            "sum_k |Ind_k(C_11)| = L_11, L_0=2, L_1=1, "
-            "L_n=L_(n-1)+L_(n-2)",
-        "configuration_mask_table_sha256": digest_rows(masks),
-        "agreement": (
-            direct_counts
-            == closed_form_counts
-            == EXPECTED_COUNTS_BY_K
-            and len(configurations)
-            == sum(closed_form_counts)
-            == lucas_total
-            == EXPECTED_TOTAL_CONFIGURATIONS
-            and maximum == MAX_TOKEN_COUNT
+        "counts_by_k": counts,
+        "closed_form_counts_by_k": formula,
+        "total": len(masks),
+        "maximum_k": max(mask.bit_count() for mask in masks),
+        "mask_table_sha256": digest_json(masks),
+        "closed_form": "11/(11-k) * binomial(11-k,k)",
+        "pass": (
+            counts == formula == EXPECTED_COUNTS_BY_K
+            and len(masks) == sum(formula) == EXPECTED_TOTAL
+            and max(mask.bit_count() for mask in masks) == MAX_TOKEN_COUNT
         ),
     }
 
 
-def configuration_mask(config: tuple[int, ...]) -> int:
-    return sum(int(bit) << station for station, bit in enumerate(config))
-
-
-def matching_reference_row(
-    config: tuple[int, ...],
-) -> tuple[int, ...]:
-    return C731.canonical_refs(
-        configuration_mask(config),
-        0,
-        sum(config) & 1,
-        len(config),
+def mask_sites(mask: int) -> tuple[int, ...]:
+    return tuple(
+        station
+        for station in range(RING_STATIONS)
+        if (mask >> station) & 1
     )
 
 
-def multisource_creation_word(
-    layout: dict[str, int], config: tuple[int, ...]
-) -> tuple[object, ...]:
-    """Pure-X W(config), with all physical sites supplied by config."""
+def bits_mask(bits: tuple[int, ...]) -> int:
+    return sum(int(bit) << index for index, bit in enumerate(bits))
 
-    references = matching_reference_row(config)
+
+def rotate_refs_to_next(refs_mask: int) -> int:
+    return (refs_mask >> 1) | (
+        (refs_mask & 1) << (RING_STATIONS - 1)
+    )
+
+
+def marked_edge_syndrome(
+    a_mask: int, refs: tuple[int, ...], h: int
+) -> int:
+    refs_mask = bits_mask(refs)
+    return (
+        a_mask
+        ^ refs_mask
+        ^ rotate_refs_to_next(refs_mask)
+        ^ h
+    ) & RING_MASK
+
+
+def canonical_refs(mask: int) -> tuple[int, ...]:
+    return C731.canonical_refs(
+        mask, 0, mask.bit_count() & 1, RING_STATIONS
+    )
+
+
+def distributed_h_refs(mask: int) -> tuple[int, ...]:
+    """The rejected convention: h is inserted at every recurrence edge."""
+
+    h = mask.bit_count() & 1
+    refs = [0]
+    for station in range(RING_STATIONS - 1):
+        refs.append(refs[-1] ^ ((mask >> station) & 1) ^ h)
+    return tuple(refs)
+
+
+def template_word(
+    layout: dict[str, int], mask: int
+) -> tuple[object, ...]:
+    refs = canonical_refs(mask)
     return (
         tuple(
             K.A.x(layout["a_base"] + station)
-            for station, bit in enumerate(config)
-            if bit
+            for station in mask_sites(mask)
         )
         + tuple(
             K.A.x(layout["ref_base"] + station)
-            for station, bit in enumerate(references)
+            for station, bit in enumerate(refs)
             if bit
         )
-        + tuple(
-            K.A.x(layout["h_wire"])
-            for _ in range(sum(config) & 1)
+        + (
+            (K.A.x(layout["h_wire"]),)
+            if mask.bit_count() & 1
+            else ()
         )
     )
 
 
-def template_expected_value(
-    layout: dict[str, int], config: tuple[int, ...]
-) -> int:
+def expected_template_value(layout: dict[str, int], mask: int) -> int:
     return C731.controller_full_input(
         0,
         layout,
-        a=occupied_sites(config),
-        refs=matching_reference_row(config),
-        h=sum(config) & 1,
+        a=mask_sites(mask),
+        refs=canonical_refs(mask),
+        h=mask.bit_count() & 1,
     )
 
 
-def template_ast_audit() -> dict[str, object]:
-    audited_functions = (
-        configuration_mask,
-        matching_reference_row,
-        multisource_creation_word,
-    )
-    tree = ast.parse(
-        "\n".join(inspect.getsource(function) for function in audited_functions)
-    )
-    template = next(
-        node
-        for node in ast.walk(tree)
-        if isinstance(node, ast.FunctionDef)
-        and node.name == "multisource_creation_word"
-    )
-    arguments = tuple(argument.arg for argument in template.args.args)
-    integer_constants = tuple(
-        node.value
-        for node in ast.walk(tree)
-        if isinstance(node, ast.Constant)
-        and isinstance(node.value, int)
-        and not isinstance(node.value, bool)
-    )
-    distinguished_site_constants = tuple(
-        value
-        for value in integer_constants
-        if value in range(2, RING_STATIONS)
-    )
-    decision_or_statement_loops = tuple(
-        type(node).__name__
-        for node in ast.walk(template)
-        if isinstance(
-            node,
-            (
-                ast.If,
-                ast.IfExp,
-                ast.For,
-                ast.While,
-                ast.Match,
-                ast.Try,
-                ast.ListComp,
-                ast.SetComp,
-                ast.DictComp,
-            ),
-        )
-    )
-    generators = tuple(
-        node
-        for node in ast.walk(template)
-        if isinstance(node, ast.GeneratorExp)
-    )
-    generator_filters = sum(
-        len(generator.ifs)
-        for expression in generators
-        for generator in expression.generators
-    )
-    forbidden_names = tuple(
-        node.id
-        for node in ast.walk(tree)
-        if isinstance(node, ast.Name)
-        and node.id in {"position", "origin", "anchor", "distinguished_site"}
-    )
-    passed = (
-        arguments == ("layout", "config")
-        and not distinguished_site_constants
-        and not decision_or_statement_loops
-        and len(generators) == 3
-        and generator_filters == 2
-        and not forbidden_names
-    )
-    return {
-        "audited_functions": tuple(
-            function.__name__ for function in audited_functions
-        ),
-        "template_parameters": arguments,
-        "external_configuration_parameter": "config" in arguments,
-        "integer_constants": integer_constants,
-        "distinguished_site_constants": distinguished_site_constants,
-        "decision_or_statement_loops": decision_or_statement_loops,
-        "generator_expressions": len(generators),
-        "configuration_filters": generator_filters,
-        "forbidden_site_names": forbidden_names,
-        "no_distinguished_site": not distinguished_site_constants
-        and not forbidden_names,
-        "audit_pass": passed,
-    }
+def word_support(word: tuple[object, ...]) -> set[int]:
+    support: set[int] = set()
+    for gate in word:
+        if gate.kind != "X" or len(gate.wires) != 1:
+            raise ValueError(("template is not pure X", gate))
+        wire = gate.wires[0]
+        if wire in support:
+            support.remove(wire)
+        else:
+            support.add(wire)
+    return support
 
 
-def toggle_wire(support: set[int], wire: int) -> None:
+def passive_translation_support(
+    word: tuple[object, ...], layout: dict[str, int], shift: int
+) -> set[int]:
+    output: set[int] = set()
+    normalized = shift % RING_STATIONS
+    for wire in word_support(word):
+        if layout["a_base"] <= wire < layout["a_base"] + RING_STATIONS:
+            site = wire - layout["a_base"]
+            output.add(layout["a_base"] + (site + normalized) % RING_STATIONS)
+        elif (
+            layout["ref_base"]
+            <= wire
+            < layout["ref_base"] + RING_STATIONS
+        ):
+            site = wire - layout["ref_base"]
+            output.add(
+                layout["ref_base"] + (site + normalized) % RING_STATIONS
+            )
+        elif wire == layout["h_wire"]:
+            output.add(wire)
+        else:
+            raise ValueError(("template wire outside A/reference/h", wire))
+    return output
+
+
+def toggle(support: set[int], wire: int) -> None:
     if wire in support:
         support.remove(wire)
     else:
         support.add(wire)
 
 
-def conjugate_template_by_translation(
-    word: tuple[object, ...],
-    layout: dict[str, int],
-    shift: int,
-) -> tuple[object, ...]:
-    """Canonical commuting-X form of T_s W T_s^-1.
+def gauge_normalized_translation_support(
+    word: tuple[object, ...], layout: dict[str, int], shift: int
+) -> set[int]:
+    """Translate, add the marked-cut h compensation, and restore r_0 = 0."""
 
-    The C731 reference extension fixes r_0=0.  For h=1, translating the
-    charge row by s therefore carries the standard cut compensation
-    X_h -> X_h product_{j=1..s} X_ref(j).  After the wire translation, a
-    possible global reference complement restores r_0=0.  This is the exact
-    gauge-covariant translation on the canonical preparation code.
-    """
-
-    stations = layout["stations"]
-    normalized = shift % stations
-    support: set[int] = set()
-    for gate in word:
-        if gate.kind != "X" or len(gate.wires) != 1:
-            raise ValueError(("template is not pure X", gate))
-        wire = gate.wires[0]
-        if layout["a_base"] <= wire < layout["a_base"] + stations:
-            site = wire - layout["a_base"]
-            toggle_wire(
-                support,
-                layout["a_base"] + (site + normalized) % stations,
-            )
-        elif layout["ref_base"] <= wire < layout["ref_base"] + stations:
-            site = wire - layout["ref_base"]
-            toggle_wire(
-                support,
-                layout["ref_base"] + (site + normalized) % stations,
-            )
-        elif wire == layout["h_wire"]:
-            toggle_wire(support, wire)
-            for site in range(1, normalized + 1):
-                toggle_wire(support, layout["ref_base"] + site)
-        else:
-            raise ValueError(("template wire outside A/reference/h", wire))
+    normalized = shift % RING_STATIONS
+    support = passive_translation_support(word, layout, normalized)
+    if layout["h_wire"] in word_support(word):
+        for site in range(1, normalized + 1):
+            toggle(support, layout["ref_base"] + site)
     if layout["ref_base"] in support:
-        for site in range(stations):
-            toggle_wire(support, layout["ref_base"] + site)
-    return tuple(K.A.x(wire) for wire in sorted(support))
+        for site in range(RING_STATIONS):
+            toggle(support, layout["ref_base"] + site)
+    return support
 
 
-def template_and_covariance_certificate(
-    layout: dict[str, int],
-    configurations: tuple[tuple[int, ...], ...],
-) -> dict[str, object]:
-    exactness_failures = []
-    covariance_failures = []
-    exactness_rows = []
-    covariance_rows = []
-    h0_cases = 0
-    h1_cases = 0
-    h1_multitoken_cases = 0
-    first_h1_multitoken: dict[int, tuple[int, ...]] = {}
-    covariance_identities = 0
+def template_certificate(
+    layout: dict[str, int], masks: tuple[int, ...]
+) -> dict[str, Any]:
+    failures: list[tuple[Any, ...]] = []
+    rows: list[tuple[Any, ...]] = []
+    gauge_matches = passive_matches = 0
+    gauge_by_h = [0, 0]
+    passive_by_h = [0, 0]
+    total_by_h = [0, 0]
 
-    for config in configurations:
-        mask = configuration_mask(config)
-        count = sum(config)
-        h = count & 1
-        references = matching_reference_row(config)
-        reference_mask = tuple_to_mask(references)
-        word = multisource_creation_word(layout, config)
-        expected = template_expected_value(layout, config)
+    for mask in masks:
+        h = mask.bit_count() & 1
+        refs = canonical_refs(mask)
+        word = template_word(layout, mask)
+        expected = expected_template_value(layout, mask)
         observed = C731.literal_apply(
             (0,), word, layout["full_width"], 1
         )[0]
-        rows = C731.controller_rows(observed, layout)
-        charge_syndrome = S735.P734.charge_syndrome(
-            mask, 0, reference_mask, h
-        )
+        decoded = C731.controller_rows(observed, layout)
         conditions = {
             "bit_exact": observed == expected,
             "pure_X": all(gate.kind == "X" for gate in word),
-            "unique_targets":
-                len({gate.wires[0] for gate in word}) == len(word),
-            "data_blank": rows["data"] == 0,
-            "A_exact": rows["A"] == config,
+            "unique_targets": len(word_support(word)) == len(word),
+            "A_exact": bits_mask(decoded["A"]) == mask,
             "B_work_blank":
-                not any(rows["B"]) and not any(rows["work"]),
-            "reference_exact": rows["refs"] == references,
-            "h_exact": rows["h"] == h,
-            "parity_law":
-                (sum(rows["A"]) + sum(rows["B"])) & 1 == rows["h"],
-            "charge_rows_lawful": charge_syndrome == 0,
-            "auxiliaries_clean": C731.all_auxiliary_clean(rows),
-            "word_size":
-                len(word) == count + sum(references) + h,
+                not any(decoded["B"]) and not any(decoded["work"]),
+            "refs_exact": decoded["refs"] == refs,
+            "h_exact": decoded["h"] == h,
+            "marked_edge_law": marked_edge_syndrome(mask, refs, h) == 0,
+            "auxiliary_clean": C731.all_auxiliary_clean(decoded),
         }
         if not all(conditions.values()):
-            exactness_failures.append(
-                {
-                    "mask": mask,
-                    "k": count,
-                    "failed": tuple(
-                        key
-                        for key, passed in conditions.items()
+            failures.append(
+                (
+                    mask,
+                    tuple(
+                        name
+                        for name, passed in conditions.items()
                         if not passed
                     ),
-                }
+                )
             )
-        exactness_rows.append(
-            (mask, count, h, reference_mask, len(word), K.gate_digest(word))
-        )
-        h0_cases += h == 0
-        h1_cases += h == 1
-        if h and count > 1:
-            h1_multitoken_cases += 1
-            first_h1_multitoken.setdefault(count, occupied_sites(config))
 
         for shift in range(RING_STATIONS):
-            shifted = rotate_config(config, shift)
-            conjugated = conjugate_template_by_translation(
-                word, layout, shift
-            )
-            target = multisource_creation_word(layout, shifted)
-            covariance_identities += 1
-            exact = conjugated == target
-            if not exact:
-                covariance_failures.append(
-                    {"mask": mask, "k": count, "shift": shift}
-                )
-            covariance_rows.append(
+            shifted = rotate_mask(mask, shift)
+            target = word_support(template_word(layout, shifted))
+            passive = passive_translation_support(word, layout, shift)
+            gauge = gauge_normalized_translation_support(word, layout, shift)
+            passive_ok = passive == target
+            gauge_ok = gauge == target
+            passive_matches += passive_ok
+            gauge_matches += gauge_ok
+            passive_by_h[h] += passive_ok
+            gauge_by_h[h] += gauge_ok
+            total_by_h[h] += 1
+            rows.append(
                 (
                     mask,
                     shift,
-                    configuration_mask(shifted),
-                    K.gate_digest(conjugated),
-                    exact,
+                    shifted,
+                    int(passive_ok),
+                    int(gauge_ok),
                 )
             )
+            if not gauge_ok and len(failures) < 20:
+                failures.append(("gauge_covariance", mask, shift))
 
-    ast_audit = template_ast_audit()
-    k_le_2 = sum(sum(config) <= 2 for config in configurations)
-    expected_identities = len(configurations) * RING_STATIONS
     return {
-        "template_cases": len(configurations),
-        "expected_template_cases": EXPECTED_TOTAL_CONFIGURATIONS,
-        "exactness_failures": tuple(exactness_failures[:1]),
-        "template_table_sha256": digest_rows(exactness_rows),
-        "AST_no_distinguished_site": ast_audit,
-        "h0_configurations": h0_cases,
-        "h1_configurations": h1_cases,
-        "h1_multitoken_configurations": h1_multitoken_cases,
-        "first_h1_multitoken_states_by_k": first_h1_multitoken,
-        "covariance_identity": (
-            "T_s W(config) T_s^-1 = W(shift_s(config)), in canonical "
-            "commuting-X form with reference-gauge normalization and "
-            "the h-controlled cut compensation"
+        "template_cases": len(masks),
+        "marked_edge_law_cases": len(masks),
+        "h0_cases": sum(not (mask.bit_count() & 1) for mask in masks),
+        "h1_cases": sum(mask.bit_count() & 1 for mask in masks),
+        "h1_multitoken_cases": sum(
+            mask.bit_count() > 1 and mask.bit_count() & 1 for mask in masks
         ),
-        "covariance_scope": "all independent configurations on C11",
-        "required_k_le_2_configurations": k_le_2,
-        "additional_k_ge_3_configurations":
-            len(configurations) - k_le_2,
-        "shifts_per_configuration": RING_STATIONS,
-        "covariance_identities": covariance_identities,
-        "expected_covariance_identities": expected_identities,
-        "covariance_failures": tuple(covariance_failures[:1]),
-        "covariance_table_sha256": digest_rows(covariance_rows),
-        "gauge_compensation_required_for_h1": True,
-        "canonical_r0_gauge_normalization_applied": True,
-        "h0_has_no_holonomy_compensation": True,
-        "all_exact": (
-            not exactness_failures
-            and not covariance_failures
-            and covariance_identities == expected_identities
-            and ast_audit["audit_pass"]
+        "gauge_normalized_covariance": {
+            "matches": gauge_matches,
+            "total": EXPECTED_COVARIANCE,
+            "matches_by_h": tuple(gauge_by_h),
+            "total_by_h": tuple(total_by_h),
+            "definition":
+                "passive A/reference translation; when h=1 toggle reference "
+                "sites 1..shift; then complement the reference row iff its "
+                "translated r_0 is one",
+            "supplied_gauge": "r_0 = 0 at the marked cut",
+        },
+        "literal_passive_covariance_diagnostic": {
+            "matches": passive_matches,
+            "failures": EXPECTED_COVARIANCE - passive_matches,
+            "total": EXPECTED_COVARIANCE,
+            "matches_by_h": tuple(passive_by_h),
+            "total_by_h": tuple(total_by_h),
+            "claimed_as_theorem": False,
+        },
+        "table_sha256": digest_json(rows),
+        "failures": failures[:20],
+        "pass": (
+            len(masks) == EXPECTED_TOTAL
+            and gauge_matches == EXPECTED_COVARIANCE
+            and passive_matches == EXPECTED_PASSIVE_COVARIANCE
+            and tuple(gauge_by_h) == (1100, 1089)
+            and tuple(passive_by_h) == (608, 99)
+            and tuple(total_by_h) == (1100, 1089)
+            and not failures
         ),
     }
 
 
-def cycle735_regression_anchor(
-    layout: dict[str, int],
-) -> dict[str, object]:
-    exactness = S735.separated_template_exactness(layout)
-    covariance = S735.translation_covariance_all_d(layout)
-    program = K.interleaved_program(FIXTURE_BANKS)
-    data = S735.held_fixture_data()
-    positions = (0, 2)
-    initial_a = tuple(
-        int(station in positions) for station in range(RING_STATIONS)
-    )
-    blank = (0,) * RING_STATIONS
-    current = data
-    a = initial_a
-    b = blank
-    violations = 0
-    for _step in range(RING_STATIONS):
-        violations += len(S735.P734.ownership_violations(a, b, blank))
-        current, a, b = K.apply_controller_step(current, program, a, b)
-    output, final_a, final_b, trace = K.run_orbit(
-        data, program, token_positions=positions
-    )
-    reverse, reverse_a, reverse_b, _ = K.run_orbit(
-        output, program, token_positions=positions, reverse=True
-    )
-    allocator = K.M.global_allocator_word(FIXTURE_BANKS)
-    expected = K.A.apply_semantic(
-        K.A.apply_semantic(data, allocator), allocator
-    )
-    frozen_counts = {
-        "pair_template_cases": exactness["cases"],
-        "pair_cases_by_distance": exactness["cases_by_distance"],
-        "pair_covariance_identities": covariance["identities_tested"],
-        "pair_covariance_per_distance":
-            covariance["identities_per_distance"],
-    }
-    rerun_pass = (
-        violations == 0
-        and current == output == expected
-        and a == final_a == initial_a
-        and not any(b)
-        and not any(final_b)
-        and len(trace) == RING_STATIONS
-        and reverse == data
-        and reverse_a == initial_a
-        and not any(reverse_b)
-    )
+def parity_convention_falsifier(
+    masks: tuple[int, ...]
+) -> dict[str, Any]:
+    mismatches = 0
+    mismatches_failing_marked_law = 0
+    examples: list[dict[str, Any]] = []
+    for mask in masks:
+        actual = canonical_refs(mask)
+        rejected = distributed_h_refs(mask)
+        if actual != rejected:
+            mismatches += 1
+            fails = marked_edge_syndrome(
+                mask, rejected, mask.bit_count() & 1
+            ) != 0
+            mismatches_failing_marked_law += fails
+            if len(examples) < 3:
+                examples.append(
+                    {
+                        "mask": mask,
+                        "k": mask.bit_count(),
+                        "actual_refs": actual,
+                        "distributed_h_refs": rejected,
+                        "distributed_row_fails_marked_law": fails,
+                    }
+                )
     return {
-        "frozen_counts": frozen_counts,
-        "expected_frozen_counts": {
-            "pair_template_cases": 44,
-            "pair_cases_by_distance": {2: 11, 3: 11, 4: 11, 5: 11},
-            "pair_covariance_identities": 484,
-            "pair_covariance_per_distance":
-                {2: 121, 3: 121, 4: 121, 5: 121},
-        },
-        "position0_d2_word_sha256":
-            exactness["position0_word_sha256_by_distance"][2],
-        "expected_position0_d2_word_sha256":
-            EXPECTED_CYCLE735_PAIR_DIGEST_D2,
-        "one_orbit_rerun": {
-            "token_sites": positions,
-            "steps": len(trace),
-            "ownership_violations": violations,
-            "two_allocator_words": output == expected,
-            "register_closure":
-                final_a == initial_a and not any(final_b),
-            "literal_reverse_exact":
-                reverse == data
-                and reverse_a == initial_a
-                and not any(reverse_b),
-        },
-        "regression_pass": (
-            frozen_counts
-            == {
-                "pair_template_cases": 44,
-                "pair_cases_by_distance":
-                    {2: 11, 3: 11, 4: 11, 5: 11},
-                "pair_covariance_identities": 484,
-                "pair_covariance_per_distance":
-                    {2: 121, 3: 121, 4: 121, 5: 121},
-            }
-            and exactness["all_bit_exact_and_lawful"]
-            and covariance["exact"]
-            and exactness["position0_word_sha256_by_distance"][2]
-            == EXPECTED_CYCLE735_PAIR_DIGEST_D2
-            and rerun_pass
+        "rejected_convention": "insert h at every recurrence edge",
+        "actual_convention": "insert h only at marked edge s=0",
+        "row_mismatches": mismatches,
+        "mismatches_failing_marked_law":
+            mismatches_failing_marked_law,
+        "examples": examples,
+        "pass": (
+            mismatches == EXPECTED_DISTRIBUTED_H_MISMATCHES
+            and mismatches_failing_marked_law
+            == EXPECTED_DISTRIBUTED_H_MISMATCHES
         ),
     }
 
 
-def count_k_enforcement_certificate(
-    configurations: tuple[tuple[int, ...], ...],
-) -> dict[str, object]:
+def count_prefix_fixture() -> tuple[
+    dict[str, int], dict[int, tuple[object, ...]]
+]:
     program = K.interleaved_program(FIXTURE_BANKS)
-    sources: tuple[int, ...] | None = None
-    canonical_layout: dict[str, int] | None = None
-    accepted_grid = [
-        [0 for _ in range(MAX_TOKEN_COUNT + 1)]
-        for _ in range(MAX_TOKEN_COUNT + 1)
-    ]
-    refused_grid = [
-        [0 for _ in range(MAX_TOKEN_COUNT + 1)]
-        for _ in range(MAX_TOKEN_COUNT + 1)
-    ]
-    prefix_gate_counts: dict[int, int] = {}
-    prefix_digests: dict[int, str] = {}
-    failure = None
-    reverse_failures = 0
-    rows_digest = sha256()
-
-    for expected_count in range(MAX_TOKEN_COUNT + 1):
-        word, layout, _blocks, metadata = (
+    layout: dict[str, int] | None = None
+    prefixes: dict[int, tuple[object, ...]] = {}
+    for expected in range(MAX_TOKEN_COUNT + 1):
+        word, candidate, _blocks, metadata = (
             C731.count_certified_controller_build(
-                program, C731.DATA_WIDTH, expected_count
+                program, C731.DATA_WIDTH, expected
             )
         )
-        if canonical_layout is None:
-            canonical_layout = layout
-            sources = tuple(
-                template_expected_value(layout, config)
-                for config in configurations
-            )
-        layout_matches = layout == canonical_layout
-        if not layout_matches and failure is None:
-            failure = {
-                "expected_count": expected_count,
-                "reason": "constructor layout changed with expected_count",
-            }
-        prefix = word[:int(metadata["comparison_compute_stop"])]
-        prefix_gate_counts[expected_count] = len(prefix)
-        prefix_digests[expected_count] = K.gate_digest(prefix)
-        if sources is None:
-            raise AssertionError("source construction did not initialize")
+        if layout is None:
+            layout = candidate
+        elif candidate != layout:
+            raise AssertionError(("layout depends on expected count", expected))
+        prefixes[expected] = word[
+            : int(metadata["comparison_compute_stop"])
+        ]
+    if layout is None:
+        raise AssertionError("missing count-prefix layout")
+    return layout, prefixes
+
+
+def count_prefix_certificate(
+    layout: dict[str, int],
+    prefixes: dict[int, tuple[object, ...]],
+    masks: tuple[int, ...],
+) -> dict[str, Any]:
+    sources = tuple(expected_template_value(layout, mask) for mask in masks)
+    accepted = refused = reversals = 0
+    failures: list[tuple[Any, ...]] = []
+    rows: list[tuple[int, int, int, int, int]] = []
+
+    for expected, prefix in prefixes.items():
         compared = C731.literal_apply(
             sources, prefix, layout["full_width"], 1
         )
         restored = C731.literal_apply(
             compared, tuple(reversed(prefix)), layout["full_width"], 1
         )
-        for index, (config, source, value, restored_value) in enumerate(
-            zip(configurations, sources, compared, restored)
+        for mask, source, value, recovered in zip(
+            masks, sources, compared, restored
         ):
-            true_count = sum(config)
-            rows = C731.controller_rows(value, layout)
-            counter_value = tuple_to_mask(rows["counter"])
-            refused = rows["refusal_latch"] == 1
-            expected_refused = true_count != expected_count
-            accepted_grid[expected_count][true_count] += not refused
-            refused_grid[expected_count][true_count] += refused
-            reverse_failures += restored_value != source
+            true_count = mask.bit_count()
+            decoded = C731.controller_rows(value, layout)
+            counter = bits_mask(decoded["counter"])
+            latch = int(decoded["refusal_latch"])
+            accepted += expected == true_count and latch == 0
+            refused += expected != true_count and latch == 1
+            reversals += recovered == source
             conditions = (
-                counter_value == true_count,
-                refused == expected_refused,
-                rows["A"] == config,
-                rows["refs"] == matching_reference_row(config),
-                rows["h"] == (true_count & 1),
-                restored_value == source,
+                counter == true_count,
+                latch == int(expected != true_count),
+                bits_mask(decoded["A"]) == mask,
+                decoded["refs"] == canonical_refs(mask),
+                decoded["h"] == (true_count & 1),
+                recovered == source,
             )
-            if not all(conditions) and failure is None:
-                failure = {
-                    "expected_count": expected_count,
-                    "true_count": true_count,
-                    "configuration_index": index,
-                    "mask": configuration_mask(config),
-                    "counter_value": counter_value,
-                    "refused": refused,
-                    "expected_refused": expected_refused,
-                    "condition_vector": conditions,
-                }
-            rows_digest.update(
-                json.dumps(
-                    (
-                        expected_count,
-                        true_count,
-                        configuration_mask(config),
-                        counter_value,
-                        int(refused),
-                    ),
-                    separators=(",", ":"),
-                ).encode()
-            )
+            if not all(conditions) and len(failures) < 20:
+                failures.append((expected, mask, conditions))
+            rows.append((expected, mask, true_count, counter, latch))
 
-    counts = EXPECTED_COUNTS_BY_K
-    expected_accepted = tuple(
-        tuple(counts[true] if expected == true else 0 for true in range(6))
-        for expected in range(6)
-    )
-    expected_refused = tuple(
-        tuple(0 if expected == true else counts[true] for true in range(6))
-        for expected in range(6)
-    )
-    accepted = tuple(tuple(row) for row in accepted_grid)
-    refused = tuple(tuple(row) for row in refused_grid)
-    h1 = tuple(config for config in configurations if sum(config) & 1)
-    h1_multi = tuple(config for config in h1 if sum(config) > 1)
-    h0 = tuple(config for config in configurations if not (sum(config) & 1))
-    parity_charge_failures = sum(
-        S735.P734.charge_syndrome(
-            configuration_mask(config),
-            0,
-            tuple_to_mask(matching_reference_row(config)),
-            sum(config) & 1,
-        )
-        != 0
-        for config in configurations
-    )
     return {
-        "constructor_api":
-            "C731.count_certified_controller_build(program, DATA_WIDTH, "
-            "expected_count=k)",
-        "expected_count_domain": tuple(range(MAX_TOKEN_COUNT + 1)),
-        "true_count_domain": tuple(range(MAX_TOKEN_COUNT + 1)),
-        "accepted_grid_expected_rows_true_columns": accepted,
-        "refused_grid_expected_rows_true_columns": refused,
-        "expected_accepted_grid": expected_accepted,
-        "expected_refused_grid": expected_refused,
-        "acceptance_diagonal": sum(
-            accepted[count][count] for count in range(6)
-        ),
-        "expected_acceptance_diagonal": EXPECTED_TOTAL_CONFIGURATIONS,
-        "cross_refusal_off_diagonal": sum(
-            refused[expected][true]
-            for expected in range(6)
-            for true in range(6)
-            if expected != true
-        ),
-        "expected_cross_refusal_off_diagonal":
-            EXPECTED_TOTAL_CONFIGURATIONS * MAX_TOKEN_COUNT,
-        "constructor_prefix_gate_counts": prefix_gate_counts,
-        "constructor_prefix_sha256": prefix_digests,
-        "cross_census_sha256": rows_digest.hexdigest(),
-        "prefix_reverse_failures": reverse_failures,
-        "first_failure": failure,
-        "h0_lawful_rows": len(h0),
-        "h1_lawful_rows": len(h1),
-        "h1_odd_multitoken_rows": len(h1_multi),
-        "parity_charge_failures": parity_charge_failures,
-        "h1_odd_sector_exercised": len(h1_multi) > 0,
-        "exact": (
-            accepted == expected_accepted
-            and refused == expected_refused
-            and reverse_failures == 0
-            and failure is None
-            and len(h0) == 100
-            and len(h1) == 99
-            and len(h1_multi) == 88
-            and parity_charge_failures == 0
+        "surface":
+            "Cycle-731 count_compute + comparison_compute prefix only",
+        "expected_count_domain": tuple(prefixes),
+        "configuration_rows_per_expected_count": len(masks),
+        "diagonal_accepts": accepted,
+        "off_diagonal_refusals": refused,
+        "literal_reversals": reversals,
+        "total_prefix_cases": len(prefixes) * len(masks),
+        "prefix_gate_counts": {
+            expected: len(prefix)
+            for expected, prefix in prefixes.items()
+        },
+        "prefix_sha256": {
+            expected: K.gate_digest(prefix)
+            for expected, prefix in prefixes.items()
+        },
+        "table_sha256": digest_json(rows),
+        "full_guarded_word_executed": False,
+        "failures": failures,
+        "pass": (
+            accepted == EXPECTED_TOTAL
+            and refused == EXPECTED_TOTAL * MAX_TOKEN_COUNT
+            and reversals == EXPECTED_TOTAL * (MAX_TOKEN_COUNT + 1)
+            and not failures
         ),
     }
 
 
-def synchronous_composition_word(
-    program: tuple[object, ...],
-    token_positions: tuple[int, ...],
-) -> tuple[object, ...]:
-    stations = len(program)
-    positions = tuple(token_positions)
-    word = []
-    for _step in range(stations):
-        live = set(positions)
-        for station in range(stations):
-            if station in live:
-                word.extend(K.mapped_macro(program[station]))
-        positions = tuple((station + 1) % stations for station in positions)
-    return tuple(word)
-
-
-def invariant_full_orbit_certificate(
-    configurations: tuple[tuple[int, ...], ...],
-) -> dict[str, object]:
-    program = K.interleaved_program(FIXTURE_BANKS)
-    data = S735.held_fixture_data()
-    blank = (0,) * RING_STATIONS
-    held = K.held_certificate(FIXTURE_BANKS)
-    held_baseline_pass = (
-        held["program_stations"] == RING_STATIONS
-        and held["logical_failures"] == 0
-        and held["fixed_word_failures"] == 0
-        and held["inverse_failures"] == 0
-        and held["postimage_failures"] == 0
-        and held["token_return_failures"] == 0
+def adjacent_positive_regression() -> dict[str, Any]:
+    transport = S735.bare_transport_certificate(
+        (1,), expect_double_allocator=False
     )
-    allocator = K.M.global_allocator_word(FIXTURE_BANKS)
-    allocator_twice = K.A.apply_semantic(
-        K.A.apply_semantic(data, allocator), allocator
-    )
+    guard = S735.guard_specific_adjacent_recount()
+    return {
+        "parent": "Cycle 735",
+        "bare_Cycle719_adjacent_cases": transport["cases"],
+        "bare_Cycle719_adjacent_transport_pass": transport["pass"],
+        "guard_violation_rows": guard["violation_rows"],
+        "guard_used_as_controller_domain_boundary":
+            guard["used_as_controller_domain_boundary"],
+        "purpose":
+            "prevent this static independent-mask census from becoming an "
+            "adjacency/controller exclusion",
+        "pass": (
+            transport["pass"]
+            and transport["cases"] == RING_STATIONS
+            and guard["pass"]
+            and guard["violation_rows"] == 22
+            and not guard["used_as_controller_domain_boundary"]
+        ),
+    }
 
-    boundary_steps = 0
-    station_checks = 0
-    occupied_station_checks = 0
-    pairwise_distance_checks = 0
-    invariant_violations = 0
-    distance_failures = 0
-    expected_site_failures = 0
-    trace_failures = 0
-    composition_failures = 0
-    direct_run_disagreements = 0
-    register_return_failures = 0
-    inverse_failures = 0
-    exact_closures = 0
-    k2_allocator_compositions = 0
-    frozen_obstruction = None
-    orbit_digest = sha256()
 
-    for config in configurations:
-        mask = configuration_mask(config)
-        sites = occupied_sites(config)
-        count = len(sites)
-        initial_distances = pairwise_circular_distances(
-            sites, RING_STATIONS
-        )
-        initial_a = config
-        a = initial_a
-        b = blank
-        current_data = data
-        expected_trace = []
-        case_failed = []
+def serialize_gate(gate: object) -> list[Any]:
+    return [gate.kind, list(gate.wires)]
 
-        for step in range(RING_STATIONS):
-            boundary_steps += 1
-            station_checks += RING_STATIONS
-            live_sites = occupied_sites(a)
-            occupied_station_checks += len(live_sites)
-            violations = S735.P734.ownership_violations(a, b, blank)
-            invariant_violations += len(violations)
-            observed_distances = pairwise_circular_distances(
-                live_sites, RING_STATIONS
-            )
-            pairwise_distance_checks += len(initial_distances)
-            expected_sites = tuple(
-                sorted(
-                    (station + step) % RING_STATIONS
-                    for station in sites
-                )
-            )
-            if observed_distances != initial_distances:
-                distance_failures += 1
-                case_failed.append("pairwise_distances")
-            if live_sites != expected_sites:
-                expected_site_failures += 1
-                case_failed.append("common_translation")
-            if violations:
-                case_failed.append("ownership")
-            next_sites = tuple(
-                sorted(
-                    (station + step + 1) % RING_STATIONS
-                    for station in sites
-                )
-            )
-            expected_trace.append((expected_sites, next_sites, 0))
-            current_data, a, b = K.apply_controller_step(
-                current_data, program, a, b
-            )
 
-        output, final_a, final_b, trace = K.run_orbit(
-            data, program, token_positions=sites
-        )
-        composition_word = synchronous_composition_word(program, sites)
-        expected_output = K.A.apply_semantic(data, composition_word)
-        reverse, reverse_a, reverse_b, _ = K.run_orbit(
-            output, program, token_positions=sites, reverse=True
-        )
-        if trace != tuple(expected_trace):
-            trace_failures += 1
-            case_failed.append("trace")
-        if output != expected_output:
-            composition_failures += 1
-            case_failed.append("synchronous_composition")
-        if (
-            current_data != output
-            or a != final_a
-            or b != final_b
-        ):
-            direct_run_disagreements += 1
-            case_failed.append("direct_vs_K_run_orbit")
-        registers_close = (
-            a == final_a == initial_a
-            and not any(b)
-            and not any(final_b)
-        )
-        if not registers_close:
-            register_return_failures += 1
-            case_failed.append("register_return")
-        inverse_exact = (
-            reverse == data
-            and reverse_a == initial_a
-            and not any(reverse_b)
-        )
-        if not inverse_exact:
-            inverse_failures += 1
-            case_failed.append("literal_reverse")
-        exact_closures += registers_close and inverse_exact
-        if count == 2:
-            k2_allocator_compositions += output == allocator_twice
-        if case_failed and frozen_obstruction is None:
-            frozen_obstruction = {
-                "name": "pairwise_separated_full_orbit_obstruction",
+def export_fixture() -> dict[str, Any]:
+    masks = independent_masks()
+    layout, prefixes = count_prefix_fixture()
+    payload: dict[str, Any] = {
+        "schema": "cycle736-static-template-prefix-v1",
+        "layout": layout,
+        "masks": list(masks),
+        "templates": [
+            {
                 "mask": mask,
-                "k": count,
-                "token_sites": sites,
-                "failures": tuple(sorted(set(case_failed))),
+                "gates": [
+                    serialize_gate(gate)
+                    for gate in template_word(layout, mask)
+                ],
             }
-        orbit_digest.update(
-            json.dumps(
-                (
-                    mask,
-                    count,
-                    initial_distances,
-                    K.gate_digest(composition_word),
-                    registers_close,
-                    inverse_exact,
-                    output == expected_output,
-                ),
-                separators=(",", ":"),
-            ).encode()
-        )
-
-    expected_boundaries = (
-        EXPECTED_TOTAL_CONFIGURATIONS * RING_STATIONS
-    )
-    expected_station_checks = expected_boundaries * RING_STATIONS
-    total_tokens = sum(
-        count * EXPECTED_COUNTS_BY_K[count] for count in range(6)
-    )
-    expected_occupied_checks = total_tokens * RING_STATIONS
-    pair_count_per_census = sum(
-        comb(count, 2) * EXPECTED_COUNTS_BY_K[count]
-        for count in range(6)
-    )
-    expected_pairwise_checks = pair_count_per_census * RING_STATIONS
-    failure_census = {
-        "invariant_violations": invariant_violations,
-        "pairwise_distance_failures": distance_failures,
-        "common_translation_failures": expected_site_failures,
-        "trace_failures": trace_failures,
-        "synchronous_composition_failures": composition_failures,
-        "direct_run_disagreements": direct_run_disagreements,
-        "register_return_failures": register_return_failures,
-        "inverse_failures": inverse_failures,
+            for mask in masks
+        ],
+        "prefixes": {
+            str(expected): [
+                serialize_gate(gate) for gate in prefix
+            ]
+            for expected, prefix in prefixes.items()
+        },
     }
-    lawful = (
-        held_baseline_pass
-        and boundary_steps == expected_boundaries
-        and station_checks == expected_station_checks
-        and occupied_station_checks == expected_occupied_checks
-        and pairwise_distance_checks == expected_pairwise_checks
-        and exact_closures == EXPECTED_TOTAL_CONFIGURATIONS
-        and all(value == 0 for value in failure_census.values())
-        and frozen_obstruction is None
-    )
-    return {
-        "outcome":
-            "all_199_pairwise_separated_configurations_lawful"
-            if lawful
-            else "frozen_obstruction",
-        "orbit_configurations": len(configurations),
-        "expected_orbit_configurations": EXPECTED_TOTAL_CONFIGURATIONS,
-        "controls_by_k": EXPECTED_COUNTS_BY_K,
-        "steps_per_orbit": RING_STATIONS,
-        "Q_boundary_steps": boundary_steps,
-        "expected_Q_boundary_steps": expected_boundaries,
-        "station_checks": station_checks,
-        "expected_station_checks": expected_station_checks,
-        "occupied_station_checks": occupied_station_checks,
-        "expected_occupied_station_checks": expected_occupied_checks,
-        "pairwise_distance_checks": pairwise_distance_checks,
-        "expected_pairwise_distance_checks": expected_pairwise_checks,
-        "exact_register_and_inverse_closures": exact_closures,
-        "expected_exact_closures": EXPECTED_TOTAL_CONFIGURATIONS,
-        "Cycle719_held_baseline_pass": held_baseline_pass,
-        "k2_allocator_power_compositions": k2_allocator_compositions,
-        "expected_k2_allocator_power_compositions":
-            EXPECTED_COUNTS_BY_K[2],
-        "composition_definition": (
-            "exact supplied-program synchronous Q composition for every "
-            "external A-mask; no position-independent allocator-power "
-            "claim is made outside the frozen k=2 sector"
-        ),
-        "failure_census": failure_census,
-        "frozen_obstruction": frozen_obstruction,
-        "orbit_table_sha256": orbit_digest.hexdigest(),
-        "pairwise_separated_sector_lawful": lawful,
-        "k_source_composition_ring11":
-            lawful and composition_failures == 0,
-    }
-
-
-def adjacency_near_miss_controls() -> dict[str, object]:
-    sample_sites = {
-        2: (0, 1),
-        3: (0, 1, 3),
-        4: (0, 1, 3, 5),
-        5: (0, 1, 3, 5, 7),
-    }
-    failure = None
-    total_adjacent_pairs = 0
-    total_violating_stations = 0
-    total_reason_incidences = 0
-    rows_for_digest = []
-    for count, sites in sample_sites.items():
-        config = tuple(
-            int(station in sites) for station in range(RING_STATIONS)
-        )
-        edges = adjacent_edges(config)
-        violations = S735.P734.ownership_violations(
-            config, (0,) * RING_STATIONS, (0,) * RING_STATIONS
-        )
-        violating_sites = tuple(row["station"] for row in violations)
-        predicted_sites = tuple(
-            sorted({station for edge in edges for station in edge})
-        )
-        reasons = tuple(
-            reason
-            for row in violations
-            for reason in row["reasons"]
-            if reason in ("left_A", "right_A")
-        )
-        conditions = {
-            "declared_count": sum(config) == count,
-            "near_miss": not is_pairwise_separated(config),
-            "one_adjacent_pair": len(edges) == 1,
-            "violating_stations_exact": violating_sites == predicted_sites,
-            "two_stations_per_pair":
-                len(violations) == 2 * len(edges),
-            "two_reason_incidences_per_pair":
-                len(reasons) == 2 * len(edges),
-        }
-        if not all(conditions.values()) and failure is None:
-            failure = {
-                "k": count,
-                "sites": sites,
-                "edges": edges,
-                "violating_sites": violating_sites,
-                "failed": tuple(
-                    key
-                    for key, passed in conditions.items()
-                    if not passed
-                ),
-            }
-        total_adjacent_pairs += len(edges)
-        total_violating_stations += len(violations)
-        total_reason_incidences += len(reasons)
-        rows_for_digest.append(
-            (count, sites, edges, violating_sites, reasons)
-        )
-    return {
-        "sample_counts": tuple(sample_sites),
-        "ineligible_counts_without_possible_adjacency": (0, 1),
-        "samples": len(sample_sites),
-        "step": 0,
-        "adjacent_pairs": total_adjacent_pairs,
-        "violating_stations": total_violating_stations,
-        "expected_violating_stations": 2 * total_adjacent_pairs,
-        "neighbor_reason_incidences": total_reason_incidences,
-        "expected_neighbor_reason_incidences":
-            2 * total_adjacent_pairs,
-        "wall_name": "ownership_uniqueness_at_adjacent_Q_sites",
-        "first_failure": failure,
-        "near_miss_table_sha256": digest_rows(rows_for_digest),
-        "exact": (
-            failure is None
-            and tuple(sample_sites) == (2, 3, 4, 5)
-            and total_violating_stations
-            == total_reason_incidences
-            == 2 * total_adjacent_pairs
-        ),
-    }
-
-
-def multisource_deletion_controls(
-    layout: dict[str, int],
-    configurations: tuple[tuple[int, ...], ...],
-) -> dict[str, object]:
-    samples = tuple(
-        next(config for config in configurations if sum(config) == count)
-        for count in range(1, MAX_TOKEN_COUNT + 1)
-    )
-    program = K.interleaved_program(FIXTURE_BANKS)
-    prefixes = {}
-    for count in range(1, MAX_TOKEN_COUNT + 1):
-        word, _layout, _blocks, metadata = (
-            C731.count_certified_controller_build(
-                program, C731.DATA_WIDTH, count
-            )
-        )
-        prefixes[count] = word[:int(metadata["comparison_compute_stop"])]
-
-    cases = 0
-    output_changes = 0
-    law_refusals = 0
-    A_deletions = 0
-    reference_deletions = 0
-    h_deletions = 0
-    count_refusals = 0
-    failure = None
-    digest_table = []
-
-    for config in samples:
-        count = sum(config)
-        source_word = multisource_creation_word(layout, config)
-        source_value = template_expected_value(layout, config)
-        damaged_values = []
-        specifications = []
-        for deleted_index, deleted_gate in enumerate(source_word):
-            damaged_word = (
-                source_word[:deleted_index]
-                + source_word[deleted_index + 1:]
-            )
-            damaged = C731.literal_apply(
-                (0,), damaged_word, layout["full_width"], 1
-            )[0]
-            wire = deleted_gate.wires[0]
-            if layout["a_base"] <= wire < layout["a_base"] + RING_STATIONS:
-                role = "A"
-            elif (
-                layout["ref_base"]
-                <= wire
-                < layout["ref_base"] + RING_STATIONS
-            ):
-                role = "reference"
-            elif wire == layout["h_wire"]:
-                role = "h"
-            else:
-                role = "outside"
-            damaged_values.append(damaged)
-            specifications.append((deleted_index, role, wire))
-        compared = C731.literal_apply(
-            tuple(damaged_values),
-            prefixes[count],
-            layout["full_width"],
-            1,
-        )
-        for specification, damaged, comparison in zip(
-            specifications, damaged_values, compared
-        ):
-            deleted_index, role, wire = specification
-            rows = C731.controller_rows(damaged, layout)
-            comparison_rows = C731.controller_rows(comparison, layout)
-            a_mask = tuple_to_mask(rows["A"])
-            reference_mask = tuple_to_mask(rows["refs"])
-            parity_ok = (
-                (sum(rows["A"]) + sum(rows["B"])) & 1
-            ) == rows["h"]
-            charge_ok = (
-                S735.P734.charge_syndrome(
-                    a_mask, 0, reference_mask, int(rows["h"])
-                )
-                == 0
-            )
-            count_ok = sum(rows["A"]) == count
-            refused = comparison_rows["refusal_latch"] == 1
-            law_refused = not (count_ok and parity_ok and charge_ok)
-            changed = damaged != source_value
-            conditions = {
-                "output_changed": changed,
-                "law_refused": law_refused,
-                "count_refusal_matches_A_deletion":
-                    refused == (role == "A"),
-                "recognized_role": role != "outside",
-            }
-            cases += 1
-            output_changes += changed
-            law_refusals += law_refused
-            count_refusals += refused
-            A_deletions += role == "A"
-            reference_deletions += role == "reference"
-            h_deletions += role == "h"
-            if not all(conditions.values()) and failure is None:
-                failure = {
-                    "k": count,
-                    "mask": configuration_mask(config),
-                    "deleted_index": deleted_index,
-                    "role": role,
-                    "wire": wire,
-                    "failed": tuple(
-                        key
-                        for key, passed in conditions.items()
-                        if not passed
-                    ),
-                }
-            digest_table.append(
-                (
-                    count,
-                    configuration_mask(config),
-                    deleted_index,
-                    role,
-                    changed,
-                    law_refused,
-                    refused,
-                )
-            )
-    return {
-        "sample_counts": tuple(range(1, MAX_TOKEN_COUNT + 1)),
-        "sample_masks": tuple(
-            configuration_mask(config) for config in samples
-        ),
-        "deletion_cases": cases,
-        "A_gate_deletions": A_deletions,
-        "reference_gate_deletions": reference_deletions,
-        "h_gate_deletions": h_deletions,
-        "output_change_detections": output_changes,
-        "law_refusals": law_refusals,
-        "count_refusals": count_refusals,
-        "expected_count_refusals": A_deletions,
-        "first_failure": failure,
-        "deletion_table_sha256": digest_rows(digest_table),
-        "every_deletion_detected": (
-            cases > 0
-            and output_changes == cases
-            and law_refusals == cases
-            and count_refusals == A_deletions
-            and A_deletions > 0
-            and reference_deletions > 0
-            and h_deletions > 0
-            and failure is None
-        ),
-    }
+    payload["fixture_sha256"] = digest_json(payload)
+    return payload
 
 
 def main() -> int:
+    if sys.argv[1:] == ["--export-fixture"]:
+        sys.stdout.write(
+            json.dumps(
+                export_fixture(), sort_keys=True, separators=(",", ":")
+            )
+            + "\n"
+        )
+        return 0
+    if sys.argv[1:]:
+        raise SystemExit(f"unsupported arguments: {sys.argv[1:]}")
+
     started = perf_counter()
-    program = K.interleaved_program(FIXTURE_BANKS)
-    _word, layout, _blocks, _metadata = (
-        C731.count_certified_controller_build(
-            program, C731.DATA_WIDTH, 0
-        )
-    )
-
-    check(
-        "INPUT_declared_literal_paths",
-        DECLARED_INPUT_PATHS == AUDIT_INPUT_PATHS
-        and AUDIT_INPUT_PATHS
-        == (
-            "scripts/frontier_cycle735_separated_pair_lawful_control_2026_07_28.py",
-            "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
-            "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-        )
-        and NOTE_PATH.endswith(".md"),
-    )
-
-    anchor = cycle735_regression_anchor(layout)
-    check(
-        "A_Cycle735_regression_anchor",
-        anchor["regression_pass"],
-    )
-
-    census_full = configuration_census()
-    configurations = census_full.pop("configurations")
-    check(
-        "B_census_agreement",
-        census_full["agreement"]
-        and census_full["direct_counts_by_k"] == EXPECTED_COUNTS_BY_K
-        and census_full["direct_total"] == EXPECTED_TOTAL_CONFIGURATIONS
-        and census_full["closed_form_total"]
-        == census_full["lucas_recurrence_total_L11"]
-        == EXPECTED_TOTAL_CONFIGURATIONS
-        and census_full["maximum_token_count"] == MAX_TOKEN_COUNT,
-    )
-
-    template = template_and_covariance_certificate(
-        layout, configurations
-    )
-    check(
-        "C_template_exactness_and_covariance_census",
-        template["all_exact"]
-        and template["template_cases"]
-        == template["expected_template_cases"]
-        == EXPECTED_TOTAL_CONFIGURATIONS
-        and template["required_k_le_2_configurations"] == 56
-        and template["additional_k_ge_3_configurations"] == 143
-        and template["covariance_identities"]
-        == template["expected_covariance_identities"]
-        == EXPECTED_TOTAL_CONFIGURATIONS * RING_STATIONS
-        and template["h1_multitoken_configurations"] == 88
-        and template["AST_no_distinguished_site"]["audit_pass"],
-    )
-
-    count_enforcement = count_k_enforcement_certificate(configurations)
-    check(
-        "D_count_k_enforcement",
-        count_enforcement["exact"]
-        and count_enforcement["acceptance_diagonal"]
-        == count_enforcement["expected_acceptance_diagonal"]
-        == EXPECTED_TOTAL_CONFIGURATIONS
-        and count_enforcement["cross_refusal_off_diagonal"]
-        == count_enforcement["expected_cross_refusal_off_diagonal"]
-        == EXPECTED_TOTAL_CONFIGURATIONS * MAX_TOKEN_COUNT
-        and count_enforcement["h1_odd_sector_exercised"]
-        and count_enforcement["parity_charge_failures"] == 0,
-    )
-
-    orbit = invariant_full_orbit_certificate(configurations)
-    check(
-        "E_invariant_full_orbit_all_199",
-        orbit["pairwise_separated_sector_lawful"]
-        and orbit["k_source_composition_ring11"]
-        and orbit["outcome"]
-        == "all_199_pairwise_separated_configurations_lawful"
-        and orbit["orbit_configurations"]
-        == orbit["expected_orbit_configurations"]
-        == EXPECTED_TOTAL_CONFIGURATIONS
-        and orbit["Q_boundary_steps"]
-        == orbit["expected_Q_boundary_steps"]
-        and orbit["station_checks"] == orbit["expected_station_checks"]
-        and orbit["occupied_station_checks"]
-        == orbit["expected_occupied_station_checks"]
-        and orbit["pairwise_distance_checks"]
-        == orbit["expected_pairwise_distance_checks"]
-        and orbit["exact_register_and_inverse_closures"]
-        == orbit["expected_exact_closures"]
-        == EXPECTED_TOTAL_CONFIGURATIONS
-        and orbit["k2_allocator_power_compositions"]
-        == orbit["expected_k2_allocator_power_compositions"]
-        == EXPECTED_COUNTS_BY_K[2]
-        and all(
-            value == 0 for value in orbit["failure_census"].values()
-        )
-        and orbit["frozen_obstruction"] is None,
-    )
-
-    adjacency = adjacency_near_miss_controls()
-    check(
-        "F_adjacency_near_miss_controls",
-        adjacency["exact"]
-        and adjacency["sample_counts"] == (2, 3, 4, 5)
-        and adjacency["step"] == 0
-        and adjacency["violating_stations"]
-        == adjacency["expected_violating_stations"]
-        == 2 * adjacency["adjacent_pairs"]
-        and adjacency["wall_name"]
-        == "ownership_uniqueness_at_adjacent_Q_sites",
-    )
-
-    deletions = multisource_deletion_controls(
-        layout, configurations
-    )
-    check(
-        "G_multisource_template_deletion_controls",
-        deletions["every_deletion_detected"]
-        and deletions["sample_counts"] == (1, 2, 3, 4, 5)
-        and deletions["output_change_detections"]
-        == deletions["law_refusals"]
-        == deletions["deletion_cases"]
-        and deletions["count_refusals"]
-        == deletions["expected_count_refusals"]
-        == deletions["A_gate_deletions"],
-    )
-
-    boundary = {
-        "pairwise_separated_sector_lawful":
-            bool(orbit["pairwise_separated_sector_lawful"]),
-        "max_token_count_ring11": MAX_TOKEN_COUNT,
-        "h1_odd_sector_exercised":
-            bool(count_enforcement["h1_odd_sector_exercised"]),
-        "k_source_composition_ring11":
-            bool(orbit["k_source_composition_ring11"]),
-        "configuration_is_external_parameter": True,
-        "geometry_supplied": True,
-        "program_supplied": True,
-        "genesis_supplied": True,
-        "canonical_reference_gauge_cut_supplied": True,
-        "ring11_only": True,
-        "W4_renewal_untouched": True,
-        "supplies": (
-            "configuration config is an external parameter",
-            "finite oriented ring-11 geometry and reference gauge cut",
-            "held two-bank program content and Q-before-R order",
-            "held direction-(1,0) data genesis",
-            "blank B/work rails and clean controller auxiliaries",
-            "expected_count=k for each enforcement constructor",
-        ),
-        "composition_boundary": orbit["composition_definition"],
-        "W4_statement": (
-            "The pairwise-separated k-source controller composition is "
-            "proved only on the held ring-11 fixture; W4 renewal is "
-            "untouched."
-        ),
+    masks = independent_masks()
+    layout, prefixes = count_prefix_fixture()
+    inputs = {
+        "declared": len(AUDIT_INPUT_PATHS),
+        "unique": len(set(AUDIT_INPUT_PATHS)),
+        "missing": [
+            path for path in AUDIT_INPUT_PATHS if not (ROOT / path).is_file()
+        ],
+        "contains_note": NOTE_PATH in AUDIT_INPUT_PATHS,
+        "contains_Cycle731":
+            "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py"
+            in AUDIT_INPUT_PATHS,
+        "contains_Cycle735":
+            "scripts/frontier_cycle735_separated_pair_lawful_control_2026_07_28.py"
+            in AUDIT_INPUT_PATHS,
     }
+    census = census_certificate(masks)
+    templates = template_certificate(layout, masks)
+    falsifier = parity_convention_falsifier(masks)
+    prefix = count_prefix_certificate(layout, prefixes, masks)
+    adjacent = adjacent_positive_regression()
+    claim_boundary = {
+        "result":
+            "externally supplied static C11 independent-mask templates and "
+            "the actual Cycle-731 count/comparator prefix",
+        "canonical_reference_gauge": "supplied r_0 = 0 marked cut",
+        "literal_passive_covariance": "diagnostic only; not exact",
+        "gauge_normalized_covariance":
+            "finite theorem under the explicitly defined compensation",
+        "bare_Cycle719_motion": "outside this claim",
+        "full_Cycle731_guarded_controller": "outside this claim",
+        "controller_lawfulness": "outside this claim",
+        "source_factorization_or_arbitration": "outside this claim",
+        "W4_composition_or_renewal": "outside this claim",
+        "autonomous_preparation": "outside this claim",
+        "non_independent_masks": "not tested or excluded",
+        "maximal_domain_or_no_go": "outside this claim",
+        "other_ring_sizes": "outside this claim",
+        "audit": "unset",
+        "authority": "none",
+    }
+
     check(
-        "H_honest_boundary_keys",
-        boundary["pairwise_separated_sector_lawful"]
-        and boundary["max_token_count_ring11"] == 5
-        and boundary["h1_odd_sector_exercised"]
-        and boundary["k_source_composition_ring11"]
-        and boundary["configuration_is_external_parameter"]
-        and boundary["geometry_supplied"]
-        and boundary["program_supplied"]
-        and boundary["genesis_supplied"]
-        and boundary["canonical_reference_gauge_cut_supplied"]
-        and boundary["ring11_only"]
-        and boundary["W4_renewal_untouched"]
-        and "no position-independent allocator-power claim"
-        in boundary["composition_boundary"],
+        "A_dependency_closure",
+        inputs["declared"] == inputs["unique"]
+        and not inputs["missing"]
+        and inputs["contains_note"]
+        and inputs["contains_Cycle731"]
+        and inputs["contains_Cycle735"],
+    )
+    check("B_independent_set_census", census["pass"])
+    check(
+        "C_static_template_and_marked_edge_law",
+        templates["pass"]
+        and templates["template_cases"] == EXPECTED_TOTAL
+        and templates["marked_edge_law_cases"] == EXPECTED_TOTAL,
+    )
+    check(
+        "D_covariance_is_explicitly_gauge_normalized",
+        templates["gauge_normalized_covariance"]["matches"]
+        == EXPECTED_COVARIANCE
+        and templates["literal_passive_covariance_diagnostic"]["matches"]
+        == EXPECTED_PASSIVE_COVARIANCE
+        and not templates["literal_passive_covariance_diagnostic"][
+            "claimed_as_theorem"
+        ],
+    )
+    check(
+        "E_marked_edge_falsifies_distributed_h",
+        falsifier["pass"]
+        and falsifier["row_mismatches"]
+        == EXPECTED_DISTRIBUTED_H_MISMATCHES,
+    )
+    check(
+        "F_Cycle731_count_comparator_prefix",
+        prefix["pass"]
+        and prefix["diagonal_accepts"] == EXPECTED_TOTAL
+        and prefix["off_diagonal_refusals"]
+        == EXPECTED_TOTAL * MAX_TOKEN_COUNT
+        and not prefix["full_guarded_word_executed"],
+    )
+    check("G_Cycle735_adjacent_positive_regression", adjacent["pass"])
+    check(
+        "H_claim_boundary",
+        claim_boundary["bare_Cycle719_motion"] == "outside this claim"
+        and claim_boundary["full_Cycle731_guarded_controller"]
+        == "outside this claim"
+        and claim_boundary["W4_composition_or_renewal"]
+        == "outside this claim"
+        and claim_boundary["non_independent_masks"]
+        == "not tested or excluded"
+        and claim_boundary["maximal_domain_or_no_go"]
+        == "outside this claim"
+        and claim_boundary["audit"] == "unset"
+        and claim_boundary["authority"] == "none",
     )
 
-    elapsed = perf_counter() - started
-    report: dict[str, object] = {
+    report: dict[str, Any] = {
         "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
         "DECLARED_INPUT_PATHS": DECLARED_INPUT_PATHS,
         "NOTE_PATH": NOTE_PATH,
         "audit_timeout_seconds": AUDIT_TIMEOUT_SEC,
         "bounded": True,
-        "checks": dict(sorted(CHECKS.items())),
-        "checks_failed": sum(not value for value in CHECKS.values()),
-        "checks_passed": sum(CHECKS.values()),
-        "pass": all(CHECKS.values()),
-        "runtime_seconds": round(elapsed, 6),
-        "Cycle735_regression_anchor": anchor,
-        "configuration_census": census_full,
-        "multisource_template": template,
-        "count_k_enforcement": count_enforcement,
-        "invariant_full_orbit": orbit,
-        "adjacency_near_miss_controls": adjacency,
-        "deletion_controls": deletions,
-        "honest_boundary": boundary,
-        "terminal": (
-            "CYCLE736_PAIRWISE_SEPARATED_MULTISOURCE_PASS"
-            if all(CHECKS.values())
-            else "CYCLE736_PAIRWISE_SEPARATED_MULTISOURCE_HONEST_FAIL"
-        ),
+        "input_closure": inputs,
+        "configuration_census": census,
+        "static_template": templates,
+        "parity_convention_falsifier": falsifier,
+        "count_comparator_prefix": prefix,
+        "adjacent_positive_regression": adjacent,
+        "claim_boundary": claim_boundary,
+        "runtime_seconds": round(perf_counter() - started, 6),
     }
-    preliminary = json.dumps(
-        report, sort_keys=True, separators=(",", ":"), default=str
-    )
+    preliminary = json.dumps(report, sort_keys=True, separators=(",", ":"))
     check(
         "OUTPUT_stdout_under_150KB",
         len(preliminary.encode()) + 4096 < STDOUT_LIMIT_BYTES,
     )
     report["checks"] = dict(sorted(CHECKS.items()))
-    report["checks_failed"] = sum(
-        not value for value in CHECKS.values()
-    )
+    report["checks_failed"] = sum(not value for value in CHECKS.values())
     report["checks_passed"] = sum(CHECKS.values())
     report["pass"] = all(CHECKS.values())
     report["terminal"] = (
-        "CYCLE736_PAIRWISE_SEPARATED_MULTISOURCE_PASS"
+        "CYCLE736_STATIC_TEMPLATE_PREFIX_PASS"
         if report["pass"]
-        else "CYCLE736_PAIRWISE_SEPARATED_MULTISOURCE_HONEST_FAIL"
+        else "CYCLE736_STATIC_TEMPLATE_PREFIX_HONEST_FAIL"
     )
     report["report_sha256"] = sha256(
-        json.dumps(report, sort_keys=True, default=str).encode()
+        json.dumps(report, sort_keys=True).encode()
     ).hexdigest()
-    final_json = json.dumps(
-        report, sort_keys=True, separators=(",", ":"), default=str
-    )
-    text = "\n".join(OUTPUT_LINES) + "\n" + final_json + "\n"
+    text = "\n".join(OUTPUT_LINES) + "\n" + json.dumps(
+        report, sort_keys=True, separators=(",", ":")
+    ) + "\n"
     if len(text.encode()) >= STDOUT_LIMIT_BYTES:
         raise AssertionError(("stdout bound", len(text.encode())))
     sys.stdout.write(text)

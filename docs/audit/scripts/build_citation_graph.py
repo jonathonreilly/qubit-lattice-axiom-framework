@@ -202,6 +202,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "token_count_certificate_cycle731_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle731_count_certificate_independent_check_2026_07_28.py",
     ],
+    # Cycle 736 obtains its actual primary template/prefix gate stream through
+    # a subprocess export and deliberately imports no frontier module. Expose
+    # that separately executable checker in this claim's restricted packet.
+    "pairwise_separated_multisource_cycle736_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle736_multisource_independent_check_2026_07_28.py",
+    ],
     # Cycle 747's finite-state checker reconstructs the complete receiver and
     # admission tables without importing the primary or its repository
     # modules. Expose that independent executable in the restricted packet.

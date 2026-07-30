@@ -69,6 +69,11 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "sector_summed_companion_channel_cycle733_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle733_sector_sum_independent_check_2026_07_28.py",
     ],
+    # Cycle 736's independent interpreter receives the actual primary gate
+    # stream over a subprocess boundary instead of importing the primary.
+    "pairwise_separated_multisource_cycle736_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle736_multisource_independent_check_2026_07_28.py",
+    ],
     # Cycle 820 keeps its independent tuple/bit-vector reconstruction outside
     # the primary import closure; include it claim-scoped in audit packets.
     "full128_two_cell_parity_superselected_even_car_covariance_cycle820_bounded_theorem_note_2026-07-30": [

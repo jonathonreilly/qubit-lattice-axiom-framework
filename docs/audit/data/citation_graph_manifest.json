@@ -1,6 +1,6 @@
 {
- "edge_count": 15287,
- "node_count": 4597,
+ "edge_count": 15295,
+ "node_count": 4598,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1615,8 +1615,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "445235c8091e",
-   "out_degree": 325
+   "deps_hash": "8d38cc3bac5e",
+   "out_degree": 326
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -10209,6 +10209,10 @@
   "pairwise_commuting_endpoint_symmetric_edge_hamiltonian_classification_and_strict_qca_boundary_bounded_theorem_note_2026-07-12": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "pairwise_separated_multisource_cycle736_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "f411f218101a",
+   "out_degree": 7
   },
   "paper_outline_2026-04-12": {
    "deps_hash": "e3b0c44298fc",

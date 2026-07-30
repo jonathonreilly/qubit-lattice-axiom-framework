@@ -3052,6 +3052,86 @@ class Cycle733ExplicitPacketHelperTest(unittest.TestCase):
         )
 
 
+class Cycle736ExplicitPacketHelperTest(unittest.TestCase):
+    CLAIM_ID = (
+        "pairwise_separated_multisource_cycle736_"
+        "bounded_theorem_note_2026-07-28"
+    )
+    NOTE = (
+        "docs/PAIRWISE_SEPARATED_MULTISOURCE_CYCLE736_"
+        "BOUNDED_THEOREM_NOTE_2026-07-28.md"
+    )
+    PRIMARY = (
+        "scripts/frontier_cycle736_pairwise_separated_"
+        "multisource_2026_07_28.py"
+    )
+    HELPER = (
+        "scripts/frontier_cycle736_multisource_"
+        "independent_check_2026_07_28.py"
+    )
+    PARENTS = [
+        "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+        "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/BKSF_HOLONOMY_COMPRESSION_CYCLE728_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/SEPARATED_PAIR_LAWFUL_CONTROL_CYCLE735_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    ]
+    PARENT_IDS = {
+        "recurrent_matter_history_controller_cycle719_bounded_theorem_note_2026-07-26",
+        "local_token_row_enforcement_cycle724_bounded_theorem_note_2026-07-28",
+        "bksf_holonomy_compression_cycle728_bounded_theorem_note_2026-07-28",
+        "charge_row_enforcement_cycle730_bounded_theorem_note_2026-07-28",
+        "token_count_certificate_cycle731_bounded_theorem_note_2026-07-28",
+        "paired_excitation_genesis_cycle734_bounded_theorem_note_2026-07-28",
+        "separated_pair_lawful_control_cycle735_bounded_theorem_note_2026-07-28",
+    }
+
+    def test_both_consumers_add_the_claim_scoped_independent_checker(self):
+        citation_graph = _import("build_citation_graph")
+        packet_deps = _import_repo_script("audit_packet_script_deps.py")
+
+        citation_helpers = citation_graph.helper_runner_paths_for_claim(
+            self.CLAIM_ID, self.PRIMARY
+        )
+        packet_helpers = packet_deps.helper_runner_paths_for_claim(
+            self.CLAIM_ID, Path(self.PRIMARY).stem
+        )
+        self.assertIn(self.HELPER, citation_helpers)
+        self.assertIn(self.HELPER, packet_helpers)
+
+        control = f"{self.CLAIM_ID}-unregistered-control"
+        self.assertNotIn(
+            self.HELPER,
+            citation_graph.helper_runner_paths_for_claim(
+                control, self.PRIMARY
+            ),
+        )
+        self.assertNotIn(
+            self.HELPER,
+            packet_deps.helper_runner_paths_for_claim(
+                control, Path(self.PRIMARY).stem
+            ),
+        )
+
+    def test_graph_row_contains_all_scope_parents_and_checker(self):
+        citation_graph = _import("build_citation_graph")
+        notes = [
+            PROJECT_ROOT / self.NOTE,
+            *(PROJECT_ROOT / parent for parent in self.PARENTS),
+        ]
+        with mock.patch.object(
+            citation_graph, "discover_notes", return_value=notes
+        ):
+            graph = citation_graph.build_graph()
+
+        row = graph["nodes"][self.CLAIM_ID]
+        self.assertEqual(row["runner_path"], self.PRIMARY)
+        self.assertIn(self.HELPER, row["helper_runner_paths"])
+        self.assertEqual(set(row["deps"]), self.PARENT_IDS)
+
+
 class Cycle820ExplicitPacketHelperTest(unittest.TestCase):
     CLAIM_ID = (
         "full128_two_cell_parity_superselected_even_car_covariance_"

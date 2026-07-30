@@ -1,41 +1,65 @@
 {
   "artifacts": {
+    "audit_compatibility": {
+      "canonical_harness_index_sha256": "a1683bb407863bf95d8a3a6acece4bad598a0767c3d9df89f15288a927af13cd",
+      "citation_graph_builder_sha256": "6348087a933aff862c69cf4b49b7deea9a7c7f21348b19e1a7a766a5a7a87b36",
+      "citation_graph_manifest_sha256": "f46f4d3fdd7801a07f25d6b079a40f997d6d807d13c7f9031babfc94d1503891",
+      "packet_dependency_resolver_sha256": "d86a740d553177f1853432d6325d412a9d8156dcbb4e2c9346d14bccaf0e6a1b"
+    },
     "caches": {
-      "frontier_cycle736_multisource_independent_check_2026_07_28.txt": "9d3a554d521ba84d430f176f64b7166425a5a15578d5cbd54a7a61b2d8a52ca2",
-      "frontier_cycle736_pairwise_separated_multisource_2026_07_28.txt": "41c7e22f2138d62233d9ef4ea1b3c81763e68abdf2b2593d6ac361fa0d70bd05"
+      "frontier_cycle736_multisource_independent_check_2026_07_28.txt": {
+        "input_fingerprint_sha256": "b0e7f26813f1e3c598cecbc65851612fdf8172db91bae37cfd7a77ba701dda86",
+        "sha256": "d503d154011f1be28798dbd467fe6d180eeaff48b975d57d15f829550c48c0c4",
+        "status": "fresh"
+      },
+      "frontier_cycle736_pairwise_separated_multisource_2026_07_28.txt": {
+        "input_fingerprint_sha256": "505e271190b6ad54c66385e9fb10b8b01d422f1526a0f729a35c4ba99f2663c3",
+        "sha256": "dbd5f740de46a5d93d540360e60dba272f7749b5e2a4197c13666d75df46a09b",
+        "status": "fresh"
+      }
     },
     "note": {
       "path": "docs/PAIRWISE_SEPARATED_MULTISOURCE_CYCLE736_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "faa7133d856f42e6382671ec339bdbbc450ecbd432bc5ba12f23857c321c3a78"
+      "sha256": "ed22872b393a62111ffd9f8c63639b7b9c6fabed483e44671528971d0160f0e3"
     },
     "runners": {
-      "frontier_cycle736_multisource_independent_check_2026_07_28.py": "9704104e0a8186e1ca96cc90b387faad7b0022d2dbc5be82270b38009c6e5fdb",
-      "frontier_cycle736_pairwise_separated_multisource_2026_07_28.py": "50059ce4d4d6e5ce4503e66ccb098f6fe663ad9711b106b6b6c5c9cb7bcbd02f"
+      "frontier_cycle736_multisource_independent_check_2026_07_28.py": "04af2565e17d66e155fab5bcc13ded800e168308bc8f83632c7dea6c9dc18cea",
+      "frontier_cycle736_pairwise_separated_multisource_2026_07_28.py": "3f332960046b3a568e1c1a3a4f5680e3468927458053e27a082591c0d15a575c"
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
-    "adjacency_wall_respected_not_solved": true,
-    "axiom_pressure": false,
-    "fixed_supplies": "the configuration as an external parameter (no distinguished site); finite oriented ring-11 geometry; held program content and order; held data genesis with clean auxiliaries; lawful charge-reference rows with h = k mod 2 and expected_count = k; Q-before-R layer order",
-    "h1_odd_sector_exercised": true,
-    "k_source_composition_ring11": true,
-    "max_token_count_ring11": 5,
-    "not_derived": "rings beyond 11 as uniform families (census generalizes as L(n) but the theorem is ring-11 exhaustive); W4 post-capacity renewal; adjacent-pair control; no time/Record/Born/source content",
-    "pairwise_separated_sector_lawful": true,
-    "positive_scope": "the pairwise-separated sector = independent sets of C11 (census 1/11/44/77/55/11, total 199 = L(11), enumeration = closed form); one config-parameterized pure-X template preparing all 199 bit-exactly (first h=1 odd-sector multi-token states); 2,189-identity covariance census; the complete count-k enforcement grid (199 accepts, 995 cross-refusals); exhaustive invariant-checked lawful orbits over all 199 configs with exact closure and zero violations; 8 near-miss boundary controls at exactly the predicted stations",
-    "w4_renewal_component_untouched": true
+    "adjacent_positive_regression": "Cycle 735 bare Cycle-719 transport passes all 11 adjacent positions; its 22-row guard recount is not a controller-domain boundary",
+    "autonomous_preparation": "outside this claim",
+    "bare_Cycle719_motion": "outside this claim",
+    "canonical_reference_gauge": "supplied r_0 = 0 marked cut",
+    "controller_lawfulness": "outside this claim",
+    "full_Cycle731_guarded_controller": "outside this claim",
+    "literal_passive_covariance": "diagnostic only: 707/2189",
+    "maximal_domain_or_no_go": "outside this claim",
+    "non_independent_masks": "not tested or excluded",
+    "positive_scope": "externally supplied ring-11 independent-mask static templates, the single-marked-edge reference relation, explicit fixed-cut gauge-normalized covariance, and the actual Cycle-731 count/comparator prefix",
+    "source_factorization_or_arbitration": "outside this claim",
+    "W4_composition_or_renewal": "outside this claim"
   },
   "checks": {
     "independent_named_checks_failed": 0,
-    "independent_named_checks_passed": 6,
-    "primary_named_checks_passed": 10
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_failed": 0,
+    "primary_named_checks_passed": 9
   },
   "claim_type": "bounded_theorem",
   "cycle": 736,
   "date": "2026-07-28",
   "result": {
+    "audit_packet": {
+      "canonical_harness_row": true,
+      "citation_graph_dependencies": 7,
+      "citation_graph_edge_count": 15295,
+      "citation_graph_node_count": 4598,
+      "independent_checker_registered": true
+    },
     "census_per_k": {
       "0": 1,
       "1": 11,
@@ -44,26 +68,29 @@
       "4": 55,
       "5": 11
     },
-    "census_total_lucas": 199,
-    "covariance_identities": "2189/2189",
-    "enforcement_grid": {
-      "cross_refusals": 995,
-      "diagonal_accepts": 199
+    "census_total": 199,
+    "count_comparator_prefix": {
+      "diagonal_accepts": 199,
+      "literal_reversals": 1194,
+      "off_diagonal_refusals": 995
     },
-    "frozen_obstruction": null,
-    "near_miss_controls": {
-      "configs": 8,
-      "per_adjacent_pair": 2,
-      "violations": 16
+    "gauge_normalized_covariance": {
+      "h0": "1100/1100",
+      "h1": "1089/1089",
+      "total": "2189/2189"
     },
-    "orbit_census": {
-      "closures": 199,
-      "configs": 199,
-      "distance_checks_checker": 7865,
-      "occupied_checks_checker": 6655,
-      "station_checks_checker": 24079,
-      "violations": 0
-    }
+    "independent_gate_fixture_sha256": "8998e802ba967c7db518e96a5692b2181669357b976896ab630f32b76e84f67f",
+    "literal_passive_covariance_diagnostic": {
+      "failures": 1482,
+      "matches": 707,
+      "total": 2189
+    },
+    "marked_edge_reference_rows": "199/199",
+    "rejected_distributed_h_rows": {
+      "marked_edge_law_failures": 99,
+      "row_mismatches": 99
+    },
+    "static_template_words": "199/199"
   },
-  "status": "CYCLE736_PAIRWISE_SEPARATED_MULTISOURCE_PASS"
+  "status": "CYCLE736_STATIC_TEMPLATE_PREFIX_PASS"
 }

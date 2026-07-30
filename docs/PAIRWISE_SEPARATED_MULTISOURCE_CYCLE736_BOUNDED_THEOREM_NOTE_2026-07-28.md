@@ -1,4 +1,4 @@
-# The pairwise-separated multi-source sector — all 199 configurations lawful — Cycle 736
+# Static independent-mask templates and count-prefix census — Cycle 736
 
 Date: 2026-07-28
 
@@ -15,86 +15,153 @@ Runners:
 - [`frontier_cycle736_pairwise_separated_multisource_2026_07_28.py`](../scripts/frontier_cycle736_pairwise_separated_multisource_2026_07_28.py)
 - [`frontier_cycle736_multisource_independent_check_2026_07_28.py`](../scripts/frontier_cycle736_multisource_independent_check_2026_07_28.py)
 
-Constitutional effect: none. This package changes no axiom, foundation,
-Qualification, primitive, registry, policy, queue, audit result, or audit
-status.
+Constitutional effect: none. This package changes no axiom, primitive,
+registry, policy, queue, audit result, or audit status.
 
-## Result up front
+## Result
 
-Cycle 735 opened the two-source sector at distance two. The invariant
-is local and pairwise distance is conserved, so the natural closure is
-the full sector: **every pairwise-separated configuration is lawful.**
-Proven exhaustively on ring-11:
+On the supplied oriented ring with 11 stations, the primary enumerates the
+199 masks with no adjacent occupied sites. Their count by occupancy is
 
-- **the configuration census is the Lucas number**: the pairwise-
-  separated A-masks are exactly the independent sets of the cycle
-  graph C₁₁ — per-k counts 1/11/44/77/55/11 for k = 0..5 (k ≤ 5 is
-  the C₁₁ independence bound), total **199 = L(11)**, with the direct
-  enumeration and the closed-form recurrence agreeing;
-- **one template prepares them all**: the config-parameterized pure-X
-  template produces every census configuration bit-exactly (token
-  mask, matching reference rows, `h = k mod 2` — the **first h = 1
-  odd-sector multi-token states** in the program), with the
-  no-distinguished-site AST audit and an exact covariance census of
-  2,189 conjugation identities;
-- **count-k enforcement, the full grid**: the unchanged parameterized
-  Cycle-731 constructor accepts all 199 diagonal cases
-  (`expected_count = k` on a count-k config) and refuses all 995
-  cross cases (`expected_count ≠ k`), with lawful parity rows in both
-  `h` sectors;
-- **every orbit is lawful**: all 199 configurations (including the
-  empty and single-token controls) run full controller orbits to
-  exact closure with per-step invariant checks at every occupied
-  station, constant pairwise distances, exact register returns — zero
-  violations anywhere; `frozen_obstruction: null`;
-- **the boundary stands exactly where Cycle 734 froze it**: eight
-  near-miss controls (a distance-1 pair somewhere) violate at step 0
-  at precisely the predicted stations (two per adjacent pair).
+\[
+  (1,11,44,77,55,11),\qquad k=0,\ldots,5,
+\]
 
-`pairwise_separated_sector_lawful: true`;
-`k_source_composition_ring11: true`. In W4's language: bounded
-multi-source composition for **arbitrary pairwise-separated source
-configurations** at ring-11 scope — up to five sources, both parity
-sectors — under the unchanged controller and certificate.
+in agreement with
+\[
+  |\operatorname{Ind}_k(C_{11})|
+    = \frac{11}{11-k}\binom{11-k}{k}.
+\]
 
-## Supplied / derived / open
+For each externally supplied mask \(A\), the pure-X word writes:
 
-### Supplied
+- that mask on the logical A rail;
+- \(h=|A|\bmod 2\); and
+- the canonical reference row with the supplied gauge \(r_0=0\) satisfying
+  the single-marked-edge relation
+  \[
+    A_s\oplus r_s\oplus r_{s+1}
+      \oplus h\,\mathbf 1_{s=0}=0.
+  \]
 
-- the configuration as an external parameter (no distinguished site);
-  the finite oriented ring-11 geometry; the held program content and
-  order; the held data genesis with clean auxiliaries; lawful
-  charge-reference rows with `h = k mod 2` and `expected_count = k`;
-  the Q-before-R layer order.
+All 199 words are bit exact and all 199 reference rows satisfy that static
+relation. This is a static register theorem. It is not a controller-orbit or
+source-preparation theorem.
 
-### Derived
+The unchanged Cycle-731 constructor is then cut at
+`comparison_compute_stop`, after the count and equality comparison but before
+the guarded Q layer. Over expected counts \(0,\ldots,5\), that actual prefix
+has:
 
-- the census equality (enumeration = Lucas closed form);
-- template exactness and the covariance census over the full sector;
-- the complete acceptance/cross-refusal enforcement grid;
-- the exhaustive invariant-checked lawful orbits with null obstruction;
-- the near-miss boundary controls.
+- 199 matching-count accepts;
+- 995 off-diagonal refusals; and
+- 1,194 exact literal reversals.
 
-### Open
+No part of the Cycle-731 full guarded word is executed by this result.
 
-- rings beyond 11 as uniform families (the census generalizes as
-  L(n); the theorem here is ring-11 exhaustive, not uniform);
-- W4's renewal component (post-capacity renewal) — untouched;
-- adjacent-pair control (the Cycle-734 wall) — respected, not solved;
-- everything the landed surfaces leave open at their scopes; no
-  time/Record/Born/source content is touched.
+## Supplied cut and covariance
+
+The reference gauge has a distinguished supplied cut: \(r_0=0\). Therefore
+ordinary passive wire translation is not an exact symmetry of the canonical
+representatives. It succeeds in 707 of 2,189 mask/shift cases and fails in
+1,482.
+
+The exact result is covariance modulo the stated canonical-gauge
+normalization. For a shift by \(d\):
+
+1. passively translate the A and reference wires;
+2. when \(h=1\), toggle reference sites \(1,\ldots,d\), the marked-cut
+   compensation; and
+3. if the translated \(r_0\) is one, complement the complete reference row
+   to restore \(r_0=0\).
+
+That explicitly defined action matches the canonical target word in all
+2,189 cases: 1,100 in the \(h=0\) sector and 1,089 in the \(h=1\) sector.
+This is not described as passive covariance or as absence of a distinguished
+gauge site.
+
+## Independent check
+
+The independent runner imports no frontier module. It:
+
+1. executes the live primary in a subprocess and requires a successful report;
+2. obtains the primary's actual template and count-prefix gates through a
+   hash-checked subprocess export;
+3. reconstructs the \(C_{11}\) census and the marked-edge reference recurrence
+   independently;
+4. evaluates every exported X/CNOT/Toffoli word with a fresh integer
+   interpreter; and
+5. reruns the repaired Cycle-735 adjacent positive control.
+
+As a convention falsifier, it also inserts \(h\) at every recurrence edge.
+That rejected rule disagrees with the actual canonical row on all 99 odd
+configurations, and all 99 substituted rows fail the governing marked-edge
+relation.
+
+## Adjacent positive regression
+
+The parent Cycle-735 runner still succeeds for all 11 adjacent inputs under
+the **bare Cycle-719** transport. Separately, the inherited radius-one guard
+predicate reports 22 step-zero rows and is explicitly not used as a maximal
+controller domain.
+
+Cycle 736 retains this positive bypass as a required regression. The 199-mask
+enumeration is the selected positive test family, not an assertion that other
+masks are dynamically invalid, unpreparable, or excluded.
+
+## Dependency boundary
+
+The load-bearing and controlling proposal-only parents are linked directly:
+
+- [Cycle 719 bare recurrent controller](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md), used only through the inherited finite fixture and the adjacent positive regression;
+- [Cycle 724 radius-one guard](LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md), whose predicate-specific scope is preserved;
+- [Cycle 728 marked-edge reference relation](BKSF_HOLONOMY_COMPRESSION_CYCLE728_BOUNDED_THEOREM_NOTE_2026-07-28.md);
+- [Cycle 730 charge-row enforcement](CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md), which fixes the marked-edge convention consumed here;
+- [Cycle 731 count/comparator constructor](TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md), consumed only through its count/comparison prefix;
+- [Cycle 734 external adjacent template and guard witness](PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md), whose no-controller-no-go boundary is preserved; and
+- [Cycle 735 joint templates and bare transport](SEPARATED_PAIR_LAWFUL_CONTROL_CYCLE735_BOUNDED_THEOREM_NOTE_2026-07-28.md), including its distinction between static rows, bare transport, and the full guarded word.
+
+No parent supplies retained authority or audit promotion. The runners bind
+their caches to the complete mutable source/input closure used through these
+constructors.
+
+## Supplied inputs
+
+- ring size 11, orientation, and marked gauge cut;
+- the mask as an external parameter;
+- a blank logical register;
+- the inherited two-bank program used to construct the Cycle-731 prefix; and
+- the expected count \(0,\ldots,5\).
+
+No mask selection, application position, genesis, physical source, or
+autonomous preparation mechanism is derived.
+
+## Outside the claim
+
+- bare Cycle-719 motion of the 199 static rows;
+- transport or preservation of their reference rows during motion;
+- the Cycle-731 full guarded-controller orbit;
+- controller lawfulness, source arbitration, or source-factor semantics;
+- W4 composition or renewal;
+- autonomous, factorized, or physical preparation;
+- any maximal domain, adjacency wall, complement theorem, or no-go;
+- other ring sizes, dirty-register domains, or a uniform family.
+
+These are open or separate construction obligations, not conclusions of this
+note.
 
 ## Negative-claim discipline
 
-No negative claim ships. The k ≤ 5 bound is the C₁₁ independence
-number, a combinatorial fact of the fixture, not an obstruction claim.
+This note makes finite positive statements about one explicitly selected
+family and one constructor prefix. Non-independent masks are neither tested
+nor excluded. The successful adjacent bare-transport regression supplies a
+known alternate route. Therefore no derived no-go, wall, or exact-domain
+conclusion is shipped.
 
 ## Verdict
 
-The multi-source program on ring-11 is now complete on its lawful
-side: the sector of lawful configurations is exactly the independent
-sets of the ring (199 of them, the Lucas number), every one preparable
-by one position-free template, enforceable by one parameterized
-certificate in both parity sectors, and lawful under the unchanged
-controller — with the adjacency wall as the exact, frozen, reproduced
-boundary. Independent audit still required.
+Cycle 736 supplies a bounded static-template census, an explicit
+fixed-cut-gauge covariance statement, and a complete finite check of the
+Cycle-731 count/comparator prefix on those 199 supplied masks. It does not
+supply guarded multi-source control, W4 composition, autonomous preparation,
+or an adjacency/domain theorem. Independent audit remains required.

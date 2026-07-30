@@ -1,6 +1,6 @@
 {
- "edge_count": 15274,
- "node_count": 4594,
+ "edge_count": 15279,
+ "node_count": 4595,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1615,8 +1615,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "8ea26baa68c7",
-   "out_degree": 324
+   "deps_hash": "445235c8091e",
+   "out_degree": 325
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -8828,6 +8828,10 @@
   },
   "local_frame_orbit_flat_sector_exact_converse_holonomy_frame_unreachable_residual_bounded_theorem_note_2026-06-10": {
    "deps_hash": "902cbaf48a4c",
+   "out_degree": 4
+  },
+  "local_parity_exchange_carrier_recurrent_bell_cycle821_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "b7437e336fa1",
    "out_degree": 4
   },
   "local_seam_signed_clifford_physical_m2_compiler_cycle709_bounded_theorem_note_2026-07-26": {

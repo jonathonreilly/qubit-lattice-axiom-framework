@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Independent bounded checker for the Cycle 730 charge-row enforcement.
+"""Independent bounded checker for the Cycle 730 local charge-row guard.
 
 The Cycle 730 primary is parsed as source data only.  Its functions are never
 imported or executed.  Controller programs and gate objects come only from the
-authorized Cycle 719 module; every simulator and charge-law evaluator below is
-implemented in this file.
+declared Cycle 719 module; every simulator and charge-law evaluator below is
+implemented here.  The checker keeps existential row projection separate from
+the per-active-station circuit guard.
 """
 
 from __future__ import annotations
@@ -19,20 +20,101 @@ from time import perf_counter
 
 AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = "docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md"
-AUDIT_INPUT_PATHS = (
+DIRECT_INPUT_PATHS = (
     "scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+)
+AUDIT_INPUT_PATHS = (
+    "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
+    "docs/work_history/repo/review_feedback/INFINITE_REVERSIBLE_RECORD_EXPORT_QCA_CYCLE11_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle612_interval_bridge_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+    "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
+    "scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
 )
 PRIMARY_IMPORT_BLOCKLIST = (
     "frontier_cycle730_charge_row_enforcement_2026_07_28",
 )
 
-STDOUT_LIMIT_BYTES = 150 * 1024
+STDOUT_LIMIT_CHARACTERS = 20_000
 ROOT = Path(__file__).resolve().parents[1]
-PRIMARY_PATH = ROOT / AUDIT_INPUT_PATHS[0]
+PRIMARY_PATH = ROOT / DIRECT_INPUT_PATHS[0]
 
 # These are the bounded claims the checker must recover and then independently
-# recount.  Keeping the table literal makes the audit target mechanically
+# recount.  Keeping the table literal makes the check target mechanically
 # inspectable without executing this checker.
 FROZEN_EXPECTATIONS = (
     ("two_bank_stations", 11),
@@ -46,6 +128,7 @@ FROZEN_EXPECTATIONS = (
     ("ring11_rail_h_cases", 8388608),
     ("ring11_sector_cases", 4194304),
     ("ring11_sector_cases_per_h", 2097152),
+    ("ring11_fixed_reference_passes_per_h", 2048),
     ("witness_A_mask", 33),
     ("witness_B_mask", 0),
     ("witness_refs_mask", 62),
@@ -58,7 +141,7 @@ FROZEN_EXPECTATIONS = (
 
 
 class _PrimaryImportBlocker(MetaPathFinder):
-    """Reject any accidental import of the audited Cycle 730 primary."""
+    """Reject any accidental import of the checked Cycle 730 primary."""
 
     def find_spec(self, fullname, path=None, target=None):
         del path, target
@@ -106,6 +189,53 @@ def _function_nodes(tree: ast.AST) -> dict[str, ast.FunctionDef]:
 
 def _literal(node: ast.AST) -> object:
     return ast.literal_eval(node)
+
+
+def declared_input_closure(
+    direct_paths: tuple[str, ...],
+) -> tuple[str, ...]:
+    """Recursively recover literal mutable-input declarations, fail closed."""
+
+    seen: set[str] = set()
+    pending = list(direct_paths)
+    while pending:
+        relative = pending.pop()
+        if relative in seen:
+            continue
+        seen.add(relative)
+        if not (relative.startswith("scripts/") and relative.endswith(".py")):
+            continue
+        source_path = ROOT / relative
+        tree = ast.parse(
+            source_path.read_text(encoding="utf-8"),
+            filename=str(source_path),
+        )
+        nested: tuple[str, ...] = ()
+        for node in tree.body:
+            if not isinstance(node, (ast.Assign, ast.AnnAssign)):
+                continue
+            targets = (
+                node.targets
+                if isinstance(node, ast.Assign)
+                else (node.target,)
+            )
+            if not any(
+                isinstance(target, ast.Name)
+                and target.id == "AUDIT_INPUT_PATHS"
+                for target in targets
+            ):
+                continue
+            value = ast.literal_eval(node.value)
+            if (
+                not isinstance(value, (tuple, list))
+                or not value
+                or not all(isinstance(item, str) for item in value)
+            ):
+                raise ValueError(("invalid AUDIT_INPUT_PATHS", relative))
+            nested = tuple(value)
+            break
+        pending.extend(nested)
+    return tuple(sorted(seen))
 
 
 def _returned_literal(
@@ -353,6 +483,7 @@ def extraction() -> tuple[bool, dict[str, object]]:
     required = (
         "AUDIT_TIMEOUT_SEC",
         "NOTE_PATH",
+        "DIRECT_INPUT_PATHS",
         "AUDIT_INPUT_PATHS",
         "OR_INTERMEDIATE_PER_STATION",
         "LOCAL_ROW_INPUTS",
@@ -373,12 +504,14 @@ def extraction() -> tuple[bool, dict[str, object]]:
     )
     self_nodes = _assignment_nodes(self_tree)
     try:
+        self_direct_inputs = _literal(self_nodes["DIRECT_INPUT_PATHS"])
         self_inputs = _literal(self_nodes["AUDIT_INPUT_PATHS"])
         self_blocklist = _literal(self_nodes["PRIMARY_IMPORT_BLOCKLIST"])
         self_frozen = _literal(self_nodes["FROZEN_EXPECTATIONS"])
     except Exception as exc:
         failures["checker_literals"] = f"{type(exc).__name__}: {exc}"
-        self_inputs = self_blocklist = self_frozen = None
+        self_direct_inputs = self_inputs = None
+        self_blocklist = self_frozen = None
 
     expected = _expectations()
     two_bank = _census_summary(K.interleaved_program(2))
@@ -388,12 +521,12 @@ def extraction() -> tuple[bool, dict[str, object]]:
     try:
         theorem_width = int(
             _returned_literal(
-                functions["compression_enforcement_certificate"],
+                functions["projection_and_local_guard_certificate"],
                 "ring_stations",
             )
         )
-        compression_integers = _integer_literals(
-            functions["compression_enforcement_certificate"]
+        projection_integers = _integer_literals(
+            functions["projection_and_local_guard_certificate"]
         )
         main_integers = _integer_literals(functions["main"])
     except Exception as exc:
@@ -401,7 +534,7 @@ def extraction() -> tuple[bool, dict[str, object]]:
             f"{type(exc).__name__}: {exc}"
         )
         theorem_width = 0
-        compression_integers = frozenset()
+        projection_integers = frozenset()
         main_integers = frozenset()
     theorem_cases = 2 * (1 << (2 * theorem_width))
     witness = dict(
@@ -428,9 +561,24 @@ def extraction() -> tuple[bool, dict[str, object]]:
     EXTRACTED["ring11_rail_h_cases"] = theorem_cases
     EXTRACTED["conventions"] = conventions
 
+    primary_direct_inputs = values.get("DIRECT_INPUT_PATHS")
+    primary_inputs = values.get("AUDIT_INPUT_PATHS")
+    try:
+        primary_closure = declared_input_closure(
+            tuple(primary_direct_inputs)
+        )
+        checker_closure = declared_input_closure(DIRECT_INPUT_PATHS)
+    except Exception as exc:
+        failures["declared_input_closure"] = (
+            f"{type(exc).__name__}: {exc}"
+        )
+        primary_closure = checker_closure = ()
     primary_audit_literal = isinstance(values.get("AUDIT_INPUT_PATHS"), tuple)
+    primary_closure_exact = primary_closure == primary_inputs
+    checker_closure_exact = checker_closure == AUDIT_INPUT_PATHS
     checker_literals_exact = (
-        self_inputs == AUDIT_INPUT_PATHS
+        self_direct_inputs == DIRECT_INPUT_PATHS
+        and self_inputs == AUDIT_INPUT_PATHS
         and self_blocklist == PRIMARY_IMPORT_BLOCKLIST
         and self_frozen == FROZEN_EXPECTATIONS
     )
@@ -454,8 +602,8 @@ def extraction() -> tuple[bool, dict[str, object]]:
         == expected["cycle730_semantic_gates"]
         and theorem_cases == expected["ring11_rail_h_cases"]
         and expected["padded_nonidentity_stations"] in main_integers
-        and expected["ring11_sector_cases_per_h"] in compression_integers
-        and expected["ring11_sector_cases"] in compression_integers
+        and expected["ring11_sector_cases_per_h"] in projection_integers
+        and expected["ring11_sector_cases"] in projection_integers
     )
     primary_not_loaded = all(
         name not in sys.modules for name in PRIMARY_IMPORT_BLOCKLIST
@@ -463,6 +611,8 @@ def extraction() -> tuple[bool, dict[str, object]]:
     passed = (
         not failures
         and primary_audit_literal
+        and primary_closure_exact
+        and checker_closure_exact
         and checker_literals_exact
         and census_match
         and witness_match
@@ -477,6 +627,10 @@ def extraction() -> tuple[bool, dict[str, object]]:
         "ast_only_primary": True,
         "literal_failures": failures,
         "primary_AUDIT_tuple_literal": primary_audit_literal,
+        "primary_declared_input_count": len(primary_inputs or ()),
+        "primary_declared_input_closure_exact": primary_closure_exact,
+        "checker_declared_input_count": len(AUDIT_INPUT_PATHS),
+        "checker_declared_input_closure_exact": checker_closure_exact,
         "checker_AUDIT_and_blocklist_literals_exact": checker_literals_exact,
         "conventions": conventions,
         "two_bank_census": two_bank,
@@ -488,10 +642,10 @@ def extraction() -> tuple[bool, dict[str, object]]:
             ),
             "sector_cases_per_h": (
                 expected["ring11_sector_cases_per_h"]
-                in compression_integers
+                in projection_integers
             ),
             "satisfying_reference_extensions_per_h": (
-                expected["ring11_sector_cases"] in compression_integers
+                expected["ring11_sector_cases"] in projection_integers
             ),
         },
         "theorem_cases": theorem_cases,
@@ -918,8 +1072,8 @@ def sandwich_recount() -> tuple[bool, dict[str, object]]:
     }
 
 
-def enforcement_theorem_recount() -> tuple[bool, dict[str, object]]:
-    """Exhaust all 2^22 rail states in both h sectors on ring 11."""
+def projection_theorem_recount() -> tuple[bool, dict[str, object]]:
+    """Exhaust ring-11 existential projection and the fixed-r distinction."""
 
     width = 11
     rail_mask = _mask(width)
@@ -936,6 +1090,7 @@ def enforcement_theorem_recount() -> tuple[bool, dict[str, object]]:
     local_row_failures = 0
     complement_failures = 0
     satisfying_reference_extensions = 0
+    fixed_zero_reference_passes = [0, 0]
     per_h: list[dict[str, int]] = []
     for h in (0, 1):
         h_cases = 0
@@ -959,6 +1114,9 @@ def enforcement_theorem_recount() -> tuple[bool, dict[str, object]]:
                 == 0
             )
             projected_pass = canonical_pass or complement_pass
+            fixed_zero_reference_passes[h] += (
+                _charge_row_mask(a, b, 0, h, width) == 0
+            )
             failure = projected_pass != in_sector
             failure |= canonical_pass != in_sector
             failure |= complement_pass != in_sector
@@ -975,7 +1133,9 @@ def enforcement_theorem_recount() -> tuple[bool, dict[str, object]]:
             {
                 "h": h,
                 "rail_states": h_cases,
-                "token_parity_sector_states": h_sector,
+                "matching_parity_states": h_sector,
+                "fixed_zero_reference_passes":
+                    fixed_zero_reference_passes[h],
                 "zero_failure_count": h_failures,
             }
         )
@@ -985,8 +1145,13 @@ def enforcement_theorem_recount() -> tuple[bool, dict[str, object]]:
         total_cases == expected["ring11_rail_h_cases"]
         and sector_cases == expected["ring11_sector_cases"]
         and all(
-            row["token_parity_sector_states"]
+            row["matching_parity_states"]
             == expected["ring11_sector_cases_per_h"]
+            for row in per_h
+        )
+        and all(
+            row["fixed_zero_reference_passes"]
+            == expected["ring11_fixed_reference_passes_per_h"]
             for row in per_h
         )
         and exact_separation_failures == 0
@@ -999,17 +1164,113 @@ def enforcement_theorem_recount() -> tuple[bool, dict[str, object]]:
         "ring_stations": width,
         "rail_h_cases_exhausted": total_cases,
         "per_h": per_h,
-        "matched_parity_cases": sector_cases,
+        "matching_parity_cases": sector_cases,
         "satisfying_reference_extensions": satisfying_reference_extensions,
+        "reference_extensions_per_matching_case":
+            satisfying_reference_extensions // sector_cases,
         "exact_separation_failures": exact_separation_failures,
         "canonical_local_row_failures": local_row_failures,
         "complement_local_row_failures": complement_failures,
-        "iff_token_parity_equals_h": exact_separation_failures == 0,
+        "existential_reference_projection_iff_parity_equals_h":
+            exact_separation_failures == 0,
+        "one_fixed_reference_is_not_whole_sector":
+            all(
+                count
+                == expected["ring11_fixed_reference_passes_per_h"]
+                for count in fixed_zero_reference_passes
+            ),
     }
 
 
-def residual_witness_recount() -> tuple[bool, dict[str, object]]:
-    """Reconstruct the frozen matched-parity two-token residual."""
+def finite_ring_projection_recount() -> tuple[bool, dict[str, object]]:
+    """Exhaust n=1..5 and test the general recurrence's edge cases."""
+
+    rows = []
+    failures = 0
+    for width in range(1, 6):
+        mask = _mask(width)
+        multiplicities: set[int] = set()
+        fixed_zero_counts = [0, 0]
+        for h in (0, 1):
+            for packed in range(1 << (2 * width)):
+                a = packed & mask
+                b = packed >> width
+                matching = ((a ^ b).bit_count() & 1) == h
+                solutions = sum(
+                    _charge_row_mask(a, b, refs, h, width) == 0
+                    for refs in range(1 << width)
+                )
+                expected_solutions = 2 if matching else 0
+                failures += solutions != expected_solutions
+                multiplicities.add(solutions)
+                fixed_zero_counts[h] += (
+                    _charge_row_mask(a, b, 0, h, width) == 0
+                )
+        expected_fixed = 1 << width
+        failures += any(
+            count != expected_fixed for count in fixed_zero_counts
+        )
+        rows.append(
+            {
+                "ring_stations": width,
+                "solution_multiplicities": tuple(sorted(multiplicities)),
+                "fixed_zero_reference_passes_per_h":
+                    tuple(fixed_zero_counts),
+                "expected_fixed_reference_passes_per_h":
+                    expected_fixed,
+            }
+        )
+    return failures == 0, {
+        "domain_checked": "finite rings n=1..5, including n=1",
+        "failures": failures,
+        "rows": rows,
+        "general_argument": (
+            "XOR telescope gives necessity; choosing r_0 determines the "
+            "chain, and ring closure is exactly the parity condition"
+        ),
+    }
+
+
+def local_guard_non_global_counterexample() -> tuple[bool, dict[str, object]]:
+    """Show a parity mismatch whose active station has a clean charge row."""
+
+    width = 11
+    a = 1
+    b = 0
+    refs = 2
+    h = 0
+    active_station = 0
+    row_mask = _charge_row_mask(a, b, refs, h, width)
+    parity_mismatch = ((a ^ b).bit_count() & 1) != h
+    active_row_clean = ((row_mask >> active_station) & 1) == 0
+    dirty_rows = tuple(
+        station
+        for station in range(width)
+        if (row_mask >> station) & 1
+    )
+    passed = (
+        parity_mismatch
+        and active_row_clean
+        and dirty_rows
+        and active_station not in dirty_rows
+    )
+    return passed, {
+        "ring_stations": width,
+        "A_mask": a,
+        "B_mask": b,
+        "refs_mask": refs,
+        "h": h,
+        "active_station": active_station,
+        "charge_row_mask": row_mask,
+        "dirty_rows": dirty_rows,
+        "parity_mismatch": parity_mismatch,
+        "active_charge_row_clean": active_row_clean,
+        "conclusion": "the circuit has no global parity acceptance bit",
+    }
+
+
+def static_witness_recount() -> tuple[bool, dict[str, object]]:
+    """Reconstruct the frozen static two-token row-system witness."""
 
     expected = _expectations()
     width = 11
@@ -1048,7 +1309,10 @@ def residual_witness_recount() -> tuple[bool, dict[str, object]]:
         "local_rows": local_rows,
         "all_local_rows_pass": not any(local_rows),
         "token_parity_equals_h": parity_matches,
-        "honest_boundary": "parity enforcement, not count enforcement",
+        "bounded_scope": (
+            "static row-system witness only; no recurrent or global "
+            "acceptance claim"
+        ),
     }
 
 
@@ -1169,8 +1433,13 @@ def discipline() -> tuple[bool, dict[str, object]]:
 CERTIFICATES = (
     ("extraction", extraction),
     ("sandwich_recount", sandwich_recount),
-    ("enforcement_theorem_recount", enforcement_theorem_recount),
-    ("residual_witness_recount", residual_witness_recount),
+    ("projection_theorem_recount", projection_theorem_recount),
+    ("finite_ring_projection_recount", finite_ring_projection_recount),
+    (
+        "local_guard_non_global_counterexample",
+        local_guard_non_global_counterexample,
+    ),
+    ("static_witness_recount", static_witness_recount),
     ("discipline", discipline),
 )
 
@@ -1200,8 +1469,13 @@ def main() -> int:
     passed_count = sum(results.values())
     all_pass = all(results.values()) and within_timeout
     summary = {
-        "audit": "cycle730_enforcement_independent_check",
-        "audit_inputs": AUDIT_INPUT_PATHS,
+        "checker": "cycle730_local_charge_row_guard_independent_check",
+        "declared_mutable_input_paths": len(AUDIT_INPUT_PATHS),
+        "declared_input_closure_exact": bool(
+            details.get("extraction", {}).get(
+                "checker_declared_input_closure_exact", False
+            )
+        ),
         "blocklist": PRIMARY_IMPORT_BLOCKLIST,
         "certificates": f"{passed_count}/{len(CERTIFICATES)}",
         "failed": tuple(name for name, passed in results.items() if not passed),
@@ -1212,23 +1486,23 @@ def main() -> int:
     }
     lines.append(json.dumps(summary, sort_keys=True, separators=(",", ":")))
     lines.append(
-        "CYCLE730_ENFORCEMENT_INDEPENDENT_CHECK_PASS"
+        "CYCLE730_LOCAL_GUARD_INDEPENDENT_CHECK_PASS"
         if all_pass
-        else "CYCLE730_ENFORCEMENT_INDEPENDENT_CHECK_HONEST_FAIL"
+        else "CYCLE730_LOCAL_GUARD_INDEPENDENT_CHECK_HONEST_FAIL"
     )
     text = "\n".join(lines) + "\n"
-    if len(text.encode()) >= STDOUT_LIMIT_BYTES:
+    if len(text) >= STDOUT_LIMIT_CHARACTERS:
         text = (
             json.dumps(
                 {
                     **summary,
                     "pass": False,
-                    "stdout_bound_failure": len(text.encode()),
+                    "stdout_character_bound_failure": len(text),
                 },
                 sort_keys=True,
                 separators=(",", ":"),
             )
-            + "\nCYCLE730_ENFORCEMENT_INDEPENDENT_CHECK_HONEST_FAIL\n"
+            + "\nCYCLE730_LOCAL_GUARD_INDEPENDENT_CHECK_HONEST_FAIL\n"
         )
         all_pass = False
     sys.stdout.write(text)

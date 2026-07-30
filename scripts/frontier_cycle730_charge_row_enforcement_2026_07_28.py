@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 730: integrate the amended Cycle-728 charge rows into refusal.
+"""Cycle 730: integrate supplied charge rows into a local refusal guard.
 
 For every nonidentity station, this extends the Cycle-724 reversible refusal
 sandwich by computing
@@ -10,176 +10,115 @@ into one fresh charge bit, with the supplied h bit also entering the marked
 edge s*=0.  L_s is the seventh dirty input, and both the enlarged OR cascade
 and the charge computation are uncomputed exactly.  The reference chain and h
 are static supplied rails; the unchanged Cycle-719 R layers touch only A/B.
+
+This circuit statement is local: a dirty charge row refuses an active macro at
+that station.  Separately, existential projection over reference chains obeys
+the GF(2) parity theorem.  No global acceptance bit is constructed here.
 """
 from __future__ import annotations
 
+import ast
 from functools import lru_cache
 from hashlib import sha256
 import json
 from pathlib import Path
 import sys
 from time import perf_counter
-import types
 
 import numpy as np
 
 import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
 import frontier_cycle728_bksf_holonomy_compression_2026_07_28 as F728
-
-
-def _install_missing_cycle723_compatibility() -> None:
-    """Supply the narrow Cycle-723 API if cleanup removed that input.
-
-    The mandated Cycle-724 input delegates its classical literal evaluator and
-    frozen Cycle-719 fixture through Cycle 723.  Some bounded drafting
-    worktrees retain Cycle 724 but omit that transitive file.  This in-memory
-    module reconstructs only the API Cycle 724 consumes, from the authorized K
-    gate and program APIs; it creates no second deliverable.
-    """
-
-    module_name = (
-        "frontier_cycle723_refusal_wrapped_controller_2026_07_28"
-    )
-    if module_name in sys.modules:
-        return
-    shim = types.ModuleType(module_name)
-    data_width = len(K.M.R12.full_wire_layout()["wire_sites"])
-
-    def tuple_to_int(bits: tuple[int, ...]) -> int:
-        return sum(bit << wire for wire, bit in enumerate(bits))
-
-    def apply_semantic_int(
-        value: int, word: tuple[object, ...]
-    ) -> int:
-        output = value
-        for gate in word:
-            if gate.kind == "X":
-                output ^= 1 << gate.wires[0]
-            elif gate.kind == "CNOT":
-                if (output >> gate.wires[0]) & 1:
-                    output ^= 1 << gate.wires[1]
-            elif gate.kind == "TOF":
-                if (
-                    (output >> gate.wires[0]) & 1
-                    and (output >> gate.wires[1]) & 1
-                ):
-                    output ^= 1 << gate.wires[2]
-            else:
-                raise ValueError(gate.kind)
-        return output
-
-    def apply_literal_bitplanes(
-        values: tuple[int, ...],
-        word: tuple[object, ...],
-        width: int,
-        iterations: int,
-    ) -> tuple[int, ...]:
-        planes = [0] * width
-        for branch, value in enumerate(values):
-            remaining = value
-            while remaining:
-                low = remaining & -remaining
-                wire = low.bit_length() - 1
-                if wire >= width:
-                    raise ValueError(("input width", wire, width))
-                planes[wire] |= 1 << branch
-                remaining ^= low
-        all_branches = (1 << len(values)) - 1
-        for _step in range(iterations):
-            for gate in word:
-                if gate.kind == "X":
-                    planes[gate.wires[0]] ^= all_branches
-                elif gate.kind == "CNOT":
-                    planes[gate.wires[1]] ^= planes[gate.wires[0]]
-                elif gate.kind == "TOF":
-                    planes[gate.wires[2]] ^= (
-                        planes[gate.wires[0]]
-                        & planes[gate.wires[1]]
-                    )
-                else:
-                    raise ValueError(gate.kind)
-        outputs = [0] * len(values)
-        for wire, plane in enumerate(planes):
-            remaining = plane
-            while remaining:
-                low = remaining & -remaining
-                branch = low.bit_length() - 1
-                outputs[branch] |= 1 << wire
-                remaining ^= low
-        return tuple(outputs)
-
-    class Cycle713Fixture:
-        __file__ = K.R3.C713.__file__
-
-        @staticmethod
-        def apply_sparse_word(
-            state: dict[int, complex], _word: tuple[object, ...]
-        ) -> dict[int, complex]:
-            if len(state) != 1:
-                raise ValueError(("Cycle713 fixture inputs", len(state)))
-            basis, amplitude = next(iter(state.items()))
-            nonmatter = basis & ~((1 << 12) - 1)
-            branch_amplitude = amplitude / np.sqrt(6.0)
-            return {
-                nonmatter | (1 << mode): branch_amplitude
-                for mode in range(6)
-            }
-
-    def state_residual(
-        left: dict[int, complex], right: dict[int, complex]
-    ) -> float:
-        keys = set(left) | set(right)
-        return max(
-            (abs(left.get(key, 0.0j) - right.get(key, 0.0j))
-             for key in keys),
-            default=0.0,
-        )
-
-    r719 = types.SimpleNamespace(
-        PROGRAM=K.interleaved_program(12, physical_padding=True),
-        C713=Cycle713Fixture,
-        MATTER_WORD=(),
-        CYCLE713_RUNNER_PIN_SHA256=(
-            "b61f98d0b44c1496883e8ab2ae1db065"
-            "772ed053c77b6661a0153086acfd0e2f"
-        ),
-        state_residual=state_residual,
-    )
-    shim.R719 = r719
-    shim.TOL = K.H.TOL
-    shim.BANKS = 12
-    shim.DATA_WIDTH = data_width
-    shim.SCRATCH_PER_STATION = 2
-    shim.HELD_COUNTER_KEYS = ()
-    shim.tuple_to_int = tuple_to_int
-    shim.apply_semantic_int = apply_semantic_int
-    shim.apply_literal_bitplanes = apply_literal_bitplanes
-    shim.fast_classical_word = lambda word: tuple(
-        (gate.kind, gate.wires) for gate in word
-    )
-    sys.modules[module_name] = shim
-
-
-try:
-    import frontier_cycle724_local_token_row_enforcement_2026_07_28 as F724
-except ModuleNotFoundError as import_error:
-    if (
-        import_error.name
-        != "frontier_cycle723_refusal_wrapped_controller_2026_07_28"
-    ):
-        raise
-    _install_missing_cycle723_compatibility()
-    import frontier_cycle724_local_token_row_enforcement_2026_07_28 as F724
+import frontier_cycle724_local_token_row_enforcement_2026_07_28 as F724
 
 
 AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = "docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md"
-AUDIT_INPUT_PATHS = (
+DIRECT_INPUT_PATHS = (
     "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
     "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
 )
-DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
+AUDIT_INPUT_PATHS = (
+    "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
+    "docs/work_history/repo/review_feedback/INFINITE_REVERSIBLE_RECORD_EXPORT_QCA_CYCLE11_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle612_interval_bridge_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+    "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+)
 
 A = K.A
 B = K.B
@@ -191,7 +130,7 @@ OR_INTERMEDIATE_PER_STATION = 5
 LOCAL_ROW_INPUTS = 7
 EXPECTED_CYCLE724_PADDED_GATES = 98_034
 EXPECTED_CYCLE730_PADDED_GATES = 99_310
-STDOUT_LIMIT_BYTES = 150 * 1024
+STDOUT_LIMIT_CHARACTERS = 20_000
 FROZEN_MATCHED_PARITY_MULTITOKEN_WITNESS = (
     ("ring_stations", 11),
     ("A_mask", 33),
@@ -204,6 +143,54 @@ FROZEN_MATCHED_PARITY_MULTITOKEN_WITNESS = (
 OUTPUT_LINES: list[str] = []
 CHECKS: dict[str, bool] = {}
 _PADDED_LITERAL_SHARED: dict[str, object] = {}
+REPO_ROOT = Path(__file__).resolve().parents[1]
+
+
+def declared_input_closure(
+    direct_paths: tuple[str, ...],
+) -> tuple[str, ...]:
+    """Recursively recover literal mutable-input declarations, fail closed."""
+
+    seen: set[str] = set()
+    pending = list(direct_paths)
+    while pending:
+        relative = pending.pop()
+        if relative in seen:
+            continue
+        seen.add(relative)
+        if not (relative.startswith("scripts/") and relative.endswith(".py")):
+            continue
+        source_path = REPO_ROOT / relative
+        tree = ast.parse(
+            source_path.read_text(encoding="utf-8"),
+            filename=str(source_path),
+        )
+        nested: tuple[str, ...] = ()
+        for node in tree.body:
+            if not isinstance(node, (ast.Assign, ast.AnnAssign)):
+                continue
+            targets = (
+                node.targets
+                if isinstance(node, ast.Assign)
+                else (node.target,)
+            )
+            if not any(
+                isinstance(target, ast.Name)
+                and target.id == "AUDIT_INPUT_PATHS"
+                for target in targets
+            ):
+                continue
+            value = ast.literal_eval(node.value)
+            if (
+                not isinstance(value, (tuple, list))
+                or not value
+                or not all(isinstance(item, str) for item in value)
+            ):
+                raise ValueError(("invalid AUDIT_INPUT_PATHS", relative))
+            nested = tuple(value)
+            break
+        pending.extend(nested)
+    return tuple(sorted(seen))
 
 
 def check(label: str, condition: bool) -> bool:
@@ -353,12 +340,12 @@ def extended_controller_build(
     tuple[dict[str, object], ...],
     int,
 ]:
-    """Build charge-enforced Q followed by the untouched Cycle-719 R1/R2."""
+    """Build locally charge-guarded Q, then untouched Cycle-719 R1/R2."""
 
     stations = len(program)
     layout = register_layout(data_wires, stations)
     q: list[object] = []
-    blocks = []
+    station_segments = []
     for station, row in enumerate(program):
         start = len(q)
         macro = K.mapped_macro(row)
@@ -410,7 +397,7 @@ def extended_controller_build(
         charge_uncompute_start = len(q)
         q.extend(reversed(charge_compute))
         charge_uncompute_stop = len(q)
-        blocks.append(
+        station_segments.append(
             {
                 "station": station,
                 "nonidentity": bool(macro),
@@ -444,7 +431,7 @@ def extended_controller_build(
             layout["a_base"] + (station + 1) % stations,
         )
     )
-    return tuple(q) + r1 + r2, layout, tuple(blocks), q_stop
+    return tuple(q) + r1 + r2, layout, tuple(station_segments), q_stop
 
 
 def controller_full_input(
@@ -738,12 +725,20 @@ def expected_charge_refusals(
 
 
 def cycle724_regression_anchor() -> dict[str, object]:
-    word, _layout, _blocks, _q_stop = F724.extended_controller_build(
+    (
+        word,
+        _layout,
+        _station_segments,
+        _q_stop,
+    ) = F724.extended_controller_build(
         R719.PROGRAM, DATA_WIDTH
     )
-    held = F724.lawful_extended_case(
-        "unpadded_2", 2, K.interleaved_program(2)
+    held = dict(
+        F724.lawful_extended_case(
+            "unpadded_2", 2, K.interleaved_program(2)
+        )
     )
+    held["wrapped_station_segments"] = held.pop("wrapped_blocks")
     held_keys = (
         "data_allocator_match",
         "A0_return",
@@ -796,7 +791,7 @@ def lawful_extended_case(
     bank_count: int,
     program: tuple[object, ...],
 ) -> dict[str, object]:
-    word, layout, blocks, _q_stop = extended_controller_build(
+    word, layout, station_segments, _q_stop = extended_controller_build(
         program, DATA_WIDTH
     )
     refs, h = lawful_reference_rails(len(program))
@@ -853,7 +848,9 @@ def lawful_extended_case(
         "h_return": rows["h"] == h,
         "literal_reverse_exact": restored == source,
         "shared_with_charge_census": shared,
-        "wrapped_blocks": sum(row["nonidentity"] for row in blocks),
+        "wrapped_station_segments": sum(
+            row["nonidentity"] for row in station_segments
+        ),
     }
 
 
@@ -929,7 +926,7 @@ def charge_violation_cases(
 def charge_violation_census_certificate() -> dict[str, object]:
     program = R719.PROGRAM
     stations = len(program)
-    word, layout, _blocks, _q_stop = extended_controller_build(
+    word, layout, _station_segments, _q_stop = extended_controller_build(
         program, DATA_WIDTH
     )
     cases = charge_violation_cases(program)
@@ -1046,7 +1043,7 @@ def charge_violation_census_certificate() -> dict[str, object]:
         "ref_flip_cases": 2 * nonidentity,
         "h_flip_cases": 1,
         "census_size": len(cases),
-        "literal_branches_compiled": len(observed_values),
+        "literal_fixture_cases_compiled": len(observed_values),
         "literal_prediction_mismatches": literal_prediction_mismatches,
         "host_prediction_mismatches": host_prediction_mismatches,
         "refusal_event_mismatches": event_mismatches,
@@ -1061,10 +1058,12 @@ def charge_violation_census_certificate() -> dict[str, object]:
 
 def circuit_structure_certificate() -> dict[str, object]:
     program = R719.PROGRAM
-    word, layout, blocks, q_stop = extended_controller_build(
+    word, layout, station_segments, q_stop = extended_controller_build(
         program, DATA_WIDTH
     )
-    nonidentity_blocks = tuple(row for row in blocks if row["nonidentity"])
+    active_segments = tuple(
+        row for row in station_segments if row["nonidentity"]
+    )
     marked = F728.marked_station(len(program))
     expected_r = tuple(
         gate
@@ -1094,23 +1093,24 @@ def circuit_structure_certificate() -> dict[str, object]:
     )
     charge_coverage_failures = 0
     exact_uncompute_failures = 0
-    for block in nonidentity_blocks:
-        station = int(block["station"])
+    for segment in active_segments:
+        station = int(segment["station"])
         charge_wire = layout["charge_base"] + station
         compute = word[
-            int(block["charge_compute_start"]):
-            int(block["charge_compute_stop"])
+            int(segment["charge_compute_start"]):
+            int(segment["charge_compute_stop"])
         ]
         or_compute = word[
-            int(block["or_compute_start"]):int(block["or_compute_stop"])
+            int(segment["or_compute_start"]):
+            int(segment["or_compute_stop"])
         ]
         or_uncompute = word[
-            int(block["or_uncompute_start"]):
-            int(block["or_uncompute_stop"])
+            int(segment["or_uncompute_start"]):
+            int(segment["or_uncompute_stop"])
         ]
         charge_uncompute = word[
-            int(block["charge_uncompute_start"]):
-            int(block["charge_uncompute_stop"])
+            int(segment["charge_uncompute_start"]):
+            int(segment["charge_uncompute_stop"])
         ]
         expected_charge_gates = 5 if station == marked else 4
         charge_coverage_failures += len(compute) != expected_charge_gates
@@ -1123,7 +1123,7 @@ def circuit_structure_certificate() -> dict[str, object]:
         exact_uncompute_failures += (
             charge_uncompute != tuple(reversed(compute))
         )
-    nonidentity = len(nonidentity_blocks)
+    nonidentity = len(active_segments)
     expected_added = 14 * nonidentity + 2
     k_r_semantics = tuple(
         F728.verify_k_r_semantics(stations)
@@ -1156,15 +1156,19 @@ def circuit_structure_certificate() -> dict[str, object]:
     }
 
 
-def compression_enforcement_certificate() -> dict[str, object]:
+def projection_and_local_guard_certificate() -> dict[str, object]:
+    """Separate the existential row theorem from the local circuit guard."""
+
     exhaustive = F728.exhaustive_ring11()
     amended = exhaustive["amended_by_h"]
-    program = K.interleaved_program(2)
-    word, layout, blocks, _q_stop = extended_controller_build(
-        program, DATA_WIDTH
+    ring_program = K.interleaved_program(2)
+    word, layout, station_segments, _q_stop = extended_controller_build(
+        ring_program, DATA_WIDTH
     )
-    nonidentity = tuple(row for row in blocks if row["nonidentity"])
-    projected_iff = all(
+    active_segments = tuple(
+        row for row in station_segments if row["nonidentity"]
+    )
+    existential_projection_iff = all(
         row["projected_satisfied_states"]
         == row["token_parity_sector_states"]
         == 2_097_152
@@ -1174,17 +1178,27 @@ def compression_enforcement_certificate() -> dict[str, object]:
         and row["satisfying_reference_extensions"] == 4_194_304
         for row in amended
     )
-    enforcement_coverage = (
-        len(nonidentity) == len(program) == 11
+    exactly_two_extensions = all(
+        row["satisfying_reference_extensions"]
+        == 2 * row["token_parity_sector_states"]
+        for row in amended
+    )
+    fixed_reference_distinction = all(
+        row["fixed_ref_satisfied_states"] == 2 ** 11
+        and row["fixed_ref_matching_states"] == 2 ** 11
+        for row in amended
+    )
+    local_guard_coverage = (
+        len(active_segments) == len(ring_program) == 11
         and all(
             int(row["charge_compute_stop"])
             > int(row["charge_compute_start"])
-            for row in nonidentity
+            for row in active_segments
         )
         and all(
             int(row["or_compute_stop"]) - int(row["or_compute_start"])
             == 18
-            for row in nonidentity
+            for row in active_segments
         )
     )
     witness = dict(FROZEN_MATCHED_PARITY_MULTITOKEN_WITNESS)
@@ -1206,7 +1220,7 @@ def compression_enforcement_certificate() -> dict[str, object]:
         (token_sites[0] - token_sites[1]) % witness["ring_stations"],
         (token_sites[1] - token_sites[0]) % witness["ring_stations"],
     )
-    witness_pass = (
+    static_witness_pass = (
         canonical_refs == witness["refs_mask"]
         and obstruction == 0
         and syndrome == 0
@@ -1219,17 +1233,55 @@ def compression_enforcement_certificate() -> dict[str, object]:
         == 2
         and distance > 1
     )
+    counterexample = {
+        "A_mask": 1,
+        "B_mask": 0,
+        "refs_mask": 2,
+        "h": 0,
+        "active_station": 0,
+    }
+    counterexample_syndrome = F728.twisted_local_syndrome_mask(
+        counterexample["A_mask"],
+        counterexample["B_mask"],
+        counterexample["refs_mask"],
+        counterexample["h"],
+        11,
+    )
+    global_guard_counterexample_pass = (
+        F728.token_parity(
+            counterexample["A_mask"], counterexample["B_mask"]
+        )
+        != counterexample["h"]
+        and counterexample_syndrome != 0
+        and (
+            (
+                counterexample_syndrome
+                >> counterexample["active_station"]
+            )
+            & 1
+        )
+        == 0
+    )
     return {
         "ring_stations": 11,
+        "theorem_domain": "every finite oriented ring with n >= 1",
+        "theorem_quantifiers": (
+            "for every A,B,h there exists r with all L_s=0 iff "
+            "XOR_s(A_s XOR B_s)=h"
+        ),
         "rail_states_per_h": exhaustive["enumeration"]["rail_states"],
         "h_sectors": 2,
         "rail_h_cases": 2 * exhaustive["enumeration"]["rail_states"],
-        "projected_pass_states_per_h": tuple(
+        "existentially_projected_pass_states_per_h": tuple(
             row["projected_satisfied_states"] for row in amended
         ),
         "token_parity_sector_states_per_h": tuple(
             row["token_parity_sector_states"] for row in amended
         ),
+        "fixed_reference_pass_states_per_h": tuple(
+            row["fixed_ref_satisfied_states"] for row in amended
+        ),
+        "reference_extensions_per_matching_rail_state": 2,
         "projected_exact_separation_failures": sum(
             row["projected_exact_separation_failures"]
             for row in amended
@@ -1237,11 +1289,16 @@ def compression_enforcement_certificate() -> dict[str, object]:
         "twist_telescope_failures": sum(
             row["twist_telescope_failures"] for row in amended
         ),
-        "projected_iff_token_parity_equals_h": projected_iff,
-        "all_ring11_stations_are_enforced_macros": enforcement_coverage,
+        "existential_reference_projection_iff_parity_equals_h":
+            existential_projection_iff,
+        "exactly_two_reference_extensions": exactly_two_extensions,
+        "fixed_reference_is_not_whole_sector":
+            fixed_reference_distinction,
+        "all_ring11_active_macros_have_local_row_guard":
+            local_guard_coverage,
         "ring11_semantic_gates": len(word),
         "ring11_full_width": layout["full_width"],
-        "matched_parity_multitoken_witness": {
+        "static_matched_parity_multitoken_row_witness": {
             **witness,
             "canonical_refs": canonical_refs,
             "closure_obstruction": obstruction,
@@ -1249,22 +1306,38 @@ def compression_enforcement_certificate() -> dict[str, object]:
             "token_separation": distance,
             "all_local_rows_pass": syndrome == 0,
         },
-        "matched_parity_multitoken_locally_invisible": witness_pass,
+        "static_row_witness_pass": static_witness_pass,
+        "global_parity_acceptance_not_constructed": True,
+        "global_guard_counterexample": {
+            **counterexample,
+            "charge_syndrome_mask": counterexample_syndrome,
+            "active_charge_row_clean": (
+                (
+                    counterexample_syndrome
+                    >> counterexample["active_station"]
+                )
+                & 1
+            )
+            == 0,
+            "parity_mismatch": True,
+        },
+        "global_guard_counterexample_pass":
+            global_guard_counterexample_pass,
     }
 
 
 def deletion_controls_certificate() -> dict[str, object]:
     program = R719.PROGRAM
-    word, layout, blocks, _q_stop = extended_controller_build(
+    word, layout, station_segments, _q_stop = extended_controller_build(
         program, DATA_WIDTH
     )
-    block = next(
+    segment = next(
         row
-        for row in blocks
+        for row in station_segments
         if row["nonidentity"]
         and row["station"] == F728.marked_station(len(program))
     )
-    station = int(block["station"])
+    station = int(segment["station"])
     refs, lawful_h = lawful_reference_rails(len(program))
     hostile_h = lawful_h ^ 1
     banks, links = B.chain_genesis(F724.BANKS)
@@ -1277,13 +1350,13 @@ def deletion_controls_certificate() -> dict[str, object]:
         refs=refs,
         h=hostile_h,
     )
-    start = int(block["start"])
-    stop = int(block["stop"])
+    start = int(segment["start"])
+    stop = int(segment["stop"])
     local = word[start:stop]
     correct = F724.F723.apply_semantic_int(source, local)
     correct_rows = controller_rows(correct, layout)
 
-    charge_h_index = int(block["charge_compute_stop"]) - start - 1
+    charge_h_index = int(segment["charge_compute_stop"]) - start - 1
     deleted_charge = (
         local[:charge_h_index] + local[charge_h_index + 1:]
     )
@@ -1293,8 +1366,8 @@ def deletion_controls_certificate() -> dict[str, object]:
     charge_rows = controller_rows(charge_output, layout)
 
     charge_compute_size = (
-        int(block["charge_compute_stop"])
-        - int(block["charge_compute_start"])
+        int(segment["charge_compute_stop"])
+        - int(segment["charge_compute_start"])
     )
     deleted_or_index = charge_compute_size + 16
     deleted_or = (
@@ -1304,7 +1377,7 @@ def deletion_controls_certificate() -> dict[str, object]:
     or_rows = controller_rows(or_output, layout)
 
     deleted_uncompute_index = (
-        int(block["or_uncompute_start"]) - start + 1
+        int(segment["or_uncompute_start"]) - start + 1
     )
     deleted_uncompute = (
         local[:deleted_uncompute_index]
@@ -1400,7 +1473,7 @@ def physical_layout(bank_count: int) -> dict[str, object]:
     )
     wire_sites = data_sites + controller_sites
     assigned = set(base["assigned_sites"])
-    word, layout, _blocks, _q_stop = extended_controller_build(
+    word, layout, _station_segments, _q_stop = extended_controller_build(
         program, len(data_sites)
     )
     if len(wire_sites) != layout["full_width"]:
@@ -1528,7 +1601,7 @@ def physical_layer_certificate() -> dict[str, object]:
 
 def compiled_extended_orbit_certificate() -> dict[str, object]:
     program = R719.PROGRAM
-    word, layout, _blocks, _q_stop = extended_controller_build(
+    word, layout, _station_segments, _q_stop = extended_controller_build(
         program, DATA_WIDTH
     )
     digest = K.gate_digest(word)
@@ -1609,7 +1682,7 @@ def compiled_extended_orbit_certificate() -> dict[str, object]:
             }
         )
     return {
-        "Cycle713_origin0_branches": len(source_bases),
+        "Cycle713_origin0_fixture_states": len(source_bases),
         "forward_shared_with_charge_census": shared,
         "semantic_gates_per_H": len(word),
         "H_applications_per_orbit": len(program),
@@ -1645,21 +1718,27 @@ def inherited_anchors_certificate() -> dict[str, object]:
 def render_with_exact_size(
     report: dict[str, object],
 ) -> tuple[str, int]:
-    report["stdout_bytes"] = 0
+    report["stdout_characters"] = 0
     for _attempt in range(20):
         final_json = json.dumps(
             report, sort_keys=True, separators=(",", ":"), default=str
         )
         text = "\n".join(OUTPUT_LINES) + "\n" + final_json + "\n"
-        size = len(text.encode())
-        if report["stdout_bytes"] == size:
+        size = len(text)
+        if report["stdout_characters"] == size:
             return text, size
-        report["stdout_bytes"] = size
-    raise AssertionError("stdout byte fixed point")
+        report["stdout_characters"] = size
+    raise AssertionError("stdout character fixed point")
 
 
 def main() -> int:
     started = perf_counter()
+
+    recovered_input_closure = declared_input_closure(DIRECT_INPUT_PATHS)
+    check(
+        "A0_declared_mutable_input_closure_exact",
+        recovered_input_closure == AUDIT_INPUT_PATHS,
+    )
 
     anchor = cycle724_regression_anchor()
     structure = circuit_structure_certificate()
@@ -1704,7 +1783,8 @@ def main() -> int:
         census["nonidentity_stations"] == 91
         and census["census_size"]
         == 2 * census["nonidentity_stations"] + 1
-        and census["literal_branches_compiled"] == census["census_size"]
+        and census["literal_fixture_cases_compiled"]
+        == census["census_size"]
         and census["literal_prediction_mismatches"] == 0
         and census["host_prediction_mismatches"] == 0
         and census["refusal_event_mismatches"] == 0
@@ -1715,17 +1795,25 @@ def main() -> int:
         and census["predicted_refusals"] == census["observed_refusals"],
     )
 
-    enforcement = compression_enforcement_certificate()
+    projection_guard = projection_and_local_guard_certificate()
     check(
-        "D_compression_theorem_is_enforcement",
-        enforcement["projected_iff_token_parity_equals_h"]
-        and enforcement["all_ring11_stations_are_enforced_macros"]
-        and enforcement["projected_exact_separation_failures"] == 0
-        and enforcement["twist_telescope_failures"] == 0,
+        "D_existential_reference_projection_and_local_guard_split",
+        projection_guard[
+            "existential_reference_projection_iff_parity_equals_h"
+        ]
+        and projection_guard["exactly_two_reference_extensions"]
+        and projection_guard["fixed_reference_is_not_whole_sector"]
+        and projection_guard[
+            "all_ring11_active_macros_have_local_row_guard"
+        ]
+        and projection_guard["global_parity_acceptance_not_constructed"]
+        and projection_guard["global_guard_counterexample_pass"]
+        and projection_guard["projected_exact_separation_failures"] == 0
+        and projection_guard["twist_telescope_failures"] == 0,
     )
     check(
-        "D0_matched_parity_multitoken_residual_frozen",
-        enforcement["matched_parity_multitoken_locally_invisible"],
+        "D0_static_multitoken_row_witness_bounded",
+        projection_guard["static_row_witness_pass"],
     )
 
     deletions = deletion_controls_certificate()
@@ -1748,8 +1836,8 @@ def main() -> int:
 
     compiled = compiled_extended_orbit_certificate()
     check(
-        "G_compiled_extended_orbit_six_Cycle713_branches",
-        compiled["Cycle713_origin0_branches"] == 6
+        "G_compiled_extended_orbit_six_Cycle713_fixture_states",
+        compiled["Cycle713_origin0_fixture_states"] == 6
         and compiled["forward_shared_with_charge_census"]
         and compiled["H_applications_per_orbit"] == len(R719.PROGRAM)
         and compiled["compiled_host_equality_failures"] == 0
@@ -1766,47 +1854,59 @@ def main() -> int:
 
     inherited = inherited_anchors_certificate()
     check(
-        "H_inherited_Cycle713_mass_contact_anchors",
+        "H_inherited_Cycle713_source_pin_and_residuals",
         inherited["Cycle713_pin_match"]
         and inherited["matter_residual_failures"] == 0
         and inherited["matter_falsifier_active"],
     )
 
-    charge_rows_enforced = (
+    local_charge_row_guard = (
         structure["charge_coverage_failures"] == 0
         and structure["exact_uncompute_failures"] == 0
-        and enforcement["all_ring11_stations_are_enforced_macros"]
+        and projection_guard[
+            "all_ring11_active_macros_have_local_row_guard"
+        ]
         and CHECKS["C_exhaustive_charge_violation_refusal_census"]
     )
-    parity_sector_enforced = (
-        charge_rows_enforced
-        and enforcement["projected_iff_token_parity_equals_h"]
-    )
     boundary = {
-        "charge_rows_enforced_at_every_macro": charge_rows_enforced,
-        "parity_sector_enforced": parity_sector_enforced,
-        "matched_parity_multitoken_locally_invisible": True,
-        "w1_closed": False,
+        "local_charge_row_guard_at_every_active_macro":
+            local_charge_row_guard,
+        "existential_reference_projection_theorem":
+            projection_guard[
+                "existential_reference_projection_iff_parity_equals_h"
+            ],
+        "fixed_reference_chain_covers_whole_matching_sector": False,
+        "global_parity_acceptance_constructed": False,
+        "static_matched_parity_multitoken_row_witness": True,
+        "global_one_token_existence_uniqueness_derived": False,
         "references_h_and_cleanliness_are_declared_supplies": True,
         "genesis_untouched": True,
-        "enforcement_scope": (
-            "radius-one charge-row enforcement plus one marked edge; "
-            "projection over the declared reference-chain supply passes "
-            "all rows iff token parity equals h"
+        "algebra_scope": (
+            "for every finite n>=1 and A,B,h, there exists r making all "
+            "declared rows zero iff rail parity equals h; two r extensions "
+            "exist when matched, while one fixed r covers only 2^n rails"
         ),
-        "honest_residual": (
-            "matched-parity multi-token states can satisfy every local row; "
-            "this enforces parity, not token count"
+        "circuit_scope": (
+            "on the declared fixtures, an active station's dirty charge row "
+            "refuses that station's macro and all added scratch is uncomputed"
+        ),
+        "open_boundary": (
+            "no global acceptance bit, autonomous reference preparation, "
+            "physical meaning for h, recurrent invariance, or one-token "
+            "existence/uniqueness is derived"
         ),
     }
     check(
-        "HONEST_BOUNDARY_W1_remains_open",
-        boundary["charge_rows_enforced_at_every_macro"]
-        and boundary["parity_sector_enforced"]
-        and boundary[
-            "matched_parity_multitoken_locally_invisible"
+        "OPEN_BOUNDARY_global_one_token_condition_remains_supplied",
+        boundary["local_charge_row_guard_at_every_active_macro"]
+        and boundary["existential_reference_projection_theorem"]
+        and not boundary[
+            "fixed_reference_chain_covers_whole_matching_sector"
         ]
-        and boundary["w1_closed"] is False
+        and not boundary["global_parity_acceptance_constructed"]
+        and not boundary[
+            "global_one_token_existence_uniqueness_derived"
+        ]
         and boundary[
             "references_h_and_cleanliness_are_declared_supplies"
         ],
@@ -1815,16 +1915,19 @@ def main() -> int:
     elapsed = perf_counter() - started
     padded_physical = physical["banks"][12]
     report: dict[str, object] = {
-        "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
+        "declared_mutable_input_paths": len(AUDIT_INPUT_PATHS),
+        "declared_input_closure_exact":
+            recovered_input_closure == AUDIT_INPUT_PATHS,
         "NOTE_PATH": NOTE_PATH,
-        "audit_timeout_seconds": AUDIT_TIMEOUT_SEC,
+        "timeout_seconds": AUDIT_TIMEOUT_SEC,
         "bounded": True,
-        "charge_rows_enforced_at_every_macro":
-            boundary["charge_rows_enforced_at_every_macro"],
-        "parity_sector_enforced":
-            boundary["parity_sector_enforced"],
-        "matched_parity_multitoken_locally_invisible": True,
-        "w1_closed": False,
+        "local_charge_row_guard_at_every_active_macro":
+            boundary["local_charge_row_guard_at_every_active_macro"],
+        "existential_reference_projection_theorem":
+            boundary["existential_reference_projection_theorem"],
+        "global_parity_acceptance_constructed": False,
+        "static_matched_parity_multitoken_row_witness": True,
+        "global_one_token_existence_uniqueness_derived": False,
         "checks": dict(sorted(CHECKS.items())),
         "checks_failed": sum(not passed for passed in CHECKS.values()),
         "checks_passed": sum(CHECKS.values()),
@@ -1835,7 +1938,7 @@ def main() -> int:
         "lawful_Q_time_charge_rows": q_time_rows,
         "lawful_charge_extended_wrap": lawful,
         "charge_violation_census": census,
-        "compression_enforcement": enforcement,
+        "projection_and_local_guard": projection_guard,
         "deletion_controls": deletions,
         "physical": physical,
         "compiled_extended_orbit": compiled,
@@ -1880,9 +1983,9 @@ def main() -> int:
         ),
         "claim_boundary": boundary,
         "terminal": (
-            "CYCLE730_CHARGE_ROW_ENFORCEMENT_PASS"
+            "CYCLE730_LOCAL_CHARGE_ROW_GUARD_PASS"
             if all(CHECKS.values())
-            else "CYCLE730_CHARGE_ROW_ENFORCEMENT_HONEST_FAIL"
+            else "CYCLE730_LOCAL_CHARGE_ROW_GUARD_HONEST_FAIL"
         ),
     }
     report["report_sha256"] = sha256(
@@ -1897,23 +2000,23 @@ def main() -> int:
         + "\n"
     )
     check(
-        "OUTPUT_stdout_under_150KB",
-        len(preliminary.encode()) < STDOUT_LIMIT_BYTES,
+        "OUTPUT_stdout_under_20000_characters",
+        len(preliminary) < STDOUT_LIMIT_CHARACTERS,
     )
     report["checks"] = dict(sorted(CHECKS.items()))
     report["checks_failed"] = sum(not passed for passed in CHECKS.values())
     report["checks_passed"] = sum(CHECKS.values())
     report["pass"] = all(CHECKS.values())
     report["terminal"] = (
-        "CYCLE730_CHARGE_ROW_ENFORCEMENT_PASS"
+        "CYCLE730_LOCAL_CHARGE_ROW_GUARD_PASS"
         if report["pass"]
-        else "CYCLE730_CHARGE_ROW_ENFORCEMENT_HONEST_FAIL"
+        else "CYCLE730_LOCAL_CHARGE_ROW_GUARD_HONEST_FAIL"
     )
     report["report_sha256"] = sha256(
         json.dumps(report, sort_keys=True, default=str).encode()
     ).hexdigest()
     text, exact_size = render_with_exact_size(report)
-    if exact_size >= STDOUT_LIMIT_BYTES:
+    if exact_size >= STDOUT_LIMIT_CHARACTERS:
         raise AssertionError(("stdout bound", exact_size))
     sys.stdout.write(text)
     return 0 if report["pass"] else 1

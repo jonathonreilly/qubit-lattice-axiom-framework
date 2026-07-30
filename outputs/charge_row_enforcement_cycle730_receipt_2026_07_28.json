@@ -1,61 +1,95 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle730_charge_row_enforcement_2026_07_28.txt": "af680e4b8d873b2634d4d69c149f2402e6452f97a7dde6e432dd2eedd6680731",
-      "frontier_cycle730_enforcement_independent_check_2026_07_28.txt": "d28972abbcb90baca3aa524303fb3e78d6eef906a424374b5491836b2896e681"
+      "frontier_cycle730_charge_row_enforcement_2026_07_28.txt": "be017ecba159de9b4ae0c8d5663465b26d898a4e20a97d35f355e5dcb04e5980",
+      "frontier_cycle730_enforcement_independent_check_2026_07_28.txt": "21a0e3705cd159e831f2dfb936cd13b92ed5986c25eef66c1d12cde3af532c64"
+    },
+    "citation_graph_manifest": {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "256061120d444621f40951c1f6387db0b0e224001ec825a2c952bee723ba92ee"
     },
     "note": {
       "path": "docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "fbf6a3cff8057313c6d218ef3c96be2a4dc1406f4e75e4610713f0faee062173"
+      "sha256": "a50d3a28fd0cc7b056b9172c27c56e8eb51131bce774d49a386780835aaae779"
     },
     "runners": {
-      "frontier_cycle730_charge_row_enforcement_2026_07_28.py": "b53388914d02b408498f423edb0c1687a61e3ed15b943446291ba01a467c2456",
-      "frontier_cycle730_enforcement_independent_check_2026_07_28.py": "2088ba2c232342bcd9a5bd16476f55aede560fcf09d7d08d88c6bf4cc8b5aa70"
+      "frontier_cycle730_charge_row_enforcement_2026_07_28.py": "15d43ce97186c50a052963e39a9087a5bd10031883b3a663d0c6afffcd804219",
+      "frontier_cycle730_enforcement_independent_check_2026_07_28.py": "567408fc5453498b94bc58fec2b34a004b597643babaafb87237363a455de79f"
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
     "axiom_pressure": false,
-    "charge_rows_enforced_at_every_macro": true,
-    "fixed_supplies": "the clean static reference chain, the h register and its genesis value, auxiliary cleanliness, one source controller token, oriented program ring, clean data genesis, plus everything the Cycle-719 controller core declares supplied",
-    "matched_parity_multitoken_locally_invisible": true,
-    "not_derived": "the reference-chain/h inventory itself; token-count enforcement (matched-parity multi-token states satisfy every local row); no time/Record/Born/source content is touched",
-    "parity_sector_enforced": true,
-    "positive_scope": "the charge-extended refusal sandwich (99,310 semantic gates; exact reversibility; refs/h never written); lawful trajectories unchanged with all-station charge-row nullity; exhaustive 183-violation census with 341 predicted = observed refusals and zero mismatches; the ring-11 enforcement theorem (all rows pass iff token parity equals h) over 8,388,608 rail/h cases; deletion controls; routed physical layer; byte-pinned inherited anchors",
-    "w1_closed": false
+    "existential_reference_projection_theorem": true,
+    "fixed_reference_chain_covers_whole_matching_sector": false,
+    "fixed_supplies": "a static reference chain, the marked-edge sector bit h and its genesis value, auxiliary cleanliness, one source controller token, an oriented program ring, clean data genesis, and every declared condition inherited from the Cycle-719 controller chain",
+    "global_one_token_existence_uniqueness_derived": false,
+    "global_parity_acceptance_constructed": false,
+    "local_charge_row_guard_at_every_active_macro": true,
+    "not_derived": "autonomous reference or h preparation, a physical interpretation of h, global aggregation across inactive rows, recurrent preservation of the row condition, or global one-token existence and uniqueness",
+    "positive_scope": "the existential-reference GF(2) theorem; the fixture-bounded per-active-station reversible guard; exact uncompute; unchanged lawful fixture evolution; the 183-case local refusal census; deletion controls; and physical compilation accounting",
+    "static_matched_parity_multitoken_row_witness": true,
+    "untested_routes_remain_open": "larger-radius, hierarchical or multiscale, locally propagated counter or accumulator, boundary or topological, alternative auxiliary, and preparation or admission constructions"
   },
   "checks": {
     "independent_named_checks_failed": 0,
-    "independent_named_checks_passed": 5,
-    "primary_named_checks_passed": 12
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_failed": 0,
+    "primary_named_checks_passed": 13
   },
   "claim_type": "bounded_theorem",
   "cycle": 730,
   "date": "2026-07-28",
   "result": {
     "added_semantic_gates": 1276,
-    "cycle713_anchor_sha256_match": true,
+    "cycle713_runner_source_pin_match": true,
     "cycle724_anchor_semantic_gates": 98034,
-    "enforcement_theorem_cases": 8388608,
+    "declared_mutable_input_paths": {
+      "checker": 79,
+      "checker_closure_exact": true,
+      "primary": 78,
+      "primary_closure_exact": true
+    },
     "extended_word_semantic_gates": 99310,
     "extended_word_sha256": "7d4b7fac14c0606f7210a1b99da997cecdf13885471c37d5ae55597b742c5433",
-    "matched_parity_witness": {
-      "A_mask": 33,
-      "all_local_rows_pass": true,
-      "canonical_refs": 62,
-      "h": 0
+    "global_guard_counterexample": {
+      "A_mask": 1,
+      "B_mask": 0,
+      "active_charge_row_clean": true,
+      "active_station": 0,
+      "charge_row_mask": 2,
+      "h": 0,
+      "parity_mismatch": true,
+      "refs_mask": 2
     },
     "physical_12_bank": {
+      "controller_M2_including_charge_scratch_and_h": 1691,
       "forward_routed_NN_gates": 18051374,
+      "maximum_route_distance": 48,
       "physical_primitives_each_direction": 1435386
+    },
+    "projection_theorem": {
+      "exactly_two_reference_extensions_per_matching_rail_case": true,
+      "fixed_reference_passes_per_h": 2048,
+      "matching_rail_cases_per_h": 2097152,
+      "rail_h_cases_exhausted": 8388608,
+      "satisfying_reference_extensions_per_h": 4194304
+    },
+    "static_row_witness": {
+      "A_mask": 33,
+      "B_mask": 0,
+      "all_local_rows_pass": true,
+      "canonical_refs": 62,
+      "h": 0,
+      "scope": "one static row-system state only"
     },
     "violation_census": {
       "injected": 183,
       "mismatches": 0,
-      "observed_refusals": 341,
-      "predicted_refusals": 341
+      "observed_local_refusals": 341,
+      "predicted_local_refusals": 341
     }
   },
-  "status": "CYCLE730_CHARGE_ROW_ENFORCEMENT_PASS"
+  "runner_status": "CYCLE730_LOCAL_CHARGE_ROW_GUARD_PASS"
 }

@@ -1,0 +1,45 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle779_b7_anchor_independent_check_2026_07_28.txt": "be0d566506b0fc334bc246fde346456bbabccf3b2225fd65fb05787456b8a5b3",
+      "frontier_cycle779_b7_exhaustive_anchor_2026_07_28.txt": "7811bc0c8a88c95ef96d993f1209dc76b08b7c4e5b4f3c59c3411a4dde6b43a8"
+    },
+    "note": {
+      "path": "docs/B7_EXHAUSTIVE_ANCHOR_CYCLE779_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "8929746ff694c7d3098c5c41dc5dc034fc95387d560a590efbae507ea837979a"
+    },
+    "runners": {
+      "frontier_cycle779_b7_anchor_independent_check_2026_07_28.py": "4b08d2c119f735982bf7e8bc1c64a8bc018412aedf609f5ae5cbe859339ec2f6",
+      "frontier_cycle779_b7_exhaustive_anchor_2026_07_28.py": "2fc8f8f107db4f342d53aab42c35307c26590180c6677762ba9f9d0ee2d850c7"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "anchors_now": "seven complete rings n=3,11,19,27,35,43,51 (b=1..7), all fully exhausted",
+    "axiom_pressure": false,
+    "census": "L(51) = 45,537,549,124; all occupancy strata match the Lucas recurrence (both runners independently)",
+    "fixed_supplies": "everything Cycle-737/738/739/740 declare",
+    "next": "b=8 (n=59) ~ 1.26e14 steps: ~4.3h at the checker's measured rate \u2014 exceeds the in-cycle audit budget; queued as a dedicated run",
+    "not_derived": "the general-b statement (remains the structural theorem with named conditions)",
+    "outcome": "SEVENTH_RING_FULL",
+    "rows": "all 51 b=7 rows pass the clean-work property at C=7",
+    "sweep": "two honest stages: primary k<=9 (39,209,204,583 steps at 96.14M steps/s, declared partial, zero violations); checker fast idiom (8.111B evaluator steps/s / 2.069B pipeline station-steps/s) reverified k=6,7 and swept k=10..25 \u2014 union = the COMPLETE ring: 2,322,415,005,324 steps, remainder zero, full_ring_completed true, zero violations of any category"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 779,
+  "date": "2026-07-30",
+  "result": {
+    "L51": 45537549124,
+    "checker_rate": "8.111B steps/s",
+    "full_ring_completed": true,
+    "steps": 2322415005324,
+    "violations": 0
+  },
+  "status": "CYCLE779_B7_EXHAUSTIVE_ANCHOR_PASS"
+}

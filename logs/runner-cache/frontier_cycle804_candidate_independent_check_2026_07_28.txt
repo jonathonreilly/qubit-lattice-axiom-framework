@@ -1,0 +1,467 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle804_candidate_independent_check_2026_07_28.py
+runner_sha256: d53d1253c6cbb22c9b6238a5133166676f27ffb6097922eb831b18779c5e89c7
+input_fingerprint_sha256: cfe471a736c724d4f251c54e13051176f3edfaf69eade86c6c8d277c3c04b235
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 66.24
+status: ok
+----- stdout -----
+S1_RECORD_QUOTE_BEGIN
+Records form.
+
+When present, a record locks exactly one admissible local possibility. A
+site never carries more than one record; records are permanent.
+
+Only records are readable. A readout value is determined by record content
+alone. For any finite collection of pairwise-disjoint records, scalar readout
+`I` is additive, with `I(empty)=0`.
+S1_RECORD_QUOTE_END
+S1_WHOLE_AXIOM_CANDIDATE_0_BEGIN
+Records form.
+S1_WHOLE_AXIOM_CANDIDATE_0_END
+S1_WHOLE_AXIOM_RULING_0 :: "REFUTES_NO_FORMATION_FORCING: at least some record formation is explicit axiom content"
+S1_WHOLE_AXIOM_CANDIDATE_1_BEGIN
+When present, a record locks exactly one admissible local possibility. A
+site never carries more than one record; records are permanent.
+S1_WHOLE_AXIOM_CANDIDATE_1_END
+S1_WHOLE_AXIOM_RULING_1 :: "CONDITIONAL_LOCK_CONTENT: unique admissible locking when present, with no epoch schedule"
+S1_WHOLE_AXIOM_CANDIDATE_2_BEGIN
+These axioms state only their named primitive content. Further physical
+structure requires a retained derivation or bridge, or explicit approved-
+primitive registration, before use as a premise. A choice not fixed by the
+supplied structure remains a named conditional or open dependency.
+S1_WHOLE_AXIOM_CANDIDATE_2_END
+S1_WHOLE_AXIOM_RULING_2 :: "UNFIXED-CHOICE RULE: unsupplied scheduling must remain conditional/open"
+S1_WHOLE_AXIOM_CANDIDATE_3_BEGIN
+Admissibility is not a dynamics axiom. It determines availability by a
+nearest-neighbor rule: for each site, the available possibilities are
+determined by, and vary with, the nearest-neighbor conditions. It does not
+choose a Hamiltonian or transfer operator, supply transition probabilities or
+weights, select a scalar or nonzero kinetic branch, assert a Dirac-square
+carrier, define a time metric, or provide a record-production process or
+physical persistence dynamics.
+S1_WHOLE_AXIOM_CANDIDATE_3_END
+S1_WHOLE_AXIOM_RULING_3 :: "NO PRODUCTION PROCESS/TIME METRIC SUPPLIED by the four axioms"
+S1_WHOLE_AXIOM_CANDIDATE_4_BEGIN
+Rows that require only the Record axiom should cite this minimal-axiom
+authority. Rows that require P2/modulus, log-det, source/action, measurement,
+Born weights, readout-context selection, central-sector decomposition, `K`/CPT
+structure, transition relations, record-production dynamics, physical
+persistence dynamics, local observability, or any other additional bridge must
+cite separate retained authorities or remain bounded/pending according to the
+audit ledger.
+S1_WHOLE_AXIOM_CANDIDATE_4_END
+S1_WHOLE_AXIOM_RULING_4 :: "NO PRODUCTION PROCESS/TIME METRIC SUPPLIED by the four axioms"
+S1_WHOLE_AXIOM_CANDIDATE_5_BEGIN
+- the staggered-Dirac/finite-Grassmann realization and `AC_phi_lambda`;
+- the strong-CP theta gauge and mass-side derivation obligations;
+- P2/modulus/phase-blindness and any log-det readout theorem;
+- context selection, measurement basis selection, Born weights, probability
+  rules, update laws, decoherence mechanisms, and formation rules (which
+  admissible possibility a new record locks, at which site, with what weight,
+  or at what rate);
+- arrow, record-production dynamics, physical persistence dynamics, time metric,
+  and local observability of records;
+- source/action and physical-observable identification;
+- `g_bare = 1` convention handling;
+- the scale-reference primitive and the separate gravity self-consistency
+  question that the framework's natural unit equals the Planck length.
+S1_WHOLE_AXIOM_CANDIDATE_5_END
+S1_WHOLE_AXIOM_RULING_5 :: "SCHEDULING/RATE EXPLICITLY DOWNSTREAM, while global occurrence is not open"
+S1_WHOLE_AXIOM_CANDIDATE_6_BEGIN
+The April 15 through May 20 sequence separated the one-qubit local algebra and
+the `Z^3` lattice from downstream realization gates that had previously been
+written too axiomatically. The 2026-06-04 memo added scalar finite Record
+additivity as the third explicitly approved premise. The 2026-06-05 memo refined
+Record to durable realized-outcome registration in a supplied readout context.
+The 2026-07-04 owner-approved revision appended the formation sentence "Records
+form." to the Record axiom: occurrence became named axiom content, while every
+formation rule (which admissible possibility, at which site, with what weight,
+at what rate) remained downstream supplier content. The file path was kept
+unchanged so existing runner needles and links continue to resolve.
+S1_WHOLE_AXIOM_CANDIDATE_6_END
+S1_WHOLE_AXIOM_RULING_6 :: "CONFIRMS_GLOBAL_OCCURRENCE_IS_FORCED; which/site/weight/rate remain downstream"
+PASS S1_QUOTE_COMPLETENESS_AND_WHOLE_AXIOM_PLAIN_READING :: {"candidate_pass":true,"expected_quote_sha256":"69d69c0d59162b5fdf2f293a695d0094124006baf0efb3f719fc3fa0df106384","formation_forcing_hits":[{"ruling":"REFUTES_NO_FORMATION_FORCING: at least some record formation is explicit axiom content","verbatim":"Records form."},{"ruling":"CONFIRMS_GLOBAL_OCCURRENCE_IS_FORCED; which/site/weight/rate remain downstream","verbatim":"The April 15 through May 20 sequence separated the one-qubit local algebra and\nthe `Z^3` lattice from downstream realization gates that had previously been\nwritten too axiomatically. The 2026-06-04 memo added scalar finite Record\nadditivity as the third explicitly approved premise. The 2026-06-05 memo refined\nRecord to durable realized-outcome registration in a supplied readout context.\nThe 2026-07-04 owner-approved revision appended the formation sentence \"Records\nform.\" to the Record axiom: occurrence became named axiom content, while every\nformation rule (which admissible possibility, at which site, with what weight,\nat what rate) remained downstream supplier content. The file path was kept\nunchanged so existing runner needles and links continue to resolve."}],"primary_formation_status":{"formation_asserted_globally":true,"formation_forced_for_any_epoch":false},"primary_plain_reading":"The Record axiom asserts globally that records form. It schedules no formation for any epoch or configuration; only where and when remain open.","quote_sha256":"69d69c0d59162b5fdf2f293a695d0094124006baf0efb3f719fc3fa0df106384","quote_verbatim_equal_to_primary":true,"ruling":"The quote is exact and the v2 primary adopts the whole-file reading: occurrence somewhere is axiom content; only its formation rule/schedule remains open.","whole_file_candidate_count":7}
+PASS S2_IDENTIFICATION_NAMES_AND_SCOPE_FIDELITY :: {"Cycle750_boundary_flags":["fixture_scope_only","held_bank_counts","source_boundary_and_orientation_remain_supplied","autonomous_genesis_or_enforcement_derived","record_typing_derived","permanence_derived","time_law_derived","w3_closed"],"Cycle758_explicit_exclusions":["synchronous_composition","token_rail_return","literal_inverse","clean_postimage"],"Cycle792_base_conditions":["synchronous_composition","token_rail_return","literal_inverse","census_membership","pairwise_separation","synchronization"],"Cycle792_reconstructed_battery":["synchronous_composition","token_rail_return","literal_inverse","census_membership","pairwise_separation","synchronization","clean_postimage"],"Cycle796_battery":["synchronous_composition","token_rail_return","literal_inverse","census_membership","pairwise_separation","synchronization","clean_postimage"],"candidate_pass":true,"extra":[],"horizon_status":{"Cycle792_scope_statement":"the horizon extension is a SUPPLIED change to the acceptance law, not a landed law","Cycle796_accept_first_status":"DECLARED COMPOSITION GLUE, UNLANDED"},"missing":[],"order_insensitive_exact_names":true,"primary_v2_four_conditions_758_raw":["synchronous_composition","token_rail_return","literal_inverse","clean_postimage"],"primary_v2_identification_claim":"The seven-condition battery equals landed admissibility at the 792/796 surface: four conditions are explicit exclusions on Cycle-758's raw landed surface, while census membership, pairwise separation, and synchronization are supplied through the preconstructed domain.","primary_v2_three_conditions_preconstructed":["census_membership","pairwise_separation","synchronization"],"ruling":"The seven names match exactly, order-insensitively, and v2 correctly scopes that identity to the 792/796 surface while preserving the four-condition Cycle-758 raw-surface split.","scope_counterexample":{"condition_names":["synchronous_composition","token_rail_return","literal_inverse","clean_postimage"],"differs_from_composed_seven_condition_battery":true,"ruling":"Cycle758 decides with four explicit exclusions; census membership, pairwise separation, and synchronization enter only through its preconstructed domain/landed Cycle736 supplier. Thus seven-condition identity is valid for the composed Cycle792/796 monitored surface, not every landed multi-source surface named by the frozen candidate.","surface":"Cycle758.multisource_enforcement_lineage_selector raw landed decision surface"}}
+PASS S3_FRESH_RECOUNT_T252_AND_T444 :: {"candidate_pass":true,"deterministic":true,"first_sha256":"a62fdf483c7d0f7b6f8809433646606f1619749cca2e9145ffe07c6b1bb69580","fresh_implementation":"No primary functions, K.run_orbit, M736 composition/census, F750 fixtures, or F758 cleanliness were called.","rerun_sha256":"a62fdf483c7d0f7b6f8809433646606f1619749cca2e9145ffe07c6b1bb69580","samples":[{"all_base_conditions_pass":true,"alternatives":[[0,2],[0,9],[1,3],[1,10],[2,4],[3,5],[4,6],[5,7],[6,8],[7,9],[8,10]],"battery_names":["census_membership","pairwise_separation","synchronization","synchronous_composition","token_rail_return","literal_inverse","clean_postimage"],"clean_timeline_through_target":[[252,[[1,10]]]],"direction":[0,1],"event":3,"first_clean_rows":[[[1,10],252]],"k":2,"moment":252,"moment_minus_one_survivors":[],"moment_survivors":[[1,10]],"representative":[0,2],"target":[1,10],"target_conditions":{"census_membership":true,"clean_postimage":true,"literal_inverse":true,"pairwise_separation":true,"synchronization":true,"synchronous_composition":true,"token_rail_return":true},"target_first_clean":252,"transport_failures":0},{"all_base_conditions_pass":true,"alternatives":[[0,2,5],[0,3,9],[0,6,8],[1,3,6],[1,4,10],[1,7,9],[2,4,7],[2,8,10],[3,5,8],[4,6,9],[5,7,10]],"battery_names":["census_membership","pairwise_separation","synchronization","synchronous_composition","token_rail_return","literal_inverse","clean_postimage"],"clean_timeline_through_target":[[48,[[1,4,10]]],[444,[[0,2,5]]]],"direction":[1,0],"event":2,"first_clean_rows":[[[1,4,10],48],[[0,2,5],444]],"k":3,"moment":444,"moment_minus_one_survivors":[],"moment_survivors":[[0,2,5]],"representative":[0,2,5],"target":[0,2,5],"target_conditions":{"census_membership":true,"clean_postimage":true,"literal_inverse":true,"pairwise_separation":true,"synchronization":true,"synchronous_composition":true,"token_rail_return":true},"target_first_clean":444,"transport_failures":0}]}
+S4_PRIMARY_FROZEN_SENTENCE_BEGIN
+At the landed scope, when a record forms in a multi-source epoch it locks the unique accepted alternative at its first-clean moment — the acceptance law is the Record axiom's admissibility requirement evaluated on the landed dynamics, with admissibility operationally identified as the seven-condition battery at the 792/796 surface (four conditions 758-raw). The axiom asserts that records form; it schedules nothing. The remaining freedom is at least two independent axes — the evaluation cadence and the formation-site schedule — both witnessed.
+S4_PRIMARY_FROZEN_SENTENCE_END
+S4_PRIMARY_CONDITIONAL_SENTENCE_BEGIN
+IF a record forms in a landed multi-source epoch, THEN, because the locked possibility must be admissible and landed admissibility is the full battery, it locks the unique accepted alternative at a first-clean moment. This conditional does not assert that a record forms.
+S4_PRIMARY_CONDITIONAL_SENTENCE_END
+PASS S4_MOMENT_DEPENDENCE_AND_WORDING :: {"candidate_pass":true,"clean_at_t444":[[0,2,5]],"clean_at_t48":[[1,4,10]],"different_locked_alternative_by_attempt_moment":true,"event":2,"family":[0,2,5],"primary_sentence_S4_VERBATIM":"IF a record forms in a landed multi-source epoch, THEN, because the locked possibility must be admissible and landed admissibility is the full battery, it locks the unique accepted alternative at a first-clean moment. This conditional does not assert that a record forms.","primary_sentence_frozen_candidate_VERBATIM":"At the landed scope, when a record forms in a multi-source epoch it locks the unique accepted alternative at its first-clean moment \u2014 the acceptance law is the Record axiom's admissibility requirement evaluated on the landed dynamics, with admissibility operationally identified as the seven-condition battery at the 792/796 surface (four conditions 758-raw). The axiom asserts that records form; it schedules nothing. The remaining freedom is at least two independent axes \u2014 the evaluation cadence and the formation-site schedule \u2014 both witnessed.","required_t444_verified":true,"required_t48_verified":true,"wording_overclaim":false,"wording_ruling":"SURVIVES THIS ATTACK: v2 ties locking to the record's first-clean moment, states that the axiom supplies no schedule, and retains the unchanged conditional sentence. Neither quoted sentence asserts the same alternative at every clean moment."}
+S5_GREP_CANDIDATE_0_BEGIN
+        "record_typing_derived": False,
+S5_GREP_CANDIDATE_0_END :: {"line":749,"module":"Cycle750","ruling":"BOUNDARY FLAG FALSE; not a formation trigger"}
+S5_GREP_CANDIDATE_1_BEGIN
+        and not boundary["record_typing_derived"]
+S5_GREP_CANDIDATE_1_END :: {"line":841,"module":"Cycle750","ruling":"BOUNDARY FLAG FALSE; not a formation trigger"}
+S5_GREP_CANDIDATE_2_BEGIN
+        "axiom_update_triggered": False,
+S5_GREP_CANDIDATE_2_END :: {"line":787,"module":"Cycle792","ruling":"TEXTUAL MENTION ONLY; not executable formation"}
+S5_GREP_CANDIDATE_3_BEGIN
+        and not boundary["axiom_update_triggered"]
+S5_GREP_CANDIDATE_3_END :: {"line":795,"module":"Cycle792","ruling":"TEXTUAL MENTION ONLY; not executable formation"}
+S5_GREP_CANDIDATE_4_BEGIN
+            "axiom_update_triggered: false",
+S5_GREP_CANDIDATE_4_END :: {"line":955,"module":"Cycle792","ruling":"TEXTUAL MENTION ONLY; not executable formation"}
+S5_GREP_CANDIDATE_5_BEGIN
+"""Cycle 796 v2: monitored k=2 selector with a declared cadence convention.
+S5_GREP_CANDIDATE_5_END :: {"line":2,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_6_BEGIN
+landed K719 cadences.  Existence and orbit-level acceptance moments are robust;
+S5_GREP_CANDIDATE_6_END :: {"line":5,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_7_BEGIN
+cadence convention.  No per-configuration horizon is an input.
+S5_GREP_CANDIDATE_7_END :: {"line":7,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_8_BEGIN
+LANDED_CADENCES = (
+S5_GREP_CANDIDATE_8_END :: {"line":59,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_9_BEGIN
+    landed_plural_cadences = (
+S5_GREP_CANDIDATE_9_END :: {"line":323,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_10_BEGIN
+        "landed_plural_cadences": landed_plural_cadences,
+S5_GREP_CANDIDATE_10_END :: {"line":347,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_11_BEGIN
+            and landed_plural_cadences
+S5_GREP_CANDIDATE_11_END :: {"line":359,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_12_BEGIN
+    """Time-major batch scan; every key sees the same cadence and cutoff."""
+S5_GREP_CANDIDATE_12_END :: {"line":560,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_13_BEGIN
+def cadence_probe_for_key(
+S5_GREP_CANDIDATE_13_END :: {"line":677,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_14_BEGIN
+    """Measure all four landed observation cadences on one transient key."""
+S5_GREP_CANDIDATE_14_END :: {"line":683,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_15_BEGIN
+    cadence_names = tuple(row["name"] for row in LANDED_CADENCES)
+S5_GREP_CANDIDATE_15_END :: {"line":693,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_16_BEGIN
+    first = {cadence: None for cadence in cadence_names}
+S5_GREP_CANDIDATE_16_END :: {"line":694,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_17_BEGIN
+        cadence: Counter() for cadence in cadence_names
+S5_GREP_CANDIDATE_17_END :: {"line":696,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_18_BEGIN
+        cadence: [] for cadence in cadence_names
+S5_GREP_CANDIDATE_18_END :: {"line":699,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_19_BEGIN
+        cadence: str,
+S5_GREP_CANDIDATE_19_END :: {"line":704,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_20_BEGIN
+        if first[cadence] is None:
+S5_GREP_CANDIDATE_20_END :: {"line":712,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_21_BEGIN
+            first[cadence] = coordinate
+S5_GREP_CANDIDATE_21_END :: {"line":713,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_22_BEGIN
+            window_counts[cadence][orbit] += 1
+S5_GREP_CANDIDATE_22_END :: {"line":716,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_23_BEGIN
+            if len(window_examples[cadence]) < 12:
+S5_GREP_CANDIDATE_23_END :: {"line":717,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_24_BEGIN
+                window_examples[cadence].append(coordinate)
+S5_GREP_CANDIDATE_24_END :: {"line":718,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_25_BEGIN
+            cadence: {
+S5_GREP_CANDIDATE_25_END :: {"line":801,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_26_BEGIN
+                str(orbit): window_counts[cadence][orbit]
+S5_GREP_CANDIDATE_26_END :: {"line":802,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_27_BEGIN
+            for cadence in cadence_names
+S5_GREP_CANDIDATE_27_END :: {"line":805,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_28_BEGIN
+            cadence: tuple(window_examples[cadence])
+S5_GREP_CANDIDATE_28_END :: {"line":808,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_29_BEGIN
+            for cadence in cadence_names
+S5_GREP_CANDIDATE_29_END :: {"line":809,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_30_BEGIN
+def cadence_census(
+S5_GREP_CANDIDATE_30_END :: {"line":816,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_31_BEGIN
+    """Run the first-pass selector on both transients under each cadence."""
+S5_GREP_CANDIDATE_31_END :: {"line":821,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_32_BEGIN
+        key: cadence_probe_for_key(
+S5_GREP_CANDIDATE_32_END :: {"line":834,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_33_BEGIN
+    cadence_names = tuple(row["name"] for row in LANDED_CADENCES)
+S5_GREP_CANDIDATE_33_END :: {"line":841,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_34_BEGIN
+            "cadence": cadence,
+S5_GREP_CANDIDATE_34_END :: {"line":844,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_35_BEGIN
+            "orbit": probes[key]["first"][cadence]["orbit"],
+S5_GREP_CANDIDATE_35_END :: {"line":846,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_36_BEGIN
+            "step": probes[key]["first"][cadence]["step"],
+S5_GREP_CANDIDATE_36_END :: {"line":847,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_37_BEGIN
+                probes[key]["first"][cadence]["absolute_H"],
+S5_GREP_CANDIDATE_37_END :: {"line":849,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_38_BEGIN
+        for cadence in cadence_names
+S5_GREP_CANDIDATE_38_END :: {"line":851,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_39_BEGIN
+            "cadence": cadence,
+S5_GREP_CANDIDATE_39_END :: {"line":856,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_40_BEGIN
+                probes[key]["window_clean_observation_counts"][cadence],
+S5_GREP_CANDIDATE_40_END :: {"line":860,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_41_BEGIN
+                probes[key]["window_examples"][cadence],
+S5_GREP_CANDIDATE_41_END :: {"line":862,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_42_BEGIN
+        for cadence in cadence_names
+S5_GREP_CANDIDATE_42_END :: {"line":864,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_43_BEGIN
+    selection_existence_cadence_robust = all(
+S5_GREP_CANDIDATE_43_END :: {"line":867,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_44_BEGIN
+        probes[key]["first"][cadence] is not None
+S5_GREP_CANDIDATE_44_END :: {"line":868,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_45_BEGIN
+        for cadence in cadence_names
+S5_GREP_CANDIDATE_45_END :: {"line":869,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_46_BEGIN
+            if row["cadence"] == cadence
+S5_GREP_CANDIDATE_46_END :: {"line":875,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_47_BEGIN
+        for cadence in cadence_names
+S5_GREP_CANDIDATE_47_END :: {"line":877,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_48_BEGIN
+    orbit_level_moments_cadence_robust = all(
+S5_GREP_CANDIDATE_48_END :: {"line":879,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_49_BEGIN
+            if row["cadence"] == cadence
+S5_GREP_CANDIDATE_49_END :: {"line":883,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_50_BEGIN
+        for cadence in cadence_names
+S5_GREP_CANDIDATE_50_END :: {"line":885,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_51_BEGIN
+    sub_orbit_timing_cadence_sensitive = any(
+S5_GREP_CANDIDATE_51_END :: {"line":887,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_52_BEGIN
+        row["cadence"]: row
+S5_GREP_CANDIDATE_52_END :: {"line":898,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_53_BEGIN
+    window_fine_structure_cadence_sensitive = (
+S5_GREP_CANDIDATE_53_END :: {"line":903,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_54_BEGIN
+        "selection_existence_cadence_robust":
+S5_GREP_CANDIDATE_54_END :: {"line":918,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_55_BEGIN
+            selection_existence_cadence_robust,
+S5_GREP_CANDIDATE_55_END :: {"line":919,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_56_BEGIN
+        "orbit_level_moments_cadence_robust":
+S5_GREP_CANDIDATE_56_END :: {"line":920,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_57_BEGIN
+            orbit_level_moments_cadence_robust,
+S5_GREP_CANDIDATE_57_END :: {"line":921,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_58_BEGIN
+        "sub_orbit_timing_cadence_sensitive":
+S5_GREP_CANDIDATE_58_END :: {"line":922,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_59_BEGIN
+            sub_orbit_timing_cadence_sensitive,
+S5_GREP_CANDIDATE_59_END :: {"line":923,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_60_BEGIN
+        "window_fine_structure_cadence_sensitive":
+S5_GREP_CANDIDATE_60_END :: {"line":924,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_61_BEGIN
+            window_fine_structure_cadence_sensitive,
+S5_GREP_CANDIDATE_61_END :: {"line":925,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_62_BEGIN
+        "candidate_cadences_from_719": LANDED_CADENCES,
+S5_GREP_CANDIDATE_62_END :: {"line":928,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_63_BEGIN
+        "cadences.  For the 176-key family run, DECLARED CONVENTION: observe "
+S5_GREP_CANDIDATE_63_END :: {"line":947,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_64_BEGIN
+        "monitoring_cadence":
+S5_GREP_CANDIDATE_64_END :: {"line":953,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_65_BEGIN
+        "cadence_convention":
+S5_GREP_CANDIDATE_65_END :: {"line":955,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_66_BEGIN
+        "declared_residual_supply_elements": ("cadence", "cutoff"),
+S5_GREP_CANDIDATE_66_END :: {"line":963,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_67_BEGIN
+        + residual_supply["cadence_convention"]
+S5_GREP_CANDIDATE_67_END :: {"line":968,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_68_BEGIN
+            "landed_plural_cadences":
+S5_GREP_CANDIDATE_68_END :: {"line":992,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_69_BEGIN
+                provenance["landed_plural_cadences"],
+S5_GREP_CANDIDATE_69_END :: {"line":993,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_70_BEGIN
+    cadence = cadence_census(rows, primary["acceptance_keys"])
+S5_GREP_CANDIDATE_70_END :: {"line":1016,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_71_BEGIN
+        "selection_existence_cadence_robust": True,
+S5_GREP_CANDIDATE_71_END :: {"line":1018,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_72_BEGIN
+        "orbit_level_moments_cadence_robust": True,
+S5_GREP_CANDIDATE_72_END :: {"line":1019,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_73_BEGIN
+        "sub_orbit_timing_cadence_sensitive": True,
+S5_GREP_CANDIDATE_73_END :: {"line":1020,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_74_BEGIN
+        "window_fine_structure_cadence_sensitive": True,
+S5_GREP_CANDIDATE_74_END :: {"line":1021,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_75_BEGIN
+    cadence_claims_pass = (
+S5_GREP_CANDIDATE_75_END :: {"line":1023,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_76_BEGIN
+        cadence["robustness_split"] == expected_robustness_split
+S5_GREP_CANDIDATE_76_END :: {"line":1024,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_77_BEGIN
+        and not cadence["orbit_recomposition_failures"]
+S5_GREP_CANDIDATE_77_END :: {"line":1025,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_78_BEGIN
+        "CADENCE_CENSUS :: "
+S5_GREP_CANDIDATE_78_END :: {"line":1028,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_79_BEGIN
+        + compact(cadence["candidate_cadences_from_719"])
+S5_GREP_CANDIDATE_79_END :: {"line":1029,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_80_BEGIN
+    for row in cadence["first_acceptance_table"]:
+S5_GREP_CANDIDATE_80_END :: {"line":1031,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_81_BEGIN
+        emit("CADENCE_FIRST_ACCEPTANCE :: " + compact(row))
+S5_GREP_CANDIDATE_81_END :: {"line":1032,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_82_BEGIN
+    for row in cadence["window_structure"]:
+S5_GREP_CANDIDATE_82_END :: {"line":1033,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_83_BEGIN
+        emit("CADENCE_WINDOW_STRUCTURE :: " + compact(row))
+S5_GREP_CANDIDATE_83_END :: {"line":1034,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_84_BEGIN
+    for key, value in cadence["robustness_split"].items():
+S5_GREP_CANDIDATE_84_END :: {"line":1035,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_85_BEGIN
+        "Certificate_B2_cadence_census_and_robustness_split",
+S5_GREP_CANDIDATE_85_END :: {"line":1038,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_86_BEGIN
+        cadence_claims_pass,
+S5_GREP_CANDIDATE_86_END :: {"line":1039,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_87_BEGIN
+        cadence,
+S5_GREP_CANDIDATE_87_END :: {"line":1040,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_88_BEGIN
+    cadence_rerun = cadence_census(rows, primary["acceptance_keys"])
+S5_GREP_CANDIDATE_88_END :: {"line":1127,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_89_BEGIN
+    cadence_deterministic = cadence == cadence_rerun
+S5_GREP_CANDIDATE_89_END :: {"line":1136,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_90_BEGIN
+    deterministic = family_deterministic and cadence_deterministic
+S5_GREP_CANDIDATE_90_END :: {"line":1137,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_91_BEGIN
+    if not cadence_claims_pass:
+S5_GREP_CANDIDATE_91_END :: {"line":1237,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_92_BEGIN
+                "surface": "cadence_robustness_split",
+S5_GREP_CANDIDATE_92_END :: {"line":1240,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_93_BEGIN
+                "actual": cadence,
+S5_GREP_CANDIDATE_93_END :: {"line":1242,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_94_BEGIN
+                "cadence_deterministic": cadence_deterministic,
+S5_GREP_CANDIDATE_94_END :: {"line":1252,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_95_BEGIN
+        and cadence_claims_pass
+S5_GREP_CANDIDATE_95_END :: {"line":1261,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_96_BEGIN
+        and cadence["robustness_split"][
+S5_GREP_CANDIDATE_96_END :: {"line":1262,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_97_BEGIN
+            "selection_existence_cadence_robust"
+S5_GREP_CANDIDATE_97_END :: {"line":1263,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_98_BEGIN
+        and cadence["robustness_split"][
+S5_GREP_CANDIDATE_98_END :: {"line":1265,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_99_BEGIN
+            "orbit_level_moments_cadence_robust"
+S5_GREP_CANDIDATE_99_END :: {"line":1266,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_100_BEGIN
+        cadence["robustness_split"][
+S5_GREP_CANDIDATE_100_END :: {"line":1270,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_101_BEGIN
+            "sub_orbit_timing_cadence_sensitive"
+S5_GREP_CANDIDATE_101_END :: {"line":1271,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_102_BEGIN
+        or cadence["robustness_split"][
+S5_GREP_CANDIDATE_102_END :: {"line":1273,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_103_BEGIN
+            "window_fine_structure_cadence_sensitive"
+S5_GREP_CANDIDATE_103_END :: {"line":1274,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_104_BEGIN
+        "CONSTRUCTED_WITH_CADENCE_CONVENTION"
+S5_GREP_CANDIDATE_104_END :: {"line":1283,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_105_BEGIN
+            "robustness_split": cadence["robustness_split"],
+S5_GREP_CANDIDATE_105_END :: {"line":1301,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_106_BEGIN
+                residual_supply["cadence_convention"],
+S5_GREP_CANDIDATE_106_END :: {"line":1306,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_107_BEGIN
+            "axiom_update_triggered": False,
+S5_GREP_CANDIDATE_107_END :: {"line":1313,"module":"Cycle796:pinned","ruling":"TEXTUAL MENTION ONLY; not executable formation"}
+S5_GREP_CANDIDATE_108_BEGIN
+    emit("axiom_update_triggered: false")
+S5_GREP_CANDIDATE_108_END :: {"line":1320,"module":"Cycle796:pinned","ruling":"TEXTUAL MENTION ONLY; not executable formation"}
+S5_GREP_CANDIDATE_109_BEGIN
+            "robustness_split": cadence["robustness_split"],
+S5_GREP_CANDIDATE_109_END :: {"line":1332,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_110_BEGIN
+        and cadence_claims_pass
+S5_GREP_CANDIDATE_110_END :: {"line":1350,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_111_BEGIN
+        and cadence_deterministic
+S5_GREP_CANDIDATE_111_END :: {"line":1351,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_112_BEGIN
+        ] == ("cadence", "cutoff")
+S5_GREP_CANDIDATE_112_END :: {"line":1354,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_113_BEGIN
+            "monitoring_cadence":
+S5_GREP_CANDIDATE_113_END :: {"line":1363,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_114_BEGIN
+                residual_supply["monitoring_cadence"],
+S5_GREP_CANDIDATE_114_END :: {"line":1364,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_115_BEGIN
+            "residual_supply_surface": ("cadence", "cutoff"),
+S5_GREP_CANDIDATE_115_END :: {"line":1365,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_116_BEGIN
+            "cadence_deterministic": cadence_deterministic,
+S5_GREP_CANDIDATE_116_END :: {"line":1370,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_117_BEGIN
+        "robustness_split": cadence["robustness_split"],
+S5_GREP_CANDIDATE_117_END :: {"line":1396,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_118_BEGIN
+        "cadence_first_acceptance_table":
+S5_GREP_CANDIDATE_118_END :: {"line":1397,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_119_BEGIN
+            cadence["first_acceptance_table"],
+S5_GREP_CANDIDATE_119_END :: {"line":1398,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_120_BEGIN
+        "cadence_window_structure": cadence["window_structure"],
+S5_GREP_CANDIDATE_120_END :: {"line":1399,"module":"Cycle796:pinned","ruling":"OBSERVATION-CADENCE METADATA/LOGIC; not formation"}
+S5_GREP_CANDIDATE_121_BEGIN
+        "axiom_update_triggered": False,
+S5_GREP_CANDIDATE_121_END :: {"line":1401,"module":"Cycle796:pinned","ruling":"TEXTUAL MENTION ONLY; not executable formation"}
+PASS S5_TWO_INDEPENDENT_FREEDOM_AXES_AND_RETRACTION :: {"AST_formation_triggers":[],"AST_scans":[{"broad_candidates":[],"formation_triggers":[],"module":"Cycle750"},{"broad_candidates":[],"formation_triggers":[],"module":"Cycle758"},{"broad_candidates":[],"formation_triggers":[],"module":"Cycle792"},{"broad_candidates":[{"identifier":"LANDED_CADENCES","kind":"assignment","line":59},{"identifier":"cadence_probe_for_key","kind":"function","line":677},{"identifier":"cadence_census","kind":"function","line":816},{"identifier":"landed_plural_cadences","kind":"assignment","line":323},{"identifier":"cadence_names","kind":"assignment","line":693},{"identifier":"cadence_names","kind":"assignment","line":841},{"identifier":"selection_existence_cadence_robust","kind":"assignment","line":867},{"identifier":"orbit_level_moments_cadence_robust","kind":"assignment","line":879},{"identifier":"sub_orbit_timing_cadence_sensitive","kind":"assignment","line":887},{"identifier":"window_fine_structure_cadence_sensitive","kind":"assignment","line":903},{"identifier":"cadence","kind":"assignment","line":1016},{"identifier":"cadence_claims_pass","kind":"assignment","line":1023},{"identifier":"cadence_rerun","kind":"assignment","line":1127},{"identifier":"cadence_deterministic","kind":"assignment","line":1136},{"identifier":"cadence_census","kind":"call","line":1016},{"identifier":"cadence_census","kind":"call","line":1127},{"identifier":"first,cadence","kind":"assignment","line":713},{"identifier":"cadence_probe_for_key","kind":"call","line":834}],"formation_triggers":[],"module":"Cycle796:pinned"}],"candidate_pass":true,"different_formation_records":true,"grep_candidate_count":122,"grep_formation_trigger_hits":[],"independent_axes_witness":true,"lawful_composite_setting_A":{"Record_axiom_compatibility":{"Records_form":true,"exactly_one_admissible_possibility":true,"one_record_at_site":true,"permanent":true},"cadence_axis":"orbit_return_boundary","formation_records":["d5c1d153891b6f4b0e7556ea6d24d50ae69ce0dc8541a4767bd5255ace51e641"],"which_selection_becomes_record_axis":["two-bank single-source event 0"]},"lawful_composite_setting_B":{"Record_axiom_compatibility":{"Records_form":true,"exactly_one_admissible_possibility":true,"one_record_at_site":true,"permanent":true},"cadence_axis":"orbit_return_boundary","formation_records":["7925ef04f5a1b37758c926c17641d1d3ffacbcb75b6e23b7bb8ee3081b94779b"],"which_selection_becomes_record_axis":["two-bank single-source event 1"]},"no_landed_module_schedules_formation":true,"primary_v2_freedom_claim":"The evaluation cadence and the formation-site schedule are independent freedom axes.","primary_v2_one_shared_freedom_claim":"RETRACTED","primary_v2_witness_record_sha256":["d5c1d153891b6f4b0e7556ea6d24d50ae69ce0dc8541a4767bd5255ace51e641","7925ef04f5a1b37758c926c17641d1d3ffacbcb75b6e23b7bb8ee3081b94779b"],"ruling":"No scanned landed module schedules formation, but that absence does not identify cadence with record occurrence. Holding orbit-return cadence fixed leaves at least two axiom-compatible choices of which landed single-source selection becomes a record, and the record contents differ. They are independent axes; v2 adopts this witness and retracts 'one shared freedom'.","settings_differ_on_only_which_selection_axis":true,"single_source_event_0":{"conditions":{"clean_postimage":true,"literal_inverse":true,"synchronous_law":true,"token_rail_return":true},"direction":[1,0],"event":0,"record_content_sha256":"d5c1d153891b6f4b0e7556ea6d24d50ae69ce0dc8541a4767bd5255ace51e641","selected_positions":[0]},"single_source_event_1":{"conditions":{"clean_postimage":true,"literal_inverse":true,"synchronous_law":true,"token_rail_return":true},"direction":[0,1],"event":1,"record_content_sha256":"7925ef04f5a1b37758c926c17641d1d3ffacbcb75b6e23b7bb8ee3081b94779b","selected_positions":[0]}}
+PASS CONTROLS_SHA_BLOCKLIST_DETERMINISM_PATHS_AND_BOUNDS :: {"all_paths_existing":true,"blocklisted_primary_text_AST_only":{"forbidden_runtime_calls":[],"pass":true,"primary_imported_by_AST":false,"primary_present_in_sys_modules":false},"determinism_sha256":"a62fdf483c7d0f7b6f8809433646606f1619749cca2e9145ffe07c6b1bb69580","deterministic":true,"disk_sha256":{"docs/MINIMAL_AXIOMS_2026-06-29.md":"fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4","scripts/frontier_cycle736_pairwise_separated_multisource_2026_07_28.py":"50059ce4d4d6e5ce4503e66ccb098f6fe663ad9711b106b6b6c5c9cb7bcbd02f","scripts/frontier_cycle750_actual_selector_stretch_2026_07_28.py":"a74c7e5bbc297c57d317af7fd85d0b9e01d078625f5d4689daf2ebbdbc1cee0a","scripts/frontier_cycle758_selector_multisource_2026_07_28.py":"8be433f74cb337c322bcb1e2f46007244d708a41c946cb83b7ccd61004176241","scripts/frontier_cycle792_extended_horizon_selector_2026_07_28.py":"7f7470b3d759c84ccc0c2c6559d62448340fb8a0b0915eb98d450635a72730df","scripts/frontier_cycle804_derivation_candidate_2026_07_28.py":"451fb3f5d9eaf975e6b2ccdc248f66170805bc6e80da8dcc186a68379097cfc7"},"expected_disk_sha256":{"docs/MINIMAL_AXIOMS_2026-06-29.md":"fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py":"0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4","scripts/frontier_cycle736_pairwise_separated_multisource_2026_07_28.py":"50059ce4d4d6e5ce4503e66ccb098f6fe663ad9711b106b6b6c5c9cb7bcbd02f","scripts/frontier_cycle750_actual_selector_stretch_2026_07_28.py":"a74c7e5bbc297c57d317af7fd85d0b9e01d078625f5d4689daf2ebbdbc1cee0a","scripts/frontier_cycle758_selector_multisource_2026_07_28.py":"8be433f74cb337c322bcb1e2f46007244d708a41c946cb83b7ccd61004176241","scripts/frontier_cycle792_extended_horizon_selector_2026_07_28.py":"7f7470b3d759c84ccc0c2c6559d62448340fb8a0b0915eb98d450635a72730df","scripts/frontier_cycle804_derivation_candidate_2026_07_28.py":"451fb3f5d9eaf975e6b2ccdc248f66170805bc6e80da8dcc186a68379097cfc7"},"files_beyond_primary":{"pinned_git":1,"total":7,"worktree_disk":6},"literal_AUDIT_INPUT_PATHS":true,"pinned_796":{"commit":"4c12650f038de545e60f2d8c62bd303a0d360a84","path":"scripts/frontier_cycle796_monitored_selector_2026_07_28.py","sha256":"be0238611e02f9bad8df813430f9decec68d287df267bbf82ba4a63ffc8483c3"},"projected_stdout_bytes":56865,"runtime_limit_seconds":1200,"runtime_seconds":66.134672,"sources_unchanged":true,"stdout_limit_bytes":153600}
+OVERALL_RULING :: {"attack_outcomes":{"S1":true,"S2":true,"S3":true,"S4":true,"S5":true},"checker_completed_cleanly":true,"overall_ruling":"CANDIDATE_SURVIVES","refuted_steps":[],"report_sha256":"9ac87ad9058aea4a23bddf0e1d0e4f403f72ebb4a8355f1970a3060ce4e99a0c","runtime_seconds":66.138836,"wording_refuted_sentence":null}
+CYCLE804_INDEPENDENT_CHECK_COMPLETE_CANDIDATE_SURVIVES
+
+----- stderr -----
+

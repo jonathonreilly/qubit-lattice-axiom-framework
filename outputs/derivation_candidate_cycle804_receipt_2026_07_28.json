@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC16-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle804_candidate_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle804_derivation_candidate_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 7
+    }
+  },
+  "checker_corrections_adopted": [
+    "S1: axiom text contains global clause 'Records form.' \u2014 occurrence asserted; only scheduling open (formation_asserted_globally true; formation_forced_for_any_epoch false)",
+    "S2: provenance split \u2014 4 of 7 battery conditions explicit on 758-raw surface; 3 assembled at 792/796; identification scoped to 792/796",
+    "S5: one-shared-freedom claim RETRACTED; independence witness (fixed cadence, event-0 vs event-1 formation -> distinct lawful records) reproduced in primary \u2014 two independent axes"
+  ],
+  "checker_refreeze": "attack computations unchanged; pinned expectation constants re-frozen to v2 claims (primary sha + claim-text pins)",
+  "claim_type": "bounded_theorem",
+  "cycle": 804,
+  "files": {
+    "docs/DERIVATION_CANDIDATE_CYCLE804_BOUNDED_THEOREM_NOTE_2026-07-28.md": "8769c556213f2fe1337e672b60a95f6c44b6bb739d5154f2a9af713b08eb99d8",
+    "logs/runner-cache/frontier_cycle804_candidate_independent_check_2026_07_28.txt": "e3d9349f2aa7a97d19ee2ee0c38d0dcb07984db55c8c5193d346db677975fc4b",
+    "logs/runner-cache/frontier_cycle804_derivation_candidate_2026_07_28.txt": "8fe74f36a22b145950298479dbb241acbcef8f953fa83fb75db22a5389ac3a16",
+    "scripts/frontier_cycle804_candidate_independent_check_2026_07_28.py": "d53d1253c6cbb22c9b6238a5133166676f27ffb6097922eb831b18779c5e89c7",
+    "scripts/frontier_cycle804_derivation_candidate_2026_07_28.py": "451fb3f5d9eaf975e6b2ccdc248f66170805bc6e80da8dcc186a68379097cfc7"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "CYCLE804_DERIVATION_CANDIDATE_PASS (v2, checker-corrected at S1/S2/S5)",
+    "CANDIDATE_SURVIVES"
+  ]
+}

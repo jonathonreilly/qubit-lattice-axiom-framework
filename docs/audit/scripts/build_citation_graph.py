@@ -208,6 +208,11 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "pairwise_separated_multisource_cycle736_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle736_multisource_independent_check_2026_07_28.py",
     ],
+    # Cycle 737's independent checker requires a fresh passing primary, then
+    # evaluates the primary's exported literal gates without importing it.
+    "ring_family_uniformity_cycle737_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle737_ring_family_independent_check_2026_07_28.py",
+    ],
     # Cycle 753's checker imports neither the primary nor the proposal-only
     # Cycle 732 executable. It independently reconstructs the fixed target,
     # exact counts, small word spaces, and Prüfer families, then executes the

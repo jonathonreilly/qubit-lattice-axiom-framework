@@ -74,6 +74,11 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "pairwise_separated_multisource_cycle736_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle736_multisource_independent_check_2026_07_28.py",
     ],
+    # Cycle 737's independent checker requires a fresh passing primary, then
+    # evaluates the primary's exported literal gates without importing it.
+    "ring_family_uniformity_cycle737_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle737_ring_family_independent_check_2026_07_28.py",
+    ],
     # Cycle 820 keeps its independent tuple/bit-vector reconstruction outside
     # the primary import closure; include it claim-scoped in audit packets.
     "full128_two_cell_parity_superselected_even_car_covariance_cycle820_bounded_theorem_note_2026-07-30": [

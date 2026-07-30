@@ -1,67 +1,166 @@
 {
   "artifacts": {
+    "audit_compatibility": {
+      "canonical_harness_index_sha256": "8da0e498cad8a23862f4ba420bc13ccfe0589fad39b3c758f777c46e9603d012",
+      "citation_graph_builder_sha256": "3b68e40e2987fa497a39b31356f0b65c2fbd0526fa18f6cf1b128861a9c238f0",
+      "citation_graph_manifest_sha256": "6268e7de381f36491ef3aa1768b0133943703d9bd7cfb1875636b90a046b425d",
+      "focused_pipeline_tests_sha256": "54f912e3d841395382841917204b9bbfcaa37bda4556c21bd849d936e94f6783",
+      "packet_dependency_resolver_sha256": "bc72a0d738c3bbd802f07519d8dbc077905ef1d8aa06b2a02ca2f1ed3ba90bc7"
+    },
     "caches": {
-      "frontier_cycle737_ring_family_independent_check_2026_07_28.txt": "1271ea0d17d0983c5eecf9cb235c5f3623092b8ca3e99a71279eaf544cb57f80",
-      "frontier_cycle737_ring_family_uniformity_2026_07_28.txt": "3c170781a6b04586bfebd7e311db7c85bd6f0e684491413e17459cd09991d00f"
+      "frontier_cycle737_ring_family_independent_check_2026_07_28.txt": {
+        "input_fingerprint_sha256": "87befdf81d71d199cf4a2aa3cc06451875ee4e65fa5a156ca6bbb8a93e5efdb0",
+        "sha256": "9f836150093bad54c65477b655407e25be8ca72eee702402432ae70b688518b1",
+        "status": "fresh"
+      },
+      "frontier_cycle737_ring_family_uniformity_2026_07_28.txt": {
+        "input_fingerprint_sha256": "1a6a69b7b07f4ea5760941b5fa8ef1ed2eced33dd011e7352819279e749968a8",
+        "sha256": "58459e2477e766268147cbdc5c6561fc6c5d07f02c5567371c3b91fd0d219b25",
+        "status": "fresh"
+      }
     },
     "note": {
       "path": "docs/RING_FAMILY_UNIFORMITY_CYCLE737_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "58a71995f41b7f28c0a41e67524220187aabe99e37b064c0b8703b883243df95"
+      "sha256": "5236edb769d1e99a8fbff604052362ae6909de84cce84eaf495efcebb329b79b"
     },
     "runners": {
-      "frontier_cycle737_ring_family_independent_check_2026_07_28.py": "117e889be2491b6d8cf3dfbc38544a19b746d426f9a9b6001f7258ef5f165222",
-      "frontier_cycle737_ring_family_uniformity_2026_07_28.py": "8d29a560f5502b71295686c9ab5bf26f07d70a03eb9ed9f592dae487c694faf5"
+      "frontier_cycle737_ring_family_independent_check_2026_07_28.py": "052a42b02663ad6aca885fbf3f366c98a9d510e9efc1877399af584a7d905250",
+      "frontier_cycle737_ring_family_uniformity_2026_07_28.py": "8c18d385e5deba3edf717390e0b078658a91b1d3d6c2274ef411e043087b99ac"
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
-    "admissibility_law": "n = 8b - 5 for positive integer bank count b",
-    "axiom_pressure": false,
-    "fixed_supplies": "the bank count b per family member; held program content and order per ring; held data genesis with clean auxiliaries; lawful charge-reference rows with h = k mod 2 and expected_count = k; Q-before-R layer order; the configuration as an external parameter",
-    "frozen_n_dependence": null,
-    "general_n_theorem_claimed": false,
-    "not_derived": "b >= 5 rings and an inductive general-n theorem (the family-uniform statement is four exhaustive theorems, not an induction); W4 renewal; adjacent-pair control; no time/Record/Born/source content",
-    "positive_scope": "the admissibility law n = 8b - 5 derived from the controller's own program/bank arithmetic (station-kind decomposition verified; n=5 fails the integer-bank divisibility requirement); per-n Lucas census equalities (4/199/9349/439204); template exactness and covariance per n; complete count-k enforcement grids; exhaustive invariant-checked lawful orbits at all four rings (12/2,189/177,631/11,858,508 steps, zero violations); near-miss boundary controls at every n",
-    "ring_family": [
-      3,
-      11,
-      19,
-      27
-    ],
-    "sector_theorem_uniform_over_family": true
+    "adjacency_wall_or_no_go": "not claimed",
+    "autonomous_preparation": "not claimed",
+    "bare_word": "reversible-circuit diagnostic only; no independent semantic data target is supplied",
+    "constructor_identity": "len(K.interleaved_program(b)) = 8b - 5 for the supplied non-padded code constructor",
+    "constructor_uniqueness": "not claimed",
+    "controller_lawfulness": "not claimed",
+    "family_uniformity": "not claimed",
+    "framework_admissibility": "not claimed",
+    "full_guarded_word": "not executed or claimed",
+    "n3_multi_token_scope": "degenerate: only the empty mask and three one-token masks",
+    "selected_fixtures": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        19
+      ],
+      [
+        4,
+        27
+      ]
+    ]
   },
   "checks": {
+    "focused_audit_pipeline_tests": "2/2",
     "independent_named_checks_failed": 0,
-    "independent_named_checks_passed": 18,
-    "primary_named_checks_passed": 26
+    "independent_named_checks_passed": 19,
+    "primary_named_checks_failed": 0,
+    "primary_named_checks_passed": 17
   },
   "claim_type": "bounded_theorem",
   "cycle": 737,
-  "date": "2026-07-29",
+  "date": "2026-07-28",
   "result": {
-    "admissibility": "n = 8b - 5, b = 1..4; station kinds: source 1 + banks b + crosses (b-1) + forward 3(b-1) + reverse 3(b-1) + finalizer 1",
-    "census_totals": {
-      "11": 199,
-      "19": 9349,
-      "27": 439204,
-      "3": 4
+    "audit_packet": {
+      "canonical_harness_row": true,
+      "citation_graph_dependencies": 7,
+      "citation_graph_edge_count": 15313,
+      "citation_graph_node_count": 4602,
+      "independent_checker_registered_in_both_maps": true
     },
-    "checker_distance_pair_checks_n27": 300275100,
-    "frozen_n_dependence": null,
-    "orbit_step_totals": {
-      "11": 2189,
-      "19": 177631,
-      "27": 11858508,
+    "bare_transport_diagnostics": {
+      "configuration_steps": {
+        "11": 2189,
+        "19": 177631,
+        "27": 11858508,
+        "3": 12
+      },
+      "inverse_or_rail_failures": 0
+    },
+    "constructor": {
+      "b5_program_stations": 35,
+      "identity": "8b - 5",
+      "witness_bank_counts": "1..8"
+    },
+    "count_comparator_prefix": {
+      "matching_accepts": {
+        "11": 199,
+        "19": 9349,
+        "27": 439204,
+        "3": 4
+      },
+      "off_diagonal_refusals": {
+        "11": 995,
+        "19": 84141,
+        "27": 5709652,
+        "3": 4
+      },
+      "reversals": {
+        "11": 1194,
+        "19": 93490,
+        "27": 6148856,
+        "3": 8
+      }
+    },
+    "cycle_graph_counts_by_k": {
+      "11": [
+        1,
+        11,
+        44,
+        77,
+        55,
+        11
+      ],
+      "19": [
+        1,
+        19,
+        152,
+        665,
+        1729,
+        2717,
+        2508,
+        1254,
+        285,
+        19
+      ],
+      "27": [
+        1,
+        27,
+        324,
+        2277,
+        10395,
+        32319,
+        69768,
+        104652,
+        107406,
+        72930,
+        30888,
+        7371,
+        819,
+        27
+      ],
+      "3": [
+        1,
+        3
+      ]
+    },
+    "gauge_normalized_covariance_identities": {
+      "11": 649,
+      "19": 3401,
+      "27": 9801,
       "3": 12
     },
-    "ring_family": [
-      3,
-      11,
-      19,
-      27
-    ],
-    "violations_all_rings": 0
+    "marked_edge_reference_failures": 0
   },
-  "status": "CYCLE737_RING_FAMILY_UNIFORMITY_PASS"
+  "status": "CYCLE737_SELECTED_CONSTRUCTOR_CENSUS_DIAGNOSTICS_PASS"
 }

@@ -1,6 +1,6 @@
 {
- "edge_count": 15338,
- "node_count": 4606,
+ "edge_count": 15346,
+ "node_count": 4607,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1619,8 +1619,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "d2c5da278fe5",
-   "out_degree": 332
+   "deps_hash": "a86a1581f0d6",
+   "out_degree": 333
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -12641,6 +12641,10 @@
   "rh_sector_anomaly_cancellation_identities_note_2026-05-02": {
    "deps_hash": "785ba75e68d8",
    "out_degree": 5
+  },
+  "ring_family_uniformity_cycle737_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "f38aec7a66e3",
+   "out_degree": 7
   },
   "ring_monodromy_does_not_force_car_note_2026-06-04": {
    "deps_hash": "249b8e8adb93",

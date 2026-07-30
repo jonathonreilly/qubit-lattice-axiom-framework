@@ -16,12 +16,12 @@ file per claim), summarized in
 
 | Metric | Value |
 |---|---:|
-| Retained positive rows | 126 |
+| Retained positive rows | 127 |
 | Retained bounded rows | 357 |
 | Retained no-go rows | 0 |
 | Boxed decorations under retained parents | 33 |
 
-## Retained positive rows (126)
+## Retained positive rows (127)
 
 Sorted by load-bearing graph score (descending).
 
@@ -88,6 +88,7 @@ Sorted by load-bearing graph score (descending).
 - [`fifth_family_complex_boundary_note`](../../docs/FIFTH_FAMILY_COMPLEX_BOUNDARY_NOTE.md) — score 7.585; audited 2026-06-10T03:26:11.088428+00:00
 - [`electrostatics_card_note`](../../docs/ELECTROSTATICS_CARD_NOTE.md) — score 7.522; audited 2026-05-04T23:50:38.970936+00:00
 - [`higgs_mechanism_note`](../../docs/HIGGS_MECHANISM_NOTE.md) — score 7.085; audited 2026-07-25T06:58:31.922115+00:00
+- [`universal_gr_casimir_block_localization_note`](../../docs/UNIVERSAL_GR_CASIMIR_BLOCK_LOCALIZATION_NOTE.md) — score 7.085; audited 2026-07-30T03:32:16.815335+00:00
 - [`block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02`](../../docs/BLOCK_GAUSSIAN_SCHUR_MARGINALIZATION_NARROW_THEOREM_NOTE_2026-05-02.md) — score 7.066; audited 2026-05-05T11:20:25.074219+00:00
 - [`q_integer_spectrum_theorem_note_2026-05-02`](../../docs/Q_INTEGER_SPECTRUM_THEOREM_NOTE_2026-05-02.md) — score 7.055; audited 2026-07-25T09:23:16.757186+00:00
 - [`electrostatics_superposition_proxy_note`](../../docs/ELECTROSTATICS_SUPERPOSITION_PROXY_NOTE.md) — score 7.022; audited 2026-05-04T23:52:26.154523+00:00

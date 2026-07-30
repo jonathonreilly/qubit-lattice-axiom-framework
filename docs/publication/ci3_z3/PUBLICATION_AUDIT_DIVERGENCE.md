@@ -19,7 +19,7 @@ publication tables phrase it.
 |---|---|---:|
 | critical | `unaudited` | 225 |
 | high | `unaudited` | 164 |
-| medium | `unaudited` | 109 |
+| medium | `unaudited` | 108 |
 | critical | `audited_conditional` | 14 |
 | medium | `audited_conditional` | 9 |
 | high | `audited_conditional` | 5 |
@@ -35,7 +35,7 @@ publication tables phrase it.
 | medium | `audited_numerical_match` | 1 |
 | medium | `audited_renaming` | 1 |
 
-**Total non-retained-grade rows in publication tables:** 546
+**Total non-retained-grade rows in publication tables:** 545
 
 ## Per-row breakdown
 
@@ -571,7 +571,6 @@ publication tables phrase it.
 | medium | `translation_covariance_local_op_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `u1_fermion_number_conservation_theorem_note_2026-05-02` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `universal_gr_block_constraint_interpretation_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
-| medium | `universal_gr_casimir_block_localization_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |
 | medium | `universal_qg_continuum_bridge_reduction_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md, DERIVATION_VALIDATION_MAP.md |
 | medium | `up_sector_partition_revisit_note_2026-04-19` | `unaudited` | `unaudited` | DERIVATION_VALIDATION_MAP.md, RESULTS_INDEX.md |
 | medium | `wave_retarded_gravity_note` | `unaudited` | `unaudited` | DERIVATION_ATLAS.md |

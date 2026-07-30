@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Cycle 728 bounded audit of the amended controller/BKSF holonomy convention.
+"""Bounded finite-ring check of a declared marked-edge GF(2) row system.
 
-The amended local rows audited here are exactly
+The local rows checked here are exactly
 
     L_s    = A_s XOR B_s XOR ref_s XOR ref_(s+1),       s != s*
     L_{s*} = A_s XOR B_s XOR ref_s XOR ref_(s+1) XOR h.
 
 Here s* is the lexicographically first ring edge and h is one declared supplied
-register.  The original chained-agreement proposal remains frozen below as a
-refutation/self-correction record: on a closed ring it is a size-parity
-constant, not a holonomy degree of freedom.
+auxiliary bit.  The original chained-agreement proposal remains below as a
+correction record: on a closed ring it is the state-independent affine
+constant ``n mod 2``, not a variable reference degree of freedom.  The edge
+choice and any "holonomy" or controller-level interpretation are not derived.
 """
 
 from __future__ import annotations
@@ -25,9 +26,62 @@ from time import perf_counter
 
 AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = "docs/BKSF_HOLONOMY_COMPRESSION_CYCLE728_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+K_INPUT_PATH = "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py"
+G703_INPUT_PATH = "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py"
 AUDIT_INPUT_PATHS = (
-    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
     "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
@@ -112,8 +166,8 @@ FROZEN_EXHAUSTIVE_RESULT_CENSUS = (
     ("telescope_failures", 0),
     ("local_satisfied_states", 2048),
     ("local_satisfied_even_token_states", 2048),
-    ("local_satisfied_token_holonomy_matches", 0),
-    ("token_parity_equals_holonomy_states", 2097152),
+    ("local_satisfied_token_agreement_expression_matches", 0),
+    ("token_parity_equals_agreement_expression_states", 2097152),
     ("exact_sector_separation_failures", 2099200),
 )
 FROZEN_AMENDED_H_SECTOR_CENSUS = (
@@ -146,7 +200,7 @@ FROZEN_AMENDED_H_SECTOR_CENSUS = (
         ("satisfying_reference_extensions", 4194304),
     ),
 )
-FROZEN_HOLONOMY_CENSUS = (
+FROZEN_CHAINED_REFERENCE_CENSUS = (
     (
         ("stations", 10),
         ("reference_states", 1024),
@@ -222,15 +276,16 @@ FROZEN_RADIUS1_WINDOW_CENSUS = (
     ("marked_edge", (0, 1)),
     ("radius", 1),
     ("windows_excluding_marked_edge", 9),
-    ("windows_with_indistinguishable_witness", 9),
+    ("windows_with_window_specific_indistinguishable_witness", 9),
     ("rail_ref_bits_per_window", 9),
     ("maximum_observed_bit_differences", 0),
     ("minimum_token_flip_distance", 2),
     ("representative_window_center", 8),
     ("representative_window_sites", (7, 8, 9)),
+    ("representative_pair_indistinguishable_windows", 7),
 )
 EXHAUSTIVE_SEED = b"cycle728-bksf-holonomy-compression-ring11"
-STDOUT_LIMIT_BYTES = 150 * 1024
+STDOUT_LIMIT_BYTES = 20_000
 
 
 OUTPUT_LINES: list[str] = []
@@ -238,7 +293,7 @@ CHECKS: dict[str, bool] = {}
 CHECK_DETAILS: dict[str, object] = {}
 
 
-def compact(value: object, limit: int = 900) -> str:
+def compact(value: object, limit: int = 180) -> str:
     rendered = json.dumps(value, sort_keys=True, default=str, separators=(",", ":"))
     if len(rendered) <= limit:
         return rendered
@@ -327,7 +382,7 @@ def token_parity(a: int, b: int) -> int:
     return (a ^ b).bit_count() & 1
 
 
-def literal_agreement_holonomy(refs: int, stations: int) -> int:
+def chained_agreement_expression(refs: int, stations: int) -> int:
     """XOR of XNOR(ref_s, ref_(s+1)) around the ring."""
 
     mask = (1 << stations) - 1
@@ -336,7 +391,7 @@ def literal_agreement_holonomy(refs: int, stations: int) -> int:
     return agreements.bit_count() & 1
 
 
-def consecutive_disagreement_holonomy(refs: int, stations: int) -> int:
+def closed_ring_difference_coboundary(refs: int, stations: int) -> int:
     """XOR of ref_s XOR ref_(s+1), included to close terminology ambiguity."""
 
     disagreements = refs ^ rotate_to_next_source(refs, stations)
@@ -347,7 +402,7 @@ def candidate_reference_global_bit(refs: int) -> int:
     """A nonlocal candidate distinguished by the frozen complement witness.
 
     This is reported only as a diagnostic.  It is not substituted for the
-    requested consecutive-agreement holonomy.
+    proposed consecutive-agreement expression.
     """
 
     return refs.bit_count() & 1
@@ -424,7 +479,7 @@ def verify_pullback_law(
     stations: int,
     frozen_law: tuple[tuple[str, int], ...],
 ) -> int:
-    """Basis-exact verification; all audited expressions are GF(2)-linear."""
+    """Basis-exact verification; all checked expressions are GF(2)-linear."""
 
     failures = 0
     for kind in ("A", "B", "ref"):
@@ -679,14 +734,14 @@ def exhaustive_ring11() -> dict[str, object]:
     marked = marked_station(stations)
     refs = seeded_refs(stations)
     ref_boundary = refs ^ rotate_to_next_source(refs, stations)
-    holonomy = literal_agreement_holonomy(refs, stations)
+    agreement_value = chained_agreement_expression(refs, stations)
     total = 1 << (2 * stations)
     telescope_failures = 0
     local_satisfied = 0
     local_satisfied_even_token = 0
-    local_satisfied_holonomy_matches = 0
+    local_satisfied_agreement_matches = 0
     exact_sector_separation_failures = 0
-    parity_holonomy_states = 0
+    parity_agreement_states = 0
     amended_by_h = [
         {
             "h": h,
@@ -712,11 +767,11 @@ def exhaustive_ring11() -> dict[str, object]:
         expected_telescope = token_parity(a, b)
         telescope_failures += observed_telescope != expected_telescope
         all_local = syndrome == 0
-        lawful_parity = expected_telescope == holonomy
+        lawful_parity = expected_telescope == agreement_value
         local_satisfied += all_local
         local_satisfied_even_token += all_local and expected_telescope == 0
-        local_satisfied_holonomy_matches += all_local and lawful_parity
-        parity_holonomy_states += lawful_parity
+        local_satisfied_agreement_matches += all_local and lawful_parity
+        parity_agreement_states += lawful_parity
         exact_sector_separation_failures += all_local != lawful_parity
         canonical_refs, closure_obstruction = canonical_reference_extension(
             a, b, expected_telescope, stations
@@ -774,12 +829,14 @@ def exhaustive_ring11() -> dict[str, object]:
         "enumeration": dict(FROZEN_ENUMERATION_CENSUS),
         "seed_sha256": sha256(EXHAUSTIVE_SEED).hexdigest(),
         "refs_mask": refs,
-        "literal_agreement_holonomy": holonomy,
+        "chained_agreement_expression": agreement_value,
         "telescope_failures": telescope_failures,
         "local_satisfied_states": local_satisfied,
         "local_satisfied_even_token_states": local_satisfied_even_token,
-        "local_satisfied_token_holonomy_matches": local_satisfied_holonomy_matches,
-        "token_parity_equals_holonomy_states": parity_holonomy_states,
+        "local_satisfied_token_agreement_expression_matches": (
+            local_satisfied_agreement_matches
+        ),
+        "token_parity_equals_agreement_expression_states": parity_agreement_states,
         "exact_sector_separation_failures": exact_sector_separation_failures,
         "amended_by_h": tuple(amended_by_h),
     }
@@ -924,7 +981,7 @@ def frozen_witness_result() -> dict[str, object]:
                     stations,
                 ),
                 "token_parity": token_parity(state["A_mask"], state["B_mask"]),
-                "literal_agreement_holonomy": literal_agreement_holonomy(
+                "chained_agreement_expression": chained_agreement_expression(
                     state["refs_mask"], stations
                 ),
                 "candidate_reference_global_bit": candidate_reference_global_bit(
@@ -938,8 +995,10 @@ def frozen_witness_result() -> dict[str, object]:
         "every_local_row_identical": rows[0]["local_syndrome_mask"]
         == rows[1]["local_syndrome_mask"],
         "every_local_row_satisfied": all(row["local_syndrome_mask"] == 0 for row in rows),
-        "literal_agreement_holonomy_differs": rows[0]["literal_agreement_holonomy"]
-        != rows[1]["literal_agreement_holonomy"],
+        "chained_agreement_expression_differs": rows[0][
+            "chained_agreement_expression"
+        ]
+        != rows[1]["chained_agreement_expression"],
         "candidate_reference_global_bit_differs": rows[0]["candidate_reference_global_bit"]
         != rows[1]["candidate_reference_global_bit"],
     }
@@ -1049,13 +1108,33 @@ def marked_edge_witness_result() -> dict[str, object]:
                 ),
             }
         )
+    representative_differences = (
+        states[0]["A_mask"] ^ states[1]["A_mask"],
+        states[0]["B_mask"] ^ states[1]["B_mask"],
+        states[0]["refs_mask"] ^ states[1]["refs_mask"],
+    )
+    representative_window_rows = tuple(
+        {
+            "center": row["center"],
+            "sites": row["sites"],
+            "observed_bit_differences": sum(
+                (difference & sum(1 << site for site in row["sites"])).bit_count()
+                for difference in representative_differences
+            ),
+        }
+        for row in window_rows
+    )
+    representative_indistinguishable_windows = sum(
+        row["observed_bit_differences"] == 0
+        for row in representative_window_rows
+    )
     window_census = (
         ("ring_stations", stations),
         ("marked_edge", edge),
         ("radius", 1),
         ("windows_excluding_marked_edge", len(window_rows)),
         (
-            "windows_with_indistinguishable_witness",
+            "windows_with_window_specific_indistinguishable_witness",
             sum(row["observed_bit_differences"] == 0 for row in window_rows),
         ),
         (
@@ -1072,6 +1151,10 @@ def marked_edge_witness_result() -> dict[str, object]:
         ),
         ("representative_window_center", representative["center"]),
         ("representative_window_sites", representative["sites"]),
+        (
+            "representative_pair_indistinguishable_windows",
+            representative_indistinguishable_windows,
+        ),
     )
     return {
         "derived_pair_matches_frozen_literal": (
@@ -1080,11 +1163,12 @@ def marked_edge_witness_result() -> dict[str, object]:
         "states": states,
         "marked_edge": edge,
         "representative_window": representative,
+        "representative_pair_window_census": representative_window_rows,
         "window_census": window_census,
         "window_census_matches_frozen_literal": (
             window_census == FROZEN_RADIUS1_WINDOW_CENSUS
         ),
-        "every_radius1_window_excluding_marked_edge_has_witness": all(
+        "every_radius1_window_excluding_marked_edge_has_its_own_witness": all(
             row["marked_edge_excluded"]
             and row["all_rows_satisfied"]
             and row["observed_bit_differences"] == 0
@@ -1098,16 +1182,19 @@ def marked_edge_witness_result() -> dict[str, object]:
         "representative_pair_differs_in_token_parity": (
             states[0]["token_parity"] != states[1]["token_parity"]
         ),
+        "representative_pair_indistinguishable_windows": (
+            representative_indistinguishable_windows
+        ),
     }
 
 
-def literal_holonomy_census(stations: int) -> dict[str, object]:
+def chained_reference_census(stations: int) -> dict[str, object]:
     agreement_counts = Counter(
-        literal_agreement_holonomy(refs, stations)
+        chained_agreement_expression(refs, stations)
         for refs in range(1 << stations)
     )
     disagreement_counts = Counter(
-        consecutive_disagreement_holonomy(refs, stations)
+        closed_ring_difference_coboundary(refs, stations)
         for refs in range(1 << stations)
     )
     return {
@@ -1126,7 +1213,7 @@ def literal_holonomy_census(stations: int) -> dict[str, object]:
     }
 
 
-def frozen_holonomy_census_shape(
+def frozen_chained_reference_census_shape(
     row: dict[str, object],
 ) -> tuple[tuple[str, object], ...]:
     return (
@@ -1146,8 +1233,13 @@ def frozen_holonomy_census_shape(
 def render_with_exact_size(report: dict[str, object]) -> tuple[str, int]:
     report["stdout_bytes"] = 0
     for _ in range(20):
-        pretty = json.dumps(report, indent=2, sort_keys=True, default=str)
-        text = "\n".join(OUTPUT_LINES) + "\n" + pretty + "\n"
+        compact_report = json.dumps(
+            report,
+            sort_keys=True,
+            default=str,
+            separators=(",", ":"),
+        )
+        text = "\n".join(OUTPUT_LINES) + "\n" + compact_report + "\n"
         size = len(text.encode())
         if report["stdout_bytes"] == size:
             return text, size
@@ -1160,8 +1252,6 @@ def main() -> int:
     programs = program_rows()
     observed_programs = observed_program_census(programs)
     table = mode_graph_table(programs)
-    for line in table:
-        emit(line)
 
     check(
         "declared_mode_graph_matches_frozen_program_census",
@@ -1498,37 +1588,37 @@ def main() -> int:
         },
     )
 
-    holonomy_10 = literal_holonomy_census(10)
-    holonomy_11 = literal_holonomy_census(11)
-    holonomy_census_frozen = (
-        frozen_holonomy_census_shape(holonomy_10),
-        frozen_holonomy_census_shape(holonomy_11),
-    ) == FROZEN_HOLONOMY_CENSUS
+    chained_10 = chained_reference_census(10)
+    chained_11 = chained_reference_census(11)
+    chained_census_frozen = (
+        frozen_chained_reference_census_shape(chained_10),
+        frozen_chained_reference_census_shape(chained_11),
+    ) == FROZEN_CHAINED_REFERENCE_CENSUS
     check(
-        "consecutive_reference_holonomy_census_matches_frozen_literal",
-        holonomy_census_frozen,
-        {"ring10": holonomy_10, "ring11": holonomy_11},
+        "chained_reference_expression_census_matches_frozen_literal",
+        chained_census_frozen,
+        {"ring10": chained_10, "ring11": chained_11},
     )
     check(
-        "self_correction_chained_agreement_formula_is_size_parity_constant",
-        holonomy_census_frozen
-        and holonomy_10[
+        "chained_agreement_is_affine_size_parity_and_difference_is_coboundary",
+        chained_census_frozen
+        and chained_10[
             "agreement_equals_station_parity_for_every_reference_state"
         ]
-        and holonomy_11[
+        and chained_11[
             "agreement_equals_station_parity_for_every_reference_state"
         ]
-        and holonomy_10["disagreement_is_zero_for_every_reference_state"]
-        and holonomy_11["disagreement_is_zero_for_every_reference_state"],
+        and chained_10["disagreement_is_zero_for_every_reference_state"]
+        and chained_11["disagreement_is_zero_for_every_reference_state"],
         {
             "refuted_original_claim": (
-                "the chained-agreement formula is one variable holonomy bit"
+                "the chained-agreement expression is a variable reference bit"
             ),
-            "ring10": holonomy_10,
-            "ring11": holonomy_11,
+            "ring10": chained_10,
+            "ring11": chained_11,
             "conclusion": (
-                "agreement is the ring-size parity constant; chained "
-                "difference is the zero coboundary"
+                "agreement is an affine ring-size-parity constant; only the "
+                "chained difference is the zero coboundary"
             ),
         },
     )
@@ -1536,17 +1626,20 @@ def main() -> int:
     check(
         "self_correction_original_compression_a_has_zero_matching_states_frozen",
         exhaustive["local_satisfied_states"] == 2048
-        and exhaustive["local_satisfied_token_holonomy_matches"] == 0,
+        and exhaustive[
+            "local_satisfied_token_agreement_expression_matches"
+        ]
+        == 0,
         {
             "refuted_original_claim": (
                 "untwisted local rows pin token parity to chained agreement"
             ),
             "original_chained_agreement": exhaustive[
-                "literal_agreement_holonomy"
+                "chained_agreement_expression"
             ],
             "local_satisfied_states": exhaustive["local_satisfied_states"],
             "matching_states": exhaustive[
-                "local_satisfied_token_holonomy_matches"
+                "local_satisfied_token_agreement_expression_matches"
             ],
         },
     )
@@ -1554,21 +1647,24 @@ def main() -> int:
     check(
         "self_correction_original_compression_b_failure_census_is_frozen",
         exhaustive["exact_sector_separation_failures"] == 2099200
-        and exhaustive["token_parity_equals_holonomy_states"] == 2097152
-        and holonomy_11["agreement_value_census"] == {"1": 2048},
+        and exhaustive[
+            "token_parity_equals_agreement_expression_states"
+        ]
+        == 2097152
+        and chained_11["agreement_value_census"] == {"1": 2048},
         {
             "refuted_original_claim": (
                 "untwisted satisfied set exactly separates two chained "
                 "agreement sectors"
             ),
-            "ring11_holonomy_value_census": holonomy_11[
+            "ring11_agreement_value_census": chained_11[
                 "agreement_value_census"
             ],
             "exact_sector_separation_failures": exhaustive[
                 "exact_sector_separation_failures"
             ],
-            "token_parity_equals_holonomy_states": exhaustive[
-                "token_parity_equals_holonomy_states"
+            "token_parity_equals_agreement_expression_states": exhaustive[
+                "token_parity_equals_agreement_expression_states"
             ],
         },
     )
@@ -1583,14 +1679,14 @@ def main() -> int:
     )
     check(
         "self_correction_original_witness_does_not_vary_chained_agreement",
-        not witness["literal_agreement_holonomy_differs"]
+        not witness["chained_agreement_expression_differs"]
         and witness["candidate_reference_global_bit_differs"],
         {
             "refuted_original_claim": (
                 "the frozen complement witness varies chained agreement"
             ),
             "literal_agreement_holonomies": tuple(
-                row["literal_agreement_holonomy"] for row in witness["states"]
+                row["chained_agreement_expression"] for row in witness["states"]
             ),
             "candidate_XOR_all_refs_differs": witness[
                 "candidate_reference_global_bit_differs"
@@ -1603,15 +1699,16 @@ def main() -> int:
     )
     marked_witness = marked_edge_witness_result()
     check(
-        "marked_edge_non_derivability_frozen_pair_and_radius1_window_census",
+        "each_radius1_window_has_its_own_counterpair_and_representative_is_7_of_9",
         marked_witness["derived_pair_matches_frozen_literal"]
         and marked_witness["window_census_matches_frozen_literal"]
         and marked_witness[
-            "every_radius1_window_excluding_marked_edge_has_witness"
+            "every_radius1_window_excluding_marked_edge_has_its_own_witness"
         ]
         and marked_witness["representative_pair_satisfies_all_rows"]
         and marked_witness["representative_pair_differs_in_h"]
-        and marked_witness["representative_pair_differs_in_token_parity"],
+        and marked_witness["representative_pair_differs_in_token_parity"]
+        and marked_witness["representative_pair_indistinguishable_windows"] == 7,
         marked_witness,
     )
 
@@ -1635,40 +1732,54 @@ def main() -> int:
     )
 
     claim_boundary = {
-        "w1_global_remainder_compressed_to_one_bit": compression_a and compression_b,
-        "holonomy_bit_locally_derivable": False,
-        "original_chained_holonomy_refuted_as_coboundary": True,
-        "w1_closed": False,
+        "one_auxiliary_bit_suffices_for_declared_row_family": (
+            compression_a and compression_b
+        ),
+        "converse_is_existential_reference_projection": True,
+        "each_tested_radius1_window_individually_fails_to_determine_h": (
+            marked_witness[
+                "every_radius1_window_excluding_marked_edge_has_its_own_witness"
+            ]
+        ),
+        "proposed_agreement_expression_is_state_independent": (
+            chained_census_frozen
+        ),
+        "agreement_expression_is_itself_a_coboundary": False,
         "refs_are_new_supplied_clean_registers": True,
-        "marked_edge_ref_chain_and_h_register_are_declared_supplies": True,
-        "original_formula_refutation_is_part_of_package": True,
+        "marked_edge_ref_chain_and_h_are_declared_conditions": True,
+        "controller_holonomy_identification_claim": False,
+        "representation_independent_minimality_claim": False,
+        "arbitrary_bounded_window_claim": False,
+        "controller_completion_claim": False,
         "occurrence_claim": False,
-        "genesis_claim": False,
+        "autonomous_preparation_claim": False,
         "enforcement_claim": False,
         "rows_integrated_into_refusal_wrap": False,
         "next_step": (
-            "The amended marked-edge convention is certified but not integrated "
-            "into the refusal wrap."
+            "The declared rows remain a conditional algebraic construction "
+            "and are not integrated into the refusal wrapper."
         ),
     }
     check(
-        "honest_claim_boundary_retains_no_closure_or_wrap_integration_claim",
-        claim_boundary["w1_closed"] is False
+        "claim_boundary_is_conditional_and_excludes_controller_or_minimality_claims",
+        claim_boundary["one_auxiliary_bit_suffices_for_declared_row_family"]
+        and claim_boundary["converse_is_existential_reference_projection"]
+        and claim_boundary[
+            "each_tested_radius1_window_individually_fails_to_determine_h"
+        ]
+        and claim_boundary["proposed_agreement_expression_is_state_independent"]
+        and claim_boundary["agreement_expression_is_itself_a_coboundary"] is False
         and claim_boundary["refs_are_new_supplied_clean_registers"] is True
         and claim_boundary[
-            "marked_edge_ref_chain_and_h_register_are_declared_supplies"
+            "marked_edge_ref_chain_and_h_are_declared_conditions"
         ]
         is True
-        and claim_boundary[
-            "original_chained_holonomy_refuted_as_coboundary"
-        ]
-        is True
-        and claim_boundary[
-            "original_formula_refutation_is_part_of_package"
-        ]
-        is True
+        and claim_boundary["controller_holonomy_identification_claim"] is False
+        and claim_boundary["representation_independent_minimality_claim"] is False
+        and claim_boundary["arbitrary_bounded_window_claim"] is False
+        and claim_boundary["controller_completion_claim"] is False
         and claim_boundary["occurrence_claim"] is False
-        and claim_boundary["genesis_claim"] is False
+        and claim_boundary["autonomous_preparation_claim"] is False
         and claim_boundary["enforcement_claim"] is False
         and claim_boundary["rows_integrated_into_refusal_wrap"] is False,
         claim_boundary,
@@ -1694,10 +1805,11 @@ def main() -> int:
         "checks_failed": sum(not passed for passed in CHECKS.values()),
         "checks_passed": sum(CHECKS.values()),
         "compression": {
-            "direction_a": compression_a,
-            "direction_b": compression_b,
+            "full_assignment_implication": compression_a,
+            "existential_reference_projection_converse": compression_b,
             "amended_h_sector_census": exhaustive["amended_by_h"],
             "projection_over_declared_reference_chain": True,
+            "reference_extensions_per_matching_rail_state": 2,
         },
         "controls": {
             "original_flip_census": observed_controls,
@@ -1706,9 +1818,10 @@ def main() -> int:
         },
         "enumeration": exhaustive,
         "imports": {
-            "K": AUDIT_INPUT_PATHS[0],
-            "G703": AUDIT_INPUT_PATHS[1],
+            "K": K_INPUT_PATH,
+            "G703": G703_INPUT_PATH,
             "G703_public_helper": "parity_before",
+            "flattened_mutable_input_count": len(AUDIT_INPUT_PATHS),
         },
         "local_rows": {
             "unmarked_formula": (
@@ -1732,10 +1845,10 @@ def main() -> int:
                 "at the lexicographically first edge"
             ),
             "program_census": observed_programs,
-            "printed_table_rows": len(table) - 2,
-            "printed_table_sha256": sha256(mode_table_text.encode()).hexdigest(),
+            "full_table_rows_not_emitted": len(table) - 2,
+            "full_table_sha256": sha256(mode_table_text.encode()).hexdigest(),
         },
-        "pass": all_pass,
+        "run_result": "pass" if all_pass else "fail",
         "R_law": {
             "R1_pullback": FROZEN_R1_PULLBACK,
             "R2_pullback": FROZEN_R2_PULLBACK,
@@ -1748,10 +1861,11 @@ def main() -> int:
             "h_static": True,
             "token_parity_xor_h_invariant": amended_r_compatibility,
         },
-        "self_correction_record": {
-            "original_chained_holonomy_refuted_as_coboundary": True,
-            "literal_holonomy_ring10": holonomy_10,
-            "literal_holonomy_ring11": holonomy_11,
+        "formula_correction_record": {
+            "proposed_chained_agreement_is_state_independent": True,
+            "agreement_is_affine_translate_of_difference_coboundary": True,
+            "chained_agreement_ring10": chained_10,
+            "chained_agreement_ring11": chained_11,
             "original_exhaustive_census": {
                 key: exhaustive[key]
                 for key, _expected in FROZEN_EXHAUSTIVE_RESULT_CENSUS
@@ -1773,25 +1887,25 @@ def main() -> int:
             "original_algebra_table_sha256": telescope_digest,
             "rings": stations_tested,
         },
-        "terminal": (
-            "CYCLE728_BKSF_HOLONOMY_COMPRESSION_PASS"
-            if all_pass
-            else "CYCLE728_BKSF_HOLONOMY_COMPRESSION_HONEST_FAIL"
-        ),
         "witness": marked_witness,
     }
 
-    # The output check is added before final rendering.  The table and report
-    # are already far below the bound; render_with_exact_size then solves the
-    # self-referential stdout_bytes field exactly.
+    # The full mode table is retained by row count and digest instead of being
+    # emitted.  The compact report must fit the audit transport budget without
+    # clipping; render_with_exact_size then solves stdout_bytes exactly.
     preliminary = (
         "\n".join(OUTPUT_LINES)
         + "\n"
-        + json.dumps(report, indent=2, sort_keys=True, default=str)
+        + json.dumps(
+            report,
+            sort_keys=True,
+            default=str,
+            separators=(",", ":"),
+        )
         + "\n"
     )
     check(
-        "stdout_bounded_under_150KB",
+        "stdout_complete_and_bounded_under_20000_characters",
         len(preliminary.encode()) < STDOUT_LIMIT_BYTES,
         {
             "preliminary_bytes": len(preliminary.encode()),
@@ -1803,12 +1917,7 @@ def main() -> int:
     report["checks"] = dict(sorted(CHECKS.items()))
     report["checks_failed"] = sum(not passed for passed in CHECKS.values())
     report["checks_passed"] = sum(CHECKS.values())
-    report["pass"] = all_pass
-    report["terminal"] = (
-        "CYCLE728_BKSF_HOLONOMY_COMPRESSION_PASS"
-        if all_pass
-        else "CYCLE728_BKSF_HOLONOMY_COMPRESSION_HONEST_FAIL"
-    )
+    report["run_result"] = "pass" if all_pass else "fail"
     text, exact_size = render_with_exact_size(report)
     if exact_size >= STDOUT_LIMIT_BYTES:
         raise AssertionError((exact_size, STDOUT_LIMIT_BYTES))

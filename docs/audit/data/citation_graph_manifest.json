@@ -1,6 +1,6 @@
 {
- "edge_count": 15216,
- "node_count": 4574,
+ "edge_count": 15219,
+ "node_count": 4575,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1357,6 +1357,10 @@
   "binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "bksf_holonomy_compression_cycle728_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "2bdda41c6188",
+   "out_degree": 3
   },
   "block_gaussian_schur_marginalization_narrow_theorem_note_2026-05-02": {
    "deps_hash": "e3b0c44298fc",

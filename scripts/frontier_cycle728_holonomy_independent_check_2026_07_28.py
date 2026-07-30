@@ -22,6 +22,58 @@ AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = "docs/BKSF_HOLONOMY_COMPRESSION_CYCLE728_BOUNDED_THEOREM_NOTE_2026-07-28.md"
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
 )
 PRIMARY_IMPORT_BLOCKLIST = (
@@ -33,7 +85,7 @@ PRIMARY_PATH = ROOT / AUDIT_INPUT_PATHS[0]
 
 
 class _PrimaryImportBlocker(MetaPathFinder):
-    """Make an accidental import of the audited primary an immediate failure."""
+    """Make an accidental import of the checked primary an immediate failure."""
 
     def find_spec(self, fullname, path=None, target=None):
         del path, target
@@ -60,7 +112,7 @@ REQUIRED_FROZEN_NAMES = (
     "FROZEN_ENUMERATION_CENSUS",
     "FROZEN_EXHAUSTIVE_RESULT_CENSUS",
     "FROZEN_AMENDED_H_SECTOR_CENSUS",
-    "FROZEN_HOLONOMY_CENSUS",
+    "FROZEN_CHAINED_REFERENCE_CENSUS",
     "FROZEN_R1_PULLBACK",
     "FROZEN_R2_PULLBACK",
     "FROZEN_R_PULLBACK",
@@ -72,7 +124,7 @@ REQUIRED_FROZEN_NAMES = (
 )
 REFUTATION_LITERAL_NAMES = (
     "FROZEN_EXHAUSTIVE_RESULT_CENSUS",
-    "FROZEN_HOLONOMY_CENSUS",
+    "FROZEN_CHAINED_REFERENCE_CENSUS",
     "FROZEN_R_ROW_SET_PERMUTED",
     "FROZEN_R_COUNTEREXAMPLE",
     "FROZEN_WITNESS_PAIR",
@@ -236,10 +288,8 @@ def extraction() -> tuple[bool, dict[str, object]]:
     except Exception as exc:
         self_blocklist = f"{type(exc).__name__}: {exc}"
 
-    expected_inputs = (
-        "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
-        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    )
+    expected_inputs = AUDIT_INPUT_PATHS
+    expected_primary_inputs = AUDIT_INPUT_PATHS[1:]
     categories = {
         "refutation": REFUTATION_LITERAL_NAMES,
         "R_pullback": R_LITERAL_NAMES,
@@ -262,6 +312,7 @@ def extraction() -> tuple[bool, dict[str, object]]:
         and len(FROZEN) == len(REQUIRED_FROZEN_NAMES)
         and all(categories_literal.values())
         and isinstance(literal_values.get("AUDIT_INPUT_PATHS"), tuple)
+        and literal_values["AUDIT_INPUT_PATHS"] == expected_primary_inputs
         and self_audit_paths == expected_inputs
         and self_blocklist == PRIMARY_IMPORT_BLOCKLIST
         and primary_was_not_imported
@@ -273,6 +324,9 @@ def extraction() -> tuple[bool, dict[str, object]]:
         "literal_categories": categories_literal,
         "primary_AUDIT_tuple_literal": isinstance(
             literal_values.get("AUDIT_INPUT_PATHS"), tuple
+        ),
+        "primary_AUDIT_tuple_is_flattened_controller_closure": (
+            literal_values.get("AUDIT_INPUT_PATHS") == expected_primary_inputs
         ),
         "checker_AUDIT_tuple_literal_and_exact": self_audit_paths
         == expected_inputs,
@@ -292,7 +346,7 @@ def _agreement_and_coboundary(refs: int, width: int) -> tuple[int, int]:
     return agreement_xor, difference_xor
 
 
-def _holonomy_row(width: int) -> tuple[tuple[str, object], ...]:
+def _chained_reference_row(width: int) -> tuple[tuple[str, object], ...]:
     agreements: Counter[int] = Counter()
     differences: Counter[int] = Counter()
     for refs in range(1 << width):
@@ -314,8 +368,11 @@ def _holonomy_row(width: int) -> tuple[tuple[str, object], ...]:
 
 
 def coboundary_refutation_recount() -> tuple[bool, dict[str, object]]:
-    observed = (_holonomy_row(10), _holonomy_row(11))
-    expected = FROZEN["FROZEN_HOLONOMY_CENSUS"]
+    observed = (
+        _chained_reference_row(10),
+        _chained_reference_row(11),
+    )
+    expected = FROZEN["FROZEN_CHAINED_REFERENCE_CENSUS"]
     constant_proof = all(
         dict(row)["agreement_value_census"]
         == ((str(dict(row)["stations"] & 1), dict(row)["reference_states"]),)
@@ -368,14 +425,14 @@ def twist_theorem_recount() -> tuple[bool, dict[str, object]]:
     seed = CONVENTIONS["EXHAUSTIVE_SEED"]
     fixed_refs = int.from_bytes(sha256(seed).digest(), "big") & rail_mask
     fixed_boundary = fixed_refs ^ _next_source_bits(fixed_refs, width)
-    original_holonomy = _agreement_and_coboundary(fixed_refs, width)[0]
+    original_agreement_value = _agreement_and_coboundary(fixed_refs, width)[0]
 
     original = {
         "telescope_failures": 0,
         "local_satisfied_states": 0,
         "local_satisfied_even_token_states": 0,
-        "local_satisfied_token_holonomy_matches": 0,
-        "token_parity_equals_holonomy_states": 0,
+        "local_satisfied_token_agreement_expression_matches": 0,
+        "token_parity_equals_agreement_expression_states": 0,
         "exact_sector_separation_failures": 0,
     }
     sectors: list[dict[str, object]] = []
@@ -443,20 +500,24 @@ def twist_theorem_recount() -> tuple[bool, dict[str, object]]:
             if h == 0:
                 observed_telescope = untwisted_rows.bit_count() & 1
                 all_local = untwisted_rows == 0
-                holonomy_sector = parity == original_holonomy
+                agreement_sector = parity == original_agreement_value
                 original["telescope_failures"] += observed_telescope != parity
                 original["local_satisfied_states"] += all_local
                 original["local_satisfied_even_token_states"] += (
                     all_local and parity == 0
                 )
-                original["local_satisfied_token_holonomy_matches"] += (
-                    all_local and holonomy_sector
+                original[
+                    "local_satisfied_token_agreement_expression_matches"
+                ] += (
+                    all_local and agreement_sector
                 )
-                original["token_parity_equals_holonomy_states"] += (
-                    holonomy_sector
+                original[
+                    "token_parity_equals_agreement_expression_states"
+                ] += (
+                    agreement_sector
                 )
                 original["exact_sector_separation_failures"] += (
-                    all_local != holonomy_sector
+                    all_local != agreement_sector
                 )
         sectors.append(counts)
 
@@ -587,6 +648,30 @@ def witness_recount() -> tuple[bool, dict[str, object]]:
                 width,
             )
         )
+    marked_states = tuple(dict(item) for item in marked_pair)
+    representative_differences = (
+        marked_states[0]["A_mask"] ^ marked_states[1]["A_mask"],
+        marked_states[0]["B_mask"] ^ marked_states[1]["B_mask"],
+        marked_states[0]["refs_mask"] ^ marked_states[1]["refs_mask"],
+    )
+    representative_window_rows = tuple(
+        {
+            "center": row["center"],
+            "sites": row["sites"],
+            "observed_bit_differences": sum(
+                (
+                    difference
+                    & sum(1 << site for site in row["sites"])
+                ).bit_count()
+                for difference in representative_differences
+            ),
+        }
+        for row in windows
+    )
+    representative_indistinguishable_windows = sum(
+        row["observed_bit_differences"] == 0
+        for row in representative_window_rows
+    )
 
     window_census = (
         ("ring_stations", width),
@@ -594,7 +679,7 @@ def witness_recount() -> tuple[bool, dict[str, object]]:
         ("radius", 1),
         ("windows_excluding_marked_edge", len(windows)),
         (
-            "windows_with_indistinguishable_witness",
+            "windows_with_window_specific_indistinguishable_witness",
             sum(row["observed_bit_differences"] == 0 for row in windows),
         ),
         (
@@ -611,6 +696,10 @@ def witness_recount() -> tuple[bool, dict[str, object]]:
         ),
         ("representative_window_center", representative["center"]),
         ("representative_window_sites", representative["sites"]),
+        (
+            "representative_pair_indistinguishable_windows",
+            representative_indistinguishable_windows,
+        ),
     )
 
     original_pair = (
@@ -655,6 +744,7 @@ def witness_recount() -> tuple[bool, dict[str, object]]:
         and original_rows_satisfied
         and all_windows
         and h_differs
+        and representative_indistinguishable_windows == 7
     )
     return passed, {
         "marked_pair": marked_pair,
@@ -665,7 +755,14 @@ def witness_recount() -> tuple[bool, dict[str, object]]:
         "original_pair_rows_satisfied": original_rows_satisfied,
         "window_census": dict(window_census),
         "window_census_matches_frozen": census_match,
-        "indistinguishable_windows": f"{sum(row['observed_bit_differences'] == 0 for row in windows)}/{len(windows)}",
+        "window_specific_counterpairs": (
+            f"{sum(row['observed_bit_differences'] == 0 for row in windows)}"
+            f"/{len(windows)}"
+        ),
+        "representative_pair_window_census": representative_window_rows,
+        "representative_pair_indistinguishable_windows": (
+            f"{representative_indistinguishable_windows}/{len(windows)}"
+        ),
     }
 
 
@@ -951,10 +1048,9 @@ def discipline() -> tuple[bool, dict[str, object]]:
         ):
             direct_primary_imports.append(node.module)
 
-    expected_inputs = (
-        "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
-        "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    )
+    expected_inputs = AUDIT_INPUT_PATHS
+    expected_primary_inputs = AUDIT_INPUT_PATHS[1:]
+    primary_audit = _literal(primary_nodes["AUDIT_INPUT_PATHS"])
     primary_loaded = any(
         name in sys.modules for name in PRIMARY_IMPORT_BLOCKLIST
     )
@@ -962,6 +1058,7 @@ def discipline() -> tuple[bool, dict[str, object]]:
         not k_writes
         and not frozen_literal_failures
         and all(name in primary_nodes for name in REQUIRED_FROZEN_NAMES)
+        and primary_audit == expected_primary_inputs
         and checker_audit == expected_inputs
         and checker_blocklist == PRIMARY_IMPORT_BLOCKLIST
         and not direct_primary_imports
@@ -973,6 +1070,7 @@ def discipline() -> tuple[bool, dict[str, object]]:
         "primary_frozen_literal_count": sum(
             name.startswith("FROZEN_") for name in primary_nodes
         ),
+        "primary_AUDIT_tuple": primary_audit,
         "checker_AUDIT_tuple": checker_audit,
         "checker_blocklist": checker_blocklist,
         "checker_direct_primary_imports": direct_primary_imports,
@@ -1012,22 +1110,21 @@ def main() -> int:
     all_pass = all(results.values()) and within_timeout
     passed_count = sum(results.values())
     summary = {
-        "audit": "cycle728_holonomy_independent_check",
-        "audit_inputs": AUDIT_INPUT_PATHS,
+        "check": "finite_ring_marked_edge_independent_check",
+        "declared_input_count": len(AUDIT_INPUT_PATHS),
+        "declared_inputs_sha256": sha256(
+            "\n".join(AUDIT_INPUT_PATHS).encode()
+        ).hexdigest(),
         "blocklist": PRIMARY_IMPORT_BLOCKLIST,
         "certificates": f"{passed_count}/{len(CERTIFICATES)}",
         "failed": tuple(name for name, passed in results.items() if not passed),
-        "pass": all_pass,
+        "run_result": "pass" if all_pass else "fail",
         "runtime_seconds": round(runtime, 6),
         "timeout_seconds": AUDIT_TIMEOUT_SEC,
         "within_timeout": within_timeout,
     }
     print(json.dumps(summary, sort_keys=True, separators=(",", ":")))
-    print(
-        "CYCLE728_HOLONOMY_INDEPENDENT_CHECK_PASS"
-        if all_pass
-        else "CYCLE728_HOLONOMY_INDEPENDENT_CHECK_HONEST_FAIL"
-    )
+    print(f"RUN_RESULT={'pass' if all_pass else 'fail'}")
     return 0 if all_pass else 1
 
 

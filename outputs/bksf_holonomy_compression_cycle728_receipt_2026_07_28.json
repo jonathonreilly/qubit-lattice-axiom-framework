@@ -1,72 +1,86 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle728_bksf_holonomy_compression_2026_07_28.txt": "deb14b2486a24fff853b0bc7f7bd94113f03241c4eb4b9b9b07c9ccaa2984827",
-      "frontier_cycle728_holonomy_independent_check_2026_07_28.txt": "b5860b62b35aa72c07a014429722b9d06dc71e422e0abda72bdc2375afcae7de"
+      "frontier_cycle728_bksf_holonomy_compression_2026_07_28.txt": "d136710af4184261a5e07b2478b7895b69cd4e1e4038c16e58e2b77797e980ac",
+      "frontier_cycle728_holonomy_independent_check_2026_07_28.txt": "fae3fe511903b8ab5c46727ab0b2a93325020922b7d79471fcbf3d0fe4550359"
     },
     "note": {
       "path": "docs/BKSF_HOLONOMY_COMPRESSION_CYCLE728_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "dae7b7d13b06623dff34822de4e7a46906f6ea2ee109be377bea5e0e1e778c6a"
+      "sha256": "9b49d2a2ec91765c0686309cb0bdd734ad3700db645c0ca98ed5c9657ca47585"
     },
     "runners": {
-      "frontier_cycle728_bksf_holonomy_compression_2026_07_28.py": "a8a60f0853994b3a6235702bd2db77a43e7419226257c6c64261053caf83170b",
-      "frontier_cycle728_holonomy_independent_check_2026_07_28.py": "82dbdb11213c74a9fd9ed21103a90e93b1f0e8e74d5709fca37dec4bef407a04"
+      "frontier_cycle728_bksf_holonomy_compression_2026_07_28.py": "0ed3d3a6b644a6eee640e9d1b04edc813e94cd9c807836413c0209ef5a50ac82",
+      "frontier_cycle728_holonomy_independent_check_2026_07_28.py": "fcb89c26eeb3932a265924e924ce22363409794d97c08a801c08b13dd9002799"
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
-    "axiom_pressure": false,
-    "fixed_supplies": "the mode-graph convention, clean reference chain, marked edge s*, and holonomy register h (per the campaign decision record and its amendment); the controller inventory unchanged",
-    "holonomy_bit_locally_derivable": false,
-    "no_go_minimum_shared_obstruction_axiom_pressure_promotion": "FAIL",
-    "not_derived": "enforcement integration of the charge rows into the refusal wrap, autonomous preparation of the reference chain or h, occurrence, time, Record, Born, or source content",
-    "original_chained_holonomy_refuted_as_coboundary": true,
-    "positive_scope": "the coboundary refutation of the original chained holonomy (frozen exhaustive censuses); the marked-edge twist telescope identity; the two-direction compression theorem (exhaustive per h-sector on ring 11; algebraic on 35/130); the marked-edge non-derivability witness with its radius-one window census; the frozen R-pullback law with token-parity-xor-h invariance",
-    "refs_are_new_supplied_clean_registers": true,
-    "w1_closed": false,
-    "w1_global_remainder_compressed_to_one_bit": true
+    "arbitrary_bounded_window_claim": false,
+    "autonomous_preparation_claim": false,
+    "controller_completion_claim": false,
+    "controller_holonomy_identification_claim": false,
+    "encoding_minimality_claim": false,
+    "fixed_conditions": "finite periodic binary ring, clean reference chain, chosen marked edge, supplied auxiliary bit h, static references and h during the imported controller pullback",
+    "not_derived": "the edge or holonomy label, autonomous preparation of the reference chain or h, enforcement integration, occurrence, physical time, Record formation, Born weighting, or source meaning",
+    "one_auxiliary_bit_suffices_for_declared_rows": true,
+    "positive_scope": "the chained-agreement expression is a state-independent affine ring-size-parity constant; the difference coboundary telescopes to zero; the marked-edge row telescope is exact; all satisfied full assignments obey parity=h; existential projection over reference chains recovers exactly the parity=h rail sector with two reference extensions per matching state; each eligible ring-11 radius-one window has its own h-different counterpair; the imported rail permutation preserves parity XOR h with static references and h",
+    "reference_chain_is_a_declared_condition": true,
+    "representation_independent_claim": false
   },
   "checks": {
     "independent_named_checks_failed": 0,
     "independent_named_checks_passed": 6,
+    "primary_named_checks_failed": 0,
     "primary_named_checks_passed": 32
   },
   "claim_type": "bounded_theorem",
   "cycle": 728,
   "date": "2026-07-28",
   "result": {
-    "per_h_sector": {
-      "failures": 0,
-      "fixed_ref_matches": 2048,
-      "projected_states": 2097152
-    },
-    "refutation_censuses": {
-      "ring10_agreement": {
+    "chained_agreement_expression_censuses": {
+      "ring10": {
         "0": 1024
       },
-      "ring11_agreement": {
+      "ring11": {
         "1": 2048
       }
     },
-    "rings": [
+    "per_h_sector_ring11": {
+      "fixed_reference_satisfied_rail_states": 2048,
+      "projected_parity_sector_rail_states": 2097152,
+      "projection_failures": 0,
+      "reference_extensions_per_matching_rail_state": 2,
+      "satisfying_rail_reference_extensions": 4194304
+    },
+    "radius_one_ring11": {
+      "eligible_windows": 9,
+      "quantifier": "for every eligible window W there exists a W-dependent satisfying pair with different h and identical raw data on W",
+      "representative_center8_pair": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          6,
+          1
+        ]
+      ],
+      "representative_pair_tuple_order": [
+        "A_mask",
+        "refs_mask",
+        "h"
+      ],
+      "representative_pair_indistinguishable_windows": "7/9",
+      "window_specific_counterpairs": "9/9"
+    },
+    "rings_with_symbolic_telescope_checks": [
       11,
       35,
       130
-    ],
-    "witness_pair": [
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        4,
-        6,
-        1
-      ]
-    ],
-    "witness_windows_indistinguishable": "9/9"
+    ]
   },
-  "status": "CYCLE728_BKSF_HOLONOMY_COMPRESSION_PASS"
+  "run_result": "pass"
 }

@@ -16,7 +16,7 @@ supplied clean and every route is returned.
 
 from __future__ import annotations
 
-from collections import defaultdict, deque
+from collections import Counter, defaultdict, deque
 from dataclasses import dataclass
 from functools import lru_cache
 from hashlib import sha256
@@ -69,8 +69,17 @@ STAGE_ORDER = (
     "pump",
     "bell_measure",
     "bell_correction",
+    "recurrent_coin",
+    "recurrent_reverse_FSWAP",
     "recurrent_seam",
+    "recurrent_contact",
 )
+COMMITTED_ROUTE_C_BASE = {
+    (2, 1, 1): {"primitives": 8822, "charged": 386, "neutral": 1228},
+    (3, 1, 1): {"primitives": 14360, "charged": 601, "neutral": 2002},
+    (3, 2, 2): {"primitives": 137308, "charged": 3131, "neutral": 13007},
+    (5, 3, 2): {"primitives": 377226, "charged": 8237, "neutral": 33771},
+}
 
 
 @dataclass(frozen=True)
@@ -176,6 +185,98 @@ def routed_two_site(
     )
     operands = (path[-1], path[-2]) if target_first else (path[-2], path[-1])
     return swaps + (Primitive(kind, operands, route_id),) + tuple(reversed(swaps))
+
+
+@lru_cache(maxsize=None)
+def nonseam_opcode_entries() -> tuple[tuple[str, str, int, str, np.ndarray], ...]:
+    """The 13 unique landed nonseam matrices, named by their full digest."""
+    fixture = U720.M.CompanionFixture.build((2, 1, 1))
+    placed = U720.placement(fixture)
+    word, _update = U720.physical_word(fixture, placed)
+    unique: dict[tuple[str, str], tuple[int, np.ndarray]] = {}
+    for instruction in word:
+        if instruction.kind.startswith("seam_"):
+            continue
+        digest = U720.c707.c655.matrix_digest(instruction.matrix)
+        key = (instruction.kind, digest)
+        previous = unique.get(key)
+        if previous is not None:
+            if (
+                previous[0] != len(instruction.sites)
+                or np.linalg.norm(previous[1] - instruction.matrix) > 1.0e-12
+            ):
+                raise AssertionError(("nonseam opcode collision", key))
+            continue
+        unique[key] = (len(instruction.sites), instruction.matrix.copy())
+    entries = []
+    labels = set()
+    for (base_kind, digest), (arity, matrix) in sorted(unique.items()):
+        label = f"G_{base_kind}_{digest[:16]}"
+        if label in labels:
+            raise AssertionError(("truncated opcode digest collision", label))
+        labels.add(label)
+        entries.append((label, base_kind, arity, digest, matrix))
+    if len(entries) != 13:
+        raise AssertionError(("unexpected nonseam opcode census", len(entries)))
+    return tuple(entries)
+
+
+@lru_cache(maxsize=None)
+def nonseam_opcode_lookup() -> dict[tuple[str, str], tuple[str, np.ndarray]]:
+    return {
+        (base_kind, digest): (label, matrix)
+        for label, base_kind, _arity, digest, matrix in nonseam_opcode_entries()
+    }
+
+
+def nonseam_opcode(instruction) -> tuple[str, np.ndarray, str]:
+    digest = U720.c707.c655.matrix_digest(instruction.matrix)
+    label, matrix = nonseam_opcode_lookup()[(instruction.kind, digest)]
+    return label, matrix, digest
+
+
+def matrix_entries(matrix: np.ndarray) -> tuple[tuple[tuple[float, float], ...], ...]:
+    return tuple(tuple(
+        (float(value.real), float(value.imag)) for value in row
+    ) for row in matrix)
+
+
+def nonseam_opcode_catalog() -> dict[str, object]:
+    rows = []
+    maximum_parity = maximum_unitarity = 0.0
+    for label, base_kind, arity, digest, matrix in nonseam_opcode_entries():
+        parity = np.diag(tuple(
+            (-1) ** state.bit_count() for state in range(1 << arity)
+        )).astype(complex)
+        parity_residual = float(np.linalg.norm(
+            matrix @ parity - parity @ matrix
+        ))
+        unitarity_residual = float(np.linalg.norm(
+            matrix.conj().T @ matrix - np.eye(1 << arity)
+        ))
+        maximum_parity = max(maximum_parity, parity_residual)
+        maximum_unitarity = max(maximum_unitarity, unitarity_residual)
+        rows.append({
+            "opcode": label,
+            "landed_kind": base_kind,
+            "arity": arity,
+            "matrix_sha256": digest,
+            "matrix_entries_real_imag": matrix_entries(matrix),
+            "charged_parity_commutator_residual": parity_residual,
+            "unitarity_residual": unitarity_residual,
+        })
+    dictionary_digest = sha256("|".join(
+        f"{row['opcode']}:{row['matrix_sha256']}" for row in rows
+    ).encode()).hexdigest()
+    return {
+        "unique_nonseam_opcodes": len(rows),
+        "unique_routed_two_site_opcodes": sum(row["arity"] == 2 for row in rows),
+        "unique_onsite_one_site_opcodes": sum(row["arity"] == 1 for row in rows),
+        "maximum_charged_parity_commutator_residual": maximum_parity,
+        "maximum_unitarity_residual": maximum_unitarity,
+        "opcode_dictionary_sha256": dictionary_digest,
+        "opcodes": tuple(rows),
+    }
 
 
 def local_site_maps(shape, atlas):
@@ -417,6 +518,124 @@ def bell_atom_words(context, routes: list[RouteRecord]):
     }
 
 
+def nonseam_words(context, routes: list[RouteRecord]):
+    """Compile the landed 29/cell coin/reverse/contact dictionary."""
+    fixture = context["fixture"]
+    landed_word, update = U720.physical_word(fixture, context["placed"])
+    site_to_qubit = {
+        site: qubit
+        for qubit, site in enumerate(context["placed"]["sites_by_qubit"])
+    }
+    stage_words: dict[str, list[ScheduledWord]] = {
+        "recurrent_coin": [],
+        "recurrent_reverse_FSWAP": [],
+        "recurrent_contact": [],
+    }
+    next_slot: dict[tuple[str, int], int] = defaultdict(int)
+    opcode_census: Counter[str] = Counter()
+    landed_kind_census: Counter[str] = Counter()
+    matrix_binding_failures = charged_parity_failures = 0
+    one_site = two_site = routed_primitives = 0
+    sequence_rows = []
+    for instruction in landed_word:
+        if instruction.kind.startswith("seam_"):
+            continue
+        if instruction.kind.startswith("coin_"):
+            stage = "recurrent_coin"
+        elif instruction.kind == "reverse_FSWAP":
+            stage = "recurrent_reverse_FSWAP"
+        elif instruction.kind == "onsite_contact":
+            stage = "recurrent_contact"
+        else:
+            raise ValueError(("unclassified landed nonseam factor", instruction.kind))
+        qubits = tuple(site_to_qubit[site] for site in instruction.sites)
+        cells = {qubit // 6 for qubit in qubits}
+        if len(cells) != 1:
+            raise AssertionError(("non-onsite nonseam factor", instruction.kind, qubits))
+        cell_index = next(iter(cells))
+        owner = tuple(fixture.cells[cell_index])
+        colour = tuple(
+            value % S789.COLOR_MODULUS for value in owner
+        )
+        slot_key = (stage, cell_index)
+        slot = next_slot[slot_key]
+        next_slot[slot_key] += 1
+        opcode, matrix, digest = nonseam_opcode(instruction)
+        matrix_binding_failures += (
+            np.linalg.norm(matrix - instruction.matrix) > 1.0e-12
+        )
+        local_parity = np.diag(tuple(
+            (-1) ** state.bit_count()
+            for state in range(1 << len(instruction.sites))
+        )).astype(complex)
+        charged_parity_failures += (
+            np.linalg.norm(
+                instruction.matrix @ local_parity
+                - local_parity @ instruction.matrix
+            ) > 1.0e-12
+        )
+        if len(instruction.sites) == 1:
+            primitives = (Primitive(opcode, instruction.sites),)
+            one_site += 1
+        elif len(instruction.sites) == 2:
+            primitives = routed_two_site(
+                opcode,
+                instruction.sites[0],
+                instruction.sites[1],
+                context["charged_route_obstacles"],
+                routes,
+                role=stage,
+                exchange="FSWAP",
+                bias=cell_index * 29 + slot,
+            )
+            two_site += 1
+        else:
+            raise AssertionError(("unexpected nonseam arity", len(instruction.sites)))
+        routed_primitives += len(primitives)
+        opcode_census[opcode] += 1
+        landed_kind_census[instruction.kind] += 1
+        sequence_rows.append(
+            opcode + repr(instruction.sites) + digest
+        )
+        stage_words[stage].append(ScheduledWord(
+            stage=stage,
+            colour=colour,
+            slot=slot,
+            owner=owner,
+            label=f"{stage}:{cell_index}:{slot}:{opcode}",
+            primitives=tuple(primitives),
+        ))
+    cell_count = len(fixture.cells)
+    stage_factor_census = {
+        stage: len(rows) for stage, rows in stage_words.items()
+    }
+    return {
+        stage: tuple(rows) for stage, rows in stage_words.items()
+    }, {
+        "landed_nonseam_factors": sum(stage_factor_census.values()),
+        "expected_29_per_cell_nonseam_factors": 29 * cell_count,
+        "stage_factor_census": stage_factor_census,
+        "expected_stage_factor_census": {
+            "recurrent_coin": 11 * cell_count,
+            "recurrent_reverse_FSWAP": 3 * cell_count,
+            "recurrent_contact": 15 * cell_count,
+        },
+        "one_site_phase_factors": one_site,
+        "two_site_charged_factors": two_site,
+        "nonseam_FSWAP_route_macros": two_site,
+        "routed_literal_radius_one_primitives": routed_primitives,
+        "unique_opcode_coverage": len(opcode_census),
+        "opcode_census": dict(sorted(opcode_census.items())),
+        "landed_kind_census": dict(sorted(landed_kind_census.items())),
+        "matrix_binding_failures": int(matrix_binding_failures),
+        "charged_parity_failures": int(charged_parity_failures),
+        "landed_local_dictionary_sha256": update["local_dictionary_sha256"],
+        "landed_nonseam_sequence_sha256": sha256(
+            "".join(sequence_rows).encode()
+        ).hexdigest(),
+    }
+
+
 def conjugate_s(row: Pauli, qubit: int, dagger: bool) -> Pauli:
     bit = 1 << qubit
     x = int(bool(row.x & bit))
@@ -590,6 +809,11 @@ def fixed_typed_compile(context):
     charged_probe_routes: list[RouteRecord] = []
     bell_atom_words(charged_context, charged_probe_routes)
     seam_words(charged_context, charged_probe_routes)
+    charged_without_nonseam = set().union(*(
+        set(route.path)
+        for route in charged_probe_routes if route.exchange == "FSWAP"
+    ))
+    nonseam_words(charged_context, charged_probe_routes)
     fixed_charged = set().union(*(
         set(route.path)
         for route in charged_probe_routes if route.exchange == "FSWAP"
@@ -600,11 +824,19 @@ def fixed_typed_compile(context):
     )
     routes: list[RouteRecord] = []
     bell, atoms = bell_atom_words(repaired, routes)
+    nonseam_stages, nonseam = nonseam_words(repaired, routes)
     seam, seams = seam_words(repaired, routes)
+    words = (
+        bell
+        + nonseam_stages["recurrent_coin"]
+        + nonseam_stages["recurrent_reverse_FSWAP"]
+        + seam
+        + nonseam_stages["recurrent_contact"]
+    )
     final_charged = set().union(*(
         set(route.path) for route in routes if route.exchange == "FSWAP"
     ))
-    return repaired, tuple(routes), bell + seam, atoms, seams, {
+    return repaired, tuple(routes), words, atoms, seams, nonseam, {
         "pre_repair_charged_route_coordinates": len(preliminary_charged),
         "pre_repair_neutral_route_coordinates": len(preliminary_neutral),
         "pre_repair_cross_typed_coordinate_collisions": len(
@@ -618,6 +850,12 @@ def fixed_typed_compile(context):
         ),
         "frozen_charged_atlas_recompile_coordinate_mismatches": len(
             fixed_charged ^ final_charged
+        ),
+        "charged_atlas_coordinates_before_nonseam": len(
+            charged_without_nonseam
+        ),
+        "charged_atlas_coordinates_added_by_nonseam": len(
+            fixed_charged - charged_without_nonseam
         ),
     }
 
@@ -689,6 +927,15 @@ def fixed_type_assignment(context, routes: tuple[RouteRecord, ...]):
 
 @lru_cache(maxsize=None)
 def primitive_matrix(kind: str) -> np.ndarray:
+    if kind.startswith("G_"):
+        matrices = {
+            label: matrix
+            for label, _base, _arity, _digest, matrix
+            in nonseam_opcode_entries()
+        }
+        if kind not in matrices:
+            raise ValueError(("unclassified recurrent-G opcode", kind))
+        return matrices[kind]
     if kind == "FSWAP":
         return S25.FSWAP
     if kind == "SWAP":
@@ -841,6 +1088,8 @@ def primitive_parity_certificate(words: tuple[ScheduledWord, ...]) -> dict[str, 
             census[primitive.kind] += 1
             if primitive.kind.startswith("PAIR_R_"):
                 continue
+            if primitive.kind.startswith("G_"):
+                continue
             if primitive.kind in ("FSWAP", "SWAP", "data_CNOT_work"):
                 continue
             if primitive.kind.startswith("CP_"):
@@ -904,6 +1153,163 @@ def fswap_control() -> dict[str, float]:
         "clean_route_FSWAP_vs_SWAP_residual": float(np.linalg.norm(clean_f - clean_s)),
         "dirty_route_FSWAP_vs_SWAP_residual": float(np.linalg.norm(dirty_f - dirty_s)),
     }
+
+
+def nonseam_returned_route_execution_certificate() -> dict[str, object]:
+    """Execute every unique landed opcode through a generic returned rail."""
+    rows = []
+    routed_residuals = []
+    deletion_residuals = []
+    dirty_exchange_residuals = []
+    onsite_roundtrip_residuals = []
+    for opcode_index, (opcode, base, arity, digest, matrix) in enumerate(
+        nonseam_opcode_entries()
+    ):
+        rng = np.random.default_rng(822100 + opcode_index)
+        if arity == 1:
+            state = rng.normal(size=2) + 1j * rng.normal(size=2)
+            state /= np.linalg.norm(state)
+            observed = U720.c707.apply_gate(state, matrix, (0,), 1)
+            returned = U720.c707.apply_gate(
+                observed, matrix.conj().T, (0,), 1
+            )
+            residual = float(np.linalg.norm(returned - state))
+            onsite_roundtrip_residuals.append(residual)
+            rows.append({
+                "opcode": opcode,
+                "landed_kind": base,
+                "arity": arity,
+                "matrix_sha256": digest,
+                "onsite_forward_inverse_residual": residual,
+                "routing": "onsite_not_routed",
+            })
+            continue
+        width = 4
+        clean = np.zeros(1 << width, dtype=complex)
+        endpoint_amplitudes = rng.normal(size=4) + 1j * rng.normal(size=4)
+        endpoint_amplitudes /= np.linalg.norm(endpoint_amplitudes)
+        for left_bit in (0, 1):
+            for right_bit in (0, 1):
+                source = left_bit | (right_bit << 1)
+                basis = left_bit | (right_bit << 3)
+                clean[basis] = endpoint_amplitudes[source]
+        forward = ((0, 1), (1, 2))
+        routed = clean
+        for sites in forward:
+            routed = U720.c707.apply_gate(routed, S25.FSWAP, sites, width)
+        routed = U720.c707.apply_gate(routed, matrix, (2, 3), width)
+        for sites in reversed(forward):
+            routed = U720.c707.apply_gate(routed, S25.FSWAP, sites, width)
+        direct = U720.c707.apply_gate(clean, matrix, (0, 3), width)
+        route_residual = float(np.linalg.norm(routed - direct))
+        deleted = clean
+        for sites in forward:
+            deleted = U720.c707.apply_gate(deleted, S25.FSWAP, sites, width)
+        deleted = U720.c707.apply_gate(deleted, matrix, (2, 3), width)
+        deleted = U720.c707.apply_gate(
+            deleted, S25.FSWAP, forward[-1], width
+        )
+        deletion_residual = float(np.linalg.norm(deleted - direct))
+        dirty = rng.normal(size=1 << width) + 1j * rng.normal(size=1 << width)
+        dirty /= np.linalg.norm(dirty)
+        fswap_dirty = dirty
+        swap_dirty = dirty
+        for sites in forward:
+            fswap_dirty = U720.c707.apply_gate(
+                fswap_dirty, S25.FSWAP, sites, width
+            )
+            swap_dirty = U720.c707.apply_gate(
+                swap_dirty, S25.SWAP, sites, width
+            )
+        fswap_dirty = U720.c707.apply_gate(
+            fswap_dirty, matrix, (2, 3), width
+        )
+        swap_dirty = U720.c707.apply_gate(
+            swap_dirty, matrix, (2, 3), width
+        )
+        for sites in reversed(forward):
+            fswap_dirty = U720.c707.apply_gate(
+                fswap_dirty, S25.FSWAP, sites, width
+            )
+            swap_dirty = U720.c707.apply_gate(
+                swap_dirty, S25.SWAP, sites, width
+            )
+        dirty_residual = float(np.linalg.norm(fswap_dirty - swap_dirty))
+        routed_residuals.append(route_residual)
+        deletion_residuals.append(deletion_residual)
+        dirty_exchange_residuals.append(dirty_residual)
+        rows.append({
+            "opcode": opcode,
+            "landed_kind": base,
+            "arity": arity,
+            "matrix_sha256": digest,
+            "generic_route_distance": 3,
+            "clean_returned_route_execution_residual": route_residual,
+            "deleted_return_execution_residual": deletion_residual,
+            "dirty_FSWAP_vs_unlawful_SWAP_residual": dirty_residual,
+        })
+    return {
+        "unique_opcodes_tested": len(rows),
+        "unique_two_site_opcodes_routed": len(routed_residuals),
+        "unique_one_site_opcodes_executed_onsite": len(onsite_roundtrip_residuals),
+        "maximum_clean_returned_route_execution_residual": max(
+            routed_residuals, default=0.0
+        ),
+        "minimum_return_deletion_residual": min(
+            deletion_residuals, default=0.0
+        ),
+        "dirty_unlawful_SWAP_detected_opcodes": sum(
+            residual > 1.0e-6 for residual in dirty_exchange_residuals
+        ),
+        "maximum_onsite_forward_inverse_residual": max(
+            onsite_roundtrip_residuals, default=0.0
+        ),
+        "opcode_execution_rows": tuple(rows),
+    }
+
+
+def unlawful_type_controls(
+    charged: frozenset[Coord],
+    neutral: frozenset[Coord],
+    routes: tuple[RouteRecord, ...],
+) -> dict[str, object]:
+    charged_route_site = next(
+        site
+        for route in routes if route.exchange == "FSWAP"
+        for site in route.path
+        if site not in neutral
+    )
+    neutral_route_site = next(
+        site
+        for route in routes if route.exchange == "SWAP"
+        for site in route.path[:-1]
+        if site not in charged
+    )
+    single_charged_parity = B.dense_pauli(Pauli(z=1), 2)
+    return {
+        "charged_coordinate_retyped_neutral_overlap": len(
+            charged & (set(neutral) | {charged_route_site})
+        ),
+        "neutral_coordinate_retyped_charged_overlap": len(
+            (set(charged) | {neutral_route_site}) & neutral
+        ),
+        "FSWAP_on_mixed_charged_neutral_edge_commutator_residual": float(
+            np.linalg.norm(
+                S25.FSWAP @ single_charged_parity
+                - single_charged_parity @ S25.FSWAP
+            )
+        ),
+        "SWAP_on_mixed_charged_neutral_edge_commutator_residual": float(
+            np.linalg.norm(
+                S25.SWAP @ single_charged_parity
+                - single_charged_parity @ S25.SWAP
+            )
+        ),
+    }
+
+
+def one_particle_mass_fixture() -> dict[str, object]:
+    return dict(U720.C.R.local_free_contact_mass()["mass_contact"])
 
 
 def accumulator_selftest() -> dict[str, object]:
@@ -1049,9 +1455,9 @@ def covariance_certificate(
 
 def shape_certificate(shape, atlas, *, covariance: bool = False):
     context = local_site_maps(shape, atlas)
-    context, routes, words, atoms, seams, pre_repair = fixed_typed_compile(
-        context
-    )
+    (
+        context, routes, words, atoms, seams, nonseam, pre_repair
+    ) = fixed_typed_compile(context)
     type_assignment, charged, neutral = fixed_type_assignment(context, routes)
     graph = collision_graph(words)
     wrong_stage = collision_graph(words, erase_stage=True)
@@ -1066,18 +1472,48 @@ def shape_certificate(shape, atlas, *, covariance: bool = False):
     )
     local_matrix_controls = primitive_parity_certificate(words)
     global_parity = global_parity_certificate(words, charged, neutral)
+    type_controls = unlawful_type_controls(charged, neutral, routes)
+    primitive_count = sum(len(word.primitives) for word in words)
+    base = COMMITTED_ROUTE_C_BASE[tuple(shape)]
+    overhead = {
+        "committed_route_C_base_primitives": base["primitives"],
+        "complete_G_primitives": primitive_count,
+        "primitive_increase": primitive_count - base["primitives"],
+        "primitive_overhead_ratio": primitive_count / base["primitives"],
+        "nonseam_factors_added": nonseam["landed_nonseam_factors"],
+        "nonseam_routed_primitives": nonseam[
+            "routed_literal_radius_one_primitives"
+        ],
+        "committed_route_C_base_charged_coordinates": base["charged"],
+        "complete_G_charged_coordinates": type_assignment[
+            "global_charged_coordinate_count"
+        ],
+        "charged_coordinate_increase": (
+            type_assignment["global_charged_coordinate_count"] - base["charged"]
+        ),
+        "committed_route_C_base_neutral_coordinates": base["neutral"],
+        "complete_G_neutral_coordinates": type_assignment[
+            "global_neutral_coordinate_count"
+        ],
+        "neutral_coordinate_increase": (
+            type_assignment["global_neutral_coordinate_count"] - base["neutral"]
+        ),
+        "persistent_M2_added": 0,
+    }
     result = {
         "shape": shape,
         "cells": len(context["fixture"].cells),
         "words": len(words),
-        "literal_radius_one_primitives": sum(len(word.primitives) for word in words),
+        "literal_radius_one_primitives": primitive_count,
         "stage_order": STAGE_ORDER,
         "stage_labels_are_physical_time": False,
         "owner_local_work_M2_per_cell": 1,
         "pre_repair_type_audit": pre_repair,
         "fixed_global_type_assignment": type_assignment,
         "bell_atoms": atoms,
+        "recurrent_nonseam": nonseam,
         "recurrent_seams": seams,
+        "resource_overhead": overhead,
         "routes": route,
         "collision_graph": graph,
         "wrong_stage_collision_graph": wrong_stage,
@@ -1087,6 +1523,7 @@ def shape_certificate(shape, atlas, *, covariance: bool = False):
         ),
         "local_matrix_controls": local_matrix_controls,
         "global_P_ext_audit": global_parity,
+        "unlawful_type_controls": type_controls,
         "maximum_primitive_M2_diameter": (
             1 if any(word.primitives for word in words) else 0
         ),
@@ -1106,6 +1543,9 @@ def main() -> None:
     )
     fswap = fswap_control()
     accumulator = accumulator_selftest()
+    opcode_catalog = nonseam_opcode_catalog()
+    nonseam_execution = nonseam_returned_route_execution_certificate()
+    mass_fixture = one_particle_mass_fixture()
     cycle734_boundary = {
         "landed_note_path": C734.NOTE_PATH,
         "pair_template_is_physical_NN_genesis": False,
@@ -1120,6 +1560,60 @@ def main() -> None:
         "Cycle821_carrier": C821.NOTE_PATH,
     }
     checks = {
+        "complete_landed_29_per_cell_nonseam_dictionary_is_compiled": (
+            opcode_catalog["unique_nonseam_opcodes"] == 13
+            and opcode_catalog["unique_routed_two_site_opcodes"] == 12
+            and opcode_catalog["unique_onsite_one_site_opcodes"] == 1
+            and opcode_catalog[
+                "maximum_charged_parity_commutator_residual"
+            ] < 1.0e-12
+            and opcode_catalog["maximum_unitarity_residual"] < 1.0e-12
+            and len({
+                box["recurrent_nonseam"]["landed_local_dictionary_sha256"]
+                for box in boxes
+            }) == 1
+            and all(
+                box["recurrent_nonseam"]["landed_nonseam_factors"]
+                    == box["recurrent_nonseam"][
+                        "expected_29_per_cell_nonseam_factors"
+                    ]
+                and box["recurrent_nonseam"]["stage_factor_census"]
+                    == box["recurrent_nonseam"][
+                        "expected_stage_factor_census"
+                    ]
+                and box["recurrent_nonseam"]["one_site_phase_factors"]
+                    == box["cells"]
+                and box["recurrent_nonseam"]["two_site_charged_factors"]
+                    == 28 * box["cells"]
+                and box["recurrent_nonseam"]["unique_opcode_coverage"] == 13
+                and box["recurrent_nonseam"]["matrix_binding_failures"] == 0
+                and box["recurrent_nonseam"]["charged_parity_failures"] == 0
+                for box in boxes
+            )
+        ),
+        "every_unique_nonseam_opcode_has_executed_returned_route_semantics": (
+            nonseam_execution["unique_opcodes_tested"] == 13
+            and nonseam_execution["unique_two_site_opcodes_routed"] == 12
+            and nonseam_execution["unique_one_site_opcodes_executed_onsite"] == 1
+            and nonseam_execution[
+                "maximum_clean_returned_route_execution_residual"
+            ] < 1.0e-12
+            and nonseam_execution[
+                "maximum_onsite_forward_inverse_residual"
+            ] < 1.0e-12
+            and nonseam_execution["minimum_return_deletion_residual"] > 1.0e-6
+        ),
+        "landed_one_particle_mass_fixture_is_rerun": (
+            mass_fixture["one_particle_coin_eigen_residual"] < 1.0e-12
+            and mass_fixture["one_particle_mass_residual"] < 1.0e-12
+            and mass_fixture[
+                "contact_vacuum_and_one_particle_residual"
+            ] < 1.0e-12
+            and mass_fixture[
+                "contact_double_occupation_phase_residual"
+            ] < 1.0e-12
+            and mass_fixture["one_particle_extended_even_sector_present"]
+        ),
         "all_Bell_pump_correction_rows_replay_as_parity_even_atoms": all(
             box["bell_atoms"]["row_replay_failures"] == 0
             and box["bell_atoms"]["atom_parity_failures"] == 0
@@ -1219,6 +1713,21 @@ def main() -> None:
             ] == 0
             for box in boxes
         ),
+        "unlawful_coordinate_type_mutations_are_detected": all(
+            box["unlawful_type_controls"][
+                "charged_coordinate_retyped_neutral_overlap"
+            ] > 0
+            and box["unlawful_type_controls"][
+                "neutral_coordinate_retyped_charged_overlap"
+            ] > 0
+            and box["unlawful_type_controls"][
+                "FSWAP_on_mixed_charged_neutral_edge_commutator_residual"
+            ] > 1.0e-6
+            and box["unlawful_type_controls"][
+                "SWAP_on_mixed_charged_neutral_edge_commutator_residual"
+            ] > 1.0e-6
+            for box in boxes
+        ),
         "every_primitive_and_prefix_commutes_with_one_global_P_ext": all(
             box["global_P_ext_audit"]["single_global_P_ext"]
             and box["global_P_ext_audit"][
@@ -1275,6 +1784,12 @@ def main() -> None:
         "clean_work_Z_accumulator_is_exact": (
             accumulator["maximum_clean_work_accumulator_residual"] < 1.0e-12
         ),
+        "complete_G_resource_overhead_is_explicit": all(
+            box["resource_overhead"]["primitive_increase"] > 0
+            and box["resource_overhead"]["charged_coordinate_increase"] >= 0
+            and box["resource_overhead"]["persistent_M2_added"] == 0
+            for box in boxes
+        ),
         "Cycle734_is_not_misimported_as_physical_genesis": (
             not cycle734_boundary["pair_template_is_physical_NN_genesis"]
             and cycle734_boundary["external_application_position_remains_supplied"]
@@ -1290,6 +1805,9 @@ def main() -> None:
         "boxes": boxes,
         "ordinary_vs_FSWAP_control": fswap,
         "clean_work_accumulator_selftest": accumulator,
+        "nonseam_opcode_catalog": opcode_catalog,
+        "nonseam_returned_route_execution": nonseam_execution,
+        "one_particle_mass_fixture": mass_fixture,
         "Cycle734_import_boundary": cycle734_boundary,
         "direct_import_inventory": import_inventory,
         "supplied": [
@@ -1313,6 +1831,11 @@ def main() -> None:
             "parity-active two-target Bell/pump/correction atom",
             "exact even-Pauli diagonalise/accumulate/phase/uncompute "
             "algorithm for every recurrent seam factor",
+            "the complete landed 29-per-cell recurrent coin, reverse-FSWAP, "
+            "and contact dictionary, with every two-site factor routed on "
+            "the same fixed charged atlas and every unique opcode executed",
+            "the landed one-particle mass fixture and explicit complete-G "
+            "resource overhead",
             "zero collision edges under the fixed staggered schedule on "
             "base and held shapes",
             "24-frame, eight-origin, 576-product coordinate/collision "

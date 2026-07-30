@@ -76,6 +76,7 @@ SCHEMA_DEFERRED_RESULT = "schema_invalid_peer_deferred"
 SCHEMA_SUPERSEDED_RESULT = "schema_invalid_attempt_superseded"
 BLOCKED_ROW_QUARANTINE_RESULT = "blocked_row_reentry_quarantined"
 COMPUTE_QUARANTINE_RESULT = "compute_required_quarantined"
+PROMPT_TRANSPORT_QUARANTINE_RESULT = "prompt_transport_quarantined"
 CLAIM_TRANSACTION_QUARANTINE_RESULT = "claim_transaction_quarantined"
 SCHEMA_RECOVERY_RESULTS = {
     SCHEMA_QUARANTINE_RESULT,
@@ -85,6 +86,7 @@ SCHEMA_RECOVERY_RESULTS = {
 CAMPAIGN_EXCLUSION_RESULTS = {
     BLOCKED_ROW_QUARANTINE_RESULT,
     COMPUTE_QUARANTINE_RESULT,
+    PROMPT_TRANSPORT_QUARANTINE_RESULT,
     CLAIM_TRANSACTION_QUARANTINE_RESULT,
 }
 CAMPAIGN_EXCLUSION_REASONS = {
@@ -201,6 +203,10 @@ NON_RETRYABLE_SERVICE_MARKERS = (
 
 class CleanupIntegrityError(RuntimeError):
     """An owned read-only seat group could not be proven absent."""
+
+
+class PromptTransportBlockedError(ValueError):
+    """A complete authenticated worker packet cannot fit Codex transport."""
 
 
 def safe_exception_type_name(exc: BaseException) -> str:
@@ -814,6 +820,45 @@ def prompt_has_clipped_evidence(manifest: dict[str, dict]) -> list[str]:
     )
 
 
+def worker_prompt_requires_forensic_bound(
+    row: dict,
+    rows: dict[str, dict],
+) -> bool:
+    """Return whether an N8 transport bound must forbid a clean verdict."""
+    cid = str(row.get("claim_id") or "")
+    ledger_row = rows.get(cid, {})
+    note_path = row.get("note_path") or ledger_row.get("note_path") or ""
+    note_body = (
+        (audit_runner.read_note_body(note_path) or "") if note_path else ""
+    )
+    claim_type = row.get("claim_type") or ledger_row.get("claim_type") or ""
+    dispatch_target = bool(row.get("dispatch_target"))
+    return bool(
+        audit_runner.no_go_discipline_gate.source_requires_no_go_discipline(
+            note_path,
+            note_body,
+            "" if dispatch_target else claim_type,
+        )
+        or (not dispatch_target and claim_type == "no_go")
+        or audit_runner.no_go_discipline_gate.forensic_mode()
+    )
+
+
+def fit_worker_prompt_to_transport_limit(
+    row: dict,
+    rows: dict[str, dict],
+    prompt: str,
+    evidence_manifest: dict[str, dict],
+) -> tuple[str, dict[str, int] | None]:
+    """Apply the canonical deterministic N8 bound before batch transport."""
+    return audit_runner.fit_prompt_to_transport_limit(
+        prompt,
+        evidence_manifest,
+        str(row.get("claim_id") or ""),
+        forensic_bound=worker_prompt_requires_forensic_bound(row, rows),
+    )
+
+
 def launch_worker(
     row: dict,
     rows: dict[str, dict],
@@ -850,8 +895,17 @@ def launch_worker(
             "leave no_go_discipline=null unless you can supply a structurally "
             "valid optional packet from the rendered evidence.\n"
         )
+    try:
+        prompt, transport_bound = fit_worker_prompt_to_transport_limit(
+            row,
+            rows,
+            prompt,
+            evidence_manifest,
+        )
+    except ValueError as exc:
+        raise PromptTransportBlockedError(str(exc)) from exc
     if len(prompt) > audit_runner.CODEX_INPUT_CHAR_LIMIT:
-        raise ValueError(
+        raise PromptTransportBlockedError(
             f"{cid}: development packet is {len(prompt)} characters; "
             "packet must be narrowed without converting transport size into a verdict"
         )
@@ -915,7 +969,7 @@ def launch_worker(
         ),
         "selection_source": row.get("_selection_source"),
         "source_fingerprint": row.get("_source_fingerprint"),
-        "transport_bound": None,
+        "transport_bound": transport_bound,
         "auditor": f"codex-audit-batch-{ident}",
         "independence": seat_independence(row, pass_no),
         "workdir": workdir,
@@ -2498,6 +2552,13 @@ def _campaign_failure_schema_error(
                 f"{reason!r}"
             )
         expected = {"cid", "pass", "result", "detail"}
+    elif reason == PROMPT_TRANSPORT_QUARANTINE_RESULT:
+        if result != "prompt_transport_blocked":
+            return (
+                "campaign exclusion failure result is incompatible with "
+                f"{reason!r}"
+            )
+        expected = {"cid", "pass", "result", "detail"}
     elif reason == CLAIM_TRANSACTION_QUARANTINE_RESULT:
         if result == "apply_or_gate_failed":
             expected = {
@@ -2961,6 +3022,20 @@ def persist_compute_required_skips(
         reason=COMPUTE_QUARANTINE_RESULT,
         report=report,
         companion_results={"compute_required"},
+    )
+
+
+def persist_prompt_transport_quarantines(
+    path: Path | None,
+    claim_ids: set[str],
+    report: list[dict],
+) -> None:
+    persist_campaign_exclusions(
+        path,
+        claim_ids,
+        reason=PROMPT_TRANSPORT_QUARANTINE_RESULT,
+        report=report,
+        companion_results={"prompt_transport_blocked"},
     )
 
 
@@ -3542,6 +3617,7 @@ def main() -> int:
             break
         jobs: list[dict] = []
         launch_blocked = False
+        transport_quarantines: set[str] = set()
         try:
             for row in batch:
                 for pass_no in passes_for_row(row):
@@ -3552,8 +3628,8 @@ def main() -> int:
                                 args.runner_timeout_sec, round_no,
                             )
                         )
-                    except ValueError as exc:
-                        launch_blocked = True
+                    except PromptTransportBlockedError as exc:
+                        transport_quarantines.add(row["claim_id"])
                         report.append({
                             "cid": row["claim_id"],
                             "pass": pass_no,
@@ -3571,6 +3647,21 @@ def main() -> int:
         except BaseException:
             terminate_workers(jobs)
             raise
+        session_skipped.update(transport_quarantines)
+        for cid in sorted(transport_quarantines):
+            report.append({
+                "cid": cid,
+                "result": PROMPT_TRANSPORT_QUARANTINE_RESULT,
+                "detail": (
+                    "complete authenticated packet cannot fit the bounded "
+                    "Codex transport; excluded claim-locally for this campaign"
+                ),
+            })
+        persist_prompt_transport_quarantines(
+            args.campaign_quarantine_file,
+            transport_quarantines,
+            report,
+        )
         if not jobs:
             break
         print(
@@ -3745,7 +3836,8 @@ def hard_blocking_report_items(report: list[dict]) -> list[dict]:
     recovered = {
         item.get("cid")
         for item in report
-        if item.get("result") in SCHEMA_RECOVERY_RESULTS
+        if item.get("result")
+        in SCHEMA_RECOVERY_RESULTS | {PROMPT_TRANSPORT_QUARANTINE_RESULT}
     }
     transaction_quarantined = {
         item.get("cid")
@@ -3757,7 +3849,10 @@ def hard_blocking_report_items(report: list[dict]) -> list[dict]:
         for item in report
         if item.get("result") == TRANSIENT_SERVICE_FAILURE_RESULT
     }
-    quarantine_companions = SCHEMA_INVALID_RESULTS | {"critical_peer_pending"}
+    quarantine_companions = SCHEMA_INVALID_RESULTS | {
+        "critical_peer_pending",
+        "prompt_transport_blocked",
+    }
     transient_companions = {
         "critical_peer_delivery_missing",
         "critical_peer_pending",

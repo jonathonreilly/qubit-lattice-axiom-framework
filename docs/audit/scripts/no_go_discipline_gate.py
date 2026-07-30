@@ -100,7 +100,10 @@ ROUTE_CLASSES = {
 ROUTE_CLASS_MARKERS = {
     "algebraic_rearrangement": re.compile(r"\b(?:algebra|identity|rearrang|factor|cancel|solve)\w*\b", re.I),
     "symmetry_or_representation": re.compile(r"\b(?:symmetr|invarian|represent|commut|character|irrep|group)\w*\b", re.I),
-    "alternate_carrier_or_sector": re.compile(r"\b(?:alternate\s+)?(?:carrier|sector|module|space|irrep)\b", re.I),
+    "alternate_carrier_or_sector": re.compile(
+        r"\b(?:alternate\s+)?(?:carriers?|sectors?|modules?|spaces?|irreps?)\b",
+        re.I,
+    ),
     "boundary_or_initial_condition": re.compile(r"\b(?:boundary|initial|background|state|pointwise)\w*\b", re.I),
     "normalization_or_units": re.compile(
         r"(?:\b(?:normaliz|units?|scale|dimensionful)\w*\b|\bW_unit\b)", re.I
@@ -142,6 +145,12 @@ POLICY_NEGATIVE_CLASSES = {
     "conditional_wall_rationale",
 }
 ROUTE_DISPOSITIONS = {"CLOSED", "OPEN", "UNTESTED"}
+
+
+def route_class_marker_matches(route_class: str, route_semantics: str) -> bool:
+    """Match documented route markers across prose and identifier tokens."""
+    marker_text = re.sub(r"[_-]+", " ", route_semantics)
+    return bool(ROUTE_CLASS_MARKERS[route_class].search(marker_text))
 
 PATH_TRIGGER_RE = re.compile(
     r"(?:^|[\s/._-])(?:no[\s_-]?go|obstruction|firewall|negative[\s_-]?boundary|"
@@ -3401,7 +3410,7 @@ def _validate_n1(packet: dict, status: str, manifest: dict[str, dict] | None) ->
         route_semantics = " ".join(
             str(route.get(field) or "") for field in ("mechanism", "attempt", "outcome")
         )
-        if not ROUTE_CLASS_MARKERS[route_class].search(route_semantics):
+        if not route_class_marker_matches(route_class, route_semantics):
             return (
                 f"N1 route {index}.route_class={route_class!r} is not supported "
                 "by its evidenced mechanism/attempt/outcome vocabulary"

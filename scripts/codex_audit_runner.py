@@ -3178,6 +3178,8 @@ def render_fresh_schema_retry_prompt(
         "N1_ROUTE_CLASS_MARKER_MISMATCH": (
             "Static N1 invariant: the joined mechanism, attempt, and outcome must "
             "contain a documented literal marker for the selected route_class. "
+            "Identifier separators '_' and '-' count as lexical boundaries, and "
+            "ordinary carrier/sector/module/space/irrep plurals are accepted. "
             "At least one of those fields must itself copy the marker. When a "
             "check label lacks it, use an evidenced marker-bearing live section "
             "header that genuinely names the same route; do not duplicate fields "

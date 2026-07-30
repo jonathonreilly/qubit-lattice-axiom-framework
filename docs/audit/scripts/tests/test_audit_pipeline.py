@@ -8977,6 +8977,34 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
         )
 
+    def test_n1_route_class_accepts_campaign_identifier_and_plural_markers(self):
+        m = _import("no_go_discipline_gate")
+        cases = (
+            (
+                "boundary_or_initial_condition",
+                "oriented_cubical_boundary",
+            ),
+            (
+                "dynamical_or_effective_action",
+                "RECORD_FINITE_ALPHABET_POST_RECORD_DYNAMICS_2026-06-05.md",
+            ),
+            (
+                "alternate_carrier_or_sector",
+                "one-form and dual three-form boundary carriers",
+            ),
+        )
+        for route_class, route_semantics in cases:
+            with self.subTest(route_class=route_class, route_semantics=route_semantics):
+                self.assertTrue(
+                    m.route_class_marker_matches(route_class, route_semantics)
+                )
+        self.assertFalse(
+            m.route_class_marker_matches(
+                "topology_or_global_structure",
+                "generic determinant identity",
+            )
+        )
+
     def test_n1_algebraic_route_uses_marker_bearing_live_header(self):
         m = _import("no_go_discipline_gate")
         manifest = self._manifest()

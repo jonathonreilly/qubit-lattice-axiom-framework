@@ -33,34 +33,8 @@
     "retained_no_go"
   ],
   "runner_drift_candidates": [],
-  "runner_stdout_transport_candidates": [
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
-      "cached_runner_stdout_chars": 18735,
-      "candidate_reason": "runner_stdout_transport_unclipped_by_head_tail_v2",
-      "claim_id": "gmn_vev_annihilator_l4_support_note_2026-07-02",
-      "claim_scope": "Given supplied T_3=diag(+1/2,-1/2), Y_H=+1, and v_0=(0,1)^T, the annihilator in span{T_3,Y} is one-dimensional with b/a=+1/2, yielding Q=T_3+Y/2 up to normalization.",
-      "claim_type": "bounded_theorem",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "current_dep_effective_status": {},
-      "current_runner_stdout_char_limit": 20000,
-      "deps": [],
-      "direct_in_degree": 0,
-      "effective_status": "audited_conditional",
-      "generated_order": 1,
-      "improved_dependencies": [],
-      "legacy_runner_stdout_char_limit": 6000,
-      "load_bearing_score": 0.0,
-      "note_hash": "467a8176bd41abee7993379069915ad387fcace427b9983519b21c4f26f61626",
-      "note_path": "docs/GMN_VEV_ANNIHILATOR_L4_SUPPORT_NOTE_2026-07-02.md",
-      "reraudit_after_claim_ids": [],
-      "runner_path": "scripts/frontier_hypercharge_identification.py",
-      "transitive_descendants": 0
-    }
-  ],
+  "runner_stdout_transport_candidates": [],
   "total_candidates": 0,
   "total_runner_drift_candidates": 0,
-  "total_runner_stdout_transport_candidates": 1
+  "total_runner_stdout_transport_candidates": 0
 }

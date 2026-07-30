@@ -997,12 +997,21 @@ def global_parity_certificate(
             prefix_in_common_commutant &= not failed
             prefix_failures += not prefix_in_common_commutant
             tested += 1
+    assigned_sites = charged | neutral
+    used_sites = {
+        site for word in words for primitive in word.primitives
+        for site in primitive.sites
+    }
+    assignment_failures = len(used_sites - assigned_sites) + len(charged & neutral)
+    parity_digest = sha256(repr(tuple(sorted(charged))).encode()).hexdigest()
     return {
-        "single_global_P_ext": True,
+        "single_global_P_ext": assignment_failures == 0 and bool(charged),
+        "P_ext_coordinate_sha256": parity_digest,
+        "global_type_assignment_failures": assignment_failures,
         "elementary_primitives_tested": tested,
         "elementary_global_P_ext_commutator_failures": elementary_failures,
-        "prefixes_tested": tested,
-        "prefix_global_P_ext_commutator_failures": prefix_failures,
+        "prefixes_certified_by_elementary_closure": tested,
+        "prefix_commutant_certificate_failures": prefix_failures,
         "maximum_elementary_global_P_ext_commutator_residual": maximum_residual,
         "primitive_untyped_coordinate_uses": untyped_sites,
         "prefix_proof": (
@@ -1155,13 +1164,81 @@ def fswap_control() -> dict[str, float]:
     }
 
 
+def sparse_apply_two_site(
+    state: dict[int, complex], gate: np.ndarray, sites: tuple[int, int]
+) -> dict[int, complex]:
+    """Apply a two-site gate to a sparse computational-basis state."""
+    first, second = sites
+    cleared_mask = ~((1 << first) | (1 << second))
+    output: dict[int, complex] = defaultdict(complex)
+    for basis, amplitude in state.items():
+        source = ((basis >> first) & 1) | (((basis >> second) & 1) << 1)
+        cleared = basis & cleared_mask
+        for target in range(4):
+            coefficient = gate[target, source]
+            if abs(coefficient) < 1.0e-15:
+                continue
+            target_basis = (
+                cleared
+                | ((target & 1) << first)
+                | (((target >> 1) & 1) << second)
+            )
+            output[target_basis] += coefficient * amplitude
+    return dict(output)
+
+
+def sparse_state_residual(
+    left: dict[int, complex], right: dict[int, complex]
+) -> float:
+    keys = set(left) | set(right)
+    return float(math.sqrt(sum(
+        abs(left.get(key, 0.0) - right.get(key, 0.0)) ** 2
+        for key in keys
+    )))
+
+
+def clean_returned_route_basis_certificate(
+    matrix: np.ndarray, maximum_distance: int
+) -> tuple[int, float]:
+    """Check every clean-rail endpoint basis state without a dense 2^d array."""
+    cases = 0
+    maximum_residual = 0.0
+    for distance in range(1, maximum_distance + 1):
+        for left_bit in (0, 1):
+            for right_bit in (0, 1):
+                source_basis = left_bit | (right_bit << distance)
+                source = {source_basis: 1.0 + 0.0j}
+                routed = source
+                for index in range(distance - 1):
+                    routed = sparse_apply_two_site(
+                        routed, S25.FSWAP, (index, index + 1)
+                    )
+                routed = sparse_apply_two_site(
+                    routed, matrix, (distance - 1, distance)
+                )
+                for index in reversed(range(distance - 1)):
+                    routed = sparse_apply_two_site(
+                        routed, S25.FSWAP, (index, index + 1)
+                    )
+                direct = sparse_apply_two_site(source, matrix, (0, distance))
+                maximum_residual = max(
+                    maximum_residual, sparse_state_residual(routed, direct)
+                )
+                cases += 1
+    return cases, maximum_residual
+
+
 def nonseam_returned_route_execution_certificate() -> dict[str, object]:
     """Execute every unique landed opcode through a generic returned rail."""
     rows = []
     routed_residuals = []
     deletion_residuals = []
     dirty_exchange_residuals = []
+    deletion_ranks = []
+    deletion_singular_values = []
     onsite_roundtrip_residuals = []
+    clean_basis_cases = 0
+    clean_basis_residuals = []
     for opcode_index, (opcode, base, arity, digest, matrix) in enumerate(
         nonseam_opcode_entries()
     ):
@@ -1185,6 +1262,11 @@ def nonseam_returned_route_execution_certificate() -> dict[str, object]:
             })
             continue
         width = 4
+        basis_cases, basis_residual = clean_returned_route_basis_certificate(
+            matrix, 43
+        )
+        clean_basis_cases += basis_cases
+        clean_basis_residuals.append(basis_residual)
         clean = np.zeros(1 << width, dtype=complex)
         endpoint_amplitudes = rng.normal(size=4) + 1j * rng.normal(size=4)
         endpoint_amplitudes /= np.linalg.norm(endpoint_amplitudes)
@@ -1210,6 +1292,63 @@ def nonseam_returned_route_execution_certificate() -> dict[str, object]:
             deleted, S25.FSWAP, forward[-1], width
         )
         deletion_residual = float(np.linalg.norm(deleted - direct))
+        deletion_columns = []
+        for left_bit in (0, 1):
+            for right_bit in (0, 1):
+                basis = np.zeros(1 << width, dtype=complex)
+                basis[left_bit | (right_bit << 3)] = 1.0
+                target = U720.c707.apply_gate(basis, matrix, (0, 3), width)
+                omitted = basis
+                for sites in forward:
+                    omitted = U720.c707.apply_gate(
+                        omitted, S25.FSWAP, sites, width
+                    )
+                omitted = U720.c707.apply_gate(
+                    omitted, matrix, (2, 3), width
+                )
+                omitted = U720.c707.apply_gate(
+                    omitted, S25.FSWAP, forward[-1], width
+                )
+                deletion_columns.append(omitted - target)
+        deletion_operator = np.column_stack(deletion_columns)
+        singular_values = np.linalg.svd(
+            deletion_operator, compute_uv=False
+        )
+        deletion_rank = int(np.linalg.matrix_rank(
+            deletion_operator, tol=1.0e-12
+        ))
+        fswap_columns = []
+        swap_columns = []
+        for basis_index in range(1 << width):
+            basis = np.zeros(1 << width, dtype=complex)
+            basis[basis_index] = 1.0
+            routed_f = basis
+            routed_s = basis
+            for sites in forward:
+                routed_f = U720.c707.apply_gate(
+                    routed_f, S25.FSWAP, sites, width
+                )
+                routed_s = U720.c707.apply_gate(
+                    routed_s, S25.SWAP, sites, width
+                )
+            routed_f = U720.c707.apply_gate(
+                routed_f, matrix, (2, 3), width
+            )
+            routed_s = U720.c707.apply_gate(
+                routed_s, matrix, (2, 3), width
+            )
+            for sites in reversed(forward):
+                routed_f = U720.c707.apply_gate(
+                    routed_f, S25.FSWAP, sites, width
+                )
+                routed_s = U720.c707.apply_gate(
+                    routed_s, S25.SWAP, sites, width
+                )
+            fswap_columns.append(routed_f)
+            swap_columns.append(routed_s)
+        dirty_operator_residual = float(np.linalg.norm(
+            np.column_stack(fswap_columns) - np.column_stack(swap_columns)
+        ))
         dirty = rng.normal(size=1 << width) + 1j * rng.normal(size=1 << width)
         dirty /= np.linalg.norm(dirty)
         fswap_dirty = dirty
@@ -1237,7 +1376,9 @@ def nonseam_returned_route_execution_certificate() -> dict[str, object]:
         dirty_residual = float(np.linalg.norm(fswap_dirty - swap_dirty))
         routed_residuals.append(route_residual)
         deletion_residuals.append(deletion_residual)
-        dirty_exchange_residuals.append(dirty_residual)
+        deletion_ranks.append(deletion_rank)
+        deletion_singular_values.append(tuple(float(value) for value in singular_values))
+        dirty_exchange_residuals.append(dirty_operator_residual)
         rows.append({
             "opcode": opcode,
             "landed_kind": base,
@@ -1245,8 +1386,17 @@ def nonseam_returned_route_execution_certificate() -> dict[str, object]:
             "matrix_sha256": digest,
             "generic_route_distance": 3,
             "clean_returned_route_execution_residual": route_residual,
+            "clean_route_distances_1_through_43_basis_cases": basis_cases,
+            "clean_route_distances_1_through_43_maximum_residual": basis_residual,
             "deleted_return_execution_residual": deletion_residual,
-            "dirty_FSWAP_vs_unlawful_SWAP_residual": dirty_residual,
+            "deleted_return_clean_subspace_rank": deletion_rank,
+            "deleted_return_clean_subspace_singular_values": tuple(
+                float(value) for value in singular_values
+            ),
+            "dirty_FSWAP_vs_unlawful_SWAP_seeded_state_residual": dirty_residual,
+            "dirty_FSWAP_vs_unlawful_SWAP_clean_subspace_operator_residual": (
+                dirty_operator_residual
+            ),
         })
     return {
         "unique_opcodes_tested": len(rows),
@@ -1255,11 +1405,43 @@ def nonseam_returned_route_execution_certificate() -> dict[str, object]:
         "maximum_clean_returned_route_execution_residual": max(
             routed_residuals, default=0.0
         ),
+        "clean_route_distances_1_through_43_basis_cases": clean_basis_cases,
+        "clean_route_distances_1_through_43_maximum_residual": max(
+            clean_basis_residuals, default=0.0
+        ),
         "minimum_return_deletion_residual": min(
             deletion_residuals, default=0.0
         ),
+        "minimum_return_deletion_clean_subspace_rank": min(
+            deletion_ranks, default=0
+        ),
+        "maximum_return_deletion_clean_subspace_rank": max(
+            deletion_ranks, default=0
+        ),
+        "maximum_return_deletion_clean_subspace_nullity": max(
+            (4 - rank for rank in deletion_ranks), default=0
+        ),
+        "maximum_return_deletion_clean_subspace_singular_value_error": max(
+            (
+                max(abs(observed - expected) for observed, expected in zip(
+                    values, (math.sqrt(2), math.sqrt(2), 0.0, 0.0)
+                ))
+                for values in deletion_singular_values
+            ),
+            default=0.0,
+        ),
         "dirty_unlawful_SWAP_detected_opcodes": sum(
             residual > 1.0e-6 for residual in dirty_exchange_residuals
+        ),
+        "minimum_detected_dirty_SWAP_operator_residual": min(
+            (
+                residual for residual in dirty_exchange_residuals
+                if residual > 1.0e-6
+            ),
+            default=0.0,
+        ),
+        "maximum_dirty_SWAP_operator_residual": max(
+            dirty_exchange_residuals, default=0.0
         ),
         "maximum_onsite_forward_inverse_residual": max(
             onsite_roundtrip_residuals, default=0.0
@@ -1274,24 +1456,48 @@ def unlawful_type_controls(
     routes: tuple[RouteRecord, ...],
 ) -> dict[str, object]:
     charged_route_site = next(
-        site
-        for route in routes if route.exchange == "FSWAP"
-        for site in route.path
-        if site not in neutral
+        site for route in routes if route.exchange == "FSWAP"
+        for site in route.path if site in charged and site not in neutral
     )
     neutral_route_site = next(
-        site
+        site for route in routes if route.exchange == "SWAP"
+        for site in route.path[:-1] if site in neutral and site not in charged
+    )
+    charged_to_neutral_charged = set(charged) - {charged_route_site}
+    charged_to_neutral_neutral = set(neutral) | {charged_route_site}
+    neutral_to_charged_charged = set(charged) | {neutral_route_site}
+    neutral_to_charged_neutral = set(neutral) - {neutral_route_site}
+    charged_to_neutral_route_failures = sum(
+        any(
+            site not in charged_to_neutral_charged
+            or site in charged_to_neutral_neutral
+            for site in route.path
+        )
+        for route in routes if route.exchange == "FSWAP"
+    )
+    neutral_to_charged_route_failures = sum(
+        any(
+            site not in neutral_to_charged_neutral
+            or site in neutral_to_charged_charged
+            for site in route.path[:-1]
+        )
         for route in routes if route.exchange == "SWAP"
-        for site in route.path[:-1]
-        if site not in charged
     )
     single_charged_parity = B.dense_pauli(Pauli(z=1), 2)
     return {
-        "charged_coordinate_retyped_neutral_overlap": len(
-            charged & (set(neutral) | {charged_route_site})
+        "charged_to_neutral_retype_coordinate": charged_route_site,
+        "charged_to_neutral_post_mutation_overlap": len(
+            charged_to_neutral_charged & charged_to_neutral_neutral
         ),
-        "neutral_coordinate_retyped_charged_overlap": len(
-            (set(charged) | {neutral_route_site}) & neutral
+        "charged_to_neutral_FSWAP_route_type_failures": (
+            charged_to_neutral_route_failures
+        ),
+        "neutral_to_charged_retype_coordinate": neutral_route_site,
+        "neutral_to_charged_post_mutation_overlap": len(
+            neutral_to_charged_charged & neutral_to_charged_neutral
+        ),
+        "neutral_to_charged_SWAP_route_type_failures": (
+            neutral_to_charged_route_failures
         ),
         "FSWAP_on_mixed_charged_neutral_edge_commutator_residual": float(
             np.linalg.norm(
@@ -1474,6 +1680,17 @@ def shape_certificate(shape, atlas, *, covariance: bool = False):
     global_parity = global_parity_certificate(words, charged, neutral)
     type_controls = unlawful_type_controls(charged, neutral, routes)
     primitive_count = sum(len(word.primitives) for word in words)
+    primitive_diameters = tuple(
+        max(
+            (
+                S789.manhattan(left, right)
+                for left_index, left in enumerate(primitive.sites)
+                for right in primitive.sites[left_index + 1:]
+            ),
+            default=0,
+        )
+        for word in words for primitive in word.primitives
+    )
     base = COMMITTED_ROUTE_C_BASE[tuple(shape)]
     overhead = {
         "committed_route_C_base_primitives": base["primitives"],
@@ -1524,8 +1741,9 @@ def shape_certificate(shape, atlas, *, covariance: bool = False):
         "local_matrix_controls": local_matrix_controls,
         "global_P_ext_audit": global_parity,
         "unlawful_type_controls": type_controls,
-        "maximum_primitive_M2_diameter": (
-            1 if any(word.primitives for word in words) else 0
+        "maximum_primitive_M2_diameter": max(primitive_diameters, default=0),
+        "non_radius_one_primitive_failures": sum(
+            diameter > 1 for diameter in primitive_diameters
         ),
         "covariance": (
             covariance_certificate(words, charged, neutral)
@@ -1599,9 +1817,31 @@ def main() -> None:
                 "maximum_clean_returned_route_execution_residual"
             ] < 1.0e-12
             and nonseam_execution[
+                "clean_route_distances_1_through_43_basis_cases"
+            ] == 12 * 43 * 4
+            and nonseam_execution[
+                "clean_route_distances_1_through_43_maximum_residual"
+            ] < 1.0e-12
+            and nonseam_execution[
                 "maximum_onsite_forward_inverse_residual"
             ] < 1.0e-12
             and nonseam_execution["minimum_return_deletion_residual"] > 1.0e-6
+            and nonseam_execution[
+                "minimum_return_deletion_clean_subspace_rank"
+            ] == 2
+            and nonseam_execution[
+                "maximum_return_deletion_clean_subspace_rank"
+            ] == 2
+            and nonseam_execution[
+                "maximum_return_deletion_clean_subspace_nullity"
+            ] == 2
+            and nonseam_execution[
+                "maximum_return_deletion_clean_subspace_singular_value_error"
+            ] < 1.0e-12
+            and nonseam_execution["dirty_unlawful_SWAP_detected_opcodes"] == 11
+            and nonseam_execution[
+                "minimum_detected_dirty_SWAP_operator_residual"
+            ] > 1.0e-6
         ),
         "landed_one_particle_mass_fixture_is_rerun": (
             mass_fixture["one_particle_coin_eigen_residual"] < 1.0e-12
@@ -1647,6 +1887,7 @@ def main() -> None:
         ),
         "every_emitted_two_site_primitive_is_radius_one": all(
             box["maximum_primitive_M2_diameter"] == 1
+            and box["non_radius_one_primitive_failures"] == 0
             and box["routes"]["nearest_neighbour_failures"] == 0
             and box["routes"]["internal_persistent_palette_hits"] == 0
             for box in boxes
@@ -1660,8 +1901,9 @@ def main() -> None:
         "fixed_stage_colour_slot_schedule_has_zero_collision_edges": all(
             box["collision_graph"]["edges"] == 0 for box in boxes
         ),
-        "wrong_stage_and_colour_controls_are_active": all(
+        "stage_deletion_control_is_active_and_colour_redundancy_is_reported": all(
             box["wrong_stage_collision_graph"]["edges"] > 0
+            and box["wrong_colour_collision_graph"]["edges"] == 0
             and box["wrong_fixed_colour_assignment_failures"] > 0
             for box in boxes
         ),
@@ -1715,10 +1957,16 @@ def main() -> None:
         ),
         "unlawful_coordinate_type_mutations_are_detected": all(
             box["unlawful_type_controls"][
-                "charged_coordinate_retyped_neutral_overlap"
+                "charged_to_neutral_post_mutation_overlap"
+            ] == 0
+            and box["unlawful_type_controls"][
+                "charged_to_neutral_FSWAP_route_type_failures"
             ] > 0
             and box["unlawful_type_controls"][
-                "neutral_coordinate_retyped_charged_overlap"
+                "neutral_to_charged_post_mutation_overlap"
+            ] == 0
+            and box["unlawful_type_controls"][
+                "neutral_to_charged_SWAP_route_type_failures"
             ] > 0
             and box["unlawful_type_controls"][
                 "FSWAP_on_mixed_charged_neutral_edge_commutator_residual"
@@ -1730,11 +1978,14 @@ def main() -> None:
         ),
         "every_primitive_and_prefix_commutes_with_one_global_P_ext": all(
             box["global_P_ext_audit"]["single_global_P_ext"]
+            and box["global_P_ext_audit"]["global_type_assignment_failures"] == 0
+            and box["global_P_ext_audit"]["P_ext_coordinate_sha256"]
+                == box["fixed_global_type_assignment"]["P_ext_coordinate_sha256"]
             and box["global_P_ext_audit"][
                 "elementary_global_P_ext_commutator_failures"
             ] == 0
             and box["global_P_ext_audit"][
-                "prefix_global_P_ext_commutator_failures"
+                "prefix_commutant_certificate_failures"
             ] == 0
             and box["global_P_ext_audit"][
                 "primitive_untyped_coordinate_uses"

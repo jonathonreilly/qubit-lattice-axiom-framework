@@ -30,7 +30,7 @@
       "colour_product"
     ]
   },
-  "extended_from_commit": "aa453be0cc",
+  "extended_from_canonical_package_commit": "ba14d1954f",
   "fixed_global_type_repair": {
     "old_pairwise_certificate_withdrawn": true,
     "post_extension_cross_typed_coordinate_collisions": 0,
@@ -47,6 +47,10 @@
     "total_neutral_route_fixed_type_failures": 0,
     "total_prefix_global_P_ext_failures": 0,
     "total_untyped_primitive_coordinate_uses": 0,
+    "true_charged_to_neutral_retype_route_failures_positive_on_all_shapes": true,
+    "true_charged_to_neutral_retype_route_failures": [13, 13, 13, 13],
+    "true_neutral_to_charged_retype_route_failures_positive_on_all_shapes": true,
+    "true_neutral_to_charged_retype_route_failures": [4, 4, 6, 6],
     "unlawful_mixed_type_FSWAP_commutator_residual": 2.8284271247461903,
     "unlawful_mixed_type_SWAP_commutator_residual": 2.8284271247461903
   },
@@ -63,8 +67,8 @@
       "nonseam_factors": 58,
       "persistent_M2_added": 0,
       "post_diagonal_Z_support_max": 4,
-      "prefixes_tested": 9956,
-      "primitive_increase_from_aa453be0cc": 1134,
+      "prefixes_certified_by_elementary_closure": 9956,
+      "primitive_increase_from_initial_route_C_package": 1134,
       "primitive_overhead_ratio": 1.1285422806619814,
       "route_deletions_detected": 356,
       "route_macros": 412,
@@ -84,8 +88,8 @@
       "nonseam_factors": 87,
       "persistent_M2_added": 0,
       "post_diagonal_Z_support_max": 4,
-      "prefixes_tested": 16103,
-      "primitive_increase_from_aa453be0cc": 1743,
+      "prefixes_certified_by_elementary_closure": 16103,
+      "primitive_increase_from_initial_route_C_package": 1743,
       "primitive_overhead_ratio": 1.1213788300835654,
       "route_deletions_detected": 560,
       "route_macros": 644,
@@ -105,8 +109,8 @@
       "nonseam_factors": 348,
       "persistent_M2_added": 0,
       "post_diagonal_Z_support_max": 16,
-      "prefixes_tested": 144272,
-      "primitive_increase_from_aa453be0cc": 6964,
+      "prefixes_certified_by_elementary_closure": 144272,
+      "primitive_increase_from_initial_route_C_package": 6964,
       "primitive_overhead_ratio": 1.0507180936289218,
       "route_deletions_detected": 4064,
       "route_macros": 4400,
@@ -126,8 +130,8 @@
       "nonseam_factors": 870,
       "persistent_M2_added": 0,
       "post_diagonal_Z_support_max": 16,
-      "prefixes_tested": 394640,
-      "primitive_increase_from_aa453be0cc": 17414,
+      "prefixes_certified_by_elementary_closure": 394640,
+      "primitive_increase_from_initial_route_C_package": 17414,
       "primitive_overhead_ratio": 1.0461633079374169,
       "route_deletions_detected": 10868,
       "route_macros": 11708,
@@ -162,11 +166,19 @@
     "unique_routed_two_site_opcodes": 12
   },
   "nonseam_returned_route_execution": {
+    "clean_route_distances_1_through_43_basis_cases": 2064,
+    "clean_route_distances_1_through_43_maximum_residual": 0.0,
     "dirty_unlawful_SWAP_detected_opcodes": 11,
     "diagonal_contact_dirty_SWAP_residual": 0.0,
+    "maximum_dirty_SWAP_operator_residual": 4.0,
     "maximum_clean_returned_route_execution_residual": 0.0,
     "maximum_onsite_forward_inverse_residual": 2.7755575615628914e-16,
+    "maximum_return_deletion_clean_subspace_nullity": 2,
+    "maximum_return_deletion_clean_subspace_rank": 2,
+    "maximum_return_deletion_clean_subspace_singular_value_error": 6.661338147750939e-16,
+    "minimum_detected_dirty_SWAP_operator_residual": 2.8284271247461894,
     "minimum_return_deletion_residual": 0.572521454844302,
+    "minimum_return_deletion_clean_subspace_rank": 2,
     "unique_one_site_opcodes_executed_onsite": 1,
     "unique_opcodes_tested": 13,
     "unique_two_site_opcodes_routed": 12
@@ -180,8 +192,13 @@
     "one_particle_mass": 0.45340565417488515,
     "one_particle_mass_residual": 5.551115123125783e-17
   },
-  "report_sha256": "c8b9fd9a4b870e79662519926f6a310706ea27572197232a2b459ad29e24244d",
+  "report_sha256": "f2314c76687e0fc4f3f9e3e7e0599bc59ae279898e73ae2fd383e6b39b008117",
   "route": "C_staggered_time_multiplexed_literal_radius_one",
+  "schedule_controls": {
+    "colour_is_redundant_given_serialized_stage_and_slot_on_held_fixtures": true,
+    "erasing_colour_collision_edges_all_shapes": [0, 0, 0, 0],
+    "erasing_stage_collision_edges_all_shapes": [58, 85, 326, 807]
+  },
   "stage_labels_are_physical_time": false,
   "status": "PASS"
 }

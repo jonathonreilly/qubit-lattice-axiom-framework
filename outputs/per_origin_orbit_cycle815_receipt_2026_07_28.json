@@ -1,0 +1,37 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockP11-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle815_orbit_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle815_per_origin_orbit_constraint_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 0
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 815,
+  "files": {
+    "docs/PER_ORIGIN_ORBIT_CYCLE815_BOUNDED_THEOREM_NOTE_2026-07-28.md": "cc366ab7c7895b9e130ee16d009ec966ed44f521135db16b2266fa13c03d19df",
+    "logs/runner-cache/frontier_cycle815_orbit_independent_check_2026_07_28.txt": "d6303ce90a277cd767c6c12a2024281974a61f0a37b3931c5adf1cb1af32b594",
+    "logs/runner-cache/frontier_cycle815_per_origin_orbit_constraint_2026_07_28.txt": "052fea3e8240e64f16d7c7e44e2bc9240b703c4ea72a28c667b01f968377887a",
+    "scripts/frontier_cycle815_orbit_independent_check_2026_07_28.py": "6fb1105b2eb3e525a43cc31e5f96bf809bea98b8ae5148b489ce385d7e5de352",
+    "scripts/frontier_cycle815_per_origin_orbit_constraint_2026_07_28.py": "e064b2f431f3e125b8c7f8176e6331f3fee41c2d1dc8ba7e3e65ae97a4ebb6b0"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "witness: station shift + origin rotation; commutation at 422,956 checkpoints; origin action (0 1 2 3 4 5)(6 7 8 9 10 11)",
+    "landed counts orbit-invariant (46=23+23, 38=19+19) while NO allocation is invariant",
+    "dichotomy stated exactly: symmetry-breaking rate input OR orbit-class physics (7,084 classes)",
+    "witness_source: independent_checker (reversal fourteen); checker pins re-frozen (sha256 e064b2..., blob 3fbfaf...)"
+  ],
+  "verdicts": [
+    "vacuous_verdict RETRACTED (v1 origin-lift wrong; checker witness adopted)",
+    "fixed allocations 0/42,504",
+    "free quotient: 7,084 orbits x size 6",
+    "checker CONFIRMS v2"
+  ]
+}

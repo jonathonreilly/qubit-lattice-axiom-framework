@@ -10,9 +10,11 @@ Status: bounded constructive theorem on a supplied clean-output genesis domain
 
 Claim type: bounded_theorem
 
-Runner:
+Runner: [`frontier_cycle800_full_physical_coherent_live_transfer_reset_2026_07_30.py`](../scripts/frontier_cycle800_full_physical_coherent_live_transfer_reset_2026_07_30.py)
 
-- [`frontier_cycle800_full_physical_coherent_live_transfer_reset_2026_07_30.py`](../scripts/frontier_cycle800_full_physical_coherent_live_transfer_reset_2026_07_30.py)
+Supplemental, non-load-bearing integration regression:
+
+- [`frontier_cycle800_full_physical_integration_replay_2026_07_30.py`](../scripts/frontier_cycle800_full_physical_integration_replay_2026_07_30.py)
 
 Constitutional effect: none. This package changes no axiom, foundation,
 Qualification, primitive, registry, policy, queue, audit result, or audit
@@ -57,13 +59,15 @@ return, collision, coframe-intersection, proper-cubic frame, and all `576`
 ordered-frame-product failures are zero.
 
 The transferred output occupies exactly the `O` coordinates consumed by the
-landed Cycle-720 recurrent physical update. Direct execution of that public
-certificate on two cells and held three cells gives zero postcomposition,
-coordinate, gauge, parity, and recurrent-induction failures through powers
-`1,2,3,5,8` where applicable. The one-particle mass residual is
+landed Cycle-720 recurrent physical update. The canonical runner reconstructs
+that public interface independently and matches frozen two- and three-cell
+coordinate digests exactly. The cited Cycle-720 theorem gives zero coordinate,
+gauge, parity, and recurrent-induction failures through powers `1,2,3,5,8`
+where applicable. Its one-particle mass residual is
 `5.551115123125783e-17`; the checked contact vacuum/one-particle and double-
 occupation phase residuals are both zero. No fresh encoder environment is
-called after genesis.
+called after genesis. The supplemental regression replays those dependency
+checks, but the new Cycle-800 claim needs only the typed theorem composition.
 
 This bypasses creating an EPR, Bell-syndrome bank, or dirty Bell-work state in
 this one-time live-bank initialization. It does not derive a clean `O` genesis,
@@ -145,24 +149,28 @@ covariance of supplied coframe data, not derivation of a preferred coframe.
 
 ## Recurrent physical-update composition
 
-Write `T` for the tensor product of the nine endpoint-SWAP words per cell and
-`E_live` for the supplied companion encoding into `L`. On the clean-`O` code
+Write `T_{OL}` for the tensor product of the nine endpoint-SWAP words per cell
+and `E_L` for the supplied companion encoding into `L`. On the clean-`O` code
 domain,
 
 \[
-T E_{live} = E_O,
-\qquad
-G_{physical} T E_{live} = E_O G_{logical}.
+T_{OL}\bigl(|0\rangle_O\!\otimes E_L\bigr)
+= E_O\!\otimes |0\rangle_L,
+\]
+\[
+(G_O\!\otimes I_L)T_{OL}\bigl(|0\rangle_O\!\otimes E_L\bigr)
+= (E_O G_{logical})\!\otimes |0\rangle_L.
 \]
 
 The first equality is full physical-state identity plus exact coordinate
-matching. The second is linear postcomposition by the actual landed Cycle-720
-intertwiner. The runner does not replace that dependency with a newly invented
-dense completion: it executes the Cycle-720 recurrent certificate unchanged
-on the two declared overlap boxes, verifies the exact `O` coordinates, and
-checks that the unused persistent `I/L/coframe` sites have zero collisions
-with the routed recurrent word. Transfer routes finish before recurrent `G`
-begins; their layer indices are not a time variable.
+matching. The second is linear postcomposition by the cited landed Cycle-720
+intertwiner. The canonical runner reconstructs the Cycle-789/Cycle-720 `O`
+coordinate formula without importing either runner and matches the frozen
+parent digests on both declared boxes. The supplemental regression also
+replays the dependency runner and its `I/L/coframe` collision firewall, but no
+new Cycle-800 lemma relies exclusively on that large regression closure.
+Transfer routes finish before recurrent `G` begins; their layer indices are
+not a time variable.
 
 ## Active controls
 
@@ -179,8 +187,10 @@ begins; their layer indices are not a time variable.
 - held-size resource counts must equal the one-cell counts exactly;
 - the direct routes and coherent fallback are independently transported
   through all proper-cubic frames and products; and
-- the actual recurrent word must retain zero coordinate, gauge, parity,
-  induction, route-return, mass, and contact failures.
+- the cited recurrent theorem remains an explicit conditional premise; the
+  supplemental replay confirms its coordinate, gauge, parity, induction,
+  route-return, mass, and contact interfaces without becoming the canonical
+  proof packet.
 
 The controls establish the declared positive domain. They are not promoted to
 a minimum-content or impossibility statement.
@@ -195,7 +205,7 @@ palettes: the complete Bell-character machinery and its work bank are not
 needed to insert an already companion-encoded live state into the exact
 recurrent output coordinates. The bounded literal routing, resource census,
 proper-cubic covariance, clean output conditional on supplied clean `O`, and
-executed recurrent-`G` composition are the new integration result.
+typed recurrent-`G` theorem composition are the new integration result.
 
 ## Supplied / derived / open
 
@@ -219,9 +229,8 @@ executed recurrent-`G` composition are the new integration result.
 - zero held-size route, collision, leakage-by-coordinate, and proper-cubic
   covariance failures through `120` cells and all `576` frame products;
 - exact output-coordinate identity with the recurrent physical `O` bank;
-- actual recurrent-`G` postcomposition through the declared power ladder
-  without a fresh
-  encoder environment; and
+- recurrent-`G` postcomposition by the cited Cycle-720 theorem through its
+  declared power ladder without a fresh encoder environment; and
 - preservation of the landed one-particle mass and checked contact fixtures.
 
 ### Open
@@ -237,8 +246,9 @@ executed recurrent-`G` composition are the new integration result.
   no-refit prediction bridges.
 
 The clean `L` output avoids Bell-work cleanup after this initialization. It
-does not erase a dirty `O`, renew clean `O`, support repeated independent-input
-loading, generate the first lawful `L` state, or cause the program to occur.
+does not erase a dirty `O`, renew clean `O`, or by itself renew a clean `L`
+bank for indefinite same-bank independent-input recycling. It also does not
+generate the first lawful `L` state or cause the program to occur.
 
 ## Dependency-ledger consequence
 

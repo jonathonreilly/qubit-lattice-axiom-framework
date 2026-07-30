@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF11-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle806_w2_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle806_w2_indistinguishability_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 806,
+  "files": {
+    "docs/W2_INDISTINGUISHABILITY_CYCLE806_BOUNDED_THEOREM_NOTE_2026-07-28.md": "3361f6ac018ae04af1d36760488a2de1e1446a1e2e0883a5a68ca1ef364bbde2",
+    "logs/runner-cache/frontier_cycle806_w2_independent_check_2026_07_28.txt": "a88349b8d76bc949a38d6676f0c0bb90c03626d9d014c2febd9ca9d3f33ec588",
+    "logs/runner-cache/frontier_cycle806_w2_indistinguishability_2026_07_28.txt": "0891eca74c0d80693a825c562625b2323dfa32a03d9b210df7fb30f15977d259",
+    "scripts/frontier_cycle806_w2_independent_check_2026_07_28.py": "2b4ff166438f1b79969639fdea00c19cef4e1bfd7fe068c54a89ab5d1580a0f2",
+    "scripts/frontier_cycle806_w2_indistinguishability_2026_07_28.py": "d9a8cb70f3c0a99c112b7ca3e962941f7524dc743c56979ef9d4f6b06fa58c5c"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "15-component landed-local profile (provenance-cited); 121 contested boundaries (2 forced / 9 flexible / 110 in unsatisfiable starts)",
+    "complete enumeration 2048 assignments/start: success counts (512,0,0,0,0,0,0,0,0,0,0)",
+    "checker: criterion fidelity EXACT vs landed 752 allocator; identity controls 1/11 + 0/2046 reproduce; independent re-enumeration matches; CONFIRMED"
+  ],
+  "verdicts": [
+    "NO_COLLISION (2 forced pairs)",
+    "starts 1-10 UNSATISFIABLE (0/2048 each); start 0: 512/2048",
+    "omniscient lookup ceiling 1/11 = landed witness"
+  ]
+}

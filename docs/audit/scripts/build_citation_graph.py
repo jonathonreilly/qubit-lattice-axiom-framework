@@ -207,6 +207,9 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "full128_two_cell_parity_superselected_even_car_covariance_cycle820_bounded_theorem_note_2026-07-30": [
         "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_independent_2026_07_30.py",
     ],
+    "local_parity_exchange_carrier_recurrent_bell_cycle821_bounded_theorem_note_2026-07-30": [
+        "scripts/frontier_cycle821_local_parity_exchange_carrier_independent_2026_07_30.py",
+    ],
     # This theorem note's N7 steelman is the faithful-but-reducible direct sum
     # of the two complexified simple-sector modules.  The independent helper is
     # not imported by the primary stress runner, so expose it only to this row.

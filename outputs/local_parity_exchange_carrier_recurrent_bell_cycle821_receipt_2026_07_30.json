@@ -1,0 +1,66 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "claim_type": "bounded_theorem",
+  "cycle": 821,
+  "date": "2026-07-30",
+  "dependency_pins": {
+    "base_commit": "84ef34fa0fb080c448547d0232cdab26a2abba6b",
+    "cycle720_recurrent_update_sha256": "34c3b0fe14b6937010b88daf8594811fa8a6ef1741ab539b682db2429560c87d",
+    "cycle794_composition_sha256": "1a5828c726cfca96c7a2240914a61f980a9406835821a44108a9061d7f6f1009",
+    "note_sha256": "ac8c497265aae91b23ba16fa788d9aafab040ce5b9a28ae0cafe8e6f7b542ef4"
+  },
+  "result": "On the supplied parity-superselected companion code, exactly one typed carrier M2 per coarse cell makes every pump/Bell/correction factor commute with extended parity and closes two consecutive prepared epochs without querying or resetting the carrier. An exact U-dagger CZ U compiler realizes all two-letter controlled factors with maximum residual 6.312164422641715e-16. The complete even-CAR signed channel composes factorwise with recurrent G on identical output coordinates; the parity-even recurrent seam semantic factors have maximum support 17 M2, diameter 24, and maximum submitted-unitary residual 7.913391346636907e-16. Carrier/resource genesis, radius-one synthesis, autonomous occurrence, translation-invariant gluing, and downstream TOE bridges remain open.",
+  "scope": {
+    "base_shape": [2, 1, 1],
+    "carrier_M2_per_cell": 1,
+    "extended_M2_per_cell": 65,
+    "odd_corrections_per_two_cell_epoch": 12,
+    "proper_cubic_frames": 24,
+    "ordered_frame_products_carrier_cocycle": 576,
+    "held_overlap_shape": [3, 2, 2],
+    "held_schedule_shape": [6, 5, 4],
+    "observable_domain": "total extended-parity even algebra"
+  },
+  "primary": {
+    "cache_sha256": "31ed1854c8134f31869097e46c6d30d93659f896fbda74fd96d41327b0e8ac3f",
+    "script_sha256": "63ae494b35f182bfb2f60e3c5f0f4ec11bd6455fa65c43c55433ce3a678fc153",
+    "status": "PASS",
+    "two_cell_character_rank": 23,
+    "held_character_rank": 152,
+    "base_common_executor_gates_per_two_epochs": 848,
+    "held_common_executor_gates_per_two_epochs": 7520,
+    "elementary_parity_failures": 0,
+    "coframe_transported_physical_placement_failures": 0,
+    "fixed_laboratory_offset_mutation_detected_frames": 23,
+    "all_second_epoch_correction_deletions_detected": 23,
+    "minimum_correction_deletion_failure": 2,
+    "maximum_pair_compiler_residual": 6.312164422641715e-16,
+    "maximum_recurrent_seam_residual": 7.913391346636907e-16,
+    "maximum_recurrent_seam_support_M2": 17,
+    "maximum_recurrent_seam_M2_diameter": 24,
+    "one_particle_mass_residual": 5.551115123125783e-17
+  },
+  "independent": {
+    "cache_sha256": "ffb439ce3936388c4a77241353284e2518dce2bdee45a4d3ab96b8d581b1b02c",
+    "script_sha256": "938ceb71d455cdfa79ff371eca4cfab903957e119accad0e853c9007ac871666",
+    "status": "PASS",
+    "carrier_density_spanning_states": 16,
+    "entangled_carrier_states": 2,
+    "frame_state_contexts": 384,
+    "mapped_correction_rows": 552,
+    "emitted_compiler_factors": 2448,
+    "binary_signed_rank_or_carrier_update_failures": 0,
+    "factor_or_prefix_parity_failures": 0,
+    "matter_or_full_leg_deletions_detected": 48,
+    "carrier_only_deletions_parity_detected": 24
+  },
+  "open": [
+    "autonomous genesis and local enforcement of the carrier, parity domain, encoded resources, clean syndromes, coframe, and occurrence",
+    "parity-balanced carrier reset or an unbounded-epoch retained-carrier law",
+    "nearest-neighbour or radius-one synthesis of the bounded Bell and recurrent seam rotations",
+    "one monolithic dense executor rather than exact signed-graph and factorwise composition",
+    "translation-invariant lattice-wide gluing, duplicate-view ownership, fault rejection, and repair",
+    "causal-time, source/gravity, Record/Born/history, and no-refit prediction bridges"
+  ]
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 15281,
- "node_count": 4596,
+ "edge_count": 15287,
+ "node_count": 4597,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12965,6 +12965,10 @@
   "semigroup_closure_does_not_force_heat_kernel_quadratic_condition_bounded_note_2026-07-02": {
    "deps_hash": "36daf746aba1",
    "out_degree": 2
+  },
+  "separated_pair_lawful_control_cycle735_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "e703930afc75",
+   "out_degree": 6
   },
   "session_summary_2026-04-01_dimensional": {
    "deps_hash": "e3b0c44298fc",

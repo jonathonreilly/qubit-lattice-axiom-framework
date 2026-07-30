@@ -1,4 +1,4 @@
-# Separated pairs are lawful — the two-source sector opens at distance two — Cycle 735
+# Joint two-token templates and bare Cycle-719 transport — Cycle 735
 
 Date: 2026-07-28
 
@@ -15,88 +15,116 @@ Runners:
 - [`frontier_cycle735_separated_pair_lawful_control_2026_07_28.py`](../scripts/frontier_cycle735_separated_pair_lawful_control_2026_07_28.py)
 - [`frontier_cycle735_separated_pair_independent_check_2026_07_28.py`](../scripts/frontier_cycle735_separated_pair_independent_check_2026_07_28.py)
 
-Constitutional effect: none. This package changes no axiom, foundation,
-Qualification, primitive, registry, policy, queue, audit result, or audit
-status.
+Constitutional effect: none. This package changes no axiom, primitive,
+registry, policy, queue, audit result, or audit status.
 
-## Result up front
+## Result
 
-Cycle 734 froze the adjacency wall and observed that its invariant is
-silent on separated tokens; the lawful update advances every token one
-station per step, so pairwise ring distance is a constant of motion —
-separated tokens can never become adjacent. This cycle tests exactly
-that domain and finds it **open**:
+On the supplied oriented ring with 11 stations, let
 
-- **distance-parameterized templates**: the position-free pattern
-  extends to `W(position, d)` for `d ∈ {2,3,4,5}` (positive-shortest
-  representative; `d` and `11 − d` are the same unordered separation)
-  — pure-X words of 4/5/6/7 gates, bit-exact lawful outputs at all 44
-  `(position, d)` cases, exact translation covariance at every
-  distance (121 identities each; 484 total);
-- **count-2 enforcement**: the unchanged parameterized Cycle-731
-  constructor accepts all 44 separated pairs; count witnesses refuse;
-- **the invariant-checked full orbit — zero violations anywhere**: all
-  44 orbits run to exact closure (484 controller steps; 5,324 station
-  checks; 968 occupied-station checks; constant pairwise distance
-  verified at every step; all register returns exact). The composition
-  reference is K's own machinery — `global_allocator_word(2)` applied
-  exactly twice to the held genesis — and K's own lawful-behavior
-  certificates (controlled-truth, held-orbit, order-and-domain) rerun
-  as passing baselines. `frozen_obstruction: null`;
-- **the boundary is exactly adjacency**: the `d = 1` control reproduces
-  the Cycle-734 wall — 22 step-0 violations (two per position) — so
-  the lawful distance domain is `[2, 5]` with the frozen 734 census as
-  its boundary;
-- deletion controls on every template; the Cycle-734 anchors (pair word
-  and frozen obstruction) rerun unchanged.
+\[
+  p\in\mathbb Z_{11},\qquad d\in\{2,3,4,5\}.
+\]
 
-`separated_pair_lawful_control: true`; `two_source_composition_ring11:
-true`. In W4's language this is **bounded separated multi-source
-composition**: two sources move lawfully at ring-11 scope with supplies
-declared. W4's renewal component is untouched.
+The externally parameterized joint word \(W(p,d)\) writes A bits at \(p\)
+and \(p+d\), and reference bits on the positive interval
+\(p+1,\ldots,p+d\). The runner establishes the following finite statements:
 
-## Supplied / derived / open
+- all 44 words are pure-X, bit exact, and have sizes 4, 5, 6, and 7 for
+  \(d=2,3,4,5\);
+- the 44 words represent all unordered nonadjacent pairs on the odd
+  11-cycle, and all 484 passive-translation identities hold;
+- each initial joint register has A-count two and satisfies the stated
+  ring-11 static charge/reference relation;
+- all 242 single-entry deletions change either the A-count or that static
+  relation, with 88 A deletions and 154 reference deletions;
+- under the **bare Cycle-719 logical controller**, the 44 A-pair orbits
+  complete 484 steps, 5,324 station checks, and 968 occupied-station checks
+  with exact token return, constant pair distance, and literal reverse
+  restoration; the held data output equals two applications of the
+  3,106-gate `global_allocator_word(2)`.
 
-### Supplied
+The static reference row and the bare controller orbit are separate finite
+parts of the theorem. The reference row is not transported by the bare
+orbit, and this package does not identify that orbit with the Cycle-731 full
+guarded word.
 
-- the external application-position and separation parameters (neither
-  is a distinguished site); the finite oriented ring-11 geometry; the
-  held two-bank program content and order; the held direction data
-  genesis with blank B/work and clean auxiliaries; `h = 0` lawful
-  charge-reference rows and `expected_count = 2`; the Q-before-R
-  controller layer order.
+## Adjacent controls
 
-### Derived
+The same bare Cycle-719 transport check succeeds for all 11 adjacent A-pair
+positions: the tokens return and literal reversal restores the supplied data.
+For this overlapping case, 0 of 11 outputs equal the nonadjacent
+double-allocator reference.
 
-- the distance-parameterized templates, their exactness and covariance;
-- count-2 acceptance across the domain;
-- the exhaustively invariant-checked lawful orbits with exact closure,
-  constant distance, and the null obstruction;
-- the adjacency boundary reproduction; deletion controls; unchanged
-  anchors.
+Separately, the inherited Cycle-724/734 radius-one guard predicate produces
+22 step-0 violation rows on those 11 adjacent inputs. This is a
+predicate-specific recount only. It is not used to define a maximal
+distance domain or to exclude a different guard or controller.
 
-### Open
+## Independent check
 
-- three or more sources, and rings beyond 11, as uniform families;
-- W4's renewal component (post-capacity renewal) — untouched here;
-- the adjacent-pair wall itself (frozen in Cycle 734) — respected, not
-  solved: whether a modified controller lawfully handles adjacency is
-  a separate construction;
-- everything the landed surfaces leave open at their scopes; no
-  time/Record/Born/source content is touched.
+The independent runner first executes the primary in a subprocess and checks
+its report contract. It then:
+
+1. derives the template, covariance, and deletion counts with a set-valued
+   enumerator; and
+2. evaluates the inherited Cycle-719 gate lists with its own
+   X/CNOT/Toffoli interpreter.
+
+It does not call Cycle 719's semantic evaluator, controller-step helper, or
+orbit helper. Its five certificates all pass.
+
+## Supplied inputs
+
+- ring size 11 and its positive orientation;
+- external position \(p\) and separation \(d\);
+- the joint blank logical register written by \(W(p,d)\);
+- the held two-bank Cycle-719 program, program order, direction-\((1,0)\)
+  data genesis, and clean A/B controller rails.
+
+These are explicit finite fixture inputs. No application position,
+separation, genesis, or physical preparation mechanism is derived here.
+
+## Dependency boundary
+
+The load-bearing and immediately controlling parents are:
+
+- [Cycle 719 bare recurrent controller](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md);
+- [Cycle 724 radius-one guard](LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md);
+- [Cycle 728 finite charge/reference relation](BKSF_HOLONOMY_COMPRESSION_CYCLE728_BOUNDED_THEOREM_NOTE_2026-07-28.md);
+- [Cycle 730 charge-row enforcement](CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md);
+- [Cycle 731 count/charge/neighbor guarded constructor](TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md); and
+- [Cycle 734 externally positioned adjacent template and inherited guard witness](PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md).
+
+Every parent is used only at its proposal-only, unaudited scope. Cycle 731 is
+listed to make the non-composition boundary recoverable: its full guarded
+word is not executed or claimed by Cycle 735. No parent supplies retained
+authority or an audit promotion.
+
+## Outside the claim
+
+- the Cycle-731 full guarded-controller orbit;
+- transport of the reference row or preservation of its charge relation
+  during controller motion;
+- autonomous or factorized preparation;
+- physical or framework-level source interpretation;
+- W4 composition or renewal;
+- a maximal distance domain, controller exclusion, or adjacency no-go;
+- three or more tokens, other ring sizes, dirty-register domains, or a
+  uniform family.
+
+These items remain research questions or separate construction obligations;
+they are not conclusions of this note.
 
 ## Negative-claim discipline
 
-No negative claim ships. The lawful-domain statement `[2, 5]` is a
-positive result whose boundary cites the already-frozen Cycle-734
-census; it adds no new obstruction claim.
+This note makes finite positive template and bare-transport claims. The
+adjacent guard recount is explicitly not an exclusion result, so the
+derived-no-go and named-boundary gates are not triggered.
 
 ## Verdict
 
-The multi-token program splits exactly along the invariant's own line:
-adjacency is walled (Cycle 734, frozen, reproduced), separation is
-lawful (this cycle, exhaustive, null obstruction). Two independently
-prepared, boundary-free sources now compose and move lawfully on the
-held fixture under the unchanged controller with the unchanged
-certificate — the first W4 movement of the campaign. Independent audit
-still required.
+Cycle 735 supplies an externally parameterized joint two-token register
+family and a bounded bare Cycle-719 transport theorem. It does not supply a
+Cycle-731 guarded composition theorem, independent preparation theorem, or
+physical-source bridge. Independent audit remains required.

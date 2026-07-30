@@ -1,66 +1,63 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle735_separated_pair_independent_check_2026_07_28.txt": "cd053705849bce7bfd1a511bacab79ae33e01069b60eb6663296a566908ed2ca",
-      "frontier_cycle735_separated_pair_lawful_control_2026_07_28.txt": "6a86b66fbe163b5e91fd41e4b8c8be21fc65f39060397e5948d2ff5e2ed2349c"
+      "frontier_cycle735_separated_pair_independent_check_2026_07_28.txt": "5811b1223cdfe76e2183c4c14c2cdc345b602ad55869916b75a6ac071a0e03bc",
+      "frontier_cycle735_separated_pair_lawful_control_2026_07_28.txt": "886b88649a287f8f4daaf6a72fb0fb45bbcf0551fbb6ceaee8f785f5810e5a42"
     },
     "note": {
       "path": "docs/SEPARATED_PAIR_LAWFUL_CONTROL_CYCLE735_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "ed817a7c63abf915b57f815334361b8e652b4dfc62c85c7d01a48dd05d392d5e"
+      "sha256": "b83c79f4867588668f384d7d16340e7f0ad6386e87d3806104b6e20e53f8d9b2"
     },
     "runners": {
-      "frontier_cycle735_separated_pair_independent_check_2026_07_28.py": "50fe1fd02370723c8420cb3c5793392b753305ffafa4f77eb40603d657889079",
-      "frontier_cycle735_separated_pair_lawful_control_2026_07_28.py": "2bfc05e703ab75663360361296fe3f816884faf5397ac04a3e55e277244e5ce7"
+      "frontier_cycle735_separated_pair_independent_check_2026_07_28.py": "ef836b5ed2a4ac7db1e63767a63deef118e03b2c06d61cfc517ecce96a179867",
+      "frontier_cycle735_separated_pair_lawful_control_2026_07_28.py": "7e8b313cebb9151e6eeeff04603353f4ad815bba4b07bd37c4debfca3e31b6a0"
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
-    "adjacency_wall_respected_not_solved": true,
-    "axiom_pressure": false,
-    "fixed_supplies": "external application-position and separation parameters (neither a distinguished site); finite oriented ring-11 geometry; held two-bank program content and order; held direction data genesis with blank B/work and clean auxiliaries; h=0 lawful charge-reference rows and expected_count=2; Q-before-R controller layer order",
-    "lawful_distance_domain": [
-      2,
-      3,
-      4,
-      5
-    ],
-    "not_derived": "three or more sources; rings beyond 11 as uniform families; W4 post-capacity renewal; adjacent-pair control (the Cycle-734 wall stands as the domain boundary); no time/Record/Born/source content",
-    "positive_scope": "distance-parameterized position-free templates (pure-X words, 4-7 gates) with bit-exact outputs at all 44 (position, d) cases and exact translation covariance (484 identities); count-2 acceptance across the domain; exhaustively invariant-checked lawful orbits (44 orbits, 484 steps, 5,324 station checks, zero violations, exact closure, constant pairwise distance) with K's own certificates rerun as passing baselines; the d=1 control reproducing the frozen Cycle-734 wall (22 step-0 violations) as the exact domain boundary",
-    "separated_pair_lawful_control": true,
-    "two_source_composition_ring11": true,
-    "w4_renewal_component_untouched": true
+    "autonomous_preparation": "outside this claim",
+    "full_Cycle731_guarded_controller": "outside this claim",
+    "maximal_distance_domain": "outside this claim",
+    "physical_source_interpretation": "outside this claim",
+    "positive_scope": "externally parameterized joint templates and bare Cycle-719 two-token transport on the held ring-11 fixture"
   },
   "checks": {
     "independent_named_checks_failed": 0,
-    "independent_named_checks_passed": 6,
-    "primary_named_checks_passed": 9
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_failed": 0,
+    "primary_named_checks_passed": 7
   },
   "claim_type": "bounded_theorem",
   "cycle": 735,
   "date": "2026-07-28",
   "result": {
-    "adjacency_boundary_control": {
-      "d": 1,
-      "matches_frozen_cycle734_wall": true,
-      "step0_violations": 22
+    "adjacent_positive_control": {
+      "bare_transport_cases": 11,
+      "double_allocator_matches": 0,
+      "guard_specific_step0_violation_rows": 22,
+      "used_as_controller_domain_boundary": false
     },
-    "composition_reference": "global_allocator_word(2) applied exactly twice",
-    "frozen_obstruction": null,
-    "orbit_census": {
-      "occupied_checks": 968,
-      "orbits": 44,
+    "bare_Cycle719_nonadjacent_transport": {
+      "double_allocator_matches": 44,
+      "occupied_station_checks": 968,
+      "orbit_cases": 44,
       "station_checks": 5324,
-      "steps": 484,
-      "violations": 0
+      "steps": 484
     },
-    "template_word_sizes_by_distance": {
-      "2": 4,
-      "3": 5,
-      "4": 6,
-      "5": 7
-    },
-    "translation_covariance_identities": "484/484"
+    "joint_template": {
+      "A_deletions": 88,
+      "cases": 44,
+      "reference_deletions": 154,
+      "single_entry_deletions": 242,
+      "translation_covariance_identities": 484,
+      "word_sizes_by_distance": {
+        "2": 4,
+        "3": 5,
+        "4": 6,
+        "5": 7
+      }
+    }
   },
-  "status": "CYCLE735_SEPARATED_PAIR_LAWFUL_CONTROL_PASS"
+  "status": "CYCLE735_BARE_TWO_TOKEN_TRANSPORT_PASS"
 }

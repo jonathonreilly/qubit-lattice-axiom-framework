@@ -1,24 +1,81 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-30T01:38:24.988829+00:00",
+  "audit_invocation_history": [
+    "254153a9b8344990b0d3c31268f0f3c2"
+  ],
+  "audit_invocation_id": "254153a9b8344990b0d3c31268f0f3c2",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 1,
+      "counts": {
+        "A": 7,
+        "B": 0,
+        "C": 30,
+        "D": 2
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py"
+    },
+    "criticality": "high",
+    "dep_axiom_premise_note_hash": {},
+    "dep_claim_scope": {
+      "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "For every integer L_t\u22652, real m, and u_0>0, the mean-field staggered Dirac operator on the minimal L_s=2 spatial APBC block satisfies |det(D+m)|=\u220f_\u03c9[m\u00b2+u_0\u00b2(3+sin\u00b2\u03c9)]\u2074; no physical EWSB observable or Higgs-mass bridge was audited.",
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "For integers d \u2265 2, the two defined ratios are equal if and only if A(d) vanishes, which occurs uniquely at d = 4; there the exact tuple is (7/8, 7/8, 0)."
+    },
+    "dep_claim_type": {
+      "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "decoration",
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "positive_theorem"
+    },
+    "dep_effective_status": {
+      "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02": "decoration_under_hierarchy_matsubara_decomposition_note",
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10": "retained"
+    },
+    "deps": [
+      "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
+      "hierarchy_seven_eighths_riemann_dirichlet_dimensional_anchor_narrow_theorem_note_2026-05-10"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 8.255,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "4e0140ba1321fd4919a7e676795157a86bc8b98b6cf897dec8bc6a15f380e439",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "4e0140ba1321fd4919a7e676795157a86bc8b98b6cf897dec8bc6a15f380e439",
+    "runner_path": "scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 26
+  },
+  "audit_status": "audited_failed",
+  "auditor": "codex-audit-batch-A-20260730-42123b25",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "Anticommutation closes eta_APS=0, and the arithmetic closes A(4)=B(4)=C(4). The assertion that any putative APS quantity equaling 1/8 must be structurally identical to those expressions is an unproved, target-equivalent lemma.",
   "claim_id": "hierarchy_aps_eta_staggered_bulk_vanishing_scoping_note_2026-05-26",
-  "claim_scope": null,
+  "claim_scope": "Exact bare-bulk scoping result on L_s=2, L_t in {2,4}, APBC, mean-field, massless closed-torus staggered Dirac: eta_APS is zero, and the d=4 value 1/8 is only the existing A(d)=B(d)=C(d) identity collapse, not an independent APS-eta witness.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem (scoping; carries a bulk-vanishing",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-30T01:38:24.988829+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +84,25 @@
     "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02"
   ],
   "direct_in_degree": 7,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_failed",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_failed",
   "load_bearing_score": 8.255,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "The staggered-chirality anticommutation pairs every eigenvalue lambda with -lambda, hence the signed spectral sum and bare eta invariant vanish.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "conditional_wall_rationale",
+    "derived_no_go_boundary",
+    "stretch_attempt_negative"
+  ],
   "note_hash": "b003f969935753f292d7bf775b433367ac2b583a8abf4299fee751cd3fad2234",
   "note_path": "docs/HIERARCHY_APS_ETA_STAGGERED_BULK_VANISHING_SCOPING_NOTE_2026-05-26.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "Narrow the claim that any eta_APS/2=1/8 conjecture is the same identity to the proved A=B=C coincidence, or supply a structural-reduction theorem before re-audit.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -129,14 +192,14 @@
   "prose_corrections": [],
   "prose_status": "clean",
   "runner_check_breakdown": {
-    "A": 0,
+    "A": 23,
     "B": 0,
     "C": 0,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 23
   },
   "runner_path": "scripts/frontier_hierarchy_aps_eta_staggered_bulk_vanishing_scoping.py",
   "title": "APS \u03b7-Invariant of the Bulk Staggered Dirac on Z^3 \u00d7 S^1 \u2014 Bulk-Vanishing Scoping Note",
   "transitive_descendants": 26,
-  "verdict_rationale": null
+  "verdict_rationale": "The exact finite-surface L1 conclusion and A=B=C arithmetic are supported by the anticommutation proof and all 23 runner checks. However, the stronger statement that any putative eta_APS/2=1/8 witness is the same identity is not established by numerical equality; L3 merely recomputes A(4)=B(4)=C(4). N1 leaves Wilson/domain-wall, gauge-background, boundary, spectral-flow, and residue routes open; N2 identifies one collapsed exact-surface wall, N3 exposes the hypotheses, and N4 supplies no prior residual match. N5 keeps most rhetoric surface-bounded, N6 allows future supersession, N7's strongest domain-wall/gauge steelman remains unresolved, and N8 provides no packet-backed cross-cycle closure."
 }

@@ -1,0 +1,41 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle791_open_keys_resolution_2026_07_28.txt": "9ab66b127341c63a664ae1631527ae803358a1dd2d2dcacc4639f49aaeadfc8d",
+      "frontier_cycle791_resolution_independent_check_2026_07_28.txt": "db62abea90c04418df202ad0418867188de7b2cc68836fa8796f7e4a4455e963"
+    },
+    "note": {
+      "path": "docs/OPEN_KEYS_RESOLUTION_CYCLE791_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "99c6526eac594c36c9307bb8034834deb00ceb286728ba33a6fdb1f92002f1e2"
+    },
+    "runners": {
+      "frontier_cycle791_open_keys_resolution_2026_07_28.py": "3380b3f0820a74e0f538b54144bb926a2a4be9041ed21ae5181216f481c8a98a",
+      "frontier_cycle791_resolution_independent_check_2026_07_28.py": "40dfd1f10aae8480a3192bcea8906dceada4add7917e32989963c9ab1aa41889"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "events": "second transient: key (3,(0,7)) nonclean for every t<371, clean exactly at 371 (checker-verified with the landed test); new certified cycle: key (2,(0,9)) entry 0, state period 288, residual period 6, forever-nonzero",
+    "fixed_supplies": "everything Cycle-719/736/762/790 declare",
+    "fractions": "of 176 keys at T=1024: 2 clean transients, 12 certified cycles, 162 open; coverage 164/164; checker re-swept \u2014 exactly one new clean and one new cycle, nothing missed or spurious",
+    "meaning": "the veto's horizon-relativity is real but rare at these horizons; content-vs-dirt has evidence on both sides (2 transients vs 12 permanent cycles); the horizon-extended postimage law's evidence base is two events deep",
+    "not_derived": "the 162 open keys' fates; the content-vs-dirt ruling; the horizon-extended law",
+    "outcome": "RESOLUTION_2_12_162"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 791,
+  "date": "2026-07-30",
+  "result": {
+    "fractions": "2/12/162 of 176",
+    "new_cycle": "period 288/6 key (2,(0,9))",
+    "new_transient": "t=371 key (3,(0,7))"
+  },
+  "status": "CYCLE791_OPEN_KEYS_RESOLUTION_PASS"
+}

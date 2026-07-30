@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle778_attachment_independent_check_2026_07_28.txt": "a8f88a6d54cf415b1089972543c31636d4b92635d159e41c9fbcd6b4c1e634a7",
+      "frontier_cycle778_norefit_attachment_2026_07_28.txt": "c77409de94ed648c1d4da3f410eb594878da07d7b249397786700a6e58e310ba"
+    },
+    "note": {
+      "path": "docs/NOREFIT_ATTACHMENT_CYCLE778_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "3ab3e68b52f3073bdca7563e16e16dd4ac10141a654ab3b0578067525e32f286"
+    },
+    "runners": {
+      "frontier_cycle778_attachment_independent_check_2026_07_28.py": "e5c5a377cf1bf534d197c1aa06cf2c6465997bee61cf2ecec89f2fe3ef50763f",
+      "frontier_cycle778_norefit_attachment_2026_07_28.py": "033e6442c01eef32efe20e55b025459aa606b92d1a91a4e48e9f795bc3946181"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "family": "the complete non-empty channel-subset lattice of the six-channel landed vertex under the named mixture convention: 63 configurations, 192 input-row variants (v1 stopped at triples; the checker's 21 missed members all matched \u2014 v2 carries the full lattice)",
+    "fixed_supplies": "the mixture convention; the frozen kernel (comparator extraction); everything Cycle-320/322/749/768/771/774 declare",
+    "instrument": "unchanged Cycle-749 instrument re-verdicts the kernel 6/6 ACCEPT in-runner",
+    "keys": "no_refit_attachment_complete_at_fixture_scope true; response_law_established FALSE (what remains of W7 is scope: other surfaces, extended charts, composite preparations)",
+    "not_derived": "the response-law title; W7 beyond fixture scope",
+    "outcome": "ATTACHMENT_COMPLETE_AT_FIXTURE_SCOPE",
+    "sweep": "63/63 exact matches; prediction and simulation paths AST-firewalled both directions in both runners; checker extras: repeated channels 6/6, asymmetric coherent 15/15, uniform coherent match",
+    "w7_fixture_package": "instrument (749) + unique derived kernel (768) + verified prediction (771) + structural additivity (774) + complete attachment (778)"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 778,
+  "date": "2026-07-30",
+  "result": {
+    "attachment": "63/63 exact (192 variants)",
+    "family": "complete subset lattice",
+    "response_law_established": false
+  },
+  "status": "CYCLE778_NOREFIT_ATTACHMENT_PASS"
+}

@@ -1,0 +1,34 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC18-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle812_mixed_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle812_mixed_input_response_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 8
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 812,
+  "files": {
+    "docs/MIXED_INPUT_RESPONSE_CYCLE812_BOUNDED_THEOREM_NOTE_2026-07-28.md": "20749898460438560c82ae5aeb70361351efc9e60b01cd7e636e4ec106608550",
+    "logs/runner-cache/frontier_cycle812_mixed_independent_check_2026_07_28.txt": "aa36b763a591b3dce5d76fc7d716cd3b626788b21cba2c286d754e276e493998",
+    "logs/runner-cache/frontier_cycle812_mixed_input_response_2026_07_28.txt": "6a2f956f127fa7af168ed378f3c1a29ef9580518a30ac96a4c78dde541afa23f",
+    "scripts/frontier_cycle812_mixed_independent_check_2026_07_28.py": "fdc353e3d19564c45933f5755482374c41d80ae6eff20449df58182ef390491f",
+    "scripts/frontier_cycle812_mixed_input_response_2026_07_28.py": "fe35718b8f5e84cfafed74026a5634e722da757782f04d536a756d7273d3ee9b"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "F(rho)=Tr(rho K) linear on six-column scope (K=diag rows cited); unique extension exists on that scope",
+    "720 rank-16 density outside the six-column pure-density span (rank obstruction: span support dim <=6 vs rank 16); lifts required; inter-lift response difference exactly 1/256 (15,872 off-diagonal 1/512 entries)",
+    "supervisor patch: cross-worktree audit paths materialized as tracked copies in both runners; checker primary-pin re-frozen (daa15777->fe35718b)"
+  ],
+  "verdicts": [
+    "EXTENSION_NOT_CANONICAL",
+    "checker: TIGHTENED_EXTENSION_NOT_CANONICAL (partial trace dim 64; retractions nonunique with different responses)"
+  ]
+}

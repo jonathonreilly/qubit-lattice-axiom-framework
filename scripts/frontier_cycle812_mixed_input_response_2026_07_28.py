@@ -29,13 +29,13 @@ REFERENCE_COMMIT = "596edad4baf851c18cca1432e963655f2839729b"
 # Literal, worktree-relative, seven-file packet.  These are tracked copies in
 # ../born-harness-worktree and are never imported or executed.
 AUDIT_INPUT_PATHS = (
-    "../born-harness-worktree/scripts/frontier_cycle749_response_comparison_harness_2026_07_28.py",
-    "../born-harness-worktree/scripts/frontier_cycle768_response_law_candidate_2026_07_28.py",
-    "../born-harness-worktree/scripts/frontier_cycle771_prediction_verification_2026_07_28.py",
-    "../born-harness-worktree/scripts/frontier_cycle774_interference_sector_2026_07_28.py",
-    "../born-harness-worktree/scripts/frontier_cycle778_norefit_attachment_2026_07_28.py",
-    "../born-harness-worktree/scripts/frontier_cycle803_decoder_derivation_2026_07_28.py",
-    "../born-harness-worktree/scripts/frontier_cycle803_decoder_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle749_response_comparison_harness_2026_07_28.py",
+    "scripts/frontier_cycle768_response_law_candidate_2026_07_28.py",
+    "scripts/frontier_cycle771_prediction_verification_2026_07_28.py",
+    "scripts/frontier_cycle774_interference_sector_2026_07_28.py",
+    "scripts/frontier_cycle778_norefit_attachment_2026_07_28.py",
+    "scripts/frontier_cycle803_decoder_derivation_2026_07_28.py",
+    "scripts/frontier_cycle803_decoder_independent_check_2026_07_28.py",
 )
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:

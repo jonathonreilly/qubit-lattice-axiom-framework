@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle794_second_selection_2026_07_28.txt": "dbbf83fba87f761726d8cdc4ecf54106bb6102d76fa92b39bc822f1d8c0807bf",
+      "frontier_cycle794_second_selection_independent_check_2026_07_28.txt": "4b41c2df52a01ee4775f70f3fab8f1e9c5dfa68b1c04b8f3979b12f42776c8e0"
+    },
+    "carried_modules": {
+      "scripts/frontier_cycle736_pairwise_separated_multisource_2026_07_28.py": "50059ce4d4d6e5ce4503e66ccb098f6fe663ad9711b106b6b6c5c9cb7bcbd02f",
+      "scripts/frontier_cycle758_selector_multisource_2026_07_28.py": "8be433f74cb337c322bcb1e2f46007244d708a41c946cb83b7ccd61004176241"
+    },
+    "note": {
+      "path": "docs/SECOND_SELECTION_CYCLE794_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "4b17bd35ee9e8c7e15b3fbf95969362e1a7f994caf5bc502d79dabb00361f02e"
+    },
+    "runners": {
+      "frontier_cycle794_second_selection_2026_07_28.py": "5fcb9f015b7690df833a3b3d1dc7bdc81162e066f1f25d34d420d8779c563582",
+      "frontier_cycle794_second_selection_independent_check_2026_07_28.py": "4619cd48fc470e4a99005ba6814623004d2d9dc0a06c6211b34ecbb311e7d35d"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "both_windows": "792's window re-verified side by side (251 veto / 252 SELECT / 253-256 veto); each selection is a one-tick window",
+    "fixed_supplies": "the horizon value (as in 792); everything Cycle-719/736/750/758/790/791 declare",
+    "not_derived": "the exact-time law (Cycle 796 attempts the construction); actuality",
+    "outcome": "TWO_FOR_TWO_UNIQUE",
+    "pattern": "every known transient selects uniquely at exactly its first-clean moment, for one tick, never simultaneously \u2014 instantaneous, unique, non-overlapping resolution events",
+    "selection": "key (3,(0,7)) at supplied horizon t=371: unique survivor ((0,7),); t=370 vetoes; persistence probe t=372..380 all vetoed (no reappearance)",
+    "simultaneity": "exactly one selection per moment (176-row sweeps at both moments; (1,10) nonclean at 371)",
+    "supervisor_patch": "the primary's audit tuple declared a git-reference string; patched to the fetched disk copy (runner_cache requires literal existing paths); primary+checker re-verified passing"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 794,
+  "date": "2026-07-30",
+  "result": {
+    "outcome": "SELECTED (second instance)",
+    "pattern": "TWO_FOR_TWO_UNIQUE",
+    "survivor": "((0,7),) unique at t=371",
+    "windows": "one tick each"
+  },
+  "status": "CYCLE794_SECOND_SELECTION_PASS"
+}

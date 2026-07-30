@@ -73,6 +73,14 @@ checkpoints:
       - "#5799 blockC12 791: T=1024 resolution — second transient t=371 (3,(0,7)); new cycle period 288/6 (2,(0,9)); fractions 2/12/162 of 176; checker full re-sweep clean."
     milestone: "Cycle 792 (blockR8, checker in flight): THE FIRST MULTI-SOURCE SELECTION — with the clean_postimage horizon explicit at t=252 (SUPPLIED change), the epoch-3 (1,10) battery yields a UNIQUE survivor; discontinuity t=251->0, t=252->1. The arc: one law kills all 638 -> the law is horizon-relative -> under a one-parameter extension the first unique multi-source selection exists. Derivation target: the horizon freedom from the axioms."
     in_flight: "792-checker (battery fidelity + uniqueness attack); 794 (the second selection at t=371 + the simultaneity question); 795 (the transient-vs-cycle discriminator census + open-key forecast); 789 ships next (canonical pair CONFIRMED: 29/29 both, 103+155 off-tie identical, 7/7 disagreements)"
+  - at: "waves 10-11 — the selection arc completes"
+    prs:
+      - "#5800 blockP7 789: leg-2 on CANONICAL completions (GCMIN/GCMAX; 29/29 both; off-tie identical 103+155; disagree at ALL 7 ties; GCMIN's frozen-tie = 767's beta DERIVED)."
+      - "#5801 blockR8 792: THE FIRST MULTI-SOURCE SELECTION — unique survivor ((1,10),) at supplied horizon t=252; discontinuity 251->0, 252->1; checker found the ONE-TICK WINDOW (253-256 absent) -> the law must be EXACT-TIME."
+      - "#5802 blockC13 795: discriminator census — 103 separators at p~0.242 vs the exhaustive null (UNINFORMATIVE; geometry not signal); the surviving deliverable: 46 distinct forecast vectors, all 162 open keys contested."
+      - "#5804 blockF8 794: the SECOND selection — TWO_FOR_TWO_UNIQUE (((0,7),) at t=371; both windows one-tick; never simultaneous). Supervisor patch: git-reference string in the audit tuple -> disk copy."
+    milestone: "Cycle 796 CONSTRUCTED — exact_time_law_constructed_at_scope TRUE: the continuously-monitored selector (every-boundary monitoring [781 idiom] + landed cleanliness test + first-pass acceptance) contains NO per-configuration values and reproduces both selections at exactly 252/371 over the full 176-key family, zero divergence from pre-registered predictions. Residual supply surface: cadence + cutoff. Checker in flight (the cadence attack: is station-boundary cadence unique-landed or one of several?). THE question for the axioms conversation: is this composition THE law (derivable from 'possibilities resolve' at moments) or A construction?"
+    in_flight: "796-checker (byw6rmruf); 797 launching (T=4096 open-keys continuation — each resolution tests the 46 forecast vectors)"
 queue_next:
   - b=7 anchor (~20 min at the 1.47B steps/s evaluator idiom)
   - k=3/4 full strata; T>64 horizons

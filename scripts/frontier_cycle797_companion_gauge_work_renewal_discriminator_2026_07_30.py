@@ -214,6 +214,9 @@ def local_factor_certificate(shape, atlas):
     width = obj["width"]
     initial = obj["resource"] + obj["live_reference"] + obj["ancilla_z"]
     final = C789.conjugate_basis(initial, obj["gates"])
+    output_binary_failures, output_signed_failures = C789.signed_span_failures(
+        obj["output_reference"], final, width
+    )
     owners = tuple(
         S789.tag_owner_slot(fixture, tag)[0]
         for tag in obj["compiled"]["tags"]
@@ -303,6 +306,8 @@ def local_factor_certificate(shape, atlas):
             row.symplectic(width) for row in final
         )),
         "output_reference_subgroup_rank": len(output_subgroup),
+        "output_reference_binary_span_failures": output_binary_failures,
+        "output_reference_signed_span_failures": output_signed_failures,
         "environment_subgroup_rank": len(environment_subgroup),
         "factorization_rank_sum": len(output_subgroup) + len(environment_subgroup),
         "factorization_rank_deficit": 3 * rank - (
@@ -544,6 +549,8 @@ def main():
     checks = {
         "Bell_output_exact_but_environment_does_not_factor": all(
             row["output_reference_subgroup_rank"] == row["character_rank"]
+            and row["output_reference_binary_span_failures"] == 0
+            and row["output_reference_signed_span_failures"] == 0
             and row["factorization_rank_deficit"] > 0
             for row in boxes
         ),

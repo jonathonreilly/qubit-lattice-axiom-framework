@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30.py
 runner_sha256: e010b4d407e38c7832ff94b8d7886bf5369e06be4eef44c01e35688f56d103bd
-input_fingerprint_sha256: 3af8ccad3e78d4d33df94075dd8087dff308eba4654619de3fccdb1fd8e4cc91
+input_fingerprint_sha256: bafdbdebd54b50ac762e4b337fb1195e6f476cf23fc76c91ffcd65fb95b748ad
 timeout_sec: 1200
 exit_code: 0
-elapsed_sec: 236.26
+elapsed_sec: 245.32
 status: ok
 ----- stdout -----
 {
@@ -191,7 +191,7 @@ status: ok
     "unextended_second_epoch_parity_commutator_failures": 72
   },
   "input_sha256": {
-    "docs/LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md": "f7a7b1bcdf0312adb962b1d91a63af17a22116736769085853e53c1b8f06671b",
+    "docs/LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md": "7af11f4904c32cfac40ef7a6f14534be4619d980a7fc1e575f94cd4092755cf7",
     "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
     "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
     "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",

@@ -8,7 +8,7 @@
     "base_commit": "df1b9a01f92fcd5461eba40a2e0e4457cccce223",
     "cycle720_recurrent_update_sha256": "34c3b0fe14b6937010b88daf8594811fa8a6ef1741ab539b682db2429560c87d",
     "cycle794_composition_sha256": "1a5828c726cfca96c7a2240914a61f980a9406835821a44108a9061d7f6f1009",
-    "note_sha256": "f7a7b1bcdf0312adb962b1d91a63af17a22116736769085853e53c1b8f06671b"
+    "note_sha256": "7af11f4904c32cfac40ef7a6f14534be4619d980a7fc1e575f94cd4092755cf7"
   },
   "result": "On the supplied parity-superselected companion code with factorized carrier/channel input and clean definite syndrome controls, exactly one typed carrier M2 per coarse cell makes every pump/Bell/correction factor commute with extended parity and closes two consecutive prepared epochs without querying or resetting the carrier. An exact U-dagger CZ U compiler realizes all two-letter controlled factors with maximum residual 6.312164422641715e-16. The complete even-CAR signed channel composes factorwise with recurrent G on identical output coordinates; the parity-even recurrent seam semantic factors have maximum support 17 M2, diameter 24, and maximum deterministic-sample phase-aligned state residual 7.913391346636907e-16. Carrier/resource genesis, radius-one synthesis, autonomous occurrence, translation-invariant gluing, and downstream TOE bridges remain open.",
   "scope": {
@@ -23,7 +23,7 @@
     "observable_domain": "total extended-parity even algebra"
   },
   "primary": {
-    "cache_sha256": "144e7fae2bb436998c30ae546848d2e8d0d82f97e80131a190f2bb0a66fa3fc9",
+    "cache_sha256": "b9d4d1e97d399cab09652d56cf96f4b956d3e943bb261df04201e3a3dfbac661",
     "script_sha256": "e010b4d407e38c7832ff94b8d7886bf5369e06be4eef44c01e35688f56d103bd",
     "status": "PASS",
     "two_cell_character_rank": 23,
@@ -42,7 +42,7 @@
     "one_particle_mass_residual": 5.551115123125783e-17
   },
   "independent": {
-    "cache_sha256": "6ad7cc596ce74d12cdb1f90b5cfd87704b9dee943b9f14c5e91f881ebac9da74",
+    "cache_sha256": "eb74d77a2b038522f6c1df5cf7e1bfb58ada57191551edf5e4652fee5177ed34",
     "script_sha256": "8238883786018351bc5fd98bf4cc770d6613384c349382ca18af172836a00130",
     "status": "PASS",
     "carrier_density_spanning_states": 16,

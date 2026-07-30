@@ -168,9 +168,12 @@ Replacing it by the exact semantic rotations preserves the update, but a
 nearest-neighbour parity-even synthesis of those up-to-17-M2 rotations remains
 open.
 
-The one-particle mass residual remains `5.551115123125783e-17`; the landed
-free, seam, contact, leakage, and recurrent-power checks pass through powers
-`(1,2,3,5,8)` on two cells and `(1,2,3)` on held three cells.
+The one-particle mass residual remains `5.551115123125783e-17`. The imported
+Cycle-794 box certificate supplies the landed free/seam/contact recurrent-power
+rows through powers `(1,2,3,5,8)` on two cells and `(1,2,3)` on held three
+cells. Cycle 821 independently re-gates the recurrent seam-factor parity and
+sampled-state residuals plus the mass fixture; it does not re-run Cycle 794's
+broader deletion, dirty-state, order, or leakage mutation suite.
 
 ## Placement, covariance, and controls
 
@@ -247,8 +250,9 @@ is made.
   covariance surfaces;
 - exact modular recurrent-G composition on the identical output coordinates,
   including parity-even bounded seam semantic factors; and
-- active deletion, dirty-carrier, missing-parity-leg, held-shape, mass,
-  free/seam/contact, leakage, and hostile-decomposition controls.
+- active Cycle-821 deletion, dirty-carrier, missing-parity-leg, held-shape,
+  mass, seam-factor parity/sample, and hostile-decomposition controls. The
+  broader Cycle-794 mutation suite is parent evidence and is not re-run here.
 
 ### Open
 

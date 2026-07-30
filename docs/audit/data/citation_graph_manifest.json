@@ -1,6 +1,6 @@
 {
- "edge_count": 15207,
- "node_count": 4568,
+ "edge_count": 15209,
+ "node_count": 4569,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14657,6 +14657,10 @@
   "three_generation_structure_note": {
    "deps_hash": "5af88c485e70",
    "out_degree": 1
+  },
+  "three_register_companion_input_circuit_cycle789_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "cd89a6235e20",
+   "out_degree": 2
   },
   "tick_admissibility_realization_bridge_clause_to_predicate_narrow_theorem_note_2026-07-10": {
    "deps_hash": "c8eee4235fc9",

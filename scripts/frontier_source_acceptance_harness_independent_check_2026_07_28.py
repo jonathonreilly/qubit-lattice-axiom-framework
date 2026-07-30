@@ -123,7 +123,12 @@ def _finite_data(value: Any) -> bool:
             and np.all(np.isfinite(value))
         )
     if isinstance(value, dict):
-        return all(_finite_data(key) and _finite_data(item) for key, item in value.items())
+        return all(
+            isinstance(key, (str, int, float, bool))
+            and _finite_data(key)
+            and _finite_data(item)
+            for key, item in value.items()
+        )
     if isinstance(value, (tuple, list)):
         return all(_finite_data(item) for item in value)
     return False
@@ -336,6 +341,23 @@ EXPECTED_TENSOR_PREDICATES = tuple(
     )
 )
 
+EXPECTED_VERDICT_AST_SHA256 = {
+    "tensor_lift": "f8814817840928446ee3c413b3fdb1f4a52aac668e4d5c2402fc9ac2c631b7ce",
+    "recoil": "cc9f218290b2d784411ce00e251e8edffa1c3cdd3f52cbda523be865f885fbd1",
+    "typed_bridge": "3dd1f832da9c95694aeb3daf0fe65ad32277f8a7742e324ed95ff6ff9cc5791c",
+}
+EXPECTED_INPUT_PORT_AST_SHA256 = {
+    "tensor_lift": "05cef49eb0b12c0a9590481f5e6ab8cc155d484b80c326181d53542f7821544c",
+    "recoil": "8c56c5051758af57145d1ade9db7511467973265d47b09cccf7f29e17f46535e",
+}
+
+
+def _normalized_ast_sha256(node: ast.AST) -> str:
+    normalized = ast.dump(
+        node, annotate_fields=True, include_attributes=False
+    )
+    return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
+
 
 def _extract_bridge_routes(tree: ast.Module) -> list[dict[str, Any]]:
     node = _assignments(tree).get("ROUTES")
@@ -420,10 +442,24 @@ def frozen_extraction() -> dict[str, Any]:
         "recoil": values["RECOIL_FROZEN_EXPECTED"],
         "typed_bridge": values["BRIDGE_FROZEN_EXPECTED"],
     }
-    verdict = _class_method(
-        trees["harness"], "TensorLiftAcceptance", "verdict"
+    verdict_methods = {
+        "tensor_lift": _class_method(
+            trees["harness"], "TensorLiftAcceptance", "verdict"
+        ),
+        "recoil": _class_method(
+            trees["harness"], "RecoilReciprocityAcceptance", "verdict"
+        ),
+        "typed_bridge": _class_method(
+            trees["harness"], "TypedBridgeAcceptance", "verdict"
+        ),
+    }
+    verdict_ast_sha256 = {
+        name: _normalized_ast_sha256(method)
+        for name, method in verdict_methods.items()
+    }
+    predicate_spec = _predicate_spec(
+        _accepted_expression(verdict_methods["tensor_lift"])
     )
-    predicate_spec = _predicate_spec(_accepted_expression(verdict))
     bridge_rows = _extract_bridge_routes(trees["bridge"])
     condition = (
         actual_pins == expected_pins
@@ -433,6 +469,7 @@ def frozen_extraction() -> dict[str, Any]:
         )
         and bridge_rows == records["typed_bridge"]["contract_rows"]
         and predicate_spec == EXPECTED_TENSOR_PREDICATES
+        and verdict_ast_sha256 == EXPECTED_VERDICT_AST_SHA256
         and HARNESS_MODULE not in sys.modules
     )
     _check(
@@ -452,6 +489,7 @@ def frozen_extraction() -> dict[str, Any]:
             },
             "typed_bridge_contract_rows": bridge_rows,
             "tensor_predicates": predicate_spec,
+            "verdict_ast_sha256": verdict_ast_sha256,
         },
     )
     return {
@@ -462,6 +500,7 @@ def frozen_extraction() -> dict[str, Any]:
         "expected_pins": expected_pins,
         "bridge_rows": bridge_rows,
         "predicate_spec": predicate_spec,
+        "verdict_ast_sha256": verdict_ast_sha256,
     }
 
 
@@ -739,16 +778,24 @@ def _drifted(record: dict[str, Any], expected_pin: str) -> bool:
 
 
 def tensor_verdict(
-    record: dict[str, Any], frozen: dict[str, Any], expected_pin: str
+    record: Any, frozen: dict[str, Any], expected_pin: str
 ) -> str:
     try:
+        if not isinstance(record, dict):
+            return "REJECT"
         if _drifted(record, expected_pin):
             return "DRIFT"
         if not _finite_data(record):
             return "REJECT"
-        outcomes = record["outcomes"]
+        outcomes = record.get("outcomes")
         expected = frozen["outcomes"]
-        if set(outcomes) != set(expected):
+        if not isinstance(outcomes, dict) or set(outcomes) != set(expected):
+            return "REJECT"
+        if any(
+            not isinstance(outcomes.get(name), dict)
+            or not isinstance(outcomes[name].get("values"), dict)
+            for name in expected
+        ):
             return "REJECT"
         if any(outcomes[name].get("check") != "PASS" for name in expected):
             return "REJECT"
@@ -779,19 +826,35 @@ def tensor_verdict(
             and no_claim == expected["no_claim"]["values"]
         )
         return "ACCEPT" if accepted else "REJECT"
-    except (KeyError, TypeError, ValueError, IndexError, OverflowError):
+    except (
+        AttributeError,
+        KeyError,
+        TypeError,
+        ValueError,
+        IndexError,
+        OverflowError,
+    ):
         return "REJECT"
 
 
 def recoil_verdict(
-    record: dict[str, Any], frozen: dict[str, Any], expected_pin: str
+    record: Any, frozen: dict[str, Any], expected_pin: str
 ) -> str:
     try:
+        if not isinstance(record, dict):
+            return "REJECT"
         if _drifted(record, expected_pin):
             return "DRIFT"
+        if not _finite_data(record):
+            return "REJECT"
+        outcomes = record.get("outcomes")
+        if not isinstance(outcomes, list) or any(
+            not isinstance(row, dict) for row in outcomes
+        ):
+            return "REJECT"
         observed = [
             {"check": row.get("check"), "pass": row.get("pass")}
-            for row in record.get("outcomes", [])
+            for row in outcomes
         ]
         accepted = (
             observed == frozen["outcomes"]
@@ -801,19 +864,28 @@ def recoil_verdict(
             and not record.get("exceptions")
         )
         return "ACCEPT" if accepted else "REJECT"
-    except (KeyError, TypeError, ValueError, IndexError):
+    except (AttributeError, KeyError, TypeError, ValueError, IndexError):
         return "REJECT"
 
 
 def bridge_verdict(
-    record: dict[str, Any], frozen: dict[str, Any], expected_pin: str
+    record: Any, frozen: dict[str, Any], expected_pin: str
 ) -> str:
     try:
+        if not isinstance(record, dict):
+            return "REJECT"
         if _drifted(record, expected_pin):
             return "DRIFT"
+        if not _finite_data(record):
+            return "REJECT"
+        outcomes = record.get("outcomes")
+        if not isinstance(outcomes, list) or any(
+            not isinstance(row, dict) for row in outcomes
+        ):
+            return "REJECT"
         observed = [
             {"check": row.get("check"), "pass": row.get("pass")}
-            for row in record.get("outcomes", [])
+            for row in outcomes
         ]
         accepted = (
             record.get("returncode") == 0
@@ -823,7 +895,7 @@ def bridge_verdict(
             and record.get("contract_scope") == frozen["contract_scope"]
         )
         return "ACCEPT" if accepted else "REJECT"
-    except (KeyError, TypeError, ValueError, IndexError):
+    except (AttributeError, KeyError, TypeError, ValueError, IndexError):
         return "REJECT"
 
 
@@ -854,15 +926,36 @@ def verdict_semantics(
         if name == "tensor_lift":
             corrupted["outcomes"]["response_locking"]["values"][
                 "positive_self"
-            ] = math.inf
+            ] = -1.0
         else:
             corrupted["outcomes"][0]["pass"] = False
+        nonfinite_nested = copy.deepcopy(canonical)
+        if name == "tensor_lift":
+            nonfinite_nested["outcomes"]["response_locking"]["values"][
+                "positive_self"
+            ] = math.inf
+        else:
+            nonfinite_nested["outcomes"][0]["values"] = {
+                "landed_detail": math.inf
+            }
+        malformed_outcome = copy.deepcopy(canonical)
+        if name == "tensor_lift":
+            malformed_outcome["outcomes"]["projector_algebra"] = 1
+        else:
+            malformed_outcome["outcomes"][0] = 1
         wrong_pin = _with_pin(semantic_record, "0" * 64)
         tampered_record_pin = copy.deepcopy(canonical)
         tampered_record_pin["expected_sha256"] = "0" * 64
         rows[name] = {
             "canonical": classifier(canonical, frozen, pin),
             "corrupted": classifier(corrupted, frozen, pin),
+            "nonfinite_nested": classifier(
+                nonfinite_nested, frozen, pin
+            ),
+            "malformed_nonobject": classifier(None, frozen, pin),
+            "malformed_outcome": classifier(
+                malformed_outcome, frozen, pin
+            ),
             "wrong_pin": classifier(wrong_pin, frozen, "0" * 64),
             "tampered_record_pin": classifier(
                 tampered_record_pin, frozen, pin
@@ -880,6 +973,9 @@ def verdict_semantics(
         name: {
             "canonical": "ACCEPT",
             "corrupted": "REJECT",
+            "nonfinite_nested": "REJECT",
+            "malformed_nonobject": "REJECT",
+            "malformed_outcome": "REJECT",
             "wrong_pin": "DRIFT",
             "tampered_record_pin": "DRIFT",
             **({"swapped_fixture": "REJECT"} if name == "recoil" else {}),
@@ -932,6 +1028,10 @@ def discipline(extracted: dict[str, Any]) -> dict[str, Any]:
     tensor_args = tuple(argument.arg for argument in tensor_accept.args.args)
     recoil_args = tuple(argument.arg for argument in recoil_accept.args.args)
     pin_args = tuple(argument.arg for argument in pin_init.args.args)
+    input_port_ast_sha256 = {
+        "tensor_lift": _normalized_ast_sha256(tensor_accept),
+        "recoil": _normalized_ast_sha256(recoil_accept),
+    }
     source_text = (ROOT / HARNESS_PATH).read_text(encoding="utf-8")
     closure_ok = (
         isinstance(main_inputs, tuple)
@@ -946,12 +1046,15 @@ def discipline(extracted: dict[str, Any]) -> dict[str, Any]:
         and "model_port" not in source_text
         and "operator_triple" not in source_text
         and "expected_sha256: str | None" not in source_text
+        and input_port_ast_sha256 == EXPECTED_INPUT_PORT_AST_SHA256
     )
     writes = _landed_attribute_writes(harness_tree)
     condition = (
         closure_ok
         and api_ok
         and extracted["predicate_spec"] == EXPECTED_TENSOR_PREDICATES
+        and extracted["verdict_ast_sha256"]
+        == EXPECTED_VERDICT_AST_SHA256
         and not writes
     )
     _check(
@@ -964,8 +1067,13 @@ def discipline(extracted: dict[str, Any]) -> dict[str, Any]:
             "tensor_accept_args": tensor_args,
             "recoil_accept_args": recoil_args,
             "pin_init_args": pin_args,
+            "input_port_ast_sha256": input_port_ast_sha256,
             "predicate_mapping_exact": (
                 extracted["predicate_spec"] == EXPECTED_TENSOR_PREDICATES
+            ),
+            "verdict_structure_exact": (
+                extracted["verdict_ast_sha256"]
+                == EXPECTED_VERDICT_AST_SHA256
             ),
             "landed_module_attribute_writes": writes,
         },
@@ -975,8 +1083,15 @@ def discipline(extracted: dict[str, Any]) -> dict[str, Any]:
         "independent_input_count": len(AUDIT_INPUT_PATHS),
         "closure_ok": closure_ok,
         "api_ok": api_ok,
+        "input_port_structure_exact": (
+            input_port_ast_sha256 == EXPECTED_INPUT_PORT_AST_SHA256
+        ),
         "predicate_mapping_exact": (
             extracted["predicate_spec"] == EXPECTED_TENSOR_PREDICATES
+        ),
+        "verdict_structure_exact": (
+            extracted["verdict_ast_sha256"]
+            == EXPECTED_VERDICT_AST_SHA256
         ),
         "module_writes": writes,
     }

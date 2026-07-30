@@ -62,6 +62,7 @@ import copy
 import hashlib
 import json
 import math
+from numbers import Real
 from pathlib import Path
 import re
 import subprocess
@@ -377,27 +378,54 @@ class TensorLiftAcceptance(_PinnedAcceptance):
             )
 
         try:
-            source_array = np.asarray(source_vector)
+            source_object = np.asarray(source_vector, dtype=object)
         except Exception as exc:
             return self._input_reject(
                 {"reason": f"source conversion failed: {type(exc).__name__}: {exc}"}
             )
         if (
-            source_array.ndim != 1
-            or source_array.shape != (10,)
-            or not np.issubdtype(source_array.dtype, np.number)
-            or np.issubdtype(source_array.dtype, np.bool_)
-            or np.issubdtype(source_array.dtype, np.complexfloating)
-            or not np.all(np.isfinite(source_array))
+            source_object.ndim != 1
+            or source_object.shape != (10,)
         ):
             return self._input_reject(
                 {
                     "expected": "one real finite numeric vector of shape [10]",
-                    "observed_shape": list(source_array.shape),
-                    "observed_dtype": str(source_array.dtype),
+                    "observed_shape": list(source_object.shape),
+                    "observed_dtype": str(source_object.dtype),
                 }
             )
-        source = np.asarray(source_array, dtype=float)
+        source_values = source_object.tolist()
+        if any(
+            isinstance(value, (bool, np.bool_))
+            or not isinstance(value, Real)
+            for value in source_values
+        ):
+            return self._input_reject(
+                {
+                    "expected": "ten real numeric non-Boolean elements",
+                    "observed_types": [
+                        type(value).__name__ for value in source_values
+                    ],
+                }
+            )
+        try:
+            source = np.asarray(source_values, dtype=float)
+        except (TypeError, ValueError, OverflowError) as exc:
+            return self._input_reject(
+                {
+                    "reason": (
+                        "finite float conversion failed: "
+                        f"{type(exc).__name__}: {exc}"
+                    )
+                }
+            )
+        if source.shape != (10,) or not np.all(np.isfinite(source)):
+            return self._input_reject(
+                {
+                    "expected": "ten finite float-convertible real values",
+                    "observed_shape": list(source.shape),
+                }
+            )
         try:
             _canonical_source, constraint = S1.tensor_source_with_constraints()
             constraint = np.asarray(constraint, dtype=float)
@@ -549,15 +577,23 @@ class TensorLiftAcceptance(_PinnedAcceptance):
             "outcomes": outcomes,
         }
 
-    def verdict(self, record: dict[str, Any]) -> str:
+    def verdict(self, record: Any) -> str:
         try:
+            if not isinstance(record, dict):
+                return "REJECT"
             if self._record_is_drifted(record):
                 return "DRIFT"
             if not _finite_data(record):
                 return "REJECT"
-            outcomes = record.get("outcomes", {})
+            outcomes = record.get("outcomes")
             frozen = self.FROZEN_EXPECTED["outcomes"]
-            if set(outcomes) != set(frozen):
+            if not isinstance(outcomes, dict) or set(outcomes) != set(frozen):
+                return "REJECT"
+            if any(
+                not isinstance(outcomes.get(name), dict)
+                or not isinstance(outcomes[name].get("values"), dict)
+                for name in frozen
+            ):
                 return "REJECT"
             if any(outcomes[name].get("check") != "PASS" for name in frozen):
                 return "REJECT"
@@ -590,7 +626,14 @@ class TensorLiftAcceptance(_PinnedAcceptance):
                 and no_claim == frozen["no_claim"]["values"]
             )
             return "ACCEPT" if accepted else "REJECT"
-        except (KeyError, TypeError, ValueError, IndexError, OverflowError):
+        except (
+            AttributeError,
+            KeyError,
+            TypeError,
+            ValueError,
+            IndexError,
+            OverflowError,
+        ):
             return "REJECT"
 
 
@@ -713,13 +756,16 @@ class RecoilReciprocityAcceptance(_PinnedAcceptance):
 
     def accept(
         self,
-        fixture_selector: str = "canonical",
+        fixture_selector: Any = "canonical",
     ) -> dict[str, Any]:
         if not self._pin_still_verified():
             return _drift_record(
                 self.SOURCE_PATH, self.expected_sha256, self.actual_sha256
             )
-        if fixture_selector not in {"canonical", "swap_coin_fswap"}:
+        if (
+            not isinstance(fixture_selector, str)
+            or fixture_selector not in {"canonical", "swap_coin_fswap"}
+        ):
             return self._operational_reject(
                 fixture_selector,
                 "fixture selector must be canonical or swap_coin_fswap",
@@ -776,15 +822,22 @@ class RecoilReciprocityAcceptance(_PinnedAcceptance):
             "returncode": completed.returncode,
         }
 
-    def verdict(self, record: dict[str, Any]) -> str:
+    def verdict(self, record: Any) -> str:
         try:
+            if not isinstance(record, dict):
+                return "REJECT"
             if self._record_is_drifted(record):
                 return "DRIFT"
             if not _finite_data(record):
                 return "REJECT"
+            outcomes = record.get("outcomes")
+            if not isinstance(outcomes, list) or any(
+                not isinstance(row, dict) for row in outcomes
+            ):
+                return "REJECT"
             observed = [
                 {"check": row.get("check"), "pass": row.get("pass")}
-                for row in record.get("outcomes", [])
+                for row in outcomes
             ]
             accepted = (
                 observed == self.FROZEN_EXPECTED["outcomes"]
@@ -796,7 +849,7 @@ class RecoilReciprocityAcceptance(_PinnedAcceptance):
                 and not record.get("exceptions")
             )
             return "ACCEPT" if accepted else "REJECT"
-        except (KeyError, TypeError, ValueError, IndexError):
+        except (AttributeError, KeyError, TypeError, ValueError, IndexError):
             return "REJECT"
 
 
@@ -932,15 +985,22 @@ class TypedBridgeAcceptance(_PinnedAcceptance):
             "stderr": completed.stderr,
         }
 
-    def verdict(self, record: dict[str, Any]) -> str:
+    def verdict(self, record: Any) -> str:
         try:
+            if not isinstance(record, dict):
+                return "REJECT"
             if self._record_is_drifted(record):
                 return "DRIFT"
             if not _finite_data(record):
                 return "REJECT"
+            outcomes = record.get("outcomes")
+            if not isinstance(outcomes, list) or any(
+                not isinstance(row, dict) for row in outcomes
+            ):
+                return "REJECT"
             observed = [
                 {"check": row.get("check"), "pass": row.get("pass")}
-                for row in record.get("outcomes", [])
+                for row in outcomes
             ]
             accepted = (
                 record.get("returncode") == 0
@@ -952,7 +1012,7 @@ class TypedBridgeAcceptance(_PinnedAcceptance):
                 == self.FROZEN_EXPECTED["contract_scope"]
             )
             return "ACCEPT" if accepted else "REJECT"
-        except (KeyError, TypeError, ValueError, IndexError):
+        except (AttributeError, KeyError, TypeError, ValueError, IndexError):
             return "REJECT"
 
 
@@ -1036,9 +1096,16 @@ def main() -> int:
         == tensor.frozen_expected()["outcomes"],
         _digest(canonical_tensor_record["outcomes"]),
     )
+    mixed_boolean_source = (
+        canonical_source / canonical_source[0]
+    ).tolist()
+    mixed_boolean_source[0] = True
     invalid_tensor_verdicts = {
         "boolean": tensor.verdict(
             tensor.accept(np.ones(10, dtype=bool))
+        ),
+        "mixed_boolean": tensor.verdict(
+            tensor.accept(mixed_boolean_source)
         ),
         "complex": tensor.verdict(
             tensor.accept((1.0 + 0.1j) * canonical_source)
@@ -1048,6 +1115,9 @@ def main() -> int:
         ),
         "nonfinite": tensor.verdict(
             tensor.accept(np.full(10, np.nan))
+        ),
+        "wide_integer": tensor.verdict(
+            tensor.accept([10**400] * 10)
         ),
     }
     check(
@@ -1133,6 +1203,71 @@ def main() -> int:
         "typed-bridge ROUTES table matches its frozen AST data",
         bridge.contract_rows == [dict(row) for row in BRIDGE_CONTRACT_ROWS],
         bridge_digest,
+    )
+
+    nonfinite_recoil_record = copy.deepcopy(recoil_record)
+    nonfinite_recoil_record["outcomes"][0]["values"][
+        "landed_detail"
+    ] = math.inf
+    nonfinite_bridge_record = copy.deepcopy(bridge_record)
+    nonfinite_bridge_record["outcomes"][0]["values"][
+        "landed_detail"
+    ] = math.inf
+    malformed_outcome_records = {
+        "tensor": copy.deepcopy(canonical_tensor_record),
+        "recoil": copy.deepcopy(recoil_record),
+        "typed_bridge": copy.deepcopy(bridge_record),
+    }
+    malformed_outcome_records["tensor"]["outcomes"][
+        "projector_algebra"
+    ] = 1
+    malformed_outcome_records["recoil"]["outcomes"][0] = 1
+    malformed_outcome_records["typed_bridge"]["outcomes"][0] = 1
+    malformed_record_verdicts = {
+        f"{name}_{type(value).__name__}": classifier.verdict(value)
+        for name, classifier in (
+            ("tensor", tensor),
+            ("recoil", recoil),
+            ("typed_bridge", bridge),
+        )
+        for value in (None, [], "record")
+    }
+    malformed_record_verdicts.update(
+        {
+            f"{name}_outcome": classifier.verdict(
+                malformed_outcome_records[name]
+            )
+            for name, classifier in (
+                ("tensor", tensor),
+                ("recoil", recoil),
+                ("typed_bridge", bridge),
+            )
+        }
+    )
+    malformed_record_verdicts.update(
+        {
+            "recoil_nonfinite": recoil.verdict(
+                nonfinite_recoil_record
+            ),
+            "bridge_nonfinite": bridge.verdict(
+                nonfinite_bridge_record
+            ),
+        }
+    )
+    check(
+        "all verdict surfaces reject malformed or nonfinite records",
+        set(malformed_record_verdicts.values()) == {"REJECT"},
+        malformed_record_verdicts,
+    )
+
+    malformed_selector_verdicts = {
+        "list": recoil.verdict(recoil.accept([])),
+        "dict": recoil.verdict(recoil.accept({})),
+    }
+    check(
+        "recoil rejects non-string selectors without raising",
+        set(malformed_selector_verdicts.values()) == {"REJECT"},
+        malformed_selector_verdicts,
     )
 
     class WrongPinTensorLiftAcceptance(TensorLiftAcceptance):

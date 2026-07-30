@@ -66,10 +66,12 @@ The independent checker never imports the harness module. It extracts only
 literal frozen data and method predicates from the harness source, recomputes
 the tensor and recoil records directly from the landed modules, executes the
 pinned Cycle-294 runner independently, and extracts Cycle-294 `ROUTES` directly
-from its abstract syntax tree. It independently classifies
-`ACCEPT`/`REJECT`/`DRIFT` vectors for all three classes and compares the complete
-field/operator/threshold predicate mapping, not only the set of numeric
-constants.
+from its abstract syntax tree. It pins the complete normalized syntax trees of
+all three verdict methods and both candidate-input methods, independently
+classifies `ACCEPT`/`REJECT`/`DRIFT` vectors for all three classes, and checks
+the exact Tensor field/operator/threshold predicate mapping. Differential
+vectors cover malformed objects, malformed outcome rows, non-finite nested
+runtime fields, record-carried pin drift, and the fixed recoil perturbation.
 
 ## Boundary
 

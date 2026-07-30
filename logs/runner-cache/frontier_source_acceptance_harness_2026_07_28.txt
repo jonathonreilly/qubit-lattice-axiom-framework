@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_source_acceptance_harness_2026_07_28.py
-runner_sha256: 86c75bffe5051531e3a46381d2a53e1c48f241b805149400f8a9f8820213298a
+runner_sha256: f50ee133996384db83d704c0ce16fcd88773d53fb4314900976345368773dc51
 input_fingerprint_sha256: 059559c85e6933a8d2054412297c0f4727b3b1ac3bf58b52c6ddd580e66c816b
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 159.76
+elapsed_sec: 169.90
 status: ok
 ----- stdout -----
 PASS all three landed byte pins verify :: {'tensor_lift': {'expected': '33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31', 'actual': '33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31', 'verified': True}, 'recoil': {'expected': '4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75', 'actual': '4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75', 'verified': True}, 'typed_bridge': {'expected': '834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59', 'actual': '834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59', 'verified': True}}
 PASS tensor canonical fixture is ACCEPT :: ACCEPT
 PASS tensor canonical record equals the frozen record :: 7397fd6e23343438a91a836365c8d0595ec6a4c4d2c72f646478537b1ed64b41
-PASS tensor input contract rejects non-real or nonfinite vectors :: {'boolean': 'REJECT', 'complex': 'REJECT', 'string': 'REJECT', 'nonfinite': 'REJECT'}
+PASS tensor input contract rejects non-real or nonfinite vectors :: {'boolean': 'REJECT', 'mixed_boolean': 'REJECT', 'complex': 'REJECT', 'string': 'REJECT', 'nonfinite': 'REJECT', 'wide_integer': 'REJECT'}
 PASS tensor verdict rejects nonfinite or malformed records :: {'nonfinite_record': 'REJECT', 'missing_field': 'REJECT'}
 PASS record-carried expected pin mismatch classifies DRIFT :: DRIFT
 PASS corrupted tensor vector is REJECT with flipped checks :: {'verdict': 'REJECT', 'flipped_checks': ['orientation_twist', 'response_locking', 'free_tensor_carrier']}
@@ -18,12 +18,14 @@ PASS landed Cycle-322 20/20 record is ACCEPT :: {'verdict': 'ACCEPT', 'pass': 20
 PASS coin/FSWAP-swapped landed fixture is an exact four-check REJECT :: {'verdict': 'REJECT', 'flipped_checks': ['the naive one-one carried-source product is not a closed Cycle-315 FSWAP sector', 'the same-code two-update response has nonzero reciprocal off-diagonal transfer through held L=6', 'receiver, stream, and source-exchange deletions distinguish the reciprocal off-diagonal response', 'the source family and Cycle-315 seam cover all 24 frames including twelve endpoint reversals']}
 PASS landed Cycle-294 5/0 subprocess record is ACCEPT :: {'verdict': 'ACCEPT', 'counts': {'pass': 5, 'fail': 0}}
 PASS typed-bridge ROUTES table matches its frozen AST data :: 9ced4631a1382e85989c8a301fca8bc48bf7f759aad71c8ba7c5110c85614b35
+PASS all verdict surfaces reject malformed or nonfinite records :: {'tensor_NoneType': 'REJECT', 'tensor_list': 'REJECT', 'tensor_str': 'REJECT', 'recoil_NoneType': 'REJECT', 'recoil_list': 'REJECT', 'recoil_str': 'REJECT', 'typed_bridge_NoneType': 'REJECT', 'typed_bridge_list': 'REJECT', 'typed_bridge_str': 'REJECT', 'tensor_outcome': 'REJECT', 'recoil_outcome': 'REJECT', 'typed_bridge_outcome': 'REJECT', 'recoil_nonfinite': 'REJECT', 'bridge_nonfinite': 'REJECT'}
+PASS recoil rejects non-string selectors without raising :: {'list': 'REJECT', 'dict': 'REJECT'}
 PASS wrong local tensor pin refuses execution and classifies DRIFT :: DRIFT
 PASS support/meta tool boundary is explicit :: {'new_physics_claimed': False, 'harness_input_ports': {'tensor_lift': True, 'recoil': False, 'typed_bridge': False}, 'tool_role': 'non-authoritative candidate testing'}
 {
   "checks": {
     "fail": 0,
-    "pass": 13
+    "pass": 15
   },
   "demos": {
     "recoil_landed": "ACCEPT",
@@ -77,7 +79,7 @@ PASS support/meta tool boundary is explicit :: {'new_physics_claimed': False, 'h
       "verified": true
     }
   },
-  "runtime_seconds": 159.651919,
+  "runtime_seconds": 169.598083,
   "tool_role": "non-authoritative candidate testing"
 }
 

@@ -106,6 +106,15 @@ SUPPLIED_792_CONDITIONS = (
 RECORD_AXIOM_SHA256 = (
     "69d69c0d59162b5fdf2f293a695d0094124006baf0efb3f719fc3fa0df106384"
 )
+S1_PLAIN_READING = (
+    "The Record axiom asserts globally that records form. It schedules no "
+    "formation for any epoch or configuration; only where and when remain "
+    "open."
+)
+S1_FORMATION_STATUS = {
+    "formation_asserted_globally": True,
+    "formation_forced_for_any_epoch": False,
+}
 S2_IDENTIFICATION_CLAIM = (
     "The seven-condition battery equals landed admissibility at the 792/796 "
     "surface: four conditions are explicit exclusions on Cycle-758's raw "
@@ -113,6 +122,14 @@ S2_IDENTIFICATION_CLAIM = (
     "synchronization are supplied through the preconstructed domain."
 )
 ONE_SHARED_FREEDOM_RETRACTION = "RETRACTED"
+S5_FREEDOM_CLAIM = (
+    "The evaluation cadence and the formation-site schedule are independent "
+    "freedom axes."
+)
+S5_WITNESS_RECORD_SHA256 = (
+    "d5c1d153891b6f4b0e7556ea6d24d50ae69ce0dc8541a4767bd5255ace51e641",
+    "7925ef04f5a1b37758c926c17641d1d3ffacbcb75b6e23b7bb8ee3081b94779b",
+)
 FROZEN_CANDIDATE = (
     "At the landed scope, when a record forms in a multi-source epoch it locks "
     "the unique accepted alternative at its first-clean moment — the "
@@ -766,10 +783,7 @@ def s5_freedom_identification(axiom_quote: str) -> dict[str, Any]:
         "distinct_lawful_records": records_distinct,
         "independent_axes_witness": independent_axes_witness,
         "freedom_count_lower_bound": 2,
-        "freedom_identification": (
-            "The evaluation cadence and the formation-site schedule are "
-            "independent freedom axes."
-        ),
+        "freedom_identification": S5_FREEDOM_CLAIM,
         "formation_asserted_globally": "Records form." in axiom_quote,
         "formation_forced": False,
         "one_shared_freedom_claim": ONE_SHARED_FREEDOM_RETRACTION,
@@ -778,10 +792,10 @@ def s5_freedom_identification(axiom_quote: str) -> dict[str, Any]:
     }
     result["pass"] = (
         independent_axes_witness
-        and record_event_0["record_content_sha256"]
-        == "d5c1d153891b6f4b0e7556ea6d24d50ae69ce0dc8541a4767bd5255ace51e641"
-        and record_event_1["record_content_sha256"]
-        == "7925ef04f5a1b37758c926c17641d1d3ffacbcb75b6e23b7bb8ee3081b94779b"
+        and (
+            record_event_0["record_content_sha256"],
+            record_event_1["record_content_sha256"],
+        ) == S5_WITNESS_RECORD_SHA256
         and result["formation_asserted_globally"] is True
         and result["formation_forced"] is False
         and result["one_shared_freedom_claim"] == "RETRACTED"
@@ -837,11 +851,7 @@ def main() -> int:
             "any configuration",
         )
     )
-    s1_plain_reading = (
-        "The Record axiom asserts globally that records form. It schedules no "
-        "formation for any epoch or configuration; only where and when remain "
-        "open."
-    )
+    s1_plain_reading = S1_PLAIN_READING
     s1_pass = certificate(
         "S1_RECORD_AXIOM_VERBATIM_AND_PLAIN_READING",
         (
@@ -851,7 +861,9 @@ def main() -> int:
             and axiom_quote.startswith("Records form.\n\nWhen present,")
             and "exactly one admissible local possibility" in axiom_quote
             and formation_asserted_globally
-            and not formation_forced_for_any_epoch
+            is S1_FORMATION_STATUS["formation_asserted_globally"]
+            and formation_forced_for_any_epoch
+            is S1_FORMATION_STATUS["formation_forced_for_any_epoch"]
         ),
         {
             "source": AUDIT_INPUT_PATHS[0],

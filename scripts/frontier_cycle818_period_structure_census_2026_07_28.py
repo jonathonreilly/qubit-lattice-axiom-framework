@@ -326,25 +326,413 @@ def source_controls() -> dict[str, object]:
     }
 
 
+def json_line(payload: str, prefix: str) -> Any:
+    rows = [line for line in payload.splitlines() if line.startswith(prefix)]
+    if len(rows) != 1:
+        raise AssertionError(("cache JSON line", prefix, len(rows)))
+    suffix = rows[0][len(prefix):].strip()
+    if suffix.startswith("::"):
+        suffix = suffix[2:].strip()
+    return json.loads(suffix)
+
+
+def cache_inventory(
+    cache_payloads: dict[int, str],
+) -> dict[str, object]:
+    """Extract, rather than assume, the exact named-lineage inventory."""
+
+    cycle790 = json_line(cache_payloads[790], "DATA B ")
+    cycle791_row = json_line(
+        cache_payloads[791], "DATA D_KEY_ROW_095 "
+    )
+    cycle797 = json_line(
+        cache_payloads[797], "DATA B_T1024_IDENTITY "
+    )["T1024"]
+    cycle814 = json_line(
+        cache_payloads[814],
+        "PASS CERTIFICATE_B_EVENTS_OR_NULL_WITH_PROVEN_COVERAGE ",
+    )
+    cycle801 = json_line(cache_payloads[801], "NEW_RESOLUTIONS ")
+
+    lower_rows = []
+    for certification in cycle797["cycle_certifications"]:
+        event, positions = certification["key"]
+        key = (2, tuple(int(item) for item in positions), int(event))
+        provenance_cycles = (
+            (791, 797) if key == (2, (0, 9), 2) else (790, 797)
+        )
+        lower_rows.append(
+            {
+                "key": key,
+                "k": 2,
+                "positions": key[1],
+                "event": key[2],
+                "period": int(certification["state_period"]),
+                "preperiod": int(certification["entry"]),
+                "residual_period":
+                    int(certification["residual_period"]),
+                "source_cycles": provenance_cycles,
+                "source_cache_rows": (
+                    (
+                        "Cycle791 DATA D_KEY_ROW_095; "
+                        "Cycle797 DATA B_T1024_IDENTITY"
+                    )
+                    if provenance_cycles[0] == 791
+                    else (
+                        "Cycle790 DATA B periodic_keys/table; "
+                        "Cycle797 DATA B_T1024_IDENTITY"
+                    )
+                ),
+            }
+        )
+
+    upper_rows = []
+    for certification in cycle814["coverage_accounting"][
+        "certified_cycle_periods"
+    ]:
+        k, positions, event = certification["key"]
+        key = (
+            int(k),
+            tuple(int(item) for item in positions),
+            int(event),
+        )
+        upper_rows.append(
+            {
+                "key": key,
+                "k": key[0],
+                "positions": key[1],
+                "event": key[2],
+                "period": int(certification["period"]),
+                "preperiod": 0,
+                "residual_period": None,
+                "source_cycles": (814,),
+                "source_cache_rows":
+                    "Cycle814 CERTIFICATE_B coverage_accounting",
+            }
+        )
+
+    strict_rows = tuple(
+        sorted(lower_rows + upper_rows, key=lambda row: row["key"])
+    )
+
+    cycle790_keys = {
+        (2, tuple(int(item) for item in positions), int(event))
+        for event, positions, _period in cycle790["periodic_keys"]
+    }
+    extracted_790_keys = {
+        row["key"] for row in lower_rows if row["source_cycles"][0] == 790
+    }
+    cycle791_key = (
+        2,
+        tuple(int(item) for item in cycle791_row["positions"]),
+        int(cycle791_row["event"]),
+    )
+
+    cycle801_cycles = tuple(
+        {
+            "key": (
+                int(row["key"][0]),
+                tuple(int(item) for item in row["key"][1]),
+                int(row["key"][2]),
+            ),
+            "period": int(row["cycle_period"]),
+            "preperiod": int(row["cycle_start_t"]),
+        }
+        for row in cycle801["cycles"]
+    )
+    strict_keys = {row["key"] for row in strict_rows}
+    cycle801_new_keys = {
+        row["key"] for row in cycle801_cycles
+    } - strict_keys
+    cycle801_duplicate_keys = {
+        row["key"] for row in cycle801_cycles
+    } & strict_keys
+    k3_5952_rows = tuple(
+        row
+        for row in cycle801_cycles
+        if row["key"][0] == 3 and row["period"] == 5952
+    )
+    k4_4464_rows = tuple(
+        row
+        for row in cycle801_cycles
+        if row["key"][0] == 4 and row["period"] == 4464
+    )
+    lineage_discrepancy = {
+        "strict_named_790_791_797_814_distinct_keys": len(strict_rows),
+        "strict_period_census":
+            dict(sorted(Counter(row["period"] for row in strict_rows).items())),
+        "strict_contains_5952":
+            any(row["period"] == 5952 for row in strict_rows),
+        "Cycle801_cache_period_5952_k3_rows": k3_5952_rows,
+        "Cycle801_cache_period_4464_k4_rows": k4_4464_rows,
+        "Cycle801_k4_keys_duplicate_Cycle814":
+            {row["key"] for row in k4_4464_rows}
+            == {row["key"] for row in upper_rows},
+        "Cycle801_extra_distinct_keys": tuple(sorted(cycle801_new_keys)),
+        "Cycle801_duplicate_distinct_keys":
+            tuple(sorted(cycle801_duplicate_keys)),
+        "union_distinct_key_count":
+            len(strict_keys | {row["key"] for row in cycle801_cycles}),
+        "conclusion": (
+            "THE_STRICT_14_ROW_TABLE_AND_A_5952_MEMBER_CANNOT_BOTH_BE "
+            "EXTRACTED_FROM_THE_NAMED_790_791_797_814_INVENTORY; "
+            "ADDING_THE_FOUR_CYCLE801_K3_KEYS MAKES_18_DISTINCT_KEYS"
+        ),
+    }
+    extraction_pass = (
+        len(strict_rows) == 14
+        and len(lower_rows) == 12
+        and len(upper_rows) == 2
+        and cycle790_keys == extracted_790_keys
+        and cycle791_key == (2, (0, 9), 2)
+        and cycle791_row["state_period"] == 288
+        and cycle791_row["residual_period"] == 6
+        and len(k3_5952_rows) == 4
+        and len(k4_4464_rows) == 2
+        and lineage_discrepancy["Cycle801_k4_keys_duplicate_Cycle814"]
+        and lineage_discrepancy["union_distinct_key_count"] == 18
+    )
+    return {
+        "strict_rows": strict_rows,
+        "cycle790_keys": tuple(sorted(cycle790_keys)),
+        "cycle791_row": cycle791_row,
+        "cycle801_cycles": cycle801_cycles,
+        "lineage_discrepancy": lineage_discrepancy,
+        "pass": extraction_pass,
+    }
+
+
+def build_fixtures(
+    program: tuple[object, ...],
+) -> dict[int, tuple[tuple[int, int], tuple[int, ...]]]:
+    banks, links = K.B.chain_genesis(FIXTURE_BANKS)
+    state = K.M.pack_state(banks, links)
+    rows = {}
+    for event in range(2 * FIXTURE_BANKS):
+        direction = (1, 0) if event % 2 == 0 else (0, 1)
+        before = K.M.prepare_endpoint(state, direction)
+        rows[event] = (direction, before)
+        state = K.A.apply_semantic(
+            before, K.M.global_allocator_word(FIXTURE_BANKS)
+        )
+    return rows
+
+
+def synchronous_word(
+    program: tuple[object, ...],
+    token_positions: tuple[int, ...],
+) -> tuple[object, ...]:
+    """Independent exact Cycle-736 synchronous composition."""
+
+    positions = tuple(token_positions)
+    word = []
+    for _step in range(len(program)):
+        live = set(positions)
+        for station in range(len(program)):
+            if station in live:
+                word.extend(K.mapped_macro(program[station]))
+        positions = tuple(
+            (station + 1) % len(program) for station in positions
+        )
+    return tuple(word)
+
+
+def compile_word(
+    word: tuple[object, ...],
+) -> tuple[tuple[int, int, int, int], ...]:
+    compiled = []
+    for gate in word:
+        kind = str(gate.kind)
+        wires = tuple(int(wire) for wire in gate.wires)
+        expected_arity = {"X": 1, "CNOT": 2, "TOF": 3}
+        if kind not in expected_arity or len(wires) != expected_arity[kind]:
+            raise AssertionError(("unsupported exact gate", kind, wires))
+        if len(set(wires)) != len(wires):
+            raise AssertionError(("non-distinct gate wires", kind, wires))
+        if kind == "X":
+            compiled.append((1, wires[0], -1, -1))
+        elif kind == "CNOT":
+            compiled.append((2, wires[0], wires[1], -1))
+        else:
+            compiled.append((3, wires[0], wires[1], wires[2]))
+    return tuple(compiled)
+
+
+def apply_compiled_word(
+    state: list[int],
+    compiled: tuple[tuple[int, int, int, int], ...],
+) -> None:
+    for kind, first, second, third in compiled:
+        if kind == 1:
+            state[first] ^= 1
+        elif kind == 2:
+            state[second] ^= state[first]
+        else:
+            state[third] ^= state[first] & state[second]
+
+
+def tuple_state_to_int(state: Iterable[int]) -> int:
+    return sum(int(bit) << index for index, bit in enumerate(state))
+
+
+def state_sha256(state: Iterable[int]) -> str:
+    return sha256(str(tuple_state_to_int(state)).encode("ascii")).hexdigest()
+
+
+def divisors(number: int) -> tuple[int, ...]:
+    small = []
+    large = []
+    candidate = 1
+    while candidate * candidate <= number:
+        if number % candidate == 0:
+            small.append(candidate)
+            if candidate * candidate != number:
+                large.append(number // candidate)
+        candidate += 1
+    return tuple(small + list(reversed(large)))
+
+
+def verify_cycle_row(
+    row: dict[str, object],
+    program: tuple[object, ...],
+    fixtures: dict[int, tuple[tuple[int, int], tuple[int, ...]]],
+) -> dict[str, object]:
+    positions = tuple(row["positions"])
+    event = int(row["event"])
+    period = int(row["period"])
+    direction, before = fixtures[event]
+    word = synchronous_word(program, positions)
+    compiled = compile_word(word)
+    initial, rail_a, rail_b, _trace = K.run_orbit(
+        before, program, token_positions=positions
+    )
+    expected_initial = K.A.apply_semantic(before, word)
+    expected_rail = tuple(
+        int(station in positions) for station in range(len(program))
+    )
+    state = [int(bit) for bit in initial]
+    anchor_state = tuple(state)
+    anchor_sha256 = state_sha256(anchor_state)
+    earlier_returns = []
+    proper_divisor_returns = []
+    proper_divisor_set = frozenset(divisors(period)[:-1])
+    for moment in range(1, period + 1):
+        apply_compiled_word(state, compiled)
+        if state == list(anchor_state):
+            if moment < period:
+                earlier_returns.append(moment)
+            if moment in proper_divisor_set:
+                proper_divisor_returns.append(moment)
+    closure_state = tuple(state)
+    closure_sha256 = state_sha256(closure_state)
+    minimal = (
+        closure_state == anchor_state
+        and not earlier_returns
+        and not proper_divisor_returns
+    )
+    result = {
+        **row,
+        "direction": direction,
+        "word_gate_count": len(compiled),
+        "anchor_t": int(row["preperiod"]),
+        "closure_t": int(row["preperiod"]) + period,
+        "anchor_state_sha256": anchor_sha256,
+        "anchor_plus_period_state_sha256": closure_sha256,
+        "full_state_recurrence": closure_state == anchor_state,
+        "earlier_return_moments": tuple(earlier_returns),
+        "proper_divisors": tuple(sorted(proper_divisor_set)),
+        "proper_divisor_returns": tuple(proper_divisor_returns),
+        "proper_divisors_rejected":
+            len(proper_divisor_set) - len(proper_divisor_returns),
+        "minimal_period": minimal,
+        "initial_composition_exact": initial == expected_initial,
+        "initial_rails_exact":
+            rail_a == expected_rail and not any(rail_b),
+    }
+    result["pass"] = (
+        result["preperiod"] == 0
+        and result["full_state_recurrence"]
+        and result["minimal_period"]
+        and result["anchor_state_sha256"]
+        == result["anchor_plus_period_state_sha256"]
+        and result["initial_composition_exact"]
+        and result["initial_rails_exact"]
+    )
+    return result
+
+
+def verify_inventory(
+    rows: tuple[dict[str, object], ...],
+) -> tuple[dict[str, object], ...]:
+    program = K.interleaved_program(FIXTURE_BANKS)
+    fixtures = build_fixtures(program)
+    return tuple(
+        verify_cycle_row(row, program, fixtures) for row in rows
+    )
+
+
 def main() -> int:
     started = monotonic()
     source = source_controls()
-    source_public = {
-        key: value
-        for key, value in source.items()
-        if key != "cache_payloads"
-    }
+    inventory = cache_inventory(source["cache_payloads"])
+    verified_rows = verify_inventory(inventory["strict_rows"])
+    for row in verified_rows:
+        emit("PERIOD_TABLE_ROW", row)
+    emit("LINEAGE_DATA_CONFLICT", inventory["lineage_discrepancy"])
+    unavailable_rows = ()
+    certificate_a = (
+        source["pass"]
+        and inventory["pass"]
+        and len(verified_rows) == 14
+        and len({row["key"] for row in verified_rows}) == 14
+        and all(row["pass"] for row in verified_rows)
+        and not unavailable_rows
+    )
     check(
-        "CERTIFICATE_E1_SOURCE_SHA_AST_BLOCKLIST_LITERAL_PATHS",
-        bool(source["pass"]),
-        source_public,
+        "CERTIFICATE_A_COMPLETE_PERIOD_TABLE_DIRECT_RECURRENCE",
+        certificate_a,
+        {
+            "status": "COMPLETE_STRICT_14_WITH_EXPLICIT_LINEAGE_CONFLICT",
+            "row_count": len(verified_rows),
+            "k_census":
+                dict(sorted(Counter(row["k"] for row in verified_rows).items())),
+            "period_census":
+                dict(
+                    sorted(
+                        Counter(
+                            row["period"] for row in verified_rows
+                        ).items()
+                    )
+                ),
+            "preperiod_census":
+                dict(
+                    sorted(
+                        Counter(
+                            row["preperiod"] for row in verified_rows
+                        ).items()
+                    )
+                ),
+            "all_direct_full_state_recurrences":
+                all(row["full_state_recurrence"] for row in verified_rows),
+            "all_minimal":
+                all(row["minimal_period"] for row in verified_rows),
+            "all_anchor_hashes_equal":
+                all(
+                    row["anchor_state_sha256"]
+                    == row["anchor_plus_period_state_sha256"]
+                    for row in verified_rows
+                ),
+            "DATA_UNAVAILABLE_HERE": unavailable_rows,
+            "table_sha256": digest(verified_rows),
+            "lineage_discrepancy": inventory["lineage_discrepancy"],
+        },
     )
     elapsed = monotonic() - started
     check(
-        "CYCLE818_SCAFFOLD",
-        elapsed < AUDIT_TIMEOUT_SEC,
+        "CYCLE818_TABLE_STAGE",
+        certificate_a and elapsed < AUDIT_TIMEOUT_SEC,
         {
-            "status": "PROVENANCE_SCAFFOLD_READY",
+            "status": "STRICT_TABLE_AND_RECURRENCE_READY",
             "runtime_seconds": round(elapsed, 6),
         },
     )

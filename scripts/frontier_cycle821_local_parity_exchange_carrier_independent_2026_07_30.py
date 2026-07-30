@@ -37,18 +37,55 @@ NOTE_PATH = (
     "CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md"
 )
 AUDIT_INPUT_PATHS = (
-    NOTE_PATH,
+    "docs/LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md",
     "docs/THREE_REGISTER_COMPANION_INPUT_CIRCUIT_CYCLE789_BOUNDED_THEOREM_NOTE_2026-07-30.md",
     "docs/FULL128_TWO_CELL_PARITY_SUPERSELECTED_EVEN_CAR_COVARIANCE_CYCLE820_BOUNDED_THEOREM_NOTE_2026-07-30.md",
-    "scripts/frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30.py",
-    "scripts/frontier_cycle821_local_parity_exchange_carrier_independent_2026_07_30.py",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
     "scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py",
+    "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
     "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle720_bounded_general_clifford_orbit_2026_07_27.py",
+    "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py",
+    "scripts/frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py",
     "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_local_choi_pump_covariance_2026_07_27.py",
     "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_parity_rail_local_gauge_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py",
     "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_subsystem_mixed_gauge_factorization_2026_07_27.py",
+    "scripts/frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27.py",
     "scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py",
+    "scripts/frontier_cycle720_product_companion_full_word_holonomy_2026_07_27.py",
     "scripts/frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
@@ -426,18 +463,18 @@ def signed_state_row(axis: str, qubit: int) -> Row:
     }[axis]
 
 
-def two_epoch_common_executor_certificate(
+def two_copy_shared_carrier_certificate(
     fixture, rows, corrections, owners, odd
 ) -> dict[str, object]:
     q = fixture.qubits
     rank = len(rows)
-    epochs = 2
+    copies = 2
     block = 4 * q + 2 * rank
-    carriers = (epochs * block, epochs * block + 1)
-    width = epochs * block + 2
+    carriers = (copies * block, copies * block + 1)
+    width = copies * block + 2
     gates = tuple(
         gate
-        for epoch in range(epochs)
+        for copy in range(copies)
         for gate in epoch_word(
             rows,
             corrections,
@@ -447,35 +484,35 @@ def two_epoch_common_executor_certificate(
             rank,
             block,
             carriers,
-            epoch,
+            copy,
         )
     )
     initial = tuple(
         row
-        for epoch in range(epochs)
+        for copy in range(copies)
         for row in (
             tuple(
-                pair_same(item, epoch * block + 2 * q, epoch * block + 3 * q)
+                pair_same(item, copy * block + 2 * q, copy * block + 3 * q)
                 for item in rows
             )
             + tuple(
-                (0, 0, 1 << (epoch * block + 4 * q + index))
+                (0, 0, 1 << (copy * block + 4 * q + index))
                 for index in range(2 * rank)
             )
         )
     )
     expected = tuple(
         row
-        for epoch in range(epochs)
+        for copy in range(copies)
         for row in tuple(
-            pair_same(item, epoch * block, epoch * block + 3 * q)
+            pair_same(item, copy * block, copy * block + 3 * q)
             for item in rows
         )
     )
     allowed = 0
-    for epoch in range(epochs):
-        allowed |= ((1 << q) - 1) << (epoch * block)
-        allowed |= ((1 << q) - 1) << (epoch * block + 3 * q)
+    for copy in range(copies):
+        allowed |= ((1 << q) - 1) << (copy * block)
+        allowed |= ((1 << q) - 1) << (copy * block + 3 * q)
     final_base = conjugate_basis(initial, gates)
     carrier_images = {
         (cell, axis): conjugate_basis(
@@ -533,12 +570,12 @@ def two_epoch_common_executor_certificate(
         final_x, final_z = conjugate_basis((initial_x, initial_z), gates)
         expected_z = initial_z
         controls = []
-        for epoch in range(epochs):
+        for copy in range(copies):
             for stage_offset in (0, rank):
                 for index in odd:
                     if owners[index] != cell:
                         continue
-                    control = epoch * block + 4 * q + stage_offset + index
+                    control = copy * block + 4 * q + stage_offset + index
                     expected_z = multiply(expected_z, (0, 0, 1 << control))
                     controls.append(control)
         x_failure = fields(final_x) != fields(initial_x)
@@ -575,7 +612,7 @@ def two_epoch_common_executor_certificate(
         pump_allowed,
     )
     return {
-        "epochs": epochs,
+        "disjoint_channel_copies": copies,
         "carrier_M2_per_cell": 1,
         "carrier_density_spanning_states": len(state_rows),
         "carrier_state_basis": ("I/2", "X+", "Y+", "Z+"),
@@ -586,12 +623,15 @@ def two_epoch_common_executor_certificate(
         "pump_resource": pump_comparison,
         "carrier_update_failures": update_failures,
         "carrier_updates": tuple(update_rows),
-        "carrier_controls_per_cell_per_epoch": len(odd),
+        "carrier_controls_per_cell_per_copy": len(odd),
         "conditional_update": (
             "rho_c -> X_c^r rho_c X_c^r, with r the xor of the six pump "
             "and six Bell odd-row syndromes in that cell"
         ),
-        "two_epoch_return_condition": "r_cell_epoch_1 xor r_cell_epoch_2 = 0",
+        "two_copy_channel_identity_for_all_inputs_condition": (
+            "r_cell_copy_1 xor r_cell_copy_2 = 0; cumulative r=1 still "
+            "fixes state-specific X-invariant inputs"
+        ),
     }
 
 
@@ -1103,7 +1143,7 @@ def main() -> None:
     atlas = P720.build_private_atlases()
     fixture, compiled, rows, corrections, owners, odd = build_landed_data(atlas)
     frames = tuple(T708.proper_cubic_frames())
-    common = two_epoch_common_executor_certificate(
+    common = two_copy_shared_carrier_certificate(
         fixture, rows, corrections, owners, odd
     )
     frame_report, compiler_rows = one_epoch_frame_state_certificate(
@@ -1129,7 +1169,7 @@ def main() -> None:
             ) == 23
             and odd == tuple(range(6)) + tuple(range(11, 17))
         ),
-        "one_carrier_per_cell_two_epoch_common_executor": (
+        "one_carrier_per_cell_two_copy_shared_carrier_executor": (
             common["carrier_M2_per_cell"] == 1
             and common["expected_output_rank"] == 46
             and common["output_rank_range"] == (46, 46)
@@ -1144,7 +1184,7 @@ def main() -> None:
                 for row in common["hostile_carrier_states"].values()
             )
         ),
-        "two_epoch_carrier_evolution_formula": (
+        "two_copy_carrier_evolution_formula": (
             common["carrier_update_failures"] == 0
             and all(
                 row["retained_syndrome_controls"] == 24
@@ -1241,7 +1281,7 @@ def main() -> None:
                 + compiled["physical_tag_rebuild_failures"]
             ),
         },
-        "two_epoch_common_executor": common,
+        "two_copy_shared_carrier_executor": common,
         "frame_and_state_census": frame_report,
         "deletions": deletions,
         "parity_even_pair_compiler": pair_compiler,
@@ -1250,11 +1290,11 @@ def main() -> None:
         "checks": checks,
         "supplied": [
             "one typed carrier M2 per coarse cell with local parity Z; its two-cell density matrix is arbitrary but initially factorized from the channel input",
-            "the landed Cycle-720/789 fixture, private-dual atlas, clean pump and Bell syndrome inputs, and L-R live/reference character resource",
+            "the landed Cycle-720/789 fixture, private-dual atlas, clean definite pump and Bell syndrome stabilizer inputs, and L-R live/reference character resource; coherent syndrome/carrier inputs instead implement a controlled-X joint channel outside the scalar-r statement",
             "the proper-cubic frame/coframe chart, fixed stage order, finite boundary, and carrier site offset (3,-7,-4)",
         ],
         "derived": [
-            "the exact rank-23 one-epoch and rank-46 two-shared-carrier-epoch O-R even-CAR marginals without a fixed carrier eigenstate",
+            "the exact rank-23 one-copy and rank-46 two-disjoint-copy shared-carrier O-R even-CAR marginals without a fixed carrier eigenstate; this is not an output-fed second epoch",
             "one carrier per cell shared by all six local odd rows; no per-mode carrier bank",
             "exact 24-frame by 16-carrier-state reconstruction, local support, private duality, and extended parity",
             "a parity-even abstract elementary compiler for every XX, XY, YX, and YY pair using U^dagger CZ U",
@@ -1269,8 +1309,10 @@ def main() -> None:
         "carrier_boundary": (
             "After each full epoch r_c is the xor of six pump and six Bell "
             "odd-row syndromes. X_c is invariant while Z_c and Y_c retain "
-            "that syndrome parity. Two epochs return an arbitrary carrier "
-            "state exactly only when the cumulative local exchange parity is zero."
+            "that syndrome parity. Across two disjoint channel copies, the carrier "
+            "channel is the identity for every carrier input exactly when the "
+            "cumulative local exchange parity is zero. For cumulative parity "
+            "one, state-specific X-invariant inputs are still fixed."
         ),
         "physical_gate_boundary": (
             "Every emitted abstract gate and every cumulative prefix commutes "

@@ -14,6 +14,11 @@ factorization, a fixed collision-free block schedule, and proper-cubic carrier
 covariance.  It does not derive carrier genesis, the fixed schedule's
 occurrence, total-parity superselection, or a translation-invariant law.
 Circuit ordinals are not physical time.
+
+The channel and carrier inputs are initially factorized and the syndrome
+controls begin in the declared clean, definite stabilizer states. Coherent
+syndrome/carrier inputs instead undergo the corresponding controlled-X joint
+channel and are outside the scalar conditional-carrier statement.
 """
 
 from __future__ import annotations
@@ -42,17 +47,66 @@ NOTE_PATH = (
     "CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md"
 )
 AUDIT_INPUT_PATHS = (
-    NOTE_PATH,
-    "scripts/frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30.py",
-    "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30.py",
-    "scripts/frontier_cycle789_three_register_even_car_channel_2026_07_30.py",
-    "scripts/frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.py",
-    "scripts/frontier_cycle794_literal_prefix_recurrent_G_substitution_2026_07_30.py",
-    "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py",
+    "docs/LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py",
+    "scripts/frontier_companion_bank_epoch_liveness_2026_07_28.py",
+    "scripts/frontier_companion_bank_even_exchange_port_2026_07_28.py",
+    "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle720_bounded_general_clifford_orbit_2026_07_27.py",
+    "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py",
+    "scripts/frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_local_choi_pump_covariance_2026_07_27.py",
     "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_local_genesis_broadcast_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_parity_rail_local_gauge_2026_07_27.py",
     "scripts/frontier_cycle720_companion_recurrent_overlap_update_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_subsystem_mixed_gauge_factorization_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_three_route_independent_adversary_2026_07_27.py",
+    "scripts/frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27.py",
+    "scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py",
+    "scripts/frontier_cycle720_product_companion_full_word_holonomy_2026_07_27.py",
+    "scripts/frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.py",
+    "scripts/frontier_cycle789_three_register_even_car_channel_2026_07_30.py",
+    "scripts/frontier_cycle789_two_bank_input_collision_discriminator_2026_07_30.py",
+    "scripts/frontier_cycle794_actual_frame_shear_three_bank_schedule_2026_07_30.py",
+    "scripts/frontier_cycle794_literal_prefix_recurrent_G_substitution_2026_07_30.py",
+    "scripts/frontier_cycle794_literal_three_bank_prefix_core_2026_07_30.py",
+    "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
     "scripts/frontier_full128_two_cell_even_car_frame_core_2026_07_30.py",
     "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 IMPORT_MODULES = (
@@ -1260,7 +1314,7 @@ def recurrent_G_even_factor_certificate(shape):
         "submitted_physical_primitives": update["physical_primitives"],
         "direct_even_seam_factors": seam_rows,
         "direct_even_seam_parity_failures": seam_parity_failures,
-        "maximum_direct_vs_compiled_seam_residual": max(
+        "maximum_sampled_phase_aligned_seam_state_residual": max(
             seam_direct_compiled_residuals, default=0.0
         ),
         "maximum_direct_seam_support_M2": max(
@@ -1474,7 +1528,9 @@ def main() -> None:
             and row["semantic_factors"] == 29 * row["cells"] + 4 * row["edges"]
             and row["direct_even_seam_parity_failures"] == 0
             and row["direct_factor_program_parity_failures"] == 0
-            and row["maximum_direct_vs_compiled_seam_residual"] < 1.0e-12
+            and row[
+                "maximum_sampled_phase_aligned_seam_state_residual"
+            ] < 1.0e-12
             and row["maximum_direct_seam_support_M2"] <= 17
             and row["maximum_direct_seam_M2_manhattan_diameter"] <= 24
             and row["maximum_nonseam_elementary_parity_residual"] < 1.0e-12
@@ -1505,7 +1561,8 @@ def main() -> None:
         "supplied": (
             "one parity-exchange M2 mode per coarse cell; total-parity "
             "superselection as the observable domain; landed O/I Choi and "
-            "encoded live banks; clean syndrome banks; finite chart, local "
+            "encoded live banks; a carrier input initially factorized from "
+            "the channel input; clean definite syndrome banks; finite chart, local "
             "tag atlas, colour/slot schedule, boundary and stage order"
         ),
         "derived": (

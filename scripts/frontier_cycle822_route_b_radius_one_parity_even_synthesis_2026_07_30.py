@@ -45,6 +45,22 @@ import frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30
 
 
 TOL = 1.0e-10
+NOTE_PATH = (
+    "docs/ROUTE_B_TYPED_SPECTATOR_RADIUS_ONE_SYNTHESIS_"
+    "CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md"
+)
+AUDIT_INPUT_PATHS = (
+    NOTE_PATH,
+    "scripts/frontier_cycle822_route_b_radius_one_parity_even_"
+    "synthesis_2026_07_30.py",
+    "scripts/frontier_cycle821_local_parity_exchange_carrier_"
+    "recurrent_bell_2026_07_30.py",
+    "scripts/frontier_cycle720_companion_subsystem_m2_update_"
+    "2026_07_27.py",
+    "scripts/frontier_cycle789_three_bank_fixed_coframe_schedule_"
+    "2026_07_30.py",
+)
+DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 SHAPES = ((2, 1, 1), (3, 1, 1), (3, 2, 2), (5, 3, 2))
 ASTAR_BOUND_MARGIN = 8
 ASTAR_EXPANSION_LIMIT_PER_MACRO = 250_000

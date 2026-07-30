@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent bounded checker for the Cycle 745 enforced dual-rail lock."""
+"""Independent checker for the Cycle 745 abstract packetized lock protocol."""
 
 import ast
 from dataclasses import dataclass
@@ -60,10 +60,8 @@ class Extracted:
     alphabet: tuple[str, ...]
     primary_audit_inputs: tuple[object, ...]
     frozen_census: dict[str, int]
-    boundary: dict[str, bool]
-    boundary_occurrences: dict[str, tuple[object, ...]]
+    scope: dict[str, bool]
     same_word_ast: bool
-    forbidden_claim_hits: tuple[str, ...]
 
 
 def _named_assignment(
@@ -178,48 +176,28 @@ def _first_write_domain(tree: ast.Module) -> tuple[object, ...]:
     return matches[0]
 
 
-def _dict_constants_for_keys(
-    tree: ast.Module, keys: tuple[str, ...]
-) -> dict[str, tuple[object, ...]]:
-    found: dict[str, list[object]] = {key: [] for key in keys}
-    for node in ast.walk(tree):
-        if not isinstance(node, ast.Dict):
-            continue
-        for key_node, value_node in zip(node.keys, node.values):
-            if key_node is None:
-                continue
-            try:
-                key = ast.literal_eval(key_node)
-            except (ValueError, TypeError):
-                continue
-            if key not in found:
-                continue
-            try:
-                value = ast.literal_eval(value_node)
-            except (ValueError, TypeError):
-                value = "<nonliteral>"
-            found[key].append(value)
-    return {key: tuple(values) for key, values in found.items()}
-
-
-def _extract_boundary(tree: ast.Module) -> dict[str, bool]:
+def _extract_scope(tree: ast.Module) -> dict[str, bool]:
     function = _function(tree, "certificate_f")
-    node = _nested_assignment(function, "boundary")
+    node = _nested_assignment(function, "scope")
     if not isinstance(node, ast.Dict):
-        raise ValueError("certificate_f boundary is not a literal-key dict")
+        raise ValueError("certificate_f scope is not a literal-key dict")
     selected: dict[str, bool] = {}
+    expected_keys = (
+        "abstract_packet_protocol_derived",
+        "closed_system_word_composition_claimed",
+        "event_injection_projection_supplied",
+        "local_physical_compilation_claimed",
+        "record_semantics_claimed",
+    )
     for key_node, value_node in zip(node.keys, node.values):
         if key_node is None:
             continue
         key = ast.literal_eval(key_node)
-        if key not in (
-            "mechanism_level_write_once_derived",
-            "record_permanence_claimed",
-        ):
+        if key not in expected_keys:
             continue
         value = ast.literal_eval(value_node)
         if not isinstance(value, bool):
-            raise ValueError(f"boundary key {key} is not a literal bool")
+            raise ValueError(f"scope key {key} is not a literal bool")
         selected[key] = value
     return selected
 
@@ -287,28 +265,7 @@ def extraction(source: str) -> tuple[bool, dict[str, object], Extracted]:
             for node in ast.walk(tree)
         )
     )
-    boundary = _extract_boundary(tree)
-    boundary_occurrences = _dict_constants_for_keys(
-        tree,
-        (
-            "mechanism_level_write_once_derived",
-            "record_permanence_claimed",
-        ),
-    )
-    prohibited_phrases = (
-        "axiom-level permanence",
-        "axiom level permanence",
-        "axiomatic permanence",
-        "record permanence is derived",
-        "record permanence derived",
-    )
-    forbidden_claim_hits = tuple(
-        value
-        for node in ast.walk(tree)
-        if isinstance(node, ast.Constant) and isinstance(node.value, str)
-        for value in (node.value,)
-        if any(phrase in value.lower() for phrase in prohibited_phrases)
-    )
+    scope = _extract_scope(tree)
 
     extracted = Extracted(
         rails=rails,
@@ -319,10 +276,8 @@ def extraction(source: str) -> tuple[bool, dict[str, object], Extracted]:
         alphabet=alphabet,
         primary_audit_inputs=primary_audit_inputs,
         frozen_census=frozen_census,
-        boundary=boundary,
-        boundary_occurrences=boundary_occurrences,
+        scope=scope,
         same_word_ast=same_word_ast,
-        forbidden_claim_hits=forbidden_claim_hits,
     )
 
     expected_census = {
@@ -362,10 +317,13 @@ def extraction(source: str) -> tuple[bool, dict[str, object], Extracted]:
         and primary_audit_inputs == ("scripts/frontier_cycle745_enforced_dual_rail_lock_2026_07_28.py",)
         and frozen_census == expected_census
         and same_word_ast
-        and boundary
+        and scope
         == {
-            "mechanism_level_write_once_derived": True,
-            "record_permanence_claimed": False,
+            "abstract_packet_protocol_derived": True,
+            "closed_system_word_composition_claimed": False,
+            "event_injection_projection_supplied": True,
+            "local_physical_compilation_claimed": False,
+            "record_semantics_claimed": False,
         }
     )
     details: dict[str, object] = {
@@ -376,6 +334,7 @@ def extraction(source: str) -> tuple[bool, dict[str, object], Extracted]:
         "rails": list(rails),
         "read_gates": [gate.name for gate in read_word],
         "same_word_ast": same_word_ast,
+        "scope_declaration": scope,
         "write_gates": list(gate_names),
     }
     return passed, details, extracted
@@ -717,6 +676,25 @@ def induction_recount(extracted: Extracted) -> tuple[bool, dict[str, object]]:
     expected_compositions = 2 * sum(
         len(extracted.alphabet) ** length for length in range(1, 5)
     )
+    literal_no_reset_counterexamples: list[dict[str, object]] = []
+    for offered in (0, 1):
+        accepted = _apply_word(
+            extracted,
+            _packet(extracted, (0, *UNLOCKED), offered),
+            extracted.write_word,
+        )
+        literal_second = _apply_word(extracted, accepted, extracted.write_word)
+        literal_no_reset_counterexamples.append(
+            {
+                "offered": offered,
+                "accepted_persistent": list(_persistent(extracted, accepted)),
+                "second_persistent": list(_persistent(extracted, literal_second)),
+                "lock_preserved": (
+                    _persistent(extracted, literal_second)
+                    == _persistent(extracted, accepted)
+                ),
+            }
+        )
     passed = (
         extracted.alphabet == EXPECTED_ALPHABET
         and base_passes == 2
@@ -725,12 +703,19 @@ def induction_recount(extracted: Extracted) -> tuple[bool, dict[str, object]]:
         and composition_cases == 680
         and composition_cases == expected_compositions
         and not altered
+        and all(
+            not row["lock_preserved"]
+            for row in literal_no_reset_counterexamples
+        )
     )
     return passed, {
         "adversarial_alterations": altered,
         "base": f"{base_passes}/2",
         "composition_cases": composition_cases,
-        "composition_max_length": 4,
+        "composition_lengths": [1, 4],
+        "literal_closed_system_no_reset_counterexamples": (
+            literal_no_reset_counterexamples
+        ),
         "step": f"{step_passes}/{step_cases}",
     }
 
@@ -787,7 +772,7 @@ def deletion_recount(extracted: Extracted) -> tuple[bool, dict[str, object]]:
     }
 
 
-def discipline(extracted: Extracted) -> tuple[bool, dict[str, object]]:
+def scope_check(extracted: Extracted) -> tuple[bool, dict[str, object]]:
     loaded_blocklist = tuple(
         module_name
         for module_name in sys.modules
@@ -796,9 +781,12 @@ def discipline(extracted: Extracted) -> tuple[bool, dict[str, object]]:
             for blocked in BLOCKLIST
         )
     )
-    expected_boundary_occurrences = {
-        "mechanism_level_write_once_derived": (True, True),
-        "record_permanence_claimed": (False, False),
+    expected_scope = {
+        "abstract_packet_protocol_derived": True,
+        "closed_system_word_composition_claimed": False,
+        "event_injection_projection_supplied": True,
+        "local_physical_compilation_claimed": False,
+        "record_semantics_claimed": False,
     }
     audit_literal_ok = (
         isinstance(AUDIT_INPUT_PATHS, tuple)
@@ -807,28 +795,19 @@ def discipline(extracted: Extracted) -> tuple[bool, dict[str, object]]:
     )
     passed = (
         audit_literal_ok
-        and extracted.primary_audit_inputs == ("scripts/frontier_cycle745_enforced_dual_rail_lock_2026_07_28.py",)
+        and extracted.primary_audit_inputs
+        == ("scripts/frontier_cycle745_enforced_dual_rail_lock_2026_07_28.py",)
         and not loaded_blocklist
-        and extracted.boundary
-        == {
-            "mechanism_level_write_once_derived": True,
-            "record_permanence_claimed": False,
-        }
-        and extracted.boundary_occurrences == expected_boundary_occurrences
-        and not extracted.forbidden_claim_hits
+        and extracted.scope == expected_scope
     )
     return passed, {
         "audit_input_paths": list(AUDIT_INPUT_PATHS),
         "audit_tuple_literal_ok": audit_literal_ok,
         "blocklist": list(BLOCKLIST),
         "blocked_modules_loaded": list(loaded_blocklist),
-        "boundary": extracted.boundary,
-        "boundary_occurrences": {
-            key: list(values)
-            for key, values in extracted.boundary_occurrences.items()
-        },
-        "forbidden_axiom_claim_hits": list(extracted.forbidden_claim_hits),
         "primary_audit_input_paths": list(extracted.primary_audit_inputs),
+        "scope_declaration": extracted.scope,
+        "scope_declarations_only_not_physical_evidence": True,
     }
 
 
@@ -878,7 +857,7 @@ def main() -> int:
         ("word_recount", word_recount),
         ("induction_recount", induction_recount),
         ("deletion_recount", deletion_recount),
-        ("discipline", discipline),
+        ("scope_check", scope_check),
     )
     for label, certificate in certificates:
         if extracted is None:

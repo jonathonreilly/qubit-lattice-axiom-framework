@@ -1,33 +1,35 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle745_enforced_dual_rail_lock_2026_07_28.txt": "c861595bd13692a6db12657c3562dd3c6af92d41a4cdb5de27f60a1cb5245718",
-      "frontier_cycle745_lock_independent_check_2026_07_28.txt": "c470fa27f762e35fda769b46ea2f706760ff2138b7edbf193a2a0bd79af8a900"
+      "frontier_cycle745_enforced_dual_rail_lock_2026_07_28.txt": "b247d35c29a1d05d6a3d2025bad340d7ecc3e2ed627c58dd98bac5921a2de20a",
+      "frontier_cycle745_lock_independent_check_2026_07_28.txt": "6b5100f4af973dca19981837c86a2269103a66e740eb4ec9665c3cf33874e7df"
     },
     "note": {
       "path": "docs/ENFORCED_DUAL_RAIL_LOCK_CYCLE745_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "5e705b6a51e813b043279c4f42a83c52c644ffeaa8f918d78fb6b9c4e931177d"
+      "sha256": "d84fdaf2ed871b16238a4c46b8210edb575f4fe216f901c3e699911e52af23d8"
     },
     "runners": {
-      "frontier_cycle745_enforced_dual_rail_lock_2026_07_28.py": "d8c1651eb8cdd25a797881b55b81234a5816407418ef415491ecef41672bd708",
-      "frontier_cycle745_lock_independent_check_2026_07_28.py": "bcfba7d8ea394cc8d4f98407c2e4899e08e411a77f2dc12eeff2495b8c3fcde4"
+      "frontier_cycle745_enforced_dual_rail_lock_2026_07_28.py": "3f3e2134db88d38cd1defd73bced2b0e61951cda0498fc22da30407818fc8735",
+      "frontier_cycle745_lock_independent_check_2026_07_28.py": "b35def4783e8a7314dc2ba954815c7ee1b782a24a6751d045dded00af92f5c2d"
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
+    "abstract_packet_protocol_derived": true,
     "alphabet_scope": [
       "IDLE",
       "READ",
       "WRITE[0]",
       "WRITE[1]"
     ],
-    "axiom_pressure": false,
-    "fixed_supplies": "the seven-rail encoding, initial clean sector, macro domain (the declared alphabet), the C_source firewall, and readout conventions (the route portfolio's supplied list, verbatim)",
-    "mechanism_level_write_once_derived": true,
-    "not_derived": "axiom-level Record permanence; out-of-alphabet operations; the W5 junction's full closure (multi-cell archive integration is the named next cycle)",
-    "positive_scope": "first-write locking in the same 8-gate reversible word; the clean-refusal overwrite law; exhaustive one-cell verification (128 reversible states; 2/2 first accepted; 4/4 + 8/8 refused; locked bytes byte-invariant); machine-checked inductive closure (base 2/2, step 8/8) with the checker's adversarial 680-composition length-4 sweep finding zero alterations; 8/8 deletion controls",
-    "record_permanence_claimed": false
+    "closed_system_word_composition_claimed": false,
+    "event_injection_projection_supplied": true,
+    "fixed_supplies": "binary diagonal encoding; rail roles, order, and coordinate labels; UNLOCKED/LOCKED meanings and initial D=0; literal controlled-gate semantics and order; fresh event injection with Q_accept=Q_refuse=0; projection to (D,U,L); external macro scheduler; exact alphabet; accept/refuse and event-local READ conventions",
+    "local_physical_compilation_claimed": false,
+    "not_established": "nearest-neighbor/local compilation, admissibility or dynamics, literal closed-system macro composition, Record formation or physical persistence, and any readout bridge",
+    "positive_scope": "a finite abstract packet protocol: 128/128 reversible WRITE-word states, 2/2 accepted first packets, 4/4 second and 8/8 third packet refusals, reduced-map induction with base 2/2 and step 8/8, 680 positive-length compositions from lengths 1 through 4 with zero alterations, and 8/8 whole-gate deletion detections",
+    "record_semantics_claimed": false
   },
   "checks": {
     "independent_named_checks_failed": 0,
@@ -40,7 +42,7 @@
   "result": {
     "deletion_controls": "8/8",
     "induction": {
-      "adversarial_compositions_len4": 680,
+      "positive_length_compositions_1_through_4": 680,
       "alterations": 0,
       "base": "2/2",
       "step": "8/8"
@@ -53,5 +55,5 @@
     "reversible_states": "128/128",
     "write_word_gates": 8
   },
-  "status": "CYCLE745_ENFORCED_DUAL_RAIL_LOCK_PASS"
+  "status": "CYCLE745_ABSTRACT_PACKETIZED_LOCK_PASS"
 }

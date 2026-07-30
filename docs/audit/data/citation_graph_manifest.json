@@ -1,6 +1,6 @@
 {
- "edge_count": 15252,
- "node_count": 4587,
+ "edge_count": 15257,
+ "node_count": 4588,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1615,8 +1615,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "98bbe1ca256a",
-   "out_degree": 320
+   "deps_hash": "cd95f23e278c",
+   "out_degree": 321
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -4285,6 +4285,10 @@
   "energy_gauss_constraint_obstruction_route_b_note_2026-07-08": {
    "deps_hash": "c2033cd10392",
    "out_degree": 1
+  },
+  "enforced_dual_rail_lock_cycle745_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "423f1f549b6b",
+   "out_degree": 4
   },
   "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07": {
    "deps_hash": "69a1ede16473",

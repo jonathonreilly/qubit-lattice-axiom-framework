@@ -1,4 +1,4 @@
-# The enforced dual-rail lock — write-once derived as a refusal law — Cycle 745
+# Abstract seven-bit packetized lock protocol — Cycle 745
 
 Date: 2026-07-29
 
@@ -6,7 +6,7 @@ Authority: none
 
 Audit: unset
 
-Status: bounded conditional theorem
+Status: conditional / support
 
 Claim type: bounded_theorem
 
@@ -21,74 +21,117 @@ status.
 
 ## Result up front
 
-The W5 junction probe named the wall: the archive→Record hand-off needs
-a **derived** write-once mechanism, and permanence may never be
-premised. The campaign's route portfolio ranked the native idiom first
-— a lock built from enforcement, so that permanence at the mechanism
-level *is* a refusal law. This cycle builds it at the smallest honest
-scope, one binary M2 Record cell with seven semantic rails:
+This package proves a finite result about a supplied event protocol on seven
+binary rails
 
-- **the write is the lock**: the 8-gate reversible WRITE word writes
-  the payload bit and sets the lock rail *in the same word* — first-
-  write locking is not a separate step that could be omitted;
-- **overwrites are refused, not forbidden by fiat**: the write word is
-  gated on the lock rail (the enforcement-cascade lift pattern), so a
-  write applied to a locked cell completes as a clean REFUSED
-  transition — registers return, the locked content is untouched, a
-  refusal latch records the event;
-- **exhaustive at the one-cell scope**: all 128 seven-rail states are
-  reversible with distinct outputs; first-write 2/2 accepted;
-  second-write 4/4 and third-write 8/8 refused with locked bytes
-  exactly invariant; all 8 single-gate deletions of the lock cascade
-  are detected;
-- **the inductive closure**: base — the post-first-write state
-  satisfies the lock invariant; step — every word of the declared
-  alphabet (`IDLE, READ, WRITE[0], WRITE[1]`) preserves it; hence
-  **every finite word over the alphabet preserves locked content** —
-  machine-checked, both parts.
+```text
+(D, V, U, L, Q_in, Q_accept, Q_refuse) in {0,1}^7.
+```
 
-## The honest ceiling (stated plainly)
+The literal eight-gate `WRITE` word is a permutation of all 128 rail states.
+On a clean event packet it accepts either offered bit, copies it to `D`, and
+changes the persistent lock pair from `UNLOCKED=(1,0)` to `LOCKED=(0,1)` in
+that same word. On each later packetized write, the word leaves `D` and the
+lock pair unchanged and returns the event tag `REFUSED`.
 
-What is derived is **mechanism-level write-once under the declared
-alphabet**. `record_permanence_claimed` remains **false** at the axiom
-level: out-of-alphabet operations are out of scope, and no statement
-about the Record axiom's own permanence semantics is made or needed
-here. The next construction is multi-cell archive integration —
-composing this lock with the Cycle-741 archive and the Cycle-742
-readout feed, so the proto-Record the last campaign built becomes a
-locked one.
+The finite-sequence statement is about reduced event maps, not literal
+composition of the seven-bit permutations. For persistent storage
+`x=(D,U,L)`, the supplied injection maps prepare fresh event rails:
 
-## Supplied / derived / open
+```text
+E_IDLE(x)     = (D,0,U,L,0,0,0)
+E_READ(x)     = (D,0,U,L,0,0,0)
+E_WRITE[b](x) = (D,b,U,L,1,0,0).
+```
 
-### Supplied
+After the selected literal word acts, the supplied projection
+`P(D,V,U,L,Q_in,Q_accept,Q_refuse)=(D,U,L)` discards the four event rails.
+The macro maps are therefore `P o M o E_M`. The two post-first-write images
+establish the base, and all eight combinations of locked payload
+`D in {0,1}` and macro
+`M in {IDLE,READ,WRITE[0],WRITE[1]}` establish the step. Ordinary induction
+then proves that every finite sequence of these reduced maps preserves the
+locked payload.
 
-- the rail encoding, initial clean sector, macro domain (the declared
-  alphabet), the C_source firewall, and readout conventions — the
-  route portfolio's supplied list, verbatim.
+## Supplied operational inputs
 
-### Derived
+The result is conditional on all of the following:
 
-- first-write locking (same-word); the clean-refusal law; exhaustive
-  control coverage; locked-content invariance; the inductive closure
-  over the alphabet.
+- the binary diagonal convention `b -> diag(b,0)` inside each named
+  `M_2(C)` factor;
+- the seven rail roles and order, the displayed coordinate labels, the
+  one-hot meanings `UNLOCKED=(1,0)` and `LOCKED=(0,1)`, initial `D=0`, and
+  the choices of `D` as stored content and `V` as offered data;
+- the literal controlled-`X` and controlled-`SWAP` semantics, control
+  polarities, targets, and gate order;
+- the event injection and projection above, including fresh
+  `Q_accept=Q_refuse=0` on every event, event-rail discard between events,
+  and an external scheduler selecting the macro;
+- the exact four-symbol macro alphabet and the accept/refuse tag
+  interpretation; and
+- the `READ` convention, whose copied `V` value is event-local before the
+  projection discards it.
 
-### Open
+The coordinate assignment is only a supplied labeling in this package. It is
+not evidence that the multi-controlled gates are nearest-neighbor operations.
+No `C_source`, scalar-readout, Record-activation, or physical-observable rule
+is used by the finite proof.
 
-- multi-cell integration with the 741/742 machinery (the named next
-  cycle); out-of-alphabet scope; the W5 junction's full closure;
-  everything inherited at original scopes.
+## Derived finite result
 
-## Negative-claim discipline
+- all 128 inputs of the literal `WRITE` word have distinct outputs, every
+  literal gate is an involution, and reversing the gate order restores every
+  input;
+- the two clean first-write packets are accepted and set the lock in the same
+  literal word;
+- all four second-write and all eight third-write packet cases are refused
+  with the stored bit and lock pair unchanged;
+- the two computed base cases and eight exhaustive reduced-map step cases
+  close the finite-sequence induction;
+- the independent checker finds no alteration in 680 additional compositions
+  of positive lengths 1 through 4; and
+- each of the eight single-gate deletions is detected by the enumerated clean,
+  locked, and dirty packet tests.
 
-No negative claim ships. The alphabet bound is a scope statement, not
-an impossibility claim about richer operation sets.
+The last item is exactly an 8/8 whole-gate deletion result. It is not a claim
+of exhaustive control-polarity, target, ordering, duplication, or hidden-gate
+coverage.
+
+## Framework and physical boundary
+
+The [minimal framework axioms](MINIMAL_AXIOMS_2026-06-29.md) supply the
+`Z^3` setting, one-site `M_2(C)` possibility domain, local Admissibility, and
+Record at their stated scopes. They do not select the binary rail roles,
+provide the event protocol, compile the multi-controlled gates, or identify
+`LOCKED` with formation or persistence of a Record.
+
+For comparison, the current
+[Cycle-730 local charge-row construction](CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+reports a literal routed nearest-neighbor compilation, while the
+[Cycle-731 counter/refusal fixture](TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+explicitly leaves physical transport and nearest-neighbor compilation outside
+its scope. The current
+[Cycle-719 controller boundary](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+also keeps the physical bridge from reversible packets to the axiomatically
+named permanent Record open. Those notes are comparison and scope authorities;
+their results are not premises of the finite truth-table proof here.
+
+This package does not supply a nearest-neighbor decomposition, routing and
+returned work, a translation-uniform or proper-cubic-covariant rule,
+admissibility or dynamics, a closed-system ancilla/garbage lifecycle, Record
+formation, physical persistence, or a readout bridge. In particular, applying
+the literal `WRITE` word directly to an accepted seven-bit output without the
+fresh-event injection can change the lock pair; the closed-system composition
+claim is not made.
+
+The package asserts no impossibility, no residual-wall independence, no
+axiom pressure, and no conclusion about operations or mechanisms outside the
+declared event protocol.
 
 ## Verdict
 
-Write-once is now a theorem about a physical word, not a property
-assumed of a substrate: the lock is set by writing, the refusal is
-enforced by the same machinery that enforces charge and count, and the
-induction closes the alphabet. If this composes across the archive,
-the W5 junction's mechanism exists — and if the composition fails, the
-failure will name what the Record axiom must grant. Either way the
-axiom conversation advances. Independent audit still required.
+The durable result is a conditional finite-state construction: a reversible
+eight-gate `WRITE` permutation plus a packetized persistent-state lock
+invariant under the supplied injection/projection convention. It is not a
+framework-native physical mechanism or Record-production theorem. Independent
+audit is still required.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 745: exhaustive one-cell enforced dual-rail write-once certificate."""
+"""Cycle 745: exhaustive abstract seven-bit packetized lock certificate."""
 
 from __future__ import annotations
 
@@ -39,27 +39,25 @@ WORK_RAILS: tuple[str, ...] = ()
 UNLOCKED = (1, 0)
 LOCKED = (0, 1)
 ALPHABET_SCOPE = ("IDLE", "READ", "WRITE[0]", "WRITE[1]")
-NEXT_CYCLE = "multi-cell archive integration (741/742 composition)"
 
 SUPPLIED_PORTFOLIO_VERBATIM = (
-    "Supplied: M2 bit encoding, site layout, initial blank payload and "
-    "`UNLOCKED` row, incoming-request convention, fixed macro alphabet, "
-    "`C_source`, Record activation rule (`LOCKED` means the site now "
-    "contributes a Record), and scalar/readout conventions."
+    "Supplied: the binary diagonal encoding; rail roles, order, and coordinate "
+    "labels; UNLOCKED/LOCKED meanings and initial D=0; literal controlled-gate "
+    "semantics and order; fresh event injection with Q_accept=Q_refuse=0; "
+    "projection to (D,U,L); an external macro scheduler; the exact alphabet; "
+    "and the accept/refuse and event-local READ conventions."
 )
 DERIVED_PORTFOLIO_VERBATIM = (
-    "Derived: one-hot lock preservation, first-write acceptance, lock setting "
-    "by that same write, clean locked-request refusal, return of all route/work "
-    "rails, exhaustive control ancestry for every payload target, and the "
-    "locked-content invariant under arbitrary finite macro composition."
+    "Derived within the supplied packet protocol: bijectivity of the literal "
+    "WRITE permutation, first-event acceptance and lock setting, later-event "
+    "refusal with persistent-state preservation, 8/8 whole-gate deletion "
+    "detections, and the locked-content invariant under every finite sequence "
+    "of the reduced injection/word/projection maps."
 )
 INDUCTION_STATEMENT = (
-    "For every n >= 0 and every M_1,...,M_n in alphabet_scope, LOCKED(x) "
-    "implies LOCKED(M_n...M_1 x) and D(M_n...M_1 x)=D(x) at event boundaries."
-)
-OUT_OF_ALPHABET_BOUNDARY = (
-    "Out-of-alphabet operations, including a literal reverse presented as a "
-    "new forward request, are out of scope."
+    "For each macro M let F_M=P o M o E_M be the supplied reduced event map. "
+    "For every n >= 0 and M_1,...,M_n in alphabet_scope, LOCKED(x) implies "
+    "LOCKED(F_M_n...F_M_1(x)) and D(F_M_n...F_M_1(x))=D(x)."
 )
 
 State = tuple[int, int, int, int, int, int, int]
@@ -69,7 +67,7 @@ Control = tuple[str, int]
 
 @dataclass(frozen=True)
 class Gate:
-    """A literal self-inverse reversible gate on the seven binary M2 rails."""
+    """A literal self-inverse reversible gate on the seven binary rails."""
 
     name: str
     operation: str
@@ -338,15 +336,15 @@ def certificate_b() -> tuple[bool, dict[str, object]]:
         for gate in WRITE_WORD
         if "D" in gate.targets
     ]
-    control_coverage = (
+    payload_gate_controls_exact = (
         len(payload_targets) == 1
-        and ("U", 1) in payload_targets[0].controls
-        and ("L", 0) in payload_targets[0].controls
+        and payload_targets[0].controls
+        == (("V", 1), ("U", 1), ("L", 0))
     )
     layout_unique = len(set(SITE_LAYOUT.values())) == len(RAILS)
     details = {
         "ast": ast_result,
-        "control_coverage": control_coverage,
+        "payload_gate_controls_exact": payload_gate_controls_exact,
         "first_write_rows": first_rows,
         "layout_sites": len(SITE_LAYOUT),
         "layout_unique": layout_unique,
@@ -355,7 +353,7 @@ def certificate_b() -> tuple[bool, dict[str, object]]:
     return bool(
         ast_result["ok"]
         and behavior_ok
-        and control_coverage
+        and payload_gate_controls_exact
         and layout_unique
         and len(SITE_LAYOUT) == len(RAILS)
     ), details
@@ -500,11 +498,17 @@ def certificate_d() -> tuple[bool, dict[str, object]]:
                         "preserved": row_ok,
                     }
                 )
+    for offered in (0, 1):
+        post_first = apply_word(packet((0, *UNLOCKED), offered), WRITE_WORD)
+        storage = persistent(post_first)
+        row_ok = (
+            post_first == expected_first_write(offered)
+            and storage == (offered, *LOCKED)
+        )
+        base_ok &= row_ok
+        base_rows.append({"offered": offered, "post_storage": list(storage), "locked": row_ok})
     for d_bit in (0, 1):
         storage = (d_bit, *LOCKED)
-        row_ok = storage[0] == d_bit and storage[1:] == LOCKED
-        base_ok &= row_ok
-        base_rows.append({"D": d_bit, "locked": row_ok})
         for macro in ALPHABET_SCOPE:
             after_storage, event = apply_macro(storage, macro)
             row_ok = after_storage == storage
@@ -552,33 +556,55 @@ def certificate_e() -> tuple[bool, dict[str, object]]:
 
 
 def certificate_f() -> tuple[bool, dict[str, object]]:
-    boundary = {
+    scope = {
         "alphabet_scope": list(ALPHABET_SCOPE),
-        "mechanism_level_write_once_derived": True,
-        "next": NEXT_CYCLE,
-        "out_of_alphabet_operations": OUT_OF_ALPHABET_BOUNDARY,
-        "record_permanence_claimed": False,
+        "abstract_packet_protocol_derived": True,
+        "closed_system_word_composition_claimed": False,
+        "event_injection_projection_supplied": True,
+        "local_physical_compilation_claimed": False,
+        "record_semantics_claimed": False,
     }
     supplied_exact = SUPPLIED_PORTFOLIO_VERBATIM.startswith("Supplied:")
-    derived_exact = DERIVED_PORTFOLIO_VERBATIM.startswith("Derived:")
-    boundary_ok = (
-        boundary["mechanism_level_write_once_derived"] is True
-        and boundary["record_permanence_claimed"] is False
-        and boundary["alphabet_scope"] == list(ALPHABET_SCOPE)
-        and boundary["next"] == "multi-cell archive integration (741/742 composition)"
-        and "out of scope" in str(boundary["out_of_alphabet_operations"])
+    derived_exact = DERIVED_PORTFOLIO_VERBATIM.startswith(
+        "Derived within the supplied packet protocol:"
+    )
+    literal_counterexamples = []
+    for offered in (0, 1):
+        accepted = apply_word(packet((0, *UNLOCKED), offered), WRITE_WORD)
+        no_reset_second = apply_word(accepted, WRITE_WORD)
+        literal_counterexamples.append(
+            {
+                "offered": offered,
+                "accepted": list(accepted),
+                "literal_second_without_reset": list(no_reset_second),
+                "lock_preserved": persistent(no_reset_second) == persistent(accepted),
+            }
+        )
+    scope_ok = (
+        scope["abstract_packet_protocol_derived"] is True
+        and scope["closed_system_word_composition_claimed"] is False
+        and scope["event_injection_projection_supplied"] is True
+        and scope["local_physical_compilation_claimed"] is False
+        and scope["record_semantics_claimed"] is False
+        and scope["alphabet_scope"] == list(ALPHABET_SCOPE)
+        and all(not row["lock_preserved"] for row in literal_counterexamples)
     )
     details = {
-        "boundary": boundary,
+        "closed_system_counterexamples": literal_counterexamples,
         "derived_portfolio_verbatim": DERIVED_PORTFOLIO_VERBATIM,
-        "record_activation": (
-            "LOCKED means the site now contributes a Record with "
-            "content=(Fraction(D),0,0,0)"
+        "not_established": (
+            "nearest-neighbor/local compilation, admissibility or dynamics, "
+            "literal closed-system macro composition, Record formation or "
+            "physical persistence, and any readout bridge"
         ),
-        "scalar_readout_supply": "G=(Q,+); C_source and readout conventions supplied",
+        "packet_lifecycle": (
+            "Each macro injects fresh V/Q_in/Q_accept/Q_refuse event rails and "
+            "projects the result to persistent storage (D,U,L)."
+        ),
+        "scope": scope,
         "supplied_portfolio_verbatim": SUPPLIED_PORTFOLIO_VERBATIM,
     }
-    return boundary_ok and supplied_exact and derived_exact, details
+    return scope_ok and supplied_exact and derived_exact, details
 
 
 def check(
@@ -618,7 +644,7 @@ def main() -> int:
             certificate_e,
         ),
         (
-            "F_honest_boundary_keys_and_supplies",
+            "F_exact_scope_and_supplies",
             certificate_f,
         ),
     )
@@ -642,12 +668,13 @@ def main() -> int:
         "NOTE_PATH": NOTE_PATH,
         "alphabet_scope": list(ALPHABET_SCOPE),
         "all_pass": all_pass,
+        "abstract_packet_protocol_derived": True,
         "checks": results,
+        "closed_system_word_composition_claimed": False,
+        "event_injection_projection_supplied": True,
         "induction_statement": INDUCTION_STATEMENT,
-        "mechanism_level_write_once_derived": True,
-        "next": NEXT_CYCLE,
-        "out_of_alphabet_operations": OUT_OF_ALPHABET_BOUNDARY,
-        "record_permanence_claimed": False,
+        "local_physical_compilation_claimed": False,
+        "record_semantics_claimed": False,
         "runtime_sec": round(runtime_sec, 6),
         "seven_semantic_rails": list(RAILS),
         "word_sizes": {

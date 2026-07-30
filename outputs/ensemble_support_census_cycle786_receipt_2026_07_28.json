@@ -1,0 +1,47 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle786_ensemble_support_census_2026_07_28.txt": "8cd903d08c89aad66c929b3aa14c12306b06f6cc3b80ad650912207e7f4b91b9",
+      "frontier_cycle786_support_independent_check_2026_07_28.txt": "17d231c3f96b5267fe049a9cc0e28f15a21b079f1bc2df733a0358d8439e8409"
+    },
+    "carried_modules": {
+      "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py": "ef9398b3f27dcbb540446d6c5c165c5803014cffa37da59071751810a7ac9978",
+      "scripts/frontier_cycle750_actual_selector_stretch_2026_07_28.py": "a74c7e5bbc297c57d317af7fd85d0b9e01d078625f5d4689daf2ebbdbc1cee0a"
+    },
+    "note": {
+      "path": "docs/ENSEMBLE_SUPPORT_CENSUS_CYCLE786_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "d1320b40ffc22db56e60b61f04d02ef403025c8ac8834a1932d8dfed9244093e"
+    },
+    "runners": {
+      "frontier_cycle786_ensemble_support_census_2026_07_28.py": "3956e5af3ea9c12e8bd605cc0bae7fc29a24154c1ee3527be53223dbee778cd6",
+      "frontier_cycle786_support_independent_check_2026_07_28.py": "7fdb18bba74a6163a7eae6d080f666a95dbe71f93d88ba9f44da6efc157af7b9"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "census": "the 38 selector epochs split EXACTLY 19/19; zero unmapped (both runners; checker exhausted 2,578 alternatives)",
+    "controls": "(13,13,12) outcome census reproduced; origin-0 pipeline 0->1->125 matched; determinism",
+    "correspondence": "the landed epoch->channel join is orientation-only: the fixture's EventCell target mode fixes orientation (+1/-1) -> the two origin groups (0-5 mode 6; 6-11 mode 1); checker refinement hunt CONFIRMED no landed specific-origin join exists",
+    "fixed_supplies": "nothing invented \u2014 the ambiguity is the result; everything Cycle-693/719/750 declare",
+    "freedom": "per-origin refinement undefined: range [0,19] per origin; 42,504 six-bin allocations per group, none preferred",
+    "meaning": "the first quantitative occurrence-distribution datum: one perfectly balanced bit at exactly the resolution the surface defines",
+    "not_derived": "any rate law, weight, probability; the per-origin refinement",
+    "outcome": "ORIENTATION_ONLY_19_19"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 786,
+  "date": "2026-07-30",
+  "result": {
+    "correspondence": "orientation-only (confirmed)",
+    "freedom": "42,504 allocations/group",
+    "split": "19/19 exact"
+  },
+  "status": "CYCLE786_ENSEMBLE_SUPPORT_CENSUS_PASS"
+}

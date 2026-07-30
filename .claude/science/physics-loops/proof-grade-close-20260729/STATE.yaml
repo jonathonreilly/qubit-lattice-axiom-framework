@@ -132,3 +132,10 @@ queue_next:
     ops_notes:
       - "600s Bash cap hit on the 814 ship chain (caches ~300s) — rerun backgrounded; receipt-needle formats verified against cache bodies before asserting (808's 23_23 lesson)."
     in_flight: "815-v2 (WT2 b8fntkwza); 816 first forecast test (WTFIX bcw6n8p72); 817 general-b theorem (WT4 bz4czvo3s); 818 period-structure census (WT3 bo5hwc0uf)"
+  - at: "waves 20-21 — corrections and the last theorems"
+    prs:
+      - "#5828 blockC19 816: reversal FIFTEEN — the 'extinction' was OUT OF DOMAIN (the 795 class is defined only on k=2 keys); corrected census 103 not-tested / vectors 46->46; first true tests await k=2 resolutions (819 probes)."
+      - "#5829 blockR15 818: the period census + THE BASELINE CORRECTION — strict 14-row table {2:2,3:9,288:1,4464:2} (gcd 1, lcm 8928); the landed 801 package had already certified SIX higher-k cycles (4x k=3 @5952; 2x k=4 @4464) — my STATE summary line was wrong and 813/814/816 inherited it; corrected family 6 transients / 18 cycles / 184 open; 814 note amended; #5826 reviewer comment; four checker-found exact period laws incl. (event, zero-membership) DETERMINES the period (union refinement by stratum: (3,1,T)->5952, (4,1,T)->4464)."
+      - "#5830 blockF14 817: reversal SIXTEEN — v1's condition inventory missed two hypotheses; v2: SEVEN conditions + H_SECTOR_INPUT; the conditional general-b theorem with the bridge machine-verified at b=3..10, CONDITIONAL on H_TEMPLATE_PREIMAGE_ZONE_CLASS (discharged at no b); the anchor wall is ONE HYPOTHESIS WIDE; checker's FAIL-THE-BRIDGE-HUNT = the designed confirmation."
+    in_flight: "819 deep k=2 continuation (WT2 bdg0hdyhc) — the forecast program's first in-domain tests"
+    checker_reversals_cumulative: sixteen

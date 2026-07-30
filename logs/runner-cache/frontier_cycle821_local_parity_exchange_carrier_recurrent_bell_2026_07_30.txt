@@ -1,0 +1,450 @@
+{
+  "carrier_covariance": {
+    "carrier_slot_comparisons": 384,
+    "coframe_transported_physical_offset_failures": 0,
+    "fixed_laboratory_offset_mutation_detected_frames": 23,
+    "frame_carrier_permutation_failures": 0,
+    "frame_origin_contexts": 192,
+    "frame_origin_physical_carrier_palette_failures": 0,
+    "frame_origin_physical_distance_failures": 0,
+    "identity_frame_carrier_offset": [
+      3,
+      -7,
+      -4
+    ],
+    "ordered_frame_products": 576,
+    "origin_product_failures": 0,
+    "physical_covariance_boundary": "the identity-frame carrier offset is transported by the supplied coframe; it is not held fixed in laboratory coordinates under an active cubic rotation",
+    "physical_offset_product_failures": 0,
+    "product_carrier_cocycle_failures": 0,
+    "proper_cubic_frames": 24
+  },
+  "checks": {
+    "all_extended_measurement_and_correction_atoms_are_parity_even": true,
+    "all_second_epoch_correction_deletions_are_detected": true,
+    "carrier_is_reusable_without_being_falsely_called_reset": true,
+    "carrier_placement_and_ownership_are_coframe_covariant": true,
+    "channel_only_test_would_hide_missing_parity_legs": true,
+    "one_local_carrier_fits_the_landed_palette_and_schedule": true,
+    "prepared_even_CAR_channel_composes_exactly_with_recurrent_G": true,
+    "pump_Bell_and_correction_execute_in_one_parity_even_word": true,
+    "recurrent_G_has_exact_bounded_parity_even_semantic_factors": true,
+    "two_consecutive_epochs_share_dirty_carriers_and_close": true
+  },
+  "dense_even_pair_compiler": {
+    "letter_pairs": 4,
+    "maximum_compiled_controlled_pair_residual": 6.312164422641715e-16,
+    "maximum_elementary_parity_commutator_residual": 0.0,
+    "maximum_rotation_conjugacy_residual": 6.312164422641715e-16
+  },
+  "derived": "all Bell and correction composites factor into at most two-target parity-even atoms; exact two-epoch reuse without a fixed carrier value or carrier reset; 65-M2/cell full palette; bounded pair geometry; 24/576 carrier covariance; exact factorwise recurrent-G composition with parity-even seam semantic factors of at most 17 M2 and diameter 24",
+  "equation": "on the declared even-observable code, the prepared input-side channel satisfies E B_even = B_physical E for two sequential pump/Bell/correction epochs; linear postcomposition with the landed recurrent G gives E (G B_even) = (G_physical B_physical) E on the same output coordinates; the same carrier modes are reused",
+  "full_pump_Bell_correction_held_overlap": {
+    "carrier_Z_rows_not_returned": 12,
+    "cells": 12,
+    "dirty_carrier_axis_binary_signed_failures": {
+      "X": [
+        0,
+        0
+      ],
+      "Y": [
+        0,
+        0
+      ],
+      "Z": [
+        0,
+        0
+      ]
+    },
+    "elementary_gate_count": 7520,
+    "elementary_parity_commutator_failures": 0,
+    "first_complete_epoch_binary_signed_failures": [
+      0,
+      0
+    ],
+    "initial_system_stabilizers_on_OI_resources": 0,
+    "pump1_resource_binary_signed_failures": [
+      0,
+      0
+    ],
+    "pump2_resource_binary_signed_failures": [
+      0,
+      0
+    ],
+    "rank": 152,
+    "second_complete_epoch_binary_signed_failures": [
+      0,
+      0
+    ],
+    "shape": [
+      3,
+      2,
+      2
+    ]
+  },
+  "full_pump_Bell_correction_two_cell": {
+    "carrier_Z_rows_not_returned": 2,
+    "cells": 2,
+    "dirty_carrier_axis_binary_signed_failures": {
+      "X": [
+        0,
+        0
+      ],
+      "Y": [
+        0,
+        0
+      ],
+      "Z": [
+        0,
+        0
+      ]
+    },
+    "elementary_gate_count": 848,
+    "elementary_parity_commutator_failures": 0,
+    "first_complete_epoch_binary_signed_failures": [
+      0,
+      0
+    ],
+    "initial_system_stabilizers_on_OI_resources": 0,
+    "pump1_resource_binary_signed_failures": [
+      0,
+      0
+    ],
+    "pump2_resource_binary_signed_failures": [
+      0,
+      0
+    ],
+    "rank": 23,
+    "second_complete_epoch_binary_signed_failures": [
+      0,
+      0
+    ],
+    "shape": [
+      2,
+      1,
+      1
+    ]
+  },
+  "held_overlap_two_epoch": {
+    "atomic_factorization": {
+      "atom_parity_commutator_failures": 0,
+      "controlled_composites": 608,
+      "controlled_row_letter_replay_failures": 0,
+      "maximum_atom_cell_diameter": 1,
+      "maximum_atom_targets_excluding_control": 2,
+      "parity_even_atoms": 2224
+    },
+    "carrier_X_rows_not_returned_after_two_epochs": 0,
+    "carrier_Z_rows_not_returned_after_two_epochs": 12,
+    "carrier_modes": 12,
+    "carrier_modes_per_cell": 1,
+    "cells": 12,
+    "compiled_elementary_gates": 3760,
+    "deleted_second_epoch_corrections_detected": 0,
+    "deleted_second_epoch_corrections_tested": 0,
+    "extended_gate_parity_commutator_failures": 0,
+    "hostile_carrier_axis_binary_signed_failures": {
+      "X": [
+        0,
+        0
+      ],
+      "Y": [
+        0,
+        0
+      ],
+      "Z": [
+        0,
+        0
+      ]
+    },
+    "intermediate_binary_signed_failures": [
+      0,
+      0
+    ],
+    "maximum_compiled_atom_targets": 2,
+    "minimum_deleted_correction_failures": 0,
+    "parity_odd_corrections_per_epoch": 72,
+    "physical_M2_per_companion_bank": 108,
+    "rank": 152,
+    "shape": [
+      3,
+      2,
+      2
+    ],
+    "two_epoch_binary_signed_failures": [
+      0,
+      0
+    ],
+    "unextended_second_epoch_channel_binary_signed_failures": [
+      0,
+      0
+    ],
+    "unextended_second_epoch_parity_commutator_failures": 72
+  },
+  "input_sha256": {
+    "docs/LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md": "ac8c497265aae91b23ba16fa788d9aafab040ce5b9a28ae0cafe8e6f7b542ef4",
+    "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py": "108568254546e1f64e4454b455f4aa866fe9abfbd4a6ca3a82f65b6a29e28974",
+    "scripts/frontier_cycle720_companion_recurrent_overlap_update_2026_07_27.py": "3064da20e961cea6c4c07a8317028ac9657d6fdd0643bd938a770491e5fad1fc",
+    "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py": "34c3b0fe14b6937010b88daf8594811fa8a6ef1741ab539b682db2429560c87d",
+    "scripts/frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.py": "3553ec8293d7cba935422ddccbc9e4b8dc9f4cd30c3ee6487f65f15c4ad2fe68",
+    "scripts/frontier_cycle789_three_register_even_car_channel_2026_07_30.py": "2e2dd0a5edc502167fba6216e5ac5a4f76ac957e6da39cde6116c931d5f6734d",
+    "scripts/frontier_cycle794_literal_prefix_recurrent_G_substitution_2026_07_30.py": "1a5828c726cfca96c7a2240914a61f980a9406835821a44108a9061d7f6f1009",
+    "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30.py": "74334599a249a88a6ba60068c935fd3b0e60c1e62989c91406fca5d992a52c18",
+    "scripts/frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30.py": "63ae494b35f182bfb2f60e3c5f0f4ec11bd6455fa65c43c55433ce3a678fc153",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
+    "scripts/frontier_full128_two_cell_even_car_frame_core_2026_07_30.py": "e8ad6c2c6c5a3eb1cbb36c4711a4b9a585ee4d564c0f89cb56d81604addfd2a0"
+  },
+  "open": "derivation/genesis of the carrier modes and total-parity domain; nearest-neighbour/radius-one routing of the exact bounded two-M2 Bell rotations and the up-to-17-M2 recurrent seam rotations; one monolithic dense executor rather than the exact signed-graph/factorwise composition proof; autonomous schedule occurrence/renewal; translation-invariant enforcement; time, source/gravity, Record/Born and prediction bridges",
+  "recurrent_G_composition": {
+    "boxes": [
+      {
+        "free_seam_contact_recurrent_powers": [
+          1,
+          2,
+          3,
+          5,
+          8
+        ],
+        "one_particle_mass_residual": 5.551115123125783e-17,
+        "postcomposition_substitution_failures": 0,
+        "shape": [
+          2,
+          1,
+          1
+        ],
+        "shared_output_register_exact": true
+      },
+      {
+        "free_seam_contact_recurrent_powers": [
+          1,
+          2,
+          3
+        ],
+        "one_particle_mass_residual": 5.551115123125783e-17,
+        "postcomposition_substitution_failures": 0,
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "shared_output_register_exact": true
+      }
+    ],
+    "composition_rule": "the new pump/Bell/correction executor reproduces the complete rank-(2m-1) signed Choi graph on the identical O sites; Cycle794 proves linear postcomposition by recurrent G; replacing each submitted seam synthesis by its exact direct even factor leaves G unchanged and makes every declared factor parity preserving",
+    "parity_audited_G_factors": [
+      {
+        "cells": 2,
+        "direct_even_seam_factors": 4,
+        "direct_even_seam_parity_failures": 0,
+        "direct_factor_program_parity_failures": 0,
+        "edges": 1,
+        "maximum_direct_seam_M2_manhattan_diameter": 24,
+        "maximum_direct_seam_support_M2": 5,
+        "maximum_direct_vs_compiled_seam_residual": 7.420193489442451e-16,
+        "maximum_nonseam_elementary_parity_residual": 0.0,
+        "one_particle_mass_residual": 5.551115123125783e-17,
+        "semantic_factors": 62,
+        "shape": [
+          2,
+          1,
+          1
+        ],
+        "submitted_physical_primitives": 102,
+        "submitted_seam_elementary_parity_failures": 24
+      },
+      {
+        "cells": 3,
+        "direct_even_seam_factors": 8,
+        "direct_even_seam_parity_failures": 0,
+        "direct_factor_program_parity_failures": 0,
+        "edges": 2,
+        "maximum_direct_seam_M2_manhattan_diameter": 24,
+        "maximum_direct_seam_support_M2": 5,
+        "maximum_direct_vs_compiled_seam_residual": 7.913391346636907e-16,
+        "maximum_nonseam_elementary_parity_residual": 0.0,
+        "one_particle_mass_residual": 5.551115123125783e-17,
+        "semantic_factors": 95,
+        "shape": [
+          3,
+          1,
+          1
+        ],
+        "submitted_physical_primitives": 175,
+        "submitted_seam_elementary_parity_failures": 48
+      },
+      {
+        "cells": 12,
+        "direct_even_seam_factors": 80,
+        "direct_even_seam_parity_failures": 0,
+        "direct_factor_program_parity_failures": 0,
+        "edges": 20,
+        "maximum_direct_seam_M2_manhattan_diameter": 24,
+        "maximum_direct_seam_support_M2": 17,
+        "maximum_direct_vs_compiled_seam_residual": 7.816148139583761e-16,
+        "maximum_nonseam_elementary_parity_residual": 0.0,
+        "one_particle_mass_residual": 5.551115123125783e-17,
+        "semantic_factors": 428,
+        "shape": [
+          3,
+          2,
+          2
+        ],
+        "submitted_physical_primitives": 1660,
+        "submitted_seam_elementary_parity_failures": 912
+      }
+    ]
+  },
+  "schedule_boxes": [
+    {
+      "baseline_M2_per_cell": 64,
+      "bounded_atomic_active_microsteps": 288,
+      "bounded_atomic_gate_count": 196,
+      "bounded_atomic_maximum_M2_manhattan_diameter": 33,
+      "bounded_atomic_maximum_targets_excluding_control": 2,
+      "bounded_atomic_row_replay_failures": 0,
+      "bounded_atomic_same_block_collisions": 0,
+      "carrier_M2_per_cell": 1,
+      "carrier_hits_existing_returned_routes": 0,
+      "carrier_hits_recurrent_G_routes": 0,
+      "carrier_palette_collisions": 0,
+      "carrier_site_count": 2,
+      "carrier_site_uniqueness_failures": 0,
+      "cells": 2,
+      "extended_M2_per_cell": 65,
+      "inherited_G_sites_outside_O": 0,
+      "inherited_returned_label_failures": 0,
+      "inherited_schedule_collisions": 0,
+      "local_pair_gate_geometry_failures": 0,
+      "maximum_pair_gate_M2_manhattan_diameter": 19,
+      "odd_pump_and_Bell_correction_pair_macros": 24,
+      "routed_G_active_gate_carrier_label_hits": 0,
+      "routed_G_carrier_label_return_failures": 0,
+      "same_colour_slot_carrier_collisions": 0,
+      "shape": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "baseline_M2_per_cell": 64,
+      "bounded_atomic_active_microsteps": 2832,
+      "bounded_atomic_gate_count": 2224,
+      "bounded_atomic_maximum_M2_manhattan_diameter": 33,
+      "bounded_atomic_maximum_targets_excluding_control": 2,
+      "bounded_atomic_row_replay_failures": 0,
+      "bounded_atomic_same_block_collisions": 0,
+      "carrier_M2_per_cell": 1,
+      "carrier_hits_existing_returned_routes": 0,
+      "carrier_hits_recurrent_G_routes": 0,
+      "carrier_palette_collisions": 0,
+      "carrier_site_count": 12,
+      "carrier_site_uniqueness_failures": 0,
+      "cells": 12,
+      "extended_M2_per_cell": 65,
+      "inherited_G_sites_outside_O": 0,
+      "inherited_returned_label_failures": 0,
+      "inherited_schedule_collisions": 0,
+      "local_pair_gate_geometry_failures": 0,
+      "maximum_pair_gate_M2_manhattan_diameter": 19,
+      "odd_pump_and_Bell_correction_pair_macros": 144,
+      "routed_G_active_gate_carrier_label_hits": 0,
+      "routed_G_carrier_label_return_failures": 0,
+      "same_colour_slot_carrier_collisions": 0,
+      "shape": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "baseline_M2_per_cell": 64,
+      "bounded_atomic_active_microsteps": 4572,
+      "bounded_atomic_gate_count": 5860,
+      "bounded_atomic_maximum_M2_manhattan_diameter": 33,
+      "bounded_atomic_maximum_targets_excluding_control": 2,
+      "bounded_atomic_row_replay_failures": 0,
+      "bounded_atomic_same_block_collisions": 0,
+      "carrier_M2_per_cell": 1,
+      "carrier_hits_existing_returned_routes": 0,
+      "carrier_hits_recurrent_G_routes": 0,
+      "carrier_palette_collisions": 0,
+      "carrier_site_count": 30,
+      "carrier_site_uniqueness_failures": 0,
+      "cells": 30,
+      "extended_M2_per_cell": 65,
+      "inherited_G_sites_outside_O": 0,
+      "inherited_returned_label_failures": 0,
+      "inherited_schedule_collisions": 0,
+      "local_pair_gate_geometry_failures": 0,
+      "maximum_pair_gate_M2_manhattan_diameter": 19,
+      "odd_pump_and_Bell_correction_pair_macros": 360,
+      "routed_G_active_gate_carrier_label_hits": 0,
+      "routed_G_carrier_label_return_failures": 0,
+      "same_colour_slot_carrier_collisions": 0,
+      "shape": [
+        5,
+        3,
+        2
+      ]
+    }
+  ],
+  "status": "PASS",
+  "supplied": "one parity-exchange M2 mode per coarse cell; total-parity superselection as the observable domain; landed O/I Choi and encoded live banks; clean syndrome banks; finite chart, local tag atlas, colour/slot schedule, boundary and stage order",
+  "two_cell_two_epoch": {
+    "atomic_factorization": {
+      "atom_parity_commutator_failures": 0,
+      "controlled_composites": 92,
+      "controlled_row_letter_replay_failures": 0,
+      "maximum_atom_cell_diameter": 1,
+      "maximum_atom_targets_excluding_control": 2,
+      "parity_even_atoms": 196
+    },
+    "carrier_X_rows_not_returned_after_two_epochs": 0,
+    "carrier_Z_rows_not_returned_after_two_epochs": 2,
+    "carrier_modes": 2,
+    "carrier_modes_per_cell": 1,
+    "cells": 2,
+    "compiled_elementary_gates": 424,
+    "deleted_second_epoch_corrections_detected": 23,
+    "deleted_second_epoch_corrections_tested": 23,
+    "extended_gate_parity_commutator_failures": 0,
+    "hostile_carrier_axis_binary_signed_failures": {
+      "X": [
+        0,
+        0
+      ],
+      "Y": [
+        0,
+        0
+      ],
+      "Z": [
+        0,
+        0
+      ]
+    },
+    "intermediate_binary_signed_failures": [
+      0,
+      0
+    ],
+    "maximum_compiled_atom_targets": 2,
+    "minimum_deleted_correction_failures": 2,
+    "parity_odd_corrections_per_epoch": 12,
+    "physical_M2_per_companion_bank": 18,
+    "rank": 23,
+    "shape": [
+      2,
+      1,
+      1
+    ],
+    "two_epoch_binary_signed_failures": [
+      0,
+      0
+    ],
+    "unextended_second_epoch_channel_binary_signed_failures": [
+      0,
+      0
+    ],
+    "unextended_second_epoch_parity_commutator_failures": 12
+  }
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 15279,
- "node_count": 4595,
+ "edge_count": 15281,
+ "node_count": 4596,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -12569,6 +12569,10 @@
   "residual_d_power_divergent_cs_regeneration_b4_note_2026-06-13": {
    "deps_hash": "c5b99ba1b2bf",
    "out_degree": 5
+  },
+  "response_comparison_harness_cycle749_support_note_2026-07-28": {
+   "deps_hash": "e8dc397c4144",
+   "out_degree": 2
   },
   "restricted_strong_field_closure_note": {
    "deps_hash": "5b0d8fb046ab",

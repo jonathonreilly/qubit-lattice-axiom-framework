@@ -1,55 +1,107 @@
 #!/usr/bin/env python3
-"""Independent bounded checker for the Cycle-749 response harness."""
+"""Independent exact-arithmetic check of the Cycle-749 support comparator.
 
-AUDIT_TIMEOUT_SEC = 900
-NOTE_PATH = "docs/RESPONSE_COMPARISON_HARNESS_CYCLE749_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+The checker does not import or extract implementation constants from the
+primary. It builds its oracle from literal transform data and the committed
+fixture, then compares that oracle with a clean SHA-pinned primary subprocess.
+"""
+
+from __future__ import annotations
+
+AUDIT_TIMEOUT_SEC = 120
+NOTE_PATH = "docs/RESPONSE_COMPARISON_HARNESS_CYCLE749_SUPPORT_NOTE_2026-07-28.md"
+PRIMARY_PATH = "scripts/frontier_cycle749_response_comparison_harness_2026_07_28.py"
+FIXTURE_PATH = "outputs/response_comparison_harness_cycle749_fixture_2026_07_28.json"
 AUDIT_INPUT_PATHS = (
+    "scripts/frontier_cycle749_response_comparison_harness_2026_07_28.py",
+    "outputs/response_comparison_harness_cycle749_fixture_2026_07_28.json",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/carried_internal_species_source_field_ledger_repair_2026_07_17.py",
+    "scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py",
+    "scripts/physical_cycle269_coin_stream_contact_common_refinement_cycle304_2026_07_17.py",
+    "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+    "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+    "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+    "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+    "scripts/physical_cycle269_joint_six_mode_coin_lift_cycle302_2026_07_17.py",
+    "scripts/physical_cycle269_local_contact_intertwiner_2026_07_17.py",
+    "scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py",
+    "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py",
+    "scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py",
+    "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+    "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
     "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
     "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+    "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py",
 )
 
-import ast
 from copy import deepcopy
 from fractions import Fraction
+import ast
 import hashlib
 import json
 import os
 from pathlib import Path
-import re
 import subprocess
 import sys
 import time
 from typing import Any
 
-sys.dont_write_bytecode = True
-
-import two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18 as S322
-import unit_weight_carried_link_recoil_cycle320_2026_07_18 as U320
-
 
 ROOT = Path(__file__).resolve().parents[1]
-PRIMARY_PATH = (
-    ROOT / "scripts/frontier_cycle749_response_comparison_harness_2026_07_28.py"
-)
-PRIMARY_IMPORT_BLOCKLIST = (
-    "frontier_cycle749_response_comparison_harness_2026_07_28",
-)
-BOUNDARY_LANGUAGE = (
-    "F boundary keeps W7 open and records both remaining components",
-    "F no-refit prediction attachment remains explicitly unclaimed",
-    "field/metric response law",
-    "no-refit prediction attachment",
-)
-FOURTH_CANDIDATE = {
-    "name": "magnitude_doubled",
-    "recoil_coefficients": (2, 2, 2),
-    "transfer_coefficients": (2, 2, 2, 2),
-    "fitted_defaults": (0, 0, 0, 0, 0, 0, 0),
-    "demonstration_role": "deliberately magnitude-doubled structural control",
-    "expected_verdict": "REJECT",
-}
+SOURCE_PATHS = AUDIT_INPUT_PATHS[2:]
+PRIMARY_SHA256 = "480f704ca1b8675e993ba26a07a661dcb54b87f94b72e368c5ae4714e435e21d"
 PASS = 0
 FAIL = 0
+
+STRICT_UPPER_BOUND = Fraction(3, 10_000_000_000)
+DRIFT_UPPER_BOUND = Fraction(1, 1_000_000)
+ZERO_OFFSETS = (Fraction(0),) * 7
+
+# These are independent literal oracle inputs, not values extracted from the
+# primary source.
+ORACLE_TRANSFORMS = {
+    "identity": (
+        (Fraction(1),) * 3,
+        (Fraction(1),) * 4,
+        ZERO_OFFSETS,
+    ),
+    "uniform_sign_reversal": (
+        (Fraction(-1),) * 3,
+        (Fraction(-1),) * 4,
+        ZERO_OFFSETS,
+    ),
+    "matter_coefficient_perturbation": (
+        (Fraction(5_000_000_001, 5_000_000_000), Fraction(1), Fraction(1)),
+        (Fraction(1),) * 4,
+        ZERO_OFFSETS,
+    ),
+    "uniform_magnitude_doubling": (
+        (Fraction(2),) * 3,
+        (Fraction(2),) * 4,
+        ZERO_OFFSETS,
+    ),
+}
+ORACLE_LABELS = {
+    "identity": "ACCEPT",
+    "uniform_sign_reversal": "REJECT",
+    "matter_coefficient_perturbation": "DRIFT",
+    "uniform_magnitude_doubling": "REJECT",
+}
 
 
 def check(label: str, condition: bool, detail: object = "") -> None:
@@ -62,1089 +114,499 @@ def check(label: str, condition: bool, detail: object = "") -> None:
         print("FAIL", label, "::", detail)
 
 
-def sha256_text(text: str) -> str:
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+def sha256_path(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def literal_assignment(tree: ast.AST, name: str) -> Any:
-    for node in ast.walk(tree):
-        if not isinstance(node, (ast.Assign, ast.AnnAssign)):
-            continue
-        targets = node.targets if isinstance(node, ast.Assign) else [node.target]
-        if any(isinstance(target, ast.Name) and target.id == name for target in targets):
-            return ast.literal_eval(node.value)
-    raise AssertionError(f"missing literal assignment: {name}")
+def require(condition: bool, message: str) -> None:
+    if not condition:
+        raise ValueError(message)
 
 
-def assignment_value(tree: ast.AST, name: str) -> ast.AST:
-    for node in ast.walk(tree):
-        if not isinstance(node, (ast.Assign, ast.AnnAssign)):
-            continue
-        targets = node.targets if isinstance(node, ast.Assign) else [node.target]
-        if any(isinstance(target, ast.Name) and target.id == name for target in targets):
-            return node.value
-    raise AssertionError(f"missing assignment: {name}")
+def exact_object(value: object, keys: set[str], label: str) -> dict[str, Any]:
+    require(isinstance(value, dict), f"{label} must be an object")
+    require(set(value) == keys, f"{label} keys differ")
+    return value
 
 
-def integer_literal(node: ast.AST) -> int:
-    if isinstance(node, ast.Constant) and isinstance(node.value, int):
-        return node.value
-    if isinstance(node, ast.UnaryOp) and isinstance(node.op, ast.USub):
-        return -integer_literal(node.operand)
-    raise AssertionError(f"not an integer literal: {ast.dump(node)}")
-
-
-def fraction_literal(node: ast.AST) -> Fraction:
-    if (
-        isinstance(node, ast.Call)
-        and isinstance(node.func, ast.Name)
-        and node.func.id == "Fraction"
-        and 1 <= len(node.args) <= 2
-    ):
-        numerator = integer_literal(node.args[0])
-        denominator = integer_literal(node.args[1]) if len(node.args) == 2 else 1
-        return Fraction(numerator, denominator)
-    raise AssertionError(f"not a Fraction literal: {ast.dump(node)}")
-
-
-def subscript_index(node: ast.AST) -> int | None:
-    if not isinstance(node, ast.Subscript):
-        return None
-    if not isinstance(node.value, ast.Name) or node.value.id != "row":
-        return None
+def rational(value: object, label: str) -> Fraction:
+    require(isinstance(value, str) and value != "", f"{label} must be a string")
     try:
-        return integer_literal(node.slice)
-    except AssertionError:
-        return None
+        return Fraction(value)
+    except (ValueError, ZeroDivisionError) as error:
+        raise ValueError(f"{label} is not rational") from error
 
 
-def recoil_coefficient(right: ast.AST) -> int | None:
-    if isinstance(right, ast.Name) and right.id == "source":
-        return 1
-    if not (
-        isinstance(right, ast.Call)
-        and isinstance(right.func, ast.Name)
-        and right.func.id == "tuple"
-        and len(right.args) == 1
-        and isinstance(right.args[0], ast.GeneratorExp)
-    ):
-        return None
-    element = right.args[0].elt
-    if not isinstance(element, ast.BinOp) or not isinstance(element.op, ast.Mult):
-        return None
-    for candidate, other in ((element.left, element.right), (element.right, element.left)):
-        if isinstance(other, ast.Name) and other.id == "value":
-            return integer_literal(candidate)
-    return None
-
-
-def check_call(tree: ast.AST, label: str) -> ast.Call:
-    for node in ast.walk(tree):
-        if (
-            isinstance(node, ast.Call)
-            and isinstance(node.func, ast.Name)
-            and node.func.id == "check"
-            and node.args
-            and isinstance(node.args[0], ast.Constant)
-            and node.args[0].value == label
-        ):
-            return node
-    raise AssertionError(f"missing check call: {label}")
-
-
-def certificate_boundary(tree: ast.AST) -> dict[str, object]:
-    value = assignment_value(tree, "certificate")
-    if not isinstance(value, ast.Dict):
-        raise AssertionError("certificate is not a dict")
-    pairs = {
-        key.value: item
-        for key, item in zip(value.keys, value.values)
-        if isinstance(key, ast.Constant) and isinstance(key.value, str)
-    }
-    return {
-        "harness_is_instrument_only": ast.literal_eval(
-            pairs["harness_is_instrument_only"]
-        ),
-        "response_law_selected": ast.literal_eval(pairs["response_law_selected"]),
-        "w7_closed": ast.literal_eval(pairs["w7_closed"]),
-    }
-
-
-def extraction(primary_source: str) -> dict[str, object]:
-    """AST-extract the primary's fixtures, verdicts, inputs, and boundary."""
-    tree = ast.parse(primary_source, filename=str(PRIMARY_PATH))
-    audit_inputs = literal_assignment(tree, "AUDIT_INPUT_PATHS")
-    verdicts = literal_assignment(tree, "EXPECTED_BUILT_IN_VERDICTS")
-    remaining = literal_assignment(tree, "remaining_w7_components")
-    strict_tolerance = fraction_literal(assignment_value(tree, "STRICT_TOLERANCE"))
-    drift_limit = fraction_literal(assignment_value(tree, "DRIFT_LIMIT"))
-
-    coefficients: dict[int, int] = {}
-    exact_recoil_node = None
-    exact_balance_node = None
-    for node in ast.walk(tree):
-        if isinstance(node, ast.AugAssign) and isinstance(node.target, ast.Name):
-            if node.target.id == "exact_recoil":
-                exact_recoil_node = node.value
-            elif node.target.id == "exact_balance":
-                exact_balance_node = node.value
-    if exact_recoil_node is None or exact_balance_node is None:
-        raise AssertionError("frozen recoil/balance AST is missing")
-    for node in ast.walk(exact_recoil_node):
-        if not isinstance(node, ast.Compare) or len(node.comparators) != 1:
-            continue
-        index = subscript_index(node.left)
-        coefficient = recoil_coefficient(node.comparators[0])
-        if index is not None and coefficient is not None:
-            coefficients[index] = coefficient
-    balance_zero = any(
-        isinstance(node, ast.Compare)
-        and len(node.ops) == 1
-        and isinstance(node.ops[0], ast.Eq)
-        and len(node.comparators) == 1
-        and isinstance(node.comparators[0], ast.Constant)
-        and node.comparators[0].value == 0
-        and isinstance(node.left, ast.Call)
-        and isinstance(node.left.func, ast.Name)
-        and node.left.func.id == "sum"
-        for node in ast.walk(exact_balance_node)
-    )
-
-    reciprocal_label = (
-        "B frozen Cycle-322 reciprocal transfer criteria hold through held L=6"
-    )
-    reciprocal_call = check_call(tree, reciprocal_label)
-    attributes = {
-        f"{node.value.id}.{node.attr}"
-        for node in ast.walk(reciprocal_call)
-        if isinstance(node, ast.Attribute) and isinstance(node.value, ast.Name)
-    }
-    held_match = re.search(r"held L=(\d+)", reciprocal_label)
-    clean_value = assignment_value(tree, "landed_response_clean")
-    threshold_nodes = [
-        node
-        for node in ast.walk(clean_value)
-        if isinstance(node, ast.Call)
-        and isinstance(node.func, ast.Name)
-        and node.func.id == "Fraction"
-    ]
-    if held_match is None or len(threshold_nodes) != 1:
-        raise AssertionError("reciprocal criterion literals are ambiguous")
-
-    extracted = {
-        "audit_inputs": audit_inputs,
-        "boundary": {
-            **certificate_boundary(tree),
-            "remaining_w7_components": remaining,
-        },
-        "criteria": {
-            "recoil_coefficients": tuple(coefficients[index] for index in range(3)),
-            "zero_flux_balance": 0 if balance_zero else None,
-            "reciprocal_transfer": {
-                "held_L": int(held_match.group(1)),
-                "held_symbol": "S322.HELD_SIZE",
-                "off_diagonal_minimum": fraction_literal(threshold_nodes[0]),
-                "sizes_symbol": "S322.SIZES",
-            },
-        },
-        "drift_limit": drift_limit,
-        "strict_tolerance": strict_tolerance,
-        "verdicts": verdicts,
-        "tree": tree,
-    }
-    check(
-        "1 extraction recounts the literal AUDIT tuple",
-        audit_inputs == AUDIT_INPUT_PATHS and isinstance(audit_inputs, tuple),
-        audit_inputs,
-    )
-    check(
-        "1 extraction recounts recoil, balance, and held reciprocal criteria",
-        extracted["criteria"]
-        == {
-            "recoil_coefficients": (-2, 1, 1),
-            "zero_flux_balance": 0,
-            "reciprocal_transfer": {
-                "held_L": 6,
-                "held_symbol": "S322.HELD_SIZE",
-                "off_diagonal_minimum": Fraction(3, 5000),
-                "sizes_symbol": "S322.SIZES",
-            },
-        }
-        and {"S322.HELD_SIZE", "S322.SIZES"} <= attributes,
-        extracted["criteria"],
-    )
-    check(
-        "1 extraction recounts all three frozen verdicts",
-        verdicts
-        == {
-            "identity_pullback": "ACCEPT",
-            "sign_flipped": "REJECT",
-            "coefficient_drift": "DRIFT",
-        },
-        verdicts,
-    )
-    check(
-        "1 extraction recounts the open boundary keys",
-        extracted["boundary"]
-        == {
-            "harness_is_instrument_only": True,
-            "remaining_w7_components": [
-                "field/metric response law",
-                "no-refit prediction attachment",
-            ],
-            "response_law_selected": False,
-            "w7_closed": False,
-        },
-        extracted["boundary"],
-    )
-    return extracted
-
-
-def remaining_time(deadline: float) -> float:
-    return max(1.0, deadline - time.monotonic())
-
-
-def run_subprocess(
-    path: Path | None,
-    deadline: float,
-    *,
-    stdin_source: str | None = None,
-) -> dict[str, object]:
-    environment = os.environ.copy()
-    environment["PYTHONPATH"] = str(ROOT / "scripts")
-    environment["PYTHONDONTWRITEBYTECODE"] = "1"
-    command = [sys.executable, "-"] if path is None else [sys.executable, str(path)]
-    started = time.monotonic()
-    try:
-        completed = subprocess.run(
-            command,
-            cwd=ROOT,
-            env=environment,
-            input=stdin_source,
-            capture_output=True,
-            text=True,
-            timeout=remaining_time(deadline),
-            check=False,
-        )
-        return {
-            "completed": True,
-            "exit_code": completed.returncode,
-            "stdout": completed.stdout,
-            "stderr": completed.stderr,
-            "runtime_sec": time.monotonic() - started,
-        }
-    except subprocess.TimeoutExpired as error:
-        stdout = error.stdout or ""
-        stderr = error.stderr or ""
-        if isinstance(stdout, bytes):
-            stdout = stdout.decode("utf-8", "replace")
-        if isinstance(stderr, bytes):
-            stderr = stderr.decode("utf-8", "replace")
-        return {
-            "completed": False,
-            "exit_code": None,
-            "stdout": stdout,
-            "stderr": stderr,
-            "runtime_sec": time.monotonic() - started,
-        }
-
-
-def run_passed(row: dict[str, object], result_marker: str) -> bool:
-    stdout = str(row["stdout"])
-    return bool(
-        row["completed"]
-        and row["exit_code"] == 0
-        and result_marker in stdout
-        and not any(line.startswith("FAIL ") for line in stdout.splitlines())
-    )
-
-
-def payload_after_pass(stdout: str, label: str) -> object:
-    marker = f"PASS {label} :: "
-    start = stdout.find(marker)
-    if start < 0:
-        raise AssertionError(f"own-run PASS payload missing: {label}")
-    start += len(marker)
-    stops = [
-        position
-        for token in ("\nPASS ", "\n\n")
-        if (position := stdout.find(token, start)) >= 0
-    ]
-    payload = stdout[start : min(stops) if stops else len(stdout)].strip()
-    payload = re.sub(r"\bnp\.float64\(([^()]*)\)", r"\1", payload)
-    payload = re.sub(r"\barray\((\[\[.*?\]\])\)", r"\1", payload, flags=re.DOTALL)
-    return ast.literal_eval(payload)
-
-
-def own_recoil_rows() -> tuple[list[dict[str, object]], bool]:
-    exchange, _vertex, _charge, _momenta = U320.link_recoil_vertex(U320.ANGLE)
-    rows = []
-    clean = True
-    for direction in range(6):
-        targets = [
-            index
-            for index, value in enumerate(exchange[:, direction])
-            if abs(value) > 0.5
-        ]
-        clean &= len(targets) == 1
-        if not targets:
-            continue
-        flat = targets[0] - 6
-        matter_direction, remainder = divmod(flat, 36)
-        field_direction, auxiliary_direction = divmod(remainder, 6)
-        source = tuple(int(value) for value in U320.c210.DIRECTIONS[direction])
-        matter_target = tuple(
-            int(value) for value in U320.c210.DIRECTIONS[matter_direction]
-        )
-        matter = [
-            matter_target[axis] - source[axis] for axis in range(3)
-        ]
-        mediator = [
-            int(value) for value in U320.c210.DIRECTIONS[field_direction]
-        ]
-        auxiliary = [
-            int(value) for value in U320.c210.DIRECTIONS[auxiliary_direction]
-        ]
-        clean &= (
-            matter == [-2 * value for value in source]
-            and mediator == list(source)
-            and auxiliary == list(source)
-            and all(
-                matter[axis] + mediator[axis] + auxiliary[axis] == 0
-                for axis in range(3)
-            )
-        )
-        rows.append(
-            {
-                "auxiliary": auxiliary,
-                "direction": direction,
-                "matter": matter,
-                "mediator": mediator,
-            }
-        )
-    return rows, clean and len(rows) == 6
-
-
-def own_response_rows() -> list[dict[str, object]]:
-    coin, fswap, contact, _update, _details = S322.c315.logical_update_controls(
-        S322.LABELS
-    )
-    factors = (coin, fswap, contact)
-    rows = []
-    for length in S322.SIZES:
-        matrix, norm_drift = S322.response_matrix(length, factors)
-        frozen = tuple(
-            tuple(Fraction(float(matrix[row, column])) for column in range(2))
-            for row in range(2)
-        )
-        frozen_norm = Fraction(float(norm_drift))
-        rows.append(
-            {
-                "L": length,
-                "diagonal_exchange_residual": float(
-                    abs(frozen[0][0] - frozen[1][1])
-                ),
-                "held_out": length == S322.HELD_SIZE,
-                "norm_drift": float(frozen_norm),
-                "off_diagonal_minimum": float(min(frozen[0][1], frozen[1][0])),
-                "reciprocity_residual": float(
-                    abs(frozen[0][1] - frozen[1][0])
-                ),
-                "response_matrix": [
-                    [float(value) for value in row] for row in frozen
-                ],
-            }
-        )
-    return rows
-
-
-def json_certificate(stdout: str) -> dict[str, object]:
-    for line in reversed(stdout.splitlines()):
-        if line.startswith("{") and line.endswith("}"):
-            value = json.loads(line)
-            if isinstance(value, dict):
-                return value
-    raise AssertionError("subprocess JSON certificate is missing")
-
-
-def canonical_bytes(value: object) -> bytes:
-    return json.dumps(value, sort_keys=True, separators=(",", ":")).encode("utf-8")
-
-
-def criteria_recount(
-    deadline: float, extracted: dict[str, object]
-) -> dict[str, object]:
-    """Re-derive landed criteria from the two runners and compare the primary."""
-    s322_run = run_subprocess(ROOT / AUDIT_INPUT_PATHS[0], deadline)
-    u320_run = run_subprocess(ROOT / AUDIT_INPUT_PATHS[1], deadline)
-    check(
-        "2 criteria recount obtains an all-PASS S322 own run",
-        run_passed(
-            s322_run,
-            "RESULT TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CERTIFIED",
-        ),
+def parse_fixture() -> tuple[
+    dict[str, Any],
+    tuple[tuple[tuple[Fraction, ...], ...], ...],
+    tuple[tuple[int, tuple[Fraction, ...]], ...],
+    str,
+]:
+    raw = (ROOT / FIXTURE_PATH).read_bytes()
+    payload = exact_object(
+        json.loads(raw),
         {
-            "exit": s322_run["exit_code"],
-            "runtime_sec": round(float(s322_run["runtime_sec"]), 3),
+            "fixture_kind",
+            "normalization_and_supplies",
+            "provenance",
+            "recoil_rows",
+            "response_rows",
+            "schema_version",
+            "thresholds",
         },
+        "fixture",
     )
-    check(
-        "2 criteria recount obtains an all-PASS U320 own run",
-        run_passed(
-            u320_run,
-            "RESULT UNIT_WEIGHT_CARRIED_LINK_RECOIL_FACTOR_CERTIFIED",
-        ),
-        {
-            "exit": u320_run["exit_code"],
-            "runtime_sec": round(float(u320_run["runtime_sec"]), 3),
-        },
+    require(payload["schema_version"] == 1, "schema version")
+    require(
+        payload["fixture_kind"] == "conditional_software_regression_fixture",
+        "fixture kind",
+    )
+    thresholds = exact_object(
+        payload["thresholds"],
+        {"drift_upper_bound", "strict_upper_bound"},
+        "thresholds",
+    )
+    require(
+        rational(thresholds["strict_upper_bound"], "strict threshold")
+        == STRICT_UPPER_BOUND,
+        "strict threshold",
+    )
+    require(
+        rational(thresholds["drift_upper_bound"], "drift threshold")
+        == DRIFT_UPPER_BOUND,
+        "drift threshold",
     )
 
-    recoil_rows, structural_recoil_clean = own_recoil_rows()
-    u320_payload = payload_after_pass(
-        str(u320_run["stdout"]),
-        "the direction-changing carried-link vertex has exact unit-weight Q/P operator balance and nonzero matter recoil",
+    recoil_rows = []
+    require(
+        isinstance(payload["recoil_rows"], list)
+        and len(payload["recoil_rows"]) == 6,
+        "recoil row count",
     )
-    stdout_recoil_clean = isinstance(u320_payload, dict)
-    raw_recoil_rows = u320_payload.get("response_rows", []) if stdout_recoil_clean else []
-    stdout_recoil_clean &= len(raw_recoil_rows) == 6
-    for structural, raw in zip(recoil_rows, raw_recoil_rows):
-        direction = int(structural["direction"])
-        source = [float(value) for value in U320.c210.DIRECTIONS[direction]]
-        mediator = [float(value) for value in raw["mediator_flux"]]
-        matter = [float(value) for value in raw["matter_recoil"]]
-        auxiliary = [float(value) for value in raw["auxiliary_flux"]]
-        scale = sum(mediator[axis] * source[axis] for axis in range(3))
-        stdout_recoil_clean &= (
-            scale > 0
-            and max(
-                abs(matter[axis] + 2 * scale * source[axis])
-                for axis in range(3)
+    for index, raw_row in enumerate(payload["recoil_rows"]):
+        row = exact_object(
+            raw_row,
+            {"auxiliary", "direction_index", "matter", "mediator"},
+            f"recoil row {index}",
+        )
+        require(row["direction_index"] == index, f"recoil row {index} index")
+        components = []
+        for name in ("matter", "mediator", "auxiliary"):
+            vector = row[name]
+            require(
+                isinstance(vector, list) and len(vector) == 3,
+                f"recoil row {index} {name}",
             )
-            < 1e-12
-            and max(
-                abs(mediator[axis] - scale * source[axis])
-                for axis in range(3)
-            )
-            < 1e-12
-            and max(
-                abs(auxiliary[axis] - scale * source[axis])
-                for axis in range(3)
-            )
-            < 1e-12
-            and float(raw["balance_residual"]) == 0.0
-        )
-    check(
-        "2 criteria recount independently derives (-2d,+d,+d) and zero balance",
-        structural_recoil_clean and stdout_recoil_clean,
-        {"directions": len(recoil_rows), "own_run_rows": len(raw_recoil_rows)},
-    )
-
-    response_rows = own_response_rows()
-    s322_payload = payload_after_pass(
-        str(s322_run["stdout"]),
-        "the same-code two-update response has nonzero reciprocal off-diagonal transfer through held L=6",
-    )
-    stdout_response_clean = (
-        isinstance(s322_payload, list)
-        and [row["L"] for row in s322_payload] == [3, 4, 6]
-        and [row["held_out"] for row in s322_payload] == [False, False, True]
-        and min(float(row["off_diagonal_minimum"]) for row in s322_payload) > 6e-4
-        and max(
-            max(
-                float(row["reciprocity_residual"]),
-                float(row["diagonal_exchange_residual"]),
-                float(row["maximum_norm_drift"]),
-            )
-            for row in s322_payload
-        )
-        < S322.TOLERANCE
-    )
-    exact_response_clean = (
-        [row["L"] for row in response_rows] == list(S322.SIZES)
-        and S322.HELD_SIZE == 6
-        and any(row["L"] == 6 and row["held_out"] for row in response_rows)
-        and min(float(row["off_diagonal_minimum"]) for row in response_rows)
-        > float(extracted["criteria"]["reciprocal_transfer"]["off_diagonal_minimum"])  # type: ignore[index]
-        and max(
-            max(
-                float(row["reciprocity_residual"]),
-                float(row["diagonal_exchange_residual"]),
-                float(row["norm_drift"]),
-            )
-            for row in response_rows
-        )
-        <= float(extracted["strict_tolerance"])
-    )
-    check(
-        "2 criteria recount independently derives reciprocal transfer at held L=6",
-        stdout_response_clean and exact_response_clean,
-        {
-            "held_L": 6,
-            "minimum_transfer": min(
-                float(row["off_diagonal_minimum"]) for row in response_rows
-            ),
-        },
-    )
-
-    own_frozen = {"recoil_rows": recoil_rows, "response_rows": response_rows}
-    primary_run = run_subprocess(PRIMARY_PATH, deadline)
-    primary_ok = run_passed(primary_run, '"w7_closed":false')
-    primary_certificate = (
-        json_certificate(str(primary_run["stdout"])) if primary_ok else {}
-    )
-    primary_frozen = primary_certificate.get("frozen_criteria")
-    value_agreement = own_frozen == primary_frozen
-    byte_agreement = canonical_bytes(own_frozen) == canonical_bytes(primary_frozen)
-    check(
-        "2 independent frozen criteria have byte and value agreement with the harness",
-        primary_ok and value_agreement and byte_agreement,
-        {
-            "byte_agreement": byte_agreement,
-            "own_sha256": sha256_text(canonical_bytes(own_frozen).decode("utf-8")),
-            "primary_sha256": sha256_text(
-                canonical_bytes(primary_frozen).decode("utf-8")
-            ),
-        },
-    )
-    return {
-        "own_frozen": own_frozen,
-        "primary_certificate": primary_certificate,
-        "primary_run": primary_run,
-        "source_runs": {"S322": s322_run, "U320": u320_run},
-    }
-
-
-def recounted_verdict(
-    row: dict[str, object], strict_tolerance: Fraction, drift_limit: Fraction
-) -> tuple[str, list[str]]:
-    residuals = {
-        str(name): Fraction(float(value))
-        for name, value in dict(row["residuals"]).items()
-    }
-    failed = sorted(
-        name for name, residual in residuals.items() if residual > strict_tolerance
-    )
-    largest = max(residuals.values(), default=Fraction(0))
-    if not failed:
-        verdict = "ACCEPT"
-    elif largest <= drift_limit:
-        verdict = "DRIFT"
-    else:
-        verdict = "REJECT"
-    return verdict, failed
-
-
-def fraction_call(value: int) -> ast.Call:
-    return ast.Call(
-        func=ast.Name(id="Fraction", ctx=ast.Load()),
-        args=[ast.Constant(value=value)],
-        keywords=[],
-    )
-
-
-def augmented_primary(primary_source: str) -> str:
-    tree = ast.parse(primary_source, filename=str(PRIMARY_PATH))
-    candidates = assignment_value(tree, "BUILT_IN_CANDIDATES")
-    expected = assignment_value(tree, "EXPECTED_BUILT_IN_VERDICTS")
-    if not isinstance(candidates, ast.Tuple) or not isinstance(expected, ast.Dict):
-        raise AssertionError("primary candidate literals are not augmentable")
-    candidates.elts.append(
-        ast.Call(
-            func=ast.Name(id="ResponseKernelCandidate", ctx=ast.Load()),
-            args=[],
-            keywords=[
-                ast.keyword(
-                    arg="name", value=ast.Constant(FOURTH_CANDIDATE["name"])
-                ),
-                ast.keyword(
-                    arg="recoil_coefficients",
-                    value=ast.Tuple(
-                        elts=[
-                            fraction_call(int(value))
-                            for value in FOURTH_CANDIDATE["recoil_coefficients"]
-                        ],
-                        ctx=ast.Load(),
-                    ),
-                ),
-                ast.keyword(
-                    arg="transfer_coefficients",
-                    value=ast.Tuple(
-                        elts=[
-                            fraction_call(int(value))
-                            for value in FOURTH_CANDIDATE["transfer_coefficients"]
-                        ],
-                        ctx=ast.Load(),
-                    ),
-                ),
-                ast.keyword(
-                    arg="fitted_defaults",
-                    value=ast.Name(id="ZERO_DEFAULTS", ctx=ast.Load()),
-                ),
-                ast.keyword(
-                    arg="demonstration_role",
-                    value=ast.Constant(FOURTH_CANDIDATE["demonstration_role"]),
-                ),
-            ],
-        )
-    )
-    expected.keys.append(ast.Constant(FOURTH_CANDIDATE["name"]))
-    expected.values.append(ast.Constant(FOURTH_CANDIDATE["expected_verdict"]))
-    file_assignment = ast.Assign(
-        targets=[ast.Name(id="__file__", ctx=ast.Store())],
-        value=ast.Constant(str(PRIMARY_PATH)),
-    )
-    insertion = 1 if (
-        tree.body
-        and isinstance(tree.body[0], ast.Expr)
-        and isinstance(tree.body[0].value, ast.Constant)
-        and isinstance(tree.body[0].value.value, str)
-    ) else 0
-    tree.body.insert(insertion, file_assignment)
-    ast.fix_missing_locations(tree)
-    return ast.unparse(tree)
-
-
-def candidate_recount(
-    deadline: float,
-    primary_source: str,
-    extracted: dict[str, object],
-    criteria_state: dict[str, object],
-) -> dict[str, object]:
-    """Recount the three built-ins and a separately supplied fourth candidate."""
-    certificate = dict(criteria_state["primary_certificate"])
-    evaluations = dict(certificate.get("candidate_evaluations", {}))
-    expected_verdicts = dict(extracted["verdicts"])
-    recounted = {}
-    built_in_clean = set(evaluations) == set(expected_verdicts)
-    for name, expected_verdict in expected_verdicts.items():
-        row = dict(evaluations.get(name, {}))
-        if not row:
-            built_in_clean = False
-            continue
-        verdict, failed = recounted_verdict(
-            row,
-            extracted["strict_tolerance"],  # type: ignore[arg-type]
-            extracted["drift_limit"],  # type: ignore[arg-type]
-        )
-        recounted[name] = verdict
-        built_in_clean &= (
-            verdict == expected_verdict
-            and row.get("verdict") == expected_verdict
-            and list(row.get("failed_criteria", [])) == failed
-        )
-    check(
-        "3 candidate recount independently reproduces ACCEPT/REJECT/DRIFT",
-        built_in_clean and recounted == expected_verdicts,
-        recounted,
-    )
-
-    probe_run = run_subprocess(
-        None,
-        deadline,
-        stdin_source=augmented_primary(primary_source),
-    )
-    probe_ok = run_passed(probe_run, '"candidate":"magnitude_doubled"')
-    probe_certificate = json_certificate(str(probe_run["stdout"])) if probe_ok else {}
-    probe_row = dict(
-        dict(probe_certificate.get("candidate_evaluations", {})).get(
-            FOURTH_CANDIDATE["name"], {}
-        )
-    )
-    if probe_row:
-        probe_verdict, probe_failed = recounted_verdict(
-            probe_row,
-            extracted["strict_tolerance"],  # type: ignore[arg-type]
-            extracted["drift_limit"],  # type: ignore[arg-type]
-        )
-    else:
-        probe_verdict, probe_failed = "MISSING", []
-    fourth_clean = (
-        probe_ok
-        and probe_verdict == FOURTH_CANDIDATE["expected_verdict"]
-        and probe_row.get("verdict") == FOURTH_CANDIDATE["expected_verdict"]
-        and list(probe_row.get("failed_criteria", [])) == probe_failed
-        and "recoil_ledger" in probe_failed
-        and "reciprocal_transfer_values" in probe_failed
-    )
-    check(
-        "3 fourth magnitude-doubled candidate is rejected by named criteria",
-        fourth_clean,
-        {"failed_criteria": probe_failed, "verdict": probe_verdict},
-    )
-    return {
-        "built_in_verdicts": recounted,
-        "fourth_failed_criteria": probe_failed,
-        "fourth_verdict": probe_verdict,
-        "probe_run": probe_run,
-    }
-
-
-def adversary_recount(
-    extracted: dict[str, object], criteria_state: dict[str, object]
-) -> dict[str, object]:
-    """Independently mutate one expectation and verify that identity fails."""
-    landed = criteria_state["own_frozen"]
-    wrong = deepcopy(landed)
-    wrong["recoil_rows"][0]["matter"] = [
-        -value for value in wrong["recoil_rows"][0]["matter"]
-    ]
-    recoil_residual = max(
-        abs(
-            landed["recoil_rows"][direction][component][axis]
-            - wrong["recoil_rows"][direction][component][axis]
-        )
-        for direction in range(6)
-        for component in ("matter", "mediator", "auxiliary")
-        for axis in range(3)
-    )
-    own_failed = ["recoil_ledger"] if recoil_residual > extracted["strict_tolerance"] else []
-    own_verdict = (
-        "ACCEPT"
-        if not own_failed
-        else "DRIFT"
-        if recoil_residual <= extracted["drift_limit"]
-        else "REJECT"
-    )
-    harness_row = dict(
-        dict(criteria_state["primary_certificate"]).get("adversary_self_test", {})
-    )
-    clean = (
-        own_verdict == "REJECT"
-        and own_failed == ["recoil_ledger"]
-        and harness_row.get("verdict") == "REJECT"
-        and "recoil_ledger" in harness_row.get("failed_criteria", [])
-    )
-    check(
-        "4 wrong-expectation adversary is caught independently and by the harness",
-        clean,
-        {
-            "failed_criteria": own_failed,
-            "largest_residual": recoil_residual,
-            "verdict": own_verdict,
-        },
-    )
-    return {"failed_criteria": own_failed, "verdict": own_verdict}
-
-
-def module_root(node: ast.AST) -> str | None:
-    while isinstance(node, (ast.Attribute, ast.Subscript)):
-        node = node.value
-    return node.id if isinstance(node, ast.Name) else None
-
-
-def target_nodes(node: ast.AST) -> list[ast.AST]:
-    if isinstance(node, (ast.Tuple, ast.List)):
-        output = []
-        for element in node.elts:
-            output.extend(target_nodes(element))
-        return output
-    return [node]
-
-
-def write_audit(tree: ast.AST) -> dict[str, object]:
-    landed_writes = []
-    mutation_calls = []
-    file_writes = []
-    for node in ast.walk(tree):
-        targets = []
-        if isinstance(node, (ast.Assign, ast.AnnAssign, ast.AugAssign)):
-            raw = node.targets if isinstance(node, ast.Assign) else [node.target]
-            for target in raw:
-                targets.extend(target_nodes(target))
-        elif isinstance(node, (ast.Delete, ast.NamedExpr)):
-            raw = node.targets if isinstance(node, ast.Delete) else [node.target]
-            for target in raw:
-                targets.extend(target_nodes(target))
-        for target in targets:
-            if module_root(target) in {"S322", "U320"}:
-                landed_writes.append(getattr(node, "lineno", -1))
-        if not isinstance(node, ast.Call):
-            continue
-        if (
-            isinstance(node.func, ast.Name)
-            and node.func.id in {"setattr", "delattr"}
-            and node.args
-            and module_root(node.args[0]) in {"S322", "U320"}
-        ):
-            mutation_calls.append((node.func.id, node.lineno))
-        if isinstance(node.func, ast.Attribute):
-            if (
-                node.func.attr
-                in {
-                    "append",
-                    "clear",
-                    "extend",
-                    "insert",
-                    "pop",
-                    "remove",
-                    "reverse",
-                    "sort",
-                    "update",
-                }
-                and module_root(node.func.value) in {"S322", "U320"}
-            ):
-                mutation_calls.append((node.func.attr, node.lineno))
-            if node.func.attr in {
-                "chmod",
-                "rename",
-                "touch",
-                "unlink",
-                "write_bytes",
-                "write_text",
-            }:
-                file_writes.append((node.func.attr, node.lineno))
-        if isinstance(node.func, ast.Name) and node.func.id == "open":
-            modes = [
-                argument.value
-                for argument in node.args[1:2]
-                if isinstance(argument, ast.Constant)
-                and isinstance(argument.value, str)
-            ]
-            modes.extend(
-                keyword.value.value
-                for keyword in node.keywords
-                if keyword.arg == "mode"
-                and isinstance(keyword.value, ast.Constant)
-                and isinstance(keyword.value.value, str)
-            )
-            if any(set(mode) & set("wax+") for mode in modes):
-                file_writes.append(("open", node.lineno))
-    return {
-        "file_writes": file_writes,
-        "landed_writes": landed_writes,
-        "mutation_calls": mutation_calls,
-    }
-
-
-def candidate_ast_is_data(tree: ast.AST) -> bool:
-    value = assignment_value(tree, "BUILT_IN_CANDIDATES")
-    if not isinstance(value, ast.Tuple):
-        return False
-    for candidate in value.elts:
-        if not (
-            isinstance(candidate, ast.Call)
-            and isinstance(candidate.func, ast.Name)
-            and candidate.func.id == "ResponseKernelCandidate"
-            and not candidate.args
-        ):
-            return False
-        for keyword in candidate.keywords:
-            allowed = all(
-                isinstance(
-                    node,
-                    (
-                        ast.Call,
-                        ast.Constant,
-                        ast.Load,
-                        ast.Name,
-                        ast.Tuple,
-                        ast.UnaryOp,
-                        ast.USub,
-                    ),
+            components.append(
+                tuple(
+                    rational(value, f"recoil row {index} {name}[{axis}]")
+                    for axis, value in enumerate(vector)
                 )
-                and not isinstance(node, (ast.Lambda, ast.comprehension))
-                for node in ast.walk(keyword.value)
             )
-            if not allowed:
-                return False
-            for call in (
-                node for node in ast.walk(keyword.value) if isinstance(node, ast.Call)
-            ):
-                if not (
-                    isinstance(call.func, ast.Name)
-                    and call.func.id == "Fraction"
-                    and all(
-                        isinstance(argument, (ast.Constant, ast.UnaryOp))
-                        for argument in call.args
-                    )
-                ):
-                    return False
-    return True
+        recoil_rows.append(tuple(components))
 
-
-def firewall_recount(
-    primary_source: str, primary_tree: ast.AST, own_source: str
-) -> dict[str, object]:
-    """Apply an independent no-write/data-only interpretation firewall."""
-    own_tree = ast.parse(own_source, filename=str(Path(__file__)))
-    primary_writes = write_audit(primary_tree)
-    own_writes = write_audit(own_tree)
-    token = "grav" + "ity"
-    candidate_value = assignment_value(primary_tree, "BUILT_IN_CANDIDATES")
-    candidate_strings = [
-        node.value
-        for node in ast.walk(candidate_value)
-        if isinstance(node, ast.Constant) and isinstance(node.value, str)
-    ]
-    interpretation_strings = [
-        node.value
-        for node in ast.walk(primary_tree)
-        if isinstance(node, ast.Constant)
-        and isinstance(node.value, str)
-        and token in node.value.lower()
-    ]
-    prohibitions_only = all(
-        any(marker in value.lower() for marker in ("not ", "no ", "nothing "))
-        for value in interpretation_strings
+    response_rows = []
+    require(
+        isinstance(payload["response_rows"], list)
+        and len(payload["response_rows"]) == 3,
+        "response row count",
     )
-    fourth_literal = literal_assignment(own_tree, "FOURTH_CANDIDATE")
-    clean = (
-        primary_writes
-        == {"file_writes": [], "landed_writes": [], "mutation_calls": []}
-        and own_writes
-        == {"file_writes": [], "landed_writes": [], "mutation_calls": []}
-        and candidate_ast_is_data(primary_tree)
-        and fourth_literal == FOURTH_CANDIDATE
-        and not any(token in value.lower() for value in candidate_strings)
-        and prohibitions_only
-    )
-    check(
-        "5 firewall recount finds data-only candidates and zero landed writes",
-        clean,
-        {
-            "candidate_count": len(candidate_value.elts)
-            if isinstance(candidate_value, ast.Tuple)
-            else None,
-            "file_writes": len(primary_writes["file_writes"])
-            + len(own_writes["file_writes"]),
-            "landed_writes": len(primary_writes["landed_writes"])
-            + len(own_writes["landed_writes"]),
-            "prohibitions_only": prohibitions_only,
-        },
-    )
-    return {
-        "candidates_are_data": candidate_ast_is_data(primary_tree),
-        "file_writes": len(primary_writes["file_writes"])
-        + len(own_writes["file_writes"]),
-        "landed_writes": len(primary_writes["landed_writes"])
-        + len(own_writes["landed_writes"]),
-        "prohibitions_only": prohibitions_only,
-    }
-
-
-def imported_names(tree: ast.AST) -> set[str]:
-    names = set()
-    for node in ast.walk(tree):
-        if isinstance(node, ast.Import):
-            names.update(alias.name for alias in node.names)
-        elif isinstance(node, ast.ImportFrom) and node.module:
-            names.add(node.module)
-    return names
-
-
-def discipline(
-    own_source: str,
-    extracted: dict[str, object],
-    criteria_state: dict[str, object],
-) -> dict[str, object]:
-    """Verify the literal header, import blocklist, and verbatim boundary."""
-    tree = ast.parse(own_source, filename=str(Path(__file__)))
-    imports = imported_names(tree)
-    header_clean = (
-        literal_assignment(tree, "AUDIT_TIMEOUT_SEC") == 900
-        and literal_assignment(tree, "NOTE_PATH") == NOTE_PATH
-        and literal_assignment(tree, "AUDIT_INPUT_PATHS") == AUDIT_INPUT_PATHS
-    )
-    alias_pairs = {
-        (alias.name, alias.asname)
-        for node in ast.walk(tree)
-        if isinstance(node, ast.Import)
-        for alias in node.names
-    }
-    blocklist_clean = not any(
-        blocked == name or name.endswith("." + blocked)
-        for blocked in PRIMARY_IMPORT_BLOCKLIST
-        for name in imports
-    )
-    primary_certificate = dict(criteria_state["primary_certificate"])
-    boundary = dict(extracted["boundary"])
-    boundary_clean = (
-        all(text in primary_certificate.get("remaining_w7_components", []) for text in BOUNDARY_LANGUAGE[2:])
-        and primary_certificate.get("harness_is_instrument_only") is True
-        and primary_certificate.get("response_law_selected") is False
-        and primary_certificate.get("w7_closed") is False
-        and boundary["response_law_selected"] is False
-        and boundary["w7_closed"] is False
-    )
-    primary_constants = {
-        node.value
-        for node in ast.walk(extracted["tree"])
-        if isinstance(node, ast.Constant) and isinstance(node.value, str)
-    }
-    boundary_clean &= all(text in primary_constants for text in BOUNDARY_LANGUAGE)
-    check(
-        "6 discipline keeps the primary blocklisted and imports only S322/U320 anchors",
-        header_clean
-        and blocklist_clean
-        and (
-            "two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18",
-            "S322",
+    for index, raw_row in enumerate(payload["response_rows"]):
+        row = exact_object(raw_row, {"L", "matrix"}, f"response row {index}")
+        require(
+            isinstance(row["L"], int) and not isinstance(row["L"], bool),
+            f"response row {index} L",
         )
-        in alias_pairs
-        and (
-            "unit_weight_carried_link_recoil_cycle320_2026_07_18",
-            "U320",
+        matrix = row["matrix"]
+        require(
+            isinstance(matrix, list)
+            and len(matrix) == 2
+            and all(isinstance(matrix_row, list) and len(matrix_row) == 2 for matrix_row in matrix),
+            f"response row {index} matrix",
         )
-        in alias_pairs,
-        {"blocklist_clean": blocklist_clean, "header_clean": header_clean},
+        response_rows.append(
+            (
+                row["L"],
+                tuple(
+                    rational(matrix[r][c], f"response row {index}[{r}][{c}]")
+                    for r in range(2)
+                    for c in range(2)
+                ),
+            )
+        )
+
+    return (
+        payload,
+        tuple(recoil_rows),
+        tuple(response_rows),
+        hashlib.sha256(raw).hexdigest(),
     )
-    check(
-        "6 boundary language and false closure keys remain verbatim",
-        boundary_clean,
-        {
-            "response_law_selected": primary_certificate.get(
-                "response_law_selected"
+
+
+def exact_text(value: Fraction) -> str:
+    if value.denominator == 1:
+        return str(value.numerator)
+    return f"{value.numerator}/{value.denominator}"
+
+
+def oracle_evaluate(
+    name: str,
+    recoil_rows: tuple[tuple[tuple[Fraction, ...], ...], ...],
+    response_rows: tuple[tuple[int, tuple[Fraction, ...]], ...],
+    transform: tuple[
+        tuple[Fraction, Fraction, Fraction],
+        tuple[Fraction, Fraction, Fraction, Fraction],
+        tuple[Fraction, ...],
+    ],
+) -> dict[str, object]:
+    recoil_multipliers, response_multipliers, offsets = transform
+    recoil_entry_max = Fraction(0)
+    balance_max = Fraction(0)
+    for expected in recoil_rows:
+        actual = tuple(
+            tuple(
+                recoil_multipliers[component] * value + offsets[component]
+                for value in expected[component]
+            )
+            for component in range(3)
+        )
+        recoil_entry_max = max(
+            recoil_entry_max,
+            *(
+                abs(actual[component][axis] - expected[component][axis])
+                for component in range(3)
+                for axis in range(3)
             ),
-            "w7_closed": primary_certificate.get("w7_closed"),
-        },
-    )
+        )
+        balance_max = max(
+            balance_max,
+            *(
+                abs(sum(actual[component][axis] for component in range(3)))
+                for axis in range(3)
+            ),
+        )
+
+    response_entry_max = Fraction(0)
+    for _length, expected in response_rows:
+        actual = tuple(
+            response_multipliers[index] * value + offsets[3 + index]
+            for index, value in enumerate(expected)
+        )
+        response_entry_max = max(
+            response_entry_max,
+            *(abs(actual[index] - expected[index]) for index in range(4)),
+        )
+
+    residuals = {
+        "recoil_balance": balance_max,
+        "recoil_entries": recoil_entry_max,
+        "response_entries": response_entry_max,
+    }
+    failed = [
+        criterion
+        for criterion, residual in sorted(residuals.items())
+        if residual >= STRICT_UPPER_BOUND
+    ]
+    largest = max(residuals.values())
+    if not failed:
+        label = "ACCEPT"
+    elif largest <= DRIFT_UPPER_BOUND:
+        label = "DRIFT"
+    else:
+        label = "REJECT"
     return {
-        "blocklist_clean": blocklist_clean,
-        "boundary_verbatim": boundary_clean,
-        "header_clean": header_clean,
+        "failed_criteria": failed,
+        "label": label,
+        "largest_residual": exact_text(largest),
+        "residuals": {
+            criterion: exact_text(value)
+            for criterion, value in sorted(residuals.items())
+        },
+        "transform": name,
+    }
+
+
+def run_primary() -> dict[str, object]:
+    environment = os.environ.copy()
+    environment.pop("PYTHONPATH", None)
+    environment["PYTHONDONTWRITEBYTECODE"] = "1"
+    completed = subprocess.run(
+        [sys.executable, str(ROOT / PRIMARY_PATH)],
+        cwd=ROOT,
+        env=environment,
+        capture_output=True,
+        text=True,
+        timeout=AUDIT_TIMEOUT_SEC,
+        check=False,
+    )
+    json_lines = [
+        line for line in completed.stdout.splitlines() if line.startswith("{")
+    ]
+    certificate: object = json.loads(json_lines[-1]) if json_lines else {}
+    return {
+        "certificate": certificate,
+        "exit_code": completed.returncode,
+        "fail_lines": [
+            line for line in completed.stdout.splitlines() if line.startswith("FAIL ")
+        ],
+        "stderr": completed.stderr[-2000:],
     }
 
 
 def main() -> int:
     started = time.monotonic()
-    deadline = started + AUDIT_TIMEOUT_SEC
-    primary_source = PRIMARY_PATH.read_text(encoding="utf-8")
-    own_source = Path(__file__).read_text(encoding="utf-8")
+    try:
+        payload, recoil_rows, response_rows, fixture_sha = parse_fixture()
+    except Exception as error:
+        check("A independent fixture parser succeeds", False, repr(error))
+        return 1
 
-    extracted = extraction(primary_source)
-    criteria_state = criteria_recount(deadline, extracted)
-    candidates = candidate_recount(
-        deadline, primary_source, extracted, criteria_state
+    provenance = exact_object(
+        payload["provenance"],
+        {"source_closure_sha256", "source_scope"},
+        "provenance",
     )
-    adversary = adversary_recount(extracted, criteria_state)
-    firewall = firewall_recount(
-        primary_source, extracted["tree"], own_source  # type: ignore[arg-type]
-    )
-    disciplined = discipline(own_source, extracted, criteria_state)
-
-    runtime = time.monotonic() - started
-    certificate = {
-        "adversary": adversary,
-        "audit_input_paths": list(AUDIT_INPUT_PATHS),
-        "boundary": {
-            "response_law_selected": False,
-            "w7_closed": False,
-        },
-        "candidate_verdicts": candidates["built_in_verdicts"],
-        "discipline": disciplined,
-        "fail": FAIL,
-        "firewall": firewall,
-        "fourth_candidate": {
-            "failed_criteria": candidates["fourth_failed_criteria"],
-            "name": FOURTH_CANDIDATE["name"],
-            "verdict": candidates["fourth_verdict"],
-        },
-        "note_path": NOTE_PATH,
-        "pass": PASS,
-        "runtime_sec": round(runtime, 6),
+    expected_source_sha = provenance["source_closure_sha256"]
+    actual_source_sha = {
+        path: sha256_path(ROOT / path) for path in SOURCE_PATHS
     }
-    print(json.dumps(certificate, sort_keys=True, separators=(",", ":")))
+    check(
+        "A declared inputs cover primary, fixture, and pinned source closure",
+        len(AUDIT_INPUT_PATHS) == 34
+        and len(set(AUDIT_INPUT_PATHS)) == len(AUDIT_INPUT_PATHS)
+        and isinstance(expected_source_sha, dict)
+        and tuple(sorted(expected_source_sha)) == tuple(sorted(SOURCE_PATHS)),
+        {"declared_input_count": len(AUDIT_INPUT_PATHS)},
+    )
+    check(
+        "A independent source-hash verification is complete",
+        actual_source_sha == expected_source_sha and len(actual_source_sha) == 32,
+        {"source_count": len(actual_source_sha)},
+    )
+    check(
+        "A primary source matches the independent literal SHA pin",
+        sha256_path(ROOT / PRIMARY_PATH) == PRIMARY_SHA256,
+        {"primary_sha256": sha256_path(ROOT / PRIMARY_PATH)},
+    )
+
+    own_tree = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+    imported_modules = {
+        alias.name
+        for node in ast.walk(own_tree)
+        if isinstance(node, (ast.Import, ast.ImportFrom))
+        for alias in node.names
+    }
+    check(
+        "A checker does not import the primary module",
+        "frontier_cycle749_response_comparison_harness_2026_07_28"
+        not in imported_modules,
+        {"import_count": len(imported_modules)},
+    )
+
+    normalized_rows = all(
+        row[1] == row[2]
+        and row[0] == tuple(-2 * component for component in row[1])
+        and sum(abs(component) for component in row[1]) == 1
+        for row in recoil_rows
+    )
+    check(
+        "B independent exact parser recovers normalized coefficient rows",
+        normalized_rows
+        and len(set(row[1] for row in recoil_rows)) == 6,
+        {"row_count": len(recoil_rows)},
+    )
+    check(
+        "B independent exact parser recovers three response tables",
+        tuple(length for length, _values in response_rows) == (3, 4, 6),
+        {"sizes": [length for length, _values in response_rows]},
+    )
+
+    oracle = {
+        name: oracle_evaluate(name, recoil_rows, response_rows, transform)
+        for name, transform in ORACLE_TRANSFORMS.items()
+    }
+    oracle_labels = {name: result["label"] for name, result in oracle.items()}
+    check(
+        "C independent exact oracle reproduces four supplied labels",
+        oracle_labels == ORACLE_LABELS,
+        oracle_labels,
+    )
+    check(
+        "C independent drift arithmetic is exactly 4e-10",
+        oracle["matter_coefficient_perturbation"]["largest_residual"]
+        == "1/2500000000",
+        oracle["matter_coefficient_perturbation"],
+    )
+
+    equality_transform = (
+        (
+            Fraction(20_000_000_003, 20_000_000_000),
+            Fraction(1),
+            Fraction(1),
+        ),
+        (Fraction(1),) * 4,
+        ZERO_OFFSETS,
+    )
+    equality = oracle_evaluate(
+        "strict_boundary_equality",
+        recoil_rows,
+        response_rows,
+        equality_transform,
+    )
+    epsilon = Fraction(1, 10**20)
+    just_below_transform = (
+        (
+            Fraction(1) + (STRICT_UPPER_BOUND - epsilon) / 2,
+            Fraction(1),
+            Fraction(1),
+        ),
+        (Fraction(1),) * 4,
+        ZERO_OFFSETS,
+    )
+    just_below = oracle_evaluate(
+        "strict_boundary_just_below",
+        recoil_rows,
+        response_rows,
+        just_below_transform,
+    )
+    at_drift_transform = (
+        (
+            Fraction(1) + DRIFT_UPPER_BOUND / 2,
+            Fraction(1),
+            Fraction(1),
+        ),
+        (Fraction(1),) * 4,
+        ZERO_OFFSETS,
+    )
+    at_drift = oracle_evaluate(
+        "drift_boundary_equality",
+        recoil_rows,
+        response_rows,
+        at_drift_transform,
+    )
+    above_drift_transform = (
+        (
+            Fraction(1) + (DRIFT_UPPER_BOUND + epsilon) / 2,
+            Fraction(1),
+            Fraction(1),
+        ),
+        (Fraction(1),) * 4,
+        ZERO_OFFSETS,
+    )
+    above_drift = oracle_evaluate(
+        "drift_boundary_above",
+        recoil_rows,
+        response_rows,
+        above_drift_transform,
+    )
+    check(
+        "D strict-boundary equality is DRIFT while just below is ACCEPT",
+        equality["largest_residual"] == "3/10000000000"
+        and equality["label"] == "DRIFT"
+        and just_below["label"] == "ACCEPT",
+        {"at_boundary": equality, "just_below": just_below},
+    )
+    check(
+        "D drift-boundary equality is DRIFT while just above is REJECT",
+        at_drift["largest_residual"] == "1/1000000"
+        and at_drift["label"] == "DRIFT"
+        and above_drift["label"] == "REJECT",
+        {"at_boundary": at_drift, "above": above_drift},
+    )
+
+    mutated_payload = deepcopy(payload)
+    mutated_payload["provenance"]["source_closure_sha256"][SOURCE_PATHS[0]] = "0" * 64
+    check(
+        "E in-memory provenance mutation is detected",
+        mutated_payload["provenance"]["source_closure_sha256"]
+        != actual_source_sha,
+        {"mutated_path": SOURCE_PATHS[0]},
+    )
+
+    primary_run = run_primary()
+    certificate = primary_run["certificate"]
+    check(
+        "F clean primary subprocess exits with no FAIL lines",
+        primary_run["exit_code"] == 0
+        and not primary_run["fail_lines"]
+        and primary_run["stderr"] == "",
+        {
+            "exit_code": primary_run["exit_code"],
+            "fail_lines": primary_run["fail_lines"],
+            "stderr": primary_run["stderr"],
+        },
+    )
+    check(
+        "F primary certificate has the exact support schema boundary",
+        isinstance(certificate, dict)
+        and certificate.get("artifact_kind")
+        == "conditional_software_regression_comparator"
+        and certificate.get("scope")
+        == {
+            "candidate_interface": "none; transforms fixture outputs only",
+            "classification_labels": "local software conventions",
+            "scientific_authority": "none",
+        }
+        and certificate.get("fixture_sha256") == fixture_sha,
+        certificate.get("scope") if isinstance(certificate, dict) else certificate,
+    )
+    check(
+        "F primary evaluations match the independent exact oracle",
+        isinstance(certificate, dict)
+        and certificate.get("evaluations") == oracle,
+        {
+            "oracle": oracle,
+            "primary": certificate.get("evaluations")
+            if isinstance(certificate, dict)
+            else None,
+        },
+    )
+    check(
+        "F primary strict-boundary probe matches the independent oracle",
+        isinstance(certificate, dict)
+        and certificate.get("strict_boundary_probe") == equality,
+        {
+            "oracle": equality,
+            "primary": certificate.get("strict_boundary_probe")
+            if isinstance(certificate, dict)
+            else None,
+        },
+    )
+
+    final_source_sha = {
+        path: sha256_path(ROOT / path) for path in SOURCE_PATHS
+    }
+    check(
+        "G fixture, primary, and pinned sources remain stable during execution",
+        sha256_path(ROOT / FIXTURE_PATH) == fixture_sha
+        and sha256_path(ROOT / PRIMARY_PATH) == PRIMARY_SHA256
+        and final_source_sha == expected_source_sha,
+        {
+            "fixture_stable": sha256_path(ROOT / FIXTURE_PATH) == fixture_sha,
+            "primary_stable": sha256_path(ROOT / PRIMARY_PATH) == PRIMARY_SHA256,
+            "source_closure_stable": final_source_sha == expected_source_sha,
+        },
+    )
+
+    output = {
+        "artifact_kind": "independent_conditional_software_regression_check",
+        "fail": FAIL,
+        "fixture_sha256": fixture_sha,
+        "note_path": NOTE_PATH,
+        "oracle_evaluations": oracle,
+        "pass": PASS,
+        "primary_sha256": PRIMARY_SHA256,
+        "runtime_sec": round(time.monotonic() - started, 6),
+        "source_closure_count": len(SOURCE_PATHS),
+        "threshold_probes": {
+            "drift_above": above_drift,
+            "drift_equality": at_drift,
+            "strict_below": just_below,
+            "strict_equality": equality,
+        },
+    }
+    print(json.dumps(output, sort_keys=True, separators=(",", ":")))
     return 1 if FAIL else 0
 
 

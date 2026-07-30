@@ -177,6 +177,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "source_acceptance_harness_support_note_2026-07-28": [
         "scripts/frontier_source_acceptance_harness_independent_check_2026_07_28.py",
     ],
+    # This meta support package's exact-rational checker imports neither the
+    # primary nor the mutable Cycle-320/322 source modules. Expose the
+    # separately executable checker beside the primary; both runners declare
+    # the committed fixture and its complete pinned source closure.
+    "response_comparison_harness_cycle749_support_note_2026-07-28": [
+        "scripts/frontier_cycle749_response_harness_independent_check_2026_07_28.py",
+    ],
     # This bounded comparator's independent integer reconstruction deliberately
     # imports neither the primary nor its Fraction-based implementation.
     # Expose that sibling checker to the restricted audit packet explicitly.

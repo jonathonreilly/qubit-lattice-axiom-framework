@@ -1,0 +1,111 @@
+{
+  "fixture_kind": "conditional_software_regression_fixture",
+  "normalization_and_supplies": {
+    "cycle320": "The common supplied sin(theta)^2 factor is removed; rows are normalized dimensionless coefficients conditional on the supplied vertex and direction/reversal convention.",
+    "cycle322": "Tables inherit BETA=-0.3, sizes L=3,4,6, and the supplied source law, preparation, update factors, finite geometry, and completion choices.",
+    "scientific_authority": "none"
+  },
+  "provenance": {
+    "source_closure_sha256": {
+      "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+      "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+      "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+      "scripts/carried_internal_species_source_field_ledger_repair_2026_07_17.py": "5f8eb68522fdcc7267d10a8d0bfb8ea099696a165d822464671b41791426caf1",
+      "scripts/carried_source_recurrent_tagged_block_cycle316_2026_07_18.py": "87830a6aa8d05787d8e4f81bdf21ef1d92a8ad0252b9498000fb27c7ff700d65",
+      "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+      "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py": "dd955ce629cde5e225b625be89f5f71045d688083a032b7bf104efa9b3f1bb34",
+      "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+      "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+      "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+      "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+      "scripts/physical_cycle269_coherent_cubic_pair_orbit_2026_07_17.py": "a5998584cdc19612c11c5b70399183ea3fa5c3f99d60f12aa989dbd3a87bbcd0",
+      "scripts/physical_cycle269_coin_stream_contact_common_refinement_cycle304_2026_07_17.py": "39c60c3ca2e7525a3a42f058df02a4b96e63f2bde6d54c042a5ec95a4ff3f9c6",
+      "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py": "03786effa03eae50930ca0bfa14c881276df8bd6bdba83b6d7a893cffe1fe747",
+      "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py": "4495bf39e1e2661866501e377b8ec1aefff656e261e428fa5b6738f73b49699c",
+      "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py": "3e970b2c84ebe891d36c132cd99d716ceb20b596cea89729f06ed8950c7a847c",
+      "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py": "cb6de428c5054ea9415a59bab75d36c693c65d8070df30a6a0bbc2a926f3f4e4",
+      "scripts/physical_cycle269_joint_six_mode_coin_lift_cycle302_2026_07_17.py": "393de6368fe127a8d0e85b8a52a504585b53c09fb9ddfced5fe7b9079f26af92",
+      "scripts/physical_cycle269_local_contact_intertwiner_2026_07_17.py": "ee42959d75bc09dfc7f1ce1ef4f19f50a2363b5d142efd8f5f8ebb20519bef3f",
+      "scripts/physical_cycle269_local_fock_extension_cycle312_2026_07_18.py": "0aaab171ac23b28d8e6daa583e2e256bc872f971ec7f282898edea726d96ccd8",
+      "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py": "52c18f96a1f8db9b79e4d0fba5ff76905170e6a8dc8c3e818fdf69984a1778c3",
+      "scripts/physical_cycle269_position_growing_recurrent_compiler_cycle307_2026_07_17.py": "5c2030ef6a33906792307710a9fbfea02f0551574962c6e60cd04c42e5a62a36",
+      "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py": "95820817eaf883040aae96531f1afd4fe7a90569a43215d226cf44dce9a1cc09",
+      "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py": "5310ee8e19a55694f7a11ccf013c696b16cdb37961c5ade41ed316b27238bab1",
+      "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+      "scripts/proper_cubic_recoil_balanced_carried_source_cycle318_2026_07_18.py": "3c1575c99622c0874ab42730494d615fbe1a2b867975e5bf048fd2a4a8af9d56",
+      "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+      "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+      "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+      "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
+      "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011",
+      "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py": "c7b8673eb1a0dced08131820caa1fb2400fc8d1f73cfe2cddf5f8a28f9045d35"
+    },
+    "source_scope": "Current Cycle-320/322 Python source closure; hashes establish byte identity only and confer no scientific authority."
+  },
+  "recoil_rows": [
+    {
+      "auxiliary": ["1", "0", "0"],
+      "direction_index": 0,
+      "matter": ["-2", "0", "0"],
+      "mediator": ["1", "0", "0"]
+    },
+    {
+      "auxiliary": ["-1", "0", "0"],
+      "direction_index": 1,
+      "matter": ["2", "0", "0"],
+      "mediator": ["-1", "0", "0"]
+    },
+    {
+      "auxiliary": ["0", "1", "0"],
+      "direction_index": 2,
+      "matter": ["0", "-2", "0"],
+      "mediator": ["0", "1", "0"]
+    },
+    {
+      "auxiliary": ["0", "-1", "0"],
+      "direction_index": 3,
+      "matter": ["0", "2", "0"],
+      "mediator": ["0", "-1", "0"]
+    },
+    {
+      "auxiliary": ["0", "0", "1"],
+      "direction_index": 4,
+      "matter": ["0", "0", "-2"],
+      "mediator": ["0", "0", "1"]
+    },
+    {
+      "auxiliary": ["0", "0", "-1"],
+      "direction_index": 5,
+      "matter": ["0", "0", "2"],
+      "mediator": ["0", "0", "-1"]
+    }
+  ],
+  "response_rows": [
+    {
+      "L": 3,
+      "matrix": [
+        ["0.7712291018346235", "0.0006446410419510052"],
+        ["0.0006446410419510054", "0.7712291018346235"]
+      ]
+    },
+    {
+      "L": 4,
+      "matrix": [
+        ["0.7712291018346235", "0.0006446410419510052"],
+        ["0.0006446410419510054", "0.7712291018346235"]
+      ]
+    },
+    {
+      "L": 6,
+      "matrix": [
+        ["0.7712291018346235", "0.0006446410419510052"],
+        ["0.0006446410419510054", "0.7712291018346235"]
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "thresholds": {
+    "drift_upper_bound": "0.000001",
+    "strict_upper_bound": "0.0000000003"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle788_extension_independent_check_2026_07_28.txt": "584a1f2f9783a249adef8cc1e2b9379b2fef387a8b4134f7074c91cbfe4f6c46",
+      "frontier_cycle788_selector_scope_extension_2026_07_28.txt": "fe0a9ccba53598abfdad45d9c538c58fc192451478488ec915c5a751d93153b1"
+    },
+    "note": {
+      "path": "docs/SELECTOR_SCOPE_EXTENSION_CYCLE788_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "07691a021a3a668dbaf6801e2c8f2b35a96da571d1acce130e367e682ab560b7"
+    },
+    "runners": {
+      "frontier_cycle788_extension_independent_check_2026_07_28.py": "345ae7c423c529b080ce87647909472453f64119282aa41b8aa4ffbecbf4286e",
+      "frontier_cycle788_selector_scope_extension_2026_07_28.py": "5af27fd61c20fe3b25e9a172b63339d5fd4f5112631fe6d31c6e0fa95a7486f1"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "constructor": "(c) mixed \u2014 general logical constructor, hard-coded physical fixtures (the scope ceiling was a fixture list, not a law)",
+    "exchange": "v1 EXTENDED_WITH_SUPPLIES at bank 3 -> checker SUPPLY_SELECTS + bank-1 admission finding -> v2 adopts both (8 events; honest demotion to EXTENDED_WITH_SELECTING_SUPPLIES); checker re-frozen for the v2 admission shape",
+    "extension": "bank 1 (2 epochs; found by the checker after v1 skipped it) + bank 3 (6 epochs) = 8 new selector events, all unique survivors; bank-2 identity control exact",
+    "fixed_supplies": "the seven declared generalization supplies (classified); everything Cycle-719/750 declare",
+    "meaning": "enlarging the event family further is enumeration; deriving the convention layer away (or grounding it physically) is the real remaining question \u2014 now variation-tested supply-by-supply",
+    "not_derived": "the selecting conventions' derivation; the E0/E1 verdict (8 events do not decide it)",
+    "outcome": "EXTENDED_WITH_SELECTING_SUPPLIES",
+    "supply_census": "7 supplies, 38 variations: the 3 NEW physical-fixture supplies NEUTRAL; 3 INHERITED supplies SELECT \u2014 and the landed 38-epoch family rests on the same selecting conventions (selecting_supplies_are_inherited true; landed_scope_convention_layer true)"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 788,
+  "date": "2026-07-30",
+  "result": {
+    "convention_layer": "censused (extends to the landed 38)",
+    "new_events": 8,
+    "outcome": "EXTENDED_WITH_SELECTING_SUPPLIES",
+    "supplies": "3 inherited-selecting / 4 neutral (38 variations)"
+  },
+  "status": "CYCLE788_SELECTOR_SCOPE_EXTENSION_PASS"
+}

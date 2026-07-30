@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR14-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle814_deep_silence_probe_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle814_probe_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 814,
+  "files": {
+    "docs/DEEP_SILENCE_PROBE_CYCLE814_BOUNDED_THEOREM_NOTE_2026-07-28.md": "5c2a36c5fb8263ad86bd39a1f8d5e0856450f6149f66ccb6b08774da2865af3c",
+    "logs/runner-cache/frontier_cycle814_deep_silence_probe_2026_07_28.txt": "521e1217d0e36440220fb6226e4872638dbe0abfda3df36986337a06acf4e89c",
+    "logs/runner-cache/frontier_cycle814_probe_independent_check_2026_07_28.txt": "f9a2f76a76f03da074d58abef038d423c62503fcf69e0b649c4180d80031da79",
+    "scripts/frontier_cycle814_deep_silence_probe_2026_07_28.py": "f023d10784506e0c9ffbb39b17c3f120af78f377f27c5dab93de9a9aebaa98c0",
+    "scripts/frontier_cycle814_probe_independent_check_2026_07_28.py": "8289a52e27ed3af889923ff51dddfd1ffa0a66864510af0604eed4dc9faa0bf9"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "1,572,864 transitions with coverage accounting; family census now 6 transients / 14 certified cycles / 184 open",
+    "cross-stratum period regularity: 4464 recurs from the k<=3 late cycles",
+    "checker: minimal period (29 divisors rejected); 8 open keys re-swept null"
+  ],
+  "verdicts": [
+    "complete 24-key sweep to T=65536; ZERO first-clean events",
+    "TWO k=4 forever-nonclean cycles, exact minimal period 4464 \u2014 (4,(0,2,4,7),1) and (4,(0,2,4,8),1)",
+    "checker CONFIRMED_ON_DECLARED_INDEPENDENT_SCOPE"
+  ]
+}

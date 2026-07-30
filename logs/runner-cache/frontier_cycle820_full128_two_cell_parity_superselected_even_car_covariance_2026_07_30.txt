@@ -1,3 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30.py
+runner_sha256: 74334599a249a88a6ba60068c935fd3b0e60c1e62989c91406fca5d992a52c18
+input_fingerprint_sha256: 8b5cb6d393d95fabbe3b51ec6707f40e176185010165f7ab41a84ff816cfc104
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 16.87
+status: ok
+----- stdout -----
 {
   "Cycle789_two_cell_certificate": {
     "Bell_row_commutator_failures": 0,
@@ -46,16 +55,17 @@
   "audit": "unset",
   "authority": "none",
   "boundary": {
-    "not_claimed": "coherent cross-parity transport, an odd Bell row or cocycle, a runtime frame controller, bare-input genesis, or a literal prefix-plus-recurrent-G executor",
+    "not_claimed": "coherent cross-parity transport, an odd Bell row or cocycle, a parity-conserving correction dilation, a runtime frame controller, bare-input genesis, or a literal prefix-plus-recurrent-G executor",
     "parity_superselection": "the certificate acts on the 23-row even algebra and is independent of a chosen total-parity value"
   },
   "checks": {
     "Cycle655_source_action_and_Choi_close": true,
     "Cycle789_two_cell_rank23_channel_is_exact": true,
     "all_13248_signed_even_Bell_products_close": true,
-    "all_even_rows_commute_with_total_parity": true,
+    "all_even_observable_rows_commute_with_total_parity": true,
     "all_frame_origin_even_graph_rows_close": true,
     "all_product_origin_even_graph_rows_close": true,
+    "correction_parity_exchange_import_is_exposed": true,
     "every_Bell_sign_mutation_is_detected": true,
     "every_correction_deletion_is_detected": true,
     "landed_import_firewall": true,
@@ -101,20 +111,39 @@
     "correction_deletions_tested": 23,
     "minimum_Bell_ancilla_sign_mutation_failures": 1,
     "minimum_correction_deletion_failures": 2,
+    "parity_even_correction_rows": 11,
+    "parity_odd_correction_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "parity_odd_correction_rows": 12,
     "rank": 23,
     "sign_mutation_binary_failures": 0
   },
   "input_sha256": {
-    "docs/FULL128_TWO_CELL_PARITY_SUPERSELECTED_EVEN_CAR_COVARIANCE_CYCLE820_BOUNDED_THEOREM_NOTE_2026-07-30.md": "4a1d477d43d0caa41b285a6695732216decb10a3a1e698b49433cf485e76d562",
+    "docs/FULL128_TWO_CELL_PARITY_SUPERSELECTED_EVEN_CAR_COVARIANCE_CYCLE820_BOUNDED_THEOREM_NOTE_2026-07-30.md": "652f80e3b6c11567b8b4df487297c5443bfcfbc541eff9b5dce19a587ad6e1c7",
     "scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py": "102f8bc31e60fd4a452a1cfab176129f922665e10b564f0421dc26ffb11ee152",
     "scripts/frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py": "42ada20e51eaf48c14d9862ddce1467982af90874829ddac62ba75b424d45da5",
     "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py": "808c4cc2bac321dbc55aa1195d0768e77ee54cf63432ed04b277cd0ceeb0993c",
     "scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py": "6877d532aaa1c9a97358ce2dfa2e26b1264c1f5a8ef477c217e9cc5a16c8d205",
     "scripts/frontier_cycle789_three_register_even_car_channel_2026_07_30.py": "2e2dd0a5edc502167fba6216e5ac5a4f76ac957e6da39cde6116c931d5f6734d",
-    "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30.py": "f43cdfe556f0826b04ce1df4fcfaceef009ba7e1c3b9ca437cc6489bab3425d3",
-    "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_independent_2026_07_30.py": "62aeb59b2e0cb186d4c8a3e49bef6683dc2f82b2557eead35779edb60d56f247",
+    "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30.py": "74334599a249a88a6ba60068c935fd3b0e60c1e62989c91406fca5d992a52c18",
+    "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_independent_2026_07_30.py": "1669f11b6efc1a60c3a8d5f21a71775bcbaef0dba733204b4904ece84c0845fa",
     "scripts/frontier_full128_cycle_encoder_2026_07_24.py": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
     "scripts/frontier_full128_two_cell_even_car_frame_core_2026_07_30.py": "e8ad6c2c6c5a3eb1cbb36c4711a4b9a585ee4d564c0f89cb56d81604addfd2a0"
   },
   "status": "PASS"
 }
+
+----- stderr -----
+

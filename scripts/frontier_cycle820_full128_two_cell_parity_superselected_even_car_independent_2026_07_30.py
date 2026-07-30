@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Independent two-cell parity-superselected even-CAR checker.
 
-This runner deliberately does not import the Cycle-813 construction, a new
+This runner deliberately does not import the exploratory construction, a new
 primary/core module, or any scratch runner.  Landed modules provide only the
 two-cell fixture and its signed proper-cubic generator images.  All Pauli
 arithmetic, image application, GF(2) solving, stabilizer evolution, marginal
@@ -41,7 +41,11 @@ AUDIT_INPUT_PATHS = (
     "docs/FULL128_TWO_CELL_PARITY_SUPERSELECTED_EVEN_CAR_COVARIANCE_CYCLE820_BOUNDED_THEOREM_NOTE_2026-07-30.md",
     "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30.py",
     "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_independent_2026_07_30.py",
-) + IMPLEMENTATION_IMPORT_PATHS
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py",
+    "scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py",
+)
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 SHAPE = (2, 1, 1)
 ZERO = (0, 0, 0)
@@ -559,6 +563,8 @@ def exhaustive_channel_mutations(fixture, rows, frames) -> dict[str, object]:
     sign_tests = sign_undetected = 0
     minimum_correction_failure = None
     minimum_sign_failure = None
+    parity_odd_correction_counts = []
+    parity_odd_correction_indices = None
     per_frame = []
 
     for frame_id, frame in enumerate(frames):
@@ -567,6 +573,14 @@ def exhaustive_channel_mutations(fixture, rows, frames) -> dict[str, object]:
         images = physical_images(fixture, target, frame, target_seed)
         physical = tuple(apply_images(row, images) for row in rows["physical"])
         duals, dual_report = private_duals(physical, q)
+        matter_parity = (0, 0, (1 << fixture.matter_qubits) - 1)
+        local_parity_odd_indices = tuple(
+            index for index, correction in enumerate(duals)
+            if anticommutes(correction, matter_parity)
+        )
+        parity_odd_correction_counts.append(len(local_parity_odd_indices))
+        if parity_odd_correction_indices is None:
+            parity_odd_correction_indices = local_parity_odd_indices
         dual_solve_contradictions += dual_report["solve_contradictions"]
         dual_rank_failures += dual_report["solve_rank_failures"]
         dual_one_hot_failures += dual_report["one_hot_failures"]
@@ -634,6 +648,8 @@ def exhaustive_channel_mutations(fixture, rows, frames) -> dict[str, object]:
             ),
             "correction_mutations": rank,
             "sign_mutations": rank,
+            "parity_even_correction_rows": rank - len(local_parity_odd_indices),
+            "parity_odd_correction_rows": len(local_parity_odd_indices),
             "minimum_correction_failure": local_correction_min,
             "minimum_sign_failure": local_sign_min,
         })
@@ -653,6 +669,8 @@ def exhaustive_channel_mutations(fixture, rows, frames) -> dict[str, object]:
         "Bell_sign_flips_tested": sign_tests,
         "undetected_Bell_sign_flips": sign_undetected,
         "minimum_detected_Bell_sign_failure": minimum_sign_failure,
+        "parity_odd_correction_counts": tuple(parity_odd_correction_counts),
+        "first_frame_parity_odd_correction_indices": parity_odd_correction_indices,
         "per_frame": tuple(per_frame),
     }
 
@@ -765,6 +783,11 @@ def main() -> None:
             and channel["Bell_sign_flips_tested"] == 552
             and channel["undetected_Bell_sign_flips"] == 0
             and channel["minimum_detected_Bell_sign_failure"] > 0
+        ),
+        "correction_parity_exchange_import_is_exposed": (
+            channel["parity_odd_correction_counts"] == (12,) * 24
+            and channel["first_frame_parity_odd_correction_indices"]
+            == tuple(range(6)) + tuple(range(11, 17))
         ),
         "opposite_odd_extensions_have_identical_even_restriction": (
             odd["even_algebra_rank"] == 23

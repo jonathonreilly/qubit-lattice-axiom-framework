@@ -87,6 +87,17 @@ def two_cell_hostile_controls(atlas) -> dict[str, object]:
         baseline,
         width,
     )
+    matter_parity = E.Pauli(
+        z=(1 << obj["fixture"].matter_qubits) - 1
+    )
+    parity_odd_correction_indices = tuple(
+        index for index, correction in enumerate(obj["corrections"])
+        if B.M.symplectic(
+            correction.symplectic(q),
+            matter_parity.symplectic(q),
+            q,
+        )
+    )
 
     deletion_rows = []
     for deleted_index in range(rank):
@@ -132,6 +143,9 @@ def two_cell_hostile_controls(atlas) -> dict[str, object]:
         "rank": rank,
         "baseline_binary_failures": baseline_binary,
         "baseline_signed_failures": baseline_signed,
+        "parity_even_correction_rows": rank - len(parity_odd_correction_indices),
+        "parity_odd_correction_rows": len(parity_odd_correction_indices),
+        "parity_odd_correction_indices": parity_odd_correction_indices,
         "correction_deletions_tested": len(deletion_rows),
         "correction_deletions_detected": sum(
             binary + signed > 0 for binary, signed in deletion_rows
@@ -611,7 +625,7 @@ def main() -> None:
             and even_Bell_product_binary_failures == 0
             and even_Bell_product_signed_failures == 0
         ),
-        "all_even_rows_commute_with_total_parity": (
+        "all_even_observable_rows_commute_with_total_parity": (
             frame_parity_comparisons == 2 * 23 * 24 * 8
             and product_parity_comparisons == 2 * 23 * 24 * 24 * 8
             and frame_parity_commutator_failures == 0
@@ -628,6 +642,12 @@ def main() -> None:
             hostile["Bell_ancilla_sign_mutations_tested"] == 23
             and hostile["Bell_ancilla_sign_mutations_detected"] == 23
             and hostile["minimum_Bell_ancilla_sign_mutation_failures"] > 0
+        ),
+        "correction_parity_exchange_import_is_exposed": (
+            hostile["parity_even_correction_rows"] == 11
+            and hostile["parity_odd_correction_rows"] == 12
+            and hostile["parity_odd_correction_indices"]
+            == tuple(range(6)) + tuple(range(11, 17))
         ),
     }
 
@@ -687,8 +707,9 @@ def main() -> None:
             ),
             "not_claimed": (
                 "coherent cross-parity transport, an odd Bell row or cocycle, "
-                "a runtime frame controller, bare-input genesis, or a literal "
-                "prefix-plus-recurrent-G executor"
+                "a parity-conserving correction dilation, a runtime frame "
+                "controller, bare-input genesis, or a literal prefix-plus-"
+                "recurrent-G executor"
             ),
         },
         "input_sha256": input_hashes,

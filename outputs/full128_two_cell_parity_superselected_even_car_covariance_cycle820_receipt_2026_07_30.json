@@ -9,9 +9,9 @@
     "cycle655_encoder_sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
     "cycle720_frame_cocycle_sha256": "808c4cc2bac321dbc55aa1195d0768e77ee54cf63432ed04b277cd0ceeb0993c",
     "cycle789_channel_sha256": "2e2dd0a5edc502167fba6216e5ac5a4f76ac957e6da39cde6116c931d5f6734d",
-    "note_sha256": "4a1d477d43d0caa41b285a6695732216decb10a3a1e698b49433cf485e76d562"
+    "note_sha256": "652f80e3b6c11567b8b4df487297c5443bfcfbc541eff9b5dce19a587ad6e1c7"
   },
-  "result": "On the supplied two-cell shape (2,1,1), the full128 seven-mode input representation and landed companion channel admit an exact rank-23 parity-superselected even-CAR signed channel. All 24 proper-cubic frames, eight supplied origin sectors, and 576 ordered frame products close without choosing a total-parity value. This is not a coherent cross-parity theorem, runtime frame selector, autonomous input-genesis theorem, or common prefix/Bell/recurrent-G executor.",
+  "result": "On the supplied two-cell shape (2,1,1), the full128 seven-mode input representation embeds as a rank-13 parity-even source subalgebra into the landed 12-mode companion construction, whose parity-even observable algebra carries an exact rank-23 signed channel. All 24 proper-cubic frames, eight supplied origin sectors, and 576 ordered frame products close without choosing a total-parity value. The imported correction palette contains 11 parity-even and 12 parity-odd rows, so no gate-by-gate parity-conserving correction dilation is claimed. This is not a coherent cross-parity theorem, runtime frame selector, autonomous input-genesis theorem, or common prefix/Bell/recurrent-G executor.",
   "scope": {
     "even_observable_algebra_only": true,
     "fixed_total_parity_value_required": false,
@@ -23,26 +23,31 @@
       1,
       1
     ],
+    "source_even_rank": 13,
     "tested_even_rank": 23
   },
   "primary": {
-    "cache_sha256": "925e0d30337f4c20aa7ea2f613e90012085e1692805fbdc198748ac3d6e9816d",
+    "cache_sha256": "0ca76c60f13363c654d0bb4ed23fc7115f910e49aac805d8c66cb15a6686c395",
     "core_sha256": "e8ad6c2c6c5a3eb1cbb36c4711a4b9a585ee4d564c0f89cb56d81604addfd2a0",
     "frame_origin_graph_comparisons": 4416,
     "parity_commutator_comparisons": 220800,
+    "parity_even_correction_rows": 11,
+    "parity_odd_correction_rows": 12,
     "product_origin_graph_comparisons": 105984,
-    "script_sha256": "f43cdfe556f0826b04ce1df4fcfaceef009ba7e1c3b9ca437cc6489bab3425d3",
+    "script_sha256": "74334599a249a88a6ba60068c935fd3b0e60c1e62989c91406fca5d992a52c18",
     "signed_Bell_product_comparisons": 13248,
     "status": "PASS",
     "total_failures": 0
   },
   "independent": {
     "Bell_sign_flips_tested": 552,
-    "cache_sha256": "6166fe9c1cb57e11ad74e4ddc36e1acd8c3a880612ea4f32fe747f8178a4ee3e",
+    "cache_sha256": "2cc38ea34b8d2e35ef97a1acaff21449957f54dde987945d2d9fd9b7c4bbf1d3",
     "correction_deletions_tested": 552,
     "minimum_detected_mutation_failure": 2,
     "opposite_odd_even_restriction_mismatches": 0,
-    "script_sha256": "62aeb59b2e0cb186d4c8a3e49bef6683dc2f82b2557eead35779edb60d56f247",
+    "parity_even_correction_rows_per_frame": 11,
+    "parity_odd_correction_rows_per_frame": 12,
+    "script_sha256": "1669f11b6efc1a60c3a8d5f21a71775bcbaef0dba733204b4904ece84c0845fa",
     "status": "PASS",
     "undetected_mutations": 0
   },
@@ -50,6 +55,7 @@
     "autonomous genesis or local enforcement of parity superselection, coframe, local-center sector, encoded input, and clean ancillas",
     "lattice-wide gluing beyond the supplied two-cell placement",
     "one common-executor prefix/Bell/recurrent-update channel",
+    "gate-by-gate parity-conserving correction dilation and local genesis/reset of any parity-exchange carrier",
     "coherent cross-parity extension",
     "occurrence, renewal, fault repair, Record/Born, causal-duration, source/gravity, and prediction bridges"
   ]

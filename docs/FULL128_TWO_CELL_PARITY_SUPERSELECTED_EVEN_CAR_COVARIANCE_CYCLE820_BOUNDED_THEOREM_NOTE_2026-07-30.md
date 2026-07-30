@@ -50,10 +50,11 @@ cadence, rate, or energy.
 ## Result up front
 
 On the supplied two-cell shape `(2,1,1)`, the seven-mode/full128 input
-representation embeds into the landed three-register companion construction
-as an exact rank-23 signed stabilizer channel on the parity-even observable
-algebra. The 23 Bell generators commute with total matter parity. Their signed
-actions agree for every one of the 24 proper-cubic frames, all eight supplied
+representation embeds as a rank-13 parity-even source subalgebra into the
+landed three-register companion construction. The companion fixture has 12
+matter modes, whose parity-even observable algebra carries an exact rank-23
+signed stabilizer channel. The 23 Bell generators commute with total matter
+parity. Their signed actions agree for every one of the 24 proper-cubic frames, all eight supplied
 coframe-origin sectors, and all 576 ordered frame products.
 
 The primary comparison evaluates all
@@ -94,12 +95,19 @@ theorem neither needs nor selects an odd representative.
 ## Exact boundary
 
 This package closes the moving-frame signed covariance of the two-cell
-parity-even input/Bell algebra and its physical correction rows. It does not
-execute the full prefix, Bell circuit, and non-Clifford recurrent update in
-one common state/tableau executor. Separate landed packages establish the
-literal prefix, collision-free Bell schedule, and recurrent update; exact
-interface-packet equality among those executors is useful modular evidence,
-not a monolithic execution theorem, and is not promoted here.
+parity-even input/Bell algebra and the imported companion-register correction
+rows. It does not provide a gate-by-gate parity-conserving dilation of those
+corrections: 12 of the 23 private-dual correction rows anticommute with matter
+parity (indices 0-5 and 11-16), while 11 commute. A local parity-exchange
+carrier or another even dilation is therefore still required before those
+conditional rows are a closed fermionic physical circuit.
+
+The package also does not execute the full prefix, Bell circuit, and
+non-Clifford recurrent update in one common state/tableau executor. Separate
+landed packages establish the literal prefix, collision-free Bell schedule,
+and recurrent update; exact interface-packet equality among those executors is
+useful modular evidence, not a monolithic execution theorem, and is not
+promoted here.
 
 The 24 proper-frame templates and eight coframe-origin sectors are supplied to
 the verification. The frame loop is a covariance audit, not a physical
@@ -120,7 +128,8 @@ shared-obstruction, or axiom-pressure claim is made.
 - total-parity superselection as an observable-algebra restriction, without a
   fixed parity eigenvalue;
 - the three-register companion Choi/input/correction palette and clean typed
-  ancillas;
+  ancillas, including algebraic conditional correction rows but no declared
+  fermionic parity-exchange carrier;
 - the proper-cubic frame templates, coframe-origin sectors, signed-port chart,
   and fixed circuit order; and
 - permission to retain or trace the declared typed environments.
@@ -132,13 +141,16 @@ shared-obstruction, or axiom-pressure claim is made.
 - 13,248 direct binary and signed frame-product comparisons with zero
   failures;
 - exact signed source-role and graph-transport compatibility;
-- an explicit local physical correction family on the declared palette; and
+- an explicit companion-register correction family on the declared palette,
+  together with the exact 11-even/12-odd parity census; and
 - active all-row mutation/deletion controls plus an independent reconstruction.
 
 ### Open
 
 - one common-executor prefix/Bell/recurrent-update channel rather than exact
   modular interface composition;
+- a gate-by-gate parity-conserving correction dilation, including local genesis
+  and reset/renewal of any parity-exchange carrier;
 - autonomous genesis or local enforcement of the supplied parity SSR,
   coframe, local-center sector, encoded input, clean ancillas, and occurrence;
 - lattice-wide gluing beyond the tested two-cell placement;
@@ -152,9 +164,11 @@ shared-obstruction, or axiom-pressure claim is made.
 The primary executable detects all 23 correction deletions and all 23
 Bell-measurement sign flips. The independent checker detects all 552
 frame-resolved correction deletions and all 552 frame-resolved sign flips; its
-minimum bidirectional signed-span failure is two. It also verifies that two
-distinct odd extensions have identical restriction to the retained even
-algebra. That is a boundary diagnostic, not an odd-channel construction.
+minimum bidirectional signed-span failure is two. Both runners also expose the
+same correction-parity census in every frame: 11 commuting and 12
+anticommuting rows. The independent checker verifies that two distinct odd
+extensions have identical restriction to the retained even algebra. That is a
+boundary diagnostic, not an odd-channel construction.
 
 ## No-go discipline
 
@@ -165,8 +179,10 @@ therefore blocks any broad compiler no-go and creates no axiom pressure.
 
 ## Verdict
 
-The bounded physical-M2 input/Bell covariance problem is no longer blocked by
-a choice of global parity value or a host-side parity service on the tested
-two-cell even observable algebra. What remains is physical genesis/enforcement
-of the supplied sectors, lattice-wide gluing, and a common-executor composition
-with the recurrent update and downstream TOE interfaces.
+The bounded input/Bell covariance problem no longer requires a choice of
+global parity value or a host-side parity query on the tested two-cell even
+observable algebra. This is not yet a fully physical fermionic correction
+circuit: the exposed 12-row parity-exchange requirement, physical
+genesis/enforcement of the supplied sectors, lattice-wide gluing, and a
+common-executor composition with the recurrent update and downstream TOE
+interfaces remain open.

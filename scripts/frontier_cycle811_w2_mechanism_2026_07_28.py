@@ -54,14 +54,14 @@ EXPECTED_TARGET_SHA256 = (
     "3513b562570c8ee4723fad82900dea66e6df5933fe40ac5e06a85bc513fea213"
 )
 FROZEN_LINEAGE_PATHS = (
-    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
 )
 EXPECTED_LINEAGE_SHA256 = {
     FROZEN_LINEAGE_PATHS[0]:
-        "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+        "110827f5d018a60df61ad82ae29c36ca1b861ce428cba347a7dd64b04e9bdc88",
     FROZEN_LINEAGE_PATHS[1]:
-        "0008837e938fdc589473967763c5319aeb5fc4996bd8380d5d33c3ec61062691",
+        "b514b0e20197bb0ce5e5440b4b0c1f2a0f74a1962b127e8a4e4a2e97c8f86a1a",
 }
 
 SOURCE_POINTER = 40
@@ -87,11 +87,16 @@ SOURCE_PROTOCOL_NAMES = (
     "bank0.direction_ok",
 )
 CLEAN_SOURCE_RETURN = (1, 0, 0, 0, 0)
-NAMED_CONFLICT = "UNCLEARED_SOURCE_EMISSION_AT_CLEAN_RETURN"
-CONFLICT_RULE = (
+NAMED_CONFLICT = "SOURCE_FINALIZER_PHASE_CLOSURE_CONFLICT"
+SOURCE_EMISSION_RULE = (
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py:"
+    "source_compute_word"
+)
+FINALIZER_RETURN_RULE = (
     "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py:"
     "source_finalizer_word"
 )
+CONFLICT_RULES = (SOURCE_EMISSION_RULE, FINALIZER_RETURN_RULE)
 RULE_PROVENANCE = {
     "initial_two_A_tokens": (
         "scripts/frontier_cycle752_lawful_adjacency_attempt_2026_07_28.py:"
@@ -109,15 +114,12 @@ RULE_PROVENANCE = {
         "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py:"
         "interleaved_program,mapped_macro"
     ),
-    "source_emission": (
-        "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py:"
-        "source_compute_word"
-    ),
+    "source_emission": SOURCE_EMISSION_RULE,
     "body_mapping": (
         "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py:"
         "mapped_action"
     ),
-    "clean_source_return": CONFLICT_RULE,
+    "clean_source_return": FINALIZER_RETURN_RULE,
     "allocator_target": (
         "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py:"
         "global_allocator_word"
@@ -127,6 +129,21 @@ RULE_PROVENANCE = {
         "apply_word_int (text/AST anchor only; reimplemented here as apply_gate)"
     ),
 }
+
+
+def row_update_rule(kind: str) -> str:
+    if kind == "source":
+        return SOURCE_EMISSION_RULE
+    if kind == "finalizer":
+        return FINALIZER_RETURN_RULE
+    if kind == "cross":
+        return RULE_PROVENANCE["program_rows"]
+    return RULE_PROVENANCE["body_mapping"]
+
+
+def row_update_function(kind: str) -> str:
+    return row_update_rule(kind).rsplit(":", 1)[-1]
+
 
 # The exact frozen 752/719 two-bank fixture will be inserted in the next
 # incremental commit.  It contains only integer wire constants and X/CNOT/TOF
@@ -564,7 +581,7 @@ def rule_derivation(fixture: dict[str, object]) -> dict[str, object]:
     premature_finalizer_after = apply_word(initial, words[-1])
     return {
         "named_conflict": NAMED_CONFLICT,
-        "blocking_rule": CONFLICT_RULE,
+        "blocking_rules": CONFLICT_RULES,
         "scope": (
             "exact held two-bank, two-adjacent-token, 11-boundary rule "
             "system; no statistical or fitted premise"
@@ -590,8 +607,13 @@ def rule_derivation(fixture: dict[str, object]) -> dict[str, object]:
                 "source pointer returned; POINTER/U_TO_V/V_TO_U emission "
                 "registers absorbed; direction witness returned clean"
             ),
-            "provenance": CONFLICT_RULE,
+            "provenance": FINALIZER_RETURN_RULE,
         },
+        "clean_return_conflict_predicate": (
+            "at least one of source_pointer, bank0.pointer, bank0.u_to_v, "
+            "bank0.v_to_u, or bank0.direction_ok differs from "
+            "(1,0,0,0,0) after boundary 10"
+        ),
         "source_word_exact": words[0] == expected_source_word,
         "source_word": tuple(gate_record(gate) for gate in words[0]),
         "source_emission_equations": (
@@ -635,12 +657,13 @@ def rule_derivation(fixture: dict[str, object]) -> dict[str, object]:
             {
                 "step": 2,
                 "requires": (
-                    "a body row may act only after source_compute_word has "
-                    "created POINTER/U_TO_V and direction_ok"
+                    "the held genesis must first leave the exact fixed point "
+                    "shared by every non-source, non-finalizer body row"
                 ),
                 "update": (
-                    "all nine non-source, non-finalizer rows are exact "
-                    "identity on held genesis"
+                    "all nine body rows are exact identity on held genesis; "
+                    "source_compute_word alone creates the displayed "
+                    "POINTER/U_TO_V/direction_ok bootstrap signature"
                 ),
                 "provenance": (
                     RULE_PROVENANCE["source_emission"],
@@ -663,7 +686,7 @@ def rule_derivation(fixture: dict[str, object]) -> dict[str, object]:
                     "(1,0,0,0,0)"
                 ),
                 "update": (
-                    "source_finalizer_word is the only return/absorption row; "
+                    "source_finalizer_word is the designated clean-return row; "
                     "its exact guarded gates must run in the correct phase"
                 ),
                 "provenance": (
@@ -680,12 +703,36 @@ def rule_derivation(fixture: dict[str, object]) -> dict[str, object]:
                 ),
                 "update": (
                     "non-membership is the first dead end at depth 1; forward "
-                    "propagation realizes UNCLEARED_SOURCE_EMISSION_AT_"
-                    "CLEAN_RETURN by boundary 10"
+                    "propagation realizes the case-split "
+                    "SOURCE_FINALIZER_PHASE_CLOSURE_CONFLICT within "
+                    "boundaries 0..10"
                 ),
                 "provenance": (
                     RULE_PROVENANCE["boolean_gate_update"],
                     RULE_PROVENANCE["clean_source_return"],
+                ),
+            },
+        ),
+        "mechanism_case_split": (
+            {
+                "starts": tuple(range(1, 10)),
+                "conflict_boundary_formula": "11 - start",
+                "conflict_rule": SOURCE_EMISSION_RULE,
+                "mechanism": (
+                    "the last source row occurs after the last finalizer row; "
+                    "source_compute_word executes and leaves "
+                    "bank0.pointer=bank0.u_to_v=1 with no later "
+                    "source_finalizer_word to absorb them"
+                ),
+            },
+            {
+                "starts": (10,),
+                "conflict_boundary_formula": "10",
+                "conflict_rule": FINALIZER_RETURN_RULE,
+                "mechanism": (
+                    "the boundary-0 finalizer/source phase is premature; the "
+                    "last source_finalizer_word at boundary 10 maps every "
+                    "continuation to a non-clean five-register return tuple"
                 ),
             },
         ),
@@ -732,6 +779,64 @@ def core_experiment() -> dict[str, object]:
 
     def predecessor(state: int, first: int, second: int) -> int:
         return inverse_macro(first, inverse_macro(second, state))
+
+    def macro_microtrace(
+        incoming_states: set[int],
+        left: int,
+        right: int,
+        rule_station: int,
+    ) -> tuple[dict[str, object], ...]:
+        projections: dict[
+            tuple[
+                tuple[int, int],
+                tuple[int, ...],
+                tuple[int, ...],
+                tuple[int, ...],
+            ],
+            int,
+        ] = defaultdict(int)
+        for incoming in sorted(incoming_states):
+            for first, second in ((left, right), (right, left)):
+                before_rule = (
+                    incoming
+                    if first == rule_station
+                    else macro(first, incoming)
+                )
+                after_rule = macro(rule_station, before_rule)
+                outgoing = (
+                    macro(second, after_rule)
+                    if first == rule_station
+                    else after_rule
+                )
+                before_signature = bit_signature(
+                    before_rule,
+                    SOURCE_PROTOCOL_WIRES,
+                )
+                after_signature = bit_signature(
+                    after_rule,
+                    SOURCE_PROTOCOL_WIRES,
+                )
+                projections[
+                    (
+                        (first, second),
+                        before_signature,
+                        after_signature,
+                        bit_signature(
+                            outgoing,
+                            SOURCE_PROTOCOL_WIRES,
+                        ),
+                    )
+                ] += 1
+        return tuple(
+            {
+                "order": key[0],
+                "rule_state_before_signature": key[1],
+                "rule_state_after_signature": key[2],
+                "outgoing_source_signature": key[3],
+                "multiplicity": multiplicity,
+            }
+            for key, multiplicity in sorted(projections.items())
+        )
 
     def conditional_count(
         start: int,
@@ -785,6 +890,7 @@ def core_experiment() -> dict[str, object]:
             )
             after_boundary0 = transition(initial, first, second)
             states = {after_boundary0}
+            incoming_states_by_boundary = [{initial}]
             chain = [
                 {
                     "boundary": 0,
@@ -797,6 +903,10 @@ def core_experiment() -> dict[str, object]:
                     "applied_kinds": (
                         program[first][0],
                         program[second][0],
+                    ),
+                    "applied_update_functions": (
+                        row_update_function(program[first][0]),
+                        row_update_function(program[second][0]),
                     ),
                     "reachable_states": 1,
                     "source_signatures": (
@@ -811,6 +921,7 @@ def core_experiment() -> dict[str, object]:
                 }
             ]
             for step in range(1, RING_STATIONS):
+                incoming_states_by_boundary.append(set(states))
                 step_left = (start + step) % RING_STATIONS
                 step_right = (step_left + 1) % RING_STATIONS
                 states = {
@@ -828,6 +939,10 @@ def core_experiment() -> dict[str, object]:
                         "row_kinds": (
                             program[step_left][0],
                             program[step_right][0],
+                        ),
+                        "row_update_functions": (
+                            row_update_function(program[step_left][0]),
+                            row_update_function(program[step_right][0]),
                         ),
                         "future_orders_propagated": (
                             (step_left, step_right),
@@ -863,6 +978,94 @@ def core_experiment() -> dict[str, object]:
                 signature != CLEAN_SOURCE_RETURN
                 for signature in terminal_signatures
             )
+            if 1 <= start <= 9:
+                conflict_boundary = RING_STATIONS - start
+                conflict_rule = SOURCE_EMISSION_RULE
+                conflict_case = (
+                    "LATE_SOURCE_RULE_LEAVES_EMISSION_UNCLEARED"
+                )
+                conflict_rule_microtrace = macro_microtrace(
+                    incoming_states_by_boundary[conflict_boundary],
+                    0,
+                    1,
+                    0,
+                )
+                conflict_rule_input_digest = state_set_digest(
+                    incoming_states_by_boundary[conflict_boundary],
+                    width,
+                )
+                conflict_step_signatures = chain[
+                    conflict_boundary
+                ]["source_signatures"]
+                no_later_finalizer = all(
+                    "finalizer" not in chain[step]["row_kinds"]
+                    for step in range(
+                        conflict_boundary + 1,
+                        RING_STATIONS,
+                    )
+                )
+                conflict_step_rule_matches_trace = (
+                    "source"
+                    in chain[conflict_boundary]["row_kinds"]
+                    and conflict_rule.rsplit(":", 1)[-1]
+                        in chain[conflict_boundary][
+                            "row_update_functions"
+                        ]
+                    and len(conflict_rule_microtrace) > 0
+                    and all(
+                        record[
+                            "rule_state_after_signature"
+                        ][1:3] == (1, 1)
+                        for record in conflict_rule_microtrace
+                    )
+                    and no_later_finalizer
+                    and terminal_all_conflict
+                )
+            elif start == 10:
+                conflict_boundary = RING_STATIONS - 1
+                conflict_rule = FINALIZER_RETURN_RULE
+                conflict_case = (
+                    "PREMATURE_PHASE_THEN_FAILED_FINAL_CLEAN_RETURN"
+                )
+                conflict_rule_microtrace = macro_microtrace(
+                    incoming_states_by_boundary[conflict_boundary],
+                    9,
+                    10,
+                    10,
+                )
+                conflict_rule_input_digest = state_set_digest(
+                    incoming_states_by_boundary[conflict_boundary],
+                    width,
+                )
+                conflict_step_signatures = chain[
+                    conflict_boundary
+                ]["source_signatures"]
+                no_later_finalizer = True
+                conflict_step_rule_matches_trace = (
+                    "finalizer"
+                    in chain[conflict_boundary]["row_kinds"]
+                    and conflict_rule.rsplit(":", 1)[-1]
+                        in chain[conflict_boundary][
+                            "row_update_functions"
+                        ]
+                    and len(conflict_rule_microtrace) > 0
+                    and all(
+                        record[
+                            "rule_state_after_signature"
+                        ] != CLEAN_SOURCE_RETURN
+                        for record in conflict_rule_microtrace
+                    )
+                    and terminal_all_conflict
+                )
+            else:
+                conflict_boundary = None
+                conflict_rule = None
+                conflict_case = None
+                conflict_rule_microtrace = ()
+                conflict_rule_input_digest = None
+                conflict_step_signatures = ()
+                no_later_finalizer = None
+                conflict_step_rule_matches_trace = False
             row = {
                 "decision": decision,
                 "order": (
@@ -905,18 +1108,41 @@ def core_experiment() -> dict[str, object]:
                 "terminal_boundary": RING_STATIONS - 1,
                 "terminal_signatures":
                     tuple(sorted(terminal_signatures)),
+                "terminal_conflict_components": tuple(
+                    {
+                        "signature": signature,
+                        "mismatched_clean_return_registers": tuple(
+                            name
+                            for name, actual, required_value in zip(
+                                SOURCE_PROTOCOL_NAMES,
+                                signature,
+                                CLEAN_SOURCE_RETURN,
+                            )
+                            if actual != required_value
+                        ),
+                    }
+                    for signature in sorted(terminal_signatures)
+                ),
                 "terminal_all_violate_clean_source_return":
                     terminal_all_conflict,
+                "conflict_case": conflict_case,
+                "conflict_boundary": conflict_boundary,
+                "conflict_step_signatures":
+                    conflict_step_signatures,
+                "conflict_rule_before_after_microtrace":
+                    conflict_rule_microtrace,
+                "conflict_rule_input_state_set_sha256":
+                    conflict_rule_input_digest,
+                "no_later_finalizer_after_conflict_rule":
+                    no_later_finalizer,
+                "conflict_step_rule_matches_trace":
+                    conflict_step_rule_matches_trace,
                 "named_conflict": (
                     NAMED_CONFLICT
-                    if terminal_all_conflict
+                    if conflict_step_rule_matches_trace
                     else None
                 ),
-                "conflict_rule": (
-                    CONFLICT_RULE
-                    if terminal_all_conflict
-                    else None
-                ),
+                "conflict_rule": conflict_rule,
                 "step_by_step_trace": tuple(chain),
             }
             order_rows.append(row)
@@ -942,12 +1168,10 @@ def core_experiment() -> dict[str, object]:
                     ]
                     for row in order_rows
                 ),
-                "both_orders_reach_same_named_conflict": all(
-                    row["terminal_all_violate_clean_source_return"]
+                "both_orders_reach_named_conflict_with_case_rule": all(
+                    row["conflict_step_rule_matches_trace"]
                     and row["named_conflict"] == NAMED_CONFLICT
-                    and row["conflict_rule"] == CONFLICT_RULE
-                    and row["terminal_boundary"]
-                        == RING_STATIONS - 1
+                    and row["conflict_rule"] in CONFLICT_RULES
                     for row in order_rows
                 ),
             }
@@ -969,8 +1193,12 @@ def core_experiment() -> dict[str, object]:
         "formal_implication": (
             "For every start s in Z/11Z in this exact rule system: "
             "program[s].kind != 'source' => for each d in {0,1}, "
-            "T_s,d(genesis) not in Pre_s,1(target), and every continuation "
-            "violates CLEAN_SOURCE_RETURN by boundary 10."
+            "T_s,d(genesis) not in Pre_s,1(target).  For 1<=s<=9, "
+            "source_compute_word at boundary 11-s executes after the last "
+            "finalizer and leaves emission registers uncleared; for s=10, "
+            "source_finalizer_word at boundary 10 leaves a non-clean return.  "
+            "Thus every continuation realizes "
+            "SOURCE_FINALIZER_PHASE_CLOSURE_CONFLICT within 11 boundaries."
         ),
         "quantified_starts": tuple(row["start"] for row in dead_rows),
         "antecedent_rows": tuple(
@@ -983,25 +1211,55 @@ def core_experiment() -> dict[str, object]:
         "all_twenty_boundary0_orders_dead": all(
             row["both_boundary0_orders_dead"] for row in dead_rows
         ),
-        "all_twenty_traces_match_conflict_step_and_rule": all(
-            row["both_orders_reach_same_named_conflict"]
+        "all_twenty_traces_match_case_split_step_and_rule": all(
+            row["both_orders_reach_named_conflict_with_case_rule"]
             for row in dead_rows
         ),
         "bounded_boundary_count": RING_STATIONS,
         "first_dead_boundary": 0,
-        "conflict_realized_by_boundary": RING_STATIONS - 1,
+        "conflict_boundary_by_start": {
+            str(row["start"]): row["orders"][0][
+                "conflict_boundary"
+            ]
+            for row in dead_rows
+        },
+        "conflict_rule_by_start": {
+            str(row["start"]): row["orders"][0]["conflict_rule"]
+            for row in dead_rows
+        },
         "named_conflict": NAMED_CONFLICT,
-        "conflict_rule": CONFLICT_RULE,
+        "conflict_rules": CONFLICT_RULES,
         "target_clean_source_signature": CLEAN_SOURCE_RETURN,
     }
     sufficiency = {
-        "ruling": "SOURCE_ROW_IS_NECESSARY_NOT_SUFFICIENT",
+        "ruling": (
+            "EXISTENTIALLY_SUFFICIENT_ON_THIS_BATTERY_BUT_"
+            "NOT_MECHANISTICALLY_OR_PATHWISE_SUFFICIENT"
+        ),
         "necessary_on_complete_battery": (
             all(
                 row["successful_assignment_count"] == 0
                 for row in dead_rows
             )
             and source_row["successful_assignment_count"] > 0
+        ),
+        "existentially_sufficient_on_complete_battery": (
+            source_row["left_kind"] == "source"
+            and source_row["successful_assignment_count"] == 512
+            and all(
+                row["left_kind"] != "source"
+                and row["successful_assignment_count"] == 0
+                for row in dead_rows
+            )
+        ),
+        "mechanistically_sufficient_without_other_conditions": (
+            source_row["left_kind"] == "source"
+            and source_row["successful_assignment_count"]
+                == ASSIGNMENTS_PER_START
+        ),
+        "pathwise_sufficient_for_all_complete_orders": (
+            source_row["successful_assignment_count"]
+                == ASSIGNMENTS_PER_START
         ),
         "not_sufficient_for_boundary0_order": (
             source_row["orders"][0]["completion_count"] == 0
@@ -1026,7 +1284,8 @@ def core_experiment() -> dict[str, object]:
             "boundary 0 must put bank before source (decision 1), so the "
             "guarded bank no-ops before source emission",
             "boundary 10 must put source before finalizer (decision 1), "
-            "so the last emission is absorbed by source_finalizer_word",
+            "so source is gated off while source_pointer=0 and "
+            "source_finalizer_word executes last to restore clean return",
         ),
         "flexible_downstream_boundaries": tuple(
             row["boundary"]
@@ -1044,9 +1303,10 @@ def core_experiment() -> dict[str, object]:
             ]
         ),
         "honest_scope": (
-            "source kind removes the ten-start bootstrap obstruction, but "
-            "does not by itself supply either required source/body/return "
-            "ordering; therefore it is not a sufficiency theorem"
+            "source kind is equivalent to existential satisfiability only "
+            "on this complete 11-start table.  The rule trace uses additional "
+            "boundary-0 and boundary-10 orders, so source kind alone is not "
+            "a mechanistic or pathwise sufficiency theorem"
         ),
     }
     return {
@@ -1066,7 +1326,7 @@ def core_experiment() -> dict[str, object]:
                         "left_is_non_source",
                         "successful_assignment_count",
                         "both_boundary0_orders_dead",
-                        "both_orders_reach_same_named_conflict",
+                        "both_orders_reach_named_conflict_with_case_rule",
                         "orders",
                     )
                 }
@@ -1110,6 +1370,22 @@ def source_controls() -> dict[str, object]:
         path: sha256((ROOT / path).read_bytes()).hexdigest()
         for path in FROZEN_LINEAGE_PATHS
     }
+    lineage_required = {
+        FROZEN_LINEAGE_PATHS[0]: {"source_compute_word"},
+        FROZEN_LINEAGE_PATHS[1]: {
+            "source_finalizer_word",
+            "global_allocator_word",
+        },
+    }
+    lineage_anchors = {}
+    for path in FROZEN_LINEAGE_PATHS:
+        tree = ast.parse(
+            (ROOT / path).read_text(encoding="utf-8"),
+            filename=path,
+        )
+        lineage_anchors[path] = tuple(
+            sorted(lineage_required[path] & function_names(tree))
+        )
     required = {
         AUDIT_INPUT_PATHS[0]: {
             "initial_full_state",
@@ -1183,7 +1459,19 @@ def source_controls() -> dict[str, object]:
         "frozen_lineage_expected_sha256": EXPECTED_LINEAGE_SHA256,
         "frozen_lineage_sha256_match":
             lineage_observed == EXPECTED_LINEAGE_SHA256,
+        "frozen_lineage_function_anchors": lineage_anchors,
+        "all_frozen_lineage_function_anchors_present": all(
+            set(lineage_anchors[path]) == lineage_required[path]
+            for path in FROZEN_LINEAGE_PATHS
+        ),
+        "total_text_ast_input_files": (
+            len(AUDIT_INPUT_PATHS) + len(FROZEN_LINEAGE_PATHS)
+        ),
         "frozen_fixture_raw_sha256": EXPECTED_FIXTURE_RAW_SHA256,
+        "frozen_fixture_role": (
+            "the embedded payload is the exact transition-constant fixture; "
+            "its raw digest and the source/finalizer rule files are pinned"
+        ),
         "git_branch": branch,
         "git_head": head,
         "required_parent_f12_sha": required_parent,
@@ -1221,14 +1509,18 @@ def main() -> int:
     first = core_experiment()
     second = core_experiment()
     deterministic = first == second
-    runtime = perf_counter() - started
     controls = source_controls()
+    runtime = perf_counter() - started
     controls.update(
         {
             "deterministic_repeated_core_equal": deterministic,
             "deterministic_projection_sha256":
                 deterministic_digest(first),
             "runtime_seconds": runtime,
+            "runtime_scope": (
+                "two complete core enumerations plus all source controls; "
+                "stdout serialization excluded"
+            ),
             "runtime_limit_seconds": RUNTIME_LIMIT_SECONDS,
             "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
             "stdout_bytes": 0,
@@ -1250,14 +1542,32 @@ def main() -> int:
                 "clean_source_return_postcondition"
             ]["target_signature"] == CLEAN_SOURCE_RETURN
             and derivation["named_conflict"] == NAMED_CONFLICT
-            and derivation["blocking_rule"] == CONFLICT_RULE
+            and derivation["blocking_rules"] == CONFLICT_RULES
         ),
         "B_exact_implication_all_ten_starts_both_orders": (
             theorem["all_ten_antecedents_true"]
             and theorem["all_twenty_boundary0_orders_dead"]
             and theorem[
-                "all_twenty_traces_match_conflict_step_and_rule"
+                "all_twenty_traces_match_case_split_step_and_rule"
             ]
+            and theorem["conflict_boundary_by_start"]
+                == {
+                    str(start): (
+                        RING_STATIONS - start
+                        if start < RING_STATIONS - 1
+                        else RING_STATIONS - 1
+                    )
+                    for start in range(1, RING_STATIONS)
+                }
+            and theorem["conflict_rule_by_start"]
+                == {
+                    str(start): (
+                        SOURCE_EMISSION_RULE
+                        if start < RING_STATIONS - 1
+                        else FINALIZER_RETURN_RULE
+                    )
+                    for start in range(1, RING_STATIONS)
+                }
             and first["certificate_B"][
                 "success_counts_by_start"
             ] == EXPECTED_SUCCESS_COUNTS
@@ -1265,10 +1575,22 @@ def main() -> int:
         ),
         "C_source_necessary_not_sufficient": (
             sufficiency["ruling"]
-                == "SOURCE_ROW_IS_NECESSARY_NOT_SUFFICIENT"
+                == (
+                    "EXISTENTIALLY_SUFFICIENT_ON_THIS_BATTERY_BUT_"
+                    "NOT_MECHANISTICALLY_OR_PATHWISE_SUFFICIENT"
+                )
             and sufficiency["necessary_on_complete_battery"]
             and sufficiency[
+                "existentially_sufficient_on_complete_battery"
+            ]
+            and not sufficiency[
+                "mechanistically_sufficient_without_other_conditions"
+            ]
+            and sufficiency[
                 "not_sufficient_for_boundary0_order"
+            ]
+            and not sufficiency[
+                "pathwise_sufficient_for_all_complete_orders"
             ]
             and sufficiency[
                 "counterfactual_passes_at_exact_block_point"
@@ -1296,6 +1618,10 @@ def main() -> int:
             and controls["blocklist_active"]
             and not controls["blocked_modules_loaded"]
             and controls["frozen_lineage_sha256_match"]
+            and controls[
+                "all_frozen_lineage_function_anchors_present"
+            ]
+            and controls["total_text_ast_input_files"] == 6
             and controls["git_branch"]
                 == "physics-loop/proof-grade-blockF13-20260729"
             and controls["required_parent_is_ancestor"]

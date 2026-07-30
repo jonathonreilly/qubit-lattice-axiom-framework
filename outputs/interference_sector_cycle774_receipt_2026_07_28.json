@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle774_interference_independent_check_2026_07_28.txt": "499fc81db55d710e703a44374a6dc799b0d25a6b8c639e9cfeec23bcc84d12ff",
+      "frontier_cycle774_interference_sector_2026_07_28.txt": "6b08bd35ece44f654f74c25f743d705f98c62b33fe443203e31788e631f125bb"
+    },
+    "note": {
+      "path": "docs/INTERFERENCE_SECTOR_CYCLE774_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "c848ed278e028449038acd50c825c62aaca5a4dac33309e814a1cfc7bb70f60d"
+    },
+    "runners": {
+      "frontier_cycle774_interference_independent_check_2026_07_28.py": "e885d6cb8875efb4e6d20cb8a47483a16f1b34b750b5ce5064b0e7fceb967bd8",
+      "frontier_cycle774_interference_sector_2026_07_28.py": "2f5214633abf7bcc715c88a646ded9bd25dc3fdfbfe09785ddd12a551dc18c25"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "census": "90 coherent states (all pairs x 6 exact coefficient pairs) + 15 mixture baselines: every cross-term identically zero (exact arithmetic); checker added 60 extra states incl. (3,5),(1+i,1),(2+i,1-i),(5,-3) \u2014 all zero",
+    "consequence": "the 768 kernel's additive extension is the only behavior this vertex permits; W7 at this scope = defining rows + structural additivity; a nontrivial composite test requires the 720/721 preparation machinery (absent in this worktree, printed honestly)",
+    "fixed_supplies": "the declared coefficient family; everything Cycle-320/322/749/768/771 declare",
+    "mechanism": "matrix exhaustion (checker): 49,284 entries, 234 nonzero, branch target uniquely (REVERSE[d], d, d) per source channel \u2014 no branch cell reachable from two channels; block-additivity forced for ALL two-channel inputs",
+    "not_derived": "behavior on other landed surfaces or extended charts; the no-refit attachment completion",
+    "outcome": "INTERFERENCE_SECTOR_EMPTY_STRUCTURAL",
+    "three_channel": "checker probe: all 40 three-channel coherent inputs also exactly zero cross-terms"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 774,
+  "date": "2026-07-30",
+  "result": {
+    "cross_terms": "0 everywhere (90+15 primary; +60+40 checker)",
+    "mechanism": "(REVERSE[d], d, d) branch-target uniqueness (matrix-exhaustive)",
+    "verdict": "additivity structural"
+  },
+  "status": "CYCLE774_INTERFERENCE_SECTOR_PASS"
+}

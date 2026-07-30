@@ -177,6 +177,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "source_acceptance_harness_support_note_2026-07-28": [
         "scripts/frontier_source_acceptance_harness_independent_check_2026_07_28.py",
     ],
+    # This bounded comparator's independent integer reconstruction deliberately
+    # imports neither the primary nor its Fraction-based implementation.
+    # Expose that sibling checker to the restricted audit packet explicitly.
+    "supplied_three_label_target_apportionment_comparator_bounded_theorem_note_2026-07-30": [
+        "scripts/frontier_supplied_three_label_target_apportionment_independent_check_2026_07_30.py",
+    ],
     # Cycle 733 deliberately keeps its current-fixture reconstruction
     # independent of the primary conditional-lemma runner. Expose that
     # separately executable adversary to this claim's restricted packet.

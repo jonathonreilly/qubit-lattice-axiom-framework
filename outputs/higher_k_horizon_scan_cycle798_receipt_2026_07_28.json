@@ -1,0 +1,45 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle798_higher_k_horizon_scan_2026_07_28.txt": "2f385b29fe5acda6ddeee26fbf1aa5a64ffa9e753bb72207ae062c06804bd890",
+      "frontier_cycle798_higher_k_independent_check_2026_07_28.txt": "07631765fd340e77d22b4477de8f9e1bf5415e801d8f357ec1c9468ba4e4ff89"
+    },
+    "note": {
+      "path": "docs/HIGHER_K_HORIZON_SCAN_CYCLE798_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "f1911075a24ac931d7a184071347e9125956297a13820736a5d37f19cc493a4d"
+    },
+    "runners": {
+      "frontier_cycle798_higher_k_horizon_scan_2026_07_28.py": "f6ec49636ecb7ec09808eed7d38f2085f6145cd383c306370502c547741942b1",
+      "frontier_cycle798_higher_k_independent_check_2026_07_28.py": "71fd9e22616f80d37c108feac418bd6d0aa4744f2041f9be30924dd45b5220bc"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "the horizon bound; the 796 conventions; everything Cycle-719/736/750/758/762/784/787/790/791/796 declare",
+    "k3": "FOUR transients \u2014 first-clean moments 444, 532, 681, 1385 (each checker-verified with the landed test: nonclean below, clean exactly at); 0 cycles; 14 open",
+    "k45": "k=4 (20) and k=5 (4) entirely open through 2048 \u2014 no transients, no cycles",
+    "meaning": "the selection phenomenon spans strata (6 transients across k=2,3); k=4/5 silence is data for the eventual law",
+    "not_derived": "the law; actuality; the open keys' fates; why k=4/5 are silent",
+    "outcome": "HIGHER_K_TRANSIENTS_FOUND",
+    "residual_audit": "the landed cleanliness test is k-agnostic (checker found no silent generalization)",
+    "scan": "the 42 higher-k zero-survivor family-epochs (k=3: 18, k=4: 20, k=5: 4; 784/787 catalogs identity-controlled) to T=2048",
+    "selection": "at the earliest transient \u2014 (0,2,5) event 2 \u2014 the monitored construction selects UNIQUELY at t=444 (t=443 vetoes; window 445-450 zero survivors) \u2014 the exact-time selection extends to k=3"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 12,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 798,
+  "date": "2026-07-30",
+  "result": {
+    "k3_moments": "444, 532, 681, 1385",
+    "k45": "silent through 2048",
+    "outcome": "HIGHER_K_TRANSIENTS_FOUND",
+    "selection": "unique at t=444 (k=3)"
+  },
+  "status": "CYCLE798_HIGHER_K_HORIZON_SCAN_PASS"
+}

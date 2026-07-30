@@ -145,7 +145,7 @@ POLICY_NEGATIVE_CLASSES = {
     "conditional_wall_rationale",
 }
 ROUTE_DISPOSITIONS = {"CLOSED", "OPEN", "UNTESTED"}
-W_UNIT_NEAR_MARKER_RE = re.compile(r"(?i)(?<!\w)\w*W_+unit\w*(?!\w)")
+W_UNIT_NEAR_MARKER_RE = re.compile(r"(?i)W_+unit[^\W_]*")
 
 
 def route_class_marker_matches(route_class: str, route_semantics: str) -> bool:

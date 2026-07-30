@@ -9095,6 +9095,21 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                         "normalization_or_units", non_marker
                     )
                 )
+        independent_marker_cases = (
+            "frontier_scale_W_unitary",
+            "frontier_W_unitary_scale",
+            "frontier_normalization_preW_unit",
+            "frontier_preW_unit_dimensionful",
+            "frontier_units_W__unit",
+            "frontier_W_unit_post_units",
+        )
+        for marker_case in independent_marker_cases:
+            with self.subTest(marker_case=marker_case):
+                self.assertTrue(
+                    m.route_class_marker_matches(
+                        "normalization_or_units", marker_case
+                    )
+                )
         manifest = self._manifest()
         wall_line = (
             "N2 wall W_unit: beta-one and beta-two singleton laws share h "
@@ -9137,6 +9152,25 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "not supported by its evidenced",
             m.validate_no_go_discipline(audit, evidence_manifest=manifest) or "",
         )
+        for marker_case in independent_marker_cases:
+            with self.subTest(full_validator_marker_case=marker_case):
+                compound_marker_line = (
+                    f"N2 route {marker_case}: the independent marker remains "
+                    "evidenced"
+                )
+                manifest[stdout_path]["text"] += "\n" + compound_marker_line
+                route.update({
+                    "mechanism": compound_marker_line,
+                    "attempt": compound_marker_line,
+                    "outcome": compound_marker_line,
+                    "evidence_locator": compound_marker_line,
+                })
+                _set_no_go_scan_coverage(packet, manifest)
+                self.assertIsNone(
+                    m.validate_no_go_discipline(
+                        audit, evidence_manifest=manifest
+                    )
+                )
 
     def test_occurrence_scans_and_resolution_classes_fail_closed(self):
         m = _import("no_go_discipline_gate")

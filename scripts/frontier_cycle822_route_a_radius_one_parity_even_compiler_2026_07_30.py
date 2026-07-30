@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Cycle-822 Route A radius-one parity-even physical compiler.
 
+SUPERSEDED TYPING: this first probe charges every routed/token coordinate.
+Cycle 821 charges matter plus carrier only.  Use the fixed-type-atlas
+correction runner for the primary result and the exact legacy failure census.
+
 This runner closes two elementary-synthesis surfaces left open by Cycle 821:
 
 * the two-target controlled Pauli atom is compiled by returned nearest-
@@ -868,7 +872,14 @@ def main() -> None:
         ),
     }
     output = {
-        "status": "PASS" if all(checks.values()) else "FAIL",
+        "status": (
+            "SUPERSEDED_INVALID_FIXED_P_EXT"
+            if all(checks.values()) else "FAIL"
+        ),
+        "framework_typing_warning": (
+            "this first probe charges every routed/token coordinate; use "
+            "frontier_cycle822_route_a_fixed_type_atlas_correction_2026_07_30.py"
+        ),
         "checks": checks,
         "controlled_pair_compiler": pair,
         "dual_rail_accumulator": accumulator,
@@ -900,7 +911,7 @@ def main() -> None:
         },
     }
     print(json.dumps(output, indent=2, sort_keys=True))
-    if output["status"] != "PASS":
+    if output["status"] == "FAIL":
         raise SystemExit(1)
 
 

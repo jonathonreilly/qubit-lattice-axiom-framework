@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle797_continuation_independent_check_2026_07_28.txt": "b170be19565562899b6309c1da288498ddf306414a921a1f2d9f3ec4c11b75a1",
+      "frontier_cycle797_deep_horizon_continuation_2026_07_28.txt": "e44f1b3739b7f78680c963462a4d2e1ae3277f5b75118a1b2cc2b3ba74c8005a"
+    },
+    "carried_reference_copies": {
+      "scripts/frontier_cycle792_extended_horizon_selector_2026_07_28.py": "7f7470b3d759c84ccc0c2c6559d62448340fb8a0b0915eb98d450635a72730df",
+      "scripts/frontier_cycle794_second_selection_2026_07_28.py": "5fcb9f015b7690df833a3b3d1dc7bdc81162e066f1f25d34d420d8779c563582"
+    },
+    "note": {
+      "path": "docs/DEEP_HORIZON_CONTINUATION_CYCLE797_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "f7544eb9406ec9c1e542c551db9abc8b13b360c95112fd0ad767e37ea29b145e"
+    },
+    "runners": {
+      "frontier_cycle797_continuation_independent_check_2026_07_28.py": "d8e54436a02133728620606223b31862be6e9aa2eb7de651c54ba766cb572073",
+      "frontier_cycle797_deep_horizon_continuation_2026_07_28.py": "7ece6f7c818a4dcffb3019c610ca0861998f19cfae0287e23fe98562c1a09698"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "continuation": "the 162 open keys to T=2048 and T=4096, FULL coverage: ZERO new resolutions \u2014 the family stays 2 transients (252/371) / 12 certified cycles / 162 open",
+    "fixed_supplies": "everything Cycle-719/736/762/790/791/795 declare",
+    "hypotheses": "all 103 separator hypotheses (46 forecast vectors) survive",
+    "meaning": "the open set is deeply stable across a 16-fold horizon range; whatever law explains the transients must also explain their rarity",
+    "not_derived": "the 162 keys' fates; the content-vs-dirt ruling",
+    "outcome": "NULL_AT_4096_COVERAGE_PROVEN",
+    "supervisor_patch": "absolute pinned paths in the audit tuple materialized as worktree-relative copies; tuple patched; checker pin re-frozen; all re-verified",
+    "verification": "checker re-swept 162/162 with its own evolution, the landed test, and its own cycle-hashing: nothing missed or spurious; transition accounting 165,888 + 331,776 = 497,664; the 12 cycles persist; the transients do not reappear"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 797,
+  "date": "2026-07-30",
+  "result": {
+    "coverage": "162/162 proven (497,664 evaluations)",
+    "family": "2/12/162 unchanged",
+    "hypotheses": "103 survive",
+    "outcome": "null at 2048 and 4096"
+  },
+  "status": "CYCLE797_DEEP_HORIZON_CONTINUATION_PASS"
+}

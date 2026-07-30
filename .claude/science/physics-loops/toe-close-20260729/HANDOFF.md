@@ -72,3 +72,15 @@ Next-campaign queue REORDERED by the ruling:
    now formally the weights question; 763/765 data + the
    family-winning bar.
 3. (unchanged) W7 response law; b>=7 anchors; W2 adjacency ordering.
+
+## CORRECTION to the post-close update (supersedes it)
+
+The "owner ruling" framing was wrong — nothing was ruled; the existing
+axioms already cover it, and the supervisor's totality reading was a
+misreading (records are NOT forced by sites or by admissible
+possibilities). The #5753 proposal is WITHDRAWN (premise error); its
+censuses stand as data. Owner item 1 is closed as no-action-needed.
+Queue correction: item 1 of the reordered queue loses its claimed
+axiom backing — the multi-source acceptance-law scope question is an
+ordinary open derivation (both readings live); item 2 (the weights
+derivation, W6) stands as stated.

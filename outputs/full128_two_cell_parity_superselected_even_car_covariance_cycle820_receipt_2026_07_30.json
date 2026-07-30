@@ -5,7 +5,7 @@
   "cycle": 820,
   "date": "2026-07-30",
   "dependency_pins": {
-    "base_commit": "171c05a22866ba45f2281e24a7b189ac9a4891e9",
+    "base_commit": "93d5a5e4daa7382ddbde52fa933e5c6a74649e49",
     "cycle655_encoder_sha256": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
     "cycle720_frame_cocycle_sha256": "808c4cc2bac321dbc55aa1195d0768e77ee54cf63432ed04b277cd0ceeb0993c",
     "cycle789_channel_sha256": "2e2dd0a5edc502167fba6216e5ac5a4f76ac957e6da39cde6116c931d5f6734d",

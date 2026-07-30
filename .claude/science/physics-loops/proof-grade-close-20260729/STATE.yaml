@@ -21,6 +21,16 @@ checkpoints:
       - "WT3 blockR2 Cycle 771 (bdnqwopbr): verify the 768 composite-channel prediction by direct firewalled simulation on the landed U320 surface; VERIFIED/REFUTED both first-class"
       - "WTFIX blockC8 Cycle 772 (bsj0bdixk): E0/E1 per-scope failure at scale — frozen assignment, generator-uniform ensemble ladder, SAMPLE/MECHANISM/MIXED verdict"
       - "WT2 blockP2 Cycle 773 (b2vqreoyz): refuse-all completion (Model C) vs the full retained battery — is a resolution fact's EXISTENCE forced? leg-1 existence probe"
+  - at: "wave-2 verified+shipped"
+    prs:
+      - "#5776 blockR2 Cycle 771: prediction VERIFIED exactly on the landed vertex (all three channel pairs); checker WEAKENED it — the configuration is block-additive (supports (1,1), overlap 0), and the normalized coherent variant mismatches (half-sized): the composition convention is supplied. response_law_established stays false."
+      - "#5777 blockC8 Cycle 772: three-way exchange — v1 MECHANISM_CONSISTENT -> checker duplicate-content refutation (256x ladder = 38 selector inputs at every rung, zero new invocations, content saturates at 3,342) -> v2 novelty-gated verdict CONTENT_DEGENERATE. The 763 generator is content-bounded; E0/E1 needs new selector fixtures. Also fixed 766 prose rounding (0.2791) on #5775."
+      - "#5778 blockP2 Cycle 773: Model C refuse-all CONSISTENT (29/29; off-tie bit-identical to A/B; vacuity censused 26 substantive / 3 vacuous = the axiom-record facts). leg1_existence_forced FALSE — existence of a resolution fact is not forced; leg 1 requires physics input. Tie now has three lawful futures (alpha/beta/nothing)."
+    in_flight_at_checkpoint:
+      - "Cycle 770 v1 claimed the permanence witness (inverse refused at steps 4/128/129, EventCell survives); checker REFUTED it — hostile battery 5/26 refused; truncated reverse prefixes 6/7 mutate all 744 lock rails; both classification readings revert to unidentified. v2 honest repair in flight (WT4): battery in primary, witness withdrawn, repair target named (prefix-closed refusal or rail-guarded locking)."
+      - "Cycle 774 primary: interference sector EMPTY — 90 coherent + 15 mixture inputs all exactly zero cross-terms; mechanism: vertex branch target uniquely (REVERSE[d], d, d) preserves source labels; additivity structural for ALL two-channel inputs. Checker (matrix exhaustion + 3-channel probe) in flight (WT3)."
+      - "Cycle 775 (WT2): leg-3 candidate census — every landed-definable tie-breaking sentence, classified BOOKKEEPING/PHYSICAL/NULL by relabeling covariance; tests 767's 'distinguishes none' claim exhaustively."
+      - "Cycle 776 (WTFIX): real-novelty scale — find the F750 fixture ceiling; if enlargeable, run E0/E1 on genuinely new selector events; else print the undecidability-at-landed-scope result."
 queue_next:
   - b=7 anchor (~20 min at the 1.47B steps/s evaluator idiom)
   - k=3/4 full strata; T>64 horizons

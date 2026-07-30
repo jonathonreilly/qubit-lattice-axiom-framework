@@ -62,6 +62,7 @@ import importlib.abc
 import json
 from math import comb
 from pathlib import Path
+import subprocess
 import sys
 from time import monotonic
 
@@ -342,3 +343,632 @@ def allocation_certificate() -> dict[str, object]:
         "all_lawful": all(lawful_group_allocation(row) for row in allocations),
         "allocation_sha256": digest(allocations),
     }
+
+
+def push_allocation(
+    values: tuple[int, ...],
+    permutation: tuple[int, ...],
+) -> tuple[int, ...]:
+    if len(values) != len(permutation):
+        raise ValueError("allocation/permutation size mismatch")
+    output = [0] * len(values)
+    for source, target in enumerate(permutation):
+        output[target] = values[source]
+    return tuple(output)
+
+
+def permutation_orbits(
+    points: tuple[int, ...],
+    generators: tuple[tuple[int, ...], ...],
+) -> tuple[tuple[int, ...], ...]:
+    remaining = set(points)
+    output = []
+    while remaining:
+        start = min(remaining)
+        orbit = {start}
+        queue = deque((start,))
+        while queue:
+            point = queue.popleft()
+            for permutation in generators:
+                target = permutation[point]
+                if target not in orbit:
+                    orbit.add(target)
+                    queue.append(target)
+        ordered = tuple(sorted(orbit))
+        output.append(ordered)
+        remaining.difference_update(orbit)
+    return tuple(output)
+
+
+def lawful_full_allocation(values: tuple[int, ...]) -> bool:
+    return (
+        len(values) == len(ORIGINS)
+        and all(type(value) is int and value >= 0 for value in values)
+        and sum(values[:6]) == GROUP_TOTAL
+        and sum(values[6:]) == GROUP_TOTAL
+    )
+
+
+def origin_action_certificate(
+    allocation: dict[str, object],
+    controls: dict[str, object],
+) -> dict[str, object]:
+    """Restrict the declared G' coordinate action to the origin coordinate.
+
+    Cycle 808's declared label tuple has no origin coordinate, and its XOR
+    action is explicitly not global on binary states.  Thus no nonidentity
+    origin permutation is supplied.  On an augmented (label, origin) object,
+    the only action inherited without a new lift is the pointwise identity on
+    origin.  Every word in the ten displayed generators therefore restricts
+    to identity on the origin coordinate.
+    """
+    identity = ORIGINS
+    generators = {
+        name: identity for name in G_PRIME_GENERATORS
+    }
+    generator_permutations = tuple(generators.values())
+    orbits = permutation_orbits(ORIGINS, generator_permutations)
+    allocations = allocation["allocations"]
+    reference = (GROUP_TOTAL,) + (0,) * (GROUP_BINS - 1)
+    positive_cases = tuple(row + reference for row in allocations)
+    negative_cases = tuple(reference + row for row in allocations)
+    lawfulness_cases = 0
+    lawfulness_preserved = True
+    for permutation in generator_permutations:
+        for values in positive_cases + negative_cases:
+            lawfulness_cases += 1
+            lawfulness_preserved &= (
+                lawful_full_allocation(values)
+                and lawful_full_allocation(push_allocation(values, permutation))
+            )
+    return {
+        "G_order": G_ORDER,
+        "G_prime_order": G_PRIME_ORDER,
+        "generator_origin_permutations": generators,
+        "origin_orbits": orbits,
+        "all_orbits_singletons": all(len(orbit) == 1 for orbit in orbits),
+        "all_generator_maps_bijective": all(
+            set(permutation) == set(ORIGINS)
+            for permutation in generator_permutations
+        ),
+        "generator_lawfulness_cases": lawfulness_cases,
+        "lawfulness_preserved": lawfulness_preserved,
+        "nontrivial_origin_lift_derived": False,
+        "action_status": "POINTWISE_IDENTITY_ON_UNREACHED_ORIGIN_COORDINATE",
+        "source_basis": {
+            "G_and_F_label_actions_omit_origin":
+                controls["cycle808_action_has_no_origin_coordinate"],
+            "XOR_lift_not_global":
+                controls["cycle808_scope_excludes_global_state_action"],
+            "cycle786_origins_are_separate_twelve_point_domain":
+                controls["cycle786_origin_partition_anchors"],
+        },
+        "closure_lemma": (
+            "Each displayed generator restricts to id_O; composition and "
+            "inverse preserve id_O, so every element of generated G' fixes "
+            "the unreached origin coordinate."
+        ),
+        "honest_boundary": (
+            "No Cycle-808 map supplies a nonidentity permutation of the "
+            "twelve Cycle-786 origins.  Adding one would be a new lift, not "
+            "a consequence of G'."
+        ),
+    }
+
+
+def orbit_constant_for_group(
+    values: tuple[int, ...],
+    group_origins: tuple[int, ...],
+    orbits: tuple[tuple[int, ...], ...],
+) -> bool:
+    count_by_origin = dict(zip(group_origins, values, strict=True))
+    for orbit in orbits:
+        in_group = tuple(origin for origin in orbit if origin in count_by_origin)
+        if len({count_by_origin[origin] for origin in in_group}) > 1:
+            return False
+    return True
+
+
+def constraint_certificate(
+    allocation: dict[str, object],
+    action: dict[str, object],
+) -> dict[str, object]:
+    allocations = allocation["allocations"]
+    orbits = action["origin_orbits"]
+    positive_survivors = tuple(
+        row
+        for row in allocations
+        if orbit_constant_for_group(row, POSITIVE_ORIGINS, orbits)
+    )
+    negative_survivors = tuple(
+        row
+        for row in allocations
+        if orbit_constant_for_group(row, NEGATIVE_ORIGINS, orbits)
+    )
+    survivor_count = len(positive_survivors)
+    if action["all_orbits_singletons"]:
+        verdict = "VACUOUS"
+    elif survivor_count == 1:
+        verdict = "DETERMINED"
+    elif survivor_count < len(allocations):
+        verdict = "REDUCED"
+    else:
+        verdict = "VACUOUS"
+    return {
+        "finite_invariance_theorem": (
+            "For a finite G'-set O, a count function c:O->N satisfying "
+            "c(g.o)=c(o) for every generator is constant on each generated "
+            "orbit: equality propagates along every finite generator word."
+        ),
+        "origin_orbits": orbits,
+        "unconstrained_count_per_group": len(allocations),
+        "surviving_count_per_group": survivor_count,
+        "positive_surviving_count": len(positive_survivors),
+        "negative_surviving_count": len(negative_survivors),
+        "combined_surviving_count": (
+            len(positive_survivors) * len(negative_survivors)
+        ),
+        "positive_survivor_sha256": digest(positive_survivors),
+        "negative_survivor_sha256": digest(negative_survivors),
+        "survivors_equal_all_lawful_allocations": (
+            positive_survivors == allocations
+            and negative_survivors == allocations
+        ),
+        "explicit_survivors": (
+            positive_survivors if survivor_count <= 50 else None
+        ),
+        "verdict": verdict,
+        "finding": (
+            "G' supplies no nontrivial origin orbit, so orbit constancy adds "
+            "no equality between distinct origin counts."
+        ),
+    }
+
+
+def landed_occurrence_rows() -> tuple[tuple[object, ...], ...]:
+    """Rebuild Cycle 808's 46 label rows from lower landed machinery."""
+    rows = []
+    for bank in ALL_BANKS:
+        fixtures = S750.k_epoch_fixtures(bank)
+        for event, direction, program, before, expected in fixtures:
+            selected = S750.enforcement_lineage_selector(
+                program,
+                before,
+                expected,
+                bank,
+                tuple(range(len(program))),
+            )
+            banks, links = K719.M.unpack_state(expected, bank)
+            chain, decode_order = K719.B.decode_local_graph(banks, links)
+            cell = chain.cells[event]
+            rows.append(
+                (
+                    int(bank),
+                    int(event),
+                    tuple(map(int, direction)),
+                    int(cell.orientation),
+                    tuple(map(int, selected)),
+                    len(program),
+                    tuple(decode_order[event]),
+                )
+            )
+    return tuple(rows)
+
+
+def landed_data_certificate(
+    allocation: dict[str, object],
+    constraint: dict[str, object],
+) -> dict[str, object]:
+    rows = landed_occurrence_rows()
+    allocation_rows = tuple(row for row in rows if row[0] in ALLOCATION_BANKS)
+    full_counts = Counter(int(row[3]) for row in rows)
+    projected_counts = Counter(int(row[3]) for row in allocation_rows)
+    extra_counts = full_counts - projected_counts
+    candidate_sets = tuple(
+        POSITIVE_ORIGINS if int(row[3]) == 1 else NEGATIVE_ORIGINS
+        for row in allocation_rows
+    )
+
+    # A concrete support witness only.  Cycle 786 supplies no actual
+    # selector-to-origin join, so this is not asserted as the physical split.
+    witness_counts = Counter(min(candidates) for candidates in candidate_sets)
+    witness = tuple(witness_counts[origin] for origin in ORIGINS)
+    allocations = set(allocation["allocations"])
+    witness_survives = (
+        witness[:6] in allocations
+        and witness[6:] in allocations
+        and constraint["survivors_equal_all_lawful_allocations"]
+    )
+
+    # Exact universal landed-membership control: each of the 19 rows in a
+    # sign class admits exactly all six origins in that class.  Hence every
+    # possible landed refinement has a weak-composition vector in A.  Since
+    # the survivor set equals A, the (undetermined) actual refinement is a
+    # survivor without choosing a split convention.
+    universal_actual_membership = all(
+        (
+            len(rows) == 46,
+            full_counts == Counter({1: 23, -1: 23}),
+            len(allocation_rows) == 38,
+            projected_counts == Counter({1: 19, -1: 19}),
+            extra_counts == Counter({1: 4, -1: 4}),
+            all(tuple(row[4]) == (0,) for row in rows),
+            candidate_sets.count(POSITIVE_ORIGINS) == 19,
+            candidate_sets.count(NEGATIVE_ORIGINS) == 19,
+            constraint["survivors_equal_all_lawful_allocations"],
+            witness_survives,
+        )
+    )
+    return {
+        "full_landed_46_event_count": len(rows),
+        "full_orientation_counts": {"+1": full_counts[1], "-1": full_counts[-1]},
+        "counts_by_bank": {
+            str(bank): sum(int(row[0]) == bank for row in rows)
+            for bank in ALL_BANKS
+        },
+        "cycle786_allocation_projection_banks": ALLOCATION_BANKS,
+        "cycle786_projection_event_count": len(allocation_rows),
+        "cycle786_projection_orientation_counts": {
+            "+1": projected_counts[1],
+            "-1": projected_counts[-1],
+        },
+        "outside_cycle786_projection_orientation_counts": {
+            "+1": extra_counts[1],
+            "-1": extra_counts[-1],
+        },
+        "landed_rows_sha256": digest(rows),
+        "allocation_projection_rows_sha256": digest(allocation_rows),
+        "specific_origin_counts_landed": None,
+        "specific_origin_status": "UNDETERMINED_BY_LANDED_SURFACES",
+        "support_witness_not_claimed_actual": witness,
+        "support_witness_survives": witness_survives,
+        "actual_landed_refinement_membership": (
+            "PASS_UNIVERSALLY_ALL_LAWFUL_REFINEMENTS_SURVIVE"
+        ),
+        "universal_actual_membership": universal_actual_membership,
+        "scope_note": (
+            "The full Cycle-808 battery is 46=23+23.  Cycle 786's copied "
+            "allocation object is exactly its banks 2/5/12 projection, "
+            "38=19+19; the additional bank 1/3 rows are not silently inserted "
+            "into the 42,504-count object."
+        ),
+    }
+
+
+def build_core(controls: dict[str, object]) -> dict[str, object]:
+    allocation = allocation_certificate()
+    action = origin_action_certificate(allocation, controls)
+    constraint = constraint_certificate(allocation, action)
+    landed = landed_data_certificate(allocation, constraint)
+    allocation_summary = {
+        key: value for key, value in allocation.items() if key != "allocations"
+    }
+    return {
+        "allocation": allocation_summary,
+        "origin_action": action,
+        "constraint": constraint,
+        "landed_data": landed,
+        "verdict": constraint["verdict"],
+    }
+
+
+def git_index_blobs(paths: tuple[str, ...]) -> dict[str, str]:
+    completed = subprocess.run(
+        ("git", "ls-files", "-s", "--", *paths),
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    output = {}
+    for line in completed.stdout.splitlines():
+        metadata, path = line.split("\t", 1)
+        _mode, blob, _stage = metadata.split()
+        output[path] = blob
+    return output
+
+
+def main() -> int:
+    input_sha_before = {
+        path: file_sha256(path) for path in AUDIT_INPUT_PATHS
+    }
+    input_blob_before = {
+        path: git_blob_sha1((ROOT / path).read_bytes())
+        for path in AUDIT_INPUT_PATHS
+    }
+    indexed_pair_blobs = git_index_blobs(AUDIT_INPUT_PATHS[:4])
+    controls = source_controls()
+    first = build_core(controls)
+    second = build_core(controls)
+    input_sha_after = {
+        path: file_sha256(path) for path in AUDIT_INPUT_PATHS
+    }
+    input_blob_after = {
+        path: git_blob_sha1((ROOT / path).read_bytes())
+        for path in AUDIT_INPUT_PATHS
+    }
+    elapsed = monotonic() - START
+    deterministic = first == second
+
+    allocation = first["allocation"]
+    action = first["origin_action"]
+    constraint = first["constraint"]
+    landed = first["landed_data"]
+    certificate_a = all(
+        (
+            controls["cycle786_allocation_anchors"],
+            controls["cycle786_origin_partition_anchors"],
+            allocation["origins"] == ORIGINS,
+            allocation["orientation_groups"]
+            == {"+1": POSITIVE_ORIGINS, "-1": NEGATIVE_ORIGINS},
+            allocation["allocation_count"] == 42_504,
+            allocation["closed_form_count"] == 42_504,
+            allocation["all_lawful"],
+            all(
+                values == tuple(range(20))
+                for values in allocation["possible_values_by_origin"]
+            ),
+        )
+    )
+    certificate_b = all(
+        (
+            controls["cycle808_exact_group_anchors"],
+            controls["cycle808_action_has_no_origin_coordinate"],
+            controls["cycle808_scope_excludes_global_state_action"],
+            action["G_order"] == G_ORDER,
+            action["G_prime_order"] == G_PRIME_ORDER,
+            action["all_generator_maps_bijective"],
+            action["lawfulness_preserved"],
+            action["origin_orbits"]
+            == tuple((origin,) for origin in ORIGINS),
+            action["all_orbits_singletons"],
+            not action["nontrivial_origin_lift_derived"],
+        )
+    )
+    certificate_c = all(
+        (
+            constraint["unconstrained_count_per_group"] == 42_504,
+            constraint["surviving_count_per_group"] == 42_504,
+            constraint["positive_surviving_count"] == 42_504,
+            constraint["negative_surviving_count"] == 42_504,
+            constraint["combined_surviving_count"] == 42_504 ** 2,
+            constraint["survivors_equal_all_lawful_allocations"],
+            constraint["explicit_survivors"] is None,
+        )
+    )
+    certificate_d = all(
+        (
+            landed["full_landed_46_event_count"] == 46,
+            landed["full_orientation_counts"] == {"+1": 23, "-1": 23},
+            landed["counts_by_bank"]
+            == {"1": 2, "2": 4, "3": 6, "5": 10, "12": 24},
+            landed["cycle786_projection_event_count"] == 38,
+            landed["cycle786_projection_orientation_counts"]
+            == {"+1": 19, "-1": 19},
+            landed["outside_cycle786_projection_orientation_counts"]
+            == {"+1": 4, "-1": 4},
+            landed["support_witness_survives"],
+            landed["universal_actual_membership"],
+        )
+    )
+    certificate_e = (
+        constraint["verdict"] == "VACUOUS"
+        and action["all_orbits_singletons"]
+        and constraint["surviving_count_per_group"]
+        == constraint["unconstrained_count_per_group"]
+    )
+
+    direct_control_keys = (
+        "literal_AUDIT_INPUT_PATHS",
+        "DECLARED_INPUT_PATHS_alias",
+        "paths_worktree_relative",
+        "all_paths_exist",
+        "all_sources_parse",
+        "blocklisted_not_AST_imported",
+        "blocklisted_not_literal_dynamic_imported",
+        "blocklisted_not_loaded",
+        "runtime_blocker_installed",
+        "cycle786_allocation_anchors",
+        "cycle786_origin_partition_anchors",
+        "cycle808_exact_group_anchors",
+        "cycle808_action_has_no_origin_coordinate",
+        "cycle808_scope_excludes_global_state_action",
+    )
+    controls_base = all(
+        (
+            all(bool(controls[key]) for key in direct_control_keys),
+            all(controls["runtime_attempts"].values()),
+            input_sha_before == input_sha_after == EXPECTED_SHA256,
+            input_blob_before == input_blob_after == EXPECTED_GIT_BLOB_SHA1,
+            indexed_pair_blobs
+            == {
+                path: EXPECTED_GIT_BLOB_SHA1[path]
+                for path in AUDIT_INPUT_PATHS[:4]
+            },
+            deterministic,
+            elapsed < AUDIT_TIMEOUT_SEC,
+        )
+    )
+
+    def render(actual_stdout_bytes: int) -> tuple[str, bool]:
+        certificate_f = controls_base and actual_stdout_bytes < STDOUT_LIMIT_BYTES
+        certificates = {
+            "A_ALLOCATION_OBJECT_RECONSTRUCTED": certificate_a,
+            "B_ORIGIN_ACTION_AND_LAWFULNESS": certificate_b,
+            "C_ORBIT_CONSTRAINT_COUNTED": certificate_c,
+            "D_LANDED_DATA_COMPATIBILITY": certificate_d,
+            "E_VERDICT": certificate_e,
+            "F_CONTROLS": certificate_f,
+        }
+        lines = [
+            "BOUNDARY exact finite counts and support only; no probability or split rule",
+        ]
+        for path in AUDIT_INPUT_PATHS:
+            lines.append(
+                "AUDIT_INPUT_SHA "
+                + compact(
+                    {
+                        "path": path,
+                        "sha256": input_sha_after[path],
+                        "git_blob_sha1": input_blob_after[path],
+                        "indexed_blob_sha1": indexed_pair_blobs.get(path),
+                    }
+                )
+            )
+        lines.append("SOURCE_COMMITS " + compact(SOURCE_COMMITS))
+        lines.append(
+            "CERTIFICATE_A_ALLOCATION_OBJECT "
+            + compact(
+                {
+                    "pass": certificate_a,
+                    "origins": allocation["origins"],
+                    "orientation_groups": allocation["orientation_groups"],
+                    "lawfulness": allocation["lawfulness"],
+                    "count_per_group": allocation["allocation_count"],
+                    "closed_form": allocation["closed_form_count"],
+                    "allocation_sha256": allocation["allocation_sha256"],
+                }
+            )
+        )
+        for name, permutation in action["generator_origin_permutations"].items():
+            lines.append(
+                "ORIGIN_GENERATOR_ACTION "
+                + compact({"generator": name, "permutation": permutation})
+            )
+        lines.append(
+            "CERTIFICATE_B_ORIGIN_ACTION "
+            + compact(
+                {
+                    "pass": certificate_b,
+                    "action_status": action["action_status"],
+                    "origin_orbits": action["origin_orbits"],
+                    "lawfulness_preserved": action["lawfulness_preserved"],
+                    "lawfulness_cases": action["generator_lawfulness_cases"],
+                    "closure_lemma": action["closure_lemma"],
+                    "honest_boundary": action["honest_boundary"],
+                }
+            )
+        )
+        lines.append("ORIGIN_ORBITS " + compact(action["origin_orbits"]))
+        lines.append(
+            "CERTIFICATE_C_CONSTRAINT "
+            + compact(
+                {
+                    "pass": certificate_c,
+                    "theorem": constraint["finite_invariance_theorem"],
+                    "unconstrained_count_per_group":
+                        constraint["unconstrained_count_per_group"],
+                    "surviving_count_per_group":
+                        constraint["surviving_count_per_group"],
+                    "combined_surviving_count":
+                        constraint["combined_surviving_count"],
+                    "explicit_survivors": constraint["explicit_survivors"],
+                    "finding": constraint["finding"],
+                }
+            )
+        )
+        lines.append(
+            "SURVIVING_COUNT_PER_GROUP "
+            + str(constraint["surviving_count_per_group"])
+        )
+        lines.append(
+            "CERTIFICATE_D_LANDED_DATA "
+            + compact({"pass": certificate_d, **landed})
+        )
+        lines.append(
+            "LANDED_DATA_CONTROL "
+            + landed["actual_landed_refinement_membership"]
+        )
+        lines.append(
+            "CERTIFICATE_E_VERDICT "
+            + compact(
+                {
+                    "pass": certificate_e,
+                    "verdict": constraint["verdict"],
+                    "reason": constraint["finding"],
+                }
+            )
+        )
+        lines.append("VERDICT " + constraint["verdict"])
+        lines.append(
+            "CERTIFICATE_F_CONTROLS "
+            + compact(
+                {
+                    "pass": certificate_f,
+                    "source_controls": controls,
+                    "input_sha_stable": input_sha_before == input_sha_after,
+                    "git_blob_sha_stable": input_blob_before == input_blob_after,
+                    "copied_pairs_tracked_at_expected_blobs":
+                        indexed_pair_blobs
+                        == {
+                            path: EXPECTED_GIT_BLOB_SHA1[path]
+                            for path in AUDIT_INPUT_PATHS[:4]
+                        },
+                    "deterministic": deterministic,
+                    "first_core_sha256": digest(first),
+                    "repeat_core_sha256": digest(second),
+                    "runtime_seconds": round(elapsed, 6),
+                    "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+                    "stdout_bytes": actual_stdout_bytes,
+                    "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+                }
+            )
+        )
+        report = {
+            "cycle": 815,
+            "certificates": certificates,
+            "all_pass": all(certificates.values()),
+            "origin_orbits": action["origin_orbits"],
+            "unconstrained_count_per_group":
+                constraint["unconstrained_count_per_group"],
+            "surviving_count_per_group":
+                constraint["surviving_count_per_group"],
+            "verdict": constraint["verdict"],
+            "landed_data_control":
+                landed["actual_landed_refinement_membership"],
+            "runtime_seconds": round(elapsed, 6),
+        }
+        report["stable_report_sha256"] = digest(
+            {key: value for key, value in report.items() if key != "runtime_seconds"}
+        )
+        lines.append("SUMMARY_JSON " + compact(report))
+        lines.append(
+            "CYCLE815_PER_ORIGIN_ORBIT_CONSTRAINT_CERTIFIED"
+            if report["all_pass"]
+            else "CYCLE815_CERTIFICATE_FAILURE"
+        )
+        return "\n".join(lines) + "\n", certificate_f
+
+    stdout_bytes = 0
+    output = ""
+    certificate_f = False
+    for _iteration in range(12):
+        output, certificate_f = render(stdout_bytes)
+        new_size = len(output.encode("utf-8"))
+        if new_size == stdout_bytes:
+            break
+        stdout_bytes = new_size
+    output, certificate_f = render(stdout_bytes)
+    final_size = len(output.encode("utf-8"))
+    if final_size != stdout_bytes:
+        stdout_bytes = final_size
+        output, certificate_f = render(stdout_bytes)
+        final_size = len(output.encode("utf-8"))
+    if final_size >= STDOUT_LIMIT_BYTES:
+        raise AssertionError(("stdout bound", final_size, STDOUT_LIMIT_BYTES))
+    sys.stdout.write(output)
+    return 0 if all(
+        (
+            certificate_a,
+            certificate_b,
+            certificate_c,
+            certificate_d,
+            certificate_e,
+            certificate_f,
+            final_size == stdout_bytes,
+        )
+    ) else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

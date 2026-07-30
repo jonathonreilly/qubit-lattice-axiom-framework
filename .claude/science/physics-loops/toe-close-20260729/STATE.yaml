@@ -284,3 +284,23 @@ checkpoint_plain_reading_standing_principle: >
   supported reading. REMAINING OPEN = ordinary derivations only:
   weights (W6), response law (W7), adjacency ordering (W2), occurrence
   rate/site distribution. Nothing is blocked on interpretation.
+
+checkpoint_axiom_update_criterion: >
+  OWNER STANDARD (2026-07-29, live): "it is of course possible the
+  axioms are incomplete - but we need to prove the need for ADDITIONAL
+  CLEAR axiom content to update them." CODIFIED as the three-leg
+  axiom-update criterion: (1) REQUIREMENT — prove X is needed
+  (internal consistency or a physical fact the TOE must reproduce);
+  (2) NON-ENTAILMENT — the model-pair theorem: two completions, both
+  satisfying all four axioms + the full retained surface (approved
+  primitives, landed theorems, certificates), disagreeing on X. Route
+  failures are lemmas, never the conclusion. In-repo precedent: the
+  2026-07-04 current-surface non-entailment no-gos are the native
+  form. (3) CLEAR CONTENT — the candidate as a specific minimal
+  house-register sentence, proven to kill the model pair, with
+  nothing weaker sufficing. All three legs or no update. APPLIED: the
+  multi-source occurrence case gets the proof-form attempt (Cycle
+  767: the model-pair construction on the frozen k=3 tie — two
+  tie-break completions passing the entire retained stack while
+  disagreeing on the realized alternative = leg 2 proven at retained
+  scope; legs 1 and 3 would then be separate, explicit arguments).

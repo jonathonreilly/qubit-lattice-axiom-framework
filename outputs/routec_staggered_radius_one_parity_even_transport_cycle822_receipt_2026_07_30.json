@@ -1,0 +1,128 @@
+{
+  "artifact": "frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30.py",
+  "audit": "unset",
+  "authority": "none",
+  "base_commit": "c04e711ea660d655eff907a40f96fd345259b53f",
+  "checks_passed": 15,
+  "checks_total": 15,
+  "coframe_covariance": {
+    "fixed_laboratory_offset_detected_frames": 23,
+    "frame_origin_contexts": 192,
+    "ordered_frame_products": 576,
+    "proper_cubic_frames": 24,
+    "recompiles_atlas_in_each_frame": false,
+    "transported_program_covariance": true,
+    "translation_origins": 8,
+    "zero_failure_classes": [
+      "nearest_neighbour",
+      "palette_bijection",
+      "collision_graph",
+      "fixed_global_type_assignment",
+      "colour_transport",
+      "coordinate_product",
+      "colour_product"
+    ]
+  },
+  "compile_scope": {
+    "includes_all_recurrent_seam_semantic_factors": true,
+    "includes_bell_correction_rows": true,
+    "includes_bell_measure_rows": true,
+    "includes_pump_rows": true,
+    "includes_29_per_cell_nonseam_coin_reverse_FSWAP_contact_factors": false,
+    "reruns_one_particle_mass_fixture": false
+  },
+  "fixed_global_type_repair": {
+    "old_pairwise_certificate_withdrawn": true,
+    "pre_repair_cross_typed_coordinate_collisions": {
+      "2x1x1": 155,
+      "3x1x1": 259,
+      "3x2x2": 2035,
+      "5x3x2": 5306
+    },
+    "post_repair_cross_typed_coordinate_collisions": 0,
+    "single_coordinate_defined_P_ext_per_full_fixture": true,
+    "total_charged_route_fixed_type_failures": 0,
+    "total_elementary_global_P_ext_failures": 0,
+    "total_frozen_charged_atlas_recompile_coordinate_mismatches": 0,
+    "total_neutral_route_fixed_type_failures": 0,
+    "total_prefix_global_P_ext_failures": 0,
+    "total_untyped_primitive_coordinate_uses": 0
+  },
+  "held_metrics": [
+    {
+      "charged_coordinates": 386,
+      "collision_edges": 0,
+      "global_P_ext_sha256": "be0bae70a563bdffe6e75bf22fc78399628e0e0bc1135b08de028ac1841851b4",
+      "internal_persistent_route_hits": 0,
+      "literal_radius_one_primitives": 8822,
+      "neutral_coordinates": 1228,
+      "post_diagonal_Z_support_max": 4,
+      "prefixes_tested": 8822,
+      "route_deletions_detected": 300,
+      "route_macros": 356,
+      "shape": [2, 1, 1],
+      "source_support_max": 5,
+      "type_overlap": 0
+    },
+    {
+      "charged_coordinates": 601,
+      "collision_edges": 0,
+      "global_P_ext_sha256": "05add660f28e143fc3a8d6cffc3ce1d62feb2fb6d09a42fac800743c4b97a5fc",
+      "internal_persistent_route_hits": 0,
+      "literal_radius_one_primitives": 14360,
+      "neutral_coordinates": 2002,
+      "post_diagonal_Z_support_max": 4,
+      "prefixes_tested": 14360,
+      "route_deletions_detected": 476,
+      "route_macros": 560,
+      "shape": [3, 1, 1],
+      "source_support_max": 5,
+      "type_overlap": 0
+    },
+    {
+      "charged_coordinates": 3131,
+      "collision_edges": 0,
+      "global_P_ext_sha256": "7387e32a704632cab36d308a2db2e475a16de138e3808778fa3224249fb1ffe5",
+      "internal_persistent_route_hits": 0,
+      "literal_radius_one_primitives": 137308,
+      "neutral_coordinates": 13007,
+      "post_diagonal_Z_support_max": 16,
+      "prefixes_tested": 137308,
+      "route_deletions_detected": 3728,
+      "route_macros": 4064,
+      "shape": [3, 2, 2],
+      "source_support_max": 17,
+      "type_overlap": 0
+    },
+    {
+      "charged_coordinates": 8237,
+      "collision_edges": 0,
+      "global_P_ext_sha256": "c4afa1d65df83a7df5e4cc201fdb4817bfb501537d6ba4ce1a0116964afc63db",
+      "internal_persistent_route_hits": 0,
+      "literal_radius_one_primitives": 377226,
+      "neutral_coordinates": 33771,
+      "post_diagonal_Z_support_max": 16,
+      "prefixes_tested": 377226,
+      "route_deletions_detected": 10028,
+      "route_macros": 10868,
+      "shape": [5, 3, 2],
+      "source_support_max": 17,
+      "type_overlap": 0
+    }
+  ],
+  "local_residuals": {
+    "clean_route_FSWAP_vs_SWAP": 0.0,
+    "clean_work_accumulator": 0.0,
+    "controlled_pair": 6.312164422641715e-16,
+    "data_control_CNOT_global_P_ext": 0.0,
+    "dirty_route_FSWAP_vs_SWAP": 1.4142135623730947,
+    "FSWAP_global_P_ext": 0.0,
+    "maximum_elementary_global_P_ext": 0.0,
+    "pair_rotation_global_P_ext": 0.0,
+    "SWAP_global_P_ext": 0.0
+  },
+  "report_sha256": "6b5d14a80f9d7ae56ec6fe03f1b8428024a5576c8b4fa2da8b7732b892428978",
+  "route": "C_staggered_time_multiplexed_literal_radius_one",
+  "stage_labels_are_physical_time": false,
+  "status": "PASS"
+}

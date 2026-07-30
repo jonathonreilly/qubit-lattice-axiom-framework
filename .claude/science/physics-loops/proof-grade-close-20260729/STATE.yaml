@@ -81,6 +81,13 @@ checkpoints:
       - "#5804 blockF8 794: the SECOND selection — TWO_FOR_TWO_UNIQUE (((0,7),) at t=371; both windows one-tick; never simultaneous). Supervisor patch: git-reference string in the audit tuple -> disk copy."
     milestone: "Cycle 796 CONSTRUCTED — exact_time_law_constructed_at_scope TRUE: the continuously-monitored selector (every-boundary monitoring [781 idiom] + landed cleanliness test + first-pass acceptance) contains NO per-configuration values and reproduces both selections at exactly 252/371 over the full 176-key family, zero divergence from pre-registered predictions. Residual supply surface: cadence + cutoff. Checker in flight (the cadence attack: is station-boundary cadence unique-landed or one of several?). THE question for the axioms conversation: is this composition THE law (derivable from 'possibilities resolve' at moments) or A construction?"
     in_flight: "796-checker (byw6rmruf); 797 launching (T=4096 open-keys continuation — each resolution tests the 46 forecast vectors)"
+  - at: "wave 12 — the selection spans strata"
+    prs:
+      - "#5805 blockF9 798: HIGHER_K_TRANSIENTS_FOUND — four k=3 transients (444/532/681/1385, checker-verified); k=4/5 silent through 2048; residual test k-agnostic as landed; the monitored construction selects UNIQUELY at t=444 on (0,2,5) — the exact-time selection extends to THREE sources. Transient family: 6 across k=2,3."
+    corrections_shipped_in_flight:
+      - "796 v2: checker REFUTED v1's cadence provenance (781 monitors H/station boundaries, v1 used orbit returns; FOUR landed cadences exist) — v2 censuses all four: existence + orbit-level moments CADENCE-ROBUST; sub-orbit timing + window fine-structure SENSITIVE ((0,7) spills into orbit 372 at finer clocks). Verdict CONSTRUCTED_WITH_CADENCE_CONVENTION (robust_content_constructed true / convention_free false). Ships next."
+      - "797: null CONFIRMED at T=4096 (checker re-swept 162/162 with transition accounting 497,664; all cycles persist; all 103 hypotheses survive). Ships next."
+      - "worker-hygiene pattern this stretch: declared-path defects x3 (git-reference strings and absolute /private/tmp paths in AUDIT tuples) — supervisor materializes references to worktree-relative disk copies and patches tuples; all re-verified."
 queue_next:
   - b=7 anchor (~20 min at the 1.47B steps/s evaluator idiom)
   - k=3/4 full strata; T>64 horizons

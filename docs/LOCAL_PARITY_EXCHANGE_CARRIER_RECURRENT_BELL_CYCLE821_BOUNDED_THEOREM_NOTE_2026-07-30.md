@@ -32,6 +32,12 @@ Circuit stages, microsteps, colours, and epochs below are supplied circuit and
 verification order. They are not physical time, duration, cadence, rate, or
 energy.
 
+The carrier input is initially factorized from the channel input, and the pump
+and Bell syndrome controls begin in the declared clean, definite stabilizer
+states. On a coherent syndrome/carrier input the same circuit implements a
+controlled-`X` joint channel; the scalar conditional carrier law below is not
+claimed on that larger process domain.
+
 ## Direct scientific dependencies
 
 - the landed [Cycle-720 recurrent companion physical-M2 update and local Choi
@@ -82,16 +88,21 @@ rho_c -> X_c^r rho_c X_c^r,
 
 where `r` is the xor of the six pump and six Bell odd-row syndromes in that
 cell. Thus `X_c` is invariant while `Y_c` and `Z_c` retain `r`. The carrier is
-reusable, but it is not reset. An arbitrary carrier returns after two epochs
-exactly when the two local exchange parities xor to zero.
+reusable, but it is not reset. The two-epoch carrier channel is the identity
+for every carrier input exactly when the two local exchange parities xor to
+zero. When the xor is one, state-specific `X_c`-invariant inputs are fixed even
+though the channel is not the identity.
 
 The independent checker reconstructs the channel without importing the
-primary. It tests the 16-product density-spanning carrier inputs
+primary. Its rank-46 fixture is two disjoint channel copies that share the
+same carriers; it is not the primary executor's output-fed second epoch. It
+tests the 16-product density-spanning carrier inputs
 `{I/2,X+,Y+,Z+}^{tensor 2}`, plus Bell `Phi+` and singlet carrier states. All
-outputs have the expected rank 46 after two epochs, with zero binary, signed,
-rank, or carrier-update failures. Across all 24 proper-cubic frames and the 16
-product carrier states, 384 frame/state contexts and 552 mapped corrections
-close with zero private-duality, parity, rank, support, or channel failures.
+outputs have the expected rank 46 across the two shared-carrier copies, with
+zero binary, signed, rank, or carrier-update failures. Across all 24
+proper-cubic frames and the 16 product carrier states, 384 frame/state contexts
+and 552 mapped corrections close with zero private-duality, parity, rank,
+support, or channel failures.
 
 ## Exact parity-even gate compiler
 
@@ -148,9 +159,11 @@ reverse-FSWAP, and contact factors commute with matter parity. Each seam
 semantic factor is an exact bounded `exp(-i pi P/4)` for a parity-even physical
 Pauli `P`. On `(2,1,1)`, held `(3,1,1)`, and held `(3,2,2)`, the direct factors
 have zero parity failures, maximum support 17 M2, maximum physical Manhattan
-diameter 24, and maximum residual `7.913391346636907e-16` against the submitted
-seam unitary. The old H/CNOT decomposition is an active hostile control: it
-contains respectively 24, 48, and 912 parity-odd elementary seam prefixes.
+diameter 24, and maximum deterministic-sample phase-aligned state residual
+`7.913391346636907e-16` between the semantic factor and the submitted seam
+decomposition. The old H/CNOT decomposition is an active hostile control: it
+contains respectively 24, 48, and 912 parity-noncommuting elementary seam
+instructions.
 Replacing it by the exact semantic rotations preserves the update, but a
 nearest-neighbour parity-even synthesis of those up-to-17-M2 rotations remains
 open.
@@ -191,19 +204,15 @@ physical grading.
 
 ## Route tournament disposition
 
-- **Route A, dedicated local carrier:** positive on the declared bounded
-  domain, and the retained result of this package.
-- **Route B, borrowing an existing companion gauge register:** constructively
-  closes the low-degree two-cell and selected open-box diagnostics under
-  combined matter-plus-companion parity, but not the Cycle-820 matter-parity
-  center. A one-cell existing-register ansatz also failed on a central
-  degree-six fixture. This was a bounded route diagnostic, not a no-go and not
-  a retained theorem in this package.
-- **Route C, staggered/two-rail transport:** a collision-free two-rail geometry
-  was scoped, but literal parity-even FSWAP transport and full update execution
-  were not constructed. The route remains live.
+- **Route A, dedicated local carrier:** a positive bounded construction on the
+  declared domain, proposed in this package.
+- **Route B, borrowing an existing companion gauge register:** no Route-B
+  theorem or negative result is submitted in this package. Earlier exploratory
+  diagnostics are not used as evidence for the Route-A claim.
+- **Route C, staggered/two-rail transport:** no Route-C transport/update theorem
+  or negative result is submitted in this package. The route remains untested
+  here.
 
-The positive Route-A counterexample prevents any broad local-compiler no-go.
 No impossibility, minimum-content, shared-obstruction, or axiom-pressure claim
 is made.
 
@@ -213,6 +222,8 @@ is made.
 
 - one typed carrier M2 per coarse cell and total extended-parity
   superselection as the observable domain;
+- an initial carrier state factorized from the channel input and clean,
+  definite pump/Bell syndrome stabilizer inputs;
 - the landed O/I Choi resource, independent encoded live bank, clean pump and
   Bell syndrome banks, local center/mixed-gauge domain, and permission to
   retain the dirty carrier;
@@ -243,8 +254,8 @@ is made.
 
 - autonomous genesis and local enforcement of the carrier modes, total-parity
   domain, O/I and live resources, clean syndromes, coframe, and occurrence;
-- a parity-balanced carrier reset/renewal or a law that admits the retained
-  dirty carrier state across unbounded epochs;
+- a parity-balanced carrier reset/renewal or a law that admits the dirty
+  carrier state across unbounded epochs;
 - nearest-neighbour/radius-one synthesis and routing of the bounded Bell and
   recurrent seam rotations;
 - one monolithic dense/state executor for preparation, Bell/correction, and
@@ -261,9 +272,8 @@ The two-cell physical parity-exchange defect exposed by Cycle 820 has a
 bounded constructive solution: one local carrier M2 per cell and an exact
 parity-preserving two-target compiler. The prepared even-CAR channel now
 composes with recurrent `G` without a global parity string, fixed parity value,
-or host-side parity service. The remaining locality wall is no longer a
-generic fermionization or capacity objection; it is the sharper combination
-of carrier/resource genesis and renewal, radius-one synthesis of the bounded
+or host-side parity service. Within this submitted construction, the following
+interfaces remain open and are not claimed exhaustive or independent:
+carrier/resource genesis and renewal, radius-one synthesis of the bounded
 semantic rotations, translation-invariant occurrence, and lattice-wide
-enforcement. Those are implementation and law-supply gaps, not established
-substrate obstructions.
+enforcement. They are not established substrate obstructions.

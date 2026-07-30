@@ -1,3 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30.py
+runner_sha256: e010b4d407e38c7832ff94b8d7886bf5369e06be4eef44c01e35688f56d103bd
+input_fingerprint_sha256: 3af8ccad3e78d4d33df94075dd8087dff308eba4654619de3fccdb1fd8e4cc91
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 236.26
+status: ok
+----- stdout -----
 {
   "carrier_covariance": {
     "carrier_slot_comparisons": 384,
@@ -182,17 +191,66 @@
     "unextended_second_epoch_parity_commutator_failures": 72
   },
   "input_sha256": {
-    "docs/LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md": "ac8c497265aae91b23ba16fa788d9aafab040ce5b9a28ae0cafe8e6f7b542ef4",
+    "docs/LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md": "f7a7b1bcdf0312adb962b1d91a63af17a22116736769085853e53c1b8f06671b",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py": "717a60f45c7d7e9e354b50005fea6ace4bae7b63d74cebb48ded59546cc561f9",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py": "d5392152d322ea8f3850d0345d6caa426db22ae7f7694775b4bd6388704c18a6",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py": "a5e78e40cad0c43ee62ae887df7d84a0b895ab217ba4f3d521353e5d0b6bf95a",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py": "464e5928b7c1e46c23e4010363b6bd8ff3d0e2379c6e5ecb46891010ef47a5a4",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py": "ad9bf5febde8b58e948f4a4240791216a20d61262149469763ef387455dff52a",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py": "3a977106389428d2281ea7e0e32b65fe57f6ce33d783742b80f264f78f4f2c17",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py": "fbf434a94c8dae57ffb6e68776642e4342a91f0d39f071ee1388fcb89ff846d7",
+    "scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py": "102f8bc31e60fd4a452a1cfab176129f922665e10b564f0421dc26ffb11ee152",
+    "scripts/frontier_companion_bank_epoch_liveness_2026_07_28.py": "7216ff9668cec195e315922503fdd5f33384849c40fbe751f14241c043bb6151",
+    "scripts/frontier_companion_bank_even_exchange_port_2026_07_28.py": "07494e49272675cb752bbcd274f8e375bbb76d24cee0b0de5763cbf3c6a39ed7",
+    "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py": "eb0841f064bc840b1892a02ce1cf75e2c8275b6c21cc9b2952a5032cc03d4bb4",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py": "71d073a95d089c13baf6fbaff4c3e3ebbd63650a3c152bba49f8de78ee377c69",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py": "b42ea07c1ed671b9cbab38bc38eba6f8166fe65be52295941a95e3ed75049abf",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py": "f5b604b714e8fbb33e2b6284cb38199e900859d710cd9e1411ee941a021235f3",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py": "3aa964a6eaca559048a53de580f39d9295a3e4b41ef9d4ff9dcdd4d3ff7444a7",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py": "5d49d85ddbc4daddfc0b24737dc569eaa9f32a050f5fccf48f048fe0fdd74b40",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py": "d74fb32e21879b2a843eae822c8e71b950729d9dc295eaf336911f174cceee3a",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py": "c2e7f261c47092f11e445b16bde703330ccfd3e3af06bec0dac078ba64cf2297",
+    "scripts/frontier_cycle720_bounded_general_clifford_orbit_2026_07_27.py": "742ca885cea8b734d0ba8398028f60ae8a7162e7a7970ba3160015c0eb1b28b8",
+    "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py": "f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982",
+    "scripts/frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27.py": "6a309f6449d155244b1dbee581cbe169937db5fe815c4dcc3e93929274a79004",
+    "scripts/frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py": "42ada20e51eaf48c14d9862ddce1467982af90874829ddac62ba75b424d45da5",
+    "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py": "808c4cc2bac321dbc55aa1195d0768e77ee54cf63432ed04b277cd0ceeb0993c",
+    "scripts/frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27.py": "990016c074cfc98cd2e4ba2f27afe0e7dd2da7a96b9a38a13d4062f778216a36",
+    "scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py": "6877d532aaa1c9a97358ce2dfa2e26b1264c1f5a8ef477c217e9cc5a16c8d205",
+    "scripts/frontier_cycle720_companion_local_choi_pump_covariance_2026_07_27.py": "91ec583b03dafa5af1e26b1a87de771d3f92b1908848794d4b5b32b5e170e399",
     "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py": "108568254546e1f64e4454b455f4aa866fe9abfbd4a6ca3a82f65b6a29e28974",
+    "scripts/frontier_cycle720_companion_local_genesis_broadcast_2026_07_27.py": "a6409543a2c27545c4788550fc334c5d0c3948b252a29f164a83ca6743763649",
+    "scripts/frontier_cycle720_companion_parity_rail_local_gauge_2026_07_27.py": "d85a0dda0004e395d9e14b891a2c2616a93295b99c256b2d3e0f19e6c3bb360a",
     "scripts/frontier_cycle720_companion_recurrent_overlap_update_2026_07_27.py": "3064da20e961cea6c4c07a8317028ac9657d6fdd0643bd938a770491e5fad1fc",
+    "scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py": "ee7d6c6d442bac4fe646535ed46369a649fc8b80eb661044242392058c139628",
     "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py": "34c3b0fe14b6937010b88daf8594811fa8a6ef1741ab539b682db2429560c87d",
+    "scripts/frontier_cycle720_companion_subsystem_mixed_gauge_factorization_2026_07_27.py": "0c999aab2010a4ed1b77a0491a36bd9447db867513f6095b4ac2ebb43c5c5399",
+    "scripts/frontier_cycle720_companion_three_route_independent_adversary_2026_07_27.py": "0cc8869eb34b2a1bf4df9d27070aed9a2750a1fe5bf220720311c6f918e04d49",
+    "scripts/frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27.py": "dee1557eca4b88af75c469413290801577415cdf4ebfa3d970ceaa5ea15a2a8b",
+    "scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py": "ed7cec59daa3a640a48706ed57d6a1699700a61d3d86964ad07a3e2b1c343721",
+    "scripts/frontier_cycle720_product_companion_full_word_holonomy_2026_07_27.py": "438ab263262df8aee2ef1f2cc56fd6ac71a91d19c1fa9d422dd3f5418c7e340c",
     "scripts/frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.py": "3553ec8293d7cba935422ddccbc9e4b8dc9f4cd30c3ee6487f65f15c4ad2fe68",
     "scripts/frontier_cycle789_three_register_even_car_channel_2026_07_30.py": "2e2dd0a5edc502167fba6216e5ac5a4f76ac957e6da39cde6116c931d5f6734d",
+    "scripts/frontier_cycle789_two_bank_input_collision_discriminator_2026_07_30.py": "8dc7d7913284a720dbadf282dbcb5ea3320008de670813955d0adc49399c924b",
+    "scripts/frontier_cycle794_actual_frame_shear_three_bank_schedule_2026_07_30.py": "f3be7d68a287d066ebbf3040d90edf5b4b86ff535cbf2edd42b4fbeb68426253",
     "scripts/frontier_cycle794_literal_prefix_recurrent_G_substitution_2026_07_30.py": "1a5828c726cfca96c7a2240914a61f980a9406835821a44108a9061d7f6f1009",
+    "scripts/frontier_cycle794_literal_three_bank_prefix_core_2026_07_30.py": "f6e820f7e4c4aaafbaa5751bd35989b97fe3b86c767bb724e783b67ee4197c6d",
     "scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_covariance_2026_07_30.py": "74334599a249a88a6ba60068c935fd3b0e60c1e62989c91406fca5d992a52c18",
-    "scripts/frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30.py": "63ae494b35f182bfb2f60e3c5f0f4ec11bd6455fa65c43c55433ce3a678fc153",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py": "e79b733bd3b8e273a2094679e6175b5d1f253ebef1a33b96544519cbdf278e13",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py": "94f0fbd1212e210d0e073c3a80cdc2f92afa3c9807f981bd220625a67e8d94a0",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py": "f561714d036c8c7568b1772110303d6c0da11c6d73c9df3bdcbae2db632f5b44",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py": "ecae9048b4ee2d257315072cb7120335109f362fa7007573c46a82a1f0ed4195",
     "scripts/frontier_full128_cycle_encoder_2026_07_24.py": "17eca725b72943d8804147dd800be044ffaa80dc209588adb37ae6543d0fa935",
-    "scripts/frontier_full128_two_cell_even_car_frame_core_2026_07_30.py": "e8ad6c2c6c5a3eb1cbb36c4711a4b9a585ee4d564c0f89cb56d81604addfd2a0"
+    "scripts/frontier_full128_two_cell_even_car_frame_core_2026_07_30.py": "e8ad6c2c6c5a3eb1cbb36c4711a4b9a585ee4d564c0f89cb56d81604addfd2a0",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py": "b446ace0856b45108ae0ed4ed35614961ae3b69bf20d12132981f54809966afb",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py": "05cb2f6083cf6c4307c04284632e991b7fd7378cbd2a4eb08a52d5e3c7ae6b99",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py": "b418c74e82405a0511de81be0eef7080f98d5fe760ccac5d47783a6a751c2480",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py": "4ab857755b606d7ba7432179ed66de723ac31d3f66507cafa1168ab60d4965d6",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py": "97fdf54189d7da93099aeab4a9b1dd8501c7262d55493b9fa95bf1c2f5c97a9d",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py": "c410b754d4e984f6ee5ccbc7c5a52e776c50c91c4daa12d798044f104cc7435b",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py": "472e28c78901368629c8d9d6f614bb8fb3ea003639ac61d480d06941cdf6cb86",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py": "b449301837c1b72a325d310a1e2c582263a36648de939d169912347aff0591ae",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py": "9ef0fff433bbf1c96c9b13c5ce79530e01fe705f08c6caf6b60316e20359e011"
   },
   "open": "derivation/genesis of the carrier modes and total-parity domain; nearest-neighbour/radius-one routing of the exact bounded two-M2 Bell rotations and the up-to-17-M2 recurrent seam rotations; one monolithic dense executor rather than the exact signed-graph/factorwise composition proof; autonomous schedule occurrence/renewal; translation-invariant enforcement; time, source/gravity, Record/Born and prediction bridges",
   "recurrent_G_composition": {
@@ -240,8 +298,8 @@
         "edges": 1,
         "maximum_direct_seam_M2_manhattan_diameter": 24,
         "maximum_direct_seam_support_M2": 5,
-        "maximum_direct_vs_compiled_seam_residual": 7.420193489442451e-16,
         "maximum_nonseam_elementary_parity_residual": 0.0,
+        "maximum_sampled_phase_aligned_seam_state_residual": 7.420193489442451e-16,
         "one_particle_mass_residual": 5.551115123125783e-17,
         "semantic_factors": 62,
         "shape": [
@@ -260,8 +318,8 @@
         "edges": 2,
         "maximum_direct_seam_M2_manhattan_diameter": 24,
         "maximum_direct_seam_support_M2": 5,
-        "maximum_direct_vs_compiled_seam_residual": 7.913391346636907e-16,
         "maximum_nonseam_elementary_parity_residual": 0.0,
+        "maximum_sampled_phase_aligned_seam_state_residual": 7.913391346636907e-16,
         "one_particle_mass_residual": 5.551115123125783e-17,
         "semantic_factors": 95,
         "shape": [
@@ -280,8 +338,8 @@
         "edges": 20,
         "maximum_direct_seam_M2_manhattan_diameter": 24,
         "maximum_direct_seam_support_M2": 17,
-        "maximum_direct_vs_compiled_seam_residual": 7.816148139583761e-16,
         "maximum_nonseam_elementary_parity_residual": 0.0,
+        "maximum_sampled_phase_aligned_seam_state_residual": 7.816148139583761e-16,
         "one_particle_mass_residual": 5.551115123125783e-17,
         "semantic_factors": 428,
         "shape": [
@@ -390,7 +448,7 @@
     }
   ],
   "status": "PASS",
-  "supplied": "one parity-exchange M2 mode per coarse cell; total-parity superselection as the observable domain; landed O/I Choi and encoded live banks; clean syndrome banks; finite chart, local tag atlas, colour/slot schedule, boundary and stage order",
+  "supplied": "one parity-exchange M2 mode per coarse cell; total-parity superselection as the observable domain; landed O/I Choi and encoded live banks; a carrier input initially factorized from the channel input; clean definite syndrome banks; finite chart, local tag atlas, colour/slot schedule, boundary and stage order",
   "two_cell_two_epoch": {
     "atomic_factorization": {
       "atom_parity_commutator_failures": 0,
@@ -448,3 +506,6 @@
     "unextended_second_epoch_parity_commutator_failures": 12
   }
 }
+
+----- stderr -----
+

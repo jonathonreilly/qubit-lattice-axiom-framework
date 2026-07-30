@@ -1,62 +1,99 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle732_genesis_independent_check_2026_07_28.txt": "6f0ac5e5a09416745927423bb0ddb91d5e73b48301697e22568033c886e61f07",
-      "frontier_cycle732_genesis_word_self_verification_2026_07_28.txt": "da0c159391b6b2e79865965477add7d467684a4b09661400f2f2dc3ea4c0502e"
+      "frontier_cycle732_genesis_independent_check_2026_07_28.txt": "197f41271ad96e818ed79fcc266afc313bca2fdd6ae8b41b454f9ad961aa7bc2",
+      "frontier_cycle732_genesis_word_self_verification_2026_07_28.txt": "a977aa2dff5cd752a720195415be4f8a7b43321b70aa08c57c547b852999943c"
     },
     "note": {
       "path": "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "fed45b8b6cd1b187179b2aba032535027d1f1d8f333fd3b2a323fa470b896010"
+      "sha256": "ce8f726268f360eeea0a76ab34f5044abb45212c8a3610b0d2cbd6a4285f9011"
     },
     "runners": {
-      "frontier_cycle732_genesis_independent_check_2026_07_28.py": "afa522139fd87500b9aa9911b4f6f44ab501a2ab1d7287f3b8d124507c406284",
-      "frontier_cycle732_genesis_word_self_verification_2026_07_28.py": "b08a41c26d75e164580b295ef79bd796127483841dee145f08094babdbb7bad2"
+      "frontier_cycle732_genesis_independent_check_2026_07_28.py": "0576ef9ac5b6a8e8414bd2c82bdc4cb95a39ec1e0fe5e567a824725c170f3f67",
+      "frontier_cycle732_genesis_word_self_verification_2026_07_28.py": "d9770e8fee349f1dc8b7d0344ba5dca0a7a9768a072ff93644c65ad38894043d"
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
-    "axiom_pressure": false,
-    "fixed_supplies": "the all-blank M2 state on the declared ring-11 register layout; the selected literal genesis-word gate ordering (a convention); the ring-11/two-bank oriented program and physical layout convention; the unchanged Cycle-731 expected_count=1 certificate word and pins",
-    "genesis_state_now_derived_output": true,
-    "genesis_word_selection_supplied": true,
-    "not_derived": "the genesis word selection itself (deriving the preparation convention from occurrence/Record structure remains open); uniform ring families beyond the held fixtures; no time/Record/Born/source content",
-    "one_token_inventory_separately_declared": false,
-    "positive_scope": "a 27-gate literal genesis word (1 X + 26 CN, fixed unrolling, no data-dependent branch) preparing the lawful configuration bit-exactly from all-blanks; the composed 123,293-gate self-verifying word (certificate accepts genesis output; exact reverse; clean returns); exhaustive single-gate deletion sweep 27/27 refused with zero output-neutral deletions; 23/23 output bit-flips refused in exact Cycle-731 theorem agreement; in-package rerun of the full 8,388,608-case theorem with the same frozen outcome sha",
-    "w1_remaining_gap": "genesis word selection (convention), not inventory declaration",
-    "word_correctness_machine_enforced": true
+    "audit_grade_claimed": false,
+    "autonomous_state_selection_claimed": false,
+    "expected_A_occupancy_k1_supplied": true,
+    "general_error_detection_claimed": false,
+    "global_parity_acceptor_claimed": false,
+    "inventory_is_derived": false,
+    "partial_narrowing": true,
+    "physical_transport_or_NN_compilation_claimed": false,
+    "positive_scope": "one supplied ring-11 logical target and one supplied 27-gate word; exact blank-to-target preparation and reverse; actual current-parent acceptance; exact 27 deletion and 23 selected A/reference/h flip refusal censuses",
+    "selected_target_supplied": true,
+    "total_two_rail_inventory_claimed": false,
+    "uniform_ring_family_claimed": false,
+    "word_ordering_supplied": true
+  },
+  "cache_identity": {
+    "independent": {
+      "declared_input_count": 83,
+      "identity_status": "fresh",
+      "input_fingerprint_sha256": "930e85491889f5dc65421d53ee8f9ade3261a0c0687f268f85a2504ef6996e62",
+      "status": "fresh"
+    },
+    "paired_live_agreement": true,
+    "primary": {
+      "declared_input_count": 83,
+      "identity_status": "fresh",
+      "input_fingerprint_sha256": "944545b7e1309e29da87fa82226dfaca1f94dec3be3653d4845a2dce727bc87a",
+      "status": "fresh"
+    }
   },
   "checks": {
     "independent_named_checks_failed": 0,
-    "independent_named_checks_passed": 6,
-    "primary_named_checks_passed": 9
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_failed": 0,
+    "primary_named_checks_passed": 9,
+    "primary_report_sha256": "3faf624419d915f9bbb7954d6a130e587ccf336f6c12f8f034b50b1b196ff63a"
   },
   "claim_type": "bounded_theorem",
   "cycle": 732,
   "date": "2026-07-28",
   "result": {
-    "bitflip_census": {
+    "composed": {
+      "all_auxiliaries_return_clean": true,
+      "controller_registers_return": true,
+      "current_parent_step_gates": 11206,
+      "current_parent_unrolls": 11,
+      "literal_reverse_exact": true,
+      "semantic_gates": 123293,
+      "target_accepted": true,
+      "transient_refusal_count": 0,
+      "word_sha256": "23ad4b292a23095afdffd7337059a4276cf87d2c00a0670f63c4a1269e02194d"
+    },
+    "genesis_word": {
+      "CNOT": 26,
+      "X": 1,
+      "logical_only": true,
+      "semantic_gates": 27,
+      "word_sha256": "d4b3121c62f691375d031758b00a0f78d4950eef07abf4715a294b0e46df2d93"
+    },
+    "scope_countercontrols": {
+      "data_wire_0_flip_accepted": true,
+      "global_parity_acceptor_claimed": false,
+      "general_error_detection_claimed": false,
+      "two_rail_parity_counterexample_exercised": true
+    },
+    "selected_output_flips": {
+      "clean_controller_returns": 23,
+      "domain": "11 A wires, 11 reference wires, and h",
       "refused": 23,
-      "theorem_agreement": "exact",
       "total": 23
     },
-    "composed_semantic_gates": 123293,
-    "composed_word_sha256": "23ad4b292a23095afdffd7337059a4276cf87d2c00a0670f63c4a1269e02194d",
-    "cycle731_anchor_rerun": {
-      "cases": 8388608,
-      "outcome_table_sha_match": true
-    },
-    "deletion_sweep": {
-      "output_neutral": 0,
+    "single_gate_deletions": {
+      "clean_controller_returns": 27,
+      "distinct_outputs": 27,
+      "output_weights": "0 through 26",
       "refused": 27,
+      "target_outputs": 0,
       "total": 27
-    },
-    "genesis_word_gates": {
-      "CN": 26,
-      "X": 1,
-      "total": 27
-    },
-    "size_arithmetic": "27 + 112912 + 10354 = 123293"
+    }
   },
-  "status": "CYCLE732_GENESIS_WORD_SELF_VERIFICATION_PASS"
+  "status": "CYCLE732_FIXED_LOGICAL_GENESIS_PARTIAL_NARROWING_PASS"
 }

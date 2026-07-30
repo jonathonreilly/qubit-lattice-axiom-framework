@@ -1,19 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle732_genesis_independent_check_2026_07_28.py
-runner_sha256: afa522139fd87500b9aa9911b4f6f44ab501a2ab1d7287f3b8d124507c406284
-input_fingerprint_sha256: 3fba953128567ab2ba8128739bb33f3da065d263626a56cbdcb8b7650a0ca53c
+runner_sha256: 0576ef9ac5b6a8e8414bd2c82bdc4cb95a39ec1e0fe5e567a824725c170f3f67
+input_fingerprint_sha256: 930e85491889f5dc65421d53ee8f9ade3261a0c0687f268f85a2504ef6996e62
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 3.31
 status: ok
 ----- stdout -----
-PASS extraction :: 27 gates (1 X + 26 CNOT), ring-11 boundary/configuration
-PASS genesis recount :: blank -> declared 27-one configuration, every register exact
-PASS deletion recount :: 27/27 refused, 0 output-neutral
-PASS bit-flip recount :: 23/23 refused, 23 frozen-verdict agreements
-PASS size arithmetic :: 27 + 112912 + 10354 = 123293
-PASS discipline :: AST-only primary, no blocklisted imports, no K writes
-SUMMARY 6/6 ALL_PASS runtime=0.160394s
+PASS recursive input closure :: 83/83 inputs
+PASS primary boundary alignment :: current-parent APIs
+PASS independent logical genesis :: 27 gates
+PASS actual current-parent composition :: 123293 gates
+PASS enumerated mutations :: 27/27 deletions; 23/23 flips
+PASS scope countercontrols :: accepted data flip; non-global-parity witness
+PASS independence discipline :: primary inert; separate X/CNOT/TOF evaluator
+SUMMARY 7/7 ALL_PASS runtime=2.696451s
 
 ----- stderr -----
 

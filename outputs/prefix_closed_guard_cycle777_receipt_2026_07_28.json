@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle777_guard_independent_check_2026_07_28.txt": "901d5f62d5f9baaa83951239a334cdefff727df9132257901d8954a8a492f749",
+      "frontier_cycle777_prefix_closed_guard_2026_07_28.txt": "1bb520cd0c24d7e30d34a1f10defbb98d77839f9a7055e092fb98465d8e7ab87"
+    },
+    "note": {
+      "path": "docs/PREFIX_CLOSED_GUARD_CYCLE777_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "e436096a43e04d39d61487c7321409dca532fc73ef0310b6975dc11fc69667ba"
+    },
+    "runners": {
+      "frontier_cycle777_guard_independent_check_2026_07_28.py": "67dbe53ad180f7a4cc6f1ffd0d40606e961ff47fb12bfa5bc9c3aeb9cf638962",
+      "frontier_cycle777_prefix_closed_guard_2026_07_28.py": "c4bb14040957cd2509d738a56ce13f436f0ac4449cd8eac1a051b396c951b652"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "diagnosis": "prefix-6 flips all 744 U rails to dirty with ZERO landed-law syndromes; prefix-7 triggers Q_refuse with 0/744 restorations (no rollback obligation in landed semantics)",
+    "fixed_supplies": "the composition point and battery family (770); everything Cycle-693/719/745/769/770 declare",
+    "guard": "best landed-law guard (rail-guarded recursion + syndrome-keyed prefix closure, every refusal keyed on a landed condition): 5/26 -> 38/50; checker extension battery exposed 18 further survivors on the 2,232 guard cells (47/81)",
+    "inventory_hunt": "checker exhausted the landed inventory \u2014 100 AST surfaces across 9 focus families \u2014 0 closures of either hole",
+    "missing_law": "(a) syndrome-complete coverage for the U-rail dirty-flip class; (b) refusal-with-rollback. Neither exists on the landed surface; deriving them from framework primitives is the named next target",
+    "not_derived": "the missing law; any permanence witness; underivability from the axioms is NOT claimed",
+    "outcome": "GUARD_REQUIRES_NEW_LAW_CONFIRMED"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 777,
+  "date": "2026-07-30",
+  "result": {
+    "guarded": "38/50 (ext 47/81)",
+    "inventory": "100 surfaces / 0 closures",
+    "verdict": "GUARD_REQUIRES_NEW_LAW",
+    "witness": false
+  },
+  "status": "CYCLE777_PREFIX_CLOSED_GUARD_PASS"
+}

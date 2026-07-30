@@ -1,0 +1,95 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle777_prefix_closed_guard_2026_07_28.py
+runner_sha256: c4bb14040957cd2509d738a56ce13f436f0ac4449cd8eac1a051b396c951b652
+input_fingerprint_sha256: f4ab1fdec452744f7ed4b98a51d34b431de58aac41851b7886f05a7664682a79
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 22.35
+status: ok
+----- stdout -----
+DIAGNOSIS_BEGIN before_guard_construction=true
+PREFIX_TRACE [{"gate":"lock_transfer","persistent":[0,0,1],"prefix_station":1,"rail_changes_one_payload_cell":[],"tag":"DIRTY"},{"gate":"accept_route","persistent":[0,0,1],"prefix_station":2,"rail_changes_one_payload_cell":[],"tag":"DIRTY"},{"gate":"payload_copy","persistent":[0,0,1],"prefix_station":3,"rail_changes_one_payload_cell":[],"tag":"DIRTY"},{"gate":"refuse_dirty_00_route","persistent":[0,0,1],"prefix_station":4,"rail_changes_one_payload_cell":[],"tag":"DIRTY"},{"gate":"refuse_dirty_11_route","persistent":[0,0,1],"prefix_station":5,"rail_changes_one_payload_cell":[],"tag":"DIRTY"},{"gate":"cascade_unlift","persistent":[0,1,1],"prefix_station":6,"rail_changes_one_payload_cell":["U:0->1"],"tag":"DIRTY"},{"gate":"refuse_locked_route","persistent":[0,1,1],"prefix_station":7,"rail_changes_one_payload_cell":["Q_in:1->0","Q_refuse:0->1"],"tag":"REFUSED"},{"gate":"cascade_lift","persistent":[0,0,1],"prefix_station":8,"rail_changes_one_payload_cell":["U:1->0"],"tag":"REFUSED"}]
+PREFIX_6_ENTRY all_payload_stations=744 changes=U:0->1 lock=(1,1) syndrome=none
+PREFIX_7_ENTRY all_payload_stations=744 changes=Q_in:1->0,Q_refuse:0->1 lock_remains=(1,1) rollback=absent
+WHY_745_DOES_NOT_FIRE prefix 6 stops before refuse_locked_route, so Q_in remains 1 and Q_refuse remains 0; prefix 7 produces Q_refuse only after U has entered dirty (1,1), and Cycle770 requires both syndrome and persistent-state identity
+DIAGNOSIS_END
+UNGUARDED_770 refused_attacks=5/26
+PREREGISTERED_BATTERY {"attack_count":50,"manifest_sha256":"1069dcbf710718644235574c017b6a30de39ace331c2d64857b23d21c78f9ab3","names":["inverse_word_application_1","inverse_word_application_2","partial_inverse_prefix_1","partial_inverse_prefix_2","partial_inverse_prefix_3","partial_inverse_prefix_4","partial_inverse_prefix_5","partial_inverse_prefix_6","partial_inverse_prefix_7","mode6_forward_word_replay_double_write","declared_alphabet_IDLE","declared_alphabet_READ","declared_alphabet_WRITE[0]","declared_alphabet_WRITE[1]","direct_bank_station_1","direct_bank_station_5","direct_bank_station_10","direct_bank_station_15","direct_bank_station_20","direct_bank_station_25","direct_bank_station_30","direct_bank_station_35","direct_bank_station_40","direct_bank_station_45","direct_bank_station_50","direct_bank_station_55","record_forward_prefix_1","record_forward_prefix_2","record_forward_prefix_3","record_forward_prefix_4","record_forward_prefix_5","record_forward_prefix_6","record_forward_prefix_7","guard_inverse_prefix_1","guard_inverse_prefix_2","guard_inverse_prefix_3","guard_inverse_prefix_4","guard_inverse_prefix_5","guard_inverse_prefix_6","guard_inverse_prefix_7","guard_forward_prefix_1","guard_forward_prefix_2","guard_forward_prefix_3","guard_forward_prefix_4","guard_forward_prefix_5","guard_forward_prefix_6","guard_forward_prefix_7","guard_direct_X_D","guard_direct_X_U","guard_direct_X_L"]}
+GUARD_CONSTRUCTION_BEGIN after_diagnosis=true
+GUARD_CONSTRUCTION {"guard_cells":2232,"inner_payload_cells":744,"landed_first_write_condition":"Cycle745 first write accepts and locks in the same WRITE_WORD","landed_refusal_condition":"Cycle745 locked same-value/opposite-value WRITE_WORD request returns Q_refuse with persistent D/U/L unchanged","new_refusal_condition_added":false,"outermost_guard_wrapped_atomically":false,"rail_order_sha256":"7086535ebd4e77e67e3aa13364ac5e9c770797bcf321c676e8ab4484378e23d1","rails_per_inner_cell":3}
+GUARD_CONSTRUCTION_END
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"inverse_word_application_1","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"inverse_word_application_2","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"partial_inverse_prefix_1","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"partial_inverse_prefix_2","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"partial_inverse_prefix_3","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"partial_inverse_prefix_4","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"partial_inverse_prefix_5","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":true,"name":"partial_inverse_prefix_6","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":true,"name":"partial_inverse_prefix_7","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"mode6_forward_word_replay_double_write","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"declared_alphabet_IDLE","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"declared_alphabet_READ","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"declared_alphabet_WRITE[0]","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"declared_alphabet_WRITE[1]","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_1","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_5","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_10","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_15","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_20","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_25","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_30","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_35","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_40","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_45","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_50","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"direct_bank_station_55","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":true,"name":"record_forward_prefix_1","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":true,"name":"record_forward_prefix_2","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"record_forward_prefix_3","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"record_forward_prefix_4","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"record_forward_prefix_5","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"record_forward_prefix_6","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"record_forward_prefix_7","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"record_and_inner_lock"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"guard_inverse_prefix_1","record_byte_identical":true,"refused":false,"syndrome_count":0,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"guard_inverse_prefix_2","record_byte_identical":true,"refused":false,"syndrome_count":0,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"guard_inverse_prefix_3","record_byte_identical":true,"refused":false,"syndrome_count":0,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"guard_inverse_prefix_4","record_byte_identical":true,"refused":false,"syndrome_count":0,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"guard_inverse_prefix_5","record_byte_identical":true,"refused":false,"syndrome_count":0,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":false,"mutation_proposed":true,"name":"guard_inverse_prefix_6","record_byte_identical":true,"refused":false,"syndrome_count":0,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":false,"mutation_proposed":true,"name":"guard_inverse_prefix_7","record_byte_identical":true,"refused":false,"syndrome_count":2232,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":false,"mutation_proposed":true,"name":"guard_forward_prefix_1","record_byte_identical":true,"refused":false,"syndrome_count":0,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":false,"mutation_proposed":true,"name":"guard_forward_prefix_2","record_byte_identical":true,"refused":false,"syndrome_count":2232,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"guard_forward_prefix_3","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"guard_forward_prefix_4","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"guard_forward_prefix_5","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"guard_forward_prefix_6","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":true,"mutation_proposed":false,"name":"guard_forward_prefix_7","record_byte_identical":true,"refused":true,"syndrome_count":2232,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":false,"mutation_proposed":true,"name":"guard_direct_X_D","record_byte_identical":true,"refused":false,"syndrome_count":0,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":false,"mutation_proposed":true,"name":"guard_direct_X_U","record_byte_identical":true,"refused":false,"syndrome_count":0,"target":"outermost_guard_cells"}
+BATTERY {"guard_byte_identical":false,"mutation_proposed":true,"name":"guard_direct_X_L","record_byte_identical":true,"refused":false,"syndrome_count":0,"target":"outermost_guard_cells"}
+OUTCOME GUARD_REQUIRES_NEW_LAW
+guard_requires_new_law: true
+missing_condition: "an event-boundary rule that atomically refuses and rolls back every proper gate prefix on the outermost guard cell, including prefixes with no Q_refuse receipt and direct D/U/L rail gates; Cycle745 WRITE_WORD supplies neither prefix commit atomicity nor self-protection"
+surviving_attacks: ["guard_inverse_prefix_1","guard_inverse_prefix_2","guard_inverse_prefix_3","guard_inverse_prefix_4","guard_inverse_prefix_5","guard_inverse_prefix_6","guard_inverse_prefix_7","guard_forward_prefix_1","guard_forward_prefix_2","guard_direct_X_D","guard_direct_X_U","guard_direct_X_L"]
+mutating_surviving_attacks: ["guard_inverse_prefix_6","guard_inverse_prefix_7","guard_forward_prefix_1","guard_forward_prefix_2","guard_direct_X_D","guard_direct_X_U","guard_direct_X_L"]
+sharpened_wall: finite recursive Cycle745 composition protects the inner record and lock rails but exports the identical proper-prefix/direct-gate vulnerability to its outermost rails
+refused_attacks: 38/50
+permanence_witness_established: false
+classification_mode6_positive: false
+classification_if_no_write_counts: unidentified
+classification_if_no_write_does_not_count: unidentified
+NO_OVERBLOCKING {"Cycle745_first_write_certificate":true,"Cycle745_induction_certificate":true,"Cycle745_refusal_certificate":true,"engagement_point":125,"fresh_cell_write_succeeds":true,"lawful_forward_final_bit_exact":true,"mode_rows":[{"guard_engaged":false,"guarded_equals_unguarded":true,"mode":0,"record_rows":0,"write_steps":[]},{"guard_engaged":false,"guarded_equals_unguarded":true,"mode":2,"record_rows":0,"write_steps":[]},{"guard_engaged":false,"guarded_equals_unguarded":true,"mode":3,"record_rows":0,"write_steps":[]},{"guard_engaged":false,"guarded_equals_unguarded":true,"mode":4,"record_rows":0,"write_steps":[]},{"guard_engaged":false,"guarded_equals_unguarded":true,"mode":5,"record_rows":0,"write_steps":[]}],"modes_0_5_untouched":true,"pre_finalizer_bit_exact":true,"pre_finalizer_sha256":"1f97afd4b128eb87323a76f8a032bf92cd02aa24059e51061f4a4eb33e6c09b3"}
+ENGAGEMENT_POINT unchanged=true orbit_step=125 program_kind=finalizer
+PRE_COMPOSITION_INVERSE {"bare_inverse_unwrites_exactly":true,"writeback_steps":[4,128,129]}
+POST_COMPOSITION_INVERSE {"EventCell_survives_byte_exactly":true,"all_bare_writebacks_refused":true,"syndrome_receipt_count":3}
+PASS CERTIFICATE_A_anchors_imports_770_harness_identity
+PASS CERTIFICATE_B_prefix_6_7_trace_diagnosis
+PASS CERTIFICATE_C_landed_law_guard_provenance_and_missing_condition
+PASS CERTIFICATE_D_preregistered_full_battery_frozen_outcome
+PASS CERTIFICATE_E_no_overblocking_and_engagement_point
+PASS CERTIFICATE_F_determinism_runtime_stdout_bounds
+{"AUDIT_INPUT_PATHS":["scripts/frontier_cycle745_enforced_dual_rail_lock_2026_07_28.py","scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py","scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py","scripts/frontier_cycle770_lock_composed_formation_2026_07_28.py"],"W6_untouched":true,"certificates":{"A":true,"B":true,"C":true,"D":true,"E":true,"F":true},"classification_if_no_write_counts":"unidentified","classification_if_no_write_does_not_count":"unidentified","determinism":true,"guard_requires_new_law":true,"missing_condition":"an event-boundary rule that atomically refuses and rolls back every proper gate prefix on the outermost guard cell, including prefixes with no Q_refuse receipt and direct D/U/L rail gates; Cycle745 WRITE_WORD supplies neither prefix commit atomicity nor self-protection","no_probability_rate_or_weight_branch":true,"outcome":"GUARD_REQUIRES_NEW_LAW","permanence_witness_established":false,"refused_attacks":"38/50","runtime_sec":22.197365083993645,"stdout_bytes":17044}
+
+----- stderr -----
+

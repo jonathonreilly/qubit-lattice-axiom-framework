@@ -394,22 +394,12 @@ def start_level_data(
             left = (start + step) % RING_STATIONS
             right = (left + 1) % RING_STATIONS
             boundaries.append(
-                {
-                    "step": step,
-                    "contenders": (left, right),
-                    "left_profile":
-                        named_profile(
-                            contender_profile(
-                                fixture, start, step, left
-                            )
-                        ),
-                    "right_profile":
-                        named_profile(
-                            contender_profile(
-                                fixture, start, step, right
-                            )
-                        ),
-                }
+                (
+                    step,
+                    (left, right),
+                    contender_profile(fixture, start, step, left),
+                    contender_profile(fixture, start, step, right),
+                )
             )
         rows.append(
             {
@@ -417,18 +407,6 @@ def start_level_data(
                 "initial_token_stations": tokens,
                 "initial_station_occupancies": occupancy,
                 "token_charge_rows": tuple(token_rows),
-                "station_semantic_gate_counts": tuple(
-                    len(word) for word in fixture["semantic_words"]
-                ),
-                "station_semantic_gate_vectors_X_CNOT_TOF":
-                    fixture["semantic_vectors"],
-                "station_physical_gate_counts": tuple(
-                    len(word) for word in fixture["physical_words"]
-                ),
-                "station_physical_gate_vectors_CNOT_TOF":
-                    fixture["physical_vectors"],
-                "station_rail_hop_distances_A_to_B_to_next_A":
-                    fixture["rail_hops"],
                 "scheduled_token_travel_distance_by_boundary":
                     tuple(2 * step for step in range(RING_STATIONS)),
                 "boundary_profiles": tuple(boundaries),
@@ -525,8 +503,17 @@ def enumerate_and_prune(
         start_rows.append(
             {
                 "start": start,
-                "successful_masks": successful,
                 "successful_assignment_count": len(successful),
+                "successful_masks_sha256": sha256(
+                    b"".join(
+                        mask.to_bytes(2, "little") for mask in successful
+                    )
+                ).hexdigest(),
+                "successful_mask_range": (
+                    None
+                    if not successful
+                    else (successful[0], successful[-1])
+                ),
                 "distinct_final_outputs":
                     len(set(prefix_states[-1].values())),
                 "backward_pruning": tuple(pruning_rows),
@@ -553,11 +540,698 @@ def enumerate_and_prune(
     }
 
 
-def main() -> int:
-    started = perf_counter()
+VECTOR_COMPONENT_NAMES = {
+    "semantic_gate_vector_X_CNOT_TOF": ("X", "CNOT", "TOF"),
+    "physical_gate_vector_CNOT_TOF": ("CNOT", "TOF"),
+}
+
+
+def add_scalar(
+    row: dict[str, object],
+    path: str,
+    name: str,
+    value: object,
+) -> None:
+    """Flatten only declared vector quantities; identities never enter B."""
+
+    if name in VECTOR_COMPONENT_NAMES:
+        components = VECTOR_COMPONENT_NAMES[name]
+        if not isinstance(value, tuple) or len(value) != len(components):
+            raise AssertionError(("vector shape", path, value))
+        for component, scalar in zip(components, value):
+            row[f"{path}.{component}"] = scalar
+    elif isinstance(value, (int, str)):
+        row[path] = value
+    else:
+        raise AssertionError(("non-scalar quantity", path, value))
+
+
+def scalar_quantity_table(
+    starts: tuple[dict[str, object], ...],
+) -> tuple[
+    dict[str, tuple[object, ...]],
+    tuple[tuple[str, str], ...],
+]:
+    """Build the exact scalar leaf domain used by certificate B."""
+
+    per_start = []
+    pair_paths: set[tuple[str, str]] = set()
+    for start_row in starts:
+        row: dict[str, object] = {}
+        for station, occupied in enumerate(
+            start_row["initial_station_occupancies"]
+        ):
+            row[f"initial_occupancy[{station}]"] = occupied
+        token_by_role = {
+            token["role"]: token
+            for token in start_row["token_charge_rows"]
+        }
+        for role in ("left", "right"):
+            token = token_by_role[role]
+            for name, value in token.items():
+                if name in ("role", "station"):
+                    continue
+                add_scalar(row, f"token.{role}.{name}", name, value)
+        token_leaf_names = {
+            path.removeprefix("token.left.")
+            for path in row
+            if path.startswith("token.left.")
+        }
+        for leaf in token_leaf_names:
+            pair_paths.add(
+                (f"token.left.{leaf}", f"token.right.{leaf}")
+            )
+
+        for boundary in start_row["boundary_profiles"]:
+            step, _contenders, left_profile, right_profile = boundary
+            for side, profile in (
+                ("left", left_profile),
+                ("right", right_profile),
+            ):
+                for name, value in zip(PROFILE_NAMES, profile):
+                    add_scalar(
+                        row,
+                        f"boundary[{step}].{side}.{name}",
+                        name,
+                        value,
+                    )
+            left_prefix = f"boundary[{step}].left."
+            for path in tuple(row):
+                if path.startswith(left_prefix):
+                    leaf = path.removeprefix(left_prefix)
+                    pair_paths.add(
+                        (
+                            path,
+                            f"boundary[{step}].right.{leaf}",
+                        )
+                    )
+        per_start.append(row)
+    keys = tuple(sorted(per_start[0]))
+    if any(tuple(sorted(row)) != keys for row in per_start):
+        raise AssertionError("scalar quantity schemas differ by start")
+    quantities = {
+        key: tuple(row[key] for row in per_start) for key in keys
+    }
+    if any(
+        left not in quantities or right not in quantities
+        for left, right in pair_paths
+    ):
+        raise AssertionError("pairwise path escaped scalar table")
+    return quantities, tuple(sorted(pair_paths))
+
+
+def truth_mask(values: Iterable[bool]) -> int:
+    return sum(
+        int(value) << start for start, value in enumerate(values)
+    )
+
+
+def literal(value: object) -> str:
+    return json.dumps(value, sort_keys=True, separators=(",", ":"))
+
+
+def separator_hunt(
+    starts: tuple[dict[str, object], ...],
+) -> dict[str, object]:
+    """Exhaust the declared predicate grammar through two atomic leaves."""
+
+    quantities, pair_paths = scalar_quantity_table(starts)
+    target_mask = 1
+    all_mask = (1 << RING_STATIONS) - 1
+    atoms: list[dict[str, object]] = []
+
+    def add_atom(
+        family: str,
+        expression: str,
+        evaluations: Iterable[bool],
+    ) -> None:
+        atoms.append(
+            {
+                "family": family,
+                "expression": expression,
+                "mask": truth_mask(evaluations),
+            }
+        )
+
+    for path, values in sorted(quantities.items()):
+        constants = tuple(
+            sorted(set(values), key=lambda value: (type(value).__name__, value))
+        )
+        for constant in constants:
+            add_atom(
+                "single_literal",
+                f"{path} == {literal(constant)}",
+                (value == constant for value in values),
+            )
+            add_atom(
+                "single_literal",
+                f"{path} != {literal(constant)}",
+                (value != constant for value in values),
+            )
+        if all(type(value) is int for value in values):
+            for constant in constants:
+                for operator, predicate in (
+                    ("<", lambda value, c=constant: value < c),
+                    ("<=", lambda value, c=constant: value <= c),
+                    (">", lambda value, c=constant: value > c),
+                    (">=", lambda value, c=constant: value >= c),
+                ):
+                    add_atom(
+                        "single_threshold",
+                        f"{path} {operator} {constant}",
+                        (predicate(value) for value in values),
+                    )
+
+    for left_path, right_path in pair_paths:
+        left_values = quantities[left_path]
+        right_values = quantities[right_path]
+        if all(
+            type(left) is type(right) is int
+            for left, right in zip(left_values, right_values)
+        ):
+            operators = (
+                ("<", lambda left, right: left < right),
+                ("<=", lambda left, right: left <= right),
+                ("==", lambda left, right: left == right),
+                ("!=", lambda left, right: left != right),
+                (">=", lambda left, right: left >= right),
+                (">", lambda left, right: left > right),
+            )
+        elif all(
+            isinstance(left, str) and isinstance(right, str)
+            for left, right in zip(left_values, right_values)
+        ):
+            operators = (
+                ("==", lambda left, right: left == right),
+                ("!=", lambda left, right: left != right),
+            )
+        else:
+            raise AssertionError(
+                ("pairwise type mismatch", left_path, right_path)
+            )
+        for operator, predicate in operators:
+            add_atom(
+                "pairwise_comparison",
+                f"{left_path} {operator} {right_path}",
+                (
+                    predicate(left, right)
+                    for left, right in zip(left_values, right_values)
+                ),
+            )
+
+    # The size-two Boolean grammar is quotiented by atomic truth table.  This
+    # is an explicit semantic normalization, not sampling: on 11 starts every
+    # atom has exactly one of 2^11 possible masks.
+    canonical_by_mask: dict[int, str] = {}
+    for atom in atoms:
+        mask = atom["mask"]
+        expression = atom["expression"]
+        if mask in (0, all_mask):
+            continue
+        previous = canonical_by_mask.get(mask)
+        if previous is None or expression < previous:
+            canonical_by_mask[mask] = expression
+    canonical_atoms = tuple(sorted(canonical_by_mask.items()))
+    size_two_separators = []
+    for left_index, (left_mask, left_expression) in enumerate(
+        canonical_atoms
+    ):
+        for right_mask, right_expression in canonical_atoms[left_index:]:
+            for operator, combined in (
+                ("AND", left_mask & right_mask),
+                ("OR", left_mask | right_mask),
+            ):
+                if combined == target_mask:
+                    size_two_separators.append(
+                        f"({left_expression}) {operator} "
+                        f"({right_expression})"
+                    )
+    size_two_separators = sorted(set(size_two_separators))
+    atomic_separators = tuple(
+        sorted(
+            (
+                {
+                    "family": atom["family"],
+                    "predicate": atom["expression"],
+                }
+                for atom in atoms
+                if atom["mask"] == target_mask
+            ),
+            key=lambda row: (row["family"], row["predicate"]),
+        )
+    )
+    if atomic_separators:
+        minimal_size = 1
+        minimal_separators = atomic_separators
+    else:
+        minimal_size = 2 if size_two_separators else None
+        minimal_separators = tuple(
+            {
+                "family": "boolean_size_2",
+                "predicate": expression,
+            }
+            for expression in size_two_separators
+        )
+    best_expression = 'token.left.program_kind == "source"'
+    best_present = any(
+        row["predicate"] == best_expression for row in minimal_separators
+    )
+    family_counts: dict[str, int] = defaultdict(int)
+    for row in minimal_separators:
+        family_counts[row["family"]] += 1
+    return {
+        "pass": bool(minimal_separators) and best_present,
+        "grammar": {
+            "scalar_leaf_domain": (
+                "every scalar component of all 15-component boundary "
+                "profiles, both initial token/charge rows, and the absolute "
+                "initial occupancy vector; station/start identity labels "
+                "are excluded"
+            ),
+            "single_literal_atom": "q == c | q != c for every observed c",
+            "single_threshold_atom": (
+                "q < c | q <= c | q > c | q >= c for every observed "
+                "integer c"
+            ),
+            "pairwise_atom": (
+                "left q OP right q at the same boundary or across the two "
+                "initial token rows; OP is <,<=,==,!=,>=,> for integers "
+                "and ==,!= for strings"
+            ),
+            "boolean_formula": "(atom AND atom) | (atom OR atom)",
+            "size_bound": 2,
+            "size_measure": "number of atomic leaves",
+            "minimality": (
+                "globally least atomic-leaf size among exact separators"
+            ),
+            "boolean_semantic_quotient": (
+                "one lexicographic representative per complete 11-bit "
+                "atomic truth table; constants removed as Boolean identities"
+            ),
+        },
+        "scalar_quantity_count": len(quantities),
+        "pairwise_quantity_pair_count": len(pair_paths),
+        "atomic_predicates_enumerated": len(atoms),
+        "canonical_nonconstant_atomic_truth_tables":
+            len(canonical_atoms),
+        "size_two_boolean_separators_enumerated":
+            len(size_two_separators),
+        "size_two_boolean_separator_sha256": sha256(
+            "\n".join(size_two_separators).encode("utf-8")
+        ).hexdigest(),
+        "size_two_minimal": minimal_size == 2,
+        "size_two_nonminimal_reason": (
+            None
+            if minimal_size != 1
+            else "size-one exact separators exist"
+        ),
+        "target_truth_table_start_0_to_10": "10000000000",
+        "minimal_size": minimal_size,
+        "minimal_separator_count": len(minimal_separators),
+        "minimal_separator_counts_by_family":
+            dict(sorted(family_counts.items())),
+        "minimal_separators": minimal_separators,
+        "best_separator": {
+            "predicate": best_expression,
+            "reason": (
+                "one landed categorical read on the initial left token; "
+                "no threshold, comparison, future profile, or Boolean join"
+            ),
+        },
+    }
+
+
+def failure_anatomy(
+    fixture: dict[str, object],
+    starts: tuple[dict[str, object], ...],
+    enumeration: dict[str, object],
+) -> dict[str, object]:
+    """Certificate C: first all-doomed boundary and its common signature."""
+
+    dead_rows = tuple(
+        row
+        for row in enumeration["starts"]
+        if row["successful_assignment_count"] == 0
+    )
+    live_rows = tuple(
+        row
+        for row in enumeration["starts"]
+        if row["successful_assignment_count"] > 0
+    )
+    failure_rows = []
+    full_pairs = []
+    for row in dead_rows:
+        start = row["start"]
+        step = row["earliest_all_doomed_boundary"]
+        boundary = starts[start]["boundary_profiles"][step]
+        _boundary_step, contenders, left_profile, right_profile = boundary
+        full_pairs.append((left_profile, right_profile))
+        failure_rows.append(
+            {
+                "start": start,
+                "earliest_all_doomed_boundary": step,
+                "contenders": contenders,
+                "partial_assignments_after_boundary":
+                    row["backward_pruning"][step + 1][
+                        "partial_assignments"
+                    ],
+                "viable_partial_assignments_after_boundary":
+                    row["backward_pruning"][step + 1][
+                        "viable_partial_assignments"
+                    ],
+                "left_program_kind": left_profile[0],
+                "right_program_kind": right_profile[0],
+            }
+        )
+
+    shared_equal_components = []
+    discriminating_equal_components = []
+    success_boundary = starts[0]["boundary_profiles"][0]
+    for side_name, profile_index in (("left", 0), ("right", 1)):
+        for component_index, component_name in enumerate(PROFILE_NAMES):
+            values = tuple(
+                pair[profile_index][component_index]
+                for pair in full_pairs
+            )
+            if len(set(values)) == 1:
+                record = {
+                    "side": side_name,
+                    "component": component_name,
+                    "value": values[0],
+                }
+                shared_equal_components.append(record)
+                success_value = success_boundary[profile_index + 2][
+                    component_index
+                ]
+                if success_value != values[0]:
+                    discriminating_equal_components.append(
+                        {
+                            **record,
+                            "start_0_value": success_value,
+                        }
+                    )
+    mechanism_holds = (
+        all(
+            fixture["program"][row["start"]][0] != "source"
+            for row in dead_rows
+        )
+        and fixture["program"][0][0] == "source"
+    )
+    pruning_projection = tuple(
+        {
+            "start": row["start"],
+            "earliest": row["earliest_all_doomed_boundary"],
+            "layers": row["backward_pruning"],
+        }
+        for row in enumeration["starts"]
+    )
+    return {
+        "pass": (
+            tuple(row["start"] for row in dead_rows)
+            == tuple(range(1, RING_STATIONS))
+            and len(live_rows) == 1
+            and all(
+                row["earliest_all_doomed_boundary"] == 0
+                for row in dead_rows
+            )
+            and mechanism_holds
+        ),
+        "backward_pruning_definition": (
+            "a reachable state at depth d is viable iff one of its two "
+            "transitions reaches a viable state at d+1; the final viable "
+            "set is the exact allocator target"
+        ),
+        "failure_point_map": {
+            str(row["start"]): row["earliest_all_doomed_boundary"]
+            for row in dead_rows
+        },
+        "failure_points": tuple(failure_rows),
+        "backward_pruning_sha256": sha256(
+            compact(pruning_projection).encode("utf-8")
+        ).hexdigest(),
+        "full_15_component_profile_pair_common":
+            len(set(full_pairs)) == 1,
+        "distinct_full_failure_profile_pairs": len(set(full_pairs)),
+        "shared_exact_profile_components":
+            tuple(shared_equal_components),
+        "shared_exact_components_excluding_start_0":
+            tuple(discriminating_equal_components),
+        "common_discriminating_predicate_signature": {
+            "predicate":
+                'boundary[0].left.program_kind != "source"',
+            "holds_at_all_10_failure_points": mechanism_holds,
+            "holds_at_start_0": False,
+            "equivalent_start_form":
+                'token.left.program_kind != "source"',
+        },
+        "signature_outcome": (
+            "No single full profile pair, and no exact scalar equality "
+            "exclusive to all failures.  A common discriminating predicate "
+            "does exist: every all-doomed boundary-0 row lacks source on "
+            "the left; start 0 has source there."
+        ),
+        "mechanism_scope": (
+            "necessary-and-sufficient bounded signature on this complete "
+            "11-start battery; not a causal theorem for other fixtures"
+        ),
+    }
+
+
+def landed_computability(
+    separators: dict[str, object],
+    anatomy: dict[str, object],
+) -> dict[str, object]:
+    expression = 'token.left.program_kind == "source"'
+    constructive = (
+        separators["best_separator"]["predicate"] == expression
+        and anatomy["common_discriminating_predicate_signature"][
+            "holds_at_all_10_failure_points"
+        ]
+    )
+    return {
+        "pass": constructive,
+        "classification":
+            "COMPUTABLE_FROM_LANDED_LOCAL_QUANTITIES_AT_START",
+        "constructive_function": (
+            "D(start_data) = int("
+            'start_data.token_charge_rows[left].program_kind == "source")'
+        ),
+        "input_quantity": (
+            "program_kind on the initially occupied left token/charge row"
+        ),
+        "output_on_starts_0_to_10": (1,) + (0,) * 10,
+        "non_landed_information_required": (),
+        "ruling": (
+            "The unique satisfiable start is decidable at start time from "
+            "one landed local row-kind read.  Future simulated states, "
+            "boundary choices, target output, and start/station identity "
+            "are not inputs to D."
+        ),
+        "scope_caveat": (
+            "This classifies the held Cycle-752 battery exactly; it does "
+            "not promote source alignment to a universal sufficiency law."
+        ),
+    }
+
+
+def assignment_value(tree: ast.Module, name: str) -> ast.expr:
+    matches: list[ast.expr] = []
+    for node in tree.body:
+        if isinstance(node, ast.Assign) and any(
+            isinstance(target, ast.Name) and target.id == name
+            for target in node.targets
+        ):
+            matches.append(node.value)
+        elif (
+            isinstance(node, ast.AnnAssign)
+            and isinstance(node.target, ast.Name)
+            and node.target.id == name
+            and node.value is not None
+        ):
+            matches.append(node.value)
+    if len(matches) != 1:
+        raise AssertionError(("assignment census", name, len(matches)))
+    return matches[0]
+
+
+def function_names(tree: ast.Module) -> set[str]:
+    return {
+        node.name
+        for node in tree.body
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+    }
+
+
+def command_output(arguments: tuple[str, ...]) -> str:
+    return subprocess.run(
+        arguments,
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+
+
+def source_controls() -> dict[str, object]:
+    own_tree = ast.parse(
+        Path(__file__).read_text(encoding="utf-8"), filename=__file__
+    )
+    own_paths = ast.literal_eval(
+        assignment_value(own_tree, "AUDIT_INPUT_PATHS")
+    )
+    observed = {
+        path: sha256((ROOT / path).read_bytes()).hexdigest()
+        for path in AUDIT_INPUT_PATHS
+    }
+    support_observed = {
+        path: sha256((ROOT / path).read_bytes()).hexdigest()
+        for path in EXECUTABLE_SUPPORT_PATHS
+    }
+    required = {
+        AUDIT_INPUT_PATHS[0]: {
+            "allocator_expected",
+            "fixed_q_order_tick_blocks",
+            "route3_adjacent_full_battery",
+        },
+        AUDIT_INPUT_PATHS[1]: {
+            "fixture",
+            "functional_battery",
+            "functional_mapping",
+        },
+        AUDIT_INPUT_PATHS[2]: {
+            "build_fixture",
+            "contender_profile",
+            "enumerate_success_assignments",
+        },
+        AUDIT_INPUT_PATHS[3]: {
+            "build_fixture_own",
+            "contender_profile_own",
+            "enumerate_direct",
+        },
+    }
+    anchors = {}
+    for path in AUDIT_INPUT_PATHS:
+        tree = ast.parse(
+            (ROOT / path).read_text(encoding="utf-8"), filename=path
+        )
+        anchors[path] = tuple(sorted(required[path] & function_names(tree)))
+    branch = command_output(("git", "branch", "--show-current"))
+    head = command_output(("git", "rev-parse", "HEAD"))
+    required_parent = "c1b3f8fd2c7626e8b0a9be3f6c8b80fa418ba999"
+    parent_is_ancestor = subprocess.run(
+        ("git", "merge-base", "--is-ancestor", required_parent, "HEAD"),
+        cwd=ROOT,
+        check=False,
+        capture_output=True,
+        text=True,
+    ).returncode == 0
+    return {
+        "pass": (
+            own_paths == AUDIT_INPUT_PATHS
+            and all(not Path(path).is_absolute() for path in own_paths)
+            and all((ROOT / path).is_file() for path in own_paths)
+            and observed == EXPECTED_SHA256
+            and support_observed == EXPECTED_SUPPORT_SHA256
+            and all(
+                set(anchors[path]) == required[path]
+                for path in AUDIT_INPUT_PATHS
+            )
+            and _IMPORT_BLOCKER in sys.meta_path
+            and not any(
+                module in sys.modules
+                for module in COPIED_TEXT_ONLY_MODULES
+            )
+            and branch == "physics-loop/proof-grade-blockF12-20260729"
+            and parent_is_ancestor
+        ),
+        "audit_input_paths_literal": own_paths,
+        "all_paths_worktree_relative":
+            all(not Path(path).is_absolute() for path in own_paths),
+        "all_paths_exist":
+            all((ROOT / path).is_file() for path in own_paths),
+        "observed_sha256": observed,
+        "expected_sha256": EXPECTED_SHA256,
+        "sha256_match": observed == EXPECTED_SHA256,
+        "text_ast_only_function_anchors": anchors,
+        "import_blocklist": COPIED_TEXT_ONLY_MODULES,
+        "blocklist_active": _IMPORT_BLOCKER in sys.meta_path,
+        "blocked_modules_loaded": tuple(
+            module
+            for module in COPIED_TEXT_ONLY_MODULES
+            if module in sys.modules
+        ),
+        "executable_support_paths": EXECUTABLE_SUPPORT_PATHS,
+        "support_observed_sha256": support_observed,
+        "support_expected_sha256": EXPECTED_SUPPORT_SHA256,
+        "support_sha256_match":
+            support_observed == EXPECTED_SUPPORT_SHA256,
+        "git_branch": branch,
+        "git_head": head,
+        "required_parent_f11_sha": required_parent,
+        "required_parent_is_ancestor": parent_is_ancestor,
+        "third_party_packages": (),
+        "physics_arithmetic": (
+            "exact Python integer basis states and Boolean X/CNOT/TOF "
+            "updates; runtime timing is the only floating-point quantity"
+        ),
+    }
+
+
+def station_landed_table(
+    fixture: dict[str, object],
+) -> tuple[dict[str, object], ...]:
+    rows = []
+    for station, program_row in enumerate(fixture["program"]):
+        rows.append(
+            {
+                "station": station,
+                "program_kind": program_row[0],
+                "program_charge_row_index": program_row[1],
+                "semantic_gate_count":
+                    len(fixture["semantic_words"][station]),
+                "semantic_gate_vector_X_CNOT_TOF":
+                    fixture["semantic_vectors"][station],
+                "physical_gate_count":
+                    len(fixture["physical_words"][station]),
+                "physical_gate_vector_CNOT_TOF":
+                    fixture["physical_vectors"][station],
+                "rail_hop_distance_A_to_B":
+                    fixture["rail_hops"][station][0],
+                "rail_hop_distance_B_to_next_A":
+                    fixture["rail_hops"][station][1],
+            }
+        )
+    return tuple(rows)
+
+
+def core_experiment() -> dict[str, object]:
     fixture = build_fixture()
     starts = start_level_data(fixture)
     enumeration = enumerate_and_prune(fixture)
+    separators = separator_hunt(starts)
+    anatomy = failure_anatomy(fixture, starts, enumeration)
+    computability = landed_computability(separators, anatomy)
+    return {
+        "fixture": fixture,
+        "starts": starts,
+        "station_table": station_landed_table(fixture),
+        "enumeration": enumeration,
+        "separators": separators,
+        "anatomy": anatomy,
+        "computability": computability,
+    }
+
+
+def main() -> int:
+    started = perf_counter()
+    first = core_experiment()
+    second = core_experiment()
+    fixture = first["fixture"]
+    starts = first["starts"]
+    enumeration = first["enumeration"]
+    separators = first["separators"]
+    anatomy = first["anatomy"]
+    computability = first["computability"]
     certificate_a = {
         "pass": (
             len(PROFILE_COMPONENTS) == 15
@@ -566,34 +1240,159 @@ def main() -> int:
                 len(row["boundary_profiles"]) == RING_STATIONS
                 for row in starts
             )
+            and fixture["expected_sha256"] == EXPECTED_TARGET_SHA256
         ),
+        "profile_value_encoding": (
+            "each boundary row is (step,(left_station,right_station),"
+            "left_profile,right_profile); each profile is ordered exactly "
+            "by profile_component_names"
+        ),
+        "profile_component_names": PROFILE_NAMES,
         "profile_components": PROFILE_COMPONENTS,
         "start_quantity_provenance": START_QUANTITY_PROVENANCE,
+        "global_station_landed_table": first["station_table"],
         "starts": starts,
     }
-    certificate_c_partial = {
-        "pass":
-            enumeration["success_counts_by_start"]
-            == EXPECTED_SUCCESS_COUNTS,
-        "enumeration": enumeration,
+    certificate_b = separators
+    certificate_c = {
+        **anatomy,
+        "complete_enumeration": {
+            "assignment_encoding": enumeration["assignment_encoding"],
+            "assignments_per_start":
+                enumeration["assignments_per_start"],
+            "total_assignments": enumeration["total_assignments"],
+            "success_counts_by_start":
+                enumeration["success_counts_by_start"],
+            "expected_success_counts_by_start":
+                EXPECTED_SUCCESS_COUNTS,
+            "per_start": tuple(
+                {
+                    "start": row["start"],
+                    "successful_assignment_count":
+                        row["successful_assignment_count"],
+                    "successful_masks_sha256":
+                        row["successful_masks_sha256"],
+                    "successful_mask_range":
+                        row["successful_mask_range"],
+                    "distinct_final_outputs":
+                        row["distinct_final_outputs"],
+                    "earliest_all_doomed_boundary":
+                        row["earliest_all_doomed_boundary"],
+                }
+                for row in enumeration["starts"]
+            ),
+            "transition_cache": enumeration["transition_cache"],
+        },
     }
+    certificate_d = computability
+    controls = source_controls()
+    first_projection = {
+        "starts": first["starts"],
+        "station_table": first["station_table"],
+        "enumeration": first["enumeration"],
+        "separators": first["separators"],
+        "anatomy": first["anatomy"],
+        "computability": first["computability"],
+    }
+    second_projection = {
+        "starts": second["starts"],
+        "station_table": second["station_table"],
+        "enumeration": second["enumeration"],
+        "separators": second["separators"],
+        "anatomy": second["anatomy"],
+        "computability": second["computability"],
+    }
+    first_digest = sha256(
+        compact(first_projection).encode("utf-8")
+    ).hexdigest()
+    second_digest = sha256(
+        compact(second_projection).encode("utf-8")
+    ).hexdigest()
+    deterministic = (
+        first_projection == second_projection
+        and first_digest == second_digest
+    )
     runtime = perf_counter() - started
-    output = "\n".join(
-        (
-            "PASS CERTIFICATE_A_START_LEVEL_DATA :: "
-            + compact(certificate_a),
-            (
-                "PASS" if certificate_c_partial["pass"] else "FAIL"
-            )
-            + " CERTIFICATE_C_ENUMERATION_BASE :: "
-            + compact(certificate_c_partial),
-            f"OVERALL=INCREMENTAL_BASE runtime_seconds={runtime:.6f}",
+    controls.update(
+        {
+            "pass": (
+                controls["pass"]
+                and deterministic
+                and enumeration["success_counts_by_start"]
+                == EXPECTED_SUCCESS_COUNTS
+                and fixture["expected_sha256"]
+                == EXPECTED_TARGET_SHA256
+                and runtime < RUNTIME_LIMIT_SECONDS
+            ),
+            "determinism_run_1_sha256": first_digest,
+            "determinism_run_2_sha256": second_digest,
+            "determinism_match": deterministic,
+            "expected_target_sha256": EXPECTED_TARGET_SHA256,
+            "observed_target_sha256": fixture["expected_sha256"],
+            "runtime_seconds": runtime,
+            "runtime_limit_seconds": RUNTIME_LIMIT_SECONDS,
+            "runtime_within_limit": runtime < RUNTIME_LIMIT_SECONDS,
+            "stdout_bytes": 0,
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+            "stdout_within_limit": True,
+        }
+    )
+    certificates = (
+        ("CERTIFICATE_A_START_LEVEL_DATA", certificate_a),
+        ("CERTIFICATE_B_SEPARATOR_HUNT", certificate_b),
+        ("CERTIFICATE_C_FAILURE_ANATOMY", certificate_c),
+        ("CERTIFICATE_D_LANDED_COMPUTABILITY", certificate_d),
+        ("CERTIFICATE_E_CONTROLS", controls),
+    )
+
+    def render() -> str:
+        passed = all(
+            bool(certificate["pass"])
+            for _name, certificate in certificates
         )
-    ) + "\n"
+        lines = [
+            f"{'PASS' if certificate['pass'] else 'FAIL'} {name} :: "
+            f"{compact(certificate)}"
+            for name, certificate in certificates
+        ]
+        lines.append(
+            "OVERALL="
+            + ("CONFIRMED" if passed else "REFUTED")
+            + f" separator_count="
+            + str(separators["minimal_separator_count"])
+            + " best_separator="
+            + json.dumps(separators["best_separator"]["predicate"])
+            + " failure_signature="
+            + json.dumps(
+                anatomy["common_discriminating_predicate_signature"][
+                    "predicate"
+                ]
+            )
+            + " computability="
+            + computability["classification"]
+            + f" runtime_seconds={runtime:.6f}"
+        )
+        return "\n".join(lines) + "\n"
+
+    for _attempt in range(8):
+        output = render()
+        size = len(output.encode("utf-8"))
+        within = size < STDOUT_LIMIT_BYTES
+        if (
+            controls["stdout_bytes"] == size
+            and controls["stdout_within_limit"] == within
+        ):
+            break
+        controls["stdout_bytes"] = size
+        controls["stdout_within_limit"] = within
+        controls["pass"] = controls["pass"] and within
+    output = render()
     if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
         raise AssertionError(("stdout bound", len(output.encode("utf-8"))))
     sys.stdout.write(output)
-    return 0 if certificate_a["pass"] and certificate_c_partial["pass"] else 1
+    return 0 if all(
+        bool(certificate["pass"]) for _name, certificate in certificates
+    ) else 1
 
 
 if __name__ == "__main__":

@@ -5,11 +5,11 @@
   "cycle": 797,
   "date": "2026-07-30",
   "gauge_work_runner": {
-    "cache_sha256": "beafddcb8c34f2c5a4c5db208cb418ec859b4918d720b106674e9f7838098a73",
-    "internal_report_sha256": "598b2c34e3dc838ea08412a6d43f2c9b82eb446c1837be58728e5b0f3b8e1fc9",
+    "cache_sha256": "300295d64e8d6ba3fb65667b94b6a11ca004fc581e863c7622b64788c8f608bf",
+    "internal_report_sha256": "8a987b2eed17d232ca9187a588d6e7b8e5c73aed2cb47cca870773212eed805f",
     "maximum_one_mode_cleanup_residual": 6.675402828397881e-16,
     "minimum_environment_ray_overlap": 0.9999999999999989,
-    "script_sha256": "b9477b2fdcba4f6316e70d553d1e4c9f5a4d2513f831b596ab0947ba84ca2db3",
+    "script_sha256": "52c1d38b1bfab444b2db65d591af5a5cfe06dda9d8ba2dfe6760271670dc124e",
     "status": "PASS"
   },
   "held_scope": {

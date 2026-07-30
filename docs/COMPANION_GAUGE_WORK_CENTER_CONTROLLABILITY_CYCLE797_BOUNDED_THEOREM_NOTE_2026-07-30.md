@@ -32,7 +32,10 @@ duration, cadence, rate, energy, Record, occurrence, or Born weight.
 The Bell/correction work left by the landed Cycle-789 companion input channel
 has now been classified against the actual Cycle-720 subsystem factorization.
 On every tested box from one through thirty coarse cells, the output/reference
-character algebra transfers exactly. Every residual output--environment
+character algebra transfers exactly: the intended and realized output
+generators have zero binary-span and zero signed-span failures on every row,
+so subgroup-rank equality is not used as a surrogate for character identity.
+Every residual output--environment
 correlation vanishes after quotienting by the landed local gauge span, while
 quotienting by the logical even-CAR pairs removes none of it. Thus the tested
 residual is gauge work, not lost or corrupted logical information.

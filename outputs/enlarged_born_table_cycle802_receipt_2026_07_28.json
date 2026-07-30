@@ -1,0 +1,49 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle802_enlarged_born_table_2026_07_28.txt": "1dd4e6c11e6ecfc4dc3e40b5b2a67717580bebe7e05fb4c671bc6e2d8a8534ff",
+      "frontier_cycle802_enlarged_table_independent_check_2026_07_28.txt": "e5b7aa925ef82da209c1e10e136eaac99645b76bc1af40fc83e3f8e41706db63"
+    },
+    "carried_reference_copies": {
+      "scripts/frontier_cycle763_symmetry_broken_ensembles_2026_07_28.py": "d2205d1ed26f3aa1ea531502470fb6fcc91bffec3b94fb6781e9154442eb5724",
+      "scripts/frontier_cycle766_family_winning_mapping_2026_07_28.py": "f315180920ad6321ee41a32763f4a2606267e2bf7220f6a52cd42ce5e5382d66",
+      "scripts/frontier_cycle788_selector_scope_extension_2026_07_28.py": "5af27fd61c20fe3b25e9a172b63339d5fd4f5112631fe6d31c6e0fa95a7486f1"
+    },
+    "note": {
+      "path": "docs/ENLARGED_BORN_TABLE_CYCLE802_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "3b32b051caa26480d5d0de46e2a49bab97dd06dda24e87008a1e0c71f8854950"
+    },
+    "runners": {
+      "frontier_cycle802_enlarged_born_table_2026_07_28.py": "9670fdfcbd0b982484811abe5d91d7099afb815bcc5d5ee2929dc41633ab0fdd",
+      "frontier_cycle802_enlarged_table_independent_check_2026_07_28.py": "e76535b6576ff1665e618170ece068404bf7b47557b9a0f2a27c058f75440e33"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "caveat": "checker: 10/20 lawful selecting-supply variations change the ensemble rows and the table (0/20 change orientations) \u2014 orientation invariance is NOT ensemble-row invariance; the enlarged Born table is SUPPLY-SENSITIVE",
+    "fixed_supplies": "the extension's declared supply layer; the frozen assignment; everything the underlying packages declare",
+    "identity": "the 38-event table reproduces the frozen 766 numbers exactly (checker recounted)",
+    "keys": "decides_nothing true; first_new_content_point true",
+    "meaning": "Born rows now exist but carry the convention layer \u2014 the lane's closing move is deriving/grounding the selecting supplies, not more rows",
+    "not_derived": "the supplies; any Born verdict; the weight boundary (untouched)",
+    "outcome": "FIRST_NEW_CONTENT_POINT_SUPPLY_SENSITIVE",
+    "supervisor_patch": "absolute pinned paths materialized to worktree-relative copies; tuple patched; checker pin re-frozen; all re-verified",
+    "table": "46 events, 1,238 rows (116 new), frozen assignment: E0 +0.046 away (false->false); E1 -0.021 Born-ward with uniform +0.014 (false->false); E2 +0.013 (true->true); pooled -0.005/-0.008 (true->true)"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 802,
+  "date": "2026-07-30",
+  "result": {
+    "E1_delta": "-0.021 Born-ward (supply-sensitive)",
+    "identity": "exact",
+    "supply": "10/20 table-changing / 0/20 orientation-changing"
+  },
+  "status": "CYCLE802_ENLARGED_BORN_TABLE_PASS"
+}

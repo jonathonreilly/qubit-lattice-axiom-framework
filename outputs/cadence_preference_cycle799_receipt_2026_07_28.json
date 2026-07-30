@@ -1,0 +1,41 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle799_cadence_independent_check_2026_07_28.txt": "c56449beae3ec83c1774a2be6e88910323e6f3d9bebafdeec0675475fee32e9b",
+      "frontier_cycle799_cadence_preference_2026_07_28.txt": "add12251d7ca8bd6f31de44fd4139e5a898e73d4fda7bb394c205b43262252c8"
+    },
+    "note": {
+      "path": "docs/CADENCE_PREFERENCE_CYCLE799_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "681ac849cbc1460e36446513037e83c56d0d65ad191d3bf66a65565b4fe17db5"
+    },
+    "runners": {
+      "frontier_cycle799_cadence_independent_check_2026_07_28.py": "87f44e4178803b97b9807c662545267fb24d1bd9cf93a7929bb24140fb9968f1",
+      "frontier_cycle799_cadence_preference_2026_07_28.py": "6773ec05cc1db37a09f88232e7d1f8f9c4b87db98e5b620ad3ef57180ab1cddc"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "census": "primary: 21 landed laws classified by loop-nesting -> 8 orbit / 4 H-station / 9 macro / 0 layer; checker: no flips + 8 conservatively-missed 736 laws -> corrected split 13/7/9/0 (CENSUS_CORRECTED_VERDICT_CONFIRMED)",
+    "consequence": "first selection sub-orbit timing clock-dependent (H=2771/step10 finer vs 2772/step11 orbit); second clock-unanimous (H=4081/step11)",
+    "fixed_supplies": "the classification method (stated); the four-cadence vocabulary; everything the underlying packages declare",
+    "meaning": "the landed surface keeps plural time \u2014 the exact-time law's cadence convention cannot be removed by uniformity inheritance; the freedom rests on derivation or physics input",
+    "not_derived": "any preferred clock; the exact-time law's derivation",
+    "outcome": "NO_UNIFORM_PREFERENCE"
+  },
+  "checks": {
+    "independent_named_checks_failed": 1,
+    "independent_named_checks_passed": 4,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 799,
+  "date": "2026-07-30",
+  "result": {
+    "flips": 0,
+    "split": "13 orbit / 7 H / 9 macro / 0 layer (checker-completed)",
+    "verdict": "NO_UNIFORM_PREFERENCE"
+  },
+  "status": "CYCLE799_CADENCE_PREFERENCE_PASS"
+}

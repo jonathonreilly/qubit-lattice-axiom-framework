@@ -1,0 +1,45 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle773_refuse_all_completion_2026_07_28.txt": "2d3da4af51d46813a79c218061adb0e2492c145678b8dc7f8dc9fa7cc1dba2ee",
+      "frontier_cycle773_refuse_all_independent_check_2026_07_28.txt": "f32e994702f1c547fd909bb445e3ede3ec0def604cc6f8dc5d1f9dee79709ec1"
+    },
+    "note": {
+      "path": "docs/REFUSE_ALL_COMPLETION_CYCLE773_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "828e9495e28bc1bc5f79294b90c47cc5f09498f34e838fef5ed43c1b29a2ace7"
+    },
+    "runners": {
+      "frontier_cycle773_refuse_all_completion_2026_07_28.py": "c7b03fc8cbb4b6c8a0b40bb97e244c1e2ca84a2ac816d845ba3bb02ede88a869",
+      "frontier_cycle773_refuse_all_independent_check_2026_07_28.py": "37b53e7879228769a742b70b5171467da31e460cf4eaac89dab16a24fbddfaba"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "battery": "29/29 pass; off-tie bit-identical to Models A/B on 38 single-source + 11 k=1 (checker recounted)",
+    "c_prime": "the checker's stronger completion (runs the full non-tie machinery inside the tie epoch) is battery-equivalent: 29/29",
+    "fixed_supplies": "the refuse-all convention (the freedom is the finding); everything Cycle-719/736/750/758/767 declare",
+    "leg_status": "leg1_existence_forced false \u2014 existence of a resolution fact is not forced by the retained surface; leg 1 requires physics input; axiom_update_triggered false in every branch",
+    "model_c": "retained surface + refuse-all convention: the tie epoch runs, no alternative selected, no record forms",
+    "not_derived": "any leg-1 requirement; any leg-3 candidate; any axiom-update conclusion",
+    "outcome": "CONSISTENT_LEG1_EXISTENCE_NOT_FORCED",
+    "site_facts": "tied alternatives target {0,2,4},{0,2,9},{0,7,9} \u2014 all share site 0; one-record-per-site excludes only double-writing, never not-writing",
+    "vacuity_census": "26/29 substantive on Model C (9 of 12 tie-bearing substantive); exactly 3 vacuous = the axiom-record facts (empty-ledger truths at zero records)"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 35
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 773,
+  "date": "2026-07-29",
+  "result": {
+    "leg1_existence_forced": false,
+    "models_at_tie": "realize-alpha, realize-beta, realize-nothing \u2014 all lawful, identical off-tie",
+    "vacuity": "26 substantive / 3 vacuous",
+    "verdict": "CONSISTENT"
+  },
+  "status": "CYCLE773_REFUSE_ALL_COMPLETION_PASS"
+}

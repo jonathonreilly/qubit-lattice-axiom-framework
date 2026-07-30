@@ -341,6 +341,28 @@ def cache_inventory(
 ) -> dict[str, object]:
     """Extract, rather than assume, the exact named-lineage inventory."""
 
+    primary_by_cycle = {
+        int(row["cycle"]): row for row in REFERENCE_PRIMARIES
+    }
+    cache_by_cycle = {
+        int(row["cycle"]): row for row in REFERENCE_CACHES
+    }
+
+    def provenance(cycles: tuple[int, ...]) -> tuple[dict[str, object], ...]:
+        return tuple(
+            {
+                "cycle": cycle,
+                "commit": primary_by_cycle[cycle]["commit"],
+                "primary_path": primary_by_cycle[cycle]["path"],
+                "primary_blob": primary_by_cycle[cycle]["blob"],
+                "primary_sha256": primary_by_cycle[cycle]["sha256"],
+                "cache_path": cache_by_cycle[cycle]["path"],
+                "cache_blob": cache_by_cycle[cycle]["blob"],
+                "cache_sha256": cache_by_cycle[cycle]["sha256"],
+            }
+            for cycle in cycles
+        )
+
     cycle790 = json_line(cache_payloads[790], "DATA B ")
     cycle791_row = json_line(
         cache_payloads[791], "DATA D_KEY_ROW_095 "
@@ -372,6 +394,7 @@ def cache_inventory(
                 "residual_period":
                     int(certification["residual_period"]),
                 "source_cycles": provenance_cycles,
+                "provenance": provenance(provenance_cycles),
                 "source_cache_rows": (
                     (
                         "Cycle791 DATA D_KEY_ROW_095; "
@@ -406,6 +429,7 @@ def cache_inventory(
                 "preperiod": 0,
                 "residual_period": None,
                 "source_cycles": (814,),
+                "provenance": provenance((814,)),
                 "source_cache_rows":
                     "Cycle814 CERTIFICATE_B coverage_accounting",
             }
@@ -671,6 +695,410 @@ def verify_inventory(
     )
 
 
+def factorization(number: int) -> tuple[tuple[int, int], ...]:
+    remaining = number
+    rows = []
+    prime = 2
+    while prime * prime <= remaining:
+        exponent = 0
+        while remaining % prime == 0:
+            remaining //= prime
+            exponent += 1
+        if exponent:
+            rows.append((prime, exponent))
+        prime = 3 if prime == 2 else prime + 2
+    if remaining > 1:
+        rows.append((remaining, 1))
+    return tuple(rows)
+
+
+def factor_product(factors: tuple[tuple[int, int], ...]) -> int:
+    product = 1
+    for prime, exponent in factors:
+        product *= prime ** exponent
+    return product
+
+
+def lcm_pair(left: int, right: int) -> int:
+    return left // gcd(left, right) * right
+
+
+def gcd_many(values: Iterable[int]) -> int:
+    result = 0
+    for value in values:
+        result = gcd(result, int(value))
+    return result
+
+
+def lcm_many(values: Iterable[int]) -> int:
+    result = 1
+    for value in values:
+        result = lcm_pair(result, int(value))
+    return result
+
+
+def structure_arithmetic(
+    rows: tuple[dict[str, object], ...],
+) -> dict[str, object]:
+    periods = tuple(int(row["period"]) for row in rows)
+    unique_periods = tuple(sorted(set(periods)))
+    counts = Counter(periods)
+    factors = tuple(
+        {
+            "period": period,
+            "multiplicity": counts[period],
+            "factorization": factorization(period),
+        }
+        for period in unique_periods
+    )
+    divisibility_relations = tuple(
+        (left, right)
+        for left in unique_periods
+        for right in unique_periods
+        if left < right and right % left == 0
+    )
+    hasse_edges = tuple(
+        (left, right)
+        for left, right in divisibility_relations
+        if not any(
+            left < middle < right
+            and middle % left == 0
+            and right % middle == 0
+            for middle in unique_periods
+        )
+    )
+    period_strata = {
+        period: tuple(
+            sorted(
+                {
+                    int(row["k"])
+                    for row in rows
+                    if int(row["period"]) == period
+                }
+            )
+        )
+        for period in unique_periods
+    }
+    across_strata = tuple(
+        period
+        for period, strata in period_strata.items()
+        if len(strata) > 1
+    )
+    strict_ratios = tuple(
+        {
+            "numerator_period": numerator,
+            "denominator_period": denominator,
+            "reduced_ratio": (
+                Fraction(numerator, denominator).numerator,
+                Fraction(numerator, denominator).denominator,
+            ),
+        }
+        for numerator in unique_periods
+        for denominator in unique_periods
+        if numerator > denominator
+    )
+    strict_gcd = gcd_many(periods)
+    strict_lcm = lcm_many(periods)
+    diagnostic_values = (6, 288, 4464, 5952)
+    diagnostic_factors = tuple(
+        {
+            "value": value,
+            "factorization": factorization(value),
+            "scope": (
+                "STRICT_STATE_PERIOD"
+                if value in unique_periods
+                else (
+                    "CYCLE791_RESIDUAL_PERIOD_NOT_STATE_PERIOD"
+                    if value == 6
+                    else "CYCLE801_EXTERNAL_TO_STRICT_14"
+                )
+            ),
+        }
+        for value in diagnostic_values
+    )
+    late_clock_values = (288, 4464, 5952)
+    external_ratio = Fraction(5952, 4464)
+    return {
+        "period_multiset": tuple(sorted(periods)),
+        "period_census": dict(sorted(counts.items())),
+        "unique_periods": unique_periods,
+        "factor_table": factors,
+        "divisibility_relations": divisibility_relations,
+        "hasse_edges": hasse_edges,
+        "gcd": strict_gcd,
+        "gcd_factorization": factorization(strict_gcd),
+        "lcm": strict_lcm,
+        "lcm_factorization": factorization(strict_lcm),
+        "period_strata": period_strata,
+        "periods_recurring_across_strata": across_strata,
+        "strict_ratio_table": strict_ratios,
+        "diagnostic_factor_table": diagnostic_factors,
+        "Cycle801_external_ratio_5952_over_4464": (
+            external_ratio.numerator, external_ratio.denominator
+        ),
+        "late_clock_subset_scope":
+            "NOT_THE_STRICT_14_MULTISET; INCLUDES_EXTERNAL_CYCLE801_5952",
+        "late_clock_subset": late_clock_values,
+        "late_clock_subset_gcd": gcd_many(late_clock_values),
+        "late_clock_subset_lcm": lcm_many(late_clock_values),
+        "pass": (
+            len(periods) == 14
+            and counts == Counter({3: 9, 2: 2, 4464: 2, 288: 1})
+            and all(
+                factor_product(row["factorization"]) == row["period"]
+                for row in factors
+            )
+            and factorization(4464) == ((2, 4), (3, 2), (31, 1))
+            and factorization(5952) == ((2, 6), (3, 1), (31, 1))
+            and factorization(288) == ((2, 5), (3, 2))
+            and strict_gcd == 1
+            and strict_lcm == 8928
+            and divisibility_relations
+            == ((2, 288), (2, 4464), (3, 288), (3, 4464))
+            and hasse_edges == divisibility_relations
+            and not across_strata
+            and external_ratio == Fraction(4, 3)
+            and gcd_many(late_clock_values) == 48
+            and lcm_many(late_clock_values) == 17856
+        ),
+    }
+
+
+def circular_gaps(
+    positions: tuple[int, ...],
+) -> tuple[int, ...]:
+    ordered = tuple(sorted(positions))
+    return tuple(
+        (
+            ordered[(index + 1) % len(ordered)] - ordered[index]
+        ) % RING_STATIONS
+        for index in range(len(ordered))
+    )
+
+
+def canonical_rotation(
+    positions: tuple[int, ...],
+) -> tuple[int, ...]:
+    return min(
+        tuple(
+            sorted(
+                (position + shift) % RING_STATIONS
+                for position in positions
+            )
+        )
+        for shift in range(RING_STATIONS)
+    )
+
+
+def candidate_regularities(
+    rows: tuple[dict[str, object], ...],
+    structure: dict[str, object],
+) -> dict[str, object]:
+    properties = tuple(
+        {
+            "key": row["key"],
+            "period": int(row["period"]),
+            "k": int(row["k"]),
+            "tuple_size": len(tuple(row["positions"])),
+            "event": int(row["event"]),
+            "ordered_circular_gaps": circular_gaps(
+                tuple(row["positions"])
+            ),
+            "sorted_circular_gaps": tuple(
+                sorted(circular_gaps(tuple(row["positions"])))
+            ),
+            "canonical_rotation":
+                canonical_rotation(tuple(row["positions"])),
+            "pairwise_separated":
+                min(circular_gaps(tuple(row["positions"]))) >= 2,
+            "contains_zero": 0 in tuple(row["positions"]),
+        }
+        for row in rows
+    )
+    periods_by_k = {
+        k: tuple(
+            sorted(
+                {
+                    row["period"]
+                    for row in properties
+                    if row["k"] == k
+                }
+            )
+        )
+        for k in sorted({row["k"] for row in properties})
+    }
+    periods_by_event = {
+        event: tuple(
+            sorted(
+                {
+                    row["period"]
+                    for row in properties
+                    if row["event"] == event
+                }
+            )
+        )
+        for event in sorted({row["event"] for row in properties})
+    }
+    periods_by_sorted_gaps: dict[
+        tuple[int, ...], set[int]
+    ] = defaultdict(set)
+    periods_by_rotation: dict[
+        tuple[int, tuple[int, ...], int], set[int]
+    ] = defaultdict(set)
+    for row in properties:
+        periods_by_sorted_gaps[row["sorted_circular_gaps"]].add(
+            row["period"]
+        )
+        periods_by_rotation[
+            (row["k"], row["canonical_rotation"], row["event"])
+        ].add(row["period"])
+
+    short_orbit_rows = tuple(
+        row
+        for row in properties
+        if row["k"] == 2
+        and row["event"] == 3
+        and row["sorted_circular_gaps"] == (5, 6)
+    )
+    k4_rows = tuple(row for row in properties if row["k"] == 4)
+    exact_regularities = (
+        {
+            "candidate": "k_equals_family_tuple_size",
+            "holds": all(row["k"] == row["tuple_size"] for row in properties),
+            "evidence": f"{len(properties)}/{len(properties)} rows",
+        },
+        {
+            "candidate": "all_certified_positions_pairwise_separated",
+            "holds": all(row["pairwise_separated"] for row in properties),
+            "evidence": "every circular gap is >=2",
+        },
+        {
+            "candidate": "all_preperiods_zero",
+            "holds": all(int(row["preperiod"]) == 0 for row in rows),
+            "evidence": dict(
+                sorted(Counter(row["preperiod"] for row in rows).items())
+            ),
+        },
+        {
+            "candidate": "k4_period_constant_4464",
+            "holds": (
+                len(k4_rows) == 2
+                and {row["period"] for row in k4_rows} == {4464}
+            ),
+            "evidence": tuple(
+                (row["key"], row["sorted_circular_gaps"])
+                for row in k4_rows
+            ),
+        },
+        {
+            "candidate": (
+                "within_k2_event3_gap_5_6_period2_iff_contains_zero"
+            ),
+            "holds": (
+                len(short_orbit_rows) == 11
+                and all(
+                    (row["period"] == 2) == row["contains_zero"]
+                    for row in short_orbit_rows
+                )
+            ),
+            "evidence": tuple(
+                (row["key"], row["period"], row["contains_zero"])
+                for row in short_orbit_rows
+            ),
+        },
+        {
+            "candidate": "period4464_iff_k4_event1_in_strict_table",
+            "holds": all(
+                (row["period"] == 4464)
+                == (row["k"] == 4 and row["event"] == 1)
+                for row in properties
+            ),
+            "evidence": "exact biconditional over 14 rows",
+        },
+    )
+    tested_failures = (
+        {
+            "candidate": "nontrivial_common_period_divisor",
+            "holds": int(structure["gcd"]) > 1,
+            "counterexample": "gcd(2,3)=1",
+            "exact_result": structure["gcd"],
+        },
+        {
+            "candidate": "period_constant_in_every_stratum",
+            "holds": all(len(values) == 1 for values in periods_by_k.values()),
+            "counterexample": "k=2 has periods 2,3,288",
+            "exact_result": periods_by_k,
+        },
+        {
+            "candidate": "stratum_k_alone_determines_period",
+            "holds": all(len(values) == 1 for values in periods_by_k.values()),
+            "counterexample": "k=2 has three distinct periods",
+            "exact_result": periods_by_k,
+        },
+        {
+            "candidate": "event_alone_determines_period",
+            "holds":
+                all(len(values) == 1 for values in periods_by_event.values()),
+            "counterexample": "event=3 has periods 2 and 3",
+            "exact_result": periods_by_event,
+        },
+        {
+            "candidate": "sorted_spacing_multiset_determines_period",
+            "holds": all(
+                len(values) == 1
+                for values in periods_by_sorted_gaps.values()
+            ),
+            "counterexample":
+                "gap multiset (5,6) has periods 2 and 3",
+            "exact_result": {
+                str(key): tuple(sorted(value))
+                for key, value in sorted(periods_by_sorted_gaps.items())
+            },
+        },
+        {
+            "candidate":
+                "rotation_equivalent_key_structure_determines_period",
+            "holds": all(
+                len(values) == 1
+                for values in periods_by_rotation.values()
+            ),
+            "counterexample":
+                "k2/event3 canonical rotation (0,5) has periods 2 and 3",
+            "exact_result": {
+                str(key): tuple(sorted(value))
+                for key, value in sorted(periods_by_rotation.items())
+            },
+        },
+        {
+            "candidate": "some_period_recurs_across_strata",
+            "holds":
+                bool(structure["periods_recurring_across_strata"]),
+            "counterexample":
+                "strict k2 periods {2,3,288}; strict k4 period {4464}",
+            "exact_result":
+                structure["periods_recurring_across_strata"],
+        },
+        {
+            "candidate": "5952_is_a_member_of_the_strict_14_multiset",
+            "holds": 5952 in structure["period_multiset"],
+            "counterexample":
+                "5952 belongs to four extra Cycle801 k3 keys; union count 18",
+            "exact_result": structure["period_multiset"],
+        },
+    )
+    return {
+        "key_property_table": properties,
+        "periods_by_stratum": periods_by_k,
+        "periods_by_event": periods_by_event,
+        "exact_regularities": exact_regularities,
+        "tested_and_failed_candidates": tested_failures,
+        "pass": (
+            all(row["holds"] for row in exact_regularities)
+            and all(not row["holds"] for row in tested_failures)
+        ),
+    }
+
+
 def main() -> int:
     started = monotonic()
     source = source_controls()
@@ -727,20 +1155,191 @@ def main() -> int:
             "lineage_discrepancy": inventory["lineage_discrepancy"],
         },
     )
-    elapsed = monotonic() - started
-    check(
-        "CYCLE818_TABLE_STAGE",
-        certificate_a and elapsed < AUDIT_TIMEOUT_SEC,
+
+    structure = structure_arithmetic(verified_rows)
+    for factor_row in structure["factor_table"]:
+        emit("FACTOR_TABLE_ROW", factor_row)
+    for factor_row in structure["diagnostic_factor_table"]:
+        emit("DIAGNOSTIC_FACTOR_TABLE_ROW", factor_row)
+    emit(
+        "DIVISIBILITY_LATTICE",
         {
-            "status": "STRICT_TABLE_AND_RECURRENCE_READY",
-            "runtime_seconds": round(elapsed, 6),
+            "nodes": structure["unique_periods"],
+            "relations": structure["divisibility_relations"],
+            "hasse_edges": structure["hasse_edges"],
         },
     )
-    output = "\n".join(OUTPUT_LINES) + "\n"
+    emit("STRICT_RATIO_TABLE", structure["strict_ratio_table"])
+    emit(
+        "EXTERNAL_RATIO_CONTROL",
+        {
+            "scope":
+                "CYCLE801_5952_IS_NOT_A_MEMBER_OF_THE_STRICT_14_TABLE",
+            "5952_over_4464":
+                structure["Cycle801_external_ratio_5952_over_4464"],
+        },
+    )
+    check(
+        "CERTIFICATE_B_EXACT_PERIOD_ARITHMETIC",
+        bool(structure["pass"]),
+        {
+            key: value
+            for key, value in structure.items()
+            if key != "pass"
+        },
+    )
+
+    regularities = candidate_regularities(verified_rows, structure)
+    for row in regularities["key_property_table"]:
+        emit("KEY_STRUCTURE_ROW", row)
+    for row in regularities["exact_regularities"]:
+        emit("EXACT_REGULARITY_FOUND", row)
+    for row in regularities["tested_and_failed_candidates"]:
+        emit("TESTED_CANDIDATE_FAILED", row)
+    check(
+        "CERTIFICATE_C_EXACT_CANDIDATE_REGULARITIES",
+        bool(regularities["pass"]),
+        {
+            "exact_regularities": regularities["exact_regularities"],
+            "tested_and_failed_candidates":
+                regularities["tested_and_failed_candidates"],
+            "periods_by_stratum": regularities["periods_by_stratum"],
+            "periods_by_event": regularities["periods_by_event"],
+            "no_fitting_used": True,
+            "only_exact_equality_divisibility_and_tuple_facts": True,
+        },
+    )
+
+    identity_keys = {
+        (4, (0, 2, 4, 7), 1),
+        (4, (0, 2, 4, 8), 1),
+        (2, (0, 9), 2),
+    }
+    identity_source_rows = tuple(
+        row
+        for row in inventory["strict_rows"]
+        if row["key"] in identity_keys
+    )
+    identity_rows = verify_inventory(identity_source_rows)
+    for row in identity_rows:
+        emit("IDENTITY_CONTROL_ROW", row)
+    identity_periods = {
+        row["key"]: row["period"] for row in identity_rows
+    }
+    certificate_d = (
+        len(identity_rows) == 3
+        and all(row["pass"] and row["minimal_period"] for row in identity_rows)
+        and identity_periods[(4, (0, 2, 4, 7), 1)] == 4464
+        and identity_periods[(4, (0, 2, 4, 8), 1)] == 4464
+        and identity_periods[(2, (0, 9), 2)] == 288
+    )
+    check(
+        "CERTIFICATE_D_IDENTITY_CONTROLS",
+        certificate_d,
+        {
+            "Cycle814_controls": tuple(
+                {
+                    "key": row["key"],
+                    "period": row["period"],
+                    "minimal": row["minimal_period"],
+                    "proper_divisors_rejected":
+                        row["proper_divisors_rejected"],
+                    "anchor_state_sha256":
+                        row["anchor_state_sha256"],
+                    "anchor_plus_period_state_sha256":
+                        row["anchor_plus_period_state_sha256"],
+                }
+                for row in identity_rows
+                if row["k"] == 4
+            ),
+            "k_le_3_control": next(
+                {
+                    "key": row["key"],
+                    "period": row["period"],
+                    "residual_period": row["residual_period"],
+                    "minimal": row["minimal_period"],
+                    "anchor_state_sha256":
+                        row["anchor_state_sha256"],
+                    "anchor_plus_period_state_sha256":
+                        row["anchor_plus_period_state_sha256"],
+                }
+                for row in identity_rows
+                if row["k"] <= 3
+            ),
+        },
+    )
+
+    replay_rows = verify_inventory(inventory["strict_rows"])
+    primary_sha256 = digest(verified_rows)
+    replay_sha256 = digest(replay_rows)
+    source_public = {
+        key: value
+        for key, value in source.items()
+        if key != "cache_payloads"
+    }
+    elapsed = monotonic() - started
+    projected_stdout_bytes = (
+        len("\n".join(OUTPUT_LINES).encode("utf-8"))
+        + len(compact(source_public).encode("utf-8"))
+        + 16 * 1024
+    )
+    certificate_e = (
+        source["pass"]
+        and not IMPORT_FIREWALL.hits
+        and verified_rows == replay_rows
+        and primary_sha256 == replay_sha256
+        and elapsed < AUDIT_TIMEOUT_SEC
+        and projected_stdout_bytes < STDOUT_LIMIT_BYTES
+    )
+    check(
+        "CERTIFICATE_E_SHA_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT",
+        certificate_e,
+        {
+            "source_controls": source_public,
+            "determinism": {
+                "exact_row_match": verified_rows == replay_rows,
+                "primary_table_sha256": primary_sha256,
+                "replay_table_sha256": replay_sha256,
+                "pass":
+                    verified_rows == replay_rows
+                    and primary_sha256 == replay_sha256,
+            },
+            "runtime_seconds": round(elapsed, 6),
+            "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+            "projected_stdout_bytes": projected_stdout_bytes,
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        },
+    )
+
+    passed = all(CHECKS.values())
+    terminal = {
+        "terminal": (
+            "CYCLE818_PERIOD_STRUCTURE_CENSUS_PASS"
+            if passed
+            else "CYCLE818_PERIOD_STRUCTURE_CENSUS_HONEST_FAIL"
+        ),
+        "pass": passed,
+        "strict_row_count": len(verified_rows),
+        "strict_period_census": structure["period_census"],
+        "strict_gcd": structure["gcd"],
+        "strict_lcm": structure["lcm"],
+        "periods_recurring_across_strata":
+            structure["periods_recurring_across_strata"],
+        "lineage_conflict":
+            inventory["lineage_discrepancy"]["conclusion"],
+        "table_sha256": primary_sha256,
+        "runtime_seconds": round(monotonic() - started, 6),
+    }
+    output = (
+        "\n".join(OUTPUT_LINES)
+        + "\nFINAL "
+        + compact(terminal)
+        + "\n"
+    )
     if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
         raise AssertionError(("stdout limit", len(output.encode("utf-8"))))
     sys.stdout.write(output)
-    return 0 if all(CHECKS.values()) else 1
+    return 0 if passed else 1
 
 
 if __name__ == "__main__":

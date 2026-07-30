@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle787_k5_stratum_unified_veto_2026_07_28.txt": "a8b8a95c62f3f124ceaf68409f526d5d332ecd047953d3e0895d9acda49f4bf2",
+      "frontier_cycle787_veto_independent_check_2026_07_28.txt": "5a25114939649dadf88cf0ef62a3b0e6a85d8503dbf712edbdc65f79cc83fdbf"
+    },
+    "note": {
+      "path": "docs/K5_STRATUM_UNIFIED_VETO_CYCLE787_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "ab76bc141acec30669303074cadbe170caee6d25dbec682d599bd6fdcb56f483"
+    },
+    "runners": {
+      "frontier_cycle787_k5_stratum_unified_veto_2026_07_28.py": "177c24792478009a76376c06105594181587cf7d318d562060cafec40088707c",
+      "frontier_cycle787_veto_independent_check_2026_07_28.py": "6055a9f342d98a9f471ada39898003ddb1a6712e7cf939307eb4fcb5c26301d0"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "census_total": "k=0..5 complete: configs (1,11,44,77,55,11); family-epochs (0,4,16,28,20,4); k=1 unique everywhere; k=3 alone has survivors and ties (3/7/18); k=2,4,5 empty",
+    "controls": "758 k=2 and 784 k=3/k=4 reproduced exactly; determinism byte-identical",
+    "fixed_supplies": "the 784 machinery (basis stated); everything 719/736/750/758/784 declare",
+    "k5": "11 configs, 1 lawful family, 4 family-epochs: all zero-survivor (0 unique/0 ties/0 covariance)",
+    "not_derived": "the veto's correction/reinterpretation; leg 1; the min/max mirror; actuality/probability/weights",
+    "outcome": "CENSUS_TOTAL_ONE_LAW",
+    "unified_veto": "ALL 638 zero-survivor exclusions attributed to clean_postimage (176/198/220/44); checker CONFIRMED under BOTH readings \u2014 no other exclusion co-fires anywhere (every other fire count exactly zero)"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 787,
+  "date": "2026-07-30",
+  "result": {
+    "census": "total (k=0..5)",
+    "k5": "4/4 zero-survivor",
+    "veto": "sole under both readings; 638/638; zero co-firing"
+  },
+  "status": "CYCLE787_K5_STRATUM_UNIFIED_VETO_PASS"
+}

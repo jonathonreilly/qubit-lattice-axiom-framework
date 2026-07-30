@@ -1195,7 +1195,6 @@ def main() -> int:
         "runtime_seconds": round(elapsed, 6),
     }
     report["runner_exact"] = all(CHECKS.values())
-    report["pass"] = report["runner_exact"]
     report["terminal"] = (
         "CYCLE817_GENERAL_B_SECTOR_THEOREM_HONEST_GAP"
         if report["runner_exact"]
@@ -1223,9 +1222,9 @@ def main() -> int:
             "checks": dict(sorted(CHECKS.items())),
             "full_stdout_bytes": len(output_bytes),
             "runner_exact": False,
-            "pass": False,
+            "theorem_closed": False,
             "reason": "stdout bound exceeded",
-            "terminal": "CYCLE817_GENERAL_B_SECTOR_THEOREM_HONEST_FAIL",
+            "terminal": "CYCLE817_GENERAL_B_SECTOR_AUDIT_RUNNER_FAIL",
         }
         print(json.dumps(fallback, sort_keys=True, separators=(",", ":")))
         return 1

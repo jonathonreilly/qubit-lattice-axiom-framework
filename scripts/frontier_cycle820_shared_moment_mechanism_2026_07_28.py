@@ -608,10 +608,12 @@ def arithmetic_certificate(
     }
     centered_relation["status"] = (
         "HOLDS_EXACTLY"
-        if len(set(centered_relation["machine_values"].values())) == 1
-        and centered_relation["machine_values"]["left"]
+        if centered_relation["machine_values"]["left"]
+        == centered_relation["machine_values"]["right"]
         == 2 * TARGET_MOMENT
-        and centered_relation["machine_values"]["lower"] == TARGET_MOMENT
+        and centered_relation["machine_values"]["lower"]
+        == centered_relation["machine_values"]["upper"]
+        == TARGET_MOMENT
         else "FAILS"
     )
     result = {

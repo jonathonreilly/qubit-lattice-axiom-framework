@@ -1,0 +1,78 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_truncated_fock_fixture_verifier_2026_07_28.txt": "449a15df79511555a1a9348ed5d8411d9168befc5a91c0aba23b6ba571b33299",
+      "frontier_truncated_fock_fixture_verifier_independent_check_2026_07_28.txt": "1def1e7ae1438c427dbac28fcfa11ccd8a9270d97ca94608294442aa51b24c84"
+    },
+    "note": {
+      "path": "docs/TRUNCATED_FOCK_FIXTURE_VERIFIER_NOTE_2026-07-28.md",
+      "sha256": "1b767ab99d1adaa39ad9c4242be6f316cd1f4b581d3816cd53d2e57e62afe9c9"
+    },
+    "runners": {
+      "frontier_truncated_fock_fixture_verifier_2026_07_28.py": "4c4c3d8d828937c453f459ab62a12232fc7ee245ef470a631a63c1693a99ea44",
+      "frontier_truncated_fock_fixture_verifier_independent_check_2026_07_28.py": "7dce0c2e90a847d7a2af536e685582047df205f8f491889ec569caf6d09df407"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "candidate_input_port": false,
+    "certified_number_layers": [
+      0,
+      1,
+      2
+    ],
+    "complete_fock_columns": 57344,
+    "component_labels": [
+      "matter",
+      "component_1",
+      "component_2"
+    ],
+    "component_labels_construct_degrees_of_freedom": false,
+    "equal_split_status": "supplied_not_derived",
+    "full_fock_claim": false,
+    "omitted_number_layers": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "parent_harness_registration": false,
+    "semantic_firewall_claim": false,
+    "truncated_columns": 6776
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_failed": 0,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "meta",
+  "date": "2026-07-28",
+  "dependencies": {
+    "truncated_source_runner": {
+      "path": "scripts/frontier_truncated_fock_equal_split_support_2026_07_28.py",
+      "sha256": "05853a493ddc083ba3a4f63f7d41d80b97e7d6d9a2b57be83145407fd5f501d0"
+    },
+    "truncated_source_runner_checker": {
+      "path": "scripts/frontier_truncated_fock_equal_split_independent_check_2026_07_28.py",
+      "sha256": "dd0f66f4b44008df5b38fe0d5908753caa3257f7528d868ad8705b1af39bcffc"
+    }
+  },
+  "result": {
+    "always_accept_mutation_caught": true,
+    "dependency_pins_verified": true,
+    "public_classifier": {
+      "canonical": "ACCEPT",
+      "carrier_promotion": "REJECT",
+      "derived_equal_split": "REJECT",
+      "full_fock_promotion": "REJECT",
+      "pin_drift": "DRIFT",
+      "uncertified_layer": "REJECT"
+    },
+    "source_checker": "7/7",
+    "source_runner": "10/10"
+  },
+  "status": "TRUNCATED_FOCK_FIXTURE_VERIFIER_PASS",
+  "tool_role": "non-authoritative fixed-pin truncated-fixture verification"
+}

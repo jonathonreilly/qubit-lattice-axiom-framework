@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_truncated_fock_fixture_verifier_independent_check_2026_07_28.py
+runner_sha256: 7dce0c2e90a847d7a2af536e685582047df205f8f491889ec569caf6d09df407
+input_fingerprint_sha256: 10c64d412ab1a1cbf9555ff578059f95d0d8c58dbbef2b33fc0569f4d5924f91
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 1.68
+status: ok
+----- stdout -----
+PASS the verifier has fixed current-main dependencies and no caller oracle :: {'classifier_args': ('record',), 'expected_contract': {'certified_layers': [{'active_channels': 0, 'number': 0}, {'active_channels': 6, 'number': 1}, {'active_channels': 24, 'number': 2}], 'claim_scope': 'two-cell n_left,n_right<=2 conditional bookkeeping support', 'complete_columns': 57344, 'complete_number_layers': [0, 1, 2, 3, 4, 5, 6], 'component_labels': ['matter', 'component_1', 'component_2'], 'component_labels_construct_degrees_of_freedom': False, 'equal_split': {'status': 'supplied_not_derived', 'weights': [1.0, 1.0]}, 'full_fock_claim': False, 'omitted_number_layers': [3, 4, 5, 6], 'truncated_columns': 6776}, 'forbidden_terms': [], 'source_checker_path': 'scripts/frontier_truncated_fock_equal_split_independent_check_2026_07_28.py', 'source_checker_sha256': 'dd0f66f4b44008df5b38fe0d5908753caa3257f7528d868ad8705b1af39bcffc', 'source_path': 'scripts/frontier_truncated_fock_equal_split_support_2026_07_28.py', 'source_sha256': '05853a493ddc083ba3a4f63f7d41d80b97e7d6d9a2b57be83145407fd5f501d0'}
+PASS clean-room enumeration distinguishes the bounded slice from full Fock space :: {'alpha_totals': {'0.0': 2.0, '0.25': 2.0, '1.0': 2.0, '1.7': 2.0, '2.0': 2.0, '3.0': 2.0}, 'anchor_weight': 0.12589921612871377, 'channel_counts': (0, 6, 24, 36, 24, 6, 0), 'mask_counts': (1, 6, 15, 20, 15, 6, 1)}
+PASS the repaired bounded source and its checker rerun directly :: {'source_summary': {'fail': 0, 'pass': 10}, 'source_checker_final': 'ALL_PASS', 'source_checker_summary': {'fail': 0, 'pass': 7}}
+PASS the live verifier emits one accepted bounded record :: {'final_count': 1, 'returncode': 0, 'verdict': 'ACCEPT'}
+PASS the public classifier rejects every scope and interpretation mutation :: {'canonical': 'ACCEPT', 'full_fock_promotion': 'REJECT', 'derived_equal_split': 'REJECT', 'carrier_promotion': 'REJECT', 'uncertified_layer': 'REJECT', 'pin_drift': 'DRIFT'}
+PASS the checker fails closed against an always-accept classifier mutation :: {'caught': True, 'mutant_matrix': {'canonical': 'ACCEPT', 'full_fock_promotion': 'ACCEPT', 'derived_equal_split': 'ACCEPT', 'carrier_promotion': 'ACCEPT', 'uncertified_layer': 'ACCEPT', 'pin_drift': 'ACCEPT'}}
+SUMMARY {'pass': 6, 'fail': 0, 'runtime_seconds': 1.591067}
+FINAL ALL_PASS
+
+----- stderr -----
+

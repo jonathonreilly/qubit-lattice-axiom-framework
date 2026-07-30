@@ -878,6 +878,95 @@ class BatchExitSemanticsTest(unittest.TestCase):
         report.append({"cid": "other", "result": "validation_failed"})
         self.assertTrue(batch.report_has_hard_blocker(report))
 
+    def test_prompt_transport_quarantine_makes_only_its_failure_resumable(self):
+        report = [
+            {"cid": "quarantined", "result": "prompt_transport_blocked"},
+            {
+                "cid": "quarantined",
+                "result": batch.PROMPT_TRANSPORT_QUARANTINE_RESULT,
+            },
+        ]
+        self.assertFalse(batch.report_has_hard_blocker(report))
+
+        report.append({"cid": "other", "result": "prompt_transport_blocked"})
+        self.assertTrue(batch.report_has_hard_blocker(report))
+
+    def test_batch_quarantines_untransportable_claim_and_exits_cleanly(self):
+        row = {
+            "claim_id": "oversized",
+            "claim_type": "bounded_theorem",
+            "criticality": "ordinary",
+        }
+        lock = mock.Mock()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            workdir = root / "batch"
+            quarantine = root / "campaign-row-exclusions.jsonl"
+            with mock.patch.dict(
+                os.environ,
+                {"AUDIT_BATCH_WORKDIR": str(workdir)},
+            ), mock.patch.object(
+                sys,
+                "argv",
+                [
+                    "orchestrate_audit_batch.py",
+                    "--claims",
+                    "oversized",
+                    "--max-workers",
+                    "1",
+                    "--rounds",
+                    "1",
+                    "--campaign-quarantine-file",
+                    str(quarantine),
+                ],
+            ), mock.patch.object(
+                batch,
+                "acquire_exclusive_drain_lock",
+                return_value=lock,
+            ), mock.patch.object(
+                batch, "clean_main_error", return_value=None
+            ), mock.patch.object(
+                batch, "load_rows", return_value={"oversized": row}
+            ), mock.patch.object(
+                batch, "scope_for_args", return_value={"oversized"}
+            ), mock.patch.object(
+                batch, "compute_targets", return_value=([row], [])
+            ), mock.patch.object(
+                batch,
+                "launch_worker",
+                side_effect=batch.PromptTransportBlockedError(
+                    "prompt remains 1636029 chars after removing rendered N8"
+                ),
+            ), mock.patch.object(
+                batch, "start_progress_ticker"
+            ), mock.patch.object(
+                batch, "maybe_progress_summary"
+            ), mock.patch.object(
+                batch, "wait_workers"
+            ) as wait_workers:
+                rc = batch.main()
+
+            records = batch.load_campaign_exclusion_records(quarantine)
+            report = [
+                json.loads(line)
+                for line in (workdir / "report.jsonl").read_text().splitlines()
+            ]
+
+        self.assertEqual(rc, 0)
+        self.assertEqual(
+            records[0]["reason"],
+            batch.PROMPT_TRANSPORT_QUARANTINE_RESULT,
+        )
+        self.assertEqual(
+            {item["result"] for item in report},
+            {
+                "prompt_transport_blocked",
+                batch.PROMPT_TRANSPORT_QUARANTINE_RESULT,
+            },
+        )
+        wait_workers.assert_not_called()
+        lock.close.assert_called_once_with()
+
     def test_banked_clean_seat_defers_only_the_invalid_peer(self):
         report = [
             {"cid": "row", "result": "validation_failed"},
@@ -1240,6 +1329,28 @@ class SchemaRecoveryTest(unittest.TestCase):
             by_claim["transaction"]["failures"][0]["detail"],
             "pipeline failed",
         )
+
+    def test_prompt_transport_exclusion_persists_exact_packet_failure(self):
+        report = [
+            {
+                "cid": "oversized",
+                "pass": 1,
+                "result": "prompt_transport_blocked",
+                "detail": "complete packet remains 1636029 chars",
+            }
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "quarantine.jsonl"
+            batch.persist_prompt_transport_quarantines(
+                path, {"oversized"}, report
+            )
+            records = batch.load_campaign_exclusion_records(path)
+
+        self.assertEqual(
+            records[0]["reason"],
+            batch.PROMPT_TRANSPORT_QUARANTINE_RESULT,
+        )
+        self.assertEqual(records[0]["failures"], report)
 
     def test_mixed_seat_causes_persist_both_typed_reasons(self):
         report = [
@@ -4170,6 +4281,123 @@ class CampaignContractTest(unittest.TestCase):
             )
 
         self.assertEqual(actual, expected)
+
+    def test_batch_worker_bounds_oversized_development_n8_packet(self):
+        cid = "oversized-development"
+        row = {
+            "claim_id": cid,
+            "claim_type": "bounded_theorem",
+            "deps": [],
+        }
+        candidates = [
+            {
+                "candidate_id": f"candidate-{index}",
+                "evidence": "x" * 2500,
+            }
+            for index in range(450)
+        ]
+        full_text = json.dumps(
+            {
+                "candidate_universe_count": len(candidates),
+                "candidate_universe_sha256": "f" * 64,
+                "candidates": candidates,
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        cross_path = batch.audit_runner.no_go_discipline_gate.cross_cycle_index_path(
+            cid
+        )
+        manifest = {
+            cross_path: {
+                "path": cross_path,
+                "roles": ["cross_cycle_index"],
+                "text": full_text,
+            }
+        }
+        prompt = (
+            "restricted packet\n"
+            + full_text
+            + batch.audit_runner.OUTPUT_INSTRUCTIONS_MARKER
+            + "\noutput contract"
+        )
+        self.assertGreater(
+            len(prompt), batch.audit_runner.CODEX_INPUT_CHAR_LIMIT
+        )
+
+        with mock.patch.object(
+            batch.audit_runner.no_go_discipline_gate,
+            "forensic_mode",
+            return_value=False,
+        ):
+            fitted, metadata = batch.fit_worker_prompt_to_transport_limit(
+                row,
+                {cid: row},
+                prompt,
+                manifest,
+            )
+
+        self.assertLessEqual(
+            len(fitted), batch.audit_runner.CODEX_INPUT_CHAR_LIMIT
+        )
+        self.assertIsNotNone(metadata)
+        self.assertLess(
+            metadata["rendered_candidates"],
+            metadata["authenticated_candidates"],
+        )
+        self.assertIn(
+            "development-tier transport bound does not force a verdict",
+            fitted,
+        )
+        self.assertEqual(
+            manifest[cross_path]["transport_bounded_full_candidate_count"],
+            len(candidates),
+        )
+
+    def test_batch_worker_marks_no_go_transport_bound_forensic(self):
+        cid = "forensic-target"
+        row = {"claim_id": cid, "claim_type": "no_go"}
+        expected_metadata = {
+            "authenticated_candidates": 2,
+            "rendered_candidates": 1,
+            "prompt_chars_before": 20,
+            "prompt_chars_after": 10,
+        }
+        with mock.patch.object(
+            batch.audit_runner,
+            "fit_prompt_to_transport_limit",
+            return_value=("fitted", expected_metadata),
+        ) as fitter, mock.patch.object(
+            batch.audit_runner.no_go_discipline_gate,
+            "forensic_mode",
+            return_value=False,
+        ):
+            actual = batch.fit_worker_prompt_to_transport_limit(
+                row,
+                {cid: row},
+                "oversized",
+                {},
+            )
+
+        self.assertEqual(actual, ("fitted", expected_metadata))
+        self.assertTrue(fitter.call_args.kwargs["forensic_bound"])
+
+    def test_batch_launch_types_untransportable_complete_packet(self):
+        row = {"claim_id": "oversized", "claim_type": "bounded_theorem"}
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(
+            batch.audit_runner,
+            "render_prompt",
+            return_value="oversized prompt",
+        ), mock.patch.object(
+            batch,
+            "fit_worker_prompt_to_transport_limit",
+            side_effect=ValueError("complete packet still too large"),
+        ):
+            with self.assertRaisesRegex(
+                batch.PromptTransportBlockedError,
+                "complete packet still too large",
+            ):
+                batch.launch_worker(row, {"oversized": row}, 1, Path(tmp), 1)
 
     def test_packet_fingerprint_binds_dependency_bytes_and_seat_provenance(self):
         with tempfile.TemporaryDirectory() as tmp:

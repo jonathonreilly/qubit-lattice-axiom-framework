@@ -211,6 +211,12 @@ def compute_quarantine_count() -> int:
     return campaign_exclusion_count(batch.COMPUTE_QUARANTINE_RESULT)
 
 
+def prompt_transport_quarantine_count() -> int:
+    return campaign_exclusion_count(
+        batch.PROMPT_TRANSPORT_QUARANTINE_RESULT
+    )
+
+
 def claim_transaction_quarantine_count() -> int:
     return campaign_exclusion_count(batch.CLAIM_TRANSACTION_QUARANTINE_RESULT)
 
@@ -257,6 +263,9 @@ def summary_line(final: bool = False) -> str:
         exclusions = campaign_exclusion_counts()
         schema_count: int | str = exclusions[batch.SCHEMA_QUARANTINE_RESULT]
         compute_count: int | str = exclusions[batch.COMPUTE_QUARANTINE_RESULT]
+        transport_count: int | str = exclusions[
+            batch.PROMPT_TRANSPORT_QUARANTINE_RESULT
+        ]
         transaction_count: int | str = exclusions[
             batch.CLAIM_TRANSACTION_QUARANTINE_RESULT
         ]
@@ -266,7 +275,8 @@ def summary_line(final: bool = False) -> str:
     except (OSError, ValueError):
         # The main control path treats malformed campaign state as a hard stop.
         # Heartbeat/final summaries remain printable without hiding that state.
-        schema_count = compute_count = transaction_count = blocked_count = "invalid"
+        schema_count = compute_count = transport_count = "invalid"
+        transaction_count = blocked_count = "invalid"
     return (
         f"== audit-loop {'final ' if final else ''}summary "
         f"elapsed={elapsed // 3600}h{(elapsed % 3600) // 60:02d}m "
@@ -280,6 +290,7 @@ def summary_line(final: bool = False) -> str:
         f"remaining_lane_blockers={blockers if blockers is not None else 'unknown'} "
         f"schema_quarantined={schema_count} "
         f"compute_quarantined={compute_count} "
+        f"prompt_transport_quarantined={transport_count} "
         f"transaction_quarantined={transaction_count} "
         f"blocked_row_reentries={blocked_count}"
     )
@@ -1355,6 +1366,13 @@ def main(argv: list[str] | None = None) -> int:
                         "fixed point excludes compute-required rows until their "
                         "runner cache, sliced certificate, or independent "
                         f"derivation is repaired: {args.campaign_quarantine_file}"
+                    )
+                if exclusions[batch.PROMPT_TRANSPORT_QUARANTINE_RESULT]:
+                    emit(
+                        "fixed point excludes packets whose complete "
+                        "authenticated evidence exceeds the Codex transport "
+                        "limit; split or narrow their load-bearing packet "
+                        f"before a new campaign: {args.campaign_quarantine_file}"
                     )
                 if exclusions[batch.CLAIM_TRANSACTION_QUARANTINE_RESULT]:
                     emit(

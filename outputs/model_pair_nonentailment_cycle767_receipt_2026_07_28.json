@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle767_model_pair_independent_check_2026_07_28.txt": "1b05943c4f9c6742d69952c72f3b256616f5bae7423fbb5ce7fc971c11430efc",
+      "frontier_cycle767_model_pair_nonentailment_2026_07_28.txt": "c2446e4bf59fca3b59e17346902dc53c37e3ea7f6925cdc7209415545c3f7b59"
+    },
+    "note": {
+      "path": "docs/MODEL_PAIR_NONENTAILMENT_CYCLE767_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "d1e81cbf2cced20f5d761cfaac9ee8fc59d491d81217598c3dbb6f79b9a189f0"
+    },
+    "runners": {
+      "frontier_cycle767_model_pair_independent_check_2026_07_28.py": "7f2d31ddf3dc3a4a4520a7c93202812636f31dfc5c19597bd7d8ff911af73f38",
+      "frontier_cycle767_model_pair_nonentailment_2026_07_28.py": "4132fed85d117e738877ce66603f3f410d4e2809149f5058523c13d0090a3543"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "battery": "29/29 applicable retained checks pass in BOTH models; 38/38 single-source agreement; leakage attack 0 observable differences off-tie",
+    "fixed_supplies": "tie conventions alpha/beta (the completions' free choices); everything Cycle-719/736/750/758 declare",
+    "legs": "leg1 NOT_YET_DEMONSTRATED; leg3 NO_DISTINGUISHED_CANDIDATE; axiom_update_triggered false",
+    "not_derived": "leg-1 requirement; leg-3 candidate; bare-axiom statement; k=3,4 full strata",
+    "outcome": "LEG2_PROVEN_RETAINED_SCOPE",
+    "scope_chain": "RETAINED scope exactly; bare-axiom transfer NOT proven here",
+    "theorem": "the retained surface does not entail the realized alternative at the frozen k=3 tie (two completions: alpha->(0,2,4), beta->(0,7,9))"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 9,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 767,
+  "date": "2026-07-29",
+  "result": {
+    "leg2": "PROVED_AT_RETAINED_SCOPE",
+    "models": "A: alpha->(0,2,4); B: beta->(0,7,9)",
+    "off_tie": "invisible (0 differences, 38+11 cases)",
+    "update_triggered": false
+  },
+  "status": "CYCLE767_MODEL_PAIR_NONENTAILMENT_PASS"
+}

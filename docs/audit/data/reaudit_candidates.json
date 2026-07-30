@@ -62,31 +62,6 @@
     {
       "audit_independence_required": "any_non_self",
       "audit_status": "audited_conditional",
-      "cached_runner_stdout_chars": 11155,
-      "candidate_reason": "runner_stdout_transport_unclipped_by_head_tail_v2",
-      "claim_id": "klein_four_product_bz_corners_forces_d_four_narrow_theorem_note_2026-05-26",
-      "claim_scope": "The visible core finite-group theorem that, for integers d >= 2, (Z_2)^d is isomorphic to V_4 x V_4 iff d = 4, excluding physical Brillouin-zone realization or spacetime-dimension selection; clipped source material was not fully audited.",
-      "claim_type": "positive_theorem",
-      "criticality": "leaf",
-      "criticality_rank": 0,
-      "current_dep_effective_status": {},
-      "current_runner_stdout_char_limit": 20000,
-      "deps": [],
-      "direct_in_degree": 1,
-      "effective_status": "audited_conditional",
-      "generated_order": 2,
-      "improved_dependencies": [],
-      "legacy_runner_stdout_char_limit": 6000,
-      "load_bearing_score": 2.5,
-      "note_hash": "9f4bb728f1e821ee10d079ef17d4442cb91f003eb17e08c5881e6911c211684e",
-      "note_path": "docs/KLEIN_FOUR_PRODUCT_BZ_CORNERS_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md",
-      "reraudit_after_claim_ids": [],
-      "runner_path": "scripts/audit_companion_klein_four_product_bz_corners_forces_d_four_exact_2026_05_26.py",
-      "transitive_descendants": 3
-    },
-    {
-      "audit_independence_required": "any_non_self",
-      "audit_status": "audited_conditional",
       "cached_runner_stdout_chars": 18735,
       "candidate_reason": "runner_stdout_transport_unclipped_by_head_tail_v2",
       "claim_id": "gmn_vev_annihilator_l4_support_note_2026-07-02",
@@ -99,7 +74,7 @@
       "deps": [],
       "direct_in_degree": 0,
       "effective_status": "audited_conditional",
-      "generated_order": 3,
+      "generated_order": 2,
       "improved_dependencies": [],
       "legacy_runner_stdout_char_limit": 6000,
       "load_bearing_score": 0.0,
@@ -112,5 +87,5 @@
   ],
   "total_candidates": 0,
   "total_runner_drift_candidates": 0,
-  "total_runner_stdout_transport_candidates": 3
+  "total_runner_stdout_transport_candidates": 2
 }

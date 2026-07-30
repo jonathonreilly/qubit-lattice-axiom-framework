@@ -27,7 +27,8 @@
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
-    "scripts/frontier_self_consistent_field_equation.py"
+    "scripts/frontier_self_consistent_field_equation.py",
+    "scripts/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
@@ -36,7 +37,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f7e17748612ed3a898ccce69bf3030f73e5db856f4adec079e7112bf1da5ea1c",
+  "note_hash": "caeb5219dfc2884cb544285bb51100aa509bf6c578e8c8d744d372c02d545060",
   "note_path": "docs/POISSON_SELF_CONSISTENT_WELL_DEPTH_FINITE_VOLUME_BOUNDED_THEOREM_NOTE_2026-07-27.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -50,7 +51,7 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": "scripts/physical_poisson_self_consistent_well_depth_finite_volume_2026_07_27.py",
+  "runner_path": "scripts/physical_poisson_self_consistent_well_depth_certificate_2026_07_29.py",
   "title": "Finite-volume self-consistent localization and absolute-well-depth model comparisons on a supplied four-operator family",
   "transitive_descendants": 0,
   "verdict_rationale": null

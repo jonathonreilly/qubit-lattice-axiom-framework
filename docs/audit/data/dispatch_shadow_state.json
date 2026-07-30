@@ -1,5 +1,5 @@
 {
- "as_of_date": "2026-07-29",
+ "as_of_date": "2026-07-30",
  "lane_ids": [
   "a3_option_c_brannen_rivero_physical_lattice_bounded_obstruction_note_2026-05-08_optc",
   "a3_r1_review_confirms_obstruction_note_2026-05-08_r1hr",
@@ -132,7 +132,6 @@
   "dm_neutrino_exact_h_source_surface_preimage_bundle_theorem_note_2026-04-16",
   "dm_neutrino_exact_h_source_surface_theorem_note_2026-04-16",
   "dm_neutrino_k00_bosonic_normalization_theorem_note_2026-04-15",
-  "dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15",
   "dm_neutrino_positive_polar_h_cp_theorem_note_2026-04-15",
   "dm_neutrino_source_amplitude_theorem_note_2026-04-15",
   "dm_neutrino_source_bank_z3_doublet_block_selection_obstruction_theorem_note_2026-04-16",
@@ -214,7 +213,6 @@
   "gauge_vacuum_plaquette_spatial_environment_tensor_transfer_theorem_note",
   "gauge_vacuum_plaquette_spatial_environment_transfer_theorem_note",
   "gauge_vacuum_plaquette_spectral_measure_theorem_note",
-  "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
   "gauge_vacuum_plaquette_u1_density_sign_alternation_narrow_note_2026-05-17",
   "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17",
   "gellmann_completeness_theorem_note_2026-05-02",
@@ -234,8 +232,6 @@
   "hierarchy_bosonic_bilinear_selector_note",
   "hierarchy_dimensional_compression_note",
   "hierarchy_effective_potential_endpoint_note",
-  "hierarchy_matsubara_decomposition_note",
-  "hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02",
   "higgs_mass_derived_note",
   "higgs_mass_retention_analysis_note_2026-04-18",
   "higgs_vacuum_explicit_systematic_note",

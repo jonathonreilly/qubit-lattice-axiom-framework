@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle775_leg3_candidate_census_2026_07_28.txt": "b66e5966aed812355c1b6ba59f239ee3ad661d7ce1b6f9061b39d0e126062c9a",
+      "frontier_cycle775_leg3_independent_check_2026_07_28.txt": "a58e1d5a8ef3794019ae2fedf4fef690f88e4eeed090674deb6a24728d6501cc"
+    },
+    "note": {
+      "path": "docs/LEG3_CANDIDATE_CENSUS_CYCLE775_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "2121ec3afdcb8a9bb205e0d5850d6f9aa5605a36e9457578df75d5678693280b"
+    },
+    "runners": {
+      "frontier_cycle775_leg3_candidate_census_2026_07_28.py": "4dcbbe77a7376bd1f7078573b8966dda20ff2072a948deb9bb1666306c3a7f37",
+      "frontier_cycle775_leg3_independent_check_2026_07_28.py": "3b2210c2edbf0874b0ccbc22f2fce74a5df300126defc9459caf2ae88e7f5796"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "classification": "9 BOOKKEEPING / 4 PHYSICAL / 39 NULL / 3 UNCLASSIFIED over 55",
+    "disagreement": "3-of-4 select (0,2,9) (an alternative neither Model A nor B realized); min/max mirrors are equally covariant, so covariance cannot justify the extremum; different features select differently",
+    "exchange": "v1 (13 candidates, fixed-background actions) concluded NO_DISTINGUISHED_CANDIDATE -> checker proved the actions unlawful, corrected to full lawful station relabeling (99/99 control), extended the family to 55, and found 4 PHYSICAL candidates -> v2 adopts the corrected actions and the CANDIDATE_FOUND verdict",
+    "fixed_supplies": "the candidate constructions; everything Cycle-719/736/750/758/767 declare",
+    "justification_probe": "the landed Cycle-753 genesis-minimality theorem is a minimality precedent; whether it transfers to tie resolution is an open derivation target, not a conclusion",
+    "not_derived": "any winner among the candidates; leg-1; any axiom-update conclusion",
+    "outcome": "PHYSICAL_CANDIDATES_EXIST_JUSTIFICATION_OPEN",
+    "physical_candidates": "gate-count-min -> (0,7,9) [769/1350/610]; gate-count-max -> (0,2,9); relay-occupancy-min -> (0,2,9) [1/0/1]; handoff-occupancy-max -> (0,2,9) [1/2/1]"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 5
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 775,
+  "date": "2026-07-30",
+  "result": {
+    "agree": false,
+    "leg3_status": "PHYSICAL_CANDIDATES_EXIST_JUSTIFICATION_OPEN",
+    "physical": 4,
+    "selections": "(0,7,9) x1; (0,2,9) x3"
+  },
+  "status": "CYCLE775_LEG3_CANDIDATE_CENSUS_PASS"
+}

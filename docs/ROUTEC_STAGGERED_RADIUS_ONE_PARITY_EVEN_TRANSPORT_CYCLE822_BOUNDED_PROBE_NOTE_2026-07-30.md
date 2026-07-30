@@ -53,7 +53,8 @@ For the resulting finite atlas,
 Every elementary matrix is tested against the restriction of this same
 coordinate-defined `P_ext` to its support. Since every elementary factor is
 in the same commutant, every ordered prefix is in that commutant as well. The
-runner counts every elementary factor and every prefix explicitly; there are
+runner checks every elementary factor and enumerates every prefix position;
+prefix commutation is certified by closure of that common commutant. There are
 zero failures and zero untyped coordinate uses on every fixture.
 
 ## Construction and held results
@@ -112,11 +113,20 @@ controlled-pair local matrix residual remains
 
 Generic state execution independently routes every one of the 12 unique
 two-site nonseam opcodes over a distance-three clean rail and returns it with
-maximum residual zero. Deleting a return exchange gives minimum residual
-`0.572521454844302`. The one-site phase forward/inverse residual is
-`2.7755575615628914e-16`. On a dirty rail, replacing FSWAP by ordinary SWAP is
-detected for 11 of 12 routed opcodes; onsite contact is diagonal and the two
-routings coincide for that mutation. This is recorded, not inflated to 12.
+maximum residual zero. An exhaustive sparse-basis check extends this to all
+four endpoint basis states at every clean-route distance from one through 43:
+2,064 cases, maximum residual zero. By linearity this covers arbitrary lawful
+endpoint superpositions and external entanglement.
+
+Deleting a return exchange gives seeded-state minimum residual
+`0.572521454844302`, but it is not a universal detector. For every routed
+opcode, the exact clean-input-subspace deletion difference has rank two and
+singular values `(sqrt(2), sqrt(2), 0, 0)`: a two-dimensional lawful null
+subspace remains. The one-site phase forward/inverse residual is
+`2.7755575615628914e-16`. Over the full four-M2 dirty space, replacing FSWAP by
+ordinary SWAP is detected for 11 of 12 routed opcodes, with Frobenius residual
+from `sqrt(8)` through `4`; onsite contact is diagonal and is the exact-zero
+exception. This is recorded, not inflated to 12.
 
 The landed one-particle mass fixture is rerun: the coin eigen residual is
 `2.594441202963249e-16`, the mass is `0.45340565417488515` versus Cycle 219's
@@ -149,9 +159,11 @@ four factor slots per edge axis. No box-dependent greedy recolouring is used.
 
 The executable collision graph compares every simultaneously occupied site
 at every block ordinal and has zero edges on all four shapes. Erasing stage
-separation produces 58, 85, 326, and 807 collision edges. Replacing the
-transported colour assignment by a fixed colour is detected. These are
-route-specific controls, not a schedule no-go.
+separation produces 58, 85, 326, and 807 collision edges. Erasing colour does
+not create a collision on these serialized finite fixtures: colour is
+transported covariantly but redundant to collision freedom given the supplied
+stage and slot labels. This negative control is reported rather than awarded
+as colour necessity. It is route-specific evidence, not a schedule no-go.
 
 On the base fixture, all 24 proper-cubic frames, eight translated coframe
 origins, 192 frame/origin contexts, and 576 ordered frame products have zero
@@ -168,9 +180,12 @@ Other active controls are:
 - the pre-repair overlapping atlas is measured before the repaired compile;
 - deleting the final return exchange from every nontrivial tested route
   leaves a label mismatch;
-- retyping one charged route coordinate as neutral, or one neutral route
-  coordinate as charged, creates one cross-type overlap; an FSWAP or SWAP on
-  a mixed charged/neutral edge has commutator residual `2.8284271247461903`;
+- a genuine charged-to-neutral mutation removes one charged route coordinate
+  from its old class before adding it to the new class; the converse mutation
+  does the same for one neutral route coordinate. Both keep the two type sets
+  disjoint but create positive FSWAP- or SWAP-route type failures on every
+  fixture. An FSWAP or SWAP on the resulting mixed edge has commutator
+  residual `2.8284271247461903`;
 - FSWAP and ordinary SWAP agree on the supplied clean transport rail, while a
   dirty occupied rail gives residual `sqrt(2)`; and
 - the clean-work Z accumulator is checked independently with residual zero.
@@ -211,8 +226,9 @@ treats its adjacent-guard observation as a transport obstruction.
   recurrent seam factor;
 - exact matrix/digest binding and generic returned-route execution for every
   unique landed nonseam opcode, plus the one-particle mass fixture; and
-- the stated route, deletion, collision, wrong-stage, wrong-colour,
-  fixed-offset, SWAP/FSWAP, support, and 24/8/576 covariance controls.
+- the stated route, rank-two deletion, collision, wrong-stage, colour-
+  redundancy, genuine retyping, fixed-offset, SWAP/FSWAP, support, and
+  24/8/576 covariance controls.
 
 ### Open
 

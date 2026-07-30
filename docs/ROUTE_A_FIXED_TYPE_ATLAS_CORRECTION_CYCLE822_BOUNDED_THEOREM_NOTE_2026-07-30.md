@@ -6,8 +6,8 @@
 
 **Audit:** unset
 
-**Baseline:** `e4f37af2728487a47a42040e7954d861e4b53340`, whose parent is the
-required `c04e711ea660d655eff907a40f96fd345259b53f`
+**Baseline:** the first Route-A runner and note in this Cycle-822 package,
+constructed from the landed Cycle-821 surface
 
 **Status:** the first Route-A typing is rejected; a corrected conditional
 compiler is positive on an explicitly enlarged charged-carrier/neutral-work

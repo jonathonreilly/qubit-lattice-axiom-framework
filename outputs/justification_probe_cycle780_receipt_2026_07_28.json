@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle780_justification_independent_check_2026_07_28.txt": "dc292b68547579355c6585f5bfe6ebc17e534e4f08c7158a333130b20280faf0",
+      "frontier_cycle780_justification_probe_2026_07_28.txt": "c9854896c5d403904488286bc4eea9bb4a68d257c9c6169f654f42a7c77a0935"
+    },
+    "note": {
+      "path": "docs/JUSTIFICATION_PROBE_CYCLE780_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "ec020c8ce49a6f5bd8d73aac9698a8a338fce37014fd9d9393fcf264d5f21b06"
+    },
+    "runners": {
+      "frontier_cycle780_justification_independent_check_2026_07_28.py": "7394f4c914a85eaf5918b258b8af929ac151f8f0e364475103f3aed99bdd2e61",
+      "frontier_cycle780_justification_probe_2026_07_28.py": "f45997f90f546b143861c76691ac6c11e5c7e04fe357b23162fba809d5e6c523"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "the four 775 candidates; 753 at its own scope; everything 719/736/750 declare",
+    "hunts": "no landed extremal-preference certificate bears on the tie functional; no landed penalty breaks the min/max mirror",
+    "invariance": "realization words massively non-unique (362,797,056 per alternative; lawful families 181,398,528/90,699,264/181,398,528) yet first-Q-layer gate counts invariant at (769,1350,610) across every lawful realization incl. wider station-order and commuting-substitution families; scoped to the landed fixed-macro alphabet (identity padding not admitted)",
+    "leg3": "PHYSICAL_CANDIDATES_EXIST_JUSTIFICATION_OPEN unchanged \u2014 justification must come from new derivation or physics input (same shape as leg 1)",
+    "minimality": "Cycle-753 uniquely establishes genesis LENGTH 27 \u2014 not a unique word/class, not a selection principle; pruning lemmas yield no rule over alternatives",
+    "not_derived": "any justification principle; any winner; underivability NOT claimed",
+    "outcome": "NO_BINDING_PRINCIPLE"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 780,
+  "date": "2026-07-30",
+  "result": {
+    "invariant_values": "(769,1350,610)",
+    "leg3": "unchanged",
+    "verdict": "NO_BINDING_PRINCIPLE",
+    "words_per_alternative": 362797056
+  },
+  "status": "CYCLE780_JUSTIFICATION_PROBE_PASS"
+}

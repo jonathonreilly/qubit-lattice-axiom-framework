@@ -1,6 +1,6 @@
 {
- "edge_count": 15246,
- "node_count": 4585,
+ "edge_count": 15252,
+ "node_count": 4587,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2440,6 +2440,14 @@
   },
   "companion_bank_packet_count_tensor_projection_constraint_membership_bounded_theorem_note_2026-07-28": {
    "deps_hash": "dd6f38e4f3f5",
+   "out_degree": 2
+  },
+  "companion_bank_static_certificate_povm_conditional_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "aeb133d184ea",
+   "out_degree": 4
+  },
+  "companion_bank_static_certificate_povm_input_convention_meta_note_2026-07-30": {
+   "deps_hash": "9ec29ca50bf8",
    "out_degree": 2
   },
   "companion_gauge_work_center_controllability_cycle797_bounded_theorem_note_2026-07-30": {

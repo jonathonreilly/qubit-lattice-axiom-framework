@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_companion_bank_static_certificate_povm_input_acceptance_2026_07_30.py
+runner_sha256: e3fef1d870852667ba1bdaaf9a434b0e1cddc931f7ac26182c90c69ae390925d
+input_fingerprint_sha256: 628d6f3fc9c2f74a7618c9ac7f3674b5332238b9ff5eccce1ac4b6497b648393
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 5.89
+status: ok
+----- stdout -----
+PASS dependency bytes match the reviewed landed source and Cycle-317 surface
+PASS landed source yields only the frozen static-predicate and liveness counts
+PASS supplied direction and split simplex produce the conditional four-effect POVM
+PASS supplied order and pairing produce the conditional five-effect POVM
+PASS valid-domain mutations expose that source bookkeeping does not select the mappings
+PASS invalid normalization and negative coefficients are rejected
+PASS reported residual labels separate isometry and POVM normalization
+PASS scope remains conditional algebra with no source-to-apparatus or Born-law selection
+RESULT_JSON {"audit":"unset","authority":"none","checks":{"fail":0,"pass":8},"claim_boundary":{"Born_law_selected":false,"Record_or_history_constructed":false,"conditional_matrix_identities_only":true,"empirical_calibration":false,"occurrence_or_outcome_selected":false,"register_state_readout":false,"source_to_apparatus_map_derived":false},"mapping_controls":{"all_three_field_subsets_same_direction":true,"mutated_inputs_remain_valid_povms":true,"reversed_pairing_plus_effect_delta":0.10941714971622,"sign_flip_projector_delta":0.816496580927726,"source_selects_mapping":false},"merge":{"combined_stage_counts":[200,164,180,144],"effect_spectra":[[0.40295501822624546,0.5970449817737548],[4.628682003671057e-19,0.2906976744186048],[0.0,0.23837209302325582],[0.0,0.2616279069767442],[0.0,0.20930232558139536]],"fractions":[0.29069767441860467,0.23837209302325582,0.2616279069767442,0.20930232558139536],"isometry_residual":0.0,"plus_effect_eigenvalues":[0.40295501822624546,0.5970449817737548],"povm_normalization_residual":3.1463121132764933e-16,"weighted_bloch":[-0.16067987153708593,-0.10624346400440443,0.023774338877114304],"weighted_bloch_norm":0.1940899635475093},"pins":{"B317":"e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10","source":"b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0"},"source":{"alternate_port":{"field_counts":{"actuality":24,"admissibility":24,"binder":24,"certificate":24,"law_domain":24},"lawful":true,"rows":24,"stage_destination_counts":{"A":100,"B":12,"C":0,"D":72}},"primary":{"field_counts":{"actuality":24,"admissibility":24,"binder":24,"certificate":24,"law_domain":24},"lawful":true,"rows":24,"stage_destination_counts":{"A":100,"B":152,"C":180,"D":72}}},"split":{"direction":[0.5773502691896257,0.5773502691896257,0.5773502691896257],"effect_spectra":[[-8.663816624429912e-18,0.17],[2.115025480545206e-17,0.29000000000000004],[2.520792359038087e-18,0.54],[1.890812283321094e-17,1.0]],"isometry_residual":2.4999285328858064e-16,"povm_normalization_residual":2.220446049250313e-16},"status":"PASS","supplied":{"Bloch_coordinate_order":["x","y","z"],"Bloch_fields":["certificate","actuality","law_domain"],"coefficient_projector_pairing":"positional","contact_phase":0.37,"normalization":"Euclidean L2","pooling":["primary","alternate_port"],"projector_directions":[[1.0,2.0,3.0],[-1.0,0.0,0.0],[0.0,-1.0,0.0],[0.0,0.0,-1.0]],"sign":"positive","split_fractions":[0.17,0.29,0.54],"stage_order":["A","B","C","D"]}}
+SUMMARY PASS 8 FAIL 0
+RESULT COMPANION_BANK_STATIC_CERTIFICATE_POVM_ACCEPTANCE_GREEN
+
+----- stderr -----
+

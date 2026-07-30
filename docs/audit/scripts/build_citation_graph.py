@@ -247,6 +247,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/frontier_born_acceptance_independent_check_2026_07_28.py",
         "scripts/physical_contact_ternary_born_forcing_bridge_cycle317_2026_07_18.py",
     ],
+    # The conditional split/merge runner imports both landed sources, while
+    # its clean-room matrix checker remains deliberately separate. Expose that
+    # checker beside the primary for the restricted audit packet.
+    "companion_bank_static_certificate_povm_conditional_bounded_theorem_note_2026-07-30": [
+        "scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py",
+    ],
 }
 
 

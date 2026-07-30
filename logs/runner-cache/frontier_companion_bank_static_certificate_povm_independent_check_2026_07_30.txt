@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py
+runner_sha256: c676aaff5efff00e6f6bfd5f5a5c1f52b0a682021db4abb0b1717503f219ab92
+input_fingerprint_sha256: c7e74bef64fd2f233bf5a472b7b714dbbcf01324936a12599558b62aafe52305
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 11.69
+status: ok
+----- stdout -----
+PASS all mutable dependencies exist and primary bytes are explicitly bound
+PASS one-byte primary mutation changes the independent cache identity
+PASS separate source driver reconstructs static-predicate and liveness counts
+PASS clean-room split derivation gives one isometry and four positive effects
+PASS clean-room merge derivation gives exact fractions and five positive effects
+PASS valid-domain controls separate constructor validity from mapping selection
+PASS black-box primary agrees with the independently derived source and matrices
+PASS scope exposes every supplied interface and selects no physical Born content
+RESULT_JSON {"audit":"unset","authority":"none","cache_identity":{"declared_inputs":63,"one_byte_mutation_detected":true,"primary_bound":true},"checks":{"fail":0,"pass":8},"independence":{"B317_imported":false,"matrix_formulas_reimplemented":true,"primary_compared_as_black_box":true,"primary_imported":false},"merge":{"fractions":["25/86","41/172","45/172","9/43"],"isometry_residual":0.0,"plus_effect_eigenvalues":[0.40295501822624546,0.5970449817737548],"povm_normalization_residual":3.1463121132764933e-16,"weighted_bloch_norm":0.1940899635475093},"mutations":{"all_field_subsets_same":true,"primary_only_pool_same":true,"reversed_pairing_effect_delta":0.10941714971622,"sign_projector_delta":0.816496580927726,"stage_order_effect_delta":0.05890431891644353},"pins":{"B317":"e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10","primary":"e3fef1d870852667ba1bdaaf9a434b0e1cddc931f7ac26182c90c69ae390925d","source":"b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0"},"split":{"isometry_residual":2.4999285328858064e-16,"povm_normalization_residual":2.220446049250313e-16},"status":"PASS"}
+SUMMARY PASS 8 FAIL 0
+RESULT COMPANION_BANK_STATIC_CERTIFICATE_POVM_INDEPENDENT_GREEN
+
+----- stderr -----
+

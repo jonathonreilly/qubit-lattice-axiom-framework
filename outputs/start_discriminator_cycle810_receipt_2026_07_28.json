@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF12-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle810_discriminator_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle810_satisfiable_start_discriminator_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 810,
+  "files": {
+    "docs/START_DISCRIMINATOR_CYCLE810_BOUNDED_THEOREM_NOTE_2026-07-28.md": "f485c7005e08b80c8f676556a953060de203f1e9822d94b91606f29902631b83",
+    "logs/runner-cache/frontier_cycle810_discriminator_independent_check_2026_07_28.txt": "bc79ec12e74799f3e38c88fdf00f6b3ac4c63094475b1b00b0a5869d59392a84",
+    "logs/runner-cache/frontier_cycle810_satisfiable_start_discriminator_2026_07_28.txt": "8856d0240c47e253e95793755c3eb2a27493422868b752d99cc5a16cf2b46279",
+    "scripts/frontier_cycle810_discriminator_independent_check_2026_07_28.py": "1791c04deace76a001ed909c83da726382ac5a692edf92560899e24ea166d505",
+    "scripts/frontier_cycle810_satisfiable_start_discriminator_2026_07_28.py": "2f39e834f89be02bf40bbe9a0d9cac905dc8f4294096faaa7914cfc31fed26a7"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "all ten unsatisfiable starts die at boundary 0 (both orders -> zero completions); all left rows non-source",
+    "checker mechanism branch (c): lawful start space is exactly the 11 fixtures \u2014 causation untestable at scope"
+  ],
+  "verdicts": [
+    "142 minimal size-1 separators; best: token.left.program_kind == source",
+    "boundary-0 failure anatomy uniform",
+    "landed-computable; correlation proven at scope, causation untestable at scope",
+    "checker CONFIRMED"
+  ]
+}

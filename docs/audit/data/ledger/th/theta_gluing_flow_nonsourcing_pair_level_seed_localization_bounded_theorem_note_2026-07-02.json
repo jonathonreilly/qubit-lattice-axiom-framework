@@ -1,24 +1,83 @@
 {
-  "audit_date": null,
-  "audit_invocation_history": [],
-  "audit_invocation_id": null,
-  "audit_state_snapshot": null,
-  "audit_status": "unaudited",
-  "auditor": null,
-  "auditor_confidence": null,
-  "auditor_family": null,
-  "auditor_model": null,
-  "auditor_reasoning_effort": null,
+  "audit_date": "2026-07-30T01:59:50.106072+00:00",
+  "audit_invocation_history": [
+    "b60a1012452b4a1d92db4cbda9a6c5e7"
+  ],
+  "audit_invocation_id": "b60a1012452b4a1d92db4cbda9a6c5e7",
+  "audit_state_snapshot": {
+    "artifact_classifier_state": {
+      "assert_count": 2,
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 3,
+        "D": 1
+      },
+      "decoration_candidate": false,
+      "dominant_class": "C",
+      "exists": true,
+      "runner_path": "scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py"
+    },
+    "criticality": "leaf",
+    "dep_axiom_premise_note_hash": {
+      "minimal_axioms": "fc4d60cce8154cec26be12a0735033de43a0e554e7be951ffc0399c0b9788697"
+    },
+    "dep_claim_scope": {
+      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "Finite-volume SU(N) Wilson transfer positivity, periodic trace and spatial/mixed source formulas, plus the SU(3) six-neighbor recurrence on the supplied gauge carrier.",
+      "minimal_axioms": null
+    },
+    "dep_claim_type": {
+      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "positive_theorem",
+      "minimal_axioms": "meta"
+    },
+    "dep_effective_status": {
+      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note": "retained",
+      "minimal_axioms": "meta"
+    },
+    "deps": [
+      "gauge_vacuum_plaquette_transfer_operator_character_recurrence_note",
+      "minimal_axioms"
+    ],
+    "helper_runner_hashes": {},
+    "load_bearing_score": 0.0,
+    "policy_versions": {
+      "audit_prompt_template_sha256": "ec6bd10cc761e6f705e7177e4e3aa31851a54212d34fac8d9915d1cd62718f64",
+      "audit_tuple_agreement_schema": "audit_tuple_v2",
+      "n8_source_corpus_version": "source-markdown-v2-excludes-generated",
+      "no_go_discipline_gate_sha256": "74c16af83f243a35d5cc6e24af64224068c8f517af099b1a2d278f92bf648d2d"
+    },
+    "premise_registry_epoch": "b73431384495db657efaeab44d1d8e83b824908c418b115308e92eaa7212eea5",
+    "runner_cache_state": {
+      "scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py": {
+        "cache_exit_code": "0",
+        "cache_freshness": "fresh",
+        "cache_input_fingerprint_sha256": null,
+        "cache_runner_sha256": "bc854ceb83bc29910bdd19afdad87a4fccb3bd6828156019e32089c7784e9fe5",
+        "cache_status": "ok"
+      }
+    },
+    "runner_hash": "bc854ceb83bc29910bdd19afdad87a4fccb3bd6828156019e32089c7784e9fe5",
+    "runner_path": "scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py",
+    "runner_present": true,
+    "schema": "blocker_fingerprint_v1",
+    "transitive_descendants": 0
+  },
+  "audit_status": "audited_conditional",
+  "auditor": "codex-audit-batch-A-20260730-faf9d204",
+  "auditor_confidence": "high",
+  "auditor_family": "codex-gpt-5.6",
+  "auditor_model": "gpt-5.6-sol",
+  "auditor_reasoning_effort": "xhigh",
   "blocker": null,
-  "chain_closes": null,
-  "chain_closure_explanation": null,
+  "chain_closes": false,
+  "chain_closure_explanation": "The finite runner checks are reproducible from the supplied code, but the retained Wilson/character authority is clipped, so the complete premise chain cannot be independently checked. The packet preflight therefore forbids clean closure.",
   "claim_id": "theta_gluing_flow_nonsourcing_pair_level_seed_localization_bounded_theorem_note_2026-07-02",
-  "claim_scope": null,
+  "claim_scope": "Finite checks in the {1,F,Fbar} SU(3) truncation for one three-leg star, one plane-uniform scalar epsilon assembly, and the displayed same- and opposed-orientation pair channels.",
   "claim_type": "bounded_theorem",
   "claim_type_author_hint": "bounded_theorem",
   "claim_type_author_hint_raw": "bounded_theorem (exact finite non-sourcing theorems with a",
-  "claim_type_last_reviewed": null,
-  "claim_type_provenance": "author_hint",
+  "claim_type_last_reviewed": "2026-07-30T01:59:50.106072+00:00",
+  "claim_type_provenance": "audited",
   "criticality": "leaf",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -27,19 +86,23 @@
     "minimal_axioms"
   ],
   "direct_in_degree": 0,
-  "effective_status": "unaudited",
-  "effective_status_reason": "awaiting_audit",
+  "effective_status": "audited_conditional",
+  "effective_status_reason": "terminal_audit",
   "helper_runner_paths": [],
-  "independence": null,
-  "intrinsic_status": "unaudited",
+  "independence": "cross_family",
+  "intrinsic_status": "audited_conditional",
   "load_bearing_score": 0.0,
-  "load_bearing_step": null,
-  "load_bearing_step_class": null,
+  "load_bearing_step": "Plane-uniform pair couplings cancel identically when contracted with the epsilon assembly.",
+  "load_bearing_step_class": "A",
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
+  "negative_assertion_classes": [
+    "bounded_with_named_walls",
+    "derived_no_go_boundary"
+  ],
   "note_hash": "e891525fde44267defa8d1495cf0bc160e440cf248fc4c1ce36513c3c01bee93",
   "note_path": "docs/THETA_GLUING_FLOW_NONSOURCING_PAIR_LEVEL_SEED_LOCALIZATION_BOUNDED_THEOREM_NOTE_2026-07-02.md",
-  "notes_for_re_audit_if_any": null,
+  "notes_for_re_audit_if_any": "other: regenerate the restricted packet with the complete retained Wilson/character authority, then independently recheck the B1\u2013B3 plane-uniformity and epsilon-cancellation bridge.",
   "open_dependency_paths": [],
   "previous_audits": [
     {
@@ -105,14 +168,14 @@
   "prose_corrections": [],
   "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
-    "A": 0,
-    "B": 0,
-    "C": 0,
+    "A": 3,
+    "B": 3,
+    "C": 3,
     "D": 0,
-    "total_pass": 0
+    "total_pass": 9
   },
   "runner_path": "scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py",
   "title": "The Gluing Flow Does Not Source the Theta-Parity Pair Term: Real Class-Weight Seeds Produce Plane-Blind Couplings That Vanish Identically Under the Epsilon Assembly, and Phased Seeds Are Transported, Never Created \u2014 the Theta Admission's Gauge-Side Kernel Localizes at the Seed Class (Bounded Theorem)",
   "transitive_descendants": 0,
-  "verdict_rationale": null
+  "verdict_rationale": "Issue: the packet clips the retained Wilson/character authority that supplies the seed and character surface. Why this blocks: the runner\u2019s nine finite checks cannot substitute for auditing the complete load-bearing authority, and the binding preflight expressly forbids audited_clean. Repair target: regenerate the packet with the authority in full and independently verify that B1 supports the plane-uniform premise consumed by B3. Claim boundary until fixed: only the stated finite {1,F,Fbar} truncation checks are supported, not the broader general-star or full pair-sector theorem."
 }

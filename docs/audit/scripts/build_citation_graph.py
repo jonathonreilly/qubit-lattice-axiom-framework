@@ -227,6 +227,14 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "staggered_fermion_card_2026-04-11": [
         "scripts/frontier_staggered_17card.py",
     ],
+    # The projector fixture launches both sources through subprocess and keeps
+    # the landed helper inside a literal child-driver string. Expose the
+    # independent checker and dynamic landed source to restricted review
+    # packets without teaching generic discovery to follow arbitrary strings.
+    "born_acceptance_harness_support_note_2026-07-28": [
+        "scripts/frontier_born_acceptance_independent_check_2026_07_28.py",
+        "scripts/physical_contact_ternary_born_forcing_bridge_cycle317_2026_07_18.py",
+    ],
 }
 
 

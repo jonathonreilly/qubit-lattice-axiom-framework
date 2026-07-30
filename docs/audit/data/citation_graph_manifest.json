@@ -1,6 +1,6 @@
 {
- "edge_count": 15214,
- "node_count": 4573,
+ "edge_count": 15216,
+ "node_count": 4574,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4466,10 +4466,6 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
-  "factorization_object_api_support_note_2026-07-28": {
-   "deps_hash": "759285fc1e81",
-   "out_degree": 1
-  },
   "family_companion_compare_note": {
    "deps_hash": "d65483554fad",
    "out_degree": 3
@@ -5056,6 +5052,10 @@
   },
   "full_physical_epr_companion_input_substitution_cycle799_bounded_theorem_note_2026-07-30": {
    "deps_hash": "39b252a4b556",
+   "out_degree": 2
+  },
+  "full_physical_live_bank_transfer_reset_recurrent_g_cycle800_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "2279b3c79e23",
    "out_degree": 2
   },
   "full_pl_s3_atlas_cocycle_closure_theorem_note_2026-05-03": {

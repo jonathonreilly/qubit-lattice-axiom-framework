@@ -27,15 +27,17 @@ them.
 
 Current science/open-lane follow-ups:
 
-- `2026-07-30-cycle732-genesis-selection-and-extension-walls`
+- `2026-07-30-cycle732-genesis-selection-and-extension-inventory`
   Scope: the Cycle-732 fixed logical genesis-word candidate and its current
   Cycle-731 parent.
   Finding: the repaired finite result establishes one supplied word's exact
   ring-11 behavior and the enumerated 27-deletion/23-selected-flip refusal
-  censuses only. Target selection, supplied `k = 1`, total A+B inventory,
-  global-parity semantics, general error detection, physical/nearest-neighbor
-  compilation, autonomous Record formation, and uniform ring families remain
-  independent open lanes.
+  censuses only. The supplied target/word/`k`/reference specification, wider
+  certificate semantics (total A+B, global parity, and general errors),
+  physical/nearest-neighbor compilation, and uniform or autonomous
+  state/Record formation remain an unclassified supplied/open inventory.
+  Some routes may retire others; no wall count or independence theorem is
+  asserted.
   Disposition: `science-needed`; do not widen the bounded candidate or promote
   it to retained authority without separate evidence and audit.
 - `2026-07-24-cycle583-landed-provenance-table-drift`

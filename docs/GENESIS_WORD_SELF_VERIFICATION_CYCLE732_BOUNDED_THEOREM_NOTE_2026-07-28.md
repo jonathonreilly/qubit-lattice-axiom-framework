@@ -99,44 +99,139 @@ matches `k = 1`, total two-rail parity does not match `h`, and the actual word
 still changes data with clean return. Cycle 732 therefore inherits the
 parent's explicit nonclaim, not the superseded parity model.
 
-## No-go discipline and partial narrowing
+## Scope stress test and partial narrowing
 
-This note makes a positive finite claim and a bounded completeness statement
-only about the 27 indexed deletions. It makes no general impossibility or
-unique-selection claim. Because the file names explicit open boundaries, the
-following N1–N8 controls are recorded.
+This note ships one positive finite claim and one bounded completeness
+statement, the latter only over the 27 indexed deletions. It ships no no-go,
+minimum-content result, wall count, wall-independence theorem, axiom-pressure
+claim, or unique-selection result. The items not proved by this note are an
+unclassified supplied/open inventory, not a certified wall decomposition.
+Because a bounded note still requires hostile scope testing, the N1–N8 record
+is explicit below.
 
-1. **N1 — alternative routes.** The selected chain is tested; 27 direct X
-   gates are a concrete alternative preparation; actual current-parent
-   verification is tested; autonomous target/`k` selection, current physical
-   compilation, a general error wrapper, and a uniform family remain separate
-   open routes.
-2. **N2 — wall independence.** Word/target selection, supplied `k`,
-   current-parent semantics, physical compilation, general error coverage,
-   and family/Record formation do not imply one another. No one of them is
-   presented as the sole remaining wall.
-3. **N3 — hidden-wall scan.** Target bits, layout, program, `k`, ordering, and
-   logical interpretation are listed above as supplies. Physical meaning is
-   not smuggled in through logical gate notation.
-4. **N4 — residual matching.** The current Cycle 731 residual is A-only
-   counting with supplied expected occupancy and an explicit global-parity
-   nonclaim. Cycle 730 supplies a local active-station charge guard, and Cycle
-   719 supplies the held logical program. None supplies autonomous genesis
-   selection or a current physical Cycle 731 compilation.
-5. **N5 — rhetoric granularity.** Resolution is per gate for 27 deletions and
-   per named wire for 23 selected flips only. Other mutation modes and all
-   family-wide language are excluded.
-6. **N6 — partial closure.** The fixed Boolean identity and finite refusal
-   censuses remain theorem content. Target interpretation, selection, and
-   `k` remain convention/meta inputs; physical and family extensions remain
-   separate work.
-7. **N7 — strongest steelman.** Many reversible words prepare the same
-   supplied target, so this chain cannot establish uniqueness or axiom-driven
-   selection. The claim accepts that counterroute and retains only the exact
-   behavior of this selected word.
-8. **N8 — cross-cycle echo.** The expected-occupancy, total-rail, parity,
-   reference-preparation, family, and physical-transport boundaries recorded
-   by current Cycle 731 remain open here.
+### N1 — normalized alternative-route inventory
+
+The linked Cycle 719 parent already attempted six materially distinct
+constructive families. They are repeated here rather than compressed into
+labels. `ATTEMPTED` means proposal evidence was actually run; none is called
+retained authority, and “does not close” means only that its stated terminal
+residual remains.
+
+| normalized family | honesty marker | exact attempted evidence | terminal residual and Cycle 732 disposition |
+|---|---|---|---|
+| token-following semantic bank | `ATTEMPTED` | held 2/5/12 intertwiner exact; 178/756 noncanonical-order changes | autonomous edge schedule, literal source finalizer, and 12-bank physical route remain; this route is live, not ruled out |
+| fixed finite physical sweep | `ATTEMPTED` | collision-free forward/inverse nearest-neighbor route; 24/576 covariance checks; zero route failures | source finalizer and sweep order remain supplied; this is partial positive evidence, not an impossibility witness |
+| source-local finalization | `ATTEMPTED` | all 4,096 source rows and held 2/5/12 cases exact; three finalizer deletions active | genesis and finite outward/inward order remain supplied |
+| one-marker local handshake | `ATTEMPTED` | held 2/5/12 cases exact; all 240 rows across 24 candidate enumerations agree | marker-controlled transitions are not physically synthesized and the one-marker sector is supplied |
+| two-rail recurrent controller | `ATTEMPTED` | `H=RQ`; held orbits and inverses exact; literal routes and 24/576 coordinate checks pass | source token, source boundary, finite oriented ring, clean work, and program content remain supplied |
+| local dirty-sector refusal | `ATTEMPTED` | 34 physical primitives, 60 routed gates, all 16 truth rows exact, six dirty live-token rows refused, and two active deletions | the refusal is not wrapped around every controlled macro and does not prepare its lawful sector |
+
+The direct-X preparation in this note is an additional live counterroute to
+word uniqueness, not a failed route: 27 direct X gates prepare the same
+selected target. The accepted data-wire-0 mutation and the explicit
+two-rail-parity counterexample similarly defeat broader certificate readings.
+These live routes are why the note stops at partial narrowing.
+
+### N2 — relationship audit without an independence claim
+
+The raw list is collapsed first: actual current-parent semantics is closed on
+the fixed fixture and is not an open item. The remaining inventory has four
+explicitly named groups:
+
+- **fixed-fixture genesis specification:** target, word, ordering, `k`, and
+  reference pattern;
+- **wider logical certificate:** a domain beyond the exact A-count and 27+23
+  censuses;
+- **physical realization:** placement, transport, admissibility, and
+  nearest-neighbor compilation; and
+- **uniform/autonomous formation:** a uniform ring/program family or
+  autonomous target, word, state, and Record/occurrence formation.
+
+The entries below say what the cited evidence establishes. “Not established”
+is deliberately not “no,” and it is not an independence theorem.
+
+| pair | first automatically closes second? | second automatically closes first? | evidence disposition |
+|---|---|---|---|
+| fixed-fixture specification / wider logical certificate | not established | not established | one supplied fixture does not widen the certificate domain; a wider checker would not by itself select this fixture |
+| fixed-fixture specification / physical realization | not established | not established | a logical specification is not a physical compiler; compiling a supplied word would not derive its selection |
+| fixed-fixture specification / uniform-autonomous formation | not established | may retire part of the fixed specification; untested | an autonomous formation rule could remove some supplies, so these headings are not certified independent |
+| wider logical certificate / physical realization | not established | not established | broader logical coverage and physical realization are uncomposed here |
+| wider logical certificate / uniform-autonomous formation | not established | may widen part of the certificate domain; untested | a uniform family might enlarge the checked domain, but no implication theorem is present |
+| physical realization / uniform-autonomous formation | not established | may include the fixed physical compiler; untested | a uniform physical construction could subsume the fixed compiler obligation |
+
+No numeric wall count is inferred from this inventory. In particular, possible
+downstream retirement in the last three rows prevents any independence
+wording.
+
+### N3 — hidden-condition scan
+
+The all-zero source, target bits, layout, oriented program, ring size, `k`,
+word ordering, blank registers, logical interpretation, and selected mutation
+domain are all exposed as supplies or scope conditions above. Physical meaning
+is not imported through logical gate notation. The registered minimal axioms
+do not supply a target-selection, program-synthesis, physical-compiler, or
+general-error-detection rule.
+
+### N4 — residual matching
+
+Cycle 731 supplies an A-only counter/comparator with a supplied expected
+occupancy and an explicit global-parity nonclaim; that matches only the
+fixed-fixture A-count use here. Cycle 730 supplies the local active-station
+charge guard; it does not supply target selection or total A+B inventory.
+Cycle 719 supplies the held logical program and the six attempted families
+listed under N1; it does not supply autonomous genesis or a current physical
+Cycle 731 compiler. The minimal axioms identify the state-selection boundary;
+they do not synthesize this target or word. No cited residual is reused as
+evidence for a different obligation.
+
+### N5 — rhetoric resolution
+
+Deletion completeness is per gate for exactly 27 deletions. Flip coverage is
+per named wire for exactly 11 A, 11 reference, and one `h` flip. The result is
+not per arbitrary data/B/work/auxiliary wire, per insertion/substitution/
+reordering mode, per program, per ring, or lattice-wide. The accepted
+data-wire-0 flip and parity mismatch remain active countercontrols against any
+broader wording.
+
+### N6 — partial-closure paths
+
+The fixed Boolean identity and finite refusal censuses are theorem content.
+The selected target, target interpretation, ordering, and `k` are explicit
+imports; an import-retirement theorem could later replace them without adding
+an axiom. The approved minimal axioms are premises, not missing walls, but they
+also do not grant the absent dynamics. Physical compilation, wider certificate
+coverage, and family/autonomous formation remain constructive research routes;
+this note requests no new axiom or primitive.
+
+### N7 — strongest steelman
+
+A hostile reviewer can prepare the same supplied target with 27 direct X gates
+or many other reversible words, so the selected chain cannot prove uniqueness,
+optimality, or axiom-driven selection. The Cycle 719 local-Gauss/charge-sector
+and dirty-sector-refusal routes also provide concrete mechanisms by which
+currently supplied sector data might later be prepared or enforced. The next
+terminal test is to compose such a local sector constructor with the actual
+current-parent word while preserving acceptance, exact inverse, clean return,
+and the existing countercontrols. The present package does not defeat that
+steelman and therefore makes no no-go claim.
+
+### N8 — cross-cycle retirement scan
+
+The repo-wide similar-boundary scan summarized in Cycle 719 N6–N8 was checked
+against this narrower genesis package:
+
+| prior surface | earlier supplied/open shape | later retirement mechanism | applicability here |
+|---|---|---|---|
+| Cycle 713 | a bounded physical endpoint instrument with its consumer supplied | Cycle 719 closes the same-site consumer interface | compose a concrete consumer/compiler before declaring the interface absent |
+| Cycle 715 | fixed packet address removed, but direction and bounded controller supplied | Cycle 719 obtains direction from matter and replaces the runtime host sweep with recurrent rails | local control can retire a host-supplied program role |
+| Cycles 718/612 | reversible spatial ACK existed without the complete recurrent consumer | Cycle 719 supplies the bounded matter-to-packet controller feeding that interface | reuse a proved interface composition rather than infer a substrate obstruction |
+| Cycle 656 | host-stepped fixed ROM | Cycle 719 progressively replaces it with a local handshake and two-rail control | a supplied word/order can be retired incrementally by explicit local dynamics |
+| Cycles 332/335 | occurrence and protected recurrence closed only on supplied boundary/selection inputs | bounded constructors retire parts of the process while keeping the remaining supplies explicit | selection/Record extensions remain constructive targets, not axiom-pressure evidence |
+| Cycle 703 route carried through Cycle 719 N7 | positive local-Gauss constraint capacity with physical encoder/preparation still open | not yet retired; it remains a concrete live composition test | candidate mechanism for reference/sector preparation and local enforcement |
+
+These repeated partial retirements are evidence against any impossibility,
+minimum-content, shared-obstruction, sole-wall, or wall-independence reading.
+They leave an honest supplied/open inventory and actionable constructive tests.
 
 Disposition: **partial narrowing** to a fixed logical preparation and exact
 enumerated current-parent refusal census. Independent audit is still required.

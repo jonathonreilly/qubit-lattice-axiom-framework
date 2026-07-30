@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle732_genesis_independent_check_2026_07_28.py
 runner_sha256: 0576ef9ac5b6a8e8414bd2c82bdc4cb95a39ec1e0fe5e567a824725c170f3f67
-input_fingerprint_sha256: 930e85491889f5dc65421d53ee8f9ade3261a0c0687f268f85a2504ef6996e62
+input_fingerprint_sha256: 66c357b7ea6f12f3903ef991411477657a5707a696177b1a1c2c4715d377f01c
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 3.31
+elapsed_sec: 3.17
 status: ok
 ----- stdout -----
 PASS recursive input closure :: 83/83 inputs
@@ -14,7 +14,7 @@ PASS actual current-parent composition :: 123293 gates
 PASS enumerated mutations :: 27/27 deletions; 23/23 flips
 PASS scope countercontrols :: accepted data flip; non-global-parity witness
 PASS independence discipline :: primary inert; separate X/CNOT/TOF evaluator
-SUMMARY 7/7 ALL_PASS runtime=2.696451s
+SUMMARY 7/7 ALL_PASS runtime=2.609442s
 
 ----- stderr -----
 

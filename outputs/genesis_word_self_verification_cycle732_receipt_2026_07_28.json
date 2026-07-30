@@ -1,12 +1,12 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle732_genesis_independent_check_2026_07_28.txt": "197f41271ad96e818ed79fcc266afc313bca2fdd6ae8b41b454f9ad961aa7bc2",
-      "frontier_cycle732_genesis_word_self_verification_2026_07_28.txt": "a977aa2dff5cd752a720195415be4f8a7b43321b70aa08c57c547b852999943c"
+      "frontier_cycle732_genesis_independent_check_2026_07_28.txt": "1fcc5dd93457d09c8934f6764ffb6f69ce0330a748c22ccd05a5a6bb2d1b7fb3",
+      "frontier_cycle732_genesis_word_self_verification_2026_07_28.txt": "10bfa5c742d2483f04722e175bb02117586c13815402540c2ae8a2be20b20f16"
     },
     "note": {
       "path": "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "ce8f726268f360eeea0a76ab34f5044abb45212c8a3610b0d2cbd6a4285f9011"
+      "sha256": "e223029cdef9681f3d489caec3ff4d72534d02b85187a0aa0f6b1332c9f63985"
     },
     "runners": {
       "frontier_cycle732_genesis_independent_check_2026_07_28.py": "0576ef9ac5b6a8e8414bd2c82bdc4cb95a39ec1e0fe5e567a824725c170f3f67",
@@ -34,14 +34,14 @@
     "independent": {
       "declared_input_count": 83,
       "identity_status": "fresh",
-      "input_fingerprint_sha256": "930e85491889f5dc65421d53ee8f9ade3261a0c0687f268f85a2504ef6996e62",
+      "input_fingerprint_sha256": "66c357b7ea6f12f3903ef991411477657a5707a696177b1a1c2c4715d377f01c",
       "status": "fresh"
     },
     "paired_live_agreement": true,
     "primary": {
       "declared_input_count": 83,
       "identity_status": "fresh",
-      "input_fingerprint_sha256": "944545b7e1309e29da87fa82226dfaca1f94dec3be3653d4845a2dce727bc87a",
+      "input_fingerprint_sha256": "0a3b2db95a822d4253a5a8944b132ba3468867bd6f802c7ff6f74dfd371488da",
       "status": "fresh"
     }
   },
@@ -50,7 +50,7 @@
     "independent_named_checks_passed": 7,
     "primary_named_checks_failed": 0,
     "primary_named_checks_passed": 9,
-    "primary_report_sha256": "3faf624419d915f9bbb7954d6a130e587ccf336f6c12f8f034b50b1b196ff63a"
+    "primary_report_sha256": "a779dc43dd4f56917458807e1569cb5939c881087b8e4f9d745fd1c221117f09"
   },
   "claim_type": "bounded_theorem",
   "cycle": 732,

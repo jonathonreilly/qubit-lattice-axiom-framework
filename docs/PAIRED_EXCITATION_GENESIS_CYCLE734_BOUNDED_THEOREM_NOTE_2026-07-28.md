@@ -1,4 +1,4 @@
-# Paired-excitation genesis — source-boundary-free preparation, and the adjacency wall, frozen — Cycle 734
+# Externally positioned translation-covariant pair template and inherited adjacent-guard witness — Cycle 734
 
 Date: 2026-07-28
 
@@ -6,8 +6,8 @@ Authority: none
 
 Audit: unset
 
-Status: bounded conditional theorem (positive preparation result + frozen
-controller obstruction)
+Status: bounded conditional theorem (finite logical template plus a
+guard-specific controller observation)
 
 Claim type: bounded_theorem
 
@@ -16,62 +16,71 @@ Runners:
 - [`frontier_cycle734_paired_excitation_genesis_2026_07_28.py`](../scripts/frontier_cycle734_paired_excitation_genesis_2026_07_28.py)
 - [`frontier_cycle734_paired_excitation_independent_check_2026_07_28.py`](../scripts/frontier_cycle734_paired_excitation_independent_check_2026_07_28.py)
 
+Load-bearing proposal-only parents:
+
+- [Cycle 719 recurrent controller](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+- [Cycle 724 local token-row guard](LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- [Cycle 730 charge-row enforcement](CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- [Cycle 731 token-count certificate](TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- [Cycle 732 fixed genesis word](GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+
 Constitutional effect: none. This package changes no axiom, foundation,
-Qualification, primitive, registry, policy, queue, audit result, or audit
-status.
+Qualification, primitive, registry, policy, audit result, or audit status.
 
 ## Result up front
 
-The Cycle-719 N1 table lists the paired-excitation family as live and
-unexcluded; W2 names retirement of the source boundary among its
-components. This cycle executes the family at the smallest honest scope
-and returns one positive theorem and one precisely frozen wall:
-
-**Positive — preparation no longer needs a distinguished site.**
+On the supplied oriented ring-11 logical layout, all-blank register, and
+externally supplied application position `p`, this package establishes a
+finite algebraic template:
 
 - a **3-gate pair-creation template** (three X gates; fixed unrolling
   from `(layout, position)`; AST audit finds zero distinguished-site
-  constants, zero runtime branches) creates a positive-oriented adjacent
-  token pair with `h = 0` and lawful charge rows, bit-exactly from
-  all-blanks, at **every** ring position (11/11);
+  constants and zero runtime branches) creates a positive-oriented
+  adjacent A pair and the one-edge reference segment with `h = 0`,
+  bit-exactly at **every** supplied ring position (11/11);
 - **exact translation covariance**: `T_shift · W(position) · T_shift⁻¹ =
   W(position + shift mod 11)` — all 121 conjugation identities hold
-  exactly; the template is position-free and the applied position is an
-  external parameter, so `source_boundary_retired_for_preparation:
-  true` (for preparation — the controller is a separate matter, below);
+  exactly. This proves covariance of an externally indexed family. It
+  does not select `p`, autonomously localize a pair, or retire equivalent
+  source/location data;
 - **count-2 enforcement through the parameterized public API**: the
   Cycle-731 constructor `count_certified_controller_build(...,
   expected_count=2)` reused unchanged (11,206-gate controller word,
-  frozen sha); all 11 lawful pairs accepted, count-0/1/3/4 witnesses
-  refused; the `h = 0, B = 0` ring-11 sector recount is exact (2,048
-  cases; 55 = C(11,2) count-2 passes; 1,024 even-parity charge passes;
-  full-law passes exactly the 55; zero iff exceptions; frozen outcome
-  sha); the count comparison factors from the charge law;
+  pinned sha); all 11 templates are accepted by its A-count-two
+  comparator prefix and separately satisfy the supplied static charge
+  rows. Count-0/1/3/4 witnesses are refused by the prefix. In the
+  `h = 0, B = 0` ring-11 sector, exhaustive static recount gives 2,048
+  cases, 55 = C(11,2) count-two masks, 1,024 even-charge masks, and 55
+  masks in the conjunction, with zero equivalence exceptions. The
+  comparator certificate does not write the reference or `h` registers;
 - deletion controls: all 33 single-gate deletions (3 gates × 11
-  positions) detected and refused by the composed law.
+  positions) change the output and violate the static count-and-charge
+  conjunction; the 22 A-gate deletions are also refused by the count
+  prefix.
 
-**Frozen — the adjacency wall.**
+## Guard-specific finite observation
 
-Applying the Cycle-719 two-rail controller to the adjacent pair
-violates its own lawful-domain invariant — "an occupied A station
-requires own B/work and both neighboring A/B rails blank at the Q
-boundary" — at **step 0, stations 0 and 1**, and at two sites on every
-one of the 11 steps. The obstruction
-`ownership_uniqueness_at_adjacent_Q_sites` is frozen with a minimal
-reproducing census (2 tokens at sites {0,1}, B and work empty,
-ring-11); the single-token control triggers zero violations, so the
-wall is specific to adjacency, not to the machinery. Notably, the bare
-controller word still transports the pair coherently outside its
-lawful domain (the orbit trace advances `[0,1] → [1,2] → …` with clean
-A-pair returns and blank B; output sha frozen) — the failure is a
-domain violation, not a dynamical breakdown.
+On the supplied adjacent input, the current Cycle-731 composition's
+inherited Cycle-724 radius-one Q guard is dirty at step 0, stations 0
+and 1, and at the two occupied sites on each translated step. The
+minimal reproducing census is two adjacent A tokens at `{0,1}`, with B
+and work blank on ring 11; all 11 singleton controls are guard-clean.
+The count-two comparator prefix still accepts the input, while the full
+guarded word suppresses the controlled data macros and returns its
+auxiliaries clean.
+
+This is a guard-specific worked observation, not an adjacency theorem,
+controller impossibility result, or no-go. Bare Cycle 719 has no such
+neighbor-blankness guard and coherently transports the pair: the trace
+advances `[0,1] → [1,2] → …`, returns the A pair after 11 steps, and
+keeps B blank.
 
 ## Supplied / derived / open
 
 ### Supplied
 
 - the all-blank Cycle-731 ring-11 register with clean auxiliaries; the
-  external application-position parameter (not a distinguished site);
+  external application-position parameter `p`;
   the `expected_count = 2` comparison parameter; the finite oriented
   ring geometry; program content/order on the held two-bank fixture;
   passive ring-translation relabeling; the held data genesis and
@@ -79,42 +88,43 @@ domain violation, not a dynamical breakdown.
 
 ### Derived
 
-- the position-free pair template, its bit-exact outputs at all
-  positions, and the exact 121-identity covariance;
-- count-2 acceptance/refusal through the unchanged parameterized
-  certificate, with the exact sector recount;
-- the deletion census; the frozen adjacency obstruction with its
-  minimal witness, its every-step violation trace, its single-token
-  control, and the frozen bare-transport observation.
+- the externally positioned three-X family, its bit-exact outputs at all
+  11 supplied positions, and the exact 121-identity passive covariance;
+- count-prefix acceptance/refusal through the unchanged parameterized
+  certificate and the separate static sector recount;
+- the deletion census;
+- the inherited-guard witness on the supplied adjacent input, its
+  every-step trace, singleton controls, guarded-macro suppression, and
+  the separate bare-transport observation.
 
 ### Open
 
-- **the sharpest next test**: the frozen invariant is
-  adjacency-specific by its own text (neighboring-rail blankness);
-  separated pairs (distance ≥ 2) are untested here — a distance-2 pair
-  template or a separation word would probe whether the wall is
-  adjacency-only or extends to all multi-token states;
-- W2's remaining components (finite oriented geometry, program
-  content/order, passive-only covariance) are untouched and stated;
+- source/location selection, autonomous or uniform pair formation,
+  physical or nearest-neighbor preparation, and any family beyond the
+  supplied ring-11 logical fixture;
+- other two-token geometries, alternate guards/controllers, schedules,
+  auxiliary sectors, and rings; the guard witness excludes none of
+  these routes;
+- finite oriented geometry, program content/order, and passive-only
+  covariance remain supplied;
 - everything the landed surfaces leave open at their scopes; no
   time/Record/Born/source content is touched.
 
-## Negative-claim discipline
+## Claim boundary
 
-The frozen obstruction is a bounded worked result on the declared
-fixture: it states that the *existing* controller's lawful domain
-excludes adjacent pairs, with a reproducing witness — not that
-multi-token control is impossible, and not a new no-go beyond its
-census. N1's "live and unexcluded" status for the family is narrowed,
-not closed: preparation is now positive; adjacent-pair control is the
-named residual with an exact invariant to either generalize or respect.
+The exact theorem is the finite logical construction and its stated
+static/count-prefix properties under the supplied premises. Passive
+translation covariance removes hard-coded absolute-site constants from
+the template, but the external `p` remains load-bearing. The guard
+observation is reported separately and carries no wall or no-go
+semantics.
 
 ## Verdict
 
-W2's source-boundary component splits cleanly: **preparation** is
-boundary-free (a translation-covariant 3-gate template, enforced by the
-unchanged parameterized certificate), while **control** of the adjacent
-pair hits the ownership invariant at the first step — frozen with the
-precision the wall has lacked since Cycle 719 named the family. The
-next test is written into the invariant itself: separate the pair.
-Independent audit still required.
+Cycle 734 supplies an externally positioned, translation-covariant
+three-X logical pair template on ring 11, with exact static charge,
+count-prefix, covariance, and deletion certificates. It also records
+one inherited Cycle-724/Cycle-731 adjacent-guard witness while bare
+Cycle 719 continues to transport the rails. Source selection,
+autonomous preparation, physical realization, and generalized
+multi-token control remain open. Independent audit still required.

@@ -27,6 +27,17 @@ them.
 
 Current science/open-lane follow-ups:
 
+- `2026-07-30-cycle734-supplied-position-and-guard-scope`
+  Scope: the Cycle-734 externally positioned ring-11 logical pair template
+  and its current Cycle-719/724/731 controller stack.
+  Finding: the finite three-X template, passive covariance, static charge
+  rows, count-two comparator-prefix behavior, and deletion census are bounded
+  candidates. The application position, autonomous or uniform formation,
+  physical preparation, and generalized multi-token control remain supplied
+  or open. The adjacent result is only an inherited Cycle-724/731 guard
+  witness; it is not a Cycle-719 wall or controller no-go.
+  Disposition: `science-needed`; do not promote source selection, autonomous
+  preparation, or generalized exclusion without separate evidence and audit.
 - `2026-07-30-cycle732-genesis-selection-and-extension-inventory`
   Scope: the Cycle-732 fixed logical genesis-word candidate and its current
   Cycle-731 parent.

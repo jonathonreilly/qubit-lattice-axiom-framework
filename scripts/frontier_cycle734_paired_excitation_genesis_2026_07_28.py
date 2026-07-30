@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
-"""Cycle 734: translation-covariant paired-excitation genesis.
+"""Cycle 734: an externally positioned translation-covariant pair template.
 
 On the held ring-11 register, one three-gate template creates adjacent
 controller excitations and their one-edge reference segment from the blank
-state.  The application position is an external parameter rather than a
-distinguished site in the template.  Cycle 731's public compiler is reused
-with expected_count=2, and the h=0/B=0 theorem sector is recounted.
+state.  The application position remains an explicit supplied parameter.
+Cycle 731's public compiler is reused with expected_count=2, and the h=0/B=0
+static sector is recounted.
 
-The adjacent pair is deliberately probed against Cycle 719's controller
-domain.  It reaches an exact ownership-uniqueness wall: at the first Q
-boundary both occupied stations see the other token on a neighboring A rail.
-That obstruction is frozen and reproduced rather than promoted to a false
-multi-token composition claim.
+The adjacent pair is also probed against the current Cycle-731 composition's
+inherited Cycle-724 radius-one guard.  This records one guard-specific finite
+observation; it is not a Cycle-719 exclusion result or a multi-token no-go.
 """
 from __future__ import annotations
 
@@ -19,11 +17,14 @@ import ast
 from hashlib import sha256
 import inspect
 import json
+from pathlib import Path
 import sys
 from time import perf_counter
 
+import frontier_cycle734_paired_excitation_independent_check_2026_07_28 as INDEPENDENT_CHECK
 import frontier_cycle732_genesis_word_self_verification_2026_07_28 as G732
 import frontier_cycle731_token_count_certificate_2026_07_28 as C731
+import frontier_cycle724_local_token_row_enforcement_2026_07_28 as C724
 import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
 
 
@@ -31,10 +32,112 @@ AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = (
     "docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md"
 )
-AUDIT_INPUT_PATHS = (
+SELF_PATH = (
+    "scripts/frontier_cycle734_paired_excitation_genesis_2026_07_28.py"
+)
+INDEPENDENT_PATH = (
+    "scripts/frontier_cycle734_paired_excitation_independent_check_2026_07_28.py"
+)
+DIRECT_INPUT_PATHS = (
+    NOTE_PATH,
+    INDEPENDENT_PATH,
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md",
     "scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py",
     "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+)
+AUDIT_INPUT_PATHS = (
+    "docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+    "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+    "docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
+    "docs/work_history/repo/review_feedback/INFINITE_REVERSIBLE_RECORD_EXPORT_QCA_CYCLE11_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle612_interval_bridge_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+    "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
+    "scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
+    "scripts/frontier_cycle732_genesis_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py",
+    "scripts/frontier_cycle734_paired_excitation_independent_check_2026_07_28.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
@@ -57,6 +160,7 @@ EXPECTED_PAIR_CONTROLLER_OUTPUT_SHA256 = (
     "10d40bdc3e9e367d1e3569abbf4e97c4dceef85a5253653a257ddc3ede96c87c"
 )
 STDOUT_LIMIT_BYTES = 150 * 1024
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 CHECKS: dict[str, bool] = {}
 OUTPUT_LINES: list[str] = []
@@ -77,6 +181,111 @@ def tuple_to_int(bits: tuple[int, ...]) -> int:
 
 def tuple_to_mask(bits: tuple[int, ...]) -> int:
     return sum(int(bit) << station for station, bit in enumerate(bits))
+
+
+def declared_input_closure(
+    direct_paths: tuple[str, ...],
+) -> tuple[str, ...]:
+    """Recover recursive literal input declarations, excluding this runner."""
+
+    seen: set[str] = set()
+    pending = list(direct_paths)
+    while pending:
+        relative = pending.pop()
+        if relative == SELF_PATH or relative in seen:
+            continue
+        path = REPO_ROOT / relative
+        if not path.is_file():
+            raise FileNotFoundError(relative)
+        seen.add(relative)
+        if not (relative.startswith("scripts/") and relative.endswith(".py")):
+            continue
+        tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+        nested: tuple[str, ...] = ()
+        for node in tree.body:
+            if not isinstance(node, (ast.Assign, ast.AnnAssign)):
+                continue
+            targets = (
+                node.targets if isinstance(node, ast.Assign) else (node.target,)
+            )
+            if not any(
+                isinstance(target, ast.Name)
+                and target.id == "AUDIT_INPUT_PATHS"
+                for target in targets
+            ):
+                continue
+            value = ast.literal_eval(node.value)
+            if (
+                not isinstance(value, (tuple, list))
+                or not value
+                or not all(isinstance(item, str) for item in value)
+            ):
+                raise ValueError(("invalid AUDIT_INPUT_PATHS", relative))
+            nested = tuple(value)
+            break
+        pending.extend(nested)
+    return tuple(sorted(seen))
+
+
+def input_contract_certificate() -> dict[str, object]:
+    recovered = declared_input_closure(DIRECT_INPUT_PATHS)
+    all_exist = all((REPO_ROOT / path).is_file() for path in AUDIT_INPUT_PATHS)
+    missing_rejected = False
+    try:
+        declared_input_closure(
+            DIRECT_INPUT_PATHS
+            + ("scripts/__cycle734_missing_input_control__.py",)
+        )
+    except FileNotFoundError:
+        missing_rejected = True
+
+    def digest(paths: tuple[str, ...], replacement: bytes | None = None) -> str:
+        output = sha256()
+        mutation_path = (
+            "scripts/"
+            "frontier_cycle719_local_handshake_controller_core_2026_07_26.py"
+        )
+        for relative in paths:
+            payload = (REPO_ROOT / relative).read_bytes()
+            if replacement is not None and relative == mutation_path:
+                payload = replacement
+            output.update(relative.encode())
+            output.update(b"\0")
+            output.update(payload)
+            output.update(b"\0")
+        return output.hexdigest()
+
+    mutation_path = (
+        REPO_ROOT
+        / "scripts"
+        / "frontier_cycle719_local_handshake_controller_core_2026_07_26.py"
+    )
+    payload = mutation_path.read_bytes()
+    base_digest = digest(recovered)
+    mutated_digest = digest(recovered, payload + b"\n# mutation control\n")
+    required_parent_notes = (
+        "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+        "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    )
+    return {
+        "declared_count": len(AUDIT_INPUT_PATHS),
+        "recovered_count": len(recovered),
+        "exact_recursive_closure": recovered == AUDIT_INPUT_PATHS,
+        "all_exist": all_exist,
+        "note_in_closure": NOTE_PATH in recovered,
+        "independent_runner_in_closure": INDEPENDENT_PATH in recovered,
+        "independent_runner_registered":
+            INDEPENDENT_CHECK.SELF_PATH == INDEPENDENT_PATH,
+        "all_parent_notes_in_closure":
+            all(path in recovered for path in required_parent_notes),
+        "missing_path_rejected": missing_rejected,
+        "transitive_mutation_changes_digest":
+            base_digest != mutated_digest,
+        "input_manifest_sha256": base_digest,
+    }
 
 
 def occupied_sites(bits: tuple[int, ...]) -> tuple[int, ...]:
@@ -261,7 +470,7 @@ def translation_covariance_certificate(
         "expected_identities": RING_STATIONS ** 2,
         "identity_failures": tuple(failures),
         "translation_normalization_failures": normalized_failures,
-        "template_position_free": (
+        "translation_family_exact": (
             not failures
             and not normalized_failures
             and identities == RING_STATIONS ** 2
@@ -282,12 +491,12 @@ def cycle732_regression_anchor() -> dict[str, object]:
         word
         + fixture["controller_word"] * len(fixture["program"])
     )
-    rerun = G732.composed_self_verification_certificate(fixture, word)
+    rerun = G732.composed_certificate(fixture, word)
     rerun_keys = (
-        "certificate_accepts_genesis_output",
+        "target_accepted",
         "literal_composed_matches_stepwise",
         "data_expected_transition",
-        "full_controller_register_return",
+        "controller_registers_return",
         "all_auxiliaries_return_clean",
         "literal_reverse_exact",
     )
@@ -304,7 +513,7 @@ def cycle732_regression_anchor() -> dict[str, object]:
         "composed_word_sha256": K.gate_digest(composed_word),
         "expected_composed_word_sha256":
             EXPECTED_CYCLE732_COMPOSED_SHA256,
-        "frozen_composed_pin_match": (
+        "composed_pin_match": (
             len(composed_word) == EXPECTED_CYCLE732_COMPOSED_GATES
             and K.gate_digest(composed_word)
             == EXPECTED_CYCLE732_COMPOSED_SHA256
@@ -364,17 +573,17 @@ def h0_b0_theorem_recount() -> dict[str, object]:
         charge_law = refs >= 0
         count_law = a_mask.bit_count() == EXPECTED_COUNT
         expected_charge = a_mask.bit_count() % 2 == 0
-        full_law = count_law and charge_law
-        expected_full = (
+        static_conjunction = count_law and charge_law
+        expected_static = (
             a_mask.bit_count() == EXPECTED_COUNT
             and a_mask.bit_count() % 2 == 0
         )
         parity_pass += charge_law
         count_pass += count_law
-        full_pass += full_law
+        full_pass += static_conjunction
         exceptions += charge_law != expected_charge
-        exceptions += full_law != expected_full
-        pair_pass += a_mask in adjacent_masks and full_law
+        exceptions += static_conjunction != expected_static
+        pair_pass += a_mask in adjacent_masks and static_conjunction
         if charge_law:
             recurrence_failures += charge_syndrome(
                 a_mask, 0, refs, 0
@@ -382,8 +591,8 @@ def h0_b0_theorem_recount() -> dict[str, object]:
         outcome.append(
             int(count_law)
             | (int(charge_law) << 1)
-            | (int(full_law) << 2)
-            | (int(expected_full) << 3)
+            | (int(static_conjunction) << 2)
+            | (int(expected_static) << 3)
         )
     return {
         "ring_stations": RING_STATIONS,
@@ -394,14 +603,14 @@ def h0_b0_theorem_recount() -> dict[str, object]:
         "expected_count2_pass_cases": 55,
         "even_parity_charge_pass_cases": parity_pass,
         "expected_even_parity_charge_pass_cases": 1_024,
-        "full_count2_and_charge_pass_cases": full_pass,
-        "expected_full_pass_cases": 55,
+        "static_count2_and_charge_pass_cases": full_pass,
+        "expected_static_count2_and_charge_pass_cases": 55,
         "adjacent_pair_masks": len(adjacent_masks),
         "adjacent_pair_pass_cases": pair_pass,
         "iff_exceptions": exceptions,
         "charge_recurrence_failures": recurrence_failures,
         "outcome_table_sha256": sha256(outcome).hexdigest(),
-        "full_law": (
+        "static_count_and_charge_law": (
             "A_count=2 AND popcount(A) mod 2=h in the B=0,h=0 "
             "sector"
         ),
@@ -533,10 +742,10 @@ def count2_enforcement_certificate(
         "comparison_stage_differs_from_expected_count1":
             comparison2 != C731.comparison_compute_word(layout, 1),
         "certificate_ref_h_touch_failures": ref_h_touch_failures,
-        "count_comparison_factors_from_charge_law":
+        "count_comparison_does_not_write_reference_or_h":
             ref_h_touch_failures == 0,
         "pair_acceptance": pair_acceptance,
-        "all_11_lawful_pairs_accepted": all(
+        "all_11_templates_count_prefix_accepted": all(
             row["accepted"] and row["prefix_reverse_exact"]
             for row in pair_acceptance
         ),
@@ -552,7 +761,7 @@ def count2_enforcement_certificate(
     }
 
 
-def no_source_boundary_certificate(
+def supplied_position_template_certificate(
     layout: dict[str, int],
 ) -> dict[str, object]:
     tree = ast.parse(inspect.getsource(pair_creation_word))
@@ -634,7 +843,7 @@ def no_source_boundary_certificate(
             for site in range(2, RING_STATIONS)
             if site in integer_constants
         ),
-        "no_distinguished_site_constant": no_site_constants,
+        "no_hardcoded_absolute_site": no_site_constants,
         "fixed_unrolling_gate_count": len(base_word),
         "all_position_words_same_size":
             all(len(word) == len(base_word) for word in all_words),
@@ -725,13 +934,25 @@ def controller_two_token_probe(
     current_data = data
     violation_trace = []
     controller_trace = []
+    cycle724_guard_agreement = True
     for step in range(RING_STATIONS):
         violations = ownership_violations(a, b, work)
+        cycle724_dirty_sites = tuple(
+            station
+            for station, occupied in enumerate(a)
+            if occupied and C724.local_dirty(a, b, work, station)
+        )
+        cycle724_guard_agreement = (
+            cycle724_guard_agreement
+            and cycle724_dirty_sites
+            == tuple(row["station"] for row in violations)
+        )
         violation_trace.append(
             {
                 "step": step,
                 "A_sites": occupied_sites(a),
                 "B_sites": occupied_sites(b),
+                "Cycle724_dirty_occupied_sites": cycle724_dirty_sites,
                 "violations": violations,
             }
         )
@@ -814,8 +1035,12 @@ def controller_two_token_probe(
         len(row["violations"]) for row in violation_trace
     )
     first = violation_trace[0]
-    frozen = {
+    guard_witness = {
         "name": "ownership_uniqueness_at_adjacent_Q_sites",
+        "guard_layer": (
+            "Cycle724 radius-one Q guard inherited by the Cycle731 "
+            "composition"
+        ),
         "invariant": (
             "an occupied A station requires own B/work and both "
             "neighboring A/B rails blank at the Q boundary"
@@ -838,38 +1063,41 @@ def controller_two_token_probe(
             == EXPECTED_COUNT
             and comparison_rows["refusal_latch"] == 0,
         "local_syndrome_probes": tuple(syndrome_probes),
-        "all_11_steps_violate_at_two_sites":
+        "all_11_steps_dirty_at_two_occupied_sites":
             total_violations == 2 * RING_STATIONS,
-        "bare_K_pair_output_sha256": pair_output_sha,
-        "expected_bare_K_pair_output_sha256":
+        "Cycle724_guard_agrees_with_local_recount":
+            cycle724_guard_agreement,
+        "bare_Cycle719_pair_output_sha256": pair_output_sha,
+        "expected_bare_Cycle719_pair_output_sha256":
             EXPECTED_PAIR_CONTROLLER_OUTPUT_SHA256,
     }
-    frozen_exact = (
-        frozen["first_step"] == 0
-        and frozen["first_stations"] == (0, 1)
-        and frozen["minimal_reproducing_census"]["A_count"] == 2
-        and frozen["minimal_reproducing_census"]["A_sites"] == (0, 1)
-        and frozen["minimal_reproducing_census"]["B_count"] == 0
-        and frozen["minimal_reproducing_census"][
+    guard_witness_exact = (
+        guard_witness["first_step"] == 0
+        and guard_witness["first_stations"] == (0, 1)
+        and guard_witness["minimal_reproducing_census"]["A_count"] == 2
+        and guard_witness["minimal_reproducing_census"]["A_sites"] == (0, 1)
+        and guard_witness["minimal_reproducing_census"]["B_count"] == 0
+        and guard_witness["minimal_reproducing_census"][
             "single_token_control_violations"
         ]
         == 0
-        and frozen["count2_comparison_accepts"]
+        and guard_witness["count2_comparison_accepts"]
         and all(row["syndrome"] == 1 for row in syndrome_probes)
-        and frozen["all_11_steps_violate_at_two_sites"]
+        and guard_witness["all_11_steps_dirty_at_two_occupied_sites"]
+        and guard_witness["Cycle724_guard_agrees_with_local_recount"]
         and pair_output_sha
         == EXPECTED_PAIR_CONTROLLER_OUTPUT_SHA256
     )
     return {
-        "outcome": "frozen_obstruction",
-        "K_lawful_one_token_definition": {
+        "outcome": "inherited_guard_witness",
+        "bare_Cycle719_single_token_reference": {
             "full_orbit_equals_global_allocator_word":
                 one_output == expected_one,
             "A_token_returns": one_a
             == (1,) + (0,) * (RING_STATIONS - 1),
             "B_rail_returns_blank": not any(one_b),
         },
-        "bare_K_two_token_observations_outside_domain": {
+        "bare_Cycle719_two_token_observations": {
             "token_count_conserved":
                 sum(pair_a) + sum(pair_b) == EXPECTED_COUNT,
             "A_pair_returns": pair_a
@@ -904,9 +1132,10 @@ def controller_two_token_probe(
                 C731.all_auxiliary_clean(enforced_rows),
         },
         "ownership_violation_trace": tuple(violation_trace),
-        "frozen_obstruction": frozen,
-        "frozen_obstruction_exact": frozen_exact,
-        "controller_two_token_lawful": False,
+        "inherited_guard_witness": guard_witness,
+        "inherited_guard_witness_exact": guard_witness_exact,
+        "adjacent_data_macros_executed":
+            enforced_rows["data"] != data_value,
     }
 
 
@@ -1031,7 +1260,7 @@ def main() -> int:
         == anchor["Cycle732_expected_genesis_gates"]
         and anchor["Cycle732_genesis_sha256"]
         == anchor["Cycle732_expected_genesis_sha256"]
-        and anchor["frozen_composed_pin_match"]
+        and anchor["composed_pin_match"]
         and anchor["one_lawful_rerun_pass"],
     )
 
@@ -1053,7 +1282,7 @@ def main() -> int:
         == covariance["expected_identities"]
         and not covariance["identity_failures"]
         and not covariance["translation_normalization_failures"]
-        and covariance["template_position_free"],
+        and covariance["translation_family_exact"],
     )
 
     enforcement = count2_enforcement_certificate(layout)
@@ -1068,8 +1297,10 @@ def main() -> int:
         and enforcement["comparison_stage_matches_public_constructor"]
         and enforcement["comparison_stage_differs_from_expected_count1"]
         and enforcement["certificate_ref_h_touch_failures"] == 0
-        and enforcement["count_comparison_factors_from_charge_law"]
-        and enforcement["all_11_lawful_pairs_accepted"]
+        and enforcement[
+            "count_comparison_does_not_write_reference_or_h"
+        ]
+        and enforcement["all_11_templates_count_prefix_accepted"]
         and enforcement["all_0_1_3_4_count_witnesses_refused"]
         and enforcement["witness_charge_rows_lawful"]
         and theorem["cases"] == theorem["expected_cases"]
@@ -1077,8 +1308,8 @@ def main() -> int:
         == theorem["expected_count2_pass_cases"]
         and theorem["even_parity_charge_pass_cases"]
         == theorem["expected_even_parity_charge_pass_cases"]
-        and theorem["full_count2_and_charge_pass_cases"]
-        == theorem["expected_full_pass_cases"]
+        and theorem["static_count2_and_charge_pass_cases"]
+        == theorem["expected_static_count2_and_charge_pass_cases"]
         and theorem["adjacent_pair_pass_cases"]
         == theorem["adjacent_pair_masks"]
         == RING_STATIONS
@@ -1086,33 +1317,31 @@ def main() -> int:
         and theorem["charge_recurrence_failures"] == 0,
     )
 
-    source_audit = no_source_boundary_certificate(layout)
+    template_audit = supplied_position_template_certificate(layout)
     check(
-        "E_no_source_boundary_audit",
-        source_audit["audit_pass"]
-        and source_audit["external_position_parameter"]
-        and not source_audit["runtime_state_parameters"]
-        and not source_audit["runtime_branch_or_iteration_nodes"]
-        and not source_audit["distinguished_site_constants"]
-        and source_audit["no_distinguished_site_constant"]
-        and source_audit["orientation_remains_supplied"]
-        and source_audit["ring_geometry_remains_supplied"]
-        and source_audit["program_content_order_untouched"],
+        "E_supplied_position_template_audit",
+        template_audit["audit_pass"]
+        and template_audit["external_position_parameter"]
+        and not template_audit["runtime_state_parameters"]
+        and not template_audit["runtime_branch_or_iteration_nodes"]
+        and not template_audit["distinguished_site_constants"]
+        and template_audit["no_hardcoded_absolute_site"]
+        and template_audit["orientation_remains_supplied"]
+        and template_audit["ring_geometry_remains_supplied"]
+        and template_audit["program_content_order_untouched"],
     )
 
     controller = controller_two_token_probe(layout)
-    lawful_definition = controller["K_lawful_one_token_definition"]
-    bare_pair = controller[
-        "bare_K_two_token_observations_outside_domain"
-    ]
+    single_reference = controller["bare_Cycle719_single_token_reference"]
+    bare_pair = controller["bare_Cycle719_two_token_observations"]
     enforced_probe = controller[
         "Cycle731_expected2_enforcement_reproduction"
     ]
     check(
-        "F_controller_two_token_probe",
-        controller["outcome"] == "frozen_obstruction"
-        and not controller["controller_two_token_lawful"]
-        and all(lawful_definition.values())
+        "F_inherited_guard_and_bare_transport_probe",
+        controller["outcome"] == "inherited_guard_witness"
+        and not controller["adjacent_data_macros_executed"]
+        and all(single_reference.values())
         and bare_pair["token_count_conserved"]
         and bare_pair["A_pair_returns"]
         and bare_pair["B_rail_returns_blank"]
@@ -1127,7 +1356,7 @@ def main() -> int:
         and enforced_probe["A_after_one_R_step"] == (1, 2)
         and not enforced_probe["B_after_one_R_step"]
         and enforced_probe["all_auxiliaries_return_clean"]
-        and controller["frozen_obstruction_exact"],
+        and controller["inherited_guard_witness_exact"],
     )
 
     deletions = deletion_controls_certificate(layout)
@@ -1141,73 +1370,95 @@ def main() -> int:
         and deletions["every_deletion_detected_and_refused"],
     )
 
-    source_boundary_retired = (
+    manifest = input_contract_certificate()
+    check(
+        "I_recursive_input_and_paired_runner_closure",
+        manifest["exact_recursive_closure"]
+        and manifest["all_exist"]
+        and manifest["note_in_closure"]
+        and manifest["independent_runner_in_closure"]
+        and manifest["independent_runner_registered"]
+        and manifest["all_parent_notes_in_closure"]
+        and manifest["missing_path_rejected"]
+        and manifest["transitive_mutation_changes_digest"],
+    )
+
+    no_hardcoded_absolute_site = (
         CHECKS["B_pair_word_exactness"]
         and CHECKS["C_translation_covariance"]
-        and CHECKS["E_no_source_boundary_audit"]
+        and CHECKS["E_supplied_position_template_audit"]
     )
-    w2_remaining_components = [
+    source_selection_remains_supplied = bool(
+        template_audit["external_position_parameter"]
+    )
+    remaining_supplied_components = [
+        "external application-position parameter",
         "finite oriented geometry",
         "program content/order",
         "passive-only covariance",
     ]
     exact_supplies = [
         "all-blank Cycle-731 ring-11 register with clean auxiliaries",
-        "external application-position parameter (not a distinguished site)",
+        "external application-position parameter p",
         "expected_count=2 comparison parameter",
         "finite oriented ring geometry (11 stations and positive adjacency)",
         "program content/order on the held two-bank fixture",
         "passive ring-translation relabeling/covariance",
         "held two-bank data genesis and direction for the controller probe",
     ]
-    controller_boundary: dict[str, object] = {
-        "lawful": False,
-        "frozen_obstruction":
-            controller["frozen_obstruction"]["name"],
+    guard_boundary: dict[str, object] = {
+        "adjacent_data_macros_executed":
+            controller["adjacent_data_macros_executed"],
+        "inherited_guard_witness":
+            controller["inherited_guard_witness"]["name"],
+        "guard_layer":
+            controller["inherited_guard_witness"]["guard_layer"],
         "invariant":
-            controller["frozen_obstruction"]["invariant"],
+            controller["inherited_guard_witness"]["invariant"],
         "first_step":
-            controller["frozen_obstruction"]["first_step"],
+            controller["inherited_guard_witness"]["first_step"],
         "first_stations":
-            controller["frozen_obstruction"]["first_stations"],
+            controller["inherited_guard_witness"]["first_stations"],
         "minimal_reproducing_census":
-            controller["frozen_obstruction"][
+            controller["inherited_guard_witness"][
                 "minimal_reproducing_census"
             ],
     }
     boundary = {
-        "source_boundary_retired_for_preparation":
-            source_boundary_retired,
-        "controller_two_token_lawful": controller_boundary,
-        "w2_remaining_components": w2_remaining_components,
+        "no_hardcoded_absolute_site_in_template":
+            no_hardcoded_absolute_site,
+        "source_selection_remains_supplied":
+            source_selection_remains_supplied,
+        "guard_observation": guard_boundary,
+        "generalized_controller_no_go_claimed": False,
+        "remaining_supplied_components": remaining_supplied_components,
         "exact_supplies": exact_supplies,
         "orientation_untouched": True,
         "ring_geometry_untouched": True,
         "pair_position_is_external_parameter": True,
         "claim_scope": (
-            "translation-covariant preparation and expected_count=2 "
-            "enforcement on the held ring-11 register; the adjacent-pair "
-            "controller wall is frozen, not solved"
+            "externally positioned translation-covariant logical pair "
+            "template, static charge rows, and A-count-two comparator-prefix "
+            "behavior on the supplied ring-11 fixture; plus one inherited "
+            "Cycle724/Cycle731 adjacent-guard witness"
         ),
     }
     prior_labels = tuple(CHECKS)
     check(
         "H_honest_boundary_keys",
         all(CHECKS[label] for label in prior_labels)
-        and boundary[
-            "source_boundary_retired_for_preparation"
+        and boundary["no_hardcoded_absolute_site_in_template"]
+        and boundary["source_selection_remains_supplied"]
+        and isinstance(boundary["guard_observation"], dict)
+        and not boundary["guard_observation"][
+            "adjacent_data_macros_executed"
         ]
-        is True
-        and isinstance(
-            boundary["controller_two_token_lawful"], dict
-        )
-        and not boundary["controller_two_token_lawful"]["lawful"]
-        and boundary["controller_two_token_lawful"][
-            "frozen_obstruction"
-        ]
+        and boundary["guard_observation"]["inherited_guard_witness"]
         == "ownership_uniqueness_at_adjacent_Q_sites"
-        and boundary["w2_remaining_components"]
+        and not boundary["generalized_controller_no_go_claimed"]
+        and boundary["remaining_supplied_components"]
         == [
+            "external application-position parameter",
             "finite oriented geometry",
             "program content/order",
             "passive-only covariance",
@@ -1231,16 +1482,19 @@ def main() -> int:
         "pass": all(CHECKS.values()),
         "runtime_seconds": round(elapsed, 6),
         "pair_word_size": EXPECTED_PAIR_GATES,
-        "source_boundary_retired_for_preparation":
-            source_boundary_retired,
-        "controller_two_token_lawful": controller_boundary,
-        "w2_remaining_components": w2_remaining_components,
+        "no_hardcoded_absolute_site_in_template":
+            no_hardcoded_absolute_site,
+        "source_selection_remains_supplied":
+            source_selection_remains_supplied,
+        "guard_observation": guard_boundary,
+        "remaining_supplied_components": remaining_supplied_components,
         "exact_supplies": exact_supplies,
+        "input_contract": manifest,
         "Cycle732_regression_anchor": anchor,
         "pair_word_exactness": exactness,
         "translation_covariance": covariance,
         "count2_enforcement": enforcement,
-        "no_source_boundary_audit": source_audit,
+        "supplied_position_template_audit": template_audit,
         "controller_two_token_probe": controller,
         "pair_word_deletion_controls": deletions,
         "honest_boundary": boundary,

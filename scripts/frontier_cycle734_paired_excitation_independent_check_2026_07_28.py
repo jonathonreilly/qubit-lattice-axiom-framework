@@ -1,28 +1,135 @@
 #!/usr/bin/env python3
-"""Independent bounded checker for Cycle 734 paired excitation.
+"""Independent bounded checker for the Cycle-734 logical pair template.
 
-Cycle 734 is parsed as inert data.  The Cycle 719 controller core is the only
-project module imported, and every recount below is implemented locally.
+Cycle 734 is parsed as inert data and executed only in a child process. The
+finite pair algebra, charge recurrence, deletions, current Cycle-731
+comparator, and Cycle-724 guard provenance are checked by separate routes.
 """
 from __future__ import annotations
-
-AUDIT_TIMEOUT_SEC = 900
-NOTE_PATH = "docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md"
-AUDIT_INPUT_PATHS = (
-    "scripts/frontier_cycle734_paired_excitation_genesis_2026_07_28.py",
-    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-)
 
 import ast
 import json
 from pathlib import Path
+import subprocess
 import sys
 from time import perf_counter
 from typing import Any
 
+import frontier_cycle731_token_count_certificate_2026_07_28 as C731
+import frontier_cycle724_local_token_row_enforcement_2026_07_28 as C724
 import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
 
 
+AUDIT_TIMEOUT_SEC = 900
+NOTE_PATH = (
+    "docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+)
+SELF_PATH = (
+    "scripts/frontier_cycle734_paired_excitation_independent_check_2026_07_28.py"
+)
+PRIMARY_PATH = (
+    "scripts/frontier_cycle734_paired_excitation_genesis_2026_07_28.py"
+)
+DIRECT_INPUT_PATHS = (
+    NOTE_PATH,
+    PRIMARY_PATH,
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+)
+AUDIT_INPUT_PATHS = (
+    "docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+    "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+    "docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
+    "docs/work_history/repo/review_feedback/INFINITE_REVERSIBLE_RECORD_EXPORT_QCA_CYCLE11_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle612_interval_bridge_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+    "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
+    "scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
+    "scripts/frontier_cycle732_genesis_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py",
+    "scripts/frontier_cycle734_paired_excitation_genesis_2026_07_28.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+)
+REPO_ROOT = Path(__file__).resolve().parents[1]
 STDOUT_LIMIT_BYTES = 150 * 1024
 EXPECTED_PAIR_TEMPLATE = (
     ("a_base", 0),
@@ -36,16 +143,26 @@ EXPECTED_ADJACENT_CONVENTION = (
 EXPECTED_DECLARED_LAW = (
     "A_count=2 AND popcount(A) mod 2=h in the B=0,h=0 sector"
 )
-EXPECTED_GENESIS_AUDIT_INPUTS = (
-    "scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py",
-    "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
-    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+EXPECTED_COUNT2_CONTROLLER_GATES = 11_206
+EXPECTED_COUNT2_CONTROLLER_SHA256 = (
+    "3c1316fc5e83112093ed7bca9d61779d4a90a9ba5265fc8d2145b65be6c902a3"
+)
+EXPECTED_PRIMARY_AUDIT_INPUTS = tuple(
+    sorted(
+        tuple(
+            path for path in AUDIT_INPUT_PATHS if path != PRIMARY_PATH
+        )
+        + (SELF_PATH,)
+    )
 )
 EXPECTED_REFUSED_COUNTS = (0, 1, 3, 4)
 EXPECTED_OBSTRUCTION_NAME = "ownership_uniqueness_at_adjacent_Q_sites"
 EXPECTED_OBSTRUCTION_INVARIANT = (
     "an occupied A station requires own B/work and both neighboring "
     "A/B rails blank at the Q boundary"
+)
+EXPECTED_GUARD_LAYER = (
+    "Cycle724 radius-one Q guard inherited by the Cycle731 composition"
 )
 EXPECTED_MINIMAL_WITNESS = (
     ("ring_stations", 11),
@@ -55,20 +172,178 @@ EXPECTED_MINIMAL_WITNESS = (
     ("work_count", 0),
     ("single_token_control_violations", 0),
 )
-EXPECTED_W2_REMAINING_COMPONENTS = (
+EXPECTED_REMAINING_SUPPLIED_COMPONENTS = (
+    "external application-position parameter",
     "finite oriented geometry",
     "program content/order",
     "passive-only covariance",
 )
 EXPECTED_CLAIM_SCOPE = (
-    "translation-covariant preparation and expected_count=2 enforcement "
-    "on the held ring-11 register; the adjacent-pair controller wall is "
-    "frozen, not solved"
+    "externally positioned translation-covariant logical pair template, "
+    "static charge rows, and A-count-two comparator-prefix behavior on the "
+    "supplied ring-11 fixture; plus one inherited Cycle724/Cycle731 "
+    "adjacent-guard witness"
 )
-BLOCKLISTED_CYCLES = (734, 732, 731, 730, 724)
+EXPECTED_PRIMARY_CHECKS = (
+    "A_Cycle732_regression_anchor",
+    "B_pair_word_exactness",
+    "C_translation_covariance",
+    "D_count2_enforcement",
+    "E_supplied_position_template_audit",
+    "F_inherited_guard_and_bare_transport_probe",
+    "G_pair_word_deletion_controls",
+    "H_honest_boundary_keys",
+    "I_recursive_input_and_paired_runner_closure",
+    "OUTPUT_stdout_under_150KB",
+)
+BLOCKLISTED_CYCLES = (734,)
 K_ATTRIBUTE_BASELINE = tuple(
     sorted((name, id(value)) for name, value in vars(K).items())
 )
+
+
+def declared_input_closure(
+    direct_paths: tuple[str, ...],
+) -> tuple[str, ...]:
+    """Recover recursive literal input declarations, excluding this runner."""
+
+    seen: set[str] = set()
+    pending = list(direct_paths)
+    while pending:
+        relative = pending.pop()
+        if relative == SELF_PATH or relative in seen:
+            continue
+        path = REPO_ROOT / relative
+        if not path.is_file():
+            raise FileNotFoundError(relative)
+        seen.add(relative)
+        if not (relative.startswith("scripts/") and relative.endswith(".py")):
+            continue
+        tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+        nested: tuple[str, ...] = ()
+        for node in tree.body:
+            if not isinstance(node, (ast.Assign, ast.AnnAssign)):
+                continue
+            targets = (
+                node.targets if isinstance(node, ast.Assign) else (node.target,)
+            )
+            if not any(
+                isinstance(target, ast.Name)
+                and target.id == "AUDIT_INPUT_PATHS"
+                for target in targets
+            ):
+                continue
+            value = ast.literal_eval(node.value)
+            if (
+                not isinstance(value, (tuple, list))
+                or not value
+                or not all(isinstance(item, str) for item in value)
+            ):
+                raise ValueError(("invalid AUDIT_INPUT_PATHS", relative))
+            nested = tuple(value)
+            break
+        pending.extend(nested)
+    return tuple(sorted(seen))
+
+
+def input_contract_certificate() -> dict[str, object]:
+    recovered = declared_input_closure(DIRECT_INPUT_PATHS)
+    required_parent_notes = (
+        "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+        "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+        "docs/GENESIS_WORD_SELF_VERIFICATION_CYCLE732_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    )
+    missing_rejected = False
+    try:
+        declared_input_closure(
+            DIRECT_INPUT_PATHS
+            + ("scripts/__cycle734_independent_missing_control__.py",)
+        )
+    except FileNotFoundError:
+        missing_rejected = True
+    all_exist = all(
+        (REPO_ROOT / path).is_file() for path in AUDIT_INPUT_PATHS
+    )
+    parent_notes_present = all(
+        path in recovered for path in required_parent_notes
+    )
+    return {
+        "declared_count": len(AUDIT_INPUT_PATHS),
+        "recovered_count": len(recovered),
+        "exact_recursive_closure": recovered == AUDIT_INPUT_PATHS,
+        "all_exist": all_exist,
+        "note_in_closure": NOTE_PATH in recovered,
+        "primary_in_closure": PRIMARY_PATH in recovered,
+        "all_parent_notes_in_closure": parent_notes_present,
+        "primary_declares_paired_runner":
+            SELF_PATH in EXPECTED_PRIMARY_AUDIT_INPUTS,
+        "missing_path_rejected": missing_rejected,
+        "pass": (
+            recovered == AUDIT_INPUT_PATHS
+            and all_exist
+            and NOTE_PATH in recovered
+            and PRIMARY_PATH in recovered
+            and parent_notes_present
+            and SELF_PATH in EXPECTED_PRIMARY_AUDIT_INPUTS
+            and missing_rejected
+        ),
+    }
+
+
+def primary_liveness_certificate() -> dict[str, object]:
+    """Require current-parent primary execution and its complete check schema."""
+
+    completed = subprocess.run(
+        (sys.executable, PRIMARY_PATH),
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        timeout=AUDIT_TIMEOUT_SEC,
+        check=False,
+    )
+    stdout_lines = tuple(
+        line for line in completed.stdout.splitlines() if line.strip()
+    )
+    if not stdout_lines:
+        raise AssertionError(("primary emitted no stdout", completed.stderr))
+    report = json.loads(stdout_lines[-1])
+    checks = report.get("checks")
+    if not isinstance(checks, dict):
+        raise AssertionError("primary report has no checks object")
+    boundary = report.get("honest_boundary")
+    if not isinstance(boundary, dict):
+        raise AssertionError("primary report has no honest boundary")
+    observed_checks = tuple(sorted(checks))
+    expected_checks = tuple(sorted(EXPECTED_PRIMARY_CHECKS))
+    return {
+        "returncode": completed.returncode,
+        "stderr": completed.stderr,
+        "observed_check_names": observed_checks,
+        "expected_check_names": expected_checks,
+        "checks_passed": sum(bool(value) for value in checks.values()),
+        "checks_total": len(checks),
+        "primary_report_pass": report.get("pass"),
+        "no_hardcoded_absolute_site_in_template":
+            boundary.get("no_hardcoded_absolute_site_in_template"),
+        "source_selection_remains_supplied":
+            boundary.get("source_selection_remains_supplied"),
+        "generalized_controller_no_go_claimed":
+            boundary.get("generalized_controller_no_go_claimed"),
+        "pass": (
+            completed.returncode == 0
+            and not completed.stderr
+            and report.get("pass") is True
+            and observed_checks == expected_checks
+            and all(value is True for value in checks.values())
+            and boundary.get("no_hardcoded_absolute_site_in_template")
+            is True
+            and boundary.get("source_selection_remains_supplied") is True
+            and boundary.get("generalized_controller_no_go_claimed")
+            is False
+        ),
+    }
 
 
 def _function(tree: ast.Module, name: str) -> ast.FunctionDef:
@@ -252,27 +527,11 @@ def _comparison_literals(
     return output
 
 
-def _find_boundary_true(function: ast.FunctionDef, key: str) -> bool:
-    for node in ast.walk(function):
-        if not (
-            isinstance(node, ast.Compare)
-            and len(node.ops) == 1
-            and isinstance(node.ops[0], ast.Is)
-            and len(node.comparators) == 1
-        ):
-            continue
-        if _subscript_path(node.left) != ("boundary", (key,)):
-            continue
-        if ast.literal_eval(node.comparators[0]) is True:
-            return True
-    return False
-
-
 def extraction() -> tuple[dict[str, object], dict[str, object]]:
-    """Extract only frozen syntax/data from Cycle 734; never execute it."""
+    """Extract only inert syntax/data from Cycle 734; never import it."""
 
-    source = Path(AUDIT_INPUT_PATHS[0]).read_text(encoding="utf-8")
-    tree = ast.parse(source, filename=AUDIT_INPUT_PATHS[0])
+    source = Path(PRIMARY_PATH).read_text(encoding="utf-8")
+    tree = ast.parse(source, filename=PRIMARY_PATH)
     module_literals = {
         name: ast.literal_eval(_assignment_value(tree, name))
         for name in (
@@ -309,31 +568,37 @@ def extraction() -> tuple[dict[str, object], dict[str, object]]:
         _assignment_value(count_function, "witness_counts")
     )
     count_return_items = _dict_items(_return_dict(count_function))
-    accepted_key_present = "all_11_lawful_pairs_accepted" in count_return_items
+    accepted_key_present = (
+        "all_11_templates_count_prefix_accepted" in count_return_items
+    )
     refused_key_present = (
         "all_0_1_3_4_count_witnesses_refused" in count_return_items
     )
     law_items = _dict_items(
         _return_dict(_function(tree, "h0_b0_theorem_recount"))
     )
-    declared_law = ast.literal_eval(law_items["full_law"])
+    declared_law = ast.literal_eval(
+        law_items["static_count_and_charge_law"]
+    )
     exhaustive_count2 = ast.literal_eval(
-        law_items["expected_full_pass_cases"]
+        law_items["expected_static_count2_and_charge_pass_cases"]
     )
 
     controller_function = _function(tree, "controller_two_token_probe")
-    frozen_node = _assignment_value(controller_function, "frozen")
-    if not isinstance(frozen_node, ast.Dict):
-        raise AssertionError("frozen obstruction is not a dictionary literal")
-    frozen_items = _dict_items(frozen_node)
-    obstruction_name = ast.literal_eval(frozen_items["name"])
-    obstruction_invariant = ast.literal_eval(frozen_items["invariant"])
-    minimal_node = frozen_items["minimal_reproducing_census"]
+    witness_node = _assignment_value(controller_function, "guard_witness")
+    if not isinstance(witness_node, ast.Dict):
+        raise AssertionError("guard witness is not a dictionary literal")
+    witness_items = _dict_items(witness_node)
+    obstruction_name = ast.literal_eval(witness_items["name"])
+    obstruction_invariant = ast.literal_eval(witness_items["invariant"])
+    guard_layer = ast.literal_eval(witness_items["guard_layer"])
+    minimal_node = witness_items["minimal_reproducing_census"]
     if not isinstance(minimal_node, ast.Dict):
         raise AssertionError("minimal witness is not a dictionary literal")
     minimal_items = _dict_items(minimal_node)
     exact_comparisons = _comparison_literals(
-        _assignment_value(controller_function, "frozen_exact"), "frozen"
+        _assignment_value(controller_function, "guard_witness_exact"),
+        "guard_witness",
     )
     first_step = exact_comparisons[("first_step",)]
     first_stations = exact_comparisons[("first_stations",)]
@@ -363,14 +628,16 @@ def extraction() -> tuple[dict[str, object], dict[str, object]]:
         ),
     )
     controller_return = _dict_items(_return_dict(controller_function))
-    controller_lawful = ast.literal_eval(
-        controller_return["controller_two_token_lawful"]
+    adjacent_macro_key_present = (
+        "adjacent_data_macros_executed" in controller_return
     )
 
     main_function = _function(tree, "main")
-    w2_remaining = tuple(
+    remaining_supplied = tuple(
         ast.literal_eval(
-            _assignment_value(main_function, "w2_remaining_components")
+            _assignment_value(
+                main_function, "remaining_supplied_components"
+            )
         )
     )
     boundary_node = _assignment_value(main_function, "boundary")
@@ -378,16 +645,23 @@ def extraction() -> tuple[dict[str, object], dict[str, object]]:
         raise AssertionError("boundary is not a dictionary literal")
     boundary_items = _dict_items(boundary_node)
     claim_scope = ast.literal_eval(boundary_items["claim_scope"])
-    controller_boundary_node = _assignment_value(
-        main_function, "controller_boundary"
+    guard_boundary_node = _assignment_value(
+        main_function, "guard_boundary"
     )
-    if not isinstance(controller_boundary_node, ast.Dict):
-        raise AssertionError("controller boundary is not a dictionary literal")
-    controller_boundary_lawful = ast.literal_eval(
-        _dict_items(controller_boundary_node)["lawful"]
+    if not isinstance(guard_boundary_node, ast.Dict):
+        raise AssertionError("guard boundary is not a dictionary literal")
+    guard_boundary_items = _dict_items(guard_boundary_node)
+    boundary_keys_present = all(
+        key in boundary_items
+        for key in (
+            "no_hardcoded_absolute_site_in_template",
+            "source_selection_remains_supplied",
+            "guard_observation",
+            "generalized_controller_no_go_claimed",
+        )
     )
-    source_boundary_expected = _find_boundary_true(
-        main_function, "source_boundary_retired_for_preparation"
+    no_go_literal = ast.literal_eval(
+        boundary_items["generalized_controller_no_go_claimed"]
     )
 
     public = {
@@ -400,19 +674,21 @@ def extraction() -> tuple[dict[str, object], dict[str, object]]:
         "exhaustive_count2_census": exhaustive_count2,
         "obstruction_name": obstruction_name,
         "obstruction_invariant": obstruction_invariant,
+        "guard_layer": guard_layer,
         "first_step": first_step,
         "first_stations": first_stations,
         "minimal_witness": minimal_witness,
-        "source_boundary_retired_for_preparation": source_boundary_expected,
-        "controller_two_token_lawful": controller_lawful,
-        "w2_remaining_components": w2_remaining,
+        "boundary_keys_present": boundary_keys_present,
+        "generalized_controller_no_go_claimed": no_go_literal,
+        "remaining_supplied_components": remaining_supplied,
         "claim_scope": claim_scope,
         "genesis_AUDIT_INPUT_PATHS_literal": module_literals[
             "AUDIT_INPUT_PATHS"
         ],
     }
     passed = (
-        module_literals["AUDIT_INPUT_PATHS"] == EXPECTED_GENESIS_AUDIT_INPUTS
+        module_literals["AUDIT_INPUT_PATHS"]
+        == EXPECTED_PRIMARY_AUDIT_INPUTS
         and module_literals["EXPECTED_COUNT"] == 2
         and module_literals["EXPECTED_PAIR_GATES"] == 3
         and module_literals["FIXTURE_BANKS"] == 2
@@ -426,13 +702,17 @@ def extraction() -> tuple[dict[str, object], dict[str, object]]:
         and exhaustive_count2 == 55
         and obstruction_name == EXPECTED_OBSTRUCTION_NAME
         and obstruction_invariant == EXPECTED_OBSTRUCTION_INVARIANT
+        and guard_layer == EXPECTED_GUARD_LAYER
         and first_step == 0
         and first_stations == (0, 1)
         and minimal_witness == EXPECTED_MINIMAL_WITNESS
-        and source_boundary_expected is True
-        and controller_lawful is False
-        and controller_boundary_lawful is False
-        and w2_remaining == EXPECTED_W2_REMAINING_COMPONENTS
+        and adjacent_macro_key_present
+        and boundary_keys_present
+        and no_go_literal is False
+        and "adjacent_data_macros_executed" in guard_boundary_items
+        and "inherited_guard_witness" in guard_boundary_items
+        and remaining_supplied
+        == EXPECTED_REMAINING_SUPPLIED_COMPONENTS
         and claim_scope == EXPECTED_CLAIM_SCOPE
     )
     public["pass"] = passed
@@ -444,10 +724,11 @@ def extraction() -> tuple[dict[str, object], dict[str, object]]:
         "refused_counts": refused_counts,
         "obstruction_name": obstruction_name,
         "obstruction_invariant": obstruction_invariant,
+        "guard_layer": guard_layer,
         "first_step": first_step,
         "first_stations": first_stations,
         "minimal_witness": minimal_witness,
-        "w2_remaining_components": w2_remaining,
+        "remaining_supplied_components": remaining_supplied,
         "claim_scope": claim_scope,
     }
     return public, internal
@@ -489,7 +770,7 @@ def pair_word_recount(extracted: dict[str, object]) -> dict[str, object]:
     stations = int(extracted["ring_stations"])
     template = extracted["pair_template"]
     if not isinstance(template, tuple):
-        raise AssertionError("extracted pair template is not frozen")
+        raise AssertionError("extracted pair template is not a literal tuple")
     layout = {
         "stations": stations,
         "a_base": 0,
@@ -578,8 +859,28 @@ def _declared_count_parity_law(
     return count_ok, parity_ok, count_ok and parity_ok
 
 
+def _reference_from_charge_recurrence(
+    a_mask: int, h: int, stations: int
+) -> int | None:
+    """Solve r_(s+1)=r_s xor A_s xor h*[s=0] with r_0 fixed to zero."""
+
+    current = 0
+    refs = 0
+    for station in range(stations):
+        refs |= current << station
+        following = (
+            current
+            ^ ((a_mask >> station) & 1)
+            ^ (h if station == 0 else 0)
+        )
+        if station == stations - 1:
+            return refs if following == 0 else None
+        current = following
+    raise AssertionError("unreachable recurrence exit")
+
+
 def count2_law_recount(extracted: dict[str, object]) -> dict[str, object]:
-    """Reimplement the declared count/parity predicate with count fixed at 2."""
+    """Recount static charge algebra and the actual current comparator prefix."""
 
     stations = int(extracted["ring_stations"])
     expected_count = int(extracted["expected_count"])
@@ -616,6 +917,52 @@ def count2_law_recount(extracted: dict[str, object]) -> dict[str, object]:
     )
     accepted = tuple(row[0] for row in adjacent_rows if row[-1])
     refused = tuple(row[0] for row in refused_rows if row[-1])
+
+    charge_pass = 0
+    recurrence_failures = 0
+    charge_equivalence_failures = 0
+    ring_mask = (1 << stations) - 1
+    for a_mask in range(1 << stations):
+        refs = _reference_from_charge_recurrence(a_mask, 0, stations)
+        charge_ok = refs is not None
+        charge_pass += charge_ok
+        charge_equivalence_failures += (
+            charge_ok != (a_mask.bit_count() % 2 == 0)
+        )
+        if refs is not None:
+            next_refs = (refs >> 1) | ((refs & 1) << (stations - 1))
+            recurrence_failures += (
+                (a_mask ^ refs ^ next_refs) & ring_mask
+            ) != 0
+
+    program = K.interleaved_program(int(extracted["fixture_banks"]))
+    word, layout, _blocks, metadata = (
+        C731.count_certified_controller_build(
+            program, C731.DATA_WIDTH, expected_count
+        )
+    )
+    prefix = word[:int(metadata["comparison_compute_stop"])]
+    sources = tuple(
+        a_mask << int(layout["a_base"])
+        for a_mask in range(1 << stations)
+    )
+    compared = C731.literal_apply(
+        sources, prefix, int(layout["full_width"]), 1
+    )
+    actual_acceptances = 0
+    actual_mismatches = []
+    for a_mask, value in enumerate(compared):
+        rows = C731.controller_rows(value, layout)
+        counter = sum(
+            int(bit) << index
+            for index, bit in enumerate(rows["counter"])
+        )
+        observed = counter == expected_count and rows["refusal_latch"] == 0
+        expected = a_mask.bit_count() == expected_count
+        actual_acceptances += observed
+        if observed != expected or counter != a_mask.bit_count():
+            actual_mismatches.append(a_mask)
+
     return {
         "declared_form": EXPECTED_DECLARED_LAW,
         "expected_count": expected_count,
@@ -624,6 +971,14 @@ def count2_law_recount(extracted: dict[str, object]) -> dict[str, object]:
         "refusal_rows": tuple(refused_rows),
         "refused_counts": refused,
         "exhaustive_B0_h0_count2_cases": len(exhaustive_lawful),
+        "manual_charge_pass_cases": charge_pass,
+        "manual_charge_equivalence_failures":
+            charge_equivalence_failures,
+        "manual_charge_recurrence_failures": recurrence_failures,
+        "actual_parent_comparator_gates": len(word),
+        "actual_parent_comparator_sha256": K.gate_digest(word),
+        "actual_parent_prefix_acceptances": actual_acceptances,
+        "actual_parent_prefix_mismatches": tuple(actual_mismatches),
         "pass": (
             extracted["ring_stations"] == 11
             and expected_count == 2
@@ -631,6 +986,91 @@ def count2_law_recount(extracted: dict[str, object]) -> dict[str, object]:
             and refused == EXPECTED_REFUSED_COUNTS
             and all(row[3] for row in refused_rows)
             and len(exhaustive_lawful) == 55
+            and charge_pass == 1_024
+            and charge_equivalence_failures == 0
+            and recurrence_failures == 0
+            and len(word) == EXPECTED_COUNT2_CONTROLLER_GATES
+            and K.gate_digest(word)
+            == EXPECTED_COUNT2_CONTROLLER_SHA256
+            and actual_acceptances == 55
+            and not actual_mismatches
+        ),
+    }
+
+
+def deletion_control_recount(
+    extracted: dict[str, object],
+) -> dict[str, object]:
+    """Independently reconstruct and test all 33 one-X deletions."""
+
+    stations = int(extracted["ring_stations"])
+    expected_count = int(extracted["expected_count"])
+    template = extracted["pair_template"]
+    if not isinstance(template, tuple):
+        raise AssertionError("pair template is not a literal tuple")
+    program = K.interleaved_program(int(extracted["fixture_banks"]))
+    word, layout, _blocks, metadata = (
+        C731.count_certified_controller_build(
+            program, C731.DATA_WIDTH, expected_count
+        )
+    )
+    prefix = word[:int(metadata["comparison_compute_stop"])]
+    damaged_values = []
+    case_rows = []
+    for position in range(stations):
+        full_word = _pair_word(template, layout, position)
+        full_value = _apply_x_word(0, full_word)
+        for deleted_index in range(len(full_word)):
+            damaged_word = (
+                full_word[:deleted_index]
+                + full_word[deleted_index + 1:]
+            )
+            damaged = _apply_x_word(0, damaged_word)
+            mask = (1 << stations) - 1
+            a_mask = (damaged >> int(layout["a_base"])) & mask
+            refs_mask = (damaged >> int(layout["ref_base"])) & mask
+            next_refs = (
+                (refs_mask >> 1)
+                | ((refs_mask & 1) << (stations - 1))
+            )
+            charge_ok = ((a_mask ^ refs_mask ^ next_refs) & mask) == 0
+            static_ok = (
+                a_mask.bit_count() == expected_count
+                and a_mask.bit_count() % 2 == 0
+                and charge_ok
+            )
+            damaged_values.append(damaged)
+            case_rows.append(
+                {
+                    "position": position,
+                    "deleted_index": deleted_index,
+                    "output_changed": damaged != full_value,
+                    "static_count_and_charge_rejected": not static_ok,
+                }
+            )
+    compared = C731.literal_apply(
+        tuple(damaged_values), prefix, int(layout["full_width"]), 1
+    )
+    count_refusals = 0
+    for case, value in zip(case_rows, compared):
+        rows = C731.controller_rows(value, layout)
+        case["count_prefix_refused"] = rows["refusal_latch"] == 1
+        count_refusals += case["count_prefix_refused"]
+    return {
+        "cases": len(case_rows),
+        "output_changes": sum(row["output_changed"] for row in case_rows),
+        "static_count_and_charge_refusals":
+            sum(row["static_count_and_charge_rejected"] for row in case_rows),
+        "count_prefix_refusals": count_refusals,
+        "case_rows": tuple(case_rows),
+        "pass": (
+            len(case_rows) == 33
+            and all(row["output_changed"] for row in case_rows)
+            and all(
+                row["static_count_and_charge_rejected"]
+                for row in case_rows
+            )
+            and count_refusals == 22
         ),
     }
 
@@ -667,10 +1107,10 @@ def _ownership_violations(
     return tuple(failures)
 
 
-def obstruction_reproduction(
+def guard_witness_reproduction(
     extracted: dict[str, object],
 ) -> dict[str, object]:
-    """Use K's public controller calls and independently test its Q boundary."""
+    """Separate bare Cycle 719 from the inherited Cycle-724/731 guard."""
 
     stations = int(extracted["ring_stations"])
     program = K.interleaved_program(int(extracted["fixture_banks"]))
@@ -681,6 +1121,11 @@ def obstruction_reproduction(
     work = (0,) * stations
 
     step0_violations = _ownership_violations(a, b, work)
+    step0_cycle724_dirty = tuple(
+        station
+        for station, occupied in enumerate(a)
+        if occupied and C724.local_dirty(a, b, work, station)
+    )
     step_data, step_a, step_b = K.apply_controller_step(
         data, program, a, b
     )
@@ -699,6 +1144,15 @@ def obstruction_reproduction(
     control_violation_count = sum(
         len(violations) for _, violations in control_rows
     )
+    cycle724_singleton_dirty = sum(
+        C724.local_dirty(
+            tuple(int(index == position) for index in range(stations)),
+            b,
+            work,
+            position,
+        )
+        for position in range(stations)
+    )
     observed_witness = (
         ("ring_stations", len(program)),
         ("A_count", sum(a)),
@@ -713,15 +1167,38 @@ def obstruction_reproduction(
         (1, ("left_A",)),
     )
     first_trace = orbit_trace[0] if orbit_trace else None
+
+    count_word, layout, _blocks, _metadata = (
+        C731.count_certified_controller_build(
+            program, C731.DATA_WIDTH, int(extracted["expected_count"])
+        )
+    )
+    data_value = sum(int(bit) << index for index, bit in enumerate(data))
+    refs = tuple(int(station == 1) for station in range(stations))
+    source = C731.controller_full_input(
+        data_value, layout, a=(0, 1), refs=refs, h=0
+    )
+    guarded_output = C731.literal_apply(
+        (source,), count_word, int(layout["full_width"]), 1
+    )[0]
+    guarded_rows = C731.controller_rows(guarded_output, layout)
+    guarded_data_suppressed = guarded_rows["data"] == data_value
+    guarded_aux_clean = C731.all_auxiliary_clean(guarded_rows)
+
     return {
         "name": extracted["obstruction_name"],
+        "guard_layer": extracted["guard_layer"],
         "invariant": extracted["obstruction_invariant"],
         "first_step": 0,
         "first_stations": observed_stations,
         "violation_reasons": step0_violations,
         "minimal_witness": observed_witness,
         "single_token_controls": tuple(control_rows),
-        "specific_to_adjacent_pair": control_violation_count == 0,
+        "singleton_controls_clean":
+            control_violation_count == cycle724_singleton_dirty == 0,
+        "Cycle724_step0_dirty_occupied_sites": step0_cycle724_dirty,
+        "Cycle724_manual_recount_agrees":
+            step0_cycle724_dirty == observed_stations,
         "K_program_stations": len(program),
         "K_step_A_after": _occupied(step_a),
         "K_step_B_after": _occupied(step_b),
@@ -737,23 +1214,35 @@ def obstruction_reproduction(
         "K_public_outputs_were_computed": (
             isinstance(step_data, tuple) and isinstance(orbit_data, tuple)
         ),
+        "Cycle731_guarded_data_macros_suppressed":
+            guarded_data_suppressed,
+        "Cycle731_guarded_A_after": _occupied(guarded_rows["A"]),
+        "Cycle731_guarded_B_after": _occupied(guarded_rows["B"]),
+        "Cycle731_guarded_auxiliaries_clean": guarded_aux_clean,
         "pass": (
             len(program) == stations == 11
             and extracted["obstruction_name"] == EXPECTED_OBSTRUCTION_NAME
+            and extracted["guard_layer"] == EXPECTED_GUARD_LAYER
             and extracted["obstruction_invariant"]
             == EXPECTED_OBSTRUCTION_INVARIANT
             and extracted["first_step"] == 0
             and extracted["first_stations"] == (0, 1)
             and observed_stations == (0, 1)
             and step0_violations == expected_reasons
+            and step0_cycle724_dirty == (0, 1)
             and observed_witness == EXPECTED_MINIMAL_WITNESS
             and observed_witness == extracted["minimal_witness"]
             and control_violation_count == 0
+            and cycle724_singleton_dirty == 0
             and first_trace == ((0, 1), (1, 2), 0)
             and _occupied(step_a) == (1, 2)
             and not any(step_b)
             and _occupied(orbit_a) == (0, 1)
             and not any(orbit_b)
+            and guarded_data_suppressed
+            and _occupied(guarded_rows["A"]) == (1, 2)
+            and not any(guarded_rows["B"])
+            and guarded_aux_clean
         ),
     }
 
@@ -766,7 +1255,7 @@ def _immutable_literal(value: object) -> bool:
 
 def discipline(
     extracted: dict[str, object],
-    source_boundary_retired: bool,
+    no_hardcoded_absolute_site: bool,
 ) -> dict[str, object]:
     """Check import/module discipline and publish the exact honest boundary."""
 
@@ -784,44 +1273,48 @@ def discipline(
     current_k_attributes = tuple(
         sorted((name, id(value)) for name, value in vars(K).items())
     )
-    frozen_tables = (
+    immutable_tables = (
         AUDIT_INPUT_PATHS,
         EXPECTED_PAIR_TEMPLATE,
-        EXPECTED_GENESIS_AUDIT_INPUTS,
+        EXPECTED_PRIMARY_AUDIT_INPUTS,
         EXPECTED_REFUSED_COUNTS,
         EXPECTED_MINIMAL_WITNESS,
-        EXPECTED_W2_REMAINING_COMPONENTS,
+        EXPECTED_REMAINING_SUPPLIED_COMPONENTS,
         BLOCKLISTED_CYCLES,
     )
     boundary = {
-        "source_boundary_retired_for_preparation": source_boundary_retired,
-        "controller_two_token_lawful": False,
-        "w2_remaining_components": extracted["w2_remaining_components"],
+        "no_hardcoded_absolute_site_in_template":
+            no_hardcoded_absolute_site,
+        "source_selection_remains_supplied": (
+            "external application-position parameter"
+            in extracted["remaining_supplied_components"]
+        ),
+        "generalized_controller_no_go_claimed": False,
+        "remaining_supplied_components":
+            extracted["remaining_supplied_components"],
         "claim_scope": extracted["claim_scope"],
     }
     return {
         "K_attribute_writes": current_k_attributes != K_ATTRIBUTE_BASELINE,
         "blocklisted_imports": loaded_blocklisted,
-        "frozen_tables_are_immutable_literals": all(
-            _immutable_literal(table) for table in frozen_tables
+        "tables_are_immutable_literals": all(
+            _immutable_literal(table) for table in immutable_tables
         ),
         "AUDIT_INPUT_PATHS_is_pure_literal_tuple": (
             type(AUDIT_INPUT_PATHS) is tuple
             and AUDIT_INPUT_PATHS
-            == (
-                "scripts/frontier_cycle734_paired_excitation_genesis_2026_07_28.py",
-                "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-            )
+            == declared_input_closure(DIRECT_INPUT_PATHS)
         ),
         "honest_boundary": boundary,
         "pass": (
             current_k_attributes == K_ATTRIBUTE_BASELINE
             and not loaded_blocklisted
-            and all(_immutable_literal(table) for table in frozen_tables)
-            and source_boundary_retired is True
-            and boundary["controller_two_token_lawful"] is False
-            and boundary["w2_remaining_components"]
-            == EXPECTED_W2_REMAINING_COMPONENTS
+            and all(_immutable_literal(table) for table in immutable_tables)
+            and no_hardcoded_absolute_site
+            and boundary["source_selection_remains_supplied"]
+            and not boundary["generalized_controller_no_go_claimed"]
+            and boundary["remaining_supplied_components"]
+            == EXPECTED_REMAINING_SUPPLIED_COMPONENTS
             and boundary["claim_scope"] == EXPECTED_CLAIM_SCOPE
         ),
     }
@@ -840,6 +1333,13 @@ def main() -> int:
     checks: dict[str, bool] = {}
     certificates: dict[str, dict[str, object]] = {}
     extracted: dict[str, object] = {}
+
+    try:
+        input_contract = input_contract_certificate()
+    except BaseException as error:
+        input_contract = _honest_failure("input_contract", error)
+    certificates["input_contract"] = input_contract
+    checks["input_contract"] = bool(input_contract.get("pass"))
 
     try:
         extraction_public, extracted = extraction()
@@ -863,21 +1363,35 @@ def main() -> int:
     checks["count2_law_recount"] = bool(law.get("pass"))
 
     try:
-        obstruction = obstruction_reproduction(extracted)
+        deletions = deletion_control_recount(extracted)
     except BaseException as error:
-        obstruction = _honest_failure("obstruction_reproduction", error)
-    certificates["obstruction_reproduction"] = obstruction
-    checks["obstruction_reproduction"] = bool(obstruction.get("pass"))
+        deletions = _honest_failure("deletion_control_recount", error)
+    certificates["deletion_control_recount"] = deletions
+    checks["deletion_control_recount"] = bool(deletions.get("pass"))
 
-    source_boundary_retired = (
+    try:
+        guard = guard_witness_reproduction(extracted)
+    except BaseException as error:
+        guard = _honest_failure("guard_witness_reproduction", error)
+    certificates["guard_witness_reproduction"] = guard
+    checks["guard_witness_reproduction"] = bool(guard.get("pass"))
+
+    no_hardcoded_absolute_site = (
         checks["extraction"] and checks["pair_word_recount"]
     )
     try:
-        disciplined = discipline(extracted, source_boundary_retired)
+        disciplined = discipline(extracted, no_hardcoded_absolute_site)
     except BaseException as error:
         disciplined = _honest_failure("discipline", error)
     certificates["discipline"] = disciplined
     checks["discipline"] = bool(disciplined.get("pass"))
+
+    try:
+        primary_liveness = primary_liveness_certificate()
+    except BaseException as error:
+        primary_liveness = _honest_failure("primary_liveness", error)
+    certificates["primary_liveness"] = primary_liveness
+    checks["primary_liveness"] = bool(primary_liveness.get("pass"))
 
     elapsed = perf_counter() - started
     all_pass = all(checks.values()) and elapsed < AUDIT_TIMEOUT_SEC

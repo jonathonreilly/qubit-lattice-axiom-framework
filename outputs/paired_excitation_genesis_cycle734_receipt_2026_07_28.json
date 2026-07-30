@@ -1,38 +1,41 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle734_paired_excitation_genesis_2026_07_28.txt": "ddd7a78ec2655a5041c29f3c7aad71c814dfc2dace52eea2efa78b9fedd8a031",
-      "frontier_cycle734_paired_excitation_independent_check_2026_07_28.txt": "a258128c108b256cc8d67bcb0bcdccfe080db75b86b55f3683e6ed549e19ddc1"
+      "frontier_cycle734_paired_excitation_genesis_2026_07_28.txt": "7fc2afda59da785f8f492febfc4a8ee0b685127e4cab283f3e5c2e9bbedf1f8a",
+      "frontier_cycle734_paired_excitation_independent_check_2026_07_28.txt": "c4cb42fa73e498c2c1d745d9b3736e0a7f2b5c11ab74d2580e077e8ca2736070"
     },
     "note": {
       "path": "docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "c0828362f63a85e8222d86a1adf05c4eb452e4f453460613cd457f7db86a1d24"
+      "sha256": "cae466b7bc63f49c6c33015b02a2cade0194d7226ec4d16de92f975149a63063"
     },
     "runners": {
-      "frontier_cycle734_paired_excitation_genesis_2026_07_28.py": "53d823a25abe7920f5af8bbb401acb064e3f64f5ea8bd3e01eca334f1cfe0cd6",
-      "frontier_cycle734_paired_excitation_independent_check_2026_07_28.py": "6dff58249c39685729125b3e9421de4ac6a2245ddd976bf03dd1b3046f94133f"
+      "frontier_cycle734_paired_excitation_genesis_2026_07_28.py": "55156897b389c14501b949f44613d7cce404263f80ed0c1b052326122eec199b",
+      "frontier_cycle734_paired_excitation_independent_check_2026_07_28.py": "08cf0b731fb61e0853a91a0ab79e1837d809d1d2bd3562ae9eef335050d9a0f2"
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
     "axiom_pressure": false,
-    "controller_two_token_lawful": false,
-    "fixed_supplies": "the all-blank Cycle-731 ring-11 register with clean auxiliaries; the external application-position parameter (not a distinguished site); the expected_count=2 comparison parameter; the finite oriented ring geometry; program content/order on the held two-bank fixture; passive ring-translation relabeling; the held data genesis and direction for the controller probe",
-    "frozen_obstruction": "ownership_uniqueness_at_adjacent_Q_sites",
-    "not_derived": "multi-token control (the adjacency wall is frozen, not solved); W2's other components; separated-pair (distance >= 2) behavior is untested here; no time/Record/Born/source content",
-    "positive_scope": "a position-free 3-gate pair-creation template with bit-exact outputs at all 11 ring positions; exact translation covariance (121/121 conjugation identities); count-2 enforcement through the unchanged parameterized Cycle-731 constructor (all 11 pairs accepted; 0/1/3/4-count witnesses refused; exact h=0 sector recount, 55 = C(11,2) full-law passes, zero iff exceptions); 33/33 deletion controls; the frozen adjacency obstruction with minimal witness, every-step violation trace, single-token specificity control, and frozen bare-transport observation",
-    "source_boundary_retired_for_preparation": true,
-    "w2_remaining_components": [
+    "fixed_supplies": "the all-blank Cycle-731 ring-11 register with clean auxiliaries; external application position p; expected_count=2; finite oriented ring geometry; program content/order on the held two-bank fixture; passive ring-translation relabeling; held data genesis and direction for the controller probe",
+    "generalized_controller_no_go_claimed": false,
+    "guard_observation": "on the supplied adjacent input, the inherited Cycle-724/731 radius-one Q guard suppresses the data macros; bare Cycle 719 still transports the rails",
+    "no_hardcoded_absolute_site_in_template": true,
+    "not_derived": "selection of p; autonomous or uniform pair formation; physical or nearest-neighbor preparation; generalized multi-token control; behavior beyond the supplied ring-11 logical fixture; time/Record/Born/source content",
+    "positive_scope": "an externally positioned 3-X logical pair family with bit-exact outputs at all 11 supplied ring positions; 121/121 passive translation identities; exact static charge and A-count-two comparator-prefix censuses; 33/33 deletion controls",
+    "remaining_supplied_components": [
+      "external application-position parameter",
       "finite oriented geometry",
       "program content/order",
       "passive-only covariance"
-    ]
+    ],
+    "source_selection_remains_supplied": true
   },
   "checks": {
     "independent_named_checks_failed": 0,
-    "independent_named_checks_passed": 5,
-    "primary_named_checks_passed": 9
+    "independent_named_checks_passed": 8,
+    "primary_named_checks_failed": 0,
+    "primary_named_checks_passed": 10
   },
   "claim_type": "bounded_theorem",
   "cycle": 734,
@@ -42,16 +45,19 @@
       "api": "count_certified_controller_build(..., expected_count=2)",
       "semantic_gates": 11206
     },
-    "deletion_controls": "33/33 detected and refused",
-    "frozen_obstruction": {
+    "deletion_controls": "33/33 outputs changed and failed the static count-and-charge conjunction; 22/33 A-gate deletions were also refused by the count prefix",
+    "guard_observation": {
+      "bare_Cycle719_pair_transport_returns": true,
+      "Cycle731_guarded_data_macros_suppressed": true,
       "first_stations": [
         0,
         1
       ],
       "first_step": 0,
+      "guard_layer": "Cycle724 radius-one Q guard inherited by the Cycle731 composition",
       "invariant": "an occupied A station requires own B/work and both neighboring A/B rails blank at the Q boundary",
       "name": "ownership_uniqueness_at_adjacent_Q_sites",
-      "reproduced_by_checker_from_K_directly": true,
+      "reproduced_by_checker_from_Cycle724_and_Cycle731": true,
       "single_token_control_violations": 0
     },
     "pair_word_gates": {
@@ -62,10 +68,10 @@
       "cases": 2048,
       "count2_pass": 55,
       "even_parity_pass": 1024,
-      "full_pass": 55,
+      "static_count_and_charge_pass": 55,
       "iff_exceptions": 0
     },
     "translation_covariance_identities": "121/121"
   },
-  "status": "CYCLE734_PAIRED_EXCITATION_GENESIS_PASS_WITH_FROZEN_OBSTRUCTION"
+  "status": "CYCLE734_EXTERNALLY_POSITIONED_PAIR_TEMPLATE_PASS_WITH_GUARD_WITNESS"
 }

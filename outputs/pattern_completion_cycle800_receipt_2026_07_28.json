@@ -1,0 +1,30 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF10-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle800_pattern_completion_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle800_pattern_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 19
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 800,
+  "files": {
+    "docs/PATTERN_COMPLETION_CYCLE800_BOUNDED_THEOREM_NOTE_2026-07-28.md": "f67746aa1480399b1e945bfd3a77c981dd36e84d19a7feb44b1fe6a12e4cfb50",
+    "logs/runner-cache/frontier_cycle800_pattern_completion_2026_07_28.txt": "b248bc8b73efd93817eeff3e11995baeb863ef22cfe5563a44f325f7f12a1849",
+    "logs/runner-cache/frontier_cycle800_pattern_independent_check_2026_07_28.txt": "1ac64b1e7f02d2b08d834efe3c3c8deb9941acfe56effbedad85ba6d3b8d13a3",
+    "scripts/frontier_cycle800_pattern_completion_2026_07_28.py": "5f7f49963fc7a3dec787634a6bf772fb5e406d3bbe667073cf7ea3c636a25e23",
+    "scripts/frontier_cycle800_pattern_independent_check_2026_07_28.py": "79f033b92641eac8785f1bca1778ba31450b3bd05903b156a7ea5f96fce5547e"
+  },
+  "independent_audit_still_required": true,
+  "must_contain_ok": true,
+  "verdicts": [
+    "SIX_FOR_SIX_UNIQUE",
+    "ONE_AT_A_TIME_ACROSS_STRATA"
+  ]
+}

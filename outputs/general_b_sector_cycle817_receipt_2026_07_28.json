@@ -1,0 +1,44 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF14-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle817_general_b_sector_theorem_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 9
+    },
+    "logs/runner-cache/frontier_cycle817_theorem_independent_check_2026_07_28.txt": {
+      "fail": 2,
+      "pass": 9
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 817,
+  "designed_fail_certificates": {
+    "expected_fail_counts": {
+      "logs/runner-cache/frontier_cycle817_general_b_sector_theorem_2026_07_28.txt": 0,
+      "logs/runner-cache/frontier_cycle817_theorem_independent_check_2026_07_28.txt": 2
+    },
+    "logs/runner-cache/frontier_cycle817_theorem_independent_check_2026_07_28.txt": [
+      "FAIL THE BRIDGE HUNT \u2014 the checker's constructive closing attack did NOT close the theorem; this failing-to-refute IS the confirmation of the tightened gap (H_TEMPLATE_PREIMAGE_ZONE_CLASS)"
+    ]
+  },
+  "files": {
+    "docs/GENERAL_B_SECTOR_CYCLE817_BOUNDED_THEOREM_NOTE_2026-07-28.md": "93bfe2ec9cf43bf12b3cbda15e4efd7db8b0bb3b08a2940e09292fd62972d918",
+    "logs/runner-cache/frontier_cycle817_general_b_sector_theorem_2026_07_28.txt": "88fa64e4620a524f866f3ff087a498c50ff123ba9912df79eb93403812b799b8",
+    "logs/runner-cache/frontier_cycle817_theorem_independent_check_2026_07_28.txt": "00de5c4f4d697292224811583a63e2ed6091d3d3573bca2725db05967a227b6e",
+    "scripts/frontier_cycle817_general_b_sector_theorem_2026_07_28.py": "469a0af17b19bb6a35ac5356b5c143f6027af05c412f92a5b349f09c0452c7a4",
+    "scripts/frontier_cycle817_theorem_independent_check_2026_07_28.py": "91180f1f16400f9056a8ee1076cf8b2dda7dd8151a4e8e755a3ecbd581c313f7"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "reversal sixteen: checker's fidelity audit found two omitted reachable hypotheses; v2 adopts",
+    "the anchor lane's wall = one named hypothesis (template preimage zones); b=8 sweep now optional confirmation",
+    "bridge probes exact at b=3..10 (ordered pairs up to 5,625), conditional throughout"
+  ],
+  "verdicts": [
+    "conditional general-b theorem (7 corrected conditions + H_SECTOR_INPUT)",
+    "bridge conditional on H_TEMPLATE_PREIMAGE_ZONE_CLASS; no b closed unconditionally",
+    "checker CYCLE817_V2_CONFIRMED_CONDITIONAL_BRIDGE (v1 inventory REFUTED: two omissions)"
+  ]
+}

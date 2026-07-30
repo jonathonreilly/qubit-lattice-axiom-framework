@@ -105,18 +105,12 @@ the local pipeline cache `docs/audit/data/audit_queue.json` (gitignored).
 | Manifest pending removals | 0 |
 | Unmanifested candidates (need pending entries) | 0 |
 | Admitted ids absent from lane candidates | 33 |
-| Live conditional/failed rows that would park | 48 |
+| Live conditional/failed rows that would park | 49 |
 | Live rows fail-open (legacy/unversioned snapshot) | 31 |
 | Lane rows already in actual ready top-10 | 3 |
 | Lane rows added since prior pass | 0 |
-| Lane rows removed since prior pass | 4 |
+| Lane rows removed since prior pass | 0 |
 | Non-lane rows deferred by simulated interleave | 105 |
-
-Named lane membership churn since the prior pass:
-- removed: `dm_neutrino_odd_circulant_z2_slot_theorem_note_2026-04-15`
-- removed: `gauge_vacuum_plaquette_transfer_operator_character_recurrence_note`
-- removed: `hierarchy_matsubara_decomposition_note`
-- removed: `hierarchy_matsubara_determinant_narrow_theorem_note_2026-05-02`
 
 Admitted ids currently absent from lane candidates:
 - `bridge_gap_action_form_uniqueness_no_go_note_2026-05-06`

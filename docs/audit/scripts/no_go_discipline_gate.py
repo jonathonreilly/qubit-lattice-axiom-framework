@@ -13,6 +13,7 @@ import hashlib
 import json
 import os
 import re
+import unicodedata
 from itertools import combinations
 from pathlib import Path
 from typing import Any
@@ -106,7 +107,7 @@ ROUTE_CLASS_MARKERS = {
     ),
     "boundary_or_initial_condition": re.compile(r"\b(?:boundary|initial|background|state|pointwise)\w*\b", re.I),
     "normalization_or_units": re.compile(
-        r"(?:\b(?:normaliz|units?|scale|dimensionful)\w*\b|\bW_unit\b)", re.I
+        r"\b(?:normaliz\w*|units?|scale\w*|dimensionful\w*)\b", re.I
     ),
     "dynamical_or_effective_action": re.compile(r"\b(?:dynamic|effective|action|evolution|equivariant\s+family)\w*\b", re.I),
     "lattice_scale_or_limit": re.compile(r"\b(?:lattice|continuum|limit|finite[- ]size|asymptotic|approximate)\w*\b", re.I),
@@ -148,11 +149,41 @@ ROUTE_DISPOSITIONS = {"CLOSED", "OPEN", "UNTESTED"}
 W_UNIT_NEAR_MARKER_RE = re.compile(
     r"(?i)W_+unit(?:(?!W_+unit)[^\W_])*"
 )
+W_UNIT_LITERAL_RE = re.compile(r"W_units?", re.IGNORECASE)
+
+
+def _is_marker_word_extension(character: str) -> bool:
+    """Return whether ``character`` continues a forensic marker token."""
+    return character.isalnum() or unicodedata.category(character).startswith("M")
+
+
+def _has_exact_w_unit_marker(route_semantics: str) -> bool:
+    """Match W_unit(s) across separators without admitting pinned lookalikes."""
+    for match in W_UNIT_LITERAL_RE.finditer(route_semantics):
+        if match.start() and _is_marker_word_extension(route_semantics[match.start() - 1]):
+            continue
+        if match.end() < len(route_semantics) and _is_marker_word_extension(
+            route_semantics[match.end()]
+        ):
+            continue
+        if (
+            match.group(0).casefold() == "w_unit"
+            and route_semantics[match.end():].casefold().startswith("_post")
+        ):
+            continue
+        return True
+    return False
 
 
 def route_class_marker_matches(route_class: str, route_semantics: str) -> bool:
     """Match documented route markers across prose and identifier tokens."""
+    route_semantics = unicodedata.normalize("NFC", route_semantics)
     marker = ROUTE_CLASS_MARKERS[route_class]
+    if (
+        route_class == "normalization_or_units"
+        and _has_exact_w_unit_marker(route_semantics)
+    ):
+        return True
     if marker.search(route_semantics):
         return True
     separator_text = route_semantics

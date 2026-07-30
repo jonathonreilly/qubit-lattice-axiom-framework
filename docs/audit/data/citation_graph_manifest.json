@@ -1,6 +1,6 @@
 {
- "edge_count": 15236,
- "node_count": 4583,
+ "edge_count": 15241,
+ "node_count": 4584,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1615,8 +1615,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "d675b2b9b6ca",
-   "out_degree": 318
+   "deps_hash": "5bdc3f7ee8e5",
+   "out_degree": 319
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -14733,6 +14733,10 @@
   "time_axis_is_the_history_index_record_monotone_direction_bounded_note_2026-07-03": {
    "deps_hash": "1f65fcda86e7",
    "out_degree": 2
+  },
+  "token_count_certificate_cycle731_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "0b4d5c289bc4",
+   "out_degree": 4
   },
   "tomita_tensor_trace_on_finite_dim_matrix_narrow_theorem_note_2026-05-20": {
    "deps_hash": "c8eee4235fc9",

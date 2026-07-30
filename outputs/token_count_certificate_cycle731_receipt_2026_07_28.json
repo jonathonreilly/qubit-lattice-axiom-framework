@@ -1,64 +1,92 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle731_count_certificate_independent_check_2026_07_28.txt": "84d61542e8dd4f6863d0f5318b5e4a97802d3980db64881c109acf9d373ec144",
-      "frontier_cycle731_token_count_certificate_2026_07_28.txt": "9830bf3350c65059f8151e3c200a48cd2282681448b5429628a87f0f0bd47e84"
+      "frontier_cycle731_count_certificate_independent_check_2026_07_28.txt": "75ed7523cd70587a2f0cde60c4204b77a89a789e642a12764ed39b1f2f96bcd4",
+      "frontier_cycle731_token_count_certificate_2026_07_28.txt": "234b2a4c01647e08264a14af6c169a91e03a0404e53b2d139d0b7a3ab66c0be4"
+    },
+    "canonical_harness_index": {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "sha256": "9181c0832005fb765a088862550c9735306d6390f11ad6fb1a8a5b9a2afaf5f4"
     },
     "note": {
       "path": "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "43e5eb627d5cb9747e1119ea94298cebea2fa357a1599d2d67091308435b8f1e"
+      "sha256": "938c1fccb38c3d7cdd7d96281ed5d37ea46d94e7e4a7b7d282efbdd23d9a4905"
     },
     "runners": {
-      "frontier_cycle731_count_certificate_independent_check_2026_07_28.py": "2fd4f78c6599321dfd483b06ae5025a6569f51f4c95bcf8f91f0e549fd5ddd48",
-      "frontier_cycle731_token_count_certificate_2026_07_28.py": "8ccdede27f154548ee2b1d193935fd36f40a030a9f25872f72ce5171bc568b9e"
+      "frontier_cycle731_count_certificate_independent_check_2026_07_28.py": "e7405c068f1ef939cf96c1704589c455cf91d95bd2a4aa74c3ab76e4d0a77c14",
+      "frontier_cycle731_token_count_certificate_2026_07_28.py": "041a7cb76117ace45213d67fd123db97a643c96b971f9566b7f47393948e0047"
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
-    "axiom_pressure": false,
-    "expected_count_is_declared_supply": true,
-    "fixed_supplies": "expected_count=1 (the declared one-source-token inventory line of Cycles 724/730); clean counter, increment/comparison scratch, and refusal-latch genesis; the static reference chain, h, ring orientation, program content, clean data genesis, and everything the Cycle-719 controller core declares",
+    "audit_grade_claimed": false,
+    "clean_auxiliary_genesis_is_supplied": true,
+    "counted_rail": "A only",
+    "expected_occupancy_is_supplied": true,
+    "fixed_global_logical_register": true,
+    "global_parity_acceptor_claimed": false,
     "inventory_is_derived": false,
-    "not_derived": "the expected-count inventory itself (genesis); arbitrary ring sizes as a uniform theorem family; no time/Record/Born/source content is touched",
-    "positive_scope": "the traveling-counter word (112,912 semantic gates; exact reversibility; counter/scratch/refs/h return clean); refusal of the frozen matched-parity witness and all 55 two-token placements; the exhaustive ring-11 iff theorem (count AND parity) over 8,388,608 rail/h cases with frozen outcome tables; count-law/parity-law factorization (zero ref/h touches); deletion controls; routed 2-bank and 12-bank fixtures; byte-unchanged inherited anchors",
-    "w1_closed": true,
-    "w1_closed_scope": "bounded ring-11 enforcement only; no genesis or arbitrary-ring inventory derivation",
-    "w1_ring11_count_law_enforced": true
+    "physical_transport_or_nearest_neighbor_compilation_claimed": false,
+    "recurrent_admission_claimed": false,
+    "total_two_rail_inventory_claimed": false
+  },
+  "cache_identity": {
+    "independent_input_fingerprint_sha256": "ffc17c79dcdd1baac830e5a148722e56e94fe90df2a5c65201e07689f441bce3",
+    "primary_input_fingerprint_sha256": "d1f173cbf330e11a995a3b735281202e833152d68eeddac87ab20d6b5284b3ae"
   },
   "checks": {
     "independent_named_checks_failed": 0,
-    "independent_named_checks_passed": 5,
+    "independent_named_checks_passed": 7,
+    "primary_named_checks_failed": 0,
     "primary_named_checks_passed": 10
   },
   "claim_type": "bounded_theorem",
   "cycle": 731,
   "date": "2026-07-28",
+  "evidence": {
+    "independent_semantic_report_sha256": "9c3f5c946646c0ece5cb9023a36a7a6a4b200647f719c4249ca5fe4b5d450037",
+    "primary_semantic_report_sha256": "36878f9eafb87d090e3cdc6d8553401e153e14776a55c3b8252ca9d980a02c33",
+    "runtime_excluded_from_semantic_digest": true
+  },
   "result": {
-    "added_semantic_gates": 13602,
-    "count_law_factors_from_parity_law": true,
-    "cycle730_anchor_semantic_gates": 99310,
-    "extended_word_semantic_gates": 112912,
-    "independent_outcome_table_sha_rebuilt_and_matched": true,
-    "outcome_table_sha256": "70c8565f054f8cff29acedf3f9a04585df280eec9395140ea7067130dab8b1ce",
-    "refusal_event_table_sha256": "73ad99cfa287b117673e877363c73b736926395b1dd0b24d2d97b2f453844efd",
-    "theorem_cases": {
-      "count_pass": 45056,
-      "full_pass": 22528,
-      "iff_exceptions": 0,
-      "total": 8388608
+    "A_rail_counter_comparator": {
+      "actual_gate_cases": 98304,
+      "behavior_failures": 0,
+      "exhaustive_station_range": [
+        1,
+        12
+      ],
+      "literal_reverse_failures": 0,
+      "outcome_table_sha256": "db9d3f14a45f7cad3b074da497364a60bee6e32485e9597236dd888374c223b3",
+      "ring11_expected1_gate_count": 122,
+      "ring11_expected1_gate_stream_sha256": "e5d68c4614075757500e1f4f661a9dc078eeebf2adaeb329b5d6a71437147ff8",
+      "scratch_cleanliness_failures": 0
     },
-    "two_token_placements_refused": "55/55",
-    "witness_refusal": {
-      "expected": 1,
+    "global_parity_scope_boundary": {
+      "A_mask": 1,
+      "B_mask": 0,
+      "A_occupancy_matches_expected": true,
+      "data_changes_after_full_orbit": true,
+      "data_changes_after_one_word": true,
+      "expected_A_occupancy": 1,
       "h": 0,
-      "observed": 2,
-      "reason": "count_mismatch",
-      "token_sites": [
-        0,
-        5
-      ]
+      "refs_mask": 2,
+      "two_rail_parity_matches_h": false
+    },
+    "integrated_word": {
+      "Cycle730_semantic_gates": 99310,
+      "Cycle731_semantic_gates": 112912,
+      "added_semantic_gates": 13602
+    },
+    "ring11_zeroB_h0_fixture": {
+      "all_auxiliaries_return_clean": true,
+      "all_literal_reverses_exact": true,
+      "all_two_A_placements_refused": true,
+      "frozen_0_5_refs_mask": 62,
+      "placements": 55,
+      "refusal_event_table_sha256": "73ad99cfa287b117673e877363c73b736926395b1dd0b24d2d97b2f453844efd"
     }
   },
-  "status": "CYCLE731_TOKEN_COUNT_CERTIFICATE_PASS"
+  "status": "CYCLE731_A_RAIL_COUNTER_COMPARATOR_PASS"
 }

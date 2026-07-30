@@ -1,4 +1,4 @@
-# The traveling token-count certificate — W1's matched-parity residual refused — Cycle 731
+# Bounded A-rail occupancy counter/comparator and ring-11 refusal fixture — Cycle 731
 
 Date: 2026-07-28
 
@@ -10,101 +10,143 @@ Status: bounded conditional theorem
 
 Claim type: bounded_theorem
 
-Runners:
+Primary runner:
+[`frontier_cycle731_token_count_certificate_2026_07_28.py`](../scripts/frontier_cycle731_token_count_certificate_2026_07_28.py)
 
-- [`frontier_cycle731_token_count_certificate_2026_07_28.py`](../scripts/frontier_cycle731_token_count_certificate_2026_07_28.py)
-- [`frontier_cycle731_count_certificate_independent_check_2026_07_28.py`](../scripts/frontier_cycle731_count_certificate_independent_check_2026_07_28.py)
+Independent check:
+[`frontier_cycle731_count_certificate_independent_check_2026_07_28.py`](../scripts/frontier_cycle731_count_certificate_independent_check_2026_07_28.py)
+
+Load-bearing proposal-only dependencies:
+
+- [Cycle 719 recurrent matter-history controller](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+- [Cycle 724 local token-row refusal construction](LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- [Cycle 728 existential reference-chain compression](BKSF_HOLONOMY_COMPRESSION_CYCLE728_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- [Cycle 730 local charge-row refusal guard](CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md)
 
 Constitutional effect: none. This package changes no axiom, foundation,
 Qualification, primitive, registry, policy, queue, audit result, or audit
 status.
 
-## Result up front
+## Result
 
-Cycle 730 froze the honest residual of local enforcement: matched-parity
-multi-token states satisfy every radius-one row, so local rows enforce
-the parity sector, not the token count. This cycle builds the nonlocal
-certificate that the W1 ledger line has named open since Cycle 724 — a
-**traveling counter**: a supplied clean counter register threaded once
-around the ring, a reversible controlled increment at each station
-(every gate local to counter + station), an end comparison against the
-declared expected count feeding the existing OR-cascade refusal latch,
-then exact uncompute. No runtime Python branch survives; the word is
-fixed unrolling from `(N, expected_count)`.
+For `N >= 1`, let `A_0,...,A_(N-1)` be Boolean A-rail occupancy
+bits. Supply a clean `N.bit_length()`-bit counter, clean increment and
+comparison scratch, a clean mismatch latch, and an expected A-rail occupancy
+`k` with `0 <= k <= N`. The emitted high-carry-first reversible word:
 
-- **extended word 112,912 semantic gates** (+13,602 over Cycle 730's
-  99,310); the Cycle-730 anchor is regression-pinned unchanged; lawful
-  trajectories reproduce Cycle-730 behavior exactly with all registers
-  (counter, increment/comparison scratch, refs, `h`, every auxiliary)
-  returning clean, and the literal reverse is exact;
-- **the frozen residual is now refused**: the exact Cycle-730
-  matched-parity witness (tokens at sites 0 and 5, `h = 0`, canonical
-  references) is refused with reason `count_mismatch` (station 0,
-  observed count 2, expected 1) — and **all 55 two-token placements**
-  on ring-11 with `h = 0` are refused, every one;
-- **the full enforcement theorem**: over all 8,388,608 rail/`h` cases
-  on ring-11, the word passes unmolested **iff** the token count equals
-  the declared expected count **and** token parity equals `h`
-  (count-pass cases 45,056; full-pass cases 22,528; zero iff
-  exceptions; outcome table frozen by sha256);
-- **the two laws factor**: the count certificate touches no reference
-  bit and never writes `h` (zero touch failures), so count enforcement
-  and the Cycle-730 parity law are independent mechanisms — deleting
-  either leaves the other's law intact;
-- deletion controls (increment gate, comparison gate, uncompute gate)
-  are each detected; both the 2-bank and 12-bank physical fixtures pass
-  collision-free nearest-neighbor routing with returned work; the
-  Cycle-713 pins are byte-unchanged.
+1. computes `popcount(A)` into the little-endian counter;
+2. sets the latch exactly when `popcount(A) != k`;
+3. leaves the A rail unchanged and does not touch B, the reference rail, or
+   `h`; and
+4. restores every counter/comparison work bit under the literal reverse.
 
-With this, `w1_ring11_count_law_enforced: true` and the runner reports
-`w1_closed: true` **at bounded scope only**, with the scope key stating
-exactly: bounded ring-11 enforcement; no genesis or arbitrary-ring
-inventory derivation. W1 as a general wall is not discharged — see Open.
+The proof is the binary-increment induction below. The primary and independent
+runner also execute the actual emitted X/CNOT/TOF gates exhaustively for every
+A mask and every `k` on `N=1,...,12`: 98,304 cases, zero behavioral,
+scratch, or inverse failures. The ring-11, `k=1` counter/comparator gate stream
+has 122 gates and SHA-256
+`e5d68c4614075757500e1f4f661a9dc078eeebf2adaeb329b5d6a71437147ff8`.
+The bounded outcome table SHA-256 is
+`db9d3f14a45f7cad3b074da497364a60bee6e32485e9597236dd888374c223b3`.
 
-## Supplied / derived / open
+This is an **A-rail occupancy** statement. It is not a count of total A+B
+occupancy.
+
+## Integrated finite fixture
+
+The same counter/comparator is inserted into the Cycle-730 refusal word as one
+fixed global logical register. On the following exact finite domain:
+
+- the 11-station two-bank program;
+- every unordered two-site A placement (`C(11,2)=55`);
+- `B=0`, `h=0`;
+- the `r_0=0` canonical static reference extension constructed separately for
+  each placement;
+- the fixed clean data and auxiliary genesis; and
+- supplied expected A occupancy `k=1`;
+
+one actual integrated word refuses the data action for all 55 placements,
+rotates the rails as declared, returns references, `h`, and every auxiliary
+clean, and reverses exactly. The `(0,5)` placement has reference mask `62`.
+The refusal-event table SHA-256 is
+`73ad99cfa287b117673e877363c73b736926395b1dd0b24d2d97b2f453844efd`.
+
+This 55-case result is a fixed-reference, one-word fixture. It is not a
+recurrent admission theorem.
+
+## Proof of the counter/comparator lemma
+
+Write the counter as little-endian bits `c_0,...,c_(w-1)`. For one control
+bit `a`, the increment word visits targets from high to low. Before `c_j` is
+toggled, the lower bits `c_0,...,c_(j-1)` still contain their pre-increment
+values, so the multi-controlled toggle on `c_j` fires exactly when `a=1` and
+all lower bits carry. The final CNOT toggles `c_0` exactly when `a=1`.
+Therefore the word adds `a` modulo `2^w`.
+
+Starting from zero and applying this once for each A bit yields
+`popcount(A)`. Because `w=N.bit_length()`, the largest value `N` fits without
+overflow. The comparator X-conjugates counter bits where `k` has a zero,
+initializes the latch to one, and toggles it only when every conjugated counter
+bit is one. Thus the live latch is zero exactly at `popcount(A)=k` and one
+otherwise. Every primitive is self-inverse; reversing comparison and counting
+restores the supplied clean work.
+
+The runners additionally check the width and overflow inequalities for
+`N=1,...,129` and reject the out-of-domain ring-11 values `k=-1` and `k=12`.
+
+## Explicit global-parity boundary
+
+Cycle 730 constructs a per-active-station local charge guard, not a global
+parity acceptor. Cycle 731 does not promote it. The actual integrated word
+freezes the concrete boundary input
+
+`(A_mask, B_mask, refs_mask, h, k) = (1, 0, 2, 0, 1)`.
+
+Its A occupancy matches `k`, while total rail parity does not match `h`.
+Nevertheless the data changes after one word and after the full 11-word orbit;
+references, `h`, and auxiliaries return clean, and both evolutions invert
+exactly. This executable counterexample is part of both runner checks. No
+count-and-parity behavioral iff is asserted.
+
+## Supplied, derived, and open
 
 ### Supplied
 
-- `expected_count = 1`: the same declared one-source-token inventory
-  line Cycles 724/730 already carry — the certificate **enforces**
-  the declared inventory, it does not derive it;
-- the clean counter, increment scratch, comparison scratch, and refusal
-  latch genesis; the static reference chain, `h`, ring orientation,
-  program content, and clean data genesis; everything the Cycle-719
-  controller core declares.
+- expected A occupancy `k` (with the integrated fixture using `k=1`);
+- clean counter, increment scratch, comparison scratch, and mismatch latch;
+- ring size, program, orientation, static reference rail, `h`, B rail, and
+  clean data/controller genesis for the integrated fixture;
+- all load-bearing Cycle 719/724/728/730 proposal-only constructions linked
+  above.
 
 ### Derived
 
-- the compiled traveling-counter word and its exact reversibility;
-- refusal of the frozen matched-parity witness and of every two-token
-  placement; the exhaustive ring-11 count-and-parity iff theorem with
-  frozen outcome tables;
-- the factorization of the count law from the parity law (structural
-  bit-touch audit plus behavioral identity);
-- deletion detection; routed physical fixtures; unchanged inherited
-  anchors.
+- the reversible A-rail counter/comparator lemma;
+- bounded actual-gate confirmation on `N=1,...,12`;
+- exact counter/comparator uncompute and zero B/reference/`h` touches;
+- refusal and exact returned work for the stated 55-case ring-11 fixture;
+- the concrete global-parity scope counterexample.
 
 ### Open
 
-- W1 beyond the fixture: arbitrary ring sizes as a uniform theorem
-  family, derivation of the expected-count inventory itself (genesis),
-  and any statement not conditioned on the declared supplies;
-- everything the landed Cycle-713/719/724/728/730 surfaces leave open
-  at their scopes; no time/Record/Born/source content is touched.
+- derivation or autonomous preparation of the expected occupancy and clean
+  genesis;
+- total two-rail A+B inventory enforcement;
+- any global parity acceptor or count-and-parity behavioral equivalence;
+- recurrent preservation or preparation of reference admissibility;
+- a uniform controller/program family beyond the stated proof premises; and
+- any physical transport, nearest-neighbor compilation, or execution
+  equivalence for the fixed global logical counter register.
 
-## Negative-claim discipline
+## Evidence discipline
 
-No negative claim ships. The bounded-scope `w1_closed` flag is a
-positive enforcement statement conditioned on declared supplies, with
-the remaining gap stated verbatim in the claim boundary.
+Both runners freeze the complete recursive mutable-input closure, including
+this note, and exercise missing-file, extra-file, and transitive-mutation
+controls. The independent checker does not import the primary module or share
+its evaluator. It obtains the actual primary gate stream through an explicit
+source-execution boundary, evaluates those gates with a separate literal
+bit-plane interpreter, and matches two independently launched primary semantic
+report hashes. Runtime is recorded outside each deterministic semantic digest.
 
-## Verdict
-
-The W1 ledger line completes its arc at fixture scope: witnessed
-(Cycle 724), compressed to one marked-edge bit (Cycle 728), parity
-sector enforced (Cycle 730), and now token count enforced by a
-traveling certificate whose gates are all local — the nonlocality lives
-in the register's walk, not in any gate. The matched-parity blind spot
-is refused, prediction-exact, with the count and parity laws provably
-independent. What remains of W1 is the inventory itself: deriving, not
-declaring, the expected count. Independent audit still required.
+This is a proposal-only bounded theorem candidate. Authority remains `none`;
+Audit remains `unset`; no audit grade or verdict is claimed.

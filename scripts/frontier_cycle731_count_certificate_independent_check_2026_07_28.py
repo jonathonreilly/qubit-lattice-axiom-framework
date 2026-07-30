@@ -1,1106 +1,832 @@
 #!/usr/bin/env python3
-"""Independent bounded checker for the Cycle-731 count certificate."""
-from __future__ import annotations
+"""Independent actual-gate check of the Cycle-731 A-rail certificate.
 
-AUDIT_TIMEOUT_SEC = 900
-NOTE_PATH = "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md"
-AUDIT_INPUT_PATHS = (
-    "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
-    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-)
+This checker does not import the primary as a Python module and does not share
+its gate evaluator.  It executes the primary source through an explicit
+``runpy`` boundary only to obtain the actual emitted gate objects, then applies
+those gates with the literal bit-plane evaluator below.  Two separate primary
+processes provide deterministic semantic-report hashes for comparison.
+"""
+from __future__ import annotations
 
 import ast
 from hashlib import sha256
 import json
 from pathlib import Path
+import runpy
+import subprocess
 import sys
 from time import perf_counter
 from typing import Any
 
-import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
 
-
-BLOCKLISTED_MODULES = (
-    "frontier_cycle731_token_count_certificate_2026_07_28",
-    "frontier_cycle730_charge_row_enforcement_2026_07_28",
-    "frontier_cycle724_local_token_row_enforcement_2026_07_28",
-)
-FROZEN_THEOREM_TABLE = {
-    "ring_stations": 11,
-    "total_rail_h_cases": 8388608,
-    "count_pass_cases": 45056,
-    "full_pass_cases": 22528,
-    "iff_exceptions": 0,
-    "outcome_table_sha256": "70c8565f054f8cff29acedf3f9a04585df280eec9395140ea7067130dab8b1ce",
-    "refusal_event_table_sha256": "73ad99cfa287b117673e877363c73b736926395b1dd0b24d2d97b2f453844efd",
-}
-FROZEN_WORD_SIZES = {
-    "Cycle730_semantic_gates": 99310,
-    "Cycle731_semantic_gates": 112912,
-    "added_semantic_gates": 13602,
-}
-FROZEN_WITNESS = {
-    "ring_stations": 11,
-    "A_mask": 33,
-    "B_mask": 0,
-    "h": 0,
-    "token_sites": (0, 5),
-    "canonical_refs": 62,
-    "refusal_event": {
-        "step": 0,
-        "station": 0,
-        "reason": "count_mismatch",
-        "observed_A_count": 2,
-        "expected_count": 1,
-    },
-}
-FROZEN_CLAIM_BOUNDARY = {
-    "w1_closed": True,
-    "w1_closed_scope": "bounded ring-11 enforcement only; no genesis or arbitrary-ring inventory derivation",
-}
-
-EXPECTED_AUDIT_INPUT_PATHS = (
-    "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
-    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-)
-EXPECTED_NOTE_PATH = (
+AUDIT_TIMEOUT_SEC = 900
+NOTE_PATH = (
     "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md"
 )
-STDOUT_LIMIT_BYTES = 150 * 1024
-_ROOT = Path(__file__).resolve().parents[1]
-_K_ATTRIBUTES_AT_IMPORT = tuple(
-    sorted((name, id(value)) for name, value in vars(K).items())
+PRIMARY_PATH = (
+    "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py"
 )
+DIRECT_INPUT_PATHS = (NOTE_PATH, PRIMARY_PATH)
+AUDIT_INPUT_PATHS = (
+    "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
+    "docs/work_history/repo/review_feedback/INFINITE_REVERSIBLE_RECORD_EXPORT_QCA_CYCLE11_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle612_interval_bridge_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+    "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
+    "scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+)
+STDOUT_LIMIT_CHARACTERS = 20_000
+REPO_ROOT = Path(__file__).resolve().parents[1]
+CHECKS: dict[str, bool] = {}
+OUTPUT_LINES: list[str] = []
 
 
-def _module_assignment(tree: ast.Module, name: str) -> ast.AST:
-    matches: list[ast.AST] = []
-    for node in tree.body:
-        if isinstance(node, ast.Assign):
-            if any(isinstance(target, ast.Name) and target.id == name for target in node.targets):
-                matches.append(node.value)
-        elif isinstance(node, ast.AnnAssign):
-            if isinstance(node.target, ast.Name) and node.target.id == name:
-                matches.append(node.value)
-    if len(matches) != 1:
-        raise AssertionError(("module assignment", name, len(matches)))
-    return matches[0]
+def check(label: str, condition: bool) -> bool:
+    if label in CHECKS:
+        raise AssertionError(("duplicate check", label))
+    passed = bool(condition)
+    CHECKS[label] = passed
+    OUTPUT_LINES.append(f"{'PASS' if passed else 'FAIL'} {label} :: {passed}")
+    return passed
 
 
-def _find_function(tree: ast.Module, name: str) -> ast.FunctionDef:
-    matches = [
-        node
-        for node in tree.body
-        if isinstance(node, ast.FunctionDef) and node.name == name
-    ]
-    if len(matches) != 1:
-        raise AssertionError(("function", name, len(matches)))
-    return matches[0]
+def declared_input_closure(
+    direct_paths: tuple[str, ...],
+) -> tuple[str, ...]:
+    """Recover every literal transitive ``AUDIT_INPUT_PATHS`` declaration."""
+
+    seen: set[str] = set()
+    pending = list(direct_paths)
+    while pending:
+        relative = pending.pop()
+        if relative in seen:
+            continue
+        path = REPO_ROOT / relative
+        if not path.is_file():
+            raise FileNotFoundError(relative)
+        seen.add(relative)
+        if not (relative.startswith("scripts/") and relative.endswith(".py")):
+            continue
+        tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+        nested: tuple[str, ...] = ()
+        for node in tree.body:
+            if not isinstance(node, (ast.Assign, ast.AnnAssign)):
+                continue
+            targets = (
+                node.targets if isinstance(node, ast.Assign) else (node.target,)
+            )
+            if not any(
+                isinstance(target, ast.Name)
+                and target.id == "AUDIT_INPUT_PATHS"
+                for target in targets
+            ):
+                continue
+            value = ast.literal_eval(node.value)
+            if (
+                not isinstance(value, (tuple, list))
+                or not value
+                or not all(isinstance(item, str) for item in value)
+            ):
+                raise ValueError(("invalid AUDIT_INPUT_PATHS", relative))
+            nested = tuple(value)
+            break
+        pending.extend(nested)
+    return tuple(sorted(seen))
 
 
-def _function_assignment(function: ast.FunctionDef, name: str) -> ast.AST:
-    matches: list[ast.AST] = []
-    for node in ast.walk(function):
-        if isinstance(node, ast.Assign):
-            if any(isinstance(target, ast.Name) and target.id == name for target in node.targets):
-                matches.append(node.value)
-        elif isinstance(node, ast.AnnAssign):
-            if isinstance(node.target, ast.Name) and node.target.id == name:
-                matches.append(node.value)
-    substantive = [
-        value
-        for value in matches
-        if not (
-            isinstance(value, ast.Constant)
-            and value.value is None
+def input_contract() -> dict[str, Any]:
+    recovered = declared_input_closure(DIRECT_INPUT_PATHS)
+    missing_rejected = False
+    try:
+        declared_input_closure(
+            DIRECT_INPUT_PATHS
+            + ("scripts/__cycle731_checker_missing_control__.py",)
         )
-    ]
-    if len(substantive) == 1:
-        return substantive[0]
-    if len(matches) != 1:
-        raise AssertionError(("function assignment", function.name, name, len(matches)))
-    return matches[0]
+    except FileNotFoundError:
+        missing_rejected = True
+    extra = declared_input_closure(
+        DIRECT_INPUT_PATHS + ("docs/CANONICAL_HARNESS_INDEX.md",)
+    )
+    transitive_path = (
+        "scripts/"
+        "frontier_cycle719_local_handshake_controller_core_2026_07_26.py"
+    )
 
+    def manifest(
+        replacement: tuple[str, bytes] | None = None,
+    ) -> str:
+        digest = sha256()
+        for relative in recovered:
+            payload = (REPO_ROOT / relative).read_bytes()
+            if replacement is not None and replacement[0] == relative:
+                payload = replacement[1]
+            digest.update(relative.encode() + b"\0" + payload + b"\0")
+        return digest.hexdigest()
 
-def _literal_dict_items(node: ast.AST) -> dict[str, ast.AST]:
-    if not isinstance(node, ast.Dict):
-        raise AssertionError(("expected dict AST", type(node).__name__))
-    output: dict[str, ast.AST] = {}
-    for key, value in zip(node.keys, node.values):
-        literal_key = ast.literal_eval(key)
-        if not isinstance(literal_key, str) or literal_key in output:
-            raise AssertionError(("dict key", literal_key))
-        output[literal_key] = value
-    return output
-
-
-def _return_dict(function: ast.FunctionDef) -> dict[str, ast.AST]:
-    returns = [
-        node.value
-        for node in ast.walk(function)
-        if isinstance(node, ast.Return) and isinstance(node.value, ast.Dict)
-    ]
-    if len(returns) != 1:
-        raise AssertionError(("return dict", function.name, len(returns)))
-    return _literal_dict_items(returns[0])
-
-
-def _direct_loop(body: list[ast.stmt], target_name: str) -> ast.For:
-    matches = [
-        node
-        for node in body
-        if isinstance(node, ast.For)
-        and isinstance(node.target, ast.Name)
-        and node.target.id == target_name
-    ]
-    if len(matches) != 1:
-        raise AssertionError(("direct loop", target_name, len(matches)))
-    return matches[0]
-
-
-def _attribute_calls(function: ast.FunctionDef, owner: str) -> set[str]:
+    payload = (REPO_ROOT / transitive_path).read_bytes()
+    original_digest = manifest()
+    mutated_digest = manifest(
+        (transitive_path, payload + b"\n# checker mutation control\n")
+    )
+    checker_tree = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+    imported_names = {
+        alias.name
+        for node in checker_tree.body
+        if isinstance(node, ast.Import)
+        for alias in node.names
+    } | {
+        node.module or ""
+        for node in checker_tree.body
+        if isinstance(node, ast.ImportFrom)
+    }
     return {
-        node.func.attr
-        for node in ast.walk(function)
-        if isinstance(node, ast.Call)
-        and isinstance(node.func, ast.Attribute)
-        and isinstance(node.func.value, ast.Name)
-        and node.func.value.id == owner
-    }
-
-
-def _primary_tree() -> ast.Module:
-    path = _ROOT / AUDIT_INPUT_PATHS[0]
-    return ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
-
-
-def _self_tree() -> ast.Module:
-    path = Path(__file__).resolve()
-    return ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
-
-
-def extraction() -> dict[str, Any]:
-    primary = _primary_tree()
-    own = _self_tree()
-
-    primary_literals = {
-        name: ast.literal_eval(_module_assignment(primary, name))
-        for name in (
-            "AUDIT_TIMEOUT_SEC",
-            "NOTE_PATH",
-            "AUDIT_INPUT_PATHS",
-            "EXPECTED_COUNT",
-            "EXPECTED_CYCLE730_PADDED_GATES",
-            "COUNT_LOCAL_ROW_INPUTS",
-            "COUNT_OR_INTERMEDIATES_PER_STATION",
-            "RING11_STATIONS",
-        )
-    }
-    own_audit_paths = ast.literal_eval(_module_assignment(own, "AUDIT_INPUT_PATHS"))
-
-    theorem_fn = _find_function(primary, "enforcement_theorem_certificate")
-    theorem_return = _return_dict(theorem_fn)
-    a_loop = _direct_loop(theorem_fn.body, "a_mask")
-    b_loop = _direct_loop(a_loop.body, "b_mask")
-    h_loop = _direct_loop(b_loop.body, "h")
-    loop_order_ok = (
-        ast.unparse(a_loop.iter) == "range(rail_width)"
-        and ast.unparse(b_loop.iter) == "range(rail_width)"
-        and ast.literal_eval(h_loop.iter) == (0, 1)
-    )
-    outcome_calls = [
-        node
-        for node in ast.walk(theorem_fn)
-        if isinstance(node, ast.Call)
-        and isinstance(node.func, ast.Attribute)
-        and isinstance(node.func.value, ast.Name)
-        and node.func.value.id == "digest_buffer"
-        and node.func.attr == "append"
-    ]
-    if len(outcome_calls) != 1 or len(outcome_calls[0].args) != 1:
-        raise AssertionError(("outcome append calls", len(outcome_calls)))
-    byte_tree = outcome_calls[0].args[0]
-    byte_names = {node.id for node in ast.walk(byte_tree) if isinstance(node, ast.Name)}
-    byte_shifts = {
-        ast.literal_eval(node.right)
-        for node in ast.walk(byte_tree)
-        if isinstance(node, ast.BinOp) and isinstance(node.op, ast.LShift)
-    }
-    byte_convention_ok = {
-        "count_law",
-        "charge_law",
-        "full_law",
-        "expected",
-    } <= byte_names and byte_shifts == {1, 2, 3}
-    outcome_return = theorem_return["outcome_table_sha256"]
-    outcome_return_ok = (
-        isinstance(outcome_return, ast.Call)
-        and isinstance(outcome_return.func, ast.Attribute)
-        and isinstance(outcome_return.func.value, ast.Name)
-        and outcome_return.func.value.id == "outcome_hasher"
-        and outcome_return.func.attr == "hexdigest"
-    )
-
-    residual_fn = _find_function(primary, "residual_witness_certificate")
-    event_items = _literal_dict_items(_function_assignment(residual_fn, "event"))
-    witness_items = _literal_dict_items(_function_assignment(residual_fn, "witness_row"))
-    residual_return = _return_dict(residual_fn)
-    event_schema_ok = (
-        set(event_items)
-        == {
-            "step",
-            "station",
-            "reason",
-            "observed_A_count",
-            "expected_count",
-        }
-        and ast.literal_eval(event_items["step"]) == 0
-        and ast.literal_eval(event_items["reason"]) == "count_mismatch"
-        and ast.unparse(event_items["station"]) == "placement[0]"
-        and ast.unparse(event_items["observed_A_count"]) == "len(placement)"
-        and ast.unparse(event_items["expected_count"]) == "EXPECTED_COUNT"
-    )
-    witness_schema_ok = (
-        ast.literal_eval(witness_items["ring_stations"]) if isinstance(
-            witness_items["ring_stations"], ast.Constant
-        ) else 11
-    ) == 11
-    witness_schema_ok = witness_schema_ok and (
-        ast.literal_eval(witness_items["A_mask"]) == 33
-        and ast.literal_eval(witness_items["B_mask"]) == 0
-        and ast.literal_eval(witness_items["h"]) == 0
-        and ast.unparse(witness_items["token_sites"]) == "placement"
-        and ast.unparse(witness_items["canonical_refs"]) == "refs_mask"
-        and ast.unparse(witness_items["frozen_refs_match"]) == "refs_mask == 62"
-        and ast.unparse(witness_items["refusal_event"]) == "event"
-    )
-    refusal_return = residual_return["refusal_event_table_sha256"]
-    refusal_return_ok = (
-        isinstance(refusal_return, ast.Call)
-        and isinstance(refusal_return.func, ast.Attribute)
-        and isinstance(refusal_return.func.value, ast.Name)
-        and refusal_return.func.value.id == "event_hasher"
-        and refusal_return.func.attr == "hexdigest"
-    )
-    json_dumps_calls = [
-        node
-        for node in ast.walk(residual_fn)
-        if isinstance(node, ast.Call)
-        and isinstance(node.func, ast.Attribute)
-        and isinstance(node.func.value, ast.Name)
-        and node.func.value.id == "json"
-        and node.func.attr == "dumps"
-    ]
-    json_convention_ok = False
-    if len(json_dumps_calls) == 1:
-        keywords = {keyword.arg: keyword.value for keyword in json_dumps_calls[0].keywords}
-        json_convention_ok = (
-            ast.unparse(json_dumps_calls[0].args[0]) == "event"
-            and ast.literal_eval(keywords["sort_keys"]) is True
-            and ast.literal_eval(keywords["separators"]) == (",", ":")
-        )
-
-    main_fn = _find_function(primary, "main")
-    boundary_items = _literal_dict_items(_function_assignment(main_fn, "claim_boundary"))
-    report_items = _literal_dict_items(_function_assignment(main_fn, "report"))
-    word_size_items = _literal_dict_items(report_items["word_size_comparison"])
-    w1_assignment = _function_assignment(main_fn, "w1_closed")
-    boundary_ok = (
-        ast.literal_eval(boundary_items["w1_closed_scope"])
-        == FROZEN_CLAIM_BOUNDARY["w1_closed_scope"]
-        and isinstance(w1_assignment, ast.BoolOp)
-        and isinstance(w1_assignment.op, ast.And)
-        and ast.unparse(report_items["w1_closed"]) == "w1_closed"
-        and {
-            "Cycle730_semantic_gates",
-            "Cycle731_semantic_gates",
-            "added_semantic_gates",
-        }
-        <= set(word_size_items)
-    )
-
-    extracted_expected_total = ast.literal_eval(
-        theorem_return["expected_total_rail_h_cases"]
-    )
-    anchors_ok = (
-        primary_literals["AUDIT_TIMEOUT_SEC"] == 900
-        and primary_literals["NOTE_PATH"] == EXPECTED_NOTE_PATH
-        and isinstance(primary_literals["AUDIT_INPUT_PATHS"], tuple)
-        and primary_literals["EXPECTED_COUNT"] == 1
-        and primary_literals["EXPECTED_CYCLE730_PADDED_GATES"]
-        == FROZEN_WORD_SIZES["Cycle730_semantic_gates"]
-        and primary_literals["COUNT_LOCAL_ROW_INPUTS"] == 8
-        and primary_literals["COUNT_OR_INTERMEDIATES_PER_STATION"] == 6
-        and primary_literals["RING11_STATIONS"]
-        == FROZEN_THEOREM_TABLE["ring_stations"]
-        and extracted_expected_total
-        == FROZEN_THEOREM_TABLE["total_rail_h_cases"]
-        and own_audit_paths == EXPECTED_AUDIT_INPUT_PATHS
-        and AUDIT_TIMEOUT_SEC == 900
-        and NOTE_PATH == EXPECTED_NOTE_PATH
-    )
-    frozen_prefixes_ok = (
-        FROZEN_THEOREM_TABLE["outcome_table_sha256"].startswith("70c8565f")
-        and FROZEN_THEOREM_TABLE["refusal_event_table_sha256"].startswith(
-            "73ad99cf"
-        )
-    )
-    passed = all(
-        (
-            anchors_ok,
-            loop_order_ok,
-            byte_convention_ok,
-            outcome_return_ok,
-            event_schema_ok,
-            witness_schema_ok,
-            refusal_return_ok,
-            json_convention_ok,
-            boundary_ok,
-            frozen_prefixes_ok,
-        )
-    )
-    return {
-        "pass": passed,
-        "anchors_ok": anchors_ok,
-        "loop_order_ok": loop_order_ok,
-        "byte_convention_ok": byte_convention_ok,
-        "event_schema_ok": event_schema_ok,
-        "boundary_ok": boundary_ok,
-    }
-
-
-def _counter_width(stations: int) -> int:
-    if stations < 1:
-        raise ValueError(("stations", stations))
-    return stations.bit_length()
-
-
-def _simulate_declared_counter(a_mask: int, stations: int) -> tuple[int, ...]:
-    """Simulate the declared high-carry-first controlled increments."""
-
-    counter = [0] * _counter_width(stations)
-    for station in range(stations):
-        control = (a_mask >> station) & 1
-        for bit in reversed(range(1, len(counter))):
-            if control and all(counter[:bit]):
-                counter[bit] ^= 1
-        counter[0] ^= control
-    return tuple(counter)
-
-
-def _counter_integer(counter: tuple[int, ...]) -> int:
-    return sum(bit << index for index, bit in enumerate(counter))
-
-
-def _reference_rows(
-    q_mask: int, h: int, stations: int, marked: int | None = None
-) -> tuple[tuple[int, ...], bool]:
-    """Construct r_0=0 rows and test the final closed-ring row."""
-
-    if marked is None:
-        marked = stations - 1
-    current = 0
-    refs: list[int] = []
-    for station in range(stations):
-        refs.append(current)
-        current ^= (q_mask >> station) & 1
-        if station == marked:
-            current ^= h
-    return tuple(refs), current == 0
-
-
-def _row_syndromes(
-    q_mask: int,
-    refs: tuple[int, ...],
-    h: int,
-    stations: int,
-    marked: int | None = None,
-) -> tuple[int, ...]:
-    if marked is None:
-        marked = stations - 1
-    return tuple(
-        refs[station]
-        ^ ((q_mask >> station) & 1)
-        ^ (h if station == marked else 0)
-        ^ refs[(station + 1) % stations]
-        for station in range(stations)
-    )
-
-
-def count_theorem_recount() -> dict[str, Any]:
-    stations = FROZEN_THEOREM_TABLE["ring_stations"]
-    rail_width = 1 << stations
-    counters = tuple(
-        _counter_integer(_simulate_declared_counter(a_mask, stations))
-        for a_mask in range(rail_width)
-    )
-    charge_pass: list[tuple[bool, bool]] = []
-    recurrence_failures = 0
-    parity_separation_failures = 0
-    for q_mask in range(rail_width):
-        row = []
-        for h in (0, 1):
-            refs, closed = _reference_rows(q_mask, h, stations)
-            if closed:
-                recurrence_failures += any(
-                    _row_syndromes(q_mask, refs, h, stations)
-                )
-            expected_parity = (q_mask.bit_count() & 1) == h
-            parity_separation_failures += closed != expected_parity
-            row.append(closed)
-        charge_pass.append((row[0], row[1]))
-
-    total_cases = 0
-    count_pass_cases = 0
-    parity_pass_cases = 0
-    full_pass_cases = 0
-    iff_exceptions = 0
-    outcome_hasher = sha256()
-    digest_buffer = bytearray()
-    for a_mask in range(rail_width):
-        count_law = counters[a_mask] == 1
-        for b_mask in range(rail_width):
-            q_mask = a_mask ^ b_mask
-            token_parity = (
-                a_mask.bit_count() + b_mask.bit_count()
-            ) & 1
-            for h in (0, 1):
-                charge_law = charge_pass[q_mask][h]
-                full_law = count_law and charge_law
-                expected = counters[a_mask] == 1 and token_parity == h
-                total_cases += 1
-                count_pass_cases += count_law
-                parity_pass_cases += charge_law
-                full_pass_cases += full_law
-                iff_exceptions += full_law != expected
-                digest_buffer.append(
-                    int(count_law)
-                    | (int(charge_law) << 1)
-                    | (int(full_law) << 2)
-                    | (int(expected) << 3)
-                )
-                if len(digest_buffer) >= 65536:
-                    outcome_hasher.update(digest_buffer)
-                    digest_buffer.clear()
-    outcome_hasher.update(digest_buffer)
-    observed_sha = outcome_hasher.hexdigest()
-    passed = (
-        total_cases == FROZEN_THEOREM_TABLE["total_rail_h_cases"]
-        and count_pass_cases == FROZEN_THEOREM_TABLE["count_pass_cases"]
-        and full_pass_cases == FROZEN_THEOREM_TABLE["full_pass_cases"]
-        and iff_exceptions == FROZEN_THEOREM_TABLE["iff_exceptions"]
-        and recurrence_failures == 0
-        and parity_separation_failures == 0
-        and observed_sha == FROZEN_THEOREM_TABLE["outcome_table_sha256"]
-    )
-    return {
-        "pass": passed,
-        "total_cases": total_cases,
-        "count_pass_cases": count_pass_cases,
-        "parity_pass_cases": parity_pass_cases,
-        "full_pass_cases": full_pass_cases,
-        "iff_exceptions": iff_exceptions,
-        "recurrence_failures": recurrence_failures,
-        "parity_separation_failures": parity_separation_failures,
-        "outcome_table_sha256": observed_sha,
-        "outcome_sha_match": (
-            observed_sha == FROZEN_THEOREM_TABLE["outcome_table_sha256"]
+        "all_exist": all(
+            (REPO_ROOT / relative).is_file()
+            for relative in AUDIT_INPUT_PATHS
+        ),
+        "closure_exact": recovered == AUDIT_INPUT_PATHS,
+        "closure_size": len(recovered),
+        "note_in_closure": NOTE_PATH in recovered,
+        "primary_in_closure": PRIMARY_PATH in recovered,
+        "missing_file_control_rejected": missing_rejected,
+        "extra_file_control_detected":
+            extra != AUDIT_INPUT_PATHS
+            and "docs/CANONICAL_HARNESS_INDEX.md" in extra,
+        "transitive_path_not_direct": transitive_path not in DIRECT_INPUT_PATHS,
+        "transitive_mutation_changes_manifest":
+            original_digest != mutated_digest,
+        "manifest_sha256": original_digest,
+        "primary_module_imported": any(
+            "frontier_cycle731_token_count_certificate" in name
+            for name in imported_names
         ),
     }
 
 
-def _mask_from_bits(bits: tuple[int, ...]) -> int:
-    return sum(bit << index for index, bit in enumerate(bits))
-
-
-def _refusal_event(
-    placement: tuple[int, int], observed_count: int
-) -> dict[str, Any]:
+def primary_process_report() -> dict[str, Any]:
+    completed = subprocess.run(
+        [sys.executable, str(REPO_ROOT / PRIMARY_PATH)],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        timeout=AUDIT_TIMEOUT_SEC,
+        check=False,
+    )
+    lines = completed.stdout.splitlines()
+    report = json.loads(lines[-1]) if lines else {}
+    semantic = dict(report)
+    semantic.pop("runtime_seconds", None)
+    observed_digest = semantic.pop("semantic_report_sha256", None)
+    recomputed_digest = sha256(
+        json.dumps(
+            semantic, sort_keys=True, separators=(",", ":"), default=str
+        ).encode()
+    ).hexdigest()
     return {
-        "step": 0,
-        "station": placement[0],
-        "reason": "count_mismatch",
-        "observed_A_count": observed_count,
-        "expected_count": 1,
+        "exit_code": completed.returncode,
+        "stderr_characters": len(completed.stderr),
+        "stdout_characters": len(completed.stdout),
+        "reported_pass": bool(report.get("pass")),
+        "reported_semantic_sha256": observed_digest,
+        "recomputed_semantic_sha256": recomputed_digest,
+        "semantic_digest_matches": observed_digest == recomputed_digest,
+        "report": report,
     }
 
 
-def witness_and_sweep_recount() -> dict[str, Any]:
-    stations = FROZEN_THEOREM_TABLE["ring_stations"]
+def load_primary_boundary() -> dict[str, Any]:
+    return runpy.run_path(
+        str(REPO_ROOT / PRIMARY_PATH),
+        run_name="cycle731_primary_gate_stream_boundary",
+    )
+
+
+def values_to_planes(
+    values: tuple[int, ...], width: int
+) -> tuple[int, ...]:
+    planes = []
+    for wire in range(width):
+        plane = 0
+        for index, value in enumerate(values):
+            plane |= ((value >> wire) & 1) << index
+        planes.append(plane)
+    return tuple(planes)
+
+
+def apply_actual_gate_planes(
+    planes: tuple[int, ...],
+    word: tuple[Any, ...],
+    case_count: int,
+) -> tuple[int, ...]:
+    """Literal independent X/CNOT/TOF evaluator for actual primary gates."""
+
+    output = list(planes)
+    all_cases = (1 << case_count) - 1
+    for gate in word:
+        kind = str(gate.kind)
+        wires = tuple(int(wire) for wire in gate.wires)
+        if kind == "X" and len(wires) == 1:
+            output[wires[0]] ^= all_cases
+        elif kind == "CNOT" and len(wires) == 2:
+            output[wires[1]] ^= output[wires[0]]
+        elif kind == "TOF" and len(wires) == 3:
+            output[wires[2]] ^= output[wires[0]] & output[wires[1]]
+        else:
+            raise ValueError(("unsupported actual gate", kind, wires))
+    return tuple(output)
+
+
+def gate_stream_digest(word: tuple[Any, ...]) -> str:
+    payload = "".join(
+        str(gate.kind) + repr(tuple(int(wire) for wire in gate.wires))
+        for gate in word
+    )
+    return sha256(payload.encode()).hexdigest()
+
+
+def plane_bit(planes: tuple[int, ...], wire: int, case: int) -> int:
+    return (planes[wire] >> case) & 1
+
+
+def actual_counter_comparator_sweep(
+    primary: dict[str, Any],
+    primary_report: dict[str, Any],
+) -> dict[str, Any]:
+    cases = 0
+    behavior_failures = 0
+    scratch_failures = 0
+    reverse_failures = 0
+    outcome_hasher = sha256()
+    ring11_word: tuple[Any, ...] = ()
+    for stations in range(1, 13):
+        layout = primary["register_layout"](0, stations)
+        count_word, _blocks = primary["count_compute_word"](layout)
+        for expected in range(stations + 1):
+            compare_word = primary["comparison_compute_word"](
+                layout, expected
+            )
+            word = count_word + compare_word
+            if stations == 11 and expected == 1:
+                ring11_word = word
+            sources = tuple(range(1 << stations))
+            initial = values_to_planes(sources, layout["full_width"])
+            observed = apply_actual_gate_planes(
+                initial, word, len(sources)
+            )
+            restored = apply_actual_gate_planes(
+                observed, tuple(reversed(word)), len(sources)
+            )
+            for a_mask in sources:
+                observed_count = sum(
+                    plane_bit(
+                        observed, layout["counter_base"] + bit, a_mask
+                    )
+                    << bit
+                    for bit in range(layout["counter_width"])
+                )
+                observed_latch = plane_bit(
+                    observed, layout["refusal_latch"], a_mask
+                )
+                expected_latch = int(a_mask.bit_count() != expected)
+                a_unchanged = all(
+                    plane_bit(
+                        observed, layout["a_base"] + station, a_mask
+                    )
+                    == ((a_mask >> station) & 1)
+                    for station in range(stations)
+                )
+                untouched = all(
+                    plane_bit(observed, wire, a_mask) == 0
+                    for wire in (
+                        *range(
+                            layout["b_base"],
+                            layout["b_base"] + stations,
+                        ),
+                        *range(
+                            layout["ref_base"],
+                            layout["ref_base"] + stations,
+                        ),
+                        layout["h_wire"],
+                    )
+                )
+                scratch_clean = all(
+                    plane_bit(observed, wire, a_mask) == 0
+                    for wire in (
+                        *range(
+                            layout["increment_scratch_base"],
+                            layout["increment_scratch_base"]
+                            + layout["increment_scratch_width"],
+                        ),
+                        *range(
+                            layout["comparison_scratch_base"],
+                            layout["comparison_scratch_base"]
+                            + layout["comparison_scratch_width"],
+                        ),
+                    )
+                )
+                behavior_ok = (
+                    observed_count == a_mask.bit_count()
+                    and observed_latch == expected_latch
+                    and a_unchanged
+                    and untouched
+                )
+                behavior_failures += not behavior_ok
+                scratch_failures += not scratch_clean
+                reverse_failures += any(
+                    plane_bit(restored, wire, a_mask)
+                    != plane_bit(initial, wire, a_mask)
+                    for wire in range(layout["full_width"])
+                )
+                outcome_hasher.update(
+                    bytes(
+                        (
+                            stations,
+                            expected,
+                            a_mask.bit_count(),
+                            observed_count,
+                            observed_latch,
+                        )
+                    )
+                )
+                cases += 1
+    declared = primary_report["A_rail_counter_comparator"]
+    ring11_digest = gate_stream_digest(ring11_word)
+    return {
+        "actual_primary_gate_cases": cases,
+        "behavior_failures": behavior_failures,
+        "scratch_failures": scratch_failures,
+        "reverse_failures": reverse_failures,
+        "outcome_table_sha256": outcome_hasher.hexdigest(),
+        "outcome_matches_primary_report":
+            outcome_hasher.hexdigest()
+            == declared["outcome_table_sha256"],
+        "ring11_expected1_gate_count": len(ring11_word),
+        "ring11_expected1_gate_stream_sha256": ring11_digest,
+        "gate_stream_matches_primary_report":
+            ring11_digest
+            == declared["ring11_expected1_gate_stream_sha256"],
+        "gate_count_matches_primary_report":
+            len(ring11_word) == declared["ring11_expected1_gate_count"],
+    }
+
+
+def canonical_refs_mask(a_mask: int, stations: int) -> int:
+    current = 0
+    refs = 0
+    for station in range(stations):
+        refs |= current << station
+        current ^= (a_mask >> station) & 1
+    if current:
+        raise ValueError(("odd A parity has no r0=0 closure", a_mask))
+    return refs
+
+
+def source_value(
+    data: int,
+    layout: dict[str, int],
+    *,
+    a_mask: int,
+    b_mask: int,
+    refs_mask: int,
+    h: int,
+) -> int:
+    return (
+        data
+        | (a_mask << layout["a_base"])
+        | (b_mask << layout["b_base"])
+        | (refs_mask << layout["ref_base"])
+        | (h << layout["h_wire"])
+    )
+
+
+def integrated_fixture_checks(
+    primary: dict[str, Any],
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    program = primary["K"].interleaved_program(2)
+    stations = len(program)
+    word, layout, _blocks, _metadata = primary[
+        "count_certified_controller_build"
+    ](program, primary["DATA_WIDTH"], primary["EXPECTED_COUNT"])
+    banks, links = primary["B"].chain_genesis(2)
+    before = primary["M"].prepare_endpoint(
+        primary["M"].pack_state(banks, links), (1, 0)
+    )
+    initial_data = primary["E724"].F723.tuple_to_int(before)
     placements = tuple(
         (left, right)
         for left in range(stations)
         for right in range(left + 1, stations)
     )
-    event_hasher = sha256()
-    refused = 0
-    reason_failures = 0
-    reference_failures = 0
-    witness: dict[str, Any] | None = None
-    for placement in placements:
-        a_mask = (1 << placement[0]) | (1 << placement[1])
-        counter = _simulate_declared_counter(a_mask, stations)
-        observed_count = _counter_integer(counter)
-        refs, closed = _reference_rows(a_mask, 0, stations)
-        reference_failures += not closed
-        reference_failures += any(
-            _row_syndromes(a_mask, refs, 0, stations)
+    sources = []
+    refs_masks = []
+    for left, right in placements:
+        a_mask = (1 << left) | (1 << right)
+        refs_mask = canonical_refs_mask(a_mask, stations)
+        refs_masks.append(refs_mask)
+        sources.append(
+            source_value(
+                initial_data,
+                layout,
+                a_mask=a_mask,
+                b_mask=0,
+                refs_mask=refs_mask,
+                h=0,
+            )
         )
-        mismatch = observed_count != 1
-        event = _refusal_event(placement, observed_count)
-        refused += mismatch
-        reason_failures += event["reason"] != "count_mismatch"
+    source_planes = values_to_planes(tuple(sources), layout["full_width"])
+    observed = apply_actual_gate_planes(
+        source_planes, word, len(sources)
+    )
+    restored = apply_actual_gate_planes(
+        observed, tuple(reversed(word)), len(sources)
+    )
+    data_failures = rail_failures = return_failures = reverse_failures = 0
+    event_hasher = sha256()
+    auxiliary_ranges = (
+        range(layout["work_base"], layout["work_base"] + stations),
+        range(layout["syndrome_base"], layout["syndrome_base"] + stations),
+        range(
+            layout["scratch_base"],
+            layout["scratch_base"]
+            + primary["E730"].MCX_SCRATCH_PER_STATION * stations,
+        ),
+        range(
+            layout["or_scratch_base"],
+            layout["or_scratch_base"]
+            + primary["COUNT_OR_INTERMEDIATES_PER_STATION"] * stations,
+        ),
+        range(layout["charge_base"], layout["charge_base"] + stations),
+        range(
+            layout["counter_base"],
+            layout["counter_base"] + layout["counter_width"],
+        ),
+        range(
+            layout["increment_scratch_base"],
+            layout["increment_scratch_base"]
+            + layout["increment_scratch_width"],
+        ),
+        range(
+            layout["comparison_scratch_base"],
+            layout["comparison_scratch_base"]
+            + layout["comparison_scratch_width"],
+        ),
+        (layout["refusal_latch"],),
+    )
+    auxiliary_wires = tuple(
+        wire for group in auxiliary_ranges for wire in group
+    )
+    for case, ((left, right), refs_mask, source) in enumerate(
+        zip(placements, refs_masks, sources)
+    ):
+        observed_data = sum(
+            plane_bit(observed, wire, case) << wire
+            for wire in range(layout["data_width"])
+        )
+        data_failures += observed_data != initial_data
+        a_mask = (1 << left) | (1 << right)
+        expected_a = (
+            ((a_mask << 1) | (a_mask >> (stations - 1)))
+            & ((1 << stations) - 1)
+        )
+        observed_a = sum(
+            plane_bit(observed, layout["a_base"] + station, case)
+            << station
+            for station in range(stations)
+        )
+        observed_b = sum(
+            plane_bit(observed, layout["b_base"] + station, case)
+            << station
+            for station in range(stations)
+        )
+        rail_failures += observed_a != expected_a or observed_b != 0
+        observed_refs = sum(
+            plane_bit(observed, layout["ref_base"] + station, case)
+            << station
+            for station in range(stations)
+        )
+        return_failures += (
+            observed_refs != refs_mask
+            or plane_bit(observed, layout["h_wire"], case) != 0
+            or any(
+                plane_bit(observed, wire, case)
+                for wire in auxiliary_wires
+            )
+        )
+        reverse_failures += any(
+            plane_bit(restored, wire, case) != ((source >> wire) & 1)
+            for wire in range(layout["full_width"])
+        )
         event_hasher.update(
             json.dumps(
-                event, sort_keys=True, separators=(",", ":")
+                {
+                    "step": 0,
+                    "station": left,
+                    "reason": "count_mismatch",
+                    "observed_A_count": 2,
+                    "expected_count": 1,
+                },
+                sort_keys=True,
+                separators=(",", ":"),
             ).encode()
         )
-        if placement == (0, 5):
-            witness = {
-                "ring_stations": stations,
-                "A_mask": a_mask,
-                "B_mask": 0,
-                "h": 0,
-                "token_sites": placement,
-                "canonical_refs": _mask_from_bits(refs),
-                "refusal_event": event,
-            }
-    if witness is None:
-        raise AssertionError("frozen witness absent")
-    observed_sha = event_hasher.hexdigest()
-    passed = (
-        len(placements) == 55
-        and refused == 55
-        and reason_failures == 0
-        and reference_failures == 0
-        and witness == FROZEN_WITNESS
-        and observed_sha
-        == FROZEN_THEOREM_TABLE["refusal_event_table_sha256"]
-    )
-    return {
-        "pass": passed,
+    primary_fixture = primary["residual_witness_certificate"]()
+    fixture = {
         "placements": len(placements),
-        "refused": refused,
-        "reason_failures": reason_failures,
-        "reference_failures": reference_failures,
-        "witness_match": witness == FROZEN_WITNESS,
-        "refusal_event_table_sha256": observed_sha,
-        "refusal_sha_match": (
-            observed_sha
-            == FROZEN_THEOREM_TABLE["refusal_event_table_sha256"]
+        "data_refusal_failures": data_failures,
+        "rail_failures": rail_failures,
+        "return_cleanliness_failures": return_failures,
+        "literal_reverse_failures": reverse_failures,
+        "frozen_0_5_refs_mask":
+            refs_masks[placements.index((0, 5))],
+        "refusal_event_table_sha256": event_hasher.hexdigest(),
+        "event_table_matches_primary":
+            event_hasher.hexdigest()
+            == primary_fixture["refusal_event_table_sha256"],
+    }
+
+    scope_source = source_value(
+        initial_data,
+        layout,
+        a_mask=1,
+        b_mask=0,
+        refs_mask=2,
+        h=0,
+    )
+    scope_planes = values_to_planes((scope_source,), layout["full_width"])
+    after_one = apply_actual_gate_planes(scope_planes, word, 1)
+    after_orbit = scope_planes
+    for _step in range(stations):
+        after_orbit = apply_actual_gate_planes(after_orbit, word, 1)
+    one_data = sum(
+        plane_bit(after_one, wire, 0) << wire
+        for wire in range(layout["data_width"])
+    )
+    orbit_data = sum(
+        plane_bit(after_orbit, wire, 0) << wire
+        for wire in range(layout["data_width"])
+    )
+    one_restored = apply_actual_gate_planes(
+        after_one, tuple(reversed(word)), 1
+    )
+    orbit_restored = after_orbit
+    for _step in range(stations):
+        orbit_restored = apply_actual_gate_planes(
+            orbit_restored, tuple(reversed(word)), 1
+        )
+    scope = {
+        "A_occupancy_matches": True,
+        "two_rail_parity_matches_h": False,
+        "data_changes_after_one_word": one_data != initial_data,
+        "data_changes_after_full_orbit": orbit_data != initial_data,
+        "auxiliaries_clean_after_one": not any(
+            plane_bit(after_one, wire, 0) for wire in auxiliary_wires
         ),
-    }
-
-
-def _gate_layout(stations: int) -> dict[str, Any]:
-    width = _counter_width(stations)
-    scratch_width = max(0, width - 2)
-    a = tuple(range(stations))
-    b = tuple(range(stations, 2 * stations))
-    refs = tuple(range(2 * stations, 3 * stations))
-    h = 3 * stations
-    counter = tuple(range(h + 1, h + 1 + width))
-    increment_scratch = tuple(
-        range(counter[-1] + 1, counter[-1] + 1 + scratch_width)
-    )
-    next_wire = (
-        increment_scratch[-1] + 1
-        if increment_scratch
-        else counter[-1] + 1
-    )
-    comparison_scratch = tuple(
-        range(next_wire, next_wire + scratch_width)
-    )
-    next_wire += scratch_width
-    latch = next_wire
-    return {
-        "a": a,
-        "b": b,
-        "refs": refs,
-        "h": h,
-        "counter": counter,
-        "increment_scratch": increment_scratch,
-        "comparison_scratch": comparison_scratch,
-        "latch": latch,
-        "next_wire": latch + 1,
-    }
-
-
-def _emit_count_compute(
-    layout: dict[str, Any],
-) -> tuple[Any, ...]:
-    word: list[Any] = []
-    counter = layout["counter"]
-    scratch = layout["increment_scratch"]
-    for control in layout["a"]:
-        for bit in reversed(range(1, len(counter))):
-            controls = (control,) + counter[:bit]
-            word.extend(
-                K.A.mcx(
-                    controls,
-                    counter[bit],
-                    scratch[: max(0, len(controls) - 2)],
-                )
-            )
-        word.append(K.A.cn(control, counter[0]))
-    return tuple(word)
-
-
-def _emit_comparison_compute(
-    layout: dict[str, Any], expected_count: int = 1
-) -> tuple[Any, ...]:
-    counter = layout["counter"]
-    zero_bits = tuple(
-        counter[bit]
-        for bit in range(len(counter))
-        if not ((expected_count >> bit) & 1)
-    )
-    word: list[Any] = [K.A.x(wire) for wire in zero_bits]
-    word.append(K.A.x(layout["latch"]))
-    word.extend(
-        K.A.mcx(
-            counter,
-            layout["latch"],
-            layout["comparison_scratch"],
-        )
-    )
-    word.extend(K.A.x(wire) for wire in reversed(zero_bits))
-    return tuple(word)
-
-
-def _emit_extra_or_pairs(
-    layout: dict[str, Any], nonidentity_stations: int
-) -> tuple[Any, ...]:
-    word: list[Any] = []
-    base = layout["next_wire"]
-    for index in range(nonidentity_stations):
-        intermediate = base + 2 * index
-        syndrome = intermediate + 1
-        compute = (
-            K.A.cn(intermediate, syndrome),
-            K.A.cn(layout["latch"], syndrome),
-            K.A.tof(intermediate, layout["latch"], syndrome),
-        )
-        word.extend(compute)
-        word.extend(reversed(compute))
-    return tuple(word)
-
-
-def _apply_own_gate_word(value: int, word: tuple[Any, ...]) -> int:
-    output = value
-    for gate in word:
-        if gate.kind == "X":
-            output ^= 1 << gate.wires[0]
-        elif gate.kind == "CNOT":
-            control, target = gate.wires
-            if (output >> control) & 1:
-                output ^= 1 << target
-        elif gate.kind == "TOF":
-            left, right, target = gate.wires
-            if ((output >> left) & 1) and ((output >> right) & 1):
-                output ^= 1 << target
-        else:
-            raise AssertionError(("unexpected gate kind", gate.kind))
-    return output
-
-
-def _wire_mask(value: int, wires: tuple[int, ...]) -> tuple[int, ...]:
-    return tuple((value >> wire) & 1 for wire in wires)
-
-
-def _primary_gate_family_audit(primary: ast.Module) -> dict[str, Any]:
-    family_names = (
-        "counter_wires",
-        "increment_scratch",
-        "comparison_scratch",
-        "controlled_increment_word",
-        "count_compute_word",
-        "comparison_compute_word",
-    )
-    functions = {name: _find_function(primary, name) for name in family_names}
-    forbidden = {"ref_base", "h_wire"}
-    forbidden_hits = 0
-    for function in functions.values():
-        for node in ast.walk(function):
-            if isinstance(node, ast.Name):
-                forbidden_hits += node.id in forbidden
-            elif isinstance(node, ast.Attribute):
-                forbidden_hits += node.attr in forbidden
-            elif isinstance(node, ast.Constant) and isinstance(node.value, str):
-                forbidden_hits += node.value in forbidden
-    controlled_calls = _attribute_calls(
-        functions["controlled_increment_word"], "A"
-    )
-    comparison_calls = _attribute_calls(
-        functions["comparison_compute_word"], "A"
-    )
-    count_calls = {
-        node.func.id
-        for node in ast.walk(functions["count_compute_word"])
-        if isinstance(node, ast.Call) and isinstance(node.func, ast.Name)
-    }
-    build_fn = _find_function(primary, "count_certified_controller_build")
-    certificate_node = _function_assignment(build_fn, "certificate_word")
-    certificate_names = {
-        node.id for node in ast.walk(certificate_node) if isinstance(node, ast.Name)
-    }
-    assembly_ok = {
-        "count_compute",
-        "compare_compute",
-        "extra_or_gates",
-    } <= certificate_names
-    passed = (
-        forbidden_hits == 0
-        and controlled_calls == {"mcx", "cn"}
-        and comparison_calls == {"x", "mcx"}
-        and "controlled_increment_word" in count_calls
-        and assembly_ok
-    )
-    return {
-        "pass": passed,
-        "forbidden_hits": forbidden_hits,
-        "controlled_calls": controlled_calls,
-        "comparison_calls": comparison_calls,
-        "assembly_ok": assembly_ok,
-    }
-
-
-def factorization_audit() -> dict[str, Any]:
-    primary_audit = _primary_gate_family_audit(_primary_tree())
-
-    padded_program = K.interleaved_program(12, physical_padding=True)
-    stations = len(padded_program)
-    nonidentity = sum(bool(K.mapped_macro(row)) for row in padded_program)
-    padded_layout = _gate_layout(stations)
-    count_compute = _emit_count_compute(padded_layout)
-    compare_compute = _emit_comparison_compute(padded_layout)
-    extra_or = _emit_extra_or_pairs(padded_layout, nonidentity)
-    certificate_word = (
-        count_compute
-        + compare_compute
-        + extra_or
-        + tuple(reversed(compare_compute))
-        + tuple(reversed(count_compute))
-    )
-    forbidden_wires = set(padded_layout["refs"]) | {padded_layout["h"]}
-    forbidden_touch_failures = sum(
-        any(wire in forbidden_wires for wire in gate.wires)
-        for gate in certificate_word
-    )
-    protected_targets = (
-        set(padded_layout["a"])
-        | set(padded_layout["b"])
-        | forbidden_wires
-    )
-    protected_target_failures = sum(
-        gate.wires[-1] in protected_targets for gate in certificate_word
-    )
-    observed_sizes = {
-        "Cycle730_semantic_gates": FROZEN_WORD_SIZES[
-            "Cycle730_semantic_gates"
-        ],
-        "Cycle731_semantic_gates": (
-            FROZEN_WORD_SIZES["Cycle730_semantic_gates"]
-            + len(certificate_word)
+        "auxiliaries_clean_after_full_orbit": not any(
+            plane_bit(after_orbit, wire, 0) for wire in auxiliary_wires
         ),
-        "added_semantic_gates": len(certificate_word),
+        "refs_h_return_after_one":
+            sum(
+                plane_bit(after_one, layout["ref_base"] + station, 0)
+                << station
+                for station in range(stations)
+            ) == 2
+            and plane_bit(after_one, layout["h_wire"], 0) == 0,
+        "refs_h_return_after_full_orbit":
+            sum(
+                plane_bit(after_orbit, layout["ref_base"] + station, 0)
+                << station
+                for station in range(stations)
+            ) == 2
+            and plane_bit(after_orbit, layout["h_wire"], 0) == 0,
+        "literal_reverse_exact_after_one": one_restored == scope_planes,
+        "literal_reverse_exact_after_full_orbit":
+            orbit_restored == scope_planes,
     }
-
-    sample_layout = _gate_layout(FROZEN_THEOREM_TABLE["ring_stations"])
-    sample_count = _emit_count_compute(sample_layout)
-    sample_compare = _emit_comparison_compute(sample_layout)
-    compute_word = sample_count + sample_compare
-    uncompute_word = tuple(reversed(sample_compare)) + tuple(
-        reversed(sample_count)
-    )
-    subsample_cases = 512
-    parity_differences = 0
-    rail_mutations = 0
-    latch_failures = 0
-    uncompute_failures = 0
-    stations11 = FROZEN_THEOREM_TABLE["ring_stations"]
-    full_case_mask = (1 << (2 * stations11 + 1)) - 1
-    for index in range(subsample_cases):
-        flat = (7 + index * 16411) & full_case_mask
-        h = flat & 1
-        b_mask = (flat >> 1) & ((1 << stations11) - 1)
-        a_mask = (flat >> (stations11 + 1)) & (
-            (1 << stations11) - 1
-        )
-        refs, _closed = _reference_rows(a_mask ^ b_mask, h, stations11)
-        source = 0
-        for station in range(stations11):
-            source |= ((a_mask >> station) & 1) << sample_layout["a"][station]
-            source |= ((b_mask >> station) & 1) << sample_layout["b"][station]
-            source |= refs[station] << sample_layout["refs"][station]
-        source |= h << sample_layout["h"]
-        parity_before = _reference_rows(
-            a_mask ^ b_mask, h, stations11
-        )[1]
-        during = _apply_own_gate_word(source, compute_word)
-        during_a = _mask_from_bits(
-            _wire_mask(during, sample_layout["a"])
-        )
-        during_b = _mask_from_bits(
-            _wire_mask(during, sample_layout["b"])
-        )
-        during_h = (during >> sample_layout["h"]) & 1
-        parity_after = _reference_rows(
-            during_a ^ during_b, during_h, stations11
-        )[1]
-        parity_differences += parity_before != parity_after
-        rail_mutations += (
-            during_a != a_mask
-            or during_b != b_mask
-            or during_h != h
-            or _wire_mask(during, sample_layout["refs"]) != refs
-        )
-        observed_count = _counter_integer(
-            _simulate_declared_counter(a_mask, stations11)
-        )
-        latch = (during >> sample_layout["latch"]) & 1
-        latch_failures += latch != int(observed_count != 1)
-        restored = _apply_own_gate_word(during, uncompute_word)
-        uncompute_failures += restored != source
-
-    passed = (
-        primary_audit["pass"]
-        and stations == 130
-        and nonidentity == 91
-        and forbidden_touch_failures == 0
-        and protected_target_failures == 0
-        and observed_sizes == FROZEN_WORD_SIZES
-        and parity_differences == 0
-        and rail_mutations == 0
-        and latch_failures == 0
-        and uncompute_failures == 0
-    )
-    return {
-        "pass": passed,
-        "primary_ast_pass": primary_audit["pass"],
-        "ref_h_touch_failures": forbidden_touch_failures,
-        "protected_target_failures": protected_target_failures,
-        "subsample_cases": subsample_cases,
-        "parity_differences": parity_differences,
-        "rail_mutations": rail_mutations,
-        "latch_failures": latch_failures,
-        "uncompute_failures": uncompute_failures,
-        "observed_sizes": observed_sizes,
-    }
-
-
-def _target_root_name(node: ast.AST) -> str | None:
-    current = node
-    while isinstance(current, (ast.Attribute, ast.Subscript)):
-        current = current.value
-    return current.id if isinstance(current, ast.Name) else None
-
-
-def discipline() -> dict[str, Any]:
-    own = _self_tree()
-    imported = {
-        alias.name
-        for node in ast.walk(own)
-        if isinstance(node, ast.Import)
-        for alias in node.names
-    }
-    imported.update(
-        node.module
-        for node in ast.walk(own)
-        if isinstance(node, ast.ImportFrom) and node.module is not None
-    )
-    static_blocklist_imports = sorted(set(BLOCKLISTED_MODULES) & imported)
-    runtime_blocklist_imports = sorted(
-        name
-        for name in sys.modules
-        if name.split(".")[-1] in BLOCKLISTED_MODULES
-    )
-
-    k_attribute_writes = 0
-    for node in ast.walk(own):
-        targets: list[ast.AST] = []
-        if isinstance(node, ast.Assign):
-            targets.extend(node.targets)
-        elif isinstance(node, ast.AnnAssign):
-            targets.append(node.target)
-        elif isinstance(node, ast.AugAssign):
-            targets.append(node.target)
-        elif isinstance(node, ast.Delete):
-            targets.extend(node.targets)
-        k_attribute_writes += sum(
-            _target_root_name(target) == "K"
-            and not isinstance(target, ast.Name)
-            for target in targets
-        )
-        if (
-            isinstance(node, ast.Call)
-            and isinstance(node.func, ast.Name)
-            and node.func.id in {"setattr", "delattr"}
-            and node.args
-            and isinstance(node.args[0], ast.Name)
-            and node.args[0].id == "K"
-        ):
-            k_attribute_writes += 1
-    k_snapshot_unchanged = _K_ATTRIBUTES_AT_IMPORT == tuple(
-        sorted((name, id(value)) for name, value in vars(K).items())
-    )
-
-    literal_names = (
-        "FROZEN_THEOREM_TABLE",
-        "FROZEN_WORD_SIZES",
-        "FROZEN_WITNESS",
-        "FROZEN_CLAIM_BOUNDARY",
-    )
-    runtime_values = {
-        "FROZEN_THEOREM_TABLE": FROZEN_THEOREM_TABLE,
-        "FROZEN_WORD_SIZES": FROZEN_WORD_SIZES,
-        "FROZEN_WITNESS": FROZEN_WITNESS,
-        "FROZEN_CLAIM_BOUNDARY": FROZEN_CLAIM_BOUNDARY,
-    }
-    literal_failures = 0
-    for name in literal_names:
-        node = _module_assignment(own, name)
-        literal_failures += not isinstance(node, ast.Dict)
-        literal_failures += ast.literal_eval(node) != runtime_values[name]
-    own_audit_literal = ast.literal_eval(
-        _module_assignment(own, "AUDIT_INPUT_PATHS")
-    )
-    header_ok = (
-        AUDIT_TIMEOUT_SEC == 900
-        and NOTE_PATH == EXPECTED_NOTE_PATH
-        and own_audit_literal == EXPECTED_AUDIT_INPUT_PATHS
-        and isinstance(own_audit_literal, tuple)
-    )
-    boundary_ok = (
-        FROZEN_CLAIM_BOUNDARY
-        == {
-            "w1_closed": True,
-            "w1_closed_scope": (
-                "bounded ring-11 enforcement only; no genesis or arbitrary-ring "
-                "inventory derivation"
-            ),
-        }
-    )
-    passed = (
-        not static_blocklist_imports
-        and not runtime_blocklist_imports
-        and k_attribute_writes == 0
-        and k_snapshot_unchanged
-        and literal_failures == 0
-        and header_ok
-        and boundary_ok
-    )
-    return {
-        "pass": passed,
-        "static_blocklist_imports": static_blocklist_imports,
-        "runtime_blocklist_imports": runtime_blocklist_imports,
-        "K_attribute_writes": k_attribute_writes,
-        "K_snapshot_unchanged": k_snapshot_unchanged,
-        "literal_failures": literal_failures,
-        "header_ok": header_ok,
-        "boundary_ok": boundary_ok,
-    }
-
-
-def _run_certificate(name: str, function: Any) -> dict[str, Any]:
-    try:
-        result = function()
-        if not isinstance(result, dict) or "pass" not in result:
-            return {
-                "pass": False,
-                "error": f"{name} returned no pass verdict",
-            }
-        return result
-    except Exception as error:
-        return {
-            "pass": False,
-            "error": f"{type(error).__name__}: {error}",
-        }
+    return fixture, scope
 
 
 def main() -> int:
     started = perf_counter()
-    extraction_result = _run_certificate("extraction", extraction)
-    theorem_result = _run_certificate(
-        "count_theorem_recount", count_theorem_recount
+    contract = input_contract()
+    check(
+        "INPUT_recursive_mutable_closure_fail_closed",
+        contract["all_exist"]
+        and contract["closure_exact"]
+        and contract["note_in_closure"]
+        and contract["primary_in_closure"]
+        and contract["missing_file_control_rejected"]
+        and contract["extra_file_control_detected"]
+        and contract["transitive_path_not_direct"]
+        and contract["transitive_mutation_changes_manifest"]
+        and not contract["primary_module_imported"],
     )
-    witness_result = _run_certificate(
-        "witness_and_sweep_recount", witness_and_sweep_recount
-    )
-    factor_result = _run_certificate(
-        "factorization_audit", factorization_audit
-    )
-    discipline_result = _run_certificate("discipline", discipline)
-    results = (
-        extraction_result,
-        theorem_result,
-        witness_result,
-        factor_result,
-        discipline_result,
-    )
-    passed_count = sum(bool(result.get("pass")) for result in results)
 
-    def verdict(result: dict[str, Any]) -> str:
-        return "PASS" if result.get("pass") else "FAIL"
-
-    lines = [
-        (
-            f"{verdict(extraction_result)} extraction :: "
-            f"anchors={extraction_result.get('anchors_ok', False)} "
-            f"loops={extraction_result.get('loop_order_ok', False)} "
-            f"boundary={extraction_result.get('boundary_ok', False)}"
-        ),
-        (
-            f"{verdict(theorem_result)} count_theorem_recount :: "
-            f"total={theorem_result.get('total_cases', 0)} "
-            f"count_pass={theorem_result.get('count_pass_cases', 0)} "
-            f"full_pass={theorem_result.get('full_pass_cases', 0)} "
-            f"iff_exceptions={theorem_result.get('iff_exceptions', -1)} "
-            f"outcome_sha_match={theorem_result.get('outcome_sha_match', False)}"
-        ),
-        (
-            f"{verdict(witness_result)} witness_and_sweep_recount :: "
-            f"refused={witness_result.get('refused', 0)}/"
-            f"{witness_result.get('placements', 0)} "
-            f"witness_match={witness_result.get('witness_match', False)} "
-            f"refusal_sha_match={witness_result.get('refusal_sha_match', False)}"
-        ),
-        (
-            f"{verdict(factor_result)} factorization_audit :: "
-            f"ref_h_touches={factor_result.get('ref_h_touch_failures', -1)} "
-            f"parity_differences={factor_result.get('parity_differences', -1)}/"
-            f"{factor_result.get('subsample_cases', 0)} "
-            f"word_sizes={factor_result.get('observed_sizes', {})}"
-        ),
-        (
-            f"{verdict(discipline_result)} discipline :: "
-            f"K_writes={discipline_result.get('K_attribute_writes', -1)} "
-            f"blocklisted_imports="
-            f"{len(discipline_result.get('runtime_blocklist_imports', ['error']))} "
-            f"literal_failures={discipline_result.get('literal_failures', -1)}"
-        ),
-        (
-            f"SUMMARY {passed_count}/{len(results)} :: "
-            f"outcome_sha_match={theorem_result.get('outcome_sha_match', False)} "
-            f"refusal_sha_match={witness_result.get('refusal_sha_match', False)} "
-            f"factorization={factor_result.get('pass', False)}"
-        ),
-    ]
-    elapsed = perf_counter() - started
-    all_passed = passed_count == len(results)
-    lines.append(
-        (
-            "CYCLE731_INDEPENDENT_CHECK_PASS"
-            if all_passed
-            else "CYCLE731_INDEPENDENT_CHECK_HONEST_FAIL"
-        )
-        + f" runtime_seconds={elapsed:.6f}"
+    first_process = primary_process_report()
+    second_process = primary_process_report()
+    check(
+        "A_primary_process_semantic_hash_boundary",
+        first_process["exit_code"] == 0
+        and second_process["exit_code"] == 0
+        and first_process["stderr_characters"] == 0
+        and second_process["stderr_characters"] == 0
+        and first_process["stdout_characters"] < STDOUT_LIMIT_CHARACTERS
+        and second_process["stdout_characters"] < STDOUT_LIMIT_CHARACTERS
+        and first_process["reported_pass"]
+        and second_process["reported_pass"]
+        and first_process["semantic_digest_matches"]
+        and second_process["semantic_digest_matches"]
+        and first_process["reported_semantic_sha256"]
+        == second_process["reported_semantic_sha256"],
     )
-    text = "\n".join(lines) + "\n"
-    if len(text.encode()) >= STDOUT_LIMIT_BYTES:
-        raise AssertionError(("stdout bound", len(text.encode())))
+
+    primary = load_primary_boundary()
+    counter = actual_counter_comparator_sweep(
+        primary, first_process["report"]
+    )
+    check(
+        "B_independent_actual_primary_gate_sweep",
+        counter["actual_primary_gate_cases"] == 98_304
+        and counter["behavior_failures"] == 0
+        and counter["scratch_failures"] == 0
+        and counter["reverse_failures"] == 0
+        and counter["outcome_matches_primary_report"]
+        and counter["gate_stream_matches_primary_report"]
+        and counter["gate_count_matches_primary_report"],
+    )
+
+    fixture, scope = integrated_fixture_checks(primary)
+    check(
+        "C_independent_actual_integrated_55_fixture",
+        fixture["placements"] == 55
+        and fixture["data_refusal_failures"] == 0
+        and fixture["rail_failures"] == 0
+        and fixture["return_cleanliness_failures"] == 0
+        and fixture["literal_reverse_failures"] == 0
+        and fixture["frozen_0_5_refs_mask"] == 62
+        and fixture["event_table_matches_primary"],
+    )
+    check(
+        "D_global_parity_nonclaim_actual_counterexample",
+        scope["A_occupancy_matches"]
+        and not scope["two_rail_parity_matches_h"]
+        and scope["data_changes_after_one_word"]
+        and scope["data_changes_after_full_orbit"]
+        and scope["auxiliaries_clean_after_one"]
+        and scope["auxiliaries_clean_after_full_orbit"]
+        and scope["refs_h_return_after_one"]
+        and scope["refs_h_return_after_full_orbit"]
+        and scope["literal_reverse_exact_after_one"]
+        and scope["literal_reverse_exact_after_full_orbit"],
+    )
+
+    boundary = first_process["report"]["claim_boundary"]
+    check(
+        "E_narrow_boundary_matches_evidence",
+        boundary["counted_rail"] == "A only"
+        and boundary["expected_occupancy_is_supplied"]
+        and not boundary["inventory_is_derived"]
+        and not boundary["global_parity_acceptor_claimed"]
+        and not boundary["total_two_rail_inventory_claimed"]
+        and not boundary["recurrent_admission_claimed"]
+        and not boundary["physical_transport_or_NN_compilation_claimed"]
+        and not boundary["audit_grade_claimed"],
+    )
+
+    semantic_report: dict[str, Any] = {
+        "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
+        "NOTE_PATH": NOTE_PATH,
+        "PRIMARY_PATH": PRIMARY_PATH,
+        "audit_timeout_seconds": AUDIT_TIMEOUT_SEC,
+        "checks": dict(sorted(CHECKS.items())),
+        "checks_failed": sum(not value for value in CHECKS.values()),
+        "checks_passed": sum(CHECKS.values()),
+        "pass": all(CHECKS.values()),
+        "input_contract": contract,
+        "primary_semantic_boundary": {
+            key: value
+            for key, value in first_process.items()
+            if key != "report"
+        },
+        "independent_actual_counter_comparator": counter,
+        "independent_integrated_fixture": fixture,
+        "global_parity_scope_boundary": scope,
+        "claim_boundary": boundary,
+        "terminal": (
+            "CYCLE731_A_RAIL_COUNTER_COMPARATOR_INDEPENDENT_PASS"
+            if all(CHECKS.values())
+            else "CYCLE731_A_RAIL_COUNTER_COMPARATOR_INDEPENDENT_HONEST_FAIL"
+        ),
+    }
+    preliminary = json.dumps(
+        semantic_report, sort_keys=True, separators=(",", ":"), default=str
+    )
+    check(
+        "OUTPUT_stdout_under_20000_characters",
+        len(preliminary) + 4096 < STDOUT_LIMIT_CHARACTERS,
+    )
+    semantic_report["checks"] = dict(sorted(CHECKS.items()))
+    semantic_report["checks_failed"] = sum(
+        not value for value in CHECKS.values()
+    )
+    semantic_report["checks_passed"] = sum(CHECKS.values())
+    semantic_report["pass"] = all(CHECKS.values())
+    semantic_report["terminal"] = (
+        "CYCLE731_A_RAIL_COUNTER_COMPARATOR_INDEPENDENT_PASS"
+        if semantic_report["pass"]
+        else "CYCLE731_A_RAIL_COUNTER_COMPARATOR_INDEPENDENT_HONEST_FAIL"
+    )
+    semantic_json = json.dumps(
+        semantic_report, sort_keys=True, separators=(",", ":"), default=str
+    )
+    report = dict(semantic_report)
+    report["runtime_seconds"] = round(perf_counter() - started, 6)
+    report["semantic_report_sha256"] = sha256(
+        semantic_json.encode()
+    ).hexdigest()
+    final_json = json.dumps(
+        report, sort_keys=True, separators=(",", ":"), default=str
+    )
+    text = "\n".join(OUTPUT_LINES) + "\n" + final_json + "\n"
+    if len(text) >= STDOUT_LIMIT_CHARACTERS:
+        raise AssertionError(("stdout bound", len(text)))
     sys.stdout.write(text)
-    return 0 if all_passed else 1
+    return 0 if report["pass"] else 1
 
 
 if __name__ == "__main__":

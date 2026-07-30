@@ -183,6 +183,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "sector_summed_companion_channel_cycle733_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle733_sector_sum_independent_check_2026_07_28.py",
     ],
+    # Cycle 731's checker intentionally obtains the actual primary gate stream
+    # through runpy/subprocess boundaries rather than importing the primary.
+    # Keep that independent source in the claim packet explicitly.
+    "token_count_certificate_cycle731_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle731_count_certificate_independent_check_2026_07_28.py",
+    ],
     # This theorem note's N7 steelman is the faithful-but-reducible direct sum
     # of the two complexified simple-sector modules.  The independent helper is
     # not imported by the primary stress runner, so expose it only to this row.

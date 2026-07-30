@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
-"""Cycle 731: a bounded traveling token-count refusal certificate.
+"""Cycle 731: a bounded A-rail occupancy counter/comparator certificate.
 
 A clean binary counter is reversibly incremented once for every occupied
-Cycle-719 A station.  A fixed equality comparison with the declared source
-inventory sets one mismatch latch.  That latch is the eighth input to every
-Cycle-730 refusal OR.  Comparison and count are then uncomputed before the
-unchanged R suffix.  The emitted circuit is a fixed X/CNOT/TOF word: Python is
-used only to unroll the word from (ring size, declared expected count).
+Cycle-719 A station.  A fixed equality comparison with a supplied expected
+A-rail occupancy sets one mismatch latch.  That latch is the eighth input to
+every Cycle-730 refusal OR.  Comparison and count are then uncomputed before
+the unchanged R suffix.  The emitted circuit is a fixed X/CNOT/TOF word:
+Python is used only to unroll the word from (ring size, expected occupancy).
+
+The counter is one fixed global logical register.  This runner does not claim
+that it is physically transported, that it counts the B rail, or that the
+integrated word is a global parity acceptor.
 """
 from __future__ import annotations
 
+import ast
 from functools import lru_cache
 from hashlib import sha256
 import json
@@ -26,10 +31,93 @@ AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = (
     "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md"
 )
-AUDIT_INPUT_PATHS = (
+DIRECT_INPUT_PATHS = (
+    NOTE_PATH,
     "scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py",
     "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+)
+AUDIT_INPUT_PATHS = (
+    "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
+    "docs/work_history/repo/review_feedback/INFINITE_REVERSIBLE_RECORD_EXPORT_QCA_CYCLE11_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle612_interval_bridge_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+    "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
+    "scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
@@ -44,11 +132,56 @@ EXPECTED_CYCLE730_PADDED_SHA256 = (
 )
 COUNT_LOCAL_ROW_INPUTS = 8
 COUNT_OR_INTERMEDIATES_PER_STATION = 6
-STDOUT_LIMIT_BYTES = 150 * 1024
+STDOUT_LIMIT_CHARACTERS = 20_000
 RING11_STATIONS = 11
 
 CHECKS: dict[str, bool] = {}
 OUTPUT_LINES: list[str] = []
+REPO_ROOT = Path(__file__).resolve().parents[1]
+
+
+def declared_input_closure(
+    direct_paths: tuple[str, ...],
+) -> tuple[str, ...]:
+    """Recursively recover literal mutable-input declarations, fail closed."""
+
+    seen: set[str] = set()
+    pending = list(direct_paths)
+    while pending:
+        relative = pending.pop()
+        if relative in seen:
+            continue
+        path = REPO_ROOT / relative
+        if not path.is_file():
+            raise FileNotFoundError(relative)
+        seen.add(relative)
+        if not (relative.startswith("scripts/") and relative.endswith(".py")):
+            continue
+        tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+        nested: tuple[str, ...] = ()
+        for node in tree.body:
+            if not isinstance(node, (ast.Assign, ast.AnnAssign)):
+                continue
+            targets = (
+                node.targets if isinstance(node, ast.Assign) else (node.target,)
+            )
+            if not any(
+                isinstance(target, ast.Name)
+                and target.id == "AUDIT_INPUT_PATHS"
+                for target in targets
+            ):
+                continue
+            value = ast.literal_eval(node.value)
+            if (
+                not isinstance(value, (tuple, list))
+                or not value
+                or not all(isinstance(item, str) for item in value)
+            ):
+                raise ValueError(("invalid AUDIT_INPUT_PATHS", relative))
+            nested = tuple(value)
+            break
+        pending.extend(nested)
+    return tuple(sorted(seen))
 
 
 def check(label: str, condition: bool) -> bool:
@@ -479,13 +612,65 @@ def literal_apply(
 
 
 def input_contract_certificate() -> dict[str, object]:
-    root = Path(__file__).resolve().parents[1]
-    existence = {path: (root / path).is_file() for path in AUDIT_INPUT_PATHS}
+    recovered = declared_input_closure(DIRECT_INPUT_PATHS)
+    existence = {
+        path: (REPO_ROOT / path).is_file() for path in AUDIT_INPUT_PATHS
+    }
+
+    def manifest_digest(
+        paths: tuple[str, ...],
+        replacement: tuple[str, bytes] | None = None,
+    ) -> str:
+        digest = sha256()
+        for relative in paths:
+            payload = (REPO_ROOT / relative).read_bytes()
+            if replacement is not None and replacement[0] == relative:
+                payload = replacement[1]
+            digest.update(relative.encode())
+            digest.update(b"\0")
+            digest.update(payload)
+            digest.update(b"\0")
+        return digest.hexdigest()
+
+    missing_rejected = False
+    try:
+        declared_input_closure(
+            DIRECT_INPUT_PATHS
+            + ("scripts/__cycle731_missing_input_control__.py",)
+        )
+    except FileNotFoundError:
+        missing_rejected = True
+    extra_recovered = declared_input_closure(
+        DIRECT_INPUT_PATHS + ("docs/CANONICAL_HARNESS_INDEX.md",)
+    )
+    transitive_path = (
+        "scripts/"
+        "frontier_cycle719_local_handshake_controller_core_2026_07_26.py"
+    )
+    transitive_payload = (REPO_ROOT / transitive_path).read_bytes()
+    mutated_payload = transitive_payload + b"\n# cycle731 mutation control\n"
+    observed_manifest = manifest_digest(recovered)
+    mutated_manifest = manifest_digest(
+        recovered, (transitive_path, mutated_payload)
+    )
     return {
-        "paths": existence,
+        "direct_paths": DIRECT_INPUT_PATHS,
         "all_exist": all(existence.values()),
-        "note_required": False,
+        "note_required": True,
+        "note_in_closure": NOTE_PATH in recovered,
         "pure_literal_tuple": DECLARED_INPUT_PATHS == AUDIT_INPUT_PATHS,
+        "declared_mutable_input_paths": len(AUDIT_INPUT_PATHS),
+        "declared_input_closure_exact": recovered == AUDIT_INPUT_PATHS,
+        "missing_file_control_rejected": missing_rejected,
+        "extra_file_control_detected":
+            extra_recovered != AUDIT_INPUT_PATHS
+            and "docs/CANONICAL_HARNESS_INDEX.md" in extra_recovered,
+        "transitive_control_path": transitive_path,
+        "transitive_control_is_not_direct":
+            transitive_path not in DIRECT_INPUT_PATHS,
+        "manifest_sha256": observed_manifest,
+        "transitive_mutation_changes_manifest":
+            mutated_manifest != observed_manifest,
     }
 
 
@@ -548,7 +733,7 @@ def structure_certificate() -> dict[str, object]:
     runtime_gate_kind_failures = sum(
         gate.kind not in allowed_kinds for gate in word
     )
-    logical_locality_failures = 0
+    logical_register_scope_failures = 0
     count_compute = metadata["count_compute_word"]
     for block in metadata["increment_blocks"]:
         station = int(block["station"])
@@ -557,7 +742,7 @@ def structure_certificate() -> dict[str, object]:
             *counter_wires(layout),
             *increment_scratch(layout),
         }
-        logical_locality_failures += sum(
+        logical_register_scope_failures += sum(
             not set(gate.wires) <= allowed
             for gate in count_compute[int(block["start"]):int(block["stop"])]
         )
@@ -566,7 +751,7 @@ def structure_certificate() -> dict[str, object]:
         *comparison_scratch(layout),
         layout["refusal_latch"],
     }
-    logical_locality_failures += sum(
+    logical_register_scope_failures += sum(
         not set(gate.wires) <= compare_allowed
         for gate in metadata["comparison_compute_word"]
     )
@@ -602,8 +787,9 @@ def structure_certificate() -> dict[str, object]:
             == tuple(reversed(metadata["count_compute_word"])),
         "count_certificate_ref_h_touch_failures": ref_h_touch_failures,
         "compiled_gate_kind_failures": runtime_gate_kind_failures,
-        "increment_comparison_locality_failures":
-            logical_locality_failures,
+        "fixed_global_register_scope_failures":
+            logical_register_scope_failures,
+        "physical_transport_compilation_claimed": False,
         "full_width": layout["full_width"],
     }
 
@@ -788,115 +974,220 @@ def residual_witness_certificate() -> dict[str, object]:
     }
 
 
-def reference_from_q(q_mask: int, h: int, stations: int) -> int:
-    """Independent r_0=0 recurrence for the amended charge rows."""
+def a_rail_counter_comparator_certificate() -> dict[str, object]:
+    """Evaluate the actual counter/comparator gates on bounded exhaustive sets."""
 
-    marked = E730.F728.marked_station(stations)
-    current = 0
-    refs = 0
-    closure = 0
-    for station in range(stations):
-        refs |= current << station
-        following = (
-            current
-            ^ ((q_mask >> station) & 1)
-            ^ (h if station == marked else 0)
-        )
-        if station == stations - 1:
-            closure = following
-        else:
-            current = following
-    return refs if closure == 0 else -1
-
-
-def enforcement_theorem_certificate() -> dict[str, object]:
-    stations = RING11_STATIONS
-    rail_width = 1 << stations
-    charge_pass: dict[tuple[int, int], bool] = {}
-    local_row_recurrence_failures = 0
-    parity_separation_failures = 0
-    for q_mask in range(rail_width):
-        for h in (0, 1):
-            refs = reference_from_q(q_mask, h, stations)
-            passed = refs >= 0
-            if passed:
-                syndrome = E730.F728.twisted_local_syndrome_mask(
-                    q_mask, 0, refs, h, stations
-                )
-                local_row_recurrence_failures += syndrome != 0
-            parity = q_mask.bit_count() & 1
-            parity_separation_failures += passed != (parity == h)
-            charge_pass[(q_mask, h)] = passed
-
-    total_cases = 0
-    full_pass_cases = 0
-    count_pass_cases = 0
-    parity_pass_cases = 0
-    exceptions = 0
+    cases = 0
+    behavior_failures = 0
+    reverse_failures = 0
+    scratch_failures = 0
+    gate_kind_failures = 0
     outcome_hasher = sha256()
-    digest_buffer = bytearray()
-    for a_mask in range(rail_width):
-        count_law = a_mask.bit_count() == EXPECTED_COUNT
-        for b_mask in range(rail_width):
-            q_mask = a_mask ^ b_mask
-            token_parity = (
-                a_mask.bit_count() + b_mask.bit_count()
-            ) & 1
-            for h in (0, 1):
-                charge_law = charge_pass[(q_mask, h)]
-                full_law = count_law and charge_law
-                expected = (
-                    a_mask.bit_count() == EXPECTED_COUNT
-                    and token_parity == h
-                )
-                total_cases += 1
-                count_pass_cases += count_law
-                parity_pass_cases += charge_law
-                full_pass_cases += full_law
-                exceptions += full_law != expected
-                digest_buffer.append(
-                    int(count_law)
-                    | (int(charge_law) << 1)
-                    | (int(full_law) << 2)
-                    | (int(expected) << 3)
-                )
-                if len(digest_buffer) >= 65_536:
-                    outcome_hasher.update(digest_buffer)
-                    digest_buffer.clear()
-    outcome_hasher.update(digest_buffer)
+    ring_summaries: list[dict[str, object]] = []
 
-    program = K.interleaved_program(2)
-    _word, layout, _blocks, metadata = count_certified_controller_build(
-        program, DATA_WIDTH, EXPECTED_COUNT
+    for stations in range(1, 13):
+        layout = register_layout(0, stations)
+        count_word, _blocks = count_compute_word(layout)
+        ring_cases = 0
+        ring_failures = 0
+        for expected_count in range(stations + 1):
+            compare_word = comparison_compute_word(layout, expected_count)
+            word = count_word + compare_word
+            gate_kind_failures += sum(
+                gate.kind not in {"X", "CNOT", "TOF"} for gate in word
+            )
+            sources = tuple(range(1 << stations))
+            observed = literal_apply(
+                sources, word, layout["full_width"], 1
+            )
+            restored = literal_apply(
+                observed, tuple(reversed(word)), layout["full_width"], 1
+            )
+            for a_mask, result, recovered in zip(
+                sources, observed, restored
+            ):
+                rows = controller_rows(result, layout)
+                observed_count = sum(
+                    bit << index for index, bit in enumerate(rows["counter"])
+                )
+                expected_latch = int(
+                    a_mask.bit_count() != expected_count
+                )
+                behavior_ok = (
+                    rows["A"]
+                    == tuple(
+                        (a_mask >> station) & 1
+                        for station in range(stations)
+                    )
+                    and observed_count == a_mask.bit_count()
+                    and rows["refusal_latch"] == expected_latch
+                    and not any(rows["B"])
+                    and not any(rows["refs"])
+                    and rows["h"] == 0
+                )
+                scratch_ok = (
+                    not any(rows["increment_scratch"])
+                    and not any(rows["comparison_scratch"])
+                )
+                behavior_failures += not behavior_ok
+                scratch_failures += not scratch_ok
+                reverse_failures += recovered != a_mask
+                ring_failures += not (
+                    behavior_ok and scratch_ok and recovered == a_mask
+                )
+                outcome_hasher.update(
+                    bytes(
+                        (
+                            stations,
+                            expected_count,
+                            a_mask.bit_count(),
+                            observed_count,
+                            rows["refusal_latch"],
+                        )
+                    )
+                )
+                cases += 1
+                ring_cases += 1
+        ring_summaries.append(
+            {
+                "stations": stations,
+                "counter_width": layout["counter_width"],
+                "cases": ring_cases,
+                "failures": ring_failures,
+            }
+        )
+
+    width_failures = sum(
+        counter_width(stations) != (stations + 1).bit_length() - (
+            int(stations + 1).bit_count() == 1
+        )
+        for stations in range(1, 130)
     )
-    ref_h_wires = set(
-        range(layout["ref_base"], layout["ref_base"] + stations)
+    overflow_failures = sum(
+        stations >= (1 << counter_width(stations))
+        for stations in range(1, 130)
     )
-    ref_h_wires.add(layout["h_wire"])
-    touch_failures = sum(
-        any(wire in ref_h_wires for wire in gate.wires)
-        for gate in metadata["certificate_word"]
+    invalid_expected_rejections = 0
+    ring11_layout = register_layout(0, RING11_STATIONS)
+    for invalid in (-1, RING11_STATIONS + 1):
+        try:
+            comparison_compute_word(ring11_layout, invalid)
+        except ValueError:
+            invalid_expected_rejections += 1
+    ring11_count, _blocks = count_compute_word(ring11_layout)
+    ring11_compare = comparison_compute_word(
+        ring11_layout, EXPECTED_COUNT
+    )
+    ring11_word = ring11_count + ring11_compare
+    allowed = {
+        *range(
+            ring11_layout["a_base"],
+            ring11_layout["a_base"] + RING11_STATIONS,
+        ),
+        *counter_wires(ring11_layout),
+        *increment_scratch(ring11_layout),
+        *comparison_scratch(ring11_layout),
+        ring11_layout["refusal_latch"],
+    }
+    wire_scope_failures = sum(
+        not set(gate.wires) <= allowed for gate in ring11_word
     )
     return {
-        "ring_stations": stations,
-        "rail_states": 1 << (2 * stations),
-        "h_sectors": 2,
-        "total_rail_h_cases": total_cases,
-        "expected_total_rail_h_cases": 8_388_608,
-        "count_pass_cases": count_pass_cases,
-        "parity_pass_cases": parity_pass_cases,
-        "full_pass_cases": full_pass_cases,
-        "iff_exceptions": exceptions,
-        "charge_recurrence_failures": local_row_recurrence_failures,
-        "parity_separation_failures": parity_separation_failures,
-        "count_definition": "A-rail controller tokens at the Q boundary",
-        "full_law": (
-            "A_count == declared expected_count AND "
-            "(popcount(A)+popcount(B)) mod 2 == h"
+        "claim": (
+            "clean reversible A-rail occupancy counter and supplied-value "
+            "equality comparator"
         ),
-        "count_certificate_ref_h_touch_failures": touch_failures,
-        "count_law_factors_from_parity_law": touch_failures == 0,
+        "counted_rail": "A only",
+        "B_is_counted": False,
+        "references_or_h_are_counted": False,
+        "global_parity_acceptor_claimed": False,
+        "counter_genesis_is_supplied_clean": True,
+        "expected_occupancy_is_supplied": True,
+        "exhaustive_station_range": [1, 12],
+        "exhaustive_cases": cases,
+        "behavior_failures": behavior_failures,
+        "scratch_cleanliness_failures": scratch_failures,
+        "literal_reverse_failures": reverse_failures,
+        "gate_kind_failures": gate_kind_failures,
+        "wire_scope_failures": wire_scope_failures,
+        "width_range_checked": [1, 129],
+        "width_failures": width_failures,
+        "overflow_capacity_failures": overflow_failures,
+        "invalid_expected_rejections": invalid_expected_rejections,
+        "expected_invalid_expected_rejections": 2,
+        "ring_summaries": ring_summaries,
         "outcome_table_sha256": outcome_hasher.hexdigest(),
+        "ring11_expected1_gate_count": len(ring11_word),
+        "ring11_expected1_gate_stream_schema":
+            "sha256(concat(gate.kind + repr(gate.wires)))",
+        "ring11_expected1_gate_stream_sha256":
+            K.gate_digest(ring11_word),
+    }
+
+
+def global_parity_scope_boundary() -> dict[str, object]:
+    """Freeze a concrete input showing that no global parity iff is claimed."""
+
+    program = K.interleaved_program(2)
+    stations = len(program)
+    word, layout, _blocks, _metadata = count_certified_controller_build(
+        program, DATA_WIDTH, EXPECTED_COUNT
+    )
+    banks, links = B.chain_genesis(2)
+    before = M.prepare_endpoint(M.pack_state(banks, links), (1, 0))
+    initial_data = E724.F723.tuple_to_int(before)
+    refs_mask = 2
+    refs = E730.mask_to_tuple(refs_mask, stations)
+    source = controller_full_input(
+        initial_data, layout, a=(0,), refs=refs, h=0
+    )
+    after_one = literal_apply(
+        (source,), word, layout["full_width"], 1
+    )[0]
+    after_orbit = literal_apply(
+        (source,), word, layout["full_width"], stations
+    )[0]
+    one_rows = controller_rows(after_one, layout)
+    orbit_rows = controller_rows(after_orbit, layout)
+    one_restored = literal_apply(
+        (after_one,), tuple(reversed(word)), layout["full_width"], 1
+    )[0]
+    orbit_restored = literal_apply(
+        (after_orbit,),
+        tuple(reversed(word)),
+        layout["full_width"],
+        stations,
+    )[0]
+    return {
+        "input": {
+            "A_mask": 1,
+            "B_mask": 0,
+            "refs_mask": refs_mask,
+            "h": 0,
+            "expected_A_occupancy": EXPECTED_COUNT,
+        },
+        "A_occupancy_matches": True,
+        "two_rail_parity_matches_h": False,
+        "data_changes_after_one_word":
+            one_rows["data"] != initial_data,
+        "data_changes_after_full_orbit":
+            orbit_rows["data"] != initial_data,
+        "auxiliaries_clean_after_one":
+            all_auxiliary_clean(one_rows),
+        "auxiliaries_clean_after_full_orbit":
+            all_auxiliary_clean(orbit_rows),
+        "refs_h_return_after_one":
+            one_rows["refs"] == refs and one_rows["h"] == 0,
+        "refs_h_return_after_full_orbit":
+            orbit_rows["refs"] == refs and orbit_rows["h"] == 0,
+        "literal_reverse_exact_after_one": one_restored == source,
+        "literal_reverse_exact_after_full_orbit":
+            orbit_restored == source,
+        "scope_statement": (
+            "The integrated word is not a global parity acceptor; the "
+            "certificate proves only A-rail counter/comparator behavior and "
+            "the separately stated fixed 55-placement refusal fixture."
+        ),
     }
 
 
@@ -1008,169 +1299,21 @@ def deletion_controls_certificate(
     }
 
 
-def physical_layout(bank_count: int) -> dict[str, object]:
-    program, track = K.held_physical_program_and_track(bank_count)
-    base = M.R12.full_wire_layout()
-    data_sites = base["wire_sites"]
-    a_sites = track[::2]
-    b_sites = track[1::2]
-    work_sites = tuple((x, y - 1, z) for x, y, z in a_sites)
-    syndrome_sites = tuple((x, y - 2, z) for x, y, z in a_sites)
-    mcx_scratch_sites = tuple(
-        (x, y - 3 - slot, z)
-        for x, y, z in a_sites
-        for slot in range(E730.MCX_SCRATCH_PER_STATION)
-    )
-    or_scratch_sites = tuple(
-        (
-            x,
-            y - 3 - E730.MCX_SCRATCH_PER_STATION - slot,
-            z,
-        )
-        for x, y, z in a_sites
-        for slot in range(COUNT_OR_INTERMEDIATES_PER_STATION)
-    )
-    ref_offset = (
-        3
-        + E730.MCX_SCRATCH_PER_STATION
-        + COUNT_OR_INTERMEDIATES_PER_STATION
-    )
-    ref_sites = tuple(
-        (x, y - ref_offset, z) for x, y, z in a_sites
-    )
-    charge_sites = tuple(
-        (x, y - ref_offset - 1, z) for x, y, z in a_sites
-    )
-    marked = E730.F728.marked_station(len(program))
-    mx, my, mz = a_sites[marked]
-    h_sites = ((mx, my - ref_offset - 2, mz),)
-    layout = register_layout(len(data_sites), len(program))
-    width = layout["counter_width"]
-    scratch_width = layout["increment_scratch_width"]
-    next_offset = ref_offset + 3
-    counter_sites = tuple(
-        (mx, my - next_offset - bit, mz) for bit in range(width)
-    )
-    next_offset += width
-    increment_scratch_sites = tuple(
-        (mx, my - next_offset - slot, mz)
-        for slot in range(scratch_width)
-    )
-    next_offset += scratch_width
-    comparison_scratch_sites = tuple(
-        (mx, my - next_offset - slot, mz)
-        for slot in range(scratch_width)
-    )
-    next_offset += scratch_width
-    latch_sites = ((mx, my - next_offset, mz),)
-    controller_sites = (
-        a_sites
-        + b_sites
-        + work_sites
-        + syndrome_sites
-        + mcx_scratch_sites
-        + or_scratch_sites
-        + ref_sites
-        + charge_sites
-        + h_sites
-        + counter_sites
-        + increment_scratch_sites
-        + comparison_scratch_sites
-        + latch_sites
-    )
-    wire_sites = data_sites + controller_sites
-    word, built_layout, _blocks, metadata = (
-        count_certified_controller_build(
-            program, len(data_sites), EXPECTED_COUNT
-        )
-    )
-    if built_layout != layout or len(wire_sites) != layout["full_width"]:
-        raise AssertionError(
-            ("physical/register layout", len(wire_sites), layout)
-        )
-    assigned = set(base["assigned_sites"])
-    return {
-        "program": program,
-        "track": track,
-        "word": word,
-        "certificate_word": metadata["certificate_word"],
-        "layout": layout,
-        "wire_sites": wire_sites,
-        "controller_sites": controller_sites,
-        "placement_collisions":
-            len(controller_sites)
-            - len(set(controller_sites))
-            + len(assigned & set(controller_sites)),
-    }
-
-
-def physical_case(bank_count: int) -> dict[str, object]:
-    physical = physical_layout(bank_count)
-    forward, inverse = E724.streaming_route_pair(
-        physical["certificate_word"], physical["wire_sites"]
-    )
-    return {
-        "banks": bank_count,
-        "stations": len(physical["program"]),
-        "counter_width": physical["layout"]["counter_width"],
-        "certificate_semantic_gates":
-            len(physical["certificate_word"]),
-        "certificate_word_sha256":
-            K.gate_digest(physical["certificate_word"]),
-        "counter_comparison_M2":
-            physical["layout"]["counter_width"]
-            + physical["layout"]["increment_scratch_width"]
-            + physical["layout"]["comparison_scratch_width"]
-            + 1,
-        "placement_collisions": physical["placement_collisions"],
-        "forward": forward,
-        "inverse": inverse,
-    }
-
-
-def physical_layer_certificate() -> dict[str, object]:
-    cases = {banks: physical_case(banks) for banks in (2, 12)}
-    route_keys = (
-        "non_NN_failures",
-        "operand_order_failures",
-        "route_return_failures",
-    )
-    failures = sum(
-        row["placement_collisions"] for row in cases.values()
-    )
-    failures += sum(
-        row[direction][key]
-        for row in cases.values()
-        for direction in ("forward", "inverse")
-        for key in route_keys
-    )
-    return {"banks": cases, "failure_census": failures}
-
-
-def inherited_anchor_certificate() -> dict[str, object]:
-    inherited = E730.inherited_anchors_certificate()
-    return {
-        "Cycle713_runner_expected_sha256":
-            inherited["Cycle713_runner_expected_sha256"],
-        "Cycle713_runner_observed_sha256":
-            inherited["Cycle713_runner_observed_sha256"],
-        "Cycle713_pin_match": inherited["Cycle713_pin_match"],
-        "matter_residual_failures":
-            inherited["matter_residual_failures"],
-        "matter_falsifier_active":
-            inherited["matter_falsifier_active"],
-    }
-
-
 def main() -> int:
     started = perf_counter()
 
     manifest = input_contract_certificate()
     check(
-        "INPUT_declared_literal_paths",
+        "INPUT_recursive_mutable_closure_fail_closed",
         manifest["all_exist"]
+        and manifest["note_required"]
+        and manifest["note_in_closure"]
         and manifest["pure_literal_tuple"]
-        and not manifest["note_required"],
+        and manifest["declared_input_closure_exact"]
+        and manifest["missing_file_control_rejected"]
+        and manifest["extra_file_control_detected"]
+        and manifest["transitive_control_is_not_direct"]
+        and manifest["transitive_mutation_changes_manifest"],
     )
 
     anchor = cycle730_regression_anchor()
@@ -1183,22 +1326,46 @@ def main() -> int:
     )
 
     structure = structure_certificate()
-    lawful = lawful_behavior_certificate()
     check(
-        "B_lawful_unchanged_and_exact_uncompute",
-        lawful["failure_census"] == 0
-        and structure["delta_equals_certificate_word"]
+        "B_fixed_global_register_structure_and_uncompute",
+        structure["delta_equals_certificate_word"]
         and structure["R_literal_suffix_unchanged"]
         and structure["exact_comparison_uncompute"]
         and structure["exact_counter_uncompute"]
         and structure["compiled_gate_kind_failures"] == 0
-        and structure["increment_comparison_locality_failures"] == 0,
+        and structure["fixed_global_register_scope_failures"] == 0
+        and structure["count_certificate_ref_h_touch_failures"] == 0
+        and not structure["physical_transport_compilation_claimed"],
+    )
+
+    counter = a_rail_counter_comparator_certificate()
+    check(
+        "C_actual_A_rail_counter_comparator_exhaustive",
+        counter["exhaustive_cases"] > 0
+        and counter["behavior_failures"] == 0
+        and counter["scratch_cleanliness_failures"] == 0
+        and counter["literal_reverse_failures"] == 0
+        and counter["gate_kind_failures"] == 0
+        and counter["wire_scope_failures"] == 0
+        and counter["width_failures"] == 0
+        and counter["overflow_capacity_failures"] == 0
+        and counter["invalid_expected_rejections"]
+        == counter["expected_invalid_expected_rejections"]
+        and counter["counted_rail"] == "A only"
+        and not counter["B_is_counted"]
+        and not counter["global_parity_acceptor_claimed"],
+    )
+
+    lawful = lawful_behavior_certificate()
+    check(
+        "D_integrated_lawful_fixture_regression",
+        lawful["failure_census"] == 0,
     )
 
     residual = residual_witness_certificate()
     witness = residual["frozen_witness"]
     check(
-        "C_frozen_witness_and_all_55_pairs_refused",
+        "E_fixed_ring11_zeroB_h0_all_55_pairs_refused",
         witness["frozen_refs_match"]
         and witness["data_refused"]
         and witness["registers_return_clean"]
@@ -1206,21 +1373,24 @@ def main() -> int:
         and residual["all_two_token_placements_refused"],
     )
 
-    theorem = enforcement_theorem_certificate()
+    parity_boundary = global_parity_scope_boundary()
     check(
-        "D_ring11_count_and_parity_enforcement_theorem",
-        theorem["total_rail_h_cases"]
-        == theorem["expected_total_rail_h_cases"]
-        and theorem["iff_exceptions"] == 0
-        and theorem["charge_recurrence_failures"] == 0
-        and theorem["parity_separation_failures"] == 0
-        and theorem["count_certificate_ref_h_touch_failures"] == 0
-        and theorem["count_law_factors_from_parity_law"],
+        "F_global_parity_nonclaim_counterexample",
+        parity_boundary["A_occupancy_matches"]
+        and not parity_boundary["two_rail_parity_matches_h"]
+        and parity_boundary["data_changes_after_one_word"]
+        and parity_boundary["data_changes_after_full_orbit"]
+        and parity_boundary["auxiliaries_clean_after_one"]
+        and parity_boundary["auxiliaries_clean_after_full_orbit"]
+        and parity_boundary["refs_h_return_after_one"]
+        and parity_boundary["refs_h_return_after_full_orbit"]
+        and parity_boundary["literal_reverse_exact_after_one"]
+        and parity_boundary["literal_reverse_exact_after_full_orbit"],
     )
 
     deletions = deletion_controls_certificate(residual)
     check(
-        "E_increment_comparison_uncompute_deletions",
+        "G_counter_comparator_deletion_controls",
         deletions["correct_lawful_auxiliary_return"]
         and deletions["correct_word_refuses_all_two_token_violations"]
         and deletions["deleted_increment_detected"]
@@ -1228,56 +1398,41 @@ def main() -> int:
         and deletions["deleted_uncompute_detected"],
     )
 
-    physical = physical_layer_certificate()
-    check(
-        "F_collision_free_NN_routes_with_returned_work",
-        physical["failure_census"] == 0,
-    )
-
-    inherited = inherited_anchor_certificate()
-    check(
-        "G_inherited_Cycle713_pins",
-        inherited["Cycle713_pin_match"]
-        and inherited["matter_residual_failures"] == 0
-        and inherited["matter_falsifier_active"],
-    )
-
-    science_labels = tuple(
-        label for label in CHECKS if label[:1] in "ABCDEFG"
-    )
-    all_a_to_g = all(CHECKS[label] for label in science_labels)
-    remaining_gap = (
-        "Scope is the ring-11 theorem fixture (with routed 11/130-station "
-        "physical fixtures); expected_count=1, the clean counter/comparison "
-        "registers, zero B at controller Q boundaries, references, h, ring "
-        "orientation, program content, and clean genesis are declared "
-        "supplies. The certificate enforces but does not derive inventory."
-    )
     claim_boundary = {
-        "scope": "ring-11 exhaustive count/parity theorem",
-        "expected_count_is_declared_supply": True,
-        "inventory_is_derived": False,
-        "clean_counter_comparison_genesis_is_supplied": True,
-        "exact_remaining_gap": remaining_gap,
-        "w1_closed_scope": (
-            "bounded ring-11 enforcement only; no genesis or arbitrary-ring "
-            "inventory derivation"
+        "positive_scope": (
+            "actual reversible A-rail counter/comparator gates, exhaustively "
+            "checked for N=1..12 and every expected occupancy; fixed ring-11 "
+            "zero-B, h=0 canonical-reference 55-placement refusal fixture"
         ),
+        "counted_rail": "A only",
+        "fixed_global_logical_register": True,
+        "expected_occupancy_is_supplied": True,
+        "clean_auxiliary_genesis_is_supplied": True,
+        "inventory_is_derived": False,
+        "global_parity_acceptor_claimed": False,
+        "total_two_rail_inventory_claimed": False,
+        "recurrent_admission_claimed": False,
+        "physical_transport_or_NN_compilation_claimed": False,
+        "audit_grade_claimed": False,
     }
-    w1_closed = all_a_to_g and bool(remaining_gap)
     check(
-        "H_honest_declared_supply_boundary",
-        all_a_to_g
-        and claim_boundary["expected_count_is_declared_supply"]
+        "H_honest_narrow_claim_boundary",
+        claim_boundary["counted_rail"] == "A only"
+        and claim_boundary["expected_occupancy_is_supplied"]
+        and claim_boundary["clean_auxiliary_genesis_is_supplied"]
         and not claim_boundary["inventory_is_derived"]
-        and bool(claim_boundary["exact_remaining_gap"])
-        and w1_closed,
+        and not claim_boundary["global_parity_acceptor_claimed"]
+        and not claim_boundary["total_two_rail_inventory_claimed"]
+        and not claim_boundary["recurrent_admission_claimed"]
+        and not claim_boundary[
+            "physical_transport_or_NN_compilation_claimed"
+        ]
+        and not claim_boundary["audit_grade_claimed"],
     )
 
     elapsed = perf_counter() - started
-    report: dict[str, object] = {
+    semantic_report: dict[str, object] = {
         "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
-        "DECLARED_INPUT_PATHS": DECLARED_INPUT_PATHS,
         "NOTE_PATH": NOTE_PATH,
         "audit_timeout_seconds": AUDIT_TIMEOUT_SEC,
         "bounded": True,
@@ -1285,21 +1440,14 @@ def main() -> int:
         "checks_failed": sum(not value for value in CHECKS.values()),
         "checks_passed": sum(CHECKS.values()),
         "pass": all(CHECKS.values()),
-        "runtime_seconds": round(elapsed, 6),
-        "matched_parity_multitoken_refused":
-            bool(witness["data_refused"]),
-        "w1_ring11_count_law_enforced":
-            CHECKS["D_ring11_count_and_parity_enforcement_theorem"],
-        "w1_closed": w1_closed,
         "input_contract": manifest,
         "Cycle730_regression_anchor": anchor,
         "circuit_structure": structure,
+        "A_rail_counter_comparator": counter,
         "lawful_behavior": lawful,
-        "residual_witness_and_pair_sweep": residual,
-        "ring11_enforcement_theorem": theorem,
+        "fixed_ring11_pair_sweep": residual,
+        "global_parity_scope_boundary": parity_boundary,
         "deletion_controls": deletions,
-        "physical": physical,
-        "inherited_anchors": inherited,
         "word_size_comparison": {
             "Cycle730_semantic_gates": EXPECTED_CYCLE730_PADDED_GATES,
             "Cycle731_semantic_gates": structure["semantic_gates"],
@@ -1308,43 +1456,45 @@ def main() -> int:
                 structure["semantic_gates"]
                 / EXPECTED_CYCLE730_PADDED_GATES,
         },
-        "supplied_inventory": (
-            "expected_count=1 is the same declared one-source-token inventory "
-            "line used by Cycles 724/730; counter, increment scratch, "
-            "comparison scratch, and refusal latch start clean."
-        ),
         "claim_boundary": claim_boundary,
         "terminal": (
-            "CYCLE731_TOKEN_COUNT_CERTIFICATE_PASS"
+            "CYCLE731_A_RAIL_COUNTER_COMPARATOR_PASS"
             if all(CHECKS.values())
-            else "CYCLE731_TOKEN_COUNT_CERTIFICATE_HONEST_FAIL"
+            else "CYCLE731_A_RAIL_COUNTER_COMPARATOR_HONEST_FAIL"
         ),
     }
     preliminary = json.dumps(
-        report, sort_keys=True, separators=(",", ":"), default=str
+        semantic_report, sort_keys=True, separators=(",", ":"), default=str
     )
     check(
-        "OUTPUT_stdout_under_150KB",
-        len(preliminary.encode()) + 4096 < STDOUT_LIMIT_BYTES,
+        "OUTPUT_stdout_under_20000_characters",
+        len(preliminary) + 4096 < STDOUT_LIMIT_CHARACTERS,
     )
-    report["checks"] = dict(sorted(CHECKS.items()))
-    report["checks_failed"] = sum(not value for value in CHECKS.values())
-    report["checks_passed"] = sum(CHECKS.values())
-    report["pass"] = all(CHECKS.values())
-    report["terminal"] = (
-        "CYCLE731_TOKEN_COUNT_CERTIFICATE_PASS"
-        if report["pass"]
-        else "CYCLE731_TOKEN_COUNT_CERTIFICATE_HONEST_FAIL"
+    semantic_report["checks"] = dict(sorted(CHECKS.items()))
+    semantic_report["checks_failed"] = sum(
+        not value for value in CHECKS.values()
     )
-    report["report_sha256"] = sha256(
-        json.dumps(report, sort_keys=True, default=str).encode()
+    semantic_report["checks_passed"] = sum(CHECKS.values())
+    semantic_report["pass"] = all(CHECKS.values())
+    semantic_report["terminal"] = (
+        "CYCLE731_A_RAIL_COUNTER_COMPARATOR_PASS"
+        if semantic_report["pass"]
+        else "CYCLE731_A_RAIL_COUNTER_COMPARATOR_HONEST_FAIL"
+    )
+    semantic_json = json.dumps(
+        semantic_report, sort_keys=True, separators=(",", ":"), default=str
+    )
+    report = dict(semantic_report)
+    report["runtime_seconds"] = round(elapsed, 6)
+    report["semantic_report_sha256"] = sha256(
+        semantic_json.encode()
     ).hexdigest()
     final_json = json.dumps(
         report, sort_keys=True, separators=(",", ":"), default=str
     )
     text = "\n".join(OUTPUT_LINES) + "\n" + final_json + "\n"
-    if len(text.encode()) >= STDOUT_LIMIT_BYTES:
-        raise AssertionError(("stdout bound", len(text.encode())))
+    if len(text) >= STDOUT_LIMIT_CHARACTERS:
+        raise AssertionError(("stdout bound", len(text)))
     sys.stdout.write(text)
     return 0 if report["pass"] else 1
 

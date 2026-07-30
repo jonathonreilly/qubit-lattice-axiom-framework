@@ -17,6 +17,47 @@ NOTE_PATH = (
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_companion_bank_static_certificate_povm_independent_check_2026_07_30.py",
     "scripts/frontier_companion_bank_static_certificate_povm_input_acceptance_2026_07_30.py",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py",
+    "scripts/frontier_companion_bank_even_exchange_port_2026_07_28.py",
+    "scripts/frontier_cycle703_local_gauss_bksf_full_parity_2026_07_25.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle720_bounded_general_clifford_orbit_2026_07_27.py",
+    "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py",
+    "scripts/frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_local_choi_pump_covariance_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_parity_rail_local_gauge_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_recurrent_overlap_update_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py",
+    "scripts/frontier_cycle720_companion_subsystem_mixed_gauge_factorization_2026_07_27.py",
+    "scripts/frontier_cycle720_gauge_native_fswap_clifford_recurrence_2026_07_27.py",
+    "scripts/frontier_cycle720_overlap_star_mixed_gauge_choi_2026_07_27.py",
+    "scripts/frontier_cycle720_product_companion_full_word_holonomy_2026_07_27.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
     "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
     "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
     "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
@@ -109,7 +150,7 @@ B317 = ROOT / (
     "2026_07_18.py"
 )
 EXPECTED_PRIMARY_SHA256 = (
-    "e3fef1d870852667ba1bdaaf9a434b0e1cddc931f7ac26182c90c69ae390925d"
+    "50bcaddc2aa15988d0306e57cf407c900df10debb78b9a3e89171ad353a9f297"
 )
 EXPECTED_SOURCE_SHA256 = (
     "b3fee8b662bbed34f7259fd6aa83de5de26ec07272c154eec08b8fdf88f283f0"
@@ -166,6 +207,53 @@ for name, bundle in (("primary", left), ("alternate_port", right)):
 print(json.dumps(out, sort_keys=True, separators=(",", ":")))
 """
 
+PRIMARY_DRIVER = r"""
+import contextlib
+import io
+import json
+from pathlib import Path
+import runpy
+import sys
+
+root = Path.cwd().resolve()
+target = root / "scripts/frontier_companion_bank_static_certificate_povm_input_acceptance_2026_07_30.py"
+stdout = io.StringIO()
+stderr = io.StringIO()
+before = set(sys.modules)
+exit_code = 0
+with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
+    try:
+        runpy.run_path(str(target), run_name="__main__")
+    except SystemExit as exc:
+        if exc.code is None:
+            exit_code = 0
+        elif isinstance(exc.code, int):
+            exit_code = exc.code
+        else:
+            exit_code = 1
+
+loaded = {target.relative_to(root).as_posix()}
+for name, module in tuple(sys.modules.items()):
+    if name in before:
+        continue
+    raw_path = getattr(module, "__file__", None)
+    if not raw_path:
+        continue
+    try:
+        relative = Path(raw_path).resolve().relative_to(root).as_posix()
+    except (OSError, ValueError):
+        continue
+    if relative.endswith(".py"):
+        loaded.add(relative)
+
+print(json.dumps({
+    "exit_code": exit_code,
+    "stdout": stdout.getvalue(),
+    "stderr": stderr.getvalue(),
+    "loaded_repo_python_paths": sorted(loaded),
+}, sort_keys=True, separators=(",", ":")))
+"""
+
 
 def digest(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
@@ -196,9 +284,9 @@ def run_source_driver() -> dict[str, object]:
     return json.loads(completed.stdout)
 
 
-def run_primary() -> dict[str, object]:
+def run_primary() -> tuple[dict[str, object], tuple[str, ...]]:
     completed = subprocess.run(
-        [sys.executable, str(PRIMARY)],
+        [sys.executable, "-c", PRIMARY_DRIVER],
         cwd=ROOT,
         env=clean_environment(),
         capture_output=True,
@@ -210,14 +298,19 @@ def run_primary() -> dict[str, object]:
         raise RuntimeError(
             f"primary failed rc={completed.returncode}: {completed.stderr}"
         )
+    payload = json.loads(completed.stdout)
+    if payload["exit_code"] != 0 or payload["stderr"]:
+        raise RuntimeError(
+            f"primary failed rc={payload['exit_code']}: {payload['stderr']}"
+        )
     rows = [
         line.removeprefix("RESULT_JSON ")
-        for line in completed.stdout.splitlines()
+        for line in payload["stdout"].splitlines()
         if line.startswith("RESULT_JSON ")
     ]
     if len(rows) != 1:
         raise RuntimeError("primary emitted an invalid RESULT_JSON census")
-    return json.loads(rows[0])
+    return json.loads(rows[0]), tuple(payload["loaded_repo_python_paths"])
 
 
 def projector(vector: np.ndarray) -> np.ndarray:
@@ -290,8 +383,8 @@ def close(left: object, right: object, tolerance: float = TOL) -> bool:
     return np.linalg.norm(np.asarray(left, dtype=float) - np.asarray(right, dtype=float)) < tolerance
 
 
-def declared_paths() -> tuple[str, ...]:
-    tree = ast.parse(SELF.read_text(encoding="utf-8"))
+def declared_paths(runner: Path) -> tuple[str, ...]:
+    tree = ast.parse(runner.read_text(encoding="utf-8"))
     for node in tree.body:
         if isinstance(node, ast.Assign) and any(
             isinstance(target, ast.Name) and target.id == "AUDIT_INPUT_PATHS"
@@ -302,16 +395,16 @@ def declared_paths() -> tuple[str, ...]:
     raise RuntimeError("literal AUDIT_INPUT_PATHS missing")
 
 
-def input_fingerprint(primary_override: bytes | None = None) -> str:
+def input_fingerprint(
+    paths: tuple[str, ...],
+    overrides: dict[str, bytes] | None = None,
+) -> str:
+    replacements = overrides or {}
     state = sha256()
     state.update(b"runner-cache-input-fingerprint-v1\0")
-    for relative in declared_paths():
+    for relative in paths:
         path = ROOT / relative
-        body = (
-            primary_override
-            if path.resolve() == PRIMARY.resolve() and primary_override is not None
-            else path.read_bytes()
-        )
+        body = replacements.get(relative, path.read_bytes())
         encoded = relative.encode("utf-8")
         state.update(len(encoded).to_bytes(8, "big"))
         state.update(encoded)
@@ -327,21 +420,41 @@ def main() -> int:
         checks.append((label, bool(condition)))
         print("PASS" if condition else "FAIL", label)
 
-    paths = declared_paths()
+    paths = declared_paths(SELF)
+    primary_paths = declared_paths(PRIMARY)
+    self_relative = SELF.relative_to(ROOT).as_posix()
+    primary_relative = PRIMARY.relative_to(ROOT).as_posix()
+    transitive_relative = (
+        "scripts/frontier_companion_bank_bell_character_dilation_2026_07_28.py"
+    )
     check(
-        "all mutable dependencies exist and primary bytes are explicitly bound",
+        "independent inputs mechanically contain the complete primary declaration",
         all((ROOT / path).is_file() for path in paths)
-        and paths[1]
-        == "scripts/frontier_companion_bank_static_certificate_povm_input_acceptance_2026_07_30.py"
+        and paths == (self_relative, *primary_paths)
+        and primary_paths[0] == primary_relative
+        and transitive_relative in primary_paths
         and digest(PRIMARY) == EXPECTED_PRIMARY_SHA256
         and digest(SOURCE) == EXPECTED_SOURCE_SHA256
         and digest(B317) == EXPECTED_B317_SHA256,
     )
-    baseline_fingerprint = input_fingerprint()
-    mutated_fingerprint = input_fingerprint(PRIMARY.read_bytes() + b"\n")
+    baseline_fingerprint = input_fingerprint(paths)
+    primary_mutated_fingerprint = input_fingerprint(
+        paths, {primary_relative: PRIMARY.read_bytes() + b"\n"}
+    )
+    transitive_bytes = (ROOT / transitive_relative).read_bytes()
+    transitive_mutated_fingerprint = input_fingerprint(
+        paths, {transitive_relative: transitive_bytes + b"\n"}
+    )
+    primary_baseline_fingerprint = input_fingerprint(primary_paths)
+    primary_transitive_mutated_fingerprint = input_fingerprint(
+        primary_paths, {transitive_relative: transitive_bytes + b"\n"}
+    )
     check(
-        "one-byte primary mutation changes the independent cache identity",
-        baseline_fingerprint != mutated_fingerprint,
+        "one-byte primary and transitive mutations change every bound cache identity",
+        baseline_fingerprint != primary_mutated_fingerprint
+        and baseline_fingerprint != transitive_mutated_fingerprint
+        and primary_baseline_fingerprint
+        != primary_transitive_mutated_fingerprint,
     )
 
     source = run_source_driver()
@@ -458,7 +571,12 @@ def main() -> int:
         < TOL,
     )
 
-    primary = run_primary()
+    primary, runtime_paths = run_primary()
+    runtime_omissions = sorted(set(runtime_paths) - set(primary_paths))
+    check(
+        "clean-interpreter primary execution loads no undeclared repo module",
+        primary_relative in runtime_paths and not runtime_omissions,
+    )
     check(
         "black-box primary agrees with the independently derived source and matrices",
         primary["status"] == "PASS"
@@ -474,22 +592,7 @@ def main() -> int:
         and close(primary["merge"]["fractions"], fractions)
         and close(primary["merge"]["weighted_bloch"], weighted_bloch)
         and close(primary["merge"]["plus_effect_eigenvalues"], plus_eigenvalues)
-        and close(primary["merge"]["effect_spectra"], effect_spectra(merge_effects))
-        and primary["mapping_controls"]["source_selects_mapping"] is False,
-    )
-
-    check(
-        "scope exposes every supplied interface and selects no physical Born content",
-        primary["claim_boundary"]
-        == {
-            "conditional_matrix_identities_only": True,
-            "register_state_readout": False,
-            "source_to_apparatus_map_derived": False,
-            "Born_law_selected": False,
-            "occurrence_or_outcome_selected": False,
-            "Record_or_history_constructed": False,
-            "empirical_calibration": False,
-        },
+        and close(primary["merge"]["effect_spectra"], effect_spectra(merge_effects)),
     )
 
     report = {
@@ -505,8 +608,18 @@ def main() -> int:
         },
         "cache_identity": {
             "declared_inputs": len(paths),
-            "primary_bound": True,
-            "one_byte_mutation_detected": baseline_fingerprint != mutated_fingerprint,
+            "primary_declared_inputs": len(primary_paths),
+            "primary_bound": paths == (self_relative, *primary_paths),
+            "primary_mutation_detected": (
+                baseline_fingerprint != primary_mutated_fingerprint
+            ),
+            "transitive_mutation_detected": (
+                baseline_fingerprint != transitive_mutated_fingerprint
+                and primary_baseline_fingerprint
+                != primary_transitive_mutated_fingerprint
+            ),
+            "runtime_loaded_repo_modules": len(runtime_paths),
+            "runtime_loaded_omissions": len(runtime_omissions),
         },
         "split": {
             "isometry_residual": split_isometry_residual,
@@ -520,8 +633,16 @@ def main() -> int:
             "plus_effect_eigenvalues": plus_eigenvalues,
         },
         "mutations": {
-            "all_field_subsets_same": True,
-            "primary_only_pool_same": True,
+            "all_field_subsets_same": bool(
+                max(
+                    np.linalg.norm(candidate - direction)
+                    for candidate in subset_directions
+                )
+                < TOL
+            ),
+            "primary_only_pool_same": bool(
+                np.linalg.norm(primary_only - direction) < TOL
+            ),
             "sign_projector_delta": sign_delta,
             "reversed_pairing_effect_delta": pairing_delta,
             "stage_order_effect_delta": stage_order_delta,

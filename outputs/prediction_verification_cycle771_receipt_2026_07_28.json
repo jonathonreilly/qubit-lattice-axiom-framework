@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle771_prediction_independent_check_2026_07_28.txt": "340b42797bc5162c837ed3daef1842c592fd9f7ed7dbb26c0eb0d672c468c568",
+      "frontier_cycle771_prediction_verification_2026_07_28.txt": "eb16087938ecd8fe0d6b88e97b04e3aa8930486330c41df7fc50eeb4de987cf4"
+    },
+    "note": {
+      "path": "docs/PREDICTION_VERIFICATION_CYCLE771_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "514f768b84b17fd1f54bb605349d03430d9df0235b3c95591a1f4ed022172018"
+    },
+    "runners": {
+      "frontier_cycle771_prediction_independent_check_2026_07_28.py": "e42b979f9e6612b8e20de0e22a9b7f530ae3648080e46eaee01cabfb9ee2932b",
+      "frontier_cycle771_prediction_verification_2026_07_28.py": "6e668efc97a276ce9b0b442cbf7f9eda32c2aa6c722b6f562c5ca4046a4b7ba1"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "convention": "unnormalized column mixture (the 768 probe's implicit choice, made explicit)",
+    "fixed_supplies": "the frozen kernel/prediction (comparator extraction only); everything Cycle-320/322/749/768 declare",
+    "not_derived": "the response-law title; the no-refit attachment; the interference-sector behavior (the named next experiment)",
+    "outcome": "PREDICTION_VERIFIED_WEAK_SECTOR",
+    "verification": "direct firewalled simulation on the landed vertex returns ((-2,-2,0),(1,1,0),(1,1,0)) exactly; all three channel pairs match the kernel composition (checker census)",
+    "weakening": "the configuration is exactly block-additive (supports (1,1), overlap 0, zero interference) \u2014 the test exercises additivity only; the normalized coherent variant mismatches (half-sized rows), naming the composition convention as supplied"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 5,
+    "primary_named_checks_passed": 7
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 771,
+  "date": "2026-07-29",
+  "result": {
+    "coherent_variant": "mismatch (convention-dependence)",
+    "pairs": "3/3 match",
+    "sector": "block-additive (weak test)",
+    "verdict": "VERIFIED"
+  },
+  "status": "CYCLE771_PREDICTION_VERIFICATION_PASS"
+}

@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle771_prediction_verification_2026_07_28.py
+runner_sha256: 6e668efc97a276ce9b0b442cbf7f9eda32c2aa6c722b6f562c5ca4046a4b7ba1
+input_fingerprint_sha256: ccacfbb9fd83f2b249499e0ea0259515f748f24be23abced19d78ad4d672bf2a
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 0.37
+status: ok
+----- stdout -----
+frozen_configuration: [[-2, -2, 0], [1, 1, 0], [1, 1, 0]]
+frozen_prediction: [[-2, -2, 0], [1, 1, 0], [1, 1, 0]]
+frozen_channel_pair: [0, 2]
+PASS A landed SHA anchors unchanged; Cycle-768 blocklisted text/AST only :: {"audit_input_paths":["scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py","scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py"],"blocklist_after":{"frontier_cycle768_response_law_candidate_2026_07_28":false},"blocklist_before":{"frontier_cycle768_response_law_candidate_2026_07_28":false},"comparator_extraction":{"blocklisted_module":"frontier_cycle768_response_law_candidate_2026_07_28","extracted_functions":["fraction_text","vector_tuple","recoil_configuration","extension_probe"],"frozen_recoil_coefficient":1,"mode":"text/AST comparator extraction only","module_imported":false},"sha256":{"scripts/frontier_cycle768_response_law_candidate_2026_07_28.py":"7c8771e9494a8ed3eea6f6519b2e29d655123c96b98e0295b5300c1320570c32","scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py":"4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75","scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py":"71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706"}}
+PASS B simulation-path AST firewall :: {"evaluation_functions":["evaluate_channels","probability_fraction"],"forbidden_references":[],"literal_value_overlap":[],"numeric_literals":[],"passed":true}
+PASS C defining-row calibration reproduces landed row :: {"channel":0,"landed_row":[[-2,0,0],[1,0,0],[1,0,0]],"simulated_row":[[-2,0,0],[1,0,0],[1,0,0]],"transfer_weights":["2267998651374051/18014398509481984"]}
+PASS D comparison verdict VERIFIED :: {"channel_pair":[0,2],"diff":[{"component":"matter_recoil","entry_diff":[0,0,0],"frozen_prediction":[-2,-2,0],"match":true,"simulated":[-2,-2,0]},{"component":"mediator_flux","entry_diff":[0,0,0],"frozen_prediction":[1,1,0],"match":true,"simulated":[1,1,0]},{"component":"auxiliary_flux","entry_diff":[0,0,0],"frozen_prediction":[1,1,0],"match":true,"simulated":[1,1,0]}],"frozen_prediction":[[-2,-2,0],[1,1,0],[1,1,0]],"simulated_rows":[[-2,-2,0],[1,1,0],[1,1,0]]}
+PASS E perturbation control and determinism :: {"deterministic":true,"perturbation_does_not_match":true,"perturbed_channel_pair":[0,3],"perturbed_rows":[[-2,2,0],[1,-1,0],[1,-1,0]]}
+PASS E C_source firewall declarations are verbatim landed text :: {"C_source":["No physical momentum, work, energy, stress, or gravity meaning is assigned.","dimensionless direction/flux only; not physical momentum, work, energy, stress, gravity, or metric","The result is a bounded common-code response/reciprocity proxy, not physical energy, stress, gravity, metric, or time.","finite occupation response only; not energy, stress, gravity, metric, force, or time"]}
+prediction_verified: true
+response_law_established: false
+w7_closed: false
+PASS E runtime and stdout bounds :: {"runtime_limit_sec":1500,"runtime_sec":0.020859000011114404,"stdout_limit_bytes":150000,"stdout_projected_bytes":8649}
+{"audit_input_paths":["scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py","scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py"],"certificate_A":{"blocklisted_text_ast_only":true,"sha256":{"scripts/frontier_cycle768_response_law_candidate_2026_07_28.py":"7c8771e9494a8ed3eea6f6519b2e29d655123c96b98e0295b5300c1320570c32","scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py":"4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75","scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py":"71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706"}},"certificate_B":{"evaluation_functions":["evaluate_channels","probability_fraction"],"forbidden_references":[],"literal_value_overlap":[],"numeric_literals":[],"passed":true},"certificate_C":{"landed_row":[[-2,0,0],[1,0,0],[1,0,0]],"passed":true,"simulated_row":[[-2,0,0],[1,0,0],[1,0,0]]},"certificate_D":{"diff":[{"component":"matter_recoil","entry_diff":[0,0,0],"frozen_prediction":[-2,-2,0],"match":true,"simulated":[-2,-2,0]},{"component":"mediator_flux","entry_diff":[0,0,0],"frozen_prediction":[1,1,0],"match":true,"simulated":[1,1,0]},{"component":"auxiliary_flux","entry_diff":[0,0,0],"frozen_prediction":[1,1,0],"match":true,"simulated":[1,1,0]}],"prediction":[[-2,-2,0],[1,1,0],[1,1,0]],"prediction_verified":true,"simulated_rows":[[-2,-2,0],[1,1,0],[1,1,0]],"verdict":"VERIFIED"},"certificate_E":{"deterministic":true,"perturbation_passed":true,"runtime_sec":0.020896750007523224},"fail":0,"no_refit":true,"pass":7,"prediction_verified":true,"response_law_established":false,"runtime_sec":0.020896750007523224,"w7_closed":false}
+
+----- stderr -----
+

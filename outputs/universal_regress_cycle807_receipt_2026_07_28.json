@@ -1,0 +1,34 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR12-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle807_regress_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 9
+    },
+    "logs/runner-cache/frontier_cycle807_universal_regress_theorem_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 807,
+  "files": {
+    "docs/UNIVERSAL_REGRESS_CYCLE807_BOUNDED_THEOREM_NOTE_2026-07-28.md": "94327b5203387e1da31b29a6eb7ccda3d54985d0c0200ef8ed82b1b3631e622d",
+    "logs/runner-cache/frontier_cycle807_regress_independent_check_2026_07_28.txt": "4d03d1c7cfdc85419c2a8d5ddcbe4a480b9faab83aa2360ae0618a3ef9cbf468",
+    "logs/runner-cache/frontier_cycle807_universal_regress_theorem_2026_07_28.txt": "5a92d0178b809083e03a07ab2cc3ce1cf829d06c9265b721a2e7ec901606d5ef",
+    "scripts/frontier_cycle807_regress_independent_check_2026_07_28.py": "f85f234b6daafbdf06ae08d7328eca6cc4d2e251560d5df34e91333d21a8df76",
+    "scripts/frontier_cycle807_universal_regress_theorem_2026_07_28.py": "3c73a802e3f38b8a90f79de0eaef2164df7c5521847afffac2c88300f555e8ce"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "four finite guard schemas (RAIL777, SINGLE_N, MAJORITY3_N, REFRESH_N); no recursive constructor in 777/781 lineage",
+    "algebraic defeaters valid for all N; checker verified at 3 params/schema; one-layer steps 3/3",
+    "checker repo-wide search (5,435 modules): three word wrappers (723/724) exist, NONE closes the guard grammar \u2014 lineage-scoped claim survives; repo-wide claim would be false"
+  ],
+  "verdicts": [
+    "OPEN_EXACT_GAP (family-total algebraic defeat; universal not formulable at lineage scope)",
+    "checker CONFIRMED at pinned scope"
+  ]
+}

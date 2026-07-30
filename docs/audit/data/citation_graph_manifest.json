@@ -1,6 +1,6 @@
 {
- "edge_count": 15219,
- "node_count": 4575,
+ "edge_count": 15225,
+ "node_count": 4576,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13301,6 +13301,10 @@
   "sommer_scale_from_wilson_chain_partial_note_2026-05-10_sommer": {
    "deps_hash": "16174e82c177",
    "out_degree": 13
+  },
+  "source_acceptance_harness_support_note_2026-07-28": {
+   "deps_hash": "60dbe33abca2",
+   "out_degree": 6
   },
   "source_driven_field_recovery_h025_pocket_note": {
    "deps_hash": "e3b0c44298fc",

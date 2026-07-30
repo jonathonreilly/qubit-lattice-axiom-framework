@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Independent, data-only adversary for the frozen source-acceptance harness."""
+"""Independent data/behavior adversary for the source-acceptance tool."""
+
+from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = "docs/SOURCE_ACCEPTANCE_HARNESS_SUPPORT_NOTE_2026-07-28.md"
@@ -7,9 +9,52 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_source_acceptance_harness_2026_07_28.py",
     "scripts/signed_gravity_oriented_tensor_source_lift.py",
     "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
+    "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py",
+    "docs/SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_NOTE.md",
+    "docs/work_history/repo/review_feedback/DIRECT_GATEWISE_MATTER_MEDIATOR_CURRENT_LEDGER_ROUTE_A_CYCLE293_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/GRAVITY_ROUTE_C_BOUNDED_DIRECT_CURRENT_SEARCH_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/LOCAL_M2_MASS_SCALAR_DEFORMATION_RESPONSE_ROUTE_B_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_OVERLAP_AWARE_TWO_CELL_CYCLE315_NOTE_2026-07-18.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_M2_GRAVITY_SOURCE_BRIDGE_TOURNAMENT_SYNTHESIS_CYCLE294_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/PROPER_CUBIC_RECOIL_BALANCED_CARRIED_SOURCE_CYCLE318_NOTE_2026-07-18.md",
+    "docs/work_history/repo/review_feedback/TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CYCLE322_NOTE_2026-07-18.md",
+    "docs/work_history/repo/review_feedback/UNIT_WEIGHT_CARRIED_LINK_RECOIL_CYCLE320_NOTE_2026-07-18.md",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/carried_internal_species_source_field_ledger_repair_2026_07_17.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/connected_edge_same_code_local_instrument_cycle278_2026_07_17.py",
+    "scripts/contractible_lightcone_wilson_quotient_cycle271_2026_07_17.py",
+    "scripts/direct_gatewise_matter_mediator_current_ledger_route_a_cycle293_2026_07_17.py",
+    "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/gravity_route_c_bounded_direct_current_search_2026_07_17.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/local_m2_mass_scalar_deformation_response_route_b_2026_07_17.py",
+    "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py",
+    "scripts/locally_matched_wilson_sector_states_cycle275_2026_07_17.py",
+    "scripts/numpy_replay_bootstrap.py",
+    "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+    "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+    "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+    "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+    "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py",
+    "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+    "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/signed_gravity_source_character_uniqueness_theorem.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+    "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py",
 )
+DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
 import ast
+import copy
 from contextlib import redirect_stdout
 import hashlib
 import io
@@ -17,6 +62,7 @@ import json
 import math
 from pathlib import Path
 import re
+import subprocess
 import sys
 import time
 from typing import Any
@@ -34,13 +80,17 @@ assert HARNESS_MODULE not in sys.modules
 
 
 ROOT = Path(__file__).resolve().parents[1]
+HARNESS_PATH = AUDIT_INPUT_PATHS[0]
+TENSOR_PATH = AUDIT_INPUT_PATHS[1]
+RECOIL_PATH = AUDIT_INPUT_PATHS[2]
+BRIDGE_PATH = AUDIT_INPUT_PATHS[3]
 START = time.monotonic()
 PASS_COUNT = 0
 FAIL_COUNT = 0
 
 
 class ExtractionError(RuntimeError):
-    """The frozen surface was not representable as inert literal data."""
+    """The reviewed surface was not representable as inert literal data."""
 
 
 def _jsonable(value: Any) -> Any:
@@ -57,6 +107,28 @@ def _jsonable(value: Any) -> Any:
     raise TypeError(f"not JSONable: {type(value).__name__}")
 
 
+def _finite_data(value: Any) -> bool:
+    if isinstance(value, bool) or value is None or isinstance(value, str):
+        return True
+    if isinstance(value, int):
+        return True
+    if isinstance(value, float):
+        return math.isfinite(value)
+    if isinstance(value, np.generic):
+        return _finite_data(value.item())
+    if isinstance(value, np.ndarray):
+        return bool(
+            np.issubdtype(value.dtype, np.number)
+            and not np.issubdtype(value.dtype, np.complexfloating)
+            and np.all(np.isfinite(value))
+        )
+    if isinstance(value, dict):
+        return all(_finite_data(key) and _finite_data(item) for key, item in value.items())
+    if isinstance(value, (tuple, list)):
+        return all(_finite_data(item) for item in value)
+    return False
+
+
 def _digest(value: Any) -> str:
     payload = json.dumps(
         _jsonable(value), sort_keys=True, separators=(",", ":"), allow_nan=False
@@ -64,8 +136,8 @@ def _digest(value: Any) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
-def _sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+def _sha256(path: str) -> str:
+    return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
 
 
 def _check(label: str, condition: bool, detail: Any) -> bool:
@@ -76,16 +148,32 @@ def _check(label: str, condition: bool, detail: Any) -> bool:
     else:
         FAIL_COUNT += 1
         status = "FAIL"
-    rendered = json.dumps(_jsonable(detail), sort_keys=True, allow_nan=False)
-    print(f"{status} {label} :: {rendered}")
+    print(
+        f"{status} {label} :: "
+        f"{json.dumps(_jsonable(detail), sort_keys=True, allow_nan=False)}"
+    )
     return condition
 
 
-def _safe_data(
-    node: ast.AST, names: dict[str, Any], local_names: dict[str, Any] | None = None
-) -> Any:
-    """Evaluate only the small literal-data grammar used by frozen records."""
+def _assignments(tree: ast.Module) -> dict[str, ast.AST]:
+    rows: dict[str, ast.AST] = {}
+    for node in tree.body:
+        if (
+            isinstance(node, ast.Assign)
+            and len(node.targets) == 1
+            and isinstance(node.targets[0], ast.Name)
+        ):
+            rows[node.targets[0].id] = node.value
+        elif isinstance(node, ast.AnnAssign) and isinstance(node.target, ast.Name):
+            rows[node.target.id] = node.value
+    return rows
 
+
+def _safe_data(
+    node: ast.AST,
+    names: dict[str, Any],
+    local_names: dict[str, Any] | None = None,
+) -> Any:
     local_names = {} if local_names is None else local_names
     if isinstance(node, ast.Constant):
         return node.value
@@ -101,7 +189,9 @@ def _safe_data(
         return [_safe_data(item, names, local_names) for item in node.elts]
     if isinstance(node, ast.Dict):
         return {
-            _safe_data(key, names, local_names): _safe_data(value, names, local_names)
+            _safe_data(key, names, local_names): _safe_data(
+                value, names, local_names
+            )
             for key, value in zip(node.keys, node.values)
         }
     if isinstance(node, ast.UnaryOp) and isinstance(node.op, (ast.UAdd, ast.USub)):
@@ -109,25 +199,25 @@ def _safe_data(
         if not isinstance(value, (int, float)):
             raise ExtractionError("unary sign applied to non-number")
         return value if isinstance(node.op, ast.UAdd) else -value
-    if isinstance(node, ast.Call):
-        if (
-            isinstance(node.func, ast.Name)
-            and node.func.id == "dict"
-            and len(node.args) == 1
-            and not node.keywords
-        ):
-            return dict(_safe_data(node.args[0], names, local_names))
-        raise ExtractionError(f"non-data call {ast.unparse(node)}")
-    if isinstance(node, ast.ListComp):
-        if len(node.generators) != 1:
-            raise ExtractionError("only one-clause literal list comprehensions allowed")
+    if (
+        isinstance(node, ast.BinOp)
+        and isinstance(node.op, ast.Mult)
+        and isinstance(node.left, ast.Constant)
+        and isinstance(node.right, ast.Constant)
+    ):
+        return node.left.value * node.right.value
+    if (
+        isinstance(node, ast.Call)
+        and isinstance(node.func, ast.Name)
+        and node.func.id == "dict"
+        and len(node.args) == 1
+        and not node.keywords
+    ):
+        return dict(_safe_data(node.args[0], names, local_names))
+    if isinstance(node, ast.ListComp) and len(node.generators) == 1:
         clause = node.generators[0]
-        if (
-            clause.is_async
-            or clause.ifs
-            or not isinstance(clause.target, ast.Name)
-        ):
-            raise ExtractionError("non-literal list-comprehension clause")
+        if clause.is_async or clause.ifs or not isinstance(clause.target, ast.Name):
+            raise ExtractionError("non-literal list comprehension")
         rows = []
         for item in _safe_data(clause.iter, names, local_names):
             nested = dict(local_names)
@@ -137,32 +227,17 @@ def _safe_data(
     raise ExtractionError(f"non-data AST node {type(node).__name__}")
 
 
-def _assignment_nodes(tree: ast.Module) -> dict[str, ast.AST]:
-    assignments: dict[str, ast.AST] = {}
-    for node in tree.body:
-        if isinstance(node, ast.Assign) and len(node.targets) == 1:
-            target = node.targets[0]
-            if isinstance(target, ast.Name):
-                assignments[target.id] = node.value
-        elif isinstance(node, ast.AnnAssign) and isinstance(node.target, ast.Name):
-            assignments[node.target.id] = node.value
-    return assignments
-
-
-def _extract_named_data(
-    tree: ast.Module, wanted: tuple[str, ...]
-) -> dict[str, Any]:
-    assignments = _assignment_nodes(tree)
+def _extract_named(tree: ast.Module, wanted: tuple[str, ...]) -> dict[str, Any]:
+    nodes = _assignments(tree)
     values: dict[str, Any] = {}
     pending = set(wanted)
     while pending:
         progressed = False
         for name in tuple(pending):
-            node = assignments.get(name)
-            if node is None:
-                raise ExtractionError(f"missing frozen assignment {name}")
+            if name not in nodes:
+                raise ExtractionError(f"missing assignment {name}")
             try:
-                values[name] = _safe_data(node, values)
+                values[name] = _safe_data(nodes[name], values)
             except ExtractionError as exc:
                 if "unresolved data name" in str(exc):
                     continue
@@ -170,12 +245,15 @@ def _extract_named_data(
             pending.remove(name)
             progressed = True
         if not progressed:
-            unresolved = ", ".join(sorted(pending))
-            raise ExtractionError(f"cyclic or unresolved frozen data: {unresolved}")
+            raise ExtractionError(
+                "cyclic/unresolved assignments: " + ", ".join(sorted(pending))
+            )
     return values
 
 
-def _class_method(tree: ast.Module, class_name: str, method_name: str) -> ast.FunctionDef:
+def _class_method(
+    tree: ast.Module, class_name: str, method_name: str
+) -> ast.FunctionDef:
     for node in tree.body:
         if isinstance(node, ast.ClassDef) and node.name == class_name:
             for member in node.body:
@@ -192,7 +270,7 @@ def _function(tree: ast.Module, name: str) -> ast.FunctionDef:
 
 
 def _accepted_expression(verdict: ast.FunctionDef) -> ast.AST:
-    for node in verdict.body:
+    for node in ast.walk(verdict):
         if (
             isinstance(node, ast.Assign)
             and len(node.targets) == 1
@@ -201,45 +279,6 @@ def _accepted_expression(verdict: ast.FunctionDef) -> ast.AST:
         ):
             return node.value
     raise ExtractionError("tensor verdict has no accepted expression")
-
-
-def _return_expression(function: ast.FunctionDef) -> ast.AST:
-    returns = [
-        node.value
-        for node in function.body
-        if isinstance(node, ast.Return) and node.value is not None
-    ]
-    if len(returns) != 1:
-        raise ExtractionError(
-            f"{function.name} does not have one top-level return expression"
-        )
-    return returns[0]
-
-
-def _corrupted_vector_length(tree: ast.Module) -> int:
-    main = _function(tree, "main")
-    for node in ast.walk(main):
-        if (
-            isinstance(node, ast.Assign)
-            and len(node.targets) == 1
-            and isinstance(node.targets[0], ast.Name)
-            and node.targets[0].id == "corrupted_tensor_record"
-            and isinstance(node.value, ast.Call)
-            and node.value.args
-        ):
-            vector_call = node.value.args[0]
-            if (
-                isinstance(vector_call, ast.Call)
-                and isinstance(vector_call.func, ast.Attribute)
-                and isinstance(vector_call.func.value, ast.Name)
-                and vector_call.func.value.id == "np"
-                and vector_call.func.attr == "zeros"
-                and vector_call.args
-            ):
-                length = ast.literal_eval(vector_call.args[0])
-                if isinstance(length, int) and length > 0:
-                    return length
-    raise ExtractionError("harness corrupted vector is not a literal np.zeros call")
 
 
 def _operator_name(operator: ast.cmpop) -> str:
@@ -257,154 +296,148 @@ def _operator_name(operator: ast.cmpop) -> str:
     raise ExtractionError(f"unsupported comparison {type(operator).__name__}")
 
 
-def _resolved_number(node: ast.AST, s1_tol: float) -> float | None:
-    if isinstance(node, ast.Constant) and isinstance(node.value, (int, float)):
-        return float(node.value)
-    if isinstance(node, ast.Name) and node.id == "TOL":
-        return float(s1_tol)
-    if (
-        isinstance(node, ast.Attribute)
-        and isinstance(node.value, ast.Name)
-        and node.value.id == "S1"
-        and node.attr == "TOL"
-    ):
-        return float(s1_tol)
-    return None
-
-
-def _comparison_rows(expression: ast.AST, s1_tol: float) -> list[dict[str, Any]]:
+def _predicate_spec(expression: ast.AST) -> tuple[tuple[str, str, str], ...]:
     rows = []
     for node in ast.walk(expression):
         if isinstance(node, ast.Compare) and len(node.ops) == len(node.comparators) == 1:
             rows.append(
-                {
-                    "left": ast.unparse(node.left),
-                    "operator": _operator_name(node.ops[0]),
-                    "right": ast.unparse(node.comparators[0]),
-                    "number": _resolved_number(node.comparators[0], s1_tol),
-                }
+                (
+                    ast.unparse(node.left),
+                    _operator_name(node.ops[0]),
+                    ast.unparse(node.comparators[0]),
+                )
             )
+    return tuple(sorted(rows))
+
+
+EXPECTED_TENSOR_PREDICATES = tuple(
+    sorted(
+        (
+            (
+                "projector['ranks']",
+                "==",
+                "frozen['projector_algebra']['values']['ranks']",
+            ),
+            ("value", ">", "0.05"),
+            ("twist['twist_residual']", "<", "S1.TOL"),
+            ("max(ward['residuals'])", "<", "1e-10"),
+            ("ward['source_null_residual']", "<", "S1.TOL"),
+            ("locking['field_flip_residual']", "<", "S1.TOL"),
+            ("locking['field_null_residual']", "<", "S1.TOL"),
+            ("locking['positive_self']", ">", "0.0"),
+            ("locking['locking_signs']", "==", "expected_signs"),
+            ("scalar['complement_norm']", "<", "S1.TOL"),
+            ("carrier['tensor_source_blocks']['shift']", ">", "0.05"),
+            ("carrier['tensor_source_blocks']['shear']", ">", "0.05"),
+            ("carrier['chi_only_blocks']['shift']", "==", "0.0"),
+            ("carrier['chi_only_blocks']['shear']", "==", "0.0"),
+            ("no_claim", "==", "frozen['no_claim']['values']"),
+        )
+    )
+)
+
+
+def _extract_bridge_routes(tree: ast.Module) -> list[dict[str, Any]]:
+    node = _assignments(tree).get("ROUTES")
+    if not isinstance(node, (ast.Tuple, ast.List)):
+        raise ExtractionError("Cycle-294 ROUTES is not a literal container")
+    rows = []
+    for item in node.elts:
+        if not isinstance(item, (ast.Tuple, ast.List)) or len(item.elts) != 4:
+            raise ExtractionError("Cycle-294 ROUTES row is malformed")
+        route_node, path_node, pass_node, pattern_node = item.elts
+        paths = [
+            child.value
+            for child in ast.walk(path_node)
+            if isinstance(child, ast.Constant)
+            and isinstance(child.value, str)
+            and child.value.endswith(".py")
+        ]
+        if len(paths) != 1:
+            raise ExtractionError("Cycle-294 route path is not unique")
+        if (
+            not isinstance(pattern_node, ast.Call)
+            or not pattern_node.args
+            or not isinstance(pattern_node.args[0], ast.Constant)
+        ):
+            raise ExtractionError("Cycle-294 route regex is not literal")
+        rows.append(
+            {
+                "route": ast.literal_eval(route_node),
+                "script": paths[0],
+                "expected_pass": ast.literal_eval(pass_node),
+                "pattern": pattern_node.args[0].value,
+            }
+        )
     return rows
 
 
-def _threshold(
-    rows: list[dict[str, Any]], left: str, operator: str
-) -> float:
-    matches = [
-        row["number"]
-        for row in rows
-        if row["left"] == left
-        and row["operator"] == operator
-        and row["number"] is not None
-    ]
-    if len(matches) != 1:
-        raise ExtractionError(
-            f"expected one threshold for {left} {operator}, got {matches}"
-        )
-    return float(matches[0])
-
-
-def _threshold_spec(rows: list[dict[str, Any]]) -> dict[str, float]:
-    return {
-        "block_nonnegative": _threshold(
-            rows, "max(twist['block_norms'].values())", ">="
-        ),
-        "block_floor": _threshold(rows, "value", ">"),
-        "twist_residual": _threshold(rows, "twist['twist_residual']", "<"),
-        "ward_max": _threshold(rows, "max(ward['residuals'])", "<"),
-        "ward_null": _threshold(rows, "ward['residuals'][2]", "<"),
-        "field_flip": _threshold(rows, "locking['field_flip_residual']", "<"),
-        "field_null": _threshold(rows, "locking['field_null_residual']", "<"),
-        "positive_self": _threshold(rows, "locking['positive_self']", ">"),
-        "scalar_complement": _threshold(rows, "scalar['complement_norm']", "<"),
-        "carrier_shift": _threshold(
-            rows, "carrier['tensor_source_blocks']['shift']", ">"
-        ),
-        "carrier_shear": _threshold(
-            rows, "carrier['tensor_source_blocks']['shear']", ">"
-        ),
-        "chi_shift": _threshold(rows, "carrier['chi_only_blocks']['shift']", "=="),
-        "chi_shear": _threshold(rows, "carrier['chi_only_blocks']['shear']", "=="),
-    }
-
-
-def _extract_claims(s1_tree: ast.Module) -> dict[str, bool]:
-    gate = _function(s1_tree, "no_claim_gate")
-    for node in gate.body:
-        if (
-            isinstance(node, ast.Assign)
-            and len(node.targets) == 1
-            and isinstance(node.targets[0], ast.Name)
-            and node.targets[0].id == "claims"
-        ):
-            claims = ast.literal_eval(node.value)
-            if not isinstance(claims, dict):
-                break
-            return claims
-    raise ExtractionError("S1 no_claim_gate claims are not literal data")
-
-
 def frozen_extraction() -> dict[str, Any]:
-    harness_path = ROOT / AUDIT_INPUT_PATHS[0]
-    s1_path = ROOT / AUDIT_INPUT_PATHS[1]
-    s2_path = ROOT / AUDIT_INPUT_PATHS[2]
-    harness_tree = ast.parse(
-        harness_path.read_text(encoding="utf-8"), filename=AUDIT_INPUT_PATHS[0]
-    )
-    s1_tree = ast.parse(
-        s1_path.read_text(encoding="utf-8"), filename=AUDIT_INPUT_PATHS[1]
-    )
-    s2_tree = ast.parse(
-        s2_path.read_text(encoding="utf-8"), filename=AUDIT_INPUT_PATHS[2]
-    )
-
+    trees = {
+        "harness": ast.parse(
+            (ROOT / HARNESS_PATH).read_text(encoding="utf-8"),
+            filename=HARNESS_PATH,
+        ),
+        "tensor": ast.parse(
+            (ROOT / TENSOR_PATH).read_text(encoding="utf-8"),
+            filename=TENSOR_PATH,
+        ),
+        "recoil": ast.parse(
+            (ROOT / RECOIL_PATH).read_text(encoding="utf-8"),
+            filename=RECOIL_PATH,
+        ),
+        "bridge": ast.parse(
+            (ROOT / BRIDGE_PATH).read_text(encoding="utf-8"),
+            filename=BRIDGE_PATH,
+        ),
+    }
     wanted = (
         "TENSOR_LIFT_SHA256",
         "RECOIL_RECIPROCITY_SHA256",
+        "TYPED_BRIDGE_SHA256",
         "TENSOR_FROZEN_EXPECTED",
         "RECOIL_OUTCOME_LABELS",
         "RECOIL_FIXTURE_INVARIANTS",
         "RECOIL_FROZEN_EXPECTED",
+        "RECOIL_SWAP_FLIPPED_LABELS",
+        "BRIDGE_CONTRACT_ROWS",
+        "BRIDGE_OUTCOME_LABELS",
+        "BRIDGE_FROZEN_EXPECTED",
     )
-    frozen = _extract_named_data(harness_tree, wanted)
-    s1_data = _extract_named_data(s1_tree, ("TOL",))
-    verdict = _class_method(harness_tree, "TensorLiftAcceptance", "verdict")
-    drift_logic = _class_method(
-        harness_tree, "_PinnedAcceptance", "_record_is_drifted"
-    )
-    flipped_logic = _function(harness_tree, "_flipped_labels")
-    accepted = _accepted_expression(verdict)
-    flip_expression = _return_expression(flipped_logic)
-    corrupted_length = _corrupted_vector_length(harness_tree)
-    comparison_rows = _comparison_rows(accepted, float(s1_data["TOL"]))
-    thresholds = _threshold_spec(comparison_rows)
+    values = _extract_named(trees["harness"], wanted)
     actual_pins = {
-        "tensor_lift": _sha256(s1_path),
-        "recoil": _sha256(s2_path),
+        "tensor_lift": _sha256(TENSOR_PATH),
+        "recoil": _sha256(RECOIL_PATH),
+        "typed_bridge": _sha256(BRIDGE_PATH),
     }
     expected_pins = {
-        "tensor_lift": frozen["TENSOR_LIFT_SHA256"],
-        "recoil": frozen["RECOIL_RECIPROCITY_SHA256"],
+        "tensor_lift": values["TENSOR_LIFT_SHA256"],
+        "recoil": values["RECOIL_RECIPROCITY_SHA256"],
+        "typed_bridge": values["TYPED_BRIDGE_SHA256"],
     }
     records = {
-        "tensor_lift": frozen["TENSOR_FROZEN_EXPECTED"],
-        "recoil": frozen["RECOIL_FROZEN_EXPECTED"],
+        "tensor_lift": values["TENSOR_FROZEN_EXPECTED"],
+        "recoil": values["RECOIL_FROZEN_EXPECTED"],
+        "typed_bridge": values["BRIDGE_FROZEN_EXPECTED"],
     }
-    digests = {name: _digest(record) for name, record in records.items()}
-    pin_agreement = (
-        actual_pins == expected_pins
-        and records["tensor_lift"]["source_sha256"] == actual_pins["tensor_lift"]
-        and records["recoil"]["source_sha256"] == actual_pins["recoil"]
+    verdict = _class_method(
+        trees["harness"], "TensorLiftAcceptance", "verdict"
     )
-    logic_digest = hashlib.sha256(
-        "\n".join(
-            ast.dump(node, include_attributes=False)
-            for node in (verdict, drift_logic, flipped_logic)
-        ).encode("utf-8")
-    ).hexdigest()
+    predicate_spec = _predicate_spec(_accepted_expression(verdict))
+    bridge_rows = _extract_bridge_routes(trees["bridge"])
+    condition = (
+        actual_pins == expected_pins
+        and all(
+            records[name]["source_sha256"] == actual_pins[name]
+            for name in records
+        )
+        and bridge_rows == records["typed_bridge"]["contract_rows"]
+        and predicate_spec == EXPECTED_TENSOR_PREDICATES
+        and HARNESS_MODULE not in sys.modules
+    )
     _check(
         "frozen_extraction",
-        pin_agreement and HARNESS_MODULE not in sys.modules,
+        condition,
         {
             "pins": {
                 name: {
@@ -414,40 +447,31 @@ def frozen_extraction() -> dict[str, Any]:
                 }
                 for name in expected_pins
             },
-            "frozen_record_digests": digests,
-            "tensor_verdict_logic_digest": logic_digest,
-            "corrupted_vector_length": corrupted_length,
-            "thresholds": thresholds,
+            "frozen_record_digests": {
+                name: _digest(record) for name, record in records.items()
+            },
+            "typed_bridge_contract_rows": bridge_rows,
+            "tensor_predicates": predicate_spec,
         },
     )
     return {
-        "harness_tree": harness_tree,
-        "s1_tree": s1_tree,
-        "s2_tree": s2_tree,
+        "trees": trees,
+        "values": values,
         "records": records,
-        "digests": digests,
         "actual_pins": actual_pins,
         "expected_pins": expected_pins,
-        "accepted_expression": accepted,
-        "flip_expression": flip_expression,
-        "corrupted_vector_length": corrupted_length,
-        "comparison_rows": comparison_rows,
-        "thresholds": thresholds,
-        "claims": _extract_claims(s1_tree),
-        "logic_digest": logic_digest,
+        "bridge_rows": bridge_rows,
+        "predicate_spec": predicate_spec,
     }
 
 
 def _tensor_outcomes(
-    source: np.ndarray, constraint: np.ndarray, claims: dict[str, bool]
+    source: np.ndarray, constraint: np.ndarray
 ) -> dict[str, Any]:
     projectors = S1.canonical_projectors()
-    landed_calls = (
+    calls = (
         ("projector_algebra", lambda: S1.projector_algebra_check(projectors)),
-        (
-            "orientation_twist",
-            lambda: S1.orientation_twist_check(source, projectors),
-        ),
+        ("orientation_twist", lambda: S1.orientation_twist_check(source, projectors)),
         ("ward_constraints", lambda: S1.ward_constraint_check(source, constraint)),
         ("response_locking", lambda: S1.response_locking_check(source)),
         (
@@ -457,33 +481,26 @@ def _tensor_outcomes(
         ("free_tensor_carrier", lambda: S1.free_tensor_carrier_gate(source)),
         ("no_claim", S1.no_claim_gate),
     )
-    statuses: dict[str, bool] = {}
-    for name, call in landed_calls:
+    statuses = {}
+    for name, call in calls:
         try:
             passed, _detail = call()
             statuses[name] = bool(passed)
         except Exception:
             statuses[name] = False
-
     plus = S1.oriented(source, +1)
     minus = S1.oriented(source, -1)
-    block_norms = S1.block_norms(plus, projectors)
-    inverse_operator = np.linalg.inv(S1.universal_block_operator())
-    field_plus = inverse_operator @ plus
-    field_minus = inverse_operator @ minus
-    field_null = inverse_operator @ S1.oriented(source, 0)
-    locking_signs = {}
+    inverse = np.linalg.inv(S1.universal_block_operator())
+    projective = S1.block_norms(plus, projectors)
+    signs = {}
     for eta_a in (+1, -1):
         for eta_b in (+1, -1):
             coupling = float(
                 S1.oriented(source, eta_a)
-                @ inverse_operator
+                @ inverse
                 @ S1.oriented(source, eta_b)
             )
-            locking_signs[f"{eta_a:+d},{eta_b:+d}"] = math.copysign(1.0, coupling)
-    scalar_complement = (
-        projectors.shift + projectors.shear
-    ) @ S1.oriented(S1.scalar_a1_source(), -1)
+            signs[f"{eta_a:+d},{eta_b:+d}"] = math.copysign(1.0, coupling)
     chi_only = np.zeros(10, dtype=float)
     chi_only[0] = 1.0
     chi_only[4] = 0.5
@@ -495,7 +512,7 @@ def _tensor_outcomes(
             }
         },
         "orientation_twist": {
-            "block_norms": block_norms,
+            "block_norms": projective,
             "twist_residual": max(
                 float(np.linalg.norm(projector @ plus + projector @ minus))
                 for projector in projectors.blocks.values()
@@ -505,22 +522,40 @@ def _tensor_outcomes(
             "residuals": [
                 float(np.linalg.norm(constraint @ S1.oriented(source, eta)))
                 for eta in (+1, -1, 0)
-            ]
+            ],
+            "source_null_residual": float(
+                np.linalg.norm(S1.oriented(source, 0))
+            ),
         },
         "response_locking": {
-            "field_flip_residual": float(np.linalg.norm(field_plus + field_minus)),
-            "field_null_residual": float(np.linalg.norm(field_null)),
-            "positive_self": float(source @ inverse_operator @ source),
-            "locking_signs": locking_signs,
+            "field_flip_residual": float(
+                np.linalg.norm(inverse @ plus + inverse @ minus)
+            ),
+            "field_null_residual": float(
+                np.linalg.norm(inverse @ S1.oriented(source, 0))
+            ),
+            "positive_self": float(source @ inverse @ source),
+            "locking_signs": signs,
         },
         "scalar_only_no_overclaim": {
-            "complement_norm": float(np.linalg.norm(scalar_complement))
+            "complement_norm": float(
+                np.linalg.norm(
+                    (projectors.shift + projectors.shear)
+                    @ S1.oriented(S1.scalar_a1_source(), -1)
+                )
+            )
         },
         "free_tensor_carrier": {
             "tensor_source_blocks": S1.block_norms(source, projectors),
             "chi_only_blocks": S1.block_norms(chi_only, projectors),
         },
-        "no_claim": dict(claims),
+        "no_claim": {
+            "negative_inertial_mass": False,
+            "shielding": False,
+            "propulsion": False,
+            "reactionless_force": False,
+            "physical_signed_gravity_prediction": False,
+        },
     }
     return {
         name: {
@@ -531,11 +566,17 @@ def _tensor_outcomes(
     }
 
 
-def _recoil_record(source_sha256: str) -> tuple[dict[str, Any], list[dict[str, str]]]:
+def _run_recoil_fixture(
+    fixture_selector: str, source_sha256: str
+) -> tuple[dict[str, Any], list[dict[str, str]]]:
     coin, fswap, contact, _update, _details = S2.c315.logical_update_controls(
         S2.LABELS
     )
-    factors = (coin, fswap, contact)
+    factors = (
+        (coin, fswap, contact)
+        if fixture_selector == "canonical"
+        else (fswap, coin, contact)
+    )
     calls = (
         ("note_contract", S2.note_contract, ()),
         ("local_operator_controls", S2.local_operator_controls, ()),
@@ -564,7 +605,10 @@ def _recoil_record(source_sha256: str) -> tuple[dict[str, Any], list[dict[str, s
                 call(*arguments)
             except Exception as exc:
                 exceptions.append(
-                    {"entry_point": name, "exception": f"{type(exc).__name__}: {exc}"}
+                    {
+                        "entry_point": name,
+                        "exception": f"{type(exc).__name__}: {exc}",
+                    }
                 )
     pattern = re.compile(r"^(PASS|FAIL) (.*?) :: ?(.*)$")
     outcomes = []
@@ -573,344 +617,286 @@ def _recoil_record(source_sha256: str) -> tuple[dict[str, Any], list[dict[str, s
         if match:
             status, label, _detail = match.groups()
             outcomes.append({"check": label, "pass": status == "PASS"})
+    return (
+        {
+            "outcomes": outcomes,
+            "fixture_invariants": {
+                "cells": len(S2.ENDPOINTS),
+                "directions_per_cell": [
+                    len(S2.REVERSE) for _cell in S2.ENDPOINTS
+                ],
+                "emission_absorption_channels": len(S2.ENDPOINTS)
+                * len(S2.REVERSE),
+                "ordered_recoil_pairs": len(S2.REVERSE),
+            },
+            "fixture_selector": fixture_selector,
+            "returncode": 0,
+            "exceptions": exceptions,
+            "source_sha256": source_sha256,
+        },
+        exceptions,
+    )
+
+
+def _run_bridge(
+    source_sha256: str, contract_rows: list[dict[str, Any]]
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    completed = subprocess.run(
+        [sys.executable, str(ROOT / BRIDGE_PATH)],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+        timeout=AUDIT_TIMEOUT_SEC,
+    )
+    pattern = re.compile(r"^(PASS|FAIL) (.*?) :: ?(.*)$")
+    outcomes = []
+    for line in completed.stdout.splitlines():
+        match = pattern.match(line)
+        if match:
+            status, label, _detail = match.groups()
+            outcomes.append({"check": label, "pass": status == "PASS"})
     record = {
         "outcomes": outcomes,
-        "fixture_invariants": {
-            "cells": len(S2.ENDPOINTS),
-            "directions_per_cell": [
-                len(S2.REVERSE) for _cell in S2.ENDPOINTS
-            ],
-            "emission_absorption_channels": len(S2.ENDPOINTS) * len(S2.REVERSE),
-            "ordered_recoil_pairs": len(S2.REVERSE),
+        "counts": {
+            "pass": sum(row["pass"] for row in outcomes),
+            "fail": sum(not row["pass"] for row in outcomes),
         },
-        "model_port": "no Cycle-322 certificate model-dict port",
+        "contract_rows": copy.deepcopy(contract_rows),
+        "contract_scope": "not one combined law",
         "source_sha256": source_sha256,
     }
-    return record, exceptions
+    operational = {
+        "returncode": completed.returncode,
+        "stderr": completed.stderr,
+    }
+    return record, operational
 
 
 def independent_expected(extracted: dict[str, Any]) -> dict[str, Any]:
-    canonical_source, canonical_constraint = S1.tensor_source_with_constraints()
-    tensor_record = {
-        "outcomes": _tensor_outcomes(
-            canonical_source, canonical_constraint, extracted["claims"]
-        ),
+    source, constraint = S1.tensor_source_with_constraints()
+    tensor = {
+        "outcomes": _tensor_outcomes(source, constraint),
         "source_sha256": extracted["actual_pins"]["tensor_lift"],
     }
-    recoil_record, recoil_exceptions = _recoil_record(
-        extracted["actual_pins"]["recoil"]
+    recoil, recoil_exceptions = _run_recoil_fixture(
+        "canonical", extracted["actual_pins"]["recoil"]
     )
-    tensor_equal = tensor_record == extracted["records"]["tensor_lift"]
-    recoil_equal = recoil_record == extracted["records"]["recoil"]
+    swapped, swapped_exceptions = _run_recoil_fixture(
+        "swap_coin_fswap", extracted["actual_pins"]["recoil"]
+    )
+    bridge, bridge_operational = _run_bridge(
+        extracted["actual_pins"]["typed_bridge"],
+        extracted["bridge_rows"],
+    )
+    equal = {
+        "tensor_lift": tensor == extracted["records"]["tensor_lift"],
+        "recoil": recoil == extracted["records"]["recoil"],
+        "typed_bridge": bridge == extracted["records"]["typed_bridge"],
+    }
+    swapped_flips = tuple(
+        row["check"] for row in swapped["outcomes"] if not row["pass"]
+    )
+    condition = (
+        all(equal.values())
+        and not recoil_exceptions
+        and not swapped_exceptions
+        and len(swapped["outcomes"]) == 20
+        and swapped_flips == extracted["values"]["RECOIL_SWAP_FLIPPED_LABELS"]
+        and bridge_operational["returncode"] == 0
+        and not bridge_operational["stderr"]
+    )
     _check(
         "independent_expected",
-        tensor_equal and recoil_equal and not recoil_exceptions,
+        condition,
         {
-            "tensor_fieldwise_equal": tensor_equal,
-            "tensor_outcome_digest": _digest(tensor_record),
-            "recoil_fieldwise_equal": recoil_equal,
-            "recoil_outcome_digest": _digest(recoil_record),
-            "recoil_labels": len(recoil_record["outcomes"]),
-            "recoil_exceptions": recoil_exceptions,
+            "fieldwise_equal": equal,
+            "record_digests": {
+                "tensor_lift": _digest(tensor),
+                "recoil": _digest(recoil),
+                "typed_bridge": _digest(bridge),
+            },
+            "recoil_swapped_flips": swapped_flips,
+            "bridge_operational": bridge_operational,
         },
     )
     return {
-        "source": canonical_source,
-        "constraint": canonical_constraint,
-        "tensor_record": tensor_record,
-        "recoil_record": recoil_record,
+        "source": source,
+        "constraint": constraint,
+        "tensor": tensor,
+        "recoil": recoil,
+        "swapped": swapped,
+        "bridge": bridge,
     }
 
 
-def independent_verdict(
-    record: dict[str, Any],
-    frozen: dict[str, Any],
-    expected_pin: str,
-    thresholds: dict[str, float],
-) -> str:
-    if (
+def _drifted(record: dict[str, Any], expected_pin: str) -> bool:
+    return (
         record.get("pin_verified") is not True
         or record.get("source_sha256") != expected_pin
         or record.get("expected_sha256") != expected_pin
-    ):
-        return "DRIFT"
-    outcomes = record.get("outcomes", {})
-    expected = frozen["outcomes"]
-    if set(outcomes) != set(expected):
-        return "REJECT"
-    if any(outcomes[name].get("check") != "PASS" for name in expected):
-        return "REJECT"
-    projector = outcomes["projector_algebra"]["values"]
-    twist = outcomes["orientation_twist"]["values"]
-    ward = outcomes["ward_constraints"]["values"]
-    locking = outcomes["response_locking"]["values"]
-    scalar = outcomes["scalar_only_no_overclaim"]["values"]
-    carrier = outcomes["free_tensor_carrier"]["values"]
-    no_claim = outcomes["no_claim"]["values"]
-    accepted = (
-        projector["ranks"]
-        == expected["projector_algebra"]["values"]["ranks"]
-        and max(twist["block_norms"].values()) >= thresholds["block_nonnegative"]
-        and all(
-            value > thresholds["block_floor"]
-            for value in twist["block_norms"].values()
+    )
+
+
+def tensor_verdict(
+    record: dict[str, Any], frozen: dict[str, Any], expected_pin: str
+) -> str:
+    try:
+        if _drifted(record, expected_pin):
+            return "DRIFT"
+        if not _finite_data(record):
+            return "REJECT"
+        outcomes = record["outcomes"]
+        expected = frozen["outcomes"]
+        if set(outcomes) != set(expected):
+            return "REJECT"
+        if any(outcomes[name].get("check") != "PASS" for name in expected):
+            return "REJECT"
+        projector = outcomes["projector_algebra"]["values"]
+        twist = outcomes["orientation_twist"]["values"]
+        ward = outcomes["ward_constraints"]["values"]
+        locking = outcomes["response_locking"]["values"]
+        scalar = outcomes["scalar_only_no_overclaim"]["values"]
+        carrier = outcomes["free_tensor_carrier"]["values"]
+        no_claim = outcomes["no_claim"]["values"]
+        accepted = (
+            projector["ranks"]
+            == expected["projector_algebra"]["values"]["ranks"]
+            and all(value > 0.05 for value in twist["block_norms"].values())
+            and twist["twist_residual"] < S1.TOL
+            and max(ward["residuals"]) < 1.0e-10
+            and ward["source_null_residual"] < S1.TOL
+            and locking["field_flip_residual"] < S1.TOL
+            and locking["field_null_residual"] < S1.TOL
+            and locking["positive_self"] > 0.0
+            and locking["locking_signs"]
+            == expected["response_locking"]["values"]["locking_signs"]
+            and scalar["complement_norm"] < S1.TOL
+            and carrier["tensor_source_blocks"]["shift"] > 0.05
+            and carrier["tensor_source_blocks"]["shear"] > 0.05
+            and carrier["chi_only_blocks"]["shift"] == 0.0
+            and carrier["chi_only_blocks"]["shear"] == 0.0
+            and no_claim == expected["no_claim"]["values"]
         )
-        and twist["twist_residual"] < thresholds["twist_residual"]
-        and max(ward["residuals"]) < thresholds["ward_max"]
-        and ward["residuals"][2] < thresholds["ward_null"]
-        and locking["field_flip_residual"] < thresholds["field_flip"]
-        and locking["field_null_residual"] < thresholds["field_null"]
-        and locking["positive_self"] > thresholds["positive_self"]
-        and locking["locking_signs"]
-        == expected["response_locking"]["values"]["locking_signs"]
-        and scalar["complement_norm"] < thresholds["scalar_complement"]
-        and carrier["tensor_source_blocks"]["shift"] > thresholds["carrier_shift"]
-        and carrier["tensor_source_blocks"]["shear"] > thresholds["carrier_shear"]
-        and carrier["chi_only_blocks"]["shift"] == thresholds["chi_shift"]
-        and carrier["chi_only_blocks"]["shear"] == thresholds["chi_shear"]
-        and no_claim == expected["no_claim"]["values"]
-    )
-    return "ACCEPT" if accepted else "REJECT"
+        return "ACCEPT" if accepted else "REJECT"
+    except (KeyError, TypeError, ValueError, IndexError, OverflowError):
+        return "REJECT"
 
 
-def _interpret_expression(node: ast.AST, environment: dict[str, Any]) -> Any:
-    """Restricted interpreter for the extracted frozen accepted-expression."""
-
-    if isinstance(node, ast.Constant):
-        return node.value
-    if isinstance(node, ast.Name):
-        if node.id in environment:
-            return environment[node.id]
-        raise ExtractionError(f"unbound verdict name {node.id}")
-    if isinstance(node, ast.Tuple):
-        return tuple(_interpret_expression(item, environment) for item in node.elts)
-    if isinstance(node, ast.List):
-        return [_interpret_expression(item, environment) for item in node.elts]
-    if isinstance(node, ast.Dict):
-        return {
-            _interpret_expression(key, environment): _interpret_expression(
-                value, environment
-            )
-            for key, value in zip(node.keys, node.values)
-        }
-    if isinstance(node, ast.Attribute):
-        value = _interpret_expression(node.value, environment)
-        if isinstance(value, dict) and node.attr in value:
-            return value[node.attr]
-        raise ExtractionError(f"forbidden verdict attribute {ast.unparse(node)}")
-    if isinstance(node, ast.Subscript):
-        value = _interpret_expression(node.value, environment)
-        key = _interpret_expression(node.slice, environment)
-        return value[key]
-    if isinstance(node, ast.Call):
-        if isinstance(node.func, ast.Name) and node.func.id in {"max", "all"}:
-            argument = _interpret_expression(node.args[0], environment)
-            return max(argument) if node.func.id == "max" else all(argument)
-        if (
-            isinstance(node.func, ast.Attribute)
-            and node.func.attr in {"values", "items"}
-            and not node.args
-            and not node.keywords
-        ):
-            value = _interpret_expression(node.func.value, environment)
-            if not isinstance(value, dict):
-                raise ExtractionError(f"{node.func.attr}() applied to non-dict")
-            return value.values() if node.func.attr == "values" else value.items()
-        if (
-            isinstance(node.func, ast.Attribute)
-            and node.func.attr == "get"
-            and 1 <= len(node.args) <= 2
-            and not node.keywords
-        ):
-            value = _interpret_expression(node.func.value, environment)
-            if not isinstance(value, dict):
-                raise ExtractionError("get() applied to non-dict")
-            arguments = [
-                _interpret_expression(argument, environment)
-                for argument in node.args
-            ]
-            return value.get(*arguments)
-        raise ExtractionError(f"forbidden verdict call {ast.unparse(node)}")
-    if isinstance(node, ast.BoolOp):
-        values = [_interpret_expression(value, environment) for value in node.values]
-        return all(values) if isinstance(node.op, ast.And) else any(values)
-    if isinstance(node, ast.Compare) and len(node.ops) == len(node.comparators) == 1:
-        left = _interpret_expression(node.left, environment)
-        right = _interpret_expression(node.comparators[0], environment)
-        operator = node.ops[0]
-        if isinstance(operator, ast.Eq):
-            return left == right
-        if isinstance(operator, ast.NotEq):
-            return left != right
-        if isinstance(operator, ast.Lt):
-            return left < right
-        if isinstance(operator, ast.LtE):
-            return left <= right
-        if isinstance(operator, ast.Gt):
-            return left > right
-        if isinstance(operator, ast.GtE):
-            return left >= right
-        raise ExtractionError("forbidden verdict comparison")
-    if isinstance(node, ast.GeneratorExp) and len(node.generators) == 1:
-        clause = node.generators[0]
-        if (
-            clause.is_async
-            or clause.ifs
-            or not isinstance(clause.target, ast.Name)
-        ):
-            raise ExtractionError("forbidden verdict generator")
-        items = _interpret_expression(clause.iter, environment)
-        values = []
-        for item in items:
-            nested = dict(environment)
-            nested[clause.target.id] = item
-            values.append(_interpret_expression(node.elt, nested))
-        return values
-    if isinstance(node, ast.ListComp) and len(node.generators) == 1:
-        clause = node.generators[0]
-        if clause.is_async:
-            raise ExtractionError("forbidden async verdict comprehension")
-        items = _interpret_expression(clause.iter, environment)
-        values = []
-        for item in items:
-            nested = dict(environment)
-            if isinstance(clause.target, ast.Name):
-                nested[clause.target.id] = item
-            elif (
-                isinstance(clause.target, (ast.Tuple, ast.List))
-                and isinstance(item, (tuple, list))
-                and len(clause.target.elts) == len(item)
-                and all(isinstance(target, ast.Name) for target in clause.target.elts)
-            ):
-                for target, value in zip(clause.target.elts, item):
-                    nested[target.id] = value
-            else:
-                raise ExtractionError("forbidden verdict comprehension target")
-            if all(_interpret_expression(condition, nested) for condition in clause.ifs):
-                values.append(_interpret_expression(node.elt, nested))
-        return values
-    raise ExtractionError(f"forbidden verdict node {type(node).__name__}")
-
-
-def frozen_logic_verdict(
-    record: dict[str, Any],
-    frozen: dict[str, Any],
-    expected_pin: str,
-    accepted_expression: ast.AST,
+def recoil_verdict(
+    record: dict[str, Any], frozen: dict[str, Any], expected_pin: str
 ) -> str:
-    drifted = (
-        record.get("pin_verified") is not True
-        or record.get("source_sha256") != expected_pin
-        or record.get("expected_sha256") != expected_pin
-    )
-    if drifted:
-        return "DRIFT"
-    outcomes = record.get("outcomes", {})
-    expected = frozen["outcomes"]
-    if set(outcomes) != set(expected):
+    try:
+        if _drifted(record, expected_pin):
+            return "DRIFT"
+        observed = [
+            {"check": row.get("check"), "pass": row.get("pass")}
+            for row in record.get("outcomes", [])
+        ]
+        accepted = (
+            observed == frozen["outcomes"]
+            and record.get("fixture_invariants") == frozen["fixture_invariants"]
+            and record.get("fixture_selector") == frozen["fixture_selector"]
+            and record.get("returncode") == 0
+            and not record.get("exceptions")
+        )
+        return "ACCEPT" if accepted else "REJECT"
+    except (KeyError, TypeError, ValueError, IndexError):
         return "REJECT"
-    if any(outcomes[name].get("check") != "PASS" for name in expected):
-        return "REJECT"
-    environment = {
-        "projector": outcomes["projector_algebra"]["values"],
-        "twist": outcomes["orientation_twist"]["values"],
-        "ward": outcomes["ward_constraints"]["values"],
-        "locking": outcomes["response_locking"]["values"],
-        "scalar": outcomes["scalar_only_no_overclaim"]["values"],
-        "carrier": outcomes["free_tensor_carrier"]["values"],
-        "no_claim": outcomes["no_claim"]["values"],
-        "frozen": expected,
-        "expected_signs": expected["response_locking"]["values"]["locking_signs"],
-        "S1": {"TOL": float(S1.TOL)},
-    }
-    accepted = bool(_interpret_expression(accepted_expression, environment))
-    return "ACCEPT" if accepted else "REJECT"
 
 
-def _with_pin(outcomes: dict[str, Any], actual: str, expected: str) -> dict[str, Any]:
+def bridge_verdict(
+    record: dict[str, Any], frozen: dict[str, Any], expected_pin: str
+) -> str:
+    try:
+        if _drifted(record, expected_pin):
+            return "DRIFT"
+        observed = [
+            {"check": row.get("check"), "pass": row.get("pass")}
+            for row in record.get("outcomes", [])
+        ]
+        accepted = (
+            record.get("returncode") == 0
+            and observed == frozen["outcomes"]
+            and record.get("counts") == frozen["counts"]
+            and record.get("contract_rows") == frozen["contract_rows"]
+            and record.get("contract_scope") == frozen["contract_scope"]
+        )
+        return "ACCEPT" if accepted else "REJECT"
+    except (KeyError, TypeError, ValueError, IndexError):
+        return "REJECT"
+
+
+def _with_pin(record: dict[str, Any], pin: str) -> dict[str, Any]:
     return {
-        "source_sha256": actual,
-        "expected_sha256": expected,
-        "pin_verified": actual == expected,
-        "outcomes": outcomes,
+        **copy.deepcopy(record),
+        "expected_sha256": pin,
+        "pin_verified": record.get("source_sha256") == pin,
     }
 
 
 def verdict_semantics(
     extracted: dict[str, Any], independent: dict[str, Any]
 ) -> dict[str, Any]:
-    expected_pin = extracted["expected_pins"]["tensor_lift"]
-    frozen = extracted["records"]["tensor_lift"]
-    canonical = _with_pin(
-        independent["tensor_record"]["outcomes"], expected_pin, expected_pin
+    rows: dict[str, dict[str, str]] = {}
+    classes = (
+        ("tensor_lift", tensor_verdict, independent["tensor"]),
+        ("recoil", recoil_verdict, independent["recoil"]),
+        ("typed_bridge", bridge_verdict, independent["bridge"]),
     )
-    corrupted_outcomes = _tensor_outcomes(
-        np.zeros(extracted["corrupted_vector_length"], dtype=float),
-        independent["constraint"],
-        extracted["claims"],
-    )
-    corrupted = _with_pin(corrupted_outcomes, expected_pin, expected_pin)
-    wrong_pin = "0" * 64
-    drift = _with_pin({}, extracted["actual_pins"]["tensor_lift"], wrong_pin)
-    vectors = {
-        "canonical": (canonical, "ACCEPT"),
-        "corrupted": (corrupted, "REJECT"),
-        "wrong_pin": (drift, "DRIFT"),
-    }
-    rows = {}
-    for name, (record, expected_verdict) in vectors.items():
-        pin = wrong_pin if name == "wrong_pin" else expected_pin
-        own = independent_verdict(
-            record, frozen, pin, extracted["thresholds"]
-        )
-        frozen_logic = frozen_logic_verdict(
-            record, frozen, pin, extracted["accepted_expression"]
-        )
+    for name, classifier, semantic_record in classes:
+        pin = extracted["expected_pins"][name]
+        frozen = extracted["records"][name]
+        canonical = _with_pin(semantic_record, pin)
+        if name == "typed_bridge":
+            canonical["returncode"] = 0
+        corrupted = copy.deepcopy(canonical)
+        if name == "tensor_lift":
+            corrupted["outcomes"]["response_locking"]["values"][
+                "positive_self"
+            ] = math.inf
+        else:
+            corrupted["outcomes"][0]["pass"] = False
+        wrong_pin = _with_pin(semantic_record, "0" * 64)
+        tampered_record_pin = copy.deepcopy(canonical)
+        tampered_record_pin["expected_sha256"] = "0" * 64
         rows[name] = {
-            "expected": expected_verdict,
-            "independent": own,
-            "frozen_logic": frozen_logic,
+            "canonical": classifier(canonical, frozen, pin),
+            "corrupted": classifier(corrupted, frozen, pin),
+            "wrong_pin": classifier(wrong_pin, frozen, "0" * 64),
+            "tampered_record_pin": classifier(
+                tampered_record_pin, frozen, pin
+            ),
         }
-    expected_flips = [
-        name
-        for name, expected in frozen["outcomes"].items()
-        if corrupted_outcomes.get(name, {}).get("check") != expected["check"]
-    ]
-    harness_reported_flips = _interpret_expression(
-        extracted["flip_expression"],
-        {
-            "expected_outcomes": frozen["outcomes"],
-            "actual_outcomes": corrupted_outcomes,
-        },
+    swapped = _with_pin(
+        independent["swapped"], extracted["expected_pins"]["recoil"]
     )
-    agreement = all(
-        row["independent"] == row["frozen_logic"] == row["expected"]
-        for row in rows.values()
+    rows["recoil"]["swapped_fixture"] = recoil_verdict(
+        swapped,
+        extracted["records"]["recoil"],
+        extracted["expected_pins"]["recoil"],
     )
+    expected = {
+        name: {
+            "canonical": "ACCEPT",
+            "corrupted": "REJECT",
+            "wrong_pin": "DRIFT",
+            "tampered_record_pin": "DRIFT",
+            **({"swapped_fixture": "REJECT"} if name == "recoil" else {}),
+        }
+        for name in ("tensor_lift", "recoil", "typed_bridge")
+    }
+    agreement = rows == expected
     _check(
         "verdict_semantics",
-        agreement and expected_flips == harness_reported_flips,
-        {
-            "vectors": rows,
-            "corrupted_flipped_checks": expected_flips,
-            "harness_corrupted_flipped_checks": harness_reported_flips,
-        },
+        agreement,
+        {"observed": rows, "expected": expected},
     )
-    return {
-        "agreement": agreement,
-        "vectors": rows,
-        "corrupted_flipped_checks": expected_flips,
-    }
+    return {"agreement": agreement, "vectors": rows}
 
 
-def _attribute_root(node: ast.AST) -> str | None:
-    while isinstance(node, ast.Attribute):
-        node = node.value
-    return node.id if isinstance(node, ast.Name) else None
-
-
-def _landed_attribute_writes(tree: ast.Module) -> list[dict[str, Any]]:
-    rows = []
+def _landed_attribute_writes(tree: ast.Module) -> list[str]:
+    writes = []
     for node in ast.walk(tree):
         targets: list[ast.AST] = []
         if isinstance(node, ast.Assign):
@@ -919,88 +905,80 @@ def _landed_attribute_writes(tree: ast.Module) -> list[dict[str, Any]]:
             targets = [node.target]
         elif isinstance(node, ast.AugAssign):
             targets = [node.target]
-        elif isinstance(node, ast.Delete):
-            targets = list(node.targets)
-        else:
-            continue
         for target in targets:
             for child in ast.walk(target):
-                if (
-                    isinstance(child, ast.Attribute)
-                    and _attribute_root(child) in {"S1", "S2"}
-                ):
-                    rows.append(
-                        {
-                            "target": ast.unparse(child),
-                            "line": node.lineno,
-                            "operation": type(node).__name__,
-                        }
-                    )
-    return rows
-
-
-def _numeric_comparison_values(
-    functions: list[ast.FunctionDef], s1_tol: float
-) -> set[float]:
-    values = set()
-    for function in functions:
-        for node in ast.walk(function):
-            if isinstance(node, ast.Compare):
-                for comparator in node.comparators:
-                    number = _resolved_number(comparator, s1_tol)
-                    if number is not None:
-                        values.add(number)
-    return values
+                if isinstance(child, ast.Attribute):
+                    root = child
+                    while isinstance(root, ast.Attribute):
+                        root = root.value
+                    if isinstance(root, ast.Name) and root.id in {"S1", "S2"}:
+                        writes.append(ast.unparse(child))
+    return writes
 
 
 def discipline(extracted: dict[str, Any]) -> dict[str, Any]:
-    harness_tree = extracted["harness_tree"]
-    audit_node = _assignment_nodes(harness_tree).get("AUDIT_INPUT_PATHS")
+    harness_tree = extracted["trees"]["harness"]
+    audit_node = _assignments(harness_tree).get("AUDIT_INPUT_PATHS")
     if audit_node is None:
-        raise ExtractionError("harness AUDIT_INPUT_PATHS missing")
-    harness_audit_tuple = ast.literal_eval(audit_node)
-    harness_thresholds = {
-        float(row["number"])
-        for row in extracted["comparison_rows"]
-        if row["number"] is not None
-    }
-    landed_check_names = (
-        "projector_algebra_check",
-        "orientation_twist_check",
-        "ward_constraint_check",
-        "response_locking_check",
-        "scalar_only_no_overclaim_check",
-        "free_tensor_carrier_gate",
-        "no_claim_gate",
+        raise ExtractionError("main AUDIT_INPUT_PATHS missing")
+    main_inputs = ast.literal_eval(audit_node)
+    tensor_accept = _class_method(
+        harness_tree, "TensorLiftAcceptance", "accept"
     )
-    landed_functions = [
-        _function(extracted["s1_tree"], name) for name in landed_check_names
-    ]
-    landed_thresholds = _numeric_comparison_values(
-        landed_functions, float(S1.TOL)
+    recoil_accept = _class_method(
+        harness_tree, "RecoilReciprocityAcceptance", "accept"
     )
-    new_tolerances = sorted(harness_thresholds - landed_thresholds)
-    module_writes = _landed_attribute_writes(harness_tree)
+    pin_init = _class_method(harness_tree, "_PinnedAcceptance", "__init__")
+    tensor_args = tuple(argument.arg for argument in tensor_accept.args.args)
+    recoil_args = tuple(argument.arg for argument in recoil_accept.args.args)
+    pin_args = tuple(argument.arg for argument in pin_init.args.args)
+    source_text = (ROOT / HARNESS_PATH).read_text(encoding="utf-8")
+    closure_ok = (
+        isinstance(main_inputs, tuple)
+        and len(main_inputs) == len(set(main_inputs))
+        and set(main_inputs).issubset(set(AUDIT_INPUT_PATHS))
+        and all((ROOT / path).is_file() for path in main_inputs)
+    )
+    api_ok = (
+        tensor_args == ("self", "source_vector")
+        and recoil_args == ("self", "fixture_selector")
+        and pin_args == ("self",)
+        and "model_port" not in source_text
+        and "operator_triple" not in source_text
+        and "expected_sha256: str | None" not in source_text
+    )
+    writes = _landed_attribute_writes(harness_tree)
     condition = (
-        isinstance(harness_audit_tuple, tuple)
-        and not new_tolerances
-        and not module_writes
+        closure_ok
+        and api_ok
+        and extracted["predicate_spec"] == EXPECTED_TENSOR_PREDICATES
+        and not writes
     )
     _check(
         "discipline",
         condition,
         {
-            "harness_audit_tuple_literal": harness_audit_tuple,
-            "harness_thresholds": sorted(harness_thresholds),
-            "landed_S1_thresholds": sorted(landed_thresholds),
-            "new_tolerances": new_tolerances,
-            "landed_module_attribute_writes": module_writes,
+            "main_input_count": len(main_inputs),
+            "independent_input_count": len(AUDIT_INPUT_PATHS),
+            "closure_ok": closure_ok,
+            "tensor_accept_args": tensor_args,
+            "recoil_accept_args": recoil_args,
+            "pin_init_args": pin_args,
+            "predicate_mapping_exact": (
+                extracted["predicate_spec"] == EXPECTED_TENSOR_PREDICATES
+            ),
+            "landed_module_attribute_writes": writes,
         },
     )
     return {
-        "audit_tuple": harness_audit_tuple,
-        "new_tolerances": new_tolerances,
-        "module_writes": module_writes,
+        "main_input_count": len(main_inputs),
+        "independent_input_count": len(AUDIT_INPUT_PATHS),
+        "closure_ok": closure_ok,
+        "api_ok": api_ok,
+        "predicate_mapping_exact": (
+            extracted["predicate_spec"] == EXPECTED_TENSOR_PREDICATES
+        ),
+        "module_writes": writes,
     }
 
 
@@ -1012,12 +990,17 @@ def main() -> int:
         verdicts = verdict_semantics(extracted, independent)
         discipline_result = discipline(extracted)
         result = {
-            "frozen_record_digests": extracted["digests"],
+            "frozen_record_digests": {
+                name: _digest(record)
+                for name, record in extracted["records"].items()
+            },
             "digest_agreement": {
-                "tensor_lift": independent["tensor_record"]
+                "tensor_lift": independent["tensor"]
                 == extracted["records"]["tensor_lift"],
-                "recoil": independent["recoil_record"]
+                "recoil": independent["recoil"]
                 == extracted["records"]["recoil"],
+                "typed_bridge": independent["bridge"]
+                == extracted["records"]["typed_bridge"],
             },
             "verdict_agreement": verdicts["agreement"],
             "discipline": discipline_result,

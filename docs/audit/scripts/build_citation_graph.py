@@ -170,6 +170,13 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
         "scripts/frontier_continuum_limit.py",
         "scripts/frontier_newton_systematic.py",
     ],
+    # The source-acceptance note's independent checker deliberately does not
+    # import the primary harness. Expose that data-only adversary beside the
+    # primary runner; the note's linked landed source notes carry the
+    # subprocess-route dependency chain.
+    "source_acceptance_harness_support_note_2026-07-28": [
+        "scripts/frontier_source_acceptance_harness_independent_check_2026_07_28.py",
+    ],
     # This theorem note's N7 steelman is the faithful-but-reducible direct sum
     # of the two complexified simple-sector modules.  The independent helper is
     # not imported by the primary stress runner, so expose it only to this row.

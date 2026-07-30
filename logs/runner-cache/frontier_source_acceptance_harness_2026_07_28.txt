@@ -1,29 +1,29 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_source_acceptance_harness_2026_07_28.py
-runner_sha256: 341b412fd212772dc9742b13b85ce4644607dbb1031dd7b83f69ea47348c25d1
-input_fingerprint_sha256: 578c47f2bd8e001809477af125fbfd4264a117b5b43555bb03a93c818de78f03
+runner_sha256: 86c75bffe5051531e3a46381d2a53e1c48f241b805149400f8a9f8820213298a
+input_fingerprint_sha256: 059559c85e6933a8d2054412297c0f4727b3b1ac3bf58b52c6ddd580e66c816b
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 209.31
+elapsed_sec: 159.76
 status: ok
 ----- stdout -----
 PASS all three landed byte pins verify :: {'tensor_lift': {'expected': '33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31', 'actual': '33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31', 'verified': True}, 'recoil': {'expected': '4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75', 'actual': '4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75', 'verified': True}, 'typed_bridge': {'expected': '834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59', 'actual': '834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59', 'verified': True}}
 PASS tensor canonical fixture is ACCEPT :: ACCEPT
-PASS tensor canonical record equals the frozen record :: 338a8a828f02a15f796962cdcd0d52235f949d0c502044db716b3439bdcf8015
+PASS tensor canonical record equals the frozen record :: 7397fd6e23343438a91a836365c8d0595ec6a4c4d2c72f646478537b1ed64b41
+PASS tensor input contract rejects non-real or nonfinite vectors :: {'boolean': 'REJECT', 'complex': 'REJECT', 'string': 'REJECT', 'nonfinite': 'REJECT'}
+PASS tensor verdict rejects nonfinite or malformed records :: {'nonfinite_record': 'REJECT', 'missing_field': 'REJECT'}
+PASS record-carried expected pin mismatch classifies DRIFT :: DRIFT
 PASS corrupted tensor vector is REJECT with flipped checks :: {'verdict': 'REJECT', 'flipped_checks': ['orientation_twist', 'response_locking', 'free_tensor_carrier']}
-PASS Cycle-725 role-uniform reduction cross-anchor is ACCEPT :: ACCEPT
 PASS landed Cycle-322 20/20 record is ACCEPT :: {'verdict': 'ACCEPT', 'pass': 20, 'total': 20}
-PASS coin/FSWAP-swapped operator triple is REJECT :: {'verdict': 'REJECT', 'flipped_checks': ['the naive one-one carried-source product is not a closed Cycle-315 FSWAP sector', 'the same-code two-update response has nonzero reciprocal off-diagonal transfer through held L=6', 'receiver, stream, and source-exchange deletions distinguish the reciprocal off-diagonal response', 'the source family and Cycle-315 seam cover all 24 frames including twelve endpoint reversals']}
+PASS coin/FSWAP-swapped landed fixture is an exact four-check REJECT :: {'verdict': 'REJECT', 'flipped_checks': ['the naive one-one carried-source product is not a closed Cycle-315 FSWAP sector', 'the same-code two-update response has nonzero reciprocal off-diagonal transfer through held L=6', 'receiver, stream, and source-exchange deletions distinguish the reciprocal off-diagonal response', 'the source family and Cycle-315 seam cover all 24 frames including twelve endpoint reversals']}
 PASS landed Cycle-294 5/0 subprocess record is ACCEPT :: {'verdict': 'ACCEPT', 'counts': {'pass': 5, 'fail': 0}}
 PASS typed-bridge ROUTES table matches its frozen AST data :: 9ced4631a1382e85989c8a301fca8bc48bf7f759aad71c8ba7c5110c85614b35
 PASS wrong local tensor pin refuses execution and classifies DRIFT :: DRIFT
-PASS support/meta ceiling and C_source firewall are explicit :: {'new_physics_claimed': False, 'c_source_firewall': True, 'harness_input_ports': {'tensor_lift': True, 'recoil': 'partial-args', 'typed_bridge': False}, 'ceiling_role': 'acceptance infrastructure only'}
+PASS support/meta tool boundary is explicit :: {'new_physics_claimed': False, 'harness_input_ports': {'tensor_lift': True, 'recoil': False, 'typed_bridge': False}, 'tool_role': 'non-authoritative candidate testing'}
 {
-  "c_source_firewall": true,
-  "ceiling_role": "acceptance infrastructure only",
   "checks": {
     "fail": 0,
-    "pass": 11
+    "pass": 13
   },
   "demos": {
     "recoil_landed": "ACCEPT",
@@ -45,18 +45,17 @@ PASS support/meta ceiling and C_source firewall are explicit :: {'new_physics_cl
       ],
       "verdict": "REJECT"
     },
-    "tensor_role_uniform": "ACCEPT",
     "typed_bridge_landed": "ACCEPT",
     "wrong_tensor_pin": "DRIFT"
   },
   "frozen_record_digests": {
-    "recoil": "94b104901e26e1bfd7f7324023282b49a04677308ccb4e7ca78578b7ee74f1c8",
-    "tensor_lift": "3188d62f1b3d970f44423bb4ce80b29d2281ddf4842c556ebe295c1f91eabfdb",
+    "recoil": "f0700d2a13aaabc3817d422876d76682c2ed6c393f796f58c9f16f83428f2530",
+    "tensor_lift": "7ceadfe93210f0e16b523cc525987b490ed5ed67451a6a3f283c670858d4cc56",
     "typed_bridge": "dbda46063afcd1d3d7092079f090907f23fbbf0786c2fa8164be1efee16fd40b",
     "typed_bridge_contract_rows": "9ced4631a1382e85989c8a301fca8bc48bf7f759aad71c8ba7c5110c85614b35"
   },
   "harness_input_ports": {
-    "recoil": "partial-args",
+    "recoil": false,
     "tensor_lift": true,
     "typed_bridge": false
   },
@@ -78,7 +77,8 @@ PASS support/meta ceiling and C_source firewall are explicit :: {'new_physics_cl
       "verified": true
     }
   },
-  "runtime_seconds": 209.216601
+  "runtime_seconds": 159.651919,
+  "tool_role": "non-authoritative candidate testing"
 }
 
 ----- stderr -----

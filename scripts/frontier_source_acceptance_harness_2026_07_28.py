@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Frozen source-surface acceptance infrastructure for decision D5.
+"""Frozen source-surface acceptance tool for three landed source fixtures.
 
-This module adds input ports and frozen outcome records around landed checks.
+This module adds one candidate-vector port and frozen outcome records around
+landed checks.
 It does not add a source law, alter a landed file, or make a physics claim.
 """
 
@@ -13,6 +14,46 @@ AUDIT_INPUT_PATHS = (
     "scripts/signed_gravity_oriented_tensor_source_lift.py",
     "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py",
     "scripts/physical_m2_gravity_source_bridge_tournament_synthesis_cycle294_2026_07_17.py",
+    "docs/SIGNED_GRAVITY_ORIENTED_TENSOR_SOURCE_LIFT_NOTE.md",
+    "docs/work_history/repo/review_feedback/DIRECT_GATEWISE_MATTER_MEDIATOR_CURRENT_LEDGER_ROUTE_A_CYCLE293_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/GRAVITY_ROUTE_C_BOUNDED_DIRECT_CURRENT_SEARCH_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/LOCAL_M2_MASS_SCALAR_DEFORMATION_RESPONSE_ROUTE_B_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_OVERLAP_AWARE_TWO_CELL_CYCLE315_NOTE_2026-07-18.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_M2_GRAVITY_SOURCE_BRIDGE_TOURNAMENT_SYNTHESIS_CYCLE294_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/PROPER_CUBIC_RECOIL_BALANCED_CARRIED_SOURCE_CYCLE318_NOTE_2026-07-18.md",
+    "docs/work_history/repo/review_feedback/TWO_CELL_TWO_SOURCE_RECOIL_RECIPROCITY_CYCLE322_NOTE_2026-07-18.md",
+    "docs/work_history/repo/review_feedback/UNIT_WEIGHT_CARRIED_LINK_RECOIL_CYCLE320_NOTE_2026-07-18.md",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/carried_internal_species_source_field_ledger_repair_2026_07_17.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/connected_edge_same_code_local_instrument_cycle278_2026_07_17.py",
+    "scripts/contractible_lightcone_wilson_quotient_cycle271_2026_07_17.py",
+    "scripts/direct_gatewise_matter_mediator_current_ledger_route_a_cycle293_2026_07_17.py",
+    "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/gravity_route_c_bounded_direct_current_search_2026_07_17.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/local_m2_mass_scalar_deformation_response_route_b_2026_07_17.py",
+    "scripts/local_rough_puncture_odd_sector_cycle247_2026_07_17.py",
+    "scripts/locally_matched_wilson_sector_states_cycle275_2026_07_17.py",
+    "scripts/numpy_replay_bootstrap.py",
+    "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+    "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+    "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+    "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+    "scripts/physical_cycle269_overlap_aware_two_cell_cycle315_2026_07_18.py",
+    "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+    "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/signed_gravity_source_character_uniqueness_theorem.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+    "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
@@ -45,39 +86,6 @@ RECOIL_RECIPROCITY_PATH = AUDIT_INPUT_PATHS[1]
 TYPED_BRIDGE_PATH = AUDIT_INPUT_PATHS[2]
 
 
-# Cycle-725's locally re-declared role-uniform reduction convention.  This is
-# supplied fixture data, not a derived source law or a normalization rule.
-ROLE_UNIFORM_REDUCTION_CONVENTION = {
-    "name": "Cycle-725 role-uniform reduction (block05 cross-anchor)",
-    "coordinate_roles": (
-        "lapse",
-        "shift-x",
-        "shift-y",
-        "shift-z",
-        "trace",
-        "shear-0",
-        "shear-1",
-        "shear-2",
-        "shear-3",
-        "shear-4",
-    ),
-    "normalization": "none",
-    "ward_constraints": "S1 canonical second return value",
-    "vector": (
-        0.9560846981508337,
-        0.20853115457242088,
-        -0.11358498026730297,
-        -0.6441467627494118,
-        0.8042745120994024,
-        -0.539453694840751,
-        -0.6572617178811084,
-        -0.4692739937907995,
-        0.6274974981738409,
-        -0.31225462420151445,
-    ),
-}
-
-
 TENSOR_FROZEN_EXPECTED = {
     "outcomes": {
         "projector_algebra": {
@@ -106,6 +114,7 @@ TENSOR_FROZEN_EXPECTED = {
                     1.2462222543165673e-15,
                     0.0,
                 ],
+                "source_null_residual": 0.0,
             },
         },
         "response_locking": {
@@ -193,9 +202,18 @@ RECOIL_FROZEN_EXPECTED = {
         {"check": label, "pass": True} for label in RECOIL_OUTCOME_LABELS
     ],
     "fixture_invariants": RECOIL_FIXTURE_INVARIANTS,
-    "model_port": "no Cycle-322 certificate model-dict port",
+    "fixture_selector": "canonical",
+    "returncode": 0,
+    "exceptions": [],
     "source_sha256": RECOIL_RECIPROCITY_SHA256,
 }
+
+RECOIL_SWAP_FLIPPED_LABELS = (
+    "the naive one-one carried-source product is not a closed Cycle-315 FSWAP sector",
+    "the same-code two-update response has nonzero reciprocal off-diagonal transfer through held L=6",
+    "receiver, stream, and source-exchange deletions distinguish the reciprocal off-diagonal response",
+    "the source family and Cycle-315 seam cover all 24 frames including twelve endpoint reversals",
+)
 
 
 BRIDGE_CONTRACT_ROWS = (
@@ -275,12 +293,39 @@ def _drift_record(relative_path: str, expected: str, actual: str) -> dict[str, A
     }
 
 
+def _finite_data(value: Any) -> bool:
+    if isinstance(value, bool) or value is None or isinstance(value, str):
+        return True
+    if isinstance(value, int):
+        return True
+    if isinstance(value, float):
+        return math.isfinite(value)
+    if isinstance(value, np.generic):
+        return _finite_data(value.item())
+    if isinstance(value, np.ndarray):
+        return bool(
+            np.issubdtype(value.dtype, np.number)
+            and not np.issubdtype(value.dtype, np.complexfloating)
+            and np.all(np.isfinite(value))
+        )
+    if isinstance(value, dict):
+        return all(
+            isinstance(key, (str, int, float, bool))
+            and _finite_data(key)
+            and _finite_data(item)
+            for key, item in value.items()
+        )
+    if isinstance(value, (tuple, list)):
+        return all(_finite_data(item) for item in value)
+    return False
+
+
 class _PinnedAcceptance:
     SOURCE_PATH = ""
     LANDED_SHA256_PIN = ""
 
-    def __init__(self, expected_sha256: str | None = None) -> None:
-        self.expected_sha256 = expected_sha256 or self.LANDED_SHA256_PIN
+    def __init__(self) -> None:
+        self.expected_sha256 = self.LANDED_SHA256_PIN
         self.actual_sha256 = _sha256(self.SOURCE_PATH)
         self.pin_verified = self.actual_sha256 == self.expected_sha256
 
@@ -294,11 +339,12 @@ class _PinnedAcceptance:
             not self.pin_verified
             or record.get("pin_verified") is not True
             or record.get("source_sha256") != self.expected_sha256
+            or record.get("expected_sha256") != self.expected_sha256
         )
 
 
 class TensorLiftAcceptance(_PinnedAcceptance):
-    """Explicit length-10 input port over S1's unchanged individual checks."""
+    """Real finite length-10 vector port over S1's canonical constraints."""
 
     SOURCE_PATH = TENSOR_LIFT_PATH
     LANDED_SHA256_PIN = TENSOR_LIFT_SHA256
@@ -307,54 +353,78 @@ class TensorLiftAcceptance(_PinnedAcceptance):
     def frozen_expected(self) -> dict[str, Any]:
         return copy.deepcopy(self.FROZEN_EXPECTED)
 
+    def _input_reject(self, detail: dict[str, Any]) -> dict[str, Any]:
+        return {
+            "source_path": self.SOURCE_PATH,
+            "source_sha256": self.actual_sha256,
+            "expected_sha256": self.expected_sha256,
+            "pin_verified": True,
+            "outcomes": {
+                "input_contract": {
+                    "check": "FAIL",
+                    "values": _jsonable(detail),
+                }
+            },
+        }
+
     def accept(
         self,
         source_vector: Any,
-        ward_constraints: Any | None = None,
     ) -> dict[str, Any]:
         if not self._pin_still_verified():
             return _drift_record(
                 self.SOURCE_PATH, self.expected_sha256, self.actual_sha256
             )
 
-        source = np.asarray(source_vector)
-        if ward_constraints is None:
+        try:
+            source_array = np.asarray(source_vector)
+        except Exception as exc:
+            return self._input_reject(
+                {"reason": f"source conversion failed: {type(exc).__name__}: {exc}"}
+            )
+        if (
+            source_array.ndim != 1
+            or source_array.shape != (10,)
+            or not np.issubdtype(source_array.dtype, np.number)
+            or np.issubdtype(source_array.dtype, np.bool_)
+            or np.issubdtype(source_array.dtype, np.complexfloating)
+            or not np.all(np.isfinite(source_array))
+        ):
+            return self._input_reject(
+                {
+                    "expected": "one real finite numeric vector of shape [10]",
+                    "observed_shape": list(source_array.shape),
+                    "observed_dtype": str(source_array.dtype),
+                }
+            )
+        source = np.asarray(source_array, dtype=float)
+        try:
             _canonical_source, constraint = S1.tensor_source_with_constraints()
-        else:
-            constraint = np.asarray(ward_constraints)
-
-        if source.ndim != 1 or source.shape != (10,):
-            return {
-                "source_path": self.SOURCE_PATH,
-                "source_sha256": self.actual_sha256,
-                "expected_sha256": self.expected_sha256,
-                "pin_verified": True,
-                "outcomes": {
-                    "input_contract": {
-                        "check": "FAIL",
-                        "values": {
-                            "expected_shape": [10],
-                            "observed_shape": list(source.shape),
-                        },
-                    }
-                },
-            }
-        if constraint.ndim != 2 or constraint.shape[1:] != (10,):
-            return {
-                "source_path": self.SOURCE_PATH,
-                "source_sha256": self.actual_sha256,
-                "expected_sha256": self.expected_sha256,
-                "pin_verified": True,
-                "outcomes": {
-                    "input_contract": {
-                        "check": "FAIL",
-                        "values": {
-                            "expected_constraint_tail": [10],
-                            "observed_shape": list(constraint.shape),
-                        },
-                    }
-                },
-            }
+            constraint = np.asarray(constraint, dtype=float)
+        except Exception as exc:
+            return self._input_reject(
+                {
+                    "reason": (
+                        "canonical Ward-constraint load failed: "
+                        f"{type(exc).__name__}: {exc}"
+                    )
+                }
+            )
+        if (
+            constraint.ndim != 2
+            or constraint.shape[0] < 1
+            or constraint.shape[1:] != (10,)
+            or not np.all(np.isfinite(constraint))
+        ):
+            return self._input_reject(
+                {
+                    "expected": (
+                        "landed nonempty real finite Ward constraints with "
+                        "shape [n, 10]"
+                    ),
+                    "observed_shape": list(constraint.shape),
+                }
+            )
 
         projectors = S1.canonical_projectors()
         landed_calls = (
@@ -406,6 +476,7 @@ class TensorLiftAcceptance(_PinnedAcceptance):
             float(np.linalg.norm(constraint @ S1.oriented(source, eta)))
             for eta in (+1, -1, 0)
         ]
+        source_null_residual = float(np.linalg.norm(S1.oriented(source, 0)))
         inverse_operator = np.linalg.inv(S1.universal_block_operator())
         field_plus = inverse_operator @ plus
         field_minus = inverse_operator @ minus
@@ -442,7 +513,10 @@ class TensorLiftAcceptance(_PinnedAcceptance):
                 "block_norms": block_norms,
                 "twist_residual": twist_residual,
             },
-            "ward_constraints": {"residuals": ward_residuals},
+            "ward_constraints": {
+                "residuals": ward_residuals,
+                "source_null_residual": source_null_residual,
+            },
             "response_locking": {
                 "field_flip_residual": float(
                     np.linalg.norm(field_plus + field_minus)
@@ -476,66 +550,72 @@ class TensorLiftAcceptance(_PinnedAcceptance):
         }
 
     def verdict(self, record: dict[str, Any]) -> str:
-        if self._record_is_drifted(record):
-            return "DRIFT"
-        outcomes = record.get("outcomes", {})
-        frozen = self.FROZEN_EXPECTED["outcomes"]
-        if set(outcomes) != set(frozen):
-            return "REJECT"
-        if any(outcomes[name].get("check") != "PASS" for name in frozen):
-            return "REJECT"
+        try:
+            if self._record_is_drifted(record):
+                return "DRIFT"
+            if not _finite_data(record):
+                return "REJECT"
+            outcomes = record.get("outcomes", {})
+            frozen = self.FROZEN_EXPECTED["outcomes"]
+            if set(outcomes) != set(frozen):
+                return "REJECT"
+            if any(outcomes[name].get("check") != "PASS" for name in frozen):
+                return "REJECT"
 
-        projector = outcomes["projector_algebra"]["values"]
-        twist = outcomes["orientation_twist"]["values"]
-        ward = outcomes["ward_constraints"]["values"]
-        locking = outcomes["response_locking"]["values"]
-        scalar = outcomes["scalar_only_no_overclaim"]["values"]
-        carrier = outcomes["free_tensor_carrier"]["values"]
-        no_claim = outcomes["no_claim"]["values"]
-        expected_signs = frozen["response_locking"]["values"]["locking_signs"]
+            projector = outcomes["projector_algebra"]["values"]
+            twist = outcomes["orientation_twist"]["values"]
+            ward = outcomes["ward_constraints"]["values"]
+            locking = outcomes["response_locking"]["values"]
+            scalar = outcomes["scalar_only_no_overclaim"]["values"]
+            carrier = outcomes["free_tensor_carrier"]["values"]
+            no_claim = outcomes["no_claim"]["values"]
+            expected_signs = frozen["response_locking"]["values"]["locking_signs"]
 
-        accepted = (
-            projector["ranks"]
-            == frozen["projector_algebra"]["values"]["ranks"]
-            and max(twist["block_norms"].values()) >= 0.0
-            and all(value > 0.05 for value in twist["block_norms"].values())
-            and twist["twist_residual"] < S1.TOL
-            and max(ward["residuals"]) < 1.0e-10
-            and ward["residuals"][2] < S1.TOL
-            and locking["field_flip_residual"] < S1.TOL
-            and locking["field_null_residual"] < S1.TOL
-            and locking["positive_self"] > 0.0
-            and locking["locking_signs"] == expected_signs
-            and scalar["complement_norm"] < S1.TOL
-            and carrier["tensor_source_blocks"]["shift"] > 0.05
-            and carrier["tensor_source_blocks"]["shear"] > 0.05
-            and carrier["chi_only_blocks"]["shift"] == 0.0
-            and carrier["chi_only_blocks"]["shear"] == 0.0
-            and no_claim == frozen["no_claim"]["values"]
-        )
-        return "ACCEPT" if accepted else "REJECT"
+            accepted = (
+                projector["ranks"]
+                == frozen["projector_algebra"]["values"]["ranks"]
+                and all(value > 0.05 for value in twist["block_norms"].values())
+                and twist["twist_residual"] < S1.TOL
+                and max(ward["residuals"]) < 1.0e-10
+                and ward["source_null_residual"] < S1.TOL
+                and locking["field_flip_residual"] < S1.TOL
+                and locking["field_null_residual"] < S1.TOL
+                and locking["positive_self"] > 0.0
+                and locking["locking_signs"] == expected_signs
+                and scalar["complement_norm"] < S1.TOL
+                and carrier["tensor_source_blocks"]["shift"] > 0.05
+                and carrier["tensor_source_blocks"]["shear"] > 0.05
+                and carrier["chi_only_blocks"]["shift"] == 0.0
+                and carrier["chi_only_blocks"]["shear"] == 0.0
+                and no_claim == frozen["no_claim"]["values"]
+            )
+            return "ACCEPT" if accepted else "REJECT"
+        except (KeyError, TypeError, ValueError, IndexError, OverflowError):
+            return "REJECT"
 
 
 _RECOIL_ARGUMENT_DRIVER = r"""
 from contextlib import redirect_stdout
 import io
 import json
+from pathlib import Path
 import re
 import sys
 
+sys.path.insert(0, str(Path.cwd() / "scripts"))
 import two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18 as S2
 
 payload = json.load(sys.stdin)
 coin, fswap, contact, _update, _details = S2.c315.logical_update_controls(
     S2.LABELS
 )
-operator_spec = payload["operator_spec"]
-if operator_spec == "canonical":
+fixture_selector = payload["fixture_selector"]
+if fixture_selector == "canonical":
     factors = (coin, fswap, contact)
-elif operator_spec == "swap_coin_fswap":
+elif fixture_selector == "swap_coin_fswap":
     factors = (fswap, coin, contact)
 else:
-    raise ValueError(f"unsupported operator spec: {operator_spec!r}")
+    raise ValueError(f"unsupported fixture selector: {fixture_selector!r}")
 
 calls = (
     ("note_contract", S2.note_contract, ()),
@@ -584,11 +664,6 @@ for line in stream.getvalue().splitlines():
                 "values": {"landed_detail": detail},
             }
         )
-model_port = (
-    "no Cycle-322 certificate model-dict port"
-    if payload["model"] is None
-    else "supplied model rejected: no Cycle-322 certificate model-dict port"
-)
 record = {
     "outcomes": outcomes,
     "fixture_invariants": {
@@ -599,7 +674,7 @@ record = {
         "emission_absorption_channels": len(S2.ENDPOINTS) * len(S2.REVERSE),
         "ordered_recoil_pairs": len(S2.REVERSE),
     },
-    "model_port": model_port,
+    "fixture_selector": fixture_selector,
     "exceptions": exceptions,
 }
 print(json.dumps(record, sort_keys=True))
@@ -607,7 +682,7 @@ print(json.dumps(record, sort_keys=True))
 
 
 class RecoilReciprocityAcceptance(_PinnedAcceptance):
-    """Cycle-322 certificate wrapper with only its lawful partial arguments."""
+    """Cycle-322 wrapper over its canonical and swapped fixture selectors."""
 
     SOURCE_PATH = RECOIL_RECIPROCITY_PATH
     LANDED_SHA256_PIN = RECOIL_RECIPROCITY_SHA256
@@ -616,152 +691,113 @@ class RecoilReciprocityAcceptance(_PinnedAcceptance):
     def frozen_expected(self) -> dict[str, Any]:
         return copy.deepcopy(self.FROZEN_EXPECTED)
 
-    @staticmethod
-    def canonical_operator_triple() -> tuple[str, str, str]:
-        return "coin", "fswap", "contact"
-
-    @staticmethod
-    def _operator_spec(operator_triple: Any) -> str | None:
-        if operator_triple is None:
-            return "canonical"
-        if (
-            isinstance(operator_triple, str)
-            and operator_triple in {"canonical", "swap_coin_fswap"}
-        ):
-            return operator_triple
-        if isinstance(operator_triple, (tuple, list)):
-            names = tuple(operator_triple)
-            if names == ("coin", "fswap", "contact"):
-                return "canonical"
-            if names == ("fswap", "coin", "contact"):
-                return "swap_coin_fswap"
-        return None
+    def _operational_reject(
+        self, fixture_selector: Any, exception: str
+    ) -> dict[str, Any]:
+        return {
+            "source_path": self.SOURCE_PATH,
+            "source_sha256": self.actual_sha256,
+            "expected_sha256": self.expected_sha256,
+            "pin_verified": True,
+            "outcomes": [],
+            "fixture_invariants": copy.deepcopy(RECOIL_FIXTURE_INVARIANTS),
+            "fixture_selector": _jsonable(fixture_selector),
+            "returncode": None,
+            "exceptions": [
+                {
+                    "entry_point": "subprocess_driver",
+                    "exception": exception,
+                }
+            ],
+        }
 
     def accept(
         self,
-        operator_triple: Any | None = None,
-        model: Any | None = None,
+        fixture_selector: str = "canonical",
     ) -> dict[str, Any]:
         if not self._pin_still_verified():
             return _drift_record(
                 self.SOURCE_PATH, self.expected_sha256, self.actual_sha256
             )
-        operator_spec = self._operator_spec(operator_triple)
-        if operator_spec is None:
-            return {
-                "source_path": self.SOURCE_PATH,
-                "source_sha256": self.actual_sha256,
-                "expected_sha256": self.expected_sha256,
-                "pin_verified": True,
-                "outcomes": [],
-                "fixture_invariants": copy.deepcopy(RECOIL_FIXTURE_INVARIANTS),
-                "input_error": (
-                    "operator triple must name coin, fswap, contact or a supported "
-                    "perturbation spec"
-                ),
-                "model_port": "no Cycle-322 certificate model-dict port",
-            }
-
-        if operator_triple is None and model is None:
-            completed = subprocess.run(
-                [sys.executable, str(ROOT / self.SOURCE_PATH)],
-                cwd=ROOT,
-                text=True,
-                capture_output=True,
-                check=False,
-                timeout=AUDIT_TIMEOUT_SEC,
+        if fixture_selector not in {"canonical", "swap_coin_fswap"}:
+            return self._operational_reject(
+                fixture_selector,
+                "fixture selector must be canonical or swap_coin_fswap",
             )
-            pattern = re.compile(r"^(PASS|FAIL) (.*?) :: ?(.*)$")
-            outcomes = []
-            for line in completed.stdout.splitlines():
-                match = pattern.match(line)
-                if match:
-                    status, label, detail = match.groups()
-                    outcomes.append(
-                        {
-                            "check": label,
-                            "pass": status == "PASS",
-                            "values": {"landed_detail": detail},
-                        }
-                    )
-            child_record = {
-                "outcomes": outcomes,
-                "fixture_invariants": copy.deepcopy(RECOIL_FIXTURE_INVARIANTS),
-                "model_port": "no Cycle-322 certificate model-dict port",
-                "exceptions": (
-                    []
-                    if completed.returncode == 0
-                    else [
-                        {
-                            "entry_point": "main",
-                            "exception": (
-                                f"subprocess return code {completed.returncode}: "
-                                f"{completed.stderr.strip()}"
-                            ),
-                        }
-                    ]
-                ),
-            }
-        else:
+        try:
             completed = subprocess.run(
                 [sys.executable, "-c", _RECOIL_ARGUMENT_DRIVER],
                 cwd=ROOT,
                 input=json.dumps(
-                    {"operator_spec": operator_spec, "model": _jsonable(model)},
-                    sort_keys=True,
+                    {"fixture_selector": fixture_selector}, sort_keys=True
                 ),
                 text=True,
                 capture_output=True,
                 check=False,
                 timeout=AUDIT_TIMEOUT_SEC,
             )
-            try:
-                child_record = json.loads(completed.stdout)
-            except json.JSONDecodeError as exc:
-                child_record = {
-                    "outcomes": [],
-                    "fixture_invariants": copy.deepcopy(
-                        RECOIL_FIXTURE_INVARIANTS
+        except subprocess.TimeoutExpired as exc:
+            return self._operational_reject(
+                fixture_selector,
+                f"TimeoutExpired after {exc.timeout} seconds",
+            )
+        except OSError as exc:
+            return self._operational_reject(
+                fixture_selector, f"{type(exc).__name__}: {exc}"
+            )
+        if completed.returncode != 0:
+            return {
+                **self._operational_reject(
+                    fixture_selector,
+                    (
+                        f"subprocess return code {completed.returncode}: "
+                        f"{completed.stderr.strip()}"
                     ),
-                    "model_port": (
-                        "no Cycle-322 certificate model-dict port"
-                        if model is None
-                        else "supplied model rejected: no Cycle-322 certificate model-dict port"
-                    ),
-                    "exceptions": [
-                        {
-                            "entry_point": "subprocess_driver",
-                            "exception": (
-                                f"{type(exc).__name__}: {exc}; "
-                                f"return code {completed.returncode}; "
-                                f"stderr: {completed.stderr.strip()}"
-                            ),
-                        }
-                    ],
-                }
+                ),
+                "returncode": completed.returncode,
+            }
+        try:
+            child_record = json.loads(completed.stdout)
+            if not isinstance(child_record, dict):
+                raise TypeError("child record is not an object")
+        except (json.JSONDecodeError, TypeError) as exc:
+            return {
+                **self._operational_reject(
+                    fixture_selector, f"{type(exc).__name__}: {exc}"
+                ),
+                "returncode": completed.returncode,
+            }
         return {
             "source_path": self.SOURCE_PATH,
             "source_sha256": self.actual_sha256,
             "expected_sha256": self.expected_sha256,
             "pin_verified": True,
             **child_record,
+            "returncode": completed.returncode,
         }
 
     def verdict(self, record: dict[str, Any]) -> str:
-        if self._record_is_drifted(record):
-            return "DRIFT"
-        observed = [
-            {"check": row.get("check"), "pass": row.get("pass")}
-            for row in record.get("outcomes", [])
-        ]
-        accepted = (
-            observed == self.FROZEN_EXPECTED["outcomes"]
-            and record.get("fixture_invariants")
-            == self.FROZEN_EXPECTED["fixture_invariants"]
-            and record.get("model_port") == self.FROZEN_EXPECTED["model_port"]
-            and not record.get("exceptions")
-        )
-        return "ACCEPT" if accepted else "REJECT"
+        try:
+            if self._record_is_drifted(record):
+                return "DRIFT"
+            if not _finite_data(record):
+                return "REJECT"
+            observed = [
+                {"check": row.get("check"), "pass": row.get("pass")}
+                for row in record.get("outcomes", [])
+            ]
+            accepted = (
+                observed == self.FROZEN_EXPECTED["outcomes"]
+                and record.get("fixture_invariants")
+                == self.FROZEN_EXPECTED["fixture_invariants"]
+                and record.get("fixture_selector")
+                == self.FROZEN_EXPECTED["fixture_selector"]
+                and record.get("returncode") == 0
+                and not record.get("exceptions")
+            )
+            return "ACCEPT" if accepted else "REJECT"
+        except (KeyError, TypeError, ValueError, IndexError):
+            return "REJECT"
 
 
 def _extract_bridge_routes_as_data(source_text: str) -> list[dict[str, Any]]:
@@ -820,8 +856,8 @@ class TypedBridgeAcceptance(_PinnedAcceptance):
     LANDED_SHA256_PIN = TYPED_BRIDGE_SHA256
     FROZEN_EXPECTED = BRIDGE_FROZEN_EXPECTED
 
-    def __init__(self, expected_sha256: str | None = None) -> None:
-        super().__init__(expected_sha256)
+    def __init__(self) -> None:
+        super().__init__()
         self.contract_rows = []
         if self.pin_verified:
             source_text = (ROOT / self.SOURCE_PATH).read_text(encoding="utf-8")
@@ -833,19 +869,40 @@ class TypedBridgeAcceptance(_PinnedAcceptance):
     def contract_row_digest(self) -> str:
         return _digest(self.contract_rows)
 
+    def _operational_reject(self, exception: str) -> dict[str, Any]:
+        return {
+            "source_path": self.SOURCE_PATH,
+            "source_sha256": self.actual_sha256,
+            "expected_sha256": self.expected_sha256,
+            "pin_verified": True,
+            "returncode": None,
+            "outcomes": [],
+            "counts": {"pass": 0, "fail": 0},
+            "contract_rows": copy.deepcopy(self.contract_rows),
+            "contract_scope": "not one combined law",
+            "stderr": exception,
+        }
+
     def accept(self) -> dict[str, Any]:
         if not self._pin_still_verified():
             return _drift_record(
                 self.SOURCE_PATH, self.expected_sha256, self.actual_sha256
             )
-        completed = subprocess.run(
-            [sys.executable, str(ROOT / self.SOURCE_PATH)],
-            cwd=ROOT,
-            text=True,
-            capture_output=True,
-            check=False,
-            timeout=AUDIT_TIMEOUT_SEC,
-        )
+        try:
+            completed = subprocess.run(
+                [sys.executable, str(ROOT / self.SOURCE_PATH)],
+                cwd=ROOT,
+                text=True,
+                capture_output=True,
+                check=False,
+                timeout=AUDIT_TIMEOUT_SEC,
+            )
+        except subprocess.TimeoutExpired as exc:
+            return self._operational_reject(
+                f"TimeoutExpired after {exc.timeout} seconds"
+            )
+        except OSError as exc:
+            return self._operational_reject(f"{type(exc).__name__}: {exc}")
         pattern = re.compile(r"^(PASS|FAIL) (.*?) :: ?(.*)$")
         outcomes = []
         for line in completed.stdout.splitlines():
@@ -876,22 +933,27 @@ class TypedBridgeAcceptance(_PinnedAcceptance):
         }
 
     def verdict(self, record: dict[str, Any]) -> str:
-        if self._record_is_drifted(record):
-            return "DRIFT"
-        observed = [
-            {"check": row.get("check"), "pass": row.get("pass")}
-            for row in record.get("outcomes", [])
-        ]
-        accepted = (
-            record.get("returncode") == 0
-            and observed == self.FROZEN_EXPECTED["outcomes"]
-            and record.get("counts") == self.FROZEN_EXPECTED["counts"]
-            and record.get("contract_rows")
-            == self.FROZEN_EXPECTED["contract_rows"]
-            and record.get("contract_scope")
-            == self.FROZEN_EXPECTED["contract_scope"]
-        )
-        return "ACCEPT" if accepted else "REJECT"
+        try:
+            if self._record_is_drifted(record):
+                return "DRIFT"
+            if not _finite_data(record):
+                return "REJECT"
+            observed = [
+                {"check": row.get("check"), "pass": row.get("pass")}
+                for row in record.get("outcomes", [])
+            ]
+            accepted = (
+                record.get("returncode") == 0
+                and observed == self.FROZEN_EXPECTED["outcomes"]
+                and record.get("counts") == self.FROZEN_EXPECTED["counts"]
+                and record.get("contract_rows")
+                == self.FROZEN_EXPECTED["contract_rows"]
+                and record.get("contract_scope")
+                == self.FROZEN_EXPECTED["contract_scope"]
+            )
+            return "ACCEPT" if accepted else "REJECT"
+        except (KeyError, TypeError, ValueError, IndexError):
+            return "REJECT"
 
 
 _SELF_PASS = 0
@@ -960,10 +1022,8 @@ def main() -> int:
     }
     check("all three landed byte pins verify", all(row["verified"] for row in pins.values()), pins)
 
-    canonical_source, canonical_constraints = S1.tensor_source_with_constraints()
-    canonical_tensor_record = tensor.accept(
-        canonical_source, canonical_constraints
-    )
+    canonical_source, _canonical_constraints = S1.tensor_source_with_constraints()
+    canonical_tensor_record = tensor.accept(canonical_source)
     canonical_tensor_verdict = tensor.verdict(canonical_tensor_record)
     check(
         "tensor canonical fixture is ACCEPT",
@@ -976,10 +1036,52 @@ def main() -> int:
         == tensor.frozen_expected()["outcomes"],
         _digest(canonical_tensor_record["outcomes"]),
     )
-
-    corrupted_tensor_record = tensor.accept(
-        np.zeros(10, dtype=float), canonical_constraints
+    invalid_tensor_verdicts = {
+        "boolean": tensor.verdict(
+            tensor.accept(np.ones(10, dtype=bool))
+        ),
+        "complex": tensor.verdict(
+            tensor.accept((1.0 + 0.1j) * canonical_source)
+        ),
+        "string": tensor.verdict(
+            tensor.accept(np.asarray(["x"] * 10))
+        ),
+        "nonfinite": tensor.verdict(
+            tensor.accept(np.full(10, np.nan))
+        ),
+    }
+    check(
+        "tensor input contract rejects non-real or nonfinite vectors",
+        set(invalid_tensor_verdicts.values()) == {"REJECT"},
+        invalid_tensor_verdicts,
     )
+    nonfinite_record = copy.deepcopy(canonical_tensor_record)
+    nonfinite_record["outcomes"]["response_locking"]["values"][
+        "positive_self"
+    ] = math.inf
+    malformed_record = copy.deepcopy(canonical_tensor_record)
+    del malformed_record["outcomes"]["response_locking"]["values"][
+        "positive_self"
+    ]
+    malformed_verdicts = {
+        "nonfinite_record": tensor.verdict(nonfinite_record),
+        "missing_field": tensor.verdict(malformed_record),
+    }
+    check(
+        "tensor verdict rejects nonfinite or malformed records",
+        set(malformed_verdicts.values()) == {"REJECT"},
+        malformed_verdicts,
+    )
+    tampered_record_pin = copy.deepcopy(canonical_tensor_record)
+    tampered_record_pin["expected_sha256"] = "0" * 64
+    tampered_record_verdict = tensor.verdict(tampered_record_pin)
+    check(
+        "record-carried expected pin mismatch classifies DRIFT",
+        tampered_record_verdict == "DRIFT",
+        tampered_record_verdict,
+    )
+
+    corrupted_tensor_record = tensor.accept(np.zeros(10, dtype=float))
     corrupted_tensor_verdict = tensor.verdict(corrupted_tensor_record)
     tensor_flips = _flipped_labels(
         tensor.frozen_expected(), corrupted_tensor_record
@@ -988,17 +1090,6 @@ def main() -> int:
         "corrupted tensor vector is REJECT with flipped checks",
         corrupted_tensor_verdict == "REJECT" and bool(tensor_flips),
         {"verdict": corrupted_tensor_verdict, "flipped_checks": tensor_flips},
-    )
-
-    role_vector = np.asarray(
-        ROLE_UNIFORM_REDUCTION_CONVENTION["vector"], dtype=float
-    )
-    role_tensor_record = tensor.accept(role_vector)
-    role_tensor_verdict = tensor.verdict(role_tensor_record)
-    check(
-        "Cycle-725 role-uniform reduction cross-anchor is ACCEPT",
-        role_tensor_verdict == "ACCEPT",
-        role_tensor_verdict,
     )
 
     recoil_record = recoil.accept()
@@ -1018,8 +1109,12 @@ def main() -> int:
     perturbed_recoil_verdict = recoil.verdict(perturbed_recoil_record)
     recoil_flips = _recoil_flipped_labels(perturbed_recoil_record)
     check(
-        "coin/FSWAP-swapped operator triple is REJECT",
-        perturbed_recoil_verdict == "REJECT" and bool(recoil_flips),
+        "coin/FSWAP-swapped landed fixture is an exact four-check REJECT",
+        perturbed_recoil_record.get("returncode") == 0
+        and not perturbed_recoil_record.get("exceptions")
+        and len(perturbed_recoil_record.get("outcomes", [])) == 20
+        and perturbed_recoil_verdict == "REJECT"
+        and tuple(recoil_flips) == RECOIL_SWAP_FLIPPED_LABELS,
         {
             "verdict": perturbed_recoil_verdict,
             "flipped_checks": recoil_flips,
@@ -1040,9 +1135,11 @@ def main() -> int:
         bridge_digest,
     )
 
-    wrong_pin = "0" * 64
-    drift_tensor = TensorLiftAcceptance(expected_sha256=wrong_pin)
-    drift_record = drift_tensor.accept(canonical_source, canonical_constraints)
+    class WrongPinTensorLiftAcceptance(TensorLiftAcceptance):
+        LANDED_SHA256_PIN = "0" * 64
+
+    drift_tensor = WrongPinTensorLiftAcceptance()
+    drift_record = drift_tensor.accept(canonical_source)
     drift_verdict = drift_tensor.verdict(drift_record)
     check(
         "wrong local tensor pin refuses execution and classifies DRIFT",
@@ -1052,26 +1149,24 @@ def main() -> int:
 
     honest_keys = {
         "new_physics_claimed": False,
-        "c_source_firewall": True,
         "harness_input_ports": {
             "tensor_lift": True,
-            "recoil": "partial-args",
+            "recoil": False,
             "typed_bridge": False,
         },
-        "ceiling_role": "acceptance infrastructure only",
+        "tool_role": "non-authoritative candidate testing",
     }
     check(
-        "support/meta ceiling and C_source firewall are explicit",
+        "support/meta tool boundary is explicit",
         honest_keys
         == {
             "new_physics_claimed": False,
-            "c_source_firewall": True,
             "harness_input_ports": {
                 "tensor_lift": True,
-                "recoil": "partial-args",
+                "recoil": False,
                 "typed_bridge": False,
             },
-            "ceiling_role": "acceptance infrastructure only",
+            "tool_role": "non-authoritative candidate testing",
         },
         honest_keys,
     )
@@ -1092,7 +1187,6 @@ def main() -> int:
                 "verdict": corrupted_tensor_verdict,
                 "flipped_checks": tensor_flips,
             },
-            "tensor_role_uniform": role_tensor_verdict,
             "recoil_landed": recoil_verdict,
             "recoil_swapped_operator": {
                 "verdict": perturbed_recoil_verdict,

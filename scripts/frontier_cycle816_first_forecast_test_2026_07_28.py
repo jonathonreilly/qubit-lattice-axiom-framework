@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""Cycle 816: first prospective test of the Cycle-795 separators.
+"""Cycle 816 v2: domain-corrected forecast audit of Cycle 795.
 
 The Cycle-795 and Cycle-814 primaries are SHA-pinned text/AST references:
 they are never imported or executed.  The landed Cycle-719 core is the only
 executable science input.  This runner independently reconstructs the 795
-feature table, 103 clean separator hypotheses, and 46 forecast vectors, then
-tests the two Cycle-814 primary-certified period-4464 outcomes.
-
-Cycle 795 used an explicit UNSEEN forecast state.  In the universal-separator
-test requested here, only a CYCLE forecast is correct for a certified cycle;
-TRANSIENT and UNSEEN therefore both fail that key and kill the hypothesis.
+pair-domain feature table, 103 clean separator hypotheses, and 46 forecast
+vectors.  It adopts the independent checker's correction: the two Cycle-814
+k=4 resolutions are outside the Cycle-795 class domain and test none of the
+103 hypotheses.  The former v1 projection is retained only as an explicitly
+out-of-domain occupied-set-extension diagnostic.
 """
 from __future__ import annotations
 
@@ -94,11 +93,10 @@ import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
 
 RING_STATIONS = 11
 FIXTURE_BANKS = 2
-FAMILY_SIZE = 176
-OLD_OPEN_SIZE = 162
-HIGHER_K_BASELINE_OPEN_SIZE = 24
-HIGHER_K_REMAINING_OPEN_SIZE = 22
-COMBINED_REMAINING_OPEN_SIZE = 184
+PAIR_FAMILY_SIZE = 176
+PAIR_OPEN_SIZE = 162
+EXTENSION_HIGHER_K_BASELINE_OPEN_SIZE = 24
+EXTENSION_HIGHER_K_REMAINING_OPEN_SIZE = 22
 LANDED_CONSTANTS = (130, 11, 2, 5, 12, 288, 6, 3)
 EXPECTED_PRIMARY_TABLE_SHA256 = (
     "266dd5f0c36cb79eb88a143c303e31ef1f79b068d6131545962ee38f8d24e705"
@@ -141,10 +139,10 @@ RESOLVED_KEYS = (
     (4, (0, 2, 4, 8), 1),
 )
 RESOLVED_PERIOD = 4464
-SCOPE_STATEMENT = (
-    "the two resolutions are primary-verified with the independent checker "
-    "still running at spec time; the kill census is conditional on those "
-    "certifications holding; the ship will narrate the checker's outcome"
+DOMAIN_SCOPE_STATEMENT = (
+    "Cycle 795 defines its separator hypotheses only on Key = "
+    "tuple[int, tuple[int, int]] and forecasts only its 162 open pair keys; "
+    "both Cycle-814 k=4 resolutions are outside that domain"
 )
 
 Coordinate = tuple[str, str, int]
@@ -183,6 +181,84 @@ def literal_assignment(tree: ast.Module, name: str) -> object | None:
         return ast.literal_eval(matches[0])
     except (TypeError, ValueError):
         return None
+
+
+def assignment_node(tree: ast.Module, name: str) -> ast.Assign:
+    matches = [
+        node
+        for node in tree.body
+        if isinstance(node, ast.Assign)
+        and any(
+            isinstance(target, ast.Name) and target.id == name
+            for target in node.targets
+        )
+    ]
+    if len(matches) != 1:
+        raise AssertionError(("assignment", name, len(matches)))
+    return matches[0]
+
+
+def named_function(tree: ast.Module, name: str) -> ast.FunctionDef:
+    matches = [
+        node
+        for node in tree.body
+        if isinstance(node, ast.FunctionDef) and node.name == name
+    ]
+    if len(matches) != 1:
+        raise AssertionError(("function", name, len(matches)))
+    return matches[0]
+
+
+def returned_dict_literal(
+    function: ast.FunctionDef,
+    key: str,
+) -> object:
+    returns = [
+        node.value
+        for node in function.body
+        if isinstance(node, ast.Return)
+        and isinstance(node.value, ast.Dict)
+    ]
+    if len(returns) != 1:
+        raise AssertionError(("dict return", function.name, len(returns)))
+    mapping = {
+        ast.literal_eval(key_node): value_node
+        for key_node, value_node in zip(
+            returns[0].keys, returns[0].values
+        )
+        if key_node is not None
+    }
+    return ast.literal_eval(mapping[key])
+
+
+def has_pair_key_unpack(function: ast.FunctionDef) -> bool:
+    return any(
+        isinstance(node, ast.Assign)
+        and len(node.targets) == 1
+        and isinstance(node.targets[0], ast.Tuple)
+        and len(node.targets[0].elts) == 2
+        and isinstance(node.targets[0].elts[0], ast.Name)
+        and node.targets[0].elts[0].id == "epoch"
+        and isinstance(node.targets[0].elts[1], ast.Tuple)
+        and tuple(
+            item.id if isinstance(item, ast.Name) else None
+            for item in node.targets[0].elts[1].elts
+        ) == ("left", "right")
+        and isinstance(node.value, ast.Name)
+        and node.value.id == "key"
+        for node in ast.walk(function)
+    )
+
+
+def has_open_key_forecast_loop(function: ast.FunctionDef) -> bool:
+    return any(
+        isinstance(node, ast.For)
+        and isinstance(node.target, ast.Name)
+        and node.target.id == "key"
+        and isinstance(node.iter, ast.Name)
+        and node.iter.id == "open_keys"
+        for node in ast.walk(function)
+    )
 
 
 def function_names(tree: ast.Module) -> set[str]:
@@ -224,6 +300,75 @@ def source_certificate() -> dict[str, object]:
     primary795_names = function_names(trees[AUDIT_INPUT_PATHS[1]])
     checker795_names = function_names(trees[AUDIT_INPUT_PATHS[2]])
     primary814_names = function_names(trees[AUDIT_INPUT_PATHS[3]])
+    primary795_tree = trees[AUDIT_INPUT_PATHS[1]]
+    primary795_text = payloads[AUDIT_INPUT_PATHS[1]].decode("utf-8")
+    key_node = assignment_node(primary795_tree, "Key")
+    feature_table_795 = named_function(primary795_tree, "feature_table")
+    candidate_795 = named_function(primary795_tree, "candidate_result")
+    boundaries_795 = named_function(primary795_tree, "boundaries")
+    key_annotation = ast.unparse(key_node.value)
+    domain_evidence = {
+        "definition_path": AUDIT_INPUT_PATHS[1],
+        "defining_code": (
+            {
+                "line": key_node.lineno,
+                "symbol": "Key",
+                "snippet": ast.get_source_segment(
+                    primary795_text, key_node
+                ),
+            },
+            {
+                "line": feature_table_795.lineno,
+                "symbol": "feature_table",
+                "snippet":
+                    "dict[Key, tuple[int, ...]]; "
+                    "epoch, (left, right) = key",
+            },
+            {
+                "line": candidate_795.lineno,
+                "symbol": "candidate_result",
+                "snippet":
+                    "features: dict[Key, ...]; "
+                    "for key in open_keys: forecast implication",
+            },
+            {
+                "line": boundaries_795.lineno,
+                "symbol": "boundaries",
+                "snippet":
+                    "scope = FINITE_14_RESOLVED_KEY_DISCRIMINATION_CENSUS",
+            },
+        ),
+        "Key_annotation": key_annotation,
+        "feature_table_pair_unpack": has_pair_key_unpack(feature_table_795),
+        "candidate_forecasts_only_for_open_keys":
+            has_open_key_forecast_loop(candidate_795),
+        "family_size": literal_assignment(primary795_tree, "FAMILY_SIZE"),
+        "open_size": literal_assignment(primary795_tree, "OPEN_SIZE"),
+        "scope": returned_dict_literal(boundaries_795, "scope"),
+        "separator_status":
+            returned_dict_literal(boundaries_795, "separator_status"),
+        "forecast_status":
+            returned_dict_literal(boundaries_795, "forecast_status"),
+        "higher_k_definition_present": any(
+            isinstance(node, (ast.FunctionDef, ast.ClassDef))
+            and "higher" in node.name.lower()
+            for node in primary795_tree.body
+        ),
+    }
+    domain_evidence["pair_domain_exact"] = (
+        key_annotation == "tuple[int, tuple[int, int]]"
+        and domain_evidence["feature_table_pair_unpack"]
+        and domain_evidence["candidate_forecasts_only_for_open_keys"]
+        and domain_evidence["family_size"] == PAIR_FAMILY_SIZE
+        and domain_evidence["open_size"] == PAIR_OPEN_SIZE
+        and domain_evidence["scope"]
+        == "FINITE_14_RESOLVED_KEY_DISCRIMINATION_CENSUS"
+        and domain_evidence["separator_status"]
+        == "HYPOTHESIS_GENERATOR_NOT_A_LAW"
+        and domain_evidence["forecast_status"]
+        == "FEATURE_IMPLICATION_ONLY_NOT_A_CLAIM"
+        and not domain_evidence["higher_k_definition_present"]
+    )
     audit_literal = literal_assignment(self_tree, "AUDIT_INPUT_PATHS")
     silent_literal = literal_assignment(
         trees[AUDIT_INPUT_PATHS[3]],
@@ -272,6 +417,7 @@ def source_certificate() -> dict[str, object]:
         } <= primary814_names,
         "cycle814_silent_literal_exact":
             silent_literal == EXPECTED_SILENT_FAMILY_REPRESENTATIVES,
+        "cycle795_domain": domain_evidence,
     }
     result["pass"] = (
         result["AUDIT_INPUT_PATHS_literal"]
@@ -287,6 +433,7 @@ def source_certificate() -> dict[str, object]:
         and result["cycle795_checker_AST_basis"]
         and result["cycle814_primary_AST_basis"]
         and result["cycle814_silent_literal_exact"]
+        and domain_evidence["pair_domain_exact"]
     )
     return result
 
@@ -454,6 +601,7 @@ def build_initial_supports() -> dict[str, object]:
             pair_supports[(event, positions)] = residual_coordinates(after)
 
     higher_supports: dict[HigherKey, Support] = {}
+    higher_initial_states: dict[HigherKey, tuple[int, ...]] = {}
     for k, representatives in EXPECTED_SILENT_FAMILY_REPRESENTATIVES.items():
         for positions in representatives:
             for event, _direction, before in fixtures:
@@ -471,10 +619,13 @@ def build_initial_supports() -> dict[str, object]:
                 higher_supports[(k, positions, event)] = (
                     residual_coordinates(after)
                 )
+                higher_initial_states[(k, positions, event)] = after
     return {
+        "program": program,
         "fixtures": fixtures,
         "pair_supports": pair_supports,
         "higher_supports": higher_supports,
+        "higher_initial_states": higher_initial_states,
     }
 
 
@@ -644,9 +795,11 @@ def reconstruct_feature_tables() -> dict[str, object]:
             support_classes,
         )
     return {
+        "program": supports["program"],
         "pair_features": pair_features,
         "pair_rows": tuple(pair_rows),
         "higher_features": higher_features,
+        "higher_initial_states": supports["higher_initial_states"],
         "support_classes": support_classes,
     }
 
@@ -741,6 +894,13 @@ def prospective_test(
     tables: dict[str, object],
     separators: dict[str, object],
 ) -> dict[str, object]:
+    """Reproduce v1 only under its later, out-of-domain feature extension.
+
+    Nothing returned here is a test of the landed Cycle-795 class.  The
+    calculations answer the counterfactual: what would the Cycle-795 formulas
+    say if `named_features` were extended from pairs to occupied sets?
+    """
+
     higher_features = tables["higher_features"]
     rows = []
     bins = {
@@ -768,7 +928,9 @@ def prospective_test(
                     "separator_value": value,
                     "forecast_side": side,
                     "resolved_side": "CYCLE",
-                    "test_result": "CORRECT" if correct else "WRONG",
+                    "extension_diagnostic_result":
+                        "MATCH" if correct else "MISMATCH",
+                    "domain_status": "OUTSIDE_CYCLE795_DOMAIN",
                 }
             )
         bin_name = {
@@ -781,9 +943,9 @@ def prospective_test(
             {
                 "hypothesis_id": hypothesis_id,
                 "features": hypothesis["names"],
-                "key_tests": tuple(key_rows),
-                "census_bin": bin_name,
-                "killed_as_universal_separator": correct_count < 2,
+                "extension_diagnostics": tuple(key_rows),
+                "extension_census_bin": bin_name,
+                "landed_class_effect": "NONE_NOT_TESTED",
             }
         )
     survivors = tuple(bins["correct_on_both"])
@@ -817,14 +979,91 @@ def prospective_test(
     }
 
 
+def synchronous_word(
+    program: tuple[object, ...],
+    occupied: tuple[int, ...],
+) -> tuple[object, ...]:
+    """Compose one synchronous occupied-set scheduler period directly."""
+
+    current = frozenset(occupied)
+    word = []
+    for _tick in range(len(program)):
+        for station, macro in enumerate(program):
+            if station in current:
+                word.extend(K.mapped_macro(macro))
+        current = frozenset(
+            (station + 1) % len(program) for station in current
+        )
+    return tuple(word)
+
+
+def clean_postimage(state: tuple[int, ...]) -> bool:
+    return not residual_coordinates(state)
+
+
+def verify_two_cycles(tables: dict[str, object]) -> tuple[
+    dict[str, object], ...
+]:
+    """Independently re-certify the two landed period-4464 cycle facts."""
+
+    rows = []
+    for key in RESOLVED_KEYS:
+        _k, positions, _event = key
+        word = synchronous_word(tables["program"], positions)
+        initial = tables["higher_initial_states"][key]
+        state = initial
+        clean_moments = []
+        earlier_returns = []
+        trajectory_hasher = sha256()
+        for moment in range(RESOLVED_PERIOD):
+            trajectory_hasher.update(
+                str(sum(bit << index for index, bit in enumerate(state)))
+                .encode("ascii")
+            )
+            trajectory_hasher.update(b"\n")
+            if clean_postimage(state):
+                clean_moments.append(moment)
+            if moment and state == initial:
+                earlier_returns.append(moment)
+            state = K.A.apply_semantic(state, word)
+        rows.append(
+            {
+                "key": key,
+                "period": RESOLVED_PERIOD,
+                "all_phases_nonclean": not clean_moments,
+                "clean_moments": tuple(clean_moments),
+                "no_earlier_return_to_T0": not earlier_returns,
+                "earlier_return_moments": tuple(earlier_returns),
+                "exact_full_state_return_to_T0": state == initial,
+                "initial_state_sha256": sha256(
+                    str(
+                        sum(
+                            bit << index
+                            for index, bit in enumerate(initial)
+                        )
+                    ).encode("ascii")
+                ).hexdigest(),
+                "trajectory_sha256": trajectory_hasher.hexdigest(),
+                "permanent_cycle_certified": (
+                    not clean_moments
+                    and not earlier_returns
+                    and state == initial
+                ),
+            }
+        )
+    return tuple(rows)
+
+
 def analysis_once() -> dict[str, object]:
     tables = reconstruct_feature_tables()
     separators = separator_reconstruction(tables)
-    test = prospective_test(tables, separators)
+    extension = prospective_test(tables, separators)
+    cycles = verify_two_cycles(tables)
     return {
         "tables": tables,
         "separators": separators,
-        "test": test,
+        "extension": extension,
+        "cycles": cycles,
         "stable_digest": digest(
             {
                 "pair_rows": tables["pair_rows"],
@@ -838,8 +1077,10 @@ def analysis_once() -> dict[str, object]:
                 "old_forecasts": tuple(
                     row["forecast"] for row in separators["clean"]
                 ),
-                "test_rows": test["rows"],
-                "higher_open_keys": test["higher_open_keys"],
+                "extension_rows": extension["rows"],
+                "extension_higher_open_keys":
+                    extension["higher_open_keys"],
+                "cycles": cycles,
             }
         ),
     }
@@ -872,13 +1113,13 @@ def stable_render(
         report["checks"] = dict(checks)
         report["pass"] = all(checks.values())
         report["terminal"] = (
-            "CYCLE816_FIRST_FORECAST_TEST_PASS"
+            "CYCLE816_FIRST_FORECAST_TEST_V2_PASS"
             if report["pass"]
-            else "CYCLE816_FIRST_FORECAST_TEST_HONEST_FAIL"
+            else "CYCLE816_FIRST_FORECAST_TEST_V2_HONEST_FAIL"
         )
         output = render(checks, certificates, report)
         size = len(output.encode("utf-8"))
-        controls = certificates["E_CONTROLS"]
+        controls = certificates["F_CONTROLS"]
         if (
             report["stdout_bytes"] == size
             and controls["stdout_bytes"] == size
@@ -898,116 +1139,177 @@ def run() -> int:
     first = analysis_once()
     tables = first["tables"]
     separators = first["separators"]
-    test = first["test"]
+    extension = first["extension"]
+    cycles = first["cycles"]
+    domain = sources["cycle795_domain"]
+    out_of_domain_rows = tuple(
+        {
+            "cycle814_key": key,
+            "cycle814_k": key[0],
+            "cycle814_position_count": len(key[1]),
+            "cycle795_required_position_count": 2,
+            "within_cycle795_domain": False,
+        }
+        for key in RESOLVED_KEYS
+    )
 
     a_pass = (
         sources["pass"]
-        and len(FEATURE_SCHEMA) == len(set(FEATURE_SCHEMA)) == 89
+        and domain["pair_domain_exact"]
+        and domain["Key_annotation"] == "tuple[int, tuple[int, int]]"
+        and domain["family_size"] == PAIR_FAMILY_SIZE
+        and domain["open_size"] == PAIR_OPEN_SIZE
+        and not domain["higher_k_definition_present"]
+        and all(
+            row["cycle814_k"] == 4
+            and row["cycle814_position_count"] == 4
+            and not row["within_cycle795_domain"]
+            for row in out_of_domain_rows
+        )
+    )
+    checks["A_DOMAIN_AUDIT_EXACT_PAIR_CLASS"] = a_pass
+    certificates["A_DOMAIN_AUDIT"] = {
+        "finding": DOMAIN_SCOPE_STATEMENT,
+        "cycle795_definition": domain,
+        "resolved_key_domain_checks": out_of_domain_rows,
+        "domain_verdict":
+            "BOTH_CYCLE814_RESOLUTIONS_OUTSIDE_CYCLE795_DOMAIN",
+    }
+
+    corrected_census = {
+        "hypotheses": len(separators["clean"]),
+        "not_tested_by_k4_resolutions": len(separators["clean"]),
+        "killed": 0,
+        "not_refuted": len(separators["clean"]),
+    }
+    b_pass = (
+        len(FEATURE_SCHEMA) == len(set(FEATURE_SCHEMA)) == 89
         and len(PAIR_FEATURES) == len(set(PAIR_FEATURES)) == 24
-        and len(tables["pair_features"]) == FAMILY_SIZE
-        and len(tables["pair_rows"]) == FAMILY_SIZE
+        and len(tables["pair_features"]) == PAIR_FAMILY_SIZE
+        and len(tables["pair_rows"]) == PAIR_FAMILY_SIZE
         and len(tables["support_classes"]) == 25
         and digest(tables["pair_rows"]) == EXPECTED_PRIMARY_TABLE_SHA256
         and len(separators["candidate_names"]) == 365
         and len(separators["clean"]) == 103
         and separators["clean_names_sha256"]
         == EXPECTED_CLEAN_NAMES_SHA256
-        and len(test["rows"]) == 103
-        and all(
-            tuple(row["key_tests"][index]["key"] for row in test["rows"])
-            == (RESOLVED_KEYS[index],) * 103
-            for index in range(2)
-        )
+        and len(separators["open_keys"]) == PAIR_OPEN_SIZE
+        and separators["unique_old_forecast_vectors"]
+        == EXPECTED_OLD_FORECAST_VECTORS
+        and corrected_census
+        == {
+            "hypotheses": 103,
+            "not_tested_by_k4_resolutions": 103,
+            "killed": 0,
+            "not_refuted": 103,
+        }
     )
-    checks["A_RECONSTRUCT_103_FORECAST_TEST_ROWS"] = a_pass
-    certificates["A_FORECAST_TABLE_103"] = {
-        "finding":
-            "full hypothesis values and prospective sides for both keys",
-        "feature_extension":
-            "canonical occupied-set extension: extrema for arc features; "
-            "all sites for sum/product/mask/modular mean/equal-residue; "
-            "actual higher-k postimage support; unseen support signatures "
-            "cannot alias the frozen Cycle-795 25-class vocabulary",
-        "resolved_keys": RESOLVED_KEYS,
-        "rows": test["rows"],
-        "rows_sha256": test["test_sha256"],
+    checks["B_CORRECTED_CENSUS_103_NOT_TESTED_ZERO_KILLED"] = b_pass
+    certificates["B_CORRECTED_CENSUS"] = {
+        "domain_status_for_both_resolutions": "UNDEFINED_OUT_OF_DOMAIN",
+        "census": corrected_census,
+        "forecast_vectors_before": EXPECTED_OLD_FORECAST_VECTORS,
+        "forecast_vectors_after": EXPECTED_OLD_FORECAST_VECTORS,
+        "vector_census": "46 -> 46",
+        "extinction_verdict": "RETRACTED_OUT_OF_DOMAIN",
+        "v1_retraction": (
+            "The v1 extinction verdict silently extended pair-domain "
+            "formulas to k=4 and is retracted; the landed class was never "
+            "tested by these resolutions."
+        ),
     }
 
-    counts = test["counts"]
-    b_pass = (
-        sum(counts.values()) == 103
-        and counts == {
+    extension_counts = extension["counts"]
+    c_pass = (
+        len(tables["higher_features"])
+        == EXTENSION_HIGHER_K_BASELINE_OPEN_SIZE
+        and len(extension["higher_open_keys"])
+        == EXTENSION_HIGHER_K_REMAINING_OPEN_SIZE
+        and len(extension["rows"]) == 103
+        and extension_counts
+        == {
             "correct_on_both": 0,
             "correct_on_one": 8,
             "wrong_on_both": 95,
         }
-        and len(test["survivors"]) == counts["correct_on_both"]
-        and all(row["killed_as_universal_separator"] for row in test["rows"])
-    )
-    checks["B_KILL_CENSUS_EXHAUSTIVE"] = b_pass
-    certificates["B_KILL_CENSUS"] = {
-        "outcomes": tuple(
-            {
-                "key": key,
-                "side": "CYCLE",
-                "period": RESOLVED_PERIOD,
-                "verification": "PRIMARY_VERIFIED_CHECKER_PENDING",
-            }
-            for key in RESOLVED_KEYS
-        ),
-        "UNSEEN_rule":
-            "Cycle 795 emitted UNSEEN; for a universal binary separator it "
-            "is not a correct CYCLE prediction and therefore counts WRONG",
-        "counts": counts,
-        "lists": test["bins"],
-        "killed": 103 - len(test["survivors"]),
-        "surviving_hypotheses": test["survivors"],
-        "surviving_count": len(test["survivors"]),
-    }
-
-    c_pass = (
-        len(separators["open_keys"]) == OLD_OPEN_SIZE
-        and len(tables["higher_features"]) == HIGHER_K_BASELINE_OPEN_SIZE
-        and len(test["higher_open_keys"]) == HIGHER_K_REMAINING_OPEN_SIZE
-        and test["combined_open_count"] == COMBINED_REMAINING_OPEN_SIZE
-        and separators["unique_old_forecast_vectors"]
-        == EXPECTED_OLD_FORECAST_VECTORS
-        and test["surviving_vector_count"] == 0
-    )
-    checks["C_SURVIVING_FAMILY_VECTOR_COLLAPSE"] = c_pass
-    certificates["C_SURVIVING_FAMILY"] = {
-        "old_open_keys": len(separators["open_keys"]),
-        "higher_k_open_before_resolutions":
-            len(tables["higher_features"]),
-        "higher_k_open_after_resolutions": len(test["higher_open_keys"]),
-        "still_open": "22+162=184",
-        "original_hypotheses": len(separators["clean"]),
-        "surviving_hypotheses": len(test["survivors"]),
-        "original_distinct_forecast_vectors":
-            separators["unique_old_forecast_vectors"],
-        "surviving_distinct_forecast_vectors":
-            test["surviving_vector_count"],
-        "collapse": "46 -> 0",
-        "surviving_fraction": 0.0,
-        "higher_open_keyset_sha256": digest(test["higher_open_keys"]),
-    }
-
-    d_pass = (
-        SCOPE_STATEMENT
-        == (
-            "the two resolutions are primary-verified with the independent "
-            "checker still running at spec time; the kill census is "
-            "conditional on those certifications holding; the ship will "
-            "narrate the checker's outcome"
+        and not extension["survivors"]
+        and extension["surviving_vector_count"] == 0
+        and all(
+            diagnostic["domain_status"]
+            == "OUTSIDE_CYCLE795_DOMAIN"
+            for row in extension["rows"]
+            for diagnostic in row["extension_diagnostics"]
         )
     )
-    checks["D_HONEST_CONDITIONAL_SCOPE"] = d_pass
-    certificates["D_HONEST_SCOPE"] = {
-        "statement": SCOPE_STATEMENT,
-        "primary_status": "PRIMARY_VERIFIED",
-        "checker_status_at_spec_time": "STILL_RUNNING",
-        "census_status":
-            "CONDITIONAL_ON_BOTH_PRIMARY_CERTIFICATIONS_HOLDING",
+    checks["C_V1_EXTENSION_DIAGNOSTIC_REPRODUCED"] = c_pass
+    certificates["C_OUT_OF_DOMAIN_EXTENSION_DIAGNOSTIC"] = {
+        "label":
+            "OUT_OF_DOMAIN_DIAGNOSTIC_NOT_A_TEST_OF_THE_LANDED_CLASS",
+        "v1_tables_status":
+            "EXTENSION_OF_CYCLE795_FORMULAS_BEYOND_THEIR_DOMAIN",
+        "extension_definition": (
+            "occupied-set extrema for pair coordinates; all sites for "
+            "sum/product/mask/modular mean/equal-residue; actual higher-k "
+            "postimage support; new support digest tokens"
+        ),
+        "conditional_statement": (
+            "IF one adopts this later occupied-set extension, the extended "
+            "formulas score 0 correct-both / 8 correct-one / 95 wrong-both."
+        ),
+        "extended_formula_score_0_8_95": extension_counts,
+        "extension_rows": extension["rows"],
+        "extension_rows_sha256": extension["test_sha256"],
+        "extension_lists": extension["bins"],
+        "extension_vector_diagnostic": "46 -> 0",
+        "landed_cycle795_class_effect": "NONE_NOT_TESTED",
+    }
+
+    cycles_pass = (
+        len(cycles) == 2
+        and tuple(row["key"] for row in cycles) == RESOLVED_KEYS
+        and all(
+            row["period"] == RESOLVED_PERIOD
+            and row["all_phases_nonclean"]
+            and row["no_earlier_return_to_T0"]
+            and row["exact_full_state_return_to_T0"]
+            and row["permanent_cycle_certified"]
+            for row in cycles
+        )
+    )
+    checks["D_TWO_PERIOD_4464_CYCLES_REVERIFIED"] = cycles_pass
+    certificates["D_TWO_RESOLUTIONS"] = {
+        "status": "CHECKER_VERIFIED_LANDED_FACTS_REVERIFIED_HERE",
+        "role": (
+            "These valid k=4 cycle facts exposed the domain question; "
+            "their truth does not put them inside the Cycle-795 pair domain."
+        ),
+        "exact_cycle_certificates": cycles,
+    }
+
+    pair_open_keys = separators["open_keys"]
+    e_pass = (
+        len(pair_open_keys) == PAIR_OPEN_SIZE
+        and all(len(positions) == 2 for _event, positions in pair_open_keys)
+        and domain["pair_domain_exact"]
+        and not domain["higher_k_definition_present"]
+    )
+    checks["E_FIRST_TRUE_TESTS_AWAIT_K2_RESOLUTIONS"] = e_pass
+    certificates["E_FORWARD_STATEMENT"] = {
+        "honest_forward_statement": (
+            "The first true tests of the Cycle-795 class await resolutions "
+            "of its open k=2 (two-position) keys."
+        ),
+        "open_two_position_key_count": len(pair_open_keys),
+        "open_two_position_keys_sha256": digest(pair_open_keys),
+        "extended_class_status": (
+            "NO_CLASS_COVERING_K_GE_3_EXISTS_IN_THE_AUDITED_LANDED_"
+            "CYCLE795_SOURCE"
+        ),
+        "scope_qualification": (
+            "This is a scoped text/AST fact about the SHA-pinned landed "
+            "Cycle-795 definition, not a claim that no future extension can "
+            "be defined."
+        ),
     }
 
     replay = analysis_once()
@@ -1020,8 +1322,8 @@ def run() -> int:
         and not any(name in sys.modules for name in BLOCKLISTED_MODULES)
         and not IMPORT_FIREWALL.hits
     )
-    checks["E_SHAS_BLOCKLIST_DETERMINISM_BOUNDS"] = controls_base
-    certificates["E_CONTROLS"] = {
+    checks["F_SHAS_BLOCKLIST_DETERMINISM_BOUNDS"] = controls_base
+    certificates["F_CONTROLS"] = {
         **sources,
         "deterministic": deterministic,
         "first_analysis_sha256": first["stable_digest"],
@@ -1034,30 +1336,32 @@ def run() -> int:
 
     report = {
         "cycle": 816,
-        "status": "FIRST_FORECAST_TEST_CONDITIONAL_CHECKER_PENDING",
-        "kill_counts": counts,
-        "surviving_hypotheses": len(test["survivors"]),
-        "vector_collapse": "46 -> 0",
-        "still_open": "22+162=184",
+        "version": 2,
+        "status": "DOMAIN_CORRECTION_ADOPTED",
+        "extinction_verdict": "RETRACTED_OUT_OF_DOMAIN",
+        "domain_faithful_census": corrected_census,
+        "domain_faithful_vector_census": "46 -> 46",
+        "out_of_domain_extension_diagnostic": extension_counts,
+        "two_period_4464_cycles_reverified": True,
         "runtime_seconds": round(elapsed, 6),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_bytes": 0,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
-        "scope": SCOPE_STATEMENT,
+        "scope": DOMAIN_SCOPE_STATEMENT,
         "checks": {},
         "pass": False,
-        "terminal": "CYCLE816_FIRST_FORECAST_TEST_HONEST_FAIL",
+        "terminal": "CYCLE816_FIRST_FORECAST_TEST_V2_HONEST_FAIL",
     }
     output = stable_render(checks, certificates, report)
     stdout_ok = len(output.encode("utf-8")) < STDOUT_LIMIT_BYTES
-    checks["E_SHAS_BLOCKLIST_DETERMINISM_BOUNDS"] = (
+    checks["F_SHAS_BLOCKLIST_DETERMINISM_BOUNDS"] = (
         controls_base and stdout_ok
     )
     output = stable_render(checks, certificates, report)
     if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
         failure = {
             "pass": False,
-            "terminal": "CYCLE816_FIRST_FORECAST_TEST_HONEST_FAIL",
+            "terminal": "CYCLE816_FIRST_FORECAST_TEST_V2_HONEST_FAIL",
             "failure": "stdout bound exceeded",
             "stdout_bytes": len(output.encode("utf-8")),
             "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
@@ -1074,7 +1378,7 @@ def main() -> int:
     except Exception as error:
         failure = {
             "pass": False,
-            "terminal": "CYCLE816_FIRST_FORECAST_TEST_HONEST_FAIL",
+            "terminal": "CYCLE816_FIRST_FORECAST_TEST_V2_HONEST_FAIL",
             "exception_type": type(error).__name__,
             "exception": str(error),
         }

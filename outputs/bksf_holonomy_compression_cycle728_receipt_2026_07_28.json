@@ -6,7 +6,7 @@
     },
     "note": {
       "path": "docs/BKSF_HOLONOMY_COMPRESSION_CYCLE728_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "9b49d2a2ec91765c0686309cb0bdd734ad3700db645c0ca98ed5c9657ca47585"
+      "sha256": "aae9ba1ed01fdf8d9d938329cbeed111511fccb7f7b2865039d533d6d1add2a7"
     },
     "runners": {
       "frontier_cycle728_bksf_holonomy_compression_2026_07_28.py": "0ed3d3a6b644a6eee640e9d1b04edc813e94cd9c807836413c0209ef5a50ac82",

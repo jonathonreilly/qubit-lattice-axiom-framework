@@ -140,7 +140,7 @@ bounded-window, controller-completion, or encoding-minimality claim is made.
 
 ## Verdict
 
-The retained result is a conditional finite-ring GF(2) lemma: a chosen
+This note proves a conditional finite-ring GF(2) lemma: a chosen
 marked-edge bit yields an exact telescope and an exact parity-sector
 projection for the specified rows. The first proposed agreement expression
 is corrected to a state-independent affine ring-size-parity constant. The

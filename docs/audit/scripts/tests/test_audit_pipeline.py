@@ -12124,6 +12124,55 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
             "transport-bounded N8 evidence forbids audited_clean",
         )
 
+    def test_transport_capacity_error_is_distinct_from_manifest_integrity(self):
+        m = _import_codex_audit_runner()
+        cid = "oversized-source"
+        path = m.no_go_discipline_gate.cross_cycle_index_path(cid)
+        full = json.dumps(
+            {
+                "claim_id": cid,
+                "candidates": [{"candidate_id": "candidate-0"}],
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        manifest = {path: {"text": full, "roles": ["cross_cycle_index"]}}
+        prompt = (
+            "x" * 3000
+            + full
+            + m.OUTPUT_INSTRUCTIONS_MARKER
+            + "\noutput contract"
+        )
+
+        with self.assertRaises(m.PromptTransportCapacityError):
+            m.fit_prompt_to_transport_limit(
+                prompt,
+                manifest,
+                cid,
+                max_chars=2500,
+            )
+
+        malformed = {
+            path: {"text": "not-json", "roles": ["cross_cycle_index"]}
+        }
+        malformed_prompt = (
+            "x" * 3000
+            + "not-json"
+            + m.OUTPUT_INSTRUCTIONS_MARKER
+            + "\noutput contract"
+        )
+        with self.assertRaises(ValueError) as raised:
+            m.fit_prompt_to_transport_limit(
+                malformed_prompt,
+                malformed,
+                cid,
+                max_chars=2500,
+            )
+        self.assertNotIsInstance(
+            raised.exception,
+            m.PromptTransportCapacityError,
+        )
+
     def test_development_runner_validation_ignores_locator_containment(self):
         m = _import_codex_audit_runner()
         blob = {field: "x" for field in m.REQUIRED_VERDICT_FIELDS}

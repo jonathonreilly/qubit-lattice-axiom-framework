@@ -1,96 +1,160 @@
-# Ring-family uniformity — the sector theorem holds at every admissible ring, and the ring is not free — Cycle 737
+# Selected constructor lengths, cycle-graph censuses, and literal diagnostics — Cycle 737
 
-Date: 2026-07-29
+Date: 2026-07-28
 
 Authority: none
 
 Audit: unset
 
-Status: bounded conditional theorem
+Status: bounded conditional construction
 
 Claim type: bounded_theorem
 
 Runners:
 
-- [`frontier_cycle737_ring_family_uniformity_2026_07_28.py`](../scripts/frontier_cycle737_ring_family_uniformity_2026_07_28.py)
-- [`frontier_cycle737_ring_family_independent_check_2026_07_28.py`](../scripts/frontier_cycle737_ring_family_independent_check_2026_07_28.py)
+- [primary finite constructor/census runner](../scripts/frontier_cycle737_ring_family_uniformity_2026_07_28.py)
+- [independent live-primary and gate-stream checker](../scripts/frontier_cycle737_ring_family_independent_check_2026_07_28.py)
 
-Constitutional effect: none. This package changes no axiom, foundation,
-Qualification, primitive, registry, policy, queue, audit result, or audit
-status.
+Constitutional effect: none. This package changes no axiom, framework
+Admissibility rule, primitive, registry, policy, audit result, or audit status.
+The filename is retained for stacked-branch continuity; the submitted
+ring-family uniformity claim is not retained below.
 
-## Result up front
+## Result
 
-Cycle 736 proved the multi-source sector theorem exhaustively at
-ring-11 and left rings beyond 11 open. This cycle finds two things: the
-theorem generalizes, and the ring size was never a free choice.
+### One supplied constructor
 
-- **admissibility is derived, not declared**: the controller core's own
-  program/bank arithmetic forces `n = 8b − 5` stations for `b` banks —
-  the admissible rings are `{3, 11, 19, 27}` for `b = 1..4`. The
-  familiar ring-11 is just `b = 2`. Non-family sizes fail the
-  constructor's own requirements. Within the admissible family, the
-  "supplied ring geometry" of every earlier cycle reduces to **one
-  integer: the bank count**;
-- **the sector theorem is uniform over the family**: at every
-  admissible `n`, the pairwise-separated census equals the Lucas
-  closed form — **4 / 199 / 9,349 / 439,204** configurations for
-  `n = 3 / 11 / 19 / 27` — with direct enumeration and recurrence
-  agreeing; the config-parameterized template is bit-exact for every
-  configuration at every `n`; the count-k enforcement grid is exact
-  (counter width scaling as declared); and **every configuration at
-  every ring runs its invariant-checked orbit to exact closure** —
-  12 / 2,189 / 177,631 / 11,858,508 orbit steps exhausted with zero
-  invariant, distance, register, or inverse failures;
-- **the adjacency boundary reproduces at every ring**: near-miss
-  controls violate at exactly two stations per adjacent pair at each
-  `n`;
-- `frozen_n_dependence: null` — no component of the machinery is bound
-  to `n = 11`. The claim is family-uniform (each member exhaustive),
-  **not** a general-`n` theorem: `b ≥ 5` rings are untested, and the
-  uniformity statement is the conjunction of four exhaustive theorems,
-  not an induction.
+For the current non-padded code constructor
+`K.interleaved_program(b)`, with a supplied positive integer bank count `b`,
+the station kinds occur with multiplicities
 
-## Supplied / derived / open
+\[
+  1,\quad b,\quad b-1,\quad 2(b-1),\quad 4(b-1),\quad 1
+\]
 
-### Supplied
+for source, bank, cross, handoff, relay, and finalizer rows. Therefore
 
-- the bank count `b` (one integer per family member); the held program
-  content and order per ring; the held data genesis with clean
-  auxiliaries; lawful charge-reference rows with `h = k mod 2` and
-  `expected_count = k`; the Q-before-R layer order; the configuration
-  as an external parameter.
+\[
+  \operatorname{len}(K.\operatorname{interleaved\_program}(b))
+  =1+b+(b-1)+2(b-1)+4(b-1)+1=8b-5.
+\]
 
-### Derived
+This is an exact property of that supplied program constructor. It is not a
+uniqueness theorem, a restriction on other constructors or geometries, or an
+identification with framework Admissibility. In particular the same
+constructor continues with `b=5`, producing 35 stations.
 
-- the admissibility law `n = 8b − 5` from the controller's own
-  arithmetic (the ring size is a function of the bank count, not an
-  independent supply);
-- the per-`n` Lucas census equalities; template exactness and
-  covariance; the enforcement grids; the exhaustive invariant-checked
-  lawful orbits at all four rings; the boundary controls.
+### Four selected cycle-graph censuses
 
-### Open
+For the four explicitly selected pairs
 
-- `b ≥ 5` and an inductive general-`n` theorem (the natural conjecture
-  is now precise: the sector theorem for all `n = 8b − 5`);
-- W4's renewal component; adjacent-pair control; everything the landed
-  surfaces leave open at their scopes; no time/Record/Born/source
-  content is touched.
+\[
+  (b,n)=(1,3),(2,11),(3,19),(4,27),
+\]
 
-## Negative-claim discipline
+the runners enumerate the independent sets of the cycle graph \(C_n\).
+Their occupancy counts agree with
 
-No negative claim ships. Non-family ring sizes failing the constructor
-is a derived arithmetic fact about the landed machinery, stated with
-the exact failing requirement, not an impossibility claim about other
-controllers.
+\[
+ |\operatorname{Ind}_k(C_n)|
+ =\frac{n}{n-k}\binom{n-k}{k}
+\]
 
-## Verdict
+for \(k>0\), with the empty-set count equal to one.
 
-The multi-source sector theorem is not a ring-11 accident: it holds
-exhaustively at every ring the machinery itself admits, and the
-machinery admits exactly the rings `n = 8b − 5`. A supply that every
-cycle since 719 has carried — "finite oriented ring geometry" — is now
-one derived formula plus one integer. The W2 ledger line should read:
-geometry is bank-counted, not freely supplied. Independent audit still
-required.
+| `n` | counts by occupancy `k` | total |
+|---:|---|---:|
+| 3 | `1, 3` | 4 |
+| 11 | `1, 11, 44, 77, 55, 11` | 199 |
+| 19 | `1, 19, 152, 665, 1729, 2717, 2508, 1254, 285, 19` | 9,349 |
+| 27 | `1, 27, 324, 2277, 10395, 32319, 69768, 104652, 107406, 72930, 30888, 7371, 819, 27` | 439,204 |
+
+The `n=3` fixture is degenerate for any multi-token reading: it contains only
+the empty mask and three one-token masks, so its multi-token and pair-distance
+censuses are both zero.
+
+### Static marked-edge rows
+
+For every selected independent mask \(A\), the runner reconstructs the
+supplied canonical reference row with \(r_0=0\) and
+\(h=|A|\bmod 2\), satisfying
+
+\[
+ A_s\oplus r_s\oplus r_{s+1}
+ \oplus h\,\mathbf 1_{s=0}=0.
+\]
+
+The fixed cut and gauge are supplied. On the sample containing every mask
+with occupancy at most two and one representative from each higher occupancy,
+the explicit cut-compensated, gauge-normalized translation agrees with the
+canonical target in `12`, `649`, `3,401`, and `9,801` identities for
+`n=3,11,19,27`, respectively. This is static algebra, not passive covariance
+of an unmarked ring and not autonomous preparation.
+
+### Actual count/comparator prefix
+
+For each selected ring, the actual current
+[Cycle-731 count/comparator constructor](TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+is cut at `comparison_compute_stop`, before the guarded Q layer. With the
+expected count supplied, a fresh bit-plane execution gives:
+
+| `n` | matching-count accepts | off-diagonal refusals | exact prefix reversals |
+|---:|---:|---:|---:|
+| 3 | 4 | 4 | 8 |
+| 11 | 199 | 995 | 1,194 |
+| 19 | 9,349 | 84,141 | 93,490 |
+| 27 | 439,204 | 5,709,652 | 6,148,856 |
+
+These are literal prefix facts. The full guarded word is not executed or
+claimed.
+
+### Bare-word execution diagnostic
+
+The current bare
+[Cycle-719 recurrent-controller word](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+is also applied to every selected independent mask under its supplied program,
+genesis, orientation, endpoint direction, and clean B/work registers. The
+literal word rotates the A rail, returns B/work clean after one circuit, and
+is exactly reversed on all `12`, `2,189`, `177,631`, and `11,858,508`
+configuration-steps.
+
+This is only a reproducible reversible-circuit diagnostic. There is no
+independent target for the changed data register, no multi-token
+source/controller-domain theorem, no full guarded composition, and no
+preparation or physical-law conclusion.
+
+## Supplied and open boundary
+
+Supplied inputs include the bank count, the current K program content and
+order, each finite oriented ring, the marked cut and gauge, the K chain
+genesis and endpoint direction, clean auxiliaries, the expected count, and
+each external mask. These inputs vary with the selected fixture and are not
+summarized by `frozen_n_dependence: null`.
+
+The load-bearing or controlling proposal-only parents are:
+
+- [Cycle 719 bare recurrent controller](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md);
+- [Cycle 728 marked-edge relation](BKSF_HOLONOMY_COMPRESSION_CYCLE728_BOUNDED_THEOREM_NOTE_2026-07-28.md);
+- [Cycle 730 charge-row convention](CHARGE_ROW_ENFORCEMENT_CYCLE730_BOUNDED_THEOREM_NOTE_2026-07-28.md);
+- [Cycle 731 count/comparator prefix](TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md);
+- [Cycle 734 externally positioned template scope](PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md);
+- [Cycle 735 supplied separated-pair control](SEPARATED_PAIR_LAWFUL_CONTROL_CYCLE735_BOUNDED_THEOREM_NOTE_2026-07-28.md); and
+- [the repaired Cycle 736 static boundary](PAIRWISE_SEPARATED_MULTISOURCE_CYCLE736_BOUNDED_THEOREM_NOTE_2026-07-28.md).
+
+All remain proposal-only at their own scopes. Nothing here upgrades their
+authority.
+
+Open and explicitly not claimed:
+
+- framework Admissibility, constructor completeness, or ring uniqueness;
+- uniformity over all positive `b` for the finite diagnostics;
+- controller lawfulness for simultaneous sources;
+- the full Cycle-731 guarded word or W4 composition;
+- source selection, genesis derivation, autonomous preparation, Record,
+  time, Born, or physical realization;
+- a maximal domain, adjacency wall, non-family failure, or no-go for other
+  controllers, schedules, or geometries.
+
+The observation that `n=5` is not in the image of this particular non-padded
+constructor is only an algebraic membership observation. It is not a failed
+ring or a foreclosure statement.

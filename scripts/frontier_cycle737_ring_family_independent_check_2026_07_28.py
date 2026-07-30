@@ -1,60 +1,146 @@
 #!/usr/bin/env python3
-"""Independent bounded checker for the Cycle-737 ring-family theorem.
+"""Independent joint-live checker for the bounded Cycle-737 diagnostics.
 
-The primary is parsed as inert AST data and is never imported.  The only
-frontier primary imported by this checker is the permitted Cycle-719 kernel
-K.  Every configuration in the declared family is executed through K's
-literal controller word by an independently implemented bit-plane evaluator.
+The primary runner is never imported.  This checker first requires a fresh
+successful primary execution, then asks that same executable for literal gate
+streams and independently evaluates those streams with a small bit-plane
+interpreter.  It separately rederives the four cycle-graph censuses and the
+marked-cut reference identities.
 
-Scope: family-uniform over [3,11,19,27], not general-n.
+The checker does not certify framework Admissibility, constructor uniqueness,
+controller lawfulness, preparation, a full guarded word, a uniform family
+theorem, an adjacency wall, or a no-go result.
 """
 from __future__ import annotations
 
 import ast
+from collections import Counter
 from hashlib import sha256
 import json
 from math import comb
+from pathlib import Path
+import subprocess
 import sys
 from time import perf_counter
+from typing import Any, Iterable
 
 
 sys.dont_write_bytecode = True
 
-import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
+AUDIT_TIMEOUT_SEC = 900
+STDOUT_LIMIT_BYTES = 150 * 1024
+PRIMARY_PATH = (
+    "scripts/frontier_cycle737_ring_family_uniformity_2026_07_28.py"
+)
+NOTE_PATH = (
+    "docs/RING_FAMILY_UNIFORMITY_CYCLE737_"
+    "BOUNDED_THEOREM_NOTE_2026-07-28.md"
+)
 
-
-AUDIT_TIMEOUT_SEC = 1800
-NOTE_PATH = "docs/RING_FAMILY_UNIFORMITY_CYCLE737_BOUNDED_THEOREM_NOTE_2026-07-28.md"
+# The primary plus its complete literal mutable input closure.  The checker
+# verifies this tuple against the primary's own AST and fresh JSON report.
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle737_ring_family_uniformity_2026_07_28.py",
+    "docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md",
+    "docs/JOINT_TWO_CELL_FULL_UPDATE_PHYSICAL_M2_COMPILER_CYCLE712_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LITERAL_PATCHGRAPH_Z3_M2_PLACEMENT_AND_FIXED_CONTROLLER_CYCLE707_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_SEAM_SIGNED_CLIFFORD_PHYSICAL_M2_COMPILER_CYCLE709_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/LOCAL_TOKEN_ROW_ENFORCEMENT_CYCLE724_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/OPENREFERENCE_PATCHGRAPH_FOUR_RAIL_SIGNED_CLIFFORD_EQUIVALENCE_CYCLE706_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_CYCLE704_FSWAP_ENDPOINT_CUBE_BRIDGE_CYCLE708_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_FULL34_FIXED_PACKET_COMPOSITION_CYCLE714_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/PHYSICAL_M2_SPATIAL_ACK_CYCLE612_INTERVAL_BRIDGE_CYCLE718_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_DIRECTIONAL_PACKET_BANK_CYCLE715_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/REFUSAL_WRAPPED_CONTROLLER_CYCLE723_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/RING_FAMILY_UNIFORMITY_CYCLE737_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/TOKEN_COUNT_CERTIFICATE_CYCLE731_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/work_history/repo/review_feedback/CYCLE704_LOCAL_GAUSS_CYCLE612_ENDPOINT_BRIDGE_NOTE_2026-07-25.md",
+    "docs/work_history/repo/review_feedback/INFINITE_REVERSIBLE_RECORD_EXPORT_QCA_CYCLE11_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_INTRINSIC_TICK_EVENT_RELATIONAL_DURATION_TOURNAMENT_CYCLE610_NOTE_2026-07-22.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_TICK_ECHO_ASSOCIATION_CAUSAL_ORDER_TOURNAMENT_CYCLE612_NOTE_2026-07-22.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_independent_route_replay_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle612_interval_bridge_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+    "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
+    "scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/infinite_reversible_record_export_qca_cycle11_2026_07_14.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+    "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+    "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+    "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+    "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+    "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+    "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
-RING_FAMILY = (3, 11, 19, 27)
-BANK_FAMILY = (1, 2, 3, 4)
-FROZEN_CENSUS_TOTALS = {
-    3: 4,
-    11: 199,
-    19: 9349,
-    27: 439204,
+SELECTED_FIXTURES = ((1, 3), (2, 11), (3, 19), (4, 27))
+EXPECTED_COUNTS = {
+    3: (1, 3),
+    11: (1, 11, 44, 77, 55, 11),
+    19: (1, 19, 152, 665, 1729, 2717, 2508, 1254, 285, 19),
+    27: (
+        1, 27, 324, 2277, 10395, 32319, 69768, 104652,
+        107406, 72930, 30888, 7371, 819, 27,
+    ),
 }
-FROZEN_ORBIT_STEP_TOTALS = {
-    3: 12,
-    11: 2189,
-    19: 177631,
-    27: 11858508,
-}
-STDOUT_LIMIT_BYTES = 150 * 1024
-BITPLANE_BATCH = 65_536
-SCOPE_STATEMENT = "family-uniform over [3,11,19,27], not general-n"
-DIRECT_FRONTIER_IMPORTS = (
-    "frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26",
-)
+EXPECTED_COVARIANCE_IDENTITIES = {3: 12, 11: 649, 19: 3401, 27: 9801}
+EXPECTED_ORBIT_STEPS = {3: 12, 11: 2189, 19: 177631, 27: 11858508}
 
 CHECKS: dict[str, bool] = {}
 OUTPUT_LINES: list[str] = []
-ERRORS: dict[str, str] = {}
 
 
 def check(label: str, condition: bool) -> bool:
@@ -66,297 +152,333 @@ def check(label: str, condition: bool) -> bool:
     return passed
 
 
-def error_text(exc: BaseException) -> str:
-    return f"{type(exc).__name__}: {exc}"[:1000]
+def digest_json(value: Any) -> str:
+    return sha256(
+        json.dumps(value, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()
 
 
-def digest_json(value: object) -> str:
-    encoded = json.dumps(
-        value, sort_keys=True, separators=(",", ":"), default=str
-    ).encode()
-    return sha256(encoded).hexdigest()
-
-
-def read_ast_data(path: str) -> ast.Module:
-    # Only the two literal AUDIT_INPUT_PATHS are ever supplied here.
-    if path not in AUDIT_INPUT_PATHS:
-        raise ValueError(("read outside declared audit inputs", path))
-    with open(path, "r", encoding="utf-8") as handle:
-        return ast.parse(handle.read(), filename=path)
-
-
-def top_level_assignment(tree: ast.Module, name: str) -> ast.AST:
+def top_level_literal(path: Path, name: str) -> Any:
+    tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
     for node in tree.body:
-        if isinstance(node, (ast.Assign, ast.AnnAssign)):
-            targets = node.targets if isinstance(node, ast.Assign) else [node.target]
-            if any(isinstance(target, ast.Name) and target.id == name for target in targets):
-                return node.value
-    raise KeyError(("top-level assignment not found", name))
-
-
-def literal_top_level(tree: ast.Module, name: str) -> object:
-    return ast.literal_eval(top_level_assignment(tree, name))
-
-
-def function_node(tree: ast.Module, name: str) -> ast.FunctionDef:
-    for node in tree.body:
-        if isinstance(node, ast.FunctionDef) and node.name == name:
-            return node
-    raise KeyError(("function not found", name))
-
-
-def local_assignment(function: ast.FunctionDef, name: str) -> ast.AST:
-    for node in ast.walk(function):
-        if isinstance(node, (ast.Assign, ast.AnnAssign)):
-            targets = node.targets if isinstance(node, ast.Assign) else [node.target]
-            if any(isinstance(target, ast.Name) and target.id == name for target in targets):
-                return node.value
-    raise KeyError(("local assignment not found", function.name, name))
-
-
-def name_is(node: ast.AST, name: str) -> bool:
-    return isinstance(node, ast.Name) and node.id == name
-
-
-def int_is(node: ast.AST, value: int) -> bool:
-    return (
-        isinstance(node, ast.Constant)
-        and type(node.value) is int
-        and node.value == value
-    )
-
-
-def extract_admissibility_formula(tree: ast.Module) -> dict[str, object]:
-    function = function_node(tree, "admissibility_certificate")
-    value = local_assignment(function, "formula")
-    exact = False
-    loop_variable = None
-    iterator = None
-    coefficient = None
-    offset = None
-    if (
-        isinstance(value, ast.Call)
-        and name_is(value.func, "tuple")
-        and len(value.args) == 1
-        and isinstance(value.args[0], ast.GeneratorExp)
-        and len(value.args[0].generators) == 1
-    ):
-        generator = value.args[0]
-        clause = generator.generators[0]
-        expression = generator.elt
-        if (
-            isinstance(clause.target, ast.Name)
-            and isinstance(clause.iter, ast.Name)
-            and isinstance(expression, ast.BinOp)
-            and isinstance(expression.op, ast.Sub)
-            and isinstance(expression.left, ast.BinOp)
-            and isinstance(expression.left.op, ast.Mult)
-            and int_is(expression.left.left, 8)
-            and name_is(expression.left.right, clause.target.id)
-            and int_is(expression.right, 5)
-        ):
-            exact = True
-            loop_variable = clause.target.id
-            iterator = clause.iter.id
-            coefficient = 8
-            offset = -5
-    return {
-        "law": "n = 8b - 5",
-        "loop_variable": loop_variable,
-        "iterator": iterator,
-        "coefficient": coefficient,
-        "offset": offset,
-        "exact_ast_shape": exact,
-    }
-
-
-def extract_lucas_anchor(tree: ast.Module) -> dict[str, object]:
-    function = function_node(tree, "lucas_number")
-    initial = None
-    recurrence = False
-    for node in ast.walk(function):
-        if isinstance(node, ast.Assign) and len(node.targets) == 1:
-            target = node.targets[0]
-            if (
-                isinstance(target, ast.Tuple)
-                and [item.id for item in target.elts if isinstance(item, ast.Name)]
-                == ["previous", "current"]
-            ):
-                try:
-                    candidate = ast.literal_eval(node.value)
-                except (ValueError, TypeError):
-                    candidate = None
-                if candidate == (2, 1):
-                    initial = candidate
-        if (
-            isinstance(node, ast.BinOp)
-            and isinstance(node.op, ast.Add)
-            and name_is(node.left, "previous")
-            and name_is(node.right, "current")
-        ):
-            recurrence = True
-    return {
-        "initial": initial,
-        "recurrence_previous_plus_current": recurrence,
-        "exact": initial == (2, 1) and recurrence,
-    }
-
-
-def extract_orbit_step_anchor(tree: ast.Module) -> dict[str, object]:
-    function = function_node(tree, "controller_orbit_certificate")
-    value = None
-    for node in ast.walk(function):
-        if not isinstance(node, ast.Dict):
+        if isinstance(node, ast.Assign):
+            targets = node.targets
+            value = node.value
+        elif isinstance(node, ast.AnnAssign):
+            targets = (node.target,)
+            value = node.value
+        else:
             continue
-        for key, candidate in zip(node.keys, node.values):
-            if (
-                isinstance(key, ast.Constant)
-                and key.value == "exhausted_literal_controller_steps"
-            ):
-                value = candidate
-                break
-    exact = (
-        isinstance(value, ast.BinOp)
-        and isinstance(value.op, ast.Mult)
-        and isinstance(value.left, ast.Call)
-        and name_is(value.left.func, "len")
-        and len(value.left.args) == 1
-        and name_is(value.left.args[0], "masks")
-        and name_is(value.right, "stations")
+        if any(
+            isinstance(target, ast.Name) and target.id == name
+            for target in targets
+        ):
+            return ast.literal_eval(value)
+    raise KeyError((str(path), name))
+
+
+def run_primary(root: Path, export: bool = False) -> tuple[dict[str, Any], dict[str, Any]]:
+    command = [sys.executable, PRIMARY_PATH]
+    if export:
+        command.append("--export-gates")
+    completed = subprocess.run(
+        command,
+        cwd=root,
+        check=False,
+        capture_output=True,
+        text=True,
+        timeout=600,
     )
-    return {
-        "expression": "len(masks) * stations",
-        "exact_ast_shape": exact,
+    evidence = {
+        "command": command,
+        "returncode": completed.returncode,
+        "stdout_bytes": len(completed.stdout.encode()),
+        "stderr": completed.stderr[-1000:],
     }
+    if completed.returncode != 0:
+        raise RuntimeError(("primary execution failed", evidence))
+    lines = [line for line in completed.stdout.splitlines() if line.strip()]
+    if not lines:
+        raise RuntimeError("primary emitted no JSON")
+    return json.loads(lines[-1]), evidence
 
 
-def extract_boundary_anchor(tree: ast.Module) -> dict[str, object]:
-    function = function_node(tree, "main")
-    boundary_value = local_assignment(function, "boundary")
-    if not isinstance(boundary_value, ast.Dict):
-        raise TypeError("primary boundary is not a dict literal")
-    entries: dict[str, ast.AST] = {}
-    for key, value in zip(boundary_value.keys, boundary_value.values):
-        if isinstance(key, ast.Constant) and isinstance(key.value, str):
-            entries[key.value] = value
-    required = {
-        "sector_theorem_uniform_over_family",
-        "frozen_n_dependence",
-        "general_n_theorem_claimed",
-    }
-    sector_value = entries.get("sector_theorem_uniform_over_family")
-    general_value = entries.get("general_n_theorem_claimed")
-    frozen_assignment = local_assignment(function, "frozen_n_dependence")
-    uniformity = entries.get("uniformity_statement")
-    uniformity_text = (
-        uniformity.value
-        if isinstance(uniformity, ast.Constant) and isinstance(uniformity.value, str)
-        else ""
-    )
-    return {
-        "keys": tuple(sorted(entries)),
-        "required_keys_present": required <= set(entries),
-        "sector_value_computed_as_bool": (
-            isinstance(sector_value, ast.Call)
-            and name_is(sector_value.func, "bool")
-        ),
-        "clean_branch_frozen_n_dependence": (
-            None
-            if isinstance(frozen_assignment, ast.IfExp)
-            and isinstance(frozen_assignment.body, ast.Constant)
-            and frozen_assignment.body.value is None
-            else "AST_MISMATCH"
-        ),
-        "general_n_theorem_claimed": (
-            general_value.value
-            if isinstance(general_value, ast.Constant)
-            else "AST_MISMATCH"
-        ),
-        "uniformity_disclaims_arbitrary_n": (
-            "not for arbitrary n" in uniformity_text
-        ),
-    }
+def independent_masks(stations: int) -> tuple[int, ...]:
+    masks: list[int] = []
+
+    def visit(site: int, first: bool, previous: bool, mask: int) -> None:
+        if site == stations:
+            if not (first and previous):
+                masks.append(mask)
+            return
+        visit(site + 1, first, False, mask)
+        if not previous and not (site == stations - 1 and first):
+            visit(site + 1, first or site == 0, True, mask | (1 << site))
+
+    visit(0, False, False, 0)
+    return tuple(masks)
 
 
-def extraction() -> dict[str, object]:
-    primary_tree = read_ast_data(AUDIT_INPUT_PATHS[0])
-    k_tree = read_ast_data(AUDIT_INPUT_PATHS[1])
-    primary_audit = literal_top_level(primary_tree, "AUDIT_INPUT_PATHS")
-    k_audit = literal_top_level(k_tree, "AUDIT_INPUT_PATHS")
-    primary_ring = literal_top_level(primary_tree, "RING_FAMILY")
-    primary_banks = literal_top_level(primary_tree, "BANK_FAMILY")
-    primary_note = literal_top_level(primary_tree, "NOTE_PATH")
-    formula = extract_admissibility_formula(primary_tree)
-    lucas = extract_lucas_anchor(primary_tree)
-    orbit = extract_orbit_step_anchor(primary_tree)
-    boundary = extract_boundary_anchor(primary_tree)
-    frozen_products = {
-        ring: FROZEN_CENSUS_TOTALS[ring] * ring
-        for ring in RING_FAMILY
-    }
-    audit_literals_exact = (
-        isinstance(primary_audit, tuple)
-        and isinstance(k_audit, tuple)
-        and all(isinstance(path, str) for path in primary_audit + k_audit)
-        and AUDIT_INPUT_PATHS[1] in primary_audit
-        and AUDIT_INPUT_PATHS[1] in k_audit
-    )
-    exact = (
-        audit_literals_exact
-        and primary_ring == RING_FAMILY
-        and primary_banks == BANK_FAMILY
-        and primary_note == NOTE_PATH
-        and formula["exact_ast_shape"]
-        and formula["iterator"] == "BANK_FAMILY"
-        and lucas["exact"]
-        and orbit["exact_ast_shape"]
-        and frozen_products == FROZEN_ORBIT_STEP_TOTALS
-        and boundary["required_keys_present"]
-        and boundary["sector_value_computed_as_bool"]
-        and boundary["clean_branch_frozen_n_dependence"] is None
-        and boundary["general_n_theorem_claimed"] is False
-        and boundary["uniformity_disclaims_arbitrary_n"]
-    )
-    return {
-        "primary_read_as_ast_data_only": True,
-        "primary_ring_family": primary_ring,
-        "primary_bank_family": primary_banks,
-        "admissibility": formula,
-        "frozen_census_totals": FROZEN_CENSUS_TOTALS,
-        "frozen_orbit_step_totals": FROZEN_ORBIT_STEP_TOTALS,
-        "lucas_ast_anchor": lucas,
-        "orbit_step_ast_anchor": orbit,
-        "boundary_ast_anchor": boundary,
-        "primary_AUDIT_INPUT_PATHS_literal": primary_audit,
-        "K_AUDIT_INPUT_PATHS_literal_count": len(k_audit),
-        "audit_tuples_literal_eval": audit_literals_exact,
-        "exact": exact,
-    }
+def closed_cycle_count(stations: int, count: int) -> int:
+    if count == 0:
+        return 1
+    if count > stations // 2:
+        return 0
+    return stations * comb(stations - count, count) // (stations - count)
 
 
-def program_kind_counts(program: tuple[object, ...]) -> dict[str, int]:
-    counts: dict[str, int] = {}
-    for row in program:
-        kind = str(row[0])
-        counts[kind] = counts.get(kind, 0) + 1
-    return counts
+def rotate_mask(mask: int, shift: int, stations: int) -> int:
+    shift %= stations
+    full = (1 << stations) - 1
+    if not shift:
+        return mask & full
+    return ((mask << shift) & full) | (mask >> (stations - shift))
 
 
-def admissibility_recount() -> dict[str, object]:
-    rows = []
-    observed_family = []
-    for banks in BANK_FAMILY:
-        program = K.interleaved_program(banks)
-        counts = program_kind_counts(program)
-        independent_arithmetic = (
-            1
-            + banks
-            + (banks - 1)
-            + 3 * (banks - 1)
-            + 3 * (banks - 1)
-            + 1
+def canonical_reference(mask: int, stations: int) -> int:
+    parity = mask.bit_count() & 1
+    reference = 0
+    current = 0
+    for site in range(stations - 1):
+        current ^= (mask >> site) & 1
+        if site == 0:
+            current ^= parity
+        reference |= current << (site + 1)
+    return reference
+
+
+def reference_failures(mask: int, stations: int) -> int:
+    reference = canonical_reference(mask, stations)
+    parity = mask.bit_count() & 1
+    return sum(
+        (
+            ((mask >> site) & 1)
+            ^ ((reference >> site) & 1)
+            ^ ((reference >> ((site + 1) % stations)) & 1)
+            ^ (parity if site == 0 else 0)
         )
-        expected_counts = {
+        != 0
+        for site in range(stations)
+    )
+
+
+def gauge_translate(reference: int, parity: int, shift: int, stations: int) -> int:
+    translated = rotate_mask(reference, shift, stations)
+    if parity:
+        for site in range(1, shift + 1):
+            translated ^= 1 << site
+    if translated & 1:
+        translated ^= (1 << stations) - 1
+    return translated
+
+
+def static_check(stations: int, masks: tuple[int, ...]) -> dict[str, Any]:
+    counts = tuple(
+        sum(mask.bit_count() == count for mask in masks)
+        for count in range(stations // 2 + 1)
+    )
+    formula = tuple(
+        closed_cycle_count(stations, count)
+        for count in range(stations // 2 + 1)
+    )
+    first_by_count: dict[int, int] = {}
+    for mask in masks:
+        first_by_count.setdefault(mask.bit_count(), mask)
+    sample = {mask for mask in masks if mask.bit_count() <= 2}
+    sample.update(first_by_count.values())
+    covariance_failures = 0
+    for mask in sample:
+        reference = canonical_reference(mask, stations)
+        for shift in range(stations):
+            covariance_failures += gauge_translate(
+                reference, mask.bit_count() & 1, shift, stations
+            ) != canonical_reference(rotate_mask(mask, shift, stations), stations)
+    identities = len(sample) * stations
+    marked_failures = sum(reference_failures(mask, stations) for mask in masks)
+    return {
+        "counts": counts,
+        "formula": formula,
+        "total": len(masks),
+        "marked_edge_reference_failures": marked_failures,
+        "covariance_identities": identities,
+        "covariance_failures": covariance_failures,
+        "n3_multi_token_degenerate": (
+            stations != 3 or not any(mask.bit_count() >= 2 for mask in masks)
+        ),
+        "exact": (
+            counts == formula == EXPECTED_COUNTS[stations]
+            and marked_failures == 0
+            and identities == EXPECTED_COVARIANCE_IDENTITIES[stations]
+            and covariance_failures == 0
+        ),
+    }
+
+
+def mask_planes(masks: tuple[int, ...], stations: int) -> tuple[int, ...]:
+    planes = [0] * stations
+    for row, mask in enumerate(masks):
+        row_bit = 1 << row
+        while mask:
+            low = mask & -mask
+            planes[low.bit_length() - 1] |= row_bit
+            mask -= low
+    return tuple(planes)
+
+
+def count_planes(masks: tuple[int, ...], width: int) -> tuple[int, ...]:
+    planes = [0] * width
+    for row, mask in enumerate(masks):
+        row_bit = 1 << row
+        for bit in range(width):
+            if (mask.bit_count() >> bit) & 1:
+                planes[bit] |= row_bit
+    return tuple(planes)
+
+
+def apply_rows(
+    gates: Iterable[list[Any]], planes: dict[int, int], full: int
+) -> None:
+    for gate in gates:
+        kind = gate[0]
+        wires = gate[1:]
+        if kind == "X":
+            planes[wires[0]] = planes.get(wires[0], 0) ^ full
+        elif kind == "CNOT":
+            planes[wires[1]] = (
+                planes.get(wires[1], 0) ^ planes.get(wires[0], 0)
+            )
+        elif kind == "TOF":
+            planes[wires[2]] = (
+                planes.get(wires[2], 0)
+                ^ (planes.get(wires[0], 0) & planes.get(wires[1], 0))
+            )
+        else:
+            raise AssertionError(("unsupported exported gate", kind))
+
+
+def prefix_check(
+    fixture: dict[str, Any], masks: tuple[int, ...]
+) -> dict[str, Any]:
+    stations = int(fixture["ring"])
+    rows = len(masks)
+    maximum = stations // 2
+    full = (1 << rows) - 1
+    a_planes = mask_planes(masks, stations)
+    accepts = refusals = failures = reversibility_failures = 0
+    prefixes = fixture["count_prefixes"]
+    for expected_count, exported in enumerate(prefixes):
+        if int(exported["expected_count"]) != expected_count:
+            failures += 1
+        layout = exported["layout"]
+        gates = exported["gates"]
+        initial = {
+            int(layout["a_base"]) + site: plane
+            for site, plane in enumerate(a_planes)
+            if plane
+        }
+        planes = dict(initial)
+        apply_rows(gates, planes, full)
+        expected_counts = count_planes(masks, int(layout["counter_width"]))
+        for bit, expected_plane in enumerate(expected_counts):
+            failures += (
+                planes.get(int(layout["counter_base"]) + bit, 0)
+                ^ expected_plane
+            ).bit_count()
+        expected_refusal = 0
+        for row, mask in enumerate(masks):
+            expected_refusal |= (mask.bit_count() != expected_count) << row
+        refusal = planes.get(int(layout["refusal_latch"]), 0)
+        failures += (refusal ^ expected_refusal).bit_count()
+        accepts += rows - refusal.bit_count()
+        refusals += refusal.bit_count()
+        for site, expected_plane in enumerate(a_planes):
+            failures += (
+                planes.get(int(layout["a_base"]) + site, 0) ^ expected_plane
+            ).bit_count()
+        apply_rows(reversed(gates), planes, full)
+        reversibility_failures += sum(
+            (
+                planes.get(wire, 0) ^ initial.get(wire, 0)
+            ).bit_count()
+            for wire in set(planes) | set(initial)
+        )
+    return {
+        "prefixes": len(prefixes),
+        "accepts": accepts,
+        "refusals": refusals,
+        "failures": failures,
+        "reversibility_failures": reversibility_failures,
+        "exact": (
+            len(prefixes) == maximum + 1
+            and accepts == rows
+            and refusals == rows * maximum
+            and failures == reversibility_failures == 0
+        ),
+    }
+
+
+def bare_check(
+    fixture: dict[str, Any], masks: tuple[int, ...]
+) -> dict[str, Any]:
+    stations = int(fixture["ring"])
+    data = tuple(int(bit) for bit in fixture["data"])
+    gates = fixture["bare_word"]
+    rows = len(masks)
+    full = (1 << rows) - 1
+    a_base = len(data)
+    b_base = a_base + stations
+    work_base = b_base + stations
+    a_planes = mask_planes(masks, stations)
+    initial = {wire: full for wire, bit in enumerate(data) if bit}
+    initial.update(
+        {
+            a_base + site: plane
+            for site, plane in enumerate(a_planes)
+            if plane
+        }
+    )
+    planes = dict(initial)
+    failures = 0
+    for step in range(stations):
+        apply_rows(gates, planes, full)
+        for site in range(stations):
+            failures += (
+                planes.get(a_base + site, 0)
+                ^ a_planes[(site - step - 1) % stations]
+            ).bit_count()
+        for site in range(stations):
+            failures += planes.get(b_base + site, 0).bit_count()
+            failures += planes.get(work_base + site, 0).bit_count()
+            failures += (
+                planes.get(a_base + site, 0)
+                & planes.get(a_base + ((site + 1) % stations), 0)
+            ).bit_count()
+    changed = 0
+    for wire, bit in enumerate(data):
+        changed |= planes.get(wire, 0) ^ (full if bit else 0)
+    for _step in range(stations):
+        apply_rows(reversed(gates), planes, full)
+    inverse_failures = sum(
+        (
+            planes.get(wire, 0) ^ initial.get(wire, 0)
+        ).bit_count()
+        for wire in set(planes) | set(initial)
+    )
+    return {
+        "configuration_steps": rows * stations,
+        "rail_or_adjacency_failures": failures,
+        "inverse_failures": inverse_failures,
+        "data_changed_configurations": changed.bit_count(),
+        "exact": (
+            rows * stations == EXPECTED_ORBIT_STEPS[stations]
+            and failures == inverse_failures == 0
+        ),
+    }
+
+
+def expected_kind_counts(banks: int) -> Counter[str]:
+    return Counter(
+        {
             "source": 1,
             "bank": banks,
             "cross": banks - 1,
@@ -364,792 +486,147 @@ def admissibility_recount() -> dict[str, object]:
             "relay": 4 * (banks - 1),
             "finalizer": 1,
         }
-        observed = len(program)
-        observed_family.append(observed)
-        rows.append(
-            {
-                "banks": banks,
-                "observed_program_stations": observed,
-                "independent_program_arithmetic": independent_arithmetic,
-                "formula": 8 * banks - 5,
-                "kind_counts": counts,
-                "expected_kind_counts": expected_counts,
-                "exact": (
-                    observed == independent_arithmetic == 8 * banks - 5
-                    and set(counts) <= set(expected_counts)
-                    and all(
-                        counts.get(kind, 0) == expected
-                        for kind, expected in expected_counts.items()
-                    )
-                ),
-            }
-        )
-
-    nonfamily_ring = 5
-    numerator = nonfamily_ring + 5
-    remainder = numerator % 8
-    fifth_program_length = len(K.interleaved_program(5))
-    failure = {
-        "ring": nonfamily_ring,
-        "candidate_bank_numerator": numerator,
-        "divisibility_remainder": remainder,
-        "exact_failing_requirement": (
-            "positive integer bank count b with n=len("
-            "K.interleaved_program(b)); equivalently (n+5)%8==0"
-        ),
-        "fails": remainder != 0,
-    }
-    exact = (
-        tuple(observed_family) == RING_FAMILY
-        and all(row["exact"] for row in rows)
-        and failure["fails"]
-        and fifth_program_length == 35
     )
-    return {
-        "membership_law": "n = 8b - 5 for positive integer b",
-        "arithmetic": (
-            "source 1 + banks b + crosses (b-1) + forward link rows "
-            "3(b-1) + reverse link rows 3(b-1) + finalizer 1 = 8b-5"
-        ),
-        "declared_rows": rows,
-        "admissible_declared_ring_sizes": tuple(observed_family),
-        "nonfamily_failure": failure,
-        "K_b5_program_length_outside_bounded_family": fifth_program_length,
-        "scope": SCOPE_STATEMENT,
-        "exact": exact,
-    }
-
-
-def rotate_mask(mask: int, shift: int, stations: int) -> int:
-    full = (1 << stations) - 1
-    normalized = shift % stations
-    if normalized == 0:
-        return mask & full
-    return (
-        ((mask << normalized) & full)
-        | (mask >> (stations - normalized))
-    )
-
-
-def has_adjacent_pair(mask: int, stations: int) -> bool:
-    return bool(mask & rotate_mask(mask, 1, stations))
-
-
-def independent_path_masks(first: int, last: int) -> list[int]:
-    masks = [0]
-    for station in range(first, last + 1):
-        bit = 1 << station
-        previous = 1 << (station - 1)
-        additions = [
-            mask | bit for mask in masks if not (mask & previous)
-        ]
-        masks.extend(additions)
-    return masks
-
-
-def independent_cycle_masks(stations: int) -> tuple[int, ...]:
-    if stations < 3:
-        raise ValueError(("cycle requires at least three stations", stations))
-    without_zero = independent_path_masks(1, stations - 1)
-    with_zero = [
-        mask | 1
-        for mask in independent_path_masks(2, stations - 2)
-    ]
-    masks = tuple(without_zero + with_zero)
-    if len(masks) != len(set(masks)):
-        raise AssertionError(("duplicate independent masks", stations))
-    if any(has_adjacent_pair(mask, stations) for mask in masks):
-        raise AssertionError(("adjacent mask escaped generator", stations))
-    return masks
-
-
-def own_lucas(index: int) -> int:
-    if index == 0:
-        return 2
-    if index == 1:
-        return 1
-    older, newer = 2, 1
-    for _ in range(2, index + 1):
-        older, newer = newer, older + newer
-    return newer
-
-
-def census_lucas_recount(
-    stations: int,
-) -> tuple[dict[str, object], tuple[int, ...]]:
-    masks = independent_cycle_masks(stations)
-    counts = [0] * (stations // 2 + 1)
-    for mask in masks:
-        counts[mask.bit_count()] += 1
-    lucas = own_lucas(stations)
-    frozen = FROZEN_CENSUS_TOTALS[stations]
-    exact = len(masks) == sum(counts) == lucas == frozen
-    return {
-        "ring": stations,
-        "counts_by_k": tuple(counts),
-        "enumerated_total": len(masks),
-        "own_lucas_total": lucas,
-        "frozen_total": frozen,
-        "generator": (
-            "disjoint path split: vertex 0 absent, or vertex 0 present "
-            "with vertices 1 and n-1 absent"
-        ),
-        "lucas_recurrence": "L(0)=2, L(1)=1, L(n)=L(n-1)+L(n-2)",
-        "all_masks_pairwise_separated": True,
-        "exact": exact,
-    }, masks
-
-
-def masks_to_bitplanes(
-    masks: tuple[int, ...], stations: int
-) -> tuple[int, ...]:
-    byte_count = (len(masks) + 7) // 8
-    buffers = [bytearray(byte_count) for _ in range(stations)]
-    for row, source_mask in enumerate(masks):
-        byte_index = row >> 3
-        row_bit = 1 << (row & 7)
-        mask = source_mask
-        while mask:
-            low = mask & -mask
-            station = low.bit_length() - 1
-            buffers[station][byte_index] |= row_bit
-            mask ^= low
-    return tuple(
-        int.from_bytes(buffer, "little") for buffer in buffers
-    )
-
-
-def compile_controller(
-    controller: tuple[object, ...], width: int
-) -> tuple[tuple[tuple[int, int, int, int], ...], int]:
-    compiled = []
-    structural_failures = 0
-    for gate in controller:
-        wires = tuple(int(wire) for wire in gate.wires)
-        structural_failures += any(
-            wire < 0 or wire >= width for wire in wires
-        )
-        if gate.kind == "X" and len(wires) == 1:
-            compiled.append((1, wires[0], 0, 0))
-        elif gate.kind == "CNOT" and len(wires) == 2:
-            structural_failures += wires[0] == wires[1]
-            compiled.append((2, wires[0], wires[1], 0))
-        elif gate.kind == "TOF" and len(wires) == 3:
-            structural_failures += len(set(wires)) != 3
-            compiled.append((3, wires[0], wires[1], wires[2]))
-        else:
-            structural_failures += 1
-    return tuple(compiled), structural_failures
-
-
-def apply_bitplane_word(
-    planes: list[int],
-    compiled: tuple[tuple[int, int, int, int], ...],
-    row_full: int,
-) -> None:
-    for kind, left, right, target in compiled:
-        if kind == 1:
-            planes[left] ^= row_full
-        elif kind == 2:
-            planes[right] ^= planes[left]
-        else:
-            planes[target] ^= planes[left] & planes[right]
-
-
-def bitsliced_population_count(
-    planes: list[int] | tuple[int, ...],
-) -> tuple[int, ...]:
-    width = max(1, len(planes).bit_length())
-    output = [0] * width
-    for plane in planes:
-        carry = plane
-        digit = 0
-        while carry:
-            if digit == len(output):
-                output.append(0)
-            overlap = output[digit] & carry
-            output[digit] ^= carry
-            carry = overlap
-            digit += 1
-    return tuple(output)
-
-
-def circular_distance(left: int, right: int, stations: int) -> int:
-    return min(
-        (right - left) % stations,
-        (left - right) % stations,
-    )
-
-
-def budget_guard(started: float) -> None:
-    if perf_counter() - started >= AUDIT_TIMEOUT_SEC:
-        raise TimeoutError(
-            f"declared {AUDIT_TIMEOUT_SEC}s audit budget exhausted"
-        )
-
-
-def orbit_recount(
-    banks: int,
-    stations: int,
-    masks: tuple[int, ...],
-    started: float,
-) -> dict[str, object]:
-    program = K.interleaved_program(banks)
-    genesis_banks, links = K.B.chain_genesis(banks)
-    data = K.M.prepare_endpoint(
-        K.M.pack_state(genesis_banks, links), (1, 0)
-    )
-    data_wires = len(data)
-    controller = K.controller_word(program, data_wires)
-    width = data_wires + 3 * stations
-    a_base = data_wires
-    b_base = a_base + stations
-    work_base = b_base + stations
-    compiled, structural_failures = compile_controller(controller, width)
-
-    step_total = 0
-    translation_failure_config_steps = 0
-    token_count_failure_config_steps = 0
-    adjacency_failure_config_steps = 0
-    adjacency_pair_incidences = 0
-    b_rail_failure_config_steps = 0
-    work_failure_config_steps = 0
-    distance_failure_config_steps = 0
-    distance_pair_incidence_checks = 0
-    rail_closure_failures = 0
-    data_changed_configurations = 0
-    output_hasher = sha256()
-
-    for start in range(0, len(masks), BITPLANE_BATCH):
-        budget_guard(started)
-        batch = masks[start:start + BITPLANE_BATCH]
-        rows = len(batch)
-        row_full = (1 << rows) - 1
-        original_a = masks_to_bitplanes(batch, stations)
-        original_count = bitsliced_population_count(original_a)
-        planes = [
-            row_full if bit else 0 for bit in data
-        ]
-        planes.extend(original_a)
-        planes.extend([0] * (2 * stations))
-
-        for step in range(stations):
-            apply_bitplane_word(planes, compiled, row_full)
-            shift = step + 1
-            actual_a = planes[a_base:a_base + stations]
-            actual_b = planes[b_base:b_base + stations]
-            actual_work = planes[work_base:work_base + stations]
-            expected_a = tuple(
-                original_a[(station - shift) % stations]
-                for station in range(stations)
-            )
-
-            translation_bad = 0
-            for observed, expected in zip(actual_a, expected_a):
-                translation_bad |= observed ^ expected
-            translation_failure_config_steps += translation_bad.bit_count()
-
-            b_bad = 0
-            work_bad = 0
-            for plane in actual_b:
-                b_bad |= plane
-            for plane in actual_work:
-                work_bad |= plane
-            b_rail_failure_config_steps += b_bad.bit_count()
-            work_failure_config_steps += work_bad.bit_count()
-
-            count_bad = 0
-            actual_count = bitsliced_population_count(
-                actual_a + actual_b
-            )
-            for observed, expected in zip(actual_count, original_count):
-                count_bad |= observed ^ expected
-            token_count_failure_config_steps += count_bad.bit_count()
-
-            adjacent_bad = 0
-            for station in range(stations):
-                incidence = (
-                    actual_a[station]
-                    & actual_a[(station + 1) % stations]
-                )
-                adjacency_pair_incidences += incidence.bit_count()
-                adjacent_bad |= incidence
-            adjacency_failure_config_steps += adjacent_bad.bit_count()
-
-            distance_bad = 0
-            for left in range(stations):
-                moved_left = (left + shift) % stations
-                for right in range(left + 1, stations):
-                    moved_right = (right + shift) % stations
-                    expected_pair = original_a[left] & original_a[right]
-                    observed_pair = (
-                        actual_a[moved_left] & actual_a[moved_right]
-                    )
-                    distance_pair_incidence_checks += (
-                        expected_pair.bit_count()
-                    )
-                    distance_bad |= observed_pair ^ expected_pair
-                    if (
-                        circular_distance(left, right, stations)
-                        != circular_distance(
-                            moved_left, moved_right, stations
-                        )
-                    ):
-                        distance_bad |= expected_pair
-            distance_failure_config_steps += distance_bad.bit_count()
-            step_total += rows
-
-        closure_bad = 0
-        for observed, expected in zip(
-            planes[a_base:a_base + stations], original_a
-        ):
-            closure_bad |= observed ^ expected
-        for plane in planes[b_base:work_base + stations]:
-            closure_bad |= plane
-        rail_closure_failures += closure_bad.bit_count()
-
-        data_changed = 0
-        for wire, original_bit in enumerate(data):
-            expected = row_full if original_bit else 0
-            data_changed |= planes[wire] ^ expected
-        data_changed_configurations += data_changed.bit_count()
-
-        row_bytes = (rows + 7) // 8
-        for plane in planes[:data_wires]:
-            output_hasher.update(plane.to_bytes(row_bytes, "little"))
-        budget_guard(started)
-
-    expected_pair_checks = sum(
-        comb(mask.bit_count(), 2) for mask in masks
-    ) * stations
-    frozen_steps = FROZEN_ORBIT_STEP_TOTALS[stations]
-    zero_failures = {
-        "controller_structure_failures": structural_failures,
-        "translation_failure_config_steps":
-            translation_failure_config_steps,
-        "token_count_failure_config_steps":
-            token_count_failure_config_steps,
-        "adjacency_failure_config_steps":
-            adjacency_failure_config_steps,
-        "adjacency_pair_incidences": adjacency_pair_incidences,
-        "B_rail_failure_config_steps": b_rail_failure_config_steps,
-        "work_failure_config_steps": work_failure_config_steps,
-        "distance_failure_config_steps":
-            distance_failure_config_steps,
-        "rail_closure_failures": rail_closure_failures,
-    }
-    exact = (
-        len(program) == stations == 8 * banks - 5
-        and step_total == len(masks) * stations == frozen_steps
-        and distance_pair_incidence_checks == expected_pair_checks
-        and all(value == 0 for value in zero_failures.values())
-        and len(compiled) == len(controller)
-        and data_changed_configurations > 0
-    )
-    return {
-        "ring": stations,
-        "banks": banks,
-        "configurations": len(masks),
-        "steps_per_orbit": stations,
-        "exhaustive_controller_steps": step_total,
-        "frozen_controller_steps": frozen_steps,
-        "program_stations": len(program),
-        "controller_gates_per_step": len(controller),
-        "controller_word_sha256": K.gate_digest(controller),
-        "bitplane_batch": BITPLANE_BATCH,
-        "distance_pair_incidence_checks":
-            distance_pair_incidence_checks,
-        "expected_distance_pair_incidence_checks":
-            expected_pair_checks,
-        "data_changed_configurations": data_changed_configurations,
-        "data_output_bitplanes_sha256": output_hasher.hexdigest(),
-        "inverse_certificate": (
-            "Every exhaustively applied X/CNOT/TOF gate is self-inverse; "
-            "reversing the exact compiled sequence is therefore an exact "
-            "inverse on every bit-plane row."
-        ),
-        "zero_failure_census": zero_failures,
-        "execution": (
-            "K.interleaved_program and K.controller_word used directly; "
-            "independent reversible bit-plane evaluator applied every K "
-            "gate at every step to every census configuration"
-        ),
-        "exact": exact,
-    }
-
-
-def own_ownership_violations(
-    mask: int, stations: int
-) -> tuple[tuple[int, tuple[str, ...]], ...]:
-    rows = []
-    for station in range(stations):
-        if not ((mask >> station) & 1):
-            continue
-        reasons = []
-        if (mask >> ((station - 1) % stations)) & 1:
-            reasons.append("left_A")
-        if (mask >> ((station + 1) % stations)) & 1:
-            reasons.append("right_A")
-        if reasons:
-            rows.append((station, tuple(reasons)))
-    return tuple(rows)
-
-
-def near_miss_and_grid_spotchecks(
-    stations: int,
-    masks: tuple[int, ...],
-    counts: tuple[int, ...],
-) -> dict[str, object]:
-    near_rows = []
-    violating_stations = 0
-    reason_incidences = 0
-    near_failures = 0
-    for left in range(stations):
-        right = (left + 1) % stations
-        mask = (1 << left) | (1 << right)
-        violations = own_ownership_violations(mask, stations)
-        observed_sites = tuple(row[0] for row in violations)
-        reasons = tuple(
-            reason for _station, station_reasons in violations
-            for reason in station_reasons
-        )
-        expected_sites = tuple(sorted((left, right)))
-        exact = (
-            observed_sites == expected_sites
-            and len(violations) == 2
-            and len(reasons) == 2
-        )
-        near_failures += not exact
-        violating_stations += len(violations)
-        reason_incidences += len(reasons)
-        near_rows.append(
-            (left, right, observed_sites, reasons, exact)
-        )
-
-    maximum = stations // 2
-    low_grid_accepts = 0
-    low_grid_refusals = 0
-    low_grid_failures = 0
-    low_cell_accepts = [
-        [0] * (maximum + 1) for _ in range(maximum + 1)
-    ]
-    low_cell_refusals = [
-        [0] * (maximum + 1) for _ in range(maximum + 1)
-    ]
-    low_masks = tuple(mask for mask in masks if mask.bit_count() <= 2)
-    for mask in low_masks:
-        true_count = mask.bit_count()
-        for expected_count in range(maximum + 1):
-            accepted = true_count == expected_count
-            refused = not accepted
-            low_grid_accepts += accepted
-            low_grid_refusals += refused
-            low_cell_accepts[expected_count][true_count] += accepted
-            low_cell_refusals[expected_count][true_count] += refused
-            low_grid_failures += accepted == refused
-            low_grid_failures += accepted != (
-                expected_count == true_count
-            )
-
-    diagonal_accepts = 0
-    diagonal_refusals = 0
-    diagonal_by_k = [0] * (maximum + 1)
-    for mask in masks:
-        true_count = mask.bit_count()
-        accepted = mask.bit_count() == true_count
-        diagonal_accepts += accepted
-        diagonal_refusals += not accepted
-        diagonal_by_k[true_count] += accepted
-
-    low_total = sum(counts[:min(3, len(counts))])
-    exact = (
-        near_failures == 0
-        and violating_stations == reason_incidences == 2 * stations
-        and len(low_masks) == low_total
-        and low_grid_accepts == low_total
-        and low_grid_refusals == low_total * maximum
-        and low_grid_failures == 0
-        and diagonal_accepts == len(masks)
-        and diagonal_refusals == 0
-        and tuple(diagonal_by_k) == counts
-    )
-    return {
-        "ring": stations,
-        "near_miss_adjacent_pairs": stations,
-        "near_miss_violating_stations": violating_stations,
-        "expected_near_miss_violating_stations": 2 * stations,
-        "near_miss_reason_incidences": reason_incidences,
-        "near_miss_failures": near_failures,
-        "near_miss_table_sha256": digest_json(near_rows),
-        "all_k_le_2_configurations": len(low_masks),
-        "expected_all_k_le_2_configurations": low_total,
-        "low_grid_expected_count_domain": tuple(range(maximum + 1)),
-        "low_grid_accepts": low_grid_accepts,
-        "low_grid_refusals": low_grid_refusals,
-        "low_grid_failures": low_grid_failures,
-        "low_grid_accepted_cells": tuple(
-            tuple(row) for row in low_cell_accepts
-        ),
-        "low_grid_refused_cells": tuple(
-            tuple(row) for row in low_cell_refusals
-        ),
-        "all_diagonal_cases": len(masks),
-        "diagonal_accepts": diagonal_accepts,
-        "diagonal_refusals": diagonal_refusals,
-        "diagonal_accepts_by_k": tuple(diagonal_by_k),
-        "verdict_law": (
-            "accept iff independently recounted popcount equals supplied k"
-        ),
-        "exact": exact,
-    }
-
-
-def discipline(
-    k_namespace_before: dict[str, int],
-) -> dict[str, object]:
-    k_namespace_after = {
-        name: id(value) for name, value in vars(K).items()
-    }
-    blocklisted = tuple(
-        name for name in DIRECT_FRONTIER_IMPORTS
-        if name.startswith("frontier_cycle72")
-        or name.startswith("frontier_cycle73")
-    )
-    frozen_literal_values_exact = (
-        FROZEN_CENSUS_TOTALS
-        == {3: 4, 11: 199, 19: 9349, 27: 439204}
-        and FROZEN_ORBIT_STEP_TOTALS
-        == {3: 12, 11: 2189, 19: 177631, 27: 11858508}
-    )
-    exact = (
-        k_namespace_after == k_namespace_before
-        and DIRECT_FRONTIER_IMPORTS == (K.__name__,)
-        and not blocklisted
-        and frozen_literal_values_exact
-        and AUDIT_INPUT_PATHS
-        == (
-            "scripts/frontier_cycle737_ring_family_uniformity_2026_07_28.py",
-            "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-        )
-        and DECLARED_INPUT_PATHS == AUDIT_INPUT_PATHS
-        and SCOPE_STATEMENT
-        == "family-uniform over [3,11,19,27], not general-n"
-    )
-    return {
-        "K_namespace_unchanged": k_namespace_after == k_namespace_before,
-        "direct_frontier_imports": DIRECT_FRONTIER_IMPORTS,
-        "blocklisted_direct_imports": blocklisted,
-        "frozen_tables_literal_values_exact":
-            frozen_literal_values_exact,
-        "declared_inputs_exact": (
-            DECLARED_INPUT_PATHS == AUDIT_INPUT_PATHS
-        ),
-        "scope": SCOPE_STATEMENT,
-        "general_n_theorem_claimed": False,
-        "exact": exact,
-    }
 
 
 def main() -> int:
+    if sys.argv[1:]:
+        raise SystemExit("usage: independent-check")
     started = perf_counter()
-    k_namespace_before = {
-        name: id(value) for name, value in vars(K).items()
-    }
-    reports: dict[str, object] = {}
+    root = Path(__file__).resolve().parents[1]
 
-    try:
-        extracted = extraction()
-        reports["extraction"] = extracted
-        check("A_extraction", extracted["exact"])
-    except Exception as exc:
-        ERRORS["A_extraction"] = error_text(exc)
-        reports["extraction"] = {"exact": False, "error": ERRORS["A_extraction"]}
-        check("A_extraction", False)
-
-    try:
-        admissibility = admissibility_recount()
-        reports["admissibility_recount"] = admissibility
-        check("B_admissibility_recount", admissibility["exact"])
-    except Exception as exc:
-        ERRORS["B_admissibility_recount"] = error_text(exc)
-        reports["admissibility_recount"] = {
-            "exact": False, "error": ERRORS["B_admissibility_recount"]
-        }
-        check("B_admissibility_recount", False)
-
-    census_reports: dict[int, dict[str, object]] = {}
-    orbit_reports: dict[int, dict[str, object]] = {}
-    control_reports: dict[int, dict[str, object]] = {}
-    for banks, stations in zip(BANK_FAMILY, RING_FAMILY):
-        masks: tuple[int, ...] | None = None
-        counts: tuple[int, ...] | None = None
-        census_label = f"C_census_lucas_recount_n{stations}"
-        try:
-            census, masks = census_lucas_recount(stations)
-            counts = tuple(census["counts_by_k"])
-            census_reports[stations] = census
-            check(census_label, census["exact"])
-        except Exception as exc:
-            ERRORS[census_label] = error_text(exc)
-            census_reports[stations] = {
-                "ring": stations,
-                "exact": False,
-                "error": ERRORS[census_label],
-            }
-            check(census_label, False)
-
-        orbit_label = f"D_orbit_recount_n{stations}"
-        if masks is None:
-            orbit_reports[stations] = {
-                "ring": stations,
-                "exact": False,
-                "error": "skipped after census failure",
-            }
-            check(orbit_label, False)
-        else:
-            try:
-                orbit = orbit_recount(banks, stations, masks, started)
-                orbit_reports[stations] = orbit
-                check(orbit_label, orbit["exact"])
-            except Exception as exc:
-                ERRORS[orbit_label] = error_text(exc)
-                orbit_reports[stations] = {
-                    "ring": stations,
-                    "exact": False,
-                    "error": ERRORS[orbit_label],
-                }
-                check(orbit_label, False)
-
-        controls_label = f"E_near_miss_and_grid_n{stations}"
-        if masks is None or counts is None:
-            control_reports[stations] = {
-                "ring": stations,
-                "exact": False,
-                "error": "skipped after census failure",
-            }
-            check(controls_label, False)
-        else:
-            try:
-                controls = near_miss_and_grid_spotchecks(
-                    stations, masks, counts
-                )
-                control_reports[stations] = controls
-                check(controls_label, controls["exact"])
-            except Exception as exc:
-                ERRORS[controls_label] = error_text(exc)
-                control_reports[stations] = {
-                    "ring": stations,
-                    "exact": False,
-                    "error": ERRORS[controls_label],
-                }
-                check(controls_label, False)
-        del masks
-
-    reports["census_lucas_recount"] = census_reports
-    reports["orbit_recount"] = orbit_reports
-    reports["near_miss_and_grid_spotchecks"] = control_reports
-
-    science_labels = tuple(
-        label for label in CHECKS
-        if label.startswith(("A_", "B_", "C_", "D_", "E_"))
+    primary_report, live_evidence = run_primary(root)
+    check(
+        "JOINT_LIVE_primary_passes",
+        live_evidence["returncode"] == 0
+        and primary_report.get("pass") is True
+        and primary_report.get("terminal")
+        == "CYCLE737_SELECTED_CONSTRUCTOR_CENSUS_DIAGNOSTICS_PASS",
     )
-    family_component_pass = all(CHECKS[label] for label in science_labels)
-    boundary = {
-        "ring_family": list(RING_FAMILY),
-        "sector_theorem_uniform_over_family": family_component_pass,
-        "frozen_n_dependence": (
-            None
-            if family_component_pass
-            else "one or more bounded family certificates failed"
-        ),
-        "general_n_theorem_claimed": False,
-        "scope": SCOPE_STATEMENT,
-        "uniformity_statement": (
-            "Every configuration is exhausted at each declared family "
-            "member; this is family-uniform, not general-n."
-        ),
-    }
-    reports["honest_boundary"] = boundary
-    boundary_exact = (
-        boundary["sector_theorem_uniform_over_family"]
-        == family_component_pass
-        and (
-            (boundary["frozen_n_dependence"] is None)
-            == family_component_pass
-        )
-        and boundary["general_n_theorem_claimed"] is False
-        and boundary["scope"] == SCOPE_STATEMENT
+
+    export, export_evidence = run_primary(root, export=True)
+    supplied_digest = export.pop("export_sha256", None)
+    check(
+        "EXPORT_literal_gate_stream_integrity",
+        export_evidence["returncode"] == 0
+        and export.get("schema") == "cycle737_selected_gate_export_v1"
+        and supplied_digest == digest_json(export),
     )
-    check("F_honest_bounded_scope", boundary_exact)
 
-    try:
-        discipline_report = discipline(k_namespace_before)
-        reports["discipline"] = discipline_report
-        check("G_discipline", discipline_report["exact"])
-    except Exception as exc:
-        ERRORS["G_discipline"] = error_text(exc)
-        reports["discipline"] = {
-            "exact": False, "error": ERRORS["G_discipline"]
-        }
-        check("G_discipline", False)
-
-    elapsed = perf_counter() - started
-    check("H_runtime_under_1800_seconds", elapsed < AUDIT_TIMEOUT_SEC)
-
-    report: dict[str, object] = {
-        "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
-        "NOTE_PATH": NOTE_PATH,
-        "audit_timeout_seconds": AUDIT_TIMEOUT_SEC,
-        "bounded": True,
-        "scope": SCOPE_STATEMENT,
-        "reports": reports,
-        "errors": ERRORS,
-        "runtime_seconds": round(elapsed, 6),
-    }
-    provisional = {
-        **report,
-        "checks": dict(sorted(CHECKS.items())),
-        "checks_passed": sum(CHECKS.values()),
-        "checks_failed": sum(not value for value in CHECKS.values()),
-    }
-    provisional_text = "\n".join(OUTPUT_LINES) + "\n" + json.dumps(
-        provisional, sort_keys=True, separators=(",", ":"), default=str
+    primary_inputs = tuple(
+        top_level_literal(root / PRIMARY_PATH, "AUDIT_INPUT_PATHS")
     )
     check(
-        "I_stdout_under_150KB",
-        len(provisional_text.encode()) + 4096 < STDOUT_LIMIT_BYTES,
+        "INPUT_complete_literal_closure",
+        AUDIT_INPUT_PATHS == (PRIMARY_PATH,) + primary_inputs
+        and tuple(primary_report["AUDIT_INPUT_PATHS"]) == primary_inputs
+        and len(AUDIT_INPUT_PATHS) == len(set(AUDIT_INPUT_PATHS)),
     )
 
-    report["checks"] = dict(sorted(CHECKS.items()))
+    constructor_rows = export["constructor_witnesses"]
+    constructor_exact = len(constructor_rows) == 8
+    for banks, row in enumerate(constructor_rows, start=1):
+        kinds = Counter(str(kind) for kind in row["program_kinds"])
+        constructor_exact &= (
+            int(row["banks"]) == banks
+            and len(row["program_kinds"]) == 8 * banks - 5
+            and kinds == expected_kind_counts(banks)
+        )
+    check("A_supplied_constructor_length", constructor_exact)
+
+    fixture_reports: dict[str, Any] = {}
+    fixtures = export["fixtures"]
+    fixture_shape = len(fixtures) == len(SELECTED_FIXTURES)
+    for expected, fixture in zip(SELECTED_FIXTURES, fixtures):
+        banks, stations = expected
+        fixture_shape &= (
+            int(fixture["banks"]) == banks
+            and int(fixture["ring"]) == stations
+            and len(fixture["program_kinds"]) == stations
+        )
+        masks = independent_masks(stations)
+        static = static_check(stations, masks)
+        prefix = prefix_check(fixture, masks)
+        bare = bare_check(fixture, masks)
+        check(f"B_independent_census_static_n{stations}", static["exact"])
+        check(f"C_exported_count_prefix_n{stations}", prefix["exact"])
+        check(f"D_exported_bare_transport_n{stations}", bare["exact"])
+        fixture_reports[str(stations)] = {
+            "static": static,
+            "prefix": prefix,
+            "bare": bare,
+        }
+
+    boundary = primary_report["boundary"]
+    check(
+        "E_honest_boundary",
+        fixture_shape
+        and boundary["selected_fixtures"]
+        == [list(row) for row in SELECTED_FIXTURES]
+        and boundary["n3_multi_token_degenerate"] is True
+        and all(
+            boundary[key] is False
+            for key in (
+                "framework_admissibility_claimed",
+                "constructor_uniqueness_claimed",
+                "family_uniform_finite_diagnostics_claimed",
+                "controller_lawfulness_claimed",
+                "autonomous_preparation_claimed",
+                "full_guarded_word_claimed",
+                "adjacency_wall_or_no_go_claimed",
+                "nonfamily_failure_claimed",
+            )
+        ),
+    )
+
+    runtime = perf_counter() - started
+    check("TIMEOUT_runtime_under_900_seconds", runtime < AUDIT_TIMEOUT_SEC)
+    report: dict[str, Any] = {
+        "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
+        "NOTE_PATH": NOTE_PATH,
+        "PRIMARY_PATH": PRIMARY_PATH,
+        "audit_timeout_seconds": AUDIT_TIMEOUT_SEC,
+        "bounded": True,
+        "checks": CHECKS,
+        "checks_passed": sum(CHECKS.values()),
+        "checks_failed": sum(not value for value in CHECKS.values()),
+        "fixture_reports": fixture_reports,
+        "joint_live_primary": {
+            **live_evidence,
+            "report_sha256": primary_report.get("report_sha256"),
+        },
+        "gate_export": {
+            **export_evidence,
+            "export_sha256": supplied_digest,
+        },
+        "runtime_seconds": runtime,
+        "scope": (
+            "selected constructor counts and four finite census/static/prefix/"
+            "bare diagnostics; no framework or controller theorem"
+        ),
+        "terminal": "CYCLE737_SELECTED_DIAGNOSTICS_INDEPENDENT_PASS",
+    }
+    provisional = "\n".join(
+        OUTPUT_LINES
+        + [json.dumps(report, sort_keys=True, separators=(",", ":"))]
+    ) + "\n"
+    check(
+        "OUTPUT_stdout_under_150KB",
+        len(provisional.encode()) < STDOUT_LIMIT_BYTES,
+    )
+    report["checks"] = CHECKS
     report["checks_passed"] = sum(CHECKS.values())
     report["checks_failed"] = sum(not value for value in CHECKS.values())
     report["pass"] = all(CHECKS.values())
-    report["terminal"] = (
-        "CYCLE737_RING_FAMILY_INDEPENDENT_CHECK_PASS"
-        if report["pass"]
-        else "CYCLE737_RING_FAMILY_INDEPENDENT_CHECK_HONEST_FAIL"
-    )
-    report["report_sha256"] = digest_json(report)
-    final_json = json.dumps(
-        report, sort_keys=True, separators=(",", ":"), default=str
-    )
-    text = "\n".join(OUTPUT_LINES) + "\n" + final_json + "\n"
-    if len(text.encode()) >= STDOUT_LIMIT_BYTES:
-        fallback = {
-            "checks": report["checks"],
-            "checks_passed": report["checks_passed"],
-            "checks_failed": report["checks_failed"],
-            "errors": ERRORS,
-            "pass": False,
-            "terminal": "CYCLE737_RING_FAMILY_INDEPENDENT_CHECK_HONEST_FAIL",
-            "reason": "full report exceeded stdout bound",
+    report["report_sha256"] = digest_json(
+        {
+            key: value
+            for key, value in report.items()
+            if key != "report_sha256"
         }
-        text = "\n".join(OUTPUT_LINES) + "\n" + json.dumps(
-            fallback, sort_keys=True, separators=(",", ":")
-        ) + "\n"
-        sys.stdout.write(text)
-        return 1
-    sys.stdout.write(text)
+    )
+    print("\n".join(OUTPUT_LINES))
+    print(json.dumps(report, sort_keys=True, separators=(",", ":")))
     return 0 if report["pass"] else 1
 
 

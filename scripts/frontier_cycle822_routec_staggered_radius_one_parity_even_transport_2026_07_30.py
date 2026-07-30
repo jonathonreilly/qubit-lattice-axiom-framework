@@ -40,9 +40,12 @@ import frontier_full128_25site_nn_circuit_core_2026_07_24 as S25
 AUDIT_TIMEOUT_SEC = 1200
 NOTE_PATH = (
     "docs/ROUTEC_STAGGERED_RADIUS_ONE_PARITY_EVEN_TRANSPORT_"
-    "CYCLE822_BOUNDED_PROBE_NOTE_2026-07-30.md"
+    "CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md"
 )
 AUDIT_INPUT_PATHS = (
+    NOTE_PATH,
+    "scripts/frontier_cycle822_routec_staggered_radius_one_parity_even_"
+    "transport_2026_07_30.py",
     "docs/RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_"
     "CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md",
     "docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md",
@@ -50,6 +53,10 @@ AUDIT_INPUT_PATHS = (
     "docs/LITERAL_THREE_BANK_PREFIX_RECURRENT_G_ACTUAL_SHEAR_"
     "CYCLE794_BOUNDED_THEOREM_NOTE_2026-07-30.md",
     "docs/LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md",
+    "docs/work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_"
+    "FAMILY_CYCLE219_NOTE_2026-07-16.md",
+    "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_"
+    "FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md",
     "scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py",
     "scripts/frontier_cycle734_paired_excitation_genesis_2026_07_28.py",
     "scripts/frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.py",

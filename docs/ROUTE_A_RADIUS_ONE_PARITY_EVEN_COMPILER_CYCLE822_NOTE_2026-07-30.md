@@ -1,13 +1,13 @@
-# Cycle 822 Route A: radius-one parity-even FSWAP and dual-rail compiler
+# Cycle 822 Route A: superseded radius-one parity-even compiler diagnostic
 
 > **Superseded framework typing.** This first probe incorrectly treated every
 > routed/token coordinate as charged under product-Z parity. Cycle 821 protects
 > matter plus carrier only; companion, syndrome, token, and neutral-work modes
 > are neutral. Its 328-factor physical claim is therefore demoted. The exact
 > failure census and corrected fixed-atlas construction are in
-> `ROUTE_A_FIXED_TYPE_ATLAS_CORRECTION_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md`.
+> [`ROUTE_A_FIXED_TYPE_ATLAS_CORRECTION_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md`](ROUTE_A_FIXED_TYPE_ATLAS_CORRECTION_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md).
 
-**Type:** bounded_theorem
+**Type:** meta
 
 **Authority:** none
 
@@ -15,14 +15,21 @@
 
 **Baseline:** `c04e711ea660d655eff907a40f96fd345259b53f`
 
-**Status:** constructive Route-A compiler positive on the declared supplied-token surface
+**Status:** superseded-invalid historical route; not a live theorem or
+framework compiler claim
 
-## Claim
+**Declared dependencies:**
+[Cycle 720](RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md),
+[Cycle 789](THREE_REGISTER_COMPANION_INPUT_CIRCUIT_CYCLE789_BOUNDED_THEOREM_NOTE_2026-07-30.md),
+[Cycle 794](LITERAL_THREE_BANK_PREFIX_RECURRENT_G_ACTUAL_SHEAR_CYCLE794_BOUNDED_THEOREM_NOTE_2026-07-30.md),
+and [Cycle 821](LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md).
+
+## Rejected trial construction
 
 The runner
 `scripts/frontier_cycle822_route_a_radius_one_parity_even_compiler_2026_07_30.py`
-constructs literal radius-one, parity-preserving elementary words for both
-surfaces left open in Cycle 821:
+records an internally consistent all-coordinates-charged product-Z experiment
+for two target surfaces:
 
 1. every Cycle-821 controlled two-target pair atom, including all
    `XX`, `XY`, `YX`, and `YY` targets and either choice of pivot; and
@@ -35,9 +42,10 @@ palette is nearest-neighbour FSWAP, nearest-neighbour CZ, the Cycle-821
 two-mode even rotation `U` or `U_dagger`, a radius-one three-mode Fredkin star,
 and a one-mode diagonal phase. Every route and the dual-rail token are returned.
 
-This is a bounded conditional compiler. It does not derive the two clean token
-rails, route workspace, fixed chart/program, program occurrence, or autonomous
-renewal.
+This is not a Cycle-821 physical compiler: its grading is wrong for companion,
+syndrome, token, and neutral-work coordinates. The algebra and controls below
+are retained only to make the rejected route reproducible. The corrected
+fixed-type-atlas note is the sole positive Route-A theorem.
 
 ## Exact tensor-frame route hop
 
@@ -122,21 +130,22 @@ Fredkins with different controls commute on the token because each contributes
 one application of the same rail swap. Both forward and reverse control orders
 are executed. Both choices of pivot in every X/Y pair are also executed.
 
-## Parity and locality proof
+## Rejected product-Z parity calculation
 
-Let `P_ext` be product Z on every data, token, and route-workspace M2 in the
-compiler. Each elementary factor commutes with its support parity:
+The rejected experiment defines a trial product Z on every data, token, and
+route-workspace M2. This trial observable is not the landed Cycle-821
+`P_ext`. Within that rejected grading each elementary factor commutes with its
+support parity:
 
 - FSWAP and Fredkin preserve occupation number;
 - CZ and the token phase are diagonal;
 - the Cycle-821 `U` and `U_dagger` have even two-mode generator `K`.
 
-Tensoring the support identity proves commutation with `P_ext`. If a prefix
-`V_k` commutes with `P_ext` and the next factor `g_{k+1}` does too, then
-`g_{k+1}V_k` does. The runner performs this induction over every emitted
-primitive and reports zero prefix failures. It also densely multiplies every
-prefix of the routed controlled-pair word and of a four-control accumulator;
-both maximum commutator residuals are zero.
+Tensoring the support identity proves commutation with that trial product-Z
+observable. The runner's zero prefix residuals therefore characterize the
+rejected model only; they do not certify Cycle-821 parity. The correction
+runner replays these words under the actual fixed grading and finds 10,112
+elementary failures and 1,445 charged/neutral coordinate conflicts.
 
 Every two-mode factor acts on nearest neighbours. Fredkin acts on the center
 and its two opposite token neighbours, a three-site support of diameter two
@@ -166,7 +175,7 @@ The dirty opposite-rail token mutation has minimum seam residual
 residual is `5.65685424949238`. The correct accumulator and both control orders
 have dense isometry residual zero.
 
-## Supplied / derived / open
+## Inputs / diagnostic outputs / open repair
 
 ### Supplied
 
@@ -176,12 +185,13 @@ have dense isometry residual zero.
 - two clean dual-rail token M2 in `|10>` for a serialized seam factor;
 - route-workspace M2, fixed route program, and program occurrence.
 
-### Derived
+### Diagnostic outputs inside the rejected grading
 
 - literal returned radius-one factor words for every Cycle-821 controlled pair;
 - literal returned radius-one factor words for all held recurrent seam rows;
 - exact clean-token return and order/pivot independence;
-- elementary and cumulative-prefix `P_ext` commutation;
+- elementary and cumulative-prefix trial product-Z commutation, explicitly
+  not landed `P_ext` commutation;
 - active wrong-SWAP, deleted-return, and dirty-token mutations.
 
 ### Open
@@ -192,4 +202,5 @@ have dense isometry residual zero.
 - physical time/rate and the broader source, Record/Born, and prediction
   bridges.
 
-No route-independent negative or no-go claim is made.
+The corrected atlas note owns the positive physical result. This historical
+artifact makes no route-independent negative or no-go claim.

@@ -13,6 +13,12 @@ constructed from the landed Cycle-821 surface
 compiler is positive on an explicitly enlarged charged-carrier/neutral-work
 atlas
 
+**Declared dependencies:**
+[superseded Route-A diagnostic](ROUTE_A_RADIUS_ONE_PARITY_EVEN_COMPILER_CYCLE822_NOTE_2026-07-30.md),
+[Cycle 720](RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md),
+[Cycle 789](THREE_REGISTER_COMPANION_INPUT_CIRCUIT_CYCLE789_BOUNDED_THEOREM_NOTE_2026-07-30.md),
+and [Cycle 821](LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md).
+
 ## Correction
 
 Cycle 821 protects one fixed
@@ -79,8 +85,9 @@ only through neutral work. Both can control the same local Fredkin. Fredkin
 never changes its control occupation, so a charged-control/neutral-rail
 Fredkin commutes exactly with `Z_control`.
 
-The atlas resource counts `(charged carrier relays, neutral work including the
-two token rails, total typed coordinates)` are:
+The atlas resource counts `(added charged carrier relays, added neutral work
+including the two token rails, total typed coordinates including nine landed
+persistent coordinates per cell)` are:
 
 - `(2,1,1)`: `(94, 66, 178)`;
 - `(3,1,1)`: `(122, 83, 232)`;

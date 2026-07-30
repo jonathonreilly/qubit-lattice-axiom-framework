@@ -9,6 +9,14 @@
 **Landed input:**
 [`LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md`](LOCAL_PARITY_EXCHANGE_CARRIER_RECURRENT_BELL_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-30.md)
 
+**Load-bearing framework and fixture dependencies:**
+[minimal axioms](MINIMAL_AXIOMS_2026-06-29.md),
+[Cycle 720](RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md),
+[Cycle 789](THREE_REGISTER_COMPANION_INPUT_CIRCUIT_CYCLE789_BOUNDED_THEOREM_NOTE_2026-07-30.md),
+[Cycle 794](LITERAL_THREE_BANK_PREFIX_RECURRENT_G_ACTUAL_SHEAR_CYCLE794_BOUNDED_THEOREM_NOTE_2026-07-30.md),
+[Cycle 219 mass fixture](work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md),
+and [Cycle 230 contact fixture](work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md).
+
 **Route A correction:**
 [`ROUTE_A_FIXED_TYPE_ATLAS_CORRECTION_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md`](ROUTE_A_FIXED_TYPE_ATLAS_CORRECTION_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md)
 
@@ -16,14 +24,14 @@
 [`ROUTE_B_TYPED_SPECTATOR_RADIUS_ONE_SYNTHESIS_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md`](ROUTE_B_TYPED_SPECTATOR_RADIUS_ONE_SYNTHESIS_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md)
 
 **Route C:**
-[`ROUTEC_STAGGERED_RADIUS_ONE_PARITY_EVEN_TRANSPORT_CYCLE822_BOUNDED_PROBE_NOTE_2026-07-30.md`](ROUTEC_STAGGERED_RADIUS_ONE_PARITY_EVEN_TRANSPORT_CYCLE822_BOUNDED_PROBE_NOTE_2026-07-30.md)
+[`ROUTEC_STAGGERED_RADIUS_ONE_PARITY_EVEN_TRANSPORT_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md`](ROUTEC_STAGGERED_RADIUS_ONE_PARITY_EVEN_TRANSPORT_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md)
 
 ## Question and answer
 
 The tournament asked whether the Cycle-821 local even-CAR preparation and
 recurrent factor program can be compiled into bounded physical-M2
 neighbourhoods without a global parity string, Jordan-Wigner order, or
-host-side parity service.
+runtime host-side parity service.
 
 The finite supplied-program answer is positive. On `(2,1,1)`, `(3,1,1)`,
 `(3,2,2)`, and held `(5,3,2)` fixtures, Route C constructs one immutable
@@ -54,6 +62,12 @@ program is exact factor by factor. It is not yet a translation-invariant
 autonomous local law, a genesis theorem, or a bridge to physical time,
 source/gravity, Records, Born weights, or realized history.
 
+The runtime circuit makes no global-parity query. Offline compilation still
+consumes the complete supplied finite-box factor rows, charged/neutral type
+assignment, factor order, coframe, and routing atlas. The result therefore
+removes a runtime parity oracle; it does not remove global host-side
+preprocessing of the supplied program.
+
 The coordinate census is a finite-box bound, not a size-independent constant-
 overhead theorem. Charged/neutral coordinate counts are respectively
 459/1,283, 702/2,056, 3,433/13,070, and 8,985/34,255. The maximum observed
@@ -68,16 +82,22 @@ opcodes routed on charged FSWAP rails and one onsite phase opcode. The runner
 binds every full matrix digest and reports 29 factors per cell: 58, 87, 348,
 and 870 on the four fixtures.
 
-All unique nonseam opcodes execute through a generic returned route. The
-maximum clean-route residual is zero. Deleting a return gives minimum residual
-`0.572521454844302`. Replacing FSWAP by ordinary SWAP is detected for 11/12
-two-site opcodes; the diagonal contact opcode commutes with that mutation and
-is reported as the exact exception rather than counted as a control success.
+All 12 two-site nonseam opcodes execute through generic returned routes; the
+one-site phase executes onsite. The maximum clean-route residual is zero.
+Deleting a return gives minimum residual `0.572521454844302`. Replacing FSWAP
+by ordinary SWAP is detected for 11/12 two-site opcodes; the diagonal contact
+opcode commutes with that mutation and is reported as the exact exception
+rather than counted as a control success.
 
 The one-particle mass residual is
 `5.551115123125783e-17`. Free, seam, and contact blocks are therefore present
 in the same literal scheduled program, but their selection, coupling values,
 and factor order remain the landed supplied law.
+
+That mass check preserves a supplied fixture; it is not an empirical mass
+prediction or a parameter-selection derivation. It supplies the Cycle-219
+species parameter `beta=-0.3` and normalization `c^2=1/3`, together with the
+Cycle-230 dimensionless contact coupling `g=0.37`.
 
 ## Route dispositions
 
@@ -134,60 +154,63 @@ not a demonstrated necessary schedule resource here. Return deletion is
 rank-two detectable on the clean endpoint subspace but has a two-dimensional
 lawful null subspace, so no universal deletion detector is claimed.
 
-## No-go discipline N1-N8
+## Finite-route comparison — not a no-go gate
 
-This section prevents route failures from being promoted to constitutional
-evidence.
+This positive construction makes no impossibility, minimum-content,
+shared-obstruction, or axiom-pressure claim. The comparison below prevents
+route failures from being promoted to constitutional evidence; it is not
+presented as an N1-N8 no-go certificate.
 
-**N1 — alternative routes.** Three independent constructive families were
+**Alternative routes.** Three independent constructive families were
 executed: clean dual-rail/Fredkin accumulation, dirty same-type spectator
 reduction, and staggered clean-work transport. The synthesis role separately
 audited the actual Cycle-821 grading and full recurrent dictionary.
 
-**N2 — wall independence.** The routes do not fail or succeed for the same
+**Wall separation.** The routes do not fail or succeed for the same
 mechanical reason. Route A supplies token/Fredkin structure; Route B supplies
 adjacent parity-block rotations and finite A* paths; Route C supplies clean
 work and a staggered finite program. A failure of any one supply is not shared
 substrate evidence.
 
-**N3 — hidden walls.** The surviving imports are explicit: finite boundary and
+**Hidden-supply scan.** The surviving imports are explicit: finite boundary and
 chart, proper-cubic coframe, fixed coordinate typing, total-parity domain,
 clean Route-C work/route rails, carrier and syndrome genesis, landed factor
 matrices/couplings/order, and circuit occurrence. No route derives these from
 the axioms.
 
-**N4 — residual matching.** Route A and Route B independently execute the
+**Residual matching.** Route A and Route B independently execute the
 seam operator with residuals below `3.2e-16` and `1.7e-15`. Route C separately
 checks Pauli diagonalisation, every local matrix, every returned label,
 factorwise signed substitution, and all 13 nonseam opcodes. The positive
 claims share the same semantic target; they are not equal-Gram or dense
 completion surrogates.
 
-**N5 — rhetoric audit.** Failed legacy typings are called invalid routes.
+**Rhetoric audit.** Failed legacy typings are called invalid routes.
 Finite A* noncovariance is called a supplied-program boundary. No
 impossibility, minimum resource, constitutional obstruction, or axiom pressure
 is inferred.
 
-**N6 — partial-closure paths.** Route B removes the clean seam accumulator.
+**Partial-closure paths.** Route B removes the clean seam accumulator.
 Route C removes semantic multi-site rotations and includes the whole recurrent
 dictionary. Route A gives an independent exhaustive-operator check. Each is a
 usable partial closure even though autonomy remains open.
 
-**N7 — steelman.** The strongest constructive interpretation is Route C on its
+**Strongest constructive reading.** Route C on its
 declared finite code space: a literal fixed physical circuit with bounded
 tested routes, one parity atlas, returned registers, fixed schedule, full
 recurrent G, and transported cubic covariance. The strongest honest limitation
 is that size-independent overhead, a translation-local atlas law,
 atlas/program genesis, enforcement, and autonomous occurrence remain open.
 
-**N8 — cross-cycle echo.** Cycle 657's seven-cell-parity failure was
+**Cross-cycle comparison.** Cycle 657's seven-cell-parity failure was
 route-specific. Cycle 658 supplied the exact local endpoint-incidence
 discriminant. Cycle 821 closed semantic parity exchange but left literal seam
 synthesis open. Cycle 822 closes that literal finite-program synthesis; it does
 not convert the earlier route failure into a no-go.
 
-**Verdict:** no shared obstruction survives the three constructive routes.
-There is no axiom pressure from this tournament.
+**Verdict:** these three positive finite supplied-program constructions provide
+no evidence of a shared obstruction or axiom pressure. No route-independent
+negative conclusion is attempted.
 
 ## Supplied, derived, and open inventory
 
@@ -199,6 +222,10 @@ Supplied:
   FSWAP/SWAP, and accumulator primitive matrices;
 - fixed coordinate typing, finite route atlas, clean Route-C route/work
   genesis, fixed stage/colour/slot/ordinal program, and occurrence; and
+- complete global factor/type/order/coframe data for offline compilation; no
+  runtime parity service is used by the emitted circuit;
+- the Cycle-219 `beta=-0.3`, `c^2=1/3` mass fixture and the Cycle-230 `g=0.37`
+  contact coupling; and
 - finite boundary conditions and permission to retain the dirty carrier.
 
 Derived:
@@ -211,7 +238,8 @@ Derived:
   collision-free scheduling, scoped deletion/genuine-retyping controls, and
   held-size execution;
 - transported 24-frame/eight-origin/576-product covariance; and
-- preservation of the landed one-particle mass fixture.
+- preservation of the landed supplied one-particle mass fixture, not a mass
+  prediction or parameter-selection result.
 
 Open:
 

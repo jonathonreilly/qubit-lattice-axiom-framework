@@ -2,6 +2,10 @@
   "artifact": "frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30.py",
   "audit": "unset",
   "authority": "none",
+  "artifact_provenance_sha256": {
+    "note": "0854139458f823ef6b64bb5bb8ad3f676e913abc859165c0be78dbbd10f6b7ec",
+    "runner": "17af3e27463c94a1e98f6bfe578b6d7b1a575af50bccd96b472ab0ede44f775c"
+  },
   "checks_passed": 20,
   "checks_total": 20,
   "compile_scope": {
@@ -30,7 +34,7 @@
       "colour_product"
     ]
   },
-  "extended_from_canonical_package_commit": "ba14d1954f",
+  "extended_from_prior_cycle822_branch_package_commit": "ba14d1954f",
   "fixed_global_type_repair": {
     "old_pairwise_certificate_withdrawn": true,
     "post_extension_cross_typed_coordinate_collisions": 0,
@@ -192,7 +196,7 @@
     "one_particle_mass": 0.45340565417488515,
     "one_particle_mass_residual": 5.551115123125783e-17
   },
-  "report_sha256": "f2314c76687e0fc4f3f9e3e7e0599bc59ae279898e73ae2fd383e6b39b008117",
+  "report_sha256": "f9656ba3d7b50adba32985bd7c4e316f407e9e4efe3935eab546309e36559c40",
   "route": "C_staggered_time_multiplexed_literal_radius_one",
   "schedule_controls": {
     "colour_is_redundant_given_serialized_stage_and_slot_on_held_fixtures": true,

@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle768_response_law_candidate_2026_07_28.txt": "7bee6b2aba6db7beb120e830c2de84a80748c19f7012a077dd15482ed03c54ac",
+      "frontier_cycle768_response_law_independent_check_2026_07_28.txt": "55cf591d8c222e5c0df461475aa3de8b9363d51941933a5460a06bfbde35bb3a"
+    },
+    "note": {
+      "path": "docs/RESPONSE_LAW_CANDIDATE_CYCLE768_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "c2a42240450dcf2cbdbc343b833d9914baf2a88fb7bd99a98b8a3ea33940294d"
+    },
+    "runners": {
+      "frontier_cycle768_response_law_candidate_2026_07_28.py": "7c8771e9494a8ed3eea6f6519b2e29d655123c96b98e0295b5300c1320570c32",
+      "frontier_cycle768_response_law_independent_check_2026_07_28.py": "110ed606c8cb6891d371cd082d3c95a1c7bd4a9a308b0cd3aad8a17f39ec91fe"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "census": "1 ACCEPT / 78,125 bounded family (5^7 coefficient tuples); sign-flip, magnitude-2, permuted-transfer all REJECT",
+    "fixed_supplies": "the frozen Cycle-749 instrument; landed Cycle-320/322 surfaces (byte-anchored)",
+    "instrument": "unchanged Cycle-749 instrument: six criteria ACCEPT, all residuals 0.0 at 3e-10",
+    "kernel": "landed_adjoint_pullback: recoil (1,1,1) from U320 diagonal decomposition (Gram 216*I); transfer (1,1,1,1) from S322 R*R=I; seven fitted defaults zero",
+    "not_derived": "the response law title; the verified prediction; the no-refit attachment",
+    "outcome": "CANDIDATE_ACCEPTED_FIXTURE_SCOPE",
+    "prediction": "((-2,-2,0),(1,1,0),(1,1,0)) on channel pair (0,2): determinate, outside defining set, UNVERIFIED"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 8,
+    "primary_named_checks_passed": 14
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 768,
+  "date": "2026-07-29",
+  "result": {
+    "acceptance": "6/6 criteria, residuals 0.0",
+    "census": "unique in 78,125",
+    "kernel": "(1,1,1)/(1,1,1,1), zero constants",
+    "prediction_verified": false
+  },
+  "status": "CYCLE768_RESPONSE_LAW_CANDIDATE_PASS"
+}

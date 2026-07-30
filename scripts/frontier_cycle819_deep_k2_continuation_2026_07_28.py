@@ -1132,14 +1132,17 @@ def bit_slice_equivalence_certificate(
                 state_sha256(state) for state in expected
             )),
         })
+    passed = len(rows) == 44 and all(row["exact"] for row in rows)
     return {
         "basis": (
             "all 44 position-words, all four event states, one exact "
             "landed step: bit-sliced X/CNOT/TOF equals scalar apply_semantic"
         ),
-        "rows": tuple(rows),
+        "position_words_checked": len(rows),
+        "event_states_checked": sum(row["keys"] for row in rows),
+        "all_exact": all(row["exact"] for row in rows),
         "row_sha256": digest(tuple(rows)),
-        "pass": len(rows) == 44 and all(row["exact"] for row in rows),
+        "pass": passed,
     }
 
 
@@ -1444,8 +1447,17 @@ def boundary_ledger(
         ledgers.append({
             "horizon": horizon,
             "baseline_open_population": len(baseline_open),
-            "rows": tuple(rows),
             "open_at_boundary": len(open_rows),
+            "open_key_sha256": digest(tuple(
+                row["key"] for row in open_rows
+            )),
+            "landed_boundary_tests_executed": len(open_rows),
+            "landed_boundary_test_sha256": digest(tuple(
+                row["landed_boundary_test"] for row in open_rows
+            )),
+            "status_census": dict(sorted(Counter(
+                row["status"].split("(", 1)[0] for row in rows
+            ).items())),
             "all_open_landed_nonclean": all(
                 not row["landed_boundary_test"]["landed_clean"]
                 and row["landed_boundary_test"]["support_weight"] > 0
@@ -1480,12 +1492,11 @@ def score_forecasts(
             prediction = hypothesis["forecast"][index]
             passed = prediction == observed
             (correct if passed else wrong).append(separator_id)
-            tests.append({
-                "separator_id": separator_id,
-                "prediction": prediction,
-                "observed": observed,
-                "result": "CORRECT" if passed else "WRONG",
-            })
+            tests.append((
+                separator_id,
+                prediction,
+                "CORRECT" if passed else "WRONG",
+            ))
         survivors &= {
             hypothesis_index
             for hypothesis_index, hypothesis
@@ -1501,16 +1512,14 @@ def score_forecasts(
             "resolution_moment": resolution["resolution_moment"],
             "outcome": observed,
             "verification_pass": resolution["verification"]["pass"],
+            "hypothesis_test_columns": (
+                "separator_id", "prediction", "correct_or_wrong"
+            ),
             "hypothesis_tests": tuple(tests),
             "correct_count": len(correct),
             "wrong_count": len(wrong),
-            "correct_ids": tuple(correct),
-            "wrong_ids": tuple(wrong),
             "surviving_separator_count": len(survivors),
             "surviving_vector_count": len(surviving_vectors),
-            "surviving_separator_ids": tuple(
-                f"S{index:03d}" for index in sorted(survivors)
-            ),
         })
     return {
         "rule": (
@@ -1766,8 +1775,10 @@ def run() -> int:
         "feature_table_sha256": feature_table["table_sha256"],
         "clean_names_sha256": separators["clean_names_sha256"],
         "forecast_table_sha256": separators["forecast_table_sha256"],
-        "separator_catalog": separators["separator_catalog"],
-        "forecast_vector_catalog": separators["forecast_vectors"],
+        "separator_catalog_sha256":
+            digest(separators["separator_catalog"]),
+        "forecast_vector_catalog_sha256":
+            digest(separators["forecast_vectors"]),
         "new_resolutions": new_resolutions,
         "forecast_tests_verbatim": forecast_scores,
     }
@@ -1910,8 +1921,8 @@ def run() -> int:
                 "horizon, replayed exactly from their landed t=0 postimage "
                 "through every reached boundary",
             "keys": determinism_slice,
-            "primary_rows": primary_slice,
-            "replay_rows": replay_slice,
+            "boundaries_compared": reached_boundaries,
+            "row_count": len(primary_slice),
             "primary_sha256": digest(primary_slice),
             "replay_sha256": digest(replay_slice),
             "deterministic": deterministic,

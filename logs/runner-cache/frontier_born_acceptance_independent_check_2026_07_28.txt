@@ -1,20 +1,20 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_born_acceptance_independent_check_2026_07_28.py
-runner_sha256: 5158497f43a3bd33134cec346ee8e064dad85f9d80ecbe7fcab7fd77b32588d8
-input_fingerprint_sha256: 55169b59ca200c86622faee4f114080f747216ac7a499cddc914362a9a934e26
+runner_sha256: e2ca79d40591b4d8fcacc8a064c41c5acc60468c56b9d4099b22da99294b2221
+input_fingerprint_sha256: c2047419a612ecd15061a40c213c5e473be1dd00d08cead953c694842ca50dff
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 3.88
+elapsed_sec: 4.03
 status: ok
 ----- stdout -----
-PASS 1/5 extraction :: literal AUDIT/NOTE; pins=2; self-runs=15/0,14/0; ACCEPT=4; REJECT=4
-PASS 2/5 byte_pin_recount :: bridge=e8ef160207d2…; release=7fd16049e5ba…
-PASS 3/5 self_run_recount :: bridge=15/0; release=14/0
-PASS 4/5 probe_verdict_recount :: ACCEPT=4/4; landed REJECT=3/3; harness-only=1/1
-PASS 5/5 discipline :: no landed attribute writes; frozen tables literal; DRIFT=TemporaryDirectory copy; sole write=sandbox_path.write_bytes; blocklist clean
+PASS 1/5 contract_and_source_pins :: primary=1228ac30140a…; bridge=e8ef160207d2…; driver=12750b7a9ee1…; functions=5; dead_driver_mutation=rejected; inputs=53
+PASS 2/5 exact_projector_oracle :: vectors=102; maximum_entry_error=2.78e-17
+PASS 3/5 schema_and_refusal_boundary :: landed ValueError=3/3; Boolean landed-returned; schema/registry provenance=12/12
+PASS 4/5 hermetic_primary_and_sandbox :: primary_stdout_sha256=47fd5d29e7d4…; sandbox=a0563d78dd30…; real_hash_and_stat_unchanged
+PASS 5/5 independent_comparator_adversaries :: independent_kills=7/7; primary_kills=22/22
 SUMMARY 5/5 PASS
-HONEST_LABEL PASS harness_schema witness is accepted by landed surface
-RUNTIME 3.816541s
+RUNTIME 3.973101s
+RESULT BORN_PROJECTOR_FIXTURE_INDEPENDENT_CHECK_GREEN
 
 ----- stderr -----
 

@@ -1,19 +1,10 @@
 #!/usr/bin/env python3
-"""Frozen acceptance infrastructure for the Cycle-317 Born-forcing surface.
+"""Support-only acceptance fixture for the landed Cycle-317 Bloch projector.
 
-Feed schema:
-
-    {
-        "probe_id": <string naming one frozen probe or witness>,
-        "kind": "bloch_projector",
-        "direction": [<three JSON scalar entries>],
-    }
-
-The lawful domain is the landed surface's unit-three-vector Bloch-projector
-domain.  Frozen feeds are supplied apparatus data.  This harness selects no
-Born law, weight map, probability content, occurrence, or Record.  It only
-certifies whether the landed machinery accepts or refuses those feeds exactly
-as frozen.  Landed modules are executed or called only in child processes.
+The fixture accepts only eight frozen feeds.  It does not exercise the wider
+ternary-menu, split/merge, dilation, trace-functional, or release surface.
+Directions are supplied apparatus data; this runner derives no weight,
+probability, occurrence, outcome, Record, or Born-law value.
 """
 
 from __future__ import annotations
@@ -21,17 +12,68 @@ from __future__ import annotations
 AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = "docs/BORN_ACCEPTANCE_HARNESS_SUPPORT_NOTE_2026-07-28.md"
 AUDIT_INPUT_PATHS = (
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/exact_3d_higher_form_bosonization_cycle235_2026_07_17.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
     "scripts/physical_contact_ternary_born_forcing_bridge_cycle317_2026_07_18.py",
     "scripts/physical_contact_ternary_born_forcing_release_cycle317_2026_07_18.py",
+    "scripts/physical_cycle269_collision_safe_auxiliary_ports_2026_07_17.py",
+    "scripts/physical_cycle269_common_m64_fixed_seam_cycle311_2026_07_18.py",
+    "scripts/physical_cycle269_full_two_particle_sector_interface_cycle305_2026_07_17.py",
+    "scripts/physical_cycle269_higher_number_fixed_seam_cycle308_2026_07_17.py",
+    "scripts/physical_cycle269_reference_relative_localized_pair_lift_2026_07_17.py",
+    "scripts/physical_cycle269_staggered_reservoir_catchup_2026_07_17.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
+    "scripts/wilson_subsystem_sector_free_compiler_cycle269_2026_07_17.py",
+    "docs/AUTONOMOUS_INTERMITTENT_RECORD_INSTRUMENT_CALIBRATION_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+    "docs/BORN_FORM_MENU_OUTCOME_THRESHOLD_AND_MIXED_PROJECTIVE_FORCING_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/MINIMAL_RECORD_INSTRUMENT_DILATION_SCALAR_EXCHANGE_NONSELECTION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+    "docs/work_history/repo/review_feedback/ACTIVE_CUBIC_SOURCE_RESPONSE_CYCLE211_NOTE_2026-07-16.md",
+    "docs/work_history/repo/review_feedback/ACTUAL_CONTACT_ACTION_SYNDROME_TOURNAMENT_CYCLE285_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/ARCHIVE_CARRIER_SOURCE_LEDGER_CYCLE227_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/AUTONOMOUS_CUBIC_FIELD_EMISSION_CYCLE214_NOTE_2026-07-16.md",
+    "docs/work_history/repo/review_feedback/COMMON_MATTER_FIELD_COIN_FAMILY_CYCLE219_NOTE_2026-07-16.md",
+    "docs/work_history/repo/review_feedback/CONTACT_CLOSE_TYPED_RECORD_DAG_CYCLE287_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/EXACT_3D_HIGHER_FORM_BOSONIZATION_CYCLE235_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/FINITE_COIN_SCALAR_WAVE_DILATION_CYCLE215_NOTE_2026-07-16.md",
+    "docs/work_history/repo/review_feedback/FINITE_COIN_SCALAR_WAVE_DILATION_CYCLE215_NO_GO_DISCIPLINE_CHECKLIST_2026-07-16.md",
+    "docs/work_history/repo/review_feedback/FINITE_COIN_SCALAR_WAVE_DILATION_CYCLE215_NO_GO_LEDGER_2026-07-16.md",
+    "docs/work_history/repo/review_feedback/FOCK_MODULAR_BOUNDARY_CURRENT_CYCLE229_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/LOCAL_CONSERVATIVE_COMMIT_RESOURCE_GRAVITY_CYCLE9_NOTE_2026-07-14.md",
+    "docs/work_history/repo/review_feedback/LOCAL_GENERATOR_SOURCE_TOURNAMENT_CYCLE228_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CONTACT_TERNARY_BORN_FORCING_BRIDGE_CYCLE317_NOTE_2026-07-18.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_COLLISION_SAFE_AUXILIARY_PORTS_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_COMMON_M64_FIXED_SEAM_CYCLE311_NOTE_2026-07-18.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_FULL_TWO_PARTICLE_SECTOR_INTERFACE_CYCLE305_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_HIGHER_NUMBER_FIXED_SEAM_CYCLE308_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_REFERENCE_RELATIVE_LOCALIZED_PAIR_LIFT_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/PHYSICAL_CYCLE269_STAGGERED_RESERVOIR_CATCHUP_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/PROPER_CUBIC_BOUND_OBJECT_EQUIVALENCE_CYCLE210_NOTE_2026-07-16.md",
+    "docs/work_history/repo/review_feedback/RETARDED_CUBIC_MASS_FIELD_CYCLE213_NOTE_2026-07-16.md",
+    "docs/work_history/repo/review_feedback/SPATIAL_CAR_CONTACT_SEAM_FORM_FACTOR_CYCLE230_NOTE_2026-07-17.md",
+    "docs/work_history/repo/review_feedback/VIRTUAL_EXCHANGE_GREEN_KERNEL_CYCLE216_NOTE_2026-07-16.md",
+    "docs/work_history/repo/review_feedback/WILSON_SUBSYSTEM_SECTOR_FREE_COMPILER_CYCLE269_NOTE_2026-07-17.md",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
 import ast
+import copy
 import hashlib
 import json
 import math
+import os
 from pathlib import Path
-import re
 import shutil
 import subprocess
 import sys
@@ -40,36 +82,14 @@ import time
 from typing import Any
 
 
-_MODULE_START = time.monotonic()
+_START = time.monotonic()
 ROOT = Path(__file__).resolve().parents[1]
+SCRIPTS = ROOT / "scripts"
 
-BRIDGE_SHA256 = "e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10"
-RELEASE_SHA256 = "7fd16049e5baae5f0c7f56e19beee925313b1f1f872fa1f1c96dd78b47ac41e7"
-
-FROZEN_SELF_RUNS = (
-    {
-        "name": "bridge",
-        "path": "scripts/physical_contact_ternary_born_forcing_bridge_cycle317_2026_07_18.py",
-        "sha256": "e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10",
-        "stdout_sha256": "c5e35923c1e3fbfb94db745b58d0e8d12e3d65d79c0a7af08d95c6c8ea29f0dc",
-        "stdout_bytes": 8408,
-        "summary_pattern": r"^SUMMARY PASS (\d+) FAIL (\d+)$",
-        "expected_pass": 15,
-        "expected_fail": 0,
-        "terminal_marker": "RESULT CYCLE317_PHYSICAL_CONTACT_TERNARY_BORN_BRIDGE_GREEN",
-    },
-    {
-        "name": "release",
-        "path": "scripts/physical_contact_ternary_born_forcing_release_cycle317_2026_07_18.py",
-        "sha256": "7fd16049e5baae5f0c7f56e19beee925313b1f1f872fa1f1c96dd78b47ac41e7",
-        "stdout_sha256": "ba143794a2fc400c9992dfbac5f80df59e23aee62869dd3b25211fa539a12240",
-        "stdout_bytes": 6303,
-        "summary_pattern": r"^STRICT SUMMARY PASS (\d+) FAIL (\d+)$",
-        "expected_pass": 14,
-        "expected_fail": 0,
-        "terminal_marker": "STRICT RESULT CYCLE317_RELEASE_DISCIPLINE_GREEN",
-    },
+BRIDGE_PATH = (
+    "scripts/physical_contact_ternary_born_forcing_bridge_cycle317_2026_07_18.py"
 )
+BRIDGE_SHA256 = "e8ef160207d200555937a0d76e5ca796a98bb998b568221f327fb9ccf5e2bc10"
 
 FROZEN_LAWFUL_PROBES = (
     {
@@ -186,12 +206,11 @@ FROZEN_REJECT_WITNESSES = (
             "kind": "bloch_projector",
             "direction": [1, 0],
         },
-        "enforcement": "landed_surface",
         "expected": {
-            "origin": "landed_surface",
+            "origin": "harness_schema",
             "status": "raised",
-            "exception_type": "ValueError",
-            "message": "a Bloch projector needs one unit three-vector",
+            "exception_type": "SchemaRefusal",
+            "message": "HARNESS_SCHEMA: direction must contain exactly three entries",
         },
     },
     {
@@ -201,7 +220,6 @@ FROZEN_REJECT_WITNESSES = (
             "kind": "bloch_projector",
             "direction": [1, 1, 1],
         },
-        "enforcement": "landed_surface",
         "expected": {
             "origin": "landed_surface",
             "status": "raised",
@@ -216,7 +234,6 @@ FROZEN_REJECT_WITNESSES = (
             "kind": "bloch_projector",
             "direction": [2, 0, 0],
         },
-        "enforcement": "landed_surface",
         "expected": {
             "origin": "landed_surface",
             "status": "raised",
@@ -231,7 +248,6 @@ FROZEN_REJECT_WITNESSES = (
             "kind": "bloch_projector",
             "direction": [True, 0, 0],
         },
-        "enforcement": "harness_schema",
         "expected": {
             "origin": "harness_schema",
             "status": "raised",
@@ -243,29 +259,6 @@ FROZEN_REJECT_WITNESSES = (
         },
     },
 )
-
-QUARANTINED_WRONG_EXPECTATION = {
-    "probe_id": "axis_plus_x",
-    "purpose": "independent-adversary comparison liveness only",
-    "expected": {
-        "origin": "landed_surface",
-        "status": "returned",
-        "matrix": [
-            [[0.75, 0.0], [0.5, 0.0]],
-            [[0.5, 0.0], [0.5, 0.0]],
-        ],
-        "summary": {
-            "shape": [2, 2],
-            "hermitian_residual": 0.0,
-            "idempotence_residual": 0.0,
-            "trace_real": 1.0,
-            "trace_imag": 0.0,
-            "minimum_eigenvalue": 0.0,
-            "maximum_eigenvalue": 1.0,
-        },
-        "machine_bound": 5.0e-15,
-    },
-}
 
 _SURFACE_DRIVER = r"""
 import json
@@ -307,8 +300,12 @@ except Exception as exc:
         "exception_type": type(exc).__name__,
         "message": str(exc),
     }
-print(json.dumps(record, allow_nan=False, sort_keys=True))
+print(json.dumps(record, allow_nan=False, separators=(",", ":"), sort_keys=True))
 """
+
+SURFACE_DRIVER_AST_SHA256 = (
+    "12750b7a9ee13a66eb4996f735d20c7ec72a56ab3e625db2c528bbde8bc6e236"
+)
 
 _PASS = 0
 _FAIL = 0
@@ -327,139 +324,124 @@ def check(label: str, condition: bool, detail: Any = "") -> bool:
     return condition
 
 
-def _sha256_path(relative_path: str) -> str:
-    return hashlib.sha256((ROOT / relative_path).read_bytes()).hexdigest()
-
-
 def _sha256_bytes(payload: bytes) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
-def _same_data(left: Any, right: Any) -> bool:
+def _path_sha256(path: Path) -> str:
+    return _sha256_bytes(path.read_bytes())
+
+
+def _stat_token(path: Path) -> tuple[int, int, int, int, int]:
+    stat = path.stat()
+    return (
+        stat.st_dev,
+        stat.st_ino,
+        stat.st_size,
+        stat.st_mtime_ns,
+        stat.st_ctime_ns,
+    )
+
+
+def _clean_child_env() -> dict[str, str]:
+    env = os.environ.copy()
+    env.pop("PYTHONPATH", None)
+    env["PYTHONDONTWRITEBYTECODE"] = "1"
+    env["PYTHONHASHSEED"] = "0"
+    return env
+
+
+def _pin_verdict(
+    relative_path: str,
+    expected_sha256: str,
+    root: Path = ROOT,
+) -> dict[str, Any]:
+    """Apply the one production pin predicate to a selectable repository root."""
+    path = root / relative_path
     try:
-        left_json = json.dumps(
-            left, allow_nan=False, separators=(",", ":"), sort_keys=True
-        )
-        right_json = json.dumps(
-            right, allow_nan=False, separators=(",", ":"), sort_keys=True
-        )
-    except (TypeError, ValueError):
-        return False
-    return left_json == right_json
-
-
-def _frozen_numeric_match(observed: Any, expected: Any, bound: float) -> bool:
-    if isinstance(expected, bool) or expected is None or isinstance(expected, str):
-        return observed == expected
-    if isinstance(expected, (int, float)):
-        return (
-            isinstance(observed, (int, float))
-            and not isinstance(observed, bool)
-            and math.isfinite(float(observed))
-            and abs(float(observed) - float(expected)) <= bound
-        )
-    if isinstance(expected, list):
-        return (
-            isinstance(observed, list)
-            and len(observed) == len(expected)
-            and all(
-                _frozen_numeric_match(actual, frozen, bound)
-                for actual, frozen in zip(observed, expected)
-            )
-        )
-    if isinstance(expected, dict):
-        return (
-            isinstance(observed, dict)
-            and set(observed) == set(expected)
-            and all(
-                _frozen_numeric_match(observed[key], value, bound)
-                for key, value in expected.items()
-            )
-        )
-    return observed == expected
-
-
-def _current_pins() -> dict[str, dict[str, Any]]:
-    rows = {}
-    for frozen in FROZEN_SELF_RUNS:
-        actual = _sha256_path(frozen["path"])
-        rows[frozen["name"]] = {
-            "path": frozen["path"],
-            "expected": frozen["sha256"],
-            "actual": actual,
-            "match": actual == frozen["sha256"],
-        }
-    return rows
-
-
-def _self_run(frozen: dict[str, Any]) -> dict[str, Any]:
-    actual_sha = _sha256_path(frozen["path"])
-    if actual_sha != frozen["sha256"]:
+        actual = _path_sha256(path)
+    except OSError as exc:
         return {
-            "name": frozen["name"],
+            "path": relative_path,
+            "expected": expected_sha256,
+            "actual": None,
+            "match": False,
             "verdict": "DRIFT",
-            "pin_match": False,
-            "executed": False,
-            "output_match": False,
+            "error": type(exc).__name__,
         }
-    try:
-        completed = subprocess.run(
-            [sys.executable, str(ROOT / frozen["path"])],
-            cwd=ROOT,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            check=False,
-            timeout=AUDIT_TIMEOUT_SEC,
-        )
-    except subprocess.TimeoutExpired as exc:
-        return {
-            "name": frozen["name"],
-            "verdict": "DRIFT",
-            "pin_match": True,
-            "executed": True,
-            "output_match": False,
-            "timeout": exc.timeout,
-        }
-
-    stdout_text = completed.stdout.decode("utf-8", errors="replace")
-    matches = re.findall(
-        frozen["summary_pattern"], stdout_text, flags=re.MULTILINE
-    )
-    observed_counts = (
-        [int(value) for value in matches[-1]] if matches else None
-    )
-    lines = stdout_text.splitlines()
-    marker_match = bool(lines and lines[-1] == frozen["terminal_marker"])
-    count_match = observed_counts == [
-        frozen["expected_pass"],
-        frozen["expected_fail"],
-    ]
-    output_match = (
-        completed.returncode == 0
-        and _sha256_bytes(completed.stdout) == frozen["stdout_sha256"]
-        and len(completed.stdout) == frozen["stdout_bytes"]
-        and completed.stderr == b""
-        and count_match
-        and marker_match
-    )
+    match = actual == expected_sha256
     return {
-        "name": frozen["name"],
-        "verdict": "ACCEPT" if output_match else "DRIFT",
-        "pin_match": True,
-        "executed": True,
-        "output_match": output_match,
-        "returncode": completed.returncode,
-        "stdout_sha256": _sha256_bytes(completed.stdout),
-        "stdout_bytes": len(completed.stdout),
-        "stderr_sha256": _sha256_bytes(completed.stderr),
-        "stderr_bytes": len(completed.stderr),
-        "observed_counts": observed_counts,
-        "count_match": count_match,
-        "marker_match": marker_match,
+        "path": relative_path,
+        "expected": expected_sha256,
+        "actual": actual,
+        "match": match,
+        "verdict": "ACCEPT" if match else "DRIFT",
     }
 
 
-def _lookup_frozen(probe_id: Any) -> tuple[str, dict[str, Any]] | None:
+def _schema_refusal(message: str) -> dict[str, Any]:
+    return {
+        "origin": "harness_schema",
+        "status": "raised",
+        "exception_type": "SchemaRefusal",
+        "message": message,
+    }
+
+
+def _fixture_refusal(message: str) -> dict[str, Any]:
+    return {
+        "origin": "fixture_registry",
+        "status": "raised",
+        "exception_type": "FixtureRefusal",
+        "message": message,
+    }
+
+
+def _validate_feed_schema(feed: Any) -> dict[str, Any] | None:
+    """Validate shape and scalar domain without consulting ``probe_id``."""
+    if not isinstance(feed, dict):
+        return _schema_refusal("HARNESS_SCHEMA: feed must be an object")
+    if set(feed) != {"probe_id", "kind", "direction"}:
+        return _schema_refusal(
+            "HARNESS_SCHEMA: feed keys must be exactly probe_id, kind, direction"
+        )
+    if not isinstance(feed["probe_id"], str):
+        return _schema_refusal("HARNESS_SCHEMA: probe_id must be a string")
+    if feed["kind"] != "bloch_projector":
+        return _schema_refusal("HARNESS_SCHEMA: kind must be bloch_projector")
+    direction = feed["direction"]
+    if not isinstance(direction, list):
+        return _schema_refusal("HARNESS_SCHEMA: direction must be a JSON list")
+    if len(direction) != 3:
+        return _schema_refusal(
+            "HARNESS_SCHEMA: direction must contain exactly three entries"
+        )
+    for value in direction:
+        if isinstance(value, bool) or not isinstance(value, (int, float)):
+            return _schema_refusal(
+                "HARNESS_SCHEMA: direction entries must be finite JSON numbers "
+                "and booleans are excluded"
+            )
+        try:
+            numeric = float(value)
+        except (OverflowError, TypeError, ValueError):
+            return _schema_refusal(
+                "HARNESS_SCHEMA: direction entries must be finite JSON numbers "
+                "and booleans are excluded"
+            )
+        if not math.isfinite(numeric):
+            return _schema_refusal(
+                "HARNESS_SCHEMA: direction entries must be finite JSON numbers "
+                "and booleans are excluded"
+            )
+    try:
+        json.dumps(feed, allow_nan=False, separators=(",", ":"), sort_keys=True)
+    except (TypeError, ValueError):
+        return _schema_refusal("HARNESS_SCHEMA: feed must be finite JSON data")
+    return None
+
+
+def _lookup_frozen(probe_id: str) -> tuple[str, dict[str, Any]] | None:
     for row in FROZEN_LAWFUL_PROBES:
         if row["probe_id"] == probe_id:
             return "lawful", row
@@ -469,32 +451,13 @@ def _lookup_frozen(probe_id: Any) -> tuple[str, dict[str, Any]] | None:
     return None
 
 
-def _schema_refusal() -> dict[str, Any]:
-    return {
-        "origin": "harness_schema",
-        "status": "raised",
-        "exception_type": "SchemaRefusal",
-        "message": (
-            "HARNESS_SCHEMA: direction entries must be finite JSON numbers "
-            "and booleans are excluded"
-        ),
-    }
-
-
 def _surface_observation(feed: dict[str, Any]) -> dict[str, Any]:
-    try:
-        encoded = json.dumps(feed, allow_nan=False, sort_keys=True)
-    except (TypeError, ValueError) as exc:
-        return {
-            "origin": "harness_schema",
-            "status": "raised",
-            "exception_type": "SchemaRefusal",
-            "message": f"HARNESS_SCHEMA: non-JSON feed: {type(exc).__name__}",
-        }
+    encoded = json.dumps(feed, allow_nan=False, separators=(",", ":"), sort_keys=True)
     try:
         completed = subprocess.run(
             [sys.executable, "-c", _SURFACE_DRIVER],
-            cwd=ROOT,
+            cwd=SCRIPTS,
+            env=_clean_child_env(),
             input=encoded,
             text=True,
             stdout=subprocess.PIPE,
@@ -508,7 +471,7 @@ def _surface_observation(feed: dict[str, Any]) -> dict[str, Any]:
             "status": "driver_error",
             "message": f"timeout after {exc.timeout} seconds",
         }
-    if completed.returncode != 0:
+    if completed.returncode != 0 or completed.stderr:
         return {
             "origin": "subprocess_driver",
             "status": "driver_error",
@@ -516,13 +479,68 @@ def _surface_observation(feed: dict[str, Any]) -> dict[str, Any]:
             "stderr_sha256": _sha256_bytes(completed.stderr.encode("utf-8")),
         }
     try:
-        return json.loads(completed.stdout)
+        decoded = json.loads(completed.stdout)
     except json.JSONDecodeError as exc:
         return {
             "origin": "subprocess_driver",
             "status": "driver_error",
             "message": f"JSONDecodeError: {exc}",
         }
+    if not isinstance(decoded, dict):
+        return {
+            "origin": "subprocess_driver",
+            "status": "driver_error",
+            "message": "driver output was not one JSON object",
+        }
+    return decoded
+
+
+def _same_json(left: Any, right: Any) -> bool:
+    try:
+        return json.dumps(
+            left, allow_nan=False, separators=(",", ":"), sort_keys=True
+        ) == json.dumps(
+            right, allow_nan=False, separators=(",", ":"), sort_keys=True
+        )
+    except (TypeError, ValueError):
+        return False
+
+
+def _numeric_match(observed: Any, expected: Any, bound: float) -> bool:
+    if isinstance(expected, bool) or expected is None or isinstance(expected, str):
+        return observed == expected
+    if isinstance(expected, (int, float)):
+        if not isinstance(observed, (int, float)) or isinstance(observed, bool):
+            return False
+        try:
+            observed_numeric = float(observed)
+            expected_numeric = float(expected)
+        except (OverflowError, TypeError, ValueError):
+            return False
+        return (
+            math.isfinite(observed_numeric)
+            and math.isfinite(expected_numeric)
+            and abs(observed_numeric - expected_numeric) <= bound
+        )
+    if isinstance(expected, list):
+        return (
+            isinstance(observed, list)
+            and len(observed) == len(expected)
+            and all(
+                _numeric_match(actual, frozen, bound)
+                for actual, frozen in zip(observed, expected)
+            )
+        )
+    if isinstance(expected, dict):
+        return (
+            isinstance(observed, dict)
+            and set(observed) == set(expected)
+            and all(
+                _numeric_match(observed[key], value, bound)
+                for key, value in expected.items()
+            )
+        )
+    return observed == expected
 
 
 def _compare_observation(
@@ -532,15 +550,21 @@ def _compare_observation(
     observed: dict[str, Any],
 ) -> dict[str, bool]:
     expected = frozen["expected"]
-    feed_match = _same_data(feed, frozen["feed"])
+    expected_observation = {
+        key: value for key, value in expected.items() if key != "machine_bound"
+    }
+    feed_match = _same_json(feed, frozen["feed"])
+    keyset_match = (
+        isinstance(observed, dict) and set(observed) == set(expected_observation)
+    )
     origin_match = observed.get("origin") == expected["origin"]
     status_match = observed.get("status") == expected["status"]
     if category == "lawful":
         bound = expected["machine_bound"]
-        matrix_match = _frozen_numeric_match(
+        matrix_match = _numeric_match(
             observed.get("matrix"), expected["matrix"], bound
         )
-        summary_match = _frozen_numeric_match(
+        summary_match = _numeric_match(
             observed.get("summary"), expected["summary"], bound
         )
         signature_match = True
@@ -551,16 +575,20 @@ def _compare_observation(
             observed.get("exception_type") == expected["exception_type"]
             and observed.get("message") == expected["message"]
         )
-    frozen_match = (
-        feed_match
-        and origin_match
-        and status_match
-        and matrix_match
-        and summary_match
-        and signature_match
+    frozen_match = all(
+        (
+            feed_match,
+            keyset_match,
+            origin_match,
+            status_match,
+            matrix_match,
+            summary_match,
+            signature_match,
+        )
     )
     return {
         "feed_match": feed_match,
+        "keyset_match": keyset_match,
         "origin_match": origin_match,
         "status_match": status_match,
         "matrix_match": matrix_match,
@@ -571,133 +599,100 @@ def _compare_observation(
 
 
 def run_acceptance(feed: Any) -> dict[str, Any]:
-    """Return ACCEPT, REJECT, or DRIFT for one declared-shape feed object."""
-    pins = _current_pins()
-    if not all(row["match"] for row in pins.values()):
+    """Classify one frozen projector fixture as ACCEPT, REJECT, or DRIFT."""
+    pin = _pin_verdict(BRIDGE_PATH, BRIDGE_SHA256)
+    probe_id = feed.get("probe_id") if isinstance(feed, dict) else None
+    if not pin["match"]:
         return {
-            "probe_id": feed.get("probe_id") if isinstance(feed, dict) else None,
+            "probe_id": probe_id,
             "verdict": "DRIFT",
-            "pins": pins,
+            "pin": pin,
             "comparison": {"frozen_match": False},
             "observation": {"status": "not_run_on_unpinned_surface"},
         }
-    if not isinstance(feed, dict):
+
+    schema_observation = _validate_feed_schema(feed)
+    lookup = _lookup_frozen(probe_id) if isinstance(probe_id, str) else None
+    if schema_observation is not None:
+        comparison = {"frozen_match": False}
+        category = None
+        frozen = None
+        if lookup is not None:
+            category, frozen = lookup
+            comparison = _compare_observation(
+                category, feed, frozen, schema_observation
+            )
+        if comparison["frozen_match"]:
+            return {
+                "probe_id": frozen["probe_id"],
+                "category": category,
+                "enforcement": "harness_schema",
+                "verdict": "REJECT",
+                "pin": pin,
+                "comparison": comparison,
+                "observation": schema_observation,
+            }
         return {
-            "probe_id": None,
+            "probe_id": probe_id,
             "verdict": "REJECT",
-            "pins": pins,
-            "comparison": {"frozen_match": False},
-            "observation": {
-                "origin": "harness_schema",
-                "status": "raised",
-                "exception_type": "SchemaRefusal",
-                "message": "HARNESS_SCHEMA: feed must be an object",
-            },
+            "enforcement": "harness_schema",
+            "pin": pin,
+            "comparison": comparison,
+            "observation": schema_observation,
         }
 
-    lookup = _lookup_frozen(feed.get("probe_id"))
-    exact_keys = set(feed) == {"probe_id", "kind", "direction"}
-    exact_kind = feed.get("kind") == "bloch_projector"
-    if lookup is None or not exact_keys or not exact_kind:
+    if lookup is None:
         return {
-            "probe_id": feed.get("probe_id"),
+            "probe_id": probe_id,
             "verdict": "REJECT",
-            "pins": pins,
+            "enforcement": "fixture_registry",
+            "pin": pin,
             "comparison": {"frozen_match": False},
-            "observation": {
-                "origin": "harness_schema",
-                "status": "raised",
-                "exception_type": "SchemaRefusal",
-                "message": (
-                    "HARNESS_SCHEMA: feed must exactly name one frozen "
-                    "bloch_projector probe"
-                ),
-            },
+            "observation": _fixture_refusal(
+                "FIXTURE_REGISTRY: probe_id is not a frozen fixture"
+            ),
         }
 
     category, frozen = lookup
-    if frozen.get("enforcement") == "harness_schema":
-        observed = _schema_refusal()
-    else:
-        observed = _surface_observation(feed)
+    if not _same_json(feed, frozen["feed"]):
+        return {
+            "probe_id": probe_id,
+            "category": category,
+            "verdict": "REJECT",
+            "enforcement": "fixture_registry",
+            "pin": pin,
+            "comparison": {"feed_match": False, "frozen_match": False},
+            "observation": _fixture_refusal(
+                "FIXTURE_REGISTRY: feed does not equal the frozen fixture"
+            ),
+        }
+
+    observed = _surface_observation(feed)
     comparison = _compare_observation(category, feed, frozen, observed)
-    if comparison["feed_match"] and not comparison["frozen_match"]:
-        verdict = "DRIFT"
-    elif category == "lawful" and comparison["frozen_match"]:
-        verdict = "ACCEPT"
+    if comparison["frozen_match"]:
+        verdict = "ACCEPT" if category == "lawful" else "REJECT"
     else:
-        verdict = "REJECT"
+        verdict = "DRIFT" if _same_json(feed, frozen["feed"]) else "REJECT"
     return {
         "probe_id": frozen["probe_id"],
         "category": category,
-        "enforcement": frozen.get("enforcement", "landed_surface"),
+        "enforcement": observed.get("origin", "unknown"),
         "verdict": verdict,
-        "pins": pins,
+        "pin": pin,
         "comparison": comparison,
         "observation": observed,
     }
 
 
-def _sandbox_drift_demo() -> dict[str, Any]:
-    real_before = _sha256_path(AUDIT_INPUT_PATHS[0])
-    with tempfile.TemporaryDirectory(prefix="born-acceptance-drift-") as folder:
-        sandbox_path = Path(folder) / Path(AUDIT_INPUT_PATHS[0]).name
-        shutil.copyfile(ROOT / AUDIT_INPUT_PATHS[0], sandbox_path)
-        original = sandbox_path.read_bytes()
-        changed = bytearray(original)
-        changed[-1] ^= 1
-        sandbox_path.write_bytes(bytes(changed))
-        sandbox_sha = hashlib.sha256(sandbox_path.read_bytes()).hexdigest()
-        differing_bytes = sum(
-            left != right for left, right in zip(original, changed)
-        )
-        sandbox_verdict = (
-            "ACCEPT" if sandbox_sha == BRIDGE_SHA256 else "DRIFT"
-        )
-    real_after = _sha256_path(AUDIT_INPUT_PATHS[0])
-    return {
-        "verdict": sandbox_verdict,
-        "one_byte_changed": differing_bytes == 1,
-        "sandbox_sha256": sandbox_sha,
-        "expected_sha256": BRIDGE_SHA256,
-        "real_before": real_before,
-        "real_after": real_after,
-        "real_unchanged": (
-            real_before == real_after == BRIDGE_SHA256
-        ),
-    }
+def _normalized_ast_sha256(source: str) -> str:
+    tree = ast.parse(source, filename="<surface-driver>")
+    normalized = ast.dump(tree, annotate_fields=True, include_attributes=False)
+    return _sha256_bytes(normalized.encode("utf-8"))
 
 
-def _landed_attribute_writes(tree: ast.AST, alias: str) -> list[str]:
-    writes = []
-    for node in ast.walk(tree):
-        if not isinstance(node, ast.Attribute) or not isinstance(
-            node.ctx, ast.Store
-        ):
-            continue
-        base = node.value
-        if isinstance(base, ast.Name) and base.id == alias:
-            writes.append(node.attr)
-    return writes
-
-
-def _table_node(tree: ast.Module, name: str) -> ast.AST | None:
-    for node in tree.body:
-        if isinstance(node, ast.Assign) and any(
-            isinstance(target, ast.Name) and target.id == name
-            for target in node.targets
-        ):
-            return node.value
-    return None
-
-
-def _structural_audit() -> dict[str, Any]:
-    source = Path(__file__).read_text(encoding="utf-8")
-    outer = ast.parse(source, filename=str(Path(__file__)))
-    driver = ast.parse(_SURFACE_DRIVER, filename="<surface-driver>")
-    landed_names = {
-        Path(path).stem for path in AUDIT_INPUT_PATHS
-    }
+def _structural_discipline() -> dict[str, Any]:
+    outer = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+    landed_names = {Path(path).stem for path in AUDIT_INPUT_PATHS if path.endswith(".py")}
     outer_imports = {
         alias.name
         for node in ast.walk(outer)
@@ -709,80 +704,360 @@ def _structural_audit() -> dict[str, Any]:
         if isinstance(node, ast.ImportFrom) and node.module is not None
     }
     parent_imports_landed = bool(landed_names & outer_imports)
-
-    identifiers = []
-    for node in ast.walk(outer):
-        if isinstance(node, ast.Name):
-            identifiers.append(node.id.lower())
-        elif isinstance(node, ast.Attribute):
-            identifiers.append(node.attr.lower())
-        elif isinstance(node, (ast.FunctionDef, ast.ClassDef)):
-            identifiers.append(node.name.lower())
-    forbidden_fragments = ("weight", "probab", "random", "sample", "choice")
-    forbidden_identifiers = sorted(
-        {
-            name
-            for name in identifiers
-            if any(fragment in name for fragment in forbidden_fragments)
-        }
-    )
-
-    surface_calls = [
-        node
-        for node in ast.walk(driver)
-        if isinstance(node, ast.Call)
-        and isinstance(node.func, ast.Attribute)
-        and isinstance(node.func.value, ast.Name)
-        and node.func.value.id == "surface"
-    ]
-    data_only_call = False
-    if len(surface_calls) == 1:
-        call = surface_calls[0]
-        argument = call.args[0] if len(call.args) == 1 else None
-        data_only_call = (
-            call.func.attr == "projector_bloch"
-            and isinstance(argument, ast.Subscript)
-            and isinstance(argument.value, ast.Name)
-            and argument.value.id == "payload"
-            and isinstance(argument.slice, ast.Constant)
-            and argument.slice.value == "direction"
-            and not call.keywords
-        )
-
-    literal_tables = {}
-    for name in (
-        "FROZEN_LAWFUL_PROBES",
-        "FROZEN_REJECT_WITNESSES",
-        "QUARANTINED_WRONG_EXPECTATION",
-    ):
-        node = _table_node(outer, name)
-        try:
-            ast.literal_eval(node) if node is not None else None
-            literal_tables[name] = node is not None
-        except (ValueError, TypeError):
-            literal_tables[name] = False
-
-    driver_writes = _landed_attribute_writes(driver, "surface")
-    parent_modules_clean = all(name not in sys.modules for name in landed_names)
-    return {
-        "parent_imports_landed": parent_imports_landed,
-        "parent_modules_clean": parent_modules_clean,
-        "landed_attribute_writes": driver_writes,
-        "forbidden_code_identifiers": forbidden_identifiers,
-        "surface_call_count": len(surface_calls),
-        "surface_call_is_payload_data_only": data_only_call,
-        "literal_feed_and_expectation_tables": literal_tables,
-        "subprocess_isolation_ok": (
-            not parent_imports_landed
-            and parent_modules_clean
-            and not driver_writes
+    driver_sha = _normalized_ast_sha256(_SURFACE_DRIVER)
+    adversarial_mutations = {
+        "alias_setattr": _SURFACE_DRIVER.replace(
+            'payload = json.load(sys.stdin)',
+            'payload = json.load(sys.stdin)\nalias = surface\nsetattr(alias, "projector_bloch", lambda supplied: np.eye(2) / 2)',
         ),
-        "firewall_ok": (
-            not forbidden_identifiers
-            and data_only_call
+        "dynamic_getattr": _SURFACE_DRIVER.replace(
+            'surface.projector_bloch(payload["direction"])',
+            'getattr(surface, "projector_" + "bloch")(payload["direction"])',
+        ),
+        "explicit_synthesis": _SURFACE_DRIVER.replace(
+            'payload = json.load(sys.stdin)',
+            'payload = json.load(sys.stdin)\nprobability = [float(x) * float(x) for x in payload["direction"]]',
+        ),
+        "extra_statement": _SURFACE_DRIVER.replace(
+            'payload = json.load(sys.stdin)',
+            'payload = json.load(sys.stdin)\nunused = 0',
+        ),
+    }
+    mutation_rejected = {
+        name: _normalized_ast_sha256(source) != SURFACE_DRIVER_AST_SHA256
+        for name, source in adversarial_mutations.items()
+    }
+    literal_tables = {}
+    for name in ("AUDIT_INPUT_PATHS", "FROZEN_LAWFUL_PROBES", "FROZEN_REJECT_WITNESSES"):
+        values = []
+        for node in outer.body:
+            if isinstance(node, ast.Assign) and any(
+                isinstance(target, ast.Name) and target.id == name
+                for target in node.targets
+            ):
+                values.append(node.value)
+        try:
+            literal_tables[name] = len(values) == 1 and ast.literal_eval(values[0]) is not None
+        except (TypeError, ValueError, SyntaxError):
+            literal_tables[name] = False
+    return {
+        "driver_ast_sha256": driver_sha,
+        "driver_pin_match": driver_sha == SURFACE_DRIVER_AST_SHA256,
+        "mutation_rejected": mutation_rejected,
+        "parent_imports_landed": parent_imports_landed,
+        "parent_modules_clean": all(name not in sys.modules for name in landed_names),
+        "literal_tables": literal_tables,
+        "pass": (
+            driver_sha == SURFACE_DRIVER_AST_SHA256
+            and all(mutation_rejected.values())
+            and not parent_imports_landed
+            and all(name not in sys.modules for name in landed_names)
             and all(literal_tables.values())
         ),
     }
+
+
+def _sandbox_drift_demo() -> dict[str, Any]:
+    real_path = ROOT / BRIDGE_PATH
+    real_before_hash = _path_sha256(real_path)
+    real_before_stat = _stat_token(real_path)
+    with tempfile.TemporaryDirectory(prefix="born-projector-pin-") as folder:
+        sandbox_root = Path(folder)
+        sandbox_path = sandbox_root / BRIDGE_PATH
+        sandbox_path.parent.mkdir(parents=True)
+        shutil.copyfile(real_path, sandbox_path)
+        original = sandbox_path.read_bytes()
+        changed = bytearray(original)
+        changed[-1] ^= 1
+        sandbox_path.write_bytes(bytes(changed))
+        production_verdict = _pin_verdict(
+            BRIDGE_PATH, BRIDGE_SHA256, root=sandbox_root
+        )
+        differing_bytes = sum(left != right for left, right in zip(original, changed))
+    real_after_hash = _path_sha256(real_path)
+    real_after_stat = _stat_token(real_path)
+    return {
+        "production_verdict": production_verdict,
+        "one_byte_changed": differing_bytes == 1,
+        "real_hash_unchanged": (
+            real_before_hash == real_after_hash == BRIDGE_SHA256
+        ),
+        "real_stat_unchanged": real_before_stat == real_after_stat,
+        "pass": (
+            production_verdict["verdict"] == "DRIFT"
+            and not production_verdict["match"]
+            and differing_bytes == 1
+            and real_before_hash == real_after_hash == BRIDGE_SHA256
+            and real_before_stat == real_after_stat
+        ),
+    }
+
+
+def _comparator_mutation_suite(
+    lawful_result: dict[str, Any],
+    reject_result: dict[str, Any],
+) -> dict[str, Any]:
+    lawful_row = next(
+        row for row in FROZEN_LAWFUL_PROBES if row["probe_id"] == "axis_plus_x"
+    )
+    reject_row = next(
+        row for row in FROZEN_REJECT_WITNESSES if row["probe_id"] == "wrong_arity"
+    )
+    lawful_feed = copy.deepcopy(lawful_row["feed"])
+    lawful_observation = copy.deepcopy(lawful_result["observation"])
+    reject_feed = copy.deepcopy(reject_row["feed"])
+    reject_observation = copy.deepcopy(reject_result["observation"])
+    killed: dict[str, bool] = {}
+
+    def kill_lawful(label: str, observation: Any, feed: Any = lawful_feed) -> None:
+        killed[label] = not _compare_observation(
+            "lawful", feed, lawful_row, observation
+        )["frozen_match"]
+
+    mutated_feed = copy.deepcopy(lawful_feed)
+    mutated_feed["extra"] = 1
+    kill_lawful("feed_keyset", lawful_observation, mutated_feed)
+
+    mutation = copy.deepcopy(lawful_observation)
+    mutation["unexpected_probability"] = 0.5
+    kill_lawful("outer_extra_key", mutation)
+    mutation = copy.deepcopy(lawful_observation)
+    del mutation["summary"]
+    kill_lawful("outer_missing_key", mutation)
+    for field, replacement in (
+        ("origin", "forged_origin"),
+        ("status", "forged_status"),
+    ):
+        mutation = copy.deepcopy(lawful_observation)
+        mutation[field] = replacement
+        kill_lawful(field, mutation)
+    mutation = copy.deepcopy(lawful_observation)
+    mutation["matrix"][0][0][0] += 1.0e-6
+    kill_lawful("matrix_value", mutation)
+    mutation = copy.deepcopy(lawful_observation)
+    mutation["matrix"][0][0][0] = "0.5"
+    kill_lawful("matrix_type", mutation)
+    mutation = copy.deepcopy(lawful_observation)
+    mutation["matrix"][0][0][0] = float("inf")
+    kill_lawful("matrix_nonfinite", mutation)
+    huge_integer_observation = copy.deepcopy(lawful_observation)
+    huge_integer_observation["matrix"][0][0][0] = 10**400
+    kill_lawful("matrix_oversized_integer", huge_integer_observation)
+    for field in (
+        "shape",
+        "hermitian_residual",
+        "idempotence_residual",
+        "trace_real",
+        "trace_imag",
+        "minimum_eigenvalue",
+        "maximum_eigenvalue",
+    ):
+        mutation = copy.deepcopy(lawful_observation)
+        if field == "shape":
+            mutation["summary"][field] = [2, 3]
+        else:
+            mutation["summary"][field] = (
+                float(mutation["summary"][field]) + 1.0e-6
+            )
+        kill_lawful("summary_" + field, mutation)
+    mutation = copy.deepcopy(lawful_observation)
+    mutation["summary"]["unexpected"] = 0
+    kill_lawful("summary_extra_key", mutation)
+    mutation = copy.deepcopy(lawful_observation)
+    mutation["matrix"][0][0][0] += 1.0e-12
+    kill_lawful("tolerance_exceeded", mutation)
+
+    within = copy.deepcopy(lawful_observation)
+    within["matrix"][0][0][0] += lawful_row["expected"]["machine_bound"] / 2
+    within_bound_accepted = _compare_observation(
+        "lawful", lawful_feed, lawful_row, within
+    )["frozen_match"]
+
+    original_surface = globals()["_surface_observation"]
+    try:
+        globals()["_surface_observation"] = lambda _feed: copy.deepcopy(
+            huge_integer_observation
+        )
+        huge_integer_live = run_acceptance(lawful_feed)
+    finally:
+        globals()["_surface_observation"] = original_surface
+    huge_integer_live_drift = (
+        huge_integer_live["verdict"] == "DRIFT"
+        and huge_integer_live["comparison"]["frozen_match"] is False
+    )
+
+    for field, replacement in (
+        ("exception_type", "RuntimeError"),
+        ("message", "forged message"),
+    ):
+        mutation = copy.deepcopy(reject_observation)
+        mutation[field] = replacement
+        killed["reject_" + field] = not _compare_observation(
+            "reject", reject_feed, reject_row, mutation
+        )["frozen_match"]
+    mutation = copy.deepcopy(reject_observation)
+    mutation["unexpected_probability"] = 0.5
+    killed["reject_extra_key"] = not _compare_observation(
+        "reject", reject_feed, reject_row, mutation
+    )["frozen_match"]
+    mutation = copy.deepcopy(reject_observation)
+    del mutation["message"]
+    killed["reject_missing_key"] = not _compare_observation(
+        "reject", reject_feed, reject_row, mutation
+    )["frozen_match"]
+
+    return {
+        "killed": killed,
+        "oversized_integer_live_drift": huge_integer_live_drift,
+        "within_bound_accepted": within_bound_accepted,
+        "pass": (
+            all(killed.values())
+            and huge_integer_live_drift
+            and within_bound_accepted
+        ),
+    }
+
+
+def _schema_metamorphic_suite() -> dict[str, bool]:
+    def refuses(feed: Any, enforcement: str) -> bool:
+        result = run_acceptance(feed)
+        observation = result.get("observation")
+        exception_type = (
+            "SchemaRefusal"
+            if enforcement == "harness_schema"
+            else "FixtureRefusal"
+        )
+        return (
+            result.get("verdict") == "REJECT"
+            and result.get("enforcement") == enforcement
+            and isinstance(observation, dict)
+            and observation.get("origin") == enforcement
+            and observation.get("status") == "raised"
+            and observation.get("exception_type") == exception_type
+        )
+
+    cases = {
+        "non_object": ([], "harness_schema"),
+        "missing_probe_id": (
+            {"kind": "bloch_projector", "direction": [1, 0, 0]},
+            "harness_schema",
+        ),
+        "non_string_probe_id": (
+            {
+                "probe_id": 7,
+                "kind": "bloch_projector",
+                "direction": [1, 0, 0],
+            },
+            "harness_schema",
+        ),
+        "axis_boolean": (
+            {
+                "probe_id": "axis_plus_x",
+                "kind": "bloch_projector",
+                "direction": [True, 0, 0],
+            },
+            "harness_schema",
+        ),
+        "axis_string": (
+            {
+                "probe_id": "axis_plus_x",
+                "kind": "bloch_projector",
+                "direction": ["1", 0, 0],
+            },
+            "harness_schema",
+        ),
+        "axis_nonfinite": (
+            {
+                "probe_id": "axis_plus_x",
+                "kind": "bloch_projector",
+                "direction": [float("nan"), 0, 0],
+            },
+            "harness_schema",
+        ),
+        "axis_oversized_integer": (
+            {
+                "probe_id": "axis_plus_x",
+                "kind": "bloch_projector",
+                "direction": [10**400, 0, 0],
+            },
+            "harness_schema",
+        ),
+        "axis_extra_key": (
+            {
+                "probe_id": "axis_plus_x",
+                "kind": "bloch_projector",
+                "direction": [1, 0, 0],
+                "extra": 1,
+            },
+            "harness_schema",
+        ),
+        "unknown_valid": (
+            {
+                "probe_id": "unknown",
+                "kind": "bloch_projector",
+                "direction": [1, 0, 0],
+            },
+            "fixture_registry",
+        ),
+        "unknown_extra_key": (
+            {
+                "probe_id": "unknown",
+                "kind": "bloch_projector",
+                "direction": [1, 0, 0],
+                "extra": 1,
+            },
+            "harness_schema",
+        ),
+        "known_id_feed_mismatch": (
+            {
+                "probe_id": "axis_plus_x",
+                "kind": "bloch_projector",
+                "direction": [-1, 0, 0],
+            },
+            "fixture_registry",
+        ),
+        "boolean_id_numeric": (
+            {
+                "probe_id": "boolean_type_violation",
+                "kind": "bloch_projector",
+                "direction": [1, 0, 0],
+            },
+            "fixture_registry",
+        ),
+    }
+    return {
+        label: refuses(feed, enforcement)
+        for label, (feed, enforcement) in cases.items()
+    }
+
+
+def _probe_cli() -> int:
+    try:
+        feed = json.load(sys.stdin)
+    except Exception as exc:
+        print(
+            json.dumps(
+                {
+                    "verdict": "REJECT",
+                    "observation": _schema_refusal(
+                        f"HARNESS_SCHEMA: invalid JSON input: {type(exc).__name__}"
+                    ),
+                },
+                allow_nan=False,
+                separators=(",", ":"),
+                sort_keys=True,
+            )
+        )
+        return 0
+    print(
+        json.dumps(
+            run_acceptance(feed),
+            allow_nan=False,
+            separators=(",", ":"),
+            sort_keys=True,
+        )
+    )
+    return 0
 
 
 def main() -> int:
@@ -790,27 +1065,30 @@ def main() -> int:
     _PASS = 0
     _FAIL = 0
 
-    self_runs = [_self_run(row) for row in FROZEN_SELF_RUNS]
+    pin = _pin_verdict(BRIDGE_PATH, BRIDGE_SHA256)
+    clean_env = _clean_child_env()
+    declared_paths_exist = all((ROOT / path).is_file() for path in AUDIT_INPUT_PATHS)
     check(
-        "A. byte pins and landed self-runs reproduce frozen counts, markers, and outputs",
-        all(row["verdict"] == "ACCEPT" for row in self_runs),
+        "A. landed projector pin and hermetic execution contract",
+        pin["match"]
+        and "PYTHONPATH" not in clean_env
+        and declared_paths_exist,
         {
-            row["name"]: {
-                "verdict": row["verdict"],
-                "counts": row.get("observed_counts"),
-                "output_match": row["output_match"],
-            }
-            for row in self_runs
+            "pin": pin,
+            "pythonpath_removed": "PYTHONPATH" not in clean_env,
+            "declared_input_count": len(AUDIT_INPUT_PATHS),
+            "all_declared_inputs_exist": declared_paths_exist,
         },
     )
 
     lawful = [run_acceptance(row["feed"]) for row in FROZEN_LAWFUL_PROBES]
     check(
-        "B. all lawful declared-domain probes ACCEPT with frozen-value matches",
-        len(lawful) >= 4
+        "B. four frozen axis projector fixtures ACCEPT",
+        len(lawful) == 4
         and all(
             row["verdict"] == "ACCEPT"
             and row["comparison"]["frozen_match"]
+            and row["enforcement"] == "landed_surface"
             for row in lawful
         ),
         {
@@ -822,84 +1100,54 @@ def main() -> int:
         },
     )
 
-    rejected = [
-        run_acceptance(row["feed"]) for row in FROZEN_REJECT_WITNESSES
-    ]
-    structure = _structural_audit()
+    rejected = [run_acceptance(row["feed"]) for row in FROZEN_REJECT_WITNESSES]
+    metamorphic = _schema_metamorphic_suite()
     check(
-        "C. all malformed witnesses REJECT with frozen refusal signatures and zero landed-module writes",
-        len(rejected) >= 4
+        "C. malformed fixtures REJECT under actual enforcement and schema is ID-independent",
+        len(rejected) == 4
         and all(
             row["verdict"] == "REJECT"
             and row["comparison"]["frozen_match"]
-            and row["comparison"]["signature_match"]
+            and row["enforcement"]
+            == next(
+                frozen["expected"]["origin"]
+                for frozen in FROZEN_REJECT_WITNESSES
+                if frozen["probe_id"] == row["probe_id"]
+            )
             for row in rejected
         )
-        and structure["subprocess_isolation_ok"],
+        and all(metamorphic.values()),
         {
-            "witnesses": {
+            "fixtures": {
                 row["probe_id"]: {
                     "verdict": row["verdict"],
-                    "frozen_match": row["comparison"]["frozen_match"],
                     "enforcement": row["enforcement"],
                 }
                 for row in rejected
             },
-            "isolation": structure["subprocess_isolation_ok"],
-            "attribute_writes": structure["landed_attribute_writes"],
+            "metamorphic": metamorphic,
         },
     )
 
-    drift_demo = _sandbox_drift_demo()
+    drift = _sandbox_drift_demo()
     check(
-        "D. one-byte sandbox mutation is DRIFT while the real bridge remains byte-pinned",
-        drift_demo["verdict"] == "DRIFT"
-        and drift_demo["one_byte_changed"]
-        and drift_demo["real_unchanged"],
-        drift_demo,
+        "D. one-byte sandbox copy reaches DRIFT through the production pin predicate",
+        drift["pass"],
+        drift,
     )
 
-    adversary_source = next(
-        row for row in lawful if row["probe_id"] == "axis_plus_x"
-    )
-    adversary_frozen = {
-        "feed": next(
-            row["feed"]
-            for row in FROZEN_LAWFUL_PROBES
-            if row["probe_id"] == "axis_plus_x"
-        ),
-        "expected": QUARANTINED_WRONG_EXPECTATION["expected"],
-    }
-    adversary_comparison = _compare_observation(
-        "lawful",
-        adversary_frozen["feed"],
-        adversary_frozen,
-        adversary_source["observation"],
-    )
-    adversary_caught = not adversary_comparison["frozen_match"]
+    comparator = _comparator_mutation_suite(lawful[0], rejected[0])
     check(
-        "E. quarantined wrong frozen expectation is caught by the live comparator",
-        adversary_caught
-        and not adversary_comparison["matrix_match"],
-        adversary_comparison,
+        "E. every load-bearing comparator channel kills its quarantined mutant",
+        comparator["pass"],
+        comparator,
     )
 
+    structure = _structural_discipline()
     check(
-        "F. AST firewall finds data-only feeds and no synthesis identifiers or literal-fed surface calls",
-        structure["firewall_ok"],
-        {
-            "firewall_ok": structure["firewall_ok"],
-            "forbidden_code_identifiers": structure[
-                "forbidden_code_identifiers"
-            ],
-            "surface_call_count": structure["surface_call_count"],
-            "surface_call_is_payload_data_only": structure[
-                "surface_call_is_payload_data_only"
-            ],
-            "literal_tables": structure[
-                "literal_feed_and_expectation_tables"
-            ],
-        },
+        "F. exact normalized driver AST pin rejects alias, dynamic, synthesis, and extra-statement mutations",
+        structure["pass"],
+        structure,
     )
 
     census = [
@@ -917,37 +1165,28 @@ def main() -> int:
             "verdict=" + row["verdict"],
             "frozen_match=" + str(row["frozen_match"]),
         )
-
-    elapsed = time.monotonic() - _MODULE_START
-    final_record = {
-        "adversary_self_test": {
-            "caught": adversary_caught,
-            "wrong_matrix_match": adversary_comparison["matrix_match"],
-        },
-        "checks": {"fail": _FAIL, "pass": _PASS},
-        "drift_demo": drift_demo,
-        "firewall": {
-            "feeds_are_supplied_apparatus_data": True,
-            "new_physics_claimed": False,
-            "selects_born_law": False,
-            "selects_probability_content": False,
-            "selects_weight_map": False,
-            "structural_ast_pass": structure["firewall_ok"],
-        },
+    final = {
+        "checks": {"pass": _PASS, "fail": _FAIL},
+        "comparator_mutations": comparator,
+        "driver_ast_sha256": structure["driver_ast_sha256"],
         "probe_census": census,
-        "runtime_seconds": round(elapsed, 6),
-        "self_runs": self_runs,
+        "runtime_seconds": round(time.monotonic() - _START, 6),
+        "scope": {
+            "fixture": "projector_bloch_four_axes_only",
+            "broader_ternary_surface_tested": False,
+            "physics_claim": False,
+        },
     }
-    print(
-        json.dumps(
-            final_record,
-            allow_nan=False,
-            separators=(",", ":"),
-            sort_keys=True,
-        )
-    )
+    print(json.dumps(final, allow_nan=False, separators=(",", ":"), sort_keys=True))
+    print(f"SUMMARY PASS {_PASS} FAIL {_FAIL}")
+    print("RESULT BORN_PROJECTOR_FIXTURE_ACCEPTANCE_GREEN")
     return int(_FAIL != 0)
 
 
 if __name__ == "__main__":
+    if sys.argv[1:] == ["--probe-json"]:
+        raise SystemExit(_probe_cli())
+    if sys.argv[1:]:
+        print("usage: frontier_born_acceptance_harness_2026_07_28.py [--probe-json]")
+        raise SystemExit(2)
     raise SystemExit(main())

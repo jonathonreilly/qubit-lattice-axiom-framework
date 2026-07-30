@@ -1,4 +1,4 @@
-# The Born acceptance harness — evidence-ceiling support for the Born lane
+# Bloch-projector acceptance fixture for the Cycle-317 support surface
 
 Date: 2026-07-28
 
@@ -6,7 +6,7 @@ Authority: none
 
 Audit: unset
 
-Status: exact support (acceptance infrastructure)
+Status: exact support (projector fixture)
 
 Claim type: meta
 
@@ -17,84 +17,91 @@ Runners:
 
 Constitutional effect: none. This package changes no axiom, foundation,
 Qualification, primitive, registry, policy, queue, audit result, or audit
-status. It adds test infrastructure only.
+status. It adds a support-only regression fixture.
 
 ## Result up front
 
-The gravity/source lane gained a standing acceptance-harness set that
-raised its evidence ceiling: any regression, tampering, or out-of-domain
-feed against the landed surfaces is caught mechanically, with frozen
-expected outputs. This package builds the same instrument for the Born
-lane, over the landed Cycle-317 ternary Born-forcing surface (bridge and
-release modules):
+The primary runner checks four supplied axis directions against the landed
+Cycle-317 `projector_bloch` helper and freezes four malformed-feed behaviors.
+The independent checker derives the closed-form projector
 
-- **byte pins + landed self-runs**: both landed modules are sha256-pinned
-  as frozen literals and executed in subprocess isolation (zero attribute
-  writes into landed modules); their own certificate runs reproduce the
-  frozen counts (bridge 15/0, release 14/0) and terminal markers —
-  verdict ACCEPT;
-- **lawful probes ACCEPT**: four frozen lawful feeds from the surface's
-  own declared domain (exact axis directions and exact rational fraction
-  tuples) pass through the unchanged machinery and match frozen expected
-  values exactly;
-- **malformed witnesses REJECT**: four frozen malformations (wrong
-  arity, non-normalized, out-of-domain value, type violation) are
-  refused — three by the landed surface's own domain checks with frozen
-  refusal signatures, and one honestly labeled `harness-schema` (the
-  landed surface does not itself check that malformation; the harness
-  refuses it at the schema layer and says so — no silent claim that the
-  surface enforces what it does not);
-- **DRIFT armed**: a one-byte mutation of a sandbox copy of the bridge
-  is detected as DRIFT while the real module's sha is proven unchanged;
-- **live comparators**: a deliberately wrong frozen expectation in a
-  quarantined table is caught by the harness's own comparison — the
-  freeze-then-verify machinery is demonstrably not vacuous;
-- **firewall audit**: an AST-level check finds feeds are data-only, no
-  weight/probability synthesis identifiers, and exactly the declared
-  surface call sites.
+`P(n) = [[1+n_z, n_x-i n_y], [n_x+i n_y, 1-n_z]] / 2`
 
-## Firewall (verbatim discipline)
+without importing the primary. It matches the landed helper on six axes and
+96 non-axis rational unit vectors, for 102 vectors total.
 
-Feeds are supplied apparatus data. The harness selects no Born law, no
-weight map `w(E)`, and no probability content; it certifies only that
-the landed machinery accepted or refused as frozen. The Born lane's
-open physics (occurrence/Record/calibration bridges to weights) is
-untouched.
+This is deliberately not a test of the wider Cycle-317 ternary-menu,
+split/merge, dilation, trace-functional, or release surface. It is not a
+standing or canonical Born-lane acceptance surface.
 
-## Supplied / derived / open
+## Exact fixture boundary
 
-### Supplied
+The four lawful fixtures are the supplied directions `+x`, `-x`, `+y`, and
+`+z`. They exercise only `projector_bloch`. The four refusal fixtures are:
 
-- the four lawful probe feeds and four malformation witnesses (declared
-  apparatus data with frozen expectations; zero fitted parameters);
-- the harness schema for feed shape (declared, printed);
-- everything the landed Cycle-317 surface declares supplied.
+- wrong arity, refused by the harness schema;
+- a non-normalized direction, refused by the landed helper;
+- an out-of-domain direction, refused by the landed helper;
+- a Boolean entry, refused by the harness schema.
 
-### Derived
+The schema checks exact keys and kind, a three-entry list, finite JSON numeric
+entries, and Boolean exclusion before dispatch. Cross-ID tests show that the
+schema result depends on the feed content rather than on the fixture name,
+including integers too large for finite floating-point coercion. Schema and
+fixture-registry refusals have distinct signatures, and each observation's
+origin agrees exactly with the component named by its enforcement label.
 
-- the standing ACCEPT/REJECT/DRIFT verdict machinery with byte pins,
-  subprocess-isolated self-runs, frozen-value comparisons, live-
-  comparator demonstration, and the honest landed-vs-harness refusal
-  labeling.
+## Reproducibility and adversarial controls
 
-### Open
+- Every mutable repository file in the reconstructed runtime closure is
+  declared literally in `AUDIT_INPUT_PATHS`; the independent checker also
+  declares the primary runner.
+- Child processes run from `scripts/` with inherited `PYTHONPATH` removed.
+- The landed bridge has an independently repeated SHA-256 pin.
+- The complete normalized child-driver AST is pinned. Alias mutation, dynamic
+  lookup, explicit synthesis, and extra-statement variants all change that
+  pin.
+- The comparator requires exact outer and nested key sets, finite numeric
+  values, and the declared tolerance. Its mutation census covers feed, origin,
+  status, matrix, every summary family, exception type, message, missing and
+  extra keys, nonfinite/type cases, oversized integers, and the tolerance
+  boundary. Oversized numeric observations fail closed as `DRIFT`.
+- A one-byte sandbox copy reaches `DRIFT` through the same production pin
+  predicate used for live inputs. Both runners check that the real bridge hash
+  and filesystem stat token remain unchanged.
+- The independent checker hard-codes the complete primary source hash together
+  with the bridge and driver pins, pins the normalized AST of five production
+  functions, and explicitly rejects a frozen-table mutation that leaves the
+  child driver dead. It uses an exact-rational projector oracle, repeats
+  malformed type/finite/provenance probes, and runs the primary under the clean
+  environment contract without importing it.
 
-- the Born lane's physics itself (no movement claimed here);
-- wiring epoch-derived feeds (the Cycle-729 package, not yet landed on
-  main) into this harness once its surfaces land — the natural next
-  infrastructure step;
-- the full-Fock lift as an input-ported surface on the source-lane
-  harness set (tracked separately).
+Cache logs are reproducibility aids only. They confer no claim or audit
+authority. No separate receipt or self-certificate is part of this package.
 
-## Negative-claim discipline
+## Physics and support boundary
 
-No negative claim ships. The `harness-schema` refusal label records a
-scope fact about the landed surface's own checks, not a defect claim.
+All directions and expected fixture identities are supplied apparatus data.
+The runners select no Born law, weight map `w(E)`, normalization rule,
+probability content, outcome, occurrence, calibration, or Record. They do not
+move the Born lane's open physics and make no Nature- or retained-grade claim.
 
-## Verdict
+The only positive statement here is executable agreement between a narrow
+landed projector helper and independently fixed support fixtures. Historical
+Cycle-317 results remain context, not newly admitted premises.
 
-The Born lane now has what the gravity lane got: a standing instrument
-that mechanically certifies the landed forcing surface against frozen
-expectations and catches drift. The evidence ceiling of the lane's
-methodology rises accordingly; the physics above it is unchanged and
-still owner-audited. Independent audit still required.
+## Audit compatibility
+
+This note is infrastructure-only `meta` material. Such rows do not enter the
+ordinary claim-audit queue, so this note promises no later audit verdict. The
+citation graph exposes the independent checker and the dynamic landed helper
+for restricted-packet review. Review-loop validation may assess this support
+package; it does not apply an audit verdict.
+
+## Open boundary
+
+Candidate-input coverage of the actual ternary-menu, split/merge, dilation,
+trace-functional, and release surfaces remains absent. A future package would
+need independently derived fixtures for those surfaces and separate,
+appropriately typed source claims. No such coverage or physics conclusion is
+inferred here.

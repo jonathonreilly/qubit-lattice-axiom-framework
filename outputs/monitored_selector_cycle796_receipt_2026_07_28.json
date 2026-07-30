@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle796_monitored_independent_check_2026_07_28.txt": "2f1c0b32a2272714e3b2582899a42dd59094040720e09baeec0cedbc0a101791",
+      "frontier_cycle796_monitored_selector_2026_07_28.txt": "23fce8b28ab4c5792f5ee9222dfb8aa63edf4fe462700a7998994a64bf710a1d"
+    },
+    "carried_reference_copies": {
+      "scripts/frontier_cycle781_checkpoint_refusal_law_2026_07_28.py": "b1158250dcb1449f6abac4f6bb6a0a90f47511a8a0f587e85483f4b6f3624211"
+    },
+    "note": {
+      "path": "docs/MONITORED_SELECTOR_CYCLE796_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "42f696c6e74a584f3c24c05e509ee31876baa830ff4066370adee314f2112c59"
+    },
+    "runners": {
+      "frontier_cycle796_monitored_independent_check_2026_07_28.py": "f44ed0f7fa235747f390e6ee354de55884e6d7d7ab4783b730bdecd7b1ce8b5b",
+      "frontier_cycle796_monitored_selector_2026_07_28.py": "be0238611e02f9bad8df813430f9decec68d287df267bbf82ba4a63ffc8483c3"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "construction": "the k=2 battery with clean_postimage monitored at every boundary, accepting at the FIRST full-battery pass; NO per-configuration values (AST-audited both runners); family run: 2 accepts (orbits 252/371, unique) / 174 refusals; cutoffs 512/1024/2048 identical; pre-registered predictions matched exactly",
+    "exchange": "v1 claimed the landed-781-cadence provenance -> checker REFUTED (781 monitors H/station boundaries, v1 used orbit returns; FOUR landed cadences exist; the acceptance glue is unlanded) -> v2 censuses all four cadences and splits the content",
+    "fixed_supplies": "the cadence choice (censused), the acceptance glue (declared), the cutoff; everything Cycle-719/736/750/758/781/790-794 declare",
+    "meaning": "an exact-time law whose events and orbits are clock-independent, conventional only within the tick \u2014 the precise remaining distance between construction and derivation",
+    "not_derived": "the cadence question's resolution; actuality",
+    "outcome": "CONSTRUCTED_WITH_CADENCE_CONVENTION",
+    "robustness_split": "selection_existence_cadence_robust TRUE and orbit_level_moments_cadence_robust TRUE (both transients, unique, orbits 252/371 under every landed cadence); sub_orbit_timing_cadence_sensitive TRUE (H=2771 vs 2772 at (1,10)); window_fine_structure_cadence_sensitive TRUE ((0,7) spills into orbit 372 at finer clocks: counts 0/3/9/7)",
+    "supervisor_patches": "the audit tuple's git-reference entry materialized to a disk copy; checker sha+blob pins re-frozen; all re-verified",
+    "verdict_keys": "robust_content_constructed TRUE; full_construction_convention_free FALSE"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 6,
+    "primary_named_checks_passed": 6
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 796,
+  "date": "2026-07-30",
+  "result": {
+    "family": "2 accepts / 174 refusals",
+    "robust": "existence + orbit moments",
+    "sensitive": "sub-orbit timing + window structure",
+    "verdict": "CONSTRUCTED_WITH_CADENCE_CONVENTION"
+  },
+  "status": "CYCLE796_MONITORED_SELECTOR_PASS"
+}

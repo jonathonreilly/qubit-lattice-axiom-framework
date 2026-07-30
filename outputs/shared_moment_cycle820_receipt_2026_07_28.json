@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR16-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle820_mechanism_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 7
+    },
+    "logs/runner-cache/frontier_cycle820_shared_moment_mechanism_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 12
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 820,
+  "files": {
+    "docs/SHARED_MOMENT_CYCLE820_BOUNDED_THEOREM_NOTE_2026-07-28.md": "052bccb52ae14a060c3ecc996056318a2c83e127a1d5dd698670e41c5cced3ca",
+    "logs/runner-cache/frontier_cycle820_mechanism_independent_check_2026_07_28.txt": "5a642d099829afa20aaa36a1b26d7624e5ee8bbb50affa80f77802eeb4822577",
+    "logs/runner-cache/frontier_cycle820_shared_moment_mechanism_2026_07_28.txt": "3513d8e55a18ee11c2f35565065f9efc3e459b33d56923fa3c17911d9f24681e",
+    "scripts/frontier_cycle820_mechanism_independent_check_2026_07_28.py": "0a4ba91517fa5229ce26a563f5d01940e71192241811a11cfe01f2054bc061bc",
+    "scripts/frontier_cycle820_shared_moment_mechanism_2026_07_28.py": "7344bee5d5f0bcbddcea7b9d83f40a552c90188bf30b4905f2649a49e4bf1649"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "14744 = 2^3*19*97; 120 exact pair relations (2*14744 = 8928+8930+2*5815 noncausal); 231 fail",
+    "candidate A (common configuration + fixed lag) HOLDS; clock-sync/position-function fail with counterexamples",
+    "remaining question reduced: why S* at 14739 (one state, one time)"
+  ],
+  "verdicts": [
+    "STRUCTURE_FOUND_MECHANISM_OPEN \u2014 the shared moment is a trajectory MERGER (all nine states identical at 0,1,14739,14744; unequal 14738/14740)",
+    "the funnel S* -> clean in exactly 5 ticks",
+    "checker CONFIRMED (state-object audit: full 5,815-bit tuples, keys external, distinct transition words)"
+  ]
+}

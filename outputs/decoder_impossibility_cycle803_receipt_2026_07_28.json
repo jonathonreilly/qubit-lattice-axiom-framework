@@ -1,0 +1,44 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR11-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle803_decoder_derivation_2026_07_28.txt": {
+      "fail": 2,
+      "pass": 3
+    },
+    "logs/runner-cache/frontier_cycle803_decoder_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 803,
+  "designed_fail_certificates": {
+    "expected_fail_counts": {
+      "logs/runner-cache/frontier_cycle803_decoder_derivation_2026_07_28.txt": 2,
+      "logs/runner-cache/frontier_cycle803_decoder_independent_check_2026_07_28.txt": 0
+    },
+    "logs/runner-cache/frontier_cycle803_decoder_derivation_2026_07_28.txt": [
+      "FAIL CERTIFICATE B: decode_companion_choi_to_linkstate construction (status FAIL_NOT_WELL_DEFINED \u2014 the honest obstruction encoding)",
+      "FAIL CERTIFICATE C: calibration identity (the e0/e1 squared-distance-2 contradiction \u2014 the honest obstruction encoding)"
+    ]
+  },
+  "files": {
+    "docs/DECODER_IMPOSSIBILITY_CYCLE803_BOUNDED_THEOREM_NOTE_2026-07-28.md": "486636293a53450be26f8650402b417e1f6a2624894403f00fe7d498e97c874b",
+    "logs/runner-cache/frontier_cycle803_decoder_derivation_2026_07_28.txt": "066c7509a0d943c20a560607f3766f3bf6ec1673665ee320499e4913f6c5ed8c",
+    "logs/runner-cache/frontier_cycle803_decoder_independent_check_2026_07_28.txt": "e15bd17aca25851e63c11438821d31035bfdc468ea2854fa60e19766eacf792d",
+    "scripts/frontier_cycle803_decoder_derivation_2026_07_28.py": "df3287bd2aa0fdfc3361551894760f04d3ebb60ba6214fe83f005056e8aec0ab",
+    "scripts/frontier_cycle803_decoder_independent_check_2026_07_28.py": "33c3c26c4781efe7ab77eef83ed61a6e25cc72bfde271f52b534342f4d0ff5e8"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "Choi tableau stabilizer rank 11/15; induced link-sector state MIXED, rank 16, purity 1/16 (two independent exact GF(2) methods in checker)",
+    "calibration ill-defined: same odd resource requires e0 AND e1 outputs, exact squared distance 2; indexing identification audited across Cycle720/U320/S322",
+    "purifiable-subfamily hunt: pure members 0/3744 over the complete bounded enumerated 720 preparation family \u2014 the partial-reopen route is EMPTY"
+  ],
+  "verdicts": [
+    "OBSTRUCTED_DEEPER",
+    "CONFIRMED_OBSTRUCTION_ON_BOUNDED_ENUMERATED_720_FAMILY"
+  ]
+}

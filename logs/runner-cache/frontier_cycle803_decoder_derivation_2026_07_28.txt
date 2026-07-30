@@ -1,0 +1,1558 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle803_decoder_derivation_2026_07_28.py
+runner_sha256: df3287bd2aa0fdfc3361551894760f04d3ebb60ba6214fe83f005056e8aec0ab
+input_fingerprint_sha256: a71c4616222f3592a30304831f56822bd69eefc496f037def8a398bc5b4a3aa3
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+CYCLE 803: DERIVE THE DECODER BETWEEN W7 AND ITS SCOPE
+authority=none; audit=unset; claim=bounded derivation attempt
+
+CONTROL: LITERAL AUDIT INPUT PATHS
+AUDIT_INPUT_PATHS = ('scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py', 'scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py', 'scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py', 'scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py', 'scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py', 'scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py', 'scripts/frontier_cycle803_decoder_derivation_2026_07_28.py')
+
+A. SHA ANCHORS AND SEMANTIC INVENTORY
+{
+  "all_match": true,
+  "cycle720_candidate_tracked_on_lineage": true,
+  "rows": [
+    {
+      "actual_sha256": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
+      "expected_sha256": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
+      "match": true,
+      "path": "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py"
+    },
+    {
+      "actual_sha256": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+      "expected_sha256": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+      "match": true,
+      "path": "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py"
+    },
+    {
+      "actual_sha256": "108568254546e1f64e4454b455f4aa866fe9abfbd4a6ca3a82f65b6a29e28974",
+      "expected_sha256": "108568254546e1f64e4454b455f4aa866fe9abfbd4a6ca3a82f65b6a29e28974",
+      "match": true,
+      "path": "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py"
+    },
+    {
+      "actual_sha256": "f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982",
+      "expected_sha256": "f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982",
+      "match": true,
+      "path": "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py"
+    },
+    {
+      "actual_sha256": "ee7d6c6d442bac4fe646535ed46369a649fc8b80eb661044242392058c139628",
+      "expected_sha256": "ee7d6c6d442bac4fe646535ed46369a649fc8b80eb661044242392058c139628",
+      "match": true,
+      "path": "scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py"
+    },
+    {
+      "actual_sha256": "6877d532aaa1c9a97358ce2dfa2e26b1264c1f5a8ef477c217e9cc5a16c8d205",
+      "expected_sha256": "6877d532aaa1c9a97358ce2dfa2e26b1264c1f5a8ef477c217e9cc5a16c8d205",
+      "match": true,
+      "path": "scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py"
+    }
+  ]
+}
+{
+  "directions_and_columns": {
+    "column_correspondence_cell_0": [
+      {
+        "Choi_input_matter_tableau_column": 9,
+        "U320_LinkState_excited_column": 0,
+        "companion_Majorana_parity_bit": 0,
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "direction_d": 0,
+        "output_companion_tableau_column": 6,
+        "output_matter_tableau_column": 0
+      },
+      {
+        "Choi_input_matter_tableau_column": 10,
+        "U320_LinkState_excited_column": 1,
+        "companion_Majorana_parity_bit": 1,
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "direction_d": 1,
+        "output_companion_tableau_column": 6,
+        "output_matter_tableau_column": 1
+      },
+      {
+        "Choi_input_matter_tableau_column": 11,
+        "U320_LinkState_excited_column": 2,
+        "companion_Majorana_parity_bit": 0,
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "direction_d": 2,
+        "output_companion_tableau_column": 7,
+        "output_matter_tableau_column": 2
+      },
+      {
+        "Choi_input_matter_tableau_column": 12,
+        "U320_LinkState_excited_column": 3,
+        "companion_Majorana_parity_bit": 1,
+        "direction": [
+          0,
+          -1,
+          0
+        ],
+        "direction_d": 3,
+        "output_companion_tableau_column": 7,
+        "output_matter_tableau_column": 3
+      },
+      {
+        "Choi_input_matter_tableau_column": 13,
+        "U320_LinkState_excited_column": 4,
+        "companion_Majorana_parity_bit": 0,
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "direction_d": 4,
+        "output_companion_tableau_column": 8,
+        "output_matter_tableau_column": 4
+      },
+      {
+        "Choi_input_matter_tableau_column": 14,
+        "U320_LinkState_excited_column": 5,
+        "companion_Majorana_parity_bit": 1,
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "direction_d": 5,
+        "output_companion_tableau_column": 8,
+        "output_matter_tableau_column": 5
+      }
+    ],
+    "direction_rows": [
+      {
+        "Cycle720_R_DIRECTIONS": [
+          1,
+          0,
+          0
+        ],
+        "S322_c210_DIRECTIONS": [
+          1,
+          0,
+          0
+        ],
+        "U320_c210_DIRECTIONS": [
+          1,
+          0,
+          0
+        ],
+        "d": 0,
+        "fixed_relabeling": 0,
+        "name": "+x"
+      },
+      {
+        "Cycle720_R_DIRECTIONS": [
+          -1,
+          0,
+          0
+        ],
+        "S322_c210_DIRECTIONS": [
+          -1,
+          0,
+          0
+        ],
+        "U320_c210_DIRECTIONS": [
+          -1,
+          0,
+          0
+        ],
+        "d": 1,
+        "fixed_relabeling": 1,
+        "name": "-x"
+      },
+      {
+        "Cycle720_R_DIRECTIONS": [
+          0,
+          1,
+          0
+        ],
+        "S322_c210_DIRECTIONS": [
+          0,
+          1,
+          0
+        ],
+        "U320_c210_DIRECTIONS": [
+          0,
+          1,
+          0
+        ],
+        "d": 2,
+        "fixed_relabeling": 2,
+        "name": "+y"
+      },
+      {
+        "Cycle720_R_DIRECTIONS": [
+          0,
+          -1,
+          0
+        ],
+        "S322_c210_DIRECTIONS": [
+          0,
+          -1,
+          0
+        ],
+        "U320_c210_DIRECTIONS": [
+          0,
+          -1,
+          0
+        ],
+        "d": 3,
+        "fixed_relabeling": 3,
+        "name": "-y"
+      },
+      {
+        "Cycle720_R_DIRECTIONS": [
+          0,
+          0,
+          1
+        ],
+        "S322_c210_DIRECTIONS": [
+          0,
+          0,
+          1
+        ],
+        "U320_c210_DIRECTIONS": [
+          0,
+          0,
+          1
+        ],
+        "d": 4,
+        "fixed_relabeling": 4,
+        "name": "+z"
+      },
+      {
+        "Cycle720_R_DIRECTIONS": [
+          0,
+          0,
+          -1
+        ],
+        "S322_c210_DIRECTIONS": [
+          0,
+          0,
+          -1
+        ],
+        "U320_c210_DIRECTIONS": [
+          0,
+          0,
+          -1
+        ],
+        "d": 5,
+        "fixed_relabeling": 5,
+        "name": "-z"
+      }
+    ],
+    "edge_assignment_failures": 0,
+    "edge_assignment_rows_2x2x2": [
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 0,
+        "edge": 0,
+        "exact": true,
+        "geometric_delta": [
+          1,
+          0,
+          0
+        ],
+        "left_cell": [
+          0,
+          0,
+          0
+        ],
+        "left_endpoint_direction": [
+          -1,
+          0,
+          0
+        ],
+        "left_endpoint_mode": 1,
+        "owner": [
+          0,
+          0,
+          0
+        ],
+        "right_cell": [
+          1,
+          0,
+          0
+        ],
+        "right_endpoint_direction": [
+          1,
+          0,
+          0
+        ],
+        "right_endpoint_mode": 0
+      },
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 1,
+        "edge": 1,
+        "exact": true,
+        "geometric_delta": [
+          0,
+          1,
+          0
+        ],
+        "left_cell": [
+          0,
+          0,
+          0
+        ],
+        "left_endpoint_direction": [
+          0,
+          -1,
+          0
+        ],
+        "left_endpoint_mode": 3,
+        "owner": [
+          0,
+          0,
+          0
+        ],
+        "right_cell": [
+          0,
+          1,
+          0
+        ],
+        "right_endpoint_direction": [
+          0,
+          1,
+          0
+        ],
+        "right_endpoint_mode": 2
+      },
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 2,
+        "edge": 2,
+        "exact": true,
+        "geometric_delta": [
+          0,
+          0,
+          1
+        ],
+        "left_cell": [
+          0,
+          0,
+          0
+        ],
+        "left_endpoint_direction": [
+          0,
+          0,
+          -1
+        ],
+        "left_endpoint_mode": 5,
+        "owner": [
+          0,
+          0,
+          0
+        ],
+        "right_cell": [
+          0,
+          0,
+          1
+        ],
+        "right_endpoint_direction": [
+          0,
+          0,
+          1
+        ],
+        "right_endpoint_mode": 4
+      },
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 0,
+        "edge": 3,
+        "exact": true,
+        "geometric_delta": [
+          1,
+          0,
+          0
+        ],
+        "left_cell": [
+          0,
+          0,
+          1
+        ],
+        "left_endpoint_direction": [
+          -1,
+          0,
+          0
+        ],
+        "left_endpoint_mode": 1,
+        "owner": [
+          0,
+          0,
+          1
+        ],
+        "right_cell": [
+          1,
+          0,
+          1
+        ],
+        "right_endpoint_direction": [
+          1,
+          0,
+          0
+        ],
+        "right_endpoint_mode": 0
+      },
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 1,
+        "edge": 4,
+        "exact": true,
+        "geometric_delta": [
+          0,
+          1,
+          0
+        ],
+        "left_cell": [
+          0,
+          0,
+          1
+        ],
+        "left_endpoint_direction": [
+          0,
+          -1,
+          0
+        ],
+        "left_endpoint_mode": 3,
+        "owner": [
+          0,
+          0,
+          1
+        ],
+        "right_cell": [
+          0,
+          1,
+          1
+        ],
+        "right_endpoint_direction": [
+          0,
+          1,
+          0
+        ],
+        "right_endpoint_mode": 2
+      },
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 0,
+        "edge": 5,
+        "exact": true,
+        "geometric_delta": [
+          1,
+          0,
+          0
+        ],
+        "left_cell": [
+          0,
+          1,
+          0
+        ],
+        "left_endpoint_direction": [
+          -1,
+          0,
+          0
+        ],
+        "left_endpoint_mode": 1,
+        "owner": [
+          0,
+          1,
+          0
+        ],
+        "right_cell": [
+          1,
+          1,
+          0
+        ],
+        "right_endpoint_direction": [
+          1,
+          0,
+          0
+        ],
+        "right_endpoint_mode": 0
+      },
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 2,
+        "edge": 6,
+        "exact": true,
+        "geometric_delta": [
+          0,
+          0,
+          1
+        ],
+        "left_cell": [
+          0,
+          1,
+          0
+        ],
+        "left_endpoint_direction": [
+          0,
+          0,
+          -1
+        ],
+        "left_endpoint_mode": 5,
+        "owner": [
+          0,
+          1,
+          0
+        ],
+        "right_cell": [
+          0,
+          1,
+          1
+        ],
+        "right_endpoint_direction": [
+          0,
+          0,
+          1
+        ],
+        "right_endpoint_mode": 4
+      },
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 0,
+        "edge": 7,
+        "exact": true,
+        "geometric_delta": [
+          1,
+          0,
+          0
+        ],
+        "left_cell": [
+          0,
+          1,
+          1
+        ],
+        "left_endpoint_direction": [
+          -1,
+          0,
+          0
+        ],
+        "left_endpoint_mode": 1,
+        "owner": [
+          0,
+          1,
+          1
+        ],
+        "right_cell": [
+          1,
+          1,
+          1
+        ],
+        "right_endpoint_direction": [
+          1,
+          0,
+          0
+        ],
+        "right_endpoint_mode": 0
+      },
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 1,
+        "edge": 8,
+        "exact": true,
+        "geometric_delta": [
+          0,
+          1,
+          0
+        ],
+        "left_cell": [
+          1,
+          0,
+          0
+        ],
+        "left_endpoint_direction": [
+          0,
+          -1,
+          0
+        ],
+        "left_endpoint_mode": 3,
+        "owner": [
+          1,
+          0,
+          0
+        ],
+        "right_cell": [
+          1,
+          1,
+          0
+        ],
+        "right_endpoint_direction": [
+          0,
+          1,
+          0
+        ],
+        "right_endpoint_mode": 2
+      },
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 2,
+        "edge": 9,
+        "exact": true,
+        "geometric_delta": [
+          0,
+          0,
+          1
+        ],
+        "left_cell": [
+          1,
+          0,
+          0
+        ],
+        "left_endpoint_direction": [
+          0,
+          0,
+          -1
+        ],
+        "left_endpoint_mode": 5,
+        "owner": [
+          1,
+          0,
+          0
+        ],
+        "right_cell": [
+          1,
+          0,
+          1
+        ],
+        "right_endpoint_direction": [
+          0,
+          0,
+          1
+        ],
+        "right_endpoint_mode": 4
+      },
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 1,
+        "edge": 10,
+        "exact": true,
+        "geometric_delta": [
+          0,
+          1,
+          0
+        ],
+        "left_cell": [
+          1,
+          0,
+          1
+        ],
+        "left_endpoint_direction": [
+          0,
+          -1,
+          0
+        ],
+        "left_endpoint_mode": 3,
+        "owner": [
+          1,
+          0,
+          1
+        ],
+        "right_cell": [
+          1,
+          1,
+          1
+        ],
+        "right_endpoint_direction": [
+          0,
+          1,
+          0
+        ],
+        "right_endpoint_mode": 2
+      },
+      {
+        "assignment": "the lower-coordinate endpoint carries the inward -axis port; the upper-coordinate endpoint carries the inward +axis port",
+        "axis": 2,
+        "edge": 11,
+        "exact": true,
+        "geometric_delta": [
+          0,
+          0,
+          1
+        ],
+        "left_cell": [
+          1,
+          1,
+          0
+        ],
+        "left_endpoint_direction": [
+          0,
+          0,
+          -1
+        ],
+        "left_endpoint_mode": 5,
+        "owner": [
+          1,
+          1,
+          0
+        ],
+        "right_cell": [
+          1,
+          1,
+          1
+        ],
+        "right_endpoint_direction": [
+          0,
+          0,
+          1
+        ],
+        "right_endpoint_mode": 4
+      }
+    ],
+    "identification_kind": "literal equality of the two modules' ordered integer direction tables; fixed relabeling is the identity permutation",
+    "identity_relabeling": true,
+    "reverse_tables": {
+      "S322": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4
+      ],
+      "U320": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4
+      ],
+      "derived_from_direction_negation": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "semantic_warning": "the exact column identification maps six fermionic mode labels to six cubic directions; it does not map Pauli bits to six complex wavefunction amplitudes"
+  },
+  "tableau_and_state_content": {
+    "candidate_scope_rerun": {
+      "direct_rank_exact": true,
+      "direct_rows_exact": true,
+      "pump_output_plus_failures": 0,
+      "pump_trace_preservation_failures": 0
+    },
+    "commuting_Hermitian_failures": 0,
+    "exact_density_reconstruction": {
+      "formula": "rho_J=2^(-15)*product_(j=1)^11(I+S_j)",
+      "normalized_nonzero_eigenvalue": "1/16",
+      "projector_support_dimension": 16,
+      "pure_up_to_global_phase": false,
+      "purity": "1/16"
+    },
+    "fixed_parity_augmentation": {
+      "lineage_certificate": {
+        "Choi_graph_rank_equals_2L_plus_C": true,
+        "input_marginal_stabilizer_kernel_rank": 1,
+        "logical_qubits_in_fixed_parity_sector": 5,
+        "mixed_gauge_M2": 3,
+        "normalized_fixed_sector_input_marginal": "Pi_parity/2^(matter_qubits-1)"
+      },
+      "rank": 12,
+      "rank_increment": 1,
+      "still_pure": false,
+      "support_dimension": 8
+    },
+    "fixture": {
+      "Choi_total_qubits_Q_15N": 15,
+      "cells": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "edges": 0,
+      "matter_qubits_6N": 6,
+      "physical_output_qubits_9N": 9,
+      "shape": [
+        1,
+        1,
+        1
+      ]
+    },
+    "independent_rank": 11,
+    "literal_direct_graph_rows": [
+      {
+        "X_tableau_columns": [],
+        "Z_tableau_columns": [
+          0,
+          9
+        ],
+        "direction_content": [
+          0
+        ],
+        "phase_i_power": 0,
+        "row": 0,
+        "tag": [
+          "onsite_Z",
+          0,
+          0
+        ]
+      },
+      {
+        "X_tableau_columns": [],
+        "Z_tableau_columns": [
+          1,
+          10
+        ],
+        "direction_content": [
+          1
+        ],
+        "phase_i_power": 0,
+        "row": 1,
+        "tag": [
+          "onsite_Z",
+          0,
+          1
+        ]
+      },
+      {
+        "X_tableau_columns": [],
+        "Z_tableau_columns": [
+          2,
+          11
+        ],
+        "direction_content": [
+          2
+        ],
+        "phase_i_power": 0,
+        "row": 2,
+        "tag": [
+          "onsite_Z",
+          0,
+          2
+        ]
+      },
+      {
+        "X_tableau_columns": [],
+        "Z_tableau_columns": [
+          3,
+          12
+        ],
+        "direction_content": [
+          3
+        ],
+        "phase_i_power": 0,
+        "row": 3,
+        "tag": [
+          "onsite_Z",
+          0,
+          3
+        ]
+      },
+      {
+        "X_tableau_columns": [],
+        "Z_tableau_columns": [
+          4,
+          13
+        ],
+        "direction_content": [
+          4
+        ],
+        "phase_i_power": 0,
+        "row": 4,
+        "tag": [
+          "onsite_Z",
+          0,
+          4
+        ]
+      },
+      {
+        "X_tableau_columns": [],
+        "Z_tableau_columns": [
+          5,
+          14
+        ],
+        "direction_content": [
+          5
+        ],
+        "phase_i_power": 0,
+        "row": 5,
+        "tag": [
+          "onsite_Z",
+          0,
+          5
+        ]
+      },
+      {
+        "X_tableau_columns": [
+          0,
+          1,
+          9,
+          10
+        ],
+        "Z_tableau_columns": [],
+        "direction_content": [
+          0,
+          1
+        ],
+        "phase_i_power": 0,
+        "row": 6,
+        "tag": [
+          "onsite_XX",
+          0,
+          0
+        ]
+      },
+      {
+        "X_tableau_columns": [
+          1,
+          2,
+          10,
+          11
+        ],
+        "Z_tableau_columns": [],
+        "direction_content": [
+          1,
+          2
+        ],
+        "phase_i_power": 0,
+        "row": 7,
+        "tag": [
+          "onsite_XX",
+          0,
+          1
+        ]
+      },
+      {
+        "X_tableau_columns": [
+          2,
+          3,
+          11,
+          12
+        ],
+        "Z_tableau_columns": [],
+        "direction_content": [
+          2,
+          3
+        ],
+        "phase_i_power": 0,
+        "row": 8,
+        "tag": [
+          "onsite_XX",
+          0,
+          2
+        ]
+      },
+      {
+        "X_tableau_columns": [
+          3,
+          4,
+          12,
+          13
+        ],
+        "Z_tableau_columns": [],
+        "direction_content": [
+          3,
+          4
+        ],
+        "phase_i_power": 0,
+        "row": 9,
+        "tag": [
+          "onsite_XX",
+          0,
+          3
+        ]
+      },
+      {
+        "X_tableau_columns": [
+          4,
+          5,
+          13,
+          14
+        ],
+        "Z_tableau_columns": [],
+        "direction_content": [
+          4,
+          5
+        ],
+        "phase_i_power": 0,
+        "row": 10,
+        "tag": [
+          "onsite_XX",
+          0,
+          4
+        ]
+      }
+    ],
+    "row_semantics": {
+      "edge": "absent in the one-cell witness; on boxes it is a channel correlation built from the endpoint-port assignment above",
+      "onsite_XX": "X on adjacent output modes d,d+1 times X on adjacent Choi-input modes d,d+1",
+      "onsite_Z": "Z on output matter mode d times Z on Choi-input matter mode d"
+    },
+    "unstabilized_output_companion_columns": [
+      6,
+      7,
+      8
+    ]
+  }
+}
+PASS CERTIFICATE A: anchors, exact direction identification, tableau rows, and candidate-scope checks
+
+B. DECODER CONSTRUCTION ATTEMPT
+{
+  "U320_input_validity_reached": false,
+  "constructed": false,
+  "forced_steps": [
+    {
+      "operation": "read the signed commuting Pauli rows and reconstruct rho_J=2^(-Q) product_j(I+S_j)",
+      "status": "FORCED",
+      "step": 1
+    },
+    {
+      "operation": "identify matter-mode d with cubic direction d by equality of the landed ordered direction tables",
+      "status": "FORCED",
+      "step": 2
+    },
+    {
+      "operation": "test exact GF(2) stabilizer rank before choosing a ket or global phase",
+      "status": "FORCED",
+      "step": 3
+    }
+  ],
+  "obstruction": {
+    "Q": 15,
+    "density_operator_rank": 16,
+    "exact_gap": "the tableau determines a mixed Choi projector, not a ket; it contains no landed live-input contraction coefficients (c_0,...,c_5), no exact-one-occupation projection, and no pure companion-gauge/LinkState-branch selection",
+    "forced_formula": "rho_J=2^(-Q)*product_j(I+S_j)",
+    "independent_stabilizer_rank": 11,
+    "missing_tableau_datum_with_no_LinkState_image": "the normalized six-component live-input amplitude ray [c_0:...:c_5] (including all relative phases)",
+    "nonzero_eigenvalue": "1/16",
+    "purity": "1/16",
+    "stage": "exact_stabilizer_reconstruction",
+    "unstabilized_logical_M2": 4
+  },
+  "return_value": null,
+  "supplies_not_taken": [
+    {
+      "datum": "live input / Choi-input contraction",
+      "reason": "would select the physical output state rather than decode a datum already in the Choi resource"
+    },
+    {
+      "datum": "exact-one-occupation projection on six modes",
+      "reason": "fixed fermion parity admits 32 basis states at one cell, while U320's excited sector is C^6"
+    },
+    {
+      "datum": "pure value of the three companion gauge M2",
+      "reason": "the fixed-sector lineage explicitly keeps it mixed"
+    },
+    {
+      "datum": "U320 excited/pair branch and position selection",
+      "reason": "the Choi tableau has physical/input Pauli columns, not LinkState dictionary keys or branch tensors"
+    },
+    {
+      "datum": "global phase convention",
+      "reason": "a harmless possible supply, but it cannot repair mixedness or create the missing relative amplitudes"
+    }
+  ]
+}
+FAIL CERTIFICATE B: decode_companion_choi_to_linkstate construction
+
+C. CALIBRATION IDENTITY
+{
+  "LinkState_residual": 1.4142135623730951,
+  "candidate_accepts_separately_supplied_basis_state": true,
+  "candidate_prepares_recognizable_basis_state": false,
+  "decoder_constructed": false,
+  "exact_mismatch": "e_0 != e_1 (squared distance 2), so one function of the unchanged tableau cannot satisfy both identity columns",
+  "exact_squared_LinkState_residual_between_required_outputs": 2,
+  "lineage_fact": "the fixed-sector live-input sibling proves corrected-channel identity for every supplied live input while the gauge remains mixed; it does not store that live input in the Choi tableau",
+  "required_U320_outputs": [
+    "e_0",
+    "e_1"
+  ],
+  "same_resource_equations_that_a_resource_only_decoder_would_need": [
+    "D(T_odd)=e_0",
+    "D(T_odd)=e_1"
+  ],
+  "status": "FAIL_NOT_WELL_DEFINED",
+  "stop_rule": "calibration failure means stop before the composite test",
+  "two_inputs_admitted_by_the_same_odd_sector_resource": [
+    "|100000> (direction 0)",
+    "|010000> (direction 1)"
+  ]
+}
+FAIL CERTIFICATE C: calibration identity
+
+D. COMPOSITE TEST OR HONEST OBSTRUCTION
+{
+  "cross_term_census": "NOT_RUN_BY_FROZEN_CALIBRATION_STOP_RULE",
+  "honest_obstruction": "the tableau determines a mixed Choi projector, not a ket; it contains no landed live-input contraction coefficients (c_0,...,c_5), no exact-one-occupation projection, and no pure companion-gauge/LinkState-branch selection",
+  "law_claim": "NONE",
+  "reached": false,
+  "response_rows_vs_kernel_additive_prediction": "NOT_RUN_BY_FROZEN_CALIBRATION_STOP_RULE"
+}
+PASS CERTIFICATE D: honest obstruction and frozen stop before composite execution
+
+CONTROL: U320 DEFINING SOURCE AND RESPONSE ROWS REPRODUCED
+{
+  "ANGLE": 0.3627245233399082,
+  "REVERSE": [
+    1,
+    0,
+    3,
+    2,
+    5,
+    4
+  ],
+  "all_defining_rows_reproduced": true,
+  "identity_LinkState_validity": [
+    {
+      "constructor_enforcement": "U320.LinkState is a dataclass with no __post_init__; validity is therefore reproduced with U320.state_norm plus literal 6 and 6x6x6 domain shapes",
+      "domain_shapes_valid": true,
+      "excited_shapes": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6
+          ]
+        ]
+      ],
+      "finite_complex_amplitudes": true,
+      "is_U320_LinkState": true,
+      "normalized": true,
+      "pair_shapes": [],
+      "state_norm": 1.0
+    },
+    {
+      "constructor_enforcement": "U320.LinkState is a dataclass with no __post_init__; validity is therefore reproduced with U320.state_norm plus literal 6 and 6x6x6 domain shapes",
+      "domain_shapes_valid": true,
+      "excited_shapes": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6
+          ]
+        ]
+      ],
+      "finite_complex_amplitudes": true,
+      "is_U320_LinkState": true,
+      "normalized": true,
+      "pair_shapes": [],
+      "state_norm": 1.0
+    },
+    {
+      "constructor_enforcement": "U320.LinkState is a dataclass with no __post_init__; validity is therefore reproduced with U320.state_norm plus literal 6 and 6x6x6 domain shapes",
+      "domain_shapes_valid": true,
+      "excited_shapes": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6
+          ]
+        ]
+      ],
+      "finite_complex_amplitudes": true,
+      "is_U320_LinkState": true,
+      "normalized": true,
+      "pair_shapes": [],
+      "state_norm": 1.0
+    },
+    {
+      "constructor_enforcement": "U320.LinkState is a dataclass with no __post_init__; validity is therefore reproduced with U320.state_norm plus literal 6 and 6x6x6 domain shapes",
+      "domain_shapes_valid": true,
+      "excited_shapes": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6
+          ]
+        ]
+      ],
+      "finite_complex_amplitudes": true,
+      "is_U320_LinkState": true,
+      "normalized": true,
+      "pair_shapes": [],
+      "state_norm": 1.0
+    },
+    {
+      "constructor_enforcement": "U320.LinkState is a dataclass with no __post_init__; validity is therefore reproduced with U320.state_norm plus literal 6 and 6x6x6 domain shapes",
+      "domain_shapes_valid": true,
+      "excited_shapes": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6
+          ]
+        ]
+      ],
+      "finite_complex_amplitudes": true,
+      "is_U320_LinkState": true,
+      "normalized": true,
+      "pair_shapes": [],
+      "state_norm": 1.0
+    },
+    {
+      "constructor_enforcement": "U320.LinkState is a dataclass with no __post_init__; validity is therefore reproduced with U320.state_norm plus literal 6 and 6x6x6 domain shapes",
+      "domain_shapes_valid": true,
+      "excited_shapes": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6
+          ]
+        ]
+      ],
+      "finite_complex_amplitudes": true,
+      "is_U320_LinkState": true,
+      "normalized": true,
+      "pair_shapes": [],
+      "state_norm": 1.0
+    }
+  ],
+  "identity_column_response_rows": [
+    {
+      "additive_kernel_formula": {
+        "auxiliary_flux": "sin(ANGLE)^2*DIRECTIONS[d]",
+        "matter_recoil": "-2*sin(ANGLE)^2*DIRECTIONS[d]",
+        "mediator_flux": "sin(ANGLE)^2*DIRECTIONS[d]"
+      },
+      "auxiliary_flux": [
+        0.12589921612871374,
+        0.0,
+        0.0
+      ],
+      "balance_residual": 0.0,
+      "direction": 0,
+      "input_identity_column": 0,
+      "matter_recoil": [
+        -0.2517984322574276,
+        0.0,
+        0.0
+      ],
+      "mediator_flux": [
+        0.12589921612871374,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "additive_kernel_formula": {
+        "auxiliary_flux": "sin(ANGLE)^2*DIRECTIONS[d]",
+        "matter_recoil": "-2*sin(ANGLE)^2*DIRECTIONS[d]",
+        "mediator_flux": "sin(ANGLE)^2*DIRECTIONS[d]"
+      },
+      "auxiliary_flux": [
+        -0.12589921612871374,
+        0.0,
+        0.0
+      ],
+      "balance_residual": 0.0,
+      "direction": 1,
+      "input_identity_column": 1,
+      "matter_recoil": [
+        0.2517984322574276,
+        0.0,
+        0.0
+      ],
+      "mediator_flux": [
+        -0.12589921612871374,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "additive_kernel_formula": {
+        "auxiliary_flux": "sin(ANGLE)^2*DIRECTIONS[d]",
+        "matter_recoil": "-2*sin(ANGLE)^2*DIRECTIONS[d]",
+        "mediator_flux": "sin(ANGLE)^2*DIRECTIONS[d]"
+      },
+      "auxiliary_flux": [
+        0.0,
+        0.12589921612871374,
+        0.0
+      ],
+      "balance_residual": 0.0,
+      "direction": 2,
+      "input_identity_column": 2,
+      "matter_recoil": [
+        0.0,
+        -0.2517984322574276,
+        0.0
+      ],
+      "mediator_flux": [
+        0.0,
+        0.12589921612871374,
+        0.0
+      ]
+    },
+    {
+      "additive_kernel_formula": {
+        "auxiliary_flux": "sin(ANGLE)^2*DIRECTIONS[d]",
+        "matter_recoil": "-2*sin(ANGLE)^2*DIRECTIONS[d]",
+        "mediator_flux": "sin(ANGLE)^2*DIRECTIONS[d]"
+      },
+      "auxiliary_flux": [
+        0.0,
+        -0.12589921612871374,
+        0.0
+      ],
+      "balance_residual": 0.0,
+      "direction": 3,
+      "input_identity_column": 3,
+      "matter_recoil": [
+        0.0,
+        0.2517984322574276,
+        0.0
+      ],
+      "mediator_flux": [
+        0.0,
+        -0.12589921612871374,
+        0.0
+      ]
+    },
+    {
+      "additive_kernel_formula": {
+        "auxiliary_flux": "sin(ANGLE)^2*DIRECTIONS[d]",
+        "matter_recoil": "-2*sin(ANGLE)^2*DIRECTIONS[d]",
+        "mediator_flux": "sin(ANGLE)^2*DIRECTIONS[d]"
+      },
+      "auxiliary_flux": [
+        0.0,
+        0.0,
+        0.12589921612871374
+      ],
+      "balance_residual": 0.0,
+      "direction": 4,
+      "input_identity_column": 4,
+      "matter_recoil": [
+        0.0,
+        0.0,
+        -0.2517984322574276
+      ],
+      "mediator_flux": [
+        0.0,
+        0.0,
+        0.12589921612871374
+      ]
+    },
+    {
+      "additive_kernel_formula": {
+        "auxiliary_flux": "sin(ANGLE)^2*DIRECTIONS[d]",
+        "matter_recoil": "-2*sin(ANGLE)^2*DIRECTIONS[d]",
+        "mediator_flux": "sin(ANGLE)^2*DIRECTIONS[d]"
+      },
+      "auxiliary_flux": [
+        0.0,
+        0.0,
+        -0.12589921612871374
+      ],
+      "balance_residual": 0.0,
+      "direction": 5,
+      "input_identity_column": 5,
+      "matter_recoil": [
+        0.0,
+        0.0,
+        0.2517984322574276
+      ],
+      "mediator_flux": [
+        0.0,
+        0.0,
+        -0.12589921612871374
+      ]
+    }
+  ],
+  "local_active_dimension": 222,
+  "maximum_balance_residual": 0.0,
+  "maximum_vertex_column_residual": 0.0,
+  "source_rows": [
+    {
+      "column_residual": 0.0,
+      "direction": 0,
+      "direction_vector": [
+        1,
+        0,
+        0
+      ],
+      "exchange_law": "E_0 <-> G_1,F_0,A_0",
+      "expected_exchange_nonzero_rows": [
+        42
+      ],
+      "literal_exchange_nonzero_rows": [
+        42
+      ],
+      "pair_tensor_coordinate": [
+        1,
+        0,
+        0
+      ],
+      "vertex_column_formula": "cos(ANGLE) E_0 + i sin(ANGLE) P_(1, 0, 0)",
+      "vertex_flat_row": 42
+    },
+    {
+      "column_residual": 0.0,
+      "direction": 1,
+      "direction_vector": [
+        -1,
+        0,
+        0
+      ],
+      "exchange_law": "E_1 <-> G_0,F_1,A_1",
+      "expected_exchange_nonzero_rows": [
+        13
+      ],
+      "literal_exchange_nonzero_rows": [
+        13
+      ],
+      "pair_tensor_coordinate": [
+        0,
+        1,
+        1
+      ],
+      "vertex_column_formula": "cos(ANGLE) E_1 + i sin(ANGLE) P_(0, 1, 1)",
+      "vertex_flat_row": 13
+    },
+    {
+      "column_residual": 0.0,
+      "direction": 2,
+      "direction_vector": [
+        0,
+        1,
+        0
+      ],
+      "exchange_law": "E_2 <-> G_3,F_2,A_2",
+      "expected_exchange_nonzero_rows": [
+        128
+      ],
+      "literal_exchange_nonzero_rows": [
+        128
+      ],
+      "pair_tensor_coordinate": [
+        3,
+        2,
+        2
+      ],
+      "vertex_column_formula": "cos(ANGLE) E_2 + i sin(ANGLE) P_(3, 2, 2)",
+      "vertex_flat_row": 128
+    },
+    {
+      "column_residual": 0.0,
+      "direction": 3,
+      "direction_vector": [
+        0,
+        -1,
+        0
+      ],
+      "exchange_law": "E_3 <-> G_2,F_3,A_3",
+      "expected_exchange_nonzero_rows": [
+        99
+      ],
+      "literal_exchange_nonzero_rows": [
+        99
+      ],
+      "pair_tensor_coordinate": [
+        2,
+        3,
+        3
+      ],
+      "vertex_column_formula": "cos(ANGLE) E_3 + i sin(ANGLE) P_(2, 3, 3)",
+      "vertex_flat_row": 99
+    },
+    {
+      "column_residual": 0.0,
+      "direction": 4,
+      "direction_vector": [
+        0,
+        0,
+        1
+      ],
+      "exchange_law": "E_4 <-> G_5,F_4,A_4",
+      "expected_exchange_nonzero_rows": [
+        214
+      ],
+      "literal_exchange_nonzero_rows": [
+        214
+      ],
+      "pair_tensor_coordinate": [
+        5,
+        4,
+        4
+      ],
+      "vertex_column_formula": "cos(ANGLE) E_4 + i sin(ANGLE) P_(5, 4, 4)",
+      "vertex_flat_row": 214
+    },
+    {
+      "column_residual": 0.0,
+      "direction": 5,
+      "direction_vector": [
+        0,
+        0,
+        -1
+      ],
+      "exchange_law": "E_5 <-> G_4,F_5,A_5",
+      "expected_exchange_nonzero_rows": [
+        185
+      ],
+      "literal_exchange_nonzero_rows": [
+        185
+      ],
+      "pair_tensor_coordinate": [
+        4,
+        5,
+        5
+      ],
+      "vertex_column_formula": "cos(ANGLE) E_5 + i sin(ANGLE) P_(4, 5, 5)",
+      "vertex_flat_row": 185
+    }
+  ]
+}
+
+OUTCOME ARGUMENT
+The geometry is identified exactly, but geometry labels do not supply amplitudes.  On one cell the landed 11-row tableau has Q=15 and exact rank 11, hence rho_J has rank 16 and purity 1/16. Fixing parity adds one row but leaves rank 8 because the companion gauge is mixed.  The live-input sibling makes the missing datum explicit: a separate fixed-sector live ket is Bell-coupled to the resource.  Since the same resource accepts e_0 and e_1 and those required U320 outputs have exact squared distance 2, no function of the prepared Choi/tableau alone can satisfy the calibration. Supplying that ket would choose the answer, not decode it.
+
+PASS CERTIFICATE E: controls; deterministic=True; runtime_seconds=0.042988; runtime_limit_seconds=1500; stdout_bytes=36924; stdout_limit_bytes=153600
+RESULT OBSTRUCTED_DEEPER
+EXACT_SEMANTIC_GAP: no landed tableau datum contains the normalized six-component live-input amplitude ray [c_0:...:c_5] or its LinkState branch/position image
+RUNTIME_SECONDS 0.042988
+
+----- stderr -----
+

@@ -1,0 +1,2276 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle803_decoder_independent_check_2026_07_28.py
+runner_sha256: 33c3c26c4781efe7ab77eef83ed61a6e25cc72bfde271f52b534342f4d0ff5e8
+input_fingerprint_sha256: a71c4616222f3592a30304831f56822bd69eefc496f037def8a398bc5b4a3aa3
+timeout_sec: 1500
+exit_code: 0
+elapsed_sec: 111.01
+status: ok
+----- stdout -----
+CYCLE 803 INDEPENDENT ADVERSARIAL CHECKER
+AUDIT_INPUT_PATHS = ('scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py', 'scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py', 'scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py', 'scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py', 'scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py', 'scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py', 'scripts/frontier_cycle803_decoder_derivation_2026_07_28.py')
+
+PASS CERTIFICATE 1 — RANK: exact rank 11/15; induced Choi/link-sector density rank 16 and purity 1/16, hence mixed
+PASS CERTIFICATE 2 — WITNESS: the unchanged odd resource would need D(T_odd)=e0 and D(T_odd)=e1; exact squared distance 2; Cycle720/U320/S322 indices and reverse maps agree
+PASS CERTIFICATE 3 — PURIFIABLE SUBFAMILY HUNT: pure 0/3744; decoder/calibration/composite cross-term NOT RUN because no pure induced member exists
+PURE SUBFAMILY: NONE — 0/3744 parameter points have full stabilizer rank on the induced Choi/link sector
+PASS CERTIFICATE 4 — CONTROLS: SHA anchors; primary BLOCKLIST text/AST-only; deterministic=True; runtime_seconds=110.857238/1500; stdout_bytes=45913/153600
+
+RANK CENSUS
+[
+  {
+    "density_rank": 8,
+    "family": "fixed_sector",
+    "parameter_points": 96,
+    "pure": false,
+    "rank": "12/15",
+    "shape": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "density_rank": 524288,
+    "family": "fixed_sector",
+    "parameter_points": 96,
+    "pure": false,
+    "rank": "101/120",
+    "shape": [
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "density_rank": 134217728,
+    "family": "fixed_sector",
+    "parameter_points": 96,
+    "pure": false,
+    "rank": "153/180",
+    "shape": [
+      3,
+      2,
+      2
+    ]
+  },
+  {
+    "density_rank": 34359738368,
+    "family": "fixed_sector",
+    "parameter_points": 96,
+    "pure": false,
+    "rank": "205/240",
+    "shape": [
+      4,
+      2,
+      2
+    ]
+  },
+  {
+    "density_rank": 8796093022208,
+    "family": "fixed_sector",
+    "parameter_points": 96,
+    "pure": false,
+    "rank": "257/300",
+    "shape": [
+      5,
+      2,
+      2
+    ]
+  },
+  {
+    "density_rank": 1152921504606846976,
+    "family": "fixed_sector",
+    "parameter_points": 96,
+    "pure": false,
+    "rank": "390/450",
+    "shape": [
+      5,
+      3,
+      2
+    ]
+  },
+  {
+    "density_rank": 16,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "11/15",
+    "shape": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "density_rank": 128,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "23/30",
+    "shape": [
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "density_rank": 1024,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "35/45",
+    "shape": [
+      1,
+      1,
+      3
+    ]
+  },
+  {
+    "density_rank": 8192,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "47/60",
+    "shape": [
+      1,
+      1,
+      4
+    ]
+  },
+  {
+    "density_rank": 128,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "23/30",
+    "shape": [
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "density_rank": 4096,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "48/60",
+    "shape": [
+      1,
+      2,
+      2
+    ]
+  },
+  {
+    "density_rank": 131072,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "73/90",
+    "shape": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "density_rank": 4194304,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "98/120",
+    "shape": [
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "density_rank": 1024,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "35/45",
+    "shape": [
+      1,
+      3,
+      1
+    ]
+  },
+  {
+    "density_rank": 131072,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "73/90",
+    "shape": [
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "density_rank": 16777216,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "111/135",
+    "shape": [
+      1,
+      3,
+      3
+    ]
+  },
+  {
+    "density_rank": 2147483648,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "149/180",
+    "shape": [
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "density_rank": 8192,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "47/60",
+    "shape": [
+      1,
+      4,
+      1
+    ]
+  },
+  {
+    "density_rank": 4194304,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "98/120",
+    "shape": [
+      1,
+      4,
+      2
+    ]
+  },
+  {
+    "density_rank": 2147483648,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "149/180",
+    "shape": [
+      1,
+      4,
+      3
+    ]
+  },
+  {
+    "density_rank": 1099511627776,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "200/240",
+    "shape": [
+      1,
+      4,
+      4
+    ]
+  },
+  {
+    "density_rank": 128,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "23/30",
+    "shape": [
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "density_rank": 4096,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "48/60",
+    "shape": [
+      2,
+      1,
+      2
+    ]
+  },
+  {
+    "density_rank": 131072,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "73/90",
+    "shape": [
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "density_rank": 4194304,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "98/120",
+    "shape": [
+      2,
+      1,
+      4
+    ]
+  },
+  {
+    "density_rank": 4096,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "48/60",
+    "shape": [
+      2,
+      2,
+      1
+    ]
+  },
+  {
+    "density_rank": 1048576,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "100/120",
+    "shape": [
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "density_rank": 268435456,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "152/180",
+    "shape": [
+      2,
+      2,
+      3
+    ]
+  },
+  {
+    "density_rank": 68719476736,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "204/240",
+    "shape": [
+      2,
+      2,
+      4
+    ]
+  },
+  {
+    "density_rank": 131072,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "73/90",
+    "shape": [
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "density_rank": 268435456,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "152/180",
+    "shape": [
+      2,
+      3,
+      2
+    ]
+  },
+  {
+    "density_rank": 549755813888,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "231/270",
+    "shape": [
+      2,
+      3,
+      3
+    ]
+  },
+  {
+    "density_rank": 1125899906842624,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "310/360",
+    "shape": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "density_rank": 4194304,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "98/120",
+    "shape": [
+      2,
+      4,
+      1
+    ]
+  },
+  {
+    "density_rank": 68719476736,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "204/240",
+    "shape": [
+      2,
+      4,
+      2
+    ]
+  },
+  {
+    "density_rank": 1125899906842624,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "310/360",
+    "shape": [
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "density_rank": 18446744073709551616,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "416/480",
+    "shape": [
+      2,
+      4,
+      4
+    ]
+  },
+  {
+    "density_rank": 1024,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "35/45",
+    "shape": [
+      3,
+      1,
+      1
+    ]
+  },
+  {
+    "density_rank": 131072,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "73/90",
+    "shape": [
+      3,
+      1,
+      2
+    ]
+  },
+  {
+    "density_rank": 16777216,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "111/135",
+    "shape": [
+      3,
+      1,
+      3
+    ]
+  },
+  {
+    "density_rank": 2147483648,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "149/180",
+    "shape": [
+      3,
+      1,
+      4
+    ]
+  },
+  {
+    "density_rank": 131072,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "73/90",
+    "shape": [
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "density_rank": 268435456,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "152/180",
+    "shape": [
+      3,
+      2,
+      2
+    ]
+  },
+  {
+    "density_rank": 549755813888,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "231/270",
+    "shape": [
+      3,
+      2,
+      3
+    ]
+  },
+  {
+    "density_rank": 1125899906842624,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "310/360",
+    "shape": [
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "density_rank": 16777216,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "111/135",
+    "shape": [
+      3,
+      3,
+      1
+    ]
+  },
+  {
+    "density_rank": 549755813888,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "231/270",
+    "shape": [
+      3,
+      3,
+      2
+    ]
+  },
+  {
+    "density_rank": 18014398509481984,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "351/405",
+    "shape": [
+      3,
+      3,
+      3
+    ]
+  },
+  {
+    "density_rank": 590295810358705651712,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "471/540",
+    "shape": [
+      3,
+      3,
+      4
+    ]
+  },
+  {
+    "density_rank": 2147483648,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "149/180",
+    "shape": [
+      3,
+      4,
+      1
+    ]
+  },
+  {
+    "density_rank": 1125899906842624,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "310/360",
+    "shape": [
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "density_rank": 590295810358705651712,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "471/540",
+    "shape": [
+      3,
+      4,
+      3
+    ]
+  },
+  {
+    "density_rank": 309485009821345068724781056,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "632/720",
+    "shape": [
+      3,
+      4,
+      4
+    ]
+  },
+  {
+    "density_rank": 8192,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "47/60",
+    "shape": [
+      4,
+      1,
+      1
+    ]
+  },
+  {
+    "density_rank": 4194304,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "98/120",
+    "shape": [
+      4,
+      1,
+      2
+    ]
+  },
+  {
+    "density_rank": 2147483648,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "149/180",
+    "shape": [
+      4,
+      1,
+      3
+    ]
+  },
+  {
+    "density_rank": 1099511627776,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "200/240",
+    "shape": [
+      4,
+      1,
+      4
+    ]
+  },
+  {
+    "density_rank": 4194304,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "98/120",
+    "shape": [
+      4,
+      2,
+      1
+    ]
+  },
+  {
+    "density_rank": 68719476736,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "204/240",
+    "shape": [
+      4,
+      2,
+      2
+    ]
+  },
+  {
+    "density_rank": 1125899906842624,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "310/360",
+    "shape": [
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "density_rank": 18446744073709551616,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "416/480",
+    "shape": [
+      4,
+      2,
+      4
+    ]
+  },
+  {
+    "density_rank": 2147483648,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "149/180",
+    "shape": [
+      4,
+      3,
+      1
+    ]
+  },
+  {
+    "density_rank": 1125899906842624,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "310/360",
+    "shape": [
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "density_rank": 590295810358705651712,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "471/540",
+    "shape": [
+      4,
+      3,
+      3
+    ]
+  },
+  {
+    "density_rank": 309485009821345068724781056,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "632/720",
+    "shape": [
+      4,
+      3,
+      4
+    ]
+  },
+  {
+    "density_rank": 1099511627776,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "200/240",
+    "shape": [
+      4,
+      4,
+      1
+    ]
+  },
+  {
+    "density_rank": 18446744073709551616,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "416/480",
+    "shape": [
+      4,
+      4,
+      2
+    ]
+  },
+  {
+    "density_rank": 309485009821345068724781056,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "632/720",
+    "shape": [
+      4,
+      4,
+      3
+    ]
+  },
+  {
+    "density_rank": 5192296858534827628530496329220096,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "848/960",
+    "shape": [
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "density_rank": 17592186044416,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "256/300",
+    "shape": [
+      5,
+      2,
+      2
+    ]
+  },
+  {
+    "density_rank": 2305843009213693952,
+    "family": "unconditioned",
+    "parameter_points": 48,
+    "pure": false,
+    "rank": "389/450",
+    "shape": [
+      5,
+      3,
+      2
+    ]
+  }
+]
+
+REPORT_JSON
+{
+  "controls": {
+    "AUDIT_INPUT_PATHS_all_exist": true,
+    "AUDIT_INPUT_PATHS_literal_tuple": true,
+    "all_sha_anchors_match": true,
+    "anchors": [
+      {
+        "actual_sha256": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
+        "expected_sha256": "71fb02658569174b7f6f989efe311951713026ead36ece8866dca1e96878d706",
+        "match": true,
+        "path": "scripts/unit_weight_carried_link_recoil_cycle320_2026_07_18.py"
+      },
+      {
+        "actual_sha256": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+        "expected_sha256": "4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75",
+        "match": true,
+        "path": "scripts/two_cell_two_source_recoil_reciprocity_cycle322_2026_07_18.py"
+      },
+      {
+        "actual_sha256": "108568254546e1f64e4454b455f4aa866fe9abfbd4a6ca3a82f65b6a29e28974",
+        "expected_sha256": "108568254546e1f64e4454b455f4aa866fe9abfbd4a6ca3a82f65b6a29e28974",
+        "match": true,
+        "path": "scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py"
+      },
+      {
+        "actual_sha256": "f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982",
+        "expected_sha256": "f2fc664a1d14a2d62562ff58395840a0174d4cc75239ef2c1589c6e0f65ed982",
+        "match": true,
+        "path": "scripts/frontier_cycle720_cell_majorana_companion_geometry_2026_07_27.py"
+      },
+      {
+        "actual_sha256": "ee7d6c6d442bac4fe646535ed46369a649fc8b80eb661044242392058c139628",
+        "expected_sha256": "ee7d6c6d442bac4fe646535ed46369a649fc8b80eb661044242392058c139628",
+        "match": true,
+        "path": "scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py"
+      },
+      {
+        "actual_sha256": "6877d532aaa1c9a97358ce2dfa2e26b1264c1f5a8ef477c217e9cc5a16c8d205",
+        "expected_sha256": "6877d532aaa1c9a97358ce2dfa2e26b1264c1f5a8ef477c217e9cc5a16c8d205",
+        "match": true,
+        "path": "scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py"
+      },
+      {
+        "actual_sha256": "df3287bd2aa0fdfc3361551894760f04d3ebb60ba6214fe83f005056e8aec0ab",
+        "expected_sha256": "df3287bd2aa0fdfc3361551894760f04d3ebb60ba6214fe83f005056e8aec0ab",
+        "match": true,
+        "path": "scripts/frontier_cycle803_decoder_derivation_2026_07_28.py"
+      }
+    ],
+    "checker_source_sha256": "33c3c26c4781efe7ab77eef83ed61a6e25cc72bfde271f52b534342f4d0ff5e8",
+    "cycle720_candidate_count": 1,
+    "cycle720_sibling_count": 3,
+    "cycle720_sibling_limit_respected": true,
+    "pass_without_runtime": true,
+    "primary_access_mode": "Path.read_text + ast.parse + SHA256; never import/exec",
+    "primary_ast_contract_found": true,
+    "primary_ast_parse_ok": true,
+    "primary_forbidden_static_imports": [],
+    "primary_not_loaded": true
+  },
+  "rank": {
+    "candidate_rows_rank_under_checker_elimination": 11,
+    "commutator_failures": 0,
+    "density_operator_rank": 16,
+    "derivation": "six independent Z correlations plus the rank-five path-incidence XX family give r=11; an independent commuting r-row stabilizer projector on Q qubits has support dimension 2^(Q-r)=16",
+    "exact_rank_high_pivot_elimination": 11,
+    "exact_rank_set_symmetric_difference_elimination": 11,
+    "finding": "PASS CERTIFICATE 1 \u2014 RANK: exact rank 11/15; induced Choi/link-sector density rank 16 and purity 1/16, hence mixed",
+    "fixture": {
+      "Choi_input_matter_qubits": 6,
+      "output_companion_qubits": 3,
+      "output_matter_qubits": 6,
+      "total_Q": 15
+    },
+    "manual_row_families": {
+      "XX_output_d_dplus1_XX_input_d_dplus1": 5,
+      "Z_output_d_Z_input_d": 6
+    },
+    "manual_vectors_equal_candidate_vectors": true,
+    "mixed": true,
+    "nonempty_subsets_replaying_identity": 0,
+    "nonzero_eigenvalue": "1/16",
+    "pass": true,
+    "purity": "1/16"
+  },
+  "scientific_outcome": "CONFIRMED_OBSTRUCTION_ON_BOUNDED_ENUMERATED_720_FAMILY",
+  "scope_boundary": "The census rules out a pure induced member throughout the exact bounded parameter family exposed by the permitted Cycle-720 packet; it does not assert an impossibility for future modules or for a supplied external purification retained outside the shared link sector.",
+  "subfamily_hunt": {
+    "bounded_parameter_space": {
+      "atlas_shapes_1_through_4_each_axis": 64,
+      "axis_orders_per_corner": 6,
+      "candidate_held_shapes": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          2
+        ],
+        [
+          5,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          3
+        ]
+      ],
+      "corner_parameter_points_per_shape": 8,
+      "fixed_sector_declared_shapes": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          2,
+          2
+        ],
+        [
+          4,
+          2,
+          2
+        ],
+        [
+          5,
+          2,
+          2
+        ],
+        [
+          5,
+          3,
+          2
+        ]
+      ],
+      "fixed_sector_parameter_points": 576,
+      "live_input_amplitudes": "not a resource parameter: the separately supplied live ket does not change the prepared resource rank",
+      "note_on_length_one_sides": "duplicate corner tuples are retained as distinct declared cartesian-product parameter points, exactly matching the module",
+      "parity_signs_for_fixed_sector": 2,
+      "total_parameter_points": 3744,
+      "unconditioned_parameter_points": 3168,
+      "union_base_shapes": 66
+    },
+    "census_sha256": "218bebee83b1bbbc824cb72c4ec47fad6a187f1defc2f7461c76ff787f1d5a95",
+    "constructive_remainder": {
+      "calibration_outcome": "NOT_RUN_NO_PURE_MEMBER",
+      "composite_cross_term_outcome": "NOT_RUN_NO_PURE_MEMBER",
+      "decoder_outcome": "NOT_RUN_NO_PURE_MEMBER",
+      "partial_refutation": false,
+      "pure_subfamily": "NONE"
+    },
+    "exact_checks": {
+      "base_rank_formula": "r=11*N+E",
+      "direct_stabilizer_commutator_failures": 0,
+      "fixed_parity_commutator_failures": 0,
+      "fixed_sector_deficiency_formula": "15N-(11N+E+1)=N+ab+ac+bc-1 > 0",
+      "fixed_sector_rank_formula": "r=11*N+E+1",
+      "open_box_edge_formula": "E=(a-1)bc+a(b-1)c+ab(c-1)",
+      "parameter_AST_contract": true,
+      "rank_formula_failures": 0,
+      "tree_plaquette_schedule_failures": 0,
+      "two_eliminator_rank_disagreements": 0,
+      "unconditioned_deficiency_formula": "15N-(11N+E)=N+ab+ac+bc > 0"
+    },
+    "finding": "PASS CERTIFICATE 3 \u2014 PURIFIABLE SUBFAMILY HUNT: pure 0/3744; decoder/calibration/composite cross-term NOT RUN because no pure induced member exists",
+    "loud_result": "PURE SUBFAMILY: NONE \u2014 0/3744 parameter points have full stabilizer rank on the induced Choi/link sector",
+    "pass": true,
+    "pure_count": 0,
+    "rank_census": [
+      {
+        "density_rank": 8,
+        "family": "fixed_sector",
+        "parameter_points": 96,
+        "pure": false,
+        "rank": "12/15",
+        "shape": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "density_rank": 524288,
+        "family": "fixed_sector",
+        "parameter_points": 96,
+        "pure": false,
+        "rank": "101/120",
+        "shape": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "density_rank": 134217728,
+        "family": "fixed_sector",
+        "parameter_points": 96,
+        "pure": false,
+        "rank": "153/180",
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "density_rank": 34359738368,
+        "family": "fixed_sector",
+        "parameter_points": 96,
+        "pure": false,
+        "rank": "205/240",
+        "shape": [
+          4,
+          2,
+          2
+        ]
+      },
+      {
+        "density_rank": 8796093022208,
+        "family": "fixed_sector",
+        "parameter_points": 96,
+        "pure": false,
+        "rank": "257/300",
+        "shape": [
+          5,
+          2,
+          2
+        ]
+      },
+      {
+        "density_rank": 1152921504606846976,
+        "family": "fixed_sector",
+        "parameter_points": 96,
+        "pure": false,
+        "rank": "390/450",
+        "shape": [
+          5,
+          3,
+          2
+        ]
+      },
+      {
+        "density_rank": 16,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "11/15",
+        "shape": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "density_rank": 128,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "23/30",
+        "shape": [
+          1,
+          1,
+          2
+        ]
+      },
+      {
+        "density_rank": 1024,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "35/45",
+        "shape": [
+          1,
+          1,
+          3
+        ]
+      },
+      {
+        "density_rank": 8192,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "47/60",
+        "shape": [
+          1,
+          1,
+          4
+        ]
+      },
+      {
+        "density_rank": 128,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "23/30",
+        "shape": [
+          1,
+          2,
+          1
+        ]
+      },
+      {
+        "density_rank": 4096,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "48/60",
+        "shape": [
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "density_rank": 131072,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "73/90",
+        "shape": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "density_rank": 4194304,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "98/120",
+        "shape": [
+          1,
+          2,
+          4
+        ]
+      },
+      {
+        "density_rank": 1024,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "35/45",
+        "shape": [
+          1,
+          3,
+          1
+        ]
+      },
+      {
+        "density_rank": 131072,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "73/90",
+        "shape": [
+          1,
+          3,
+          2
+        ]
+      },
+      {
+        "density_rank": 16777216,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "111/135",
+        "shape": [
+          1,
+          3,
+          3
+        ]
+      },
+      {
+        "density_rank": 2147483648,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "149/180",
+        "shape": [
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "density_rank": 8192,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "47/60",
+        "shape": [
+          1,
+          4,
+          1
+        ]
+      },
+      {
+        "density_rank": 4194304,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "98/120",
+        "shape": [
+          1,
+          4,
+          2
+        ]
+      },
+      {
+        "density_rank": 2147483648,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "149/180",
+        "shape": [
+          1,
+          4,
+          3
+        ]
+      },
+      {
+        "density_rank": 1099511627776,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "200/240",
+        "shape": [
+          1,
+          4,
+          4
+        ]
+      },
+      {
+        "density_rank": 128,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "23/30",
+        "shape": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "density_rank": 4096,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "48/60",
+        "shape": [
+          2,
+          1,
+          2
+        ]
+      },
+      {
+        "density_rank": 131072,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "73/90",
+        "shape": [
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "density_rank": 4194304,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "98/120",
+        "shape": [
+          2,
+          1,
+          4
+        ]
+      },
+      {
+        "density_rank": 4096,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "48/60",
+        "shape": [
+          2,
+          2,
+          1
+        ]
+      },
+      {
+        "density_rank": 1048576,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "100/120",
+        "shape": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "density_rank": 268435456,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "152/180",
+        "shape": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "density_rank": 68719476736,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "204/240",
+        "shape": [
+          2,
+          2,
+          4
+        ]
+      },
+      {
+        "density_rank": 131072,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "73/90",
+        "shape": [
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "density_rank": 268435456,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "152/180",
+        "shape": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "density_rank": 549755813888,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "231/270",
+        "shape": [
+          2,
+          3,
+          3
+        ]
+      },
+      {
+        "density_rank": 1125899906842624,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "310/360",
+        "shape": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "density_rank": 4194304,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "98/120",
+        "shape": [
+          2,
+          4,
+          1
+        ]
+      },
+      {
+        "density_rank": 68719476736,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "204/240",
+        "shape": [
+          2,
+          4,
+          2
+        ]
+      },
+      {
+        "density_rank": 1125899906842624,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "310/360",
+        "shape": [
+          2,
+          4,
+          3
+        ]
+      },
+      {
+        "density_rank": 18446744073709551616,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "416/480",
+        "shape": [
+          2,
+          4,
+          4
+        ]
+      },
+      {
+        "density_rank": 1024,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "35/45",
+        "shape": [
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "density_rank": 131072,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "73/90",
+        "shape": [
+          3,
+          1,
+          2
+        ]
+      },
+      {
+        "density_rank": 16777216,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "111/135",
+        "shape": [
+          3,
+          1,
+          3
+        ]
+      },
+      {
+        "density_rank": 2147483648,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "149/180",
+        "shape": [
+          3,
+          1,
+          4
+        ]
+      },
+      {
+        "density_rank": 131072,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "73/90",
+        "shape": [
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "density_rank": 268435456,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "152/180",
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "density_rank": 549755813888,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "231/270",
+        "shape": [
+          3,
+          2,
+          3
+        ]
+      },
+      {
+        "density_rank": 1125899906842624,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "310/360",
+        "shape": [
+          3,
+          2,
+          4
+        ]
+      },
+      {
+        "density_rank": 16777216,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "111/135",
+        "shape": [
+          3,
+          3,
+          1
+        ]
+      },
+      {
+        "density_rank": 549755813888,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "231/270",
+        "shape": [
+          3,
+          3,
+          2
+        ]
+      },
+      {
+        "density_rank": 18014398509481984,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "351/405",
+        "shape": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "density_rank": 590295810358705651712,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "471/540",
+        "shape": [
+          3,
+          3,
+          4
+        ]
+      },
+      {
+        "density_rank": 2147483648,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "149/180",
+        "shape": [
+          3,
+          4,
+          1
+        ]
+      },
+      {
+        "density_rank": 1125899906842624,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "310/360",
+        "shape": [
+          3,
+          4,
+          2
+        ]
+      },
+      {
+        "density_rank": 590295810358705651712,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "471/540",
+        "shape": [
+          3,
+          4,
+          3
+        ]
+      },
+      {
+        "density_rank": 309485009821345068724781056,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "632/720",
+        "shape": [
+          3,
+          4,
+          4
+        ]
+      },
+      {
+        "density_rank": 8192,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "47/60",
+        "shape": [
+          4,
+          1,
+          1
+        ]
+      },
+      {
+        "density_rank": 4194304,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "98/120",
+        "shape": [
+          4,
+          1,
+          2
+        ]
+      },
+      {
+        "density_rank": 2147483648,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "149/180",
+        "shape": [
+          4,
+          1,
+          3
+        ]
+      },
+      {
+        "density_rank": 1099511627776,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "200/240",
+        "shape": [
+          4,
+          1,
+          4
+        ]
+      },
+      {
+        "density_rank": 4194304,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "98/120",
+        "shape": [
+          4,
+          2,
+          1
+        ]
+      },
+      {
+        "density_rank": 68719476736,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "204/240",
+        "shape": [
+          4,
+          2,
+          2
+        ]
+      },
+      {
+        "density_rank": 1125899906842624,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "310/360",
+        "shape": [
+          4,
+          2,
+          3
+        ]
+      },
+      {
+        "density_rank": 18446744073709551616,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "416/480",
+        "shape": [
+          4,
+          2,
+          4
+        ]
+      },
+      {
+        "density_rank": 2147483648,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "149/180",
+        "shape": [
+          4,
+          3,
+          1
+        ]
+      },
+      {
+        "density_rank": 1125899906842624,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "310/360",
+        "shape": [
+          4,
+          3,
+          2
+        ]
+      },
+      {
+        "density_rank": 590295810358705651712,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "471/540",
+        "shape": [
+          4,
+          3,
+          3
+        ]
+      },
+      {
+        "density_rank": 309485009821345068724781056,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "632/720",
+        "shape": [
+          4,
+          3,
+          4
+        ]
+      },
+      {
+        "density_rank": 1099511627776,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "200/240",
+        "shape": [
+          4,
+          4,
+          1
+        ]
+      },
+      {
+        "density_rank": 18446744073709551616,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "416/480",
+        "shape": [
+          4,
+          4,
+          2
+        ]
+      },
+      {
+        "density_rank": 309485009821345068724781056,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "632/720",
+        "shape": [
+          4,
+          4,
+          3
+        ]
+      },
+      {
+        "density_rank": 5192296858534827628530496329220096,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "848/960",
+        "shape": [
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "density_rank": 17592186044416,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "256/300",
+        "shape": [
+          5,
+          2,
+          2
+        ]
+      },
+      {
+        "density_rank": 2305843009213693952,
+        "family": "unconditioned",
+        "parameter_points": 48,
+        "pure": false,
+        "rank": "389/450",
+        "shape": [
+          5,
+          3,
+          2
+        ]
+      }
+    ]
+  },
+  "witness": {
+    "U320_LinkState_AST_fields": [
+      "excited",
+      "pair"
+    ],
+    "U320_S322_source_formula_AST_audit": true,
+    "U320_runtime_squared_distance": 2.0000000000000004,
+    "U320_source_columns": [
+      {
+        "U320_excited_column": 0,
+        "U320_pair_coordinate": [
+          1,
+          0,
+          0
+        ],
+        "U320_pair_flat_row": 42,
+        "direction": 0,
+        "direction_vector": [
+          1,
+          0,
+          0
+        ],
+        "exchange_nonzero_rows": [
+          42
+        ]
+      },
+      {
+        "U320_excited_column": 1,
+        "U320_pair_coordinate": [
+          0,
+          1,
+          1
+        ],
+        "U320_pair_flat_row": 13,
+        "direction": 1,
+        "direction_vector": [
+          -1,
+          0,
+          0
+        ],
+        "exchange_nonzero_rows": [
+          13
+        ]
+      },
+      {
+        "U320_excited_column": 2,
+        "U320_pair_coordinate": [
+          3,
+          2,
+          2
+        ],
+        "U320_pair_flat_row": 128,
+        "direction": 2,
+        "direction_vector": [
+          0,
+          1,
+          0
+        ],
+        "exchange_nonzero_rows": [
+          128
+        ]
+      },
+      {
+        "U320_excited_column": 3,
+        "U320_pair_coordinate": [
+          2,
+          3,
+          3
+        ],
+        "U320_pair_flat_row": 99,
+        "direction": 3,
+        "direction_vector": [
+          0,
+          -1,
+          0
+        ],
+        "exchange_nonzero_rows": [
+          99
+        ]
+      },
+      {
+        "U320_excited_column": 4,
+        "U320_pair_coordinate": [
+          5,
+          4,
+          4
+        ],
+        "U320_pair_flat_row": 214,
+        "direction": 4,
+        "direction_vector": [
+          0,
+          0,
+          1
+        ],
+        "exchange_nonzero_rows": [
+          214
+        ]
+      },
+      {
+        "U320_excited_column": 5,
+        "U320_pair_coordinate": [
+          4,
+          5,
+          5
+        ],
+        "U320_pair_flat_row": 185,
+        "direction": 5,
+        "direction_vector": [
+          0,
+          0,
+          -1
+        ],
+        "exchange_nonzero_rows": [
+          185
+        ]
+      }
+    ],
+    "both_import_same_c210_direction_authority": true,
+    "column_correspondence": [
+      {
+        "Cycle720_Choi_input_matter_column": 9,
+        "Cycle720_output_companion_column": 6,
+        "Cycle720_output_matter_column": 0,
+        "S322_source_direction_index": 0,
+        "U320_LinkState_excited_column": 0,
+        "direction": 0
+      },
+      {
+        "Cycle720_Choi_input_matter_column": 10,
+        "Cycle720_output_companion_column": 6,
+        "Cycle720_output_matter_column": 1,
+        "S322_source_direction_index": 1,
+        "U320_LinkState_excited_column": 1,
+        "direction": 1
+      },
+      {
+        "Cycle720_Choi_input_matter_column": 11,
+        "Cycle720_output_companion_column": 7,
+        "Cycle720_output_matter_column": 2,
+        "S322_source_direction_index": 2,
+        "U320_LinkState_excited_column": 2,
+        "direction": 2
+      },
+      {
+        "Cycle720_Choi_input_matter_column": 12,
+        "Cycle720_output_companion_column": 7,
+        "Cycle720_output_matter_column": 3,
+        "S322_source_direction_index": 3,
+        "U320_LinkState_excited_column": 3,
+        "direction": 3
+      },
+      {
+        "Cycle720_Choi_input_matter_column": 13,
+        "Cycle720_output_companion_column": 8,
+        "Cycle720_output_matter_column": 4,
+        "S322_source_direction_index": 4,
+        "U320_LinkState_excited_column": 4,
+        "direction": 4
+      },
+      {
+        "Cycle720_Choi_input_matter_column": 14,
+        "Cycle720_output_companion_column": 8,
+        "Cycle720_output_matter_column": 5,
+        "S322_source_direction_index": 5,
+        "U320_LinkState_excited_column": 5,
+        "direction": 5
+      }
+    ],
+    "direction_tables": {
+      "Cycle720": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "S322": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "U320": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "all_literal_identity_relabeling": true
+    },
+    "exact_squared_LinkState_distance": 2,
+    "finding": "PASS CERTIFICATE 2 \u2014 WITNESS: the unchanged odd resource would need D(T_odd)=e0 and D(T_odd)=e1; exact squared distance 2; Cycle720/U320/S322 indices and reverse maps agree",
+    "pass": true,
+    "required_outputs": [
+      "e_0",
+      "e_1"
+    ],
+    "resource_only_decoder_equations": [
+      "D(T_odd)=e_0",
+      "D(T_odd)=e_1"
+    ],
+    "reverse_tables": {
+      "S322_AST_literal": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4
+      ],
+      "S322_runtime": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4
+      ],
+      "U320_AST_literal": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4
+      ],
+      "U320_runtime": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4
+      ],
+      "derived_by_direction_negation": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4
+      ]
+    },
+    "same_odd_sector_live_inputs": {
+      "both_odd": true,
+      "e0_input_mask": 1,
+      "e1_input_mask": 2,
+      "odd_resource_digest_for_e0": "c848b80a0aa93b5d1080f52c7832af5b07a12fe2302fd59bf13c963e1e243b1c",
+      "odd_resource_digest_for_e1": "c848b80a0aa93b5d1080f52c7832af5b07a12fe2302fd59bf13c963e1e243b1c",
+      "resource_builder_accepts_live_input_argument": false,
+      "same_resource": true
+    },
+    "strawman_audit": "not a strawman: Cycle720, U320, and S322 use the identical ordered six cubic directions and reverse map; both one-hot live inputs are lawful odd-sector inputs, while the sector resource builder has no live-input parameter"
+  }
+}
+
+RESULT CONFIRMED_OBSTRUCTION_ON_BOUNDED_ENUMERATED_720_FAMILY
+RUNTIME_SECONDS 110.857238
+
+----- stderr -----
+

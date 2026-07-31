@@ -1,0 +1,36 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR17-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle822_basin_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 36
+    },
+    "logs/runner-cache/frontier_cycle822_sstar_basin_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 13
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 822,
+  "files": {
+    "docs/SSTAR_BASIN_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-28.md": "f9df50a82da9d176a5b51025d3760082c69b2e7e7c01af0685bde794f35109a9",
+    "logs/runner-cache/frontier_cycle822_basin_independent_check_2026_07_28.txt": "71aa1a8fee4c29085dd7c990f21e7a7cbbd71e71a42e981e6aaba71e2eda3b17",
+    "logs/runner-cache/frontier_cycle822_sstar_basin_2026_07_28.txt": "5407c59bdb619b4e827fc378ff8fb487e57ed072c18676a152659b41f725d17b",
+    "scripts/frontier_cycle822_basin_independent_check_2026_07_28.py": "c2fd23a7bb47caff70e9561fc9da46feef422c053954fa1af925901a1884ed0b",
+    "scripts/frontier_cycle822_sstar_basin_2026_07_28.py": "269d235c4981eaa4b94cfc200a0d472bf9f1ca8b57c2e14880afe754a9d41c56"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "S* anatomy: weight 44/5,815; occupancy [1,1]/[0,0]; tokens [1,0]/[0,0]; empty link; residual = source pointer + bank-0 direction",
+    "standing falsifiable forecast: NO further S* entrants among the 151 open keys (all fail the predicate)",
+    "load-bearing audit: dropping event/origin/separation admits 27/2/27 false positives"
+  ],
+  "verdicts": [
+    "BASIN_STRUCTURE_FOUND",
+    "EXACT entry predictor: event=0 AND origin absent AND max cyclic separation=5 (9/9 true; 167/167 false; every conjunct load-bearing)",
+    "moment formula: nine mechanisms FAIL (primary 5 + checker 4... total nine across both) \u2014 no noncircular derivation",
+    "checker CONFIRMED (anatomy, predictor both directions, census, formula attack)"
+  ]
+}

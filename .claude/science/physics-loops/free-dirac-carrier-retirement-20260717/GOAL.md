@@ -37,3 +37,19 @@ The supervised campaign budget is **18 hours** across the two cumulative
 nine-hour extensions, with shared target end `2026-07-18T04:47:00Z`, unless documented global value-gate
 exhaustion after the required deep-work pressure or a true tooling/safety stop
 is reached first.
+
+## Cycle 2 — restricted-packet repair (2026-07-29)
+
+The current audit no longer asks for a new carrier theorem. It identifies one
+operational obstruction:
+
+> runner_artifact_issue — regenerate the restricted packet with the cited
+> authority's unclipped Sections 2–5 and repeat the independent formula audit.
+
+The completion witness for this cycle is an exactly scoped audit-transport
+override plus a regression that renders the real target packet, compares the
+authority manifest entry byte-for-byte with the source note, and confirms that
+Sections 2–5 are present without a `packet-clipped` marker. This cycle must not
+edit the authority derivation, duplicate it into the target note, alter global
+packet limits, or author an audit verdict. The independent audit lane owns the
+fresh formula audit after the repair lands.

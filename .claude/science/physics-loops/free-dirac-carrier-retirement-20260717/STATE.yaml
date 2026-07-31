@@ -1,77 +1,67 @@
 loop_slug: free-dirac-carrier-retirement-20260717
-mode: campaign
-reasoning_profile: sol_xhigh
+mode: run
 date_started: 2026-07-17
-started_at_utc: 2026-07-17T10:50:46Z
-runtime_budget: 18h
-target_end_utc: 2026-07-18T04:47:00Z
-checkpoint_interval: 30m
-deep_block: 90m
-last_checkpoint_utc: 2026-07-17T12:20:59Z
-deep_block_status: completed_90m
+date_resumed: 2026-07-29
+runtime_budget: 15m_source_repair_cycle
 target: best-honest-status
-branch: physics-loop/free-dirac-carrier-retirement-block01-20260717
-base_commit_at_start: fdb599edf8aaab375a719cd6d726e7120b5e9c57
+branch: claude/science-fix/free_dirac_poincare_representation_bounded_note_2026-05-30-1ff81424
+base_commit_at_resume: b377240587dc9cb0640cb4424e4ea25261687e7a
 base_ref: origin/main
 current_goal: >-
-  Attempt a direct, retained-authority-grounded bridge from the current
-  Lattice+Qubit+Admissibility+Record surface and kinetic-isotropy primitive,
-  through the free staggered Clifford core, to the continuum free-Dirac
-  one-particle carrier, pole-residue measure, and finite CAR relabelling.
+  Remove the exact restricted-packet clipping obstruction on the one-hop
+  free-staggered pole/residue authority without changing the authority text,
+  global packet limits, the target claim, or any audit-owned status surface.
 starting_claim_id: free_dirac_poincare_representation_bounded_note_2026-05-30
-starting_effective_status: audited_conditional
+starting_audit_status: audited_conditional
 exact_starting_blocker: >-
-  missing_dependency_edge: add a one-hop retained-grade authority supplying
-  the continuum free-Dirac/Poincare carrier and CAR relabelling used by the
-  runner, then re-audit.
-cycle_count: 1
-block_count: 1
-active_route: staggered_pole_residue_plus_finite_jw_car
+  runner_artifact_issue — regenerate the restricted packet with the cited
+  authority's unclipped Sections 2–5 and repeat the independent formula audit.
+cycle_count: 2
+block_count: 2
+active_route: exactly_scoped_authority_transport_override
 hard_residual: >-
-  Can the retained blocked free-staggered Clifford symbol plus approved
-  kinetic isotropy derive the positive-mass-shell carrier and measure, and can
-  the actual Qubit/Lattice surface supply the inter-site composition needed
-  for CAR relabelling without importing statistics or composition?
+  None inside the source repair: the authority's full derivation and 11-check
+  runner already exist. Repeating the independent formula audit is reserved
+  for the independent audit lane after this transport repair lands.
 lock_status: >-
-  Shared automation lock failed with permission denied at /Users/jonreilly.
-  Branch-local supervisor lock acquired at SUPERVISOR_LOCK.json and refreshed
-  at 2026-07-17T11:48:28Z; this is not a campaign stop.
+  Dedicated isolated science-fix worktree; the repo protocol permits skipping
+  the shared cooperative lock when no concurrent writers use this worktree.
 worker_policy: >-
-  No additional Codex/subagent workers; sequential stuck fan-out only. No
-  audit worker or audit-verdict tooling.
-actual_current_surface_status: bounded-support
+  No subagents or audit workers. All grounding, implementation, and review are
+  sequential in the primary agent.
+actual_current_surface_status: conditional-support
 target_claim_type: bounded_theorem
 trace_class: direct_blocker_closure
 reachability_to_target: closes
-conditional_surface_status: null
+conditional_surface_status: audited_conditional
 hypothetical_axiom_status: null
 admitted_observation_status: null
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 files_touched:
-  - .claude/science/physics-loops/free-dirac-carrier-retirement-20260717/
-  - docs/FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md
+  - scripts/codex_audit_runner.py
+  - docs/audit/scripts/tests/test_free_dirac_poincare_packet_repair.py
   - docs/FREE_DIRAC_POINCARE_REPRESENTATION_BOUNDED_NOTE_2026-05-30.md
-  - scripts/free_staggered_pole_residue_dirac_carrier_car_relabeling_2026_07_17.py
-  - logs/runner-cache/free_staggered_pole_residue_dirac_carrier_car_relabeling_2026_07_17.txt
-  - docs/CANONICAL_HARNESS_INDEX.md
-open_imports:
-  - physical selection of the canonical free-staggered action from the four axioms
-  - inter-site physical tensor/CAR composition if required by the finite relabelling
-  - continuum existence or OS reconstruction if the claim exceeds a pole-carrier limit
+  - .claude/science/physics-loops/free-dirac-carrier-retirement-20260717/
+open_imports_for_packet_repair: []
+stronger_claim_exclusions:
+  - physical selection of the canonical free-staggered action
+  - physical global CAR/statistics selection
+  - single-taste selection
+  - OS/Wightman reconstruction
+  - common-core identification for the displayed unbounded generators
+no_go_discipline_status: pass_for_bounded_scope_only
 no_go_routes:
-  - textbook-only Poincare/Dirac/CAR restatement
-  - Pattern-A rescope of the existing eight runner checks
-  - ledger/status retagging from the science branch
+  - globally raising all authority packet limits
+  - duplicating Sections 2–5 into the target note
+  - changing audit data or predicting the re-audit verdict
 trace_gate_classification: direct_blocker_closure
 review_disposition: pass
-pr_status: ready_review_open
-pr_number: 5465
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/5465
+pr_status: not_opened_external_action_not_requested
 next_exact_action: >-
-  Run the independent repo-native review-loop on PR 5465 and merge only on a
-  final pass. Independent audit is post-landing authority work outside this
-  physics-loop handoff.
+  Hand the unclipped restricted packet to the independent audit lane for the
+  requested fresh formula audit; only that lane may assign a new verdict.
 stop_condition: >-
-  Runtime budget, documented global queue/value-gate exhaustion after deep
-  pressure, or a true tooling/safety condition.
+  Met: the exact per-edge transport regression, sibling guards, focused review,
+  and disposable full audit pipeline pass, with the source worktree's
+  audit-owned generated surfaces left unchanged.

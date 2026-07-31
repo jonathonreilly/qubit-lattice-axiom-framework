@@ -118,6 +118,10 @@ AUTHORITY_PER_NOTE_OVERRIDES = {
         "teleportation_taste_readout_operator_model_note",
         "teleportation_retained_axis_operator_algebra_closure_note",
     ): 20_000,
+    (
+        "free_dirac_poincare_representation_bounded_note_2026-05-30",
+        "free_staggered_pole_residue_dirac_carrier_car_relabeling_bounded_theorem_note_2026-07-17",
+    ): 22_000,
 }
 CLIPPED_EVIDENCE_MARKERS = (
     "... [packet-clipped ",

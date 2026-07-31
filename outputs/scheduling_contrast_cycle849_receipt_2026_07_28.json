@@ -2,6 +2,13 @@
   "audit": "unset",
   "authority": "none",
   "block": "blockF20-20260729",
+  "certificate_count_format_note": {
+    "amended": "primary cache count re-derived from its native SUMMARY_JSON.checks boolean map after the generic line-count patterns returned 0/0; the checker cache's original count (CERTIFICATE <NAME> PASS lines) was already correct and is unchanged; needle assertions were verified before first commit",
+    "formats": {
+      "logs/runner-cache/frontier_cycle849_contrast_independent_check_2026_07_28.txt": "CERTIFICATE <NAME> PASS/FAIL lines",
+      "logs/runner-cache/frontier_cycle849_scheduling_contrast_2026_07_28.txt": "SUMMARY_JSON.checks boolean map"
+    }
+  },
   "certificates": {
     "logs/runner-cache/frontier_cycle849_contrast_independent_check_2026_07_28.txt": {
       "fail": 0,
@@ -9,7 +16,7 @@
     },
     "logs/runner-cache/frontier_cycle849_scheduling_contrast_2026_07_28.txt": {
       "fail": 0,
-      "pass": 0
+      "pass": 6
     }
   },
   "claim_type": "bounded_theorem",

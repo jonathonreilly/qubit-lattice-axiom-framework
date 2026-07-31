@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF18-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle835_register_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle835_register_mechanism_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 835,
+  "files": {
+    "docs/REGISTER_MECHANISM_CYCLE835_BOUNDED_THEOREM_NOTE_2026-07-28.md": "ffa391c359ef2f5088b9e4c399bd7004474906c27607227c0b5861c583dc5c05",
+    "logs/runner-cache/frontier_cycle835_register_independent_check_2026_07_28.txt": "f6da829eda8be06a7fa45df6b09c40cc38038b8abac44498ef48ac66142ed185",
+    "logs/runner-cache/frontier_cycle835_register_mechanism_2026_07_28.txt": "7ddd375f0b62bf5ad03d659b90a7ab4d389f4d34424febd0e9e7f0eed2ad8932",
+    "scripts/frontier_cycle835_register_independent_check_2026_07_28.py": "0a8dec5f1ae7e79a1ddc6dcbb7c43c33a1b4a38446eb9c0be46c40fe3b9cf144",
+    "scripts/frontier_cycle835_register_mechanism_2026_07_28.py": "6b8c26ff77d99225aaa985c645aeee9fa1fb3db19517aec727ff38e0cbcc03f5"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "PARTIAL_CORRELATE (reversal twenty-three: v1 HOLDS_EXACTLY RETRACTED \u2014 dwell correction proven TARGET-AWARE/fitted)",
+    "raw target-blind catch-up {594,65} vs residuals {595,64}; convention audit: moment/moment-5 timelines -> {595,64}, register-entry -> {594,65}, none selected",
+    "pulse: register common at all three phases (no phase selection); five candidates fail",
+    "checker FITTED ruling PASS vs v2 (supervisor: cross-worktree audit paths materialized; sha+blob pins re-frozen)"
+  ]
+}

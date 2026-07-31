@@ -1,28 +1,29 @@
 #!/usr/bin/env python3
-"""Cycle 835: exact register-trajectory mechanism probe.
+"""Cycle 835 v2: retracted correction and honest register near-miss.
 
 The Cycle-832 and Cycle-833 sibling packages are SHA-pinned source primaries:
 they are read only as text/AST controls and are blocked from import.  Their
 small claimed data surfaces are copied below, while all state dynamics are
 rebuilt from the landed Cycle-719 controller core.
 
-Certificate A losslessly prints every cohort-tick change time for each of the
-39 Cycle-833 rank-edge fields.  To remain below the audit stdout ceiling, the
-lists use one canonical binary envelope: unique sequences in first-occurrence
-order, unsigned LEB128 deltas, concatenation in sequence order, zlib level 9,
-then Base85.  Counts delimit the decoded sequences; the runner verifies an
-exact encode/decode round trip before printing.
+Certificate A retracts the v1 HOLDS_EXACTLY headline: adding the signed
+terminal-dwell difference is a target-aware accounting identity, not a
+register-sequence prediction.  Certificate B records the target-blind raw
+catch-up {594,65} against {595,64} as PARTIAL_CORRELATE.  Certificate C prints
+all three predeclared tick conventions without target-based selection.
+Certificate D preserves the 74-sequence envelope, five failed candidates, and
+pulse negative from v1.
 """
 from __future__ import annotations
 
-AUDIT_TIMEOUT_SEC = 1500
+AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 200 * 1024
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "../born-harness-worktree/scripts/frontier_cycle832_cohort_moment_law_2026_07_28.py",
-    "../born-harness-worktree/scripts/frontier_cycle832_moment_law_independent_check_2026_07_28.py",
-    "../landing-worktree/scripts/frontier_cycle833_funnel_family_2026_07_28.py",
-    "../landing-worktree/scripts/frontier_cycle833_funnel_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle832_cohort_moment_law_2026_07_28.py",
+    "scripts/frontier_cycle832_moment_law_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle833_funnel_family_2026_07_28.py",
+    "scripts/frontier_cycle833_funnel_independent_check_2026_07_28.py",
 )
 
 import ast
@@ -122,8 +123,9 @@ BACKBONE: tuple[tuple[int, int], ...] = (
 WITNESS_PAIR = BACKBONE[0]
 EVENT_ORDER = (0, 2, 1)
 FUNNEL_MOMENTS = {0: 14739, 2: 33190, 1: 51110}
-RESOLUTION_MOMENTS = {event: moment + 5
-                      for event, moment in FUNNEL_MOMENTS.items()}
+MOMENT_MINUS_FIVE = {
+    event: moment - 5 for event, moment in FUNNEL_MOMENTS.items()
+}
 TRANSITIONS = (
     {"source_event": 0, "target_event": 2, "residual": 595},
     {"source_event": 2, "target_event": 1, "residual": 64},
@@ -1135,15 +1137,23 @@ def residual_certificate(
             tuple(tick_rows),
             True,
         ),
-        candidate(
-            "C6_DWELL_CORRECTED_REGISTER_CATCHUP",
-            "(target final-entry - source final-entry - LCM) + "
-            "(target terminal dwell - source terminal dwell)",
-            tuple(corrected_rows),
-            True,
-        ),
+        {
+            "candidate_id": "C6_DWELL_CORRECTED_REGISTER_CATCHUP",
+            "definition":
+                "(target final-entry - source final-entry - LCM) + "
+                "(target terminal dwell - source terminal dwell)",
+            "transition_rows": tuple(corrected_rows),
+            "arithmetic_values": tuple(
+                row["observed"] for row in corrected_rows
+            ),
+            "arithmetic_identity":
+                "raw + Delta_dwell = cohort-moment gap - LCM",
+            "classification": "TARGET_AWARE_FITTED_DIAGNOSTIC",
+            "outcome": "RETRACTED_AS_MECHANISM",
+            "mechanistic": False,
+        },
     )
-    mechanism = next(
+    diagnostic = next(
         row for row in candidates
         if row["candidate_id"] == "C6_DWELL_CORRECTED_REGISTER_CATCHUP"
     )
@@ -1153,21 +1163,228 @@ def residual_certificate(
             transition["residual"] for transition in TRANSITIONS
         ),
         "candidates": candidates,
-        "raw_catchup_outcome": "FAILS",
-        "exact_accounting":
-            "residual = (final-register-entry gap - 17856) + "
-            "(target terminal dwell - source terminal dwell)",
-        "exact_accounting_outcome": mechanism["outcome"],
+        "raw_catchup_outcome": "PARTIAL_CORRELATE",
+        "target_aware_diagnostic": diagnostic,
+        "target_aware_identity":
+            "with h_e=FUNNEL_MOMENTS[e], tau_e=final entry, and "
+            "d_e=h_e-tau_e, raw+(d_t-d_s)=h_t-h_s-17856",
+        "target_aware_diagnostic_outcome": "RETRACTED_AS_MECHANISM",
         "interpretation":
-            "the register entry gaps alone miss as 594 and 65; the exact "
-            "one-tick terminal dwell transfer gives 595 and 64",
+            "the register entry gaps alone give 594 and 65, a signed "
+            "-1/+1 near-miss; the 0/1/0 dwell asymmetry is the unexplained "
+            "unit and is not promoted to a correction",
         "pass": (
             candidates[0]["outcome"] == "HOLDS_EXACTLY"
             and all(
                 row["outcome"] == "FAILS"
                 for row in candidates[1:6]
             )
-            and mechanism["outcome"] == "HOLDS_EXACTLY"
+            and diagnostic["arithmetic_values"] == (595, 64)
+            and diagnostic["classification"]
+            == "TARGET_AWARE_FITTED_DIAGNOSTIC"
+            and diagnostic["outcome"] == "RETRACTED_AS_MECHANISM"
+        ),
+    }
+
+
+def retraction_certificate(
+    residuals: dict[str, object],
+) -> dict[str, object]:
+    diagnostic = residuals["target_aware_diagnostic"]
+    rows = diagnostic["transition_rows"]
+    return {
+        "certificate": "A_RETRACTION",
+        "retracted_v1_outcome_verbatim": "HOLDS_EXACTLY",
+        "retracted_v1_claim_verbatim":
+            "EXACT: final-entry catch-up plus terminal dwell transfer "
+            "accounts for 595 and 64; raw catch-up alone fails",
+        "retraction_status": "RETRACTED",
+        "replacement_classification":
+            "TARGET_AWARE_FITTED_DIAGNOSTIC",
+        "diagnostic": diagnostic,
+        "algebraic_circularity":
+            "For h_e=FUNNEL_MOMENTS[e], tau_e=the final-register-entry "
+            "tick, and d_e=h_e-tau_e, "
+            "(tau_t-tau_s-L)+(d_t-d_s)=h_t-h_s-L identically.  Thus the "
+            "+1 signed dwell term restores the cohort-moment gap rather "
+            "than predicting it from the register sequences.",
+        "fitted_choice":
+            "In raw+alpha*Delta_dwell, the displayed alpha=+1 is exactly "
+            "the shared value that turns {594,65} into the known "
+            "{595,64}; no independent register dynamics fixes alpha.",
+        "target_aware_inputs": (
+            "FUNNEL_MOMENTS endpoints used to define terminal dwell",
+            "known residuals used only to expose the fitted alpha",
+        ),
+        "mechanism_claim_allowed": False,
+        "pass": (
+            residuals["pass"]
+            and diagnostic["outcome"] == "RETRACTED_AS_MECHANISM"
+            and diagnostic["arithmetic_values"] == (595, 64)
+            and all(
+                row["identity_check"] and row["exact"] for row in rows
+            )
+        ),
+    }
+
+
+def raw_near_miss_certificate(
+    trajectory: dict[str, object],
+    residuals: dict[str, object],
+) -> dict[str, object]:
+    entry_candidate = next(
+        row for row in residuals["candidates"]
+        if row["candidate_id"]
+        == "C2_FINAL_REGISTER_VALUE_ENTRY_CATCHUP"
+    )
+    rows = tuple({
+        "source_event": row["source_event"],
+        "target_event": row["target_event"],
+        "source_final_entry": row["final_entry_times"][0],
+        "target_final_entry": row["final_entry_times"][1],
+        "lcm_skeleton": LCM_SKELETON,
+        "raw_register_catchup": row["observed"],
+        "withheld_residual_for_comparison": row["expected_residual"],
+        "signed_discrepancy_raw_minus_residual":
+            row["observed"] - row["expected_residual"],
+        "absolute_discrepancy":
+            abs(row["observed"] - row["expected_residual"]),
+    } for row in entry_candidate["transition_rows"])
+    raw_values = tuple(row["raw_register_catchup"] for row in rows)
+    residual_values = tuple(
+        row["withheld_residual_for_comparison"] for row in rows
+    )
+    discrepancies = tuple(
+        row["signed_discrepancy_raw_minus_residual"] for row in rows
+    )
+    terminal_dwells = tuple(
+        trajectory["stats"][event]["terminal_dwell_ticks"]
+        for event in EVENT_ORDER
+    )
+    return {
+        "certificate": "B_HONEST_FINDING",
+        "status": "PARTIAL_CORRELATE",
+        "target_blind_definition":
+            "For each adjacent event pair, subtract the source final-entry "
+            "tick and L=lcm(4464,5952) from the target final-entry tick.  "
+            "No residual target enters this computation.",
+        "final_entry_times": tuple(
+            trajectory["stats"][event][
+                "final_projection_entry_time"
+            ]
+            for event in EVENT_ORDER
+        ),
+        "raw_values": raw_values,
+        "residual_values_for_comparison_only": residual_values,
+        "exact_discrepancy_table": rows,
+        "signed_discrepancies_raw_minus_residual": discrepancies,
+        "terminal_dwell_asymmetry": terminal_dwells,
+        "unexplained_unit":
+            "The signed -1/+1 discrepancy co-occurs with dwell asymmetry "
+            "0/1/0.  That unit remains unexplained and is not applied as "
+            "a correction.",
+        "pass": (
+            residuals["pass"]
+            and entry_candidate["outcome"] == "FAILS"
+            and raw_values == (594, 65)
+            and residual_values == (595, 64)
+            and discrepancies == (-1, 1)
+            and terminal_dwells == (0, 1, 0)
+        ),
+    }
+
+
+def timeline_convention_certificate(
+    trajectory: dict[str, object],
+) -> dict[str, object]:
+    def convention_row(
+        convention_id: str,
+        definition: str,
+        times: dict[int, int],
+    ) -> dict[str, object]:
+        values = tuple(
+            times[transition["target_event"]]
+            - times[transition["source_event"]]
+            - LCM_SKELETON
+            for transition in TRANSITIONS
+        )
+        return {
+            "convention_id": convention_id,
+            "definition": definition,
+            "times_by_event_order_0_2_1": tuple(
+                times[event] for event in EVENT_ORDER
+            ),
+            "raw_catchup_values": values,
+        }
+
+    entry_times = {
+        event: trajectory["stats"][event][
+            "final_projection_entry_time"
+        ]
+        for event in EVENT_ORDER
+    }
+    rows = (
+        convention_row(
+            "FUNNEL_MOMENT",
+            "t_e=FUNNEL_MOMENTS[e]: integer tick after exactly t_e "
+            "applications of the landed orbit word, at the copied funnel "
+            "cohort moment.",
+            FUNNEL_MOMENTS,
+        ),
+        convention_row(
+            "MOMENT_MINUS_FIVE",
+            "t_e=FUNNEL_MOMENTS[e]-5: the uniformly shifted bookkeeping "
+            "tick five landed-orbit applications before each copied "
+            "funnel cohort moment.",
+            MOMENT_MINUS_FIVE,
+        ),
+        convention_row(
+            "REGISTER_FINAL_ENTRY",
+            "t_e is the earliest integer tick from which the observed "
+            "39-field projection remains equal to its terminal value "
+            "through FUNNEL_MOMENTS[e].",
+            entry_times,
+        ),
+    )
+    return {
+        "certificate": "C_TICK_CONVENTION_PROBE",
+        "status": "BOUNDED_TARGET_BLIND_PROBE",
+        "probe_boundary":
+            "Exactly the three stated timeline conventions are evaluated.",
+        "selection_rule":
+            "NONE: no convention is selected; every predeclared row is "
+            "printed regardless of the residual targets.",
+        "selected_convention": None,
+        "target_values_used_in_computation_or_selection": False,
+        "formula":
+            "raw(s,t)=t_t-t_s-lcm(4464,5952)",
+        "convention_rows": rows,
+        "outcome_groups": (
+            {
+                "raw_catchup_values": (595, 64),
+                "conventions": (
+                    "FUNNEL_MOMENT", "MOMENT_MINUS_FIVE",
+                ),
+            },
+            {
+                "raw_catchup_values": (594, 65),
+                "conventions": ("REGISTER_FINAL_ENTRY",),
+            },
+        ),
+        "finding":
+            "Uniformly subtracting five ticks leaves both gaps unchanged, "
+            "so moment and moment-5 give {595,64}; the nonuniform "
+            "register final entries 14739/33189/51110 give {594,65}.",
+        "pass": (
+            tuple(
+                row["times_by_event_order_0_2_1"] for row in rows
+            ) == (
+                (14739, 33190, 51110),
+                (14734, 33185, 51105),
+                (14739, 33189, 51110),
+            )
+            and tuple(row["raw_catchup_values"] for row in rows)
+            == ((595, 64), (595, 64), (594, 65))
         ),
     }
 
@@ -1449,34 +1666,52 @@ def pulse_phase_certificate(
     }
 
 
-def verdict_certificate(
+def unchanged_surfaces_certificate(
+    sequences: dict[str, object],
     residuals: dict[str, object],
     pulse: dict[str, object],
 ) -> dict[str, object]:
-    residual_mechanism = (
-        residuals["exact_accounting_outcome"] == "HOLDS_EXACTLY"
+    five_failed = tuple(
+        row for row in residuals["candidates"]
+        if row["candidate_id"] in {
+            "C1_LAST_ANY_REGISTER_CHANGE_CATCHUP",
+            "C2_FINAL_REGISTER_VALUE_ENTRY_CATCHUP",
+            "C3_RANK_EDGE_FIELDS_LAST_CHANGE_CATCHUP",
+            "C4_TOTAL_REGISTER_FLIP_DIFFERENCE",
+            "C5_DISTINCT_REGISTER_CHANGE_TICK_DIFFERENCE",
+        }
     )
-    pulse_mechanism = (
-        pulse["phase_test_outcome"] == "HOLDS_EXACTLY"
-    )
-    if residual_mechanism and pulse_mechanism:
-        verdict = "MECHANISM_FOUND"
-    elif residual_mechanism or pulse_mechanism:
-        verdict = "PARTIAL"
-    else:
-        verdict = "FAILS"
     return {
-        "verdict": verdict,
-        "residuals":
-            "EXACT: final-entry catch-up plus terminal dwell transfer "
-            "accounts for 595 and 64; raw catch-up alone fails",
-        "pulse_phase":
-            "FAILS: the register block is common at every phase and so "
-            "does not select the unique full-state coincidence phase",
-        "scope":
-            "exact bounded accounting on the three observed funnel "
-            "trajectories and the nine landed period-3 cycles",
-        "pass": verdict == "PARTIAL",
+        "certificate": "D_UNCHANGED_SURFACES",
+        "change_sequence_certificate": sequences,
+        "sequence_invariants": {
+            "unique_sequence_count":
+                sequences["change_times_exact_encoding"][
+                    "unique_sequence_count"
+                ],
+            "raw_bytes":
+                sequences["change_times_exact_encoding"]["raw_bytes"],
+            "raw_sha256":
+                sequences["change_times_exact_encoding"]["raw_sha256"],
+        },
+        "five_failed_candidates": five_failed,
+        "pulse_negative": pulse,
+        "finding":
+            "The 74-sequence SHA-pinned envelope, all five failed "
+            "candidate results, and the pulse-phase negative are unchanged "
+            "from v1.",
+        "pass": (
+            sequences["pass"]
+            and sequences["change_times_exact_encoding"][
+                "unique_sequence_count"
+            ] == EXPECTED_CHANGE_TIME_UNIQUE_SEQUENCES
+            and sequences["change_times_exact_encoding"]["raw_sha256"]
+            == EXPECTED_CHANGE_TIME_RAW_SHA256
+            and len(five_failed) == 5
+            and all(row["outcome"] == "FAILS" for row in five_failed)
+            and pulse["pass"]
+            and pulse["phase_test_outcome"] == "FAILS"
+        ),
     }
 
 
@@ -1507,9 +1742,9 @@ def stable_render(
         summary["checks"] = dict(checks)
         summary["pass"] = all(checks.values())
         summary["terminal"] = (
-            "CYCLE835_REGISTER_MECHANISM_PARTIAL_EXACT_PASS"
+            "CYCLE835_REGISTER_V2_PARTIAL_CORRELATE_PASS"
             if summary["pass"]
-            else "CYCLE835_REGISTER_MECHANISM_HONEST_FAIL"
+            else "CYCLE835_REGISTER_V2_HONEST_FAIL"
         )
         output = render(checks, certificates, summary)
         size = len(output.encode("utf-8"))
@@ -1531,25 +1766,40 @@ def run() -> int:
     wires = register_wires()
     trajectory = track_register_trajectories(family, wires)
     encoding = change_time_encoding(trajectory["changes"])
-    certificate_a = register_trajectory_certificate(
+    sequence_certificate = register_trajectory_certificate(
         trajectory, encoding, wires
     )
-    certificate_b = residual_certificate(trajectory, wires)
+    residuals = residual_certificate(trajectory, wires)
     pulse = pulse_replay(family, wires)
     pulse_duplicate = pulse_replay(family, wires)
-    certificate_c = pulse_phase_certificate(
+    pulse_negative = pulse_phase_certificate(
         pulse, pulse_duplicate, trajectory["funnels"], wires
     )
-    certificate_d = verdict_certificate(certificate_b, certificate_c)
+    certificate_a = retraction_certificate(residuals)
+    certificate_b = raw_near_miss_certificate(
+        trajectory, residuals
+    )
+    certificate_c = timeline_convention_certificate(trajectory)
+    certificate_d = unchanged_surfaces_certificate(
+        sequence_certificate, residuals, pulse_negative
+    )
     elapsed = monotonic() - started
     controls_base = (
         sources["pass"]
         and family["summary"]["pass"]
         and trajectory["pass"]
-        and certificate_a["pass"]
+        and residuals["pass"]
+        and all(
+            certificate["pass"] for certificate in (
+                certificate_a,
+                certificate_b,
+                certificate_c,
+                certificate_d,
+            )
+        )
         and encoding["roundtrip_exact"]
         and pulse["pass"]
-        and certificate_c["duplicate_replay_digest_exact"]
+        and pulse_negative["duplicate_replay_digest_exact"]
         and not any(
             name in sys.modules for name in BLOCKLISTED_MODULES
         )
@@ -1575,7 +1825,7 @@ def run() -> int:
             "one_step_scalar_equivalence":
                 trajectory["one_step_scalar_equivalence"],
             "pulse_duplicate_digest_exact":
-                certificate_c["duplicate_replay_digest_exact"],
+                pulse_negative["duplicate_replay_digest_exact"],
         },
         "blocked_modules_loaded_at_end": tuple(
             name for name in BLOCKLISTED_MODULES if name in sys.modules
@@ -1588,22 +1838,25 @@ def run() -> int:
         "pass": controls_base,
     }
     checks = {
-        "A_REGISTER_TRAJECTORY_CHANGE_TIMES": bool(certificate_a["pass"]),
-        "B_RESIDUAL_CANDIDATES_EXACT": bool(certificate_b["pass"]),
-        "C_PULSE_PHASE_REGISTER_TEST": bool(certificate_c["pass"]),
-        "D_VERDICT_PARTIAL": bool(certificate_d["pass"]),
+        "A_RETRACTION": bool(certificate_a["pass"]),
+        "B_HONEST_NEAR_MISS": bool(certificate_b["pass"]),
+        "C_TICK_CONVENTION_AUDIT": bool(certificate_c["pass"]),
+        "D_UNCHANGED_SURFACES": bool(certificate_d["pass"]),
         "E_CONTROLS": controls_base,
     }
     certificates = {
-        "A_REGISTER_TRAJECTORY": certificate_a,
-        "B_RESIDUAL_TEST": certificate_b,
-        "C_PULSE_PHASE_TEST": certificate_c,
-        "D_VERDICT": certificate_d,
+        "A_RETRACTION": certificate_a,
+        "B_HONEST_NEAR_MISS": certificate_b,
+        "C_TICK_CONVENTION_AUDIT": certificate_c,
+        "D_UNCHANGED_SURFACES": certificate_d,
         "E_CONTROLS": controls,
     }
     summary = {
         "cycle": 835,
-        "target": "residuals and pulse phase via the register block",
+        "version": 2,
+        "target":
+            "retract fitted dwell correction; retain honest register "
+            "near-miss",
         "register_fields": len(wires),
         "register_final_entry_times": tuple(
             trajectory["stats"][event][
@@ -1615,20 +1868,36 @@ def run() -> int:
             trajectory["stats"][event]["terminal_dwell_ticks"]
             for event in EVENT_ORDER
         ),
-        "raw_register_catchup_residuals": (594, 65),
-        "dwell_corrected_residuals": (595, 64),
+        "retraction_status": certificate_a["retraction_status"],
+        "raw_register_catchup": certificate_b["raw_values"],
+        "residuals_for_comparison":
+            certificate_b["residual_values_for_comparison_only"],
+        "signed_discrepancies_raw_minus_residual":
+            certificate_b[
+                "signed_discrepancies_raw_minus_residual"
+            ],
+        "near_miss_status": certificate_b["status"],
+        "target_aware_diagnostic_classification":
+            certificate_a["replacement_classification"],
+        "convention_outcomes": tuple(
+            (
+                row["convention_id"],
+                row["raw_catchup_values"],
+            )
+            for row in certificate_c["convention_rows"]
+        ),
         "pulse_full_common_phases":
             pulse["boundary_full_common_phases_mod_3"],
         "pulse_register_common_phases":
             pulse["boundary_register_common_phases_mod_3"],
-        "verdict": certificate_d["verdict"],
+        "verdict": "PARTIAL_CORRELATE",
         "runtime_seconds": round(elapsed, 6),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_bytes": 0,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "checks": {},
         "pass": False,
-        "terminal": "CYCLE835_REGISTER_MECHANISM_HONEST_FAIL",
+        "terminal": "CYCLE835_REGISTER_V2_HONEST_FAIL",
     }
     output = stable_render(checks, certificates, summary)
     stdout_ok = len(output.encode("utf-8")) < STDOUT_LIMIT_BYTES
@@ -1641,7 +1910,7 @@ def run() -> int:
             "failure": "stdout limit exceeded",
             "stdout_bytes": len(output.encode("utf-8")),
             "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
-            "terminal": "CYCLE835_REGISTER_MECHANISM_HONEST_FAIL",
+            "terminal": "CYCLE835_REGISTER_V2_HONEST_FAIL",
         }) + "\n")
         return 1
     sys.stdout.write(output)

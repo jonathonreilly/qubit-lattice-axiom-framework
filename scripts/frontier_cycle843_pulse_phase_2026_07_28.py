@@ -141,6 +141,9 @@ Key = tuple[int, Pair]
 RING_STATIONS = 11
 FIXTURE_BANKS = 2
 STATE_BITS = 5815
+SAMPLED_PERIODS = 12
+EXPECTED_BRANCH = "physics-loop/toe-close-blockC25-20260729"
+EXPECTED_BASE = "7a42ba01f4f549550b1dcfadbefb9aaedce1c0c3"
 BACKBONE: tuple[Pair, ...] = (
     (1, 6), (1, 7), (2, 7), (2, 8), (3, 8),
     (3, 9), (4, 9), (4, 10), (5, 10),
@@ -266,7 +269,9 @@ def build_event3_family() -> dict[str, object]:
         "summary": {
             "keys": len(event3_states),
             "state_bits": len(epochs[3]),
-            "word_gate_counts": tuple(sorted(map(len, words.values()))),
+            "word_gate_counts": tuple(sorted({
+                len(word) for word in words.values()
+            })),
             "S0_prime_weight": sum(epochs[3]),
             "all_rail_compositions_exact":
                 all(row["composition_exact"] for row in rail_rows),
@@ -872,3 +877,429 @@ def selector_certificate(
             "do not.",
         "pass": exact,
     }
+
+
+def phase_law_certificate(
+    family: dict[str, object],
+) -> dict[str, object]:
+    words = family["words"]
+    family_states = family["states"]
+    s0_prime = family["S0_prime"]
+    assert isinstance(words, dict)
+    assert isinstance(family_states, dict)
+    assert isinstance(s0_prime, tuple)
+    source_pointer = WIRE_BY_NAME["source.SOURCE_POINTER"]
+    link_token = WIRE_BY_NAME["link0.wire[0]"]
+    states = tuple(family_states[key] for key in EVENT3_KEYS)
+    initial_states = states
+    rows = []
+    period_closures = []
+    for movement in range(3 * SAMPLED_PERIODS):
+        expected = movement % 3 == 2
+        for key, state in zip(EVENT3_KEYS, states):
+            selector = (
+                state[source_pointer] == 1
+                and state[link_token] == 0
+            )
+            rows.append({
+                "movement": movement,
+                "period_index": movement // 3,
+                "phase_mod_3": movement % 3,
+                "key": key,
+                "source.SOURCE_POINTER": state[source_pointer],
+                "link0.wire[0]": state[link_token],
+                "named_selector": selector,
+                "exact_S0_prime": state == s0_prime,
+                "expected_coincidence_phase": expected,
+                "biconditional_exact":
+                    selector == (state == s0_prime) == expected,
+            })
+        states = tuple(
+            K.A.apply_semantic(state, words[key[1]])
+            for key, state in zip(EVENT3_KEYS, states)
+        )
+        if (movement + 1) % 3 == 0:
+            period_closures.append({
+                "period_index": movement // 3,
+                "all_nine_return_to_phase0":
+                    states == initial_states,
+                "phase0_state_stream_sha256": digest(tuple(
+                    state_sha256(state) for state in states
+                )),
+            })
+    exact = (
+        len(rows) == 9 * 3 * SAMPLED_PERIODS
+        and all(row["biconditional_exact"] for row in rows)
+        and len(period_closures) == SAMPLED_PERIODS
+        and all(
+            row["all_nine_return_to_phase0"]
+            for row in period_closures
+        )
+        and {
+            row["phase_mod_3"]
+            for row in rows if row["exact_S0_prime"]
+        } == {2}
+    )
+    return {
+        "verdict": "HOLDS_EXACTLY" if exact else "FAILS",
+        "scope": "aligned completed orbit-word movement boundaries",
+        "law":
+            "For every event-3 backbone key and every integer movement m, "
+            "state(m)=S0' iff source.SOURCE_POINTER=1 and "
+            "link0.wire[0]=0 iff m mod 3=2.",
+        "sampled_period_count": SAMPLED_PERIODS,
+        "sampled_boundary_rows": tuple(rows),
+        "sampled_period_closures": tuple(period_closures),
+        "forever_step": (
+            "Each key returns exactly to its phase-0 full state after three "
+            "applications of its fixed reversible word.  Determinism then "
+            "repeats the verified three-boundary word for every integer "
+            "period; this is finite-state induction, not extrapolation."
+        ),
+        "single_wire_corollaries": (
+            "source.SOURCE_POINTER=1 iff m mod 3=2",
+            "link0.wire[0]=0 iff m mod 3=2",
+        ),
+        "dense_gate_scope_warning":
+            "No claim is made away from aligned movement boundaries.",
+        "pass": exact,
+    }
+
+
+def git_blob(payload: bytes) -> str:
+    return sha1(
+        f"blob {len(payload)}\0".encode("ascii") + payload
+    ).hexdigest()
+
+
+def literal_assignment(tree: ast.Module, name: str) -> object | None:
+    matches = []
+    for node in tree.body:
+        if (
+            isinstance(node, ast.Assign)
+            and any(
+                isinstance(target, ast.Name) and target.id == name
+                for target in node.targets
+            )
+        ):
+            matches.append(node.value)
+    if len(matches) != 1:
+        return None
+    try:
+        return ast.literal_eval(matches[0])
+    except (TypeError, ValueError):
+        return None
+
+
+def git_value(*arguments: str) -> str:
+    completed = subprocess.run(
+        ("git", *arguments),
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+        timeout=15,
+    )
+    return completed.stdout.strip()
+
+
+def source_controls() -> dict[str, object]:
+    payloads = {
+        path: (ROOT / path).read_bytes()
+        for path in AUDIT_INPUT_PATHS
+        if (ROOT / path).is_file()
+    }
+    trees = {
+        path: ast.parse(payload, filename=path)
+        for path, payload in payloads.items()
+    }
+    self_payload = Path(__file__).read_bytes()
+    self_tree = ast.parse(self_payload, filename=Path(__file__).name)
+    source_rows = tuple({
+        "path": path,
+        "exists_worktree_relative":
+            not Path(path).is_absolute() and (ROOT / path).is_file(),
+        "sha256": sha256(payloads[path]).hexdigest(),
+        "expected_sha256": EXPECTED_SHA256[path],
+        "sha256_exact":
+            sha256(payloads[path]).hexdigest() == EXPECTED_SHA256[path],
+        "git_blob": git_blob(payloads[path]),
+        "expected_git_blob": EXPECTED_GIT_BLOBS[path],
+        "git_blob_exact":
+            git_blob(payloads[path]) == EXPECTED_GIT_BLOBS[path],
+        "access": (
+            "DYNAMIC_IMPORT_CORE"
+            if path == CORE_PATH else
+            "TEXT_AST_ONLY_BLOCKLISTED"
+        ),
+        "AST_valid": isinstance(trees[path], ast.Module),
+    } for path in AUDIT_INPUT_PATHS)
+    direct_frontier_imports = tuple(
+        alias.name
+        for node in self_tree.body if isinstance(node, ast.Import)
+        for alias in node.names
+        if alias.name.startswith("frontier_cycle")
+    )
+    copied_rows = tuple({
+        **row,
+        "object_spec": f"{row['commit']}:{row['path']}",
+        "object_git_blob":
+            git_value("rev-parse", f"{row['commit']}:{row['path']}"),
+        "object_git_blob_exact":
+            git_value("rev-parse", f"{row['commit']}:{row['path']}")
+            == row["git_blob"],
+        "access": "COPIED_SHA_PIN_ONLY_NOT_READ_OR_EXECUTED",
+    } for row in COPIED_SIBLING_SOURCES)
+    branch = git_value("branch", "--show-current")
+    head = git_value("rev-parse", "HEAD")
+    base_is_ancestor = (
+        git_value("merge-base", "HEAD", EXPECTED_BASE) == EXPECTED_BASE
+    )
+    result = {
+        "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
+        "AUDIT_INPUT_PATHS_literal":
+            literal_assignment(self_tree, "AUDIT_INPUT_PATHS")
+            == AUDIT_INPUT_PATHS,
+        "all_paths_existing_worktree_relative":
+            len(payloads) == len(AUDIT_INPUT_PATHS)
+            and all(row["exists_worktree_relative"] for row in source_rows),
+        "plain_reading_named_files": len(AUDIT_INPUT_PATHS),
+        "maximum_named_files": 6,
+        "source_rows": source_rows,
+        "text_AST_only_paths": TEXT_AST_ONLY_PATHS,
+        "blocked_modules": BLOCKLISTED_MODULES,
+        "blocked_modules_loaded": tuple(
+            name for name in BLOCKLISTED_MODULES if name in sys.modules
+        ),
+        "firewall_hits": tuple(FIREWALL.hits),
+        "direct_frontier_imports": direct_frontier_imports,
+        "copied_sibling_source_rows": copied_rows,
+        "copied_sources_content_policy":
+            "SHA-256 values are copied provenance pins; live object identity "
+            "is checked by git blob without reading sibling source content.",
+        "runner_sha256": sha256(self_payload).hexdigest(),
+        "runner_git_blob": git_blob(self_payload),
+        "git_branch": branch,
+        "expected_git_branch": EXPECTED_BRANCH,
+        "git_head": head,
+        "expected_base": EXPECTED_BASE,
+        "expected_base_is_ancestor": base_is_ancestor,
+        "stdlib_only_runner":
+            direct_frontier_imports
+            == (
+                "frontier_cycle719_two_rail_recurrent_controller_core_"
+                "2026_07_26",
+            ),
+    }
+    result["pass"] = (
+        result["AUDIT_INPUT_PATHS_literal"]
+        and result["all_paths_existing_worktree_relative"]
+        and len(AUDIT_INPUT_PATHS) <= 6
+        and all(
+            row["sha256_exact"]
+            and row["git_blob_exact"]
+            and row["AST_valid"]
+            for row in source_rows
+        )
+        and all(row["object_git_blob_exact"] for row in copied_rows)
+        and not result["blocked_modules_loaded"]
+        and not result["firewall_hits"]
+        and result["stdlib_only_runner"]
+        and branch == EXPECTED_BRANCH
+        and base_is_ancestor
+    )
+    return result
+
+
+def render(
+    checks: dict[str, bool],
+    certificates: dict[str, object],
+    report: dict[str, object],
+) -> str:
+    lines = [
+        f"CERTIFICATE {name} " + compact(value)
+        for name, value in certificates.items()
+    ]
+    lines.extend(
+        f"CHECK {name}={str(value).lower()}"
+        for name, value in checks.items()
+    )
+    lines.append("SUMMARY_JSON " + compact(report))
+    lines.append(str(report["terminal"]))
+    return "\n".join(lines) + "\n"
+
+
+def stable_render(
+    checks: dict[str, bool],
+    certificates: dict[str, object],
+    report: dict[str, object],
+) -> str:
+    for _attempt in range(20):
+        report["checks"] = dict(checks)
+        report["pass"] = all(checks.values())
+        report["terminal"] = (
+            "CYCLE843_PULSE_PHASE_EXACT_PASS"
+            if report["pass"]
+            else "CYCLE843_PULSE_PHASE_HONEST_FAIL"
+        )
+        output = render(checks, certificates, report)
+        size = len(output.encode("utf-8"))
+        controls = certificates["D_CONTROLS"]
+        if (
+            report["stdout_bytes"] == size
+            and controls["stdout_bytes"] == size
+        ):
+            return output
+        report["stdout_bytes"] = size
+        controls["stdout_bytes"] = size
+    raise AssertionError("stdout byte fixed point did not converge")
+
+
+def run() -> int:
+    started = monotonic()
+    sources = source_controls()
+    family = build_event3_family()
+    family_duplicate = build_event3_family()
+    replay = replay_phases(family)
+    replay_duplicate = replay_phases(family_duplicate)
+    certificate_a = phase_state_certificate(family, replay)
+    comparisons = reconstruct_comparison_objects(family)
+    certificate_b = selector_certificate(
+        family, replay, comparisons
+    )
+    certificate_c = phase_law_certificate(family)
+    law_duplicate = phase_law_certificate(family_duplicate)
+    elapsed = monotonic() - started
+    family_state_rows = tuple(
+        (key, state_sha256(family["states"][key]))
+        for key in EVENT3_KEYS
+    )
+    family_duplicate_state_rows = tuple(
+        (key, state_sha256(family_duplicate["states"][key]))
+        for key in EVENT3_KEYS
+    )
+    family_deterministic = (
+        family_state_rows == family_duplicate_state_rows
+        and state_sha256(family["S0_prime"])
+        == state_sha256(family_duplicate["S0_prime"])
+    )
+    replay_deterministic = (
+        digest(replay) == digest(replay_duplicate)
+    )
+    law_deterministic = (
+        digest(certificate_c) == digest(law_duplicate)
+    )
+    deterministic = (
+        family_deterministic
+        and replay_deterministic
+        and law_deterministic
+        and all(
+            row["exact"] for row in comparisons["determinism_rows"]
+        )
+    )
+    controls_base = (
+        sources["pass"]
+        and family["summary"] == {
+            "keys": 9,
+            "state_bits": STATE_BITS,
+            "word_gate_counts": (6212,),
+            "S0_prime_weight": 59,
+            "all_rail_compositions_exact": True,
+        }
+        and deterministic
+        and not any(
+            name in sys.modules for name in BLOCKLISTED_MODULES
+        )
+        and not FIREWALL.hits
+        and elapsed < AUDIT_TIMEOUT_SEC
+    )
+    controls = {
+        **sources,
+        "family_summary": family["summary"],
+        "exact_arithmetic":
+            "All state bits, Hamming weights, projections, parities, XOR "
+            "diffs, movement indices, and equality tests use exact Python "
+            "integers/tuples; only monotonic runtime is a float.",
+        "determinism": {
+            "family_duplicate_exact": family_deterministic,
+            "phase_replay_duplicate_exact": replay_deterministic,
+            "phase_law_duplicate_exact": law_deterministic,
+            "funnel_duplicate_rows": comparisons["determinism_rows"],
+            "deterministic": deterministic,
+        },
+        "blocked_modules_loaded_at_end": tuple(
+            name for name in BLOCKLISTED_MODULES if name in sys.modules
+        ),
+        "firewall_hits_at_end": tuple(FIREWALL.hits),
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "pass": controls_base,
+    }
+    checks = {
+        "A_THREE_PHASE_STATES": bool(certificate_a["pass"]),
+        "B_EXACT_COMPLEMENT_SELECTOR": bool(certificate_b["pass"]),
+        "C_PHASE_LAW": bool(certificate_c["pass"]),
+        "D_CONTROLS": controls_base,
+    }
+    certificates = {
+        "A_THREE_PHASE_STATES": certificate_a,
+        "B_SELECTOR_HUNT": certificate_b,
+        "C_PHASE_LAW": certificate_c,
+        "D_CONTROLS": controls,
+    }
+    report = {
+        "cycle": 843,
+        "target": "full-state pulse phase at the event-3 coincidence",
+        "phase_partition_sequence": EXPECTED_PHASE_PARTITIONS,
+        "coincidence_phase_mod_3": 2,
+        "coincidence_object": "EXACT_S0_PRIME",
+        "coincidence_weight": 59,
+        "minimal_single_wire_selectors": (
+            "source.SOURCE_POINTER=1",
+            "link0.wire[0]=0",
+        ),
+        "phase_law_outcome": certificate_c["verdict"],
+        "phase_law_scope": certificate_c["scope"],
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "checks": {},
+        "pass": False,
+        "terminal": "CYCLE843_PULSE_PHASE_HONEST_FAIL",
+    }
+    output = stable_render(checks, certificates, report)
+    stdout_ok = len(output.encode("utf-8")) < STDOUT_LIMIT_BYTES
+    checks["D_CONTROLS"] = controls_base and stdout_ok
+    controls["pass"] = checks["D_CONTROLS"]
+    output = stable_render(checks, certificates, report)
+    if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
+        sys.stdout.write(compact({
+            "pass": False,
+            "failure": "stdout limit exceeded",
+            "stdout_bytes": len(output.encode("utf-8")),
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+            "terminal": "CYCLE843_PULSE_PHASE_HONEST_FAIL",
+        }) + "\n")
+        return 1
+    sys.stdout.write(output)
+    return 0 if report["pass"] else 1
+
+
+def main() -> int:
+    try:
+        return run()
+    except Exception as error:
+        sys.stdout.write(compact({
+            "pass": False,
+            "exception_type": type(error).__name__,
+            "exception": str(error),
+            "terminal": "CYCLE843_PULSE_PHASE_HONEST_FAIL",
+        }) + "\n")
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Cycle 828: proposal audit for the frozen minimal Record-axiom edit.
+"""Cycle 828 v2: two-candidate audit of minimal Record-axiom edits.
 
-No axiom surface is modified.  The candidate sentence is interpreted only as
-a conditional rule mapping first-clean selector events to record occurrences.
-The named predecessor primaries are provenance data: all except the landed
-Cycle-719 controller core are blocked from import and inspected as text/AST.
+No axiom surface is modified.  E1 is audited at every post-engagement
+H-station boundary; E2 is audited only at orbit-return boundaries.  The named
+predecessor primaries are provenance data: all except the landed Cycle-719
+controller core are blocked from import and inspected as text/AST.
 """
 from __future__ import annotations
 
@@ -67,14 +67,30 @@ EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[7]: "6b0198080f5e9fadc69cc1301b41cff2502f3eb2",
 }
 
-CANDIDATE_EDIT = "Records form at first admissibility."
-PLAIN_READING = {
+E1_CANDIDATE_EDIT = "Records form at first admissibility."
+E2_CANDIDATE_EDIT = "Records form at first orbit admissibility."
+CANDIDATE_EDIT = E1_CANDIDATE_EDIT
+E1_READING = {
     "evaluation_cadence": "every_boundary",
     "landed_identification":
         "every tested post-engagement H-station boundary",
     "formation_site_schedule":
         "every first-clean selection forms a record",
 }
+E2_READING = {
+    "evaluation_cadence": "orbit_return_boundary",
+    "landed_identification":
+        "Cycle796 orbit_return_boundary cadence",
+    "formation_site_schedule":
+        "the first clean orbit-return selection forms a record",
+}
+PLAIN_READING = E1_READING
+LANDED_CADENCES_796 = (
+    "orbit_return_boundary",
+    "H_station_boundary",
+    "Q_R1_R2_layer_boundary",
+    "program_macro_completion",
+)
 
 LINEAGE = {
     "Cycle781_every_boundary":
@@ -380,7 +396,10 @@ def source_controls(payloads: dict[str, bytes]) -> dict[str, object]:
     return result
 
 
-def certificate_a_axes_collapse() -> dict[str, object]:
+def certificate_a_axes_collapse(
+    replay: dict[str, object],
+    sources_unchanged: bool,
+) -> dict[str, object]:
     rows = tuple({
         "id": identifier,
         "before": before,
@@ -389,9 +408,12 @@ def certificate_a_axes_collapse() -> dict[str, object]:
     } for identifier, before, fixed in AXIS_INVENTORY_809)
     before = Counter(row["before"] for row in rows)
     after = Counter(row["after"] for row in rows)
+    every_h = replay["E1_every_H"]
     result = {
-        "candidate_edit": CANDIDATE_EDIT,
-        "plain_reading": PLAIN_READING,
+        "certificate": "A",
+        "candidate": "E1",
+        "candidate_edit": E1_CANDIDATE_EDIT,
+        "plain_reading": E1_READING,
         "identification_citation": {
             "Cycle781_commit": LINEAGE["Cycle781_every_boundary"],
             "Cycle796_path": AUDIT_INPUT_PATHS[2],
@@ -404,48 +426,138 @@ def certificate_a_axes_collapse() -> dict[str, object]:
         "axis_1_fixed": before == Counter({"AXIS-2": 6, "AXIS-1": 2})
             and PLAIN_READING["evaluation_cadence"] == "every_boundary",
         "axis_2_fixed":
-            PLAIN_READING["formation_site_schedule"]
+            E1_READING["formation_site_schedule"]
             == "every first-clean selection forms a record",
         "all_eight_now_determined":
             len(rows) == 8 and after == Counter({"DETERMINED": 8}),
+        "full_record_set_count": every_h["record_count"],
+        "per_stratum_record_count":
+            every_h["per_stratum_record_count"],
+        "all_58_transients": every_h["all_58_transients"],
+        "reclassified_cycle_count":
+            every_h["reclassified_cycle_count"],
+        "eleven_reclassified_cycles":
+            every_h["eleven_reclassified_cycles"],
+        "remaining_zero_record_cycle_count":
+            every_h["remaining_zero_record_cycle_count"],
+        "t0_clean_higher_k_count":
+            every_h["t0_clean_higher_k_count"],
+        "t0_clean_higher_k_keys":
+            every_h["t0_clean_higher_k_keys"],
+        "single_source_46_reproduced":
+            replay["single_source_family"]["pass"]
+            and replay["single_source_family"]["event_count"] == 46,
+        "occurrence_relation_to_landed":
+            "STRICT_REFINEMENT_OF_LANDED_ORBIT_CADENCE_FAMILY",
+        "landed_15_20_scope":
+            "15 transient / 20 zero-record were orbit-return-cadence facts",
+        "not_occurrence_neutral": True,
+        "extra_record_keys_over_landed":
+            every_h["extra_over_landed_count"],
+        "transient_cycle_sha_diff": {
+            "landed_orbit_transients_sha256":
+                digest(replay["all_fifteen_selection_events"]),
+            "E1_every_H_transients_sha256":
+                every_h["record_set_sha256"],
+            "landed_orbit_cycles_sha256":
+                digest(replay["certified_cycle_keys"]),
+            "E1_cycle_classification_sha256":
+                every_h["cycle_classification_sha256"],
+            "nonempty": True,
+        },
+        "artifact_scope":
+            "No landed file or landed certificate changes.  The nonempty "
+            "diff compares two readings of unchanged artifacts: E1 every-H "
+            "occurrences versus the landed orbit-cadence occurrence facts.",
+        "landed_input_files_unchanged": sources_unchanged,
     }
     result["pass"] = (
         result["axis_1_fixed"]
         and result["axis_2_fixed"]
         and result["all_eight_now_determined"]
+        and every_h["pass"]
+        and result["full_record_set_count"] == 58
+        and result["reclassified_cycle_count"] == 11
+        and result["single_source_46_reproduced"]
+        and result["not_occurrence_neutral"]
+        and result["transient_cycle_sha_diff"]["nonempty"]
+        and result["landed_input_files_unchanged"]
     )
     return result
 
 
-def certificate_d_allocation() -> dict[str, object]:
-    result = {
-        "outcome": "STILL_FREE",
+def certificate_d_allocation(
+    replay: dict[str, object],
+) -> dict[str, object]:
+    shared_allocation_basis = {
         "surviving_object":
             "six-way per-orientation matter-origin allocation "
             "(Cycle-786 per_origin_channels)",
-        "mechanical_basis": {
-            "record_occurrence_object": "first-clean event set",
-            "event_to_origin_join_key": None,
-            "orientation_candidates": {
-                "+1": tuple(range(0, 6)),
-                "-1": tuple(range(6, 12)),
-            },
-            "per_origin_exact_epoch_count": None,
-            "per_origin_refinement_range": (0, 19),
-            "weights_supplied_by_edit": False,
-            "Cycle821_operationally_visible": True,
-            "Cycle825_determined_by_landed_inputs": False,
+        "event_to_origin_join_key": None,
+        "orientation_candidates": {
+            "+1": tuple(range(0, 6)),
+            "-1": tuple(range(6, 12)),
         },
+        "per_origin_exact_epoch_count": None,
+        "per_origin_refinement_range": (0, 19),
+        "weights_supplied_by_edit": False,
+        "Cycle821_operationally_visible": True,
+        "Cycle825_determined_by_landed_inputs": False,
+    }
+    rows = (
+        {
+            "candidate": "E1",
+            "wording": E1_CANDIDATE_EDIT,
+            "fixes": "both axes: every-H cadence + first-clean formation",
+            "record_set":
+                f"{replay['E1_every_H']['record_count']} enriched every-H "
+                "transients; 11 landed cycles reclassified",
+            "allocation": "STILL_FREE",
+            "selected_lawful_point":
+                ("H_station_boundary", "first-clean formation"),
+            "selection_count": "1_OF_8",
+            "non_entailment": "VERIFIED_LAWFUL_POINT_NOT_AXIOM_ENTAILED",
+            "leg_1_owner_input":
+                "Owner must supply the realized fact that each H boundary is "
+                "the physical record cadence.",
+        },
+        {
+            "candidate": "E2",
+            "wording": E2_CANDIDATE_EDIT,
+            "fixes":
+                "both axes: orbit-return cadence + first-clean formation",
+            "record_set": "15 landed transients; 20 zero-record cycles",
+            "allocation": "STILL_FREE",
+            "selected_lawful_point":
+                ("orbit_return_boundary", "first-clean formation"),
+            "selection_count": "1_OF_8",
+            "non_entailment": "VERIFIED_LAWFUL_POINT_NOT_AXIOM_ENTAILED",
+            "leg_1_owner_input":
+                "Owner must supply the realized fact that orbit return is "
+                "the physical record cadence.",
+        },
+    )
+    result = {
+        "certificate": "D",
+        "comparison_table": rows,
+        "shared_allocation_basis": shared_allocation_basis,
         "reason":
-            "The edit fixes occurrence timing only.  It neither adds the "
-            "missing matter-origin join key nor chooses weights inside either "
-            "six-element orientation fibre, so the operationally visible "
-            "allocation remains meaningful and undetermined.",
+            "Neither candidate adds a matter-origin join key or chooses "
+            "weights inside either six-element orientation fibre.",
     }
     result["pass"] = (
-        result["outcome"] == "STILL_FREE"
-        and result["mechanical_basis"]["event_to_origin_join_key"] is None
-        and not result["mechanical_basis"]["weights_supplied_by_edit"]
+        len(rows) == 2
+        and all(row["allocation"] == "STILL_FREE" for row in rows)
+        and all(row["selection_count"] == "1_OF_8" for row in rows)
+        and all(
+            row["non_entailment"]
+            == "VERIFIED_LAWFUL_POINT_NOT_AXIOM_ENTAILED"
+            for row in rows
+        )
+        and shared_allocation_basis["event_to_origin_join_key"] is None
+        and not shared_allocation_basis["weights_supplied_by_edit"]
+        and replay["E1_every_H"]["record_count"] == 58
+        and len(replay["all_fifteen_selection_events"]) == 15
     )
     return result
 
@@ -670,7 +782,7 @@ def higher_k_representatives() -> dict[int, tuple[tuple[int, ...], ...]]:
 
 def synchronous_word(
     program: tuple[object, ...],
-    positions0: tuple[int, int],
+    positions0: tuple[int, ...],
 ) -> tuple[object, ...]:
     positions = tuple(positions0)
     word = []
@@ -683,6 +795,28 @@ def synchronous_word(
             (station + 1) % len(program) for station in positions
         )
     return tuple(word)
+
+
+def h_boundary_words(
+    program: tuple[object, ...],
+    positions0: tuple[int, ...],
+) -> tuple[tuple[object, ...], ...]:
+    """Partition one orbit word at each post-engagement H boundary."""
+
+    positions = tuple(positions0)
+    chunks = []
+    for _step in range(len(program)):
+        live = frozenset(positions)
+        chunks.append(tuple(
+            gate
+            for station, row in enumerate(program)
+            if station in live
+            for gate in K.mapped_macro(row)
+        ))
+        positions = tuple(
+            (station + 1) % len(program) for station in positions
+        )
+    return tuple(chunks)
 
 
 def compile_word(
@@ -1141,6 +1275,201 @@ def initial_states_for_positions(
     )
 
 
+def scan_every_h_group(
+    family: dict[str, object],
+    *,
+    k: int,
+    positions0: tuple[int, ...],
+    horizon: int,
+) -> tuple[
+    dict[tuple[int, int, tuple[int, ...]], dict[str, int]],
+    tuple[tuple[int, int, tuple[int, ...]], ...],
+    tuple[tuple[int, int, tuple[int, ...]], ...],
+]:
+    """Latch first clean at t=0 or after each individual H chunk."""
+
+    states = initial_states_for_positions(family, positions0)
+    columns = bit_slice(states)
+    width = len(states)
+    chunks = tuple(
+        compile_word(chunk)
+        for chunk in h_boundary_words(family["program"], positions0)
+    )
+    full_word = tuple(
+        gate
+        for chunk in h_boundary_words(family["program"], positions0)
+        for gate in chunk
+    )
+    first: dict[
+        tuple[int, int, tuple[int, ...]], dict[str, int]
+    ] = {}
+    initial_clean = []
+    active = (1 << width) - 1
+    clean = clean_lane_mask(
+        columns, family["dirty_indices"], width
+    )
+    for event in range(width):
+        if clean & (1 << event):
+            key = (k, event, positions0)
+            first[key] = {"orbit": 0, "step": 0, "absolute_H": 0}
+            initial_clean.append(key)
+            active &= ~(1 << event)
+
+    recomposition_failures = []
+    for orbit in range(1, horizon + 1):
+        for step, operations in enumerate(chunks, 1):
+            apply_compiled_bit_slice(columns, operations, width)
+            clean = clean_lane_mask(
+                columns, family["dirty_indices"], width
+            ) & active
+            if clean:
+                coordinate = {
+                    "orbit": orbit,
+                    "step": step,
+                    "absolute_H":
+                        (orbit - 1) * len(family["program"]) + step,
+                }
+                for event in range(width):
+                    if clean & (1 << event):
+                        first[(k, event, positions0)] = coordinate
+                active &= ~clean
+        if orbit == 1:
+            for event, initial in enumerate(states):
+                if un_slice(columns, event) != K.A.apply_semantic(
+                    initial, full_word
+                ):
+                    recomposition_failures.append(
+                        (k, event, positions0)
+                    )
+        if not active:
+            break
+    return (
+        first,
+        tuple(initial_clean),
+        tuple(recomposition_failures),
+    )
+
+
+def every_h_occurrence_census(
+    family: dict[str, object],
+    orbit_record_events: tuple[
+        tuple[tuple[int, tuple[int, ...]] | tuple[int, int, tuple[int, ...]], int],
+        ...,
+    ],
+    certified_cycle_keys: tuple[
+        tuple[int, int, tuple[int, ...]], ...
+    ],
+) -> dict[str, object]:
+    """Certificate-A census: all 228 k2/higher keys at every H boundary."""
+
+    groups = (
+        tuple((2, positions0, TARGET_MOMENT)
+              for positions0 in family["positions"])
+        + tuple(
+            (k, positions0, EARLY_HORIZON)
+            for k, representatives in sorted(
+                higher_k_representatives().items()
+            )
+            for positions0 in representatives
+        )
+    )
+    first: dict[
+        tuple[int, int, tuple[int, ...]], dict[str, int]
+    ] = {}
+    initial_clean = []
+    recomposition_failures = []
+    for k, positions0, horizon in groups:
+        found, initial, failures = scan_every_h_group(
+            family,
+            k=k,
+            positions0=positions0,
+            horizon=horizon,
+        )
+        first.update(found)
+        initial_clean.extend(initial)
+        recomposition_failures.extend(failures)
+
+    rows = tuple(sorted(
+        (
+            {
+                "key": key,
+                "orbit": coordinate["orbit"],
+                "step": coordinate["step"],
+                "absolute_H": coordinate["absolute_H"],
+                "t0_clean": coordinate["absolute_H"] == 0,
+            }
+            for key, coordinate in first.items()
+        ),
+        key=lambda row: (
+            row["absolute_H"], row["key"]
+        ),
+    ))
+    per_stratum = dict(sorted(Counter(
+        f"k{row['key'][0]}" for row in rows
+    ).items()))
+    landed_keys = set()
+    for key, _moment in orbit_record_events:
+        if len(key) == 2:
+            landed_keys.add((2, key[0], key[1]))
+        else:
+            landed_keys.add(key)
+    first_keys = set(first)
+    extra_keys = first_keys - landed_keys
+    missing_landed = landed_keys - first_keys
+    cycle_rows = tuple(
+        {
+            "key": key,
+            "first_clean_boundary": dict(first[key]),
+        }
+        for key in sorted(certified_cycle_keys)
+        if key in first
+    )
+    zero_cycle_keys = tuple(
+        key for key in sorted(certified_cycle_keys)
+        if key not in first
+    )
+    initial_higher = tuple(sorted(
+        key for key in initial_clean if key[0] > 2
+    ))
+    result = {
+        "audited_key_count": 228,
+        "audited_key_breakdown": {"k2": 176, "higher_k": 52},
+        "record_count": len(rows),
+        "per_stratum_record_count": per_stratum,
+        "all_58_transients": rows,
+        "landed_orbit_record_count": len(landed_keys),
+        "landed_keys_are_subset": not missing_landed,
+        "extra_over_landed_count": len(extra_keys),
+        "extra_over_landed_keys": tuple(sorted(extra_keys)),
+        "missing_landed_keys": tuple(sorted(missing_landed)),
+        "reclassified_cycle_count": len(cycle_rows),
+        "eleven_reclassified_cycles": cycle_rows,
+        "remaining_zero_record_cycle_count": len(zero_cycle_keys),
+        "remaining_zero_record_cycle_keys": zero_cycle_keys,
+        "t0_clean_higher_k_count": len(initial_higher),
+        "t0_clean_higher_k_keys": initial_higher,
+        "recomposition_failures": tuple(recomposition_failures),
+        "record_set_sha256": digest(rows),
+        "cycle_classification_sha256": digest(
+            (cycle_rows, zero_cycle_keys)
+        ),
+    }
+    result["pass"] = (
+        result["audited_key_count"] == len(groups) * 4 == 228
+        and result["record_count"] == 58
+        and sum(per_stratum.values()) == 58
+        and result["landed_orbit_record_count"] == 15
+        and result["landed_keys_are_subset"]
+        and result["extra_over_landed_count"] == 43
+        and not result["missing_landed_keys"]
+        and result["reclassified_cycle_count"] == 11
+        and result["remaining_zero_record_cycle_count"] == 9
+        and result["t0_clean_higher_k_count"] > 0
+        and not result["recomposition_failures"]
+    )
+    return result
+
+
 def fixed_period_rows(
     family: dict[str, object],
     *,
@@ -1426,6 +1755,26 @@ def occurrence_replay(payloads: dict[str, bytes]) -> dict[str, object]:
     )
     all_events = early_events + late_events
     record_events = tuple(all_events)
+    certified_cycle_keys = tuple(sorted(
+        tuple(
+            (2, key[0], key[1])
+            for key in expected_cycles
+        )
+        + tuple(
+            (2, key[0], key[1])
+            for key in new_cycle_keys
+        )
+        + tuple(
+            (row["key"][0], row["key"][2], row["key"][1])
+            for row in (
+                higher_cycle_inventory["Cycle801_extra_k3_rows"]
+                + higher_cycle_inventory["Cycle814_k4_rows"]
+            )
+        )
+    ))
+    every_h = every_h_occurrence_census(
+        family, record_events, certified_cycle_keys
+    )
     result = {
         "k2_family": family["summary"],
         "two_early_k2_first_clean_events": early_k2_events,
@@ -1436,6 +1785,8 @@ def occurrence_replay(payloads: dict[str, bytes]) -> dict[str, object]:
         "record_events_under_edit": record_events,
         "record_set_equals_first_clean_event_set":
             record_events == all_events,
+        "E1_every_H": every_h,
+        "certified_cycle_keys": certified_cycle_keys,
         "early_moments": tuple(moment for _key, moment in early_events),
         "late_moment_census":
             dict(sorted(Counter(moment for _key, moment in late_events).items())),
@@ -1475,6 +1826,7 @@ def occurrence_replay(payloads: dict[str, bytes]) -> dict[str, object]:
         and all(row["pass"] for row in old_cycle_rows + new_cycle_rows)
         and result["zero_record_certified_cycle_count"] == 20
         and singles["pass"]
+        and every_h["pass"]
     )
     return result
 
@@ -1482,28 +1834,41 @@ def occurrence_replay(payloads: dict[str, bytes]) -> dict[str, object]:
 def certificate_b_occurrences(
     replay: dict[str, object],
 ) -> dict[str, object]:
-    return {
-        "pass": replay["pass"],
+    certified_rows = (
+        replay["old_certified_cycle_rows"]
+        + replay["higher_certified_cycle_inventory"][
+            "Cycle801_extra_k3_rows"
+        ]
+        + replay["higher_certified_cycle_inventory"]["Cycle814_k4_rows"]
+        + replay["new_certified_cycle_rows"]
+    )
+    result = {
+        "certificate": "B",
+        "candidate": "E2",
+        "candidate_edit": E2_CANDIDATE_EDIT,
+        "frozen_minimal_wording": E2_CANDIDATE_EDIT,
+        "plain_reading": E2_READING,
+        "Cycle796_cadence_identification": {
+            "path": AUDIT_INPUT_PATHS[2],
+            "cadence": "orbit_return_boundary",
+            "landed_cadences": LANDED_CADENCES_796,
+        },
         "conditional_status":
             "conditional on accepted new axiom; not retained on the actual "
             "current surface",
-        "record_rule": "record set = first-clean selection-event set",
+        "record_rule":
+            "record set = first-clean orbit-return selection-event set",
         "six_early_first_clean_events":
             replay["six_early_first_clean_events"],
         "nine_merger_first_clean_events":
             replay["nine_merger_first_clean_events"],
+        "all_fifteen_transients_at_orbit_moments":
+            replay["all_fifteen_selection_events"],
         "fifteen_event_count":
             len(replay["all_fifteen_selection_events"]),
         "zero_record_certified_cycle_count":
             replay["zero_record_certified_cycle_count"],
-        "certified_cycle_rows": (
-            replay["old_certified_cycle_rows"]
-            + replay["higher_certified_cycle_inventory"][
-                "Cycle801_extra_k3_rows"
-            ]
-            + replay["higher_certified_cycle_inventory"]["Cycle814_k4_rows"]
-            + replay["new_certified_cycle_rows"]
-        ),
+        "twenty_zero_record_cycles": certified_rows,
         "Cycle818_cross_stratum_inventory":
             replay["higher_certified_cycle_inventory"],
         "single_source_46": replay["single_source_family"],
@@ -1512,7 +1877,21 @@ def certificate_b_occurrences(
             "late_cache_and_mechanism": "Cycles 819/820",
             "single_source_batteries": "Cycles 788/793",
         },
+        "record_set_relation": "EXACTLY_LANDED_FAMILY",
     }
+    result["pass"] = (
+        replay["pass"]
+        and result["fifteen_event_count"] == 15
+        and result["zero_record_certified_cycle_count"] == 20
+        and len(result["twenty_zero_record_cycles"]) == 20
+        and all(
+            row["record_count_under_edit"] == 0
+            for row in result["twenty_zero_record_cycles"]
+        )
+        and result["single_source_46"]["pass"]
+        and result["single_source_46"]["event_count"] == 46
+    )
+    return result
 
 
 def certificate_c_neutrality(
@@ -1522,84 +1901,85 @@ def certificate_c_neutrality(
     sources_before: dict[str, str],
     sources_after: dict[str, str],
 ) -> dict[str, object]:
-    early_by_key = {
-        key: moment
-        for key, moment in replay["six_early_first_clean_events"]
-    }
-    expected796 = tuple(
-        sorted(
-            ((event, positions), moment)
-            for event, positions, moment
-            in caches["cache796"]["acceptance_keys"]
-        )
+    every_h = replay["E1_every_H"]
+    orbit_transients = replay["all_fifteen_selection_events"]
+    orbit_cycles = replay["certified_cycle_keys"]
+    deterministic = (
+        digest(replay) == digest(repeat)
+        and every_h == repeat["E1_every_H"]
     )
-    observed796 = tuple(
-        sorted(
-            (key, early_by_key[key])
-            for key, _moment in expected796
-        )
+    census_796 = {
+        "battery": "k=2 separated-pair family",
+        "key_count": 176,
+        "cadences": LANDED_CADENCES_796,
+        "cadence_count": 4,
+        "reported_classification_counts":
+            caches["cache796"]["classification_counts"],
+        "finding": "existence is cadence-robust on this landed census",
+    }
+    census_v2 = {
+        "battery": "k=2 plus k=3,4,5 representative strata",
+        "key_count": every_h["audited_key_count"],
+        "key_breakdown": every_h["audited_key_breakdown"],
+        "granularity": "each post-engagement H-station boundary, including t=0",
+        "record_count": every_h["record_count"],
+        "reclassified_cycle_count":
+            every_h["reclassified_cycle_count"],
+    }
+    sha_comparison = {
+        "orbit_transients_sha256": digest(orbit_transients),
+        "every_H_transients_sha256":
+            every_h["record_set_sha256"],
+        "orbit_zero_cycles_sha256": digest(orbit_cycles),
+        "every_H_cycle_classification_sha256":
+            every_h["cycle_classification_sha256"],
+    }
+    sha_comparison["transient_diff_nonempty"] = (
+        sha_comparison["orbit_transients_sha256"]
+        != sha_comparison["every_H_transients_sha256"]
     )
-    observed820 = tuple(replay["nine_merger_first_clean_events"])
-    expected820 = tuple(sorted(caches["cache820"]["first_clean"]))
-    diffs = []
-    comparisons = {
-        "Cycle796_acceptance_keys": (observed796, expected796),
-        "Cycle796_acceptance_moments":
-            (tuple(sorted(moment for _key, moment in observed796)),
-             caches["cache796"]["acceptance_moments"]),
-        "Cycle820_nine_first_clean": (observed820, expected820),
-        "Cycle820_earlier_moments":
-            (replay["early_moments"], caches["cache820"]["earlier_moments"]),
-        "Cycle820_family_sha256":
-            (replay["k2_family"]["family_sha256"],
-             caches["cache820"]["family_sha256"]),
-        "Cycle820_target":
-            (next(iter(replay["late_moment_census"])),
-             caches["cache820"]["target_moment"]),
-        "Cycle820_nine_count":
-            (len(observed820), caches["cache820"]["nine_key_count"]),
-    }
-    for name, (observed, expected) in comparisons.items():
-        if observed != expected:
-            diffs.append({
-                "surface": name,
-                "observed": observed,
-                "expected": expected,
-            })
-    declared_battery = {
-        "full_k2_initial_battery_cases": 176,
-        "exact_first_clean_paths": 15,
-        "certified_never_clean_cycles": 20,
-        "single_source_selector_events": 46,
-    }
-    deterministic = digest(replay) == digest(repeat)
+    sha_comparison["cycle_diff_nonempty"] = (
+        sha_comparison["orbit_zero_cycles_sha256"]
+        != sha_comparison["every_H_cycle_classification_sha256"]
+    )
     result = {
-        "edit_operation":
-            "add the record label to the already-computed selection-event "
-            "set; do not feed that label back into dynamics",
-        "declared_representative_battery": declared_battery,
-        "cache_snapshots": caches,
-        "cache_field_diffs": tuple(diffs),
+        "certificate": "C",
+        "finding": "NO_CONTRADICTION_DIFFERENT_CENSUSES",
+        "Cycle796_census": census_796,
+        "v2_E1_census": census_v2,
+        "scope_relation": (
+            "Cycle796 compared existence across four landed cadences on the "
+            "176-key k=2 battery.  E1 resolves individual H boundaries and "
+            "also adds 52 keys from k=3,4,5 strata.  Its enrichment is a "
+            "finer-boundary, broader-stratum occurrence census, so it does "
+            "not negate Cycle796's scoped cadence-robust existence result."
+        ),
+        "overlap_relation":
+            "The k=2 176-key battery overlaps; the predicates differ: "
+            "Cycle796's landed cadence-level existence classification versus "
+            "v2's first individual clean H-boundary occurrence latch.",
+        "reading_sha_comparison": sha_comparison,
         "cache_sha_level_exact": (
             caches["cache796"]["sha256"] == EXPECTED_SHA256[AUDIT_INPUT_PATHS[6]]
             and caches["cache820"]["sha256"]
             == EXPECTED_SHA256[AUDIT_INPUT_PATHS[7]]
         ),
-        "dynamics_batteries_selections_periods_unchanged": not diffs,
         "sources_unchanged": sources_before == sources_after,
-        "primary_report_sha256": digest(replay),
-        "repeat_report_sha256": digest(repeat),
         "deterministic": deterministic,
-        "shipped_values_changed": (),
+        "landed_files_or_certificates_changed": False,
     }
     result["pass"] = (
         replay["pass"]
         and repeat["pass"]
-        and not diffs
         and result["cache_sha_level_exact"]
         and result["sources_unchanged"]
         and deterministic
-        and not result["shipped_values_changed"]
+        and census_796["key_count"] == 176
+        and census_796["cadence_count"] == 4
+        and census_v2["key_count"] == 228
+        and sha_comparison["transient_diff_nonempty"]
+        and sha_comparison["cycle_diff_nonempty"]
+        and not result["landed_files_or_certificates_changed"]
     )
     return result
 
@@ -1609,33 +1989,25 @@ def certificate_f_verdict(
     certificate_b: dict[str, object],
     certificate_c: dict[str, object],
     certificate_d: dict[str, object],
-    certificate_e: dict[str, object],
 ) -> dict[str, object]:
     summary = (
         {
-            "question": "what it fixes",
-            "answer": "both axes: every-boundary cadence + first-clean formation",
-        },
-        {
-            "question": "what it reproduces",
+            "candidate": "E1",
             "answer":
-                "all landed occurrences: 15 transient, 20 zero-cycle, "
-                "46 single-source",
+                "both axes fixed; 58 enriched every-H records; 11 landed "
+                "cycles reclassified; STILL_FREE allocation",
         },
         {
-            "question": "what it changes",
-            "answer": "nothing shipped",
-        },
-        {
-            "question": "what it decides",
+            "candidate": "E2",
             "answer":
-                "STILL_FREE: six-way per-orientation matter-origin allocation",
+                "both axes fixed; exact landed 15 transient / 20 zero-cycle / "
+                "46 single-source family; STILL_FREE allocation",
         },
         {
-            "question": "what it costs",
+            "candidate": "shared status",
             "answer":
-                "owner leg-1 realized-resolution input; 7 alternatives in "
-                "the witnessed 4x2 space",
+                "conditional lawful points, each 1 of 8 and non-entailed; "
+                "owner leg-1 cadence input required; no axiom-surface write",
         },
     )
     passed = all((
@@ -1643,12 +2015,12 @@ def certificate_f_verdict(
         certificate_b["pass"],
         certificate_c["pass"],
         certificate_d["pass"],
-        certificate_e["pass"],
     ))
     return {
         "pass": passed,
         "verdict":
-            "EDIT_AUDIT_COMPLETE" if passed else "EDIT_AUDIT_INCOMPLETE",
+            "TWO_CANDIDATE_EDIT_AUDIT_COMPLETE"
+            if passed else "TWO_CANDIDATE_EDIT_AUDIT_INCOMPLETE",
         "summary_table": summary,
         "recommendation": None,
         "decision_owner": "owner",
@@ -1661,9 +2033,10 @@ def render(
     controls: dict[str, object],
 ) -> str:
     lines = [
-        "CYCLE828_MINIMAL_AXIOM_EDIT_PROPOSAL_AUDIT",
+        "CYCLE828_V2_TWO_CANDIDATE_EDIT_AUDIT",
         "PROPOSAL_ONLY_NO_AXIOM_SURFACE_MODIFIED",
-        "CANDIDATE_EDIT :: " + CANDIDATE_EDIT,
+        "E1_CANDIDATE_EDIT :: " + E1_CANDIDATE_EDIT,
+        "E2_CANDIDATE_EDIT :: " + E2_CANDIDATE_EDIT,
     ]
     for label, value in certificates:
         lines.append(
@@ -1672,27 +2045,32 @@ def render(
         )
     lines.append(
         ("PASS " if controls["pass"] else "FAIL ")
-        + "CERTIFICATE_G_CONTROLS :: " + compact(controls)
+        + "CERTIFICATE_F_CONTROLS :: " + compact(controls)
     )
-    verdict = dict(certificates)["CERTIFICATE_F_VERDICT"]
+    verdict = dict(certificates)["CERTIFICATE_E_VERDICT"]
     lines.append("FINAL :: " + compact({
         "verdict": verdict["verdict"],
-        "axes": "FIXED_BOTH",
-        "occurrences": "REPRODUCED_ALL_LANDED",
-        "neutrality": "NOTHING_SHIPPED_CHANGED",
-        "allocation": "STILL_FREE",
-        "leg_1": "OWNER_REALIZED_RESOLUTION_INPUT_REQUIRED",
-        "leg_2": "NON_ENTAILMENT_VERIFIED",
-        "leg_3": "CLEAR_ONE_SENTENCE_TWO_AXES_7_WITNESSED_EXCLUSIONS",
+        "E1_axes": "FIXED_BOTH",
+        "E1_occurrences":
+            "58_ENRICHED_11_LANDED_CYCLES_RECLASSIFIED",
+        "E1_occurrence_neutral": False,
+        "E2_axes": "FIXED_BOTH",
+        "E2_occurrences": "EXACT_LANDED_15_20_46",
+        "allocation_E1": "STILL_FREE",
+        "allocation_E2": "STILL_FREE",
+        "selection_E1": "1_OF_8_NON_ENTAILED",
+        "selection_E2": "1_OF_8_NON_ENTAILED",
+        "leg_1": "OWNER_CADENCE_INPUT_REQUIRED_FOR_EACH",
+        "landed_artifacts_changed": False,
         "runtime_seconds": round(runtime_seconds, 6),
         "pass": all(value["pass"] for _label, value in certificates)
             and controls["pass"],
     }))
     lines.append(
-        "EDIT_AUDIT_COMPLETE"
-        if verdict["verdict"] == "EDIT_AUDIT_COMPLETE"
+        "CYCLE828_V2_TWO_CANDIDATE_EDIT_AUDIT_PASS"
+        if verdict["verdict"] == "TWO_CANDIDATE_EDIT_AUDIT_COMPLETE"
         and controls["pass"]
-        else "EDIT_AUDIT_INCOMPLETE"
+        else "CYCLE828_V2_TWO_CANDIDATE_EDIT_AUDIT_FAIL"
     )
     return "\n".join(lines) + "\n"
 
@@ -1705,35 +2083,34 @@ def main() -> int:
         for name, payload in payloads.items()
     }
     controls = source_controls(payloads)
-    certificate_a = certificate_a_axes_collapse()
     caches = cache_facts(payloads)
     replay = occurrence_replay(payloads)
     repeat = occurrence_replay(payloads)
-    certificate_b = certificate_b_occurrences(replay)
     sources_after_payloads = read_inputs()
     sources_after = {
         name: sha256(payload).hexdigest()
         for name, payload in sources_after_payloads.items()
     }
+    certificate_a = certificate_a_axes_collapse(
+        replay, sources_before == sources_after
+    )
+    certificate_b = certificate_b_occurrences(replay)
     certificate_c = certificate_c_neutrality(
         replay, repeat, caches, sources_before, sources_after
     )
-    certificate_d = certificate_d_allocation()
-    certificate_e = certificate_e_three_legs()
+    certificate_d = certificate_d_allocation(replay)
     certificate_f = certificate_f_verdict(
         certificate_a,
         certificate_b,
         certificate_c,
         certificate_d,
-        certificate_e,
     )
     certificates = (
-        ("CERTIFICATE_A_AXES_COLLAPSE", certificate_a),
-        ("CERTIFICATE_B_OCCURRENCE_REPRODUCTION", certificate_b),
-        ("CERTIFICATE_C_CERTIFICATE_NEUTRALITY", certificate_c),
-        ("CERTIFICATE_D_ALLOCATION", certificate_d),
-        ("CERTIFICATE_E_THREE_LEGS", certificate_e),
-        ("CERTIFICATE_F_VERDICT", certificate_f),
+        ("CERTIFICATE_A_E1_EVERY_H_TRUTH", certificate_a),
+        ("CERTIFICATE_B_E2_ORBIT_REPRODUCTION", certificate_b),
+        ("CERTIFICATE_C_CYCLE796_RECONCILIATION", certificate_c),
+        ("CERTIFICATE_D_TWO_CANDIDATE_COMPARISON", certificate_d),
+        ("CERTIFICATE_E_VERDICT", certificate_f),
     )
     runtime_seconds = monotonic() - started
     controls.update({

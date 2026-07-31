@@ -1,0 +1,33 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR18-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle828_axiom_edit_audit_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle828_edit_audit_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 7
+    }
+  },
+  "checker_disclosure": "terminal PASS; the legacy reproduction-attack certificate retains its v1-era label (PRIMARY_REFUTED) while its computation agrees with v2's claimed E1 diff \u2014 stale label semantics disclosed, not edited",
+  "claim_type": "bounded_theorem",
+  "cycle": 828,
+  "files": {
+    "docs/AXIOM_EDIT_AUDIT_CYCLE828_BOUNDED_THEOREM_NOTE_2026-07-28.md": "71b26ce45db1680ef2171e20023244e83831932d4de1b7d5638b27495b5d771b",
+    "logs/runner-cache/frontier_cycle828_axiom_edit_audit_2026_07_28.txt": "5504ba516c7413956797040e1299856df4422f8fd0f7903bb31ab7f3bd28e803",
+    "logs/runner-cache/frontier_cycle828_edit_audit_independent_check_2026_07_28.txt": "2742da81f9b35d77b36311dc46cf6272989a8c96aae3e7c85db958f8f239b85b",
+    "scripts/frontier_cycle828_axiom_edit_audit_2026_07_28.py": "74d6aefee383ced099d04fde79b6389f9f22fd38379ce83c99f2518246248f7e",
+    "scripts/frontier_cycle828_edit_audit_independent_check_2026_07_28.py": "1be437ddb9623e3aea2370c41c1294f95edd8ab51cd01e31a69aee52fd0e4f44"
+  },
+  "independent_audit_still_required": true,
+  "reconciliation": "796's four-cadence census (176 k2 keys) vs E1's every-H sweep (228 k2..k5 keys) \u2014 different censuses, no contradiction",
+  "verdicts": [
+    "EDIT_AUDIT_COMPLETE (two candidates, PROPOSAL ONLY \u2014 no axiom modified)",
+    "E1 'Records form at first admissibility.': ENRICHED universe \u2014 58 records (37/16/4/1 by stratum); 43 enrichments; 11 cycles reclassified; 7 keys clean at t=0; NOT occurrence-neutral (reversal nineteen: v1's neutrality claim refuted)",
+    "E2 'Records form at first orbit admissibility.': landed family EXACT (15/20/46)",
+    "both: axes collapse; 1-of-8; allocation STILL_FREE; non-entailed; leg-1 owner input"
+  ]
+}

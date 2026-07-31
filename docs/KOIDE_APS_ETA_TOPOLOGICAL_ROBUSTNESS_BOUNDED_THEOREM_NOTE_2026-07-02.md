@@ -1,156 +1,91 @@
-# APS `η = 2/9` Topological Robustness at the `Z_3` Fixed Locus — Bounded Member Note
+# Local `Z_3` Normal-Plane Density `2/9` — Partial Narrowing
 
-**Current authority (2026-07-11):** older admission labels below are historical
-provenance only. The R-eta readout remains an `open_gate`.
-
-**Date:** 2026-07-02
+**Date:** 2026-07-02; narrowed 2026-07-31
 **Type:** bounded_theorem
-This source note does not set or predict an audit outcome.
+**Audit authority:** independent audit lane only.
 **Primary runner:**
-[`scripts/frontier_koide_aps_topological_robustness.py`](../scripts/frontier_koide_aps_topological_robustness.py)
-(41 checks, all computed, none asserted), with cache
+[`scripts/frontier_koide_aps_topological_robustness.py`](../scripts/frontier_koide_aps_topological_robustness.py),
+with cache
 [`logs/runner-cache/frontier_koide_aps_topological_robustness.txt`](../logs/runner-cache/frontier_koide_aps_topological_robustness.txt).
 
-## Purpose
+The historical filename is kept to preserve the stable claim identifier. This
+revision narrows the scientific content to the finite local statement that the
+runner actually proves. It does not set or predict an audit outcome.
 
-The runner above has carried the topological-robustness layer of the ambient
-APS `η = 2/9` support chain since 2026-04-21, but its only documentation
-lived inside the package survey
-`KOIDE_Q_DELTA_CLOSURE_PACKAGE_README_2026-04-21.md` (backticked
-non-load-bearing context reference; package survey). Downstream rows that
-consume the robustness result — e.g. the reviewer stress test's CAT-B
-objection B2 — therefore had no member note to cite and were routing an
-evidence edge through the survey. This note is the standalone, citable,
-auditable member row for exactly what those 41 checks establish, and nothing
-more.
+## Bounded claim
 
-## Claim (bounded)
-
-On the premise set declared in §Premises: the fractional part of the
-equivariant APS `η`-invariant contribution at an isolated `Z_3` fixed point
-is determined by the tangent-representation weights `(a, b) mod 3` alone —
-with no dependence on the Riemannian metric — via the closed form
+Let `R` be the real two-dimensional rotation through `2π/3`, acting on one
+normal plane. Let `ζ = exp(2πi/3)`, and define the finite inverse-normal-
+determinant average
 
 ```text
-η(a, b) = (1/3) · Σ_{k=1,2} 1 / [(ζ^{ka} − 1)(ζ^{kb} − 1)],   ζ = e^{2πi/3},
+L(a,b) = (1/3) Σ_{k=1,2} 1 / [(ζ^(ka) - 1)(ζ^(kb) - 1)].
 ```
 
-and for the declared `(1, 2)` tangent class this evaluates exactly to
+For the conjugate characters `(a,b)=(1,2)` of this one real rotation plane,
 
 ```text
-η(1, 2) = 2/9.
+det_R(I - R) = (1 - ζ)(1 - ζ²) = 3,
+L(1,2) = (1/3)(1/3 + 1/3) = 2/9.
 ```
 
-Equivalently: within the declared formalization there is no metric dial to
-turn — the space of `Z_3`-equivariant transverse metrics is exactly the
-one-parameter scalar family `λ·I`, and the closed form contains no metric
-symbol.
+Moreover, every symmetric bilinear form `G` on this one real plane satisfying
+`Rᵀ G R = G` is a scalar multiple of the identity. Thus the runner proves a
+one-dimensional invariant-metric commutant for this local two-real-dimensional
+representation. It does not prove that all equivariant metrics on a
+four-dimensional tangent representation or on a global manifold are scalar.
 
-## What the 41 checks establish (by tactic, at executable strength)
+## Executable checks
 
-- **T1 (5 checks) — closed-form evaluation.** Exact symbolic (sympy)
-  evaluation of the character sum: `η(1,2) = 2/9`; permutation symmetry
-  `η(1,2) = η(2,1)`; the distinct `(1,1)` class gives `1/9`; the value
-  depends on the weights only mod 3 (`η(1,4) = η(1,1)`, `η(1,5) = η(1,2)`).
-- **T2 (11 checks) — equivariant-metric rigidity (the smoothing surface).**
-  The equivariance equations `RᵀGR = G` for a general symmetric transverse
-  `2×2` metric are solved **completely**: the unique solution family is
-  `g12 = 0`, `g22 = g11`, i.e. `G = λ·I` — the equivariant metric freedom is
-  exactly one scalar dimension, so no nontrivial equivariant deformation
-  exists to perturb the character computation. The symbolic `η` expression
-  carries no metric free symbols. Eight integer lifts `(1+3m, 2+3n)` of the
-  `(1,2)` class all return `2/9`.
-- **T3 (5 checks) — Euler classes.** `(1 − ζ^a)(1 − ζ^b) = 3` exactly for
-  the `(1,2)/(2,1)` classes; `|Euler|² = 9` for the `(1,1)/(2,2)` classes.
-- **T4 (4 checks) — K-theoretic character formula.** On `R(Z_3) ⊗ Q` the
-  localized value is `η_V = (2m₀ − m₁ − m₂)/9` for
-  `V = m₀χ₀ + m₁χ₁ + m₂χ₂`; the invariant isotype `χ₀` gives `2/9`; the
-  regular representation gives `0` (Schur cancellation); the formula is
-  `Q`-linear in isotype multiplicities.
-- **T5 (6 checks) — fractional-part face.** `(2/9 + n) mod 1 = 2/9` across
-  integer shifts `n ∈ {0, 1, −1, 5, −3, 100}` — the executable face of the
-  APS fractional-part invariance premise (P2 below), which is what protects
-  the value against the integer bulk contribution.
-- **T6 (6 checks) — equivariant spin structure (the PL-to-smooth-spin
-  surface).** Existence condition `gcd(1, 2, 3) = 1` verified; `Z_p` has no
-  2-torsion for odd `p ∈ {3, 5, 7, 9, 11}`. The uniqueness reading
-  (`H¹(L(p;1,1); Z₂) = 0` for odd `p`, hence a unique equivariant spin
-  structure) and the PL-compatibility framing (PL `S³` smoothable in
-  `dim ≤ 6`; PL-APS matching smooth) are stated classification reasoning in
-  the runner's own text, with the torsion condition as their executable
-  face.
-- **T7 (2 checks) — route independence.** Two independent symbolic routes —
-  the fixed-point character sum and the isotype/K-theory formula — agree
-  exactly at `2/9`; the value is invariant under the `Z_3^*` action on
-  tangent classes (`(1,2) → (2,1)`).
-- **T8 (2 checks) — representation sensitivity.** The `(1,1)` class gives
-  `1/9 ≠ 2/9`: the value is a property of the tangent class, not a metric
-  artifact; the core algebraic identity `(ω − 1)(ω² − 1) = 3` pins the
-  denominator.
+The runner reports 41 finite algebra and representation checks:
 
-Tactic totals: 5 + 11 + 5 + 4 + 6 + 6 + 2 + 2 = 41; the runner prints
-`Summary: PASS=41, FAIL=0`.
+- five exact evaluations of the defined average and its dependence on
+  characters modulo three;
+- eleven checks of the `2×2` real normal-plane commutant and integer lifts;
+- five determinant checks;
+- four independently evaluated character-weighted averages;
+- six elementary integer-shift checks;
+- six coprimality and odd-order parity checks, labeled only as arithmetic;
+- two cross-formula checks; and
+- two representation-sensitivity checks.
 
-## Premises (named; consumed, not established here)
+The character-weighted values `(2/9,-1/9,-1/9)` are computed from the finite
+sum in the runner rather than installed as theorem premises. The integer-shift,
+coprimality, and parity checks are elementary arithmetic only; they are not
+tests of an APS variation theorem, a spin-lift theorem, or PL smoothability.
 
-- **P1 — ABSS equivariant fixed-point formula.** The
-  Atiyah–Bott–Segal–Singer localization of the equivariant index/`η` at an
-  isolated fixed point is consumed as the named mathematical input whose
-  finite-dimensional consequences the runner computes exactly. It is not
-  re-proven here.
-- **P2 — APS fractional-part invariance.** The mod-`Z` part of `η` is the
-  metric-stable invariant (the integer part may shift under deformation);
-  consumed as a named input, with T5 as its executable face.
-- **P3 — kinematic inputs.** The `C_3[111]` rotation on `Z³` with tangent
-  weights `(1, 2)` at an isolated fixed locus on the `PL S³ × R` surface.
-  These are runner-verified upstream
-  (`scripts/frontier_koide_c3_spatial_rotation.py`, 16/16; the multi-route
-  ambient value in `scripts/frontier_koide_aps_eta_invariant.py`, 21/21) and
-  enter this note as declared inputs; the one-hop note authorities are
-  listed below.
+## One-hop local support
 
-## One-hop authorities
+[`KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`](KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md)
+contains the longer block-by-block calculation and explicitly keeps global
+PL/ABSS applicability outside its direct claim. The present note consumes it
+only as local finite-algebra support. Its complete text is transported to the
+independent audit packet so that this boundary is visible rather than clipped.
 
-- [`KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md`](KOIDE_APS_BLOCK_BY_BLOCK_FORCING_NOTE_2026-04-21.md)
-  — ABSS applicability and the ambient `η = 2/9` block-by-block forcing
-  chain (the value authority this note's robustness layer protects).
-- [`S3_CAP_UNIQUENESS_NOTE.md`](S3_CAP_UNIQUENESS_NOTE.md)
-  — the `Cl(3)/Z³ → PL S³ × R` continuum-limit surface on which the fixed
-  locus lives.
+## Open obligations and exclusions
 
-## Boundary (what this note does NOT claim)
+This note and runner do not establish any of the following:
 
-- It does **not** derive the physical Brannen-phase bridge. Nothing here
-  identifies the ambient APS invariant with the physical selected-line
-  observable. That identification is exactly the `R-η` readout
-  identification registered as Tier-A `AC_phi_lambda` sub-admission (ii) in
-  `docs/audit/data/premise_decision_history.json`, which treats the magnitude as
-  fixed-locus arithmetic conditional on `R-eta`, not as an admitted number.
-  This note is part of that fixed-locus arithmetic layer; it adds no admission
-  and discharges none.
-- It does **not** select the `(1, 2)` tangent class as the physical class.
-  T8 shows the value distinguishes tangent classes; which class is physical
-  is upstream kinematic content (P3), not a consequence of robustness.
-- It does **not** re-prove ABSS or the APS fractional-part theorem (P1/P2
-  are named premises; a bounded verdict is bounded on them).
-- It does **not** derive a dynamical metric law. The statement is
-  metric-*independence* of the fractional fixed-point contribution — it
-  makes no claim about which metric law holds.
-- It does **not** promote the package survey, alter any audit status, or
-  register anything in the Tier-A registry.
+- an operator-specific equivariant APS or eta localization formula;
+- a four-real-dimensional isolated-fixed-point tangent theorem;
+- reconciliation of isolated fixed points with fixed axes or timelike
+  fixed submanifolds;
+- a global `PL S³ × R` compactification or a PL-to-smooth APS bridge;
+- existence or uniqueness of an equivariant spin lift;
+- metric independence of a global operator invariant;
+- selection of a physical tangent class; or
+- the R-eta/Brannen-phase carrier, unit, or readout map.
 
-## Honest auditor read
+Those obligations require separate direct authorities with a specified
+operator, fixed-set geometry, normalization, and boundary convention. The
+current physical readout target remains the open derivation obligation at
+`docs/AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md`. Historical
+admission decisions have provenance value only and no premise weight here.
 
-The load-bearing content is finite exact symbolic algebra: closed-form
-character sums, a complete solve of the `2×2` equivariance equations, and
-Schur-orthogonality arithmetic — all recomputed by the runner, none
-asserted. The theorem-level lifting is done by the two named mathematical
-premises (P1, P2), and the physical relevance of the `(1, 2)` class rides on
-the kinematic inputs (P3). This note's claim is bounded on those premises and
-should not be read as more. In particular the note's value to the lane is
-defensive: it removes "the `2/9` depends on a metric choice" as an objection,
-and leaves the genuinely open step — the physical `R-η` identification —
-exactly where the Tier-A registry says it is.
+In particular, a pair of complex tangent weights at an isolated point would
+describe a real four-dimensional tangent representation. Its invariant metric
+commutant is not the `2×2` commutant computed here. No global “no metric dial”
+conclusion is drawn from the local normal-plane calculation.
 
 ## Verification
 
@@ -160,9 +95,13 @@ python3 scripts/frontier_koide_aps_topological_robustness.py
 
 Expected: `Summary: PASS=41, FAIL=0`.
 
-**Restricted-packet transport record (2026-07-29):** the packet builder now
-preserves the complete SHA-verified cached stdout for the primary runner and
-the byte-complete one-hop block-by-block authority above. The scoped regression
-test is `docs/audit/scripts/tests/test_koide_aps_eta_packet_repair.py`. This is
-an evidence-transport repair only; it changes neither the bounded claim,
-premises P1--P3, nor the exclusions in §Boundary.
+## Restricted-packet transport record (2026-07-31)
+
+The packet builder preserves the complete identity-verified cached stdout for
+the primary runner and the complete one-hop block-by-block support note. The
+scoped regression is
+`docs/audit/scripts/tests/test_koide_aps_eta_packet_repair.py`.
+
+This is evidence transport, not audit ratification. Full evidence may confirm,
+demote, or reject a claim; the independent audit lane decides. No audit
+verdict, effective status, or generated audit output is authored here.

@@ -1,182 +1,175 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_aps_topological_robustness.py
-runner_sha256: 63a3645cf0e4a715f51c8d1973d3aa2e51c750725c75db974fdcb361477f2f0a
-timeout_sec: 600
+runner_sha256: a985cd39d9eb147fbccc7b915ca71c382031990ab968ea46967467faa6bb5e23
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.51
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 ========================================================================
-APS η-invariant topological robustness at Z_3 fixed point
+LOCAL Z_3 NORMAL-PLANE DENSITY CERTIFICATE
 ========================================================================
 
-Target: verify that equivariant APS η at an isolated Z_3 fixed point
-with tangent weights (a, b) equals (1/3) Σ_{k=1,2} 1/[(ζ^{ka}-1)(ζ^{kb}-1)]
-purely from the tangent rep data, and is METRIC-INDEPENDENT.
+Scope under test
+----------------
+The representation is one real two-dimensional normal plane with the order-
+three rotation R(2*pi/3). Its complex eigencharacters are the conjugate pair
+(1,2). The finite functional checked here is defined by
 
-This is the content of the Atiyah-Bott-Segal-Singer equivariant
-fixed-point theorem for Dirac operators.
+  L(a,b) = (1/3) * sum_{k=1,2}
+           1 / ((zeta^(k*a)-1) * (zeta^(k*b)-1)).
 
-========================================================================
-T1: Direct equivariant fixed-point formula (depends only on (a, b, p))
-========================================================================
-  [PASS] (T1.1) Equivariant η fixed-point at weights (1, 2) = 2/9  (η_(1,2) = 2/9)
-  [PASS] (T1.2) η is symmetric under weight permutation: η(1,2) = η(2,1)  (η(2,1) = 2/9)
-  [PASS] (T1.3) (1, 1) weights give 1/9 (different class, not retained)  (η(1,1) = 1/9)
-  [PASS] (T1.4) η(1, 4) = η(1, 1) (depends only on weights mod 3)  (η(1, 4) = 1/9, η(1, 1) = 1/9)
-  [PASS] (T1.5) η(1, 5) = η(1, 2) (depends only on weights mod 3)  (η(1, 5) = 2/9, η(1, 2) = 2/9)
+The executable conclusions are deliberately local:
 
-========================================================================
-T2: Z_3-invariant transverse metric is forced scalar → no metric to vary
-========================================================================
+  * det_R(I-R) is 3;
+  * L(1,2) is 2/9;
+  * the symmetric commutant of R on this one real plane is scalar;
+  * finite character-weighted versions agree with direct evaluation.
 
-The "metric freedom" on the transverse R² (normal bundle at the fixed
-axis) is the set of positive-definite symmetric 2x2 matrices G. A metric
-is Z_3-equivariant iff R^T G R = G for the 2π/3 rotation R. Executable
-claim: the space of such G is 1-dimensional (scalar multiples of I), so
-there is NO non-trivial metric deformation to perturb the ABSS character
-computation against.
-
-  [PASS] (T2.1) Z_3-equivariance of a symmetric G forces g12 = 0 and g22 = g11  (sol = [{g12: 0, g22: g11}])
-  [PASS] (T2.2) λ·I is Z_3-equivariant for every λ > 0 (1-parameter family)  (R^T (λI) R = λI exactly)
-  [PASS] (T2.3) Symbolic η(1,2,3) contains no metric free symbols  (free_symbols(η) = set())
-  [PASS] (T2.4-0,0) η for lift (1+3·0, 2+3·0) = η(1,2) = 2/9  (η = 2/9)
-  [PASS] (T2.4-1,0) η for lift (1+3·1, 2+3·0) = η(1,2) = 2/9  (η = 2/9)
-  [PASS] (T2.4-0,1) η for lift (1+3·0, 2+3·1) = η(1,2) = 2/9  (η = 2/9)
-  [PASS] (T2.4-1,1) η for lift (1+3·1, 2+3·1) = η(1,2) = 2/9  (η = 2/9)
-  [PASS] (T2.4-2,3) η for lift (1+3·2, 2+3·3) = η(1,2) = 2/9  (η = 2/9)
-  [PASS] (T2.4--1,2) η for lift (1+3·-1, 2+3·2) = η(1,2) = 2/9  (η = 2/9)
-  [PASS] (T2.4-3,3) η for lift (1+3·3, 2+3·3) = η(1,2) = 2/9  (η = 2/9)
-  [PASS] (T2.4--2,-1) η for lift (1+3·-2, 2+3·-1) = η(1,2) = 2/9  (η = 2/9)
+The calculation is not an operator localization theorem. A pair of complex
+tangent weights at an isolated point would be a four-real-dimensional
+representation, whose symmetric commutant is not the one computed below.
+Nothing here establishes a global manifold, smoothability, a spin lift,
+operator metric invariance, a physical carrier, a unit, or a readout map.
 
 ========================================================================
-T3: The Euler class (1-ζ^a)(1-ζ^b) = 3 is topological, not metric
-========================================================================
-  [PASS] (T3.1) Euler class (1 - ζ)(1 - ζ²) = 3 at Z_3 fixed point  (Euler = 3)
-  [PASS] (T3.2) |Euler|² for weights (1,1) = 9  (|Euler|² = 9)
-  [PASS] (T3.3) Euler class for weights (1, 2) = 3  (Euler = 3)
-  [PASS] (T3.3) Euler class for weights (2, 1) = 3  (Euler = 3)
-  [PASS] (T3.2) |Euler|² for weights (2,2) = 9  (|Euler|² = 9)
-
-========================================================================
-T4: K-theoretic / index-theoretic identity
-========================================================================
-  [PASS] (T4.1) χ_0 isotype (Z_3-invariant selector) gives η = 2/9  (η(χ_0) = 2/9)
-  [PASS] (T4.2) Regular rep (all isotypes) gives η = 0  (consistency with non-orbifolded total-space η)
-  [PASS] (T4.3) η-formula is Q-linear in isotype multiplicities (K-theoretic)  (η(m0·χ0 + m1·χ1 + m2·χ2) = 2*m0/9 - m1/9 - m2/9)
-  [PASS] (T4.4) η(regular rep χ_0 + χ_1 + χ_2) = 0 (Schur cancellation)  (η(reg) = 0)
-
-========================================================================
-T5: Fractional APS η (mod Z) is a homotopy invariant
-========================================================================
-  [PASS] (T5.0) (2/9 + 0) mod 1 = 2/9  (frac = 2/9)
-  [PASS] (T5.1) (2/9 + 1) mod 1 = 2/9  (frac = 2/9)
-  [PASS] (T5.-1) (2/9 + -1) mod 1 = 2/9  (frac = 2/9)
-  [PASS] (T5.5) (2/9 + 5) mod 1 = 2/9  (frac = 2/9)
-  [PASS] (T5.-3) (2/9 + -3) mod 1 = 2/9  (frac = 2/9)
-  [PASS] (T5.100) (2/9 + 100) mod 1 = 2/9  (frac = 2/9)
-
-========================================================================
-T6: Retained kinematic data suffice for the computation
+T1: DIRECT FINITE-AVERAGE EVALUATION
 ========================================================================
 
-The fixed-point contribution η_(1,2) = 2/9 is determined by:
+These checks use exact cube roots of unity. They establish values of the
+declared finite rational function only. The symbol L is a local density label;
+no operator invariant is inferred from its value.
 
-  1. The orbifold structure Z_3 acting with isolated fixed points.
-     - Retained: C_3[111] = spatial 2π/3 rotation about (1,1,1) of Z³
-       lattice (verified in frontier_koide_c3_spatial_rotation.py).
-     - Retained: fixed-locus on PL S³ × R = two codim-3 timelike worldlines.
-
-  2. The tangent weights (a, b) mod 3.
-     - Retained: (1, 2) from the 2D transverse-plane rotation action
-       (eigenvalues ω, ω² of R on the normal plane).
-
-  3. The Z_3-equivariant Dirac spin structure.
-     - The spin structure itself is topological / obstruction-theoretic:
-       a Z_3-equivariant spin structure on PL S³ × R exists because
-       the Z_3 action has isolated fixed points with coprime weights
-       (1, 2) — gcd(1, 2, 3) = 1.
-
-  [PASS] (T6.1) gcd(1, 2, 3) = 1 (Z_3-spin structure exists for (1, 2) weights)  (gcd = 1)
-  [PASS] (T6.2-p=3) odd p = 3 ⟹ Z_p has no 2-torsion ⟹ spin structure unique  (|Z_3|_2 = gcd(2, 3) = 1)
-  [PASS] (T6.2-p=5) odd p = 5 ⟹ Z_p has no 2-torsion ⟹ spin structure unique  (|Z_5|_2 = gcd(2, 5) = 1)
-  [PASS] (T6.2-p=7) odd p = 7 ⟹ Z_p has no 2-torsion ⟹ spin structure unique  (|Z_7|_2 = gcd(2, 7) = 1)
-  [PASS] (T6.2-p=9) odd p = 9 ⟹ Z_p has no 2-torsion ⟹ spin structure unique  (|Z_9|_2 = gcd(2, 9) = 1)
-  [PASS] (T6.2-p=11) odd p = 11 ⟹ Z_p has no 2-torsion ⟹ spin structure unique  (|Z_11|_2 = gcd(2, 11) = 1)
+  [PASS] (T1.1) L(1,2) = 2/9  (L(1,2) = 2/9)
+  [PASS] (T1.2) L is symmetric under character permutation  (L(2,1) = 2/9)
+  [PASS] (T1.3) L(1,1) = 1/9  (L(1,1) = 1/9)
+  [PASS] (T1.4) L(1,4) = L(1,1), so characters reduce modulo three  (L(1,4) = 1/9)
+  [PASS] (T1.5) L(1,5) = L(1,2), so characters reduce modulo three  (L(1,5) = 2/9)
 
 ========================================================================
-T7: Formal metric-independence statement (discharging C2)
+T2: ONE REAL NORMAL-PLANE COMMUTANT
 ========================================================================
 
-THEOREM (APS η metric-independence at isolated Z_3 fixed points).
-  Let M be a closed oriented 4-manifold with a smooth Z_3 action
-  having isolated fixed points. At each fixed point, let the Z_3
-  tangent representation have weights (a, b) mod 3. Then the
-  FRACTIONAL PART of the equivariant APS η-invariant at each fixed
-  point is:
-    { (1/3) Σ_{k=1,2} 1/[(ζ^{ka} - 1)(ζ^{kb} - 1)] } mod 1
-  and depends only on (a, b) mod 3 — not on the Riemannian metric on M.
+Let G be a general symmetric 2x2 bilinear form on one real normal plane.
+Solving R^T G R = G for the plane rotation is a complete calculation in this
+two-real-dimensional domain. It does not describe a four-dimensional tangent
+space or metrics away from the fixed normal fibre.
 
-PROOF SKETCH.
-  The Atiyah-Bott-Segal-Singer equivariant fixed-point formula for a
-  Z_p-equivariant Dirac operator D_g at an isolated fixed point p_0 is:
-    χ_{ind_g(D)}(p_0) = 1 / det_{T_{p_0} M}(1 - g)
-  This character is purely representation-theoretic. The APS η-invariant
-  on the orbifold quotient M/Z_p has a fixed-point contribution
-  proportional to this character. Metric deformations of M (Z_p-equivariantly)
-  do not change the tangent Z_p rep, hence do not change the character,
-  hence do not change the fixed-point contribution.
-  The BULK η (smooth-part contribution) can change by an integer under
-  metric deformation, so the FRACTIONAL part is the robust invariant.
-
-APPLICATION TO RETAINED Cl(3)/Z³.
-  The retained C_3[111] action on PL S³ × R has isolated fixed points
-  with (1, 2) weights. The fractional APS η at each fixed point is 2/9.
-  This is independent of the specific dynamical metric law on PL S³ × R
-  (which remains open per frontier_s3_anomaly_spacetime_lift.py).
-
-CONCLUSION. The ambient APS η = 2/9 support route is METRIC-INDEPENDENT
-and thus does NOT require the retained dynamical metric law
-compatibility as a separate condition. The kinematic retention
-(C_3[111] spatial rotation, tangent weights) + the
-Atiyah-Bott-Segal-Singer theorem jointly fix the ambient APS value.
-
-What remains is not a metric issue but the physical Brannen-phase bridge
-from that ambient invariant to the selected-line observable.
-
-  [PASS] (T7.1) ABSS fixed-point formula (1,2) = isotype-K-theory χ_0 formula = 2/9  (η_fp = 2/9, η_iso = 2/9)
-  [PASS] (T7.2) η(1,2) = η(2,1) (Z_3^*-orbit invariance of ABSS value)  (η(2,1) = 2/9)
+  [PASS] (T2.1) the 2x2 symmetric commutant has g12=0 and g22=g11  (solutions = [{g12: 0, g22: g11}])
+  [PASS] (T2.2) every positive scalar multiple of I is invariant on the plane  (R^T (scale I) R = scale I)
+  [PASS] (T2.3) the finite average itself contains no metric variable  (free symbols = set())
+  [PASS] (T2.4-0,0) the lift (1,2) gives 2/9  (L(1,2) = 2/9)
+  [PASS] (T2.4-1,0) the lift (4,2) gives 2/9  (L(4,2) = 2/9)
+  [PASS] (T2.4-0,1) the lift (1,5) gives 2/9  (L(1,5) = 2/9)
+  [PASS] (T2.4-1,1) the lift (4,5) gives 2/9  (L(4,5) = 2/9)
+  [PASS] (T2.4-2,3) the lift (7,11) gives 2/9  (L(7,11) = 2/9)
+  [PASS] (T2.4--1,2) the lift (-2,8) gives 2/9  (L(-2,8) = 2/9)
+  [PASS] (T2.4-3,3) the lift (10,11) gives 2/9  (L(10,11) = 2/9)
+  [PASS] (T2.4--2,-1) the lift (-5,-1) gives 2/9  (L(-5,-1) = 2/9)
 
 ========================================================================
-T8: Consequence for the ambient APS value
+T3: FINITE DETERMINANT IDENTITIES
 ========================================================================
 
-With metric-independence established, the ambient APS value η = 2/9 rad is
-fixed by the retained kinematic inputs alone:
-  - C_3[111] rotation (retained Z³ cubic symmetry)
-  - Tangent weights (1, 2) at the fixed locus
-  - ABSS equivariant fixed-point formula (theorem)
-  - Core algebraic identity (ζ-1)(ζ²-1) = 3 (algebraic fact)
+The determinant factor is representation-theoretic. For the conjugate
+characters it is the real determinant of I-R on the single normal plane.
+For equal characters the script checks the exact squared magnitude instead.
 
-No dependence on a specific dynamical metric. The remaining open step is
-the physical Brannen-phase bridge from this ambient invariant to the
-selected-line observable.
+  [PASS] (T3.1) (1-zeta)(1-zeta^2) = 3  (determinant factor = 3)
+  [PASS] (T3.2-1,1) exact determinant check for (1,1)  (|factor|^2 = 9)
+  [PASS] (T3.2-1,2) exact determinant check for (1,2)  (factor = 3)
+  [PASS] (T3.2-2,1) exact determinant check for (2,1)  (factor = 3)
+  [PASS] (T3.2-2,2) exact determinant check for (2,2)  (|factor|^2 = 9)
 
-  [PASS] (T8.1) η = 2/9 is rep-sensitive: (1,1) class gives 1/9, not 2/9  (η(1,1) = 1/9, η(1,2) = 2/9)
-  [PASS] (T8.2) δ = 2/9 via core identity (ω-1)(ω^2-1) = 3 at tangent weights (1,2)  ((ω-1)(ω^2-1) = 3, η = (1/3)·(1/3 + 1/3) = 2/9)
+========================================================================
+T4: CHARACTER-WEIGHTED FINITE AVERAGES
+========================================================================
+
+Each of the three character values is independently evaluated from the same
+finite sum. Their linear combination is then checked symbolically. This is a
+finite representation-ring identity, not a claim about a specified operator.
+
+  [PASS] (T4.1) the trivial character gives 2/9  (value = 2/9)
+  [PASS] (T4.2) the two nontrivial characters each give -1/9  (values = (-1/9, -1/9))
+  [PASS] (T4.3) the sum over all three characters vanishes  (sum = 0)
+  [PASS] (T4.4) the weighted average is rational-linear in multiplicities  (value = 2*m0/9 - m1/9 - m2/9)
+
+========================================================================
+T5: ELEMENTARY INTEGER-SHIFT ARITHMETIC
+========================================================================
+
+This section checks only that adding an integer does not change the fractional
+part of 2/9. It is not evidence for an operator variation theorem; any such
+theorem needs its own operator, hypotheses, and direct authority.
+
+  [PASS] (T5.0) frac(2/9 + 0) = 2/9  (fractional part = 2/9)
+  [PASS] (T5.1) frac(2/9 + 1) = 2/9  (fractional part = 2/9)
+  [PASS] (T5.-1) frac(2/9 + -1) = 2/9  (fractional part = 2/9)
+  [PASS] (T5.5) frac(2/9 + 5) = 2/9  (fractional part = 2/9)
+  [PASS] (T5.-3) frac(2/9 + -3) = 2/9  (fractional part = 2/9)
+  [PASS] (T5.100) frac(2/9 + 100) = 2/9  (fractional part = 2/9)
+
+========================================================================
+T6: COPRIMALITY AND ODD-ORDER PARITY
+========================================================================
+
+These checks are recorded as elementary number theory only. Coprimality of
+the character labels and absence of order-two elements in an odd cyclic group
+do not by themselves prove smoothability, an equivariant spin lift, existence
+of an operator, or uniqueness of any global structure.
+
+  [PASS] (T6.1) gcd(1,2,3) = 1  (gcd = 1)
+  [PASS] (T6.2-3) the odd order 3 is not divisible by two  (gcd(2,3) = 1)
+  [PASS] (T6.2-5) the odd order 5 is not divisible by two  (gcd(2,5) = 1)
+  [PASS] (T6.2-7) the odd order 7 is not divisible by two  (gcd(2,7) = 1)
+  [PASS] (T6.2-9) the odd order 9 is not divisible by two  (gcd(2,9) = 1)
+  [PASS] (T6.2-11) the odd order 11 is not divisible by two  (gcd(2,11) = 1)
+
+========================================================================
+T7: FINITE CROSS-FORMULA AGREEMENT
+========================================================================
+
+Agreement below is between two finite algebraic presentations: direct
+inverse-determinant averaging and character-weighted averaging. It excludes
+neither missing geometric hypotheses nor missing operator data.
+
+  [PASS] (T7.1) direct L(1,2) equals the trivial-character weighted average  (direct = 2/9, weighted = 2/9)
+  [PASS] (T7.2) exchanging the conjugate characters leaves L unchanged  (L(1,2) = 2/9, L(2,1) = 2/9)
+
+========================================================================
+T8: REPRESENTATION SENSITIVITY
+========================================================================
+
+The values distinguish character pairs. This is evidence that the finite
+functional depends on the declared local representation. It neither selects a
+physical representation nor turns the number into a physical observable.
+
+  [PASS] (T8.1) equal characters give 1/9 rather than 2/9  (L(1,1) = 1/9, L(2,2) = 1/9, L(1,2) = 2/9)
+  [PASS] (T8.2) the conjugate-character denominator is exactly 3  (denominator = 3, L(1,2) = 2/9)
 
 ========================================================================
 Summary: PASS=41, FAIL=0
 ========================================================================
 
-All 41 identities verified.
+All 41 finite checks passed.
 
-APS η at Z_3 fixed point with tangent weights (1, 2) is topological
-(determined by tangent rep, not Riemannian metric). Combined with the
-kinematic inputs from `c3_spatial_rotation.py` and the 8 routes in
-`aps_eta_invariant.py`, this establishes the ambient APS support
-chain for η = 2/9, independent of any dynamical metric law.
-The remaining open step is the physical Brannen-phase bridge.
+Certified surface:
+  - one real two-dimensional order-three normal-plane representation;
+  - scalar symmetric commutant on that plane;
+  - exact determinant factor 3;
+  - defined inverse-normal-determinant average L(1,2) = 2/9;
+  - exact finite character and integer arithmetic.
+
+Not certified:
+  - an operator eta or localization formula;
+  - an isolated-point theorem in four real dimensions;
+  - global metric independence;
+  - PL/smooth or spin-lift statements;
+  - physical representation selection, units, or readout.
+
+The exclusions are proof boundaries, not impossibility results. A wider claim
+requires new direct authority and a coherent fixed-set/operator geometry.
+
 
 ----- stderr -----
 

@@ -1,34 +1,22 @@
 #!/usr/bin/env python3
-"""
-APS η-invariant topological robustness at the Z_3 fixed locus.
+"""Finite local Z_3 normal-plane density and commutant certificate.
 
-Establishes that the equivariant Atiyah-Bott-Segal-Singer localization of
-the APS η-invariant at an isolated Z_p fixed point with tangent weights
-(a, b) depends ONLY on the tangent representation (a, b, p) — NOT on
-the Riemannian metric.
+This runner proves only a two-real-dimensional representation-theory result:
+the body-diagonal order-three rotation has a scalar symmetric commutant on one
+real normal plane, its inverse-normal-determinant average is 2/9, and several
+finite character identities agree with that value.
 
-Consequence: given the kinematic inputs retained from Cl(3)/Z³
-(C_3[111] spatial rotation, fixed locus on PL S³ × R, tangent weights
-(1, 2) — established in `c3_spatial_rotation.py`), APS η is fixed at
-2/9 mod Z by pure representation theory + the core algebraic identity
-(ζ − 1)(ζ² − 1) = 3, with no dependence on a choice of dynamical metric.
-
-Tactics:
-  T1. Direct equivariant fixed-point formula (metric-free).
-  T2. Verify under round vs squashed metric perturbations.
-  T3. Check piecewise-linear compatibility (PL S³ smoothable in dim ≤ 6
-      by Cerf; PL-APS theory matches smooth).
-  T4. Verify η is a Z_3-equivariant index-theoretic invariant.
-
-Dependencies: sympy, mpmath, numpy (stdlib).
+It does not identify the finite average with an operator eta invariant. It
+does not prove an isolated-point theorem in four real dimensions, a global
+metric theorem, a PL/smooth bridge, a spin-lift theorem, or a physical readout.
+Those are separate open obligations.
 """
 
 from __future__ import annotations
 
+import math
 import sys
-from fractions import Fraction
 
-import mpmath as mp
 import sympy as sp
 
 
@@ -36,491 +24,421 @@ PASS = 0
 FAIL = 0
 
 
-def check(label: str, cond: bool, detail: str = "") -> bool:
+def check(label: str, condition: bool, detail: str = "") -> bool:
+    """Print and count one exact certificate."""
     global PASS, FAIL
-    status = "PASS" if cond else "FAIL"
-    if cond:
+    status = "PASS" if condition else "FAIL"
+    if condition:
         PASS += 1
     else:
         FAIL += 1
-    msg = f"  [{status}] {label}"
+    message = f"  [{status}] {label}"
     if detail:
-        msg += f"  ({detail})"
-    print(msg)
-    return cond
+        message += f"  ({detail})"
+    print(message)
+    return condition
 
 
-mp.mp.dps = 40
+OMEGA = sp.Rational(-1, 2) + sp.I * sp.sqrt(3) / 2
+OMEGA2 = sp.Rational(-1, 2) - sp.I * sp.sqrt(3) / 2
+ROOTS = [sp.Integer(1), OMEGA, OMEGA2]
 
 
-# ============================================================================
-print("=" * 72)
-print("APS η-invariant topological robustness at Z_3 fixed point")
-print("=" * 72)
-
-print("""
-Target: verify that equivariant APS η at an isolated Z_3 fixed point
-with tangent weights (a, b) equals (1/3) Σ_{k=1,2} 1/[(ζ^{ka}-1)(ζ^{kb}-1)]
-purely from the tangent rep data, and is METRIC-INDEPENDENT.
-
-This is the content of the Atiyah-Bott-Segal-Singer equivariant
-fixed-point theorem for Dirac operators.
-""")
-
-
-# ============================================================================
-# T1. Direct equivariant fixed-point formula (metric-free)
-# ============================================================================
-print("=" * 72)
-print("T1: Direct equivariant fixed-point formula (depends only on (a, b, p))")
-print("=" * 72)
-
-# Symbolic omega = exp(2πi/3)
-omega_sp = sp.Rational(-1, 2) + sp.I * sp.sqrt(3) / 2
-omega2_sp = sp.Rational(-1, 2) - sp.I * sp.sqrt(3) / 2
-
-
-def equiv_eta_fp(a, b, p=3):
-    """Equivariant APS η at Z_p fixed point with tangent weights (a, b).
-    Closed form: (1/p) Σ_{k=1}^{p-1} 1 / [(ζ^{ka} - 1)(ζ^{kb} - 1)]
-    Uses explicit ω = -1/2 + i√3/2 for clean sympy simplification at p=3.
-    """
+def inverse_normal_determinant_average(a: int, b: int, p: int = 3):
+    """Return the defined finite average for two nontrivial characters."""
     if p != 3:
-        raise NotImplementedError("Optimized for p=3")
+        raise NotImplementedError("this finite certificate is specialized to p=3")
     total = sp.Rational(0)
     for k in range(1, p):
-        pow_a = (k * a) % p
-        pow_b = (k * b) % p
-        z_a = [sp.Integer(1), omega_sp, omega2_sp][pow_a]
-        z_b = [sp.Integer(1), omega_sp, omega2_sp][pow_b]
-        denom = (z_a - 1) * (z_b - 1)
-        total += 1 / denom
+        z_a = ROOTS[(k * a) % p]
+        z_b = ROOTS[(k * b) % p]
+        total += 1 / ((z_a - 1) * (z_b - 1))
     return sp.simplify(sp.nsimplify(total / p))
 
 
-# Standard weights for retained C_3[111] acting on transverse R² × R² = C × C
-eta_12 = equiv_eta_fp(1, 2)
-check(
-    "(T1.1) Equivariant η fixed-point at weights (1, 2) = 2/9",
-    sp.simplify(eta_12 - sp.Rational(2, 9)) == 0,
-    f"η_(1,2) = {eta_12}",
-)
-
-# Permutation-symmetric
-eta_21 = equiv_eta_fp(2, 1)
-check(
-    "(T1.2) η is symmetric under weight permutation: η(1,2) = η(2,1)",
-    sp.simplify(eta_12 - eta_21) == 0,
-    f"η(2,1) = {eta_21}",
-)
-
-# (1, 1) weights give 1/9 (different class)
-eta_11 = equiv_eta_fp(1, 1)
-check(
-    "(T1.3) (1, 1) weights give 1/9 (different class, not retained)",
-    sp.simplify(eta_11 - sp.Rational(1, 9)) == 0,
-    f"η(1,1) = {eta_11}",
-)
-
-# Dependence only on (a, b) mod 3
-eta_14 = equiv_eta_fp(1, 4)  # 4 ≡ 1 mod 3 → should equal η(1, 1)
-check(
-    "(T1.4) η(1, 4) = η(1, 1) (depends only on weights mod 3)",
-    sp.simplify(eta_14 - eta_11) == 0,
-    f"η(1, 4) = {eta_14}, η(1, 1) = {eta_11}",
-)
-
-eta_15 = equiv_eta_fp(1, 5)  # 5 ≡ 2 mod 3 → should equal η(1, 2)
-check(
-    "(T1.5) η(1, 5) = η(1, 2) (depends only on weights mod 3)",
-    sp.simplify(eta_15 - eta_12) == 0,
-    f"η(1, 5) = {eta_15}, η(1, 2) = {eta_12}",
-)
+def character_weighted_average(character: int):
+    """Compute, rather than install, one character-weighted finite average."""
+    total = sp.Rational(0)
+    for k in (1, 2):
+        numerator = ROOTS[(character * k) % 3]
+        denominator = (ROOTS[k] - 1) * (ROOTS[(2 * k) % 3] - 1)
+        total += numerator / denominator
+    return sp.simplify(sp.nsimplify(total / 3))
 
 
-# ============================================================================
-# T2. Executable metric-independence: any Z_3-invariant Riemannian metric
-#     on the transverse plane is forced scalar (λ·I), and the ABSS
-#     character formula contains no metric free symbols.
-# ============================================================================
-print("\n" + "=" * 72)
-print("T2: Z_3-invariant transverse metric is forced scalar → no metric to vary")
 print("=" * 72)
+print("LOCAL Z_3 NORMAL-PLANE DENSITY CERTIFICATE")
+print("=" * 72)
+print(
+    """
+Scope under test
+----------------
+The representation is one real two-dimensional normal plane with the order-
+three rotation R(2*pi/3). Its complex eigencharacters are the conjugate pair
+(1,2). The finite functional checked here is defined by
 
-print("""
-The "metric freedom" on the transverse R² (normal bundle at the fixed
-axis) is the set of positive-definite symmetric 2x2 matrices G. A metric
-is Z_3-equivariant iff R^T G R = G for the 2π/3 rotation R. Executable
-claim: the space of such G is 1-dimensional (scalar multiples of I), so
-there is NO non-trivial metric deformation to perturb the ABSS character
-computation against.
-""")
+  L(a,b) = (1/3) * sum_{k=1,2}
+           1 / ((zeta^(k*a)-1) * (zeta^(k*b)-1)).
 
-# Explicit 2π/3 rotation on the transverse plane
-R_tr = sp.Matrix([
-    [sp.cos(2 * sp.pi / 3), -sp.sin(2 * sp.pi / 3)],
-    [sp.sin(2 * sp.pi / 3),  sp.cos(2 * sp.pi / 3)],
-])
-R_tr = sp.simplify(R_tr)
+The executable conclusions are deliberately local:
 
-# General symmetric 2x2 metric
+  * det_R(I-R) is 3;
+  * L(1,2) is 2/9;
+  * the symmetric commutant of R on this one real plane is scalar;
+  * finite character-weighted versions agree with direct evaluation.
+
+The calculation is not an operator localization theorem. A pair of complex
+tangent weights at an isolated point would be a four-real-dimensional
+representation, whose symmetric commutant is not the one computed below.
+Nothing here establishes a global manifold, smoothability, a spin lift,
+operator metric invariance, a physical carrier, a unit, or a readout map.
+"""
+)
+
+
+# ---------------------------------------------------------------------------
+# T1. Direct evaluation of the defined finite average: 5 checks
+# ---------------------------------------------------------------------------
+print("=" * 72)
+print("T1: DIRECT FINITE-AVERAGE EVALUATION")
+print("=" * 72)
+print(
+    """
+These checks use exact cube roots of unity. They establish values of the
+declared finite rational function only. The symbol L is a local density label;
+no operator invariant is inferred from its value.
+"""
+)
+
+density_12 = inverse_normal_determinant_average(1, 2)
+check(
+    "(T1.1) L(1,2) = 2/9",
+    sp.simplify(density_12 - sp.Rational(2, 9)) == 0,
+    f"L(1,2) = {density_12}",
+)
+
+density_21 = inverse_normal_determinant_average(2, 1)
+check(
+    "(T1.2) L is symmetric under character permutation",
+    sp.simplify(density_12 - density_21) == 0,
+    f"L(2,1) = {density_21}",
+)
+
+density_11 = inverse_normal_determinant_average(1, 1)
+check(
+    "(T1.3) L(1,1) = 1/9",
+    sp.simplify(density_11 - sp.Rational(1, 9)) == 0,
+    f"L(1,1) = {density_11}",
+)
+
+density_14 = inverse_normal_determinant_average(1, 4)
+check(
+    "(T1.4) L(1,4) = L(1,1), so characters reduce modulo three",
+    sp.simplify(density_14 - density_11) == 0,
+    f"L(1,4) = {density_14}",
+)
+
+density_15 = inverse_normal_determinant_average(1, 5)
+check(
+    "(T1.5) L(1,5) = L(1,2), so characters reduce modulo three",
+    sp.simplify(density_15 - density_12) == 0,
+    f"L(1,5) = {density_15}",
+)
+
+
+# ---------------------------------------------------------------------------
+# T2. Symmetric commutant on one real normal plane: 11 checks
+# ---------------------------------------------------------------------------
+print("\n" + "=" * 72)
+print("T2: ONE REAL NORMAL-PLANE COMMUTANT")
+print("=" * 72)
+print(
+    """
+Let G be a general symmetric 2x2 bilinear form on one real normal plane.
+Solving R^T G R = G for the plane rotation is a complete calculation in this
+two-real-dimensional domain. It does not describe a four-dimensional tangent
+space or metrics away from the fixed normal fibre.
+"""
+)
+
+rotation = sp.Matrix(
+    [
+        [sp.cos(2 * sp.pi / 3), -sp.sin(2 * sp.pi / 3)],
+        [sp.sin(2 * sp.pi / 3), sp.cos(2 * sp.pi / 3)],
+    ]
+)
+rotation = sp.simplify(rotation)
+
 g11, g12, g22 = sp.symbols("g11 g12 g22", real=True)
-G = sp.Matrix([[g11, g12], [g12, g22]])
-
-# Z_3-equivariance: R^T G R = G
-equivariance = sp.simplify(R_tr.T * G * R_tr - G)
-sol = sp.solve(
+metric = sp.Matrix([[g11, g12], [g12, g22]])
+equivariance = sp.simplify(rotation.T * metric * rotation - metric)
+solutions = sp.solve(
     [equivariance[0, 0], equivariance[0, 1], equivariance[1, 1]],
     [g12, g22],
     dict=True,
 )
 
 check(
-    "(T2.1) Z_3-equivariance of a symmetric G forces g12 = 0 and g22 = g11",
-    len(sol) == 1
-    and sp.simplify(sol[0][g12]) == 0
-    and sp.simplify(sol[0][g22] - g11) == 0,
-    f"sol = {sol}",
+    "(T2.1) the 2x2 symmetric commutant has g12=0 and g22=g11",
+    len(solutions) == 1
+    and sp.simplify(solutions[0][g12]) == 0
+    and sp.simplify(solutions[0][g22] - g11) == 0,
+    f"solutions = {solutions}",
 )
 
-# Consequence: every Z_3-equivariant metric is G = λ·I with λ > 0.
-lam = sp.symbols("lam", positive=True)
-G_invariant = lam * sp.eye(2)
-residual = sp.simplify(R_tr.T * G_invariant * R_tr - G_invariant)
+scale = sp.symbols("scale", positive=True)
+scaled_identity = scale * sp.eye(2)
 check(
-    "(T2.2) λ·I is Z_3-equivariant for every λ > 0 (1-parameter family)",
-    residual == sp.zeros(2, 2),
-    "R^T (λI) R = λI exactly",
+    "(T2.2) every positive scalar multiple of I is invariant on the plane",
+    sp.simplify(rotation.T * scaled_identity * rotation - scaled_identity)
+    == sp.zeros(2, 2),
+    "R^T (scale I) R = scale I",
 )
 
-# The ABSS character evaluation of η for weights (1, 2) has no dependence
-# on the scalar λ, nor on any metric symbol. Verify executively via
-# sympy.free_symbols on the symbolic result.
-eta_expr = equiv_eta_fp(1, 2)
-metric_symbols = {g11, g12, g22, lam}
 check(
-    "(T2.3) Symbolic η(1,2,3) contains no metric free symbols",
-    metric_symbols.isdisjoint(eta_expr.free_symbols),
-    f"free_symbols(η) = {eta_expr.free_symbols}",
+    "(T2.3) the finite average itself contains no metric variable",
+    {g11, g12, g22, scale}.isdisjoint(density_12.free_symbols),
+    f"free symbols = {density_12.free_symbols}",
 )
 
-# Topological invariance: any lift of (a, b) ≡ (1, 2) mod 3 gives the same η.
-# Enumerate concrete lifts in a symmetric range and verify.
-for (m, n) in [(0, 0), (1, 0), (0, 1), (1, 1), (2, 3), (-1, 2), (3, 3), (-2, -1)]:
-    a_raw, b_raw = 1 + 3 * m, 2 + 3 * n
-    a_red = a_raw % 3
-    b_red = b_raw % 3
-    # equiv_eta_fp takes positional weights in {1, 2} range at p=3; reduce mod 3
-    if a_red == 0 or b_red == 0:
-        continue  # degenerate — not in the (1, 2) tangent class
-    eta_rep = equiv_eta_fp(a_red, b_red)
+for m, n in [
+    (0, 0),
+    (1, 0),
+    (0, 1),
+    (1, 1),
+    (2, 3),
+    (-1, 2),
+    (3, 3),
+    (-2, -1),
+]:
+    a_raw = 1 + 3 * m
+    b_raw = 2 + 3 * n
+    lifted = inverse_normal_determinant_average(a_raw, b_raw)
     check(
-        f"(T2.4-{m},{n}) η for lift (1+3·{m}, 2+3·{n}) = η(1,2) = 2/9",
-        sp.simplify(eta_rep - sp.Rational(2, 9)) == 0,
-        f"η = {eta_rep}",
+        f"(T2.4-{m},{n}) the lift ({a_raw},{b_raw}) gives 2/9",
+        sp.simplify(lifted - sp.Rational(2, 9)) == 0,
+        f"L({a_raw},{b_raw}) = {lifted}",
     )
 
 
-# ============================================================================
-# T3. Euler class of the tangent bundle at the fixed point
-# ============================================================================
+# ---------------------------------------------------------------------------
+# T3. Real determinant identities: 5 checks
+# ---------------------------------------------------------------------------
 print("\n" + "=" * 72)
-print("T3: The Euler class (1-ζ^a)(1-ζ^b) = 3 is topological, not metric")
+print("T3: FINITE DETERMINANT IDENTITIES")
 print("=" * 72)
-
-# The KEY topological number: (1 - ζ^a)(1 - ζ^b) for (a, b) = (1, 2)
-euler_12 = sp.simplify((1 - omega_sp) * (1 - omega2_sp))
-check(
-    "(T3.1) Euler class (1 - ζ)(1 - ζ²) = 3 at Z_3 fixed point",
-    sp.simplify(euler_12 - 3) == 0,
-    f"Euler = {euler_12}",
+print(
+    """
+The determinant factor is representation-theoretic. For the conjugate
+characters it is the real determinant of I-R on the single normal plane.
+For equal characters the script checks the exact squared magnitude instead.
+"""
 )
 
-# More generally
-for (a, b) in [(1, 1), (1, 2), (2, 1), (2, 2)]:
-    euler_ab = sp.simplify((1 - omega_sp ** a) * (1 - omega_sp ** b))
-    if (a * b) % 3 == 2:  # (1, 2) or (2, 1) class
-        expected = 3
-    elif (a * b) % 3 == 1:  # (1, 1) or (2, 2) class
-        # (1-ω)² = 1 - 2ω + ω² = 1 - 2ω + (-1-ω) = -3ω has |·| = 3
-        # Actual value: complex, but |Euler|² = 9
-        expected_abs_sq = 9
-        euler_abs_sq = sp.simplify(abs(euler_ab) ** 2)
-        check(
-            f"(T3.2) |Euler|² for weights ({a},{b}) = 9",
-            sp.simplify(euler_abs_sq - 9) == 0,
-            f"|Euler|² = {euler_abs_sq}",
-        )
-        continue
+determinant_12 = sp.simplify((1 - OMEGA) * (1 - OMEGA2))
+check(
+    "(T3.1) (1-zeta)(1-zeta^2) = 3",
+    sp.simplify(determinant_12 - 3) == 0,
+    f"determinant factor = {determinant_12}",
+)
+
+for a, b in [(1, 1), (1, 2), (2, 1), (2, 2)]:
+    factor = sp.simplify((1 - OMEGA**a) * (1 - OMEGA**b))
+    if (a, b) in {(1, 2), (2, 1)}:
+        condition = sp.simplify(factor - 3) == 0
+        detail = f"factor = {factor}"
+    else:
+        magnitude_squared = sp.simplify(sp.Abs(factor) ** 2)
+        condition = sp.simplify(magnitude_squared - 9) == 0
+        detail = f"|factor|^2 = {magnitude_squared}"
     check(
-        f"(T3.3) Euler class for weights ({a}, {b}) = 3",
-        sp.simplify(euler_ab - 3) == 0,
-        f"Euler = {euler_ab}",
+        f"(T3.2-{a},{b}) exact determinant check for ({a},{b})",
+        condition,
+        detail,
     )
 
 
-# ============================================================================
-# T4. Verify the K-theoretic / index-theoretic nature
-# ============================================================================
+# ---------------------------------------------------------------------------
+# T4. Character-weighted finite averages: 4 checks
+# ---------------------------------------------------------------------------
 print("\n" + "=" * 72)
-print("T4: K-theoretic / index-theoretic identity")
+print("T4: CHARACTER-WEIGHTED FINITE AVERAGES")
 print("=" * 72)
-
-# Equivariant K-theory of Z_3: R(Z_3) = Z ⊕ Z[χ_1] ⊕ Z[χ_2]
-# Any element V ∈ R(Z_3) corresponds to a virtual Z_3-rep.
-# The localized η for V at a Z_3 fixed point with weights (a, b):
-#   η_V = (1/3) Σ_{k=1,2} χ_V(g^k) / [(ζ^{ka} - 1)(ζ^{kb} - 1)]
-
-# For V = χ_0 (trivial rep, the Z_3-invariant isotype):
-eta_V_chi0 = sp.Rational(2, 9)  # from prior computation
-# For V = χ_1 or χ_2 (non-trivial isotypes):
-eta_V_chi1 = sp.Rational(-1, 9)
-
-# The character formula:
-# η_V = (2·m_0 - m_1 - m_2) / 9  for V = m_0·χ_0 + m_1·χ_1 + m_2·χ_2
-def eta_k(m_0, m_1, m_2):
-    return sp.Rational(2 * m_0 - m_1 - m_2, 9)
-
-check(
-    "(T4.1) χ_0 isotype (Z_3-invariant selector) gives η = 2/9",
-    eta_k(1, 0, 0) == sp.Rational(2, 9),
-    f"η(χ_0) = {eta_k(1, 0, 0)}",
+print(
+    """
+Each of the three character values is independently evaluated from the same
+finite sum. Their linear combination is then checked symbolically. This is a
+finite representation-ring identity, not a claim about a specified operator.
+"""
 )
 
+weighted_0 = character_weighted_average(0)
+weighted_1 = character_weighted_average(1)
+weighted_2 = character_weighted_average(2)
+
 check(
-    "(T4.2) Regular rep (all isotypes) gives η = 0",
-    eta_k(1, 1, 1) == sp.Rational(0, 1),
-    "consistency with non-orbifolded total-space η",
+    "(T4.1) the trivial character gives 2/9",
+    weighted_0 == sp.Rational(2, 9),
+    f"value = {weighted_0}",
+)
+check(
+    "(T4.2) the two nontrivial characters each give -1/9",
+    weighted_1 == weighted_2 == sp.Rational(-1, 9),
+    f"values = ({weighted_1}, {weighted_2})",
+)
+check(
+    "(T4.3) the sum over all three characters vanishes",
+    sp.simplify(weighted_0 + weighted_1 + weighted_2) == 0,
+    f"sum = {sp.simplify(weighted_0 + weighted_1 + weighted_2)}",
 )
 
-# The formula eta_k(m_0, m_1, m_2) is purely K-theoretic (lives in R(Z_3) ⊗ Q).
-# Executable check: the three isotype values (2/9, -1/9, -1/9) sum to zero
-# (trivial isotype of regular rep), and the formula is rational-linear in
-# isotype multiplicities — both forced by Schur orthogonality of Z_3 characters.
 m0, m1, m2 = sp.symbols("m0 m1 m2", integer=True)
-eta_abstract = sp.Rational(2 * 1, 9) * m0 + sp.Rational(-1, 9) * m1 + sp.Rational(-1, 9) * m2
+weighted_linear = sp.expand(m0 * weighted_0 + m1 * weighted_1 + m2 * weighted_2)
 check(
-    "(T4.3) η-formula is Q-linear in isotype multiplicities (K-theoretic)",
-    sp.simplify(eta_abstract - (2 * m0 - m1 - m2) / 9) == 0,
-    f"η(m0·χ0 + m1·χ1 + m2·χ2) = {eta_abstract}",
-)
-
-# Schur-orthogonality cross-check: the regular rep χ_reg = χ_0 + χ_1 + χ_2
-# has η = 0 (anomaly cancels between isotypes).
-check(
-    "(T4.4) η(regular rep χ_0 + χ_1 + χ_2) = 0 (Schur cancellation)",
-    eta_abstract.subs({m0: 1, m1: 1, m2: 1}) == 0,
-    f"η(reg) = {eta_abstract.subs({m0: 1, m1: 1, m2: 1})}",
+    "(T4.4) the weighted average is rational-linear in multiplicities",
+    sp.simplify(weighted_linear - (2 * m0 - m1 - m2) / 9) == 0,
+    f"value = {weighted_linear}",
 )
 
 
-# ============================================================================
-# T5. Fractional part (mod Z) is a homotopy invariant
-# ============================================================================
+# ---------------------------------------------------------------------------
+# T5. Integer-shift arithmetic: 6 checks
+# ---------------------------------------------------------------------------
 print("\n" + "=" * 72)
-print("T5: Fractional APS η (mod Z) is a homotopy invariant")
+print("T5: ELEMENTARY INTEGER-SHIFT ARITHMETIC")
 print("=" * 72)
+print(
+    """
+This section checks only that adding an integer does not change the fractional
+part of 2/9. It is not evidence for an operator variation theorem; any such
+theorem needs its own operator, hypotheses, and direct authority.
+"""
+)
 
-# Standard APS theorem: the FRACTIONAL part of η is a topological invariant.
-# The INTEGER part can depend on metric, but fractional part depends only
-# on the K-theoretic class of the Dirac operator + fixed-point data.
-
-# For our equivariant fixed-point contribution, the value 2/9 is ALREADY
-# fractional (not an integer), so it's protected under metric perturbation.
-
-# Check: for any integer n, (2/9 + n) mod 1 = 2/9
-for n in [0, 1, -1, 5, -3, 100]:
-    frac = (sp.Rational(2, 9) + n) - sp.floor(sp.Rational(2, 9) + n)
+for integer_shift in [0, 1, -1, 5, -3, 100]:
+    shifted = sp.Rational(2, 9) + integer_shift
+    fractional_part = shifted - sp.floor(shifted)
     check(
-        f"(T5.{n}) (2/9 + {n}) mod 1 = 2/9",
-        frac == sp.Rational(2, 9),
-        f"frac = {frac}",
+        f"(T5.{integer_shift}) frac(2/9 + {integer_shift}) = 2/9",
+        fractional_part == sp.Rational(2, 9),
+        f"fractional part = {fractional_part}",
     )
 
 
-# ============================================================================
-# T6. Connection to retained C_3[111] data
-# ============================================================================
+# ---------------------------------------------------------------------------
+# T6. Coprimality and odd-order parity arithmetic: 6 checks
+# ---------------------------------------------------------------------------
 print("\n" + "=" * 72)
-print("T6: Retained kinematic data suffice for the computation")
+print("T6: COPRIMALITY AND ODD-ORDER PARITY")
 print("=" * 72)
-
-print("""
-The fixed-point contribution η_(1,2) = 2/9 is determined by:
-
-  1. The orbifold structure Z_3 acting with isolated fixed points.
-     - Retained: C_3[111] = spatial 2π/3 rotation about (1,1,1) of Z³
-       lattice (verified in frontier_koide_c3_spatial_rotation.py).
-     - Retained: fixed-locus on PL S³ × R = two codim-3 timelike worldlines.
-
-  2. The tangent weights (a, b) mod 3.
-     - Retained: (1, 2) from the 2D transverse-plane rotation action
-       (eigenvalues ω, ω² of R on the normal plane).
-
-  3. The Z_3-equivariant Dirac spin structure.
-     - The spin structure itself is topological / obstruction-theoretic:
-       a Z_3-equivariant spin structure on PL S³ × R exists because
-       the Z_3 action has isolated fixed points with coprime weights
-       (1, 2) — gcd(1, 2, 3) = 1.
-""")
-
-# Verify the obstruction-theoretic existence condition:
-# A Z_p spin structure exists iff the tangent weights satisfy certain
-# coprimality conditions. For Z_3 at (1, 2): gcd(1, 2, 3) = 1 ✓
-import math
-gcd_12_3 = math.gcd(math.gcd(1, 2), 3)
-check(
-    "(T6.1) gcd(1, 2, 3) = 1 (Z_3-spin structure exists for (1, 2) weights)",
-    gcd_12_3 == 1,
-    f"gcd = {gcd_12_3}",
+print(
+    """
+These checks are recorded as elementary number theory only. Coprimality of
+the character labels and absence of order-two elements in an odd cyclic group
+do not by themselves prove smoothability, an equivariant spin lift, existence
+of an operator, or uniqueness of any global structure.
+"""
 )
 
-# Topological uniqueness of Z_p-equivariant spin structures for odd p:
-# inequivalent spin structures on a manifold M are classified by
-# H^1(M; Z_2). For L(p; 1, 1) = S^3/Z_p the only torsion in H^1 comes from
-# H_1 = Z_p. Executable claim: Z_p has no 2-torsion for odd p, so
-# H^1(L(p;1,1); Z_2) = 0 and the spin structure is unique.
-for p_odd in [3, 5, 7, 9, 11]:
-    # Z_p has 2-torsion iff p is even (since 2 | |Z_p| = p iff p even).
-    has_2_torsion = (p_odd % 2 == 0)
+gcd_value = math.gcd(math.gcd(1, 2), 3)
+check(
+    "(T6.1) gcd(1,2,3) = 1",
+    gcd_value == 1,
+    f"gcd = {gcd_value}",
+)
+
+for odd_order in [3, 5, 7, 9, 11]:
     check(
-        f"(T6.2-p={p_odd}) odd p = {p_odd} ⟹ Z_p has no 2-torsion ⟹ spin structure unique",
-        not has_2_torsion,
-        f"|Z_{p_odd}|_2 = gcd(2, {p_odd}) = {math.gcd(2, p_odd)}",
+        f"(T6.2-{odd_order}) the odd order {odd_order} is not divisible by two",
+        odd_order % 2 == 1 and math.gcd(2, odd_order) == 1,
+        f"gcd(2,{odd_order}) = {math.gcd(2, odd_order)}",
     )
 
 
-# ============================================================================
-# T7. Explicit METRIC-INDEPENDENT statement
-# ============================================================================
+# ---------------------------------------------------------------------------
+# T7. Cross-formula agreement: 2 checks
+# ---------------------------------------------------------------------------
 print("\n" + "=" * 72)
-print("T7: Formal metric-independence statement (discharging C2)")
+print("T7: FINITE CROSS-FORMULA AGREEMENT")
 print("=" * 72)
-
-print("""
-THEOREM (APS η metric-independence at isolated Z_3 fixed points).
-  Let M be a closed oriented 4-manifold with a smooth Z_3 action
-  having isolated fixed points. At each fixed point, let the Z_3
-  tangent representation have weights (a, b) mod 3. Then the
-  FRACTIONAL PART of the equivariant APS η-invariant at each fixed
-  point is:
-    { (1/3) Σ_{k=1,2} 1/[(ζ^{ka} - 1)(ζ^{kb} - 1)] } mod 1
-  and depends only on (a, b) mod 3 — not on the Riemannian metric on M.
-
-PROOF SKETCH.
-  The Atiyah-Bott-Segal-Singer equivariant fixed-point formula for a
-  Z_p-equivariant Dirac operator D_g at an isolated fixed point p_0 is:
-    χ_{ind_g(D)}(p_0) = 1 / det_{T_{p_0} M}(1 - g)
-  This character is purely representation-theoretic. The APS η-invariant
-  on the orbifold quotient M/Z_p has a fixed-point contribution
-  proportional to this character. Metric deformations of M (Z_p-equivariantly)
-  do not change the tangent Z_p rep, hence do not change the character,
-  hence do not change the fixed-point contribution.
-  The BULK η (smooth-part contribution) can change by an integer under
-  metric deformation, so the FRACTIONAL part is the robust invariant.
-
-APPLICATION TO RETAINED Cl(3)/Z³.
-  The retained C_3[111] action on PL S³ × R has isolated fixed points
-  with (1, 2) weights. The fractional APS η at each fixed point is 2/9.
-  This is independent of the specific dynamical metric law on PL S³ × R
-  (which remains open per frontier_s3_anomaly_spacetime_lift.py).
-
-CONCLUSION. The ambient APS η = 2/9 support route is METRIC-INDEPENDENT
-and thus does NOT require the retained dynamical metric law
-compatibility as a separate condition. The kinematic retention
-(C_3[111] spatial rotation, tangent weights) + the
-Atiyah-Bott-Segal-Singer theorem jointly fix the ambient APS value.
-
-What remains is not a metric issue but the physical Brannen-phase bridge
-from that ambient invariant to the selected-line observable.
-""")
-
-# Executable metric-independence summary: combine the Z_3-invariant-metric
-# uniqueness (T2.1/T2.2) with the formula-has-no-metric-symbols check (T2.3).
-# Concrete: compute η through TWO symbolic routes — the ABSS fixed-point
-# formula (equiv_eta_fp) and the isotype-multiplicity formula (eta_k) —
-# and verify they agree. Agreement of two independent expressions
-# excludes any hidden metric dependence in either.
-eta_fp_12 = equiv_eta_fp(1, 2)
-eta_iso_12 = eta_k(1, 0, 0)
-check(
-    "(T7.1) ABSS fixed-point formula (1,2) = isotype-K-theory χ_0 formula = 2/9",
-    sp.simplify(eta_fp_12 - eta_iso_12) == 0
-    and sp.simplify(eta_fp_12 - sp.Rational(2, 9)) == 0,
-    f"η_fp = {eta_fp_12}, η_iso = {eta_iso_12}",
+print(
+    """
+Agreement below is between two finite algebraic presentations: direct
+inverse-determinant averaging and character-weighted averaging. It excludes
+neither missing geometric hypotheses nor missing operator data.
+"""
 )
 
-# Executable robustness under weight-class representatives (topological
-# invariance of the answer under the Z_p^*-action on tangent classes).
-eta_under_k2 = equiv_eta_fp(2, 1)  # k=2 acts: (1,2) -> (2,1), same class
 check(
-    "(T7.2) η(1,2) = η(2,1) (Z_3^*-orbit invariance of ABSS value)",
-    sp.simplify(eta_fp_12 - eta_under_k2) == 0,
-    f"η(2,1) = {eta_under_k2}",
+    "(T7.1) direct L(1,2) equals the trivial-character weighted average",
+    sp.simplify(density_12 - weighted_0) == 0,
+    f"direct = {density_12}, weighted = {weighted_0}",
+)
+check(
+    "(T7.2) exchanging the conjugate characters leaves L unchanged",
+    sp.simplify(density_12 - density_21) == 0,
+    f"L(1,2) = {density_12}, L(2,1) = {density_21}",
 )
 
 
-# ============================================================================
-# T8. Consequence for the ambient APS value
-# ============================================================================
+# ---------------------------------------------------------------------------
+# T8. Representation sensitivity and core identity: 2 checks
+# ---------------------------------------------------------------------------
 print("\n" + "=" * 72)
-print("T8: Consequence for the ambient APS value")
+print("T8: REPRESENTATION SENSITIVITY")
 print("=" * 72)
-
-print("""
-With metric-independence established, the ambient APS value η = 2/9 rad is
-fixed by the retained kinematic inputs alone:
-  - C_3[111] rotation (retained Z³ cubic symmetry)
-  - Tangent weights (1, 2) at the fixed locus
-  - ABSS equivariant fixed-point formula (theorem)
-  - Core algebraic identity (ζ-1)(ζ²-1) = 3 (algebraic fact)
-
-No dependence on a specific dynamical metric. The remaining open step is
-the physical Brannen-phase bridge from this ambient invariant to the
-selected-line observable.
-""")
-
-# Executable: alternative weight classes give DIFFERENT η. So η is sensitive
-# to the tangent rep (as it should be), and the specific value 2/9 is a
-# property of the (1, 2) class, not of a metric choice.
-eta_11 = equiv_eta_fp(1, 1)
-eta_22 = equiv_eta_fp(2, 2)
-check(
-    "(T8.1) η = 2/9 is rep-sensitive: (1,1) class gives 1/9, not 2/9",
-    sp.simplify(eta_11 - sp.Rational(1, 9)) == 0
-    and sp.simplify(eta_11 - eta_fp_12) != 0,
-    f"η(1,1) = {eta_11}, η(1,2) = {eta_fp_12}",
+print(
+    """
+The values distinguish character pairs. This is evidence that the finite
+functional depends on the declared local representation. It neither selects a
+physical representation nor turns the number into a physical observable.
+"""
 )
 
-# Executable: the specific value δ = 2/9 for the retained (1, 2) tangent
-# rep is determined by the core algebraic identity (ω - 1)(ω^2 - 1) = 3.
-# Verify that identity symbolically, then combine with the (1/p) prefactor.
-core_id = sp.simplify((omega_sp - 1) * (omega2_sp - 1))
+density_22 = inverse_normal_determinant_average(2, 2)
 check(
-    "(T8.2) δ = 2/9 via core identity (ω-1)(ω^2-1) = 3 at tangent weights (1,2)",
-    sp.simplify(core_id - 3) == 0
-    and sp.simplify(eta_fp_12 - sp.Rational(2, 9)) == 0,
-    f"(ω-1)(ω^2-1) = {core_id}, η = (1/3)·(1/3 + 1/3) = {eta_fp_12}",
+    "(T8.1) equal characters give 1/9 rather than 2/9",
+    density_11 == density_22 == sp.Rational(1, 9)
+    and density_11 != density_12,
+    f"L(1,1) = {density_11}, L(2,2) = {density_22}, L(1,2) = {density_12}",
+)
+
+core_identity = sp.simplify((OMEGA - 1) * (OMEGA2 - 1))
+check(
+    "(T8.2) the conjugate-character denominator is exactly 3",
+    core_identity == 3 and density_12 == sp.Rational(2, 9),
+    f"denominator = {core_identity}, L(1,2) = {density_12}",
 )
 
 
-# ============================================================================
-# Summary
-# ============================================================================
 print("\n" + "=" * 72)
 print(f"Summary: PASS={PASS}, FAIL={FAIL}")
 print("=" * 72)
 
 if FAIL == 0:
-    print(f"\nAll {PASS} identities verified.")
-    print("")
-    print("APS η at Z_3 fixed point with tangent weights (1, 2) is topological")
-    print("(determined by tangent rep, not Riemannian metric). Combined with the")
-    print("kinematic inputs from `c3_spatial_rotation.py` and the 8 routes in")
-    print("`aps_eta_invariant.py`, this establishes the ambient APS support")
-    print("chain for η = 2/9, independent of any dynamical metric law.")
-    print("The remaining open step is the physical Brannen-phase bridge.")
+    print(
+        f"""
+All {PASS} finite checks passed.
+
+Certified surface:
+  - one real two-dimensional order-three normal-plane representation;
+  - scalar symmetric commutant on that plane;
+  - exact determinant factor 3;
+  - defined inverse-normal-determinant average L(1,2) = 2/9;
+  - exact finite character and integer arithmetic.
+
+Not certified:
+  - an operator eta or localization formula;
+  - an isolated-point theorem in four real dimensions;
+  - global metric independence;
+  - PL/smooth or spin-lift statements;
+  - physical representation selection, units, or readout.
+
+The exclusions are proof boundaries, not impossibility results. A wider claim
+requires new direct authority and a coherent fixed-set/operator geometry.
+"""
+    )
     sys.exit(0)
-else:
-    print(f"\n{FAIL} identity checks failed.")
-    sys.exit(1)
+
+print(f"\n{FAIL} finite checks failed.")
+sys.exit(1)

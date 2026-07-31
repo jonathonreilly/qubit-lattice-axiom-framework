@@ -1,5 +1,5 @@
 {
- "edge_count": 15363,
+ "edge_count": 15362,
  "node_count": 4613,
  "nodes": {
   "3d_correction_master_note": {
@@ -7375,8 +7375,8 @@
    "out_degree": 1
   },
   "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02": {
-   "deps_hash": "441528e96f6f",
-   "out_degree": 2
+   "deps_hash": "ee46925d7338",
+   "out_degree": 1
   },
   "koide_axiom_native_support_batch_note_2026-04-22": {
    "deps_hash": "cc92e72a1114",

@@ -1,3 +1,30 @@
+# TOE lane update — fixed rubric (2026-07-31, the completion wave)
+
+| TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |
+|---|---|---|---|---|
+| Operational quantum / Records | 98% | 97% | 70% | 99% |
+| Causal time | 91% ^2 | 75% | 48% | 99% |
+| Inertia / matter | 97% | 98% | 88% | 99% |
+| Gravity / source / resources | 71% | 47% | 30% | 94% |
+| Born probability / realized history | 94% ^1 | 66% | 41% | 99% |
+
+Science-evidence scores, not audit-retention scores; 99 campaign PRs (#5772-#5864) pre-review.
+
+Why the scores changed (this wave, checker-verified):
+- Time: THE s=5 STORY IS TOTAL — all 44 keys resolved (33 transients + 11 cycles), including the million-tick synchronized pair (t=1,142,432, funnel weight 49); the origin-delay structure is now complete data (delays and cohort sizes per event and origin class).
+- Born/realized history: THE PARTITION LAW — the three nine-cohorts' braids are IDENTICAL (depths 0..64; normalization audited as doing no work): the synchronization mechanism is ONE object danced three times. The merged why has its target: any causal theorem must produce THIS braid. The state gallery: 44/45/46/49/51/57 funnels + the 59 pulse state + the 47 S0' prediction (both pinned, both unvisited everywhere swept).
+- The bounded causal theorem (marked-meet => funnel within B) holds with four invariant classes excluded; the pulse phase has exact selectors and its own state (a naming collision caught en route — reversal 26).
+
+Breakthrough log this wave:
+1. The s=5 fiber family finished: 44/44, no exceptions, one law of company.
+2. The partition law: one braid, three cohorts (the arc's deepest statement).
+3. The million-tick pair (B2 confirmed: the modulator reading's prediction paid).
+4. The bounded causal theorem + four excluded explanation classes.
+5. The pulse coincidence state (weight 59) + two exact minimal selectors.
+6. Reversals 24-26 absorbed (minimality; consumer census; naming collision).
+
+Next retasking: the braid's derivation from the rules (the merged why, with its target object); the trio bet deeper (braid clause armed); the pair-cohort reduced-braid census; the origin-delay relation census; the two owner decisions; review drain (99 PRs).
+
 # TOE lane update — fixed rubric (2026-07-31, the mechanism wave)
 
 | TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |

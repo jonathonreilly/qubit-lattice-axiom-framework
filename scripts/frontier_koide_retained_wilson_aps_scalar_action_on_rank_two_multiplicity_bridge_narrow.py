@@ -47,11 +47,12 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# The primary runner executes this mutable repository source through importlib.
-# Pin it into the canonical cache fingerprint as well as exposing it to the
-# restricted audit packet's static helper discovery.
+# The primary runner executes these mutable repository sources through the
+# sibling's top-level import chain. Pin the complete executable closure into the
+# canonical cache fingerprint as well as exposing it to static helper discovery.
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_koide_delta_lattice_wilson_selected_eigenline_no_go.py",
+    "scripts/n5_resolution_certificate.py",
 )
 
 # Import the sibling runner's construction without executing its main().
@@ -279,6 +280,95 @@ def run_for_r(r: float) -> None:
         "Some non-retained operators do distinguish the two copies of zeta; the retained ones do not.",
     )
 
+    section(f"r = {r}: independent attacks on the scoped negative corollary")
+
+    # Full-stabilizer-equivariant selection route.  A nontrivial U(2) action on
+    # M_zeta extends by the identity on its orthogonal complement and commutes
+    # with the supplied D,U data.  Hence no line can be selected equivariantly
+    # from that pair alone.
+    beta = math.pi / 5
+    V = np.array(
+        [[math.cos(beta), -math.sin(beta)], [math.sin(beta), math.cos(beta)]],
+        dtype=complex,
+    )
+    identity = np.eye(D.shape[0], dtype=complex)
+    R_V = identity + basis_Mz @ (V - np.eye(2, dtype=complex)) @ basis_Mz.conj().T
+    rotated_line = R_V @ line_0
+    rotated_projector = np.outer(rotated_line, rotated_line.conj())
+    stabilizer_ok = (
+        np.linalg.norm(R_V @ R_V.conj().T - identity) < TOL
+        and np.linalg.norm(R_V @ D - D @ R_V) < TOL
+        and np.linalg.norm(R_V @ U - U @ R_V) < TOL
+        and np.linalg.norm(rank_one_proj - rotated_projector) > 0.5
+    )
+    check(
+        f"r={r}: full-stabilizer route supplies no equivariant rank-one line from (D,U)",
+        stabilizer_ok,
+        (
+            f"||[R_V,D]||={np.linalg.norm(R_V @ D - D @ R_V):.2e}, "
+            f"||[R_V,U]||={np.linalg.norm(R_V @ U - U @ R_V):.2e}, "
+            f"||P_line-R_V P_line R_V^dag||={np.linalg.norm(rank_one_proj - rotated_projector):.6f}"
+        ),
+    )
+
+    # Eigensolver/basis-ordering route.  Rotating the reported M_zeta basis
+    # changes its first line while leaving the restricted generator data
+    # unchanged, so an ordering convention cannot provide a canonical selector.
+    rotated_basis = basis_Mz @ V
+    rotated_first = rotated_basis[:, 0]
+    rotated_first_projector = np.outer(rotated_first, rotated_first.conj())
+    basis_ordering_ok = (
+        np.linalg.norm(rank_one_proj - rotated_first_projector) > 0.5
+        and np.linalg.norm(
+            restrict_to(D, rotated_basis) - V.conj().T @ D_on_Mz @ V
+        )
+        < TOL
+        and np.linalg.norm(
+            restrict_to(U, rotated_basis) - V.conj().T @ U_on_Mz @ V
+        )
+        < TOL
+    )
+    check(
+        f"r={r}: eigensolver/basis ordering cannot canonically select a line",
+        basis_ordering_ok,
+        (
+            f"||P_first-P_rotated_first||="
+            f"{np.linalg.norm(rank_one_proj - rotated_first_projector):.6f}"
+        ),
+    )
+
+    # Clifford-algebra enlargement route.  The supplied gamma representation
+    # contains a commuting volume element that really does split M_zeta.  Its
+    # non-scalar restriction proves that it lies outside A=C*(D,U), so this
+    # successful counter-route narrows rather than falsifies the scoped result.
+    sigma_x = np.array([[0, 1], [1, 0]], dtype=complex)
+    sigma_y = np.array([[0, -1j], [1j, 0]], dtype=complex)
+    sigma_z = np.array([[1, 0], [0, -1]], dtype=complex)
+    gamma_1, gamma_2, gamma_3 = (
+        np.kron(sigma_y, sigma) for sigma in (sigma_x, sigma_y, sigma_z)
+    )
+    gamma_volume_spin = -1j * gamma_1 @ gamma_2 @ gamma_3
+    site_dimension = D.shape[0] // gamma_volume_spin.shape[0]
+    gamma_volume = np.kron(gamma_volume_spin, np.eye(site_dimension, dtype=complex))
+    gamma_on_Mz = restrict_to(gamma_volume, basis_Mz)
+    gamma_eigenvalues = np.linalg.eigvalsh(gamma_on_Mz)
+    gamma_is_scalar, _ = is_scalar_2x2(gamma_on_Mz)
+    clifford_route_ok = (
+        np.linalg.norm(gamma_volume @ D - D @ gamma_volume) < TOL
+        and np.linalg.norm(gamma_volume @ U - U @ gamma_volume) < TOL
+        and np.linalg.norm(gamma_eigenvalues - np.array([-1.0, 1.0])) < TOL
+        and not gamma_is_scalar
+    )
+    check(
+        f"r={r}: Clifford-volume enlargement splits M_zeta only outside A=C*(D,U)",
+        clifford_route_ok,
+        (
+            f"||[Gamma,D]||={np.linalg.norm(gamma_volume @ D - D @ gamma_volume):.2e}, "
+            f"||[Gamma,U]||={np.linalg.norm(gamma_volume @ U - U @ gamma_volume):.2e}, "
+            f"eig(Gamma|M_zeta)={gamma_eigenvalues.tolist()}"
+        ),
+    )
+
 
 def emit_no_go_discipline_certificate() -> None:
     """Emit live route and resolution evidence for the derived narrow no-go.
@@ -294,24 +384,26 @@ def emit_no_go_discipline_certificate() -> None:
         return
 
     routes = (
-        "N1_ROUTE algebraic_rearrangement: mechanism=restriction-algebra homomorphism; "
-        "attempt=combine sums and products of generator restrictions to obtain a non-scalar matrix; "
-        "outcome=closed because the scalar matrices form a unital subalgebra of End(M_zeta).",
-        "N1_ROUTE symmetry_or_representation: mechanism=zeta-character representation on the invariant zero-mode space; "
-        "attempt=use multiplicity two to permit a non-scalar operator commuting with U; "
-        "outcome=closed for the declared generated algebra because every named generator, not merely every commuting operator, restricts to a scalar.",
-        "N1_ROUTE alternate_carrier_or_sector: mechanism=rank-one projector on an alternate operator carrier; "
-        "attempt=adjoin |line_0><line_0| to distinguish the two zeta copies; "
-        "outcome=the computed diag(1,0) restriction succeeds only outside A=C*(D,U), so it does not falsify the scoped boundary.",
-        "N1_ROUTE numerical_or_finite_case: mechanism=finite spectral computation of every D-eigenspace projector; "
-        "attempt=search the complete finite projector list for a non-scalar restriction; "
-        "outcome=closed because every computed P_lambda(D) restriction is exactly the expected zero or identity within tolerance.",
-        "N1_ROUTE lattice_scale_or_limit: mechanism=two-point Wilson-parameter lattice sweep; "
-        "attempt=break the scalar restriction by changing r from 1.0 to the construction default 1.425; "
-        "outcome=closed on the stated certified set because both complete finite runs preserve dim(M_zeta)=2 and every scalar generator restriction.",
-        "N1_ROUTE alternate_observable_or_readout: mechanism=spectral observable functional calculus; "
-        "attempt=use sign(D), eta-style spectral sums, or another eigenvalue-weighted readout to split M_zeta; "
-        "outcome=closed inside A because finite spectral functions are linear combinations of the tested P_lambda(D) and remain scalar on M_zeta.",
+        "N1_ROUTE exact_multiplicity: object=the common zeta zero-mode sector; "
+        "mechanism=kernel and character-projector rank; "
+        "attempt=make M_zeta one-dimensional so its identity is rank one; "
+        "outcome=closed because the executed construction has dim(M_zeta)=2 at each stated point.",
+        "N1_ROUTE algebraic_functional_calculus: object=A=C*(D,U); "
+        "mechanism=restriction-algebra homomorphism; "
+        "attempt=construct a polynomial, star-polynomial, or finite spectral function with non-scalar restriction; "
+        "outcome=closed because every generator restricts to a scalar and scalar matrices form a unital algebra.",
+        "N1_ROUTE stabilizer_equivariant_selection: object=lines in M_zeta; "
+        "mechanism=the full U(2) stabilizer of the pair (D,U); "
+        "attempt=select a line equivariantly without requiring its projector to lie in A; "
+        "outcome=closed because the executed R_V commutes with D,U and moves the candidate line.",
+        "N1_ROUTE basis_ordering_convention: object=the first reported eigenvector; "
+        "mechanism=unitary basis freedom inside M_zeta; "
+        "attempt=turn eigensolver ordering or phase convention into a selector; "
+        "outcome=closed because the executed basis rotation changes the first line while preserving all restricted generator data.",
+        "N1_ROUTE clifford_algebra_enlargement: object=the supplied Clifford volume element Gamma; "
+        "mechanism=a commuting non-scalar involution; "
+        "attempt=split M_zeta using existing full-Wilson data; "
+        "outcome=succeeds, and the executed non-scalar restriction proves Gamma lies outside A=C*(D,U), enforcing the narrow scope.",
     )
     for route in routes:
         print(route)

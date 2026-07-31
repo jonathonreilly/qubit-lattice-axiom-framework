@@ -2,9 +2,9 @@
 
 **Date:** 2026-05-16
 **Type:** positive_theorem (narrow bridge theorem, source-only)
-**Actual current-surface status:** `conditional-support`; the finite-dimensional
-theorem is proved conditional on the linked Wilson construction, and independent
-audit remains required before any retained-grade use.
+**Current source boundary:** `support`, conditional on the linked Wilson
+construction; the finite-dimensional theorem is proved under that supplied
+premise, and independent audit remains required before any retained-grade use.
 **Claim scope:** the standalone operator-algebraic statement that on the
 rank-two `ζ`-character isotypic component `M_ζ` of the Wilson-Dirac zero-mode
 subspace `V_0 = ker(D)` constructed by the existing sibling runner
@@ -244,9 +244,9 @@ derived_boundary_mark_is_scalar_on_multiplicity`).
   outside `A` would be a non-scalar operator (and the parent note's
   falsifier explicitly says this is the missing extra data).
 - Does **not** depend on the value of the Wilson mass `r` beyond the
-  requirement that the sibling runner certifies the rank-two
-  `ζ`-character structure at that `r` (verified at `r = 1.0` and
-  `r = 1.425` in the sibling).
+  requirement that the rank-two `ζ`-character structure hold at that
+  `r`. The sibling proves and executes it at `r = 1.0`; this bridge
+  runner separately checks it numerically at `r = 1.425`.
 - Does **not** claim the existing parent runner's check `B.1` is now
   vacuous; this bridge derives precisely that hard-coded scalar
   premise.
@@ -291,12 +291,11 @@ all operators on the finite Hilbert space.
 
 | Route class | Attempt and disposition | Marker |
 |---|---|---|
-| Algebraic rearrangement | Form arbitrary sums and products of the restricted generators. The restriction map is an algebra homomorphism and the scalar matrices form a unital subalgebra, so the route stays scalar. | `ATTEMPTED` |
-| Symmetry or representation | Use the multiplicity-two character space to allow a general operator commuting with `U`. This defeats a naive Schur argument but not the stated proof, which checks the actual generators individually. | `ATTEMPTED` |
-| Alternate carrier or sector | Use `|line_0><line_0|` or the Clifford volume element to split the doublet. Both succeed only after leaving `A = C*(D,U)`, which narrows rather than falsifies this boundary. | `ATTEMPTED` |
-| Numerical or finite case | Search every finite spectral projector of `D` for a non-scalar restriction. The runner exhausts that projector list at both stated parameters and finds only `0 I_2` or `I_2`. | `ATTEMPTED` |
-| Lattice scale or limit | Change the Wilson parameter from `r = 1.0` to `r = 1.425`. The independently executed finite construction retains the same rank-two character sector and scalar generator restrictions on this two-point set. | `ATTEMPTED` |
-| Alternate observable or readout | Replace the projectors by `sign(D)`, eta-style finite spectral sums, or another eigenvalue-weighted function of `D`. Finite functional calculus expresses each such operator as a linear combination of the tested projectors. | `ATTEMPTED` |
+| Exact multiplicity | Try to make `M_ζ` one-dimensional, so its identity is already rank one. The exact sibling calculation proves rank two at `r = 1`, and the primary rechecks rank two at both executed points. | `ATTEMPTED` |
+| Algebraic functional calculus | Construct a polynomial, star-polynomial, or finite spectral function of `D,U` with non-scalar restriction. The restriction homomorphism sends every generator into `ℂ I_2`, so the whole generated algebra stays scalar. | `ATTEMPTED` |
+| Full-stabilizer-equivariant selection | Select a line from `(D,U)` without requiring its projector to be an algebra element. The runner constructs a nontrivial extended `U(2)` action `R_V` that commutes with `D,U` and moves the candidate line, so no such line is equivariant. | `ATTEMPTED` |
+| Eigensolver/basis-ordering convention | Use the first eigenvector, a phase convention, or a basis label as the selector. The runner rotates the reported `M_ζ` basis, changing its first-line projector while preserving the restricted generator data. | `ATTEMPTED` |
+| Clifford-algebra enlargement | Use `Γ = -i γ_1 γ_2 γ_3` from the supplied full Wilson/Clifford representation. The runner verifies that this route succeeds and splits `M_ζ`; its non-scalar restriction proves `Γ ∉ A`, so it enforces rather than falsifies the scoped boundary. | `ATTEMPTED` |
 
 The runner prints one current-cycle `N1_ROUTE` line for each family, including
 the mechanism, attempted falsifier, and computed disposition.
@@ -396,9 +395,10 @@ verifies numerically (at machine precision) the following PASS checks:
    `diag(1, 0)`), confirming that the scalar-on-`M_ζ` property
    genuinely distinguishes the retained algebra from arbitrary
    operators.
-7. The argument is `r`-independent in the certified window: both
-   `r = 1.0` and `r = 1.425` certifications produce scalar
-   restrictions for every generator.
+7. The same conditional algebraic implication is separately executed at
+   the two stated points: the sibling proves the construction antecedent at
+   `r = 1.0`, while this runner checks the antecedent and scalar restrictions
+   numerically at `r = 1.425`.
 
 The runner exits 0 iff every check passes.
 

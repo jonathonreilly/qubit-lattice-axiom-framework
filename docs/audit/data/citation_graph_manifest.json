@@ -1,5 +1,5 @@
 {
- "edge_count": 15362,
+ "edge_count": 15363,
  "node_count": 4613,
  "nodes": {
   "3d_correction_master_note": {
@@ -8135,8 +8135,8 @@
    "out_degree": 17
   },
   "koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow_theorem_note_2026-05-16": {
-   "deps_hash": "e3b0c44298fc",
-   "out_degree": 0
+   "deps_hash": "48f16317ffa0",
+   "out_degree": 1
   },
   "koide_review_guard_note_2026-04-24": {
    "deps_hash": "e3b0c44298fc",

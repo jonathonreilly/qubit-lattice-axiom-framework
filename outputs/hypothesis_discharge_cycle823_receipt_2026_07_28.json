@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF15-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle823_discharge_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle823_hypothesis_discharge_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 7
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 823,
+  "files": {
+    "docs/HYPOTHESIS_DISCHARGE_CYCLE823_BOUNDED_THEOREM_NOTE_2026-07-28.md": "1e60b42d087cab94fa2cd24cdaa1e9a25eb01d01e20310ee3ca8e33b7a6a21b3",
+    "logs/runner-cache/frontier_cycle823_discharge_independent_check_2026_07_28.txt": "223fdd452b6866eba689b55ec111a790e1c95c708033f149bc94a17af31346b2",
+    "logs/runner-cache/frontier_cycle823_hypothesis_discharge_2026_07_28.txt": "9f7608bca849bc8b48faea78b5be5e7116b325e23e70c832af8cd558335d6ed0",
+    "scripts/frontier_cycle823_discharge_independent_check_2026_07_28.py": "69ea8d226047dbe254241ed7399b4195cbc550cde3d84b66ccbb9ebb5a8a8b42",
+    "scripts/frontier_cycle823_hypothesis_discharge_2026_07_28.py": "ecc213e98a7ad2ff673ac486c155fd728847f5978632f8d1bc37a02173ead5b0"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "H_TEMPLATE_PREIMAGE_ZONE_CLASS DISCHARGED on the ACTUAL constructor objects at b=3..10 (sector theorem UNCONDITIONAL at each)",
+    "b=11 pattern passes; NO general-b claim",
+    "v1 surrogate discharge REFUTED by checker (reversal seventeen) and retracted to diagnostics",
+    "fixed checker 6/6 (element-wise fidelity b=3..11 equal); supervisor patch: literal audit tuple"
+  ]
+}

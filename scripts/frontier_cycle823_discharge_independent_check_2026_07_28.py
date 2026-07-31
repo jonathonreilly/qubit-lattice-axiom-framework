@@ -27,7 +27,10 @@ PRIMARY_817 = (
 PRIMARY_823 = (
     "scripts/frontier_cycle823_hypothesis_discharge_2026_07_28.py"
 )
-AUDIT_INPUT_PATHS = (PRIMARY_817, PRIMARY_823)
+AUDIT_INPUT_PATHS = (
+    "scripts/frontier_cycle817_general_b_sector_theorem_2026_07_28.py",
+    "scripts/frontier_cycle823_hypothesis_discharge_2026_07_28.py",
+)
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 BLOCKLIST = tuple(Path(path).stem for path in AUDIT_INPUT_PATHS)
 AUDIT_TIMEOUT_SEC = 1200

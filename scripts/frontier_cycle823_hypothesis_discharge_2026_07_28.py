@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
-"""Cycle 823: fixed-b discharge of H_TEMPLATE_PREIMAGE_ZONE_CLASS.
+"""Cycle 823 v2: discharge on Cycle-817's actual constructor objects.
 
-The Cycle-817 primary/checker pair and constructor witnesses are inert audit
-inputs: this stdlib-only runner reads their bytes/text and parses their ASTs,
-but never imports or executes them.  The finite template signatures used by
-the discharge are frozen below as a literal certificate and checked against
-independent digests before use.
+Route chosen: DIRECT.  After SHA-pinning the Cycle-817 evidence and the exact
+Cycle-719 constructor named by it, this runner imports that constructor and
+checks its live ``interleaved_program`` rows, local Gate objects, mapped Gate
+objects, live predecessor value, and finalizer function.  The v1 compressed
+table remains only as a clearly labelled diagnostic; it is not an input to
+the v2 discharge or verdict.
 """
 from __future__ import annotations
 
 import ast
 import base64
 from collections import Counter
+import dis
 from hashlib import sha1, sha256
+import importlib
 import json
 from pathlib import Path
 import sys
@@ -20,7 +23,7 @@ from time import perf_counter
 import zlib
 
 
-AUDIT_TIMEOUT_SEC = 1500
+AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 200 * 1024
 ROOT = Path(__file__).resolve().parents[1]
 SELF_PATH = (
@@ -43,14 +46,17 @@ CYCLE739 = "scripts/frontier_cycle739_identity_discharge_2026_07_28.py"
 SOURCE_FINALIZER = (
     "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py"
 )
+ACTUAL_CONSTRUCTOR_MODULE = (
+    "frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26"
+)
 
 AUDIT_INPUT_PATHS = (
-    PRIMARY_817,
-    CHECKER_817,
-    CYCLE719,
-    CYCLE719_LOCAL,
-    CYCLE739,
-    SOURCE_FINALIZER,
+    "scripts/frontier_cycle817_general_b_sector_theorem_2026_07_28.py",
+    "scripts/frontier_cycle817_theorem_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle739_identity_discharge_2026_07_28.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
@@ -135,6 +141,15 @@ PAIR_TEMPLATE_KIND = {
 }
 DISCHARGE_BANKS = tuple(range(3, 11))
 PATTERN_TEST_BANK = 11
+
+V1_REFUTATION_VERBATIM = (
+    "REFUTATION: Cycle 823 proves the zone predicate for a compressed "
+    "literal table and hard-coded predecessor offset 1 embedded in Cycle "
+    "823, but Cycle 817 quantifies over the actual constructor-emitted words "
+    "and actual predecessor offset; Cycle 823 contains no mechanical "
+    "equality/digest/value comparison between those objects. The discharged "
+    "check is therefore weaker than Cycle 817's actual hypothesis."
+)
 
 EXPECTED_TEMPLATE_METADATA = {
     "bank_packet": {
@@ -415,7 +430,10 @@ def load_inert_packet() -> tuple[
         "paths_existing": all((ROOT / path).is_file()
                               for path in AUDIT_INPUT_PATHS),
         "rows": rows,
-        "access": "bytes/text/ast.parse only; never imported or executed",
+        "access": (
+            "pin phase uses bytes/text/ast.parse only; the Cycle-719 "
+            "constructor is imported only after all exact pins pass"
+        ),
         "exact": exact,
     }, sources, trees
 
@@ -754,7 +772,7 @@ def operand_failure(
     }
 
 
-def fixed_b_discharge(
+def surrogate_fixed_b_diagnostic(
     bank_count: int,
     templates: dict[str, tuple[tuple[str, tuple[int, ...]], ...]],
     finalizer_independent: bool,
@@ -1024,7 +1042,7 @@ def fixed_b_discharge(
     }
 
 
-def certificate_b(
+def surrogate_certificate_b_diagnostic(
     cert_a: dict[str, object],
     literal: dict[str, object],
     templates: dict[str, tuple[tuple[str, tuple[int, ...]], ...]],
@@ -1034,7 +1052,7 @@ def certificate_b(
         and not cert_a["finalizer_bank_count_AST_loads"]
     )
     rows = {
-        bank_count: fixed_b_discharge(
+        bank_count: surrogate_fixed_b_diagnostic(
             bank_count, templates, finalizer_independent
         )
         for bank_count in DISCHARGE_BANKS
@@ -1071,7 +1089,7 @@ def certificate_b(
     }
 
 
-def certificate_c(
+def surrogate_pattern_diagnostic(
     cert_a: dict[str, object],
     cert_b: dict[str, object],
     templates: dict[str, tuple[tuple[str, tuple[int, ...]], ...]],
@@ -1098,7 +1116,7 @@ def certificate_c(
         },
         "cross": 0 <= CROSS_PREDECESSOR_OFFSET < BANK_WIDTH,
     }
-    next_b = fixed_b_discharge(
+    next_b = surrogate_fixed_b_diagnostic(
         PATTERN_TEST_BANK,
         templates,
         cert_a["exact"] and not cert_a["finalizer_bank_count_AST_loads"],
@@ -1278,7 +1296,7 @@ def cycle738_transfer_certificate() -> dict[str, object]:
     }
 
 
-def certificate_d(
+def legacy_bridge_diagnostic(
     trees: dict[str, ast.Module],
 ) -> dict[str, object]:
     primary_ast = function_fragment_certificate(
@@ -1338,17 +1356,608 @@ def certificate_d(
     }
 
 
-def build_core(
+def load_actual_constructor(
+    source_inputs: dict[str, object],
+) -> tuple[object, dict[str, object]]:
+    """Import the exact SHA-pinned constructor only after pin verification."""
+    pin = source_inputs["rows"][CYCLE719]
+    if not pin["exact"]:
+        raise AssertionError("refusing to execute an unpinned constructor")
+    scripts = str(ROOT / "scripts")
+    if scripts not in sys.path:
+        sys.path.insert(0, scripts)
+    constructor = importlib.import_module(ACTUAL_CONSTRUCTOR_MODULE)
+    observed_path = Path(str(constructor.__file__)).resolve()
+    expected_path = (ROOT / CYCLE719).resolve()
+    exact = (
+        observed_path == expected_path
+        and constructor.interleaved_program.__module__
+        == ACTUAL_CONSTRUCTOR_MODULE
+        and constructor.mapped_macro.__module__ == ACTUAL_CONSTRUCTOR_MODULE
+    )
+    return constructor, {
+        "route": "DIRECT_ACTUAL_OBJECTS",
+        "pin_verified_before_import": True,
+        "module": ACTUAL_CONSTRUCTOR_MODULE,
+        "expected_path": str(expected_path),
+        "observed_path": str(observed_path),
+        "interleaved_program_owner":
+            constructor.interleaved_program.__module__,
+        "mapped_macro_owner": constructor.mapped_macro.__module__,
+        "exact": exact,
+    }
+
+
+def word_signature(word: object) -> tuple[
+    tuple[str, tuple[int, ...]], ...
+]:
+    """Read kind/wires directly from each live constructor Gate object."""
+    return tuple(
+        (str(gate.kind), tuple(int(wire) for wire in gate.wires))
+        for gate in word
+    )
+
+
+def actual_constructor_certificate_a(
+    trees: dict[str, ast.Module],
+    constructor: object,
+    import_certificate: dict[str, object],
+) -> dict[str, object]:
+    h817 = assigned_literal(trees[PRIMARY_817], HYPOTHESIS_NAME)
+    inputs817 = assigned_literal(trees[PRIMARY_817], "AUDIT_INPUT_PATHS")
+    fixed_attempt = function_fragment_certificate(
+        trees[PRIMARY_817],
+        "fixed_b_preimage_attempt",
+        (
+            "cycle719 = trees[AUDIT_INPUT_PATHS[0]]",
+            "cycle719",
+            "'interleaved_program'",
+            "actual template words are constructed by calls into transitive "
+            "modules",
+        ),
+    )
+    constructor_ast = function_fragment_certificate(
+        trees[CYCLE719],
+        "interleaved_program",
+        (
+            "R3.source_compute_word()",
+            "H.PACKET",
+            "H.HANDOFF_FORWARD",
+            "H.RELAY_LATCH",
+            "H.RELAY_SWAP",
+            "H.RELAY_UNLATCH",
+            "H.HANDOFF_RETURN",
+            "M.source_finalizer_word(bank_count)",
+        ),
+    )
+    mapped_ast = function_fragment_certificate(
+        trees[CYCLE719],
+        "mapped_macro",
+        ("H.mapped_action(kind, index, local)",),
+    )
+    finalizer = constructor.M.source_finalizer_word
+    positional_names = finalizer.__code__.co_varnames[
+        :finalizer.__code__.co_argcount
+    ]
+    bank_argument = positional_names[0]
+    bank_argument_loads = tuple(
+        (instruction.offset, instruction.opname)
+        for instruction in dis.get_instructions(finalizer)
+        if instruction.argval == bank_argument
+        and instruction.opname.startswith("LOAD_")
+    )
+    live_predecessor_value = int(constructor.A.CELLS[0]["pred"][1])
+    exact = (
+        h817 == EXPECTED_HYPOTHESIS
+        and inputs817[0] == CYCLE719
+        and fixed_attempt["exact"]
+        and constructor_ast["exact"]
+        and mapped_ast["exact"]
+        and import_certificate["exact"]
+        and bank_argument == "_bank_count"
+        and not bank_argument_loads
+    )
+    return {
+        "certificate_name": "A_DIRECT_ACTUAL_OBJECT_RUN",
+        "route": "DIRECT_ACTUAL_OBJECTS",
+        "route_ruling": (
+            "The v1 surrogate is abandoned for theorem discharge. The exact "
+            "Cycle-719 module selected by Cycle-817 is SHA-pinned, imported, "
+            "and its live interleaved_program/mapped_macro objects are passed "
+            "directly to the decidable check."
+        ),
+        "Cycle817_hypothesis": h817,
+        "Cycle817_AUDIT_INPUT_PATHS_0": inputs817[0],
+        "Cycle817_actual_object_reference_AST": fixed_attempt,
+        "actual_constructor_AST": constructor_ast,
+        "actual_mapper_AST": mapped_ast,
+        "import_certificate": import_certificate,
+        "live_gate_class": (
+            type(constructor.interleaved_program(3)[0][2][0]).__module__,
+            type(constructor.interleaved_program(3)[0][2][0]).__name__,
+        ),
+        "live_predecessor_value": live_predecessor_value,
+        "finalizer_bank_argument": bank_argument,
+        "finalizer_bank_argument_bytecode_loads": bank_argument_loads,
+        "finalizer_bank_count_independent_for_all_inputs":
+            not bank_argument_loads,
+        "surrogate_used_for_discharge": False,
+        "exact": exact,
+    }
+
+
+def _failure(
+    bank_count: int,
+    station: int,
+    family: str,
+    index: int,
+    detail: str,
+    observed: object,
+    expected: object,
+) -> dict[str, object]:
+    return {
+        "COUNTEREXAMPLE": HYPOTHESIS_NAME,
+        "b": bank_count,
+        "station": station,
+        "family": family,
+        "index": index,
+        "detail": detail,
+        "observed": observed,
+        "expected": expected,
+    }
+
+
+def _first_word_difference(
+    observed: tuple[tuple[str, tuple[int, ...]], ...],
+    expected: tuple[tuple[str, tuple[int, ...]], ...],
+) -> dict[str, object]:
+    for gate_index in range(min(len(observed), len(expected))):
+        if observed[gate_index] != expected[gate_index]:
+            return {
+                "gate_index": gate_index,
+                "observed_gate": observed[gate_index],
+                "expected_gate": expected[gate_index],
+            }
+    return {
+        "observed_gate_count": len(observed),
+        "expected_gate_count": len(expected),
+    }
+
+
+def fixed_b_discharge(
+    bank_count: int,
+    constructor: object,
+    finalizer_uniform: bool,
+    *,
+    perturb_actual_derived_copy: bool = False,
+) -> dict[str, object]:
+    """Decide H on the live constructor rows, never on frozen templates."""
+    program = constructor.interleaved_program(bank_count)
+    bank_bases = tuple(int(x) for x in constructor.M.R12.BANK_BASES)
+    link_bases = tuple(int(x) for x in constructor.M.R12.LINK_BASES)
+    actual_bank_width = int(constructor.A.N)
+    actual_link_width = int(constructor.B.LINK_WIDTH)
+    actual_link_half = actual_link_width // 2
+    actual_data_width = link_bases[-1] + actual_link_width
+    live_predecessor = int(constructor.A.CELLS[0]["pred"][1])
+    failures: list[dict[str, object]] = []
+    failure_count = 0
+    inferred_offsets: list[int] = []
+    gates_checked = 0
+    operands_checked = 0
+    family_counts = Counter(str(row[0]) for row in program)
+    perturbation_applied = False
+
+    def record(row: dict[str, object]) -> None:
+        nonlocal failure_count
+        failure_count += 1
+        if len(failures) < 20:
+            failures.append(row)
+
+    if actual_bank_width != BANK_WIDTH:
+        record(_failure(
+            bank_count, -1, "geometry", -1, "actual bank width",
+            actual_bank_width, BANK_WIDTH,
+        ))
+    if actual_link_half != LINK_AUX_WIDTH:
+        record(_failure(
+            bank_count, -1, "geometry", -1, "actual link-half width",
+            actual_link_half, LINK_AUX_WIDTH,
+        ))
+    if bank_bases[:2] != (
+        SOURCE_WIDTH,
+        SOURCE_WIDTH + BANK_WIDTH,
+    ):
+        record(_failure(
+            bank_count, -1, "geometry", -1,
+            "capacity-independent source/bank anchor",
+            bank_bases[:2],
+            (SOURCE_WIDTH, SOURCE_WIDTH + BANK_WIDTH),
+        ))
+    if len(bank_bases) < bank_count or len(link_bases) < bank_count - 1:
+        record(_failure(
+            bank_count, -1, "geometry", -1, "actual table lengths",
+            (len(bank_bases), len(link_bases)),
+            (f">={bank_count}", f">={bank_count - 1}"),
+        ))
+
+    for station, row in enumerate(program):
+        family, index, local_word = row
+        family = str(family)
+        index = int(index)
+        local = word_signature(local_word)
+        mapped = list(word_signature(constructor.mapped_macro(row)))
+        if (
+            perturb_actual_derived_copy
+            and not perturbation_applied
+            and family == "bank"
+            and mapped
+            and mapped[0][1]
+        ):
+            kind, wires = mapped[0]
+            changed = list(wires)
+            changed[0] = bank_bases[index] + actual_bank_width
+            mapped[0] = (kind, tuple(changed))
+            perturbation_applied = True
+        mapped_word = tuple(mapped)
+        gates_checked += len(mapped_word)
+        operands_checked += sum(len(wires) for _kind, wires in mapped_word)
+
+        if family in {"source", "finalizer"}:
+            expected_word = local
+            support = SOURCE_ANCHOR_SUPPORT
+            if mapped_word != expected_word:
+                record(_failure(
+                    bank_count, station, family, index,
+                    "actual identity mapping changed the word",
+                    _first_word_difference(mapped_word, expected_word),
+                    "byte-exact Gate signature equality",
+                ))
+            for gate_index, (_kind, wires) in enumerate(local):
+                for operand_index, wire in enumerate(wires):
+                    if not support[0] <= wire < support[1]:
+                        record(_failure(
+                            bank_count, station, family, index,
+                            f"local gate {gate_index} operand {operand_index}",
+                            wire, support,
+                        ))
+        elif family == "bank":
+            if not 0 <= index < bank_count:
+                record(_failure(
+                    bank_count, station, family, index, "bank index",
+                    index, (0, bank_count),
+                ))
+            expected_word = tuple(
+                (kind, tuple(bank_bases[index] + wire for wire in wires))
+                for kind, wires in local
+            )
+            if mapped_word != expected_word:
+                record(_failure(
+                    bank_count, station, family, index,
+                    "actual mapped bank word",
+                    _first_word_difference(mapped_word, expected_word),
+                    "exact bank-base translation",
+                ))
+            for gate_index, (_kind, wires) in enumerate(local):
+                for operand_index, wire in enumerate(wires):
+                    if not 0 <= wire < actual_bank_width:
+                        record(_failure(
+                            bank_count, station, family, index,
+                            f"local gate {gate_index} operand {operand_index}",
+                            wire, (0, actual_bank_width),
+                        ))
+        elif family == "cross":
+            if not 0 <= index < bank_count - 1:
+                record(_failure(
+                    bank_count, station, family, index, "edge index",
+                    index, (0, bank_count - 1),
+                ))
+            if (
+                len(mapped_word) != 1
+                or mapped_word[0][0] != "CNOT"
+                or len(mapped_word[0][1]) != 2
+            ):
+                record(_failure(
+                    bank_count, station, family, index,
+                    "actual cross gate shape", mapped_word,
+                    "one CNOT(control,target)",
+                ))
+            else:
+                control, target = mapped_word[0][1]
+                inferred = target - bank_bases[index + 1]
+                inferred_offsets.append(inferred)
+                if control != link_bases[index]:
+                    record(_failure(
+                        bank_count, station, family, index,
+                        "cross control", control, link_bases[index],
+                    ))
+                if inferred != live_predecessor:
+                    record(_failure(
+                        bank_count, station, family, index,
+                        "inferred predecessor offset", inferred,
+                        live_predecessor,
+                    ))
+                if not 0 <= inferred < actual_bank_width:
+                    record(_failure(
+                        bank_count, station, family, index,
+                        "predecessor offset zone", inferred,
+                        (0, actual_bank_width),
+                    ))
+        elif family in {"handoff", "relay"}:
+            if not 0 <= index < bank_count - 1:
+                record(_failure(
+                    bank_count, station, family, index, "edge index",
+                    index, (0, bank_count - 1),
+                ))
+            split = 0 if family == "handoff" else actual_link_half
+            expected_gates = []
+            for gate_index, (kind, wires) in enumerate(local):
+                expected_wires = []
+                for operand_index, wire in enumerate(wires):
+                    zone = pair_local_zone(wire)
+                    if zone is None:
+                        record(_failure(
+                            bank_count, station, family, index,
+                            f"local gate {gate_index} operand {operand_index}",
+                            wire, {
+                                "left_bank": (0, actual_bank_width),
+                                "right_bank": (
+                                    actual_bank_width,
+                                    2 * actual_bank_width,
+                                ),
+                                "link_half": (
+                                    2 * actual_bank_width,
+                                    2 * actual_bank_width + actual_link_half,
+                                ),
+                            },
+                        ))
+                        expected_wires.append(-1)
+                    elif zone[0] == "left_bank":
+                        expected_wires.append(bank_bases[index] + zone[1])
+                    elif zone[0] == "right_bank":
+                        expected_wires.append(
+                            bank_bases[index + 1] + zone[1]
+                        )
+                    else:
+                        expected_wires.append(
+                            link_bases[index] + split + zone[1]
+                        )
+                expected_gates.append((kind, tuple(expected_wires)))
+            expected_word = tuple(expected_gates)
+            if mapped_word != expected_word:
+                record(_failure(
+                    bank_count, station, family, index,
+                    "actual mapped pair word",
+                    _first_word_difference(mapped_word, expected_word),
+                    "exact adjacent-bank/link-half translation",
+                ))
+        else:
+            record(_failure(
+                bank_count, station, family, index, "unknown row family",
+                family, ("source", "bank", "cross", "handoff", "relay",
+                         "finalizer"),
+            ))
+
+        for gate_index, (kind, wires) in enumerate(mapped_word):
+            if (
+                kind not in ARITY
+                or len(wires) != ARITY.get(kind)
+                or len(set(wires)) != len(wires)
+            ):
+                record(_failure(
+                    bank_count, station, family, index,
+                    f"mapped gate {gate_index} kind/arity/distinctness",
+                    (kind, wires), ARITY,
+                ))
+            for operand_index, wire in enumerate(wires):
+                if not 0 <= wire < actual_data_width:
+                    record(_failure(
+                        bank_count, station, family, index,
+                        f"mapped gate {gate_index} operand {operand_index}",
+                        wire, (0, actual_data_width),
+                    ))
+
+    expected_counts = {
+        "source": 1,
+        "bank": bank_count,
+        "cross": bank_count - 1,
+        "handoff": 2 * (bank_count - 1),
+        "relay": 4 * (bank_count - 1),
+        "finalizer": 1,
+    }
+    if (
+        len(program) != 8 * bank_count - 5
+        or dict(family_counts) != expected_counts
+    ):
+        record(_failure(
+            bank_count, -1, "program", -1, "row grammar",
+            {
+                "rows": len(program),
+                "family_counts": dict(family_counts),
+            },
+            {
+                "rows": 8 * bank_count - 5,
+                "family_counts": expected_counts,
+            },
+        ))
+    if not finalizer_uniform:
+        record(_failure(
+            bank_count, len(program) - 1, "finalizer", 0,
+            "bank-count independence", False, True,
+        ))
+    if perturb_actual_derived_copy and not perturbation_applied:
+        record(_failure(
+            bank_count, -1, "negative_control", -1,
+            "perturbation applied", False, True,
+        ))
+
+    passed = failure_count == 0
+    return {
+        "b": bank_count,
+        "actual_constructor_rows": len(program),
+        "actual_gate_objects_checked": gates_checked,
+        "actual_operands_checked": operands_checked,
+        "actual_family_counts": dict(sorted(family_counts.items())),
+        "actual_bank_width": actual_bank_width,
+        "actual_link_width": actual_link_width,
+        "live_predecessor_value": live_predecessor,
+        "inferred_cross_offsets": tuple(sorted(set(inferred_offsets))),
+        "finalizer_uniform": finalizer_uniform,
+        "perturbed_actual_derived_copy": perturb_actual_derived_copy,
+        "failure_count": failure_count,
+        "failures": failures,
+        "H_TEMPLATE_PREIMAGE_ZONE_CLASS": "PASS" if passed else "FAIL",
+        "sector_theorem_at_fixed_b": (
+            "UNCONDITIONAL_NO_H_TEMPLATE"
+            if passed else
+            "NOT_DISCHARGED_BY_CYCLE823_V2"
+        ),
+        "logical_situation": (
+            "Cycle-817's conditional implication fires after removing only "
+            "H_TEMPLATE_PREIMAGE_ZONE_CLASS; its corrected seven structural "
+            "conditions and H_SECTOR_INPUT remain theorem premises."
+            if passed else
+            "The displayed actual-object counterexample prevents this "
+            "discharge. Cycle-817 remains conditional at this b; the sector "
+            "theorem could still be true by another argument."
+        ),
+        "exact": passed,
+    }
+
+
+def certificate_b(
+    cert_a: dict[str, object],
+    constructor: object,
+) -> dict[str, object]:
+    finalizer_words = {
+        bank_count: word_signature(
+            constructor.interleaved_program(bank_count)[-1][2]
+        )
+        for bank_count in (*DISCHARGE_BANKS, PATTERN_TEST_BANK)
+    }
+    finalizer_value_uniform = len(set(finalizer_words.values())) == 1
+    finalizer_uniform = (
+        cert_a["finalizer_bank_count_independent_for_all_inputs"]
+        and finalizer_value_uniform
+    )
+    per_b = {
+        bank_count: fixed_b_discharge(
+            bank_count, constructor, finalizer_uniform
+        )
+        for bank_count in DISCHARGE_BANKS
+    }
+    pattern = fixed_b_discharge(
+        PATTERN_TEST_BANK, constructor, finalizer_uniform
+    )
+    passed_b = tuple(b for b, row in per_b.items() if row["exact"])
+    failed_b = tuple(b for b, row in per_b.items() if not row["exact"])
+    exact = cert_a["exact"] and not failed_b and pattern["exact"]
+    return {
+        "certificate_name": "B_ACTUAL_OBJECT_DISCHARGE_REDECIDED",
+        "decision_input": (
+            "live Gate objects returned by the SHA-pinned Cycle-719 "
+            "interleaved_program and mapped_macro functions"
+        ),
+        "surrogate_table_used": False,
+        "per_b": per_b,
+        "b11_pattern": pattern,
+        "passed_b": passed_b,
+        "failed_b": failed_b,
+        "unconditional_sector_theorem_b": passed_b,
+        "finalizer_value_digests": {
+            b: stable_digest(word) for b, word in finalizer_words.items()
+        },
+        "finalizer_values_identical_b3_through_b11":
+            finalizer_value_uniform,
+        "logical_scope": (
+            "At every passing b, the Cycle-817 sector theorem no longer "
+            "assumes H_TEMPLATE_PREIMAGE_ZONE_CLASS. Its corrected seven "
+            "conditions and H_SECTOR_INPUT remain theorem premises."
+        ),
+        "exact": exact,
+    }
+
+
+def certificate_c(
     trees: dict[str, ast.Module],
 ) -> dict[str, object]:
-    cert_a = certificate_a(trees)
     templates, literal = literal_preimage_certificate(trees)
-    cert_b = certificate_b(cert_a, literal, templates)
-    cert_c = certificate_c(cert_a, cert_b, templates)
-    cert_d = certificate_d(trees)
+    surrogate_rows = {
+        bank_count: surrogate_fixed_b_diagnostic(
+            bank_count, templates, True
+        )
+        for bank_count in (*DISCHARGE_BANKS, PATTERN_TEST_BANK)
+    }
+    diagnostic_pass_b = tuple(
+        b for b, row in surrogate_rows.items() if row["exact"]
+    )
+    return {
+        "certificate_name": "C_V1_RETRACTION",
+        "v1_defect_verbatim": V1_REFUTATION_VERBATIM,
+        "retracted_claim": (
+            "The v1 embedded table and hard-coded offset discharge "
+            "Cycle-817's actual constructor hypothesis."
+        ),
+        "what_survives": (
+            "Only the decoded-table computations at b=3..11 survive, "
+            "labelled as surrogate diagnostics with no theorem consequence."
+        ),
+        "surrogate_diagnostic_packet": literal,
+        "surrogate_diagnostic_pass_b": diagnostic_pass_b,
+        "surrogate_diagnostics_only": True,
+        "used_by_certificate_B": False,
+        "exact": (
+            literal["exact"]
+            and diagnostic_pass_b
+            == (*DISCHARGE_BANKS, PATTERN_TEST_BANK)
+        ),
+    }
+
+
+def certificate_d(
+    constructor: object,
+    cert_b: dict[str, object],
+) -> dict[str, object]:
+    negative = fixed_b_discharge(
+        3,
+        constructor,
+        cert_b["finalizer_values_identical_b3_through_b11"],
+        perturb_actual_derived_copy=True,
+    )
+    detected = (
+        not negative["exact"]
+        and negative["failure_count"] > 0
+        and any(
+            row["family"] == "bank"
+            and row["detail"] == "actual mapped bank word"
+            for row in negative["failures"]
+        )
+    )
+    return {
+        "certificate_name": "D_ACTUAL_OBJECT_NEGATIVE_CONTROL",
+        "perturbation": (
+            "In an actual-derived copy of b=3's first mapped bank Gate, "
+            "replace its first wire by the half-open bank boundary base+131."
+        ),
+        "actual_object_checker_result": negative,
+        "expected_rejection_detected": detected,
+        "exact": detected,
+    }
+
+
+def build_core(
+    trees: dict[str, ast.Module],
+    constructor: object,
+    import_certificate: dict[str, object],
+) -> dict[str, object]:
+    cert_a = actual_constructor_certificate_a(
+        trees, constructor, import_certificate
+    )
+    cert_b = certificate_b(cert_a, constructor)
+    cert_c = certificate_c(trees)
+    cert_d = certificate_d(constructor, cert_b)
     return {
         "certificate_A": cert_a,
-        "literal_preimages": literal,
         "certificate_B": cert_b,
         "certificate_C": cert_c,
         "certificate_D": cert_d,
@@ -1359,42 +1968,34 @@ def control_certificate(
     source_inputs: dict[str, object],
     first_core: dict[str, object],
     second_core: dict[str, object],
+    import_certificate: dict[str, object],
 ) -> dict[str, object]:
     self_source = (ROOT / SELF_PATH).read_text(encoding="utf-8")
     self_tree = ast.parse(self_source, filename=SELF_PATH)
-    imported = []
-    for node in ast.walk(self_tree):
-        if isinstance(node, ast.Import):
-            imported.extend(alias.name.split(".")[0] for alias in node.names)
-        elif isinstance(node, ast.ImportFrom):
-            imported.append((node.module or "").split(".")[0])
-    allowed_imports = {
-        "__future__",
-        "ast",
-        "base64",
-        "collections",
-        "hashlib",
-        "json",
-        "pathlib",
-        "sys",
-        "time",
-        "zlib",
-    }
-    calls = {
-        call_name(node.func)
-        for node in ast.walk(self_tree)
-        if isinstance(node, ast.Call)
-    }
-    dynamic_calls = sorted(
-        name for name in calls
-        if name.split(".")[-1] in BLOCKED_DYNAMIC_CALLS
-    )
-    blocklisted_imports = sorted(set(imported) & set(BLOCKLIST))
     first_bytes = stable_json_bytes(first_core)
     second_bytes = stable_json_bytes(second_core)
     deterministic = first_bytes == second_bytes
+    literal_assignments = [
+        node for node in self_tree.body
+        if isinstance(node, ast.Assign)
+        and any(
+            isinstance(target, ast.Name)
+            and target.id == "AUDIT_INPUT_PATHS"
+            for target in node.targets
+        )
+    ]
+    audit_paths_syntactically_literal = (
+        len(literal_assignments) == 1
+        and isinstance(literal_assignments[0].value, ast.Tuple)
+        and all(
+            isinstance(element, ast.Constant)
+            and isinstance(element.value, str)
+            for element in literal_assignments[0].value.elts
+        )
+    )
     literal_paths_exact = (
-        DECLARED_INPUT_PATHS == AUDIT_INPUT_PATHS
+        audit_paths_syntactically_literal
+        and DECLARED_INPUT_PATHS == AUDIT_INPUT_PATHS
         and all(
             not Path(path).is_absolute()
             and ".." not in Path(path).parts
@@ -1402,33 +2003,38 @@ def control_certificate(
             for path in AUDIT_INPUT_PATHS
         )
     )
+    loaded_blocklisted_modules = tuple(sorted(
+        name for name in sys.modules
+        if name.split(".")[-1] in BLOCKLIST
+    ))
     exact = (
         source_inputs["exact"]
         and literal_paths_exact
-        and BLOCKLIST
-        == tuple(Path(path).stem for path in (PRIMARY_817, CHECKER_817))
-        and not blocklisted_imports
-        and not dynamic_calls
-        and not (set(imported) - allowed_imports)
+        and import_certificate["exact"]
+        and not loaded_blocklisted_modules
         and deterministic
-        and AUDIT_TIMEOUT_SEC == 1500
+        and AUDIT_TIMEOUT_SEC == 1400
         and STDOUT_LIMIT_BYTES == 200 * 1024
     )
     return {
-        "certificate_name": "E_CONTROLS",
+        "certificate_name": "CONTROLS",
         "AUDIT_INPUT_PATHS_literal": AUDIT_INPUT_PATHS,
+        "AUDIT_INPUT_PATHS_AST_tuple_of_string_literals":
+            audit_paths_syntactically_literal,
         "literal_worktree_relative_paths_existing": literal_paths_exact,
         "input_sha256_git_blob_sha1": source_inputs["rows"],
-        "BLOCKLIST_817_PAIR": BLOCKLIST,
-        "blocklisted_imports": blocklisted_imports,
-        "dynamic_execution_calls": dynamic_calls,
-        "stdlib_imports": sorted(set(imported)),
-        "unexpected_imports": sorted(set(imported) - allowed_imports),
-        "817_pair_access": "bytes/text/AST only; never imported or executed",
+        "actual_constructor_import": import_certificate,
+        "inert_817_pair": BLOCKLIST,
+        "loaded_817_pair_modules": loaded_blocklisted_modules,
+        "817_pair_access": "bytes/text/AST only",
+        "constructor_access":
+            "direct import and execution after SHA/blob pin verification",
         "deterministic_core_byte_identical_on_repeat": deterministic,
         "deterministic_core_sha256": sha256(first_bytes).hexdigest(),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "observed_stdout_bytes": None,
+        "observed_stdout_under_200KB": None,
         "exact": exact,
     }
 
@@ -1436,41 +2042,40 @@ def control_certificate(
 def main() -> int:
     started = perf_counter()
     source_inputs, _sources, trees = load_inert_packet()
-
-    first_core = build_core(trees)
-    second_core = build_core(trees)
+    constructor, import_certificate = load_actual_constructor(source_inputs)
+    first_core = build_core(trees, constructor, import_certificate)
+    second_core = build_core(trees, constructor, import_certificate)
     cert_a = first_core["certificate_A"]
-    literal = first_core["literal_preimages"]
     cert_b = first_core["certificate_B"]
     cert_c = first_core["certificate_C"]
     cert_d = first_core["certificate_D"]
-    cert_e = control_certificate(source_inputs, first_core, second_core)
+    controls = control_certificate(
+        source_inputs, first_core, second_core, import_certificate
+    )
 
     elapsed = perf_counter() - started
     checks = {
-        "A_FIXED_B_FINITE_DECIDABILITY_EXACT":
-            cert_a["exact"]
-            and cert_a["fixed_b_decidability"] == "FINITE_DECIDABLE",
-        "A2_LITERAL_PREIMAGE_CERTIFICATE_EXACT": literal["exact"],
-        "B_B3_THROUGH_B10_EXHAUSTIVE_DISCHARGE": cert_b["exact"],
-        "C_PATTERN_CANDIDATE_HOLDS_AT_B11": cert_c["exact"],
-        "D_CYCLE817_CONDITIONAL_BRIDGE_REPRODUCES": cert_d["exact"],
-        "E_CONTROLS_EXACT": cert_e["exact"],
-        "E_RUNTIME_UNDER_1500_SECONDS": elapsed < AUDIT_TIMEOUT_SEC,
+        "A_DIRECT_ACTUAL_OBJECT_ROUTE": cert_a["exact"],
+        "B_ACTUAL_OBJECT_B3_THROUGH_B10":
+            cert_b["exact"] and not cert_b["failed_b"],
+        "B_ACTUAL_OBJECT_PATTERN_B11": cert_b["b11_pattern"]["exact"],
+        "C_V1_RETRACTION_AND_DIAGNOSTIC_RELABEL": cert_c["exact"],
+        "D_ACTUAL_OBJECT_NEGATIVE_CONTROL": cert_d["exact"],
+        "CONTROLS_SHA_LITERAL_PATHS_DETERMINISM": controls["exact"],
+        "RUNTIME_UNDER_1400_SECONDS": elapsed < AUDIT_TIMEOUT_SEC,
     }
     runner_exact = all(checks.values())
     report = {
-        "version": 1,
+        "version": 2,
+        "route": "DIRECT_ACTUAL_OBJECTS",
         "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
         "BLOCKLIST": BLOCKLIST,
         "source_inputs": source_inputs,
-        "fixed_b_decidability_ruling": "FINITE_DECIDABLE",
-        "A_mechanical_restatement": cert_a,
-        "A2_literal_preimages": literal,
-        "B_fixed_b_discharge": cert_b,
-        "C_pattern_hunt": cert_c,
-        "D_identity_controls": cert_d,
-        "E_controls": cert_e,
+        "A_actual_objects": cert_a,
+        "B_discharge_redecided": cert_b,
+        "C_v1_retraction": cert_c,
+        "D_negative_control": cert_d,
+        "controls": controls,
         "checks": checks,
         "checks_passed": sum(checks.values()),
         "checks_failed": sum(not value for value in checks.values()),
@@ -1478,20 +2083,19 @@ def main() -> int:
             cert_b["unconditional_sector_theorem_b"],
         "general_b_hypothesis_discharged": False,
         "general_b_status": (
-            "GENERAL_DISCHARGE_CANDIDATE_HOLDS_AT_B11; "
-            "PENDING_INDEPENDENT_GENERAL_B_VERIFICATION"
+            "B11_ACTUAL_OBJECT_PATTERN_PASS_ONLY; NO_GENERAL_B_CLAIM"
         ),
         "verdict": (
-            "ANCHORS_B3_THROUGH_B10_CLOSED_UNCONDITIONALLY"
+            "ACTUAL_OBJECTS_DISCHARGE_B3_THROUGH_B10"
             if runner_exact else
-            "H_TEMPLATE_PREIMAGE_ZONE_CLASS_DISCHARGE_FAILED"
+            "ACTUAL_OBJECT_DISCHARGE_FAILED"
         ),
         "runtime_seconds": round(elapsed, 6),
         "runner_exact": runner_exact,
         "terminal": (
-            "CYCLE823_H_TEMPLATE_PREIMAGE_ZONE_CLASS_FIXED_B_PASS"
+            "CYCLE823_V2_ACTUAL_OBJECT_DISCHARGE_PASS"
             if runner_exact else
-            "CYCLE823_H_TEMPLATE_PREIMAGE_ZONE_CLASS_DISCHARGE_FAIL"
+            "CYCLE823_V2_ACTUAL_OBJECT_DISCHARGE_FAIL"
         ),
     }
 
@@ -1500,17 +2104,18 @@ def main() -> int:
         for label, passed in sorted(checks.items())
     ]
     lines.append(
-        "DECIDABILITY FINITE_DECIDABLE :: "
-        + str(cert_a["decision_procedure"])
+        "ROUTE DIRECT_ACTUAL_OBJECTS :: "
+        + str(cert_a["route_ruling"])
     )
     for bank_count, row in cert_b["per_b"].items():
         lines.append(
             f"DISCHARGE b={bank_count} "
             f"{row['H_TEMPLATE_PREIMAGE_ZONE_CLASS']} "
             f"sector={row['sector_theorem_at_fixed_b']} "
-            f"rows={row['program_rows_exhausted']} "
-            f"gates={row['mapped_gates_exhausted']} "
-            f"operands={row['mapped_operands_exhausted']}"
+            f"rows={row['actual_constructor_rows']} "
+            f"gates={row['actual_gate_objects_checked']} "
+            f"operands={row['actual_operands_checked']} "
+            f"pred={row['inferred_cross_offsets']}"
         )
         if row["failures"]:
             lines.extend((
@@ -1521,21 +2126,32 @@ def main() -> int:
                     sort_keys=True,
                     separators=(",", ":"),
                 ),
-                str(row["failure_logic_if_any"]),
+                str(row["logical_situation"]),
                 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
             ))
-    next_b = cert_c["next_b_mechanical_test"]
+    next_b = cert_b["b11_pattern"]
     lines.append(
         f"PATTERN b={PATTERN_TEST_BANK} "
-        f"{next_b['H_TEMPLATE_PREIMAGE_ZONE_CLASS']} :: "
-        f"{cert_c['candidate_status']}"
+        f"{next_b['H_TEMPLATE_PREIMAGE_ZONE_CLASS']} "
+        f"sector={next_b['sector_theorem_at_fixed_b']} "
+        f"rows={next_b['actual_constructor_rows']} "
+        f"gates={next_b['actual_gate_objects_checked']} "
+        f"operands={next_b['actual_operands_checked']} "
+        f"pred={next_b['inferred_cross_offsets']}"
+    )
+    lines.append(
+        "RETRACTION " + cert_c["v1_defect_verbatim"]
+    )
+    lines.append(
+        "NEGATIVE_CONTROL "
+        + ("REJECTED" if cert_d["exact"] else "MISSED")
     )
     lines.append("VERDICT " + report["verdict"])
     observed_stdout_bytes = 0
     output = ""
     for _iteration in range(8):
-        cert_e["observed_stdout_bytes"] = observed_stdout_bytes
-        cert_e["observed_stdout_under_200KB"] = (
+        controls["observed_stdout_bytes"] = observed_stdout_bytes
+        controls["observed_stdout_under_200KB"] = (
             observed_stdout_bytes < STDOUT_LIMIT_BYTES
         )
         report.pop("report_sha256", None)
@@ -1559,7 +2175,7 @@ def main() -> int:
             "stdout_bytes": len(output_bytes),
             "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
             "terminal":
-                "CYCLE823_H_TEMPLATE_PREIMAGE_ZONE_CLASS_DISCHARGE_FAIL",
+                "CYCLE823_V2_ACTUAL_OBJECT_DISCHARGE_FAIL",
         }
         print(json.dumps(fallback, sort_keys=True, separators=(",", ":")))
         return 1

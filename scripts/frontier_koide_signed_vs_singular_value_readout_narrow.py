@@ -1,56 +1,14 @@
 #!/usr/bin/env python3
-"""Exact-symbolic narrow-theorem runner for
-`KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md`.
+"""Exact algebra checks for the paired signed-eigenvalue/modulus-vector note.
 
-NEW ALGEBRAIC FACT (verified here at exact sympy precision)
------------------------------------------------------------
-For the `C_3[111]`-circulant Hermitian operator
+For ``H = a I + b C + conjugate(b) C^2`` with ``a > 0``, this runner checks
+the C3 character spectrum, the phase-independent signed-vector functional,
+the shared component-square sum, exact phase witnesses at ``r = 1/2``, the
+zero-component endpoints, and the displayed arbitrary-r counterexample.
 
-    H = a I + b C + bbar C^2 ,   a in R_{>0},  b in C,
-
-with real spectrum
-
-    lambda_k = a + 2 |b| cos(theta + 2 pi k / 3),   k = 0, 1, 2,   theta = arg(b),
-
-two distinct readout maps assign a "sqrt(mass)" 3-vector to H and feed the
-Koide invariant  Q(w) = (sum_k w_k^2) / (sum_k w_k)^2 :
-
-  (S) SIGNED readout         w_k = lambda_k            (real signed eigenvalues;
-                                                        the Brannen/Hermitian
-                                                        "det_R" reading)
-  (V) SINGULAR-VALUE readout w_k = |lambda_k| >= 0     (the would-be Yukawa /
-                                                        modulus reading)
-
-At the operator-side Koide point  r := |b|^2 / a^2 = 1/2 :
-
-  * the SIGNED readout gives  Q_signed = 2/3  EXACTLY and INDEPENDENTLY of theta;
-  * the SINGULAR-VALUE readout gives a theta-DEPENDENT  Q_sv(theta)  that is
-    NOT 2/3 (e.g. theta = 0.4 -> 0.566, theta = 0.9 -> 0.416), and equals 2/3
-    only on the sign-homogeneous sub-region where all lambda_k share one sign.
-
-Both readouts produce the IDENTICAL mass spectrum  m_k = lambda_k^2 = |lambda_k|^2 ;
-they differ only in the SIGN assignment of  sqrt(m_k) . The Koide ratio is
-sensitive to that sign assignment through the  (sum sqrt(m))^2  denominator, so
-the retained Brannen Q = 2/3 closure relies specifically on  sqrt(m_k)  being a
-SIGNED real vector. Reading the charged-lepton mass operator as the singular
-values of a (non-Hermitian) Yukawa is therefore NOT a free reinterpretation at
-the r = 1/2 operator: the two readouts are algebraically inequivalent and only
-the signed (Hermitian / det_R-structured) readout reproduces the empirical
-Q = 2/3.
-
-SCOPE / NON-CLAIMS
-------------------
-This runner verifies pure algebra on abstract symbols (a > 0, |b| > 0, theta
-real) and on exact symbolic sample angles. It does NOT derive r = 1/2, does NOT
-derive Q = 2/3, does NOT consume any PDG observed value as a proof input (the
-number 2/3 enters only as the empirical comparator that the signed readout
-matches), and does NOT use any fitted selector. Fixing r = 1/2 is the
-operator-side Koide condition (the algebraic equivalence Q = 2/3 <=> 3 a^2 =
-6 |b|^2 is carried by the cited bridge / cone narrow theorems); it enters here
-as a hypothesis, not a derived fact.
-
-Companion role: Pattern A new narrow source theorem. Independent audit lane
-only; this runner does not set or predict an audit outcome.
+The note supplies the analytic proof of the universal triangle-inequality and
+centered phase-cell statements. Finite phase evaluations here are exact
+witnesses and regression checks, not an exhaustive continuous-domain proof.
 """
 
 import sys
@@ -79,10 +37,10 @@ def check(label: str, ok: bool, detail: str = "") -> None:
     global PASS, FAIL
     if ok:
         PASS += 1
-        tag = "PASS (A)"
+        tag = "PASS"
     else:
         FAIL += 1
-        tag = "FAIL (A)"
+        tag = "FAIL"
     # Keep successful output compact enough for legacy restricted packets;
     # failed checks retain their diagnostic detail.
     suffix = f"  ({detail})" if detail and not ok else ""
@@ -113,7 +71,7 @@ def koide_Q(w):
 
 def main() -> int:
     print("KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29")
-    print("Exact symbolic signed-eigenvalue vs singular-value readout checks at r=1/2")
+    print("Exact signed-eigenvalue and modulus-vector functional checks at r=1/2")
 
     # =====================================================================
     section("Part 0: circulant -> real spectrum sanity (lambda_k real, theta = arg b)")
@@ -157,7 +115,7 @@ def main() -> int:
     )
 
     # =====================================================================
-    section("Part 1 (Lemma A): SIGNED readout Q_signed = (1 + 2 r)/3, theta-INDEPENDENT")
+    section("Part 1: signed-vector functional Q_S = (1 + 2 r)/3")
     # =====================================================================
     lam = signed_eigs(a, bmod, theta)
 
@@ -189,7 +147,7 @@ def main() -> int:
         simplify(dQ_dtheta) == 0,
         detail=f"dQ_signed/dtheta = {dQ_dtheta}",
     )
-    # Specialize to the operator-side Koide point r = |b|^2/a^2 = 1/2  (|b| = a/sqrt2).
+    # Specialize the explicit hypothesis r = |b|^2/a^2 = 1/2.
     Q_signed_at_half = simplify(Q_signed.subs(bmod, a / sqrt(2)))
     check(
         "at r = 1/2 (|b| = a/sqrt 2): Q_signed = 2/3 EXACTLY, theta-independent",
@@ -198,26 +156,26 @@ def main() -> int:
     )
 
     # =====================================================================
-    section("Part 2 (Lemma B): numerator invariance  sum |lambda|^2 = sum lambda^2")
+    section("Part 2: component-square sum invariance")
     # =====================================================================
-    # |lambda_k|^2 = lambda_k^2 because lambda_k is real. So the two readouts
-    # SHARE the Koide numerator, equivalently the mass spectrum m_k = lambda_k^2.
+    # |lambda_k|^2 = lambda_k^2 because each lambda_k is real.
     num_signed = sum(l**2 for l in lam)
     num_sv = sum(Abs(l) ** 2 for l in lam)
     check(
-        "sum_k |lambda_k|^2 = sum_k lambda_k^2  (numerator shared; masses identical)",
+        "sum_k |lambda_k|^2 = sum_k lambda_k^2",
         simplify(trigsimp(num_sv - num_signed)) == 0,
-        detail="m_k = lambda_k^2 = |lambda_k|^2; only sqrt(m) signs can differ",
+        detail="component squares agree term by term",
     )
 
     # =====================================================================
-    section("Part 3 (Theorem core): Q_sv = sum lambda^2 / (sum |lambda|)^2 <= Q_signed")
+    section("Part 3: exact equality and strict-inequality witnesses")
     # =====================================================================
     # Triangle inequality: sum_k |lambda_k| >= |sum_k lambda_k| = |3a| = 3a (a>0),
-    # with equality IFF all lambda_k share one sign. Hence (sum|lambda|)^2 >=
+    # Since sum lambda_k = 3a > 0, equality holds iff all lambda_k are
+    # nonnegative. Hence (sum|lambda|)^2 >=
     # (sum lambda)^2, so Q_sv = N/(sum|lambda|)^2 <= N/(sum lambda)^2 = Q_signed,
-    # equality IFF sign-homogeneous. Verified on a same-sign and an opposite-sign
-    # sample at r = 1/2 (a = 1, |b| = 1/sqrt2).
+    # The universal statement is proved in the note; exact equality and strict
+    # witnesses are checked here at r = 1/2.
     a0, b0 = Rational(1), 1 / sqrt(2)
 
     def Q_sv_exact(th):
@@ -232,7 +190,7 @@ def main() -> int:
     L0 = [simplify(x) for x in signed_eigs(a0, b0, Rational(0))]
     same_sign = all(N(x) > 0 for x in L0)
     check(
-        "theta = 0: all lambda_k > 0 (sign-homogeneous) -> Q_sv = Q_signed = 2/3",
+        "theta = 0: all lambda_k > 0 and Q_V = Q_S = 2/3",
         same_sign
         and simplify(Q_sv_exact(Rational(0)) - Rational(2, 3)) == 0
         and simplify(Q_signed_exact(Rational(0)) - Rational(2, 3)) == 0,
@@ -244,7 +202,7 @@ def main() -> int:
     has_flip = any(N(x) < 0 for x in Lp3)
     qsv_p3 = Q_sv_exact(pi / 3)
     check(
-        "theta = pi/3: one lambda_k < 0 (sign-flip) -> Q_sv < Q_signed (strict)",
+        "theta = pi/3: one lambda_k < 0 and Q_V < Q_S",
         has_flip
         and simplify(qsv_p3 - Rational(2, 3)) != 0
         and N(qsv_p3) < N(Rational(2, 3)),
@@ -279,7 +237,7 @@ def main() -> int:
     )
     # By contrast Q_signed is constant 2/3 at all three angles.
     check(
-        "Q_signed = 2/3 at all three angles (constant) -> readouts are inequivalent",
+        "Q_S = 2/3 at all three angles while Q_V varies",
         all(
             simplify(Q_signed_exact(th) - Rational(2, 3)) == 0
             for th in (Rational(0), pi / 3, pi / 2)
@@ -314,27 +272,20 @@ def main() -> int:
     # =====================================================================
     section("Part 6: sign-flip boundary at theta = pi/12 (one eigenvalue exactly 0)")
     # =====================================================================
-    # Equality Q_sv = Q_signed holds exactly when NO eigenvalue is negative
-    # (sum|lambda| = sum lambda = 3a). At r = 1/2 the boundary is where an
+    # Equality Q_V = Q_S holds exactly when every eigenvalue is nonnegative.
+    # At r = 1/2 the boundary is where an
     # eigenvalue crosses 0:
     #   lambda_k = a(1 + sqrt2 cos(...)) = 0  <=>  cos(...) = -1/sqrt2  <=>  angle = 3 pi/4.
-    # The set {theta + 2 pi k/3} is invariant under theta -> theta + 2 pi/3, so the
-    # STRICT positive sign-homogeneous (all lambda_k > 0) window is the OPEN set
-    # |theta mod (2 pi/3)| < pi/12, while the Q_sv = 2/3 EQUALITY region is the
-    # CLOSED set |theta mod (2 pi/3)| <= pi/12 -- equality STILL holds at the
-    # boundary theta = pi/12 (one eigenvalue exactly 0, the other two positive).
+    # The note defines centered distance d(theta) = min_n |theta - 2 pi n/3|.
+    # The strict-positive cell is d(theta) < pi/12, while equality holds on
+    # d(theta) <= pi/12, including both zero-component endpoints.
     L_b = [simplify(x) for x in signed_eigs(a0, b0, pi / 12)]
     check(
         "theta = pi/12: lambda spectrum contains an EXACT zero (sign-flip boundary)",
         any(simplify(x) == 0 for x in L_b),
         detail=f"lambda(pi/12) = {L_b}",
     )
-    # BOUNDARY COMPLETENESS (auditor repair): Q_sv = 2/3 equality STILL holds AT
-    # theta = pi/12, even though the spectrum is NOT strictly sign-homogeneous
-    # there (one eigenvalue is exactly 0). The vanishing eigenvalue contributes 0
-    # to BOTH sum|lambda| and sum lambda, and no eigenvalue is negative, so
-    # sum|lambda| = sum lambda = 3a and Q_sv = Q_signed = 2/3. Hence the equality
-    # region is the CLOSED set |theta mod 2pi/3| <= pi/12, not just the open window.
+    # At theta = pi/12 one eigenvalue vanishes and the other two are positive.
     n_zero_b = sum(1 for x in L_b if simplify(x) == 0)
     n_neg_b = sum(1 for x in L_b if N(x) < 0)
     check(
@@ -353,7 +304,7 @@ def main() -> int:
     check(
         "theta = pi/20 (inside window): all lambda > 0 and Q_sv = 2/3 exactly",
         inside_ok,
-        detail="Q_sv equals signed value throughout the sign-homogeneous window",
+        detail="exact interior witness",
     )
     # Just outside the window (theta = pi/8 > pi/12): a flip, Q_sv < 2/3.
     L_out = signed_eigs(a0, b0, pi / 8)
@@ -364,27 +315,45 @@ def main() -> int:
         detail=f"Q_sv(pi/8) = {N(Q_sv_exact(pi/8), 8)}",
     )
 
+    # The second centered endpoint and a representative just below the right
+    # edge of an ordinary [0, 2pi/3) remainder catch one-sided modulo mistakes.
+    L_b_neg = [simplify(x) for x in signed_eigs(a0, b0, -pi / 12)]
+    check(
+        "theta = -pi/12: one exact zero and Q_V = 2/3",
+        sum(1 for x in L_b_neg if simplify(x) == 0) == 1
+        and all(N(x) >= 0 for x in L_b_neg)
+        and simplify(Q_sv_exact(-pi / 12) - Rational(2, 3)) == 0,
+        detail=f"lambda(-pi/12) = {L_b_neg}",
+    )
+    translated_inside = 2 * pi / 3 - pi / 20
+    L_translated = signed_eigs(a0, b0, translated_inside)
+    check(
+        "theta = 2pi/3 - pi/20: centered-period interior has Q_V = 2/3",
+        all(N(x) > 0 for x in L_translated)
+        and simplify(Q_sv_exact(translated_inside) - Rational(2, 3)) == 0,
+        detail="periodic centered-distance witness",
+    )
+
     # =====================================================================
-    section("Part 7: mass-spectrum invariance - both readouts give identical m_k")
+    section("Part 7: component-square vector at theta = 0.9")
     # =====================================================================
-    # Demonstrate at theta = 0.9 (one negative eigenvalue): the mass triple
-    # m_k = (sqrt m_k)^2 is identical for the signed and singular-value readouts;
-    # only the sqrt(m) sign vector differs, and Q differs solely through that.
+    # Demonstrate at theta = 0.9 that componentwise squaring commutes with
+    # taking absolute values, while the original vectors differ.
     th = Rational(9, 10)
     L = signed_eigs(a0, b0, th)
-    m_signed = sorted(simplify(l**2) for l in L)          # masses from w_k = lambda_k
-    m_sv = sorted(simplify(Abs(l) ** 2) for l in L)       # masses from w_k = |lambda_k|
+    squares_signed = sorted(simplify(l**2) for l in L)
+    squares_modulus = sorted(simplify(Abs(l) ** 2) for l in L)
     check(
-        "theta = 0.9: mass triple m_k = lambda_k^2 identical for both readouts",
-        all(simplify(x - y) == 0 for x, y in zip(m_signed, m_sv)),
-        detail="readouts share the spectrum; they differ only in sqrt(m) signs",
+        "theta = 0.9: signed and modulus vectors have identical component squares",
+        all(simplify(x - y) == 0 for x, y in zip(squares_signed, squares_modulus)),
+        detail="component-square vectors agree",
     )
-    sqrt_m_signed = [simplify(l) for l in L]               # signed sqrt(m)
-    sqrt_m_sv = [simplify(Abs(l)) for l in L]              # nonneg sqrt(m)
+    signed_components = [simplify(l) for l in L]
+    modulus_components = [simplify(Abs(l)) for l in L]
     check(
-        "theta = 0.9: sqrt(m) sign vectors DIFFER (>=1 component flips sign)",
-        any(simplify(x - y) != 0 for x, y in zip(sqrt_m_signed, sqrt_m_sv)),
-        detail=f"signed sqrt(m) has a negative entry; |.| does not",
+        "theta = 0.9: signed and modulus vectors differ",
+        any(simplify(x - y) != 0 for x, y in zip(signed_components, modulus_components)),
+        detail="the signed vector has a negative component",
     )
 
     # =====================================================================
@@ -406,7 +375,6 @@ def main() -> int:
             simplify(closed - direct) == 0 and len(negs) == 1,
             detail=f"closed = {closed}, direct = {direct}",
         )
-    # Guard against the overbroad general statement "one-negative => Q_sv < 2/3".
     # The spectrum below is realized by the same C_3 Hermitian family with
     # a = 1 and b = 19/20 - i sqrt(3)/20. It has exactly one negative eigenvalue
     # and still obeys Q_sv < Q_signed, but Q_sv is above 2/3 because r != 1/2.
@@ -431,39 +399,10 @@ def main() -> int:
     )
 
     # =====================================================================
-    section("Part 9: forbidden-imports / comparator-only sanity")
-    # =====================================================================
-    # The number 2/3 is used ONLY as the empirical comparator that the SIGNED
-    # readout matches; it is never a proof input. r = 1/2 is a hypothesis (the
-    # operator-side Koide condition), not derived here. theta is a free abstract
-    # symbol; the float samples 0.4, 0.9 are illustrative, not fitted.
-    check(
-        "no PDG value enters the proof: all inputs are abstract (a>0, |b|>0, theta real)",
-        a.is_positive and bmod.is_positive and theta.is_real,
-        detail="2/3 is comparator-only; r=1/2 is a stated hypothesis",
-    )
-    check(
-        "Q_signed = (1+2r)/3 is a function of r alone (no selector fixes r here)",
-        simplify(Q_signed - (a**2 + 2 * bmod**2) / (3 * a**2)) == 0,
-        detail="r = |b|^2/a^2 is a free parameter; r=1/2 not derived",
-    )
-
-    # =====================================================================
     section("Summary")
     # =====================================================================
-    print("  Exact identities, non-constancy samples, closed equality window, and")
-    print("  the r=1/2-qualified one-negative boundary are all checked above.")
-    print("  N1 route=l1_triangle; class=algebraic_rearrangement; ATTEMPTED; mechanism=triangle algebra; attempt=solve equality with a negative eigenvalue; outcome=CLOSED: sum|lambda|>3a.")
-    print("  N1 route=one_negative_piecewise; class=alternate_observable_or_readout; ATTEMPTED; mechanism=singular-value spectrum; attempt=resolve its one-negative branch; outcome=CLOSED: 3a-2lambda_min>3a.")
-    print("  N1 route=sign_window; class=symmetry_or_representation; ATTEMPTED; mechanism=C3 character symmetry; attempt=solve the exact zero set; outcome=CLOSED: equality is the closed pi/12 window.")
-    print("  N1 route=boundary_escape; class=boundary_or_initial_condition; ATTEMPTED; mechanism=zero-mode boundary; attempt=test theta=pi/12 and pi/8; outcome=CLOSED: only the boundary keeps equality.")
-    print("  N1 route=parameter_relaxation; class=normalization_or_units; ATTEMPTED; mechanism=scale ratio r; attempt=relax r=1/2; outcome=CLOSED: 423/512 forces the stated qualifier.")
-    print("  per_element: tested termwise |lambda_k|^2=lambda_k^2 and the shared numerator.")
-    print("  per_site: not applicable; the claim is only about one abstract three-eigenvalue readout.")
-    print("  per_mode: tested all three C3 character modes and exact sign-changing samples.")
-    print("  per_block: not applicable; no multi-block or block-lifting conclusion is asserted.")
-    print("  lattice_wide: not applicable; no lattice-wide conclusion is asserted by this theorem.")
-    print("  N7_STEELMAN_RESOLUTION: zero-mode and general-r escapes narrow, but do not defeat, the stated boundary.")
+    print("  Symbolic identities and exact finite witnesses completed.")
+    print("  Universal inequality and centered phase-cell proofs remain source-level algebra.")
     print(f"TOTAL: PASS={PASS}, FAIL={FAIL}")
     print(f"PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

@@ -1,10 +1,9 @@
-# Koide `Q = 2/3` Bridge — Single-Primitive Narrowing
+# Koide `Q = 2/3` Bridge — Conditional-Ratio Narrowing
 
 **Date:** 2026-04-22  
-**Claim type:** positive theorem (conditional algebraic theorem)
+**Claim type:** bounded_theorem
 
-**Status:** exact support / bridge-target narrowing on the charged-lepton Koide
-lane  
+**Status:** bounded conditional algebraic comparison; physical selector open
 **Runner:** `scripts/frontier_koide_q_bridge_single_primitive.py`
 
 **Complete runner stdout:**
@@ -15,13 +14,14 @@ lane
 The current Koide package already has strong executable support for
 `Q = 2/3`, but the physical/source-law bridge remains open:
 
-> why must the physical charged-lepton packet extremize the admitted
-> block-total Frobenius functional on the accepted framework surface?
+> why must the physical charged-lepton packet satisfy the stipulated
+> equal-block-power condition on the selected carrier?
 
 This note asks the following finite algebraic question:
 
-> under their stated premises, do the four displayed `Q`-bridge expressions
-> evaluate to one common scalar?
+> under the stated carrier premises, does equal cyclic block power imply the
+> conditional ratio `P_Q=1/2` and hence the Brannen-envelope identity
+> `Q=2/3`?
 
 ## Exact premise ledger
 
@@ -33,18 +33,14 @@ carrier/face inputs are explicit:
 2. The stipulated cyclic-carrier normalization is
    `E_+ = r0^2/3`, `E_perp = (r1^2+r2^2)/6`, `a = r0/3`, and
    `|b|^2 = (r1^2+r2^2)/36`.
-3. The stipulated Brannen envelope is
+3. The stipulated principal-square-root Brannen envelope is
    `sqrt(m_k) = v_0(1+c cos(delta+2 pi k/3))`, with the carrier match
-   `c = 2|b|/a` and `c > 0`.
-4. The dimension face uses the stated mixed-dimension convention
-   `dim_C(spinor)=2` and `dim_R(Cl^+(3))=4`.
-5. The Yukawa face is explicitly the PDG-normalized doublet convention
-   `T=1/2` and `|Y|=1/2`.
+   `c = 2|b|/a`, `c > 0`, `v_0 > 0`, and
+   `delta mod (2 pi/3) in [-pi/12,pi/12]`. The endpoint cases allow one
+   zero mass; use the open interval if all three masses must be positive.
 
-Items 2-5 are theorem premises, not claimed first-principles outputs of this
-note. In particular, item 5 is a convention-fixed support face, not a claim
-that the framework selects a hypercharge convention or physically identifies
-the charged-lepton carrier.
+Items 2-3 are theorem premises, not claimed first-principles outputs of this
+note. No dimension-count or hypercharge convention is part of the theorem.
 
 ## Main statement
 
@@ -65,34 +61,12 @@ equal cyclic block power
 => Koide Q = 2/3.
 ```
 
-Under premises 4-5, the runner separately verifies that the three displayed
-representation/Yukawa expressions evaluate to the same scalar value:
-
-```text
-dim(spinor) / dim(Cl^+(3)) = 1/2,
-T(T+1) - Y^2 = 1/2,
-(T(T+1) - Y^2) / (T(T+1) + Y^2) = 1/2
-```
-
-These numerical coincidences do not derive premises 4-5 and do not identify a
-physical source law.
-
-## Exact finite comparison
-
-The theorem compares exactly the following four expressions:
-
-```text
-|b|^2/a^2,
-dim(spinor)/dim(Cl^+(3)),
-T(T+1)-Y^2,
-[T(T+1)-Y^2]/[T(T+1)+Y^2].
-```
-
-Under premises 1-5, each is `1/2`; premises 1-3 also give the displayed
-consequence chain through `Q=2/3`. This is not an exhaustiveness claim about
-other arithmetic constructions or physical bridge routes. A theorem selecting
-these premises for a physical charged-lepton packet is outside this note and
-is neither proved impossible nor assessed here.
+The trigonometric reduction
+`Q(c)=1/3+c^2/6` is an identity for the three signed envelope entries at every
+real phase. Its interpretation using principal square roots is asserted only
+on the phase/scale domain in premise 3. The theorem does not identify a
+physical source law or claim that other arithmetic or physical routes have
+been exhausted.
 
 ## Proof sketch
 
@@ -152,8 +126,8 @@ c = 2 |b| / a.
 
 Because `a>0`, `|b|^2 / a^2 = 1/2` forces `c = sqrt(2)`. The sign hypothesis
 is load-bearing: the same squared relation with `a<0` would give
-`c=-sqrt(2)`, not `+sqrt(2)`. Direct summation of the three envelope terms
-gives
+`c=-sqrt(2)`, not `+sqrt(2)`. Direct summation of the three signed envelope
+terms gives
 
 ```text
 Q(c) = 1/3 + c^2/6,
@@ -165,40 +139,26 @@ so `c=sqrt(2)` gives
 Q = 2/3
 ```
 
-independently of `delta`.
-
-### 4. April 22 support faces
-
-Under the explicit face conventions in premises 4-5, three support quantities
-hit the same scalar immediately:
-
-```text
-dim(spinor) / dim(Cl^+(3)) = 2 / 4 = 1/2,
-T(T+1) - Y^2 = 1/2,
-(T(T+1) - Y^2) / (T(T+1) + Y^2) = 1/2
-```
-
-The runner now asserts all three displayed faces, including the normalized
-Casimir ratio omitted by the earlier artifact. Conditional on the stated face
-assignments, they coincide with `P_Q = 1/2`. No conclusion about unlisted
-support constructions follows.
+independently of `delta` as a signed-amplitude identity. At `c=sqrt(2)`, the
+phase domain in premise 3 makes all three entries nonnegative, so the same
+calculation is valid for the stated principal square roots.
 
 ## What this does not claim
 
 - It does **not** prove that the physical charged-lepton packet must realize
   `P_Q = 1/2`.
-- It does **not** derive the cyclic-carrier normalization, Brannen carrier
-  match, mixed-dimension convention, or PDG-normalized Yukawa labels listed in
-  the premise ledger.
+- It does **not** derive the cyclic-carrier normalization, equal-power
+  selector, Brannen carrier match, or phase-domain selection listed in the
+  premise ledger.
 - It does **not** close the Brannen-phase bridge behind `delta = 2/9`.
 - It does **not** promote the overall scale `v_0`.
 
 ## Bottom line
 
-For the explicitly stipulated algebraic packet, the four listed expressions
-share the common scalar value
+For the explicitly stipulated algebraic packet, equal cyclic block power
+implies the conditional ratio
 
 > `P_Q = |b|^2 / a^2 = 1/2`.
 
-This theorem does not claim that the list is exhaustive or select the premises
-physically.
+and, on the principal-root Brannen domain, `Q=2/3`. This bounded theorem does
+not select its premises physically.

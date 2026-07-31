@@ -1,35 +1,32 @@
 #!/usr/bin/env python3
 """
-Koide Q = 2/3 bridge - finite listed-expression comparison
+Koide Q = 2/3 bridge - conditional-ratio narrowing
 
 Purpose:
   sharpen the remaining Q = 2/3 bridge on the charged-lepton Koide lane.
 
-Current package status on origin/main:
-  - the block-total Frobenius / AM-GM stack proves where the admitted
-    functional is extremized;
-  - several April 22 support runners add axiom-native reformulations;
-  - physical identification is outside this runner's algebraic scope.
+Review scope:
+  - equal cyclic block power and the carrier normalization are supplied;
+  - the principal-square-root Brannen envelope and its carrier match are
+    supplied on an explicit positive scale and phase domain;
+  - physical selection of those premises is outside this runner's scope.
 
-This runner proves a conditional algebraic theorem: under the explicit
-carrier, sign, representation-dimension, and Yukawa-normalization premises
-printed below, four explicitly listed arithmetic / representation-theoretic
-expressions share one scalar value:
+This runner proves a bounded conditional algebraic theorem: under the explicit
+carrier, sign, scale, and phase premises printed below, equal cyclic block
+power implies the ratio
 
     P_Q := |b|^2 / a^2 = 1/2
 
-on the C_3-equivariant Hermitian carrier, with the exact consequence chain
+on the C_3-equivariant Hermitian carrier, with the exact conditional chain
 
   - equal cyclic block power,
   - real-irrep-block democracy,
   - kappa = a^2 / |b|^2 = 2,
   - Brannen c = sqrt(2),
-  - Koide Q = 2/3,
-  - dim(spinor) / dim(Cl^+(3)) = 1/2,
-  - T(T+1) - Y^2 = 1/2 on the charged-lepton Yukawa pair.
+  - Koide Q = 2/3 on the principal-root phase domain.
 
 Honest status:
-  this does NOT derive the printed carrier/face premises and does NOT close the
+  this does NOT derive the printed carrier premises and does NOT close the
   physical/source-law bridge. It makes no exhaustiveness claim about unlisted
   arithmetic constructions or physical bridge routes.
 """
@@ -61,11 +58,11 @@ def section(title: str) -> None:
 
 
 def main() -> int:
-    section("Koide Q-bridge finite listed-expression comparison")
+    section("Koide Q-bridge conditional-ratio narrowing")
     print()
     print("This runner does not claim physical closure.")
-    print("It proves that four explicitly listed arithmetic/representation-theoretic")
-    print("expressions share the scalar value P_Q = |b|^2 / a^2 = 1/2.")
+    print("It proves that equal cyclic block power implies the conditional ratio")
+    print("P_Q = |b|^2 / a^2 = 1/2 and, on the stated Brannen domain, Q = 2/3.")
 
     # r0 > 0 is the nondegenerate positive branch needed for a = r0/3 > 0.
     # r1 and r2 remain unrestricted real coordinates.
@@ -73,17 +70,16 @@ def main() -> int:
     r1, r2 = sp.symbols("r1 r2", real=True)
     delta = sp.symbols("delta", real=True)
     c = sp.symbols("c", positive=True)
+    v0 = sp.symbols("v0", positive=True)
 
     section("Premise ledger - conditional theorem domain")
     print("[PREMISE H1] r0 > 0 and r1,r2 are real; hence a = r0/3 > 0.")
     print("[PREMISE H2] E_+ = r0^2/3, E_perp = (r1^2+r2^2)/6,")
     print("             a = r0/3, and |b|^2 = (r1^2+r2^2)/36.")
-    print("[PREMISE H3] The Brannen carrier uses c = 2|b|/a and c > 0.")
-    print("[PREMISE H4] Dimension-face convention: dim_C(spinor)=2 and")
-    print("             dim_R(Cl^+(3))=4.")
-    print("[PREMISE H5] PDG-normalized Yukawa-doublet face: T=1/2 and |Y|=1/2.")
+    print("[PREMISE H3] The principal-root Brannen carrier uses c = 2|b|/a,")
+    print("             c > 0, v0 > 0, and delta mod 2pi/3 in [-pi/12,pi/12].")
     print()
-    print("H2-H5 are stipulated carrier/face inputs, not outputs of this runner.")
+    print("H2-H3 are stipulated carrier/domain inputs, not outputs of this runner.")
     print("The theorem derives their exact consequences and leaves physical")
     print("carrier/source-law selection outside its claim.")
 
@@ -119,14 +115,14 @@ def main() -> int:
         f"on 2 r0^2 = r1^2+r2^2: a^2 = {a_sq_map}, |b|^2 = {b_sq_on_locus}",
     )
 
-    section("Part B - democracy collapses to one scalar primitive")
-    primitive_ratio = sp.simplify(b_sq_on_locus / a_sq_map)
+    section("Part B - democracy fixes one conditional ratio")
+    conditional_ratio = sp.simplify(b_sq_on_locus / a_sq_map)
     kappa = sp.simplify(a_sq_map / b_sq_on_locus)
 
     record(
         "B.1 real-irrep-block democracy gives |b|^2 / a^2 = 1/2",
-        primitive_ratio == sp.Rational(1, 2),
-        f"|b|^2 / a^2 = {primitive_ratio}",
+        conditional_ratio == sp.Rational(1, 2),
+        f"|b|^2 / a^2 = {conditional_ratio}",
     )
 
     record(
@@ -137,7 +133,7 @@ def main() -> int:
 
     c_democracy = sp.simplify(2 * sp.sqrt(b_sq_on_locus) / a_map)
     record(
-        "B.3 the primitive ratio forces the Brannen prefactor c = sqrt(2)",
+        "B.3 the conditional ratio forces the Brannen prefactor c = sqrt(2)",
         c_democracy == sp.sqrt(2),
         f"c = 2|b|/a = {c_democracy}, using a = r0/3 > 0",
     )
@@ -165,82 +161,40 @@ def main() -> int:
         f"Q(c, delta) = {q_expr}",
     )
 
-    record(
-        "C.2 c = sqrt(2) gives Q = 2/3 identically in the phase delta",
-        q_at_sqrt2 == sp.Rational(2, 3),
-        f"Q(c = sqrt(2)) = {q_at_sqrt2}",
+    sqrt2_bracket = lambda phase, k: sp.simplify(
+        1 + sp.sqrt(2) * sp.cos(phase + 2 * sp.pi * k / 3)
     )
-
-    section("Part D - representation-theoretic faces hit the same scalar")
-    dim_spinor, dim_cl_even = sp.symbols(
-        "dim_spinor dim_cl_even", positive=True, integer=True
-    )
-    t_isospin, y_abs = sp.symbols("T Y_abs", nonnegative=True)
-    face_premises = {
-        dim_spinor: 2,
-        dim_cl_even: 4,
-        t_isospin: sp.Rational(1, 2),
-        y_abs: sp.Rational(1, 2),
-    }
-    dim_ratio = sp.simplify((dim_spinor / dim_cl_even).subs(face_premises))
-    casimir_diff = sp.simplify(
-        (t_isospin * (t_isospin + 1) - y_abs**2).subs(face_premises)
-    )
-    casimir_sum = sp.simplify(
-        (t_isospin * (t_isospin + 1) + y_abs**2).subs(face_premises)
-    )
-    normalized_casimir_ratio = sp.simplify(casimir_diff / casimir_sum)
+    left_boundary = [sqrt2_bracket(-sp.pi / 12, k) for k in range(3)]
+    right_boundary = [sqrt2_bracket(sp.pi / 12, k) for k in range(3)]
+    outside_witness = [sqrt2_bracket(sp.pi / 3, k) for k in range(3)]
 
     record(
-        "D.1 dim(spinor) / dim(Cl^+(3)) = 1/2",
-        dim_ratio == sp.Rational(1, 2),
-        f"2 / 4 = {dim_ratio}",
+        "C.2 the principal-root phase-window endpoints are nonnegative",
+        all(value.is_nonnegative is True for value in left_boundary + right_boundary)
+        and sum(value == 0 for value in left_boundary + right_boundary) == 2,
+        f"delta=-pi/12: {left_boundary}; delta=pi/12: {right_boundary}",
     )
 
     record(
-        "D.2 charged-lepton Yukawa Casimir difference T(T+1) - Y^2 = 1/2",
-        casimir_diff == sp.Rational(1, 2),
-        f"1/2 * 3/2 - (1/2)^2 = {casimir_diff}",
+        "C.3 delta = pi/3 is outside the principal-root phase domain",
+        any(value.is_negative is True for value in outside_witness),
+        f"delta=pi/3 brackets: {outside_witness}",
     )
 
     record(
-        "D.3 normalized Yukawa Casimir ratio is 1/2",
-        normalized_casimir_ratio == sp.Rational(1, 2),
-        "[T(T+1)-Y^2] / [T(T+1)+Y^2] "
-        f"= {casimir_diff} / {casimir_sum} = {normalized_casimir_ratio}",
+        "C.4 c = sqrt(2) gives Q = 2/3 on the stated principal-root domain",
+        q_at_sqrt2 == sp.Rational(2, 3) and v0.is_positive is True,
+        f"Q(c = sqrt(2)) = {q_at_sqrt2}, v0 > 0",
     )
 
-    section("Part E - finite listed-face comparison")
-    collapse_values = {
-        "|b|^2/a^2": primitive_ratio,
-        "dim(spinor)/dim(Cl^+(3))": dim_ratio,
-        "T(T+1)-Y^2": casimir_diff,
-        "[T(T+1)-Y^2]/[T(T+1)+Y^2]": normalized_casimir_ratio,
-    }
-    all_half = all(value == sp.Rational(1, 2) for value in collapse_values.values())
-
-    record(
-        "E.1 the four listed Q-bridge expressions share P_Q = 1/2",
-        all_half and q_at_sqrt2 == sp.Rational(2, 3) and kappa == 2,
-        "\n".join(f"{name} = {value}" for name, value in collapse_values.items()),
-    )
-
-    section("Part F - scope exclusions (not impossibility claims)")
-    print("The exact arithmetic consequences above are conditional on H1-H5.")
-    print("In particular, the dimension counts and PDG-normalized Yukawa labels")
-    print("are explicit premises rather than outputs of this runner.")
+    section("Part D - scope exclusions (not impossibility claims)")
+    print("The exact arithmetic consequences above are conditional on H1-H3.")
+    print("The dimension-count and hypercharge coincidences are not theorem inputs.")
     print()
-    print("This runner verifies a finite algebraic comparison of exactly four")
-    print("listed expressions, all equal to P_Q = 1/2 under H1-H5.")
+    print("This runner verifies one bounded conditional implication:")
+    print("equal cyclic block power => P_Q = 1/2 => Q = 2/3 on the stated domain.")
     print()
-    print("It does NOT derive from retained physics:")
-    print("  (1) that the physical selector lives on the admitted normalized")
-    print("      second-order reduced carrier, nor")
-    print("  (2) that the physical selector is source-free, K = 0, there, nor")
-    print("  (3) the readout from Y = I_2 through kappa = 2 to physical")
-    print("      Q = 2/3 on the charged-lepton lane.")
-    print()
-    print("These topics are outside the conditional algebraic theorem checked here.")
+    print("Physical selector and source-law identification remain outside scope.")
     print("No claim is made that unlisted routes are exhausted or cannot succeed.")
 
     section("SUMMARY")
@@ -253,8 +207,8 @@ def main() -> int:
 
     print()
     if n_pass == n_total:
-        print("VERDICT: under H1-H5, the four listed expressions share the value")
-        print("P_Q = 1/2 and the H1-H3 consequence chain gives Q = 2/3.")
+        print("VERDICT: under H1-H3, equal cyclic block power gives P_Q = 1/2")
+        print("and Q = 2/3 on the stated principal-root phase/scale domain.")
         print()
         print("Physical/source-law identification and exhaustiveness over other")
         print("routes are outside scope. Audit verdict and effective status remain")

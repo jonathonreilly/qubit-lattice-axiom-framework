@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_bridge_single_primitive.py
-runner_sha256: 0188c791ec3236777cb69fcbc5a2c824a291c5880f746b37fd2824046576058c
+runner_sha256: ef75b2f66ebacd53e2d14cbf6d1a7a33e6459853d209cfa8fe16085926fa3ca6
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.48
+elapsed_sec: 0.40
 status: ok
 ----- stdout -----
 
 ========================================================================================
-Koide Q-bridge finite listed-expression comparison
+Koide Q-bridge conditional-ratio narrowing
 ========================================================================================
 
 This runner does not claim physical closure.
-It proves that four explicitly listed arithmetic/representation-theoretic
-expressions share the scalar value P_Q = |b|^2 / a^2 = 1/2.
+It proves that equal cyclic block power implies the conditional ratio
+P_Q = |b|^2 / a^2 = 1/2 and, on the stated Brannen domain, Q = 2/3.
 
 ========================================================================================
 Premise ledger - conditional theorem domain
@@ -21,12 +21,10 @@ Premise ledger - conditional theorem domain
 [PREMISE H1] r0 > 0 and r1,r2 are real; hence a = r0/3 > 0.
 [PREMISE H2] E_+ = r0^2/3, E_perp = (r1^2+r2^2)/6,
              a = r0/3, and |b|^2 = (r1^2+r2^2)/36.
-[PREMISE H3] The Brannen carrier uses c = 2|b|/a and c > 0.
-[PREMISE H4] Dimension-face convention: dim_C(spinor)=2 and
-             dim_R(Cl^+(3))=4.
-[PREMISE H5] PDG-normalized Yukawa-doublet face: T=1/2 and |Y|=1/2.
+[PREMISE H3] The principal-root Brannen carrier uses c = 2|b|/a,
+             c > 0, v0 > 0, and delta mod 2pi/3 in [-pi/12,pi/12].
 
-H2-H5 are stipulated carrier/face inputs, not outputs of this runner.
+H2-H3 are stipulated carrier/domain inputs, not outputs of this runner.
 The theorem derives their exact consequences and leaves physical
 carrier/source-law selection outside its claim.
 
@@ -41,13 +39,13 @@ Part A - cyclic block power is exactly the Koide selector
        on 2 r0^2 = r1^2+r2^2: a^2 = r0**2/9, |b|^2 = r0**2/18
 
 ========================================================================================
-Part B - democracy collapses to one scalar primitive
+Part B - democracy fixes one conditional ratio
 ========================================================================================
 [PASS] B.1 real-irrep-block democracy gives |b|^2 / a^2 = 1/2
        |b|^2 / a^2 = 1/2
 [PASS] B.2 the same democracy law gives kappa = a^2 / |b|^2 = 2
        kappa = 2
-[PASS] B.3 the primitive ratio forces the Brannen prefactor c = sqrt(2)
+[PASS] B.3 the conditional ratio forces the Brannen prefactor c = sqrt(2)
        c = 2|b|/a = sqrt(2), using a = r0/3 > 0
 [PASS] B.4 the a < 0 domain witness gives c = -sqrt(2), so a > 0 is load-bearing
        a = -1, |b|^2 = 1/2 gives c = -sqrt(2)
@@ -57,68 +55,43 @@ Part C - Brannen prefactor and Koide ratio
 ========================================================================================
 [PASS] C.1 the Brannen envelope gives Q(c) = 1/3 + c^2/6 independently of delta
        Q(c, delta) = c**2/6 + 1/3
-[PASS] C.2 c = sqrt(2) gives Q = 2/3 identically in the phase delta
-       Q(c = sqrt(2)) = 2/3
+[PASS] C.2 the principal-root phase-window endpoints are nonnegative
+       delta=-pi/12: [sqrt(3)/2 + 3/2, 3/2 - sqrt(3)/2, 0]; delta=pi/12: [sqrt(3)/2 + 3/2, 0, 3/2 - sqrt(3)/2]
+[PASS] C.3 delta = pi/3 is outside the principal-root phase domain
+       delta=pi/3 brackets: [sqrt(2)/2 + 1, 1 - sqrt(2), sqrt(2)/2 + 1]
+[PASS] C.4 c = sqrt(2) gives Q = 2/3 on the stated principal-root domain
+       Q(c = sqrt(2)) = 2/3, v0 > 0
 
 ========================================================================================
-Part D - representation-theoretic faces hit the same scalar
+Part D - scope exclusions (not impossibility claims)
 ========================================================================================
-[PASS] D.1 dim(spinor) / dim(Cl^+(3)) = 1/2
-       2 / 4 = 1/2
-[PASS] D.2 charged-lepton Yukawa Casimir difference T(T+1) - Y^2 = 1/2
-       1/2 * 3/2 - (1/2)^2 = 1/2
-[PASS] D.3 normalized Yukawa Casimir ratio is 1/2
-       [T(T+1)-Y^2] / [T(T+1)+Y^2] = 1/2 / 1 = 1/2
+The exact arithmetic consequences above are conditional on H1-H3.
+The dimension-count and hypercharge coincidences are not theorem inputs.
 
-========================================================================================
-Part E - finite listed-face comparison
-========================================================================================
-[PASS] E.1 the four listed Q-bridge expressions share P_Q = 1/2
-       |b|^2/a^2 = 1/2
-       dim(spinor)/dim(Cl^+(3)) = 1/2
-       T(T+1)-Y^2 = 1/2
-       [T(T+1)-Y^2]/[T(T+1)+Y^2] = 1/2
+This runner verifies one bounded conditional implication:
+equal cyclic block power => P_Q = 1/2 => Q = 2/3 on the stated domain.
 
-========================================================================================
-Part F - scope exclusions (not impossibility claims)
-========================================================================================
-The exact arithmetic consequences above are conditional on H1-H5.
-In particular, the dimension counts and PDG-normalized Yukawa labels
-are explicit premises rather than outputs of this runner.
-
-This runner verifies a finite algebraic comparison of exactly four
-listed expressions, all equal to P_Q = 1/2 under H1-H5.
-
-It does NOT derive from retained physics:
-  (1) that the physical selector lives on the admitted normalized
-      second-order reduced carrier, nor
-  (2) that the physical selector is source-free, K = 0, there, nor
-  (3) the readout from Y = I_2 through kappa = 2 to physical
-      Q = 2/3 on the charged-lepton lane.
-
-These topics are outside the conditional algebraic theorem checked here.
+Physical selector and source-law identification remain outside scope.
 No claim is made that unlisted routes are exhausted or cannot succeed.
 
 ========================================================================================
 SUMMARY
 ========================================================================================
-PASSED: 13/13
+PASSED: 11/11
   [PASS] A.1 equal cyclic block power is equivalent to 2 r0^2 = r1^2 + r2^2
   [PASS] A.2 cyclic equal-block-power law maps exactly to 3 a^2 = 6 |b|^2
   [PASS] A.3 equal block power derives a^2 = 2 |b|^2
   [PASS] B.1 real-irrep-block democracy gives |b|^2 / a^2 = 1/2
   [PASS] B.2 the same democracy law gives kappa = a^2 / |b|^2 = 2
-  [PASS] B.3 the primitive ratio forces the Brannen prefactor c = sqrt(2)
+  [PASS] B.3 the conditional ratio forces the Brannen prefactor c = sqrt(2)
   [PASS] B.4 the a < 0 domain witness gives c = -sqrt(2), so a > 0 is load-bearing
   [PASS] C.1 the Brannen envelope gives Q(c) = 1/3 + c^2/6 independently of delta
-  [PASS] C.2 c = sqrt(2) gives Q = 2/3 identically in the phase delta
-  [PASS] D.1 dim(spinor) / dim(Cl^+(3)) = 1/2
-  [PASS] D.2 charged-lepton Yukawa Casimir difference T(T+1) - Y^2 = 1/2
-  [PASS] D.3 normalized Yukawa Casimir ratio is 1/2
-  [PASS] E.1 the four listed Q-bridge expressions share P_Q = 1/2
+  [PASS] C.2 the principal-root phase-window endpoints are nonnegative
+  [PASS] C.3 delta = pi/3 is outside the principal-root phase domain
+  [PASS] C.4 c = sqrt(2) gives Q = 2/3 on the stated principal-root domain
 
-VERDICT: under H1-H5, the four listed expressions share the value
-P_Q = 1/2 and the H1-H3 consequence chain gives Q = 2/3.
+VERDICT: under H1-H3, equal cyclic block power gives P_Q = 1/2
+and Q = 2/3 on the stated principal-root phase/scale domain.
 
 Physical/source-law identification and exhaustiveness over other
 routes are outside scope. Audit verdict and effective status remain

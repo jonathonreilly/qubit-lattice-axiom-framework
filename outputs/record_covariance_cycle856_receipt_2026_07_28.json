@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockP21-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle856_covariance_independent_check_2026_07_28.txt": "SUMMARY_JSON.checks map",
+    "logs/runner-cache/frontier_cycle856_record_covariance_2026_07_28.txt": "SUMMARY_JSON.checks map"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle856_covariance_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle856_record_covariance_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 856,
+  "files": {
+    "docs/RECORD_COVARIANCE_CYCLE856_BOUNDED_THEOREM_NOTE_2026-07-28.md": "7b6b73826ee397e66102994174d94e04c3f174761f00ffcfe0da2be97e72a545",
+    "logs/runner-cache/frontier_cycle856_covariance_independent_check_2026_07_28.txt": "a89b28d560c1784bde563add2a0c044af0219765bd74306bd82decd6a698f8cf",
+    "logs/runner-cache/frontier_cycle856_record_covariance_2026_07_28.txt": "4fc90636e22e52d2d2ad2adf9cd75366a4e37e28356896a8740aa3b58763fffd",
+    "scripts/frontier_cycle856_covariance_independent_check_2026_07_28.py": "6c9cec748a8fb1c39080167aaadc8e352ef61bf6d37fb1e775b71f021f35bc7c",
+    "scripts/frontier_cycle856_record_covariance_2026_07_28.py": "20bce7f6dab9d7755ddefc6e2000d501acb8572dc15f50981b65ba9f6e2a4f2b"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "mixed-orbit census: E1 = 3 uniform-stamped / 12 uniform-silent / 53 mixed; E2 = 0 / 38 / 30 (stamped-ness not orbit-closed - the 852 anomaly is real)",
+    "MONITOR_COVARIANT: intertwining stamped_m(g.key) == stamped_{g.m}(key) holds in all 181,016 cases (checker re-verified); fixed-monitor breaking only within the declared 852 phase-lift scope",
+    "census sizes monitor-invariant (182 E1 / 114 E2 for every m=0..10); memberships differ across all eleven monitors",
+    "absolute records (stamped under every monitor): E1 = 33 setups = three size-11 k=2 orbits (events 0,1,2; separations 5/6); E2 = none; joint = none - both directions exhaustive; the sharpest E1/E2 discriminator (no recommendation made)"
+  ]
+}

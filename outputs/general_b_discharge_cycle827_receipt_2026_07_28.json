@@ -1,0 +1,33 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF16-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle827_discharge_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle827_general_b_discharge_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 9
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 827,
+  "files": {
+    "docs/GENERAL_B_DISCHARGE_CYCLE827_BOUNDED_THEOREM_NOTE_2026-07-28.md": "51d233ba387e5e5672c344e92a8dc73f960fca87a3c7c8159472be07002f6193",
+    "logs/runner-cache/frontier_cycle827_discharge_independent_check_2026_07_28.txt": "fcbf362ae121ef284b9197a875f97e2e113cdf1042ea6f5ca236d3a745733cbc",
+    "logs/runner-cache/frontier_cycle827_general_b_discharge_2026_07_28.txt": "9f3c9fa075777b47c39623c6b1fbaa702a83621f812c23c9c20e382244527981",
+    "scripts/frontier_cycle827_discharge_independent_check_2026_07_28.py": "2b9e5592ddaa21c2629a06d002587311cca1ca243a379ce751c33332d55f7cf9",
+    "scripts/frontier_cycle827_general_b_discharge_2026_07_28.py": "2f85e4d5a1c9d19afcbb44f1680fcb90ff8cf95ff1020f06da660bb2ab286ef3"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "the anchors lane CLOSES at general b (six exhaustive rings become independent confirmations)"
+  ],
+  "verdicts": [
+    "GENERAL_B_DISCHARGED \u2014 13 symbolic identities over Z[b,C,i,u,s,p]; live-p PROVEN AS LEMMA (p_{b+1}=p_b; 823 base initializes)",
+    "reversal eighteen: v1 hid two premises (823 base; live-p bound) \u2014 checker countermodel X(131); v2 pays both (9/9 AST premise audit)",
+    "checker all attacks PASS incl. premise accounting"
+  ]
+}

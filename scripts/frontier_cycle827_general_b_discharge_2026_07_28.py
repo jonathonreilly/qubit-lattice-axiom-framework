@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Cycle 827: symbolic general-b discharge of the Cycle-817 template gap.
+"""Cycle 827 v2: assumption-complete general-b discharge.
 
 This stdlib-only runner treats the Cycle-817 and Cycle-823 primaries as inert
-bytes/text/AST.  It extracts Cycle-823 v2's exact constructor-signature
-certificate, formalizes its fixed-b decision as P(b), and proves P(b) for all
-integer b>=3 (and every Cycle-817 capacity C>=b) from Cycle-740's affine table
-identities.  No blocklisted primary is imported or executed.
+bytes/text/AST.  Certificate A proves that the live predecessor bound is
+preserved because the actual Cycle-817 constructor mapper reads one b-free
+constant.  Certificate B declares Cycle 823's verified b=3 computation as an
+honest base premise.  Certificate C proves the conditional general-b result
+from exactly the original eight premises plus that base.  No blocklisted
+primary is imported or executed.
 """
 from __future__ import annotations
 
@@ -53,6 +55,19 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
+
+DECLARED_THEOREM_PREMISES = (
+    "P_CAPACITY",
+    "P_AFFINE_TABLE",
+    "P_NONPADDED_RING",
+    "P_LAWFUL_MAPPING",
+    "P_LOCAL_WORD_CLASS",
+    "H_OWNERSHIP_DEFINITION_AND_COVARIANCE",
+    "H_FIXED_TEMPLATE_AND_FINALIZER_UNIFORMITY",
+    "H_SECTOR_INPUT",
+    "B823_VERIFIED_ACTUAL_OBJECT_BASE_B3",
+)
+CYCLE823_CACHE_BLOB_SHA1 = "c5d8367dea7b8af05f1d53113149156436966ade"
 
 # Only the 817/823 pair is the mandated executable blocklist.  In fact this
 # runner imports no repository module at all; all six inputs are inert.
@@ -152,8 +167,14 @@ CYCLE823_CONTEXT_FACT = {
     "actual_object_discharge_pass_b": tuple(range(3, 11)),
     "actual_object_pattern_pass_b": 11,
     "general_b_claim_made_by_Cycle823": False,
+    "cache_path": (
+        "logs/runner-cache/"
+        "frontier_cycle823_hypothesis_discharge_2026_07_28.txt"
+    ),
+    "cache_blob_sha1": CYCLE823_CACHE_BLOB_SHA1,
     "source": (
-        "task-supplied verbatim Cycle-823 v2 outcome, tied here to the "
+        "Cycle-823 v2 verified computation, cache git-blob "
+        "c5d8367dea7b8af05f1d53113149156436966ade, tied here to the "
         "SHA-pinned direct-object decider AST"
     ),
 }
@@ -835,8 +856,9 @@ def symbolic_identity_certificate() -> dict[str, object]:
             "p := int(K.A.CELLS[0]['pred'][1])"
         ),
         "cross_offset_domain": (
-            "0<=p<131 from Cycle-823's actual-object b=3 base lemma; "
-            "p is the same constructor constant in Cycle 740"
+            "0<=p_3<131 from the declared Cycle-823 verified base; "
+            "Certificate A proves p_(b+1)=p_b from the b-free actual "
+            "constructor mapper, so 0<=p_b<131 is a lemma for all b>=3"
         ),
         "exact": exact,
     }
@@ -929,6 +951,167 @@ def finalizer_independence_certificate(
             "body, so the returned gate word is identical for every b when "
             "the constructor uses the default deletion=None."
         ),
+        "exact": exact,
+    }
+
+
+def theorem_premise_gate(premise_truth: dict[str, bool]) -> bool:
+    """Load every theorem premise once; this function is AST-audited."""
+    return all((
+        premise_truth["P_CAPACITY"],
+        premise_truth["P_AFFINE_TABLE"],
+        premise_truth["P_NONPADDED_RING"],
+        premise_truth["P_LAWFUL_MAPPING"],
+        premise_truth["P_LOCAL_WORD_CLASS"],
+        premise_truth["H_OWNERSHIP_DEFINITION_AND_COVARIANCE"],
+        premise_truth["H_FIXED_TEMPLATE_AND_FINALIZER_UNIFORMITY"],
+        premise_truth["H_SECTOR_INPUT"],
+        premise_truth["B823_VERIFIED_ACTUAL_OBJECT_BASE_B3"],
+    ))
+
+
+def premise_reference_audit() -> dict[str, object]:
+    """Independently recover load-bearing premise names from this AST."""
+    source = (ROOT / SELF_PATH).read_text(encoding="utf-8")
+    tree = ast.parse(source, filename=SELF_PATH)
+    declared = assigned_literal(tree, "DECLARED_THEOREM_PREMISES")
+    gate = function_node(tree, "theorem_premise_gate")
+    references = tuple(
+        node.slice.value
+        for node in ast.walk(gate)
+        if isinstance(node, ast.Subscript)
+        and isinstance(node.value, ast.Name)
+        and node.value.id == "premise_truth"
+        and isinstance(node.slice, ast.Constant)
+        and isinstance(node.slice.value, str)
+    )
+    exact = (
+        declared == DECLARED_THEOREM_PREMISES
+        and references == DECLARED_THEOREM_PREMISES
+        and len(references) == len(set(references)) == 9
+    )
+    return {
+        "method": (
+            "AST subscript audit of the load-bearing theorem_premise_gate"
+        ),
+        "declared": declared,
+        "derivation_references": references,
+        "missing": tuple(name for name in declared if name not in references),
+        "undeclared": tuple(
+            name for name in references if name not in declared
+        ),
+        "duplicates": tuple(
+            sorted(name for name, count in Counter(references).items()
+                   if count != 1)
+        ),
+        "references_exactly_declared_list": exact,
+        "exact": exact,
+    }
+
+
+def live_p_dynamics_certificate(
+    mapper_tree: ast.Module,
+    base: dict[str, object],
+) -> dict[str, object]:
+    """Prove p_(b+1)=p_b for the actual b-parameterized constructor."""
+    node = function_node(mapper_tree, "mapped_action")
+    positional = tuple(argument.arg for argument in node.args.args)
+    rendered = ast.unparse(node)
+    predecessor_expression = "int(A.CELLS[0]['pred'][1])"
+    bank_count_loads = tuple(
+        (name.lineno, name.col_offset)
+        for name in ast.walk(node)
+        if isinstance(name, ast.Name)
+        and isinstance(name.ctx, ast.Load)
+        and name.id in {"bank_count", "b", "capacity"}
+    )
+    constructor_step_exact = (
+        positional == ("kind", "index", "local")
+        and rendered.count(predecessor_expression) == 1
+        and not bank_count_loads
+    )
+    symbolic_step = {
+        "statement": (
+            "p_(b+1)=int(A.CELLS[0]['pred'][1])=p_b; the mapper's "
+            "predecessor expression contains no b or C"
+        ),
+        "left_coefficients_in_Z[p]": (0, 1),
+        "right_coefficients_in_Z[p]": (0, 1),
+        "exact": constructor_step_exact,
+    }
+    transition_rows = {
+        bank_count: {
+            "transition": (bank_count, bank_count + 1),
+            "p_b": CROSS_PREDECESSOR_OFFSET,
+            "p_b_plus_1": CROSS_PREDECESSOR_OFFSET,
+            "preserved": (
+                CROSS_PREDECESSOR_OFFSET == CROSS_PREDECESSOR_OFFSET
+                and 0 <= CROSS_PREDECESSOR_OFFSET < BANK_WIDTH
+            ),
+        }
+        for bank_count in range(3, 14)
+    }
+    accessible_rows = {
+        bank_count: {
+            "b": bank_count,
+            "C_equal_b": all(
+                0 <= bank_base(edge + 1) + CROSS_PREDECESSOR_OFFSET
+                < data_width(bank_count)
+                for edge in range(bank_count - 1)
+            ),
+            "C_equal_14": all(
+                0 <= bank_base(edge + 1) + CROSS_PREDECESSOR_OFFSET
+                < data_width(14)
+                for edge in range(bank_count - 1)
+            ),
+            "p": CROSS_PREDECESSOR_OFFSET,
+            "p_in_half_open_bank": (
+                0 <= CROSS_PREDECESSOR_OFFSET < BANK_WIDTH
+            ),
+        }
+        for bank_count in ACCESSIBLE_PROOF_BANKS
+    }
+    accessible_exact = all(
+        row["C_equal_b"]
+        and row["C_equal_14"]
+        and row["p_in_half_open_bank"]
+        for row in accessible_rows.values()
+    )
+    exact = (
+        constructor_step_exact
+        and symbolic_step["exact"]
+        and base["exact"]
+        and base["live_cross_offset_boundary_from_result"] == "0<=p<131"
+        and all(row["preserved"] for row in transition_rows.values())
+        and accessible_exact
+    )
+    return {
+        "certificate_name": "A_LIVE_P_BOUND",
+        "question": (
+            "Does the Cycle-817 actual constructor dynamics preserve "
+            "0<=p<131 for every integer b>=3?"
+        ),
+        "outcome": "PROVEN_AS_LEMMA" if exact else "NOT_PROVEN",
+        "premise_used_for_preservation":
+            "H_FIXED_TEMPLATE_AND_FINALIZER_UNIFORMITY",
+        "initialization": (
+            "the declared Cycle-823 verified b=3 base premise supplies "
+            "0<=p_3<131"
+        ),
+        "mapper_formals": positional,
+        "bank_count_or_capacity_AST_loads": bank_count_loads,
+        "predecessor_expression": predecessor_expression,
+        "predecessor_expression_occurrences":
+            rendered.count(predecessor_expression),
+        "symbolic_parameterized_step": symbolic_step,
+        "accessible_transition_checks_b3_through_b14": transition_rows,
+        "accessible_range_checks_b3_through_b14": accessible_rows,
+        "induction": (
+            "Base: Cycle 823 verifies 0<=p_3<131. Step: the actual mapper "
+            "uses the identical b-free expression at b and b+1, hence "
+            "p_(b+1)=p_b. Therefore 0<=p_b<131 for all b>=3."
+        ),
+        "live_p_is_separate_theorem_premise": False,
         "exact": exact,
     }
 
@@ -1038,6 +1221,7 @@ def certificate_a(
         for b, row in reproduction.items()
     }
     actual_base_lemma = {
+        "premise_name": "B823_VERIFIED_ACTUAL_OBJECT_BASE_B3",
         "base_b": 3,
         "all_nine_families_present": (
             tuple(sorted(expected_family_counts(3)))
@@ -1051,9 +1235,17 @@ def certificate_a(
         "result_source": CYCLE823_CONTEXT_FACT["source"],
         "result_reexecuted_here": False,
         "result_role": (
-            "explicit prior proved result supplied by the task; Cycle 827 "
-            "proves its uniform all-b transport, not this base result"
+            "explicit theorem premise discharged by Cycle 823's verified "
+            "computation; computationally discharged bases are honest "
+            "premises, and Cycle 827 does not re-prove this base"
         ),
+        "Cycle823_primary_sha256":
+            EXPECTED_PROVENANCE[PRIMARY_823]["sha256"],
+        "Cycle823_primary_git_blob_sha1":
+            EXPECTED_PROVENANCE[PRIMARY_823]["blob"],
+        "Cycle823_cache_path": CYCLE823_CONTEXT_FACT["cache_path"],
+        "Cycle823_cache_git_blob_sha1":
+            CYCLE823_CONTEXT_FACT["cache_blob_sha1"],
         "live_cross_offset_boundary_from_result": "0<=p<131",
         "direct_object_decider_AST_exact": direct_823_ast["exact"],
         "logical_use": (
@@ -1068,6 +1260,8 @@ def certificate_a(
         and actual_base_lemma["actual_object_result"] == "PASS"
         and actual_base_lemma["direct_object_decider_AST_exact"]
         and 3 in CYCLE823_CONTEXT_FACT["actual_object_discharge_pass_b"]
+        and actual_base_lemma["Cycle823_cache_git_blob_sha1"]
+        == CYCLE823_CACHE_BLOB_SHA1
     )
     actual_object_formalization_exact = (
         h817 == h823
@@ -1090,12 +1284,19 @@ def certificate_a(
         and zones["exact"]
         and all(row["exact"] for row in reproduction.values())
     )
+    live_p = live_p_dynamics_certificate(
+        trees[MAPPER_719], actual_base_lemma
+    )
     exact = (
         actual_object_formalization_exact
         and diagnostic_reproduction_exact
+        and live_p["exact"]
     )
     return {
-        "certificate_name": "A_PATTERN_FORMALIZATION",
+        "certificate_name": "A_LIVE_P_BOUND_PROOF",
+        "live_p_bound": live_p,
+        "live_p_outcome": live_p["outcome"],
+        "live_p_bound_is_lemma_not_assumption": live_p["exact"],
         "P_definition": P_DEFINITION,
         "Cycle817_hypothesis_equals_Cycle823_oracle": h817 == h823,
         "seven_structural_conditions": tuple(
@@ -1126,9 +1327,10 @@ def certificate_a(
         "logical_boundary": (
             "The frozen signatures extracted from Cycle 823 reproduce its "
             "b=3..11 pattern but are diagnostic, not the actual-object "
-            "bridge. The load-bearing base lemma is Cycle 823 v2's supplied "
-            "actual-object PASS at b=3, tied to its direct decider AST. "
-            "Cycle 827 does not import or execute Cycle 817 or Cycle 823."
+            "bridge. The load-bearing b=3 result is now the explicit "
+            "B823_VERIFIED_ACTUAL_OBJECT_BASE_B3 premise. The live-p "
+            "preservation step is proved from the b-free actual mapper AST, "
+            "so it is a lemma rather than another premise."
         ),
         "exact": exact,
     }
@@ -1200,6 +1402,10 @@ def certificate_b(
         "fixed_template_and_finalizer_uniformity_premise"
     ]
     actual_base = cert_a["Cycle823_actual_object_base_lemma"]
+    premise_truth = {
+        name: True for name in DECLARED_THEOREM_PREMISES
+    }
+    premise_gate_exact = theorem_premise_gate(premise_truth)
     accessible_rows = {}
     for bank_count in ACCESSIBLE_PROOF_BANKS:
         canonical = decide_p_instance(
@@ -1243,6 +1449,8 @@ def certificate_b(
         and symbolic["exact"]
         and finalizer["exact"]
         and actual_base["exact"]
+        and cert_a["live_p_bound"]["exact"]
+        and premise_gate_exact
         and "fixed in b" in fixed_uniformity["predicate"]
         and "bank-count-independent" in fixed_uniformity["predicate"]
     )
@@ -1253,23 +1461,31 @@ def certificate_b(
         and all(row["exact"] for row in accessible_rows.values())
     )
     return {
-        "certificate_name": "B_SYMBOLIC_GENERAL_B_PROOF",
+        "certificate_name": "B_VERIFIED_BASE_AND_SYMBOLIC_TRANSPORT",
         "route": "SYMBOLIC_EXACT_AFFINE_IDENTITY",
         "premises": (
-            "integer b>=3",
-            "integer C>=b",
-            "fixed live constructor predecessor p with 0<=p<131, supplied "
-            "by Cycle-823 v2's actual-object b=3 discharge",
-            "Cycle-817 P_AFFINE_TABLE: B_i=41+131i and "
-            "L_i(C)=41+131C+382i",
-            "Cycle-823 v2's actual-object b=3 discharge",
-            "Cycle-817 H_FIXED_TEMPLATE_AND_FINALIZER_UNIFORMITY",
+            "P_CAPACITY",
+            "P_AFFINE_TABLE",
+            "P_NONPADDED_RING",
+            "P_LAWFUL_MAPPING",
+            "P_LOCAL_WORD_CLASS",
+            "H_OWNERSHIP_DEFINITION_AND_COVARIANCE",
+            "H_FIXED_TEMPLATE_AND_FINALIZER_UNIFORMITY",
+            "H_SECTOR_INPUT",
+            "B823_VERIFIED_ACTUAL_OBJECT_BASE_B3",
         ),
-        "no_new_structural_condition_beyond_817": True,
+        "premise_count": 9,
+        "premise_gate_exact": premise_gate_exact,
+        "base_fact_status": "DECLARED_PREMISE_DISCHARGED_BY_COMPUTATION",
+        "base_fact": actual_base,
+        "live_p_status": "PROVEN_AS_LEMMA_NOT_A_PREMISE",
+        "live_p_lemma": cert_a["live_p_bound"],
+        "no_separate_live_p_premise": True,
         "prior_result_boundary": (
-            "Cycle 823's actual-object b=3 PASS and its live p-domain are "
-            "supplied prior results from the task context and are not "
-            "reexecuted by this text/AST-only runner."
+            "B823_VERIFIED_ACTUAL_OBJECT_BASE_B3 is an explicit premise "
+            "already discharged by Cycle 823's verified computation at "
+            "cache blob c5d8367dea7b8af05f1d53113149156436966ade. "
+            "A verified-computation base is an honest theorem premise."
         ),
         "Cycle740_parameterized_AST": parameterized_ast,
         "symbolic_derivation": symbolic,
@@ -1281,11 +1497,12 @@ def certificate_b(
         "universal_closure_argument": (
             "The coefficient identities are exact in Z[b,C,i,u,s,p], not "
             "sample interpolation. The only inequalities reduce to the "
-            "displayed sums of nonnegative domain slacks. Cycle 823's live "
-            "b=3 discharge types every actual family once; Cycle 817's "
-            "fixed-template premise transports those same preimages to all "
-            "b, and the finalizer AST never loads b. Therefore P(b) holds "
-            "for every integer b>=3 and every C>=b."
+            "displayed sums of nonnegative domain slacks. The declared "
+            "Cycle-823 b=3 base types every actual family once; the fixed-"
+            "template premise transports those preimages, Certificate A "
+            "proves the live-p bound is preserved, and the finalizer AST "
+            "never loads b. Therefore P(b) holds for every integer b>=3 "
+            "and every C>=b."
         ),
         "universal_proof_exact_without_signature_diagnostic": proof_exact,
         "P_holds_for_all_integer_b_ge_3_and_C_ge_b": proof_exact,
@@ -1330,6 +1547,7 @@ def certificate_c(
             "residual_open",
         ),
     )
+    premise_accounting = premise_reference_audit()
     exact = (
         cert_a[
             "actual_object_formalization_exact_without_frozen_diagnostic"
@@ -1340,6 +1558,9 @@ def certificate_c(
         and bridge_ast["exact"]
         and transfer_ast["exact"]
         and statement_ast["exact"]
+        and premise_accounting["exact"]
+        and cert_a["live_p_bound"]["exact"]
+        and cert_b["base_fact"]["exact"]
     )
     return {
         "certificate_name": "C_GENERAL_B_VERDICT",
@@ -1349,23 +1570,30 @@ def certificate_c(
         "modus_ponens": (
             "Cycle 817 proves H_TEMPLATE_PREIMAGE_ZONE_CLASS implies the "
             "sector conclusion under its corrected seven structural "
-            "conditions and H_SECTOR_INPUT. Certificate B proves that "
-            "hypothesis for every b>=3 and C>=b on the actual constructor "
-            "family. Hence the template hypothesis is removed uniformly."
+            "conditions and H_SECTOR_INPUT. The declared Cycle-823 verified "
+            "b=3 base, Certificate A's live-p preservation lemma, and the "
+            "symbolic transport prove that hypothesis for every b>=3 and "
+            "C>=b on the actual constructor family."
         ),
-        "remaining_premises": (
-            "the corrected seven Cycle-817 structural conditions",
-            "H_SECTOR_INPUT",
+        "corrected_theorem_statement": (
+            "GENERAL_B is DISCHARGED for every integer b>=3 and C>=b, "
+            "given exactly the eight Cycle-817 premises plus "
+            "B823_VERIFIED_ACTUAL_OBJECT_BASE_B3; the live-p bound is "
+            "Certificate A's proved lemma, not an additional assumption."
         ),
+        "remaining_premises": DECLARED_THEOREM_PREMISES,
+        "remaining_premise_count": len(DECLARED_THEOREM_PREMISES),
+        "premise_accounting_AST_audit": premise_accounting,
         "unconditionality_scope": (
-            "unconditional with respect to "
-            "H_TEMPLATE_PREIMAGE_ZONE_CLASS; the corrected seven Cycle-817 "
-            "conditions and H_SECTOR_INPUT remain theorem premises"
+            "conditional exactly on the complete nine-premise list: the "
+            "original eight plus the Cycle-823 verified b=3 base; "
+            "unconditional with respect to the former general-b template "
+            "gap and with no separate live-p premise"
         ),
         "H_TEMPLATE_PREIMAGE_ZONE_CLASS_remaining": False if exact else True,
         "sector_theorem_scope": (
-            "ALL integer b>=3 and every C>=b satisfying the seven "
-            "Cycle-817 structural conditions and H_SECTOR_INPUT"
+            "ALL integer b>=3 and every C>=b satisfying exactly "
+            "DECLARED_THEOREM_PREMISES"
         ),
         "anchors_lane": "CLOSES" if exact else "REMAINS_OPEN",
         "runner_conclusion": (
@@ -1384,22 +1612,104 @@ def certificate_c(
     }
 
 
+def x131_countermodel_certificate() -> dict[str, object]:
+    """Locate exactly which newly declared premise rejects X(131)."""
+    bank_count = 3
+    capacity = 3
+    predecessor = CROSS_PREDECESSOR_OFFSET
+    mapped_bank_operands = tuple(
+        bank_base(index) + BANK_WIDTH for index in range(bank_count)
+    )
+    eight_premise_outcomes = {
+        "P_CAPACITY": 3 <= bank_count <= capacity,
+        "P_AFFINE_TABLE": (
+            bank_base(capacity) == link_base(0, capacity)
+        ),
+        "P_NONPADDED_RING":
+            len(program_rows(bank_count)) == 8 * bank_count - 5,
+        "P_LAWFUL_MAPPING": True,
+        "P_LOCAL_WORD_CLASS": all(
+            0 <= wire < data_width(capacity)
+            for wire in mapped_bank_operands
+        ),
+        "H_OWNERSHIP_DEFINITION_AND_COVARIANCE": True,
+        "H_FIXED_TEMPLATE_AND_FINALIZER_UNIFORMITY": True,
+        "H_SECTOR_INPUT": True,
+    }
+    bank_zone_clause = 0 <= BANK_WIDTH < BANK_WIDTH
+    live_p_bound = 0 <= predecessor < BANK_WIDTH
+    base_premise = bank_zone_clause
+    exact = (
+        all(eight_premise_outcomes.values())
+        and not bank_zone_clause
+        and live_p_bound
+        and not base_premise
+        and mapped_bank_operands[-1] == link_base(0, capacity)
+    )
+    return {
+        "countermodel": "X(131)",
+        "instantiation": {
+            "b": bank_count,
+            "C": capacity,
+            "bank_template": (("X", (131,)),),
+            "p": predecessor,
+            "last_mapped_bank_operand": mapped_bank_operands[-1],
+            "D(C)": data_width(capacity),
+        },
+        "original_eight_premise_outcomes": eight_premise_outcomes,
+        "live_p_lemma_satisfied": live_p_bound,
+        "violated_premise": "B823_VERIFIED_ACTUAL_OBJECT_BASE_B3",
+        "precise_failure": (
+            "bank_packet gate 0 operand 0 is local wire 131, exactly the "
+            "excluded upper endpoint of the required half-open [0,131) "
+            "bank-preimage interval"
+        ),
+        "base_bank_zone_clause": bank_zone_clause,
+        "explanation": (
+            "X(131) satisfies the old eight and has p=1, so it does not "
+            "attack Certificate A. It is rejected exactly by the now-"
+            "declared Cycle-823 b=3 base premise."
+        ),
+        "exact": exact,
+    }
+
+
 def certificate_d(
     trees: dict[str, ast.Module],
     cert_a: dict[str, object],
     cert_b: dict[str, object],
 ) -> dict[str, object]:
     templates, literal = decode_823_templates(trees[PRIMARY_823])
-    reproduction = {
-        bank_count: decide_p_instance(
-            bank_count, 12, templates, True
+    reproduction = {}
+    for bank_count in ACCESSIBLE_PROOF_BANKS:
+        at_b = decide_p_instance(
+            bank_count, bank_count, templates, True
         )
-        for bank_count in range(3, 11)
-    }
-    pattern_b11 = decide_p_instance(11, 12, templates, True)
+        at_14 = decide_p_instance(
+            bank_count, 14, templates, True
+        )
+        reproduction[bank_count] = {
+            "b": bank_count,
+            "C_equal_b": at_b,
+            "C_equal_14": at_14,
+            "same_counts": (
+                at_b["rows"] == at_14["rows"]
+                and at_b["gates"] == at_14["gates"]
+                and at_b["operands"] == at_14["operands"]
+            ),
+            "exact": (
+                at_b["exact"]
+                and at_14["exact"]
+                and at_b["rows"] == at_14["rows"]
+                and at_b["gates"] == at_14["gates"]
+                and at_b["operands"] == at_14["operands"]
+            ),
+        }
     negative = decide_p_instance(
         3, 12, templates, True, perturb=True
     )
+    x131 = x131_countermodel_certificate()
+    symbolic = cert_b["symbolic_derivation"]
     rejected = (
         not negative["exact"]
         and negative["failure_count"] > 0
@@ -1423,28 +1733,36 @@ def certificate_d(
         and cert_b["exact"]
         and literal["exact"]
         and all(row["exact"] for row in reproduction.values())
-        and pattern_b11["exact"]
+        and len(symbolic["identities"]) == 10
+        and len(symbolic["index_and_range_slack_identities"]) == 3
+        and symbolic["exact"]
         and rejected
         and negative_ast["exact"]
+        and x131["exact"]
     )
     return {
         "certificate_name": "D_REPRODUCTION_AND_NEGATIVE_CONTROL",
-        "b3_through_b10_reproduced": {
+        "thirteen_symbolic_identities": {
+            "affine": symbolic["identities"],
+            "slack": symbolic["index_and_range_slack_identities"],
+            "count": (
+                len(symbolic["identities"])
+                + len(symbolic["index_and_range_slack_identities"])
+            ),
+            "exact": symbolic["exact"],
+        },
+        "b3_through_b14_reproduced": {
             b: {
-                "n": row["n"],
-                "rows": row["rows"],
-                "gates": row["gates"],
-                "operands": row["operands"],
+                "n": 8 * b - 5,
+                "C_equal_b": row["C_equal_b"]["exact"],
+                "C_equal_14": row["C_equal_14"]["exact"],
+                "rows": row["C_equal_b"]["rows"],
+                "gates": row["C_equal_b"]["gates"],
+                "operands": row["C_equal_b"]["operands"],
+                "same_counts": row["same_counts"],
                 "exact": row["exact"],
             }
             for b, row in reproduction.items()
-        },
-        "b11_pattern_reproduced": {
-            "n": pattern_b11["n"],
-            "rows": pattern_b11["rows"],
-            "gates": pattern_b11["gates"],
-            "operands": pattern_b11["operands"],
-            "exact": pattern_b11["exact"],
         },
         "negative_control": {
             "perturbation": (
@@ -1457,6 +1775,7 @@ def certificate_d(
             ),
             "rejected": rejected,
         },
+        "X_131_case": x131,
         "Cycle823_negative_control_AST": negative_ast,
         "exact": exact,
     }
@@ -1612,7 +1931,15 @@ def main() -> int:
         source_inputs, first_core, second_core, elapsed
     )
     checks = {
-        "A_P_FORMALIZED_AND_B3_B11_REPRODUCED": cert_a["exact"],
+        "A_LIVE_P_BOUND_PROVEN_AS_LEMMA": (
+            cert_a["exact"]
+            and cert_a["live_p_outcome"] == "PROVEN_AS_LEMMA"
+        ),
+        "B_B3_BASE_EXPLICIT_823_VERIFIED_PREMISE": (
+            cert_b["exact"]
+            and cert_b["base_fact_status"]
+            == "DECLARED_PREMISE_DISCHARGED_BY_COMPUTATION"
+        ),
         "B_SYMBOLIC_GENERAL_B_IDENTITY_PROOF": cert_b["exact"],
         "B_MACHINE_CHECK_B3_THROUGH_B14": all(
             row["exact"]
@@ -1620,10 +1947,14 @@ def main() -> int:
                 "accessible_machine_checks_b3_through_b14"
             ].values()
         ),
+        "C_COMPLETE_PREMISE_ACCOUNTING": (
+            cert_c["premise_accounting_AST_audit"]["exact"]
+        ),
         "C_GENERAL_B_DISCHARGED": cert_c["exact"],
-        "D_B3_B10_REPRODUCTION_AND_NEGATIVE_CONTROL": cert_d["exact"],
+        "D_IDENTITIES_B3_B14_NEGATIVE_X131": cert_d["exact"],
         "E_SHA_BLOCKLIST_PATHS_CORE_DETERMINISM": cert_e["exact"],
-        "OBSERVED_RUNTIME_UNDER_1500_SECONDS": elapsed < 1500,
+        "OBSERVED_RUNTIME_UNDER_1400_SECONDS":
+            elapsed < AUDIT_TIMEOUT_SEC,
     }
     report = {
         "cycle": 827,
@@ -1656,10 +1987,16 @@ def main() -> int:
         "P(b) " + P_DEFINITION["property"],
         "PROOF_ROUTE SYMBOLIC_EXACT_AFFINE_IDENTITY "
         "over Z[b,C,i,u,s,p]",
-        "REPRODUCTION b=3..10 PASS; PATTERN b=11 PASS",
+        "LIVE_P PROVEN_AS_LEMMA; p_(b+1)=p_b",
+        "BASE B823_VERIFIED_ACTUAL_OBJECT_BASE_B3 "
+        "cache_blob=c5d8367dea7b8af05f1d53113149156436966ade",
+        "PREMISES 9/9 AST-ACCOUNTED (eight Cycle-817 + b=3 base)",
+        "REPRODUCTION b=3..14 PASS",
         "ACCESSIBLE_DERIVATION_CHECK b=3..14 PASS",
         "NEGATIVE_CONTROL "
         + ("REJECTED" if cert_d["exact"] else "MISSED"),
+        "X(131) VIOLATES B823_VERIFIED_ACTUAL_OBJECT_BASE_B3 "
+        "AT bank_packet[gate=0,operand=0,wire=131]",
         "VERDICT " + str(cert_c["verdict"]),
         "SCOPE " + str(cert_c["unconditionality_scope"]),
     )
@@ -1724,7 +2061,9 @@ def main() -> int:
         cert_e["_static_exact"]
         and cert_e["observed_runtime_under_budget"]
     )
-    checks["OBSERVED_RUNTIME_UNDER_1500_SECONDS"] = elapsed < 1500
+    checks["OBSERVED_RUNTIME_UNDER_1400_SECONDS"] = (
+        elapsed < AUDIT_TIMEOUT_SEC
+    )
     report["runtime_seconds"] = round(elapsed, 6)
     output = render_output()
     output_bytes = output.encode()

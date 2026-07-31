@@ -105,6 +105,10 @@ EXPECTED_ORBIT_COUNTS = {2: 16, 3: 28, 4: 20, 5: 4}
 EXPECTED_TOTAL_SETUPS = 748
 EXPECTED_TOTAL_REPRESENTATIVES = 68
 PROFILE_PREFIX_END = 2
+MAX_EXACT_CANDIDATE_PERIOD = 10_000
+
+if hasattr(sys, "set_int_max_str_digits"):
+    sys.set_int_max_str_digits(30_000)
 
 
 def compact(value: object) -> str:
@@ -381,3 +385,515 @@ def representatives_certificate() -> tuple[
         and complete_partition
     )
     return tuple(representatives), result
+
+
+def synchronous_word(
+    program: tuple[object, ...], positions0: tuple[int, ...]
+) -> tuple[object, ...]:
+    """Exact Q word selected by synchronous tokens over one C_11 orbit."""
+
+    positions = positions0
+    word = []
+    for _step in range(len(program)):
+        live = set(positions)
+        for station, row in enumerate(program):
+            if station in live:
+                word.extend(K.mapped_macro(row))
+        positions = tuple(
+            (position + 1) % len(program) for position in positions
+        )
+    return tuple(word)
+
+
+def build_context(representatives: tuple[Key, ...]) -> dict[str, object]:
+    program = K.interleaved_program(FIXTURE_BANKS)
+    banks, links = K.B.chain_genesis(FIXTURE_BANKS)
+    state = K.M.pack_state(banks, links)
+    allocator = K.M.global_allocator_word(FIXTURE_BANKS)
+    fixtures = []
+    fixture_failures = 0
+    for event in range(2 * FIXTURE_BANKS):
+        direction = (1, 0) if event % 2 == 0 else (0, 1)
+        before = K.M.prepare_endpoint(state, direction)
+        after, rail_a, rail_b, trace = K.run_orbit(
+            before, program
+        )
+        fixture_failures += after != K.A.apply_semantic(before, allocator)
+        fixture_failures += rail_a != (1,) + (0,) * (len(program) - 1)
+        fixture_failures += any(rail_b)
+        fixture_failures += len(trace) != len(program)
+        fixtures.append((event, direction, before))
+        state = after
+
+    positions = tuple(sorted({key[1] for key in representatives}))
+    words = {
+        row: synchronous_word(program, row) for row in positions
+    }
+    fixture_by_event = {
+        event: before for event, _direction, before in fixtures
+    }
+    initial_states: dict[Key, State] = {}
+    construction_failures = 0
+    for key in representatives:
+        count, token_positions, event = key
+        before = fixture_by_event[event]
+        initial, rail_a, rail_b, trace = K.run_orbit(
+            before, program, token_positions=token_positions
+        )
+        expected_rail = tuple(
+            int(station in token_positions)
+            for station in range(RING_STATIONS)
+        )
+        construction_failures += count != len(token_positions)
+        construction_failures += initial != K.A.apply_semantic(
+            before, words[token_positions]
+        )
+        construction_failures += rail_a != expected_rail or any(rail_b)
+        construction_failures += len(trace) != RING_STATIONS
+        initial_states[key] = initial
+    summary = {
+        "program_stations": len(program),
+        "core_generator_count": len(K.program_word(program)),
+        "fixture_events": len(fixtures),
+        "fixture_failures": fixture_failures,
+        "position_words": len(words),
+        "initial_states": len(initial_states),
+        "state_width": len(next(iter(initial_states.values()))),
+        "word_gate_counts_by_k": {
+            count: tuple(sorted({
+                len(words[key[1]])
+                for key in representatives if key[0] == count
+            }))
+            for count in STRATA
+        },
+        "construction_failures": construction_failures,
+    }
+    summary["pass"] = (
+        summary["program_stations"] == RING_STATIONS
+        and summary["core_generator_count"] == 3106
+        and summary["fixture_events"] == 4
+        and summary["fixture_failures"] == 0
+        and summary["initial_states"] == EXPECTED_TOTAL_REPRESENTATIVES
+        and summary["state_width"] == 5815
+        and summary["word_gate_counts_by_k"]
+        == {2: (6212,), 3: (9318,), 4: (12424,), 5: (15530,)}
+        and construction_failures == 0
+    )
+    return {
+        "program": program,
+        "fixtures": tuple(fixtures),
+        "fixture_by_event": fixture_by_event,
+        "words": words,
+        "initial_states": initial_states,
+        "summary": summary,
+    }
+
+
+def watched_residual_wires() -> tuple[int, ...]:
+    bank_wires = (
+        K.A.POINTER,
+        K.A.U_TO_V,
+        K.A.V_TO_U,
+        K.A.DIRECTION_OK,
+        *K.A.FRESH,
+        *K.A.ZERO_WORK,
+        K.A.TOKEN_OK,
+    )
+    rows = [int(K.R3.X.SOURCE_POINTER)]
+    for base in K.M.R12.BANK_BASES[:FIXTURE_BANKS]:
+        rows.extend(int(base + wire) for wire in bank_wires)
+    for base in K.M.R12.LINK_BASES[:FIXTURE_BANKS - 1]:
+        rows.extend(int(base + wire) for wire in range(K.B.LINK_WIDTH))
+    return tuple(rows)
+
+
+def derive_rule_automorphisms(context: dict[str, object]) -> dict[str, object]:
+    """Derive the exact ordered-generator wire-permutation group.
+
+    A permitted permutation must preserve gate kind, generator ordinal, and
+    operand role for every generator in the landed program word.  Therefore
+    wires with distinct ordered-incidence signatures cannot move.  Conversely
+    wires with the same signature may be permuted arbitrarily.  In this core
+    all used wires are singleton cells and all unused wires form one cell.
+    """
+
+    generators = K.program_word(context["program"])
+    state_width = context["summary"]["state_width"]
+    signatures: list[list[tuple[int, str, int, int]]] = [
+        [] for _wire in range(state_width)
+    ]
+    for ordinal, gate in enumerate(generators):
+        for role, wire in enumerate(gate.wires):
+            signatures[int(wire)].append(
+                (ordinal, gate.kind, role, len(gate.wires))
+            )
+    cells: dict[tuple[tuple[int, str, int, int], ...], list[int]] = {}
+    for wire, signature in enumerate(signatures):
+        cells.setdefault(tuple(signature), []).append(wire)
+    cell_sizes = tuple(sorted(len(cell) for cell in cells.values()))
+    active = tuple(
+        wire for wire, signature in enumerate(signatures) if signature
+    )
+    inactive = tuple(
+        wire for wire, signature in enumerate(signatures) if not signature
+    )
+    order = 1
+    for cell in cells.values():
+        order *= factorial(len(cell))
+    order_decimal = str(order)
+    result = {
+        "declared_family": (
+            "all permutations of the 5815 state wires preserving every "
+            "ordered Cycle-719 generator's kind and operand roles"
+        ),
+        "derivation": (
+            "partition wires by their complete (generator ordinal, kind, "
+            "operand role, arity) incidence signature; the group is the "
+            "direct product of symmetric groups on equal-signature cells"
+        ),
+        "state_width": state_width,
+        "ordered_core_generators": len(generators),
+        "signature_cells": len(cells),
+        "cell_size_census": dict(sorted(Counter(cell_sizes).items())),
+        "active_singleton_wires": len(active),
+        "inactive_rule_identity_wires": len(inactive),
+        "group_structure": f"S_{len(inactive)}",
+        "group_order": order_decimal,
+        "group_order_digits": len(order_decimal),
+        "group_order_sha256": sha256(order_decimal.encode("ascii")).hexdigest(),
+        "active_wires": active,
+        "inactive_wires": inactive,
+    }
+    result["pass"] = (
+        len(generators) == 3106
+        and len(active) == 545
+        and len(inactive) == 5270
+        and cell_sizes == (1,) * 545 + (5270,)
+        and order == factorial(5270)
+    )
+    return result
+
+
+def state_automorphism_signature(
+    state: State,
+    active_wires: tuple[int, ...],
+    inactive_wires: tuple[int, ...],
+) -> tuple[bytes, int]:
+    """Exact orbit label under identity-on-active times S_inactive."""
+
+    return (
+        bytes(state[wire] for wire in active_wires),
+        sum(state[wire] for wire in inactive_wires),
+    )
+
+
+def strict_records(weights: Iterable[int]) -> tuple[tuple[int, int], ...]:
+    rows = []
+    best = None
+    for moment, weight in enumerate(weights):
+        if best is None or weight < best:
+            rows.append((moment, int(weight)))
+            best = weight
+    return tuple(rows)
+
+
+def reading_profile(
+    states: tuple[State, ...], residual_wires: tuple[int, ...]
+) -> dict[str, object]:
+    e1 = tuple(sum(state[wire] for wire in residual_wires) for state in states)
+    e2 = tuple(sum(state) for state in states)
+    return {
+        "E1_reading": (
+            "landed cleanliness residual: source pointer, both banks' "
+            "POINTER/U_TO_V/V_TO_U/DIRECTION_OK/FRESH/ZERO_WORK/TOKEN_OK, "
+            "and every inter-bank link bit"
+        ),
+        "E2_reading": "full 5815-bit state Hamming weight",
+        "transient_length": 0,
+        "transient_length_basis": (
+            "the update word is a composition of distinct-wire "
+            "self-inverse X/CNOT/TOF gates and hence is bijective"
+        ),
+        "cycle_period": "DEFERRED_UNLESS_LEVEL_II_CANDIDATE",
+        "funnel_weight_sequence": {"E1": e1, "E2": e2},
+        "record_moments_and_weights": {
+            "E1": strict_records(e1), "E2": strict_records(e2)
+        },
+    }
+
+
+def exact_candidate_cycle(
+    keys: tuple[Key, ...],
+    context: dict[str, object],
+    automorphisms: dict[str, object],
+    residual_wires: tuple[int, ...],
+) -> dict[str, object]:
+    """Compare every state until a minimal common full-state return."""
+
+    states = [context["initial_states"][key] for key in keys]
+    initials = tuple(states)
+    words = [context["words"][key[1]] for key in keys]
+    active = automorphisms["active_wires"]
+    inactive = automorphisms["inactive_wires"]
+    e1_sequences = [[] for _key in keys]
+    e2_sequences = [[] for _key in keys]
+    state_streams = [sha256() for _key in keys]
+    conjugacy_exact_every_moment = True
+    full_state_equal_every_moment = True
+    first_return = [None] * len(keys)
+    closure = None
+
+    for moment in range(MAX_EXACT_CANDIDATE_PERIOD + 1):
+        signatures = tuple(
+            state_automorphism_signature(state, active, inactive)
+            for state in states
+        )
+        conjugacy_exact_every_moment &= len(set(signatures)) == 1
+        full_state_equal_every_moment &= len(set(states)) == 1
+        for lane, state in enumerate(states):
+            e1_sequences[lane].append(
+                sum(state[wire] for wire in residual_wires)
+            )
+            e2_sequences[lane].append(sum(state))
+            state_streams[lane].update(bytes(state))
+            if moment > 0 and first_return[lane] is None and state == initials[lane]:
+                first_return[lane] = moment
+        if moment > 0 and all(value is not None for value in first_return):
+            closure = moment
+            break
+        if not conjugacy_exact_every_moment:
+            break
+        states = [
+            K.A.apply_semantic(state, word)
+            for state, word in zip(states, words)
+        ]
+
+    e1_rows = tuple(tuple(row) for row in e1_sequences)
+    e2_rows = tuple(tuple(row) for row in e2_sequences)
+    period = first_return[0] if len(set(first_return)) == 1 else None
+    result = {
+        "keys": keys,
+        "tested_moments_inclusive": closure,
+        "minimal_cycle_periods": tuple(first_return),
+        "common_minimal_cycle_period": period,
+        "cycle_period_exact": period is not None,
+        "transient_lengths": (0,) * len(keys),
+        "full_state_equal_every_moment": full_state_equal_every_moment,
+        "fixed_automorphism_exists": conjugacy_exact_every_moment,
+        "fixed_automorphism_witness": (
+            "identity on all wires"
+            if full_state_equal_every_moment else
+            "identity on active wires plus one fixed inactive permutation"
+        ),
+        "infinite_sequence_certificate": (
+            "all states conjugate at every t=0..period and every lane "
+            "returns exactly to its own t=0 state at the common minimal "
+            "period; periodic repetition proves all t"
+        ),
+        "funnel_weight_sequence": {
+            "E1_length": len(e1_rows[0]),
+            "E1_sha256_by_key": tuple(digest(row) for row in e1_rows),
+            "E1_sequences_identical": len(set(e1_rows)) == 1,
+            "E2_length": len(e2_rows[0]),
+            "E2_sha256_by_key": tuple(digest(row) for row in e2_rows),
+            "E2_sequences_identical": len(set(e2_rows)) == 1,
+        },
+        "record_moments_and_weights": {
+            "E1": strict_records(e1_rows[0]),
+            "E2": strict_records(e2_rows[0]),
+        },
+        "state_sequence_sha256_by_key": tuple(
+            stream.hexdigest() for stream in state_streams
+        ),
+    }
+    result["pass"] = (
+        closure is not None
+        and period == closure
+        and conjugacy_exact_every_moment
+        and full_state_equal_every_moment
+        and len(set(e1_rows)) == 1
+        and len(set(e2_rows)) == 1
+        and len(set(result["state_sequence_sha256_by_key"])) == 1
+    )
+    return result
+
+
+def dynamical_equivalence_certificate(
+    representatives: tuple[Key, ...], context: dict[str, object]
+) -> dict[str, object]:
+    automorphisms = derive_rule_automorphisms(context)
+    active = automorphisms["active_wires"]
+    inactive = automorphisms["inactive_wires"]
+    residual_wires = watched_residual_wires()
+    prefix_states: dict[Key, tuple[State, ...]] = {}
+    profiles: dict[Key, dict[str, object]] = {}
+    for key in representatives:
+        state = context["initial_states"][key]
+        states = [state]
+        for _moment in range(PROFILE_PREFIX_END):
+            state = K.A.apply_semantic(
+                state, context["words"][key[1]]
+            )
+            states.append(state)
+        prefix_states[key] = tuple(states)
+        profiles[key] = reading_profile(tuple(states), residual_wires)
+
+    def profile_signature(key: Key) -> object:
+        profile = profiles[key]
+        return (
+            profile["transient_length"],
+            tuple(profile["funnel_weight_sequence"]["E1"]),
+            tuple(profile["funnel_weight_sequence"]["E2"]),
+            tuple(profile["record_moments_and_weights"]["E1"]),
+            tuple(profile["record_moments_and_weights"]["E2"]),
+        )
+
+    profile_groups: dict[object, list[Key]] = defaultdict(list)
+    for key in representatives:
+        profile_groups[profile_signature(key)].append(key)
+
+    def orbit_sequence_signature(key: Key) -> object:
+        return tuple(
+            state_automorphism_signature(state, active, inactive)
+            for state in prefix_states[key]
+        )
+
+    exact_prefix_groups: list[tuple[Key, ...]] = []
+    rejected_profile_equal_pairs = 0
+    earliest_obstruction_census: Counter[int] = Counter()
+    for profile_group in profile_groups.values():
+        orbit_groups: dict[object, list[Key]] = defaultdict(list)
+        for key in profile_group:
+            orbit_groups[orbit_sequence_signature(key)].append(key)
+        total_pairs = comb(len(profile_group), 2)
+        surviving_pairs = sum(
+            comb(len(group), 2) for group in orbit_groups.values()
+        )
+        rejected_profile_equal_pairs += total_pairs - surviving_pairs
+        for left, right in combinations(profile_group, 2):
+            for moment, (left_state, right_state) in enumerate(zip(
+                prefix_states[left], prefix_states[right]
+            )):
+                if state_automorphism_signature(
+                    left_state, active, inactive
+                ) != state_automorphism_signature(
+                    right_state, active, inactive
+                ):
+                    earliest_obstruction_census[moment] += 1
+                    break
+        exact_prefix_groups.extend(
+            tuple(group) for group in orbit_groups.values()
+        )
+
+    candidate_groups = tuple(sorted(
+        (group for group in exact_prefix_groups if len(group) > 1),
+        key=lambda row: row[0],
+    ))
+    exact_rows = tuple(
+        exact_candidate_cycle(
+            group, context, automorphisms, residual_wires
+        )
+        for group in candidate_groups
+    )
+    merged_keys = sum(len(group) - 1 for group in candidate_groups)
+    class_count = len(representatives) - merged_keys
+    prefix_profile_rows = tuple({
+        "key": key,
+        "exact_prefix_moments": (0, PROFILE_PREFIX_END),
+        "transient_length": profiles[key]["transient_length"],
+        "cycle_period": (
+            next(
+                row["common_minimal_cycle_period"]
+                for row in exact_rows if key in row["keys"]
+            )
+            if any(key in row["keys"] for row in exact_rows)
+            else "NOT_NEEDED_FOR_EXACT_CLASS_DECISION"
+        ),
+        "funnel_weight_sequence": profiles[key]["funnel_weight_sequence"],
+        "record_moments_and_weights":
+            profiles[key]["record_moments_and_weights"],
+        "exact_level_II_orbit_signature_sha256": digest(tuple(
+            (sha256(signature[0]).hexdigest(), signature[1])
+            for signature in orbit_sequence_signature(key)
+        )),
+    } for key in representatives)
+    profile_equal_pairs = sum(
+        comb(len(group), 2) for group in profile_groups.values()
+    )
+    result = {
+        "ladder": {
+            "level_i": (
+                "exact reversible preperiod plus exact E1/E2 funnel-weight "
+                "and strict-record prefixes t=0..2; numerical cycle period "
+                "is evaluated exactly only for level-II survivors and is "
+                "never approximated or used unresolved"
+            ),
+            "level_ii": (
+                "one fixed rule-automorphism must conjugate the full state "
+                "sequence at equal moments; t=0..2 rejects candidates, and "
+                "survivors are checked through a common minimal full-state "
+                "period"
+            ),
+            "E1": reading_profile(
+                (next(iter(context["initial_states"].values())),),
+                residual_wires,
+            )["E1_reading"],
+            "E2": "full 5815-bit state Hamming weight",
+        },
+        "automorphism_group": {
+            key: value for key, value in automorphisms.items()
+            if key not in {"active_wires", "inactive_wires"}
+        },
+        "profile_rows": prefix_profile_rows,
+        "profile_row_count": len(prefix_profile_rows),
+        "profile_equal_pair_count": profile_equal_pairs,
+        "profile_equal_pairs_rejected_by_exact_conjugacy_prefix":
+            rejected_profile_equal_pairs,
+        "earliest_exact_conjugacy_obstruction_census":
+            dict(sorted(earliest_obstruction_census.items())),
+        "exact_prefix_survivor_groups": candidate_groups,
+        "exact_full_cycle_rows": exact_rows,
+        "merge_list": candidate_groups,
+        "dynamical_class_count": class_count,
+        "irreducibility_statement": (
+            f"{class_count} exact classes: only the printed merge groups "
+            "survive; every other pair has an exact level-I profile or "
+            "level-II rule-automorphism obstruction"
+        ),
+        "classification_sha256": digest((
+            candidate_groups,
+            tuple(
+                row["state_sequence_sha256_by_key"] for row in exact_rows
+            ),
+            tuple(
+                row["exact_level_II_orbit_signature_sha256"]
+                for row in prefix_profile_rows
+            ),
+        )),
+    }
+    expected_groups = (
+        (
+            (3, (0, 2, 5), 1),
+            (3, (0, 2, 6), 1),
+            (3, (0, 2, 7), 1),
+            (3, (0, 2, 8), 1),
+        ),
+        (
+            (4, (0, 2, 4, 7), 1),
+            (4, (0, 2, 4, 8), 1),
+        ),
+    )
+    result["pass"] = (
+        automorphisms["pass"]
+        and len(residual_wires) == 477
+        and len(prefix_profile_rows) == EXPECTED_TOTAL_REPRESENTATIVES
+        and candidate_groups == expected_groups
+        and tuple(
+            row["common_minimal_cycle_period"] for row in exact_rows
+        ) == (5952, 4464)
+        and all(row["pass"] for row in exact_rows)
+        and class_count == 64
+        and profile_equal_pairs
+        == rejected_profile_equal_pairs + 7
+    )
+    return result

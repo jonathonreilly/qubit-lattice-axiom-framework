@@ -581,18 +581,624 @@ def certificate_a_wire_dynamics(
     }
 
 
+def bit_slice(states: tuple[int, ...]) -> list[int]:
+    columns = [0] * STATE_BITS
+    for lane, state in enumerate(states):
+        value = state
+        while value:
+            bit = value & -value
+            columns[bit.bit_length() - 1] |= 1 << lane
+            value ^= bit
+    return columns
+
+
+def capture_lanes(
+    columns: list[int],
+    lane_count: int,
+) -> tuple[int, ...]:
+    states = [0] * lane_count
+    lane_limit = (1 << lane_count) - 1
+    for wire, column in enumerate(columns):
+        live = column & lane_limit
+        while live:
+            bit = live & -live
+            states[bit.bit_length() - 1] |= 1 << wire
+            live ^= bit
+    return tuple(states)
+
+
+def build_phase_schedules(
+    macros: tuple[tuple[Gate, ...], ...],
+    lane_keys: tuple[Key, ...],
+) -> tuple[tuple[MaskedGate, ...], ...]:
+    schedules = []
+    for phase in range(RING_STATIONS):
+        rows = []
+        for station, macro in enumerate(macros):
+            mask = sum(
+                1 << lane
+                for lane, key in enumerate(lane_keys)
+                if station in {
+                    (key[1][0] + phase) % RING_STATIONS,
+                    (key[1][1] + phase) % RING_STATIONS,
+                }
+            )
+            if mask:
+                rows.extend(
+                    (kind, first, second, third, mask)
+                    for kind, first, second, third in macro
+                )
+        schedules.append(tuple(rows))
+    return tuple(schedules)
+
+
+def apply_masked(
+    columns: list[int],
+    schedule: tuple[MaskedGate, ...],
+) -> None:
+    for kind, first, second, third, mask in schedule:
+        if kind == 0:
+            columns[first] ^= mask
+        elif kind == 1:
+            columns[second] ^= columns[first] & mask
+        elif kind == 2:
+            columns[third] ^= columns[first] & columns[second] & mask
+        else:
+            raise AssertionError(("unknown gate kind", kind))
+
+
+def lane_numbers(mask: int) -> tuple[int, ...]:
+    result = []
+    while mask:
+        bit = mask & -mask
+        result.append(bit.bit_length() - 1)
+        mask ^= bit
+    return tuple(result)
+
+
+def matching_mask(
+    columns: list[int],
+    target: int,
+    lane_mask: int,
+    signature: tuple[int, ...],
+) -> int:
+    candidates = lane_mask
+    for wire in signature:
+        column = columns[wire] & lane_mask
+        candidates &= (
+            column if (target >> wire) & 1 else lane_mask ^ column
+        )
+        if not candidates:
+            return 0
+    for wire in range(STATE_BITS):
+        column = columns[wire] & lane_mask
+        candidates &= (
+            column if (target >> wire) & 1 else lane_mask ^ column
+        )
+        if not candidates:
+            return 0
+    return candidates
+
+
+def discriminator_pattern_from_state(state: int) -> tuple[int, ...]:
+    return tuple(
+        (state >> wire) & 1 for wire in DISCRIMINATOR_WIRES
+    )
+
+
+def discriminator_mask(columns: list[int], lane_mask: int) -> int:
+    c40, c81, c105 = (
+        columns[wire] & lane_mask for wire in DISCRIMINATOR_WIRES
+    )
+    n40 = lane_mask ^ c40
+    n81 = lane_mask ^ c81
+    n105 = lane_mask ^ c105
+    return (
+        (n40 & n81 & n105)
+        | (n40 & c81 & c105)
+        | (c40 & n81 & n105)
+    )
+
+
+def pattern_columns(
+    columns: list[int],
+    lane: int,
+) -> tuple[int, ...]:
+    return tuple(
+        (columns[wire] >> lane) & 1 for wire in DISCRIMINATOR_WIRES
+    )
+
+
+def meeting_geometry(pair: Pair) -> dict[str, object]:
+    left, right = pair
+    if (right - left) % RING_STATIONS == 5:
+        short_direction = 1
+    elif (left - right) % RING_STATIONS == 5:
+        short_direction = -1
+    else:
+        raise AssertionError(("not an s=5 pair", pair))
+    short_arc = tuple(
+        (left + short_direction * offset) % RING_STATIONS
+        for offset in range(6)
+    )
+    long_arc = tuple(
+        (left - short_direction * offset) % RING_STATIONS
+        for offset in range(7)
+    )
+    short_centers = short_arc[2:4]
+    long_centers = long_arc[3:4]
+    centers = tuple(sorted(set(short_centers + long_centers)))
+    reflection = lambda station: (
+        left + right - station
+    ) % RING_STATIONS
+    a_positions = tuple(
+        (station + MEET_CONTROLLER_TICK) % RING_STATIONS
+        for station in pair
+    )
+    return {
+        "short_arc_direction_from_sorted_left": short_direction,
+        "short_arc": short_arc,
+        "long_arc": long_arc,
+        "meeting_times_short_long": (3, 3),
+        "short_meeting_centers": short_centers,
+        "long_meeting_center": long_centers,
+        "meeting_center_union": centers,
+        "center_sets_source_swap_reflection_symmetric": (
+            {reflection(station) for station in short_centers}
+            == set(short_centers)
+            and {reflection(station) for station in long_centers}
+            == set(long_centers)
+        ),
+        "A_token_positions_at_meet": a_positions,
+        "B_token_positions_at_meet": (),
+        "both_A_tokens_on_center_union": all(
+            station in centers for station in a_positions
+        ),
+        "token_collision": len(set(a_positions)) != 2,
+    }
+
+
+def evolve_bounded_forward(
+    fixtures: dict[str, object],
+) -> dict[str, object]:
+    """Execute the full 44-member s=5 census and collect falsifiers."""
+    macros = fixtures["macros"]
+    all_keys = fixtures["keys"]
+    states = fixtures["states"]
+    target = fixtures["target"]
+    assert isinstance(macros, tuple)
+    assert isinstance(all_keys, tuple)
+    assert isinstance(states, dict)
+    assert isinstance(target, int)
+    s5_keys = tuple(
+        key for key in all_keys if cyclic_separation(key[1]) == 5
+    )
+    lane_count = len(s5_keys)
+    lane_keys = s5_keys + s5_keys
+    columns = bit_slice(tuple(states[key] for key in lane_keys))
+    schedules = build_phase_schedules(macros, lane_keys)
+    primary_mask = (1 << lane_count) - 1
+    duplicate_mask = primary_mask << lane_count
+    signature = tuple(sorted(set(
+        tuple(
+            wire for wire in range(STATE_BITS)
+            if (target >> wire) & 1
+        ) + tuple(
+            index * (STATE_BITS - 1) // 191 for index in range(192)
+        )
+    )))
+    schedule_duplicate_exact = all(
+        ((mask & duplicate_mask) >> lane_count)
+        == (mask & primary_mask)
+        for schedule in schedules
+        for _kind, _first, _second, _third, mask in schedule
+    )
+    per_lane_gate_rows = [0] * len(lane_keys)
+    for schedule in schedules:
+        for _kind, _first, _second, _third, mask in schedule:
+            live = mask
+            while live:
+                bit = live & -live
+                per_lane_gate_rows[bit.bit_length() - 1] += 1
+                live ^= bit
+    meet_states: tuple[int, ...] | None = None
+    meet_patterns: tuple[tuple[int, ...], ...] | None = None
+    meet_d_mask: int | None = None
+    first_pattern_change: list[dict[str, object] | None] = (
+        [None] * lane_count
+    )
+    first_d_change: list[dict[str, object] | None] = [None] * lane_count
+    first_hamming_increase: list[dict[str, object] | None] = (
+        [None] * lane_count
+    )
+    previous_distances: tuple[int, ...] | None = None
+    exact_hits = []
+    duplicate_checkpoints = []
+    hamming_window_end = 64
+
+    for tick in range(1, SSTAR_BOUND_CONTROLLER_TICKS + 1):
+        apply_masked(columns, schedules[(tick - 1) % RING_STATIONS])
+        if tick == MEET_CONTROLLER_TICK:
+            meet_states = capture_lanes(columns, lane_count)
+            meet_patterns = tuple(
+                discriminator_pattern_from_state(state)
+                for state in meet_states
+            )
+            meet_d_mask = discriminator_mask(columns, primary_mask)
+        if tick in (
+            MEET_CONTROLLER_TICK,
+            SSTAR_BOUND_CONTROLLER_TICKS,
+        ):
+            duplicate_checkpoints.append({
+                "controller_tick": tick,
+                "all_44_exact": all(
+                    (column & primary_mask)
+                    == ((column & duplicate_mask) >> lane_count)
+                    for column in columns
+                ),
+            })
+        if (
+            meet_patterns is not None
+            and meet_d_mask is not None
+            and tick > MEET_CONTROLLER_TICK
+        ):
+            current_d_mask = discriminator_mask(columns, primary_mask)
+            changed_d = current_d_mask ^ meet_d_mask
+            for lane in lane_numbers(changed_d):
+                if first_d_change[lane] is None:
+                    first_d_change[lane] = {
+                        "controller_tick": tick,
+                        "from": bool((meet_d_mask >> lane) & 1),
+                        "to": bool((current_d_mask >> lane) & 1),
+                        "pattern": pattern_columns(columns, lane),
+                    }
+            for lane, initial_pattern in enumerate(meet_patterns):
+                if first_pattern_change[lane] is None:
+                    current_pattern = pattern_columns(columns, lane)
+                    if current_pattern != initial_pattern:
+                        first_pattern_change[lane] = {
+                            "controller_tick": tick,
+                            "from": initial_pattern,
+                            "to": current_pattern,
+                        }
+        if MEET_CONTROLLER_TICK <= tick <= hamming_window_end:
+            snapshot = capture_lanes(columns, lane_count)
+            distances = tuple(
+                (state ^ target).bit_count() for state in snapshot
+            )
+            if previous_distances is not None:
+                for lane, (before, after) in enumerate(zip(
+                    previous_distances, distances
+                )):
+                    if (
+                        after > before
+                        and first_hamming_increase[lane] is None
+                    ):
+                        first_hamming_increase[lane] = {
+                            "from_tick": tick - 1,
+                            "to_tick": tick,
+                            "from_distance": before,
+                            "to_distance": after,
+                            "increase": after - before,
+                        }
+            previous_distances = distances
+        matches = matching_mask(
+            columns, target, primary_mask, signature
+        )
+        exact_hits.extend(
+            (tick, s5_keys[lane]) for lane in lane_numbers(matches)
+        )
+
+    if (
+        meet_states is None
+        or meet_patterns is None
+        or meet_d_mask is None
+    ):
+        raise AssertionError("tick-3 meet snapshot missing")
+    hit_ticks = {
+        key: tuple(
+            tick for tick, hit_key in exact_hits if hit_key == key
+        )
+        for key in s5_keys
+    }
+    rows = tuple({
+        "key": key,
+        "meet_pattern": meet_patterns[lane],
+        "meet_D": bool((meet_d_mask >> lane) & 1),
+        "meet_state_packed_sha256": state_packed_sha256(
+            meet_states[lane]
+        ),
+        "meet_state_hamming_weight": meet_states[lane].bit_count(),
+        "meeting_geometry": meeting_geometry(key[1]),
+        "first_pattern_change": first_pattern_change[lane],
+        "first_D_change": first_d_change[lane],
+        "first_hamming_distance_increase_through_tick_64":
+            first_hamming_increase[lane],
+        "exact_Sstar_hit_ticks": hit_ticks[key],
+        "reaches_within_bound": bool(hit_ticks[key]),
+        "first_hit_distance_from_meet": (
+            hit_ticks[key][0] - MEET_CONTROLLER_TICK
+            if hit_ticks[key] else None
+        ),
+    } for lane, key in enumerate(s5_keys))
+    reaching_keys = tuple(
+        row["key"] for row in rows if row["reaches_within_bound"]
+    )
+    marked_keys = tuple(row["key"] for row in rows if row["meet_D"])
+    nonreaching_keys = tuple(
+        row["key"] for row in rows if not row["reaches_within_bound"]
+    )
+    exact = (
+        fixtures["public"]["pass"]
+        and lane_count == 44
+        and tuple(exact_hits) == EXPECTED_CONTROLLER_TICK_HITS
+        and reaching_keys == EXPECTED_REACHING_KEYS
+        and marked_keys == EXPECTED_REACHING_KEYS
+        and len(nonreaching_keys) == 35
+        and schedule_duplicate_exact
+        and all(
+            row["all_44_exact"] for row in duplicate_checkpoints
+        )
+        and set(per_lane_gate_rows) == {WORD_GATE_COUNT}
+        and all(
+            row["meeting_geometry"][
+                "center_sets_source_swap_reflection_symmetric"
+            ]
+            and row["meeting_geometry"][
+                "both_A_tokens_on_center_union"
+            ]
+            and not row["meeting_geometry"]["token_collision"]
+            for row in rows
+        )
+    )
+    return {
+        "rows": rows,
+        "keys": s5_keys,
+        "meet_states": meet_states,
+        "public": {
+            "scope":
+                "all 44 landed s=5 configurations; every completed "
+                "controller tick 1..162129",
+            "meet_controller_tick": MEET_CONTROLLER_TICK,
+            "forward_bound_from_meet_controller_ticks":
+                FORWARD_BOUND_FROM_MEET,
+            "forward_bound_complete_movements":
+                SSTAR_BOUND_MOVEMENTS,
+            "exact_target_definition": {
+                "state_bits": STATE_BITS,
+                "hamming_weight": target.bit_count(),
+                "packed_sha256": state_packed_sha256(target),
+                "bit_tuple_sha256": state_bit_tuple_sha256(target),
+            },
+            "phase_schedule_gate_rows": tuple(map(len, schedules)),
+            "per_lane_gate_rows_per_complete_movement":
+                tuple(sorted(set(per_lane_gate_rows))),
+            "structural_duplicate_schedule_exact":
+                schedule_duplicate_exact,
+            "duplicate_determinism_checkpoints":
+                tuple(duplicate_checkpoints),
+            "all_exact_target_hits": tuple(exact_hits),
+            "marked_keys": marked_keys,
+            "reaching_keys": reaching_keys,
+            "nonreaching_keys": nonreaching_keys,
+            "pass": exact,
+        },
+    }
+
+
+def certificate_b_forward_argument(
+    certificate_a: dict[str, object],
+    evolution: dict[str, object],
+) -> dict[str, object]:
+    rows = evolution["rows"]
+    assert isinstance(rows, tuple)
+    marked = tuple(row for row in rows if row["meet_D"])
+    controls = tuple(row for row in rows if not row["meet_D"])
+    marked_pattern_changes = tuple({
+        "key": row["key"],
+        "counterexample": row["first_pattern_change"],
+    } for row in marked if row["first_pattern_change"] is not None)
+    marked_d_changes = tuple({
+        "key": row["key"],
+        "counterexample": row["first_D_change"],
+    } for row in marked if row["first_D_change"] is not None)
+    marked_hamming_failures = tuple({
+        "key": row["key"],
+        "counterexample":
+            row["first_hamming_distance_increase_through_tick_64"],
+    } for row in marked if (
+        row["first_hamming_distance_increase_through_tick_64"]
+        is not None
+    ))
+    control_hamming_failures = tuple({
+        "key": row["key"],
+        "counterexample":
+            row["first_hamming_distance_increase_through_tick_64"],
+    } for row in controls if (
+        row["first_hamming_distance_increase_through_tick_64"]
+        is not None
+    ))
+    finite_implication = (
+        len(marked) == 9
+        and all(row["reaches_within_bound"] for row in marked)
+        and all(
+            row["first_hit_distance_from_meet"] is not None
+            and 0 <= row["first_hit_distance_from_meet"]
+            <= FORWARD_BOUND_FROM_MEET
+            for row in marked
+        )
+    )
+    negative_control_exact = (
+        len(controls) == 35
+        and not any(row["reaches_within_bound"] for row in controls)
+    )
+    hamming_candidate_falsified = (
+        bool(marked_hamming_failures)
+        and bool(control_hamming_failures)
+    )
+    local_flag_conservation_falsified = bool(
+        marked_pattern_changes or marked_d_changes
+    )
+    exact = (
+        certificate_a["pass"]
+        and evolution["public"]["pass"]
+        and finite_implication
+        and negative_control_exact
+        and hamming_candidate_falsified
+        and local_flag_conservation_falsified
+    )
+    return {
+        "verdict": "BOUNDED_FORWARD_IMPLICATION_WITH_LOCAL_GAP",
+        "certificate_role": "B_FORWARD_ARGUMENT_ATTEMPT",
+        "theorem_scope":
+            "the finite landed 44-member s=5 tick-3 meet domain",
+        "antecedent":
+            "symmetric (3,3) meet geometry AND meet-wire pattern on "
+            "(40,81,105) in {000,011,100}",
+        "conclusion":
+            "exact 5815-bit weight-44 Cycle-830 S* is reached within "
+            f"B={FORWARD_BOUND_FROM_MEET} completed controller ticks",
+        "bound_B_controller_ticks": FORWARD_BOUND_FROM_MEET,
+        "rule_level_bounded_forward_census": {
+            "marked_trajectory_count": len(marked),
+            "all_marked_reach_exact_target": finite_implication,
+            "marked_rows": tuple({
+                "key": row["key"],
+                "meet_pattern": row["meet_pattern"],
+                "first_hit_distance_from_meet":
+                    row["first_hit_distance_from_meet"],
+                "exact_Sstar_hit_ticks": row["exact_Sstar_hit_ticks"],
+            } for row in marked),
+            "every_rule_tick_checked": True,
+            "target_comparison": "exact 5815-bit equality, not weight alone",
+        },
+        "candidate_invariant_chain": (
+            {
+                "link": "meet predicate is locally readable",
+                "status": "PASS",
+                "evidence":
+                    "exact three-wire evaluation on all 44 meet states",
+            },
+            {
+                "link": "three-wire word or Boolean D is conserved",
+                "status": "FAIL",
+                "marked_pattern_counterexamples":
+                    marked_pattern_changes,
+                "marked_D_counterexamples": marked_d_changes,
+            },
+            {
+                "link": "Hamming distance to exact S* is nonincreasing",
+                "status": "FAIL",
+                "checked_window":
+                    "every tick from meet tick 3 through tick 64",
+                "marked_counterexamples": marked_hamming_failures,
+                "nonreaching_counterexamples":
+                    control_hamming_failures,
+            },
+            {
+                "link":
+                    "full deterministic landed evolution forces S* "
+                    "within B on each marked meet",
+                "status": "PASS",
+                "evidence":
+                    "all nine marked lanes, every tick, exact target",
+            },
+            {
+                "link":
+                    "a non-lookahead local invariant/monotone connects "
+                    "the three-wire flag to the target skeleton",
+                "status": "OPEN",
+                "reason":
+                    "the tested local flag is writable/nonconserved and "
+                    "the tested target-distance monotone has explicit "
+                    "counterexamples",
+            },
+        ),
+        "lookahead_distance_certificate": {
+            "definition":
+                "first exact future S* hit tick minus current tick",
+            "marked_meet_values": tuple(
+                (row["key"], row["first_hit_distance_from_meet"])
+                for row in marked
+            ),
+            "decreases_by_one_until_hit":
+                all(row["first_hit_distance_from_meet"] is not None
+                    for row in marked),
+            "admissibility":
+                "EXACT_BUT_LOOKAHEAD_DEFINED; certifies the finite "
+                "implication but is not a local causal explanation",
+        },
+        "declared_nonreaching_control_sample": {
+            "sampling_rule": "all 35 unmarked members of the landed s=5 census",
+            "sample_size": len(controls),
+            "sample_keys": tuple(row["key"] for row in controls),
+            "no_exact_target_within_B": negative_control_exact,
+            "lookahead_distance_absent": all(
+                row["first_hit_distance_from_meet"] is None
+                for row in controls
+            ),
+            "hamming_monotone_failure_count":
+                len(control_hamming_failures),
+        },
+        "pass": exact,
+    }
+
+
+def certificate_c_verdict(
+    certificate_a: dict[str, object],
+    certificate_b: dict[str, object],
+) -> dict[str, object]:
+    partial = certificate_a["pass"] and certificate_b["pass"]
+    return {
+        "verdict": "PARTIAL" if partial else "OPEN",
+        "certificate_role": "C_LOCAL_CAUSAL_THEOREM_VERDICT",
+        "links_that_hold": (
+            "exact local read/write dynamics for wires 40/81/105",
+            "exact meet-local predicate on the finite landed 44-member domain",
+            f"marked-meet => exact S* within B={FORWARD_BOUND_FROM_MEET} "
+            "by exhaustive rule-level bounded-forward execution",
+            "all 35 unmarked controls fail to reach exact S* within B",
+        ),
+        "open_link":
+            "No non-lookahead local invariant/monotone has been derived "
+            "from the three writable wires and symmetric meet geometry to "
+            "the weight-44 skeleton.",
+        "why_not_LOCAL_THEOREM_ESTABLISHED":
+            "The finite implication is machine-proved, but the requested "
+            "local causal proof skeleton does not close: D is not conserved "
+            "and Hamming distance to S* is not monotone.",
+        "status_precision":
+            "PARTIAL does not retract the bounded 9/44 reachability theorem; "
+            "it withholds the stronger local causal explanation.",
+        "pass": partial,
+    }
+
+
 def run() -> int:
     started = monotonic()
     controls = source_controls()
     fixtures = decode_cycle830_fixtures()
     certificate_a = certificate_a_wire_dynamics(fixtures)
+    evolution = evolve_bounded_forward(fixtures)
+    certificate_b = certificate_b_forward_argument(
+        certificate_a, evolution
+    )
+    certificate_c = certificate_c_verdict(certificate_a, certificate_b)
     report = {
         "cycle": 842,
         "title": "the local causal theorem attempt",
         "certificate_A": certificate_a,
+        "certificate_B": certificate_b,
+        "certificate_C": certificate_c,
+        "bounded_evolution": evolution["public"],
         "certificate_D_controls": controls,
         "elapsed_seconds": round(monotonic() - started, 6),
-        "overall_pass": controls["pass"] and certificate_a["pass"],
+        "overall_pass": (
+            controls["pass"]
+            and certificate_a["pass"]
+            and certificate_b["pass"]
+            and certificate_c["pass"]
+        ),
     }
     rendered = compact(report)
     if len(rendered.encode()) >= STDOUT_LIMIT_BYTES:

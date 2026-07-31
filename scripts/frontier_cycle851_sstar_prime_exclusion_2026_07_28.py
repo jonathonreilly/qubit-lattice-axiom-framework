@@ -559,6 +559,7 @@ def parity_failure_witness(
         after = apply_word(before, words[key[1]])
         if parity(before, wires) != parity(after, wires):
             return {
+                "witness_source": "landed_initial_family",
                 "key": key,
                 "word_pair": key[1],
                 "before_parity": parity(before, wires),
@@ -566,6 +567,24 @@ def parity_failure_witness(
                 "before_state_sha256": state_sha256(before),
                 "after_state_sha256": state_sha256(after),
             }
+    arbitrary_states = (
+        ("ALL_ZERO", 0),
+        ("ALL_ONE", (1 << STATE_BITS) - 1),
+        ("SINGLE_HEAD1", 1 << HEAD1_WIRE),
+    )
+    for label, before in arbitrary_states:
+        for pair in sorted(words):
+            after = apply_word(before, words[pair])
+            if parity(before, wires) != parity(after, wires):
+                return {
+                    "witness_source": "full_state_space",
+                    "state_label": label,
+                    "word_pair": pair,
+                    "before_parity": parity(before, wires),
+                    "after_parity": parity(after, wires),
+                    "before_state_sha256": state_sha256(before),
+                    "after_state_sha256": state_sha256(after),
+                }
     return None
 
 
@@ -684,7 +703,7 @@ def local_invariant_hunt(
             "proof_or_failure": (
                 "Every X/CNOT/Toffoli changes only its declared target, and no declared target lies in this wire set; induction over every gate in every F_p preserves parity."
                 if primitive_preserved
-                else "Fails the gate-local induction and has the displayed exact local gate witness; the displayed full-step witness independently falsifies step preservation on a landed state."
+                else "Fails the gate-local induction and has the displayed exact local gate witness; the displayed full-step state-space witness independently falsifies preservation by the step relation."
             ),
             "primitive_failure_witness": primitive_parity_failure(wires, macros),
             "whole_step_failure_witness": whole_step_failure,

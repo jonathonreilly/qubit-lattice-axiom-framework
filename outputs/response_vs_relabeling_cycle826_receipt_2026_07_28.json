@@ -1,0 +1,33 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockP14-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle826_gauge_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 0
+    },
+    "logs/runner-cache/frontier_cycle826_response_vs_relabeling_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 2
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 826,
+  "files": {
+    "docs/RESPONSE_VS_RELABELING_CYCLE826_BOUNDED_THEOREM_NOTE_2026-07-28.md": "07d706de21ef9fdb6de775ba6e90e843d09252289ed775362c0f0560e15830e8",
+    "logs/runner-cache/frontier_cycle826_gauge_independent_check_2026_07_28.txt": "30545985072876716aa3ba6f0c02c09d043c5579466925ef5043d3981d660a36",
+    "logs/runner-cache/frontier_cycle826_response_vs_relabeling_2026_07_28.txt": "f39cb5b5a71aad1ae61cc6e1b894acd7ecfd41799f12f28d3d0ddaf9b5d33dcf",
+    "scripts/frontier_cycle826_gauge_independent_check_2026_07_28.py": "717d8329b1e6517f8194a8b76f0e21c8648b178b00da5be74f606d84548ee123",
+    "scripts/frontier_cycle826_response_vs_relabeling_2026_07_28.py": "f30c343dcab77e4249ae0161389d725dfeceb26af1cf0e5c5137630142887bb8"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "#5816's canonicity STRENGTHENS: the family is canonical under symmetries of occurrence AND response",
+    "the 815 C6 (allocation-rotating, W7-visible) is NOT in the occurrence gauge group \u2014 two different symmetries, exactly distinguished"
+  ],
+  "verdicts": [
+    "GAUGE_EXTENDS \u2014 all 27 relabelings IDENTITY_NO_REACH on W7 inputs; 12,623,688 exact comparisons zero inequalities",
+    "checker GAUGE_EXTENDS_NOT_REFUTED (27 independently re-derived; 1,147,608 recount; C6 distinction verified)"
+  ]
+}

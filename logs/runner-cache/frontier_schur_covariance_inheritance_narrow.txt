@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_schur_covariance_inheritance_narrow.py
-runner_sha256: adfa658c3db41b8129d901be1f1733afde0b3eab7493ed517875e50a0898822a
-input_fingerprint_sha256: abfd91d108195b6a5d55b5e37f5aa9205627f6ee650f7483524437bdbb5c5d03
+runner_sha256: 5357c787f5764f8cbdeca56b3cfcc9cfd53944eae2e605b5608f0a2356576d2a
+input_fingerprint_sha256: 773e0944f4ef2522bfc0972a6c6b9453a515fc72966cbc8a17d784f9bdfa211c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.21
 status: ok
 ----- stdout -----
 

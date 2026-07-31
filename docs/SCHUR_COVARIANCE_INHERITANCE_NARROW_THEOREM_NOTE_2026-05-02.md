@@ -29,15 +29,17 @@ The narrow theorem provides a clean, reusable structural lemma that
 downstream Koide / DM / charged-lepton notes can cite without inheriting
 broader scope-creep.
 
-## Retained-grade dependency (one-hop)
+## Cited theorem authority (one hop)
 
-| Authority | Ledger status | Role |
-|---|---|---|
-| [`SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`](SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) | retained-grade | supplies the canonical group action structure used by downstream Koide consumers; cited here as the retained primitive that anchors the C₃[111] specialization the lemma applies to |
+| Authority | Role |
+|---|---|
+| [`SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`](SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) | ordinary theorem authority giving taste-cube / Brillouin-zone-corner context for downstream consumers |
 
-The lemma itself is stated and proved in general (any unitary group, any
-Hermitian operator); the cited authority is the retained anchor point that
-gives this lemma its place in the framework chain.
+The cited theorem is not a registered framework primitive and is not a
+premise of the general proof below, which applies to any unitary group and
+any Hermitian operator satisfying the displayed hypotheses. Its current
+status belongs to the audit ledger; the runner reads the tracked dependency
+shard only as an executable dependency guard.
 
 ## Load-bearing step (class A)
 
@@ -74,10 +76,12 @@ Verifies with SymPy exact integer/rational matrix arithmetic:
 
 1. The lemma holds on the canonical 3+1 split with `V_1 = ℂ³`, `W = ℂ¹`,
    `U_1 = C₃[111]`, for both `U_W = +1` and `U_W = -1`. In the sign case,
-   covariance forces `B = 0` because `-1` is not in the spectrum of `C₃`;
+   these are the actions of one common `C₆` generator: the `V_1` action
+   factors through `C₃`, while the `W` action factors through `C₂`.
+   Covariance forces `B = 0` because `-1` is not in the spectrum of `C₃`;
    the runner checks this edge case explicitly.
 2. The lemma holds on a 3+3 split with `V_1 = V_W = ℂ³` and the distinct
-   actions `U_1 = C₃`, `U_W = C₃²`, using a nonzero orbit-averaged
+   actions `U_1 = C₃`, `U_W = C₃²`, using a nonzero orbit-summed
    intertwiner `B`.
 3. Twelve deterministic seeded random 3+3 fixtures, covering all four pairs
    `U_1, U_W ∈ {C₃, C₃²}`. Each fixture constructs exact invariant
@@ -103,10 +107,8 @@ proposed_load_bearing_step_class: A
 audit_required_before_effective_retained: true
 ```
 
-Audit status is set only by the independent audit lane. If the theorem is
-ratified and dependencies remain retained-grade, the audit pipeline derives
-the retained-family positive effective status from `claim_type` plus dependency
-closure.
+Audit status is set only by the independent audit lane. Effective status is
+pipeline-derived from `claim_type` and current dependency closure.
 
 ## What this theorem closes
 
@@ -118,17 +120,18 @@ mathematical; physical applicability is a separate downstream claim.
 
 - Applicability to physical charged-lepton effective operators.
 - The KOIDE_FULL_LATTICE_SCHUR_INHERITANCE_NOTE_2026-04-18 row's broader
-  claim chain (still `audited_conditional`).
+  claim chain.
 - Existence of the Schur reduction in physical settings (assumed in
   premise; out of scope).
 
 ## Cross-references
 
-- [`SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`](SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) — retained-grade dependency, supplies the
-  C₃[111] action structure relevant to downstream Koide consumers.
+- [`SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md`](SITE_PHASE_CUBE_SHIFT_INTERTWINER_NOTE.md) — ordinary theorem authority giving
+  taste-cube / Brillouin-zone-corner context for downstream consumers; not
+  a premise of this general lemma.
 - KOIDE_FULL_LATTICE_SCHUR_INHERITANCE_NOTE_2026-04-18.md — parent
-  Koide-Schur application with a conditional audit verdict; this narrow
-  theorem provides the underlying lemma the parent depends on. This parent
-  application is not a load-bearing dependency for the narrow lemma.
+  Koide-Schur application for which this note provides the underlying
+  lemma. This parent application is not a load-bearing dependency for the
+  narrow lemma.
 - Cycle 1 (PR #292) — sister narrow theorem: LH-doublet eigenvalue ratio.
 - Cycle 2 (PR #293) — sister narrow theorem: Koide cyclic 3-response.

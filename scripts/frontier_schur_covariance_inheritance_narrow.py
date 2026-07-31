@@ -169,7 +169,9 @@ section("Part 3: 3+1 split with the nontrivial sign action U_W = -1")
 # With U_1 = C_3 and U_W = -1, the intertwining condition is C_3 B = -B.
 # Since -1 is not an eigenvalue of C_3, this forces B = 0.  This is still a
 # genuine edge case of the theorem and directly exercises the sign action
-# claimed in the note.  The combined generator has order six.
+# claimed in the note.  These actions define a common C_6 representation:
+# the V_1 action factors through C_3 and the W action factors through C_2.
+# The combined generator has exact order six.
 U_W_MINUS = Matrix([[-1]])
 B_MINUS = zeros(3, 1)
 D_MINUS = Matrix([[3]])
@@ -181,9 +183,10 @@ U_MINUS[3, 3] = -1
 check("U_W = -1: combined block action is unitary",
       U_MINUS * U_MINUS.H == eye(4))
 check("U_W = -1: combined generator has order six",
-      U_MINUS**6 == eye(4))
+      U_MINUS**6 == eye(4)
+      and all(U_MINUS**k != eye(4) for k in range(1, 6)))
 check("U_W = -1: -1 is absent from the C₃ spectrum, so covariance forces B = 0",
-      (C3 + eye(3)).det() != 0 and B_MINUS == zeros(3, 1),
+      (C3 + eye(3)).det() == 2 and B_MINUS == zeros(3, 1),
       detail=f"det(C₃ + I) = {(C3 + eye(3)).det()}")
 check("U_W = -1: off-diagonal intertwining relation holds",
       C3 * B_MINUS * U_W_MINUS.H == B_MINUS)
@@ -201,7 +204,7 @@ check("U_W = -1: U_1 S U_1† = S",
 # ============================================================================
 section("Part 4: lemma on 3+3 split with distinct C₃ actions")
 # ============================================================================
-# V_1 carries C_3 while W carries C_3².  Orbit-averaging B under
+# V_1 carries C_3 while W carries C_3².  Orbit-summing B under
 # X -> U_1 X U_W† constructs an exact, nonzero intertwiner for these distinct
 # representations.  A and D are invariant under their respective actions.
 

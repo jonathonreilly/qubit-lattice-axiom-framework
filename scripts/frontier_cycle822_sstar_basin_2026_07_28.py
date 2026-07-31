@@ -517,7 +517,9 @@ def scalar_equivalence(
 def evolve_sstar_pair(
     family: dict[str, object],
 ) -> dict[str, object]:
-    keys = NINE_KEYS[:2]
+    # Use distinct left-position classes so the two-key witness also
+    # witnesses the nine-trajectory inequality on both adjacent ticks.
+    keys = (NINE_KEYS[0], NINE_KEYS[-1])
     lanes = tuple((key, "certificate_A") for key in keys)
     columns = bit_slice(tuple(family["states"][key] for key in keys))
     schedule = masked_schedule(family["program"], lanes)

@@ -670,21 +670,449 @@ def evolve_s5_to_sstar_bound(
     }
 
 
+def meeting_geometry(pair: Pair) -> dict[str, object]:
+    left, right = pair
+    if (right - left) % RING_STATIONS == 5:
+        short_direction = 1
+    elif (left - right) % RING_STATIONS == 5:
+        short_direction = -1
+    else:
+        raise AssertionError(("not an s=5 pair", pair))
+    short_arc = tuple(
+        (left + short_direction * offset) % RING_STATIONS
+        for offset in range(6)
+    )
+    long_arc = tuple(
+        (left - short_direction * offset) % RING_STATIONS
+        for offset in range(7)
+    )
+    short_centers = short_arc[2:4]
+    long_centers = long_arc[3:4]
+    centers = tuple(sorted(set(short_centers + long_centers)))
+    reflection = lambda station: (left + right - station) % RING_STATIONS
+    a_positions = tuple(
+        (station + 3) % RING_STATIONS for station in pair
+    )
+    return {
+        "short_arc_direction_from_sorted_left": short_direction,
+        "sorted_gap": right - left,
+        "short_arc": short_arc,
+        "long_arc": long_arc,
+        "meeting_times_short_long": (3, 3),
+        "short_meeting_centers": short_centers,
+        "long_meeting_center": long_centers,
+        "meeting_center_union": centers,
+        "center_sets_source_swap_reflection_symmetric": (
+            {reflection(station) for station in short_centers}
+            == set(short_centers)
+            and {reflection(station) for station in long_centers}
+            == set(long_centers)
+        ),
+        "A_token_positions_at_meet": a_positions,
+        "B_token_positions_at_meet": (),
+        "both_A_tokens_on_center_union": all(
+            station in centers for station in a_positions
+        ),
+        "A_row_source_swap_reflection_symmetric":
+            {reflection(station) for station in a_positions}
+            == set(a_positions),
+        "token_collision": len(set(a_positions)) != 2,
+    }
+
+
+def meeting_theorem_certificate() -> dict[str, object]:
+    rows = []
+    for separation in range(1, 6):
+        short_time = (separation + 1) // 2
+        long_time = (RING_STATIONS - separation + 1) // 2
+        rows.append({
+            "separation": separation,
+            "arc_lengths": (separation, RING_STATIONS - separation),
+            "meeting_times_short_long": (short_time, long_time),
+            "tie": short_time == long_time,
+        })
+    s5_geometries = tuple(
+        meeting_geometry(pair)
+        for pair in lawful_pairs() if cyclic_separation(pair) == 5
+    )
+    exact = (
+        tuple(
+            row["meeting_times_short_long"] for row in rows
+        ) == ((1, 5), (1, 5), (2, 4), (2, 4), (3, 3))
+        and tuple(
+            row["separation"] for row in rows if row["tie"]
+        ) == (5,)
+        and len(s5_geometries) == 11
+        and all(
+            row["center_sets_source_swap_reflection_symmetric"]
+            and row["both_A_tokens_on_center_union"]
+            and not row["A_row_source_swap_reflection_symmetric"]
+            and not row["token_collision"]
+            for row in s5_geometries
+        )
+    )
+    return {
+        "verdict": "PASS" if exact else "FAIL",
+        "per_separation_table": tuple(rows),
+        "unique_tie_separation": 5,
+        "theorem":
+            "On C11, the two radius-one arc meetings occur at "
+            "(ceil(s/2),ceil((11-s)/2)); the times tie at (3,3) iff s=5.",
+        "meet_symmetry":
+            "For every s=5 rotation/orientation, each auxiliary arc-center "
+            "set is source-swap-reflection symmetric.  Both landed A tokens "
+            "are on their three-station union at tick 3, although the actual "
+            "two-token A row itself is not reflection symmetric.",
+        "all_11_s5_geometries": s5_geometries,
+        "pass": exact,
+    }
+
+
+def configuration_sha256(
+    key: Key,
+    state: int,
+    geometry: dict[str, object],
+) -> str:
+    return digest((
+        key,
+        state_packed_sha256(state),
+        geometry["A_token_positions_at_meet"],
+        geometry["B_token_positions_at_meet"],
+        geometry["meeting_center_union"],
+    ))
+
+
+def meet_prefix_pattern(state: int) -> tuple[str, str]:
+    return (
+        block_sha256(state, SOURCE_BLOCK),
+        block_sha256(state, BANK0_BLOCK),
+    )
+
+
+def property_p(state: int) -> bool:
+    return meet_prefix_pattern(state) in EXPECTED_MEET_PREFIX_PATTERNS
+
+
+def certificate_a_split(
+    fixtures: dict[str, object],
+    dynamics: dict[str, object],
+) -> dict[str, object]:
+    keys = dynamics["keys"]
+    meet_states = dynamics["meet_states"]
+    exact_hits = dynamics["exact_hits"]
+    target = fixtures["target"]
+    assert isinstance(keys, tuple)
+    assert isinstance(meet_states, tuple)
+    assert isinstance(exact_hits, tuple)
+    assert isinstance(target, int)
+    hit_ticks = {
+        key: tuple(
+            tick for tick, hit_key in exact_hits if hit_key == key
+        )
+        for key in keys
+    }
+    rows = []
+    for key, state in zip(keys, meet_states):
+        event, pair = key
+        geometry = meeting_geometry(pair)
+        block_rows = tuple({
+            "block": name,
+            "range": block,
+            "hamming_weight": block_value(state, block).bit_count(),
+            "sha256": block_sha256(state, block),
+        } for name, block in REGISTER_BLOCKS)
+        ticks = hit_ticks[key]
+        rows.append({
+            "key": key,
+            "event_index_embedded": event,
+            "fixed_pair_word": pair,
+            "origin_member": 0 in pair,
+            "cyclic_separation": cyclic_separation(pair),
+            "meet_controller_tick": 3,
+            "meeting_centers": geometry["meeting_center_union"],
+            "A_token_positions": geometry["A_token_positions_at_meet"],
+            "B_token_positions": geometry["B_token_positions_at_meet"],
+            "orientation": geometry[
+                "short_arc_direction_from_sorted_left"
+            ],
+            "sorted_gap_parity": (pair[1] - pair[0]) % 2,
+            "data_state_hamming_weight": state.bit_count(),
+            "data_state_packed_sha256": state_packed_sha256(state),
+            "register_blocks": block_rows,
+            "meet_prefix_pattern": meet_prefix_pattern(state),
+            "property_P": property_p(state),
+            "configuration_sha256":
+                configuration_sha256(key, state, geometry),
+            "bounded_fate": (
+                "REACHES_EXACT_SSTAR"
+                if ticks else "NO_EXACT_SSTAR_WITHIN_BOUND"
+            ),
+            "exact_Sstar_hit_controller_ticks": ticks,
+            "forward_bound_from_meet_controller_ticks":
+                SSTAR_BOUND_CONTROLLER_TICKS - 3,
+        })
+    reaching = tuple(
+        row["key"] for row in rows
+        if row["bounded_fate"] == "REACHES_EXACT_SSTAR"
+    )
+    nonreaching = tuple(
+        row["key"] for row in rows
+        if row["bounded_fate"] == "NO_EXACT_SSTAR_WITHIN_BOUND"
+    )
+    exact = (
+        fixtures["public"]["pass"]
+        and dynamics["public"]["pass"]
+        and len(rows) == 44
+        and reaching == EXPECTED_REACHING_KEYS
+        and len(nonreaching) == 35
+        and tuple(exact_hits) == EXPECTED_CONTROLLER_TICK_HITS
+        and all(row["cyclic_separation"] == 5 for row in rows)
+        and all(
+            row["forward_bound_from_meet_controller_ticks"]
+            == SSTAR_BOUND_CONTROLLER_TICKS - 3
+            for row in rows
+        )
+    )
+    return {
+        "verdict": "PASS" if exact else "FAIL",
+        "target": {
+            "name": "exact Cycle-830 S*",
+            "state_bits": STATE_BITS,
+            "hamming_weight": target.bit_count(),
+            "packed_sha256": state_packed_sha256(target),
+            "bit_tuple_sha256": state_bit_tuple_sha256(target),
+        },
+        "meet_configuration_definition":
+            "(embedded event index, fixed pair word, 5815-bit data state, "
+            "A/B controller rails, auxiliary arc-center sets) at tick 3",
+        "bounded_search":
+            "Every completed controller tick from the tick-3 meet through "
+            "tick 162129; exact 5815-bit equality, never weight alone.",
+        "rows_44": tuple(rows),
+        "reaching_keys": reaching,
+        "reaching_count": len(reaching),
+        "nonreaching_keys": nonreaching,
+        "nonreaching_count": len(nonreaching),
+        "partition": f"{len(reaching)}-vs-{len(nonreaching)}",
+        "pass": exact,
+    }
+
+
+def structural_candidate_row(
+    name: str,
+    values: tuple[object, ...],
+    labels: tuple[bool, ...],
+    statement: str,
+) -> dict[str, object]:
+    positive = {
+        compact(value) for value, label in zip(values, labels) if label
+    }
+    negative = {
+        compact(value) for value, label in zip(values, labels) if not label
+    }
+    overlap = tuple(sorted(positive & negative))
+    return {
+        "candidate": name,
+        "statement": statement,
+        "positive_unique_value_count": len(positive),
+        "negative_unique_value_count": len(negative),
+        "positive_negative_overlap_count": len(overlap),
+        "overlap_sha256": digest(overlap),
+        "values_separate_classes_exactly": not overlap,
+    }
+
+
+def certificate_b_discriminator(
+    certificate_a: dict[str, object],
+    meeting: dict[str, object],
+) -> dict[str, object]:
+    rows = certificate_a["rows_44"]
+    assert isinstance(rows, tuple)
+    labels = tuple(
+        row["bounded_fate"] == "REACHES_EXACT_SSTAR" for row in rows
+    )
+    candidates = (
+        structural_candidate_row(
+            "event_index",
+            tuple(row["event_index_embedded"] for row in rows),
+            labels,
+            "embedded event index alone",
+        ),
+        structural_candidate_row(
+            "origin_membership",
+            tuple(row["origin_member"] for row in rows),
+            labels,
+            "fixed pair-word origin membership alone",
+        ),
+        structural_candidate_row(
+            "source_register_block",
+            tuple(row["register_blocks"][0]["sha256"] for row in rows),
+            labels,
+            "exact 41-bit source-register contents",
+        ),
+        structural_candidate_row(
+            "bank0_register_block",
+            tuple(row["register_blocks"][1]["sha256"] for row in rows),
+            labels,
+            "exact 131-bit bank-0 register contents",
+        ),
+        structural_candidate_row(
+            "bank1_register_block",
+            tuple(row["register_blocks"][2]["sha256"] for row in rows),
+            labels,
+            "exact 131-bit bank-1 register contents",
+        ),
+        structural_candidate_row(
+            "link0_register_block",
+            tuple(row["register_blocks"][3]["sha256"] for row in rows),
+            labels,
+            "exact 382-bit link-0 register contents",
+        ),
+        structural_candidate_row(
+            "source_plus_bank0_register_blocks",
+            tuple(row["meet_prefix_pattern"] for row in rows),
+            labels,
+            "joint exact contents of source and bank-0 at the meet",
+        ),
+        structural_candidate_row(
+            "register_block_weight_tuple",
+            tuple(tuple(
+                block["hamming_weight"]
+                for block in row["register_blocks"]
+            ) for row in rows),
+            labels,
+            "source/bank0/bank1/link0 Hamming-weight tuple",
+        ),
+        structural_candidate_row(
+            "token_charge_row_placement",
+            tuple((
+                row["A_token_positions"],
+                row["B_token_positions"],
+                row["meeting_centers"],
+            ) for row in rows),
+            labels,
+            "A/B rail placement relative to the meet centers",
+        ),
+        structural_candidate_row(
+            "parity_orientation",
+            tuple((
+                row["orientation"],
+                row["sorted_gap_parity"],
+                sum(row["meeting_centers"]) % 2,
+            ) for row in rows),
+            labels,
+            "short-arc orientation and pair/center parity data",
+        ),
+    )
+    property_keys = tuple(
+        row["key"] for row in rows if row["property_P"]
+    )
+    reaching_keys = tuple(
+        row["key"] for row, label in zip(rows, labels) if label
+    )
+    unified_predicate_keys = tuple(
+        row["key"] for row in rows
+        if (
+            row["event_index_embedded"] == 0
+            and not row["origin_member"]
+            and row["cyclic_separation"] == 5
+        )
+    )
+    observed_patterns = tuple(sorted({
+        row["meet_prefix_pattern"] for row in rows if row["property_P"]
+    }))
+    expected_patterns = tuple(sorted(EXPECTED_MEET_PREFIX_PATTERNS))
+    candidate_map = {
+        row["candidate"]: row for row in candidates
+    }
+    exact = (
+        certificate_a["pass"]
+        and meeting["pass"]
+        and property_keys == reaching_keys == EXPECTED_REACHING_KEYS
+        and unified_predicate_keys == property_keys
+        and observed_patterns == expected_patterns
+        and candidate_map[
+            "source_plus_bank0_register_blocks"
+        ]["values_separate_classes_exactly"]
+        and not candidate_map[
+            "source_register_block"
+        ]["values_separate_classes_exactly"]
+        and not candidate_map[
+            "bank0_register_block"
+        ]["values_separate_classes_exactly"]
+        and not candidate_map[
+            "register_block_weight_tuple"
+        ]["values_separate_classes_exactly"]
+    )
+    return {
+        "verdict": "LINK_FOUND" if exact else "OPEN",
+        "property_P":
+            "At the tick-3 meet, the ordered (41-bit source register, "
+            "131-bit bank-0 register) content has one of the four literal "
+            "SHA-pinned patterns in EXPECTED_MEET_PREFIX_PATTERNS.",
+        "property_P_pattern_count": len(EXPECTED_MEET_PREFIX_PATTERNS),
+        "expected_patterns": EXPECTED_MEET_PREFIX_PATTERNS,
+        "observed_property_patterns": observed_patterns,
+        "candidate_table": candidates,
+        "minimality_within_tested_block_family":
+            "The joint source+bank0 content is exact; source alone, bank0 "
+            "alone, every other individual active block, their weight tuple, "
+            "rail placement, and parity/orientation all overlap the 35.",
+        "both_directions": {
+            "P_implies_bounded_Sstar_reach_on_44":
+                property_keys == reaching_keys,
+            "bounded_Sstar_reach_implies_P_on_44":
+                reaching_keys == property_keys,
+            "property_keys": property_keys,
+            "reaching_keys": reaching_keys,
+        },
+        "mechanical_chain_on_44": {
+            "meeting_theorem_unique_3_3_tie": meeting["pass"],
+            "all_s5_meets_have_center_set_symmetry": all(
+                geometry[
+                    "center_sets_source_swap_reflection_symmetric"
+                ]
+                for geometry in meeting["all_11_s5_geometries"]
+            ),
+            "unified_entry_predicate_keys": unified_predicate_keys,
+            "unified_predicate_iff_P":
+                unified_predicate_keys == property_keys,
+            "P_iff_bounded_funnel_reach":
+                property_keys == reaching_keys,
+        },
+        "causal_boundary":
+            "P is a finite exact meet-register discriminator and its "
+            "sufficiency is established by the complete bounded evolution.  "
+            "It is not yet a local update-rule theorem or an unbounded basin "
+            "necessity theorem.",
+        "pass": exact,
+    }
+
+
 def main() -> int:
-    """The remaining certificates are added in the next incremental commit."""
+    """Run the first two Cycle-840 certificates."""
     controls = source_controls()
     fixtures = decode_cycle830_fixtures()
     dynamics = evolve_s5_to_sstar_bound(fixtures)
+    meeting = meeting_theorem_certificate()
+    certificate_a = certificate_a_split(fixtures, dynamics)
+    certificate_b = certificate_b_discriminator(certificate_a, meeting)
     result = {
         "cycle": 840,
-        "increment": "A_B_DYNAMICS_SCAFFOLD",
+        "increment": "CERTIFICATES_A_B",
         "source_controls": controls["pass"],
         "fixtures": fixtures["public"]["pass"],
         "s5_dynamics": dynamics["public"]["pass"],
+        "meeting_theorem": meeting["pass"],
+        "partition": certificate_a["partition"],
+        "discriminator": certificate_b["verdict"],
         "pass": (
             controls["pass"]
             and fixtures["public"]["pass"]
             and dynamics["public"]["pass"]
+            and meeting["pass"]
+            and certificate_a["pass"]
+            and certificate_b["pass"]
         ),
     }
     sys.stdout.write(compact(result) + "\n")

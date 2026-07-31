@@ -886,6 +886,13 @@ def cycle_certificate(
     all_pairwise_shifted = all(
         row["time_shifted_copies"] for row in shift_rows
     )
+    all_pairwise_zero_offset = (
+        all_pairwise_shifted
+        and all(
+            row["exact_full_trajectory_offsets"] == (0,)
+            for row in shift_rows
+        )
+    )
     result = {
         "key_index": tuple(enumerate(K3_CYCLE_KEYS)),
         "period": K3_CYCLE_PERIOD,
@@ -895,6 +902,8 @@ def cycle_certificate(
         ),
         "pairwise_shift_map": tuple(shift_rows),
         "all_pairwise_time_shifted_copies": all_pairwise_shifted,
+        "all_pairwise_zero_offset_identical":
+            all_pairwise_zero_offset,
         "one_orbit_under_time_plus_position_family":
             all_pairwise_shifted,
         "trajectory_family_sha256": digest(tuple(
@@ -1016,7 +1025,11 @@ def choose_verdict(
         )
     elif cycles["all_pairwise_time_shifted_copies"]:
         verdict = "STRATUM_STRUCTURE_FOUND"
-        named_pattern = "K3_5952_CYCLES_ONE_EXACT_TIME_SHIFT_ORBIT"
+        named_pattern = (
+            "K3_5952_CYCLES_IDENTICAL_IN_PHASE_OFFSET_0"
+            if cycles["all_pairwise_zero_offset_identical"]
+            else "K3_5952_CYCLES_ONE_EXACT_TIME_SHIFT_ORBIT"
+        )
     elif transient["same_time_any"]:
         verdict = "STRATUM_STRUCTURE_FOUND"
         named_pattern = "K3_PARTIAL_SAME_TIME_FULL_STATE_COINCIDENCE"
@@ -1038,6 +1051,8 @@ def choose_verdict(
         "k3_same_time_any": transient["same_time_any"],
         "k3_cycles_one_shift_orbit":
             cycles["all_pairwise_time_shifted_copies"],
+        "k3_cycles_identical_in_phase_offset_0":
+            cycles["all_pairwise_zero_offset_identical"],
         "k2_Sstar_exact_k3_visit_count":
             cross_stratum["exact_Sstar_visit_count"],
         "pass": verdict in {

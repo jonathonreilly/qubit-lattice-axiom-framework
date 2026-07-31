@@ -133,12 +133,13 @@ P_DEFINITION = {
     "property": (
         "the Cycle-817/823 actual constructor preimages have fixed "
         "source/finalizer support [0,172), bank support [0,131), pair "
-        "support split as [0,131)/[131,262)/[262,453), cross predecessor "
-        "offset 1 in [0,131), and a b-independent finalizer; the 8b-5 row "
-        "grammar uses bank indices 0..b-1 and edge indices 0..b-2; under "
-        "B_i=41+131i and L_i(C)=41+131C+382i every mapped operand is the "
-        "corresponding exact zone translation, hence is distinct and lies "
-        "in [0,D(C)) with D(C)=41+131C+382(C-1)"
+        "support split as [0,131)/[131,262)/[262,453), fixed live cross "
+        "predecessor offset p in [0,131), and a b-independent finalizer; "
+        "the 8b-5 row grammar uses bank indices 0..b-1 and edge indices "
+        "0..b-2; under B_i=41+131i and L_i(C)=41+131C+382i every mapped "
+        "operand is the corresponding exact zone translation, hence is "
+        "distinct and lies in [0,D(C)) with "
+        "D(C)=41+131C+382(C-1)"
     ),
     "equivalence_to_gap": (
         "P(b) is exactly H_TEMPLATE_PREIMAGE_ZONE_CLASS on the actual "
@@ -619,7 +620,7 @@ def decide_p_instance(
     }
 
 
-AFFINE_VARIABLES = ("constant", "b", "C", "i", "u", "s")
+AFFINE_VARIABLES = ("constant", "b", "C", "i", "u", "s", "p")
 
 
 def affine(
@@ -630,15 +631,19 @@ def affine(
     i: int = 0,
     u: int = 0,
     s: int = 0,
+    p: int = 0,
 ) -> tuple[int, ...]:
-    """Canonical coefficients of an affine expression in b,C,i,u,s."""
-    return (constant, b, C, i, u, s)
+    """Canonical coefficients of an affine expression in b,C,i,u,s,p."""
+    return (constant, b, C, i, u, s, p)
 
 
 def affine_add(*terms: tuple[int, ...]) -> tuple[int, ...]:
     if any(len(term) != len(AFFINE_VARIABLES) for term in terms):
         raise AssertionError("noncanonical affine term")
-    return tuple(sum(term[column] for term in terms) for column in range(6))
+    return tuple(
+        sum(term[column] for term in terms)
+        for column in range(len(AFFINE_VARIABLES))
+    )
 
 
 def affine_scale(factor: int, term: tuple[int, ...]) -> tuple[int, ...]:
@@ -762,11 +767,12 @@ def symbolic_identity_certificate() -> dict[str, object]:
             ),
         ),
         affine_identity(
-            "cross target: B_(i+1)+1",
-            affine_add(bank_i_plus_one, affine(1)),
+            "cross target: B_(i+1)+p",
+            affine_add(bank_i_plus_one, affine(p=1)),
             affine(
-                SOURCE_WIDTH + BANK_WIDTH + 1,
+                SOURCE_WIDTH + BANK_WIDTH,
                 i=BANK_WIDTH,
+                p=1,
             ),
         ),
     )
@@ -807,10 +813,9 @@ def symbolic_identity_certificate() -> dict[str, object]:
         and BANK_WIDTH > 0
         and LINK_AUX_WIDTH > 0
         and LINK_WIDTH == 2 * LINK_AUX_WIDTH
-        and 0 <= CROSS_PREDECESSOR_OFFSET < BANK_WIDTH
     )
     return {
-        "coefficient_ring": "Z[b,C,i,u,s], affine subspace",
+        "coefficient_ring": "Z[b,C,i,u,s,p], affine subspace",
         "identities": identities,
         "index_and_range_slack_identities": slack_identities,
         "nonnegative_witness_argument": (
@@ -826,9 +831,12 @@ def symbolic_identity_certificate() -> dict[str, object]:
             "left-bank, right-bank, and selected link-half intervals. Hence "
             "distinct operands remain distinct; exact arity is unchanged."
         ),
-        "cross_offset": CROSS_PREDECESSOR_OFFSET,
-        "cross_offset_in_bank": (
-            0 <= CROSS_PREDECESSOR_OFFSET < BANK_WIDTH
+        "cross_offset_symbol": (
+            "p := int(K.A.CELLS[0]['pred'][1])"
+        ),
+        "cross_offset_domain": (
+            "0<=p<131 from Cycle-823's actual-object b=3 base lemma; "
+            "p is the same constructor constant in Cycle 740"
         ),
         "exact": exact,
     }
@@ -1041,6 +1049,12 @@ def certificate_a(
         ),
         "actual_object_result": "PASS",
         "result_source": CYCLE823_CONTEXT_FACT["source"],
+        "result_reexecuted_here": False,
+        "result_role": (
+            "explicit prior proved result supplied by the task; Cycle 827 "
+            "proves its uniform all-b transport, not this base result"
+        ),
+        "live_cross_offset_boundary_from_result": "0<=p<131",
         "direct_object_decider_AST_exact": direct_823_ast["exact"],
         "logical_use": (
             "At b=3 every constructor family occurs, so Cycle 823's "
@@ -1055,7 +1069,7 @@ def certificate_a(
         and actual_base_lemma["direct_object_decider_AST_exact"]
         and 3 in CYCLE823_CONTEXT_FACT["actual_object_discharge_pass_b"]
     )
-    exact = (
+    actual_object_formalization_exact = (
         h817 == h823
         and h817["name"] == "H_TEMPLATE_PREIMAGE_ZONE_CLASS"
         and len(structural) == 7
@@ -1065,14 +1079,20 @@ def certificate_a(
         and geometry_exact
         and "fixed in b" in fixed_uniformity["predicate"]
         and "bank-count-independent" in fixed_uniformity["predicate"]
-        and literal["exact"]
-        and zones["exact"]
         and constructor_ast["exact"]
         and mapper_ast["exact"]
         and direct_823_ast["exact"]
         and decision_823_ast["exact"]
         and actual_base_lemma["exact"]
+    )
+    diagnostic_reproduction_exact = (
+        literal["exact"]
+        and zones["exact"]
         and all(row["exact"] for row in reproduction.values())
+    )
+    exact = (
+        actual_object_formalization_exact
+        and diagnostic_reproduction_exact
     )
     return {
         "certificate_name": "A_PATTERN_FORMALIZATION",
@@ -1093,12 +1113,16 @@ def certificate_a(
         "Cycle823_actual_object_decider_AST": direct_823_ast,
         "Cycle823_b3_b10_and_b11_driver_AST": decision_823_ast,
         "Cycle823_actual_object_base_lemma": actual_base_lemma,
+        "actual_object_formalization_exact_without_frozen_diagnostic":
+            actual_object_formalization_exact,
         "reproduction_capacity": 12,
         "reproduced_b3_through_b11": compact_reproduction,
         "reproduced_b3_through_b10_outcomes": all(
             reproduction[b]["exact"] for b in range(3, 11)
         ),
         "reproduced_b11_pattern": reproduction[11]["exact"],
+        "frozen_diagnostic_reproduction_exact":
+            diagnostic_reproduction_exact,
         "logical_boundary": (
             "The frozen signatures extracted from Cycle 823 reproduce its "
             "b=3..11 pattern but are diagnostic, not the actual-object "
@@ -1212,7 +1236,9 @@ def certificate_b(
             ),
         }
     proof_exact = (
-        cert_a["exact"]
+        cert_a[
+            "actual_object_formalization_exact_without_frozen_diagnostic"
+        ]
         and all(row["exact"] for row in parameterized_ast.values())
         and symbolic["exact"]
         and finalizer["exact"]
@@ -1232,12 +1258,19 @@ def certificate_b(
         "premises": (
             "integer b>=3",
             "integer C>=b",
+            "fixed live constructor predecessor p with 0<=p<131, supplied "
+            "by Cycle-823 v2's actual-object b=3 discharge",
             "Cycle-817 P_AFFINE_TABLE: B_i=41+131i and "
             "L_i(C)=41+131C+382i",
             "Cycle-823 v2's actual-object b=3 discharge",
             "Cycle-817 H_FIXED_TEMPLATE_AND_FINALIZER_UNIFORMITY",
         ),
-        "no_new_premise_beyond_817": True,
+        "no_new_structural_condition_beyond_817": True,
+        "prior_result_boundary": (
+            "Cycle 823's actual-object b=3 PASS and its live p-domain are "
+            "supplied prior results from the task context and are not "
+            "reexecuted by this text/AST-only runner."
+        ),
         "Cycle740_parameterized_AST": parameterized_ast,
         "symbolic_derivation": symbolic,
         "actual_object_base_lemma": actual_base,
@@ -1246,7 +1279,7 @@ def certificate_b(
         "finalizer_all_b_independence": finalizer,
         "accessible_machine_checks_b3_through_b14": accessible_rows,
         "universal_closure_argument": (
-            "The coefficient identities are exact in Z[b,C,i,u,s], not "
+            "The coefficient identities are exact in Z[b,C,i,u,s,p], not "
             "sample interpolation. The only inequalities reduce to the "
             "displayed sums of nonnegative domain slacks. Cycle 823's live "
             "b=3 discharge types every actual family once; Cycle 817's "
@@ -1255,7 +1288,8 @@ def certificate_b(
             "for every integer b>=3 and every C>=b."
         ),
         "universal_proof_exact_without_signature_diagnostic": proof_exact,
-        "P_holds_for_all_integer_b_ge_3_and_C_ge_b": exact,
+        "P_holds_for_all_integer_b_ge_3_and_C_ge_b": proof_exact,
+        "corroborating_diagnostics_and_accessible_checks_exact": exact,
         "exact": exact,
     }
 
@@ -1297,8 +1331,12 @@ def certificate_c(
         ),
     )
     exact = (
-        cert_a["exact"]
-        and cert_b["exact"]
+        cert_a[
+            "actual_object_formalization_exact_without_frozen_diagnostic"
+        ]
+        and cert_b[
+            "universal_proof_exact_without_signature_diagnostic"
+        ]
         and bridge_ast["exact"]
         and transfer_ast["exact"]
         and statement_ast["exact"]
@@ -1319,14 +1357,28 @@ def certificate_c(
             "the corrected seven Cycle-817 structural conditions",
             "H_SECTOR_INPUT",
         ),
+        "unconditionality_scope": (
+            "unconditional with respect to "
+            "H_TEMPLATE_PREIMAGE_ZONE_CLASS; the corrected seven Cycle-817 "
+            "conditions and H_SECTOR_INPUT remain theorem premises"
+        ),
         "H_TEMPLATE_PREIMAGE_ZONE_CLASS_remaining": False if exact else True,
         "sector_theorem_scope": (
             "ALL integer b>=3 and every C>=b satisfying the seven "
             "Cycle-817 structural conditions and H_SECTOR_INPUT"
         ),
         "anchors_lane": "CLOSES" if exact else "REMAINS_OPEN",
+        "runner_conclusion": (
+            "H_TEMPLATE_PREIMAGE_ZONE_CLASS_DISCHARGED_FOR_ALL_B_GE_3"
+            if exact else
+            "H_TEMPLATE_PREIMAGE_ZONE_CLASS_GENERAL_B_GAP_REMAINS"
+        ),
         "verdict": (
             "GENERAL_B_DISCHARGED" if exact else "GENERAL_B_GAP_REMAINS"
+        ),
+        "audit_boundary": (
+            "author-side runner conclusion; no independent audit verdict or "
+            "effective retained status is asserted"
         ),
         "exact": exact,
     }
@@ -1490,7 +1542,7 @@ def certificate_e(
     first_bytes = stable_json_bytes(first_core)
     second_bytes = stable_json_bytes(second_core)
     deterministic = first_bytes == second_bytes
-    base_exact = (
+    static_exact = (
         source_inputs["exact"]
         and paths_exact
         and BLOCKLIST == (
@@ -1502,9 +1554,9 @@ def certificate_e(
         and not loaded_blocklisted
         and deterministic
         and AUDIT_TIMEOUT_SEC < 1500
-        and elapsed < AUDIT_TIMEOUT_SEC
         and STDOUT_LIMIT_BYTES == 200 * 1024
     )
+    base_exact = static_exact and elapsed < AUDIT_TIMEOUT_SEC
     return {
         "certificate_name": "E_PROVENANCE_AND_EXECUTION_CONTROLS",
         "AUDIT_INPUT_PATHS_literal": AUDIT_INPUT_PATHS,
@@ -1525,11 +1577,22 @@ def certificate_e(
         "blocked_dynamic_calls": dynamic_calls,
         "deterministic_core_byte_identical_on_repeat": deterministic,
         "deterministic_core_sha256": sha256(first_bytes).hexdigest(),
-        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
-        "runtime_under_limit": elapsed < AUDIT_TIMEOUT_SEC,
+        "determinism_scope": (
+            "scientific certificates A-D only; volatile runtime observation "
+            "and report hash are intentionally excluded"
+        ),
+        "runtime_budget_seconds": AUDIT_TIMEOUT_SEC,
+        "runtime_budget_is_observational_not_enforced": True,
+        "observed_runtime_seconds": round(elapsed, 6),
+        "runtime_observation_scope": (
+            "updated after one complete dry render of the final stdout "
+            "payload; final emission itself is not timed internally"
+        ),
+        "observed_runtime_under_budget": elapsed < AUDIT_TIMEOUT_SEC,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "observed_stdout_bytes": 0,
         "observed_stdout_under_200KB": True,
+        "_static_exact": static_exact,
         "_base_exact": base_exact,
         "exact": base_exact,
     }
@@ -1559,8 +1622,8 @@ def main() -> int:
         ),
         "C_GENERAL_B_DISCHARGED": cert_c["exact"],
         "D_B3_B10_REPRODUCTION_AND_NEGATIVE_CONTROL": cert_d["exact"],
-        "E_SHA_BLOCKLIST_PATHS_DETERMINISM": cert_e["exact"],
-        "RUNTIME_UNDER_1500_SECONDS": elapsed < 1500,
+        "E_SHA_BLOCKLIST_PATHS_CORE_DETERMINISM": cert_e["exact"],
+        "OBSERVED_RUNTIME_UNDER_1500_SECONDS": elapsed < 1500,
     }
     report = {
         "cycle": 827,
@@ -1579,72 +1642,99 @@ def main() -> int:
         "P_formalization": P_DEFINITION,
         "general_b_hypothesis_discharged": cert_c["exact"],
         "anchors_lane": cert_c["anchors_lane"],
+        "runner_conclusion": cert_c["runner_conclusion"],
         "verdict": cert_c["verdict"],
         "runtime_seconds": round(elapsed, 6),
         "runner_exact": all(checks.values()),
         "terminal": (
-            "CYCLE827_GENERAL_B_DISCHARGE_PASS"
+            "CYCLE827_TEMPLATE_PREIMAGE_ZONE_GENERAL_B_DISCHARGE_PASS"
             if all(checks.values()) else
-            "CYCLE827_GENERAL_B_DISCHARGE_FAIL"
+            "CYCLE827_TEMPLATE_PREIMAGE_ZONE_GENERAL_B_DISCHARGE_FAIL"
         ),
     }
-    lines = [
-        f"{'PASS' if passed else 'FAIL'} {label}"
-        for label, passed in sorted(checks.items())
-    ]
-    lines.extend((
+    summary_suffix = (
         "P(b) " + P_DEFINITION["property"],
         "PROOF_ROUTE SYMBOLIC_EXACT_AFFINE_IDENTITY "
-        "over Z[b,C,i,u,s]",
+        "over Z[b,C,i,u,s,p]",
         "REPRODUCTION b=3..10 PASS; PATTERN b=11 PASS",
         "ACCESSIBLE_DERIVATION_CHECK b=3..14 PASS",
         "NEGATIVE_CONTROL "
         + ("REJECTED" if cert_d["exact"] else "MISSED"),
         "VERDICT " + str(cert_c["verdict"]),
-    ))
-    observed_stdout_bytes = 0
-    output = ""
-    for _iteration in range(8):
-        cert_e["observed_stdout_bytes"] = observed_stdout_bytes
-        cert_e["observed_stdout_under_200KB"] = (
-            observed_stdout_bytes < STDOUT_LIMIT_BYTES
-        )
-        cert_e["exact"] = (
-            cert_e["_base_exact"]
-            and cert_e["observed_stdout_under_200KB"]
-        )
-        checks["E_SHA_BLOCKLIST_PATHS_DETERMINISM"] = cert_e["exact"]
-        report["checks_passed"] = sum(checks.values())
-        report["checks_failed"] = sum(
-            not value for value in checks.values()
-        )
-        report["runner_exact"] = all(checks.values())
-        report["terminal"] = (
-            "CYCLE827_GENERAL_B_DISCHARGE_PASS"
-            if report["runner_exact"] else
-            "CYCLE827_GENERAL_B_DISCHARGE_FAIL"
-        )
-        report.pop("report_sha256", None)
-        report["report_sha256"] = stable_digest(report)
-        final_json = json.dumps(
-            report, sort_keys=True, separators=(",", ":"), default=str
-        )
-        bound = (
-            f"STDOUT_BOUND observed_bytes={observed_stdout_bytes} "
-            f"limit_bytes={STDOUT_LIMIT_BYTES}"
-        )
-        output = "\n".join(lines + [bound, final_json]) + "\n"
-        new_size = len(output.encode())
-        if new_size == observed_stdout_bytes:
-            break
-        observed_stdout_bytes = new_size
+        "SCOPE " + str(cert_c["unconditionality_scope"]),
+    )
+
+    def render_output() -> str:
+        observed_stdout_bytes = 0
+        output = ""
+        for _iteration in range(8):
+            cert_e["observed_stdout_bytes"] = observed_stdout_bytes
+            cert_e["observed_stdout_under_200KB"] = (
+                observed_stdout_bytes < STDOUT_LIMIT_BYTES
+            )
+            cert_e["exact"] = (
+                cert_e["_base_exact"]
+                and cert_e["observed_stdout_under_200KB"]
+            )
+            checks[
+                "E_SHA_BLOCKLIST_PATHS_CORE_DETERMINISM"
+            ] = cert_e["exact"]
+            report["checks_passed"] = sum(checks.values())
+            report["checks_failed"] = sum(
+                not value for value in checks.values()
+            )
+            report["runner_exact"] = all(checks.values())
+            report["terminal"] = (
+                "CYCLE827_TEMPLATE_PREIMAGE_ZONE_GENERAL_B_DISCHARGE_PASS"
+                if report["runner_exact"] else
+                "CYCLE827_TEMPLATE_PREIMAGE_ZONE_GENERAL_B_DISCHARGE_FAIL"
+            )
+            report.pop("report_sha256", None)
+            report["report_sha256"] = stable_digest(report)
+            final_json = json.dumps(
+                report,
+                sort_keys=True,
+                separators=(",", ":"),
+                default=str,
+            )
+            lines = [
+                f"{'PASS' if passed else 'FAIL'} {label}"
+                for label, passed in sorted(checks.items())
+            ]
+            bound = (
+                f"STDOUT_BOUND observed_bytes={observed_stdout_bytes} "
+                f"limit_bytes={STDOUT_LIMIT_BYTES}"
+            )
+            output = "\n".join(
+                lines + list(summary_suffix) + [bound, final_json]
+            ) + "\n"
+            new_size = len(output.encode())
+            if new_size == observed_stdout_bytes:
+                break
+            observed_stdout_bytes = new_size
+        return output
+
+    # The second render carries a runtime observation made only after one
+    # complete construction/serialization of the intended stdout payload.
+    render_output()
+    elapsed = perf_counter() - started
+    cert_e["observed_runtime_seconds"] = round(elapsed, 6)
+    cert_e["observed_runtime_under_budget"] = elapsed < AUDIT_TIMEOUT_SEC
+    cert_e["_base_exact"] = (
+        cert_e["_static_exact"]
+        and cert_e["observed_runtime_under_budget"]
+    )
+    checks["OBSERVED_RUNTIME_UNDER_1500_SECONDS"] = elapsed < 1500
+    report["runtime_seconds"] = round(elapsed, 6)
+    output = render_output()
     output_bytes = output.encode()
     if len(output_bytes) >= STDOUT_LIMIT_BYTES:
         print(json.dumps({
             "runner_exact": False,
             "stdout_bytes": len(output_bytes),
             "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
-            "terminal": "CYCLE827_GENERAL_B_DISCHARGE_FAIL",
+            "terminal":
+                "CYCLE827_TEMPLATE_PREIMAGE_ZONE_GENERAL_B_DISCHARGE_FAIL",
         }, sort_keys=True, separators=(",", ":")))
         return 1
     sys.stdout.write(output)

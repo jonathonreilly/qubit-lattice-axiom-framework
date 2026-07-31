@@ -1,0 +1,30 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR22-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle842_local_causal_theorem_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle842_theorem_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 842,
+  "files": {
+    "docs/LOCAL_CAUSAL_THEOREM_CYCLE842_BOUNDED_THEOREM_NOTE_2026-07-28.md": "a6be98df34d5276ddab55d2a653f3d4e2c2506018ef05d7e6dde96f623d6cd6f",
+    "logs/runner-cache/frontier_cycle842_local_causal_theorem_2026_07_28.txt": "3feecd335baab3ef4ef2ce9215edd78f662f98bebf3ea1fadf894c0520fbe55d",
+    "logs/runner-cache/frontier_cycle842_theorem_independent_check_2026_07_28.txt": "97fecd7c4e38e995322f1dbf66800d4afef63826cb74af2bac3667830d088649",
+    "scripts/frontier_cycle842_local_causal_theorem_2026_07_28.py": "65ced87db73db177c561e0dd293ae88963c15929d820f6dd99417a27ba647def",
+    "scripts/frontier_cycle842_theorem_independent_check_2026_07_28.py": "46996455051cd801aba7b6c59cfa12279d831ebd3245bbf34f87d3f3e11c8632"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "the bounded theorem: every predicate-marked meet reaches S* within B=162126; all 35 controls do not (checker-verified)",
+    "wire dynamics exact (40/81/105 all writable); predicate conservation fails @tick 6; Hamming monotonicity fails @tick 4 (counterexamples reproduced)",
+    "the local causal link stays OPEN, class-bounded (four invariant classes excluded incl. the checker's two)"
+  ]
+}

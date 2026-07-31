@@ -473,10 +473,13 @@ def selection_bits(
         "exact_identity": (
             f"log2({count})=log2({family_count})+log2({origins})"
         ),
-        "total_selection_bits": round(total_bits, 12),
-        "family_choice_bits": round(family_bits, 12),
-        "within_family_allocation_bits": round(origin_bits, 12),
+        "total_selection_bits_decimal_approx": round(total_bits, 15),
+        "family_choice_bits_decimal_approx": round(family_bits, 15),
+        "within_family_allocation_bits_decimal_approx": round(origin_bits, 15),
         "minimum_fixed_width_code_bits": ceil(total_bits),
+        "unused_codewords_in_dense_fixed_width_code": (
+            (1 << ceil(total_bits)) - count
+        ),
         "identity_exact": bool(
             count == family_count * origins
             and isclose(total_bits, family_bits + origin_bits, abs_tol=1e-14)
@@ -533,7 +536,8 @@ def bit_accounting(
         rows.append(row)
     finding = (
         "Only the setup selection is input: log2(748)=log2(68)+log2(11) "
-        "=6.087462841250+3.459431618637=9.546894459887 bits. The 68-way "
+        "approximately 6.087462841250339+3.459431618637297="
+        "9.546894459887637 bits. The 68-way "
         "choice selects a source-shape/phase family and the 11-way choice "
         "allocates its origin. The generating space is fixed by the named "
         "census axioms and SHA-pinned Cycle-719 core constants."
@@ -707,9 +711,9 @@ def render(
     total = certificates["B_BIT_ACCOUNTING"]["total"]
     lines.append(
         "BITS total :: " + total["exact_identity"] + " :: "
-        f"{total['family_choice_bits']} + "
-        f"{total['within_family_allocation_bits']} = "
-        f"{total['total_selection_bits']}"
+        f"{total['family_choice_bits_decimal_approx']} + "
+        f"{total['within_family_allocation_bits_decimal_approx']} = "
+        f"{total['total_selection_bits_decimal_approx']}"
     )
     for row in certificates["C_CONSTRAINT_CONTRIBUTIONS"]["rows"]:
         lines.append(

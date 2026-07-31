@@ -20,8 +20,8 @@ AUDIT_TIMEOUT_SEC = 1500
 STDOUT_LIMIT_BYTES = 200 * 1024
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "../born-harness-worktree/scripts/frontier_cycle819_deep_k2_continuation_2026_07_28.py",
-    "../born-harness-worktree/scripts/frontier_cycle820_shared_moment_mechanism_2026_07_28.py",
+    "scripts/frontier_cycle819_deep_k2_continuation_2026_07_28.py",
+    "scripts/frontier_cycle820_shared_moment_mechanism_2026_07_28.py",
     "scripts/frontier_cycle822_sstar_basin_2026_07_28.py",
 )
 
@@ -88,7 +88,6 @@ STATE_BITS = 5815
 STATE_BYTES = (STATE_BITS + 7) // 8
 MECHANISM_ENTRY = 14739
 TREE_DEPTH = 8
-MATERIALIZED_DEPTH = 4
 GATE_COUNT = 3106
 WORD_GATE_COUNT = 6212
 EXPECTED_SSTAR_SHA256 = (
@@ -321,9 +320,14 @@ def decode_fixtures() -> dict[str, object]:
         "states": states,
         "sstar": sstar,
         "certificate": {
-            "fixture_extraction":
-                "mechanical serialization of the tracked Cycle-822 "
-                "build_family and SHA-pinned Cycle-719 mapped_macro rows",
+            "fixture_import":
+                "supplied mechanical serialization of the tracked "
+                "Cycle-822 build_family and SHA-pinned Cycle-719 "
+                "mapped_macro outputs",
+            "fixture_import_status":
+                "DISCLOSED_CONDITIONAL_INPUT: the payload hashes prevent "
+                "drift but do not independently prove the extraction from "
+                "the source texts",
             "cycle822_copy_sha256": EXPECTED_SHA256[AUDIT_INPUT_PATHS[3]],
             "gate_raw_bytes": len(gate_raw),
             "gate_raw_sha256": sha256(gate_raw).hexdigest(),
@@ -536,7 +540,7 @@ def forward_lawful_census(
     exact_hits = []
     target_active = active_indices(target)
     spread = tuple(sorted(set(
-        round(index * (STATE_BITS - 1) / 191)
+        index * (STATE_BITS - 1) // 191
         for index in range(192)
     )))
     signature = tuple(sorted(set(target_active + spread)))
@@ -691,68 +695,70 @@ def preimage_tree_certificate(
     levels = {0: {target}}
     rows = [{
         "depth": 0,
-        "labeled_path_count": 1,
-        "unique_state_count": 1,
-        "unique_state_count_status": "EXACT_MATERIALIZED",
+        "fixed_position_labeled_nodes": 1,
+        "projected_unique_state_count": 1,
+        "projected_unique_state_count_status": "EXACT_MATERIALIZED",
         "state_set_sha256": state_set_digest(levels[0]),
         "characterization": "S_0={S*}",
     }]
-    for depth in range(1, MATERIALIZED_DEPTH + 1):
-        previous = levels[depth - 1]
-        current = {
-            apply_word(state, word, reverse=True)
-            for state in previous
-            for word in words.values()
+    rays = {positions0: target for positions0 in words}
+    for depth in range(1, TREE_DEPTH + 1):
+        rays = {
+            positions0: apply_word(
+                rays[positions0], word, reverse=True
+            )
+            for positions0, word in words.items()
         }
+        current = set(rays.values())
         levels[depth] = current
+        classes: dict[int, list[tuple[int, int]]] = defaultdict(list)
+        for positions0, state in rays.items():
+            classes[state].append(positions0)
         rows.append({
             "depth": depth,
-            "labeled_path_count": len(words) ** depth,
-            "unique_state_count": len(current),
-            "unique_state_count_status": "EXACT_MATERIALIZED",
+            "fixed_position_labeled_nodes": len(rays),
+            "event_and_position_labeled_nodes":
+                2 * FIXTURE_BANKS * len(rays),
+            "projected_unique_state_count": len(current),
+            "projected_unique_state_count_status": "EXACT_MATERIALIZED",
             "state_set_sha256": state_set_digest(current),
+            "projected_position_classes": tuple(sorted(
+                (
+                    {
+                        "state_sha256": state_sha256(state),
+                        "position_labels": tuple(labels),
+                        "label_multiplicity": len(labels),
+                    }
+                    for state, labels in classes.items()
+                ),
+                key=lambda row: (
+                    row["label_multiplicity"],
+                    row["position_labels"],
+                ),
+            )),
             "characterization":
-                "S_d=union_p F_p^{-1}(S_{d-1}), materialized exactly",
-        })
-    base_count = len(levels[MATERIALIZED_DEPTH])
-    for depth in range(MATERIALIZED_DEPTH + 1, TREE_DEPTH + 1):
-        rows.append({
-            "depth": depth,
-            "labeled_path_count": len(words) ** depth,
-            "unique_state_count": None,
-            "unique_state_count_status":
-                "EXACT_SYMBOLIC_SET_WITH_PROVED_CARDINALITY_BOUNDS",
-            "unique_state_count_lower_bound": base_count,
-            "unique_state_count_upper_bound":
-                base_count * len(words) ** (depth - MATERIALIZED_DEPTH),
-            "bound_proof":
-                "a chosen F_p^{-1} injects S_{d-1} into S_d; the union "
-                "of 44 images has size at most 44|S_{d-1}|",
-            "characterization":
-                "S_d={F_{p_d}^{-1} o ... o F_{p_1}^{-1}(S*) : "
-                "each p_i is one of the 44 separated pairs}",
+                "S_d={F_p^{-d}(S*) : p is one of the 44 separated "
+                "pairs}; the same p is retained at every reverse step",
         })
     exact_counts = tuple(
-        len(levels[depth])
-        for depth in range(MATERIALIZED_DEPTH + 1)
+        len(levels[depth]) for depth in range(TREE_DEPTH + 1)
     )
     result = {
         "declared_depth": TREE_DEPTH,
-        "materialized_unique_state_depth": MATERIALIZED_DEPTH,
-        "branching_labels_per_node": len(words),
+        "tree_shape":
+            "one projected root with 44 fixed-position labeled reverse "
+            "rays; after p is selected it never changes",
+        "fixed_position_rays": len(words),
+        "switching_position_words_between_depths_allowed": False,
         "depth_rows": tuple(rows),
         "exact_materialized_counts": exact_counts,
-        "honest_nonmaterialization":
-            "depths 5-8 retain an exact finite set comprehension and exact "
-            "labeled-path count, but their deduplicated cardinalities are "
-            "bounded rather than claimed; expanding them would require "
-            "billions of primitive gate applications",
+        "all_depths_materialized_exactly": True,
         "pass": (
             TREE_DEPTH >= 8
-            and exact_counts == (1, 14, 147, 1711, 25413)
+            and exact_counts == (1, 14, 18, 21, 16, 18, 26, 26, 25)
             and all(
-                row["labeled_path_count"] == 44 ** row["depth"]
-                for row in rows
+                row["fixed_position_labeled_nodes"] == 44
+                for row in rows[1:]
             )
         ),
     }
@@ -805,17 +811,14 @@ def trajectory_and_mechanism_certificates(
             "branch_partition": partition_keys(states),
             "varying_wire_indices": varying,
             "key_distinguishing_wire_count": len(varying),
-            "forced_equal_wire_count": STATE_BITS - len(varying),
+            "equal_across_nine_wire_count": STATE_BITS - len(varying),
             "state_sha256_by_key":
                 tuple(state_sha256(state) for state in states),
             "constant_word_path_labels":
                 tuple((key, (key[1],) * depth) for key in NINE_KEYS),
             "independent_forward_snapshot_exact": states == observed,
-            "materialized_tree_membership": (
-                all(state in levels[depth] for state in states)
-                if depth <= MATERIALIZED_DEPTH else
-                "EXACT_BY_DISPLAYED_INVERSE_WORD_WITNESS"
-            ),
+            "materialized_tree_membership":
+                all(state in levels[depth] for state in states),
         })
     postroot = tuple(
         apply_word(target, words[key[1]]) for key in NINE_KEYS
@@ -839,7 +842,7 @@ def trajectory_and_mechanism_certificates(
         "all_materialized_memberships_exact":
             all(
                 row["materialized_tree_membership"] is True
-                for row in rows[:MATERIALIZED_DEPTH + 1]
+                for row in rows
             ),
         "all_nine_merge_depths": tuple(
             row["depth"] for row in rows
@@ -863,16 +866,33 @@ def trajectory_and_mechanism_certificates(
     reverse_varying = tuple(
         row["key_distinguishing_wire_count"] for row in rows
     )
+    full_level_rows = []
+    for depth in range(TREE_DEPTH + 1):
+        level_states = tuple(levels[depth])
+        varying = varying_wires(level_states)
+        full_level_rows.append({
+            "depth": depth,
+            "projected_state_count": len(level_states),
+            "varying_wire_indices": varying,
+            "varying_wire_count": len(varying),
+            "forced_equal_wire_count": STATE_BITS - len(varying),
+            "forced_equal_wire_characterization":
+                "all wire indices 0..5814 except varying_wire_indices",
+        })
     mechanism = {
         "classification":
             "PARAMETERIZED_BIJECTION_SYNCHRONIZATION_NOT_SINGLE_MAP_ATTRACTION",
         "exact_reading":
             "At t=14738 the nine projected data states occupy three nodes: "
-            "5800 of 5815 wires are already common and 15 distinguish the "
-            "nodes.  The nine different fixed-position bijections map those "
-            "three predecessors to the same S*.  Retaining the position "
-            "label prevents a collision; projecting it away creates the "
-            "funnel.",
+            "5800 of 5815 wires are common across those nine histories and "
+            "15 distinguish the nodes.  The nine different fixed-position "
+            "bijections map those three predecessors to the same S*.  "
+            "Retaining the position label prevents a collision; projecting "
+            "it away creates the funnel.",
+        "full_fixed_position_preimage_levels": tuple(full_level_rows),
+        "forced_equal_scope":
+            "within each exact 44-ray projected level, not over arbitrary "
+            "states satisfying any broader dynamical condition",
         "reverse_depth_key_distinguishing_counts": reverse_varying,
         "forward_t14731_through_t14739_key_distinguishing_counts":
             tuple(reversed(reverse_varying)),
@@ -914,15 +934,17 @@ def trajectory_and_mechanism_certificates(
                 "forward histories, not unrestricted reverse feasibility.",
         },
         "honest_gap":
-            "The tree identifies the exact final synchronization and its "
-            "15 distinguishing wires, but the nonmonotone depth profile "
-            "does not support a claim of progressive component erasure and "
-            "does not derive the entry predicate.",
+            "The tree identifies the exact final synchronization and the "
+            "component equalities within the finite 44-ray levels, but the "
+            "nonmonotone nine-history profile does not support a claim of "
+            "progressive component erasure and does not derive the entry "
+            "predicate or a universal attraction mechanism.",
     }
     mechanism["pass"] = (
         reverse_varying
         == (0, 15, 19, 23, 19, 23, 21, 12, 11)
         and not mechanism["progressive_monotone_erasure"]
+        and full_level_rows[1]["varying_wire_count"] == 23
         and mechanism["last_tick"]["status"] == "HOLDS_EXACTLY"
         and mechanism["after_Sstar"]["distinct_nine_images_at_t14740"] > 1
         and not mechanism["after_Sstar"]["Sstar_is_common_fixed_point"]
@@ -952,22 +974,29 @@ def moment_certificate(
         "satisfying_lawful_keys": public["first_exact_hit_keys"],
         "Sstar_sha256_input": state_sha256(target),
         "outcome":
-            "HOLDS_EXACTLY_NONCIRCULAR_ENUMERATIVE_MINIMAL_DEPTH_CERTIFICATE",
-        "noncircular_scope":
-            "the pinned S* tuple, lawful t=0 fixtures, and landed gate rows "
-            "are inputs; 14739 is used only as the declared search horizon, "
-            "and every smaller depth is explicitly rejected before the hit",
+            "TENTH_MECHANISM_FAILS_EQUIVALENT_FORWARD_REPLAY",
+        "exact_support_status":
+            "CONDITIONAL_MINIMAL_DEPTH_VERIFICATION: given the supplied "
+            "S*, lawful t=0 fixtures, and landed gate rows, every depth "
+            "below 14739 is rejected and the nine keys satisfy at 14739",
+        "noncircular_account_of_14739": False,
+        "why_not_noncircular":
+            "the reverse condition is converted by bijectivity into the "
+            "target-equivalent forward orbit census, run to the already "
+            "declared horizon 14739; this verifies minimality but introduces "
+            "no independent invariant or mechanism selecting that integer",
         "closed_form_or_orbit_phase_explanation": False,
         "honest_gap":
-            "This exact satisfiability search accounts computationally for "
-            "the minimal depth 14739 but does not compress that integer into "
-            "a recurrence invariant or closed-form mechanism.",
+            "The exact constraint-equivalent replay is support, not a tenth "
+            "mechanism and not an explanation of why the first satisfying "
+            "depth is 14739.",
     }
     result["pass"] = (
         first == MECHANISM_ENTRY
         and result["satisfying_lawful_keys"] == NINE_KEYS
         and public["all_exact_hits_through_horizon"]
         == tuple((MECHANISM_ENTRY, key) for key in NINE_KEYS)
+        and not result["noncircular_account_of_14739"]
     )
     return result
 
@@ -1009,6 +1038,10 @@ def run() -> int:
     }
     census = forward_lawful_census(fixtures, target)
     certificate_a = {
+        "claim_boundary":
+            "exact conditional reconstruction from disclosed embedded "
+            "fixtures; fixture hashes prevent drift but do not independently "
+            "prove their extraction from the pinned source texts",
         "tracked_copy_and_fixture_provenance": fixtures["certificate"],
         "word_reimplementation": word_shape,
         "reconstruction": census["public"],
@@ -1048,13 +1081,15 @@ def run() -> int:
         "B_ONE_STEP_PREIMAGE": certificate_b["pass"],
         "C_DEPTH8_PREIMAGE_TREE": certificate_c["pass"],
         "D_EXACT_MECHANISM_READING": certificate_d["pass"],
-        "E_MOMENT_MINIMAL_DEPTH": certificate_e["pass"],
+        "E_MOMENT_HONEST_EQUIVALENT_GAP": certificate_e["pass"],
         "F_CONTROLS": False,
     }
     controls = {
         **sources,
         "fixture_exact_arithmetic":
-            "Python unbounded integers over GF(2); no floating point",
+            "all state evolution, equality, hashes, prefilters, and reverse "
+            "constraints use Python unbounded integers over GF(2); only "
+            "wall-clock runtime reporting uses a monotonic float",
         "gate_word_reimplementation": word_shape,
         "population_determinism":
             census["public"]["replay_exact_at_t14731_through_t14739"],
@@ -1088,6 +1123,8 @@ def run() -> int:
     report = {
         "cycle": 830,
         "target": "S* preimage tree",
+        "actual_status":
+            "exact support conditional on disclosed landed-fixture import",
         "one_step_distinct_data_preimages":
             certificate_b["distinct_5815_bit_data_preimage_count"],
         "tree_declared_depth": TREE_DEPTH,

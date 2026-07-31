@@ -1,6 +1,6 @@
 {
- "edge_count": 15365,
- "node_count": 4616,
+ "edge_count": 15367,
+ "node_count": 4617,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1619,8 +1619,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "d17a8bc2ea79",
-   "out_degree": 338
+   "deps_hash": "9770b8cc1657",
+   "out_degree": 339
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -2756,6 +2756,10 @@
   },
   "cycle332_receiver_success_cycle610_gate_adapter_bounded_theorem_note_2026-07-30": {
    "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "cycle719_origin_zero_compiled_data_trace_cycle769_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "7c59543ab5ac",
    "out_degree": 1
   },
   "cycle_battery_note_2026-04-10": {

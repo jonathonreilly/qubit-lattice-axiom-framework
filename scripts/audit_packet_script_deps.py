@@ -79,6 +79,20 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "ring_family_uniformity_cycle737_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle737_ring_family_independent_check_2026_07_28.py",
     ],
+    # Cycle 769's independent interpreter is a sibling rather than an import,
+    # and Cycle 719 names seven dynamic source modules outside static import
+    # recovery. Keep this compatibility manifest aligned with the citation
+    # graph's claim-scoped packet.
+    "cycle719_origin_zero_compiled_data_trace_cycle769_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle769_cycle719_origin_zero_compiled_data_trace_independent_check_2026_07_28.py",
+        "scripts/physical_autonomous_bound_branch_preparation_tournament_cycle611_2026_07_22.py",
+        "scripts/physical_autonomous_localized_refocused_matter_transition_tournament_cycle575_2026_07_22.py",
+        "scripts/physical_contact_dimer_infinite_internal_content_tournament_cycle583_2026_07_22.py",
+        "scripts/physical_intrinsic_contact_bound_moving_transition_tournament_cycle578_2026_07_22.py",
+        "scripts/physical_intrinsic_tick_event_relational_duration_tournament_cycle610_2026_07_22.py",
+        "scripts/physical_matter_transition_clock_equivalence_tournament_cycle573_2026_07_22.py",
+        "scripts/physical_tick_echo_association_causal_order_tournament_cycle612_2026_07_22.py",
+    ],
     # Cycle 756's independent state-DP and small-cycle exhaustive checker
     # deliberately does not import the closed-form primary. Expose it beside
     # the primary so the restricted audit packet contains both derivations.

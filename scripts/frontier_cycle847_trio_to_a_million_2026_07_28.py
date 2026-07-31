@@ -1,21 +1,27 @@
 #!/usr/bin/env python3
-"""Cycle 844: every standing bet on one exact deep continuation.
+"""Cycle 847: carry the registered k=3 trio bet to one million ticks.
 
 The landed Cycle-719 controller core is the sole executable science
-dependency.  Cycles 834, 838, and 843 are SHA-pinned text/AST-only source
-primaries and are import-blocklisted.  The runner sweeps the ten literal
-landed open k=3 keys and the two named station-0 event-0 k=2 keys.
+dependency.  Cycles 838 and 844 are SHA-pinned text/AST-only source
+primaries and are import-blocklisted.  The runner sweeps the six registered
+trio keys and all four ride-along k=3 keys through the complete power-of-two
+T=1,048,576 boundary.
+
+If an event trio resolves synchronously, the runner computes its exact
+full-state equality-partition braid for depths 0..64 before resolution.  It
+then compares that braid with every direct three-key restriction of the
+Cycle-845 universal nine-braid, recomputed here from the landed controller
+lineage.  A match or a mismatch is an explicit, decisive law verdict.
 """
 from __future__ import annotations
 
 AUDIT_TIMEOUT_SEC = 1500
 EXECUTION_BUDGET_SEC = 1450
-STDOUT_LIMIT_BYTES = 200 * 1024
+STDOUT_LIMIT_BYTES = 150_000
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "scripts/frontier_cycle834_k3_backbone_2026_07_28.py",
     "scripts/frontier_cycle838_k3_trio_forecast_2026_07_28.py",
-    "scripts/frontier_cycle843_pulse_phase_2026_07_28.py",
+    "scripts/frontier_cycle844_standing_bets_2026_07_28.py",
 )
 
 import ast
@@ -39,20 +45,17 @@ EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
         "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
     AUDIT_INPUT_PATHS[1]:
-        "8ed75c4e6f19fa5e8a9492225aae681ab85017dcfac00f8ab109b7c587aeddaa",
-    AUDIT_INPUT_PATHS[2]:
         "ea668b4d0be960622cd10d4e16b3cd1056d343db80ee6845407ca6ddb3e604c0",
-    AUDIT_INPUT_PATHS[3]:
-        "68116221b3451aefd294d939b788cd3dbf518a190eaebd996b43fba5e8a54de9",
+    AUDIT_INPUT_PATHS[2]:
+        "6c52e0d8db9b4b7ecf91b3c5b17436036c89ff18def2f951fb2ee0db8e2a19f9",
 }
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
-    AUDIT_INPUT_PATHS[1]: "89d4506c6df9738bf0458027ab76cc9d2f9710ab",
-    AUDIT_INPUT_PATHS[2]: "2f89c8eb911375bed58b1126e9f5f7b860ead20a",
-    AUDIT_INPUT_PATHS[3]: "cd500d58847c3c1046c500b73b25911920db0ce0",
+    AUDIT_INPUT_PATHS[1]: "2f89c8eb911375bed58b1126e9f5f7b860ead20a",
+    AUDIT_INPUT_PATHS[2]: "a12245720a7e866134978c25629e19ba57596929",
 }
-EXPECTED_BRANCH = "physics-loop/toe-close-blockC26-20260729"
-EXPECTED_BASE = "a902a8204b43e616272be79b18ca337f078d84d0"
+EXPECTED_BRANCH = "physics-loop/toe-close-blockC27-20260729"
+EXPECTED_BASE = "d6f32365378db0a714a7111ed69cdee68e86cc6c"
 
 
 class _PrimaryFirewall(importlib.abc.MetaPathFinder):
@@ -86,14 +89,27 @@ RING_STATIONS = 11
 FIXTURE_BANKS = 2
 STATE_BITS = 5815
 WATCHED_COORDINATE_COUNT = 477
-LANDED_HORIZON = 262144
-K3_TARGET_CHOICES = (524288, 262144, 131072)
-K2_TARGET_HORIZON = 2097152
+LANDED_HORIZON = 524288
+TARGET_HORIZON = 1048576
 PILOT_TICKS = 256
-SAFETY_FACTOR = 1.16
-RESERVE_SECONDS = 105.0
+SAFETY_FACTOR = 1.20
+RESERVE_SECONDS = 90.0
 CHECKPOINT_INTERVAL = 1024
 DETERMINISM_KEYS_PER_FAMILY = 1
+BRAID_DEPTH = 64
+BACKBONE = (
+    (1, 6), (1, 7), (2, 7), (2, 8), (3, 8),
+    (3, 9), (4, 9), (4, 10), (5, 10),
+)
+UNIVERSAL_FUNNEL_EVENT = 0
+UNIVERSAL_FUNNEL_MOMENT = 14739
+EXPECTED_UNIVERSAL_FUNNEL_SHA256 = (
+    "cdf7e03092c6278b686c1f0edb9ebd716f4a285b1eabc8a7e2780695284a8f1a"
+)
+EXPECTED_UNIVERSAL_FUNNEL_WEIGHT = 44
+EXPECTED_UNIVERSAL_BRAID_SHA256 = (
+    "3a145e4ad78f9440d58a781c123b7915fe5e83993f288b16562ea91e37ccbbc4"
+)
 
 K3_KEYS: tuple[Key, ...] = (
     (3, (0, 2, 6), 2),
@@ -114,24 +130,7 @@ TRIO_KEYS: tuple[Key, ...] = tuple(
 OTHER_K3_KEYS: tuple[Key, ...] = tuple(
     key for key in K3_KEYS if key not in TRIO_KEYS
 )
-K2_EVENT0_KEYS: tuple[Key, ...] = (
-    (2, (0, 5), 0),
-    (2, (0, 6), 0),
-)
 K3_IDENTITY = ((3, (0, 2, 5), 2), "TRANSIENT", 444)
-K2_IDENTITY = ((2, (0, 5), 1), "TRANSIENT", 193210)
-EXPECTED_TARGETS = {
-    "S0_prime": {
-        "sha256":
-            "d874aeeb1d4e5ca29b806886314c796ac32e6658b21f888d8e2aa01044905c12",
-        "weight": 47,
-    },
-    "pulse_coincidence_state": {
-        "sha256":
-            "4a7ce9fd4e9ebfdbd8580c33122d9e87c3896b24ef196e34bec49e233d044375",
-        "weight": 59,
-    },
-}
 
 
 def compact(value: object) -> str:
@@ -229,8 +228,11 @@ def source_controls() -> dict[str, object]:
         for alias in node.names
         if alias.name.startswith("frontier_cycle")
     )
-    landed_keys = literal_assignment(
-        trees[AUDIT_INPUT_PATHS[1]], "LANDED_K3_OPEN_THROUGH_65536"
+    forecast_keys = literal_assignment(
+        trees[AUDIT_INPUT_PATHS[1]], "K3_OPEN_THROUGH_T65536"
+    )
+    predecessor_keys = literal_assignment(
+        trees[AUDIT_INPUT_PATHS[2]], "K3_KEYS"
     )
     branch = git_value("branch", "--show-current")
     base_is_ancestor = (
@@ -242,7 +244,7 @@ def source_controls() -> dict[str, object]:
             literal_assignment(self_tree, "AUDIT_INPUT_PATHS")
             == AUDIT_INPUT_PATHS,
         "named_input_count": len(AUDIT_INPUT_PATHS),
-        "maximum_named_inputs": 7,
+        "maximum_named_inputs": 6,
         "all_paths_existing_worktree_relative":
             len(payloads) == len(AUDIT_INPUT_PATHS)
             and all(row["exists_worktree_relative"] for row in source_rows),
@@ -250,8 +252,12 @@ def source_controls() -> dict[str, object]:
         "text_AST_only_paths": TEXT_AST_ONLY_PATHS,
         "blocked_modules": BLOCKLISTED_MODULES,
         "direct_frontier_imports": direct_frontier_imports,
-        "landed_k3_keys": landed_keys,
-        "literal_k3_surface_exact": landed_keys == K3_KEYS,
+        "cycle838_forecast_keys": forecast_keys,
+        "cycle844_predecessor_keys": predecessor_keys,
+        "literal_k3_surface_exact":
+            forecast_keys == K3_KEYS and predecessor_keys == K3_KEYS,
+        "third_party_dependencies": (),
+        "stdlib_plus_landed_core_only": True,
         "git_branch": branch,
         "expected_git_branch": EXPECTED_BRANCH,
         "expected_base": EXPECTED_BASE,
@@ -432,6 +438,20 @@ def advance_scalar(
             state[third] ^= state[first] & state[second]
 
 
+def reverse_scalar(
+    state: list[int],
+    compiled: tuple[tuple[int, int, int, int], ...],
+) -> None:
+    """Apply the exact inverse of one distinct-wire reversible word."""
+    for kind, first, second, third in reversed(compiled):
+        if kind == 0:
+            state[first] ^= 1
+        elif kind == 1:
+            state[second] ^= state[first]
+        else:
+            state[third] ^= state[first] & state[second]
+
+
 def bit_slice(states: tuple[tuple[int, ...], ...]) -> list[int]:
     return [
         sum(int(state[wire]) << lane for lane, state in enumerate(states))
@@ -444,6 +464,170 @@ def un_slice(
     lane: int,
 ) -> State:
     return bytes((column >> lane) & 1 for column in columns)
+
+
+Partition = tuple[tuple[int, ...], ...]
+
+
+def partition_of(states: tuple[State, ...]) -> Partition:
+    groups: dict[State, list[int]] = {}
+    for lane, state in enumerate(states):
+        groups.setdefault(state, []).append(lane)
+    return tuple(
+        tuple(group) for group in sorted(groups.values(), key=lambda row: row[0])
+    )
+
+
+def restrict_partition(
+    partition: Partition,
+    subset: tuple[int, int, int],
+) -> Partition:
+    """Restrict a nine-key partition and relabel the subset as 0,1,2."""
+    relabel = {old: new for new, old in enumerate(subset)}
+    blocks = []
+    for block in partition:
+        reduced = tuple(relabel[lane] for lane in block if lane in relabel)
+        if reduced:
+            blocks.append(reduced)
+    return tuple(sorted(blocks, key=lambda row: row[0]))
+
+
+def partition_rle(
+    partitions: tuple[Partition, ...],
+) -> tuple[dict[str, object], ...]:
+    rows = []
+    start = 0
+    for index in range(1, len(partitions) + 1):
+        if index < len(partitions) and partitions[index] == partitions[start]:
+            continue
+        rows.append({
+            "depth_start": start,
+            "depth_end": index - 1,
+            "depth_count": index - start,
+            "partition": partitions[start],
+        })
+        start = index
+    return tuple(rows)
+
+
+def universal_braid(
+    context: dict[str, object],
+) -> dict[str, object]:
+    """Recompute the Cycle-845 event-0 nine-braid and all 3-restrictions."""
+    program = context["program"]
+    fixture_by_event = {
+        event: before
+        for event, _direction, before in context["fixtures"]
+    }
+    before = fixture_by_event[UNIVERSAL_FUNNEL_EVENT]
+    keys = tuple(
+        (2, pair, UNIVERSAL_FUNNEL_EVENT) for pair in BACKBONE
+    )
+    words = {pair: synchronous_word(program, pair) for pair in BACKBONE}
+    compiled = {pair: compile_word(words[pair]) for pair in BACKBONE}
+    initial_states = []
+    construction_rows = []
+    for key in keys:
+        _k, pair, _event = key
+        initial, rail_a, rail_b, _trace = K.run_orbit(
+            before, program, token_positions=pair
+        )
+        semantic = K.A.apply_semantic(before, words[pair])
+        initial_states.append(tuple(map(int, initial)))
+        construction_rows.append({
+            "key": key,
+            "composition_exact": initial == semantic,
+            "rail_A_exact": rail_a == tuple(
+                int(station in pair) for station in range(RING_STATIONS)
+            ),
+            "rail_B_zero": not any(rail_b),
+        })
+    columns = bit_slice(tuple(initial_states))
+    schedule = masked_schedule(
+        program, tuple((key, "universal") for key in keys)
+    )
+    for _movement in range(UNIVERSAL_FUNNEL_MOMENT):
+        advance(columns, schedule)
+    funnel_states = tuple(
+        un_slice(columns, lane) for lane in range(len(BACKBONE))
+    )
+    funnel = funnel_states[0]
+    depth_states = [funnel_states]
+    depth_partitions = [partition_of(funnel_states)]
+    roundtrip_exact = True
+    states = funnel_states
+    for _depth in range(1, BRAID_DEPTH + 1):
+        predecessors = []
+        for pair, state in zip(BACKBONE, states):
+            predecessor = list(state)
+            reverse_scalar(predecessor, compiled[pair])
+            replay = predecessor.copy()
+            advance_scalar(replay, compiled[pair])
+            roundtrip_exact &= bytes(replay) == state
+            predecessors.append(bytes(predecessor))
+        states = tuple(predecessors)
+        depth_states.append(states)
+        depth_partitions.append(partition_of(states))
+    partitions = tuple(depth_partitions)
+    subsets = tuple(combinations(range(len(BACKBONE)), 3))
+    restrictions = {
+        subset: tuple(
+            restrict_partition(partition, subset)
+            for partition in partitions
+        )
+        for subset in subsets
+    }
+    restriction_rows = tuple(
+        (subset, restrictions[subset]) for subset in subsets
+    )
+    sequence_sha = digest(tuple(enumerate(partitions)))
+    public = {
+        "lineage":
+            "Cycle-845 event-0 nine-braid recomputed from the landed "
+            "Cycle-719 controller core; no Cycle-845 module imported",
+        "event": UNIVERSAL_FUNNEL_EVENT,
+        "funnel_moment": UNIVERSAL_FUNNEL_MOMENT,
+        "keys": keys,
+        "depth_bounds": (0, BRAID_DEPTH),
+        "depth_direction": "depth 0 is funnel; increasing depth moves backward",
+        "construction_rows": tuple(construction_rows),
+        "funnel_all_nine_equal": len(set(funnel_states)) == 1,
+        "funnel_state_sha256": state_sha256(funnel),
+        "expected_funnel_state_sha256": EXPECTED_UNIVERSAL_FUNNEL_SHA256,
+        "funnel_weight": sum(funnel),
+        "expected_funnel_weight": EXPECTED_UNIVERSAL_FUNNEL_WEIGHT,
+        "nine_braid": partitions,
+        "nine_braid_RLE": partition_rle(partitions),
+        "nine_braid_sha256": sequence_sha,
+        "expected_nine_braid_sha256": EXPECTED_UNIVERSAL_BRAID_SHA256,
+        "restriction_count": len(restrictions),
+        "expected_restriction_count": 84,
+        "unique_restricted_braid_count": len({
+            digest(sequence) for sequence in restrictions.values()
+        }),
+        "restrictions_sha256": digest(restriction_rows),
+        "reverse_forward_roundtrip_exact": roundtrip_exact,
+    }
+    public["pass"] = (
+        all(
+            row["composition_exact"]
+            and row["rail_A_exact"]
+            and row["rail_B_zero"]
+            for row in construction_rows
+        )
+        and public["funnel_all_nine_equal"]
+        and public["funnel_state_sha256"]
+        == EXPECTED_UNIVERSAL_FUNNEL_SHA256
+        and public["funnel_weight"] == EXPECTED_UNIVERSAL_FUNNEL_WEIGHT
+        and sequence_sha == EXPECTED_UNIVERSAL_BRAID_SHA256
+        and len(restrictions) == 84
+        and roundtrip_exact
+    )
+    return {
+        "partitions": partitions,
+        "restrictions": restrictions,
+        "public": public,
+    }
 
 
 def lane_numbers(mask: int) -> tuple[int, ...]:
@@ -874,6 +1058,103 @@ def recover_state(
     return bytes(state)
 
 
+def trio_braid_at_resolution(
+    engine: dict[str, object],
+    keys: tuple[Key, ...],
+    moment: int,
+    universal: dict[str, object],
+) -> dict[str, object]:
+    depth_limit = min(BRAID_DEPTH, moment)
+    depth_states = tuple(
+        tuple(
+            recover_state(
+                engine, engine["primary_index"][key], moment - depth
+            )
+            for key in keys
+        )
+        for depth in range(depth_limit + 1)
+    )
+    partitions = tuple(partition_of(states) for states in depth_states)
+    forward_replay_exact = all(
+        all(
+            bytes(
+                _advanced_copy(
+                    depth_states[depth][lane],
+                    engine["compiled_words"][key[1]],
+                )
+            ) == depth_states[depth - 1][lane]
+            for lane, key in enumerate(keys)
+        )
+        for depth in range(1, depth_limit + 1)
+    )
+    resolution_state_exact = all(
+        depth_states[0][lane] == engine["resolution_states"][key]
+        for lane, key in enumerate(keys)
+    )
+    restrictions = universal["restrictions"]
+    matching_subsets = tuple(
+        subset for subset, sequence in restrictions.items()
+        if tuple(sequence[:depth_limit + 1]) == partitions
+    )
+    matching_backbone_key_subsets = tuple(
+        tuple(BACKBONE[lane] for lane in subset)
+        for subset in matching_subsets
+    )
+    matches = bool(matching_subsets)
+    full_window = depth_limit == BRAID_DEPTH
+    if matches and full_window:
+        law_status = "MATCHES_DIRECT_3_SUBSET_RESTRICTION"
+    elif full_window:
+        law_status = "BREAKS_UNIVERSAL_BRAID_LAW"
+    elif matches:
+        law_status = "MATCHES_AVAILABLE_EARLY_DEPTH_PREFIX"
+    else:
+        law_status = "BREAKS_UNIVERSAL_BRAID_ON_AVAILABLE_PREFIX"
+    result = {
+        "keys": keys,
+        "resolution_moment": moment,
+        "time_normalization":
+            "depth 0 is the common resolution moment; increasing depth "
+            "moves backward one complete landed movement",
+        "requested_depth_bounds": (0, BRAID_DEPTH),
+        "computed_depth_bounds": (0, depth_limit),
+        "full_depth_window": full_window,
+        "partition_sequence": partitions,
+        "partition_sequence_RLE": partition_rle(partitions),
+        "partition_sequence_sha256": digest(tuple(enumerate(partitions))),
+        "universal_restriction_count_tested": len(restrictions),
+        "matching_subset_indices": matching_subsets,
+        "matching_backbone_key_subsets": matching_backbone_key_subsets,
+        "matches_a_direct_restriction": matches,
+        "law_status": law_status,
+        "resolution_state_exact": resolution_state_exact,
+        "forward_replay_exact": forward_replay_exact,
+        "universal_braid_certified": universal["public"]["pass"],
+    }
+    result["pass"] = (
+        universal["public"]["pass"]
+        and resolution_state_exact
+        and forward_replay_exact
+        and len(restrictions) == 84
+        and law_status in (
+            "MATCHES_DIRECT_3_SUBSET_RESTRICTION",
+            "BREAKS_UNIVERSAL_BRAID_LAW",
+            "MATCHES_AVAILABLE_EARLY_DEPTH_PREFIX",
+            "BREAKS_UNIVERSAL_BRAID_ON_AVAILABLE_PREFIX",
+        )
+    )
+    return result
+
+
+def _advanced_copy(
+    state: State,
+    compiled: tuple[tuple[int, int, int, int], ...],
+) -> list[int]:
+    copied = list(state)
+    advance_scalar(copied, compiled)
+    return copied
+
+
 def resolution_window(
     engine: dict[str, object],
     lane: int,
@@ -1283,10 +1564,7 @@ def identity_certificate(
 ) -> tuple[dict[str, object], tuple[dict[str, object], ...]]:
     rows = []
     engines = []
-    for family, expected in (
-        ("k3", K3_IDENTITY),
-        ("k2", K2_IDENTITY),
-    ):
+    for family, expected in (("k3", K3_IDENTITY),):
         key, outcome, moment = expected
         engine = make_engine(
             f"{family}_identity", (key,), context,
@@ -1321,8 +1599,8 @@ def identity_certificate(
         engines.append(engine)
     result = {
         "controls": tuple(rows),
-        "one_landed_resolution_per_family": len(rows) == 2,
-        "pass": len(rows) == 2 and all(row["pass"] for row in rows),
+        "one_landed_k3_resolution": len(rows) == 1,
+        "pass": len(rows) == 1 and all(row["pass"] for row in rows),
     }
     return result, tuple(engines)
 
@@ -1339,6 +1617,7 @@ def resolution_rows(
 def b1_certificate(
     engine: dict[str, object],
     horizon: int,
+    universal: dict[str, object],
 ) -> dict[str, object]:
     event_rows = []
     for event in (2, 3):
@@ -1361,8 +1640,15 @@ def b1_certificate(
                 for row in rows
             }) == 1
         )
-        if all_resolved and same_moment and same_outcome:
-            status = "CONFIRMED_SYNCHRONOUS_EVENT_TRIO"
+        synchronized = all_resolved and same_moment and same_outcome
+        braid = (
+            trio_braid_at_resolution(
+                engine, keys, int(rows[0]["resolution_moment"]), universal
+            )
+            if synchronized else None
+        )
+        if synchronized:
+            status = "CONFIRMED_SYNCHRONOUS_EVENT_TRIO_BRAID_ADJUDICATED"
         elif none_resolved:
             status = "STANDS_OPEN_AT_COMPLETE_HORIZON"
         else:
@@ -1376,14 +1662,22 @@ def b1_certificate(
             "same_resolution_moment": same_moment,
             "same_outcome": same_outcome,
             "same_terminal_full_state": same_terminal,
+            "synchronized_per_event": synchronized,
+            "braid_clause_armed": synchronized,
+            "braid_clause": braid,
             "status": status,
         })
     statuses = {row["status"] for row in event_rows}
     if "FALLS_PARTIAL_OR_ASYNCHRONOUS" in statuses:
         bet_status = "B1_FALLS"
-    elif statuses == {"CONFIRMED_SYNCHRONOUS_EVENT_TRIO"}:
+    elif statuses == {
+        "CONFIRMED_SYNCHRONOUS_EVENT_TRIO_BRAID_ADJUDICATED"
+    }:
         bet_status = "B1_CONFIRMED"
-    elif "CONFIRMED_SYNCHRONOUS_EVENT_TRIO" in statuses:
+    elif (
+        "CONFIRMED_SYNCHRONOUS_EVENT_TRIO_BRAID_ADJUDICATED"
+        in statuses
+    ):
         bet_status = "B1_STANDS_PARTIALLY_CONFIRMED"
     else:
         bet_status = "B1_STANDS_OPEN"
@@ -1393,6 +1687,12 @@ def b1_certificate(
             "synchronously per event",
         "complete_horizon": horizon,
         "event_rows": tuple(event_rows),
+        "universal_braid": universal["public"],
+        "braid_clause_disposition": (
+            "ARMED_AND_ADJUDICATED"
+            if any(row["braid_clause_armed"] for row in event_rows)
+            else "NOT_TRIGGERED_NO_SYNCHRONOUS_RESOLUTION"
+        ),
         "bet_status": bet_status,
     }
     result["pass"] = (
@@ -1412,6 +1712,11 @@ def b1_certificate(
             resolution["verification"]["pass"]
             for row in event_rows
             for resolution in row["resolution_rows"]
+        )
+        and universal["public"]["pass"]
+        and all(
+            row["braid_clause"] is None or row["braid_clause"]["pass"]
+            for row in event_rows
         )
     )
     return result
@@ -1638,7 +1943,6 @@ def null_family_row(
 
 def certificate_c(
     k3_engine: dict[str, object],
-    k2_engine: dict[str, object],
 ) -> dict[str, object]:
     families = (
         null_family_row(
@@ -1654,9 +1958,6 @@ def certificate_c(
         null_family_row(
             "k3_other_four", OTHER_K3_KEYS, k3_engine,
         ),
-        null_family_row(
-            "k2_station0_event0_pair", K2_EVENT0_KEYS, k2_engine,
-        ),
     )
     result = {
         "families": families,
@@ -1668,9 +1969,9 @@ def certificate_c(
         "total_open": sum(row["open_count"] for row in families),
     }
     result["pass"] = (
-        result["family_count"] == 4
-        and result["total_supplied_keys"] == 12
-        and result["total_resolutions"] + result["total_open"] == 12
+        result["family_count"] == 3
+        and result["total_supplied_keys"] == 10
+        and result["total_resolutions"] + result["total_open"] == 10
         and all(row["pass"] for row in families)
     )
     return result
@@ -1703,13 +2004,13 @@ def stable_render(
         report["checks"] = dict(checks)
         report["pass"] = all(checks.values())
         report["terminal"] = (
-            "CYCLE844_STANDING_BETS_EXACT_PASS"
+            "CYCLE847_TRIO_TO_A_MILLION_EXACT_PASS"
             if report["pass"]
-            else "CYCLE844_STANDING_BETS_HONEST_FAIL"
+            else "CYCLE847_TRIO_TO_A_MILLION_HONEST_FAIL"
         )
         output = render(checks, certificates, report)
         size = len(output.encode("utf-8"))
-        controls = certificates["E_CONTROLS"]
+        controls = certificates["D_CONTROLS"]
         if (
             report["stdout_bytes"] == size
             and controls["stdout_bytes"] == size
@@ -1726,8 +2027,8 @@ def run() -> int:
     residual_rows = watched_residual_rows()
     basis = basis_certificate(residual_rows)
     context = build_context()
-    named = reconstruct_named_states(context)
-    watches = make_watch_definitions(named)
+    watches: dict[str, dict[str, object]] = {}
+    universal = universal_braid(context)
 
     k3_engine = make_engine(
         "k3_ten_key_continuation",
@@ -1737,25 +2038,36 @@ def run() -> int:
         watches,
         K3_KEYS[:DETERMINISM_KEYS_PER_FAMILY],
     )
-    k2_engine = make_engine(
-        "k2_event0_pair_continuation",
-        K2_EVENT0_KEYS,
-        context,
-        residual_rows,
-        watches,
-        K2_EVENT0_KEYS[:DETERMINISM_KEYS_PER_FAMILY],
-    )
     k3_pilot = benchmark(k3_engine)
-    k2_pilot = benchmark(k2_engine)
-    selected_k3, horizon_declaration = select_k3_horizon(
-        k3_pilot, k2_pilot, script_started
+    elapsed_before_sweep = monotonic() - script_started
+    projected_seconds = (
+        elapsed_before_sweep
+        + SAFETY_FACTOR
+        * float(k3_pilot["seconds_per_tick"])
+        * TARGET_HORIZON
+        + RESERVE_SECONDS
     )
+    horizon_declaration = {
+        "policy":
+            "all six trio keys are mandatory; the identical bit-sliced "
+            "schedule carries all four other k=3 keys at no extra physical "
+            "tick count",
+        "pilot": k3_pilot,
+        "elapsed_before_sweep": round(elapsed_before_sweep, 6),
+        "projected_seconds_with_1_20_factor_and_90_second_reserve":
+            round(projected_seconds, 6),
+        "target_horizon": TARGET_HORIZON,
+        "trio_key_count": len(TRIO_KEYS),
+        "ride_along_key_count": len(OTHER_K3_KEYS),
+        "ride_along_declaration": "ALL_FOUR_TO_THE_SAME_COMPLETE_HORIZON",
+        "never_partial": True,
+    }
 
     k3_phase = evolve(
         k3_engine,
-        selected_k3,
+        TARGET_HORIZON,
         residual_rows,
-        boundaries=(LANDED_HORIZON, selected_k3),
+        boundaries=(LANDED_HORIZON, TARGET_HORIZON),
         stop_when_resolved=True,
     )
     k3_final = boundary_snapshot(
@@ -1765,45 +2077,20 @@ def run() -> int:
         LANDED_HORIZON
     )
 
-    k2_phase = evolve(
-        k2_engine,
-        K2_TARGET_HORIZON,
-        residual_rows,
-        boundaries=(LANDED_HORIZON, K2_TARGET_HORIZON),
-        stop_when_resolved=True,
-    )
-    k2_final = boundary_snapshot(
-        k2_engine, k2_engine["last_t"], residual_rows
-    )
-    k2_baseline = k2_engine["boundary_snapshots"].get(
-        LANDED_HORIZON
-    )
-
     identity, identity_engines = identity_certificate(
         context, residual_rows, watches
     )
-    b1 = b1_certificate(k3_engine, k3_engine["last_t"])
-    b2 = b2_certificate(k2_engine, named)
-    all_science_engines = (
-        k3_engine, k2_engine, *identity_engines,
+    b1 = b1_certificate(
+        k3_engine, k3_engine["last_t"], universal
     )
-    b3 = b3_certificate(all_science_engines)
-    cert_c = certificate_c(k3_engine, k2_engine)
+    cert_c = certificate_c(k3_engine)
     k3_determinism = determinism_certificate(k3_engine)
-    k2_determinism = determinism_certificate(k2_engine)
 
     k3_complete = (
         k3_phase["complete"]
         and (
-            k3_engine["last_t"] == selected_k3
+            k3_engine["last_t"] == TARGET_HORIZON
             or not k3_engine["active_mask"]
-        )
-    )
-    k2_complete = (
-        k2_phase["complete"]
-        and (
-            k2_engine["last_t"] == K2_TARGET_HORIZON
-            or not k2_engine["active_mask"]
         )
     )
     certificate_a = {
@@ -1811,65 +2098,52 @@ def run() -> int:
             "six registered trio keys plus four other literal open k3 keys",
         "k3_keys": K3_KEYS,
         "k3_key_count": len(K3_KEYS),
+        "mandatory_trio_keys": TRIO_KEYS,
+        "mandatory_trio_key_count": len(TRIO_KEYS),
+        "ride_along_keys": OTHER_K3_KEYS,
+        "ride_along_key_count": len(OTHER_K3_KEYS),
+        "ride_along_disposition": "ALL_FOUR_FULLY_COVERED",
         "k3_horizon_declaration": horizon_declaration,
-        "k3_target_horizon": selected_k3,
+        "k3_target_horizon": TARGET_HORIZON,
         "k3_actual_complete_terminal_horizon": k3_engine["last_t"],
-        "k3_target_T524288_reached": selected_k3 == 524288,
+        "k3_target_T1048576_reached":
+            k3_engine["last_t"] == TARGET_HORIZON,
         "k3_phase": k3_phase,
-        "k3_landed_T262144_boundary": k3_baseline,
+        "k3_landed_T524288_boundary": k3_baseline,
         "k3_final_boundary": k3_final,
         "k3_complete": k3_complete,
-        "k2_surface": "last two station-0 s=5 event-0 keys only",
-        "k2_keys": K2_EVENT0_KEYS,
-        "k2_search_ceiling": K2_TARGET_HORIZON,
-        "k2_actual_complete_terminal_horizon": k2_engine["last_t"],
-        "k2_ended_after_all_resolved":
-            not k2_engine["active_mask"]
-            and k2_engine["last_t"] < K2_TARGET_HORIZON,
-        "k2_phase": k2_phase,
-        "k2_landed_T262144_boundary": k2_baseline,
-        "k2_final_boundary": k2_final,
-        "k2_complete": k2_complete,
         "partial_horizon_reported": False,
         "all_resolution_verifications_pass": all(
             row["verification"]["pass"]
-            for engine in (k3_engine, k2_engine)
-            for row in engine["records"].values()
+            for row in k3_engine["records"].values()
         ),
     }
     certificate_a["pass"] = (
         sources["pass"]
         and basis["pass"]
         and context["pass"]
-        and named["pass"]
+        and universal["public"]["pass"]
         and k3_engine["construction_pass"]
-        and k2_engine["construction_pass"]
         and k3_baseline is not None
         and k3_baseline["pass"]
-        and k2_baseline is not None
-        and k2_baseline["pass"]
         and k3_final["pass"]
-        and k2_final["pass"]
         and k3_complete
-        and k2_complete
         and k3_phase["transition_accounting_exact"]
-        and k2_phase["transition_accounting_exact"]
         and certificate_a["all_resolution_verifications_pass"]
     )
 
     certificate_b = {
-        "B1_k3_trio_synchrony": b1,
-        "B2_k2_event0_late_synchrony": b2,
-        "B3_pinned_state_nonvisitation": b3,
-        "pass": b1["pass"] and b2["pass"] and b3["pass"],
+        "bet": b1,
+        "universal_braid_restriction_basis": universal["public"],
+        "pass": b1["pass"] and universal["public"]["pass"],
     }
-    deterministic = k3_determinism["pass"] and k2_determinism["pass"]
+    deterministic = k3_determinism["pass"]
     elapsed = monotonic() - script_started
     controls_base = (
         sources["pass"]
         and basis["pass"]
         and context["pass"]
-        and named["pass"]
+        and universal["public"]["pass"]
         and identity["pass"]
         and deterministic
         and not any(name in sys.modules for name in BLOCKLISTED_MODULES)
@@ -1883,21 +2157,18 @@ def run() -> int:
             key: value for key, value in context.items()
             if key not in ("program", "fixtures")
         },
-        "named_state_reconstruction": {
-            key: value for key, value in named.items() if key != "states"
-        },
         "dependency_policy":
             "Python stdlib plus sole executable landed Cycle719 core; "
-            "Cycles834/838/843 are SHA-pinned text/AST-only and blocklisted",
+            "Cycles838/844 are SHA-pinned text/AST-only and blocklisted",
         "exact_arithmetic":
             "dynamics, state equality, cleanliness, cycle returns, counts, "
             "weights, hashes, and window filters are exact; runtime only "
             "is floating point",
         "determinism": {
             "k3": k3_determinism,
-            "k2": k2_determinism,
             "deterministic": deterministic,
         },
+        "landed_identity_control": identity,
         "blocked_modules_loaded_at_end": tuple(
             name for name in BLOCKLISTED_MODULES if name in sys.modules
         ),
@@ -1914,33 +2185,29 @@ def run() -> int:
             bool(certificate_b["pass"]),
         "C_FAMILY_RESOLUTIONS_OR_NULLS_ACCOUNTED":
             bool(cert_c["pass"]),
-        "D_ONE_LANDED_RESOLUTION_PER_FAMILY_REPRODUCED":
-            bool(identity["pass"]),
-        "E_SHAS_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT":
+        "D_SHAS_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT":
             controls_base,
     }
     certificates = {
         "A_CONTINUATIONS": certificate_a,
         "B_STANDING_BETS": certificate_b,
         "C_NULL_BRANCHES": cert_c,
-        "D_IDENTITY_CONTROLS": identity,
-        "E_CONTROLS": controls,
+        "D_CONTROLS": controls,
     }
     report = {
-        "cycle": 844,
-        "k3_target_horizon": selected_k3,
+        "cycle": 847,
+        "k3_target_horizon": TARGET_HORIZON,
         "k3_terminal_horizon": k3_engine["last_t"],
-        "k3_target_T524288_reached": selected_k3 == 524288,
+        "k3_target_T1048576_reached":
+            k3_engine["last_t"] == TARGET_HORIZON,
         "k3_resolution_count": len(k3_engine["records"]),
         "k3_open_count": int(k3_engine["active_mask"]).bit_count(),
-        "k2_search_ceiling": K2_TARGET_HORIZON,
-        "k2_terminal_horizon": k2_engine["last_t"],
-        "k2_resolution_count": len(k2_engine["records"]),
-        "k2_open_count": int(k2_engine["active_mask"]).bit_count(),
-        "B1_status": b1["bet_status"],
-        "B2_status": b2["bet_status"],
-        "B3_status": b3["bet_status"],
-        "B3_exact_hit_count": b3["exact_hit_count"],
+        "trio_bet_status": b1["bet_status"],
+        "braid_clause_disposition": b1["braid_clause_disposition"],
+        "universal_braid_sha256":
+            universal["public"]["nine_braid_sha256"],
+        "universal_direct_restriction_count":
+            universal["public"]["restriction_count"],
         "total_resolutions": cert_c["total_resolutions"],
         "total_open": cert_c["total_open"],
         "runtime_seconds": round(elapsed, 6),
@@ -1949,15 +2216,15 @@ def run() -> int:
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "checks": {},
         "pass": False,
-        "terminal": "CYCLE844_STANDING_BETS_HONEST_FAIL",
+        "terminal": "CYCLE847_TRIO_TO_A_MILLION_HONEST_FAIL",
     }
     output = stable_render(checks, certificates, report)
     stdout_ok = len(output.encode("utf-8")) < STDOUT_LIMIT_BYTES
     checks[
-        "E_SHAS_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT"
+        "D_SHAS_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT"
     ] = controls_base and stdout_ok
     controls["pass"] = checks[
-        "E_SHAS_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT"
+        "D_SHAS_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT"
     ]
     output = stable_render(checks, certificates, report)
     if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
@@ -1966,7 +2233,7 @@ def run() -> int:
             "failure": "stdout limit exceeded",
             "stdout_bytes": len(output.encode("utf-8")),
             "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
-            "terminal": "CYCLE844_STANDING_BETS_HONEST_FAIL",
+            "terminal": "CYCLE847_TRIO_TO_A_MILLION_HONEST_FAIL",
         }) + "\n")
         return 1
     sys.stdout.write(output)
@@ -1981,7 +2248,7 @@ def main() -> int:
             "pass": False,
             "exception_type": type(error).__name__,
             "exception": str(error),
-            "terminal": "CYCLE844_STANDING_BETS_HONEST_FAIL",
+            "terminal": "CYCLE847_TRIO_TO_A_MILLION_HONEST_FAIL",
         }) + "\n")
         return 1
 

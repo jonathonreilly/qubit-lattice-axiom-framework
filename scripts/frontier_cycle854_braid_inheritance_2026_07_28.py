@@ -887,7 +887,7 @@ def precondition_entailment(
             "component_cell_count": cells,
             "inherited_constraint_rank": rank,
             "free_degree_count": len(free),
-            "free_components": free,
+            "free_components": "NAMED_ON_EACH_OCCURRENCE",
             "verdict": verdict,
             "entailment_basis": (
                 "Only the level-1 fixed wire values and level-2 fixed pair "

@@ -4,10 +4,10 @@
   "authority": "none",
   "artifact_provenance_sha256": {
     "note": "c3593b3903b64c5d96c4ff0e0723d1976ad7069061a2a21cb2b80989526e18cd",
-    "runner": "ceaffb990160fa53475ea0e485294b15e1dc0c376a8a7a6bb1192b70ce9555e0"
+    "runner": "c23370fdc02ca2e70dcb68e7de816da518c76425db84d2b1d6d69f02e63cb543"
   },
-  "checks_passed": 10,
-  "checks_total": 10,
+  "checks_passed": 9,
+  "checks_total": 9,
   "claim_scope": "finite held-box coherent endpoint-opportunity instrument on the landed Cycle822 companion seam; not an autonomous occurrence or recurrent-reset law",
   "full_seam_algebra": {
     "held_shapes": 4,

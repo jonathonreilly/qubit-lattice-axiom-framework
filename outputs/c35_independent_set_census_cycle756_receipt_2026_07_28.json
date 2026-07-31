@@ -1,0 +1,107 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle756_c35_independent_set_census_2026_07_28.txt": "9aa8ec984d8c053cf1401987814cac9ff9f95e95f71589807274ca5a54a6e286",
+      "frontier_cycle756_c35_independent_set_census_independent_check_2026_07_28.txt": "fe1916462c793fabf0abae81cfe9912dbb411788ae3a3e8e804c1b174b9de8a7"
+    },
+    "note": {
+      "path": "docs/CYCLE_GRAPH_C35_INDEPENDENT_SET_CENSUS_NARROW_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "b8fc7cb3a04910434b3309b82753b7aaf0df5d5e98588409427d0c932fcdb466"
+    },
+    "runners": {
+      "frontier_cycle756_c35_independent_set_census_2026_07_28.py": "b7d7a8862235a6bbf7641f4a5ee61563d2c5c36808affe53ff8a2a1eb4755c0a",
+      "frontier_cycle756_c35_independent_set_census_independent_check_2026_07_28.py": "7cfd8e8c79770a2311a874ad9cc959ce954e1481da1dfc031aba154e157af6c8"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "excluded": [
+      "mapper",
+      "reversible word",
+      "controller",
+      "anchor",
+      "covariance",
+      "preparation procedure",
+      "orbit",
+      "quantum state",
+      "physical law",
+      "framework Admissibility",
+      "no-go statement",
+      "retained-grade claim"
+    ],
+    "premise_weight_from_rejected_cycle739_or_cycle740": "none",
+    "scope": "finite labelled-cycle graph combinatorics only"
+  },
+  "canonical_registration": {
+    "citation_graph_manifest": {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "448a549b0c22af15c4df26c1c7b089b76f09363a32b223283f8bd3a825f59a2e"
+    },
+    "harness_index": {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "sha256": "51d0ffaf01f51cc52d09fa92b07b9ed1cc4d46a05d2383980ed51157d0822cab"
+    },
+    "section": "Unaudited Bounded Claim Candidates"
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 12,
+    "primary_named_checks_failed": 0,
+    "primary_named_checks_passed": 11
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 756,
+  "date": "2026-07-28",
+  "evidence_contract": {
+    "cache_status": {
+      "independent": "fresh",
+      "primary": "fresh"
+    },
+    "independent_declared_inputs": [
+      {
+        "path": "scripts/frontier_cycle756_c35_independent_set_census_2026_07_28.py",
+        "sha256": "b7d7a8862235a6bbf7641f4a5ee61563d2c5c36808affe53ff8a2a1eb4755c0a"
+      },
+      {
+        "path": "docs/CYCLE_GRAPH_C35_INDEPENDENT_SET_CENSUS_NARROW_THEOREM_NOTE_2026-07-28.md",
+        "sha256": "b8fc7cb3a04910434b3309b82753b7aaf0df5d5e98588409427d0c932fcdb466"
+      }
+    ],
+    "independent_input_fingerprint_sha256": "147cdddc2ec43c4ae8c21a73ac178f1dc0c235783cb4c8f10a479f35609e19d7",
+    "primary_declared_inputs": [
+      {
+        "path": "docs/CYCLE_GRAPH_C35_INDEPENDENT_SET_CENSUS_NARROW_THEOREM_NOTE_2026-07-28.md",
+        "sha256": "b8fc7cb3a04910434b3309b82753b7aaf0df5d5e98588409427d0c932fcdb466"
+      }
+    ],
+    "primary_input_fingerprint_sha256": "261ba34b65c3e6bb199af24fd98f03403fca7b44a1feee2873d82fbf7c5fabdc"
+  },
+  "result": {
+    "adjacent_pair_masks": 35,
+    "independent_set_total": 20633239,
+    "occupied_endpoint_incidences": 70,
+    "stations": 35,
+    "strata": [
+      1,
+      35,
+      560,
+      5425,
+      35525,
+      166257,
+      573300,
+      1480050,
+      2877875,
+      4206125,
+      4576264,
+      3640210,
+      2057510,
+      791350,
+      193800,
+      27132,
+      1785,
+      35
+    ]
+  },
+  "status": "CYCLE756_C35_INDEPENDENT_SET_CENSUS_PASS"
+}

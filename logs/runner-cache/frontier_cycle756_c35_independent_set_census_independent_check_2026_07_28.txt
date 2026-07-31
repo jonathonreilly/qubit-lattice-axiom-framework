@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle756_c35_independent_set_census_independent_check_2026_07_28.py
+runner_sha256: 7cfd8e8c79770a2311a874ad9cc959ce954e1481da1dfc031aba154e157af6c8
+input_fingerprint_sha256: 147cdddc2ec43c4ae8c21a73ac178f1dc0c235783cb4c8f10a479f35609e19d7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS primary_imports_only_standard_library_modules :: True
+PASS primary_declares_only_the_note_as_external_input :: True
+PASS primary_source_excludes_rejected_parent_modules :: True
+PASS independent_c35_state_dp_matches_declared_strata :: True
+PASS independent_c35_formula_matches_state_dp :: True
+PASS independent_c35_total_is_exact :: True
+PASS closed_formula_matches_all_masks_for_c3_through_c18 :: True
+PASS independent_adjacent_pair_mask_census_is_exact :: True
+PASS independent_occupied_endpoint_incidence_total_is_seventy :: True
+PASS fresh_primary_subprocess_passes :: True
+PASS fresh_primary_report_matches_independent_recount :: True
+PASS note_preserves_narrow_unaudited_scope :: True
+{"adjacent_pair_masks":35,"claim":"independent_c35_census_check","cycle":756,"failed":0,"independent_set_total":20633239,"occupied_endpoint_incidences":70,"passed":12,"primary_imported":false,"runtime_sec":0.064376,"small_cycle_exhaustive_range":[3,18],"small_cycle_masks_checked":524280,"stations":35,"strata":[1,35,560,5425,35525,166257,573300,1480050,2877875,4206125,4576264,3640210,2057510,791350,193800,27132,1785,35],"terminal":"CYCLE756_C35_INDEPENDENT_SET_CENSUS_INDEPENDENT_PASS"}
+CYCLE756_C35_INDEPENDENT_SET_CENSUS_INDEPENDENT_PASS
+
+----- stderr -----
+

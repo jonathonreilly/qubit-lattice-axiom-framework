@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle756_c35_independent_set_census_2026_07_28.py
+runner_sha256: b7d7a8862235a6bbf7641f4a5ee61563d2c5c36808affe53ff8a2a1eb4755c0a
+input_fingerprint_sha256: 261ba34b65c3e6bb199af24fd98f03403fca7b44a1feee2873d82fbf7c5fabdc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS c35_closed_formula_matches_declared_strata :: True
+PASS c35_fraction_form_matches_closed_formula :: True
+PASS c35_path_split_matches_closed_formula :: True
+PASS c35_strata_sum_matches_declared_total :: True
+PASS c35_total_matches_lucas_recurrence :: True
+PASS adjacent_pair_mask_census_is_exact :: True
+PASS adjacent_pair_masks_have_two_occupied_vertices :: True
+PASS adjacent_pair_masks_are_rotations_of_one_labelled_mask :: True
+PASS each_pair_has_two_occupied_endpoint_incidences :: True
+PASS occupied_endpoint_incidence_total_is_seventy :: True
+PASS note_declares_finite_graph_only_scope :: True
+{"adjacent_pair_masks":35,"claim":"c35_independent_set_census_and_adjacent_pair_incidences","cycle":756,"failed":0,"independent_set_total":20633239,"lucas_number":20633239,"occupied_endpoint_incidences":70,"pair_mask_sha256":"f1726623158a5fcfcb2677daf14ddad80c552b624f464d38745337ebefefac99","passed":11,"runtime_sec":0.000256,"stations":35,"strata":[1,35,560,5425,35525,166257,573300,1480050,2877875,4206125,4576264,3640210,2057510,791350,193800,27132,1785,35],"terminal":"CYCLE756_C35_INDEPENDENT_SET_CENSUS_PASS"}
+CYCLE756_C35_INDEPENDENT_SET_CENSUS_PASS
+
+----- stderr -----
+

@@ -636,7 +636,13 @@ def mixed_orbit_report(
         "E2": base["E2_stamped"],
     }
     tables = {}
-    offset_rows: dict[int, dict[str, object]] = {}
+    orbit_rows: dict[int, dict[str, object]] = {
+        orbit_index: {
+            "orbit_index": orbit_index,
+            "representative": orbit[0],
+        }
+        for orbit_index, orbit in enumerate(scope["orbits"])
+    }
     for reading, selection in readings.items():
         classes = Counter()
         count_histogram = Counter()
@@ -654,12 +660,10 @@ def mixed_orbit_report(
             )
             classes[orbit_class] += 1
             count_histogram[count] += 1
-            if orbit_class == "MIXED":
-                row = offset_rows.setdefault(orbit_index, {
-                    "orbit_index": orbit_index,
-                    "representative": representative,
-                })
-                row[f"{reading}_stamped_offsets"] = offsets
+            orbit_rows[orbit_index][reading] = {
+                "classification": orbit_class,
+                "stamped_offsets": offsets,
+            }
         tables[reading] = {
             "stamped_setup_count": len(selection),
             "uniformly_stamped_orbits": classes["uniformly-stamped"],
@@ -667,19 +671,18 @@ def mixed_orbit_report(
             "MIXED_orbits": classes["MIXED"],
             "stamped_members_per_orbit_histogram": dict(sorted(count_histogram.items())),
         }
-    rows = []
-    for orbit_index in sorted(offset_rows):
-        row = offset_rows[orbit_index]
-        row.setdefault("E1_stamped_offsets", ())
-        row.setdefault("E2_stamped_offsets", ())
-        rows.append(row)
+    rows = tuple(
+        row for row in orbit_rows.values()
+        if row["E1"]["classification"] == "MIXED"
+        or row["E2"]["classification"] == "MIXED"
+    )
     result = {
         "orbit_offset_encoding": (
             "offset g denotes frame_map(representative,g,11); rows are the "
             "union of orbits MIXED under E1 or E2"
         ),
         "by_reading": tables,
-        "mixed_orbit_census": tuple(rows),
+        "mixed_orbit_census": rows,
     }
     result["pass"] = (
         tables["E1"]["stamped_setup_count"] == 182

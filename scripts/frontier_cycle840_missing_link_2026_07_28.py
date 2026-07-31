@@ -142,6 +142,37 @@ EXPECTED_MEET_PREFIX_PATTERNS = (
         "20e448e5ff534f9b865f946fa516aca11c03924630765cc857634bdcaf75fbf4",
     ),
 )
+EXPECTED_CYCLE838_K2_KEYS = (
+    (2, (0, 5), 0),
+    (2, (0, 5), 1),
+    (2, (0, 5), 2),
+    (2, (0, 6), 0),
+    (2, (0, 6), 1),
+    (2, (0, 6), 2),
+)
+DELAYED_KEYS = tuple(
+    (event, pair)
+    for event in (0, 1, 2)
+    for pair in ((0, 5), (0, 6))
+)
+DELAYED_HORIZON_MOVEMENTS = 262144
+EXPECTED_DELAYED_FUNNELS = {
+    1: {
+        "movement": 193210,
+        "state_bit_tuple_sha256":
+            "835170ded93f7f20c2aea6a09f637ff9cbea888d5676cb175510f0d3ade9ac0b",
+        "hamming_weight": 52,
+    },
+    2: {
+        "movement": 246669,
+        "state_bit_tuple_sha256":
+            "009fb7554ec831949e8cb3658c40d55affb0b6b9e66cf68229b9cd749418d3cd",
+        "hamming_weight": 47,
+    },
+}
+EXPECTED_EVENT0_HORIZON_STATE_SHA256 = (
+    "c0a5c891f747369c925cadb48b0e20dc950c267d96277dd4d178cf369a931565"
+)
 
 Pair = tuple[int, int]
 Key = tuple[int, Pair]
@@ -244,6 +275,10 @@ def source_controls() -> dict[str, object]:
     payloads = {
         path: (ROOT / path).read_bytes() for path in AUDIT_INPUT_PATHS
     }
+    worktree_trees = {
+        path: ast.parse(payload, filename=path)
+        for path, payload in payloads.items()
+    }
     self_tree = ast.parse(
         Path(__file__).read_bytes(), filename=Path(__file__).name
     )
@@ -300,6 +335,17 @@ def source_controls() -> dict[str, object]:
             ),
         })
     ast_basis = {
+        "cycle719_controller_basis": {
+            "interleaved_program", "mapped_macro",
+            "apply_controller_step", "run_orbit",
+        } <= function_names(worktree_trees[AUDIT_INPUT_PATHS[0]]),
+        "cycle822_family_and_predictor_basis": {
+            "build_family", "sstar_anatomy", "entry_predictors",
+        } <= function_names(worktree_trees[AUDIT_INPUT_PATHS[1]]),
+        "cycle832_funnel_basis": {
+            "build_seed_family", "packed_schedule",
+            "advance", "funnel_anatomies",
+        } <= function_names(worktree_trees[AUDIT_INPUT_PATHS[2]]),
         "cycle839_reimplementation_basis": {
             "decode_cycle830_fixtures", "build_phase_schedules",
             "apply_masked", "evolve_controller_ticks",
@@ -309,6 +355,11 @@ def source_controls() -> dict[str, object]:
             "watched_residual_rows", "masked_schedule", "advance",
             "evolve", "optional_k2_certificate",
         } <= function_names(historical_trees["cycle838_primary"]),
+        "cycle838_station0_literal_cohort":
+            literal_assignment(
+                historical_trees["cycle838_primary"],
+                "K2_STATION0_S5_OPEN_THROUGH_T65536",
+            ) == EXPECTED_CYCLE838_K2_KEYS,
         "cycle830_literal_fixtures": all(
             literal_assignment(
                 historical_trees["cycle830_fixture_primary"], name
@@ -326,6 +377,9 @@ def source_controls() -> dict[str, object]:
             == AUDIT_INPUT_PATHS,
         "read_cap": 7,
         "named_worktree_input_count": len(AUDIT_INPUT_PATHS),
+        "pinned_historical_input_count": len(HISTORICAL_SOURCES),
+        "total_source_primary_count":
+            len(AUDIT_INPUT_PATHS) + len(HISTORICAL_SOURCES),
         "all_paths_existing_worktree_relative": all(
             row["exists"] and row["worktree_relative"]
             for row in worktree_rows
@@ -355,7 +409,7 @@ def source_controls() -> dict[str, object]:
     }
     result["pass"] = (
         result["AUDIT_INPUT_PATHS_literal"]
-        and len(AUDIT_INPUT_PATHS) <= result["read_cap"]
+        and result["total_source_primary_count"] <= result["read_cap"]
         and result["all_paths_existing_worktree_relative"]
         and all(row["exact"] for row in worktree_rows)
         and all(row["exact"] for row in historical_rows)
@@ -613,7 +667,7 @@ def evolve_s5_to_sstar_bound(
     s5_keys = tuple(
         key for key in all_keys if cyclic_separation(key[1]) == 5
     )
-    lane_keys = s5_keys + (s5_keys[0],)
+    lane_keys = s5_keys + s5_keys
     columns = bit_slice(tuple(states[key] for key in lane_keys))
     schedules = build_phase_schedules(macros, lane_keys)
     primary_mask = (1 << len(s5_keys)) - 1
@@ -635,10 +689,13 @@ def evolve_s5_to_sstar_bound(
         if tick in (3, SSTAR_BOUND_CONTROLLER_TICKS):
             duplicate_checks.append({
                 "controller_tick": tick,
-                "exact": all(
-                    ((column >> 0) & 1)
-                    == ((column >> len(s5_keys)) & 1)
-                    for column in columns
+                "all_44_exact": all(
+                    all(
+                        ((column >> lane) & 1)
+                        == ((column >> (lane + len(s5_keys))) & 1)
+                        for column in columns
+                    )
+                    for lane in range(len(s5_keys))
                 ),
             })
         hits = matching_mask(
@@ -652,7 +709,7 @@ def evolve_s5_to_sstar_bound(
     exact = (
         len(s5_keys) == 44
         and tuple(exact_hits) == EXPECTED_CONTROLLER_TICK_HITS
-        and all(row["exact"] for row in duplicate_checks)
+        and all(row["all_44_exact"] for row in duplicate_checks)
     )
     return {
         "keys": s5_keys,
@@ -1089,34 +1146,510 @@ def certificate_b_discriminator(
     }
 
 
-def main() -> int:
-    """Run the first two Cycle-840 certificates."""
+def delayed_cohort_evolution(
+    fixtures: dict[str, object],
+) -> dict[str, object]:
+    macros = fixtures["macros"]
+    states = fixtures["states"]
+    assert isinstance(macros, tuple)
+    assert isinstance(states, dict)
+    lane_keys = DELAYED_KEYS + DELAYED_KEYS
+    columns = bit_slice(tuple(states[key] for key in lane_keys))
+    schedule = build_movement_schedule(macros, lane_keys)
+    capture_moments = tuple(sorted({
+        DELAYED_HORIZON_MOVEMENTS,
+        *(
+            int(row["movement"])
+            for row in EXPECTED_DELAYED_FUNNELS.values()
+        ),
+    }))
+    captures = {}
+    duplicate_checks = []
+    for movement in range(1, DELAYED_HORIZON_MOVEMENTS + 1):
+        apply_masked(columns, schedule)
+        if movement in capture_moments:
+            state_rows = capture_lanes(columns, len(lane_keys))
+            captures[movement] = state_rows[:len(DELAYED_KEYS)]
+            duplicate_checks.append({
+                "movement": movement,
+                "all_6_exact": all(
+                    state_rows[lane]
+                    == state_rows[lane + len(DELAYED_KEYS)]
+                    for lane in range(len(DELAYED_KEYS))
+                ),
+            })
+    expected_schedule_rows = tuple(sorted(set(
+        sum(
+            len(macros[
+                (position + phase) % RING_STATIONS
+            ])
+            for phase in range(RING_STATIONS)
+            for position in key[1]
+        )
+        for key in DELAYED_KEYS
+    )))
+    exact = (
+        fixtures["public"]["pass"]
+        and len(DELAYED_KEYS) == 6
+        and set(captures) == set(capture_moments)
+        and expected_schedule_rows == (WORD_GATE_COUNT,)
+        and all(row["all_6_exact"] for row in duplicate_checks)
+    )
+    return {
+        "captures": captures,
+        "public": {
+            "keys": DELAYED_KEYS,
+            "Cycle838_key_encoding": EXPECTED_CYCLE838_K2_KEYS,
+            "movement_horizon": DELAYED_HORIZON_MOVEMENTS,
+            "movement_schedule_gate_rows": len(schedule),
+            "per_lane_gate_rows_per_movement":
+                expected_schedule_rows,
+            "capture_moments": capture_moments,
+            "duplicate_determinism_checks": tuple(duplicate_checks),
+            "pass": exact,
+        },
+    }
+
+
+def certificate_c_delayed(
+    certificate_a: dict[str, object],
+    delayed: dict[str, object],
+) -> dict[str, object]:
+    meet_rows = {
+        row["key"]: row for row in certificate_a["rows_44"]
+    }
+    captures = delayed["captures"]
+    assert isinstance(captures, dict)
+    delayed_meets = tuple({
+        "key": key,
+        "meet_controller_tick": meet_rows[key]["meet_controller_tick"],
+        "data_state_packed_sha256":
+            meet_rows[key]["data_state_packed_sha256"],
+        "meet_prefix_pattern": meet_rows[key]["meet_prefix_pattern"],
+        "property_P": meet_rows[key]["property_P"],
+        "origin_member": meet_rows[key]["origin_member"],
+        "A_token_positions": meet_rows[key]["A_token_positions"],
+        "meeting_centers": meet_rows[key]["meeting_centers"],
+    } for key in DELAYED_KEYS)
+    cohort_rows = []
+    for event, expected in sorted(EXPECTED_DELAYED_FUNNELS.items()):
+        movement = int(expected["movement"])
+        event_indices = tuple(
+            index for index, key in enumerate(DELAYED_KEYS)
+            if key[0] == event
+        )
+        event_states = tuple(
+            captures[movement][index] for index in event_indices
+        )
+        hashes = tuple(
+            state_bit_tuple_sha256(state) for state in event_states
+        )
+        cohort_rows.append({
+            "event": event,
+            "geometry_pairs": tuple(
+                DELAYED_KEYS[index][1] for index in event_indices
+            ),
+            "meet_states_equal_within_event": (
+                len({
+                    meet_rows[DELAYED_KEYS[index]][
+                        "data_state_packed_sha256"
+                    ]
+                    for index in event_indices
+                }) == 1
+            ),
+            "property_P_status": tuple(
+                meet_rows[DELAYED_KEYS[index]]["property_P"]
+                for index in event_indices
+            ),
+            "Cycle838_first_clean_movement": movement,
+            "independent_trajectory_capture_movement": movement,
+            "two_pair_states_exactly_equal": len(set(event_states)) == 1,
+            "terminal_state_bit_tuple_sha256": hashes[0],
+            "expected_terminal_state_bit_tuple_sha256":
+                expected["state_bit_tuple_sha256"],
+            "terminal_hamming_weight": event_states[0].bit_count(),
+            "expected_terminal_hamming_weight":
+                expected["hamming_weight"],
+            "terminal_exact": (
+                len(set(event_states)) == 1
+                and len(set(hashes)) == 1
+                and hashes[0] == expected["state_bit_tuple_sha256"]
+                and event_states[0].bit_count()
+                == expected["hamming_weight"]
+            ),
+        })
+    event0_indices = tuple(
+        index for index, key in enumerate(DELAYED_KEYS) if key[0] == 0
+    )
+    event0_horizon_states = tuple(
+        captures[DELAYED_HORIZON_MOVEMENTS][index]
+        for index in event0_indices
+    )
+    event0_meets = tuple(
+        meet_rows[DELAYED_KEYS[index]] for index in event0_indices
+    )
+    accepted_source_hashes = {
+        source_hash
+        for source_hash, _bank0_hash in EXPECTED_MEET_PREFIX_PATTERNS
+    }
+    event0_origin_perturbation = {
+        "keys": tuple(DELAYED_KEYS[index] for index in event0_indices),
+        "source_register_still_in_entrant_source_class": all(
+            row["register_blocks"][0]["sha256"]
+            in accepted_source_hashes
+            for row in event0_meets
+        ),
+        "joint_source_bank0_prefix_outside_P": all(
+            not row["property_P"] for row in event0_meets
+        ),
+        "station0_pair_meet_states_equal":
+            len({
+                row["data_state_packed_sha256"]
+                for row in event0_meets
+            }) == 1,
+        "horizon_movement": DELAYED_HORIZON_MOVEMENTS,
+        "horizon_state_bit_tuple_sha256": tuple(
+            state_bit_tuple_sha256(state)
+            for state in event0_horizon_states
+        ),
+        "expected_horizon_state_bit_tuple_sha256":
+            EXPECTED_EVENT0_HORIZON_STATE_SHA256,
+        "horizon_hash_exact": all(
+            state_bit_tuple_sha256(state)
+            == EXPECTED_EVENT0_HORIZON_STATE_SHA256
+            for state in event0_horizon_states
+        ),
+        "horizon_pair_states_equal":
+            len(set(event0_horizon_states)) == 1,
+        "full_configurations_still_distinct":
+            len({
+                DELAYED_KEYS[index][1] for index in event0_indices
+            }) == 2,
+        "Cycle838_status":
+            "both event-0 station-0 keys remain open through movement 262144",
+    }
+    distinct_funnels = (
+        len({
+            row["terminal_state_bit_tuple_sha256"]
+            for row in cohort_rows
+        }) == len(cohort_rows) == 2
+    )
+    mechanical_exact = (
+        certificate_a["pass"]
+        and delayed["public"]["pass"]
+        and len(delayed_meets) == 6
+        and all(row["origin_member"] for row in delayed_meets)
+        and not any(row["property_P"] for row in delayed_meets)
+        and all(row["terminal_exact"] for row in cohort_rows)
+        and all(
+            row["meet_states_equal_within_event"] for row in cohort_rows
+        )
+        and distinct_funnels
+        and event0_origin_perturbation[
+            "source_register_still_in_entrant_source_class"
+        ]
+        and event0_origin_perturbation[
+            "joint_source_bank0_prefix_outside_P"
+        ]
+        and event0_origin_perturbation["horizon_hash_exact"]
+        and event0_origin_perturbation[
+            "horizon_pair_states_equal"
+        ]
+        and event0_origin_perturbation[
+            "full_configurations_still_distinct"
+        ]
+    )
+    return {
+        "verdict": "PARTIAL" if mechanical_exact else "FAILS",
+        "pinned_Cycle838_scope":
+            "the two station-0 s=5 geometries (0,5) and (0,6), for "
+            "events 0,1,2",
+        "delayed_meet_rows": delayed_meets,
+        "resolved_event_cohorts": tuple(cohort_rows),
+        "two_later_funnels_are_distinct": distinct_funnels,
+        "event0_origin_isolation": event0_origin_perturbation,
+        "account":
+            "Origin membership changes bank-0 enough to move the event-0 "
+            "meet prefix outside P while leaving its source-register class "
+            "inside the entrant source class.  Events 1 and 2 also lie "
+            "outside P and the two station-0 geometries synchronize only at "
+            "the exact later Cycle-838 terminal states (movements 193210 "
+            "and 246669), which are distinct funnels.  The event-0 projected "
+            "data states coincide at movement 262144, but the fixed pair "
+            "words keep the full configurations and next update words "
+            "distinct; Cycle 838 therefore still finds both open.",
+        "why_not_HOLDS":
+            "The register displacement classifies the delay and reproduces "
+            "the two later terminal states, but no local theorem derives "
+            "either waiting time or funnel identity from the displaced "
+            "bank-0 contents.  Cycle-838 first-clean minimality is source-"
+            "pinned rather than independently rescanned here.",
+        "pass": mechanical_exact,
+    }
+
+
+def certificate_d_verdict(
+    certificate_a: dict[str, object],
+    certificate_b: dict[str, object],
+    certificate_c: dict[str, object],
+) -> dict[str, object]:
+    closed_44 = (
+        certificate_a["pass"]
+        and certificate_b["pass"]
+        and certificate_b["verdict"] == "LINK_FOUND"
+        and certificate_b["mechanical_chain_on_44"][
+            "unified_predicate_iff_P"
+        ]
+        and certificate_b["mechanical_chain_on_44"][
+            "P_iff_bounded_funnel_reach"
+        ]
+    )
+    if closed_44 and certificate_c["verdict"] == "HOLDS":
+        verdict = "CAUSAL_CHAIN_CLOSED"
+    elif closed_44 and certificate_c["pass"]:
+        verdict = "LINK_FOUND_CHAIN_PARTIAL"
+    else:
+        verdict = "OPEN"
+    exact = (
+        closed_44
+        and certificate_c["pass"]
+        and certificate_c["verdict"] == "PARTIAL"
+        and verdict == "LINK_FOUND_CHAIN_PARTIAL"
+    )
+    return {
+        "verdict": verdict,
+        "44_key_loop_closed_mechanically": closed_44,
+        "delayed_account": certificate_c["verdict"],
+        "causal_chain_closed": verdict == "CAUSAL_CHAIN_CLOSED",
+        "sharp_reading":
+            "The missing finite meet-level link is found exactly: P is "
+            "equivalent to the nine bounded S* entrants on all 44 and to the "
+            "unified entry predicate.  The broader causal chain remains "
+            "partial because P is a four-pattern finite discriminator, not "
+            "a local rule theorem, and the origin-shifted register content "
+            "does not derive the delayed waiting times or terminal identities.",
+        "pass": exact,
+    }
+
+
+def render(
+    certificates: dict[str, object],
+    report: dict[str, object],
+) -> str:
+    return "\n".join((
+        *(
+            f"CERTIFICATE {name} {compact(value)}"
+            for name, value in certificates.items()
+        ),
+        "SUMMARY_JSON " + compact(report),
+        str(report["terminal"]),
+    )) + "\n"
+
+
+def stable_render(
+    certificates: dict[str, object],
+    checks: dict[str, bool],
+    report: dict[str, object],
+    controls_base: bool,
+) -> str:
+    controls = certificates["E_CONTROLS"]
+    assert isinstance(controls, dict)
+    for _attempt in range(20):
+        controls["pass"] = (
+            controls_base
+            and controls["stdout_bytes"] < STDOUT_LIMIT_BYTES
+        )
+        checks["E_CONTROLS"] = bool(controls["pass"])
+        report["checks"] = dict(checks)
+        report["pass"] = all(checks.values())
+        report["terminal"] = (
+            "CYCLE840_LINK_FOUND_CHAIN_PARTIAL_PASS"
+            if (
+                report["pass"]
+                and report["verdict"] == "LINK_FOUND_CHAIN_PARTIAL"
+            )
+            else "CYCLE840_MISSING_LINK_HONEST_FAIL"
+        )
+        output = render(certificates, report)
+        size = len(output.encode())
+        if (
+            controls["stdout_bytes"] == size
+            and report["stdout_bytes"] == size
+        ):
+            return output
+        controls["stdout_bytes"] = size
+        report["stdout_bytes"] = size
+    raise AssertionError("stdout byte fixed point did not converge")
+
+
+def run() -> int:
+    started = monotonic()
     controls = source_controls()
     fixtures = decode_cycle830_fixtures()
     dynamics = evolve_s5_to_sstar_bound(fixtures)
     meeting = meeting_theorem_certificate()
     certificate_a = certificate_a_split(fixtures, dynamics)
     certificate_b = certificate_b_discriminator(certificate_a, meeting)
-    result = {
-        "cycle": 840,
-        "increment": "CERTIFICATES_A_B",
-        "source_controls": controls["pass"],
-        "fixtures": fixtures["public"]["pass"],
-        "s5_dynamics": dynamics["public"]["pass"],
-        "meeting_theorem": meeting["pass"],
-        "partition": certificate_a["partition"],
-        "discriminator": certificate_b["verdict"],
-        "pass": (
-            controls["pass"]
-            and fixtures["public"]["pass"]
-            and dynamics["public"]["pass"]
-            and meeting["pass"]
-            and certificate_a["pass"]
-            and certificate_b["pass"]
-        ),
+    delayed = delayed_cohort_evolution(fixtures)
+    certificate_c = certificate_c_delayed(certificate_a, delayed)
+    certificate_d = certificate_d_verdict(
+        certificate_a, certificate_b, certificate_c
+    )
+    deterministic = (
+        all(
+            row["all_44_exact"]
+            for row in dynamics["public"][
+                "duplicate_determinism_checks"
+            ]
+        )
+        and all(
+            row["all_6_exact"]
+            for row in delayed["public"]["duplicate_determinism_checks"]
+        )
+    )
+    elapsed = monotonic() - started
+    controls.update({
+        "source_controls_pass": controls["pass"],
+        "fixture_provenance": fixtures["public"],
+        "Cycle839_reimplementation": dynamics["public"],
+        "Cycle838_delayed_reimplementation": delayed["public"],
+        "blocked_modules_loaded_at_end": tuple(sorted(
+            name for name in sys.modules
+            if name.rsplit(".", 1)[-1] in {
+                Path(path).stem for path in AUDIT_INPUT_PATHS
+            } | {
+                Path(path).stem
+                for _label, _commit, path, _sha, _blob
+                in HISTORICAL_SOURCES
+            }
+        )),
+        "firewall_hits_at_end": tuple(FIREWALL.hits),
+        "exact_arithmetic":
+            "Graph arcs, Boolean X/CNOT/Toffoli gates, bit slices, complete "
+            "integer movement/tick bounds, 5815-bit equality, counts, and "
+            "SHA digests use exact Python integers/bytes/sets.  Only "
+            "monotonic wall runtime is floating point.",
+        "determinism": {
+            "method":
+                "in-run duplicate lanes for every one of the 44 s=5 keys "
+                "and all six Cycle-838 station-0 cohort keys",
+            "s5_all_44_duplicate_checks":
+                dynamics["public"]["duplicate_determinism_checks"],
+            "delayed_all_6_duplicate_checks":
+                delayed["public"]["duplicate_determinism_checks"],
+            "exact": deterministic,
+        },
+        "certificate_digest_sha256": digest((
+            meeting,
+            certificate_a,
+            certificate_b,
+            certificate_c,
+            certificate_d,
+            dynamics["public"],
+            delayed["public"],
+        )),
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "user_runtime_ceiling_seconds": 1500,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "pass": False,
+    })
+    controls_base = (
+        controls["source_controls_pass"]
+        and fixtures["public"]["pass"]
+        and dynamics["public"]["pass"]
+        and delayed["public"]["pass"]
+        and meeting["pass"]
+        and certificate_a["pass"]
+        and certificate_b["pass"]
+        and certificate_c["pass"]
+        and certificate_d["pass"]
+        and deterministic
+        and not controls["blocked_modules_loaded_at_end"]
+        and not controls["firewall_hits_at_end"]
+        and elapsed < AUDIT_TIMEOUT_SEC < 1500
+    )
+    certificates = {
+        "A_44_WAY_SPLIT": certificate_a,
+        "B_MEET_DISCRIMINATOR": {
+            "meeting_theorem": meeting,
+            **certificate_b,
+        },
+        "C_DELAYED_COHORTS": certificate_c,
+        "D_VERDICT": certificate_d,
+        "E_CONTROLS": controls,
     }
-    sys.stdout.write(compact(result) + "\n")
-    return 0 if result["pass"] else 1
+    checks = {
+        "A_EXACT_9_VS_35": bool(
+            certificate_a["pass"]
+            and certificate_a["partition"] == "9-vs-35"
+        ),
+        "B_EXACT_DISCRIMINATOR": bool(
+            certificate_b["pass"]
+            and certificate_b["verdict"] == "LINK_FOUND"
+        ),
+        "C_DELAY_ACCOUNT_PARTIAL": bool(
+            certificate_c["pass"]
+            and certificate_c["verdict"] == "PARTIAL"
+        ),
+        "D_LINK_FOUND_CHAIN_PARTIAL": bool(
+            certificate_d["pass"]
+            and certificate_d["verdict"]
+            == "LINK_FOUND_CHAIN_PARTIAL"
+        ),
+        "E_CONTROLS": False,
+        "FULL_DUPLICATE_DETERMINISM": deterministic,
+        "RUNTIME_BOUND": elapsed < AUDIT_TIMEOUT_SEC,
+    }
+    report = {
+        "cycle": 840,
+        "stage": "certificates-A-B-C-D-E",
+        "partition": certificate_a["partition"],
+        "reaching_count": certificate_a["reaching_count"],
+        "nonreaching_count": certificate_a["nonreaching_count"],
+        "discriminator": certificate_b["verdict"],
+        "property_P": certificate_b["property_P"],
+        "44_key_loop_closed_mechanically":
+            certificate_d["44_key_loop_closed_mechanically"],
+        "delayed_account": certificate_c["verdict"],
+        "delayed_funnel_moments": tuple(
+            (
+                row["event"],
+                row["Cycle838_first_clean_movement"],
+                row["terminal_state_bit_tuple_sha256"],
+            )
+            for row in certificate_c["resolved_event_cohorts"]
+        ),
+        "verdict": certificate_d["verdict"],
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "checks": {},
+        "pass": False,
+        "terminal": "CYCLE840_MISSING_LINK_HONEST_FAIL",
+    }
+    output = stable_render(
+        certificates, checks, report, controls_base
+    )
+    if len(output.encode()) >= STDOUT_LIMIT_BYTES:
+        raise AssertionError("stdout limit exceeded")
+    sys.stdout.write(output)
+    return 0 if report["pass"] else 1
+
+
+def main() -> int:
+    try:
+        return run()
+    except Exception as error:
+        sys.stdout.write(compact({
+            "pass": False,
+            "exception_type": type(error).__name__,
+            "exception": str(error),
+            "terminal": "CYCLE840_MISSING_LINK_HONEST_FAIL",
+        }) + "\n")
+        return 1
 
 
 if __name__ == "__main__":

@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC23-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle834_backbone_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle834_k3_backbone_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 9
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 834,
+  "files": {
+    "docs/K3_BACKBONE_CYCLE834_BOUNDED_THEOREM_NOTE_2026-07-28.md": "96f52d9c521652363657c930ea2d1fc197d6fa0b66172b2870f5d6e8e02ca1f8",
+    "logs/runner-cache/frontier_cycle834_backbone_independent_check_2026_07_28.txt": "1ba2f43a9ea23a3f5d7726c8a78ead3226c3b47ec6ce576ab49d0d419375818a",
+    "logs/runner-cache/frontier_cycle834_k3_backbone_2026_07_28.txt": "1e371f54af2aed2fef10c2f28f131538074dfd7c3570b5c7884a4a4f17850e1a",
+    "scripts/frontier_cycle834_backbone_independent_check_2026_07_28.py": "4e8d50c7b0922628bb7c825657f84570a7575479e4ad7764a3808edfe67872d8",
+    "scripts/frontier_cycle834_k3_backbone_2026_07_28.py": "8ed75c4e6f19fa5e8a9492225aae681ab85017dcfac00f8ab109b7c587aeddaa"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "k=3 backbone = min-sep-2 class (14 keys; all 8 resolutions; checker-audited selection)",
+    "PARTIAL cross-stratum law: extreme geometry + cycle coherence generalize; transient synchronization does NOT (no-sync verified lags 0..8)",
+    "pre-registered conditional forecast: the (0,2,6/7/8) trios per event",
+    "checker PRIMARY_SURVIVES_INDEPENDENT_CHECK"
+  ]
+}

@@ -727,7 +727,6 @@ def main() -> None:
             and mass["contact_vacuum_and_one_particle_residual"] < TOL
             and mass["contact_double_occupation_phase_residual"] < TOL
         ),
-        "pointer_scope_is_not_promoted_to_time_Record_Born_or_source": True,
     }
     inventory = {
         "derived": (

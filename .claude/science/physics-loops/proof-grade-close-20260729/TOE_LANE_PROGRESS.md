@@ -1,3 +1,30 @@
+# TOE lane update — fixed rubric (2026-07-31, campaign-4 wave: the unification)
+
+| TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |
+|---|---|---|---|---|
+| Operational quantum / Records | 98% | 97% | 70% | 99% |
+| Causal time | 85% ↑3 | 75% | 47% ↑1 | 99% |
+| Inertia / matter | 97% | 98% | 88% | 99% |
+| Gravity / source / resources | 71% | 47% | 30% | 94% |
+| Born probability / realized history | 91% ↑1 | 66% | 41% ↑1 | 99% |
+
+Science-evidence scores, not audit-retention scores; campaign PRs #5772–#5852 remain pre-review-loop.
+
+Why the scores changed (this wave, all checker-verified):
+- Causal time rose: the cohort-moment skeleton is proven (gaps = lcm(4464,5952) + residuals {595,64}); the fourth backbone movement is a PULSE — a nine-way synchronization recurring at one phase of every period-3 cycle, forever — a new kind of clock; the backbone's story is complete in four movements.
+- Born/realized history rose: the three cohort funnels are ONE object (39-field register-advance map, full-state equality; weights = the map's exact accounting) with a sha-pinned fourth-funnel prediction S0' (weight 47, unvisited through T=65,536); the unified entry predicate is exact both directions over all 176 keys.
+- Records/autonomy unchanged this wave: the E1/E2 schedule decision (#5847) and the allocation input remain the owner's; nothing new became self-running.
+
+Breakthrough log this wave:
+1. The backbone completes: 36/36 keys = three transient cohorts + the nine period-3 cycles.
+2. The pulse: partitions 1+3+3+2 -> 1+3+3+2 -> 9, every period, forever.
+3. The funnel family map (checker-found): S* -> S2 -> S1 by full-state equality; 5,776 common wires.
+4. S0' — the first sha-pinned prediction object of the program.
+5. The braid correction: merger profiles are non-monotone; synchronization, not attraction.
+6. Reversals 20-22 absorbed, two of them constructive (the map; the four-event catalog).
+
+Next retasking: the residuals {595, 64} and the pulse phase (the moment law's open core); why max-separation-5 is the backbone (derivation probe); the k=3 backbone analogue; the off-backbone 133 at deeper horizon with S0' on the line; the two owner decisions (E1/E2; the allocation) and review-lane drain.
+
 # TOE Lane Progress — the measure table (2026-07-31)
 
 Measures: **Chr** = characterized (exact proven shape) | **Der** = derived from the four axioms at landed scope | **Chk** = survived the spec'd-to-refute adversarial checker | **Aud** = audit-ratified on main via the owner-operated review lanes.

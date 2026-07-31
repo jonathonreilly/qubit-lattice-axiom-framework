@@ -1078,8 +1078,9 @@ def register_accounting_rows(
             left.bit_count() + flipped_on - flipped_off
             == right.bit_count()
         )
-        localized = set(support) <= register_set
-        three_wire = len(support) == 3
+        outside_register = tuple(sorted(set(support) - register_set))
+        localized = not outside_register
+        outside_is_three = len(outside_register) == 3
         rows.append({
             "event_edge": (source, target),
             "source_weight": left.bit_count(),
@@ -1093,15 +1094,23 @@ def register_accounting_rows(
             "net_weight_increment": flipped_on - flipped_off,
             "weight_accounting_exact": accounting,
             "weight_accounting_status": "HOLDS" if accounting else "FAILS",
-            "three_wire_update": three_wire,
-            "three_wire_status": "HOLDS" if three_wire else "FAILS",
+            "total_xor_is_exactly_three_wire": len(support) == 3,
+            "total_three_wire_status":
+                "HOLDS" if len(support) == 3 else "FAILS",
             "localized_to_landed_39_register_wires": localized,
             "register_localization_status":
                 "HOLDS" if localized else "FAILS",
             "register_support_hit_count":
                 len(set(support) & register_set),
-            "outside_register_support_count":
-                len(set(support) - register_set),
+            "outside_register_support": outside_register,
+            "outside_register_support_count": len(outside_register),
+            "outside_register_is_exactly_three_wire": outside_is_three,
+            "outside_register_three_wire_status":
+                "HOLDS" if outside_is_three else "FAILS",
+            "register_plus_at_most_three_wire_extension":
+                len(outside_register) <= 3,
+            "register_plus_at_most_three_status":
+                "HOLDS" if len(outside_register) <= 3 else "FAILS",
         })
     return tuple(rows)
 
@@ -1118,6 +1127,11 @@ def certificate_c_weight_law(
         *NINE_WEIGHTS.values(), *PAIR_WEIGHTS.values(),
         PULSE_WEIGHT, S0_PRIME_WEIGHT,
     )))
+    register_rows = register_accounting_rows(funnel_states)
+    outside_register_by_edge = tuple(
+        row["outside_register_support"] for row in register_rows
+    )
+    three_wire_register_expected = ((), (88, 124, 125), (88, 124, 125))
     tests = (
         relation(
             "nine_arrival_rank_linear_law",
@@ -1186,11 +1200,17 @@ def certificate_c_weight_law(
             gallery, tuple(sorted(set(gallery))),
             len(gallery) == len(set(gallery)),
         ),
+        relation(
+            "pair_three_wire_register_extension_law",
+            "edge 0->2 is register-only; edges 2->1 and 0->1 add the same exact three wires",
+            outside_register_by_edge,
+            three_wire_register_expected,
+            outside_register_by_edge == three_wire_register_expected,
+        ),
     )
     actual_weights = {
         event: funnel_states[event].bit_count() for event in EVENT_ORDER
     }
-    register_rows = register_accounting_rows(funnel_states)
     support_union = set()
     for source, target in ((0, 2), (2, 1), (0, 1)):
         support_union.update(support_indices(
@@ -1218,7 +1238,7 @@ def certificate_c_weight_law(
         "pass": (
             actual_weights == PAIR_WEIGHTS
             and all(row["weight_accounting_exact"] for row in register_rows)
-            and len(tests) == 9
+            and len(tests) == 10
         ),
     }
 

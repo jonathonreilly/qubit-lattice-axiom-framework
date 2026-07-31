@@ -1,0 +1,37 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockP20-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle852_selection_tournament_2026_07_28.txt": "SUMMARY_JSON.checks map",
+    "logs/runner-cache/frontier_cycle852_tournament_independent_check_2026_07_28.txt": "SUMMARY_JSON.checks map"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle852_selection_tournament_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle852_tournament_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 852,
+  "files": {
+    "docs/SELECTION_TOURNAMENT_CYCLE852_BOUNDED_THEOREM_NOTE_2026-07-28.md": "79b26a7164d5149f9db26a1c4cbeb95459e4355ed90c325efcc755164feab071",
+    "logs/runner-cache/frontier_cycle852_selection_tournament_2026_07_28.txt": "cbd3bf9919e505e69b625e8d19b5a989c0b22ecb62fe71da7afeac9c2253a7ca",
+    "logs/runner-cache/frontier_cycle852_tournament_independent_check_2026_07_28.txt": "14d38435d8c3cace45878439c15d66c8e29b5948f2d88ee3a13fbe342a29bf5d",
+    "scripts/frontier_cycle852_selection_tournament_2026_07_28.py": "fcb1e5ad22e48dc865754bc0a0f5357cdef8e78b477c21f48b74e5971eaa8419",
+    "scripts/frontier_cycle852_tournament_independent_check_2026_07_28.py": "9af80b93ef2d00d4bfe53ee502e14a0d6fe31e23922cd28382ac5c609f7f1243"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "census orbit-homogeneous: 748 setups = 68 free C_11 orbits, every orbit size 11 (11 prime), zero singletons - independently re-derived",
+    "structural bound: covariant selection = orbit union => NO_COVARIANT_UNIQUE_SETUP_SELECTION_AT_SCOPE (all covariant criteria, declared or not)",
+    "tournament: no declared natural criterion selects even a unique orbit; both E1/E2 readings ran, neither privileged",
+    "size-1 autopsy: longest-period (8930) selector NON-covariant with witness ((2,0,(0,9)) -> (2,0,(1,10)) period unresolved through 51,115 - depends on fixed monitoring origin); disqualified",
+    "non-multiples-of-11 selections each carry a verified broken-symmetry witness (fixed program/source origin + monitoring phase); no size corrected",
+    "scope reconciliation exact: 828's 228 = 176 k2 + canonical reps 28+20+4; origin restoration 176+308+220+44 = 748"
+  ]
+}

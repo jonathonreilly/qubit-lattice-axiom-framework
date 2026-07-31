@@ -853,7 +853,10 @@ def run() -> int:
     }
     report = {
         "cycle": 857,
-        "question": "the census theorem (why exactly 748 starting conditions)",
+        "question": (
+            "conditional census theorem: why exactly 748 setups under the "
+            "named bounded generator premises"
+        ),
         "formula": "N_k=[binom(10-k,k-1)/k]*4*11",
         "stratum_counts": EXPECTED_STRATUM_COUNTS,
         "total": 748,

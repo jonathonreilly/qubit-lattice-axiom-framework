@@ -1,4 +1,21 @@
-# TOE Lane Progress — the matrix (as of 2026-07-31, campaigns 3+4: 62 campaign PRs #5772–#5845 + the other worker's companion/compiler lane landing on main)
+# TOE Lane Progress — the measure table (2026-07-31)
+
+Measures: **Chr** = characterized (exact proven shape) | **Der** = derived from the four axioms at landed scope | **Chk** = survived the spec'd-to-refute adversarial checker | **Aud** = audit-ratified on main via the owner-operated review lanes.
+
+| Lane | Chr | Der | Chk | Aud |
+|---|---|---|---|---|
+| Multi-source / exact-time law | 99% | 80% | 100% of shipped | 0% |
+| W6 Born weights | 98% | 50% | 100% of shipped | 0% |
+| W3 occurrence | 100% | 96% | 100% of shipped | 0% |
+| W5 permanence | 100% | 95% | 100% of shipped | 0% |
+| W7 response | 100% | 85% | 100% of shipped | 0% |
+| W2 ordering | 100% | 90% | 100% of shipped | 0% |
+| W1/W4 anchors | 100% | 98% | 100% of shipped | 0% |
+| Three-leg criterion | 100% | 100% | 100% | 0% |
+| Companion/compiler bridge (other worker) | 85% | 80% | review-hardened | ~90% landed |
+| **Program overall** | **~99%** | **~85%** | **100% of shipped** | **~10%** |
+
+## Detail: the full matrix (as of 2026-07-31, campaigns 3+4: 62 campaign PRs #5772–#5845 + the other worker's companion/compiler lane landing on main)
 
 One row per lane. Percentages: **Chr** = characterized (the wall has exact, proven shape), **Der** = derived from the four axioms at landed scope (bounded theorems; authority none; audit unset). Nothing here is audit-ratified until the review lanes land it.
 

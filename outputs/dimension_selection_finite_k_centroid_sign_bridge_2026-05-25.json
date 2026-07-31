@@ -59,9 +59,9 @@
   },
   "pass_count": 56,
   "proposal_allowed": false,
-  "proposal_allowed_reason": "This retires the WKB load-bearing sign step for the lower-bound runner, but it is runner-specific and does not close all-d potential authority or the upper-bound dimension-selection chain.",
+  "proposal_allowed_reason": "This retires the WKB load-bearing sign step for the lower-bound runner, but it is runner-specific and does not close all-d potential source derivation or the upper-bound dimension-selection chain.",
   "remaining_blockers": [
-    "all-d potential/Coulomb law authority",
+    "all-d potential/Coulomb law source derivation",
     "upper-bound Bertrand/Coulomb conditional dependencies",
     "uniform parameter/lattice-size generalization if required by audit",
     "independent audit before any axiom rewrite"
@@ -73,7 +73,7 @@
   ],
   "status": "bounded support: exact finite-k runner sign bridge",
   "upstream_statuses": {
-    "lower_bound_v2_status": "audited_conditional",
-    "parent_status": "audited_conditional"
+    "lower_bound_v2_status": "unaudited",
+    "parent_status": "unaudited"
   }
 }

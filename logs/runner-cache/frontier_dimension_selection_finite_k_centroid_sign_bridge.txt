@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
-runner_sha256: a701ba7f7f598324ff1010d00b56e26067568e8e42ee9e3190ccd29d3e1a326e
+runner_sha256: 106940c3f8c9f166873f87f11b529608a4d7192b48bce97f4e350fe63be9830b
+input_fingerprint_sha256: 9490627f77d1a9bd102c34ab0ca9618e24c22bc832903e9d4b524aca6b1059cf
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.67
+elapsed_sec: 0.37
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -15,15 +16,15 @@ Part 1: anchors and audit boundary
 [PASS] docs/DIMENSION_SELECTION_NOTE.md exists
 [PASS] docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md exists
 [PASS] docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md exists
-[PASS] docs/audit/data/audit_ledger.json exists
 [PASS] scripts/frontier_dimension_selection.py exists
+[PASS] canonical sharded audit ledger or legacy cache exists: sharded
 [PASS] note contains required section: Exact Finite-k Derivative
 [PASS] note contains required section: Result
 [PASS] note contains required section: What This Closes
 [PASS] note contains required section: What Remains Open
 [PASS] note contains required section: Non-Claims
-[PASS] lower-bound V2 is currently unresolved or decorated under the finite-k bridge: decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25
-[PASS] parent dimension-selection row is not retained-grade closed by this bridge: conditional-status
+[PASS] audit ledger contains the lower-bound V2 row
+[PASS] audit ledger contains the parent dimension-selection row
 [PASS] audit blocker names finite-k/eikonal bridge
 
 Part 2: exact finite-k first derivative

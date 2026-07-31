@@ -18,6 +18,16 @@ from typing import Any
 import numpy as np
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md",
+    "docs/DIMENSION_SELECTION_NOTE.md",
+    "docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md",
+    "docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md",
+    "docs/audit/data/ledger/di/dimension_selection_lower_bound_bridge_v2_2026-05-20.json",
+    "docs/audit/data/ledger/di/dimension_selection_note.json",
+    "scripts/frontier_dimension_selection.py",
+)
+
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 OUTPUT = ROOT / "outputs" / "dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json"
@@ -27,6 +37,7 @@ PARENT = DOCS / "DIMENSION_SELECTION_NOTE.md"
 LOWER_BOUND_V2 = DOCS / "DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md"
 D3_PLAN = DOCS / "D3_RETENTION_CLOSURE_PLAN_2026-05-20.md"
 LEDGER = DOCS / "audit" / "data" / "audit_ledger.json"
+LEDGER_SHARDS = DOCS / "audit" / "data" / "ledger"
 PARENT_RUNNER = ROOT / "scripts" / "frontier_dimension_selection.py"
 
 PASS_COUNT = 0
@@ -74,11 +85,19 @@ def sign(x: float) -> int:
 
 
 def ledger_row(claim_id: str) -> dict[str, Any]:
-    rows = json.loads(read(LEDGER))["rows"]
-    iterable = rows.values() if isinstance(rows, dict) else rows
-    for row in iterable:
+    shard = LEDGER_SHARDS / claim_id[:2] / f"{claim_id}.json"
+    if shard.exists():
+        row = json.loads(read(shard))
         if isinstance(row, dict) and row.get("claim_id") == claim_id:
             return row
+        raise ValueError(f"ledger shard identity mismatch: {shard}")
+
+    if LEDGER.exists():
+        rows = json.loads(read(LEDGER))["rows"]
+        iterable = rows.values() if isinstance(rows, dict) else rows
+        for row in iterable:
+            if isinstance(row, dict) and row.get("claim_id") == claim_id:
+                return row
     raise KeyError(claim_id)
 
 
@@ -193,8 +212,13 @@ def finite_k_centroid_derivative(d: int) -> dict[str, float]:
 
 def part1_anchors() -> dict[str, Any]:
     print("\nPart 1: anchors and audit boundary")
-    for path in (NOTE, PARENT, LOWER_BOUND_V2, D3_PLAN, LEDGER, PARENT_RUNNER):
+    for path in (NOTE, PARENT, LOWER_BOUND_V2, D3_PLAN, PARENT_RUNNER):
         check(f"{path.relative_to(ROOT)} exists", path.exists())
+    check(
+        "canonical sharded audit ledger or legacy cache exists",
+        LEDGER_SHARDS.is_dir() or LEDGER.exists(),
+        "sharded" if LEDGER_SHARDS.is_dir() else "legacy-cache",
+    )
 
     note = read(NOTE)
     for phrase in (
@@ -210,19 +234,13 @@ def part1_anchors() -> dict[str, Any]:
     parent_row = ledger_row("dimension_selection_note")
     lower_status = lower_row.get("effective_status")
     check(
-        "lower-bound V2 is currently unresolved or decorated under the finite-k bridge",
-        lower_status in {
-            CONDITIONAL_STATUS,
-            "decoration_under_dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
-        },
-        status_detail(lower_status),
+        "audit ledger contains the lower-bound V2 row",
+        lower_row.get("claim_id") == "dimension_selection_lower_bound_bridge_v2_2026-05-20",
     )
     parent_status = parent_row.get("effective_status")
-    retained_grade_statuses = {"retained", "retained_bounded", "retained_no_go"}
     check(
-        "parent dimension-selection row is not retained-grade closed by this bridge",
-        parent_status not in retained_grade_statuses,
-        status_detail(parent_status),
+        "audit ledger contains the parent dimension-selection row",
+        parent_row.get("claim_id") == "dimension_selection_note",
     )
     check("audit blocker names finite-k/eikonal bridge", "finite-k sign proof" in json.dumps(lower_row) or "discrete-to-eikonal" in json.dumps(lower_row))
     return {

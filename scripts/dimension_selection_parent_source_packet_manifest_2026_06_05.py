@@ -12,6 +12,18 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 NOTE = "docs/DIMENSION_SELECTION_NOTE.md"
 OUTPUT_JSON = "outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json"
 
+AUDIT_INPUT_PATHS = (
+    "docs/DIMENSION_SELECTION_NOTE.md",
+    "scripts/frontier_dimension_selection_lower_bound_parent_repair.py",
+    "scripts/frontier_dimension_selection.py",
+    "docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md",
+    "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py",
+    "outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json",
+    "logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt",
+    "logs/runner-cache/frontier_dimension_selection.txt",
+    "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt",
+)
+
 MANIFEST = {
     "parent_runner": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py",
     "original_runner": "scripts/frontier_dimension_selection.py",

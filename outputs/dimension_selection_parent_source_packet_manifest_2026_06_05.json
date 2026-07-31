@@ -104,7 +104,7 @@
     {
       "name": "source_full_length:parent_runner",
       "pass": true,
-      "detail": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py has 7626 bytes"
+      "detail": "scripts/frontier_dimension_selection_lower_bound_parent_repair.py has 8121 bytes"
     },
     {
       "name": "source_contains:parent_runner:import importlib.util",
@@ -159,7 +159,7 @@
     {
       "name": "source_full_length:finite_k_bridge_runner",
       "pass": true,
-      "detail": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py has 13683 bytes"
+      "detail": "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py has 14139 bytes"
     },
     {
       "name": "source_contains:finite_k_bridge_runner:def finite_k_centroid_derivative",
@@ -189,7 +189,7 @@
     {
       "name": "cache_sha_fresh:parent_cache",
       "pass": true,
-      "detail": "55ba22423e9c8abc6d29b210233dbb0fea7d0e4001b9b0e1aa5bf17cb6b87c7f == 55ba22423e9c8abc6d29b210233dbb0fea7d0e4001b9b0e1aa5bf17cb6b87c7f"
+      "detail": "aa55dabfb5095c4a1799f69a209b2c749de4ea30eed186df5c28230af058dbfb == aa55dabfb5095c4a1799f69a209b2c749de4ea30eed186df5c28230af058dbfb"
     },
     {
       "name": "cache_exit_ok:parent_cache",
@@ -269,7 +269,7 @@
     {
       "name": "cache_sha_fresh:finite_k_bridge_cache",
       "pass": true,
-      "detail": "a701ba7f7f598324ff1010d00b56e26067568e8e42ee9e3190ccd29d3e1a326e == a701ba7f7f598324ff1010d00b56e26067568e8e42ee9e3190ccd29d3e1a326e"
+      "detail": "121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade == 121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade"
     },
     {
       "name": "cache_exit_ok:finite_k_bridge_cache",

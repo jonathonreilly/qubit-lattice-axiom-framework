@@ -352,12 +352,6 @@ def main() -> int:
         "finite_k_derivatives": {str(k): v for k, v in derivatives.items()},
         "finite_difference_check": {str(k): v for k, v in finite_difference.items()},
         "parent_finite_probe": {str(k): v for k, v in finite_probe.items()},
-        "remaining_blockers": [
-            "all-d potential/Coulomb law source derivation",
-            "upper-bound Bertrand/Coulomb conditional dependencies",
-            "uniform parameter/lattice-size generalization if required by audit",
-            "independent audit before any axiom rewrite",
-        ],
         "pass_count": PASS_COUNT,
         "fail_count": FAIL_COUNT,
         "review_surface": [

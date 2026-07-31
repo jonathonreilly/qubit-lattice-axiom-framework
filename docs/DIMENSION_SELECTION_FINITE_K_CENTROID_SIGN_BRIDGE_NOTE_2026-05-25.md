@@ -156,125 +156,13 @@ This note still does **not** prove full retained spatial `d = 3` closure:
 - It does not prove a uniform sign interval for all `M > 0`; it proves the
   exact first derivative at `M = 0` and directly verifies the parent runner's
   finite probe value.
-- It does not derive the all-d continuum potential family from A1 plus a
-  dimension-free A2.  The potential family remains inherited from the runner
-  specification and the existing dimension-selection lane.
+- It does not derive the all-d continuum potential family from the physical
+  `Cl(3)` local algebra plus a dimension-free `Lattice` premise. The potential
+  family remains inherited from the runner specification and the existing
+  dimension-selection lane.
 - It does not close the upper-bound side (`d <= 3`), where the Bertrand and
   Coulomb packets remain conditional on all-d potential/Coulomb assumptions.
 - It does not authorize changing the minimal axiom line from `Z^3` to `Z^d`.
-
-## Review-Loop Bounded-Wall Gate
-
-This is not a no-go theorem. The gate here is applied only to keep the
-remaining blockers from being overstated as impossibility claims. In the
-tables below, `ATTEMPTED` means exercised by this note's exact runner and
-`OPEN/UNTESTED` means that the route is not counted as closed.
-
-### N1 — Alternative-route enumeration
-
-| Route | Distinct object / mechanism / terminal obligation | Status and evidence |
-| --- | --- | --- |
-| Exact finite-`k` tangent recursion | Differentiate the normalized detector centroid for the runner's fixed update, geometry, and `d=1,...,5`; terminate at the sign of `dc_y/dM` at `M=0` plus the parent `M=0.005` replay. | `ATTEMPTED`: this note and `scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py`; closes only the stated finite certificate. |
-| Uniform runner-parameter control | Prove the same sign over a stated interval of `k`, lattice sizes, source widths, detector locations, and positive `M`. | `OPEN/UNTESTED`: the present finite grid and one finite probe do not supply uniform estimates. |
-| Framework-internal all-`d` potential derivation | Derive the potential family used by the runner from A1 and dimension-free retained authority instead of importing it as the tested profile family. | `OPEN/UNTESTED`: neither this note nor the runner derives that family. |
-| Upper-bound Bertrand/Coulomb closure | Derive the `d <= 3` side from framework-retained Bertrand/Coulomb authority with its all-`d` assumptions discharged. | `OPEN/UNTESTED`: this is outside the finite centroid-sign calculation. |
-| Coupled self-consistency closure | Show that the lower sign certificate and upper-bound packet coexist in one framework-internal model without circularly selecting `d=3`. | `OPEN/UNTESTED`: no coupled fixed-point or consistency theorem is provided here. |
-
-Only one of five distinct routes was attempted here. Therefore N1 **fails for
-any route-exhaustive negative claim or full dimension-selection closure**. It
-does not invalidate the positive fixed-runner certificate actually computed.
-
-### N2 — Collapsed wall-independence audit
-
-Let `W1` be framework-internal all-`d` potential authority, `W2` the
-Bertrand/Coulomb upper-bound closure, and `W3` uniformity in the runner
-parameters and positive `M`.
-
-| Pair | Closing first closes second? | Closing second closes first? | Collapsed result |
-| --- | --- | --- | --- |
-| `W1`, `W2` | No: deriving the tested potential family does not prove the orbital/Coulomb upper bound. | No: an upper-bound theorem need not derive the runner's all-`d` potential family. | Independent. |
-| `W1`, `W3` | No: a potential derivation alone gives no finite-grid uniform error/sign bound. | No: a numerical uniformity theorem can remain conditional on an imported potential. | Independent. |
-| `W2`, `W3` | No: the upper-bound mechanism does not control this detector-centroid discretization. | No: uniform centroid signs do not prove Bertrand/Coulomb closure. | Independent. |
-
-No pair collapses on present authority, so the honest wall count is three.
-The coupled self-consistency route is a terminal integration obligation, not a
-fourth independent primitive wall.
-
-### N3 — Hidden-wall scan
-
-The phrases `we assume`, `by construction`, `as is standard`, `the framework
-provides`, `bridge context`, `background`, `naturally`, `obviously`,
-`standard QFT`, `registered`, and `canonical` were scanned in the load-bearing
-derivation. There is no load-bearing appeal to standard lore. The runner
-constants, potential family, source placement, layer normalization, and
-finite probe value are explicit imports from
-`scripts/frontier_dimension_selection.py`; they are precisely the bounded
-test specification, not framework-derived facts. Uses of "exact" refer only
-to differentiation of that declared finite update. Thus no hidden admission
-changes the three-wall count above.
-
-### N4 — Residual matching
-
-| Witness | Witness residual | Residual addressed here | Match? |
-| --- | --- | --- | --- |
-| `docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md`, audit-repair section | Missing discrete finite-`k` sign bridge from the normalized centroid observable, replacing the admitted eikonal/WKB step. | Exact tangent recursion and finite-probe replay for that same normalized centroid and fixed runner geometry. | Yes, for the scientific finite-`k` bridge only. |
-| Current audit handoff for this source row | Primary runner could not execute in the isolated audit checkout because its audit-ledger inputs were undeclared. | This repair declares the canonical ledger shards and checks row identity without treating mutable audit status as physics. | Yes, for the runner-artifact defect only. |
-| `docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md`, upper-bound packet | Conditional all-`d` Bertrand/Coulomb authority on the upper side. | Fixed-runner lower centroid-sign certificate. | No; it is retained only as an open wall, not cited as support. |
-
-The scientific bridge residual and current transport residual must not be
-conflated: the runner repair makes the existing finite certificate auditable;
-it does not newly close `W1`, `W2`, or `W3`.
-
-### N5 — Rhetoric audit
-
-| Resolution | Tested? | Permitted statement |
-| --- | --- | --- |
-| Per listed dimension on the fixed runner | Yes, for `d=1,...,5`. | The derivative/probe sign split is certified for these five cases. |
-| Per positive mass | No; only the derivative at zero and `M=0.005` are checked. | No all-`M>0` claim. |
-| Per runner parameter or lattice geometry | No. | No uniform-parameter claim. |
-| Framework-wide / dimension-selection theorem | No. | No retained `d=3` selection or axiom rewrite. |
-
-Every negative phrase is limited to these non-claims; no untested resolution
-is turned into an impossibility statement.
-
-### N6 — Partial-closure paths
-
-The existing import-retirement path is to keep the potential and geometry
-explicit, prove the finite-runner bound, obtain independent audit, and then
-attempt uniform estimates. The upper-bound plan separately permits bounded
-Bertrand/Coulomb notes with their imports named; that is a partial-closure
-route, not proof that a new axiom is required. Neither path authorizes silently
-promoting the present certificate to a framework-internal theorem.
-
-### N7 — Steelman
-
-A hostile reviewer has a live route against any broader conclusion: the sign
-of a normalized centroid derivative on one finite lattice can change under
-finite positive mass, source-width, detector, lattice-size, or `k` variation,
-and even a uniform numerical sign would not derive the all-`d` potential or
-the independent Bertrand/Coulomb upper bound. The lower-bound repair itself
-shows that changing the load-bearing object—from an admitted eikonal rule to
-the exact finite-`k` tangent—can retire a previously named wall. This is a
-convincing counter-route, so N7 **fails for a no-go or full closure claim** and
-forces the present bounded scope.
-
-### N8 — Cross-cycle echo
-
-`docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md` records that
-the older classical-force/WKB route was repaired by changing the
-load-bearing object to the exact normalized finite-`k` tangent recursion; that
-same mechanism is already used here. `docs/D3_RETENTION_CLOSURE_PLAN_2026-05-20.md`
-records a second salvage mechanism: keep upper-bound results bounded and name
-their imported all-`d` assumptions rather than advertise a full internal
-theorem. That mechanism applies to `W2` as an honest bounded route, but does
-not close it. These echoes support narrowing and continued source work, not a
-no-go.
-
-Gate result: **FAIL for any negative, route-exhaustive, or full retained
-dimension-selection claim (N1 and N7)**. The shippable result is instead the
-positive, fixed-runner derivative/probe certificate with three named open
-walls. It does not authorize an axiom rewrite or foreclose alternate `d=3`
-derivation routes.
 
 ## Non-Claims
 
@@ -282,7 +170,8 @@ This note does not:
 
 - claim retained D=3 closure;
 - claim a repo-wide axiom rewrite;
-- claim that `Z^3` has been derived from A1 alone;
+- claim that `Z^3` has been derived from the physical `Cl(3)` local algebra
+  alone;
 - use observed physical dimensions or empirical constants;
 - use WKB, Fermat, stationary phase, or ray optics as the load-bearing
   sign argument;

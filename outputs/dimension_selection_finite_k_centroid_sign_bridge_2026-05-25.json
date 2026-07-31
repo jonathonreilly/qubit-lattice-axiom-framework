@@ -60,12 +60,6 @@
   "pass_count": 56,
   "proposal_allowed": false,
   "proposal_allowed_reason": "This retires the WKB load-bearing sign step for the lower-bound runner, but it is runner-specific and does not close all-d potential source derivation or the upper-bound dimension-selection chain.",
-  "remaining_blockers": [
-    "all-d potential/Coulomb law source derivation",
-    "upper-bound Bertrand/Coulomb conditional dependencies",
-    "uniform parameter/lattice-size generalization if required by audit",
-    "independent audit before any axiom rewrite"
-  ],
   "review_surface": [
     "docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md",
     "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py",

@@ -27,8 +27,27 @@ from pathlib import Path
 from typing import Any
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+    "docs/DIMENSION_SELECTION_NOTE.md",
+    "docs/DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md",
+    "docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md",
+    "docs/audit/data/ledger/di/dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25.json",
+    "docs/audit/data/ledger/di/dimension_selection_lower_bound_bridge_v2_2026-05-20.json",
+    "docs/audit/data/ledger/di/dimension_selection_note.json",
+    "scripts/frontier_dimension_selection_lower_bound_parent_repair.py",
+    "logs/runner-cache/frontier_dimension_selection_lower_bound_parent_repair.txt",
+    "scripts/frontier_dimension_selection.py",
+    "logs/runner-cache/frontier_dimension_selection.txt",
+    "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py",
+    "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt",
+    "outputs/dimension_selection_finite_k_centroid_sign_bridge_2026-05-25.json",
+    "scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py",
+    "logs/runner-cache/dimension_selection_parent_source_packet_manifest_2026_06_05.txt",
+    "outputs/dimension_selection_parent_source_packet_manifest_2026_06_05.json",
+)
+
 ROOT = Path(__file__).resolve().parents[1]
-LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
 ACTIVE_QUEUE = ROOT / "docs" / "repo" / "ACTIVE_REVIEW_QUEUE.md"
 PARENT_NOTE = ROOT / "docs" / "DIMENSION_SELECTION_NOTE.md"
 V2_NOTE = ROOT / "docs" / "DIMENSION_SELECTION_LOWER_BOUND_BRIDGE_V2_2026-05-20.md"
@@ -81,13 +100,20 @@ def parse_cache(path: Path) -> dict[str, str]:
 
 
 def ledger_rows() -> dict[str, dict[str, Any]]:
-    raw = json.loads(read(LEDGER))["rows"]
-    rows = raw.values() if isinstance(raw, dict) else raw
-    return {
-        row["claim_id"]: row
-        for row in rows
-        if isinstance(row, dict) and "claim_id" in row
-    }
+    claim_ids = (
+        "dimension_selection_finite_k_centroid_sign_bridge_note_2026-05-25",
+        "dimension_selection_lower_bound_bridge_v2_2026-05-20",
+        "dimension_selection_note",
+    )
+    rows: dict[str, dict[str, Any]] = {}
+    shard_root = ROOT / "docs" / "audit" / "data" / "ledger"
+    for claim_id in claim_ids:
+        shard = shard_root / claim_id[:2] / f"{claim_id}.json"
+        row = json.loads(read(shard))
+        if not isinstance(row, dict) or row.get("claim_id") != claim_id:
+            raise ValueError(f"ledger shard identity mismatch: {shard}")
+        rows[claim_id] = row
+    return rows
 
 
 def require_row(rows: dict[str, dict[str, Any]], claim_id: str) -> dict[str, Any]:
@@ -237,7 +263,7 @@ def run_note_gate_checks() -> None:
 
     forbidden = [
         "full retained spatial d = 3 closure",
-        "Z^3 has been derived from A1 alone",
+        "Z^3 has been derived from the physical Cl(3) local algebra alone",
         "repo-wide framework-baseline rewrite is authorized",
         "self-consistency uniquely selects d = 3",
     ]

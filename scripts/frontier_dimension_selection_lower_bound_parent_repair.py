@@ -18,6 +18,16 @@ import frontier_dimension_selection as original_dimension_runner
 import frontier_dimension_selection_finite_k_centroid_sign_bridge as finite_k_bridge
 
 
+AUDIT_INPUT_PATHS = (
+    "docs/DIMENSION_SELECTION_NOTE.md",
+    "docs/DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md",
+    "scripts/dimension_selection_parent_source_packet_manifest_2026_06_05.py",
+    "scripts/frontier_dimension_selection.py",
+    "logs/runner-cache/frontier_dimension_selection.txt",
+    "scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py",
+    "logs/runner-cache/frontier_dimension_selection_finite_k_centroid_sign_bridge.txt",
+)
+
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "DIMENSION_SELECTION_NOTE.md"
 BRIDGE_NOTE = ROOT / "docs" / "DIMENSION_SELECTION_FINITE_K_CENTROID_SIGN_BRIDGE_NOTE_2026-05-25.md"

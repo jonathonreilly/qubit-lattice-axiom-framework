@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dimension_selection_finite_k_centroid_sign_bridge.py
-runner_sha256: 106940c3f8c9f166873f87f11b529608a4d7192b48bce97f4e350fe63be9830b
-input_fingerprint_sha256: 9490627f77d1a9bd102c34ab0ca9618e24c22bc832903e9d4b524aca6b1059cf
+runner_sha256: 121cc5d53af922dafce2acf8633624bea896795eb7103d83091043cd4f492ade
+input_fingerprint_sha256: e930b674a18932d85782a39a6127bbdfbbe04774008c78afb915318d033811c3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.34
 status: ok
 ----- stdout -----
 ========================================================================================

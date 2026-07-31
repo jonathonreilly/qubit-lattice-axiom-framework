@@ -1,0 +1,30 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockP17-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle836_depth_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    },
+    "logs/runner-cache/frontier_cycle836_offbackbone_depth_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 836,
+  "files": {
+    "docs/OFFBACKBONE_DEPTH_CYCLE836_BOUNDED_THEOREM_NOTE_2026-07-28.md": "11b90a82db8f88462bc3cfb2a5e4b311846bc0bea63effdc4d13e335e84a5556",
+    "logs/runner-cache/frontier_cycle836_depth_independent_check_2026_07_28.txt": "fdb681dfe6e0aebdb5e68d8f478ccb082eb8cad9abd3117e73e509abdfb1af39",
+    "logs/runner-cache/frontier_cycle836_offbackbone_depth_2026_07_28.txt": "17ebe6c21723fd56e4b4c2b44d7236b61165db11556f6420600fe738fffa43b7",
+    "scripts/frontier_cycle836_depth_independent_check_2026_07_28.py": "550f54f3ba8a0ae28586ff30755abb3fa16593d3e1258e0d838217baecf4dc9b",
+    "scripts/frontier_cycle836_offbackbone_depth_2026_07_28.py": "b5f59ed04984d8c1956ff82a1f9af165b35ac2dcac99db4b929dbe3d8dc2e0b5"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "total null: 133 off-backbone keys nonclean/noncyclic through T=131072 (accounting exact)",
+    "S0' ZERO visits across 17,432,709 trajectory-moments \u2014 the prediction stands at doubled depth",
+    "checker not-refuted (12-key resweep; hash + 1,572,876-moment slice)"
+  ]
+}

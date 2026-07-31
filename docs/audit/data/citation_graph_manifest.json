@@ -1,6 +1,6 @@
 {
- "edge_count": 15350,
- "node_count": 4609,
+ "edge_count": 15354,
+ "node_count": 4610,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1619,8 +1619,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "a86a1581f0d6",
-   "out_degree": 333
+   "deps_hash": "a6a7dd65665f",
+   "out_degree": 334
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -2481,6 +2481,10 @@
   "complex_selectivity_predictor_note": {
    "deps_hash": "3de32ed25afa",
    "out_degree": 9
+  },
+  "composed_four_flag_acceptance_cycle754_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "9c25d7e2459d",
+   "out_degree": 3
   },
   "composite_curvature_sum_rule_band_controls_bounded_theorem_note_2026-07-08": {
    "deps_hash": "df228b3bd251",

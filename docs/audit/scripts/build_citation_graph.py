@@ -232,6 +232,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "binder_formation_attempt_cycle751_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle751_binder_independent_check_2026_07_28.py",
     ],
+    # Cycle 754's checker independently reconstructs the finite receiver,
+    # endpoint-support, and status branches without importing the primary.
+    # Expose that separate source to the restricted audit packet explicitly.
+    "composed_four_flag_acceptance_cycle754_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle754_capstone_independent_check_2026_07_28.py",
+    ],
     # Cycle 820's independent tuple/bit-vector reconstruction deliberately
     # imports neither the primary nor its new core. Keep it separate while
     # still exposing and hash-binding it in the restricted audit packet.

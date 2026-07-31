@@ -653,7 +653,10 @@ the quoted field must still occur verbatim at its cited evidence path. Exact
 `W_unit`/`W_units` markers may likewise occur inside underscore-delimited
 identifiers. The reserved lookalikes `preW_unit`, `W_unit_post`, `W_unitary`,
 and `W__unit` do not supply that marker by themselves; nor do `unitary`,
-`unitless`, or `unitization` satisfy the whole-token unit/units marker.
+`unitless`, or `unitization` satisfy the whole-token unit/units marker. These
+markers use their literal ASCII spelling; Unicode letters and combining marks
+continue a token rather than manufacturing a boundary or a case-insensitive
+lookalike.
 
 When the gate is `FAIL`, list only the genuinely evidenced routes; fewer than
 five is valid and records the N1 failure. Do not fabricate extra routes merely

@@ -5,7 +5,8 @@
   "certificates": {
     "logs/runner-cache/frontier_cycle826_gauge_independent_check_2026_07_28.txt": {
       "fail": 0,
-      "pass": 0
+      "format_note": "checker emits 'CERTIFICATE <NAME> PASS/FAIL' top-level lines (7); the worker's '35 certificates' counts nested sub-checks",
+      "pass": 7
     },
     "logs/runner-cache/frontier_cycle826_response_vs_relabeling_2026_07_28.txt": {
       "fail": 0,

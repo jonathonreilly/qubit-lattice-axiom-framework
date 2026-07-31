@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Source-packet manifest for the meson OS transfer representation runner."""
+"""Source-packet manifest for the meson same-M Wick-minor / trace-kernel runner."""
 
 from __future__ import annotations
 
@@ -18,29 +18,36 @@ PATHS = {
 
 REQUIRED_SOURCE_FRAGMENTS = [
     "def block_fwd_propagator_berezin(",
-    "def block_fwd_propagator_operator(",
+    "def block_fwd_trace_kernel(",
     "def block_metric_spacetime_eigs(",
+    "def full_grassmann_packet(",
     "def meson_op_on_vacuum_norm(",
     "def meson_correlator_full_berezin(",
-    "def meson_correlator_from_propagator(",
+    "def meson_trace_kernel(",
     "def u_averaged_meson(",
+    "def u_averaged_full_berezin(",
+    "def normalized_gauge_weights(",
     "def gauge_transform_links(",
-    "K1  VACUUM-ANNIHILATION HANDLED",
-    "K2  PER-MODE-FACTORIZED BEREZIN BREAKS",
-    "K3  det-WEIGHT control",
-    "K4  SINGLE-STEP control",
-    "K5  GAUGE INVARIANCE",
+    "K1 VAC  : ||F|Omega>||",
+    "K2 BREAK: per-mode-factorized Berezin gap",
+    "K3 DIFF : flat(no-det) vs det-weighted gap",
+    "K4 CTRL : single-step block-metric min eig",
+    "K5 GAUGE: SAME-M Wick-minor invariance under g",
 ]
 
 REQUIRED_CACHE_SNIPPETS = [
-    "SCORECARD PASS=64 FAIL=0",
-    "P0      : det-weighted avg Berezin == operator meson",
-    "P1      : per-config Berezin(4-ferm) == operator meson",
+    "SCORECARD PASS=116 FAIL=0",
+    "P0      : SAME-M det-weighted Wick-minor avg == trace kernel",
+    "P1      : per-config SAME-M Wick minor == trace kernel",
+    "SAME-M  : independently recovered C_BLOCK-2",
+    "SIGN    : wrong reflection physical max eig",
+    "Pdet    : det phase residual / min log|det|",
     "K1 VAC  : ||F|Omega>||",
     "K2 BREAK: per-mode-factorized Berezin gap",
     "K3 DIFF : flat(no-det) vs det-weighted gap",
     "K4 CTRL : single-step block-metric min eig",
     "K5 GAUGE: ||<Theta(F)F> invariance|| under g",
+    "K5 GAUGE: SAME-M Wick-minor invariance under g",
 ]
 
 
@@ -81,7 +88,7 @@ def main() -> int:
 
     source_path = ROOT / PATHS["primary_runner"]
     source = source_path.read_text()
-    check("source_full_length", len(source) > 40000, f"bytes={len(source)}")
+    check("source_full_length", len(source) > 30000, f"bytes={len(source)}")
     for fragment in REQUIRED_SOURCE_FRAGMENTS:
         check(f"source_contains:{fragment}", fragment in source, fragment)
 

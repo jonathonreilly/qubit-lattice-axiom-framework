@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Restricted source-packet manifest for the meson OS-transfer note.
+"""Restricted source-packet manifest for the meson same-M Wick-minor note.
 
 This runner does not re-audit the row or promote its status. It checks that
 the meson note exposes the full primary runner source, a SHA-fresh cache for
 that source, and the packet-level manifest artifacts needed to inspect the
-Berezin/operator kernel-build path named by the conditional audit blocker.
+same-M Wick-minor / analytic trace-kernel path named by the audit blocker.
 """
 from __future__ import annotations
 
@@ -34,21 +34,28 @@ REQUIRED_SOURCE_FRAGMENTS = [
     "def block_metric_per_mode",
     "def block_fwd_propagator_berezin",
     "def block_metric_spacetime_eigs",
+    "def full_grassmann_packet",
     "def meson_correlator_full_berezin",
+    "def normalized_gauge_weights",
     "def u_averaged_meson",
-    "det(M[U]) is ACTUALLY applied",
+    "def u_averaged_full_berezin",
+    "packet['logabsdet'] if use_det else 0.0",
     "print(f\"SCORECARD PASS={npass} FAIL={nfail}\")",
 ]
 
 EXPECTED_CACHE_SNIPPETS = [
     "status: ok",
-    "P_block : Gf Berezin(M^-1) vs operator(e^-2H)",
-    "P1      : per-config Berezin(4-ferm) == operator meson",
-    "P0      : det-weighted avg Berezin == operator meson",
+    "P_block : Gf Berezin(M^-1) vs analytic 2e^-2E kernel",
+    "SAME-M  : independently recovered C_BLOCK-2",
+    "SIGN    : wrong reflection physical max eig",
+    "P1      : per-config SAME-M Wick minor == trace kernel",
+    "P0      : SAME-M det-weighted Wick-minor avg == trace kernel",
+    "Pdet    : det phase residual / min log|det|",
     "K2 BREAK: per-mode-factorized Berezin gap",
+    "K5 GAUGE: SAME-M Wick-minor invariance under g",
     "K5 GAUGE: Wilson-line covariance residual",
-    "This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator",
-    "SCORECARD PASS=64 FAIL=0",
+    "This verifies the gauge-invariant meson SAME-M Wick-minor==trace-kernel",
+    "SCORECARD PASS=116 FAIL=0",
 ]
 
 
@@ -149,15 +156,15 @@ def main() -> int:
         )
 
     check(
-        "2026-06-06 Source Packet Re-audit Repair" in note_text,
+        "2026-07-29 Same-Matrix Four-Field Repair" in note_text,
         "note_has_source_packet_reaudit_section",
-        "meson note has the 2026-06-06 repair section",
+        "meson note has the 2026-07-29 same-matrix repair section",
         results,
     )
     check(
-        "does not promote this row" in note_text,
+        "downstream effective status is not set here" in note_text,
         "note_preserves_bounded_boundary",
-        "repair section states that status movement remains audit-owned",
+        "note states that status movement remains audit-owned",
         results,
     )
 

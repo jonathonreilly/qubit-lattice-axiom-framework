@@ -10,7 +10,7 @@
     "manifest_json": "outputs/meson_gauge_invariant_os_transfer_source_packet_manifest_2026_06_06.json"
   },
   "summary": {
-    "pass": 29,
+    "pass": 36,
     "fail": 0
   },
   "results": [
@@ -57,7 +57,7 @@
     {
       "name": "source_full_length:primary_runner",
       "pass": true,
-      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py has 47163 bytes"
+      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py has 35432 bytes"
     },
     {
       "name": "source_contains:primary_runner:def block_metric_per_mode",
@@ -75,9 +75,19 @@
       "detail": "def block_metric_spacetime_eigs present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
     },
     {
+      "name": "source_contains:primary_runner:def full_grassmann_packet",
+      "pass": true,
+      "detail": "def full_grassmann_packet present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
       "name": "source_contains:primary_runner:def meson_correlator_full_berezin",
       "pass": true,
       "detail": "def meson_correlator_full_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "source_contains:primary_runner:def normalized_gauge_weights",
+      "pass": true,
+      "detail": "def normalized_gauge_weights present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
     },
     {
       "name": "source_contains:primary_runner:def u_averaged_meson",
@@ -85,9 +95,14 @@
       "detail": "def u_averaged_meson present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
     },
     {
-      "name": "source_contains:primary_runner:det(M[U]) is ACTUALLY applied",
+      "name": "source_contains:primary_runner:def u_averaged_full_berezin",
       "pass": true,
-      "detail": "det(M[U]) is ACTUALLY applied present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+      "detail": "def u_averaged_full_berezin present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+    },
+    {
+      "name": "source_contains:primary_runner:packet['logabsdet'] if use_det else 0.0",
+      "pass": true,
+      "detail": "packet['logabsdet'] if use_det else 0.0 present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
     },
     {
       "name": "source_contains:primary_runner:print(f\"SCORECARD PASS={npass} FAIL={nfail}\")",
@@ -102,7 +117,7 @@
     {
       "name": "cache_sha_fresh:primary_cache",
       "pass": true,
-      "detail": "cache sha ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5 current sha ea0f504ea170c919c2b14d72195a3236246c02f5872b808151d6d2411956d4a5"
+      "detail": "cache sha e9ddec10b14cd4ca4e51738be74821e86416b6210beb065d8e04025dc8463bc3 current sha e9ddec10b14cd4ca4e51738be74821e86416b6210beb065d8e04025dc8463bc3"
     },
     {
       "name": "cache_exit_ok:primary_cache",
@@ -115,19 +130,34 @@
       "detail": "status: ok"
     },
     {
-      "name": "cache_contains:primary_cache:P_block : Gf Berezin(M^-1) vs operator(e^-2H)",
+      "name": "cache_contains:primary_cache:P_block : Gf Berezin(M^-1) vs analytic 2e^-2E kernel",
       "pass": true,
-      "detail": "P_block : Gf Berezin(M^-1) vs operator(e^-2H)"
+      "detail": "P_block : Gf Berezin(M^-1) vs analytic 2e^-2E kernel"
     },
     {
-      "name": "cache_contains:primary_cache:P1      : per-config Berezin(4-ferm) == operator meson",
+      "name": "cache_contains:primary_cache:SAME-M  : independently recovered C_BLOCK-2",
       "pass": true,
-      "detail": "P1      : per-config Berezin(4-ferm) == operator meson"
+      "detail": "SAME-M  : independently recovered C_BLOCK-2"
     },
     {
-      "name": "cache_contains:primary_cache:P0      : det-weighted avg Berezin == operator meson",
+      "name": "cache_contains:primary_cache:SIGN    : wrong reflection physical max eig",
       "pass": true,
-      "detail": "P0      : det-weighted avg Berezin == operator meson"
+      "detail": "SIGN    : wrong reflection physical max eig"
+    },
+    {
+      "name": "cache_contains:primary_cache:P1      : per-config SAME-M Wick minor == trace kernel",
+      "pass": true,
+      "detail": "P1      : per-config SAME-M Wick minor == trace kernel"
+    },
+    {
+      "name": "cache_contains:primary_cache:P0      : SAME-M det-weighted Wick-minor avg == trace kernel",
+      "pass": true,
+      "detail": "P0      : SAME-M det-weighted Wick-minor avg == trace kernel"
+    },
+    {
+      "name": "cache_contains:primary_cache:Pdet    : det phase residual / min log|det|",
+      "pass": true,
+      "detail": "Pdet    : det phase residual / min log|det|"
     },
     {
       "name": "cache_contains:primary_cache:K2 BREAK: per-mode-factorized Berezin gap",
@@ -135,29 +165,34 @@
       "detail": "K2 BREAK: per-mode-factorized Berezin gap"
     },
     {
+      "name": "cache_contains:primary_cache:K5 GAUGE: SAME-M Wick-minor invariance under g",
+      "pass": true,
+      "detail": "K5 GAUGE: SAME-M Wick-minor invariance under g"
+    },
+    {
       "name": "cache_contains:primary_cache:K5 GAUGE: Wilson-line covariance residual",
       "pass": true,
       "detail": "K5 GAUGE: Wilson-line covariance residual"
     },
     {
-      "name": "cache_contains:primary_cache:This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator",
+      "name": "cache_contains:primary_cache:This verifies the gauge-invariant meson SAME-M Wick-minor==trace-kernel",
       "pass": true,
-      "detail": "This verifies the gauge-invariant, NUMBER-CONSERVING MESON Berezin==operator"
+      "detail": "This verifies the gauge-invariant meson SAME-M Wick-minor==trace-kernel"
     },
     {
-      "name": "cache_contains:primary_cache:SCORECARD PASS=64 FAIL=0",
+      "name": "cache_contains:primary_cache:SCORECARD PASS=116 FAIL=0",
       "pass": true,
-      "detail": "SCORECARD PASS=64 FAIL=0"
+      "detail": "SCORECARD PASS=116 FAIL=0"
     },
     {
       "name": "note_has_source_packet_reaudit_section",
       "pass": true,
-      "detail": "meson note has the 2026-06-06 repair section"
+      "detail": "meson note has the 2026-07-29 same-matrix repair section"
     },
     {
       "name": "note_preserves_bounded_boundary",
       "pass": true,
-      "detail": "repair section states that status movement remains audit-owned"
+      "detail": "note states that status movement remains audit-owned"
     }
   ],
   "status_boundary": "bounded-support source-packet repair only; independent audit owns any ledger/status movement"

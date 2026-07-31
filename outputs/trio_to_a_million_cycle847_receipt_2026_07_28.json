@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC27-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle847_million_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 12
+    },
+    "logs/runner-cache/frontier_cycle847_trio_to_a_million_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 19
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 847,
+  "files": {
+    "docs/TRIO_TO_A_MILLION_CYCLE847_BOUNDED_THEOREM_NOTE_2026-07-28.md": "7d5a20338ec73c738a1260bb5a92fb66a615a02ae75fc183f6b3f620998ab26d",
+    "logs/runner-cache/frontier_cycle847_million_independent_check_2026_07_28.txt": "80ccc798a09a5b32828e82f6a30a300721bb611e5fbef5913bf906d4e319318c",
+    "logs/runner-cache/frontier_cycle847_trio_to_a_million_2026_07_28.txt": "12efee962edce11b742f40807380d9de874e87b834c6749bd96daf458c5bc3d5",
+    "scripts/frontier_cycle847_million_independent_check_2026_07_28.py": "965287e3b004fd84d0bca4668f8def73bebdf4d1d62a68a36f2c8d15d728aba0",
+    "scripts/frontier_cycle847_trio_to_a_million_2026_07_28.py": "dab7567b80c9f70488581a9387e654d9bf5e053afcade822576e5a3bd47bba95"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "all ten k=3 keys unresolved through complete T=1,048,576 \u2014 the trio bet STANDS at 4x the depth that finished k=2",
+    "the braid clause armed (84 restrictions sha-verified), never triggered",
+    "the cross-stratum contrast is the datum: k=2 done by 1,142,432; k=3 not started by 1,048,576",
+    "checker CYCLE847_MILLION_INDEPENDENT_CHECK_PASS (3-key resweep; accounting 3,145,728 exact)"
+  ]
+}

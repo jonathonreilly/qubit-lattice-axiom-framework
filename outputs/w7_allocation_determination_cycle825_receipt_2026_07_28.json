@@ -1,0 +1,34 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC21-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle825_determination_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle825_w7_allocation_determination_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 7
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 825,
+  "files": {
+    "docs/W7_ALLOCATION_DETERMINATION_CYCLE825_BOUNDED_THEOREM_NOTE_2026-07-28.md": "425f908f485ead66c97016710a3145d20f2cd26320d5745de25c192341ec405c",
+    "logs/runner-cache/frontier_cycle825_determination_independent_check_2026_07_28.txt": "7154031266d669ac3279c6272754a4258d627a6b146c5b78cfb0043e95fced7d",
+    "logs/runner-cache/frontier_cycle825_w7_allocation_determination_2026_07_28.txt": "cad585c3c6402257e9bf3e1f6fe96882f62701be83a73ea45c655d51fcb7b699",
+    "scripts/frontier_cycle825_determination_independent_check_2026_07_28.py": "96c4efd33812aba3bf115bddf75b652fbb7045129ba0b663a12e486885a6fa27",
+    "scripts/frontier_cycle825_w7_allocation_determination_2026_07_28.py": "0f952fa0975e757a3bfc6fde6b086bb06bfec669b0b50146ed426e26176f9ec1"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "the program's input inventory is complete and proven: two schedule axes (axiom-silent) + one allocation (visible, unspent)",
+    "feeds the Cycle-828 axiom-edit audit (what the candidate clause decides about the allocation)"
+  ],
+  "verdicts": [
+    "UNCONSTRAINED \u2014 all 42,504 allocations survive (no landed weight selector)",
+    "readout map noninjective: 5,340 values; 3,894 collision classes; 48 orbits with internal collisions (821 refinement)",
+    "checker CONFIRMED (independent selector hunt empty; census exact)"
+  ]
+}

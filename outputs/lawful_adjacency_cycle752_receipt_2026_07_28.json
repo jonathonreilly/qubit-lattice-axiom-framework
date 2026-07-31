@@ -1,0 +1,53 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle752_adjacency_independent_check_2026_07_28.txt": "75a6a1f0f74b856d4f7e1eeb60986ff5234610f0af18b5f8097ceea10e2744b3",
+      "frontier_cycle752_lawful_adjacency_attempt_2026_07_28.txt": "eee367fb8e3a0d0798be2a6c527ee3d015d26639831a584e26dc7de7f138303d"
+    },
+    "note": {
+      "path": "docs/LAWFUL_ADJACENCY_ATTEMPT_CYCLE752_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "a284578625e59e049747573a16ee8528a772a248a3111d017599f4f5b9baf0d8"
+    },
+    "runners": {
+      "frontier_cycle752_adjacency_independent_check_2026_07_28.py": "cfff6c6c8acf971c78682caec55f2bd70d661cd21e70d619ef1e1087fc412fd2",
+      "frontier_cycle752_lawful_adjacency_attempt_2026_07_28.py": "fb50873dd30a0d580bfd03a19cc4613dd9517816e1e9aab7adba6bd77ed2c2a1"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "axiom_pressure": false,
+    "fixed_supplies": "the fixed Q-order (declared convention, single-start positive only); everything the Cycle-719/734/735 packages declare",
+    "not_derived": "position-uniform adjacency; the local ordering resource; no impossibility beyond the tested machinery/order-family/fixture scope",
+    "position_uniform_adjacency": false,
+    "positive_scope": "three routes with exhaustive censuses: Route 1 dead (9/44 anchor breaks + 242 violations); Route 2 mechanically clean but 11/11 allocator failures via 22 demonstrated order-sensitive events; Route 3 (the checker's promoted witness) mechanics 11/11 but allocator 1/11 (position 0 only); order census 9/11 rotations + 1/6 alternatives each single-start-only; mixed sector 77/77 mechanics, 7/77 allocator",
+    "refined_missing_premise": "position-uniform lawful adjacency requires location-adaptive (genuinely local) ordering; no landed structure and no fixed global order provides it (order census: 0 of the tested family pass all starts)",
+    "separated_anchor_intact": "44/44 cases; 484/484 landed comparisons byte-exact",
+    "single_start_adjacency_with_declared_order": true,
+    "v1_missing_premise_claim_refuted_by_checker": true
+  },
+  "checks": {
+    "independent_named_checks_failed": 0,
+    "independent_named_checks_passed": 11,
+    "primary_named_checks_passed": 13
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 752,
+  "date": "2026-07-29",
+  "result": {
+    "adversarial_exchange": "primary froze -> checker refuted -> amendment found the true boundary",
+    "order_census": {
+      "alternatives_single_start": "1/6",
+      "position_uniform": "0",
+      "rotations_single_start": "9/11"
+    },
+    "route1": "dead (anchor breaks + adjacency unhelped)",
+    "route2": "mechanically clean; correctness-bearing invariant confirmed",
+    "route3": {
+      "allocator": "1/11 (position 0)",
+      "mechanics": "11/11",
+      "separated_anchor": "byte-exact"
+    }
+  },
+  "status": "CYCLE752_ADJACENCY_REFINED_WALL_PASS"
+}

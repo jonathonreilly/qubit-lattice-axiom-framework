@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR26-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle853_generator_usage_census_2026_07_28.txt": "REPORT.checks map",
+    "logs/runner-cache/frontier_cycle853_usage_independent_check_2026_07_28.txt": "REPORT.checks map"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle853_generator_usage_census_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle853_usage_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 853,
+  "files": {
+    "docs/GENERATOR_USAGE_CENSUS_CYCLE853_BOUNDED_THEOREM_NOTE_2026-07-28.md": "b06bae492743e2f2afe8c70f4ef6669d46ebab1397cccacde0a572286f0a2b27",
+    "logs/runner-cache/frontier_cycle853_generator_usage_census_2026_07_28.txt": "5f00b6bc02dd3c1dd79d5470bba383d469b868b47940e0637f1bd4842b78ca6f",
+    "logs/runner-cache/frontier_cycle853_usage_independent_check_2026_07_28.txt": "862c0e119ac372a4698f0e3aa26d5a09f7596d1f4229cc848f0ff06fb0fb15ee",
+    "scripts/frontier_cycle853_generator_usage_census_2026_07_28.py": "946a2ffcbb3ddad19ff2213831593f7ea93a97d9a680fec50a674391592863b7",
+    "scripts/frontier_cycle853_usage_independent_check_2026_07_28.py": "4cdabe8126f4cc8ab64ee7b3ad4772299770e4640dea1eff1351996a6092173c"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "USAGE_LOCALIZED: the 4 parity-violating patterns occurred 0 times across 891,486 landed transitions; P1/P2/P3 require x[56]=1, P4 requires x[58]=1",
+    "the full reachable census (891,513 states, independently rebuilt) contains no state with wire 56 or 58 lit",
+    "checker recursion probe CLOSES the mechanism: every generator touching wires 56/58 toggles each an even number of times (four cancelling X toggles per wire) - from initial 0 the wires are dark at every generator boundary forever",
+    "honest scope: microstates inside a generator light the wires transiently - the law is a generator-boundary law; the closed chain: initial 0 + even toggles -> dead wires -> patterns blocked -> HEAD parities conserved -> S0' unreachable (initial-condition-inherited conservation, mechanism derived)"
+  ]
+}

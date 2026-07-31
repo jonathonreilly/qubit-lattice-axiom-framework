@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "blockF20-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle849_contrast_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    },
+    "logs/runner-cache/frontier_cycle849_scheduling_contrast_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 0
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 849,
+  "files": {
+    "docs/SCHEDULING_CONTRAST_CYCLE849_BOUNDED_THEOREM_NOTE_2026-07-28.md": "f1f6890c6f459dc73d4aaf4f0a38f03f71b71714b94b93db7a1302cde4f80e8d",
+    "logs/runner-cache/frontier_cycle849_contrast_independent_check_2026_07_28.txt": "e5dbf3c09e3d30802836b2b25960e00736b0a0827873c1d62ede833aee031d60",
+    "logs/runner-cache/frontier_cycle849_scheduling_contrast_2026_07_28.txt": "3bccf2ee42ac0b9df3e3ac4404ab596ce6b30c4b7982cd8ed91bbcb17263c779",
+    "scripts/frontier_cycle849_contrast_independent_check_2026_07_28.py": "947b3c2422db691e4ae38cfd68c406f908826785295dc94f724249e08f0cf4a5",
+    "scripts/frontier_cycle849_scheduling_contrast_2026_07_28.py": "0f1d15c444514f81ac007e2c122b3b47c917bec9a01de8b4e5fef358ef910818"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "MARKED: all six trio keys' first common all-source wavefront meets at tick 3; centers (3), (10), (0,10); checker re-derived independently",
+    "both inherited k=2 wire triples (40/81/105, 88/124/125) fail to transfer (collide across classes); native mark bit[256]==bit[262] separates trio from non-trio k=3 keys both directions",
+    "minimality censused: no single-bit mark exists; (256,262) is the FIRST minimal pair (checker exhaustive enumeration)",
+    "AFTER_MARK_PURE_SCHEDULING: no clean postimage / recurrence / full-state funnel through T=1,048,576 (checker; primary 65,536) - the silence is a scheduling fact, not a marking failure; trio bet gains a mark clause"
+  ]
+}

@@ -1,87 +1,122 @@
-# The composed four-flag acceptance — W3 closes at fixture scope — Cycle 754
+# Cycle 754 finite receiver/endpoint API composition
 
-Date: 2026-07-29
+Date: 2026-07-30
 
 Authority: none
 
 Audit: unset
 
-Status: bounded conditional theorem (the W3 capstone; 23 named
-conditions; fixture scope)
+Status: bounded conditional construction
 
 Claim type: bounded_theorem
 
-Runners:
+Primary runner:
 
 - [`frontier_cycle754_composed_four_flag_acceptance_2026_07_28.py`](../scripts/frontier_cycle754_composed_four_flag_acceptance_2026_07_28.py)
+
+Independent reconstruction:
+
 - [`frontier_cycle754_capstone_independent_check_2026_07_28.py`](../scripts/frontier_cycle754_capstone_independent_check_2026_07_28.py)
 
-Constitutional effect: none. This package changes no axiom, foundation,
-Qualification, primitive, registry, policy, queue, audit result, or audit
-status.
+Load-bearing executable dependencies:
 
-## Result up front
+- [Cycle 747 receiver-success gate adapter](CYCLE332_RECEIVER_SUCCESS_CYCLE610_GATE_ADAPTER_BOUNDED_THEOREM_NOTE_2026-07-30.md)
+- [Cycle 751 net-endpoint-delta census](BINDER_FORMATION_ATTEMPT_CYCLE751_BOUNDED_THEOREM_NOTE_2026-07-28.md)
 
-Four cycles derived the four supplied acceptance flags one at a time —
-LAW from enforcement (743), ADMISS from the 332 verdicts (747), BINDER
-from the event's own write (751), ACTUAL from the enforcement lineage's
-unique survivor (750). This cycle composes them: **one acceptance call,
-all four flags computed, no constant-`1` anywhere** —
+Framework vocabulary boundary:
 
-- **the intersection domain, characterized first**: 4 controller
-  epochs, 89 touched-cell associations, 1,016 ADMISS transitions —
-  90,424 composed fixtures where all four predicates are defined;
-- **composed lawful equivalence, byte-exact**: all 90,424 fixtures
-  admitted; the full 11,168,020-byte trace family matches the
-  all-constant-`1` runs exactly (sha-frozen);
-- **the confusion matrix is the identity**: for each flag, a violating
-  family that trips only it — four independent refusal channels, zero
-  off-diagonal refusals. The four derivations do not interfere;
-- **the conditions union is exactly the four packages' supplies**: 23
-  verbatim conditions, no additions, no omissions (AST-audited).
+- [`MINIMAL_AXIOMS_2026-06-29.md`](MINIMAL_AXIOMS_2026-06-29.md)
 
-**The verdict keys**: `w3_composed_acceptance_derived: true`;
-**`w3_closed: true` at fixture scope**, conditional on the 23 named
-supplies. What remains open is stated exactly: beyond-fixture/global
-extensions, and the four conditional ADMISS hypotheses at their own
-scopes.
+Constitutional effect: none. This package changes no axiom, primitive,
+registry, policy, audit result, or audit status. Audit status authority belongs
+only to the independent audit lane.
 
-## What this means for the wall ledger
+## Exact supplied domain
 
-W3 — "objective formation/admission values replacing supplied
-BINDER/ACTUAL/ADMISS/LAW inputs" — was one of the seven residual walls
-and the Time lane's closure path. At fixture scope it is now a
-theorem chain with no supplied acceptance constants: law is
-enforcement, admission is the derived verdicts, binding is the event's
-own write, and actuality is what the laws do not refuse. The axiom
-conversation's input from this wall is a **derivation with a counted
-condition list**, not a missing-content sentence.
+Take the four rows returned by the current Cycle 751
+`trajectory(2)["rows"]` API. On each row, evaluate the lower-case
+`net_delta_nonempty` API. Cross every endpoint row with all 64 six-bit tuples
+used by the current Cycle 747 `actual_receiver_success` API.
 
-## Supplied / derived / open
+For each of the resulting `4 * 64 = 256` rows, pass the two computed bits as
+the lower-case Cycle 610 method parameters named `binder` and
+`admissibility`. The other inputs are supplied explicitly:
 
-### Supplied
+```text
+certificate = actuality = law_domain = 1.
+```
 
-- the 23 named conditions (the verbatim union of the 743/747/750/751
-  packages' supplies — listed in the receipt).
+The Cycle 747 adapter creates a fresh one-cell chain for each row. The bank-2
+endpoint trajectory, the Cartesian pairing, and the three literal one-bits are
+conditions of this finite calculation; they are not selected or derived here.
 
-### Derived
+## Exact finite result
 
-- the composed adapter; the intersection census; the byte-exact
-  equivalence; the identity confusion matrix; the conditions-union
-  audit; the deletion control.
+On the four supplied endpoint rows:
 
-### Open
+```text
+net_delta_nonempty = [1, 1, 1, 1].
+```
 
-- beyond-fixture and global extensions; the four conditional ADMISS
-  hypotheses at their own scopes; everything inherited elsewhere.
+The complete six-bit receiver table has one `receiver_success=1` row and 63
+zero rows. Crossing that table with all four endpoint rows gives this exact
+lower-case API status census:
 
-## Negative-claim discipline
+```text
+admitted          4
+refused_supplied 252
+total            256
+```
 
-No negative claim ships.
+This is the full Cartesian product of the two named finite API domains. It is
+not a common-event construction and does not assert that an endpoint row and a
+receiver row describe the same physical occurrence.
 
-## Verdict
+## Independent reconstruction
 
-The acceptance call that began the campaign as four supplied constants
-ends it as four theorems firing through one word, each refusal channel
-independent, every trace byte identical to the machinery it replaced.
-W3 closes at fixture scope. Independent audit still required.
+The primary runner calls the current Cycle 747 and Cycle 751 public APIs and
+records the complete 256-row status census.
+
+The independent checker does not import the primary. It separately enumerates
+all six-bit tuples, reconstructs the Boolean conjunction, reconstructs
+endpoint nonemptiness directly from each support tuple, and implements the
+relevant lower-case Cycle 610 decision branch before comparing those values
+with the two dependency APIs. It also checks that every declared mutable input
+exists and that the note states the exact finite boundary.
+
+Both runners declare the current Cycle 747 and Cycle 751 sources, their notes,
+their transitive mutable input closure, this note, and the paired Cycle 754
+source. A source change therefore invalidates any later infrastructure-owned
+runner cache.
+
+## Claim boundary
+
+The result is only a deterministic software/API composition on supplied
+finite rows. In particular:
+
+- lower-case `admissibility` is only a method-parameter name and is not
+  framework Admissibility;
+- lower-case `binder` and `net_delta_nonempty` are only API values and are not
+  framework `BINDER`;
+- `admitted` is only the returned software status and is not objective
+  actuality, a physical write, a Record, or a framework law judgment;
+- the Cartesian product supplies no same-event map, occurrence rule, semantic
+  bridge, wall theorem, completeness result, W3 result, capstone, or closure;
+- the package makes no impossibility or no-go claim and introduces no new
+  framework label.
+
+No measured, fitted, observational, phenomenological, cosmological, or
+literature-derived numerical input appears.
+
+## Reproduction
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 \
+  python3 scripts/frontier_cycle754_composed_four_flag_acceptance_2026_07_28.py
+
+PYTHONDONTWRITEBYTECODE=1 \
+  python3 scripts/frontier_cycle754_capstone_independent_check_2026_07_28.py
+```
+
+Runner caches may be generated by audit infrastructure for reproducibility.
+This source package ships no authored PASS transcript or claim-status receipt.

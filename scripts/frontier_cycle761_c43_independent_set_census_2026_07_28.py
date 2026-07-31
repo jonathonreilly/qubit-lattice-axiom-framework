@@ -2,9 +2,8 @@
 """Cycle 761: exact finite graph-combinatorics census on C43.
 
 This dependency-free runner proves and evaluates only the independent-set
-stratum formula and the local occupied-endpoint incidence count for labelled
-adjacent-pair masks. It contains no mapper, reversible-word, or controller
-claim.
+stratum formula, labelled adjacent-pair masks, and a finite family of labelled
+one-edge masks. It contains no mapper, reversible-word, or controller claim.
 """
 from __future__ import annotations
 
@@ -54,6 +53,11 @@ EXPECTED_STRATA = (
 EXPECTED_TOTAL = 969_323_029
 EXPECTED_PAIR_MASKS = 43
 EXPECTED_OCCUPIED_ENDPOINT_INCIDENCES = 86
+ONE_EDGE_MIN_OCCUPIED = 12
+ONE_EDGE_MAX_OCCUPIED = 21
+ONE_EDGE_PHASES = (0, 1)
+EXPECTED_ONE_EDGE_MASKS = 860
+EXPECTED_ONE_EDGE_OCCUPIED_ENDPOINT_INCIDENCES = 1_720
 STDOUT_LIMIT_BYTES = 150 * 1024
 
 CHECKS: dict[str, bool] = {}
@@ -166,6 +170,41 @@ def occupied_endpoint_incidences(mask: int, stations: int) -> int:
     )
 
 
+def occupied_edges(mask: int, stations: int) -> tuple[tuple[int, int], ...]:
+    return tuple(
+        (station, (station + 1) % stations)
+        for station in range(stations)
+        if mask & (1 << station)
+        and mask & (1 << ((station + 1) % stations))
+    )
+
+
+def one_edge_mask(
+    stations: int, occupied: int, edge_start: int, phase: int
+) -> int:
+    mask = (1 << edge_start) | (1 << ((edge_start + 1) % stations))
+    for index in range(occupied - 2):
+        station = (edge_start + 3 + phase + 2 * index) % stations
+        mask |= 1 << station
+    return mask
+
+
+def one_edge_mask_rows(
+    stations: int,
+) -> tuple[tuple[int, int, int, int], ...]:
+    return tuple(
+        (
+            occupied,
+            edge_start,
+            phase,
+            one_edge_mask(stations, occupied, edge_start, phase),
+        )
+        for occupied in range(ONE_EDGE_MIN_OCCUPIED, ONE_EDGE_MAX_OCCUPIED + 1)
+        for edge_start in range(stations)
+        for phase in ONE_EDGE_PHASES
+    )
+
+
 def stable_digest(value: object) -> str:
     encoded = json.dumps(
         value, sort_keys=True, separators=(",", ":")
@@ -184,6 +223,11 @@ def main() -> int:
     pair_masks = adjacent_pair_masks(STATIONS)
     incidence_rows = tuple(
         occupied_endpoint_incidences(mask, STATIONS) for mask in pair_masks
+    )
+    one_edge_rows = one_edge_mask_rows(STATIONS)
+    one_edge_masks = tuple(row[3] for row in one_edge_rows)
+    one_edge_incidences = tuple(
+        occupied_endpoint_incidences(mask, STATIONS) for mask in one_edge_masks
     )
 
     check("c43_closed_formula_matches_declared_strata", closed == EXPECTED_STRATA)
@@ -214,6 +258,36 @@ def main() -> int:
         sum(incidence_rows) == EXPECTED_OCCUPIED_ENDPOINT_INCIDENCES,
     )
     check(
+        "one_edge_family_has_exact_structural_row_count",
+        len(one_edge_rows)
+        == (ONE_EDGE_MAX_OCCUPIED - ONE_EDGE_MIN_OCCUPIED + 1)
+        * STATIONS
+        * len(ONE_EDGE_PHASES)
+        == EXPECTED_ONE_EDGE_MASKS,
+    )
+    check(
+        "one_edge_family_masks_are_pairwise_distinct",
+        len(set(one_edge_masks)) == len(one_edge_masks),
+    )
+    check(
+        "one_edge_family_rows_have_declared_cardinality",
+        all(mask.bit_count() == occupied for occupied, _, _, mask in one_edge_rows),
+    )
+    check(
+        "one_edge_family_rows_have_exactly_the_labelled_edge",
+        all(
+            occupied_edges(mask, STATIONS)
+            == ((edge_start, (edge_start + 1) % STATIONS),)
+            for _, edge_start, _, mask in one_edge_rows
+        ),
+    )
+    check(
+        "one_edge_family_has_exact_occupied_endpoint_incidence_total",
+        one_edge_incidences == (2,) * EXPECTED_ONE_EDGE_MASKS
+        and sum(one_edge_incidences)
+        == EXPECTED_ONE_EDGE_OCCUPIED_ENDPOINT_INCIDENCES,
+    )
+    check(
         "note_declares_finite_graph_only_scope",
         "finite graph-combinatorics support result only" in note_text
         and "does not evaluate" in note_text
@@ -231,6 +305,11 @@ def main() -> int:
         "adjacent_pair_masks": len(pair_masks),
         "occupied_endpoint_incidences": sum(incidence_rows),
         "pair_mask_sha256": stable_digest(pair_masks),
+        "one_edge_occupied_range": [ONE_EDGE_MIN_OCCUPIED, ONE_EDGE_MAX_OCCUPIED],
+        "one_edge_phases": list(ONE_EDGE_PHASES),
+        "one_edge_masks": len(one_edge_masks),
+        "one_edge_occupied_endpoint_incidences": sum(one_edge_incidences),
+        "one_edge_mask_sha256": stable_digest(one_edge_masks),
         "passed": sum(CHECKS.values()),
         "failed": len(CHECKS) - sum(CHECKS.values()),
         "runtime_sec": round(perf_counter() - started, 6),

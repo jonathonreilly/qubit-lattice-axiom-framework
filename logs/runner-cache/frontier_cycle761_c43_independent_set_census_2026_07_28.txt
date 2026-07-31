@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle761_c43_independent_set_census_2026_07_28.py
-runner_sha256: 69475d07364027fc1997d6ee5dd820d484027ab4a33a1cfcabd62796cfd1c500
-input_fingerprint_sha256: 076db72571aed7e8fa3426e1f82b2af1908ef3478de92dd4bafca87c44ca5100
+runner_sha256: 9427392953ac2a08d8fc2f62f6e42d4ebd6fe19e0374943adab5bfcb1ea9f0aa
+input_fingerprint_sha256: e2ce7cc046666158ffa5613bf680b19034b449641c37b5f0efad77ec273f70a5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 PASS c43_closed_formula_matches_declared_strata :: True
@@ -17,8 +17,13 @@ PASS adjacent_pair_masks_have_two_occupied_vertices :: True
 PASS adjacent_pair_masks_are_rotations_of_one_labelled_mask :: True
 PASS each_pair_has_two_occupied_endpoint_incidences :: True
 PASS occupied_endpoint_incidence_total_is_eighty_six :: True
+PASS one_edge_family_has_exact_structural_row_count :: True
+PASS one_edge_family_masks_are_pairwise_distinct :: True
+PASS one_edge_family_rows_have_declared_cardinality :: True
+PASS one_edge_family_rows_have_exactly_the_labelled_edge :: True
+PASS one_edge_family_has_exact_occupied_endpoint_incidence_total :: True
 PASS note_declares_finite_graph_only_scope :: True
-{"adjacent_pair_masks":43,"claim":"c43_independent_set_census_and_adjacent_pair_incidences","cycle":761,"failed":0,"independent_set_total":969323029,"lucas_number":969323029,"occupied_endpoint_incidences":86,"pair_mask_sha256":"60b78d32e28c99ec325399498938c5ca26a064f1da0e9212a30ff82f06397f8a","passed":11,"runtime_sec":0.000337,"stations":43,"strata":[1,43,860,10621,90687,567987,2701776,9970840,28915436,66335412,120609840,173376645,195747825,171655785,115000920,57500460,20764055,5167525,826804,76153,3311,43],"terminal":"CYCLE761_C43_INDEPENDENT_SET_CENSUS_PASS"}
+{"adjacent_pair_masks":43,"claim":"c43_independent_set_census_and_adjacent_pair_incidences","cycle":761,"failed":0,"independent_set_total":969323029,"lucas_number":969323029,"occupied_endpoint_incidences":86,"one_edge_mask_sha256":"e1292969540f7336891fe53aadbc4bad394a2106f3f53120f6b9d1f1359a1a51","one_edge_masks":860,"one_edge_occupied_endpoint_incidences":1720,"one_edge_occupied_range":[12,21],"one_edge_phases":[0,1],"pair_mask_sha256":"60b78d32e28c99ec325399498938c5ca26a064f1da0e9212a30ff82f06397f8a","passed":16,"runtime_sec":0.00682,"stations":43,"strata":[1,43,860,10621,90687,567987,2701776,9970840,28915436,66335412,120609840,173376645,195747825,171655785,115000920,57500460,20764055,5167525,826804,76153,3311,43],"terminal":"CYCLE761_C43_INDEPENDENT_SET_CENSUS_PASS"}
 CYCLE761_C43_INDEPENDENT_SET_CENSUS_PASS
 
 ----- stderr -----

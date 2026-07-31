@@ -60,6 +60,9 @@ EXPECTED_STRATA = (
 EXPECTED_TOTAL = 969_323_029
 EXPECTED_PAIR_MASKS = 43
 EXPECTED_OCCUPIED_ENDPOINT_INCIDENCES = 86
+ONE_EDGE_MIN_OCCUPIED = 12
+ONE_EDGE_MAX_OCCUPIED = 21
+ONE_EDGE_PHASES = (0, 1)
 STDOUT_LIMIT_BYTES = 150 * 1024
 
 CHECKS: dict[str, bool] = {}
@@ -126,6 +129,34 @@ def adjacent_pair_incidences(stations: int) -> tuple[tuple[int, int], ...]:
             incidences += bool(mask & neighbors)
         rows.append((mask, incidences))
     return tuple(rows)
+
+
+def one_edge_vertex_rows(
+    stations: int,
+) -> tuple[tuple[int, int, int, frozenset[int]], ...]:
+    rows: list[tuple[int, int, int, frozenset[int]]] = []
+    for cardinality in range(ONE_EDGE_MIN_OCCUPIED, ONE_EDGE_MAX_OCCUPIED + 1):
+        for edge_start in range(stations):
+            for phase in ONE_EDGE_PHASES:
+                vertices = {edge_start, (edge_start + 1) % stations}
+                vertices.update(
+                    (edge_start + 3 + phase + 2 * step) % stations
+                    for step in range(cardinality - 2)
+                )
+                rows.append(
+                    (cardinality, edge_start, phase, frozenset(vertices))
+                )
+    return tuple(rows)
+
+
+def vertex_set_edges(
+    vertices: frozenset[int], stations: int
+) -> frozenset[frozenset[int]]:
+    return frozenset(
+        frozenset((vertex, (vertex + 1) % stations))
+        for vertex in vertices
+        if (vertex + 1) % stations in vertices
+    )
 
 
 def literal_assignment(tree: ast.Module, name: str) -> object:
@@ -227,6 +258,51 @@ def main() -> int:
         == EXPECTED_OCCUPIED_ENDPOINT_INCIDENCES,
     )
 
+    one_edge_rows = one_edge_vertex_rows(STATIONS)
+    structural_one_edge_total = (
+        len(range(ONE_EDGE_MIN_OCCUPIED, ONE_EDGE_MAX_OCCUPIED + 1))
+        * STATIONS
+        * len(ONE_EDGE_PHASES)
+    )
+    one_edge_sets = tuple(vertices for _, _, _, vertices in one_edge_rows)
+    one_edge_edge_sets = tuple(
+        vertex_set_edges(vertices, STATIONS) for vertices in one_edge_sets
+    )
+    check(
+        "independent_one_edge_family_size_is_structurally_derived",
+        len(one_edge_rows) == structural_one_edge_total
+        and structural_one_edge_total == 860,
+    )
+    check(
+        "independent_one_edge_vertex_sets_are_pairwise_distinct",
+        len(set(one_edge_sets)) == len(one_edge_sets),
+    )
+    check(
+        "independent_one_edge_rows_have_declared_cardinality",
+        all(
+            len(vertices) == cardinality
+            for cardinality, _, _, vertices in one_edge_rows
+        ),
+    )
+    check(
+        "independent_one_edge_rows_have_only_the_labelled_edge",
+        all(
+            edges
+            == frozenset(
+                (frozenset((edge_start, (edge_start + 1) % STATIONS)),)
+            )
+            for (_, edge_start, _, _), edges in zip(
+                one_edge_rows, one_edge_edge_sets, strict=True
+            )
+        ),
+    )
+    check(
+        "independent_one_edge_occupied_endpoint_incidence_total_is_exact",
+        sum(2 * len(edges) for edges in one_edge_edge_sets)
+        == 2 * structural_one_edge_total
+        == 1_720,
+    )
+
     completed = subprocess.run(
         [sys.executable, str(root / PRIMARY_PATH)],
         cwd=root,
@@ -249,7 +325,10 @@ def main() -> int:
         and primary_report.get("independent_set_total") == EXPECTED_TOTAL
         and primary_report.get("adjacent_pair_masks") == EXPECTED_PAIR_MASKS
         and primary_report.get("occupied_endpoint_incidences")
-        == EXPECTED_OCCUPIED_ENDPOINT_INCIDENCES,
+        == EXPECTED_OCCUPIED_ENDPOINT_INCIDENCES
+        and primary_report.get("one_edge_masks") == structural_one_edge_total
+        and primary_report.get("one_edge_occupied_endpoint_incidences")
+        == 2 * structural_one_edge_total,
     )
     check(
         "note_preserves_narrow_unaudited_scope",
@@ -269,6 +348,12 @@ def main() -> int:
         "small_cycle_masks_checked": sum(1 << n for n in range(3, 19)),
         "adjacent_pair_masks": len(pair_rows),
         "occupied_endpoint_incidences": sum(row[1] for row in pair_rows),
+        "one_edge_occupied_range": [ONE_EDGE_MIN_OCCUPIED, ONE_EDGE_MAX_OCCUPIED],
+        "one_edge_phases": list(ONE_EDGE_PHASES),
+        "one_edge_masks": len(one_edge_rows),
+        "one_edge_occupied_endpoint_incidences": sum(
+            2 * len(edges) for edges in one_edge_edge_sets
+        ),
         "primary_imported": False,
         "passed": sum(CHECKS.values()),
         "failed": len(CHECKS) - sum(CHECKS.values()),

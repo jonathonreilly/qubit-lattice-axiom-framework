@@ -1,16 +1,16 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle761_c43_independent_set_census_2026_07_28.txt": "a2a8e44edab544ae60e64bb2b99fe9a30b99376e466b3ac1bc742dbf2d0f2498",
-      "frontier_cycle761_c43_independent_set_census_independent_check_2026_07_28.txt": "90bbffbbd737b0b4938c5a3cbd1205c7bf0081581366a6eefb2dad58d4c0977e"
+      "frontier_cycle761_c43_independent_set_census_2026_07_28.txt": "6818f132d580260c2cb92a2a1472c4c248a5b4f0e7f6a2c51f9fa7b04bd64e8c",
+      "frontier_cycle761_c43_independent_set_census_independent_check_2026_07_28.txt": "030443d41ea0397e513c089dd70842e5959a6df5a8d51bacc3388711ef22180e"
     },
     "note": {
       "path": "docs/CYCLE_GRAPH_C43_INDEPENDENT_SET_CENSUS_NARROW_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "ca782dc2acd76d85a046bb96c7a22415c0f14921bc6ab5f38c8daf542e02b6b3"
+      "sha256": "510ad6c853373b3d68cc1052dc2c24d237ffcc7e2337ba79403c504eafd2352b"
     },
     "runners": {
-      "frontier_cycle761_c43_independent_set_census_2026_07_28.py": "69475d07364027fc1997d6ee5dd820d484027ab4a33a1cfcabd62796cfd1c500",
-      "frontier_cycle761_c43_independent_set_census_independent_check_2026_07_28.py": "6230519b3acf68e815bcbd2d4c1a3a7816967eeb06cb83b696dddbaf66a3a802"
+      "frontier_cycle761_c43_independent_set_census_2026_07_28.py": "9427392953ac2a08d8fc2f62f6e42d4ebd6fe19e0374943adab5bfcb1ea9f0aa",
+      "frontier_cycle761_c43_independent_set_census_independent_check_2026_07_28.py": "8b83435d4c65eb7b882a1d2a5572fef7f89131d60fc528027b5988e526649f63"
     }
   },
   "audit": "unset",
@@ -40,15 +40,15 @@
     },
     "harness_index": {
       "path": "docs/CANONICAL_HARNESS_INDEX.md",
-      "sha256": "e18af7624b37e4ec78d871590544a1bc1a534efcf084bbb5f101b0992f053f16"
+      "sha256": "d8d8714c8e67f6d4f3582fb419d2a8dd2190edf68bddd92ad19f7759f3c515c9"
     },
     "section": "Unaudited Bounded Claim Candidates"
   },
   "checks": {
     "independent_named_checks_failed": 0,
-    "independent_named_checks_passed": 12,
+    "independent_named_checks_passed": 17,
     "primary_named_checks_failed": 0,
-    "primary_named_checks_passed": 11
+    "primary_named_checks_passed": 16
   },
   "claim_type": "bounded_theorem",
   "cycle": 761,
@@ -61,26 +61,37 @@
     "independent_declared_inputs": [
       {
         "path": "scripts/frontier_cycle761_c43_independent_set_census_2026_07_28.py",
-        "sha256": "69475d07364027fc1997d6ee5dd820d484027ab4a33a1cfcabd62796cfd1c500"
+        "sha256": "9427392953ac2a08d8fc2f62f6e42d4ebd6fe19e0374943adab5bfcb1ea9f0aa"
       },
       {
         "path": "docs/CYCLE_GRAPH_C43_INDEPENDENT_SET_CENSUS_NARROW_THEOREM_NOTE_2026-07-28.md",
-        "sha256": "ca782dc2acd76d85a046bb96c7a22415c0f14921bc6ab5f38c8daf542e02b6b3"
+        "sha256": "510ad6c853373b3d68cc1052dc2c24d237ffcc7e2337ba79403c504eafd2352b"
       }
     ],
-    "independent_input_fingerprint_sha256": "ad45b7039117f9c9e1e333c57380396bed15dff025ebe28c25b1af25547b20e3",
+    "independent_input_fingerprint_sha256": "7654d1dd25e391bcf3e03e3c7d0a9da1af230eef199100afec53ac2815be2401",
     "primary_declared_inputs": [
       {
         "path": "docs/CYCLE_GRAPH_C43_INDEPENDENT_SET_CENSUS_NARROW_THEOREM_NOTE_2026-07-28.md",
-        "sha256": "ca782dc2acd76d85a046bb96c7a22415c0f14921bc6ab5f38c8daf542e02b6b3"
+        "sha256": "510ad6c853373b3d68cc1052dc2c24d237ffcc7e2337ba79403c504eafd2352b"
       }
     ],
-    "primary_input_fingerprint_sha256": "076db72571aed7e8fa3426e1f82b2af1908ef3478de92dd4bafca87c44ca5100"
+    "primary_input_fingerprint_sha256": "e2ce7cc046666158ffa5613bf680b19034b449641c37b5f0efad77ec273f70a5"
   },
   "result": {
     "adjacent_pair_masks": 43,
     "independent_set_total": 969323029,
     "occupied_endpoint_incidences": 86,
+    "one_edge_mask_sha256": "e1292969540f7336891fe53aadbc4bad394a2106f3f53120f6b9d1f1359a1a51",
+    "one_edge_masks": 860,
+    "one_edge_occupied_endpoint_incidences": 1720,
+    "one_edge_occupied_range": [
+      12,
+      21
+    ],
+    "one_edge_phases": [
+      0,
+      1
+    ],
     "stations": 43,
     "strata": [
       1,

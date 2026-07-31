@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF22-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle857_census_independent_check_2026_07_28.txt": "PASS/FAIL certificate lines",
+    "logs/runner-cache/frontier_cycle857_census_theorem_2026_07_28.txt": "PASS/FAIL certificate lines"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle857_census_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle857_census_theorem_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 857,
+  "files": {
+    "docs/CENSUS_THEOREM_CYCLE857_BOUNDED_THEOREM_NOTE_2026-07-28.md": "a1dbb4e48e1ea9309c32ee43bce6d9e8b0a5f088ac311bbb9d50722700cc8876",
+    "logs/runner-cache/frontier_cycle857_census_independent_check_2026_07_28.txt": "2fbb77736c47a4c58b39dcf0952490509aa3536d96a93e7cafbb97606acc68ad",
+    "logs/runner-cache/frontier_cycle857_census_theorem_2026_07_28.txt": "616cb70f91541a7e53648541104b65c278615398bb3a2aa48f21a7b9727457fe",
+    "scripts/frontier_cycle857_census_independent_check_2026_07_28.py": "ec8b17817ccbff6617b3061bb9534e76044fc7521cbbcf64c495f61b5c64b8c7",
+    "scripts/frontier_cycle857_census_theorem_2026_07_28.py": "484f5bf49c15157abf233f852832f9d3781fc82c47a87a768d7959072274642f"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "counting law N_k = C(10-k,k-1) x 4 x 11 / k => 176+308+220+44 = 748 = 68x11; STRUCTURE_CERTIFIED by the checker (per-factor bijections: spacing patterns / phases / origins / label quotient with per-stratum integrality)",
+    "bit accounting exact: log2(748) = log2(68) + log2(11) = 6.09 family bits + 3.46 allocation bits",
+    "constraint table: relaxations 792/748/4048/935, tightenings 572/704/220/561; the no-op identified - PACKING_WINDOW_k_le_5 is implied by the separation rule (checker-confirmed)",
+    "every parameter of the space is an axiom/core constant: the SET of possible worlds is fully derived; only the ~9.55-bit selection is input"
+  ]
+}

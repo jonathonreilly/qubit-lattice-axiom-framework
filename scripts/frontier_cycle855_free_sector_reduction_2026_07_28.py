@@ -401,6 +401,15 @@ def inheritance_reconstruction(
         len(group) * (len(group) - 1) // 2
         for group in signature_groups.values()
     )
+    pair_family_groups = tuple(
+        (signature, tuple(group))
+        for signature, group in sorted(signature_groups.items())
+        if len(group) >= 2
+    )
+    free_wires_in_pair_family = tuple(sorted({
+        wire for _signature, group in pair_family_groups for wire in group
+        if wire in free_set
+    }))
 
     support_rows = []
     for pair in BACKBONE:
@@ -454,6 +463,15 @@ def inheritance_reconstruction(
         "inherited_wire_count": len(inherited),
         "inherited_wire_ranges": ranges(inherited),
         "inherited_pair_parity_count": pair_count,
+        "inherited_pair_family_group_count": len(pair_family_groups),
+        "pair_family_is_exactly_all_unordered_inherited_wire_pairs": (
+            len(pair_family_groups) == 1
+            and pair_family_groups[0][0] == zero_signature
+            and pair_family_groups[0][1] == inherited
+            and pair_count == len(inherited) * (len(inherited) - 1) // 2
+        ),
+        "free_wires_in_inherited_pair_parity_family":
+            free_wires_in_pair_family,
         "free_wire_count": len(free),
         "free_wire_ranges": ranges(free),
         "free_wire_sha256": digest(free),
@@ -463,6 +481,10 @@ def inheritance_reconstruction(
             len(inherited) == EXPECTED_INHERITED_WIRE_COUNT
             and pair_count == EXPECTED_INHERITED_PAIR_COUNT
             and len(free) == EXPECTED_FREE_WIRE_COUNT
+            and len(pair_family_groups) == 1
+            and pair_family_groups[0][0] == zero_signature
+            and pair_family_groups[0][1] == inherited
+            and not free_wires_in_pair_family
             and set(inherited).isdisjoint(free)
             and len(inherited) + len(free) == STATE_BITS
         ),
@@ -950,7 +972,9 @@ int main(int argc, char **argv) {
     uint64_t induced_edges = 0, transition_collision_groups = 0;
     uint64_t inherited_variation_groups = 0, inherited_pinned_groups = 0;
     uint64_t inherited_variation_pairs = 0, coupling_groups = 0;
-    Transition witness[2]; int witness_kind = 0;
+    uint64_t coupling_pair_witnesses = 0;
+    Transition variation_witness[2]; int have_variation_witness = 0;
+    FILE *wf = fopen(argv[7], "wb"); if (!wf) die(argv[7]);
     for (size_t start = 0; start < transition_n;) {
         size_t end = start + 1;
         while (end < transition_n && same_transition_key(
@@ -969,22 +993,29 @@ int main(int argc, char **argv) {
         }
         if (distinct > 1) {
             ++inherited_variation_groups;
-            if (!witness_kind) {
+            if (!have_variation_witness) {
                 size_t other = start + 1;
                 while (other < end && transitions[other].inherited_class
                        == transitions[start].inherited_class) ++other;
-                if (other < end) { witness[0] = transitions[start]; witness[1] = transitions[other]; witness_kind = 1; }
+                if (other < end) {
+                    variation_witness[0] = transitions[start];
+                    variation_witness[1] = transitions[other];
+                    have_variation_witness = 1;
+                }
             }
         } else ++inherited_pinned_groups;
         if (coupled) {
             ++coupling_groups;
-            if (witness_kind != 2) {
-                size_t other = start + 1;
-                while (other < end && !memcmp(
-                    transitions[start].output, transitions[other].output, FREE_BYTES
-                )) ++other;
-                if (other < end) { witness[0] = transitions[start]; witness[1] = transitions[other]; witness_kind = 2; }
-            }
+            for (size_t left = start; left < end; ++left)
+                for (size_t right = left + 1; right < end; ++right)
+                    if (memcmp(
+                        transitions[left].output, transitions[right].output, FREE_BYTES
+                    )) {
+                        if (fwrite(&transitions[left], sizeof(Transition), 1, wf) != 1
+                            || fwrite(&transitions[right], sizeof(Transition), 1, wf) != 1)
+                            die("coupling witness");
+                        ++coupling_pair_witnesses;
+                    }
         }
         start = end;
     }
@@ -1003,8 +1034,10 @@ int main(int argc, char **argv) {
         }
     }
 
-    FILE *wf = fopen(argv[7], "wb"); if (!wf) die(argv[7]);
-    if (witness_kind && fwrite(witness, sizeof(Transition), 2, wf) != 2) die("witness");
+    int witness_kind = coupling_groups ? 2 : have_variation_witness ? 1 : 0;
+    if (!coupling_groups && have_variation_witness
+        && fwrite(variation_witness, sizeof(Transition), 2, wf) != 2)
+        die("variation witness");
     fclose(wf);
     FILE *summary = fopen(argv[6], "w"); if (!summary) die(argv[6]);
     fprintf(summary,
@@ -1014,13 +1047,15 @@ int main(int argc, char **argv) {
         "state_inherited_variation_pairs=%" PRIu64 "\ninduced_transition_edges=%" PRIu64 "\n"
         "transition_collision_groups=%" PRIu64 "\ninherited_variation_groups=%" PRIu64 "\n"
         "inherited_pinned_groups=%" PRIu64 "\ninherited_variation_pairs=%" PRIu64 "\n"
-        "coupling_groups=%" PRIu64 "\nwitness_kind=%d\nprobe_count=%zu\n"
+        "coupling_groups=%" PRIu64 "\ncoupling_pair_witnesses=%" PRIu64 "\n"
+        "witness_kind=%d\nprobe_count=%zu\n"
         "probe_matches=%" PRIu64 "\nprobe_output_mismatches=%" PRIu64 "\n",
         sched_n, state_n, transition_n, unique_full_states, reduced_states,
         state_collision_groups, state_variation_groups, state_variation_pairs,
         induced_edges, transition_collision_groups, inherited_variation_groups,
         inherited_pinned_groups, inherited_variation_pairs, coupling_groups,
-        witness_kind, probe_n, probe_matches, probe_output_mismatches);
+        coupling_pair_witnesses, witness_kind, probe_n, probe_matches,
+        probe_output_mismatches);
     fclose(summary);
     free(schedule); free(initial); free(free_wires); free(classes); free(probes);
     free(states); free(transitions); return 0;
@@ -1176,55 +1211,86 @@ def decode_witness(
     record = 2 * free_bytes + 3 + 4
     if not payload:
         return None
-    if len(payload) != 2 * record:
+    if len(payload) % (2 * record):
         raise AssertionError(("witness size drift", len(payload), 2 * record))
-    rows = []
-    for offset in (0, record):
-        before = payload[offset:offset + free_bytes]
-        offset += free_bytes
-        after = payload[offset:offset + free_bytes]
-        offset += free_bytes
-        generator, inherited_class, lane, time = struct.unpack(
-            "<BBBI", payload[offset:offset + 7],
+    decoded_pairs = []
+    channel_counts: Counter[tuple[object, ...]] = Counter()
+    for pair_offset in range(0, len(payload), 2 * record):
+        raw_rows = []
+        rows = []
+        for row_offset in (pair_offset, pair_offset + record):
+            before = payload[row_offset:row_offset + free_bytes]
+            after_start = row_offset + free_bytes
+            after = payload[after_start:after_start + free_bytes]
+            metadata_start = after_start + free_bytes
+            generator, inherited_class, lane, time = struct.unpack(
+                "<BBBI", payload[metadata_start:metadata_start + 7],
+            )
+            raw_rows.append((before, after))
+            rows.append({
+                "generator": BACKBONE[generator],
+                "generator_index": generator,
+                "inherited_class": inherited_class,
+                "lane": lane,
+                "event": EVENTS[lane // len(BACKBONE)],
+                "time": time,
+                "free_input_sha256": sha256(before).hexdigest(),
+                "free_successor_sha256": sha256(after).hexdigest(),
+            })
+        successor_delta = int.from_bytes(bytes(
+            left ^ right for left, right in zip(
+                raw_rows[0][1], raw_rows[1][1],
+            )
+        ), "little")
+        free_delta_indices = support_indices(successor_delta)
+        left_class = rows[0]["inherited_class"]
+        right_class = rows[1]["inherited_class"]
+        inherited_delta_wires = support_indices(
+            class_values[left_class] ^ class_values[right_class]
         )
-        rows.append({
-            "generator": BACKBONE[generator],
-            "generator_index": generator,
-            "inherited_class": inherited_class,
-            "lane": lane,
-            "event": EVENTS[lane // len(BACKBONE)],
-            "time": time,
-            "free_input_sha256": sha256(before).hexdigest(),
-            "free_successor_sha256": sha256(after).hexdigest(),
-        })
-    successor_delta = int.from_bytes(
-        bytes(left ^ right for left, right in zip(
-            payload[free_bytes:2 * free_bytes],
-            payload[record + free_bytes:record + 2 * free_bytes],
-        )), "little",
-    )
-    free_delta_indices = support_indices(successor_delta)
-    inherited_delta = (
-        class_values[rows[0]["inherited_class"]]
-        ^ class_values[rows[1]["inherited_class"]]
-    )
-    same_successor = (
-        rows[0]["free_successor_sha256"] == rows[1]["free_successor_sha256"]
-    )
+        inherited_left_ones = tuple(
+            wire for wire in inherited_delta_wires
+            if (class_values[left_class] >> wire) & 1
+        )
+        inherited_right_ones = tuple(
+            wire for wire in inherited_delta_wires
+            if (class_values[right_class] >> wire) & 1
+        )
+        free_delta_wires = tuple(
+            free_wires[index] for index in free_delta_indices
+        )
+        same_successor = not free_delta_wires
+        pair = {
+            "rows": tuple(rows),
+            "same_free_input": raw_rows[0][0] == raw_rows[1][0],
+            "different_inherited_class": left_class != right_class,
+            "same_free_successor": same_successor,
+        }
+        decoded_pairs.append(pair)
+        if not same_successor:
+            channel_counts[(
+                rows[0]["generator_index"], left_class, right_class,
+                ranges(inherited_delta_wires), ranges(inherited_left_ones),
+                ranges(inherited_right_ones), free_delta_wires,
+            )] += 1
+    channels = tuple({
+        "generator": BACKBONE[key[0]],
+        "inherited_class_pair": (key[1], key[2]),
+        "inherited_difference_wire_ranges": key[3],
+        "class_a_one_wire_ranges_on_difference": key[4],
+        "class_b_one_wire_ranges_on_difference": key[5],
+        "free_successor_difference_wires": key[6],
+        "reachable_coupling_group_count": count,
+    } for key, count in sorted(channel_counts.items()))
     return {
-        "rows": tuple(rows),
-        "same_free_input": rows[0]["free_input_sha256"] == rows[1]["free_input_sha256"],
-        "different_inherited_class":
-            rows[0]["inherited_class"] != rows[1]["inherited_class"],
-        "same_free_successor": same_successor,
-        "coupling_channels": () if same_successor else ({
-            "generator": rows[0]["generator"],
-            "inherited_input_difference_wire_ranges":
-                ranges(support_indices(inherited_delta)),
-            "free_successor_difference_wires": tuple(
-                free_wires[index] for index in free_delta_indices
-            ),
-        },),
+        "exact_witness_pair_count": len(decoded_pairs),
+        "witness_payload_sha256": sha256(payload).hexdigest(),
+        "first_pair": decoded_pairs[0],
+        "all_pairs_valid": all(
+            pair["same_free_input"] and pair["different_inherited_class"]
+            for pair in decoded_pairs
+        ),
+        "coupling_channels": channels,
     }
 
 
@@ -1297,16 +1363,29 @@ def closure_certificate(
             "The reachable census pins inherited values to one exact vector in "
             "every equal-(generator,free-input) group; constancy implies trivial closure."
         )
+    first_pair = witness["first_pair"] if witness is not None else None
+    channels = witness["coupling_channels"] if witness is not None else ()
+    public_witness = (
+        {key: value for key, value in witness.items() if key != "coupling_channels"}
+        if witness is not None else None
+    )
     witness_valid = (
-        (coupled and witness is not None
-         and witness["same_free_input"]
-         and witness["different_inherited_class"]
-         and not witness["same_free_successor"])
+        (coupled and witness is not None and first_pair is not None
+         and witness["all_pairs_valid"]
+         and witness["exact_witness_pair_count"]
+         == summary["coupling_pair_witnesses"]
+         and sum(row["reachable_coupling_group_count"] for row in channels)
+         == summary["coupling_pair_witnesses"]
+         and first_pair["same_free_input"]
+         and first_pair["different_inherited_class"]
+         and not first_pair["same_free_successor"])
         or (
-            not coupled and variation_groups > 0 and witness is not None
-            and witness["same_free_input"]
-            and witness["different_inherited_class"]
-            and witness["same_free_successor"]
+            not coupled and variation_groups > 0
+            and witness is not None and first_pair is not None
+            and witness["exact_witness_pair_count"] == 1
+            and first_pair["same_free_input"]
+            and first_pair["different_inherited_class"]
+            and first_pair["same_free_successor"]
         )
         or (not coupled and variation_groups == 0 and witness is None)
     )
@@ -1329,10 +1408,10 @@ def closure_certificate(
         "pinned_constancy_statement": variation_statement,
         "initial_inherited_classes": inherited_classes,
         "free_successor_disagreement_groups": summary["coupling_groups"],
-        "witness": witness,
-        "coupling_channels": (
-            witness["coupling_channels"] if coupled and witness else ()
-        ),
+        "exact_coupling_pair_witnesses": summary["coupling_pair_witnesses"],
+        "witness": public_witness,
+        "coupling_channel_count": len(channels) if coupled else 0,
+        "coupling_channels": channels if coupled else (),
         "verdict": "COUPLED" if coupled else "FREE_SECTOR_CLOSED",
         "finding": "COUPLED" if coupled else "FREE_SECTOR_CLOSED",
         "pass": False,

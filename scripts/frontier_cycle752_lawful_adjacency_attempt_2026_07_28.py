@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
-"""Cycle 752 v2: bounded lawful-adjacency amendment at the Cycle-734 wall.
+"""Cycle 752: bounded fixed-macro schedule/order census on a supplied C11.
 
 Route 1 compiles a fixed even/odd two-half-step word.  The first half
 executes even Q blocks and lifts even A tokens to B; the second executes odd
 Q blocks, lifts odd tokens, and lands every B token one station forward.
 This preserves the landed controller motion without a runtime occupancy
-branch.  The ring-11 separated and adjacent families decide whether it also
-preserves the landed data semantics and Cycle-734 ownership invariant.
+branch.  The ring-11 separated and adjacent fixtures decide whether it also
+preserves the landed data semantics and the declared ownership predicates.
 
 Route 2 deletes only the two neighbor-A clauses from the frozen six-term
 invariant and tests the bare Cycle-719 adjacent orbits in its original
 station order.  Those v1 results remain frozen.
 
-The independent checker's N-gate search supplied Route 3: the same relaxed
-invariant plus the declared fixed Q order (1,0,10,9,8,7,6,5,4,3,2).  This
-amendment promotes that witness to exhaustive adjacent and separated
-batteries, characterizes the mixed three-token sector, and tests whether the
-witness is one order, a rotation class, or a generic convention.
+The independent checker's search supplied Route 3: the same four-term fixture
+predicate plus the declared fixed Q order (1,0,10,9,8,7,6,5,4,3,2).  This
+runner exercises that witness on the supplied adjacent and separated fixtures,
+characterizes the mixed three-token sector, and tests sampled order classes.
+The separate checker exhausts all fixed-total-order edge orientations.
 """
 from __future__ import annotations
 
@@ -26,21 +26,8 @@ import inspect
 import json
 import sys
 from time import perf_counter
-import types
 
 import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
-
-
-# The two frozen files expose the functions used below but import historical
-# certificate modules that are deliberately outside this bounded worktree.
-# Empty import shims let the frozen files load; no attribute of either shim is
-# read, so they supply no physics or certificate value.
-_BOUNDED_IMPORT_SHIMS = (
-    "frontier_cycle732_genesis_word_self_verification_2026_07_28",
-    "frontier_cycle731_token_count_certificate_2026_07_28",
-)
-for _shim_name in _BOUNDED_IMPORT_SHIMS:
-    sys.modules.setdefault(_shim_name, types.ModuleType(_shim_name))
 
 import frontier_cycle734_paired_excitation_genesis_2026_07_28 as P734
 import frontier_cycle735_separated_pair_lawful_control_2026_07_28 as S735
@@ -51,9 +38,66 @@ NOTE_PATH = (
     "docs/LAWFUL_ADJACENCY_ATTEMPT_CYCLE752_BOUNDED_THEOREM_NOTE_2026-07-28.md"
 )
 AUDIT_INPUT_PATHS = (
+    "docs/PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/SEPARATED_PAIR_LAWFUL_CONTROL_CYCLE735_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+    "scripts/frontier_cycle724_local_token_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle728_bksf_holonomy_compression_2026_07_28.py",
+    "scripts/frontier_cycle730_charge_row_enforcement_2026_07_28.py",
+    "scripts/frontier_cycle731_token_count_certificate_2026_07_28.py",
+    "scripts/frontier_cycle732_genesis_independent_check_2026_07_28.py",
+    "scripts/frontier_cycle732_genesis_word_self_verification_2026_07_28.py",
     "scripts/frontier_cycle734_paired_excitation_genesis_2026_07_28.py",
+    "scripts/frontier_cycle734_paired_excitation_independent_check_2026_07_28.py",
     "scripts/frontier_cycle735_separated_pair_lawful_control_2026_07_28.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
@@ -94,15 +138,15 @@ EXPECTED_TWO_SOURCE_SHA256 = (
 )
 ROUTE3_FIXED_Q_ORDER = (1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2)
 CHECKER_REFUTATION_VERBATIM = (
-    "The checker's N-gate positive search REFUTED that as stated: "
+    "The checker's finite search refuted the earlier zero-hit statement: "
     "the fixed Q-order (1,0,10,9,8,7,6,5,4,3,2) under Route 2's "
-    "relaxation passes allocator correctness on the adjacent family."
+    "four-term fixture predicate passes allocator correctness for one "
+    "adjacent start."
 )
 V1_MISSING_PREMISE_CLAIM = (
-    "a new local reversible adjacency-ordering resource that "
-    "serializes overlapping neighboring Q macros while preserving "
-    "Cycle-719 landed order, exact two-source allocator composition, "
-    "and clean A/B/work return"
+    "the enumerated schedule and fixed-order families do not provide "
+    "position-uniform exact two-allocator output for the supplied C11 "
+    "fixture with unchanged atomic Q macros"
 )
 EXPECTED_ROUTE3_ADJACENT_CORRECT = 1
 EXPECTED_ROUTE3_SEPARATED_STEP_MISMATCHES = 0
@@ -342,7 +386,10 @@ def landed_anchor_and_route1_equivalence(
     data_width = len(data)
     blank = (0,) * RING_STATIONS
     expected_data = two_source_expected(data)
-    s735_anchor = S735.invariant_full_orbit()
+    s735_anchor = S735.bare_transport_certificate(
+        LAWFUL_DISTANCES,
+        expect_double_allocator=True,
+    )
 
     cases = 0
     standard_anchor_failures = 0
@@ -450,15 +497,7 @@ def landed_anchor_and_route1_equivalence(
     )
     return {
         "comparison_encoding": "byte-exact bytes(tuple-of-bits)",
-        "S735_direct_anchor": {
-            "outcome": s735_anchor["outcome"],
-            "separated_pair_lawful_control":
-                s735_anchor["separated_pair_lawful_control"],
-            "two_source_composition_ring11":
-                s735_anchor["two_source_composition_ring11"],
-            "failure_census": s735_anchor["failure_census"],
-            "failed_distances": s735_anchor["failed_distances"],
-        },
+        "S735_direct_anchor": s735_anchor,
         "cases": cases,
         "expected_cases":
             RING_STATIONS * len(LAWFUL_DISTANCES),
@@ -558,11 +597,11 @@ def route1_adjacent_family(
                 )
                 work_dirty_boundaries += sum(work)
                 distance_failures += (
-                    S735.ring_pair_distance(site_union) != 1
+                    S735.pair_distance(site_union) != 1
                 )
                 adjacent_active = (
                     len(active_occupied) == EXPECTED_COUNT
-                    and S735.ring_pair_distance(active_occupied) == 1
+                    and S735.pair_distance(active_occupied) == 1
                 )
                 active_Q_adjacent_contests += adjacent_active
                 case_active_contests += adjacent_active
@@ -1623,9 +1662,7 @@ def route3_full_battery(
             "fixed Q-processing order"
         ),
         "checker_refutation": {
-            "credit": (
-                "Cycle-752 independent checker's N-gate positive search"
-            ),
+            "credit": "Cycle-752 independent finite search",
             "verbatim": CHECKER_REFUTATION_VERBATIM,
             "witness_order": ROUTE3_FIXED_Q_ORDER,
             "witness_position": 0,
@@ -1752,9 +1789,6 @@ def no_new_supplier_audit(
         ),
         "new_data_or_occupancy_oracle": False,
         "runtime_occupancy_branch": False,
-        "bounded_import_shims": _BOUNDED_IMPORT_SHIMS,
-        "shim_attribute_reads": 0,
-        "hidden_supplier_count": 0,
         "audit_pass": (
             compiler_parameters == ("program", "data_width")
             and not runtime_state_parameters
@@ -1803,14 +1837,14 @@ def main() -> int:
     direct_anchor = landed["S735_direct_anchor"]
     check(
         "B_S735_landed_anchor_and_route1_census",
-        direct_anchor["outcome"] == "lawful_domain_2_through_5"
-        and direct_anchor["separated_pair_lawful_control"]
-        and direct_anchor["two_source_composition_ring11"]
-        and all(
-            value == 0
-            for value in direct_anchor["failure_census"].values()
-        )
-        and not direct_anchor["failed_distances"]
+        direct_anchor["scope"] == "bare Cycle-719 logical controller"
+        and direct_anchor["distances"] == LAWFUL_DISTANCES
+        and direct_anchor["cases"] == 44
+        and direct_anchor["steps"] == 484
+        and direct_anchor["double_allocator_expected"]
+        and direct_anchor["double_allocator_matches"] == 44
+        and not direct_anchor["failures"]
+        and direct_anchor["pass"]
         and landed["cases"] == landed["expected_cases"] == 44
         and landed["standard_anchor_failures"] == 0
         and landed["standard_invariant_violation_rows"] == 0
@@ -2063,8 +2097,6 @@ def main() -> int:
         and len(supplier_audit["declared_schedule_premises"]) == 2
         and not supplier_audit["new_data_or_occupancy_oracle"]
         and not supplier_audit["runtime_occupancy_branch"]
-        and supplier_audit["shim_attribute_reads"] == 0
-        and supplier_audit["hidden_supplier_count"] == 0
         and supplier_audit["audit_pass"],
     )
 
@@ -2082,29 +2114,25 @@ def main() -> int:
         "adjacency_lawful_with_declared_order"
     ]
     boundary = {
-        "outcome": "AMENDED_ROUTE3_FULL_BATTERY_CHARACTERIZED",
+        "outcome": "FIXED_MACRO_C11_CENSUS_CHARACTERIZED",
         "lawful_adjacency_achieved":
             not route3_full_family_failed,
         "adjacency_lawful_with_declared_order":
             not route3_full_family_failed,
-        "new_supply": (
-            "one declared fixed Q-processing order (convention, "
-            "same class as the existing Q-before-R layer-order supply)"
+        "tested_supply": (
+            "one declared fixed Q-processing order, treated only as an "
+            "indexing and execution convention for this fixture"
         ),
-        "no_new_physical_resource_needed":
-            not route3_full_family_failed,
         "route3_supply_is_only_a_convention": True,
         "v1_missing_premise_claim_refuted_by_checker": True,
         "checker_refutation": {
-            "credit": (
-                "Cycle-752 independent checker's N-gate positive search"
-            ),
+            "credit": "Cycle-752 independent finite search",
             "verbatim": CHECKER_REFUTATION_VERBATIM,
             "verified_witness_position": 0,
             "full_family_correction": (
-                "the promoted fixed order is allocator-correct for "
-                "1/11 adjacent starts, so the one-start refutation "
-                "does not establish the full-family route"
+                "the fixed order is allocator-correct for 1/11 "
+                "adjacent starts and does not establish a "
+                "position-uniform fixture result"
             ),
         },
         "v1_results_frozen": {
@@ -2125,7 +2153,8 @@ def main() -> int:
             list(LAWFUL_DISTANCES),
         "all_configuration_extension": False,
         "multi_source_sector_scope": (
-            "held two-bank ring-11 fixture only: Route 3 is relaxed-law "
+            "held two-bank ring-11 fixture only: Route 3 passes the "
+            "declared four-term predicate and is "
             "mechanical and allocator-correct on 1/11 adjacent two-token "
             "orbits; it reproduces all 44 separated two-token orbits "
             "byte-exactly at all 484 landed steps; the 77 mixed "
@@ -2136,17 +2165,16 @@ def main() -> int:
     check(
         "L_amended_conclusion_keys",
         boundary["outcome"]
-        == "AMENDED_ROUTE3_FULL_BATTERY_CHARACTERIZED"
+        == "FIXED_MACRO_C11_CENSUS_CHARACTERIZED"
         and not boundary["lawful_adjacency_achieved"]
         and not boundary[
             "adjacency_lawful_with_declared_order"
         ]
-        and boundary["new_supply"]
+        and boundary["tested_supply"]
         == (
-            "one declared fixed Q-processing order (convention, "
-            "same class as the existing Q-before-R layer-order supply)"
+            "one declared fixed Q-processing order, treated only as an "
+            "indexing and execution convention for this fixture"
         )
-        and not boundary["no_new_physical_resource_needed"]
         and boundary["route3_supply_is_only_a_convention"]
         and boundary[
             "v1_missing_premise_claim_refuted_by_checker"

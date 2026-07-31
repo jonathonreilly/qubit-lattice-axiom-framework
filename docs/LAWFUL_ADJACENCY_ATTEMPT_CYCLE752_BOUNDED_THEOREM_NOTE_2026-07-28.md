@@ -1,4 +1,4 @@
-# The adjacency wall, adversarially refined — one start yields, the family stands — Cycle 752
+# Fixed-macro schedule and station-order census on a supplied C11 — Cycle 752
 
 Date: 2026-07-29
 
@@ -6,8 +6,7 @@ Authority: none
 
 Audit: unset
 
-Status: bounded worked result (three routes; the wall's exact shape
-found through primary-checker adversarial exchange)
+Status: bounded worked result on one declared finite fixture
 
 Claim type: bounded_theorem
 
@@ -16,78 +15,81 @@ Runners:
 - [`frontier_cycle752_lawful_adjacency_attempt_2026_07_28.py`](../scripts/frontier_cycle752_lawful_adjacency_attempt_2026_07_28.py)
 - [`frontier_cycle752_adjacency_independent_check_2026_07_28.py`](../scripts/frontier_cycle752_adjacency_independent_check_2026_07_28.py)
 
+Controlling support-only inputs:
+
+- [Cycle 719 recurrent-controller note](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+- [Cycle 734 paired-genesis note](PAIRED_EXCITATION_GENESIS_CYCLE734_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+- [Cycle 735 separated-pair note](SEPARATED_PAIR_LAWFUL_CONTROL_CYCLE735_BOUNDED_THEOREM_NOTE_2026-07-28.md)
+
 Constitutional effect: none. This package changes no axiom, foundation,
 Qualification, primitive, registry, policy, queue, audit result, or audit
 status.
 
-## Result up front
+## Exact bounded result
 
-The Cycle-734 wall was attacked three times inside this one package,
-with the checker's N-gate discipline driving the final refinement:
+The supplied domain is an oriented 11-station ring with station 0 as the
+program cut and parity origin; the held Cycle-719 two-bank data and program;
+two externally positioned adjacent controller tokens; clean A, B, and work
+rails; classical-basis X/CNOT/Toffoli semantics; 11 controller steps; the
+exact output from applying the supplied global allocator twice; and unchanged
+atomic Q macros applied once at each contested edge. A selected four-term
+fixture predicate retains `own_B`, `own_work`, `left_B`, and `right_B`. Passing
+that predicate is not identified with framework Admissibility.
 
-- **Route 1 (staggered half-steps): dead** — breaks the separated
-  anchor (9/44) and leaves all 242 adjacent ownership checks
-  violating;
-- **Route 2 (invariant relaxation): mechanically clean, semantically
-  broken** — zero rail collisions, register failures, or inverse
-  failures, but 11/11 adjacent starts fail two-source allocator
-  correctness through 22 order-sensitive Q events (each demonstrated:
-  swapped order, different output). The invariant is
-  correctness-bearing;
-- **the checker's refutation, honored**: the v1 conclusion ("a
-  reversible local adjacency-ordering resource is required") was
-  tested adversarially and REFUTED as stated — a fixed global
-  Q-processing order makes one adjacent start lawful;
-- **Route 3 (the promoted witness, full battery): the wall's true
-  shape.** Under the relaxed invariant with the fixed order:
-  mechanics/closure/returns/reverse pass 11/11 adjacent starts, and
-  the separated anchor is byte-exact (44/44 cases; 484/484 landed
-  comparisons) — but **allocator correctness passes exactly 1/11
-  adjacent starts** (position 0). The order census: 9/11 rotations
-  and 1/6 structured alternatives each work for *some* single start;
-  **no fixed order is position-uniform** (0 pass all starts). Mixed
-  configurations echo it: 77/77 mechanics, 7/77 allocator-lawful.
+Within that domain the independent checker exhausts all 2046 acyclic
+orientations of the 11 ring edges induced by fixed total station orders and
+all 11 adjacent starts, for 22,506 cases. The exact per-order hit histogram is
+`{0: 1535, 1: 511}`. Every hit is at convention-relative start 0; the maximum
+for any fixed-order class is one; no class returns the exact two-allocator
+output at all 11 starts.
 
-**The refined statement**: a fixed global order-convention buys
-single-start lawful adjacency (a real, frozen positive); the *family*
-wall stands, and its price is now exact — **position-uniform lawful
-adjacency requires location-adaptive (genuinely local) ordering**,
-which no landed structure and no global convention provides.
+The other finite diagnostics are:
 
-## Supplied / derived / open
+- all 120 permutations of the five fixed staggered blocks over all 11 starts
+  give 20 allocator-correct cases and 92 six-term-predicate cases, with no
+  case satisfying the allocator target, mechanical return, and six-term
+  predicate together;
+- deleting the two neighboring-A clauses makes the original Cycle-719 order
+  mechanically reversible on all 11 adjacent starts, but all 11 miss the
+  two-allocator target through 22 directly demonstrated order-sensitive Q
+  events;
+- the declared order `(1,0,10,9,8,7,6,5,4,3,2)` passes the four-term fixture
+  predicate and mechanical checks on all 11 adjacent starts, but reaches the
+  allocator target only at start 0;
+- the same declared order reproduces all 44 supplied separated configurations
+  byte-exactly at all 484 landed comparisons; and
+- the 77 supplied mixed three-token configurations pass the four-term fixture
+  predicate and mechanical checks, with 7 allocator-correct outputs.
 
-### Supplied
+The primary and independent checker both execute against the repaired
+current-parent Cycle-734 and Cycle-735 APIs. Their cache fingerprints include
+their full mutable transitive helper closures. The checker decisively asserts
+the schedule counts, the per-order histogram and maximum, the unique
+successful start, and the absence of any all-start fixed-order class.
 
-- the fixed Q-order (a declared convention, for the single-start
-  positive only); everything the Cycle-719/734/735 packages declare.
+## Supplied conventions versus computed algebra
 
-### Derived
+The positive ring orientation, station-0 cut, parity origin, chosen start
+labels, fixed Q order, Cycle-719 program, and target output are supplied
+conventions or fixture data. A simultaneous relabeling moves the distinguished
+successful start. The computed content is the finite hit histogram and the
+named regression censuses relative to those supplies.
 
-- all three route constructions and censuses; the order-sensitivity
-  demonstrations; the single-start positive with its full battery;
-  the position-uniformity impossibility census over the tested order
-  family; the intact separated anchor throughout.
+Cycle 719 supplies the controller program and allocator target. Cycle 734
+supplies a guard-specific ownership observation, not a framework controller
+law. Cycle 735 supplies the bare separated-pair transport anchor. These
+parents are support-only inputs at their current bounded scopes; this note
+does not promote their audit authority.
 
-### Open
+## Open constructions and scope boundary
 
-- the local ordering resource itself (the named route for any
-  successor — now with the single-start witness as its boundary
-  case); everything inherited at original scopes.
+The enumeration does not cover a reversible joint overlap macro, local
+arbitration state or an extra rail, a simultaneous partitioned update, a
+different controller or program, other ring sizes or geometries, a covariant
+`Z^3` construction, or general `M_2(C)` quantum-state behavior. It supplies no
+reduction from framework implementations to the tested fixed-macro
+serialization families and makes no framework-Admissibility, local-resource,
+axiom-pressure, retained-grade, or broader multi-source claim.
 
-## Negative-claim discipline (N-gate)
-
-The no-go survived its own reframe-as-positive test in refined form:
-the positive search *succeeded* at single-start scope (recorded as a
-derivation), and the family-scope claim is now backed by the order
-census rather than a single failed mechanism. No impossibility beyond
-the tested machinery, order family, and fixture scope is claimed.
-
-## Verdict
-
-This package is the adversarial pipeline working at full strength: the
-primary froze a wall, the checker broke its statement, and the
-amendment found the true boundary between them — one start yields to
-convention, the family demands local order. For the axiom ledger, the
-sentence sharpens: the four axioms provide no location-adaptive source
-of order at contested boundaries, and that absence now has an exact
-experimental shape. Independent audit still required.
+The retained conclusion is only the exact finite census above. Independent
+claim audit remains required.

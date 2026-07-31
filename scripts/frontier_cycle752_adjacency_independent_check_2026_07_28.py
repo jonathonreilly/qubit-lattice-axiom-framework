@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent bounded checker for the Cycle-752 v2 amendment.
+"""Independent checker for the Cycle-752 fixed-macro C11 census.
 
 The Cycle-752 primary is parsed as inert AST data and is import-blocked.
 All gate execution, ownership censuses, v1 recounts, Route 3 batteries, and
@@ -14,14 +14,61 @@ import json
 from pathlib import Path
 import sys
 from time import perf_counter
-import types
 
 
 AUDIT_TIMEOUT_SEC = 900
 NOTE_PATH = "docs/LAWFUL_ADJACENCY_ATTEMPT_CYCLE752_BOUNDED_THEOREM_NOTE_2026-07-28.md"
 AUDIT_INPUT_PATHS = (
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
+    "docs/SEPARATED_PAIR_LAWFUL_CONTROL_CYCLE735_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+    "scripts/ROUTE2_LOCAL_GAUGE_CAR_COMPILER_CYCLE232_2026_07_17.py",
+    "scripts/active_cubic_source_response_cycle211_2026_07_16.py",
+    "scripts/archive_carrier_source_ledger_cycle227_2026_07_17.py",
+    "scripts/autonomous_cubic_field_emission_cycle214_2026_07_16.py",
+    "scripts/common_matter_field_coin_family_cycle219_2026_07_16.py",
+    "scripts/finite_coin_scalar_wave_dilation_cycle215_2026_07_16.py",
+    "scripts/fock_modular_boundary_current_cycle229_2026_07_17.py",
+    "scripts/frontier_cycle703_local_gauss_reference_adversary_2026_07_25.py",
+    "scripts/frontier_cycle704_local_gauss_cycle612_endpoint_bridge_2026_07_25.py",
+    "scripts/frontier_cycle706_openreference_patchgraph_four_rail_equivalence_2026_07_26.py",
+    "scripts/frontier_cycle708_cube_basis_gauge_core_2026_07_26.py",
+    "scripts/frontier_cycle708_endpoint_cube_tableau_core_2026_07_26.py",
+    "scripts/frontier_cycle708_physical_endpoint_cube_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_clifford_core_2026_07_26.py",
+    "scripts/frontier_cycle709_local_seam_physical_core_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_independent_check_2026_07_26.py",
+    "scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py",
+    "scripts/frontier_cycle713_physical_m2_endpoint_instrument_bridge_2026_07_26.py",
+    "scripts/frontier_cycle714_fixed_packet_coherent_composition_check_2026_07_26.py",
+    "scripts/frontier_cycle714_full34_fixed_packet_physical_m2_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
+    "scripts/frontier_cycle718_carrier_return_core_2026_07_26.py",
+    "scripts/frontier_cycle718_cycle713_carrier_return_composition_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_export_core_2026_07_26.py",
+    "scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py",
+    "scripts/frontier_cycle718_three_bank_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle718_token_relative_relay_core_2026_07_26.py",
+    "scripts/frontier_cycle719_local_handshake_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_cycle612_bank_core_2026_07_26.py",
+    "scripts/frontier_cycle719_recurrent_physical_route_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
     "scripts/frontier_cycle735_separated_pair_lawful_control_2026_07_28.py",
+    "scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py",
+    "scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py",
+    "scripts/frontier_full128_code_projectors_2026_07_24.py",
+    "scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py",
+    "scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+    "scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py",
+    "scripts/frontier_cycle752_lawful_adjacency_attempt_2026_07_28.py",
+    "scripts/frontier_literal_patchgraph_cycle656_projected_trace_cycle707_2026_07_26.py",
+    "scripts/frontier_literal_patchgraph_z3_m2_placement_core_cycle707_2026_07_26.py",
+    "scripts/local_conservative_commit_resource_gravity_cycle9_2026_07_14.py",
+    "scripts/local_generator_source_tournament_cycle228_2026_07_17.py",
+    "scripts/proper_cubic_bound_object_equivalence_cycle210_2026_07_16.py",
+    "scripts/retarded_cubic_mass_field_cycle213_2026_07_16.py",
+    "scripts/spatial_car_contact_seam_form_factor_cycle230_2026_07_17.py",
+    "scripts/virtual_exchange_green_kernel_cycle216_2026_07_16.py",
 )
 
 PRIMARY_PATH = (
@@ -38,9 +85,10 @@ EXPECTED_COUNT = 2
 STDOUT_LIMIT_BYTES = 150 * 1024
 ROUTE3_FIXED_Q_ORDER = (1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2)
 CHECKER_REFUTATION_VERBATIM = (
-    "The checker's N-gate positive search REFUTED that as stated: "
+    "The checker's finite search refuted the earlier zero-hit statement: "
     "the fixed Q-order (1,0,10,9,8,7,6,5,4,3,2) under Route 2's "
-    "relaxation passes allocator correctness on the adjacent family."
+    "four-term fixture predicate passes allocator correctness for one "
+    "adjacent start."
 )
 
 
@@ -63,15 +111,6 @@ class _PrimaryImportBlocker:
 
 _PRIMARY_BLOCKER = _PrimaryImportBlocker()
 sys.meta_path.insert(0, _PRIMARY_BLOCKER)
-
-# S735's held_fixture_data entry point does not use these historical
-# certificate modules.  Shimming them prevents S735 from reading inputs
-# outside this checker's bounded file set.
-for _shim_name in (
-    "frontier_cycle734_paired_excitation_genesis_2026_07_28",
-    "frontier_cycle731_token_count_certificate_2026_07_28",
-):
-    sys.modules.setdefault(_shim_name, types.ModuleType(_shim_name))
 
 import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
 import frontier_cycle735_separated_pair_lawful_control_2026_07_28 as S735
@@ -283,8 +322,8 @@ def extraction() -> dict[str, object]:
             ("boundary assignment census", len(boundary_assignments))
         )
     boundary_node = boundary_assignments[0]
-    new_supply = ast.literal_eval(
-        _dict_value(boundary_node, "new_supply")
+    tested_supply = ast.literal_eval(
+        _dict_value(boundary_node, "tested_supply")
     )
     multi_source_scope = ast.literal_eval(
         _dict_value(boundary_node, "multi_source_sector_scope")
@@ -362,7 +401,7 @@ def extraction() -> dict[str, object]:
         },
         "v1_missing_premise": v1_missing_premise,
         "amended_conclusion_literals": {
-            "new_supply": new_supply,
+            "tested_supply": tested_supply,
             "route3_supply_is_only_a_convention":
                 route3_supply_is_convention,
             "v1_missing_premise_claim_refuted_by_checker":
@@ -1581,6 +1620,8 @@ def witness_verification_certificate(
     route2_allocator_hits = 0
     route2_strict_law_hits = 0
     route2_declared_law_allocator_hits = 0
+    route2_hit_histogram: dict[int, int] = {}
+    route2_successful_positions: set[int] = set()
     first_relaxed_allocator_hit: dict[str, object] | None = None
     topological_failures = 0
 
@@ -1590,6 +1631,7 @@ def witness_verification_certificate(
     # therefore the only excluded masks.
     for edge_mask in range(1, all_orientations - 1):
         route2_orientation_classes += 1
+        class_allocator_hits = 0
         order = _topological_station_order(edge_mask)
         topological_failures += not _order_matches_mask(order, edge_mask)
         rank = {station: index for index, station in enumerate(order)}
@@ -1627,6 +1669,9 @@ def witness_verification_certificate(
             strict_law = strict_rows == 0
             relaxed_law = relaxed_rows == 0
             route2_allocator_hits += correct
+            class_allocator_hits += correct
+            if correct:
+                route2_successful_positions.add(position)
             route2_strict_law_hits += strict_law
             route2_declared_law_allocator_hits += (
                 correct and relaxed_law
@@ -1645,6 +1690,9 @@ def witness_verification_certificate(
                     "strict_invariant_rows": strict_rows,
                     "strictly_lawful": strict_law,
                 }
+        route2_hit_histogram[class_allocator_hits] = (
+            route2_hit_histogram.get(class_allocator_hits, 0) + 1
+        )
 
     route2_compiled_witness: dict[str, object] | None = None
     if first_relaxed_allocator_hit is not None:
@@ -1793,6 +1841,14 @@ def witness_verification_certificate(
             "strict_law_cases": route2_strict_law_hits,
             "declared_relaxed_law_allocator_correct_cases":
                 route2_declared_law_allocator_hits,
+            "allocator_hits_per_class_histogram":
+                dict(sorted(route2_hit_histogram.items())),
+            "maximum_allocator_hits_in_any_class":
+                max(route2_hit_histogram, default=0),
+            "classes_passing_all_adjacent_starts":
+                route2_hit_histogram.get(RING_STATIONS, 0),
+            "allocator_correct_positions":
+                tuple(sorted(route2_successful_positions)),
             "topological_realization_failures":
                 topological_failures,
             "first_relaxed_allocator_hit":
@@ -1843,14 +1899,13 @@ def discipline(
         or name.endswith("." + PRIMARY_MODULE)
     )
     expected_premise = (
-        "a new local reversible adjacency-ordering resource that "
-        "serializes overlapping neighboring Q macros while preserving "
-        "Cycle-719 landed order, exact two-source allocator composition, "
-        "and clean A/B/work return"
+        "the enumerated schedule and fixed-order families do not provide "
+        "position-uniform exact two-allocator output for the supplied C11 "
+        "fixture with unchanged atomic Q macros"
     )
     expected_supply = (
-        "one declared fixed Q-processing order (convention, "
-        "same class as the existing Q-before-R layer-order supply)"
+        "one declared fixed Q-processing order, treated only as an "
+        "indexing and execution convention for this fixture"
     )
     amended = extracted["amended_conclusion_literals"]
     multi_source_scope = amended["multi_source_sector_scope"]
@@ -1878,8 +1933,8 @@ def discipline(
                 "checker_refutation_verbatim"
             ]
             == CHECKER_REFUTATION_VERBATIM,
-        "new_supply_verbatim": amended["new_supply"],
-        "new_supply_exact": amended["new_supply"] == expected_supply,
+        "tested_supply_verbatim": amended["tested_supply"],
+        "tested_supply_exact": amended["tested_supply"] == expected_supply,
         "primary_multi_source_scope": multi_source_scope,
         "primary_multi_source_scope_is_bounded": (
             "held two-bank ring-11 fixture only"
@@ -1905,7 +1960,7 @@ def discipline(
                 "checker_refutation_verbatim"
             ]
             == CHECKER_REFUTATION_VERBATIM
-            and amended["new_supply"] == expected_supply
+            and amended["tested_supply"] == expected_supply
             and amended["route3_supply_is_only_a_convention"]
             and amended[
                 "v1_missing_premise_claim_refuted_by_checker"
@@ -2185,6 +2240,26 @@ def main() -> int:
     check(
         "H_v1_refutation_witness_verification",
         search_complete
+        and route1_search["allocator_correct_cases"] == 20
+        and route1_search["strict_law_cases"] == 92
+        and not route1_search["joint_hits"]
+        and route2_search["allocator_correct_cases"] == 511
+        and route2_search["strict_law_cases"] == 0
+        and route2_search[
+            "declared_relaxed_law_allocator_correct_cases"
+        ]
+        == 511
+        and route2_search["allocator_hits_per_class_histogram"]
+        == {0: 1_535, 1: 511}
+        and route2_search[
+            "maximum_allocator_hits_in_any_class"
+        ]
+        == 1
+        and route2_search[
+            "classes_passing_all_adjacent_starts"
+        ]
+        == 0
+        and route2_search["allocator_correct_positions"] == (0,)
         and result_honest
         and compiled_witness is not None
         and compiled_witness["allocator_correct"]
@@ -2213,9 +2288,7 @@ def main() -> int:
     checker_conclusion = {
         "adjacency_lawful_with_declared_order":
             route3["adjacency_lawful_with_declared_order"],
-        "new_supply": amended_literals["new_supply"],
-        "no_new_physical_resource_needed":
-            route3["adjacency_lawful_with_declared_order"],
+        "tested_supply": amended_literals["tested_supply"],
         "route3_supply_is_only_a_convention":
             amended_literals["route3_supply_is_only_a_convention"],
         "v1_missing_premise_claim_refuted_by_checker":
@@ -2228,14 +2301,11 @@ def main() -> int:
         not checker_conclusion[
             "adjacency_lawful_with_declared_order"
         ]
-        and checker_conclusion["new_supply"]
+        and checker_conclusion["tested_supply"]
         == (
-            "one declared fixed Q-processing order (convention, "
-            "same class as the existing Q-before-R layer-order supply)"
+            "one declared fixed Q-processing order, treated only as an "
+            "indexing and execution convention for this fixture"
         )
-        and not checker_conclusion[
-            "no_new_physical_resource_needed"
-        ]
         and checker_conclusion[
             "route3_supply_is_only_a_convention"
         ]

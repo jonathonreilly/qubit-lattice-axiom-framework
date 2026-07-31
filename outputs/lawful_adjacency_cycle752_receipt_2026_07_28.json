@@ -1,53 +1,77 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle752_adjacency_independent_check_2026_07_28.txt": "75a6a1f0f74b856d4f7e1eeb60986ff5234610f0af18b5f8097ceea10e2744b3",
-      "frontier_cycle752_lawful_adjacency_attempt_2026_07_28.txt": "eee367fb8e3a0d0798be2a6c527ee3d015d26639831a584e26dc7de7f138303d"
+      "frontier_cycle752_adjacency_independent_check_2026_07_28.txt": "363a84c583d8fdb528be855bef0464f7f2f5024d48811f5cc447842cb1a98231",
+      "frontier_cycle752_lawful_adjacency_attempt_2026_07_28.txt": "9f88b5d0d63e321e38c4884852e466b8393e07437aef27e1a4bc7b6920969025"
     },
     "note": {
       "path": "docs/LAWFUL_ADJACENCY_ATTEMPT_CYCLE752_BOUNDED_THEOREM_NOTE_2026-07-28.md",
-      "sha256": "a284578625e59e049747573a16ee8528a772a248a3111d017599f4f5b9baf0d8"
+      "sha256": "2a0787ccab333add153de4dd11d89425a6121c558c85afb549548f3836b296aa"
     },
     "runners": {
-      "frontier_cycle752_adjacency_independent_check_2026_07_28.py": "cfff6c6c8acf971c78682caec55f2bd70d661cd21e70d619ef1e1087fc412fd2",
-      "frontier_cycle752_lawful_adjacency_attempt_2026_07_28.py": "fb50873dd30a0d580bfd03a19cc4613dd9517816e1e9aab7adba6bd77ed2c2a1"
+      "frontier_cycle752_adjacency_independent_check_2026_07_28.py": "b387729e1df405d1b66c068adaafd0e4cc899e89e5612059aa0620383333aaca",
+      "frontier_cycle752_lawful_adjacency_attempt_2026_07_28.py": "198d65a2a4c2582e6f8acbddb970d9332f0fe46b0f8de93accea028e7c72bbcf"
     }
   },
   "audit": "unset",
   "authority": "none",
   "boundary": {
-    "axiom_pressure": false,
-    "fixed_supplies": "the fixed Q-order (declared convention, single-start positive only); everything the Cycle-719/734/735 packages declare",
-    "not_derived": "position-uniform adjacency; the local ordering resource; no impossibility beyond the tested machinery/order-family/fixture scope",
-    "position_uniform_adjacency": false,
-    "positive_scope": "three routes with exhaustive censuses: Route 1 dead (9/44 anchor breaks + 242 violations); Route 2 mechanically clean but 11/11 allocator failures via 22 demonstrated order-sensitive events; Route 3 (the checker's promoted witness) mechanics 11/11 but allocator 1/11 (position 0 only); order census 9/11 rotations + 1/6 alternatives each single-start-only; mixed sector 77/77 mechanics, 7/77 allocator",
-    "refined_missing_premise": "position-uniform lawful adjacency requires location-adaptive (genuinely local) ordering; no landed structure and no fixed global order provides it (order census: 0 of the tested family pass all starts)",
-    "separated_anchor_intact": "44/44 cases; 484/484 landed comparisons byte-exact",
-    "single_start_adjacency_with_declared_order": true,
-    "v1_missing_premise_claim_refuted_by_checker": true
+    "declared_four_term_predicate_is_framework_admissibility": false,
+    "open_constructions": [
+      "reversible joint overlap macro",
+      "local arbitration state or extra rail",
+      "simultaneous partitioned update",
+      "different controller or program",
+      "other rings or geometries",
+      "covariant Z3 construction",
+      "general M2(C) quantum-state behavior"
+    ],
+    "position_uniform_fixed_order_result": false,
+    "scope": "supplied oriented C11, Cycle-719 program and data, externally selected adjacent starts, unchanged atomic Q macros, classical-basis semantics, declared four-term fixture predicate, and enumerated schedule/order families"
   },
   "checks": {
     "independent_named_checks_failed": 0,
     "independent_named_checks_passed": 11,
+    "primary_named_checks_failed": 0,
     "primary_named_checks_passed": 13
   },
   "claim_type": "bounded_theorem",
   "cycle": 752,
   "date": "2026-07-29",
+  "evidence_contract": {
+    "checker_declared_inputs": 50,
+    "checker_input_fingerprint_sha256": "1e359a019c14de708964aad0d29435fc1f8bae155bb722793694dc12277f6408",
+    "primary_declared_inputs": 60,
+    "primary_input_fingerprint_sha256": "b32063f0f4438ec055bd1c219467008e98ed28e80e9e4f6668e0cf85f5bd4072"
+  },
   "result": {
-    "adversarial_exchange": "primary froze -> checker refuted -> amendment found the true boundary",
-    "order_census": {
-      "alternatives_single_start": "1/6",
-      "position_uniform": "0",
-      "rotations_single_start": "9/11"
+    "declared_order": {
+      "adjacent_allocator_correct": "1/11, convention-relative start 0",
+      "adjacent_mechanical_and_four_term_predicate": "11/11",
+      "mixed_allocator_correct": "7/77",
+      "mixed_mechanical_and_four_term_predicate": "77/77",
+      "separated_anchor": "44/44 cases and 484/484 landed comparisons byte-exact"
     },
-    "route1": "dead (anchor breaks + adjacency unhelped)",
-    "route2": "mechanically clean; correctness-bearing invariant confirmed",
-    "route3": {
-      "allocator": "1/11 (position 0)",
-      "mechanics": "11/11",
-      "separated_anchor": "byte-exact"
+    "fixed_total_order_census": {
+      "allocator_correct_positions": [
+        0
+      ],
+      "classes_passing_all_11_starts": 0,
+      "classes_tested": 2046,
+      "hit_histogram": {
+        "0": 1535,
+        "1": 511
+      },
+      "maximum_hits_per_class": 1,
+      "total_cases": 22506
+    },
+    "five_block_schedule_census": {
+      "allocator_correct_cases": 20,
+      "cases_tested": 1320,
+      "joint_mechanical_allocator_six_term_hits": 0,
+      "schedules_tested": 120,
+      "six_term_predicate_cases": 92
     }
   },
-  "status": "CYCLE752_ADJACENCY_REFINED_WALL_PASS"
+  "status": "CYCLE752_FIXED_MACRO_C11_CENSUS_PASS"
 }

@@ -4,7 +4,8 @@
 This runner is deliberately stdlib-only.  It treats all materialized compiler
 and acceptance modules as byte-pinned text/AST.  It never imports or executes a
 source primary.  Pure endpoint/interface functions are extracted unchanged
-from the compiler AST to print the exact values available at first contact.
+from the compiler AST to print their contract truth table.  Those rows are not
+represented as execution of the full compiled seam.
 """
 
 from __future__ import annotations
@@ -13,16 +14,18 @@ import ast
 import copy
 import hashlib
 import json
+import math
+from numbers import Real
 from pathlib import Path
+import subprocess
 import sys
 import time
 from typing import Any
 
 
 AUDIT_TIMEOUT_SEC = 1500
-RUNNER_PATH = "scripts/frontier_cycle829_csource_first_contact_2026_07_28.py"
 AUDIT_INPUT_PATHS = (
-    RUNNER_PATH,
+    "scripts/frontier_cycle829_csource_first_contact_2026_07_28.py",
     "scripts/frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30.py",
     "scripts/frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py",
     "scripts/frontier_cycle826_companion_endpoint_cycle719_history_interface_2026_07_30.py",
@@ -31,6 +34,7 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_born_acceptance_harness_2026_07_28.py",
     "scripts/frontier_born_acceptance_independent_check_2026_07_28.py",
 )
+RUNNER_PATH = AUDIT_INPUT_PATHS[0]
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -193,6 +197,10 @@ def _return_expressions(node: ast.FunctionDef) -> list[str]:
     ]
 
 
+def _return_annotation(node: ast.FunctionDef) -> str | None:
+    return ast.unparse(node.returns) if node.returns is not None else None
+
+
 def _extract_unchanged_function(
     tree: ast.Module, name: str
 ) -> tuple[Any, str]:
@@ -251,7 +259,87 @@ def _inventory() -> list[dict[str, Any]]:
     return rows
 
 
-def _compiler_values_and_contracts() -> tuple[dict[str, Any], dict[str, Any]]:
+def _git(*arguments: str, check: bool = True) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(
+        ["git", *arguments],
+        cwd=ROOT,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=check,
+        timeout=30,
+    )
+
+
+def _git_provenance() -> dict[str, Any]:
+    rows = []
+    for path, expected in PROVENANCE.items():
+        source_blob = _git(
+            "rev-parse", f"{expected['origin_commit']}:{path}"
+        ).stdout.strip()
+        main_blob = _git(
+            "rev-parse", f"{ORIGIN_MAIN_AT_MATERIALIZATION}:{path}"
+        ).stdout.strip()
+        source_is_ancestor = (
+            _git(
+                "merge-base",
+                "--is-ancestor",
+                expected["origin_commit"],
+                ORIGIN_MAIN_AT_MATERIALIZATION,
+                check=False,
+            ).returncode
+            == 0
+        )
+        rows.append(
+            {
+                "path": path,
+                "source_commit_blob_sha1": source_blob,
+                "materialization_commit_blob_sha1": main_blob,
+                "source_commit_is_ancestor_of_materialization_commit": (
+                    source_is_ancestor
+                ),
+                "verified": (
+                    source_blob == expected["git_blob_sha1"]
+                    and main_blob == expected["git_blob_sha1"]
+                    and source_is_ancestor
+                ),
+            }
+        )
+    base_is_ancestor = (
+        _git(
+            "merge-base",
+            "--is-ancestor",
+            BASE_HEAD,
+            "HEAD",
+            check=False,
+        ).returncode
+        == 0
+    )
+    return {
+        "materialization_commit_exists": (
+            _git(
+                "cat-file",
+                "-e",
+                f"{ORIGIN_MAIN_AT_MATERIALIZATION}^{{commit}}",
+                check=False,
+            ).returncode
+            == 0
+        ),
+        "base_head_is_ancestor_of_HEAD": base_is_ancestor,
+        "files": rows,
+        "verified": (
+            base_is_ancestor
+            and bool(rows)
+            and all(row["verified"] for row in rows)
+        ),
+    }
+
+
+def _compiler_values_and_contracts() -> tuple[
+    dict[str, Any],
+    dict[str, Any],
+    list[dict[str, Any]],
+]:
     tree822 = _tree(R822)
     tree823 = _tree(R823)
     tree826 = _tree(R826)
@@ -267,6 +355,9 @@ def _compiler_values_and_contracts() -> tuple[dict[str, Any], dict[str, Any]]:
     )
 
     endpoint_rows = []
+    sparse_samples = []
+    interface_samples = []
+    history_samples = []
     for input_basis in range(4):
         instrumented = expected_output(
             {input_basis: 1.0 + 0.0j},
@@ -275,20 +366,24 @@ def _compiler_values_and_contracts() -> tuple[dict[str, Any], dict[str, Any]]:
             1,
             2,
         )
+        sparse_samples.append(instrumented)
         outputs = []
         for matter_basis, amplitude in sorted(instrumented.items()):
             clean_matter, coefficient, interface = interface_key(
                 matter_basis, amplitude, 0, 1, 2
             )
             left, right, pointer = interface
+            history = expected_orientation(left, right, pointer)
+            interface_samples.append(
+                (clean_matter, coefficient, interface)
+            )
+            history_samples.append(history)
             outputs.append(
                 {
                     "clean_matter_basis": clean_matter,
                     "amplitude": _jsonable(coefficient),
                     "endpoint_interface": [left, right, pointer],
-                    "history": list(
-                        expected_orientation(left, right, pointer)
-                    ),
+                    "history": list(history),
                 }
             )
         endpoint_rows.append(
@@ -302,33 +397,46 @@ def _compiler_values_and_contracts() -> tuple[dict[str, Any], dict[str, Any]]:
     fixed_compile = _function_node(tree822, "fixed_typed_compile")
     instrument_sparse = _function_node(tree823, "instrument_sparse")
     interface_node = _function_node(tree826, "interface_key")
+    orientation_node = _function_node(tree826, "expected_orientation")
+    fixed_returns = _return_expressions(fixed_compile)
+    if len(fixed_returns) != 1:
+        raise AssertionError("Cycle822 fixed compile return contract drift")
+    fixed_return_node = ast.parse(fixed_returns[0], mode="eval").body
+    if not isinstance(fixed_return_node, ast.Tuple):
+        raise AssertionError("Cycle822 fixed compile no longer returns a tuple")
+    fixed_bundle_arity = len(fixed_return_node.elts)
     values = {
-        "held_representative_endpoint_rows": endpoint_rows,
+        "endpoint_contract_rows_not_full_seam_execution": endpoint_rows,
         "value_origin": (
-            "unchanged frozen AST functions "
+            "abstract contract truth table from unchanged frozen AST functions "
             "Cycle823.expected_instrument_output -> "
-            "Cycle826.interface_key -> Cycle826.expected_orientation"
+            "Cycle826.interface_key -> Cycle826.expected_orientation; "
+            "neither fixed_typed_compile nor instrument_sparse is executed"
         ),
     }
     contracts = {
         "cycle822.fixed_typed_compile": {
             "arguments": _arguments(fixed_compile),
-            "return_expressions": _return_expressions(fixed_compile),
+            "return_expressions": fixed_returns,
+            "derived_bundle_arity": fixed_bundle_arity,
         },
         "cycle823.instrument_sparse": {
             "arguments": _arguments(instrument_sparse),
+            "return_annotation": _return_annotation(instrument_sparse),
             "declared_runtime_output": "dict[int, complex] sparse basis state",
             "endpoint_pointer_rule": "post_left XOR post_right on wire width+2",
         },
         "cycle826.interface_key": {
             "arguments": _arguments(interface_node),
             "return_expressions": _return_expressions(interface_node),
+            "return_annotation": _return_annotation(interface_node),
             "declared_runtime_output": (
                 "tuple[clean_matter_basis:int, amplitude:complex, "
                 "tuple[post_left:int, post_right:int, pointer:int]]"
             ),
         },
         "cycle826.history": {
+            "return_annotation": _return_annotation(orientation_node),
             "declared_runtime_output": "tuple[orientation:int, ...]",
             "reachable_values_on_four_endpoint_rows": [[], [-1], [1]],
         },
@@ -338,10 +446,43 @@ def _compiler_values_and_contracts() -> tuple[dict[str, Any], dict[str, Any]]:
             "cycle826.expected_orientation": expected_orientation_ast_sha256,
         },
     }
-    return values, contracts
+    supply_surfaces = [
+        {
+            "compiler_surface": "Cycle822.fixed_typed_compile",
+            "schema": f"unannotated_compiled_bundle_arity_{fixed_bundle_arity}",
+            "samples": [],
+            "sample_basis": "AST return contract; not executed in Cycle829",
+        },
+        {
+            "compiler_surface": "Cycle823.instrument_sparse output contract",
+            "schema": _return_annotation(instrument_sparse),
+            "samples": sparse_samples,
+            "sample_basis": (
+                "Cycle823.expected_instrument_output contract truth table"
+            ),
+        },
+        {
+            "compiler_surface": "Cycle826.interface_key",
+            "schema": _return_annotation(interface_node),
+            "samples": interface_samples,
+            "sample_basis": "all four endpoint contract classes",
+        },
+        {
+            "compiler_surface": "Cycle826.expected_orientation",
+            "schema": _return_annotation(orientation_node),
+            "samples": history_samples,
+            "sample_basis": "all four endpoint contract classes",
+        },
+    ]
+    return values, contracts, supply_surfaces
 
 
-def _harness_contracts() -> tuple[dict[str, Any], list[dict[str, Any]]]:
+def _harness_contracts() -> tuple[
+    dict[str, Any],
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+]:
     source_tree = _tree(SOURCE_HARNESS)
     born_tree = _tree(BORN_HARNESS)
 
@@ -413,15 +554,19 @@ def _harness_contracts() -> tuple[dict[str, Any], list[dict[str, Any]]]:
         },
     }
 
-    tests = [
+    external_tests = [
         {
             "test_id": "source.tensor_lift.candidate",
+            "port_id": "source.tensor_lift",
             "harness": SOURCE_HARNESS,
             "required_input": contracts["source.tensor_lift"]["required_input"],
         },
+    ]
+    internal_no_injection_controls = [
         {
             "test_id": "source.recoil_reciprocity.canonical",
             "harness": SOURCE_HARNESS,
+            "classification": "standalone-runnable_internal_no-injection",
             "required_input": contracts["source.recoil_reciprocity"][
                 "required_input"
             ],
@@ -429,13 +574,15 @@ def _harness_contracts() -> tuple[dict[str, Any], list[dict[str, Any]]]:
         {
             "test_id": "source.typed_bridge.fixed_contract",
             "harness": SOURCE_HARNESS,
+            "classification": "standalone-runnable_internal_no-injection",
             "required_input": contracts["source.typed_bridge"]["required_input"],
         },
     ]
     for row in lawful + rejects:
-        tests.append(
+        external_tests.append(
             {
                 "test_id": f"born.{row['probe_id']}",
+                "port_id": "born.projector",
                 "harness": BORN_HARNESS,
                 "required_input": json.dumps(
                     row["feed"],
@@ -445,138 +592,214 @@ def _harness_contracts() -> tuple[dict[str, Any], list[dict[str, Any]]]:
                 ),
             }
         )
-    return contracts, tests
+    frozen_born_feeds = [row["feed"] for row in lawful + rejects]
+    return (
+        contracts,
+        external_tests,
+        internal_no_injection_controls,
+        frozen_born_feeds,
+    )
 
 
-def _correspondence_table() -> list[dict[str, Any]]:
-    return [
-        {
-            "compiler_surface": "Cycle823.instrument_sparse",
-            "compiler_supplies": "dict[int, complex] sparse endpoint state",
-            "harness_port": "source.tensor_lift.source_vector",
-            "harness_requires": "real finite non-Boolean shape-(10,) vector",
-            "typed_match": False,
-            "exact_mismatch": (
-                "no compiler source/gravity projection, Ward tensor basis, or "
-                "ten-component source-vector constructor exists"
-            ),
-        },
-        {
-            "compiler_surface": "Cycle826.interface_key",
-            "compiler_supplies": (
-                "(clean_matter_basis:int, amplitude:complex, "
-                "(left:int,right:int,pointer:int))"
-            ),
-            "harness_port": "source.recoil_reciprocity",
-            "harness_requires": (
-                "no candidate port; frozen internal Cycle322 execution"
-            ),
-            "typed_match": False,
-            "exact_mismatch": (
-                "endpoint/event values cannot replace the internally pinned "
-                "recoil primary or its literal fixture selector"
-            ),
-        },
-        {
-            "compiler_surface": "Cycle822.fixed_typed_compile",
-            "compiler_supplies": (
-                "compiled context/routes/words and bounded seam certificates"
-            ),
-            "harness_port": "source.typed_bridge",
-            "harness_requires": (
-                "no candidate port; frozen internal Cycle294 subprocess"
-            ),
-            "typed_match": False,
-            "exact_mismatch": (
-                "the harness has no injection point for compiled routes or "
-                "endpoint values"
-            ),
-        },
-        {
-            "compiler_surface": (
-                "Cycle826.interface_key + expected_orientation"
-            ),
-            "compiler_supplies": (
-                "endpoint triple and history tuple in {(),(-1,),(1,)}"
-            ),
-            "harness_port": "born.projector.feed",
-            "harness_requires": (
-                "exact registered probe_id/kind/direction[3] Bloch object"
-            ),
-            "typed_match": False,
-            "exact_mismatch": (
-                "no Bloch direction, projector probe identity, Born weight, "
-                "or registry feed is emitted; inventing them would be new law"
-            ),
-        },
-        {
-            "compiler_surface": "Cycle826 history/controller hook",
-            "compiler_supplies": (
-                "one fixed controller composition and decoded orientation tuple"
-            ),
-            "harness_port": "source/Born evolution hooks",
-            "harness_requires": (
-                "none exposed: frozen source primaries and Born bridge own "
-                "their execution internally"
-            ),
-            "typed_match": False,
-            "exact_mismatch": (
-                "the acceptance APIs expose no evolution-hook injection port"
-            ),
-        },
-    ]
-
-
-def _unreachable_tests(
-    tests: list[dict[str, Any]]
-) -> list[dict[str, Any]]:
-    reason_by_prefix = {
-        "source.tensor_lift": (
-            "missing typed compiler map to the ten-component tensor source"
-        ),
-        "source.recoil": (
-            "harness has no candidate data port and internally owns Cycle322"
-        ),
-        "source.typed_bridge": (
-            "harness has no candidate data port and internally owns Cycle294"
-        ),
-        "born.": (
-            "compiler emits no exact registered Bloch feed or direction"
-        ),
-    }
-    rows = []
-    for test in tests:
-        reason = next(
-            value
-            for prefix, value in reason_by_prefix.items()
-            if test["test_id"].startswith(prefix)
+def _tensor_port_accepts(value: Any) -> bool:
+    return (
+        isinstance(value, (list, tuple))
+        and len(value) == 10
+        and all(
+            not isinstance(item, bool)
+            and isinstance(item, Real)
+            and math.isfinite(float(item))
+            for item in value
         )
-        rows.append({**test, "gap": reason})
+    )
+
+
+def _born_port_accepts(
+    value: Any, frozen_born_feeds: list[dict[str, Any]]
+) -> bool:
+    return (
+        isinstance(value, dict)
+        and any(value == feed for feed in frozen_born_feeds)
+    )
+
+
+def _port_accepts(
+    port_id: str,
+    value: Any,
+    frozen_born_feeds: list[dict[str, Any]],
+) -> bool:
+    if port_id == "source.tensor_lift":
+        return _tensor_port_accepts(value)
+    if port_id == "born.projector":
+        return _born_port_accepts(value, frozen_born_feeds)
+    raise ValueError(f"unknown candidate port {port_id!r}")
+
+
+def _correspondence_table(
+    supply_surfaces: list[dict[str, Any]],
+    harness_contracts: dict[str, Any],
+    frozen_born_feeds: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    ports = (
+        {
+            "port_id": "source.tensor_lift",
+            "schema": "real_finite_vector_10",
+            "requires": harness_contracts["source.tensor_lift"][
+                "required_input"
+            ],
+        },
+        {
+            "port_id": "born.projector",
+            "schema": "exact_registered_bloch_feed",
+            "requires": harness_contracts["born.projector"]["required_input"],
+        },
+    )
+    if not all(
+        harness_contracts[port["port_id"]]["candidate_input_port"]
+        for port in ports
+    ):
+        raise AssertionError("candidate port registry drift")
+
+    rows = []
+    for supply in supply_surfaces:
+        for port in ports:
+            sample_matches = [
+                _port_accepts(port["port_id"], value, frozen_born_feeds)
+                for value in supply["samples"]
+            ]
+            schema_match = supply["schema"] == port["schema"]
+            typed_match = schema_match or any(sample_matches)
+            if port["port_id"] == "source.tensor_lift":
+                mismatch = (
+                    "no compiler source/gravity projection, Ward tensor "
+                    "basis, or ten-component source-vector constructor exists"
+                )
+            else:
+                mismatch = (
+                    "no exact registered Bloch feed, direction, projector "
+                    "probe identity, or Born weight is emitted"
+                )
+            rows.append(
+                {
+                    "compiler_surface": supply["compiler_surface"],
+                    "compiler_schema": supply["schema"],
+                    "sample_basis": supply["sample_basis"],
+                    "tested_sample_count": len(sample_matches),
+                    "sample_contract_matches": sample_matches,
+                    "harness_port": port["port_id"],
+                    "harness_schema": port["schema"],
+                    "harness_requires": port["requires"],
+                    "schema_identity_match": schema_match,
+                    "typed_match": typed_match,
+                    "exact_mismatch": None if typed_match else mismatch,
+                }
+            )
     return rows
 
 
+def _unreachable_tests(
+    tests: list[dict[str, Any]],
+    matched_port_ids: set[str],
+) -> list[dict[str, Any]]:
+    reasons = {
+        "source.tensor_lift": (
+            "missing typed compiler map to the ten-component tensor source"
+        ),
+        "born.projector": (
+            "compiler emits no exact registered Bloch feed or direction"
+        ),
+    }
+    return [
+        {**test, "gap": reasons[test["port_id"]]}
+        for test in tests
+        if test["port_id"] not in matched_port_ids
+    ]
+
+
 def _science_payload() -> dict[str, Any]:
-    compiler_values, compiler_contracts = _compiler_values_and_contracts()
-    harness_contracts, tests = _harness_contracts()
-    correspondence = _correspondence_table()
+    compiler_values, compiler_contracts, supply_surfaces = (
+        _compiler_values_and_contracts()
+    )
+    (
+        harness_contracts,
+        external_tests,
+        internal_controls,
+        frozen_born_feeds,
+    ) = _harness_contracts()
+    correspondence = _correspondence_table(
+        supply_surfaces,
+        harness_contracts,
+        frozen_born_feeds,
+    )
+    port_predicate_controls = {
+        "tensor_accepts_valid_real_finite_vector_10": (
+            _tensor_port_accepts([1.0] * 10)
+        ),
+        "tensor_rejects_wrong_length_endpoint_tuple": (
+            not _tensor_port_accepts((0, 1, 1))
+        ),
+        "born_accepts_exact_first_frozen_feed": (
+            _born_port_accepts(frozen_born_feeds[0], frozen_born_feeds)
+        ),
+        "born_rejects_endpoint_event_object": (
+            not _born_port_accepts(
+                {"left": 0, "right": 1, "pointer": 1},
+                frozen_born_feeds,
+            )
+        ),
+    }
+    if not all(port_predicate_controls.values()):
+        raise AssertionError("candidate port predicate control failed")
     matched = [row for row in correspondence if row["typed_match"]]
-    runnable = []
-    unreachable = _unreachable_tests(tests)
+    matched_port_ids = {row["harness_port"] for row in matched}
+    runnable_tests = [
+        test
+        for test in external_tests
+        if test["port_id"] in matched_port_ids
+    ]
+    if runnable_tests:
+        raise AssertionError(
+            "typed map changed; frozen harness execution must be added "
+            "before this certificate can classify the new contact"
+        )
+    runnable_results: list[dict[str, Any]] = []
+    unreachable = _unreachable_tests(external_tests, matched_port_ids)
+    internal_residue = [
+        {
+            **test,
+            "gap": (
+                "no compiler injection port; standalone harness execution "
+                "remains possible but cannot consume compiled candidate data"
+            ),
+        }
+        for test in internal_controls
+    ]
+    composition_residue = unreachable + internal_residue
     verdict = (
         "NOT_YET_COMPOSABLE"
         if not matched
         else (
             "FIRST_CONTACT_CLEAN"
-            if all(row["status"] == "PASS" for row in runnable)
+            if all(row["status"] == "PASS" for row in runnable_results)
             else "FIRST_CONTACT_MIXED"
         )
     )
     return {
         "certificate_B_identification_map": {
             "compiler_contracts": compiler_contracts,
-            "compiler_values": compiler_values,
+            "compiler_contract_values": compiler_values,
             "harness_contracts": harness_contracts,
             "correspondence_table": correspondence,
+            "comparison_method": (
+                "exhaustive four-compiler-surface by two-candidate-port "
+                "cross-product; exact schema identity plus each frozen "
+                "contract sample evaluated by the port predicate"
+            ),
+            "port_predicate_controls": port_predicate_controls,
+            "expected_cross_product_rows": (
+                len(supply_surfaces) * 2
+            ),
+            "observed_cross_product_rows": len(correspondence),
             "typed_matches": matched,
             "typed_match_count": len(matched),
         },
@@ -585,15 +808,23 @@ def _science_payload() -> dict[str, Any]:
                 "execute frozen harness logic only when a compiler output "
                 "exactly inhabits its declared candidate input type"
             ),
-            "runnable_count": len(runnable),
+            "runnable_count": len(runnable_tests),
+            "runnable_semantics": "compiler-injected cases only",
             "pass": 0,
             "fail": 0,
-            "results": runnable,
+            "results": runnable_results,
             "unchanged_harness_execution": "none: no typed input correspondence",
         },
         "certificate_D_unreachable_census": {
-            "count": len(unreachable),
-            "tests": unreachable,
+            "count": len(composition_residue),
+            "count_semantics": (
+                "composition-unreachable frozen cases, not standalone "
+                "harness executability"
+            ),
+            "external_candidate_unreachable_count": len(unreachable),
+            "external_candidate_tests": unreachable,
+            "internal_no_injection_count": len(internal_residue),
+            "internal_no_injection_controls": internal_residue,
         },
         "certificate_E_verdict": {
             "verdict": verdict,
@@ -603,10 +834,12 @@ def _science_payload() -> dict[str, Any]:
                 "frozen source-vector or registered-Bloch-feed ports; the "
                 "other source harnesses expose no candidate injection port."
             ),
-            "runnable": len(runnable),
+            "runnable_compiler_injected": len(runnable_tests),
             "pass": 0,
             "fail": 0,
-            "unreachable": len(unreachable),
+            "composition_unreachable": len(composition_residue),
+            "external_candidate_unreachable": len(unreachable),
+            "internal_no_injection": len(internal_residue),
         },
     }
 
@@ -614,18 +847,13 @@ def _science_payload() -> dict[str, Any]:
 def main() -> int:
     started = time.monotonic()
     inventory = _inventory()
-    science_first = _science_payload()
-    science_second = _science_payload()
-    science_json = json.dumps(
-        science_first,
-        allow_nan=False,
-        separators=(",", ":"),
-        sort_keys=True,
-    )
-    deterministic_sha256 = _sha256(science_json.encode("utf-8"))
-
+    byte_exact = all(row["byte_exact"] for row in inventory)
+    git_provenance = _git_provenance()
     self_tree = _tree(RUNNER_PATH)
     import_roots = _self_import_roots(self_tree)
+    literal_audit_inputs = _assignment_literal(
+        self_tree, "AUDIT_INPUT_PATHS"
+    )
     blocklisted_module_names = {
         Path(path).stem for path in SOURCE_PRIMARY_BLOCKLIST
     }
@@ -637,7 +865,6 @@ def main() -> int:
         not Path(path).is_absolute() and (ROOT / path).is_file()
         for path in SOURCE_PRIMARY_BLOCKLIST
     )
-    byte_exact = all(row["byte_exact"] for row in inventory)
     only_stdlib_imports = all(
         root == "__future__" or root in sys.stdlib_module_names
         for root in import_roots
@@ -645,6 +872,57 @@ def main() -> int:
     no_blocklisted_imports = not (
         set(import_roots) & blocklisted_module_names
     )
+    fail_closed_preflight = (
+        byte_exact
+        and git_provenance["verified"]
+        and tuple(literal_audit_inputs) == AUDIT_INPUT_PATHS
+        and declared_paths_exist
+        and only_stdlib_imports
+        and no_blocklisted_imports
+    )
+    if not fail_closed_preflight:
+        failure = {
+            "cycle": 829,
+            "certificate_A_inventory": {
+                "base_head": BASE_HEAD,
+                "origin_main_at_materialization": (
+                    ORIGIN_MAIN_AT_MATERIALIZATION
+                ),
+                "files": inventory,
+                "git_provenance": git_provenance,
+            },
+            "certificate_F_controls": {
+                "status": "FAIL",
+                "fail_closed_before_compiler_AST_execution": True,
+                "materialized_sha256_and_git_blob_sha1_exact": byte_exact,
+                "git_provenance_verified": git_provenance["verified"],
+                "audit_input_paths_ast_literal": (
+                    tuple(literal_audit_inputs) == AUDIT_INPUT_PATHS
+                ),
+                "audit_input_paths_existing": declared_paths_exist,
+                "runner_stdlib_only": only_stdlib_imports,
+                "no_blocklisted_primary_import": no_blocklisted_imports,
+            },
+        }
+        print(
+            json.dumps(
+                failure,
+                allow_nan=False,
+                separators=(",", ":"),
+                sort_keys=True,
+            )
+        )
+        return 1
+
+    science_first = _science_payload()
+    science_second = _science_payload()
+    science_json = json.dumps(
+        science_first,
+        allow_nan=False,
+        separators=(",", ":"),
+        sort_keys=True,
+    )
+    deterministic_sha256 = _sha256(science_json.encode("utf-8"))
 
     report = {
         "cycle": 829,
@@ -656,6 +934,7 @@ def main() -> int:
                 "exact origin/main blobs copied to tracked scripts paths"
             ),
             "files": inventory,
+            "git_provenance": git_provenance,
         },
         **science_first,
         "certificate_F_controls": {
@@ -668,9 +947,12 @@ def main() -> int:
             "audit_input_paths": list(AUDIT_INPUT_PATHS),
             "audit_input_paths_literal_unique_existing_worktree_relative": (
                 len(AUDIT_INPUT_PATHS) == len(set(AUDIT_INPUT_PATHS))
+                and tuple(literal_audit_inputs) == AUDIT_INPUT_PATHS
                 and declared_paths_exist
             ),
             "materialized_sha256_and_git_blob_sha1_exact": byte_exact,
+            "git_provenance_verified": git_provenance["verified"],
+            "fail_closed_pins_checked_before_compiler_AST_execution": True,
             "runner_sha256": _sha256(_bytes(RUNNER_PATH)),
             "source_primary_blocklist": list(SOURCE_PRIMARY_BLOCKLIST),
             "source_primary_blocklist_paths_existing": blocklist_paths_exist,
@@ -710,6 +992,8 @@ def main() -> int:
             "audit_input_paths_literal_unique_existing_worktree_relative"
         ],
         controls["materialized_sha256_and_git_blob_sha1_exact"],
+        controls["git_provenance_verified"],
+        controls["fail_closed_pins_checked_before_compiler_AST_execution"],
         controls["source_primary_blocklist_paths_existing"],
         controls["runner_stdlib_only"],
         controls["no_blocklisted_primary_import"],

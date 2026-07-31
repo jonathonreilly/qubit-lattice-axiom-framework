@@ -111,6 +111,10 @@ AUTHORITY_PER_NOTE_MAX = 10_000
 AUTHORITY_PER_NOTE_MIN = 2_000
 AUTHORITY_PER_NOTE_OVERRIDES = {
     (
+        "koide_aps_eta_topological_robustness_bounded_theorem_note_2026-07-02",
+        "koide_aps_block_by_block_forcing_note_2026-04-21",
+    ): 20_000,
+    (
         "teleportation_taste_readout_operator_model_note",
         "teleportation_retained_axis_operator_algebra_closure_note",
     ): 20_000,
@@ -1109,7 +1113,10 @@ def find_cached_runner_output(runner_path: str) -> str | None:
     if not runner_path:
         return None
     runner_path = canonical_runner_path(runner_path)
-    return rc.cache_excerpt_for_audit(runner_path)
+    return rc.cache_excerpt_for_audit(
+        runner_path,
+        tail_chars=RUNNER_STDOUT_CHAR_LIMIT,
+    )
 
 
 AUDIT_PACKET_CONTROL_PATHS = (

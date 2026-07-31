@@ -2,46 +2,22 @@
 
 **Date:** 2026-05-10 (claim narrowed 2026-05-17 per audit verdict)
 **Type:** bounded_theorem
-**Claim scope:** the standalone algebraic implication that, given a real
-anti-Hermitian staggered hopping operator `D` on an even-period cubic
-lattice with three discrete operators `(C, P, T)` defined as in the
-parent CPT note — `C` the sublattice parity `(-1)^{x_1+x_2+x_3}`,
-`P` the spatial inversion `x -> -x mod L`, `T` complex conjugation —
-the composite operator `Theta = C P T` satisfies the exact algebraic
-identity `Theta D Theta^{-1} = D` (claim C1), equivalently, on the
-Hermitian lift `H = i D`, `[Theta_H, H] = 0` with `Theta_H = P K` the
-antiunitary representative (claim C2). This is purely a statement
-about discrete-symmetry algebra on a real anti-Hermitian operator. No
-"physical Hamiltonian identification" framing is claimed, no
-Hermitian-lift bridge is imported, no SME-coefficient extraction is
-claimed, no continuum CPT theorem is invoked.
+**Claim scope:** the standalone abstract implication that a real
+anti-Hermitian operator `D` and real involutions `C`, `P` satisfying
+`C D C = -D`, `P D P = -D`, and `K D K = D` obey the exact identities
+`Theta D Theta^{-1} = D` for `Theta = C P K` (claim C1) and
+`[Theta_H, iD] = 0` for `Theta_H = P K` (claim C2). The derivation of
+these premises on the framework's cubic lattice, every claim about
+`Theta^2`, physical-Hamiltonian identification, SME-coefficient
+extraction, and continuum CPT are outside this note's claim scope.
 
-**Audit response (2026-05-17 narrowing):** the audit lane returned
-`audited_failed` against the broader claim that originally included
-(C3) `Theta^2 = s I` as a universal theorem conclusion. The verdict
-rationale (2026-05-12 audit) was:
-
-> The C1 composite-invariance proof and C2 Hermitian-lift commutator
-> are valid class-A algebra under the stated premises. The full audited
-> claim, however, includes C3 as a theorem conclusion, and the abstract
-> premises only imply Theta^2 = (CP)^2, not that (CP)^2 is a scalar ±I
-> unless extra C,P algebra such as commutation or anticommutation is
-> assumed. ... Therefore the second audit correctly identifies a
-> closure failure within the stated claim scope.
-
-with explicit re-audit guidance:
-
-> Repair by adding an explicit scalar-square condition on C and P,
-> restricting C3 to the stated commutator/anticommutator cases, or
-> narrowing the audited theorem to C1 and C2 only.
-
-This revision takes the third option: the load-bearing theorem
-content is **restricted to (C1) and (C2) only**. The previously claimed
-(C3) Theta-square scalar property is **demoted to a derived corollary
-explicitly conditional on additional (C,P) commutation algebra**, and
-is **not** load-bearing for any downstream chain. The class-A algebraic
-substitutions for C1 and C2 are unchanged; they were both accepted by
-the audit verdict.
+**Audit response (2026-05-17 narrowing; artifact repair 2026-07-29):**
+the load-bearing theorem content is restricted to C1 and C2. C3 is not
+a conclusion, corollary, boundary claim, or runner check in this
+artifact. The distinct framework-specific scalar-square theorem and
+its modular-versus-mirror inversion signs are owned by
+`CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md`. This
+non-load-bearing pointer intentionally does not seed a dependency.
 
 **Status authority:** independent audit lane only.
 
@@ -82,25 +58,17 @@ Define `Theta := C P T`. Then:
 
 **(C1) Composite invariance.** `Theta D Theta^{-1} = D`.
 
-**(C2) Hermitian-lift commutator.** On the Hermitian lift `H := i D`
-with `Theta_H := P K` (the antiunitary representative absorbing the
-`C`-factor sign into the `i -> -i` step of complex conjugation), the
-algebraic identity `[Theta_H, H] = 0` holds exactly.
+**(C2) Hermitian-lift commutator.** On the algebraic Hermitian lift
+`H := i D`, define the antiunitary `Theta_H := P K`. Then
+`[Theta_H, H] = 0` holds exactly.
 
-(C1) and (C2) are the load-bearing theorem content. They are pure
-class-A algebraic substitutions in the premise identities (1), (2),
-(3) plus the abstract involutory/real-operator-type axioms on
-`C, P, T`. Both are sympy-verified exact at audit-companion precision
-on the constructed test instances; both were accepted as
-class-A clean by the 2026-05-12 audit verdict.
-
-The framework-specific instance — staggered Cl(3) hopping operator
-`D = sum_link eta(x,mu) (delta_{x+mu,y} - delta_{x,y+mu})` on
-`Z^3 mod L` with even `L`, `C(x) = (-1)^{x_1+x_2+x_3}`,
-`P : x -> -x mod L` — satisfies (1), (2), (3) and therefore inherits
-(C1) and (C2). This special case is shown for sanity in the runner
-at `L = 4`; the algebra also closes for any other operator satisfying
-the abstract premises.
+(C1) and (C2) are the complete theorem content. They are pure class-A
+substitutions in the premise identities (1), (2), (3) plus the
+abstract involutory and real-operator-type axioms on `C`, `P`, and
+`T`. The runner checks them exactly on two finite premise witnesses: a
+two-dimensional block and a four-dimensional bipartite mirror chain.
+Neither witness is presented as a construction of the framework's
+three-dimensional cubic lattice premises.
 
 ## Proof
 
@@ -120,12 +88,8 @@ Theta D Theta^{-1}
   = D.
 ```
 
-**(C2).** Write `H = i D`. The antiunitary representative for the
-combined CPT action on `H` is `Theta_H = P K`, where `K` is complex
-conjugation. To see this, note that on the staggered hopping operator
-the sublattice parity `C` acts as `-1` on `H` independently of its
-action on `D` (because `H = i D` and the `i` carries a `-1` under
-complex conjugation that cancels the `C`-sign):
+**(C2).** Write `H = i D` and define `Theta_H = P K`, where `K` is
+complex conjugation. Directly:
 
 ```text
 Theta_H H Theta_H^{-1}  =  P K (i D) K^{-1} P^{-1}
@@ -141,52 +105,10 @@ Hence `Theta_H H = H Theta_H`, i.e. `[Theta_H, H] = 0`.
 
 ∎
 
-## Conditional corollary on Theta^2 (NOT load-bearing; supersedes earlier (C3))
-
-The earlier draft of this note included a third theorem item, (C3),
-asserting that `Theta^2 = s I` is universally a scalar `±I` under the
-abstract premises (1)-(3) plus the involutory/real-operator-type
-axioms on `C, P, T`. The audit lane (2026-05-12) correctly observed
-that this conclusion does **not** follow from the stated premises
-alone: the abstract premises only imply `Theta^2 = (CP)^2`, which is
-a scalar `±I` only **when an additional (C,P) commutation algebra is
-imposed** (either `[C, P] = 0` giving `s = +1`, or `{C, P} = 0` giving
-`s = -1`). Without that extra premise the scalar conclusion fails on
-generic real involutory `C, P` satisfying (1)-(3).
-
-This narrow theorem accordingly demotes the former (C3) to a
-**conditional corollary**. It is **not** a theorem conclusion of the
-narrowed claim, and it is **not** load-bearing for any downstream
-chain in the repo.
-
-**Conditional corollary (C3-cond).** Assume in addition either
-`[C, P] = 0` or `{C, P} = 0` on `V`. Then `Theta^2 = (CP)^2 = s I`
-with `s = +1` in the commuting case and `s = -1` in the anticommuting
-case.
-
-**Proof.** Under the additional premise,
-`Theta^2 = (C P T)^2 = C P T C P T = C P C P T^2 = C P C P = (CP)^2`
-(using `T C = C T` and `T P = P T` because `C, P` are real, and
-`T^2 = I`). If `[C, P] = 0`, then `(CP)^2 = C^2 P^2 = I`, so `s = +1`.
-If `{C, P} = 0` (i.e. `CP = -PC`), then
-`(CP)^2 = C P C P = -C^2 P^2 = -I`, so `s = -1`. ∎
-
-The framework-specific staggered Cl(3) instance (sublattice parity
-`C(x) = (-1)^{x_1+x_2+x_3}` plus spatial inversion
-`P : x -> -x mod L`) satisfies `[C, P] = 0` (both operators are
-diagonal/permutation-real on the lattice basis and commute on the
-explicit construction). The runner verifies this commutator at
-`L = 4`. Hence the framework instance inherits the conditional
-corollary `Theta^2 = +I` as a derived special-case fact. This
-special-case derivation is **not** generalized to a universal theorem
-conclusion by the present narrow theorem; it lives only in the
-conditional corollary scope.
-
 ## Derivable corollaries
 
-**(R1) C-only and P-only break.** From (1) and (2), `C` alone and `P`
-alone send `D -> -D`; neither is a symmetry of `D`. The combination
-`Theta = C P T` is.
+**(R1) C-only and P-only sign flips.** From (1) and (2), `C` alone and
+`P` alone send `D -> -D`, while `Theta = C P T` fixes `D`.
 
 **(R2) Spectrum conjugation.** From (3), `T D T = D`. Hence if
 `D v = lambda v`, then `D(T v) = lambda^* (T v)` because `T` is
@@ -207,20 +129,12 @@ Both follow algebraically from the premise identities.
   with `Theta_H = P K`, derived by the antiunitary `i -> -i` step.
   Load-bearing.
 - Two derivable corollaries (R1, R2) below.
-- A **conditional corollary (C3-cond)** that `Theta^2 = (CP)^2` reduces
-  to a scalar `±I` **only under the additional premise** that `C` and
-  `P` commute or anticommute on `V`. (C3-cond) is **not** load-bearing
-  for the narrow theorem or for any downstream chain.
 
 ## What this does NOT claim
 
-- Does **not** assert (C3) `Theta^2 = ±I` as a universal theorem
-  conclusion from premises (1)-(3) alone. The audit verdict
-  (2026-05-12) correctly identified that the abstract premises only
-  imply `Theta^2 = (CP)^2`, which is a scalar `±I` only under the
-  additional `(C,P)` commutation algebra. The conditional corollary
-  (C3-cond) is recorded explicitly with the extra premise; nothing
-  load-bearing in this note or downstream depends on the broader (C3).
+- C3 and every scalar-square statement are assigned to the separate
+  `CPT_C3_CP_SQUARED_SCALAR_NARROW_THEOREM_NOTE_2026-05-17.md` and are
+  not evaluated here.
 - Does **not** derive the premise identities (1)-(3) themselves. (1)
   is the sublattice-parity anticommutation with the staggered link
   variable; (2) is the spatial-inversion anticommutation; (3) is the
@@ -253,16 +167,14 @@ several distinct downstream items:
 3. SME-coefficient extraction `a_mu = 0` and Frobenius-norm
    `||H^{odd}|| = 0` numerical exhibits on `L = 4, 6, 8`.
 4. The pure algebraic substitution (C1)-(C2) on abstract `D, C, P, T`
-   satisfying (1)-(3), plus a conditional corollary (C3-cond) on
-   `Theta^2` under added (C,P) commutation algebra.
+   satisfying (1)-(3).
 
 This narrow theorem isolates item 4 from items 1-3. The premise
 identities (1)-(3) enter as hypotheses; no Hermitian-lift bridge is
 imported; no SME extraction is claimed. The algebraic substitution
 can be reviewed independently of any framework-specific upstream and
-of the bridge note's antiunitary step. The (C3-cond) corollary is
-not load-bearing and is recorded explicitly to preserve audit
-traceability of the 2026-05-12 verdict.
+of the bridge note's physical interpretation. C3 is kept out of this
+artifact and routed to its dedicated theorem note.
 
 ## Open derivation gap
 
@@ -297,22 +209,20 @@ Primary runner: [`scripts/audit_companion_cpt_exact_real_anti_hermitian_d_exact_
 verifies, at exact sympy precision:
 
 1. Each of (C1) and (C2) reduces by `sympy.simplify` to the claimed
-   identity on a small abstract operator instance and on a
-   framework-specific 8-site (`L = 4`) staggered hopping model. The
-   runner additionally exercises the (C3-cond) conditional-corollary
-   instances for traceability; these checks are **not** load-bearing.
+   identity on a two-dimensional block and on a four-dimensional
+   bipartite mirror-chain witness. Both are finite examples satisfying
+   the theorem premises; neither is a cubic-lattice construction.
 2. The two corollaries (R1, R2) follow; R2 is checked in its corrected
    anti-linear form, namely `T v` carries `lambda^*`, not
    `-lambda^*`.
-3. The framework-specific staggered Cl(3) operator at `L = 4`
-   satisfies premises (1)-(3) and therefore inherits (C1)-(C2). The
-   `L = 4` instance also happens to satisfy `[C, P] = 0`, so the
-   conditional corollary (C3-cond) yields `Theta^2 = +I` on that
-   specific construction; this is recorded as a sanity check and is
-   not load-bearing for the narrow theorem.
-4. Counterfactual probe: a generic complex (not real) anti-Hermitian
-   operator does **not** satisfy (3), breaking the composite
-   invariance — confirming `D` real is a load-bearing premise.
+3. Counterfactual probe: a complex non-real anti-Hermitian witness
+   fails premise (3), so the forward theorem is inapplicable. The
+   runner makes no converse claim about composite invariance.
+
+The runner declares this note through `AUDIT_INPUT_PATHS`; its canonical
+transcript is usable only when both the runner source and this note match the
+recorded content identities. No-argument execution emits the complete
+`32 PASS / 0 FAIL` transcript without clipping.
 
 ## Cross-references
 
@@ -321,6 +231,9 @@ verifies, at exact sympy precision:
   Hermitian-lift + SME-extraction content.
 - `physical_hermitian_hamiltonian_and_sme_bridge_note_2026-04-30` —
   separate bridge note carrying the antiunitary step `H = iD`.
+- `cpt_c3_cp_squared_scalar_narrow_theorem_note_2026-05-17` — separate
+  owner of framework-specific scalar-square statements and inversion
+  convention signs.
 - `observable_principle_from_axiom_note` — downstream consumer of the
   "real anti-Hermitian D" structural fact in Move 2 of the
   observable-principle retention chain.

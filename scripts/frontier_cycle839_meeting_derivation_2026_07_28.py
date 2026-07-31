@@ -19,7 +19,8 @@ AUDIT_INPUT_PATHS = (
 import ast
 import base64
 from collections import Counter
-from hashlib import sha256
+from hashlib import sha1, sha256
+import importlib.abc
 from itertools import combinations
 import json
 from pathlib import Path
@@ -90,11 +91,52 @@ EXPECTED_CONTROLLER_TICK_HITS = tuple(
         MECHANISM_ENTRY_CONTROLLER_TICKS - (key[1][0] - 1)
     )
 )
+EXPECTED_BASE = "96c27a8507bdcc9191deed1c609da508aaecd3e6"
+EXPECTED_BRANCH = "physics-loop/proof-grade-blockR21-20260729"
+EXPECTED_SHA256 = {
+    AUDIT_INPUT_PATHS[0]:
+        "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+    AUDIT_INPUT_PATHS[1]:
+        "0db01e80084af4dbb52c74a0a055984edf8ab818f2c8ba8a99c1f6a3fc15bb3e",
+    AUDIT_INPUT_PATHS[2]:
+        "f210ebc75909977eaa468a20b45f9a75ab9ad2e2ac0e48d0c4aab04d3a0a9a9f",
+}
+EXPECTED_GIT_BLOBS = {
+    AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
+    AUDIT_INPUT_PATHS[1]: "d666f5c301ffe6b6508f3636b15814a662bfbe8e",
+    AUDIT_INPUT_PATHS[2]: "8889e129f006bdaf4d3a3d7dd7bb3f1cac595ca7",
+}
+BLOCKLISTED_MODULES = (
+    Path(AUDIT_INPUT_PATHS[2]).stem,
+    Path(HISTORICAL_830_PATH).stem,
+)
 
 Pair = tuple[int, int]
 Key = tuple[int, Pair]
 Gate = tuple[int, int, int, int]
 MaskedGate = tuple[int, int, int, int, int]
+
+
+class _PrimaryFirewall(importlib.abc.MetaPathFinder):
+    """Fail closed if either text/AST-only primary is imported."""
+
+    def __init__(self) -> None:
+        self.hits: list[str] = []
+
+    def find_spec(
+        self,
+        fullname: str,
+        path: object = None,
+        target: object = None,
+    ) -> None:
+        if fullname in BLOCKLISTED_MODULES:
+            self.hits.append(fullname)
+            raise ImportError(f"BLOCKLIST forbids import of {fullname}")
+        return None
+
+
+FIREWALL = _PrimaryFirewall()
+sys.meta_path.insert(0, FIREWALL)
 
 
 def compact(value: object) -> str:
@@ -353,6 +395,164 @@ def git_text(*arguments: str) -> str:
     return git_bytes(*arguments).decode().strip()
 
 
+def git_blob(payload: bytes) -> str:
+    return sha1(
+        f"blob {len(payload)}\0".encode() + payload
+    ).hexdigest()
+
+
+def function_names(tree: ast.Module) -> set[str]:
+    return {
+        node.name
+        for node in tree.body
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+    }
+
+
+def source_controls() -> dict[str, object]:
+    payloads = {
+        path: (ROOT / path).read_bytes() for path in AUDIT_INPUT_PATHS
+    }
+    trees = {
+        path: ast.parse(payload, filename=path)
+        for path, payload in payloads.items()
+    }
+    self_payload = Path(__file__).read_bytes()
+    self_tree = ast.parse(
+        self_payload, filename=Path(__file__).name
+    )
+    direct_imports = tuple(sorted({
+        alias.name
+        for node in self_tree.body
+        if isinstance(node, ast.Import)
+        for alias in node.names
+    } | {
+        node.module
+        for node in self_tree.body
+        if isinstance(node, ast.ImportFrom)
+        and node.module != "__future__"
+    }))
+    expected_stdlib_imports = (
+        "ast", "base64", "collections", "hashlib", "importlib.abc",
+        "itertools", "json", "pathlib", "struct", "subprocess", "sys",
+        "time", "zlib",
+    )
+    source_rows = tuple({
+        "path": path,
+        "exists": (ROOT / path).is_file(),
+        "worktree_relative": not Path(path).is_absolute(),
+        "access": (
+            "TEXT_AST_ONLY_BLOCKLISTED"
+            if path == AUDIT_INPUT_PATHS[2]
+            else "TEXT_AST_PROVENANCE_ONLY"
+        ),
+        "sha256": sha256(payloads[path]).hexdigest(),
+        "expected_sha256": EXPECTED_SHA256[path],
+        "sha256_exact":
+            sha256(payloads[path]).hexdigest()
+            == EXPECTED_SHA256[path],
+        "git_blob": git_blob(payloads[path]),
+        "expected_git_blob": EXPECTED_GIT_BLOBS[path],
+        "git_blob_exact":
+            git_blob(payloads[path]) == EXPECTED_GIT_BLOBS[path],
+    } for path in AUDIT_INPUT_PATHS)
+    cycle719_source = payloads[AUDIT_INPUT_PATHS[0]].decode()
+    cycle832_source = payloads[AUDIT_INPUT_PATHS[1]].decode()
+    cycle837_source = payloads[AUDIT_INPUT_PATHS[2]].decode()
+    ast_basis = {
+        "cycle719_actual_controller_rule": all(
+            fragment in cycle719_source for fragment in (
+                "def apply_controller_step(",
+                "if a[station]:",
+                "output = A.apply_semantic(",
+                "target = (station + 1) % stations",
+                "b[station], a[target] = a[target], b[station]",
+            )
+        ),
+        "cycle832_funnel_target_basis": all(
+            fragment in cycle832_source for fragment in (
+                "STATE_BITS = 5815",
+                "FUNNEL_MOMENTS = {0: 14739",
+                '"full_state_hamming_weight": sum(representative)',
+                "def funnel_anatomies(",
+            )
+        ),
+        "cycle837_meeting_and_geometry_boundary": all(
+            fragment in cycle837_source for fragment in (
+                "def first_ball_meeting(",
+                '"both_arcs_first_overlap_simultaneously"',
+                '"occupancy_1_1_is_bank_cell_geometry": True',
+                '"occupancy_1_1_is_ring_pair_geometry": False',
+                "Literal landed controller tokens are common-translated",
+            )
+        ),
+        "cycle719_named_function_basis": {
+            "interleaved_program", "mapped_macro",
+            "apply_controller_step", "run_orbit",
+        } <= function_names(trees[AUDIT_INPUT_PATHS[0]]),
+        "cycle832_named_function_basis": {
+            "build_seed_family", "packed_schedule", "advance",
+            "funnel_anatomies",
+        } <= function_names(trees[AUDIT_INPUT_PATHS[1]]),
+        "cycle837_named_function_basis": {
+            "first_ball_meeting", "dynamics_probe_certificate",
+            "candidate_law_certificate",
+        } <= function_names(trees[AUDIT_INPUT_PATHS[2]]),
+    }
+    head = git_text("rev-parse", "HEAD")
+    branch = git_text("branch", "--show-current")
+    base = git_text("merge-base", "HEAD", EXPECTED_BASE)
+    result = {
+        "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
+        "AUDIT_INPUT_PATHS_literal":
+            literal_assignment(self_tree, "AUDIT_INPUT_PATHS")
+            == AUDIT_INPUT_PATHS,
+        "named_worktree_input_count": len(AUDIT_INPUT_PATHS),
+        "read_cap": 6,
+        "all_paths_existing_worktree_relative": all(
+            row["exists"] and row["worktree_relative"]
+            for row in source_rows
+        ),
+        "source_rows": source_rows,
+        "historical_cycle830_access":
+            "PINNED_GIT_OBJECT_TEXT_AST_ONLY_BLOCKLISTED",
+        "historical_cycle830_commit": HISTORICAL_830_COMMIT,
+        "historical_cycle830_path": HISTORICAL_830_PATH,
+        "blocked_modules": BLOCKLISTED_MODULES,
+        "blocked_modules_loaded_at_start": tuple(
+            name for name in BLOCKLISTED_MODULES if name in sys.modules
+        ),
+        "firewall_hits_at_start": tuple(FIREWALL.hits),
+        "direct_imports": direct_imports,
+        "expected_stdlib_imports": expected_stdlib_imports,
+        "stdlib_only": direct_imports == expected_stdlib_imports,
+        "AST_provenance_basis": ast_basis,
+        "git_head": head,
+        "git_branch": branch,
+        "expected_git_branch": EXPECTED_BRANCH,
+        "git_branch_exact": branch == EXPECTED_BRANCH,
+        "git_base": base,
+        "expected_git_base": EXPECTED_BASE,
+        "git_base_exact": base == EXPECTED_BASE,
+    }
+    result["pass"] = (
+        result["AUDIT_INPUT_PATHS_literal"]
+        and len(AUDIT_INPUT_PATHS) <= result["read_cap"]
+        and result["all_paths_existing_worktree_relative"]
+        and all(
+            row["sha256_exact"] and row["git_blob_exact"]
+            for row in source_rows
+        )
+        and all(ast_basis.values())
+        and result["stdlib_only"]
+        and not result["blocked_modules_loaded_at_start"]
+        and not result["firewall_hits_at_start"]
+        and result["git_branch_exact"]
+        and result["git_base_exact"]
+    )
+    return result
+
+
 def cyclic_separation(pair: Pair) -> int:
     left, right = pair
     return min(
@@ -382,6 +582,17 @@ def state_set_sha256(states: tuple[int, ...]) -> str:
     hasher = sha256()
     for state in sorted(set(states)):
         hasher.update(state.to_bytes(STATE_BYTES, "little"))
+    return hasher.hexdigest()
+
+
+def dynamics_sha256(dynamics: dict[str, object]) -> str:
+    hasher = sha256(compact(dynamics["public"]).encode())
+    snapshots = dynamics["snapshots"]
+    assert isinstance(snapshots, dict)
+    for tick in sorted(snapshots):
+        hasher.update(int(tick).to_bytes(4, "little"))
+        for state in snapshots[tick]:
+            hasher.update(state.to_bytes(STATE_BYTES, "little"))
     return hasher.hexdigest()
 
 
@@ -424,9 +635,23 @@ def decode_cycle830_fixtures() -> dict[str, object]:
     target = int.from_bytes(target_raw, "little")
     source_sha = sha256(source).hexdigest()
     source_blob = git_text("rev-parse", HISTORICAL_830_SPEC)
+    ast_basis = {
+        "literal_fixture_assignments": all(
+            literal_assignment(tree, name) is not None
+            for name in (
+                "GATE_CONSTANTS_B85", "FAMILY_STATES_B85",
+                "SSTAR_PACKED_B85",
+            )
+        ),
+        "reimplementation_function_basis": {
+            "decode_fixtures", "build_masked_schedule", "apply_masked",
+            "forward_lawful_census", "state_sha256",
+        } <= function_names(tree),
+    }
     exact = (
         source_sha == EXPECTED_830_SOURCE_SHA256
         and source_blob == EXPECTED_830_SOURCE_GIT_BLOB
+        and all(ast_basis.values())
         and len(lengths) == RING_STATIONS
         and sum(lengths) == GATE_COUNT
         and offset == len(gate_raw)
@@ -454,6 +679,7 @@ def decode_cycle830_fixtures() -> dict[str, object]:
             "source_path": HISTORICAL_830_PATH,
             "source_sha256": source_sha,
             "source_git_blob": source_blob,
+            "AST_provenance_basis": ast_basis,
             "fixture_import_status":
                 "DISCLOSED_CONDITIONAL_INPUT: hashes prevent drift but "
                 "do not independently prove the historical extraction",
@@ -1050,48 +1276,166 @@ def render(certificates: dict[str, object], report: dict[str, object]) -> str:
     )) + "\n"
 
 
+def stable_render(
+    certificates: dict[str, object],
+    checks: dict[str, bool],
+    report: dict[str, object],
+    controls_base: bool,
+) -> str:
+    controls = certificates["D_CONTROLS"]
+    assert isinstance(controls, dict)
+    for _attempt in range(20):
+        controls["pass"] = (
+            controls_base
+            and controls["stdout_bytes"] < STDOUT_LIMIT_BYTES
+        )
+        checks["D_CONTROLS"] = bool(controls["pass"])
+        report["checks"] = dict(checks)
+        report["pass"] = all(checks.values())
+        report["terminal"] = (
+            "CYCLE839_CAUSAL_DERIVATION_PARTIAL_PASS"
+            if report["pass"] and report["verdict"] == "PARTIAL"
+            else "CYCLE839_CAUSAL_DERIVATION_HONEST_FAIL"
+        )
+        output = render(certificates, report)
+        size = len(output.encode())
+        if (
+            controls["stdout_bytes"] == size
+            and report["stdout_bytes"] == size
+        ):
+            return output
+        controls["stdout_bytes"] = size
+        report["stdout_bytes"] = size
+    raise AssertionError("stdout byte fixed point did not converge")
+
+
 def run() -> int:
     started = monotonic()
+    controls = source_controls()
+    source_pass = bool(controls["pass"])
     certificate_a = meeting_theorem_certificate()
     fixtures = decode_cycle830_fixtures()
     dynamics = evolve_controller_ticks(fixtures)
-    certificate_b = meet_configurations_certificate(
+    meet_configurations = meet_configurations_certificate(
         certificate_a, fixtures, dynamics
     )
     reachability = reachability_certificate(
-        certificate_a, certificate_b, fixtures, dynamics
+        certificate_a, meet_configurations, fixtures, dynamics
     )
     certificate_c = verdict_certificate(
-        certificate_a, certificate_b, reachability
+        certificate_a, meet_configurations, reachability
     )
     replay_a = meeting_theorem_certificate()
-    deterministic_a = (
+    replay_dynamics = evolve_controller_ticks(fixtures)
+    replay_meet_configurations = meet_configurations_certificate(
+        replay_a, fixtures, replay_dynamics
+    )
+    replay_reachability = reachability_certificate(
+        replay_a, replay_meet_configurations, fixtures, replay_dynamics
+    )
+    replay_c = verdict_certificate(
+        replay_a, replay_meet_configurations, replay_reachability
+    )
+    first_certificate_digest = digest((
+        certificate_a, meet_configurations, reachability, certificate_c,
+        dynamics["public"],
+    ))
+    replay_certificate_digest = digest((
+        replay_a, replay_meet_configurations, replay_reachability,
+        replay_c, replay_dynamics["public"],
+    ))
+    deterministic = (
         certificate_a == replay_a
-        and digest(certificate_a) == digest(replay_a)
+        and meet_configurations == replay_meet_configurations
+        and reachability == replay_reachability
+        and certificate_c == replay_c
+        and dynamics == replay_dynamics
+        and dynamics_sha256(dynamics)
+        == dynamics_sha256(replay_dynamics)
+        and first_certificate_digest == replay_certificate_digest
     )
     elapsed = monotonic() - started
+    certificate_b = {
+        "verdict": "PASS" if (
+            meet_configurations["pass"] and reachability["pass"]
+        ) else "FAIL",
+        "fixture_provenance": fixtures["public"],
+        "actual_dynamics_search": dynamics["public"],
+        "meet_configurations": meet_configurations,
+        "bounded_forward_reachability": reachability,
+        "pass": bool(
+            meet_configurations["pass"] and reachability["pass"]
+        ),
+    }
+    controls.update({
+        "source_controls_pass": source_pass,
+        "historical_cycle830_fixture_provenance":
+            fixtures["public"],
+        "blocked_modules_loaded_at_end": tuple(
+            name for name in BLOCKLISTED_MODULES if name in sys.modules
+        ),
+        "firewall_hits_at_end": tuple(FIREWALL.hits),
+        "exact_arithmetic":
+            "All graph distances, center sets, rail occupancies, Boolean "
+            "X/CNOT/Toffoli updates, 5815-bit state equalities, counts, "
+            "bounds, hashes, and replay comparisons use exact Python "
+            "integers/bytes/sets; only monotonic wall runtime is a float.",
+        "determinism": {
+            "method":
+                "independent complete rerun of all 162129 controller "
+                "ticks plus an in-run duplicate lane",
+            "first_certificate_sha256": first_certificate_digest,
+            "replay_certificate_sha256": replay_certificate_digest,
+            "first_dynamics_sha256": dynamics_sha256(dynamics),
+            "replay_dynamics_sha256":
+                dynamics_sha256(replay_dynamics),
+            "certificates_exactly_equal": deterministic,
+            "duplicate_lane_checks_exact": all(
+                row["duplicate_lane_exact"]
+                for row in dynamics["public"][
+                    "duplicate_determinism_checks"
+                ]
+            ),
+        },
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "user_runtime_ceiling_seconds": 1500,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "pass": False,
+    })
+    controls_base = (
+        source_pass
+        and certificate_a["pass"]
+        and certificate_b["pass"]
+        and certificate_c["pass"]
+        and certificate_c["verdict"] == "PARTIAL"
+        and fixtures["public"]["pass"]
+        and dynamics["public"]["pass"]
+        and deterministic
+        and not controls["blocked_modules_loaded_at_end"]
+        and not controls["firewall_hits_at_end"]
+        and elapsed < AUDIT_TIMEOUT_SEC < 1500
+    )
     certificates = {
         "A_MEETING_THEOREM": certificate_a,
-        "B_MEET_CONFIGURATIONS": certificate_b,
-        "B_FORWARD_REACHABILITY": reachability,
+        "B_TIE_CONSEQUENCE_ATTEMPT": certificate_b,
         "C_VERDICT": certificate_c,
-        "FIXTURE_PROVENANCE": fixtures["public"],
-        "DYNAMICS_SEARCH": dynamics["public"],
+        "D_CONTROLS": controls,
     }
     checks = {
         "A_MEETING_THEOREM": bool(certificate_a["pass"]),
-        "B_MEET_CONFIGURATIONS": bool(certificate_b["pass"]),
-        "B_FORWARD_REACHABILITY": bool(reachability["pass"]),
+        "B_TIE_CONSEQUENCE_ATTEMPT": bool(certificate_b["pass"]),
         "C_HONEST_PARTIAL_VERDICT": bool(certificate_c["pass"])
             and certificate_c["verdict"] == "PARTIAL",
+        "D_CONTROLS": False,
         "FIXTURE_PROVENANCE": bool(fixtures["public"]["pass"]),
-        "MICROSTEP_DYNAMICS_SEARCH": bool(dynamics["public"]["pass"]),
-        "A_DETERMINISTIC_REPLAY": deterministic_a,
+        "FULL_DETERMINISTIC_REPLAY": deterministic,
         "RUNTIME_BOUND": elapsed < AUDIT_TIMEOUT_SEC,
     }
     report = {
         "cycle": 839,
-        "stage": "certificates-A-B-C",
+        "stage": "certificates-A-B-C-D",
         "meeting_times_by_separation": tuple(
             (
                 row["separation"],
@@ -1103,20 +1447,23 @@ def run() -> int:
             "simultaneous_two_arc_meeting_separations"
         ],
         "meet_configuration_outcome":
-            certificate_b["exact_local_consequence"],
+            meet_configurations["exact_local_consequence"],
         "reachability_outcome": reachability["exact_outcome"],
         "verdict": certificate_c["verdict"],
         "causal_chain_established":
             certificate_c["causal_chain_established"],
-        "deterministic_A_replay": deterministic_a,
+        "deterministic_full_replay": deterministic,
         "runtime_seconds": round(elapsed, 6),
-        "checks": checks,
-        "pass": all(checks.values()),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "checks": {},
+        "pass": False,
         "terminal": "CYCLE839_CAUSAL_DERIVATION_HONEST_FAIL",
     }
-    if report["pass"]:
-        report["terminal"] = "CYCLE839_CAUSAL_DERIVATION_PARTIAL_PASS"
-    output = render(certificates, report)
+    output = stable_render(
+        certificates, checks, report, controls_base
+    )
     if len(output.encode()) >= STDOUT_LIMIT_BYTES:
         raise AssertionError("stdout limit exceeded")
     sys.stdout.write(output)

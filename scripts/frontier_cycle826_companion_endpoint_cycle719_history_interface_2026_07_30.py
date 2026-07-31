@@ -65,6 +65,30 @@ def decode_history(bits: tuple[int, ...]) -> tuple[int, ...]:
     return tuple(cell.orientation for cell in chain.cells)
 
 
+def controller_transients_clean(bits: tuple[int, ...]) -> bool:
+    banks, links = H719.M.unpack_state(bits, H719.BANKS)
+    transient_bank_wires = (
+        H719.A.POINTER,
+        H719.A.U_TO_V,
+        H719.A.V_TO_U,
+        H719.A.DIRECTION_OK,
+        *H719.A.FRESH,
+        *H719.A.ZERO_WORK,
+        H719.A.TOKEN_OK,
+    )
+    return not any((
+        bits[38],
+        bits[39],
+        bits[H719.R3_SOURCE_POINTER()],
+        any(
+            bank[wire]
+            for bank in banks
+            for wire in transient_bank_wires
+        ),
+        any(any(link) for link in links),
+    ))
+
+
 def expected_orientation(left: int, right: int, pointer: int) -> tuple[int, ...]:
     if not pointer:
         return ()
@@ -74,6 +98,7 @@ def expected_orientation(left: int, right: int, pointer: int) -> tuple[int, ...]
 def controller_truth_table() -> dict[str, object]:
     rows = []
     failures = inverse_failures = token_failures = pointer_failures = 0
+    transient_failures = 0
     endpoint_failures = history_failures = 0
     deletion_detected = dirty_pointer_detected = 0
     zero_token_detected = two_token_detected = 0
@@ -101,6 +126,7 @@ def controller_truth_table() -> dict[str, object]:
                 and after[H719.M.R3.X.RIGHT_ENDPOINT] == right
             )
             pointer_ok = after[H719.R3_SOURCE_POINTER()] == 0
+            transients_ok = controller_transients_clean(after)
             tokens_ok = (
                 tuple(index for index, value in enumerate(a_tokens) if value)
                 == (0,)
@@ -110,12 +136,13 @@ def controller_truth_table() -> dict[str, object]:
                 and not any(rb_tokens)
             )
             failures += not (
-                endpoint_ok and pointer_ok and tokens_ok
+                endpoint_ok and pointer_ok and transients_ok and tokens_ok
                 and history == expected and restored == before
             )
             inverse_failures += restored != before
             token_failures += not tokens_ok
             pointer_failures += not pointer_ok
+            transient_failures += not transients_ok
             endpoint_failures += not endpoint_ok
             history_failures += history != expected
 
@@ -146,6 +173,7 @@ def controller_truth_table() -> dict[str, object]:
                 "history": history,
                 "expected_history": expected,
                 "pointer_returned_clean": pointer_ok,
+                "controller_transients_returned_clean": transients_ok,
                 "controller_token_returned": tokens_ok,
                 "inverse_exact": restored == before,
             })
@@ -156,6 +184,7 @@ def controller_truth_table() -> dict[str, object]:
         "inverse_failures": inverse_failures,
         "controller_token_failures": token_failures,
         "source_pointer_cleanup_failures": pointer_failures,
+        "controller_transient_cleanup_failures": transient_failures,
         "endpoint_preservation_failures": endpoint_failures,
         "history_orientation_failures": history_failures,
         "success_finalizer_deletions_detected": deletion_detected,
@@ -278,6 +307,7 @@ def main() -> None:
             and truth["inverse_failures"] == 0
             and truth["controller_token_failures"] == 0
             and truth["source_pointer_cleanup_failures"] == 0
+            and truth["controller_transient_cleanup_failures"] == 0
             and truth["endpoint_preservation_failures"] == 0
             and truth["history_orientation_failures"] == 0
         ),

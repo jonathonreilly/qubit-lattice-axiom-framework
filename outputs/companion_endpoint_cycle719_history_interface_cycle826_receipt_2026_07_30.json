@@ -4,7 +4,7 @@
   "authority": "none",
   "artifact_provenance_sha256": {
     "note": "75a6e9757178d0d9f42e971b6e2efcdec0e98b359497b2d60571a03b05302d8a",
-    "runner": "cdae49cd1e04a7a0530d44377625de9e5c71de6040d58539d1bd42f49250a638"
+    "runner": "f27cf1ed377d5eba1434ae4106bf84bfee2a8ef7524243040933f76e3efaad72"
   },
   "checks_passed": 5,
   "checks_total": 5,
@@ -15,6 +15,7 @@
     "inverse_failures": 0,
     "controller_token_failures": 0,
     "source_pointer_cleanup_failures": 0,
+    "controller_transient_cleanup_failures": 0,
     "endpoint_preservation_failures": 0,
     "history_orientation_failures": 0,
     "success_finalizer_deletions_detected": 2,

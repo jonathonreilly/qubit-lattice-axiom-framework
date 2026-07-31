@@ -9,17 +9,21 @@ superset closure: audit helpers and group-action helpers remain visible, so a
 physical-looking theorem cannot be obtained by silently classifying a
 separating tuple functional as "mere machinery".
 
-For a callable whose landed calls have no per-allocation channel, allocation
-independence is certified syntactically and represented by a stable AST token.
+For a callable whose declared calls have no direct per-allocation channel, a
+conditional syntactic noninterference reduction is represented by a stable AST
+token; this is not promoted into a full semantic call-site/dataflow theorem.
 The Cycle-815 callables that consume one allocation are reimplemented and
 evaluated exactly.  Whole returned objects are compared; equality of a whole
 object is a proven-sufficient reduction for every numeric/tuple/dict projection
 of that object.  Conversely, inequality of any whole object is a separator.
 
-The Cycle-749 W7 response primary is not present in the declared worktree
-module set.  That absence is an explicit scope result, not silently repaired
-from another branch or Git object.  Consequently no Cycle-749-only callable is
-called "landed" here; the Cycle-750/758 downstream selector lineage is scanned.
+The Cycle-749 W7 response primary is not present in the literal seven-file
+module set at the pinned branch base.  That makes the requested W7-inclusive
+closure unavailable here; it is not silently repaired from another branch or
+Git object.  Consequently no Cycle-749-only callable is invented, and no
+physical-observability theorem is allowed.  The exact separator below is a
+computational/group-action tuple helper under the user's broad syntactic rule,
+not an operational record/readout bridge.
 
 The Cycle-786/805/808/815 primaries are source/AST inputs only.  Imports are
 runtime-blocked and their finite allocation/action/count consequences are
@@ -457,7 +461,7 @@ def find_inventory_row(
 def build_observables(
     inventory: tuple[InventoryRow, ...],
 ) -> tuple[Observable, ...]:
-    """Instantiate every callable plus required landed semantic projections."""
+    """Instantiate every callable plus scoped semantic support projections."""
     observables = []
     per_member = {
         ".lawful_group_allocation": (
@@ -473,20 +477,20 @@ def build_observables(
     }
     for row in inventory:
         evaluator = None
-        evaluation_mode = "STATIC_BY_LANDED_CALL_NONINTERFERENCE"
+        evaluation_mode = "CONDITIONAL_STATIC_BY_DECLARED_CALL_NONINTERFERENCE"
         for suffix, (mode, candidate) in per_member.items():
             if row.name.endswith(suffix):
                 evaluation_mode = mode
                 evaluator = candidate
                 break
         if evaluator is None:
-            # Stable symbolic execution is sufficient here: at every landed
-            # call site, these functions receive the same state/certificate
-            # while the tested member varies.  The source AST token identifies
-            # the exact deterministic computation held fixed.
+            # Conditional symbolic reduction at the declared calls: these
+            # functions receive the same state/certificate while the tested
+            # member varies.  The token identifies the computation held fixed;
+            # it is not a W7-inclusive semantic dataflow proof.
             evaluator = static_evaluator(
                 (
-                    "LANDED_INPUT_INDEPENDENT",
+                    "DECLARED_CALL_INPUT_INDEPENDENT",
                     row.ast_sha256,
                     row.parameters,
                 )
@@ -502,7 +506,6 @@ def build_observables(
         )
 
     landed_data = find_inventory_row(inventory, ".landed_data_certificate")
-    rotation = find_inventory_row(inventory, ".rotate_allocation")
     support = find_inventory_row(inventory, ".support_census")
     catalog = find_inventory_row(inventory, ".derive_origin_catalog")
     selector = find_inventory_row(inventory, ".enforcement_lineage_selector")
@@ -542,42 +545,42 @@ def build_observables(
             "projection.occurrence_full_46_counts",
             f"{landed_data.path}:{landed_data.line}",
             "OCCURRENCE_BATTERY_COUNT",
-            "EXACT_REIMPLEMENTED_PROJECTION",
+            "SUPPORT_ONLY_REIMPLEMENTED_CONSTANT_PROJECTION",
             static_evaluator(full_counts),
         ),
         Observable(
             "projection.battery_cycle786_38_counts",
             f"{landed_data.path}:{landed_data.line}",
             "OCCURRENCE_BATTERY_COUNT",
-            "EXACT_REIMPLEMENTED_PROJECTION",
+            "SUPPORT_ONLY_REIMPLEMENTED_CONSTANT_PROJECTION",
             static_evaluator(projected_counts),
         ),
         Observable(
             "projection.selector_outputs",
             f"{selector.path}:{selector.line}",
             "SELECTOR_OUTPUT",
-            "EXACT_REIMPLEMENTED_PROJECTION",
+            "SUPPORT_ONLY_REIMPLEMENTED_CONSTANT_PROJECTION",
             static_evaluator(selector_outputs),
         ),
         Observable(
             "projection.record_content_objects",
             f"{catalog.path}:{catalog.line}",
             "RECORD_CONTENT",
-            "EXACT_REIMPLEMENTED_PROJECTION",
+            "SUPPORT_ONLY_REIMPLEMENTED_CONSTANT_PROJECTION",
             static_evaluator(record_content),
         ),
         Observable(
             "projection.ensemble_support_statistics",
             f"{support.path}:{support.line}",
             "ENSEMBLE_SUPPORT",
-            "EXACT_REIMPLEMENTED_PROJECTION",
+            "SUPPORT_ONLY_REIMPLEMENTED_CONSTANT_PROJECTION",
             static_evaluator(support_statistics),
         ),
         Observable(
             "projection.origin_resolved_channels",
             f"{catalog.path}:{catalog.line}",
             "ORIGIN_RESOLVED",
-            "EXACT_REIMPLEMENTED_PROJECTION",
+            "SUPPORT_ONLY_REIMPLEMENTED_CONSTANT_PROJECTION",
             static_evaluator(origin_resolved),
         ),
         Observable(
@@ -593,15 +596,6 @@ def build_observables(
             "ALLOCATION_OR_ACTION",
             "EXACT_MEMBER_CALL",
             canonical_orbit,
-        ),
-        Observable(
-            "projection.all_six_rotated_allocation_tuples",
-            f"{rotation.path}:{rotation.line}",
-            "ALLOCATION_OR_ACTION",
-            "EXACT_MEMBER_CALL_FROM_CYCLE815_ROTATE",
-            lambda values: tuple(
-                rotate_allocation(values, power) for power in range(6)
-            ),
         ),
     )
     return tuple(observables) + projections
@@ -803,19 +797,23 @@ def inventory_certificate(
         "family_counts": dict(sorted(family_counts.items())),
         "w7_response_rows_in_literal_worktree_closure": len(response_rows),
         "w7_scope_status": (
-            "CYCLE749_PRIMARY_ABSENT_FROM_CURRENT_HEAD_AND_DECLARED_MODULE_SET; "
+            "CYCLE749_PRIMARY_NOT_IN_LITERAL_SEVEN_FILE_BRANCH_SCOPE; "
+            "REQUESTED_W7_INCLUSIVE_CLOSURE_UNAVAILABLE; "
             "NO_CYCLE749_ONLY_CALLABLE_INVENTED"
         ),
+        "requested_w7_inclusive_closure_complete": False,
+        "proof_obligation_status": "CONDITIONAL",
         "earlier_modules_import_cycle815": imports_cycle815,
         "allocation_noninterference_basis": (
-            "the six pre-815 primaries neither import Cycle815 nor have access "
-            "to its generated allocation space; their landed state arguments "
-            "are fixed while a candidate allocation varies"
+            "conditional syntactic reduction: the six pre-815 primaries "
+            "neither import Cycle815 nor have direct access to its generated "
+            "allocation space; this does not replace a W7-inclusive semantic "
+            "call-site/dataflow proof"
         ),
         "complete_at_declared_module_set": (
             len(trees) == 7
             and len(inventory) == 161
-            and len(observables) == 170
+            and len(observables) == 169
             and not response_rows
             and not imports_cycle815
         ),
@@ -923,7 +921,11 @@ def main() -> int:
     )
 
     if certificate_b["first_separator"] is not None:
-        outcome = "SEPARATOR_FOUND_DICHOTOMY_STAYS_OPEN"
+        outcome = (
+            "COMPUTATIONAL_GROUP_ACTION_HELPER_SEPARATOR_FOUND_AT_"
+            "SEVEN_FILE_BRANCH_SCOPE__PHYSICAL_BORN_DICHOTOMY_STAYS_OPEN__"
+            "REQUESTED_W7_INCLUSIVE_CLOSURE_UNAVAILABLE"
+        )
         theorem = None
     else:
         # Certificate D below decides which of the two all-equal readings is
@@ -964,8 +966,10 @@ def main() -> int:
     emit("CERTIFICATE_C", compact({"outcome": outcome, "theorem": theorem}))
 
     check(
-        "certificate_A_complete",
-        certificate_a["complete_at_declared_module_set"],
+        "certificate_A_declared_scope_complete_and_W7_gap_explicit",
+        certificate_a["complete_at_declared_module_set"]
+        and not certificate_a["requested_w7_inclusive_closure_complete"]
+        and certificate_a["proof_obligation_status"] == "CONDITIONAL",
         certificate_a,
     )
     check(
@@ -1039,6 +1043,10 @@ def main() -> int:
     )
     passed = all(CHECKS.values())
     emit("OUTCOME", outcome)
+    emit(
+        "SEPARATOR_CLASS",
+        "COMPUTATIONAL_GROUP_ACTION_HELPER_NOT_OPERATIONAL_PHYSICAL_READOUT",
+    )
     emit("INVENTORY_SIZE", len(observables))
     emit(
         "SEPARATION_OUTCOME",

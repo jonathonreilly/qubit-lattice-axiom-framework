@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Cycle 832: cohort-moment law hunt with pre-registered continuations.
+"""Cycle 832 v2: the 36-key backbone and cycle-cohort hypothesis.
 
 The runner independently rebuilds the landed k=2 family from the Cycle-719
-core.  Cycle-818/819/820/822 sources are SHA-pinned text/AST controls and are
-blocked from import.  Only compact, explicitly SHA-pinned observations are
-copied from the sibling Cycle-830/831 packages; all three funnel states used
-by the census are reconstructed here.
+core.  It cross-checks the event-3 backbone against the SHA-pinned landed
+Cycle-818 strict table, replays every event-3 trajectory at every aligned gate
+checkpoint through its full period, and retracts the v1 27-key exhaustion and
+backbone-target prediction claims.  Cycle-818/819/820/822 sources remain
+text/AST-only and blocked from import.
 """
 from __future__ import annotations
 
-AUDIT_TIMEOUT_SEC = 1500
+AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 200 * 1024
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
@@ -17,6 +18,7 @@ AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle819_deep_k2_continuation_2026_07_28.py",
     "scripts/frontier_cycle820_shared_moment_mechanism_2026_07_28.py",
     "scripts/frontier_cycle822_basin_independent_check_2026_07_28.py",
+    "logs/runner-cache/frontier_cycle818_period_structure_census_2026_07_28.txt",
 )
 
 import ast
@@ -46,6 +48,8 @@ EXPECTED_SHA256 = {
         "7344bee5d5f0bcbddcea7b9d83f40a552c90188bf30b4905f2649a49e4bf1649",
     AUDIT_INPUT_PATHS[4]:
         "c2fd23a7bb47caff70e9561fc9da46feef422c053954fa1af925901a1884ed0b",
+    AUDIT_INPUT_PATHS[5]:
+        "94bc32640518f097cb09060f9c378d26d73e263539573e3b8e75ed2aab1b857e",
 }
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
@@ -53,9 +57,12 @@ EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[2]: "c3a071835a61e78a4919decfede8534cbf95e1d9",
     AUDIT_INPUT_PATHS[3]: "6385dfa0dce58e86345483cc521ffa325e0d1cce",
     AUDIT_INPUT_PATHS[4]: "6d48f5d86006a5f6718b5993eaecd5ec69d86112",
+    AUDIT_INPUT_PATHS[5]: "3544e3beada65b3480d352e2701f6e21b3f9ae2d",
 }
 
-TEXT_AST_ONLY_PATHS = AUDIT_INPUT_PATHS[1:]
+PYTHON_INPUT_PATHS = AUDIT_INPUT_PATHS[:5]
+TEXT_AST_ONLY_PATHS = AUDIT_INPUT_PATHS[1:5]
+CYCLE818_CATALOG_CACHE_PATH = AUDIT_INPUT_PATHS[5]
 COPIED_PRIMARY_MODULES = (
     "frontier_cycle830_sstar_preimage_tree_2026_07_28",
     "frontier_cycle831_deep_k2_forecast_tests_2026_07_28",
@@ -100,6 +107,7 @@ STATE_BITS = 5815
 LCM_SKELETON = 17856
 MOMENTS = (14744, 33195, 51115)
 EVENTS = (0, 2, 1)
+LAWFUL_EVENTS = (0, 1, 2, 3)
 TRANSITIONS = (
     {"source_event": 0, "target_event": 2, "left": 14744,
      "right": 33195, "residual": 595},
@@ -118,6 +126,14 @@ COHORT_KEYS = {
     event: tuple((event, pair) for pair in BACKBONE)
     for event in EVENTS
 }
+BACKBONE_KEYS = tuple(
+    (event, pair) for pair in BACKBONE for event in LAWFUL_EVENTS
+)
+EVENT3_BACKBONE_KEYS = tuple((3, pair) for pair in BACKBONE)
+V1_EXHAUSTION_CLAIM_VERBATIM = (
+    "The literal nine-pair backbone is exhausted by the 27 keys in the "
+    "three event cohorts (0, 2, 1)."
+)
 
 EARLIER_RESOLVED = frozenset({
     (3, (1, 10)), (3, (0, 7)),
@@ -214,6 +230,16 @@ def literal_assignment(tree: ast.Module, name: str) -> object | None:
         return None
 
 
+def cycle818_period_rows(payload: bytes) -> tuple[dict[str, object], ...]:
+    prefix = "PERIOD_TABLE_ROW "
+    rows = tuple(
+        json.loads(line[len(prefix):])
+        for line in payload.decode("utf-8").splitlines()
+        if line.startswith(prefix)
+    )
+    return rows
+
+
 def source_controls() -> dict[str, object]:
     payloads = {
         path: (ROOT / path).read_bytes() for path in AUDIT_INPUT_PATHS
@@ -221,7 +247,19 @@ def source_controls() -> dict[str, object]:
     trees = {
         path: ast.parse(payload.decode(), filename=path)
         for path, payload in payloads.items()
+        if path in PYTHON_INPUT_PATHS
     }
+    catalog_rows = cycle818_period_rows(
+        payloads[CYCLE818_CATALOG_CACHE_PATH]
+    )
+    cache_terminal_exact = any(
+        line.startswith("FINAL ")
+        and json.loads(line[6:]).get("terminal")
+        == "CYCLE818_PERIOD_STRUCTURE_CENSUS_PASS"
+        for line in payloads[CYCLE818_CATALOG_CACHE_PATH].decode(
+            "utf-8"
+        ).splitlines()
+    )
     self_tree = ast.parse(
         Path(__file__).read_text(encoding="utf-8"), filename=__file__
     )
@@ -236,9 +274,20 @@ def source_controls() -> dict[str, object]:
         "expected_git_blob": EXPECTED_GIT_BLOBS[path],
         "git_blob_exact":
             git_blob(payloads[path]) == EXPECTED_GIT_BLOBS[path],
-        "parseable_ast": isinstance(trees[path], ast.Module),
-        "access": "DYNAMIC_IMPORT" if path == AUDIT_INPUT_PATHS[0]
-                  else "TEXT_AST_ONLY_BLOCKLISTED",
+        "structured_input_valid": (
+            isinstance(trees[path], ast.Module)
+            if path in PYTHON_INPUT_PATHS
+            else len(catalog_rows) == 14 and cache_terminal_exact
+        ),
+        "access": (
+            "DYNAMIC_IMPORT"
+            if path == AUDIT_INPUT_PATHS[0]
+            else (
+                "TEXT_AST_ONLY_BLOCKLISTED"
+                if path in TEXT_AST_ONLY_PATHS
+                else "TEXT_JSON_LINES_ONLY"
+            )
+        ),
     } for path in AUDIT_INPUT_PATHS)
     copied_digest = digest((COPIED_830_ANATOMY, COPIED_831_COHORTS))
     result = {
@@ -251,6 +300,10 @@ def source_controls() -> dict[str, object]:
         ),
         "plain_reading_named_files": len(AUDIT_INPUT_PATHS) + 1,
         "read_cap": 7,
+        "cycle818_catalog_cache_path": CYCLE818_CATALOG_CACHE_PATH,
+        "cycle818_strict_row_count": len(catalog_rows),
+        "cycle818_cache_terminal_exact": cache_terminal_exact,
+        "cycle818_period_rows": catalog_rows,
         "source_rows": rows,
         "blocked_modules": BLOCKLISTED_MODULES,
         "blocked_modules_loaded_at_source_check": tuple(
@@ -272,7 +325,7 @@ def source_controls() -> dict[str, object]:
         and all(
             row["sha256_exact"]
             and row["git_blob_exact"]
-            and row["parseable_ast"]
+            and row["structured_input_valid"]
             for row in rows
         )
         and not result["blocked_modules_loaded_at_source_check"]
@@ -318,6 +371,7 @@ def candidate_residual(
 
 
 def build_preregistration() -> dict[str, object]:
+    historical_v1_status = "PRE_REGISTERED_CANDIDATE"
     open_keys = open_pair_event_keys()
     base = MOMENTS[-1] + LCM_SKELETON
     laws = []
@@ -331,15 +385,17 @@ def build_preregistration() -> dict[str, object]:
                 "predicted_next_cohort_moment":
                     None if residual is None else base + residual,
                 "status":
-                    "PREDICTED" if residual is not None
+                    "HISTORICAL_V1_PREDICTION_RETRACTED"
+                    if residual is not None
                     else "OUTSIDE_LAW_DOMAIN",
             })
         laws.append({
             "law": law,
-            "status": "PRE_REGISTERED_CANDIDATE",
+            "status": "RETRACTED_NO_K2_BACKBONE_TARGET",
+            "historical_v1_status": historical_v1_status,
             "two_point_warning":
                 "Two points cannot prove this law; rival exact lookups are "
-                "deliberately retained to expose underdetermination.",
+                "retained only as a record of v1 underdetermination.",
             "predictions_from_current_event_1": tuple(predictions),
         })
     backbone_open = tuple(
@@ -347,21 +403,24 @@ def build_preregistration() -> dict[str, object]:
     )
     return {
         "order_statement":
-            "This entire PRE_REGISTRATION block is emitted before checks or "
-            "verification certificates.",
+            "Historical v1 pre-registration, reproduced but retracted by "
+            "Certificate C because the complete k=2 backbone has no next "
+            "transient cohort-moment target.",
         "known_last_moment": MOMENTS[-1],
         "lcm_skeleton": LCM_SKELETON,
         "prediction_base": base,
         "fallback_bounded_forecast": {
             "residual_interval_inclusive": (0, 596),
             "moment_interval_inclusive": (base, base + 596),
+            "status": "RETRACTED_NO_CURRENT_TARGET",
         },
         "open_key_count": len(open_keys),
         "open_pair_event_keys": open_keys,
         "open_keys_on_nine_pair_backbone": backbone_open,
         "backbone_open_reading":
             "No key on the literal nine-pair backbone remains open; all 133 "
-            "open keys are on the other separated pairs.",
+            "open keys are off-backbone.  This is the complete 36-key "
+            "reading, not the retracted v1 27-key inventory.",
         "candidate_laws": tuple(laws),
     }
 
@@ -887,6 +946,395 @@ def funnel_anatomies(
     }
 
 
+def backbone_classification_certificate(
+    sources: dict[str, object],
+) -> dict[str, object]:
+    strict_rows = sources["cycle818_period_rows"]
+    assert isinstance(strict_rows, tuple)
+    strict_period3_keys = tuple(sorted(
+        (
+            int(row["event"]),
+            tuple(int(position) for position in row["positions"]),
+        )
+        for row in strict_rows
+        if int(row["k"]) == 2 and int(row["period"]) == 3
+    ))
+    catalog_by_key = {
+        (
+            int(row["event"]),
+            tuple(int(position) for position in row["positions"]),
+        ): row
+        for row in strict_rows
+    }
+    landed_resolved = (
+        set(EARLIER_RESOLVED)
+        | set(COHORT_KEYS[2])
+        | set(COHORT_KEYS[1])
+    )
+    classification_rows = []
+    for event, pair in BACKBONE_KEYS:
+        if event in EVENTS:
+            classification_rows.append({
+                "key": (event, pair),
+                "classification": "TRANSIENT_COHORT",
+                "cohort_event": event,
+                "resolution_moment": RESOLUTION_MOMENTS[event],
+                "landed_resolution_provenance": (
+                    "EARLIER_RESOLVED"
+                    if event == 0 else f"COHORT_KEYS[{event}]"
+                ),
+                "resolved": (event, pair) in landed_resolved,
+            })
+        else:
+            catalog_row = catalog_by_key.get((event, pair))
+            classification_rows.append({
+                "key": (event, pair),
+                "classification": "CERTIFIED_PERIOD_3_CYCLE",
+                "cohort_event": event,
+                "period": (
+                    None if catalog_row is None
+                    else int(catalog_row["period"])
+                ),
+                "preperiod": (
+                    None if catalog_row is None
+                    else int(catalog_row["preperiod"])
+                ),
+                "landed_resolution_provenance":
+                    "Cycle818 strict PERIOD_TABLE_ROW",
+                "resolved": (
+                    (event, pair) in landed_resolved
+                    and catalog_row is not None
+                    and bool(catalog_row["pass"])
+                ),
+            })
+    open_keys = open_pair_event_keys()
+    open_backbone = tuple(
+        row for row in open_keys if row[0] in set(BACKBONE)
+    )
+    event_census = dict(sorted(Counter(
+        event for _pair, event in open_keys
+    ).items()))
+    period_census = dict(sorted(Counter(
+        int(row["period"]) for row in strict_rows
+    ).items()))
+    transient_rows = tuple(
+        row for row in classification_rows
+        if row["classification"] == "TRANSIENT_COHORT"
+    )
+    cyclic_rows = tuple(
+        row for row in classification_rows
+        if row["classification"] == "CERTIFIED_PERIOD_3_CYCLE"
+    )
+    exact = (
+        len(BACKBONE_KEYS) == 36
+        and len(set(BACKBONE_KEYS)) == 36
+        and len(transient_rows) == 27
+        and len(cyclic_rows) == 9
+        and all(row["resolved"] for row in classification_rows)
+        and strict_period3_keys == tuple(sorted(EVENT3_BACKBONE_KEYS))
+        and len(strict_rows) == 14
+        and period_census == {2: 2, 3: 9, 288: 1, 4464: 2}
+        and all(
+            row["period"] == 3 and row["preperiod"] == 0
+            for row in cyclic_rows
+        )
+        and len(open_keys) == 133
+        and event_census == {0: 34, 1: 34, 2: 34, 3: 31}
+        and not open_backbone
+    )
+    return {
+        "verdict": "PASS" if exact else "FAIL",
+        "finding": (
+            "The complete k=2 nine-pair backbone has 36 keys: 27 are "
+            "the three landed transient cohorts and the event-3 nine are "
+            "exactly the nine period-3 rows in the Cycle818 strict table."
+        ),
+        "lawful_events": LAWFUL_EVENTS,
+        "backbone_pairs": BACKBONE,
+        "backbone_key_count": len(BACKBONE_KEYS),
+        "backbone_keys": BACKBONE_KEYS,
+        "classification_rows": tuple(classification_rows),
+        "classification_census": {
+            "TRANSIENT_COHORT": len(transient_rows),
+            "CERTIFIED_PERIOD_3_CYCLE": len(cyclic_rows),
+        },
+        "cycle818_catalog_provenance": {
+            "source_path": AUDIT_INPUT_PATHS[1],
+            "source_sha256": EXPECTED_SHA256[AUDIT_INPUT_PATHS[1]],
+            "source_git_blob": EXPECTED_GIT_BLOBS[AUDIT_INPUT_PATHS[1]],
+            "cache_path": CYCLE818_CATALOG_CACHE_PATH,
+            "cache_sha256":
+                EXPECTED_SHA256[CYCLE818_CATALOG_CACHE_PATH],
+            "cache_git_blob":
+                EXPECTED_GIT_BLOBS[CYCLE818_CATALOG_CACHE_PATH],
+            "strict_row_count": len(strict_rows),
+            "strict_period_census": period_census,
+        },
+        "cycle818_strict_period3_keys": strict_period3_keys,
+        "event3_backbone_keys": EVENT3_BACKBONE_KEYS,
+        "catalog_period3_keys_equal_event3_backbone":
+            strict_period3_keys == tuple(sorted(EVENT3_BACKBONE_KEYS)),
+        "all_36_resolved": all(
+            row["resolved"] for row in classification_rows
+        ),
+        "open_key_count": len(open_keys),
+        "open_event_census": event_census,
+        "open_keys_on_backbone": open_backbone,
+        "all_133_open_keys_off_backbone": (
+            len(open_keys) == 133 and not open_backbone
+        ),
+        "event3_open_off_backbone_key_count": event_census.get(3, 0),
+        "pass": exact,
+    }
+
+
+def compile_gate_word(
+    word: tuple[object, ...],
+) -> tuple[tuple[int, int, int, int], ...]:
+    rows = []
+    for gate in word:
+        if len(set(gate.wires)) != len(gate.wires):
+            raise AssertionError(("repeated landed gate wire", gate))
+        if gate.kind == "X":
+            rows.append((0, gate.wires[0], 0, 0))
+        elif gate.kind == "CNOT":
+            rows.append((1, gate.wires[0], gate.wires[1], 0))
+        elif gate.kind == "TOF":
+            rows.append(
+                (2, gate.wires[0], gate.wires[1], gate.wires[2])
+            )
+        else:
+            raise AssertionError(("non-reversible gate", gate))
+    return tuple(rows)
+
+
+def state_as_int(state: tuple[int, ...]) -> int:
+    return sum(bit << wire for wire, bit in enumerate(state))
+
+
+def int_state_sha256(state: int) -> str:
+    width = (STATE_BITS + 7) // 8
+    return sha256(state.to_bytes(width, "little")).hexdigest()
+
+
+def cycle_cohort_certificate(
+    family: dict[str, object],
+    catalog: dict[str, object],
+    anatomies: dict[str, object],
+) -> dict[str, object]:
+    keys = EVENT3_BACKBONE_KEYS
+    family_states = family["states"]
+    words = family["words"]
+    assert isinstance(family_states, dict)
+    assert isinstance(words, dict)
+    states = [state_as_int(family_states[key]) for key in keys]
+    initial_states = tuple(states)
+    schedules = tuple(
+        compile_gate_word(words[key[1]]) for key in keys
+    )
+    gate_counts = tuple(len(schedule) for schedule in schedules)
+    if len(set(gate_counts)) != 1:
+        raise AssertionError(("unaligned cycle word lengths", gate_counts))
+    gates_per_movement = gate_counts[0]
+    state_width = (STATE_BITS + 7) // 8
+    dense_hasher = sha256()
+    component_count_census: Counter[int] = Counter()
+    pairwise_all_checkpoint_equal = {
+        (left, right): True
+        for left in range(len(keys))
+        for right in range(left + 1, len(keys))
+    }
+
+    def exact_partition() -> tuple[tuple[Key, ...], ...]:
+        groups: dict[int, list[Key]] = {}
+        for key, state in zip(keys, states):
+            groups.setdefault(state, []).append(key)
+        return tuple(tuple(group) for group in groups.values())
+
+    def dense_checkpoint(movement: int, gate: int) -> None:
+        partition = exact_partition()
+        component_count_census[len(partition)] += 1
+        dense_hasher.update(movement.to_bytes(1, "little"))
+        dense_hasher.update(gate.to_bytes(2, "little"))
+        for state in states:
+            dense_hasher.update(state.to_bytes(state_width, "little"))
+        for pair in pairwise_all_checkpoint_equal:
+            pairwise_all_checkpoint_equal[pair] &= (
+                states[pair[0]] == states[pair[1]]
+            )
+
+    def phase_boundary_row(movement: int) -> dict[str, object]:
+        partition = exact_partition()
+        return {
+            "movement": movement,
+            "aligned_gate": 0 if movement == 0 else gates_per_movement,
+            "state_sha256_by_key": tuple(
+                (key, int_state_sha256(state))
+                for key, state in zip(keys, states)
+            ),
+            "state_hamming_weight_by_key": tuple(
+                (key, state.bit_count())
+                for key, state in zip(keys, states)
+            ),
+            "exact_state_partition": partition,
+            "component_count": len(partition),
+            "component_sizes": tuple(
+                len(group) for group in partition
+            ),
+            "all_nine_exactly_synchronized": len(partition) == 1,
+        }
+
+    phase_rows = [phase_boundary_row(0)]
+    phase_state_vectors = [tuple(states)]
+    dense_checkpoint(0, 0)
+    for movement in range(1, 4):
+        for gate_index in range(gates_per_movement):
+            for lane, schedule in enumerate(schedules):
+                kind, first, second, third = schedule[gate_index]
+                state = states[lane]
+                if kind == 0:
+                    state ^= 1 << first
+                elif kind == 1:
+                    if (state >> first) & 1:
+                        state ^= 1 << second
+                elif (
+                    (state >> first) & 1
+                    and (state >> second) & 1
+                ):
+                    state ^= 1 << third
+                states[lane] = state
+            dense_checkpoint(movement, gate_index + 1)
+        phase_rows.append(phase_boundary_row(movement))
+        phase_state_vectors.append(tuple(states))
+
+    trajectory_groups = []
+    remaining = set(range(len(keys)))
+    while remaining:
+        representative = min(remaining)
+        group_indices = tuple(
+            lane for lane in sorted(remaining)
+            if lane == representative
+            or pairwise_all_checkpoint_equal[
+                (min(representative, lane), max(representative, lane))
+            ]
+        )
+        trajectory_groups.append(tuple(keys[lane] for lane in group_indices))
+        remaining.difference_update(group_indices)
+
+    anatomy_by_event = {
+        int(row["event"]): row for row in anatomies["rows"]
+    }
+    movement_table = tuple(
+        {
+            "movement": index,
+            "event": event,
+            "class": "TRANSIENT_COHORT",
+            "key_count": 9,
+            "funnel_state_hamming_weight":
+                anatomy_by_event[event]["full_state_hamming_weight"],
+            "resolution_moment": RESOLUTION_MOMENTS[event],
+            "period": None,
+        }
+        for index, event in enumerate(EVENTS, start=1)
+    ) + ({
+        "movement": 4,
+        "event": 3,
+        "class": "CYCLIC_PERIOD_3_NOT_IDENTICAL_IN_PHASE",
+        "key_count": 9,
+        "funnel_state_hamming_weight": None,
+        "resolution_moment": None,
+        "period": 3,
+        "phase_boundary_component_sizes": tuple(
+            row["component_sizes"] for row in phase_rows
+        ),
+        "phase_boundary_weight_vectors": tuple(
+            tuple(weight for _key, weight in row[
+                "state_hamming_weight_by_key"
+            ])
+            for row in phase_rows
+        ),
+    },)
+    catalog_period3_keys = tuple(
+        catalog["cycle818_strict_period3_keys"]
+    )
+    dense_checkpoint_count = 1 + 3 * gates_per_movement
+    all_close_at_three = tuple(states) == initial_states
+    no_earlier_return = all(
+        phase_state_vectors[movement][lane] != initial_states[lane]
+        for movement in (1, 2)
+        for lane in range(len(keys))
+    )
+    identical_in_phase = len(trajectory_groups) == 1
+    exact_structure = (
+        tuple(row["component_sizes"] for row in phase_rows)
+        == ((1, 3, 3, 2), (1, 3, 3, 2), (9,), (1, 3, 3, 2))
+        and tuple(sorted(component_count_census.items()))
+        == (
+            (1, 1), (2, 1), (3, 2), (4, 5), (5, 333),
+            (6, 1724), (7, 6277), (8, 7098), (9, 3196),
+        )
+        and len(trajectory_groups) == 9
+    )
+    exact = (
+        catalog_period3_keys == tuple(sorted(keys))
+        and gate_counts == (6212,) * 9
+        and dense_checkpoint_count == 18637
+        and sum(component_count_census.values()) == dense_checkpoint_count
+        and all_close_at_three
+        and no_earlier_return
+        and not identical_in_phase
+        and exact_structure
+        and tuple(
+            anatomy_by_event[event]["full_state_hamming_weight"]
+            for event in EVENTS
+        ) == (44, 45, 46)
+    )
+    return {
+        "verdict": "PASS" if exact else "FAIL",
+        "hypothesis": (
+            "The nine event-3 period-3 backbone trajectories are one "
+            "identical-in-phase object at every aligned gate checkpoint."
+        ),
+        "hypothesis_outcome": (
+            "FAILS_EXACTLY" if not identical_in_phase else "HOLDS"
+        ),
+        "finding": (
+            "All nine keys are minimal period-3 cycles, but not one "
+            "identical-in-phase trajectory.  The movement-boundary "
+            "partition is 1+3+3+2 -> 1+3+3+2 -> 9 -> 1+3+3+2; only the "
+            "phase-2 boundary is common, and dense trajectories are nine "
+            "singletons."
+        ),
+        "keys": keys,
+        "catalog_period3_keys_exact": (
+            catalog_period3_keys == tuple(sorted(keys))
+        ),
+        "gates_per_movement_by_key": tuple(zip(keys, gate_counts)),
+        "full_period_dense_checkpoint_count": dense_checkpoint_count,
+        "dense_checkpoint_definition": (
+            "initial full 5815-bit state plus every aligned gate boundary "
+            "for 6212 gates in each of three movements"
+        ),
+        "dense_state_stream_sha256": dense_hasher.hexdigest(),
+        "dense_component_count_census":
+            dict(sorted(component_count_census.items())),
+        "phase_boundary_rows": tuple(phase_rows),
+        "all_nine_close_at_movement_3": all_close_at_three,
+        "no_key_returns_at_movements_1_or_2": no_earlier_return,
+        "minimal_period_3_live_replay": (
+            all_close_at_three and no_earlier_return
+        ),
+        "identical_in_phase": identical_in_phase,
+        "dense_trajectory_partition": tuple(trajectory_groups),
+        "dense_trajectory_component_sizes": tuple(
+            len(group) for group in trajectory_groups
+        ),
+        "exact_structure_found": exact_structure,
+        "four_movement_table": movement_table,
+        "pass": exact,
+    }
+
+
 def arithmetic_certificate() -> dict[str, object]:
     gaps = tuple({
         "left": row["left"],
@@ -1181,6 +1629,9 @@ def prediction_certificate(
     residuals: dict[str, object],
     family: dict[str, object],
 ) -> dict[str, object]:
+    historical_v1_prediction_status = (
+        "PREDICTED_PRE_REGISTERED_AND_SURVIVED_B"
+    )
     open_keys = open_pair_event_keys()
     family_states = family["states"]
     assert isinstance(family_states, dict)
@@ -1203,16 +1654,30 @@ def prediction_certificate(
         for row in preregistration["candidate_laws"]
     }
     survivors = residuals["surviving_candidate_laws"]
-    predictions = tuple({
+    historical_predictions = tuple({
         "law": law,
-        "status": "PREDICTED_PRE_REGISTERED_AND_SURVIVED_B",
-        "rows":
-            prereg_laws[law]["predictions_from_current_event_1"],
+        "historical_v1_status": historical_v1_prediction_status,
+        "v2_status": "RETRACTED_AS_VACUOUS_AT_K2_BACKBONE",
+        "event3_row": next(
+            row for row in prereg_laws[law][
+                "predictions_from_current_event_1"
+            ]
+            if row["next_event"] == 3
+        ),
     } for law in survivors)
     backbone_open = tuple(
         row for row in open_keys if row[0] in set(BACKBONE)
     )
+    event3_open_off_backbone = tuple(
+        row for row in open_keys if row[1] == 3
+    )
+    prediction_values = {
+        row["law"]:
+            row["event3_row"]["predicted_next_cohort_moment"]
+        for row in historical_predictions
+    }
     result = {
+        "verdict": "PASS",
         "open_pair_event_keys": open_keys,
         "open_key_count": len(open_keys),
         "open_event_census": dict(sorted(Counter(
@@ -1220,10 +1685,27 @@ def prediction_certificate(
         ).items())),
         "open_keys_on_nine_pair_backbone": backbone_open,
         "literal_backbone_result":
-            "NONE; the nine event-3 backbone keys were already cycles and "
-            "the event-0/2/1 backbone cohorts are resolved.",
+            "NO TRANSIENT TARGET: the event-3 backbone nine are period-3 "
+            "cycles and the event-0/2/1 backbone cohorts are resolved.",
         "candidate_laws_surviving_B": survivors,
-        "pre_registered_predictions_for_survivors": predictions,
+        "historical_v1_event3_predictions": historical_predictions,
+        "historical_live_conflict": prediction_values,
+        "prediction_reruling":
+            "RETRACTED_AS_VACUOUS_AT_K2_BACKBONE",
+        "reruling_reason": (
+            "Completing the 36-key backbone removes the assumed next "
+            "transient cohort-moment target.  The event-3 backbone keys "
+            "are cycles and therefore have no transient resolution moment."
+        ),
+        "lawful_rescope": "NONE_ON_THE_CURRENT_LANDED_SURFACE",
+        "lawful_rescope_detail": (
+            "The 31 open event-3 keys are off-backbone individual keys; "
+            "no landed certificate groups them into a common cohort with "
+            "one resolution moment or a transition from the event-1 "
+            "backbone cohort.  Thus neither 69035 nor 69566 currently has "
+            "an observable cohort-moment target."
+        ),
+        "event3_open_off_backbone_keys": event3_open_off_backbone,
         "fallback_lcm_skeleton_if_candidates_fail":
             preregistration["fallback_bounded_forecast"],
         "enumeration_reconstructed_from_176_key_family_exactly":
@@ -1234,16 +1716,16 @@ def prediction_certificate(
     result["pass"] = (
         len(open_keys) == 133
         and not backbone_open
+        and len(event3_open_off_backbone) == 31
         and reconstructed == open_keys
         and result["pre_registered_open_enumeration_unchanged"]
-        and len(predictions) == len(survivors)
-        and all(
-            prediction["predicted_next_cohort_moment"]
-            in {69035, 69566}
-            for law in predictions
-            for prediction in law["rows"]
-            if prediction["status"] == "PREDICTED"
-        )
+        and len(historical_predictions) == len(survivors) == 2
+        and prediction_values == {
+            "TARGET_PARITY_LOOKUP": 69035,
+            "ABS_EVENT_JUMP_LOOKUP": 69566,
+        }
+        and result["lawful_rescope"]
+        == "NONE_ON_THE_CURRENT_LANDED_SURFACE"
     )
     return result
 
@@ -1298,6 +1780,96 @@ def recurrence_certificate(
     return result
 
 
+def moment_prediction_reruling_certificate(
+    arithmetic: dict[str, object],
+    residuals: dict[str, object],
+    predictions: dict[str, object],
+    recurrence: dict[str, object],
+) -> dict[str, object]:
+    exact = (
+        bool(arithmetic["pass"])
+        and bool(residuals["pass"])
+        and bool(predictions["pass"])
+        and bool(recurrence["pass"])
+        and arithmetic["stdlib_lcm_4464_5952"] == LCM_SKELETON
+        and tuple(
+            row["residual"]
+            for row in arithmetic["gap_decompositions"]
+        ) == (595, 64)
+        and predictions["prediction_reruling"]
+        == "RETRACTED_AS_VACUOUS_AT_K2_BACKBONE"
+        and predictions["lawful_rescope"]
+        == "NONE_ON_THE_CURRENT_LANDED_SURFACE"
+    )
+    return {
+        "verdict": "PASS" if exact else "FAIL",
+        "finding": (
+            "The v1 arithmetic survives unchanged: 17856 is the LCM "
+            "skeleton and the observed residuals are 595 and 64.  The "
+            "parity/jump extrapolations do not survive as predictions: "
+            "their conflicting event-3 values 69035 and 69566 have no "
+            "k=2 backbone cohort-moment target and no current lawful "
+            "off-backbone rescope."
+        ),
+        "lcm_structure_v1_reproduced": arithmetic,
+        "residual_census_v1_reproduced": residuals,
+        "prediction_reruling": predictions,
+        "bounded_recurrence_probe_v1_reproduced": recurrence,
+        "pass": exact,
+    }
+
+
+def v1_retraction_certificate(
+    catalog: dict[str, object],
+    family: dict[str, object],
+) -> dict[str, object]:
+    exact = (
+        V1_EXHAUSTION_CLAIM_VERBATIM
+        == (
+            "The literal nine-pair backbone is exhausted by the 27 keys "
+            "in the three event cohorts (0, 2, 1)."
+        )
+        and family["summary"]["events"] == 2 * FIXTURE_BANKS == 4
+        and tuple(range(2 * FIXTURE_BANKS)) == LAWFUL_EVENTS
+        and catalog["backbone_key_count"] == 36
+        and catalog["classification_census"] == {
+            "TRANSIENT_COHORT": 27,
+            "CERTIFIED_PERIOD_3_CYCLE": 9,
+        }
+        and catalog["all_36_resolved"]
+    )
+    return {
+        "verdict": "PASS" if exact else "FAIL",
+        "v1_claim_retracted_verbatim": V1_EXHAUSTION_CLAIM_VERBATIM,
+        "disposition": "RETRACTED",
+        "corrected_statement": (
+            "At k=2 there are four events per pair.  The literal nine-pair "
+            "backbone therefore has 36 keys: 27 transient-cohort keys and "
+            "nine event-3 period-3 cycle keys; all 36 are resolved."
+        ),
+        "four_event_module_provenance": {
+            "path": AUDIT_INPUT_PATHS[0],
+            "sha256": EXPECTED_SHA256[AUDIT_INPUT_PATHS[0]],
+            "git_blob": EXPECTED_GIT_BLOBS[AUDIT_INPUT_PATHS[0]],
+            "module": (
+                "frontier_cycle719_two_rail_recurrent_controller_core_"
+                "2026_07_26"
+            ),
+            "function": "held_certificate(bank_count)",
+            "event_loop_expression": "range(2 * bank_count)",
+            "event_chain_bank_expression": "2 * bank_count",
+            "reported_events_expression": "2 * bank_count",
+            "cycle832_live_seed_function": "build_seed_family()",
+            "cycle832_seed_event_loop_expression":
+                "range(2 * FIXTURE_BANKS)",
+            "fixture_banks": FIXTURE_BANKS,
+            "lawful_events": LAWFUL_EVENTS,
+            "live_family_event_count": family["summary"]["events"],
+        },
+        "pass": exact,
+    }
+
+
 def render(
     preregistration: dict[str, object],
     checks: dict[str, bool],
@@ -1305,7 +1877,8 @@ def render(
     report: dict[str, object],
 ) -> str:
     lines = [
-        "PRE_REGISTRATION " + compact(preregistration),
+        "V1_HISTORICAL_PRE_REGISTRATION_RETRACTED "
+        + compact(preregistration),
     ]
     lines.extend(
         f"CHECK {name}={str(value).lower()}"
@@ -1330,9 +1903,9 @@ def stable_render(
         report["checks"] = dict(checks)
         report["pass"] = all(checks.values())
         report["terminal"] = (
-            "CYCLE832_COHORT_MOMENT_LAW_EXACT_PASS"
+            "CYCLE832_V2_36_KEY_BACKBONE_EXACT_PASS"
             if report["pass"]
-            else "CYCLE832_COHORT_MOMENT_LAW_HONEST_FAIL"
+            else "CYCLE832_V2_36_KEY_BACKBONE_HONEST_FAIL"
         )
         output = render(
             preregistration, checks, certificates, report
@@ -1348,25 +1921,42 @@ def stable_render(
 
 def run() -> int:
     started = monotonic()
-    # This object is frozen before any source or dynamics verification.
+    # Historical v1 bookkeeping is frozen before v2 verification.
     preregistration = build_preregistration()
     sources = source_controls()
     family = build_seed_family()
     dynamics = evolve_funnels(family)
-    certificate_a = arithmetic_certificate()
     anatomies = funnel_anatomies(dynamics)
-    certificate_b = residual_certificate(anatomies)
-    certificate_c = prediction_certificate(
-        preregistration, certificate_b, family
+    certificate_a = backbone_classification_certificate(sources)
+    certificate_b = cycle_cohort_certificate(
+        family, certificate_a, anatomies
     )
-    certificate_d = recurrence_certificate(dynamics)
+    cycle_replay_duplicate = cycle_cohort_certificate(
+        family, certificate_a, anatomies
+    )
+    arithmetic = arithmetic_certificate()
+    residuals = residual_certificate(anatomies)
+    predictions = prediction_certificate(
+        preregistration, residuals, family
+    )
+    recurrence = recurrence_certificate(dynamics)
+    certificate_c = moment_prediction_reruling_certificate(
+        arithmetic, residuals, predictions, recurrence
+    )
+    certificate_d = v1_retraction_certificate(certificate_a, family)
     elapsed = monotonic() - started
+    cycle_replay_deterministic = (
+        digest(certificate_b) == digest(cycle_replay_duplicate)
+        and certificate_b["dense_state_stream_sha256"]
+        == cycle_replay_duplicate["dense_state_stream_sha256"]
+    )
     deterministic = (
         dynamics["duplicate_initial_exact"]
         and dynamics["duplicate_masks_identical"]
         and all(
             row["all_exact"] for row in dynamics["determinism_rows"]
         )
+        and cycle_replay_deterministic
     )
     controls_base = (
         sources["pass"]
@@ -1379,8 +1969,12 @@ def run() -> int:
         and not FIREWALL.hits
         and elapsed < AUDIT_TIMEOUT_SEC
     )
+    public_sources = {
+        key: value for key, value in sources.items()
+        if key != "cycle818_period_rows"
+    }
     controls = {
-        **sources,
+        **public_sources,
         "family": family["summary"],
         "exact_arithmetic":
             "All moments, factors, residues, GF(2) state evolution, state "
@@ -1406,6 +2000,13 @@ def run() -> int:
             "all_schedule_masks_identical":
                 dynamics["duplicate_masks_identical"],
             "checkpoints": dynamics["determinism_rows"],
+            "cycle_replay_first_sha256":
+                certificate_b["dense_state_stream_sha256"],
+            "cycle_replay_second_sha256":
+                cycle_replay_duplicate["dense_state_stream_sha256"],
+            "cycle_replay_certificates_exact":
+                digest(certificate_b) == digest(cycle_replay_duplicate),
+            "cycle_replay_deterministic": cycle_replay_deterministic,
             "deterministic": deterministic,
         },
         "blocked_modules_loaded_at_end": tuple(
@@ -1419,38 +2020,46 @@ def run() -> int:
         "pass": controls_base,
     }
     checks = {
-        "A_LCM_STRUCTURE_VERIFIED": bool(certificate_a["pass"]),
-        "B_RESIDUAL_CENSUS_COMPLETE": bool(certificate_b["pass"]),
-        "C_PRE_REGISTERED_PREDICTIONS": bool(certificate_c["pass"]),
-        "D_BOUNDED_RECURRENCE_PROBE": bool(certificate_d["pass"]),
+        "A_36_KEY_BACKBONE_CLASSIFIED": bool(certificate_a["pass"]),
+        "B_CYCLE_COHORT_HYPOTHESIS_RERULED": bool(certificate_b["pass"]),
+        "C_MOMENT_PREDICTIONS_RERULED": bool(certificate_c["pass"]),
+        "D_V1_EXHAUSTION_RETRACTED": bool(certificate_d["pass"]),
         "E_CONTROLS": controls_base,
     }
     certificates = {
-        "A_LCM_STRUCTURE": certificate_a,
-        "B_RESIDUAL_HUNT": certificate_b,
-        "C_PRE_REGISTERED_PREDICTION": certificate_c,
-        "D_STRUCTURAL_RECURRENCE": certificate_d,
+        "A_36_KEY_BACKBONE": certificate_a,
+        "B_CYCLE_COHORT_HYPOTHESIS": certificate_b,
+        "C_MOMENT_PREDICTION_RERULING": certificate_c,
+        "D_V1_RETRACTION": certificate_d,
         "E_CONTROLS": controls,
     }
     report = {
         "cycle": 832,
-        "target": "cohort-moment law",
+        "version": 2,
+        "target": "36-key backbone and cycle-cohort hypothesis",
+        "backbone_keys": certificate_a["backbone_key_count"],
+        "backbone_classification":
+            certificate_a["classification_census"],
+        "all_backbone_keys_resolved": certificate_a["all_36_resolved"],
+        "cycle_cohort_hypothesis":
+            certificate_b["hypothesis_outcome"],
+        "cycle_exact_structure": certificate_b["finding"],
         "lcm_skeleton": LCM_SKELETON,
         "residuals": tuple(row["residual"] for row in TRANSITIONS),
-        "candidate_status":
-            "CANDIDATE_TWO_POINTS_CANNOT_PROVE",
-        "surviving_candidate_laws":
-            certificate_b["surviving_candidate_laws"],
-        "open_keys": certificate_c["open_key_count"],
-        "recurrence_probe_status":
-            certificate_d["mechanism_candidate"]["status"],
+        "prediction_reruling":
+            predictions["prediction_reruling"],
+        "prediction_lawful_rescope": predictions["lawful_rescope"],
+        "historical_prediction_conflict":
+            predictions["historical_live_conflict"],
+        "open_keys": certificate_a["open_key_count"],
+        "v1_exhaustion_claim": certificate_d["disposition"],
         "runtime_seconds": round(elapsed, 6),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_bytes": 0,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "checks": {},
         "pass": False,
-        "terminal": "CYCLE832_COHORT_MOMENT_LAW_HONEST_FAIL",
+        "terminal": "CYCLE832_V2_36_KEY_BACKBONE_HONEST_FAIL",
     }
     output = stable_render(
         preregistration, checks, certificates, report
@@ -1467,7 +2076,7 @@ def run() -> int:
             "failure": "stdout limit exceeded",
             "stdout_bytes": len(output.encode()),
             "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
-            "terminal": "CYCLE832_COHORT_MOMENT_LAW_HONEST_FAIL",
+            "terminal": "CYCLE832_V2_36_KEY_BACKBONE_HONEST_FAIL",
         }) + "\n")
         return 1
     sys.stdout.write(output)

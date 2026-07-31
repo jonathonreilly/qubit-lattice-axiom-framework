@@ -1,0 +1,38 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR19-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle832_cohort_moment_law_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 14
+    },
+    "logs/runner-cache/frontier_cycle832_moment_law_independent_check_2026_07_28.txt": {
+      "fail": 4,
+      "pass": 6
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 832,
+  "designed_fail_certificates": {
+    "explanation": "refutation-checker design: its FAIL verdicts attack the v1 claims v2 has retracted and now agrees with; terminal REFUTATION_PASS is the designed success state",
+    "logs/runner-cache/frontier_cycle832_moment_law_independent_check_2026_07_28.txt": [
+      "A_THE_EXHAUSTION_CLAIM: FAIL (the refutation record \u2014 four lawful events exist; v2 ADOPTS this)",
+      "C_THE_PREDICTION_BOOKKEEPING: FAIL (vacuous-at-k=2 refuted as v1 stated it; v2's retraction supersedes)"
+    ]
+  },
+  "files": {
+    "docs/COHORT_MOMENT_LAW_CYCLE832_BOUNDED_THEOREM_NOTE_2026-07-28.md": "84edca54a9b6621616035a75a441f3075073aa78b285d7608bd70741089dc921",
+    "logs/runner-cache/frontier_cycle832_cohort_moment_law_2026_07_28.txt": "89640947e097728e73cbd58a0039364e684dc2e81d840a087fdddd69598bd450",
+    "logs/runner-cache/frontier_cycle832_moment_law_independent_check_2026_07_28.txt": "6ccbde9cb15537f24034b5478da35824f07668569c6274018ab2dbf16cc7862f",
+    "scripts/frontier_cycle832_cohort_moment_law_2026_07_28.py": "0db01e80084af4dbb52c74a0a055984edf8ab818f2c8ba8a99c1f6a3fc15bb3e",
+    "scripts/frontier_cycle832_moment_law_independent_check_2026_07_28.py": "80f898ece92e7bcb1728761746d52192809810eb84ccff98337609af90a59a28"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "backbone = 36/36 resolved (reversal twenty-one: four events/pair; v1 27-claim retracted): 27 transient-cohort + the NINE 818 period-3 cycles",
+    "the fourth cohort is a PULSE: partitions 1+3+3+2 -> 1+3+3+2 -> 9 (nine-way coincidence at one phase per period; 18,637 checkpoints)",
+    "moment skeleton stands (17856 = lcm(4464,5952) + residuals {595,64}); predictions retracted backbone-vacuous",
+    "checker CYCLE832_MOMENT_LAW_INDEPENDENT_REFUTATION_PASS"
+  ]
+}

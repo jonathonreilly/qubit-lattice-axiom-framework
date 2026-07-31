@@ -1,3 +1,33 @@
+# TOE lane update — fixed rubric (2026-07-31, the inheritance-vs-authorship wave)
+
+| TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |
+|---|---|---|---|---|
+| Operational quantum / Records | 99% ↑1 | 97% | 70% | 99% |
+| Causal time | 94% ↑2 | 75% | 48% | 99% |
+| Inertia / matter | 97% | 98% | 88% | 99% |
+| Gravity / source / resources | 71% | 47% | 30% | 94% |
+| Born probability / realized history | 95% ↑1 | 66% | 41% | 99% |
+
+Science-evidence scores, not audit-retention scores; campaign PRs #5772–#5873 pre-review (55 campaign-3 + 34 campaign-4 supervisor blocks); the review drain is now actively landing from the other worker's side.
+
+Why the scores changed (this wave, all checker-verified):
+- Records: the program's FIRST FULLY-CLOSED WHY — the S0' exclusion mechanized end-to-end: the checker FOUND four affine separators HEAD[1]⊕HEAD[j] (reversal 27, constructive; #5870), Cycle 853 reduced them to two dead wires (56/58) and the checker closed the even-toggle inheritance mechanism at generator boundaries (#5871): initial condition → even toggles → dead wires → conserved parities → S0' unreachable. And the braid is proven AUTHORSHIP, not inheritance (#5872): 0 inherited / 0 mixed / 16 FREE against an inherited family of 5,320 wires + 14,148,540 pair parities — the landed regularities split cleanly into birth-bookkeeping vs generated.
+- Causal time: the INPUT INVENTORY IS THEOREM-COMPLETE. The selection tournament (#5873): 748 setups = 68 free C_11 orbits (11 prime), zero singleton orbits ⇒ no covariant criterion — tried or untried — can select a unique setup; the initial setup joins the schedule (E1/E2, #5847) and the allocation (#5843) as proven inputs, each with its mechanism named. The stratified ladder (#5869): marking is a low-stratum property (k=4/k=5 meet UNMARKED — exhaustive 5,815 bits + 16,904,205 pairs); the strata tier as fired (k=2) / marked-waiting (k=3) / unmarked (k=4,5).
+- Born/realized history: the realized-history input space exactly characterized (the free orbit census; stamped-sets 114 E2 / 182 E1 of 748 under both pending readings). NEW ANOMALY under attack: the stamped-sets are NOT orbit-closed (114 and 182 both ∤ 11) — record formation depends on the fixed monitoring origin; Cycle 856 (in flight) tests whether it is monitor-covariant.
+- Gravity and inertia/matter: unchanged — nothing probed gravity this wave; it remains the unprobed wall.
+
+Breakthrough log this wave:
+1. The S0' mechanism chain — the first complete why of the program (851+853, PRs #5870/#5871).
+2. The selection no-go: no covariant criterion picks the world (free symmetry action; the "identify the setup" ambition terminates in a certificate, #5873).
+3. The braid is authorship: 16/16 precondition types FREE (sixth approach class priced, #5872).
+4. The stratified ladder: k=3's mark is special, not generic (#5869).
+5. The 114 anomaly: record formation breaks frame symmetry via the monitor (Cycle 856 in flight).
+6. Reversal 27 absorbed (constructive — the checker found the exclusion invariants).
+
+Other worker progress: the review-lane drain is MOVING — replay+salvage of campaign PRs #5761/#5762/#5764 landed on live main with fix iterations; the companion/compiler lane previously landed through Cycle 826; typed atlas #5846. The audit-retention column finally has momentum from the owner-operated side.
+
+Next retasking: Cycle 855 (the free-sector reduction — does the braid live in an exactly-smaller machine?) and Cycle 856 (record covariance) in flight; then the free-sector why proper; the owner decisions (E1/E2 #5847 — now with the marked-trios, selection no-go, and monitor-dependence context; allocation #5843); wind-down artifacts in the final hour.
+
 # TOE lane update — fixed rubric (2026-07-31, the completion wave)
 
 | TOE lane | Repo-side science | Verified physical-M2 bridge | End-to-end autonomous closure | Evidence ceiling |

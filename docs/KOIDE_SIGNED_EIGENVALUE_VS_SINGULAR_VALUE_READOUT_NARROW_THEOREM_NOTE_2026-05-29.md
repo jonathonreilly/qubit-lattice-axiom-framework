@@ -20,13 +20,14 @@ identifications are likewise outside the claim scope.
 ## Definitions
 
 Let `C` be the standard `3×3` cyclic permutation matrix,
-`ω = exp(2πi/3)`, `a ∈ ℝ_{>0}`, and `b ∈ ℂ`. Define
+`ω = exp(2πi/3)`, `a ∈ ℝ_{>0}`, and `b ∈ ℂ`. Choose `θ ∈ ℝ` such that
+`b = |b| exp(iθ)`; when `b = 0`, `θ` may be chosen arbitrarily. Define
 
 ```text
 H = aI + bC + b̄C².                                                            (1)
 ```
 
-Writing `θ := arg b`, the three real eigenvalues are
+The three real eigenvalues are
 
 ```text
 λ_k = a + bω^k + b̄ω^{-k}
@@ -51,7 +52,8 @@ the right endpoint of a `2π/3` period.
 
 ## Theorem
 
-The following statements hold for every `a > 0`, `b ∈ ℂ`, and real `θ`.
+The following statements hold for every `a > 0`, `b ∈ ℂ`, and compatible `θ`
+chosen as above.
 
 1. The signed-vector functional is phase-independent:
 

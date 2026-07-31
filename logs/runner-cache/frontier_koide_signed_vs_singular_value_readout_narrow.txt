@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py
 runner_sha256: 8b3c9c7e17acf9ebcf695f7276949f2c9b2c08a23a0e47e7a4d0bbdcc783185d
-input_fingerprint_sha256: 3a0760f9c268851749c9b51ecedad866b824957433945f6a3fc112a01180835e
+input_fingerprint_sha256: 83752a2dff609ac6438025721fb49e4caa5cbf86945637c557ba9894da9a3ef3
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.85
+elapsed_sec: 1.86
 status: ok
 ----- stdout -----
 KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29

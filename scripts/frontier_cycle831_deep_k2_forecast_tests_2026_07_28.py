@@ -761,6 +761,17 @@ def run() -> int:
     residual_rows = watched_residual_wires()
     primary_mask = (1 << len(primary_lanes)) - 1
     baseline_mask = sum(1 << primary_index[key] for key in expected_open)
+    duplicate_initial_exact = all(
+        initial_states[primary_index[key]]
+        == initial_states[duplicate_index[key]]
+        for key in determinism_keys
+    )
+    duplicate_masks_identical = all(
+        ((mask >> primary_index[key]) & 1)
+        == ((mask >> duplicate_index[key]) & 1)
+        for _kind, _first, _second, _third, mask in schedule
+        for key in determinism_keys
+    )
 
     one_step = columns.copy()
     advance(one_step, schedule)
@@ -775,6 +786,11 @@ def run() -> int:
     records: dict[Key, dict[str, object]] = {}
     active_mask = primary_mask
     previous_nonclean = nonclean_mask(columns, residual_rows)
+    nonclean_prefix_counts = [
+        int(bool(previous_nonclean & (1 << lane)))
+        for lane in range(len(primary_lanes))
+    ]
+    initial_inequality_counts = [0] * len(primary_lanes)
     identity_supports = (
         support_at_lane(
             columns, primary_index[IDENTITY_CYCLE_KEY], residual_rows
@@ -803,7 +819,10 @@ def run() -> int:
                     "ONLINE_EXACT_PER_MOMENT_LANDED_SUPPORT_MONITOR",
                 "moment": moment,
                 "earlier_moments_checked": moment,
-                "earlier_moments_nonclean": True,
+                "earlier_nonclean_count":
+                    nonclean_prefix_counts[lane],
+                "earlier_moments_nonclean":
+                    nonclean_prefix_counts[lane] == moment,
                 "landed_veto_at_t_minus_1":
                     bool(previous_nonclean & (1 << lane)),
                 "event_is_clean": not bool(nonclean & (1 << lane)),
@@ -824,11 +843,20 @@ def run() -> int:
                 "state_period": period,
                 "exact_recurrence_to_initial":
                     state == family["states"][key],
-                "every_earlier_return_rejected": True,
+                "earlier_return_moments_checked": period - 1,
+                "earlier_initial_inequality_count":
+                    initial_inequality_counts[lane],
+                "every_earlier_return_rejected":
+                    initial_inequality_counts[lane] == period - 1,
                 "proper_divisors": proper_divisors(period),
                 "proper_divisor_returns": (),
-                "minimal_period": True,
-                "all_cycle_phases_nonclean": True,
+                "minimal_period":
+                    initial_inequality_counts[lane] == period - 1,
+                "cycle_phase_count": period,
+                "nonclean_cycle_phase_count":
+                    nonclean_prefix_counts[lane],
+                "all_cycle_phases_nonclean":
+                    nonclean_prefix_counts[lane] == period,
                 "reversibility_basis":
                     "each landed lane update is a composition solely of "
                     "distinct-wire X/CNOT/TOF gates",
@@ -985,6 +1013,11 @@ def run() -> int:
                 record_hit(key, "CYCLE", update, nonclean)
                 phase_resolutions.append(key)
             active_mask &= ~(clean_hits | recurrence_hits)
+            for lane in lane_numbers(active_mask):
+                nonclean_prefix_counts[lane] += int(
+                    bool(nonclean & (1 << lane))
+                )
+                initial_inequality_counts[lane] += 1
             previous_nonclean = nonclean
         upper = start_active.bit_count() * (stop - start)
         return {
@@ -1169,7 +1202,10 @@ def run() -> int:
             or row["exact_same_state_at_right_resolution_moment"]
             for row in merger_pairs
         ),
-        "pass": True,
+        "pass": (
+            len(merger_pairs)
+            == len(new_transients) * (len(new_transients) - 1) // 2
+        ),
     }
     cohort_keys = tuple(sorted({
         (
@@ -1253,6 +1289,8 @@ def run() -> int:
         sources["pass"]
         and family["summary"]["pass"]
         and schedule_equivalence
+        and duplicate_initial_exact
+        and duplicate_masks_identical
         and baseline_pass
         and reached >= MINIMUM_DEEP_HORIZON
         and reached in BOUNDARIES
@@ -1287,7 +1325,11 @@ def run() -> int:
             == 151 * (reached - BASELINE_HORIZON)
         )
     )
-    deterministic = all(row["all_exact"] for row in determinism_rows)
+    deterministic = (
+        duplicate_initial_exact
+        and duplicate_masks_identical
+        and all(row["all_exact"] for row in determinism_rows)
+    )
     elapsed = monotonic() - script_started
     controls_base = (
         sources["pass"]
@@ -1318,6 +1360,10 @@ def run() -> int:
                 "instructions_per_global_update": len(schedule),
                 "all_lane_one_step_scalar_equivalence":
                     schedule_equivalence,
+                "duplicate_initial_states_exact":
+                    duplicate_initial_exact,
+                "duplicate_lane_masks_identical":
+                    duplicate_masks_identical,
                 "reversibility_basis": "X/CNOT/TOF only",
             },
             "Sstar_reconstruction": sstar_reconstruction,
@@ -1385,8 +1431,8 @@ def run() -> int:
                     "as distinct duplicate lanes from t=0 through every "
                     "reached complete boundary",
                 "keys": determinism_keys,
-                "initial_states_exact_by_construction": True,
-                "identical_lane_masks_machine_constructed": True,
+                "initial_states_exact": duplicate_initial_exact,
+                "identical_lane_masks": duplicate_masks_identical,
                 "boundary_rows": tuple(determinism_rows),
                 "deterministic": deterministic,
             },

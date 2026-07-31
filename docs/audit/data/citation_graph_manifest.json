@@ -1,5 +1,5 @@
 {
- "edge_count": 15366,
+ "edge_count": 15365,
  "node_count": 4616,
  "nodes": {
   "3d_correction_master_note": {
@@ -15703,8 +15703,8 @@
    "out_degree": 6
   },
   "wilson_mu2_distance_sweep_note_2026-04-11": {
-   "deps_hash": "f9e57576e762",
-   "out_degree": 1
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "wilson_normalization_reconciliation_note_2026-04-11": {
    "deps_hash": "e3b0c44298fc",

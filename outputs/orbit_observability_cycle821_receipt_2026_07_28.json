@@ -1,0 +1,34 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockP13-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle821_observability_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 2
+    },
+    "logs/runner-cache/frontier_cycle821_orbit_observability_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 3
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 821,
+  "files": {
+    "docs/ORBIT_OBSERVABILITY_CYCLE821_BOUNDED_THEOREM_NOTE_2026-07-28.md": "1ede575137e240898ec1d3a637c0496dd4fe397ae68c544d234be868f8772441",
+    "logs/runner-cache/frontier_cycle821_observability_independent_check_2026_07_28.txt": "710c8b34387fca92b612ac85cd76bcf31c37775844d329355de8f08afa02ba38",
+    "logs/runner-cache/frontier_cycle821_orbit_observability_2026_07_28.txt": "ed3c3fadc271422acf4900bc21fc28cb4536de3c69919de1161044737727aa38",
+    "scripts/frontier_cycle821_observability_independent_check_2026_07_28.py": "63336e900ea1f1df838500087d85b9bd2f960e695dbd16555c36883d819c68db",
+    "scripts/frontier_cycle821_orbit_observability_2026_07_28.py": "36273e2f13c26803d7a28bb65a3efce0aab82c766e4dc039d8269f0d53973342"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "the occurrence-side relabeling symmetry does NOT extend to the response surface \u2014 origin-resolving structure lives in W7",
+    "successor decider launched: does the W7 kernel DETERMINE the allocation (Cycle 825)"
+  ],
+  "verdicts": [
+    "observability theorem FAILS \u2014 the dichotomy DECIDES: orbit-mate allocations are operationally distinguishable",
+    "11 W7 response readouts separate all 7,084 orbits and orbit-mates (response_mixture_sum the witness)",
+    "checker closed both declared holes (type rule, 111 exclusions; W7 import, 181-observable inventory)"
+  ]
+}

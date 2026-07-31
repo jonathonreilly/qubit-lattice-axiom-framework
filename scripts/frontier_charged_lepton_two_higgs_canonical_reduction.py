@@ -21,6 +21,7 @@ import argparse
 import itertools
 import sys
 from collections import deque
+from math import gcd
 
 import sympy as sp
 from sympy.matrices.normalforms import smith_normal_form
@@ -89,6 +90,138 @@ def incidence_matrix(edges: tuple[tuple[int, int], ...]) -> sp.Matrix:
     return sp.Matrix(rows) if rows else sp.zeros(0, 6)
 
 
+def integer_incidence_rows(
+    edges: tuple[tuple[int, int], ...],
+) -> tuple[tuple[int, ...], ...]:
+    """Plain-integer incidence rows for checks independent of SymPy."""
+
+    return tuple(
+        tuple(int(left == i) for left in range(3))
+        + tuple(int(right == j) for right in range(3))
+        for i, j in edges
+    )
+
+
+def bareiss_determinant(rows: tuple[tuple[int, ...], ...]) -> int:
+    """Exact determinant using fraction-free integer elimination."""
+
+    size = len(rows)
+    if size == 0:
+        return 1
+    if any(len(row) != size for row in rows):
+        raise ValueError("Bareiss determinant requires a square matrix")
+
+    work = [list(row) for row in rows]
+    sign = 1
+    previous_pivot = 1
+    for pivot_index in range(size - 1):
+        pivot_row = next(
+            (
+                row_index
+                for row_index in range(pivot_index, size)
+                if work[row_index][pivot_index] != 0
+            ),
+            None,
+        )
+        if pivot_row is None:
+            return 0
+        if pivot_row != pivot_index:
+            work[pivot_index], work[pivot_row] = work[pivot_row], work[pivot_index]
+            sign *= -1
+
+        pivot = work[pivot_index][pivot_index]
+        for row_index in range(pivot_index + 1, size):
+            for column_index in range(pivot_index + 1, size):
+                numerator = (
+                    work[row_index][column_index] * pivot
+                    - work[row_index][pivot_index]
+                    * work[pivot_index][column_index]
+                )
+                if numerator % previous_pivot:
+                    raise ArithmeticError("non-exact division in Bareiss elimination")
+                work[row_index][column_index] = numerator // previous_pivot
+            work[row_index][pivot_index] = 0
+        previous_pivot = pivot
+
+    return sign * work[-1][-1]
+
+
+def determinantal_divisors(
+    rows: tuple[tuple[int, ...], ...],
+) -> tuple[int, ...]:
+    """Return nonzero determinantal divisors Delta_0,...,Delta_rank."""
+
+    column_count = len(rows[0]) if rows else 6
+    divisors = [1]
+    for size in range(1, min(len(rows), column_count) + 1):
+        divisor = 0
+        for row_indices in itertools.combinations(range(len(rows)), size):
+            for column_indices in itertools.combinations(range(column_count), size):
+                minor = tuple(
+                    tuple(rows[row][column] for column in column_indices)
+                    for row in row_indices
+                )
+                divisor = gcd(divisor, abs(bareiss_determinant(minor)))
+        if divisor == 0:
+            break
+        divisors.append(divisor)
+    return tuple(divisors)
+
+
+def unimodular_inverse(
+    rows: tuple[tuple[int, ...], ...],
+) -> tuple[tuple[int, ...], ...]:
+    """Invert a square determinant-+/-1 matrix by its integer adjugate."""
+
+    size = len(rows)
+    determinant = bareiss_determinant(rows)
+    if size == 0 or abs(determinant) != 1:
+        raise ValueError("integer adjugate inverse requires a unimodular matrix")
+    cofactors = tuple(
+        tuple(
+            (-1 if (row + column) % 2 else 1)
+            * bareiss_determinant(
+                tuple(
+                    tuple(
+                        rows[source_row][source_column]
+                        for source_column in range(size)
+                        if source_column != column
+                    )
+                    for source_row in range(size)
+                    if source_row != row
+                )
+            )
+            for column in range(size)
+        )
+        for row in range(size)
+    )
+    return tuple(
+        tuple(cofactors[column][row] // determinant for column in range(size))
+        for row in range(size)
+    )
+
+
+def integer_matrix_product(
+    left: tuple[tuple[int, ...], ...],
+    right: tuple[tuple[int, ...], ...],
+) -> tuple[tuple[int, ...], ...]:
+    """Multiply compatible plain-integer matrices."""
+
+    if not left:
+        return ()
+    inner = len(left[0])
+    if len(right) != inner:
+        raise ValueError("incompatible integer-matrix shapes")
+    columns = len(right[0]) if right else 0
+    return tuple(
+        tuple(
+            sum(left[row][index] * right[index][column] for index in range(inner))
+            for column in range(columns)
+        )
+        for row in range(len(left))
+    )
+
+
 def has_unit_maximal_minor(matrix: sp.Matrix, rank: int) -> bool:
     """Return whether a rank-sized minor is a unit over Z."""
 
@@ -124,6 +257,52 @@ def support_component_count(edges: tuple[tuple[int, int], ...]) -> int:
                     unseen.remove(neighbor)
                     queue.append(neighbor)
     return count
+
+
+def leaf_peeling_gauge(
+    edges: tuple[tuple[int, int], ...], phases: tuple[int, ...]
+) -> tuple[int, ...] | None:
+    """Construct vertex phases that kill every edge phase of a forest.
+
+    Return ``None`` precisely when leaf peeling leaves a cyclic core.  The
+    construction is plain integer arithmetic and therefore descends globally
+    to the phase torus, rather than proving only an infinitesimal rank count.
+    """
+
+    if len(edges) != len(phases):
+        raise ValueError("one phase is required for every active edge")
+
+    endpoints = tuple((left, 3 + right) for left, right in edges)
+    incident = {vertex: set() for vertex in range(6)}
+    for edge_index, (left, right) in enumerate(endpoints):
+        incident[left].add(edge_index)
+        incident[right].add(edge_index)
+
+    remaining = set(range(len(edges)))
+    peel_order: list[tuple[int, int, int]] = []
+    leaves = deque(vertex for vertex in range(6) if len(incident[vertex]) == 1)
+    while leaves:
+        leaf = leaves.popleft()
+        active = incident[leaf] & remaining
+        if len(active) != 1:
+            continue
+        edge_index = active.pop()
+        left, right = endpoints[edge_index]
+        neighbor = right if leaf == left else left
+        peel_order.append((leaf, neighbor, edge_index))
+        remaining.remove(edge_index)
+        incident[leaf].remove(edge_index)
+        incident[neighbor].remove(edge_index)
+        if len(incident[neighbor] & remaining) == 1:
+            leaves.append(neighbor)
+
+    if remaining:
+        return None
+
+    vertex_phases = [0] * 6
+    for leaf, neighbor, edge_index in reversed(peel_order):
+        vertex_phases[leaf] = -phases[edge_index] - vertex_phases[neighbor]
+    return tuple(vertex_phases)
 
 
 def is_permutation_matrix(matrix: sp.Matrix) -> bool:
@@ -336,8 +515,162 @@ def exact_generic_rephasing_quotient() -> None:
     )
 
 
+def independent_integer_certificate() -> None:
+    """Recheck the load-bearing quotient and boundary without SymPy algebra."""
+
+    print("\n=== C. Independent plain-integer quotient and 64-support certificate ===")
+
+    phase_map = integer_incidence_rows(CANONICAL_EDGES)
+    divisors = determinantal_divisors(phase_map)
+    rank = len(divisors) - 1
+    smith_factors = tuple(
+        divisors[index] // divisors[index - 1]
+        for index in range(1, len(divisors))
+    )
+    check(
+        "plain-integer minors independently give rank five and unit Smith factors",
+        rank == 5
+        and divisors == (1, 1, 1, 1, 1, 1)
+        and smith_factors == (1, 1, 1, 1, 1),
+        detail=(
+            f"determinantal divisors={divisors}; Smith diagonal="
+            f"{smith_factors + (0,)}"
+        ),
+    )
+
+    # Derive a second global gauge rather than reusing the symbolic formulas
+    # above. The first five rows/columns form the displayed unit minor, so its
+    # plain-integer adjugate inverse kills the first five coefficient phases.
+    unit_minor_rows = tuple(tuple(row[:5]) for row in phase_map[:5])
+    unit_minor_inverse = unimodular_inverse(unit_minor_rows)
+    gauge_lift = tuple(
+        tuple(
+            -unit_minor_inverse[row][column] if column < 5 else 0
+            for column in range(6)
+        )
+        for row in range(5)
+    ) + (
+        (0, 0, 0, 0, 0, 0),
+    )
+    gauge_action = integer_matrix_product(phase_map, gauge_lift)
+    identity_plus_gauge = tuple(
+        tuple(
+            int(row == column) + gauge_action[row][column]
+            for column in range(6)
+        )
+        for row in range(6)
+    )
+    invariant = (-1, -1, -1, 1, 1, 1)
+    expected_projection = (
+        (0, 0, 0, 0, 0, 0),
+        (0, 0, 0, 0, 0, 0),
+        (0, 0, 0, 0, 0, 0),
+        (0, 0, 0, 0, 0, 0),
+        (0, 0, 0, 0, 0, 0),
+        invariant,
+    )
+    invariant_annihilates_action = all(
+        sum(invariant[row] * phase_map[row][column] for row in range(6)) == 0
+        for column in range(6)
+    )
+    check(
+        "plain-integer gauge multiplication independently gives the global S^1 normal form",
+        identity_plus_gauge == expected_projection
+        and invariant_annihilates_action
+        and gcd(*map(abs, invariant)) == 1,
+        detail=(
+            "G is derived from the unit minor; I+M G has only its last row "
+            "nonzero, equal to "
+            "(-1,-1,-1,1,1,1); the primitive row defines the residual circle"
+        ),
+    )
+
+    support_summaries: list[tuple[int, int, set[int], set[int], set[int]]] = []
+    all_patterns_pass = True
+    leaf_peeling_pass = True
+    for active_count in range(7):
+        pattern_count = 0
+        ranks: set[int] = set()
+        cycle_ranks: set[int] = set()
+        top_divisors: set[int] = set()
+        for edges in itertools.combinations(CANONICAL_EDGES, active_count):
+            pattern_count += 1
+            rows = integer_incidence_rows(edges)
+            support_divisors = determinantal_divisors(rows)
+            support_rank = len(support_divisors) - 1
+            components = support_component_count(edges)
+            cycle_rank = active_count - 6 + components
+            ranks.add(support_rank)
+            cycle_ranks.add(cycle_rank)
+            top_divisors.add(support_divisors[-1])
+            expected_rank = active_count if active_count < 6 else 5
+            expected_cycle_rank = 0 if active_count < 6 else 1
+            all_patterns_pass &= (
+                support_rank == expected_rank
+                and cycle_rank == expected_cycle_rank
+                and support_divisors[-1] == 1
+            )
+            if active_count < 6:
+                phase_probes = (tuple(0 for _ in range(active_count)),) + tuple(
+                    tuple(
+                        int(edge_index == basis_index)
+                        for edge_index in range(active_count)
+                    )
+                    for basis_index in range(active_count)
+                )
+                for probe_phases in phase_probes:
+                    peeling_gauge = leaf_peeling_gauge(edges, probe_phases)
+                    leaf_peeling_pass &= peeling_gauge is not None and all(
+                        probe_phases[edge_index]
+                        + peeling_gauge[left]
+                        + peeling_gauge[3 + right]
+                        == 0
+                        for edge_index, (left, right) in enumerate(edges)
+                    )
+            else:
+                leaf_peeling_pass &= leaf_peeling_gauge(
+                    edges, tuple(0 for _ in range(active_count))
+                ) is None
+        support_summaries.append(
+            (active_count, pattern_count, ranks, cycle_ranks, top_divisors)
+        )
+
+    compact_summary = "; ".join(
+        f"k={active}:n={count},rank={sorted(ranks)},cycles={sorted(cycles)},Delta={sorted(divisors_at_rank)}"
+        for active, count, ranks, cycles, divisors_at_rank in support_summaries
+    )
+    check(
+        "all 64 masks pass an independent rank, cycle-rank, and saturation census",
+        sum(summary[1] for summary in support_summaries) == 64
+        and all_patterns_pass,
+        detail=compact_summary,
+    )
+    check(
+        "the independent census leaves phases only on the full six-edge cycle",
+        all(
+            cycles == ({0} if active_count < 6 else {1})
+            and ranks == ({active_count} if active_count < 6 else {5})
+            for active_count, _, ranks, cycles, _ in support_summaries
+        ),
+        detail=(
+            "each of the 63 proper masks is a saturated forest with quotient "
+            "(R_{>0})^k; only mask 63 has one cycle phase"
+        ),
+    )
+    check(
+        "constructive leaf peeling removes every proper-mask phase globally",
+        leaf_peeling_pass,
+        detail=(
+            "for each of 63 forests, reverse peeling constructs integer vertex "
+            "phases that cancel zero and every edge-phase basis vector exactly; "
+            "linearity covers all phases, while the full six-cycle alone leaves "
+            "a cyclic core"
+        ),
+    )
+
+
 def hostile_controls() -> None:
-    print("\n=== C. Hostile controls and the generic-boundary contract ===")
+    print("\n=== D. Hostile controls and the generic-boundary contract ===")
 
     equal_a = 1
     equal_b = 1
@@ -455,6 +788,7 @@ def main() -> int:
 
     exact_support_reduction()
     exact_generic_rephasing_quotient()
+    independent_integer_certificate()
     hostile_controls()
 
     if args.intentional_failure_probe:

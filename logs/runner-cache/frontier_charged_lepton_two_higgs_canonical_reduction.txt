@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_two_higgs_canonical_reduction.py
-runner_sha256: 71030aa473bbeaec51bac2e45210e892a3ddc6f2c14f3f49af0d676096bc475e
+runner_sha256: c75da032ddc002833b1357f7b53a66005085cf04488de29b78459ddb5f2727f0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.56
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -89,7 +89,19 @@ No physical carrier, redundancy, branch, observable, or value is inferred.
   [PASS] the normal form and unit Smith factors give the global quotient (R_{>0})^6 x S^1
          the integer phase formulas are global modulo 2*pi; no finite quotient remains
 
-=== C. Hostile controls and the generic-boundary contract ===
+=== C. Independent plain-integer quotient and 64-support certificate ===
+  [PASS] plain-integer minors independently give rank five and unit Smith factors
+         determinantal divisors=(1, 1, 1, 1, 1, 1); Smith diagonal=(1, 1, 1, 1, 1, 0)
+  [PASS] plain-integer gauge multiplication independently gives the global S^1 normal form
+         G is derived from the unit minor; I+M G has only its last row nonzero, equal to (-1,-1,-1,1,1,1); the primitive row defines the residual circle
+  [PASS] all 64 masks pass an independent rank, cycle-rank, and saturation census
+         k=0:n=1,rank=[0],cycles=[0],Delta=[1]; k=1:n=6,rank=[1],cycles=[0],Delta=[1]; k=2:n=15,rank=[2],cycles=[0],Delta=[1]; k=3:n=20,rank=[3],cycles=[0],Delta=[1]; k=4:n=15,rank=[4],cycles=[0],Delta=[1]; k=5:n=6,rank=[5],cycles=[0],Delta=[1]; k=6:n=1,rank=[5],cycles=[1],Delta=[1]
+  [PASS] the independent census leaves phases only on the full six-edge cycle
+         each of the 63 proper masks is a saturated forest with quotient (R_{>0})^k; only mask 63 has one cycle phase
+  [PASS] constructive leaf peeling removes every proper-mask phase globally
+         for each of 63 forests, reverse peeling constructs integer vertex phases that cancel zero and every edge-phase basis vector exactly; linearity covers all phases, while the full six-cycle alone leaves a cyclic core
+
+=== D. Hostile controls and the generic-boundary contract ===
   [PASS] equal offsets are rejected by the theorem hypothesis
          the two supplied terms then combine on one three-edge matching
   [PASS] identity relative support is not misclassified as a nontrivial 3-cycle
@@ -115,7 +127,7 @@ No physical carrier, redundancy, branch, observable, or value is inferred.
   six positive moduli and one invariant phase, hence seven real quotient parameters.
   Zero-coefficient strata and non-cycle supports are outside this generic statement.
   These are quotient parameters, not physical quantities.
-PASS=55 FAIL=0
+PASS=60 FAIL=0
 
 ----- stderr -----
 

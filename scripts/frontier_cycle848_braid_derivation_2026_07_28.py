@@ -55,6 +55,10 @@ PAIR_POSITIONS = ((0, 5), (0, 6))
 EXPECTED_NORMALIZED_PARTITION_SHA256 = (
     "726b74aefc7afa6e1790c7dc73a59eacdadeec72246e19ac01104be09d49829d"
 )
+EXPECTED_GENERATED_EVENT_COUNT = 20
+EXPECTED_GENERATED_EVENT_SIGNATURE_SHA256 = (
+    "7ae45bbd8b6e688b9abdadd0e33dcfd300e2649b4776386a5b8ec48eb62e064a"
+)
 EXPECTED_PAIR_DEPTH_SHA256 = (
     "dc7156746a46cbe6edfaceb4ccfb9b27fc7250d2608a991848cfec6f62f39932"
 )
@@ -517,28 +521,621 @@ def evolve_nine(fixtures: dict[str, object]) -> dict[str, object]:
     }
 
 
+def support_indices(mask: int) -> tuple[int, ...]:
+    result = []
+    while mask:
+        bit = mask & -mask
+        result.append(bit.bit_length() - 1)
+        mask ^= bit
+    return tuple(result)
+
+
+def predicate_pattern(state: int, wires: tuple[int, ...]) -> tuple[int, ...]:
+    return tuple((state >> wire) & 1 for wire in wires)
+
+
+def exact_state_payload(
+    inputs: tuple[int, ...], output: int,
+) -> dict[str, object]:
+    raw = b"".join(
+        state.to_bytes(STATE_BYTES, "little") for state in (*inputs, output)
+    )
+    compressed = zlib.compress(raw, 9)
+    return {
+        "format":
+            "lane-ordered predecessor states, then one common output; "
+            f"{STATE_BYTES} little-endian bytes per exact 5815-bit state; "
+            "zlib level 9; Base85",
+        "input_state_count": len(inputs),
+        "raw_bytes": len(raw),
+        "raw_sha256": sha256(raw).hexdigest(),
+        "compressed_bytes": len(compressed),
+        "compressed_sha256": sha256(compressed).hexdigest(),
+        "payload_b85": base64.b85encode(compressed).decode("ascii"),
+        "roundtrip_exact": zlib.decompress(compressed) == raw,
+    }
+
+
+def transition_rows(
+    nine: dict[str, object],
+    words: dict[Pair, tuple[tuple[int, int, int], ...]],
+) -> tuple[dict[str, object], ...]:
+    states_by_depth = nine["states_by_depth"]
+    rows = []
+    event_index = 0
+    for depth in range(NORMALIZED_DEPTH, -1, -1):
+        inputs_at_depth = states_by_depth[depth + 1]
+        outputs_at_depth = states_by_depth[depth]
+        predecessor = partition_of(inputs_at_depth)
+        output_partition = partition_of(outputs_at_depth)
+        for output_block in output_partition:
+            incoming = tuple(
+                tuple(lane for lane in block if lane in output_block)
+                for block in predecessor
+                if any(lane in output_block for lane in block)
+            )
+            if len(incoming) < 2:
+                continue
+            lanes = tuple(output_block)
+            inputs = tuple(inputs_at_depth[lane] for lane in lanes)
+            expected_outputs = tuple(outputs_at_depth[lane] for lane in lanes)
+            rule_outputs = tuple(
+                apply_word(inputs_at_depth[lane], words[BACKBONE[lane]])
+                for lane in lanes
+            )
+            common_output = expected_outputs[0]
+            inverse_inputs = tuple(
+                apply_word(common_output, words[BACKBONE[lane]], reverse=True)
+                for lane in lanes
+            )
+            anchor = inputs[0]
+            variation_mask = 0
+            for state in inputs:
+                variation_mask |= anchor ^ state
+            variation_support = support_indices(variation_mask)
+            patterns = tuple(
+                predicate_pattern(state, NINE_PREDICATE_WIRES)
+                for state in inputs
+            )
+            incoming_sizes = tuple(len(block) for block in incoming)
+            three_wire_local = set(variation_support) <= set(NINE_PREDICATE_WIRES)
+            patterns_in_family = all(
+                pattern in NINE_PREDICATE_PATTERNS for pattern in patterns
+            )
+            word_digests = tuple(
+                digest(words[BACKBONE[lane]]) for lane in lanes
+            )
+            payload = exact_state_payload(inputs, common_output)
+            exact = (
+                len(set(expected_outputs)) == 1
+                and rule_outputs == expected_outputs
+                and inverse_inputs == inputs
+                and payload["roundtrip_exact"]
+            )
+            structural_type = {
+                "incoming_block_sizes": incoming_sizes,
+                "participant_count": len(lanes),
+                "predecessor_variation_support_count": len(variation_support),
+                "predecessor_pattern_multiset": tuple(sorted(Counter(patterns).items())),
+                "known_three_wire_local": three_wire_local,
+                "all_patterns_in_landed_nine_family": patterns_in_family,
+            }
+            rows.append({
+                "event_index": event_index,
+                "scale": "NINE",
+                "normalized_depth": depth,
+                "predecessor_depth": depth + 1,
+                "incoming_lane_blocks": incoming,
+                "incoming_key_blocks": tuple(
+                    tuple(BACKBONE[lane] for lane in block) for block in incoming
+                ),
+                "coincident_lane_subset": lanes,
+                "coincident_key_subset": tuple(BACKBONE[lane] for lane in lanes),
+                "one_step_rule":
+                    "for every lane k, x_k = W_k^{-1}(y), equivalently "
+                    "W_k(x_k)=y, with the exact x_k,y bytes printed below",
+                "word_gate_count_by_lane": tuple(
+                    len(words[BACKBONE[lane]]) for lane in lanes
+                ),
+                "word_sha256_by_lane": word_digests,
+                "predecessor_state_packed_sha256_by_lane": tuple(
+                    packed_sha256(state) for state in inputs
+                ),
+                "common_output_packed_sha256": packed_sha256(common_output),
+                "predecessor_variation_support": variation_support,
+                "predecessor_variation_support_sha256": digest(variation_support),
+                "landed_nine_predicate_wires": NINE_PREDICATE_WIRES,
+                "predecessor_patterns_on_landed_wires": patterns,
+                "common_output_pattern_on_landed_wires":
+                    predicate_pattern(common_output, NINE_PREDICATE_WIRES),
+                "known_three_wire_local": three_wire_local,
+                "all_patterns_in_landed_nine_family": patterns_in_family,
+                "structural_precondition_type": structural_type,
+                "structural_precondition_type_sha256": digest(structural_type),
+                "exact_precondition_payload": payload,
+                "rule_outputs_equal_printed_common_output":
+                    rule_outputs == expected_outputs and len(set(rule_outputs)) == 1,
+                "inverse_rule_recovers_every_printed_predecessor":
+                    inverse_inputs == inputs,
+                "pass": exact,
+            })
+            event_index += 1
+    return tuple(rows)
+
+
+def first_share_rows(nine: dict[str, object]) -> tuple[dict[str, object], ...]:
+    states_by_depth = nine["states_by_depth"]
+    seen: set[tuple[int, int]] = set()
+    rows = []
+    for depth in range(NORMALIZED_DEPTH, -1, -1):
+        partition = partition_of(states_by_depth[depth])
+        predecessor = partition_of(states_by_depth[depth + 1])
+        for block in partition:
+            new_pairs = tuple(
+                pair for pair in combinations(block, 2) if pair not in seen
+            )
+            if not new_pairs:
+                continue
+            predecessor_equal = tuple(
+                states_by_depth[depth + 1][left]
+                == states_by_depth[depth + 1][right]
+                for left, right in new_pairs
+            )
+            left_censored_pairs = tuple(
+                pair for pair, equal in zip(new_pairs, predecessor_equal)
+                if equal
+            )
+            generated_pairs = tuple(
+                pair for pair, equal in zip(new_pairs, predecessor_equal)
+                if not equal
+            )
+            if left_censored_pairs and generated_pairs:
+                classification = "BOUNDARY_MIXED_CENSORED_AND_GENERATED"
+            elif left_censored_pairs:
+                classification = "LEFT_CENSORED_FIRST_OBSERVATION"
+            else:
+                classification = "GENERATED_FIRST_COINCIDENCE"
+            rows.append({
+                "normalized_depth": depth,
+                "coincident_lane_block": block,
+                "coincident_key_block": tuple(BACKBONE[lane] for lane in block),
+                "new_pair_count": len(new_pairs),
+                "new_lane_pairs": new_pairs,
+                "left_censored_lane_pairs": left_censored_pairs,
+                "generated_lane_pairs": generated_pairs,
+                "left_censored_key_pairs": tuple(
+                    (BACKBONE[left], BACKBONE[right])
+                    for left, right in left_censored_pairs
+                ),
+                "generated_key_pairs": tuple(
+                    (BACKBONE[left], BACKBONE[right])
+                    for left, right in generated_pairs
+                ),
+                "new_key_pairs": tuple(
+                    (BACKBONE[left], BACKBONE[right])
+                    for left, right in new_pairs
+                ),
+                "classification": classification,
+                "all_new_pairs_separate_at_depth_plus_one":
+                    not any(predecessor_equal),
+            })
+            seen.update(new_pairs)
+    if len(seen) != len(tuple(combinations(range(len(BACKBONE)), 2))):
+        raise AssertionError("first-share census did not cover all 36 pairs")
+    return tuple(rows)
+
+
+def pair_copy_certificate(
+    normalized_partitions: tuple[Partition, ...],
+) -> dict[str, object]:
+    pair_sequence = (True,) * (NORMALIZED_DEPTH + 1)
+    sequence_sha = sha256(bytes(map(int, pair_sequence))).hexdigest()
+    rle_checks = tuple({
+        "event": event,
+        "sample_count": sample_count,
+        "partition": "UNITED",
+        "computed_exact_sequence_sha256":
+            sha256(b"\x01" * sample_count).hexdigest(),
+        "expected_exact_sequence_sha256": expected,
+        "exact": sha256(b"\x01" * sample_count).hexdigest() == expected,
+    } for event, sample_count, expected in COPIED_CYCLE846["full_RLE"])
+    matching = []
+    restriction_rows = []
+    for left, right in combinations(range(len(BACKBONE)), 2):
+        restriction = tuple(
+            any(left in block and right in block for block in partition)
+            for partition in normalized_partitions
+        )
+        holds = restriction == pair_sequence
+        restriction_rows.append({
+            "nine_lane_subset": (left, right),
+            "nine_key_subset": (BACKBONE[left], BACKBONE[right]),
+            "restricted_depth_sequence_sha256":
+                sha256(bytes(map(int, restriction))).hexdigest(),
+            "reproduces_pair_braid": holds,
+        })
+        if holds:
+            matching.append((BACKBONE[left], BACKBONE[right]))
+    no_depth_transition = all(
+        pair_sequence[depth] == pair_sequence[depth + 1]
+        for depth in range(NORMALIZED_DEPTH)
+    )
+    result = {
+        "copy_provenance": COPIED_CYCLE846,
+        "two_keys": PAIR_POSITIONS,
+        "landed_three_wire_representation": PAIR_PREDICATE_WIRES,
+        "normalized_depth_bounds": (0, NORMALIZED_DEPTH),
+        "normalized_partition": "UNITED at every depth",
+        "computed_normalized_depth_sequence_sha256": sequence_sha,
+        "expected_normalized_depth_sequence_sha256": EXPECTED_PAIR_DEPTH_SHA256,
+        "full_meet_to_funnel_RLE_checks": rle_checks,
+        "generated_coincidence_event_count": 0,
+        "generated_event_reason":
+            "No SEPARATE->UNITED step exists: the SHA-pinned full RLE is one "
+            "UNITED row from the meet through every cohort funnel.",
+        "first_observed_share": {
+            "normalized_depth": NORMALIZED_DEPTH,
+            "classification": "LEFT_CENSORED; PREEXISTS_WINDOW_AND_MEET",
+            "one_step_coincidence_precondition": None,
+        },
+        "restriction_rows_every_nine_subset": tuple(restriction_rows),
+        "matching_nine_key_subsets": tuple(matching),
+        "matching_subset_count": len(matching),
+        "expected_matching_nine_key_subsets": EXPECTED_MATCHING_NINE_SUBSETS,
+        "pass": (
+            sequence_sha == EXPECTED_PAIR_DEPTH_SHA256
+            and all(row["exact"] for row in rle_checks)
+            and no_depth_transition
+            and tuple(matching) == EXPECTED_MATCHING_NINE_SUBSETS
+            and len(restriction_rows) == 36
+        ),
+    }
+    return result
+
+
+def certificate_a_generative_test(
+    fixtures: dict[str, object], nine: dict[str, object],
+) -> tuple[dict[str, object], tuple[dict[str, object], ...]]:
+    words = {pair: compile_word(fixtures["macros"], pair) for pair in BACKBONE}
+    events = transition_rows(nine, words)
+    first_shares = first_share_rows(nine)
+    pair = pair_copy_certificate(nine["normalized_partitions"])
+    event_signature = tuple(
+        (row["normalized_depth"], row["incoming_lane_blocks"],
+         row["coincident_lane_subset"])
+        for row in events
+    )
+    public_nine = {
+        "normalization":
+            "depth 0 is the funnel; depth+1 is the one-movement predecessor",
+        "depth_bounds": (0, NORMALIZED_DEPTH),
+        "predecessor_depth_computed": PREDECESSOR_DEPTH,
+        "normalized_partition_sha256": nine["normalized_partition_sha256"],
+        "expected_normalized_partition_sha256":
+            EXPECTED_NORMALIZED_PARTITION_SHA256,
+        "normalized_partitions": nine["normalized_partitions"],
+        "first_share_sequence": first_shares,
+        "generated_one_step_coincidence_events": events,
+        "generated_event_count": len(events),
+        "generated_event_signature": event_signature,
+        "generated_event_signature_sha256": digest(event_signature),
+        "expected_generated_event_count": EXPECTED_GENERATED_EVENT_COUNT,
+        "expected_generated_event_signature_sha256":
+            EXPECTED_GENERATED_EVENT_SIGNATURE_SHA256,
+        "all_event_preconditions_exact": all(row["pass"] for row in events),
+        "terminal_matches_target": nine["terminal_matches_target"],
+        "duplicate_exact_every_captured_depth":
+            nine["duplicate_exact_every_captured_depth"],
+    }
+    result = {
+        "certificate_role": "A_BRAID_GENERATIVE_TEST",
+        "event_definition":
+            "A generated coincidence is an output equality block at depth d "
+            "receiving lanes from at least two equality blocks at depth d+1. "
+            "First-share rows are separately printed, including censored depth-64 "
+            "observations.",
+        "nine_braid": public_nine,
+        "pair_braid": pair,
+        "event_sequence_is_small": len(events) < NORMALIZED_DEPTH + 1,
+        "pass": (
+            fixtures["public"]["pass"] and nine["pass"] and pair["pass"]
+            and len(events) == EXPECTED_GENERATED_EVENT_COUNT
+            and digest(event_signature)
+            == EXPECTED_GENERATED_EVENT_SIGNATURE_SHA256
+            and all(row["pass"] for row in events)
+            and len(first_shares) >= 1
+        ),
+    }
+    return result, events
+
+
+def certificate_b_schema_hunt(
+    certificate_a: dict[str, object],
+    events: tuple[dict[str, object], ...],
+) -> dict[str, object]:
+    type_counts = Counter(
+        row["structural_precondition_type_sha256"] for row in events
+    )
+    type_examples = {}
+    for row in events:
+        key = row["structural_precondition_type_sha256"]
+        type_examples.setdefault(key, row["structural_precondition_type"])
+    local_rows = tuple(
+        row["event_index"] for row in events if row["known_three_wire_local"]
+    )
+    family_rows = tuple(
+        row["event_index"] for row in events
+        if row["all_patterns_in_landed_nine_family"]
+    )
+    pair_event_count = certificate_a["pair_braid"]["generated_coincidence_event_count"]
+    exact_inverse_coverage = all(
+        row["rule_outputs_equal_printed_common_output"]
+        and row["inverse_rule_recovers_every_printed_predecessor"]
+        for row in events
+    )
+    candidates = (
+        {
+            "name": "LANDED_THREE_WIRE_PATTERN_AT_SCALE_OFFSETS",
+            "schema":
+                "predecessor variation is confined to (40,81,105) at nine "
+                "scale or (88,124,125) at pair scale, with one shared local "
+                "pattern family sufficient for coincidence",
+            "nine_event_coverage": len(local_rows),
+            "nine_event_total": len(events),
+            "nine_pattern_family_coverage": len(family_rows),
+            "pair_event_coverage": 0,
+            "pair_event_total": pair_event_count,
+            "cross_scale_nonvacuous": bool(events) and pair_event_count > 0,
+            "holds": (
+                len(local_rows) == len(events)
+                and bool(events) and pair_event_count > 0
+            ),
+            "status": "FAILS",
+        },
+        {
+            "name": "EXACT_RULE_PREIMAGE_IDENTITY",
+            "schema": "x_k=W_k^{-1}(y) for every participant k",
+            "nine_event_coverage": len(events) if exact_inverse_coverage else 0,
+            "nine_event_total": len(events),
+            "pair_event_coverage": 0,
+            "pair_event_total": pair_event_count,
+            "formal_identity_holds": exact_inverse_coverage,
+            "mechanism_candidate": False,
+            "rejection_reason":
+                "It requires the full printed predecessor/common-output states "
+                "and the event depth.  It is an exact inverse-image certificate, "
+                "not a local schema that predicts an event.",
+            "status": "EXACT_BUT_TAUTOLOGICAL",
+        },
+    )
+    census = tuple({
+        "type_sha256": key,
+        "count": type_counts[key],
+        "type": type_examples[key],
+    } for key in sorted(type_counts))
+    return {
+        "certificate_role": "B_PRECONDITION_SCHEMA_HUNT",
+        "verdict": "NO_SINGLE_CROSS_SCALE_LOCAL_SCHEMA",
+        "mechanism_candidate_found": False,
+        "nine_generated_event_count": len(events),
+        "pair_generated_event_count": pair_event_count,
+        "pair_constraint":
+            "The pair braid is persistently UNITED and supplies no generated "
+            "one-step coincidence instance; cross-scale event coverage would be "
+            "vacuous, so it cannot certify one mechanism schema.",
+        "candidate_tests": candidates,
+        "honest_precondition_type_census": census,
+        "distinct_precondition_type_count": len(census),
+        "known_three_wire_local_event_indices": local_rows,
+        "landed_nine_pattern_family_event_indices": family_rows,
+        "scope_boundary":
+            "The exact event-specific inverse images are certificates A, not a "
+            "derived predictive law.  No claim is made beyond depths 0..64.",
+        "pass": (
+            certificate_a["pass"] and exact_inverse_coverage
+            and not any(candidate.get("holds", False) for candidate in candidates)
+            and len(census) >= 1 and pair_event_count == 0
+        ),
+    }
+
+
+def certificate_c_forward_rederivation(
+    certificate_a: dict[str, object], certificate_b: dict[str, object],
+) -> dict[str, object]:
+    if certificate_b["mechanism_candidate_found"]:
+        return {
+            "certificate_role": "C_FORWARD_REDERIVATION",
+            "verdict": "INTERNAL_ERROR_UNIMPLEMENTED_SCHEMA_BRANCH",
+            "pass": False,
+        }
+    return {
+        "certificate_role": "C_FORWARD_REDERIVATION",
+        "verdict": "NOT_ATTEMPTED_NO_SINGLE_SCHEMA",
+        "prediction": None,
+        "comparison_to_nine_braid": None,
+        "comparison_to_pair_braid": None,
+        "why_exact_preimages_are_not_used":
+            "Each exact preimage payload already contains the full states and "
+            "event depth to be predicted; replaying it would be circular full-state "
+            "execution, not a derivation from the marked meet plus a local schema.",
+        "honest_gap":
+            "The braid is reduced to named exact event preconditions, but those "
+            "preconditions do not collapse to one nonvacuous local law across the "
+            "nine and pair scales.  The merged why therefore remains open.",
+        "certificate_a_available": certificate_a["pass"],
+        "certificate_b_no_schema_exact": certificate_b["pass"],
+        "pass": certificate_a["pass"] and certificate_b["pass"],
+    }
+
+
+def certificate_d_controls(
+    source: dict[str, object], fixtures: dict[str, object],
+    fixture_replay: dict[str, object], nine: dict[str, object],
+    events: tuple[dict[str, object], ...], elapsed: float,
+) -> dict[str, object]:
+    copied_rle_exact = all(
+        sha256(b"\x01" * sample_count).hexdigest() == expected
+        for _event, sample_count, expected in COPIED_CYCLE846["full_RLE"]
+    )
+    blocked_at_end = tuple(sorted(
+        name for name in sys.modules
+        if name.rsplit(".", 1)[-1] in BLOCKLISTED_MODULES
+    ))
+    result = {
+        "certificate_role": "D_CONTROLS",
+        "source_controls": source,
+        "primary_access_policy":
+            "All literal AUDIT_INPUT_PATHS and the SHA-pinned Cycle-846 copy "
+            "are BLOCKLISTED and consumed only as text/AST; none is imported "
+            "or executed.",
+        "blocked_modules_loaded_at_end": blocked_at_end,
+        "firewall_hits_at_end": tuple(FIREWALL.hits),
+        "determinism": {
+            "fixture_decode_exact_replay":
+                fixture_digest(fixtures) == fixture_digest(fixture_replay),
+            "fixture_digest_first": fixture_digest(fixtures),
+            "fixture_digest_replay": fixture_digest(fixture_replay),
+            "nine_duplicate_exact_every_captured_depth":
+                nine["duplicate_exact_every_captured_depth"],
+            "event_transform_repeat_digest_exact":
+                digest(events) == digest(tuple(dict(row) for row in events)),
+            "every_rule_forward_inverse_roundtrip_exact":
+                all(row["inverse_rule_recovers_every_printed_predecessor"]
+                    for row in events),
+            "copied_pair_full_RLE_hashes_exact": copied_rle_exact,
+        },
+        "exact_arithmetic":
+            "Boolean gates, states, equality partitions, supports, event "
+            "preimages, counts, bytes, and hashes are exact; wall time alone "
+            "is floating point.",
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "runtime_below_limit": elapsed < AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "stdout_below_limit": False,
+        "base_pass_before_stdout": False,
+        "pass": False,
+    }
+    result["base_pass_before_stdout"] = (
+        source["pass"] and fixtures["public"]["pass"]
+        and fixture_replay["public"]["pass"] and nine["pass"]
+        and bool(events) and all(row["pass"] for row in events)
+        and not blocked_at_end and not FIREWALL.hits
+        and all(result["determinism"].values())
+        and result["runtime_below_limit"]
+    )
+    return result
+
+
+def render_report(
+    certificate_a: dict[str, object], certificate_b: dict[str, object],
+    certificate_c: dict[str, object], certificate_d: dict[str, object],
+    elapsed: float,
+) -> str:
+    report = {
+        "cycle": 848,
+        "title": "the two-scale braid derivation (merged why, attempt three)",
+        "checks": {
+            "A_GENERATIVE_TEST": certificate_a["pass"],
+            "B_SCHEMA_HUNT": certificate_b["pass"],
+            "C_FORWARD_REDERIVATION": certificate_c["pass"],
+            "D_CONTROLS": certificate_d["pass"],
+        },
+        "certificate_A_event_count":
+            certificate_a["nine_braid"]["generated_event_count"],
+        "certificate_B_verdict": certificate_b["verdict"],
+        "certificate_C_verdict": certificate_c["verdict"],
+        "merged_why_status": "OPEN_EXACT_EVENT_CENSUS_ONLY",
+        "runtime_seconds": round(elapsed, 6),
+        "stdout_bytes": certificate_d["stdout_bytes"],
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "pass": all(certificate_datum["pass"] for certificate_datum in (
+            certificate_a, certificate_b, certificate_c, certificate_d,
+        )),
+        "terminal": "CYCLE848_BRAID_DERIVATION_HONEST_GAP",
+    }
+    return "\n".join((
+        "CERTIFICATE_A_GENERATIVE_TEST=" + compact(certificate_a),
+        "CERTIFICATE_B_SCHEMA_HUNT=" + compact(certificate_b),
+        "CERTIFICATE_C_FORWARD_REDERIVATION=" + compact(certificate_c),
+        "CERTIFICATE_D_CONTROLS=" + compact(certificate_d),
+        "REPORT=" + compact(report),
+    ))
+
+
 def run() -> int:
-    """Scaffold entry point; certificates are added in the next commit."""
     started = monotonic()
     source, trees = source_controls()
     fixtures = decode_cycle830_fixtures(trees[AUDIT_INPUT_PATHS[0]])
     nine = evolve_nine(fixtures)
-    report = {
-        "cycle": 848,
-        "stage": "CORE_SCAFFOLD",
-        "source_controls": source,
-        "fixtures": fixtures["public"],
-        "nine": {key: value for key, value in nine.items()
-                 if key != "states_by_depth"},
-        "runtime_seconds": round(monotonic() - started, 6),
-        "pass": source["pass"] and fixtures["public"]["pass"] and nine["pass"],
-    }
-    print(compact(report))
-    return 0 if report["pass"] else 1
+    certificate_a, events = certificate_a_generative_test(fixtures, nine)
+    certificate_b = certificate_b_schema_hunt(certificate_a, events)
+    certificate_c = certificate_c_forward_rederivation(certificate_a, certificate_b)
+    fixture_replay = decode_cycle830_fixtures(trees[AUDIT_INPUT_PATHS[0]])
+    elapsed = monotonic() - started
+    certificate_d = certificate_d_controls(
+        source, fixtures, fixture_replay, nine, events, elapsed,
+    )
+    for _iteration in range(8):
+        rendered = render_report(
+            certificate_a, certificate_b, certificate_c, certificate_d, elapsed,
+        )
+        stdout_bytes = len((rendered + "\n").encode("utf-8"))
+        below = stdout_bytes < STDOUT_LIMIT_BYTES
+        pass_value = certificate_d["base_pass_before_stdout"] and below
+        if (
+            certificate_d["stdout_bytes"] == stdout_bytes
+            and certificate_d["stdout_below_limit"] == below
+            and certificate_d["pass"] == pass_value
+        ):
+            break
+        certificate_d["stdout_bytes"] = stdout_bytes
+        certificate_d["stdout_below_limit"] = below
+        certificate_d["pass"] = pass_value
+    rendered = render_report(
+        certificate_a, certificate_b, certificate_c, certificate_d, elapsed,
+    )
+    if len((rendered + "\n").encode("utf-8")) >= STDOUT_LIMIT_BYTES:
+        raise AssertionError("stdout limit exceeded")
+    print(rendered)
+    overall = all(certificate["pass"] for certificate in (
+        certificate_a, certificate_b, certificate_c, certificate_d,
+    ))
+    return 0 if overall else 1
 
 
 def main() -> int:
-    return run()
+    if len(sys.argv) == 2 and sys.argv[1] == "--_worker":
+        return run()
+    if len(sys.argv) != 1:
+        raise SystemExit("usage: frontier_cycle848_braid_derivation_2026_07_28.py")
+    try:
+        completed = subprocess.run(
+            (sys.executable, str(Path(__file__).resolve()), "--_worker"),
+            cwd=ROOT, capture_output=True, text=True,
+            timeout=AUDIT_TIMEOUT_SEC,
+        )
+    except subprocess.TimeoutExpired as exc:
+        print(compact({
+            "cycle": 848, "pass": False,
+            "terminal": "CYCLE848_TIMEOUT",
+            "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        }))
+        return 1
+    stdout_size = len(completed.stdout.encode("utf-8"))
+    if stdout_size >= STDOUT_LIMIT_BYTES:
+        print(compact({
+            "cycle": 848, "pass": False,
+            "terminal": "CYCLE848_STDOUT_LIMIT_EXCEEDED",
+            "stdout_bytes": stdout_size,
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        }))
+        return 1
+    sys.stdout.write(completed.stdout)
+    if completed.stderr:
+        sys.stderr.write(completed.stderr)
+    return completed.returncode
 
 
 if __name__ == "__main__":

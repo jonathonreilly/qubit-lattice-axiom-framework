@@ -85,6 +85,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "cycle_graph_c35_independent_set_census_narrow_theorem_note_2026-07-28": [
         "scripts/frontier_cycle756_c35_independent_set_census_independent_check_2026_07_28.py",
     ],
+    # Cycle 761's independent state-DP and small-cycle exhaustive checker
+    # deliberately does not import the closed-form primary. Expose it beside
+    # the primary so the restricted audit packet contains both derivations.
+    "cycle_graph_c43_independent_set_census_narrow_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle761_c43_independent_set_census_independent_check_2026_07_28.py",
+    ],
     # Cycle 820 keeps its independent tuple/bit-vector reconstruction outside
     # the primary import closure; include it claim-scoped in audit packets.
     "full128_two_cell_parity_superselected_even_car_covariance_cycle820_bounded_theorem_note_2026-07-30": [

@@ -1,6 +1,6 @@
 {
- "edge_count": 15363,
- "node_count": 4613,
+ "edge_count": 15364,
+ "node_count": 4614,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1619,8 +1619,8 @@
    "out_degree": 11
   },
   "canonical_harness_index": {
-   "deps_hash": "c05251e0c2f5",
-   "out_degree": 337
+   "deps_hash": "d17a8bc2ea79",
+   "out_degree": 338
   },
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
@@ -2775,6 +2775,10 @@
    "out_degree": 0
   },
   "cycle_graph_c35_independent_set_census_narrow_theorem_note_2026-07-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "cycle_graph_c43_independent_set_census_narrow_theorem_note_2026-07-28": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

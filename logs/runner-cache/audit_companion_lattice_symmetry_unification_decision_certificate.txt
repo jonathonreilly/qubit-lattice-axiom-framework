@@ -1,0 +1,93 @@
+===== runner cache v1 =====
+runner: scripts/audit_companion_lattice_symmetry_unification_decision_certificate.py
+runner_sha256: b3b00bf6b2a8c28d2b85b9446f6ee251fbd5f3af42bad03c7431b8b38b9f7f4c
+input_fingerprint_sha256: de9e7b95edbc5ce2aba094a67aa7f55e55e53a0d7208dfec9bfa950a9bbc0927
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.07
+status: ok
+----- stdout -----
+LATTICE_SYMMETRY_FINITE_PROXY_CENSUS_CERTIFICATE_V2
+SHA256_PIN|companion|b3b00bf6b2a8c28d2b85b9446f6ee251fbd5f3af42bad03c7431b8b38b9f7f4c
+SHA256_PIN|primary|baa6e0f9d16de2fad7be55b9fa11b673a80f1b88005803ae4a03dc6106bb709d
+SHA256_PIN|helper|28c23fe871ffc356a4a4cd9b0a8a76985a2a464c79c3389ad96651084bcb3e97
+SCOPE|model=stipulated_directed_2d_layer_dag|max_dy=3,4,5,6|geometries=narrow_center,wide_center,wide_outer|offsets=-1,0,+1|strength=0.1
+CHECK|PASS|imported finite/model constants equal the declared contract
+CHECK|PASS|directed lattice, boundaries, source, detector, and field equal the declared contract
+SECTION|CANONICAL_SWEEP_CERTIFICATE|rows=4
+C|3|mass=6|mi=0.339254|dtv=0.590490|decoh=0.045665|gravity=-7.953602553235e+00|k0=+0.000e+00|born=0.000e+00|retained=0
+C|4|mass=6|mi=0.516908|dtv=0.735462|decoh=0.124308|gravity=-7.417059464459e+00|k0=+0.000e+00|born=0.000e+00|retained=0
+C|5|mass=6|mi=0.653173|dtv=0.834544|decoh=0.084635|gravity=-6.538914581062e+00|k0=+0.000e+00|born=0.000e+00|retained=0
+C|6|mass=6|mi=0.379595|dtv=0.574232|decoh=0.041402|gravity=-5.467299144690e+00|k0=+0.000e+00|born=0.000e+00|retained=0
+SECTION|BARRIER_DISTANCE_CURVE_CERTIFICATE|curves=4|points=44
+B|3|2:-4.63240529,3:-6.39373610,4:-7.47789181,5:-7.91983880,6:-7.95360255,7:-7.79564654,8:-7.58517808,10:-7.19176556,13:-6.44567849,16:-5.07099776,19:-3.51603849
+B|4|2:-2.95088242,3:-4.29408722,4:-5.60027943,5:-6.69602318,6:-7.41705946,7:-7.71513408,8:-7.73310148,10:-7.46767621,13:-6.90300524,16:-5.52271149,19:-3.65784557
+B|5|2:-4.95771907,3:-5.60564812,4:-5.97878236,5:-6.29117292,6:-6.53891458,7:-6.68298711,8:-6.73304907,10:-6.64184842,13:-5.55684108,16:-3.33312172,19:-1.68589881
+B|6|2:-6.01811999,3:-5.99010718,4:-5.77185107,5:-5.58751753,6:-5.46729914,7:-5.39615766,8:-5.36979702,10:-5.29752133,13:-3.81601395,16:-1.53754627,19:-0.36282173
+SECTION|NO_BARRIER_DISTANCE_FIT_CERTIFICATE|fits=4
+N|3|peak=7|alpha=-0.97888097|r2=0.93427055
+N|4|peak=10|alpha=-1.68275825|r2=0.91671263
+N|5|peak=8|alpha=-3.37113503|r2=0.75355673
+N|6|peak=4|alpha=-1.55334003|r2=0.88827889
+SECTION|TRADEOFF_36_ROW_CERTIFICATE|rows=36|flags=three_slit,mi_purity,k0,distance,positive_shift,primary_predicate,second_predicate
+ALIASES|nc=narrow_center|wc=wide_center|wo=wide_outer
+T|3|nc|-1|0.00e+00|0.6297|0.1480|-6.59924735|1111000
+T|3|nc|+0|0.00e+00|0.5082|0.0837|-7.58090074|1111000
+T|3|nc|+1|0.00e+00|0.4107|0.0526|-7.95282458|1111000
+T|3|wc|-1|0.00e+00|0.4854|0.0922|-7.47789181|1111000
+T|3|wc|+0|0.00e+00|0.3994|0.0601|-7.91983880|1111000
+T|3|wc|+1|0.00e+00|0.3393|0.0457|-7.95360255|1111000
+T|3|wo|-1|0.00e+00|0.5624|0.0489|-8.45516650|1111000
+T|3|wo|+0|0.00e+00|0.4808|0.0354|-8.33413573|1111000
+T|3|wo|+1|0.00e+00|0.4213|0.0306|-8.08890062|1111000
+T|4|nc|-1|0.00e+00|0.5942|0.2607|-4.74464322|1111000
+T|4|nc|+0|0.00e+00|0.6149|0.2025|-5.94166691|1111000
+T|4|nc|+1|0.00e+00|0.5945|0.1481|-6.90607165|1111000
+T|4|wc|-1|0.00e+00|0.5978|0.2249|-5.60027943|1111000
+T|4|wc|+0|0.00e+00|0.5764|0.1690|-6.69602318|1111000
+T|4|wc|+1|0.00e+00|0.5169|0.1243|-7.41705946|1111000
+T|4|wo|-1|0.00e+00|0.7012|0.1429|-8.03429825|1111000
+T|4|wo|+0|0.00e+00|0.6563|0.1085|-8.28468603|1111000
+T|4|wo|+1|0.00e+00|0.5857|0.0856|-8.18844716|1111000
+T|5|nc|-1|0.00e+00|0.6418|0.1945|-6.04440385|1110000
+T|5|nc|+0|0.00e+00|0.7485|0.1458|-6.23536214|1110000
+T|5|nc|+1|0.00e+00|0.8054|0.1019|-6.37969273|1110000
+T|5|wc|-1|0.00e+00|0.7613|0.1811|-5.97878236|1110000
+T|5|wc|+0|0.00e+00|0.7876|0.1272|-6.29117292|1110000
+T|5|wc|+1|0.00e+00|0.6532|0.0846|-6.53891458|1110000
+T|5|wo|-1|0.00e+00|0.8358|0.1085|-7.16118617|1110000
+T|5|wo|+0|0.00e+00|0.8390|0.0820|-7.13411837|1110000
+T|5|wo|+1|0.00e+00|0.7092|0.0619|-7.05282804|1110000
+T|6|nc|-1|0.00e+00|0.6547|0.1107|-6.15370129|1111000
+T|6|nc|+0|0.00e+00|0.7380|0.0793|-5.86190928|1111000
+T|6|nc|+1|0.00e+00|0.6603|0.0557|-5.59595760|1111000
+T|6|wc|-1|0.00e+00|0.7408|0.0929|-5.77185107|1111000
+T|6|wc|+0|0.00e+00|0.5841|0.0623|-5.58751753|1111000
+T|6|wc|+1|0.00e+00|0.3796|0.0414|-5.46729914|1111000
+T|6|wo|-1|0.00e+00|0.7266|0.0507|-5.87312002|1111000
+T|6|wo|+0|0.00e+00|0.5851|0.0376|-5.62137695|1111000
+T|6|wo|+1|0.00e+00|0.4073|0.0307|-5.44818226|1111000
+SECTION|INDEPENDENT_SIGN_AND_COUNT_CHECK
+CHECK|PASS|exact Cartesian key coverage (observed=36 expected=36)
+CHECK|PASS|all 36 centroid-shift values are finite
+CHECK|PASS|primary positive-centroid-shift count is 0/36 (count=0/36)
+CHECK|PASS|independent nonpositive-centroid-shift count is 36/36 (count=36/36)
+CHECK|PASS|strict negative margin exists (max=-4.744643220520e+00)
+CHECK|PASS|primary and independent retention predicates agree
+CHECK|PASS|primary selection-predicate count is 0/36 (count=0/36)
+CHECK|PASS|independent selection-predicate count is 0/36 (count=0/36)
+CHECK|PASS|three-slit residual count within tolerance is 36/36 (count=36/36)
+CHECK|PASS|MI plus purity-deficit proxy count is 36/36 (count=36/36)
+CHECK|PASS|all 44 barrier-distance centroid-shift points are nonpositive (positive=0/44)
+CHECK|PASS|canonical rows equal their tradeoff-map rows
+SECTION|FINAL_DECISION_CERTIFICATE
+COUNT|three_slit_residual_within_tolerance|36/36
+COUNT|mi_plus_purity_deficit_proxy|36/36
+COUNT|positive_centroid_shift|0/36
+COUNT|selected_predicate|0/36
+DECISION|FINITE_CENSUS_NONPOSITIVE|scope=stipulated_finite_proxy_census_only
+CHECK|PASS|finite proxy census is nonpositive
+SUMMARY|PASS=15|FAIL=0
+
+----- stderr -----
+

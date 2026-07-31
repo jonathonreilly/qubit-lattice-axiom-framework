@@ -12,8 +12,8 @@
 **Load-bearing companion construction:**
 [`RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md`](RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md)
 
-**Predecessor endpoint instrument, used only for comparison:**
-[`PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md`](PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md)
+**Non-load-bearing comparison:**
+`PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md`
 
 ## Question and answer
 
@@ -58,9 +58,8 @@ and maps `(a,b)` to `(b,a)`.  The physical word may also flip its declared pair
 of companion ports; it never changes an additional matter occupation.
 
 There are zero row-mask, monomial-output, endpoint-swap, scratch, or pointer
-failures.  The primary sparse-algebra residual is exactly zero in its retained
-dictionary.  An independent implementation found maximum floating residual
-`2.24e-17` over the same 1,312 cases.
+failures.  The runner's sparse-algebra residual is exactly zero in its retained
+dictionary.
 
 The complete four-factor boundary matters.  An individual off-diagonal
 `pi/2` Pauli rotation is a coherent identity/flip superposition and is not an

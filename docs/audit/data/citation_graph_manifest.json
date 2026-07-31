@@ -1,6 +1,6 @@
 {
- "edge_count": 15365,
- "node_count": 4615,
+ "edge_count": 15366,
+ "node_count": 4616,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -10293,6 +10293,10 @@
   "per_plaquette_license_one_tick_reachability_derivation_narrow_theorem_note_2026-07-12": {
    "deps_hash": "f52cf35bfe49",
    "out_degree": 3
+  },
+  "per_row_bijection_s3_cubed_conditional_census_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "974af8052d05",
+   "out_degree": 1
   },
   "per_site_k_equals_1_ratification_reaudit_manifest_note_2026-05-22": {
    "deps_hash": "127cfec1a18d",

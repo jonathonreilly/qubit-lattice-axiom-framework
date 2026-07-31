@@ -1,0 +1,34 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC22-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle831_cohorts_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle831_deep_k2_forecast_tests_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 831,
+  "files": {
+    "docs/DEEP_K2_COHORTS_CYCLE831_BOUNDED_THEOREM_NOTE_2026-07-28.md": "e8b7a27c7350ca8aabc7d42b16c7b101add50c7b406f3fa7568d4c781a8c8fc7",
+    "logs/runner-cache/frontier_cycle831_cohorts_independent_check_2026_07_28.txt": "e3d5dbb0f2de64405b7319c378b0d105132daf16b2d6abd476a1aa2466eafab0",
+    "logs/runner-cache/frontier_cycle831_deep_k2_forecast_tests_2026_07_28.txt": "5bf873fa8bf5f5ee8dbfd4c85d0785a221ed715629496833dffd07b60692d881",
+    "scripts/frontier_cycle831_cohorts_independent_check_2026_07_28.py": "0144e7c899959b4f29df3cc513ca47079717004f358ffd40fd7dd5773fd182f1",
+    "scripts/frontier_cycle831_deep_k2_forecast_tests_2026_07_28.py": "624dad4d841e10e24891810dbc500cc4d6ebe871d6f09dd96f89e3189e52e2ff"
+  },
+  "independent_audit_still_required": true,
+  "key_findings": [
+    "transient family 33; the cohort-moment sequence {14744, 33195, 51115} = the new three-point law target; the funnel-state family = the census target"
+  ],
+  "verdicts": [
+    "EIGHTEEN new transients: two cohorts of nine on the SAME max-sep-5 backbone (event-2 @ 33195; event-1 @ 51115)",
+    "three cohorts, three funnels, three moments; no cross-cohort merging",
+    "F1 and F2 forecasts HELD; 133 open with accounting",
+    "checker CYCLE831_COHORTS_INDEPENDENT_CHECK_PASS (all six certificates)"
+  ]
+}

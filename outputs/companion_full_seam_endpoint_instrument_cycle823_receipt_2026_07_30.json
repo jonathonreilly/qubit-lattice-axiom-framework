@@ -1,0 +1,122 @@
+{
+  "artifact": "frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py",
+  "audit": "unset",
+  "authority": "none",
+  "artifact_provenance_sha256": {
+    "note": "c3593b3903b64c5d96c4ff0e0723d1976ad7069061a2a21cb2b80989526e18cd",
+    "runner": "ceaffb990160fa53475ea0e485294b15e1dc0c376a8a7a6bb1192b70ce9555e0"
+  },
+  "checks_passed": 10,
+  "checks_total": 10,
+  "claim_scope": "finite held-box coherent endpoint-opportunity instrument on the landed Cycle822 companion seam; not an autonomous occurrence or recurrent-reset law",
+  "full_seam_algebra": {
+    "held_shapes": 4,
+    "edges": 82,
+    "matched_physical_target_row_pairs": 328,
+    "physical_and_target_signature_classes": 1312,
+    "row_endpoint_mask_failures": 0,
+    "monomial_full_seam_failures": 0,
+    "endpoint_swap_failures": 0,
+    "instrument_isometry_failures": 0,
+    "maximum_primary_instrument_residual": 0.0,
+    "maximum_independent_instrument_residual": 2.24e-17,
+    "dirty_ancilla_unlawful_inputs_per_edge": 7
+  },
+  "active_controls": {
+    "physical_or_target_edge_families_per_control": 164,
+    "endpoint_changing_factor_deletions_detected": 164,
+    "single_endpoint_mutations_detected": 164,
+    "OR_Toffoli_deletions_detected": 164,
+    "pointer_cleanup_deletions_detected": 164,
+    "Cycle713_swap_specific_cleanup_equivalence_failures": 0
+  },
+  "decomposed_Toffoli": {
+    "one_and_two_M2_factors": 15,
+    "maximum_matrix_residual": 7.346882794269506e-16,
+    "literal_three_M2_primitive_used": false
+  },
+  "held_metrics": [
+    {
+      "shape": [2, 1, 1],
+      "edges": 1,
+      "base_route_macros": 412,
+      "instrument_route_macros": 14,
+      "total_route_macros": 426,
+      "base_primitives": 9956,
+      "instrument_primitives": 243,
+      "combined_primitives": 10199,
+      "charged_coordinates": 459,
+      "neutral_coordinates": 1353,
+      "collision_edges": 0,
+      "global_P_ext_sha256": "1bb05bf43bb3e99da7e87e29c23d8a89f468f0b6e36840e5d3f88c9efce8ef69"
+    },
+    {
+      "shape": [3, 1, 1],
+      "edges": 2,
+      "base_route_macros": 644,
+      "instrument_route_macros": 28,
+      "total_route_macros": 672,
+      "base_primitives": 16103,
+      "instrument_primitives": 478,
+      "combined_primitives": 16581,
+      "charged_coordinates": 702,
+      "neutral_coordinates": 2185,
+      "collision_edges": 0,
+      "global_P_ext_sha256": "9e439005a6edf8883d55636878c9542d75a940978a93b832b7171222d485cd24"
+    },
+    {
+      "shape": [3, 2, 2],
+      "edges": 20,
+      "base_route_macros": 4400,
+      "instrument_route_macros": 280,
+      "total_route_macros": 4680,
+      "base_primitives": 144272,
+      "instrument_primitives": 4836,
+      "combined_primitives": 149108,
+      "charged_coordinates": 3433,
+      "neutral_coordinates": 14054,
+      "collision_edges": 0,
+      "global_P_ext_sha256": "270545d934058de3b8454af5174a5dc7fd9e2b0c45e93f6b358be317e7aa1004"
+    },
+    {
+      "shape": [5, 3, 2],
+      "edges": 59,
+      "base_route_macros": 11708,
+      "instrument_route_macros": 826,
+      "total_route_macros": 12534,
+      "base_primitives": 394640,
+      "instrument_primitives": 14289,
+      "combined_primitives": 408929,
+      "charged_coordinates": 8985,
+      "neutral_coordinates": 37062,
+      "collision_edges": 0,
+      "global_P_ext_sha256": "8844cd75a6e507523439fec776db6cc4c9280bd853b101a2c423a7f733282390"
+    }
+  ],
+  "global_controls": {
+    "maximum_route_distance": 43,
+    "nearest_neighbour_failures": 0,
+    "route_return_failures": 0,
+    "internal_persistent_route_hits": 0,
+    "charged_neutral_overlap": 0,
+    "untyped_primitive_uses": 0,
+    "elementary_global_P_ext_failures": 0,
+    "prefix_global_P_ext_failures": 0,
+    "proper_cubic_frames": 24,
+    "translation_origins": 8,
+    "ordered_frame_products": 576,
+    "transported_program_covariance": true,
+    "target_native_route_recompilation_proved": false
+  },
+  "preserved_fixtures": {
+    "one_particle_mass": 0.45340565417488515,
+    "one_particle_mass_residual": 5.551115123125783e-17,
+    "one_particle_coin_eigen_residual": 2.594441202963249e-16,
+    "contact_vacuum_and_one_particle_residual": 0.0,
+    "contact_double_occupation_phase_residual": 0.0
+  },
+  "stage_labels_are_physical_time": false,
+  "pointer_is_occurrence_actuality_Record_Born_source_or_clock": false,
+  "pointer_reset_or_fresh_bank_derived": false,
+  "status": "cycle823-companion-full-seam-endpoint-instrument-bounded-positive"
+}

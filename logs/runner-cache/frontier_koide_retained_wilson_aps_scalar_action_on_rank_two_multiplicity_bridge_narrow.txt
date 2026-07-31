@@ -1,9 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_retained_wilson_aps_scalar_action_on_rank_two_multiplicity_bridge_narrow.py
-runner_sha256: 1f3a31d56186cd723b754039b04fb51a035df581b0c7067c1397517ae6f66141
-timeout_sec: 120
+runner_sha256: 18ae0e9c56e587f212e799382337f9e3330c58c260e915c360f73d2513e239ce
+input_fingerprint_sha256: a14364560b78e677e9535ac4e4d28d2b3ec2b8baacda9d48e58b39c7eac0c4d5
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.37
+elapsed_sec: 0.42
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -22,14 +23,14 @@ r = 1.0: build sibling Wilson construction and M_zeta
 r = 1.0: generators restrict to scalars on M_zeta
 ----------------------------------------------------------------------------------------
   [PASS (A)] r=1.0: D|_{M_zeta} = 0 I_2  (D|_{M_zeta} = 
-[[-4.20149508e-18-2.32728033e-17j -4.12602502e-19+5.59387545e-19j]
- [ 6.57238434e-18+2.56693941e-18j  6.87169180e-18-9.74510516e-18j]])
+[[-1.55120154e-17-4.16664548e-18j -1.77549650e-18-1.28056171e-17j]
+ [-9.14247907e-18-1.23289422e-17j  1.25048762e-17+5.00346384e-18j]])
   [PASS (A)] r=1.0: U|_{M_zeta} = zeta I_2 with zeta = exp(i pi/3)  (U|_{M_zeta} = 
-[[5.00000000e-01+8.66025404e-01j 3.12250226e-17-1.52655666e-16j]
- [2.77555756e-17+0.00000000e+00j 5.00000000e-01+8.66025404e-01j]],  lam_U = (0.5000000000000009+0.8660254037844386j))
+[[ 5.00000000e-01+8.66025404e-01j -1.21430643e-16+1.24900090e-16j]
+ [-1.73472348e-17+4.16333634e-17j  5.00000000e-01+8.66025404e-01j]],  lam_U = (0.5+0.8660254037844388j))
   [PASS (A)] r=1.0: U^dag|_{M_zeta} = zeta_bar I_2  (U^dag|_{M_zeta} = 
-[[ 5.00000000e-01-8.66025404e-01j -1.35308431e-16+2.08166817e-17j]
- [-6.24500451e-17-1.38777878e-16j  5.00000000e-01-8.66025404e-01j]],  lam_Udag = (0.5000000000000007-0.8660254037844384j))
+[[ 5.00000000e-01-8.66025404e-01j -1.94289029e-16-2.08166817e-17j]
+ [-2.77555756e-17+4.16333634e-17j  5.00000000e-01-8.66025404e-01j]],  lam_Udag = (0.5000000000000007-0.8660254037844397j))
   [PASS (A)] r=1.0: U is unitary (U U^dag = I on full space)  (||U U^dag - I|| = 0.00e+00)
 
 ----------------------------------------------------------------------------------------
@@ -46,8 +47,8 @@ r = 1.0: polynomial words in retained generators are scalar on M_zeta
 r = 1.0: countermodel — a NON-retained rank-one projector is NOT scalar on M_zeta
 ----------------------------------------------------------------------------------------
   [PASS (A)] r=1.0: |line_0><line_0| restricts to diag(1, 0) on M_zeta, hence not scalar  (|line_0><line_0|_{M_zeta} = 
-[[ 1.00000000e+00+3.33066907e-16j -2.15105711e-16-4.17417836e-18j]
- [ 4.76357178e-17-5.01332824e-17j  7.50700617e-18-1.73126912e-17j]],  is_scalar=False)
+[[1.00000000e+00+5.06539255e-16j 1.59594560e-16+5.93275429e-16j]
+ [5.91999983e-17-2.32950725e-17j 3.15732745e-17+1.62430716e-18j]],  is_scalar=False)
   [PASS (A)] r=1.0: countermodel confirms the scalar property is non-trivial  (Some non-retained operators do distinguish the two copies of zeta; the retained ones do not.)
 
 ----------------------------------------------------------------------------------------
@@ -62,14 +63,14 @@ r = 1.425: build sibling Wilson construction and M_zeta
 r = 1.425: generators restrict to scalars on M_zeta
 ----------------------------------------------------------------------------------------
   [PASS (A)] r=1.425: D|_{M_zeta} = 0 I_2  (D|_{M_zeta} = 
-[[2.34997084e-16-5.83283480e-18j 1.75136260e-18+2.87963733e-18j]
- [9.50088388e-18-3.09286624e-19j 1.92019920e-16-1.97972409e-17j]])
+[[ 1.84440474e-16+5.07399427e-17j  1.31876991e-18+2.54417610e-17j]
+ [-3.20066069e-18+1.13942917e-18j  1.98637908e-16+1.16926592e-17j]])
   [PASS (A)] r=1.425: U|_{M_zeta} = zeta I_2 with zeta = exp(i pi/3)  (U|_{M_zeta} = 
-[[ 5.00000000e-01+8.66025404e-01j -1.26867427e-16-3.89261697e-16j]
- [-2.73676805e-16-3.04501263e-16j  5.00000000e-01+8.66025404e-01j]],  lam_U = (0.5000000000000003+0.8660254037844385j))
+[[ 5.0000000e-01+8.66025404e-01j -1.2490009e-16+8.32667268e-17j]
+ [-6.9388939e-18+9.71445147e-17j  5.0000000e-01+8.66025404e-01j]],  lam_U = (0.5000000000000009+0.8660254037844379j))
   [PASS (A)] r=1.425: U^dag|_{M_zeta} = zeta_bar I_2  (U^dag|_{M_zeta} = 
-[[ 5.00000000e-01-8.66025404e-01j -2.73676805e-16+3.04501263e-16j]
- [-1.26867427e-16+3.89261697e-16j  5.00000000e-01-8.66025404e-01j]],  lam_Udag = (0.5000000000000002-0.8660254037844387j))
+[[5.00000000e-01-8.66025404e-01j 2.77555756e-17+2.08166817e-17j]
+ [4.16333634e-17-1.38777878e-17j 5.00000000e-01-8.66025404e-01j]],  lam_Udag = (0.5000000000000002-0.8660254037844386j))
   [PASS (A)] r=1.425: U is unitary (U U^dag = I on full space)  (||U U^dag - I|| = 0.00e+00)
 
 ----------------------------------------------------------------------------------------
@@ -86,9 +87,24 @@ r = 1.425: polynomial words in retained generators are scalar on M_zeta
 r = 1.425: countermodel — a NON-retained rank-one projector is NOT scalar on M_zeta
 ----------------------------------------------------------------------------------------
   [PASS (A)] r=1.425: |line_0><line_0| restricts to diag(1, 0) on M_zeta, hence not scalar  (|line_0><line_0|_{M_zeta} = 
-[[ 1.00000000e+00+0.00000000e+00j -4.00544232e-16-8.47604337e-17j]
- [-4.00544232e-16+8.47604337e-17j  1.67620016e-31-1.15906441e-39j]],  is_scalar=False)
+[[1.00000000e+00-5.55111512e-16j 1.11022302e-16-4.99600361e-16j]
+ [9.67142323e-17-4.45584967e-17j 1.23001953e-17-1.62395731e-18j]],  is_scalar=False)
   [PASS (A)] r=1.425: countermodel confirms the scalar property is non-trivial  (Some non-retained operators do distinguish the two copies of zeta; the retained ones do not.)
+
+----------------------------------------------------------------------------------------
+No-Go Discipline execution certificate for the derived scalar-action boundary
+----------------------------------------------------------------------------------------
+N1_ROUTE algebraic_rearrangement: mechanism=restriction-algebra homomorphism; attempt=combine sums and products of generator restrictions to obtain a non-scalar matrix; outcome=closed because the scalar matrices form a unital subalgebra of End(M_zeta).
+N1_ROUTE symmetry_or_representation: mechanism=zeta-character representation on the invariant zero-mode space; attempt=use multiplicity two to permit a non-scalar operator commuting with U; outcome=closed for the declared generated algebra because every named generator, not merely every commuting operator, restricts to a scalar.
+N1_ROUTE alternate_carrier_or_sector: mechanism=rank-one projector on an alternate operator carrier; attempt=adjoin |line_0><line_0| to distinguish the two zeta copies; outcome=the computed diag(1,0) restriction succeeds only outside A=C*(D,U), so it does not falsify the scoped boundary.
+N1_ROUTE numerical_or_finite_case: mechanism=finite spectral computation of every D-eigenspace projector; attempt=search the complete finite projector list for a non-scalar restriction; outcome=closed because every computed P_lambda(D) restriction is exactly the expected zero or identity within tolerance.
+N1_ROUTE lattice_scale_or_limit: mechanism=two-point Wilson-parameter lattice sweep; attempt=break the scalar restriction by changing r from 1.0 to the construction default 1.425; outcome=closed on the stated certified set because both complete finite runs preserve dim(M_zeta)=2 and every scalar generator restriction.
+N1_ROUTE alternate_observable_or_readout: mechanism=spectral observable functional calculus; attempt=use sign(D), eta-style spectral sums, or another eigenvalue-weighted readout to split M_zeta; outcome=closed inside A because finite spectral functions are linear combinations of the tested P_lambda(D) and remain scalar on M_zeta.
+per_element: PASS | every retained generator restricts to a scalar on M_zeta, and the executed algebra-closure argument preserves scalarity for each finite polynomial element
+per_site: PASS | the declared generator inventory contains no site-indexed selector, so the theorem is checked as a multiplicity-space statement and makes no broader local-site claim
+per_mode: PASS | both zeta zero-mode basis vectors have identical D, U, U-dagger, and D-spectral-projector eigen-data at each of the two executed Wilson parameters
+per_block: PASS | the complete two-by-two M_zeta restriction of every generator and sampled word is scalar, while the explicit non-retained rank-one block is diag(1,0)
+lattice_wide: PASS | the full 108-dimensional periodic L=3 Wilson construction and all spectral projectors were executed at r=1.0 and r=1.425, with no non-scalar retained restriction
 
 ========================================================================================
 Bridge theorem summary

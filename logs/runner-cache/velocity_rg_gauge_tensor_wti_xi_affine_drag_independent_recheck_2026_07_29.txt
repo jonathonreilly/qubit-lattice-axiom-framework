@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py
+runner_sha256: d524bfffed29c791db8049506f9547089077e60a03f33a206a626eb86f807ffc
+input_fingerprint_sha256: 1ba2a5747fe3a7b0e142152fc23a6cb51737af18a9fab9dfe6f1d8a06a2499f7
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+Independent scalar-trace and execution-evidence recheck (bounded finite object)
+implementation rule: no import/call of the primary runner
+[PASS] E1.real-mode-normalization :: sum cos^2=V/2=648; action factor gives V/4=324
+[PASS] E2.su2-factors :: T_F=tr[(sigma_a/2)^2]=1/2; C_F=sum_a sigma_a^2/4=3/4
+[PASS] E3.midpoint-wti-factor :: max scalar identity residual = 5.551e-17
+[PASS] E4.fermion-response :: scalar trace gives rainbow=-0.00210365, tadpole=+0.00079666, dv_B=+0.05131497, dv_F/g^2=+0.00098024
+[PASS] E5.gauge-response :: analytic spin trace plus T_F=1/2 gives Ward_max=6.200e-16, q=0.52359878, dv_F=+0.10526316, dv_B/g^2=+0.02176818
+[PASS] E6.proxy-arithmetic :: a_proxy=+0.01910241, b_proxy=+0.20679771, a+b=+0.22590012
+[PASS] E7.proxy-matrix :: row sums=[0.0, 0.0], det=+0.0, eigenvalues={0,-0.22590012}
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

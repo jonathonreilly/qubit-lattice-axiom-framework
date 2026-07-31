@@ -15,6 +15,9 @@ set or predict an audit outcome.
 **Cached runner output:**
 [`logs/runner-cache/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.txt`](../logs/runner-cache/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.txt)
 
+**Independent recheck:**
+[`scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py`](../scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py)
+
 ```yaml
 actual_current_surface_status: bounded-support
 trace_class: frontier_discovery
@@ -188,8 +191,8 @@ true-inverse, counterterm, volume, or on-shell matching.
   coefficient required by the comparison chain.
 - **W10 — anomalous dimension:** derive the relevant fixed-point anomalous
   dimension.
-- **W11 — LV sufficiency:** complete the quantitative Lorentz-violation bound
-  comparison.
+- **W11 — LV map:** after W9--W10, derive the remaining scale/matching and
+  compare to quantitative bounds; it excludes W9--W10.
 
 Closing any one wall does not close the others. The complete independence
 record appears in N2 below.
@@ -236,9 +239,8 @@ seven counted attacks support only the bounded standalone surface.
 
 ### N2 — Wall independence
 
-For each pair, `N/N/I` means closing the left wall does not close the right,
-closing the right does not close the left, and no shared unresolved premise
-makes them duplicates.
+`N/N/I` means neither closure entails the other. W11 is only the post-W9--W10
+matching residual.
 
 | Left wall | Later-wall pairs, all `N/N/I` |
 |---|---|
@@ -255,15 +257,15 @@ makes them duplicates.
 
 ### N3 — Hidden-assumption scan
 
-A literal scan of this note, its primary runner, and its committed cache used
-the complete No-Go Discipline N3 trigger list. The only substantive source
-hits or close variants are classified here; none is silently promoted to
-authority.
+A literal scan of this note, both runners, and both committed caches used the
+complete No-Go Discipline N3 trigger list. Every hit or close variant is
+classified here; none is silently promoted to authority.
 
 | Literal hit / locator | Classification | Resolution |
 |---|---|---|
-| “registered framework observables” in Sign Bookkeeping (source line 121 before this checklist) | non-load-bearing comparison context | It names what would be required downstream; this note explicitly supplies only static direction proxies and leaves W4–W5 open. |
-| “fixed-background responses” in W8 (source line 185 before this checklist) | explicit hidden condition promoted to W8 | The background is not evolved. W8 is already one of the eleven disclosed walls, and the N2 count includes it. |
+| “registered framework observables” in Sign Bookkeeping | non-load-bearing comparison context | It names what would be required downstream; this note explicitly supplies only static direction proxies and leaves W4–W5 open. |
+| “fixed-background responses” in W8 | explicit hidden condition promoted to W8 | The background is not evolved. W8 is already one of the eleven disclosed walls, and the N2 count includes it. |
+| “canonical” in the helper docstring | non-load-bearing cache/audit plumbing | It assigns cache ownership only; it supplies no physics premise, status, or verdict authority. |
 
 The conceptual premise scan then rejects same-action, same-carrier,
 color-equals-total-multiplicity, finite-ratio-equals-speed,
@@ -301,11 +303,13 @@ resolutions are reported as open, never converted into universal negatives.
 
 ### N6 — Partial-closure paths
 
-No new axiom is proposed. Viable partial routes are: transfer the exact WTI
-calculus to the retained carrier (W2), repeat V6 with a true anisotropic gauge
-inverse (W3), define an on-shell speed observable (W4), and then perform the
-counterterm/RG extraction (W5). Exact torus momenta already repair the narrow
-finite-sum Ward gate but do not repair the remaining walls.
+No new axiom is proposed. Viable partial routes are: transfer the exact WTI to
+the retained carrier (W2), use a true anisotropic gauge inverse (W3), define an
+on-shell speed (W4), and perform the counterterm/RG extraction (W5). The
+retained [spatial-BZ power-mixing theorem](EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md)
+already supplies the spatial-only structural channel, so W9 is specifically
+its coefficient calculation; W10–W11 remain downstream. Exact torus momenta
+repair only the narrow finite-sum Ward gate.
 
 ### N7 — Steelman
 
@@ -330,38 +334,59 @@ doubler, static, and continuous-time echoes.
 
 | Prior echo and locator | Since retired? | Mechanism / applicability here |
 |---|---|---|
-| Retained blocked module and spin/taste core cited above | Partially advanced, not retired | Exact decomposition and commutant now supply a constructive carrier-lift route, but no velocity counterterm or normalization. This is W2's escape, not closure. |
-| `FREE_STAGGERED_POLE_RESIDUE_DIRAC_CARRIER_CAR_RELABELING_BOUNDED_THEOREM_NOTE_2026-07-17.md` | Bounded carrier theorem exists; physical identification remains open | It keeps the pole/CAR route available, matching W4, but is not imported as target closure. |
-| `VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md:87-93` and `VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md:121-133` | Not retired | They name gauge-invariant prescription, taste normalization, full tensor/vertex, and counterterm routes; these are W2–W5. |
-| `.claude/science/physics-loops/free-dirac-carrier-retirement-20260717/NO_GO_LEDGER.md:7-12` | Narrow carrier result only; Wightman/physical lift not retired | Its “Euclidean 2-point is not Wightman reconstruction” boundary directly forbids promoting this finite Euclidean fixture. |
-| `.claude/science/physics-loops/planck-clifford-carrier-closure-20260710/NO_GO_LEDGER.md:10-12` | Partial constructive route, not retired | A native taste extension exists, but temporal operator/copy selection remains open; this reinforces the steelman rather than a no-go. |
-| `.claude/science/physics-loops/gauge-wilson-isotropy-boundary-closure-20260710/NO_GO_LEDGER.md:6-8` | One eta-product route closed; broader anisotropic dynamics explicitly open | The retirement mechanism is exact parity/isotropy on a specified operator, not applicable to this missing interacting counterterm. |
-| `.claude/science/physics-loops/conformal-causal-source-repair-block01-20260716/NO_GO_LEDGER.md:3-28` | Abstract word/count-to-clock shortcut blocked; dynamics escape open | It confirms that finite ordering/rate proxies do not supply a physical clock, matching the refusal to infer a beta flow from static responses. |
+| Retained blocked module, spin/taste core, and free-pole carrier theorem | Partially advanced | They supply constructive carrier and pole/CAR routes, but no interacting normalization, Wightman lift, or velocity counterterm; W2 and W4 stay open. |
+| [Spatial-BZ power-mixing theorem](EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md) | Structural channel retired | Its continuous-time spatial identity narrows W9 to the coefficient calculation; it supplies no action/carrier transfer, anomalous dimension, or LV map. |
+| `VELOCITY_RG_GAUGE_SEAGULL_TRANSVERSE_VACUUM_POLARIZATION_2026-06-22.md` and `VELOCITY_RG_LOGFLOW_FRAMEWORK_INTERNAL_2026-06-21.md` | Not retired; context only | They name full tensor/vertex, gauge prescription, taste normalization, and counterterm routes without supplying W2–W5. |
+| `LORENTZ_VIOLATION_DERIVED_NOTE.md` | Conditional fixed-action diagnostic; context only | Cubic structure on a supplied action does not identify the present action, carrier, SME map, or dynamic flow. |
+| `LORENTZ_BOOST_COVARIANCE_3PLUS1D_THEOREM_NOTE.md`, `TASTE_SECTOR_MARGINAL_LV_B4_PROTECTION_ON_OS0_BOUNDED_THEOREM_NOTE_2026-06-13.md`, and `CROSS_SECTOR_FRONT_SPEED_B4_TWO_SURFACE_ALIGNMENT_BOUNDED_THEOREM_NOTE_2026-07-16.md` | Unaudited routes; context only | Continuum-boost, taste-sum, and two-surface mechanisms do not transfer a common interacting action/carrier/clock or close W1–W8/W11. |
+| Historical carrier/Wightman, anisotropic-isotropy, and static-clock campaign ledgers | Narrow mechanisms only | Their partial retirements are the routes above; none turns this static periodic fixture into a physical coupled flow. |
 
-No prior ledger records a convention, ratification, or theorem that retires
-W1–W8 for this target. The mechanisms that did retire narrower routes have all
-been considered: carrier decomposition becomes the explicit W2 lift; exact
-operator parity does not construct the counterterm; and a dynamics/clock input
-remains required for a physical flow.
+No current authority retires W1–W8 or W11 for this target. The retained
+spatial-BZ result narrows only W9; carrier decomposition remains a W2 lift, and
+fixed-action, parity, taste, boost, or clock mechanisms do not construct the
+missing interacting counterterm and physical flow.
 
 **Overall N1–N8 status for the narrowed standalone claim: PASS.**
 
 ## Verification
 
+### Complete execution-evidence certificate
+
+The complete `3772`-character primary cache is unclipped, SHA-pinned to
+`3d3af2b179977877676f34eaf4f012d33c45417e308b55eafc0f78ceeafe3a15`,
+has ordered counts `V1--V7 = 5/2/4/3/3/6/2`, no `[FAIL]`, and
+`TOTAL: PASS=25 FAIL=0`.  Its independent subprocess, whose arithmetic the
+primary does not consume, uses `tr(g_a g_m g_b g_n)/4 = delta_am delta_bn -
+delta_ab delta_mn + delta_an delta_mb`.  Standalone it gives `PASS=7 FAIL=0`;
+its cache pins runner SHA `d524bfffed29c791db8049506f9547089077e60a03f33a206a626eb86f807ffc`
+and primary-input fingerprint
+`1ba2a5747fe3a7b0e142152fc23a6cb51737af18a9fab9dfe6f1d8a06a2499f7`.
+
+| Quantity | Independent result |
+|---|---:|
+| normalization; color | `V/2=648`, `V/4=324`; `T_F=1/2`, `C_F=3/4` |
+| fermion route | rainbow `-0.00210365`, tadpole `+0.00079666`; offsets `+0.05131497`, `+0.00098024` |
+| gauge route | `q=0.52359878`, Ward `6.200e-16`; offsets `+0.10526316`, `+0.02176818` |
+| proxies | `a=+0.01910241`, `b=+0.20679771`, sum `+0.22590012`; matrix spectrum `{0,-0.22590012}` |
+
+These certificates do not change the bounded object's scope or supply W1--W11.
+
 Run:
 
 ```bash
 python3 scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_2026_07_17.py
+python3 scripts/velocity_rg_gauge_tensor_wti_xi_affine_drag_independent_recheck_2026_07_29.py
 ```
 
-Expected final line:
+Expected final lines, respectively:
 
 ```text
 TOTAL: PASS=25 FAIL=0
+TOTAL: PASS=7 FAIL=0
 ```
 
-The runner declares `AUDIT_TIMEOUT_SEC = 280` and its output is deterministic
-under the repository cache contract.
+The helper fingerprints the primary and reads neither cache, so concurrent
+refresh is race-free. Audit infrastructure owns cache identity and packet fit.
 
 ## Audit Boundary
 

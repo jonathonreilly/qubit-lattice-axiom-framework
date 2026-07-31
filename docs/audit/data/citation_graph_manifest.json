@@ -1,5 +1,5 @@
 {
- "edge_count": 15364,
+ "edge_count": 15365,
  "node_count": 4615,
  "nodes": {
   "3d_correction_master_note": {
@@ -15403,8 +15403,8 @@
    "out_degree": 2
   },
   "velocity_rg_gauge_tensor_wti_xi_affine_drag_exact_support_note_2026-07-17": {
-   "deps_hash": "0663883c06e3",
-   "out_degree": 2
+   "deps_hash": "ff5f6ed11410",
+   "out_degree": 3
   },
   "velocity_rg_logflow_framework_internal_2026-06-21": {
    "deps_hash": "a30145e2e616",

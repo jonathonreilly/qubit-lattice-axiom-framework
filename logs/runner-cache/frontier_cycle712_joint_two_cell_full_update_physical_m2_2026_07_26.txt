@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.py
 runner_sha256: c2e7f261c47092f11e445b16bde703330ccfd3e3af06bec0dac078ba64cf2297
-input_fingerprint_sha256: 932333ae945f1575759f3fc3983291d0262f156f450e1d47067755b12c114c92
+input_fingerprint_sha256: 6e94c1f03db5b4688ba2c55392f60eb1aa546700d8765dea64540eb7ffaa2240
 timeout_sec: 360
 exit_code: 0
-elapsed_sec: 25.99
+elapsed_sec: 29.41
 status: ok
 ----- stdout -----
 PASS the code/logical equivalence diagram closes under all 24 proper frames and the frame/rail labels close under all 576 products :: {'proper_cubic_frames': 24, 'frame_semantic_rows': 1200, 'maximum_frame_row': {'open_generator_transport_failures': 0, 'patch_generator_transport_failures': 0, 'semantic_rows': 50, 'equivalence_diagram_failures': 0, 'source_canonical_failures': 0, 'target_canonical_failures': 0}, 'group_products': 576, 'group_failures': 0, 'rail_group_composition_tests': 576, 'rail_group_composition_failures': 0}

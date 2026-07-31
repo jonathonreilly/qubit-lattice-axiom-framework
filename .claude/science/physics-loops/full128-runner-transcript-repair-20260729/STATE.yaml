@@ -1,0 +1,39 @@
+schema: physics-loop-state-v1
+loop_slug: full128-runner-transcript-repair-20260729
+mode: run
+goal: close the authenticated-stdout artifact defect on the bounded full128 local M64 times seam-M2 intertwiner certificate
+target_status: best-honest-status
+cycle_count: 1
+block_count: 1
+active_route: source-hash-rerender-current-20k-transport
+approach_family_coverage:
+  - packet-rerender-only
+  - packet-budget-change
+  - primary-transcript-compaction
+  - separate-audit-slice
+strongest_unresolved_proof_obligation: none; the independent audit lane must judge the repaired packet
+hard_residual: none; the identified defect is transcript transport, not physics
+files_touched:
+  - docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md
+  - logs/runner-cache/frontier_cycle712_joint_two_cell_full_update_physical_m2_2026_07_26.txt
+  - logs/runner-cache/frontier_full128_25site_nn_supplied_schedule_2026_07_24.txt
+  - logs/runner-cache/frontier_full128_bare_frame_pair_cocycle_2026_07_24.txt
+  - logs/runner-cache/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.txt
+  - logs/runner-cache/frontier_full128_cycle_encoder_2026_07_24.txt
+  - logs/runner-cache/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.txt
+  - logs/runner-cache/frontier_literal_patchgraph_z3_m2_placement_controller_cycle707_2026_07_26.txt
+  - outputs/frontier_full128_local_m64_seam_m2_bare_frame_intertwiner_receipt_2026_07_24.json
+open_imports: []
+no_go_discipline_status: pass_for_bounded_scope_only
+no_go_routes:
+  - isolated-cell direct intertwiner
+  - fixed one-hot supplied controller
+  - two-rail factor-index law
+  - literal PatchGraph placement and routing
+  - joint two-cell tableau/compiler
+  - translation-invariant recurrent preparation law
+trace_gate_classification: direct_blocker_closure
+review_disposition: pass
+pr_status: open_hardened_unmerged
+next_exact_action: independent audit reruns the complete restricted packet and alone assigns any verdict
+stop_condition: transport-safe current-cycle transcript and bounded-scope N1-N8 packet verified; independent audit remains required

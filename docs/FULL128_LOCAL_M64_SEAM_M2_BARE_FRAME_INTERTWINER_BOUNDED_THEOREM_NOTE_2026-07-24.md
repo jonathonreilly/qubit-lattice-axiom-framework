@@ -191,6 +191,17 @@ or genesis.
 | 12 | held domain | `L=3` train and `L=4` held/no-refit; zero collisions; four unlawful inputs rejected |
 | 13 | resources | 61 semantic sites; 115 touched sites; radius 4; 729-site cube; exact 601/3,306 gate split |
 
+## Complete authenticated transcript transport (2026-07-29)
+
+The primary runner's complete cached stdout is below the audit packet's current
+20,000-character per-section limit.  The authenticated record contains all 13
+passing check lines, including the unabridged all-128 intertwiner diagnostic
+with maximum residual `8.40686768501364e-15`, followed contiguously by the full
+`SUMMARY_JSON` and terminal `RESULT` line.  Re-rendering the current restricted
+packet therefore requires no clipped head/tail join.  This transport repair
+changes neither the runner nor any calculation, predicate, tolerance, or claim
+boundary in this note.
+
 The complete circuit word has SHA-256
 `a2e461d4984e4901fa0e8902c289ed2543da7545370891b96f2b50c6ba7f0fbf`.
 

@@ -10,6 +10,8 @@ from itertools import product
 from pathlib import Path
 import time
 
+import numpy as np
+
 import frontier_cycle719_recurrent_matter_history_controller_2026_07_26 as H719
 import frontier_cycle822_routec_staggered_radius_one_parity_even_transport_2026_07_30 as R822
 import frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30 as I823
@@ -33,6 +35,10 @@ AUDIT_INPUT_PATHS = (
     "CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md",
     "scripts/frontier_cycle719_recurrent_matter_history_"
     "controller_2026_07_26.py",
+    "docs/ROUTEC_STAGGERED_RADIUS_ONE_PARITY_EVEN_TRANSPORT_"
+    "CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md",
+    "scripts/frontier_cycle822_routec_staggered_radius_one_parity_even_"
+    "transport_2026_07_30.py",
 )
 DECLARED_INPUT_PATHS = AUDIT_INPUT_PATHS
 CHARGED_WIRES = frozenset(range(12))
@@ -311,7 +317,7 @@ def typed_atlas(normalized, wire_sites):
     all_paths = {**charged_paths, **neutral_paths}
     nearest = operand = returned = deletions = 0
     maximum_distance = routed_gates = 0
-    nonlocal_occurrences = 0
+    nonlocal_occurrences = nonlocal_unique_routes = 0
     for pair, path in all_paths.items():
         row = route_structure(path)
         nearest += row[0]
@@ -322,6 +328,7 @@ def typed_atlas(normalized, wire_sites):
         maximum_distance = max(maximum_distance, distance)
         routed_gates += frequency * (2 * distance - 1)
         if distance > 1:
+            nonlocal_unique_routes += 1
             nonlocal_occurrences += frequency
             deletions += row[3]
 
@@ -343,6 +350,18 @@ def typed_atlas(normalized, wire_sites):
     one_site_factors = sum(
         1 for gate in normalized
         for _kind, wires in H719.A.expanded((gate,)) if len(wires) == 1
+    )
+    route_exchange_parity_violations = sum(
+        any(site not in fixed_charged for site in path[:-1])
+        for path in charged_paths.values()
+    ) + sum(
+        any(site not in fixed_neutral for site in path)
+        for path in neutral_paths.values()
+    )
+    fswap = R822.primitive_matrix("FSWAP")
+    swap = R822.primitive_matrix("SWAP")
+    blank_corridor_fswap_residual = float(
+        np.linalg.norm((fswap - swap)[:, (0, 1)])
     )
     return {
         "paths": all_paths,
@@ -371,6 +390,7 @@ def typed_atlas(normalized, wire_sites):
         "operand_order_failures": operand,
         "route_return_failures": returned,
         "nonlocal_unique_route_deletions_detected": deletions,
+        "nonlocal_unique_routes": nonlocal_unique_routes,
         "nonlocal_route_occurrences": nonlocal_occurrences,
         "maximum_route_distance": maximum_distance,
         "routed_two_M2_gates": routed_gates,
@@ -380,7 +400,8 @@ def typed_atlas(normalized, wire_sites):
         ),
         "charged_route_exchange": "FSWAP",
         "neutral_route_exchange": "SWAP",
-        "route_exchange_prefix_parity_violations": 0,
+        "route_exchange_prefix_parity_violations": route_exchange_parity_violations,
+        "blank_corridor_FSWAP_vs_SWAP_residual": blank_corridor_fswap_residual,
         "legacy_charged_corridor_neutral_persistent_hits": len(
             legacy_charged_corridor & (persistent - charged_persistent)
         ),
@@ -496,13 +517,15 @@ def main() -> None:
             and atlas["charged_route_exchange"] == "FSWAP"
             and atlas["neutral_route_exchange"] == "SWAP"
             and atlas["route_exchange_prefix_parity_violations"] == 0
+            and atlas["blank_corridor_FSWAP_vs_SWAP_residual"] < 3.0e-11
         ),
         "legacy_failures_are_repaired_by_active_route_changes": (
             atlas["legacy_charged_corridor_neutral_persistent_hits"] == 10
             and atlas["legacy_charged_neutral_corridor_overlaps"] == 34
             and atlas["legacy_neutral_corridor_charged_persistent_hits"] == 12
             and atlas["neutral_unique_pairs_rerouted"] > 0
-            and atlas["nonlocal_unique_route_deletions_detected"] > 0
+            and atlas["nonlocal_unique_route_deletions_detected"]
+            == atlas["nonlocal_unique_routes"] > 0
         ),
         "proper_cubic_transport_and_products_preserve_the_typed_atlas": (
             covariance["proper_cubic_frames"] == 24

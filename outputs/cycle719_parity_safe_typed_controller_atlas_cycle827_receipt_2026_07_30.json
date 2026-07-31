@@ -3,8 +3,8 @@
   "audit": "unset",
   "authority": "none",
   "artifact_provenance_sha256": {
-    "note": "2c0fd28b3823078caa5b483bcab265c975090d399f8cc160eea5ac66e69c187e",
-    "runner": "402d9c2fcc19dd7c104885703c9cce88f011ec743b48b9fd07c3eec3c3c7720d"
+    "note": "41eda384f13d2e5b4de6c760c5e2021f3c3f9d89a99ed746108edd235c3a937c",
+    "runner": "2e371095411bb55635fbc384267a6504998b3ff741b5766676395a625c3c2b77"
   },
   "checks_passed": 6,
   "checks_total": 6,
@@ -34,6 +34,7 @@
     "charged_corridor_sites": 84,
     "charged_route_exchange": "FSWAP",
     "neutral_route_exchange": "SWAP",
+    "blank_corridor_FSWAP_vs_SWAP_residual": 0.0,
     "neutral_unique_pairs_rerouted": 1297,
     "neutral_pair_occurrences_rerouted": 7700,
     "maximum_route_distance": 45,
@@ -47,6 +48,7 @@
     "charged_neutral_corridor_overlaps": 34,
     "neutral_corridor_charged_persistent_hits": 12,
     "control_order_mutations_detected": 6,
+    "nonlocal_unique_routes": 41056,
     "nonlocal_unique_route_deletions_detected": 41056
   },
   "covariance": {

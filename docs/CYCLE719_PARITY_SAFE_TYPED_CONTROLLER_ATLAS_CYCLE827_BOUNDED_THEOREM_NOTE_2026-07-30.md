@@ -18,6 +18,8 @@ Direct inputs:
 [Cycle 826 endpoint/history interface](COMPANION_ENDPOINT_CYCLE719_HISTORY_INTERFACE_CYCLE826_BOUNDED_THEOREM_NOTE_2026-07-30.md)
 and
 [Cycle 719 recurrent controller](RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md).
+The fixed-type route and covariance grammar is imported from
+[Cycle 822 Route C](ROUTEC_STAGGERED_RADIUS_ONE_PARITY_EVEN_TRANSPORT_CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md).
 
 ## Question
 
@@ -54,7 +56,9 @@ four endpoint/pointer rows.
 The compiler assigns the 12 matter sites and 84 new charged corridor sites to
 the charged type. Charged control transport uses FSWAP through supplied blank
 charged route work; every other route uses SWAP through neutral sites. The
-charged corridors hit no persistent site.
+charged corridors hit no persistent site. On the declared blank-corridor
+domain, FSWAP and SWAP agree with residual zero; the fermionic exchange is
+nevertheless retained so the physical factor remains parity typed.
 
 The full word has 41,717 unique two-M2 endpoint pairs and 303,942 two-M2
 factor occurrences. Eight unique pairs (24 occurrences) carry a charged
@@ -90,7 +94,8 @@ Supplied:
 - the Cycle-719 finite 12-bank program, unique source token, bank genesis,
   successful admission sector, and program occurrence;
 - the fixed laboratory coframe and offline route atlas; and
-- clean neutral work and blank charged corridor M2 at genesis.
+- clean neutral work and blank charged corridor M2 at genesis; and
+- the landed Cycle-822 FSWAP/fixed-type route grammar.
 
 Derived:
 

@@ -514,3 +514,361 @@ def phase_state_certificate(
         "period_3_closure_exact": replay["all_close_at_movement_3"],
         "pass": exact,
     }
+
+
+def pack_states(states: tuple[State, ...]) -> list[int]:
+    return [
+        sum(state[wire] << lane for lane, state in enumerate(states))
+        for wire in range(len(states[0]))
+    ]
+
+
+def unpack_lane(columns: list[int], lane: int) -> State:
+    return tuple((column >> lane) & 1 for column in columns)
+
+
+def compiled_word(
+    word: tuple[object, ...],
+) -> tuple[tuple[int, int, int, int], ...]:
+    rows = []
+    for gate in word:
+        if len(set(gate.wires)) != len(gate.wires):
+            raise AssertionError(("repeated landed gate wire", gate))
+        if gate.kind == "X":
+            rows.append((0, gate.wires[0], 0, 0))
+        elif gate.kind == "CNOT":
+            rows.append((1, gate.wires[0], gate.wires[1], 0))
+        elif gate.kind == "TOF":
+            rows.append((2, gate.wires[0], gate.wires[1], gate.wires[2]))
+        else:
+            raise AssertionError(("non-reversible gate", gate))
+    return tuple(rows)
+
+
+def advance_packed(
+    columns: list[int],
+    schedule: tuple[tuple[int, int, int, int], ...],
+    all_lanes: int,
+) -> None:
+    for kind, first, second, third in schedule:
+        if kind == 0:
+            columns[first] ^= all_lanes
+        elif kind == 1:
+            columns[second] ^= columns[first] & all_lanes
+        else:
+            columns[third] ^= (
+                columns[first] & columns[second] & all_lanes
+            )
+
+
+def reconstruct_comparison_objects(
+    family: dict[str, object],
+) -> dict[str, object]:
+    """Rebuild the three funnels and two named post-S* skeletons."""
+
+    events = (0, 2, 1)
+    witness = BACKBONE[0]
+    words = family["words"]
+    epochs = family["epoch_states"]
+    assert isinstance(words, dict)
+    assert isinstance(epochs, tuple)
+    initial_primary = tuple(
+        K.A.apply_semantic(epochs[event], words[witness])
+        for event in events
+    )
+    initial_states = initial_primary + initial_primary
+    columns = pack_states(initial_states)
+    schedule = compiled_word(words[witness])
+    all_lanes = (1 << len(initial_states)) - 1
+    capture_at = {
+        14739: "FUNNEL_EVENT0_WEIGHT44",
+        14744: "SSTAR_POST_5_WEIGHT51",
+        14748: "SSTAR_POST_9_WEIGHT57",
+        33190: "FUNNEL_EVENT2_WEIGHT45",
+        51110: "FUNNEL_EVENT1_WEIGHT46",
+    }
+    captured: dict[str, State] = {}
+    duplicate_rows = []
+    for movement in range(1, max(capture_at) + 1):
+        advance_packed(columns, schedule, all_lanes)
+        if movement in capture_at:
+            name = capture_at[movement]
+            event_lane = (
+                0 if movement < 20000
+                else 1 if movement < 40000
+                else 2
+            )
+            captured[name] = unpack_lane(columns, event_lane)
+            duplicate_rows.append({
+                "object": name,
+                "movement": movement,
+                "primary_sha256":
+                    state_sha256(unpack_lane(columns, event_lane)),
+                "duplicate_sha256":
+                    state_sha256(unpack_lane(columns, event_lane + 3)),
+                "exact":
+                    unpack_lane(columns, event_lane)
+                    == unpack_lane(columns, event_lane + 3),
+            })
+    expected_weights = {
+        "FUNNEL_EVENT0_WEIGHT44": 44,
+        "FUNNEL_EVENT2_WEIGHT45": 45,
+        "FUNNEL_EVENT1_WEIGHT46": 46,
+        "SSTAR_POST_5_WEIGHT51": 51,
+        "SSTAR_POST_9_WEIGHT57": 57,
+    }
+    expected_funnel_hashes = {
+        "FUNNEL_EVENT0_WEIGHT44":
+            "cdf7e03092c6278b686c1f0edb9ebd716f4a285b1eabc8a7e2780695284a8f1a",
+        "FUNNEL_EVENT2_WEIGHT45":
+            "0015151ee4b751c35a5671fbb4f301d8569e78fc5a7ebe9f77372865b153c99b",
+        "FUNNEL_EVENT1_WEIGHT46":
+            "797fa122a629177c00c707aff4857d01bbad16b078983e3a6f1f5b632e094a41",
+    }
+    rows = tuple({
+        "object": name,
+        "construction": (
+            "Cycle-833 funnel boundary"
+            if name.startswith("FUNNEL_")
+            else (
+                "first event-0 resolution boundary, S*+5"
+                if name == "SSTAR_POST_5_WEIGHT51"
+                else "first weight-57 event-0 post-funnel boundary, S*+9"
+            )
+        ),
+        "anatomy": state_anatomy(captured[name]),
+    } for name in expected_weights)
+    exact = (
+        set(captured) == set(expected_weights)
+        and all(
+            sum(captured[name]) == weight
+            for name, weight in expected_weights.items()
+        )
+        and all(
+            state_sha256(captured[name]) == expected_hash
+            for name, expected_hash in expected_funnel_hashes.items()
+        )
+        and all(row["exact"] for row in duplicate_rows)
+    )
+    return {
+        "objects": captured,
+        "public_rows": rows,
+        "expected_weights": expected_weights,
+        "expected_funnel_sha256": expected_funnel_hashes,
+        "determinism_rows": tuple(duplicate_rows),
+        "pass": exact,
+    }
+
+
+def projection(state: State, wires: tuple[int, ...]) -> int:
+    return sum(state[wire] << index for index, wire in enumerate(wires))
+
+
+def selector_certificate(
+    family: dict[str, object],
+    replay: dict[str, object],
+    comparisons: dict[str, object],
+) -> dict[str, object]:
+    phases = replay["phase_states"]
+    assert isinstance(phases, tuple)
+    coincidence = phases[2][0]
+    noncoincidence_states = tuple(dict.fromkeys(
+        (*phases[0], *phases[1])
+    ))
+    diff_sets = tuple(
+        frozenset(
+            wire for wire, values in enumerate(zip(coincidence, state))
+            if values[0] != values[1]
+        )
+        for state in noncoincidence_states
+    )
+    universal_difference = frozenset.intersection(*diff_sets)
+    difference_union = frozenset.union(*diff_sets)
+    register_wires = tuple(WIRE_BY_NAME[name] for name in REGISTER_FIELDS)
+    register_set = frozenset(register_wires)
+    complement_wires = tuple(
+        wire for wire in range(STATE_BITS) if wire not in register_set
+    )
+    boundary_states = tuple(
+        state for phase_states in phases for state in phase_states
+    )
+    register_values = tuple(
+        projection(state, register_wires) for state in boundary_states
+    )
+    singleton_selectors = tuple(
+        {
+            "wire_index": wire,
+            "field": WIRE_NAMES[wire],
+            "coincidence_value": coincidence[wire],
+            "noncoincidence_value": noncoincidence_states[0][wire],
+        }
+        for wire in complement_wires
+        if all(
+            state[wire] == coincidence[wire]
+            for state in phases[2]
+        )
+        and all(
+            state[wire] == 1 - coincidence[wire]
+            for state in (*phases[0], *phases[1])
+        )
+    )
+    anatomy_rows = tuple(
+        state_anatomy(state) for state in boundary_states
+    )
+    occupancy_values = {
+        compact(row["occupancy"]) for row in anatomy_rows
+    }
+    token_values = {compact(row["tokens"]) for row in anatomy_rows}
+    geometry_rows = tuple(meeting_geometry(pair) for pair in BACKBONE)
+    source_pointer = WIRE_BY_NAME["source.SOURCE_POINTER"]
+    link_token = WIRE_BY_NAME["link0.wire[0]"]
+    parity_rows = tuple({
+        "phase_mod_3": phase,
+        "key": key,
+        "full_weight_parity": sum(state) % 2,
+        "source_component_parity":
+            sum(state[:K.M.R12.SOURCE_WIDTH]) % 2,
+        "link0_component_parity": (
+            sum(K.M.unpack_state(state, FIXTURE_BANKS)[1][0]) % 2
+        ),
+    } for phase, phase_states in enumerate(phases)
+      for key, state in zip(EVENT3_KEYS, phase_states))
+    full_parity_selects = all(
+        row["full_weight_parity"] == sum(coincidence) % 2
+        for row in parity_rows if row["phase_mod_3"] == 2
+    ) and all(
+        row["full_weight_parity"] != sum(coincidence) % 2
+        for row in parity_rows if row["phase_mod_3"] != 2
+    )
+    component_parity_selects = {
+        "source": all(
+            (row["source_component_parity"] == 0)
+            == (row["phase_mod_3"] == 2)
+            for row in parity_rows
+        ),
+        "link0": all(
+            (row["link0_component_parity"] == 0)
+            == (row["phase_mod_3"] == 2)
+            for row in parity_rows
+        ),
+    }
+    comparison_states = comparisons["objects"]
+    assert isinstance(comparison_states, dict)
+    comparison_order = (
+        "FUNNEL_EVENT0_WEIGHT44",
+        "FUNNEL_EVENT2_WEIGHT45",
+        "FUNNEL_EVENT1_WEIGHT46",
+        "SSTAR_POST_5_WEIGHT51",
+        "SSTAR_POST_9_WEIGHT57",
+    )
+    comparison_rows = tuple({
+        "object": name,
+        "exact_match": coincidence == state,
+        "exact_diff_from_coincidence": exact_diff(coincidence, state),
+        "occupancy_equal":
+            state_anatomy(coincidence)["occupancy"]
+            == state_anatomy(state)["occupancy"],
+        "tokens_equal":
+            state_anatomy(coincidence)["tokens"]
+            == state_anatomy(state)["tokens"],
+    } for name in comparison_order
+      for state in (comparison_states[name],)) + ({
+        "object": "S0_prime",
+        "exact_match": coincidence == family["S0_prime"],
+        "exact_diff_from_coincidence":
+            exact_diff(coincidence, family["S0_prime"]),
+        "occupancy_equal": True,
+        "tokens_equal": True,
+    },)
+    expected_singletons = (
+        "source.SOURCE_POINTER",
+        "link0.wire[0]",
+    )
+    exact = (
+        comparisons["pass"]
+        and len(noncoincidence_states) == 8
+        and not register_set & difference_union
+        and len(register_set) == len(REGISTER_FIELDS) == 39
+        and len(set(register_values)) == 1
+        and tuple(
+            WIRE_NAMES[wire] for wire in sorted(universal_difference)
+        ) == expected_singletons
+        and tuple(row["field"] for row in singleton_selectors)
+        == expected_singletons
+        and len(occupancy_values) == len(token_values) == 1
+        and all(
+            row["both_A_tokens_on_center_union"]
+            and not row["token_collision"]
+            for row in geometry_rows
+        )
+        and not full_parity_selects
+        and component_parity_selects == {
+            "source": True, "link0": True
+        }
+        and all(
+            state[source_pointer] + state[link_token] == 1
+            for state in boundary_states
+        )
+        and comparison_rows[-1]["exact_match"]
+        and not any(
+            row["exact_match"] for row in comparison_rows[:-1]
+        )
+    )
+    return {
+        "verdict": "PASS" if exact else "FAIL",
+        "coincidence_state_is": "EXACT_S0_PRIME",
+        "register_block": {
+            "field_count": len(register_wires),
+            "fields": REGISTER_FIELDS,
+            "common_projection_hex":
+                f"{register_values[0]:010x}",
+            "common_projection_weight": register_values[0].bit_count(),
+            "common_at_all_27_boundaries":
+                len(set(register_values)) == 1,
+            "difference_union_intersection": tuple(
+                sorted(register_set & difference_union)
+            ),
+        },
+        "complement": {
+            "wire_count": len(complement_wires),
+            "distinct_noncoincidence_state_count":
+                len(noncoincidence_states),
+            "diff_weight_by_distinct_state":
+                tuple(map(len, diff_sets)),
+            "exact_difference_union": tuple(
+                (wire, WIRE_NAMES[wire])
+                for wire in sorted(difference_union)
+            ),
+            "exact_universal_difference": tuple(
+                (wire, WIRE_NAMES[wire])
+                for wire in sorted(universal_difference)
+            ),
+            "minimal_single_wire_selectors": singleton_selectors,
+            "selector_pair_is_redundant":
+                len(singleton_selectors) == 2,
+            "transfer_invariant":
+                "source.SOURCE_POINTER + link0.wire[0] == 1",
+        },
+        "occupancy_geometry": {
+            "boundary_occupancy_value_count": len(occupancy_values),
+            "boundary_token_register_value_count": len(token_values),
+            "selects_phase": False,
+            "meet_rows": geometry_rows,
+            "meet_geometry_phase_dependent": False,
+        },
+        "parity_structure": {
+            "rows": parity_rows,
+            "full_weight_parity_selects": full_parity_selects,
+            "component_parity_selects": component_parity_selects,
+            "reading":
+                "source and link0 component parity are the same redundant "
+                "logical transfer selector as the two physical wires",
+        },
+        "known_object_exact_comparisons": comparison_rows,
+        "finding":
+            "The pulse is exact S0'.  Outside the common 39-field block, "
+            "source.SOURCE_POINTER=1 and link0.wire[0]=0 each select it "
+            "alone; occupancy, token rows, meet geometry, and full parity "
+            "do not.",
+        "pass": exact,
+    }

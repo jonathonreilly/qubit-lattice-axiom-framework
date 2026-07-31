@@ -1,6 +1,6 @@
 {
- "edge_count": 15346,
- "node_count": 4607,
+ "edge_count": 15348,
+ "node_count": 4608,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2452,6 +2452,10 @@
   },
   "companion_bank_static_certificate_povm_input_convention_meta_note_2026-07-30": {
    "deps_hash": "9ec29ca50bf8",
+   "out_degree": 2
+  },
+  "companion_full_seam_endpoint_instrument_cycle823_bounded_theorem_note_2026-07-30": {
+   "deps_hash": "56fa6ec242c3",
    "out_degree": 2
   },
   "companion_gauge_work_center_controllability_cycle797_bounded_theorem_note_2026-07-30": {

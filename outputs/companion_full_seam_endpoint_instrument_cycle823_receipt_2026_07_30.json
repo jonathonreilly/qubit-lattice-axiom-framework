@@ -3,8 +3,8 @@
   "audit": "unset",
   "authority": "none",
   "artifact_provenance_sha256": {
-    "note": "7838206e0d69ba29f6cfdac718aff21872d4d96c9f2d85733ca43a3cd0a0a9ae",
-    "runner": "c23370fdc02ca2e70dcb68e7de816da518c76425db84d2b1d6d69f02e63cb543"
+    "note": "34a781ac76b04dd3cd7ead87ed4a542ec73b7e5772e9b4733c690eb8ef1e4d50",
+    "runner": "edc2805c123d052cb9bc21be51ff5f435da918eaf24187dbf3bf474dbd96792d"
   },
   "checks_passed": 9,
   "checks_total": 9,
@@ -13,6 +13,7 @@
     "held_shapes": 4,
     "edges": 82,
     "matched_physical_target_row_pairs": 328,
+    "four_plus_four_row_cardinality_failures": 0,
     "physical_and_target_signature_classes": 1312,
     "row_endpoint_mask_failures": 0,
     "monomial_full_seam_failures": 0,
@@ -104,16 +105,18 @@
     "proper_cubic_frames": 24,
     "translation_origins": 8,
     "ordered_frame_products": 576,
+    "held_boxes_with_covariance_replay": 4,
     "transported_program_covariance": true,
     "target_native_route_recompilation_proved": false
   },
-  "preserved_fixtures": {
+  "inherited_fixture_regression_not_composed_with_pointer": {
     "one_particle_mass": 0.45340565417488515,
     "one_particle_mass_residual": 5.551115123125783e-17,
     "one_particle_coin_eigen_residual": 2.594441202963249e-16,
     "contact_vacuum_and_one_particle_residual": 0.0,
     "contact_double_occupation_phase_residual": 0.0
   },
+  "composed_matter_only_mass_contact_pointer_theorem": false,
   "stage_labels_are_physical_time": false,
   "pointer_is_occurrence_actuality_Record_Born_source_or_clock": false,
   "pointer_reset_or_fresh_bank_derived": false,

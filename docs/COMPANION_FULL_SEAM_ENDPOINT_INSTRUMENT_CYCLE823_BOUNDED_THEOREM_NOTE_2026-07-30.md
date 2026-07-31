@@ -12,6 +12,12 @@
 **Load-bearing companion construction:**
 [`RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md`](RECURRENT_COMPANION_PHYSICAL_M2_UPDATE_LOCAL_CHOI_PREPARATION_CYCLE720_BOUNDED_THEOREM_NOTE_2026-07-27.md)
 
+**Runner:**
+[`frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py`](../scripts/frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py)
+
+**Receipt:**
+[`companion_full_seam_endpoint_instrument_cycle823_receipt_2026_07_30.json`](../outputs/companion_full_seam_endpoint_instrument_cycle823_receipt_2026_07_30.json)
+
 **Non-load-bearing comparison:**
 `PHYSICAL_M2_ENDPOINT_INSTRUMENT_CYCLE704_CYCLE612_BRIDGE_CYCLE713_BOUNDED_THEOREM_NOTE_2026-07-26.md`
 
@@ -118,15 +124,19 @@ neutral-only SWAP, H, T, and OR factors, every added primitive commutes with the
 one rebuilt coordinate product `P_ext`.  Across the combined circuit there are
 zero untyped uses, elementary parity failures, or cumulative-prefix failures.
 
-The one-particle mass residual remains `5.551115123125783e-17`; the free,
-seam, and contact fixtures are not modified.
+The runner reruns the inherited Cycle-822 one-particle mass and contact
+regression, obtaining mass residual `5.551115123125783e-17`.  The source rows,
+couplings, and factor order are not modified.  This is not a composed theorem
+that the matter-only mass/contact channel is unchanged after retaining or
+discarding the new pointer; that question remains open.
 
 ## Covariance and schedule boundary
 
-The compiled coordinates, types, endpoint registers, routes, and fixed program
-transport through all 24 proper-cubic frames, eight tested physical origins,
-and all 576 ordered frame products with zero nearest-neighbour, palette,
-typing, collision, colour, coordinate-product, or colour-product failures.
+For each held box, the compiled coordinates, types, endpoint registers, routes,
+and fixed program transport through all 24 proper-cubic frames, eight tested
+physical origins, and all 576 ordered frame products with zero nearest-
+neighbour, palette, typing, collision, colour, coordinate-product, or colour-
+product failures.
 
 This is transported-program covariance.  The lab-chart breadth-first router is
 not rerun and proved equal to the transported route atlas in every frame.  The
@@ -180,12 +190,14 @@ Derived:
   persistent neutral M2 per edge;
 - zero schedule/type/parity-prefix failures on four held boxes and transported
   24-frame/eight-origin/576-product covariance; and
-- preservation of the landed one-particle mass, free, seam, and contact
-  fixtures.
+- a rerun of the inherited one-particle mass/contact regression with its source
+  rows and couplings unchanged, not a composed matter-only pointer theorem.
 
 Open:
 
 - physical consumption/reset or fresh-bank renewal for the retained pointer;
+- the composed matter-only mass/contact channel after retaining, consuming, or
+  discarding the pointer;
 - autonomous clean-register/code/route genesis, enforcement, fault repair,
   program generation, and occurrence;
 - a translation-local query-free route law, target-native frame

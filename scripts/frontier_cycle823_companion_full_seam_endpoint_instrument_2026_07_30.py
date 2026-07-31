@@ -31,6 +31,8 @@ NOTE_PATH = (
 AUDIT_INPUT_PATHS = (
     NOTE_PATH,
     "scripts/frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py",
+    "docs/PHYSICAL_M2_TYPED_RADIUS_ONE_COMPILER_TOURNAMENT_"
+    "CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md",
     "docs/ROUTEC_STAGGERED_RADIUS_ONE_PARITY_EVEN_TRANSPORT_"
     "CYCLE822_BOUNDED_THEOREM_NOTE_2026-07-30.md",
     "scripts/frontier_cycle822_routec_staggered_radius_one_parity_even_"
@@ -186,6 +188,7 @@ def expected_instrument_output(
 def full_seam_algebra_certificate() -> dict[str, object]:
     row_pairs = signature_classes = instrument_cases = 0
     row_cardinality_failures = 0
+    endpoint_pair_overlap_failures = 0
     row_mask_failures = swap_failures = monomial_failures = 0
     instrument_failures = 0
     maximum_instrument_residual = 0.0
@@ -197,6 +200,13 @@ def full_seam_algebra_certificate() -> dict[str, object]:
         fixture = M720.CompanionFixture.build(shape)
         shape_classes = shape_failures = 0
         row_payload = []
+        endpoint_pairs = tuple((edge[4], edge[5]) for edge in fixture.edges)
+        shape_endpoint_pair_overlap_failures = sum(
+            bool(set(first) & set(second))
+            for index, first in enumerate(endpoint_pairs)
+            for second in endpoint_pairs[index + 1:]
+        )
+        endpoint_pair_overlap_failures += shape_endpoint_pair_overlap_failures
         for edge_index, edge in enumerate(fixture.edges):
             left, right = edge[4], edge[5]
             endpoint_mask = (1 << left) | (1 << right)
@@ -304,6 +314,7 @@ def full_seam_algebra_certificate() -> dict[str, object]:
             "edges": len(fixture.edges),
             "physical_and_target_signature_classes": shape_classes,
             "full_seam_endpoint_swap_failures": shape_failures,
+            "endpoint_pair_overlap_failures": shape_endpoint_pair_overlap_failures,
             "row_tuple_sha256": sha256(repr(tuple(row_payload)).encode()).hexdigest(),
         })
     mutation_trials = 2 * sum(row["edges"] for row in per_shape)
@@ -311,6 +322,7 @@ def full_seam_algebra_certificate() -> dict[str, object]:
         "held_shapes": len(SHAPES),
         "matched_physical_target_row_pairs": row_pairs,
         "four_plus_four_row_cardinality_failures": row_cardinality_failures,
+        "endpoint_pair_overlap_failures": endpoint_pair_overlap_failures,
         "physical_and_target_signature_classes": signature_classes,
         "monomial_full_seam_failures": monomial_failures,
         "full_seam_endpoint_swap_failures": swap_failures,
@@ -665,6 +677,16 @@ def main() -> None:
     mass = R822.one_particle_mass_fixture()
     total_edges = sum(box["edges"] for box in boxes)
     checks = {
+        "declared_inputs_are_unique_existing_repo_relative_files": (
+            len(AUDIT_INPUT_PATHS) == len(set(AUDIT_INPUT_PATHS))
+            and NOTE_PATH in AUDIT_INPUT_PATHS
+            and "scripts/frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py"
+            in AUDIT_INPUT_PATHS
+            and all(
+                not Path(path).is_absolute() and (ROOT / path).is_file()
+                for path in AUDIT_INPUT_PATHS
+            )
+        ),
         "complete_physical_and_target_seams_swap_declared_endpoints": (
             algebra["matched_physical_target_row_pairs"] == 328
             and algebra["four_plus_four_row_cardinality_failures"] == 0
@@ -672,6 +694,9 @@ def main() -> None:
             and algebra["row_endpoint_mask_failures"] == 0
             and algebra["monomial_full_seam_failures"] == 0
             and algebra["full_seam_endpoint_swap_failures"] == 0
+        ),
+        "edge_endpoint_pairs_are_pairwise_disjoint_in_every_held_box": (
+            algebra["endpoint_pair_overlap_failures"] == 0
         ),
         "coherent_endpoint_instrument_is_exact_on_clean_domain": (
             algebra["instrument_clean_domain_cases"] == 1312

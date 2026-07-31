@@ -3,17 +3,18 @@
   "audit": "unset",
   "authority": "none",
   "artifact_provenance_sha256": {
-    "note": "34a781ac76b04dd3cd7ead87ed4a542ec73b7e5772e9b4733c690eb8ef1e4d50",
-    "runner": "edc2805c123d052cb9bc21be51ff5f435da918eaf24187dbf3bf474dbd96792d"
+    "note": "8679f0f737a399b024193bb000158f86049ea10932cccfe1965b5d403ca310f4",
+    "runner": "1c70bf782005bbf90608c99417470dcb0f964749644849c8835ef6314c61a737"
   },
-  "checks_passed": 9,
-  "checks_total": 9,
+  "checks_passed": 11,
+  "checks_total": 11,
   "claim_scope": "finite held-box coherent endpoint-opportunity instrument on the landed Cycle822 companion seam; not an autonomous occurrence or recurrent-reset law",
   "full_seam_algebra": {
     "held_shapes": 4,
     "edges": 82,
     "matched_physical_target_row_pairs": 328,
     "four_plus_four_row_cardinality_failures": 0,
+    "endpoint_pair_overlap_failures": 0,
     "physical_and_target_signature_classes": 1312,
     "row_endpoint_mask_failures": 0,
     "monomial_full_seam_failures": 0,

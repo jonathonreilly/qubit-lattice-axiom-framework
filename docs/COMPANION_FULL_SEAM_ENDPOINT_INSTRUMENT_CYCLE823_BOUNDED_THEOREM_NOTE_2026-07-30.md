@@ -144,10 +144,11 @@ finite offline atlas, directed-edge ownership, factor order, stage/colour/slot
 program, coframe, and circuit occurrence remain supplied.  Stage labels and
 factor ordinals are circuit structure, not physical time.
 
-The prewrites for all edges may precede the complete seam layer because the
-row census proves that another edge changes none of this edge's declared
-matter endpoints.  Postwrite/OR/cleanup follows the seam layer and precedes
-contact.  No schedule counter is introduced.
+The prewrites for all edges may precede the complete seam layer because an
+explicit pairwise census finds zero shared declared matter endpoints between
+distinct edges in every held box, while the row census proves that every seam
+row changes only its own declared endpoint pair.  Postwrite/OR/cleanup follows
+the seam layer and precedes contact.  No schedule counter is introduced.
 
 ## Active controls and limitations
 

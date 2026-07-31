@@ -538,6 +538,11 @@ def certificate_a_wire_dynamics(
             "one_macro_orbit_neighborhood": tuple(sorted(
                 {wire} | set(read_targets) | set(write_controls)
             )),
+            "touching_clause_applications_per_complete_movement":
+                2 * len(rows),
+            "application_count_reason":
+                "two distinct A tokens each visit every station macro "
+                "once per complete 11-phase movement",
             "touching_rule_clauses": tuple(rows),
         }
     kind_counts = Counter(
@@ -1174,6 +1179,122 @@ def certificate_c_verdict(
     }
 
 
+def fixture_digest(fixtures: dict[str, object]) -> str:
+    macros = fixtures["macros"]
+    keys = fixtures["keys"]
+    states = fixtures["states"]
+    target = fixtures["target"]
+    assert isinstance(macros, tuple)
+    assert isinstance(keys, tuple)
+    assert isinstance(states, dict)
+    assert isinstance(target, int)
+    hasher = sha256()
+    for macro in macros:
+        hasher.update(len(macro).to_bytes(2, "little"))
+        for gate in macro:
+            hasher.update(struct.pack("<BHHH", *gate))
+    for key in keys:
+        hasher.update(compact(key).encode())
+        hasher.update(states[key].to_bytes(STATE_BYTES, "little"))
+    hasher.update(target.to_bytes(STATE_BYTES, "little"))
+    return hasher.hexdigest()
+
+
+def certificate_d_controls(
+    controls: dict[str, object],
+    fixtures: dict[str, object],
+    fixture_replay: dict[str, object],
+    evolution: dict[str, object],
+    elapsed_seconds: float,
+) -> dict[str, object]:
+    first_digest = fixture_digest(fixtures)
+    replay_digest = fixture_digest(fixture_replay)
+    evolution_public = evolution["public"]
+    assert isinstance(evolution_public, dict)
+    blocked_at_end = tuple(sorted(
+        name for name in sys.modules
+        if name.rsplit(".", 1)[-1] in BLOCKLISTED_MODULES
+    ))
+    determinism = {
+        "fixture_decode_digest_first": first_digest,
+        "fixture_decode_digest_replay": replay_digest,
+        "fixture_decode_exact_replay": (
+            first_digest == replay_digest
+            and fixtures["public"] == fixture_replay["public"]
+        ),
+        "duplicate_schedule_masks_exact":
+            evolution_public["structural_duplicate_schedule_exact"],
+        "duplicate_state_checkpoints":
+            evolution_public["duplicate_determinism_checkpoints"],
+        "duplicate_replay_exact": (
+            evolution_public["structural_duplicate_schedule_exact"]
+            and all(
+                row["all_44_exact"]
+                for row in evolution_public[
+                    "duplicate_determinism_checkpoints"
+                ]
+            )
+        ),
+    }
+    base_pass = (
+        controls["pass"]
+        and determinism["fixture_decode_exact_replay"]
+        and determinism["duplicate_replay_exact"]
+        and not blocked_at_end
+        and not FIREWALL.hits
+        and elapsed_seconds < AUDIT_TIMEOUT_SEC
+    )
+    return {
+        "certificate_role": "D_CONTROLS",
+        "source_controls": controls,
+        "primary_access_policy":
+            "BLOCKLIST source primaries; text/AST and literal-copy only; "
+            "no import or execution",
+        "blocked_modules_loaded_at_end": blocked_at_end,
+        "firewall_hits_at_end": tuple(FIREWALL.hits),
+        "determinism": determinism,
+        "exactness":
+            "packed 5815-bit equality against SHA-pinned S*, with every "
+            "controller tick checked",
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "observed_runtime_seconds": round(elapsed_seconds, 6),
+        "runtime_below_limit": elapsed_seconds < AUDIT_TIMEOUT_SEC,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "observed_stdout_bytes": 0,
+        "stdout_below_limit": False,
+        "base_pass_before_stdout_check": base_pass,
+        "pass": False,
+    }
+
+
+def stable_render(report: dict[str, object]) -> str:
+    certificate_d = report["certificate_D"]
+    assert isinstance(certificate_d, dict)
+    previous_size = -1
+    for _attempt in range(10):
+        rendered = compact(report)
+        observed_size = len(rendered.encode()) + 1
+        certificate_d["observed_stdout_bytes"] = observed_size
+        certificate_d["stdout_below_limit"] = (
+            observed_size < STDOUT_LIMIT_BYTES
+        )
+        certificate_d["pass"] = (
+            certificate_d["base_pass_before_stdout_check"]
+            and certificate_d["stdout_below_limit"]
+        )
+        report["overall_pass"] = (
+            report["certificates_pass_before_D"]
+            and certificate_d["pass"]
+        )
+        if observed_size == previous_size:
+            break
+        previous_size = observed_size
+    final = compact(report)
+    if len(final.encode()) + 1 != certificate_d["observed_stdout_bytes"]:
+        raise AssertionError("stdout accounting did not stabilize")
+    return final
+
+
 def run() -> int:
     started = monotonic()
     controls = source_controls()
@@ -1184,6 +1305,16 @@ def run() -> int:
         certificate_a, evolution
     )
     certificate_c = certificate_c_verdict(certificate_a, certificate_b)
+    fixture_replay = decode_cycle830_fixtures()
+    elapsed = monotonic() - started
+    certificate_d = certificate_d_controls(
+        controls, fixtures, fixture_replay, evolution, elapsed
+    )
+    certificates_pass_before_d = (
+        certificate_a["pass"]
+        and certificate_b["pass"]
+        and certificate_c["pass"]
+    )
     report = {
         "cycle": 842,
         "title": "the local causal theorem attempt",
@@ -1191,16 +1322,12 @@ def run() -> int:
         "certificate_B": certificate_b,
         "certificate_C": certificate_c,
         "bounded_evolution": evolution["public"],
-        "certificate_D_controls": controls,
-        "elapsed_seconds": round(monotonic() - started, 6),
-        "overall_pass": (
-            controls["pass"]
-            and certificate_a["pass"]
-            and certificate_b["pass"]
-            and certificate_c["pass"]
-        ),
+        "certificate_D": certificate_d,
+        "elapsed_seconds": round(elapsed, 6),
+        "certificates_pass_before_D": certificates_pass_before_d,
+        "overall_pass": False,
     }
-    rendered = compact(report)
+    rendered = stable_render(report)
     if len(rendered.encode()) >= STDOUT_LIMIT_BYTES:
         raise AssertionError("stdout limit exceeded")
     print(rendered)

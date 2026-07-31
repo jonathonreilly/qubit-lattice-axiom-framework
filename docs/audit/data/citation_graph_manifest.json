@@ -1,6 +1,6 @@
 {
- "edge_count": 15367,
- "node_count": 4617,
+ "edge_count": 15368,
+ "node_count": 4618,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4533,6 +4533,10 @@
   "family_companion_compare_note": {
    "deps_hash": "d65483554fad",
    "out_degree": 3
+  },
+  "family_winning_mapping_cycle766_bounded_theorem_note_2026-07-28": {
+   "deps_hash": "974af8052d05",
+   "out_degree": 1
   },
   "fermion_parity_pauli_tensor_involution_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",

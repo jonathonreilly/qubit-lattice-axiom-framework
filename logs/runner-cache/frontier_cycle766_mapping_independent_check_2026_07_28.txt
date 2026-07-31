@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle766_mapping_independent_check_2026_07_28.py
+runner_sha256: cf95515c7b94f40e57826f7434ec5d6349c00fc9c0d41c2fe5e5c16f82c11c5f
+input_fingerprint_sha256: f74f4415822253e9b6203466247f282f9a4951bbe64a35089bef2d44656eafae
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS A independently enumerated S3 cubed
+PASS B inverse-index transform reproduces exact rows
+PASS C direct exact comparator distances
+PASS D direct exact uniform distances
+PASS E independent endpoint classifications
+PASS F independent unique pooled rank
+PASS G independent next score and endpoint counts
+PASS H candidate appears once
+{"boundary":"independent exact check of supplied synthetic rows, comparator, coordinate order, and per-row bijection over S3 cubed only","checks":{"A independently enumerated S3 cubed":true,"B inverse-index transform reproduces exact rows":true,"C direct exact comparator distances":true,"D direct exact uniform distances":true,"E independent endpoint classifications":true,"F independent unique pooled rank":true,"G independent next score and endpoint counts":true,"H candidate appears once":true},"comparator_tv_exact":["4185210791616554691/10450000000000000000","87657118548737201/206250000000000000","1140349238972309449/3643750000000000000","21609661557155861/1168750000000000000"],"mapping_input_to_output":[[0,1,2],[1,2,0],[2,0,1]],"next_distinct_pooled_comparator_tv_exact":"823671370658282203/28050000000000000000","pass":true,"pooled":[391,230,501],"rank_by_pooled_comparator_tv":[1,1],"rows":[[13,128,68],[232,97,1],[146,5,432]],"terminal":"CYCLE766_INDEPENDENT_CONDITIONAL_S3_CUBED_PASS","uniform_tv_exact":["175/627","61/165","713/1749","24/187"]}
+
+----- stderr -----
+

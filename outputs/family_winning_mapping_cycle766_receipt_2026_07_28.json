@@ -1,0 +1,42 @@
+{
+  "artifacts": {
+    "caches": {
+      "frontier_cycle766_family_winning_mapping_2026_07_28.txt": "79f23a0d050227afa35f6897fbb8d7f188437f47042cbc4d8461dda539ca66b6",
+      "frontier_cycle766_mapping_independent_check_2026_07_28.txt": "e3c8bd9454c3f17fe13014b4ae51dc47c910aa7f4c1806a60972665d333160cc"
+    },
+    "note": {
+      "path": "docs/FAMILY_WINNING_MAPPING_CYCLE766_BOUNDED_THEOREM_NOTE_2026-07-28.md",
+      "sha256": "2593e2ccdca8c998038b5fe6a7ce636405feac42bbf8c506cc428c8acd760e16"
+    },
+    "runners": {
+      "frontier_cycle766_family_winning_mapping_2026_07_28.py": "9e1b03c2f185815d4c897556951e55caf1363641f288434366112b0153808909",
+      "frontier_cycle766_mapping_independent_check_2026_07_28.py": "cf95515c7b94f40e57826f7434ec5d6349c00fc9c0d41c2fe5e5c16f82c11c5f"
+    }
+  },
+  "audit": "unset",
+  "authority": "none",
+  "boundary": {
+    "finite_domain": "exactly one supplied coordinate bijection from S3 for each of three supplied rows; 216 members total",
+    "inputs": "supplied synthetic ordered rows, supplied rational comparator, exact uniform reference, supplied coordinate order, supplied cyclic per-row bijection",
+    "scope": "finite conditional transformation, distance, rank, and census arithmetic only",
+    "untested": "many-to-one and within-row-varying maps, stochastic kernels, affine calibrations, coarse-grainings, alternate coordinate definitions, metrics, and comparators"
+  },
+  "checks": {
+    "independent_named_checks_passed": 8,
+    "primary_named_checks_passed": 9
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 766,
+  "date": "2026-07-31",
+  "result": {
+    "all_four_scopes_comparator_closer_members": 18,
+    "mapping_input_to_output": [[0, 1, 2], [1, 2, 0], [2, 0, 1]],
+    "next_distinct_pooled_comparator_tv_exact": "823671370658282203/28050000000000000000",
+    "pooled": [391, 230, 501],
+    "pooled_comparator_closer_members": 91,
+    "pooled_rank": [1, 1],
+    "rows": [[13, 128, 68], [232, 97, 1], [146, 5, 432]],
+    "scope_comparator_closer_flags": [false, false, true, true]
+  },
+  "status": "CYCLE766_CONDITIONAL_S3_CUBED_UNIQUE_MINIMUM_PASS"
+}

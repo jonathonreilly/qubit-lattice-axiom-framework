@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle766_family_winning_mapping_2026_07_28.py
+runner_sha256: 9e1b03c2f185815d4c897556951e55caf1363641f288434366112b0153808909
+input_fingerprint_sha256: f74f4415822253e9b6203466247f282f9a4951bbe64a35089bef2d44656eafae
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS A supplied domains and simplexes
+PASS B exact supplied-map transformed rows
+PASS C exact endpoint total-variation values
+PASS D exact endpoint classifications
+PASS E exhaustive S3-cubed family cardinality
+PASS F unique pooled minimum and exact rank
+PASS G exact second distinct pooled score
+PASS H exact S3-cubed endpoint counts
+PASS I supplied map occurs exactly once
+{"boundary":"supplied synthetic vectors, comparator, coordinate order, and per-row bijection; exhaustive only over S3 cubed; finite conditional arithmetic only","candidate":{"comparator_tv":[{"decimal":"0.400498640346082","exact":"4185210791616554691/10450000000000000000"},{"decimal":"0.425004211145392","exact":"87657118548737201/206250000000000000"},{"decimal":"0.312960340026706","exact":"1140349238972309449/3643750000000000000"},{"decimal":"0.018489549995427","exact":"21609661557155861/1168750000000000000"}],"mapping_input_to_output":[[0,1,2],[1,2,0],[2,0,1]],"pooled":[391,230,501],"rank_by_pooled_comparator_tv":[1,1],"rows":[[13,128,68],[232,97,1],[146,5,432]],"uniform_tv":[{"decimal":"0.279106858054226","exact":"175/627"},{"decimal":"0.369696969696970","exact":"61/165"},{"decimal":"0.407661520869068","exact":"713/1749"},{"decimal":"0.128342245989305","exact":"24/187"}]},"checks":{"A supplied domains and simplexes":true,"B exact supplied-map transformed rows":true,"C exact endpoint total-variation values":true,"D exact endpoint classifications":true,"E exhaustive S3-cubed family cardinality":true,"F unique pooled minimum and exact rank":true,"G exact second distinct pooled score":true,"H exact S3-cubed endpoint counts":true,"I supplied map occurs exactly once":true},"family":{"all_four_scopes_comparator_closer":18,"members":216,"next_distinct_pooled_comparator_tv":{"decimal":"0.029364398240937","exact":"823671370658282203/28050000000000000000"},"pooled_comparator_closer":91,"ties_at_candidate_pooled_comparator_tv":1},"pass":true,"terminal":"CYCLE766_CONDITIONAL_S3_CUBED_UNIQUE_MINIMUM_PASS"}
+
+----- stderr -----
+

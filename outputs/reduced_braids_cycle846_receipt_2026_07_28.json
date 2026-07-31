@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockP19-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle846_reduced_braids_delay_law_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 11
+    },
+    "logs/runner-cache/frontier_cycle846_reduced_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 846,
+  "files": {
+    "docs/REDUCED_BRAIDS_CYCLE846_BOUNDED_THEOREM_NOTE_2026-07-28.md": "0bc289b0bac8d7531dd851abe3b5473f0d363a2c1416ca1ff134125063a97b8d",
+    "logs/runner-cache/frontier_cycle846_reduced_braids_delay_law_2026_07_28.txt": "be6a672d03a6e572362719ce77469a0d0d6d88f22fc8abb1260a2b6fbb20770f",
+    "logs/runner-cache/frontier_cycle846_reduced_independent_check_2026_07_28.txt": "7a8079e28c54312cc7ec78344404af4d40cef8ac0d3065737d3793c42fa5372a",
+    "scripts/frontier_cycle846_reduced_braids_delay_law_2026_07_28.py": "172313524341e958d36e1028f0cec5e64e81c4efd915c009073049998c37fc45",
+    "scripts/frontier_cycle846_reduced_independent_check_2026_07_28.py": "331c399d2a8df41ca28354fd876173835dc215e820927bb7bd956324be67bd1a"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "the reduced partition law HOLDS (three pair-cohorts, one braid) AND lawful nine-braid reduction (exactly 5/36 subsets, checker-listed)",
+    "the 841 accounting identity generalizes (pair catch-ups {35603, 877907}); the {595,64} residual law does NOT",
+    "pair funnels' own three wires (88/124/125; codes 110<->{0,2}, 001<->1); three-point weight law 49/51/57",
+    "checker all four certificates PASS"
+  ]
+}

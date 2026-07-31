@@ -1,16 +1,16 @@
 {
   "artifacts": {
     "caches": {
-      "frontier_cycle752_adjacency_independent_check_2026_07_28.txt": "363a84c583d8fdb528be855bef0464f7f2f5024d48811f5cc447842cb1a98231",
-      "frontier_cycle752_lawful_adjacency_attempt_2026_07_28.txt": "9f88b5d0d63e321e38c4884852e466b8393e07437aef27e1a4bc7b6920969025"
+      "frontier_cycle752_adjacency_independent_check_2026_07_28.txt": "b8b062f06a81f4715bf6aabe53e908e4efd0f4e47c0bed597b34d327db8d9c1c",
+      "frontier_cycle752_lawful_adjacency_attempt_2026_07_28.txt": "6eeb38766d62a0c8b86777cfe4b1eecbd039bcb68a39951d1b3a8352d6b24d68"
     },
     "note": {
       "path": "docs/LAWFUL_ADJACENCY_ATTEMPT_CYCLE752_BOUNDED_THEOREM_NOTE_2026-07-28.md",
       "sha256": "2a0787ccab333add153de4dd11d89425a6121c558c85afb549548f3836b296aa"
     },
     "runners": {
-      "frontier_cycle752_adjacency_independent_check_2026_07_28.py": "b387729e1df405d1b66c068adaafd0e4cc899e89e5612059aa0620383333aaca",
-      "frontier_cycle752_lawful_adjacency_attempt_2026_07_28.py": "198d65a2a4c2582e6f8acbddb970d9332f0fe46b0f8de93accea028e7c72bbcf"
+      "frontier_cycle752_adjacency_independent_check_2026_07_28.py": "ee8a5f80fd51648f6a8083e9db38ef49c7b56bcb59e370b502040cba768fac3b",
+      "frontier_cycle752_lawful_adjacency_attempt_2026_07_28.py": "e25ffbbca22a2287bdbcb90143b238fbdfcbc873e0936590c338ea464d23c7e0"
     }
   },
   "audit": "unset",
@@ -39,10 +39,10 @@
   "cycle": 752,
   "date": "2026-07-29",
   "evidence_contract": {
-    "checker_declared_inputs": 50,
-    "checker_input_fingerprint_sha256": "1e359a019c14de708964aad0d29435fc1f8bae155bb722793694dc12277f6408",
-    "primary_declared_inputs": 60,
-    "primary_input_fingerprint_sha256": "b32063f0f4438ec055bd1c219467008e98ed28e80e9e4f6668e0cf85f5bd4072"
+    "checker_declared_inputs": 57,
+    "checker_input_fingerprint_sha256": "fba7dea5c82f37164c8e507b2115d8938dbcb51fd127a79c009cfbe993fc1e19",
+    "primary_declared_inputs": 67,
+    "primary_input_fingerprint_sha256": "b5378fde4d2668b49d2e09a9b386ef79974400850731f81be5dee8a466a36697"
   },
   "result": {
     "declared_order": {

@@ -1,0 +1,56 @@
+loop_slug: koide-signed-vs-singular-stdout-closure-20260729
+mode: run
+date_started: 2026-07-29
+started_at_utc: 2026-07-29T13:20:00Z
+last_checkpoint_utc: 2026-07-29T13:38:31Z
+runtime_budget: supervisor-bounded science-fix cycle
+target: best-honest-status
+branch: claude/science-fix/koide_signed_eigenvalue_vs_singular_value_readout_narrow_the-26cd9fb2
+base_ref: origin/main
+base_commit_at_start: b7145ec1d401593f41c4ffcc40edcf8f95ac06fa
+current_goal: >-
+  Retire the runner_artifact_issue on the signed-eigenvalue versus
+  singular-value Koide theorem by supplying complete current-cycle evidence
+  for all 30 primary-runner checks and the derived-boundary N1-N8 gate.
+starting_claim_id: koide_signed_eigenvalue_vs_singular_value_readout_narrow_theorem_note_2026-05-29
+starting_effective_status: audited_conditional
+exact_starting_blocker: >-
+  runner_artifact_issue: regenerate the restricted packet with complete,
+  unclipped current-cycle stdout for all 30 primary-runner checks, then
+  re-audit the otherwise source-supported algebraic theorem.
+cycle_count: 1
+block_count: 1
+active_route: compact-complete-live-transcript
+hard_residual: null
+lock_status: >-
+  Shared automation lock was unavailable because its configured guard path is
+  outside the managed sandbox. This is a dedicated clean science-fix worktree,
+  so the repository protocol permits proceeding without the shared lock.
+actual_current_surface_status: candidate-retained-grade
+target_claim_type: positive_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+conditional_surface_status: null
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+files_touched:
+  - docs/KOIDE_SIGNED_EIGENVALUE_VS_SINGULAR_VALUE_READOUT_NARROW_THEOREM_NOTE_2026-05-29.md
+  - scripts/frontier_koide_signed_vs_singular_value_readout_narrow.py
+  - logs/runner-cache/frontier_koide_signed_vs_singular_value_readout_narrow.txt
+  - .claude/science/physics-loops/koide-signed-vs-singular-stdout-closure-20260729/
+open_imports: []
+no_go_routes:
+  - open equality-window wording, retired by including the zero-mode boundary
+  - arbitrary-r one-negative less-than-2/3 wording, retired by r=1/2 qualification
+trace_gate_classification: direct_blocker_closure
+review_disposition: pending
+pr_status: value-gate_ineligible_for_physics-loop_pr
+next_exact_action: >-
+  Run packet-readiness diagnostics, vocabulary lint, and independent
+  review-loop; then hand the science-fix diff to the integration supervisor for
+  landing and independent re-audit.
+stop_condition: >-
+  Stop after the named artifact blocker is demonstrably closed and local
+  review passes, without editing audit-owned authority surfaces.

@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-"""Cycle 840: the meet-level discriminator behind the 9-of-44 S* split.
+"""Cycle 840 v2: minimal meet discriminator and representation reading.
 
 All predecessor runners are source primaries only.  Their required literal
 fixtures are copied from SHA-pinned git objects and decoded here; none of the
 primaries is imported or executed.  The landed Boolean dynamics is
 independently reimplemented with Python integers.
+
+V2 retracts v1's "link" framing.  It certifies that the finite entry
+predicate is register-locally readable at the tick-3 meet, not that the three
+wires are a causal mechanism.  A local update-rule theorem remains open.
 """
 from __future__ import annotations
 
@@ -42,15 +46,15 @@ WORD_GATE_COUNT = 6212
 SSTAR_BOUND_MOVEMENTS = 14739
 SSTAR_BOUND_CONTROLLER_TICKS = SSTAR_BOUND_MOVEMENTS * RING_STATIONS
 
-SOURCE_BLOCK = (0, 41)
-BANK0_BLOCK = (41, 172)
-BANK1_BLOCK = (172, 303)
-LINK0_BLOCK = (1613, 1995)
-REGISTER_BLOCKS = (
-    ("source", SOURCE_BLOCK),
-    ("bank0", BANK0_BLOCK),
-    ("bank1", BANK1_BLOCK),
-    ("link0", LINK0_BLOCK),
+DATA_PREFIX0_BLOCK = (0, 41)
+DATA_PREFIX1_BLOCK = (41, 172)
+DATA_PREFIX2_BLOCK = (172, 303)
+DATA_DIAGNOSTIC_BLOCK = (1613, 1995)
+DIAGNOSTIC_BLOCKS = (
+    ("data_wires_0_40", DATA_PREFIX0_BLOCK),
+    ("data_wires_41_171", DATA_PREFIX1_BLOCK),
+    ("data_wires_172_302", DATA_PREFIX2_BLOCK),
+    ("data_wires_1613_1994", DATA_DIAGNOSTIC_BLOCK),
 )
 
 EXPECTED_BRANCH = "physics-loop/proof-grade-blockF19-20260729"
@@ -124,24 +128,47 @@ EXPECTED_CONTROLLER_TICK_HITS = tuple(
     for key in EXPECTED_REACHING_KEYS
     if tick >= SSTAR_BOUND_CONTROLLER_TICKS - (key[1][0] - 1)
 )
-EXPECTED_MEET_PREFIX_PATTERNS = (
+DISCRIMINATOR_SEARCH_SCOPE = (0, 172)
+EXPECTED_DISCRIMINATOR_WIRES = (40, 81, 105)
+EXPECTED_DISCRIMINATOR_PATTERNS = (
+    (0, 0, 0),
+    (0, 1, 1),
+    (1, 0, 0),
+)
+DISCRIMINATOR_WIRE_PROVENANCE = (
     (
-        "ba5f27c37ebf2aa2a70ec87a6e237aa3f663443fb9b01618126a5ba588c2d7d4",
-        "f4dbc620a03c9e1bbfc06f5fc30fb70a77b2a13149a8f9d44cb3aa769fe8e235",
+        40,
+        "Cycle830_packed_5815_bit_data_wire[40]",
+        "2bc4c4d6111a0e260b8b6107cd82e57dcbaa1744:"
+        "scripts/frontier_cycle830_sstar_preimage_tree_2026_07_28.py",
+        "FAMILY_STATES_B85/zlib raw; state=int.from_bytes(chunk,'little'); "
+        "zero-based integer bit 40",
+        "54fbb59c9d2232e77af6204f0c01b079148560bef1409cc74f311b5373784282",
     ),
     (
-        "c73eb0b8c6e1888546b411bd694fd9d96d4b11b1920d11177699e8562167d5ca",
-        "63223011e5f5442084d1fbfb6add65b7226d853c6212ac25f5a9090d08d7cbb6",
+        81,
+        "Cycle830_packed_5815_bit_data_wire[81]",
+        "2bc4c4d6111a0e260b8b6107cd82e57dcbaa1744:"
+        "scripts/frontier_cycle830_sstar_preimage_tree_2026_07_28.py",
+        "FAMILY_STATES_B85/zlib raw; state=int.from_bytes(chunk,'little'); "
+        "zero-based integer bit 81",
+        "54fbb59c9d2232e77af6204f0c01b079148560bef1409cc74f311b5373784282",
     ),
     (
-        "c73eb0b8c6e1888546b411bd694fd9d96d4b11b1920d11177699e8562167d5ca",
-        "e6a36aa3ab938b310bd0add14c8bce7d045d4d73201dbb3f2928a715a2a5b2e8",
-    ),
-    (
-        "c73eb0b8c6e1888546b411bd694fd9d96d4b11b1920d11177699e8562167d5ca",
-        "20e448e5ff534f9b865f946fa516aca11c03924630765cc857634bdcaf75fbf4",
+        105,
+        "Cycle830_packed_5815_bit_data_wire[105]",
+        "2bc4c4d6111a0e260b8b6107cd82e57dcbaa1744:"
+        "scripts/frontier_cycle830_sstar_preimage_tree_2026_07_28.py",
+        "FAMILY_STATES_B85/zlib raw; state=int.from_bytes(chunk,'little'); "
+        "zero-based integer bit 105",
+        "54fbb59c9d2232e77af6204f0c01b079148560bef1409cc74f311b5373784282",
     ),
 )
+EXPECTED_REPRESENTATION_FUNCTION = (
+    "event==0 AND origin_member==False AND separation==5"
+)
+V1_LINK_FRAMING_RETRACTED = True
+CAUSAL_MECHANISM_CLAIMED = False
 EXPECTED_CYCLE838_K2_KEYS = (
     (2, (0, 5), 0),
     (2, (0, 5), 1),
@@ -839,18 +866,122 @@ def configuration_sha256(
     ))
 
 
-def meet_prefix_pattern(state: int) -> tuple[str, str]:
+def discriminator_pattern(
+    state: int,
+    wires: tuple[int, ...] = EXPECTED_DISCRIMINATOR_WIRES,
+) -> tuple[int, ...]:
+    return tuple((state >> wire) & 1 for wire in wires)
+
+
+def discriminator_d(state: int) -> bool:
     return (
-        block_sha256(state, SOURCE_BLOCK),
-        block_sha256(state, BANK0_BLOCK),
+        discriminator_pattern(state)
+        in EXPECTED_DISCRIMINATOR_PATTERNS
     )
 
 
-def property_p(state: int) -> bool:
-    return meet_prefix_pattern(state) in EXPECTED_MEET_PREFIX_PATTERNS
+def reconstruct_minimal_discriminator(
+    states: tuple[int, ...],
+    labels: tuple[bool, ...],
+) -> dict[str, object]:
+    """Exhaust the v1 172-wire vocabulary through the first exact width."""
+    positives = tuple(
+        state for state, label in zip(states, labels) if label
+    )
+    negatives = tuple(
+        state for state, label in zip(states, labels) if not label
+    )
+    pair_count = len(positives) * len(negatives)
+    full_cover = (1 << pair_count) - 1
+    start, stop = DISCRIMINATOR_SEARCH_SCOPE
+    wire_covers = []
+    for wire in range(start, stop):
+        cover = 0
+        cross_pair = 0
+        for positive in positives:
+            positive_bit = (positive >> wire) & 1
+            for negative in negatives:
+                if positive_bit != ((negative >> wire) & 1):
+                    cover |= 1 << cross_pair
+                cross_pair += 1
+        if cover:
+            wire_covers.append((wire, cover))
+    solutions = {}
+    tested = {}
+    for width in (1, 2, 3):
+        found = []
+        count = 0
+        for selected in combinations(wire_covers, width):
+            count += 1
+            cover = 0
+            for _wire, contribution in selected:
+                cover |= contribution
+            if cover == full_cover:
+                found.append(tuple(wire for wire, _cover in selected))
+        tested[width] = count
+        solutions[width] = tuple(found)
+        if found:
+            break
+    width3 = solutions.get(3, ())
+    witness_found = EXPECTED_DISCRIMINATOR_WIRES in width3
+    witness_patterns = tuple(sorted({
+        discriminator_pattern(state)
+        for state, label in zip(states, labels) if label
+    }))
+    negative_patterns = tuple(sorted({
+        discriminator_pattern(state)
+        for state, label in zip(states, labels) if not label
+    }))
+    provenance_exact = (
+        tuple(row[0] for row in DISCRIMINATOR_WIRE_PROVENANCE)
+        == EXPECTED_DISCRIMINATOR_WIRES
+        and all(
+            row[2]
+            == (
+                "2bc4c4d6111a0e260b8b6107cd82e57dcbaa1744:"
+                "scripts/frontier_cycle830_sstar_preimage_tree_2026_07_28.py"
+            )
+            and "state=int.from_bytes(chunk,'little')" in row[3]
+            and row[4] == EXPECTED_FAMILY_RAW_SHA256
+            for row in DISCRIMINATOR_WIRE_PROVENANCE
+        )
+    )
+    exact = (
+        not solutions.get(1)
+        and not solutions.get(2)
+        and bool(width3)
+        and witness_found
+        and provenance_exact
+        and witness_patterns == EXPECTED_DISCRIMINATOR_PATTERNS
+        and not set(witness_patterns) & set(negative_patterns)
+    )
+    return {
+        "search_scope":
+            "all zero-based Cycle830 packed data wires 0 through 171",
+        "search_scope_half_open": DISCRIMINATOR_SEARCH_SCOPE,
+        "cross_class_pairs": pair_count,
+        "candidate_wires_with_nonzero_coverage": len(wire_covers),
+        "combinations_tested_by_width": tuple(sorted(tested.items())),
+        "proved_no_exact_projection_at_widths": tuple(
+            width for width in (1, 2) if not solutions.get(width)
+        ),
+        "minimum_wire_count": 3 if width3 else None,
+        "width3_solution_count": len(width3),
+        "expected_witness_reconstructed": witness_found,
+        "wires": EXPECTED_DISCRIMINATOR_WIRES,
+        "named_wires": tuple(
+            row[1] for row in DISCRIMINATOR_WIRE_PROVENANCE
+        ),
+        "wire_provenance": DISCRIMINATOR_WIRE_PROVENANCE,
+        "wire_provenance_exact": provenance_exact,
+        "positive_pattern_set": witness_patterns,
+        "negative_pattern_set": negative_patterns,
+        "positive_pattern_count": len(witness_patterns),
+        "exact": exact,
+    }
 
 
-def certificate_a_split(
+def certificate_a_minimal_discriminator(
     fixtures: dict[str, object],
     dynamics: dict[str, object],
 ) -> dict[str, object]:
@@ -877,7 +1008,7 @@ def certificate_a_split(
             "range": block,
             "hamming_weight": block_value(state, block).bit_count(),
             "sha256": block_sha256(state, block),
-        } for name, block in REGISTER_BLOCKS)
+        } for name, block in DIAGNOSTIC_BLOCKS)
         ticks = hit_ticks[key]
         rows.append({
             "key": key,
@@ -895,9 +1026,9 @@ def certificate_a_split(
             "sorted_gap_parity": (pair[1] - pair[0]) % 2,
             "data_state_hamming_weight": state.bit_count(),
             "data_state_packed_sha256": state_packed_sha256(state),
-            "register_blocks": block_rows,
-            "meet_prefix_pattern": meet_prefix_pattern(state),
-            "property_P": property_p(state),
+            "diagnostic_data_blocks": block_rows,
+            "three_wire_pattern": discriminator_pattern(state),
+            "discriminator_D": discriminator_d(state),
             "configuration_sha256":
                 configuration_sha256(key, state, geometry),
             "bounded_fate": (
@@ -916,6 +1047,20 @@ def certificate_a_split(
         row["key"] for row in rows
         if row["bounded_fate"] == "NO_EXACT_SSTAR_WITHIN_BOUND"
     )
+    labels = tuple(
+        row["bounded_fate"] == "REACHES_EXACT_SSTAR" for row in rows
+    )
+    reconstruction = reconstruct_minimal_discriminator(
+        meet_states, labels
+    )
+    discriminator_keys = tuple(
+        row["key"] for row in rows if row["discriminator_D"]
+    )
+    station0_keys = tuple(
+        row["key"] for row in rows
+        if row["event_index_embedded"] in (0, 1, 2)
+        and row["fixed_pair_word"] in ((0, 5), (0, 6))
+    )
     exact = (
         fixtures["public"]["pass"]
         and dynamics["public"]["pass"]
@@ -923,6 +1068,10 @@ def certificate_a_split(
         and reaching == EXPECTED_REACHING_KEYS
         and len(nonreaching) == 35
         and tuple(exact_hits) == EXPECTED_CONTROLLER_TICK_HITS
+        and reconstruction["exact"]
+        and discriminator_keys == reaching
+        and len(station0_keys) == 6
+        and all(key not in discriminator_keys for key in station0_keys)
         and all(row["cyclic_separation"] == 5 for row in rows)
         and all(
             row["forward_bound_from_meet_controller_ticks"]
@@ -932,6 +1081,26 @@ def certificate_a_split(
     )
     return {
         "verdict": "PASS" if exact else "FAIL",
+        "certificate_role": "A_MINIMAL_DISCRIMINATOR_ADOPTED",
+        "discriminator_definition":
+            "D(x)=1 iff the bits of the Cycle830 packed 5815-bit data "
+            "integer at zero-based wires (40,81,105) form 000, 011, or 100.",
+        "minimality_certificate": reconstruction,
+        "both_directions_on_44": {
+            "D_implies_bounded_Sstar_reach":
+                discriminator_keys == reaching,
+            "bounded_Sstar_reach_implies_D":
+                reaching == discriminator_keys,
+            "D_keys": discriminator_keys,
+            "reaching_keys": reaching,
+        },
+        "station0_absence": {
+            "keys": station0_keys,
+            "key_count": len(station0_keys),
+            "D_absent_on_all_six": all(
+                key not in discriminator_keys for key in station0_keys
+            ),
+        },
         "target": {
             "name": "exact Cycle-830 S*",
             "state_bits": STATE_BITS,
@@ -955,193 +1124,106 @@ def certificate_a_split(
     }
 
 
-def structural_candidate_row(
-    name: str,
-    values: tuple[object, ...],
-    labels: tuple[bool, ...],
-    statement: str,
-) -> dict[str, object]:
-    positive = {
-        compact(value) for value, label in zip(values, labels) if label
-    }
-    negative = {
-        compact(value) for value, label in zip(values, labels) if not label
-    }
-    overlap = tuple(sorted(positive & negative))
-    return {
-        "candidate": name,
-        "statement": statement,
-        "positive_unique_value_count": len(positive),
-        "negative_unique_value_count": len(negative),
-        "positive_negative_overlap_count": len(overlap),
-        "overlap_sha256": digest(overlap),
-        "values_separate_classes_exactly": not overlap,
-    }
+def entry_predicate(
+    event: int,
+    origin_member: bool,
+    separation: int,
+) -> bool:
+    return event == 0 and not origin_member and separation == 5
 
 
-def certificate_b_discriminator(
+def certificate_b_representation(
     certificate_a: dict[str, object],
     meeting: dict[str, object],
 ) -> dict[str, object]:
     rows = certificate_a["rows_44"]
     assert isinstance(rows, tuple)
-    labels = tuple(
-        row["bounded_fate"] == "REACHES_EXACT_SSTAR" for row in rows
+    descriptors = tuple(
+        (
+            row["event_index_embedded"],
+            row["origin_member"],
+            row["cyclic_separation"],
+        )
+        for row in rows
     )
-    candidates = (
-        structural_candidate_row(
-            "event_index",
-            tuple(row["event_index_embedded"] for row in rows),
-            labels,
-            "embedded event index alone",
-        ),
-        structural_candidate_row(
-            "origin_membership",
-            tuple(row["origin_member"] for row in rows),
-            labels,
-            "fixed pair-word origin membership alone",
-        ),
-        structural_candidate_row(
-            "source_register_block",
-            tuple(row["register_blocks"][0]["sha256"] for row in rows),
-            labels,
-            "exact 41-bit source-register contents",
-        ),
-        structural_candidate_row(
-            "bank0_register_block",
-            tuple(row["register_blocks"][1]["sha256"] for row in rows),
-            labels,
-            "exact 131-bit bank-0 register contents",
-        ),
-        structural_candidate_row(
-            "bank1_register_block",
-            tuple(row["register_blocks"][2]["sha256"] for row in rows),
-            labels,
-            "exact 131-bit bank-1 register contents",
-        ),
-        structural_candidate_row(
-            "link0_register_block",
-            tuple(row["register_blocks"][3]["sha256"] for row in rows),
-            labels,
-            "exact 382-bit link-0 register contents",
-        ),
-        structural_candidate_row(
-            "source_plus_bank0_register_blocks",
-            tuple(row["meet_prefix_pattern"] for row in rows),
-            labels,
-            "joint exact contents of source and bank-0 at the meet",
-        ),
-        structural_candidate_row(
-            "register_block_weight_tuple",
-            tuple(tuple(
-                block["hamming_weight"]
-                for block in row["register_blocks"]
-            ) for row in rows),
-            labels,
-            "source/bank0/bank1/link0 Hamming-weight tuple",
-        ),
-        structural_candidate_row(
-            "token_charge_row_placement",
-            tuple((
-                row["A_token_positions"],
-                row["B_token_positions"],
-                row["meeting_centers"],
-            ) for row in rows),
-            labels,
-            "A/B rail placement relative to the meet centers",
-        ),
-        structural_candidate_row(
-            "parity_orientation",
-            tuple((
-                row["orientation"],
-                row["sorted_gap_parity"],
-                sum(row["meeting_centers"]) % 2,
-            ) for row in rows),
-            labels,
-            "short-arc orientation and pair/center parity data",
-        ),
-    )
-    property_keys = tuple(
-        row["key"] for row in rows if row["property_P"]
+    unique_descriptors = tuple(sorted(set(descriptors)))
+    fibers = tuple({
+        "input": descriptor,
+        "observed_three_wire_patterns": tuple(sorted({
+            row["three_wire_pattern"]
+            for row, value in zip(rows, descriptors)
+            if value == descriptor
+        })),
+        "observed_D_values": tuple(sorted({
+            row["discriminator_D"]
+            for row, value in zip(rows, descriptors)
+            if value == descriptor
+        })),
+        "computed_entry_predicate":
+            entry_predicate(*descriptor),
+    } for descriptor in unique_descriptors)
+    discriminator_keys = tuple(
+        row["key"] for row in rows if row["discriminator_D"]
     )
     reaching_keys = tuple(
-        row["key"] for row, label in zip(rows, labels) if label
-    )
-    unified_predicate_keys = tuple(
         row["key"] for row in rows
-        if (
-            row["event_index_embedded"] == 0
-            and not row["origin_member"]
-            and row["cyclic_separation"] == 5
+        if row["bounded_fate"] == "REACHES_EXACT_SSTAR"
+    )
+    entry_keys = tuple(
+        row["key"] for row in rows
+        if entry_predicate(
+            row["event_index_embedded"],
+            row["origin_member"],
+            row["cyclic_separation"],
         )
     )
-    observed_patterns = tuple(sorted({
-        row["meet_prefix_pattern"] for row in rows if row["property_P"]
-    }))
-    expected_patterns = tuple(sorted(EXPECTED_MEET_PREFIX_PATTERNS))
-    candidate_map = {
-        row["candidate"]: row for row in candidates
-    }
+    d_is_function = all(
+        len(row["observed_D_values"]) == 1
+        and row["observed_D_values"][0]
+        == row["computed_entry_predicate"]
+        for row in fibers
+    )
+    raw_pattern_is_function = all(
+        len(row["observed_three_wire_patterns"]) == 1
+        for row in fibers
+    )
     exact = (
         certificate_a["pass"]
         and meeting["pass"]
-        and property_keys == reaching_keys == EXPECTED_REACHING_KEYS
-        and unified_predicate_keys == property_keys
-        and observed_patterns == expected_patterns
-        and candidate_map[
-            "source_plus_bank0_register_blocks"
-        ]["values_separate_classes_exactly"]
-        and not candidate_map[
-            "source_register_block"
-        ]["values_separate_classes_exactly"]
-        and not candidate_map[
-            "bank0_register_block"
-        ]["values_separate_classes_exactly"]
-        and not candidate_map[
-            "register_block_weight_tuple"
-        ]["values_separate_classes_exactly"]
+        and d_is_function
+        and not raw_pattern_is_function
+        and discriminator_keys == entry_keys
+        and entry_keys == reaching_keys == EXPECTED_REACHING_KEYS
     )
     return {
-        "verdict": "LINK_FOUND" if exact else "OPEN",
-        "property_P":
-            "At the tick-3 meet, the ordered (41-bit source register, "
-            "131-bit bank-0 register) content has one of the four literal "
-            "SHA-pinned patterns in EXPECTED_MEET_PREFIX_PATTERNS.",
-        "property_P_pattern_count": len(EXPECTED_MEET_PREFIX_PATTERNS),
-        "expected_patterns": EXPECTED_MEET_PREFIX_PATTERNS,
-        "observed_property_patterns": observed_patterns,
-        "candidate_table": candidates,
-        "minimality_within_tested_block_family":
-            "The joint source+bank0 content is exact; source alone, bank0 "
-            "alone, every other individual active block, their weight tuple, "
-            "rail placement, and parity/orientation all overlap the 35.",
-        "both_directions": {
-            "P_implies_bounded_Sstar_reach_on_44":
-                property_keys == reaching_keys,
-            "bounded_Sstar_reach_implies_P_on_44":
-                reaching_keys == property_keys,
-            "property_keys": property_keys,
-            "reaching_keys": reaching_keys,
-        },
-        "mechanical_chain_on_44": {
-            "meeting_theorem_unique_3_3_tie": meeting["pass"],
-            "all_s5_meets_have_center_set_symmetry": all(
-                geometry[
-                    "center_sets_source_swap_reflection_symmetric"
-                ]
-                for geometry in meeting["all_11_s5_geometries"]
-            ),
-            "unified_entry_predicate_keys": unified_predicate_keys,
-            "unified_predicate_iff_P":
-                unified_predicate_keys == property_keys,
-            "P_iff_bounded_funnel_reach":
-                property_keys == reaching_keys,
-        },
-        "causal_boundary":
-            "P is a finite exact meet-register discriminator and its "
-            "sufficiency is established by the complete bounded evolution.  "
-            "It is not yet a local update-rule theorem or an unbounded basin "
-            "necessity theorem.",
+        "verdict": "REGISTER_LOCALLY_READABLE" if exact else "OPEN",
+        "certificate_role": "B_REPRESENTATION_READING",
+        "computed_function":
+            "D(meet wires 40,81,105) = 1 iff "
+            "event==0 AND origin_member==False AND separation==5",
+        "function_table": fibers,
+        "discriminator_output_is_function_of_event_origin_separation":
+            d_is_function,
+        "raw_three_wire_pattern_is_single_valued_on_those_fibers":
+            raw_pattern_is_function,
+        "precision":
+            "The Boolean membership output D is the computed function.  The "
+            "raw three-bit word has multiple representatives on some input "
+            "fibers, recorded exactly above; no stronger factorization of "
+            "the raw word is claimed.",
+        "entry_predicate_keys": entry_keys,
+        "discriminator_keys": discriminator_keys,
+        "reading":
+            "The finite entry predicate is REGISTER-LOCALLY READABLE at the "
+            "tick-3 meet in three landed data wires.  This is a LOCALITY / "
+            "REPRESENTATION result, not a causal mechanism.",
+        "v1_retraction":
+            "V1's finite 'link' framing is retracted to this exact "
+            "representation statement.",
+        "named_gap":
+            "The local causal theorem remains open: no local update-rule "
+            "theorem derives later S* reach, waiting time, or funnel identity "
+            "from these three wire values.",
         "pass": exact,
     }
 
@@ -1225,8 +1307,8 @@ def certificate_c_delayed(
         "meet_controller_tick": meet_rows[key]["meet_controller_tick"],
         "data_state_packed_sha256":
             meet_rows[key]["data_state_packed_sha256"],
-        "meet_prefix_pattern": meet_rows[key]["meet_prefix_pattern"],
-        "property_P": meet_rows[key]["property_P"],
+        "three_wire_pattern": meet_rows[key]["three_wire_pattern"],
+        "discriminator_D": meet_rows[key]["discriminator_D"],
         "origin_member": meet_rows[key]["origin_member"],
         "A_token_positions": meet_rows[key]["A_token_positions"],
         "meeting_centers": meet_rows[key]["meeting_centers"],
@@ -1257,8 +1339,8 @@ def certificate_c_delayed(
                     for index in event_indices
                 }) == 1
             ),
-            "property_P_status": tuple(
-                meet_rows[DELAYED_KEYS[index]]["property_P"]
+            "discriminator_D_status": tuple(
+                meet_rows[DELAYED_KEYS[index]]["discriminator_D"]
                 for index in event_indices
             ),
             "Cycle838_first_clean_movement": movement,
@@ -1288,19 +1370,13 @@ def certificate_c_delayed(
     event0_meets = tuple(
         meet_rows[DELAYED_KEYS[index]] for index in event0_indices
     )
-    accepted_source_hashes = {
-        source_hash
-        for source_hash, _bank0_hash in EXPECTED_MEET_PREFIX_PATTERNS
-    }
     event0_origin_perturbation = {
         "keys": tuple(DELAYED_KEYS[index] for index in event0_indices),
-        "source_register_still_in_entrant_source_class": all(
-            row["register_blocks"][0]["sha256"]
-            in accepted_source_hashes
-            for row in event0_meets
+        "three_wire_patterns": tuple(
+            row["three_wire_pattern"] for row in event0_meets
         ),
-        "joint_source_bank0_prefix_outside_P": all(
-            not row["property_P"] for row in event0_meets
+        "outside_minimal_discriminator": all(
+            not row["discriminator_D"] for row in event0_meets
         ),
         "station0_pair_meet_states_equal":
             len({
@@ -1339,18 +1415,13 @@ def certificate_c_delayed(
         and delayed["public"]["pass"]
         and len(delayed_meets) == 6
         and all(row["origin_member"] for row in delayed_meets)
-        and not any(row["property_P"] for row in delayed_meets)
+        and not any(row["discriminator_D"] for row in delayed_meets)
         and all(row["terminal_exact"] for row in cohort_rows)
         and all(
             row["meet_states_equal_within_event"] for row in cohort_rows
         )
         and distinct_funnels
-        and event0_origin_perturbation[
-            "source_register_still_in_entrant_source_class"
-        ]
-        and event0_origin_perturbation[
-            "joint_source_bank0_prefix_outside_P"
-        ]
+        and event0_origin_perturbation["outside_minimal_discriminator"]
         and event0_origin_perturbation["horizon_hash_exact"]
         and event0_origin_perturbation[
             "horizon_pair_states_equal"
@@ -1361,6 +1432,14 @@ def certificate_c_delayed(
     )
     return {
         "verdict": "PARTIAL" if mechanical_exact else "FAILS",
+        "certificate_role":
+            "C_9_VS_35_AND_DELAY_ACCOUNT_WITH_MINIMAL_DISCRIMINATOR",
+        "reproduced_44_key_partition":
+            certificate_a["partition"],
+        "reproduced_both_directions":
+            certificate_a["both_directions_on_44"],
+        "reproduced_station0_absence":
+            certificate_a["station0_absence"],
         "pinned_Cycle838_scope":
             "the two station-0 s=5 geometries (0,5) and (0,6), for "
             "events 0,1,2",
@@ -1369,65 +1448,53 @@ def certificate_c_delayed(
         "two_later_funnels_are_distinct": distinct_funnels,
         "event0_origin_isolation": event0_origin_perturbation,
         "account":
-            "Origin membership changes bank-0 enough to move the event-0 "
-            "meet prefix outside P while leaving its source-register class "
-            "inside the entrant source class.  Events 1 and 2 also lie "
-            "outside P and the two station-0 geometries synchronize only at "
-            "the exact later Cycle-838 terminal states (movements 193210 "
-            "and 246669), which are distinct funnels.  The event-0 projected "
-            "data states coincide at movement 262144, but the fixed pair "
-            "words keep the full configurations and next update words "
-            "distinct; Cycle 838 therefore still finds both open.",
+            "The minimal three-wire discriminator is absent on all six "
+            "station-0 meet states.  Events 1 and 2 reproduce the exact later "
+            "Cycle-838 terminal states at movements 193210 and 246669, which "
+            "are distinct funnels.  The event-0 projected data states "
+            "coincide at movement 262144, but the fixed pair words keep the "
+            "full configurations and next update words distinct; Cycle 838 "
+            "therefore still finds both open.",
         "why_not_HOLDS":
-            "The register displacement classifies the delay and reproduces "
-            "the two later terminal states, but no local theorem derives "
-            "either waiting time or funnel identity from the displaced "
-            "bank-0 contents.  Cycle-838 first-clean minimality is source-"
-            "pinned rather than independently rescanned here.",
+            "The discriminator classifies the six meets and the replay "
+            "reproduces two later terminal states, but no local theorem "
+            "derives either waiting time or funnel identity from the three "
+            "wire values.  Cycle-838 first-clean minimality is source-pinned "
+            "rather than independently rescanned here.",
         "pass": mechanical_exact,
     }
 
 
-def certificate_d_verdict(
+def representation_verdict(
     certificate_a: dict[str, object],
     certificate_b: dict[str, object],
     certificate_c: dict[str, object],
 ) -> dict[str, object]:
-    closed_44 = (
+    exact = (
         certificate_a["pass"]
         and certificate_b["pass"]
-        and certificate_b["verdict"] == "LINK_FOUND"
-        and certificate_b["mechanical_chain_on_44"][
-            "unified_predicate_iff_P"
+        and certificate_b["verdict"] == "REGISTER_LOCALLY_READABLE"
+        and certificate_b[
+            "discriminator_output_is_function_of_event_origin_separation"
         ]
-        and certificate_b["mechanical_chain_on_44"][
-            "P_iff_bounded_funnel_reach"
-        ]
-    )
-    if closed_44 and certificate_c["verdict"] == "HOLDS":
-        verdict = "CAUSAL_CHAIN_CLOSED"
-    elif closed_44 and certificate_c["pass"]:
-        verdict = "LINK_FOUND_CHAIN_PARTIAL"
-    else:
-        verdict = "OPEN"
-    exact = (
-        closed_44
         and certificate_c["pass"]
         and certificate_c["verdict"] == "PARTIAL"
-        and verdict == "LINK_FOUND_CHAIN_PARTIAL"
     )
     return {
-        "verdict": verdict,
-        "44_key_loop_closed_mechanically": closed_44,
+        "verdict": (
+            "REGISTER_LOCAL_REPRESENTATION_EXACT_CAUSAL_THEOREM_OPEN"
+            if exact else "OPEN"
+        ),
+        "44_key_representation_exact": exact,
         "delayed_account": certificate_c["verdict"],
-        "causal_chain_closed": verdict == "CAUSAL_CHAIN_CLOSED",
+        "causal_mechanism_claimed": False,
         "sharp_reading":
-            "The missing finite meet-level link is found exactly: P is "
-            "equivalent to the nine bounded S* entrants on all 44 and to the "
-            "unified entry predicate.  The broader causal chain remains "
-            "partial because P is a four-pattern finite discriminator, not "
-            "a local rule theorem, and the origin-shifted register content "
-            "does not derive the delayed waiting times or terminal identities.",
+            "The entry predicate is register-locally readable at the meet in "
+            "the minimal three-wire discriminator.  This exact finite "
+            "locality / representation result retracts v1's link language.  "
+            "The broader causal chain remains partial: no local theorem "
+            "derives S* reach, delayed waiting times, or terminal identities "
+            "from the three wires.",
         "pass": exact,
     }
 
@@ -1463,12 +1530,13 @@ def stable_render(
         report["checks"] = dict(checks)
         report["pass"] = all(checks.values())
         report["terminal"] = (
-            "CYCLE840_LINK_FOUND_CHAIN_PARTIAL_PASS"
+            "CYCLE840_V2_REGISTER_LOCAL_REPRESENTATION_PASS"
             if (
                 report["pass"]
-                and report["verdict"] == "LINK_FOUND_CHAIN_PARTIAL"
+                and report["verdict"]
+                == "REGISTER_LOCAL_REPRESENTATION_EXACT_CAUSAL_THEOREM_OPEN"
             )
-            else "CYCLE840_MISSING_LINK_HONEST_FAIL"
+            else "CYCLE840_V2_HONEST_FAIL"
         )
         output = render(certificates, report)
         size = len(output.encode())
@@ -1488,11 +1556,13 @@ def run() -> int:
     fixtures = decode_cycle830_fixtures()
     dynamics = evolve_s5_to_sstar_bound(fixtures)
     meeting = meeting_theorem_certificate()
-    certificate_a = certificate_a_split(fixtures, dynamics)
-    certificate_b = certificate_b_discriminator(certificate_a, meeting)
+    certificate_a = certificate_a_minimal_discriminator(
+        fixtures, dynamics
+    )
+    certificate_b = certificate_b_representation(certificate_a, meeting)
     delayed = delayed_cohort_evolution(fixtures)
     certificate_c = certificate_c_delayed(certificate_a, delayed)
-    certificate_d = certificate_d_verdict(
+    certificate_d = representation_verdict(
         certificate_a, certificate_b, certificate_c
     )
     deterministic = (
@@ -1550,7 +1620,7 @@ def run() -> int:
         )),
         "runtime_seconds": round(elapsed, 6),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
-        "user_runtime_ceiling_seconds": 1500,
+        "user_runtime_ceiling_seconds": 1400,
         "stdout_bytes": 0,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "pass": False,
@@ -1568,35 +1638,42 @@ def run() -> int:
         and deterministic
         and not controls["blocked_modules_loaded_at_end"]
         and not controls["firewall_hits_at_end"]
-        and elapsed < AUDIT_TIMEOUT_SEC < 1500
+        and elapsed < AUDIT_TIMEOUT_SEC <= 1400
     )
     certificates = {
-        "A_44_WAY_SPLIT": certificate_a,
-        "B_MEET_DISCRIMINATOR": {
+        "A_MINIMAL_DISCRIMINATOR": certificate_a,
+        "B_REPRESENTATION_READING": {
             "meeting_theorem": meeting,
             **certificate_b,
         },
-        "C_DELAYED_COHORTS": certificate_c,
-        "D_VERDICT": certificate_d,
+        "C_9_VS_35_AND_DELAY": certificate_c,
+        "D_READING": certificate_d,
         "E_CONTROLS": controls,
     }
     checks = {
-        "A_EXACT_9_VS_35": bool(
+        "A_MINIMAL_3_WIRE_3_PATTERN": bool(
             certificate_a["pass"]
-            and certificate_a["partition"] == "9-vs-35"
+            and certificate_a["minimality_certificate"][
+                "minimum_wire_count"
+            ] == 3
+            and certificate_a["minimality_certificate"][
+                "positive_pattern_count"
+            ] == 3
         ),
-        "B_EXACT_DISCRIMINATOR": bool(
+        "B_REGISTER_LOCALLY_READABLE": bool(
             certificate_b["pass"]
-            and certificate_b["verdict"] == "LINK_FOUND"
+            and certificate_b["verdict"]
+            == "REGISTER_LOCALLY_READABLE"
         ),
-        "C_DELAY_ACCOUNT_PARTIAL": bool(
+        "C_EXACT_9_VS_35_AND_DELAY_ACCOUNT": bool(
             certificate_c["pass"]
             and certificate_c["verdict"] == "PARTIAL"
+            and certificate_a["partition"] == "9-vs-35"
         ),
-        "D_LINK_FOUND_CHAIN_PARTIAL": bool(
+        "D_HONEST_REPRESENTATION_READING": bool(
             certificate_d["pass"]
             and certificate_d["verdict"]
-            == "LINK_FOUND_CHAIN_PARTIAL"
+            == "REGISTER_LOCAL_REPRESENTATION_EXACT_CAUSAL_THEOREM_OPEN"
         ),
         "E_CONTROLS": False,
         "FULL_DUPLICATE_DETERMINISM": deterministic,
@@ -1604,14 +1681,16 @@ def run() -> int:
     }
     report = {
         "cycle": 840,
-        "stage": "certificates-A-B-C-D-E",
+        "version": 2,
+        "stage": "certificates-A-B-C-plus-controls",
         "partition": certificate_a["partition"],
         "reaching_count": certificate_a["reaching_count"],
         "nonreaching_count": certificate_a["nonreaching_count"],
-        "discriminator": certificate_b["verdict"],
-        "property_P": certificate_b["property_P"],
-        "44_key_loop_closed_mechanically":
-            certificate_d["44_key_loop_closed_mechanically"],
+        "discriminator_wires": EXPECTED_DISCRIMINATOR_WIRES,
+        "discriminator_patterns": EXPECTED_DISCRIMINATOR_PATTERNS,
+        "representation": certificate_b["verdict"],
+        "44_key_representation_exact":
+            certificate_d["44_key_representation_exact"],
         "delayed_account": certificate_c["verdict"],
         "delayed_funnel_moments": tuple(
             (
@@ -1628,7 +1707,7 @@ def run() -> int:
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "checks": {},
         "pass": False,
-        "terminal": "CYCLE840_MISSING_LINK_HONEST_FAIL",
+        "terminal": "CYCLE840_V2_HONEST_FAIL",
     }
     output = stable_render(
         certificates, checks, report, controls_base
@@ -1647,7 +1726,7 @@ def main() -> int:
             "pass": False,
             "exception_type": type(error).__name__,
             "exception": str(error),
-            "terminal": "CYCLE840_MISSING_LINK_HONEST_FAIL",
+            "terminal": "CYCLE840_V2_HONEST_FAIL",
         }) + "\n")
         return 1
 

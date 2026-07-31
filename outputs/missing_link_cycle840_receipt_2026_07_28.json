@@ -1,0 +1,30 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF19-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle840_link_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 7
+    },
+    "logs/runner-cache/frontier_cycle840_missing_link_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 10
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 840,
+  "files": {
+    "docs/MISSING_LINK_CYCLE840_BOUNDED_THEOREM_NOTE_2026-07-28.md": "6daf4f3ba472b7ed0227d5f3f13b21d9dbac1ae5dd1cc50d15ac80c11063cd75",
+    "logs/runner-cache/frontier_cycle840_link_independent_check_2026_07_28.txt": "3e6b24d84d353c5fedbeb8a2d9b76c80c89db14826bc91c88d7efd7b33fc29ac",
+    "logs/runner-cache/frontier_cycle840_missing_link_2026_07_28.txt": "f9ef11d36d543cfa117508c935531fd8d02d430417216afd09845cb717e03197",
+    "scripts/frontier_cycle840_link_independent_check_2026_07_28.py": "948cd4f26be28c63d06fe9856bf91a46a51f71ff8bc6d4b86fa2848fdcf48d8a",
+    "scripts/frontier_cycle840_missing_link_2026_07_28.py": "6b87eea4bf26e3c261b84597512d2177406c5875a8c0b6ad5af549f208fd7f19"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "the minimal meet discriminator: THREE wires (40,81,105), patterns 000/011/100 \u2014 exact both directions on 44; absent on the six station-0 keys (reversals 24 absorbed: v1's 172-bit patterns retracted; minimality+stability+vocabulary fixed)",
+    "the identification: the discriminator output IS the entry predicate (event=0 AND not-origin AND sep=5) \u2014 a REPRESENTATION/locality theorem, not causation",
+    "the local causal theorem = the named remaining gap; checker MINIMALITY/STABILITY/VOCABULARY PASS"
+  ]
+}

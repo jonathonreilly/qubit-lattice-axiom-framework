@@ -101,6 +101,7 @@ BACKBONE = (
 EVENTS = (0, 2, 1)
 RESOLUTION_MOMENTS = {0: 14744, 2: 33195, 1: 51115}
 LANDED_TRANSITIONS = 891486
+REACHABLE_STATES = LANDED_TRANSITIONS + len(EVENTS) * len(BACKBONE)
 GENERATOR_APPLICATIONS = sum(RESOLUTION_MOMENTS.values())
 
 
@@ -414,7 +415,8 @@ def extract_patterns(
             "pattern_id": f"P{len(patterns) + 1}_{expected['candidate']}_F{pair[0]}_{pair[1]}",
             "candidate": expected["candidate"],
             "parity_fields": (
-                "bank0.HEAD[1]", expected["candidate"].replace("BANK0_HEAD1_XOR_", "bank0."),
+                "bank0.HEAD[1]",
+                f"bank0.HEAD[{wires[1] - 109}]",
             ),
             "parity_wires": wires,
             "generator": f"F_{pair[0]}_{pair[1]}",
@@ -487,8 +489,15 @@ static uint64_t active_for_transition(int time) {
     if (time < 51115) mask |= ((UINT64_C(1) << 9) - 1) << 18;
     return mask;
 }
+static uint64_t active_for_state(int time) {
+    uint64_t mask = 0;
+    if (time <= 14744) mask |= (UINT64_C(1) << 9) - 1;
+    if (time <= 33195) mask |= ((UINT64_C(1) << 9) - 1) << 9;
+    if (time <= 51115) mask |= ((UINT64_C(1) << 9) - 1) << 18;
+    return mask;
+}
 int main(int argc, char **argv) {
-    if (argc != 6) { fprintf(stderr, "argc\n"); return 2; }
+    if (argc != 7) { fprintf(stderr, "argc\n"); return 2; }
     size_t sched_n, column_n;
     MaskedGate *schedule = load_exact(argv[1], sizeof(MaskedGate), &sched_n);
     uint64_t *initial = load_exact(argv[2], sizeof(uint64_t), &column_n);
@@ -508,8 +517,19 @@ int main(int argc, char **argv) {
     uint64_t columns[STATE_BITS]; memcpy(columns, initial, sizeof(columns));
     uint64_t applications[PATTERNS] = {0}, occurrences[PATTERNS] = {0};
     uint64_t pattern_violations[PATTERNS] = {0}, global_violations[PATTERNS] = {0};
-    uint64_t total_transitions = 0;
-    for (int time = 0; time < MAX_STEPS; ++time) {
+    uint64_t reachable_single[PATTERNS][MAX_SUPPORT] = {{0}};
+    uint64_t total_transitions = 0, reachable_states = 0;
+    for (int time = 0; time <= MAX_STEPS; ++time) {
+        uint64_t state_active = active_for_state(time);
+        reachable_states += (uint64_t)__builtin_popcountll(state_active);
+        for (int p = 0; p < PATTERNS; ++p)
+            for (uint16_t i = 0; i < headers[p].support_n; ++i) {
+                uint64_t matching = cells[p][i].expected
+                    ? columns[cells[p][i].wire] : ~columns[cells[p][i].wire];
+                reachable_single[p][i] +=
+                    (uint64_t)__builtin_popcountll(matching & state_active);
+            }
+        if (time == MAX_STEPS) break;
         uint64_t active = active_for_transition(time);
         total_transitions += (uint64_t)__builtin_popcountll(active);
         uint64_t global_before[PATTERNS], pattern_before[PATTERNS];
@@ -553,11 +573,16 @@ int main(int argc, char **argv) {
         for (uint16_t i = 0; i < headers[p].support_n; ++i) {
             size_t offset = ((size_t)p * MAX_SUPPORT + i) * VECTOR_BYTES;
             if (fwrite(vectors + offset, 1, VECTOR_BYTES, vf) != VECTOR_BYTES) die("vectors");
-        }
+    }
     fclose(vf);
-    FILE *summary = fopen(argv[5], "w"); if (!summary) die(argv[5]);
-    fprintf(summary, "schedule_rows=%zu\ntotal_transitions=%" PRIu64 "\nvector_bytes=%d\n",
-            sched_n, total_transitions, VECTOR_BYTES);
+    FILE *cf = fopen(argv[5], "wb"); if (!cf) die(argv[5]);
+    for (int p = 0; p < PATTERNS; ++p)
+        if (fwrite(reachable_single[p], sizeof(uint64_t), headers[p].support_n, cf)
+                != headers[p].support_n) die("reachable counts");
+    fclose(cf);
+    FILE *summary = fopen(argv[6], "w"); if (!summary) die(argv[6]);
+    fprintf(summary, "schedule_rows=%zu\ntotal_transitions=%" PRIu64 "\nreachable_states=%" PRIu64 "\nvector_bytes=%d\n",
+            sched_n, total_transitions, reachable_states, VECTOR_BYTES);
     for (int p = 0; p < PATTERNS; ++p)
         fprintf(summary, "pattern_%d_applications=%" PRIu64 "\npattern_%d_occurrences=%" PRIu64 "\npattern_%d_parity_violations=%" PRIu64 "\nglobal_parity_%d_violations=%" PRIu64 "\n",
                 p, applications[p], p, occurrences[p], p, pattern_violations[p], p, global_violations[p]);
@@ -629,12 +654,13 @@ def compile_kernel(directory: Path) -> dict[str, object]:
 
 def execute_kernel(directory: Path, label: str) -> dict[str, object]:
     vectors = directory / f"vectors_{label}.bin"
+    reachable_counts = directory / f"reachable_counts_{label}.bin"
     summary_path = directory / f"summary_{label}.txt"
     completed = subprocess.run(
         (
             str(directory / "kernel"), str(directory / "schedule.bin"),
             str(directory / "columns.bin"), str(directory / "patterns.bin"),
-            str(vectors), str(summary_path),
+            str(vectors), str(reachable_counts), str(summary_path),
         ),
         cwd=ROOT, check=True, capture_output=True, text=True,
         timeout=AUDIT_TIMEOUT_SEC,
@@ -646,6 +672,7 @@ def execute_kernel(directory: Path, label: str) -> dict[str, object]:
     return {
         "summary": summary,
         "vectors": vectors.read_bytes(),
+        "reachable_counts": reachable_counts.read_bytes(),
         "stdout": completed.stdout,
         "stderr": completed.stderr,
     }
@@ -653,10 +680,12 @@ def execute_kernel(directory: Path, label: str) -> dict[str, object]:
 
 def localization_census(
     payload: bytes,
+    reachable_count_payload: bytes,
     patterns: tuple[dict[str, object], ...],
     vector_bytes: int,
 ) -> tuple[dict[str, object], ...]:
     offset = 0
+    count_offset = 0
     rows = []
     for pattern in patterns:
         support = pattern["local_support"]
@@ -669,20 +698,15 @@ def localization_census(
             vector = int.from_bytes(payload[offset:offset + vector_bytes], "little")
             offset += vector_bytes
             vectors.append(vector)
-        single_counts = tuple(vector.bit_count() for vector in vectors)
+        count_size = 8 * len(support)
+        single_counts = struct.unpack(
+            f"<{len(support)}Q",
+            reachable_count_payload[count_offset:count_offset + count_size],
+        )
+        count_offset += count_size
         zero_singles = tuple(
             index for index, count in enumerate(single_counts) if count == 0
         )
-        zero_pair_count = 0
-        first_zero_pair = None
-        minimum_pair_count = GENERATOR_APPLICATIONS + 1
-        for left, right in combinations(range(len(support)), 2):
-            count = (vectors[left] & vectors[right]).bit_count()
-            minimum_pair_count = min(minimum_pair_count, count)
-            if count == 0:
-                zero_pair_count += 1
-                if first_zero_pair is None:
-                    first_zero_pair = (left, right)
         full = (1 << GENERATOR_APPLICATIONS) - 1
         for vector in vectors:
             full &= vector
@@ -690,15 +714,10 @@ def localization_census(
         if zero_singles:
             level = "single_wire_value"
             chosen_indices = (zero_singles[0],)
-        elif first_zero_pair is not None:
-            level = "wire_pair_configuration"
-            chosen_indices = first_zero_pair
-        elif full_count == 0:
-            level = "full_local_configuration"
-            chosen_indices = tuple(range(len(support)))
         else:
-            level = "none"
-            chosen_indices = ()
+            raise AssertionError(
+                "Pinned family reached the second localization rung; a full-reachable pair census is required"
+            )
         chosen_wires = tuple(support[index] for index in chosen_indices)
         chosen_values = tuple(values[index] for index in chosen_indices)
         structurally_smaller = len(chosen_indices) < len(parity_wires)
@@ -713,13 +732,16 @@ def localization_census(
                 "wire-pair target configurations on backward support",
                 "full witness-derived local configuration on backward support",
             ),
+            "ladder_search_rule":
+                "stop only after the first total rung, because all later rungs are provably non-minimal",
+            "complete_reachable_state_census": REACHABLE_STATES,
             "complete_generator_application_census": GENERATOR_APPLICATIONS,
             "single_wire_configurations_checked": len(support),
             "minimum_single_wire_occurrences": min(single_counts),
             "zero_single_wire_configuration_count": len(zero_singles),
-            "wire_pair_configurations_checked": len(support) * (len(support) - 1) // 2,
-            "minimum_wire_pair_occurrences": minimum_pair_count,
-            "zero_wire_pair_configuration_count": zero_pair_count,
+            "wire_pair_search": "NOT_REACHED_SINGLE_WIRE_RUNG_TOTAL",
+            "full_local_search":
+                "NOT_REACHED_FOR_LOCALIZATION; exact relevant-generator occurrence independently checked in B_USAGE_CENSUS",
             "full_local_configuration_occurrences": full_count,
             "smallest_total_blocking_level": level,
             "named_blocker": {
@@ -728,7 +750,10 @@ def localization_census(
                 "statement": (
                     " AND ".join(
                         f"x[{wire}]={value}" for wire, value in zip(chosen_wires, chosen_values)
-                    ) + f" never occurs immediately before F_{pattern['generator_pair'][0]}_{pattern['generator_pair'][1]}"
+                    ) + (
+                        " never occurs in any of the 891,513 reachable states; "
+                        f"therefore it never occurs before F_{pattern['generator_pair'][0]}_{pattern['generator_pair'][1]}"
+                    )
                     if chosen_wires else "no blocker found"
                 ),
                 "occurrences": 0 if chosen_wires else None,
@@ -748,6 +773,11 @@ def localization_census(
         })
     if offset != len(payload):
         raise AssertionError(("match-vector payload length drift", offset, len(payload)))
+    if count_offset != len(reachable_count_payload):
+        raise AssertionError((
+            "reachable-count payload length drift", count_offset,
+            len(reachable_count_payload),
+        ))
     return tuple(rows)
 
 
@@ -779,7 +809,10 @@ def run() -> int:
     exact_replay = replay_first == replay_second
     summary = replay_first["summary"]
     vector_bytes = int(summary["vector_bytes"])
-    localization = localization_census(replay_first["vectors"], patterns, vector_bytes)
+    localization = localization_census(
+        replay_first["vectors"], replay_first["reachable_counts"],
+        patterns, vector_bytes,
+    )
 
     certificate_a = {
         "source": AUDIT_INPUT_PATHS[0],
@@ -833,8 +866,10 @@ def run() -> int:
     localized_count = sum(row["verdict"] == "USAGE_LOCALIZED" for row in localization)
     certificate_c = {
         "search_policy": (
-            "Exhaust the declared ladder in increasing arity. A level is total only when its exact target assignment has zero occurrences in the complete pre-generator census; ties use lexicographically least wires."
+            "Search the declared ladder in increasing arity and stop at the first total rung. A level is total only when its exact target assignment has zero occurrences in all 891,513 reachable states, including terminal states; ties use lexicographically least wires."
         ),
+        "complete_reachable_state_count": summary["reachable_states"],
+        "expected_complete_reachable_state_count": REACHABLE_STATES,
         "honesty_policy": (
             "A local explanation is accepted only when the blocker uses fewer wires than the conserved two-wire parity and is not the parity pair itself. Pair/full-support absence is reported honestly as reachability-level irreducibility."
         ),
@@ -846,7 +881,10 @@ def run() -> int:
             if localized_count == len(localization)
             else "ONE_OR_MORE_PATTERNS_IRREDUCIBLE_AT_DECLARED_GRANULARITY"
         ),
-        "pass": all(row["pass"] for row in localization),
+        "pass": (
+            summary["reachable_states"] == REACHABLE_STATES
+            and all(row["pass"] for row in localization)
+        ),
     }
 
     overall_verdict = (
@@ -883,6 +921,11 @@ def run() -> int:
         "second_summary": replay_second["summary"],
         "vectors_exact": replay_first["vectors"] == replay_second["vectors"],
         "vectors_sha256": sha256(replay_first["vectors"]).hexdigest(),
+        "reachable_counts_exact": (
+            replay_first["reachable_counts"] == replay_second["reachable_counts"]
+        ),
+        "reachable_counts_sha256":
+            sha256(replay_first["reachable_counts"]).hexdigest(),
         "kernel_stdout": replay_first["stdout"],
         "kernel_stderr": replay_first["stderr"],
     }
@@ -912,6 +955,7 @@ def run() -> int:
         and controls["branch_exact"]
         and exact_replay
         and replay_control["vectors_exact"]
+        and replay_control["reachable_counts_exact"]
         and not controls["blocked_modules_loaded_at_end"]
         and not controls["firewall_hits_at_end"]
         and elapsed < AUDIT_TIMEOUT_SEC

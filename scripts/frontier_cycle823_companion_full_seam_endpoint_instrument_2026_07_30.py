@@ -185,6 +185,7 @@ def expected_instrument_output(
 
 def full_seam_algebra_certificate() -> dict[str, object]:
     row_pairs = signature_classes = instrument_cases = 0
+    row_cardinality_failures = 0
     row_mask_failures = swap_failures = monomial_failures = 0
     instrument_failures = 0
     maximum_instrument_residual = 0.0
@@ -201,6 +202,9 @@ def full_seam_algebra_certificate() -> dict[str, object]:
             endpoint_mask = (1 << left) | (1 << right)
             physical_rows = fixture.physical_terms(edge_index)
             target_rows = fixture.target_terms(edge_index)
+            row_cardinality_failures += (
+                len(physical_rows) != 4 or len(target_rows) != 4
+            )
             row_pairs += len(physical_rows)
             for factor, (physical, target) in enumerate(
                 zip(physical_rows, target_rows)
@@ -306,6 +310,7 @@ def full_seam_algebra_certificate() -> dict[str, object]:
     return {
         "held_shapes": len(SHAPES),
         "matched_physical_target_row_pairs": row_pairs,
+        "four_plus_four_row_cardinality_failures": row_cardinality_failures,
         "physical_and_target_signature_classes": signature_classes,
         "monomial_full_seam_failures": monomial_failures,
         "full_seam_endpoint_swap_failures": swap_failures,
@@ -654,7 +659,7 @@ def main() -> None:
     toffoli = toffoli_decomposition_certificate()
     atlas = R822.B.P.build_private_atlases()
     boxes = tuple(
-        shape_certificate(shape, atlas, covariance=(shape == SHAPES[0]))
+        shape_certificate(shape, atlas, covariance=True)
         for shape in SHAPES
     )
     mass = R822.one_particle_mass_fixture()
@@ -662,6 +667,7 @@ def main() -> None:
     checks = {
         "complete_physical_and_target_seams_swap_declared_endpoints": (
             algebra["matched_physical_target_row_pairs"] == 328
+            and algebra["four_plus_four_row_cardinality_failures"] == 0
             and algebra["physical_and_target_signature_classes"] == 1312
             and algebra["row_endpoint_mask_failures"] == 0
             and algebra["monomial_full_seam_failures"] == 0
@@ -687,7 +693,11 @@ def main() -> None:
             box["endpoint_palette_collision_failures"] == 0
             and box["persistent_endpoint_auxiliary_M2"] == 3 * box["edges"]
             and box["fixed_type_assignment"]["charged_neutral_coordinate_overlap"] == 0
+            and box["fixed_type_assignment"]["FSWAP_endpoint_type_failures"] == 0
+            and box["fixed_type_assignment"]["neutral_route_source_type_failures"] == 0
+            and box["fixed_type_assignment"]["charged_route_fixed_type_failures"] == 0
             and box["fixed_type_assignment"]["neutral_route_fixed_type_failures"] == 0
+            and box["fixed_type_assignment"]["persistent_type_partition_failures"] == 0
             for box in boxes
         ),
         "all_instrument_routes_are_returned_nearest_neighbour_and_bounded": all(
@@ -711,7 +721,9 @@ def main() -> None:
             for box in boxes
         ),
         "proper_cubic_transport_and_all_products_preserve_the_program": all(
-            boxes[0]["covariance"][key] == 0 for key in (
+            box["covariance"][key] == 0
+            for box in boxes
+            for key in (
                 "context_nearest_neighbour_failures",
                 "context_palette_bijection_failures",
                 "context_collision_graph_failures",
@@ -721,7 +733,7 @@ def main() -> None:
                 "product_colour_failures",
             )
         ),
-        "one_particle_mass_and_contact_fixture_is_unchanged": (
+        "inherited_one_particle_mass_and_contact_regression_is_rerun": (
             mass["one_particle_mass_residual"] < TOL
             and mass["one_particle_coin_eigen_residual"] < TOL
             and mass["contact_vacuum_and_one_particle_residual"] < TOL
@@ -746,6 +758,7 @@ def main() -> None:
             "autonomous clean-auxiliary genesis/enforcement and update occurrence",
             "actuality/admissibility, irreversible Record, Born weighting, and realized history",
             "physical causal-time attachment, conserved source/gravity response, and prediction bridge",
+            "a composed matter-only mass/contact theorem after retaining or discarding the pointer",
         ),
     }
     report = {

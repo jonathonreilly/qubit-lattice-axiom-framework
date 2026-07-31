@@ -169,7 +169,7 @@ def source_controls() -> tuple[dict[str, object], dict[str, ast.Module]]:
             "evolve_nine", "transition_rows", "certificate_b_schema_hunt",
         } <= function_names(trees[AUDIT_INPUT_PATHS[1]]),
         "cycle853_boundary_mechanism_basis": {
-            "recursion_probe", "extract_patterns", "run",
+            "recursion_probe", "derive_patterns", "run",
         } <= function_names(trees[AUDIT_INPUT_PATHS[2]]),
         "cycle848_constants_exact": (
             literal_assignment(trees[AUDIT_INPUT_PATHS[1]], "BACKBONE")

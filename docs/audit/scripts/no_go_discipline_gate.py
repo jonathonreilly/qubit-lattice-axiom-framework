@@ -146,10 +146,12 @@ POLICY_NEGATIVE_CLASSES = {
     "conditional_wall_rationale",
 }
 ROUTE_DISPOSITIONS = {"CLOSED", "OPEN", "UNTESTED"}
-W_UNIT_NEAR_MARKER_RE = re.compile(
-    r"(?i)W_+unit(?:(?!W_+unit)[^\W_])*"
+NORMALIZATION_MARKER_RE = re.compile(
+    r"(?:normaliz[A-Za-z0-9]*|units?|scale[A-Za-z0-9]*|dimensionful[A-Za-z0-9]*)",
+    re.IGNORECASE | re.ASCII,
 )
-W_UNIT_LITERAL_RE = re.compile(r"W_units?", re.IGNORECASE)
+W_UNIT_LITERAL_RE = re.compile(r"W_units?", re.IGNORECASE | re.ASCII)
+W_UNIT_POST_SUFFIX_RE = re.compile(r"_post", re.IGNORECASE | re.ASCII)
 
 
 def _is_marker_word_extension(character: str) -> bool:
@@ -167,10 +169,35 @@ def _has_exact_w_unit_marker(route_semantics: str) -> bool:
         ):
             continue
         if (
-            match.group(0).casefold() == "w_unit"
-            and route_semantics[match.end():].casefold().startswith("_post")
+            match.group(0).lower() == "w_unit"
+            and W_UNIT_POST_SUFFIX_RE.match(route_semantics, match.end())
         ):
             continue
+        return True
+    return False
+
+
+def _has_normalization_marker(route_semantics: str) -> bool:
+    """Match the documented ASCII markers at Unicode-aware token boundaries."""
+    if _has_exact_w_unit_marker(route_semantics):
+        return True
+    for match in NORMALIZATION_MARKER_RE.finditer(route_semantics):
+        if match.start() and _is_marker_word_extension(route_semantics[match.start() - 1]):
+            continue
+        if match.end() < len(route_semantics) and _is_marker_word_extension(
+            route_semantics[match.end()]
+        ):
+            continue
+        if (
+            match.group(0).lower() in {"unit", "units"}
+            and match.start() >= 2
+            and route_semantics[match.start() - 1] == "_"
+        ):
+            prefix_index = match.start() - 2
+            while prefix_index >= 0 and route_semantics[prefix_index] == "_":
+                prefix_index -= 1
+            if prefix_index >= 0 and route_semantics[prefix_index] in {"W", "w"}:
+                continue
         return True
     return False
 
@@ -178,18 +205,12 @@ def _has_exact_w_unit_marker(route_semantics: str) -> bool:
 def route_class_marker_matches(route_class: str, route_semantics: str) -> bool:
     """Match documented route markers across prose and identifier tokens."""
     route_semantics = unicodedata.normalize("NFC", route_semantics)
+    if route_class == "normalization_or_units":
+        return _has_normalization_marker(route_semantics)
     marker = ROUTE_CLASS_MARKERS[route_class]
-    if (
-        route_class == "normalization_or_units"
-        and _has_exact_w_unit_marker(route_semantics)
-    ):
-        return True
     if marker.search(route_semantics):
         return True
-    separator_text = route_semantics
-    if route_class == "normalization_or_units":
-        separator_text = W_UNIT_NEAR_MARKER_RE.sub(" ", separator_text)
-    marker_text = re.sub(r"[_-]+", " ", separator_text)
+    marker_text = re.sub(r"[_-]+", " ", route_semantics)
     return bool(marker.search(marker_text))
 
 PATH_TRIGGER_RE = re.compile(
@@ -3447,10 +3468,14 @@ def _validate_n1(packet: dict, status: str, manifest: dict[str, dict] | None) ->
             return f"N1 route_id {route['route_id']!r} is duplicated"
         if route_class not in ROUTE_CLASSES:
             return f"N1 route {index}.route_class must be one of {sorted(ROUTE_CLASSES)}"
-        route_semantics = " ".join(
-            str(route.get(field) or "") for field in ("mechanism", "attempt", "outcome")
+        route_semantics = (
+            str(route.get(field) or "")
+            for field in ("mechanism", "attempt", "outcome")
         )
-        if not route_class_marker_matches(route_class, route_semantics):
+        if not any(
+            route_class_marker_matches(route_class, field_text)
+            for field_text in route_semantics
+        ):
             return (
                 f"N1 route {index}.route_class={route_class!r} is not supported "
                 "by its evidenced mechanism/attempt/outcome vocabulary"

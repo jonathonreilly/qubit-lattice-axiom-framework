@@ -9115,6 +9115,15 @@ class NoGoDisciplineGateTest(unittest.TestCase):
             "frontier_X_unitary_operator",
             unicode_decomposed,
             unicode_precomposed,
+            "unit\u0301",
+            "frontier_unit\u0301_probe",
+            "x\u0338unit",
+            "x\u034funits",
+            "un\u0131t",
+            "un\u0130t",
+            "W_un\u0131t",
+            "W_un\u0130ts",
+            "W_un\u0131t_post",
         )
         for non_marker in non_markers:
             with self.subTest(non_marker=non_marker):
@@ -9167,7 +9176,7 @@ class NoGoDisciplineGateTest(unittest.TestCase):
         for marker_case in exact_marker_cases:
             with self.subTest(full_validator_exact_marker_case=marker_case):
                 compound_marker_line = (
-                    f"N2 route {marker_case}: the exact unit marker remains "
+                    f"N2 route {marker_case}: the literal token remains "
                     "evidenced"
                 )
                 manifest[stdout_path]["text"] += "\n" + compound_marker_line
@@ -9232,6 +9241,77 @@ class NoGoDisciplineGateTest(unittest.TestCase):
                     "evidence_locator": compound_marker_line,
                 })
                 _set_no_go_scan_coverage(packet, manifest)
+                self.assertIsNone(
+                    m.validate_no_go_discipline(
+                        audit, evidence_manifest=manifest
+                    )
+                )
+
+    def test_n1_route_class_marker_must_exist_within_one_field(self):
+        m = _import("no_go_discipline_gate")
+        cases = (
+            (
+                "dynamical_or_effective_action",
+                "equivariant",
+                "family route",
+                "neutral result",
+                "equivariant family",
+            ),
+            (
+                "convention_or_relabeling",
+                "basis",
+                "label route",
+                "neutral result",
+                "basis label",
+            ),
+            (
+                "lattice_scale_or_limit",
+                "finite",
+                "size route",
+                "neutral result",
+                "finite size",
+            ),
+        )
+        stdout_path = "audit-packet://runner-stdout/test_no_go"
+        for route_class, mechanism, attempt, outcome, complete_marker in cases:
+            with self.subTest(route_class=route_class):
+                self.assertTrue(
+                    m.route_class_marker_matches(
+                        route_class, " ".join((mechanism, attempt, outcome))
+                    )
+                )
+                self.assertFalse(
+                    any(
+                        m.route_class_marker_matches(route_class, field_text)
+                        for field_text in (mechanism, attempt, outcome)
+                    )
+                )
+                manifest = self._manifest()
+                manifest[stdout_path]["text"] += "\n" + "\n".join(
+                    (mechanism, attempt, outcome, complete_marker)
+                )
+                packet = _no_go_packet(route_count=6)
+                route = packet["N1_alternative_routes"][5]
+                route.update({
+                    "route_class": route_class,
+                    "mechanism": mechanism,
+                    "attempt": attempt,
+                    "outcome": outcome,
+                })
+                _set_no_go_scan_coverage(packet, manifest)
+                audit = {
+                    "claim_type": "no_go",
+                    "verdict": "audited_clean",
+                    "chain_closes": True,
+                    "no_go_discipline": packet,
+                }
+                self.assertIn(
+                    "not supported by its evidenced",
+                    m.validate_no_go_discipline(
+                        audit, evidence_manifest=manifest
+                    ) or "",
+                )
+                route["mechanism"] = complete_marker
                 self.assertIsNone(
                     m.validate_no_go_discipline(
                         audit, evidence_manifest=manifest
@@ -13312,7 +13392,7 @@ class CodexAuditRunnerTargetSelectionTest(unittest.TestCase):
         n1_prompt = m.render_fresh_schema_retry_prompt(
             "ORIGINAL RESTRICTED PACKET", n1_code, 1,
         )
-        self.assertIn("joined mechanism, attempt, and outcome", n1_prompt)
+        self.assertIn("at least one individual mechanism", n1_prompt)
         self.assertNotIn("route 2", n1_prompt)
         n5_code = m.fresh_schema_retry_code(
             "N5 statement 1 tested resolution is not evidenced at "

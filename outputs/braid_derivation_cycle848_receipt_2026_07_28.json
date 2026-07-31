@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "blockR24-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle848_braid_derivation_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 0
+    },
+    "logs/runner-cache/frontier_cycle848_derivation_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 0
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 848,
+  "files": {
+    "docs/BRAID_DERIVATION_CYCLE848_BOUNDED_THEOREM_NOTE_2026-07-28.md": "c1de5d9ad14f9a6e0f765d4ae38670efc33594c9c10f4ab015549f42caf07f58",
+    "logs/runner-cache/frontier_cycle848_braid_derivation_2026_07_28.txt": "788389e88fbd6b7cef7eea7f4fb01e58324d395d1a3a6ef292e92e00b2440bb4",
+    "logs/runner-cache/frontier_cycle848_derivation_independent_check_2026_07_28.txt": "11c2a9987cb23bc4aeb9c005e869b2cd69b41ed81911e681a4bc207e04cdca67",
+    "scripts/frontier_cycle848_braid_derivation_2026_07_28.py": "a9fdefbffe16495e62258804d3abbddb48aaa500e365f56c739c24959162ca48",
+    "scripts/frontier_cycle848_derivation_independent_check_2026_07_28.py": "0bb54a40321e819b6f48d8b0301a80d4859e37de8b29bce6e6ba4fa0d8c44cc8"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "census complete: 20 exact coincidence events (all nine-scale, 0 pair-scale) with one-step preconditions; pair braid generates nothing locally (846 reduction law confirmed)",
+    "exactly 16 precondition types; NO_SINGLE_CROSS_SCALE_LOCAL_SCHEMA over the declared classes",
+    "forward re-derivation honestly NOT_ATTEMPTED_NO_SINGLE_SCHEMA; the merged why remains open (fifth excluded approach class)",
+    "checker: independent census agrees (20/0); 16-class relation re-derived; two additional schema classes attacked (offset-parameterized wire families; shift-composed three-wire predicates) - no upgrade; OPEN_AFTER_DECLARED_FINITE_SCHEMA_EXHAUSTION"
+  ]
+}

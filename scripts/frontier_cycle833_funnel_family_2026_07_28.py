@@ -1142,49 +1142,91 @@ def anatomy_law_certificate(
             "HOLDS: source.SOURCE_POINTER is residual-active for all funnels"
         )
 
-    signatures = {
-        event: requested_anatomy_signature(anatomies[event])
+    skeletons = {
+        event: (
+            anatomies[event]["occupancy"],
+            anatomies[event]["tokens"],
+            tuple(
+                (link["hamming_weight"], link["active_wire_indices"])
+                for link in anatomies[event]["links"]
+            ),
+            anatomies[event]["residual_fields"],
+        )
         for event in (0, 1, 2)
     }
-    if len(set(signatures.values())) == 1:
-        candidate = "CONSTANT_REQUESTED_ANATOMY"
+    common_skeleton = len(set(skeletons.values())) == 1
+    if common_skeleton:
         holds.append(
-            "HOLDS: weight/occupancy/tokens/link/residual anatomy is "
-            "event-independent on events 0,1,2"
-        )
-    elif signatures[0] == signatures[2] != signatures[1]:
-        candidate = "EVENT_PARITY_REQUESTED_ANATOMY"
-        holds.append(
-            "HOLDS: events 0 and 2 have one exact requested anatomy and "
-            "event 1 has the other"
+            "HOLDS: occupancy, tokens, empty-link data, and residual fields "
+            "form one exact common skeleton on events 0,1,2"
         )
     else:
-        candidate = "NO_UNIFIED_REQUESTED_ANATOMY_LAW_FOUND"
         gaps.append(
-            "GAP: requested anatomy is neither constant nor event-parity "
-            "classified across events 0,1,2"
+            "GAP: occupancy/tokens/link/residual skeleton is not common"
         )
 
-    weights = tuple(anatomies[event]["hamming_weight"] for event in (0, 1, 2))
-    if weights[1] - weights[0] == weights[2] - weights[1]:
+    arrival_weights = tuple(
+        anatomies[event]["hamming_weight"] for event in EVENT_ORDER
+    )
+    arrival_bank0_weights = tuple(
+        anatomies[event]["bank_hamming_weights"][0] for event in EVENT_ORDER
+    )
+    rank_weight_law = (
+        arrival_weights == tuple(44 + rank for rank in range(3))
+        and arrival_bank0_weights == tuple(38 + rank for rank in range(3))
+    )
+    if rank_weight_law:
         holds.append(
-            "HOLDS: the three observed weights form an exact affine sequence "
-            f"{weights}"
+            "HOLDS: in funnel-arrival order events 0,2,1, total weight is "
+            "exactly 44,45,46 and bank-0 weight is exactly 38,39,40"
         )
     else:
         gaps.append(
-            f"GAP: weights {weights} are not affine in event index 0,1,2"
+            "GAP: no unit-step weight law holds in funnel-arrival order"
+        )
+
+    parity_endpoints = all(
+        set(anatomies[event]["source_active_indices"])
+        == {K.R3.X.SOURCE_POINTER,
+            K.R3.X.RIGHT_ENDPOINT if event % 2 == 0
+            else K.R3.X.LEFT_ENDPOINT}
+        for event in (0, 1, 2)
+    )
+    if parity_endpoints:
+        holds.append(
+            "HOLDS: the active source endpoint follows event parity "
+            "(right for even events, left for odd), with source pointer active"
+        )
+    else:
+        gaps.append(
+            "GAP: active source endpoint does not follow event parity"
+        )
+
+    numeric_event_weights = tuple(
+        anatomies[event]["hamming_weight"] for event in (0, 1, 2)
+    )
+    if (
+        numeric_event_weights[1] - numeric_event_weights[0]
+        == numeric_event_weights[2] - numeric_event_weights[1]
+    ):
+        holds.append(
+            "HOLDS: weights are affine in numeric event index 0,1,2"
+        )
+    else:
+        gaps.append(
+            f"GAP: weights {numeric_event_weights} are not affine in numeric "
+            "event index 0,1,2; arrival-rank order is not yet derived from e"
         )
     residuals = {
         event: anatomies[event]["residual_fields"] for event in (0, 1, 2)
     }
-    if residuals[0] == residuals[2]:
+    if len(set(residuals.values())) == 1:
         holds.append(
-            "HOLDS: residual fields agree exactly for the even events 0 and 2"
+            "HOLDS: residual fields are exactly event-independent on 0,1,2"
         )
     else:
         gaps.append(
-            "GAP: even-event residual fields do not agree exactly"
+            "GAP: residual fields vary with event index"
         )
     if family_structure["exact_family_maps_found"]:
         holds.append(
@@ -1200,6 +1242,11 @@ def anatomy_law_certificate(
         "GAP: three observed funnels cannot establish an all-event theorem",
         "GAP: no formula for future cohort moments is derived",
     ))
+    candidate = (
+        "OBSERVED_COMMON_SKELETON_PLUS_ARRIVAL_RANK_WEIGHT"
+        if common_skeleton and rank_weight_law and parity_endpoints
+        else "NO_UNIFIED_REQUESTED_ANATOMY_LAW_FOUND"
+    )
     return {
         "event_rows": tuple({
             "event": event,
@@ -1208,13 +1255,19 @@ def anatomy_law_certificate(
             "tokens": anatomies[event]["tokens"],
             "links": anatomies[event]["links"],
             "residual_fields": anatomies[event]["residual_fields"],
+            "bank_hamming_weights":
+                anatomies[event]["bank_hamming_weights"],
+            "source_active_indices":
+                anatomies[event]["source_active_indices"],
         } for event in (0, 1, 2)),
         "holds_statements": tuple(holds),
         "named_gaps": tuple(gaps),
         "anatomy_law_candidate": candidate,
         "outcome": (
-            candidate
-            if candidate != "NO_UNIFIED_REQUESTED_ANATOMY_LAW_FOUND"
+            "HOLDS_ON_OBSERVED_THREE: COMMON_SKELETON_PLUS_ARRIVAL_RANK_"
+            "WEIGHT; NUMERIC_EVENT_INDEX_DERIVATION_OPEN"
+            if candidate
+            == "OBSERVED_COMMON_SKELETON_PLUS_ARRIVAL_RANK_WEIGHT"
             else "NO_ANATOMY_LAW_FOUND; EXACT COMPARISONS ONLY"
         ),
         "pass": (

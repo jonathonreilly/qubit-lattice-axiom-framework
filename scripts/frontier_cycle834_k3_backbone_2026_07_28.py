@@ -25,7 +25,7 @@ AUDIT_INPUT_PATHS = (
 
 import ast
 from collections import Counter
-from hashlib import sha256
+from hashlib import sha1, sha256
 import importlib.abc
 from itertools import combinations
 import json
@@ -42,6 +42,42 @@ TEXT_AST_ONLY_PATHS = AUDIT_INPUT_PATHS[1:]
 BLOCKLISTED_MODULES = tuple(
     Path(path).stem for path in TEXT_AST_ONLY_PATHS
 )
+EXPECTED_SHA256 = {
+    AUDIT_INPUT_PATHS[0]:
+        "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
+    AUDIT_INPUT_PATHS[1]:
+        "ab5c931aca1989ba93b10dbe6167419ba831f2ee8524a89869f86d9aa185add3",
+    AUDIT_INPUT_PATHS[2]:
+        "b279582fb8deab4b8713c08353a3c6f3f1239135f1d0f666bdc6b35fe3b99223",
+    AUDIT_INPUT_PATHS[3]:
+        "624dad4d841e10e24891810dbc500cc4d6ebe871d6f09dd96f89e3189e52e2ff",
+    AUDIT_INPUT_PATHS[4]:
+        "0144e7c899959b4f29df3cc513ca47079717004f358ffd40fd7dd5773fd182f1",
+}
+EXPECTED_GIT_BLOBS = {
+    AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
+    AUDIT_INPUT_PATHS[1]: "abf41e5cd26dcda9a93753fc41c1b2a316bd1913",
+    AUDIT_INPUT_PATHS[2]: "423992108cbe1f2d8ce57e2f1618e85c14ac0a2c",
+    AUDIT_INPUT_PATHS[3]: "ef24edda08118c4e14439b899790fff6c6f94175",
+    AUDIT_INPUT_PATHS[4]: "d48d2f48ba72b624bd02cb63649247922b03ef4e",
+}
+REQUIRED_AST_FUNCTIONS = {
+    AUDIT_INPUT_PATHS[0]: {
+        "interleaved_program", "mapped_macro", "run_orbit",
+    },
+    AUDIT_INPUT_PATHS[1]: {
+        "build_independent_catalog", "scan_record",
+    },
+    AUDIT_INPUT_PATHS[2]: {
+        "k3_families", "transient_certificate", "cycle_certificate",
+    },
+    AUDIT_INPUT_PATHS[3]: {
+        "build_family", "boundary_snapshot",
+    },
+    AUDIT_INPUT_PATHS[4]: {
+        "build_seed_family", "arithmetic_census",
+    },
+}
 
 
 class _BlockedPrimaryFinder(importlib.abc.MetaPathFinder):
@@ -165,6 +201,218 @@ def digest(value: object) -> str:
 
 def state_sha256(state: State) -> str:
     return sha256(state).hexdigest()
+
+
+def git_blob(payload: bytes) -> str:
+    return sha1(
+        f"blob {len(payload)}\0".encode("ascii") + payload
+    ).hexdigest()
+
+
+def literal_assignment(tree: ast.Module, name: str) -> object | None:
+    values = []
+    for node in tree.body:
+        if (
+            isinstance(node, ast.Assign)
+            and any(
+                isinstance(target, ast.Name) and target.id == name
+                for target in node.targets
+            )
+        ):
+            values.append(node.value)
+        elif (
+            isinstance(node, ast.AnnAssign)
+            and isinstance(node.target, ast.Name)
+            and node.target.id == name
+            and node.value is not None
+        ):
+            values.append(node.value)
+    if len(values) != 1:
+        return None
+    try:
+        return ast.literal_eval(values[0])
+    except (TypeError, ValueError):
+        return None
+
+
+def top_level_functions(tree: ast.Module) -> set[str]:
+    return {
+        node.name
+        for node in tree.body
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+    }
+
+
+def source_controls() -> dict[str, object]:
+    payloads = {
+        path: (ROOT / path).read_bytes()
+        for path in AUDIT_INPUT_PATHS
+        if (ROOT / path).is_file()
+    }
+    trees = {
+        path: ast.parse(payload, filename=path)
+        for path, payload in payloads.items()
+    }
+    actual_sha = {
+        path: sha256(payload).hexdigest()
+        for path, payload in payloads.items()
+    }
+    actual_blobs = {
+        path: git_blob(payload) for path, payload in payloads.items()
+    }
+    ast_rows = {
+        path: {
+            "required_functions":
+                tuple(sorted(REQUIRED_AST_FUNCTIONS[path])),
+            "required_functions_present":
+                REQUIRED_AST_FUNCTIONS[path]
+                <= top_level_functions(trees[path]),
+            "mode": (
+                "EXECUTABLE_LANDED_CORE"
+                if path == CORE_PATH
+                else "TEXT_AST_ONLY_BLOCKLISTED"
+            ),
+        }
+        for path in AUDIT_INPUT_PATHS
+    }
+
+    cycle801 = trees[AUDIT_INPUT_PATHS[1]]
+    cycle824 = trees[AUDIT_INPUT_PATHS[2]]
+    cycle831_primary = trees[AUDIT_INPUT_PATHS[3]]
+    cycle831_check = trees[AUDIT_INPUT_PATHS[4]]
+    expected_old_cycles = literal_assignment(
+        cycle831_primary, "EXPECTED_OLD_CYCLES"
+    )
+    k2_backbone_cycles = {
+        (3, pair): expected_old_cycles.get((3, pair))
+        for pair in K2_BACKBONE
+    } if isinstance(expected_old_cycles, dict) else {}
+    landed_constant_rows = {
+        "Cycle801_configuration_count_k3":
+            literal_assignment(
+                cycle801, "EXPECTED_CONFIGURATION_COUNTS"
+            )[3],
+        "Cycle801_family_count_k3":
+            literal_assignment(
+                cycle801, "EXPECTED_FAMILY_COUNTS"
+            )[3],
+        "Cycle801_zero_count_k3":
+            literal_assignment(cycle801, "EXPECTED_ZERO_COUNTS")[3],
+        "Cycle801_T2048_transient_moments_k3":
+            literal_assignment(
+                cycle801, "EXPECTED_T2048_TRANSIENT_MOMENTS"
+            )[3],
+        "Cycle801_T2048_open_count_k3":
+            literal_assignment(
+                cycle801, "EXPECTED_T2048_OPEN_COUNTS"
+            )[3],
+        "Cycle824_zero_rows_k3":
+            literal_assignment(cycle824, "K3_EXPECTED_ZERO_ROWS"),
+        "Cycle824_transient_moments_k3":
+            literal_assignment(
+                cycle824, "K3_EXPECTED_TRANSIENT_MOMENTS"
+            ),
+        "Cycle824_cycle_period":
+            literal_assignment(cycle824, "K3_CYCLE_PERIOD"),
+        "Cycle824_cycle_keys":
+            literal_assignment(cycle824, "K3_CYCLE_KEYS"),
+        "Cycle831_backbone":
+            literal_assignment(cycle831_check, "BACKBONE"),
+        "Cycle831_transient_cohort_targets":
+            literal_assignment(cycle831_check, "COHORT_TARGETS"),
+        "Cycle831_original_resolution":
+            literal_assignment(cycle831_check, "ORIGINAL_RESOLUTION"),
+        "Cycle831_target_horizon":
+            literal_assignment(cycle831_check, "TARGET_HORIZON"),
+        "Cycle831_k2_backbone_period3_rows":
+            tuple(
+                sorted(
+                    ((3, pair), 3) for pair in K2_BACKBONE
+                )
+            ),
+    }
+    expected_constant_rows = {
+        "Cycle801_configuration_count_k3": 77,
+        "Cycle801_family_count_k3": 7,
+        "Cycle801_zero_count_k3": 18,
+        "Cycle801_T2048_transient_moments_k3":
+            (444, 532, 681, 1385),
+        "Cycle801_T2048_open_count_k3": 14,
+        "Cycle824_zero_rows_k3": 18,
+        "Cycle824_transient_moments_k3": (444, 532, 681, 1385),
+        "Cycle824_cycle_period": 5952,
+        "Cycle824_cycle_keys":
+            tuple(key for key, _period in LANDED_K3_CYCLES),
+        "Cycle831_backbone": K2_BACKBONE,
+        "Cycle831_transient_cohort_targets": {2: 33195, 1: 51115},
+        "Cycle831_original_resolution": 14744,
+        "Cycle831_target_horizon": 65536,
+        "Cycle831_k2_backbone_period3_rows":
+            tuple(sorted(k2_backbone_cycles.items())),
+    }
+    self_payload = Path(__file__).read_bytes()
+    self_tree = ast.parse(self_payload, filename=Path(__file__).name)
+    direct_frontier_imports = tuple(sorted(
+        alias.name
+        for node in self_tree.body
+        if isinstance(node, ast.Import)
+        for alias in node.names
+        if alias.name.startswith("frontier_cycle")
+    ))
+    result = {
+        "AUDIT_INPUT_PATHS": AUDIT_INPUT_PATHS,
+        "AUDIT_INPUT_PATHS_literal":
+            literal_assignment(self_tree, "AUDIT_INPUT_PATHS")
+            == AUDIT_INPUT_PATHS,
+        "path_count": len(AUDIT_INPUT_PATHS),
+        "maximum_path_count": 7,
+        "existing_worktree_relative": (
+            len(payloads) == len(AUDIT_INPUT_PATHS)
+            and all(
+                not Path(path).is_absolute()
+                and (ROOT / path).is_file()
+                for path in AUDIT_INPUT_PATHS
+            )
+        ),
+        "sha256": actual_sha,
+        "expected_sha256": EXPECTED_SHA256,
+        "git_blobs": actual_blobs,
+        "expected_git_blobs": EXPECTED_GIT_BLOBS,
+        "source_AST": ast_rows,
+        "landed_constant_rows": landed_constant_rows,
+        "expected_landed_constant_rows": expected_constant_rows,
+        "landed_constants_exact":
+            landed_constant_rows == expected_constant_rows,
+        "text_AST_only_paths": TEXT_AST_ONLY_PATHS,
+        "blocked_modules": BLOCKLISTED_MODULES,
+        "direct_frontier_imports": direct_frontier_imports,
+        "blocked_modules_loaded": tuple(
+            name for name in BLOCKLISTED_MODULES if name in sys.modules
+        ),
+        "firewall_hits": tuple(FIREWALL.hits),
+        "dependency_policy":
+            "stdlib plus sole executable landed Cycle-719 core; all "
+            "science primaries text/AST-only and blocklisted",
+    }
+    result["pass"] = (
+        result["AUDIT_INPUT_PATHS_literal"]
+        and result["path_count"] <= result["maximum_path_count"]
+        and result["existing_worktree_relative"]
+        and actual_sha == EXPECTED_SHA256
+        and actual_blobs == EXPECTED_GIT_BLOBS
+        and all(
+            row["required_functions_present"]
+            for row in ast_rows.values()
+        )
+        and result["landed_constants_exact"]
+        and direct_frontier_imports
+        == (
+            "frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26",
+        )
+        and not result["blocked_modules_loaded"]
+        and not result["firewall_hits"]
+    )
+    return result
 
 
 def rotate_positions(
@@ -581,6 +829,44 @@ def initial_and_compiled(
     return initial, compile_word(word)
 
 
+def reconstruct_landed_k3_zero_keys(
+    program: tuple[object, ...],
+    fixtures: tuple[tuple[int, tuple[int, int], tuple[int, ...]], ...],
+    watched_indices: tuple[int, ...],
+) -> tuple[Key, ...]:
+    """Rebuild the landed zero-survivor representative/event catalog."""
+
+    families = k3_families()
+    fixture_by_event = {
+        event: before for event, _direction, before in fixtures
+    }
+    all_positions = tuple(sorted({
+        positions
+        for alternatives in families.values()
+        for positions in alternatives
+    }))
+    words = {
+        positions: synchronous_word(program, positions)
+        for positions in all_positions
+    }
+    zero_keys = []
+    for representative, alternatives in families.items():
+        for event in range(2 * FIXTURE_BANKS):
+            selected_alternatives = tuple(
+                positions
+                for positions in alternatives
+                if is_clean(
+                    K.A.apply_semantic(
+                        fixture_by_event[event], words[positions]
+                    ),
+                    watched_indices,
+                )
+            )
+            if not selected_alternatives:
+                zero_keys.append((3, representative, event))
+    return tuple(zero_keys)
+
+
 def capture_trajectory(
     initial: tuple[int, ...],
     compiled: CompiledWord,
@@ -844,12 +1130,157 @@ def forecast_surface(
     return result
 
 
-def run_science_probe() -> dict[str, object]:
-    geometry = geometry_certificate()
-    mapping = class_census(geometry)
+def pair_cyclic_separation(pair: tuple[int, int]) -> int:
+    left, right = pair
+    return min(
+        (right - left) % RING_STATIONS,
+        (left - right) % RING_STATIONS,
+    )
+
+
+def cross_stratum_law_certificate(
+    geometry: dict[str, object],
+    mapping: dict[str, object],
+    cohort: dict[str, object],
+    landed_constant_anchor_pass: bool,
+) -> dict[str, object]:
+    resolved_k3 = {
+        key for key, _moment in LANDED_K3_TRANSIENTS
+    } | {
+        key for key, _period in LANDED_K3_CYCLES
+    }
+    candidate_k3 = set(mapping["candidate_backbone"]["keys"])
+    k2_separation_rows = tuple({
+        "pair": pair,
+        "cyclic_separation": pair_cyclic_separation(pair),
+        "maximum_on_ring_11":
+            pair_cyclic_separation(pair) == RING_STATIONS // 2,
+    } for pair in K2_BACKBONE)
+    k3_family_profiles = tuple(
+        row["pairwise_cyclic_separation_profile"]
+        for row in geometry["family_rows"]
+    )
+    arithmetic_extreme_holds = (
+        all(row["maximum_on_ring_11"] for row in k2_separation_rows)
+        and min(min(profile) for profile in k3_family_profiles) == 2
+        and all(backbone_predicate(key) for key in resolved_k3)
+        and resolved_k3 <= candidate_k3
+    )
+    cycle_coherence_holds = (
+        landed_constant_anchor_pass
+        and K2_CYCLE_COHORT
+        == {"event": 3, "period": 3, "size": 9}
+        and cohort["cycles"][
+            "identical_in_phase_every_t0_through_t5951"
+        ]
+        and cohort["cycles"]["period"] == 5952
+        and len(cohort["cycles"]["keys"]) == 4
+    )
+    holds_rows = (
+        {
+            "id": "ARITHMETIC_EXTREME_CONCENTRATION",
+            "statement":
+                "The named k=2 backbone is the ring-11 maximum-separation "
+                "class (separation 5), while every landed k=3 resolution "
+                "is in the admitted-minimum class (minimum separation 2).",
+            "holds": arithmetic_extreme_holds,
+        },
+        {
+            "id": "DEGENERATE_CYCLE_COHORTS",
+            "statement":
+                "Both strata contain event-indexed degenerate cycle "
+                "cohorts: the nine k=2 backbone keys have period 3, and "
+                "the four k=3 event-1 keys have period 5952 and are "
+                "identical in phase.",
+            "holds": cycle_coherence_holds,
+        },
+    )
+    differences = (
+        {
+            "id": "GEOMETRY_PREDICATE_DIFFERS",
+            "k2":
+                "maximum pairwise separation 5, origin absent in the "
+                "nine-key backbone",
+            "k3":
+                "minimum pairwise separation 2 among landed "
+                "zero-survivor triples",
+            "same_formula": False,
+        },
+        {
+            "id": "TRANSIENT_SYNCHRONIZATION_DOES_NOT_GENERALIZE",
+            "k2_landed":
+                "three nine-key transient cohorts synchronize within "
+                "events 0, 2, and 1",
+            "k3_tested_here":
+                "four distinct moments; no pre-resolution same-time "
+                "coincidence; no own-moment lag-1..8 pair match; four "
+                "distinct moment-minus-5 states",
+            "k3_synchronized_cohort_observed":
+                cohort["transients"]["synchronized_cohort_observed"],
+        },
+        {
+            "id": "CYCLE_DEGENERACY_MODE_DIFFERS",
+            "k2": "period-3 pulse cohort",
+            "k3": "period-5952 identical full trajectories at offset 0",
+        },
+        {
+            "id": "EVENT_COVERAGE_DIFFERS",
+            "k2": "nine backbone pairs in each of four events",
+            "k3_zero_catalog_candidate_event_counts": {
+                event: sum(
+                    key[2] == event
+                    for key in mapping["candidate_backbone"]["keys"]
+                )
+                for event in range(4)
+            },
+        },
+    )
+    result = {
+        "status": "PARTIAL_CROSS_STRATUM_LAW_ONLY",
+        "holds_only_common_statements": holds_rows,
+        "differences": differences,
+        "transient_cohort_law_generalizes": False,
+        "backbone_geometry_generalizes_verbatim": False,
+        "narrow_candidate":
+            "resolution concentration on a separation-extreme class plus "
+            "coherent cycle subfamilies; no common transient-sync law",
+        "k2_separation_rows": k2_separation_rows,
+    }
+    result["pass"] = (
+        all(row["holds"] for row in holds_rows)
+        and not result["transient_cohort_law_generalizes"]
+        and not result["backbone_geometry_generalizes_verbatim"]
+        and differences[1]["k3_synchronized_cohort_observed"] is False
+        and differences[3][
+            "k3_zero_catalog_candidate_event_counts"
+        ] == {0: 0, 1: 5, 2: 5, 3: 4}
+    )
+    return result
+
+
+def run_science_probe(
+    landed_constant_anchor_pass: bool,
+) -> dict[str, object]:
     program = K.interleaved_program(FIXTURE_BANKS)
     fixtures = build_fixtures(program)
     basis = watched_coordinate_basis()
+    geometry = geometry_certificate()
+    reconstructed_zero_keys = reconstruct_landed_k3_zero_keys(
+        program, fixtures, tuple(basis["indices"])
+    )
+    geometry["landed_catalog_reconstruction"] = {
+        "method":
+            "all 77 pairwise-separated triples, grouped into seven "
+            "rotation families; all four events; landed clean projection",
+        "reconstructed_zero_keys": reconstructed_zero_keys,
+        "exactly_matches_literal_catalog":
+            reconstructed_zero_keys == LANDED_K3_ZERO_KEYS,
+    }
+    geometry["pass"] = (
+        geometry["pass"]
+        and reconstructed_zero_keys == LANDED_K3_ZERO_KEYS
+    )
+    mapping = class_census(geometry)
     transients = transient_cohort_probe(
         program, fixtures, tuple(basis["indices"])
     )
@@ -857,18 +1288,26 @@ def run_science_probe() -> dict[str, object]:
         program, fixtures, tuple(basis["indices"])
     )
     forecast = forecast_surface(mapping)
+    cohort = {
+        "transients": transients,
+        "cycles": cycles,
+        "forecast": forecast,
+        "pass":
+            transients["pass"]
+            and cycles["pass"]
+            and forecast["pass"],
+    }
+    cross_stratum = cross_stratum_law_certificate(
+        geometry,
+        mapping,
+        cohort,
+        landed_constant_anchor_pass,
+    )
     result = {
         "A_KEY_GEOMETRY": geometry,
         "B_RESOLVED_SET_MAPPING": mapping,
-        "C_COHORT_TEST": {
-            "transients": transients,
-            "cycles": cycles,
-            "forecast": forecast,
-            "pass":
-                transients["pass"]
-                and cycles["pass"]
-                and forecast["pass"],
-        },
+        "C_COHORT_TEST": cohort,
+        "D_CROSS_STRATUM_LAW": cross_stratum,
         "basis": {
             key: value for key, value in basis.items()
             if key != "indices"
@@ -878,36 +1317,154 @@ def run_science_probe() -> dict[str, object]:
         geometry["pass"]
         and mapping["pass"]
         and basis["pass"]
-        and result["C_COHORT_TEST"]["pass"]
+        and cohort["pass"]
+        and cross_stratum["pass"]
     )
     return result
 
 
 def run() -> int:
     started = monotonic()
-    science = run_science_probe()
+    sources = source_controls()
+    primary = run_science_probe(sources["landed_constants_exact"])
+    replay = run_science_probe(sources["landed_constants_exact"])
+    deterministic = primary == replay
     elapsed = monotonic() - started
+    controls_base = (
+        sources["pass"]
+        and primary["pass"]
+        and deterministic
+        and elapsed < AUDIT_TIMEOUT_SEC
+        and not any(
+            name in sys.modules for name in BLOCKLISTED_MODULES
+        )
+        and not FIREWALL.hits
+    )
+    controls = {
+        **sources,
+        "determinism_scope":
+            "complete k3 catalog reconstruction, geometry and class "
+            "census, four transient histories, four complete 5952-cycle "
+            "histories, forecast surface, and cross-stratum verdict",
+        "primary_science_sha256": digest(primary),
+        "replay_science_sha256": digest(replay),
+        "deterministic_exact_certificate_equality": deterministic,
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "blocked_modules_loaded_at_end": tuple(
+            name for name in BLOCKLISTED_MODULES if name in sys.modules
+        ),
+        "firewall_hits_at_end": tuple(FIREWALL.hits),
+        "pass": False,
+    }
+    certificates = {
+        "A_KEY_GEOMETRY": primary["A_KEY_GEOMETRY"],
+        "B_RESOLVED_SET_MAPPING": primary["B_RESOLVED_SET_MAPPING"],
+        "C_COHORT_TEST": primary["C_COHORT_TEST"],
+        "D_CROSS_STRATUM_LAW": primary["D_CROSS_STRATUM_LAW"],
+        "E_CONTROLS": controls,
+    }
+    checks = {
+        "A_K3_KEY_GEOMETRY":
+            primary["A_KEY_GEOMETRY"]["pass"],
+        "B_RESOLVED_SET_MAPPING":
+            primary["B_RESOLVED_SET_MAPPING"]["pass"],
+        "C_COHORT_TEST_AND_FORECAST":
+            primary["C_COHORT_TEST"]["pass"],
+        "D_CROSS_STRATUM_HOLDS_ONLY":
+            primary["D_CROSS_STRATUM_LAW"]["pass"],
+        "E_SHA_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT": False,
+    }
     report = {
         "cycle": 834,
-        "status": "A_TO_C_INCREMENT",
-        "checks": {
-            "A_KEY_GEOMETRY": science["A_KEY_GEOMETRY"]["pass"],
-            "B_RESOLVED_SET_MAPPING":
-                science["B_RESOLVED_SET_MAPPING"]["pass"],
-            "C_COHORT_TEST": science["C_COHORT_TEST"]["pass"],
+        "status":
+            primary["D_CROSS_STRATUM_LAW"]["status"],
+        "class_census": tuple(
+            {
+                "class": row["separation_class"],
+                "total": row["total"],
+                "transient": row["transient"],
+                "cycle": row["cycle"],
+                "open": row["open_through_T65536"],
+            }
+            for row in primary["B_RESOLVED_SET_MAPPING"][
+                "class_census"
+            ]
+        ),
+        "backbone_candidate":
+            "minimum pairwise cyclic separation equals 2",
+        "candidate_counts": {
+            key: value
+            for key, value in primary["B_RESOLVED_SET_MAPPING"][
+                "candidate_backbone"
+            ].items()
+            if key in {
+                "total", "transient", "cycle", "resolved", "open_count"
+            }
         },
+        "transient_cohort_outcome":
+            primary["C_COHORT_TEST"]["transients"]["outcome"],
+        "cycle_cohort_outcome":
+            primary["C_COHORT_TEST"]["cycles"]["outcome"],
+        "forecast_surface":
+            primary["C_COHORT_TEST"]["forecast"][
+                "standing_prediction_surface"
+            ],
+        "checks": {},
         "runtime_seconds": round(elapsed, 6),
-        "pass": science["pass"] and elapsed < AUDIT_TIMEOUT_SEC,
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "pass": False,
+        "terminal": "CYCLE834_K3_BACKBONE_HONEST_FAIL",
     }
+    for _iteration in range(6):
+        controls["pass"] = (
+            controls_base
+            and controls["stdout_bytes"] < STDOUT_LIMIT_BYTES
+        )
+        checks[
+            "E_SHA_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT"
+        ] = controls["pass"]
+        report["checks"] = dict(checks)
+        report["pass"] = all(checks.values())
+        report["terminal"] = (
+            "CYCLE834_K3_BACKBONE_EXACT_PASS"
+            if report["pass"]
+            else "CYCLE834_K3_BACKBONE_HONEST_FAIL"
+        )
+        output = "\n".join((
+            "CYCLE834_K3_BACKBONE",
+            *(
+                f"CERTIFICATE_{name}={compact(value)}"
+                for name, value in certificates.items()
+            ),
+            "REPORT=" + compact(report),
+        )) + "\n"
+        stdout_bytes = len(output.encode("utf-8"))
+        controls["stdout_bytes"] = stdout_bytes
+        report["stdout_bytes"] = stdout_bytes
     output = "\n".join((
         "CYCLE834_K3_BACKBONE",
-        "CERTIFICATE_A=" + compact(science["A_KEY_GEOMETRY"]),
-        "CERTIFICATE_B=" + compact(science["B_RESOLVED_SET_MAPPING"]),
-        "CERTIFICATE_C=" + compact(science["C_COHORT_TEST"]),
+        *(
+            f"CERTIFICATE_{name}={compact(value)}"
+            for name, value in certificates.items()
+        ),
         "REPORT=" + compact(report),
     )) + "\n"
-    if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
-        raise AssertionError("stdout limit exceeded")
+    final_bytes = len(output.encode("utf-8"))
+    if final_bytes >= STDOUT_LIMIT_BYTES:
+        failure = {
+            "pass": False,
+            "terminal": "CYCLE834_K3_BACKBONE_HONEST_FAIL",
+            "failure": "stdout bound exceeded",
+            "stdout_bytes": final_bytes,
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        }
+        sys.stdout.write(compact(failure) + "\n")
+        return 1
     sys.stdout.write(output)
     return 0 if report["pass"] else 1
 

@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockF21-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle850_ladder_independent_check_2026_07_28.txt": "PASS/FAIL certificate lines",
+    "logs/runner-cache/frontier_cycle850_stratum_mark_ladder_2026_07_28.txt": "PASS/FAIL certificate lines"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle850_ladder_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle850_stratum_mark_ladder_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 850,
+  "files": {
+    "docs/STRATUM_MARK_LADDER_CYCLE850_BOUNDED_THEOREM_NOTE_2026-07-28.md": "43ea010e2f6235723dd28bf0149834efb6c5a12b25a22d30913867437bead8d2",
+    "logs/runner-cache/frontier_cycle850_ladder_independent_check_2026_07_28.txt": "c498b124f8f3b3b6b329a1c0d9c87bffb5062663463e0175eab8a9768ae5eed2",
+    "logs/runner-cache/frontier_cycle850_stratum_mark_ladder_2026_07_28.txt": "c356ed4eb81399fb24247e16bfd79a93fd7f3804ddd1b6f09ae276686559aac6",
+    "scripts/frontier_cycle850_ladder_independent_check_2026_07_28.py": "76f04b8bb225c70ec9127ddadc91745aa4225894ad43a13348681063fa1816e5",
+    "scripts/frontier_cycle850_stratum_mark_ladder_2026_07_28.py": "6e893336187058cc87ceb068093fed44b28eebee5e93a480f965d399056cdd4c"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "LADDER_STRATIFIED: the marking law does NOT climb - k=4 (55 keys/220 event keys; 11 tick-3 single-center + 44 tick-4 triple-center meets) and k=5 (11 keys/44 event keys; 11 tick-4 single-center meets) meet but carry NO native mark",
+    "exhaustions: all 5,815 single bits and 16,904,205 bit-pairs, zero survivors both directions both strata; checker extension (bounded triples anchored on {256,262}+meet supports; inequality pair predicates) also empty",
+    "k=3 regression: bit[256]==bit[262] separates on its own stratum under independent machinery",
+    "three structural tiers: k=2 marked+fired, k=3 marked+waiting, k=4/k=5 meeting-unmarked; the 849 contrast keeps exactly its k=2-vs-k=3 scope"
+  ]
+}

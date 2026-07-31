@@ -824,7 +824,7 @@ def make_engine(
         and duplicate_exact
         and duplicate_masks_exact
     )
-    update_watches(engine, 0, active_mask)
+    update_watches(engine, 0, (1 << len(lanes)) - 1)
     return engine
 
 
@@ -834,7 +834,7 @@ def update_watches(
     candidates: int,
 ) -> None:
     columns = engine["columns"]
-    keys = engine["keys"]
+    lanes = engine["lanes"]
     for watch_name, watch in engine["watch_rows"].items():
         watch["trajectory_moments_tested"] += candidates.bit_count()
         stage = candidates
@@ -852,7 +852,8 @@ def update_watches(
         for lane in lane_numbers(exact):
             watch["hits"].append({
                 "moment": moment,
-                "key": keys[lane],
+                "key": lanes[lane][0],
+                "role": lanes[lane][1],
                 "state_sha256": state_sha256(un_slice(columns, lane)),
             })
 
@@ -1069,7 +1070,9 @@ def evolve(
         current_nonclean = nonclean_mask(
             engine["columns"], residual_rows
         )
-        update_watches(engine, moment, active_before)
+        update_watches(
+            engine, moment, (1 << len(engine["lanes"])) - 1
+        )
         clean_hits = active_before & ~current_nonclean
         recurrence_hits = equality_mask(
             engine["columns"],
@@ -1204,13 +1207,783 @@ def select_k3_horizon(
     }
 
 
-def main() -> int:
-    print(compact({
+def public_watch_rows(
+    engine: dict[str, object],
+    names: tuple[str, ...],
+) -> tuple[dict[str, object], ...]:
+    rows = []
+    expected_moments = len(engine["lanes"]) * (
+        int(engine["last_t"]) + 1
+    )
+    for name in names:
+        watch = engine["watch_rows"][name]
+        rows.append({
+            "target": name,
+            "target_sha256": state_sha256(watch["state"]),
+            "target_weight": sum(watch["state"]),
+            "hash_windows": watch["windows"],
+            "hash_window_sha256": watch["window_sha256"],
+            "window_widths": tuple(map(len, watch["windows"])),
+            "trajectory_moments_tested":
+                watch["trajectory_moments_tested"],
+            "expected_trajectory_moments": expected_moments,
+            "trajectory_accounting_exact":
+                watch["trajectory_moments_tested"] == expected_moments,
+            "stage_candidate_counts":
+                tuple(watch["stage_candidate_counts"]),
+            "full_state_confirmations":
+                watch["full_state_confirmations"],
+            "hits": tuple(watch["hits"]),
+        })
+    return tuple(rows)
+
+
+def determinism_certificate(
+    engine: dict[str, object],
+) -> dict[str, object]:
+    rows = tuple({
+        "key": key,
+        "primary_lane": engine["primary_index"][key],
+        "duplicate_lane": engine["duplicate_index"][key],
+        "primary_sha256": state_sha256(un_slice(
+            engine["columns"], engine["primary_index"][key]
+        )),
+        "duplicate_sha256": state_sha256(un_slice(
+            engine["columns"], engine["duplicate_index"][key]
+        )),
+        "exact_state_equal":
+            un_slice(engine["columns"], engine["primary_index"][key])
+            == un_slice(
+                engine["columns"], engine["duplicate_index"][key]
+            ),
+    } for key in engine["duplicate_index"])
+    result = {
+        "engine": engine["name"],
+        "declared_slice": tuple(engine["duplicate_index"]),
+        "scope":
+            "independent duplicate lanes from t=0 through the family's "
+            "complete terminal boundary",
+        "duplicate_initial_exact": engine["duplicate_initial_exact"],
+        "duplicate_schedule_masks_exact":
+            engine["duplicate_masks_exact"],
+        "terminal_rows": rows,
+    }
+    result["pass"] = (
+        result["duplicate_initial_exact"]
+        and result["duplicate_schedule_masks_exact"]
+        and all(row["exact_state_equal"] for row in rows)
+    )
+    return result
+
+
+def identity_certificate(
+    context: dict[str, object],
+    residual_rows: tuple[tuple[str, int], ...],
+    watches: dict[str, dict[str, object]],
+) -> tuple[dict[str, object], tuple[dict[str, object], ...]]:
+    rows = []
+    engines = []
+    for family, expected in (
+        ("k3", K3_IDENTITY),
+        ("k2", K2_IDENTITY),
+    ):
+        key, outcome, moment = expected
+        engine = make_engine(
+            f"{family}_identity", (key,), context,
+            residual_rows, watches,
+        )
+        phase = evolve(
+            engine, moment, residual_rows,
+            stop_when_resolved=True,
+        )
+        observed = engine["records"].get(key)
+        row = {
+            "family": family,
+            "expected": {
+                "key": key,
+                "outcome": outcome,
+                "resolution_moment": moment,
+            },
+            "observed": observed,
+            "phase": phase,
+            "engine_construction_pass": engine["construction_pass"],
+        }
+        row["pass"] = (
+            engine["construction_pass"]
+            and observed is not None
+            and observed["outcome"] == outcome
+            and observed["resolution_moment"] == moment
+            and observed["verification"]["pass"]
+            and phase["complete"]
+            and phase["transition_accounting_exact"]
+        )
+        rows.append(row)
+        engines.append(engine)
+    result = {
+        "controls": tuple(rows),
+        "one_landed_resolution_per_family": len(rows) == 2,
+        "pass": len(rows) == 2 and all(row["pass"] for row in rows),
+    }
+    return result, tuple(engines)
+
+
+def resolution_rows(
+    engine: dict[str, object],
+    keys: tuple[Key, ...],
+) -> tuple[dict[str, object], ...]:
+    return tuple(
+        engine["records"][key] for key in keys if key in engine["records"]
+    )
+
+
+def b1_certificate(
+    engine: dict[str, object],
+    horizon: int,
+) -> dict[str, object]:
+    event_rows = []
+    for event in (2, 3):
+        keys = tuple(key for key in TRIO_KEYS if key[2] == event)
+        rows = resolution_rows(engine, keys)
+        all_resolved = len(rows) == len(keys)
+        none_resolved = not rows
+        same_moment = (
+            all_resolved
+            and len({row["resolution_moment"] for row in rows}) == 1
+        )
+        same_outcome = (
+            all_resolved
+            and len({row["outcome"] for row in rows}) == 1
+        )
+        same_terminal = (
+            all_resolved
+            and len({
+                engine["resolution_states"][row["key"]]
+                for row in rows
+            }) == 1
+        )
+        if all_resolved and same_moment and same_outcome:
+            status = "CONFIRMED_SYNCHRONOUS_EVENT_TRIO"
+        elif none_resolved:
+            status = "STANDS_OPEN_AT_COMPLETE_HORIZON"
+        else:
+            status = "FALLS_PARTIAL_OR_ASYNCHRONOUS"
+        event_rows.append({
+            "event": event,
+            "keys": keys,
+            "resolution_count": len(rows),
+            "resolution_rows": rows,
+            "all_three_resolved": all_resolved,
+            "same_resolution_moment": same_moment,
+            "same_outcome": same_outcome,
+            "same_terminal_full_state": same_terminal,
+            "status": status,
+        })
+    statuses = {row["status"] for row in event_rows}
+    if "FALLS_PARTIAL_OR_ASYNCHRONOUS" in statuses:
+        bet_status = "B1_FALLS"
+    elif statuses == {"CONFIRMED_SYNCHRONOUS_EVENT_TRIO"}:
+        bet_status = "B1_CONFIRMED"
+    elif "CONFIRMED_SYNCHRONOUS_EVENT_TRIO" in statuses:
+        bet_status = "B1_STANDS_PARTIALLY_CONFIRMED"
+    else:
+        bet_status = "B1_STANDS_OPEN"
+    result = {
+        "bet":
+            "the six (0,2,6/7/8) event-2/3 keys resolve "
+            "synchronously per event",
+        "complete_horizon": horizon,
+        "event_rows": tuple(event_rows),
+        "bet_status": bet_status,
+    }
+    result["pass"] = (
+        bet_status in (
+            "B1_CONFIRMED",
+            "B1_STANDS_PARTIALLY_CONFIRMED",
+            "B1_STANDS_OPEN",
+            "B1_FALLS",
+        )
+        and all(
+            row["resolution_count"]
+            + sum(key not in engine["records"] for key in row["keys"])
+            == 3
+            for row in event_rows
+        )
+        and all(
+            resolution["verification"]["pass"]
+            for row in event_rows
+            for resolution in row["resolution_rows"]
+        )
+    )
+    return result
+
+
+def b2_certificate(
+    engine: dict[str, object],
+    named: dict[str, object],
+) -> dict[str, object]:
+    rows = resolution_rows(engine, K2_EVENT0_KEYS)
+    all_resolved = len(rows) == 2
+    none_resolved = not rows
+    same_moment = (
+        all_resolved
+        and len({row["resolution_moment"] for row in rows}) == 1
+    )
+    same_outcome = (
+        all_resolved and len({row["outcome"] for row in rows}) == 1
+    )
+    same_terminal = (
+        all_resolved
+        and len({
+            engine["resolution_states"][row["key"]] for row in rows
+        }) == 1
+    )
+    same_preterminal_stream = (
+        all_resolved
+        and len({
+            tuple(
+                point["sha256"] for point in row["preterminal_window"]
+            )
+            for row in rows
+        }) == 1
+    )
+    late = (
+        all_resolved
+        and all(
+            int(row["resolution_moment"]) > LANDED_HORIZON
+            for row in rows
+        )
+    )
+    if all_resolved and same_moment and same_outcome and late:
+        status = "B2_CONFIRMED_LATE_SYNCHRONOUS_PAIR"
+    elif none_resolved:
+        status = "B2_STANDS_OPEN_AT_COMPLETE_SEARCH_CEILING"
+    else:
+        status = "B2_FALLS_PARTIAL_EARLY_OR_ASYNCHRONOUS"
+    comparator_names = ("funnel_weight_57", "funnel_weight_51")
+    comparator_hits = []
+    for name in comparator_names:
+        watch = engine["watch_rows"][name]
+        primary_hits = tuple(
+            hit for hit in watch["hits"] if hit["role"] == "primary"
+        )
+        comparator_hits.append({
+            "object": name,
+            "object_row": named["rows"][name],
+            "primary_exact_hits": primary_hits,
+            "primary_exact_hit_count": len(primary_hits),
+            "reading": (
+                "EXACT_VISIT"
+                if primary_hits else "NO_EXACT_VISIT"
+            ),
+        })
+    result = {
+        "bet":
+            "the last two station-0 s=5 event-0 keys resolve LATE "
+            "and synchronously",
+        "keys": K2_EVENT0_KEYS,
+        "search_ceiling": K2_TARGET_HORIZON,
+        "actual_complete_terminal_horizon": engine["last_t"],
+        "resolution_count": len(rows),
+        "resolution_rows": rows,
+        "both_resolved": all_resolved,
+        "same_resolution_moment": same_moment,
+        "same_outcome": same_outcome,
+        "same_terminal_full_state": same_terminal,
+        "same_t_minus_9_through_terminal_state_stream":
+            same_preterminal_stream,
+        "late_beyond_T262144": late,
+        "funnel_57_51_regime": {
+            "definition":
+                "exact full-state comparisons against the SHA-recorded "
+                "Cycle-843 station-0 weight-57 and weight-51 objects at "
+                "every swept movement",
+            "comparator_rows": tuple(comparator_hits),
+            "terminal_differences": tuple({
+                "key": row["key"],
+                "to_weight_57": diff_summary(
+                    engine["resolution_states"][row["key"]],
+                    named["states"]["funnel_weight_57"],
+                ),
+                "to_weight_51": diff_summary(
+                    engine["resolution_states"][row["key"]],
+                    named["states"]["funnel_weight_51"],
+                ),
+            } for row in rows),
+        },
+        "bet_status": status,
+    }
+    result["pass"] = (
+        status in (
+            "B2_CONFIRMED_LATE_SYNCHRONOUS_PAIR",
+            "B2_STANDS_OPEN_AT_COMPLETE_SEARCH_CEILING",
+            "B2_FALLS_PARTIAL_EARLY_OR_ASYNCHRONOUS",
+        )
+        and len(rows) + sum(
+            key not in engine["records"] for key in K2_EVENT0_KEYS
+        ) == 2
+        and all(row["verification"]["pass"] for row in rows)
+    )
+    return result
+
+
+def b3_certificate(
+    engines: tuple[dict[str, object], ...],
+) -> dict[str, object]:
+    target_names = ("S0_prime", "pulse_coincidence_state")
+    engine_rows = tuple({
+        "engine": engine["name"],
+        "primary_keys": engine["keys"],
+        "physical_lanes": engine["lanes"],
+        "terminal_horizon": engine["last_t"],
+        "target_rows": public_watch_rows(engine, target_names),
+    } for engine in engines)
+    hits = tuple(
+        {
+            "engine": engine_row["engine"],
+            "target": target_row["target"],
+            "hit": hit,
+        }
+        for engine_row in engine_rows
+        for target_row in engine_row["target_rows"]
+        for hit in target_row["hits"]
+    )
+    accounting_exact = all(
+        target_row["trajectory_accounting_exact"]
+        for engine_row in engine_rows
+        for target_row in engine_row["target_rows"]
+    )
+    result = {
+        "bet":
+            "S0' (weight 47) and the pulse coincidence state "
+            "(weight 59) are never visited by open-key trajectories",
+        "scope":
+            "every physical primary and determinism-duplicate lane at t=0 "
+            "and after every swept landed movement through its engine's "
+            "complete terminal horizon; identity-control engines included",
+        "hash_window_method": {
+            "kind":
+                "four exact-coordinate 12-bit necessary-condition windows "
+                "per target, each SHA-256 recorded",
+            "soundness":
+                "full-state equality implies equality on every coordinate "
+                "window, so a target hit cannot be rejected by a window; "
+                "every survivor is then compared across all 5815 bits",
+            "collision_policy":
+                "window collisions are candidates, never hits; only the "
+                "full 5815-bit equality test records a hit",
+            "false_negative_possible": False,
+        },
+        "engine_rows": engine_rows,
+        "all_trajectory_moments_accounted": accounting_exact,
+        "exact_hit_count": len(hits),
+        "exact_hits": hits,
+        "bet_status": (
+            "B3_STANDS_THROUGH_ALL_SWEPT_TRAJECTORIES"
+            if not hits else "B3_FALLS_EXACT_VISIT_FOUND"
+        ),
+    }
+    result["pass"] = accounting_exact
+    return result
+
+
+def null_family_row(
+    name: str,
+    keys: tuple[Key, ...],
+    engine: dict[str, object],
+) -> dict[str, object]:
+    rows = resolution_rows(engine, keys)
+    open_keys = tuple(key for key in keys if key not in engine["records"])
+    transition_rows = tuple({
+        "key": key,
+        "executed": engine["transition_counts"][
+            engine["primary_index"][key]
+        ],
+        "expected": (
+            engine["last_t"]
+            if key in open_keys
+            else engine["records"][key]["resolution_moment"]
+        ),
+        "exact":
+            engine["transition_counts"][engine["primary_index"][key]]
+            == (
+                engine["last_t"]
+                if key in open_keys
+                else engine["records"][key]["resolution_moment"]
+            ),
+    } for key in keys)
+    result = {
+        "family": name,
+        "supplied_key_count": len(keys),
+        "resolution_count": len(rows),
+        "open_count": len(open_keys),
+        "resolution_rows": rows,
+        "open_keys": open_keys,
+        "null_applies": not rows,
+        "null_statement": (
+            f"NO RESOLUTION THROUGH COMPLETE FAMILY T={engine['last_t']}"
+            if not rows else
+            "NULL DOES NOT APPLY; EVERY RESOLUTION IS PRINTED"
+        ),
+        "population_accounting":
+            len(rows) + len(open_keys) == len(keys),
+        "transition_rows": transition_rows,
+    }
+    result["pass"] = (
+        result["population_accounting"]
+        and all(row["exact"] for row in transition_rows)
+        and all(row["verification"]["pass"] for row in rows)
+    )
+    return result
+
+
+def certificate_c(
+    k3_engine: dict[str, object],
+    k2_engine: dict[str, object],
+) -> dict[str, object]:
+    families = (
+        null_family_row(
+            "k3_event2_trio",
+            tuple(key for key in TRIO_KEYS if key[2] == 2),
+            k3_engine,
+        ),
+        null_family_row(
+            "k3_event3_trio",
+            tuple(key for key in TRIO_KEYS if key[2] == 3),
+            k3_engine,
+        ),
+        null_family_row(
+            "k3_other_four", OTHER_K3_KEYS, k3_engine,
+        ),
+        null_family_row(
+            "k2_station0_event0_pair", K2_EVENT0_KEYS, k2_engine,
+        ),
+    )
+    result = {
+        "families": families,
+        "family_count": len(families),
+        "total_supplied_keys":
+            sum(row["supplied_key_count"] for row in families),
+        "total_resolutions":
+            sum(row["resolution_count"] for row in families),
+        "total_open": sum(row["open_count"] for row in families),
+    }
+    result["pass"] = (
+        result["family_count"] == 4
+        and result["total_supplied_keys"] == 12
+        and result["total_resolutions"] + result["total_open"] == 12
+        and all(row["pass"] for row in families)
+    )
+    return result
+
+
+def render(
+    checks: dict[str, bool],
+    certificates: dict[str, object],
+    report: dict[str, object],
+) -> str:
+    lines = [
+        f"CHECK {name}={str(passed).lower()}"
+        for name, passed in checks.items()
+    ]
+    lines.extend(
+        f"CERTIFICATE {name} {compact(value)}"
+        for name, value in certificates.items()
+    )
+    lines.append("SUMMARY_JSON " + compact(report))
+    lines.append(str(report["terminal"]))
+    return "\n".join(lines) + "\n"
+
+
+def stable_render(
+    checks: dict[str, bool],
+    certificates: dict[str, object],
+    report: dict[str, object],
+) -> str:
+    for _attempt in range(20):
+        report["checks"] = dict(checks)
+        report["pass"] = all(checks.values())
+        report["terminal"] = (
+            "CYCLE844_STANDING_BETS_EXACT_PASS"
+            if report["pass"]
+            else "CYCLE844_STANDING_BETS_HONEST_FAIL"
+        )
+        output = render(checks, certificates, report)
+        size = len(output.encode("utf-8"))
+        controls = certificates["E_CONTROLS"]
+        if (
+            report["stdout_bytes"] == size
+            and controls["stdout_bytes"] == size
+        ):
+            return output
+        report["stdout_bytes"] = size
+        controls["stdout_bytes"] = size
+    raise AssertionError("stdout byte fixed point did not converge")
+
+
+def run() -> int:
+    script_started = monotonic()
+    sources = source_controls()
+    residual_rows = watched_residual_rows()
+    basis = basis_certificate(residual_rows)
+    context = build_context()
+    named = reconstruct_named_states(context)
+    watches = make_watch_definitions(named)
+
+    k3_engine = make_engine(
+        "k3_ten_key_continuation",
+        K3_KEYS,
+        context,
+        residual_rows,
+        watches,
+        K3_KEYS[:DETERMINISM_KEYS_PER_FAMILY],
+    )
+    k2_engine = make_engine(
+        "k2_event0_pair_continuation",
+        K2_EVENT0_KEYS,
+        context,
+        residual_rows,
+        watches,
+        K2_EVENT0_KEYS[:DETERMINISM_KEYS_PER_FAMILY],
+    )
+    k3_pilot = benchmark(k3_engine)
+    k2_pilot = benchmark(k2_engine)
+    selected_k3, horizon_declaration = select_k3_horizon(
+        k3_pilot, k2_pilot, script_started
+    )
+
+    k3_phase = evolve(
+        k3_engine,
+        selected_k3,
+        residual_rows,
+        boundaries=(LANDED_HORIZON, selected_k3),
+        stop_when_resolved=True,
+    )
+    k3_final = boundary_snapshot(
+        k3_engine, k3_engine["last_t"], residual_rows
+    )
+    k3_baseline = k3_engine["boundary_snapshots"].get(
+        LANDED_HORIZON
+    )
+
+    k2_phase = evolve(
+        k2_engine,
+        K2_TARGET_HORIZON,
+        residual_rows,
+        boundaries=(LANDED_HORIZON, K2_TARGET_HORIZON),
+        stop_when_resolved=True,
+    )
+    k2_final = boundary_snapshot(
+        k2_engine, k2_engine["last_t"], residual_rows
+    )
+    k2_baseline = k2_engine["boundary_snapshots"].get(
+        LANDED_HORIZON
+    )
+
+    identity, identity_engines = identity_certificate(
+        context, residual_rows, watches
+    )
+    b1 = b1_certificate(k3_engine, k3_engine["last_t"])
+    b2 = b2_certificate(k2_engine, named)
+    all_science_engines = (
+        k3_engine, k2_engine, *identity_engines,
+    )
+    b3 = b3_certificate(all_science_engines)
+    cert_c = certificate_c(k3_engine, k2_engine)
+    k3_determinism = determinism_certificate(k3_engine)
+    k2_determinism = determinism_certificate(k2_engine)
+
+    k3_complete = (
+        k3_phase["complete"]
+        and (
+            k3_engine["last_t"] == selected_k3
+            or not k3_engine["active_mask"]
+        )
+    )
+    k2_complete = (
+        k2_phase["complete"]
+        and (
+            k2_engine["last_t"] == K2_TARGET_HORIZON
+            or not k2_engine["active_mask"]
+        )
+    )
+    certificate_a = {
+        "k3_surface":
+            "six registered trio keys plus four other literal open k3 keys",
+        "k3_keys": K3_KEYS,
+        "k3_key_count": len(K3_KEYS),
+        "k3_horizon_declaration": horizon_declaration,
+        "k3_target_horizon": selected_k3,
+        "k3_actual_complete_terminal_horizon": k3_engine["last_t"],
+        "k3_target_T524288_reached": selected_k3 == 524288,
+        "k3_phase": k3_phase,
+        "k3_landed_T262144_boundary": k3_baseline,
+        "k3_final_boundary": k3_final,
+        "k3_complete": k3_complete,
+        "k2_surface": "last two station-0 s=5 event-0 keys only",
+        "k2_keys": K2_EVENT0_KEYS,
+        "k2_search_ceiling": K2_TARGET_HORIZON,
+        "k2_actual_complete_terminal_horizon": k2_engine["last_t"],
+        "k2_ended_after_all_resolved":
+            not k2_engine["active_mask"]
+            and k2_engine["last_t"] < K2_TARGET_HORIZON,
+        "k2_phase": k2_phase,
+        "k2_landed_T262144_boundary": k2_baseline,
+        "k2_final_boundary": k2_final,
+        "k2_complete": k2_complete,
+        "partial_horizon_reported": False,
+        "all_resolution_verifications_pass": all(
+            row["verification"]["pass"]
+            for engine in (k3_engine, k2_engine)
+            for row in engine["records"].values()
+        ),
+    }
+    certificate_a["pass"] = (
+        sources["pass"]
+        and basis["pass"]
+        and context["pass"]
+        and named["pass"]
+        and k3_engine["construction_pass"]
+        and k2_engine["construction_pass"]
+        and k3_baseline is not None
+        and k3_baseline["pass"]
+        and k2_baseline is not None
+        and k2_baseline["pass"]
+        and k3_final["pass"]
+        and k2_final["pass"]
+        and k3_complete
+        and k2_complete
+        and k3_phase["transition_accounting_exact"]
+        and k2_phase["transition_accounting_exact"]
+        and certificate_a["all_resolution_verifications_pass"]
+    )
+
+    certificate_b = {
+        "B1_k3_trio_synchrony": b1,
+        "B2_k2_event0_late_synchrony": b2,
+        "B3_pinned_state_nonvisitation": b3,
+        "pass": b1["pass"] and b2["pass"] and b3["pass"],
+    }
+    deterministic = k3_determinism["pass"] and k2_determinism["pass"]
+    elapsed = monotonic() - script_started
+    controls_base = (
+        sources["pass"]
+        and basis["pass"]
+        and context["pass"]
+        and named["pass"]
+        and identity["pass"]
+        and deterministic
+        and not any(name in sys.modules for name in BLOCKLISTED_MODULES)
+        and not FIREWALL.hits
+        and elapsed < AUDIT_TIMEOUT_SEC
+    )
+    controls = {
+        **sources,
+        "cleanliness_basis": basis,
+        "context": {
+            key: value for key, value in context.items()
+            if key not in ("program", "fixtures")
+        },
+        "named_state_reconstruction": {
+            key: value for key, value in named.items() if key != "states"
+        },
+        "dependency_policy":
+            "Python stdlib plus sole executable landed Cycle719 core; "
+            "Cycles834/838/843 are SHA-pinned text/AST-only and blocklisted",
+        "exact_arithmetic":
+            "dynamics, state equality, cleanliness, cycle returns, counts, "
+            "weights, hashes, and window filters are exact; runtime only "
+            "is floating point",
+        "determinism": {
+            "k3": k3_determinism,
+            "k2": k2_determinism,
+            "deterministic": deterministic,
+        },
+        "blocked_modules_loaded_at_end": tuple(
+            name for name in BLOCKLISTED_MODULES if name in sys.modules
+        ),
+        "firewall_hits_at_end": tuple(FIREWALL.hits),
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+    }
+    checks = {
+        "A_CONTINUATIONS_COMPLETE_AND_CERTIFIED":
+            bool(certificate_a["pass"]),
+        "B_EVERY_BET_ADJUDICATED_EXACTLY":
+            bool(certificate_b["pass"]),
+        "C_FAMILY_RESOLUTIONS_OR_NULLS_ACCOUNTED":
+            bool(cert_c["pass"]),
+        "D_ONE_LANDED_RESOLUTION_PER_FAMILY_REPRODUCED":
+            bool(identity["pass"]),
+        "E_SHAS_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT":
+            controls_base,
+    }
+    certificates = {
+        "A_CONTINUATIONS": certificate_a,
+        "B_STANDING_BETS": certificate_b,
+        "C_NULL_BRANCHES": cert_c,
+        "D_IDENTITY_CONTROLS": identity,
+        "E_CONTROLS": controls,
+    }
+    report = {
         "cycle": 844,
-        "status": "INCREMENTAL_SCAFFOLD",
+        "k3_target_horizon": selected_k3,
+        "k3_terminal_horizon": k3_engine["last_t"],
+        "k3_target_T524288_reached": selected_k3 == 524288,
+        "k3_resolution_count": len(k3_engine["records"]),
+        "k3_open_count": int(k3_engine["active_mask"]).bit_count(),
+        "k2_search_ceiling": K2_TARGET_HORIZON,
+        "k2_terminal_horizon": k2_engine["last_t"],
+        "k2_resolution_count": len(k2_engine["records"]),
+        "k2_open_count": int(k2_engine["active_mask"]).bit_count(),
+        "B1_status": b1["bet_status"],
+        "B2_status": b2["bet_status"],
+        "B3_status": b3["bet_status"],
+        "B3_exact_hit_count": b3["exact_hit_count"],
+        "total_resolutions": cert_c["total_resolutions"],
+        "total_open": cert_c["total_open"],
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "checks": {},
+        "pass": False,
         "terminal": "CYCLE844_STANDING_BETS_HONEST_FAIL",
-    }))
-    return 1
+    }
+    output = stable_render(checks, certificates, report)
+    stdout_ok = len(output.encode("utf-8")) < STDOUT_LIMIT_BYTES
+    checks[
+        "E_SHAS_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT"
+    ] = controls_base and stdout_ok
+    controls["pass"] = checks[
+        "E_SHAS_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT"
+    ]
+    output = stable_render(checks, certificates, report)
+    if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
+        sys.stdout.write(compact({
+            "pass": False,
+            "failure": "stdout limit exceeded",
+            "stdout_bytes": len(output.encode("utf-8")),
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+            "terminal": "CYCLE844_STANDING_BETS_HONEST_FAIL",
+        }) + "\n")
+        return 1
+    sys.stdout.write(output)
+    return 0 if report["pass"] else 1
+
+
+def main() -> int:
+    try:
+        return run()
+    except Exception as error:
+        sys.stdout.write(compact({
+            "pass": False,
+            "exception_type": type(error).__name__,
+            "exception": str(error),
+            "terminal": "CYCLE844_STANDING_BETS_HONEST_FAIL",
+        }) + "\n")
+        return 1
 
 
 if __name__ == "__main__":

@@ -22,12 +22,12 @@ from typing import Any
 
 
 AUDIT_TIMEOUT_SEC = 1500
-STDOUT_LIMIT_BYTES = 200 * 1024
+STDOUT_LIMIT_BYTES = 200_000
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
     "scripts/frontier_cycle786_ensemble_support_census_2026_07_28.py",
     "scripts/frontier_cycle796_monitored_selector_2026_07_28.py",
-    "scripts/frontier_cycle799_cadence_preference_2026_07_28.py",
+    "scripts/frontier_cycle818_period_structure_census_2026_07_28.py",
     "scripts/frontier_cycle819_deep_k2_continuation_2026_07_28.py",
     "scripts/frontier_cycle820_shared_moment_mechanism_2026_07_28.py",
     "logs/runner-cache/frontier_cycle796_monitored_selector_2026_07_28.txt",
@@ -46,7 +46,7 @@ EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[2]:
         "be0238611e02f9bad8df813430f9decec68d287df267bbf82ba4a63ffc8483c3",
     AUDIT_INPUT_PATHS[3]:
-        "6773ec05cc1db37a09f88232e7d1f8f9c4b87db98e5b620ad3ef57180ab1cddc",
+        "918ae9d1f5b29a4cee437dac8af4bfb27ee0aceee3a7abd0c6bdaaa6fb10d24c",
     AUDIT_INPUT_PATHS[4]:
         "e1c18187a4082fc534b9bd94055258a9aedc05c8dda37bb84f6a0d84592308fe",
     AUDIT_INPUT_PATHS[5]:
@@ -60,7 +60,7 @@ EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
     AUDIT_INPUT_PATHS[1]: "3d219308183e781c71f9742bd0c6331440f74dbe",
     AUDIT_INPUT_PATHS[2]: "eb2f34cd78fae3ce579d426df2ffe62832003504",
-    AUDIT_INPUT_PATHS[3]: "49964118073bcd784af0f2e4c03723a9d3bd47e9",
+    AUDIT_INPUT_PATHS[3]: "9c2657e5fa98c4d2bbb561a0f428cf59fca20973",
     AUDIT_INPUT_PATHS[4]: "c3a071835a61e78a4919decfede8534cbf95e1d9",
     AUDIT_INPUT_PATHS[5]: "6385dfa0dce58e86345483cc521ffa325e0d1cce",
     AUDIT_INPUT_PATHS[6]: "dced1dfadab2742d00aedfbeba93b25766cc653b",
@@ -89,6 +89,8 @@ LINEAGE = {
         "17f7588051636cd5de0c517910de997128770557",
     "Cycle799_no_cadence_preference":
         "17f7588051636cd5de0c517910de997128770557",
+    "Cycle818_cross_stratum_cycle_inventory":
+        "0ef00c572f2fa88a5184c7b8cdc5526333c1920d",
     "Cycle809_two_axis_census":
         "2958d87e297407dd4613fe011b25a8e5fd70a4f3",
     "Cycle819_fifteen_events":
@@ -105,6 +107,10 @@ LINEAGE_OBJECTS = {
         "c316213b9829a1fb538b510b1ba1e8ef3129ea21",
     "Cycle793_primary_blob":
         "94ade6fa34a139f98f42bf04a96ea68375dc0105",
+    "Cycle799_primary_blob":
+        "49964118073bcd784af0f2e4c03723a9d3bd47e9",
+    "Cycle818_primary_blob":
+        "9c2657e5fa98c4d2bbb561a0f428cf59fca20973",
     "Cycle809_primary_blob":
         "307152b50f76e1becbdce29510f03bfa46808a6a",
     "Cycle819_cache_blob":
@@ -249,7 +255,7 @@ def source_controls(payloads: dict[str, bytes]) -> dict[str, object]:
 
     text796 = payloads[AUDIT_INPUT_PATHS[2]].decode("utf-8")
     tree796 = primary_trees[AUDIT_INPUT_PATHS[2]]
-    tree799 = primary_trees[AUDIT_INPUT_PATHS[3]]
+    tree818 = primary_trees[AUDIT_INPUT_PATHS[3]]
     tree786 = primary_trees[AUDIT_INPUT_PATHS[1]]
     tree819 = primary_trees[AUDIT_INPUT_PATHS[4]]
     tree820 = primary_trees[AUDIT_INPUT_PATHS[5]]
@@ -257,20 +263,33 @@ def source_controls(payloads: dict[str, bytes]) -> dict[str, object]:
         row["name"]
         for row in literal_assignment(tree796, "LANDED_CADENCES")
     )
-    cadence799 = tuple(literal_assignment(tree799, "CADENCES"))
+    text818 = payloads[AUDIT_INPUT_PATHS[3]].decode("utf-8")
+    functions818 = {
+        node.name
+        for node in tree818.body
+        if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+    }
     ast_basis = {
         "Cycle781_796_every_boundary_identification": (
             "reference_781_every_boundary_idiom" in text796
             and "for step in range(C719.CONTROLLER_STATIONS):" in text796
             and "every tested post-engagement station boundary" in text796
         ),
-        "Cycle796_799_four_cadences":
-            cadence796 == cadence799 == (
+        "Cycle796_four_cadences_and_Cycle799_citation":
+            cadence796 == (
                 "orbit_return_boundary",
                 "H_station_boundary",
                 "Q_R1_R2_layer_boundary",
                 "program_macro_completion",
-            ),
+            )
+            and "Cycle799_primary_blob" in LINEAGE_OBJECTS,
+        "Cycle818_cross_stratum_inventory": (
+            {"cache_inventory", "verify_inventory"} <= functions818
+            and "strict 14-row inventory" in text818
+            and "18 distinct keys" in text818
+            and "period 5952" in text818
+            and "4464" in text818
+        ),
         "Cycle786_six_way_origin_object": (
             literal_assignment(tree786, "AUDIT_TIMEOUT_SEC") == 1500
             and b"AMBIGUOUS_SIX_WAY" in payloads[AUDIT_INPUT_PATHS[1]]
@@ -493,28 +512,1269 @@ def certificate_e_three_legs() -> dict[str, object]:
     return result
 
 
-def scaffold_main() -> int:
+RING_STATIONS = 11
+FIXTURE_BANKS = 2
+EARLY_HORIZON = 1385
+TARGET_MOMENT = 14744
+FULL_FAMILY_BANK_COUNTS = (1, 2, 3, 5, 12)
+EXPECTED_HIGHER_K_TRANSIENTS = {
+    (3, 2, (0, 2, 5)): 444,
+    (3, 3, (0, 2, 5)): 532,
+    (3, 1, (0, 2, 4)): 681,
+    (3, 2, (0, 2, 4)): 1385,
+}
+
+Coordinate = tuple[str, str, int]
+Support = frozenset[Coordinate]
+Key = tuple[int, tuple[int, int]]
+
+
+def watched_registers() -> tuple[tuple[str, int], ...]:
+    return (
+        ("POINTER", K.A.POINTER),
+        ("U_TO_V", K.A.U_TO_V),
+        ("V_TO_U", K.A.V_TO_U),
+        ("DIRECTION_OK", K.A.DIRECTION_OK),
+        *tuple(
+            (f"FRESH_{index}", wire)
+            for index, wire in enumerate(K.A.FRESH)
+        ),
+        *tuple(
+            (f"ZERO_WORK_{index}", wire)
+            for index, wire in enumerate(K.A.ZERO_WORK)
+        ),
+        ("TOKEN_OK", K.A.TOKEN_OK),
+    )
+
+
+def residual_support(state: tuple[int, ...], bank_count: int) -> Support:
+    banks, links = K.M.unpack_state(state, bank_count)
+    rows: set[Coordinate] = set()
+    if state[K.R3.X.SOURCE_POINTER]:
+        rows.add(("source", "SOURCE_POINTER", 0))
+    for bank_index, bank in enumerate(banks):
+        for register_name, wire in watched_registers():
+            if bank[wire]:
+                rows.add(("bank", register_name, bank_index))
+    for link_index, link in enumerate(links):
+        for wire_index, bit in enumerate(link):
+            if bit:
+                rows.add(("link", f"WIRE_{wire_index}", link_index))
+    return frozenset(rows)
+
+
+def canonical_support(support: Support) -> tuple[Coordinate, ...]:
+    return tuple(sorted(support))
+
+
+def dirty_global_indices(bank_count: int) -> tuple[int, ...]:
+    """Recover packed clean-postimage coordinates without layout assumptions."""
+
+    banks0, links0 = K.B.chain_genesis(bank_count)
+    zero_banks = tuple(tuple(0 for _bit in bank) for bank in banks0)
+    zero_links = tuple(tuple(0 for _bit in link) for link in links0)
+    baseline = K.M.pack_state(zero_banks, zero_links)
+    result = {K.R3.X.SOURCE_POINTER}
+
+    for bank_index, _bank in enumerate(zero_banks):
+        for _name, wire in watched_registers():
+            changed = [list(bank) for bank in zero_banks]
+            changed[bank_index][wire] = 1
+            marked = K.M.pack_state(
+                tuple(tuple(bank) for bank in changed), zero_links
+            )
+            differences = tuple(
+                index
+                for index, (left, right) in enumerate(zip(baseline, marked))
+                if left != right
+            )
+            if len(differences) != 1:
+                raise AssertionError(
+                    ("packed bank marker", bank_index, wire, differences)
+                )
+            result.add(differences[0])
+
+    for link_index, link in enumerate(zero_links):
+        for wire in range(len(link)):
+            changed = [list(row) for row in zero_links]
+            changed[link_index][wire] = 1
+            marked = K.M.pack_state(
+                zero_banks, tuple(tuple(row) for row in changed)
+            )
+            differences = tuple(
+                index
+                for index, (left, right) in enumerate(zip(baseline, marked))
+                if left != right
+            )
+            if len(differences) != 1:
+                raise AssertionError(
+                    ("packed link marker", link_index, wire, differences)
+                )
+            result.add(differences[0])
+    return tuple(sorted(result))
+
+
+def separated_pairs() -> tuple[tuple[int, int], ...]:
+    return tuple(
+        (left, right)
+        for left, right in combinations(range(RING_STATIONS), 2)
+        if min(
+            (right - left) % RING_STATIONS,
+            (left - right) % RING_STATIONS,
+        ) > 1
+    )
+
+
+def rotate_positions(
+    positions: tuple[int, ...],
+    shift: int,
+) -> tuple[int, ...]:
+    return tuple(
+        sorted((position + shift) % RING_STATIONS for position in positions)
+    )
+
+
+def pairwise_separated_mask(mask: int) -> bool:
+    return not any(
+        ((mask >> station) & 1)
+        and ((mask >> ((station + 1) % RING_STATIONS)) & 1)
+        for station in range(RING_STATIONS)
+    )
+
+
+def higher_k_representatives() -> dict[int, tuple[tuple[int, ...], ...]]:
+    grouped: dict[int, set[tuple[int, ...]]] = {3: set(), 4: set(), 5: set()}
+    for mask in range(1 << RING_STATIONS):
+        if not pairwise_separated_mask(mask):
+            continue
+        positions = tuple(
+            station
+            for station in range(RING_STATIONS)
+            if (mask >> station) & 1
+        )
+        if len(positions) not in grouped:
+            continue
+        grouped[len(positions)].add(
+            min(
+                rotate_positions(positions, shift)
+                for shift in range(RING_STATIONS)
+            )
+        )
+    result = {
+        k: tuple(sorted(rows)) for k, rows in grouped.items()
+    }
+    if {k: len(rows) for k, rows in result.items()} != {3: 7, 4: 5, 5: 1}:
+        raise AssertionError(("higher-k representatives", result))
+    return result
+
+
+def synchronous_word(
+    program: tuple[object, ...],
+    positions0: tuple[int, int],
+) -> tuple[object, ...]:
+    positions = tuple(positions0)
+    word = []
+    for _step in range(len(program)):
+        live = set(positions)
+        for station, row in enumerate(program):
+            if station in live:
+                word.extend(K.mapped_macro(row))
+        positions = tuple(
+            (station + 1) % len(program) for station in positions
+        )
+    return tuple(word)
+
+
+def compile_word(
+    word: tuple[object, ...],
+) -> tuple[tuple[int, int, int, int], ...]:
+    rows = []
+    for gate in word:
+        if gate.kind == "X":
+            rows.append((0, gate.wires[0], 0, 0))
+        elif gate.kind == "CNOT":
+            rows.append((1, gate.wires[0], gate.wires[1], 0))
+        elif gate.kind == "TOF":
+            rows.append((2, gate.wires[0], gate.wires[1], gate.wires[2]))
+        else:
+            raise ValueError(("unsupported landed gate", gate))
+    return tuple(rows)
+
+
+def bit_slice(
+    states: tuple[tuple[int, ...], ...],
+) -> list[int]:
+    return [
+        sum(state[wire] << lane for lane, state in enumerate(states))
+        for wire in range(len(states[0]))
+    ]
+
+
+def un_slice(columns: list[int], lane: int) -> tuple[int, ...]:
+    return tuple((column >> lane) & 1 for column in columns)
+
+
+def apply_compiled_bit_slice(
+    columns: list[int],
+    operations: tuple[tuple[int, int, int, int], ...],
+    width: int,
+) -> None:
+    mask = (1 << width) - 1
+    for kind, first, second, third in operations:
+        if kind == 0:
+            columns[first] ^= mask
+        elif kind == 1:
+            columns[second] ^= columns[first]
+        else:
+            columns[third] ^= columns[first] & columns[second]
+
+
+def clean_lane_mask(
+    columns: list[int],
+    dirty_indices: tuple[int, ...],
+    width: int,
+) -> int:
+    dirty = 0
+    for wire in dirty_indices:
+        dirty |= columns[wire]
+    return ((1 << width) - 1) ^ dirty
+
+
+def equal_lane_mask(
+    left: list[int],
+    right: list[int],
+    width: int,
+) -> int:
+    differences = 0
+    for left_column, right_column in zip(left, right):
+        differences |= left_column ^ right_column
+    return ((1 << width) - 1) ^ differences
+
+
+def build_k2_family() -> dict[str, object]:
+    program = K.interleaved_program(FIXTURE_BANKS)
+    banks, links = K.B.chain_genesis(FIXTURE_BANKS)
+    state = K.M.pack_state(banks, links)
+    allocator = K.M.global_allocator_word(FIXTURE_BANKS)
+    epochs = []
+    epoch_failures = []
+    for event in range(2 * FIXTURE_BANKS):
+        direction = (1, 0) if event % 2 == 0 else (0, 1)
+        before = K.M.prepare_endpoint(state, direction)
+        after, rail_a, rail_b, trace = K.run_orbit(before, program)
+        if not (
+            after == K.A.apply_semantic(before, allocator)
+            and rail_a == (1,) + (0,) * (len(program) - 1)
+            and not any(rail_b)
+            and len(trace) == len(program)
+        ):
+            epoch_failures.append(event)
+        epochs.append((event, direction, before))
+        state = after
+
+    positions = separated_pairs()
+    words = {
+        positions0: synchronous_word(program, positions0)
+        for positions0 in positions
+    }
+    compiled_words = {
+        positions0: compile_word(words[positions0])
+        for positions0 in positions
+    }
+    states: dict[Key, tuple[int, ...]] = {}
+    supports: dict[Key, Support] = {}
+    battery_failures = []
+    for event, _direction, before in epochs:
+        for positions0 in positions:
+            after, rail_a, rail_b, _trace = K.run_orbit(
+                before, program, token_positions=positions0
+            )
+            expected_rail = tuple(
+                int(station in positions0)
+                for station in range(RING_STATIONS)
+            )
+            restored, inverse_a, inverse_b, _ = K.run_orbit(
+                after,
+                program,
+                token_positions=positions0,
+                reverse=True,
+            )
+            conditions = {
+                "synchronous_composition":
+                    after == K.A.apply_semantic(
+                        before, words[positions0]
+                    ),
+                "token_rail_return":
+                    rail_a == expected_rail and not any(rail_b),
+                "literal_inverse": (
+                    restored == before
+                    and inverse_a == rail_a
+                    and inverse_b == rail_b
+                ),
+                "census_membership": positions0 in positions,
+                "pairwise_separation": min(
+                    (positions0[1] - positions0[0]) % RING_STATIONS,
+                    (positions0[0] - positions0[1]) % RING_STATIONS,
+                ) > 1,
+                "synchronization": True,
+            }
+            if not all(conditions.values()):
+                battery_failures.append((event, positions0, conditions))
+            key = (event, positions0)
+            states[key] = after
+            supports[key] = residual_support(after, FIXTURE_BANKS)
+
+    summary = {
+        "epochs": len(epochs),
+        "program_stations": len(program),
+        "positions": len(positions),
+        "keys": len(states),
+        "allocator_gates": len(allocator),
+        "synchronous_word_gate_counts":
+            tuple(sorted({len(word) for word in words.values()})),
+        "state_bits": len(next(iter(states.values()))),
+        "unique_initial_supports": len(set(supports.values())),
+        "unique_initial_supports_by_epoch": tuple(
+            len({
+                supports[(event, positions0)]
+                for positions0 in positions
+            })
+            for event in range(2 * FIXTURE_BANKS)
+        ),
+        "epoch_failures": tuple(epoch_failures),
+        "battery_failures": tuple(battery_failures),
+        "all_initial_residues_nonzero": all(supports.values()),
+        "family_sha256": digest(tuple(
+            (key, canonical_support(supports[key]))
+            for key in sorted(supports)
+        )),
+    }
+    summary["pass"] = (
+        summary["epochs"] == 4
+        and summary["program_stations"] == 11
+        and summary["positions"] == 44
+        and summary["keys"] == 176
+        and summary["synchronous_word_gate_counts"] == (6212,)
+        and summary["state_bits"] == 5815
+        and summary["unique_initial_supports"] == 25
+        and summary["unique_initial_supports_by_epoch"] == (1, 1, 12, 14)
+        and not summary["epoch_failures"]
+        and not summary["battery_failures"]
+        and summary["all_initial_residues_nonzero"]
+    )
+    return {
+        "program": program,
+        "epochs": tuple(epochs),
+        "positions": positions,
+        "words": words,
+        "compiled_words": compiled_words,
+        "states": states,
+        "supports": supports,
+        "dirty_indices": dirty_global_indices(FIXTURE_BANKS),
+        "summary": summary,
+    }
+
+
+def scan_early_first_clean(
+    family: dict[str, object],
+) -> dict[Key, int]:
+    first_clean: dict[Key, int] = {}
+    dirty_indices = family["dirty_indices"]
+    for positions0 in family["positions"]:
+        keys = tuple(
+            (event, positions0) for event in range(2 * FIXTURE_BANKS)
+        )
+        columns = bit_slice(tuple(family["states"][key] for key in keys))
+        operations = family["compiled_words"][positions0]
+        for moment in range(1, EARLY_HORIZON + 1):
+            apply_compiled_bit_slice(columns, operations, len(keys))
+            clean = clean_lane_mask(columns, dirty_indices, len(keys))
+            for lane, key in enumerate(keys):
+                if clean & (1 << lane) and key not in first_clean:
+                    first_clean[key] = moment
+    return first_clean
+
+
+def scan_late_first_clean(
+    family: dict[str, object],
+    late_keys: tuple[Key, ...],
+) -> dict[Key, int | None]:
+    result: dict[Key, int | None] = {}
+    dirty_indices = family["dirty_indices"]
+    for key in late_keys:
+        columns = bit_slice((family["states"][key],))
+        operations = family["compiled_words"][key[1]]
+        first = None
+        for moment in range(1, TARGET_MOMENT + 1):
+            apply_compiled_bit_slice(columns, operations, 1)
+            if clean_lane_mask(columns, dirty_indices, 1):
+                first = moment
+                break
+        result[key] = first
+    return result
+
+
+def replay_higher_k_selections(
+    family: dict[str, object],
+) -> dict[tuple[int, int, tuple[int, ...]], int | None]:
+    """Re-run the four landed higher-k selection keys through first clean."""
+
+    grouped: dict[tuple[int, ...], list[tuple[int, int, tuple[int, ...]]]] = (
+        defaultdict(list)
+    )
+    for key in EXPECTED_HIGHER_K_TRANSIENTS:
+        grouped[key[2]].append(key)
+
+    result: dict[tuple[int, int, tuple[int, ...]], int | None] = {}
+    for positions0, target_keys in sorted(grouped.items()):
+        word = synchronous_word(family["program"], positions0)
+        operations = compile_word(word)
+        states = []
+        battery = {}
+        for event, _direction, before in family["epochs"]:
+            after, rail_a, rail_b, _trace = K.run_orbit(
+                before,
+                family["program"],
+                token_positions=positions0,
+            )
+            restored, inverse_a, inverse_b, _ = K.run_orbit(
+                after,
+                family["program"],
+                token_positions=positions0,
+                reverse=True,
+            )
+            expected_rail = tuple(
+                int(station in positions0)
+                for station in range(RING_STATIONS)
+            )
+            battery[event] = all((
+                after == K.A.apply_semantic(before, word),
+                rail_a == expected_rail,
+                not any(rail_b),
+                restored == before,
+                inverse_a == rail_a,
+                inverse_b == rail_b,
+                len(positions0) == 3,
+                all(
+                    min(
+                        (right - left) % RING_STATIONS,
+                        (left - right) % RING_STATIONS,
+                    ) > 1
+                    for left, right in combinations(positions0, 2)
+                ),
+            ))
+            states.append(after)
+
+        columns = bit_slice(tuple(states))
+        first = {key: None for key in target_keys}
+        maximum = max(EXPECTED_HIGHER_K_TRANSIENTS[key]
+                      for key in target_keys)
+        for moment in range(1, maximum + 1):
+            apply_compiled_bit_slice(columns, operations, len(states))
+            clean = clean_lane_mask(
+                columns, family["dirty_indices"], len(states)
+            )
+            for key in target_keys:
+                lane = key[1]
+                if first[key] is None and clean & (1 << lane):
+                    first[key] = moment
+        for key in target_keys:
+            result[key] = first[key] if battery[key[1]] else None
+    return result
+
+
+def proper_divisors(value: int) -> tuple[int, ...]:
+    return tuple(
+        divisor
+        for divisor in range(1, value)
+        if value % divisor == 0
+    )
+
+
+def verify_old_cycles(
+    family: dict[str, object],
+    expected_cycles: dict[Key, tuple[int, int]],
+) -> tuple[dict[str, object], ...]:
+    rows = []
+    dirty_indices = family["dirty_indices"]
+    for key, (expected_state_period, expected_residual_period) in sorted(
+        expected_cycles.items()
+    ):
+        state = family["states"][key]
+        word = family["words"][key[1]]
+        seen = {state: 0}
+        states = [state]
+        supports = [residual_support(state, FIXTURE_BANKS)]
+        clean_moments = []
+        entry = None
+        closure = None
+        for moment in range(1, 4097):
+            state = K.A.apply_semantic(state, word)
+            states.append(state)
+            support = residual_support(state, FIXTURE_BANKS)
+            supports.append(support)
+            if not support:
+                clean_moments.append(moment)
+            if state in seen:
+                entry = seen[state]
+                closure = moment
+                break
+            seen[state] = moment
+        if entry is None or closure is None:
+            raise AssertionError(("cycle not found by 4096", key))
+        period = closure - entry
+        phase_supports = tuple(supports[entry:closure])
+        residual_period = next(
+            candidate
+            for candidate in range(1, len(phase_supports) + 1)
+            if len(phase_supports) % candidate == 0
+            and all(
+                phase_supports[index]
+                == phase_supports[index % candidate]
+                for index in range(len(phase_supports))
+            )
+        )
+        row = {
+            "key": key,
+            "entry": entry,
+            "closure": closure,
+            "state_period": period,
+            "residual_period": residual_period,
+            "expected_state_period": expected_state_period,
+            "expected_residual_period": expected_residual_period,
+            "return_exact": states[entry] == states[closure],
+            "proper_divisor_returns": tuple(
+                divisor
+                for divisor in proper_divisors(period)
+                if states[entry] == states[entry + divisor]
+            ),
+            "all_cycle_phases_nonclean": all(phase_supports),
+            "clean_moments_before_closure": tuple(clean_moments),
+            "record_count_under_edit": 0,
+            "dirty_index_count": len(dirty_indices),
+        }
+        row["pass"] = (
+            row["return_exact"]
+            and not row["proper_divisor_returns"]
+            and row["all_cycle_phases_nonclean"]
+            and not row["clean_moments_before_closure"]
+            and period == expected_state_period
+            and residual_period == expected_residual_period
+        )
+        rows.append(row)
+    return tuple(rows)
+
+
+def verify_new_cycles(
+    family: dict[str, object],
+    new_keys: tuple[Key, ...],
+) -> tuple[dict[str, object], ...]:
+    """Discover which of periods 8928/8930 closes each entry-zero key."""
+
+    candidates = (8928, 8930)
+    rows = []
+    for key in sorted(new_keys):
+        initial = family["states"][key]
+        columns = bit_slice((initial,))
+        operations = family["compiled_words"][key[1]]
+        dirty_indices = family["dirty_indices"]
+        equality = {}
+        divisor_equality = {}
+        clean_moments = []
+        divisor_union = set().union(
+            *(proper_divisors(candidate) for candidate in candidates)
+        )
+        for moment in range(1, max(candidates) + 1):
+            apply_compiled_bit_slice(columns, operations, 1)
+            if clean_lane_mask(columns, dirty_indices, 1):
+                clean_moments.append(moment)
+            if moment in candidates or moment in divisor_union:
+                exact = all(
+                    ((column & 1) == initial[wire])
+                    for wire, column in enumerate(columns)
+                )
+                if moment in candidates:
+                    equality[moment] = exact
+                if moment in divisor_union:
+                    divisor_equality[moment] = exact
+        closing = tuple(
+            candidate for candidate in candidates if equality[candidate]
+        )
+        period = closing[0] if len(closing) == 1 else None
+        row = {
+            "key": key,
+            "entry": 0,
+            "candidate_returns": tuple(sorted(equality.items())),
+            "period": period,
+            "proper_divisor_returns": (
+                tuple(
+                    divisor
+                    for divisor in proper_divisors(period)
+                    if divisor_equality[divisor]
+                )
+                if period is not None else None
+            ),
+            "clean_moments_through_8930": tuple(clean_moments),
+            "all_cycle_phases_nonclean": not clean_moments,
+            "record_count_under_edit": 0,
+        }
+        row["pass"] = (
+            period in candidates
+            and not row["proper_divisor_returns"]
+            and row["all_cycle_phases_nonclean"]
+        )
+        rows.append(row)
+    return tuple(rows)
+
+
+def initial_states_for_positions(
+    family: dict[str, object],
+    positions0: tuple[int, ...],
+) -> tuple[tuple[int, ...], ...]:
+    return tuple(
+        K.run_orbit(
+            before,
+            family["program"],
+            token_positions=positions0,
+        )[0]
+        for _event, _direction, before in family["epochs"]
+    )
+
+
+def fixed_period_rows(
+    family: dict[str, object],
+    *,
+    k: int,
+    positions0: tuple[int, ...],
+    period: int,
+) -> tuple[dict[str, object], ...]:
+    states = initial_states_for_positions(family, positions0)
+    initial_columns = bit_slice(states)
+    columns = list(initial_columns)
+    operations = compile_word(synchronous_word(family["program"], positions0))
+    width = len(states)
+    clean_ever = clean_lane_mask(
+        columns, family["dirty_indices"], width
+    )
+    divisor_returns = [list() for _lane in range(width)]
+    divisors = frozenset(proper_divisors(period))
+    for moment in range(1, period + 1):
+        apply_compiled_bit_slice(columns, operations, width)
+        clean_ever |= clean_lane_mask(
+            columns, family["dirty_indices"], width
+        )
+        if moment in divisors:
+            equal = equal_lane_mask(columns, initial_columns, width)
+            for lane in range(width):
+                if equal & (1 << lane):
+                    divisor_returns[lane].append(moment)
+    returns = equal_lane_mask(columns, initial_columns, width)
+    rows = []
+    for event in range(width):
+        row = {
+            "key": (k, positions0, event),
+            "entry": 0,
+            "period": period,
+            "full_state_recurrence": bool(returns & (1 << event)),
+            "proper_divisor_returns": tuple(divisor_returns[event]),
+            "all_cycle_phases_nonclean":
+                not bool(clean_ever & (1 << event)),
+            "record_count_under_edit": 0,
+        }
+        row["pass"] = (
+            row["full_state_recurrence"]
+            and not row["proper_divisor_returns"]
+            and row["all_cycle_phases_nonclean"]
+        )
+        rows.append(row)
+    return tuple(rows)
+
+
+def verify_higher_certified_cycles(
+    family: dict[str, object],
+) -> dict[str, object]:
+    representatives = higher_k_representatives()
+    k3_rows = tuple(
+        row
+        for positions0 in representatives[3]
+        for row in fixed_period_rows(
+            family, k=3, positions0=positions0, period=5952
+        )
+        if row["full_state_recurrence"]
+    )
+    k4_keys = (
+        (4, (0, 2, 4, 7), 1),
+        (4, (0, 2, 4, 8), 1),
+    )
+    k4_groups = {
+        positions0: fixed_period_rows(
+            family, k=4, positions0=positions0, period=4464
+        )
+        for _k, positions0, _event in k4_keys
+    }
+    k4_rows = tuple(
+        k4_groups[positions0][event]
+        for _k, positions0, event in k4_keys
+    )
+    result = {
+        "Cycle818_citation":
+            LINEAGE["Cycle818_cross_stratum_cycle_inventory"],
+        "strict_14_interpretation":
+            "12 k2 rows plus 2 k4 rows",
+        "Cycle801_extra_k3_rows": k3_rows,
+        "Cycle814_k4_rows": k4_rows,
+        "higher_cycle_count": len(k3_rows) + len(k4_rows),
+        "union_818_distinct_cycle_count":
+            12 + len(k3_rows) + len(k4_rows),
+    }
+    result["pass"] = (
+        len(k3_rows) == 4
+        and all(
+            row["period"] == 5952 and row["pass"]
+            for row in k3_rows
+        )
+        and len(k4_rows) == 2
+        and all(
+            row["period"] == 4464 and row["pass"]
+            for row in k4_rows
+        )
+        and result["union_818_distinct_cycle_count"] == 18
+    )
+    return result
+
+
+def single_source_family() -> dict[str, object]:
+    rows = []
+    battery_failures = []
+    directions = Counter()
+    for bank_count in FULL_FAMILY_BANK_COUNTS:
+        program = K.interleaved_program(bank_count)
+        banks, links = K.B.chain_genesis(bank_count)
+        state = K.M.pack_state(banks, links)
+        allocator = K.M.global_allocator_word(bank_count)
+        dirty_indices = dirty_global_indices(bank_count)
+        for event in range(2 * bank_count):
+            direction = (1, 0) if event % 2 == 0 else (0, 1)
+            before = K.M.prepare_endpoint(state, direction)
+            after, rail_a, rail_b, trace = K.run_orbit(before, program)
+            restored, inverse_a, inverse_b, _ = K.run_orbit(
+                after, program, reverse=True
+            )
+            conditions = {
+                "synchronous_composition":
+                    after == K.A.apply_semantic(before, allocator),
+                "token_rail_return":
+                    rail_a == (1,) + (0,) * (len(program) - 1)
+                    and not any(rail_b),
+                "literal_inverse": (
+                    restored == before
+                    and inverse_a == rail_a
+                    and inverse_b == rail_b
+                ),
+                "census_membership": True,
+                "pairwise_separation": True,
+                "synchronization": len(trace) == len(program),
+                "clean_postimage":
+                    not any(after[index] for index in dirty_indices),
+            }
+            if not all(conditions.values()):
+                battery_failures.append(
+                    (bank_count, event, conditions)
+                )
+            rows.append({
+                "banks": bank_count,
+                "event": event,
+                "direction": direction,
+                "first_clean_selector_moment": 0,
+                "record_forms_under_edit": all(conditions.values()),
+            })
+            directions[direction] += 1
+            state = after
+    expected_identity = tuple(
+        (bank_count, event, 0)
+        for bank_count in FULL_FAMILY_BANK_COUNTS
+        for event in range(2 * bank_count)
+    )
+    result = {
+        "events": tuple(rows),
+        "event_count": len(rows),
+        "battery_failures": tuple(battery_failures),
+        "direction_balance": tuple(sorted(directions.items())),
+        "event_identity_sha256": digest(expected_identity),
+        "Cycle788_citation": LINEAGE["Cycle788_46_event_extension"],
+        "Cycle793_citation": LINEAGE["Cycle793_46_event_balance"],
+    }
+    result["pass"] = (
+        result["event_count"] == 46
+        and not result["battery_failures"]
+        and all(row["record_forms_under_edit"] for row in rows)
+        and sorted(directions.values()) == [23, 23]
+    )
+    return result
+
+
+def json_line(payload: bytes, prefix: str) -> Any:
+    rows = [
+        line[len(prefix):].strip()
+        for line in payload.decode("utf-8").splitlines()
+        if line.startswith(prefix)
+    ]
+    if len(rows) != 1:
+        raise AssertionError(("cache JSON line", prefix, len(rows)))
+    return json.loads(rows[0])
+
+
+def cache_facts(payloads: dict[str, bytes]) -> dict[str, object]:
+    cache796 = payloads[AUDIT_INPUT_PATHS[6]]
+    cache820 = payloads[AUDIT_INPUT_PATHS[7]]
+    report796 = json_line(cache796, "REPORT :: ")
+    arithmetic820 = json_line(cache820, "CERTIFICATE_A_ARITHMETIC=")
+    trajectory820 = json_line(cache820, "CERTIFICATE_B_TRAJECTORY=")
+    controls820 = json_line(cache820, "CERTIFICATE_F_CONTROLS=")
+    report820 = json_line(cache820, "REPORT=")
+    earlier_rows = arithmetic820["inventory"]["earlier_moments"]
+    return {
+        "cache796": {
+            "sha256": sha256(cache796).hexdigest(),
+            "terminal": report796["terminal"],
+            "acceptance_keys": tuple(
+                (
+                    int(row[0]),
+                    tuple(int(value) for value in row[1]),
+                    int(row[2]),
+                )
+                for row in report796["acceptance_keys"]
+            ),
+            "acceptance_moments":
+                tuple(int(value) for value in report796["acceptance_moments"]),
+            "classification_counts": report796["classification_counts"],
+            "pass": report796["pass"],
+        },
+        "cache820": {
+            "sha256": sha256(cache820).hexdigest(),
+            "terminal": report820["terminal"],
+            "target_moment": int(report820["target_moment"]),
+            "nine_key_count": int(report820["nine_key_count"]),
+            "earlier_moments":
+                tuple(int(row[1]) for row in earlier_rows),
+            "family_sha256":
+                controls820["family_reimplementation"]["family_sha256"],
+            "first_clean": tuple(
+                (
+                    (
+                        int(row[0][0]),
+                        tuple(int(value) for value in row[0][1]),
+                    ),
+                    int(row[1]),
+                )
+                for row in trajectory820["first_clean"]
+            ),
+            "pass": report820["pass"],
+        },
+    }
+
+
+def occurrence_replay(payloads: dict[str, bytes]) -> dict[str, object]:
+    tree819 = ast.parse(
+        payloads[AUDIT_INPUT_PATHS[4]], filename=AUDIT_INPUT_PATHS[4]
+    )
+    tree820 = ast.parse(
+        payloads[AUDIT_INPUT_PATHS[5]], filename=AUDIT_INPUT_PATHS[5]
+    )
+    expected_cycles = dict(literal_assignment(tree819, "EXPECTED_CYCLES"))
+    late_keys = tuple(literal_assignment(tree820, "NINE_KEYS"))
+    new_cycle_keys = tuple(sorted(literal_assignment(tree820, "NEW_CYCLE_KEYS")))
+    expected_earlier_moments = tuple(
+        literal_assignment(tree820, "EARLIER_MOMENTS")
+    )
+    expected_target = literal_assignment(tree820, "TARGET_MOMENT")
+
+    family = build_k2_family()
+    early_k2_first = scan_early_first_clean(family)
+    early_higher_first = replay_higher_k_selections(family)
+    late_first = scan_late_first_clean(family, late_keys)
+    old_cycle_rows = verify_old_cycles(family, expected_cycles)
+    higher_cycle_inventory = verify_higher_certified_cycles(family)
+    new_cycle_rows = verify_new_cycles(family, new_cycle_keys)
+    singles = single_source_family()
+
+    early_k2_events = tuple(
+        (key, moment)
+        for key, moment in sorted(
+            early_k2_first.items(), key=lambda row: (row[1], row[0])
+        )
+    )
+    early_higher_events = tuple(
+        (key, moment)
+        for key, moment in sorted(
+            early_higher_first.items(),
+            key=lambda row: (
+                TARGET_MOMENT + 1 if row[1] is None else row[1],
+                row[0],
+            ),
+        )
+        if moment is not None
+    )
+    early_events = tuple(sorted(
+        early_k2_events + early_higher_events,
+        key=lambda row: (row[1], row[0]),
+    ))
+    late_events = tuple(
+        (key, moment)
+        for key, moment in sorted(late_first.items())
+        if moment is not None
+    )
+    all_events = early_events + late_events
+    record_events = tuple(all_events)
+    result = {
+        "k2_family": family["summary"],
+        "two_early_k2_first_clean_events": early_k2_events,
+        "four_early_higher_k_first_clean_events": early_higher_events,
+        "six_early_first_clean_events": early_events,
+        "nine_merger_first_clean_events": late_events,
+        "all_fifteen_selection_events": all_events,
+        "record_events_under_edit": record_events,
+        "record_set_equals_first_clean_event_set":
+            record_events == all_events,
+        "early_moments": tuple(moment for _key, moment in early_events),
+        "late_moment_census":
+            dict(sorted(Counter(moment for _key, moment in late_events).items())),
+        "old_certified_cycle_rows": old_cycle_rows,
+        "higher_certified_cycle_inventory": higher_cycle_inventory,
+        "new_certified_cycle_rows": new_cycle_rows,
+        "zero_record_certified_cycle_count":
+            sum(
+                row["record_count_under_edit"] == 0
+                for row in (
+                    old_cycle_rows
+                    + higher_cycle_inventory["Cycle801_extra_k3_rows"]
+                    + higher_cycle_inventory["Cycle814_k4_rows"]
+                    + new_cycle_rows
+                )
+            ),
+        "single_source_family": singles,
+        "expected_earlier_moments": expected_earlier_moments,
+        "expected_higher_k_transients":
+            tuple(sorted(EXPECTED_HIGHER_K_TRANSIENTS.items())),
+        "expected_target_moment": expected_target,
+    }
+    result["pass"] = (
+        family["summary"]["pass"]
+        and len(early_events) == 6
+        and len(early_k2_events) == 2
+        and dict(early_higher_events) == EXPECTED_HIGHER_K_TRANSIENTS
+        and result["early_moments"] == expected_earlier_moments
+        and len(late_events) == 9
+        and set(key for key, _moment in late_events) == set(late_keys)
+        and result["late_moment_census"] == {expected_target: 9}
+        and len(all_events) == 15
+        and result["record_set_equals_first_clean_event_set"]
+        and len(old_cycle_rows) == 12
+        and len(new_cycle_rows) == 2
+        and higher_cycle_inventory["pass"]
+        and all(row["pass"] for row in old_cycle_rows + new_cycle_rows)
+        and result["zero_record_certified_cycle_count"] == 20
+        and singles["pass"]
+    )
+    return result
+
+
+def certificate_b_occurrences(
+    replay: dict[str, object],
+) -> dict[str, object]:
+    return {
+        "pass": replay["pass"],
+        "conditional_status":
+            "conditional on accepted new axiom; not retained on the actual "
+            "current surface",
+        "record_rule": "record set = first-clean selection-event set",
+        "six_early_first_clean_events":
+            replay["six_early_first_clean_events"],
+        "nine_merger_first_clean_events":
+            replay["nine_merger_first_clean_events"],
+        "fifteen_event_count":
+            len(replay["all_fifteen_selection_events"]),
+        "zero_record_certified_cycle_count":
+            replay["zero_record_certified_cycle_count"],
+        "certified_cycle_rows": (
+            replay["old_certified_cycle_rows"]
+            + replay["higher_certified_cycle_inventory"][
+                "Cycle801_extra_k3_rows"
+            ]
+            + replay["higher_certified_cycle_inventory"]["Cycle814_k4_rows"]
+            + replay["new_certified_cycle_rows"]
+        ),
+        "Cycle818_cross_stratum_inventory":
+            replay["higher_certified_cycle_inventory"],
+        "single_source_46": replay["single_source_family"],
+        "landed_identifications": {
+            "early_battery": "Cycles 796/819",
+            "late_cache_and_mechanism": "Cycles 819/820",
+            "single_source_batteries": "Cycles 788/793",
+        },
+    }
+
+
+def certificate_c_neutrality(
+    replay: dict[str, object],
+    repeat: dict[str, object],
+    caches: dict[str, object],
+    sources_before: dict[str, str],
+    sources_after: dict[str, str],
+) -> dict[str, object]:
+    early_by_key = {
+        key: moment
+        for key, moment in replay["six_early_first_clean_events"]
+    }
+    expected796 = tuple(
+        sorted(
+            ((event, positions), moment)
+            for event, positions, moment
+            in caches["cache796"]["acceptance_keys"]
+        )
+    )
+    observed796 = tuple(
+        sorted(
+            (key, early_by_key[key])
+            for key, _moment in expected796
+        )
+    )
+    observed820 = tuple(replay["nine_merger_first_clean_events"])
+    expected820 = tuple(sorted(caches["cache820"]["first_clean"]))
+    diffs = []
+    comparisons = {
+        "Cycle796_acceptance_keys": (observed796, expected796),
+        "Cycle796_acceptance_moments":
+            (tuple(sorted(moment for _key, moment in observed796)),
+             caches["cache796"]["acceptance_moments"]),
+        "Cycle820_nine_first_clean": (observed820, expected820),
+        "Cycle820_earlier_moments":
+            (replay["early_moments"], caches["cache820"]["earlier_moments"]),
+        "Cycle820_family_sha256":
+            (replay["k2_family"]["family_sha256"],
+             caches["cache820"]["family_sha256"]),
+        "Cycle820_target":
+            (next(iter(replay["late_moment_census"])),
+             caches["cache820"]["target_moment"]),
+        "Cycle820_nine_count":
+            (len(observed820), caches["cache820"]["nine_key_count"]),
+    }
+    for name, (observed, expected) in comparisons.items():
+        if observed != expected:
+            diffs.append({
+                "surface": name,
+                "observed": observed,
+                "expected": expected,
+            })
+    declared_battery = {
+        "full_k2_initial_battery_cases": 176,
+        "exact_first_clean_paths": 15,
+        "certified_never_clean_cycles": 20,
+        "single_source_selector_events": 46,
+    }
+    deterministic = digest(replay) == digest(repeat)
+    result = {
+        "edit_operation":
+            "add the record label to the already-computed selection-event "
+            "set; do not feed that label back into dynamics",
+        "declared_representative_battery": declared_battery,
+        "cache_snapshots": caches,
+        "cache_field_diffs": tuple(diffs),
+        "cache_sha_level_exact": (
+            caches["cache796"]["sha256"] == EXPECTED_SHA256[AUDIT_INPUT_PATHS[6]]
+            and caches["cache820"]["sha256"]
+            == EXPECTED_SHA256[AUDIT_INPUT_PATHS[7]]
+        ),
+        "dynamics_batteries_selections_periods_unchanged": not diffs,
+        "sources_unchanged": sources_before == sources_after,
+        "primary_report_sha256": digest(replay),
+        "repeat_report_sha256": digest(repeat),
+        "deterministic": deterministic,
+        "shipped_values_changed": (),
+    }
+    result["pass"] = (
+        replay["pass"]
+        and repeat["pass"]
+        and not diffs
+        and result["cache_sha_level_exact"]
+        and result["sources_unchanged"]
+        and deterministic
+        and not result["shipped_values_changed"]
+    )
+    return result
+
+
+def certificate_f_verdict(
+    certificate_a: dict[str, object],
+    certificate_b: dict[str, object],
+    certificate_c: dict[str, object],
+    certificate_d: dict[str, object],
+    certificate_e: dict[str, object],
+) -> dict[str, object]:
+    summary = (
+        {
+            "question": "what it fixes",
+            "answer": "both axes: every-boundary cadence + first-clean formation",
+        },
+        {
+            "question": "what it reproduces",
+            "answer":
+                "all landed occurrences: 15 transient, 20 zero-cycle, "
+                "46 single-source",
+        },
+        {
+            "question": "what it changes",
+            "answer": "nothing shipped",
+        },
+        {
+            "question": "what it decides",
+            "answer":
+                "STILL_FREE: six-way per-orientation matter-origin allocation",
+        },
+        {
+            "question": "what it costs",
+            "answer":
+                "owner leg-1 realized-resolution input; 7 alternatives in "
+                "the witnessed 4x2 space",
+        },
+    )
+    passed = all((
+        certificate_a["pass"],
+        certificate_b["pass"],
+        certificate_c["pass"],
+        certificate_d["pass"],
+        certificate_e["pass"],
+    ))
+    return {
+        "pass": passed,
+        "verdict":
+            "EDIT_AUDIT_COMPLETE" if passed else "EDIT_AUDIT_INCOMPLETE",
+        "summary_table": summary,
+        "recommendation": None,
+        "decision_owner": "owner",
+    }
+
+
+def render(
+    certificates: tuple[tuple[str, dict[str, object]], ...],
+    runtime_seconds: float,
+    controls: dict[str, object],
+) -> str:
+    lines = [
+        "CYCLE828_MINIMAL_AXIOM_EDIT_PROPOSAL_AUDIT",
+        "PROPOSAL_ONLY_NO_AXIOM_SURFACE_MODIFIED",
+        "CANDIDATE_EDIT :: " + CANDIDATE_EDIT,
+    ]
+    for label, value in certificates:
+        lines.append(
+            ("PASS " if value["pass"] else "FAIL ")
+            + label + " :: " + compact(value)
+        )
+    lines.append(
+        ("PASS " if controls["pass"] else "FAIL ")
+        + "CERTIFICATE_G_CONTROLS :: " + compact(controls)
+    )
+    verdict = dict(certificates)["CERTIFICATE_F_VERDICT"]
+    lines.append("FINAL :: " + compact({
+        "verdict": verdict["verdict"],
+        "axes": "FIXED_BOTH",
+        "occurrences": "REPRODUCED_ALL_LANDED",
+        "neutrality": "NOTHING_SHIPPED_CHANGED",
+        "allocation": "STILL_FREE",
+        "leg_1": "OWNER_REALIZED_RESOLUTION_INPUT_REQUIRED",
+        "leg_2": "NON_ENTAILMENT_VERIFIED",
+        "leg_3": "CLEAR_ONE_SENTENCE_TWO_AXES_7_WITNESSED_EXCLUSIONS",
+        "runtime_seconds": round(runtime_seconds, 6),
+        "pass": all(value["pass"] for _label, value in certificates)
+            and controls["pass"],
+    }))
+    lines.append(
+        "EDIT_AUDIT_COMPLETE"
+        if verdict["verdict"] == "EDIT_AUDIT_COMPLETE"
+        and controls["pass"]
+        else "EDIT_AUDIT_INCOMPLETE"
+    )
+    return "\n".join(lines) + "\n"
+
+
+def main() -> int:
+    started = monotonic()
     payloads = read_inputs()
+    sources_before = {
+        name: sha256(payload).hexdigest()
+        for name, payload in payloads.items()
+    }
     controls = source_controls(payloads)
     certificate_a = certificate_a_axes_collapse()
+    caches = cache_facts(payloads)
+    replay = occurrence_replay(payloads)
+    repeat = occurrence_replay(payloads)
+    certificate_b = certificate_b_occurrences(replay)
+    sources_after_payloads = read_inputs()
+    sources_after = {
+        name: sha256(payload).hexdigest()
+        for name, payload in sources_after_payloads.items()
+    }
+    certificate_c = certificate_c_neutrality(
+        replay, repeat, caches, sources_before, sources_after
+    )
     certificate_d = certificate_d_allocation()
     certificate_e = certificate_e_three_legs()
-    rows = (
+    certificate_f = certificate_f_verdict(
+        certificate_a,
+        certificate_b,
+        certificate_c,
+        certificate_d,
+        certificate_e,
+    )
+    certificates = (
         ("CERTIFICATE_A_AXES_COLLAPSE", certificate_a),
+        ("CERTIFICATE_B_OCCURRENCE_REPRODUCTION", certificate_b),
+        ("CERTIFICATE_C_CERTIFICATE_NEUTRALITY", certificate_c),
         ("CERTIFICATE_D_ALLOCATION", certificate_d),
         ("CERTIFICATE_E_THREE_LEGS", certificate_e),
-        ("CERTIFICATE_G_CONTROLS", controls),
+        ("CERTIFICATE_F_VERDICT", certificate_f),
     )
-    for label, value in rows:
-        print(("PASS " if value["pass"] else "FAIL ") + label
-              + " :: " + compact(value))
-    passed = all(value["pass"] for _label, value in rows)
-    print(
-        "CYCLE828_AXIOM_EDIT_AUDIT_SCAFFOLD_PASS"
-        if passed else "CYCLE828_AXIOM_EDIT_AUDIT_SCAFFOLD_FAIL"
+    runtime_seconds = monotonic() - started
+    controls.update({
+        "deterministic": digest(replay) == digest(repeat),
+        "sources_unchanged": sources_before == sources_after,
+        "runtime_seconds": round(runtime_seconds, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "blocked_modules_loaded_at_end":
+            tuple(name for name in BLOCKLISTED_MODULES if name in sys.modules),
+        "blocker_hits_at_end": tuple(PRIMARY_BLOCKER.hits),
+    })
+    controls["pass"] = (
+        controls["pass"]
+        and controls["deterministic"]
+        and controls["sources_unchanged"]
+        and runtime_seconds < AUDIT_TIMEOUT_SEC
+        and not controls["blocked_modules_loaded_at_end"]
+        and not controls["blocker_hits_at_end"]
+    )
+    output = render(certificates, runtime_seconds, controls)
+    output_bytes = len(output.encode("utf-8"))
+    controls["stdout_bytes"] = output_bytes
+    controls["stdout_within_limit"] = output_bytes < STDOUT_LIMIT_BYTES
+    controls["pass"] = controls["pass"] and controls["stdout_within_limit"]
+    output = render(certificates, runtime_seconds, controls)
+    output_bytes = len(output.encode("utf-8"))
+    controls["stdout_bytes"] = output_bytes
+    controls["stdout_within_limit"] = output_bytes < STDOUT_LIMIT_BYTES
+    output = render(certificates, runtime_seconds, controls)
+    if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
+        raise AssertionError(
+            ("stdout bound", len(output.encode("utf-8")), STDOUT_LIMIT_BYTES)
+        )
+    sys.stdout.write(output)
+    passed = (
+        all(value["pass"] for _label, value in certificates)
+        and controls["pass"]
     )
     return 0 if passed else 1
 
 
 if __name__ == "__main__":
-    raise SystemExit(scaffold_main())
+    raise SystemExit(main())

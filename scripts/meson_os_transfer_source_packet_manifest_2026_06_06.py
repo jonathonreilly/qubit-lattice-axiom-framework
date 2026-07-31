@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Source-packet manifest for the meson same-M Wick-minor / trace-kernel runner."""
+"""Source packet for the meson same-M Wick-minor / exact finite-kernel runner."""
 
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ REQUIRED_SOURCE_FRAGMENTS = [
     "def meson_op_on_vacuum_norm(",
     "def meson_correlator_full_berezin(",
     "def meson_trace_kernel(",
-    "def u_averaged_meson(",
+    "def u_averaged_finite_trace(",
     "def u_averaged_full_berezin(",
     "def normalized_gauge_weights(",
     "def gauge_transform_links(",
@@ -37,9 +37,9 @@ REQUIRED_SOURCE_FRAGMENTS = [
 
 REQUIRED_CACHE_SNIPPETS = [
     "SCORECARD PASS=116 FAIL=0",
-    "P0      : SAME-M det-weighted Wick-minor avg == trace kernel",
-    "P1      : per-config SAME-M Wick minor == trace kernel",
-    "SAME-M  : independently recovered C_BLOCK-2",
+    "P0      : det-weighted Wick-minor avg == exact finite trace",
+    "P1      : per-config SAME-M Wick minor == exact finite trace",
+    "ASYMPT  : finite normalization vs C_BLOCK-2",
     "SIGN    : wrong reflection physical max eig",
     "Pdet    : det phase residual / min log|det|",
     "K1 VAC  : ||F|Omega>||",

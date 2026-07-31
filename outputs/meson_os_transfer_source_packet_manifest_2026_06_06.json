@@ -21,7 +21,7 @@
       "ok": true
     },
     {
-      "detail": "bytes=35432",
+      "detail": "bytes=36513",
       "name": "source_full_length",
       "ok": true
     },
@@ -61,8 +61,8 @@
       "ok": true
     },
     {
-      "detail": "def u_averaged_meson(",
-      "name": "source_contains:def u_averaged_meson(",
+      "detail": "def u_averaged_finite_trace(",
+      "name": "source_contains:def u_averaged_finite_trace(",
       "ok": true
     },
     {
@@ -111,7 +111,7 @@
       "ok": true
     },
     {
-      "detail": "e9ddec10b14cd4ca4e51738be74821e86416b6210beb065d8e04025dc8463bc3 == e9ddec10b14cd4ca4e51738be74821e86416b6210beb065d8e04025dc8463bc3",
+      "detail": "28b99471f9377af741a92bf83fbda146d5871ebff8d6bd67855035cda5081da5 == 28b99471f9377af741a92bf83fbda146d5871ebff8d6bd67855035cda5081da5",
       "name": "cache_sha_fresh",
       "ok": true
     },
@@ -131,18 +131,18 @@
       "ok": true
     },
     {
-      "detail": "P0      : SAME-M det-weighted Wick-minor avg == trace kernel",
-      "name": "cache_contains:P0      : SAME-M det-weighted Wick-minor avg == trace kernel",
+      "detail": "P0      : det-weighted Wick-minor avg == exact finite trace",
+      "name": "cache_contains:P0      : det-weighted Wick-minor avg == exact finite trace",
       "ok": true
     },
     {
-      "detail": "P1      : per-config SAME-M Wick minor == trace kernel",
-      "name": "cache_contains:P1      : per-config SAME-M Wick minor == trace kernel",
+      "detail": "P1      : per-config SAME-M Wick minor == exact finite trace",
+      "name": "cache_contains:P1      : per-config SAME-M Wick minor == exact finite trace",
       "ok": true
     },
     {
-      "detail": "SAME-M  : independently recovered C_BLOCK-2",
-      "name": "cache_contains:SAME-M  : independently recovered C_BLOCK-2",
+      "detail": "ASYMPT  : finite normalization vs C_BLOCK-2",
+      "name": "cache_contains:ASYMPT  : finite normalization vs C_BLOCK-2",
       "ok": true
     },
     {

@@ -4,7 +4,7 @@
 This runner does not re-audit the row or promote its status. It checks that
 the meson note exposes the full primary runner source, a SHA-fresh cache for
 that source, and the packet-level manifest artifacts needed to inspect the
-same-M Wick-minor / analytic trace-kernel path named by the audit blocker.
+same-M Wick-minor / exact finite-kernel path named by the audit blocker.
 """
 from __future__ import annotations
 
@@ -37,7 +37,7 @@ REQUIRED_SOURCE_FRAGMENTS = [
     "def full_grassmann_packet",
     "def meson_correlator_full_berezin",
     "def normalized_gauge_weights",
-    "def u_averaged_meson",
+    "def u_averaged_finite_trace",
     "def u_averaged_full_berezin",
     "packet['logabsdet'] if use_det else 0.0",
     "print(f\"SCORECARD PASS={npass} FAIL={nfail}\")",
@@ -45,16 +45,16 @@ REQUIRED_SOURCE_FRAGMENTS = [
 
 EXPECTED_CACHE_SNIPPETS = [
     "status: ok",
-    "P_block : Gf Berezin(M^-1) vs analytic 2e^-2E kernel",
-    "SAME-M  : independently recovered C_BLOCK-2",
+    "ASYMPT  : reduced Berezin vs large-time 2e^-2E",
+    "ASYMPT  : finite normalization vs C_BLOCK-2",
     "SIGN    : wrong reflection physical max eig",
-    "P1      : per-config SAME-M Wick minor == trace kernel",
-    "P0      : SAME-M det-weighted Wick-minor avg == trace kernel",
+    "P1      : per-config SAME-M Wick minor == exact finite trace",
+    "P0      : det-weighted Wick-minor avg == exact finite trace",
     "Pdet    : det phase residual / min log|det|",
     "K2 BREAK: per-mode-factorized Berezin gap",
     "K5 GAUGE: SAME-M Wick-minor invariance under g",
     "K5 GAUGE: Wilson-line covariance residual",
-    "This verifies the gauge-invariant meson SAME-M Wick-minor==trace-kernel",
+    "This verifies the gauge-invariant meson SAME-M Wick-minor==exact finite trace",
     "SCORECARD PASS=116 FAIL=0",
 ]
 

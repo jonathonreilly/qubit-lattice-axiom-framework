@@ -57,7 +57,7 @@
     {
       "name": "source_full_length:primary_runner",
       "pass": true,
-      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py has 35432 bytes"
+      "detail": "scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py has 36513 bytes"
     },
     {
       "name": "source_contains:primary_runner:def block_metric_per_mode",
@@ -90,9 +90,9 @@
       "detail": "def normalized_gauge_weights present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
     },
     {
-      "name": "source_contains:primary_runner:def u_averaged_meson",
+      "name": "source_contains:primary_runner:def u_averaged_finite_trace",
       "pass": true,
-      "detail": "def u_averaged_meson present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
+      "detail": "def u_averaged_finite_trace present in scripts/meson_gauge_invariant_os_transfer_representation_2026-05-30.py"
     },
     {
       "name": "source_contains:primary_runner:def u_averaged_full_berezin",
@@ -117,7 +117,7 @@
     {
       "name": "cache_sha_fresh:primary_cache",
       "pass": true,
-      "detail": "cache sha e9ddec10b14cd4ca4e51738be74821e86416b6210beb065d8e04025dc8463bc3 current sha e9ddec10b14cd4ca4e51738be74821e86416b6210beb065d8e04025dc8463bc3"
+      "detail": "cache sha 28b99471f9377af741a92bf83fbda146d5871ebff8d6bd67855035cda5081da5 current sha 28b99471f9377af741a92bf83fbda146d5871ebff8d6bd67855035cda5081da5"
     },
     {
       "name": "cache_exit_ok:primary_cache",
@@ -130,14 +130,14 @@
       "detail": "status: ok"
     },
     {
-      "name": "cache_contains:primary_cache:P_block : Gf Berezin(M^-1) vs analytic 2e^-2E kernel",
+      "name": "cache_contains:primary_cache:ASYMPT  : reduced Berezin vs large-time 2e^-2E",
       "pass": true,
-      "detail": "P_block : Gf Berezin(M^-1) vs analytic 2e^-2E kernel"
+      "detail": "ASYMPT  : reduced Berezin vs large-time 2e^-2E"
     },
     {
-      "name": "cache_contains:primary_cache:SAME-M  : independently recovered C_BLOCK-2",
+      "name": "cache_contains:primary_cache:ASYMPT  : finite normalization vs C_BLOCK-2",
       "pass": true,
-      "detail": "SAME-M  : independently recovered C_BLOCK-2"
+      "detail": "ASYMPT  : finite normalization vs C_BLOCK-2"
     },
     {
       "name": "cache_contains:primary_cache:SIGN    : wrong reflection physical max eig",
@@ -145,14 +145,14 @@
       "detail": "SIGN    : wrong reflection physical max eig"
     },
     {
-      "name": "cache_contains:primary_cache:P1      : per-config SAME-M Wick minor == trace kernel",
+      "name": "cache_contains:primary_cache:P1      : per-config SAME-M Wick minor == exact finite trace",
       "pass": true,
-      "detail": "P1      : per-config SAME-M Wick minor == trace kernel"
+      "detail": "P1      : per-config SAME-M Wick minor == exact finite trace"
     },
     {
-      "name": "cache_contains:primary_cache:P0      : SAME-M det-weighted Wick-minor avg == trace kernel",
+      "name": "cache_contains:primary_cache:P0      : det-weighted Wick-minor avg == exact finite trace",
       "pass": true,
-      "detail": "P0      : SAME-M det-weighted Wick-minor avg == trace kernel"
+      "detail": "P0      : det-weighted Wick-minor avg == exact finite trace"
     },
     {
       "name": "cache_contains:primary_cache:Pdet    : det phase residual / min log|det|",
@@ -175,9 +175,9 @@
       "detail": "K5 GAUGE: Wilson-line covariance residual"
     },
     {
-      "name": "cache_contains:primary_cache:This verifies the gauge-invariant meson SAME-M Wick-minor==trace-kernel",
+      "name": "cache_contains:primary_cache:This verifies the gauge-invariant meson SAME-M Wick-minor==exact finite trace",
       "pass": true,
-      "detail": "This verifies the gauge-invariant meson SAME-M Wick-minor==trace-kernel"
+      "detail": "This verifies the gauge-invariant meson SAME-M Wick-minor==exact finite trace"
     },
     {
       "name": "cache_contains:primary_cache:SCORECARD PASS=116 FAIL=0",

@@ -140,6 +140,14 @@ EXPECTED_CATALOG_SHA256 = (
 EXPECTED_PULSE_DENSE_SHA256 = (
     "0124485de4a214328a774183185fec380e6bb6519db36429fa4865cd951138c6"
 )
+EXPECTED_REGISTER_DENSE_SHA256 = (
+    "fc54482f8feaaf1804e1f7528536cec3be5d78e4bcd8e0dc7c30e6c4ed16f855"
+)
+EXPECTED_CHANGE_TIME_RAW_SHA256 = (
+    "3d588a959c0f461859b41931a104237adcd2df5e33bd29aa7457811cca0d702d"
+)
+EXPECTED_CHANGE_TIME_RAW_BYTES = 203926
+EXPECTED_CHANGE_TIME_UNIQUE_SEQUENCES = 74
 EXPECTED_PULSE_FULL_COMPONENT_CENSUS = (
     (1, 1), (2, 1), (3, 2), (4, 5), (5, 333),
     (6, 1724), (7, 6277), (8, 7098), (9, 3196),
@@ -923,6 +931,11 @@ def register_trajectory_certificate(
             trajectory["pass"]
             and len(wires) == 39
             and encoding["roundtrip_exact"]
+            and encoding["unique_sequence_count"]
+            == EXPECTED_CHANGE_TIME_UNIQUE_SEQUENCES
+            and encoding["raw_bytes"] == EXPECTED_CHANGE_TIME_RAW_BYTES
+            and encoding["raw_sha256"]
+            == EXPECTED_CHANGE_TIME_RAW_SHA256
         ),
     }
 
@@ -1348,6 +1361,8 @@ def pulse_replay(
             gate_counts == (6212,) * 9
             and full_hasher.hexdigest()
             == EXPECTED_PULSE_DENSE_SHA256
+            and register_hasher.hexdigest()
+            == EXPECTED_REGISTER_DENSE_SHA256
             and tuple(sorted(full_component_census.items()))
             == EXPECTED_PULSE_FULL_COMPONENT_CENSUS
             and register_ranges

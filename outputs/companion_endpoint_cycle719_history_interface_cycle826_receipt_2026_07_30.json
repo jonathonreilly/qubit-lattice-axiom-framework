@@ -1,0 +1,51 @@
+{
+  "artifact": "frontier_cycle826_companion_endpoint_cycle719_history_interface_2026_07_30.py",
+  "audit": "unset",
+  "authority": "none",
+  "artifact_provenance_sha256": {
+    "note": "75a6e9757178d0d9f42e971b6e2efcdec0e98b359497b2d60571a03b05302d8a",
+    "runner": "cdae49cd1e04a7a0530d44377625de9e5c71de6040d58539d1bd42f49250a638"
+  },
+  "checks_passed": 5,
+  "checks_total": 5,
+  "claim_scope": "exact register-interface composition of the Cycle823 full-seam opportunity with the landed Cycle719 finite recurrent controller; same-chart physical port placement remains open",
+  "controller_truth_table": {
+    "truth_rows": 4,
+    "failures": 0,
+    "inverse_failures": 0,
+    "controller_token_failures": 0,
+    "source_pointer_cleanup_failures": 0,
+    "endpoint_preservation_failures": 0,
+    "history_orientation_failures": 0,
+    "success_finalizer_deletions_detected": 2,
+    "dirty_pointer_inputs_detected": 4,
+    "zero_token_inputs_detected": 2,
+    "two_token_inputs_detected": 2,
+    "program_stations": 130
+  },
+  "composition": {
+    "held_shapes": 4,
+    "edges": 82,
+    "physical_or_target_phase_classes": 1312,
+    "composition_failures": 0,
+    "interface_xor_failures": 0,
+    "maximum_composition_residual": 0.0,
+    "history_class_counts": {
+      "no_packet": 656,
+      "orientation_minus_one": 328,
+      "orientation_plus_one": 328
+    }
+  },
+  "supplied_boundary": [
+    "Cycle823 finite full-seam compiler and clean endpoint registers",
+    "Cycle719 unique token, finite program ring, banks, clean work, successful admission, and occurrence",
+    "register identification between the endpoint occupations/pointer and controller source inputs"
+  ],
+  "open_boundary": [
+    "same-chart collision-free physical placement and route between compilers",
+    "autonomous token and clean-bank genesis or local enforcement",
+    "post-capacity renewal and multi-source arbitration",
+    "objective admission, physical time, permanent Record, Born/history, and source/gravity"
+  ],
+  "status": "cycle826-companion-endpoint-cycle719-history-interface-bounded-positive"
+}

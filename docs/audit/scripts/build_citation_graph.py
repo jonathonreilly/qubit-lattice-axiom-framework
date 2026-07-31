@@ -220,6 +220,12 @@ EXPLICIT_PACKET_HELPER_RUNNER_PATHS = {
     "fixed_target_x_cnot_preparation_count_cycle753_bounded_theorem_note_2026-07-28": [
         "scripts/frontier_cycle753_selection_independent_check_2026_07_28.py",
     ],
+    # Cycle 755's exact-DP checker deliberately parses the primary only as
+    # inert AST data and never imports or executes it. Expose the separately
+    # executable checker beside the primary in the restricted claim packet.
+    "program_content_order_attempt_cycle755_bounded_theorem_note_2026-07-28": [
+        "scripts/frontier_cycle755_program_order_independent_check_2026_07_28.py",
+    ],
     # Cycle 747's finite-state checker reconstructs the complete receiver and
     # admission tables without importing the primary or its repository
     # modules. Expose that independent executable in the restricted packet.

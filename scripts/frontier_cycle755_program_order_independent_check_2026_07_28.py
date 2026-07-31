@@ -28,7 +28,7 @@ PRIMARY_PATH = (
 )
 BLOCKLIST = (PRIMARY_PATH,)
 K_MODULE = "frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26"
-OUTCOME_LANGUAGE = "one choice among 81 counted classes"
+OUTCOME_LANGUAGE = "81 of 1,814,400 fixed-inventory arrangements"
 SCOPE_LANGUAGE = "b<=2"
 
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -37,9 +37,9 @@ import frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26 as K
 
 # These are inventory-type orders after the unique source anchor.  Type
 # numbers are assigned by first occurrence in K.interleaved_program(b)[1:].
-# The b=2 rows are the primary's five reported lawful-example ranks, encoded
+# The b=2 rows are the primary's five reported accepted-example ranks, encoded
 # without relying on its labels.  They are frozen independently of execution.
-FROZEN_LAWFUL_ORDERS = {
+FROZEN_ACCEPTED_ORDERS = {
     1: ((0, 1),),
     2: (
         (0, 1, 2, 3, 4, 3, 5, 6, 7, 8),
@@ -116,7 +116,7 @@ def assignment_node(nodes, name):
 
 
 def extract_primary():
-    """Extract Cycle 755's claims and oracle wiring from inert AST data."""
+    """Extract Cycle 755's claims and predicate wiring from inert AST data."""
     source = (ROOT / PRIMARY_PATH).read_text(encoding="utf-8")
     tree = ast.parse(source, filename=PRIMARY_PATH)
 
@@ -125,16 +125,16 @@ def extract_primary():
     if not isinstance(audit_paths, tuple):
         raise AssertionError("primary AUDIT_INPUT_PATHS is not a tuple literal")
 
-    candidate = function_node(tree, "candidate_oracle")
+    candidate = function_node(tree, "candidate_acceptance_predicate")
     fixtures = function_node(tree, "held_fixtures")
     hostile = function_node(tree, "r_before_q_orbit")
     anchor = function_node(tree, "anchor_certificate")
     search = function_node(tree, "search_census")
-    oracle_nodes = (candidate, fixtures, hostile)
-    oracle_calls = sorted(
+    predicate_nodes = (candidate, fixtures, hostile)
+    predicate_calls = sorted(
         {
             chain(node.func)
-            for function in oracle_nodes
+            for function in predicate_nodes
             for node in ast.walk(function)
             if isinstance(node, ast.Call)
         }
@@ -184,8 +184,8 @@ def extract_primary():
             continue
         census_literals[variable][key] = value
 
-    w2_value = assignment_node(build.body, "w2")
-    w2 = ast.literal_eval(w2_value)
+    scope_value = assignment_node(build.body, "scope_status")
+    scope_status = ast.literal_eval(scope_value)
     boundary_value = assignment_node(build.body, "boundary")
     if not isinstance(boundary_value, ast.Dict):
         raise AssertionError("primary boundary is not a dict literal")
@@ -255,14 +255,14 @@ def extract_primary():
         "documented_equivalences",
         "orientation_reversal",
     }
-    lawful_example_limit = None
+    accepted_example_limit = None
     for node in ast.walk(search):
         if not isinstance(node, ast.Return) or not isinstance(node.value, ast.Dict):
             continue
         for key, value in zip(node.value.keys, node.value.values):
             if (
                 isinstance(key, ast.Constant)
-                and key.value == "lawful_order_examples"
+                and key.value == "accepted_order_examples"
                 and isinstance(value, ast.Subscript)
                 and isinstance(value.value, ast.Name)
                 and value.value.id == "labelled_orders"
@@ -270,7 +270,7 @@ def extract_primary():
                 and isinstance(value.slice.upper, ast.Constant)
                 and type(value.slice.upper.value) is int
             ):
-                lawful_example_limit = value.slice.upper.value
+                accepted_example_limit = value.slice.upper.value
     return {
         "audit_input_paths": audit_paths,
         "audit_tuple_literal": isinstance(audit_value, ast.Tuple)
@@ -279,27 +279,30 @@ def extract_primary():
             and isinstance(element.value, str)
             for element in audit_value.elts
         ),
-        "oracle_calls": oracle_calls,
+        "predicate_calls": predicate_calls,
         "anchor_calls": anchor_calls,
         "battery_keys": battery_keys,
-        "missing_oracle_calls": sorted(required_calls - set(oracle_calls)),
+        "missing_predicate_calls": sorted(required_calls - set(predicate_calls)),
         "missing_anchor_calls": sorted(required_anchor_calls - set(anchor_calls)),
         "missing_battery_keys": sorted(required_battery - set(battery_keys)),
         "pruning_rules": pruning_rules,
         "census_literals": census_literals,
         "outcome_branches": outcome_branches,
-        "w2": w2,
+        "scope_status": scope_status,
         "boundary_keys": boundary_keys,
         "boundary_strings": boundary_strings,
         "missing_boundary_keys": sorted(
             expected_boundary_keys - set(boundary_keys)
         ),
-        "outcome_B_one_of_81_present": (
+        "outcome_B_81_of_1814400_present": (
             "B" in outcome_branches
-            and any("one_of_81" in value for value in w2.values())
-            and any("one of the 81" in value for value in boundary_strings)
+            and any("one_of_81" in value for value in scope_status.values())
+            and any(
+                "81 accepted arrangements of 1,814,400 candidates" in value
+                for value in boundary_strings
+            )
         ),
-        "lawful_example_limit": lawful_example_limit,
+        "accepted_example_limit": accepted_example_limit,
         "primary_sha256": sha256(source.encode()).hexdigest(),
         "blocklist_path": PRIMARY_PATH,
         "blocklist_module_absent": (
@@ -348,7 +351,7 @@ def hostile_r_before_q(data, program, token_start):
     return output, tuple(a), tuple(b)
 
 
-def lawful_oracle(bank_count, program, token_start, fixtures=None):
+def acceptance_predicate(bank_count, program, token_start, fixtures=None):
     """Replay every Cycle 719 certificate used by the primary candidate law."""
     fixtures = make_fixtures(bank_count) if fixtures is None else fixtures
     expected_inventory = Counter(
@@ -657,26 +660,26 @@ def enumerate_census(bank_count, deadline):
         recover(totals, target, ())
     recovered = tuple(sorted(set(recovered)))
 
-    oracle_rows = []
-    lawful = []
+    predicate_rows = []
+    accepted = []
     for order in recovered:
         program = (landed[0],) + tuple(rows[index] for index in order)
-        oracle = lawful_oracle(bank_count, program, 0, fixtures)
-        oracle_rows.append(
+        predicate = acceptance_predicate(bank_count, program, 0, fixtures)
+        predicate_rows.append(
             {
                 "order": order,
-                "pass": oracle["pass"],
-                "failed_certificates": oracle["failed_certificates"],
+                "pass": predicate["pass"],
+                "failed_certificates": predicate["failed_certificates"],
             }
         )
-        if oracle["pass"]:
-            lawful.append(order)
+        if predicate["pass"]:
+            accepted.append(order)
 
     anchored_candidates = factorial(sum(totals))
     for count in totals:
         anchored_candidates //= factorial(count)
     order_digest = sha256(
-        json.dumps(lawful, separators=(",", ":")).encode()
+        json.dumps(accepted, separators=(",", ":")).encode()
     ).hexdigest()
     return {
         "banks": bank_count,
@@ -694,13 +697,13 @@ def enumerate_census(bank_count, deadline):
         "terminal_represented_candidates": sum(layer.values()),
         "target_multiplicity": target_multiplicity,
         "recovered_orders": recovered,
-        "lawful_orders": tuple(lawful),
-        "lawful_classes": len(lawful),
-        "lawful_station_rotations": len(lawful) * len(landed),
-        "landed_lawful": landed_order in lawful,
-        "oracle_rows": tuple(oracle_rows),
+        "accepted_orders": tuple(accepted),
+        "accepted_classes": len(accepted),
+        "accepted_station_rotations": len(accepted) * len(landed),
+        "landed_accepted": landed_order in accepted,
+        "predicate_rows": tuple(predicate_rows),
         "order_sha256": order_digest,
-        "lawful_order_sample": tuple(lawful[:5]),
+        "accepted_order_sample": tuple(accepted[:5]),
         "layer_rows": tuple(layer_rows),
         "merge_examples": tuple(merge_examples),
         "exact_merge_savings": exact_merge_savings,
@@ -722,22 +725,22 @@ def rotate_program(program, token_start, shift):
     return tuple(rotated), (token_start + shift) % count
 
 
-def adjacent_swap_from_lawful(order, lawful_orders):
+def adjacent_swap_from_accepted(order, accepted_orders):
     for index in range(len(order) - 1):
         candidate = list(order)
         candidate[index], candidate[index + 1] = (
             candidate[index + 1],
             candidate[index],
         )
-        if tuple(candidate) in lawful_orders:
+        if tuple(candidate) in accepted_orders:
             return True
     return False
 
 
-def oracle_recount(censuses, primary):
+def predicate_recount(censuses, primary):
     held = {}
     landed = {}
-    frozen_lawful = []
+    frozen_accepted = []
     frozen_rejected = []
     for bank_count in (1, 2):
         held_row = K.held_certificate(bank_count)
@@ -747,32 +750,32 @@ def oracle_recount(censuses, primary):
             if key not in ("state", "chain")
         }
         census = censuses[bank_count]
-        landed[bank_count] = lawful_oracle(
+        landed[bank_count] = acceptance_predicate(
             bank_count,
             census["landed"],
             0,
             census["fixtures"],
         )
-        for order in FROZEN_LAWFUL_ORDERS[bank_count]:
-            result = lawful_oracle(
+        for order in FROZEN_ACCEPTED_ORDERS[bank_count]:
+            result = acceptance_predicate(
                 bank_count,
                 program_from_order(census, order),
                 0,
                 census["fixtures"],
             )
-            frozen_lawful.append(
+            frozen_accepted.append(
                 {
                     "banks": bank_count,
                     "order": order,
-                    "member_of_recounted_lawful_set": (
-                        order in census["lawful_orders"]
+                    "member_of_recounted_accepted_set": (
+                        order in census["accepted_orders"]
                     ),
                     "pass": result["pass"],
                     "failed_certificates": result["failed_certificates"],
                 }
             )
         for order in FROZEN_REJECTED_ORDERS[bank_count]:
-            result = lawful_oracle(
+            result = acceptance_predicate(
                 bank_count,
                 program_from_order(census, order),
                 0,
@@ -782,12 +785,12 @@ def oracle_recount(censuses, primary):
                 {
                     "banks": bank_count,
                     "order": order,
-                    "outside_recounted_lawful_set": (
-                        order not in census["lawful_orders"]
+                    "outside_recounted_accepted_set": (
+                        order not in census["accepted_orders"]
                     ),
-                    "adjacent_swap_from_lawful_boundary": (
-                        adjacent_swap_from_lawful(
-                            order, census["lawful_orders"]
+                    "adjacent_swap_from_accepted_boundary": (
+                        adjacent_swap_from_accepted(
+                            order, census["accepted_orders"]
                         )
                     ),
                     "pass": result["pass"],
@@ -818,9 +821,9 @@ def oracle_recount(censuses, primary):
         )
     )
     frozen_sample_matches = all(
-        FROZEN_LAWFUL_ORDERS[bank_count]
-        == censuses[bank_count]["lawful_orders"][
-            : primary["lawful_example_limit"]
+        FROZEN_ACCEPTED_ORDERS[bank_count]
+        == censuses[bank_count]["accepted_orders"][
+            : primary["accepted_example_limit"]
         ]
         for bank_count in (1, 2)
     )
@@ -828,8 +831,8 @@ def oracle_recount(censuses, primary):
         "K_held_certificates": held,
         "K_order_and_domain_controls": controls,
         "landed": landed,
-        "frozen_lawful": frozen_lawful,
-        "frozen_lawful_matches_primary_example_ranks": (
+        "frozen_accepted": frozen_accepted,
+        "frozen_accepted_matches_primary_example_ranks": (
             frozen_sample_matches
         ),
         "frozen_rejected": frozen_rejected,
@@ -838,14 +841,14 @@ def oracle_recount(censuses, primary):
             and all(controls.values())
             and all(row["pass"] for row in landed.values())
             and all(
-                row["pass"] and row["member_of_recounted_lawful_set"]
-                for row in frozen_lawful
+                row["pass"] and row["member_of_recounted_accepted_set"]
+                for row in frozen_accepted
             )
             and frozen_sample_matches
             and all(
                 not row["pass"]
-                and row["outside_recounted_lawful_set"]
-                and row["adjacent_swap_from_lawful_boundary"]
+                and row["outside_recounted_accepted_set"]
+                and row["adjacent_swap_from_accepted_boundary"]
                 and bool(row["recorded_failed_certificates"])
                 and row["certificate_record_matches"]
                 for row in frozen_rejected
@@ -891,7 +894,7 @@ def pruning_validation(censuses, primary):
     full_rows = tuple(b1["landed"])
     full_orders = tuple(unique_sequences((1,) * len(full_rows)))
     canonical = set()
-    rotation_oracle_failures = 0
+    rotation_predicate_failures = 0
     for permutation in full_orders:
         program = tuple(full_rows[index] for index in permutation)
         source_station = next(
@@ -901,13 +904,13 @@ def pruning_validation(censuses, primary):
             program, source_station, -source_station
         )
         canonical.add(tuple(role_key(row) for row in anchored))
-        base = lawful_oracle(1, anchored, token, b1["fixtures"])["pass"]
+        base = acceptance_predicate(1, anchored, token, b1["fixtures"])["pass"]
         for shift in range(len(program)):
             rotated, shifted_token = rotate_program(anchored, token, shift)
-            observed = lawful_oracle(
+            observed = acceptance_predicate(
                 1, rotated, shifted_token, b1["fixtures"]
             )["pass"]
-            rotation_oracle_failures += observed != base
+            rotation_predicate_failures += observed != base
 
     duplicates = [
         (left, right)
@@ -922,12 +925,12 @@ def pruning_validation(censuses, primary):
         for left, right in duplicates
     )
 
-    b1_naive_lawful = []
+    b1_naive_accepted = []
     for order in unique_sequences(b1["type_totals"]):
-        if lawful_oracle(
+        if acceptance_predicate(
             1, program_from_order(b1, order), 0, b1["fixtures"]
         )["pass"]:
-            b1_naive_lawful.append(order)
+            b1_naive_accepted.append(order)
 
     merge_windows = {
         bank_count: validate_merge_windows(censuses[bank_count])
@@ -947,7 +950,7 @@ def pruning_validation(censuses, primary):
             "pass": (
                 len(full_orders) == 6
                 and len(canonical) == 2
-                and rotation_oracle_failures == 0
+                and rotation_predicate_failures == 0
                 and all(
                     row["station_labelled_candidates"]
                     == row["stations"] * row["anchored_candidates"]
@@ -956,7 +959,7 @@ def pruning_validation(censuses, primary):
             ),
             "full_b1_programs": len(full_orders),
             "full_b1_anchored_classes": len(canonical),
-            "rotation_oracle_failures": rotation_oracle_failures,
+            "rotation_predicate_failures": rotation_predicate_failures,
             "justification": (
                 "The source is unique, so every oriented-ring station "
                 "translation orbit has one source-at-zero representative."
@@ -995,13 +998,14 @@ def pruning_validation(censuses, primary):
             "justification": (
                 "K macro action is deterministic; byte-identical tuples of "
                 "all held states with identical used counts have identical "
-                "future actions. Exhaustive suffix windows recheck this."
+                "future actions. Twelve sampled merge nodes are rechecked "
+                "over all 252 compatible suffixes in those samples."
             ),
         },
         "complete_only_rejection": {
             "pass": (
                 complete_only
-                and tuple(b1_naive_lawful) == b1["lawful_orders"]
+                and tuple(b1_naive_accepted) == b1["accepted_orders"]
                 and all(
                     census["terminal_represented_candidates"]
                     == census["anchored_candidates"]
@@ -1009,7 +1013,7 @@ def pruning_validation(censuses, primary):
                 )
             ),
             "all_layer_path_counts_exact": complete_only,
-            "b1_naive_lawful": tuple(b1_naive_lawful),
+            "b1_naive_accepted": tuple(b1_naive_accepted),
             "justification": (
                 "Every partial multiset path is represented at every depth; "
                 "only complete signatures unequal to K's held target fail."
@@ -1024,13 +1028,13 @@ def pruning_validation(censuses, primary):
     }
 
 
-def passive_closure_recount(censuses):
+def translation_equivariance_recount(censuses):
     tested = failures = roundtrip_failures = 0
     by_bank = {}
     for bank_count in (1, 2):
         census = censuses[bank_count]
         local_tested = local_failures = 0
-        for order in census["lawful_orders"]:
+        for order in census["accepted_orders"]:
             program = program_from_order(census, order)
             for shift in range(len(program)):
                 rotated, token = rotate_program(program, 0, shift)
@@ -1040,7 +1044,7 @@ def passive_closure_recount(censuses):
                 roundtrip_failures += (
                     restored != program or restored_token != 0
                 )
-                result = lawful_oracle(
+                result = acceptance_predicate(
                     bank_count,
                     rotated,
                     token,
@@ -1082,11 +1086,26 @@ def public_census(census):
             "source_signature",
             "target_signature",
             "recovered_orders",
-            "lawful_orders",
-            "oracle_rows",
+            "accepted_orders",
+            "predicate_rows",
             "merge_examples",
         }
     }
+
+
+def without_runtime_fields(value):
+    """Remove all timing observations from a report-digest payload."""
+    if isinstance(value, dict):
+        return {
+            key: without_runtime_fields(item)
+            for key, item in value.items()
+            if key != "runtime_sec"
+        }
+    if isinstance(value, list):
+        return [without_runtime_fields(item) for item in value]
+    if isinstance(value, tuple):
+        return tuple(without_runtime_fields(item) for item in value)
+    return value
 
 
 def build_report():
@@ -1097,9 +1116,9 @@ def build_report():
         bank_count: enumerate_census(bank_count, deadline)
         for bank_count in (1, 2)
     }
-    oracle = oracle_recount(censuses, primary)
+    predicate = predicate_recount(censuses, primary)
     pruning = pruning_validation(censuses, primary)
-    passive = passive_closure_recount(censuses)
+    passive = translation_equivariance_recount(censuses)
 
     b1 = censuses[1]
     b2 = censuses[2]
@@ -1107,37 +1126,37 @@ def build_report():
     extraction_pass = (
         primary["audit_tuple_literal"]
         and primary["audit_input_paths"] == AUDIT_INPUT_PATHS
-        and not primary["missing_oracle_calls"]
+        and not primary["missing_predicate_calls"]
         and not primary["missing_anchor_calls"]
         and not primary["missing_battery_keys"]
         and len(primary["pruning_rules"]) == 4
         and primary_census["b1"].get("anchored_candidate_classes") == 2
-        and primary_census["b1"].get("lawful_translation_classes") == 1
+        and primary_census["b1"].get("accepted_arrangement_classes") == 1
         and primary_census["b2"].get("anchored_candidate_classes")
         == 1_814_400
         and primary_census["b2"].get("exact_target_classes") == 81
-        and primary_census["b2"].get("lawful_translation_classes") == 81
+        and primary_census["b2"].get("accepted_arrangement_classes") == 81
         and primary_census["passive"].get("labelled_rotations_tested") == 894
         and not primary["missing_boundary_keys"]
-        and primary["outcome_B_one_of_81_present"]
-        and primary["lawful_example_limit"] == 5
+        and primary["outcome_B_81_of_1814400_present"]
+        and primary["accepted_example_limit"] == 5
     )
     census_pass = (
         b1["anchored_candidates"] == 2
         and b1["terminal_represented_candidates"] == 2
         and b1["target_multiplicity"] == 1
-        and b1["lawful_classes"] == 1
-        and b1["landed_lawful"]
+        and b1["accepted_classes"] == 1
+        and b1["landed_accepted"]
         and b2["anchored_candidates"] == 1_814_400
         and b2["terminal_represented_candidates"] == 1_814_400
         and b2["target_multiplicity"] == 81
-        and b2["lawful_classes"] == 81
-        and b2["landed_lawful"]
+        and b2["accepted_classes"] == 81
+        and b2["landed_accepted"]
     )
     boundary_statement = (
-        "Within b<=2, the Cycle 719 held-domain lawfulness battery leaves "
-        "one choice among 81 counted classes at b=2 (Outcome B); it does "
-        "not select one class and makes no claim beyond b<=2."
+        "Within b<=2, the supplied Cycle 719 held-fixture predicate accepts "
+        "81 of 1,814,400 fixed-inventory arrangements at b=2 (Outcome B); "
+        "it does not select one arrangement and makes no claim beyond b<=2."
     )
     discipline = {
         "blocklist": BLOCKLIST,
@@ -1159,10 +1178,10 @@ def build_report():
     runtime = time.perf_counter() - started
     checks = {
         "extraction": extraction_pass,
-        "oracle_recount": oracle["pass"],
+        "predicate_recount": predicate["pass"],
         "census_recount_full_b1_b2": census_pass,
         "pruning_validation": pruning["pass"],
-        "passive_closure_894": passive["pass"],
+        "translation_equivariance_894": passive["pass"],
         "discipline": (
             discipline["blocklist_clean"]
             and discipline["language_verbatim"]
@@ -1177,18 +1196,17 @@ def build_report():
         "checks": checks,
         "pass": all(checks.values()),
         "extraction": primary,
-        "oracle_recount": oracle,
+        "predicate_recount": predicate,
         "census_recount": {
             bank_count: public_census(census)
             for bank_count, census in censuses.items()
         },
         "pruning_validation": pruning,
-        "passive_closure_recount": passive,
+        "translation_equivariance_recount": passive,
         "discipline": discipline,
         "runtime_sec": round(runtime, 6),
     }
-    digestable = dict(report)
-    digestable.pop("runtime_sec")
+    digestable = without_runtime_fields(report)
     report["report_sha256"] = sha256(
         json.dumps(digestable, sort_keys=True, default=str).encode()
     ).hexdigest()

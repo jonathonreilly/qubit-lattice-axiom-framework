@@ -87,8 +87,8 @@ def r_before_q_orbit(data, program, token_start):
     return output, tuple(a), tuple(b)
 
 
-def candidate_oracle(bank_count, program, token_start, fixtures=None):
-    """A candidate is lawful iff this Cycle-719 certificate battery accepts."""
+def candidate_acceptance_predicate(bank_count, program, token_start, fixtures=None):
+    """Evaluate the supplied Cycle-719 predicate on one candidate arrangement."""
     fixtures = held_fixtures(bank_count) if fixtures is None else fixtures
     landed_inventory = Counter(
         role_key(row) for row in K.interleaved_program(bank_count)
@@ -140,8 +140,6 @@ def candidate_oracle(bank_count, program, token_start, fixtures=None):
             inverse_a != expected_token or any(inverse_b)
         )
 
-        banks, links = K.M.unpack_state(after, bank_count)
-        decoded, _order = K.B.decode_local_graph(banks, links)
         status = coarse.admit(
             tick_id=event,
             orientation=1 if direction == (1, 0) else -1,
@@ -151,29 +149,38 @@ def candidate_oracle(bank_count, program, token_start, fixtures=None):
             admissibility=1,
             law_domain=1,
         )
-        failures["decoded_chain"] += (
-            status != "admitted"
-            or K.B.cell_rows(decoded) != K.B.cell_rows(coarse)
-        )
-        failures["postimage"] += any(
-            (
-                after[K.R3.X.SOURCE_POINTER],
-                any(
-                    bank[wire]
-                    for bank in banks
-                    for wire in (
-                        K.A.POINTER,
-                        K.A.U_TO_V,
-                        K.A.V_TO_U,
-                        K.A.DIRECTION_OK,
-                        *K.A.FRESH,
-                        *K.A.ZERO_WORK,
-                        K.A.TOKEN_OK,
-                    )
-                ),
-                any(any(link) for link in links),
+        try:
+            banks, links = K.M.unpack_state(after, bank_count)
+            decoded, _order = K.B.decode_local_graph(banks, links)
+            failures["decoded_chain"] += (
+                status != "admitted"
+                or K.B.cell_rows(decoded) != K.B.cell_rows(coarse)
             )
-        )
+            failures["postimage"] += any(
+                (
+                    after[K.R3.X.SOURCE_POINTER],
+                    any(
+                        bank[wire]
+                        for bank in banks
+                        for wire in (
+                            K.A.POINTER,
+                            K.A.U_TO_V,
+                            K.A.V_TO_U,
+                            K.A.DIRECTION_OK,
+                            *K.A.FRESH,
+                            *K.A.ZERO_WORK,
+                            K.A.TOKEN_OK,
+                        )
+                    ),
+                    any(any(link) for link in links),
+                )
+            )
+        except (AssertionError, IndexError, KeyError, TypeError, ValueError) as error:
+            failures["decoded_chain"] += 1
+            failures["postimage"] += 1
+            failures[
+                "malformed_postimage_" + type(error).__name__
+            ] += 1
 
         hostile, hostile_a, hostile_b = r_before_q_orbit(
             before, program, token_start
@@ -351,16 +358,16 @@ def search_census(bank_count):
     recovered_orders = sorted(set(recovered_orders))
 
     accepted_orders = []
-    oracle_failure_rows = []
+    predicate_failure_rows = []
     for order in recovered_orders:
         program = (landed[0],) + tuple(items[item] for item in order)
-        result = candidate_oracle(
+        result = candidate_acceptance_predicate(
             bank_count, program, token_start=0, fixtures=fixtures
         )
         if result["pass"]:
             accepted_orders.append(order)
         else:
-            oracle_failure_rows.append(
+            predicate_failure_rows.append(
                 {"order": order, "battery": result["battery"]}
             )
 
@@ -387,12 +394,12 @@ def search_census(bank_count):
         "digest_collision_failures": digest_collision_failures,
         "exact_target_classes": exact_target_count,
         "recovered_target_classes": len(recovered_orders),
-        "lawful_translation_classes": len(accepted_orders),
-        "lawful_labelled_programs": len(accepted_orders) * len(landed),
-        "landed_program_lawful": tuple(range(len(items))) in accepted_orders,
-        "lawful_order_sha256": order_sha256,
-        "lawful_order_examples": labelled_orders[:5],
-        "oracle_failure_rows": oracle_failure_rows,
+        "accepted_arrangement_classes": len(accepted_orders),
+        "accepted_labelled_programs": len(accepted_orders) * len(landed),
+        "landed_program_accepted": tuple(range(len(items))) in accepted_orders,
+        "accepted_order_sha256": order_sha256,
+        "accepted_order_examples": labelled_orders[:5],
+        "predicate_failure_rows": predicate_failure_rows,
         "layer_rows": tuple(layer_rows),
         "runtime_sec": round(time.perf_counter() - started, 6),
         "_accepted_orders": tuple(accepted_orders),
@@ -411,7 +418,7 @@ def rotate_program(program, token_start, shift):
     return tuple(rotated), (token_start + shift) % stations
 
 
-def passive_closure_certificate(censuses):
+def translation_equivariance_certificate(censuses):
     tested = failures = roundtrip_failures = 0
     by_bank = {}
     for bank_count, census in sorted(censuses.items()):
@@ -429,7 +436,7 @@ def passive_closure_certificate(censuses):
                 roundtrip_failures += (
                     restored != program or restored_start != 0
                 )
-                result = candidate_oracle(
+                result = candidate_acceptance_predicate(
                     bank_count,
                     rotated,
                     token_start=token_start,
@@ -463,12 +470,12 @@ def attribute_chain(node):
     return ".".join(reversed(parts))
 
 
-def oracle_ast_certificate():
+def predicate_ast_certificate():
     source = "\n".join(
         (
             inspect.getsource(held_fixtures),
             inspect.getsource(r_before_q_orbit),
-            inspect.getsource(candidate_oracle),
+            inspect.getsource(candidate_acceptance_predicate),
         )
     )
     tree = ast.parse(source)
@@ -601,7 +608,7 @@ def no_new_supplier_certificate():
 
 def anchor_certificate():
     held = {}
-    landed_oracles = {}
+    landed_predicates = {}
     for bank_count in (1, 2):
         row = K.held_certificate(bank_count)
         held[bank_count] = {
@@ -609,15 +616,22 @@ def anchor_certificate():
             for key, value in row.items()
             if key not in ("state", "chain")
         }
-        landed_oracles[bank_count] = candidate_oracle(
+        landed_predicates[bank_count] = candidate_acceptance_predicate(
             bank_count,
             K.interleaved_program(bank_count),
             token_start=0,
         )
     controls = K.order_and_domain_controls()
+    b1_program = K.interleaved_program(1)
+    rejected_b1 = candidate_acceptance_predicate(
+        1,
+        (b1_program[0], b1_program[2], b1_program[1]),
+        token_start=0,
+    )
     return {
         "K_held": held,
-        "landed_candidate_oracles": landed_oracles,
+        "landed_candidate_acceptance_predicates": landed_predicates,
+        "rejected_b1_candidate": rejected_b1,
         "K_order_and_domain_controls": controls,
     }
 
@@ -628,6 +642,21 @@ def public_census(census):
         for key, value in census.items()
         if not key.startswith("_")
     }
+
+
+def without_runtime_fields(value):
+    """Remove all timing observations from a report-digest payload."""
+    if isinstance(value, dict):
+        return {
+            key: without_runtime_fields(item)
+            for key, item in value.items()
+            if key != "runtime_sec"
+        }
+    if isinstance(value, list):
+        return [without_runtime_fields(item) for item in value]
+    if isinstance(value, tuple):
+        return tuple(without_runtime_fields(item) for item in value)
+    return value
 
 
 def emit_check(label, passed, detail):
@@ -642,19 +671,19 @@ def emit_check(label, passed, detail):
 def build_report():
     started = time.perf_counter()
     anchors = anchor_certificate()
-    oracle_ast = oracle_ast_certificate()
+    predicate_ast = predicate_ast_certificate()
     supplier = no_new_supplier_certificate()
     censuses = {bank_count: search_census(bank_count) for bank_count in (1, 2)}
-    passive = passive_closure_certificate(censuses)
+    passive = translation_equivariance_certificate(censuses)
 
     b1 = censuses[1]
     b2 = censuses[2]
     if (
-        b1["lawful_translation_classes"] == 1
-        and b2["lawful_translation_classes"] == 1
+        b1["accepted_arrangement_classes"] == 1
+        and b2["accepted_arrangement_classes"] == 1
     ):
         outcome = "A"
-    elif 1 < b2["lawful_translation_classes"] <= 1000:
+    elif 1 < b2["accepted_arrangement_classes"] <= 1000:
         outcome = "B"
     else:
         outcome = "C"
@@ -675,14 +704,25 @@ def build_report():
             held_anchor_pass
             and all(
                 row["pass"]
-                for row in anchors["landed_candidate_oracles"].values()
+                for row in anchors["landed_candidate_acceptance_predicates"].values()
             )
             and all(anchors["K_order_and_domain_controls"].values())
         ),
-        "B_constraint_oracle_AST": (
-            not oracle_ast["missing_calls"]
-            and not oracle_ast["missing_attributes"]
-            and not oracle_ast["missing_battery_keys"]
+        "A2_rejected_candidate_is_total": (
+            not anchors["rejected_b1_candidate"]["pass"]
+            and anchors["rejected_b1_candidate"]["failures"].get(
+                "decoded_chain", 0
+            )
+            > 0
+            and anchors["rejected_b1_candidate"]["failures"].get(
+                "postimage", 0
+            )
+            > 0
+        ),
+        "B_acceptance_predicate_AST": (
+            not predicate_ast["missing_calls"]
+            and not predicate_ast["missing_attributes"]
+            and not predicate_ast["missing_battery_keys"]
         ),
         "C1_ring_translation_gauge_safe": all(
             row["labelled_candidate_programs"]
@@ -706,24 +746,24 @@ def build_report():
             b1["stations"] == 3
             and b1["anchored_candidate_classes"] == 2
             and b1["labelled_candidate_programs"] == 6
-            and b1["lawful_translation_classes"] == 1
-            and b1["lawful_labelled_programs"] == 3
-            and not b1["oracle_failure_rows"]
+            and b1["accepted_arrangement_classes"] == 1
+            and b1["accepted_labelled_programs"] == 3
+            and not b1["predicate_failure_rows"]
         ),
         "D2_b2_census_frozen": (
             b2["stations"] == 11
             and b2["anchored_candidate_classes"] == 1_814_400
             and b2["labelled_candidate_programs"] == 19_958_400
             and b2["exact_target_classes"] == 81
-            and b2["lawful_translation_classes"] == 81
-            and b2["lawful_labelled_programs"] == 891
-            and not b2["oracle_failure_rows"]
+            and b2["accepted_arrangement_classes"] == 81
+            and b2["accepted_labelled_programs"] == 891
+            and not b2["predicate_failure_rows"]
         ),
-        "D3_landed_program_in_lawful_set": all(
-            row["landed_program_lawful"] for row in censuses.values()
+        "D3_landed_program_in_accepted_set": all(
+            row["landed_program_accepted"] for row in censuses.values()
         ),
         "D4_outcome_B": outcome == "B",
-        "E_passive_translation_closure": (
+        "E_translation_equivariance": (
             passive["labelled_rotations_tested"] == 3 + 891
             and passive["closure_failures"] == 0
             and passive["roundtrip_failures"] == 0
@@ -736,10 +776,10 @@ def build_report():
             and supplier["new_scientific_supplier_count"] == 0
             and supplier["optional_M740"] == "absent_on_branch_not_imported"
         ),
-        "G_honest_boundary_and_W2_status": (
+        "G_honest_conditional_scope": (
             outcome == "B"
-            and b1["lawful_translation_classes"] == 1
-            and b2["lawful_translation_classes"] == 81
+            and b1["accepted_arrangement_classes"] == 1
+            and b2["accepted_arrangement_classes"] == 81
         ),
     }
     runtime = time.perf_counter() - started
@@ -775,43 +815,39 @@ def build_report():
             "rule": "reject only complete states unequal to K's held targets",
             "safety": (
                 "there are zero heuristic or partial-bit prefix rejections; "
-                "all recovered target paths are replayed through the oracle"
+                "all recovered target paths are replayed through the predicate"
             ),
         },
     )
-    w2 = {
-        "station_kind_arithmetic": "inherited_derived_input_not_reopened",
-        "program_content": "Outcome_B_one_of_81_b2_translation_classes",
-        "program_order": "Outcome_B_one_of_81_b2_translation_classes",
-        "passive_covariance": "derived_closed_under_all_894_tested_rotations",
-        "minimal_remainder": (
-            "W2 still needs one extra selector on the 81 b=2 classes; "
-            "a prefix-local causal-precondition or off-held-domain "
-            "correctness principle is not present in K's held battery."
-        ),
+    scope_status = {
+        "constructor_inventory": "supplied_not_derived",
+        "arrangement_census": "one_of_81_accepted_b2_arrangements",
+        "translation_equivariance": "894_exact_simultaneous_relabelings",
+        "broader_residual": "not_retired_by_this_fixed_API_census",
     }
     boundary = {
         "outcome": outcome,
         "derived": (
-            "b=1 content/order is unique modulo oriented-ring translation "
-            "and identical-copy exchange; b=2 has exactly 81 such classes; "
-            "the lawful set is passively translation-closed"
+            "b=1 has one accepted arrangement of two candidates; b=2 has "
+            "81 accepted arrangements of 1,814,400 candidates; simultaneous "
+            "oriented-ring station/token relabeling preserves acceptance"
         ),
         "supplied": (
             "K's macro inventory, held genesis/event fixtures, source/token "
-            "boundary, oriented ring, and Q-before-R controller law"
+            "boundary, oriented ring, Q-before-R order, targets, decoder, "
+            "and all-one acceptance inputs"
         ),
         "not_derived": (
             "a physical or logical principle selecting one of the 81 b=2 "
-            "classes, active covariance, autonomous genesis, or a law "
-            "outside K's held certificate domain"
+            "arrangements, macro content, active covariance, autonomous "
+            "genesis, framework Admissibility, or framework Law"
         ),
         "documented_equivalences": (
             "simultaneous oriented-ring station/token translations and "
             "exchange of the two literally identical relay-swap copies only"
         ),
         "orientation_reversal": (
-            "not quotiented: K supplies an oriented ring and Q-before-R law"
+            "not quotiented: K supplies an oriented ring and Q-before-R order"
         ),
     }
     report = {
@@ -821,24 +857,20 @@ def build_report():
         "checks": checks,
         "pass": all(checks.values()),
         "anchors": anchors,
-        "constraint_oracle_AST": oracle_ast,
+        "acceptance_predicate_AST": predicate_ast,
         "pruning_rules": pruning_rules,
         "censuses": {
             bank_count: public_census(row)
             for bank_count, row in censuses.items()
         },
-        "passive_closure": passive,
+        "translation_equivariance": passive,
         "no_new_supplier": supplier,
         "outcome": outcome,
-        "w2_components": w2,
+        "scope_status": scope_status,
         "boundary": boundary,
         "runtime_sec": round(runtime, 6),
     }
-    digest_payload = {
-        key: value
-        for key, value in report.items()
-        if key not in ("runtime_sec",)
-    }
+    digest_payload = without_runtime_fields(report)
     report["report_sha256"] = sha256(
         json.dumps(digest_payload, sort_keys=True, default=str).encode()
     ).hexdigest()

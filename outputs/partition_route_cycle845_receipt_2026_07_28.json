@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR23-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle845_partition_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle845_partition_route_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 11
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 845,
+  "files": {
+    "docs/PARTITION_ROUTE_CYCLE845_BOUNDED_THEOREM_NOTE_2026-07-28.md": "887ab7276e413886b589093423a43665a67189305905b9184244c204f0dde017",
+    "logs/runner-cache/frontier_cycle845_partition_independent_check_2026_07_28.txt": "c7c256e02c312c4b855b6277447b5db9616f697cb8aaed93c8a2014ef8fd9d04",
+    "logs/runner-cache/frontier_cycle845_partition_route_2026_07_28.txt": "5aede764d8485f1b59dbfad57831ffe7048ebe24d0c556f37bf1ee5a1d62375a",
+    "scripts/frontier_cycle845_partition_independent_check_2026_07_28.py": "3f01894be8f550ff378ed9ea614b8d99c3ebdf23ecd81757a27bd8ab19305820",
+    "scripts/frontier_cycle845_partition_route_2026_07_28.py": "b97e227375a8cc14580d8f413897df2209e9e872b1a46ec59f9a2e61af593ca8"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "PARTITION_LAW_FOUND: the normalized partition braid IDENTICAL across all three cohorts, depths 0..64",
+    "checker: REAL_PARTITION_IDENTITY_NOT_MANUFACTURED (normalization erases only the event tag + time alignment; synthetic mutations stay distinct; raw cohorts agree after declared relabeling)",
+    "falsified honestly: pre-union shape NOT universal (15/3/9); same-tick register law fails (1321/2773) \u2014 the law is PARTITION-valued",
+    "the merged why now has its target object: any local causal theorem must produce THIS braid; the trio forecast gains a braid clause"
+  ]
+}

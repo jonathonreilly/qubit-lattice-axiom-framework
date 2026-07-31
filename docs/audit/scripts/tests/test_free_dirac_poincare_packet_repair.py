@@ -20,6 +20,7 @@ AUTHORITY = (
     "free_staggered_pole_residue_dirac_carrier_car_relabeling_"
     "bounded_theorem_note_2026-07-17"
 )
+PROMPT_TEMPLATE = REPO_ROOT / "docs" / "audit" / "AUDIT_AGENT_PROMPT_TEMPLATE.md"
 
 
 def ledger_row(claim_id: str) -> dict:
@@ -56,7 +57,8 @@ class FreeDiracPoincarePacketRepairTest(unittest.TestCase):
         )
 
     def test_restricted_prompt_contains_complete_real_authority(self) -> None:
-        target_row = ledger_row(TARGET)
+        ledger_rows = audit_runner.load_ledger_rows()
+        target_row = ledger_rows[TARGET]
         authority_row = ledger_row(AUTHORITY)
         authority_note_path = authority_row["note_path"]
         authority_body = (REPO_ROOT / authority_note_path).read_text(
@@ -66,15 +68,22 @@ class FreeDiracPoincarePacketRepairTest(unittest.TestCase):
 
         prompt = audit_runner.render_prompt(
             target_row,
-            {TARGET: target_row, AUTHORITY: authority_row},
-            "{{FOREACH cited_authority IN CITED_AUTHORITIES}}{{ENDFOREACH}}",
-            runner_timeout_sec=1,
-            skip_runner_stdout=True,
+            ledger_rows,
+            PROMPT_TEMPLATE.read_text(encoding="utf-8"),
+            runner_timeout_sec=120,
+            use_cache=True,
             evidence_manifest_out=manifest,
+            audit_invocation_id="free-dirac-packet-regression",
+        )
+        fitted_prompt, transport_bound = audit_runner.fit_prompt_to_transport_limit(
+            prompt,
+            manifest,
+            TARGET,
         )
 
         self.assertEqual(manifest[authority_note_path]["text"], authority_body)
-        self.assertIn(authority_body, prompt)
+        self.assertIsNone(transport_bound)
+        self.assertEqual(fitted_prompt.count(authority_body), 1)
         self.assertNotIn("packet-clipped", manifest[authority_note_path]["text"])
         clipped_load_bearing = {
             path

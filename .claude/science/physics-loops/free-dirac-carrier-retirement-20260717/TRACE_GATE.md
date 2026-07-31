@@ -17,7 +17,9 @@ edge to 22,000 characters. The real-prompt regression proves that the manifest
 then contains the complete authority text and all requested Sections 2–5,
 while an unrelated claim citing the same authority remains capped at 10,000.
 The dated packet-readiness record on the target note changes that row's own
-source hash, which is the ordinary queue path for a terminal conditional row.
+source hash and supplies an explicit re-audit trigger. On frozen current main,
+the `audited_conditional` row is already non-terminal and audit-pending, and
+its moved policy fingerprint already leaves conditional dispatch open.
 
 This closes the identified transport obstruction only. It does not repeat the
 independent formula audit, change the current `audited_conditional` status, or

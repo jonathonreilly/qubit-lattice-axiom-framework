@@ -31,8 +31,9 @@ all generated outputs stay off the science branch.
 1. add one exact target-authority entry to `AUTHORITY_PER_NOTE_OVERRIDES`;
 2. add a focused regression covering exact scoping and the real rendered
    packet/manifest;
-3. add a dated packet-readiness record to the stuck target row so its own note
-   hash makes the row requeue-able without authoring a verdict;
+3. add a dated packet-readiness record as an explicit re-audit trigger whose
+   source-hash change takes the supported reset path without authoring a
+   verdict;
 4. update the durable loop state and trace certificate;
 5. run focused tests, syntax checks, vocabulary lint, and repo-native review;
 6. leave audit ledger, queue, prompt, and publication outputs unchanged.

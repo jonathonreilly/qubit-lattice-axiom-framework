@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 851: bounded local-invariant exclusion hunt for S0'.
+"""Cycle 851 v2: conservation-law exclusion hunt for S0'.
 
 S0' is the weight-47 Cycle-833/843 companion, not the distinct weight-59
 pulse coincidence: S0' := S1 XOR bank0.HEAD[1], with S1 the event-1 funnel.
@@ -409,6 +409,7 @@ int main(int argc, char **argv) {
     uint64_t columns[STATE_BITS]; memcpy(columns, initial, sizeof(columns));
     uint32_t best = UINT32_MAX, best_time = 0, best_lane = 0;
     uint64_t hits = 0, profile = UINT64_C(1469598103934665603);
+    uint64_t transition_count = 0, affine_violations[4] = {0, 0, 0, 0};
     for (int time = 0; time <= MAX_STEPS; ++time) {
         uint64_t active = active_at(time), counts[COUNTER_BITS] = {0};
         for (int wire = 0; wire < STATE_BITS; ++wire) {
@@ -431,11 +432,22 @@ int main(int argc, char **argv) {
         }
         if (time == 1) dump_lane(argv[7], columns, 0);
         if (time == MAX_STEPS) break;
+        uint64_t transition_active = active_at(time + 1);
+        uint64_t affine_before[4];
+        for (int invariant = 0; invariant < 4; ++invariant)
+            affine_before[invariant] = columns[110] ^ columns[111 + invariant];
         for (size_t i = 0; i < sched_n; ++i) {
             MaskedGate g = sched[i];
             if (g.kind == 0) columns[g.a] ^= g.mask;
             else if (g.kind == 1) columns[g.b] ^= columns[g.a] & g.mask;
             else columns[g.c] ^= columns[g.a] & columns[g.b] & g.mask;
+        }
+        transition_count += (uint64_t)__builtin_popcountll(transition_active);
+        for (int invariant = 0; invariant < 4; ++invariant) {
+            uint64_t affine_after = columns[110] ^ columns[111 + invariant];
+            affine_violations[invariant] += (uint64_t)__builtin_popcountll(
+                (affine_before[invariant] ^ affine_after) & transition_active
+            );
         }
     }
     /* Replay to the first lexicographic minimum so its full state is dumped. */
@@ -449,7 +461,7 @@ int main(int argc, char **argv) {
         }
     dump_lane(argv[6], columns, (int)best_lane);
     FILE *summary = fopen(argv[8], "w"); if (!summary) die(argv[8]);
-    fprintf(summary, "min_distance=%u\nbest_time=%u\nbest_lane=%u\ntarget_hits=%" PRIu64 "\nvisited_states=891513\nword_rows=%zu\nschedule_rows=%zu\ndistance_profile_digest=%016" PRIx64 "\n", best, best_time, best_lane, hits, word_n, sched_n, profile);
+    fprintf(summary, "min_distance=%u\nbest_time=%u\nbest_lane=%u\ntarget_hits=%" PRIu64 "\nvisited_states=891513\nword_rows=%zu\nschedule_rows=%zu\nlanded_transition_count=%" PRIu64 "\nhead1_xor_head2_violations=%" PRIu64 "\nhead1_xor_head3_violations=%" PRIu64 "\nhead1_xor_head4_violations=%" PRIu64 "\nhead1_xor_head5_violations=%" PRIu64 "\ndistance_profile_digest=%016" PRIx64 "\n", best, best_time, best_lane, hits, word_n, sched_n, transition_count, affine_violations[0], affine_violations[1], affine_violations[2], affine_violations[3], profile);
     fclose(summary); free(word); free(sched); free(seed); free(initial); return 0;
 }
 '''
@@ -617,6 +629,81 @@ def primitive_parity_failure(
     return None
 
 
+def universal_composed_parity_attempt(
+    wires: tuple[int, int],
+    words: dict[tuple[int, int], tuple[tuple[int, int, int, int], ...]],
+) -> dict[str, object]:
+    """Attempt all-state preservation and return an exact rule counterexample."""
+    generator_structure = []
+    for pair in BACKBONE:
+        word = words[pair]
+        generator_structure.append({
+            "pair": pair,
+            "ordered_primitive_count": len(word),
+            "first_wire_target_kind_census": dict(sorted(Counter(
+                kind for kind, first, second, third in word
+                if gate_target((kind, first, second, third)) == wires[0]
+            ).items())),
+            "second_wire_target_kind_census": dict(sorted(Counter(
+                kind for kind, first, second, third in word
+                if gate_target((kind, first, second, third)) == wires[1]
+            ).items())),
+        })
+
+    candidates = [
+        (f"WIRE_MOD_{modulus}_EQ_{residue}", modulus, residue)
+        for modulus in range(2, 17)
+        for residue in range(modulus)
+    ]
+    counterexample = None
+    for label, modulus, residue in candidates:
+        before = sum(
+            1 << wire for wire in range(residue, STATE_BITS, modulus)
+        )
+        for pair in BACKBONE:
+            after = apply_word(before, words[pair])
+            before_value = parity(before, wires)
+            after_value = parity(after, wires)
+            if before_value != after_value:
+                counterexample = {
+                    "input_definition":
+                        f"x[wire]=1 iff wire mod {modulus} == {residue}",
+                    "input_label": label,
+                    "input_weight": before.bit_count(),
+                    "generator_pair": pair,
+                    "ordered_primitive_count": len(words[pair]),
+                    "before_parity": before_value,
+                    "after_parity": after_value,
+                    "input_state_sha256": state_sha256(before),
+                    "output_state_sha256": state_sha256(after),
+                    "exact_rule_counterexample": True,
+                }
+                break
+        if counterexample is not None:
+            break
+
+    return {
+        "question": (
+            "Does the affine parity commute with every landed generator F_pair "
+            "on every state in {0,1}^5815?"
+        ),
+        "method": (
+            "Enumerate the exact ordered local X/CNOT/Toffoli structure of all "
+            "nine landed generators.  A displayed arbitrary-input counterexample "
+            "is evaluated by the full generator itself and is not a trajectory sample."
+        ),
+        "generator_scope": BACKBONE,
+        "generator_local_transition_structure": tuple(generator_structure),
+        "universal_induction_closed": False,
+        "counterexample": counterexample,
+        "disposition": (
+            "UNIVERSAL_PRESERVATION_NOT_ESTABLISHED"
+            if counterexample is None
+            else "UNIVERSAL_PRESERVATION_REFUTED_BY_EXACT_RULE_COUNTEREXAMPLE"
+        ),
+    }
+
+
 def triple_components(
     triple: tuple[int, int, int],
     macros: tuple[tuple[tuple[int, int, int, int], ...], ...],
@@ -659,6 +746,7 @@ def local_invariant_hunt(
     target: int,
     register_fields: tuple[str, ...],
     register_wires: tuple[int, ...],
+    landed_summary: dict[str, object],
 ) -> dict[str, object]:
     macros = fixtures["macros"]
     states = fixtures["states"]
@@ -827,6 +915,87 @@ def local_invariant_hunt(
                 "target_component": target_component,
             })
 
+    affine_head_pairs = tuple(
+        (
+            f"BANK0_HEAD1_XOR_HEAD{index}",
+            (head_wires[1], head_wires[index]),
+            f"head1_xor_head{index}_violations",
+        )
+        for index in range(2, 6)
+    )
+    expected_landed_transitions = sum(
+        RESOLUTION_MOMENTS[event]
+        for event in (0, 2, 1)
+        for _pair in BACKBONE
+    )
+    affine_head_rows = []
+    universal_affine_exclusions = []
+    family_scope_exclusions = []
+    for name, wires, violation_key in affine_head_pairs:
+        universal_attempt = universal_composed_parity_attempt(wires, words)
+        initial_values = tuple(sorted({
+            parity(state, wires) for state in states.values()
+        }))
+        target_value = parity(target, wires)
+        family_scope_preserved = (
+            landed_summary["landed_transition_count"]
+            == expected_landed_transitions
+            and landed_summary[violation_key] == 0
+        )
+        separates = initial_values == (0,) and target_value == 1
+        law = (
+            f"bank0.HEAD[1] XOR bank0.HEAD[{wires[1] - head_wires[0]}] "
+            "is unchanged by every landed step."
+        )
+        row = {
+            "candidate": name,
+            "fields": (
+                "bank0.HEAD[1]",
+                f"bank0.HEAD[{wires[1] - head_wires[0]}]",
+            ),
+            "wires": wires,
+            "positive_local_law_if_universal": law,
+            "universal_preservation_attempt": universal_attempt,
+            "initial_value_all_176_decoded_fixtures": initial_values,
+            "target_S0_prime_value": target_value,
+            "separates_initial_family_from_target": separates,
+            "family_scope_verification": {
+                "method": (
+                    "The exact bit-sliced kernel compares the parity before and "
+                    "after every complete landed transition; no transition is sampled."
+                ),
+                "landed_lanes": tuple(
+                    (event, pair) for event in (0, 2, 1) for pair in BACKBONE
+                ),
+                "inclusive_horizons": RESOLUTION_MOMENTS,
+                "complete_landed_transition_count":
+                    landed_summary["landed_transition_count"],
+                "expected_complete_landed_transition_count":
+                    expected_landed_transitions,
+                "parity_violations": landed_summary[violation_key],
+                "preserved_at_family_scope": family_scope_preserved,
+            },
+        }
+        affine_head_rows.append(row)
+        if universal_attempt["universal_induction_closed"] and separates:
+            universal_affine_exclusions.append({
+                "class": "universal_affine_HEAD_parity_conservation_law",
+                "candidate": name,
+                "wires": wires,
+                "law": law,
+            })
+        elif family_scope_preserved and separates:
+            family_scope_exclusions.append({
+                "class": "complete_landed_family_affine_invariant",
+                "candidate": name,
+                "wires": wires,
+                "initial_value": 0,
+                "target_value": 1,
+                "complete_landed_transition_count": expected_landed_transitions,
+            })
+
+    universal_exclusions = tuple(exclusions) + tuple(universal_affine_exclusions)
+
     return {
         "declared_finite_family": {
             "explicit_bit_parities": tuple(explicit_sets),
@@ -837,6 +1006,9 @@ def local_invariant_hunt(
                 row["invariant_predicate_count"] for row in triple_rows
             ),
             "conserved_subregister_patterns": ("full U pattern",),
+            "affine_HEAD_parity_family": tuple(
+                name for name, _wires, _violation_key in affine_head_pairs
+            ),
         },
         "bit_parity_rows": tuple(parity_rows),
         "all_untouched_wire_parities": all_untouched_parities,
@@ -846,10 +1018,16 @@ def local_invariant_hunt(
             **all_untouched_parities,
             "candidate": "full exact U projection",
         },
-        "exclusions": tuple(exclusions),
+        "affine_HEAD_parity_rows": tuple(affine_head_rows),
+        "universal_exclusions": universal_exclusions,
+        "family_scope_exclusions": tuple(family_scope_exclusions),
+        "exclusions": universal_exclusions + tuple(family_scope_exclusions),
         "finding": (
-            "S0PRIME_EXCLUDED_BY_INVARIANT"
-            if exclusions else "NO_EXCLUSION_IN_DECLARED_FAMILY"
+            "S0PRIME_EXCLUDED_BY_CONSERVATION_LAW"
+            if universal_exclusions
+            else "S0PRIME_EXCLUDED_AT_FAMILY_SCOPE"
+            if family_scope_exclusions
+            else "NO_EXCLUSION_IN_DECLARED_FAMILY"
         ),
         "pass": (
             all_untouched_parities["target_equals_witness_on_U"]
@@ -869,6 +1047,19 @@ def local_invariant_hunt(
                 row["nonseparation_witness"] is not None
                 for row in triple_rows
             )
+            and landed_summary["landed_transition_count"]
+            == expected_landed_transitions == 891486
+            and len(affine_head_rows) == 4
+            and all(
+                row["universal_preservation_attempt"]["counterexample"] is not None
+                for row in affine_head_rows
+            )
+            and all(
+                row["family_scope_verification"]["preserved_at_family_scope"]
+                and row["separates_initial_family_from_target"]
+                for row in affine_head_rows
+            )
+            and len(family_scope_exclusions) == 4
         ),
     }
 
@@ -1006,22 +1197,52 @@ def run() -> int:
     )
 
     certificate_b = local_invariant_hunt(
-        fixtures, target, register_fields, register_wires
+        fixtures, target, register_fields, register_wires, summary
     )
-    excluded = bool(certificate_b["exclusions"])
+    universal_exclusions = tuple(certificate_b["universal_exclusions"])
+    family_scope_exclusions = tuple(certificate_b["family_scope_exclusions"])
+    induction_closed = bool(universal_exclusions)
+    excluded_at_family_scope = bool(family_scope_exclusions)
+    if induction_closed:
+        ruling = "S0PRIME_EXCLUDED_BY_CONSERVATION_LAW"
+        named_invariants = tuple(
+            row["candidate"] for row in universal_exclusions
+        )
+        conservation_law = universal_exclusions[0]["law"]
+        ruling_scope = (
+            "All states in {0,1}^5815 under every generator in the declared "
+            "landed step relation."
+        )
+    else:
+        ruling = "S0PRIME_EXCLUDED_AT_FAMILY_SCOPE"
+        named_invariants = tuple(
+            row["candidate"] for row in family_scope_exclusions
+        )
+        conservation_law = None
+        ruling_scope = (
+            "Exactly the 27 landed trajectories (events 0,2,1 times the nine "
+            "BACKBONE pairs), from their decoded t=0 fixtures through inclusive "
+            "horizons 14744, 33195, and 51115: 891486 complete transitions."
+        )
     certificate_c = {
-        "scope":
-            "Only the finite invariant family explicitly enumerated in B_EXCLUSION_HUNT; no universal invariant or reachability claim is made.",
-        "exclusion_found": excluded,
-        "ruling": (
-            "S0PRIME_EXCLUDED_BY_INVARIANT"
-            if excluded else "OPEN_AFTER_DECLARED_INVARIANT_EXHAUSTION"
+        "scope": ruling_scope,
+        "universal_induction_closed": induction_closed,
+        "named_invariants": named_invariants,
+        "positive_local_law": conservation_law,
+        "family_scope_exclusion_found": excluded_at_family_scope,
+        "universal_question": (
+            "The four affine HEAD parities are not universal laws: each has an "
+            "exact arbitrary-state generator counterexample.  Whether some other "
+            "universal separating conservation law exists remains open."
+            if not induction_closed else "CLOSED_BY_DISPLAYED_POSITIVE_LOCAL_LAW"
         ),
-        "finding": (
-            "S0PRIME_EXCLUDED_BY_INVARIANT"
-            if excluded else "OPEN_AFTER_DECLARED_INVARIANT_EXHAUSTION"
+        "ruling": ruling,
+        "finding": ruling,
+        "pass": (
+            certificate_b["pass"]
+            and (induction_closed or excluded_at_family_scope)
+            and bool(named_invariants)
         ),
-        "pass": certificate_b["pass"],
     }
 
     elapsed = monotonic() - started
@@ -1083,7 +1304,11 @@ def run() -> int:
     report = {
         "cycle": 851,
         "target": "S0' weight-47 exclusion theorem attempt",
-        "actual_status": "open after declared invariant exhaustion",
+        "actual_status": (
+            "excluded by universal conservation law"
+            if induction_closed
+            else "excluded at exact landed-family scope; universal exclusion open"
+        ),
         "ruling": certificate_c["ruling"],
         "closest_approach": certificate_a["closest_approach"],
         "runtime_seconds": round(elapsed, 6),

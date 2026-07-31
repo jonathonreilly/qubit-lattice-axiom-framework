@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cycle 857: census theorem and exact initial-selection bit accounting.
+"""Cycle 857: conditional census theorem and initial-selection bit accounting.
 
 The Cycle-719 core is a SHA-pinned text/AST-only primary.  This runner never
 imports or executes it.  Instead it independently rebuilds the two-bank
@@ -27,8 +27,6 @@ from time import monotonic
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_BRANCH = "physics-loop/proof-grade-blockF22-20260729"
-EXPECTED_PARENT_HEAD = "db6bb282202f049030056e3a26bc2c68280bbae8"
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
         "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
@@ -36,6 +34,9 @@ EXPECTED_SHA256 = {
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
 }
+EXPECTED_INTERLEAVED_PROGRAM_AST_SHA256 = (
+    "b5ca56177e52bcec0745fba7dd03eeb68851f670628d38d9cf916dcd109314eb"
+)
 FIXTURE_BANKS = 2
 MIN_SOURCES = 2
 MAX_SOURCES = 5
@@ -149,6 +150,9 @@ def source_controls() -> dict[str, object]:
     }
     self_tree = ast.parse(Path(__file__).read_bytes(), filename=Path(__file__).name)
     core_functions = function_map(trees[AUDIT_INPUT_PATHS[0]])
+    interleaved_ast_sha256 = sha256(ast.dump(
+        core_functions["interleaved_program"], include_attributes=False
+    ).encode("utf-8")).hexdigest()
     sha_rows = {path: sha256(payload).hexdigest() for path, payload in payloads.items()}
     blob_rows = {path: git_blob(payload) for path, payload in payloads.items()}
     direct_frontier_imports = tuple(sorted(
@@ -178,6 +182,10 @@ def source_controls() -> dict[str, object]:
             "held_certificate" in core_functions
             and has_core_event_range(core_functions["held_certificate"])
         ),
+        "interleaved_program_AST_sha256": interleaved_ast_sha256,
+        "interleaved_program_AST_sha256_exact": (
+            interleaved_ast_sha256 == EXPECTED_INTERLEAVED_PROGRAM_AST_SHA256
+        ),
     }
     blocked_loaded = tuple(sorted(
         module for module in sys.modules
@@ -203,12 +211,10 @@ def source_controls() -> dict[str, object]:
         "direct_frontier_imports": direct_frontier_imports,
         "blocked_modules_loaded": blocked_loaded,
         "firewall_hits": tuple(PRIMARY_FIREWALL.hits),
-        "git_branch": git_text("branch", "--show-current"),
-        "expected_git_branch": EXPECTED_BRANCH,
-        "parent_merge_base": git_text(
-            "merge-base", "HEAD", "physics-loop/proof-grade-blockF21-20260729"
+        "checkout_portability": (
+            "No branch name or local base ref is required; a detached or "
+            "post-landing checkout passes when the pinned primary is exact."
         ),
-        "expected_parent_head": EXPECTED_PARENT_HEAD,
         "pass": False,
     }
     result["pass"] = bool(
@@ -220,12 +226,13 @@ def source_controls() -> dict[str, object]:
             and row["head_git_blob"] == row["expected_git_blob"]
             for row in rows
         )
-        and all(ast_markers.values())
+        and ast_markers["interleaved_program_present"]
+        and ast_markers["held_certificate_present"]
+        and ast_markers["held_certificate_has_range_2_times_bank_count"]
+        and ast_markers["interleaved_program_AST_sha256_exact"]
         and not direct_frontier_imports
         and not blocked_loaded
         and not PRIMARY_FIREWALL.hits
-        and result["git_branch"] == EXPECTED_BRANCH
-        and result["parent_merge_base"] == EXPECTED_PARENT_HEAD
     )
     return result
 
@@ -393,7 +400,8 @@ def count_law() -> tuple[dict[str, object], tuple[Setup, ...]]:
         and orbit_sizes == {stations: len(orbits)}
     )
     finding = (
-        "For n=11 and p=4, N_k=[binom(10-k,k-1)/k]x4x11: "
+        "Conditional on the named bounded generator premises and pinned core "
+        "constants n=11 and p=4, N_k=[binom(10-k,k-1)/k]x4x11: "
         "k=2 is 4x4x11=176, k=3 is 7x4x11=308, k=4 is "
         "5x4x11=220, and k=5 is 1x4x11=44. Thus N=748. The "
         "nonempty proper subsets have free C11 translation action, so the "
@@ -413,7 +421,11 @@ def count_law() -> tuple[dict[str, object], tuple[Setup, ...]]:
                 "itertools.combinations supplies distinct sites and introduces "
                 "neither collision nor k! label factors"
             ),
-            "multi_source_lower_bound": "k>=2 removes the zero/one-source sectors",
+            "multi_source_lower_bound": (
+                "k>=2 defines the multi-source sector; the one-notch k>=1 "
+                "counterfactual adds the one-source sector, while the empty "
+                "setup is outside the source-bearing configuration type"
+            ),
             "pairwise_separation": (
                 "circular distance>=2 is exactly one positive empty-site gap "
                 "between successive sources"
@@ -429,6 +441,25 @@ def count_law() -> tuple[dict[str, object], tuple[Setup, ...]]:
             ),
         },
         "fixture_banks": FIXTURE_BANKS,
+        "core_parameter_derivation": {
+            "ring_size": (
+                "interleaved_program(b) label projection gives 1 source + b "
+                "banks + (b-1) crosses + 3(b-1) forward-edge stations + "
+                "3(b-1) reverse-edge stations + 1 finalizer = 8b-5; b=2 gives 11"
+            ),
+            "phase_count": (
+                "held_certificate(b) enumerates range(2*b); b=2 gives four "
+                "event-seed phase labels"
+            ),
+            "semantic_boundary": (
+                "This derives the label/cardinality inputs used by the census; "
+                "it does not claim autonomous preparation of the phases or the "
+                "multi-source placement rule."
+            ),
+            "pinned_interleaved_program_AST_sha256": (
+                EXPECTED_INTERLEAVED_PROGRAM_AST_SHA256
+            ),
+        },
         "derived_program_station_labels": program_labels,
         "derived_ring_size": stations,
         "derived_phase_set": phases,
@@ -495,7 +526,7 @@ def bit_accounting(
         "one_source_atom": {
             "value": "one indistinguishable occupied-site atom",
             "provenance": (
-                "CENSUS AXIOM: the bounded multi-source extension; Cycle-719 "
+                "SUPPLIED BOUNDED PREMISE: the multi-source extension; Cycle-719 "
                 "supplies one controller token and explicitly leaves distant "
                 "multiple-token composition open"
             ),
@@ -506,15 +537,16 @@ def bit_accounting(
                 "pair distance>=2; k<=5 follows from packing"
             ),
             "provenance": (
-                "CENSUS AXIOM: pairwise-separated placement admissibility; "
+                "SUPPLIED BOUNDED PREMISE: pairwise-separated placement rule; "
                 "the upper endpoint is derived from 2k<=11"
             ),
         },
         "phase_set": {
             "value": tuple(range(CORE_PHASE_COUNT)),
             "provenance": (
-                "CORE CONSTANT: Cycle-719 held_certificate uses "
-                "range(2*bank_count), specialized at the scope axiom bank_count=2"
+                "PINNED CORE DERIVATION: Cycle-719 held_certificate uses "
+                "range(2*bank_count), specialized at the supplied bounded "
+                "condition bank_count=2"
             ),
         },
         "ring_size": {
@@ -535,12 +567,14 @@ def bit_accounting(
         row["k"] = stratum["k"]
         rows.append(row)
     finding = (
-        "Only the setup selection is input: log2(748)=log2(68)+log2(11) "
+        "Conditional on the named fixed generator specification, only the "
+        "setup-selection channel varies: log2(748)=log2(68)+log2(11) "
         "approximately 6.087462841250339+3.459431618637297="
         "9.546894459887637 bits. The 68-way "
         "choice selects a source-shape/phase family and the 11-way choice "
         "allocates its origin. The generating space is fixed by the named "
-        "census axioms and SHA-pinned Cycle-719 core constants."
+        "supplied bounded premises and SHA-pinned Cycle-719 core constants; "
+        "the nonzero generating-description length is reported separately."
     )
     certificate = {
         "finding": finding,
@@ -549,8 +583,13 @@ def bit_accounting(
             "integer fixed-width or prefix-code length. A direct fixed-width "
             "index needs ceil(log2(748))=10 bits."
         ),
-        "space_is_derived_selection_only_is_input": True,
-        "parameter_selection_input_bits": 0,
+        "theorem_scope": (
+            "exact conditional combinatorics on the named bounded generator; "
+            "not a derivation of that generator from Cycle-719"
+        ),
+        "space_is_derived_from_fixed_named_parameters": True,
+        "only_setup_selection_is_variable_input": True,
+        "setup_selection_channel_parameter_bits": 0,
         "total": total,
         "per_stratum": tuple(rows),
         "generating_description": generating_description,
@@ -562,7 +601,7 @@ def bit_accounting(
             "canonical_text": description_text,
             "utf8_bytes": len(description_text.encode("utf-8")),
             "utf8_bits": 8 * len(description_text.encode("utf-8")),
-            "selection_bits_contributed": 0,
+            "setup_selection_channel_bits_contributed": 0,
         },
         "pass": bool(
             total["identity_exact"]
@@ -605,7 +644,10 @@ def constraint_contributions(stations: int) -> dict[str, object]:
         "CORE_PHASE_MEMBERSHIP_phase_lt_4": lambda setup: setup[1] < 3,
     }
     roles = {
-        "MIN_MULTISOURCE_k_ge_2": "excludes the zero/one-source sector",
+        "MIN_MULTISOURCE_k_ge_2": (
+            "excludes the one-source sector in this one-notch ambient; the "
+            "empty setup is outside the source-bearing configuration type"
+        ),
         "PACKING_WINDOW_k_le_5": (
             "names the packing ceiling; relaxing to k=6 adds nothing because "
             "distance>=2 already makes k=6 impossible on C11"

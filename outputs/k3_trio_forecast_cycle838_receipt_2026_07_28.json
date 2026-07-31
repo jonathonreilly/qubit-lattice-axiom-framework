@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC24-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle838_forecast_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle838_k3_trio_forecast_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 838,
+  "files": {
+    "docs/K3_TRIO_FORECAST_CYCLE838_BOUNDED_THEOREM_NOTE_2026-07-28.md": "73ac82193459a80bfcc7177165c6ba30e1da8eaf459136c4a3a6dd95481bc661",
+    "logs/runner-cache/frontier_cycle838_forecast_independent_check_2026_07_28.txt": "ff1efdc815178dc78f75ff2e274649530d2714b73c67e7e0ae144f62f9ca2dbc",
+    "logs/runner-cache/frontier_cycle838_k3_trio_forecast_2026_07_28.txt": "44666fa1949d25400c4f57355d8a5a402fc8236df7c4c3b999d257faedce1b1e",
+    "scripts/frontier_cycle838_forecast_independent_check_2026_07_28.py": "9052923ebfce6c365d2c9454ac9bb4858b782349009f65d552579846f5d1ebec",
+    "scripts/frontier_cycle838_k3_trio_forecast_2026_07_28.py": "ea668b4d0be960622cd10d4e16b3cd1056d343db80ee6845407ca6ddb3e604c0"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "trio forecast UNTESTED at complete T=262144 (all 10 k=3 opens stand; the bet survives)",
+    "THE STATION-0 DISCOVERY: four new transients \u2014 two synchronized 2-cohorts (event-1 @193210, event-2 @246669); funnel weights 57/51 (a new regime vs 44/45/46)",
+    "origin = MODULATOR (delays 4-5x, shrinks 9->2, shifts regime), not boundary; 837 rescoped by data (reviewer comment on #5853)",
+    "transient family 37; checker all five certificates PASS"
+  ]
+}

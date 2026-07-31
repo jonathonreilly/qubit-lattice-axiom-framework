@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR27-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle854_braid_inheritance_2026_07_28.txt": "REPORT.checks map",
+    "logs/runner-cache/frontier_cycle854_inheritance_independent_check_2026_07_28.txt": "REPORT.checks map"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle854_braid_inheritance_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    },
+    "logs/runner-cache/frontier_cycle854_inheritance_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 854,
+  "files": {
+    "docs/BRAID_INHERITANCE_CYCLE854_BOUNDED_THEOREM_NOTE_2026-07-28.md": "4d1d693c7c5d8fe8ed46294783914b62242a2b52241ff24674342d86cfe48456",
+    "logs/runner-cache/frontier_cycle854_braid_inheritance_2026_07_28.txt": "c4bc415302372311bdc0d671a36a062a15d1c17ea4440d131b8b69d729304e3f",
+    "logs/runner-cache/frontier_cycle854_inheritance_independent_check_2026_07_28.txt": "2ea0e43a07589cb003aa9664c6be0e88551c7bb76cf88fbe9767bb1c43b928a0",
+    "scripts/frontier_cycle854_braid_inheritance_2026_07_28.py": "348c78729f97cb8f5b7c1da53bbf4ee18e8a89a5860a622721a937d36196f754",
+    "scripts/frontier_cycle854_inheritance_independent_check_2026_07_28.py": "a47b707e763d4afa29bdbca447c66e2f918ac44672b8c0ca1303923f721844e0"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "the inherited-invariant family: 5,320 wires + 14,148,540 pair parities boundary-entailed from initial values via even-toggle cancellation; {56,58} reappears as the founding special case",
+    "the braid decomposition: 0 inherited / 0 mixed / 16 FREE - every 848-census precondition type depends only on the free complement (entailment by derivation, never co-occurrence)",
+    "checker: family verified (counts + sampled explicit cancellation + boundary constancy); third level (bounded triple parities on braid supports; inherited affine relations) entails nothing - zero refutations",
+    "sixth approach class priced: the parity/S0' family is birth-bookkeeping (853); the braid is authorship - generated in the free sector; the merged why is scoped to where the freedom lives"
+  ]
+}

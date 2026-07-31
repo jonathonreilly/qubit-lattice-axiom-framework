@@ -40,3 +40,10 @@ checkpoints:
       - "830: S* is NOT an attractor basin — it is a SYNCHRONIZATION EVENT: the nine trajectories stay on distinct preimage branches through all 8 reverse depths and merge ONLY at the final tick (parameterized bijections erase 15 differences across 3 nodes); tenth moment-mechanism dead (support exact, circular)."
       - "831: THE COHORT STRUCTURE — complete to T=65536: 18 NEW transients = two more cohorts of NINE at the SAME max-sep-5 position pairs (event-2 @ t=33195; event-1 @ t=51115); each cohort exactly merged within itself; none across; per-cohort funnel states differ from S*; F1/F2 forecasts HOLD; transient family 33; 133 open."
     emerging_targets: "the cohort-moment law (three moments now: 14744/33195/51115); the funnel-state family census; the general per-event entry predicate; checkers in flight before any of it is claimed"
+  - at: "the unification wave — reversals 21-22, both constructive"
+    prs:
+      - "#5849 blockC22 831: THE COHORT STRUCTURE checker-confirmed — 18 new transients (two nines on the max-sep-5 backbone; event-2 @33195, event-1 @51115); three cohorts/funnels/moments; F1/F2 held; 133 open."
+      - "#5850 blockF17 830: NOT A BASIN — A BRAID (reversal twenty absorbed: v1 depth-0-only merger refuted; v2 partition profile NON-MONOTONE with full union only at the final tick; tenth moment-mechanism dead)."
+    reversal_21: "832 v1 backbone-exhaustion (27) REFUTED — k=2 has FOUR events/pair: backbone = 36, ALL resolved; v2 tests THE CYCLE-COHORT HYPOTHESIS (the event-3 nine = the 818 census's nine period-3 cycles, possibly identical-in-phase => the backbone completes as 3 transient cohorts + 1 cyclic cohort)."
+    reversal_22: "833 v1 no-family-map CONSTRUCTIVELY INVERTED — the funnel diffs localize to 39 fields (bank0 pred/rotor/carry/orientation/HEAD + source endpoints; 5,776 wires common); the induced rank-edge field updates map S*->S2->S1 EXACTLY: the three funnels are ONE OBJECT with an advancing register block. v2 adopts + computes the S0' fourth-funnel prediction object."
+    in_flight: "832-v2 + 833-v2 (bh19laywx)"

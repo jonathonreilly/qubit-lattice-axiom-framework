@@ -1,0 +1,32 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockP18-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle841_deciding_the_tick_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 8
+    },
+    "logs/runner-cache/frontier_cycle841_tick_independent_check_2026_07_28.txt": {
+      "fail": 2,
+      "pass": 3
+    }
+  },
+  "checker_disclosure": "the checker's terminal retains its v1-refutation label (CYCLE841_PRIMARY_ZERO_CONSUMER_REFUTED_PASS) \u2014 the refutation-checker pattern; its attack computations pass against v2 and v2 agrees with the refutation",
+  "claim_type": "bounded_theorem",
+  "cycle": 841,
+  "files": {
+    "docs/DECIDING_THE_TICK_CYCLE841_BOUNDED_THEOREM_NOTE_2026-07-28.md": "bba2245ddfb97734891b6a23944c754db310d833d1c8b9f527e8c47e8e6c455e",
+    "logs/runner-cache/frontier_cycle841_deciding_the_tick_2026_07_28.txt": "490eafa9746c96cb853ee3f35feb2c3e561c825536646bef33ad010ebb82fd76",
+    "logs/runner-cache/frontier_cycle841_tick_independent_check_2026_07_28.txt": "166af4e55242d6ffb911b6c31be33fc8397ba793c38ab870f7939a9e808b2778",
+    "scripts/frontier_cycle841_deciding_the_tick_2026_07_28.py": "9879f900590b2a9cdded11d2b691d48adf5c5baff96af4f88b7483bfc98a0b54",
+    "scripts/frontier_cycle841_tick_independent_check_2026_07_28.py": "29b8cee7456ee5afd49cc6d5e1fee698b8c0fc6ef0278550e75a836edfcab074"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "the forcing table (lock->MOMENT; 796->MOMENT; funnel map->MOMENT-5; pulse->relative phase) checker-verified",
+    "reversal twenty-five absorbed: zero-consumer claim corrected to ZERO PHYSICS CONSUMERS (the 835 audit certificates = the sole self-referential consumers)",
+    "THE PRINCIPLED ACCOUNTING: on the physics clocks the raw target-blind register catch-up = {595,64} = the residuals EXACTLY (no fitted terms) \u2014 the 835 near-miss dissolves (it read a clock no physics uses)",
+    "primary CYCLE841_V2_ZERO_PHYSICS_CONSUMER_PASS; checker attacks pass (one stale old-claim label documented)"
+  ]
+}

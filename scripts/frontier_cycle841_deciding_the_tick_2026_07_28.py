@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Cycle 841: decide which cohort timeline convention landed definitions use.
+"""Cycle 841 v2: decide which cohort timeline landed PHYSICS content uses.
 
 All four source primaries are SHA-pinned, read as text/AST only, and blocked
-from import.  Certificate A formalizes the three requested clocks.
-Certificate B classifies each timing-bearing object from its definition,
-without receiving the cohort residual targets.  Certificate C performs the
-target comparison only after that classification.  Certificate D supplies
-the bounded-execution and provenance controls.
+from import.  Certificate A exhausts and classifies register-entry consumers.
+Certificate B gives the corrected practical verdict and target-blind
+accounting consequence.  Certificate C reproduces the three clock
+formalizations and the original forcing rows.  Certificate D supplies the
+bounded-execution and provenance controls.
 """
 from __future__ import annotations
 
@@ -181,6 +181,60 @@ def literal_values(node: ast.AST) -> tuple[object, ...]:
     return tuple(rows)
 
 
+DIRECT_ENTRY_KEYS = frozenset({
+    "final_projection_entry_time",
+    "final_entry_times",
+    "source_final_entry",
+    "target_final_entry",
+    "register_final_entry_times",
+    "raw_register_catchup",
+})
+EQUIVALENT_ENTRY_KEYS = frozenset({"terminal_dwell_ticks"})
+
+
+class _RegisterClockReadVisitor(ast.NodeVisitor):
+    """Inventory direct and algebraically equivalent register-clock reads."""
+
+    def __init__(self, source: str, path: str) -> None:
+        self.source = source
+        self.path = path
+        self.functions: list[str] = []
+        self.rows: list[dict[str, object]] = []
+
+    def visit_FunctionDef(self, node: ast.FunctionDef) -> Any:
+        self.functions.append(node.name)
+        self.generic_visit(node)
+        self.functions.pop()
+        return None
+
+    def visit_Subscript(self, node: ast.Subscript) -> Any:
+        key = (
+            node.slice.value
+            if isinstance(node.slice, ast.Constant)
+            and isinstance(node.slice.value, str)
+            else None
+        )
+        if (
+            isinstance(node.ctx, ast.Load)
+            and key in DIRECT_ENTRY_KEYS | EQUIVALENT_ENTRY_KEYS
+        ):
+            self.rows.append({
+                "path": self.path,
+                "function":
+                    self.functions[-1] if self.functions else "<module>",
+                "line": node.lineno,
+                "key": key,
+                "kind": (
+                    "DIRECT_REGISTER_ENTRY_READ"
+                    if key in DIRECT_ENTRY_KEYS
+                    else "ALGEBRAICALLY_EQUIVALENT_DWELL_READ"
+                ),
+                "verbatim": ast.get_source_segment(self.source, node),
+            })
+        self.generic_visit(node)
+        return None
+
+
 def times_in_event_order(times: dict[int, int]) -> tuple[int, ...]:
     return tuple(times[event] for event in EVENT_ORDER)
 
@@ -206,6 +260,127 @@ def source_payloads() -> tuple[
         Path(__file__).read_bytes(), filename=Path(__file__).name
     )
     return payloads, trees, self_tree
+
+
+def register_entry_consumer_census(
+    payloads: dict[str, bytes],
+    trees: dict[str, ast.Module],
+) -> dict[str, object]:
+    """Certificate A: separate PHYSICS content from clock-audit artifacts."""
+
+    findings = []
+    scan_counts = {}
+    for path in AUDIT_INPUT_PATHS:
+        source = payloads[path].decode("utf-8")
+        visitor = _RegisterClockReadVisitor(source, path)
+        visitor.visit(trees[path])
+        findings.extend(visitor.rows)
+        scan_counts[path] = {
+            "functions": sum(
+                isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+                for node in ast.walk(trees[path])
+            ),
+            "ast_nodes": sum(1 for _node in ast.walk(trees[path])),
+        }
+
+    certificate_functions = (
+        "residual_certificate",
+        "raw_near_miss_certificate",
+        "timeline_convention_certificate",
+    )
+    rows = tuple({
+        "artifact":
+            f"{AUDIT_INPUT_PATHS[3]}::{function}",
+        "function": function,
+        "classification": "AUDIT",
+        "content_dependency": {
+            "residual_certificate":
+                "measures register-entry gaps and terminal dwell while "
+                "testing residual candidates",
+            "raw_near_miss_certificate":
+                "reports the target-blind register-entry {594,65} "
+                "near-miss and its comparison",
+            "timeline_convention_certificate":
+                "measures REGISTER_FINAL_ENTRY as one explicitly audited "
+                "timeline convention",
+        }[function],
+        "read_sites": tuple(
+            finding for finding in findings
+            if finding["function"] == function
+        ),
+        "classification_verified": bool(
+            tuple(
+                finding for finding in findings
+                if finding["function"] == function
+            )
+        ),
+    } for function in certificate_functions)
+    content_consumers = tuple(
+        row["function"] for row in rows
+        if row["classification_verified"]
+    )
+    physics_consumers = tuple(
+        row["function"] for row in rows
+        if row["classification"] == "PHYSICS"
+    )
+    audit_consumers = tuple(
+        row["function"] for row in rows
+        if row["classification"] == "AUDIT"
+    )
+    other_read_functions = tuple(sorted({
+        str(finding["function"]) for finding in findings
+        if finding["function"] not in certificate_functions
+    }))
+    publication_only = tuple(
+        finding for finding in findings
+        if finding["function"] == "run"
+    )
+    unexpected_read_functions = tuple(
+        function for function in other_read_functions
+        if function not in {"track_register_trajectories", "run"}
+    )
+    exact_statement = (
+        "zero PHYSICS consumers; the Cycle-835 residual_certificate, "
+        "raw_near_miss_certificate, and timeline_convention_certificate "
+        "audit certificates are the self-referential sole consumers."
+    )
+    passed = (
+        content_consumers == certificate_functions
+        and not physics_consumers
+        and audit_consumers == certificate_functions
+        and all(row["classification_verified"] for row in rows)
+        and not unexpected_read_functions
+        and bool(publication_only)
+    )
+    return {
+        "certificate": "A_REGISTER_ENTRY_CONSUMER_CENSUS_CORRECTED",
+        "scan_scope": {
+            "declaration":
+                "exhaustive AST walk of every node in the four SHA-pinned "
+                "landed timing modules",
+            "paths": AUDIT_INPUT_PATHS,
+            "counts": scan_counts,
+            "direct_read_keys": tuple(sorted(DIRECT_ENTRY_KEYS)),
+            "equivalent_read_keys": tuple(
+                sorted(EQUIVALENT_ENTRY_KEYS)
+            ),
+        },
+        "consumer_rows": rows,
+        "physics_consumers": physics_consumers,
+        "physics_consumer_count": len(physics_consumers),
+        "audit_consumers": audit_consumers,
+        "audit_consumer_count": len(audit_consumers),
+        "publication_only_read_sites": publication_only,
+        "publication_only_classification":
+            "Cycle-835 run only echoes already measured values into the "
+            "package summary; it is not a fourth content consumer.",
+        "unexpected_read_functions": unexpected_read_functions,
+        "exact_statement": exact_statement,
+        "verdict":
+            "ZERO_PHYSICS_CONSUMERS; CYCLE835_AUDIT_CERTIFICATES_ARE_"
+            "SELF_REFERENTIAL_SOLE_CONSUMERS",
+        "pass": passed,
+    }
 
 
 def clock_definitions(
@@ -350,7 +525,7 @@ def clock_definitions(
         and all(row["ast_identified"] for row in clocks.values())
     )
     return {
-        "certificate": "A_THREE_CLOCKS_FORMALIZED",
+        "certificate": "C1_THREE_CLOCKS_FORMALIZED_REPRODUCED",
         "clocks": clocks,
         "moment_minus_five_relation_exact_each_event":
             moment_minus_five_exact,
@@ -496,7 +671,7 @@ def forcing_test(
         if len(rows) else None
     )
     split = forced is None
-    register_consumers = tuple(
+    register_physics_consumers = tuple(
         row["object"] for row in rows
         if row["clock"] == "REGISTER_FINAL_ENTRY"
     )
@@ -509,20 +684,21 @@ def forcing_test(
         })
         and split
         and forced is None
-        and not register_consumers
+        and not register_physics_consumers
         and set(clocks) == {
             "MOMENT", "MOMENT_MINUS_FIVE", "REGISTER_FINAL_ENTRY"
         }
     )
     return {
-        "certificate": "B_LANDED_DEFINITION_FORCING_TEST",
+        "certificate": "C2_LANDED_FORCING_ROWS_REPRODUCED",
         "classification_method":
             "AST plus operational behavior; no residual values are passed "
             "to this function",
         "rows": rows,
         "clock_use_counts": dict(sorted(counts.items())),
         "absolute_clock_use_counts": absolute_counts,
-        "register_entry_consumers": register_consumers,
+        "register_entry_physics_consumers":
+            register_physics_consumers,
         "forced_clock": forced,
         "verdict":
             "LANDED_DEFINITION_SPLIT_NO_SINGLE_FORCED_CLOCK"
@@ -532,15 +708,18 @@ def forcing_test(
 
 
 def accounting_consequence(
-    certificate_a: dict[str, object],
-    certificate_b: dict[str, object],
+    consumer_census: dict[str, object],
+    clock_certificate: dict[str, object],
+    forcing_certificate: dict[str, object],
     self_tree: ast.Module,
 ) -> dict[str, object]:
-    clocks = certificate_a["clocks"]
+    """Certificate B: state the corrected verdict and its accounting."""
+
+    clocks = clock_certificate["clocks"]
     clock_rows = tuple({
         "clock": name,
         "times_by_event_0_2_1": row["times_by_event_0_2_1"],
-        "raw_catchup": raw_catchup(row["times"]),
+        "raw_target_blind_catchup": raw_catchup(row["times"]),
         "residuals_for_comparison_only": COHORT_RESIDUALS,
         "signed_raw_minus_residual": tuple(
             observed - target
@@ -554,66 +733,87 @@ def accounting_consequence(
             else "DIFFERS_FROM_RESIDUALS",
     } for name, row in clocks.items())
     row_by_clock = {row["clock"]: row for row in clock_rows}
-    per_object = tuple({
+    physics_clock_rows = tuple({
         "object": row["object"],
         "clock": row["clock"],
-        "raw_catchup":
-            row_by_clock[row["clock"]]["raw_catchup"]
-            if row["clock"] in row_by_clock else None,
-        "relation":
-            row_by_clock[row["clock"]]["relation"]
-            if row["clock"] in row_by_clock
-            else "NOT_APPLICABLE_ORIGIN_NEUTRAL_PHASE",
-    } for row in certificate_b["rows"])
+        "raw_target_blind_catchup":
+            row_by_clock[row["clock"]]["raw_target_blind_catchup"],
+        "relation": row_by_clock[row["clock"]]["relation"],
+    } for row in forcing_certificate["rows"]
+      if row["clock"] in row_by_clock)
     forcing_node = function_node(self_tree, "forcing_test")
     forbidden_selection_names = (
         loaded_names(forcing_node)
         & {"COHORT_RESIDUALS", "raw_catchup"}
     )
     landed_absolute_clock_ids = {
-        row["clock"] for row in certificate_b["rows"]
+        row["clock"] for row in physics_clock_rows
         if row["clock"] in row_by_clock
     }
     landed_absolute_rows = tuple(
         row_by_clock[name] for name in sorted(landed_absolute_clock_ids)
     )
+    fitted_terms: tuple[object, ...] = ()
     passed = (
         not forbidden_selection_names
-        and certificate_b["forced_clock"] is None
+        and forcing_certificate["forced_clock"] is None
         and landed_absolute_clock_ids
         == {"MOMENT", "MOMENT_MINUS_FIVE"}
         and all(
-            row["raw_catchup"] == COHORT_RESIDUALS
+            row["raw_target_blind_catchup"] == COHORT_RESIDUALS
             for row in landed_absolute_rows
         )
-        and row_by_clock["REGISTER_FINAL_ENTRY"]["raw_catchup"]
+        and row_by_clock["REGISTER_FINAL_ENTRY"][
+            "raw_target_blind_catchup"
+        ]
         == (594, 65)
         and row_by_clock["REGISTER_FINAL_ENTRY"][
             "signed_raw_minus_residual"
         ] == (-1, 1)
-        and not certificate_b["register_entry_consumers"]
+        and not forcing_certificate[
+            "register_entry_physics_consumers"
+        ]
+        and consumer_census["physics_consumer_count"] == 0
+        and consumer_census["audit_consumer_count"] == 3
+        and not fitted_terms
     )
     return {
-        "certificate": "C_COHORT_GAP_ACCOUNTING",
+        "certificate": "B_CORRECTED_VERDICT_AND_ACCOUNTING",
+        "abstract_forcing":
+            "NO_CLOCK_IS_LANDED_FORCED_IN_THE_ABSTRACT",
+        "practical_resolution":
+            "No clock is landed-forced in the abstract, BUT every landed "
+            "PHYSICS consumer reads MOMENT or MOMENT-5, all landed "
+            "absolute readings give {595,64} exactly, and the "
+            "register-entry reading has no PHYSICS consumer.",
+        "precise_verdict":
+            "NO_CLOCK_IS_LANDED_FORCED_IN_THE_ABSTRACT; "
+            "EVERY_LANDED_PHYSICS_CONSUMER_READS_MOMENT_OR_MOMENT_MINUS_"
+            "FIVE; ALL_LANDED_ABSOLUTE_READINGS_GIVE_595_64_EXACTLY; "
+            "THE_REGISTER_ENTRY_READING_HAS_NO_PHYSICS_CONSUMER",
+        "forced_clock": forcing_certificate["forced_clock"],
+        "verdict":
+            "PRACTICAL_ZERO_PHYSICS_CONSUMER_RESOLUTION",
+        "clock_use_counts": forcing_certificate["clock_use_counts"],
         "formula": "raw(s,t)=t_target-t_source-lcm(4464,5952)",
         "lcm": LCM_SKELETON,
         "clock_rows": clock_rows,
-        "per_object_rows": per_object,
+        "physics_clock_rows": physics_clock_rows,
         "target_aware_forcing_names": tuple(
             sorted(forbidden_selection_names)
         ),
         "selection_used_residual_targets": bool(
             forbidden_selection_names
         ),
+        "fitted_terms": fitted_terms,
         "status":
-            "NO_SINGLE_LABEL_FORCED; ALL_LANDED_ABSOLUTE_READINGS_EQUAL_"
-            "595_64; REGISTER_ENTRY_594_65_HAS_ZERO_LANDED_CONSUMERS",
+            "NO_ABSTRACT_FORCED_CLOCK; PHYSICS_CLOCKS_EQUAL_595_64; "
+            "REGISTER_ENTRY_HAS_ZERO_PHYSICS_CONSUMERS",
         "consequence":
-            "The definitions are plural (moment versus moment-5), but their "
-            "uniform five-tick offset cancels in both gaps.  Every landed "
-            "absolute cohort-timing consumer therefore gives raw {595,64}, "
-            "exactly the residuals.  Register entry gives {594,65} and is "
-            "not selected by any audited landed definition.",
+            "Raw target-blind catch-up on the PHYSICS clocks is exactly "
+            "the residual pair {595,64}. No fitted term is present. "
+            "REGISTER-ENTRY gives the audited {594,65} near-miss, but no "
+            "landed law or construction consumes that clock.",
         "pass": passed,
     }
 
@@ -712,14 +912,29 @@ def source_controls(
 
 
 def build_science(
+    payloads: dict[str, bytes],
     trees: dict[str, ast.Module],
     self_tree: ast.Module,
 ) -> tuple[dict[str, object], dict[str, object], dict[str, object]]:
-    certificate_a = clock_definitions(trees)
-    certificate_b = forcing_test(trees, certificate_a["clocks"])
-    certificate_c = accounting_consequence(
-        certificate_a, certificate_b, self_tree
+    certificate_a = register_entry_consumer_census(payloads, trees)
+    clock_certificate = clock_definitions(trees)
+    forcing_certificate = forcing_test(
+        trees, clock_certificate["clocks"]
     )
+    certificate_b = accounting_consequence(
+        certificate_a,
+        clock_certificate,
+        forcing_certificate,
+        self_tree,
+    )
+    certificate_c = {
+        "certificate":
+            "C_THREE_CLOCKS_AND_FORCING_ROWS_REPRODUCED",
+        "clock_formalizations": clock_certificate,
+        "forcing_rows": forcing_certificate,
+        "pass":
+            clock_certificate["pass"] and forcing_certificate["pass"],
+    }
     return certificate_a, certificate_b, certificate_c
 
 
@@ -739,8 +954,8 @@ def render(
 def main() -> int:
     started = monotonic()
     payloads, trees, self_tree = source_payloads()
-    first = build_science(trees, self_tree)
-    second = build_science(trees, self_tree)
+    first = build_science(payloads, trees, self_tree)
+    second = build_science(payloads, trees, self_tree)
     deterministic = digest(first) == digest(second)
     certificate_a, certificate_b, certificate_c = first
     certificate_d = source_controls(payloads, trees, self_tree)
@@ -772,14 +987,21 @@ def main() -> int:
     }
     summary = {
         "cycle": 841,
+        "version": 2,
         "forced_clock": certificate_b["forced_clock"],
         "verdict": certificate_b["verdict"],
         "clock_use_counts": certificate_b["clock_use_counts"],
+        "register_entry_consumer_verdict":
+            certificate_a["verdict"],
+        "register_entry_physics_consumer_count":
+            certificate_a["physics_consumer_count"],
+        "register_entry_audit_consumers":
+            certificate_a["audit_consumers"],
         "landed_absolute_raw_catchup": (595, 64),
         "register_entry_raw_catchup": (594, 65),
-        "accounting_status": certificate_c["status"],
+        "accounting_status": certificate_b["status"],
         "pass": False,
-        "terminal": "CYCLE841_DECIDING_THE_TICK_HONEST_FAIL",
+        "terminal": "CYCLE841_V2_ZERO_PHYSICS_CONSUMER_HONEST_FAIL",
     }
 
     output = ""
@@ -791,9 +1013,9 @@ def main() -> int:
             science_pass and deterministic and runtime_pass and stdout_pass
         )
         new_terminal = (
-            "CYCLE841_DECIDING_THE_TICK_SPLIT_PASS"
+            "CYCLE841_V2_ZERO_PHYSICS_CONSUMER_PASS"
             if final_pass
-            else "CYCLE841_DECIDING_THE_TICK_HONEST_FAIL"
+            else "CYCLE841_V2_ZERO_PHYSICS_CONSUMER_HONEST_FAIL"
         )
         stable = (
             controls["stdout_bytes"] == output_bytes

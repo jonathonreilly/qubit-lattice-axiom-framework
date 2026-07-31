@@ -968,8 +968,10 @@ def run() -> int:
         start_active = active_mask
         logical_transitions = 0
         phase_resolutions = []
+        physical_global_updates = 0
         for update in range(start + 1, stop + 1):
             advance(columns, schedule)
+            physical_global_updates += 1
             logical_transitions += active_mask.bit_count()
             nonclean = nonclean_mask(columns, residual_rows)
             if update < EXPECTED_OLD_CYCLES[IDENTITY_CYCLE_KEY]:
@@ -1020,6 +1022,19 @@ def run() -> int:
                 initial_inequality_counts[lane] += 1
             previous_nonclean = nonclean
         upper = start_active.bit_count() * (stop - start)
+        expected_saved = sum(
+            stop - int(records[key]["resolution_moment"])
+            for key in phase_resolutions
+        )
+        expected_executed = upper - expected_saved
+        population_account = (
+            active_mask.bit_count() + len(phase_resolutions)
+            == start_active.bit_count()
+        )
+        complete_population = (
+            physical_global_updates == stop - start
+            and population_account
+        )
         return {
             "start_horizon": start,
             "end_horizon": stop,
@@ -1029,12 +1044,19 @@ def run() -> int:
             "logical_transition_upper_if_no_terminals": upper,
             "logical_transitions_saved_by_terminals":
                 upper - logical_transitions,
+            "expected_savings_from_exact_resolution_moments":
+                expected_saved,
+            "expected_logical_transitions_from_resolution_moments":
+                expected_executed,
             "transitions_account":
-                logical_transitions + (upper - logical_transitions) == upper,
-            "physical_global_updates": stop - start,
+                logical_transitions == expected_executed
+                and upper - logical_transitions == expected_saved,
+            "physical_global_updates": physical_global_updates,
+            "expected_physical_global_updates": stop - start,
             "resolutions_in_phase": len(phase_resolutions),
             "resolved_keys": tuple(phase_resolutions),
-            "complete_population": True,
+            "population_account": population_account,
+            "complete_population": complete_population,
             "seconds": round(monotonic() - phase_started, 6),
         }
 
@@ -1292,8 +1314,8 @@ def run() -> int:
         and duplicate_initial_exact
         and duplicate_masks_identical
         and baseline_pass
-        and reached >= MINIMUM_DEEP_HORIZON
-        and reached in BOUNDARIES
+        and reached == TARGET_HORIZON
+        and all(decision["accepted"] for decision in decisions)
         and all(row["pass"] for row in boundary_rows)
         and all(row["complete_population"] for row in phases)
         and all(row["transitions_account"] for row in phases)

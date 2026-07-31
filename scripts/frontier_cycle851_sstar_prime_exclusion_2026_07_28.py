@@ -695,6 +695,16 @@ def local_invariant_hunt(
             parity(state, wires) != parity(target, wires)
             for state in states.values()
         )
+        nonseparation = next((
+            {
+                "key": key,
+                "initial_parity": parity(state, wires),
+                "target_parity": parity(target, wires),
+                "initial_state_sha256": state_sha256(state),
+            }
+            for key, state in sorted(states.items())
+            if parity(state, wires) == parity(target, wires)
+        ), None)
         whole_step_failure = parity_failure_witness(wires, states, words)
         row = {
             "candidate": name,
@@ -708,6 +718,7 @@ def local_invariant_hunt(
             "primitive_failure_witness": primitive_parity_failure(wires, macros),
             "whole_step_failure_witness": whole_step_failure,
             "separates_all_initial_states": separation,
+            "nonseparation_witness": nonseparation,
         }
         parity_rows.append(row)
         if primitive_preserved and separation:
@@ -847,6 +858,12 @@ def local_invariant_hunt(
                 row["whole_step_failure_witness"] is not None
                 for row in parity_rows
                 if not row["primitive_induction_preserved"]
+            )
+            and all(
+                row["nonseparation_witness"] is not None
+                for row in parity_rows
+                if row["primitive_induction_preserved"]
+                and not row["separates_all_initial_states"]
             )
             and all(
                 row["nonseparation_witness"] is not None

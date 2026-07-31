@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC26-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle844_bets_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 17
+    },
+    "logs/runner-cache/frontier_cycle844_standing_bets_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 30
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 844,
+  "files": {
+    "docs/STANDING_BETS_CYCLE844_BOUNDED_THEOREM_NOTE_2026-07-28.md": "e91c777f10353e8d99fedc7585053237159d7afb5293582eced336f99d22e9d2",
+    "logs/runner-cache/frontier_cycle844_bets_independent_check_2026_07_28.txt": "6662ebf515cea7d5c38f9e9bbcd4394dc1dd75975d870fdc12e1ace07308fd6d",
+    "logs/runner-cache/frontier_cycle844_standing_bets_2026_07_28.txt": "bdf6d43833bd7184207e15ac6b9be85ea7458991bc162d43802245203dcedb09",
+    "scripts/frontier_cycle844_bets_independent_check_2026_07_28.py": "0bb216dd940e886021736628f9245e5de4c9b1c7e3345f1d6d067491a0c7b17d",
+    "scripts/frontier_cycle844_standing_bets_2026_07_28.py": "6c52e0d8db9b4b7ecf91b3c5b17436036c89ff18def2f951fb2ee0db8e2a19f9"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "B2 CONFIRMED: the station-0 event-0 pair resolves SYNCHRONOUSLY at t=1,142,432 (funnel weight 49)",
+    "THE s=5 STORY TOTAL: 44/44 resolved \u2014 33 transients + 11 cycles (checker-ledgered)",
+    "B1 stands (trio open through complete T=524,288); B3 stands (zero pinned-state visits)",
+    "checker CYCLE844_BETS_INDEPENDENT_CHECK_PASS"
+  ]
+}

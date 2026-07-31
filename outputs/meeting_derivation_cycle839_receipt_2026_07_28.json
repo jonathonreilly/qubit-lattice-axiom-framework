@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR21-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle839_meeting_derivation_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 10
+    },
+    "logs/runner-cache/frontier_cycle839_meeting_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 1
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 839,
+  "files": {
+    "docs/MEETING_DERIVATION_CYCLE839_BOUNDED_THEOREM_NOTE_2026-07-28.md": "0c2b2b9e8bafec294010f36cf7e7e5f47a71df7f478902a8842e0923e1002ad9",
+    "logs/runner-cache/frontier_cycle839_meeting_derivation_2026_07_28.txt": "52cc3bdd82ebfb968ab166b6afb5a8ebb6718de6a91b74770d4cd63eb880bc9c",
+    "logs/runner-cache/frontier_cycle839_meeting_independent_check_2026_07_28.txt": "fef26161643e13971a659f08688c3ebf7cfc479b074d4ba5654ba867fa7e637c",
+    "scripts/frontier_cycle839_meeting_derivation_2026_07_28.py": "bba2ce68e34bb6c502681c201ba83666e9f674aea2606ced4e3f894fdadfe4fa",
+    "scripts/frontier_cycle839_meeting_independent_check_2026_07_28.py": "d3f0a9ce81df6f6f9304d0d574beac691b59803d7d41859b3d584b5b4aed4789"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "the per-s meeting theorem (times (1,5)/(1,5)/(2,4)/(2,4)/(3,3); only s=5 symmetric; only s=5 places both A tokens in the combined centers)",
+    "reachability split: s=2..4 -> 0/44 each; s=5 -> 9/44 = exactly the nine backbone entrants (every microstep through tick 162129)",
+    "verdict PARTIAL \u2014 the causal tie-to-funnel link is the one named gap (Cycle 840 hunts it)",
+    "checker CYCLE839_MEETING_INDEPENDENT_CHECK_PASS"
+  ]
+}

@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/frontier_cycle839_meeting_independent_check_2026_07_28.py
+runner_sha256: d3f0a9ce81df6f6f9304d0d574beac691b59803d7d41859b3d584b5b4aed4789
+input_fingerprint_sha256: 64e827fed3b9c21d56e5abc75e92250f877318d13b7d3fcbb106dcfd31449604
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 30.87
+status: ok
+----- stdout -----
+CERTIFICATE THE MEETING THEOREM PASS :: The independently enumerated short/long meeting times are (1,5),(1,5),(2,4),(2,4),(3,3), with the claimed representative centers; the two arc times tie only at s=5.
+CERTIFICATE THE TOKEN CLAIM PASS :: Only s=5 puts both common-translating A tokens on the union of the two arc-center sets at one meeting tick. The occupied A row is not source-swap-reflection symmetric, B remains clean, and no token collision occurs; s=1 is outside the landed family.
+CERTIFICATE THE MEET-CONFIGURATIONS TABLE PASS :: s=1 is outside the landed family; the independently projected unique 5815-bit state counts (short/long) are s2=21/34, s3=25/33, s4=26/32, and s5=21/21.
+CERTIFICATE THE REACHABILITY SPLIT PASS :: Through inclusive controller tick 162129, the full s=4 cohort reaches exact weight-44 S* for 0/44 keys and the full s=5 cohort for 9/44 keys; the nine reaching keys are exactly the event-0, origin-absent separation-5 backbone entrants.
+CERTIFICATE THE PARTIAL RULING PASS :: PARTIAL: the meeting theorem, actual rail consequence, and bounded reach/nonreach classification hold exactly; the tie-to-funnel causal link remains open.
+CERTIFICATE CONTROLS PASS :: All source SHA/blob pins, the two-primary import firewall, literal worktree-relative input declaration, six-read cap, determinism checks, runtime ceiling, and stdout ceiling pass.
+SUMMARY_JSON {"checker":"frontier_cycle839_meeting_independent_check_2026_07_28.py","checks":{"CONTROLS":true,"THE MEET-CONFIGURATIONS TABLE":true,"THE MEETING THEOREM":true,"THE PARTIAL RULING":true,"THE REACHABILITY SPLIT":true,"THE TOKEN CLAIM":true},"cycle":839,"meeting_times":[[1,5],[1,5],[2,4],[2,4],[3,3]],"pass":true,"projected_unique_short_long":[[21,34],[25,33],[26,32],[21,21]],"ruling":"PARTIAL","runtime_seconds":30.789525,"s4_exact_reach":[0,44],"s5_exact_reach":[9,44],"s5_reaching_keys":[[0,[1,6]],[0,[1,7]],[0,[2,7]],[0,[2,8]],[0,[3,8]],[0,[3,9]],[0,[4,9]],[0,[4,10]],[0,[5,10]]],"stdout_bytes":2115,"stdout_limit_bytes":150000,"terminal":"CYCLE839_MEETING_INDEPENDENT_CHECK_PASS"}
+CYCLE839_MEETING_INDEPENDENT_CHECK_PASS
+
+----- stderr -----
+

@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Cycle 843: the full-state pulse phase and its exact selector.
+"""Cycle 843 v2: the honestly named pulse coincidence state.
 
 The landed Cycle-719 controller core is the sole executable science
 dependency.  Current-worktree Cycle-834/838 sources are SHA-pinned text/AST
 controls only.  Cycle-832/833/835 sibling results are copied as small,
-SHA-pinned provenance records and are never imported or executed.
+SHA-pinned provenance records and are never imported or executed.  V2 adopts
+the independent identity ruling while retaining the exact phase and selector
+results.
 """
 from __future__ import annotations
 
@@ -154,6 +156,15 @@ EXPECTED_PHASE_PARTITIONS = (
     (1, 3, 3, 2),
     (9,),
 )
+EXPECTED_COINCIDENCE_SHA256 = (
+    "4a7ce9fd4e9ebfdbd8580c33122d9e87c3896b24ef196e34bec49e233d044375"
+)
+EXPECTED_CYCLE833_S0_PRIME_SHA256 = (
+    "d874aeeb1d4e5ca29b806886314c796ac32e6658b21f888d8e2aa01044905c12"
+)
+V1_IDENTITY_RETRACTION = (
+    "the v1 \"is exactly S0'\" claim RETRACTED as a naming collision"
+)
 REGISTER_FIELDS = (
     "source.LEFT_ENDPOINT",
     "source.RIGHT_ENDPOINT",
@@ -263,7 +274,7 @@ def build_event3_family() -> dict[str, object]:
         "program": program,
         "words": words,
         "epoch_states": tuple(epochs),
-        "S0_prime": epochs[3],
+        "pulse_coincidence_state": epochs[3],
         "states": event3_states,
         "rail_rows": tuple(rail_rows),
         "summary": {
@@ -272,7 +283,7 @@ def build_event3_family() -> dict[str, object]:
             "word_gate_counts": tuple(sorted({
                 len(word) for word in words.values()
             })),
-            "S0_prime_weight": sum(epochs[3]),
+            "pulse_coincidence_state_weight": sum(epochs[3]),
             "all_rail_compositions_exact":
                 all(row["composition_exact"] for row in rail_rows),
         },
@@ -395,8 +406,16 @@ def exact_diff(left: State, right: State) -> dict[str, object]:
         wire for wire, values in enumerate(zip(left, right))
         if values[0] != values[1]
     )
+    component_xor_weights = Counter(
+        WIRE_NAMES[wire].split(".", 1)[0] for wire in wires
+    )
     return {
         "xor_weight": len(wires),
+        "component_xor_weights": dict(sorted(component_xor_weights.items())),
+        "bank_xor_weights": {
+            f"bank{bank}": component_xor_weights.get(f"bank{bank}", 0)
+            for bank in range(FIXTURE_BANKS)
+        },
         "wire_indices": wires,
         "named_transitions": tuple(
             (WIRE_NAMES[wire], left[wire], right[wire])
@@ -462,6 +481,7 @@ def replay_phases(family: dict[str, object]) -> dict[str, object]:
 def phase_state_certificate(
     family: dict[str, object],
     replay: dict[str, object],
+    comparisons: dict[str, object],
 ) -> dict[str, object]:
     phases = replay["phase_states"]
     assert isinstance(phases, tuple)
@@ -491,20 +511,39 @@ def phase_state_certificate(
         ),
     } for lane in range(len(EVENT3_KEYS))
       for left_phase, right_phase in combinations(range(3), 2))
-    s0_prime = family["S0_prime"]
-    assert isinstance(s0_prime, tuple)
     coincidence = phases[2][0]
+    coincidence_seed = family["pulse_coincidence_state"]
+    comparison_states = comparisons["objects"]
+    assert isinstance(coincidence_seed, tuple)
+    assert isinstance(comparison_states, dict)
+    cycle833_s0_prime = comparison_states["S0'"]
+    identity_diff = exact_diff(coincidence, cycle833_s0_prime)
     exact = (
         tuple(row["component_sizes"] for row in phase_rows)
         == EXPECTED_PHASE_PARTITIONS
         and all(state == coincidence for state in phases[2])
-        and coincidence == s0_prime
+        and coincidence == coincidence_seed
+        and state_sha256(coincidence) == EXPECTED_COINCIDENCE_SHA256
+        and sum(coincidence) == 59
+        and coincidence != cycle833_s0_prime
+        and state_sha256(cycle833_s0_prime)
+        == EXPECTED_CYCLE833_S0_PRIME_SHA256
+        and sum(cycle833_s0_prime) == 47
+        and identity_diff["xor_weight"] == 32
+        and identity_diff["component_xor_weights"]
+        == {"bank0": 18, "bank1": 14}
         and replay["all_close_at_movement_3"]
         and len(same_key_diffs) == 27
         and all(row["diff"]["xor_weight"] > 0 for row in same_key_diffs)
     )
     return {
         "verdict": "PASS" if exact else "FAIL",
+        "certificate": "A — rename and retraction",
+        "retraction": V1_IDENTITY_RETRACTION,
+        "identity_ruling":
+            "DISTINCT: the pulse coincidence state is a new object, not "
+            "the SHA-pinned Cycle-833 S0'.",
+        "allowed_object_phrase": "pulse coincidence state",
         "definition":
             "all 27 full 5815-bit event-3 backbone boundary states",
         "phase_rows": tuple(phase_rows),
@@ -514,8 +553,10 @@ def phase_state_certificate(
         ),
         "coincidence_phase_mod_3": 2,
         "coincidence_state_anatomy": state_anatomy(coincidence),
-        "S0_prime_anatomy": state_anatomy(s0_prime),
-        "coincidence_is_exact_S0_prime": coincidence == s0_prime,
+        "cycle833_S0_prime_anatomy": state_anatomy(cycle833_s0_prime),
+        "coincidence_vs_cycle833_S0_prime": identity_diff,
+        "coincidence_is_cycle833_S0_prime":
+            coincidence == cycle833_s0_prime,
         "period_3_closure_exact": replay["all_close_at_movement_3"],
         "pass": exact,
     }
@@ -571,6 +612,8 @@ def reconstruct_comparison_objects(
 ) -> dict[str, object]:
     """Rebuild the three funnels and two named post-S* skeletons."""
 
+    pulse_coincidence_state = family["pulse_coincidence_state"]
+    assert isinstance(pulse_coincidence_state, tuple)
     events = (0, 2, 1)
     witness = BACKBONE[0]
     words = family["words"]
@@ -630,19 +673,47 @@ def reconstruct_comparison_objects(
         "FUNNEL_EVENT1_WEIGHT46":
             "797fa122a629177c00c707aff4857d01bbad16b078983e3a6f1f5b632e094a41",
     }
+    cycle833_s1 = captured["FUNNEL_EVENT1_WEIGHT46"]
+    head1 = WIRE_BY_NAME["bank0.HEAD[1]"]
+    cycle833_s0_prime_bits = list(cycle833_s1)
+    cycle833_s0_prime_bits[head1] ^= 1
+    cycle833_s0_prime = tuple(cycle833_s0_prime_bits)
+    public_objects = {
+        "S*": captured["FUNNEL_EVENT0_WEIGHT44"],
+        "S2": captured["FUNNEL_EVENT2_WEIGHT45"],
+        "S1": cycle833_s1,
+        "S0'": cycle833_s0_prime,
+        "station-0 funnel weight 57":
+            captured["SSTAR_POST_9_WEIGHT57"],
+        "station-0 funnel weight 51":
+            captured["SSTAR_POST_5_WEIGHT51"],
+    }
     rows = tuple({
-        "object": name,
+        "object": public_name,
         "construction": (
             "Cycle-833 funnel boundary"
-            if name.startswith("FUNNEL_")
-            else (
-                "first event-0 resolution boundary, S*+5"
-                if name == "SSTAR_POST_5_WEIGHT51"
-                else "first weight-57 event-0 post-funnel boundary, S*+9"
-            )
+            if public_name in ("S*", "S2", "S1")
+            else "Cycle-833 prediction S0' := map(S1)"
+            if public_name == "S0'"
+            else public_name
         ),
-        "anatomy": state_anatomy(captured[name]),
-    } for name in expected_weights)
+        "anatomy": state_anatomy(state),
+    } for public_name, state in public_objects.items())
+    iterates = []
+    iterate = cycle833_s0_prime
+    for power in range(1, 9):
+        updated = list(iterate)
+        updated[head1] ^= 1
+        iterate = tuple(updated)
+        iterates.append({
+            "power": power,
+            "sha256": state_sha256(iterate),
+            "weight": sum(iterate),
+            "is_S1": iterate == cycle833_s1,
+            "is_S0_prime": iterate == cycle833_s0_prime,
+            "is_pulse_coincidence_state":
+                iterate == pulse_coincidence_state,
+        })
     exact = (
         set(captured) == set(expected_weights)
         and all(
@@ -654,13 +725,31 @@ def reconstruct_comparison_objects(
             for name, expected_hash in expected_funnel_hashes.items()
         )
         and all(row["exact"] for row in duplicate_rows)
+        and sum(cycle833_s0_prime) == 47
+        and state_sha256(cycle833_s0_prime)
+        == EXPECTED_CYCLE833_S0_PRIME_SHA256
+        and all(
+            row["is_S1"] if row["power"] % 2 else row["is_S0_prime"]
+            for row in iterates
+        )
+        and not any(
+            row["is_pulse_coincidence_state"] for row in iterates
+        )
     )
     return {
-        "objects": captured,
+        "objects": public_objects,
         "public_rows": rows,
         "expected_weights": expected_weights,
         "expected_funnel_sha256": expected_funnel_hashes,
         "determinism_rows": tuple(duplicate_rows),
+        "map_relationship": {
+            "operation": "XOR bank0.HEAD[1]",
+            "exact_orbit": "S1 <-> S0'",
+            "positive_power_rows": tuple(iterates),
+            "never_reaches_pulse_coincidence_state": not any(
+                row["is_pulse_coincidence_state"] for row in iterates
+            ),
+        },
         "pass": exact,
     }
 
@@ -760,11 +849,12 @@ def selector_certificate(
     comparison_states = comparisons["objects"]
     assert isinstance(comparison_states, dict)
     comparison_order = (
-        "FUNNEL_EVENT0_WEIGHT44",
-        "FUNNEL_EVENT2_WEIGHT45",
-        "FUNNEL_EVENT1_WEIGHT46",
-        "SSTAR_POST_5_WEIGHT51",
-        "SSTAR_POST_9_WEIGHT57",
+        "S*",
+        "S2",
+        "S1",
+        "S0'",
+        "station-0 funnel weight 57",
+        "station-0 funnel weight 51",
     )
     comparison_rows = tuple({
         "object": name,
@@ -777,14 +867,36 @@ def selector_certificate(
             state_anatomy(coincidence)["tokens"]
             == state_anatomy(state)["tokens"],
     } for name in comparison_order
-      for state in (comparison_states[name],)) + ({
-        "object": "S0_prime",
-        "exact_match": coincidence == family["S0_prime"],
-        "exact_diff_from_coincidence":
-            exact_diff(coincidence, family["S0_prime"]),
-        "occupancy_equal": True,
-        "tokens_equal": True,
-    },)
+      for state in (comparison_states[name],))
+    expected_census = {
+        "S*": (
+            44, 39, {"bank0": 23, "bank1": 14, "source": 2},
+        ),
+        "S2": (
+            45, 40, {"bank0": 24, "bank1": 14, "source": 2},
+        ),
+        "S1": (
+            46, 31, {"bank0": 17, "bank1": 14},
+        ),
+        "S0'": (
+            47, 32, {"bank0": 18, "bank1": 14},
+        ),
+        "station-0 funnel weight 57": (
+            57, 56,
+            {"bank0": 28, "bank1": 24, "link0": 1, "source": 3},
+        ),
+        "station-0 funnel weight 51": (
+            51, 50, {"bank0": 33, "bank1": 14, "source": 3},
+        ),
+    }
+    census_exact = all(
+        (
+            row["exact_diff_from_coincidence"]["right_weight"],
+            row["exact_diff_from_coincidence"]["xor_weight"],
+            row["exact_diff_from_coincidence"]["component_xor_weights"],
+        ) == expected_census[row["object"]]
+        for row in comparison_rows
+    )
     expected_singletons = (
         "source.SOURCE_POINTER",
         "link0.wire[0]",
@@ -814,14 +926,17 @@ def selector_certificate(
             state[source_pointer] + state[link_token] == 1
             for state in boundary_states
         )
-        and comparison_rows[-1]["exact_match"]
-        and not any(
-            row["exact_match"] for row in comparison_rows[:-1]
-        )
+        and census_exact
+        and not any(row["exact_match"] for row in comparison_rows)
+        and comparisons["map_relationship"][
+            "never_reaches_pulse_coincidence_state"
+        ]
     )
     return {
         "verdict": "PASS" if exact else "FAIL",
-        "coincidence_state_is": "EXACT_S0_PRIME",
+        "certificate": "B — relationship census",
+        "coincidence_state_is":
+            "DISTINCT_FROM_EVERY_CENSUSED_NAMED_STATE",
         "register_block": {
             "field_count": len(register_wires),
             "fields": REGISTER_FIELDS,
@@ -870,11 +985,12 @@ def selector_certificate(
                 "logical transfer selector as the two physical wires",
         },
         "known_object_exact_comparisons": comparison_rows,
+        "expected_weight_xor_and_component_splits": expected_census,
+        "map_iterate_fact": comparisons["map_relationship"],
         "finding":
-            "The pulse is exact S0'.  Outside the common 39-field block, "
-            "source.SOURCE_POINTER=1 and link0.wire[0]=0 each select it "
-            "alone; occupancy, token rows, meet geometry, and full parity "
-            "do not.",
+            "The pulse coincidence state is distinct from S*, S2, S1, "
+            "S0', and both station-0 funnels. The Cycle-833 operation "
+            "alternates S1 <-> S0' and never reaches it.",
         "pass": exact,
     }
 
@@ -884,14 +1000,80 @@ def phase_law_certificate(
 ) -> dict[str, object]:
     words = family["words"]
     family_states = family["states"]
-    s0_prime = family["S0_prime"]
+    coincidence = family["pulse_coincidence_state"]
     assert isinstance(words, dict)
     assert isinstance(family_states, dict)
-    assert isinstance(s0_prime, tuple)
+    assert isinstance(coincidence, tuple)
     source_pointer = WIRE_BY_NAME["source.SOURCE_POINTER"]
     link_token = WIRE_BY_NAME["link0.wire[0]"]
     states = tuple(family_states[key] for key in EVENT3_KEYS)
     initial_states = states
+    phase_states = states
+    boundary_rows = []
+    for phase in range(3):
+        boundary_rows.extend(
+            (phase, key, state)
+            for key, state in zip(EVENT3_KEYS, phase_states)
+        )
+        phase_states = tuple(
+            K.A.apply_semantic(state, words[key[1]])
+            for key, state in zip(EVENT3_KEYS, phase_states)
+        )
+    boundary_expected = tuple(
+        phase == 2 for phase, _key, _state in boundary_rows
+    )
+    singleton_selectors = []
+    for wire in range(STATE_BITS):
+        for selected_value in (0, 1):
+            observed = tuple(
+                state[wire] == selected_value
+                for _phase, _key, state in boundary_rows
+            )
+            if observed == boundary_expected:
+                singleton_selectors.append({
+                    "wire_index": wire,
+                    "field": WIRE_NAMES[wire],
+                    "selected_value": selected_value,
+                })
+    required_selectors = (
+        (source_pointer, "source.SOURCE_POINTER", 1),
+        (link_token, "link0.wire[0]", 0),
+    )
+    direction_rows = []
+    for wire, name, selected_value in required_selectors:
+        selected = tuple(
+            state[wire] == selected_value
+            for _phase, _key, state in boundary_rows
+        )
+        direction_rows.append({
+            "selector": f"{name}={selected_value}",
+            "coincidence_implies_selector": all(
+                flag
+                for flag, target in zip(selected, boundary_expected)
+                if target
+            ),
+            "selector_implies_coincidence": all(
+                target
+                for flag, target in zip(selected, boundary_expected)
+                if flag
+            ),
+            "true_positives": sum(
+                flag and target
+                for flag, target in zip(selected, boundary_expected)
+            ),
+            "false_positives": sum(
+                flag and not target
+                for flag, target in zip(selected, boundary_expected)
+            ),
+            "false_negatives": sum(
+                not flag and target
+                for flag, target in zip(selected, boundary_expected)
+            ),
+            "true_negatives": sum(
+                not flag and not target
+                for flag, target in zip(selected, boundary_expected)
+            ),
+        })
     rows = []
     period_closures = []
     for movement in range(3 * SAMPLED_PERIODS):
@@ -909,10 +1091,14 @@ def phase_law_certificate(
                 "source.SOURCE_POINTER": state[source_pointer],
                 "link0.wire[0]": state[link_token],
                 "named_selector": selector,
-                "exact_S0_prime": state == s0_prime,
+                "is_pulse_coincidence_state": state == coincidence,
                 "expected_coincidence_phase": expected,
                 "biconditional_exact":
-                    selector == (state == s0_prime) == expected,
+                    (state == coincidence)
+                    == (state[source_pointer] == 1)
+                    == (state[link_token] == 0)
+                    == selector
+                    == expected,
             })
         states = tuple(
             K.A.apply_semantic(state, words[key[1]])
@@ -937,15 +1123,36 @@ def phase_law_certificate(
         )
         and {
             row["phase_mod_3"]
-            for row in rows if row["exact_S0_prime"]
+            for row in rows if row["is_pulse_coincidence_state"]
         } == {2}
+        and len(boundary_rows) == 27
+        and sum(boundary_expected) == 9
+        and tuple(
+            (
+                row["wire_index"],
+                row["field"],
+                row["selected_value"],
+            )
+            for row in singleton_selectors
+        ) == required_selectors
+        and all(
+            row["coincidence_implies_selector"]
+            and row["selector_implies_coincidence"]
+            and row["true_positives"] == 9
+            and row["false_positives"] == 0
+            and row["false_negatives"] == 0
+            and row["true_negatives"] == 18
+            for row in direction_rows
+        )
     )
     return {
         "verdict": "HOLDS_EXACTLY" if exact else "FAILS",
+        "certificate": "C — kept selectors and phase law",
         "scope": "aligned completed orbit-word movement boundaries",
         "law":
             "For every event-3 backbone key and every integer movement m, "
-            "state(m)=S0' iff source.SOURCE_POINTER=1 and "
+            "state(m)=the pulse coincidence state iff "
+            "source.SOURCE_POINTER=1 iff "
             "link0.wire[0]=0 iff m mod 3=2.",
         "sampled_period_count": SAMPLED_PERIODS,
         "sampled_boundary_rows": tuple(rows),
@@ -957,9 +1164,16 @@ def phase_law_certificate(
             "period; this is finite-state induction, not extrapolation."
         ),
         "single_wire_corollaries": (
-            "source.SOURCE_POINTER=1 iff m mod 3=2",
-            "link0.wire[0]=0 iff m mod 3=2",
+            "pulse coincidence state iff source.SOURCE_POINTER=1",
+            "pulse coincidence state iff link0.wire[0]=0",
         ),
+        "all_minimal_single_wire_selectors":
+            tuple(singleton_selectors),
+        "minimality":
+            "The empty predicate cannot select exactly 9 of 27 rows; each "
+            "listed one-wire biconditional has minimum cardinality.",
+        "selector_directions_across_27_phase_states":
+            tuple(direction_rows),
         "dense_gate_scope_warning":
             "No claim is made away from aligned movement boundaries.",
         "pass": exact,
@@ -1162,8 +1376,8 @@ def run() -> int:
     family_duplicate = build_event3_family()
     replay = replay_phases(family)
     replay_duplicate = replay_phases(family_duplicate)
-    certificate_a = phase_state_certificate(family, replay)
     comparisons = reconstruct_comparison_objects(family)
+    certificate_a = phase_state_certificate(family, replay, comparisons)
     certificate_b = selector_certificate(
         family, replay, comparisons
     )
@@ -1180,8 +1394,8 @@ def run() -> int:
     )
     family_deterministic = (
         family_state_rows == family_duplicate_state_rows
-        and state_sha256(family["S0_prime"])
-        == state_sha256(family_duplicate["S0_prime"])
+        and state_sha256(family["pulse_coincidence_state"])
+        == state_sha256(family_duplicate["pulse_coincidence_state"])
     )
     replay_deterministic = (
         digest(replay) == digest(replay_duplicate)
@@ -1203,7 +1417,7 @@ def run() -> int:
             "keys": 9,
             "state_bits": STATE_BITS,
             "word_gate_counts": (6212,),
-            "S0_prime_weight": 59,
+            "pulse_coincidence_state_weight": 59,
             "all_rail_compositions_exact": True,
         }
         and deterministic
@@ -1238,15 +1452,15 @@ def run() -> int:
         "pass": controls_base,
     }
     checks = {
-        "A_THREE_PHASE_STATES": bool(certificate_a["pass"]),
-        "B_EXACT_COMPLEMENT_SELECTOR": bool(certificate_b["pass"]),
-        "C_PHASE_LAW": bool(certificate_c["pass"]),
+        "A_RENAME_AND_RETRACTION": bool(certificate_a["pass"]),
+        "B_RELATIONSHIP_CENSUS": bool(certificate_b["pass"]),
+        "C_KEPT_SELECTORS_AND_PHASE_LAW": bool(certificate_c["pass"]),
         "D_CONTROLS": controls_base,
     }
     certificates = {
-        "A_THREE_PHASE_STATES": certificate_a,
-        "B_SELECTOR_HUNT": certificate_b,
-        "C_PHASE_LAW": certificate_c,
+        "A_RENAME_AND_RETRACTION": certificate_a,
+        "B_RELATIONSHIP_CENSUS": certificate_b,
+        "C_KEPT_RESULTS": certificate_c,
         "D_CONTROLS": controls,
     }
     report = {
@@ -1254,8 +1468,13 @@ def run() -> int:
         "target": "full-state pulse phase at the event-3 coincidence",
         "phase_partition_sequence": EXPECTED_PHASE_PARTITIONS,
         "coincidence_phase_mod_3": 2,
-        "coincidence_object": "EXACT_S0_PRIME",
+        "coincidence_object": "pulse coincidence state",
+        "coincidence_sha256": EXPECTED_COINCIDENCE_SHA256,
         "coincidence_weight": 59,
+        "cycle833_S0_prime_sha256":
+            EXPECTED_CYCLE833_S0_PRIME_SHA256,
+        "cycle833_S0_prime_weight": 47,
+        "identity_retraction": V1_IDENTITY_RETRACTION,
         "minimal_single_wire_selectors": (
             "source.SOURCE_POINTER=1",
             "link0.wire[0]=0",

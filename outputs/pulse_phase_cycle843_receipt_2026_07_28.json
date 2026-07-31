@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "toe-close-blockC25-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle843_identity_adversarial_check_2026_07_31.txt": {
+      "fail": 0,
+      "pass": 6
+    },
+    "logs/runner-cache/frontier_cycle843_pulse_phase_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 843,
+  "files": {
+    "docs/PULSE_PHASE_CYCLE843_BOUNDED_THEOREM_NOTE_2026-07-28.md": "b8404133912d755bfd89edcbf59b7d82d7ba34ce59dd361fba6637f8792f2cf4",
+    "logs/runner-cache/frontier_cycle843_identity_adversarial_check_2026_07_31.txt": "f050773e9f340f4aecc1cf0e1ea7072cb93e96588b7ddde73f1fc344c46aa36d",
+    "logs/runner-cache/frontier_cycle843_pulse_phase_2026_07_28.txt": "ed302286d60424e3501cca864f9792a6d2773c5a4251d1147c3371a94a4c01a8",
+    "scripts/frontier_cycle843_identity_adversarial_check_2026_07_31.py": "df821340d8876032f1e3890e5469090b0580e07a27a988caa8256e0b5373ebef",
+    "scripts/frontier_cycle843_pulse_phase_2026_07_28.py": "68116221b3451aefd294d939b788cd3dbf518a190eaebd996b43fba5e8a54de9"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "reversal twenty-six: v1's 'is exactly S0'' RETRACTED as a naming collision (coincidence weight 59 vs S0' 47; 32-wire XOR; map iterates alternate S1<->S0' never reaching it)",
+    "the pulse coincidence state = a NEW sha-pinned object; relationship census vs all named states: matches none",
+    "two exact minimal selectors (SOURCE_POINTER=1; link0.wire[0]=0), both directions across 27 phase-states; phase law HOLDS_EXACTLY (nine keys, 12 periods)",
+    "primary CYCLE843_PULSE_PHASE_EXACT_PASS; checker CYCLE843_IDENTITY_ADVERSARIAL_CHECK_PASS (supervisor: cross-worktree audit path materialized)"
+  ]
+}

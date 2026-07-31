@@ -1,0 +1,35 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR28-20260729",
+  "certificate_count_formats": {
+    "logs/runner-cache/frontier_cycle855_free_sector_reduction_2026_07_28.txt": "REPORT.checks map",
+    "logs/runner-cache/frontier_cycle855_reduction_independent_check_2026_07_28.txt": "REPORT.checks map"
+  },
+  "certificates": {
+    "logs/runner-cache/frontier_cycle855_free_sector_reduction_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    },
+    "logs/runner-cache/frontier_cycle855_reduction_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 855,
+  "files": {
+    "docs/FREE_SECTOR_REDUCTION_CYCLE855_BOUNDED_THEOREM_NOTE_2026-07-28.md": "886e1f998187bb4fffdce5455ee7d642b40b507cf2440461e9512d9d5249ad40",
+    "logs/runner-cache/frontier_cycle855_free_sector_reduction_2026_07_28.txt": "f29be0bd54bb8278be8212a691e971905ef18fb6973bc3d91e5ce61bd9df2058",
+    "logs/runner-cache/frontier_cycle855_reduction_independent_check_2026_07_28.txt": "27437534af6a44adac2cf6be48a80685fec24df557d5aa01d6e052418419a013",
+    "scripts/frontier_cycle855_free_sector_reduction_2026_07_28.py": "2e61ea66ffb32a511c0e60c6b084fe4207b2e55d04bfe4de136516a91ca94a40",
+    "scripts/frontier_cycle855_reduction_independent_check_2026_07_28.py": "1b77ce1967bfe53bbb7194d9a48623fd921d4439f081617cdd632ec78d023f9a"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "free sector = 495 wires incl. mark bits {256,262} and all braid supports",
+    "cross-key COUPLED: inherited (x1,x6) in (0,1)/(1,0) feeds free wires {71,105,124,125,255,256} through all nine generators - 3,447 witnesses, 50 channel signatures; receivers are the three-wire-predicate wires and a mark bit",
+    "checker constructive refinement PER_KEY_AUTONOMOUS: with (x1,x6) fixed the free projection is closed; per-parameter reachable sizes 221,832 and 236,462",
+    "braid reproduced inside: 20/20 events, 86/86 transition probes (primary and checker) - the merged why's smallest arena"
+  ]
+}

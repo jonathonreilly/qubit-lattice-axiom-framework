@@ -12,7 +12,6 @@ AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 200 * 1024
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
-    "scripts/frontier_cycle736_pairwise_separated_multisource_2026_07_28.py",
     "scripts/frontier_cycle822_basin_independent_check_2026_07_28.py",
     "scripts/frontier_cycle832_cohort_moment_law_2026_07_28.py",
     "logs/runner-cache/frontier_cycle818_period_structure_census_2026_07_28.txt",
@@ -32,8 +31,8 @@ from time import monotonic
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PYTHON_PRIMARY_PATHS = AUDIT_INPUT_PATHS[:4]
-TEXT_LOG_PATHS = AUDIT_INPUT_PATHS[4:]
+PYTHON_PRIMARY_PATHS = AUDIT_INPUT_PATHS[:3]
+TEXT_LOG_PATHS = AUDIT_INPUT_PATHS[3:]
 BLOCKLISTED_MODULES = tuple(
     Path(path).stem for path in PYTHON_PRIMARY_PATHS
 )
@@ -41,23 +40,20 @@ EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
         "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
     AUDIT_INPUT_PATHS[1]:
-        "50059ce4d4d6e5ce4503e66ccb098f6fe663ad9711b106b6b6c5c9cb7bcbd02f",
-    AUDIT_INPUT_PATHS[2]:
         "c2fd23a7bb47caff70e9561fc9da46feef422c053954fa1af925901a1884ed0b",
-    AUDIT_INPUT_PATHS[3]:
+    AUDIT_INPUT_PATHS[2]:
         "0db01e80084af4dbb52c74a0a055984edf8ab818f2c8ba8a99c1f6a3fc15bb3e",
-    AUDIT_INPUT_PATHS[4]:
+    AUDIT_INPUT_PATHS[3]:
         "94bc32640518f097cb09060f9c378d26d73e263539573e3b8e75ed2aab1b857e",
-    AUDIT_INPUT_PATHS[5]:
+    AUDIT_INPUT_PATHS[4]:
         "89640947e097728e73cbd58a0039364e684dc2e81d840a087fdddd69598bd450",
 }
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
-    AUDIT_INPUT_PATHS[1]: "8ddd84104dc0729107cebfb0d0cd694fe78af1af",
-    AUDIT_INPUT_PATHS[2]: "6d48f5d86006a5f6718b5993eaecd5ec69d86112",
-    AUDIT_INPUT_PATHS[3]: "d666f5c301ffe6b6508f3636b15814a662bfbe8e",
-    AUDIT_INPUT_PATHS[4]: "3544e3beada65b3480d352e2701f6e21b3f9ae2d",
-    AUDIT_INPUT_PATHS[5]: "86d14cac924d71a6d4702ffac3dbeacc5c5d0f52",
+    AUDIT_INPUT_PATHS[1]: "6d48f5d86006a5f6718b5993eaecd5ec69d86112",
+    AUDIT_INPUT_PATHS[2]: "d666f5c301ffe6b6508f3636b15814a662bfbe8e",
+    AUDIT_INPUT_PATHS[3]: "3544e3beada65b3480d352e2701f6e21b3f9ae2d",
+    AUDIT_INPUT_PATHS[4]: "86d14cac924d71a6d4702ffac3dbeacc5c5d0f52",
 }
 EXPECTED_BASE = "f3ec9213b4b02457bfc8bc092bf25510297e2813"
 EXPECTED_BRANCH = "physics-loop/proof-grade-blockR20-20260729"
@@ -293,7 +289,7 @@ def freeze_key(value: object) -> Key:
 def landed_records(
     payloads: dict[str, bytes],
 ) -> dict[str, object]:
-    cycle832 = payloads[AUDIT_INPUT_PATHS[5]]
+    cycle832 = payloads[AUDIT_INPUT_PATHS[4]]
     preregistration = json_line(
         cycle832, "V1_HISTORICAL_PRE_REGISTRATION_RETRACTED "
     )
@@ -304,7 +300,7 @@ def landed_records(
         cycle832, "CERTIFICATE C_MOMENT_PREDICTION_RERULING "
     )
     summary = json_line(cycle832, "SUMMARY_JSON ")
-    strict_rows = period_rows(payloads[AUDIT_INPUT_PATHS[4]])
+    strict_rows = period_rows(payloads[AUDIT_INPUT_PATHS[3]])
     return {
         "preregistration": preregistration,
         "cycle832_certificate_a": certificate_a,
@@ -602,8 +598,11 @@ def dynamics_probe_certificate(
     core_source = ast.unparse(function_node(
         trees[AUDIT_INPUT_PATHS[0]], "apply_controller_step"
     ))
+    separated_source = ast.unparse(function_node(
+        trees[AUDIT_INPUT_PATHS[1]], "separated_pairs"
+    ))
     multisource_source = ast.unparse(function_node(
-        trees[AUDIT_INPUT_PATHS[1]], "synchronous_composition_word"
+        trees[AUDIT_INPUT_PATHS[1]], "synchronous_word"
     ))
     controller_ast_exact = (
         "target = (station + 1) % stations" in core_source
@@ -612,9 +611,10 @@ def dynamics_probe_certificate(
             "(a[target], b[station])"
         ) in core_source
         and (
-            "positions = tuple(((station + 1) % stations "
-            "for station in positions))"
+            "positions = tuple(((position + 1) % len(program) "
+            "for position in positions))"
         ) in multisource_source
+        and "> 1" in separated_source
     )
     literal_rows = []
     for separation in range(1, 6):
@@ -728,7 +728,7 @@ def dynamics_probe_certificate(
         row for row in anatomies["rows"] if int(row["event"]) == 0
     )
     anatomy_source = ast.unparse(function_node(
-        trees[AUDIT_INPUT_PATHS[2]], "anatomy"
+        trees[AUDIT_INPUT_PATHS[1]], "anatomy"
     ))
     anatomy_ast_exact = all(fragment in anatomy_source for fragment in (
         "result['state_bits'] == 5815",

@@ -454,3 +454,1426 @@ def decode_cycle830_fixtures(
         "target": target,
         "public": public,
     }
+
+
+def bit_slice(states: tuple[int, ...]) -> list[int]:
+    columns = [0] * STATE_BITS
+    for lane, state in enumerate(states):
+        value = state
+        while value:
+            bit = value & -value
+            columns[bit.bit_length() - 1] |= 1 << lane
+            value ^= bit
+    return columns
+
+
+def capture_lanes(
+    columns: list[int],
+    lane_count: int,
+) -> tuple[int, ...]:
+    states = [0] * lane_count
+    lane_mask = (1 << lane_count) - 1
+    for wire, column in enumerate(columns):
+        live = column & lane_mask
+        while live:
+            bit = live & -live
+            states[bit.bit_length() - 1] |= 1 << wire
+            live ^= bit
+    return tuple(states)
+
+
+def capture_lane(columns: list[int], lane: int) -> int:
+    return sum(
+        1 << wire
+        for wire, column in enumerate(columns)
+        if (column >> lane) & 1
+    )
+
+
+def build_phase_schedules(
+    macros: tuple[tuple[Gate, ...], ...],
+    lane_pairs: tuple[Pair, ...],
+) -> tuple[tuple[MaskedGate, ...], ...]:
+    schedules = []
+    for phase in range(RING_STATIONS):
+        rows = []
+        for station, macro in enumerate(macros):
+            lane_mask = sum(
+                1 << lane
+                for lane, pair in enumerate(lane_pairs)
+                if station in {
+                    (pair[0] + phase) % RING_STATIONS,
+                    (pair[1] + phase) % RING_STATIONS,
+                }
+            )
+            if lane_mask:
+                rows.extend(
+                    (kind, first, second, third, lane_mask)
+                    for kind, first, second, third in macro
+                )
+        schedules.append(tuple(rows))
+    return tuple(schedules)
+
+
+def movement_schedule(
+    phase_schedules: tuple[tuple[MaskedGate, ...], ...],
+) -> tuple[MaskedGate, ...]:
+    return tuple(
+        row for schedule in phase_schedules for row in schedule
+    )
+
+
+def advance(
+    columns: list[int],
+    schedule: tuple[MaskedGate, ...],
+) -> None:
+    for kind, first, second, third, lane_mask in schedule:
+        if kind == 0:
+            columns[first] ^= lane_mask
+        elif kind == 1:
+            columns[second] ^= columns[first] & lane_mask
+        elif kind == 2:
+            columns[third] ^= (
+                columns[first] & columns[second] & lane_mask
+            )
+        else:
+            raise AssertionError(("unknown gate kind", kind))
+
+
+def compile_words(
+    macros: tuple[tuple[Gate, ...], ...],
+) -> dict[Pair, tuple[tuple[int, int, int], ...]]:
+    words = {}
+    for pair in BACKBONE:
+        rows = []
+        for phase in range(RING_STATIONS):
+            live = {
+                (pair[0] + phase) % RING_STATIONS,
+                (pair[1] + phase) % RING_STATIONS,
+            }
+            for station, macro in enumerate(macros):
+                if station not in live:
+                    continue
+                for kind, first, second, third in macro:
+                    if kind == 0:
+                        rows.append((0, 0, 1 << first))
+                    elif kind == 1:
+                        rows.append((1, 1 << first, 1 << second))
+                    elif kind == 2:
+                        rows.append((
+                            2, (1 << first) | (1 << second), 1 << third,
+                        ))
+                    else:
+                        raise AssertionError(("unknown gate kind", kind))
+        words[pair] = tuple(rows)
+    if {len(word) for word in words.values()} != {WORD_GATE_COUNT}:
+        raise AssertionError("unexpected compiled word length")
+    return words
+
+
+def apply_compiled_word(
+    state: int,
+    word: tuple[tuple[int, int, int], ...],
+    *,
+    reverse: bool = False,
+) -> int:
+    rows = reversed(word) if reverse else word
+    for kind, controls, target in rows:
+        if kind == 0 or state & controls == controls:
+            state ^= target
+    return state
+
+
+def partition_of(states: tuple[int, ...]) -> Partition:
+    groups: dict[int, list[int]] = {}
+    for lane, state in enumerate(states):
+        groups.setdefault(state, []).append(lane)
+    return tuple(sorted(
+        (tuple(group) for group in groups.values()),
+        key=lambda group: group[0],
+    ))
+
+
+def equivalent_pairs(partition: Partition) -> frozenset[tuple[int, int]]:
+    return frozenset(
+        pair
+        for block in partition
+        for pair in combinations(block, 2)
+    )
+
+
+def transition_kind(before: Partition, after: Partition) -> str:
+    before_pairs = equivalent_pairs(before)
+    after_pairs = equivalent_pairs(after)
+    if before_pairs < after_pairs:
+        return "COARSENING"
+    if after_pairs < before_pairs:
+        return "REFINEMENT"
+    if before_pairs != after_pairs:
+        return "MIXED"
+    return "UNCHANGED"
+
+
+def varying_wire_indices(states: tuple[int, ...]) -> tuple[int, ...]:
+    first = states[0]
+    mask = 0
+    for state in states[1:]:
+        mask |= first ^ state
+    rows = []
+    while mask:
+        bit = mask & -mask
+        rows.append(bit.bit_length() - 1)
+        mask ^= bit
+    return tuple(rows)
+
+
+def partition_event(
+    before: Partition,
+    after: Partition,
+    before_states: tuple[int, ...],
+    after_states: tuple[int, ...],
+    *,
+    from_tick: int,
+    to_tick: int,
+    from_movement: int | None,
+    to_movement: int,
+) -> dict[str, object]:
+    before_wires = varying_wire_indices(before_states)
+    after_wires = varying_wire_indices(after_states)
+    return {
+        "from_controller_tick": from_tick,
+        "to_controller_tick": to_tick,
+        "from_movement": from_movement,
+        "to_movement": to_movement,
+        "kind": transition_kind(before, after),
+        "before_partition": before,
+        "after_partition": after,
+        "before_block_sizes": tuple(map(len, before)),
+        "after_block_sizes": tuple(map(len, after)),
+        "before_distinct_nodes": len(before),
+        "after_distinct_nodes": len(after),
+        "before_varying_wire_count": len(before_wires),
+        "after_varying_wire_count": len(after_wires),
+        "before_varying_wire_indices": before_wires,
+        "after_varying_wire_indices": after_wires,
+    }
+
+
+def partition_rle(
+    controller_ticks: tuple[int, ...],
+    movements: tuple[int | None, ...],
+    partitions: tuple[Partition, ...],
+) -> tuple[dict[str, object], ...]:
+    if not (
+        len(controller_ticks) == len(movements) == len(partitions)
+        and partitions
+    ):
+        raise AssertionError("malformed partition sample sequence")
+    rows = []
+    start = 0
+    for index in range(1, len(partitions) + 1):
+        if (
+            index < len(partitions)
+            and partitions[index] == partitions[start]
+        ):
+            continue
+        rows.append({
+            "sample_index_start": start,
+            "sample_index_end": index - 1,
+            "sample_count": index - start,
+            "controller_tick_start": controller_ticks[start],
+            "controller_tick_end": controller_ticks[index - 1],
+            "movement_start": movements[start],
+            "movement_end": movements[index - 1],
+            "partition": partitions[start],
+            "block_sizes": tuple(map(len, partitions[start])),
+            "distinct_nodes": len(partitions[start]),
+        })
+        start = index
+    return tuple(rows)
+
+
+def partition_sequence_encoding(
+    partitions: tuple[Partition, ...],
+) -> dict[str, object]:
+    raw = bytearray()
+    for partition in partitions:
+        labels = [0] * len(BACKBONE)
+        for block_id, block in enumerate(partition):
+            for lane in block:
+                labels[lane] = block_id
+        raw.extend(labels)
+    compressed = zlib.compress(bytes(raw), level=9)
+    decoded_raw = zlib.decompress(compressed)
+    decoded = []
+    for offset in range(0, len(decoded_raw), len(BACKBONE)):
+        labels = decoded_raw[offset:offset + len(BACKBONE)]
+        groups: dict[int, list[int]] = {}
+        for lane, block_id in enumerate(labels):
+            groups.setdefault(block_id, []).append(lane)
+        decoded.append(tuple(
+            tuple(groups[block_id]) for block_id in sorted(groups)
+        ))
+    return {
+        "format":
+            "one nine-byte restricted-growth partition row per sample; "
+            "block IDs are assigned in first-label order; rows concatenate; "
+            "zlib level 9; Base85",
+        "sample_count": len(partitions),
+        "raw_bytes": len(raw),
+        "raw_sha256": sha256(raw).hexdigest(),
+        "compressed_bytes": len(compressed),
+        "compressed_sha256": sha256(compressed).hexdigest(),
+        "payload_b85": base64.b85encode(compressed).decode("ascii"),
+        "roundtrip_exact": tuple(decoded) == partitions,
+    }
+
+
+def event0_full_partition_dynamics(
+    fixtures: dict[str, object],
+) -> dict[str, object]:
+    macros = fixtures["macros"]
+    states_by_key = fixtures["states"]
+    target = fixtures["target"]
+    assert isinstance(macros, tuple)
+    assert isinstance(states_by_key, dict)
+    assert isinstance(target, int)
+    initial = tuple(states_by_key[(0, pair)] for pair in BACKBONE)
+    lane_pairs = BACKBONE + BACKBONE
+    duplicate_initial = initial + initial
+    phase_schedules = build_phase_schedules(macros, lane_pairs)
+    schedule = movement_schedule(phase_schedules)
+
+    meet_columns = bit_slice(duplicate_initial)
+    for phase in range(MEET_CONTROLLER_TICK):
+        advance(meet_columns, phase_schedules[phase])
+    meet_all = capture_lanes(meet_columns, 2 * len(BACKBONE))
+    meet_states = meet_all[:len(BACKBONE)]
+    meet_duplicate_exact = (
+        meet_states == meet_all[len(BACKBONE):]
+    )
+
+    columns = bit_slice(duplicate_initial)
+    sample_ticks = [MEET_CONTROLLER_TICK]
+    sample_movements: list[int | None] = [None]
+    sample_partitions = [partition_of(meet_states)]
+    event_rows = []
+    previous_partition = sample_partitions[0]
+    previous_states = meet_states
+    previous_tick = MEET_CONTROLLER_TICK
+    previous_movement: int | None = None
+    duplicate_exact_every_sample = meet_duplicate_exact
+    forward_tail_partitions: dict[int, Partition] = {}
+    forward_tail_states: dict[int, tuple[int, ...]] = {}
+
+    for movement in range(1, FUNNEL_MOMENTS[0] + 1):
+        advance(columns, schedule)
+        all_states = capture_lanes(columns, 2 * len(BACKBONE))
+        primary_states = all_states[:len(BACKBONE)]
+        duplicate_exact_every_sample &= (
+            primary_states == all_states[len(BACKBONE):]
+        )
+        tick = movement * RING_STATIONS
+        partition = partition_of(primary_states)
+        sample_ticks.append(tick)
+        sample_movements.append(movement)
+        sample_partitions.append(partition)
+        if movement >= (
+            FUNNEL_MOMENTS[0] - CROSS_COHORT_WINDOW_MOVEMENTS
+        ):
+            forward_tail_partitions[movement] = partition
+            forward_tail_states[movement] = primary_states
+        if partition != previous_partition:
+            event_rows.append(partition_event(
+                previous_partition,
+                partition,
+                previous_states,
+                primary_states,
+                from_tick=previous_tick,
+                to_tick=tick,
+                from_movement=previous_movement,
+                to_movement=movement,
+            ))
+        previous_partition = partition
+        previous_states = primary_states
+        previous_tick = tick
+        previous_movement = movement
+
+    final_states = previous_states
+    partitions = tuple(sample_partitions)
+    ticks = tuple(sample_ticks)
+    movements = tuple(sample_movements)
+    rle = partition_rle(ticks, movements, partitions)
+    total = (tuple(range(len(BACKBONE))),)
+    total_union_sample_indices = tuple(
+        index for index, partition in enumerate(partitions)
+        if partition == total
+    )
+    total_union_movements = tuple(
+        movements[index] for index in total_union_sample_indices
+    )
+    sequence_encoding = partition_sequence_encoding(partitions)
+    terminal_start = len(partitions) - (
+        CROSS_COHORT_WINDOW_MOVEMENTS + 1
+    )
+    terminal_rle = partition_rle(
+        ticks[terminal_start:],
+        movements[terminal_start:],
+        partitions[terminal_start:],
+    )
+    event_kind_counts = tuple(sorted({
+        kind: sum(row["kind"] == kind for row in event_rows)
+        for kind in ("COARSENING", "REFINEMENT", "MIXED")
+    }.items()))
+    return {
+        "meet_states": meet_states,
+        "partitions": partitions,
+        "controller_ticks": ticks,
+        "movements": movements,
+        "rle": rle,
+        "event_rows": tuple(event_rows),
+        "forward_tail_partitions": forward_tail_partitions,
+        "forward_tail_states": forward_tail_states,
+        "final_states": final_states,
+        "total_union_sample_indices": total_union_sample_indices,
+        "total_union_movements": total_union_movements,
+        "public": {
+            "scope":
+                "nine event-0 predicate-marked trajectories; full 5815-bit "
+                "state equality",
+            "sample_grid":
+                "exact meet at controller tick 3, followed by every complete "
+                "movement boundary at controller ticks 11*t for t=1..14739",
+            "declared_stride_controller_ticks":
+                PARTITION_STRIDE_CONTROLLER_TICKS,
+            "sample_count": len(partitions),
+            "movement_samples": FUNNEL_MOMENTS[0],
+            "exact_sequence_sha256": digest(tuple(zip(ticks, partitions))),
+            "exact_sequence_encoding": sequence_encoding,
+            "exact_sequence_RLE_row_count": len(rle),
+            "exact_sequence_RLE_sha256": digest(rle),
+            "RLE_reconstructs_sample_count":
+                sum(row["sample_count"] for row in rle),
+            "terminal_64_movement_RLE": terminal_rle,
+            "partition_event_count": len(event_rows),
+            "partition_event_sha256": digest(tuple(event_rows)),
+            "event_kind_counts": event_kind_counts,
+            "total_union_sample_count": len(total_union_sample_indices),
+            "total_union_movements_sha256": digest(
+                total_union_movements
+            ),
+            "first_total_union_movement":
+                total_union_movements[0]
+                if total_union_movements else None,
+            "last_total_union_before_funnel":
+                total_union_movements[-2]
+                if len(total_union_movements) > 1 else None,
+            "funnel_union_movement": total_union_movements[-1],
+            "funnel_union_is_first_total_union_from_meet":
+                total_union_movements == (FUNNEL_MOMENTS[0],),
+            "funnel_pre_union_partition": partitions[-2],
+            "funnel_pre_union_distinct_nodes": len(partitions[-2]),
+            "pre_union_varying_wire_indices":
+                varying_wire_indices(
+                    forward_tail_states[FUNNEL_MOMENTS[0] - 1]
+                ),
+            "pre_union_varying_wire_count": len(
+                varying_wire_indices(
+                    forward_tail_states[FUNNEL_MOMENTS[0] - 1]
+                )
+            ),
+            "final_state_sha256_by_lane":
+                tuple(state_sha256(state) for state in final_states),
+            "duplicate_initial_exact": initial == duplicate_initial[:9],
+            "duplicate_meet_exact": meet_duplicate_exact,
+            "duplicate_exact_every_sample":
+                duplicate_exact_every_sample,
+            "movement_schedule_rows": len(schedule),
+            "pass": (
+                fixtures["public"]["pass"]
+                and len(schedule) > WORD_GATE_COUNT
+                and sum(row["sample_count"] for row in rle)
+                == len(partitions)
+                and sequence_encoding["roundtrip_exact"]
+                and total_union_sample_indices
+                and total_union_sample_indices[-1]
+                == len(partitions) - 1
+                and all(state == target for state in final_states)
+                and duplicate_exact_every_sample
+            ),
+        },
+    }
+
+
+def register_projection(columns: list[int], lane: int) -> int:
+    return sum(
+        ((columns[wire] >> lane) & 1) << index
+        for index, wire in enumerate(REGISTER_WIRES)
+    )
+
+
+def witness_register_trajectories(
+    fixtures: dict[str, object],
+) -> dict[str, object]:
+    macros = fixtures["macros"]
+    states_by_key = fixtures["states"]
+    assert isinstance(macros, tuple)
+    assert isinstance(states_by_key, dict)
+    lane_rows = tuple(
+        (event, role)
+        for event in EVENT_ORDER
+        for role in ("primary", "duplicate")
+    )
+    primary_index = {
+        event: index
+        for index, (event, role) in enumerate(lane_rows)
+        if role == "primary"
+    }
+    duplicate_index = {
+        event: index
+        for index, (event, role) in enumerate(lane_rows)
+        if role == "duplicate"
+    }
+    initial_states = tuple(
+        states_by_key[(event, WITNESS_PAIR)]
+        for event, _role in lane_rows
+    )
+    columns = bit_slice(initial_states)
+    phases = build_phase_schedules(
+        macros, (WITNESS_PAIR,) * len(lane_rows)
+    )
+    schedule = movement_schedule(phases)
+    changes: dict[int, list[list[int]]] = {
+        event: [[] for _wire in REGISTER_WIRES]
+        for event in EVENT_ORDER
+    }
+    previous = {
+        event: register_projection(columns, primary_index[event])
+        for event in EVENT_ORDER
+    }
+    duplicate_initial_exact = all(
+        initial_states[primary_index[event]]
+        == initial_states[duplicate_index[event]]
+        for event in EVENT_ORDER
+    )
+    duplicate_projection_exact_every_movement = True
+    duplicate_full_window_exact = True
+    funnels: dict[int, int] = {}
+    duplicate_funnels: dict[int, int] = {}
+    forward_windows: dict[int, dict[int, int]] = {
+        event: {} for event in EVENT_ORDER
+    }
+
+    for movement in range(1, max(FUNNEL_MOMENTS.values()) + 1):
+        advance(columns, schedule)
+        for event in EVENT_ORDER:
+            if movement > FUNNEL_MOMENTS[event]:
+                continue
+            primary_projection = register_projection(
+                columns, primary_index[event]
+            )
+            duplicate_projection = register_projection(
+                columns, duplicate_index[event]
+            )
+            duplicate_projection_exact_every_movement &= (
+                primary_projection == duplicate_projection
+            )
+            flipped = primary_projection ^ previous[event]
+            while flipped:
+                bit = flipped & -flipped
+                changes[event][bit.bit_length() - 1].append(movement)
+                flipped ^= bit
+            previous[event] = primary_projection
+            if movement >= (
+                FUNNEL_MOMENTS[event] - CROSS_COHORT_WINDOW_MOVEMENTS
+            ):
+                primary_state = capture_lane(
+                    columns, primary_index[event]
+                )
+                duplicate_state = capture_lane(
+                    columns, duplicate_index[event]
+                )
+                duplicate_full_window_exact &= (
+                    primary_state == duplicate_state
+                )
+                forward_windows[event][movement] = primary_state
+            if movement == FUNNEL_MOMENTS[event]:
+                funnels[event] = capture_lane(
+                    columns, primary_index[event]
+                )
+                duplicate_funnels[event] = capture_lane(
+                    columns, duplicate_index[event]
+                )
+
+    expected_funnels = all(
+        state_sha256(funnels[event]) == EXPECTED_FUNNEL_SHA256[event]
+        and funnels[event].bit_count() == EXPECTED_FUNNEL_WEIGHTS[event]
+        and funnels[event] == duplicate_funnels[event]
+        for event in EVENT_ORDER
+    )
+    return {
+        "changes": changes,
+        "funnels": funnels,
+        "forward_windows": forward_windows,
+        "public": {
+            "trajectory_keys":
+                tuple((event, WITNESS_PAIR) for event in EVENT_ORDER),
+            "register_field_count": len(REGISTER_FIELDS),
+            "register_fields": REGISTER_FIELDS,
+            "register_wire_indices": REGISTER_WIRES,
+            "movement_schedule_rows": len(schedule),
+            "inclusive_time_bounds":
+                tuple((event, 0, FUNNEL_MOMENTS[event])
+                      for event in EVENT_ORDER),
+            "funnel_rows": tuple({
+                "event": event,
+                "movement": FUNNEL_MOMENTS[event],
+                "state_sha256": state_sha256(funnels[event]),
+                "hamming_weight": funnels[event].bit_count(),
+            } for event in EVENT_ORDER),
+            "duplicate_initial_exact": duplicate_initial_exact,
+            "duplicate_projection_exact_every_movement":
+                duplicate_projection_exact_every_movement,
+            "duplicate_full_window_exact":
+                duplicate_full_window_exact,
+            "duplicate_funnels_exact": all(
+                funnels[event] == duplicate_funnels[event]
+                for event in EVENT_ORDER
+            ),
+            "pass": (
+                len(REGISTER_FIELDS) == len(REGISTER_WIRES) == 39
+                and len(schedule) == WORD_GATE_COUNT
+                and duplicate_initial_exact
+                and duplicate_projection_exact_every_movement
+                and duplicate_full_window_exact
+                and expected_funnels
+            ),
+        },
+    }
+
+
+def uleb128(value: int) -> bytes:
+    if value < 0:
+        raise ValueError(value)
+    output = bytearray()
+    while True:
+        byte = value & 0x7F
+        value >>= 7
+        if value:
+            output.append(byte | 0x80)
+        else:
+            output.append(byte)
+            return bytes(output)
+
+
+def decode_uleb128(payload: bytes, offset: int) -> tuple[int, int]:
+    value = 0
+    shift = 0
+    while True:
+        if offset >= len(payload):
+            raise ValueError("truncated ULEB128")
+        byte = payload[offset]
+        offset += 1
+        value |= (byte & 0x7F) << shift
+        if not byte & 0x80:
+            return value, offset
+        shift += 7
+        if shift > 63:
+            raise ValueError("oversized ULEB128")
+
+
+def change_time_encoding(
+    changes: dict[int, list[list[int]]],
+) -> dict[str, object]:
+    sequences: list[tuple[int, ...]] = []
+    sequence_ids: dict[tuple[int, ...], int] = {}
+    field_maps = []
+    for event in EVENT_ORDER:
+        mappings = []
+        for field, times in zip(REGISTER_FIELDS, changes[event]):
+            sequence = tuple(times)
+            if sequence not in sequence_ids:
+                sequence_ids[sequence] = len(sequences)
+                sequences.append(sequence)
+            mappings.append((field, sequence_ids[sequence]))
+        field_maps.append({
+            "event": event,
+            "trajectory_key": (event, WITNESS_PAIR),
+            "field_to_sequence_id": tuple(mappings),
+        })
+
+    raw = bytearray()
+    sequence_rows = []
+    encoded_counts = []
+    for sequence_id, sequence in enumerate(sequences):
+        previous = 0
+        encoded = bytearray()
+        for movement in sequence:
+            encoded.extend(uleb128(movement - previous))
+            previous = movement
+        raw.extend(encoded)
+        encoded_counts.append((len(sequence), len(encoded)))
+        sequence_rows.append({
+            "sequence_id": sequence_id,
+            "count": len(sequence),
+            "first": sequence[0] if sequence else None,
+            "last": sequence[-1] if sequence else None,
+            "times_sha256": digest(sequence),
+            "encoded_bytes": len(encoded),
+        })
+    compressed = zlib.compress(bytes(raw), level=9)
+    decoded_raw = zlib.decompress(compressed)
+    decoded_sequences = []
+    offset = 0
+    for count, _encoded_bytes in encoded_counts:
+        previous = 0
+        sequence = []
+        for _index in range(count):
+            delta, offset = decode_uleb128(decoded_raw, offset)
+            previous += delta
+            sequence.append(previous)
+        decoded_sequences.append(tuple(sequence))
+    roundtrip_exact = (
+        offset == len(decoded_raw)
+        and tuple(decoded_sequences) == tuple(sequences)
+        and all(
+            decoded_sequences[sequence_id]
+            == tuple(changes[event][field_index])
+            for event_index, event in enumerate(EVENT_ORDER)
+            for field_index, (_field, sequence_id) in enumerate(
+                field_maps[event_index]["field_to_sequence_id"]
+            )
+        )
+    )
+    return {
+        "format":
+            "Cycle-835 exact encoding: unique sequences in first-occurrence "
+            "event/field order; unsigned LEB128 deltas from zero; sequences "
+            "concatenated; counts delimit; zlib level 9",
+        "field_maps": tuple(field_maps),
+        "sequence_rows": tuple(sequence_rows),
+        "unique_sequence_count": len(sequences),
+        "raw_bytes": len(raw),
+        "raw_sha256": sha256(raw).hexdigest(),
+        "compressed_bytes": len(compressed),
+        "compressed_sha256": sha256(compressed).hexdigest(),
+        "roundtrip_exact": roundtrip_exact,
+        "matches_cycle835": (
+            len(sequences) == EXPECTED_CHANGE_TIME_UNIQUE_SEQUENCES
+            and len(raw) == EXPECTED_CHANGE_TIME_RAW_BYTES
+            and sha256(raw).hexdigest()
+            == EXPECTED_CHANGE_TIME_RAW_SHA256
+        ),
+    }
+
+
+def reverse_cohort_windows(
+    fixtures: dict[str, object],
+    witness: dict[str, object],
+    event0: dict[str, object],
+) -> dict[str, object]:
+    macros = fixtures["macros"]
+    assert isinstance(macros, tuple)
+    words = compile_words(macros)
+    cohort_rows = []
+    internal = {}
+    all_roundtrips = True
+    all_witness_replays = True
+    for event in EVENT_ORDER:
+        funnel = witness["funnels"][event]
+        forward_witness = witness["forward_windows"][event]
+        states = (funnel,) * len(BACKBONE)
+        depth_states = [states]
+        depth_partitions = [partition_of(states)]
+        roundtrip = True
+        witness_replay = (
+            states[0] == forward_witness[FUNNEL_MOMENTS[event]]
+        )
+        for depth in range(1, CROSS_COHORT_WINDOW_MOVEMENTS + 1):
+            predecessor = tuple(
+                apply_compiled_word(
+                    state, words[pair], reverse=True
+                )
+                for pair, state in zip(BACKBONE, states)
+            )
+            roundtrip &= all(
+                apply_compiled_word(before, words[pair]) == after
+                for pair, before, after in zip(
+                    BACKBONE, predecessor, states
+                )
+            )
+            states = predecessor
+            depth_states.append(states)
+            depth_partitions.append(partition_of(states))
+            witness_replay &= (
+                states[0]
+                == forward_witness[FUNNEL_MOMENTS[event] - depth]
+            )
+        depth_ticks = tuple(
+            (FUNNEL_MOMENTS[event] - depth) * RING_STATIONS
+            for depth in range(CROSS_COHORT_WINDOW_MOVEMENTS + 1)
+        )
+        depth_movements = tuple(
+            FUNNEL_MOMENTS[event] - depth
+            for depth in range(CROSS_COHORT_WINDOW_MOVEMENTS + 1)
+        )
+        rle = partition_rle(
+            depth_ticks, depth_movements, tuple(depth_partitions)
+        )
+        forward_states = tuple(reversed(depth_states))
+        forward_partitions = tuple(reversed(depth_partitions))
+        forward_movements = tuple(reversed(depth_movements))
+        event_rows = []
+        for index in range(1, len(forward_partitions)):
+            if forward_partitions[index] == forward_partitions[index - 1]:
+                continue
+            event_rows.append(partition_event(
+                forward_partitions[index - 1],
+                forward_partitions[index],
+                forward_states[index - 1],
+                forward_states[index],
+                from_tick=forward_movements[index - 1] * RING_STATIONS,
+                to_tick=forward_movements[index] * RING_STATIONS,
+                from_movement=forward_movements[index - 1],
+                to_movement=forward_movements[index],
+            ))
+        total = (tuple(range(len(BACKBONE))),)
+        union_depths = tuple(
+            depth for depth, partition in enumerate(depth_partitions)
+            if partition == total
+        )
+        pre_union_wires = varying_wire_indices(depth_states[1])
+        depth_encoding = partition_sequence_encoding(
+            tuple(depth_partitions)
+        )
+        row = {
+            "event": event,
+            "funnel_movement": FUNNEL_MOMENTS[event],
+            "normalized_depth_bounds":
+                (0, CROSS_COHORT_WINDOW_MOVEMENTS),
+            "depth_direction":
+                "depth 0 is funnel; increasing depth moves backward",
+            "exact_depth_partition_sha256":
+                digest(tuple(enumerate(depth_partitions))),
+            "exact_depth_partition_encoding": depth_encoding,
+            "exact_depth_partition_RLE": rle,
+            "partition_event_count": len(event_rows),
+            "partition_event_kind_counts": tuple(sorted({
+                kind: sum(item["kind"] == kind for item in event_rows)
+                for kind in ("COARSENING", "REFINEMENT", "MIXED")
+            }.items())),
+            "partition_events_forward_sha256":
+                digest(tuple(event_rows)),
+            "total_union_depths": union_depths,
+            "pre_union_partition": depth_partitions[1],
+            "pre_union_distinct_nodes": len(depth_partitions[1]),
+            "pre_union_varying_wire_indices": pre_union_wires,
+            "pre_union_varying_wire_count": len(pre_union_wires),
+            "reverse_forward_roundtrip_exact": roundtrip,
+            "witness_forward_replay_exact": witness_replay,
+            "funnel_state_sha256": state_sha256(funnel),
+            "pass": (
+                sum(item["sample_count"] for item in rle)
+                == CROSS_COHORT_WINDOW_MOVEMENTS + 1
+                and depth_encoding["roundtrip_exact"]
+                and union_depths == (0,)
+                and roundtrip
+                and witness_replay
+            ),
+        }
+        cohort_rows.append(row)
+        internal[event] = {
+            "depth_partitions": tuple(depth_partitions),
+            "depth_states": tuple(depth_states),
+            "forward_event_rows": tuple(event_rows),
+        }
+        all_roundtrips &= roundtrip
+        all_witness_replays &= witness_replay
+
+    event0_forward_match = all(
+        internal[0]["depth_partitions"][depth]
+        == event0["forward_tail_partitions"][
+            FUNNEL_MOMENTS[0] - depth
+        ]
+        and internal[0]["depth_states"][depth]
+        == event0["forward_tail_states"][
+            FUNNEL_MOMENTS[0] - depth
+        ]
+        for depth in range(CROSS_COHORT_WINDOW_MOVEMENTS + 1)
+    )
+    normalized_partitions_identical = all(
+        internal[event]["depth_partitions"]
+        == internal[EVENT_ORDER[0]]["depth_partitions"]
+        for event in EVENT_ORDER[1:]
+    )
+    result = {
+        "cohort_rows": tuple(cohort_rows),
+        "internal": internal,
+        "normalized_partitions_identical":
+            normalized_partitions_identical,
+        "event0_forward_reverse_full_state_exact":
+            event0_forward_match,
+        "all_reverse_forward_roundtrips_exact": all_roundtrips,
+        "all_witness_forward_replays_exact": all_witness_replays,
+    }
+    result["pass"] = (
+        all(row["pass"] for row in cohort_rows)
+        and event0_forward_match
+        and all_roundtrips
+        and all_witness_replays
+    )
+    return result
+
+
+def cross_reference_partition_events(
+    event0: dict[str, object],
+    cohort_windows: dict[str, object],
+    changes: dict[int, list[list[int]]],
+) -> tuple[dict[str, object], ...]:
+    rows = []
+    for event in EVENT_ORDER:
+        partition_rows = (
+            event0["event_rows"] if event == 0
+            else cohort_windows["internal"][event]["forward_event_rows"]
+        )
+        register_union = tuple(sorted({
+            movement
+            for field_changes in changes[event]
+            for movement in field_changes
+        }))
+        change_sets = tuple(set(times) for times in changes[event])
+        for partition_row in partition_rows:
+            movement = partition_row["to_movement"]
+            same_tick_fields = tuple(
+                field
+                for field, times in zip(REGISTER_FIELDS, change_sets)
+                if movement in times
+            )
+            same_tick_field_mask = sum(
+                1 << field_index
+                for field_index, times in enumerate(change_sets)
+                if movement in times
+            )
+            if register_union:
+                nearest_distance, nearest_movement = min(
+                    (abs(candidate - movement), candidate)
+                    for candidate in register_union
+                )
+                nearest_delta = nearest_movement - movement
+            else:
+                nearest_movement = None
+                nearest_delta = None
+                nearest_distance = None
+            rows.append({
+                "event": event,
+                "partition_transition_movement": movement,
+                "partition_transition_kind": partition_row["kind"],
+                "before_partition": partition_row["before_partition"],
+                "after_partition": partition_row["after_partition"],
+                "same_tick_register_change":
+                    bool(same_tick_fields),
+                "same_tick_register_fields": same_tick_fields,
+                "same_tick_register_field_count":
+                    len(same_tick_fields),
+                "same_tick_register_field_mask":
+                    same_tick_field_mask,
+                "nearest_register_change_movement": nearest_movement,
+                "nearest_register_change_delta": nearest_delta,
+                "nearest_register_change_distance":
+                    nearest_distance,
+            })
+    return tuple(rows)
+
+
+def cross_reference_encoding(
+    rows: tuple[dict[str, object], ...],
+) -> dict[str, object]:
+    kind_codes = {"COARSENING": 0, "REFINEMENT": 1, "MIXED": 2}
+    raw = bytearray()
+    exact_rows = []
+    for row in rows:
+        delta = row["nearest_register_change_delta"]
+        if not isinstance(delta, int) or not -128 <= delta <= 127:
+            raise AssertionError("nearest register delta exceeds encoding")
+        packed = (
+            int(row["event"]),
+            int(row["partition_transition_movement"]),
+            kind_codes[str(row["partition_transition_kind"])],
+            int(row["same_tick_register_field_mask"]),
+            delta,
+        )
+        raw.extend(struct.pack("<BIBQb", *packed))
+        exact_rows.append(packed)
+    compressed = zlib.compress(bytes(raw), level=9)
+    decoded_raw = zlib.decompress(compressed)
+    row_size = struct.calcsize("<BIBQb")
+    decoded = tuple(
+        struct.unpack("<BIBQb", decoded_raw[offset:offset + row_size])
+        for offset in range(0, len(decoded_raw), row_size)
+    )
+    return {
+        "format":
+            "one <event:u8,movement:u32,kind:u8,register-field-mask:u64,"
+            "nearest-delta:i8> row per partition transition; kind "
+            "0=coarsening,1=refinement,2=mixed; zlib level 9; Base85",
+        "row_count": len(rows),
+        "raw_bytes": len(raw),
+        "raw_sha256": sha256(raw).hexdigest(),
+        "compressed_bytes": len(compressed),
+        "compressed_sha256": sha256(compressed).hexdigest(),
+        "payload_b85": base64.b85encode(compressed).decode("ascii"),
+        "roundtrip_exact": decoded == tuple(exact_rows),
+    }
+
+
+def certificate_a_partition_dynamics(
+    event0: dict[str, object],
+) -> dict[str, object]:
+    public = event0["public"]
+    return {
+        "certificate_role": "A_PARTITION_DYNAMICS",
+        "formal_object":
+            "equivalence partition of the nine labeled trajectories under "
+            "exact equality of all 5815 state bits",
+        "time_convention":
+            "meet row at controller tick 3; thereafter one sample at every "
+            "complete 11-controller-tick movement boundary through t=14739",
+        "compression":
+            "exact RLE; each row gives inclusive sample/tick/movement bounds "
+            "and its canonical partition, so the full sampled sequence is "
+            "reconstructible without omission",
+        "event0_full_sequence": public,
+        "pass": public["pass"],
+    }
+
+
+def certificate_b_partition_law_hunt(
+    event0: dict[str, object],
+    witness: dict[str, object],
+    encoding: dict[str, object],
+    cohort_windows: dict[str, object],
+) -> dict[str, object]:
+    cross_rows = cross_reference_partition_events(
+        event0, cohort_windows, witness["changes"]
+    )
+    cross_encoding = cross_reference_encoding(cross_rows)
+    coarsening_rows = tuple(
+        row for row in cross_rows
+        if row["partition_transition_kind"] == "COARSENING"
+    )
+    same_tick_law = (
+        bool(coarsening_rows)
+        and all(row["same_tick_register_change"]
+                for row in coarsening_rows)
+    )
+    nearest_delta_set = tuple(sorted({
+        row["nearest_register_change_delta"]
+        for row in coarsening_rows
+    }))
+    normalized_identical = (
+        cohort_windows["normalized_partitions_identical"]
+    )
+    cohort_rows = cohort_windows["cohort_rows"]
+    preunion_partitions = tuple(
+        row["pre_union_partition"] for row in cohort_rows
+    )
+    preunion_node_counts = tuple(
+        row["pre_union_distinct_nodes"] for row in cohort_rows
+    )
+    preunion_wire_counts = tuple(
+        row["pre_union_varying_wire_count"] for row in cohort_rows
+    )
+    union_depth_rows = tuple(
+        (row["event"], row["total_union_depths"])
+        for row in cohort_rows
+    )
+    common_preunion_shape = (
+        len(set(preunion_partitions)) == 1
+        and preunion_node_counts == (3, 3, 3)
+        and preunion_wire_counts == (15, 15, 15)
+        and all(depths == (0,) for _event, depths in union_depth_rows)
+    )
+    candidate_a = {
+        "candidate":
+            "coarsening event times coincide with Cycle-835 register "
+            "change-times",
+        "coarsening_event_count": len(coarsening_rows),
+        "same_tick_count": sum(
+            row["same_tick_register_change"] for row in coarsening_rows
+        ),
+        "nearest_register_change_delta_set": nearest_delta_set,
+        "per_event_counts": tuple(
+            (
+                event,
+                sum(row["event"] == event for row in coarsening_rows),
+                sum(
+                    row["event"] == event
+                    and row["same_tick_register_change"]
+                    for row in coarsening_rows
+                ),
+            )
+            for event in EVENT_ORDER
+        ),
+        "cross_reference_encoding": cross_encoding,
+        "first_three_rows": coarsening_rows[:3],
+        "last_three_rows": coarsening_rows[-3:],
+        "holds_exactly": same_tick_law,
+        "status":
+            "EXACT_SAME_TICK_LAW" if same_tick_law
+            else "NO_EXACT_SAME_TICK_LAW",
+    }
+    candidate_b = {
+        "candidate":
+            "partition sequence identical across events 0/2/1 after "
+            "normalizing movement time to depth from the cohort funnel",
+        "bounded_window_movements": CROSS_COHORT_WINDOW_MOVEMENTS,
+        "cohort_offsets": tuple(
+            (event, FUNNEL_MOMENTS[event]) for event in EVENT_ORDER
+        ),
+        "cohort_depth_sequence_sha256": tuple(
+            (row["event"], row["exact_depth_partition_sha256"])
+            for row in cohort_rows
+        ),
+        "holds_exactly": normalized_identical,
+        "status":
+            "BOUNDED_COHORT_INVARIANT_BRAID"
+            if normalized_identical else "FALSIFIED_ON_BOUNDED_WINDOW",
+    }
+    candidate_c = {
+        "candidate":
+            "the pre-union partition has one common three-node shape with "
+            "exactly 15 varying wires, followed by the first total union",
+        "pre_union_partitions": tuple(
+            (row["event"], row["pre_union_partition"])
+            for row in cohort_rows
+        ),
+        "pre_union_distinct_node_counts": tuple(zip(
+            EVENT_ORDER, preunion_node_counts
+        )),
+        "pre_union_varying_wire_counts": tuple(zip(
+            EVENT_ORDER, preunion_wire_counts
+        )),
+        "pre_union_varying_wire_indices": tuple(
+            (row["event"], row["pre_union_varying_wire_indices"])
+            for row in cohort_rows
+        ),
+        "total_union_depths": union_depth_rows,
+        "event0_no_earlier_total_union_from_meet":
+            event0["total_union_sample_indices"]
+            == (event0["public"]["sample_count"] - 1,),
+        "event0_total_union_sample_count":
+            len(event0["total_union_sample_indices"]),
+        "event0_first_total_union_movement":
+            event0["total_union_movements"][0],
+        "event0_last_total_union_before_funnel":
+            event0["total_union_movements"][-2]
+            if len(event0["total_union_movements"]) > 1 else None,
+        "holds_exactly": common_preunion_shape,
+        "status":
+            "COMMON_3_NODE_15_WIRE_PREUNION"
+            if common_preunion_shape else "COMMON_PREUNION_SHAPE_FALSIFIED",
+    }
+    exact_law_found = (
+        candidate_a["holds_exactly"]
+        or candidate_b["holds_exactly"]
+    )
+    return {
+        "certificate_role": "B_PARTITION_LEVEL_LAW_HUNT",
+        "register_trajectory_replay": witness["public"],
+        "cycle835_change_time_encoding": encoding,
+        "cross_cohort_windows": tuple(cohort_rows),
+        "candidate_a_register_timing": candidate_a,
+        "candidate_b_cohort_invariant": candidate_b,
+        "candidate_c_partition_local_union": candidate_c,
+        "exact_law_found": exact_law_found,
+        "pass": (
+            witness["public"]["pass"]
+            and encoding["roundtrip_exact"]
+            and encoding["matches_cycle835"]
+            and cohort_windows["pass"]
+            and cross_encoding["roundtrip_exact"]
+        ),
+    }
+
+
+def certificate_c_verdict(
+    certificate_a: dict[str, object],
+    certificate_b: dict[str, object],
+) -> dict[str, object]:
+    candidate_a = certificate_b["candidate_a_register_timing"]
+    candidate_b = certificate_b["candidate_b_cohort_invariant"]
+    candidate_c = certificate_b["candidate_c_partition_local_union"]
+    law_found = (
+        certificate_a["pass"]
+        and certificate_b["pass"]
+        and certificate_b["exact_law_found"]
+    )
+    partial = (
+        certificate_a["pass"]
+        and certificate_b["pass"]
+        and (
+            candidate_a["holds_exactly"]
+            or candidate_b["holds_exactly"]
+            or candidate_c["holds_exactly"]
+        )
+    )
+    verdict = (
+        "PARTITION_LAW_FOUND"
+        if law_found else ("PARTIAL" if partial else "OPEN")
+    )
+    if candidate_b["holds_exactly"]:
+        exact_statement = (
+            "For e in (0,2,1), let h_e=(14739,33190,51110) and let "
+            "Pi_e(d) be the full-5815-bit equality partition of the nine "
+            "labeled backbone trajectories at movement h_e-d.  For every "
+            "integer d in [0,64], Pi_0(d)=Pi_2(d)=Pi_1(d).  This is an "
+            "exact bounded cohort-invariant partition braid after the "
+            "cohort time-offsets h_e are removed."
+        )
+    elif candidate_a["holds_exactly"]:
+        exact_statement = (
+            "Every observed coarsening event in the complete event-0 "
+            "partition sequence and the bounded event-2/event-1 windows "
+            "occurs at an exact Cycle-835 39-field register change-time."
+        )
+    else:
+        exact_statement = None
+    return {
+        "certificate_role": "C_VERDICT",
+        "verdict": verdict,
+        "exact_statement": exact_statement,
+        "scope_boundary":
+            "finite landed nine-trajectory system; event 0 is complete from "
+            "the meet at the declared stride, while cross-cohort identity is "
+            "proved only on the declared last-64-movement windows",
+        "register_timing_disposition":
+            candidate_a["status"],
+        "cohort_invariant_disposition":
+            candidate_b["status"],
+        "preunion_disposition":
+            candidate_c["status"],
+        "does_not_claim":
+            "a state-level invariant, an unbounded theorem, or a local pulse "
+            "state-selection mechanism beyond the computed partition law",
+        "pass": certificate_a["pass"] and certificate_b["pass"],
+    }
+
+
+def fixture_digest(fixtures: dict[str, object]) -> str:
+    hasher = sha256()
+    for macro in fixtures["macros"]:
+        hasher.update(len(macro).to_bytes(2, "little"))
+        for gate in macro:
+            hasher.update(struct.pack("<BHHH", *gate))
+    for key in fixtures["keys"]:
+        hasher.update(compact(key).encode("utf-8"))
+        hasher.update(
+            fixtures["states"][key].to_bytes(STATE_BYTES, "little")
+        )
+    hasher.update(
+        fixtures["target"].to_bytes(STATE_BYTES, "little")
+    )
+    return hasher.hexdigest()
+
+
+def certificate_d_controls(
+    source: dict[str, object],
+    fixtures: dict[str, object],
+    fixture_replay: dict[str, object],
+    event0: dict[str, object],
+    witness: dict[str, object],
+    cohort_windows: dict[str, object],
+    elapsed: float,
+) -> dict[str, object]:
+    first_digest = fixture_digest(fixtures)
+    replay_digest = fixture_digest(fixture_replay)
+    blocked_at_end = tuple(sorted(
+        name for name in sys.modules
+        if name.rsplit(".", 1)[-1] in BLOCKLISTED_MODULES
+    ))
+    determinism = {
+        "fixture_digest_first": first_digest,
+        "fixture_digest_replay": replay_digest,
+        "fixture_decode_exact_replay":
+            first_digest == replay_digest
+            and fixtures["public"] == fixture_replay["public"],
+        "event0_duplicate_exact_every_sample":
+            event0["public"]["duplicate_exact_every_sample"],
+        "register_duplicate_projection_exact_every_movement":
+            witness["public"][
+                "duplicate_projection_exact_every_movement"
+            ],
+        "register_duplicate_full_window_exact":
+            witness["public"]["duplicate_full_window_exact"],
+        "reverse_forward_roundtrips_exact":
+            cohort_windows["all_reverse_forward_roundtrips_exact"],
+        "witness_forward_replays_exact":
+            cohort_windows["all_witness_forward_replays_exact"],
+        "event0_forward_reverse_full_state_exact":
+            cohort_windows[
+                "event0_forward_reverse_full_state_exact"
+            ],
+    }
+    base_pass = (
+        source["pass"]
+        and all(
+            value for key, value in determinism.items()
+            if key not in {"fixture_digest_first", "fixture_digest_replay"}
+        )
+        and not blocked_at_end
+        and not FIREWALL.hits
+        and elapsed < AUDIT_TIMEOUT_SEC
+    )
+    return {
+        "certificate_role": "D_CONTROLS",
+        "source_controls": source,
+        "primary_access_policy":
+            "all AUDIT_INPUT_PATHS source primaries are BLOCKLISTED and "
+            "consumed only as text/AST; no source primary is imported or "
+            "executed",
+        "blocked_modules_loaded_at_end": blocked_at_end,
+        "firewall_hits_at_end": tuple(FIREWALL.hits),
+        "determinism": determinism,
+        "exact_arithmetic":
+            "all state updates, partitions, equality, ULEB128, counts, and "
+            "digests use exact Python integers/bytes; only wall time is float",
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_below_limit": elapsed < AUDIT_TIMEOUT_SEC,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "stdout_bytes": 0,
+        "stdout_below_limit": False,
+        "base_pass_before_stdout": base_pass,
+        "pass": False,
+    }
+
+
+def stable_render(
+    certificates: dict[str, dict[str, object]],
+    report: dict[str, object],
+) -> str:
+    controls = certificates["D_CONTROLS"]
+    previous_size = -1
+    for _attempt in range(12):
+        output = "\n".join([
+            *(f"CERTIFICATE_{name}={compact(value)}"
+              for name, value in certificates.items()),
+            f"REPORT={compact(report)}",
+        ]) + "\n"
+        size = len(output.encode("utf-8"))
+        controls["stdout_bytes"] = size
+        controls["stdout_below_limit"] = size < STDOUT_LIMIT_BYTES
+        controls["pass"] = (
+            controls["base_pass_before_stdout"]
+            and controls["stdout_below_limit"]
+        )
+        report["checks"]["D_CONTROLS"] = controls["pass"]
+        report["pass"] = all(report["checks"].values())
+        report["terminal"] = (
+            "CYCLE845_PARTITION_ROUTE_PASS"
+            if report["pass"] else "CYCLE845_PARTITION_ROUTE_HONEST_FAIL"
+        )
+        report["stdout_bytes"] = size
+        if size == previous_size:
+            return output
+        previous_size = size
+    raise AssertionError("stdout accounting did not stabilize")
+
+
+def run() -> int:
+    started = monotonic()
+    source, trees = source_controls()
+    fixtures = decode_cycle830_fixtures(
+        trees[AUDIT_INPUT_PATHS[1]]
+    )
+    certificate_a_data = event0_full_partition_dynamics(fixtures)
+    witness = witness_register_trajectories(fixtures)
+    encoding = change_time_encoding(witness["changes"])
+    cohort_windows = reverse_cohort_windows(
+        fixtures, witness, certificate_a_data
+    )
+    certificate_a = certificate_a_partition_dynamics(
+        certificate_a_data
+    )
+    certificate_b = certificate_b_partition_law_hunt(
+        certificate_a_data, witness, encoding, cohort_windows
+    )
+    certificate_c = certificate_c_verdict(
+        certificate_a, certificate_b
+    )
+    fixture_replay = decode_cycle830_fixtures(
+        trees[AUDIT_INPUT_PATHS[1]]
+    )
+    elapsed = monotonic() - started
+    certificate_d = certificate_d_controls(
+        source,
+        fixtures,
+        fixture_replay,
+        certificate_a_data,
+        witness,
+        cohort_windows,
+        elapsed,
+    )
+    certificates = {
+        "A_PARTITION_DYNAMICS": certificate_a,
+        "B_PARTITION_LAW_HUNT": certificate_b,
+        "C_VERDICT": certificate_c,
+        "D_CONTROLS": certificate_d,
+    }
+    checks = {
+        "A_PARTITION_DYNAMICS": certificate_a["pass"],
+        "B_PARTITION_LAW_HUNT": certificate_b["pass"],
+        "C_VERDICT": certificate_c["pass"],
+        "D_CONTROLS": False,
+    }
+    report = {
+        "cycle": 845,
+        "title": "the merged why, attempt two — partition refinement",
+        "verdict": certificate_c["verdict"],
+        "exact_law_statement": certificate_c["exact_statement"],
+        "register_timing_disposition":
+            certificate_c["register_timing_disposition"],
+        "cohort_invariant_disposition":
+            certificate_c["cohort_invariant_disposition"],
+        "preunion_disposition":
+            certificate_c["preunion_disposition"],
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "checks": checks,
+        "pass": False,
+        "terminal": "CYCLE845_PARTITION_ROUTE_HONEST_FAIL",
+    }
+    output = stable_render(certificates, report)
+    final_size = len(output.encode("utf-8"))
+    if final_size >= STDOUT_LIMIT_BYTES:
+        print(compact({
+            "cycle": 845,
+            "pass": False,
+            "failure": "stdout bound exceeded",
+            "stdout_bytes": final_size,
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+            "terminal": "CYCLE845_PARTITION_ROUTE_HONEST_FAIL",
+        }))
+        return 1
+    sys.stdout.write(output)
+    return 0 if report["pass"] else 1
+
+
+def main() -> int:
+    try:
+        return run()
+    except Exception as error:
+        print(compact({
+            "cycle": 845,
+            "error_type": type(error).__name__,
+            "error": str(error),
+            "pass": False,
+            "terminal": "CYCLE845_PARTITION_ROUTE_HONEST_FAIL",
+        }))
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

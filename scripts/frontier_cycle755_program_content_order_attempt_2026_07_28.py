@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Cycle 755: bounded derivation attempt for program content and cyclic order.
+"""Cycle 755: conditional fixed-inventory program-arrangement census.
 
 The scientific acceptance predicate is deliberately not a new dynamics.  It
 replays Cycle 719's held-orbit, inverse, controller-register, decoded-chain,
 postimage, and Q-before-R certificates on candidate permutations of Cycle
-719's own macro inventory.  The search quotients only passive ring rotations,
-identical inventory copies, and exact full-state dynamic-programming merges.
+719's own supplied macro inventory.  The census quotients only simultaneous
+station/token translations, identical inventory copies, and exact full-state
+dynamic-programming merges.
 """
 from __future__ import annotations
 
@@ -233,7 +234,7 @@ def count_factorization(program):
     """Kind-placement choices times within-kind macro-content assignments."""
     source_rows = tuple(row for row in program if row[0] == "source")
     if len(source_rows) != 1:
-        raise AssertionError("the passive rotation gauge needs one source")
+        raise AssertionError("source anchoring requires exactly one source row")
     remainder = tuple(row for row in program if row[0] != "source")
     kinds = Counter(row[0] for row in remainder)
     kind_placements = factorial(len(remainder))
@@ -410,7 +411,7 @@ def search_census(bank_count):
 
 
 def rotate_program(program, token_start, shift):
-    """Passive station-label translation j -> j+shift on the oriented ring."""
+    """Simultaneously relabel stations and token by j -> j+shift."""
     stations = len(program)
     rotated = [None] * stations
     for station, row in enumerate(program):
@@ -451,10 +452,10 @@ def translation_equivariance_certificate(censuses):
             "failures": bank_failures,
         }
     return {
-        "passive_group": "oriented-ring station translations C_P",
+        "relabeling_group": "simultaneous oriented-ring station/token translations C_P",
         "orientation_reversal_in_scope": False,
         "labelled_rotations_tested": tested,
-        "closure_failures": failures,
+        "equivariance_failures": failures,
         "roundtrip_failures": roundtrip_failures,
         "by_bank": by_bank,
     }
@@ -674,7 +675,7 @@ def build_report():
     predicate_ast = predicate_ast_certificate()
     supplier = no_new_supplier_certificate()
     censuses = {bank_count: search_census(bank_count) for bank_count in (1, 2)}
-    passive = translation_equivariance_certificate(censuses)
+    equivariance = translation_equivariance_certificate(censuses)
 
     b1 = censuses[1]
     b2 = censuses[2]
@@ -724,7 +725,7 @@ def build_report():
             and not predicate_ast["missing_attributes"]
             and not predicate_ast["missing_battery_keys"]
         ),
-        "C1_ring_translation_gauge_safe": all(
+        "C1_source_anchor_quotient_safe": all(
             row["labelled_candidate_programs"]
             == row["stations"] * row["anchored_candidate_classes"]
             for row in censuses.values()
@@ -764,9 +765,9 @@ def build_report():
         ),
         "D4_outcome_B": outcome == "B",
         "E_translation_equivariance": (
-            passive["labelled_rotations_tested"] == 3 + 891
-            and passive["closure_failures"] == 0
-            and passive["roundtrip_failures"] == 0
+            equivariance["labelled_rotations_tested"] == 3 + 891
+            and equivariance["equivariance_failures"] == 0
+            and equivariance["roundtrip_failures"] == 0
         ),
         "F_no_new_supplier": (
             supplier["only_K_directly_imported"]
@@ -863,7 +864,7 @@ def build_report():
             bank_count: public_census(row)
             for bank_count, row in censuses.items()
         },
-        "translation_equivariance": passive,
+        "translation_equivariance": equivariance,
         "no_new_supplier": supplier,
         "outcome": outcome,
         "scope_status": scope_status,

@@ -166,7 +166,7 @@ def extract_primary():
     )
     pruning_rules = ast.literal_eval(pruning_value)
 
-    census_literals = {"b1": {}, "b2": {}, "passive": {}}
+    census_literals = {"b1": {}, "b2": {}, "equivariance": {}}
     for node in ast.walk(build):
         if not isinstance(node, ast.Compare) or len(node.ops) != 1:
             continue
@@ -352,7 +352,7 @@ def hostile_r_before_q(data, program, token_start):
 
 
 def acceptance_predicate(bank_count, program, token_start, fixtures=None):
-    """Replay every Cycle 719 certificate used by the primary candidate law."""
+    """Replay every Cycle 719 certificate used by the candidate predicate."""
     fixtures = make_fixtures(bank_count) if fixtures is None else fixtures
     expected_inventory = Counter(
         role_key(row) for row in K.interleaved_program(bank_count)
@@ -1060,7 +1060,7 @@ def translation_equivariance_recount(censuses):
         }
     return {
         "translation_checks": tested,
-        "closure_failures": failures,
+        "equivariance_failures": failures,
         "roundtrip_failures": roundtrip_failures,
         "by_bank": by_bank,
         "pass": (
@@ -1118,7 +1118,7 @@ def build_report():
     }
     predicate = predicate_recount(censuses, primary)
     pruning = pruning_validation(censuses, primary)
-    passive = translation_equivariance_recount(censuses)
+    equivariance = translation_equivariance_recount(censuses)
 
     b1 = censuses[1]
     b2 = censuses[2]
@@ -1136,7 +1136,8 @@ def build_report():
         == 1_814_400
         and primary_census["b2"].get("exact_target_classes") == 81
         and primary_census["b2"].get("accepted_arrangement_classes") == 81
-        and primary_census["passive"].get("labelled_rotations_tested") == 894
+        and primary_census["equivariance"].get("labelled_rotations_tested")
+        == 894
         and not primary["missing_boundary_keys"]
         and primary["outcome_B_81_of_1814400_present"]
         and primary["accepted_example_limit"] == 5
@@ -1181,7 +1182,7 @@ def build_report():
         "predicate_recount": predicate["pass"],
         "census_recount_full_b1_b2": census_pass,
         "pruning_validation": pruning["pass"],
-        "translation_equivariance_894": passive["pass"],
+        "translation_equivariance_894": equivariance["pass"],
         "discipline": (
             discipline["blocklist_clean"]
             and discipline["language_verbatim"]
@@ -1202,7 +1203,7 @@ def build_report():
             for bank_count, census in censuses.items()
         },
         "pruning_validation": pruning,
-        "translation_equivariance_recount": passive,
+        "translation_equivariance_recount": equivariance,
         "discipline": discipline,
         "runtime_sec": round(runtime, 6),
     }

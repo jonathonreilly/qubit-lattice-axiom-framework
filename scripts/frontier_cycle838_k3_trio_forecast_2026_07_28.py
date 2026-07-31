@@ -1410,6 +1410,71 @@ def optional_k2_certificate(
     battery = pair_battery(
         rows, engine["resolution_states"], engine["minus5_states"]
     )
+    structure_rows = tuple({
+        "key": row["key"],
+        "event": row["key"][2],
+        "contains_station_0": 0 in row["key"][1],
+        "cyclic_separation":
+            pairwise_separations(row["key"][1])[0],
+        "maximum_separation_on_C11":
+            pairwise_separations(row["key"][1])[0]
+            == RING_STATIONS // 2,
+        "outcome": row["outcome"],
+        "resolution_moment": row["resolution_moment"],
+        "terminal_state_sha256": row["terminal_state_sha256"],
+        "moment_minus_5_state_sha256":
+            row["moment_minus_5_state_sha256"],
+        "verification_pass": row["verification"]["pass"],
+    } for row in rows)
+    event_cohort_rows = []
+    for event in (0, 1, 2):
+        event_rows = tuple(
+            row for row in rows if row["key"][2] == event
+        )
+        event_keys = tuple(
+            key for key in K2_STATION0_S5_OPEN_THROUGH_T65536
+            if key[2] == event
+        )
+        event_cohort_rows.append({
+            "event": event,
+            "keys": event_keys,
+            "resolved_count": len(event_rows),
+            "shared_resolution_moment":
+                len(event_rows) == 2
+                and len({
+                    row["resolution_moment"] for row in event_rows
+                }) == 1,
+            "shared_outcome":
+                len(event_rows) == 2
+                and len({row["outcome"] for row in event_rows}) == 1,
+            "shared_terminal_full_state":
+                len(event_rows) == 2
+                and len({
+                    engine["resolution_states"][row["key"]]
+                    for row in event_rows
+                }) == 1,
+            "shared_moment_minus_5_full_state":
+                len(event_rows) == 2
+                and len({
+                    engine["minus5_states"][row["key"]]
+                    for row in event_rows
+                }) == 1,
+            "status": (
+                "SYNCHRONOUS_TRANSIENT_PAIR"
+                if len(event_rows) == 2
+                and len({
+                    row["resolution_moment"] for row in event_rows
+                }) == 1
+                and len({row["outcome"] for row in event_rows}) == 1
+                and len({
+                    engine["minus5_states"][row["key"]]
+                    for row in event_rows
+                }) == 1
+                else "OPEN_AT_HORIZON"
+                if not event_rows
+                else "NONSYNCHRONOUS_OR_PARTIAL"
+            ),
+        })
     baseline_exact = (
         not engine["records"]
         if selected == LANDED_HORIZON else
@@ -1427,6 +1492,8 @@ def optional_k2_certificate(
         "final_boundary": final,
         "new_resolution_count": len(rows),
         "new_resolutions": rows,
+        "standard_structure_rows": structure_rows,
+        "event_cohort_rows": tuple(event_cohort_rows),
         "cohort_battery": battery,
         "null_applies": not rows,
         "partial_science_sweep_reported": False,
@@ -1442,6 +1509,15 @@ def optional_k2_certificate(
         and final["pass"]
         and battery["pair_accounting_exact"]
         and all(row["verification"]["pass"] for row in rows)
+        and all(
+            row["contains_station_0"]
+            and row["maximum_separation_on_C11"]
+            and row["verification_pass"]
+            for row in structure_rows
+        )
+        and sum(
+            row["resolved_count"] for row in event_cohort_rows
+        ) == len(rows)
     )
     return result
 
@@ -1607,6 +1683,11 @@ def run() -> int:
     optional_k2 = optional_k2_certificate(
         script_started, context, residual_rows
     )
+    certificate_c = {
+        "k3_nontrio": nontrio,
+        "k2_station0_s5_declaration_and_results": optional_k2,
+        "pass": nontrio["pass"] and optional_k2["pass"],
+    }
 
     deterministic = (
         engine["duplicate_initial_exact"]
@@ -1670,7 +1751,7 @@ def run() -> int:
         "B_REGISTERED_TRIO_FORECAST_EXACT":
             bool(forecast["pass"]),
         "C_NONTRIO_EVENTS_OR_NULL_EXACT":
-            bool(nontrio["pass"]),
+            bool(certificate_c["pass"]),
         "D_IDENTITY_TRANSIENT_AND_CYCLE":
             bool(identity["pass"]),
         "E_SHAS_BLOCKLIST_DETERMINISM_PATHS_RUNTIME_STDOUT":
@@ -1679,10 +1760,9 @@ def run() -> int:
     certificates = {
         "A_DEEP_CONTINUATION": certificate_a,
         "B_FORECAST_TEST": forecast,
-        "C_NONTRIO_RESOLUTIONS_OR_NULL": nontrio,
+        "C_NONTRIO_RESOLUTIONS_OR_NULL": certificate_c,
         "D_IDENTITY_CONTROLS": identity,
         "E_CONTROLS": controls,
-        "OPTIONAL_K2_STATION0_S5": optional_k2,
     }
     report = {
         "cycle": 838,

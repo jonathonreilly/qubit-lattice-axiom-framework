@@ -4,12 +4,14 @@
   "block": "proof-grade-blockP15-20260729",
   "certificates": {
     "logs/runner-cache/frontier_cycle829_contact_independent_check_2026_07_28.txt": {
-      "fail": 0,
-      "pass": 0
+      "certificate_fail_mentions": 0,
+      "certificate_pass_mentions": 1,
+      "format_note": "829 runners emit JSON certificate blocks; verdict needles asserted (NOT_YET_COMPOSABLE / tightened PASS)"
     },
     "logs/runner-cache/frontier_cycle829_csource_first_contact_2026_07_28.txt": {
-      "fail": 0,
-      "pass": 0
+      "certificate_fail_mentions": 0,
+      "certificate_pass_mentions": 1,
+      "format_note": "829 runners emit JSON certificate blocks; verdict needles asserted (NOT_YET_COMPOSABLE / tightened PASS)"
     }
   },
   "claim_type": "bounded_theorem",

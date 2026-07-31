@@ -366,23 +366,1125 @@ def build_preregistration() -> dict[str, object]:
     }
 
 
-def render_scaffold(
+def factorization(value: int) -> tuple[tuple[int, int], ...]:
+    if value < 1:
+        raise ValueError(value)
+    rows = []
+    remaining = value
+    prime = 2
+    while prime * prime <= remaining:
+        exponent = 0
+        while remaining % prime == 0:
+            remaining //= prime
+            exponent += 1
+        if exponent:
+            rows.append((prime, exponent))
+        prime = 3 if prime == 2 else prime + 2
+    if remaining > 1:
+        rows.append((remaining, 1))
+    return tuple(rows)
+
+
+def factor_product(rows: tuple[tuple[int, int], ...]) -> int:
+    result = 1
+    for prime, exponent in rows:
+        result *= prime ** exponent
+    return result
+
+
+def divisors(value: int) -> tuple[int, ...]:
+    small = []
+    large = []
+    candidate = 1
+    while candidate * candidate <= value:
+        if value % candidate == 0:
+            small.append(candidate)
+            if candidate * candidate != value:
+                large.append(value // candidate)
+        candidate += 1
+    return tuple(small + list(reversed(large)))
+
+
+def orbit_word(
+    program: tuple[object, ...],
+    pair: tuple[int, int],
+) -> tuple[object, ...]:
+    word = []
+    for step in range(len(program)):
+        live = {
+            (pair[0] + step) % len(program),
+            (pair[1] + step) % len(program),
+        }
+        for station, macro in enumerate(program):
+            if station in live:
+                word.extend(K.mapped_macro(macro))
+    return tuple(word)
+
+
+def build_seed_family() -> dict[str, object]:
+    program = K.interleaved_program(FIXTURE_BANKS)
+    pairs = separated_pairs()
+    words = {pair: orbit_word(program, pair) for pair in pairs}
+    banks, links = K.B.chain_genesis(FIXTURE_BANKS)
+    state = K.M.pack_state(banks, links)
+    allocator = K.M.global_allocator_word(FIXTURE_BANKS)
+    epochs = []
+    for event in range(2 * FIXTURE_BANKS):
+        direction = (1, 0) if event % 2 == 0 else (0, 1)
+        before = K.M.prepare_endpoint(state, direction)
+        epochs.append((event, before))
+        state = K.A.apply_semantic(before, allocator)
+    states = {
+        (event, pair): K.A.apply_semantic(before, words[pair])
+        for event, before in epochs
+        for pair in pairs
+    }
+    summary = {
+        "events": len(epochs),
+        "pairs": len(pairs),
+        "keys": len(states),
+        "state_bits": len(next(iter(states.values()))),
+        "allocator_gates": len(allocator),
+        "word_gate_counts": tuple(sorted({
+            len(word) for word in words.values()
+        })),
+    }
+    summary["pass"] = summary == {
+        "events": 4,
+        "pairs": 44,
+        "keys": FAMILY_SIZE,
+        "state_bits": STATE_BITS,
+        "allocator_gates": 3106,
+        "word_gate_counts": (6212,),
+    }
+    return {
+        "program": program,
+        "pairs": pairs,
+        "words": words,
+        "states": states,
+        "summary": summary,
+    }
+
+
+def watched_residual_wires() -> tuple[tuple[str, int], ...]:
+    bank_rows = (
+        ("POINTER", K.A.POINTER),
+        ("U_TO_V", K.A.U_TO_V),
+        ("V_TO_U", K.A.V_TO_U),
+        ("DIRECTION_OK", K.A.DIRECTION_OK),
+        *((f"FRESH_{index}", wire)
+          for index, wire in enumerate(K.A.FRESH)),
+        *((f"ZERO_WORK_{index}", wire)
+          for index, wire in enumerate(K.A.ZERO_WORK)),
+        ("TOKEN_OK", K.A.TOKEN_OK),
+    )
+    rows = [("source.SOURCE_POINTER", K.R3.X.SOURCE_POINTER)]
+    for bank_index, base in enumerate(
+        K.M.R12.BANK_BASES[:FIXTURE_BANKS]
+    ):
+        rows.extend(
+            (f"bank{bank_index}.{name}", base + wire)
+            for name, wire in bank_rows
+        )
+    for link_index, base in enumerate(
+        K.M.R12.LINK_BASES[:FIXTURE_BANKS - 1]
+    ):
+        rows.extend(
+            (f"link{link_index}.WIRE_{wire}", base + wire)
+            for wire in range(K.B.LINK_WIDTH)
+        )
+    return tuple(rows)
+
+
+def pack_states(states: tuple[tuple[int, ...], ...]) -> list[int]:
+    return [
+        sum(state[wire] << lane for lane, state in enumerate(states))
+        for wire in range(len(states[0]))
+    ]
+
+
+def unpack_lane(columns: list[int], lane: int) -> tuple[int, ...]:
+    return tuple((column >> lane) & 1 for column in columns)
+
+
+def lane_numbers(mask: int) -> tuple[int, ...]:
+    result = []
+    while mask:
+        bit = mask & -mask
+        result.append(bit.bit_length() - 1)
+        mask ^= bit
+    return tuple(result)
+
+
+def packed_schedule(
+    program: tuple[object, ...],
+    lanes: tuple[Lane, ...],
+) -> tuple[PackedGate, ...]:
+    all_lanes = (1 << len(lanes)) - 1
+    schedule = []
+    for step in range(len(program)):
+        station_masks = [0] * len(program)
+        for lane in lane_numbers(all_lanes):
+            pair = lanes[lane][0][1]
+            station_masks[(pair[0] + step) % len(program)] |= 1 << lane
+            station_masks[(pair[1] + step) % len(program)] |= 1 << lane
+        for station, macro in enumerate(program):
+            mask = station_masks[station]
+            if not mask:
+                continue
+            for gate in K.mapped_macro(macro):
+                if len(set(gate.wires)) != len(gate.wires):
+                    raise AssertionError(("repeated landed gate wire", gate))
+                if gate.kind == "X":
+                    schedule.append((0, gate.wires[0], 0, 0, mask))
+                elif gate.kind == "CNOT":
+                    schedule.append(
+                        (1, gate.wires[0], gate.wires[1], 0, mask)
+                    )
+                elif gate.kind == "TOF":
+                    schedule.append(
+                        (2, gate.wires[0], gate.wires[1],
+                         gate.wires[2], mask)
+                    )
+                else:
+                    raise AssertionError(("non-reversible gate", gate))
+    return tuple(schedule)
+
+
+def advance(columns: list[int], schedule: tuple[PackedGate, ...]) -> None:
+    for kind, first, second, third, mask in schedule:
+        if kind == 0:
+            columns[first] ^= mask
+        elif kind == 1:
+            columns[second] ^= columns[first] & mask
+        else:
+            columns[third] ^= columns[first] & columns[second] & mask
+
+
+def nonclean_mask(
+    columns: list[int],
+    residual_rows: tuple[tuple[str, int], ...],
+) -> int:
+    result = 0
+    for _name, wire in residual_rows:
+        result |= columns[wire]
+    return result
+
+
+def support_at_lane(
+    columns: list[int],
+    lane: int,
+    residual_rows: tuple[tuple[str, int], ...],
+) -> tuple[str, ...]:
+    return tuple(
+        name for name, wire in residual_rows
+        if (columns[wire] >> lane) & 1
+    )
+
+
+def state_partition(
+    keys: tuple[Key, ...],
+    states: tuple[tuple[int, ...], ...],
+) -> tuple[dict[str, object], ...]:
+    groups: dict[tuple[int, ...], list[Key]] = {}
+    for key, state in zip(keys, states):
+        groups.setdefault(state, []).append(key)
+    return tuple({
+        "keys": tuple(group),
+        "size": len(group),
+        "state_sha256": state_sha256(state),
+    } for state, group in sorted(
+        groups.items(), key=lambda item: (item[1][0], len(item[1]))
+    ))
+
+
+def evolve_funnels(family: dict[str, object]) -> dict[str, object]:
+    primary_keys = tuple(
+        key for event in EVENTS for key in COHORT_KEYS[event]
+    )
+    duplicate_keys = tuple(
+        (event, BACKBONE[0]) for event in EVENTS
+    )
+    primary_lanes: tuple[Lane, ...] = tuple(
+        (key, "primary") for key in primary_keys
+    )
+    duplicate_lanes: tuple[Lane, ...] = tuple(
+        (key, "determinism_duplicate") for key in duplicate_keys
+    )
+    lanes = primary_lanes + duplicate_lanes
+    primary_index = {
+        key: lane for lane, (key, _role) in enumerate(primary_lanes)
+    }
+    duplicate_index = {
+        key: len(primary_lanes) + offset
+        for offset, key in enumerate(duplicate_keys)
+    }
+    family_states = family["states"]
+    assert isinstance(family_states, dict)
+    initial_states = tuple(
+        family_states[key] for key, _role in lanes
+    )
+    columns = pack_states(initial_states)
+    initial_columns = columns.copy()
+    residual_rows = watched_residual_wires()
+    program = family["program"]
+    assert isinstance(program, tuple)
+    schedule = packed_schedule(program, lanes)
+    initial_nonclean = nonclean_mask(columns, residual_rows)
+    previous_nonclean = initial_nonclean
+    earlier_nonclean_counts = {
+        key: int(bool(initial_nonclean & (1 << primary_index[key])))
+        for key in primary_keys
+    }
+    snapshots: dict[int, dict[Key, tuple[int, ...]]] = {}
+    resolution_rows: dict[int, dict[str, object]] = {}
+    recurrence_candidates = divisors(LCM_SKELETON)
+    recurrence_rows: dict[int, dict[str, object]] = {}
+    representative = COHORT_KEYS[0][0]
+    representative_lane = primary_index[representative]
+    determinism_rows = []
+
+    def determinism_checkpoint(moment: int) -> None:
+        rows = tuple({
+            "key": key,
+            "primary_sha256":
+                state_sha256(unpack_lane(columns, primary_index[key])),
+            "duplicate_sha256":
+                state_sha256(unpack_lane(columns, duplicate_index[key])),
+            "exact_tuple_equal": (
+                unpack_lane(columns, primary_index[key])
+                == unpack_lane(columns, duplicate_index[key])
+            ),
+        } for key in duplicate_keys)
+        determinism_rows.append({
+            "moment": moment,
+            "rows": rows,
+            "all_exact": all(row["exact_tuple_equal"] for row in rows),
+        })
+
+    determinism_checkpoint(0)
+    one_step = columns.copy()
+    advance(one_step, schedule)
+    words = family["words"]
+    assert isinstance(words, dict)
+    one_step_rows = tuple({
+        "key": key,
+        "packed_sha256":
+            state_sha256(unpack_lane(one_step, primary_index[key])),
+        "scalar_sha256": state_sha256(K.A.apply_semantic(
+            family_states[key], words[key[1]]
+        )),
+        "exact": (
+            unpack_lane(one_step, primary_index[key])
+            == K.A.apply_semantic(family_states[key], words[key[1]])
+        ),
+    } for key in primary_keys)
+    duplicate_initial_exact = all(
+        initial_states[primary_index[key]]
+        == initial_states[duplicate_index[key]]
+        for key in duplicate_keys
+    )
+    duplicate_masks_identical = all(
+        ((mask >> primary_index[key]) & 1)
+        == ((mask >> duplicate_index[key]) & 1)
+        for _kind, _first, _second, _third, mask in schedule
+        for key in duplicate_keys
+    )
+
+    for moment in range(1, max(RESOLUTION_MOMENTS.values()) + 1):
+        advance(columns, schedule)
+        nonclean = nonclean_mask(columns, residual_rows)
+        if moment in set(FUNNEL_MOMENTS.values()):
+            event = next(
+                row for row, target in FUNNEL_MOMENTS.items()
+                if target == moment
+            )
+            snapshots[event] = {
+                key: unpack_lane(columns, primary_index[key])
+                for key in COHORT_KEYS[event]
+            }
+            determinism_checkpoint(moment)
+        if moment in recurrence_candidates and moment <= FUNNEL_MOMENTS[0]:
+            state = unpack_lane(columns, representative_lane)
+            recurrence_rows[moment] = {
+                "candidate_period": moment,
+                "divides_lcm_skeleton":
+                    LCM_SKELETON % moment == 0,
+                "bounded_test": "state(0) == state(period)",
+                "exact_return_to_initial":
+                    state == family_states[representative],
+                "observed_state_sha256": state_sha256(state),
+                "initial_state_sha256":
+                    state_sha256(family_states[representative]),
+                "verdict":
+                    "HIT" if state == family_states[representative]
+                    else "FAIL",
+            }
+        if moment in set(RESOLUTION_MOMENTS.values()):
+            event = next(
+                row for row, target in RESOLUTION_MOMENTS.items()
+                if target == moment
+            )
+            keys = COHORT_KEYS[event]
+            resolution_rows[event] = {
+                "event": event,
+                "moment": moment,
+                "keys": keys,
+                "earlier_nonclean_counts": tuple(
+                    earlier_nonclean_counts[key] for key in keys
+                ),
+                "every_earlier_moment_nonclean": all(
+                    earlier_nonclean_counts[key] == moment for key in keys
+                ),
+                "veto_at_t_minus_1": all(
+                    previous_nonclean & (1 << primary_index[key])
+                    for key in keys
+                ),
+                "supports_at_resolution": tuple(
+                    support_at_lane(
+                        columns, primary_index[key], residual_rows
+                    )
+                    for key in keys
+                ),
+                "all_landed_clean": all(
+                    not support_at_lane(
+                        columns, primary_index[key], residual_rows
+                    )
+                    for key in keys
+                ),
+            }
+            resolution_rows[event]["pass"] = (
+                resolution_rows[event]["every_earlier_moment_nonclean"]
+                and resolution_rows[event]["veto_at_t_minus_1"]
+                and resolution_rows[event]["all_landed_clean"]
+            )
+            determinism_checkpoint(moment)
+        for key in primary_keys:
+            if moment < RESOLUTION_MOMENTS[key[0]]:
+                earlier_nonclean_counts[key] += int(
+                    bool(nonclean & (1 << primary_index[key]))
+                )
+        previous_nonclean = nonclean
+
+    for candidate in recurrence_candidates:
+        if candidate > FUNNEL_MOMENTS[0]:
+            recurrence_rows[candidate] = {
+                "candidate_period": candidate,
+                "divides_lcm_skeleton":
+                    LCM_SKELETON % candidate == 0,
+                "bounded_test": None,
+                "exact_return_to_initial": None,
+                "verdict": "UNTESTABLE_ABOVE_DECLARED_PRE_FUNNEL_BOUND",
+            }
+    determinism_checkpoint(max(RESOLUTION_MOMENTS.values()))
+    return {
+        "primary_keys": primary_keys,
+        "duplicate_keys": duplicate_keys,
+        "schedule_instruction_count": len(schedule),
+        "one_step_rows": one_step_rows,
+        "duplicate_initial_exact": duplicate_initial_exact,
+        "duplicate_masks_identical": duplicate_masks_identical,
+        "determinism_rows": tuple(determinism_rows),
+        "snapshots": snapshots,
+        "resolution_rows": tuple(
+            resolution_rows[event] for event in EVENTS
+        ),
+        "recurrence_rows": tuple(
+            recurrence_rows[candidate]
+            for candidate in recurrence_candidates
+        ),
+        "residual_rows": residual_rows,
+        "pass": (
+            all(row["exact"] for row in one_step_rows)
+            and duplicate_initial_exact
+            and duplicate_masks_identical
+            and all(row["all_exact"] for row in determinism_rows)
+            and all(row["pass"] for row in resolution_rows.values())
+        ),
+    }
+
+
+def funnel_anatomies(
+    dynamics: dict[str, object],
+) -> dict[str, object]:
+    snapshots = dynamics["snapshots"]
+    assert isinstance(snapshots, dict)
+    residual_rows = dynamics["residual_rows"]
+    assert isinstance(residual_rows, tuple)
+    rows = []
+    representative_states = {}
+    for event in EVENTS:
+        state_map = snapshots[event]
+        keys = COHORT_KEYS[event]
+        states = tuple(state_map[key] for key in keys)
+        representative = states[0]
+        representative_states[event] = representative
+        support = tuple(
+            name for name, wire in residual_rows if representative[wire]
+        )
+        partition = state_partition(keys, states)
+        rows.append({
+            "event": event,
+            "funnel_moment": FUNNEL_MOMENTS[event],
+            "resolution_moment": RESOLUTION_MOMENTS[event],
+            "state_sha256": state_sha256(representative),
+            "full_state_hamming_weight": sum(representative),
+            "landed_residual_support": support,
+            "landed_residual_support_weight": len(support),
+            "landed_support_component_counts": dict(sorted(Counter(
+                name.split(".", 1)[0] for name in support
+            ).items())),
+            "nine_key_exact_state_partition": partition,
+            "synchronization_component_count": len(partition),
+            "synchronization_component_sizes":
+                tuple(row["size"] for row in partition),
+            "all_nine_exactly_synchronized": len(partition) == 1,
+        })
+    pairwise = {
+        "event2_vs_event1": sum(
+            left != right for left, right in zip(
+                representative_states[2], representative_states[1]
+            )
+        ),
+        "event2_vs_event0": sum(
+            left != right for left, right in zip(
+                representative_states[2], representative_states[0]
+            )
+        ),
+        "event1_vs_event0": sum(
+            left != right for left, right in zip(
+                representative_states[1], representative_states[0]
+            )
+        ),
+    }
+    expected_hashes = COPIED_831_COHORTS["funnel_state_sha256"]
+    return {
+        "rows": tuple(rows),
+        "pairwise_funnel_diff_weights": pairwise,
+        "cycle830_component_structure": {
+            key: value for key, value in COPIED_830_ANATOMY.items()
+            if key in {
+                "node_occupancy_reverse_depth_0_through_8",
+                "shared_pair_counts_reverse_depth_0_through_8",
+                "key_distinguishing_wires_reverse_depth_0_through_8",
+                "forward_partition_relations_depth_8_through_0",
+            }
+        },
+        "copied_hashes_reconstructed_exactly": all(
+            row["state_sha256"] == expected_hashes[row["event"]]
+            for row in rows
+        ),
+        "copied_pairwise_diff_weights_reconstructed_exactly":
+            pairwise
+            == COPIED_831_COHORTS["pairwise_funnel_diff_weights"],
+        "cycle830_Sstar_weight_reconstructed_exactly":
+            next(
+                row for row in rows if row["event"] == 0
+            )["full_state_hamming_weight"]
+            == COPIED_830_ANATOMY["Sstar_hamming_weight"],
+        "all_three_nine_key_synchronizations_exact":
+            all(row["all_nine_exactly_synchronized"] for row in rows),
+    }
+
+
+def arithmetic_certificate() -> dict[str, object]:
+    gaps = tuple({
+        "left": row["left"],
+        "right": row["right"],
+        "gap": row["right"] - row["left"],
+        "lcm_skeleton": LCM_SKELETON,
+        "residual": row["residual"],
+        "reconstruction": LCM_SKELETON + row["residual"],
+        "exact": (
+            row["right"] - row["left"]
+            == LCM_SKELETON + row["residual"]
+        ),
+    } for row in TRANSITIONS)
+    factorizations = tuple({
+        "value": value,
+        "factorization": factorization(value),
+        "reconstruction": factor_product(factorization(value)),
+    } for value in (4464, 5952, LCM_SKELETON, 595, 64))
+    clock_rows = tuple({
+        "clock": clock,
+        "quotient": divmod(LCM_SKELETON, clock)[0],
+        "remainder": divmod(LCM_SKELETON, clock)[1],
+        "divides_17856": LCM_SKELETON % clock == 0,
+        "verdict": "HIT" if LCM_SKELETON % clock == 0 else "FAIL",
+    } for clock in LANDED_CLOCKS)
+    result = {
+        "gap_decompositions": gaps,
+        "gcd_4464_5952": gcd(4464, 5952),
+        "stdlib_lcm_4464_5952": lcm(4464, 5952),
+        "factorizations": factorizations,
+        "landed_clock_divisibility_rows": clock_rows,
+        "dividing_clocks": tuple(
+            row["clock"] for row in clock_rows if row["divides_17856"]
+        ),
+        "nondividing_clocks": tuple(
+            row["clock"] for row in clock_rows if not row["divides_17856"]
+        ),
+    }
+    result["pass"] = (
+        all(row["exact"] for row in gaps)
+        and result["gcd_4464_5952"] == 1488
+        and result["stdlib_lcm_4464_5952"] == LCM_SKELETON
+        and all(
+            row["reconstruction"] == row["value"]
+            for row in factorizations
+        )
+        and result["dividing_clocks"]
+        == (2, 3, 288, 4464, 5952, 8928)
+        and result["nondividing_clocks"] == (8930,)
+        and factorization(595) == ((5, 1), (7, 1), (17, 1))
+        and factorization(64) == ((2, 6),)
+    )
+    return result
+
+
+def exact_test(
+    scope: str,
+    transition: dict[str, int],
+    relation: str,
+    left: int,
+    right: int,
+) -> dict[str, object]:
+    return {
+        "scope": scope,
+        "transition":
+            (transition["source_event"], transition["target_event"]),
+        "residual": transition["residual"],
+        "relation": relation,
+        "left": left,
+        "right": right,
+        "verdict": "HIT" if left == right else "FAIL",
+    }
+
+
+def residual_certificate(
+    anatomies: dict[str, object],
+) -> dict[str, object]:
+    event_rows = []
+    for transition in TRANSITIONS:
+        residual = transition["residual"]
+        source = transition["source_event"]
+        target = transition["target_event"]
+        comparisons = (
+            ("residual_equals_source_event", residual, source),
+            ("residual_equals_target_event", residual, target),
+            ("residual_equals_absolute_event_jump",
+             residual, abs(target - source)),
+            ("residual_mod_4_equals_target_event", residual % 4, target),
+            ("residual_parity_equals_target_parity",
+             residual % 2, target % 2),
+        )
+        event_rows.extend(
+            exact_test("EVENT_INDICES", transition, label, left, right)
+            for label, left, right in comparisons
+        )
+
+    anatomy_values = []
+    anatomy_rows = anatomies["rows"]
+    assert isinstance(anatomy_rows, tuple)
+    for row in anatomy_rows:
+        event = row["event"]
+        anatomy_values.extend((
+            (f"event{event}.full_state_hamming_weight",
+             row["full_state_hamming_weight"]),
+            (f"event{event}.landed_residual_support_weight",
+             row["landed_residual_support_weight"]),
+            (f"event{event}.synchronization_component_count",
+             row["synchronization_component_count"]),
+        ))
+        anatomy_values.extend(
+            (f"event{event}.synchronization_component_size[{index}]", value)
+            for index, value in enumerate(
+                row["synchronization_component_sizes"]
+            )
+        )
+    for label, value in (
+        anatomies["pairwise_funnel_diff_weights"].items()
+    ):
+        anatomy_values.append((f"pairwise_diff.{label}", value))
+    for label in (
+        "node_occupancy_reverse_depth_0_through_8",
+        "shared_pair_counts_reverse_depth_0_through_8",
+        "key_distinguishing_wires_reverse_depth_0_through_8",
+    ):
+        for depth, value in enumerate(COPIED_830_ANATOMY[label]):
+            anatomy_values.append((f"cycle830.{label}[{depth}]", value))
+    anatomy_relation_rows = tuple(
+        exact_test(
+            "FUNNEL_ANATOMY", transition,
+            f"residual_equals_{label}", transition["residual"], int(value)
+        )
+        for transition in TRANSITIONS
+        for label, value in anatomy_values
+    )
+
+    landed_rows = []
+    for transition in TRANSITIONS:
+        residual = transition["residual"]
+        for clock in LANDED_CLOCKS:
+            landed_rows.extend((
+                {
+                    "scope": "LANDED_CONSTANTS",
+                    "transition": (
+                        transition["source_event"],
+                        transition["target_event"],
+                    ),
+                    "residual": residual,
+                    "clock": clock,
+                    "relation": "residual_equals_clock",
+                    "verdict": "HIT" if residual == clock else "FAIL",
+                },
+                {
+                    "scope": "LANDED_CONSTANTS",
+                    "transition": (
+                        transition["source_event"],
+                        transition["target_event"],
+                    ),
+                    "residual": residual,
+                    "clock": clock,
+                    "relation": "residual_divides_clock",
+                    "quotient": divmod(clock, residual)[0],
+                    "remainder": divmod(clock, residual)[1],
+                    "verdict": "HIT" if clock % residual == 0 else "FAIL",
+                },
+                {
+                    "scope": "LANDED_CONSTANTS",
+                    "transition": (
+                        transition["source_event"],
+                        transition["target_event"],
+                    ),
+                    "residual": residual,
+                    "clock": clock,
+                    "relation": "clock_divides_residual",
+                    "quotient": divmod(residual, clock)[0],
+                    "remainder": divmod(residual, clock)[1],
+                    "verdict": "HIT" if residual % clock == 0 else "FAIL",
+                },
+            ))
+
+    moment_mod_rows = tuple({
+        "scope": "MOMENT_RESIDUES_SMALL_CLOCKS",
+        "subject_kind": subject_kind,
+        "subject_label": label,
+        "value": value,
+        "clock": clock,
+        "quotient": divmod(value, clock)[0],
+        "remainder": divmod(value, clock)[1],
+        "verdict": "HIT" if value % clock == 0 else "FAIL",
+    } for subject_kind, label, value in (
+        *(("moment", f"event{event}", moment)
+          for event, moment in zip(EVENTS, MOMENTS)),
+        *(("residual", f"{row['source_event']}->{row['target_event']}",
+           row["residual"]) for row in TRANSITIONS),
+    ) for clock in SMALL_CLOCKS)
+    transition_mod_rows = tuple({
+        "scope": "MOMENT_RESIDUE_TRANSITION_IDENTITY",
+        "transition": (
+            row["source_event"], row["target_event"]
+        ),
+        "clock": clock,
+        "left_moment_remainder": row["left"] % clock,
+        "right_moment_remainder": row["right"] % clock,
+        "observed_modular_increment":
+            (row["right"] - row["left"]) % clock,
+        "residual_remainder": row["residual"] % clock,
+        "verdict": (
+            "HIT"
+            if (row["right"] - row["left"]) % clock
+            == row["residual"] % clock
+            else "FAIL"
+        ),
+    } for row in TRANSITIONS for clock in SMALL_CLOCKS)
+
+    candidate_rows = tuple({
+        "law": law,
+        "transition_rows": tuple({
+            "source_event": row["source_event"],
+            "target_event": row["target_event"],
+            "observed_residual": row["residual"],
+            "law_residual":
+                candidate_residual(
+                    law, row["source_event"], row["target_event"]
+                ),
+            "verdict": (
+                "HIT"
+                if candidate_residual(
+                    law, row["source_event"], row["target_event"]
+                ) == row["residual"]
+                else "FAIL"
+            ),
+        } for row in TRANSITIONS),
+        "status": "CANDIDATE_TWO_POINTS_CANNOT_PROVE",
+    } for law in ("TARGET_PARITY_LOOKUP", "ABS_EVENT_JUMP_LOOKUP"))
+    candidate_rows = tuple({
+        **row,
+        "survives": all(
+            test["verdict"] == "HIT"
+            for test in row["transition_rows"]
+        ),
+    } for row in candidate_rows)
+    survivors = tuple(
+        row["law"] for row in candidate_rows if row["survives"]
+    )
+    result = {
+        "residual_factorizations": tuple({
+            "residual": row["residual"],
+            "factorization": factorization(row["residual"]),
+        } for row in TRANSITIONS),
+        "event_index_relation_rows": tuple(event_rows),
+        "funnel_anatomies": anatomies,
+        "anatomy_numeric_universe": tuple(anatomy_values),
+        "anatomy_equality_rows": anatomy_relation_rows,
+        "landed_constant_relation_rows": tuple(landed_rows),
+        "moment_and_residual_small_clock_rows": moment_mod_rows,
+        "transition_modular_identity_rows": transition_mod_rows,
+        "candidate_law_rows": candidate_rows,
+        "surviving_candidate_laws": survivors,
+        "interpretation":
+            "Every declared equality/divisibility/zero-remainder test prints "
+            "HIT or FAIL.  The two lookup candidates each interpolate only "
+            "two points and are not promoted to laws.",
+    }
+    result["pass"] = (
+        all(
+            row["verdict"] in {"HIT", "FAIL"}
+            for row in (
+                *result["event_index_relation_rows"],
+                *result["anatomy_equality_rows"],
+                *result["landed_constant_relation_rows"],
+                *result["moment_and_residual_small_clock_rows"],
+                *result["transition_modular_identity_rows"],
+            )
+        )
+        and all(
+            row["verdict"] == "HIT"
+            for row in result["transition_modular_identity_rows"]
+        )
+        and survivors
+        == ("TARGET_PARITY_LOOKUP", "ABS_EVENT_JUMP_LOOKUP")
+        and anatomies["copied_hashes_reconstructed_exactly"]
+        and anatomies[
+            "copied_pairwise_diff_weights_reconstructed_exactly"
+        ]
+        and anatomies["cycle830_Sstar_weight_reconstructed_exactly"]
+        and anatomies["all_three_nine_key_synchronizations_exact"]
+    )
+    return result
+
+
+def prediction_certificate(
     preregistration: dict[str, object],
-    sources: dict[str, object],
+    residuals: dict[str, object],
+    family: dict[str, object],
+) -> dict[str, object]:
+    open_keys = open_pair_event_keys()
+    family_states = family["states"]
+    assert isinstance(family_states, dict)
+    catalog_pair_event = tuple(
+        (key[1], key[0]) for key in sorted(
+            family_states, key=lambda key: (key[1], key[0])
+        )
+    )
+    resolved = (
+        set(EARLIER_RESOLVED)
+        | set(COHORT_KEYS[2])
+        | set(COHORT_KEYS[1])
+    )
+    reconstructed = tuple(
+        row for row in catalog_pair_event
+        if (row[1], row[0]) not in resolved
+    )
+    prereg_laws = {
+        row["law"]: row
+        for row in preregistration["candidate_laws"]
+    }
+    survivors = residuals["surviving_candidate_laws"]
+    predictions = tuple({
+        "law": law,
+        "status": "PREDICTED_PRE_REGISTERED_AND_SURVIVED_B",
+        "rows":
+            prereg_laws[law]["predictions_from_current_event_1"],
+    } for law in survivors)
+    backbone_open = tuple(
+        row for row in open_keys if row[0] in set(BACKBONE)
+    )
+    result = {
+        "open_pair_event_keys": open_keys,
+        "open_key_count": len(open_keys),
+        "open_event_census": dict(sorted(Counter(
+            event for _pair, event in open_keys
+        ).items())),
+        "open_keys_on_nine_pair_backbone": backbone_open,
+        "literal_backbone_result":
+            "NONE; the nine event-3 backbone keys were already cycles and "
+            "the event-0/2/1 backbone cohorts are resolved.",
+        "candidate_laws_surviving_B": survivors,
+        "pre_registered_predictions_for_survivors": predictions,
+        "fallback_lcm_skeleton_if_candidates_fail":
+            preregistration["fallback_bounded_forecast"],
+        "enumeration_reconstructed_from_176_key_family_exactly":
+            reconstructed == open_keys,
+        "pre_registered_open_enumeration_unchanged":
+            preregistration["open_pair_event_keys"] == open_keys,
+    }
+    result["pass"] = (
+        len(open_keys) == 133
+        and not backbone_open
+        and reconstructed == open_keys
+        and result["pre_registered_open_enumeration_unchanged"]
+        and len(predictions) == len(survivors)
+        and all(
+            prediction["predicted_next_cohort_moment"]
+            in {69035, 69566}
+            for law in predictions
+            for prediction in law["rows"]
+            if prediction["status"] == "PREDICTED"
+        )
+    )
+    return result
+
+
+def recurrence_certificate(
+    dynamics: dict[str, object],
+) -> dict[str, object]:
+    rows = dynamics["recurrence_rows"]
+    assert isinstance(rows, tuple)
+    tested = tuple(
+        row for row in rows if row["exact_return_to_initial"] is not None
+    )
+    hits = tuple(
+        row["candidate_period"] for row in tested
+        if row["exact_return_to_initial"]
+    )
+    untestable = tuple(
+        row["candidate_period"] for row in rows
+        if row["exact_return_to_initial"] is None
+    )
+    result = {
+        "key": COHORT_KEYS[0][0],
+        "configuration": "full landed 5815-bit data state",
+        "pre_funnel_window_inclusive": (0, FUNNEL_MOMENTS[0]),
+        "candidate_period_rule": "every positive divisor of 17856",
+        "autonomous_reversible_equivalence":
+            "For the fixed reversible update, any state(t)=state(t+p) "
+            "implies state(0)=state(p); testing returns to t=0 is therefore "
+            "an exact recurrence-period test, not a hash surrogate.",
+        "candidate_rows": rows,
+        "tested_candidate_count": len(tested),
+        "exact_recurrence_hits": hits,
+        "untestable_above_bound": untestable,
+        "mechanism_candidate": (
+            {"status": "CANDIDATE", "periods": hits}
+            if hits else
+            {
+                "status": "HONEST_OPEN",
+                "reading":
+                    "No state-recurrence period dividing 17856 was found "
+                    "within the declared pre-funnel bound.",
+            }
+        ),
+    }
+    result["pass"] = (
+        tuple(row["candidate_period"] for row in rows)
+        == divisors(LCM_SKELETON)
+        and all(row["divides_lcm_skeleton"] for row in rows)
+        and not hits
+        and untestable == (LCM_SKELETON,)
+    )
+    return result
+
+
+def render(
+    preregistration: dict[str, object],
+    checks: dict[str, bool],
+    certificates: dict[str, object],
+    report: dict[str, object],
 ) -> str:
-    return "\n".join((
+    lines = [
         "PRE_REGISTRATION " + compact(preregistration),
-        "CHECK SCAFFOLD_COMPLETE=false",
-        "CERTIFICATE E_SCAFFOLD_CONTROLS " + compact(sources),
-        "CYCLE832_COHORT_MOMENT_LAW_SCAFFOLD",
-    )) + "\n"
+    ]
+    lines.extend(
+        f"CHECK {name}={str(value).lower()}"
+        for name, value in checks.items()
+    )
+    lines.extend(
+        f"CERTIFICATE {name} " + compact(value)
+        for name, value in certificates.items()
+    )
+    lines.append("SUMMARY_JSON " + compact(report))
+    lines.append(str(report["terminal"]))
+    return "\n".join(lines) + "\n"
+
+
+def stable_render(
+    preregistration: dict[str, object],
+    checks: dict[str, bool],
+    certificates: dict[str, object],
+    report: dict[str, object],
+) -> str:
+    for _attempt in range(20):
+        report["checks"] = dict(checks)
+        report["pass"] = all(checks.values())
+        report["terminal"] = (
+            "CYCLE832_COHORT_MOMENT_LAW_EXACT_PASS"
+            if report["pass"]
+            else "CYCLE832_COHORT_MOMENT_LAW_HONEST_FAIL"
+        )
+        output = render(
+            preregistration, checks, certificates, report
+        )
+        size = len(output.encode())
+        controls = certificates["E_CONTROLS"]
+        if report["stdout_bytes"] == size and controls["stdout_bytes"] == size:
+            return output
+        report["stdout_bytes"] = size
+        controls["stdout_bytes"] = size
+    raise AssertionError("stdout byte fixed point did not converge")
+
+
+def run() -> int:
+    started = monotonic()
+    # This object is frozen before any source or dynamics verification.
+    preregistration = build_preregistration()
+    sources = source_controls()
+    family = build_seed_family()
+    dynamics = evolve_funnels(family)
+    certificate_a = arithmetic_certificate()
+    anatomies = funnel_anatomies(dynamics)
+    certificate_b = residual_certificate(anatomies)
+    certificate_c = prediction_certificate(
+        preregistration, certificate_b, family
+    )
+    certificate_d = recurrence_certificate(dynamics)
+    elapsed = monotonic() - started
+    deterministic = (
+        dynamics["duplicate_initial_exact"]
+        and dynamics["duplicate_masks_identical"]
+        and all(
+            row["all_exact"] for row in dynamics["determinism_rows"]
+        )
+    )
+    controls_base = (
+        sources["pass"]
+        and family["summary"]["pass"]
+        and dynamics["pass"]
+        and deterministic
+        and not any(
+            name in sys.modules for name in BLOCKLISTED_MODULES
+        )
+        and not FIREWALL.hits
+        and elapsed < AUDIT_TIMEOUT_SEC
+    )
+    controls = {
+        **sources,
+        "family": family["summary"],
+        "exact_arithmetic":
+            "All moments, factors, residues, GF(2) state evolution, state "
+            "equality, Hamming weights, and component counts use exact "
+            "Python integers; only monotonic runtime is a float.",
+        "independent_dynamics": {
+            "direct_dynamic_imports": (
+                "frontier_cycle719_two_rail_recurrent_controller_core_"
+                "2026_07_26",
+            ),
+            "source_primary_outputs_consumed": False,
+            "primary_lanes": len(dynamics["primary_keys"]),
+            "duplicate_lanes": len(dynamics["duplicate_keys"]),
+            "packed_schedule_instructions":
+                dynamics["schedule_instruction_count"],
+            "one_step_scalar_equivalence_rows":
+                dynamics["one_step_rows"],
+            "resolution_rows": dynamics["resolution_rows"],
+        },
+        "determinism": {
+            "keys": dynamics["duplicate_keys"],
+            "initial_exact": dynamics["duplicate_initial_exact"],
+            "all_schedule_masks_identical":
+                dynamics["duplicate_masks_identical"],
+            "checkpoints": dynamics["determinism_rows"],
+            "deterministic": deterministic,
+        },
+        "blocked_modules_loaded_at_end": tuple(
+            name for name in BLOCKLISTED_MODULES if name in sys.modules
+        ),
+        "firewall_hits_at_end": tuple(FIREWALL.hits),
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "pass": controls_base,
+    }
+    checks = {
+        "A_LCM_STRUCTURE_VERIFIED": bool(certificate_a["pass"]),
+        "B_RESIDUAL_CENSUS_COMPLETE": bool(certificate_b["pass"]),
+        "C_PRE_REGISTERED_PREDICTIONS": bool(certificate_c["pass"]),
+        "D_BOUNDED_RECURRENCE_PROBE": bool(certificate_d["pass"]),
+        "E_CONTROLS": controls_base,
+    }
+    certificates = {
+        "A_LCM_STRUCTURE": certificate_a,
+        "B_RESIDUAL_HUNT": certificate_b,
+        "C_PRE_REGISTERED_PREDICTION": certificate_c,
+        "D_STRUCTURAL_RECURRENCE": certificate_d,
+        "E_CONTROLS": controls,
+    }
+    report = {
+        "cycle": 832,
+        "target": "cohort-moment law",
+        "lcm_skeleton": LCM_SKELETON,
+        "residuals": tuple(row["residual"] for row in TRANSITIONS),
+        "candidate_status":
+            "CANDIDATE_TWO_POINTS_CANNOT_PROVE",
+        "surviving_candidate_laws":
+            certificate_b["surviving_candidate_laws"],
+        "open_keys": certificate_c["open_key_count"],
+        "recurrence_probe_status":
+            certificate_d["mechanism_candidate"]["status"],
+        "runtime_seconds": round(elapsed, 6),
+        "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
+        "stdout_bytes": 0,
+        "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+        "checks": {},
+        "pass": False,
+        "terminal": "CYCLE832_COHORT_MOMENT_LAW_HONEST_FAIL",
+    }
+    output = stable_render(
+        preregistration, checks, certificates, report
+    )
+    stdout_ok = len(output.encode()) < STDOUT_LIMIT_BYTES
+    checks["E_CONTROLS"] = controls_base and stdout_ok
+    controls["pass"] = checks["E_CONTROLS"]
+    output = stable_render(
+        preregistration, checks, certificates, report
+    )
+    if len(output.encode()) >= STDOUT_LIMIT_BYTES:
+        sys.stdout.write(compact({
+            "pass": False,
+            "failure": "stdout limit exceeded",
+            "stdout_bytes": len(output.encode()),
+            "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
+            "terminal": "CYCLE832_COHORT_MOMENT_LAW_HONEST_FAIL",
+        }) + "\n")
+        return 1
+    sys.stdout.write(output)
+    return 0 if report["pass"] else 1
 
 
 def main() -> int:
-    preregistration = build_preregistration()
-    sources = source_controls()
-    sys.stdout.write(render_scaffold(preregistration, sources))
-    return 1
+    try:
+        return run()
+    except Exception as error:
+        sys.stdout.write(compact({
+            "pass": False,
+            "exception_type": type(error).__name__,
+            "exception": str(error),
+            "terminal": "CYCLE832_COHORT_MOMENT_LAW_HONEST_FAIL",
+        }) + "\n")
+        return 1
 
 
 if __name__ == "__main__":

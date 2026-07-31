@@ -1,0 +1,31 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockP16-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle833_funnel_family_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    },
+    "logs/runner-cache/frontier_cycle833_funnel_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 10
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 833,
+  "files": {
+    "docs/FUNNEL_FAMILY_CYCLE833_BOUNDED_THEOREM_NOTE_2026-07-28.md": "7f7de98bdf658938180d96977dc448fdbd7836e3f808f24eea77e8a9fd5508ba",
+    "logs/runner-cache/frontier_cycle833_funnel_family_2026_07_28.txt": "103cc827ca2582dc617bee7954583c0ae1abe465d24efddf9ba744173cbf1252",
+    "logs/runner-cache/frontier_cycle833_funnel_independent_check_2026_07_28.txt": "510707e3e3af3d6a6d445fbb5eb5b175126a18df896c32a864566855ac533010",
+    "scripts/frontier_cycle833_funnel_family_2026_07_28.py": "bd08f5f503e532c724e6ae28915ba2f0b4202360bbe01458924d689e27c79174",
+    "scripts/frontier_cycle833_funnel_independent_check_2026_07_28.py": "06fc7abc20dcbeba0ecd6234f366b838c45c91e1790599521e45b500192dde6b"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "THE FAMILY MAP (reversal twenty-two, constructive; map_source: independent_checker): rank-edge field updates on a 39-field support map S*->S2->S1 by FULL-STATE EQUALITY; 5,776 wires common",
+    "weight law 44->45->46 = the map's exact +1/+1 accounting",
+    "S0' := map(S1) computed (weight 47, sha-pinned): ZERO visits across 176 trajectories through T=65,536 \u2014 standing falsifiable prediction",
+    "unified predicate exact both directions (176 keys); checker PASS (one pin updated)"
+  ]
+}

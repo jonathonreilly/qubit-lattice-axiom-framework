@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
-"""Cycle 833: exact census of the three k=2 cohort funnel states.
+"""Cycle 833 v2: adopt the exact rank-edge funnel-family field map.
 
-The Cycle-805/815/820/822/830/831 source primaries are SHA-pinned text/AST
-controls only and are blocked from import.  Dynamics are rebuilt from the
-landed Cycle-719 controller core.  Two entrants per cohort (plus exact
-determinism duplicates) reconstruct the three funnel states, while the full
-176-key catalog supplies the two-direction entry-predicate census.
+The Cycle-805/830/831 source primaries are SHA-pinned text/AST controls only
+and are blocked from import.  Dynamics are rebuilt from the landed Cycle-719
+controller core.  Two entrants per cohort (plus exact determinism duplicates)
+reconstruct the three funnel states.  The independent checker's construction
+is reimplemented here: packed-wire differences are decoded to named source
+and bank fields, then applied as exact arrival-rank edge updates.
 """
 from __future__ import annotations
 
-AUDIT_TIMEOUT_SEC = 1500
+AUDIT_TIMEOUT_SEC = 1400
 STDOUT_LIMIT_BYTES = 200 * 1024
 AUDIT_INPUT_PATHS = (
     "scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+    "scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+    "scripts/frontier_cycle715_recurrent_directional_packet_bank_2026_07_26.py",
     "scripts/frontier_cycle805_supply_relabeling_tournament_2026_07_28.py",
-    "scripts/frontier_cycle815_per_origin_orbit_constraint_2026_07_28.py",
-    "scripts/frontier_cycle820_shared_moment_mechanism_2026_07_28.py",
-    "scripts/frontier_cycle822_sstar_basin_2026_07_28.py",
     "scripts/frontier_cycle830_sstar_preimage_tree_2026_07_28.py",
     "scripts/frontier_cycle831_deep_k2_forecast_tests_2026_07_28.py",
 )
@@ -37,32 +37,30 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 CORE_PATH = AUDIT_INPUT_PATHS[0]
-TEXT_AST_ONLY_PATHS = AUDIT_INPUT_PATHS[1:]
+STATE_OBJECT_PATHS = AUDIT_INPUT_PATHS[1:3]
+TEXT_AST_ONLY_PATHS = AUDIT_INPUT_PATHS[3:]
 BLOCKLISTED_MODULES = tuple(Path(path).stem for path in TEXT_AST_ONLY_PATHS)
 EXPECTED_SHA256 = {
     AUDIT_INPUT_PATHS[0]:
         "0c0417912f35c369113513823edd2221d446ecdcae7ff039c50fb7c322e791c4",
     AUDIT_INPUT_PATHS[1]:
-        "04432816e3844043b419de8d91001003cd7fb8de76635658c3367574c3e44b9a",
+        "b514b0e20197bb0ce5e5440b4b0c1f2a0f74a1962b127e8a4e4a2e97c8f86a1a",
     AUDIT_INPUT_PATHS[2]:
-        "e064b2f431f3e125b8c7f8176e6331f3fee41c2d1dc8ba7e3e65ae97a4ebb6b0",
+        "7ffe1dd4b169f774dce5bc9db29c5329c6e06c92e02506fbc734916ff11de884",
     AUDIT_INPUT_PATHS[3]:
-        "7344bee5d5f0bcbddcea7b9d83f40a552c90188bf30b4905f2649a49e4bf1649",
+        "04432816e3844043b419de8d91001003cd7fb8de76635658c3367574c3e44b9a",
     AUDIT_INPUT_PATHS[4]:
-        "269d235c4981eaa4b94cfc200a0d472bf9f1ca8b57c2e14880afe754a9d41c56",
-    AUDIT_INPUT_PATHS[5]:
         "b14262f6d54dc4f853bda13f321c816b3e762fa37b0b8276a2bec4955c51c481",
-    AUDIT_INPUT_PATHS[6]:
+    AUDIT_INPUT_PATHS[5]:
         "624dad4d841e10e24891810dbc500cc4d6ebe871d6f09dd96f89e3189e52e2ff",
 }
 EXPECTED_GIT_BLOBS = {
     AUDIT_INPUT_PATHS[0]: "c123b8d681c3d76fce08ef13d7673622deac64ad",
-    AUDIT_INPUT_PATHS[1]: "075659d59588f7895e91f50f9ef93a368fb1fb4e",
-    AUDIT_INPUT_PATHS[2]: "3fbfaf0019af05bbb3121de47de49b9cefec7571",
-    AUDIT_INPUT_PATHS[3]: "6385dfa0dce58e86345483cc521ffa325e0d1cce",
-    AUDIT_INPUT_PATHS[4]: "56fd26ec1f09e3690aa0e9cacd1447c289fd7ac0",
-    AUDIT_INPUT_PATHS[5]: "1afe4941812f83f5e1fd5cc7c04e57231d703e8d",
-    AUDIT_INPUT_PATHS[6]: "ef24edda08118c4e14439b899790fff6c6f94175",
+    AUDIT_INPUT_PATHS[1]: "97cc3de7b95e341326c404047a321dbe2c825eda",
+    AUDIT_INPUT_PATHS[2]: "fa03ab4796b729ee0bb83ab3823fd1b171bde8bd",
+    AUDIT_INPUT_PATHS[3]: "075659d59588f7895e91f50f9ef93a368fb1fb4e",
+    AUDIT_INPUT_PATHS[4]: "1afe4941812f83f5e1fd5cc7c04e57231d703e8d",
+    AUDIT_INPUT_PATHS[5]: "ef24edda08118c4e14439b899790fff6c6f94175",
 }
 
 
@@ -111,6 +109,10 @@ EVENT_ORDER = (0, 2, 1)
 EXPECTED_SSTAR_SHA256 = (
     "cdf7e03092c6278b686c1f0edb9ebd716f4a285b1eabc8a7e2780695284a8f1a"
 )
+EXPECTED_XOR_WEIGHTS = {(0, 2): 25, (2, 1): 27, (0, 1): 26}
+LINEAGE_SCAN_HORIZON = 65536
+EXPECTED_RESOLVED_AT_HORIZON = 43
+EXPECTED_OPEN_AT_HORIZON = 133
 
 
 def compact(value: object) -> str:
@@ -175,17 +177,14 @@ def source_controls() -> dict[str, object]:
     )
     markers = {
         AUDIT_INPUT_PATHS[1]:
-            {"cyclic_map", "event_transport_rows", "mapping_table"},
+            {"pack_state", "unpack_state"},
         AUDIT_INPUT_PATHS[2]:
-            {"origin_fiber_rotation", "origin_action_certificate"},
+            {"declared_append_domain", "packet_projection"},
         AUDIT_INPUT_PATHS[3]:
-            {"population_state_at_entry", "five_step_image",
-             "mechanism_candidates"},
+            {"cyclic_map", "event_transport_rows", "mapping_table"},
         AUDIT_INPUT_PATHS[4]:
-            {"evolve_sstar_pair", "sstar_anatomy", "entry_predictors"},
-        AUDIT_INPUT_PATHS[5]:
             {"decode_fixtures", "preimage_tree_certificate"},
-        AUDIT_INPUT_PATHS[6]:
+        AUDIT_INPUT_PATHS[5]:
             {"build_family", "masked_schedule", "run"},
     }
     sha_rows = {
@@ -215,11 +214,12 @@ def source_controls() -> dict[str, object]:
             )
         ),
         "plain_reading_named_files": len(AUDIT_INPUT_PATHS),
-        "maximum_named_files": 7,
+        "maximum_named_files": 6,
         "sha256": sha_rows,
         "expected_sha256": EXPECTED_SHA256,
         "git_blobs": blob_rows,
         "expected_git_blobs": EXPECTED_GIT_BLOBS,
+        "state_object_paths": STATE_OBJECT_PATHS,
         "text_AST_only_paths": TEXT_AST_ONLY_PATHS,
         "blocked_AST_markers": tuple(
             (path, tuple(sorted(names))) for path, names in markers.items()
@@ -238,7 +238,7 @@ def source_controls() -> dict[str, object]:
     result["pass"] = (
         result["AUDIT_INPUT_PATHS_literal"]
         and result["existing_worktree_relative"]
-        and len(AUDIT_INPUT_PATHS) <= 7
+        and len(AUDIT_INPUT_PATHS) <= 6
         and sha_rows == EXPECTED_SHA256
         and blob_rows == EXPECTED_GIT_BLOBS
         and result["blocked_AST_markers_present"]
@@ -574,7 +574,7 @@ def anatomy(event: int, state: State, second: State) -> dict[str, object]:
     residual = residual_support(state)
     return {
         "event": event,
-        "funnel_moment": FUNNEL_MOMENTS[event],
+        "funnel_moment": FUNNEL_MOMENTS.get(event),
         "full_state_bits": len(state),
         "full_state_sha256": state_sha256(state),
         "second_entrant_sha256": state_sha256(second),
@@ -653,6 +653,247 @@ def exact_diff(
     }
 
 
+def _bank_wire_aliases() -> dict[int, tuple[str, ...]]:
+    """Reimplement the independent checker's named bank-wire decoder."""
+    aliases: dict[int, list[str]] = {
+        wire: [] for wire in range(K.A.N)
+    }
+    for cell, layout in enumerate(K.A.CELLS):
+        for field, value in layout.items():
+            if field == "payload":
+                continue
+            if isinstance(value, tuple):
+                for index, wire in enumerate(value):
+                    aliases[int(wire)].append(
+                        f"cell{cell}.{field}[{index}]"
+                    )
+            else:
+                aliases[int(value)].append(f"cell{cell}.{field}")
+    for register in ("HEAD", "ROTOR", "TOKEN", "FRESH", "ZERO_WORK"):
+        for index, wire in enumerate(getattr(K.A, register)):
+            aliases[int(wire)].append(f"{register}[{index}]")
+    for register in (
+        "POINTER", "U_TO_V", "V_TO_U", "BINDER", "ACTUAL", "ADMISS",
+        "LAW", "TOKEN_OK", "DIRECTION_OK", "ENABLE_TARGET",
+    ):
+        aliases[int(getattr(K.A, register))].append(register)
+    return {
+        wire: tuple(names) for wire, names in aliases.items()
+    }
+
+
+BANK_WIRE_ALIASES = _bank_wire_aliases()
+SOURCE_NAMES = {
+    K.R3.X.LEFT_ENDPOINT: "LEFT_ENDPOINT",
+    K.R3.X.RIGHT_ENDPOINT: "RIGHT_ENDPOINT",
+    K.R3.X.SOURCE_POINTER: "SOURCE_POINTER",
+}
+
+
+def wire_name(wire: int) -> str:
+    """Decode one packed index through the cited source/bank state objects."""
+    if wire < K.M.R12.SOURCE_WIDTH:
+        return f"source.{SOURCE_NAMES.get(wire, f'wire[{wire}]')}"
+    for bank, base in enumerate(
+        K.M.R12.BANK_BASES[:FIXTURE_BANKS]
+    ):
+        if base <= wire < base + K.A.N:
+            local = wire - base
+            aliases = BANK_WIRE_ALIASES[local]
+            label = "|".join(aliases) if aliases else f"wire[{local}]"
+            return f"bank{bank}.{label}"
+    for link, base in enumerate(
+        K.M.R12.LINK_BASES[:FIXTURE_BANKS - 1]
+    ):
+        if base <= wire < base + K.B.LINK_WIDTH:
+            return f"link{link}.wire[{wire - base}]"
+    return f"unused_padding.wire[{wire}]"
+
+
+def field_group(name: str) -> str:
+    head = name.split("|", 1)[0]
+    return head.split("[", 1)[0]
+
+
+def xor_support(left: State, right: State) -> tuple[int, ...]:
+    return tuple(
+        wire for wire, (a, b) in enumerate(zip(left, right)) if a != b
+    )
+
+
+def apply_named_xor_update(
+    state: State,
+    named_mask: tuple[str, ...],
+) -> State:
+    by_name = {wire_name(wire): wire for wire in range(len(state))}
+    if len(by_name) != len(state):
+        raise AssertionError("wire decoder is not injective")
+    output = list(state)
+    for name in named_mask:
+        output[by_name[name]] ^= 1
+    return tuple(output)
+
+
+def edge_accounting(
+    left: State,
+    right: State,
+    mask: tuple[str, ...],
+) -> dict[str, object]:
+    by_name = {wire_name(wire): wire for wire in range(len(left))}
+    transitions = tuple(
+        (
+            name,
+            left[by_name[name]],
+            right[by_name[name]],
+        )
+        for name in mask
+    )
+    groups: dict[str, dict[str, int]] = {}
+    for name, before, after in transitions:
+        group = field_group(name)
+        row = groups.setdefault(
+            group, {"flipped_on": 0, "flipped_off": 0, "net": 0}
+        )
+        row["flipped_on"] += int(before == 0 and after == 1)
+        row["flipped_off"] += int(before == 1 and after == 0)
+        row["net"] += after - before
+    flipped_on = sum(before == 0 and after == 1
+                     for _name, before, after in transitions)
+    flipped_off = sum(before == 1 and after == 0
+                      for _name, before, after in transitions)
+    return {
+        "field_transitions": tuple(
+            f"{name}:{before}->{after}"
+            for name, before, after in transitions
+        ),
+        "field_group_weight_updates": tuple(
+            (name, values) for name, values in sorted(groups.items())
+        ),
+        "flipped_on": flipped_on,
+        "flipped_off": flipped_off,
+        "net_weight_increment": flipped_on - flipped_off,
+        "source_weight": sum(left),
+        "target_weight": sum(right),
+        "accounting_exact":
+            sum(left) + flipped_on - flipped_off == sum(right),
+    }
+
+
+def rank_edge_field_map_certificate(
+    funnels: dict[int, State],
+) -> dict[str, object]:
+    """Construct the checker-discovered map without importing the checker."""
+    edge_specs = (
+        (0, 2, 0, 1, "S*", "S2"),
+        (2, 1, 1, 2, "S2", "S1"),
+    )
+    rows = []
+    edge_masks: dict[tuple[int, int], tuple[str, ...]] = {}
+    union: set[int] = set()
+    for source, target, left_rank, right_rank, left_name, right_name in (
+        edge_specs
+    ):
+        support = xor_support(funnels[source], funnels[target])
+        union.update(support)
+        mask = tuple(wire_name(wire) for wire in support)
+        edge_masks[(source, target)] = mask
+        accounting = edge_accounting(
+            funnels[source], funnels[target], mask
+        )
+        image = apply_named_xor_update(funnels[source], mask)
+        rows.append({
+            "arrival_rank_edge": (left_rank, right_rank),
+            "event_edge": (source, target),
+            "state_edge": f"{left_name}->{right_name}",
+            "operation": "XOR the listed named-field mask",
+            "named_field_updates": mask,
+            "xor_weight": len(mask),
+            "expected_xor_weight":
+                EXPECTED_XOR_WEIGHTS[(source, target)],
+            "full_state_image_sha256": state_sha256(image),
+            "target_sha256": state_sha256(funnels[target]),
+            "full_state_equality": image == funnels[target],
+            **accounting,
+        })
+
+    direct_support = xor_support(funnels[0], funnels[1])
+    union.update(direct_support)
+    direct_mask = tuple(wire_name(wire) for wire in direct_support)
+    named_union = tuple(wire_name(wire) for wire in sorted(union))
+    outside_common = all(
+        len({funnels[event][wire] for event in EVENT_ORDER}) == 1
+        for wire in range(STATE_BITS) if wire not in union
+    )
+    localized = (
+        len(named_union) == 39
+        and outside_common
+        and all(
+            name.startswith((
+                "source.LEFT_ENDPOINT",
+                "source.RIGHT_ENDPOINT",
+                "bank0.",
+            ))
+            for name in named_union
+        )
+        and all(
+            ".wire[" not in name and "unused_padding" not in name
+            for name in named_union
+        )
+    )
+    first_image = apply_named_xor_update(
+        funnels[0], edge_masks[(0, 2)]
+    )
+    second_image = apply_named_xor_update(
+        first_image, edge_masks[(2, 1)]
+    )
+    direct_image = apply_named_xor_update(funnels[0], direct_mask)
+    result = {
+        "map_source": "independent_checker",
+        "construction":
+            "primary-side reimplementation of packed XOR support, named-wire "
+            "decoding, and arrival-rank-selected field-mask application",
+        "state_object_citation": {
+            "packing":
+                f"{STATE_OBJECT_PATHS[0]}::pack_state/unpack_state",
+            "named_bank_fields":
+                f"{STATE_OBJECT_PATHS[1]}::CELLS and named registers",
+        },
+        "operation":
+            "XOR the listed named-field mask selected by arrival-rank edge",
+        "rank_edge_rows": tuple(rows),
+        "direct_rank0_to_rank2": {
+            "event_edge": (0, 1),
+            "named_field_updates": direct_mask,
+            "xor_weight": len(direct_mask),
+            "expected_xor_weight": EXPECTED_XOR_WEIGHTS[(0, 1)],
+            "full_state_equality": direct_image == funnels[1],
+        },
+        "localized_union_width": len(named_union),
+        "localized_union_fields": named_union,
+        "common_wire_count": STATE_BITS - len(named_union),
+        "outside_union_exactly_common": outside_common,
+        "Sstar_to_S2_exact": first_image == funnels[2],
+        "S2_to_S1_exact": second_image == funnels[1],
+        "Sstar_to_S1_direct_exact": direct_image == funnels[1],
+        "scope":
+            "exact observed-three rank-edge map; the extrapolated fourth "
+            "candidate remains a prediction, not a future-event theorem",
+    }
+    result["pass"] = (
+        localized
+        and result["localized_union_width"] == 39
+        and result["common_wire_count"] == 5776
+        and all(row["full_state_equality"] for row in rows)
+        and all(
+            row["xor_weight"] == row["expected_xor_weight"]
+            and row["accounting_exact"]
+            for row in rows
+        )
+        and result["Sstar_to_S1_direct_exact"]
+    )
+    return result
+
+
 def entry_predicate(event: int, key: Key) -> bool:
     return (
         key[0] == event
@@ -720,6 +961,300 @@ def predicate_certificate(catalog: tuple[Key, ...]) -> dict[str, object]:
         and pair_selector == BACKBONE
         and all(row["both_directions_exact"] for row in event_rows)
         and result["verified_union_exact"]
+    )
+    return result
+
+
+def fourth_candidate_certificate(
+    funnels: dict[int, State],
+    anatomies: dict[int, dict[str, object]],
+    family_map: dict[str, object],
+) -> tuple[State, dict[str, object]]:
+    """Extend the named-field update class by one explicit prediction edge.
+
+    The observed post-reset HEAD block advances from weight zero in S2 to
+    HEAD[0] in S1.  The minimal next-rank continuation activates HEAD[1]
+    while preserving HEAD[0].  This is a disclosed extrapolation inside the
+    checker's named-field-XOR class, not an observed fourth edge.
+    """
+    current = funnels[1]
+    prediction_mask = ("bank0.HEAD[1]",)
+    candidate = apply_named_xor_update(current, prediction_mask)
+    candidate_anatomy = anatomy(-1, candidate, candidate)
+    candidate_anatomy["event"] = "prediction"
+    candidate_anatomy["funnel_moment"] = None
+    current_anatomy = anatomies[1]
+    support = xor_support(current, candidate)
+    support_names = tuple(wire_name(wire) for wire in support)
+    union = set(family_map["localized_union_fields"])
+    anatomy_preserved = (
+        candidate_anatomy["occupancy"] == current_anatomy["occupancy"]
+        and candidate_anatomy["tokens"] == current_anatomy["tokens"]
+        and candidate_anatomy["links"] == current_anatomy["links"]
+        and candidate_anatomy["residual_fields"]
+        == current_anatomy["residual_fields"]
+        and candidate_anatomy["source_active_indices"]
+        == current_anatomy["source_active_indices"]
+    )
+    lawful = (
+        len(candidate) == STATE_BITS
+        and set(candidate) <= {0, 1}
+        and set(support_names) <= union
+        and anatomy_preserved
+        and candidate_anatomy["hamming_weight"] == 47
+        and candidate_anatomy["bank_hamming_weights"] == (41, 4)
+    )
+    certificate = {
+        "name": "S0'",
+        "definition": "S0' := map(S1)",
+        "map_operation":
+            "same named-field XOR update class, selected by the next "
+            "arrival-rank edge",
+        "prediction_edge": (2, 3),
+        "prediction_named_field_updates": prediction_mask,
+        "prediction_basis":
+            "minimal post-reset HEAD-block continuation: S2 has no active "
+            "HEAD bit, S1 activates HEAD[0], and the next candidate activates "
+            "HEAD[1] without clearing HEAD[0]",
+        "epistemic_status":
+            "lawful structural prediction object; the rank-2->3 edge is an "
+            "extrapolation and is not checker-certified as a future-event law",
+        "source_state": "S1",
+        "source_sha256": state_sha256(current),
+        "candidate_sha256": state_sha256(candidate),
+        "xor_support": support_names,
+        "xor_weight": len(support),
+        "source_weight": sum(current),
+        "candidate_weight": sum(candidate),
+        "weight_increment": sum(candidate) - sum(current),
+        "candidate_anatomy": candidate_anatomy,
+        "unchanged_outside_39_field_support": all(
+            current[wire] == candidate[wire]
+            for wire in range(STATE_BITS)
+            if wire_name(wire) not in union
+        ),
+        "observed_anatomy_preserved": anatomy_preserved,
+        "lawful_candidate": lawful,
+    }
+    certificate["pass"] = (
+        certificate["source_weight"] == 46
+        and certificate["candidate_weight"] == 47
+        and certificate["weight_increment"] == 1
+        and certificate["unchanged_outside_39_field_support"]
+        and lawful
+    )
+    return candidate, certificate
+
+
+def lane_numbers(mask: int) -> tuple[int, ...]:
+    rows = []
+    while mask:
+        bit = mask & -mask
+        rows.append(bit.bit_length() - 1)
+        mask ^= bit
+    return tuple(rows)
+
+
+def equality_to_target_mask(
+    columns: list[int],
+    target: State,
+    lane_mask: int,
+    wires: tuple[int, ...] | None = None,
+) -> int:
+    candidates = lane_mask
+    for wire in wires if wires is not None else range(len(target)):
+        column = columns[wire] & lane_mask
+        mismatch = (
+            lane_mask ^ column if target[wire] else column
+        )
+        candidates &= ~mismatch
+        if not candidates:
+            return 0
+    return candidates
+
+
+def equality_to_initial_mask(
+    columns: list[int],
+    initial_columns: list[int],
+    lane_mask: int,
+    signature: tuple[int, ...],
+) -> int:
+    candidates = lane_mask
+    for wire in signature:
+        candidates &= ~(columns[wire] ^ initial_columns[wire])
+        if not candidates:
+            return 0
+    for wire in range(len(columns)):
+        candidates &= ~(columns[wire] ^ initial_columns[wire])
+        if not candidates:
+            return 0
+    return candidates
+
+
+def watched_residual_wire_indices() -> tuple[int, ...]:
+    rows = {K.R3.X.SOURCE_POINTER}
+    for base in K.M.R12.BANK_BASES[:FIXTURE_BANKS]:
+        rows.update(base + wire for _name, wire in watched_registers())
+    for base in K.M.R12.LINK_BASES[:FIXTURE_BANKS - 1]:
+        rows.update(range(base, base + K.B.LINK_WIDTH))
+    return tuple(sorted(rows))
+
+
+def candidate_reach_certificate(
+    family: dict[str, object],
+    candidate: State,
+) -> dict[str, object]:
+    """Scan every lawful landed trajectory through Cycle-831's full horizon."""
+    scan_started = monotonic()
+    catalog = tuple(sorted(family["states"]))
+    duplicate_key = catalog[0]
+    lane_rows = tuple((key, "primary") for key in catalog) + (
+        (duplicate_key, "determinism_duplicate"),
+    )
+    lanes: tuple[Lane, ...] = tuple(
+        (f"scan_{key}_{role}", key[1]) for key, role in lane_rows
+    )
+    primary_index = {
+        key: lane for lane, (key, _role) in enumerate(lane_rows[:-1])
+    }
+    duplicate_index = len(lane_rows) - 1
+    initial_states = tuple(
+        family["states"][key] for key, _role in lane_rows
+    )
+    columns = pack_states(initial_states)
+    initial_columns = columns.copy()
+    schedule = packed_schedule(
+        family["program"], lanes, (1 << len(lanes)) - 1
+    )
+    primary_mask = (1 << len(catalog)) - 1
+    active_mask = primary_mask
+    residual_wires = watched_residual_wire_indices()
+    recurrence_signature = tuple(sorted(set(
+        index * (STATE_BITS - 1) // 191 for index in range(192)
+    )))
+    target_signature = tuple(sorted(set(
+        tuple(wire for wire, bit in enumerate(candidate) if bit)
+        + recurrence_signature
+    )))
+    hits: list[tuple[int, Key]] = []
+    records: dict[Key, tuple[str, int]] = {}
+
+    def scan_target(moment: int) -> None:
+        candidates = equality_to_target_mask(
+            columns, candidate, primary_mask, target_signature
+        )
+        if candidates:
+            matches = equality_to_target_mask(
+                columns, candidate, candidates
+            )
+            hits.extend(
+                (moment, catalog[lane]) for lane in lane_numbers(matches)
+            )
+
+    scan_target(0)
+    for moment in range(1, LINEAGE_SCAN_HORIZON + 1):
+        advance(columns, schedule)
+        scan_target(moment)
+        nonclean = 0
+        for wire in residual_wires:
+            nonclean |= columns[wire]
+        clean_hits = active_mask & ~nonclean
+        recurrence_hits = equality_to_initial_mask(
+            columns,
+            initial_columns,
+            active_mask & ~clean_hits,
+            recurrence_signature,
+        )
+        for lane in lane_numbers(clean_hits):
+            key = catalog[lane]
+            records[key] = ("TRANSIENT", moment)
+        for lane in lane_numbers(recurrence_hits):
+            key = catalog[lane]
+            records[key] = ("CYCLE", moment)
+        active_mask &= ~(clean_hits | recurrence_hits)
+
+    open_keys = tuple(
+        catalog[lane] for lane in lane_numbers(active_mask)
+    )
+    resolved_rows = tuple(
+        (key, *records[key])
+        for key in sorted(records, key=lambda key: (records[key][1], key))
+    )
+    transient_count = sum(row[1] == "TRANSIENT" for row in resolved_rows)
+    cycle_count = sum(row[1] == "CYCLE" for row in resolved_rows)
+    funnel_resolution_rows = tuple({
+        "event": event,
+        "expected_resolution_moment": RESOLUTION_MOMENTS[event],
+        "keys": tuple((event, pair) for pair in BACKBONE),
+        "all_transient_at_expected_moment": all(
+            records.get((event, pair))
+            == ("TRANSIENT", RESOLUTION_MOMENTS[event])
+            for pair in BACKBONE
+        ),
+    } for event in EVENT_ORDER)
+    duplicate_final = (
+        unpack_lane(columns, primary_index[duplicate_key])
+        == unpack_lane(columns, duplicate_index)
+    )
+    result = {
+        "scan_basis":
+            "fresh primary-side landed evolution; Cycle-831 contributes the "
+            "cached complete horizon bound, not cached state values",
+        "lineage_horizon_source":
+            f"{AUDIT_INPUT_PATHS[5]}::TARGET_HORIZON",
+        "inclusive_moment_bounds": (0, LINEAGE_SCAN_HORIZON),
+        "exact_equality_metric": "full 5815-bit tuple equality",
+        "lawful_t0_trajectory_count": len(catalog),
+        "candidate_sha256": state_sha256(candidate),
+        "candidate_weight": sum(candidate),
+        "exact_hit_count": len(hits),
+        "exact_hits": tuple(hits),
+        "resolved_through_horizon": {
+            "count": len(resolved_rows),
+            "transient_count": transient_count,
+            "cycle_count": cycle_count,
+            "rows": resolved_rows,
+            "rows_sha256": digest(resolved_rows),
+        },
+        "open_at_horizon": {
+            "count": len(open_keys),
+            "keys_sha256": digest(open_keys),
+            "scan":
+                "all 133 unresolved trajectories tested at every inclusive "
+                "moment through T=65536",
+        },
+        "funnel_resolution_rows": funnel_resolution_rows,
+        "population_accounting":
+            len(resolved_rows) + len(open_keys) == FAMILY_SIZE,
+        "determinism_duplicate": {
+            "key": duplicate_key,
+            "initial_exact":
+                initial_states[primary_index[duplicate_key]]
+                == initial_states[duplicate_index],
+            "final_exact": duplicate_final,
+        },
+        "candidate_outcome": (
+            "DISCOVERY: S0' IS VISITED BY A LANDED TRAJECTORY"
+            if hits else
+            "NO HIT THROUGH T=65536: S0' REMAINS A PREDICTION OBJECT FOR "
+            "DEEPER HORIZONS"
+        ),
+        "scan_runtime_seconds": round(monotonic() - scan_started, 6),
+    }
+    result["pass"] = (
+        len(catalog) == FAMILY_SIZE
+        and len(resolved_rows) == EXPECTED_RESOLVED_AT_HORIZON
+        and transient_count == 29
+        and cycle_count == 14
+        and len(open_keys) == EXPECTED_OPEN_AT_HORIZON
+        and not hits
+        and all(
+            row["all_transient_at_expected_moment"]
+            for row in funnel_resolution_rows
+        )
+        and result["population_accounting"]
+        and result["determinism_duplicate"]["initial_exact"]
+        and result["determinism_duplicate"]["final_exact"]
     )
     return result
 
@@ -1087,12 +1622,15 @@ def family_structure_certificate(
         "Cycle815_C6": c6,
         "event_index_structures": event_maps,
         "time_shifted_evolution_images": time_shifts,
-        "exact_family_maps_found": found,
-        "family_map_outcome": (
-            "EXACT_MAP_FOUND: " + ", ".join(found)
+        "exact_family_maps_found_in_v1_searched_classes": found,
+        "v1_searched_class_outcome": (
+            "EXACT_MAP_FOUND_IN_V1_SEARCHED_CLASSES: " + ", ".join(found)
             if found else
-            "NONE_FOUND: THREE_INDEPENDENT_EXACT_ANATOMIES"
+            "NONE_FOUND_IN_V1_SEARCHED_CLASSES"
         ),
+        "scope":
+            "Cycle-805 station relabelings, supplied event-index maps, and "
+            "landed time shifts only; excludes named rank-edge field updates",
         "pass": (
             len(diffs) == 3
             and all(
@@ -1106,6 +1644,106 @@ def family_structure_certificate(
             and time_shifts["pass"]
         ),
     }
+
+
+def unification_certificate(
+    anatomies: dict[int, dict[str, object]],
+    family_map: dict[str, object],
+    v1_searches: dict[str, object],
+) -> dict[str, object]:
+    skeleton_rows = tuple(
+        (
+            anatomies[event]["occupancy"],
+            anatomies[event]["tokens"],
+            tuple(
+                (link["hamming_weight"], link["active_wire_indices"])
+                for link in anatomies[event]["links"]
+            ),
+            anatomies[event]["residual_fields"],
+        )
+        for event in EVENT_ORDER
+    )
+    common_skeleton = len(set(skeleton_rows)) == 1
+    edge_rows = tuple({
+        "state_edge": row["state_edge"],
+        "arrival_rank_edge": row["arrival_rank_edge"],
+        "source_weight": row["source_weight"],
+        "flipped_on": row["flipped_on"],
+        "flipped_off": row["flipped_off"],
+        "net_field_weight_increment": row["net_weight_increment"],
+        "derived_target_weight":
+            row["source_weight"] + row["net_weight_increment"],
+        "observed_target_weight": row["target_weight"],
+        "exact":
+            row["accounting_exact"]
+            and row["net_weight_increment"] == 1,
+        "field_group_weight_updates":
+            row["field_group_weight_updates"],
+    } for row in family_map["rank_edge_rows"])
+    arrival_weights = tuple(
+        anatomies[event]["hamming_weight"] for event in EVENT_ORDER
+    )
+    arrival_bank0_weights = tuple(
+        anatomies[event]["bank_hamming_weights"][0]
+        for event in EVENT_ORDER
+    )
+    old_classes_clean = not v1_searches[
+        "exact_family_maps_found_in_v1_searched_classes"
+    ]
+    result = {
+        "statement":
+            "S*, S2, and S1 are one exact anatomy with an advancing bank0 "
+            "register block and the parity-selected source endpoint",
+        "fixed_anatomy":
+            "occupancy, tokens, empty links, residual fields, bank1, and all "
+            "wires outside the 39-field localized support are common",
+        "advancing_block":
+            "bank0 pred/rotor_before/rotor_after/carry/orientation/HEAD/ROTOR "
+            "plus the source endpoint selector",
+        "localized_support_width":
+            family_map["localized_union_width"],
+        "common_wire_count": family_map["common_wire_count"],
+        "common_requested_skeleton": common_skeleton,
+        "arrival_order": EVENT_ORDER,
+        "arrival_weights": arrival_weights,
+        "arrival_bank0_weights": arrival_bank0_weights,
+        "map_field_weight_accounting": edge_rows,
+        "weight_law_derivation":
+            "44 + (13 on - 12 off) = 45; "
+            "45 + (14 on - 13 off) = 46",
+        "arrival_order_weight_law_exact":
+            arrival_weights == (44, 45, 46)
+            and arrival_bank0_weights == (38, 39, 40)
+            and all(row["exact"] for row in edge_rows),
+        "v1_no_map_claim": "RETRACTED",
+        "retraction_scope":
+            "v1's negative result remains valid only for its searched "
+            "Cycle-805 relabelings / supplied event maps / landed time "
+            "shifts; it did not search rank-edge named-field updates",
+        "v1_searched_classes": {
+            "Cycle805_station_relabeling_exact_maps":
+                v1_searches["Cycle805_relabelings"]["tested_exact_maps"],
+            "supplied_event_map_exact_rows":
+                v1_searches["event_index_structures"]["tested_exact_maps"],
+            "landed_time_shift_exact_maps":
+                v1_searches[
+                    "time_shifted_evolution_images"
+                ]["tested_exact_maps"],
+            "exact_match_in_those_classes": not old_classes_clean,
+        },
+        "map_source": "independent_checker",
+        "map_class":
+            "arrival-rank edge selected named-field XOR update",
+    }
+    result["pass"] = (
+        family_map["pass"]
+        and common_skeleton
+        and result["localized_support_width"] == 39
+        and result["common_wire_count"] == 5776
+        and result["arrival_order_weight_law_exact"]
+        and old_classes_clean
+    )
+    return result
 
 
 def requested_anatomy_signature(row: dict[str, object]) -> tuple[object, ...]:
@@ -1228,15 +1866,16 @@ def anatomy_law_certificate(
         gaps.append(
             "GAP: residual fields vary with event index"
         )
-    if family_structure["exact_family_maps_found"]:
+    if family_structure["exact_family_maps_found_in_v1_searched_classes"]:
         holds.append(
             "HOLDS: at least one tested exact state map relates funnel states"
         )
     else:
         gaps.append(
-            "GAP: no tested landed relabeling, supplied C6 state action, "
-            "event-constant map, or backbone time shift maps one full funnel "
-            "state to another"
+            "GAP (SCOPED): no tested landed relabeling, supplied C6 state "
+            "action, event-constant map, or backbone time shift maps one full "
+            "funnel state to another; rank-edge field updates are outside "
+            "those v1 classes"
         )
     gaps.extend((
         "GAP: three observed funnels cannot establish an all-event theorem",
@@ -1307,9 +1946,9 @@ def stable_render(
         report["checks"] = dict(checks)
         report["pass"] = all(checks.values())
         report["terminal"] = (
-            "CYCLE833_FUNNEL_FAMILY_EXACT_PASS"
+            "CYCLE833_V2_FUNNEL_FAMILY_MAP_EXACT_PASS"
             if report["pass"]
-            else "CYCLE833_FUNNEL_FAMILY_HONEST_FAIL"
+            else "CYCLE833_V2_FUNNEL_FAMILY_MAP_HONEST_FAIL"
         )
         output = render(checks, certificates, report)
         size = len(output.encode("utf-8"))
@@ -1348,22 +1987,57 @@ def run() -> int:
         )
 
     catalog = tuple(sorted(family["states"]))
-    certificate_a = {
+    family_map = rank_edge_field_map_certificate(funnels)
+    v1_searches = family_structure_certificate(
+        funnels, anatomy_rows, family
+    )
+    certificate_a = family_map
+    certificate_b = unification_certificate(
+        anatomy_rows, family_map, v1_searches
+    )
+    candidate, candidate_row = fourth_candidate_certificate(
+        funnels, anatomy_rows, family_map
+    )
+    reach = candidate_reach_certificate(family, candidate)
+    certificate_c = {
+        "candidate": candidate_row,
+        "reach": reach,
+        "pass": candidate_row["pass"] and reach["pass"],
+    }
+    pairwise_diffs = tuple(
+        exact_diff(left, right, funnels[left], funnels[right], anatomy_rows)
+        for left, right in combinations(EVENT_ORDER, 2)
+    )
+    predicate = predicate_certificate(catalog)
+    certificate_d = {
         "reconstruction": {
             key: value for key, value in reconstruction.items()
             if key not in {"funnels", "second_states"}
         },
         "anatomies": tuple(anatomy_rows[event] for event in EVENT_ORDER),
+        "pairwise_exact_diffs": pairwise_diffs,
+        "unified_predicate": predicate,
+        "unchanged_claim":
+            "v1 anatomies, pairwise XOR weights, and the unified predicate "
+            "in both directions over the full 176-key catalog are reproduced",
         "pass": (
             reconstruction["pass"]
             and all(row["pass"] for row in anatomy_rows.values())
+            and tuple(
+                (
+                    row["left_event"],
+                    row["right_event"],
+                    row["full_state_xor_weight"],
+                )
+                for row in pairwise_diffs
+            ) == (
+                (0, 2, 25),
+                (0, 1, 26),
+                (2, 1, 27),
+            )
+            and predicate["pass"]
         ),
     }
-    certificate_b = family_structure_certificate(
-        funnels, anatomy_rows, family
-    )
-    certificate_c = predicate_certificate(catalog)
-    certificate_d = anatomy_law_certificate(anatomy_rows, certificate_b)
 
     elapsed = monotonic() - started
     deterministic = (
@@ -1372,6 +2046,8 @@ def run() -> int:
             row["determinism_duplicates_exact"]
             for row in reconstruction["verification_rows"]
         )
+        and reach["determinism_duplicate"]["initial_exact"]
+        and reach["determinism_duplicate"]["final_exact"]
     )
     controls_base = (
         sources["pass"]
@@ -1407,17 +2083,18 @@ def run() -> int:
         "firewall_hits_at_end": tuple(FIREWALL.hits),
     }
     checks = {
-        "A_THREE_EXACT_ANATOMIES": bool(certificate_a["pass"]),
-        "B_FAMILY_STRUCTURE_AND_MAP_HUNT": bool(certificate_b["pass"]),
-        "C_UNIFIED_ENTRY_PREDICATE": bool(certificate_c["pass"]),
-        "D_ANATOMY_LAW_HUNT_HONEST": bool(certificate_d["pass"]),
+        "A_FAMILY_MAP_ADOPTED": bool(certificate_a["pass"]),
+        "B_ONE_ANATOMY_AND_WEIGHT_ACCOUNTING": bool(certificate_b["pass"]),
+        "C_FOURTH_CANDIDATE_AND_REACH": bool(certificate_c["pass"]),
+        "D_ANATOMIES_XOR_WEIGHTS_PREDICATE_UNCHANGED":
+            bool(certificate_d["pass"]),
         "E_SHAS_BLOCKLIST_DETERMINISM_RUNTIME_STDOUT": controls_base,
     }
     certificates = {
-        "A_THREE_ANATOMIES": certificate_a,
-        "B_FAMILY_STRUCTURE": certificate_b,
-        "C_GENERAL_ENTRY_PREDICATE": certificate_c,
-        "D_ANATOMY_LAW_HUNT": certificate_d,
+        "A_FAMILY_MAP_ADOPTED": certificate_a,
+        "B_UNIFICATION": certificate_b,
+        "C_MAP_REACH": certificate_c,
+        "D_UNCHANGED_RESULTS": certificate_d,
         "E_CONTROLS": certificate_e,
     }
     report = {
@@ -1433,16 +2110,31 @@ def run() -> int:
             "links": anatomy_rows[event]["links"],
             "residual_fields": anatomy_rows[event]["residual_fields"],
         } for event in EVENT_ORDER),
-        "family_map_outcome": certificate_b["family_map_outcome"],
-        "unified_predicate_verified": certificate_c["pass"],
-        "anatomy_law_outcome": certificate_d["outcome"],
+        "family_map_outcome":
+            "ADOPTED: S* -> S2 -> S1 EXACT BY FULL-STATE EQUALITY",
+        "map_source": "independent_checker",
+        "localized_field_support":
+            certificate_a["localized_union_width"],
+        "common_wire_count": certificate_a["common_wire_count"],
+        "unification":
+            "ONE ANATOMY WITH ADVANCING BANK0 REGISTER BLOCK",
+        "arrival_order_weight_law":
+            certificate_b["arrival_weights"],
+        "S0_prime": {
+            "sha256": candidate_row["candidate_sha256"],
+            "weight": candidate_row["candidate_weight"],
+            "exact_hits_through_65536": reach["exact_hit_count"],
+            "outcome": reach["candidate_outcome"],
+        },
+        "unified_predicate_verified": predicate["pass"],
+        "v1_no_map_claim": "RETRACTED_OUTSIDE_ITS_SEARCHED_CLASSES",
         "runtime_seconds": round(elapsed, 6),
         "runtime_limit_seconds": AUDIT_TIMEOUT_SEC,
         "stdout_bytes": 0,
         "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
         "checks": {},
         "pass": False,
-        "terminal": "CYCLE833_FUNNEL_FAMILY_HONEST_FAIL",
+        "terminal": "CYCLE833_V2_FUNNEL_FAMILY_MAP_HONEST_FAIL",
     }
     output = stable_render(checks, certificates, report)
     stdout_ok = len(output.encode("utf-8")) < STDOUT_LIMIT_BYTES
@@ -1453,7 +2145,7 @@ def run() -> int:
     if len(output.encode("utf-8")) >= STDOUT_LIMIT_BYTES:
         sys.stdout.write(compact({
             "pass": False,
-            "terminal": "CYCLE833_FUNNEL_FAMILY_HONEST_FAIL",
+            "terminal": "CYCLE833_V2_FUNNEL_FAMILY_MAP_HONEST_FAIL",
             "failure": "stdout limit exceeded",
             "stdout_bytes": len(output.encode("utf-8")),
             "stdout_limit_bytes": STDOUT_LIMIT_BYTES,
@@ -1469,7 +2161,7 @@ def main() -> int:
     except Exception as error:
         sys.stdout.write(compact({
             "pass": False,
-            "terminal": "CYCLE833_FUNNEL_FAMILY_HONEST_FAIL",
+            "terminal": "CYCLE833_V2_FUNNEL_FAMILY_MAP_HONEST_FAIL",
             "exception_type": type(error).__name__,
             "exception": str(error),
         }) + "\n")

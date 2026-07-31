@@ -1,0 +1,30 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "block": "proof-grade-blockR20-20260729",
+  "certificates": {
+    "logs/runner-cache/frontier_cycle837_sep5_independent_check_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 4
+    },
+    "logs/runner-cache/frontier_cycle837_why_sep5_2026_07_28.txt": {
+      "fail": 0,
+      "pass": 5
+    }
+  },
+  "claim_type": "bounded_theorem",
+  "cycle": 837,
+  "files": {
+    "docs/WHY_SEP5_CYCLE837_BOUNDED_THEOREM_NOTE_2026-07-28.md": "829de1137b07064269f0d76881de947d20a899a3871d13e7b749c371949125da",
+    "logs/runner-cache/frontier_cycle837_sep5_independent_check_2026_07_28.txt": "9585aaa288adb72cdff6a4f703e4330e0fc0a762cfc394b27d6198d7c3beb0de",
+    "logs/runner-cache/frontier_cycle837_why_sep5_2026_07_28.txt": "2659d813fd9f802fac8971ccb44aa4e4b02dcfb82bf2a367efa1f95a18c898f3",
+    "scripts/frontier_cycle837_sep5_independent_check_2026_07_28.py": "7d4b4d32400eb597c4238a12a41ac9a53ffdbecb22583a479c08f70ee41cd52d",
+    "scripts/frontier_cycle837_why_sep5_2026_07_28.py": "f210ebc75909977eaa468a20b45f9a75ab9ad2e2ac0e48d0c4aab04d3a0a9a9f"
+  },
+  "independent_audit_still_required": true,
+  "verdicts": [
+    "the exact biconditional: complete fiber IFF (s=5 AND station-0 absent) \u2014 both directions machine-checked",
+    "the (3,3) arc-meeting tie is UNIQUE to s=5 (per-s table; checker-derived independently)",
+    "causal derivation OPEN, stated plainly; checker not-refuted"
+  ]
+}
